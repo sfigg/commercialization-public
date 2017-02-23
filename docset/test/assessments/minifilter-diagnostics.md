@@ -17,7 +17,7 @@ This topic can help you interpret the results produced by running one of the min
 
 A minifilter driver is a file system filter that intercepts requests that are targeted at a file system or another file system filter. By intercepting the request before it reaches its intended target, the filter driver can extend or replace functionality provided by the original target of the request. Examples of file system filter drivers include anti-virus filters, backup agents, and encryption/decryption products. Filter drivers are made possible by a legacy driver that is named Filter Driver.
 
-A minifilter exposes callbacks for pre and post processing of file I/O. The filter driver communicates with the minifilter through these callbacks. Minifilters are used to process standard I/O; they are not used when an application uses memory mapped files.
+A minifilter exposes callbacks for pre and post processing of file I/O. The filter driver communicates with the minifilter through these callbacks. Minifilters are used to process standard I/O. For scenarios when an application uses memory mapped files, see [Memory Mapped Files in a File System Filter Driver](https://msdn.microsoft.com/windows/hardware/drivers/ifs/memory-mapped-files-in-a-file-system-filter-driver).
 
 In this topic:
 

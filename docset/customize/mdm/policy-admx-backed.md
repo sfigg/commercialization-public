@@ -22,14 +22,14 @@ The Policy configuration service provider enables the enterprise to configure po
 <!-- ADMX-TABLE-START -->
 <table>
 	<tr>
-		<th>MDM CSP Setting Path/Name</th>
-		<th>GP English Name</th>
-		<th>GP English Category Path</th>
-		<th>GP Name</th>
-		<th>GP ADMX File Name</th>
+		<th>MDM CSP setting path/name</th>
+		<th>GP english name</th>
+		<th>GP english category path</th>
+		<th>GP name</th>
+		<th>GP ADMX file name</th>
 	</tr>
 	<tr>
-		<td style="vertical-align:top"><a href="#activexcontrols-approvedinstallationsites ">ActiveXControls/ApprovedInstallationSites </a></td>
+		<td style="vertical-align:top"><a href="#activexcontrols-approvedinstallationsites">ActiveXControls/ApprovedInstallationSites</a></td>
 		<td style="vertical-align:top">Approved Installation Sites for ActiveX Controls</td>
 		<td style="vertical-align:top">Windows Components/ActiveX Installer Service</td>
 		<td style="vertical-align:top">ApprovedActiveXInstallSites</td>
@@ -43,24 +43,38 @@ The Policy configuration service provider enables the enterprise to configure po
 		<td style="vertical-align:top">appv.admx</td>
 	</tr>
 	<tr>
-		<td style="vertical-align:top"><a href="#appvirtualization-clientcoexistenceallowmigrationmode">AppVirtualization/ClientCoexistenceAllowMigrationmode</a></td>
-		<td style="vertical-align:top">Enable Migration Mode</td>
-		<td style="vertical-align:top">System/App-V/Client Coexistence</td>
-		<td style="vertical-align:top">Client_Coexistence_Enable_Migration_mode</td>
+		<td style="vertical-align:top"><a href="#appvirtualization-allowdynamicvirtualization">AppVirtualization/AllowDynamicVirtualization</a></td>
+		<td style="vertical-align:top">Enable Dynamic Virtualization</td>
+		<td style="vertical-align:top">System/App-V/Virtualization</td>
+		<td style="vertical-align:top">Virtualization_JITVEnable</td>
 		<td style="vertical-align:top">appv.admx</td>
 	</tr>
 	<tr>
-		<td style="vertical-align:top"><a href="#appvirtualization-integrationallowrootuser">AppVirtualization/IntegrationAllowRootUser</a></td>
-		<td style="vertical-align:top">Integration Root Global</td>
-		<td style="vertical-align:top">System/App-V/Integration</td>
-		<td style="vertical-align:top">Integration_Root_Global</td>
+		<td style="vertical-align:top"><a href="#appvirtualization-allowpackagecleanup">AppVirtualization/AllowPackageCleanup</a></td>
+		<td style="vertical-align:top">Enable automatic cleanup of unused appv packages</td>
+		<td style="vertical-align:top">System/App-V/Package Management</td>
+		<td style="vertical-align:top">PackageManagement_AutoCleanupEnable</td>
 		<td style="vertical-align:top">appv.admx</td>
 	</tr>
 	<tr>
-		<td style="vertical-align:top"><a href="#appvirtualization-integrationallowrootglobal">AppVirtualization/IntegrationAllowRootGlobal</a></td>
-		<td style="vertical-align:top">Integration Root User</td>
-		<td style="vertical-align:top">System/App-V/Integration</td>
-		<td style="vertical-align:top">Integration_Root_User</td>
+		<td style="vertical-align:top"><a href="#appvirtualization-allowpackagescripts">AppVirtualization/AllowPackageScripts</a></td>
+		<td style="vertical-align:top">Enable Package Scripts</td>
+		<td style="vertical-align:top">System/App-V/Scripting</td>
+		<td style="vertical-align:top">Scripting_Enable_Package_Scripts</td>
+		<td style="vertical-align:top">appv.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#appvirtualization-allowpublishingrefreshux">AppVirtualization/AllowPublishingRefreshUX</a></td>
+		<td style="vertical-align:top">Enable Publishing Refresh UX</td>
+		<td style="vertical-align:top">System/App-V/Publishing</td>
+		<td style="vertical-align:top">Enable_Publishing_Refresh_UX</td>
+		<td style="vertical-align:top">appv.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#appvirtualization-allowreportingserver">AppVirtualization/AllowReportingServer</a></td>
+		<td style="vertical-align:top">Reporting Server</td>
+		<td style="vertical-align:top">System/App-V/Reporting</td>
+		<td style="vertical-align:top">Reporting_Server_Policy</td>
 		<td style="vertical-align:top">appv.admx</td>
 	</tr>
 	<tr>
@@ -78,17 +92,31 @@ The Policy configuration service provider enables the enterprise to configure po
 		<td style="vertical-align:top">appv.admx</td>
 	</tr>
 	<tr>
-		<td style="vertical-align:top"><a href="#appvirtualization-allowpackagecleanup">AppVirtualization/AllowPackageCleanup</a></td>
-		<td style="vertical-align:top">Enable automatic cleanup of unused appv packages</td>
-		<td style="vertical-align:top">System/App-V/Package Management</td>
-		<td style="vertical-align:top">PackageManagement_AutoCleanupEnable</td>
+		<td style="vertical-align:top"><a href="#appvirtualization-allowstreamingautoload">AppVirtualization/AllowStreamingAutoload</a></td>
+		<td style="vertical-align:top">Specify what to load in background (aka AutoLoad)</td>
+		<td style="vertical-align:top">System/App-V/Streaming</td>
+		<td style="vertical-align:top">Steaming_Autoload</td>
 		<td style="vertical-align:top">appv.admx</td>
 	</tr>
 	<tr>
-		<td style="vertical-align:top"><a href="#appvirtualization-allowpublishingrefreshux">AppVirtualization/AllowPublishingRefreshUX</a></td>
-		<td style="vertical-align:top">Enable Publishing Refresh UX</td>
-		<td style="vertical-align:top">System/App-V/Publishing</td>
-		<td style="vertical-align:top">Enable_Publishing_Refresh_UX</td>
+		<td style="vertical-align:top"><a href="#appvirtualization-clientcoexistenceallowmigrationmode">AppVirtualization/ClientCoexistenceAllowMigrationmode</a></td>
+		<td style="vertical-align:top">Enable Migration Mode</td>
+		<td style="vertical-align:top">System/App-V/Client Coexistence</td>
+		<td style="vertical-align:top">Client_Coexistence_Enable_Migration_mode</td>
+		<td style="vertical-align:top">appv.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#appvirtualization-integrationallowrootglobal">AppVirtualization/IntegrationAllowRootGlobal</a></td>
+		<td style="vertical-align:top">Integration Root User</td>
+		<td style="vertical-align:top">System/App-V/Integration</td>
+		<td style="vertical-align:top">Integration_Root_User</td>
+		<td style="vertical-align:top">appv.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#appvirtualization-integrationallowrootuser">AppVirtualization/IntegrationAllowRootUser</a></td>
+		<td style="vertical-align:top">Integration Root Global</td>
+		<td style="vertical-align:top">System/App-V/Integration</td>
+		<td style="vertical-align:top">Integration_Root_Global</td>
 		<td style="vertical-align:top">appv.admx</td>
 	</tr>
 	<tr>
@@ -127,27 +155,6 @@ The Policy configuration service provider enables the enterprise to configure po
 		<td style="vertical-align:top">appv.admx</td>
 	</tr>
 	<tr>
-		<td style="vertical-align:top"><a href="#appvirtualization-allowreportingserver">AppVirtualization/AllowReportingServer</a></td>
-		<td style="vertical-align:top">Reporting Server</td>
-		<td style="vertical-align:top">System/App-V/Reporting</td>
-		<td style="vertical-align:top">Reporting_Server_Policy</td>
-		<td style="vertical-align:top">appv.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#appvirtualization-allowpackagescripts">AppVirtualization/AllowPackageScripts</a></td>
-		<td style="vertical-align:top">Enable Package Scripts</td>
-		<td style="vertical-align:top">System/App-V/Scripting</td>
-		<td style="vertical-align:top">Scripting_Enable_Package_Scripts</td>
-		<td style="vertical-align:top">appv.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#appvirtualization-streamingallowhighcostlaunch">AppVirtualization/StreamingAllowHighCostLaunch</a></td>
-		<td style="vertical-align:top">Allow First Time Application Launches if on a High Cost Windows 8 Metered Connection</td>
-		<td style="vertical-align:top">System/App-V/Streaming</td>
-		<td style="vertical-align:top">Streaming_Allow_High_Cost_Launch</td>
-		<td style="vertical-align:top">appv.admx</td>
-	</tr>
-	<tr>
 		<td style="vertical-align:top"><a href="#appvirtualization-streamingallowcertificatefilterforclient_ssl">AppVirtualization/StreamingAllowCertificateFilterForClient_SSL</a></td>
 		<td style="vertical-align:top">Certificate Filter For Client SSL</td>
 		<td style="vertical-align:top">System/App-V/Streaming</td>
@@ -155,10 +162,10 @@ The Policy configuration service provider enables the enterprise to configure po
 		<td style="vertical-align:top">appv.admx</td>
 	</tr>
 	<tr>
-		<td style="vertical-align:top"><a href="#appvirtualization-streamingsupportbranchcache">AppVirtualization/StreamingSupportBranchCache</a></td>
-		<td style="vertical-align:top">Enable Support for BranchCache</td>
+		<td style="vertical-align:top"><a href="#appvirtualization-streamingallowhighcostlaunch">AppVirtualization/StreamingAllowHighCostLaunch</a></td>
+		<td style="vertical-align:top">Allow First Time Application Launches if on a High Cost Windows 8 Metered Connection</td>
 		<td style="vertical-align:top">System/App-V/Streaming</td>
-		<td style="vertical-align:top">Streaming_Support_Branch_Cache</td>
+		<td style="vertical-align:top">Streaming_Allow_High_Cost_Launch</td>
 		<td style="vertical-align:top">appv.admx</td>
 	</tr>
 	<tr>
@@ -204,10 +211,10 @@ The Policy configuration service provider enables the enterprise to configure po
 		<td style="vertical-align:top">appv.admx</td>
 	</tr>
 	<tr>
-		<td style="vertical-align:top"><a href="#appvirtualization-allowstreamingautoload">AppVirtualization/AllowStreamingAutoload</a></td>
-		<td style="vertical-align:top">Specify what to load in background (aka AutoLoad)</td>
+		<td style="vertical-align:top"><a href="#appvirtualization-streamingsupportbranchcache">AppVirtualization/StreamingSupportBranchCache</a></td>
+		<td style="vertical-align:top">Enable Support for BranchCache</td>
 		<td style="vertical-align:top">System/App-V/Streaming</td>
-		<td style="vertical-align:top">Steaming_Autoload</td>
+		<td style="vertical-align:top">Streaming_Support_Branch_Cache</td>
 		<td style="vertical-align:top">appv.admx</td>
 	</tr>
 	<tr>
@@ -215,13 +222,6 @@ The Policy configuration service provider enables the enterprise to configure po
 		<td style="vertical-align:top">Verify certificate revocation list</td>
 		<td style="vertical-align:top">System/App-V/Streaming</td>
 		<td style="vertical-align:top">Streaming_Verify_Certificate_Revocation_List</td>
-		<td style="vertical-align:top">appv.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#appvirtualization-allowdynamicvirtualization">AppVirtualization/AllowDynamicVirtualization</a></td>
-		<td style="vertical-align:top">Enable Dynamic Virtualization</td>
-		<td style="vertical-align:top">System/App-V/Virtualization</td>
-		<td style="vertical-align:top">Virtualization_JITVEnable</td>
 		<td style="vertical-align:top">appv.admx</td>
 	</tr>
 	<tr>
@@ -274,24 +274,80 @@ The Policy configuration service provider enables the enterprise to configure po
 		<td style="vertical-align:top">AutoPlay.admx</td>
 	</tr>
 	<tr>
-		<td style="vertical-align:top"><a href="#devicelock-preventlockscreenslideshow">DeviceLock/PreventLockScreenSlideShow</a></td>
-		<td style="vertical-align:top">Prevent enabling lock screen slide show</td>
-		<td style="vertical-align:top">Control Panel/Personalization</td>
-		<td style="vertical-align:top">CPL_Personalization_NoLockScreenSlideshow</td>
-		<td style="vertical-align:top">ControlPanelDisplay.admx</td>
+		<td style="vertical-align:top"><a href="#bitlocker-bitencryptionmethodbydrivetype">BitLocker/BitEncryptionMethodByDriveType</a></td>
+		<td style="vertical-align:top">Choose drive encryption method and cipher strength (Windows 10 [Version 1511] and later)</td>
+		<td style="vertical-align:top">Windows Components/BitLocker Drive Encryption</td>
+		<td style="vertical-align:top">EncryptionMethodWithXts_Name</td>
+		<td style="vertical-align:top">VolumeEncryption.admx</td>
 	</tr>
 	<tr>
-		<td style="vertical-align:top"><a href="#credentialproviders-blockpicturepassword">CredentialProviders/BlockPicturePassword</a></td>
-		<td style="vertical-align:top">Turn off picture password sign-in</td>
-		<td style="vertical-align:top">System/Logon</td>
-		<td style="vertical-align:top">BlockDomainPicturePassword</td>
-		<td style="vertical-align:top">CredentialProviders.admx</td>
+		<td style="vertical-align:top"><a href="#bitlocker-fixeddrivesrecoveryoptions">BitLocker/FixedDrivesRecoveryOptions</a></td>
+		<td style="vertical-align:top">Choose how BitLocker-protected fixed drives can be recovered</td>
+		<td style="vertical-align:top">Windows Components/BitLocker Drive Encryption/Fixed Data Drives</td>
+		<td style="vertical-align:top">FDVRecoveryUsage_Name</td>
+		<td style="vertical-align:top">VolumeEncryption.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#bitlocker-fixeddrivesrequireencryption">BitLocker/FixedDrivesRequireEncryption</a></td>
+		<td style="vertical-align:top">Deny write access to fixed drives not protected by BitLocker</td>
+		<td style="vertical-align:top">Windows Components/BitLocker Drive Encryption/Fixed Data Drives</td>
+		<td style="vertical-align:top">FDVDenyWriteAccess_Name</td>
+		<td style="vertical-align:top">VolumeEncryption.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#bitlocker-removabledrivesrequireencryption">BitLocker/RemovableDrivesRequireEncryption</a></td>
+		<td style="vertical-align:top">Deny write access to removable drives not protected by BitLocker</td>
+		<td style="vertical-align:top">Windows Components/BitLocker Drive Encryption/Removable Data Drives</td>
+		<td style="vertical-align:top">RDVDenyWriteAccess_Name</td>
+		<td style="vertical-align:top">VolumeEncryption.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#bitlocker-systemdrivesminimumpinlength">BitLocker/SystemDrivesMinimumPINLength</a></td>
+		<td style="vertical-align:top">Configure minimum PIN length for startup</td>
+		<td style="vertical-align:top">Windows Components/BitLocker Drive Encryption/Operating System Drives</td>
+		<td style="vertical-align:top">MinimumPINLength_Name</td>
+		<td style="vertical-align:top">VolumeEncryption.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#bitlocker-systemdrivesrecoverymessage">BitLocker/SystemDrivesRecoveryMessage</a></td>
+		<td style="vertical-align:top">Configure pre-boot recovery message and URL</td>
+		<td style="vertical-align:top">Windows Components/BitLocker Drive Encryption/Operating System Drives</td>
+		<td style="vertical-align:top">PrebootRecoveryInfo_Name</td>
+		<td style="vertical-align:top">VolumeEncryption.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#bitlocker-systemdrivesrecoveryoptions">BitLocker/SystemDrivesRecoveryOptions</a></td>
+		<td style="vertical-align:top">Choose how BitLocker-protected operating system drives can be recovered</td>
+		<td style="vertical-align:top">Windows Components/BitLocker Drive Encryption/Operating System Drives</td>
+		<td style="vertical-align:top">OSRecoveryUsage_Name</td>
+		<td style="vertical-align:top">VolumeEncryption.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#bitlocker-systemdrivesrequirestartupauthentication">BitLocker/SystemDrivesRequireStartupAuthentication</a></td>
+		<td style="vertical-align:top">Require additional authentication at startup</td>
+		<td style="vertical-align:top">Windows Components/BitLocker Drive Encryption/Operating System Drives</td>
+		<td style="vertical-align:top">ConfigureAdvancedStartup_Name</td>
+		<td style="vertical-align:top">VolumeEncryption.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#connectivity-hardeneduncpaths">Connectivity/HardenedUNCPaths</a></td>
+		<td style="vertical-align:top">Hardened UNC Paths</td>
+		<td style="vertical-align:top">Network/Network Provider</td>
+		<td style="vertical-align:top">Pol_HardenedPaths</td>
+		<td style="vertical-align:top">NetworkProvider.admx</td>
 	</tr>
 	<tr>
 		<td style="vertical-align:top"><a href="#credentialproviders-allowpinlogon">CredentialProviders/AllowPINLogon</a></td>
 		<td style="vertical-align:top">Turn on convenience PIN sign-in</td>
 		<td style="vertical-align:top">System/Logon</td>
 		<td style="vertical-align:top">AllowDomainPINLogon</td>
+		<td style="vertical-align:top">CredentialProviders.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#credentialproviders-blockpicturepassword">CredentialProviders/BlockPicturePassword</a></td>
+		<td style="vertical-align:top">Turn off picture password sign-in</td>
+		<td style="vertical-align:top">System/Logon</td>
+		<td style="vertical-align:top">BlockDomainPicturePassword</td>
 		<td style="vertical-align:top">CredentialProviders.admx</td>
 	</tr>
 	<tr>
@@ -307,6 +363,20 @@ The Policy configuration service provider enables the enterprise to configure po
 		<td style="vertical-align:top">Windows Components/Credential User Interface</td>
 		<td style="vertical-align:top">EnumerateAdministrators</td>
 		<td style="vertical-align:top">CredUI.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#datausage-setcost3g">DataUsage/SetCost3G</a></td>
+		<td style="vertical-align:top">Set 3G Cost</td>
+		<td style="vertical-align:top">Network/WWAN Service/WWAN Media Cost</td>
+		<td style="vertical-align:top">SetCost3G</td>
+		<td style="vertical-align:top">wwansvc.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#datausage-setcost4g">DataUsage/SetCost4G</a></td>
+		<td style="vertical-align:top">Set 4G Cost</td>
+		<td style="vertical-align:top">Network/WWAN Service/WWAN Media Cost</td>
+		<td style="vertical-align:top">SetCost4G</td>
+		<td style="vertical-align:top">wwansvc.admx</td>
 	</tr>
 	<tr>
 		<td style="vertical-align:top"><a href="#desktop-preventuserredirectionofprofilefolders">Desktop/PreventUserRedirectionOfProfileFolders</a></td>
@@ -330,18 +400,18 @@ The Policy configuration service provider enables the enterprise to configure po
 		<td style="vertical-align:top">DeviceInstallation.admx</td>
 	</tr>
 	<tr>
-		<td style="vertical-align:top"><a href="#system-bootstartdriverinitialization">System/BootStartDriverInitialization</a></td>
-		<td style="vertical-align:top">Boot-Start Driver Initialization Policy</td>
-		<td style="vertical-align:top">System/Early Launch Antimalware</td>
-		<td style="vertical-align:top">POL_DriverLoadPolicy_Name</td>
-		<td style="vertical-align:top">EarlyLaunchAM.admx</td>
+		<td style="vertical-align:top"><a href="#devicelock-preventlockscreenslideshow">DeviceLock/PreventLockScreenSlideShow</a></td>
+		<td style="vertical-align:top">Prevent enabling lock screen slide show</td>
+		<td style="vertical-align:top">Control Panel/Personalization</td>
+		<td style="vertical-align:top">CPL_Personalization_NoLockScreenSlideshow</td>
+		<td style="vertical-align:top">ControlPanelDisplay.admx</td>
 	</tr>
 	<tr>
-		<td style="vertical-align:top"><a href="#storage-enhancedstoragedevices">Storage/EnhancedStorageDevices</a></td>
-		<td style="vertical-align:top">Do not allow Windows to activate Enhanced Storage devices</td>
-		<td style="vertical-align:top">System/Enhanced Storage Access</td>
-		<td style="vertical-align:top">TCGSecurityActivationDisabled</td>
-		<td style="vertical-align:top">EnhancedStorage.admx</td>
+		<td style="vertical-align:top"><a href="#errorreporting-customizeconsentsettings">ErrorReporting/CustomizeConsentSettings</a></td>
+		<td style="vertical-align:top">Customize consent settings</td>
+		<td style="vertical-align:top">Windows Components/Windows Error Reporting/Consent</td>
+		<td style="vertical-align:top">WerConsentCustomize_2</td>
+		<td style="vertical-align:top">ErrorReporting.admx</td>
 	</tr>
 	<tr>
 		<td style="vertical-align:top"><a href="#errorreporting-disablewindowserrorreporting">ErrorReporting/DisableWindowsErrorReporting</a></td>
@@ -369,13 +439,6 @@ The Policy configuration service provider enables the enterprise to configure po
 		<td style="vertical-align:top">Prevent display of the user interface for critical errors</td>
 		<td style="vertical-align:top">Windows Components/Windows Error Reporting</td>
 		<td style="vertical-align:top">WerDoNotShowUI</td>
-		<td style="vertical-align:top">ErrorReporting.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#errorreporting-customizeconsentsettings">ErrorReporting/CustomizeConsentSettings</a></td>
-		<td style="vertical-align:top">Customize consent settings</td>
-		<td style="vertical-align:top">Windows Components/Windows Error Reporting/Consent</td>
-		<td style="vertical-align:top">WerConsentCustomize_2</td>
 		<td style="vertical-align:top">ErrorReporting.admx</td>
 	</tr>
 	<tr>
@@ -414,97 +477,6 @@ The Policy configuration service provider enables the enterprise to configure po
 		<td style="vertical-align:top">inetres.admx</td>
 	</tr>
 	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-disablehomepagechange">InternetExplorer/DisableHomePageChange</a></td>
-		<td style="vertical-align:top">Disable changing home page settings</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer</td>
-		<td style="vertical-align:top">RestrictHomePage</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-disablesecondaryhomepagechange">InternetExplorer/DisableSecondaryHomePageChange</a></td>
-		<td style="vertical-align:top">Disable changing secondary home page settings</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer</td>
-		<td style="vertical-align:top">SecondaryHomePages</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-disableupdatecheck">InternetExplorer/DisableUpdateCheck</a></td>
-		<td style="vertical-align:top">Disable Periodic Check for Internet Explorer software updates</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer</td>
-		<td style="vertical-align:top">NoUpdateCheck</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-allowenterprisemodefromtoolsmenu">InternetExplorer/AllowEnterpriseModeFromToolsMenu</a></td>
-		<td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer</td>
-		<td style="vertical-align:top">EnterpriseModeEnable</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-disablebypassofsmartscreenwarnings">InternetExplorer/DisableBypassOfSmartScreenWarnings</a></td>
-		<td style="vertical-align:top">Prevent bypassing SmartScreen Filter warnings</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer</td>
-		<td style="vertical-align:top">DisableSafetyFilterOverride</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-disablebypassofsmartscreenwarningsaboutuncommonfiles">InternetExplorer/DisableBypassOfSmartScreenWarningsAboutUncommonFiles</a></td>
-		<td style="vertical-align:top">Prevent bypassing SmartScreen Filter warnings about files that are not commonly downloaded from the Internet</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer</td>
-		<td style="vertical-align:top">DisableSafetyFilterOverrideForAppRepUnknown</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-disableproxychange">InternetExplorer/DisableProxyChange</a></td>
-		<td style="vertical-align:top">Prevent changing proxy settings</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer</td>
-		<td style="vertical-align:top">RestrictProxy</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-disablesearchproviderchange">InternetExplorer/DisableSearchProviderChange</a></td>
-		<td style="vertical-align:top">Prevent changing the default search provider</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer</td>
-		<td style="vertical-align:top">NoSearchProvider</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-disablecustomerexperienceimprovementprogramparticipation">InternetExplorer/DisableCustomerExperienceImprovementProgramParticipation</a></td>
-		<td style="vertical-align:top">Prevent participation in the Customer Experience Improvement Program</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer</td>
-		<td style="vertical-align:top">SQM_DisableCEIP</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-disablefirstrunwizard">InternetExplorer/DisableFirstRunWizard</a></td>
-		<td style="vertical-align:top">Prevent running First Run wizard</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer</td>
-		<td style="vertical-align:top">NoFirstRunCustomise</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-searchproviderlist">InternetExplorer/SearchProviderList</a></td>
-		<td style="vertical-align:top">Restrict search providers to a specific list</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer</td>
-		<td style="vertical-align:top">SpecificSearchProvider</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-donotallowuserstoaddsites">InternetExplorer/DoNotAllowUsersToAddSites</a></td>
-		<td style="vertical-align:top">Security Zones: Do not allow users to add/delete sites</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer</td>
-		<td style="vertical-align:top">Security_zones_map_edit</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-donotallowuserstochangepolicies">InternetExplorer/DoNotAllowUsersToChangePolicies</a></td>
-		<td style="vertical-align:top">Security Zones: Do not allow users to change policies</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer</td>
-		<td style="vertical-align:top">Security_options_edit</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-allowactivexfiltering">InternetExplorer/AllowActiveXFiltering</a></td>
 		<td style="vertical-align:top">Turn on ActiveX Filtering</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer</td>
@@ -512,45 +484,10 @@ The Policy configuration service provider enables the enterprise to configure po
 		<td style="vertical-align:top">inetres.admx</td>
 	</tr>
 	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-allowsuggestedsites">InternetExplorer/AllowSuggestedSites</a></td>
-		<td style="vertical-align:top">Turn on Suggested Sites</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer</td>
-		<td style="vertical-align:top">EnableSuggestedSites</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-allowenterprisemodesitelist">InternetExplorer/AllowEnterpriseModeSiteList</a></td>
-		<td style="vertical-align:top">Use the Enterprise Mode IE website list</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer</td>
-		<td style="vertical-align:top">EnterpriseModeSiteList</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-allowinternetexplorerstandardsmode">InternetExplorer/AllowInternetExplorerStandardsMode</a></td>
-		<td style="vertical-align:top">Turn on Internet Explorer Standards Mode for local intranet</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer/Compatibility View</td>
-		<td style="vertical-align:top">CompatView_IntranetSites</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-allowinternetexplorer7policylist ">InternetExplorer/AllowInternetExplorer7PolicyList </a></td>
-		<td style="vertical-align:top">Use Policy List of Internet Explorer 7 sites</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer/Compatibility View</td>
-		<td style="vertical-align:top">CompatView_UsePolicyList</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-disableencryptionsupport">InternetExplorer/DisableEncryptionSupport</a></td>
-		<td style="vertical-align:top">Turn off encryption support</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Advanced Page</td>
-		<td style="vertical-align:top">Advanced_SetWinInetProtocols</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-disableflipaheadfeature">InternetExplorer/DisableFlipAheadFeature</a></td>
-		<td style="vertical-align:top">Turn off the flip ahead with page prediction feature</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Advanced Page</td>
-		<td style="vertical-align:top">Advanced_DisableFlipAhead</td>
+		<td style="vertical-align:top"><a href="#internetexplorer-allowaddonlist">InternetExplorer/AllowAddOnList</a></td>
+		<td style="vertical-align:top">Add-on List</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer/Security Features/Add-on Management</td>
+		<td style="vertical-align:top">AddonManagement_AddOnList</td>
 		<td style="vertical-align:top">inetres.admx</td>
 	</tr>
 	<tr>
@@ -561,24 +498,38 @@ The Policy configuration service provider enables the enterprise to configure po
 		<td style="vertical-align:top">inetres.admx</td>
 	</tr>
 	<tr>
+		<td style="vertical-align:top"><a href="#internetexplorer-allowenterprisemodefromtoolsmenu">InternetExplorer/AllowEnterpriseModeFromToolsMenu</a></td>
+		<td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer</td>
+		<td style="vertical-align:top">EnterpriseModeEnable</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#internetexplorer-allowenterprisemodesitelist">InternetExplorer/AllowEnterpriseModeSiteList</a></td>
+		<td style="vertical-align:top">Use the Enterprise Mode IE website list</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer</td>
+		<td style="vertical-align:top">EnterpriseModeSiteList</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#internetexplorer-allowinternetexplorer7policylist">InternetExplorer/AllowInternetExplorer7PolicyList</a></td>
+		<td style="vertical-align:top">Use Policy List of Internet Explorer 7 sites</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer/Compatibility View</td>
+		<td style="vertical-align:top">CompatView_UsePolicyList</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#internetexplorer-allowinternetexplorerstandardsmode">InternetExplorer/AllowInternetExplorerStandardsMode</a></td>
+		<td style="vertical-align:top">Turn on Internet Explorer Standards Mode for local intranet</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer/Compatibility View</td>
+		<td style="vertical-align:top">CompatView_IntranetSites</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-allowinternetzonetemplate">InternetExplorer/AllowInternetZoneTemplate</a></td>
 		<td style="vertical-align:top">Internet Zone Template</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page</td>
 		<td style="vertical-align:top">IZ_PolicyInternetZoneTemplate</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-includealllocalsites">InternetExplorer/IncludeAllLocalSites</a></td>
-		<td style="vertical-align:top">Intranet Sites: Include all local (intranet) sites not listed in other zones</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page</td>
-		<td style="vertical-align:top">IZ_IncludeUnspecifiedLocalSites</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-includeallnetworkpaths">InternetExplorer/IncludeAllNetworkPaths</a></td>
-		<td style="vertical-align:top">Intranet Sites: Include all network paths (UNCs)</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page</td>
-		<td style="vertical-align:top">IZ_UNCAsIntranet</td>
 		<td style="vertical-align:top">inetres.admx</td>
 	</tr>
 	<tr>
@@ -624,6 +575,34 @@ The Policy configuration service provider enables the enterprise to configure po
 		<td style="vertical-align:top">inetres.admx</td>
 	</tr>
 	<tr>
+		<td style="vertical-align:top"><a href="#internetexplorer-allowonewordentry">InternetExplorer/AllowOneWordEntry</a></td>
+		<td style="vertical-align:top">Go to an intranet site for a one-word entry in the Address bar</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Settings/Advanced settings/Browsing</td>
+		<td style="vertical-align:top">UseIntranetSiteForOneWordEntry</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#internetexplorer-allowsitetozoneassignmentlist">InternetExplorer/AllowSiteToZoneAssignmentList</a></td>
+		<td style="vertical-align:top">Site to Zone Assignment List</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page</td>
+		<td style="vertical-align:top">IZ_Zonemaps</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#internetexplorer-allowsuggestedsites">InternetExplorer/AllowSuggestedSites</a></td>
+		<td style="vertical-align:top">Turn on Suggested Sites</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer</td>
+		<td style="vertical-align:top">EnableSuggestedSites</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#internetexplorer-allowtrustedsiteszonetemplate">InternetExplorer/AllowTrustedSitesZoneTemplate</a></td>
+		<td style="vertical-align:top">Trusted Sites Zone Template</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page</td>
+		<td style="vertical-align:top">IZ_PolicyTrustedSitesZoneTemplate</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-allowslockeddowntrustedsitezonetemplate">InternetExplorer/AllowsLockedDownTrustedSiteZoneTemplate</a></td>
 		<td style="vertical-align:top">Locked-Down Trusted Sites Zone Template</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page</td>
@@ -638,808 +617,108 @@ The Policy configuration service provider enables the enterprise to configure po
 		<td style="vertical-align:top">inetres.admx</td>
 	</tr>
 	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-allowsitetozoneassignmentlist">InternetExplorer/AllowSiteToZoneAssignmentList</a></td>
-		<td style="vertical-align:top">Site to Zone Assignment List</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page</td>
-		<td style="vertical-align:top">IZ_Zonemaps</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-allowtrustedsiteszonetemplate">InternetExplorer/AllowTrustedSitesZoneTemplate</a></td>
-		<td style="vertical-align:top">Trusted Sites Zone Template</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page</td>
-		<td style="vertical-align:top">IZ_PolicyTrustedSitesZoneTemplate</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-internetzoneallowaccesstodatasources">InternetExplorer/InternetZoneAllowAccessToDataSources</a></td>
-		<td style="vertical-align:top">Access data sources across domains</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone</td>
-		<td style="vertical-align:top">IZ_PolicyAccessDataSourcesAcrossDomains_1</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-internetzoneallowfontdownloads">InternetExplorer/InternetZoneAllowFontDownloads</a></td>
-		<td style="vertical-align:top">Allow font downloads</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone</td>
-		<td style="vertical-align:top">IZ_PolicyFontDownload_1</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-internetzoneallowscriptlets">InternetExplorer/InternetZoneAllowScriptlets</a></td>
-		<td style="vertical-align:top">Allow scriptlets</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone</td>
-		<td style="vertical-align:top">IZ_Policy_AllowScriptlets_1</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-internetzoneallowautomaticpromptingforactivexcontrols">InternetExplorer/InternetZoneAllowAutomaticPromptingForActiveXControls</a></td>
-		<td style="vertical-align:top">Automatic prompting for ActiveX controls</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone</td>
-		<td style="vertical-align:top">IZ_PolicyNotificationBarActiveXURLaction_1</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-internetzoneallowautomaticpromptingforfiledownloads">InternetExplorer/InternetZoneAllowAutomaticPromptingForFileDownloads</a></td>
-		<td style="vertical-align:top">Automatic prompting for file downloads</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone</td>
-		<td style="vertical-align:top">IZ_PolicyNotificationBarDownloadURLaction_1</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-internetzoneinitializeandscriptactivexcontrols">InternetExplorer/InternetZoneInitializeAndScriptActiveXControls</a></td>
-		<td style="vertical-align:top">Initialize and script ActiveX controls not marked as safe</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone</td>
-		<td style="vertical-align:top">IZ_PolicyScriptActiveXNotMarkedSafe_1</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-internetzonenavigatewindowsandframes">InternetExplorer/InternetZoneNavigateWindowsAndFrames</a></td>
-		<td style="vertical-align:top">Navigate windows and frames across different domains</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone</td>
-		<td style="vertical-align:top">IZ_PolicyNavigateSubframesAcrossDomains_1</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-internetzoneallownetframeworkreliantcomponents">InternetExplorer/InternetZoneAllowNETFrameworkReliantComponents</a></td>
-		<td style="vertical-align:top">Run .NET Framework-reliant components not signed with Authenticode</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone</td>
-		<td style="vertical-align:top">IZ_PolicyUnsignedFrameworkComponentsURLaction_1</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-internetzoneallowsmartscreenie">InternetExplorer/InternetZoneAllowSmartScreenIE</a></td>
-		<td style="vertical-align:top">Turn on SmartScreen Filter scan</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone</td>
-		<td style="vertical-align:top">IZ_Policy_Phishing_1</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-internetzoneallowuserdatapersistence">InternetExplorer/InternetZoneAllowUserDataPersistence</a></td>
-		<td style="vertical-align:top">Userdata persistence</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone</td>
-		<td style="vertical-align:top">IZ_PolicyUserdataPersistence_1</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-internetzoneallowlessprivilegedsites">InternetExplorer/InternetZoneAllowLessPrivilegedSites</a></td>
-		<td style="vertical-align:top">Web sites in less privileged Web content zones can navigate into this zone</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone</td>
-		<td style="vertical-align:top">IZ_PolicyZoneElevationURLaction_1</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-intranetzoneallowaccesstodatasources">InternetExplorer/IntranetZoneAllowAccessToDataSources</a></td>
-		<td style="vertical-align:top">Access data sources across domains</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Intranet Zone</td>
-		<td style="vertical-align:top">IZ_PolicyAccessDataSourcesAcrossDomains_3</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-intranetzoneallowfontdownloads">InternetExplorer/IntranetZoneAllowFontDownloads</a></td>
-		<td style="vertical-align:top">Allow font downloads</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Intranet Zone</td>
-		<td style="vertical-align:top">IZ_PolicyFontDownload_3</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-intranetzoneallowscriptlets">InternetExplorer/IntranetZoneAllowScriptlets</a></td>
-		<td style="vertical-align:top">Allow scriptlets</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Intranet Zone</td>
-		<td style="vertical-align:top">IZ_Policy_AllowScriptlets_3</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-intranetzoneallowautomaticpromptingforactivexcontrols">InternetExplorer/IntranetZoneAllowAutomaticPromptingForActiveXControls</a></td>
-		<td style="vertical-align:top">Automatic prompting for ActiveX controls</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Intranet Zone</td>
-		<td style="vertical-align:top">IZ_PolicyNotificationBarActiveXURLaction_3</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-intranetzoneallowautomaticpromptingforfiledownloads">InternetExplorer/IntranetZoneAllowAutomaticPromptingForFileDownloads</a></td>
-		<td style="vertical-align:top">Automatic prompting for file downloads</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Intranet Zone</td>
-		<td style="vertical-align:top">IZ_PolicyNotificationBarDownloadURLaction_3</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-intranetzoneinitializeandscriptactivexcontrols">InternetExplorer/IntranetZoneInitializeAndScriptActiveXControls</a></td>
-		<td style="vertical-align:top">Initialize and script ActiveX controls not marked as safe</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Intranet Zone</td>
-		<td style="vertical-align:top">IZ_PolicyScriptActiveXNotMarkedSafe_3</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-intranetzonenavigatewindowsandframes">InternetExplorer/IntranetZoneNavigateWindowsAndFrames</a></td>
-		<td style="vertical-align:top">Navigate windows and frames across different domains</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Intranet Zone</td>
-		<td style="vertical-align:top">IZ_PolicyNavigateSubframesAcrossDomains_3</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-intranetzoneallownetframeworkreliantcomponents">InternetExplorer/IntranetZoneAllowNETFrameworkReliantComponents</a></td>
-		<td style="vertical-align:top">Run .NET Framework-reliant components not signed with Authenticode</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Intranet Zone</td>
-		<td style="vertical-align:top">IZ_PolicyUnsignedFrameworkComponentsURLaction_3</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-intranetzoneallowsmartscreenie">InternetExplorer/IntranetZoneAllowSmartScreenIE</a></td>
-		<td style="vertical-align:top">Turn on SmartScreen Filter scan</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Intranet Zone</td>
-		<td style="vertical-align:top">IZ_Policy_Phishing_3</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-intranetzoneallowuserdatapersistence">InternetExplorer/IntranetZoneAllowUserDataPersistence</a></td>
-		<td style="vertical-align:top">Userdata persistence</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Intranet Zone</td>
-		<td style="vertical-align:top">IZ_PolicyUserdataPersistence_3</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-intranetzoneallowlessprivilegedsites">InternetExplorer/IntranetZoneAllowLessPrivilegedSites</a></td>
-		<td style="vertical-align:top">Web sites in less privileged Web content zones can navigate into this zone</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Intranet Zone</td>
-		<td style="vertical-align:top">IZ_PolicyZoneElevationURLaction_3</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-localmachinezoneallowaccesstodatasources">InternetExplorer/LocalMachineZoneAllowAccessToDataSources</a></td>
-		<td style="vertical-align:top">Access data sources across domains</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Local Machine Zone</td>
-		<td style="vertical-align:top">IZ_PolicyAccessDataSourcesAcrossDomains_9</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-localmachinezoneallowfontdownloads">InternetExplorer/LocalMachineZoneAllowFontDownloads</a></td>
-		<td style="vertical-align:top">Allow font downloads</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Local Machine Zone</td>
-		<td style="vertical-align:top">IZ_PolicyFontDownload_9</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-localmachinezoneallowscriptlets">InternetExplorer/LocalMachineZoneAllowScriptlets</a></td>
-		<td style="vertical-align:top">Allow scriptlets</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Local Machine Zone</td>
-		<td style="vertical-align:top">IZ_Policy_AllowScriptlets_9</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-localmachinezoneallowautomaticpromptingforactivexcontrols">InternetExplorer/LocalMachineZoneAllowAutomaticPromptingForActiveXControls</a></td>
-		<td style="vertical-align:top">Automatic prompting for ActiveX controls</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Local Machine Zone</td>
-		<td style="vertical-align:top">IZ_PolicyNotificationBarActiveXURLaction_9</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-localmachinezoneallowautomaticpromptingforfiledownloads">InternetExplorer/LocalMachineZoneAllowAutomaticPromptingForFileDownloads</a></td>
-		<td style="vertical-align:top">Automatic prompting for file downloads</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Local Machine Zone</td>
-		<td style="vertical-align:top">IZ_PolicyNotificationBarDownloadURLaction_9</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-localmachinezoneinitializeandscriptactivexcontrols">InternetExplorer/LocalMachineZoneInitializeAndScriptActiveXControls</a></td>
-		<td style="vertical-align:top">Initialize and script ActiveX controls not marked as safe</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Local Machine Zone</td>
-		<td style="vertical-align:top">IZ_PolicyScriptActiveXNotMarkedSafe_9</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-localmachinezonenavigatewindowsandframes">InternetExplorer/LocalMachineZoneNavigateWindowsAndFrames</a></td>
-		<td style="vertical-align:top">Navigate windows and frames across different domains</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Local Machine Zone</td>
-		<td style="vertical-align:top">IZ_PolicyNavigateSubframesAcrossDomains_9</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-localmachinezoneallownetframeworkreliantcomponents">InternetExplorer/LocalMachineZoneAllowNETFrameworkReliantComponents</a></td>
-		<td style="vertical-align:top">Run .NET Framework-reliant components not signed with Authenticode</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Local Machine Zone</td>
-		<td style="vertical-align:top">IZ_PolicyUnsignedFrameworkComponentsURLaction_9</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-localmachinezoneallowsmartscreenie">InternetExplorer/LocalMachineZoneAllowSmartScreenIE</a></td>
-		<td style="vertical-align:top">Turn on SmartScreen Filter scan</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Local Machine Zone</td>
-		<td style="vertical-align:top">IZ_Policy_Phishing_9</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-localmachinezoneallowuserdatapersistence">InternetExplorer/LocalMachineZoneAllowUserDataPersistence</a></td>
-		<td style="vertical-align:top">Userdata persistence</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Local Machine Zone</td>
-		<td style="vertical-align:top">IZ_PolicyUserdataPersistence_9</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-localmachinezoneallowlessprivilegedsites">InternetExplorer/LocalMachineZoneAllowLessPrivilegedSites</a></td>
-		<td style="vertical-align:top">Web sites in less privileged Web content zones can navigate into this zone</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Local Machine Zone</td>
-		<td style="vertical-align:top">IZ_PolicyZoneElevationURLaction_9</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-lockeddowninternetzoneallowaccesstodatasources">InternetExplorer/LockedDownInternetZoneAllowAccessToDataSources</a></td>
-		<td style="vertical-align:top">Access data sources across domains</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Internet Zone</td>
-		<td style="vertical-align:top">IZ_PolicyAccessDataSourcesAcrossDomains_2</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-lockeddowninternetzoneallowfontdownloads">InternetExplorer/LockedDownInternetZoneAllowFontDownloads</a></td>
-		<td style="vertical-align:top">Allow font downloads</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Internet Zone</td>
-		<td style="vertical-align:top">IZ_PolicyFontDownload_2</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-lockeddowninternetzoneallowscriptlets">InternetExplorer/LockedDownInternetZoneAllowScriptlets</a></td>
-		<td style="vertical-align:top">Allow scriptlets</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Internet Zone</td>
-		<td style="vertical-align:top">IZ_Policy_AllowScriptlets_2</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-lockeddowninternetzoneallowautomaticpromptingforactivexcontrols">InternetExplorer/LockedDownInternetZoneAllowAutomaticPromptingForActiveXControls</a></td>
-		<td style="vertical-align:top">Automatic prompting for ActiveX controls</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Internet Zone</td>
-		<td style="vertical-align:top">IZ_PolicyNotificationBarActiveXURLaction_2</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-lockeddowninternetzoneallowautomaticpromptingforfiledownloads">InternetExplorer/LockedDownInternetZoneAllowAutomaticPromptingForFileDownloads</a></td>
-		<td style="vertical-align:top">Automatic prompting for file downloads</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Internet Zone</td>
-		<td style="vertical-align:top">IZ_PolicyNotificationBarDownloadURLaction_2</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-lockeddowninternetzoneinitializeandscriptactivexcontrols">InternetExplorer/LockedDownInternetZoneInitializeAndScriptActiveXControls</a></td>
-		<td style="vertical-align:top">Initialize and script ActiveX controls not marked as safe</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Internet Zone</td>
-		<td style="vertical-align:top">IZ_PolicyScriptActiveXNotMarkedSafe_2</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-lockeddowninternetzonenavigatewindowsandframes">InternetExplorer/LockedDownInternetZoneNavigateWindowsAndFrames</a></td>
-		<td style="vertical-align:top">Navigate windows and frames across different domains</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Internet Zone</td>
-		<td style="vertical-align:top">IZ_PolicyNavigateSubframesAcrossDomains_2</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-lockeddowninternetzoneallownetframeworkreliantcomponents">InternetExplorer/LockedDownInternetZoneAllowNETFrameworkReliantComponents</a></td>
-		<td style="vertical-align:top">Run .NET Framework-reliant components not signed with Authenticode</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Internet Zone</td>
-		<td style="vertical-align:top">IZ_PolicyUnsignedFrameworkComponentsURLaction_2</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-lockeddowninternetzoneallowsmartscreenie">InternetExplorer/LockedDownInternetZoneAllowSmartScreenIE</a></td>
-		<td style="vertical-align:top">Turn on SmartScreen Filter scan</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Internet Zone</td>
-		<td style="vertical-align:top">IZ_Policy_Phishing_2</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-lockeddowninternetzoneallowuserdatapersistence">InternetExplorer/LockedDownInternetZoneAllowUserDataPersistence</a></td>
-		<td style="vertical-align:top">Userdata persistence</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Internet Zone</td>
-		<td style="vertical-align:top">IZ_PolicyUserdataPersistence_2</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-lockeddowninternetzoneallowlessprivilegedsites">InternetExplorer/LockedDownInternetZoneAllowLessPrivilegedSites</a></td>
-		<td style="vertical-align:top">Web sites in less privileged Web content zones can navigate into this zone</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Internet Zone</td>
-		<td style="vertical-align:top">IZ_PolicyZoneElevationURLaction_2</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-lockeddownintranetzoneallowaccesstodatasources">InternetExplorer/LockedDownIntranetZoneAllowAccessToDataSources</a></td>
-		<td style="vertical-align:top">Access data sources across domains</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Intranet Zone</td>
-		<td style="vertical-align:top">IZ_PolicyAccessDataSourcesAcrossDomains_4</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-lockeddownintranetzoneallowfontdownloads">InternetExplorer/LockedDownIntranetZoneAllowFontDownloads</a></td>
-		<td style="vertical-align:top">Allow font downloads</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Intranet Zone</td>
-		<td style="vertical-align:top">IZ_PolicyFontDownload_4</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-lockeddownintranetzoneallowscriptlets">InternetExplorer/LockedDownIntranetZoneAllowScriptlets</a></td>
-		<td style="vertical-align:top">Allow scriptlets</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Intranet Zone</td>
-		<td style="vertical-align:top">IZ_Policy_AllowScriptlets_4</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-lockeddownintranetzoneallowautomaticpromptingforactivexcontrols">InternetExplorer/LockedDownIntranetZoneAllowAutomaticPromptingForActiveXControls</a></td>
-		<td style="vertical-align:top">Automatic prompting for ActiveX controls</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Intranet Zone</td>
-		<td style="vertical-align:top">IZ_PolicyNotificationBarActiveXURLaction_4</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-lockeddownintranetzoneallowautomaticpromptingforfiledownloads">InternetExplorer/LockedDownIntranetZoneAllowAutomaticPromptingForFileDownloads</a></td>
-		<td style="vertical-align:top">Automatic prompting for file downloads</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Intranet Zone</td>
-		<td style="vertical-align:top">IZ_PolicyNotificationBarDownloadURLaction_4</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-lockeddownintranetzoneinitializeandscriptactivexcontrols">InternetExplorer/LockedDownIntranetZoneInitializeAndScriptActiveXControls</a></td>
-		<td style="vertical-align:top">Initialize and script ActiveX controls not marked as safe</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Intranet Zone</td>
-		<td style="vertical-align:top">IZ_PolicyScriptActiveXNotMarkedSafe_4</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-lockeddownintranetzonenavigatewindowsandframes">InternetExplorer/LockedDownIntranetZoneNavigateWindowsAndFrames</a></td>
-		<td style="vertical-align:top">Navigate windows and frames across different domains</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Intranet Zone</td>
-		<td style="vertical-align:top">IZ_PolicyNavigateSubframesAcrossDomains_4</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-lockeddownintranetzoneallownetframeworkreliantcomponents">InternetExplorer/LockedDownIntranetZoneAllowNETFrameworkReliantComponents</a></td>
-		<td style="vertical-align:top">Run .NET Framework-reliant components not signed with Authenticode</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Intranet Zone</td>
-		<td style="vertical-align:top">IZ_PolicyUnsignedFrameworkComponentsURLaction_4</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-lockeddownintranetzoneallowsmartscreenie">InternetExplorer/LockedDownIntranetZoneAllowSmartScreenIE</a></td>
-		<td style="vertical-align:top">Turn on SmartScreen Filter scan</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Intranet Zone</td>
-		<td style="vertical-align:top">IZ_Policy_Phishing_4</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-lockeddownintranetzoneallowuserdatapersistence">InternetExplorer/LockedDownIntranetZoneAllowUserDataPersistence</a></td>
-		<td style="vertical-align:top">Userdata persistence</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Intranet Zone</td>
-		<td style="vertical-align:top">IZ_PolicyUserdataPersistence_4</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-lockeddownintranetzoneallowlessprivilegedsites">InternetExplorer/LockedDownIntranetZoneAllowLessPrivilegedSites</a></td>
-		<td style="vertical-align:top">Web sites in less privileged Web content zones can navigate into this zone</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Intranet Zone</td>
-		<td style="vertical-align:top">IZ_PolicyZoneElevationURLaction_4</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-lockeddownlocalmachinezoneallowaccesstodatasources">InternetExplorer/LockedDownLocalMachineZoneAllowAccessToDataSources</a></td>
-		<td style="vertical-align:top">Access data sources across domains</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Local Machine Zone</td>
-		<td style="vertical-align:top">IZ_PolicyAccessDataSourcesAcrossDomains_10</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-lockeddownlocalmachinezoneallowfontdownloads">InternetExplorer/LockedDownLocalMachineZoneAllowFontDownloads</a></td>
-		<td style="vertical-align:top">Allow font downloads</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Local Machine Zone</td>
-		<td style="vertical-align:top">IZ_PolicyFontDownload_10</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-lockeddownlocalmachinezoneallowscriptlets">InternetExplorer/LockedDownLocalMachineZoneAllowScriptlets</a></td>
-		<td style="vertical-align:top">Allow scriptlets</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Local Machine Zone</td>
-		<td style="vertical-align:top">IZ_Policy_AllowScriptlets_10</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-lockeddownlocalmachinezoneallowautomaticpromptingforactivexcontrols">InternetExplorer/LockedDownLocalMachineZoneAllowAutomaticPromptingForActiveXControls</a></td>
-		<td style="vertical-align:top">Automatic prompting for ActiveX controls</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Local Machine Zone</td>
-		<td style="vertical-align:top">IZ_PolicyNotificationBarActiveXURLaction_10</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-lockeddownlocalmachinezoneallowautomaticpromptingforfiledownloads">InternetExplorer/LockedDownLocalMachineZoneAllowAutomaticPromptingForFileDownloads</a></td>
-		<td style="vertical-align:top">Automatic prompting for file downloads</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Local Machine Zone</td>
-		<td style="vertical-align:top">IZ_PolicyNotificationBarDownloadURLaction_10</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-lockeddownlocalmachinezoneinitializeandscriptactivexcontrols">InternetExplorer/LockedDownLocalMachineZoneInitializeAndScriptActiveXControls</a></td>
-		<td style="vertical-align:top">Initialize and script ActiveX controls not marked as safe</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Local Machine Zone</td>
-		<td style="vertical-align:top">IZ_PolicyScriptActiveXNotMarkedSafe_10</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-lockeddownlocalmachinezonenavigatewindowsandframes">InternetExplorer/LockedDownLocalMachineZoneNavigateWindowsAndFrames</a></td>
-		<td style="vertical-align:top">Navigate windows and frames across different domains</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Local Machine Zone</td>
-		<td style="vertical-align:top">IZ_PolicyNavigateSubframesAcrossDomains_10</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-lockeddownlocalmachinezoneallownetframeworkreliantcomponents">InternetExplorer/LockedDownLocalMachineZoneAllowNETFrameworkReliantComponents</a></td>
-		<td style="vertical-align:top">Run .NET Framework-reliant components not signed with Authenticode</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Local Machine Zone</td>
-		<td style="vertical-align:top">IZ_PolicyUnsignedFrameworkComponentsURLaction_10</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-lockeddownlocalmachinezoneallowsmartscreenie">InternetExplorer/LockedDownLocalMachineZoneAllowSmartScreenIE</a></td>
-		<td style="vertical-align:top">Turn on SmartScreen Filter scan</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Local Machine Zone</td>
-		<td style="vertical-align:top">IZ_Policy_Phishing_10</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-lockeddownlocalmachinezoneallowuserdatapersistence">InternetExplorer/LockedDownLocalMachineZoneAllowUserDataPersistence</a></td>
-		<td style="vertical-align:top">Userdata persistence</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Local Machine Zone</td>
-		<td style="vertical-align:top">IZ_PolicyUserdataPersistence_10</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-lockeddownlocalmachinezoneallowlessprivilegedsites">InternetExplorer/LockedDownLocalMachineZoneAllowLessPrivilegedSites</a></td>
-		<td style="vertical-align:top">Web sites in less privileged Web content zones can navigate into this zone</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Local Machine Zone</td>
-		<td style="vertical-align:top">IZ_PolicyZoneElevationURLaction_10</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-lockeddownrestrictedsiteszoneallowaccesstodatasources">InternetExplorer/LockedDownRestrictedSitesZoneAllowAccessToDataSources</a></td>
-		<td style="vertical-align:top">Access data sources across domains</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Restricted Sites Zone</td>
-		<td style="vertical-align:top">IZ_PolicyAccessDataSourcesAcrossDomains_8</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-lockeddownrestrictedsiteszoneallowfontdownloads">InternetExplorer/LockedDownRestrictedSitesZoneAllowFontDownloads</a></td>
-		<td style="vertical-align:top">Allow font downloads</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Restricted Sites Zone</td>
-		<td style="vertical-align:top">IZ_PolicyFontDownload_8</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-lockeddownrestrictedsiteszoneallowscriptlets">InternetExplorer/LockedDownRestrictedSitesZoneAllowScriptlets</a></td>
-		<td style="vertical-align:top">Allow scriptlets</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Restricted Sites Zone</td>
-		<td style="vertical-align:top">IZ_Policy_AllowScriptlets_8</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-lockeddownrestrictedsiteszoneallowautomaticpromptingforactivexcontrols">InternetExplorer/LockedDownRestrictedSitesZoneAllowAutomaticPromptingForActiveXControls</a></td>
-		<td style="vertical-align:top">Automatic prompting for ActiveX controls</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Restricted Sites Zone</td>
-		<td style="vertical-align:top">IZ_PolicyNotificationBarActiveXURLaction_8</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-lockeddownrestrictedsiteszoneallowautomaticpromptingforfiledownloads">InternetExplorer/LockedDownRestrictedSitesZoneAllowAutomaticPromptingForFileDownloads</a></td>
-		<td style="vertical-align:top">Automatic prompting for file downloads</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Restricted Sites Zone</td>
-		<td style="vertical-align:top">IZ_PolicyNotificationBarDownloadURLaction_8</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-lockeddownrestrictedsiteszoneinitializeandscriptactivexcontrols">InternetExplorer/LockedDownRestrictedSitesZoneInitializeAndScriptActiveXControls</a></td>
-		<td style="vertical-align:top">Initialize and script ActiveX controls not marked as safe</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Restricted Sites Zone</td>
-		<td style="vertical-align:top">IZ_PolicyScriptActiveXNotMarkedSafe_8</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-lockeddownrestrictedsiteszonenavigatewindowsandframes">InternetExplorer/LockedDownRestrictedSitesZoneNavigateWindowsAndFrames</a></td>
-		<td style="vertical-align:top">Navigate windows and frames across different domains</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Restricted Sites Zone</td>
-		<td style="vertical-align:top">IZ_PolicyNavigateSubframesAcrossDomains_8</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-lockeddownrestrictedsiteszoneallownetframeworkreliantcomponents">InternetExplorer/LockedDownRestrictedSitesZoneAllowNETFrameworkReliantComponents</a></td>
-		<td style="vertical-align:top">Run .NET Framework-reliant components not signed with Authenticode</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Restricted Sites Zone</td>
-		<td style="vertical-align:top">IZ_PolicyUnsignedFrameworkComponentsURLaction_8</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-lockeddownrestrictedsiteszoneallowsmartscreenie">InternetExplorer/LockedDownRestrictedSitesZoneAllowSmartScreenIE</a></td>
-		<td style="vertical-align:top">Turn on SmartScreen Filter scan</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Restricted Sites Zone</td>
-		<td style="vertical-align:top">IZ_Policy_Phishing_8</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-lockeddownrestrictedsiteszoneallowuserdatapersistence">InternetExplorer/LockedDownRestrictedSitesZoneAllowUserDataPersistence</a></td>
-		<td style="vertical-align:top">Userdata persistence</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Restricted Sites Zone</td>
-		<td style="vertical-align:top">IZ_PolicyUserdataPersistence_8</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-lockeddownrestrictedsiteszoneallowlessprivilegedsites">InternetExplorer/LockedDownRestrictedSitesZoneAllowLessPrivilegedSites</a></td>
-		<td style="vertical-align:top">Web sites in less privileged Web content zones can navigate into this zone</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Restricted Sites Zone</td>
-		<td style="vertical-align:top">IZ_PolicyZoneElevationURLaction_8</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-lockeddowntrustedsiteszoneallowaccesstodatasources">InternetExplorer/LockedDownTrustedSitesZoneAllowAccessToDataSources</a></td>
-		<td style="vertical-align:top">Access data sources across domains</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Trusted Sites Zone</td>
-		<td style="vertical-align:top">IZ_PolicyAccessDataSourcesAcrossDomains_6</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-lockeddowntrustedsiteszoneallowfontdownloads">InternetExplorer/LockedDownTrustedSitesZoneAllowFontDownloads</a></td>
-		<td style="vertical-align:top">Allow font downloads</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Trusted Sites Zone</td>
-		<td style="vertical-align:top">IZ_PolicyFontDownload_6</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-lockeddowntrustedsiteszoneallowscriptlets">InternetExplorer/LockedDownTrustedSitesZoneAllowScriptlets</a></td>
-		<td style="vertical-align:top">Allow scriptlets</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Trusted Sites Zone</td>
-		<td style="vertical-align:top">IZ_Policy_AllowScriptlets_6</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-lockeddowntrustedsiteszoneallowautomaticpromptingforactivexcontrols">InternetExplorer/LockedDownTrustedSitesZoneAllowAutomaticPromptingForActiveXControls</a></td>
-		<td style="vertical-align:top">Automatic prompting for ActiveX controls</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Trusted Sites Zone</td>
-		<td style="vertical-align:top">IZ_PolicyNotificationBarActiveXURLaction_6</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-lockeddowntrustedsiteszoneallowautomaticpromptingforfiledownloads">InternetExplorer/LockedDownTrustedSitesZoneAllowAutomaticPromptingForFileDownloads</a></td>
-		<td style="vertical-align:top">Automatic prompting for file downloads</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Trusted Sites Zone</td>
-		<td style="vertical-align:top">IZ_PolicyNotificationBarDownloadURLaction_6</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-lockeddowntrustedsiteszoneinitializeandscriptactivexcontrols">InternetExplorer/LockedDownTrustedSitesZoneInitializeAndScriptActiveXControls</a></td>
-		<td style="vertical-align:top">Initialize and script ActiveX controls not marked as safe</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Trusted Sites Zone</td>
-		<td style="vertical-align:top">IZ_PolicyScriptActiveXNotMarkedSafe_6</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-lockeddowntrustedsiteszonenavigatewindowsandframes">InternetExplorer/LockedDownTrustedSitesZoneNavigateWindowsAndFrames</a></td>
-		<td style="vertical-align:top">Navigate windows and frames across different domains</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Trusted Sites Zone</td>
-		<td style="vertical-align:top">IZ_PolicyNavigateSubframesAcrossDomains_6</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-lockeddowntrustedsiteszoneallownetframeworkreliantcomponents">InternetExplorer/LockedDownTrustedSitesZoneAllowNETFrameworkReliantComponents</a></td>
-		<td style="vertical-align:top">Run .NET Framework-reliant components not signed with Authenticode</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Trusted Sites Zone</td>
-		<td style="vertical-align:top">IZ_PolicyUnsignedFrameworkComponentsURLaction_6</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-lockeddowntrustedsiteszoneallowsmartscreenie">InternetExplorer/LockedDownTrustedSitesZoneAllowSmartScreenIE</a></td>
-		<td style="vertical-align:top">Turn on SmartScreen Filter scan</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Trusted Sites Zone</td>
-		<td style="vertical-align:top">IZ_Policy_Phishing_6</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-lockeddowntrustedsiteszoneallowuserdatapersistence">InternetExplorer/LockedDownTrustedSitesZoneAllowUserDataPersistence</a></td>
-		<td style="vertical-align:top">Userdata persistence</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Trusted Sites Zone</td>
-		<td style="vertical-align:top">IZ_PolicyUserdataPersistence_6</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-lockeddowntrustedsiteszoneallowlessprivilegedsites">InternetExplorer/LockedDownTrustedSitesZoneAllowLessPrivilegedSites</a></td>
-		<td style="vertical-align:top">Web sites in less privileged Web content zones can navigate into this zone</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Trusted Sites Zone</td>
-		<td style="vertical-align:top">IZ_PolicyZoneElevationURLaction_6</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-restrictedsiteszoneallowaccesstodatasources">InternetExplorer/RestrictedSitesZoneAllowAccessToDataSources</a></td>
-		<td style="vertical-align:top">Access data sources across domains</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone</td>
-		<td style="vertical-align:top">IZ_PolicyAccessDataSourcesAcrossDomains_7</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-restrictedsiteszoneallowfontdownloads">InternetExplorer/RestrictedSitesZoneAllowFontDownloads</a></td>
-		<td style="vertical-align:top">Allow font downloads</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone</td>
-		<td style="vertical-align:top">IZ_PolicyFontDownload_7</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-restrictedsiteszoneallowscriptlets">InternetExplorer/RestrictedSitesZoneAllowScriptlets</a></td>
-		<td style="vertical-align:top">Allow scriptlets</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone</td>
-		<td style="vertical-align:top">IZ_Policy_AllowScriptlets_7</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-restrictedsiteszoneallowautomaticpromptingforactivexcontrols">InternetExplorer/RestrictedSitesZoneAllowAutomaticPromptingForActiveXControls</a></td>
-		<td style="vertical-align:top">Automatic prompting for ActiveX controls</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone</td>
-		<td style="vertical-align:top">IZ_PolicyNotificationBarActiveXURLaction_7</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-restrictedsiteszoneallowautomaticpromptingforfiledownloads">InternetExplorer/RestrictedSitesZoneAllowAutomaticPromptingForFileDownloads</a></td>
-		<td style="vertical-align:top">Automatic prompting for file downloads</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone</td>
-		<td style="vertical-align:top">IZ_PolicyNotificationBarDownloadURLaction_7</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-restrictedsiteszoneinitializeandscriptactivexcontrols">InternetExplorer/RestrictedSitesZoneInitializeAndScriptActiveXControls</a></td>
-		<td style="vertical-align:top">Initialize and script ActiveX controls not marked as safe</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone</td>
-		<td style="vertical-align:top">IZ_PolicyScriptActiveXNotMarkedSafe_7</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-restrictedsiteszonenavigatewindowsandframes">InternetExplorer/RestrictedSitesZoneNavigateWindowsAndFrames</a></td>
-		<td style="vertical-align:top">Navigate windows and frames across different domains</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone</td>
-		<td style="vertical-align:top">IZ_PolicyNavigateSubframesAcrossDomains_7</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-restrictedsiteszoneallownetframeworkreliantcomponents">InternetExplorer/RestrictedSitesZoneAllowNETFrameworkReliantComponents</a></td>
-		<td style="vertical-align:top">Run .NET Framework-reliant components not signed with Authenticode</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone</td>
-		<td style="vertical-align:top">IZ_PolicyUnsignedFrameworkComponentsURLaction_7</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-restrictedsiteszoneallowsmartscreenie">InternetExplorer/RestrictedSitesZoneAllowSmartScreenIE</a></td>
-		<td style="vertical-align:top">Turn on SmartScreen Filter scan</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone</td>
-		<td style="vertical-align:top">IZ_Policy_Phishing_7</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-restrictedsiteszoneallowuserdatapersistence">InternetExplorer/RestrictedSitesZoneAllowUserDataPersistence</a></td>
-		<td style="vertical-align:top">Userdata persistence</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone</td>
-		<td style="vertical-align:top">IZ_PolicyUserdataPersistence_7</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-restrictedsiteszoneallowlessprivilegedsites">InternetExplorer/RestrictedSitesZoneAllowLessPrivilegedSites</a></td>
-		<td style="vertical-align:top">Web sites in less privileged Web content zones can navigate into this zone</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone</td>
-		<td style="vertical-align:top">IZ_PolicyZoneElevationURLaction_7</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-trustedsiteszoneallowaccesstodatasources">InternetExplorer/TrustedSitesZoneAllowAccessToDataSources</a></td>
-		<td style="vertical-align:top">Access data sources across domains</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Trusted Sites Zone</td>
-		<td style="vertical-align:top">IZ_PolicyAccessDataSourcesAcrossDomains_5</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-trustedsiteszoneallowfontdownloads">InternetExplorer/TrustedSitesZoneAllowFontDownloads</a></td>
-		<td style="vertical-align:top">Allow font downloads</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Trusted Sites Zone</td>
-		<td style="vertical-align:top">IZ_PolicyFontDownload_5</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-trustedsiteszoneallowscriptlets">InternetExplorer/TrustedSitesZoneAllowScriptlets</a></td>
-		<td style="vertical-align:top">Allow scriptlets</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Trusted Sites Zone</td>
-		<td style="vertical-align:top">IZ_Policy_AllowScriptlets_5</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-trustedsiteszoneallowautomaticpromptingforactivexcontrols">InternetExplorer/TrustedSitesZoneAllowAutomaticPromptingForActiveXControls</a></td>
-		<td style="vertical-align:top">Automatic prompting for ActiveX controls</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Trusted Sites Zone</td>
-		<td style="vertical-align:top">IZ_PolicyNotificationBarActiveXURLaction_5</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-trustedsiteszoneallowautomaticpromptingforfiledownloads">InternetExplorer/TrustedSitesZoneAllowAutomaticPromptingForFileDownloads</a></td>
-		<td style="vertical-align:top">Automatic prompting for file downloads</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Trusted Sites Zone</td>
-		<td style="vertical-align:top">IZ_PolicyNotificationBarDownloadURLaction_5</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-trustedsiteszoneinitializeandscriptactivexcontrols">InternetExplorer/TrustedSitesZoneInitializeAndScriptActiveXControls</a></td>
-		<td style="vertical-align:top">Initialize and script ActiveX controls not marked as safe</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Trusted Sites Zone</td>
-		<td style="vertical-align:top">IZ_PolicyScriptActiveXNotMarkedSafe_5</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-trustedsiteszonenavigatewindowsandframes">InternetExplorer/TrustedSitesZoneNavigateWindowsAndFrames</a></td>
-		<td style="vertical-align:top">Navigate windows and frames across different domains</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Trusted Sites Zone</td>
-		<td style="vertical-align:top">IZ_PolicyNavigateSubframesAcrossDomains_5</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-trustedsiteszoneallownetframeworkreliantcomponents">InternetExplorer/TrustedSitesZoneAllowNETFrameworkReliantComponents</a></td>
-		<td style="vertical-align:top">Run .NET Framework-reliant components not signed with Authenticode</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Trusted Sites Zone</td>
-		<td style="vertical-align:top">IZ_PolicyUnsignedFrameworkComponentsURLaction_5</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-trustedsiteszoneallowsmartscreenie">InternetExplorer/TrustedSitesZoneAllowSmartScreenIE</a></td>
-		<td style="vertical-align:top">Turn on SmartScreen Filter scan</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Trusted Sites Zone</td>
-		<td style="vertical-align:top">IZ_Policy_Phishing_5</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-trustedsiteszoneallowuserdatapersistence">InternetExplorer/TrustedSitesZoneAllowUserDataPersistence</a></td>
-		<td style="vertical-align:top">Userdata persistence</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Trusted Sites Zone</td>
-		<td style="vertical-align:top">IZ_PolicyUserdataPersistence_5</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-trustedsiteszoneallowlessprivilegedsites">InternetExplorer/TrustedSitesZoneAllowLessPrivilegedSites</a></td>
-		<td style="vertical-align:top">Web sites in less privileged Web content zones can navigate into this zone</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Trusted Sites Zone</td>
-		<td style="vertical-align:top">IZ_PolicyZoneElevationURLaction_5</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-allowonewordentry">InternetExplorer/AllowOneWordEntry</a></td>
-		<td style="vertical-align:top">Go to an intranet site for a one-word entry in the Address bar</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Settings/Advanced settings/Browsing</td>
-		<td style="vertical-align:top">UseIntranetSiteForOneWordEntry</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-allowaddonlist">InternetExplorer/AllowAddOnList</a></td>
-		<td style="vertical-align:top">Add-on List</td>
-		<td style="vertical-align:top">Windows Components/Internet Explorer/Security Features/Add-on Management</td>
-		<td style="vertical-align:top">AddonManagement_AddOnList</td>
-		<td style="vertical-align:top">inetres.admx</td>
-	</tr>
-	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-disableadobeflash">InternetExplorer/DisableAdobeFlash</a></td>
 		<td style="vertical-align:top">Turn off Adobe Flash in Internet Explorer and prevent applications from using Internet Explorer technology to instantiate Flash objects</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Security Features/Add-on Management</td>
 		<td style="vertical-align:top">DisableFlashInIE</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#internetexplorer-disablebypassofsmartscreenwarnings">InternetExplorer/DisableBypassOfSmartScreenWarnings</a></td>
+		<td style="vertical-align:top">Prevent bypassing SmartScreen Filter warnings</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer</td>
+		<td style="vertical-align:top">DisableSafetyFilterOverride</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#internetexplorer-disablebypassofsmartscreenwarningsaboutuncommonfiles">InternetExplorer/DisableBypassOfSmartScreenWarningsAboutUncommonFiles</a></td>
+		<td style="vertical-align:top">Prevent bypassing SmartScreen Filter warnings about files that are not commonly downloaded from the Internet</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer</td>
+		<td style="vertical-align:top">DisableSafetyFilterOverrideForAppRepUnknown</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#internetexplorer-disablecustomerexperienceimprovementprogramparticipation">InternetExplorer/DisableCustomerExperienceImprovementProgramParticipation</a></td>
+		<td style="vertical-align:top">Prevent participation in the Customer Experience Improvement Program</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer</td>
+		<td style="vertical-align:top">SQM_DisableCEIP</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#internetexplorer-disableenclosuredownloading">InternetExplorer/DisableEnclosureDownloading</a></td>
+		<td style="vertical-align:top">Prevent downloading of enclosures</td>
+		<td style="vertical-align:top">Windows Components/RSS Feeds</td>
+		<td style="vertical-align:top">Disable_Downloading_of_Enclosures</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#internetexplorer-disableencryptionsupport">InternetExplorer/DisableEncryptionSupport</a></td>
+		<td style="vertical-align:top">Turn off encryption support</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Advanced Page</td>
+		<td style="vertical-align:top">Advanced_SetWinInetProtocols</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#internetexplorer-disablefirstrunwizard">InternetExplorer/DisableFirstRunWizard</a></td>
+		<td style="vertical-align:top">Prevent running First Run wizard</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer</td>
+		<td style="vertical-align:top">NoFirstRunCustomise</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#internetexplorer-disableflipaheadfeature">InternetExplorer/DisableFlipAheadFeature</a></td>
+		<td style="vertical-align:top">Turn off the flip ahead with page prediction feature</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Advanced Page</td>
+		<td style="vertical-align:top">Advanced_DisableFlipAhead</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#internetexplorer-disablehomepagechange">InternetExplorer/DisableHomePageChange</a></td>
+		<td style="vertical-align:top">Disable changing home page settings</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer</td>
+		<td style="vertical-align:top">RestrictHomePage</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#internetexplorer-disableproxychange">InternetExplorer/DisableProxyChange</a></td>
+		<td style="vertical-align:top">Prevent changing proxy settings</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer</td>
+		<td style="vertical-align:top">RestrictProxy</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#internetexplorer-disablesearchproviderchange">InternetExplorer/DisableSearchProviderChange</a></td>
+		<td style="vertical-align:top">Prevent changing the default search provider</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer</td>
+		<td style="vertical-align:top">NoSearchProvider</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#internetexplorer-disablesecondaryhomepagechange">InternetExplorer/DisableSecondaryHomePageChange</a></td>
+		<td style="vertical-align:top">Disable changing secondary home page settings</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer</td>
+		<td style="vertical-align:top">SecondaryHomePages</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#internetexplorer-disableupdatecheck">InternetExplorer/DisableUpdateCheck</a></td>
+		<td style="vertical-align:top">Disable Periodic Check for Internet Explorer software updates</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer</td>
+		<td style="vertical-align:top">NoUpdateCheck</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#internetexplorer-donotallowuserstoaddsites">InternetExplorer/DoNotAllowUsersToAddSites</a></td>
+		<td style="vertical-align:top">Security Zones: Do not allow users to add/delete sites</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer</td>
+		<td style="vertical-align:top">Security_zones_map_edit</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#internetexplorer-donotallowuserstochangepolicies">InternetExplorer/DoNotAllowUsersToChangePolicies</a></td>
+		<td style="vertical-align:top">Security Zones: Do not allow users to change policies</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer</td>
+		<td style="vertical-align:top">Security_options_edit</td>
 		<td style="vertical-align:top">inetres.admx</td>
 	</tr>
 	<tr>
@@ -1457,17 +736,801 @@ The Policy configuration service provider enables the enterprise to configure po
 		<td style="vertical-align:top">inetres.admx</td>
 	</tr>
 	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-disableenclosuredownloading">InternetExplorer/DisableEnclosureDownloading</a></td>
-		<td style="vertical-align:top">Prevent downloading of enclosures</td>
-		<td style="vertical-align:top">Windows Components/RSS Feeds</td>
-		<td style="vertical-align:top">Disable_Downloading_of_Enclosures</td>
+		<td style="vertical-align:top"><a href="#internetexplorer-includealllocalsites">InternetExplorer/IncludeAllLocalSites</a></td>
+		<td style="vertical-align:top">Intranet Sites: Include all local (intranet) sites not listed in other zones</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page</td>
+		<td style="vertical-align:top">IZ_IncludeUnspecifiedLocalSites</td>
 		<td style="vertical-align:top">inetres.admx</td>
 	</tr>
 	<tr>
-		<td style="vertical-align:top"><a href="#kerberos-requirekerberosarmoring">Kerberos/RequireKerberosArmoring</a></td>
-		<td style="vertical-align:top">Fail authentication requests when Kerberos armoring is not available</td>
+		<td style="vertical-align:top"><a href="#internetexplorer-includeallnetworkpaths">InternetExplorer/IncludeAllNetworkPaths</a></td>
+		<td style="vertical-align:top">Intranet Sites: Include all network paths (UNCs)</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page</td>
+		<td style="vertical-align:top">IZ_UNCAsIntranet</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#internetexplorer-internetzoneallowaccesstodatasources">InternetExplorer/InternetZoneAllowAccessToDataSources</a></td>
+		<td style="vertical-align:top">Access data sources across domains</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone</td>
+		<td style="vertical-align:top">IZ_PolicyAccessDataSourcesAcrossDomains_1</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#internetexplorer-internetzoneallowautomaticpromptingforactivexcontrols">InternetExplorer/InternetZoneAllowAutomaticPromptingForActiveXControls</a></td>
+		<td style="vertical-align:top">Automatic prompting for ActiveX controls</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone</td>
+		<td style="vertical-align:top">IZ_PolicyNotificationBarActiveXURLaction_1</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#internetexplorer-internetzoneallowautomaticpromptingforfiledownloads">InternetExplorer/InternetZoneAllowAutomaticPromptingForFileDownloads</a></td>
+		<td style="vertical-align:top">Automatic prompting for file downloads</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone</td>
+		<td style="vertical-align:top">IZ_PolicyNotificationBarDownloadURLaction_1</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#internetexplorer-internetzoneallowfontdownloads">InternetExplorer/InternetZoneAllowFontDownloads</a></td>
+		<td style="vertical-align:top">Allow font downloads</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone</td>
+		<td style="vertical-align:top">IZ_PolicyFontDownload_1</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#internetexplorer-internetzoneallowlessprivilegedsites">InternetExplorer/InternetZoneAllowLessPrivilegedSites</a></td>
+		<td style="vertical-align:top">Web sites in less privileged Web content zones can navigate into this zone</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone</td>
+		<td style="vertical-align:top">IZ_PolicyZoneElevationURLaction_1</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#internetexplorer-internetzoneallownetframeworkreliantcomponents">InternetExplorer/InternetZoneAllowNETFrameworkReliantComponents</a></td>
+		<td style="vertical-align:top">Run .NET Framework-reliant components not signed with Authenticode</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone</td>
+		<td style="vertical-align:top">IZ_PolicyUnsignedFrameworkComponentsURLaction_1</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#internetexplorer-internetzoneallowscriptlets">InternetExplorer/InternetZoneAllowScriptlets</a></td>
+		<td style="vertical-align:top">Allow scriptlets</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone</td>
+		<td style="vertical-align:top">IZ_Policy_AllowScriptlets_1</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#internetexplorer-internetzoneallowsmartscreenie">InternetExplorer/InternetZoneAllowSmartScreenIE</a></td>
+		<td style="vertical-align:top">Turn on SmartScreen Filter scan</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone</td>
+		<td style="vertical-align:top">IZ_Policy_Phishing_1</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#internetexplorer-internetzoneallowuserdatapersistence">InternetExplorer/InternetZoneAllowUserDataPersistence</a></td>
+		<td style="vertical-align:top">Userdata persistence</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone</td>
+		<td style="vertical-align:top">IZ_PolicyUserdataPersistence_1</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#internetexplorer-internetzoneinitializeandscriptactivexcontrols">InternetExplorer/InternetZoneInitializeAndScriptActiveXControls</a></td>
+		<td style="vertical-align:top">Initialize and script ActiveX controls not marked as safe</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone</td>
+		<td style="vertical-align:top">IZ_PolicyScriptActiveXNotMarkedSafe_1</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#internetexplorer-internetzonenavigatewindowsandframes">InternetExplorer/InternetZoneNavigateWindowsAndFrames</a></td>
+		<td style="vertical-align:top">Navigate windows and frames across different domains</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone</td>
+		<td style="vertical-align:top">IZ_PolicyNavigateSubframesAcrossDomains_1</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#internetexplorer-intranetzoneallowaccesstodatasources">InternetExplorer/IntranetZoneAllowAccessToDataSources</a></td>
+		<td style="vertical-align:top">Access data sources across domains</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Intranet Zone</td>
+		<td style="vertical-align:top">IZ_PolicyAccessDataSourcesAcrossDomains_3</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#internetexplorer-intranetzoneallowautomaticpromptingforactivexcontrols">InternetExplorer/IntranetZoneAllowAutomaticPromptingForActiveXControls</a></td>
+		<td style="vertical-align:top">Automatic prompting for ActiveX controls</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Intranet Zone</td>
+		<td style="vertical-align:top">IZ_PolicyNotificationBarActiveXURLaction_3</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#internetexplorer-intranetzoneallowautomaticpromptingforfiledownloads">InternetExplorer/IntranetZoneAllowAutomaticPromptingForFileDownloads</a></td>
+		<td style="vertical-align:top">Automatic prompting for file downloads</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Intranet Zone</td>
+		<td style="vertical-align:top">IZ_PolicyNotificationBarDownloadURLaction_3</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#internetexplorer-intranetzoneallowfontdownloads">InternetExplorer/IntranetZoneAllowFontDownloads</a></td>
+		<td style="vertical-align:top">Allow font downloads</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Intranet Zone</td>
+		<td style="vertical-align:top">IZ_PolicyFontDownload_3</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#internetexplorer-intranetzoneallowlessprivilegedsites">InternetExplorer/IntranetZoneAllowLessPrivilegedSites</a></td>
+		<td style="vertical-align:top">Web sites in less privileged Web content zones can navigate into this zone</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Intranet Zone</td>
+		<td style="vertical-align:top">IZ_PolicyZoneElevationURLaction_3</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#internetexplorer-intranetzoneallownetframeworkreliantcomponents">InternetExplorer/IntranetZoneAllowNETFrameworkReliantComponents</a></td>
+		<td style="vertical-align:top">Run .NET Framework-reliant components not signed with Authenticode</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Intranet Zone</td>
+		<td style="vertical-align:top">IZ_PolicyUnsignedFrameworkComponentsURLaction_3</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#internetexplorer-intranetzoneallowscriptlets">InternetExplorer/IntranetZoneAllowScriptlets</a></td>
+		<td style="vertical-align:top">Allow scriptlets</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Intranet Zone</td>
+		<td style="vertical-align:top">IZ_Policy_AllowScriptlets_3</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#internetexplorer-intranetzoneallowsmartscreenie">InternetExplorer/IntranetZoneAllowSmartScreenIE</a></td>
+		<td style="vertical-align:top">Turn on SmartScreen Filter scan</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Intranet Zone</td>
+		<td style="vertical-align:top">IZ_Policy_Phishing_3</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#internetexplorer-intranetzoneallowuserdatapersistence">InternetExplorer/IntranetZoneAllowUserDataPersistence</a></td>
+		<td style="vertical-align:top">Userdata persistence</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Intranet Zone</td>
+		<td style="vertical-align:top">IZ_PolicyUserdataPersistence_3</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#internetexplorer-intranetzoneinitializeandscriptactivexcontrols">InternetExplorer/IntranetZoneInitializeAndScriptActiveXControls</a></td>
+		<td style="vertical-align:top">Initialize and script ActiveX controls not marked as safe</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Intranet Zone</td>
+		<td style="vertical-align:top">IZ_PolicyScriptActiveXNotMarkedSafe_3</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#internetexplorer-intranetzonenavigatewindowsandframes">InternetExplorer/IntranetZoneNavigateWindowsAndFrames</a></td>
+		<td style="vertical-align:top">Navigate windows and frames across different domains</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Intranet Zone</td>
+		<td style="vertical-align:top">IZ_PolicyNavigateSubframesAcrossDomains_3</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#internetexplorer-localmachinezoneallowaccesstodatasources">InternetExplorer/LocalMachineZoneAllowAccessToDataSources</a></td>
+		<td style="vertical-align:top">Access data sources across domains</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Local Machine Zone</td>
+		<td style="vertical-align:top">IZ_PolicyAccessDataSourcesAcrossDomains_9</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#internetexplorer-localmachinezoneallowautomaticpromptingforactivexcontrols">InternetExplorer/LocalMachineZoneAllowAutomaticPromptingForActiveXControls</a></td>
+		<td style="vertical-align:top">Automatic prompting for ActiveX controls</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Local Machine Zone</td>
+		<td style="vertical-align:top">IZ_PolicyNotificationBarActiveXURLaction_9</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#internetexplorer-localmachinezoneallowautomaticpromptingforfiledownloads">InternetExplorer/LocalMachineZoneAllowAutomaticPromptingForFileDownloads</a></td>
+		<td style="vertical-align:top">Automatic prompting for file downloads</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Local Machine Zone</td>
+		<td style="vertical-align:top">IZ_PolicyNotificationBarDownloadURLaction_9</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#internetexplorer-localmachinezoneallowfontdownloads">InternetExplorer/LocalMachineZoneAllowFontDownloads</a></td>
+		<td style="vertical-align:top">Allow font downloads</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Local Machine Zone</td>
+		<td style="vertical-align:top">IZ_PolicyFontDownload_9</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#internetexplorer-localmachinezoneallowlessprivilegedsites">InternetExplorer/LocalMachineZoneAllowLessPrivilegedSites</a></td>
+		<td style="vertical-align:top">Web sites in less privileged Web content zones can navigate into this zone</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Local Machine Zone</td>
+		<td style="vertical-align:top">IZ_PolicyZoneElevationURLaction_9</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#internetexplorer-localmachinezoneallownetframeworkreliantcomponents">InternetExplorer/LocalMachineZoneAllowNETFrameworkReliantComponents</a></td>
+		<td style="vertical-align:top">Run .NET Framework-reliant components not signed with Authenticode</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Local Machine Zone</td>
+		<td style="vertical-align:top">IZ_PolicyUnsignedFrameworkComponentsURLaction_9</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#internetexplorer-localmachinezoneallowscriptlets">InternetExplorer/LocalMachineZoneAllowScriptlets</a></td>
+		<td style="vertical-align:top">Allow scriptlets</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Local Machine Zone</td>
+		<td style="vertical-align:top">IZ_Policy_AllowScriptlets_9</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#internetexplorer-localmachinezoneallowsmartscreenie">InternetExplorer/LocalMachineZoneAllowSmartScreenIE</a></td>
+		<td style="vertical-align:top">Turn on SmartScreen Filter scan</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Local Machine Zone</td>
+		<td style="vertical-align:top">IZ_Policy_Phishing_9</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#internetexplorer-localmachinezoneallowuserdatapersistence">InternetExplorer/LocalMachineZoneAllowUserDataPersistence</a></td>
+		<td style="vertical-align:top">Userdata persistence</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Local Machine Zone</td>
+		<td style="vertical-align:top">IZ_PolicyUserdataPersistence_9</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#internetexplorer-localmachinezoneinitializeandscriptactivexcontrols">InternetExplorer/LocalMachineZoneInitializeAndScriptActiveXControls</a></td>
+		<td style="vertical-align:top">Initialize and script ActiveX controls not marked as safe</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Local Machine Zone</td>
+		<td style="vertical-align:top">IZ_PolicyScriptActiveXNotMarkedSafe_9</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#internetexplorer-localmachinezonenavigatewindowsandframes">InternetExplorer/LocalMachineZoneNavigateWindowsAndFrames</a></td>
+		<td style="vertical-align:top">Navigate windows and frames across different domains</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Local Machine Zone</td>
+		<td style="vertical-align:top">IZ_PolicyNavigateSubframesAcrossDomains_9</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#internetexplorer-lockeddowninternetzoneallowaccesstodatasources">InternetExplorer/LockedDownInternetZoneAllowAccessToDataSources</a></td>
+		<td style="vertical-align:top">Access data sources across domains</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Internet Zone</td>
+		<td style="vertical-align:top">IZ_PolicyAccessDataSourcesAcrossDomains_2</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#internetexplorer-lockeddowninternetzoneallowautomaticpromptingforactivexcontrols">InternetExplorer/LockedDownInternetZoneAllowAutomaticPromptingForActiveXControls</a></td>
+		<td style="vertical-align:top">Automatic prompting for ActiveX controls</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Internet Zone</td>
+		<td style="vertical-align:top">IZ_PolicyNotificationBarActiveXURLaction_2</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#internetexplorer-lockeddowninternetzoneallowautomaticpromptingforfiledownloads">InternetExplorer/LockedDownInternetZoneAllowAutomaticPromptingForFileDownloads</a></td>
+		<td style="vertical-align:top">Automatic prompting for file downloads</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Internet Zone</td>
+		<td style="vertical-align:top">IZ_PolicyNotificationBarDownloadURLaction_2</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#internetexplorer-lockeddowninternetzoneallowfontdownloads">InternetExplorer/LockedDownInternetZoneAllowFontDownloads</a></td>
+		<td style="vertical-align:top">Allow font downloads</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Internet Zone</td>
+		<td style="vertical-align:top">IZ_PolicyFontDownload_2</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#internetexplorer-lockeddowninternetzoneallowlessprivilegedsites">InternetExplorer/LockedDownInternetZoneAllowLessPrivilegedSites</a></td>
+		<td style="vertical-align:top">Web sites in less privileged Web content zones can navigate into this zone</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Internet Zone</td>
+		<td style="vertical-align:top">IZ_PolicyZoneElevationURLaction_2</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#internetexplorer-lockeddowninternetzoneallownetframeworkreliantcomponents">InternetExplorer/LockedDownInternetZoneAllowNETFrameworkReliantComponents</a></td>
+		<td style="vertical-align:top">Run .NET Framework-reliant components not signed with Authenticode</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Internet Zone</td>
+		<td style="vertical-align:top">IZ_PolicyUnsignedFrameworkComponentsURLaction_2</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#internetexplorer-lockeddowninternetzoneallowscriptlets">InternetExplorer/LockedDownInternetZoneAllowScriptlets</a></td>
+		<td style="vertical-align:top">Allow scriptlets</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Internet Zone</td>
+		<td style="vertical-align:top">IZ_Policy_AllowScriptlets_2</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#internetexplorer-lockeddowninternetzoneallowsmartscreenie">InternetExplorer/LockedDownInternetZoneAllowSmartScreenIE</a></td>
+		<td style="vertical-align:top">Turn on SmartScreen Filter scan</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Internet Zone</td>
+		<td style="vertical-align:top">IZ_Policy_Phishing_2</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#internetexplorer-lockeddowninternetzoneallowuserdatapersistence">InternetExplorer/LockedDownInternetZoneAllowUserDataPersistence</a></td>
+		<td style="vertical-align:top">Userdata persistence</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Internet Zone</td>
+		<td style="vertical-align:top">IZ_PolicyUserdataPersistence_2</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#internetexplorer-lockeddowninternetzoneinitializeandscriptactivexcontrols">InternetExplorer/LockedDownInternetZoneInitializeAndScriptActiveXControls</a></td>
+		<td style="vertical-align:top">Initialize and script ActiveX controls not marked as safe</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Internet Zone</td>
+		<td style="vertical-align:top">IZ_PolicyScriptActiveXNotMarkedSafe_2</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#internetexplorer-lockeddowninternetzonenavigatewindowsandframes">InternetExplorer/LockedDownInternetZoneNavigateWindowsAndFrames</a></td>
+		<td style="vertical-align:top">Navigate windows and frames across different domains</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Internet Zone</td>
+		<td style="vertical-align:top">IZ_PolicyNavigateSubframesAcrossDomains_2</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#internetexplorer-lockeddownintranetzoneallowaccesstodatasources">InternetExplorer/LockedDownIntranetZoneAllowAccessToDataSources</a></td>
+		<td style="vertical-align:top">Access data sources across domains</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Intranet Zone</td>
+		<td style="vertical-align:top">IZ_PolicyAccessDataSourcesAcrossDomains_4</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#internetexplorer-lockeddownintranetzoneallowautomaticpromptingforactivexcontrols">InternetExplorer/LockedDownIntranetZoneAllowAutomaticPromptingForActiveXControls</a></td>
+		<td style="vertical-align:top">Automatic prompting for ActiveX controls</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Intranet Zone</td>
+		<td style="vertical-align:top">IZ_PolicyNotificationBarActiveXURLaction_4</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#internetexplorer-lockeddownintranetzoneallowautomaticpromptingforfiledownloads">InternetExplorer/LockedDownIntranetZoneAllowAutomaticPromptingForFileDownloads</a></td>
+		<td style="vertical-align:top">Automatic prompting for file downloads</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Intranet Zone</td>
+		<td style="vertical-align:top">IZ_PolicyNotificationBarDownloadURLaction_4</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#internetexplorer-lockeddownintranetzoneallowfontdownloads">InternetExplorer/LockedDownIntranetZoneAllowFontDownloads</a></td>
+		<td style="vertical-align:top">Allow font downloads</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Intranet Zone</td>
+		<td style="vertical-align:top">IZ_PolicyFontDownload_4</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#internetexplorer-lockeddownintranetzoneallowlessprivilegedsites">InternetExplorer/LockedDownIntranetZoneAllowLessPrivilegedSites</a></td>
+		<td style="vertical-align:top">Web sites in less privileged Web content zones can navigate into this zone</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Intranet Zone</td>
+		<td style="vertical-align:top">IZ_PolicyZoneElevationURLaction_4</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#internetexplorer-lockeddownintranetzoneallownetframeworkreliantcomponents">InternetExplorer/LockedDownIntranetZoneAllowNETFrameworkReliantComponents</a></td>
+		<td style="vertical-align:top">Run .NET Framework-reliant components not signed with Authenticode</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Intranet Zone</td>
+		<td style="vertical-align:top">IZ_PolicyUnsignedFrameworkComponentsURLaction_4</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#internetexplorer-lockeddownintranetzoneallowscriptlets">InternetExplorer/LockedDownIntranetZoneAllowScriptlets</a></td>
+		<td style="vertical-align:top">Allow scriptlets</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Intranet Zone</td>
+		<td style="vertical-align:top">IZ_Policy_AllowScriptlets_4</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#internetexplorer-lockeddownintranetzoneallowsmartscreenie">InternetExplorer/LockedDownIntranetZoneAllowSmartScreenIE</a></td>
+		<td style="vertical-align:top">Turn on SmartScreen Filter scan</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Intranet Zone</td>
+		<td style="vertical-align:top">IZ_Policy_Phishing_4</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#internetexplorer-lockeddownintranetzoneallowuserdatapersistence">InternetExplorer/LockedDownIntranetZoneAllowUserDataPersistence</a></td>
+		<td style="vertical-align:top">Userdata persistence</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Intranet Zone</td>
+		<td style="vertical-align:top">IZ_PolicyUserdataPersistence_4</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#internetexplorer-lockeddownintranetzoneinitializeandscriptactivexcontrols">InternetExplorer/LockedDownIntranetZoneInitializeAndScriptActiveXControls</a></td>
+		<td style="vertical-align:top">Initialize and script ActiveX controls not marked as safe</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Intranet Zone</td>
+		<td style="vertical-align:top">IZ_PolicyScriptActiveXNotMarkedSafe_4</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#internetexplorer-lockeddownintranetzonenavigatewindowsandframes">InternetExplorer/LockedDownIntranetZoneNavigateWindowsAndFrames</a></td>
+		<td style="vertical-align:top">Navigate windows and frames across different domains</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Intranet Zone</td>
+		<td style="vertical-align:top">IZ_PolicyNavigateSubframesAcrossDomains_4</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#internetexplorer-lockeddownlocalmachinezoneallowaccesstodatasources">InternetExplorer/LockedDownLocalMachineZoneAllowAccessToDataSources</a></td>
+		<td style="vertical-align:top">Access data sources across domains</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Local Machine Zone</td>
+		<td style="vertical-align:top">IZ_PolicyAccessDataSourcesAcrossDomains_10</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#internetexplorer-lockeddownlocalmachinezoneallowautomaticpromptingforactivexcontrols">InternetExplorer/LockedDownLocalMachineZoneAllowAutomaticPromptingForActiveXControls</a></td>
+		<td style="vertical-align:top">Automatic prompting for ActiveX controls</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Local Machine Zone</td>
+		<td style="vertical-align:top">IZ_PolicyNotificationBarActiveXURLaction_10</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#internetexplorer-lockeddownlocalmachinezoneallowautomaticpromptingforfiledownloads">InternetExplorer/LockedDownLocalMachineZoneAllowAutomaticPromptingForFileDownloads</a></td>
+		<td style="vertical-align:top">Automatic prompting for file downloads</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Local Machine Zone</td>
+		<td style="vertical-align:top">IZ_PolicyNotificationBarDownloadURLaction_10</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#internetexplorer-lockeddownlocalmachinezoneallowfontdownloads">InternetExplorer/LockedDownLocalMachineZoneAllowFontDownloads</a></td>
+		<td style="vertical-align:top">Allow font downloads</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Local Machine Zone</td>
+		<td style="vertical-align:top">IZ_PolicyFontDownload_10</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#internetexplorer-lockeddownlocalmachinezoneallowlessprivilegedsites">InternetExplorer/LockedDownLocalMachineZoneAllowLessPrivilegedSites</a></td>
+		<td style="vertical-align:top">Web sites in less privileged Web content zones can navigate into this zone</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Local Machine Zone</td>
+		<td style="vertical-align:top">IZ_PolicyZoneElevationURLaction_10</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#internetexplorer-lockeddownlocalmachinezoneallownetframeworkreliantcomponents">InternetExplorer/LockedDownLocalMachineZoneAllowNETFrameworkReliantComponents</a></td>
+		<td style="vertical-align:top">Run .NET Framework-reliant components not signed with Authenticode</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Local Machine Zone</td>
+		<td style="vertical-align:top">IZ_PolicyUnsignedFrameworkComponentsURLaction_10</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#internetexplorer-lockeddownlocalmachinezoneallowscriptlets">InternetExplorer/LockedDownLocalMachineZoneAllowScriptlets</a></td>
+		<td style="vertical-align:top">Allow scriptlets</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Local Machine Zone</td>
+		<td style="vertical-align:top">IZ_Policy_AllowScriptlets_10</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#internetexplorer-lockeddownlocalmachinezoneallowsmartscreenie">InternetExplorer/LockedDownLocalMachineZoneAllowSmartScreenIE</a></td>
+		<td style="vertical-align:top">Turn on SmartScreen Filter scan</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Local Machine Zone</td>
+		<td style="vertical-align:top">IZ_Policy_Phishing_10</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#internetexplorer-lockeddownlocalmachinezoneallowuserdatapersistence">InternetExplorer/LockedDownLocalMachineZoneAllowUserDataPersistence</a></td>
+		<td style="vertical-align:top">Userdata persistence</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Local Machine Zone</td>
+		<td style="vertical-align:top">IZ_PolicyUserdataPersistence_10</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#internetexplorer-lockeddownlocalmachinezoneinitializeandscriptactivexcontrols">InternetExplorer/LockedDownLocalMachineZoneInitializeAndScriptActiveXControls</a></td>
+		<td style="vertical-align:top">Initialize and script ActiveX controls not marked as safe</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Local Machine Zone</td>
+		<td style="vertical-align:top">IZ_PolicyScriptActiveXNotMarkedSafe_10</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#internetexplorer-lockeddownlocalmachinezonenavigatewindowsandframes">InternetExplorer/LockedDownLocalMachineZoneNavigateWindowsAndFrames</a></td>
+		<td style="vertical-align:top">Navigate windows and frames across different domains</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Local Machine Zone</td>
+		<td style="vertical-align:top">IZ_PolicyNavigateSubframesAcrossDomains_10</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#internetexplorer-lockeddownrestrictedsiteszoneallowaccesstodatasources">InternetExplorer/LockedDownRestrictedSitesZoneAllowAccessToDataSources</a></td>
+		<td style="vertical-align:top">Access data sources across domains</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Restricted Sites Zone</td>
+		<td style="vertical-align:top">IZ_PolicyAccessDataSourcesAcrossDomains_8</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#internetexplorer-lockeddownrestrictedsiteszoneallowautomaticpromptingforactivexcontrols">InternetExplorer/LockedDownRestrictedSitesZoneAllowAutomaticPromptingForActiveXControls</a></td>
+		<td style="vertical-align:top">Automatic prompting for ActiveX controls</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Restricted Sites Zone</td>
+		<td style="vertical-align:top">IZ_PolicyNotificationBarActiveXURLaction_8</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#internetexplorer-lockeddownrestrictedsiteszoneallowautomaticpromptingforfiledownloads">InternetExplorer/LockedDownRestrictedSitesZoneAllowAutomaticPromptingForFileDownloads</a></td>
+		<td style="vertical-align:top">Automatic prompting for file downloads</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Restricted Sites Zone</td>
+		<td style="vertical-align:top">IZ_PolicyNotificationBarDownloadURLaction_8</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#internetexplorer-lockeddownrestrictedsiteszoneallowfontdownloads">InternetExplorer/LockedDownRestrictedSitesZoneAllowFontDownloads</a></td>
+		<td style="vertical-align:top">Allow font downloads</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Restricted Sites Zone</td>
+		<td style="vertical-align:top">IZ_PolicyFontDownload_8</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#internetexplorer-lockeddownrestrictedsiteszoneallowlessprivilegedsites">InternetExplorer/LockedDownRestrictedSitesZoneAllowLessPrivilegedSites</a></td>
+		<td style="vertical-align:top">Web sites in less privileged Web content zones can navigate into this zone</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Restricted Sites Zone</td>
+		<td style="vertical-align:top">IZ_PolicyZoneElevationURLaction_8</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#internetexplorer-lockeddownrestrictedsiteszoneallownetframeworkreliantcomponents">InternetExplorer/LockedDownRestrictedSitesZoneAllowNETFrameworkReliantComponents</a></td>
+		<td style="vertical-align:top">Run .NET Framework-reliant components not signed with Authenticode</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Restricted Sites Zone</td>
+		<td style="vertical-align:top">IZ_PolicyUnsignedFrameworkComponentsURLaction_8</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#internetexplorer-lockeddownrestrictedsiteszoneallowscriptlets">InternetExplorer/LockedDownRestrictedSitesZoneAllowScriptlets</a></td>
+		<td style="vertical-align:top">Allow scriptlets</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Restricted Sites Zone</td>
+		<td style="vertical-align:top">IZ_Policy_AllowScriptlets_8</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#internetexplorer-lockeddownrestrictedsiteszoneallowsmartscreenie">InternetExplorer/LockedDownRestrictedSitesZoneAllowSmartScreenIE</a></td>
+		<td style="vertical-align:top">Turn on SmartScreen Filter scan</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Restricted Sites Zone</td>
+		<td style="vertical-align:top">IZ_Policy_Phishing_8</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#internetexplorer-lockeddownrestrictedsiteszoneallowuserdatapersistence">InternetExplorer/LockedDownRestrictedSitesZoneAllowUserDataPersistence</a></td>
+		<td style="vertical-align:top">Userdata persistence</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Restricted Sites Zone</td>
+		<td style="vertical-align:top">IZ_PolicyUserdataPersistence_8</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#internetexplorer-lockeddownrestrictedsiteszoneinitializeandscriptactivexcontrols">InternetExplorer/LockedDownRestrictedSitesZoneInitializeAndScriptActiveXControls</a></td>
+		<td style="vertical-align:top">Initialize and script ActiveX controls not marked as safe</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Restricted Sites Zone</td>
+		<td style="vertical-align:top">IZ_PolicyScriptActiveXNotMarkedSafe_8</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#internetexplorer-lockeddownrestrictedsiteszonenavigatewindowsandframes">InternetExplorer/LockedDownRestrictedSitesZoneNavigateWindowsAndFrames</a></td>
+		<td style="vertical-align:top">Navigate windows and frames across different domains</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Restricted Sites Zone</td>
+		<td style="vertical-align:top">IZ_PolicyNavigateSubframesAcrossDomains_8</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#internetexplorer-lockeddowntrustedsiteszoneallowaccesstodatasources">InternetExplorer/LockedDownTrustedSitesZoneAllowAccessToDataSources</a></td>
+		<td style="vertical-align:top">Access data sources across domains</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Trusted Sites Zone</td>
+		<td style="vertical-align:top">IZ_PolicyAccessDataSourcesAcrossDomains_6</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#internetexplorer-lockeddowntrustedsiteszoneallowautomaticpromptingforactivexcontrols">InternetExplorer/LockedDownTrustedSitesZoneAllowAutomaticPromptingForActiveXControls</a></td>
+		<td style="vertical-align:top">Automatic prompting for ActiveX controls</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Trusted Sites Zone</td>
+		<td style="vertical-align:top">IZ_PolicyNotificationBarActiveXURLaction_6</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#internetexplorer-lockeddowntrustedsiteszoneallowautomaticpromptingforfiledownloads">InternetExplorer/LockedDownTrustedSitesZoneAllowAutomaticPromptingForFileDownloads</a></td>
+		<td style="vertical-align:top">Automatic prompting for file downloads</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Trusted Sites Zone</td>
+		<td style="vertical-align:top">IZ_PolicyNotificationBarDownloadURLaction_6</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#internetexplorer-lockeddowntrustedsiteszoneallowfontdownloads">InternetExplorer/LockedDownTrustedSitesZoneAllowFontDownloads</a></td>
+		<td style="vertical-align:top">Allow font downloads</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Trusted Sites Zone</td>
+		<td style="vertical-align:top">IZ_PolicyFontDownload_6</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#internetexplorer-lockeddowntrustedsiteszoneallowlessprivilegedsites">InternetExplorer/LockedDownTrustedSitesZoneAllowLessPrivilegedSites</a></td>
+		<td style="vertical-align:top">Web sites in less privileged Web content zones can navigate into this zone</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Trusted Sites Zone</td>
+		<td style="vertical-align:top">IZ_PolicyZoneElevationURLaction_6</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#internetexplorer-lockeddowntrustedsiteszoneallownetframeworkreliantcomponents">InternetExplorer/LockedDownTrustedSitesZoneAllowNETFrameworkReliantComponents</a></td>
+		<td style="vertical-align:top">Run .NET Framework-reliant components not signed with Authenticode</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Trusted Sites Zone</td>
+		<td style="vertical-align:top">IZ_PolicyUnsignedFrameworkComponentsURLaction_6</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#internetexplorer-lockeddowntrustedsiteszoneallowscriptlets">InternetExplorer/LockedDownTrustedSitesZoneAllowScriptlets</a></td>
+		<td style="vertical-align:top">Allow scriptlets</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Trusted Sites Zone</td>
+		<td style="vertical-align:top">IZ_Policy_AllowScriptlets_6</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#internetexplorer-lockeddowntrustedsiteszoneallowsmartscreenie">InternetExplorer/LockedDownTrustedSitesZoneAllowSmartScreenIE</a></td>
+		<td style="vertical-align:top">Turn on SmartScreen Filter scan</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Trusted Sites Zone</td>
+		<td style="vertical-align:top">IZ_Policy_Phishing_6</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#internetexplorer-lockeddowntrustedsiteszoneallowuserdatapersistence">InternetExplorer/LockedDownTrustedSitesZoneAllowUserDataPersistence</a></td>
+		<td style="vertical-align:top">Userdata persistence</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Trusted Sites Zone</td>
+		<td style="vertical-align:top">IZ_PolicyUserdataPersistence_6</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#internetexplorer-lockeddowntrustedsiteszoneinitializeandscriptactivexcontrols">InternetExplorer/LockedDownTrustedSitesZoneInitializeAndScriptActiveXControls</a></td>
+		<td style="vertical-align:top">Initialize and script ActiveX controls not marked as safe</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Trusted Sites Zone</td>
+		<td style="vertical-align:top">IZ_PolicyScriptActiveXNotMarkedSafe_6</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#internetexplorer-lockeddowntrustedsiteszonenavigatewindowsandframes">InternetExplorer/LockedDownTrustedSitesZoneNavigateWindowsAndFrames</a></td>
+		<td style="vertical-align:top">Navigate windows and frames across different domains</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Trusted Sites Zone</td>
+		<td style="vertical-align:top">IZ_PolicyNavigateSubframesAcrossDomains_6</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#internetexplorer-restrictedsiteszoneallowaccesstodatasources">InternetExplorer/RestrictedSitesZoneAllowAccessToDataSources</a></td>
+		<td style="vertical-align:top">Access data sources across domains</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone</td>
+		<td style="vertical-align:top">IZ_PolicyAccessDataSourcesAcrossDomains_7</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#internetexplorer-restrictedsiteszoneallowautomaticpromptingforactivexcontrols">InternetExplorer/RestrictedSitesZoneAllowAutomaticPromptingForActiveXControls</a></td>
+		<td style="vertical-align:top">Automatic prompting for ActiveX controls</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone</td>
+		<td style="vertical-align:top">IZ_PolicyNotificationBarActiveXURLaction_7</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#internetexplorer-restrictedsiteszoneallowautomaticpromptingforfiledownloads">InternetExplorer/RestrictedSitesZoneAllowAutomaticPromptingForFileDownloads</a></td>
+		<td style="vertical-align:top">Automatic prompting for file downloads</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone</td>
+		<td style="vertical-align:top">IZ_PolicyNotificationBarDownloadURLaction_7</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#internetexplorer-restrictedsiteszoneallowfontdownloads">InternetExplorer/RestrictedSitesZoneAllowFontDownloads</a></td>
+		<td style="vertical-align:top">Allow font downloads</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone</td>
+		<td style="vertical-align:top">IZ_PolicyFontDownload_7</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#internetexplorer-restrictedsiteszoneallowlessprivilegedsites">InternetExplorer/RestrictedSitesZoneAllowLessPrivilegedSites</a></td>
+		<td style="vertical-align:top">Web sites in less privileged Web content zones can navigate into this zone</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone</td>
+		<td style="vertical-align:top">IZ_PolicyZoneElevationURLaction_7</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#internetexplorer-restrictedsiteszoneallownetframeworkreliantcomponents">InternetExplorer/RestrictedSitesZoneAllowNETFrameworkReliantComponents</a></td>
+		<td style="vertical-align:top">Run .NET Framework-reliant components not signed with Authenticode</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone</td>
+		<td style="vertical-align:top">IZ_PolicyUnsignedFrameworkComponentsURLaction_7</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#internetexplorer-restrictedsiteszoneallowscriptlets">InternetExplorer/RestrictedSitesZoneAllowScriptlets</a></td>
+		<td style="vertical-align:top">Allow scriptlets</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone</td>
+		<td style="vertical-align:top">IZ_Policy_AllowScriptlets_7</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#internetexplorer-restrictedsiteszoneallowsmartscreenie">InternetExplorer/RestrictedSitesZoneAllowSmartScreenIE</a></td>
+		<td style="vertical-align:top">Turn on SmartScreen Filter scan</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone</td>
+		<td style="vertical-align:top">IZ_Policy_Phishing_7</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#internetexplorer-restrictedsiteszoneallowuserdatapersistence">InternetExplorer/RestrictedSitesZoneAllowUserDataPersistence</a></td>
+		<td style="vertical-align:top">Userdata persistence</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone</td>
+		<td style="vertical-align:top">IZ_PolicyUserdataPersistence_7</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#internetexplorer-restrictedsiteszoneinitializeandscriptactivexcontrols">InternetExplorer/RestrictedSitesZoneInitializeAndScriptActiveXControls</a></td>
+		<td style="vertical-align:top">Initialize and script ActiveX controls not marked as safe</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone</td>
+		<td style="vertical-align:top">IZ_PolicyScriptActiveXNotMarkedSafe_7</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#internetexplorer-restrictedsiteszonenavigatewindowsandframes">InternetExplorer/RestrictedSitesZoneNavigateWindowsAndFrames</a></td>
+		<td style="vertical-align:top">Navigate windows and frames across different domains</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone</td>
+		<td style="vertical-align:top">IZ_PolicyNavigateSubframesAcrossDomains_7</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#internetexplorer-searchproviderlist">InternetExplorer/SearchProviderList</a></td>
+		<td style="vertical-align:top">Restrict search providers to a specific list</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer</td>
+		<td style="vertical-align:top">SpecificSearchProvider</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#internetexplorer-trustedsiteszoneallowaccesstodatasources">InternetExplorer/TrustedSitesZoneAllowAccessToDataSources</a></td>
+		<td style="vertical-align:top">Access data sources across domains</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Trusted Sites Zone</td>
+		<td style="vertical-align:top">IZ_PolicyAccessDataSourcesAcrossDomains_5</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#internetexplorer-trustedsiteszoneallowautomaticpromptingforactivexcontrols">InternetExplorer/TrustedSitesZoneAllowAutomaticPromptingForActiveXControls</a></td>
+		<td style="vertical-align:top">Automatic prompting for ActiveX controls</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Trusted Sites Zone</td>
+		<td style="vertical-align:top">IZ_PolicyNotificationBarActiveXURLaction_5</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#internetexplorer-trustedsiteszoneallowautomaticpromptingforfiledownloads">InternetExplorer/TrustedSitesZoneAllowAutomaticPromptingForFileDownloads</a></td>
+		<td style="vertical-align:top">Automatic prompting for file downloads</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Trusted Sites Zone</td>
+		<td style="vertical-align:top">IZ_PolicyNotificationBarDownloadURLaction_5</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#internetexplorer-trustedsiteszoneallowfontdownloads">InternetExplorer/TrustedSitesZoneAllowFontDownloads</a></td>
+		<td style="vertical-align:top">Allow font downloads</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Trusted Sites Zone</td>
+		<td style="vertical-align:top">IZ_PolicyFontDownload_5</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#internetexplorer-trustedsiteszoneallowlessprivilegedsites">InternetExplorer/TrustedSitesZoneAllowLessPrivilegedSites</a></td>
+		<td style="vertical-align:top">Web sites in less privileged Web content zones can navigate into this zone</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Trusted Sites Zone</td>
+		<td style="vertical-align:top">IZ_PolicyZoneElevationURLaction_5</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#internetexplorer-trustedsiteszoneallownetframeworkreliantcomponents">InternetExplorer/TrustedSitesZoneAllowNETFrameworkReliantComponents</a></td>
+		<td style="vertical-align:top">Run .NET Framework-reliant components not signed with Authenticode</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Trusted Sites Zone</td>
+		<td style="vertical-align:top">IZ_PolicyUnsignedFrameworkComponentsURLaction_5</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#internetexplorer-trustedsiteszoneallowscriptlets">InternetExplorer/TrustedSitesZoneAllowScriptlets</a></td>
+		<td style="vertical-align:top">Allow scriptlets</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Trusted Sites Zone</td>
+		<td style="vertical-align:top">IZ_Policy_AllowScriptlets_5</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#internetexplorer-trustedsiteszoneallowsmartscreenie">InternetExplorer/TrustedSitesZoneAllowSmartScreenIE</a></td>
+		<td style="vertical-align:top">Turn on SmartScreen Filter scan</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Trusted Sites Zone</td>
+		<td style="vertical-align:top">IZ_Policy_Phishing_5</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#internetexplorer-trustedsiteszoneallowuserdatapersistence">InternetExplorer/TrustedSitesZoneAllowUserDataPersistence</a></td>
+		<td style="vertical-align:top">Userdata persistence</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Trusted Sites Zone</td>
+		<td style="vertical-align:top">IZ_PolicyUserdataPersistence_5</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#internetexplorer-trustedsiteszoneinitializeandscriptactivexcontrols">InternetExplorer/TrustedSitesZoneInitializeAndScriptActiveXControls</a></td>
+		<td style="vertical-align:top">Initialize and script ActiveX controls not marked as safe</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Trusted Sites Zone</td>
+		<td style="vertical-align:top">IZ_PolicyScriptActiveXNotMarkedSafe_5</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#internetexplorer-trustedsiteszonenavigatewindowsandframes">InternetExplorer/TrustedSitesZoneNavigateWindowsAndFrames</a></td>
+		<td style="vertical-align:top">Navigate windows and frames across different domains</td>
+		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Trusted Sites Zone</td>
+		<td style="vertical-align:top">IZ_PolicyNavigateSubframesAcrossDomains_5</td>
+		<td style="vertical-align:top">inetres.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#kerberos-allowforestsearchfolder">Kerberos/AllowForestSearchFolder</a></td>
+		<td style="vertical-align:top">Use forest search order</td>
 		<td style="vertical-align:top">System/Kerberos</td>
-		<td style="vertical-align:top">ClientRequireFast</td>
+		<td style="vertical-align:top">ForestSearch</td>
 		<td style="vertical-align:top">Kerberos.admx</td>
 	</tr>
 	<tr>
@@ -1475,6 +1538,13 @@ The Policy configuration service provider enables the enterprise to configure po
 		<td style="vertical-align:top">Kerberos client support for claims, compound authentication and Kerberos armoring</td>
 		<td style="vertical-align:top">System/Kerberos</td>
 		<td style="vertical-align:top">EnableCbacAndArmor</td>
+		<td style="vertical-align:top">Kerberos.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#kerberos-requirekerberosarmoring">Kerberos/RequireKerberosArmoring</a></td>
+		<td style="vertical-align:top">Fail authentication requests when Kerberos armoring is not available</td>
+		<td style="vertical-align:top">System/Kerberos</td>
+		<td style="vertical-align:top">ClientRequireFast</td>
 		<td style="vertical-align:top">Kerberos.admx</td>
 	</tr>
 	<tr>
@@ -1490,34 +1560,6 @@ The Policy configuration service provider enables the enterprise to configure po
 		<td style="vertical-align:top">System/Kerberos</td>
 		<td style="vertical-align:top">MaxTokenSize</td>
 		<td style="vertical-align:top">Kerberos.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#kerberos-allowforestsearchfolder">Kerberos/AllowForestSearchFolder</a></td>
-		<td style="vertical-align:top">Use forest search order</td>
-		<td style="vertical-align:top">System/Kerberos</td>
-		<td style="vertical-align:top">ForestSearch</td>
-		<td style="vertical-align:top">Kerberos.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#windowslogon-dontdisplaynetworkselectionui">WindowsLogon/DontDisplayNetworkSelectionUI</a></td>
-		<td style="vertical-align:top">Do not display network selection UI</td>
-		<td style="vertical-align:top">System/Logon</td>
-		<td style="vertical-align:top">DontDisplayNetworkSelectionUI</td>
-		<td style="vertical-align:top">Logon.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#windowslogon-disablelockscreenappnotifications">WindowsLogon/DisableLockScreenAppNotifications</a></td>
-		<td style="vertical-align:top">Turn off app notifications on the lock screen</td>
-		<td style="vertical-align:top">System/Logon</td>
-		<td style="vertical-align:top">DisableLockScreenAppNotifications</td>
-		<td style="vertical-align:top">Logon.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#connectivity-hardeneduncpaths">Connectivity/HardenedUNCPaths</a></td>
-		<td style="vertical-align:top">Hardened UNC Paths</td>
-		<td style="vertical-align:top">Network/Network Provider</td>
-		<td style="vertical-align:top">Pol_HardenedPaths</td>
-		<td style="vertical-align:top">NetworkProvider.admx</td>
 	</tr>
 	<tr>
 		<td style="vertical-align:top"><a href="#power-allowstandbywhensleepingpluggedin">Power/AllowStandbyWhenSleepingPluggedIn</a></td>
@@ -1562,20 +1604,6 @@ The Policy configuration service provider enables the enterprise to configure po
 		<td style="vertical-align:top">Printing2.admx</td>
 	</tr>
 	<tr>
-		<td style="vertical-align:top"><a href="#remoteassistance-unsolicitedremoteassitance">RemoteAssistance/UnsolicitedRemoteAssitance</a></td>
-		<td style="vertical-align:top">Configure Offer Remote Assistance</td>
-		<td style="vertical-align:top">System/Remote Assistance</td>
-		<td style="vertical-align:top">RA_Unsolicit</td>
-		<td style="vertical-align:top">RemoteAssistance.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#remoteassistance-solicitedremoteassistance">RemoteAssistance/SolicitedRemoteAssistance</a></td>
-		<td style="vertical-align:top">Configure Solicited Remote Assistance</td>
-		<td style="vertical-align:top">System/Remote Assistance</td>
-		<td style="vertical-align:top">RA_Solicit</td>
-		<td style="vertical-align:top">RemoteAssistance.admx</td>
-	</tr>
-	<tr>
 		<td style="vertical-align:top"><a href="#remoteassistance-customizewarningmessages">RemoteAssistance/CustomizeWarningMessages</a></td>
 		<td style="vertical-align:top">Customize warning messages</td>
 		<td style="vertical-align:top">System/Remote Assistance</td>
@@ -1590,32 +1618,18 @@ The Policy configuration service provider enables the enterprise to configure po
 		<td style="vertical-align:top">RemoteAssistance.admx</td>
 	</tr>
 	<tr>
-		<td style="vertical-align:top"><a href="#remoteprocedurecall-rpcendpointmapperclientauthentication">RemoteProcedureCall/RPCEndpointMapperClientAuthentication</a></td>
-		<td style="vertical-align:top">Enable RPC Endpoint Mapper Client Authentication</td>
-		<td style="vertical-align:top">System/Remote Procedure Call</td>
-		<td style="vertical-align:top">RpcEnableAuthEpResolution</td>
-		<td style="vertical-align:top">RPC.admx</td>
+		<td style="vertical-align:top"><a href="#remoteassistance-solicitedremoteassistance">RemoteAssistance/SolicitedRemoteAssistance</a></td>
+		<td style="vertical-align:top">Configure Solicited Remote Assistance</td>
+		<td style="vertical-align:top">System/Remote Assistance</td>
+		<td style="vertical-align:top">RA_Solicit</td>
+		<td style="vertical-align:top">RemoteAssistance.admx</td>
 	</tr>
 	<tr>
-		<td style="vertical-align:top"><a href="#remoteprocedurecall-restrictunauthenticatedrpcclients">RemoteProcedureCall/RestrictUnauthenticatedRPCClients</a></td>
-		<td style="vertical-align:top">Restrict Unauthenticated RPC clients</td>
-		<td style="vertical-align:top">System/Remote Procedure Call</td>
-		<td style="vertical-align:top">RpcRestrictRemoteClients</td>
-		<td style="vertical-align:top">RPC.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#system-disablesystemrestore">System/DisableSystemRestore</a></td>
-		<td style="vertical-align:top">Turn off System Restore</td>
-		<td style="vertical-align:top">System/System Restore</td>
-		<td style="vertical-align:top">SR_DisableSR</td>
-		<td style="vertical-align:top">SystemRestore.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#remotedesktopservices-donotallowpasswordsaving">RemoteDesktopServices/DoNotAllowPasswordSaving</a></td>
-		<td style="vertical-align:top">Do not allow passwords to be saved</td>
-		<td style="vertical-align:top">Windows Components/Remote Desktop Services/Remote Desktop Connection Client</td>
-		<td style="vertical-align:top">TS_CLIENT_DISABLE_PASSWORD_SAVING_2</td>
-		<td style="vertical-align:top">TerminalServer.admx</td>
+		<td style="vertical-align:top"><a href="#remoteassistance-unsolicitedremoteassitance">RemoteAssistance/UnsolicitedRemoteAssitance</a></td>
+		<td style="vertical-align:top">Configure Offer Remote Assistance</td>
+		<td style="vertical-align:top">System/Remote Assistance</td>
+		<td style="vertical-align:top">RA_Unsolicit</td>
+		<td style="vertical-align:top">RemoteAssistance.admx</td>
 	</tr>
 	<tr>
 		<td style="vertical-align:top"><a href="#remotedesktopservices-allowuserstoconnectremotely">RemoteDesktopServices/AllowUsersToConnectRemotely</a></td>
@@ -1625,10 +1639,24 @@ The Policy configuration service provider enables the enterprise to configure po
 		<td style="vertical-align:top">TerminalServer.admx</td>
 	</tr>
 	<tr>
+		<td style="vertical-align:top"><a href="#remotedesktopservices-clientconnectionencryptionlevel">RemoteDesktopServices/ClientConnectionEncryptionLevel</a></td>
+		<td style="vertical-align:top">Set client connection encryption level</td>
+		<td style="vertical-align:top">Windows Components/Remote Desktop Services/Remote Desktop Session Host/Security</td>
+		<td style="vertical-align:top">TS_ENCRYPTION_POLICY</td>
+		<td style="vertical-align:top">TerminalServer.admx</td>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#remotedesktopservices-donotallowdriveredirection">RemoteDesktopServices/DoNotAllowDriveRedirection</a></td>
 		<td style="vertical-align:top">Do not allow drive redirection</td>
 		<td style="vertical-align:top">Windows Components/Remote Desktop Services/Remote Desktop Session Host/Device and Resource Redirection</td>
 		<td style="vertical-align:top">TS_CLIENT_DRIVE_M</td>
+		<td style="vertical-align:top">TerminalServer.admx</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#remotedesktopservices-donotallowpasswordsaving">RemoteDesktopServices/DoNotAllowPasswordSaving</a></td>
+		<td style="vertical-align:top">Do not allow passwords to be saved</td>
+		<td style="vertical-align:top">Windows Components/Remote Desktop Services/Remote Desktop Connection Client</td>
+		<td style="vertical-align:top">TS_CLIENT_DISABLE_PASSWORD_SAVING_2</td>
 		<td style="vertical-align:top">TerminalServer.admx</td>
 	</tr>
 	<tr>
@@ -1646,81 +1674,53 @@ The Policy configuration service provider enables the enterprise to configure po
 		<td style="vertical-align:top">TerminalServer.admx</td>
 	</tr>
 	<tr>
-		<td style="vertical-align:top"><a href="#remotedesktopservices-clientconnectionencryptionlevel">RemoteDesktopServices/ClientConnectionEncryptionLevel</a></td>
-		<td style="vertical-align:top">Set client connection encryption level</td>
-		<td style="vertical-align:top">Windows Components/Remote Desktop Services/Remote Desktop Session Host/Security</td>
-		<td style="vertical-align:top">TS_ENCRYPTION_POLICY</td>
-		<td style="vertical-align:top">TerminalServer.admx</td>
+		<td style="vertical-align:top"><a href="#remoteprocedurecall-rpcendpointmapperclientauthentication">RemoteProcedureCall/RPCEndpointMapperClientAuthentication</a></td>
+		<td style="vertical-align:top">Enable RPC Endpoint Mapper Client Authentication</td>
+		<td style="vertical-align:top">System/Remote Procedure Call</td>
+		<td style="vertical-align:top">RpcEnableAuthEpResolution</td>
+		<td style="vertical-align:top">RPC.admx</td>
 	</tr>
 	<tr>
-		<td style="vertical-align:top"><a href="#bitlocker-bitencryptionmethodbydrivetype ">BitLocker/BitEncryptionMethodByDriveType </a></td>
-		<td style="vertical-align:top">Choose drive encryption method and cipher strength (Windows 10 [Version 1511] and later)</td>
-		<td style="vertical-align:top">Windows Components/BitLocker Drive Encryption</td>
-		<td style="vertical-align:top">EncryptionMethodWithXts_Name</td>
-		<td style="vertical-align:top">VolumeEncryption.admx</td>
+		<td style="vertical-align:top"><a href="#remoteprocedurecall-restrictunauthenticatedrpcclients">RemoteProcedureCall/RestrictUnauthenticatedRPCClients</a></td>
+		<td style="vertical-align:top">Restrict Unauthenticated RPC clients</td>
+		<td style="vertical-align:top">System/Remote Procedure Call</td>
+		<td style="vertical-align:top">RpcRestrictRemoteClients</td>
+		<td style="vertical-align:top">RPC.admx</td>
 	</tr>
 	<tr>
-		<td style="vertical-align:top"><a href="#bitlocker-fixeddrivesrecoveryoptions">BitLocker/FixedDrivesRecoveryOptions</a></td>
-		<td style="vertical-align:top">Choose how BitLocker-protected fixed drives can be recovered</td>
-		<td style="vertical-align:top">Windows Components/BitLocker Drive Encryption/Fixed Data Drives</td>
-		<td style="vertical-align:top">FDVRecoveryUsage_Name</td>
-		<td style="vertical-align:top">VolumeEncryption.admx</td>
+		<td style="vertical-align:top"><a href="#storage-enhancedstoragedevices">Storage/EnhancedStorageDevices</a></td>
+		<td style="vertical-align:top">Do not allow Windows to activate Enhanced Storage devices</td>
+		<td style="vertical-align:top">System/Enhanced Storage Access</td>
+		<td style="vertical-align:top">TCGSecurityActivationDisabled</td>
+		<td style="vertical-align:top">EnhancedStorage.admx</td>
 	</tr>
 	<tr>
-		<td style="vertical-align:top"><a href="#bitlocker-fixeddrivesrequireencryption">BitLocker/FixedDrivesRequireEncryption</a></td>
-		<td style="vertical-align:top">Deny write access to fixed drives not protected by BitLocker</td>
-		<td style="vertical-align:top">Windows Components/BitLocker Drive Encryption/Fixed Data Drives</td>
-		<td style="vertical-align:top">FDVDenyWriteAccess_Name</td>
-		<td style="vertical-align:top">VolumeEncryption.admx</td>
+		<td style="vertical-align:top"><a href="#system-bootstartdriverinitialization">System/BootStartDriverInitialization</a></td>
+		<td style="vertical-align:top">Boot-Start Driver Initialization Policy</td>
+		<td style="vertical-align:top">System/Early Launch Antimalware</td>
+		<td style="vertical-align:top">POL_DriverLoadPolicy_Name</td>
+		<td style="vertical-align:top">EarlyLaunchAM.admx</td>
 	</tr>
 	<tr>
-		<td style="vertical-align:top"><a href="#bitlocker-systemdrivesrecoveryoptions">BitLocker/SystemDrivesRecoveryOptions</a></td>
-		<td style="vertical-align:top">Choose how BitLocker-protected operating system drives can be recovered</td>
-		<td style="vertical-align:top">Windows Components/BitLocker Drive Encryption/Operating System Drives</td>
-		<td style="vertical-align:top">OSRecoveryUsage_Name</td>
-		<td style="vertical-align:top">VolumeEncryption.admx</td>
+		<td style="vertical-align:top"><a href="#system-disablesystemrestore">System/DisableSystemRestore</a></td>
+		<td style="vertical-align:top">Turn off System Restore</td>
+		<td style="vertical-align:top">System/System Restore</td>
+		<td style="vertical-align:top">SR_DisableSR</td>
+		<td style="vertical-align:top">SystemRestore.admx</td>
 	</tr>
 	<tr>
-		<td style="vertical-align:top"><a href="#bitlocker-systemdrivesrequirestartupauthentication">BitLocker/SystemDrivesRequireStartupAuthentication</a></td>
-		<td style="vertical-align:top">Require additional authentication at startup</td>
-		<td style="vertical-align:top">Windows Components/BitLocker Drive Encryption/Operating System Drives</td>
-		<td style="vertical-align:top">ConfigureAdvancedStartup_Name</td>
-		<td style="vertical-align:top">VolumeEncryption.admx</td>
+		<td style="vertical-align:top"><a href="#windowslogon-disablelockscreenappnotifications">WindowsLogon/DisableLockScreenAppNotifications</a></td>
+		<td style="vertical-align:top">Turn off app notifications on the lock screen</td>
+		<td style="vertical-align:top">System/Logon</td>
+		<td style="vertical-align:top">DisableLockScreenAppNotifications</td>
+		<td style="vertical-align:top">Logon.admx</td>
 	</tr>
 	<tr>
-		<td style="vertical-align:top"><a href="#bitlocker-systemdrivesminimumpinlength">BitLocker/SystemDrivesMinimumPINLength</a></td>
-		<td style="vertical-align:top">Configure minimum PIN length for startup</td>
-		<td style="vertical-align:top">Windows Components/BitLocker Drive Encryption/Operating System Drives</td>
-		<td style="vertical-align:top">MinimumPINLength_Name</td>
-		<td style="vertical-align:top">VolumeEncryption.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#bitlocker-systemdrivesrecoverymessage">BitLocker/SystemDrivesRecoveryMessage</a></td>
-		<td style="vertical-align:top">Configure pre-boot recovery message and URL</td>
-		<td style="vertical-align:top">Windows Components/BitLocker Drive Encryption/Operating System Drives</td>
-		<td style="vertical-align:top">PrebootRecoveryInfo_Name</td>
-		<td style="vertical-align:top">VolumeEncryption.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#bitlocker-removabledrivesrequireencryption">BitLocker/RemovableDrivesRequireEncryption</a></td>
-		<td style="vertical-align:top">Deny write access to removable drives not protected by BitLocker</td>
-		<td style="vertical-align:top">Windows Components/BitLocker Drive Encryption/Removable Data Drives</td>
-		<td style="vertical-align:top">RDVDenyWriteAccess_Name</td>
-		<td style="vertical-align:top">VolumeEncryption.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#datausage-setcost3g">DataUsage/SetCost3G</a></td>
-		<td style="vertical-align:top">Set 3G Cost</td>
-		<td style="vertical-align:top">Network/WWAN Service/WWAN Media Cost</td>
-		<td style="vertical-align:top">SetCost3G</td>
-		<td style="vertical-align:top">wwansvc.admx</td>
-	</tr>
-	<tr>
-		<td style="vertical-align:top"><a href="#datausage-setcost4g">DataUsage/SetCost4G</a></td>
-		<td style="vertical-align:top">Set 4G Cost</td>
-		<td style="vertical-align:top">Network/WWAN Service/WWAN Media Cost</td>
-		<td style="vertical-align:top">SetCost4G</td>
-		<td style="vertical-align:top">wwansvc.admx</td>
+		<td style="vertical-align:top"><a href="#windowslogon-dontdisplaynetworkselectionui">WindowsLogon/DontDisplayNetworkSelectionUI</a></td>
+		<td style="vertical-align:top">Do not display network selection UI</td>
+		<td style="vertical-align:top">System/Logon</td>
+		<td style="vertical-align:top">DontDisplayNetworkSelectionUI</td>
+		<td style="vertical-align:top">Logon.admx</td>
 	</tr>
 </table>
 <!-- ADMX-TABLE-END -->
@@ -1743,17 +1743,31 @@ The Policy configuration service provider enables the enterprise to configure po
 
 <p style="margin-left: 20px">This policy setting allows you to enable or disable Microsoft Application Virtualization (App-V) feature. Reboot is needed for disable to take effect.</p>
 
-<a href="" id="appvirtualization-clientcoexistenceallowmigrationmode"></a>**AppVirtualization/ClientCoexistenceAllowMigrationmode**
+<a href="" id="appvirtualization-allowdynamicvirtualization"></a>**AppVirtualization/AllowDynamicVirtualization**
 
-<p style="margin-left: 20px">Migration mode allows the App-V client to modify shortcuts and FTA's for packages created using a previous version of App-V.</p>
+<p style="margin-left: 20px">Enables Dynamic Virtualization of supported shell extensions, browser helper objects, and ActiveX controls.</p>
 
-<a href="" id="appvirtualization-integrationallowrootuser"></a>**AppVirtualization/IntegrationAllowRootUser**
+<a href="" id="appvirtualization-allowpackagescripts"></a>**AppVirtualization/AllowPackageScripts**
 
-<p style="margin-left: 20px">Specifies the location where symbolic links are created to the current version of a globally published package. Shortcuts, file type associations, etc. are created pointing to this path. If empty, symbolic links are not used during publishing. Example: %allusersprofile%\Microsoft\AppV\Client\Integration.</p>
+<p style="margin-left: 20px">Enables scripts defined in the package manifest of configuration files that should run.</p>
 
-<a href="" id="appvirtualization-integrationallowrootglobal"></a>**AppVirtualization/IntegrationAllowRootGlobal**
+<a href="" id="appvirtualization-allowpublishingrefreshux"></a>**AppVirtualization/AllowPublishingRefreshUX**
 
-<p style="margin-left: 20px">Specifies the location where symbolic links are created to the current version of a per-user published package. Shortcuts, file type associations, etc. are created pointing to this path. If empty, symbolic links are not used during publishing. Example: %localappdata%\Microsoft\AppV\Client\Integration.</p>
+<p style="margin-left: 20px">Enables a UX to display to the user when a publishing refresh is performed on the client.</p>
+
+<a href="" id="appvirtualization-allowreportingserver"></a>**AppVirtualization/AllowReportingServer**
+
+<p style="margin-left: 20px">Reporting Server URL: Displays the URL of reporting server.</p>
+
+<p style="margin-left: 20px">Reporting Time: When the client data should be reported to the server. Acceptable range is 0~23, corresponding to the 24 hours in a day. A good practice is, don't set this time to a busy hour, e.g. 9AM.</p>
+
+<p style="margin-left: 20px">Delay reporting for the random minutes: The maximum minutes of random delay on top of the reporting time. For a busy system, the random delay will help reduce the server load.</p>
+
+<p style="margin-left: 20px">Repeat reporting for every (days): The periodical interval in days for sending the reporting data.</p>
+
+<p style="margin-left: 20px">Data Cache Limit: This value specifies the maximum size in megabytes (MB) of the XML cache for storing reporting information. The default value is 20 MB. The size applies to the cache in memory. When the limit is reached, the log file will roll over. When a new record is to be added (bottom of the list), one or more of the oldest records (top of the list) will be deleted to make room. A warning will be logged to the Client log and the event log the first time this occurs, and will not be logged again until after the cache has been successfully cleared on transmission and the log has filled up again.</p>
+
+<p style="margin-left: 20px">Data Block Size: This value specifies the maximum size in bytes to transmit to the server at once on a reporting upload, to avoid permanent transmission failures when the log has reached a significant size. The  default value is 65536. When transmitting report data to the server, one block at a time of application records that is less than or equal to the block size in bytes of XML data will be removed from the cache and sent to the server. Each block will have the general Client data and global package list data prepended, and these will not factor into the block size calculations; the potential exists for an extremely large package list to result in transmission failures over low bandwidth or unreliable connections.</p>
 
 <a href="" id="appvirtualization-allowroamingfileexclusions"></a>**AppVirtualization/AllowRoamingFileExclusions**
 
@@ -1763,9 +1777,21 @@ The Policy configuration service provider enables the enterprise to configure po
 
 <p style="margin-left: 20px">Specifies the registry paths that do not roam with a user profile. Example usage: /REGISTRYEXCLUSIONLIST=software\classes;software\clients.</p>
 
-<a href="" id="appvirtualization-allowpublishingrefreshux"></a>**AppVirtualization/AllowPublishingRefreshUX**
+<a href="" id="appvirtualization-allowstreamingautoload"></a>**AppVirtualization/AllowStreamingAutoload**
 
-<p style="margin-left: 20px">Enables a UX to display to the user when a publishing refresh is performed on the client.</p>
+<p style="margin-left: 20px">Specifies how new packages should be loaded automatically by App-V on a specific computer.</p>
+
+<a href="" id="appvirtualization-clientcoexistenceallowmigrationmode"></a>**AppVirtualization/ClientCoexistenceAllowMigrationmode**
+
+<p style="margin-left: 20px">Migration mode allows the App-V client to modify shortcuts and FTA's for packages created using a previous version of App-V.</p>
+
+<a href="" id="appvirtualization-integrationallowrootglobal"></a>**AppVirtualization/IntegrationAllowRootGlobal**
+
+<p style="margin-left: 20px">Specifies the location where symbolic links are created to the current version of a per-user published package. Shortcuts, file type associations, etc. are created pointing to this path. If empty, symbolic links are not used during publishing. Example: %localappdata%\Microsoft\AppV\Client\Integration.</p>
+
+<a href="" id="appvirtualization-integrationallowrootuser"></a>**AppVirtualization/IntegrationAllowRootUser**
+
+<p style="margin-left: 20px">Specifies the location where symbolic links are created to the current version of a globally published package. Shortcuts, file type associations, etc. are created pointing to this path. If empty, symbolic links are not used during publishing. Example: %allusersprofile%\Microsoft\AppV\Client\Integration.</p>
 
 <a href="" id="appvirtualization-publishingallowserver1"></a>**AppVirtualization/PublishingAllowServer1**
 
@@ -1877,35 +1903,13 @@ The Policy configuration service provider enables the enterprise to configure po
 
 <p style="margin-left: 20px">User Publishing Refresh Interval Unit: Specifies the interval unit (Hour 0-23, Day 0-31).</p>
 
-<a href="" id="appvirtualization-allowreportingserver"></a>**AppVirtualization/AllowReportingServer**
-
-<p style="margin-left: 20px">Reporting Server URL: Displays the URL of reporting server.</p>
-
-<p style="margin-left: 20px">Reporting Time: When the client data should be reported to the server. Acceptable range is 0~23, corresponding to the 24 hours in a day. A good practice is, don't set this time to a busy hour, e.g. 9AM.</p>
-
-<p style="margin-left: 20px">Delay reporting for the random minutes: The maximum minutes of random delay on top of the reporting time. For a busy system, the random delay will help reduce the server load.</p>
-
-<p style="margin-left: 20px">Repeat reporting for every (days): The periodical interval in days for sending the reporting data.</p>
-
-<p style="margin-left: 20px">Data Cache Limit: This value specifies the maximum size in megabytes (MB) of the XML cache for storing reporting information. The default value is 20 MB. The size applies to the cache in memory. When the limit is reached, the log file will roll over. When a new record is to be added (bottom of the list), one or more of the oldest records (top of the list) will be deleted to make room. A warning will be logged to the Client log and the event log the first time this occurs, and will not be logged again until after the cache has been successfully cleared on transmission and the log has filled up again.</p>
-
-<p style="margin-left: 20px">Data Block Size: This value specifies the maximum size in bytes to transmit to the server at once on a reporting upload, to avoid permanent transmission failures when the log has reached a significant size. The  default value is 65536. When transmitting report data to the server, one block at a time of application records that is less than or equal to the block size in bytes of XML data will be removed from the cache and sent to the server. Each block will have the general Client data and global package list data prepended, and these will not factor into the block size calculations; the potential exists for an extremely large package list to result in transmission failures over low bandwidth or unreliable connections.</p>
-
-<a href="" id="appvirtualization-allowpackagescripts"></a>**AppVirtualization/AllowPackageScripts**
-
-<p style="margin-left: 20px">Enables scripts defined in the package manifest of configuration files that should run.</p>
-
-<a href="" id="appvirtualization-streamingallowhighcostlaunch"></a>**AppVirtualization/StreamingAllowHighCostLaunch**
-
-<p style="margin-left: 20px">This setting controls whether virtualized applications are launched on Windows 8 machines connected via a metered network connection (e.g. 4G).</p>
-
 <a href="" id="appvirtualization-streamingallowcertificatefilterforclient_ssl"></a>**AppVirtualization/StreamingAllowCertificateFilterForClient_SSL**
 
 <p style="margin-left: 20px">Specifies the path to a valid certificate in the certificate store.</p>
 
-<a href="" id="appvirtualization-streamingsupportbranchcache"></a>**AppVirtualization/StreamingSupportBranchCache**
+<a href="" id="appvirtualization-streamingallowhighcostlaunch"></a>**AppVirtualization/StreamingAllowHighCostLaunch**
 
-<p style="margin-left: 20px">If enabled, the App-V client will support BrancheCache compatible HTTP streaming. If BranchCache support is not desired, this should be disabled. The client can then apply HTTP optimizations which are incompatible with BranchCache</p>
+<p style="margin-left: 20px">This setting controls whether virtualized applications are launched on Windows 8 machines connected via a metered network connection (e.g. 4G).</p>
 
 <a href="" id="appvirtualization-streamingallowlocationprovider"></a>**AppVirtualization/StreamingAllowLocationProvider**
 
@@ -1931,17 +1935,13 @@ The Policy configuration service provider enables the enterprise to configure po
 
 <p style="margin-left: 20px">Specifies that streamed package contents will be not be saved to the local hard disk.</p>
 
-<a href="" id="appvirtualization-allowstreamingautoload"></a>**AppVirtualization/AllowStreamingAutoload**
+<a href="" id="appvirtualization-streamingsupportbranchcache"></a>**AppVirtualization/StreamingSupportBranchCache**
 
-<p style="margin-left: 20px">Specifies how new packages should be loaded automatically by App-V on a specific computer.</p>
+<p style="margin-left: 20px">If enabled, the App-V client will support BrancheCache compatible HTTP streaming. If BranchCache support is not desired, this should be disabled. The client can then apply HTTP optimizations which are incompatible with BranchCache</p>
 
 <a href="" id="appvirtualization-streamingverifycertificaterevocationlist"></a>**AppVirtualization/StreamingVerifyCertificateRevocationList**
 
 <p style="margin-left: 20px">Verifies Server certificate revocation status before streaming using HTTPS.</p>
-
-<a href="" id="appvirtualization-allowdynamicvirtualization"></a>**AppVirtualization/AllowDynamicVirtualization**
-
-<p style="margin-left: 20px">Enables Dynamic Virtualization of supported shell extensions, browser helper objects, and ActiveX controls.</p>
 
 <a href="" id="appvirtualization-virtualcomponentsallowlist"></a>**AppVirtualization/VirtualComponentsAllowList**
 
@@ -2021,23 +2021,115 @@ The Policy configuration service provider enables the enterprise to configure po
 
 <p style="margin-left: 20px">Note: This policy setting appears in both the Computer Configuration and User Configuration folders. If the policy settings conflict, the policy setting in Computer Configuration takes precedence over the policy setting in User Configuration.</p>
 
-<a href="" id="devicelock-preventlockscreenslideshow"></a>**DeviceLock/PreventLockScreenSlideShow**
+<a href="" id="bitlocker-bitencryptionmethodbydrivetype"></a>**BitLocker/BitEncryptionMethodByDriveType**
 
-<p style="margin-left: 20px">Disables the lock screen slide show settings in PC Settings and prevents a slide show from playing on the lock screen.</p>
+<p style="margin-left: 20px">This policy setting allows you to configure the algorithm and cipher strength used by BitLocker Drive Encryption. This policy setting is applied when you turn on BitLocker. Changing the encryption method has no effect if the drive is already encrypted, or if encryption is in progress.</p>
 
-<p style="margin-left: 20px">By default, users can enable a slide show that will run after they lock the machine.</p>
+<p style="margin-left: 20px">If you enable this policy setting you will be able to configure an encryption algorithm and key cipher strength for fixed data drives, operating system drives, and removable data drives individually. For fixed and operating system drives, we recommend that you use the XTS-AES algorithm. For removable drives, you should use AES-CBC 128-bit or AES-CBC 256-bit if the drive will be used in other devices that are not running Windows 10 (Version 1511).</p>
 
-<p style="margin-left: 20px">If you enable this setting, users will no longer be able to modify slide show settings in PC Settings, and no slide show will ever start.</p>
+<p style="margin-left: 20px">If you disable or do not configure this policy setting, BitLocker will use AES with the same bit strength (128-bit or 256-bit) as the "Choose drive encryption method and cipher strength (Windows Vista, Windows Server 2008, Windows 7)" and "Choose drive encryption method and cipher strength" policy settings (in that order), if they are set. If none of the policies are set, BitLocker will use the default encryption method of XTS-AES 128-bit or the encryption method specified by the setup script.</p>
 
-<a href="" id="credentialproviders-blockpicturepassword"></a>**CredentialProviders/BlockPicturePassword**
+<a href="" id="bitlocker-fixeddrivesrecoveryoptions"></a>**BitLocker/FixedDrivesRecoveryOptions**
 
-<p style="margin-left: 20px">This policy setting allows you to control whether a domain user can sign in using a picture password.</p>
+<p style="margin-left: 20px">This policy setting allows you to control how BitLocker-protected fixed data drives are recovered in the absence of the required credentials. This policy setting is applied when you turn on BitLocker.</p>
 
-<p style="margin-left: 20px">If you enable this policy setting, a domain user can't set up or sign in with a picture password.</p>
+<p style="margin-left: 20px">The "Allow data recovery agent" check box is used to specify whether a data recovery agent can be used with BitLocker-protected fixed data drives. Before a data recovery agent can be used it must be added from the Public Key Policies item in either the Group Policy Management Console or the Local Group Policy Editor. Consult the BitLocker Drive Encryption Deployment Guide on Microsoft TechNet for more information about adding data recovery agents.</p>
 
-<p style="margin-left: 20px">If you disable or don't configure this policy setting, a domain user can set up and use a picture password.</p>
+<p style="margin-left: 20px">In "Configure user storage of BitLocker recovery information" select whether users are allowed, required, or not allowed to generate a 48-digit recovery password or a 256-bit recovery key.</p>
 
-<p style="margin-left: 20px">Note that the user's domain password will be cached in the system vault when using this feature.</p>
+<p style="margin-left: 20px">Select "Omit recovery options from the BitLocker setup wizard" to prevent users from specifying recovery options when they turn on BitLocker on a drive. This means that you will not be able to specify which recovery option to use when you turn on BitLocker, instead BitLocker recovery options for the drive are determined by the policy setting.</p>
+
+<p style="margin-left: 20px">In "Save BitLocker recovery information to Active Directory Domain Services" choose which BitLocker recovery information to store in AD DS for fixed data drives. If you select "Backup recovery password and key package", both the BitLocker recovery password and key package are stored in AD DS. Storing the key package supports recovering data from a drive that has been physically corrupted. If you select "Backup recovery password only," only the recovery password is stored in AD DS.</p>
+
+<p style="margin-left: 20px">Select the "Do not enable BitLocker until recovery information is stored in AD DS for fixed data drives" check box if you want to prevent users from enabling BitLocker unless the computer is connected to the domain and the backup of BitLocker recovery information to AD DS succeeds.</p>
+
+<p style="margin-left: 20px">Note: If the "Do not enable BitLocker until recovery information is stored in AD DS for fixed data drives" check box is selected, a recovery password is automatically generated.</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, you can control the methods available to users to recover data from BitLocker-protected fixed data drives.</p>
+
+<p style="margin-left: 20px">If this policy setting is not configured or disabled, the default recovery options are supported for BitLocker recovery. By default a DRA is allowed, the recovery options can be specified by the user including the recovery password and recovery key, and recovery information is not backed up to AD DS</p>
+
+<a href="" id="bitlocker-fixeddrivesrequireencryption"></a>**BitLocker/FixedDrivesRequireEncryption**
+
+<p style="margin-left: 20px">This policy setting determines whether BitLocker protection is required for fixed data drives to be writable on a computer.</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, all fixed data drives that are not BitLocker-protected will be mounted as read-only. If the drive is protected by BitLocker, it will be mounted with read and write access.</p>
+
+<p style="margin-left: 20px">If you disable or do not configure this policy setting, all fixed data drives on the computer will be mounted with read and write access.</p>
+
+<a href="" id="bitlocker-removabledrivesrequireencryption"></a>**BitLocker/RemovableDrivesRequireEncryption**
+
+<p style="margin-left: 20px">This policy setting configures whether BitLocker protection is required for a computer to be able to write data to a removable data drive.</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, all removable data drives that are not BitLocker-protected will be mounted as read-only. If the drive is protected by BitLocker, it will be mounted with read and write access.</p>
+
+<p style="margin-left: 20px">If the "Deny write access to devices configured in another organization" option is selected, only drives with identification fields matching the computer's identification fields will be given write access. When a removable data drive is accessed it will be checked for valid identification field and allowed identification fields. These fields are defined by the "Provide the unique identifiers for your organization" policy setting.</p>
+
+<p style="margin-left: 20px">If you disable or do not configure this policy setting, all removable data drives on the computer will be mounted with read and write access.</p>
+
+<p style="margin-left: 20px">Note: This policy setting can be overridden by the policy settings under User Configuration\Administrative Templates\System\Removable Storage Access. If the "Removable Disks: Deny write access" policy setting is enabled this policy setting will be ignored.</p>
+
+<a href="" id="bitlocker-systemdrivesminimumpinlength"></a>**BitLocker/SystemDrivesMinimumPINLength**
+
+<p style="margin-left: 20px">This policy setting allows you to configure a minimum length for a Trusted Platform Module (TPM) startup PIN. This policy setting is applied when you turn on BitLocker. The startup PIN must have a minimum length of 4 digits and can have a maximum length of 20 digits.</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, you can require a minimum number of digits to be used when setting the startup PIN.</p>
+
+<p style="margin-left: 20px">If you disable or do not configure this policy setting, users can configure a startup PIN of any length between 4 and 20 digits.</p>
+
+<a href="" id="bitlocker-systemdrivesrecoverymessage"></a>**BitLocker/SystemDrivesRecoveryMessage**
+
+<p style="margin-left: 20px">This policy setting lets you configure the entire recovery message or replace the existing URL that are displayed on the pre-boot key recovery screen when the OS drive is locked.</p>
+
+<p style="margin-left: 20px">If you select the "Use default recovery message and URL" option, the default BitLocker recovery message and URL will be displayed in the pre-boot key recovery screen. If you have previously configured a custom recovery message or URL and want to revert to the default message, you must keep the policy enabled and select the "Use default recovery message and URL" option.</p>
+
+<p style="margin-left: 20px">If you select the "Use custom recovery message" option, the message you type in the "Custom recovery message option" text box will be displayed in the pre-boot key recovery screen. If a recovery URL is available, include it in the message.</p>
+
+<p style="margin-left: 20px">If you select the "Use custom recovery URL" option, the URL you type in the "Custom recovery URL option" text box will replace the default URL in the default recovery message, which will be displayed in the pre-boot key recovery screen.</p>
+
+<p style="margin-left: 20px">Note: Not all characters and languages are supported in pre-boot. It is strongly recommended that you test that the characters you use for the custom message or URL appear correctly on the pre-boot recovery screen.</p>
+
+<a href="" id="bitlocker-systemdrivesrecoveryoptions"></a>**BitLocker/SystemDrivesRecoveryOptions**
+
+<p style="margin-left: 20px">This policy setting allows you to control how BitLocker-protected operating system drives are recovered in the absence of the required startup key information. This policy setting is applied when you turn on BitLocker.</p>
+
+<p style="margin-left: 20px">The "Allow certificate-based data recovery agent" check box is used to specify whether a data recovery agent can be used with BitLocker-protected operating system drives. Before a data recovery agent can be used it must be added from the Public Key Policies item in either the Group Policy Management Console or the Local Group Policy Editor. Consult the BitLocker Drive Encryption Deployment Guide on Microsoft TechNet for more information about adding data recovery agents.</p>
+
+<p style="margin-left: 20px">In "Configure user storage of BitLocker recovery information" select whether users are allowed, required, or not allowed to generate a 48-digit recovery password or a 256-bit recovery key.</p>
+
+<p style="margin-left: 20px">Select "Omit recovery options from the BitLocker setup wizard" to prevent users from specifying recovery options when they turn on BitLocker on a drive. This means that you will not be able to specify which recovery option to use when you turn on BitLocker, instead BitLocker recovery options for the drive are determined by the policy setting.</p>
+
+<p style="margin-left: 20px">In "Save BitLocker recovery information to Active Directory Domain Services", choose which BitLocker recovery information to store in AD DS for operating system drives. If you select "Backup recovery password and key package", both the BitLocker recovery password and key package are stored in AD DS. Storing the key package supports recovering data from a drive that has been physically corrupted. If you select "Backup recovery password only," only the recovery password is stored in AD DS.</p>
+
+<p style="margin-left: 20px">Select the "Do not enable BitLocker until recovery information is stored in AD DS for operating system drives" check box if you want to prevent users from enabling BitLocker unless the computer is connected to the domain and the backup of BitLocker recovery information to AD DS succeeds.</p>
+
+<p style="margin-left: 20px">Note: If the "Do not enable BitLocker until recovery information is stored in AD DS for operating system drives" check box is selected, a recovery password is automatically generated.</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, you can control the methods available to users to recover data from BitLocker-protected operating system drives.</p>
+
+<p style="margin-left: 20px">If this policy setting is disabled or not configured, the default recovery options are supported for BitLocker recovery. By default a DRA is allowed, the recovery options can be specified by the user including the recovery password and recovery key, and recovery information is not backed up to AD DS.</p>
+
+<a href="" id="bitlocker-systemdrivesrequirestartupauthentication"></a>**BitLocker/SystemDrivesRequireStartupAuthentication**
+
+<p style="margin-left: 20px">This policy setting allows you to configure whether BitLocker requires additional authentication each time the computer starts and whether you are using BitLocker with or without a Trusted Platform Module (TPM). This policy setting is applied when you turn on BitLocker.</p>
+
+<p style="margin-left: 20px">Note: Only one of the additional authentication options can be required at startup, otherwise a policy error occurs.</p>
+
+<p style="margin-left: 20px">If you want to use BitLocker on a computer without a TPM, select the "Allow BitLocker without a compatible TPM" check box. In this mode either a password or a USB drive is required for start-up. When using a startup key, the key information used to encrypt the drive is stored on the USB drive, creating a USB key. When the USB key is inserted the access to the drive is authenticated and the drive is accessible. If the USB key is lost or unavailable or if you have forgotten the password then you will need to use one of the BitLocker recovery options to access the drive.</p>
+
+<p style="margin-left: 20px">On a computer with a compatible TPM, four types of authentication methods can be used at startup to provide added protection for encrypted data. When the computer starts, it can use only the TPM for authentication, or it can also require insertion of a USB flash drive containing a startup key, the entry of a 4-digit to 20-digit personal identification number (PIN), or both.</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, users can configure advanced startup options in the BitLocker setup wizard.</p>
+
+<p style="margin-left: 20px">If you disable or do not configure this policy setting, users can configure only basic options on computers with a TPM.</p>
+
+<p style="margin-left: 20px">Note: If you want to require the use of a startup PIN and a USB flash drive, you must configure BitLocker settings using the command-line tool manage-bde instead of the BitLocker Drive Encryption setup wizard.</p>
+
+<a href="" id="connectivity-hardeneduncpaths"></a>**Connectivity/HardenedUNCPaths**
+
+<p style="margin-left: 20px">This policy setting configures secure access to UNC paths.</p>
+
+<p style="margin-left: 20px">If you enable this policy, Windows only allows access to the specified UNC paths after fulfilling additional security requirements.</p>
 
 <a href="" id="credentialproviders-allowpinlogon"></a>**CredentialProviders/AllowPINLogon**
 
@@ -2046,6 +2138,16 @@ The Policy configuration service provider enables the enterprise to configure po
 <p style="margin-left: 20px">If you enable this policy setting, a domain user can set up and sign in with a convenience PIN.</p>
 
 <p style="margin-left: 20px">If you disable or don't configure this policy setting, a domain user can't set up and use a convenience PIN.</p>
+
+<p style="margin-left: 20px">Note that the user's domain password will be cached in the system vault when using this feature.</p>
+
+<a href="" id="credentialproviders-blockpicturepassword"></a>**CredentialProviders/BlockPicturePassword**
+
+<p style="margin-left: 20px">This policy setting allows you to control whether a domain user can sign in using a picture password.</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, a domain user can't set up or sign in with a picture password.</p>
+
+<p style="margin-left: 20px">If you disable or don't configure this policy setting, a domain user can set up and use a picture password.</p>
 
 <p style="margin-left: 20px">Note that the user's domain password will be cached in the system vault when using this feature.</p>
 
@@ -2068,6 +2170,34 @@ The Policy configuration service provider enables the enterprise to configure po
 <p style="margin-left: 20px">If you enable this policy setting, all local administrator accounts on the PC will be displayed so the user can choose one and enter the correct password.</p>
 
 <p style="margin-left: 20px">If you disable this policy setting, users will always be required to type a user name and password to elevate.</p>
+
+<a href="" id="datausage-setcost3g"></a>**DataUsage/SetCost3G**
+
+<p style="margin-left: 20px">This policy setting configures the cost of 3G connections on the local machine.</p>
+
+<p style="margin-left: 20px">If this policy setting is enabled, a drop-down list box presenting possible cost values will be active.  Selecting one of the following values from the list will set the cost of all 3G connections on the local machine:</p>
+
+<p style="margin-left: 20px">- Unrestricted: Use of this connection is unlimited and not restricted by usage charges and capacity constraints.</p>
+
+<p style="margin-left: 20px">- Fixed: Use of this connection is not restricted by usage charges and capacity constraints up to a certain data limit.</p>
+
+<p style="margin-left: 20px">- Variable: This connection is costed on a per byte basis.</p>
+
+<p style="margin-left: 20px">If this policy setting is disabled or is not configured, the cost of 3G connections is Fixed by default.</p>
+
+<a href="" id="datausage-setcost4g"></a>**DataUsage/SetCost4G**
+
+<p style="margin-left: 20px">This policy setting configures the cost of 4G connections on the local machine.</p>
+
+<p style="margin-left: 20px">If this policy setting is enabled, a drop-down list box presenting possible cost values will be active. Selecting one of the following values from the list will set the cost of all 4G connections on the local machine:</p>
+
+<p style="margin-left: 20px">- Unrestricted: Use of this connection is unlimited and not restricted by usage charges and capacity constraints.</p>
+
+<p style="margin-left: 20px">- Fixed: Use of this connection is not restricted by usage charges and capacity constraints up to a certain data limit.</p>
+
+<p style="margin-left: 20px">- Variable: This connection is costed on a per byte basis.</p>
+
+<p style="margin-left: 20px">If this policy setting is disabled or is not configured, the cost of 4G connections is Fixed by default.</p>
 
 <a href="" id="desktop-preventuserredirectionofprofilefolders"></a>**Desktop/PreventUserRedirectionOfProfileFolders**
 
@@ -2093,13 +2223,31 @@ The Policy configuration service provider enables the enterprise to configure po
 
 <p style="margin-left: 20px">If you disable or do not configure this policy setting, Windows can install and update devices as allowed or prevented by other policy settings.</p>
 
-<a href="" id="storage-enhancedstoragedevices"></a>**Storage/EnhancedStorageDevices**
+<a href="" id="devicelock-preventlockscreenslideshow"></a>**DeviceLock/PreventLockScreenSlideShow**
 
-<p style="margin-left: 20px">This policy setting configures whether or not Windows will activate an Enhanced Storage device.</p>
+<p style="margin-left: 20px">Disables the lock screen slide show settings in PC Settings and prevents a slide show from playing on the lock screen.</p>
 
-<p style="margin-left: 20px">If you enable this policy setting, Windows will not activate unactivated Enhanced Storage devices.</p>
+<p style="margin-left: 20px">By default, users can enable a slide show that will run after they lock the machine.</p>
 
-<p style="margin-left: 20px">If you disable or do not configure this policy setting, Windows will activate unactivated Enhanced Storage devices.</p>
+<p style="margin-left: 20px">If you enable this setting, users will no longer be able to modify slide show settings in PC Settings, and no slide show will ever start.</p>
+
+<a href="" id="errorreporting-customizeconsentsettings"></a>**ErrorReporting/CustomizeConsentSettings**
+
+<p style="margin-left: 20px">This policy setting determines the consent behavior of Windows Error Reporting for specific event types.</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, you can add specific event types to a list by clicking Show, and typing event types in the Value Name column of the Show Contents dialog box. Event types are those for generic, non-fatal errors: crash, no response, and kernel fault errors. For each specified event type, you can set a consent level of 0, 1, 2, 3, or 4.</p>
+
+<p style="margin-left: 20px">- 0 (Disable): Windows Error Reporting sends no data to Microsoft for this event type.</p>
+
+<p style="margin-left: 20px">- 1 (Always ask before sending data): Windows prompts the user for consent to send reports.</p>
+
+<p style="margin-left: 20px">- 2 (Send parameters): Windows Error Reporting automatically sends the minimum data required to check for an existing solution, and Windows prompts the user for consent to send any additional data requested by Microsoft.</p>
+
+<p style="margin-left: 20px">- 3 (Send parameters and safe additional data): Windows Error Reporting automatically sends the minimum data required to check for an existing solution, as well as data which Windows has determined (within a high probability) does not contain personally identifiable data, and prompts the user for consent to send any additional data requested by Microsoft.</p>
+
+<p style="margin-left: 20px">- 4 (Send all data): Any data requested by Microsoft is sent automatically.</p>
+
+<p style="margin-left: 20px">If you disable or do not configure this policy setting, then the default consent settings that are applied are those specified by the user in Control Panel, or in the Configure Default Consent policy setting.</p>
 
 <a href="" id="errorreporting-disablewindowserrorreporting"></a>**ErrorReporting/DisableWindowsErrorReporting**
 
@@ -2136,24 +2284,6 @@ The Policy configuration service provider enables the enterprise to configure po
 <p style="margin-left: 20px">If you enable this policy setting, Windows Error Reporting does not display any GUI-based error messages or dialog boxes for critical errors.</p>
 
 <p style="margin-left: 20px">If you disable or do not configure this policy setting, Windows Error Reporting displays the user interface for critical errors.</p>
-
-<a href="" id="errorreporting-customizeconsentsettings"></a>**ErrorReporting/CustomizeConsentSettings**
-
-<p style="margin-left: 20px">This policy setting determines the consent behavior of Windows Error Reporting for specific event types.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, you can add specific event types to a list by clicking Show, and typing event types in the Value Name column of the Show Contents dialog box. Event types are those for generic, non-fatal errors: crash, no response, and kernel fault errors. For each specified event type, you can set a consent level of 0, 1, 2, 3, or 4.</p>
-
-<p style="margin-left: 20px">- 0 (Disable): Windows Error Reporting sends no data to Microsoft for this event type.</p>
-
-<p style="margin-left: 20px">- 1 (Always ask before sending data): Windows prompts the user for consent to send reports.</p>
-
-<p style="margin-left: 20px">- 2 (Send parameters): Windows Error Reporting automatically sends the minimum data required to check for an existing solution, and Windows prompts the user for consent to send any additional data requested by Microsoft.</p>
-
-<p style="margin-left: 20px">- 3 (Send parameters and safe additional data): Windows Error Reporting automatically sends the minimum data required to check for an existing solution, as well as data which Windows has determined (within a high probability) does not contain personally identifiable data, and prompts the user for consent to send any additional data requested by Microsoft.</p>
-
-<p style="margin-left: 20px">- 4 (Send all data): Any data requested by Microsoft is sent automatically.</p>
-
-<p style="margin-left: 20px">If you disable or do not configure this policy setting, then the default consent settings that are applied are those specified by the user in Control Panel, or in the Configure Default Consent policy setting.</p>
 
 <a href="" id="eventlogservice-controleventlogbehavior"></a>**EventLogService/ControlEventLogBehavior**
 
@@ -2197,134 +2327,6 @@ The Policy configuration service provider enables the enterprise to configure po
 
 <p style="margin-left: 20px">If you disable or do not configure this policy setting, the user can configure their list of search providers unless another policy setting restricts such configuration.</p>
 
-<a href="" id="internetexplorer-disablehomepagechange"></a>**InternetExplorer/DisableHomePageChange**
-
-<p style="margin-left: 20px">The Home page specified on the General tab of the Internet Options dialog box is the default Web page that Internet Explorer loads whenever it is run.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, a user cannot set a custom default home page. You must specify which default home page should load on the user machine. For machines with at least Internet Explorer 7, the home page can be set within this policy to override other home page policies.</p>
-
-<p style="margin-left: 20px">If you disable or do not configure this policy setting, the Home page box is enabled and users can choose their own home page.</p>
-
-<a href="" id="internetexplorer-disablesecondaryhomepagechange"></a>**InternetExplorer/DisableSecondaryHomePageChange**
-
-<p style="margin-left: 20px">Secondary home pages are the default Web pages that Internet Explorer loads in separate tabs from the home page whenever the browser is run. This policy setting allows you to set default secondary home pages.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, you can specify which default home pages should load as secondary home pages. The user cannot set custom default secondary home pages.</p>
-
-<p style="margin-left: 20px">If you disable or do not configure this policy setting, the user can add secondary home pages.</p>
-
-<p style="margin-left: 20px">Note: If the Disable Changing Home Page Settings policy is enabled, the user cannot add secondary home pages.</p>
-
-<a href="" id="internetexplorer-disableupdatecheck"></a>**InternetExplorer/DisableUpdateCheck**
-
-<p style="margin-left: 20px">Prevents Internet Explorer from checking whether a new version of the browser is available.</p>
-
-<p style="margin-left: 20px">If you enable this policy, it prevents Internet Explorer from checking to see whether it is the latest available browser version and notifying users if a new version is available.</p>
-
-<p style="margin-left: 20px">If you disable this policy or do not configure it, Internet Explorer checks every 30 days by default, and then notifies users if a new version is available.</p>
-
-<p style="margin-left: 20px">This policy is intended to help the administrator maintain version control for Internet Explorer by preventing users from being notified about new versions of the browser.</p>
-
-<a href="" id="internetexplorer-allowenterprisemodefromtoolsmenu"></a>**InternetExplorer/AllowEnterpriseModeFromToolsMenu**
-
-<p style="margin-left: 20px">This policy setting lets you decide whether users can turn on Enterprise Mode for websites with compatibility issues. Optionally, this policy also lets you specify where to get reports (through post messages) about the websites for which users turn on Enterprise Mode using the Tools menu.</p>
-
-<p style="margin-left: 20px">If you turn this setting on, users can see and use the Enterprise Mode option from the Tools menu. If you turn this setting on, but don't specify a report location, Enterprise Mode will still be available to your users, but you won't get any reports.</p>
-
-<p style="margin-left: 20px">If you disable or don't configure this policy setting, the menu option won't appear and users won't be able to run websites in Enterprise Mode.</p>
-
-<a href="" id="internetexplorer-disablebypassofsmartscreenwarnings"></a>**InternetExplorer/DisableBypassOfSmartScreenWarnings**
-
-<p style="margin-left: 20px">This policy setting determines whether the user can bypass warnings from SmartScreen Filter. SmartScreen Filter prevents the user from browsing to or downloading from sites that are known to host malicious content. SmartScreen Filter also prevents the execution of files that are known to be malicious.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, SmartScreen Filter warnings block the user.</p>
-
-<p style="margin-left: 20px">If you disable or do not configure this policy setting, the user can bypass SmartScreen Filter warnings.</p>
-
-<a href="" id="internetexplorer-disablebypassofsmartscreenwarningsaboutuncommonfiles"></a>**InternetExplorer/DisableBypassOfSmartScreenWarningsAboutUncommonFiles**
-
-<p style="margin-left: 20px">This policy setting determines whether the user can bypass warnings from SmartScreen Filter. SmartScreen Filter warns the user about executable files that Internet Explorer users do not commonly download from the Internet.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, SmartScreen Filter warnings block the user.</p>
-
-<p style="margin-left: 20px">If you disable or do not configure this policy setting, the user can bypass SmartScreen Filter warnings.</p>
-
-<a href="" id="internetexplorer-disableproxychange"></a>**InternetExplorer/DisableProxyChange**
-
-<p style="margin-left: 20px">This policy setting specifies if a user can change proxy settings.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, the user will not be able to configure proxy settings.</p>
-
-<p style="margin-left: 20px">If you disable or do not configure this policy setting, the user can configure proxy settings.</p>
-
-<a href="" id="internetexplorer-disablesearchproviderchange"></a>**InternetExplorer/DisableSearchProviderChange**
-
-<p style="margin-left: 20px">This policy setting prevents the user from changing the default search provider for the Address bar and the toolbar Search box.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, the user cannot change the default search provider.</p>
-
-<p style="margin-left: 20px">If you disable or do not configure this policy setting, the user can change the default search provider.</p>
-
-<a href="" id="internetexplorer-disablecustomerexperienceimprovementprogramparticipation"></a>**InternetExplorer/DisableCustomerExperienceImprovementProgramParticipation**
-
-<p style="margin-left: 20px">This policy setting prevents the user from participating in the Customer Experience Improvement Program (CEIP).</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, the user cannot participate in the CEIP, and the Customer Feedback Options command does not appear on the Help menu.</p>
-
-<p style="margin-left: 20px">If you disable this policy setting, the user must participate in the CEIP, and the Customer Feedback Options command does not appear on the Help menu.</p>
-
-<p style="margin-left: 20px">If you do not configure this policy setting, the user can choose to participate in the CEIP.</p>
-
-<a href="" id="internetexplorer-disablefirstrunwizard"></a>**InternetExplorer/DisableFirstRunWizard**
-
-<p style="margin-left: 20px">This policy setting prevents Internet Explorer from running the First Run wizard the first time a user starts the browser after installing Internet Explorer or Windows.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, you must make one of the following choices:</p>
-
-<p style="margin-left: 20px">Skip the First Run wizard, and go directly to the user's home page.</p>
-
-<p style="margin-left: 20px">Skip the First Run wizard, and go directly to the "Welcome to Internet Explorer" webpage.</p>
-
-<p style="margin-left: 20px">Starting with Windows 8, the "Welcome to Internet Explorer" webpage is not available. The user's home page will display regardless of which option is chosen.</p>
-
-<p style="margin-left: 20px">If you disable or do not configure this policy setting, Internet Explorer may run the First Run wizard the first time the browser is started after installation.</p>
-
-<a href="" id="internetexplorer-searchproviderlist"></a>**InternetExplorer/SearchProviderList**
-
-<p style="margin-left: 20px">This policy setting allows you to restrict the search providers that appear in the Search box in Internet Explorer to those defined in the list of policy keys for search providers (found under [HKCU or HKLM\Software\policies\Microsoft\Internet Explorer\SearchScopes]). Normally, search providers can be added from third-party toolbars or in Setup, but the user can also add them from a search provider's website.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, the user cannot configure the list of search providers on his or her computer, and any default providers installed do not appear (including providers installed from other applications). The only providers that appear are those in the list of policy keys for search providers. Note: This list can be created through a custom administrative template file. For information about creating this custom administrative template file, see the Internet Explorer documentation on search providers.</p>
-
-<p style="margin-left: 20px">If you disable or do not configure this policy setting, the user can configure his or her list of search providers.</p>
-
-<a href="" id="internetexplorer-donotallowuserstoaddsites"></a>**InternetExplorer/DoNotAllowUsersToAddSites**
-
-<p style="margin-left: 20px">Prevents users from adding or removing sites from security zones. A security zone is a group of Web sites with the same security level.</p>
-
-<p style="margin-left: 20px">If you enable this policy, the site management settings for security zones are disabled. (To see the site management settings for security zones, in the Internet Options dialog box, click the Security tab, and then click the Sites button.)</p>
-
-<p style="margin-left: 20px">If you disable this policy or do not configure it, users can add Web sites to or remove sites from the Trusted Sites and Restricted Sites zones, and alter settings for the Local Intranet zone.</p>
-
-<p style="margin-left: 20px">This policy prevents users from changing site management settings for security zones established by the administrator.</p>
-
-<p style="margin-left: 20px">Note:  The "Disable the Security page" policy (located in \User Configuration\Administrative Templates\Windows Components\Internet Explorer\Internet Control Panel), which removes the Security tab from the interface, takes precedence over this policy. If it is enabled, this policy is ignored.</p>
-
-<p style="margin-left: 20px">Also, see the "Security zones: Use only machine settings" policy.</p>
-
-<a href="" id="internetexplorer-donotallowuserstochangepolicies"></a>**InternetExplorer/DoNotAllowUsersToChangePolicies**
-
-<p style="margin-left: 20px">Prevents users from changing security zone settings. A security zone is a group of Web sites with the same security level.</p>
-
-<p style="margin-left: 20px">If you enable this policy, the Custom Level button and security-level slider on the Security tab in the Internet Options dialog box are disabled.</p>
-
-<p style="margin-left: 20px">If you disable this policy or do not configure it, users can change the settings for security zones.</p>
-
-<p style="margin-left: 20px">This policy prevents users from changing security zone settings established by the administrator.</p>
-
-<p style="margin-left: 20px">Note: The "Disable the Security page" policy (located in \User Configuration\Administrative Templates\Windows Components\Internet Explorer\Internet Control Panel), which removes the Security tab from Internet Explorer in Control Panel, takes precedence over this policy. If it is enabled, this policy is ignored.</p>
-
-<p style="margin-left: 20px">Also, see the "Security zones: Use only machine settings" policy.</p>
-
 <a href="" id="internetexplorer-allowactivexfiltering"></a>**InternetExplorer/AllowActiveXFiltering**
 
 <p style="margin-left: 20px">This policy setting controls the ActiveX Filtering feature for websites that are running ActiveX controls. The user can choose to turn off ActiveX Filtering for specific websites so that ActiveX controls can run properly.</p>
@@ -2333,63 +2335,19 @@ The Policy configuration service provider enables the enterprise to configure po
 
 <p style="margin-left: 20px">If you disable or do not configure this policy setting, ActiveX Filtering is not enabled by default for the user. The user can turn ActiveX Filtering on or off.</p>
 
-<a href="" id="internetexplorer-allowsuggestedsites"></a>**InternetExplorer/AllowSuggestedSites**
+<a href="" id="internetexplorer-allowaddonlist"></a>**InternetExplorer/AllowAddOnList**
 
-<p style="margin-left: 20px">This policy setting controls the Suggested Sites feature, which recommends websites based on the users browsing activity. Suggested Sites reports a users browsing history to Microsoft to suggest sites that the user might want to visit.</p>
+<p style="margin-left: 20px">This policy setting allows you to manage a list of add-ons to be allowed or denied by Internet Explorer. Add-ons in this case are controls like ActiveX Controls, Toolbars, and Browser Helper Objects (BHOs) which are specifically written to extend or enhance the functionality of the browser or web pages.</p>
 
-<p style="margin-left: 20px">If you enable this policy setting, the user is not prompted to enable Suggested Sites. The users browsing history is sent to Microsoft to produce suggestions.</p>
+<p style="margin-left: 20px">This list can be used with the 'Deny all add-ons unless specifically allowed in the Add-on List' policy setting, which defines whether add-ons not listed here are assumed to be denied.</p>
 
-<p style="margin-left: 20px">If you disable this policy setting, the entry points and functionality associated with this feature are turned off.</p>
+<p style="margin-left: 20px">If you enable this policy setting, you can enter a list of add-ons to be allowed or denied by Internet Explorer. For each entry that you add to the list, enter the following information:</p>
 
-<p style="margin-left: 20px">If you do not configure this policy setting, the user can turn on and turn off the Suggested Sites feature.</p>
+<p style="margin-left: 20px">Name of the Value - the CLSID (class identifier) for the add-on you wish to add to the list.  The CLSID should be in brackets for example, {000000000-0000-0000-0000-0000000000000}'. The CLSID for an add-on can be obtained by reading the OBJECT tag from a Web page on which the add-on is referenced.</p>
 
-<a href="" id="internetexplorer-allowenterprisemodesitelist"></a>**InternetExplorer/AllowEnterpriseModeSiteList**
+<p style="margin-left: 20px">Value - A number indicating whether Internet Explorer should deny or allow the add-on to be loaded. To specify that an add-on should be denied enter a 0 (zero) into this field. To specify that an add-on should be allowed, enter a 1 (one) into this field. To specify that an add-on should be allowed and also permit the user to manage the add-on through Add-on Manager, enter a 2 (two) into this field.</p>
 
-<p style="margin-left: 20px">This policy setting lets you specify where to find the list of websites you want opened using Enterprise Mode IE, instead of Standard mode, because of compatibility issues. Users can't edit this list.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, Internet Explorer downloads the website list from your location (HKCU or HKLM\Software\policies\Microsoft\Internet Explorer\Main\EnterpriseMode), opening all listed websites using Enterprise Mode IE.</p>
-
-<p style="margin-left: 20px">If you disable or don't configure this policy setting, Internet Explorer opens all websites using Standards mode.</p>
-
-<a href="" id="internetexplorer-allowinternetexplorerstandardsmode"></a>**InternetExplorer/AllowInternetExplorerStandardsMode**
-
-<p style="margin-left: 20px">This policy setting controls how Internet Explorer displays local intranet content. Intranet content is defined as any webpage that belongs to the local intranet security zone.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, Internet Explorer uses the current user agent string for local intranet content. Additionally, all local intranet Standards Mode pages appear in the Standards Mode available with the latest version of Internet Explorer. The user cannot change this behavior through the Compatibility View Settings dialog box.</p>
-
-<p style="margin-left: 20px">If you disable this policy setting, Internet Explorer uses an Internet Explorer 7 user agent string (with an additional string appended) for local intranet content. Additionally, all local intranet Standards Mode pages appear in Internet Explorer 7 Standards Mode. The user cannot change this behavior through the Compatibility View Settings dialog box.</p>
-
-<p style="margin-left: 20px">If you do not configure this policy setting, Internet Explorer uses an Internet Explorer 7 user agent string (with an additional string appended) for local intranet content. Additionally, all local intranet Standards Mode pages appear in Internet Explorer 7 Standards Mode. This option results in the greatest compatibility with existing webpages, but newer content written to common Internet standards may be displayed incorrectly. This option matches the default behavior of Internet Explorer.</p>
-
-<a href="" id="internetexplorer-allowinternetexplorer7policylist "></a>**InternetExplorer/AllowInternetExplorer7PolicyList **
-
-<p style="margin-left: 20px">This policy setting allows you to add specific sites that must be viewed in Internet Explorer 7 Compatibility View.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, the user can add and remove sites from the list, but the user cannot remove the entries that you specify.</p>
-
-<p style="margin-left: 20px">If you disable or do not configure this policy setting, the user can add and remove sites from the list.</p>
-
-<a href="" id="internetexplorer-disableencryptionsupport"></a>**InternetExplorer/DisableEncryptionSupport**
-
-<p style="margin-left: 20px">This policy setting allows you to turn off support for Transport Layer Security (TLS) 1.0, TLS 1.1, TLS 1.2, Secure Sockets Layer (SSL) 2.0, or SSL 3.0 in the browser. TLS and SSL are protocols that help protect communication between the browser and the target server. When the browser attempts to set up a protected communication with the target server, the browser and server negotiate which protocol and version to use. The browser and server attempt to match each others list of supported protocols and versions, and they select the most preferred match.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, the browser negotiates or does not negotiate an encryption tunnel by using the encryption methods that you select from the drop-down list.</p>
-
-<p style="margin-left: 20px">If you disable or do not configure this policy setting, the user can select which encryption method the browser supports.</p>
-
-<p style="margin-left: 20px">Note: SSL 2.0 is off by default and is no longer supported starting with Windows 10 Version 1607. SSL 2.0 is an outdated security protocol, and enabling SSL 2.0 impairs the performance and functionality of TLS 1.0.</p>
-
-<a href="" id="internetexplorer-disableflipaheadfeature"></a>**InternetExplorer/DisableFlipAheadFeature**
-
-<p style="margin-left: 20px">This policy setting determines whether a user can swipe across a screen or click Forward to go to the next pre-loaded page of a website.</p>
-
-<p style="margin-left: 20px">Microsoft collects your browsing history to improve how flip ahead with page prediction works. This feature isn't available for Internet Explorer for the desktop.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, flip ahead with page prediction is turned off and the next webpage isn't loaded into the background.</p>
-
-<p style="margin-left: 20px">If you disable this policy setting, flip ahead with page prediction is turned on and the next webpage is loaded into the background.</p>
-
-<p style="margin-left: 20px">If you don't configure this setting, users can turn this behavior on or off, using the Settings charm.</p>
+<p style="margin-left: 20px">If you disable this policy setting, the list is deleted. The 'Deny all add-ons unless specifically allowed in the Add-on List' policy setting will still determine whether add-ons not in this list are assumed to be denied.</p>
 
 <a href="" id="internetexplorer-allowenhancedprotectedmode"></a>**InternetExplorer/AllowEnhancedProtectedMode**
 
@@ -2400,6 +2358,40 @@ The Policy configuration service provider enables the enterprise to configure po
 <p style="margin-left: 20px">If you disable this policy setting, Enhanced Protected Mode will be turned off. Any zone that has Protected Mode enabled will use the version of Protected Mode introduced in Internet Explorer 7 for Windows Vista.</p>
 
 <p style="margin-left: 20px">If you do not configure this policy, users will be able to turn on or turn off Enhanced Protected Mode on the Advanced tab of the Internet Options dialog.</p>
+
+<a href="" id="internetexplorer-allowenterprisemodefromtoolsmenu"></a>**InternetExplorer/AllowEnterpriseModeFromToolsMenu**
+
+<p style="margin-left: 20px">This policy setting lets you decide whether users can turn on Enterprise Mode for websites with compatibility issues. Optionally, this policy also lets you specify where to get reports (through post messages) about the websites for which users turn on Enterprise Mode using the Tools menu.</p>
+
+<p style="margin-left: 20px">If you turn this setting on, users can see and use the Enterprise Mode option from the Tools menu. If you turn this setting on, but don't specify a report location, Enterprise Mode will still be available to your users, but you won't get any reports.</p>
+
+<p style="margin-left: 20px">If you disable or don't configure this policy setting, the menu option won't appear and users won't be able to run websites in Enterprise Mode.</p>
+
+<a href="" id="internetexplorer-allowenterprisemodesitelist"></a>**InternetExplorer/AllowEnterpriseModeSiteList**
+
+<p style="margin-left: 20px">This policy setting lets you specify where to find the list of websites you want opened using Enterprise Mode IE, instead of Standard mode, because of compatibility issues. Users can't edit this list.</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, Internet Explorer downloads the website list from your location (HKCU or HKLM\Software\policies\Microsoft\Internet Explorer\Main\EnterpriseMode), opening all listed websites using Enterprise Mode IE.</p>
+
+<p style="margin-left: 20px">If you disable or don't configure this policy setting, Internet Explorer opens all websites using Standards mode.</p>
+
+<a href="" id="internetexplorer-allowinternetexplorer7policylist"></a>**InternetExplorer/AllowInternetExplorer7PolicyList**
+
+<p style="margin-left: 20px">This policy setting allows you to add specific sites that must be viewed in Internet Explorer 7 Compatibility View.</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, the user can add and remove sites from the list, but the user cannot remove the entries that you specify.</p>
+
+<p style="margin-left: 20px">If you disable or do not configure this policy setting, the user can add and remove sites from the list.</p>
+
+<a href="" id="internetexplorer-allowinternetexplorerstandardsmode"></a>**InternetExplorer/AllowInternetExplorerStandardsMode**
+
+<p style="margin-left: 20px">This policy setting controls how Internet Explorer displays local intranet content. Intranet content is defined as any webpage that belongs to the local intranet security zone.</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, Internet Explorer uses the current user agent string for local intranet content. Additionally, all local intranet Standards Mode pages appear in the Standards Mode available with the latest version of Internet Explorer. The user cannot change this behavior through the Compatibility View Settings dialog box.</p>
+
+<p style="margin-left: 20px">If you disable this policy setting, Internet Explorer uses an Internet Explorer 7 user agent string (with an additional string appended) for local intranet content. Additionally, all local intranet Standards Mode pages appear in Internet Explorer 7 Standards Mode. The user cannot change this behavior through the Compatibility View Settings dialog box.</p>
+
+<p style="margin-left: 20px">If you do not configure this policy setting, Internet Explorer uses an Internet Explorer 7 user agent string (with an additional string appended) for local intranet content. Additionally, all local intranet Standards Mode pages appear in Internet Explorer 7 Standards Mode. This option results in the greatest compatibility with existing webpages, but newer content written to common Internet standards may be displayed incorrectly. This option matches the default behavior of Internet Explorer.</p>
 
 <a href="" id="internetexplorer-allowinternetzonetemplate"></a>**InternetExplorer/AllowInternetZoneTemplate**
 
@@ -2414,26 +2406,6 @@ The Policy configuration service provider enables the enterprise to configure po
 <p style="margin-left: 20px">Note. Local Machine Zone Lockdown Security and Network Protocol Lockdown operate by comparing the settings in the active URL's zone against those in the Locked-Down equivalent zone. If you select a security level for any zone (including selecting no security), the same change should be made to the Locked-Down equivalent.</p>
 
 <p style="margin-left: 20px">Note. It is recommended to configure template policy settings in one Group Policy object (GPO) and configure any related individual policy settings in a separate GPO. You can then use Group Policy management features (for example, precedence, inheritance, or enforce) to apply individual settings to specific targets.</p>
-
-<a href="" id="internetexplorer-includealllocalsites"></a>**InternetExplorer/IncludeAllLocalSites**
-
-<p style="margin-left: 20px">This policy setting controls whether local sites which are not explicitly mapped into any Security Zone are forced into the local Intranet security zone.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, local sites which are not explicitly mapped into a zone are considered to be in the Intranet Zone.</p>
-
-<p style="margin-left: 20px">If you disable this policy setting, local sites which are not explicitly mapped into a zone will not be considered to be in the Intranet Zone (so would typically be in the Internet Zone).</p>
-
-<p style="margin-left: 20px">If you do not configure this policy setting, users choose whether to force local sites into the Intranet Zone.</p>
-
-<a href="" id="internetexplorer-includeallnetworkpaths"></a>**InternetExplorer/IncludeAllNetworkPaths**
-
-<p style="margin-left: 20px">This policy setting controls whether URLs representing UNCs are mapped into the local Intranet security zone.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, all network paths are mapped into the Intranet Zone.</p>
-
-<p style="margin-left: 20px">If you disable this policy setting, network paths are not necessarily mapped into the Intranet Zone (other rules might map one there).</p>
-
-<p style="margin-left: 20px">If you do not configure this policy setting, users choose whether network paths are mapped into the Intranet Zone.</p>
 
 <a href="" id="internetexplorer-allowintranetzonetemplate"></a>**InternetExplorer/AllowIntranetZoneTemplate**
 
@@ -2519,6 +2491,52 @@ The Policy configuration service provider enables the enterprise to configure po
 
 <p style="margin-left: 20px">Note. It is recommended to configure template policy settings in one Group Policy object (GPO) and configure any related individual policy settings in a separate GPO. You can then use Group Policy management features (for example, precedence, inheritance, or enforce) to apply individual settings to specific targets.</p>
 
+<a href="" id="internetexplorer-allowonewordentry"></a>**InternetExplorer/AllowOneWordEntry**
+
+<p style="margin-left: 20px">This policy allows the user to go directly to an intranet site for a one-word entry in the Address bar.</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, Internet Explorer goes directly to an intranet site for a one-word entry in the Address bar, if it is available.</p>
+
+<p style="margin-left: 20px">If you disable or do not configure this policy setting, Internet Explorer does not go directly to an intranet site for a one-word entry in the Address bar.</p>
+
+<a href="" id="internetexplorer-allowsitetozoneassignmentlist"></a>**InternetExplorer/AllowSiteToZoneAssignmentList**
+
+<p style="margin-left: 20px">This policy setting allows you to manage a list of sites that you want to associate with a particular security zone. These zone numbers have associated security settings that apply to all of the sites in the zone.</p>
+
+<p style="margin-left: 20px">Internet Explorer has 4 security zones, numbered 1-4, and these are used by this policy setting to associate sites to zones. They are: (1) Intranet zone, (2) Trusted Sites zone, (3) Internet zone, and (4) Restricted Sites zone. Security settings can be set for each of these zones through other policy settings, and their default settings are: Trusted Sites zone (Low template), Intranet zone (Medium-Low template), Internet zone (Medium template), and Restricted Sites zone (High template). (The Local Machine zone and its locked down equivalent have special security settings that protect your local computer.)</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, you can enter a list of sites and their related zone numbers. The association of a site with a zone will ensure that the security settings for the specified zone are applied to the site. For each entry that you add to the list, enter the following information:</p>
+
+<p style="margin-left: 20px">Valuename  A host for an intranet site, or a fully qualified domain name for other sites. The valuename may also includea specificprotocol. For example, if you enter http://www.contoso.comas the valuename, other protocols are not affected.If you enter just www.contoso.com,then all protocolsare affected for that site, including http, https, ftp, and so on. The site may also be expressed as an IP address (e.g., 127.0.0.1) or range (e.g., 127.0.0.1-10). To avoid creating conflicting policies, do not include additional characters after the domain such as trailing slashes or URL path. For example, policy settings for www.contoso.com and www.contoso.com/mail would be treated as the same policy setting by Internet Explorer, and would therefore be in conflict.</p>
+
+<p style="margin-left: 20px">Value - A number indicating the zone with which this site should be associated for security settings. The Internet Explorer zones described above are 1-4.</p>
+
+<p style="margin-left: 20px">If you disable or do not configure this policy, users may choose their own site-to-zone assignments.</p>
+
+<a href="" id="internetexplorer-allowsuggestedsites"></a>**InternetExplorer/AllowSuggestedSites**
+
+<p style="margin-left: 20px">This policy setting controls the Suggested Sites feature, which recommends websites based on the users browsing activity. Suggested Sites reports a users browsing history to Microsoft to suggest sites that the user might want to visit.</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, the user is not prompted to enable Suggested Sites. The users browsing history is sent to Microsoft to produce suggestions.</p>
+
+<p style="margin-left: 20px">If you disable this policy setting, the entry points and functionality associated with this feature are turned off.</p>
+
+<p style="margin-left: 20px">If you do not configure this policy setting, the user can turn on and turn off the Suggested Sites feature.</p>
+
+<a href="" id="internetexplorer-allowtrustedsiteszonetemplate"></a>**InternetExplorer/AllowTrustedSitesZoneTemplate**
+
+<p style="margin-left: 20px">This template policy setting allows you to configure policy settings in this zone consistent with a selected security level, for example, Low, Medium Low, Medium, or High.</p>
+
+<p style="margin-left: 20px">If you enable this template policy setting and select a security level, all values for individual settings in the zone will be overwritten by the standard template defaults.</p>
+
+<p style="margin-left: 20px">If you disable this template policy setting, no security level is configured.</p>
+
+<p style="margin-left: 20px">If you do not configure this template policy setting, no security level is configured.</p>
+
+<p style="margin-left: 20px">Note. Local Machine Zone Lockdown Security and Network Protocol Lockdown operate by comparing the settings in the active URL's zone against those in the Locked-Down equivalent zone. If you select a security level for any zone (including selecting no security), the same change should be made to the Locked-Down equivalent.</p>
+
+<p style="margin-left: 20px">Note. It is recommended to configure template policy settings in one Group Policy object (GPO) and configure any related individual policy settings in a separate GPO. You can then use Group Policy management features (for example, precedence, inheritance, or enforce) to apply individual settings to specific targets.</p>
+
 <a href="" id="internetexplorer-allowslockeddowntrustedsitezonetemplate"></a>**InternetExplorer/AllowsLockedDownTrustedSiteZoneTemplate**
 
 <p style="margin-left: 20px">This template policy setting allows you to configure policy settings in this zone consistent with a selected security level, for example, Low, Medium Low, Medium, or High.</p>
@@ -2547,1176 +2565,6 @@ The Policy configuration service provider enables the enterprise to configure po
 
 <p style="margin-left: 20px">Note. It is recommended to configure template policy settings in one Group Policy object (GPO) and configure any related individual policy settings in a separate GPO. You can then use Group Policy management features (for example, precedence, inheritance, or enforce) to apply individual settings to specific targets.</p>
 
-<a href="" id="internetexplorer-allowsitetozoneassignmentlist"></a>**InternetExplorer/AllowSiteToZoneAssignmentList**
-
-<p style="margin-left: 20px">This policy setting allows you to manage a list of sites that you want to associate with a particular security zone. These zone numbers have associated security settings that apply to all of the sites in the zone.</p>
-
-<p style="margin-left: 20px">Internet Explorer has 4 security zones, numbered 1-4, and these are used by this policy setting to associate sites to zones. They are: (1) Intranet zone, (2) Trusted Sites zone, (3) Internet zone, and (4) Restricted Sites zone. Security settings can be set for each of these zones through other policy settings, and their default settings are: Trusted Sites zone (Low template), Intranet zone (Medium-Low template), Internet zone (Medium template), and Restricted Sites zone (High template). (The Local Machine zone and its locked down equivalent have special security settings that protect your local computer.)</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, you can enter a list of sites and their related zone numbers. The association of a site with a zone will ensure that the security settings for the specified zone are applied to the site. For each entry that you add to the list, enter the following information:</p>
-
-<p style="margin-left: 20px">Valuename  A host for an intranet site, or a fully qualified domain name for other sites. The valuename may also includea specificprotocol. For example, if you enter http://www.contoso.comas the valuename, other protocols are not affected.If you enter just www.contoso.com,then all protocolsare affected for that site, including http, https, ftp, and so on. The site may also be expressed as an IP address (e.g., 127.0.0.1) or range (e.g., 127.0.0.1-10). To avoid creating conflicting policies, do not include additional characters after the domain such as trailing slashes or URL path. For example, policy settings for www.contoso.com and www.contoso.com/mail would be treated as the same policy setting by Internet Explorer, and would therefore be in conflict.</p>
-
-<p style="margin-left: 20px">Value - A number indicating the zone with which this site should be associated for security settings. The Internet Explorer zones described above are 1-4.</p>
-
-<p style="margin-left: 20px">If you disable or do not configure this policy, users may choose their own site-to-zone assignments.</p>
-
-<a href="" id="internetexplorer-allowtrustedsiteszonetemplate"></a>**InternetExplorer/AllowTrustedSitesZoneTemplate**
-
-<p style="margin-left: 20px">This template policy setting allows you to configure policy settings in this zone consistent with a selected security level, for example, Low, Medium Low, Medium, or High.</p>
-
-<p style="margin-left: 20px">If you enable this template policy setting and select a security level, all values for individual settings in the zone will be overwritten by the standard template defaults.</p>
-
-<p style="margin-left: 20px">If you disable this template policy setting, no security level is configured.</p>
-
-<p style="margin-left: 20px">If you do not configure this template policy setting, no security level is configured.</p>
-
-<p style="margin-left: 20px">Note. Local Machine Zone Lockdown Security and Network Protocol Lockdown operate by comparing the settings in the active URL's zone against those in the Locked-Down equivalent zone. If you select a security level for any zone (including selecting no security), the same change should be made to the Locked-Down equivalent.</p>
-
-<p style="margin-left: 20px">Note. It is recommended to configure template policy settings in one Group Policy object (GPO) and configure any related individual policy settings in a separate GPO. You can then use Group Policy management features (for example, precedence, inheritance, or enforce) to apply individual settings to specific targets.</p>
-
-<a href="" id="internetexplorer-internetzoneallowaccesstodatasources"></a>**InternetExplorer/InternetZoneAllowAccessToDataSources**
-
-<p style="margin-left: 20px">This policy setting allows you to manage whether Internet Explorer can access data from another security zone using the Microsoft XML Parser (MSXML) or ActiveX Data Objects (ADO).</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, users can load a page in the zone that uses MSXML or ADO to access data from another site in the zone. If you select Prompt in the drop-down box, users are queried to choose whether to allow a page to be loaded in the zone that uses MSXML or ADO to access data from another site in the zone.</p>
-
-<p style="margin-left: 20px">If you disable this policy setting, users cannot load a page in the zone that uses MSXML or ADO to access data from another site in the zone.</p>
-
-<p style="margin-left: 20px">If you do not configure this policy setting, users cannot load a page in the zone that uses MSXML or ADO to access data from another site in the zone.</p>
-
-<a href="" id="internetexplorer-internetzoneallowfontdownloads"></a>**InternetExplorer/InternetZoneAllowFontDownloads**
-
-<p style="margin-left: 20px">This policy setting allows you to manage whether pages of the zone may download HTML fonts.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, HTML fonts can be downloaded automatically. If you enable this policy setting and Prompt is selected in the drop-down box, users are queried whether to allow HTML fonts to download.</p>
-
-<p style="margin-left: 20px">If you disable this policy setting, HTML fonts are prevented from downloading.</p>
-
-<p style="margin-left: 20px">If you do not configure this policy setting, HTML fonts can be downloaded automatically.</p>
-
-<a href="" id="internetexplorer-internetzoneallowscriptlets"></a>**InternetExplorer/InternetZoneAllowScriptlets**
-
-<p style="margin-left: 20px">This policy setting allows you to manage whether the user can run scriptlets.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, the user can run scriptlets.</p>
-
-<p style="margin-left: 20px">If you disable this policy setting, the user cannot run scriptlets.</p>
-
-<p style="margin-left: 20px">If you do not configure this policy setting, the user can enable or disable scriptlets.</p>
-
-<a href="" id="internetexplorer-internetzoneallowautomaticpromptingforactivexcontrols"></a>**InternetExplorer/InternetZoneAllowAutomaticPromptingForActiveXControls**
-
-<p style="margin-left: 20px">This policy setting manages whether users will be automatically prompted for ActiveX control installations.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, users will receive a prompt when a site instantiates an ActiveX control they do not have installed.</p>
-
-<p style="margin-left: 20px">If you disable this policy setting, ActiveX control installations will be blocked using the Notification bar. Users can click on the Notification bar to allow the ActiveX control prompt.</p>
-
-<p style="margin-left: 20px">If you do not configure this policy setting, ActiveX control installations will be blocked using the Notification bar. Users can click on the Notification bar to allow the ActiveX control prompt.</p>
-
-<a href="" id="internetexplorer-internetzoneallowautomaticpromptingforfiledownloads"></a>**InternetExplorer/InternetZoneAllowAutomaticPromptingForFileDownloads**
-
-<p style="margin-left: 20px">This policy setting determines whether users will be prompted for non user-initiated file downloads. Regardless of this setting, users will receive file download dialogs for user-initiated downloads.</p>
-
-<p style="margin-left: 20px">If you enable this setting, users will receive a file download dialog for automatic download attempts.</p>
-
-<p style="margin-left: 20px">If you disable or do not configure this setting, file downloads that are not user-initiated will be blocked, and users will see the Notification bar instead of the file download dialog. Users can then click the Notification bar to allow the file download prompt.</p>
-
-<a href="" id="internetexplorer-internetzoneinitializeandscriptactivexcontrols"></a>**InternetExplorer/InternetZoneInitializeAndScriptActiveXControls**
-
-<p style="margin-left: 20px">This policy setting allows you to manage ActiveX controls not marked as safe.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, ActiveX controls are run, loaded with parameters, and scripted without setting object safety for untrusted data or scripts. This setting is not recommended, except for secure and administered zones. This setting causes both unsafe and safe controls to be initialized and scripted, ignoring the Script ActiveX controls marked safe for scripting option.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting and select Prompt in the drop-down box, users are queried whether to allow the control to be loaded with parameters or scripted.</p>
-
-<p style="margin-left: 20px">If you disable this policy setting, ActiveX controls that cannot be made safe are not loaded with parameters or scripted.</p>
-
-<p style="margin-left: 20px">If you do not configure this policy setting, ActiveX controls that cannot be made safe are not loaded with parameters or scripted.</p>
-
-<a href="" id="internetexplorer-internetzonenavigatewindowsandframes"></a>**InternetExplorer/InternetZoneNavigateWindowsAndFrames**
-
-<p style="margin-left: 20px">This policy setting allows you to manage the opening of windows and frames and access of applications across different domains.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, users can open windows and frames from othe domains and access applications from other domains. If you select Prompt in the drop-down box, users are queried whether to allow windows and frames to access applications from other domains.</p>
-
-<p style="margin-left: 20px">If you disable this policy setting, users cannot open windows and frames to access applications from different domains.</p>
-
-<p style="margin-left: 20px">If you do not configure this policy setting, users can open windows and frames from othe domains and access applications from other domains.</p>
-
-<a href="" id="internetexplorer-internetzoneallownetframeworkreliantcomponents"></a>**InternetExplorer/InternetZoneAllowNETFrameworkReliantComponents**
-
-<p style="margin-left: 20px">This policy setting allows you to manage whether .NET Framework components that are not signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, Internet Explorer will execute unsigned managed components. If you select Prompt in the drop-down box, Internet Explorer will prompt the user to determine whether to execute unsigned managed components.</p>
-
-<p style="margin-left: 20px">If you disable this policy setting, Internet Explorer will not execute unsigned managed components.</p>
-
-<p style="margin-left: 20px">If you do not configure this policy setting, Internet Explorer will execute unsigned managed components.</p>
-
-<a href="" id="internetexplorer-internetzoneallowsmartscreenie"></a>**InternetExplorer/InternetZoneAllowSmartScreenIE**
-
-<p style="margin-left: 20px">This policy setting controls whether SmartScreen Filter scans pages in this zone for malicious content.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, SmartScreen Filter scans pages in this zone for malicious content.</p>
-
-<p style="margin-left: 20px">If you disable this policy setting, SmartScreen Filter does not scan pages in this zone for malicious content.</p>
-
-<p style="margin-left: 20px">If you do not configure this policy setting, the user can choose whether SmartScreen Filter scans pages in this zone for malicious content.</p>
-
-<p style="margin-left: 20px">Note: In Internet Explorer 7, this policy setting controls whether Phishing Filter scans pages in this zone for malicious content.</p>
-
-<a href="" id="internetexplorer-internetzoneallowuserdatapersistence"></a>**InternetExplorer/InternetZoneAllowUserDataPersistence**
-
-<p style="margin-left: 20px">This policy setting allows you to manage the preservation of information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk. When a user returns to a persisted page, the state of the page can be restored if this policy setting is appropriately configured.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, users can preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.</p>
-
-<p style="margin-left: 20px">If you disable this policy setting, users cannot preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.</p>
-
-<p style="margin-left: 20px">If you do not configure this policy setting, users can preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.</p>
-
-<a href="" id="internetexplorer-internetzoneallowlessprivilegedsites"></a>**InternetExplorer/InternetZoneAllowLessPrivilegedSites**
-
-<p style="margin-left: 20px">This policy setting allows you to manage whether Web sites from less privileged zones, such as Restricted Sites, can navigate into this zone.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, Web sites from less privileged zones can open new windows in, or navigate into, this zone.  The security zone will run without the added layer of security that is provided by the Protection from Zone Elevation security feature. If you select Prompt in the drop-down box, a warning is issued to the user that potentially risky navigation is about to occur.</p>
-
-<p style="margin-left: 20px">If you disable this policy setting, the possibly harmful navigations are prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.</p>
-
-<p style="margin-left: 20px">If you do not configure this policy setting, Web sites from less privileged zones can open new windows in, or navigate into, this zone.</p>
-
-<a href="" id="internetexplorer-intranetzoneallowaccesstodatasources"></a>**InternetExplorer/IntranetZoneAllowAccessToDataSources**
-
-<p style="margin-left: 20px">This policy setting allows you to manage whether Internet Explorer can access data from another security zone using the Microsoft XML Parser (MSXML) or ActiveX Data Objects (ADO).</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, users can load a page in the zone that uses MSXML or ADO to access data from another site in the zone. If you select Prompt in the drop-down box, users are queried to choose whether to allow a page to be loaded in the zone that uses MSXML or ADO to access data from another site in the zone.</p>
-
-<p style="margin-left: 20px">If you disable this policy setting, users cannot load a page in the zone that uses MSXML or ADO to access data from another site in the zone.</p>
-
-<p style="margin-left: 20px">If you do not configure this policy setting, users are queried to choose whether to allow a page to be loaded in the zone that uses MSXML or ADO to access data from another site in the zone.</p>
-
-<a href="" id="internetexplorer-intranetzoneallowfontdownloads"></a>**InternetExplorer/IntranetZoneAllowFontDownloads**
-
-<p style="margin-left: 20px">This policy setting allows you to manage whether pages of the zone may download HTML fonts.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, HTML fonts can be downloaded automatically. If you enable this policy setting and Prompt is selected in the drop-down box, users are queried whether to allow HTML fonts to download.</p>
-
-<p style="margin-left: 20px">If you disable this policy setting, HTML fonts are prevented from downloading.</p>
-
-<p style="margin-left: 20px">If you do not configure this policy setting, HTML fonts can be downloaded automatically.</p>
-
-<a href="" id="internetexplorer-intranetzoneallowscriptlets"></a>**InternetExplorer/IntranetZoneAllowScriptlets**
-
-<p style="margin-left: 20px">This policy setting allows you to manage whether the user can run scriptlets.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, the user can run scriptlets.</p>
-
-<p style="margin-left: 20px">If you disable this policy setting, the user cannot run scriptlets.</p>
-
-<p style="margin-left: 20px">If you do not configure this policy setting, the user can enable or disable scriptlets.</p>
-
-<a href="" id="internetexplorer-intranetzoneallowautomaticpromptingforactivexcontrols"></a>**InternetExplorer/IntranetZoneAllowAutomaticPromptingForActiveXControls**
-
-<p style="margin-left: 20px">This policy setting manages whether users will be automatically prompted for ActiveX control installations.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, users will receive a prompt when a site instantiates an ActiveX control they do not have installed.</p>
-
-<p style="margin-left: 20px">If you disable this policy setting, ActiveX control installations will be blocked using the Notification bar. Users can click on the Notification bar to allow the ActiveX control prompt.</p>
-
-<p style="margin-left: 20px">If you do not configure this policy setting, users will receive a prompt when a site instantiates an ActiveX control they do not have installed.</p>
-
-<a href="" id="internetexplorer-intranetzoneallowautomaticpromptingforfiledownloads"></a>**InternetExplorer/IntranetZoneAllowAutomaticPromptingForFileDownloads**
-
-<p style="margin-left: 20px">This policy setting determines whether users will be prompted for non user-initiated file downloads. Regardless of this setting, users will receive file download dialogs for user-initiated downloads.</p>
-
-<p style="margin-left: 20px">If you enable this setting, users will receive a file download dialog for automatic download attempts.</p>
-
-<p style="margin-left: 20px">If you disable or do not configure this setting, users will receive a file download dialog for automatic download attempts.</p>
-
-<a href="" id="internetexplorer-intranetzoneinitializeandscriptactivexcontrols"></a>**InternetExplorer/IntranetZoneInitializeAndScriptActiveXControls**
-
-<p style="margin-left: 20px">This policy setting allows you to manage ActiveX controls not marked as safe.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, ActiveX controls are run, loaded with parameters, and scripted without setting object safety for untrusted data or scripts. This setting is not recommended, except for secure and administered zones. This setting causes both unsafe and safe controls to be initialized and scripted, ignoring the Script ActiveX controls marked safe for scripting option.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting and select Prompt in the drop-down box, users are queried whether to allow the control to be loaded with parameters or scripted.</p>
-
-<p style="margin-left: 20px">If you disable this policy setting, ActiveX controls that cannot be made safe are not loaded with parameters or scripted.</p>
-
-<p style="margin-left: 20px">If you do not configure this policy setting, ActiveX controls that cannot be made safe are not loaded with parameters or scripted.</p>
-
-<a href="" id="internetexplorer-intranetzonenavigatewindowsandframes"></a>**InternetExplorer/IntranetZoneNavigateWindowsAndFrames**
-
-<p style="margin-left: 20px">This policy setting allows you to manage the opening of windows and frames and access of applications across different domains.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, users can open windows and frames from othe domains and access applications from other domains. If you select Prompt in the drop-down box, users are queried whether to allow windows and frames to access applications from other domains.</p>
-
-<p style="margin-left: 20px">If you disable this policy setting, users cannot open windows and frames to access applications from different domains.</p>
-
-<p style="margin-left: 20px">If you do not configure this policy setting, users can open windows and frames from othe domains and access applications from other domains.</p>
-
-<a href="" id="internetexplorer-intranetzoneallownetframeworkreliantcomponents"></a>**InternetExplorer/IntranetZoneAllowNETFrameworkReliantComponents**
-
-<p style="margin-left: 20px">This policy setting allows you to manage whether .NET Framework components that are not signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, Internet Explorer will execute unsigned managed components. If you select Prompt in the drop-down box, Internet Explorer will prompt the user to determine whether to execute unsigned managed components.</p>
-
-<p style="margin-left: 20px">If you disable this policy setting, Internet Explorer will not execute unsigned managed components.</p>
-
-<p style="margin-left: 20px">If you do not configure this policy setting, Internet Explorer will execute unsigned managed components.</p>
-
-<a href="" id="internetexplorer-intranetzoneallowsmartscreenie"></a>**InternetExplorer/IntranetZoneAllowSmartScreenIE**
-
-<p style="margin-left: 20px">This policy setting controls whether SmartScreen Filter scans pages in this zone for malicious content.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, SmartScreen Filter scans pages in this zone for malicious content.</p>
-
-<p style="margin-left: 20px">If you disable this policy setting, SmartScreen Filter does not scan pages in this zone for malicious content.</p>
-
-<p style="margin-left: 20px">If you do not configure this policy setting, the user can choose whether SmartScreen Filter scans pages in this zone for malicious content.</p>
-
-<p style="margin-left: 20px">Note: In Internet Explorer 7, this policy setting controls whether Phishing Filter scans pages in this zone for malicious content.</p>
-
-<a href="" id="internetexplorer-intranetzoneallowuserdatapersistence"></a>**InternetExplorer/IntranetZoneAllowUserDataPersistence**
-
-<p style="margin-left: 20px">This policy setting allows you to manage the preservation of information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk. When a user returns to a persisted page, the state of the page can be restored if this policy setting is appropriately configured.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, users can preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.</p>
-
-<p style="margin-left: 20px">If you disable this policy setting, users cannot preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.</p>
-
-<p style="margin-left: 20px">If you do not configure this policy setting, users can preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.</p>
-
-<a href="" id="internetexplorer-intranetzoneallowlessprivilegedsites"></a>**InternetExplorer/IntranetZoneAllowLessPrivilegedSites**
-
-<p style="margin-left: 20px">This policy setting allows you to manage whether Web sites from less privileged zones, such as Restricted Sites, can navigate into this zone.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, Web sites from less privileged zones can open new windows in, or navigate into, this zone.  The security zone will run without the added layer of security that is provided by the Protection from Zone Elevation security feature. If you select Prompt in the drop-down box, a warning is issued to the user that potentially risky navigation is about to occur.</p>
-
-<p style="margin-left: 20px">If you disable this policy setting, the possibly harmful navigations are prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.</p>
-
-<p style="margin-left: 20px">If you do not configure this policy setting, Web sites from less privileged zones can open new windows in, or navigate into, this zone.</p>
-
-<a href="" id="internetexplorer-localmachinezoneallowaccesstodatasources"></a>**InternetExplorer/LocalMachineZoneAllowAccessToDataSources**
-
-<p style="margin-left: 20px">This policy setting allows you to manage whether Internet Explorer can access data from another security zone using the Microsoft XML Parser (MSXML) or ActiveX Data Objects (ADO).</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, users can load a page in the zone that uses MSXML or ADO to access data from another site in the zone. If you select Prompt in the drop-down box, users are queried to choose whether to allow a page to be loaded in the zone that uses MSXML or ADO to access data from another site in the zone.</p>
-
-<p style="margin-left: 20px">If you disable this policy setting, users cannot load a page in the zone that uses MSXML or ADO to access data from another site in the zone.</p>
-
-<p style="margin-left: 20px">If you do not configure this policy setting, users can load a page in the zone that uses MSXML or ADO to access data from another site in the zone.</p>
-
-<a href="" id="internetexplorer-localmachinezoneallowfontdownloads"></a>**InternetExplorer/LocalMachineZoneAllowFontDownloads**
-
-<p style="margin-left: 20px">This policy setting allows you to manage whether pages of the zone may download HTML fonts.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, HTML fonts can be downloaded automatically. If you enable this policy setting and Prompt is selected in the drop-down box, users are queried whether to allow HTML fonts to download.</p>
-
-<p style="margin-left: 20px">If you disable this policy setting, HTML fonts are prevented from downloading.</p>
-
-<p style="margin-left: 20px">If you do not configure this policy setting, HTML fonts can be downloaded automatically.</p>
-
-<a href="" id="internetexplorer-localmachinezoneallowscriptlets"></a>**InternetExplorer/LocalMachineZoneAllowScriptlets**
-
-<p style="margin-left: 20px">This policy setting allows you to manage whether the user can run scriptlets.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, the user can run scriptlets.</p>
-
-<p style="margin-left: 20px">If you disable this policy setting, the user cannot run scriptlets.</p>
-
-<p style="margin-left: 20px">If you do not configure this policy setting, the user can enable or disable scriptlets.</p>
-
-<a href="" id="internetexplorer-localmachinezoneallowautomaticpromptingforactivexcontrols"></a>**InternetExplorer/LocalMachineZoneAllowAutomaticPromptingForActiveXControls**
-
-<p style="margin-left: 20px">This policy setting manages whether users will be automatically prompted for ActiveX control installations.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, users will receive a prompt when a site instantiates an ActiveX control they do not have installed.</p>
-
-<p style="margin-left: 20px">If you disable this policy setting, ActiveX control installations will be blocked using the Notification bar. Users can click on the Notification bar to allow the ActiveX control prompt.</p>
-
-<p style="margin-left: 20px">If you do not configure this policy setting, users will receive a prompt when a site instantiates an ActiveX control they do not have installed.</p>
-
-<a href="" id="internetexplorer-localmachinezoneallowautomaticpromptingforfiledownloads"></a>**InternetExplorer/LocalMachineZoneAllowAutomaticPromptingForFileDownloads**
-
-<p style="margin-left: 20px">This policy setting determines whether users will be prompted for non user-initiated file downloads. Regardless of this setting, users will receive file download dialogs for user-initiated downloads.</p>
-
-<p style="margin-left: 20px">If you enable this setting, users will receive a file download dialog for automatic download attempts.</p>
-
-<p style="margin-left: 20px">If you disable or do not configure this setting, users will receive a file download dialog for automatic download attempts.</p>
-
-<a href="" id="internetexplorer-localmachinezoneinitializeandscriptactivexcontrols"></a>**InternetExplorer/LocalMachineZoneInitializeAndScriptActiveXControls**
-
-<p style="margin-left: 20px">This policy setting allows you to manage ActiveX controls not marked as safe.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, ActiveX controls are run, loaded with parameters, and scripted without setting object safety for untrusted data or scripts. This setting is not recommended, except for secure and administered zones. This setting causes both unsafe and safe controls to be initialized and scripted, ignoring the Script ActiveX controls marked safe for scripting option.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting and select Prompt in the drop-down box, users are queried whether to allow the control to be loaded with parameters or scripted.</p>
-
-<p style="margin-left: 20px">If you disable this policy setting, ActiveX controls that cannot be made safe are not loaded with parameters or scripted.</p>
-
-<p style="margin-left: 20px">If you do not configure this policy setting, users are queried whether to allow the control to be loaded with parameters or scripted.</p>
-
-<a href="" id="internetexplorer-localmachinezonenavigatewindowsandframes"></a>**InternetExplorer/LocalMachineZoneNavigateWindowsAndFrames**
-
-<p style="margin-left: 20px">This policy setting allows you to manage the opening of windows and frames and access of applications across different domains.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, users can open windows and frames from othe domains and access applications from other domains. If you select Prompt in the drop-down box, users are queried whether to allow windows and frames to access applications from other domains.</p>
-
-<p style="margin-left: 20px">If you disable this policy setting, users cannot open windows and frames to access applications from different domains.</p>
-
-<p style="margin-left: 20px">If you do not configure this policy setting, users can open windows and frames from othe domains and access applications from other domains.</p>
-
-<a href="" id="internetexplorer-localmachinezoneallownetframeworkreliantcomponents"></a>**InternetExplorer/LocalMachineZoneAllowNETFrameworkReliantComponents**
-
-<p style="margin-left: 20px">This policy setting allows you to manage whether .NET Framework components that are not signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, Internet Explorer will execute unsigned managed components. If you select Prompt in the drop-down box, Internet Explorer will prompt the user to determine whether to execute unsigned managed components.</p>
-
-<p style="margin-left: 20px">If you disable this policy setting, Internet Explorer will not execute unsigned managed components.</p>
-
-<p style="margin-left: 20px">If you do not configure this policy setting, Internet Explorer will not execute unsigned managed components.</p>
-
-<a href="" id="internetexplorer-localmachinezoneallowsmartscreenie"></a>**InternetExplorer/LocalMachineZoneAllowSmartScreenIE**
-
-<p style="margin-left: 20px">This policy setting controls whether SmartScreen Filter scans pages in this zone for malicious content.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, SmartScreen Filter scans pages in this zone for malicious content.</p>
-
-<p style="margin-left: 20px">If you disable this policy setting, SmartScreen Filter does not scan pages in this zone for malicious content.</p>
-
-<p style="margin-left: 20px">If you do not configure this policy setting, the user can choose whether SmartScreen Filter scans pages in this zone for malicious content.</p>
-
-<p style="margin-left: 20px">Note: In Internet Explorer 7, this policy setting controls whether Phishing Filter scans pages in this zone for malicious content.</p>
-
-<a href="" id="internetexplorer-localmachinezoneallowuserdatapersistence"></a>**InternetExplorer/LocalMachineZoneAllowUserDataPersistence**
-
-<p style="margin-left: 20px">This policy setting allows you to manage the preservation of information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk. When a user returns to a persisted page, the state of the page can be restored if this policy setting is appropriately configured.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, users can preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.</p>
-
-<p style="margin-left: 20px">If you disable this policy setting, users cannot preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.</p>
-
-<p style="margin-left: 20px">If you do not configure this policy setting, users can preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.</p>
-
-<a href="" id="internetexplorer-localmachinezoneallowlessprivilegedsites"></a>**InternetExplorer/LocalMachineZoneAllowLessPrivilegedSites**
-
-<p style="margin-left: 20px">This policy setting allows you to manage whether Web sites from less privileged zones, such as Internet sites, can navigate into this zone.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, Web sites from less privileged zones can open new windows in, or navigate into, this zone. The security zone will run without the added layer of security that is provided by the Protection from Zone Elevation security feature. If you select Prompt in the drop-down box, a warning is issued to the user that potentially risky navigation is about to occur.</p>
-
-<p style="margin-left: 20px">If you disable this policy setting, the possibly harmful navigations are prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.</p>
-
-<p style="margin-left: 20px">If you do not configure this policy setting, the possibly harmful navigations are prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.</p>
-
-<a href="" id="internetexplorer-lockeddowninternetzoneallowaccesstodatasources"></a>**InternetExplorer/LockedDownInternetZoneAllowAccessToDataSources**
-
-<p style="margin-left: 20px">This policy setting allows you to manage whether Internet Explorer can access data from another security zone using the Microsoft XML Parser (MSXML) or ActiveX Data Objects (ADO).</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, users can load a page in the zone that uses MSXML or ADO to access data from another site in the zone. If you select Prompt in the drop-down box, users are queried to choose whether to allow a page to be loaded in the zone that uses MSXML or ADO to access data from another site in the zone.</p>
-
-<p style="margin-left: 20px">If you disable this policy setting, users cannot load a page in the zone that uses MSXML or ADO to access data from another site in the zone.</p>
-
-<p style="margin-left: 20px">If you do not configure this policy setting, users cannot load a page in the zone that uses MSXML or ADO to access data from another site in the zone.</p>
-
-<a href="" id="internetexplorer-lockeddowninternetzoneallowfontdownloads"></a>**InternetExplorer/LockedDownInternetZoneAllowFontDownloads**
-
-<p style="margin-left: 20px">This policy setting allows you to manage whether pages of the zone may download HTML fonts.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, HTML fonts can be downloaded automatically. If you enable this policy setting and Prompt is selected in the drop-down box, users are queried whether to allow HTML fonts to download.</p>
-
-<p style="margin-left: 20px">If you disable this policy setting, HTML fonts are prevented from downloading.</p>
-
-<p style="margin-left: 20px">If you do not configure this policy setting, HTML fonts can be downloaded automatically.</p>
-
-<a href="" id="internetexplorer-lockeddowninternetzoneallowscriptlets"></a>**InternetExplorer/LockedDownInternetZoneAllowScriptlets**
-
-<p style="margin-left: 20px">This policy setting allows you to manage whether the user can run scriptlets.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, the user can run scriptlets.</p>
-
-<p style="margin-left: 20px">If you disable this policy setting, the user cannot run scriptlets.</p>
-
-<p style="margin-left: 20px">If you do not configure this policy setting, the user can enable or disable scriptlets.</p>
-
-<a href="" id="internetexplorer-lockeddowninternetzoneallowautomaticpromptingforactivexcontrols"></a>**InternetExplorer/LockedDownInternetZoneAllowAutomaticPromptingForActiveXControls**
-
-<p style="margin-left: 20px">This policy setting manages whether users will be automatically prompted for ActiveX control installations.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, users will receive a prompt when a site instantiates an ActiveX control they do not have installed.</p>
-
-<p style="margin-left: 20px">If you disable this policy setting, ActiveX control installations will be blocked using the Notification bar. Users can click on the Notification bar to allow the ActiveX control prompt.</p>
-
-<p style="margin-left: 20px">If you do not configure this policy setting, ActiveX control installations will be blocked using the Notification bar. Users can click on the Notification bar to allow the ActiveX control prompt.</p>
-
-<a href="" id="internetexplorer-lockeddowninternetzoneallowautomaticpromptingforfiledownloads"></a>**InternetExplorer/LockedDownInternetZoneAllowAutomaticPromptingForFileDownloads**
-
-<p style="margin-left: 20px">This policy setting determines whether users will be prompted for non user-initiated file downloads. Regardless of this setting, users will receive file download dialogs for user-initiated downloads.</p>
-
-<p style="margin-left: 20px">If you enable this setting, users will receive a file download dialog for automatic download attempts.</p>
-
-<p style="margin-left: 20px">If you disable or do not configure this setting, file downloads that are not user-initiated will be blocked, and users will see the Notification bar instead of the file download dialog. Users can then click the Notification bar to allow the file download prompt.</p>
-
-<a href="" id="internetexplorer-lockeddowninternetzoneinitializeandscriptactivexcontrols"></a>**InternetExplorer/LockedDownInternetZoneInitializeAndScriptActiveXControls**
-
-<p style="margin-left: 20px">This policy setting allows you to manage ActiveX controls not marked as safe.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, ActiveX controls are run, loaded with parameters, and scripted without setting object safety for untrusted data or scripts. This setting is not recommended, except for secure and administered zones. This setting causes both unsafe and safe controls to be initialized and scripted, ignoring the Script ActiveX controls marked safe for scripting option.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting and select Prompt in the drop-down box, users are queried whether to allow the control to be loaded with parameters or scripted.</p>
-
-<p style="margin-left: 20px">If you disable this policy setting, ActiveX controls that cannot be made safe are not loaded with parameters or scripted.</p>
-
-<p style="margin-left: 20px">If you do not configure this policy setting, ActiveX controls that cannot be made safe are not loaded with parameters or scripted.</p>
-
-<a href="" id="internetexplorer-lockeddowninternetzonenavigatewindowsandframes"></a>**InternetExplorer/LockedDownInternetZoneNavigateWindowsAndFrames**
-
-<p style="margin-left: 20px">This policy setting allows you to manage the opening of windows and frames and access of applications across different domains.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, users can open windows and frames from othe domains and access applications from other domains. If you select Prompt in the drop-down box, users are queried whether to allow windows and frames to access applications from other domains.</p>
-
-<p style="margin-left: 20px">If you disable this policy setting, users cannot open windows and frames to access applications from different domains.</p>
-
-<p style="margin-left: 20px">If you do not configure this policy setting, users can open windows and frames from othe domains and access applications from other domains.</p>
-
-<a href="" id="internetexplorer-lockeddowninternetzoneallownetframeworkreliantcomponents"></a>**InternetExplorer/LockedDownInternetZoneAllowNETFrameworkReliantComponents**
-
-<p style="margin-left: 20px">This policy setting allows you to manage whether .NET Framework components that are not signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, Internet Explorer will execute unsigned managed components. If you select Prompt in the drop-down box, Internet Explorer will prompt the user to determine whether to execute unsigned managed components.</p>
-
-<p style="margin-left: 20px">If you disable this policy setting, Internet Explorer will not execute unsigned managed components.</p>
-
-<p style="margin-left: 20px">If you do not configure this policy setting, Internet Explorer will not execute unsigned managed components.</p>
-
-<a href="" id="internetexplorer-lockeddowninternetzoneallowsmartscreenie"></a>**InternetExplorer/LockedDownInternetZoneAllowSmartScreenIE**
-
-<p style="margin-left: 20px">This policy setting controls whether SmartScreen Filter scans pages in this zone for malicious content.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, SmartScreen Filter scans pages in this zone for malicious content.</p>
-
-<p style="margin-left: 20px">If you disable this policy setting, SmartScreen Filter does not scan pages in this zone for malicious content.</p>
-
-<p style="margin-left: 20px">If you do not configure this policy setting, the user can choose whether SmartScreen Filter scans pages in this zone for malicious content.</p>
-
-<p style="margin-left: 20px">Note: In Internet Explorer 7, this policy setting controls whether Phishing Filter scans pages in this zone for malicious content.</p>
-
-<a href="" id="internetexplorer-lockeddowninternetzoneallowuserdatapersistence"></a>**InternetExplorer/LockedDownInternetZoneAllowUserDataPersistence**
-
-<p style="margin-left: 20px">This policy setting allows you to manage the preservation of information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk. When a user returns to a persisted page, the state of the page can be restored if this policy setting is appropriately configured.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, users can preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.</p>
-
-<p style="margin-left: 20px">If you disable this policy setting, users cannot preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.</p>
-
-<p style="margin-left: 20px">If you do not configure this policy setting, users can preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.</p>
-
-<a href="" id="internetexplorer-lockeddowninternetzoneallowlessprivilegedsites"></a>**InternetExplorer/LockedDownInternetZoneAllowLessPrivilegedSites**
-
-<p style="margin-left: 20px">This policy setting allows you to manage whether Web sites from less privileged zones, such as Internet sites, can navigate into this zone.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, Web sites from less privileged zones can open new windows in, or navigate into, this zone. The security zone will run without the added layer of security that is provided by the Protection from Zone Elevation security feature. If you select Prompt in the drop-down box, a warning is issued to the user that potentially risky navigation is about to occur.</p>
-
-<p style="margin-left: 20px">If you disable this policy setting, the possibly harmful navigations are prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.</p>
-
-<p style="margin-left: 20px">If you do not configure this policy setting, the possibly harmful navigations are prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.</p>
-
-<a href="" id="internetexplorer-lockeddownintranetzoneallowaccesstodatasources"></a>**InternetExplorer/LockedDownIntranetZoneAllowAccessToDataSources**
-
-<p style="margin-left: 20px">This policy setting allows you to manage whether Internet Explorer can access data from another security zone using the Microsoft XML Parser (MSXML) or ActiveX Data Objects (ADO).</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, users can load a page in the zone that uses MSXML or ADO to access data from another site in the zone. If you select Prompt in the drop-down box, users are queried to choose whether to allow a page to be loaded in the zone that uses MSXML or ADO to access data from another site in the zone.</p>
-
-<p style="margin-left: 20px">If you disable this policy setting, users cannot load a page in the zone that uses MSXML or ADO to access data from another site in the zone.</p>
-
-<p style="margin-left: 20px">If you do not configure this policy setting, users are queried to choose whether to allow a page to be loaded in the zone that uses MSXML or ADO to access data from another site in the zone.</p>
-
-<a href="" id="internetexplorer-lockeddownintranetzoneallowfontdownloads"></a>**InternetExplorer/LockedDownIntranetZoneAllowFontDownloads**
-
-<p style="margin-left: 20px">This policy setting allows you to manage whether pages of the zone may download HTML fonts.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, HTML fonts can be downloaded automatically. If you enable this policy setting and Prompt is selected in the drop-down box, users are queried whether to allow HTML fonts to download.</p>
-
-<p style="margin-left: 20px">If you disable this policy setting, HTML fonts are prevented from downloading.</p>
-
-<p style="margin-left: 20px">If you do not configure this policy setting, HTML fonts can be downloaded automatically.</p>
-
-<a href="" id="internetexplorer-lockeddownintranetzoneallowscriptlets"></a>**InternetExplorer/LockedDownIntranetZoneAllowScriptlets**
-
-<p style="margin-left: 20px">This policy setting allows you to manage whether the user can run scriptlets.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, the user can run scriptlets.</p>
-
-<p style="margin-left: 20px">If you disable this policy setting, the user cannot run scriptlets.</p>
-
-<p style="margin-left: 20px">If you do not configure this policy setting, the user can enable or disable scriptlets.</p>
-
-<a href="" id="internetexplorer-lockeddownintranetzoneallowautomaticpromptingforactivexcontrols"></a>**InternetExplorer/LockedDownIntranetZoneAllowAutomaticPromptingForActiveXControls**
-
-<p style="margin-left: 20px">This policy setting manages whether users will be automatically prompted for ActiveX control installations.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, users will receive a prompt when a site instantiates an ActiveX control they do not have installed.</p>
-
-<p style="margin-left: 20px">If you disable this policy setting, ActiveX control installations will be blocked using the Notification bar. Users can click on the Notification bar to allow the ActiveX control prompt.</p>
-
-<p style="margin-left: 20px">If you do not configure this policy setting, ActiveX control installations will be blocked using the Notification bar. Users can click on the Notification bar to allow the ActiveX control prompt.</p>
-
-<a href="" id="internetexplorer-lockeddownintranetzoneallowautomaticpromptingforfiledownloads"></a>**InternetExplorer/LockedDownIntranetZoneAllowAutomaticPromptingForFileDownloads**
-
-<p style="margin-left: 20px">This policy setting determines whether users will be prompted for non user-initiated file downloads. Regardless of this setting, users will receive file download dialogs for user-initiated downloads.</p>
-
-<p style="margin-left: 20px">If you enable this setting, users will receive a file download dialog for automatic download attempts.</p>
-
-<p style="margin-left: 20px">If you disable or do not configure this setting, file downloads that are not user-initiated will be blocked, and users will see the Notification bar instead of the file download dialog. Users can then click the Notification bar to allow the file download prompt.</p>
-
-<a href="" id="internetexplorer-lockeddownintranetzoneinitializeandscriptactivexcontrols"></a>**InternetExplorer/LockedDownIntranetZoneInitializeAndScriptActiveXControls**
-
-<p style="margin-left: 20px">This policy setting allows you to manage ActiveX controls not marked as safe.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, ActiveX controls are run, loaded with parameters, and scripted without setting object safety for untrusted data or scripts. This setting is not recommended, except for secure and administered zones. This setting causes both unsafe and safe controls to be initialized and scripted, ignoring the Script ActiveX controls marked safe for scripting option.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting and select Prompt in the drop-down box, users are queried whether to allow the control to be loaded with parameters or scripted.</p>
-
-<p style="margin-left: 20px">If you disable this policy setting, ActiveX controls that cannot be made safe are not loaded with parameters or scripted.</p>
-
-<p style="margin-left: 20px">If you do not configure this policy setting, ActiveX controls that cannot be made safe are not loaded with parameters or scripted.</p>
-
-<a href="" id="internetexplorer-lockeddownintranetzonenavigatewindowsandframes"></a>**InternetExplorer/LockedDownIntranetZoneNavigateWindowsAndFrames**
-
-<p style="margin-left: 20px">This policy setting allows you to manage the opening of windows and frames and access of applications across different domains.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, users can open windows and frames from othe domains and access applications from other domains. If you select Prompt in the drop-down box, users are queried whether to allow windows and frames to access applications from other domains.</p>
-
-<p style="margin-left: 20px">If you disable this policy setting, users cannot open windows and frames to access applications from different domains.</p>
-
-<p style="margin-left: 20px">If you do not configure this policy setting, users can open windows and frames from othe domains and access applications from other domains.</p>
-
-<a href="" id="internetexplorer-lockeddownintranetzoneallownetframeworkreliantcomponents"></a>**InternetExplorer/LockedDownIntranetZoneAllowNETFrameworkReliantComponents**
-
-<p style="margin-left: 20px">This policy setting allows you to manage whether .NET Framework components that are not signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, Internet Explorer will execute unsigned managed components. If you select Prompt in the drop-down box, Internet Explorer will prompt the user to determine whether to execute unsigned managed components.</p>
-
-<p style="margin-left: 20px">If you disable this policy setting, Internet Explorer will not execute unsigned managed components.</p>
-
-<p style="margin-left: 20px">If you do not configure this policy setting, Internet Explorer will not execute unsigned managed components.</p>
-
-<a href="" id="internetexplorer-lockeddownintranetzoneallowsmartscreenie"></a>**InternetExplorer/LockedDownIntranetZoneAllowSmartScreenIE**
-
-<p style="margin-left: 20px">This policy setting controls whether SmartScreen Filter scans pages in this zone for malicious content.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, SmartScreen Filter scans pages in this zone for malicious content.</p>
-
-<p style="margin-left: 20px">If you disable this policy setting, SmartScreen Filter does not scan pages in this zone for malicious content.</p>
-
-<p style="margin-left: 20px">If you do not configure this policy setting, the user can choose whether SmartScreen Filter scans pages in this zone for malicious content.</p>
-
-<p style="margin-left: 20px">Note: In Internet Explorer 7, this policy setting controls whether Phishing Filter scans pages in this zone for malicious content.</p>
-
-<a href="" id="internetexplorer-lockeddownintranetzoneallowuserdatapersistence"></a>**InternetExplorer/LockedDownIntranetZoneAllowUserDataPersistence**
-
-<p style="margin-left: 20px">This policy setting allows you to manage the preservation of information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk. When a user returns to a persisted page, the state of the page can be restored if this policy setting is appropriately configured.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, users can preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.</p>
-
-<p style="margin-left: 20px">If you disable this policy setting, users cannot preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.</p>
-
-<p style="margin-left: 20px">If you do not configure this policy setting, users can preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.</p>
-
-<a href="" id="internetexplorer-lockeddownintranetzoneallowlessprivilegedsites"></a>**InternetExplorer/LockedDownIntranetZoneAllowLessPrivilegedSites**
-
-<p style="margin-left: 20px">This policy setting allows you to manage whether Web sites from less privileged zones, such as Internet sites, can navigate into this zone.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, Web sites from less privileged zones can open new windows in, or navigate into, this zone. The security zone will run without the added layer of security that is provided by the Protection from Zone Elevation security feature. If you select Prompt in the drop-down box, a warning is issued to the user that potentially risky navigation is about to occur.</p>
-
-<p style="margin-left: 20px">If you disable this policy setting, the possibly harmful navigations are prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.</p>
-
-<p style="margin-left: 20px">If you do not configure this policy setting, the possibly harmful navigations are prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.</p>
-
-<a href="" id="internetexplorer-lockeddownlocalmachinezoneallowaccesstodatasources"></a>**InternetExplorer/LockedDownLocalMachineZoneAllowAccessToDataSources**
-
-<p style="margin-left: 20px">This policy setting allows you to manage whether Internet Explorer can access data from another security zone using the Microsoft XML Parser (MSXML) or ActiveX Data Objects (ADO).</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, users can load a page in the zone that uses MSXML or ADO to access data from another site in the zone. If you select Prompt in the drop-down box, users are queried to choose whether to allow a page to be loaded in the zone that uses MSXML or ADO to access data from another site in the zone.</p>
-
-<p style="margin-left: 20px">If you disable this policy setting, users cannot load a page in the zone that uses MSXML or ADO to access data from another site in the zone.</p>
-
-<p style="margin-left: 20px">If you do not configure this policy setting, users can load a page in the zone that uses MSXML or ADO to access data from another site in the zone.</p>
-
-<a href="" id="internetexplorer-lockeddownlocalmachinezoneallowfontdownloads"></a>**InternetExplorer/LockedDownLocalMachineZoneAllowFontDownloads**
-
-<p style="margin-left: 20px">This policy setting allows you to manage whether pages of the zone may download HTML fonts.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, HTML fonts can be downloaded automatically. If you enable this policy setting and Prompt is selected in the drop-down box, users are queried whether to allow HTML fonts to download.</p>
-
-<p style="margin-left: 20px">If you disable this policy setting, HTML fonts are prevented from downloading.</p>
-
-<p style="margin-left: 20px">If you do not configure this policy setting, HTML fonts can be downloaded automatically.</p>
-
-<a href="" id="internetexplorer-lockeddownlocalmachinezoneallowscriptlets"></a>**InternetExplorer/LockedDownLocalMachineZoneAllowScriptlets**
-
-<p style="margin-left: 20px">This policy setting allows you to manage whether the user can run scriptlets.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, the user can run scriptlets.</p>
-
-<p style="margin-left: 20px">If you disable this policy setting, the user cannot run scriptlets.</p>
-
-<p style="margin-left: 20px">If you do not configure this policy setting, the user can enable or disable scriptlets.</p>
-
-<a href="" id="internetexplorer-lockeddownlocalmachinezoneallowautomaticpromptingforactivexcontrols"></a>**InternetExplorer/LockedDownLocalMachineZoneAllowAutomaticPromptingForActiveXControls**
-
-<p style="margin-left: 20px">This policy setting manages whether users will be automatically prompted for ActiveX control installations.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, users will receive a prompt when a site instantiates an ActiveX control they do not have installed.</p>
-
-<p style="margin-left: 20px">If you disable this policy setting, ActiveX control installations will be blocked using the Notification bar. Users can click on the Notification bar to allow the ActiveX control prompt.</p>
-
-<p style="margin-left: 20px">If you do not configure this policy setting, ActiveX control installations will be blocked using the Notification bar. Users can click on the Notification bar to allow the ActiveX control prompt.</p>
-
-<a href="" id="internetexplorer-lockeddownlocalmachinezoneallowautomaticpromptingforfiledownloads"></a>**InternetExplorer/LockedDownLocalMachineZoneAllowAutomaticPromptingForFileDownloads**
-
-<p style="margin-left: 20px">This policy setting determines whether users will be prompted for non user-initiated file downloads. Regardless of this setting, users will receive file download dialogs for user-initiated downloads.</p>
-
-<p style="margin-left: 20px">If you enable this setting, users will receive a file download dialog for automatic download attempts.</p>
-
-<p style="margin-left: 20px">If you disable or do not configure this setting, file downloads that are not user-initiated will be blocked, and users will see the Notification bar instead of the file download dialog. Users can then click the Notification bar to allow the file download prompt.</p>
-
-<a href="" id="internetexplorer-lockeddownlocalmachinezoneinitializeandscriptactivexcontrols"></a>**InternetExplorer/LockedDownLocalMachineZoneInitializeAndScriptActiveXControls**
-
-<p style="margin-left: 20px">This policy setting allows you to manage ActiveX controls not marked as safe.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, ActiveX controls are run, loaded with parameters, and scripted without setting object safety for untrusted data or scripts. This setting is not recommended, except for secure and administered zones. This setting causes both unsafe and safe controls to be initialized and scripted, ignoring the Script ActiveX controls marked safe for scripting option.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting and select Prompt in the drop-down box, users are queried whether to allow the control to be loaded with parameters or scripted.</p>
-
-<p style="margin-left: 20px">If you disable this policy setting, ActiveX controls that cannot be made safe are not loaded with parameters or scripted.</p>
-
-<p style="margin-left: 20px">If you do not configure this policy setting, ActiveX controls that cannot be made safe are not loaded with parameters or scripted.</p>
-
-<a href="" id="internetexplorer-lockeddownlocalmachinezonenavigatewindowsandframes"></a>**InternetExplorer/LockedDownLocalMachineZoneNavigateWindowsAndFrames**
-
-<p style="margin-left: 20px">This policy setting allows you to manage the opening of windows and frames and access of applications across different domains.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, users can open windows and frames from othe domains and access applications from other domains. If you select Prompt in the drop-down box, users are queried whether to allow windows and frames to access applications from other domains.</p>
-
-<p style="margin-left: 20px">If you disable this policy setting, users cannot open windows and frames to access applications from different domains.</p>
-
-<p style="margin-left: 20px">If you do not configure this policy setting, users can open windows and frames from othe domains and access applications from other domains.</p>
-
-<a href="" id="internetexplorer-lockeddownlocalmachinezoneallownetframeworkreliantcomponents"></a>**InternetExplorer/LockedDownLocalMachineZoneAllowNETFrameworkReliantComponents**
-
-<p style="margin-left: 20px">This policy setting allows you to manage whether .NET Framework components that are not signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, Internet Explorer will execute unsigned managed components. If you select Prompt in the drop-down box, Internet Explorer will prompt the user to determine whether to execute unsigned managed components.</p>
-
-<p style="margin-left: 20px">If you disable this policy setting, Internet Explorer will not execute unsigned managed components.</p>
-
-<p style="margin-left: 20px">If you do not configure this policy setting, Internet Explorer will not execute unsigned managed components.</p>
-
-<a href="" id="internetexplorer-lockeddownlocalmachinezoneallowsmartscreenie"></a>**InternetExplorer/LockedDownLocalMachineZoneAllowSmartScreenIE**
-
-<p style="margin-left: 20px">This policy setting controls whether SmartScreen Filter scans pages in this zone for malicious content.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, SmartScreen Filter scans pages in this zone for malicious content.</p>
-
-<p style="margin-left: 20px">If you disable this policy setting, SmartScreen Filter does not scan pages in this zone for malicious content.</p>
-
-<p style="margin-left: 20px">If you do not configure this policy setting, the user can choose whether SmartScreen Filter scans pages in this zone for malicious content.</p>
-
-<p style="margin-left: 20px">Note: In Internet Explorer 7, this policy setting controls whether Phishing Filter scans pages in this zone for malicious content.</p>
-
-<a href="" id="internetexplorer-lockeddownlocalmachinezoneallowuserdatapersistence"></a>**InternetExplorer/LockedDownLocalMachineZoneAllowUserDataPersistence**
-
-<p style="margin-left: 20px">This policy setting allows you to manage the preservation of information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk. When a user returns to a persisted page, the state of the page can be restored if this policy setting is appropriately configured.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, users can preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.</p>
-
-<p style="margin-left: 20px">If you disable this policy setting, users cannot preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.</p>
-
-<p style="margin-left: 20px">If you do not configure this policy setting, users can preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.</p>
-
-<a href="" id="internetexplorer-lockeddownlocalmachinezoneallowlessprivilegedsites"></a>**InternetExplorer/LockedDownLocalMachineZoneAllowLessPrivilegedSites**
-
-<p style="margin-left: 20px">This policy setting allows you to manage whether Web sites from less privileged zones, such as Internet sites, can navigate into this zone.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, Web sites from less privileged zones can open new windows in, or navigate into, this zone. The security zone will run without the added layer of security that is provided by the Protection from Zone Elevation security feature. If you select Prompt in the drop-down box, a warning is issued to the user that potentially risky navigation is about to occur.</p>
-
-<p style="margin-left: 20px">If you disable this policy setting, the possibly harmful navigations are prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.</p>
-
-<p style="margin-left: 20px">If you do not configure this policy setting, the possibly harmful navigations are prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.</p>
-
-<a href="" id="internetexplorer-lockeddownrestrictedsiteszoneallowaccesstodatasources"></a>**InternetExplorer/LockedDownRestrictedSitesZoneAllowAccessToDataSources**
-
-<p style="margin-left: 20px">This policy setting allows you to manage whether Internet Explorer can access data from another security zone using the Microsoft XML Parser (MSXML) or ActiveX Data Objects (ADO).</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, users can load a page in the zone that uses MSXML or ADO to access data from another site in the zone. If you select Prompt in the drop-down box, users are queried to choose whether to allow a page to be loaded in the zone that uses MSXML or ADO to access data from another site in the zone.</p>
-
-<p style="margin-left: 20px">If you disable this policy setting, users cannot load a page in the zone that uses MSXML or ADO to access data from another site in the zone.</p>
-
-<p style="margin-left: 20px">If you do not configure this policy setting, users cannot load a page in the zone that uses MSXML or ADO to access data from another site in the zone.</p>
-
-<a href="" id="internetexplorer-lockeddownrestrictedsiteszoneallowfontdownloads"></a>**InternetExplorer/LockedDownRestrictedSitesZoneAllowFontDownloads**
-
-<p style="margin-left: 20px">This policy setting allows you to manage whether pages of the zone may download HTML fonts.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, HTML fonts can be downloaded automatically. If you enable this policy setting and Prompt is selected in the drop-down box, users are queried whether to allow HTML fonts to download.</p>
-
-<p style="margin-left: 20px">If you disable this policy setting, HTML fonts are prevented from downloading.</p>
-
-<p style="margin-left: 20px">If you do not configure this policy setting, users are queried whether to allow HTML fonts to download.</p>
-
-<a href="" id="internetexplorer-lockeddownrestrictedsiteszoneallowscriptlets"></a>**InternetExplorer/LockedDownRestrictedSitesZoneAllowScriptlets**
-
-<p style="margin-left: 20px">This policy setting allows you to manage whether the user can run scriptlets.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, the user can run scriptlets.</p>
-
-<p style="margin-left: 20px">If you disable this policy setting, the user cannot run scriptlets.</p>
-
-<p style="margin-left: 20px">If you do not configure this policy setting, the user can enable or disable scriptlets.</p>
-
-<a href="" id="internetexplorer-lockeddownrestrictedsiteszoneallowautomaticpromptingforactivexcontrols"></a>**InternetExplorer/LockedDownRestrictedSitesZoneAllowAutomaticPromptingForActiveXControls**
-
-<p style="margin-left: 20px">This policy setting manages whether users will be automatically prompted for ActiveX control installations.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, users will receive a prompt when a site instantiates an ActiveX control they do not have installed.</p>
-
-<p style="margin-left: 20px">If you disable this policy setting, ActiveX control installations will be blocked using the Notification bar. Users can click on the Notification bar to allow the ActiveX control prompt.</p>
-
-<p style="margin-left: 20px">If you do not configure this policy setting, ActiveX control installations will be blocked using the Notification bar. Users can click on the Notification bar to allow the ActiveX control prompt.</p>
-
-<a href="" id="internetexplorer-lockeddownrestrictedsiteszoneallowautomaticpromptingforfiledownloads"></a>**InternetExplorer/LockedDownRestrictedSitesZoneAllowAutomaticPromptingForFileDownloads**
-
-<p style="margin-left: 20px">This policy setting determines whether users will be prompted for non user-initiated file downloads. Regardless of this setting, users will receive file download dialogs for user-initiated downloads.</p>
-
-<p style="margin-left: 20px">If you enable this setting, users will receive a file download dialog for automatic download attempts.</p>
-
-<p style="margin-left: 20px">If you disable or do not configure this setting, file downloads that are not user-initiated will be blocked, and users will see the Notification bar instead of the file download dialog. Users can then click the Notification bar to allow the file download prompt.</p>
-
-<a href="" id="internetexplorer-lockeddownrestrictedsiteszoneinitializeandscriptactivexcontrols"></a>**InternetExplorer/LockedDownRestrictedSitesZoneInitializeAndScriptActiveXControls**
-
-<p style="margin-left: 20px">This policy setting allows you to manage ActiveX controls not marked as safe.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, ActiveX controls are run, loaded with parameters, and scripted without setting object safety for untrusted data or scripts. This setting is not recommended, except for secure and administered zones. This setting causes both unsafe and safe controls to be initialized and scripted, ignoring the Script ActiveX controls marked safe for scripting option.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting and select Prompt in the drop-down box, users are queried whether to allow the control to be loaded with parameters or scripted.</p>
-
-<p style="margin-left: 20px">If you disable this policy setting, ActiveX controls that cannot be made safe are not loaded with parameters or scripted.</p>
-
-<p style="margin-left: 20px">If you do not configure this policy setting, ActiveX controls that cannot be made safe are not loaded with parameters or scripted.</p>
-
-<a href="" id="internetexplorer-lockeddownrestrictedsiteszonenavigatewindowsandframes"></a>**InternetExplorer/LockedDownRestrictedSitesZoneNavigateWindowsAndFrames**
-
-<p style="margin-left: 20px">This policy setting allows you to manage the opening of windows and frames and access of applications across different domains.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, users can open additional windows and frames from other domains and access applications from other domains. If you select Prompt in the drop-down box, users are queried whether to allow additional windows and frames to access applications from other domains.</p>
-
-<p style="margin-left: 20px">If you disable this policy setting, users cannot open other windows and frames from other domains or access applications from different domains.</p>
-
-<p style="margin-left: 20px">If you do not configure this policy setting, users cannot open other windows and frames from different domains or access applications from different domains.</p>
-
-<a href="" id="internetexplorer-lockeddownrestrictedsiteszoneallownetframeworkreliantcomponents"></a>**InternetExplorer/LockedDownRestrictedSitesZoneAllowNETFrameworkReliantComponents**
-
-<p style="margin-left: 20px">This policy setting allows you to manage whether .NET Framework components that are not signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, Internet Explorer will execute unsigned managed components. If you select Prompt in the drop-down box, Internet Explorer will prompt the user to determine whether to execute unsigned managed components.</p>
-
-<p style="margin-left: 20px">If you disable this policy setting, Internet Explorer will not execute unsigned managed components.</p>
-
-<p style="margin-left: 20px">If you do not configure this policy setting, Internet Explorer will not execute unsigned managed components.</p>
-
-<a href="" id="internetexplorer-lockeddownrestrictedsiteszoneallowsmartscreenie"></a>**InternetExplorer/LockedDownRestrictedSitesZoneAllowSmartScreenIE**
-
-<p style="margin-left: 20px">This policy setting controls whether SmartScreen Filter scans pages in this zone for malicious content.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, SmartScreen Filter scans pages in this zone for malicious content.</p>
-
-<p style="margin-left: 20px">If you disable this policy setting, SmartScreen Filter does not scan pages in this zone for malicious content.</p>
-
-<p style="margin-left: 20px">If you do not configure this policy setting, the user can choose whether SmartScreen Filter scans pages in this zone for malicious content.</p>
-
-<p style="margin-left: 20px">Note: In Internet Explorer 7, this policy setting controls whether Phishing Filter scans pages in this zone for malicious content.</p>
-
-<a href="" id="internetexplorer-lockeddownrestrictedsiteszoneallowuserdatapersistence"></a>**InternetExplorer/LockedDownRestrictedSitesZoneAllowUserDataPersistence**
-
-<p style="margin-left: 20px">This policy setting allows you to manage the preservation of information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk. When a user returns to a persisted page, the state of the page can be restored if this policy setting is appropriately configured.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, users can preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.</p>
-
-<p style="margin-left: 20px">If you disable this policy setting, users cannot preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.</p>
-
-<p style="margin-left: 20px">If you do not configure this policy setting, users cannot preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.</p>
-
-<a href="" id="internetexplorer-lockeddownrestrictedsiteszoneallowlessprivilegedsites"></a>**InternetExplorer/LockedDownRestrictedSitesZoneAllowLessPrivilegedSites**
-
-<p style="margin-left: 20px">This policy setting allows you to manage whether Web sites from less privileged zones, such as Internet sites, can navigate into this zone.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, Web sites from less privileged zones can open new windows in, or navigate into, this zone. The security zone will run without the added layer of security that is provided by the Protection from Zone Elevation security feature. If you select Prompt in the drop-down box, a warning is issued to the user that potentially risky navigation is about to occur.</p>
-
-<p style="margin-left: 20px">If you disable this policy setting, the possibly harmful navigations are prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.</p>
-
-<p style="margin-left: 20px">If you do not configure this policy setting, the possibly harmful navigations are prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.</p>
-
-<a href="" id="internetexplorer-lockeddowntrustedsiteszoneallowaccesstodatasources"></a>**InternetExplorer/LockedDownTrustedSitesZoneAllowAccessToDataSources**
-
-<p style="margin-left: 20px">This policy setting allows you to manage whether Internet Explorer can access data from another security zone using the Microsoft XML Parser (MSXML) or ActiveX Data Objects (ADO).</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, users can load a page in the zone that uses MSXML or ADO to access data from another site in the zone. If you select Prompt in the drop-down box, users are queried to choose whether to allow a page to be loaded in the zone that uses MSXML or ADO to access data from another site in the zone.</p>
-
-<p style="margin-left: 20px">If you disable this policy setting, users cannot load a page in the zone that uses MSXML or ADO to access data from another site in the zone.</p>
-
-<p style="margin-left: 20px">If you do not configure this policy setting, users can load a page in the zone that uses MSXML or ADO to access data from another site in the zone.</p>
-
-<a href="" id="internetexplorer-lockeddowntrustedsiteszoneallowfontdownloads"></a>**InternetExplorer/LockedDownTrustedSitesZoneAllowFontDownloads**
-
-<p style="margin-left: 20px">This policy setting allows you to manage whether pages of the zone may download HTML fonts.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, HTML fonts can be downloaded automatically. If you enable this policy setting and Prompt is selected in the drop-down box, users are queried whether to allow HTML fonts to download.</p>
-
-<p style="margin-left: 20px">If you disable this policy setting, HTML fonts are prevented from downloading.</p>
-
-<p style="margin-left: 20px">If you do not configure this policy setting, HTML fonts can be downloaded automatically.</p>
-
-<a href="" id="internetexplorer-lockeddowntrustedsiteszoneallowscriptlets"></a>**InternetExplorer/LockedDownTrustedSitesZoneAllowScriptlets**
-
-<p style="margin-left: 20px">This policy setting allows you to manage whether the user can run scriptlets.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, the user can run scriptlets.</p>
-
-<p style="margin-left: 20px">If you disable this policy setting, the user cannot run scriptlets.</p>
-
-<p style="margin-left: 20px">If you do not configure this policy setting, the user can enable or disable scriptlets.</p>
-
-<a href="" id="internetexplorer-lockeddowntrustedsiteszoneallowautomaticpromptingforactivexcontrols"></a>**InternetExplorer/LockedDownTrustedSitesZoneAllowAutomaticPromptingForActiveXControls**
-
-<p style="margin-left: 20px">This policy setting manages whether users will be automatically prompted for ActiveX control installations.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, users will receive a prompt when a site instantiates an ActiveX control they do not have installed.</p>
-
-<p style="margin-left: 20px">If you disable this policy setting, ActiveX control installations will be blocked using the Notification bar. Users can click on the Notification bar to allow the ActiveX control prompt.</p>
-
-<p style="margin-left: 20px">If you do not configure this policy setting, ActiveX control installations will be blocked using the Notification bar. Users can click on the Notification bar to allow the ActiveX control prompt.</p>
-
-<a href="" id="internetexplorer-lockeddowntrustedsiteszoneallowautomaticpromptingforfiledownloads"></a>**InternetExplorer/LockedDownTrustedSitesZoneAllowAutomaticPromptingForFileDownloads**
-
-<p style="margin-left: 20px">This policy setting determines whether users will be prompted for non user-initiated file downloads. Regardless of this setting, users will receive file download dialogs for user-initiated downloads.</p>
-
-<p style="margin-left: 20px">If you enable this setting, users will receive a file download dialog for automatic download attempts.</p>
-
-<p style="margin-left: 20px">If you disable or do not configure this setting, file downloads that are not user-initiated will be blocked, and users will see the Notification bar instead of the file download dialog. Users can then click the Notification bar to allow the file download prompt.</p>
-
-<a href="" id="internetexplorer-lockeddowntrustedsiteszoneinitializeandscriptactivexcontrols"></a>**InternetExplorer/LockedDownTrustedSitesZoneInitializeAndScriptActiveXControls**
-
-<p style="margin-left: 20px">This policy setting allows you to manage ActiveX controls not marked as safe.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, ActiveX controls are run, loaded with parameters, and scripted without setting object safety for untrusted data or scripts. This setting is not recommended, except for secure and administered zones. This setting causes both unsafe and safe controls to be initialized and scripted, ignoring the Script ActiveX controls marked safe for scripting option.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting and select Prompt in the drop-down box, users are queried whether to allow the control to be loaded with parameters or scripted.</p>
-
-<p style="margin-left: 20px">If you disable this policy setting, ActiveX controls that cannot be made safe are not loaded with parameters or scripted.</p>
-
-<p style="margin-left: 20px">If you do not configure this policy setting, ActiveX controls that cannot be made safe are not loaded with parameters or scripted.</p>
-
-<a href="" id="internetexplorer-lockeddowntrustedsiteszonenavigatewindowsandframes"></a>**InternetExplorer/LockedDownTrustedSitesZoneNavigateWindowsAndFrames**
-
-<p style="margin-left: 20px">This policy setting allows you to manage the opening of windows and frames and access of applications across different domains.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, users can open windows and frames from othe domains and access applications from other domains. If you select Prompt in the drop-down box, users are queried whether to allow windows and frames to access applications from other domains.</p>
-
-<p style="margin-left: 20px">If you disable this policy setting, users cannot open windows and frames to access applications from different domains.</p>
-
-<p style="margin-left: 20px">If you do not configure this policy setting, users can open windows and frames from othe domains and access applications from other domains.</p>
-
-<a href="" id="internetexplorer-lockeddowntrustedsiteszoneallownetframeworkreliantcomponents"></a>**InternetExplorer/LockedDownTrustedSitesZoneAllowNETFrameworkReliantComponents**
-
-<p style="margin-left: 20px">This policy setting allows you to manage whether .NET Framework components that are not signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, Internet Explorer will execute unsigned managed components. If you select Prompt in the drop-down box, Internet Explorer will prompt the user to determine whether to execute unsigned managed components.</p>
-
-<p style="margin-left: 20px">If you disable this policy setting, Internet Explorer will not execute unsigned managed components.</p>
-
-<p style="margin-left: 20px">If you do not configure this policy setting, Internet Explorer will not execute unsigned managed components.</p>
-
-<a href="" id="internetexplorer-lockeddowntrustedsiteszoneallowsmartscreenie"></a>**InternetExplorer/LockedDownTrustedSitesZoneAllowSmartScreenIE**
-
-<p style="margin-left: 20px">This policy setting controls whether SmartScreen Filter scans pages in this zone for malicious content.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, SmartScreen Filter scans pages in this zone for malicious content.</p>
-
-<p style="margin-left: 20px">If you disable this policy setting, SmartScreen Filter does not scan pages in this zone for malicious content.</p>
-
-<p style="margin-left: 20px">If you do not configure this policy setting, the user can choose whether SmartScreen Filter scans pages in this zone for malicious content.</p>
-
-<p style="margin-left: 20px">Note: In Internet Explorer 7, this policy setting controls whether Phishing Filter scans pages in this zone for malicious content.</p>
-
-<a href="" id="internetexplorer-lockeddowntrustedsiteszoneallowuserdatapersistence"></a>**InternetExplorer/LockedDownTrustedSitesZoneAllowUserDataPersistence**
-
-<p style="margin-left: 20px">This policy setting allows you to manage the preservation of information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk. When a user returns to a persisted page, the state of the page can be restored if this policy setting is appropriately configured.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, users can preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.</p>
-
-<p style="margin-left: 20px">If you disable this policy setting, users cannot preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.</p>
-
-<p style="margin-left: 20px">If you do not configure this policy setting, users can preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.</p>
-
-<a href="" id="internetexplorer-lockeddowntrustedsiteszoneallowlessprivilegedsites"></a>**InternetExplorer/LockedDownTrustedSitesZoneAllowLessPrivilegedSites**
-
-<p style="margin-left: 20px">This policy setting allows you to manage whether Web sites from less privileged zones, such as Internet sites, can navigate into this zone.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, Web sites from less privileged zones can open new windows in, or navigate into, this zone. The security zone will run without the added layer of security that is provided by the Protection from Zone Elevation security feature. If you select Prompt in the drop-down box, a warning is issued to the user that potentially risky navigation is about to occur.</p>
-
-<p style="margin-left: 20px">If you disable this policy setting, the possibly harmful navigations are prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.</p>
-
-<p style="margin-left: 20px">If you do not configure this policy setting, the possibly harmful navigations are prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.</p>
-
-<a href="" id="internetexplorer-restrictedsiteszoneallowaccesstodatasources"></a>**InternetExplorer/RestrictedSitesZoneAllowAccessToDataSources**
-
-<p style="margin-left: 20px">This policy setting allows you to manage whether Internet Explorer can access data from another security zone using the Microsoft XML Parser (MSXML) or ActiveX Data Objects (ADO).</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, users can load a page in the zone that uses MSXML or ADO to access data from another site in the zone. If you select Prompt in the drop-down box, users are queried to choose whether to allow a page to be loaded in the zone that uses MSXML or ADO to access data from another site in the zone.</p>
-
-<p style="margin-left: 20px">If you disable this policy setting, users cannot load a page in the zone that uses MSXML or ADO to access data from another site in the zone.</p>
-
-<p style="margin-left: 20px">If you do not configure this policy setting, users cannot load a page in the zone that uses MSXML or ADO to access data from another site in the zone.</p>
-
-<a href="" id="internetexplorer-restrictedsiteszoneallowfontdownloads"></a>**InternetExplorer/RestrictedSitesZoneAllowFontDownloads**
-
-<p style="margin-left: 20px">This policy setting allows you to manage whether pages of the zone may download HTML fonts.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, HTML fonts can be downloaded automatically. If you enable this policy setting and Prompt is selected in the drop-down box, users are queried whether to allow HTML fonts to download.</p>
-
-<p style="margin-left: 20px">If you disable this policy setting, HTML fonts are prevented from downloading.</p>
-
-<p style="margin-left: 20px">If you do not configure this policy setting, users are queried whether to allow HTML fonts to download.</p>
-
-<a href="" id="internetexplorer-restrictedsiteszoneallowscriptlets"></a>**InternetExplorer/RestrictedSitesZoneAllowScriptlets**
-
-<p style="margin-left: 20px">This policy setting allows you to manage whether the user can run scriptlets.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, the user can run scriptlets.</p>
-
-<p style="margin-left: 20px">If you disable this policy setting, the user cannot run scriptlets.</p>
-
-<p style="margin-left: 20px">If you do not configure this policy setting, the user can enable or disable scriptlets.</p>
-
-<a href="" id="internetexplorer-restrictedsiteszoneallowautomaticpromptingforactivexcontrols"></a>**InternetExplorer/RestrictedSitesZoneAllowAutomaticPromptingForActiveXControls**
-
-<p style="margin-left: 20px">This policy setting manages whether users will be automatically prompted for ActiveX control installations.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, users will receive a prompt when a site instantiates an ActiveX control they do not have installed.</p>
-
-<p style="margin-left: 20px">If you disable this policy setting, ActiveX control installations will be blocked using the Notification bar. Users can click on the Notification bar to allow the ActiveX control prompt.</p>
-
-<p style="margin-left: 20px">If you do not configure this policy setting, ActiveX control installations will be blocked using the Notification bar. Users can click on the Notification bar to allow the ActiveX control prompt.</p>
-
-<a href="" id="internetexplorer-restrictedsiteszoneallowautomaticpromptingforfiledownloads"></a>**InternetExplorer/RestrictedSitesZoneAllowAutomaticPromptingForFileDownloads**
-
-<p style="margin-left: 20px">This policy setting determines whether users will be prompted for non user-initiated file downloads. Regardless of this setting, users will receive file download dialogs for user-initiated downloads.</p>
-
-<p style="margin-left: 20px">If you enable this setting, users will receive a file download dialog for automatic download attempts.</p>
-
-<p style="margin-left: 20px">If you disable or do not configure this setting, file downloads that are not user-initiated will be blocked, and users will see the Notification bar instead of the file download dialog. Users can then click the Notification bar to allow the file download prompt.</p>
-
-<a href="" id="internetexplorer-restrictedsiteszoneinitializeandscriptactivexcontrols"></a>**InternetExplorer/RestrictedSitesZoneInitializeAndScriptActiveXControls**
-
-<p style="margin-left: 20px">This policy setting allows you to manage ActiveX controls not marked as safe.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, ActiveX controls are run, loaded with parameters, and scripted without setting object safety for untrusted data or scripts. This setting is not recommended, except for secure and administered zones. This setting causes both unsafe and safe controls to be initialized and scripted, ignoring the Script ActiveX controls marked safe for scripting option.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting and select Prompt in the drop-down box, users are queried whether to allow the control to be loaded with parameters or scripted.</p>
-
-<p style="margin-left: 20px">If you disable this policy setting, ActiveX controls that cannot be made safe are not loaded with parameters or scripted.</p>
-
-<p style="margin-left: 20px">If you do not configure this policy setting, ActiveX controls that cannot be made safe are not loaded with parameters or scripted.</p>
-
-<a href="" id="internetexplorer-restrictedsiteszonenavigatewindowsandframes"></a>**InternetExplorer/RestrictedSitesZoneNavigateWindowsAndFrames**
-
-<p style="margin-left: 20px">This policy setting allows you to manage the opening of windows and frames and access of applications across different domains.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, users can open additional windows and frames from other domains and access applications from other domains. If you select Prompt in the drop-down box, users are queried whether to allow additional windows and frames to access applications from other domains.</p>
-
-<p style="margin-left: 20px">If you disable this policy setting, users cannot open other windows and frames from other domains or access applications from different domains.</p>
-
-<p style="margin-left: 20px">If you do not configure this policy setting, users cannot open other windows and frames from different domains or access applications from different domains.</p>
-
-<a href="" id="internetexplorer-restrictedsiteszoneallownetframeworkreliantcomponents"></a>**InternetExplorer/RestrictedSitesZoneAllowNETFrameworkReliantComponents**
-
-<p style="margin-left: 20px">This policy setting allows you to manage whether .NET Framework components that are not signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, Internet Explorer will execute unsigned managed components. If you select Prompt in the drop-down box, Internet Explorer will prompt the user to determine whether to execute unsigned managed components.</p>
-
-<p style="margin-left: 20px">If you disable this policy setting, Internet Explorer will not execute unsigned managed components.</p>
-
-<p style="margin-left: 20px">If you do not configure this policy setting, Internet Explorer will not execute unsigned managed components.</p>
-
-<a href="" id="internetexplorer-restrictedsiteszoneallowsmartscreenie"></a>**InternetExplorer/RestrictedSitesZoneAllowSmartScreenIE**
-
-<p style="margin-left: 20px">This policy setting controls whether SmartScreen Filter scans pages in this zone for malicious content.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, SmartScreen Filter scans pages in this zone for malicious content.</p>
-
-<p style="margin-left: 20px">If you disable this policy setting, SmartScreen Filter does not scan pages in this zone for malicious content.</p>
-
-<p style="margin-left: 20px">If you do not configure this policy setting, the user can choose whether SmartScreen Filter scans pages in this zone for malicious content.</p>
-
-<p style="margin-left: 20px">Note: In Internet Explorer 7, this policy setting controls whether Phishing Filter scans pages in this zone for malicious content.</p>
-
-<a href="" id="internetexplorer-restrictedsiteszoneallowuserdatapersistence"></a>**InternetExplorer/RestrictedSitesZoneAllowUserDataPersistence**
-
-<p style="margin-left: 20px">This policy setting allows you to manage the preservation of information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk. When a user returns to a persisted page, the state of the page can be restored if this policy setting is appropriately configured.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, users can preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.</p>
-
-<p style="margin-left: 20px">If you disable this policy setting, users cannot preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.</p>
-
-<p style="margin-left: 20px">If you do not configure this policy setting, users cannot preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.</p>
-
-<a href="" id="internetexplorer-restrictedsiteszoneallowlessprivilegedsites"></a>**InternetExplorer/RestrictedSitesZoneAllowLessPrivilegedSites**
-
-<p style="margin-left: 20px">This policy setting allows you to manage whether Web sites from less privileged zones, such as Internet sites, can navigate into this zone.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, Web sites from less privileged zones can open new windows in, or navigate into, this zone. The security zone will run without the added layer of security that is provided by the Protection from Zone Elevation security feature. If you select Prompt in the drop-down box, a warning is issued to the user that potentially risky navigation is about to occur.</p>
-
-<p style="margin-left: 20px">If you disable this policy setting, the possibly harmful navigations are prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.</p>
-
-<p style="margin-left: 20px">If you do not configure this policy setting, the possibly harmful navigations are prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.</p>
-
-<a href="" id="internetexplorer-trustedsiteszoneallowaccesstodatasources"></a>**InternetExplorer/TrustedSitesZoneAllowAccessToDataSources**
-
-<p style="margin-left: 20px">This policy setting allows you to manage whether Internet Explorer can access data from another security zone using the Microsoft XML Parser (MSXML) or ActiveX Data Objects (ADO).</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, users can load a page in the zone that uses MSXML or ADO to access data from another site in the zone. If you select Prompt in the drop-down box, users are queried to choose whether to allow a page to be loaded in the zone that uses MSXML or ADO to access data from another site in the zone.</p>
-
-<p style="margin-left: 20px">If you disable this policy setting, users cannot load a page in the zone that uses MSXML or ADO to access data from another site in the zone.</p>
-
-<p style="margin-left: 20px">If you do not configure this policy setting, users can load a page in the zone that uses MSXML or ADO to access data from another site in the zone.</p>
-
-<a href="" id="internetexplorer-trustedsiteszoneallowfontdownloads"></a>**InternetExplorer/TrustedSitesZoneAllowFontDownloads**
-
-<p style="margin-left: 20px">This policy setting allows you to manage whether pages of the zone may download HTML fonts.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, HTML fonts can be downloaded automatically. If you enable this policy setting and Prompt is selected in the drop-down box, users are queried whether to allow HTML fonts to download.</p>
-
-<p style="margin-left: 20px">If you disable this policy setting, HTML fonts are prevented from downloading.</p>
-
-<p style="margin-left: 20px">If you do not configure this policy setting, HTML fonts can be downloaded automatically.</p>
-
-<a href="" id="internetexplorer-trustedsiteszoneallowscriptlets"></a>**InternetExplorer/TrustedSitesZoneAllowScriptlets**
-
-<p style="margin-left: 20px">This policy setting allows you to manage whether the user can run scriptlets.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, the user can run scriptlets.</p>
-
-<p style="margin-left: 20px">If you disable this policy setting, the user cannot run scriptlets.</p>
-
-<p style="margin-left: 20px">If you do not configure this policy setting, the user can enable or disable scriptlets.</p>
-
-<a href="" id="internetexplorer-trustedsiteszoneallowautomaticpromptingforactivexcontrols"></a>**InternetExplorer/TrustedSitesZoneAllowAutomaticPromptingForActiveXControls**
-
-<p style="margin-left: 20px">This policy setting manages whether users will be automatically prompted for ActiveX control installations.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, users will receive a prompt when a site instantiates an ActiveX control they do not have installed.</p>
-
-<p style="margin-left: 20px">If you disable this policy setting, ActiveX control installations will be blocked using the Notification bar. Users can click on the Notification bar to allow the ActiveX control prompt.</p>
-
-<p style="margin-left: 20px">If you do not configure this policy setting, users will receive a prompt when a site instantiates an ActiveX control they do not have installed.</p>
-
-<a href="" id="internetexplorer-trustedsiteszoneallowautomaticpromptingforfiledownloads"></a>**InternetExplorer/TrustedSitesZoneAllowAutomaticPromptingForFileDownloads**
-
-<p style="margin-left: 20px">This policy setting determines whether users will be prompted for non user-initiated file downloads. Regardless of this setting, users will receive file download dialogs for user-initiated downloads.</p>
-
-<p style="margin-left: 20px">If you enable this setting, users will receive a file download dialog for automatic download attempts.</p>
-
-<p style="margin-left: 20px">If you disable or do not configure this setting, users will receive a file download dialog for automatic download attempts.</p>
-
-<a href="" id="internetexplorer-trustedsiteszoneinitializeandscriptactivexcontrols"></a>**InternetExplorer/TrustedSitesZoneInitializeAndScriptActiveXControls**
-
-<p style="margin-left: 20px">This policy setting allows you to manage ActiveX controls not marked as safe.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, ActiveX controls are run, loaded with parameters, and scripted without setting object safety for untrusted data or scripts. This setting is not recommended, except for secure and administered zones. This setting causes both unsafe and safe controls to be initialized and scripted, ignoring the Script ActiveX controls marked safe for scripting option.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting and select Prompt in the drop-down box, users are queried whether to allow the control to be loaded with parameters or scripted.</p>
-
-<p style="margin-left: 20px">If you disable this policy setting, ActiveX controls that cannot be made safe are not loaded with parameters or scripted.</p>
-
-<p style="margin-left: 20px">If you do not configure this policy setting, users are queried whether to allow the control to be loaded with parameters or scripted.</p>
-
-<a href="" id="internetexplorer-trustedsiteszonenavigatewindowsandframes"></a>**InternetExplorer/TrustedSitesZoneNavigateWindowsAndFrames**
-
-<p style="margin-left: 20px">This policy setting allows you to manage the opening of windows and frames and access of applications across different domains.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, users can open windows and frames from othe domains and access applications from other domains. If you select Prompt in the drop-down box, users are queried whether to allow windows and frames to access applications from other domains.</p>
-
-<p style="margin-left: 20px">If you disable this policy setting, users cannot open windows and frames to access applications from different domains.</p>
-
-<p style="margin-left: 20px">If you do not configure this policy setting, users can open windows and frames from othe domains and access applications from other domains.</p>
-
-<a href="" id="internetexplorer-trustedsiteszoneallownetframeworkreliantcomponents"></a>**InternetExplorer/TrustedSitesZoneAllowNETFrameworkReliantComponents**
-
-<p style="margin-left: 20px">This policy setting allows you to manage whether .NET Framework components that are not signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, Internet Explorer will execute unsigned managed components. If you select Prompt in the drop-down box, Internet Explorer will prompt the user to determine whether to execute unsigned managed components.</p>
-
-<p style="margin-left: 20px">If you disable this policy setting, Internet Explorer will not execute unsigned managed components.</p>
-
-<p style="margin-left: 20px">If you do not configure this policy setting, Internet Explorer will execute unsigned managed components.</p>
-
-<a href="" id="internetexplorer-trustedsiteszoneallowsmartscreenie"></a>**InternetExplorer/TrustedSitesZoneAllowSmartScreenIE**
-
-<p style="margin-left: 20px">This policy setting controls whether SmartScreen Filter scans pages in this zone for malicious content.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, SmartScreen Filter scans pages in this zone for malicious content.</p>
-
-<p style="margin-left: 20px">If you disable this policy setting, SmartScreen Filter does not scan pages in this zone for malicious content.</p>
-
-<p style="margin-left: 20px">If you do not configure this policy setting, the user can choose whether SmartScreen Filter scans pages in this zone for malicious content.</p>
-
-<p style="margin-left: 20px">Note: In Internet Explorer 7, this policy setting controls whether Phishing Filter scans pages in this zone for malicious content.</p>
-
-<a href="" id="internetexplorer-trustedsiteszoneallowuserdatapersistence"></a>**InternetExplorer/TrustedSitesZoneAllowUserDataPersistence**
-
-<p style="margin-left: 20px">This policy setting allows you to manage the preservation of information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk. When a user returns to a persisted page, the state of the page can be restored if this policy setting is appropriately configured.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, users can preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.</p>
-
-<p style="margin-left: 20px">If you disable this policy setting, users cannot preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.</p>
-
-<p style="margin-left: 20px">If you do not configure this policy setting, users can preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.</p>
-
-<a href="" id="internetexplorer-trustedsiteszoneallowlessprivilegedsites"></a>**InternetExplorer/TrustedSitesZoneAllowLessPrivilegedSites**
-
-<p style="margin-left: 20px">This policy setting allows you to manage whether Web sites from less privileged zones, such as Restricted Sites, can navigate into this zone.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, Web sites from less privileged zones can open new windows in, or navigate into, this zone.  The security zone will run without the added layer of security that is provided by the Protection from Zone Elevation security feature. If you select Prompt in the drop-down box, a warning is issued to the user that potentially risky navigation is about to occur.</p>
-
-<p style="margin-left: 20px">If you disable this policy setting, the possibly harmful navigations are prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.</p>
-
-<p style="margin-left: 20px">If you do not configure this policy setting, a warning is issued to the user that potentially risky navigation is about to occur.</p>
-
-<a href="" id="internetexplorer-allowonewordentry"></a>**InternetExplorer/AllowOneWordEntry**
-
-<p style="margin-left: 20px">This policy allows the user to go directly to an intranet site for a one-word entry in the Address bar.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, Internet Explorer goes directly to an intranet site for a one-word entry in the Address bar, if it is available.</p>
-
-<p style="margin-left: 20px">If you disable or do not configure this policy setting, Internet Explorer does not go directly to an intranet site for a one-word entry in the Address bar.</p>
-
-<a href="" id="internetexplorer-allowaddonlist"></a>**InternetExplorer/AllowAddOnList**
-
-<p style="margin-left: 20px">This policy setting allows you to manage a list of add-ons to be allowed or denied by Internet Explorer. Add-ons in this case are controls like ActiveX Controls, Toolbars, and Browser Helper Objects (BHOs) which are specifically written to extend or enhance the functionality of the browser or web pages.</p>
-
-<p style="margin-left: 20px">This list can be used with the 'Deny all add-ons unless specifically allowed in the Add-on List' policy setting, which defines whether add-ons not listed here are assumed to be denied.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, you can enter a list of add-ons to be allowed or denied by Internet Explorer. For each entry that you add to the list, enter the following information:</p>
-
-<p style="margin-left: 20px">Name of the Value - the CLSID (class identifier) for the add-on you wish to add to the list.  The CLSID should be in brackets for example, {000000000-0000-0000-0000-0000000000000}'. The CLSID for an add-on can be obtained by reading the OBJECT tag from a Web page on which the add-on is referenced.</p>
-
-<p style="margin-left: 20px">Value - A number indicating whether Internet Explorer should deny or allow the add-on to be loaded. To specify that an add-on should be denied enter a 0 (zero) into this field. To specify that an add-on should be allowed, enter a 1 (one) into this field. To specify that an add-on should be allowed and also permit the user to manage the add-on through Add-on Manager, enter a 2 (two) into this field.</p>
-
-<p style="margin-left: 20px">If you disable this policy setting, the list is deleted. The 'Deny all add-ons unless specifically allowed in the Add-on List' policy setting will still determine whether add-ons not in this list are assumed to be denied.</p>
-
 <a href="" id="internetexplorer-disableadobeflash"></a>**InternetExplorer/DisableAdobeFlash**
 
 <p style="margin-left: 20px">This policy setting turns off Adobe Flash in Internet Explorer and prevents applications from using Internet Explorer technology to instantiate Flash objects.</p>
@@ -3726,6 +2574,148 @@ The Policy configuration service provider enables the enterprise to configure po
 <p style="margin-left: 20px">If you disable, or do not configure this policy setting, Flash is turned on for Internet Explorer, and applications can use Internet Explorer technology to instantiate Flash objects. Users can enable or disable Flash in the Manage Add-ons dialog box.</p>
 
 <p style="margin-left: 20px">Note that Adobe Flash can still be disabled through the "Add-on List" and "Deny all add-ons unless specifically allowed in the Add-on List" policy settings, even if this policy setting is disabled, or not configured. However, if Adobe Flash is disabled through the "Add-on List" and "Deny all add-ons unless specifically allowed in the Add-on List" policy settings and not through this policy setting, all applications that use Internet Explorer technology to instantiate Flash object can still do so. For more information, see "Group Policy Settings in Internet Explorer 10" in the Internet Explorer TechNet library.</p>
+
+<a href="" id="internetexplorer-disablebypassofsmartscreenwarnings"></a>**InternetExplorer/DisableBypassOfSmartScreenWarnings**
+
+<p style="margin-left: 20px">This policy setting determines whether the user can bypass warnings from SmartScreen Filter. SmartScreen Filter prevents the user from browsing to or downloading from sites that are known to host malicious content. SmartScreen Filter also prevents the execution of files that are known to be malicious.</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, SmartScreen Filter warnings block the user.</p>
+
+<p style="margin-left: 20px">If you disable or do not configure this policy setting, the user can bypass SmartScreen Filter warnings.</p>
+
+<a href="" id="internetexplorer-disablebypassofsmartscreenwarningsaboutuncommonfiles"></a>**InternetExplorer/DisableBypassOfSmartScreenWarningsAboutUncommonFiles**
+
+<p style="margin-left: 20px">This policy setting determines whether the user can bypass warnings from SmartScreen Filter. SmartScreen Filter warns the user about executable files that Internet Explorer users do not commonly download from the Internet.</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, SmartScreen Filter warnings block the user.</p>
+
+<p style="margin-left: 20px">If you disable or do not configure this policy setting, the user can bypass SmartScreen Filter warnings.</p>
+
+<a href="" id="internetexplorer-disablecustomerexperienceimprovementprogramparticipation"></a>**InternetExplorer/DisableCustomerExperienceImprovementProgramParticipation**
+
+<p style="margin-left: 20px">This policy setting prevents the user from participating in the Customer Experience Improvement Program (CEIP).</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, the user cannot participate in the CEIP, and the Customer Feedback Options command does not appear on the Help menu.</p>
+
+<p style="margin-left: 20px">If you disable this policy setting, the user must participate in the CEIP, and the Customer Feedback Options command does not appear on the Help menu.</p>
+
+<p style="margin-left: 20px">If you do not configure this policy setting, the user can choose to participate in the CEIP.</p>
+
+<a href="" id="internetexplorer-disableenclosuredownloading"></a>**InternetExplorer/DisableEnclosureDownloading**
+
+<p style="margin-left: 20px">This policy setting prevents the user from having enclosures (file attachments) downloaded from a feed to the user's computer.</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, the user cannot set the Feed Sync Engine to download an enclosure through the Feed property page. A developer cannot change the download setting through the Feed APIs.</p>
+
+<p style="margin-left: 20px">If you disable or do not configure this policy setting, the user can set the Feed Sync Engine to download an enclosure through the Feed property page. A developer can change the download setting through the Feed APIs.</p>
+
+<a href="" id="internetexplorer-disableencryptionsupport"></a>**InternetExplorer/DisableEncryptionSupport**
+
+<p style="margin-left: 20px">This policy setting allows you to turn off support for Transport Layer Security (TLS) 1.0, TLS 1.1, TLS 1.2, Secure Sockets Layer (SSL) 2.0, or SSL 3.0 in the browser. TLS and SSL are protocols that help protect communication between the browser and the target server. When the browser attempts to set up a protected communication with the target server, the browser and server negotiate which protocol and version to use. The browser and server attempt to match each others list of supported protocols and versions, and they select the most preferred match.</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, the browser negotiates or does not negotiate an encryption tunnel by using the encryption methods that you select from the drop-down list.</p>
+
+<p style="margin-left: 20px">If you disable or do not configure this policy setting, the user can select which encryption method the browser supports.</p>
+
+<p style="margin-left: 20px">Note: SSL 2.0 is off by default and is no longer supported starting with Windows 10 Version 1607. SSL 2.0 is an outdated security protocol, and enabling SSL 2.0 impairs the performance and functionality of TLS 1.0.</p>
+
+<a href="" id="internetexplorer-disablefirstrunwizard"></a>**InternetExplorer/DisableFirstRunWizard**
+
+<p style="margin-left: 20px">This policy setting prevents Internet Explorer from running the First Run wizard the first time a user starts the browser after installing Internet Explorer or Windows.</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, you must make one of the following choices:</p>
+
+<p style="margin-left: 20px">Skip the First Run wizard, and go directly to the user's home page.</p>
+
+<p style="margin-left: 20px">Skip the First Run wizard, and go directly to the "Welcome to Internet Explorer" webpage.</p>
+
+<p style="margin-left: 20px">Starting with Windows 8, the "Welcome to Internet Explorer" webpage is not available. The user's home page will display regardless of which option is chosen.</p>
+
+<p style="margin-left: 20px">If you disable or do not configure this policy setting, Internet Explorer may run the First Run wizard the first time the browser is started after installation.</p>
+
+<a href="" id="internetexplorer-disableflipaheadfeature"></a>**InternetExplorer/DisableFlipAheadFeature**
+
+<p style="margin-left: 20px">This policy setting determines whether a user can swipe across a screen or click Forward to go to the next pre-loaded page of a website.</p>
+
+<p style="margin-left: 20px">Microsoft collects your browsing history to improve how flip ahead with page prediction works. This feature isn't available for Internet Explorer for the desktop.</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, flip ahead with page prediction is turned off and the next webpage isn't loaded into the background.</p>
+
+<p style="margin-left: 20px">If you disable this policy setting, flip ahead with page prediction is turned on and the next webpage is loaded into the background.</p>
+
+<p style="margin-left: 20px">If you don't configure this setting, users can turn this behavior on or off, using the Settings charm.</p>
+
+<a href="" id="internetexplorer-disablehomepagechange"></a>**InternetExplorer/DisableHomePageChange**
+
+<p style="margin-left: 20px">The Home page specified on the General tab of the Internet Options dialog box is the default Web page that Internet Explorer loads whenever it is run.</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, a user cannot set a custom default home page. You must specify which default home page should load on the user machine. For machines with at least Internet Explorer 7, the home page can be set within this policy to override other home page policies.</p>
+
+<p style="margin-left: 20px">If you disable or do not configure this policy setting, the Home page box is enabled and users can choose their own home page.</p>
+
+<a href="" id="internetexplorer-disableproxychange"></a>**InternetExplorer/DisableProxyChange**
+
+<p style="margin-left: 20px">This policy setting specifies if a user can change proxy settings.</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, the user will not be able to configure proxy settings.</p>
+
+<p style="margin-left: 20px">If you disable or do not configure this policy setting, the user can configure proxy settings.</p>
+
+<a href="" id="internetexplorer-disablesearchproviderchange"></a>**InternetExplorer/DisableSearchProviderChange**
+
+<p style="margin-left: 20px">This policy setting prevents the user from changing the default search provider for the Address bar and the toolbar Search box.</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, the user cannot change the default search provider.</p>
+
+<p style="margin-left: 20px">If you disable or do not configure this policy setting, the user can change the default search provider.</p>
+
+<a href="" id="internetexplorer-disablesecondaryhomepagechange"></a>**InternetExplorer/DisableSecondaryHomePageChange**
+
+<p style="margin-left: 20px">Secondary home pages are the default Web pages that Internet Explorer loads in separate tabs from the home page whenever the browser is run. This policy setting allows you to set default secondary home pages.</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, you can specify which default home pages should load as secondary home pages. The user cannot set custom default secondary home pages.</p>
+
+<p style="margin-left: 20px">If you disable or do not configure this policy setting, the user can add secondary home pages.</p>
+
+<p style="margin-left: 20px">Note: If the Disable Changing Home Page Settings policy is enabled, the user cannot add secondary home pages.</p>
+
+<a href="" id="internetexplorer-disableupdatecheck"></a>**InternetExplorer/DisableUpdateCheck**
+
+<p style="margin-left: 20px">Prevents Internet Explorer from checking whether a new version of the browser is available.</p>
+
+<p style="margin-left: 20px">If you enable this policy, it prevents Internet Explorer from checking to see whether it is the latest available browser version and notifying users if a new version is available.</p>
+
+<p style="margin-left: 20px">If you disable this policy or do not configure it, Internet Explorer checks every 30 days by default, and then notifies users if a new version is available.</p>
+
+<p style="margin-left: 20px">This policy is intended to help the administrator maintain version control for Internet Explorer by preventing users from being notified about new versions of the browser.</p>
+
+<a href="" id="internetexplorer-donotallowuserstoaddsites"></a>**InternetExplorer/DoNotAllowUsersToAddSites**
+
+<p style="margin-left: 20px">Prevents users from adding or removing sites from security zones. A security zone is a group of Web sites with the same security level.</p>
+
+<p style="margin-left: 20px">If you enable this policy, the site management settings for security zones are disabled. (To see the site management settings for security zones, in the Internet Options dialog box, click the Security tab, and then click the Sites button.)</p>
+
+<p style="margin-left: 20px">If you disable this policy or do not configure it, users can add Web sites to or remove sites from the Trusted Sites and Restricted Sites zones, and alter settings for the Local Intranet zone.</p>
+
+<p style="margin-left: 20px">This policy prevents users from changing site management settings for security zones established by the administrator.</p>
+
+<p style="margin-left: 20px">Note:  The "Disable the Security page" policy (located in \User Configuration\Administrative Templates\Windows Components\Internet Explorer\Internet Control Panel), which removes the Security tab from the interface, takes precedence over this policy. If it is enabled, this policy is ignored.</p>
+
+<p style="margin-left: 20px">Also, see the "Security zones: Use only machine settings" policy.</p>
+
+<a href="" id="internetexplorer-donotallowuserstochangepolicies"></a>**InternetExplorer/DoNotAllowUsersToChangePolicies**
+
+<p style="margin-left: 20px">Prevents users from changing security zone settings. A security zone is a group of Web sites with the same security level.</p>
+
+<p style="margin-left: 20px">If you enable this policy, the Custom Level button and security-level slider on the Security tab in the Internet Options dialog box are disabled.</p>
+
+<p style="margin-left: 20px">If you disable this policy or do not configure it, users can change the settings for security zones.</p>
+
+<p style="margin-left: 20px">This policy prevents users from changing security zone settings established by the administrator.</p>
+
+<p style="margin-left: 20px">Note: The "Disable the Security page" policy (located in \User Configuration\Administrative Templates\Windows Components\Internet Explorer\Internet Control Panel), which removes the Security tab from Internet Explorer in Control Panel, takes precedence over this policy. If it is enabled, this policy is ignored.</p>
+
+<p style="margin-left: 20px">Also, see the "Security zones: Use only machine settings" policy.</p>
 
 <a href="" id="internetexplorer-donotblockoutdatedactivexcontrols"></a>**InternetExplorer/DoNotBlockOutdatedActiveXControls**
 
@@ -3753,13 +2743,1169 @@ The Policy configuration service provider enables the enterprise to configure po
 
 <p style="margin-left: 20px">For more information, see "Outdated ActiveX Controls" in the Internet Explorer TechNet library.</p>
 
-<a href="" id="internetexplorer-disableenclosuredownloading"></a>**InternetExplorer/DisableEnclosureDownloading**
+<a href="" id="internetexplorer-includealllocalsites"></a>**InternetExplorer/IncludeAllLocalSites**
 
-<p style="margin-left: 20px">This policy setting prevents the user from having enclosures (file attachments) downloaded from a feed to the user's computer.</p>
+<p style="margin-left: 20px">This policy setting controls whether local sites which are not explicitly mapped into any Security Zone are forced into the local Intranet security zone.</p>
 
-<p style="margin-left: 20px">If you enable this policy setting, the user cannot set the Feed Sync Engine to download an enclosure through the Feed property page. A developer cannot change the download setting through the Feed APIs.</p>
+<p style="margin-left: 20px">If you enable this policy setting, local sites which are not explicitly mapped into a zone are considered to be in the Intranet Zone.</p>
 
-<p style="margin-left: 20px">If you disable or do not configure this policy setting, the user can set the Feed Sync Engine to download an enclosure through the Feed property page. A developer can change the download setting through the Feed APIs.</p>
+<p style="margin-left: 20px">If you disable this policy setting, local sites which are not explicitly mapped into a zone will not be considered to be in the Intranet Zone (so would typically be in the Internet Zone).</p>
+
+<p style="margin-left: 20px">If you do not configure this policy setting, users choose whether to force local sites into the Intranet Zone.</p>
+
+<a href="" id="internetexplorer-includeallnetworkpaths"></a>**InternetExplorer/IncludeAllNetworkPaths**
+
+<p style="margin-left: 20px">This policy setting controls whether URLs representing UNCs are mapped into the local Intranet security zone.</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, all network paths are mapped into the Intranet Zone.</p>
+
+<p style="margin-left: 20px">If you disable this policy setting, network paths are not necessarily mapped into the Intranet Zone (other rules might map one there).</p>
+
+<p style="margin-left: 20px">If you do not configure this policy setting, users choose whether network paths are mapped into the Intranet Zone.</p>
+
+<a href="" id="internetexplorer-internetzoneallowaccesstodatasources"></a>**InternetExplorer/InternetZoneAllowAccessToDataSources**
+
+<p style="margin-left: 20px">This policy setting allows you to manage whether Internet Explorer can access data from another security zone using the Microsoft XML Parser (MSXML) or ActiveX Data Objects (ADO).</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, users can load a page in the zone that uses MSXML or ADO to access data from another site in the zone. If you select Prompt in the drop-down box, users are queried to choose whether to allow a page to be loaded in the zone that uses MSXML or ADO to access data from another site in the zone.</p>
+
+<p style="margin-left: 20px">If you disable this policy setting, users cannot load a page in the zone that uses MSXML or ADO to access data from another site in the zone.</p>
+
+<p style="margin-left: 20px">If you do not configure this policy setting, users cannot load a page in the zone that uses MSXML or ADO to access data from another site in the zone.</p>
+
+<a href="" id="internetexplorer-internetzoneallowautomaticpromptingforactivexcontrols"></a>**InternetExplorer/InternetZoneAllowAutomaticPromptingForActiveXControls**
+
+<p style="margin-left: 20px">This policy setting manages whether users will be automatically prompted for ActiveX control installations.</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, users will receive a prompt when a site instantiates an ActiveX control they do not have installed.</p>
+
+<p style="margin-left: 20px">If you disable this policy setting, ActiveX control installations will be blocked using the Notification bar. Users can click on the Notification bar to allow the ActiveX control prompt.</p>
+
+<p style="margin-left: 20px">If you do not configure this policy setting, ActiveX control installations will be blocked using the Notification bar. Users can click on the Notification bar to allow the ActiveX control prompt.</p>
+
+<a href="" id="internetexplorer-internetzoneallowautomaticpromptingforfiledownloads"></a>**InternetExplorer/InternetZoneAllowAutomaticPromptingForFileDownloads**
+
+<p style="margin-left: 20px">This policy setting determines whether users will be prompted for non user-initiated file downloads. Regardless of this setting, users will receive file download dialogs for user-initiated downloads.</p>
+
+<p style="margin-left: 20px">If you enable this setting, users will receive a file download dialog for automatic download attempts.</p>
+
+<p style="margin-left: 20px">If you disable or do not configure this setting, file downloads that are not user-initiated will be blocked, and users will see the Notification bar instead of the file download dialog. Users can then click the Notification bar to allow the file download prompt.</p>
+
+<a href="" id="internetexplorer-internetzoneallowfontdownloads"></a>**InternetExplorer/InternetZoneAllowFontDownloads**
+
+<p style="margin-left: 20px">This policy setting allows you to manage whether pages of the zone may download HTML fonts.</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, HTML fonts can be downloaded automatically. If you enable this policy setting and Prompt is selected in the drop-down box, users are queried whether to allow HTML fonts to download.</p>
+
+<p style="margin-left: 20px">If you disable this policy setting, HTML fonts are prevented from downloading.</p>
+
+<p style="margin-left: 20px">If you do not configure this policy setting, HTML fonts can be downloaded automatically.</p>
+
+<a href="" id="internetexplorer-internetzoneallowlessprivilegedsites"></a>**InternetExplorer/InternetZoneAllowLessPrivilegedSites**
+
+<p style="margin-left: 20px">This policy setting allows you to manage whether Web sites from less privileged zones, such as Restricted Sites, can navigate into this zone.</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, Web sites from less privileged zones can open new windows in, or navigate into, this zone.  The security zone will run without the added layer of security that is provided by the Protection from Zone Elevation security feature. If you select Prompt in the drop-down box, a warning is issued to the user that potentially risky navigation is about to occur.</p>
+
+<p style="margin-left: 20px">If you disable this policy setting, the possibly harmful navigations are prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.</p>
+
+<p style="margin-left: 20px">If you do not configure this policy setting, Web sites from less privileged zones can open new windows in, or navigate into, this zone.</p>
+
+<a href="" id="internetexplorer-internetzoneallownetframeworkreliantcomponents"></a>**InternetExplorer/InternetZoneAllowNETFrameworkReliantComponents**
+
+<p style="margin-left: 20px">This policy setting allows you to manage whether .NET Framework components that are not signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link.</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, Internet Explorer will execute unsigned managed components. If you select Prompt in the drop-down box, Internet Explorer will prompt the user to determine whether to execute unsigned managed components.</p>
+
+<p style="margin-left: 20px">If you disable this policy setting, Internet Explorer will not execute unsigned managed components.</p>
+
+<p style="margin-left: 20px">If you do not configure this policy setting, Internet Explorer will execute unsigned managed components.</p>
+
+<a href="" id="internetexplorer-internetzoneallowscriptlets"></a>**InternetExplorer/InternetZoneAllowScriptlets**
+
+<p style="margin-left: 20px">This policy setting allows you to manage whether the user can run scriptlets.</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, the user can run scriptlets.</p>
+
+<p style="margin-left: 20px">If you disable this policy setting, the user cannot run scriptlets.</p>
+
+<p style="margin-left: 20px">If you do not configure this policy setting, the user can enable or disable scriptlets.</p>
+
+<a href="" id="internetexplorer-internetzoneallowsmartscreenie"></a>**InternetExplorer/InternetZoneAllowSmartScreenIE**
+
+<p style="margin-left: 20px">This policy setting controls whether SmartScreen Filter scans pages in this zone for malicious content.</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, SmartScreen Filter scans pages in this zone for malicious content.</p>
+
+<p style="margin-left: 20px">If you disable this policy setting, SmartScreen Filter does not scan pages in this zone for malicious content.</p>
+
+<p style="margin-left: 20px">If you do not configure this policy setting, the user can choose whether SmartScreen Filter scans pages in this zone for malicious content.</p>
+
+<p style="margin-left: 20px">Note: In Internet Explorer 7, this policy setting controls whether Phishing Filter scans pages in this zone for malicious content.</p>
+
+<a href="" id="internetexplorer-internetzoneallowuserdatapersistence"></a>**InternetExplorer/InternetZoneAllowUserDataPersistence**
+
+<p style="margin-left: 20px">This policy setting allows you to manage the preservation of information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk. When a user returns to a persisted page, the state of the page can be restored if this policy setting is appropriately configured.</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, users can preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.</p>
+
+<p style="margin-left: 20px">If you disable this policy setting, users cannot preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.</p>
+
+<p style="margin-left: 20px">If you do not configure this policy setting, users can preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.</p>
+
+<a href="" id="internetexplorer-internetzoneinitializeandscriptactivexcontrols"></a>**InternetExplorer/InternetZoneInitializeAndScriptActiveXControls**
+
+<p style="margin-left: 20px">This policy setting allows you to manage ActiveX controls not marked as safe.</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, ActiveX controls are run, loaded with parameters, and scripted without setting object safety for untrusted data or scripts. This setting is not recommended, except for secure and administered zones. This setting causes both unsafe and safe controls to be initialized and scripted, ignoring the Script ActiveX controls marked safe for scripting option.</p>
+
+<p style="margin-left: 20px">If you enable this policy setting and select Prompt in the drop-down box, users are queried whether to allow the control to be loaded with parameters or scripted.</p>
+
+<p style="margin-left: 20px">If you disable this policy setting, ActiveX controls that cannot be made safe are not loaded with parameters or scripted.</p>
+
+<p style="margin-left: 20px">If you do not configure this policy setting, ActiveX controls that cannot be made safe are not loaded with parameters or scripted.</p>
+
+<a href="" id="internetexplorer-internetzonenavigatewindowsandframes"></a>**InternetExplorer/InternetZoneNavigateWindowsAndFrames**
+
+<p style="margin-left: 20px">This policy setting allows you to manage the opening of windows and frames and access of applications across different domains.</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, users can open windows and frames from othe domains and access applications from other domains. If you select Prompt in the drop-down box, users are queried whether to allow windows and frames to access applications from other domains.</p>
+
+<p style="margin-left: 20px">If you disable this policy setting, users cannot open windows and frames to access applications from different domains.</p>
+
+<p style="margin-left: 20px">If you do not configure this policy setting, users can open windows and frames from othe domains and access applications from other domains.</p>
+
+<a href="" id="internetexplorer-intranetzoneallowaccesstodatasources"></a>**InternetExplorer/IntranetZoneAllowAccessToDataSources**
+
+<p style="margin-left: 20px">This policy setting allows you to manage whether Internet Explorer can access data from another security zone using the Microsoft XML Parser (MSXML) or ActiveX Data Objects (ADO).</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, users can load a page in the zone that uses MSXML or ADO to access data from another site in the zone. If you select Prompt in the drop-down box, users are queried to choose whether to allow a page to be loaded in the zone that uses MSXML or ADO to access data from another site in the zone.</p>
+
+<p style="margin-left: 20px">If you disable this policy setting, users cannot load a page in the zone that uses MSXML or ADO to access data from another site in the zone.</p>
+
+<p style="margin-left: 20px">If you do not configure this policy setting, users are queried to choose whether to allow a page to be loaded in the zone that uses MSXML or ADO to access data from another site in the zone.</p>
+
+<a href="" id="internetexplorer-intranetzoneallowautomaticpromptingforactivexcontrols"></a>**InternetExplorer/IntranetZoneAllowAutomaticPromptingForActiveXControls**
+
+<p style="margin-left: 20px">This policy setting manages whether users will be automatically prompted for ActiveX control installations.</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, users will receive a prompt when a site instantiates an ActiveX control they do not have installed.</p>
+
+<p style="margin-left: 20px">If you disable this policy setting, ActiveX control installations will be blocked using the Notification bar. Users can click on the Notification bar to allow the ActiveX control prompt.</p>
+
+<p style="margin-left: 20px">If you do not configure this policy setting, users will receive a prompt when a site instantiates an ActiveX control they do not have installed.</p>
+
+<a href="" id="internetexplorer-intranetzoneallowautomaticpromptingforfiledownloads"></a>**InternetExplorer/IntranetZoneAllowAutomaticPromptingForFileDownloads**
+
+<p style="margin-left: 20px">This policy setting determines whether users will be prompted for non user-initiated file downloads. Regardless of this setting, users will receive file download dialogs for user-initiated downloads.</p>
+
+<p style="margin-left: 20px">If you enable this setting, users will receive a file download dialog for automatic download attempts.</p>
+
+<p style="margin-left: 20px">If you disable or do not configure this setting, users will receive a file download dialog for automatic download attempts.</p>
+
+<a href="" id="internetexplorer-intranetzoneallowfontdownloads"></a>**InternetExplorer/IntranetZoneAllowFontDownloads**
+
+<p style="margin-left: 20px">This policy setting allows you to manage whether pages of the zone may download HTML fonts.</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, HTML fonts can be downloaded automatically. If you enable this policy setting and Prompt is selected in the drop-down box, users are queried whether to allow HTML fonts to download.</p>
+
+<p style="margin-left: 20px">If you disable this policy setting, HTML fonts are prevented from downloading.</p>
+
+<p style="margin-left: 20px">If you do not configure this policy setting, HTML fonts can be downloaded automatically.</p>
+
+<a href="" id="internetexplorer-intranetzoneallowlessprivilegedsites"></a>**InternetExplorer/IntranetZoneAllowLessPrivilegedSites**
+
+<p style="margin-left: 20px">This policy setting allows you to manage whether Web sites from less privileged zones, such as Restricted Sites, can navigate into this zone.</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, Web sites from less privileged zones can open new windows in, or navigate into, this zone.  The security zone will run without the added layer of security that is provided by the Protection from Zone Elevation security feature. If you select Prompt in the drop-down box, a warning is issued to the user that potentially risky navigation is about to occur.</p>
+
+<p style="margin-left: 20px">If you disable this policy setting, the possibly harmful navigations are prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.</p>
+
+<p style="margin-left: 20px">If you do not configure this policy setting, Web sites from less privileged zones can open new windows in, or navigate into, this zone.</p>
+
+<a href="" id="internetexplorer-intranetzoneallownetframeworkreliantcomponents"></a>**InternetExplorer/IntranetZoneAllowNETFrameworkReliantComponents**
+
+<p style="margin-left: 20px">This policy setting allows you to manage whether .NET Framework components that are not signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link.</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, Internet Explorer will execute unsigned managed components. If you select Prompt in the drop-down box, Internet Explorer will prompt the user to determine whether to execute unsigned managed components.</p>
+
+<p style="margin-left: 20px">If you disable this policy setting, Internet Explorer will not execute unsigned managed components.</p>
+
+<p style="margin-left: 20px">If you do not configure this policy setting, Internet Explorer will execute unsigned managed components.</p>
+
+<a href="" id="internetexplorer-intranetzoneallowscriptlets"></a>**InternetExplorer/IntranetZoneAllowScriptlets**
+
+<p style="margin-left: 20px">This policy setting allows you to manage whether the user can run scriptlets.</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, the user can run scriptlets.</p>
+
+<p style="margin-left: 20px">If you disable this policy setting, the user cannot run scriptlets.</p>
+
+<p style="margin-left: 20px">If you do not configure this policy setting, the user can enable or disable scriptlets.</p>
+
+<a href="" id="internetexplorer-intranetzoneallowsmartscreenie"></a>**InternetExplorer/IntranetZoneAllowSmartScreenIE**
+
+<p style="margin-left: 20px">This policy setting controls whether SmartScreen Filter scans pages in this zone for malicious content.</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, SmartScreen Filter scans pages in this zone for malicious content.</p>
+
+<p style="margin-left: 20px">If you disable this policy setting, SmartScreen Filter does not scan pages in this zone for malicious content.</p>
+
+<p style="margin-left: 20px">If you do not configure this policy setting, the user can choose whether SmartScreen Filter scans pages in this zone for malicious content.</p>
+
+<p style="margin-left: 20px">Note: In Internet Explorer 7, this policy setting controls whether Phishing Filter scans pages in this zone for malicious content.</p>
+
+<a href="" id="internetexplorer-intranetzoneallowuserdatapersistence"></a>**InternetExplorer/IntranetZoneAllowUserDataPersistence**
+
+<p style="margin-left: 20px">This policy setting allows you to manage the preservation of information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk. When a user returns to a persisted page, the state of the page can be restored if this policy setting is appropriately configured.</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, users can preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.</p>
+
+<p style="margin-left: 20px">If you disable this policy setting, users cannot preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.</p>
+
+<p style="margin-left: 20px">If you do not configure this policy setting, users can preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.</p>
+
+<a href="" id="internetexplorer-intranetzoneinitializeandscriptactivexcontrols"></a>**InternetExplorer/IntranetZoneInitializeAndScriptActiveXControls**
+
+<p style="margin-left: 20px">This policy setting allows you to manage ActiveX controls not marked as safe.</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, ActiveX controls are run, loaded with parameters, and scripted without setting object safety for untrusted data or scripts. This setting is not recommended, except for secure and administered zones. This setting causes both unsafe and safe controls to be initialized and scripted, ignoring the Script ActiveX controls marked safe for scripting option.</p>
+
+<p style="margin-left: 20px">If you enable this policy setting and select Prompt in the drop-down box, users are queried whether to allow the control to be loaded with parameters or scripted.</p>
+
+<p style="margin-left: 20px">If you disable this policy setting, ActiveX controls that cannot be made safe are not loaded with parameters or scripted.</p>
+
+<p style="margin-left: 20px">If you do not configure this policy setting, ActiveX controls that cannot be made safe are not loaded with parameters or scripted.</p>
+
+<a href="" id="internetexplorer-intranetzonenavigatewindowsandframes"></a>**InternetExplorer/IntranetZoneNavigateWindowsAndFrames**
+
+<p style="margin-left: 20px">This policy setting allows you to manage the opening of windows and frames and access of applications across different domains.</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, users can open windows and frames from othe domains and access applications from other domains. If you select Prompt in the drop-down box, users are queried whether to allow windows and frames to access applications from other domains.</p>
+
+<p style="margin-left: 20px">If you disable this policy setting, users cannot open windows and frames to access applications from different domains.</p>
+
+<p style="margin-left: 20px">If you do not configure this policy setting, users can open windows and frames from othe domains and access applications from other domains.</p>
+
+<a href="" id="internetexplorer-localmachinezoneallowaccesstodatasources"></a>**InternetExplorer/LocalMachineZoneAllowAccessToDataSources**
+
+<p style="margin-left: 20px">This policy setting allows you to manage whether Internet Explorer can access data from another security zone using the Microsoft XML Parser (MSXML) or ActiveX Data Objects (ADO).</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, users can load a page in the zone that uses MSXML or ADO to access data from another site in the zone. If you select Prompt in the drop-down box, users are queried to choose whether to allow a page to be loaded in the zone that uses MSXML or ADO to access data from another site in the zone.</p>
+
+<p style="margin-left: 20px">If you disable this policy setting, users cannot load a page in the zone that uses MSXML or ADO to access data from another site in the zone.</p>
+
+<p style="margin-left: 20px">If you do not configure this policy setting, users can load a page in the zone that uses MSXML or ADO to access data from another site in the zone.</p>
+
+<a href="" id="internetexplorer-localmachinezoneallowautomaticpromptingforactivexcontrols"></a>**InternetExplorer/LocalMachineZoneAllowAutomaticPromptingForActiveXControls**
+
+<p style="margin-left: 20px">This policy setting manages whether users will be automatically prompted for ActiveX control installations.</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, users will receive a prompt when a site instantiates an ActiveX control they do not have installed.</p>
+
+<p style="margin-left: 20px">If you disable this policy setting, ActiveX control installations will be blocked using the Notification bar. Users can click on the Notification bar to allow the ActiveX control prompt.</p>
+
+<p style="margin-left: 20px">If you do not configure this policy setting, users will receive a prompt when a site instantiates an ActiveX control they do not have installed.</p>
+
+<a href="" id="internetexplorer-localmachinezoneallowautomaticpromptingforfiledownloads"></a>**InternetExplorer/LocalMachineZoneAllowAutomaticPromptingForFileDownloads**
+
+<p style="margin-left: 20px">This policy setting determines whether users will be prompted for non user-initiated file downloads. Regardless of this setting, users will receive file download dialogs for user-initiated downloads.</p>
+
+<p style="margin-left: 20px">If you enable this setting, users will receive a file download dialog for automatic download attempts.</p>
+
+<p style="margin-left: 20px">If you disable or do not configure this setting, users will receive a file download dialog for automatic download attempts.</p>
+
+<a href="" id="internetexplorer-localmachinezoneallowfontdownloads"></a>**InternetExplorer/LocalMachineZoneAllowFontDownloads**
+
+<p style="margin-left: 20px">This policy setting allows you to manage whether pages of the zone may download HTML fonts.</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, HTML fonts can be downloaded automatically. If you enable this policy setting and Prompt is selected in the drop-down box, users are queried whether to allow HTML fonts to download.</p>
+
+<p style="margin-left: 20px">If you disable this policy setting, HTML fonts are prevented from downloading.</p>
+
+<p style="margin-left: 20px">If you do not configure this policy setting, HTML fonts can be downloaded automatically.</p>
+
+<a href="" id="internetexplorer-localmachinezoneallowlessprivilegedsites"></a>**InternetExplorer/LocalMachineZoneAllowLessPrivilegedSites**
+
+<p style="margin-left: 20px">This policy setting allows you to manage whether Web sites from less privileged zones, such as Internet sites, can navigate into this zone.</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, Web sites from less privileged zones can open new windows in, or navigate into, this zone. The security zone will run without the added layer of security that is provided by the Protection from Zone Elevation security feature. If you select Prompt in the drop-down box, a warning is issued to the user that potentially risky navigation is about to occur.</p>
+
+<p style="margin-left: 20px">If you disable this policy setting, the possibly harmful navigations are prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.</p>
+
+<p style="margin-left: 20px">If you do not configure this policy setting, the possibly harmful navigations are prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.</p>
+
+<a href="" id="internetexplorer-localmachinezoneallownetframeworkreliantcomponents"></a>**InternetExplorer/LocalMachineZoneAllowNETFrameworkReliantComponents**
+
+<p style="margin-left: 20px">This policy setting allows you to manage whether .NET Framework components that are not signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link.</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, Internet Explorer will execute unsigned managed components. If you select Prompt in the drop-down box, Internet Explorer will prompt the user to determine whether to execute unsigned managed components.</p>
+
+<p style="margin-left: 20px">If you disable this policy setting, Internet Explorer will not execute unsigned managed components.</p>
+
+<p style="margin-left: 20px">If you do not configure this policy setting, Internet Explorer will not execute unsigned managed components.</p>
+
+<a href="" id="internetexplorer-localmachinezoneallowscriptlets"></a>**InternetExplorer/LocalMachineZoneAllowScriptlets**
+
+<p style="margin-left: 20px">This policy setting allows you to manage whether the user can run scriptlets.</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, the user can run scriptlets.</p>
+
+<p style="margin-left: 20px">If you disable this policy setting, the user cannot run scriptlets.</p>
+
+<p style="margin-left: 20px">If you do not configure this policy setting, the user can enable or disable scriptlets.</p>
+
+<a href="" id="internetexplorer-localmachinezoneallowsmartscreenie"></a>**InternetExplorer/LocalMachineZoneAllowSmartScreenIE**
+
+<p style="margin-left: 20px">This policy setting controls whether SmartScreen Filter scans pages in this zone for malicious content.</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, SmartScreen Filter scans pages in this zone for malicious content.</p>
+
+<p style="margin-left: 20px">If you disable this policy setting, SmartScreen Filter does not scan pages in this zone for malicious content.</p>
+
+<p style="margin-left: 20px">If you do not configure this policy setting, the user can choose whether SmartScreen Filter scans pages in this zone for malicious content.</p>
+
+<p style="margin-left: 20px">Note: In Internet Explorer 7, this policy setting controls whether Phishing Filter scans pages in this zone for malicious content.</p>
+
+<a href="" id="internetexplorer-localmachinezoneallowuserdatapersistence"></a>**InternetExplorer/LocalMachineZoneAllowUserDataPersistence**
+
+<p style="margin-left: 20px">This policy setting allows you to manage the preservation of information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk. When a user returns to a persisted page, the state of the page can be restored if this policy setting is appropriately configured.</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, users can preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.</p>
+
+<p style="margin-left: 20px">If you disable this policy setting, users cannot preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.</p>
+
+<p style="margin-left: 20px">If you do not configure this policy setting, users can preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.</p>
+
+<a href="" id="internetexplorer-localmachinezoneinitializeandscriptactivexcontrols"></a>**InternetExplorer/LocalMachineZoneInitializeAndScriptActiveXControls**
+
+<p style="margin-left: 20px">This policy setting allows you to manage ActiveX controls not marked as safe.</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, ActiveX controls are run, loaded with parameters, and scripted without setting object safety for untrusted data or scripts. This setting is not recommended, except for secure and administered zones. This setting causes both unsafe and safe controls to be initialized and scripted, ignoring the Script ActiveX controls marked safe for scripting option.</p>
+
+<p style="margin-left: 20px">If you enable this policy setting and select Prompt in the drop-down box, users are queried whether to allow the control to be loaded with parameters or scripted.</p>
+
+<p style="margin-left: 20px">If you disable this policy setting, ActiveX controls that cannot be made safe are not loaded with parameters or scripted.</p>
+
+<p style="margin-left: 20px">If you do not configure this policy setting, users are queried whether to allow the control to be loaded with parameters or scripted.</p>
+
+<a href="" id="internetexplorer-localmachinezonenavigatewindowsandframes"></a>**InternetExplorer/LocalMachineZoneNavigateWindowsAndFrames**
+
+<p style="margin-left: 20px">This policy setting allows you to manage the opening of windows and frames and access of applications across different domains.</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, users can open windows and frames from othe domains and access applications from other domains. If you select Prompt in the drop-down box, users are queried whether to allow windows and frames to access applications from other domains.</p>
+
+<p style="margin-left: 20px">If you disable this policy setting, users cannot open windows and frames to access applications from different domains.</p>
+
+<p style="margin-left: 20px">If you do not configure this policy setting, users can open windows and frames from othe domains and access applications from other domains.</p>
+
+<a href="" id="internetexplorer-lockeddowninternetzoneallowaccesstodatasources"></a>**InternetExplorer/LockedDownInternetZoneAllowAccessToDataSources**
+
+<p style="margin-left: 20px">This policy setting allows you to manage whether Internet Explorer can access data from another security zone using the Microsoft XML Parser (MSXML) or ActiveX Data Objects (ADO).</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, users can load a page in the zone that uses MSXML or ADO to access data from another site in the zone. If you select Prompt in the drop-down box, users are queried to choose whether to allow a page to be loaded in the zone that uses MSXML or ADO to access data from another site in the zone.</p>
+
+<p style="margin-left: 20px">If you disable this policy setting, users cannot load a page in the zone that uses MSXML or ADO to access data from another site in the zone.</p>
+
+<p style="margin-left: 20px">If you do not configure this policy setting, users cannot load a page in the zone that uses MSXML or ADO to access data from another site in the zone.</p>
+
+<a href="" id="internetexplorer-lockeddowninternetzoneallowautomaticpromptingforactivexcontrols"></a>**InternetExplorer/LockedDownInternetZoneAllowAutomaticPromptingForActiveXControls**
+
+<p style="margin-left: 20px">This policy setting manages whether users will be automatically prompted for ActiveX control installations.</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, users will receive a prompt when a site instantiates an ActiveX control they do not have installed.</p>
+
+<p style="margin-left: 20px">If you disable this policy setting, ActiveX control installations will be blocked using the Notification bar. Users can click on the Notification bar to allow the ActiveX control prompt.</p>
+
+<p style="margin-left: 20px">If you do not configure this policy setting, ActiveX control installations will be blocked using the Notification bar. Users can click on the Notification bar to allow the ActiveX control prompt.</p>
+
+<a href="" id="internetexplorer-lockeddowninternetzoneallowautomaticpromptingforfiledownloads"></a>**InternetExplorer/LockedDownInternetZoneAllowAutomaticPromptingForFileDownloads**
+
+<p style="margin-left: 20px">This policy setting determines whether users will be prompted for non user-initiated file downloads. Regardless of this setting, users will receive file download dialogs for user-initiated downloads.</p>
+
+<p style="margin-left: 20px">If you enable this setting, users will receive a file download dialog for automatic download attempts.</p>
+
+<p style="margin-left: 20px">If you disable or do not configure this setting, file downloads that are not user-initiated will be blocked, and users will see the Notification bar instead of the file download dialog. Users can then click the Notification bar to allow the file download prompt.</p>
+
+<a href="" id="internetexplorer-lockeddowninternetzoneallowfontdownloads"></a>**InternetExplorer/LockedDownInternetZoneAllowFontDownloads**
+
+<p style="margin-left: 20px">This policy setting allows you to manage whether pages of the zone may download HTML fonts.</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, HTML fonts can be downloaded automatically. If you enable this policy setting and Prompt is selected in the drop-down box, users are queried whether to allow HTML fonts to download.</p>
+
+<p style="margin-left: 20px">If you disable this policy setting, HTML fonts are prevented from downloading.</p>
+
+<p style="margin-left: 20px">If you do not configure this policy setting, HTML fonts can be downloaded automatically.</p>
+
+<a href="" id="internetexplorer-lockeddowninternetzoneallowlessprivilegedsites"></a>**InternetExplorer/LockedDownInternetZoneAllowLessPrivilegedSites**
+
+<p style="margin-left: 20px">This policy setting allows you to manage whether Web sites from less privileged zones, such as Internet sites, can navigate into this zone.</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, Web sites from less privileged zones can open new windows in, or navigate into, this zone. The security zone will run without the added layer of security that is provided by the Protection from Zone Elevation security feature. If you select Prompt in the drop-down box, a warning is issued to the user that potentially risky navigation is about to occur.</p>
+
+<p style="margin-left: 20px">If you disable this policy setting, the possibly harmful navigations are prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.</p>
+
+<p style="margin-left: 20px">If you do not configure this policy setting, the possibly harmful navigations are prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.</p>
+
+<a href="" id="internetexplorer-lockeddowninternetzoneallownetframeworkreliantcomponents"></a>**InternetExplorer/LockedDownInternetZoneAllowNETFrameworkReliantComponents**
+
+<p style="margin-left: 20px">This policy setting allows you to manage whether .NET Framework components that are not signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link.</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, Internet Explorer will execute unsigned managed components. If you select Prompt in the drop-down box, Internet Explorer will prompt the user to determine whether to execute unsigned managed components.</p>
+
+<p style="margin-left: 20px">If you disable this policy setting, Internet Explorer will not execute unsigned managed components.</p>
+
+<p style="margin-left: 20px">If you do not configure this policy setting, Internet Explorer will not execute unsigned managed components.</p>
+
+<a href="" id="internetexplorer-lockeddowninternetzoneallowscriptlets"></a>**InternetExplorer/LockedDownInternetZoneAllowScriptlets**
+
+<p style="margin-left: 20px">This policy setting allows you to manage whether the user can run scriptlets.</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, the user can run scriptlets.</p>
+
+<p style="margin-left: 20px">If you disable this policy setting, the user cannot run scriptlets.</p>
+
+<p style="margin-left: 20px">If you do not configure this policy setting, the user can enable or disable scriptlets.</p>
+
+<a href="" id="internetexplorer-lockeddowninternetzoneallowsmartscreenie"></a>**InternetExplorer/LockedDownInternetZoneAllowSmartScreenIE**
+
+<p style="margin-left: 20px">This policy setting controls whether SmartScreen Filter scans pages in this zone for malicious content.</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, SmartScreen Filter scans pages in this zone for malicious content.</p>
+
+<p style="margin-left: 20px">If you disable this policy setting, SmartScreen Filter does not scan pages in this zone for malicious content.</p>
+
+<p style="margin-left: 20px">If you do not configure this policy setting, the user can choose whether SmartScreen Filter scans pages in this zone for malicious content.</p>
+
+<p style="margin-left: 20px">Note: In Internet Explorer 7, this policy setting controls whether Phishing Filter scans pages in this zone for malicious content.</p>
+
+<a href="" id="internetexplorer-lockeddowninternetzoneallowuserdatapersistence"></a>**InternetExplorer/LockedDownInternetZoneAllowUserDataPersistence**
+
+<p style="margin-left: 20px">This policy setting allows you to manage the preservation of information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk. When a user returns to a persisted page, the state of the page can be restored if this policy setting is appropriately configured.</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, users can preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.</p>
+
+<p style="margin-left: 20px">If you disable this policy setting, users cannot preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.</p>
+
+<p style="margin-left: 20px">If you do not configure this policy setting, users can preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.</p>
+
+<a href="" id="internetexplorer-lockeddowninternetzoneinitializeandscriptactivexcontrols"></a>**InternetExplorer/LockedDownInternetZoneInitializeAndScriptActiveXControls**
+
+<p style="margin-left: 20px">This policy setting allows you to manage ActiveX controls not marked as safe.</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, ActiveX controls are run, loaded with parameters, and scripted without setting object safety for untrusted data or scripts. This setting is not recommended, except for secure and administered zones. This setting causes both unsafe and safe controls to be initialized and scripted, ignoring the Script ActiveX controls marked safe for scripting option.</p>
+
+<p style="margin-left: 20px">If you enable this policy setting and select Prompt in the drop-down box, users are queried whether to allow the control to be loaded with parameters or scripted.</p>
+
+<p style="margin-left: 20px">If you disable this policy setting, ActiveX controls that cannot be made safe are not loaded with parameters or scripted.</p>
+
+<p style="margin-left: 20px">If you do not configure this policy setting, ActiveX controls that cannot be made safe are not loaded with parameters or scripted.</p>
+
+<a href="" id="internetexplorer-lockeddowninternetzonenavigatewindowsandframes"></a>**InternetExplorer/LockedDownInternetZoneNavigateWindowsAndFrames**
+
+<p style="margin-left: 20px">This policy setting allows you to manage the opening of windows and frames and access of applications across different domains.</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, users can open windows and frames from othe domains and access applications from other domains. If you select Prompt in the drop-down box, users are queried whether to allow windows and frames to access applications from other domains.</p>
+
+<p style="margin-left: 20px">If you disable this policy setting, users cannot open windows and frames to access applications from different domains.</p>
+
+<p style="margin-left: 20px">If you do not configure this policy setting, users can open windows and frames from othe domains and access applications from other domains.</p>
+
+<a href="" id="internetexplorer-lockeddownintranetzoneallowaccesstodatasources"></a>**InternetExplorer/LockedDownIntranetZoneAllowAccessToDataSources**
+
+<p style="margin-left: 20px">This policy setting allows you to manage whether Internet Explorer can access data from another security zone using the Microsoft XML Parser (MSXML) or ActiveX Data Objects (ADO).</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, users can load a page in the zone that uses MSXML or ADO to access data from another site in the zone. If you select Prompt in the drop-down box, users are queried to choose whether to allow a page to be loaded in the zone that uses MSXML or ADO to access data from another site in the zone.</p>
+
+<p style="margin-left: 20px">If you disable this policy setting, users cannot load a page in the zone that uses MSXML or ADO to access data from another site in the zone.</p>
+
+<p style="margin-left: 20px">If you do not configure this policy setting, users are queried to choose whether to allow a page to be loaded in the zone that uses MSXML or ADO to access data from another site in the zone.</p>
+
+<a href="" id="internetexplorer-lockeddownintranetzoneallowautomaticpromptingforactivexcontrols"></a>**InternetExplorer/LockedDownIntranetZoneAllowAutomaticPromptingForActiveXControls**
+
+<p style="margin-left: 20px">This policy setting manages whether users will be automatically prompted for ActiveX control installations.</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, users will receive a prompt when a site instantiates an ActiveX control they do not have installed.</p>
+
+<p style="margin-left: 20px">If you disable this policy setting, ActiveX control installations will be blocked using the Notification bar. Users can click on the Notification bar to allow the ActiveX control prompt.</p>
+
+<p style="margin-left: 20px">If you do not configure this policy setting, ActiveX control installations will be blocked using the Notification bar. Users can click on the Notification bar to allow the ActiveX control prompt.</p>
+
+<a href="" id="internetexplorer-lockeddownintranetzoneallowautomaticpromptingforfiledownloads"></a>**InternetExplorer/LockedDownIntranetZoneAllowAutomaticPromptingForFileDownloads**
+
+<p style="margin-left: 20px">This policy setting determines whether users will be prompted for non user-initiated file downloads. Regardless of this setting, users will receive file download dialogs for user-initiated downloads.</p>
+
+<p style="margin-left: 20px">If you enable this setting, users will receive a file download dialog for automatic download attempts.</p>
+
+<p style="margin-left: 20px">If you disable or do not configure this setting, file downloads that are not user-initiated will be blocked, and users will see the Notification bar instead of the file download dialog. Users can then click the Notification bar to allow the file download prompt.</p>
+
+<a href="" id="internetexplorer-lockeddownintranetzoneallowfontdownloads"></a>**InternetExplorer/LockedDownIntranetZoneAllowFontDownloads**
+
+<p style="margin-left: 20px">This policy setting allows you to manage whether pages of the zone may download HTML fonts.</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, HTML fonts can be downloaded automatically. If you enable this policy setting and Prompt is selected in the drop-down box, users are queried whether to allow HTML fonts to download.</p>
+
+<p style="margin-left: 20px">If you disable this policy setting, HTML fonts are prevented from downloading.</p>
+
+<p style="margin-left: 20px">If you do not configure this policy setting, HTML fonts can be downloaded automatically.</p>
+
+<a href="" id="internetexplorer-lockeddownintranetzoneallowlessprivilegedsites"></a>**InternetExplorer/LockedDownIntranetZoneAllowLessPrivilegedSites**
+
+<p style="margin-left: 20px">This policy setting allows you to manage whether Web sites from less privileged zones, such as Internet sites, can navigate into this zone.</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, Web sites from less privileged zones can open new windows in, or navigate into, this zone. The security zone will run without the added layer of security that is provided by the Protection from Zone Elevation security feature. If you select Prompt in the drop-down box, a warning is issued to the user that potentially risky navigation is about to occur.</p>
+
+<p style="margin-left: 20px">If you disable this policy setting, the possibly harmful navigations are prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.</p>
+
+<p style="margin-left: 20px">If you do not configure this policy setting, the possibly harmful navigations are prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.</p>
+
+<a href="" id="internetexplorer-lockeddownintranetzoneallownetframeworkreliantcomponents"></a>**InternetExplorer/LockedDownIntranetZoneAllowNETFrameworkReliantComponents**
+
+<p style="margin-left: 20px">This policy setting allows you to manage whether .NET Framework components that are not signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link.</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, Internet Explorer will execute unsigned managed components. If you select Prompt in the drop-down box, Internet Explorer will prompt the user to determine whether to execute unsigned managed components.</p>
+
+<p style="margin-left: 20px">If you disable this policy setting, Internet Explorer will not execute unsigned managed components.</p>
+
+<p style="margin-left: 20px">If you do not configure this policy setting, Internet Explorer will not execute unsigned managed components.</p>
+
+<a href="" id="internetexplorer-lockeddownintranetzoneallowscriptlets"></a>**InternetExplorer/LockedDownIntranetZoneAllowScriptlets**
+
+<p style="margin-left: 20px">This policy setting allows you to manage whether the user can run scriptlets.</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, the user can run scriptlets.</p>
+
+<p style="margin-left: 20px">If you disable this policy setting, the user cannot run scriptlets.</p>
+
+<p style="margin-left: 20px">If you do not configure this policy setting, the user can enable or disable scriptlets.</p>
+
+<a href="" id="internetexplorer-lockeddownintranetzoneallowsmartscreenie"></a>**InternetExplorer/LockedDownIntranetZoneAllowSmartScreenIE**
+
+<p style="margin-left: 20px">This policy setting controls whether SmartScreen Filter scans pages in this zone for malicious content.</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, SmartScreen Filter scans pages in this zone for malicious content.</p>
+
+<p style="margin-left: 20px">If you disable this policy setting, SmartScreen Filter does not scan pages in this zone for malicious content.</p>
+
+<p style="margin-left: 20px">If you do not configure this policy setting, the user can choose whether SmartScreen Filter scans pages in this zone for malicious content.</p>
+
+<p style="margin-left: 20px">Note: In Internet Explorer 7, this policy setting controls whether Phishing Filter scans pages in this zone for malicious content.</p>
+
+<a href="" id="internetexplorer-lockeddownintranetzoneallowuserdatapersistence"></a>**InternetExplorer/LockedDownIntranetZoneAllowUserDataPersistence**
+
+<p style="margin-left: 20px">This policy setting allows you to manage the preservation of information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk. When a user returns to a persisted page, the state of the page can be restored if this policy setting is appropriately configured.</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, users can preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.</p>
+
+<p style="margin-left: 20px">If you disable this policy setting, users cannot preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.</p>
+
+<p style="margin-left: 20px">If you do not configure this policy setting, users can preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.</p>
+
+<a href="" id="internetexplorer-lockeddownintranetzoneinitializeandscriptactivexcontrols"></a>**InternetExplorer/LockedDownIntranetZoneInitializeAndScriptActiveXControls**
+
+<p style="margin-left: 20px">This policy setting allows you to manage ActiveX controls not marked as safe.</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, ActiveX controls are run, loaded with parameters, and scripted without setting object safety for untrusted data or scripts. This setting is not recommended, except for secure and administered zones. This setting causes both unsafe and safe controls to be initialized and scripted, ignoring the Script ActiveX controls marked safe for scripting option.</p>
+
+<p style="margin-left: 20px">If you enable this policy setting and select Prompt in the drop-down box, users are queried whether to allow the control to be loaded with parameters or scripted.</p>
+
+<p style="margin-left: 20px">If you disable this policy setting, ActiveX controls that cannot be made safe are not loaded with parameters or scripted.</p>
+
+<p style="margin-left: 20px">If you do not configure this policy setting, ActiveX controls that cannot be made safe are not loaded with parameters or scripted.</p>
+
+<a href="" id="internetexplorer-lockeddownintranetzonenavigatewindowsandframes"></a>**InternetExplorer/LockedDownIntranetZoneNavigateWindowsAndFrames**
+
+<p style="margin-left: 20px">This policy setting allows you to manage the opening of windows and frames and access of applications across different domains.</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, users can open windows and frames from othe domains and access applications from other domains. If you select Prompt in the drop-down box, users are queried whether to allow windows and frames to access applications from other domains.</p>
+
+<p style="margin-left: 20px">If you disable this policy setting, users cannot open windows and frames to access applications from different domains.</p>
+
+<p style="margin-left: 20px">If you do not configure this policy setting, users can open windows and frames from othe domains and access applications from other domains.</p>
+
+<a href="" id="internetexplorer-lockeddownlocalmachinezoneallowaccesstodatasources"></a>**InternetExplorer/LockedDownLocalMachineZoneAllowAccessToDataSources**
+
+<p style="margin-left: 20px">This policy setting allows you to manage whether Internet Explorer can access data from another security zone using the Microsoft XML Parser (MSXML) or ActiveX Data Objects (ADO).</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, users can load a page in the zone that uses MSXML or ADO to access data from another site in the zone. If you select Prompt in the drop-down box, users are queried to choose whether to allow a page to be loaded in the zone that uses MSXML or ADO to access data from another site in the zone.</p>
+
+<p style="margin-left: 20px">If you disable this policy setting, users cannot load a page in the zone that uses MSXML or ADO to access data from another site in the zone.</p>
+
+<p style="margin-left: 20px">If you do not configure this policy setting, users can load a page in the zone that uses MSXML or ADO to access data from another site in the zone.</p>
+
+<a href="" id="internetexplorer-lockeddownlocalmachinezoneallowautomaticpromptingforactivexcontrols"></a>**InternetExplorer/LockedDownLocalMachineZoneAllowAutomaticPromptingForActiveXControls**
+
+<p style="margin-left: 20px">This policy setting manages whether users will be automatically prompted for ActiveX control installations.</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, users will receive a prompt when a site instantiates an ActiveX control they do not have installed.</p>
+
+<p style="margin-left: 20px">If you disable this policy setting, ActiveX control installations will be blocked using the Notification bar. Users can click on the Notification bar to allow the ActiveX control prompt.</p>
+
+<p style="margin-left: 20px">If you do not configure this policy setting, ActiveX control installations will be blocked using the Notification bar. Users can click on the Notification bar to allow the ActiveX control prompt.</p>
+
+<a href="" id="internetexplorer-lockeddownlocalmachinezoneallowautomaticpromptingforfiledownloads"></a>**InternetExplorer/LockedDownLocalMachineZoneAllowAutomaticPromptingForFileDownloads**
+
+<p style="margin-left: 20px">This policy setting determines whether users will be prompted for non user-initiated file downloads. Regardless of this setting, users will receive file download dialogs for user-initiated downloads.</p>
+
+<p style="margin-left: 20px">If you enable this setting, users will receive a file download dialog for automatic download attempts.</p>
+
+<p style="margin-left: 20px">If you disable or do not configure this setting, file downloads that are not user-initiated will be blocked, and users will see the Notification bar instead of the file download dialog. Users can then click the Notification bar to allow the file download prompt.</p>
+
+<a href="" id="internetexplorer-lockeddownlocalmachinezoneallowfontdownloads"></a>**InternetExplorer/LockedDownLocalMachineZoneAllowFontDownloads**
+
+<p style="margin-left: 20px">This policy setting allows you to manage whether pages of the zone may download HTML fonts.</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, HTML fonts can be downloaded automatically. If you enable this policy setting and Prompt is selected in the drop-down box, users are queried whether to allow HTML fonts to download.</p>
+
+<p style="margin-left: 20px">If you disable this policy setting, HTML fonts are prevented from downloading.</p>
+
+<p style="margin-left: 20px">If you do not configure this policy setting, HTML fonts can be downloaded automatically.</p>
+
+<a href="" id="internetexplorer-lockeddownlocalmachinezoneallowlessprivilegedsites"></a>**InternetExplorer/LockedDownLocalMachineZoneAllowLessPrivilegedSites**
+
+<p style="margin-left: 20px">This policy setting allows you to manage whether Web sites from less privileged zones, such as Internet sites, can navigate into this zone.</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, Web sites from less privileged zones can open new windows in, or navigate into, this zone. The security zone will run without the added layer of security that is provided by the Protection from Zone Elevation security feature. If you select Prompt in the drop-down box, a warning is issued to the user that potentially risky navigation is about to occur.</p>
+
+<p style="margin-left: 20px">If you disable this policy setting, the possibly harmful navigations are prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.</p>
+
+<p style="margin-left: 20px">If you do not configure this policy setting, the possibly harmful navigations are prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.</p>
+
+<a href="" id="internetexplorer-lockeddownlocalmachinezoneallownetframeworkreliantcomponents"></a>**InternetExplorer/LockedDownLocalMachineZoneAllowNETFrameworkReliantComponents**
+
+<p style="margin-left: 20px">This policy setting allows you to manage whether .NET Framework components that are not signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link.</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, Internet Explorer will execute unsigned managed components. If you select Prompt in the drop-down box, Internet Explorer will prompt the user to determine whether to execute unsigned managed components.</p>
+
+<p style="margin-left: 20px">If you disable this policy setting, Internet Explorer will not execute unsigned managed components.</p>
+
+<p style="margin-left: 20px">If you do not configure this policy setting, Internet Explorer will not execute unsigned managed components.</p>
+
+<a href="" id="internetexplorer-lockeddownlocalmachinezoneallowscriptlets"></a>**InternetExplorer/LockedDownLocalMachineZoneAllowScriptlets**
+
+<p style="margin-left: 20px">This policy setting allows you to manage whether the user can run scriptlets.</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, the user can run scriptlets.</p>
+
+<p style="margin-left: 20px">If you disable this policy setting, the user cannot run scriptlets.</p>
+
+<p style="margin-left: 20px">If you do not configure this policy setting, the user can enable or disable scriptlets.</p>
+
+<a href="" id="internetexplorer-lockeddownlocalmachinezoneallowsmartscreenie"></a>**InternetExplorer/LockedDownLocalMachineZoneAllowSmartScreenIE**
+
+<p style="margin-left: 20px">This policy setting controls whether SmartScreen Filter scans pages in this zone for malicious content.</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, SmartScreen Filter scans pages in this zone for malicious content.</p>
+
+<p style="margin-left: 20px">If you disable this policy setting, SmartScreen Filter does not scan pages in this zone for malicious content.</p>
+
+<p style="margin-left: 20px">If you do not configure this policy setting, the user can choose whether SmartScreen Filter scans pages in this zone for malicious content.</p>
+
+<p style="margin-left: 20px">Note: In Internet Explorer 7, this policy setting controls whether Phishing Filter scans pages in this zone for malicious content.</p>
+
+<a href="" id="internetexplorer-lockeddownlocalmachinezoneallowuserdatapersistence"></a>**InternetExplorer/LockedDownLocalMachineZoneAllowUserDataPersistence**
+
+<p style="margin-left: 20px">This policy setting allows you to manage the preservation of information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk. When a user returns to a persisted page, the state of the page can be restored if this policy setting is appropriately configured.</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, users can preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.</p>
+
+<p style="margin-left: 20px">If you disable this policy setting, users cannot preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.</p>
+
+<p style="margin-left: 20px">If you do not configure this policy setting, users can preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.</p>
+
+<a href="" id="internetexplorer-lockeddownlocalmachinezoneinitializeandscriptactivexcontrols"></a>**InternetExplorer/LockedDownLocalMachineZoneInitializeAndScriptActiveXControls**
+
+<p style="margin-left: 20px">This policy setting allows you to manage ActiveX controls not marked as safe.</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, ActiveX controls are run, loaded with parameters, and scripted without setting object safety for untrusted data or scripts. This setting is not recommended, except for secure and administered zones. This setting causes both unsafe and safe controls to be initialized and scripted, ignoring the Script ActiveX controls marked safe for scripting option.</p>
+
+<p style="margin-left: 20px">If you enable this policy setting and select Prompt in the drop-down box, users are queried whether to allow the control to be loaded with parameters or scripted.</p>
+
+<p style="margin-left: 20px">If you disable this policy setting, ActiveX controls that cannot be made safe are not loaded with parameters or scripted.</p>
+
+<p style="margin-left: 20px">If you do not configure this policy setting, ActiveX controls that cannot be made safe are not loaded with parameters or scripted.</p>
+
+<a href="" id="internetexplorer-lockeddownlocalmachinezonenavigatewindowsandframes"></a>**InternetExplorer/LockedDownLocalMachineZoneNavigateWindowsAndFrames**
+
+<p style="margin-left: 20px">This policy setting allows you to manage the opening of windows and frames and access of applications across different domains.</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, users can open windows and frames from othe domains and access applications from other domains. If you select Prompt in the drop-down box, users are queried whether to allow windows and frames to access applications from other domains.</p>
+
+<p style="margin-left: 20px">If you disable this policy setting, users cannot open windows and frames to access applications from different domains.</p>
+
+<p style="margin-left: 20px">If you do not configure this policy setting, users can open windows and frames from othe domains and access applications from other domains.</p>
+
+<a href="" id="internetexplorer-lockeddownrestrictedsiteszoneallowaccesstodatasources"></a>**InternetExplorer/LockedDownRestrictedSitesZoneAllowAccessToDataSources**
+
+<p style="margin-left: 20px">This policy setting allows you to manage whether Internet Explorer can access data from another security zone using the Microsoft XML Parser (MSXML) or ActiveX Data Objects (ADO).</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, users can load a page in the zone that uses MSXML or ADO to access data from another site in the zone. If you select Prompt in the drop-down box, users are queried to choose whether to allow a page to be loaded in the zone that uses MSXML or ADO to access data from another site in the zone.</p>
+
+<p style="margin-left: 20px">If you disable this policy setting, users cannot load a page in the zone that uses MSXML or ADO to access data from another site in the zone.</p>
+
+<p style="margin-left: 20px">If you do not configure this policy setting, users cannot load a page in the zone that uses MSXML or ADO to access data from another site in the zone.</p>
+
+<a href="" id="internetexplorer-lockeddownrestrictedsiteszoneallowautomaticpromptingforactivexcontrols"></a>**InternetExplorer/LockedDownRestrictedSitesZoneAllowAutomaticPromptingForActiveXControls**
+
+<p style="margin-left: 20px">This policy setting manages whether users will be automatically prompted for ActiveX control installations.</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, users will receive a prompt when a site instantiates an ActiveX control they do not have installed.</p>
+
+<p style="margin-left: 20px">If you disable this policy setting, ActiveX control installations will be blocked using the Notification bar. Users can click on the Notification bar to allow the ActiveX control prompt.</p>
+
+<p style="margin-left: 20px">If you do not configure this policy setting, ActiveX control installations will be blocked using the Notification bar. Users can click on the Notification bar to allow the ActiveX control prompt.</p>
+
+<a href="" id="internetexplorer-lockeddownrestrictedsiteszoneallowautomaticpromptingforfiledownloads"></a>**InternetExplorer/LockedDownRestrictedSitesZoneAllowAutomaticPromptingForFileDownloads**
+
+<p style="margin-left: 20px">This policy setting determines whether users will be prompted for non user-initiated file downloads. Regardless of this setting, users will receive file download dialogs for user-initiated downloads.</p>
+
+<p style="margin-left: 20px">If you enable this setting, users will receive a file download dialog for automatic download attempts.</p>
+
+<p style="margin-left: 20px">If you disable or do not configure this setting, file downloads that are not user-initiated will be blocked, and users will see the Notification bar instead of the file download dialog. Users can then click the Notification bar to allow the file download prompt.</p>
+
+<a href="" id="internetexplorer-lockeddownrestrictedsiteszoneallowfontdownloads"></a>**InternetExplorer/LockedDownRestrictedSitesZoneAllowFontDownloads**
+
+<p style="margin-left: 20px">This policy setting allows you to manage whether pages of the zone may download HTML fonts.</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, HTML fonts can be downloaded automatically. If you enable this policy setting and Prompt is selected in the drop-down box, users are queried whether to allow HTML fonts to download.</p>
+
+<p style="margin-left: 20px">If you disable this policy setting, HTML fonts are prevented from downloading.</p>
+
+<p style="margin-left: 20px">If you do not configure this policy setting, users are queried whether to allow HTML fonts to download.</p>
+
+<a href="" id="internetexplorer-lockeddownrestrictedsiteszoneallowlessprivilegedsites"></a>**InternetExplorer/LockedDownRestrictedSitesZoneAllowLessPrivilegedSites**
+
+<p style="margin-left: 20px">This policy setting allows you to manage whether Web sites from less privileged zones, such as Internet sites, can navigate into this zone.</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, Web sites from less privileged zones can open new windows in, or navigate into, this zone. The security zone will run without the added layer of security that is provided by the Protection from Zone Elevation security feature. If you select Prompt in the drop-down box, a warning is issued to the user that potentially risky navigation is about to occur.</p>
+
+<p style="margin-left: 20px">If you disable this policy setting, the possibly harmful navigations are prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.</p>
+
+<p style="margin-left: 20px">If you do not configure this policy setting, the possibly harmful navigations are prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.</p>
+
+<a href="" id="internetexplorer-lockeddownrestrictedsiteszoneallownetframeworkreliantcomponents"></a>**InternetExplorer/LockedDownRestrictedSitesZoneAllowNETFrameworkReliantComponents**
+
+<p style="margin-left: 20px">This policy setting allows you to manage whether .NET Framework components that are not signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link.</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, Internet Explorer will execute unsigned managed components. If you select Prompt in the drop-down box, Internet Explorer will prompt the user to determine whether to execute unsigned managed components.</p>
+
+<p style="margin-left: 20px">If you disable this policy setting, Internet Explorer will not execute unsigned managed components.</p>
+
+<p style="margin-left: 20px">If you do not configure this policy setting, Internet Explorer will not execute unsigned managed components.</p>
+
+<a href="" id="internetexplorer-lockeddownrestrictedsiteszoneallowscriptlets"></a>**InternetExplorer/LockedDownRestrictedSitesZoneAllowScriptlets**
+
+<p style="margin-left: 20px">This policy setting allows you to manage whether the user can run scriptlets.</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, the user can run scriptlets.</p>
+
+<p style="margin-left: 20px">If you disable this policy setting, the user cannot run scriptlets.</p>
+
+<p style="margin-left: 20px">If you do not configure this policy setting, the user can enable or disable scriptlets.</p>
+
+<a href="" id="internetexplorer-lockeddownrestrictedsiteszoneallowsmartscreenie"></a>**InternetExplorer/LockedDownRestrictedSitesZoneAllowSmartScreenIE**
+
+<p style="margin-left: 20px">This policy setting controls whether SmartScreen Filter scans pages in this zone for malicious content.</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, SmartScreen Filter scans pages in this zone for malicious content.</p>
+
+<p style="margin-left: 20px">If you disable this policy setting, SmartScreen Filter does not scan pages in this zone for malicious content.</p>
+
+<p style="margin-left: 20px">If you do not configure this policy setting, the user can choose whether SmartScreen Filter scans pages in this zone for malicious content.</p>
+
+<p style="margin-left: 20px">Note: In Internet Explorer 7, this policy setting controls whether Phishing Filter scans pages in this zone for malicious content.</p>
+
+<a href="" id="internetexplorer-lockeddownrestrictedsiteszoneallowuserdatapersistence"></a>**InternetExplorer/LockedDownRestrictedSitesZoneAllowUserDataPersistence**
+
+<p style="margin-left: 20px">This policy setting allows you to manage the preservation of information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk. When a user returns to a persisted page, the state of the page can be restored if this policy setting is appropriately configured.</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, users can preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.</p>
+
+<p style="margin-left: 20px">If you disable this policy setting, users cannot preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.</p>
+
+<p style="margin-left: 20px">If you do not configure this policy setting, users cannot preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.</p>
+
+<a href="" id="internetexplorer-lockeddownrestrictedsiteszoneinitializeandscriptactivexcontrols"></a>**InternetExplorer/LockedDownRestrictedSitesZoneInitializeAndScriptActiveXControls**
+
+<p style="margin-left: 20px">This policy setting allows you to manage ActiveX controls not marked as safe.</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, ActiveX controls are run, loaded with parameters, and scripted without setting object safety for untrusted data or scripts. This setting is not recommended, except for secure and administered zones. This setting causes both unsafe and safe controls to be initialized and scripted, ignoring the Script ActiveX controls marked safe for scripting option.</p>
+
+<p style="margin-left: 20px">If you enable this policy setting and select Prompt in the drop-down box, users are queried whether to allow the control to be loaded with parameters or scripted.</p>
+
+<p style="margin-left: 20px">If you disable this policy setting, ActiveX controls that cannot be made safe are not loaded with parameters or scripted.</p>
+
+<p style="margin-left: 20px">If you do not configure this policy setting, ActiveX controls that cannot be made safe are not loaded with parameters or scripted.</p>
+
+<a href="" id="internetexplorer-lockeddownrestrictedsiteszonenavigatewindowsandframes"></a>**InternetExplorer/LockedDownRestrictedSitesZoneNavigateWindowsAndFrames**
+
+<p style="margin-left: 20px">This policy setting allows you to manage the opening of windows and frames and access of applications across different domains.</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, users can open additional windows and frames from other domains and access applications from other domains. If you select Prompt in the drop-down box, users are queried whether to allow additional windows and frames to access applications from other domains.</p>
+
+<p style="margin-left: 20px">If you disable this policy setting, users cannot open other windows and frames from other domains or access applications from different domains.</p>
+
+<p style="margin-left: 20px">If you do not configure this policy setting, users cannot open other windows and frames from different domains or access applications from different domains.</p>
+
+<a href="" id="internetexplorer-lockeddowntrustedsiteszoneallowaccesstodatasources"></a>**InternetExplorer/LockedDownTrustedSitesZoneAllowAccessToDataSources**
+
+<p style="margin-left: 20px">This policy setting allows you to manage whether Internet Explorer can access data from another security zone using the Microsoft XML Parser (MSXML) or ActiveX Data Objects (ADO).</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, users can load a page in the zone that uses MSXML or ADO to access data from another site in the zone. If you select Prompt in the drop-down box, users are queried to choose whether to allow a page to be loaded in the zone that uses MSXML or ADO to access data from another site in the zone.</p>
+
+<p style="margin-left: 20px">If you disable this policy setting, users cannot load a page in the zone that uses MSXML or ADO to access data from another site in the zone.</p>
+
+<p style="margin-left: 20px">If you do not configure this policy setting, users can load a page in the zone that uses MSXML or ADO to access data from another site in the zone.</p>
+
+<a href="" id="internetexplorer-lockeddowntrustedsiteszoneallowautomaticpromptingforactivexcontrols"></a>**InternetExplorer/LockedDownTrustedSitesZoneAllowAutomaticPromptingForActiveXControls**
+
+<p style="margin-left: 20px">This policy setting manages whether users will be automatically prompted for ActiveX control installations.</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, users will receive a prompt when a site instantiates an ActiveX control they do not have installed.</p>
+
+<p style="margin-left: 20px">If you disable this policy setting, ActiveX control installations will be blocked using the Notification bar. Users can click on the Notification bar to allow the ActiveX control prompt.</p>
+
+<p style="margin-left: 20px">If you do not configure this policy setting, ActiveX control installations will be blocked using the Notification bar. Users can click on the Notification bar to allow the ActiveX control prompt.</p>
+
+<a href="" id="internetexplorer-lockeddowntrustedsiteszoneallowautomaticpromptingforfiledownloads"></a>**InternetExplorer/LockedDownTrustedSitesZoneAllowAutomaticPromptingForFileDownloads**
+
+<p style="margin-left: 20px">This policy setting determines whether users will be prompted for non user-initiated file downloads. Regardless of this setting, users will receive file download dialogs for user-initiated downloads.</p>
+
+<p style="margin-left: 20px">If you enable this setting, users will receive a file download dialog for automatic download attempts.</p>
+
+<p style="margin-left: 20px">If you disable or do not configure this setting, file downloads that are not user-initiated will be blocked, and users will see the Notification bar instead of the file download dialog. Users can then click the Notification bar to allow the file download prompt.</p>
+
+<a href="" id="internetexplorer-lockeddowntrustedsiteszoneallowfontdownloads"></a>**InternetExplorer/LockedDownTrustedSitesZoneAllowFontDownloads**
+
+<p style="margin-left: 20px">This policy setting allows you to manage whether pages of the zone may download HTML fonts.</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, HTML fonts can be downloaded automatically. If you enable this policy setting and Prompt is selected in the drop-down box, users are queried whether to allow HTML fonts to download.</p>
+
+<p style="margin-left: 20px">If you disable this policy setting, HTML fonts are prevented from downloading.</p>
+
+<p style="margin-left: 20px">If you do not configure this policy setting, HTML fonts can be downloaded automatically.</p>
+
+<a href="" id="internetexplorer-lockeddowntrustedsiteszoneallowlessprivilegedsites"></a>**InternetExplorer/LockedDownTrustedSitesZoneAllowLessPrivilegedSites**
+
+<p style="margin-left: 20px">This policy setting allows you to manage whether Web sites from less privileged zones, such as Internet sites, can navigate into this zone.</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, Web sites from less privileged zones can open new windows in, or navigate into, this zone. The security zone will run without the added layer of security that is provided by the Protection from Zone Elevation security feature. If you select Prompt in the drop-down box, a warning is issued to the user that potentially risky navigation is about to occur.</p>
+
+<p style="margin-left: 20px">If you disable this policy setting, the possibly harmful navigations are prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.</p>
+
+<p style="margin-left: 20px">If you do not configure this policy setting, the possibly harmful navigations are prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.</p>
+
+<a href="" id="internetexplorer-lockeddowntrustedsiteszoneallownetframeworkreliantcomponents"></a>**InternetExplorer/LockedDownTrustedSitesZoneAllowNETFrameworkReliantComponents**
+
+<p style="margin-left: 20px">This policy setting allows you to manage whether .NET Framework components that are not signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link.</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, Internet Explorer will execute unsigned managed components. If you select Prompt in the drop-down box, Internet Explorer will prompt the user to determine whether to execute unsigned managed components.</p>
+
+<p style="margin-left: 20px">If you disable this policy setting, Internet Explorer will not execute unsigned managed components.</p>
+
+<p style="margin-left: 20px">If you do not configure this policy setting, Internet Explorer will not execute unsigned managed components.</p>
+
+<a href="" id="internetexplorer-lockeddowntrustedsiteszoneallowscriptlets"></a>**InternetExplorer/LockedDownTrustedSitesZoneAllowScriptlets**
+
+<p style="margin-left: 20px">This policy setting allows you to manage whether the user can run scriptlets.</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, the user can run scriptlets.</p>
+
+<p style="margin-left: 20px">If you disable this policy setting, the user cannot run scriptlets.</p>
+
+<p style="margin-left: 20px">If you do not configure this policy setting, the user can enable or disable scriptlets.</p>
+
+<a href="" id="internetexplorer-lockeddowntrustedsiteszoneallowsmartscreenie"></a>**InternetExplorer/LockedDownTrustedSitesZoneAllowSmartScreenIE**
+
+<p style="margin-left: 20px">This policy setting controls whether SmartScreen Filter scans pages in this zone for malicious content.</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, SmartScreen Filter scans pages in this zone for malicious content.</p>
+
+<p style="margin-left: 20px">If you disable this policy setting, SmartScreen Filter does not scan pages in this zone for malicious content.</p>
+
+<p style="margin-left: 20px">If you do not configure this policy setting, the user can choose whether SmartScreen Filter scans pages in this zone for malicious content.</p>
+
+<p style="margin-left: 20px">Note: In Internet Explorer 7, this policy setting controls whether Phishing Filter scans pages in this zone for malicious content.</p>
+
+<a href="" id="internetexplorer-lockeddowntrustedsiteszoneallowuserdatapersistence"></a>**InternetExplorer/LockedDownTrustedSitesZoneAllowUserDataPersistence**
+
+<p style="margin-left: 20px">This policy setting allows you to manage the preservation of information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk. When a user returns to a persisted page, the state of the page can be restored if this policy setting is appropriately configured.</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, users can preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.</p>
+
+<p style="margin-left: 20px">If you disable this policy setting, users cannot preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.</p>
+
+<p style="margin-left: 20px">If you do not configure this policy setting, users can preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.</p>
+
+<a href="" id="internetexplorer-lockeddowntrustedsiteszoneinitializeandscriptactivexcontrols"></a>**InternetExplorer/LockedDownTrustedSitesZoneInitializeAndScriptActiveXControls**
+
+<p style="margin-left: 20px">This policy setting allows you to manage ActiveX controls not marked as safe.</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, ActiveX controls are run, loaded with parameters, and scripted without setting object safety for untrusted data or scripts. This setting is not recommended, except for secure and administered zones. This setting causes both unsafe and safe controls to be initialized and scripted, ignoring the Script ActiveX controls marked safe for scripting option.</p>
+
+<p style="margin-left: 20px">If you enable this policy setting and select Prompt in the drop-down box, users are queried whether to allow the control to be loaded with parameters or scripted.</p>
+
+<p style="margin-left: 20px">If you disable this policy setting, ActiveX controls that cannot be made safe are not loaded with parameters or scripted.</p>
+
+<p style="margin-left: 20px">If you do not configure this policy setting, ActiveX controls that cannot be made safe are not loaded with parameters or scripted.</p>
+
+<a href="" id="internetexplorer-lockeddowntrustedsiteszonenavigatewindowsandframes"></a>**InternetExplorer/LockedDownTrustedSitesZoneNavigateWindowsAndFrames**
+
+<p style="margin-left: 20px">This policy setting allows you to manage the opening of windows and frames and access of applications across different domains.</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, users can open windows and frames from othe domains and access applications from other domains. If you select Prompt in the drop-down box, users are queried whether to allow windows and frames to access applications from other domains.</p>
+
+<p style="margin-left: 20px">If you disable this policy setting, users cannot open windows and frames to access applications from different domains.</p>
+
+<p style="margin-left: 20px">If you do not configure this policy setting, users can open windows and frames from othe domains and access applications from other domains.</p>
+
+<a href="" id="internetexplorer-restrictedsiteszoneallowaccesstodatasources"></a>**InternetExplorer/RestrictedSitesZoneAllowAccessToDataSources**
+
+<p style="margin-left: 20px">This policy setting allows you to manage whether Internet Explorer can access data from another security zone using the Microsoft XML Parser (MSXML) or ActiveX Data Objects (ADO).</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, users can load a page in the zone that uses MSXML or ADO to access data from another site in the zone. If you select Prompt in the drop-down box, users are queried to choose whether to allow a page to be loaded in the zone that uses MSXML or ADO to access data from another site in the zone.</p>
+
+<p style="margin-left: 20px">If you disable this policy setting, users cannot load a page in the zone that uses MSXML or ADO to access data from another site in the zone.</p>
+
+<p style="margin-left: 20px">If you do not configure this policy setting, users cannot load a page in the zone that uses MSXML or ADO to access data from another site in the zone.</p>
+
+<a href="" id="internetexplorer-restrictedsiteszoneallowautomaticpromptingforactivexcontrols"></a>**InternetExplorer/RestrictedSitesZoneAllowAutomaticPromptingForActiveXControls**
+
+<p style="margin-left: 20px">This policy setting manages whether users will be automatically prompted for ActiveX control installations.</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, users will receive a prompt when a site instantiates an ActiveX control they do not have installed.</p>
+
+<p style="margin-left: 20px">If you disable this policy setting, ActiveX control installations will be blocked using the Notification bar. Users can click on the Notification bar to allow the ActiveX control prompt.</p>
+
+<p style="margin-left: 20px">If you do not configure this policy setting, ActiveX control installations will be blocked using the Notification bar. Users can click on the Notification bar to allow the ActiveX control prompt.</p>
+
+<a href="" id="internetexplorer-restrictedsiteszoneallowautomaticpromptingforfiledownloads"></a>**InternetExplorer/RestrictedSitesZoneAllowAutomaticPromptingForFileDownloads**
+
+<p style="margin-left: 20px">This policy setting determines whether users will be prompted for non user-initiated file downloads. Regardless of this setting, users will receive file download dialogs for user-initiated downloads.</p>
+
+<p style="margin-left: 20px">If you enable this setting, users will receive a file download dialog for automatic download attempts.</p>
+
+<p style="margin-left: 20px">If you disable or do not configure this setting, file downloads that are not user-initiated will be blocked, and users will see the Notification bar instead of the file download dialog. Users can then click the Notification bar to allow the file download prompt.</p>
+
+<a href="" id="internetexplorer-restrictedsiteszoneallowfontdownloads"></a>**InternetExplorer/RestrictedSitesZoneAllowFontDownloads**
+
+<p style="margin-left: 20px">This policy setting allows you to manage whether pages of the zone may download HTML fonts.</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, HTML fonts can be downloaded automatically. If you enable this policy setting and Prompt is selected in the drop-down box, users are queried whether to allow HTML fonts to download.</p>
+
+<p style="margin-left: 20px">If you disable this policy setting, HTML fonts are prevented from downloading.</p>
+
+<p style="margin-left: 20px">If you do not configure this policy setting, users are queried whether to allow HTML fonts to download.</p>
+
+<a href="" id="internetexplorer-restrictedsiteszoneallowlessprivilegedsites"></a>**InternetExplorer/RestrictedSitesZoneAllowLessPrivilegedSites**
+
+<p style="margin-left: 20px">This policy setting allows you to manage whether Web sites from less privileged zones, such as Internet sites, can navigate into this zone.</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, Web sites from less privileged zones can open new windows in, or navigate into, this zone. The security zone will run without the added layer of security that is provided by the Protection from Zone Elevation security feature. If you select Prompt in the drop-down box, a warning is issued to the user that potentially risky navigation is about to occur.</p>
+
+<p style="margin-left: 20px">If you disable this policy setting, the possibly harmful navigations are prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.</p>
+
+<p style="margin-left: 20px">If you do not configure this policy setting, the possibly harmful navigations are prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.</p>
+
+<a href="" id="internetexplorer-restrictedsiteszoneallownetframeworkreliantcomponents"></a>**InternetExplorer/RestrictedSitesZoneAllowNETFrameworkReliantComponents**
+
+<p style="margin-left: 20px">This policy setting allows you to manage whether .NET Framework components that are not signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link.</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, Internet Explorer will execute unsigned managed components. If you select Prompt in the drop-down box, Internet Explorer will prompt the user to determine whether to execute unsigned managed components.</p>
+
+<p style="margin-left: 20px">If you disable this policy setting, Internet Explorer will not execute unsigned managed components.</p>
+
+<p style="margin-left: 20px">If you do not configure this policy setting, Internet Explorer will not execute unsigned managed components.</p>
+
+<a href="" id="internetexplorer-restrictedsiteszoneallowscriptlets"></a>**InternetExplorer/RestrictedSitesZoneAllowScriptlets**
+
+<p style="margin-left: 20px">This policy setting allows you to manage whether the user can run scriptlets.</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, the user can run scriptlets.</p>
+
+<p style="margin-left: 20px">If you disable this policy setting, the user cannot run scriptlets.</p>
+
+<p style="margin-left: 20px">If you do not configure this policy setting, the user can enable or disable scriptlets.</p>
+
+<a href="" id="internetexplorer-restrictedsiteszoneallowsmartscreenie"></a>**InternetExplorer/RestrictedSitesZoneAllowSmartScreenIE**
+
+<p style="margin-left: 20px">This policy setting controls whether SmartScreen Filter scans pages in this zone for malicious content.</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, SmartScreen Filter scans pages in this zone for malicious content.</p>
+
+<p style="margin-left: 20px">If you disable this policy setting, SmartScreen Filter does not scan pages in this zone for malicious content.</p>
+
+<p style="margin-left: 20px">If you do not configure this policy setting, the user can choose whether SmartScreen Filter scans pages in this zone for malicious content.</p>
+
+<p style="margin-left: 20px">Note: In Internet Explorer 7, this policy setting controls whether Phishing Filter scans pages in this zone for malicious content.</p>
+
+<a href="" id="internetexplorer-restrictedsiteszoneallowuserdatapersistence"></a>**InternetExplorer/RestrictedSitesZoneAllowUserDataPersistence**
+
+<p style="margin-left: 20px">This policy setting allows you to manage the preservation of information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk. When a user returns to a persisted page, the state of the page can be restored if this policy setting is appropriately configured.</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, users can preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.</p>
+
+<p style="margin-left: 20px">If you disable this policy setting, users cannot preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.</p>
+
+<p style="margin-left: 20px">If you do not configure this policy setting, users cannot preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.</p>
+
+<a href="" id="internetexplorer-restrictedsiteszoneinitializeandscriptactivexcontrols"></a>**InternetExplorer/RestrictedSitesZoneInitializeAndScriptActiveXControls**
+
+<p style="margin-left: 20px">This policy setting allows you to manage ActiveX controls not marked as safe.</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, ActiveX controls are run, loaded with parameters, and scripted without setting object safety for untrusted data or scripts. This setting is not recommended, except for secure and administered zones. This setting causes both unsafe and safe controls to be initialized and scripted, ignoring the Script ActiveX controls marked safe for scripting option.</p>
+
+<p style="margin-left: 20px">If you enable this policy setting and select Prompt in the drop-down box, users are queried whether to allow the control to be loaded with parameters or scripted.</p>
+
+<p style="margin-left: 20px">If you disable this policy setting, ActiveX controls that cannot be made safe are not loaded with parameters or scripted.</p>
+
+<p style="margin-left: 20px">If you do not configure this policy setting, ActiveX controls that cannot be made safe are not loaded with parameters or scripted.</p>
+
+<a href="" id="internetexplorer-restrictedsiteszonenavigatewindowsandframes"></a>**InternetExplorer/RestrictedSitesZoneNavigateWindowsAndFrames**
+
+<p style="margin-left: 20px">This policy setting allows you to manage the opening of windows and frames and access of applications across different domains.</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, users can open additional windows and frames from other domains and access applications from other domains. If you select Prompt in the drop-down box, users are queried whether to allow additional windows and frames to access applications from other domains.</p>
+
+<p style="margin-left: 20px">If you disable this policy setting, users cannot open other windows and frames from other domains or access applications from different domains.</p>
+
+<p style="margin-left: 20px">If you do not configure this policy setting, users cannot open other windows and frames from different domains or access applications from different domains.</p>
+
+<a href="" id="internetexplorer-searchproviderlist"></a>**InternetExplorer/SearchProviderList**
+
+<p style="margin-left: 20px">This policy setting allows you to restrict the search providers that appear in the Search box in Internet Explorer to those defined in the list of policy keys for search providers (found under [HKCU or HKLM\Software\policies\Microsoft\Internet Explorer\SearchScopes]). Normally, search providers can be added from third-party toolbars or in Setup, but the user can also add them from a search provider's website.</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, the user cannot configure the list of search providers on his or her computer, and any default providers installed do not appear (including providers installed from other applications). The only providers that appear are those in the list of policy keys for search providers. Note: This list can be created through a custom administrative template file. For information about creating this custom administrative template file, see the Internet Explorer documentation on search providers.</p>
+
+<p style="margin-left: 20px">If you disable or do not configure this policy setting, the user can configure his or her list of search providers.</p>
+
+<a href="" id="internetexplorer-trustedsiteszoneallowaccesstodatasources"></a>**InternetExplorer/TrustedSitesZoneAllowAccessToDataSources**
+
+<p style="margin-left: 20px">This policy setting allows you to manage whether Internet Explorer can access data from another security zone using the Microsoft XML Parser (MSXML) or ActiveX Data Objects (ADO).</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, users can load a page in the zone that uses MSXML or ADO to access data from another site in the zone. If you select Prompt in the drop-down box, users are queried to choose whether to allow a page to be loaded in the zone that uses MSXML or ADO to access data from another site in the zone.</p>
+
+<p style="margin-left: 20px">If you disable this policy setting, users cannot load a page in the zone that uses MSXML or ADO to access data from another site in the zone.</p>
+
+<p style="margin-left: 20px">If you do not configure this policy setting, users can load a page in the zone that uses MSXML or ADO to access data from another site in the zone.</p>
+
+<a href="" id="internetexplorer-trustedsiteszoneallowautomaticpromptingforactivexcontrols"></a>**InternetExplorer/TrustedSitesZoneAllowAutomaticPromptingForActiveXControls**
+
+<p style="margin-left: 20px">This policy setting manages whether users will be automatically prompted for ActiveX control installations.</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, users will receive a prompt when a site instantiates an ActiveX control they do not have installed.</p>
+
+<p style="margin-left: 20px">If you disable this policy setting, ActiveX control installations will be blocked using the Notification bar. Users can click on the Notification bar to allow the ActiveX control prompt.</p>
+
+<p style="margin-left: 20px">If you do not configure this policy setting, users will receive a prompt when a site instantiates an ActiveX control they do not have installed.</p>
+
+<a href="" id="internetexplorer-trustedsiteszoneallowautomaticpromptingforfiledownloads"></a>**InternetExplorer/TrustedSitesZoneAllowAutomaticPromptingForFileDownloads**
+
+<p style="margin-left: 20px">This policy setting determines whether users will be prompted for non user-initiated file downloads. Regardless of this setting, users will receive file download dialogs for user-initiated downloads.</p>
+
+<p style="margin-left: 20px">If you enable this setting, users will receive a file download dialog for automatic download attempts.</p>
+
+<p style="margin-left: 20px">If you disable or do not configure this setting, users will receive a file download dialog for automatic download attempts.</p>
+
+<a href="" id="internetexplorer-trustedsiteszoneallowfontdownloads"></a>**InternetExplorer/TrustedSitesZoneAllowFontDownloads**
+
+<p style="margin-left: 20px">This policy setting allows you to manage whether pages of the zone may download HTML fonts.</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, HTML fonts can be downloaded automatically. If you enable this policy setting and Prompt is selected in the drop-down box, users are queried whether to allow HTML fonts to download.</p>
+
+<p style="margin-left: 20px">If you disable this policy setting, HTML fonts are prevented from downloading.</p>
+
+<p style="margin-left: 20px">If you do not configure this policy setting, HTML fonts can be downloaded automatically.</p>
+
+<a href="" id="internetexplorer-trustedsiteszoneallowlessprivilegedsites"></a>**InternetExplorer/TrustedSitesZoneAllowLessPrivilegedSites**
+
+<p style="margin-left: 20px">This policy setting allows you to manage whether Web sites from less privileged zones, such as Restricted Sites, can navigate into this zone.</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, Web sites from less privileged zones can open new windows in, or navigate into, this zone.  The security zone will run without the added layer of security that is provided by the Protection from Zone Elevation security feature. If you select Prompt in the drop-down box, a warning is issued to the user that potentially risky navigation is about to occur.</p>
+
+<p style="margin-left: 20px">If you disable this policy setting, the possibly harmful navigations are prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.</p>
+
+<p style="margin-left: 20px">If you do not configure this policy setting, a warning is issued to the user that potentially risky navigation is about to occur.</p>
+
+<a href="" id="internetexplorer-trustedsiteszoneallownetframeworkreliantcomponents"></a>**InternetExplorer/TrustedSitesZoneAllowNETFrameworkReliantComponents**
+
+<p style="margin-left: 20px">This policy setting allows you to manage whether .NET Framework components that are not signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link.</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, Internet Explorer will execute unsigned managed components. If you select Prompt in the drop-down box, Internet Explorer will prompt the user to determine whether to execute unsigned managed components.</p>
+
+<p style="margin-left: 20px">If you disable this policy setting, Internet Explorer will not execute unsigned managed components.</p>
+
+<p style="margin-left: 20px">If you do not configure this policy setting, Internet Explorer will execute unsigned managed components.</p>
+
+<a href="" id="internetexplorer-trustedsiteszoneallowscriptlets"></a>**InternetExplorer/TrustedSitesZoneAllowScriptlets**
+
+<p style="margin-left: 20px">This policy setting allows you to manage whether the user can run scriptlets.</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, the user can run scriptlets.</p>
+
+<p style="margin-left: 20px">If you disable this policy setting, the user cannot run scriptlets.</p>
+
+<p style="margin-left: 20px">If you do not configure this policy setting, the user can enable or disable scriptlets.</p>
+
+<a href="" id="internetexplorer-trustedsiteszoneallowsmartscreenie"></a>**InternetExplorer/TrustedSitesZoneAllowSmartScreenIE**
+
+<p style="margin-left: 20px">This policy setting controls whether SmartScreen Filter scans pages in this zone for malicious content.</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, SmartScreen Filter scans pages in this zone for malicious content.</p>
+
+<p style="margin-left: 20px">If you disable this policy setting, SmartScreen Filter does not scan pages in this zone for malicious content.</p>
+
+<p style="margin-left: 20px">If you do not configure this policy setting, the user can choose whether SmartScreen Filter scans pages in this zone for malicious content.</p>
+
+<p style="margin-left: 20px">Note: In Internet Explorer 7, this policy setting controls whether Phishing Filter scans pages in this zone for malicious content.</p>
+
+<a href="" id="internetexplorer-trustedsiteszoneallowuserdatapersistence"></a>**InternetExplorer/TrustedSitesZoneAllowUserDataPersistence**
+
+<p style="margin-left: 20px">This policy setting allows you to manage the preservation of information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk. When a user returns to a persisted page, the state of the page can be restored if this policy setting is appropriately configured.</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, users can preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.</p>
+
+<p style="margin-left: 20px">If you disable this policy setting, users cannot preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.</p>
+
+<p style="margin-left: 20px">If you do not configure this policy setting, users can preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.</p>
+
+<a href="" id="internetexplorer-trustedsiteszoneinitializeandscriptactivexcontrols"></a>**InternetExplorer/TrustedSitesZoneInitializeAndScriptActiveXControls**
+
+<p style="margin-left: 20px">This policy setting allows you to manage ActiveX controls not marked as safe.</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, ActiveX controls are run, loaded with parameters, and scripted without setting object safety for untrusted data or scripts. This setting is not recommended, except for secure and administered zones. This setting causes both unsafe and safe controls to be initialized and scripted, ignoring the Script ActiveX controls marked safe for scripting option.</p>
+
+<p style="margin-left: 20px">If you enable this policy setting and select Prompt in the drop-down box, users are queried whether to allow the control to be loaded with parameters or scripted.</p>
+
+<p style="margin-left: 20px">If you disable this policy setting, ActiveX controls that cannot be made safe are not loaded with parameters or scripted.</p>
+
+<p style="margin-left: 20px">If you do not configure this policy setting, users are queried whether to allow the control to be loaded with parameters or scripted.</p>
+
+<a href="" id="internetexplorer-trustedsiteszonenavigatewindowsandframes"></a>**InternetExplorer/TrustedSitesZoneNavigateWindowsAndFrames**
+
+<p style="margin-left: 20px">This policy setting allows you to manage the opening of windows and frames and access of applications across different domains.</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, users can open windows and frames from othe domains and access applications from other domains. If you select Prompt in the drop-down box, users are queried whether to allow windows and frames to access applications from other domains.</p>
+
+<p style="margin-left: 20px">If you disable this policy setting, users cannot open windows and frames to access applications from different domains.</p>
+
+<p style="margin-left: 20px">If you do not configure this policy setting, users can open windows and frames from othe domains and access applications from other domains.</p>
+
+<a href="" id="kerberos-allowforestsearchfolder"></a>**Kerberos/AllowForestSearchFolder**
+
+<p style="margin-left: 20px">This policy setting defines the list of trusting forests that the Kerberos client searches when attempting to resolve two-part service principal names (SPNs).</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, the Kerberos client searches the forests in this list, if it is unable to resolve a two-part SPN. If a match is found, the Kerberos client requests a referral ticket to the appropriate domain.</p>
+
+<p style="margin-left: 20px">If you disable or do not configure this policy setting, the Kerberos client does not search the listed forests to resolve the SPN. If the Kerberos client is unable to resolve the SPN because the name is not found, NTLM authentication might be used.</p>
+
+<a href="" id="kerberos-kerberosclientsupportsclaimscompoundarmor"></a>**Kerberos/KerberosClientSupportsClaimsCompoundArmor**
+
+<p style="margin-left: 20px">This policy setting controls whether a device will request claims and compound authentication for Dynamic Access Control and Kerberos armoring using Kerberos authentication with domains that support these features.</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, the client computers will request claims, provide information required to create compounded authentication and armor Kerberos messages in domains which support claims and compound authentication for Dynamic Access Control and Kerberos armoring.</p>
+
+<p style="margin-left: 20px">If you disable or do not configure this policy setting, the client devices will not request claims, provide information required to create compounded authentication and armor Kerberos messages. Services hosted on the device will not be able to retrieve claims for clients using Kerberos protocol transition.</p>
 
 <a href="" id="kerberos-requirekerberosarmoring"></a>**Kerberos/RequireKerberosArmoring**
 
@@ -3772,14 +3918,6 @@ The Policy configuration service provider enables the enterprise to configure po
 <p style="margin-left: 20px">Note: The Kerberos Group Policy "Kerberos client support for claims, compound authentication and Kerberos armoring" must also be enabled to support Kerberos armoring.</p>
 
 <p style="margin-left: 20px">If you disable or do not configure this policy setting, the client computers in the domain enforce the use of Kerberos armoring when possible as supported by the target domain.</p>
-
-<a href="" id="kerberos-kerberosclientsupportsclaimscompoundarmor"></a>**Kerberos/KerberosClientSupportsClaimsCompoundArmor**
-
-<p style="margin-left: 20px">This policy setting controls whether a device will request claims and compound authentication for Dynamic Access Control and Kerberos armoring using Kerberos authentication with domains that support these features.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, the client computers will request claims, provide information required to create compounded authentication and armor Kerberos messages in domains which support claims and compound authentication for Dynamic Access Control and Kerberos armoring.</p>
-
-<p style="margin-left: 20px">If you disable or do not configure this policy setting, the client devices will not request claims, provide information required to create compounded authentication and armor Kerberos messages. Services hosted on the device will not be able to retrieve claims for clients using Kerberos protocol transition.</p>
 
 <a href="" id="kerberos-requirestrictkdcvalidation"></a>**Kerberos/RequireStrictKDCValidation**
 
@@ -3800,36 +3938,6 @@ The Policy configuration service provider enables the enterprise to configure po
 <p style="margin-left: 20px">If you disable or do not configure this policy setting, the Kerberos client or server uses the locally configured value or the default value.</p>
 
 <p style="margin-left: 20px">Note: This policy setting configures the existing MaxTokenSize registry value in HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa\Kerberos\Parameters, which was added in Windows XP and Windows Server 2003, with a default value of 12,000 bytes. Beginning with Windows 8 the default is 48,000 bytes. Due to HTTP's base64 encoding of authentication context tokens, it is not advised to set this value more than 48,000 bytes.</p>
-
-<a href="" id="kerberos-allowforestsearchfolder"></a>**Kerberos/AllowForestSearchFolder**
-
-<p style="margin-left: 20px">This policy setting defines the list of trusting forests that the Kerberos client searches when attempting to resolve two-part service principal names (SPNs).</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, the Kerberos client searches the forests in this list, if it is unable to resolve a two-part SPN. If a match is found, the Kerberos client requests a referral ticket to the appropriate domain.</p>
-
-<p style="margin-left: 20px">If you disable or do not configure this policy setting, the Kerberos client does not search the listed forests to resolve the SPN. If the Kerberos client is unable to resolve the SPN because the name is not found, NTLM authentication might be used.</p>
-
-<a href="" id="windowslogon-dontdisplaynetworkselectionui"></a>**WindowsLogon/DontDisplayNetworkSelectionUI**
-
-<p style="margin-left: 20px">This policy setting allows you to control whether anyone can interact with available networks UI on the logon screen.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, the PC's network connectivity state cannot be changed without signing into Windows.</p>
-
-<p style="margin-left: 20px">If you disable or don't configure this policy setting, any user can disconnect the PC from the network or can connect the PC to other available networks without signing into Windows.</p>
-
-<a href="" id="windowslogon-disablelockscreenappnotifications"></a>**WindowsLogon/DisableLockScreenAppNotifications**
-
-<p style="margin-left: 20px">This policy setting allows you to prevent app notifications from appearing on the lock screen.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, no app notifications are displayed on the lock screen.</p>
-
-<p style="margin-left: 20px">If you disable or do not configure this policy setting, users can choose which apps display notifications on the lock screen.</p>
-
-<a href="" id="connectivity-hardeneduncpaths"></a>**Connectivity/HardenedUNCPaths**
-
-<p style="margin-left: 20px">This policy setting configures secure access to UNC paths.</p>
-
-<p style="margin-left: 20px">If you enable this policy, Windows only allows access to the specified UNC paths after fulfilling additional security requirements.</p>
 
 <a href="" id="power-allowstandbywhensleepingpluggedin"></a>**Power/AllowStandbyWhenSleepingPluggedIn**
 
@@ -3929,6 +4037,48 @@ The Policy configuration service provider enables the enterprise to configure po
 
 <p style="margin-left: 20px">Note: This settings takes priority over the setting "Automatically publish new printers in the Active Directory".</p>
 
+<a href="" id="remoteassistance-customizewarningmessages"></a>**RemoteAssistance/CustomizeWarningMessages**
+
+<p style="margin-left: 20px">This policy setting lets you customize warning messages.</p>
+
+<p style="margin-left: 20px">The "Display warning message before sharing control" policy setting allows you to specify a custom message to display before a user shares control of his or her computer.</p>
+
+<p style="margin-left: 20px">The "Display warning message before connecting" policy setting allows you to specify a custom message to display before a user allows a connection to his or her computer.</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, the warning message you specify overrides the default message that is seen by the novice.</p>
+
+<p style="margin-left: 20px">If you disable this policy setting, the user sees the default warning message.</p>
+
+<p style="margin-left: 20px">If you do not configure this policy setting, the user sees the default warning message.</p>
+
+<a href="" id="remoteassistance-sessionlogging"></a>**RemoteAssistance/SessionLogging**
+
+<p style="margin-left: 20px">This policy setting allows you to turn logging on or off. Log files are located in the user's Documents folder under Remote Assistance.</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, log files are generated.</p>
+
+<p style="margin-left: 20px">If you disable this policy setting, log files are not generated.</p>
+
+<p style="margin-left: 20px">If you do not configure this setting, application-based settings are used.</p>
+
+<a href="" id="remoteassistance-solicitedremoteassistance"></a>**RemoteAssistance/SolicitedRemoteAssistance**
+
+<p style="margin-left: 20px">This policy setting allows you to turn on or turn off Solicited (Ask for) Remote Assistance on this computer.</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, users on this computer can use email or file transfer to ask someone for help. Also, users can use instant messaging programs to allow connections to this computer, and you can configure additional Remote Assistance settings.</p>
+
+<p style="margin-left: 20px">If you disable this policy setting, users on this computer cannot use email or file transfer to ask someone for help. Also, users cannot use instant messaging programs to allow connections to this computer.</p>
+
+<p style="margin-left: 20px">If you do not configure this policy setting, users can turn on or turn off Solicited (Ask for) Remote Assistance themselves in System Properties in Control Panel. Users can also configure Remote Assistance settings.</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, you have two ways to allow helpers to provide Remote Assistance: "Allow helpers to only view the computer" or "Allow helpers to remotely control the computer."</p>
+
+<p style="margin-left: 20px">The "Maximum ticket time" policy setting sets a limit on the amount of time that a Remote Assistance invitation created by using email or file transfer can remain open.</p>
+
+<p style="margin-left: 20px">The "Select the method for sending email invitations" setting specifies which email standard to use to send Remote Assistance invitations. Depending on your email program, you can use either the Mailto standard (the invitation recipient connects through an Internet link) or the SMAPI (Simple MAPI) standard (the invitation is attached to your email message). This policy setting is not available in Windows Vista since SMAPI is the only method supported.</p>
+
+<p style="margin-left: 20px">If you enable this policy setting you should also enable appropriate firewall exceptions to allow Remote Assistance communications.</p>
+
 <a href="" id="remoteassistance-unsolicitedremoteassitance"></a>**RemoteAssistance/UnsolicitedRemoteAssitance**
 
 <p style="margin-left: 20px">This policy setting allows you to turn on or turn off Offer (Unsolicited) Remote Assistance on this computer.</p>
@@ -3979,47 +4129,85 @@ The Policy configuration service provider enables the enterprise to configure po
 
 <p style="margin-left: 20px">Allow Remote Desktop Exception</p>
 
-<a href="" id="remoteassistance-solicitedremoteassistance"></a>**RemoteAssistance/SolicitedRemoteAssistance**
+<a href="" id="remotedesktopservices-allowuserstoconnectremotely"></a>**RemoteDesktopServices/AllowUsersToConnectRemotely**
 
-<p style="margin-left: 20px">This policy setting allows you to turn on or turn off Solicited (Ask for) Remote Assistance on this computer.</p>
+<p style="margin-left: 20px">This policy setting allows you to configure remote access to computers by using Remote Desktop Services.</p>
 
-<p style="margin-left: 20px">If you enable this policy setting, users on this computer can use email or file transfer to ask someone for help. Also, users can use instant messaging programs to allow connections to this computer, and you can configure additional Remote Assistance settings.</p>
+<p style="margin-left: 20px">If you enable this policy setting, users who are members of the Remote Desktop Users group on the target computer can connect remotely to the target computer by using Remote Desktop Services.</p>
 
-<p style="margin-left: 20px">If you disable this policy setting, users on this computer cannot use email or file transfer to ask someone for help. Also, users cannot use instant messaging programs to allow connections to this computer.</p>
+<p style="margin-left: 20px">If you disable this policy setting, users cannot connect remotely to the target computer by using Remote Desktop Services. The target computer will maintain any current connections, but will not accept any new incoming connections.</p>
 
-<p style="margin-left: 20px">If you do not configure this policy setting, users can turn on or turn off Solicited (Ask for) Remote Assistance themselves in System Properties in Control Panel. Users can also configure Remote Assistance settings.</p>
+<p style="margin-left: 20px">If you do not configure this policy setting, Remote Desktop Services uses the Remote Desktop setting on the target computer to determine whether the remote connection is allowed. This setting is found on the Remote tab in the System properties sheet. By default, remote connections are not allowed.</p>
 
-<p style="margin-left: 20px">If you enable this policy setting, you have two ways to allow helpers to provide Remote Assistance: "Allow helpers to only view the computer" or "Allow helpers to remotely control the computer."</p>
+<p style="margin-left: 20px">Note: You can limit which clients are able to connect remotely by using Remote Desktop Services by configuring the policy setting at Computer Configuration\Administrative Templates\Windows Components\Remote Desktop Services\Remote Desktop Session Host\Security\Require user authentication for remote connections by using Network Level Authentication.</p>
 
-<p style="margin-left: 20px">The "Maximum ticket time" policy setting sets a limit on the amount of time that a Remote Assistance invitation created by using email or file transfer can remain open.</p>
+<p style="margin-left: 20px">You can limit the number of users who can connect simultaneously by configuring the policy setting at Computer Configuration\Administrative Templates\Windows Components\Remote Desktop Services\Remote Desktop Session Host\Connections\Limit number of connections, or by configuring the policy setting Maximum Connections by using the Remote Desktop Session Host WMI Provider.</p>
 
-<p style="margin-left: 20px">The "Select the method for sending email invitations" setting specifies which email standard to use to send Remote Assistance invitations. Depending on your email program, you can use either the Mailto standard (the invitation recipient connects through an Internet link) or the SMAPI (Simple MAPI) standard (the invitation is attached to your email message). This policy setting is not available in Windows Vista since SMAPI is the only method supported.</p>
+<a href="" id="remotedesktopservices-clientconnectionencryptionlevel"></a>**RemoteDesktopServices/ClientConnectionEncryptionLevel**
 
-<p style="margin-left: 20px">If you enable this policy setting you should also enable appropriate firewall exceptions to allow Remote Assistance communications.</p>
+<p style="margin-left: 20px">Specifies whether to require the use of a specific encryption level to secure communications between client computers and RD Session Host servers during Remote Desktop Protocol (RDP) connections. This policy only applies when you are using native RDP encryption. However, native RDP encryption (as opposed to SSL encryption) is not recommended. This policy does not apply to SSL encryption.</p>
 
-<a href="" id="remoteassistance-customizewarningmessages"></a>**RemoteAssistance/CustomizeWarningMessages**
+<p style="margin-left: 20px">If you enable this policy setting, all communications between clients and RD Session Host servers during remote connections must use the encryption method specified in this setting. By default, the encryption level is set to High. The following encryption methods are available:</p>
 
-<p style="margin-left: 20px">This policy setting lets you customize warning messages.</p>
+<p style="margin-left: 20px">* High: The High setting encrypts data sent from the client to the server and from the server to the client by using strong 128-bit encryption. Use this encryption level in environments that contain only 128-bit clients (for example, clients that run Remote Desktop Connection). Clients that do not support this encryption level cannot connect to RD Session Host servers.</p>
 
-<p style="margin-left: 20px">The "Display warning message before sharing control" policy setting allows you to specify a custom message to display before a user shares control of his or her computer.</p>
+<p style="margin-left: 20px">* Client Compatible: The Client Compatible setting encrypts data sent between the client and the server at the maximum key strength supported by the client. Use this encryption level in environments that include clients that do not support 128-bit encryption.</p>
 
-<p style="margin-left: 20px">The "Display warning message before connecting" policy setting allows you to specify a custom message to display before a user allows a connection to his or her computer.</p>
+<p style="margin-left: 20px">* Low: The Low setting encrypts only data sent from the client to the server by using 56-bit encryption.</p>
 
-<p style="margin-left: 20px">If you enable this policy setting, the warning message you specify overrides the default message that is seen by the novice.</p>
+<p style="margin-left: 20px">If you disable or do not configure this setting, the encryption level to be used for remote connections to RD Session Host servers is not enforced through Group Policy.</p>
 
-<p style="margin-left: 20px">If you disable this policy setting, the user sees the default warning message.</p>
+<p style="margin-left: 20px">Important</p>
 
-<p style="margin-left: 20px">If you do not configure this policy setting, the user sees the default warning message.</p>
+<p style="margin-left: 20px">FIPS compliance can be configured through the System cryptography. Use FIPS compliant algorithms for encryption, hashing, and signing settings in Group Policy (under Computer Configuration\Windows Settings\Security Settings\Local Policies\Security Options.) The FIPS compliant setting encrypts and decrypts data sent from the client to the server and from the server to the client, with the Federal Information Processing Standard (FIPS) 140 encryption algorithms, by using Microsoft cryptographic modules. Use this encryption level when communications between clients and RD Session Host servers requires the highest level of encryption.</p>
 
-<a href="" id="remoteassistance-sessionlogging"></a>**RemoteAssistance/SessionLogging**
+<a href="" id="remotedesktopservices-donotallowdriveredirection"></a>**RemoteDesktopServices/DoNotAllowDriveRedirection**
 
-<p style="margin-left: 20px">This policy setting allows you to turn logging on or off. Log files are located in the user's Documents folder under Remote Assistance.</p>
+<p style="margin-left: 20px">This policy setting specifies whether to prevent the mapping of client drives in a Remote Desktop Services session (drive redirection).</p>
 
-<p style="margin-left: 20px">If you enable this policy setting, log files are generated.</p>
+<p style="margin-left: 20px">By default, an RD Session Host server maps client drives automatically upon connection. Mapped drives appear in the session folder tree in File Explorer or Computer in the format &lt;driveletter&gt; on &lt;computername&gt;. You can use this policy setting to override this behavior.</p>
 
-<p style="margin-left: 20px">If you disable this policy setting, log files are not generated.</p>
+<p style="margin-left: 20px">If you enable this policy setting, client drive redirection is not allowed in Remote Desktop Services sessions, and Clipboard file copy redirection is not allowed on computers running Windows Server 2003, Windows 8, and Windows XP.</p>
 
-<p style="margin-left: 20px">If you do not configure this setting, application-based settings are used.</p>
+<p style="margin-left: 20px">If you disable this policy setting, client drive redirection is always allowed. In addition, Clipboard file copy redirection is always allowed if Clipboard redirection is allowed.</p>
+
+<p style="margin-left: 20px">If you do not configure this policy setting, client drive redirection and Clipboard file copy redirection are not specified at the Group Policy level.</p>
+
+<a href="" id="remotedesktopservices-donotallowpasswordsaving"></a>**RemoteDesktopServices/DoNotAllowPasswordSaving**
+
+<p style="margin-left: 20px">Controls whether passwords can be saved on this computer from Remote Desktop Connection.</p>
+
+<p style="margin-left: 20px">If you enable this setting the password saving checkbox in Remote Desktop Connection will be disabled and users will no longer be able to save passwords. When a user opens an RDP file using Remote Desktop Connection and saves his settings, any password that previously existed in the RDP file will be deleted.</p>
+
+<p style="margin-left: 20px">If you disable this setting or leave it not configured, the user will be able to save passwords using Remote Desktop Connection.</p>
+
+<a href="" id="remotedesktopservices-promptforpassworduponconnection"></a>**RemoteDesktopServices/PromptForPasswordUponConnection**
+
+<p style="margin-left: 20px">This policy setting specifies whether Remote Desktop Services always prompts the client for a password upon connection.</p>
+
+<p style="margin-left: 20px">You can use this setting to enforce a password prompt for users logging on to Remote Desktop Services, even if they already provided the password in the Remote Desktop Connection client.</p>
+
+<p style="margin-left: 20px">By default, Remote Desktop Services allows users to automatically log on by entering a password in the Remote Desktop Connection client.</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, users cannot automatically log on to Remote Desktop Services by supplying their passwords in the Remote Desktop Connection client. They are prompted for a password to log on.</p>
+
+<p style="margin-left: 20px">If you disable this policy setting, users can always log on to Remote Desktop Services automatically by supplying their passwords in the Remote Desktop Connection client.</p>
+
+<p style="margin-left: 20px">If you do not configure this policy setting, automatic logon is not specified at the Group Policy level.</p>
+
+<a href="" id="remotedesktopservices-requiresecurerpccommunication"></a>**RemoteDesktopServices/RequireSecureRPCCommunication**
+
+<p style="margin-left: 20px">Specifies whether a Remote Desktop Session Host server requires secure RPC communication with all clients or allows unsecured communication.</p>
+
+<p style="margin-left: 20px">You can use this setting to strengthen the security of RPC communication with clients by allowing only authenticated and encrypted requests.</p>
+
+<p style="margin-left: 20px">If the status is set to Enabled, Remote Desktop Services accepts requests from RPC clients that support secure requests, and does not allow unsecured communication with untrusted clients.</p>
+
+<p style="margin-left: 20px">If the status is set to Disabled, Remote Desktop Services always requests security for all RPC traffic. However, unsecured communication is allowed for RPC clients that do not respond to the request.</p>
+
+<p style="margin-left: 20px">If the status is set to Not Configured, unsecured communication is allowed.</p>
+
+<p style="margin-left: 20px">Note: The RPC interface is used for administering and configuring Remote Desktop Services.</p>
 
 <a href="" id="remoteprocedurecall-rpcendpointmapperclientauthentication"></a>**RemoteProcedureCall/RPCEndpointMapperClientAuthentication**
 
@@ -4053,6 +4241,14 @@ The Policy configuration service provider enables the enterprise to configure po
 
 <p style="margin-left: 20px">Note: This policy setting will not be applied until the system is rebooted.</p>
 
+<a href="" id="storage-enhancedstoragedevices"></a>**Storage/EnhancedStorageDevices**
+
+<p style="margin-left: 20px">This policy setting configures whether or not Windows will activate an Enhanced Storage device.</p>
+
+<p style="margin-left: 20px">If you enable this policy setting, Windows will not activate unactivated Enhanced Storage devices.</p>
+
+<p style="margin-left: 20px">If you disable or do not configure this policy setting, Windows will activate unactivated Enhanced Storage devices.</p>
+
 <a href="" id="system-disablesystemrestore"></a>**System/DisableSystemRestore**
 
 <p style="margin-left: 20px">Allows you to disable System Restore.</p>
@@ -4067,217 +4263,21 @@ The Policy configuration service provider enables the enterprise to configure po
 
 <p style="margin-left: 20px">Also, see the "Turn off System Restore configuration" policy setting. If the "Turn off System Restore" policy setting is disabled or not configured, the "Turn off System Restore configuration" policy setting is used to determine whether the option to configure System Restore is available.</p>
 
-<a href="" id="remotedesktopservices-donotallowpasswordsaving"></a>**RemoteDesktopServices/DoNotAllowPasswordSaving**
+<a href="" id="windowslogon-disablelockscreenappnotifications"></a>**WindowsLogon/DisableLockScreenAppNotifications**
 
-<p style="margin-left: 20px">Controls whether passwords can be saved on this computer from Remote Desktop Connection.</p>
+<p style="margin-left: 20px">This policy setting allows you to prevent app notifications from appearing on the lock screen.</p>
 
-<p style="margin-left: 20px">If you enable this setting the password saving checkbox in Remote Desktop Connection will be disabled and users will no longer be able to save passwords. When a user opens an RDP file using Remote Desktop Connection and saves his settings, any password that previously existed in the RDP file will be deleted.</p>
+<p style="margin-left: 20px">If you enable this policy setting, no app notifications are displayed on the lock screen.</p>
 
-<p style="margin-left: 20px">If you disable this setting or leave it not configured, the user will be able to save passwords using Remote Desktop Connection.</p>
+<p style="margin-left: 20px">If you disable or do not configure this policy setting, users can choose which apps display notifications on the lock screen.</p>
 
-<a href="" id="remotedesktopservices-allowuserstoconnectremotely"></a>**RemoteDesktopServices/AllowUsersToConnectRemotely**
+<a href="" id="windowslogon-dontdisplaynetworkselectionui"></a>**WindowsLogon/DontDisplayNetworkSelectionUI**
 
-<p style="margin-left: 20px">This policy setting allows you to configure remote access to computers by using Remote Desktop Services.</p>
+<p style="margin-left: 20px">This policy setting allows you to control whether anyone can interact with available networks UI on the logon screen.</p>
 
-<p style="margin-left: 20px">If you enable this policy setting, users who are members of the Remote Desktop Users group on the target computer can connect remotely to the target computer by using Remote Desktop Services.</p>
+<p style="margin-left: 20px">If you enable this policy setting, the PC's network connectivity state cannot be changed without signing into Windows.</p>
 
-<p style="margin-left: 20px">If you disable this policy setting, users cannot connect remotely to the target computer by using Remote Desktop Services. The target computer will maintain any current connections, but will not accept any new incoming connections.</p>
-
-<p style="margin-left: 20px">If you do not configure this policy setting, Remote Desktop Services uses the Remote Desktop setting on the target computer to determine whether the remote connection is allowed. This setting is found on the Remote tab in the System properties sheet. By default, remote connections are not allowed.</p>
-
-<p style="margin-left: 20px">Note: You can limit which clients are able to connect remotely by using Remote Desktop Services by configuring the policy setting at Computer Configuration\Administrative Templates\Windows Components\Remote Desktop Services\Remote Desktop Session Host\Security\Require user authentication for remote connections by using Network Level Authentication.</p>
-
-<p style="margin-left: 20px">You can limit the number of users who can connect simultaneously by configuring the policy setting at Computer Configuration\Administrative Templates\Windows Components\Remote Desktop Services\Remote Desktop Session Host\Connections\Limit number of connections, or by configuring the policy setting Maximum Connections by using the Remote Desktop Session Host WMI Provider.</p>
-
-<a href="" id="remotedesktopservices-donotallowdriveredirection"></a>**RemoteDesktopServices/DoNotAllowDriveRedirection**
-
-<p style="margin-left: 20px">This policy setting specifies whether to prevent the mapping of client drives in a Remote Desktop Services session (drive redirection).</p>
-
-<p style="margin-left: 20px">By default, an RD Session Host server maps client drives automatically upon connection. Mapped drives appear in the session folder tree in File Explorer or Computer in the format &lt;driveletter&gt; on &lt;computername&gt;. You can use this policy setting to override this behavior.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, client drive redirection is not allowed in Remote Desktop Services sessions, and Clipboard file copy redirection is not allowed on computers running Windows Server 2003, Windows 8, and Windows XP.</p>
-
-<p style="margin-left: 20px">If you disable this policy setting, client drive redirection is always allowed. In addition, Clipboard file copy redirection is always allowed if Clipboard redirection is allowed.</p>
-
-<p style="margin-left: 20px">If you do not configure this policy setting, client drive redirection and Clipboard file copy redirection are not specified at the Group Policy level.</p>
-
-<a href="" id="remotedesktopservices-promptforpassworduponconnection"></a>**RemoteDesktopServices/PromptForPasswordUponConnection**
-
-<p style="margin-left: 20px">This policy setting specifies whether Remote Desktop Services always prompts the client for a password upon connection.</p>
-
-<p style="margin-left: 20px">You can use this setting to enforce a password prompt for users logging on to Remote Desktop Services, even if they already provided the password in the Remote Desktop Connection client.</p>
-
-<p style="margin-left: 20px">By default, Remote Desktop Services allows users to automatically log on by entering a password in the Remote Desktop Connection client.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, users cannot automatically log on to Remote Desktop Services by supplying their passwords in the Remote Desktop Connection client. They are prompted for a password to log on.</p>
-
-<p style="margin-left: 20px">If you disable this policy setting, users can always log on to Remote Desktop Services automatically by supplying their passwords in the Remote Desktop Connection client.</p>
-
-<p style="margin-left: 20px">If you do not configure this policy setting, automatic logon is not specified at the Group Policy level.</p>
-
-<a href="" id="remotedesktopservices-requiresecurerpccommunication"></a>**RemoteDesktopServices/RequireSecureRPCCommunication**
-
-<p style="margin-left: 20px">Specifies whether a Remote Desktop Session Host server requires secure RPC communication with all clients or allows unsecured communication.</p>
-
-<p style="margin-left: 20px">You can use this setting to strengthen the security of RPC communication with clients by allowing only authenticated and encrypted requests.</p>
-
-<p style="margin-left: 20px">If the status is set to Enabled, Remote Desktop Services accepts requests from RPC clients that support secure requests, and does not allow unsecured communication with untrusted clients.</p>
-
-<p style="margin-left: 20px">If the status is set to Disabled, Remote Desktop Services always requests security for all RPC traffic. However, unsecured communication is allowed for RPC clients that do not respond to the request.</p>
-
-<p style="margin-left: 20px">If the status is set to Not Configured, unsecured communication is allowed.</p>
-
-<p style="margin-left: 20px">Note: The RPC interface is used for administering and configuring Remote Desktop Services.</p>
-
-<a href="" id="remotedesktopservices-clientconnectionencryptionlevel"></a>**RemoteDesktopServices/ClientConnectionEncryptionLevel**
-
-<p style="margin-left: 20px">Specifies whether to require the use of a specific encryption level to secure communications between client computers and RD Session Host servers during Remote Desktop Protocol (RDP) connections. This policy only applies when you are using native RDP encryption. However, native RDP encryption (as opposed to SSL encryption) is not recommended. This policy does not apply to SSL encryption.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, all communications between clients and RD Session Host servers during remote connections must use the encryption method specified in this setting. By default, the encryption level is set to High. The following encryption methods are available:</p>
-
-<p style="margin-left: 20px">* High: The High setting encrypts data sent from the client to the server and from the server to the client by using strong 128-bit encryption. Use this encryption level in environments that contain only 128-bit clients (for example, clients that run Remote Desktop Connection). Clients that do not support this encryption level cannot connect to RD Session Host servers.</p>
-
-<p style="margin-left: 20px">* Client Compatible: The Client Compatible setting encrypts data sent between the client and the server at the maximum key strength supported by the client. Use this encryption level in environments that include clients that do not support 128-bit encryption.</p>
-
-<p style="margin-left: 20px">* Low: The Low setting encrypts only data sent from the client to the server by using 56-bit encryption.</p>
-
-<p style="margin-left: 20px">If you disable or do not configure this setting, the encryption level to be used for remote connections to RD Session Host servers is not enforced through Group Policy.</p>
-
-<p style="margin-left: 20px">Important</p>
-
-<p style="margin-left: 20px">FIPS compliance can be configured through the System cryptography. Use FIPS compliant algorithms for encryption, hashing, and signing settings in Group Policy (under Computer Configuration\Windows Settings\Security Settings\Local Policies\Security Options.) The FIPS compliant setting encrypts and decrypts data sent from the client to the server and from the server to the client, with the Federal Information Processing Standard (FIPS) 140 encryption algorithms, by using Microsoft cryptographic modules. Use this encryption level when communications between clients and RD Session Host servers requires the highest level of encryption.</p>
-
-<a href="" id="bitlocker-bitencryptionmethodbydrivetype "></a>**BitLocker/BitEncryptionMethodByDriveType **
-
-<p style="margin-left: 20px">This policy setting allows you to configure the algorithm and cipher strength used by BitLocker Drive Encryption. This policy setting is applied when you turn on BitLocker. Changing the encryption method has no effect if the drive is already encrypted, or if encryption is in progress.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting you will be able to configure an encryption algorithm and key cipher strength for fixed data drives, operating system drives, and removable data drives individually. For fixed and operating system drives, we recommend that you use the XTS-AES algorithm. For removable drives, you should use AES-CBC 128-bit or AES-CBC 256-bit if the drive will be used in other devices that are not running Windows 10 (Version 1511).</p>
-
-<p style="margin-left: 20px">If you disable or do not configure this policy setting, BitLocker will use AES with the same bit strength (128-bit or 256-bit) as the "Choose drive encryption method and cipher strength (Windows Vista, Windows Server 2008, Windows 7)" and "Choose drive encryption method and cipher strength" policy settings (in that order), if they are set. If none of the policies are set, BitLocker will use the default encryption method of XTS-AES 128-bit or the encryption method specified by the setup script.</p>
-
-<a href="" id="bitlocker-fixeddrivesrecoveryoptions"></a>**BitLocker/FixedDrivesRecoveryOptions**
-
-<p style="margin-left: 20px">This policy setting allows you to control how BitLocker-protected fixed data drives are recovered in the absence of the required credentials. This policy setting is applied when you turn on BitLocker.</p>
-
-<p style="margin-left: 20px">The "Allow data recovery agent" check box is used to specify whether a data recovery agent can be used with BitLocker-protected fixed data drives. Before a data recovery agent can be used it must be added from the Public Key Policies item in either the Group Policy Management Console or the Local Group Policy Editor. Consult the BitLocker Drive Encryption Deployment Guide on Microsoft TechNet for more information about adding data recovery agents.</p>
-
-<p style="margin-left: 20px">In "Configure user storage of BitLocker recovery information" select whether users are allowed, required, or not allowed to generate a 48-digit recovery password or a 256-bit recovery key.</p>
-
-<p style="margin-left: 20px">Select "Omit recovery options from the BitLocker setup wizard" to prevent users from specifying recovery options when they turn on BitLocker on a drive. This means that you will not be able to specify which recovery option to use when you turn on BitLocker, instead BitLocker recovery options for the drive are determined by the policy setting.</p>
-
-<p style="margin-left: 20px">In "Save BitLocker recovery information to Active Directory Domain Services" choose which BitLocker recovery information to store in AD DS for fixed data drives. If you select "Backup recovery password and key package", both the BitLocker recovery password and key package are stored in AD DS. Storing the key package supports recovering data from a drive that has been physically corrupted. If you select "Backup recovery password only," only the recovery password is stored in AD DS.</p>
-
-<p style="margin-left: 20px">Select the "Do not enable BitLocker until recovery information is stored in AD DS for fixed data drives" check box if you want to prevent users from enabling BitLocker unless the computer is connected to the domain and the backup of BitLocker recovery information to AD DS succeeds.</p>
-
-<p style="margin-left: 20px">Note: If the "Do not enable BitLocker until recovery information is stored in AD DS for fixed data drives" check box is selected, a recovery password is automatically generated.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, you can control the methods available to users to recover data from BitLocker-protected fixed data drives.</p>
-
-<p style="margin-left: 20px">If this policy setting is not configured or disabled, the default recovery options are supported for BitLocker recovery. By default a DRA is allowed, the recovery options can be specified by the user including the recovery password and recovery key, and recovery information is not backed up to AD DS</p>
-
-<a href="" id="bitlocker-fixeddrivesrequireencryption"></a>**BitLocker/FixedDrivesRequireEncryption**
-
-<p style="margin-left: 20px">This policy setting determines whether BitLocker protection is required for fixed data drives to be writable on a computer.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, all fixed data drives that are not BitLocker-protected will be mounted as read-only. If the drive is protected by BitLocker, it will be mounted with read and write access.</p>
-
-<p style="margin-left: 20px">If you disable or do not configure this policy setting, all fixed data drives on the computer will be mounted with read and write access.</p>
-
-<a href="" id="bitlocker-systemdrivesrecoveryoptions"></a>**BitLocker/SystemDrivesRecoveryOptions**
-
-<p style="margin-left: 20px">This policy setting allows you to control how BitLocker-protected operating system drives are recovered in the absence of the required startup key information. This policy setting is applied when you turn on BitLocker.</p>
-
-<p style="margin-left: 20px">The "Allow certificate-based data recovery agent" check box is used to specify whether a data recovery agent can be used with BitLocker-protected operating system drives. Before a data recovery agent can be used it must be added from the Public Key Policies item in either the Group Policy Management Console or the Local Group Policy Editor. Consult the BitLocker Drive Encryption Deployment Guide on Microsoft TechNet for more information about adding data recovery agents.</p>
-
-<p style="margin-left: 20px">In "Configure user storage of BitLocker recovery information" select whether users are allowed, required, or not allowed to generate a 48-digit recovery password or a 256-bit recovery key.</p>
-
-<p style="margin-left: 20px">Select "Omit recovery options from the BitLocker setup wizard" to prevent users from specifying recovery options when they turn on BitLocker on a drive. This means that you will not be able to specify which recovery option to use when you turn on BitLocker, instead BitLocker recovery options for the drive are determined by the policy setting.</p>
-
-<p style="margin-left: 20px">In "Save BitLocker recovery information to Active Directory Domain Services", choose which BitLocker recovery information to store in AD DS for operating system drives. If you select "Backup recovery password and key package", both the BitLocker recovery password and key package are stored in AD DS. Storing the key package supports recovering data from a drive that has been physically corrupted. If you select "Backup recovery password only," only the recovery password is stored in AD DS.</p>
-
-<p style="margin-left: 20px">Select the "Do not enable BitLocker until recovery information is stored in AD DS for operating system drives" check box if you want to prevent users from enabling BitLocker unless the computer is connected to the domain and the backup of BitLocker recovery information to AD DS succeeds.</p>
-
-<p style="margin-left: 20px">Note: If the "Do not enable BitLocker until recovery information is stored in AD DS for operating system drives" check box is selected, a recovery password is automatically generated.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, you can control the methods available to users to recover data from BitLocker-protected operating system drives.</p>
-
-<p style="margin-left: 20px">If this policy setting is disabled or not configured, the default recovery options are supported for BitLocker recovery. By default a DRA is allowed, the recovery options can be specified by the user including the recovery password and recovery key, and recovery information is not backed up to AD DS.</p>
-
-<a href="" id="bitlocker-systemdrivesrequirestartupauthentication"></a>**BitLocker/SystemDrivesRequireStartupAuthentication**
-
-<p style="margin-left: 20px">This policy setting allows you to configure whether BitLocker requires additional authentication each time the computer starts and whether you are using BitLocker with or without a Trusted Platform Module (TPM). This policy setting is applied when you turn on BitLocker.</p>
-
-<p style="margin-left: 20px">Note: Only one of the additional authentication options can be required at startup, otherwise a policy error occurs.</p>
-
-<p style="margin-left: 20px">If you want to use BitLocker on a computer without a TPM, select the "Allow BitLocker without a compatible TPM" check box. In this mode either a password or a USB drive is required for start-up. When using a startup key, the key information used to encrypt the drive is stored on the USB drive, creating a USB key. When the USB key is inserted the access to the drive is authenticated and the drive is accessible. If the USB key is lost or unavailable or if you have forgotten the password then you will need to use one of the BitLocker recovery options to access the drive.</p>
-
-<p style="margin-left: 20px">On a computer with a compatible TPM, four types of authentication methods can be used at startup to provide added protection for encrypted data. When the computer starts, it can use only the TPM for authentication, or it can also require insertion of a USB flash drive containing a startup key, the entry of a 4-digit to 20-digit personal identification number (PIN), or both.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, users can configure advanced startup options in the BitLocker setup wizard.</p>
-
-<p style="margin-left: 20px">If you disable or do not configure this policy setting, users can configure only basic options on computers with a TPM.</p>
-
-<p style="margin-left: 20px">Note: If you want to require the use of a startup PIN and a USB flash drive, you must configure BitLocker settings using the command-line tool manage-bde instead of the BitLocker Drive Encryption setup wizard.</p>
-
-<a href="" id="bitlocker-systemdrivesminimumpinlength"></a>**BitLocker/SystemDrivesMinimumPINLength**
-
-<p style="margin-left: 20px">This policy setting allows you to configure a minimum length for a Trusted Platform Module (TPM) startup PIN. This policy setting is applied when you turn on BitLocker. The startup PIN must have a minimum length of 4 digits and can have a maximum length of 20 digits.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, you can require a minimum number of digits to be used when setting the startup PIN.</p>
-
-<p style="margin-left: 20px">If you disable or do not configure this policy setting, users can configure a startup PIN of any length between 4 and 20 digits.</p>
-
-<a href="" id="bitlocker-systemdrivesrecoverymessage"></a>**BitLocker/SystemDrivesRecoveryMessage**
-
-<p style="margin-left: 20px">This policy setting lets you configure the entire recovery message or replace the existing URL that are displayed on the pre-boot key recovery screen when the OS drive is locked.</p>
-
-<p style="margin-left: 20px">If you select the "Use default recovery message and URL" option, the default BitLocker recovery message and URL will be displayed in the pre-boot key recovery screen. If you have previously configured a custom recovery message or URL and want to revert to the default message, you must keep the policy enabled and select the "Use default recovery message and URL" option.</p>
-
-<p style="margin-left: 20px">If you select the "Use custom recovery message" option, the message you type in the "Custom recovery message option" text box will be displayed in the pre-boot key recovery screen. If a recovery URL is available, include it in the message.</p>
-
-<p style="margin-left: 20px">If you select the "Use custom recovery URL" option, the URL you type in the "Custom recovery URL option" text box will replace the default URL in the default recovery message, which will be displayed in the pre-boot key recovery screen.</p>
-
-<p style="margin-left: 20px">Note: Not all characters and languages are supported in pre-boot. It is strongly recommended that you test that the characters you use for the custom message or URL appear correctly on the pre-boot recovery screen.</p>
-
-<a href="" id="bitlocker-removabledrivesrequireencryption"></a>**BitLocker/RemovableDrivesRequireEncryption**
-
-<p style="margin-left: 20px">This policy setting configures whether BitLocker protection is required for a computer to be able to write data to a removable data drive.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, all removable data drives that are not BitLocker-protected will be mounted as read-only. If the drive is protected by BitLocker, it will be mounted with read and write access.</p>
-
-<p style="margin-left: 20px">If the "Deny write access to devices configured in another organization" option is selected, only drives with identification fields matching the computer's identification fields will be given write access. When a removable data drive is accessed it will be checked for valid identification field and allowed identification fields. These fields are defined by the "Provide the unique identifiers for your organization" policy setting.</p>
-
-<p style="margin-left: 20px">If you disable or do not configure this policy setting, all removable data drives on the computer will be mounted with read and write access.</p>
-
-<p style="margin-left: 20px">Note: This policy setting can be overridden by the policy settings under User Configuration\Administrative Templates\System\Removable Storage Access. If the "Removable Disks: Deny write access" policy setting is enabled this policy setting will be ignored.</p>
-
-<a href="" id="datausage-setcost3g"></a>**DataUsage/SetCost3G**
-
-<p style="margin-left: 20px">This policy setting configures the cost of 3G connections on the local machine.</p>
-
-<p style="margin-left: 20px">If this policy setting is enabled, a drop-down list box presenting possible cost values will be active.  Selecting one of the following values from the list will set the cost of all 3G connections on the local machine:</p>
-
-<p style="margin-left: 20px">- Unrestricted: Use of this connection is unlimited and not restricted by usage charges and capacity constraints.</p>
-
-<p style="margin-left: 20px">- Fixed: Use of this connection is not restricted by usage charges and capacity constraints up to a certain data limit.</p>
-
-<p style="margin-left: 20px">- Variable: This connection is costed on a per byte basis.</p>
-
-<p style="margin-left: 20px">If this policy setting is disabled or is not configured, the cost of 3G connections is Fixed by default.</p>
-
-<a href="" id="datausage-setcost4g"></a>**DataUsage/SetCost4G**
-
-<p style="margin-left: 20px">This policy setting configures the cost of 4G connections on the local machine.</p>
-
-<p style="margin-left: 20px">If this policy setting is enabled, a drop-down list box presenting possible cost values will be active. Selecting one of the following values from the list will set the cost of all 4G connections on the local machine:</p>
-
-<p style="margin-left: 20px">- Unrestricted: Use of this connection is unlimited and not restricted by usage charges and capacity constraints.</p>
-
-<p style="margin-left: 20px">- Fixed: Use of this connection is not restricted by usage charges and capacity constraints up to a certain data limit.</p>
-
-<p style="margin-left: 20px">- Variable: This connection is costed on a per byte basis.</p>
-
-<p style="margin-left: 20px">If this policy setting is disabled or is not configured, the cost of 4G connections is Fixed by default.</p>
+<p style="margin-left: 20px">If you disable or don't configure this policy setting, any user can disconnect the PC from the network or can connect the PC to other available networks without signing into Windows.</p>
 
 
 <!-- ADMX-DESCRIPTIONS-END -->
