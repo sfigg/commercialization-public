@@ -632,6 +632,15 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <td style="vertical-align:top">[Implement server-side support for mobile application management on Windows](implement-server-side-mobile-application-management.md)</td>
 <td style="vertical-align:top"><p>New mobile application management (MAM) support added in Windows 10, version 1703.</p></td>
 </tr>
+<tr class="odd">
+<td style="vertical-align:top"><p>[PassportForWork CSP](passportforwork-csp.md)</p></td>
+<td style="vertical-align:top"><p>Added the following node and settings:</p>
+<ul>
+<li><em>TenantId</em>/Policies/ExcludeSecurityDevices (only for ./Device/Vendor/MSFT)</li>
+<li><em>TenantId</em>/Policies/ExcludeSecurityDevices/TPM12 (only for ./Device/Vendor/MSFT)</li>
+<li><em>TenantId</em>/Policies/EnablePinRecovery</li>
+</ul></td>
+</tr>
 </tbody>
 </table> 
 
@@ -985,11 +994,11 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 </tr>
 <tr class="even">
 <td style="vertical-align:top">[NetworkProxy CSP](networkproxy-csp.md)</td>
-<td style="vertical-align:top"><p>Added new CSP.</p></td>
+<td style="vertical-align:top"><p>Added new CSP for Windows 10, version 1703.</p></td>
 </tr>
 <tr class="odd">
 <td style="vertical-align:top">[BitLocker CSP](bitlocker-csp.md)</td>
-<td style="vertical-align:top"><p>Added new CSP.</p></td>
+<td style="vertical-align:top"><p>Added new CSP for Windows 10, version 1703.</p></td>
 </tr>
 <tr class="even">
 <td style="vertical-align:top">[EnterpriseDataProtection CSP](enterprisedataprotection-csp.md)</td>
@@ -997,11 +1006,20 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 </tr>
 <tr class="odd">
 <td style="vertical-align:top">[DynamicManagement CSP](dynamicmanagement-csp.md)</td>
-<td style="vertical-align:top"><p>Added new CSP.</p></td>
+<td style="vertical-align:top"><p>Added new CSP for Windows 10, version 1703.</p></td>
 </tr>
 <tr class="even">
 <td style="vertical-align:top">[Implement server-side support for mobile application management on Windows](implement-server-side-mobile-application-management.md)</td>
 <td style="vertical-align:top"><p>New mobile application management (MAM) support added in Windows 10, version 1703.</p></td>
+</tr>
+<tr class="even">
+<td style="vertical-align:top"><p>[PassportForWork CSP](passportforwork-csp.md)</p></td>
+<td style="vertical-align:top"><p>Updated in Windows 10, version 1703. Added the following node and settings:</p>
+<ul>
+<li><em>TenantId</em>/Policies/ExcludeSecurityDevices (only for ./Device/Vendor/MSFT)</li>
+<li><em>TenantId</em>/Policies/ExcludeSecurityDevices/TPM12 (only for ./Device/Vendor/MSFT)</li>
+<li><em>TenantId</em>/Policies/EnablePinRecovery</li>
+</ul></td>
 </tr>
 </tbody>
 </table>
