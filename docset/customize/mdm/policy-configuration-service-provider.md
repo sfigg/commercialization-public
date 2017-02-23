@@ -5857,7 +5857,7 @@ The number of authentication failures allowed before the device will be wiped. A
 
 <p style="margin-left: 20px">For additional information about this policy, see [Exchange ActiveSync Policy Engine Overview](https://technet.microsoft.com/library/dn282287.aspx) and [KB article](https://support.office.com/article/This-device-doesn-t-meet-the-security-requirements-set-by-your-email-administrator-87132fc7-2c7f-4a71-9de0-779ff81c86ca).
 
-<a href="" id="display-turnffgdidpiscalingforapps"></a>**Display/TurnOffGdiDPIScalingForApps**
+<a href="" id="display-turnoffgdidpiscalingforapps"></a>**Display/TurnOffGdiDPIScalingForApps**
 <p style="margin-left: 20px">GDI DPI Scaling enables applications that are not DPI aware to become per monitor DPI aware.
 
 <p style="margin-left: 20px">This policy setting lets you specify legacy applications that have GDI DPI Scaling turned off.
