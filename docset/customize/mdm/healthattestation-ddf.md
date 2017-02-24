@@ -54,9 +54,6 @@ This topic shows the OMA DM device description framework (DDF) for the **HealthA
                 <Scope>
                     <Permanent />
                 </Scope>
-                <DFType>
-                    <MIME>text/plain</MIME>
-                </DFType>
             </DFProperties>
         </Node>
         <Node>
@@ -151,6 +148,44 @@ This topic shows the OMA DM device description framework (DDF) for the **HealthA
                 </AccessType>
                 <DFFormat>
                     <chr />
+                </DFFormat>
+                <Occurrence>
+                    <One />
+                </Occurrence>
+                <Scope>
+                    <Permanent />
+                </Scope>
+                <DFType>
+                    <MIME>text/plain</MIME>
+                </DFType>
+            </DFProperties>
+        </Node>
+        <Node>
+            <NodeName>HASEndpoint</NodeName>
+            <DFProperties>
+                <AccessType>
+                    <Get />
+                    <Replace />
+                </AccessType>
+                <DFFormat>
+                    <chr />
+                </DFFormat>
+                <Scope>
+                    <Permanent />
+                </Scope>
+                <DFType>
+                    <MIME>text/plain</MIME>
+                </DFType>
+            </DFProperties>
+        </Node>
+        <Node>
+            <NodeName>TpmReadyStatus</NodeName>
+            <DFProperties>
+                <AccessType>
+                    <Get />
+                </AccessType>
+                <DFFormat>
+                    <int />
                 </DFFormat>
                 <Occurrence>
                     <One />
