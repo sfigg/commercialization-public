@@ -15,7 +15,7 @@ This topic provides a list of new features and recommendations for Bluetooth in 
 ## What's new in Windows 10
 
 
-Additional features that were added after Windows 10, version 1507 are marked as follows:
+Additional features that were added after Windows 10, version 1507 are marked as follows: 
 
 -   (1511) - The feature is new for the Windows 10, version 1511 release
 
