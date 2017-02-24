@@ -15,11 +15,11 @@ The HealthAttestation configuration service provider enables enterprise IT manag
 The following is a list of functions performed by the HealthAttestation CSP:
 
 -   Collects data that is used in verifying a devices health states
--   Forwards the data to the Health Attestation Service (HAS)
--   Provisions the Health Attestation Certificate that it receives from HAS
--   Upon request, forwards the Health Attestation Certificate (received from HAS) and related runtime information to the MDM Server for verification
+-   Forwards the data to the Device HealthAttestation Service
+-   Provisions the Health Attestation Certificate that it receives from the service
+-   Upon request, forwards the Health Attestation Certificate (received from the service) and related runtime information to the MDM Server for verification
 
-## Terminology
+## Terms
 
 **TPM (Trusted Platform Module)**
 <p style="margin-left: 20px">TPM is a specialized hardware-protected logic that performs a series of security-related operations, including providing hardware-protected storage, and  hardware-protected crypto operation, including signing an encryption. </p>
@@ -98,6 +98,8 @@ The following is a list of functions performed by the HealthAttestation CSP:
 <li>Receives an encrypted blob (DHA-EncBlob) from DHA-Service, and stores it in a local cache on the device</li>
 <li>Receives attestation requests (DHA-Requests) from a DHA-Enabled-MDM, and replies with a device health report (DHA-Report)</li>
 </ul>
+
+## HealthAttestation CSP diagram and description
 
 
 The following diagram shows the HealthAttestation configuration service provider in tree format.
@@ -598,9 +600,13 @@ If WinPE = 1 (True), then limit access to remote resources that are required for
 <a href="" id="elamdriverloaded"></a>**ELAMDriverLoaded**  
 Early launch anti-malware (ELAM) provides protection for the computers in your network when they start up and before third-party drivers initialize.
 
-If ELAMDriverLoaded = 1 (True), then allow access.
+In the current release, this attribute only monitors/reports if a Microsoft 1st party ELAM  (Windows Defender) was loaded during initial boot.
 
-If ELAMDriverLoaded = 0 (False), then take one of the following actions that align with your enterprise policies, also accounting for whether it is a desktop or mobile device:
+If a device is expected to use a 3rd party antivirus program, ignore the reported state.
+
+If a device is expected to use Windows Defender and ELAMDriverLoaded = 1 (True), then allow access.
+
+If a device is expected to use Windows Defender and ELAMDriverLoaded = 0 (False), then take one of the following actions that align with your enterprise policies, also accounting for whether it is a desktop or mobile device:
 
 -   Disallow all access
 -   Disallow access to HBI assets
@@ -691,29 +697,39 @@ If CodeIntegrityRevListVersion != \[CurrentVersion\], then take one of the follo
 -   Place the device in a watch list to monitor the device more closely for potential risks.
 -   Trigger a corrective action, such as such as informing the technical support team to contact the owner investigate the issue.
 
-**CIPolicyHash**
-This attribute indicates the Code Integrity policy that is controlling the security of the boot environment.
+**PCRHashAlgorithmID**
 
-If CIPolicyHash is not present, or is an accepted (whitelisted) value, then allow access.
+This attribute is an informational attribute that identifies the HASH algorithm that was used by TPM; no compliance action required.
 
-If CIPolicyHash is present and is not a whitelisted value, then take one of the following actions that align with your enterprise policies:
+**BootAppSVN**
 
--   Disallow all access
--   Place the device in a watch list to monitor the device more closely for potential risks.
+This attribute identifies the security version number of the Boot Application that was loaded during initial boot on the attested device
 
-**SBCPPolicyHash**
-SBCPPolicyHash is the Hash of a custom Secure Boot Configuration Policy (SBCP) .
+If reported BootAppSVN equals an accepted value, then allow access.
 
-If a device is using the default policy (that is embedded in bootmgr) no hash is added.
+ If reported BootAppSVN does not equal an accepted value, then take one of the following actions that align with your enterprise policies:
+- Disallow all access
+- Direct the device to an enterprise honeypot, to further monitor the device's activities.
 
-If a device is using the "Custom" policy hash of the custom policy, it will be measured and added to the TPM logs.
+**BootManagerSVN**
 
-If SBCPPolicyHash is not present, or is an accepted (whitelisted) value, then allow access.
+This attribute identifies the security version number of the Boot Manager that was loaded during initial boot on the attested device.
 
-If SBCPPolicyHash is present and is not a whitelisted value, then take one of the following actions that align with your enterprise policies:
+If reported BootManagerSVN equals an accepted value, then allow access.
 
--   Disallow all access
--   Place the device in a watch list to monitor the device more closely for potential risks.
+If reported BootManagerSVN does not equal an accepted value, then take one of the following actions that align with your enterprise policies:
+- Disallow all access
+- irect the device to an enterprise honeypot, to further monitor the device's activities.
+
+**TPMVersion**
+
+This attribute identifies the version of the TPM that is running on the attested device.
+
+If reported TPMVersion equals an accepted value, then allow access.
+
+If reported TPMVersion does not equal an accepted value, then take one of the following actions that align with your enterprise policies:
+- Disallow all access
+- Direct the device to an enterprise honeypot, to further monitor the device's activities.
 
 **PCR0**
 The measurement that is captured in PCR\[0\] typically represents a consistent view of the Host Platform between boot cycles. It contains a measurement of components that are provided by the host platform manufacturer.
@@ -728,6 +744,51 @@ If PCR\[0\] does not equal any accepted whitelisted value, then take one of the 
 
 -   Disallow all access
 -   Direct the device to an enterprise honeypot, to further monitor the device's activities.
+
+**CIPolicy**
+
+This attribute indicates the Code Integrity policy that is controlling the security of the boot environment.
+
+If CIPolicy is not present, or is an accepted (whitelisted) value, then allow access.
+
+If CIPolicy is present and is not a whitelisted value, then take one of the following actions that align with your enterprise policies:
+- Disallow all access
+- Place the device in a watch list to monitor the device more closely for potential risks.
+
+**SBCPHash**
+
+SBCPHash is the finger print of the Custom Secure Boot Configuration Policy (SBCP) that was loaded during boot.
+
+If a device is using the default policy (that is embedded in bootmgr) no value is reported in DHA-report.
+
+If a device is using the "Custom" policy, the fingerprint of the custom policy that was loaded during boot will be measured and added to the DHA-report.
+
+If SBCPHash is not present, or is an accepted (whitelisted) value, then allow access.
+
+If SBCPHash is present in DHA-Report, and is not a whitelisted value, then take one of the following actions that align with your enterprise policies:
+- Disallow all access
+- Place the device in a watch list to monitor the device more closely for potential risks.
+
+**BootRevListInfo**
+
+This attribute identifies the Boot Revision List that was loaded during initial boot on the attested device.
+
+If reported BootRevListInfo version equals an accepted value, then allow access.
+
+If reported BootRevListInfo version does not equal an accepted value, then take one of the following actions that align with your enterprise policies:
+- Disallow all access
+- Direct the device to an enterprise honeypot, to further monitor the device's activities.
+
+**OSRevListInfo**
+
+This attribute identifies the Operating System Revision List that was loaded during initial boot on the attested device.
+
+If reported OSRevListInfo version equals an accepted value, then allow access.
+
+If reported OSRevListInfo version does not equal an accepted value, then take one of the following actions that align with your enterprise policies:
+- Disallow all access
+- Direct the device to an enterprise honeypot, to further monitor the device's activities.
+
 
 ## **Additional Examples**
 
