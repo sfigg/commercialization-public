@@ -541,6 +541,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>Browser/SetDefaultSearchEngine</li>
 <li>Browser/SyncFavoritesBetweenIEAndMicrosoftEdge</li>
 <li>DeliveryOptimization/DOAllowVPNPeerCaching</li>
+<li>DeliveryOptimization/DOMinBatteryPercentageAllowedToUpload</li>
 <li>DeliveryOptimization/DOMinDiskSizeAllowedToPeer</li>
 <li>DeliveryOptimization/DOMinFileSizeToCache</li>
 <li>DeliveryOptimization/DOMinRAMAllowedToPeer</li>
@@ -563,6 +564,8 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>Privacy/LetAppsRunInBackground_ForceAllowTheseApps</li>
 <li>Privacy/LetAppsRunInBackground_ForceDenyTheseApps</li>
 <li>Privacy/LetAppsRunInBackground_UserInControlOfTheseApps</li>
+<li>Settings/ConfigureTaskbarCalendar</li>
+<li>Settings/PageVisibilityList</li>
 <li>Start/HideAppList</li>
 <li>Start/HideChangeAccountSettings</li>
 <li>Start/HideFrequentlyUsedApps</li>
@@ -579,6 +582,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>Start/HideUserTile</li>
 <li>Start/NoPinningToTaskbar</li>
 <li>System/AllowFontProviders</li>
+<li>System/DisableOneDriveFileSync</li>
 <li>TextInput/AllowKeyboardTextSuggestions</li>
 <li>TimeLanguageSettings/AllowSet24HourClock</li>
 <li>Update/ActiveHoursMaxRange</li>
@@ -619,6 +623,23 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <tr class="even">
 <td style="vertical-align:top">[EnterpriseDataProtection CSP](enterprisedataprotection-csp.md)</td>
 <td style="vertical-align:top"><p>Starting in Windows 10, version 1703, AllowUserDecryption is no longer supported.</p></td>
+</tr>
+<tr class="odd">
+<td style="vertical-align:top">[DynamicManagement CSP](dynamicmanagement-csp.md)</td>
+<td style="vertical-align:top"><p>Added new CSP.</p></td>
+</tr>
+<tr class="even">
+<td style="vertical-align:top">[Implement server-side support for mobile application management on Windows](implement-server-side-mobile-application-management.md)</td>
+<td style="vertical-align:top"><p>New mobile application management (MAM) support added in Windows 10, version 1703.</p></td>
+</tr>
+<tr class="odd">
+<td style="vertical-align:top"><p>[PassportForWork CSP](passportforwork-csp.md)</p></td>
+<td style="vertical-align:top"><p>Added the following node and settings:</p>
+<ul>
+<li><em>TenantId</em>/Policies/ExcludeSecurityDevices (only for ./Device/Vendor/MSFT)</li>
+<li><em>TenantId</em>/Policies/ExcludeSecurityDevices/TPM12 (only for ./Device/Vendor/MSFT)</li>
+<li><em>TenantId</em>/Policies/EnablePinRecovery</li>
+</ul></td>
 </tr>
 </tbody>
 </table> 
@@ -931,9 +952,12 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>Browser/PreventLiveTileDataCollection</li>
 <li>Browser/SetDefaultSearchEngine</li>
 <li>Browser/SyncFavoritesBetweenIEAndMicrosoftEdge</li>
+<li>DeliveryOptimization/DOMinBatteryPercentageAllowedToUpload</li>
 <li>Experience/AllowTailoredExperiencesWithDiagnosticData</li>
 <li>Experience/AllowWindowsSpotlightOnActionCenter</li>
 <li>Experience/AllowWindowsSpotlightWindowsWelcomeExperience</li>
+<li>Settings/ConfigureTaskbarCalendar</li>
+<li>Settings/PageVisibilityList</li>
 <li>Start/HideAppList</li>
 <li>Start/HideChangeAccountSettings</li>
 <li>Start/HideFrequentlyUsedApps</li>
@@ -950,6 +974,7 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>Start/HideUserTile</li>
 <li>Start/NoPinningToTaskbar</li>
 <li>System/AllowFontProviders</li>
+<li>System/DisableOneDriveFileSync</li>
 <li>TextInput/AllowKeyboardTextSuggestions</li>
 <li>TimeLanguageSettings/AllowSet24HourClock</li>
 <li>Update/ActiveHoursMaxRange</li>
@@ -969,15 +994,32 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 </tr>
 <tr class="even">
 <td style="vertical-align:top">[NetworkProxy CSP](networkproxy-csp.md)</td>
-<td style="vertical-align:top"><p>Added new CSP.</p></td>
+<td style="vertical-align:top"><p>Added new CSP for Windows 10, version 1703.</p></td>
 </tr>
 <tr class="odd">
 <td style="vertical-align:top">[BitLocker CSP](bitlocker-csp.md)</td>
-<td style="vertical-align:top"><p>Added new CSP.</p></td>
+<td style="vertical-align:top"><p>Added new CSP for Windows 10, version 1703.</p></td>
 </tr>
 <tr class="even">
 <td style="vertical-align:top">[EnterpriseDataProtection CSP](enterprisedataprotection-csp.md)</td>
 <td style="vertical-align:top"><p>Starting in Windows 10, version 1703, AllowUserDecryption is no longer supported.</p></td>
+</tr>
+<tr class="odd">
+<td style="vertical-align:top">[DynamicManagement CSP](dynamicmanagement-csp.md)</td>
+<td style="vertical-align:top"><p>Added new CSP for Windows 10, version 1703.</p></td>
+</tr>
+<tr class="even">
+<td style="vertical-align:top">[Implement server-side support for mobile application management on Windows](implement-server-side-mobile-application-management.md)</td>
+<td style="vertical-align:top"><p>New mobile application management (MAM) support added in Windows 10, version 1703.</p></td>
+</tr>
+<tr class="even">
+<td style="vertical-align:top"><p>[PassportForWork CSP](passportforwork-csp.md)</p></td>
+<td style="vertical-align:top"><p>Updated in Windows 10, version 1703. Added the following node and settings:</p>
+<ul>
+<li><em>TenantId</em>/Policies/ExcludeSecurityDevices (only for ./Device/Vendor/MSFT)</li>
+<li><em>TenantId</em>/Policies/ExcludeSecurityDevices/TPM12 (only for ./Device/Vendor/MSFT)</li>
+<li><em>TenantId</em>/Policies/EnablePinRecovery</li>
+</ul></td>
 </tr>
 </tbody>
 </table>

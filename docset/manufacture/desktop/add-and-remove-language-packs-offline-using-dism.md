@@ -1,5 +1,5 @@
 ---
-author: Justinha
+author: themar
 Description: Add and Remove Language Packs Offline Using DISM
 ms.assetid: 128cffa3-8c53-41c8-add2-fa10197f36a3
 MSHAttr: 'PreferredLib:/library/windows/hardware'
@@ -9,19 +9,12 @@ title: Add and Remove Language Packs Offline Using DISM
 # Add and Remove Language Packs Offline Using DISM
 
 
-All installations of Windows® contain at least one language pack and the language-neutral binaries that make up the core operating system. This topic includes information about how to use Deployment Image Servicing and Management (DISM.exe) to add or remove additional language packs, and to configure international settings. You can use the same procedures to add or remove Language Interface Packs (LIPs). For more information about the difference between a language pack and a LIP, see [Add Language Packs to Windows](add-language-packs-to-windows.md).
+All installations of Windows contain at least one language pack and the language-neutral binaries that make up the core operating system. This topic includes information about how to use Deployment Image Servicing and Management (DISM.exe) to add or remove additional language packs, and to configure international settings. You can use the same procedures to add or remove Language Interface Packs (LIPs). For more information about the difference between a language pack and a LIP, see [Add Language Packs to Windows](add-language-packs-to-windows.md).
 
 The Windows image must be a recently installed and captured image, or the default retail image. This ensures that the Windows image does not have any pending package actions. The Windows images can be in any language. For example, you can start with an English (en-US) image and add support for Japanese (ja-JP) and Korean (ko-KR). In addition, you can add LIPs to a Windows image that contains the supported parent language. For more information about the supported language packs and LIPs, see [Language Packs](language-packs-and-windows-deployment.md).
 
-This topic includes the following procedures.
 
-[Add a Language Pack to a Windows Image](#addlangpacktoimage) describes how to add a new language pack to an offline Windows image.
-
-[Remove a Language Pack from a Windows Image](#removelangpackfromwin) describes how to use DISM to remove a language pack from an offline Windows image. You must remove any language packs that you do not intend to use before you add new language packs to a Windows image.
-
-[Configure International Settings](#configintlsettings) describes how to use DISM to change the default display language and configure other international settings in a Windows image.
-
-For information about how to add a language pack to a Windows Preinstallation Environment (Windows PE) image, see Add a Language Pack to a Windows PE Image.
+For information about how to add a language pack to a Windows Preinstallation Environment (Windows PE) image, [see WinPE: Add packages (Optional Components Reference)](winpe-add-packages--optional-components-reference.md).
 
 ## <span id="AddLangPacktoImage"></span><span id="addlangpacktoimage"></span><span id="ADDLANGPACKTOIMAGE"></span>Add a Language Pack to a Windows Image
 
@@ -29,9 +22,6 @@ For information about how to add a language pack to a Windows Preinstallation En
 Language packs are available as .cab files and are named with their locale; for example, Microsoft-Windows-Client-Language-Pack_x64_es-es.cab. Packages provided as .cab files can be added to an offline Windows image using the DISM command-line tool. You can use the same procedure to add a language pack or a Language Interface Pack (LIP).
 
 **Important**  
-LIPs are released as .mlc files. When you add a LIP to an offline Windows image using the DISM command-line tool, you must rename the LIP file from LIP.mlc to LIP.cab.
-
- 
 
 LIPs can be installed only on a Windows image that has the supported parent languages installed. For example, the Basque (Basque) LIP can be installed only on a Windows image that has the Spanish (Spain) or French (France) parent language pack installed. Before you install a LIP to an offline Windows image, verify that the supported parent languages are installed. For more information about the supported language packs and LIPs, see [Language Packs](language-packs-and-windows-deployment.md).
 
