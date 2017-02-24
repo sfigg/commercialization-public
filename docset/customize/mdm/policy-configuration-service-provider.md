@@ -766,6 +766,17 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png"><p>IoT Core</p></td>
 		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png"><p>EAS</p></td></tr>
 	<tr>
+		<td style="vertical-align:top"><a href="#connectivity-allowconnecteddevices">Connectivity/AllowConnectedDevices</a></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Home</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Pro</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Business</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Enterprise</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png"><p>Education</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Mobile</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Mobile Enterprise</p></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>IoT Core</p></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>EAS</p></td></tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#connectivity-allownfc">Connectivity/AllowNFC</a></td>
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Home</p></td>
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Pro</p></td>
@@ -4946,6 +4957,17 @@ Employees cannot remove these search engines, but they can set any one as the de
 1.  Go to Cellular & SIM.
 2.  Click on the SIM (next to the signal strength icon) and select **Properties**.
 3.  On the Properties page, select **Data roaming options**.
+
+<a href="" id="connectivity-allowconnecteddevices"></a>**Connectivity/AllowConnectedDevices**  
+> [!NOTE]
+> This policy requires reboot to take effect.
+
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Allows IT Admins the ability to disable the Connected Devices Platform (CDP) component. CDP enables discovery and connection to other devices (either proximally with BT/LAN or through the cloud) to support remote message, remote app launch, remote sessions, nearby sharing, and remote app sessions between devices.
+
+<p style="margin-left: 20px">The following list shows the supported values:
+
+-   1 (default) - Allow (CDP service available).
+-   0 - Disable (CDP sevice not available).
 
 <a href="" id="connectivity-allownfc"></a>**Connectivity/AllowNFC**  
 > [!NOTE]
