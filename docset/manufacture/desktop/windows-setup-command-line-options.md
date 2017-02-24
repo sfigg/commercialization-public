@@ -269,7 +269,7 @@ setup /netdebug:hostip=10.125.4.86,port=50000,key=dont.use.previous.keys,buspara
 <td align="left"><p>After Setup is complete, run a script.</p>
 <p>Accepted parameters are a local file path or UNC network path to a file named setupcomplete.cmd or to a folder that contains setupcomplete.cmd.</p>
 <pre class="syntax" space="preserve"><code>setup.exe /auto upgrade /postoobe c:\Fabrikam\setupcomplete.cmd</code></pre>
-<p>Path to folder that contains a script with the name: <strong>setupcomplete.cmd</strong>: Copies the entire contents of folder to $Windows.~BT to be run after OOBE.</p>
+<p>Path to folder that contains a script with the name: <strong>setupcomplete.cmd</strong>: Copies setupcomplete.cmd to $Windows.~BT to be run after OOBE.</p>
 <pre class="syntax" space="preserve"><code>setup.exe /auto upgrade /postoobe c:\Fabrikam\</code></pre>
 <p>This setting is new for Windows 10.</p></td>
 </tr>
