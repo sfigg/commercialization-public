@@ -15,6 +15,7 @@ Starting in Windows 10 version 1703, mobile device management (MDM) policy confi
 ## In this section
 
 -   [Background](#background)
+-   [ADMX files and the Group Policy Editor](#admx-files-and-the-group-policy-editor)
 -   [Group policy examples](#group-policy-examples)
     - [Enabling a policy](#enabling-a-policy)
     - [Disabling a policy](#disabling-a-policy)
@@ -37,9 +38,7 @@ In a domain controller/group policy ecosystem, group policies are automatically 
 An ADMX file can either be shipped with the Windows OS (located at %SystemRoot%\policydefinitions) or it can be ingested to a device through the Policy CSP URI, ./Vendor/MSFT/Policy/ConfigOperations/ADMXInstall. Inbox ADMX files are processed into MDM policies at OS build time. ADMX files that are ingested are processed into MDM policies post-OS shipment through the Policy CSP. Because the Policy CSP does not rely upon any aspect of the group policy client stack, including the PC’s Group Policy Service (GPSvc), the policy handlers that are ingested to the device are able to react to policies that are set by the MDM.
 
 
-## <a href="" id="group-policy-examples"></a>Group policy examples
-
-The following examples describes how to set a MDM policy that is defined by an ADMX template, specifically the Windows 10 group policy Publishing_Server2_Policy description in the application virtualization ADMX file, appv.admx. Note that the functionality that this group policy manages is not important; it is used to illustrate only how an MDM ISV can set an ADMX-defined group policy.
+## <a href="" id="admx-files-and-the-group-policy-editor"></a>ADMX files and the Group Policy Editor
 
 To capture the end-to-end MDM handling of ADMX group policies, an IT administrator must use a UI, such as the Group Policy Editor (gpedit.msc), to gather the necessary data. The MDM ISV console UI determines how to gather the needed policy data from the IT administrator. ADMX-backed group policies are organized hierarchally and can have a scope of machine, user, or both. The example uses a machine-wide group policy named “Publishing Server 2 Settings.” When this group policy is selected, its available states are *Not Configured*, *Enabled*, and *Disabled*. 
 
@@ -58,12 +57,12 @@ Group policy setting:
     -	 MDM ISV server sets up a Delete syncml command. 
     -	 The MDM client stack receives this command,  which causes the Policy CSP to delete the device’s registry settings per the ADMX-backed policy definition.
 
-### Local group policy editor
+### Group Policy Editor
 ![group policy editor](images/group-policy-editor.png)
 
 ![group policy publisher server 2 settings](images/group-policy-publisher-server-2-settings.png)
 
-Note that most group policies are a simple Boolean type. For a Boolean group policy, when you select *Enabled*, there are no data input fields in the Options Panel and the payload of the syncml is simply <enabled/>.
+Note that most group policies are a simple Boolean type. For a Boolean group policy, when you select *Enabled*, there are no data input fields in the Options Panel and the payload of the syncml is simply &lt;enabled/&gt;.
 However, if there are data input fields in the Options panel, then the MDM server must supply this data. The following example illustrates this complexity.  
 
 In the following *Enabling a policy* example, 10 name-value pairs are described by <data /> tags, which correspond to 10 data input fields in the Group Policy Editor Options panel for the policy shown above.  The ADMX file, which defines the policies, is consumed by the MDM server, similar to how the Group Policy Editor consumes it. The Group Policy Editor displays a UI to get the complete policy instance data, which the MDM server’s IT administrator console must also do.  For every element in the ADMX policy definition, there must be corresponding <data /> tag.
@@ -73,14 +72,20 @@ In the following *Enabling a policy* example, 10 name-value pairs are described 
 The id attribute in the ADMX policy definition ties the <data /> tags to the ADMX element. For more information about the policy description format, see [Administrative Template File (ADMX) format](https://msdn.microsoft.com/en-us/library/aa373476(v=vs.85).aspx). Elements can be Text, MultiText, Boolean, Enum, Decimal, or List (for more information, see [policy elements](https://msdn.microsoft.com/en-us/library/dn606004(v=vs.85).aspx)). 
 
 If you search for the string "Publishing_Server2_Name_Prompt", you will find <data id="Publishing_Server2_Name_Prompt" value=" Some display name"/> in the *Enabling a policy* example and its corresponding ADMX policy definition in the appv.admx file:
-'''XML
+
+```XML
       <elements>
         <text id="Publishing_Server2_Name_Prompt" valueName=" Some display name" required="true"/>
-'''
+```
 
 The ADMX file drives the policy definition and is required by the MDM server via the syncml protocol.
 
-The following syncml examples illustrate common options and the corresponding syncml code that can be used for testing your policies. Note that the payload of the syncml must be XML-encoded; for this XML encoding, you can use the [Coder’s Toolbox
+
+## <a href="" id="group-policy-examples"></a>Group policy examples
+
+The following syncml examples describes how to set a MDM policy that is defined by an ADMX template, specifically the Windows 10 group policy Publishing_Server2_Policy description in the application virtualization ADMX file, appv.admx. Note that the functionality that this group policy manages is not important; it is used to illustrate only how an MDM ISV can set an ADMX-defined group policy.
+
+These syncml examples illustrate common options and the corresponding syncml code that can be used for testing your policies. Note that the payload of the syncml must be XML-encoded; for this XML encoding, you can use the [Coder’s Toolbox
 ](http://coderstoolbox.net/string/#!encoding=xml&action=encode&charset=us_ascii) online tool.
 
 
