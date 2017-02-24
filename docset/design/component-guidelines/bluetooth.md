@@ -36,7 +36,7 @@ Additional features that were added after Windows 10, version 1507 are marked a
 
 ### Bluetooth features
 
--   Converged Bluetooth Core stack. Audio profiles differ in behavior between Desktop and Mobile. 
+-   Converged Bluetooth Core stack. Audio profiles differ in behavior between Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) and Windows 10 Mobile. 
 
 -   Compliant to the standard Bluetooth 4.1 (for all mandatory spec requirements, not for optional requirements)
 
@@ -64,7 +64,7 @@ Additional features that were added after Windows 10, version 1507 are marked a
 
     -   (1607) (Pre-pair Bluetooth devices during manufacturing)[bluetooth-prepairing.md]: Allows for a seamless out-of-box experience that allows Bluetooth devices to just work. 
 
-    -   (1704) HFP 1.6 w/ Wideband speech on Desktop.
+    -   (1704) Hands-Free Profile (HFP) 1.6 specification with Wideband speech on Windows 10 for desktop editions.
 
 -   APIs/Profiles
 
@@ -80,7 +80,7 @@ Additional features that were added after Windows 10, version 1507 are marked a
 
     -   (1607) Map apps can now use Cortana's voice for navigation.
 
-    -   (1704) Desktop support for [Call Control APIs](https://docs.microsoft.com/en-us/uwp/api/Windows.ApplicationModel.Calls). 
+    -   (1704) Support for [Call Control APIs](https://docs.microsoft.com/en-us/uwp/api/Windows.ApplicationModel.Calls) on Windows 10 for desktop editions.
 
     -   (1704) Support for GATT Server, Bluetooth LE Peripheral and non-paired support for Bluetooth LE. See our [developer post](http://aka.ms/bluetoothgatt) for more details.
 
