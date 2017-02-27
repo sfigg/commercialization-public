@@ -33,7 +33,7 @@ The following is a list of functions performed by the HealthAttestation CSP:
 **DHA-Session (Device HealthAttestation session)**
 <p style="margin-left: 20px">The Device HealthAttestation session (DHA-Session) describes the end-to-end communication flow that is performed in one device health attestation session.</p>
 
-![healthattestation session diagram](images/healthattestation_1.png)
+![healthattestation session diagram](images/healthattestation_1.png)   
 
 <p style="margin-left: 20px">The following list of transactions are performed in one DHA-Session:</p>
 <ul>
@@ -101,7 +101,7 @@ The following is a list of functions performed by the HealthAttestation CSP:
 
 ## HealthAttestation CSP diagram and description  
 
-The following diagram shows the HealthAttestation configuration service provider in tree format.
+The following diagram shows the HealthAttestation configuration service provider in tree format.  
 
 ![healthattestation csp](images/provisioning-csp-healthattestation.png)
 
@@ -792,194 +792,223 @@ If reported OSRevListInfo version does not equal an accepted value, then take on
 ## **Additional Examples**
 
 
-The following are additional code examples to assist you in integrating Health Attestation into your enterprise.
-
-## Health certificate request
+The following are additional code examples to assist you in integrating Health Attestation into your enterprise
 
 
-``` syntax
-<HealthCertificateRequest ProtocolVersion="1" xmlns="http://schemas.microsoft.com/windows/security/healthcertificate/request/v1">
-  <Claims>AAECAwQFBgcICQoLDA0ODw==</Claims>
-  <AIKCertificate>AAECAwQFBgcICQoLDA0ODw==</AIKCertificate>
-</HealthCertificateRequest>
-```
+## **Device HealthAttestation CSP error codes**
 
-## Health certificate response
-
-
-``` syntax
-<?xml version="1.0" encoding="UTF-8"?>
-<xs:schema id="HealthCertificateResponse"
-           xmlns="http://schemas.microsoft.com/windows/security/healthcertificate/response/v1"
-xmlns:xs="http://www.w3.org/2001/XMLSchema"           targetNamespace="http://schemas.microsoft.com/windows/security/healthcertificate/response/v1"
-elementFormDefault="qualified">
-
-    <xs:element name="HealthCertificateResponse" type="HealthCertificateResponse_T"/>
-
-    <xs:complexType name="ResponseCommon_T">
-        <xs:attribute name="ErrorCode" type="xs:int" use="required"/>
-        <xs:attribute name="ErrorMessage" type="xs:string" use="required"/>
-    </xs:complexType>
-
-    <xs:group name="HealthCertificateResponseData">
-        <xs:annotation>
-            <xs:documentation>Health certificate response data</xs:documentation>
-        </xs:annotation>
-        <xs:sequence>
-            <xs:element name="HealthCertificateBlob"  minOccurs="1" maxOccurs="1">
-                <xs:annotation>
-                    <xs:documentation>
-                      The base 64 encoded Health Certificate blob.
-                    </xs:documentation>
-                </xs:annotation>
-                <xs:simpleType>
-                    <xs:restriction base="xs:base64Binary">
-                        <xs:minLength value="1"/>
-                    </xs:restriction>
-                </xs:simpleType>
-            </xs:element>
-        </xs:sequence>
-    </xs:group>
-
-    <xs:complexType name="HealthCertificateResponse_T" >
-        <xs:complexContent>
-            <xs:extension base="ResponseCommon_T">
-                <xs:group ref="HealthCertificateResponseData" minOccurs="0"/>
-            </xs:extension>
-        </xs:complexContent>
-    </xs:complexType>
-</xs:schema>
-```
-
-## Health certificate response example
-
-
-``` syntax
-<HealthCertificateResponse ErrorCode="1" ErrorMessage="ErrorMessage1" xmlns="http://schemas.microsoft.com/windows/security/healthcertificate/response/v1">
-  <HealthCertificateBlob>AAECAwQFBgcICQoLDA0ODw==</HealthCertificateBlob>
-</HealthCertificateResponse>
-```
-
-## Health state validation request
-
-
-``` syntax
-<?xml version="1.0" encoding="UTF-8"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
-xmlns="http://schemas.microsoft.com/windows/security/healthcertificate/validation/request/v1"
-targetNamespace="http://schemas.microsoft.com/windows/security/healthcertificate/validation/request/v1"
-elementFormDefault="qualified">
-
-  <xs:element name="HealthCertificateValidationRequest"   type="HealthCertificateValidationRequest_T"/>
-
-  <xs:complexType name="HealthCertificateValidationRequest_T">
-    <xs:annotation>
-      <xs:documentation>A request for Health Certificate validation </xs:documentation>
-    </xs:annotation>
-    <xs:sequence>
-      <xs:element name="Nonce"                    type="xs:hexBinary"/>
-      <xs:element name="Claims"                   type="xs:base64Binary"/>
-      <xs:element name="HealthCertificateBlob"    type="xs:base64Binary"/>
-    </xs:sequence>
-    <xs:attribute name="ProtocolVersion" use="required">
-      <xs:simpleType>
-        <xs:restriction base="xs:int">
-          <xs:minInclusive value="1"/>
-        </xs:restriction>
-      </xs:simpleType>
-    </xs:attribute>
-  </xs:complexType>
-</xs:schema>
-```
-
-## Health state validation request example
-
-
-``` syntax
-<HealthCertificateValidationRequest ProtocolVersion="1" xmlns="http://schemas.microsoft.com/windows/security/healthcertificate/validation/request/v1">
-  <Nonce>0FB7</Nonce>
-  <Claims>AAECAwQFBgcICQoLDA0ODw==</Claims>
-  <HealthCertificateBlob>AAECAwQFBgcICQoLDA0ODw==</HealthCertificateBlob>
-</HealthCertificateValidationRequest>
-```
-
-## Health state validation response
-
-
-``` syntax
-<?xml version="1.0" encoding="UTF-8"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           xmlns="http://schemas.microsoft.com/windows/security/healthcertificate/validation/response/v1"
-           targetNamespace="http://schemas.microsoft.com/windows/security/healthcertificate/validation/response/v1"
-           elementFormDefault="qualified">
-
-    <xs:element name="HealthCertificateValidationResponse" type="HealthCertificateValidationResponse_T"/>
-
-    <xs:complexType name="ResponseCommon_T">
-        <xs:attribute name="ErrorCode" type="xs:int" use="required"/>
-        <xs:attribute name="ErrorMessage" type="xs:string" use="required"/>
-    </xs:complexType>
-
-    <xs:complexType name="HealthCertificatePublicProperties_T">
-        <xs:annotation>
-            <xs:documentation>Health certificate non machine identifiable properties </xs:documentation>
-        </xs:annotation>
-        <xs:sequence>
-            <xs:element name="Issued"                       type="xs:dateTime"/>
-            <xs:element name="ResetCount"                   type="xs:unsignedInt"/>
-            <xs:element name="RestartCount"                 type="xs:unsignedInt"/>
-            <xs:element name="DEPPolicy"                    type="xs:unsignedInt"/>
-            <xs:element name="BitlockerStatus"              type="xs:unsignedInt"/>
-            <xs:element name="SecureBootEnabled"            type="Boolean_T"/>
-            <xs:element name="BootDebuggingEnabled"         type="Boolean_T"/>
-            <xs:element name="OSKernelDebuggingEnabled"     type="Boolean_T"/>
-            <xs:element name="CodeIntegrityEnabled"         type="Boolean_T"/>
-            <xs:element name="TestSigningEnabled"           type="Boolean_T"/>
-            <xs:element name="SafeMode"                     type="Boolean_T"/>
-            <xs:element name="WinPE"                        type="Boolean_T"/>
-            <xs:element name="ELAMDriverLoaded"             type="Boolean_T"/>
-            <xs:element name="VSMEnabled"                   type="Boolean_T"/>
-        </xs:sequence>
-    </xs:complexType>
-
-    <xs:complexType name="HealthStatusProperties_T">
-        <xs:annotation>
-            <xs:documentation>Health certificate validation response data</xs:documentation>
-        </xs:annotation>
-        <xs:sequence>
-            <xs:element name="RestartCount"                  type="xs:unsignedInt"/>
-        </xs:sequence>
-    </xs:complexType>
-
-    <xs:complexType name="HealthCertificateValidationResponse_T" >
-        <xs:annotation>
-            <xs:documentation>Health certificate validation response </xs:documentation>
-        </xs:annotation>
-        <xs:complexContent>
-            <xs:extension base="ResponseCommon_T">
-                <xs:sequence>
-                    <!--Optional element, present only when the certificate can be verified and decrypted-->
-                    <xs:element name="HealthCertificateProperties"  type="HealthCertificatePublicProperties_T"  minOccurs="0"/>
-                    <!--Optional element, present only when the reason for a validation failure is a mismatch between the 
-                    current health state and the certificate health state-->
-                    <xs:element name="HealthStatusProperties"       type="HealthStatusProperties_T"             minOccurs="0"/>
-                </xs:sequence>
-            </xs:extension>
-        </xs:complexContent>
-    </xs:complexType>
-```
+<table>
+	<tr>
+		<th>Error code</th>
+		<th>Error name</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td style="vertical-align:top">0</td>
+		<td style="vertical-align:top">HEALTHATTESTATION_CERT_RETRIEVAL_UNINITIALIZED</td>
+		<td style="vertical-align:top">This is the initial state for devices that have never participated in a DHA-Session. </td>
+    </tr>
+ 	<tr>
+		<td style="vertical-align:top">1</td>
+		<td style="vertical-align:top">HEALTHATTESTATION_CERT_RETRIEVAL_REQUESTED</td>
+		<td style="vertical-align:top">This state signifies that MDM client’s Exec call on the node VerifyHealth has been triggered and now the OS is trying to retrieve DHA-EncBlob from DHA-Server.</td>
+    </tr>
+	<tr>
+		<td style="vertical-align:top">2</td>
+		<td style="vertical-align:top">HEALTHATTESTATION_CERT_RETRIEVAL_FAILED</td>
+		<td style="vertical-align:top">This state signifies that the device failed to retrieve DHA-EncBlob from DHA-Server.</td>
+    </tr>
+	<tr>
+		<td style="vertical-align:top">3</td>
+		<td style="vertical-align:top">HEALTHATTESTATION_CERT_RETRIEVAL_COMPLETE</td>
+		<td style="vertical-align:top">This state signifies that the device failed to retrieve DHA-EncBlob from DHA-Server.</td>
+    </tr>
+	<tr>
+		<td style="vertical-align:top">4</td>
+		<td style="vertical-align:top">HEALTHATTESTATION_CERT_RETRIEVAL_PCR_FAIL</td>
+		<td style="vertical-align:top">Deprecated in Windows 10, version 1607.</td>
+    </tr>
+	<tr>
+		<td style="vertical-align:top">5</td>
+		<td style="vertical-align:top">HEALTHATTESTATION_CERT_RETRIEVAL_GETQUOTE_FAIL</td>
+		<td style="vertical-align:top">DHA-CSP failed to get a claim quote.</td>
+    </tr>
+	<tr>
+		<td style="vertical-align:top">6</td>
+		<td style="vertical-align:top">HEALTHATTESTATION_CERT_RETRIEVAL_DEVICE_NOT_READY</td>
+		<td style="vertical-align:top">DHA-CSP failed in opening a handle to Microsoft Platform Crypto Provider.</td>
+    </tr>
+	<tr>
+		<td style="vertical-align:top">7</td>
+		<td style="vertical-align:top">HEALTHATTESTATION_CERT_RETRIEVAL_WINDOWS_AIK_FAIL</td>
+		<td style="vertical-align:top">DHA-CSP failed in retrieving Windows AIK</td>
+    </tr>
+	<tr>
+		<td style="vertical-align:top">8</td>
+		<td style="vertical-align:top">HEALTHATTESTATION_CERT_RETRIEVAL_FROM_WEB_FAIL</td>
+		<td style="vertical-align:top">Deprecated in Windows 10, version 1607.</td>
+    </tr>
+	<tr>
+		<td style="vertical-align:top">9</td>
+		<td style="vertical-align:top">HEALTHATTESTATION_CERT_RETRIEVAL_INVALID_TPM_VERSION</td>
+		<td style="vertical-align:top">Invalid TPM version (TPM version is not 1.2 or 2.0)</td>
+    </tr>
+	<tr>
+		<td style="vertical-align:top">10</td>
+		<td style="vertical-align:top">HEALTHATTESTATION_CERT_RETRIEVAL_GETNONCE_FAIL</td>
+		<td style="vertical-align:top">Nonce was not found in the registry.</td>
+    </tr>
+	<tr>
+		<td style="vertical-align:top">11</td>
+		<td style="vertical-align:top">HEALTHATTESTATION_CERT_RETRIEVAL_GETCORRELATIONID_FAIL</td>
+		<td style="vertical-align:top">Correlation ID was not found in the registry.</td>
+    </tr>
+	<tr>
+		<td style="vertical-align:top">12</td>
+		<td style="vertical-align:top">HEALTHATTESTATION_CERT_RETRIEVAL_GETCERT_FAIL</td>
+		<td style="vertical-align:top">Deprecated in Windows 10, version 1607.</td>
+    </tr>
+	<tr>
+		<td style="vertical-align:top">13</td>
+		<td style="vertical-align:top">HEALTHATTESTATION_CERT_RETRIEVAL_GETCLAIM_FAIL</td>
+		<td style="vertical-align:top">Deprecated in Windows 10, version 1607.</td>
+    </tr>
+	<tr>
+		<td style="vertical-align:top">14</td>
+		<td style="vertical-align:top">HEALTHATTESTATION_CERT_RETRIEVAL_ENCODING_FAIL</td>
+		<td style="vertical-align:top">Failure in Encoding functions. (Extremely unlikely scenario)</td>
+    </tr>
+	<tr>
+		<td style="vertical-align:top">15</td>
+		<td style="vertical-align:top">HEALTHATTESTATION_CERT_RETRIEVAL_ENDPOINTOVERRIDE_FAIL</td>
+		<td style="vertical-align:top">Deprecated in Windows 10, version 1607.</td>
+    </tr>
+	<tr>
+		<td style="vertical-align:top">16</td>
+		<td style="vertical-align:top">HEALTHATTESTATION_CERT_RETRIEVAL_FAILED_LOAD_XML</td>
+		<td style="vertical-align:top">DHA-CSP failed to load the payload it received from DHA-Service </td>
+    </tr>
+	<tr>
+		<td style="vertical-align:top">17</td>
+		<td style="vertical-align:top">HEALTHATTESTATION_CERT_RETRIEVAL_FAILED_CORRUPT_XML</td>
+		<td style="vertical-align:top">DHA-CSP received a corrupted response from DHA-Service.</td>
+    </tr>
+	<tr>
+		<td style="vertical-align:top">18</td>
+		<td style="vertical-align:top">HEALTHATTESTATION_CERT_RETRIEVAL_FAILED_EMPTY_XML</td>
+		<td style="vertical-align:top">DHA-CSP received an empty response from DHA-Service.</td>
+    </tr>
+	<tr>
+		<td style="vertical-align:top">19</td>
+		<td style="vertical-align:top">HEALTHATTESTATION_CERT_RETRIEVAL_FAILED_DECRYPT_AES_EK</td>
+		<td style="vertical-align:top">DHA-CSP failed in decrypting the AES key from the EK challenge.</td>
+    </tr>
+	<tr>
+		<td style="vertical-align:top">20</td>
+		<td style="vertical-align:top">HEALTHATTESTATION_CERT_RETRIEVAL_FAILED_DECRYPT_CERT_AES_EK</td>
+		<td style="vertical-align:top">DHA-CSP failed in decrypting the health cert with the AES key.</td>
+    </tr>
+	<tr>
+		<td style="vertical-align:top">21</td>
+		<td style="vertical-align:top">HEALTHATTESTATION_CERT_RETRIEVAL_FAILED_EXPORT_AIKPUB</td>
+		<td style="vertical-align:top">DHA-CSP failed in exporting the AIK Public Key.</td>
+    </tr>
+	<tr>
+		<td style="vertical-align:top">22</td>
+		<td style="vertical-align:top">HEALTHATTESTATION_CERT_RETRIEVAL_FAILED_CREATE_CLAIMAUTHORITYONLY</td>
+		<td style="vertical-align:top">DHA-CSP failed in trying to create a claim with AIK attestation data.</td>
+    </tr>
+	<tr>
+		<td style="vertical-align:top">23</td>
+		<td style="vertical-align:top">HEALTHATTESTATION_CERT_RETRIEVAL_FAILED_APPEND_AIKPUB</td>
+		<td style="vertical-align:top">DHA-CSP failed in appending the AIK Pub to the request blob.</td>
+    </tr>
+	<tr>
+		<td style="vertical-align:top">24</td>
+		<td style="vertical-align:top">HEALTHATTESTATION_CERT_RETRIEVAL_FAILED_APPEND_AIKCERT</td>
+		<td style="vertical-align:top">DHA-CSP failed in appending the AIK Cert to the request blob.</td>
+    </tr>
+	<tr>
+		<td style="vertical-align:top">25</td>
+		<td style="vertical-align:top">HEALTHATTESTATION_CERT_RETRIEVAL_FAILED_INIT_HTTPHANDLE</td>
+		<td style="vertical-align:top">DHA-CSP failed to obtain a Session handle.</td>
+    </tr>
+	<tr>
+		<td style="vertical-align:top">26</td>
+		<td style="vertical-align:top">HEALTHATTESTATION_CERT_RETRIEVAL_FAILED_GETTARGET_HTTPHANDLE</td>
+		<td style="vertical-align:top">DHA-CSP failed to connect to the DHA-Service.</td>
+    </tr>
+	<tr>
+		<td style="vertical-align:top">27</td>
+		<td style="vertical-align:top">HEALTHATTESTATION_CERT_RETRIEVAL_FAILED_CREATE_HTTPHANDLE</td>
+		<td style="vertical-align:top">DHA-CSP failed to create a HTTP request handle.</td>
+    </tr>
+	<tr>
+		<td style="vertical-align:top">28</td>
+		<td style="vertical-align:top">HEALTHATTESTATION_CERT_RETRIEVAL_FAILED_SET_INTERNETOPTION</td>
+		<td style="vertical-align:top">DHA-CSP failed to set options.</td>
+    </tr>
+	<tr>
+		<td style="vertical-align:top">29</td>
+		<td style="vertical-align:top">HEALTHATTESTATION_CERT_RETRIEVAL_FAILED_ADD_REQUESTHEADERS</td>
+		<td style="vertical-align:top">DHA-CSP failed to add request headers.</td>
+    </tr>
+	<tr>
+		<td style="vertical-align:top">30</td>
+		<td style="vertical-align:top">HEALTHATTESTATION_CERT_RETRIEVAL_FAILED_SEND_REQUEST</td>
+		<td style="vertical-align:top">DHA-CSP failed to send the HTTP request.</td>
+    </tr>
+	<tr>
+		<td style="vertical-align:top">31</td>
+		<td style="vertical-align:top">HEALTHATTESTATION_CERT_RETRIEVAL_FAILED_RECEIVE_RESPONSE</td>
+		<td style="vertical-align:top">DHA-CSP failed to receive a response from the DHA-Service.</td>
+    </tr>
+	<tr>
+		<td style="vertical-align:top">32</td>
+		<td style="vertical-align:top">HEALTHATTESTATION_CERT_RETRIEVAL_FAILED_QUERY_HEADERS</td>
+		<td style="vertical-align:top">DHA-CSP failed to query headers when trying to get HTTP status code.</td>
+    </tr>
+	<tr>
+		<td style="vertical-align:top">33</td>
+		<td style="vertical-align:top">HEALTHATTESTATION_CERT_RETRIEVAL_FAILED_EMPTY_RESPONSE</td>
+		<td style="vertical-align:top">DHA-CSP received an empty response from DHA-Service even though HTTP status was OK.</td>
+    </tr>
+	<tr>
+		<td style="vertical-align:top">34</td>
+		<td style="vertical-align:top">HEALTHATTESTATION_CERT_RETRIEVAL_FAILED_MISSING_RESPONSE</td>
+		<td style="vertical-align:top">DHA-CSP received an empty response along with a HTTP error code from DHA-Service.</td>
+    </tr>
+	<tr>
+		<td style="vertical-align:top">35</td>
+		<td style="vertical-align:top">HEALTHATTESTATION_CERT_RETRIEVAL_FAILED_IMPERSONATE_USER</td>
+		<td style="vertical-align:top">DHA-CSP failed to impersonate user.</td>
+    </tr>
+	<tr>
+		<td style="vertical-align:top">36</td>
+		<td style="vertical-align:top">HEALTHATTESTATION_CERT_RETRIEVAL_FAILED_ACQUIRE_PDCNETWORKACTIVATOR</td>
+		<td style="vertical-align:top">DHA-CSP failed to acquire the PDC activators that are needed for network communication when the device is in Connected standby mode.</td>
+    </tr>
+	<tr>
+		<td style="vertical-align:top">0xFFFF</td>
+		<td style="vertical-align:top">HEALTHATTESTATION_CERT_RETRIEVAL_FAILED_UNKNOWN</td>
+		<td style="vertical-align:top">DHA-CSP failed due to an unknown reason, this error is highly unlikely to occur.</td>
+    </tr>
+	<tr>
+		<td style="vertical-align:top">400</td>
+		<td style="vertical-align:top">Bad_Request_From_Client</td>
+		<td style="vertical-align:top">DHA-CSP has received a bad (malformed) attestation request.</td>
+    </tr>
+	<tr>
+		<td style="vertical-align:top">404</td>
+		<td style="vertical-align:top">Endpoint_Not_Reachable</td>
+		<td style="vertical-align:top">DHA-Service is not reachable by DHA-CSP</td>
+    </tr>
+    
+</table>
 
 ## Related topics
 
 
 [Configuration service provider reference](configuration-service-provider-reference.md)
-
- 
-
- 
-
-
-
-
 
 
