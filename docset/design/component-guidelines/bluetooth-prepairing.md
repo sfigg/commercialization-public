@@ -21,7 +21,7 @@ OEMs must determine on their own how to manufacture these devices. They must als
 ### PC
 - 	Windows 10 Anniversary Update
 - 	UEFI Stored Variables
-- 	[Microsoft-defined Bluetooth HCI commands](https://msdn.microsoft.com/en-us/library/windows/hardware/dn936814(v=vs.85).aspx) for optimize battery life. 
+- 	[Microsoft-defined Bluetooth HCI commands](https://msdn.microsoft.com/en-us/library/windows/hardware/dn936814) for optimize battery life. 
 
 ### Peripheral
 - Bluetooth LE
