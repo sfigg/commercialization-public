@@ -4967,7 +4967,7 @@ Employees cannot remove these search engines, but they can set any one as the de
 <p style="margin-left: 20px">The following list shows the supported values:
 
 -   1 (default) - Allow (CDP service available).
--   0 - Disable (CDP sevice not available).
+-   0 - Disable (CDP service not available).
 
 <a href="" id="connectivity-allownfc"></a>**Connectivity/AllowNFC**  
 > [!NOTE]
