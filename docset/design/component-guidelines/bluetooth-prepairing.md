@@ -14,9 +14,7 @@ When an LE peripheral supporting this feature is supplied power for the first ti
 
 When a bundled device is unpaired within the range defined by the RSSI value, the Bluetooth device automatically re-pairs to Windows. Users must leave the range of the host PC, to be able to pair their device to other Bluetooth enabled PCs.
 
-OEMs must determine on their own: 
--   How to manufacture these devices 
--   Guarantee security and that they will all be in the same box when shipped to customers.
+OEMs must determine on their own how to manufacture these devices. They must also guarantee security and that they will all be in the same box when shipped to customers.
 
 ## Feature requirements
 
