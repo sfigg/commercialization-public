@@ -99,14 +99,14 @@ The following is a list of functions performed by the HealthAttestation CSP:
 <li>Receives attestation requests (DHA-Requests) from a DHA-Enabled-MDM, and replies with a device health report (DHA-Report)</li>
 </ul>
 
+## CSP diagram and node descriptions
 
-## **HealthAttestation CSP diagram and node descriptions**
 
 The following diagram shows the HealthAttestation configuration service provider in tree format.  
 
 ![healthattestation csp](images/provisioning-csp-healthattestation.png)
 
-<a href="" id="--vendor-msft"></a>**./Vendor/MSFT**  
+<a href="" id="healthattestation"></a>**./Vendor/MSFT/HealthAttestation**  
 <p style="margin-left: 20px">The root node for the HealthAttestation configuration service provider.</p>
 
 <a href="" id="verifyhealth"></a>**VerifyHealth** (Required)  
@@ -804,11 +804,6 @@ The following are additional code examples to assist you in integrating Health A
 		<th>Error name</th>
 		<th>Description</th>
 	</tr>
-	<tr>
-		<td style="vertical-align:top" width="10%">0</td>
-		<td style="vertical-align:top" width="45%">HEALTHATTESTATION_CERT_RETRIEVAL_UNINITIALIZED</td>
-		<td style="vertical-align:top" width="45%">This is the initial state for devices that have never participated in a DHA-Session. </td>
-    </tr>
 	<tr>
 		<td style="vertical-align:top">0</td>
 		<td style="vertical-align:top">HEALTHATTESTATION_CERT_RETRIEVAL_UNINITIALIZED</td>
