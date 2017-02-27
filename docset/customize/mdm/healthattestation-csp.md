@@ -99,7 +99,8 @@ The following is a list of functions performed by the HealthAttestation CSP:
 <li>Receives attestation requests (DHA-Requests) from a DHA-Enabled-MDM, and replies with a device health report (DHA-Report)</li>
 </ul>
 
-## HealthAttestation CSP diagram and description  
+
+## HealthAttestation CSP diagram and node descriptions
 
 The following diagram shows the HealthAttestation configuration service provider in tree format.  
 
@@ -798,6 +799,11 @@ The following are additional code examples to assist you in integrating Health A
 ## **Device HealthAttestation CSP error codes**
 
 <table>
+    <colgroup>
+        <col width="10%" />
+        <col width="45%" />
+        <col width="45%" />
+    </colgroup>
 	<tr>
 		<th>Error code</th>
 		<th>Error name</th>
