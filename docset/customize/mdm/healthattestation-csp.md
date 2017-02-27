@@ -92,12 +92,11 @@ The following is a list of functions performed by the HealthAttestation CSP:
 
 <p style="margin-left: 20px">DHA-Service is available in 2 flavors: “DHA-Cloud” and “DHA-Server2016”. DHA-Service supports a variety of implementation scenarios including cloud, on premises, air-gapped, and hybrid scenarios.</p>
 <p style="margin-left: 20px">The following list of operations are performed by DHA-Service:</p>
-<ul>
-<li>Receives device boot data (DHA-BootData) from a DHA-Enabled device</li>
-<li>Forwards DHA-BootData to Device Health Attestation Service (DHA-Service) </li>
-<li>Receives an encrypted blob (DHA-EncBlob) from DHA-Service, and stores it in a local cache on the device</li>
-<li>Receives attestation requests (DHA-Requests) from a DHA-Enabled-MDM, and replies with a device health report (DHA-Report)</li>
-</ul>
+
+- Receives device boot data (DHA-BootData) from a DHA-Enabled device</li>
+- Forwards DHA-BootData to Device Health Attestation Service (DHA-Service) </li>
+- Receives an encrypted blob (DHA-EncBlob) from DHA-Service, and stores it in a local cache on the device</li>
+- Receives attestation requests (DHA-Requests) from a DHA-Enabled-MDM, and replies with a device health report (DHA-Report)</li>
 
 ## CSP diagram and node descriptions  
 
