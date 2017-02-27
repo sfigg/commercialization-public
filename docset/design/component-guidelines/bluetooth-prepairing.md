@@ -4,7 +4,7 @@ description: This topic provides the requirements for Bluetooth pre-pairing in W
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-ms.assetid: 64026D6A-75CB-4D3A-A467-6140F93CBAA4
+ms.assetid: AAD9A002-8A85-4FAD-AE75-0B70B76B21A0
 ---
 
 # Bluetooth LE pre-pairing
