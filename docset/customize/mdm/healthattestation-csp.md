@@ -100,7 +100,7 @@ The following is a list of functions performed by the HealthAttestation CSP:
 </ul>
 
 
-## HealthAttestation CSP diagram and node descriptions
+## **HealthAttestation CSP diagram and node descriptions**
 
 The following diagram shows the HealthAttestation configuration service provider in tree format.  
 
@@ -799,16 +799,16 @@ The following are additional code examples to assist you in integrating Health A
 ## **Device HealthAttestation CSP error codes**
 
 <table>
-    <colgroup>
-        <col width="10%" />
-        <col width="45%" />
-        <col width="45%" />
-    </colgroup>
 	<tr>
 		<th>Error code</th>
 		<th>Error name</th>
 		<th>Description</th>
 	</tr>
+	<tr>
+		<td style="vertical-align:top" width="10%">0</td>
+		<td style="vertical-align:top" width="45%">HEALTHATTESTATION_CERT_RETRIEVAL_UNINITIALIZED</td>
+		<td style="vertical-align:top" width="45%">This is the initial state for devices that have never participated in a DHA-Session. </td>
+    </tr>
 	<tr>
 		<td style="vertical-align:top">0</td>
 		<td style="vertical-align:top">HEALTHATTESTATION_CERT_RETRIEVAL_UNINITIALIZED</td>
