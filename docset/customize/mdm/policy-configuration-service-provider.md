@@ -7974,7 +7974,7 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 <p style="margin-left: 20px">Added in the January service release of Windows 10, version 1607. Allows Windows Update Agent to determine the download URL when it is missing from the metadata.  This scenario will occur when intranet update service stores the metadata files but the download contents are stored in the ISV file cache (specified as the alternate download URL).
 
 > [!NOTE]
-> This setting should only be used when the intranet update service does not provide download Urls in the update metadata for files which are available on the alternate download server.
+> This setting should only be used when the intranet update service does not provide download URLs in the update metadata for files which are available on the alternate download server.
 
 <p style="margin-left: 20px">The following list shows the supported values:
 
