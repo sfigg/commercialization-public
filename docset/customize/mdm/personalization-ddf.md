@@ -6,7 +6,7 @@ MSHAttr:
 - 'PreferredLib:/library/windows/hardware'
 ---
 
-# BitLocPersonalizationker DDF file
+# Personalization DDF file
 
 
 > [!WARNING]
