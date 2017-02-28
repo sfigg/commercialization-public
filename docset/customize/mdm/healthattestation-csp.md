@@ -148,12 +148,12 @@ The following diagram shows the HealthAttestation configuration service provider
 <p style="margin-left: 20px">Value type is integer, the minimum value is - 2,147,483,648 and the maximun value is 2,147,483,647. The supported operation is Get.</p>
 
 <a href="" id="hasendpoint"></a>**HASEndpoint** (Optional)
-<p style="margin-left: 20px">Identifies the fully qualified domain name (FDQN) of the DHA-Service that is assigned to perform attestation. If an FDQN is not assigned, DHA-Cloud (Microsoft owned and operated cloud service) will be used as the default attestation service.</p>
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Identifies the fully qualified domain name (FDQN) of the DHA-Service that is assigned to perform attestation. If an FDQN is not assigned, DHA-Cloud (Microsoft owned and operated cloud service) will be used as the default attestation service.</p>
 
 <p style="margin-left: 20px">Value type is string. The supported operations are Get and Replace. The default value is has.spserv.microsoft.com.</p>
 
 <a href="tpmreadystatus" id=""></a>**TpmReadyStatus** (Required)
-<p style="margin-left: 20px">Returns a bitmask of information describing the state of TPM.</p>
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Returns a bitmask of information describing the state of TPM.</p>
 <p style="margin-left: 20px">Value type is integer. The supported operation is Get.</p>
 
 ## **DHA-CSP integration steps**

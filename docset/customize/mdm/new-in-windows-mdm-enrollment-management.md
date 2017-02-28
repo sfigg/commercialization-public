@@ -641,6 +641,14 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li><em>TenantId</em>/Policies/EnablePinRecovery</li>
 </ul></td>
 </tr>
+<tr class="even">
+<td style="vertical-align:top"><p>[HealthAttestation CSP](healthattestation-csp.md)</p></td>
+<td style="vertical-align:top"><p>Updated in Windows 10, version 1703. Added the following node and settings:</p>
+<ul>
+<li>HASEndpoint</li>
+<li>TpmReadyStatus</li>
+</ul></td>
+</tr>
 </tbody>
 </table> 
 
@@ -1019,6 +1027,14 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li><em>TenantId</em>/Policies/ExcludeSecurityDevices (only for ./Device/Vendor/MSFT)</li>
 <li><em>TenantId</em>/Policies/ExcludeSecurityDevices/TPM12 (only for ./Device/Vendor/MSFT)</li>
 <li><em>TenantId</em>/Policies/EnablePinRecovery</li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td style="vertical-align:top"><p>[HealthAttestation CSP](healthattestation-csp.md)</p></td>
+<td style="vertical-align:top"><p>Updated in Windows 10, version 1703. Added the following node and settings:</p>
+<ul>
+<li>HASEndpoint</li>
+<li>TpmReadyStatus</li>
 </ul></td>
 </tr>
 </tbody>
