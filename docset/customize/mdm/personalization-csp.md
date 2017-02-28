@@ -16,7 +16,7 @@ The Personalization CSP can set the lock screen and desktop background images. S
 
 This CSP was added in Windows 10, version 1703. 
 
-The following diagram shows the BitLocker configuration service provider in tree format.
+The following diagram shows the Personalization configuration service provider in tree format.
 
 ![personalization csp](images/provisioning-csp-personalization.png)
 
@@ -24,7 +24,7 @@ The following diagram shows the BitLocker configuration service provider in tree
 <p style="margin-left: 20px">Defines the root node for the Personalization configuration service provider.</p>
 
 <a href="" id="desktopimageurl"></a>**DesktopImageUrl**  
-<p style="margin-left: 20px">Http or https Url to an image (jpg, jpeg, or png) to downloaded and used as the desktop image. It can also be a file Url to a local image on the file system that can be used as the desktop image.</p>
+<p style="margin-left: 20px">Http or https URL to an image (jpg, jpeg, or png) to downloaded and use as the desktop image. It can also be a file URL to a local image on the file system that can be used as the desktop image.</p>
 <p style="margin-left: 20px">Value type is string. Supported operations are Add, Get, Delete, and Replace.</p>
 
 <a href="" id="desktopimagestatus"></a>**DesktopImageStatus**  
@@ -34,13 +34,13 @@ The following diagram shows the BitLocker configuration service provider in tree
 <li>2 - Download or copy in progress.</li>
 <li>3 - Download or copy failed.</li>
 <li>4 - Unknown file type.</li>
-<li>5 - Unsupported Url scheme.</li>
+<li>5 - Unsupported URL scheme.</li>
 <li>6 - Max retry failed.</li>
 </ul>
 <p style="margin-left: 20px">Value type is integer. Supporter operation is Get.</p>
 
 <a href="" id="lockscreenimageurl"></a>**LockScreenImageUrl**  
-<p style="margin-left: 20px">Http or https Url to an image (jpg, jpeg, or png) to downloaded and used as the lock screen image. It can also be a file Url to a local image on the file system that can be used as the lock screen image.</p>
+<p style="margin-left: 20px">Http or https URL to an image (jpg, jpeg, or png) to downloaded and used as the lock screen image. It can also be a file URL to a local image on the file system that can be used as the lock screen image.</p>
 <p style="margin-left: 20px">Value type is string. Supported operations are Add, Get, Delete, and Replace.</p>
 
 
@@ -51,7 +51,7 @@ The following diagram shows the BitLocker configuration service provider in tree
 <li>2 - Download or copy in progress.</li>
 <li>3 - Download or copy failed.</li>
 <li>4 - Unknown file type.</li>
-<li>5 - Unsupported Url scheme.</li>
+<li>5 - Unsupported URL scheme.</li>
 <li>6 - Max retry failed.</li>
 </ul>
 <p style="margin-left: 20px">Value type is integer. Supporter operation is Get.</p>
