@@ -641,6 +641,10 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li><em>TenantId</em>/Policies/EnablePinRecovery</li>
 </ul></td>
 </tr>
+<tr class="even">
+<td style="vertical-align:top">[Office CSP](office-csp.md)</td>
+<td style="vertical-align:top"><p>Added new CSP.</p></td>
+</tr>
 </tbody>
 </table> 
 
@@ -1020,6 +1024,10 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li><em>TenantId</em>/Policies/ExcludeSecurityDevices/TPM12 (only for ./Device/Vendor/MSFT)</li>
 <li><em>TenantId</em>/Policies/EnablePinRecovery</li>
 </ul></td>
+</tr>
+<tr class="odd">
+<td style="vertical-align:top">[Office CSP](office-csp.md)</td>
+<td style="vertical-align:top"><p>Added new CSP for Windows 10, version 1703.</p></td>
 </tr>
 </tbody>
 </table>
