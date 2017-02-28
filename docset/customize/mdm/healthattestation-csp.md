@@ -636,7 +636,7 @@ Each of these are described in further detail in the following sections, along w
 
 <p style="margin-left: 20px">If BootdebuggingEnabled = 0 (False), then allow access.</p>
 
-<p style="margin-left: 20px">If BootDebuggingEnabled = 1 (True), then take one of the following actions that align with your enterprise policies:
+<p style="margin-left: 20px">If BootDebuggingEnabled = 1 (True), then take one of the following actions that align with your enterprise policies:</p>
 
 -   Disallow all access
 -   Disallow access to HBI assets
