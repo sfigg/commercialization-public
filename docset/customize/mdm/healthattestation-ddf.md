@@ -36,7 +36,7 @@ This topic shows the OMA DM device description framework (DDF) for the **HealthA
                 <Permanent />
             </Scope>
             <DFType>
-                <MIME>com.microsoft/1.0/MDM/HealthAttestation</MIME>
+                <MIME>com.microsoft/1.2/MDM/HealthAttestation</MIME>
             </DFType>
         </DFProperties>
         <Node>
@@ -200,6 +200,7 @@ This topic shows the OMA DM device description framework (DDF) for the **HealthA
         </Node>
     </Node>
 </MgmtTree>
+
 ```
 
 ## Related topics
