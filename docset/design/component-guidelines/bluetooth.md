@@ -1,6 +1,6 @@
 ---
 title: Bluetooth
-description: This topic provides a list of new features and recommendations for Bluetooth in .
+description: This topic provides a list of new features and recommendations for Bluetooth in Windows.
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
@@ -15,11 +15,14 @@ This topic provides a list of new features and recommendations for Bluetooth in 
 ## What's new in Windows 10
 
 
-Additional features that were added after Windows 10, version 1507 are marked as follows:
+Additional features that were added after Windows 10, version 1507 are marked as follows: 
 
 -   (1511) - The feature is new for the Windows 10, version 1511 release
 
 -   (1607) - The feature is new for the Windows 10, version 1607 release
+
+-   (1704) - The feature is new for the Windows 10, version 1704 release
+
 
 ### <a href="" id="qd-ids-"></a>QD IDs
 
@@ -33,7 +36,7 @@ Additional features that were added after Windows 10, version 1507 are marked a
 
 ### Bluetooth features
 
--   Converged Bluetooth stack, excluding Hands free profile (HFP) and Audio/Video Remote Control profile (AVRCP)
+-   Converged Bluetooth Core stack. Audio profiles differ in behavior between Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) and Windows 10 Mobile. 
 
 -   Compliant to the standard Bluetooth 4.1 (for all mandatory spec requirements, not for optional requirements)
 
@@ -59,9 +62,9 @@ Additional features that were added after Windows 10, version 1507 are marked a
 
     -   Windows Phone General Distribution Release (GDR) features ported to Windows 10 (Cortana address book entry, LE HID, MAP)
 
-    -   (1607) Pre-pair Bluetooth devices during manufacturing: Allows for a seamless out-of-box experience that allows Bluetooth devices to just work.
+    -   (1607) (Pre-pair Bluetooth devices during manufacturing)[bluetooth-prepairing.md]: Allows for a seamless out-of-box experience that allows Bluetooth devices to just work. 
 
-    -   (1607) Background Bluetooth process consent was added to maintain a user's privacy while developers find new ways to use Bluetooth.
+    -   (1704) Hands-Free Profile (HFP) 1.6 specification with Wideband speech on Windows 10 for desktop editions.
 
 -   APIs/Profiles
 
@@ -76,6 +79,10 @@ Additional features that were added after Windows 10, version 1507 are marked a
     -   (1607) Non-paired support for connections over RFCOMM: Apps can now communicate with Windows over RFCOMM without having to pair the device.
 
     -   (1607) Map apps can now use Cortana's voice for navigation.
+
+    -   (1704) Support for [Call Control APIs](https://docs.microsoft.com/en-us/uwp/api/Windows.ApplicationModel.Calls) on Windows 10 for desktop editions.
+
+    -   (1704) Support for GATT Server, Bluetooth LE Peripheral and non-paired support for Bluetooth LE. See our [developer post](http://aka.ms/bluetoothgatt) for more details.
 
 ### Bluetooth features list by edition
 
