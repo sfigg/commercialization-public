@@ -3253,6 +3253,17 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p></td>
 		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p></td></tr>
 	<tr>
+		<td style="vertical-align:top"><a href="#start-importedgeassets">Start/ImportEdgeAssets</a></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Pro</p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Business</p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Enterprise</p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Education</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p></td></tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#start-nopinningtotaskbar">Start/NoPinningToTaskbar</a></td>
 		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p></td>
 		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Pro</p></td>
@@ -7299,6 +7310,20 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 1.   Enable policy.
 2.   Log off.
 3.   Log in, and verify that the user tile is gone from Start.
+
+<a href="" id="start-importedgeassets"></a>**Start/ImportEdgeAssets**  
+> [!NOTE]
+> This policy requires reboot to take effect.
+
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Allows IT Admins to configure Start by allowing pinning of weblink tiles.  This policy imports .website files into ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\Policy Web Shortcuts which allows the StartLayout policy to pin weblink tiles that tie to .website files.
+
+<p style="margin-left: 20px">The value set for this policy is an XML string containting weblink shortcuts.
+
+<p style="margin-left: 20px">To validate on Desktop, do the following:
+
+1.   Set policy with an XML for weblink shortcuts.
+2.   Sign out/in.
+3.   Verify that all weblink shorcuts defined in XML show up in Start->Policy Web Shortcuts in the app list menu.
 
 <a href="" id="start-nopinningtotaskbar"></a>**Start/NoPinningToTaskbar**  
 
