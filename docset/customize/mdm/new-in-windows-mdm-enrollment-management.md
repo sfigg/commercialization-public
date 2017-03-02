@@ -529,6 +529,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <td style="vertical-align:top">[Policy CSP](policy-configuration-service-provider.md)</td>
 <td style="vertical-align:top"><p>Added the following new policies: </p>
 <ul>
+<li>Accounts/AllowMicrosoftAccountSignInAssistant</li>
 <li>ApplicationDefaults/DefaultAssociationsConfiguration</li>
 <li>Browser/AllowAddressBarDropdown</li>
 <li>Browser/AllowMicrosoftCompatibilityList</li>
@@ -934,6 +935,7 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <td style="vertical-align:top">[Policy CSP](policy-configuration-service-provider.md)</td>
 <td style="vertical-align:top"><p>Added the following new policies for Windows 10, version 1703:</p> 
 <ul>
+<li>Accounts/AllowMicrosoftAccountSignInAssistant</li>
 <li>Connectivity/AllowConnectedDevices</li>
 </ul>
 </td>
