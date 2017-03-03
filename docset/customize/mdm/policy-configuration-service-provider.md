@@ -4695,7 +4695,7 @@ By default, the Microsoft compatibility list is enabled and can be viewed by vis
 <p style="margin-left: 20px">Most restricted value is 0.
 
 <a href="" id="browser-allowsmartscreen"></a>**Browser/AllowSmartScreen**  
-<p style="margin-left: 20px">Specifies whether SmartScreen is allowed.
+<p style="margin-left: 20px">Specifies whether Windows Defender SmartScreen is allowed.
 
 <p style="margin-left: 20px">The following list shows the supported values:
 
@@ -4827,17 +4827,17 @@ Employees cannot remove these search engines, but they can set any one as the de
 <p style="margin-left: 20px">Most restricted value is 1.
 
 <a href="" id="browser-preventsmartscreenpromptoverride"></a>**Browser/PreventSmartScreenPromptOverride**  
-<p style="margin-left: 20px">Specifies whether users can override the SmartScreen Filter warnings about potentially malicious websites.
+<p style="margin-left: 20px">Specifies whether users can override the Windows Defender SmartScreen Filter warnings about potentially malicious websites.
 
 <p style="margin-left: 20px">The following list shows the supported values:
 
 -   0 (default) – Off.
 -   1 – On.
 
-<p style="margin-left: 20px">Turning this setting on stops users from ignoring the SmartScreen Filter warnings and blocks them from going to the site. Turning this setting off, or not configuring it, lets users ignore the SmartScreen Filter warnings about potentially malicious websites and to continue to the site.
+<p style="margin-left: 20px">Turning this setting on stops users from ignoring the Windows Defender SmartScreen Filter warnings and blocks them from going to the site. Turning this setting off, or not configuring it, lets users ignore the Windows Defender SmartScreen Filter warnings about potentially malicious websites and to continue to the site.
 
 <a href="" id="browser-preventsmartscreenpromptoverrideforfiles"></a>**Browser/PreventSmartScreenPromptOverrideForFiles**  
-<p style="margin-left: 20px">Specifies whether users can override the SmartScreen Filter warnings about downloading unverified files. Turning this setting on stops users from ignoring the SmartScreen Filter warnings and blocks them from downloading unverified files. Turning this setting off, or not configuring it, lets users ignore the SmartScreen Filter warnings about unverified files and lets them continue the download process.
+<p style="margin-left: 20px">Specifies whether users can override the Windows Defender SmartScreen Filter warnings about downloading unverified files. Turning this setting on stops users from ignoring the Windows Defender SmartScreen Filter warnings and blocks them from downloading unverified files. Turning this setting off, or not configuring it, lets users ignore the Windows Defender SmartScreen Filter warnings about unverified files and lets them continue the download process.
 
 <p style="margin-left: 20px">The following list shows the supported values:
 
