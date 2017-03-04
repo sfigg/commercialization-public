@@ -3726,6 +3726,30 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">1<p>IoT Core</p></td>
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>EAS</p></td></tr>
 	<tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#update-ignoremoappdownloadlimit">Update/IgnoreMOAppDownloadLimit</a></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Home</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Pro</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Business</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Enterprise</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Education</p></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Mobile</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Mobile Enterprise</p></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>IoT Core</p></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>EAS</p></td></tr>
+	<tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#update-ignoremoupdatedownloadlimit">Update/IgnoreMOUpdateDownloadLimit</a></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Home</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Pro</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Business</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Enterprise</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Education</p></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Mobile</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Mobile Enterprise</p></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>IoT Core</p></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>EAS</p></td></tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#update-pausedeferrals">Update/PauseDeferrals</a></td>
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Home</p></td>
 		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png"><p>Pro</p></td>
@@ -7998,6 +8022,42 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 
 -   0 (default) – Allow Windows Update drivers.
 -   1 – Exclude Windows Update drivers.
+
+<a href="" id="update-ignoremoappdownloadlimit"></a>**Update/IgnoreMOAppDownloadLimit**  
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies whether to ignore the MO download limit (allow unlimited downloading) over a cellular network for apps and their updates. If lower-level limits (for example, mobile caps) are required, those limits are controlled by external policies. 
+
+<p style="margin-left: 20px">The following list shows the supported values:
+
+-   0 (default) – Do not ignore MO download limit for apps and their updates.
+-   1 – Ignore MO download limit (allow unlimited downloading) for apps and their updates.
+
+<p style="margin-left: 20px">To validate this policy:
+
+1.  Enable the policy ensure the device is on a cellular network.
+2.  Run the scheduled task on your device to check for app updates in the background. For example, on a mobile device, run the following commands in TShell: 
+      - `regd delete HKEY_USERS\S-1-5-21-2702878673-795188819-444038987-2781\software\microsoft\windows\currentversion\windowsupdate /v LastAutoAppUpdateSearchSuccessTime /f`
+
+      - `exec-device schtasks.exe -arguments ""/run /tn """"\Microsoft\Windows\WindowsUpdate\Automatic App Update"""" /I""`
+
+3.   Verify that any downloads that are above the download size limit will complete without being paused.
+
+
+<a href="" id="update-ignoremoupdatedownloadlimit"></a>**Update/IgnoreMOUpdateDownloadLimit**  
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies whether to ignore the MO download limit (allow unlimited downloading) over a cellular network for OS updates. If lower-level limits (for example, mobile caps) are required, those limits are controlled by external policies. 
+
+<p style="margin-left: 20px">The following list shows the supported values:
+
+-   0 (default) – Do not ignore MO download limit for OS updates.
+-   1 – Ignore MO download limit (allow unlimited downloading) for OS updates.
+
+<p style="margin-left: 20px">To validate this policy:
+
+1.  Enable the policy and ensure the device is on a cellular network.
+2.  Run the scheduled task on phone to check for OS updates in the background. For example, on a mobile device, run the following commands in TShell: 
+      - `exec-device schtasks.exe -arguments ""/run /tn """"\Microsoft\Windows\WindowsUpdate\AUScheduledInstall"""" /I""`
+
+3.   Verify that any downloads that are above the download size limit will complete without being paused.
+
 
 <a href="" id="update-pausedeferrals"></a>**Update/PauseDeferrals**  
 > [!NOTE]
