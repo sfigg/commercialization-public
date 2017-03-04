@@ -594,6 +594,8 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>Update/EngagedRestartDeadline</li>
 <li>Update/EngagedRestartSnoozeSchedule</li>
 <li>Update/EngagedRestartTransistionSchedule</li>
+<li>Update/IgnoreMOAppDownloadLimit</li>
+<li>Update/IgnoreMOUpdateDownloadLimit</li>
 <li>Update/SetAutoRestartNotificationDisable</li>
 <li>WindowsLogon/HideFastUserSwitching</li>
 </ul><p>Removed TextInput/AllowLinguisticDataCollection</p>
@@ -937,6 +939,8 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <ul>
 <li>Accounts/AllowMicrosoftAccountSignInAssistant</li>
 <li>Connectivity/AllowConnectedDevices</li>
+<li>Update/IgnoreMOAppDownloadLimit</li>
+<li>Update/IgnoreMOUpdateDownloadLimit</li>
 </ul>
 </td>
 </tr>
