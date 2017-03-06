@@ -594,6 +594,8 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>Update/EngagedRestartDeadline</li>
 <li>Update/EngagedRestartSnoozeSchedule</li>
 <li>Update/EngagedRestartTransistionSchedule</li>
+<li>Update/IgnoreMOAppDownloadLimit</li>
+<li>Update/IgnoreMOUpdateDownloadLimit</li>
 <li>Update/SetAutoRestartNotificationDisable</li>
 <li>WindowsLogon/HideFastUserSwitching</li>
 </ul><p>Removed TextInput/AllowLinguisticDataCollection</p>
@@ -645,6 +647,10 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 </tr>
 <tr class="even">
 <td style="vertical-align:top">[Office CSP](office-csp.md)</td>
+<td style="vertical-align:top"><p>Added new CSP.</p></td>
+</tr>
+<tr class="odd">
+<td style="vertical-align:top">[Personalization CSP](personalization-csp.md)</td>
 <td style="vertical-align:top"><p>Added new CSP.</p></td>
 </tr>
 </tbody>
@@ -937,8 +943,14 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <ul>
 <li>Accounts/AllowMicrosoftAccountSignInAssistant</li>
 <li>Connectivity/AllowConnectedDevices</li>
+<li>Update/IgnoreMOAppDownloadLimit</li>
+<li>Update/IgnoreMOUpdateDownloadLimit</li>
 </ul>
 </td>
+</tr>
+<tr class="even">
+<td style="vertical-align:top">[Personalization CSP](personalization-csp.md)</td>
+<td style="vertical-align:top"><p>Added new CSP for Windows 10, version 1703.</p></td>
 </tr>
 </tbody>
 </table>
