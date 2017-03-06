@@ -278,7 +278,7 @@ setup /netdebug:hostip=10.125.4.86,port=50000,key=dont.use.previous.keys,buspara
 <td align="left"><p>If the user rolls back their version of Windows, run a script.</p>
 <p>Accepted parameters are a local file path or UNC network path to a file named setuprollback.cmd or to a folder that contains setuprollback.cmd.</p>
 <pre class="syntax" space="preserve"><code>setup.exe /auto upgrade /postrollback c:\Fabrikam\setuprollback.cmd</code></pre>
-<p>Path to folder that contains a script with the name: <strong>setuprollback.cmd</strong>: Copies the entire contents of folder to $Windows.~BT to be run after OOBE.</p>
+<p>Path to folder that contains a script with the name: <strong>setuprollback.cmd</strong>: Copies setuprollback.cmd to $Windows.~BT to be run after OOBE.</p>
 <pre class="syntax" space="preserve"><code>setup.exe /auto upgrade /postrollback \\server\share</code></pre>
 <p>This setting is new for Windows 10.</p></td>
 </tr>
