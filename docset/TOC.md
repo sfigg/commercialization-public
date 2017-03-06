@@ -367,9 +367,8 @@
 ## [Change history for customization docs](customize/change-history-for-customize.md)
 
 ## [Customizations for desktop](https://msdn.microsoft.com/library/windows/hardware/mt481437)
-### [Customiae the Start menu using Unattend](customize/desktop/customiz-the-startmenu-unattend.md)
 ### [Customize the taskbar](customize/desktop/customize-the-taskbar.md)
-### [Set dark theme](customize/desktop/set-dark-mode.md)
+### [Set dark mode](customize/desktop/set-dark-mode.md)
 ### [Customize the Country and Operator Settings Asset](customize/desktop/customize-cosa.md)
 
 ### [Windows System Image Manager Technical Reference](customize/desktop/wsim/windows-system-image-manager-technical-reference.md)
