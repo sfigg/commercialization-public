@@ -7971,10 +7971,10 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 
 <a href="" id="update-fillemptycontenturls"></a>**Update/FillEmptyContentUrls**  
 
-<p style="margin-left: 20px">Added in the January service release of Windows 10, version 1607. Allows Windows Update Agent to determine the download URL when it is missing from the metadata.  This scenario will occur when intranet update service stores the metadata files but the download contents are stored in the ISV file cache (specified as the alternate download URL).
+<p style="margin-left: 20px">Added in the April service release of Windows 10, version 1607. Allows Windows Update Agent to determine the download URL when it is missing from the metadata.  This scenario will occur when intranet update service stores the metadata files but the download contents are stored in the ISV file cache (specified as the <a href="" id="update-updateserviceurlalternate">alternate download URL</a>).
 
 > [!NOTE]
-> This setting should only be used when the intranet update service does not provide download URLs in the update metadata for files which are available on the alternate download server.
+> This setting should only be used in combination with an alternate download URL and configured to use ISV file cache.  This setting is used when the intranet update service does not provide download URLs in the update metadata for files which are available on the alternate download server.
 
 <p style="margin-left: 20px">The following list shows the supported values:
 
