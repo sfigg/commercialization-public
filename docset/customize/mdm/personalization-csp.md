@@ -12,7 +12,7 @@ MSHAttr:
 > [!WARNING]
 > Some information relates to prereleased product, which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
-The Personalization CSP can set the lock screen and desktop background images. Setting these policies also prevents the user from changing the image. You can also use the Personalization settings in a provisioning file using the Windows Configuration Designer.
+The Personalization CSP can set the lock screen and desktop background images. Setting these policies also prevents the user from changing the image. You can also use the Personalization settings in a provisioning package.
 
 This CSP was added in Windows 10, version 1703. 
 
@@ -24,7 +24,7 @@ The following diagram shows the Personalization configuration service provider i
 <p style="margin-left: 20px">Defines the root node for the Personalization configuration service provider.</p>
 
 <a href="" id="desktopimageurl"></a>**DesktopImageUrl**  
-<p style="margin-left: 20px">Http or https URL to an image (jpg, jpeg, or png) to downloaded and use as the desktop image. It can also be a file URL to a local image on the file system that can be used as the desktop image.</p>
+<p style="margin-left: 20px">Specify a jpg, jpeg or png image to be used as Desktop Image. This setting can take a http or https Url to a remote image to be downloaded, a file Url to a local image, or an image name exactly as given to the DeployDesktopImageFile setting (without directory path or protocol).</p>
 <p style="margin-left: 20px">Value type is string. Supported operations are Add, Get, Delete, and Replace.</p>
 
 <a href="" id="desktopimagestatus"></a>**DesktopImageStatus**  
@@ -37,10 +37,13 @@ The following diagram shows the Personalization configuration service provider i
 <li>5 - Unsupported URL scheme.</li>
 <li>6 - Max retry failed.</li>
 </ul>
-<p style="margin-left: 20px">Value type is integer. Supporter operation is Get.</p>
+<p style="margin-left: 20px">Supporter operation is Get.</p>
+
+> [!Note]
+> This setting is only used to query status. To set the image, use the DesktopImageUrl setting.
 
 <a href="" id="lockscreenimageurl"></a>**LockScreenImageUrl**  
-<p style="margin-left: 20px">Http or https URL to an image (jpg, jpeg, or png) to downloaded and used as the lock screen image. It can also be a file URL to a local image on the file system that can be used as the lock screen image.</p>
+<p style="margin-left: 20px">Specify a jpg, jpeg or png image to be used as Lock Screen Image. This setting can take a http or https Url to a remote image to be downloaded, a file Url to a local image, or an image name exactly as given to the DeployLockScreenImageFile setting (without directory path or protocol).</p>
 <p style="margin-left: 20px">Value type is string. Supported operations are Add, Get, Delete, and Replace.</p>
 
 
@@ -54,7 +57,11 @@ The following diagram shows the Personalization configuration service provider i
 <li>5 - Unsupported URL scheme.</li>
 <li>6 - Max retry failed.</li>
 </ul>
-<p style="margin-left: 20px">Value type is integer. Supporter operation is Get.</p>
+<p style="margin-left: 20px">Supporter operation is Get.</p>
+
+> [!Note]
+> This setting is only used to query status. To set the image, use the LockScreenImageStatus setting.
+
 
 ## Example SyncML
 
