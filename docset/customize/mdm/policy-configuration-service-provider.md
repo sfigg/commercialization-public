@@ -5868,6 +5868,11 @@ The number of authentication failures allowed before the device will be wiped. A
 
 <p style="margin-left: 20px">If GDI DPI Scaling is configured to both turn off and turn on an application, the application will be turned off.
 
+<p style="margin-left: 20px">To validate on Desktop, do the following:
+
+1.   Configure the setting for an app which uses GDI.
+2.   Run the app and observe blurry text.
+
 <a href="" id="display-turnongdidpiscalingforapps"></a>**Display/TurnOnGdiDPIScalingForApps**  
 <p style="margin-left: 20px">GDI DPI Scaling enables applications that are not DPI aware to become per monitor DPI aware.
 
@@ -5878,6 +5883,11 @@ The number of authentication failures allowed before the device will be wiped. A
 <p style="margin-left: 20px">If you disable or do not configure this policy setting, GDI DPI Scaling will not be enabled for an application except when an application is enabled by using ApplicationCompatibility database, ApplicationCompatibility UI System (Enhanced) setting, or an application manifest.
 
 <p style="margin-left: 20px">If GDI DPI Scaling is configured to both turn off and turn on an application, the application will be turned off.
+
+<p style="margin-left: 20px">To validate on Desktop, do the following:
+
+1.   Configure the setting for an app which uses GDI.
+2.   Run the app and observe crisp text.
 
 <a href="" id="devicelock-screentimeoutwhilelocked"></a>**DeviceLock/ScreenTimeoutWhileLocked**  
 > [!NOTE]
