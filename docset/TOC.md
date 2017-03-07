@@ -366,7 +366,7 @@
 ## [What's new in customizations](customize/what-s-new-in-customizations.md)
 ## [Change history for customization docs](customize/change-history-for-customize.md)
 
-## [Customizations for desktop](https://msdn.microsoft.com/library/windows/hardware/mt481437)
+## [Customizations for desktop](customize/desktop/desktop-customizations-portal.md)
 ### [Customize the taskbar](customize/desktop/customize-the-taskbar.md)
 ### [Set dark mode](customize/desktop/set-dark-mode.md)
 ### [Customize the Country and Operator Settings Asset](customize/desktop/customize-cosa.md)
