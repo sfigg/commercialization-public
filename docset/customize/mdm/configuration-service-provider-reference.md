@@ -592,6 +592,16 @@ The following table show the configuration service providers supported in Window
 <td><img src="images/checkmark.png" alt="check mark" /></td>
 
 </tr>
+<tr class="odd">
+<td>[Personalization CSP](personalization-csp.md)</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
 <tr class="even">
 <td>[PolicyManager CSP](policymanager-csp.md)</td>
 <td><img src="images/crossmark.png" alt="cross mark" /></td>
