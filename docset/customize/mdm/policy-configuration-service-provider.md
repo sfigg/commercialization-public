@@ -8026,6 +8026,9 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 <a href="" id="update-ignoremoappdownloadlimit"></a>**Update/IgnoreMOAppDownloadLimit**  
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies whether to ignore the MO download limit (allow unlimited downloading) over a cellular network for apps and their updates. If lower-level limits (for example, mobile caps) are required, those limits are controlled by external policies. 
 
+> [!WARNING]
+> Setting this policy might cause devices to incur costs from MO operators.
+
 <p style="margin-left: 20px">The following list shows the supported values:
 
 -   0 (default) – Do not ignore MO download limit for apps and their updates.
@@ -8044,6 +8047,9 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 
 <a href="" id="update-ignoremoupdatedownloadlimit"></a>**Update/IgnoreMOUpdateDownloadLimit**  
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies whether to ignore the MO download limit (allow unlimited downloading) over a cellular network for OS updates. If lower-level limits (for example, mobile caps) are required, those limits are controlled by external policies. 
+
+> [!WARNING]
+> Setting this policy might cause devices to incur costs from MO operators.
 
 <p style="margin-left: 20px">The following list shows the supported values:
 
