@@ -12,10 +12,28 @@ ms.assetid: 07E710A3-3368-476E-9EC1-12AA67B52498
 
 The following tables record the changes that were made in the **Customize** section of the Windows 10 partner documentation since Windows 10, version 1607 was released.
 
+## March 15, 2016
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>New or updated topic</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><p>[Customize the Country and Operator Settings Asset](desktop/customize-cosa.md)</p></td>
+<td><p>New. When a SIM is inserted in a COSA-enabled Windows-based device, the provisioning framework attempts to establish a cellular connection by searching for the matching profile and APN in COSA.</p></td>
+</tr>
+
+</tbody>
+</table>
 ## October 6, 2016
 
-
- 
 
 <table>
 <colgroup>
@@ -35,7 +53,7 @@ The following tables record the changes that were made in the **Customize** sect
 </tr>
 <tr class="even">
 <td><p>[Set dark mode](desktop/set-dark-mode.md)</p></td>
-<td><p>Windows 10, build 1607 exposes a new personalization setting for end users, allowing them to express preference whether to see applications which support the setting in a dark or light mode.</p></td>
+<td><p>New. Windows 10, build 1607 exposes a new personalization setting for end users, allowing them to express preference whether to see applications which support the setting in a dark or light mode.</p></td>
 </tr>
 </tbody>
 </table>

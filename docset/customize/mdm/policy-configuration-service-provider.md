@@ -4432,7 +4432,7 @@ PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjxEZWZhdWx0QXNzb2NpYXRpb25z
 -   0 (default) – Not restricted.
 -   1 – Restricted.
 
-<p style="margin-left: 20px">Most restricted value is 0.
+<p style="margin-left: 20px">Most restricted value is 1.
 
 <a href="" id="applicationmanagement-restrictapptosystemvolume"></a>**ApplicationManagement/RestrictAppToSystemVolume**  
 <p style="margin-left: 20px">Specifies whether the installation of applications is restricted to the system drive.
@@ -4442,7 +4442,7 @@ PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjxEZWZhdWx0QXNzb2NpYXRpb25z
 -   0 (default) – Not restricted.
 -   1 – Restricted.
 
-<p style="margin-left: 20px">Most restricted value is 0.
+<p style="margin-left: 20px">Most restricted value is 1.
 
 <a href="" id="authentication-alloweapcertsso"></a>**Authentication/AllowEAPCertSSO**  
 > [!NOTE]
