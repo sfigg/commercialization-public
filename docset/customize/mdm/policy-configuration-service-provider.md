@@ -5721,9 +5721,8 @@ Employees cannot remove these search engines, but they can set any one as the de
 > - **DevicePasswordEnabled** is the parent policy of the following:
 > 	- AllowSimpleDevicePassword
 >	- MinDevicePasswordLength
->
-> - AlphanumericDevicePasswordRequired is the parent policy of:
->	- MinDevicePasswordComplexCharacters 
+>	- AlphanumericDevicePasswordRequired
+>		- MinDevicePasswordComplexCharacters 
 >	- MaxDevicePasswordFailedAttempts
 >	- MaxInactivityTimeDeviceLock
 
