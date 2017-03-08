@@ -9,8 +9,6 @@ title: Multilingual Windows Image Creation
 # Multilingual Windows Image Creation
 
 
-This walkthrough describes how to use the Windows Assessment and Deployment Kit (Windows ADK) to create and deploy multilingual versions of Windows 10. It describes how to create a multilingual Windows image to help reduce the number of Windows images that need to be maintained for different regions. You can deploy images that are created by using this process from a network share, from a server, or from media.
-
 This walkthrough describes how to add language packs and other update packages to an offline Windows image and Windows recovery image. You then boot Windows to audit mode and add applications and drivers. You then capture the installation to an image and use the newly captured master image for testing purposes. After you test the image, you use it to create regional images by removing unnecessary language resources. You can then deploy these regional images.
 
 The process described in this walkthrough is primarily intended for OEMs who want to reduce the number of Windows images that they maintain. By adding language packs to an offline image, you can decrease Windows installation time and reduce the number of images that you maintain. However, because multiple language packs are added to a single image, the size of the Windows image is increased.
