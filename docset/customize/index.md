@@ -1,6 +1,6 @@
 ---
 title: Customize
-description: Provides information about the customizations that partners can use to modify the UI, connectivity settings, and user experience to better reflect the partners' brand, and to fit the network and market in which the device will ship.
+description: Provides information about the customizations that partners can use to modify the UI and user experience to better reflect the partners' brand, and to incorporate brand elements and fit the market in which the device will ship.
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
@@ -11,11 +11,9 @@ ms.assetid: 15cf9368-896a-42c6-81cf-424528115547
 
 
 ## Purpose
-
+Customizations of the Windows OS are ways in which partners can modify the Windows device UI, connectivity settings, and user experience to better reflect the partners' brand, and to fit the network and market in which the device ships. Customizations can include adding applications, modifying icons and Start layouts, configuring network settings by using device management, changing defaults in **Settings**, and adding brand-specific art and sounds to the OS.
 
 Windows 10 supports both the pre-existing desktop Unattend and mobile Managed Centralized Settings Framework (MCSF) customization frameworks for configuring customizations for Windows 10 devices.
-
-Customizations of the Windows OS are ways in which partners can modify the Windows device UI, connectivity settings, and user experience to better reflect the partners' brand, and to fit the network and market in which the device ships. Customizations can include adding applications, modifying icons and Start layouts, configuring network settings by using device management, changing defaults in **Settings**, and adding brand-specific art and sounds to the OS.
 
 See the following sections for more information about what you can do to customize your Windows 10 devices.
 
@@ -40,28 +38,28 @@ See the following sections for more information about what you can do to customi
 <td><p>Read about what topics have been created, updated, or deleted for Windows 10, build 1607.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Customizations for desktop devices](https://msdn.microsoft.com/library/windows/hardware/mt481437)</p></td>
+<td><p>[Customizations for desktop devices](desktop-customizations-portal.md)</p></td>
 <td><p>Learn which framework best meets your needs if you're customizing Windows 10 for desktop editions.</p>
 <p>This section includes topics describing key tasks, as well as the reference for [Windows System Image Manager](https://msdn.microsoft.com/library/windows/hardware/dn922445) and [Unattend framework](customize-using-the-legacy-desktop-framework.md) settings.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Customizations for enterprise desktop](https://msdn.microsoft.com/library/windows/hardware/mt571991)</p></td>
+<td><p>[Customizations for enterprise desktop](enterprise\enterprise-custom-portal.md)</p></td>
 <td><p>Learn about the customizations available to you if you are providing a controlled and specialized experience on a Windows device running Windows 10 Enterprise.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Customizations for mobile](https://msdn.microsoft.com/en-us/library/windows/hardware/mt481438)</p></td>
+<td><p>[Customizations for mobile](mobile/windows-10-mobile-customizations-portal.md)</p></td>
 <td><p>Learn about the capabilities that are available in Windows 10 Mobile.</p>
 <p>The additional topics in this section help with key tasks, as well as providing reference for the [mobile MCSF framework](p_phCustomization.Provisioning_and_customization).</p></td>
 </tr><tr class="even">
 <td><p>[Windows Provisioning framework](https://msdn.microsoft.com/library/windows/hardware/dn898375)</p></td>
-<td><p>Windows 10 provides an enterprise management solution to help IT pros manage company security policies and business applications, while avoiding compromise of the users’ privacy on their personal phones. A built-in management component can communicate with the management server.</p></td>
+<td><p>Learn how to manage company policies and business applications, using run-time only provisioning settings. </p></td>
 </tr>
 <tr class="odd">
 <td><p>[Mobile device management](mdm/index.md)</p></td>
 <td><p>Windows 10 provides an enterprise management solution to help IT pros manage company security policies and business applications, while avoiding compromise of the users’ privacy on their personal phones. A built-in management component can communicate with the management server.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Preinstalled apps](https://msdn.microsoft.com/library/windows/hardware/mt269740)</p></td>
+<td><p>[Preinstalled apps](preinstall/preinstall-apps.md)</p></td>
 <td><p>If you're a Windows OEM or mobile operator partner, find out how you can create partner apps that you can package and configure to install during the initial device setup process. While the user is going through the initial setup process, the preinstalled apps are installed in the background.</p></td>
 </tr>
 </tbody>
