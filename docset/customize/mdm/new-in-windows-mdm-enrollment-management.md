@@ -949,6 +949,19 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 </td>
 </tr>
 <tr class="even">
+<td style="vertical-align:top">DeviceLock/DevicePasswordEnabled in [Policy CSP](policy-configuration-service-provider.md)</td>
+<td style="vertical-align:top"><p>Added the following note:</p>
+<p>**DevicePasswordEnabled** should not be set to Enabled (0) when WMI is used to set the EAS DeviceLock policies given that it is Enabled by default in Policy CSP for back compat with Windows 8.x. If **DevicePasswordEnabled** is set to Enabled(0) then Policy CSP will return an error stating that **DevicePasswordEnabled** already exists. Windows 8.x did not support DevicePassword policy. When disabling **DevicePasswordEnabled** (1) then this should be the only policy set from the DeviceLock group of policies listed below:</p>
+<ul>
+<li>DevicePasswordEnabled is the parent policy of the following:
+<ul><li>AllowSimpleDevicePassword</li>
+<li>MinDevicePasswordLength</li>
+<li>AlphanumericDevicePasswordRequired
+<ul><li>MinDevicePasswordComplexCharacters</li></ul></li> 
+<li> MaxDevicePasswordFailedAttempts</li>
+<li>MaxInactivityTimeDeviceLock</td></li></ul></ul>
+</tr>
+<tr class="even">
 <td style="vertical-align:top">[Personalization CSP](personalization-csp.md)</td>
 <td style="vertical-align:top"><p>Added new CSP for Windows 10, version 1703.</p></td>
 </tr>
