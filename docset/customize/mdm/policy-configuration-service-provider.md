@@ -5716,7 +5716,15 @@ Employees cannot remove these search engines, but they can set any one as the de
 > -   MinDevicePasswordLength
 > -   MinDevicePasswordComplexCharacters
 
- 
+> [!Important]
+> **DevicePasswordEnabled** should not be set to Enabled (0) when WMI is used to set the EAS DeviceLock policies given that it is Enabled by default in Policy CSP for back compat with Windows 8.x. If **DevicePasswordEnabled** is set to Enabled(0) then Policy CSP will return an error stating that **DevicePasswordEnabled** already exists. Windows 8.x did not support DevicePassword policy. When disabling **DevicePasswordEnabled** (1) then this should be the only policy set from the DeviceLock group of policies listed below:
+> - **DevicePasswordEnabled** is the parent policy of the following:
+> 	- AllowSimpleDevicePassword
+>	- MinDevicePasswordLength
+>	- AlphanumericDevicePasswordRequired
+>		- MinDevicePasswordComplexCharacters 
+>	- MaxDevicePasswordFailedAttempts
+>	- MaxInactivityTimeDeviceLock
 
 <a href="" id="devicelock-devicepasswordexpiration"></a>**DeviceLock/DevicePasswordExpiration**  
 <p style="margin-left: 20px">Specifies when the password expires (in days).
