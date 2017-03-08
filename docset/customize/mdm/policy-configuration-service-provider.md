@@ -5870,7 +5870,7 @@ The number of authentication failures allowed before the device will be wiped. A
 
 <p style="margin-left: 20px">To validate on Desktop, do the following:
 
-1.   Configure the setting for an app which uses GDI.
+1.   Configure the setting for an app which has GDI DPI scaling enabled via MDM or any other supported mechanisms.
 2.   Run the app and observe blurry text.
 
 <a href="" id="display-turnongdidpiscalingforapps"></a>**Display/TurnOnGdiDPIScalingForApps**  
