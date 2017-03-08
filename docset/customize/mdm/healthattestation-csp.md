@@ -51,6 +51,74 @@ The following is a list of functions performed by the HealthAttestation CSP:
 <li>DHA-Service reviews the data it receives, and replies with a device health report (DHA-Report)</li>
 </ul>
 
+<table> 
+<col width="20%" />
+<col width="60%" />
+<col width="20%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>DHA-Service type</th>
+<th>Description</th>
+<th>Operation cost</th>
+</tr>
+</thead>
+<tbody>
+<tr class="even">
+<td style="vertical-align:top">Device Health Attestation – Cloud</td>
+<td style="vertical-align:top"><p>DHA-Cloud is a Microsoft owned and operated DHA-Service that is:</p>
+<ul>
+<li>Available in Windows for free</li>
+<li>Supported by all DHA-Enabled device management solutions as the default device</li>
+<li>Running on a high-available and geo-balanced cloud infrastructure </li>
+<li>Supported by most DHA-Enabled device management solutions as the default device attestation service provider</li>
+<li>Accessible to all enterprise managed devices via following:
+<ul>
+<li>FQDN = has.spserv.microsoft.com) port</li>
+<li>Port = 443</li>
+<li>Protocol = TCP</li>
+</ul> 
+</li>
+</ul>
+<td style="vertical-align:top">No cost</td>
+</td>
+</tr>
+<tr class="even">
+<td style="vertical-align:top">Device Health Attestation – On Premise</td>
+<td style="vertical-align:top"><p>DHA-OnPrem refers to DHA-Service that is running on premise:</p>
+<ul>
+<li>Offered to Windows Server 2016 customer (no added licensing cost for enabling/running DHA-Service) </li>
+<li>Hosted on an enterprise owned and managed server device/hardware</li>
+<li>Supported by 1st and 3rd party DHA-Enabled device management solution providers that support on premise and hybrid (Cloud + OnPrem) hardware attestation scenarios</li>
+<li><p>Accessible to all enterprise managed devices via following:</p>
+<ul>
+<li>FQDN = (enterprise assigned)</li>
+<li>Port = (enterprise assigned)</li>
+<li>Protocol = TCP</li>
+</ul>
+</li>
+</ul></td>
+<td style="vertical-align:top">The operation cost of running one or more instances of Server 2016 on premise.</td>
+</tr>
+<tr class="even">
+<td style="vertical-align:top">Device Health Attestation - Enterprise Managed Cloud</td>
+<td style="vertical-align:top"><p>An enterprise managed DHA-Service that is running as a virtual host/service on a Windows Server 2016 compatible - enterprise managed cloud service, such as Microsoft Azure.</p>
+<ul>
+<li>Offered to Windows Server 2016 customers with no additional licensing cost (no added licensing cost for enabling/running DHA-Service)</li>
+<li>Supported by 1st and 3rd party DHA-Enabled device management solution providers that support on premise and hybrid (Cloud + OnPrem) hardware attestation scenarios </li>
+<li><li><p>Accessible to all enterprise managed devices via following:</p>
+<ul>
+<li>FQDN = (enterprise assigned)</li>
+<li>Port = (enterprise assigned)</li>
+<li>Protocol = TCP</li>
+</ul>
+</li>
+</ul></td>
+<td style="vertical-align:top">The operation cost of running Server 2016 on a compatible cloud service, such as Microsoft Azure.</td>
+</tr>
+</tbody>
+</table>
+
 **DHA session data (Device HealthAttestation session data)**
 <p style="margin-left: 20px">The following list of data is produced or consumed in one DHA-Transaction:</p>
 <ul>
@@ -121,7 +189,7 @@ The following diagram shows the HealthAttestation configuration service provider
 
 <p style="margin-left: 20px">Value type is integer, range is 0-3. The supported operation is Get.</p>
 
-<p style="margin-left: 20px">The following list shows the supported values:</p>
+<p style="margin-left: 20px">The following list shows some examples of supported values. For the complete list of status see [Device HealthAttestation CSP status and error codes](#device-healthattestation-csp-status-and-error-codes).</p>
 
 -   0 - (HEALTHATTESTATION\_CERT\_RETRI_UNINITIALIZED): DHA-CSP is preparing a request to get a new DHA-EncBlob from DHA-Service
 -   1 - (HEALTHATTESTATION\_CERT\_RETRI_REQUESTED): DHA-CSP is waiting for the DHA-Service to respond back, and issue a DHA-EncBlob to the device
@@ -1195,7 +1263,7 @@ PD94bWwgdmVyc2lvbj0iMS4wIj8----------------C9JVj4NCjwvT3BhcXVlSGVhbHRoQ2VydGlmaW
 
 
 
-## **Device HealthAttestation CSP error codes**
+## **Device HealthAttestation CSP status and error codes**
 
 <table>
 	<tr>
