@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # Add a Custom Command to an Answer File
 
 
-The following procedure describes how to configure a custom command to run automatically during Windows Setup.
+The following procedure describes how to configure a custom command to run automatically during Windows Setup. 
 
 **To add a custom command to an answer file**
 

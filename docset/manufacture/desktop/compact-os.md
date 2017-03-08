@@ -50,6 +50,8 @@ Unlike WIMBoot, because the files are no longer combined into a single WIM file,
     ```
 
     This is usually done by running a deployment script. To learn more, see [Apply Images Using DISM](apply-images-using-dism.md).
+    
+    **Note:** If you're applying an image in compact mode and using the /ScratchDir option, make sure your ScratchDir folder is not on a FAT32-formatted partition. Using a FAT32 partition could result in unexpected reboots during OOBE.
 
 **To deploy Compact OS from an FFU image**
 
