@@ -744,6 +744,17 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png"><p>IoT Core</p></td>
 		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png"><p>EAS</p></td></tr>
 	<tr>
+		<td style="vertical-align:top"><a href="#configoperations-admxinstall">ConfigOperations/ADMXInstall</a></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Home</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Pro</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Business</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Enterprise</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Education</p></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Mobile</p></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Mobile Enterprise</p></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>IoT Core</p></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>EAS</p></td></tr>	
+	<tr>
 		<td style="vertical-align:top"><a href="#connectivity-allowbluetooth">Connectivity/AllowBluetooth</a></td>
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Home</p></td>
 		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png"><p>Pro</p></td>
@@ -4955,6 +4966,15 @@ Employees cannot remove these search engines, but they can set any one as the de
 -   1 (default) – Allowed.
 
 <p style="margin-left: 20px">Most restricted value is 0.
+
+<a href="" id="configoperations-admxinstall"></a>**ConfigOperations/ADMXInstall**  
+
+<p style="margin-left: 20px">Allows settings for ADMX files for Win32 apps to be delivered directly to your device. The delivered ADMX file settings are then processed into new ADMX-backed policies for your device. By using ADMXInstall, you can add ADMX-backed polices for those Win32 apps that have been added between OS releases. For more information, see [Adding ADMX-backed policies](adding-admx-backed-policies.md).
+
+<p style="margin-left: 20px">The following list shows the supported values:
+
+-   0 – Not allowed.
+-   1 (default) – Allowed.
 
 <a href="" id="connectivity-allowbluetooth"></a>**Connectivity/AllowBluetooth**  
 <p style="margin-left: 20px">Allows the user to enable Bluetooth or restrict access.
