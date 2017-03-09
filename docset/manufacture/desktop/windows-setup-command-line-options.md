@@ -47,9 +47,9 @@ The following command-line options are available for Windows Setup. Beginning w
 
 \[**/PKey** *&lt;product key&gt;*\]
 
-\[**/PostOOBE***&lt;location&gt;*\[**\\setupcomplete.exe**\]\]
+\[**/PostOOBE***&lt;location&gt;*\[**\\setupcomplete.cmd**\]\]
 
-\[**/PostRollback***&lt;location&gt;*\[**\\setuprollback.exe**\]\]
+\[**/PostRollback***&lt;location&gt;*\[**\\setuprollback.cmd**\]\]
 
 \[**/Quiet** \]
 
@@ -265,20 +265,20 @@ setup /netdebug:hostip=10.125.4.86,port=50000,key=dont.use.previous.keys,buspara
 <p>This setting is new for Windows 10.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><strong>/PostOOBE</strong><em>&lt;location&gt;</em>[<strong>\setupcomplete.exe</strong>]</p></td>
+<td align="left"><p><strong>/PostOOBE</strong><em>&lt;location&gt;</em>[<strong>\setupcomplete.cmd</strong>]</p></td>
 <td align="left"><p>After Setup is complete, run a script.</p>
 <p>Accepted parameters are a local file path or UNC network path to a file named setupcomplete.cmd or to a folder that contains setupcomplete.cmd.</p>
 <pre class="syntax" space="preserve"><code>setup.exe /auto upgrade /postoobe c:\Fabrikam\setupcomplete.cmd</code></pre>
-<p>Path to folder that contains a script with the name: <strong>setupcomplete.cmd</strong>: Copies the entire contents of folder to $Windows.~BT to be run after OOBE.</p>
-<pre class="syntax" space="preserve"><code>setup.exe /auto upgrade /postoobe c:\Fabrikam\</code></pre>
+<p>Path to folder that contains a script with the name: <strong>setupcomplete.cmd</strong>: Copies setupcomplete.cmd to $Windows.~BT to be run after OOBE.</p>
+<pre class="syntax" space="preserve"><code>setup.exe /auto upgrade /postoobe c:\Fabrikam\ </code></pre>
 <p>This setting is new for Windows 10.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><strong>/PostRollback</strong><em>&lt;location&gt;</em>[<strong>\setuprollback.exe</strong>]</p></td>
+<td align="left"><p><strong>/PostRollback</strong><em>&lt;location&gt;</em>[<strong>\setuprollback.cmd</strong>]</p></td>
 <td align="left"><p>If the user rolls back their version of Windows, run a script.</p>
 <p>Accepted parameters are a local file path or UNC network path to a file named setuprollback.cmd or to a folder that contains setuprollback.cmd.</p>
 <pre class="syntax" space="preserve"><code>setup.exe /auto upgrade /postrollback c:\Fabrikam\setuprollback.cmd</code></pre>
-<p>Path to folder that contains a script with the name: <strong>setuprollback.cmd</strong>: Copies the entire contents of folder to $Windows.~BT to be run after OOBE.</p>
+<p>Path to folder that contains a script with the name: <strong>setuprollback.cmd</strong>: Copies setuprollback.cmd to $Windows.~BT to be run after OOBE.</p>
 <pre class="syntax" space="preserve"><code>setup.exe /auto upgrade /postrollback \\server\share</code></pre>
 <p>This setting is new for Windows 10.</p></td>
 </tr>

@@ -40,7 +40,7 @@ In Windows 10, build 1607, a setting has been added for light/dark mode toggle.
             <DefaultThemesOff>false</DefaultThemesOff> 
             <DesktopBackground>c:\windows\OLEDFriendlyImage.jpg </DesktopBackground> 
             <WindowColor>Lime</WindowColor> 
-            <DarkModeOn>true</DarkModeOn> 
+            <UWPAppsUseLightTheme>false</UWPAppsUseLightTheme> 
         </Themes> 
     </settings> 
 ```

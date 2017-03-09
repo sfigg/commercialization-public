@@ -366,10 +366,9 @@
 ## [What's new in customizations](customize/what-s-new-in-customizations.md)
 ## [Change history for customization docs](customize/change-history-for-customize.md)
 
-## [Customizations for desktop](https://msdn.microsoft.com/library/windows/hardware/mt481437)
-### [Customiae the Start menu using Unattend](customize/desktop/customiz-the-startmenu.md)
+## [Customizations for desktop](customize/desktop/desktop-customizations-portal.md)
 ### [Customize the taskbar](customize/desktop/customize-the-taskbar.md)
-### [Set dark theme](customize/desktop/set-dark-mode.md)
+### [Set dark mode](customize/desktop/set-dark-mode.md)
 ### [Customize the Country and Operator Settings Asset](customize/desktop/customize-cosa.md)
 
 ### [Windows System Image Manager Technical Reference](customize/desktop/wsim/windows-system-image-manager-technical-reference.md)
@@ -746,18 +745,9 @@
 ##### [Store live tile](customize/mobile/mcsf/store-live-tile.md)
 
 ## [Windows Provisioning framework](https://msdn.microsoft.com/library/windows/hardware/dn898375)
-### [Windows provisioning XML](https://msdn.microsoft.com/library/windows/hardware/dn916154)
-### [Provisioning settings store](https://msdn.microsoft.com/library/windows/hardware/mt147449)
-### [Windows provisioning answer file](https://msdn.microsoft.com/library/windows/hardware/dn916153)
-### [Provisioning engine](https://msdn.microsoft.com/library/windows/hardware/dn916152)
-### [Supported Windows customizations](https://msdn.microsoft.com/library/windows/hardware/mt147452)
-### [Provisioning packages](https://msdn.microsoft.com/library/windows/hardware/mt147447)
-### [NFC-based device provisioning](https://msdn.microsoft.com/library/windows/hardware/mt637870)
-### [Best practices when using the Windows provisioning framework](https://msdn.microsoft.com/library/windows/hardware/mt147442)
-### [Customize the Windows 10 Start screen](https://msdn.microsoft.com/library/windows/hardware/mt170651)
-### [Configure partner email account](https://msdn.microsoft.com/library/windows/hardware/mt761829)
+
 ### [Configure power settings](https://msdn.microsoft.com/library/windows/hardware/mt608264)
-### [Windows Imaging and Configuration Designer](https://msdn.microsoft.com/library/windows/hardware/dn916113)
+### [Windows Configuration Designer](https://msdn.microsoft.com/library/windows/hardware/dn916113)
 ### [Windows Provisioning settings reference](https://msdn.microsoft.com/library/windows/hardware/dn965990)
 
 ## [Mobile Device Management](customize/mdm/)

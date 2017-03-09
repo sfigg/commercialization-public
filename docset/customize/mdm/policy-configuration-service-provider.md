@@ -150,6 +150,17 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>IoT Core</p></td>
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>EAS</p></td></tr>
 	<tr>
+		<td style="vertical-align:top"><a href="#accounts-allowmicrosoftaccountsigninassistant">Accounts/AllowMicrosoftAccountSignInAssistant</a></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Home</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Pro</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Business</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Enterprise</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Education</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Mobile</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Mobile Enterprise</p></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>IoT Core</p></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>EAS</p></td></tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#accounts-domainnamesforemailsync">Accounts/DomainNamesForEmailSync</a></td>
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Home</p></td>
 		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png"><p>Pro</p></td>
@@ -765,6 +776,17 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png"><p>Mobile Enterprise</p></td>
 		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png"><p>IoT Core</p></td>
 		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png"><p>EAS</p></td></tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#connectivity-allowconnecteddevices">Connectivity/AllowConnectedDevices</a></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Home</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Pro</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Business</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Enterprise</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Education</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Mobile</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Mobile Enterprise</p></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>IoT Core</p></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>EAS</p></td></tr>
 	<tr>
 		<td style="vertical-align:top"><a href="#connectivity-allownfc">Connectivity/AllowNFC</a></td>
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Home</p></td>
@@ -3726,6 +3748,30 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">1<p>IoT Core</p></td>
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>EAS</p></td></tr>
 	<tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#update-ignoremoappdownloadlimit">Update/IgnoreMOAppDownloadLimit</a></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Home</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Pro</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Business</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Enterprise</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Education</p></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Mobile</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Mobile Enterprise</p></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>IoT Core</p></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>EAS</p></td></tr>
+	<tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#update-ignoremoupdatedownloadlimit">Update/IgnoreMOUpdateDownloadLimit</a></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Home</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Pro</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Business</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Enterprise</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Education</p></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Mobile</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Mobile Enterprise</p></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>IoT Core</p></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>EAS</p></td></tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#update-pausedeferrals">Update/PauseDeferrals</a></td>
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Home</p></td>
 		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png"><p>Pro</p></td>
@@ -4211,6 +4257,14 @@ Footnote:
 
 <p style="margin-left: 20px">Most restricted value is 0.
 
+<a href="" id="accounts-allowmicrosoftaccountsigninassistant"></a>**Accounts/AllowMicrosoftAccountSignInAssistant**  
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Allows IT Admins the ability to disable the "Microsoft Account Sign-In Assistant" (wlidsvc) NT service.
+
+<p style="margin-left: 20px">The following list shows the supported values:
+
+-   0 – Disabled.
+-   1 (default) – Manual start.
+
 <a href="" id="accounts-domainnamesforemailsync"></a>**Accounts/DomainNamesForEmailSync**  
 <p style="margin-left: 20px">Specifies a list of the domains that are allowed to sync email on the device.
 
@@ -4400,7 +4454,7 @@ PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjxEZWZhdWx0QXNzb2NpYXRpb25z
 -   0 (default) – Not restricted.
 -   1 – Restricted.
 
-<p style="margin-left: 20px">Most restricted value is 0.
+<p style="margin-left: 20px">Most restricted value is 1.
 
 <a href="" id="applicationmanagement-restrictapptosystemvolume"></a>**ApplicationManagement/RestrictAppToSystemVolume**  
 <p style="margin-left: 20px">Specifies whether the installation of applications is restricted to the system drive.
@@ -4410,7 +4464,7 @@ PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjxEZWZhdWx0QXNzb2NpYXRpb25z
 -   0 (default) – Not restricted.
 -   1 – Restricted.
 
-<p style="margin-left: 20px">Most restricted value is 0.
+<p style="margin-left: 20px">Most restricted value is 1.
 
 <a href="" id="authentication-alloweapcertsso"></a>**Authentication/AllowEAPCertSSO**  
 > [!NOTE]
@@ -4687,7 +4741,7 @@ By default, the Microsoft compatibility list is enabled and can be viewed by vis
 <p style="margin-left: 20px">Most restricted value is 0.
 
 <a href="" id="browser-allowsmartscreen"></a>**Browser/AllowSmartScreen**  
-<p style="margin-left: 20px">Specifies whether SmartScreen is allowed.
+<p style="margin-left: 20px">Specifies whether Windows Defender SmartScreen is allowed.
 
 <p style="margin-left: 20px">The following list shows the supported values:
 
@@ -4819,17 +4873,17 @@ Employees cannot remove these search engines, but they can set any one as the de
 <p style="margin-left: 20px">Most restricted value is 1.
 
 <a href="" id="browser-preventsmartscreenpromptoverride"></a>**Browser/PreventSmartScreenPromptOverride**  
-<p style="margin-left: 20px">Specifies whether users can override the SmartScreen Filter warnings about potentially malicious websites.
+<p style="margin-left: 20px">Specifies whether users can override the Windows Defender SmartScreen Filter warnings about potentially malicious websites.
 
 <p style="margin-left: 20px">The following list shows the supported values:
 
 -   0 (default) – Off.
 -   1 – On.
 
-<p style="margin-left: 20px">Turning this setting on stops users from ignoring the SmartScreen Filter warnings and blocks them from going to the site. Turning this setting off, or not configuring it, lets users ignore the SmartScreen Filter warnings about potentially malicious websites and to continue to the site.
+<p style="margin-left: 20px">Turning this setting on stops users from ignoring the Windows Defender SmartScreen Filter warnings and blocks them from going to the site. Turning this setting off, or not configuring it, lets users ignore the Windows Defender SmartScreen Filter warnings about potentially malicious websites and to continue to the site.
 
 <a href="" id="browser-preventsmartscreenpromptoverrideforfiles"></a>**Browser/PreventSmartScreenPromptOverrideForFiles**  
-<p style="margin-left: 20px">Specifies whether users can override the SmartScreen Filter warnings about downloading unverified files. Turning this setting on stops users from ignoring the SmartScreen Filter warnings and blocks them from downloading unverified files. Turning this setting off, or not configuring it, lets users ignore the SmartScreen Filter warnings about unverified files and lets them continue the download process.
+<p style="margin-left: 20px">Specifies whether users can override the Windows Defender SmartScreen Filter warnings about downloading unverified files. Turning this setting on stops users from ignoring the Windows Defender SmartScreen Filter warnings and blocks them from downloading unverified files. Turning this setting off, or not configuring it, lets users ignore the Windows Defender SmartScreen Filter warnings about unverified files and lets them continue the download process.
 
 <p style="margin-left: 20px">The following list shows the supported values:
 
@@ -4968,6 +5022,17 @@ Employees cannot remove these search engines, but they can set any one as the de
 1.  Go to Cellular & SIM.
 2.  Click on the SIM (next to the signal strength icon) and select **Properties**.
 3.  On the Properties page, select **Data roaming options**.
+
+<a href="" id="connectivity-allowconnecteddevices"></a>**Connectivity/AllowConnectedDevices**  
+> [!NOTE]
+> This policy requires reboot to take effect.
+
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Allows IT Admins the ability to disable the Connected Devices Platform (CDP) component. CDP enables discovery and connection to other devices (either proximally with BT/LAN or through the cloud) to support remote app launching, remote messaging, remote app sessions, and other cross-device experiences.
+
+<p style="margin-left: 20px">The following list shows the supported values:
+
+-   1 (default) - Allow (CDP service available).
+-   0 - Disable (CDP service not available).
 
 <a href="" id="connectivity-allownfc"></a>**Connectivity/AllowNFC**  
 > [!NOTE]
@@ -5673,7 +5738,15 @@ Employees cannot remove these search engines, but they can set any one as the de
 > -   MinDevicePasswordLength
 > -   MinDevicePasswordComplexCharacters
 
- 
+> [!Important]
+> **DevicePasswordEnabled** should not be set to Enabled (0) when WMI is used to set the EAS DeviceLock policies given that it is Enabled by default in Policy CSP for back compat with Windows 8.x. If **DevicePasswordEnabled** is set to Enabled(0) then Policy CSP will return an error stating that **DevicePasswordEnabled** already exists. Windows 8.x did not support DevicePassword policy. When disabling **DevicePasswordEnabled** (1) then this should be the only policy set from the DeviceLock group of policies listed below:
+> - **DevicePasswordEnabled** is the parent policy of the following:
+> 	- AllowSimpleDevicePassword
+>	- MinDevicePasswordLength
+>	- AlphanumericDevicePasswordRequired
+>		- MinDevicePasswordComplexCharacters 
+>	- MaxDevicePasswordFailedAttempts
+>	- MaxInactivityTimeDeviceLock
 
 <a href="" id="devicelock-devicepasswordexpiration"></a>**DeviceLock/DevicePasswordExpiration**  
 <p style="margin-left: 20px">Specifies when the password expires (in days).
@@ -8011,6 +8084,42 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 
 -   0 (default) – Allow Windows Update drivers.
 -   1 – Exclude Windows Update drivers.
+
+<a href="" id="update-ignoremoappdownloadlimit"></a>**Update/IgnoreMOAppDownloadLimit**  
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies whether to ignore the MO download limit (allow unlimited downloading) over a cellular network for apps and their updates. If lower-level limits (for example, mobile caps) are required, those limits are controlled by external policies. 
+
+<p style="margin-left: 20px">The following list shows the supported values:
+
+-   0 (default) – Do not ignore MO download limit for apps and their updates.
+-   1 – Ignore MO download limit (allow unlimited downloading) for apps and their updates.
+
+<p style="margin-left: 20px">To validate this policy:
+
+1.  Enable the policy ensure the device is on a cellular network.
+2.  Run the scheduled task on your device to check for app updates in the background. For example, on a mobile device, run the following commands in TShell: 
+      - `regd delete HKEY_USERS\S-1-5-21-2702878673-795188819-444038987-2781\software\microsoft\windows\currentversion\windowsupdate /v LastAutoAppUpdateSearchSuccessTime /f`
+
+      - `exec-device schtasks.exe -arguments ""/run /tn """"\Microsoft\Windows\WindowsUpdate\Automatic App Update"""" /I""`
+
+3.   Verify that any downloads that are above the download size limit will complete without being paused.
+
+
+<a href="" id="update-ignoremoupdatedownloadlimit"></a>**Update/IgnoreMOUpdateDownloadLimit**  
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies whether to ignore the MO download limit (allow unlimited downloading) over a cellular network for OS updates. If lower-level limits (for example, mobile caps) are required, those limits are controlled by external policies. 
+
+<p style="margin-left: 20px">The following list shows the supported values:
+
+-   0 (default) – Do not ignore MO download limit for OS updates.
+-   1 – Ignore MO download limit (allow unlimited downloading) for OS updates.
+
+<p style="margin-left: 20px">To validate this policy:
+
+1.  Enable the policy and ensure the device is on a cellular network.
+2.  Run the scheduled task on phone to check for OS updates in the background. For example, on a mobile device, run the following commands in TShell: 
+      - `exec-device schtasks.exe -arguments ""/run /tn """"\Microsoft\Windows\WindowsUpdate\AUScheduledInstall"""" /I""`
+
+3.   Verify that any downloads that are above the download size limit will complete without being paused.
+
 
 <a href="" id="update-pausedeferrals"></a>**Update/PauseDeferrals**  
 > [!NOTE]
