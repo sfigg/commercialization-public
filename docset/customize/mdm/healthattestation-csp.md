@@ -69,8 +69,7 @@ The following is a list of functions performed by the HealthAttestation CSP:
 <td style="vertical-align:top"><p>DHA-Cloud is a Microsoft owned and operated DHA-Service that is:</p>
 <ul>
 <li>Available in Windows for free</li>
-<li>Supported by all DHA-Enabled device management solutions as the default device</li>
-<li>Running on a high-available and geo-balanced cloud infrastructure </li>
+<li>Running on a high-availability and geo-balanced cloud infrastructure </li>
 <li>Supported by most DHA-Enabled device management solutions as the default device attestation service provider</li>
 <li>Accessible to all enterprise managed devices via following:
 <ul>
