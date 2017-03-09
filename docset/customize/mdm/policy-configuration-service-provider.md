@@ -4465,7 +4465,7 @@ PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjxEZWZhdWx0QXNzb2NpYXRpb25z
 -   0 (default) – Not restricted.
 -   1 – Restricted.
 
-<p style="margin-left: 20px">Most restricted value is 0.
+<p style="margin-left: 20px">Most restricted value is 1.
 
 <a href="" id="applicationmanagement-restrictapptosystemvolume"></a>**ApplicationManagement/RestrictAppToSystemVolume**  
 <p style="margin-left: 20px">Specifies whether the installation of applications is restricted to the system drive.
@@ -4475,7 +4475,7 @@ PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjxEZWZhdWx0QXNzb2NpYXRpb25z
 -   0 (default) – Not restricted.
 -   1 – Restricted.
 
-<p style="margin-left: 20px">Most restricted value is 0.
+<p style="margin-left: 20px">Most restricted value is 1.
 
 <a href="" id="authentication-alloweapcertsso"></a>**Authentication/AllowEAPCertSSO**  
 > [!NOTE]
@@ -5749,7 +5749,15 @@ Employees cannot remove these search engines, but they can set any one as the de
 > -   MinDevicePasswordLength
 > -   MinDevicePasswordComplexCharacters
 
- 
+> [!Important]
+> **DevicePasswordEnabled** should not be set to Enabled (0) when WMI is used to set the EAS DeviceLock policies given that it is Enabled by default in Policy CSP for back compat with Windows 8.x. If **DevicePasswordEnabled** is set to Enabled(0) then Policy CSP will return an error stating that **DevicePasswordEnabled** already exists. Windows 8.x did not support DevicePassword policy. When disabling **DevicePasswordEnabled** (1) then this should be the only policy set from the DeviceLock group of policies listed below:
+> - **DevicePasswordEnabled** is the parent policy of the following:
+> 	- AllowSimpleDevicePassword
+>	- MinDevicePasswordLength
+>	- AlphanumericDevicePasswordRequired
+>		- MinDevicePasswordComplexCharacters 
+>	- MaxDevicePasswordFailedAttempts
+>	- MaxInactivityTimeDeviceLock
 
 <a href="" id="devicelock-devicepasswordexpiration"></a>**DeviceLock/DevicePasswordExpiration**  
 <p style="margin-left: 20px">Specifies when the password expires (in days).

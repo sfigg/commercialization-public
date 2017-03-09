@@ -339,11 +339,9 @@ If the "Specify intranet Microsoft update service location" policy is enabled, t
 
 If the "Allow Telemetry" policy is enabled and the Options value is set to 0, then the "Defer upgrades by", "Defer updates by" and "Pause Updates and Upgrades" settings have no effect.
 
-<a href="" id="update-excludewudrivers"></a>**Update/ExcludeWUDrivers**  
+<a href="" id="update-excludewudriversinqualityupdate"></a>**Update/ExcludeWUDriversInQualityUpdate**  
 > **Note**  This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education.
 Since this policy is not blocked, you will not get a failure message when you use it to configure a Windows 10 Mobile device. However, the policy will not take effect.
-
- 
 
 Added in Windows 10, version 1607. Allows IT Admins to exclude Windows Update (WU) drivers during updates.
 

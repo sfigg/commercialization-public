@@ -14,7 +14,7 @@ This topic provides information about what's new in Windows customizations acros
 
 For more information about Windows customizations, see [Customize](index.md).
 
-## What's new in customizations for in the next major update to Windows 10
+## What's new in customizations for Windows 10, version 1703
 
 
 <table>
