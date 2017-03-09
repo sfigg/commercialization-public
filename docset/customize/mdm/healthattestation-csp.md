@@ -197,12 +197,12 @@ The following diagram shows the HealthAttestation configuration service provider
 -   3 - (HEALTHATTESTATION\_CERT\_RETRI_COMPLETE): DHA-Data Health data is ready for pick up
 
 <a href="" id="forceretrieve"></a>**ForceRetrieve** (Optional)  
-<p style="margin-left: 20px">Instructs the client to initiate a new request to DHA-Service, and get a new DHA-EncBlob (a summary of the boot state that is issued by DHA-Service). This option should be used if the MDM server enforces a certificate freshness policy, which needs to force a device to get a fresh encrypted blob from DHA-Service.</p>
+<p style="margin-left: 20px">Instructs the client to initiate a new request to DHA-Service, and get a new DHA-EncBlob (a summary of the boot state that is issued by DHA-Service). This option should only be used if the MDM server enforces a certificate freshness policy, which needs to force a device to get a fresh encrypted blob from DHA-Service.</p>
 
 <p style="margin-left: 20px">Boolean value. The supported operation is Replace.</p>
 
 <a href="" id="certificate"></a>**Certificate** (Required)  
-<p style="margin-left: 20px">Instructs the Health CSP to forward DHA-Data to the MDM server.</p>
+<p style="margin-left: 20px">Instructs the DHA-CSP to forward DHA-Data to the MDM server.</p>
 
 <p style="margin-left: 20px">Value type is b64.The supported operation is Get.</p>
 
@@ -219,12 +219,12 @@ The following diagram shows the HealthAttestation configuration service provider
 <p style="margin-left: 20px">Value type is integer, the minimum value is - 2,147,483,648 and the maximun value is 2,147,483,647. The supported operation is Get.</p>
 
 <a href="" id="hasendpoint"></a>**HASEndpoint** (Optional)
-<p style="margin-left: 20px">Added in Windows 10, version 1703. Identifies the fully qualified domain name (FDQN) of the DHA-Service that is assigned to perform attestation. If an FDQN is not assigned, DHA-Cloud (Microsoft owned and operated cloud service) will be used as the default attestation service.</p>
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Identifies the fully qualified domain name (FQDN) of the DHA-Service that is assigned to perform attestation. If an FQDN is not assigned, DHA-Cloud (Microsoft owned and operated cloud service) will be used as the default attestation service.</p>
 
 <p style="margin-left: 20px">Value type is string. The supported operations are Get and Replace. The default value is has.spserv.microsoft.com.</p>
 
 <a href="tpmreadystatus" id=""></a>**TpmReadyStatus** (Required)
-<p style="margin-left: 20px">Added in Windows 10, version 1703. Returns a bitmask of information describing the state of TPM.</p>
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Returns a bitmask of information describing the state of TPM. It indicates whether the TPM of the device is in a ready and trusted state.</p>
 <p style="margin-left: 20px">Value type is integer. The supported operation is Get.</p>
 
 ## **DHA-CSP integration steps**
@@ -295,116 +295,73 @@ SSL-Session:
     Verify return code: 20 (unable to get local issuer certificate)
 ```
 
-## <a href="" id="prepare-health-data"></a>**Step 2: Instruct client to prepare health data for verification**
+
+## <a href="" id="assign-trusted-dha-service"></a>**Step 2: Assign an enterprise trusted DHA-Service**
+
+There are three types of DHA-Service:
+- Device Health Attestation – Cloud
+- Device Health Attestation – On Premise
+- Device Health Attestation - Enterprise Managed Cloud
+
+DHA-Cloud default setting is the Microsoft owned and operated DHA-Service. No further action is required if an enterprise is planning to use Microsoft DHA-Cloud as the trusted DHA-Service provider.
+
+For DHA-OnPrem & DHA-EMC scenarios, send a SyncML command to the HASEndpoint node to instruct a managed device to communicate with the enterprise trusted DHA-Service. 
+
+The following example shows a sample call that instructs a managed device to communicate with an enterprise managed DHA-Service.
+
+``` syntax
+      <Replace>
+         <CmdID>1</CmdID>
+         <Item>
+            <Target>
+               <LocURI>./Vendor/MSFT/HealthAttestation/HASEndpoint</LocURI>
+            </Target>
+            <Data> www.ContosoDHA-Service</Data>
+         </Item>
+      </Replace>
+```
 
 
-After access is verified, issue a SyncML call to start collection of the DHA-Data.
+## <a href="" id="prepare-health-data"></a>**Step 3: Instruct client to prepare health data for verification**
+
+
+Send a SyncML call to start collection of the DHA-Data.
 
 The following example shows a sample call that triggers collection and verification of health attestation data from a managed device.
 
 ``` syntax
-<?xml version="1.0" encoding="UTF-8"?>
-<SyncML xmlns="SYNCML:SYNCML1.2">
-   <SyncHdr>
-      <VerDTD>1.2</VerDTD>
-      <VerProto>DM/1.2</VerProto>
-      <SessionID>22</SessionID>
-      <MsgID>1</MsgID>
-      <Target>
-         <LocURI>urn:uuid:05869F53-9265-5404-95DD-3BE6F34873A3</LocURI>
-      </Target>
-      <Source>
-         <LocURI>https://manage.contoso.com/DeviceGateway/WindowsPhone10.ashx</LocURI>
-      </Source>
-   </SyncHdr>
-   <SyncBody>
-      <Status>
-         <CmdID>1</CmdID>
-         <MsgRef>1</MsgRef>
-         <CmdRef>0</CmdRef>
-         <Cmd>SyncHdr</Cmd>
-         <Data>212</Data>
-      </Status>
-      <Replace>
-         <CmdID>3</CmdID>
-         <Item>
-            <Target>
-               <LocURI>./Vendor/MSFT/HealthAttestation/Nonce</LocURI>
-            </Target>
-            <Data>4D534E4F4E434532</Data>
-         </Item>
-      </Replace>
       <Exec>
-         <CmdID>4</CmdID>
+         <CmdID>1</CmdID>
          <Item>
             <Target>
                <LocURI>./Vendor/MSFT/HealthAttestation/VerifyHealth</LocURI>
             </Target>
          </Item>
       </Exec>
+
       <Get>
-         <CmdID>5</CmdID>
+         <CmdID>2</CmdID>
          <Item>
             <Target>
                <LocURI>./Vendor/MSFT/HealthAttestation/Status</LocURI>
             </Target>
          </Item>
       </Get>
-      <Final />
-   </SyncBody>
-</SyncML>
 ```
 
-## <a href="" id="take-action-client-response"></a>**Step 3: Take action based on the clients response**
+## <a href="" id="take-action-client-response"></a>**Step 4: Take action based on the clients response**
 
 
-After the client receives the health attestation request, it will send a response. The following list describes the responses, along with a recommended action to take.
+After the client receives the health attestation request, it sends a response. The following list describes the responses, along with a recommended action to take.
 
--   If the response to any of the nodes that are called is "Failed", take appropriate corrective action, and then resubmit the request.
--   If the response is HEALTHATTESTATION\_CERT_RETRI_REQUESTED (1) or HEALTHATTESTATION\_CERT_RETRI_UNINITIALIZED (0) wait for an alert.
--   If the response is HEALTHATTESTATION\_CERT_RETRI_COMPLETE (3) then proceed to the next section.
+- If the response is HEALTHATTESTATION\_CERT_RETRI_COMPLETE (3) then proceed to the next section.
+- If the response is HEALTHATTESTATION_CERT_RETRI_REQUESTED (1) or HEALTHATTESTATION_CERT_RETRI_UNINITIALIZED (0) wait for an alert, then proceed to the next section.
 
 Here is a sample alert that is issued by DHA_CSP:
 
 ``` syntax
-<SyncML xmlns="SYNCML:SYNCML1.2">
-    <SyncHdr>
-        <VerDTD>1.2</VerDTD>
-        <VerProto>DM/1.2</VerProto>
-        <SessionID>23</SessionID>
-        <MsgID>1</MsgID>
-        <Target>
-            <LocURI>https://manage.contoso.com/DeviceGateway/WindowsPhone10.ashx</LocURI>
-        </Target>
-        <Source>
-            <LocURI>urn:uuid:05869F53-9265-5404-95DD-3BE6F34873A3</LocURI>
-            <LocName>dummy</LocName>
-        </Source>
-        <Cred>
-            <Meta>
-                <Format xmlns="syncml:metinf">b64</Format>
-                <Type xmlns="syncml:metinf">syncml:auth-md5</Type>
-            </Meta>
-            <Data>EVEkoFZcVgPM+ESnu9IC0g==</Data>
-        </Cred>
-    </SyncHdr>
-    <SyncBody>
         <Alert>
-            <CmdID>2</CmdID>
-            <Data>1201</Data>
-        </Alert>
-        <Alert>
-            <CmdID>3</CmdID>
-            <Data>1224</Data>
-            <Item>
-                <Meta>
-                    <Type xmlns="syncml:metinf">com.microsoft/MDM/LoginStatus</Type>
-                </Meta>
-                <Data>user</Data>
-            </Item>
-        </Alert>
-        <Alert>
-            <CmdID>4</CmdID>
+            <CmdID>1</CmdID>
             <Data>1226</Data>
             <Item>
                 <Source>
@@ -417,45 +374,10 @@ Here is a sample alert that is issued by DHA_CSP:
                 <Data>3</Data>
             </Item>
         </Alert>
-        <Replace>
-            <CmdID>5</CmdID>
-            <Item>
-                <Source>
-                    <LocURI>./DevInfo/DevId</LocURI>
-                </Source>
-                <Data>urn:uuid:05869F53-9265-5404-95DD-3BE6F34873A3</Data>
-            </Item>
-            <Item>
-                <Source>
-                    <LocURI>./DevInfo/Man</LocURI>
-                </Source>
-                <Data>NOKIA</Data>
-            </Item>
-            <Item>
-                <Source>
-                    <LocURI>./DevInfo/Mod</LocURI>
-                </Source>
-                <Data>id313</Data>
-            </Item>
-            <Item>
-                <Source>
-                    <LocURI>./DevInfo/DmV</LocURI>
-                </Source>
-                <Data>1.3</Data>
-            </Item>
-            <Item>
-                <Source>
-                    <LocURI>./DevInfo/Lang</LocURI>
-                </Source>
-                <Data>en-US</Data>
-            </Item>
-        </Replace>
-        <Final/>
-    </SyncBody>
-</SyncML>
 ```
+- If the response to the status node is not 0, 1 or 3 then trouble shoot the issue. For the complete list of status see [Device HealthAttestation CSP status and error codes](#device-healthattestation-csp-status-and-error-codes).
 
-## <a href="" id="forward-health-attestation"></a>**Step 4: Instruct the client to forward health attestation data for verification**
+## <a href="" id="forward-health-attestation"></a>**Step 5: Instruct the client to forward health attestation data for verification**
 
 
 Create a call to the **Certificate** and **CorrelationId** nodes, and pick up an encrypted payload that includes a health certificate and related data from the device.
@@ -463,29 +385,17 @@ Create a call to the **Certificate** and **CorrelationId** nodes, and pick up an
 Here is an example:
 
 ``` syntax
-<?xml version="1.0" encoding="utf-8"?>
-<SyncML xmlns="SYNCML:SYNCML1.2">
-    <SyncHdr>
-        <VerDTD>1.2</VerDTD>
-        <VerProto>DM/1.2</VerProto>
-        <SessionID>23</SessionID>
-        <MsgID>1</MsgID>
-        <Target>
-            <LocURI>urn:uuid:05869F53-9265-5404-95DD-3BE6F34873A3</LocURI>
-        </Target>
-        <Source>
-            <LocURI>https://manage.contoso.com/DeviceGateway/WindowsPhone10.ashx</LocURI>
-        </Source>
-    </SyncHdr>
-    <SyncBody>
-        <Status>
-            <CmdID>1</CmdID>
-            <MsgRef>1</MsgRef>
-            <CmdRef>0</CmdRef>
-            <Cmd>SyncHdr</Cmd>
-            <Data>212</Data>
-        </Status>
-        <Get>
+<Replace>
+           <CmdID>1</CmdID>
+           <Item>
+               <Target>
+                   <LocURI>./Vendor/MSFT/HealthAttestation/Nonce</LocURI>
+               </Target>
+               <Data>AAAAAAAAAFFFFFFF</Data>
+           </Item>
+</Replace>
+     
+	<Get>
             <CmdID>2</CmdID>
             <Item>
                 <Target>
@@ -493,6 +403,7 @@ Here is an example:
                 </Target>
             </Item>
         </Get>
+
 	 <Get>
             <CmdID>3</CmdID>
             <Item>
@@ -500,41 +411,42 @@ Here is an example:
                     <LocURI>./Vendor/MSFT/HealthAttestation/CorrelationId </LocURI>
                 </Target>
             </Item>
-          </Get>
-        <Final />
-    </SyncBody>
-</SyncML>
+     </Get>
+
 ```
 
-## <a href="" id="foward-data-to-has"></a>**Step 5: Forward health attestation data to DHA-service**
+## <a href="" id="foward-data-to-has"></a>**Step 6: Forward health attestation data to DHA-service**
 
 
 In response to the request that was sent in the previous step, the MDM client forwards an XML formatted blob (response from ./Vendor/MSFT/HealthAttestation/Certificate node) and a call identifier called CorrelationId (response  to ./Vendor/MSFT/HealthAttestation/CorrelationId node).
 
 When the MDM-Server receives the above data, it must: 
-- Log the CallIdentifier it receives from the device (for future troubleshooting/reference), correlated to the call.
+- Log the CorrelationId it receives from the device (for future troubleshooting/reference), correlated to the call.
 - Decode the XML formatted data blob it receives from the device
-- Append the nonce that was generated by MDM service (add the nonce that was forwarded to the device) to the XML structure that was forwarded by the device in following format:
+- Append the nonce that was generated by MDM service (add the nonce that was forwarded to the device in Step 5) to the XML structure that was forwarded by the device in following format:
 
-   ``` syntax
-   <?xml version='1.0' encoding='utf-8' ?>
-   <HealthCertificateValidationRequest ProtocolVersion='1' xmlns='http://schemas.microsoft.com/windows/security/healthcertificate/validation/request/v1'>
-       <Nonce>[INT]</Nonce>
-       <Claims> [base64 blob, eg ‘ABc123+/…==’] </Claims>
-       <HealthCertificateBlob> [base64 blob, eg ‘ABc123+/...==’]
-       </HealthCertificateBlob>
-   </HealthCertificateValidationRequest>
-   ```
-- Forward (HTTP Post) the XML data struct (including the nonce that was appended in the previous step) to the DHA-Cloud https://has.spserv.microsoft.com/HealthAttestation/ValidateHealthCertificate/v3 or The assigned DHA-Service https://FAQN/HealthAttestation/ValidateHealthCertificate/v3.
+``` syntax
+<?xml version='1.0' encoding='utf-8' ?>
+<HealthCertificateValidationRequest ProtocolVersion='1' xmlns='http://schemas.microsoft.com/windows/security/healthcertificate/validation/request/v1'>
+    <Nonce>[INT]</Nonce>
+    <Claims> [base64 blob, eg ‘ABc123+/…==’] </Claims>
+    <HealthCertificateBlob> [base64 blob, eg ‘ABc123+/...==’]
+    </HealthCertificateBlob>
+</HealthCertificateValidationRequest>
+```
+- Forward (HTTP Post) the XML data struct (including the nonce that was appended in the previous step) to the assigned DHA-Service that runs on:
+    - DHA-Cloud (Microsoft owned and operated DHA-Service) scenario: https://has.spserv.microsoft.com/DeviceHealthAttestation /ValidateHealthCertificate/v3
+    - DHA-OnPrem or DHA-EMC: https://FullyQualifiedDomainName-FDQN/DeviceHealthAttestation /ValidateHealthCertificate/v3
 
-## <a href="" id="receive-has-response"></a>**Step 6: Receive response from the DHA-service**
+
+## <a href="" id="receive-has-response"></a>**Step 7: Receive response from the DHA-service**
 
 When the Microsoft Device Health Attestation Service receives a request for verification, it performs the following steps:
 - Decrypts the encrypted data it receives.
 - Validates the data it has received 
 - Creates a report, and shares the evaluation results to the MDM server via SSL in XML format 
 
-## <a href="" id="take-policy-action"></a>**Step 7: Take appropriate policy action based on evaluation results**
+## <a href="" id="take-policy-action"></a>**Step 8: Take appropriate policy action based on evaluation results**
 
 
 After the MDM server receives the verified data, the information can be used to make policy decisions by evaluating the data. Some possible actions would be:
@@ -797,13 +709,18 @@ Each of these are described in further detail in the following sections, along w
 **TPMVersion**
 
 <p style="margin-left: 20px">This attribute identifies the version of the TPM that is running on the attested device.</p>
+<p style="margin-left: 20px">TPMVersion node provides to replies "1" and "2:</p>
+<ul>
+<li>1 means TPM specification version 1.2</li>
+<li>2 means TPM specification version 2.0</li>
+</ul>
 
-<p style="margin-left: 20px">If reported TPMVersion equals an accepted value, then allow access.</p>
+<p style="margin-left: 20px">Based on the reply you receive from TPMVersion node:</p>
 
-<p style="margin-left: 20px">If reported TPMVersion does not equal an accepted value, then take one of the following actions that align with your enterprise policies:</p>
-
-- Disallow all access
-- Direct the device to an enterprise honeypot, to further monitor the device's activities.
+- If reported TPMVersion equals an accepted value, then allow access.
+- If reported TPMVersion does not equal an accepted value, then take one of the following actions that align with your enterprise policies:
+    - Disallow all access
+    - Direct the device to an enterprise honeypot, to further monitor the device's activities.
 
 **PCR0**
 <p style="margin-left: 20px">The measurement that is captured in PCR\[0\] typically represents a consistent view of the Host Platform between boot cycles. It contains a measurement of components that are provided by the host platform manufacturer.</p>
@@ -832,11 +749,7 @@ Each of these are described in further detail in the following sections, along w
 
 **SBCPHash**
 
-<p style="margin-left: 20px">SBCPHash is the finger print of the Custom Secure Boot Configuration Policy (SBCP) that was loaded during boot.</p>
-
-<p style="margin-left: 20px">If a device is using the default policy (that is embedded in bootmgr) no value is reported in DHA-report.</p>
-
-<p style="margin-left: 20px">If a device is using the "Custom" policy, the fingerprint of the custom policy that was loaded during boot will be measured and added to the DHA-report.</p>
+<p style="margin-left: 20px">SBCPHash is the finger print of the Custom Secure Boot Configuration Policy (SBCP) that was loaded during boot in Windows devices, except PCs.</p>
 
 <p style="margin-left: 20px">If SBCPHash is not present, or is an accepted (whitelisted) value, then allow access.
 
@@ -1262,7 +1175,6 @@ PD94bWwgdmVyc2lvbj0iMS4wIj8----------------C9JVj4NCjwvT3BhcXVlSGVhbHRoQ2VydGlmaW
 ```
 
 
-
 ## **Device HealthAttestation CSP status and error codes**
 
 <table>
@@ -1473,6 +1385,110 @@ PD94bWwgdmVyc2lvbj0iMS4wIj8----------------C9JVj4NCjwvT3BhcXVlSGVhbHRoQ2VydGlmaW
     </tr>
     
 </table>
+
+## DHA-Report V3 schema
+
+
+``` syntax
+ <?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns="http://schemas.microsoft.com/windows/security/healthcertificate/validation/response/v3"
+           targetNamespace="http://schemas.microsoft.com/windows/security/healthcertificate/validation/response/v3"
+           elementFormDefault="qualified">
+
+    <xs:element name="HealthCertificateValidationResponse" type="HealthCertificateValidationResponse_T"/>
+    <xs:complexType name="ResponseCommon_T">
+        <xs:attribute name="ErrorCode" type="xs:int" use="required"/>
+        <xs:attribute name="ErrorMessage" type="xs:string" use="required"/>
+        <xs:attribute name="ProtocolVersion" use="required">
+          <xs:simpleType>
+            <xs:restriction base="xs:int">
+              <xs:minInclusive value="3"/>
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:attribute>
+    </xs:complexType>
+    <xs:complexType name="HealthCertificatePublicProperties_T">
+        <xs:annotation>
+            <xs:documentation>Health certificate non machine identifiable properties </xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="Issued"                       type="xs:dateTime"/>
+            <xs:element name="AIKPresent"                   type="Boolean_T" />
+            <xs:element name="ResetCount"                   type="xs:unsignedInt"/>
+            <xs:element name="RestartCount"                 type="xs:unsignedInt"/>
+            <xs:element name="DEPPolicy"                    type="xs:unsignedInt"/>
+            <xs:element name="BitlockerStatus"              type="xs:unsignedInt"/>
+            <xs:element name="BootManagerRevListVersion"    type="xs:unsignedInt"/>
+            <xs:element name="CodeIntegrityRevListVersion"  type="xs:unsignedInt"/>
+            <xs:element name="SecureBootEnabled"            type="Boolean_T"/>
+            <xs:element name="BootDebuggingEnabled"         type="Boolean_T"/>
+            <xs:element name="OSKernelDebuggingEnabled"     type="Boolean_T"/>
+            <xs:element name="CodeIntegrityEnabled"         type="Boolean_T"/>
+            <xs:element name="TestSigningEnabled"           type="Boolean_T"/>
+            <xs:element name="SafeMode"                     type="Boolean_T"/>
+            <xs:element name="WinPE"                        type="Boolean_T"/>
+            <xs:element name="ELAMDriverLoaded"             type="Boolean_T"/>
+            <xs:element name="VSMEnabled"                   type="Boolean_T"/>
+            <xs:element name="PCRHashAlgorithmID"           type="xs:unsignedInt"/>
+            <xs:element name="BootAppSVN"                   type="xs:unsignedInt"/>
+            <xs:element name="BootManagerSVN"               type="xs:unsignedInt"/>
+            <xs:element name="TpmVersion"                   type="xs:unsignedInt"/>
+            <xs:element name="PCR0"                         type="xs:hexBinary"/>
+            <xs:element name="CIPolicy"                     type="xs:hexBinary" minOccurs ="0" maxOccurs ="1"/>
+            <xs:element name="SBCPHash"                     type="xs:hexBinary" minOccurs ="0" maxOccurs ="1"/>
+            <xs:element name="BootRevListInfo"              type="xs:hexBinary" minOccurs ="0" maxOccurs ="1"/>
+            <xs:element name="OSRevListInfo"                type="xs:hexBinary" minOccurs ="0" maxOccurs ="1"/>
+            
+          <!--
+<xs:element name="PCRCount"                     type="xs:unsignedInt"/>
+<xs:element name="PCRSize"                      type="xs:unsignedShort"/>
+<xs:element name="PCRHashAlgorithmID"           type="xs:unsignedShort"/>
+            
+<xs:element name="PCR"                          type="xs:hexBinary"/>
+            -->
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="HealthStatusMismatchFlags_T">
+        <xs:annotation>
+            <xs:documentation>If there's a status mismatch, these flags will be set</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <!-- Hibernate/Resume count -->
+            <xs:element name="ResumeCount"                   type="Boolean_T"/>
+            <!-- Reboot count -->
+            <xs:element name="RebootCount"                   type="Boolean_T"/> 
+            <xs:element name="PCR"                           type="Boolean_T"/>
+            <xs:element name="BootAppSVN"                   type="Boolean_T"/>
+            <xs:element name="BootManagerSVNChain"           type="Boolean_T"/>
+            <xs:element name="BootAppSVNChain"              type="Boolean_T"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="HealthCertificateValidationResponse_T" >
+        <xs:annotation>
+            <xs:documentation>Health certificate validation response </xs:documentation>
+        </xs:annotation>
+        <xs:complexContent>
+            <xs:extension base="ResponseCommon_T">
+<xs:sequence>
+    <!--Optional element, present only when the certificate can be verified and decrypted-->
+    <xs:element name="HealthCertificateProperties"  type="HealthCertificatePublicProperties_T"  minOccurs="0"/>
+    <!--Optional element, present only when the reason for a validation failure is a mismatch between the 
+                    current health state and the certificate health state-->
+    <xs:element name="HealthStatusMismatchFlags"       type="HealthStatusMismatchFlags_T"             minOccurs="0"/>
+</xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:simpleType name="Boolean_T">
+        <xs:restriction base="xs:boolean">
+            <xs:pattern value="true|false"/>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>
+```
 
 ## Related topics
 
