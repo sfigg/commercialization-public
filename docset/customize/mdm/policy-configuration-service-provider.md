@@ -3076,38 +3076,38 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>IoT Core</p></td>
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>EAS</p></td></tr>
 	<tr>
-		<td style="vertical-align:top"><a href="#settings-pagevisibilitylist">SmartScreen/AppInstallControl</a></td>
-		<!--<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Home</p></td>
+		<td style="vertical-align:top"><a href="#settings-appinstallcontrol">SmartScreen/AppInstallControl</a></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Home</p></td>
 		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Pro</p></td>
 		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Business</p></td>
 		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Enterprise</p></td>
 		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Education</p></td>
-		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Mobile</p></td>
-		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Mobile Enterprise</p></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Mobile</p></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Mobile Enterprise</p></td>
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>IoT Core</p></td>
-		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>EAS</p></td>--></tr>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>EAS</p></td></tr>
 	<tr>
-		<td style="vertical-align:top"><a href="#settings-pagevisibilitylist">SmartScreen/EnableSmartScreenInShell</a></td>
-		<!--<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Home</p></td>
+		<td style="vertical-align:top"><a href="#settings-enablesmartscreeninshell">SmartScreen/EnableSmartScreenInShell</a></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Home</p></td>
 		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Pro</p></td>
 		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Business</p></td>
 		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Enterprise</p></td>
 		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Education</p></td>
-		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Mobile</p></td>
-		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Mobile Enterprise</p></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Mobile</p></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Mobile Enterprise</p></td>
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>IoT Core</p></td>
-		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>EAS</p></td>--></tr>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>EAS</p></td></tr>
 	<tr>
-		<td style="vertical-align:top"><a href="#settings-pagevisibilitylist">SmartScreen/SmartScreenShellEnforcementLevel</a></td>
-		<!--<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Home</p></td>
+		<td style="vertical-align:top"><a href="#settings-smartscreenshellenforcementlevel">SmartScreen/SmartScreenShellEnforcementLevel</a></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Home</p></td>
 		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Pro</p></td>
 		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Business</p></td>
 		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Enterprise</p></td>
 		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Education</p></td>
-		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Mobile</p></td>
-		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Mobile Enterprise</p></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Mobile</p></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Mobile Enterprise</p></td>
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>IoT Core</p></td>
-		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>EAS</p></td>--></tr>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>EAS</p></td></tr>
 	<tr>
 		<td style="vertical-align:top"><a href="#speech-allowspeechmodelupdate">Speech/AllowSpeechModelUpdate</a></td>
 		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">1<p>Home</p></td>
@@ -7110,6 +7110,30 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 1.   Open System Settings and verfiy that the About page is visible and accessible.
 2.   Configure the policy with the following string: "hide:about".
 3.   Open System Settings again and verify that the About page is no longer accessible.
+
+<a href="" id="settings-appinstallcontrol"></a>**SmartScreen/AppInstallControl**  
+<p style="margin-left: 20px">Added in Windows 10, version 1703.
+
+<p style="margin-left: 20px">The following list shows the supported values:
+
+-   0 (default) – Turns off Application Installation Control, allowing users to download and install files from anywhere on the web.
+-   1 – Turns on Application Installation Control, allowing users to only install apps from the Store.
+
+<a href="" id="settings-enablesmartscreeninshell"></a>**SmartScreen/EnableSmartScreenInShell**  
+<p style="margin-left: 20px">Added in Windows 10, version 1703.
+
+<p style="margin-left: 20px">The following list shows the supported values:
+
+-   0 (default)– Turns off SmartScreen in Windows.
+-   1 – Turns on SmartScreen in Windows.
+
+<a href="" id="settings-smartscreenshellenforcementlevel"></a>**SmartScreen/SmartScreenShellEnforcementLevel**  
+<p style="margin-left: 20px">Added in Windows 10, version 1703.
+
+<p style="margin-left: 20px">The following list shows the supported values:
+
+-   0 (default) – Employees can ignore SmartScreen warnings and run malicious files.
+-   1 – Employees cannot ignore SmartScreen warnings and run malicious files.
 
 <a href="" id="speech-allowspeechmodelupdate"></a>**Speech/AllowSpeechModelUpdate**  
 <p style="margin-left: 20px">Added in Windows 10, version 1607. Specifies whether the device will receive updates to the speech recognition and speech synthesis models. A speech model contains data used by the speech engine to convert audio to text (or vice-versa). The models are periodically updated to improve accuracy and performance. Models are non-executable data files. If enabled, the device will periodically check for updated speech models and then download them from a Microsoft service using the Background Internet Transfer Service (BITS).
