@@ -19,46 +19,43 @@ The following diagram shows the EnterpriseAppVManagement configuration service p
 ![enterpriseappvmanagement csp](images/provisioning-csp-enterpriseappvmanagement.png)
 
 **./Vendor/MSFT/EnterpriseAppVManagement**  
-
-   Root node for the EnterpriseAppVManagement configuration service provider.
+<pre>   Root node for the EnterpriseAppVManagement configuration service provider.</pre>
 
 **AppVPackageManagement**  
-
-   Used to query App-V package information (post-publish). 
+<pre>   Used to query App-V package information (post-publish).</pre> 
 
 **AppVPackageManagement/EnterpriseID**  
-
-   Used to query package information. Value is always "HostedInstall".
+<pre>   Used to query package information. Value is always "HostedInstall".</pre>
 
 **AppVPackageManagement/EnterpriseID/PackageFamilyName**  
-   Package ID of the published App-V package.
+<pre>   Package ID of the published App-V package.</pre>
 
 **AppVPackageManagement/_EnterpriseID_/_PackageFamilyName_/_PackageFullName_**  
-   Version ID of the published App-V package.
+<pre>   Version ID of the published App-V package.</pre>
 
 **AppVPackageManagement/_EnterpriseID_/_PackageFamilyName_/_PackageFullName_/Name**  
-    Name specified in the published AppV package.
+<pre>   Name specified in the published AppV package.</pre>
 
 **AppVPackageManagement/_EnterpriseID_/_PackageFamilyName_/_PackageFullName_/Version**  
-    Version specified in the published AppV package.
+<pre>   Version specified in the published AppV package.</pre>
 
 **AppVPackageManagement/_EnterpriseID_/_PackageFamilyName_/_PackageFullName_/Publisher**  
-    Publisher as specified in the published asset information of the AppV package.
+<pre>   Publisher as specified in the published asset information of the AppV package.</pre>
 
 **AppVPackageManagement/_EnterpriseID_/_PackageFamilyName_/_PackageFullName_/InstallLocation**  
-    Local package path specified in the published asset information of the AppV package.
+<pre>   Local package path specified in the published asset information of the AppV package.</pre>
 
 **AppVPackageManagement/_EnterpriseID_/_PackageFamilyName_/_PackageFullName_/InstallDate**  
-   Date the app was installed, as specified in the published asset information of the AppV package.
+<pre>   Date the app was installed, as specified in the published asset information of the AppV package.</pre>
 
 **AppVPackageManagement/_EnterpriseID_/_PackageFamilyName_/_PackageFullName_/Users**  
-   Registered users for app, as specified in the published asset information of the AppV package.
+<pre>   Registered users for app, as specified in the published asset information of the AppV package.</pre>
 
 **AppVPackageManagement/_EnterpriseID_/_PackageFamilyName_/_PackageFullName_/AppVPackageId**  
-   Package ID of the published App-V package.
+<pre>   Package ID of the published App-V package.</pre>
 
 **AppVPackageManagement/_EnterpriseID_/_PackageFamilyName_/_PackageFullName_/AppVVersionId**  
-   Version ID of the published App-V package.
+<pre>   Version ID of the published App-V package.</pre>
 
 **AppVPackageManagement/_EnterpriseID_/_PackageFamilyName_/_PackageFullName_/AppVPackageUri**  
-   Package URI of the published App-V package.
+<pre>   Package URI of the published App-V package.</pre>

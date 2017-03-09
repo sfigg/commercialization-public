@@ -119,6 +119,7 @@
 ### [EnterpriseAPN CSP](enterpriseapn-csp.md)
 #### [EnterpriseAPN DDF](enterpriseapn-ddf.md)
 ### [EnterpriseAppManagement CSP](enterpriseappmanagement-csp.md)
+### [EnterpriseAppVManagement CSP](enterpriseappvmanagement-csp.md)
 ### [EnterpriseAssignedAccess CSP](enterpriseassignedaccess-csp.md)
 #### [EnterpriseAssignedAccess DDF file](enterpriseassignedaccess-ddf.md)
 #### [EnterpriseAssignedAccess XSD](enterpriseassignedaccess-xsd.md)
