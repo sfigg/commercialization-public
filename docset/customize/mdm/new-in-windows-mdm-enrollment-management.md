@@ -529,6 +529,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <td style="vertical-align:top">[Policy CSP](policy-configuration-service-provider.md)</td>
 <td style="vertical-align:top"><p>Added the following new policies: </p>
 <ul>
+<li>Accounts/AllowMicrosoftAccountSignInAssistant</li>
 <li>ApplicationDefaults/DefaultAssociationsConfiguration</li>
 <li>Browser/AllowAddressBarDropdown</li>
 <li>Browser/AllowMicrosoftCompatibilityList</li>
@@ -540,6 +541,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>Browser/PreventLiveTileDataCollection</li>
 <li>Browser/SetDefaultSearchEngine</li>
 <li>Browser/SyncFavoritesBetweenIEAndMicrosoftEdge</li>
+<li>Connectivity/AllowConnectedDevices</li>
 <li>DeliveryOptimization/DOAllowVPNPeerCaching</li>
 <li>DeliveryOptimization/DOMinBatteryPercentageAllowedToUpload</li>
 <li>DeliveryOptimization/DOMinDiskSizeAllowedToPeer</li>
@@ -592,6 +594,8 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>Update/EngagedRestartDeadline</li>
 <li>Update/EngagedRestartSnoozeSchedule</li>
 <li>Update/EngagedRestartTransistionSchedule</li>
+<li>Update/IgnoreMOAppDownloadLimit</li>
+<li>Update/IgnoreMOUpdateDownloadLimit</li>
 <li>Update/SetAutoRestartNotificationDisable</li>
 <li>WindowsLogon/HideFastUserSwitching</li>
 </ul><p>Removed TextInput/AllowLinguisticDataCollection</p>
@@ -640,6 +644,14 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li><em>TenantId</em>/Policies/ExcludeSecurityDevices/TPM12 (only for ./Device/Vendor/MSFT)</li>
 <li><em>TenantId</em>/Policies/EnablePinRecovery</li>
 </ul></td>
+</tr>
+<tr class="even">
+<td style="vertical-align:top">[Office CSP](office-csp.md)</td>
+<td style="vertical-align:top"><p>Added new CSP.</p></td>
+</tr>
+<tr class="odd">
+<td style="vertical-align:top">[Personalization CSP](personalization-csp.md)</td>
+<td style="vertical-align:top"><p>Added new CSP.</p></td>
 </tr>
 </tbody>
 </table> 
@@ -911,6 +923,38 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 
 ## Change history in MDM documentation
 
+### March 2017
+
+<table>
+<colgroup>
+<col width="25%" />
+<col width="75%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>New or updated topic</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="vertical-align:top">[Policy CSP](policy-configuration-service-provider.md)</td>
+<td style="vertical-align:top"><p>Added the following new policies for Windows 10, version 1703:</p> 
+<ul>
+<li>Accounts/AllowMicrosoftAccountSignInAssistant</li>
+<li>Connectivity/AllowConnectedDevices</li>
+<li>Update/IgnoreMOAppDownloadLimit</li>
+<li>Update/IgnoreMOUpdateDownloadLimit</li>
+</ul>
+</td>
+</tr>
+<tr class="even">
+<td style="vertical-align:top">[Personalization CSP](personalization-csp.md)</td>
+<td style="vertical-align:top"><p>Added new CSP for Windows 10, version 1703.</p></td>
+</tr>
+</tbody>
+</table>
+
 ### February 2017
 
 <table>
@@ -952,6 +996,7 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>Browser/PreventLiveTileDataCollection</li>
 <li>Browser/SetDefaultSearchEngine</li>
 <li>Browser/SyncFavoritesBetweenIEAndMicrosoftEdge</li>
+<li>Connectivity/AllowConnectedDevices</li>
 <li>DeliveryOptimization/DOMinBatteryPercentageAllowedToUpload</li>
 <li>Experience/AllowTailoredExperiencesWithDiagnosticData</li>
 <li>Experience/AllowWindowsSpotlightOnActionCenter</li>
@@ -1020,6 +1065,10 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li><em>TenantId</em>/Policies/ExcludeSecurityDevices/TPM12 (only for ./Device/Vendor/MSFT)</li>
 <li><em>TenantId</em>/Policies/EnablePinRecovery</li>
 </ul></td>
+</tr>
+<tr class="odd">
+<td style="vertical-align:top">[Office CSP](office-csp.md)</td>
+<td style="vertical-align:top"><p>Added new CSP for Windows 10, version 1703.</p></td>
 </tr>
 </tbody>
 </table>

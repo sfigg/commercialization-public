@@ -560,6 +560,17 @@ The following table show the configuration service providers supported in Window
 
 </tr>
 <tr class="even">
+<td>[Office CSP](office-csp.md)</td>
+<td><img src="images/checkmark.png" alt="check mark" />2</td>
+<td><img src="images/checkmark.png" alt="check mark" />2</td>
+<td><img src="images/checkmark.png" alt="check mark" />2</td>
+<td><img src="images/checkmark.png" alt="check mark" />2</td>
+<td><img src="images/crossmark.png" alt="cross mark" /></td>
+<td><img src="images/crossmark.png" alt="cross mark" /></td>
+<td><img src="images/crossmark.png" alt="cross mark" /></td>
+
+</tr>
+<tr class="even">
 <td>[PassportForWork CSP](passportforwork-csp.md)</td>
 <td><img src="images/checkmark.png" alt="check mark" /></td>
 <td></td>
@@ -580,6 +591,16 @@ The following table show the configuration service providers supported in Window
 <td><img src="images/checkmark.png" alt="check mark" /></td>
 <td><img src="images/checkmark.png" alt="check mark" /></td>
 
+</tr>
+<tr class="odd">
+<td>[Personalization CSP](personalization-csp.md)</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
 </tr>
 <tr class="even">
 <td>[PolicyManager CSP](policymanager-csp.md)</td>
@@ -954,6 +975,7 @@ Footnotes:
 -   [DeveloperSetup csp](developersetup-csp.md)
 -   [Messaging CSP](messaging-csp.md)
 -   [NetworkProxy CSP](networkproxy-csp.md)
+-   [Office CSP](office-csp.md)
 
 ## <a href="" id="newcsps"></a>New CSPs added in Windows 10, version 1511
 
