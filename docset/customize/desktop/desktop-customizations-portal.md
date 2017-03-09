@@ -24,10 +24,7 @@ Using an xml modification file, for items like Taskbar, Start menu, and OOBE
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td><p>[Customize the Country and Operator Settings Asset](customize-cosa.md)</p></td>
-<td><p>When a SIM is inserted in a COSA-enabled Windows-based device, the provisioning framework attempts to establish a cellular connection by searching for the matching profile and APN in COSA.</p></td>
-</tr>
+
 <tr class="even">
 <td><p>[Customize the taskbar](customize-the-taskbar.md)</p></td>
 <td><p>You can pin up to three additional apps to the taskbar by adding a taskbar layout modification file, for example, TaskbarLayoutModification.xml. You can specify different taskbar configurations based on SKU, device locale, or region.</p></td>
@@ -36,11 +33,16 @@ Using an xml modification file, for items like Taskbar, Start menu, and OOBE
 <td><p>[Set dark mode](set-dark-mode.md)</p></td>
 <td><p>This personalization setting for end users allows them to express preference whether to see applications which support the setting in a dark or light mode.
 Many Microsoft first party applications apply the setting and it is easy for you to support the functionality in your UWP applications as well.</p></td>
-</tr><tr class="even">
-<td><p>[Unattended Windows Setup Reference](unattend/index.md)</p></td>
-<td><p>Everything you need to know about the settings.</p></td>
+</tr>
+<tr class="even">
+<td><p>[Customize the Country and Operator Settings Asset](customize-cosa.md)</p></td>
+<td><p>When a SIM is inserted in a COSA-enabled Windows-based device, the provisioning framework attempts to establish a cellular connection by searching for the matching profile and APN in COSA.</p></td>
 </tr>
 <tr class="odd">
+<td><p>[Unattended Windows Setup Reference](unattend/index.md)</p></td>
+<td><p>Settings reference for Unattend.</p></td>
+</tr>
+<tr class="even">
 <td><p>[Windows SIM Technical Reference](wsim/windows-system-image-manager-technical-reference.md)</p></td>
 <td><p>Settings reference for Windows System Image Manager.</p></td>
 </tr>
