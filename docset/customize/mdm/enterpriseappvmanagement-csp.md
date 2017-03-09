@@ -19,12 +19,15 @@ The following diagram shows the EnterpriseAppVManagement configuration service p
 ![enterpriseappvmanagement csp](images/provisioning-csp-enterpriseappvmanagement.png)
 
 **./Vendor/MSFT/EnterpriseAppVManagement**  
+
    Root node for the EnterpriseAppVManagement configuration service provider.
 
 **AppVPackageManagement**  
+
    Used to query App-V package information (post-publish). 
 
 **AppVPackageManagement/EnterpriseID**  
+
    Used to query package information. Value is always "HostedInstall".
 
 **AppVPackageManagement/EnterpriseID/PackageFamilyName**  
