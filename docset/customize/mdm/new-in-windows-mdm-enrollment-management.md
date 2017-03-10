@@ -547,6 +547,8 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>DeliveryOptimization/DOMinDiskSizeAllowedToPeer</li>
 <li>DeliveryOptimization/DOMinFileSizeToCache</li>
 <li>DeliveryOptimization/DOMinRAMAllowedToPeer</li>
+<li>Display/TurnOffGdiDPIScalingForApps</li>
+<li>Display/TurnOnGdiDPIScalingForApps</li>
 <li>EnterpriseCloudPrint/CloudPrinterDiscoveryEndPoint</li>
 <li>EnterpriseCloudPrint/CloudPrintOAuthAuthority</li>
 <li>EnterpriseCloudPrint/CloudPrintOAuthClientId</li>
@@ -947,6 +949,8 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <ul>
 <li>Accounts/AllowMicrosoftAccountSignInAssistant</li>
 <li>Connectivity/AllowConnectedDevices</li>
+<li>Display/TurnOffGdiDPIScalingForApps</li>
+<li>Display/TurnOnGdiDPIScalingForApps</li>
 <li>Update/IgnoreMOAppDownloadLimit</li>
 <li>Update/IgnoreMOUpdateDownloadLimit</li>
 </ul>
