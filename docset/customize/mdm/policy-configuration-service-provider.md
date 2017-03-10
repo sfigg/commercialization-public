@@ -68,6 +68,32 @@ The following diagram shows the Policy configuration service provider in tree fo
 
 <p style="margin-left: 20px">Supported operation is Get.
 
+<a href="" id="policy-result"></a>**Policy/ConfigOperations**  
+<p style="margin-left: 20px">Specifies the ConfigOperations policy area.
+
+<p style="margin-left: 20px">Supported operation is Get.
+
+<a href="" id="policy-result-areaname"></a>**Policy/ConfigOperations/ADMXInstall**  
+<p style="margin-left: 20px">The <a href="#configoperations-admxinstall">ConfigOperations/ADMXInstall</a> policy allows you to add ADMX-backed policies or preferences.
+
+<p style="margin-left: 20px">Supported operation is Get.
+
+<a href="" id="policy-result-areaname-policyname"></a>**Policy/ConfigOperations/ADMXInstall/****_<AppName>_**  
+<p style="margin-left: 20px">The name of the ADMX file to use for importing ADMX-backed policies or preferences.
+
+<p style="margin-left: 20px">Supported operation is Get.
+
+<a href="" id="policy-result-areaname-policyname"></a>**Policy/ConfigOperations/ADMXInstall/****_<AppName>/<Policy> or <Preference>_**  
+<p style="margin-left: 20px">The name of the ADMX-backed policy or preference to import.
+
+<p style="margin-left: 20px">Supported operation is Get.
+
+<a href="" id="policy-result-areaname-policyname"></a>**Policy/ConfigOperations/ADMXInstall/****_<AppName>/<Policy> or <Preference>/<UniqueID>_**  
+<p style="margin-left: 20px">The ID of the ADMX-backed policy or preference to import.
+
+<p style="margin-left: 20px">Supported operation is Get.
+
+
 ## **Policy Tables**
 
 Some policies are only supported in either Windows 10 for desktop or Windows 10 Mobile. In addition, some policies also have a corresponding Group Policy. The following tables provide this information:
@@ -4969,7 +4995,9 @@ Employees cannot remove these search engines, but they can set any one as the de
 
 <a href="" id="configoperations-admxinstall"></a>**ConfigOperations/ADMXInstall**  
 
-<p style="margin-left: 20px">Allows settings for ADMX files for Win32 apps to be delivered directly to your device. The delivered ADMX file settings are then processed into new ADMX-backed policies for your device. By using ADMXInstall, you can add ADMX-backed polices for those Win32 apps that have been added between OS releases. For more information, see [Adding ADMX-backed policies](adding-admx-backed-policies.md).
+<p style="margin-left: 20px">Allows settings for ADMX files for Win32 apps to be delivered directly to your device and processed into new ADMX-backed policies or preferences. By using ADMXInstall, you can add ADMX-backed polices for those Win32 apps that have been added between OS releases. ADMX-backed policies are imported to your device by using the Policy CSP URI: `./Vendor/MSFT/Policy/ConfigOperations/ADMXInstall`. Each ADMX-backed policy or preference that is added is assigned a unique ID. For more information about adding ADMX-backed policies, see [Adding ADMX-backed policies](adding-admx-backed-policies.md).
+
+ADMX files that have been installed by using **ConfigOperations/ADMXInstall** can later be deleted by using the URI delete operation. Deleting an ADMX file will delete the ADMX file from disk, remove the metadata from the ADMXdefault registry hive, and delete all the policies that were set from the file. The MDM server can also delete all ADMX policies that are tied to a particular app by calling delete on the URI, `./Vendor/MSFT/Policy/ConfigOperations/ADMXInstall/{AppName}`.
 
 <p style="margin-left: 20px">The following list shows the supported values:
 
