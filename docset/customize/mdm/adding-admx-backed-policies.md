@@ -10,20 +10,20 @@ description: Starting in Windows 10, version 1703, you can add ADMX-backed polic
 
 ## In this section
 
--   [Background](#background)
--   [Deriving the URI to configure the policy](#deriving-the-uri-to-configure-the-policy)
+-   [Overview](#overview)
+-   [URI format for configuring a policy](#uri-format-for-configuring-a-policy)
 -   [ADMX-backed policy examples](#admx-backed-policy-examples)
     - [Enabling a policy](#enabling-a-policy)
     - [Disabling a policy](#disabling-a-policy)
     - [Setting a policy to not configured](#setting-a-policy-to-not-configured)
 
-## <a href="" id="background"></a>Background
+## <a href="" id="overview"></a>Overview
 
-Starting in Windows 10, version 1703, you can add ADMX-backed policies for Windows 10 mobile device management (MDM) across Windows 10 devices.
+Starting in Windows 10, version 1703, you can import ADMX-backed policies for Windows 10 mobile device management (MDM) across Windows 10 devices. The settings of ADMX files for Win32 apps that defines policy information can be imported directly to your device by using the Policy CSP URI, `./Vendor/MSFT/Policy/ConfigOperations/ADMXInstall`. The imported ADMX file settings are then processed into MDM policies.
 
-The settings of ADMX files for Win32 apps that defines policy information can be ingested directly to your device by using the Policy CSP `./Vendor/MSFT/Policy/ConfigOperations/ADMXInstall URI`. The ingested ADMX file settings are then processed into MDM policies.
+When the ADMX file data is imported, the registry keys that each policy writes to are checked so that known system registry keys or registry keys that are used by existing inbox policies are not overwritten. This precaution helps to avoid security concerns over opening the entire registry. Currently, the ingested policies are not allowed to write to locations within the System, Software\Microsoft and Software\Policies\Microsoft keys.
 
-The following example shows an ADMX file that contains eight policies:
+For example, the following ADMX file defines eight policies:
 
 **Payload**
 ```XML
@@ -159,14 +159,13 @@ The following example shows an ADMX file that contains eight policies:
 </policyDefinitions>
 ```
 
-**Request Syncml**
-
-The ADMX file is escaped and sent in SyncML format through the Policy CSP.
-./Vendor/MSFT/Policy/ConfigOperations/ADMXInstall/{AppName}/{SettingType}/{FileUid or AdmxFileName}
-When the ADMX file is ingested, the policy states are the same as those in a regular MDM policy: Enabled, Disabled, or Not Configured. 
+The ADMX file is then escaped and sent in SyncML format through the Policy CSP URI:
+`./Vendor/MSFT/Policy/ConfigOperations/ADMXInstall/{AppName}/{SettingType}/{FileUid or AdmxFileName}`.
+When the ADMX file is imported, the policy states for each new policy are the same as those in a regular MDM policy: Enabled, Disabled, or Not Configured. 
 
 The following example shows an ADMX file in SyncML format:
 
+**Request Syncml**
 ```XML
 <SyncML xmlns="SYNCML:SYNCML1.2">
   <SyncBody>
@@ -322,11 +321,7 @@ The following example shows an ADMX file in SyncML format:
 <Status><CmdID>2</CmdID><MsgRef>1</MsgRef><CmdRef>102</CmdRef><Cmd>Add</Cmd><Data>200</Data></Status>
 ```
 
-### <a href="" id="deriving-the-uri-to-configure-the-policy"></a>Deriving the URI to configure the policy 
-
-The URI format to set a policy via Policy CSP is: `./Vendor/MSFT/Policy/Config/{AreaName}/{PolicyName}`.
-For the following example, the URI is:
-`./user/Vendor/MSFT/Policy/Config/ ContosoCompanyApp~ Policy~ ParentCategoryArea~Category2~Category3/ L_PolicyPreventRun_1`.
+### <a href="" id="uri-format-for-configuring-a-policy"></a>URI format for configuring a policy 
 
 The following example shows how to derive the policy name and policy area name:
 
@@ -355,29 +350,40 @@ The following example shows how to derive the policy name and policy area name:
     </policy>
 ```
 
-Policy name: L_PolicyPreventRun_1. 
-Policy area name format: {AppName}~{SettingType}~{CategoryPathFromAdmx}
+As documented in [Policy CSP](policy-configuration-service-provider.md), the URI format to configure a policy via Policy CSP is: `./Vendor/MSFT/Policy/Config/{AreaName}/{PolicyName}`.
 
-{AppName} and {SettingType} are derived from the URI that is used while ingesting the ADMX. In this example, the 
-URI is `./Vendor/MSFT/Policy/ConfigOperations/ADMXInstall/ContosoCompanyApp/Policy/AppAdmxFile01`.
+From the example:
+   - URI: `./user/Vendor/MSFT/Policy/Config/ContosoCompanyApp~ Policy~ ParentCategoryArea~Category2~Category3/L_PolicyPreventRun_1`
+   - Policy name: `L_PolicyPreventRun_1` 
+   - Policy area name format: `{AppName}~{SettingType}~{CategoryPathFromAdmx}`
+   - Policy area name: `ContosoCompanyApp~ Policy~ ParentCategoryArea~Category2~Category3`
+   
+{AppName} and {SettingType} are derived from the URI that is used to import the ADMX file. In this example, the 
+URI is: `./Vendor/MSFT/Policy/ConfigOperations/ADMXInstall/ContosoCompanyApp/Policy/AppAdmxFile01`.
 
-{CategoryPathFromAdmx} is derived by traversing the parentCategory parameter. For this example, {CategoryPathFromAdmx} is ParentCategoryArea~Category2~Category3. Therefore, {AreaName} is ContosoCompanyApp~ Policy~ ParentCategoryArea~Category2~Category3
+{CategoryPathFromAdmx} is derived by traversing the parentCategory parameter. For this example, `{CategoryPathFromAdmx}` is `ParentCategoryArea~Category2~Category3`. Therefore, `{AreaName}` is `ContosoCompanyApp~ Policy~ ParentCategoryArea~Category2~Category3`
 
 **User or device policy**
-In the policy class, attribute is defined as "User". Therefore, prefix ./user in the URI.
+
+In the policy class, the attribute is defined as "User" and the URI is prefixed with `./user`.
 If the attribute value is "Machine", the URI is prefixed with `./device`.
 If the attribute value is "Both", the policy can be configured either as a user or a device policy.
 
 ## <a href="" id="admx-backed-policy-examples"></a>ADMX-backed policy examples
+
+The following examples describe how to set a MDM policy that is defined by an ADMX template.
+
 ### <a href="" id="enabling-a-policy"></a>Enabling a policy
 
 **Payload**
-
 ```XML
 <enabled/>
 <data id="L_ServerAddressInternal_VALUE" value="TextValue1"/>
 <data id="L_ServerAddressExternal_VALUE" value="TextValue2"/>
-Request Syncml
+```
+
+**Request Syncml**
+```XML
 <SyncML xmlns="SYNCML:SYNCML1.1">
   <SyncBody>
     <Replace>
@@ -406,7 +412,9 @@ Request Syncml
 ### <a href="" id="disabling-a-policy"></a>Disabling a policy
 
 **Payload**
+```XML
 <disabled/>
+```
 
 **Request SyncML**
 ```XML
@@ -438,6 +446,7 @@ Request Syncml
 ### <a href="" id="setting-a-policy-to-not-configured"></a>Setting a policy to not configured
 
 **Payload**
+
 (None)
 
 **Request SyncML**
@@ -461,8 +470,3 @@ Request Syncml
 ```XML
 <Status><CmdID>2</CmdID><MsgRef>1</MsgRef><CmdRef>105</CmdRef><Cmd>Delete</Cmd><Data>200</Data></Status>
 ```
-
-Avoid writing data to system registry locations
-
-During ADMX Ingestion (when then MDM server pushes the ADMX file to the client), the registry keys that each policy writes to are checked to prevent overwriting known system registry keys or registry keys that are used by existing inbox policies. Doing so will also avoid security concerns over opening the whole registry. Currently, the ingested policies are not allowed to write to locations within the System, Software\Microsoft and Software\Policies\Microsoft keys.
-
