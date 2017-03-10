@@ -16,8 +16,6 @@ ms.sitesec: msdn
 
 Included in the [Windows Assessment and Deployment Kit (Windows ADK)](http://go.microsoft.com/fwlink/p/?LinkId=526740), Windows Performance Analyzer (WPA) is a tool that creates graphs and data tables of Event Tracing for Windows (ETW) events that are recorded by Windows Performance Recorder (WPR), Xperf, or an assessment that is run in the Assessment Platform. WPA can open any event trace log (ETL) file for analysis.
 
-You can download WPA by visiting [Windows Performance Analyzer](https://insider.windows.com/).
-
 Here are some videos that show you how to get started with WPA:
 
 <iframe src="https://hubs-video.ssl.catalog.video.msn.com/embed/ae6bad2b-184d-462c-b64e-e8b49dccf89d/IA?csid=ux-en-us&MsnPlayerLeadsWith=html&PlaybackMode=Inline&MsnPlayerDisplayShareBar=false&MsnPlayerDisplayInfoButton=false&iframe=true&QualityOverride=HD" width="720" height="405" allowFullScreen="true" frameBorder="0" scrolling="no"></iframe>
