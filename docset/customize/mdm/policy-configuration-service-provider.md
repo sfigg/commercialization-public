@@ -78,17 +78,17 @@ The following diagram shows the Policy configuration service provider in tree fo
 
 <p style="margin-left: 20px">Supported operation is Get.
 
-<a href="" id="policy-result-areaname-policyname"></a>**Policy/ConfigOperations/ADMXInstall/****_<AppName>_**  
+<a href="" id="policy-result-areaname-policyname"></a>**Policy/ConfigOperations/ADMXInstall/****_AppName_**  
 <p style="margin-left: 20px">The name of the ADMX file to use for importing ADMX-backed policies or preferences.
 
 <p style="margin-left: 20px">Supported operation is Get.
 
-<a href="" id="policy-result-areaname-policyname"></a>**Policy/ConfigOperations/ADMXInstall/****_<AppName>/<Policy> or <Preference>_**  
+<a href="" id="policy-result-areaname-policyname"></a>**Policy/ConfigOperations/ADMXInstall/****_AppName/Policy or Preference_**  
 <p style="margin-left: 20px">The name of the ADMX-backed policy or preference to import.
 
 <p style="margin-left: 20px">Supported operation is Get.
 
-<a href="" id="policy-result-areaname-policyname"></a>**Policy/ConfigOperations/ADMXInstall/****_<AppName>/<Policy> or <Preference>/<UniqueID>_**  
+<a href="" id="policy-result-areaname-policyname"></a>**Policy/ConfigOperations/ADMXInstall/****_AppName/Policy or Preference/UniqueID_**  
 <p style="margin-left: 20px">The ID of the ADMX-backed policy or preference to import.
 
 <p style="margin-left: 20px">Supported operation is Get.
