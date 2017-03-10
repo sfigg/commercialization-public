@@ -105,7 +105,7 @@ The following is a list of functions performed by the HealthAttestation CSP:
 <ul>
 <li>Offered to Windows Server 2016 customers with no additional licensing cost (no added licensing cost for enabling/running DHA-Service)</li>
 <li>Supported by 1st and 3rd party DHA-Enabled device management solution providers that support on premise and hybrid (Cloud + OnPrem) hardware attestation scenarios </li>
-<li><li><p>Accessible to all enterprise managed devices via following:</p>
+<li><p>Accessible to all enterprise managed devices via following:</p>
 <ul>
 <li>FQDN = (enterprise assigned)</li>
 <li>Port = (enterprise assigned)</li>
@@ -218,12 +218,12 @@ The following diagram shows the HealthAttestation configuration service provider
 <p style="margin-left: 20px">Value type is integer, the minimum value is - 2,147,483,648 and the maximun value is 2,147,483,647. The supported operation is Get.</p>
 
 <a href="" id="hasendpoint"></a>**HASEndpoint** (Optional)
-<p style="margin-left: 20px">Added in Windows 10, version 1703. Identifies the fully qualified domain name (FQDN) of the DHA-Service that is assigned to perform attestation. If an FQDN is not assigned, DHA-Cloud (Microsoft owned and operated cloud service) will be used as the default attestation service.</p>
+<p style="margin-left: 20px">Identifies the fully qualified domain name (FQDN) of the DHA-Service that is assigned to perform attestation. If an FQDN is not assigned, DHA-Cloud (Microsoft owned and operated cloud service) will be used as the default attestation service.</p>
 
 <p style="margin-left: 20px">Value type is string. The supported operations are Get and Replace. The default value is has.spserv.microsoft.com.</p>
 
 <a href="tpmreadystatus" id=""></a>**TpmReadyStatus** (Required)
-<p style="margin-left: 20px">Added in Windows 10, version 1703. Returns a bitmask of information describing the state of TPM. It indicates whether the TPM of the device is in a ready and trusted state.</p>
+<p style="margin-left: 20px">Added in Windows 10, version 1607 March service release. Returns a bitmask of information describing the state of TPM. It indicates whether the TPM of the device is in a ready and trusted state.</p>
 <p style="margin-left: 20px">Value type is integer. The supported operation is Get.</p>
 
 ## **DHA-CSP integration steps**
@@ -233,12 +233,13 @@ The following list of validation and development tasks are required for integrat
 
 
 1.  [Verify HTTPS access](#verify-access)
-2.  [Instruct client to prepare DHA-data for verification](#prepare-health-data)
-3.  [Take action based on the clients response](#take-action-client-response)
-4.  [Instruct the client to forward DHA-data for verification](#forward-health-attestation)
-5.  [Post DHA-data to DHA-service](#foward-data-to-has)
-6.  [Receive response DHA-service](#receive-has-response)
-7.  [Take appropriate policy action based on evaluation results](#take-policy-action)
+2.  [Assign an enterprise trusted DHA-Service](#assign-trusted-dha-service)
+3.  [Instruct client to prepare DHA-data for verification](#prepare-health-data)
+4.  [Take action based on the clients response](#take-action-client-response)
+5.  [Instruct the client to forward DHA-data for verification](#forward-health-attestation)
+6.  [Post DHA-data to DHA-service](#foward-data-to-has)
+7.  [Receive response DHA-service](#receive-has-response)
+8.  [Take appropriate policy action based on evaluation results](#take-policy-action)
 
 Each step is described in detail in the following sections of this topic.
 
@@ -374,7 +375,7 @@ Here is a sample alert that is issued by DHA_CSP:
             </Item>
         </Alert>
 ```
-- If the response to the status node is not 0, 1 or 3 then trouble shoot the issue. For the complete list of status see [Device HealthAttestation CSP status and error codes](#device-healthattestation-csp-status-and-error-codes).
+- If the response to the status node is not 0, 1 or 3, then troubleshoot the issue. For the complete list of status codes see [Device HealthAttestation CSP status and error codes](#device-healthattestation-csp-status-and-error-codes).
 
 ## <a href="" id="forward-health-attestation"></a>**Step 5: Instruct the client to forward health attestation data for verification**
 
@@ -708,7 +709,7 @@ Each of these are described in further detail in the following sections, along w
 **TPMVersion**
 
 <p style="margin-left: 20px">This attribute identifies the version of the TPM that is running on the attested device.</p>
-<p style="margin-left: 20px">TPMVersion node provides to replies "1" and "2:</p>
+<p style="margin-left: 20px">TPMVersion node provides to replies "1" and "2":</p>
 <ul>
 <li>1 means TPM specification version 1.2</li>
 <li>2 means TPM specification version 2.0</li>
@@ -778,400 +779,6 @@ Each of these are described in further detail in the following sections, along w
 
 - Disallow all access
 - Direct the device to an enterprise honeypot, to further monitor the device's activities.
-
-
-## **Additional Examples**
-
-
-The following are additional code examples to assist you in integrating Health Attestation into your enterprise
-
-### MDM server starts DHA session
-
-``` syntax
-<?xml version="1.0" encoding="utf-8"?>
-<SyncML xmlns="SYNCML:SYNCML1.2">
-    <SyncHdr>
-        <VerDTD>1.2</VerDTD>
-        <VerProto>DM/1.2</VerProto> 
-        <SessionID>22</SessionID>
-        <MsgID>1</MsgID>
-        <Target>
-            <LocURI>urn:uuid:05869F53-9265-5404-95DD-3BE6F34873A3</LocURI>
-        </Target>
-        <Source>
-            <LocURI>https://manage.contoso.com/DeviceGateway/WindowsPhone10.ashx</LocURI>
-        </Source>
-    </SyncHdr>
-    <SyncBody>
-        <Status>
-            <CmdID>1</CmdID>
-            <MsgRef>1</MsgRef>
-            <CmdRef>0</CmdRef>
-            <Cmd>SyncHdr</Cmd>
-            <Data>212</Data>
-        </Status>
-        <Replace>
-            <CmdID>2</CmdID>
-            <Item>
-                <Target>
-                    <LocURI>./Vendor/MSFT/HealthAttestation/ForceRetrieve</LocURI>
-                </Target>
-                <Meta>
-                    <Format xmlns="syncml:metinf">bool</Format>
-                    <Type xmlns="syncml:metinf">text/plain</Type>
-                </Meta>
-                <Data>true</Data>
-            </Item>
-        </Replace>
-        <Replace>
-            <CmdID>3</CmdID>
-            <Item>
-                <Target>
-                    <LocURI>./Vendor/MSFT/HealthAttestation/Nonce</LocURI>
-                </Target>
-                <Data>4D534E4F4E434532</Data>
-            </Item>
-        </Replace>
-        <Exec>
-            <CmdID>4</CmdID>
-            <Item>
-                <Target>
-                    <LocURI>./Vendor/MSFT/HealthAttestation/VerifyHealth</LocURI>
-                </Target>
-            </Item>
-        </Exec>
-        <Get>
-            <CmdID>5</CmdID>
-            <Item>
-                <Target>
-                    <LocURI>./Vendor/MSFT/HealthAttestation/Status</LocURI>
-                </Target>
-            </Item>
-        </Get>
-        <Final />
-    </SyncBody>
-</SyncML>
-```
-
-### Client device response
-
-``` syntax
-<SyncML xmlns="SYNCML:SYNCML1.2">
-    <SyncHdr>
-        <VerDTD>1.2</VerDTD>
-        <VerProto>DM/1.2</VerProto>
-        <SessionID>22</SessionID>
-        <MsgID>2</MsgID>
-        <Target>
-            <LocURI>https://manage.contoso.com/DeviceGateway/WindowsPhone10.ashx</LocURI>
-        </Target>
-        <Source>
-            <LocURI>urn:uuid:05869F53-9265-5404-95DD-3BE6F34873A3</LocURI>
-            </Source>
-    </SyncHdr>
-    <SyncBody>
-        <Status>
-        <CmdID>1</CmdID>
-        <MsgRef>1</MsgRef>
-        <CmdRef>0</CmdRef>
-        <Cmd>SyncHdr</Cmd>
-        <Chal>
-            <Meta>
-                <Format xmlns="syncml:metinf">b64</Format>
-                <Type xmlns="syncml:metinf">syncml:auth-md5</Type>
-                <NextNonce xmlns="syncml:metinf">hwY5aFu84FD1KDckqpqNxY9WBOJCBDdSm9aXL2nn8Vs=</NextNonce>
-            </Meta>
-        </Chal>
-        <Data>200</Data>
-        </Status>
-        <Status>
-            <CmdID>2</CmdID>
-            <MsgRef>1</MsgRef>
-            <CmdRef>2</CmdRef>
-            <Cmd>Replace</Cmd>
-            <Data>200</Data>
-        </Status>
-        <Status>
-            <CmdID>3</CmdID>
-            <MsgRef>1</MsgRef>
-            <CmdRef>3</CmdRef>
-            <Cmd>Replace</Cmd>
-            <Data>200</Data>
-        </Status>
-        <Status>
-            <CmdID>4</CmdID>
-            <MsgRef>1</MsgRef>
-            <CmdRef>4</CmdRef>
-            <Cmd>Exec</Cmd>
-            <Data>200</Data>
-        </Status>
-        <Status>
-            <CmdID>5</CmdID>
-            <MsgRef>1</MsgRef>
-            <CmdRef>5</CmdRef>
-            <Cmd>Get</Cmd>
-            <Data>200</Data>
-        </Status>
-        <Results>
-            <CmdID>6</CmdID>
-            <MsgRef>1</MsgRef>
-            <CmdRef>5</CmdRef>
-            <Item>
-                <Source>
-                    <LocURI>./Vendor/MSFT/HealthAttestation/Status</LocURI>
-                </Source>
-                <Meta>
-                    <Format xmlns="syncml:metinf">int</Format>
-                </Meta>
-                <Data>0</Data>
-            </Item>
-        </Results>
-        <Final/>
-    </SyncBody>
-</SyncML>
-```
-
-### Client device alert
-
-``` syntax
-<SyncML xmlns="SYNCML:SYNCML1.2">
-    <SyncHdr>
-    <VerDTD>1.2</VerDTD>
-    <VerProto>DM/1.2</VerProto>
-    <SessionID>23</SessionID
-    ><MsgID>1</MsgID>
-    <Target>
-        <LocURI>https://manage.contoso.com/DeviceGateway/WindowsPhone10.ashx</LocURI>
-    </Target>
-    <Source>
-        <LocURI>urn:uuid:05869F53-9265-5404-95DD-3BE6F34873A3</LocURI>
-        <LocName>dummy</LocName>
-    </Source>
-    <Cred>
-        <Meta>
-            <Format xmlns="syncml:metinf">b64</Format>
-            <Type xmlns="syncml:metinf">syncml:auth-md5</Type>
-        </Meta>
-        <Data>EVEkoFZcVgPM+ESnu9IC0g==</Data>
-    </Cred>
-    </SyncHdr>
-    <SyncBody>
-        <Alert>
-            <CmdID>2</CmdID>
-            <Data>1201</Data>
-        </Alert>
-        <Alert>
-            <CmdID>3</CmdID>
-            <Data>1224</Data>
-            <Item>
-                <Meta>
-                    <Type xmlns="syncml:metinf">com.microsoft/MDM/LoginStatus</Type>
-                </Meta>
-                <Data>user</Data>
-            </Item>
-        </Alert>
-        <Alert>
-            <CmdID>4</CmdID>
-            <Data>1226</Data>
-            <Item>
-                <Source>
-                    <LocURI>./Vendor/MSFT/HealthAttestation/VerifyHealth</LocURI>
-                </Source>
-                <Meta>
-                    <Type xmlns="syncml:metinf">com.microsoft.mdm:HealthAttestation.Result</Type>
-                    <Format xmlns="syncml:metinf">int</Format>
-                </Meta>
-                <Data>3</Data>
-            </Item>
-        </Alert>
-        <Replace>
-            <CmdID>5</CmdID>
-            <Item>
-                <Source>
-                    <LocURI>./DevInfo/DevId</LocURI>
-                </Source>
-                <Data>urn:uuid:05869F53-9265-5404-95DD-3BE6F34873A3</Data>
-            </Item>
-            <Item>
-                <Source>
-                    <LocURI>./DevInfo/Man</LocURI>
-                </Source>
-                <Data>NOKIA</Data>
-            </Item>
-            <Item>
-                <Source>
-                    <LocURI>./DevInfo/Mod</LocURI>
-                </Source>
-                <Data>id313</Data>
-            </Item>
-            <Item>
-                <Source>
-                    <LocURI>./DevInfo/DmV</LocURI>
-                </Source>
-                <Data>1.3</Data>
-            </Item>
-            <Item>
-                <Source>
-                    <LocURI>./DevInfo/Lang</LocURI>
-                </Source>
-                <Data>en-US</Data>
-            </Item>
-        </Replace>
-        <Final/>
-    </SyncBody>
-</SyncML>
-```
-
-### Server request for DHA-Data
-
-``` syntax
-<?xml version="1.0" encoding="utf-8"?>
-<SyncML xmlns="SYNCML:SYNCML1.2">
-    <SyncHdr>
-        <VerDTD>1.2</VerDTD>
-        <VerProto>DM/1.2</VerProto>
-        <SessionID>23</SessionID>
-        <MsgID>1</MsgID>
-        <Target>
-            <LocURI>urn:uuid:05869F53-9265-5404-95DD-3BE6F34873A3</LocURI>
-        </Target>
-        <Source>
-            <LocURI>https://manage.contoso.com/DeviceGateway/WindowsPhone10.ashx</LocURI>
-        </Source>
-    </SyncHdr>
-    <SyncBody>
-        <Status>
-            <CmdID>1</CmdID>
-            <MsgRef>1</MsgRef>
-            <CmdRef>0</CmdRef>
-            <Cmd>SyncHdr</Cmd>
-            <Data>212</Data>
-        </Status>
-        <Get>
-            <CmdID>2</CmdID>
-            <Item>
-                <Target>
-                    <LocURI>./Vendor/MSFT/HealthAttestation/Certificate</LocURI>
-                </Target>
-            </Item>
-        </Get>
-        <Final />
-    </SyncBody>
-</SyncML>
-```
-
-### Client device response
-
-``` syntax
-<SyncML xmlns="SYNCML:SYNCML1.2">
-    <SyncHdr>
-        <VerDTD>1.2</VerDTD>
-        <VerProto>DM/1.2</VerProto>
-        <SessionID>23</SessionID>
-        <MsgID>2</MsgID>
-        <Target>
-            <LocURI>https://manage.contoso.com/DeviceGateway/WindowsPhone10.ashx</LocURI>
-        </Target>
-        <Source>
-            <LocURI>urn:uuid:05869F53-9265-5404-95DD-3BE6F34873A3</LocURI>
-        </Source>
-    </SyncHdr>
-    <SyncBody>
-        <Status>
-            <CmdID>1</CmdID>
-            <MsgRef>1</MsgRef>
-            <CmdRef>0</CmdRef>
-            <Cmd>SyncHdr</Cmd>
-            <Chal>
-                <Meta>
-                    <Format xmlns="syncml:metinf">b64</Format>
-                    <Type xmlns="syncml:metinf">syncml:auth-md5</Type>
-                    <NextNonce xmlns="syncml:metinf">UDn9RVsc/gn6oHfgxnCg4aAS5ZmJaKEGtqRM7ZBEFrs=</NextNonce>
-                </Meta>
-            </Chal>
-            <Data>200</Data>
-        </Status>
-        <Status>
-            <CmdID>2</CmdID>
-            <MsgRef>1</MsgRef>
-            <CmdRef>2</CmdRef>
-            <Cmd>Get</Cmd>
-            <Data>200</Data>
-        </Status>
-        <Results>
-            <CmdID>3</CmdID>
-            <MsgRef>1</MsgRef>
-            <CmdRef>2</CmdRef>
-            <Item>
-                <Source>
-                    <LocURI>./Vendor/MSFT/HealthAttestation/Certificate</LocURI>
-                </Source>
-                <Meta>
-                    <Format xmlns="syncml:metinf">b64</Format>
-                </Meta>
-                <Data>PD94bWwgdmVyc2--------------khSb1EyVnlkR2xtYVdOaGRHVSs8L0hlYWx0aENlcnRpZmljYXRlQmxvYj48L0hlYWx0aENlcnRpZmljYXRlVmFsaWRhdGlvblJlcXVlc3Q+</Data>
-            </Item>
-        </Results>
-        <Final/>
-    </SyncBody>
-</SyncML>
-```
-
-### MDM server post verification request
-
-``` syntax
-<?xml version='1.0' encoding='utf-8'?>
-
-<HealthCertificateValidationRequest ProtocolVersion='1' xmlns='http://schemas.microsoft.com/windows/security/healthcertificate/validation/request/v1'>
-
-<Nonce>
-4D534E4F4E434532
-</Nonce>
-
-<Claims>
-AQAAAAQAAABtAAAABgEAACgAAAD/VENHgBgAIgAL5NXQT5b983GujHLIAbEYHIOU5xHu4tTV5vq3vQ0MxhMACE1TTk9OQ0UyAAAAAGDPwjbROm7QoV5GRQGQT1xx/2hm7gAAAAEABAOAEAAAFIuoHeCbQ7+AeTBtU8qHK3R/JmmvABQABAEAd4rQy1BtnDHn6SUCKWvAnSY9viOfwkP16mmRelhXPAPS2FCCCnXKNRSfV94WJKmaZK5oiM9061XJDK7klzo4ketxm47djaDVi+Z8i5gIr99sf2FI9gClbJuAhqoi8nzv1dF4xQ6rAC3i+q7kGMhfbqdJl0KULubXpumbYCNqoBY7o8H6GqQZyyambuN1iS9KLnMJTjyW4OINbWDalWk9sXcGFe/JpL+9vdqugY1Q/x40I1gfk0u3ZGlh3E/t/7cyPTDMDXBD3L9kdurDkadg5LSlhVAyEZ+FoHnN3BEQaB4393L9idTHo1Py5VZ+63yqV7dqmWzoZmo36m8s2QzDxEcputzi0GJJZq9uz7k6UCn54YHTpyfGtXk/T6lrf+mbOCN5q8fKSYI=
-</Claims>
-
-<HealthCertificateBlob>
-PD94bWwgdmVyc2lvbj0iMS4wIj8----------------C9JVj4NCjwvT3BhcXVlSGVhbHRoQ2VydGlmaWNhdGU+
-</HealthCertificateBlob>
-
-</HealthCertificateValidationRequest>
-```
-
-### Response Report
-
-``` syntax
-<?xml version="1.0"?>
-
-<HealthCertificateValidationResponse xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ErrorCode="0" xmlns="http://schemas.microsoft.com/windows/security/healthcertificate/validation/response/v1">
-
-  <HealthCertificateProperties>
-
-    <Issued>2015-05-17T08:10:02.1739893Z</Issued>
-    <AIKPresent>false</AIKPresent>
-    <ResetCount>3510267600</ResetCount>
-    <RestartCount>2707310149</RestartCount>
-    <DEPPolicy>0</DEPPolicy>
-    <BitlockerStatus>1</BitlockerStatus>
-    <BootManagerRevListVersion>0</BootManagerRevListVersion>
-    <CodeIntegrityRevListVersion>0</CodeIntegrityRevListVersion>
-    <SecureBootEnabled>true</SecureBootEnabled>
-    <BootDebuggingEnabled>false</BootDebuggingEnabled>
-    <OSKernelDebuggingEnabled>false</OSKernelDebuggingEnabled>
-    <CodeIntegrityEnabled>true</CodeIntegrityEnabled>
-    <TestSigningEnabled>false</TestSigningEnabled>
-    <SafeMode>false</SafeMode>
-    <WinPE>false</WinPE>
-    <ELAMDriverLoaded>false</ELAMDriverLoaded>
-    <VSMEnabled>false</VSMEnabled>
-    <PCR0>679D23E02A89DB5C0F3C3699EB7BC3CB4C2DA200</PCR0>
-    <SBCPHash>50D1525F42640CEC4895B0CC97ECCDF1A3D429263A45BCE2BE453B13C04131F8</SBCPHash>
-
-  </HealthCertificateProperties>
-
-</HealthCertificateValidationResponse>
-```
 
 
 ## **Device HealthAttestation CSP status and error codes**
