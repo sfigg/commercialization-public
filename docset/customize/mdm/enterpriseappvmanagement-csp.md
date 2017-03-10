@@ -118,7 +118,7 @@ The following diagram shows the EnterpriseAppVManagement configuration service p
 <p style="margin-left: 20px">Used to perform App-V synchronization.</p>
 
 **AppVPublishing/Sync/PublishXML**  
-<p style="margin-left: 20px">Used to execute the App-V synchronization using the Publishing protocol.</p>
+<p style="margin-left: 20px">Used to execute the App-V synchronization using the Publishing protocol. For more information about the protocol see [[MS-VAPR]: Virtual Application Publishing and Reporting (App-V) Protocol](https://msdn.microsoft.com/en-us/library/mt739986.aspx).</p>
 <p style="margin-left: 20px">Supported operations are Get, Delete, and Execute.</p>
 
 
@@ -130,5 +130,5 @@ The following diagram shows the EnterpriseAppVManagement configuration service p
 
 **AppVDynamicPolicy/_ConfigurationId_/Policy**  
 <p style="margin-left: 20px">XML for App-V Policy Configuration documents for publishing packages.</p>
-<p style="margin-left: 20px">Supported operations are Add, Get, Delete, and Replace.</p>
+<p style="margin-left: 20px">Value type is xml. Supported operations are Add, Get, Delete, and Replace.</p>
 
