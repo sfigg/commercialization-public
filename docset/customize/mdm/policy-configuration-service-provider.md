@@ -7315,7 +7315,7 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 > [!NOTE]
 > This policy requires reboot to take effect.
 
-<p style="margin-left: 20px">Added in Windows 10, version 1703. Allows IT Admins to configure Start by allowing pinning of weblink tiles.  This policy imports .website files into ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\Policy Web Shortcuts which allows the StartLayout policy to pin weblink tiles that tie to .website files.
+<p style="margin-left: 20px">Added in Windows 10, version 1703. This policy imports Edge assets (e.g. .png/.jpg files) for secondary tiles into its local app data path which allows the StartLayout policy to pin Edge secondary tiles as weblink that tie to the image asset files.
 
 <p style="margin-left: 20px">The value set for this policy is an XML string containing weblink shortcuts.  An example XML string is provided in the [Microsoft Edge assets example](#microsoft-edge-assets-example) later in this topic.
 
