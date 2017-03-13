@@ -7320,7 +7320,7 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 > [!IMPORTANT]
 > Please note that the import happens only when StartLayout policy is changed. So it is better to always change ImportEdgeAssets policy at the same time as StartLayout policy whenever there are Edge secondary tiles to be pinned from StartLayout policy.
 
-<p style="margin-left: 20px">The value set for this policy is an XML string containing weblink shortcuts.  An example XML string is provided in the [Microsoft Edge assets example](#microsoft-edge-assets-example) later in this topic.
+<p style="margin-left: 20px">The value set for this policy is an XML string containing Edge assets.  An example XML string is provided in the [Microsoft Edge assets example](#microsoft-edge-assets-example) later in this topic.
 
 <p style="margin-left: 20px">To validate on Desktop, do the following:
 
