@@ -5019,7 +5019,10 @@ Employees cannot remove these search engines, but they can set any one as the de
 
 <p style="margin-left: 20px">Allows settings for ADMX files for Win32 apps to be delivered directly to your device and processed into new ADMX-backed policies or preferences. By using ADMXInstall, you can add ADMX-backed polices for those Win32 apps that have been added between OS releases. ADMX-backed policies are imported to your device by using the Policy CSP URI: `./Vendor/MSFT/Policy/ConfigOperations/ADMXInstall`. Each ADMX-backed policy or preference that is added is assigned a unique ID. For more information about adding ADMX-backed policies, see [Adding ADMX-backed policies](adding-admx-backed-policies.md).
 
-ADMX files that have been installed by using **ConfigOperations/ADMXInstall** can later be deleted by using the URI delete operation. Deleting an ADMX file will delete the ADMX file from disk, remove the metadata from the ADMXdefault registry hive, and delete all the policies that were set from the file. The MDM server can also delete all ADMX policies that are tied to a particular app by calling delete on the URI, `./Vendor/MSFT/Policy/ConfigOperations/ADMXInstall/{AppName}`.
+> [!NOTE]
+> The OPAQ settings that are managed by Microsoft Office tools are not supported by MDM. For more information about Microsoft Office tools, see [Office 365](https://products.office.com/en-us/business/enterprise-productivity-tools).
+
+<p style="margin-left: 20px">ADMX files that have been installed by using **ConfigOperations/ADMXInstall** can later be deleted by using the URI delete operation. Deleting an ADMX file will delete the ADMX file from disk, remove the metadata from the ADMXdefault registry hive, and delete all the policies that were set from the file. The MDM server can also delete all ADMX policies that are tied to a particular app by calling delete on the URI, `./Vendor/MSFT/Policy/ConfigOperations/ADMXInstall/{AppName}`.
 
 <p style="margin-left: 20px">The following list shows the supported values:
 
