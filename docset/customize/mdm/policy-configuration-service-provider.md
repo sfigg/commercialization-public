@@ -7317,13 +7317,17 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 
 <p style="margin-left: 20px">Added in Windows 10, version 1703. This policy imports Edge assets (e.g. .png/.jpg files) for secondary tiles into its local app data path which allows the StartLayout policy to pin Edge secondary tiles as weblink that tie to the image asset files.
 
+> [!IMPORTANT]
+> Please note that the import happens only when StartLayout policy is changed. So it is better to always change ImportEdgeAssets policy at the same time as StartLayout policy whenever there are Edge secondary tiles to be pinned from StartLayout policy.
+
 <p style="margin-left: 20px">The value set for this policy is an XML string containing weblink shortcuts.  An example XML string is provided in the [Microsoft Edge assets example](#microsoft-edge-assets-example) later in this topic.
 
 <p style="margin-left: 20px">To validate on Desktop, do the following:
 
-1.   Set policy with an XML for weblink shortcuts.
-2.   Sign out/in.
-3.   Verify that all weblink shortcuts defined in XML show up in Start->Policy Web Shortcuts in the app list menu.
+1.   Set policy with an XML for Edge assets.
+2.   Set StartLayout policy to anything so that it would trigger the Edge assets import.
+3.   Sign out/in.
+4.   Verify that all Edge assets defined in XML show up in %LOCALAPPDATA%\Packages\Microsoft.MicrosoftEdge_8wekyb3d8bbwe\LocalState path.
 
 <a href="" id="start-nopinningtotaskbar"></a>**Start/NoPinningToTaskbar**  
 
