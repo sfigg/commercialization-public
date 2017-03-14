@@ -1820,7 +1820,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Mobile</p></td>
 		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Mobile Enterprise</p></td>
 		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>IoT Core</p></td>
-		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>EAS</p></td></tr>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"<p>EAS</p></td></tr>
 	<tr>
 		<td style="vertical-align:top"><a href="#lockdown-allowedgeswipe">LockDown/AllowEdgeSwipe</a></td>
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Home</p></td>
