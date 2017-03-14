@@ -9,12 +9,14 @@ ms.assetid: E6BC6B0D-1F16-48A5-9AC4-76D69A7EDDA6
 
 # WindowsLicensing CSP
 
+> [!WARNING]
+> Some information relates to prereleased product, which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here. 
 
 The WindowsLicensing configuration service provider is designed for licensing related management scenarios. Currently the scope is limited to edition upgrades of Windows 10 desktop and mobile devices, such as Windows 10 Pro to Windows 10 Enterprise. In addition, this CSP provides the capability to activate or change the product key of Windows 10 desktop devices.
 
 The following diagram shows the WindowsLicensing configuration service provider in tree format.
 
-![windowslicensing csp diagram](images/provisioning-csp-windowslicensing-th2.png)
+![windowslicensing csp diagram](images/provisioning-csp-windowslicensing.png)
 
 <a href="" id="--device-vendor-msft-windowslicensing"></a>**./Device/Vendor/MSFT/WindowsLicensing**  
 This is the root node for the WindowsLicensing configuration service provider.
@@ -121,13 +123,18 @@ The data type is a chr.
 The supported operation is Exec.
 
 <a href="" id="changeproductkey"></a>**ChangeProductKey**  
+<<<<<<< HEAD
 Added in Windows 10, version 1703. Installs a product key for Windows 10 desktop devices. Does not reboot.
+=======
+Installs a product key for Windows 10 desktop devices. Does not reboot.
+>>>>>>> 9797edf... task 10803300: WindowsLicensing CSP - add new nodes & settings for RS2
 
 The data type is a chr.
 
 The supported operation is Execute.
 
 <a href="" id="subscriptions"></a>**Subscriptions**  
+<<<<<<< HEAD
 Added in Windows 10, version 1607. Node for subscriptions.
 
 <a href="" id="subscriptions-subscriptionid"></a>**Subscriptions/SubscriptionId**  
@@ -135,19 +142,37 @@ Added in Windows 10, version 1607. Node for subscription IDs.
 
 <a href="" id="subscriptions-subscriptionid-status"></a>**Subscriptions/SubscriptionId/Status**  
 Added in Windows 10, version 1607. Returns the status of the subscription.
+=======
+Node for subscriptions.
+
+<a href="" id="subscriptions-subscriptionid"></a>**Subscriptions/SubscriptionId**  
+Node for subscription IDs.
+
+<a href="" id="subscriptions-subscriptionid-status"></a>**Subscriptions/SubscriptionId/Status**  
+Returns the status of the subscription.
+>>>>>>> 9797edf... task 10803300: WindowsLicensing CSP - add new nodes & settings for RS2
 
 The data type is an Int.
 
 The supported operation is Get.
 
 <a href="" id="subscriptions-subscriptionid-name"></a>**Subscriptions/SubscriptionId/Name**  
+<<<<<<< HEAD
 Added in Windows 10, version 1607. Returns the name of the subscription.
+=======
+Returns the name of the subscription.
+>>>>>>> 9797edf... task 10803300: WindowsLicensing CSP - add new nodes & settings for RS2
 
 The data type is a chr.
 
 The supported operation is Get.
 
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 9797edf... task 10803300: WindowsLicensing CSP - add new nodes & settings for RS2
 ## SyncML examples
 
 
