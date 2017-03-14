@@ -20,7 +20,7 @@ application/x-nodemon-sha256
 </type>
 ```
 
-NodeCache will hash values the values and compare with a hash value that was sent down by the server. This supports checking a parent node and its children recursively.
+NodeCache will hash the values and compare with a hash value that was sent down by the server. This supports checking a parent node and its children recursively.
 
 The following diagram shows the NodeCache configuration service provider in tree format.
 
