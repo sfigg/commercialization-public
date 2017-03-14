@@ -747,7 +747,6 @@
 ## [Windows Provisioning framework](https://msdn.microsoft.com/library/windows/hardware/dn898375)
 
 ### [Configure power settings](https://msdn.microsoft.com/library/windows/hardware/mt608264)
-### [Windows Configuration Designer](https://msdn.microsoft.com/library/windows/hardware/dn916113)
 ### [Windows Provisioning settings reference](https://msdn.microsoft.com/library/windows/hardware/dn965990)
 
 ## [Mobile Device Management](customize/mdm/)
