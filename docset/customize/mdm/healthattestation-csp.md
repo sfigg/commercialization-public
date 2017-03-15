@@ -222,7 +222,7 @@ The following diagram shows the HealthAttestation configuration service provider
 
 <p style="margin-left: 20px">Value type is string. The supported operations are Get and Replace. The default value is has.spserv.microsoft.com.</p>
 
-<a href="tpmreadystatus" id=""></a>**TpmReadyStatus** (Required)
+<a href="" id="tpmreadystatus"></a>**TpmReadyStatus** (Required)
 <p style="margin-left: 20px">Added in Windows 10, version 1607 March service release. Returns a bitmask of information describing the state of TPM. It indicates whether the TPM of the device is in a ready and trusted state.</p>
 <p style="margin-left: 20px">Value type is integer. The supported operation is Get.</p>
 
