@@ -68,6 +68,32 @@ The following diagram shows the Policy configuration service provider in tree fo
 
 <p style="margin-left: 20px">Supported operation is Get.
 
+<a href="" id="policy-result"></a>**Policy/ConfigOperations**  
+<p style="margin-left: 20px">Specifies the ConfigOperations policy area.
+
+<p style="margin-left: 20px">Supported operation is Get.
+
+<a href="" id="policy-result-areaname"></a>**Policy/ConfigOperations/ADMXInstall**  
+<p style="margin-left: 20px">The <a href="#configoperations-admxinstall">ConfigOperations/ADMXInstall</a> policy allows you to add ADMX-backed policies or preferences.
+
+<p style="margin-left: 20px">Supported operation is Get.
+
+<a href="" id="policy-result-areaname-policyname"></a>**Policy/ConfigOperations/ADMXInstall/****_AppName_**  
+<p style="margin-left: 20px">The name of the ADMX file to use for importing ADMX-backed policies or preferences.
+
+<p style="margin-left: 20px">Supported operation is Get.
+
+<a href="" id="policy-result-areaname-policyname"></a>**Policy/ConfigOperations/ADMXInstall/****_AppName/Policy or Preference_**  
+<p style="margin-left: 20px">The name of the ADMX-backed policy or preference to import.
+
+<p style="margin-left: 20px">Supported operation is Get.
+
+<a href="" id="policy-result-areaname-policyname"></a>**Policy/ConfigOperations/ADMXInstall/****_AppName/Policy or Preference/UniqueID_**  
+<p style="margin-left: 20px">The ID of the ADMX-backed policy or preference to import.
+
+<p style="margin-left: 20px">Supported operation is Get.
+
+
 ## **Policy Tables**
 
 Some policies are only supported in either Windows 10 for desktop or Windows 10 Mobile. In addition, some policies also have a corresponding Group Policy. The following tables provide this information:
@@ -743,6 +769,17 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png"><p>Mobile Enterprise</p></td>
 		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png"><p>IoT Core</p></td>
 		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png"><p>EAS</p></td></tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#configoperations-admxinstall">ConfigOperations/ADMXInstall</a></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Home</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Pro</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Business</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Enterprise</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Education</p></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Mobile</p></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Mobile Enterprise</p></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>IoT Core</p></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>EAS</p></td></tr>	
 	<tr>
 		<td style="vertical-align:top"><a href="#connectivity-allowbluetooth">Connectivity/AllowBluetooth</a></td>
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Home</p></td>
@@ -4978,6 +5015,20 @@ Employees cannot remove these search engines, but they can set any one as the de
 
 <p style="margin-left: 20px">Most restricted value is 0.
 
+<a href="" id="configoperations-admxinstall"></a>**ConfigOperations/ADMXInstall**  
+
+<p style="margin-left: 20px">Allows settings for ADMX files for Win32 apps to be delivered directly to your device and processed into new ADMX-backed policies or preferences. By using ADMXInstall, you can add ADMX-backed polices for those Win32 apps that have been added between OS releases. ADMX-backed policies are imported to your device by using the Policy CSP URI: `./Vendor/MSFT/Policy/ConfigOperations/ADMXInstall`. Each ADMX-backed policy or preference that is added is assigned a unique ID. For more information about ADMX-backed policies, see [ADMX-backed policies for Win32 apps](admx-backed-policies-for-win32-apps.md).
+
+> [!NOTE]
+> The OPAX settings that are managed by the Microsoft Office Customization Tool are not supported by MDM. For more information about this tool, see [Office Customization Tool](https://technet.microsoft.com/en-us/library/cc179097.aspx).
+
+<p style="margin-left: 20px">ADMX files that have been installed by using **ConfigOperations/ADMXInstall** can later be deleted by using the URI delete operation. Deleting an ADMX file will delete the ADMX file from disk, remove the metadata from the ADMXdefault registry hive, and delete all the policies that were set from the file. The MDM server can also delete all ADMX policies that are tied to a particular app by calling delete on the URI, `./Vendor/MSFT/Policy/ConfigOperations/ADMXInstall/{AppName}`.
+
+<p style="margin-left: 20px">The following list shows the supported values:
+
+-   0 – Not allowed.
+-   1 (default) – Allowed.
+
 <a href="" id="connectivity-allowbluetooth"></a>**Connectivity/AllowBluetooth**  
 <p style="margin-left: 20px">Allows the user to enable Bluetooth or restrict access.
 
@@ -8088,6 +8139,9 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 <a href="" id="update-ignoremoappdownloadlimit"></a>**Update/IgnoreMOAppDownloadLimit**  
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies whether to ignore the MO download limit (allow unlimited downloading) over a cellular network for apps and their updates. If lower-level limits (for example, mobile caps) are required, those limits are controlled by external policies. 
 
+> [!WARNING]
+> Setting this policy might cause devices to incur costs from MO operators.
+
 <p style="margin-left: 20px">The following list shows the supported values:
 
 -   0 (default) – Do not ignore MO download limit for apps and their updates.
@@ -8106,6 +8160,9 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 
 <a href="" id="update-ignoremoupdatedownloadlimit"></a>**Update/IgnoreMOUpdateDownloadLimit**  
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies whether to ignore the MO download limit (allow unlimited downloading) over a cellular network for OS updates. If lower-level limits (for example, mobile caps) are required, those limits are controlled by external policies. 
+
+> [!WARNING]
+> Setting this policy might cause devices to incur costs from MO operators.
 
 <p style="margin-left: 20px">The following list shows the supported values:
 
