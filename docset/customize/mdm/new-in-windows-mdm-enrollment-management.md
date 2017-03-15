@@ -541,6 +541,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>Browser/PreventLiveTileDataCollection</li>
 <li>Browser/SetDefaultSearchEngine</li>
 <li>Browser/SyncFavoritesBetweenIEAndMicrosoftEdge</li>
+<li>ConfigOperations/ADMXInstall</li>
 <li>Connectivity/AllowConnectedDevices</li>
 <li>DeliveryOptimization/DOAllowVPNPeerCaching</li>
 <li>DeliveryOptimization/DOMinBatteryPercentageAllowedToUpload</li>
@@ -948,6 +949,7 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <td style="vertical-align:top"><p>Added the following new policies for Windows 10, version 1703:</p> 
 <ul>
 <li>Accounts/AllowMicrosoftAccountSignInAssistant</li>
+<li>ConfigOperations/ADMXInstall</li>
 <li>Connectivity/AllowConnectedDevices</li>
 <li>Display/TurnOffGdiDPIScalingForApps</li>
 <li>Display/TurnOnGdiDPIScalingForApps</li>
