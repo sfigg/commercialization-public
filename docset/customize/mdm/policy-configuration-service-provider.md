@@ -5017,7 +5017,7 @@ Employees cannot remove these search engines, but they can set any one as the de
 
 <a href="" id="configoperations-admxinstall"></a>**ConfigOperations/ADMXInstall**  
 
-<p style="margin-left: 20px">Allows settings for ADMX files for Win32 apps to be delivered directly to your device and processed into new ADMX-backed policies or preferences. By using ADMXInstall, you can add ADMX-backed polices for those Win32 apps that have been added between OS releases. ADMX-backed policies are imported to your device by using the Policy CSP URI: `./Vendor/MSFT/Policy/ConfigOperations/ADMXInstall`. Each ADMX-backed policy or preference that is added is assigned a unique ID. For more information about adding ADMX-backed policies, see [Adding ADMX-backed policies](adding-admx-backed-policies.md).
+<p style="margin-left: 20px">Allows settings for ADMX files for Win32 apps to be delivered directly to your device and processed into new ADMX-backed policies or preferences. By using ADMXInstall, you can add ADMX-backed polices for those Win32 apps that have been added between OS releases. ADMX-backed policies are imported to your device by using the Policy CSP URI: `./Vendor/MSFT/Policy/ConfigOperations/ADMXInstall`. Each ADMX-backed policy or preference that is added is assigned a unique ID. For more information about ADMX-backed policies, see [ADMX-backed policies for Win32 apps](admx-backed-policies-for-win32-apps.md).
 
 > [!NOTE]
 > The OPAX settings that are managed by the Microsoft Office Customization Tool are not supported by MDM. For more information about this tool, see [Office Customization Tool](https://technet.microsoft.com/en-us/library/cc179097.aspx).
