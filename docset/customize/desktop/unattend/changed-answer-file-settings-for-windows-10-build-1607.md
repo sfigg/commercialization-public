@@ -55,7 +55,7 @@ This topic describes Windows 10, version 1607 answer-file settings that have ch
 <td><p>New. Shows Window Store apps on taskbar.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Microsoft-Windows-Shell-Setup-StartTiles-SquareTiles-SquareTiles-SquareOrDesktopTile7](microsoft-windows-shell-setup-starttiles-squaretiles-squareordesktoptile7.md) thru [Microsoft-Windows-Shell-Setup-StartTiles-SquareTiles-SquareTiles-SquareOrDesktopTile12](microsoft-windows-shell-setup-starttiles-squaretiles-squareordesktoptile12.md)</p></td>
+<td><p>[Microsoft-Windows-Shell-Setup-StartTiles-SquareTiles-SquareTiles-SquareOrDesktopTile7](Microsoft-windows-shell-setup-starttiles-squaretiles-squareordesktoptile7.md) thru [Microsoft-Windows-Shell-Setup-StartTiles-SquareTiles-SquareTiles-SquareOrDesktopTile12](Microsoft-windows-shell-setup-starttiles-squaretiles-squareordesktoptile12.md)</p></td>
 <td><p>Specifies which application appears as a square tile on the <strong>Start</strong> menu, in the given position 7-12.</p></td>
 </tr>
 <tr class="even">
@@ -72,7 +72,7 @@ This topic describes Windows 10, version 1607 answer-file settings that have ch
 <p>If the region of the current user account is among those in the Start Tile regional overrides, you can use this setting. For more information, see [RegionalOverrides](microsoft-windows-shell-setup-starttiles-regionaloverrides.md).</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Microsoft-Windows-Shell-Setup-StartTiles-RegionalOverrides-RegionalOveride-SquareTiles-SquareTiles-SquareorDesktopTile7-AppIdOrPath](Microsoft-Windows-Shell-Setup-StartTiles-RegionalOverrides-RegionalOveride-SquareTiles-SquareTiles-SquareorDesktopTile7-AppIdOrPath-appidorpath.md) thru [Microsoft-Windows-Shell-Setup-StartTiles-RegionalOverrides-RegionalOveride-SquareTiles-SquareTiles-SquareorDesktopTile12-AppIdOrPath](Microsoft-Windows-Shell-Setup-StartTiles-RegionalOverrides-RegionalOveride-SquareTiles-SquareTiles-SquareorDesktopTile12-AppIdOrPath-appidorpath.md)</p></td>
+<td><p>[Microsoft-Windows-Shell-Setup-StartTiles-RegionalOverrides-RegionalOveride-SquareTiles-SquareTiles-SquareorDesktopTile7-AppIdOrPath](Microsoft-Windows-Shell-Setup-StartTiles-RegionalOverrides-RegionalOveride-SquareTiles-SquareTiles-SquareorDesktopTile7-AppIdOrPath.md) thru [Microsoft-Windows-Shell-Setup-StartTiles-RegionalOverrides-RegionalOveride-SquareTiles-SquareTiles-SquareorDesktopTile12-AppIdOrPath](Microsoft-Windows-Shell-Setup-StartTiles-RegionalOverrides-RegionalOveride-SquareTiles-SquareTiles-SquareorDesktopTile12-AppIdOrPath.md)</p></td>
 <td><p>Specifies the <code>AppID</code> of the Windows Store apps, or the path to the desktop apps that appear as square tiles on the <strong>Start</strong> screen.</p></td>
 </tr>
 <tr class="even">
