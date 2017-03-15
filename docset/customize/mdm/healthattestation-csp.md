@@ -475,8 +475,8 @@ The following list of data points are verified by the DHA-Service in DHA-Report 
 - [OSRevListInfo](#osrevlistinfo)
 - [PCR0](#pcr0)
 - [PCRHashAlgorithmID](#pcrhashalgorithmid)
-- [ResetCount](#resetcount)
-- [RestartCount](#)
+- [ResetCount](#resetcount) (TPM 2.0 only)
+- [RestartCount](#) (TPM 2.0 only)
 - [SafeMode](#safemode)
 - [SBCPHash](#sbcphash)
 - [SecureBootEnabled](#securebootenabled)
@@ -649,7 +649,7 @@ Each of these are described in further detail in the following sections, along w
 <a href="" id="healthstatusmismatchflags"></a>**HealthStatusMismatchFlags**
 <p style="margin-left: 20px">HealthStatusMismatchFlags attribute appears if DHA-Service detects an integrity issue (mismatch) in the DHA-Data it receives from device management solutions, for validation.</p>
 
-<p style="margin-left: 20px">n case of a detected issue a list of impacted DHA-report elements will be listed under the HealthStatusMismatchFlags attribute.</p>
+<p style="margin-left: 20px">In case of a detected issue a list of impacted DHA-report elements will be listed under the HealthStatusMismatchFlags attribute.</p>
 
 <p style="margin-left: 20px">If HealthStatusMismatchFlags appears in a DHA-report:</p>
 
@@ -698,7 +698,7 @@ Each of these are described in further detail in the following sections, along w
 <a href="" id="pcrhashalgorithmid"></a>**PCRHashAlgorithmID**
 <p style="margin-left: 20px">This attribute is an informational attribute that identifies the HASH algorithm that was used by TPM; no compliance action required.</p>
 
-<a href="" id="resetcount"></a>**ResetCount**
+<a href="" id="resetcount"></a>**ResetCount** (TPM 2.0 only)
 <p style="margin-left: 20px">This attribute reports the number of times a PC device has hibernated or resumed.</p>
 
 <a href="" id="safemode"></a>**SafeMode**  
