@@ -40,10 +40,6 @@ Information about how to use Windows SIM and other deployment tools is available
 <td><p>[Changed answer file settings for Windows 10 for desktop editions, build 1607](changed-answer-file-settings-for-windows-10-build-1607.md)</p></td>
 <td><p>This topic describes Windows 10, version 1607 answer-file settings that have changed since Windows 10 for desktop editions, Build 1511.</p></td>
 </tr>
-<tr class="odd">
-<td><p>[Changed answer file settings for Windows 10 for desktop editions, build 1511](changed-answer-file-settings-from-windows-8-1.md)</p></td>
-<td><p>This topic describes Windows 10 for desktop editions and Windows Server 2016 answer file settings that have changed since Windows 8.1 Update, Windows 8.1, and Windows Server 2012 R2.</p></td>
-</tr>
 <tr class="even">
 <td><p>[Changed answer file settings for Windows 8.1 and Windows Server 2012 R2](changed-answer-file-settings-from-windows-8-and-windows-server-2012-b-unattend.md)</p></td>
 <td><p>This topic describes Windows 8.1 and Windows Server 2012 R2 answer-file settings that have changed since Windows 8 and Windows Server 2012.</p></td>

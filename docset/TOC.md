@@ -630,7 +630,7 @@
 ##### [Wi-Fi settings: Limited connectivity status](customize/mobile/mcsf/limited-connectivity-status.md)
 ##### [Wi-Fi settings: Wi-Fi always on, always connected](customize/mobile/mcsf/wi-fi-always-on-always-connected.md)
 ##### [Wi-Fi settings: Wi-Fi icon and notifications](customize/mobile/mcsf/wi-fi-icon-and-notifications.md)
-##### [Wi-Fi settings: Wi-Fi Sense](customize/mobile/mcsf/wi-fi-sense.md)
+##### [Wi-Fi settings: Connecting to open Wi-Fi hotspots in Windows 10](customize/mobile/mcsf/wi-fi-hotspots.md)
 ##### [Cellular + SIM settings: Add a suffix to the mobile operator name](customize/mobile/mcsf/add-a-suffix-to-the-mobile-operator-name.md)
 ##### [Cellular + SIM settings: Additional Internet APN settings](customize/mobile/mcsf/additional-internet-apn-settings.md)
 ##### [Cellular + SIM settings: Background cellular data restriction](customize/mobile/mcsf/background-cellular-data-restriction.md)
@@ -747,7 +747,6 @@
 ## [Windows Provisioning framework](https://msdn.microsoft.com/library/windows/hardware/dn898375)
 
 ### [Configure power settings](https://msdn.microsoft.com/library/windows/hardware/mt608264)
-### [Windows Configuration Designer](https://msdn.microsoft.com/library/windows/hardware/dn916113)
 ### [Windows Provisioning settings reference](https://msdn.microsoft.com/library/windows/hardware/dn965990)
 
 ## [Mobile Device Management](customize/mdm/)
