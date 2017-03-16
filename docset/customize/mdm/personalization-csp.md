@@ -36,6 +36,7 @@ The following diagram shows the Personalization configuration service provider i
 <li>4 - Unknown file type.</li>
 <li>5 - Unsupported URL scheme.</li>
 <li>6 - Max retry failed.</li>
+<li>7 - Blocked, SKU not allowed</li>
 </ul>
 <p style="margin-left: 20px">Supporter operation is Get.</p>
 
@@ -56,6 +57,7 @@ The following diagram shows the Personalization configuration service provider i
 <li>4 - Unknown file type.</li>
 <li>5 - Unsupported URL scheme.</li>
 <li>6 - Max retry failed.</li>
+<li>7 - Blocked, SKU not allowed</li>
 </ul>
 <p style="margin-left: 20px">Supporter operation is Get.</p>
 
