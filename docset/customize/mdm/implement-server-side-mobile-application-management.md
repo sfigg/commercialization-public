@@ -129,9 +129,9 @@ In the process of changing MAM enrollment to MDM, MAM policies will be removed f
 
 If the MAM device is properly configured for MDM enrollment, then the Enroll only to device management link will be displayed in **Settings>Accounts>Access work or school**. The user can click on this link, provide their credentials, and the enrollment will be changed to MDM. Their Azure AD account will not be affected.
 
-## Skype for Business Compliance with MAM
+## Skype for Business compliance with MAM
 
-Skype for Business implemented the "LOB Tattoo", which is a resource change that allows unenlightened apps to work with MAM. The following table explains Office release channels and release dates for Skype for Business compliance with MAM feature. 
+Skype for Business implemented the "LOB Tattoo", which is a resource change that allows unenlightened apps to work with MAM. The following table explains Office release channels and release dates for Skype for Business compliance with the MAM feature. 
 
 <table>
 <colgroup>
