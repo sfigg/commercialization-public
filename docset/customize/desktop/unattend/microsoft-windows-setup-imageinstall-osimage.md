@@ -24,10 +24,7 @@ ms.sitesec: msdn
 <col width="50%" />
 </colgroup>
 <tbody>
-<tr class="odd">
-<td><p>[Compact](compact.md)</p></td>
-<td><p>Specifies whether the Windows image should be applied with compression enabled during installation. If set to <strong>true</strong>, files written to the disk during installation are compressed individually, which allows Windows to take up less disk space.</p></td>
-</tr>
+
 <tr class="even">
 <td><p>[InstallFrom](microsoft-windows-setup-imageinstall-osimage-installfrom.md)</p></td>
 <td><p>Specifies the path of the .wim file.</p></td>

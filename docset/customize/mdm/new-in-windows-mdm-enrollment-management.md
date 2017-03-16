@@ -604,6 +604,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <p>Starting in Windows 10, version 1703, Update/UpdateServiceUrl is not supported in Windows 10 Mobile Enteprise and IoT Enterprise</p>
 <p>Starting in Windows 10, version 1703, in Browser/HomePages you can use the "&lt;about:blank&gt;" value if you don’t want to send traffic to Microsoft.</p>
 <p>Starting in Windows 10, version 1703, Start/StartLayout can now be set on a per-device basis in addition to the pre-existing per-user basis.</p>
+<p>Added the ConfigOperations/ADMXInstall node and setting, which is used to ingest ADMX files.</p>
 </td></tr>
 <tr class="odd">
 <td style="vertical-align:top">[DevDetail CSP](devdetail-csp.md)</td>
@@ -962,6 +963,7 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>Update/IgnoreMOAppDownloadLimit</li>
 <li>Update/IgnoreMOUpdateDownloadLimit</li>
 </ul>
+<p>For Windows 10, version 1703, added the ConfigOperations/ADMXInstall node and setting, which is used to ingest ADMX files.</p>
 </td>
 </tr>
 <tr class="even">

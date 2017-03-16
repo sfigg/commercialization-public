@@ -28,7 +28,7 @@ All [RunSynchronous](microsoft-windows-setup-runsynchronous.md) commands run in 
 <tbody>
 <tr class="odd">
 <td><p><em>Path_to_command</em></p></td>
-<td><p>Specifies the path and the file name of the command to run synchronously. The path can be a local path or a Universal Naming Convention (UNC) path. If the path is a UNC path, [Credentials](microsoft-windows-setup-runsynchronousrunsynchronouscommandcredentials.md) must be specified.</p>
+<td><p>Specifies the path and the file name of the command to run synchronously. The path can be a local path or a Universal Naming Convention (UNC) path. If the path is a UNC path, [Credentials](microsoft-windows-setup-runsynchronous-runsynchronouscommand-credentials.md) must be specified.</p>
 <p><em>Path_to_command</em> is a string.</p></td>
 </tr>
 </tbody>
