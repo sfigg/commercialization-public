@@ -114,6 +114,9 @@ MAM policy syncs are modeled after MDM. The MAM client uses an Azure AD token to
 
 Windows does not support applying both MAM and MDM policies to the same devices. If configured by the admin, a user can change his MAM enrollment to MDM.
 
+> [!Note]
+> When users upgrade from MAM to MDM on Windows Home edition, they lose access to WIP. On the Home edition, we do not recommend pushing MDM policies to enable users to upgrade.
+
 To configure MAM device for MDM enrollment, the admin needs to configure the MDM Discovery URL in the DMClient CSP. This URL will be used for MDM enrollment.
 
 In the process of changing MAM enrollment to MDM, MAM policies will be removed from the device after MDM policies have been successfully applied. Normally when WIP policies are removed from the device, the user’s access to WIP-protected documents is revoked (selective wipe) unless EDP CSP RevokeOnUnenroll is set to false. To prevent selective wipe on enrollment change from MAM to MDM, the admin needs to ensure that:
@@ -125,3 +128,45 @@ In the process of changing MAM enrollment to MDM, MAM policies will be removed f
 </ol>
 
 If the MAM device is properly configured for MDM enrollment, then the Enroll only to device management link will be displayed in **Settings>Accounts>Access work or school**. The user can click on this link, provide their credentials, and the enrollment will be changed to MDM. Their Azure AD account will not be affected.
+
+## Skype for Business compliance with MAM
+
+We have updated Skype for Business to work with MAM. The following table explains Office release channels and release dates for Skype for Business compliance with the MAM feature.
+
+<table>
+<colgroup>
+<col width="15%" />
+<col width="35%" />
+<col width="15%" />
+<col width="35%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Update channel</th>
+<th>Primary purpose</th>
+<th>LOB Tatoo availability</th>
+<th>Default update channel for the products</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>[Current channel](https://technet.microsoft.com/en-us/library/mt455210.aspx#BKMK_CB)</td>
+<td>Provide pilot users and application compatibility testers the opportunity to test the next Deferred Channel. </td>
+<td>March 9 2017</td>
+<td><p>Visio Pro for Office 365</p>
+<p>Project Online Desktop Client</p>
+<p>Office 365 Business (the version of Office that comes with some Office 365 plans, such as Business Premium.)</p></td>
+</tr>
+<tr>
+<td>[Deferred channel](https://technet.microsoft.com/en-us/library/mt455210.aspx#BKMK_CBB)</td>
+<td>Provide users with new features of Office only a few times a year.</td>
+<td>October 10 2017</td>
+<td>Office 365 ProPlus</td>
+</tr><tr>
+<td>[First release for deferred channel](https://technet.microsoft.com/en-us/library/mt455210.aspx#BKMK_FRCBB)</td>
+<td>Provide pilot users and application compatibility testers the opportunity to test the next Deferred Channel. </td>
+<td>June 13 2017</td>
+<td></td>
+</tr>
+</tbody>
+</table>
