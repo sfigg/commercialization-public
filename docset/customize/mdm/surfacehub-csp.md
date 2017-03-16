@@ -219,11 +219,11 @@ The data type is int. Supported operation is Get and Replace.
 <a href="" id="inboxapps"></a>**InBoxApps**  
 Node for the in-box app settings.
 
-<a href="" id="inboxapps-skypeforbusiness"></a>**InBoxApps/SkypeForBusiness**
+<a href="" id="inboxapps-skypeforbusiness"></a>**InBoxApps/SkypeForBusiness**   
 Added in Windows 10, version 1703. Node for the Skype for Business settings.
 
 <a href="" id="inboxapps-skypeforbusiness-domainname"></a>**InBoxApps/SkypeForBusiness/DomainName**  
-Added in Windows 10, version 1703. Domain of the Skype for Business account when you are using Active Directory. For more information, see the [Set up Skype for Business Online](https://support.office.com/en-us/article/Set-up-Skype-for-Business-Online-40296968-e779-4259-980b-c2de1c044c6e?ui=en-US&rs=en-US&ad=US#bkmk_users).
+Added in Windows 10, version 1703. Specifies the domain of the Skype for Business account when you are using Active Directory. For more information, see [Set up Skype for Business Online](https://support.office.com/en-us/article/Set-up-Skype-for-Business-Online-40296968-e779-4259-980b-c2de1c044c6e?ui=en-US&rs=en-US&ad=US#bkmk_users).
 
 The data type is char. Supported operation is Get and Replace.
 
@@ -296,7 +296,7 @@ The data type is int. Supported operation is Get and Replace.
 Added in Windows 10, version 1703. Node for the Connect app.
 
 <a href="" id="inboxapps-welcome-autowakescreen"></a>**InBoxApps/Connect/AutoLaunch**  
-Added in Windows 10, version 1703. Automatically launch the Connect app whenever a projection is initiated.
+Added in Windows 10, version 1703. Specifies whether to automatically launch the Connect app whenever a projection is initiated.
 
 The data type is bool. Supported operation is Get and Replace.
 
@@ -304,12 +304,7 @@ The data type is bool. Supported operation is Get and Replace.
 Node for the device properties.
 
 <a href="" id="properties-friendlyname"></a>**Properties/FriendlyName**  
-Friendly name of the device. This is the name that users see when they want to wirelessly project to the device.
-
-The data type is string. Supported operation is Get and Replace.
-
-<a href="" id="properties-friendlyname"></a>**Properties/FriendlyName**  
-Added in Windows 10, version 1703. Friendly name of the device. This is the name that users see when they want to wirelessly project to the device.
+Friendly name of the device. Specifies the name that users see when they want to wirelessly project to the device.
 
 The data type is string. Supported operation is Get and Replace.
 
