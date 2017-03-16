@@ -476,7 +476,7 @@ The following list of data points are verified by the DHA-Service in DHA-Report 
 - [PCR0](#pcr0)
 - [PCRHashAlgorithmID](#pcrhashalgorithmid)
 - [ResetCount](#resetcount) (TPM 2.0 only)
-- [RestartCount](#) (TPM 2.0 only)
+- [RestartCount](#restartcount) (TPM 2.0 only)
 - [SafeMode](#safemode)
 - [SBCPHash](#sbcphash)
 - [SecureBootEnabled](#securebootenabled)
@@ -698,8 +698,11 @@ Each of these are described in further detail in the following sections, along w
 <a href="" id="pcrhashalgorithmid"></a>**PCRHashAlgorithmID**
 <p style="margin-left: 20px">This attribute is an informational attribute that identifies the HASH algorithm that was used by TPM; no compliance action required.</p>
 
-<a href="" id="resetcount"></a>**ResetCount** (TPM 2.0 only)
+<a href="" id="resetcount"></a>**ResetCount** (Reported only for devices that support TPM 2.0)
 <p style="margin-left: 20px">This attribute reports the number of times a PC device has hibernated or resumed.</p>
+
+<a href="" id="restartcount"></a>**RestartCount** (TPM 2.0 only)
+<p style="margin-left: 20px">This attribute reports the number of times a PC device has rebooted</p>
 
 <a href="" id="safemode"></a>**SafeMode**  
 <p style="margin-left: 20px">Safe mode is a troubleshooting option for Windows that starts your computer in a limited state. Only the basic files and drivers necessary to run Windows are started.</p>
