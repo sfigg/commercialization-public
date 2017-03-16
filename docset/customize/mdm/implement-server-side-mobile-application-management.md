@@ -133,7 +133,40 @@ If the MAM device is properly configured for MDM enrollment, then the Enroll onl
 
 Skype for Business implemented the "LOB Tattoo", which is a resource change that allows unenlightened apps to work with MAM. The following table explains Office release channels and release dates for Skype for Business compliance with MAM feature. 
 
-
-
-
-
+<table>
+<colgroup>
+<col width="15%" />
+<col width="35%" />
+<col width="15%" />
+<col width="35%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Update channel</th>
+<th>Primary purpose</th>
+<th>LOB Tatoo availability</th>
+<th>Default update channel for the products</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>[Current channel](https://technet.microsoft.com/en-us/library/mt455210.aspx#BKMK_CB)</td>
+<td>Provide pilot users and application compatibility testers the opportunity to test the next Deferred Channel. </td>
+<td>March 9 2017</td>
+<td><p>Visio Pro for Office 365</p>
+<p>Project Online Desktop Client</p>
+<p>Office 365 Business (the version of Office that comes with some Office 365 plans, such as Business Premium.)</p></td>
+</tr>
+<tr>
+<td>[Deferred channel](https://technet.microsoft.com/en-us/library/mt455210.aspx#BKMK_CBB)</td>
+<td>Provide users with new features of Office only a few times a year.</td>
+<td>October 10 2017</td>
+<td>Office 365 ProPlus</td>
+</tr><tr>
+<td>[First release for deferred channel](https://technet.microsoft.com/en-us/library/mt455210.aspx#BKMK_FRCBB)</td>
+<td>Provide pilot users and application compatibility testers the opportunity to test the next Deferred Channel. </td>
+<td>June 13 2017</td>
+<td></td>
+</tr>
+</tbody>
+</table>
