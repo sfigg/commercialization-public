@@ -131,7 +131,7 @@ If the MAM device is properly configured for MDM enrollment, then the Enroll onl
 
 ## Skype for Business compliance with MAM
 
-Skype for Business implemented the "LOB Tattoo", which is a resource change that allows unenlightened apps to work with MAM. The following table explains Office release channels and release dates for Skype for Business compliance with the MAM feature. 
+We have updated Skype for Business to work with MAM. The following table explains Office release channels and release dates for Skype for Business compliance with the MAM feature.
 
 <table>
 <colgroup>
