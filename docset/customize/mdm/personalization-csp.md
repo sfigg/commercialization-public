@@ -23,7 +23,7 @@ The following diagram shows the Personalization configuration service provider i
 
 ![personalization csp](images/provisioning-csp-personalization.png)
 
-<a href="" id="personalization"></a>**./Device/Vendor/MSFT/Personalization**  
+<a href="" id="personalization"></a>**./Vendor/MSFT/Personalization**  
 <p style="margin-left: 20px">Defines the root node for the Personalization configuration service provider.</p>
 
 <a href="" id="desktopimageurl"></a>**DesktopImageUrl**  
