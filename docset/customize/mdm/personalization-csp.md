@@ -14,7 +14,10 @@ MSHAttr:
 
 The Personalization CSP can set the lock screen and desktop background images. Setting these policies also prevents the user from changing the image. You can also use the Personalization settings in a provisioning package.
 
-This CSP was added in Windows 10, version 1703. 
+This CSP was added in Windows 10, version 1703.
+
+> [!Note]
+> Personalization CSP is supported in Windows 10 Enterprise and Education SKUs. It works on Windows 10 Pro and Cloud SKUs if SetEduPolicies in [SharedPC CSP](sharedpc-csp.md) is set.
 
 The following diagram shows the Personalization configuration service provider in tree format.
 
