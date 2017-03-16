@@ -10,7 +10,7 @@ ms.assetid: 36FBBC32-AD6A-41F1-86BF-B384891AA693
 # SurfaceHub CSP
 
 > [!WARNING]
-> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+> Some information relates to prereleased product, which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 The SurfaceHub configuration service provider (CSP) is used to configure Microsoft Surface Hub settings. This CSP was added in Windows 10, version 1511.
 
@@ -203,14 +203,6 @@ If there is an error calling ValidateAndCommit, there is additional context for 
  
 The data type is int. Supported operation is Get.
 
-<a href="" id="hardware"></a>**Hardware**  
-Added in the next major update of Windows 10. Node for hardware settings.
-
-<a href="" id="hardware-wakeonpresencedetectedenabled"></a>**Hardware/WakeOnPresenceDetectedEnabled**  
-Added in the next major update of Windows 10. True if wake on presence detected is enabled.
-
-The data type is Boolean. Supported operation is Get and Replace.
-
 <a href="" id="maintenancehourssimple-hours"></a>**MaintenanceHoursSimple/Hours**  
 Node for maintenance schedule.
 
@@ -228,10 +220,10 @@ The data type is int. Supported operation is Get and Replace.
 Node for the in-box app settings.
 
 <a href="" id="inboxapps-skypeforbusiness"></a>**InBoxApps/SkypeForBusiness**
-Added in the next major update of Windows 10. Node for the Skype for Business settings.
+Added in Windows 10, version 1703. Node for the Skype for Business settings.
 
-<a href="" id="inboxapps-skypeforbusiness-domainname"></a>**SkypeForBusiness/DomainName**  
-Added in the next major update of Windows 10. Domain of the device account when you are using Active Directory. 
+<a href="" id="inboxapps-skypeforbusiness-domainname"></a>**InBoxApps/SkypeForBusiness/DomainName**  
+Added in Windows 10, version 1703. Domain of the Skype for Business account when you are using Active Directory. For more information, see the [Set up Skype for Business Online](https://support.office.com/en-us/article/Set-up-Skype-for-Business-Online-40296968-e779-4259-980b-c2de1c044c6e?ui=en-US&rs=en-US&ad=US#bkmk_users).
 
 The data type is char. Supported operation is Get and Replace.
 
@@ -247,11 +239,6 @@ The data type is bool. Supported operation is Get and Replace.
 Background image for the welcome screen. To set this, specify a https URL to a PNG file (only PNGs are supported for security reasons).
 
 The data type is string. Supported operation is Get and Replace.
-
-<a href="" id="inboxapps-welcome-engagementdetection"></a>**InBoxApps/Welcome/EngagementDetection**  
-Added in the next major update of Windows 10. 
-
-The data type is Boolean. Supported operation is Get and Replace.
 
 <a href="" id="inboxapps-welcome-meetinginfooption"></a>**InBoxApps/Welcome/MeetingInfoOption**  
 Meeting information displayed on the welcome screen.
@@ -305,6 +292,14 @@ The default value is 255. Outside of regulatory concerns, if the channel is conf
 
 The data type is int. Supported operation is Get and Replace.
 
+<a href="" id="inboxapps-connect"></a>**InBoxApps/Connect**  
+Added in Windows 10, version 1703. Node for the Connect app.
+
+<a href="" id="inboxapps-welcome-autowakescreen"></a>**InBoxApps/Connect/AutoLaunch**  
+Added in Windows 10, version 1703. Automatically launch the Connect app whenever a projection is initiated.
+
+The data type is bool. Supported operation is Get and Replace.
+
 <a href="" id="properties"></a>**Properties**  
 Node for the device properties.
 
@@ -313,18 +308,191 @@ Friendly name of the device. This is the name that users see when they want to w
 
 The data type is string. Supported operation is Get and Replace.
 
-<a href="" id="management"></a>**Management**  
-Added in the next major update of Windows 10. Node for managing the administrators group.
-
-<a href="" id="management-groupname"></a>**Management/GroupName**  
-Added in the next major update of Windows 10. The name of the domain admin group to add to the administrators group on the device.
+<a href="" id="properties-friendlyname"></a>**Properties/FriendlyName**  
+Added in Windows 10, version 1703. Friendly name of the device. This is the name that users see when they want to wirelessly project to the device.
 
 The data type is string. Supported operation is Get and Replace.
 
-<a href="" id="management-groupsid"></a>**Management/GroupSid**  
-Added in the next major update of Windows 10. The SID of the domain admin group to add to the administrators group on the device.
+<a href="" id="properties-defaultvolume"></a>**Properties/DefaultVolume**  
+Added in Windows 10, version 1703. Specifies the default volume value for a new session. Permitted values are 0-100. The default is 45.
 
-The data type is string. Supported operation is Get and Replace.
+The data type is int. Supported operation is Get and Replace.
+
+<a href="" id="properties-screentimeout"></a>**Properties/ScreenTimeout**  
+Added in Windows 10, version 1703. Specifies the number of minutes until the Hub screen turns off. 
+
+The following table shows the permitted values.
+
+<table>
+<thead>
+<tr class="header">
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>Never timeout</td></tr>
+<tr>
+<td>1</td>
+<td>1 minute</td>
+</tr>
+<tr>
+<td>2</td>
+<td>2 minutes</td></tr>
+<tr>
+<td>3</td>
+<td>3 minutes</td></tr>
+<tr>
+<td>5</td>
+<td>5 minutes (default)</td></tr>
+<tr>
+<td>10</td>
+<td>10 minutes</td></tr>
+<tr>
+<td>15</td>
+<td>15 minutes</td></tr>
+<tr>
+<td>30</td>
+<td>30 minutes</td></tr>
+<tr>
+<td>60</td>
+<td>1 hour</td></tr>
+<tr>
+<td>120</td>
+<td>2 hours</td></tr>
+<tr>
+<td>240</td>
+<td>4 hours</td></tr>
+</tbody>
+</table>
+
+The data type is int. Supported operation is Get and Replace.
+
+<a href="" id="properties-sessiontimeout"></a>**Properties/SessionTimeout**  
+Added in Windows 10, version 1703. Specifies the number of minutes until the session times out. 
+
+The following table shows the permitted values.
+
+<table>
+<thead>
+<tr class="header">
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>Never timeout</td></tr>
+<tr>
+<td>1</td>
+<td>1 minute (default)</td>
+</tr>
+<tr>
+<td>2</td>
+<td>2 minutes</td></tr>
+<tr>
+<td>3</td>
+<td>3 minutes</td></tr>
+<tr>
+<td>5</td>
+<td>5 minutes</td></tr>
+<tr>
+<td>10</td>
+<td>10 minutes</td></tr>
+<tr>
+<td>15</td>
+<td>15 minutes</td></tr>
+<tr>
+<td>30</td>
+<td>30 minutes</td></tr>
+<tr>
+<td>60</td>
+<td>1 hour</td></tr>
+<tr>
+<td>120</td>
+<td>2 hours</td></tr>
+<tr>
+<td>240</td>
+<td>4 hours</td></tr>
+</tbody>
+</table>
+
+The data type is int. Supported operation is Get and Replace.
+
+<a href="" id="properties-sleeptimeout"></a>**Properties/SleepTimeout**  
+Added in Windows 10, version 1703. Specifies the number of minutes until the Hub enters sleep mode. 
+
+The following table shows the permitted values.
+
+<table>
+<thead>
+<tr class="header">
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>Never timeout</td></tr>
+<tr>
+<td>1</td>
+<td>1 minute</td>
+</tr>
+<tr>
+<td>2</td>
+<td>2 minutes</td></tr>
+<tr>
+<td>3</td>
+<td>3 minutes</td></tr>
+<tr>
+<td>5</td>
+<td>5 minutes (default)</td></tr>
+<tr>
+<td>10</td>
+<td>10 minutes</td></tr>
+<tr>
+<td>15</td>
+<td>15 minutes</td></tr>
+<tr>
+<td>30</td>
+<td>30 minutes</td></tr>
+<tr>
+<td>60</td>
+<td>1 hour</td></tr>
+<tr>
+<td>120</td>
+<td>2 hours</td></tr>
+<tr>
+<td>240</td>
+<td>4 hours</td></tr>
+</tbody>
+</table>
+
+The data type is int. Supported operation is Get and Replace.
+
+<a href="" id="properties-allowsessionresume"></a>**Properties/AllowSessionResume**  
+Added in Windows 10, version 1703. Specifies whether to resume the session when the session times out. 
+
+The data type is bool. Supported operation is Get and Replace.
+
+<a href="" id="properties-allowautoproxyauth"></a>**Properties/AllowAutoProxyAuth**  
+Added in Windows 10, version 1703. Specifies whether to use the device account for proxy authentication.
+
+The data type is bool. Supported operation is Get and Replace.
+
+<a href="" id="properties-disablesigninsuggestions"></a>**Properties/DisableSigninSuggestions**  
+Added in Windows 10, version 1703. Specifies whether to disable the sign-in bobble UI. 
+
+The data type is bool. Supported operation is Get and Replace.
+
+<a href="" id="properties-donotshowmymeetingsandfiles"></a>**Properties/DoNotShowMyMeetingsAndFiles**  
+Added in Windows 10, version 1703. Specifies whether to disable the ability to sign in to O365 to retrieve the user’s meetings and cloud files. 
+
+The data type is bool. Supported operation is Get and Replace.
 
 <a href="" id="momagent"></a>**MOMAgent**  
 Node for the Microsoft Operations Management Suite.

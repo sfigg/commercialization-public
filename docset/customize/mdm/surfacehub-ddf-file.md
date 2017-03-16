@@ -9,6 +9,8 @@ ms.assetid: D34DA1C2-09A2-4BA3-BE99-AC483C278436
 
 # SurfaceHub DDF file
 
+> [!WARNING]
+> Some information relates to prereleased product, which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 This topic shows the OMA DM device description framework (DDF) for the SurfaceHub configuration service provider. This CSP was added in Windows 10, version 1511.
 
@@ -125,27 +127,6 @@ This topic shows the OMA DM device description framework (DDF) for the SurfaceHu
                 </DFProperties>
             </Node>
             <Node>
-                <NodeName>SipAddress</NodeName>
-                <DFProperties>
-                    <AccessType>
-                        <Get />
-                        <Replace />
-                    </AccessType>
-                    <DFFormat>
-                        <chr />
-                    </DFFormat>
-                    <Occurrence>
-                        <One />
-                    </Occurrence>
-                    <Scope>
-                        <Permanent />
-                    </Scope>
-                    <DFType>
-                        <MIME>text/plain</MIME>
-                    </DFType>
-                </DFProperties>
-            </Node>
-            <Node>
                 <NodeName>Password</NodeName>
                 <DFProperties>
                     <AccessType>
@@ -188,7 +169,7 @@ This topic shows the OMA DM device description framework (DDF) for the SurfaceHu
                 </DFProperties>
             </Node>
             <Node>
-                <NodeName>Email</NodeName>
+                <NodeName>ExchangeServer</NodeName>
                 <DFProperties>
                     <AccessType>
                         <Get />
@@ -209,14 +190,14 @@ This topic shows the OMA DM device description framework (DDF) for the SurfaceHu
                 </DFProperties>
             </Node>
             <Node>
-                <NodeName>PasswordRotationPeriod</NodeName>
+                <NodeName>SipAddress</NodeName>
                 <DFProperties>
                     <AccessType>
                         <Get />
                         <Replace />
                     </AccessType>
                     <DFFormat>
-                        <int />
+                        <chr />
                     </DFFormat>
                     <Occurrence>
                         <One />
@@ -230,7 +211,7 @@ This topic shows the OMA DM device description framework (DDF) for the SurfaceHu
                 </DFProperties>
             </Node>
             <Node>
-                <NodeName>ExchangeServer</NodeName>
+                <NodeName>Email</NodeName>
                 <DFProperties>
                     <AccessType>
                         <Get />
@@ -292,36 +273,15 @@ This topic shows the OMA DM device description framework (DDF) for the SurfaceHu
                     </DFType>
                 </DFProperties>
             </Node>
-        </Node>
-        <Node>
-            <NodeName>Hardware</NodeName>
-            <DFProperties>
-                <AccessType>
-                    <Get />
-                </AccessType>
-                <DFFormat>
-                    <node />
-                </DFFormat>
-                <Occurrence>
-                    <One />
-                </Occurrence>
-                <Scope>
-                    <Permanent />
-                </Scope>
-                <DFType>
-                    <DDFName></DDFName>
-                </DFType>
-            </DFProperties>
             <Node>
-                <NodeName>WakeOnPresenceDetectedEnabled</NodeName>
+                <NodeName>PasswordRotationPeriod</NodeName>
                 <DFProperties>
                     <AccessType>
                         <Get />
                         <Replace />
                     </AccessType>
-                    <Description>True if wake on presence detected is enabled</Description>
                     <DFFormat>
-                        <bool />
+                        <int />
                     </DFFormat>
                     <Occurrence>
                         <One />
@@ -341,7 +301,7 @@ This topic shows the OMA DM device description framework (DDF) for the SurfaceHu
                 <AccessType>
                     <Get />
                 </AccessType>
-                <Description>Possibly being removed</Description>
+                <Description></Description>
                 <DFFormat>
                     <node />
                 </DFFormat>
@@ -526,6 +486,8 @@ This topic shows the OMA DM device description framework (DDF) for the SurfaceHu
                   <DFProperties>
                     <AccessType>
                       <Get />
+                      <Add />
+                      <Delete />
                       <Replace />
                     </AccessType>
                     <DFFormat>
@@ -541,27 +503,6 @@ This topic shows the OMA DM device description framework (DDF) for the SurfaceHu
                       <MIME>text/plain</MIME>
                     </DFType>
                   </DFProperties>
-                </Node>
-                <Node>
-                    <NodeName>EngagementDetection</NodeName>
-                    <DFProperties>
-                        <AccessType>
-                            <Get />
-                            <Replace />
-                        </AccessType>
-                        <DFFormat>
-                            <bool />
-                        </DFFormat>
-                        <Occurrence>
-                            <One />
-                        </Occurrence>
-                        <Scope>
-                            <Permanent />
-                        </Scope>
-                        <DFType>
-                            <MIME>text/plain</MIME>
-                        </DFType>
-                    </DFProperties>
                 </Node>
                 <Node>
                     <NodeName>MeetingInfoOption</NodeName>
@@ -668,6 +609,47 @@ This topic shows the OMA DM device description framework (DDF) for the SurfaceHu
                     </DFProperties>
                 </Node>
             </Node>
+            <Node>
+                <NodeName>Connect</NodeName>
+                <DFProperties>
+                    <AccessType>
+                        <Get />
+                    </AccessType>
+                    <DFFormat>
+                        <node />
+                    </DFFormat>
+                    <Occurrence>
+                        <One />
+                    </Occurrence>
+                    <Scope>
+                        <Permanent />
+                    </Scope>
+                    <DFType>
+                        <DDFName></DDFName>
+                    </DFType>
+                </DFProperties>
+                <Node>
+                    <NodeName>AutoLaunch</NodeName>
+                    <DFProperties>
+                        <AccessType>
+                            <Get />
+                            <Replace />
+                        </AccessType>
+                        <DFFormat>
+                            <bool />
+                        </DFFormat>
+                        <Occurrence>
+                            <One />
+                        </Occurrence>
+                        <Scope>
+                            <Permanent />
+                        </Scope>
+                        <DFType>
+                            <MIME>text/plain</MIME>
+                        </DFType>
+                    </DFProperties>
+                </Node>
+            </Node>
         </Node>
         <Node>
             <NodeName>Properties</NodeName>
@@ -697,6 +679,182 @@ This topic shows the OMA DM device description framework (DDF) for the SurfaceHu
                     </AccessType>
                     <DFFormat>
                         <chr />
+                    </DFFormat>
+                    <Occurrence>
+                        <One />
+                    </Occurrence>
+                    <Scope>
+                        <Permanent />
+                    </Scope>
+                    <DFType>
+                        <MIME>text/plain</MIME>
+                    </DFType>
+                </DFProperties>
+            </Node>
+            <Node>
+                <NodeName>DefaultVolume</NodeName>
+                <DFProperties>
+                    <AccessType>
+                        <Get />
+                        <Replace />
+                    </AccessType>
+                    <DefaultValue>65</DefaultValue>
+                    <DFFormat>
+                        <int />
+                    </DFFormat>
+                    <Occurrence>
+                        <One />
+                    </Occurrence>
+                    <Scope>
+                        <Permanent />
+                    </Scope>
+                    <DFType>
+                        <MIME>text/plain</MIME>
+                    </DFType>
+                </DFProperties>
+            </Node>
+            <Node>
+                <NodeName>ScreenTimeout</NodeName>
+                <DFProperties>
+                    <AccessType>
+                        <Get />
+                        <Replace />
+                    </AccessType>
+                    <DefaultValue>5</DefaultValue>
+                    <DFFormat>
+                        <int />
+                    </DFFormat>
+                    <Occurrence>
+                        <One />
+                    </Occurrence>
+                    <Scope>
+                        <Permanent />
+                    </Scope>
+                    <DFType>
+                        <MIME>text/plain</MIME>
+                    </DFType>
+                </DFProperties>
+            </Node>
+            <Node>
+                <NodeName>SessionTimeout</NodeName>
+                <DFProperties>
+                    <AccessType>
+                        <Get />
+                        <Replace />
+                    </AccessType>
+                    <DefaultValue>1</DefaultValue>
+                    <DFFormat>
+                        <int />
+                    </DFFormat>
+                    <Occurrence>
+                        <One />
+                    </Occurrence>
+                    <Scope>
+                        <Permanent />
+                    </Scope>
+                    <DFType>
+                        <MIME>text/plain</MIME>
+                    </DFType>
+                </DFProperties>
+            </Node>
+            <Node>
+                <NodeName>SleepTimeout</NodeName>
+                <DFProperties>
+                    <AccessType>
+                        <Get />
+                        <Replace />
+                    </AccessType>
+                    <DefaultValue>5</DefaultValue>
+                    <DFFormat>
+                        <int />
+                    </DFFormat>
+                    <Occurrence>
+                        <One />
+                    </Occurrence>
+                    <Scope>
+                        <Permanent />
+                    </Scope>
+                    <DFType>
+                        <MIME>text/plain</MIME>
+                    </DFType>
+                </DFProperties>
+            </Node>
+            <Node>
+                <NodeName>AllowSessionResume</NodeName>
+                <DFProperties>
+                    <AccessType>
+                        <Get />
+                        <Replace />
+                    </AccessType>
+                    <DefaultValue>true</DefaultValue>
+                    <DFFormat>
+                        <bool />
+                    </DFFormat>
+                    <Occurrence>
+                        <One />
+                    </Occurrence>
+                    <Scope>
+                        <Permanent />
+                    </Scope>
+                    <DFType>
+                        <MIME>text/plain</MIME>
+                    </DFType>
+                </DFProperties>
+            </Node>
+            <Node>
+                <NodeName>AllowAutoProxyAuth</NodeName>
+                <DFProperties>
+                    <AccessType>
+                        <Get />
+                        <Replace />
+                    </AccessType>
+                    <DefaultValue>true</DefaultValue>
+                    <DFFormat>
+                        <bool />
+                    </DFFormat>
+                    <Occurrence>
+                        <One />
+                    </Occurrence>
+                    <Scope>
+                        <Permanent />
+                    </Scope>
+                    <DFType>
+                        <MIME>text/plain</MIME>
+                    </DFType>
+                </DFProperties>
+            </Node>
+            <Node>
+                <NodeName>DisableSigninSuggestions</NodeName>
+                <DFProperties>
+                    <AccessType>
+                        <Get />
+                        <Replace />
+                    </AccessType>
+                    <DefaultValue>false</DefaultValue>
+                    <DFFormat>
+                        <bool />
+                    </DFFormat>
+                    <Occurrence>
+                        <One />
+                    </Occurrence>
+                    <Scope>
+                        <Permanent />
+                    </Scope>
+                    <DFType>
+                        <MIME>text/plain</MIME>
+                    </DFType>
+                </DFProperties>
+            </Node>
+            <Node>
+                <NodeName>DoNotShowMyMeetingsAndFiles</NodeName>
+                <DFProperties>
+                    <AccessType>
+                        <Get />
+                        <Replace />
+                    </AccessType>
+                    <DefaultValue>false</DefaultValue>
+                    <DFFormat>
+                        <bool />
                     </DFFormat>
                     <Occurrence>
                         <One />
