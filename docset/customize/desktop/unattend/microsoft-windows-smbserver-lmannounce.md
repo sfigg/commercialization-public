@@ -50,7 +50,7 @@ generalize
 ## Applies To
 
 
-For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-SMBServer](microsoft-windows-smbserver-win7-microsoft-windows-smbserver.md).
+For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-SMBServer](microsoft-windows-smbserver.md).
 
 ## XML Example
 

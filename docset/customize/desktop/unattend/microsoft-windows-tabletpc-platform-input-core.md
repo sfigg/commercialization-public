@@ -49,7 +49,7 @@ The Microsoft-Windows-TabletPC-Platform-Input-Core component contains settings t
 <td><p>Specifies whether the touch input is turned on or off for the device.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[TouchKeyboardAutoInvokeEnabled](touchkeyboardautoinvokeenabled.md)</p></td>
+<td><p>[TouchKeyboardAutoInvokeEnabled](microsoft-windows-tabletpc-platform-input-core-touchkeyboardautoinvokeenabled.md)</p></td>
 <td><p>Specifies whether the touch keyboard is automatically invoked by default when there is no hardware keyboard connected and the device is in non-tablet mode.</p></td>
 </tr>
 </tbody>

@@ -86,7 +86,7 @@ The following XML sample output shows how to set SNMP.
 ## Related topics
 
 
-[TrapConfigurationItems](microsoft-windows-snmp-agent-service-trapconfiguration-rapconfigurationitems.md)
+[TrapConfigurationItems](microsoft-windows-snmp-agent-service-trapconfiguration-trapconfigurationitems.md)
 
  
 
