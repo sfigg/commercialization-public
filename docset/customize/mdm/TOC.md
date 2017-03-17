@@ -113,6 +113,8 @@
 #### [DMAcc DDF file](dmacc-ddf-file.md)
 ### [DMClient CSP](dmclient-csp.md)
 #### [DMClient DDF file](dmclient-ddf-file.md)
+### [DMSessionActions CSP](dmsessionactions-csp.md)
+#### [DMSessionActions DDF file](dmsessionactions-ddf.md)
 ### [DynamicManagement CSP](dynamicmanagement-csp.md)
 #### [DynamicManagement DDF file](dynamicmanagement-ddf.md)
 ### [EMAIL2 CSP](email2-csp.md)

@@ -1,0 +1,58 @@
+--
+title: DMSessionActions CSP
+description: DMSessionActions CSP
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+---
+
+# DMSessionActions CSP
+
+
+> [!WARNING]
+> Some information relates to prereleased product, which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+
+The DMSessionActions configuration service provider (CSP) is used to manage:  
+
+- the number of sessions the client skips if the device is in a low power state
+- which CSP nodes should send an alert back to the server if there were any changes.
+
+This CSP was added in Windows 10, version 1703.
+
+The following diagram shows the DMSessionActions configuration service provider in tree format.
+
+![dmsessionactions csp](images/provisioning-csp-dmsessionactions.png)
+
+<a href="" id="vendor-msft-dmsessionactions"></a>**./Device/Vendor/MSFT/DMSessionActions or ./User/Vendor/MSFT/DMSessionActions**  
+<p style="margin-left: 20px">Defines the root node for the DMSessionActions configuration service provider.</p>
+
+<a href="" id="providerid"></a>**_ProviderID_**  
+<p style="margin-left: 20px">TBD</p>
+
+<a href="" id="checkinalertconfiguration"></a>**CheckinAlertConfiguration**  
+<p style="margin-left: 20px">TBD</p>
+
+<a href="" id="nodes"></a>**Nodes**  
+<p style="margin-left: 20px">TBD</p>
+
+<a href="" id="nodeid"></a>**_NodeID_**  
+<p style="margin-left: 20px">TBD</p>
+
+<a href="" id="nodeuri"></a>**NodeURI**  
+<p style="margin-left: 20px">TBD</p>
+<p style="margin-left: 20px">Value type is string. Supported operations are Add, Get, Replace, and Delete.</p>
+
+<a href="" id="alertdata"></a>**AlertData**  
+<p style="margin-left: 20px">TBD</p>
+<p style="margin-left: 20px">Value type is string. Supported operation is Get.</p>
+
+<a href="" id="powersettings"></a>**PowerSettings**  
+<p style="margin-left: 20px">TBD</p>
+
+<a href="" id="maxskippedsessionsinlowpowerstate"></a>**MaxSkippedSessionsInLowPowerState**  
+<p style="margin-left: 20px">TBD</p>
+<p style="margin-left: 20px">Value type is integer. Supported operations are Add, Get, Replace, and Delete.</p>
+
+<a href="" id="maxtimesessionsskippedinlowpowerstate"></a>**MaxTimeSessionsSkippedInLowPowerState**  
+<p style="margin-left: 20px">TBD</p>
+<p style="margin-left: 20px">Value type is integer. Supported operations are Add, Get, Replace, and Delete.</p>
