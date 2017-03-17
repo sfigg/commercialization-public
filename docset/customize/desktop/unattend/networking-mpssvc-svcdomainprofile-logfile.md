@@ -76,7 +76,7 @@ The following XML output shows how to set Windows Firewall.
 ## Related topics
 
 
-[Networking-MPSSVC-Svc](Windowsnetworking-mpssvc-svc.md)
+[Networking-MPSSVC-Svc](networking-mpssvc-svc.md)
 
  
 
