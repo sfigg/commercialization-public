@@ -69,24 +69,44 @@ The following diagram shows the Policy configuration service provider in tree fo
 <p style="margin-left: 20px">Supported operation is Get.
 
 <a href="" id="policy-result"></a>**Policy/ConfigOperations**  
-<p style="margin-left: 20px">Node for the ConfigOperations policy area.
+<p style="margin-left: 20px">Added in Windows 10, version 1703. The root node for grouping different configuration operations.
+
+<p style="margin-left: 20px">Supported operations are Add, Get, and Delete.
 
 <a href="" id="policy-result-areaname"></a>**Policy/ConfigOperations/ADMXInstall**  
-<p style="margin-left: 20px">Added in Windows 10, version 1703. Allows settings for ADMX files for Win32 apps to be imported (ingested) by your device and processed into new ADMX-backed policies or preferences. By using ADMXInstall, you can add ADMX-backed polices for those Win32 apps that have been added between OS releases. ADMX-backed policies are ingested to your device by using the Policy CSP URI: `./Vendor/MSFT/Policy/ConfigOperations/ADMXInstall`. Each ADMX-backed policy or preference that is added is assigned a unique ID. For more information about using Policy CSP to configure Win32 app policies, see [ADMX-backed policies for Win32 apps](admx-backed-policies-for-win32-apps.md).
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Allows settings for ADMX files for Win32 and Centennial apps to be imported (ingested) by your device and processed into new ADMX-backed policies or preferences. By using ADMXInstall, you can add ADMX-backed polices for those Win32 or Centennial apps that have been added between OS releases. ADMX-backed policies are ingested to your device by using the Policy CSP URI: `./Vendor/MSFT/Policy/ConfigOperations/ADMXInstall`. Each ADMX-backed policy or preference that is added is assigned a unique ID. For more information about using Policy CSP to configure Win32 and Centennial app policies, see [Win32 and Centennial app policy configuration](win32-and-centennial-app-policy-configuration.md).
 
 > [!NOTE]
 > The OPAX settings that are managed by the Microsoft Office Customization Tool are not supported by MDM. For more information about this tool, see [Office Customization Tool](https://technet.microsoft.com/en-us/library/cc179097.aspx).
 
 <p style="margin-left: 20px">ADMX files that have been installed by using **ConfigOperations/ADMXInstall** can later be deleted by using the URI delete operation. Deleting an ADMX file will delete the ADMX file from disk, remove the metadata from the ADMXdefault registry hive, and delete all the policies that were set from the file. The MDM server can also delete all ADMX policies that are tied to a particular app by calling delete on the URI, `./Vendor/MSFT/Policy/ConfigOperations/ADMXInstall/{AppName}`.
 
+<p style="margin-left: 20px">Supported operations are Add, Get, and Delete.
+
 <a href="" id="policy-result-areaname-policyname"></a>**Policy/ConfigOperations/ADMXInstall/****_AppName_**  
-<p style="margin-left: 20px">Specifies the name of the ADMX file to use for importing Win32 app policies or preferences.
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies the name of the Win32 or Centennial app associated with the ADMX file. 
 
-<a href="" id="policy-result-areaname-policyname"></a>**Policy/ConfigOperations/ADMXInstall/****_AppName/Policy or Preference_**  
-<p style="margin-left: 20px">Specifies the name of the Win32 app policy or preference to import.
+<p style="margin-left: 20px">Supported operations are Add, Get, and Delete.
 
-<a href="" id="policy-result-areaname-policyname"></a>**Policy/ConfigOperations/ADMXInstall/****_AppName/Policy or Preference/UniqueID_**  
-<p style="margin-left: 20px">Returns the system-created ID for the Win32 app policy or preference to import.
+<a href="" id="policy-result-areaname-policyname"></a>**Policy/ConfigOperations/ADMXInstall/****_AppName/Policy_**  
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies that a Win32 or Centennial app policy is to be imported.
+
+<p style="margin-left: 20px">Supported operations are Add, Get, and Delete.
+
+<a href="" id="policy-result-areaname-policyname"></a>**Policy/ConfigOperations/ADMXInstall/****_AppName/Policy/UniqueID_**  
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies the unique ID of the app ADMX file that contains the policy to import.
+
+<p style="margin-left: 20px">Supported operations are Add and Get. Does not support Delete.
+
+<a href="" id="policy-result-areaname-policyname"></a>**Policy/ConfigOperations/ADMXInstall/****_AppName/Preference_**  
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies that a Win32 or Centennial app preference is to be imported.
+
+<p style="margin-left: 20px">Supported operations are Add, Get, and Delete.
+
+<a href="" id="policy-result-areaname-policyname"></a>**Policy/ConfigOperations/ADMXInstall/****_AppName/Preference/UniqueID_**  
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies the unique ID of the app ADMX file that contains the preference to import.
+
+<p style="margin-left: 20px">Supported operations are Add and Get. Does not support Delete.
 
 
 ## **Policy Tables**
