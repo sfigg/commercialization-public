@@ -29,7 +29,7 @@ The Microsoft-Windows-TabletPC-Platform-Input-Core component contains settings t
 <td><p>A container for <code>AssociationData</code> list items. These list items help associate a Tablet PC digitizer with a monitor.</p></td>
 </tr>
 <tr class="even">
-<td><p>[HandwritingPanelDockedModeSet](handwritingpaneldockedmodeset.md)</p></td>
+<td><p>[HandwritingPanelDockedModeSet](microsoft-windows-tabletpc-platform-input-core-handwritingpaneldockedmodeset.md)</p></td>
 <td><p>Specifies whether the handwriting panel is initially docked by default.</p></td>
 </tr>
 <tr class="odd">
