@@ -56,7 +56,7 @@ specialize
 ## Applies To
 
 
-For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-TerminalServices-LocalSessionManager](microsoft-windows-terminalservices-localsessionmanager-microsoft-windows-terminalservices-localsessionmanager.md).
+For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-TerminalServices-LocalSessionManager](microsoft-windows-terminalservices-localsessionmanager.md).
 
 ## XML Example
 
@@ -70,7 +70,7 @@ The following XML output shows how to set this element so that remote terminal s
 ## Related topics
 
 
-[Microsoft-Windows-TerminalServices-LocalSessionManager](microsoft-windows-terminalservices-localsessionmanager-win7-microsoft-windows-terminalservices-localsessionmanager.md)
+[Microsoft-Windows-TerminalServices-LocalSessionManager](microsoft-windows-terminalservices-localsessionmanager.md)
 
  
 

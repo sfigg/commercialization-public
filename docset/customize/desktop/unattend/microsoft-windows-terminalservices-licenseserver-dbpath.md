@@ -46,7 +46,7 @@ oobeSystem
 ## Applies To
 
 
-For the list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-TerminalServices-LicenseServer](microsoft-windows-terminalservices-licenseserver-microsoft-windows-terminalservices-licenseserver.md).
+For the list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-TerminalServices-LicenseServer](microsoft-windows-terminalservices-licenseserver.md).
 
 ## XML Example
 
@@ -60,7 +60,7 @@ The following XML output specifies the path to the license database.
 ## Related topics
 
 
-[Microsoft-Windows-TerminalServices-LicenseServer](microsoft-windows-terminalservices-licenseserver-microsoft-windows-terminalservices-licenseserver.md)
+[Microsoft-Windows-TerminalServices-LicenseServer](microsoft-windows-terminalservices-licenseserver.md)
 
  
 

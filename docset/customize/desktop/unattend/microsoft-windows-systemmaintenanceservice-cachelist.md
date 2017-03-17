@@ -53,7 +53,7 @@ specialize
 ## Applies To
 
 
-For a list of the Windows editions and architectures that this component supports, see [microsoft-windows-systemmaintenanceservice](microsoft-windows-systemmaintenanceservice-microsoft-windows-systemmaintenanceservice.md).
+For a list of the Windows editions and architectures that this component supports, see [microsoft-windows-systemmaintenanceservice](microsoft-windows-systemmaintenanceservice.md).
 
 ## XML Example
 

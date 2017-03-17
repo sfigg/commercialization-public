@@ -62,7 +62,7 @@ The following XML output specifies that RemoteApp and Desktop Connection Managem
 ## Related topics
 
 
-[Microsoft-Windows-TerminalServices-CentralPublishing](microsoft-windows-terminalservices-centralpublishing-microsoft-windows-terminalservices-centralpublishing.md)
+[Microsoft-Windows-TerminalServices-CentralPublishing](microsoft-windows-terminalservices-centralpublishing.md)
 
  
 
