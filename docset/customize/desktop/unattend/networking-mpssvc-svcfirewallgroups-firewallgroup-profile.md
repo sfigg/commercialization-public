@@ -58,7 +58,7 @@ specialize
 ## Applies To
 
 
-For the list of the supported Windows editions and architectures that this component supports, see [Networking-MPSSVC-Svc](Windowsnetworking-mpssvc-svc.md).
+For the list of the supported Windows editions and architectures that this component supports, see [Networking-MPSSVC-Svc](networking-mpssvc-svc.md).
 
 ## XML Example
 
