@@ -29,7 +29,7 @@ ms.sitesec: msdn
 <td><p>Specifies a unique cache ID.</p></td>
 </tr>
 <tr class="even">
-<td><p>[CacheSizeMB](microsoft-windows-systemmaintenanceservice-cachelist-cachesizemb.md)</p></td>
+<td><p>[CacheSizeMB](microsoft-windows-systemmaintenanceservice-cachelist-cache-cachesizemb.md)</p></td>
 <td><p>Specifies the size of the ReadyBoost cache in megabytes (MB).</p></td>
 </tr>
 <tr class="odd">
