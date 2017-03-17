@@ -50,7 +50,7 @@ oobeSystem
 ## Applies To
 
 
-For the list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-TerminalServices-LicenseServer](microsoft-windows-terminalservices-licenseserver-win7-microsoft-windows-terminalservices-licenseserver.md).
+For the list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-TerminalServices-LicenseServer](microsoft-windows-terminalservices-licenseserver-microsoft-windows-terminalservices-licenseserver.md).
 
 ## XML Example
 

@@ -44,7 +44,7 @@ This setting has no effect on Server Core installations of Windows Server 2008,
 <td><p>Specifies whether to show entry points for Windows Media Player.</p></td>
 </tr>
 <tr class="even">
-<td><p>[ShowWindowsMail](microsoft-windows-shell-setup-windowsfeaturesshowwindowsmail.md)</p></td>
+<td><p>[ShowWindowsMail](microsoft-windows-shell-setup-windowsfeatures-showwindowsmail.md)</p></td>
 <td><p>Deprecated. Do not use.</p></td>
 </tr>
 </tbody>
