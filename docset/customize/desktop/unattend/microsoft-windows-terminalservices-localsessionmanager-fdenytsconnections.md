@@ -56,7 +56,7 @@ specialize
 ## Applies To
 
 
-For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-TerminalServices-LocalSessionManager](microsoft-windows-terminalservices-localsessionmanager-win7-microsoft-windows-terminalservices-localsessionmanager.md).
+For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-TerminalServices-LocalSessionManager](microsoft-windows-terminalservices-localsessionmanager-microsoft-windows-terminalservices-localsessionmanager.md).
 
 ## XML Example
 
