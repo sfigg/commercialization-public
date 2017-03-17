@@ -98,7 +98,7 @@ To determine whether a component applies to the image you’re building, load yo
 5.  Click **Open**. If you have not previously opened that Windows image file or have not refreshed the catalog file recently, Windows SIM prompts you to create or re-create the catalog file.
 6.  In the **Answer File** pane, find the offline services pass that contains the component for the setting that you want to change, in this case Microsoft-Windows-TwinUI.
 7.  Select the Microsoft-Windows-TwinUI component.
-8.  In the **Settings** section of the **Properties** pane, provide a value for “oem-app” for [CustomProtocol](microsoft-windows-twinui-customprotocol-customprotocol.md).
+8.  In the **Settings** section of the **Properties** pane, provide a value for “oem-app” for [CustomProtocol](microsoft-windows-twinui-customprotocol.md).
 
  
 

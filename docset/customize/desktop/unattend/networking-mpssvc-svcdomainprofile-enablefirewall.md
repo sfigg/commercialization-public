@@ -66,7 +66,7 @@ The following XML output shows how to disable Windows Firewall.
 ## Related topics
 
 
-[Networking-MPSSVC-Svc](Windowsnetworking-mpssvc-svc.md)
+[Networking-MPSSVC-Svc](networking-mpssvc-svc.md)
 
  
 
