@@ -55,11 +55,11 @@ This topic describes Windows 10, version 1607 answer-file settings that have ch
 <td><p>New. Shows Window Store apps on taskbar.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Microsoft-Windows-Shell-Setup-StartTiles-SquareTiles-SquareTiles-SquareOrDesktopTile7](Microsoft-Windows-Shell-Setup-StartTiles-SquareTiles-SquareTiles-SquareOrDesktopTile7.md) thru [Microsoft-Windows-Shell-Setup-StartTiles-SquareTiles-SquareTiles-SquareOrDesktopTile12](Microsoft-Windows-Shell-Setup-StartTiles-SquareTiles-SquareTiles-SquareOrDesktopTile12.md)</p></td>
+<td><p>[Microsoft-Windows-Shell-Setup-StartTilesSquareTiles-SquareOrDesktopTile7](microsoft-windows-shell-setup-starttiles-squaretiles-squareordestoptile7.md) thru [Microsoft-Windows-Shell-Setup-StartTiles-SquareTiles-SquareOrDesktopTile12](microsoft-windows-shell-setup-starttiles-squaretiles-squareordestoptile12-appidorpath.md)</p></td>
 <td><p>Specifies which application appears as a square tile on the <strong>Start</strong> menu, in the given position 7-12.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Microsoft-Windows-Shell-Setup-StartTiles-SquareTiles-SquareTiles-SquareorDesktopTile7-AppIdOrPath](Microsoft-Windows-Shell-Setup-StartTiles-SquareTiles-SquareTiles-SquareorDesktopTile7-AppIdOrPath.md) thru [Microsoft-Windows-Shell-Setup-StartTiles-SquareTiles-SquareTiles-SquareorDestopTile12-AppIdOrPath](Microsoft-Windows-Shell-Setup-StartTiles-SquareTiles-SquareTiles-SquareorDestopTile12-AppIdOrPath.md)</p></td>
+<td><p>[Microsoft-Windows-Shell-Setup-StartTiles-SquareTiles-SquareTiles-SquareorDesktopTile7-AppIdOrPath](microsoft-windows-shell-setup-starttiles-squaretiles-squareordestoptile12-appidorpath7-appidorpath.md) thru [Microsoft-Windows-Shell-Setup-StartTiles-SquareTiles-SquareTiles-SquareorDestopTile12-AppIdOrPath](microsoft-windows-shell-setup-starttiles-squaretiles-squareordestoptile12-appidorpath.md)</p></td>
 <td><p>Specifies the <code>AppID</code> of the Windows Store apps, or the path to the desktop apps that appear as square tiles on the <strong>Start</strong> screen.</p></td>
 </tr>
 <tr class="odd">
@@ -67,12 +67,12 @@ This topic describes Windows 10, version 1607 answer-file settings that have ch
 <td><p>Specifies the background task that is active, or live, by default for a tile when a user signs in to Windows for the first time.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Microsoft-Windows-Shell-Setup-StartTiles-RegionalOverrides-RegionalOveride-SquareTiles-SquareTiles-SquareOrDesktopTile7](microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloveride-squaretiles-squaretiles-squareordesktoptile7.md) thru [Microsoft-Windows-Shell-Setup-StartTiles-RegionalOverrides-RegionalOveride-SquareTiles-SquareTiles-SquareOrDesktopTile12](squareordesktoptile12.md)</p></td>
+<td><p>[Microsoft-Windows-Shell-Setup-StartTiles-RegionalOverrides-RegionalOveride-SquareTiles-SquareTiles-SquareOrDesktopTile7](microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloveride-squaretiles-squareordesktoptile7.md) thru [Microsoft-Windows-Shell-Setup-StartTiles-RegionalOverrides-RegionalOveride-SquareTiles-SquareOrDesktopTile12](microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloveride-squaretiles-squareordesktoptile12.md)</p></td>
 <td><p>Specifies which application appears as a square tile on the <strong>Start</strong> menu, in the given position 7-12</p>
 <p>If the region of the current user account is among those in the Start Tile regional overrides, you can use this setting. For more information, see [RegionalOverrides](microsoft-windows-shell-setup-starttiles-regionaloverrides.md).</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Microsoft-Windows-Shell-Setup-StartTiles-RegionalOverrides-RegionalOveride-SquareTiles-SquareTiles-SquareorDesktopTile7-AppIdOrPath](Microsoft-Windows-Shell-Setup-starttiles-regionaloverrides-regionaloverride-squaretiles-squareordesktoptile7-appidorpath.md) thru [Microsoft-Windows-Shell-Setup-StartTiles-RegionalOverrides-RegionalOveride-SquareTiles-SquareTiles-SquareorDesktopTile12-AppIdOrPath](Microsoft-Windows-Shell-Setup-starttiles-regionaloverrides-regionaloverride-squaretiles-squareordesktoptile12-appidorpath.md)</p></td>
+<td><p>[Microsoft-Windows-Shell-Setup-StartTiles-RegionalOverrides-RegionalOveride-SquareTiles-SquareTiles-SquareorDesktopTile7-AppIdOrPath](Microsoft-Windows-Shell-Setup-starttiles-regionaloverrides-regionaloverride-squaretiles-squareordesktoptile7-appidorpath.md) thru [Microsoft-Windows-Shell-Setup-StartTiles-RegionalOverrides-RegionalOveride-SquareTiles-SquareorDesktopTile12-AppIdOrPath](Microsoft-Windows-Shell-Setup-starttiles-regionaloverrides-regionaloverride-squaretiles-squareordesktoptile12-appidorpath.md)</p></td>
 <td><p>Specifies the <code>AppID</code> of the Windows Store apps, or the path to the desktop apps that appear as square tiles on the <strong>Start</strong> screen.</p></td>
 </tr>
 <tr class="even">
@@ -80,11 +80,11 @@ This topic describes Windows 10, version 1607 answer-file settings that have ch
 <td><p>Specifies the background task that is active, or live, by default for a tile when a user signs in to Windows for the first time.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Microsoft-Windows-Shell-Setup-Themes-UWPAppsUseLightTheme](Microsoft-Windows-Shell-Setup-Themes-uwpappsuselighttheme.md)</p></td>
+<td><p>[Microsoft-Windows-Shell-Setup-Themes-UWPAppsUseLightTheme](microsoft-windows-shell-setup-themes-uwpappsuselighttheme.md)</p></td>
 <td><p>Specifies whether the dark mode is applied.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Microsoft-Windows-TwinUI-CustomProtocol](Microsoft-Windows-TwinUI-customprotocol.md)</p></td>
+<td><p>[Microsoft-Windows-TwinUI-CustomProtocol](microsoft-windows-twinui-customprotocol.md)</p></td>
 <td><p>Specifies advanced pen settings.</p></td>
 </tr>
 </tbody>
