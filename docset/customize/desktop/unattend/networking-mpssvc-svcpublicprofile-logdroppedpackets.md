@@ -40,7 +40,7 @@ ms.sitesec: msdn
 ## Parent Hierarchy
 
 
-[Networking-MPSSVC-Svc](Windowsnetworking-mpssvc-svc.md) | **PublicProfile\_LogDroppedPackets**
+[Networking-MPSSVC-Svc](networking-mpssvc-svc.md) | **PublicProfile\_LogDroppedPackets**
 
 ## Valid Passes
 
