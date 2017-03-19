@@ -112,7 +112,7 @@ The following table lists Windows operating systems and the supported list of ar
 ## Related topics
 
 
-[Windows System Image Manager Reference Topics](windows-system-image-manager-reference-topics.md)
+[Windows System Image Manager Reference Topics](windows-system-image-manager-technical-reference.md)
 
  
 

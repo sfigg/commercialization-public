@@ -381,7 +381,7 @@ You can use Windows SIM to modify a list item that is defined in a Windows imag
 ## Related topics
 
 
-[Windows System Image Manager Reference Topics](windows-system-image-manager-reference-topics.md)
+[Windows System Image Manager Reference Topics](windows-system-image-manager-technical-reference.md)
 
 [Windows System Image Manager Overview Topics](windows-system-image-manager-overview-topics.md)
 
