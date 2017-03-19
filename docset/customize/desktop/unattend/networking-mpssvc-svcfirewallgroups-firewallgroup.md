@@ -33,7 +33,7 @@ ms.sitesec: msdn
 <td><p>Specifies a Windows Firewall group name</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Key](networking-mpssvc-svcfirewallgroups-firewall-groupkey.md)</p></td>
+<td><p>[Key](networking-mpssvc-svcfirewallgroups-firewallgroup-key.md)</p></td>
 <td><p>Specifies a unique name that you can use to identify the Firewall group.</p></td>
 </tr>
 <tr class="even">

@@ -36,7 +36,7 @@ ms.sitesec: msdn
 ## Parent Hierarchy
 
 
-[Networking-MPSSVC-Svc](Windowsnetworking-mpssvc-svc.md) | **PublicProfile\_LogFileSize**
+[Networking-MPSSVC-Svc](networking-mpssvc-svc.md) | **PublicProfile\_LogFileSize**
 
 ## Valid Passes
 
