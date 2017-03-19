@@ -46,7 +46,7 @@ The following topics provide reference information about Windows® System Image
 
 [Windows Deployment Options](http://go.microsoft.com/fwlink/?LinkId=214574)
 
-[Windows System Image Manager Technical Reference](windows-system-image-manager-technical-reference-.md)
+[Windows System Image Manager Technical Reference](windows-system-image-manager-technical-reference.md)
 
  
 
