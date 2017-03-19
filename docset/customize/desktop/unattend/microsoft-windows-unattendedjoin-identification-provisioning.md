@@ -30,7 +30,7 @@ Use either Provisioning or [Credentials](microsoft-windows-unattendedjoin-identi
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[AccountData](microsoft-windows-unattendjoin-identification-provisioning-accountdata.md)</p></td>
+<td><p>[AccountData](microsoft-windows-unattendedjoin-identification-provisioning-accountdata.md)</p></td>
 <td><p>Specifies account data used when joining a domain.</p></td>
 </tr>
 </tbody>
