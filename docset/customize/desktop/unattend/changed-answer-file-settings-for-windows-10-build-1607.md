@@ -72,7 +72,7 @@ This topic describes Windows 10, version 1607 answer-file settings that have ch
 <p>If the region of the current user account is among those in the Start Tile regional overrides, you can use this setting. For more information, see [RegionalOverrides](microsoft-windows-shell-setup-starttiles-regionaloverrides.md).</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Microsoft-Windows-Shell-Setup-StartTiles-RegionalOverrides-RegionalOveride-SquareTiles-SquareorDesktopTile7-AppIdOrPath](microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverride-squaretiles-squareordesktoptile7-appidorpath.md) thru [Microsoft-Windows-Shell-Setup-StartTiles-RegionalOverrides-RegionalOveride-SquareTiles-SquareorDesktopTile12-AppIdOrPath](microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverride-squaretiles-squareordesktoptile712-appidorpath.md)</p></td>
+<td><p>[Microsoft-Windows-Shell-Setup-StartTiles-RegionalOverrides-RegionalOveride-SquareTiles-SquareorDesktopTile7-AppIdOrPath](microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverride-squaretiles-squareordesktoptile7-appidorpath.md) thru [Microsoft-Windows-Shell-Setup-StartTiles-RegionalOverrides-RegionalOveride-SquareTiles-SquareorDesktopTile12-AppIdOrPath](microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverride-squaretiles-squareordesktoptile12-appidorpath.md)</p></td>
 <td><p>Specifies the <code>AppID</code> of the Windows Store apps, or the path to the desktop apps that appear as square tiles on the <strong>Start</strong> screen.</p></td>
 </tr>
 <tr class="even">
