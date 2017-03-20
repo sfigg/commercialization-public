@@ -140,6 +140,7 @@
 #### [Battery and charging](design/component-guidelines/battery-and-charging.md)
 #### [Battery Saver](design/component-guidelines/battery-saver.md)
 ### [Bluetooth](design/component-guidelines/bluetooth.md)
+### [Bluetooth LE pre-pairing](design/component-guidelines/bluetooth-prepairing.md)
 ### [Display](design/component-guidelines/display.md)
 ### [Ethernet](design/component-guidelines/ethernet.md)
 ### [Graphics](design/component-guidelines/graphics.md)
