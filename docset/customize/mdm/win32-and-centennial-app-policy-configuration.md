@@ -1,9 +1,9 @@
 ---
-title: ADMX-backed policies for Win32 apps
-description: Starting in Windows 10, version 1703, you can add ADMX-backed policies for Windows 10 mobile device management (MDM) across Windows 10 devices.
+title: Win32 and Centennial app policy configuration
+description: Starting in Windows 10, version 1703, you can import ADMX files and set those ADMX-backed policies for Win32 and Centennial apps.
 ---
 
-# ADMX-backed policies for Win32 apps
+# Win32 and Centennial app policy configuration
 
 > [!WARNING]
 > Some information relates to pre-released product, which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.  
@@ -11,23 +11,23 @@ description: Starting in Windows 10, version 1703, you can add ADMX-backed polic
 ## In this section
 
 -   [Overview](#overview)
--   [Ingesting a Win32 app ADMX file](#ingesting-a-win32-app-admx-file)
--   [URI format for configuring a Win32 app policy](#uri-format-for-configuring-a-win32-policy)
--   [ADMX-backed Win32 app policy examples](#admx-backed-win32-app-policy-examples)
-    - [Enabling a Win32 app policy](#enabling-a-win32-app-policy)
-    - [Disabling a Win32 app policy](#disabling-a-win32-app-policy)
-    - [Setting a Win32 app policy to not configured](#setting-a-win32-app-policy-to-not-configured)
+-   [Ingesting an app ADMX file](#ingesting-an-app-admx-file)
+-   [URI format for configuring an app policy](#uri-format-for-configuring-an-app-policy)
+-   [ADMX-backed app policy examples](#admx-backed-app-policy-examples)
+    - [Enabling an app policy](#enabling-an-app-policy)
+    - [Disabling an app policy](#disabling-an-app-policy)
+    - [Setting an app policy to not configured](#setting-an-app-policy-to-not-configured)
 
 ## <a href="" id="overview"></a>Overview
 
-Starting in Windows 10, version 1703, you can import ADMX files (also called ADMX ingestion) and set those ADMX-backed policies for Win32 apps by using Windows 10 Mobile Device Management (MDM) on desktop SKUs. The ADMX files that define policy information can be ingested to your device by using the Policy CSP URI, `./Device/Vendor/MSFT/Policy/ConfigOperations/ADMXInstall`. The ingested ADMX file is then processed into MDM policies.
+Starting in Windows 10, version 1703, you can import ADMX files (also called ADMX ingestion) and set those ADMX-backed policies for Win32 and Centennial apps by using Windows 10 Mobile Device Management (MDM) on desktop SKUs. The ADMX files that define policy information can be ingested to your device by using the Policy CSP URI, `./Device/Vendor/MSFT/Policy/ConfigOperations/ADMXInstall`. The ingested ADMX file is then processed into MDM policies.
 
 When the ADMX policies are imported, the registry keys to which each policy is written are checked so that known system registry keys, or registry keys that are used by existing inbox policies or system components, are not overwritten. This precaution helps to avoid security concerns over opening the entire registry. Currently, the ingested policies are not allowed to write to locations within the **System**, **Software\Microsoft**, and **Software\Policies\Microsoft** keys.
 
 
-## <a href="" id="ingesting-a-win32-app-admx-file"></a>Ingesting a Win32 app ADMX file
+## <a href="" id="ingesting-an-app-admx-file"></a>Ingesting an app ADMX file
 
-The following ADMX file example shows how to ingest an ADMX file and set policies from the file. The ADMX file defines eight policies.
+The following ADMX file example shows how to ingest a Win32 or Centennial app ADMX file and set policies from the file. The ADMX file defines eight policies.
 
 **Payload**
 ```XML
@@ -325,9 +325,9 @@ The following example shows an ADMX file in SyncML format:
 <Status><CmdID>2</CmdID><MsgRef>1</MsgRef><CmdRef>102</CmdRef><Cmd>Add</Cmd><Data>200</Data></Status>
 ```
 
-### <a href="" id="uri-format-for-configuring-a-win32-policy"></a>URI format for configuring a Win32 app policy 
+### <a href="" id="uri-format-for-configuring-an-app-policy"></a>URI format for configuring an app policy 
 
-The following example shows how to derive the Win32 app policy name and policy area name:
+The following example shows how to derive a Win32 or Centennial app policy name and policy area name:
 
 ```XML
 <categories>
@@ -374,11 +374,11 @@ Therefore, from the example:
    - Policy area name: ContosoCompanyApp~Policy~ParentCategoryArea~Category2~Category3
    - URI: `./user/Vendor/MSFT/Policy/Config/ContosoCompanyApp~Policy~ParentCategoryArea~Category2~Category3/L_PolicyPreventRun_1`
 
-## <a href="" id="admx-backed-win32-app-policy-examples"></a>ADMX-backed Win32 app policy examples
+## <a href="" id="admx-backed-app-policy-examples"></a>ADMX-backed app policy examples
 
-The following examples describe how to set an ADMX-ingested policy.
+The following examples describe how to set an ADMX-ingested app policy.
 
-### <a href="" id="enabling-a-win32-app-policy"></a>Enabling a Win32 app policy
+### <a href="" id="enabling-an-app-policy"></a>Enabling an app policy
 
 **Payload**
 ```XML
@@ -414,7 +414,7 @@ The following examples describe how to set an ADMX-ingested policy.
 <Status><CmdID>2</CmdID><MsgRef>1</MsgRef><CmdRef>103</CmdRef><Cmd>Replace</Cmd><Data>200</Data></Status>
 ```
 
-### <a href="" id="disabling-a-win32-app-policy"></a>Disabling a Win32 app policy
+### <a href="" id="disabling-an-app-policy"></a>Disabling an app policy
 
 **Payload**
 ```XML
@@ -448,7 +448,7 @@ The following examples describe how to set an ADMX-ingested policy.
 <Status><CmdID>2</CmdID><MsgRef>1</MsgRef><CmdRef>104</CmdRef><Cmd>Replace</Cmd><Data>200</Data></Status>
 ```
 
-### <a href="" id="setting-a-win32-app-policy-to-not-configured"></a>Setting a Win32 app policy to not configured
+### <a href="" id="setting-an-app-policy-to-not-configured"></a>Setting an app policy to not configured
 
 **Payload**
 
