@@ -513,6 +513,11 @@ Each of these are described in further detail in the following sections, along w
 <a href="" id="restartcount"></a>**RestartCount** (TPM 2.0 only)
 <p style="margin-left: 20px">This attribute reports the number of times a PC device has rebooted</p>
 
+<a href="" id="deppolicy"></a>**DEPPolicy**  
+<p style="margin-left: 20px">A device can be trusted more if the DEP Policy is enabled on the device.</p>
+
+<p style="margin-left: 20px">Data Execution Prevention (DEP) Policy defines is a set of hardware and software technologies that perform additional checks on memory to help prevent malicious code from running on a system. Secure boot allows a limited list on x86/amd64 and on ARM NTOS locks it to on.</p>
+
 <p style="margin-left: 20px">DEPPolicy can be disabled or enabled by using the following commands in WMI or a PowerShell script:</p>
 
 -   To disable DEP, type **bcdedit.exe /set {current} nx AlwaysOff**
@@ -528,7 +533,7 @@ Each of these are described in further detail in the following sections, along w
 -   Take one of the previous actions and additionally place the device in a watch list to monitor the device more closely for potential risks.
 
 <a href="" id="bitlockerstatus"></a>**BitlockerStatus** (at boot time) 
-<p style="margin-left: 20px">When Bitlocker is on, the device is able to protect data that is stored on the drive from unauthorized access, when the system is turned off or goes to hibernation.</p>
+<p style="margin-left: 20px">When Bitlocker is on at boot time, the device is able to protect data that is stored on the drive from unauthorized access, when the system is turned off or goes to hibernation.</p>
 
 <p style="margin-left: 20px">Windows BitLocker Drive Encryption, encrypts all data stored on the Windows operating system volume. BitLocker uses the TPM to help protect the Windows operating system and user data and helps to ensure that a computer is not tampered with, even if it is left unattended, lost, or stolen.</p>
 
@@ -568,7 +573,7 @@ Each of these are described in further detail in the following sections, along w
 -   Trigger a corrective action, such as such as informing the technical support team to contact the owner investigate the issue.
 
 <a href="" id="securebootenabled"></a>**SecureBootEnabled**  
-<p style="margin-left: 20px">When Secure Boot is enabled, the system is forced to boot to a factory trusted state. Also, when Secure Boot is enabled, the core components used to boot the machine must have correct cryptographic signatures that are trusted by the organization that manufactured the device. The UEFI firmware verifies this before it lets the machine start. If any files have been tampered with, breaking their signature, the system will not boot.</p>
+<p style="margin-left: 20px">When Secure Boot is enabled the core components used to boot the machine must have correct cryptographic signatures that are trusted by the organization that manufactured the device. The UEFI firmware verifies this before it lets the machine start. If any files have been tampered with, breaking their signature, the system will not boot.</p>
 
 <p style="margin-left: 20px">If SecureBootEnabled = 1 (True), then allow access.</p>
 
@@ -608,59 +613,6 @@ Each of these are described in further detail in the following sections, along w
 -   Place the device in a watch list to monitor the device more closely for potential risks.
 -   Trigger a corrective action, such as such as informing the technical support team to contact the owner investigate the issue.
 
-
-
-
-
-
-
-
-
-
-
-<a href="" id="bootappsvn"></a>**BootAppSVN**
-<p style="margin-left: 20px">This attribute identifies the security version number of the Boot Application that was loaded during initial boot on the attested device</p>
-
-<p style="margin-left: 20px">If reported BootAppSVN equals an accepted value, then allow access.</p>
-
- <p style="margin-left: 20px">If reported BootAppSVN does not equal an accepted value, then take one of the following actions that align with your enterprise policies:</p>
-
-- Disallow all access
-- Direct the device to an enterprise honeypot, to further monitor the device's activities.
-
-
-
-
-<a href="" id="bootmanagersvn"></a>**BootManagerSVN**
-<p style="margin-left: 20px">This attribute identifies the security version number of the Boot Manager that was loaded during initial boot on the attested device.</p>
-
-<p style="margin-left: 20px">If reported BootManagerSVN equals an accepted value, then allow access.</p>
-
-<p style="margin-left: 20px">If reported BootManagerSVN does not equal an accepted value, then take one of the following actions that align with your enterprise policies:</p>
-
-- Disallow all access
-- Direct the device to an enterprise honeypot, to further monitor the device's activities.
-
-<a href="" id="bootrevlistinfo"></a>**BootRevListInfo**
-<p style="margin-left: 20px">This attribute identifies the Boot Revision List that was loaded during initial boot on the attested device.</p>
-
-<p style="margin-left: 20px">If reported BootRevListInfo version equals an accepted value, then allow access.</p>
-
-<p style="margin-left: 20px">If reported BootRevListInfo version does not equal an accepted value, then take one of the following actions that align with your enterprise policies:</p>
-
-- Disallow all access
-- Direct the device to an enterprise honeypot, to further monitor the device's activities.
-
-<a href="" id="cipolicy"></a>**CIPolicy**
-<p style="margin-left: 20px">This attribute indicates the Code Integrity policy that is controlling the security of the boot environment.</p>
-
-<p style="margin-left: 20px">If CIPolicy is not present, or is an accepted (whitelisted) value, then allow access.</p>
-
-<p style="margin-left: 20px">If CIPolicy is present and is not a whitelisted value, then take one of the following actions that align with your enterprise policies:</p>
-
-- Disallow all access
-- Place the device in a watch list to monitor the device more closely for potential risks.
-
 <a href="" id="codeintegrityenabled"></a>**CodeIntegrityEnabled**  
 <p style="margin-left: 20px">When code integrity is enabled, code execution is restricted to integrity verified code.</p>
 
@@ -676,93 +628,6 @@ Each of these are described in further detail in the following sections, along w
 -   Disallow access to HBI assets
 -   Allow conditional access based on other data points that are present at evaluation time. For example, other attributes on the health certificate, or a devices past activities and trust history.
 -   Take one of the previous actions and additionally place the device in a watch list to monitor the device more closely for potential risks.
-
-
-
-<a href="" id="deppolicy"></a>**DEPPolicy**  
-<p style="margin-left: 20px">A device can be trusted more if the DEP Policy is enabled on the device.</p>
-
-<p style="margin-left: 20px">Data Execution Prevention (DEP) Policy defines is a set of hardware and software technologies that perform additional checks on memory to help prevent malicious code from running on a system. Secure boot allows a limited list on x86/amd64 and on ARM NTOS locks it to on.</p>
-
-
-
-<a href="" id="elamdriverloaded"></a>**ELAMDriverLoaded**  
-<p style="margin-left: 20px">Early launch anti-malware (ELAM) provides protection for the computers in your network when they start up and before third-party drivers initialize.</p>
-
-<p style="margin-left: 20px">In the current release, this attribute only monitors/reports if a Microsoft 1st party ELAM  (Windows Defender) was loaded during initial boot.</p>
-
-<p style="margin-left: 20px">If a device is expected to use a 3rd party antivirus program, ignore the reported state.</p>
-
-<p style="margin-left: 20px">If a device is expected to use Windows Defender and ELAMDriverLoaded = 1 (True), then allow access.</p>
-
-<p style="margin-left: 20px">If a device is expected to use Windows Defender and ELAMDriverLoaded = 0 (False), then take one of the following actions that align with your enterprise policies, also accounting for whether it is a desktop or mobile device:</p>
-
--   Disallow all access
--   Disallow access to HBI assets
--   Trigger a corrective action, such as informing the technical support team to contact the owner investigate the issue.
-
-<a href="" id="healthstatusmismatchflags"></a>**HealthStatusMismatchFlags**
-<p style="margin-left: 20px">HealthStatusMismatchFlags attribute appears if DHA-Service detects an integrity issue (mismatch) in the DHA-Data it receives from device management solutions, for validation.</p>
-
-<p style="margin-left: 20px">In case of a detected issue a list of impacted DHA-report elements will be listed under the HealthStatusMismatchFlags attribute.</p>
-
-<p style="margin-left: 20px">If HealthStatusMismatchFlags appears in a DHA-report:</p>
-
-- Disallow all access
-- Further root cause the reported issues: investigate the mismatched/reported attributes
-
-
-
-<a href="" id="osrevlistinfo"></a>**OSRevListInfo**
-<p style="margin-left: 20px">This attribute identifies the Operating System Revision List that was loaded during initial boot on the attested device.</p>
-
-<p style="margin-left: 20px">If reported OSRevListInfo version equals an accepted value, then allow access.</p>
-
-<p style="margin-left: 20px">If reported OSRevListInfo version does not equal an accepted value, then take one of the following actions that align with your enterprise policies:</p>
-
-- Disallow all access
-- Direct the device to an enterprise honeypot, to further monitor the device's activities.  
-
-<a href="" id="pcr0"></a>**PCR0**
-<p style="margin-left: 20px">The measurement that is captured in PCR\[0\] typically represents a consistent view of the Host Platform between boot cycles. It contains a measurement of components that are provided by the host platform manufacturer.</p>
-
-<p style="margin-left: 20px">Enterprise managers can create a whitelist of trusted PCR\[0\] values, compare the PCR\[0\] value of the managed devices (the value that is verified and reported by HAS) with the whitelist, and then make a trust decision based on the result of the comparison.</p>
-
-<p style="margin-left: 20px">If your enterprise does not have a whitelist of accepted PCR\[0\] values, then take no action.</p>
-
-<p style="margin-left: 20px">If PCR\[0\] equals an accepted whitelisted value, then allow access.</p>
-
-<p style="margin-left: 20px">If PCR\[0\] does not equal any accepted whitelisted value, then take one of the following actions that align with your enterprise policies:</p>
-
--   Disallow all access
--   Direct the device to an enterprise honeypot, to further monitor the device's activities.
-
-<a href="" id="pcrhashalgorithmid"></a>**PCRHashAlgorithmID**
-<p style="margin-left: 20px">This attribute is an informational attribute that identifies the HASH algorithm that was used by TPM; no compliance action required.</p>
-
-
-
-<a href="" id="safemode"></a>**SafeMode**  
-<p style="margin-left: 20px">Safe mode is a troubleshooting option for Windows that starts your computer in a limited state. Only the basic files and drivers necessary to run Windows are started.</p>
-
-<p style="margin-left: 20px">If SafeMode = 0 (False), then allow access.</p>
-
-<p style="margin-left: 20px">If SafeMode = 1 (True), then take one of the following actions that align with your enterprise policies:</p>
-
--   Disallow all access
--   Disallow access to HBI assets
--   Trigger a corrective action, such as informing the technical support team to contact the owner investigate the issue.
-
-<a href="" id="sbcphash"></a>**SBCPHash**
-<p style="margin-left: 20px">SBCPHash is the finger print of the Custom Secure Boot Configuration Policy (SBCP) that was loaded during boot in Windows devices, except PCs.</p>
-
-<p style="margin-left: 20px">If SBCPHash is not present, or is an accepted (whitelisted) value, then allow access.
-
-<p style="margin-left: 20px">If SBCPHash is present in DHA-Report, and is not a whitelisted value, then take one of the following actions that align with your enterprise policies:</p>
-
-- Disallow all access
-- Place the device in a watch list to monitor the device more closely for potential risks.
-
 
 <a href="" id="testsigningenabled"></a>**TestSigningEnabled**
 <p style="margin-left: 20px">When test signing is enabled, the device does not enforce signature validation during boot, and allows the unsigned drivers (such as unsigned UEFI modules) to load during boot.</p>
@@ -781,6 +646,86 @@ Each of these are described in further detail in the following sections, along w
 -   Place the device in a watch list to monitor the device more closely for potential risks.
 -   Trigger a corrective action, such as enabling test signing using WMI or a Powershell script.
 
+<a href="" id="safemode"></a>**SafeMode**  
+<p style="margin-left: 20px">Safe mode is a troubleshooting option for Windows that starts your computer in a limited state. Only the basic files and drivers necessary to run Windows are started.</p>
+
+<p style="margin-left: 20px">If SafeMode = 0 (False), then allow access.</p>
+
+<p style="margin-left: 20px">If SafeMode = 1 (True), then take one of the following actions that align with your enterprise policies:</p>
+
+-   Disallow all access
+-   Disallow access to HBI assets
+-   Trigger a corrective action, such as informing the technical support team to contact the owner investigate the issue.
+
+<a href="" id="winpe"></a>**WinPE**  
+<p style="margin-left: 20px">Windows pre-installation Environment (Windows PE) is a minimal operating system with limited services that is used to prepare a computer for Windows installation, to copy disk images from a network file server, and to initiate Windows Setup.</p>
+
+<p style="margin-left: 20px">If WinPE = 0 (False), then allow access.</p>
+
+<p style="margin-left: 20px">If WinPE = 1 (True), then limit access to remote resources that are required for Windows OS installation.</p>
+
+<a href="" id="elamdriverloaded"></a>**ELAMDriverLoaded**  (Windows Defender)
+<p style="margin-left: 20px">Early launch anti-malware (ELAM) provides protection for the computers in your network when they start up and before third-party drivers initialize.</p>
+
+<p style="margin-left: 20px">In the current release, this attribute only monitors/reports if a Microsoft 1st party ELAM  (Windows Defender) was loaded during initial boot.</p>
+
+<p style="margin-left: 20px">If a device is expected to use a 3rd party antivirus program, ignore the reported state.</p>
+
+<p style="margin-left: 20px">If a device is expected to use Windows Defender and ELAMDriverLoaded = 1 (True), then allow access.</p>
+
+<p style="margin-left: 20px">If a device is expected to use Windows Defender and ELAMDriverLoaded = 0 (False), then take one of the following actions that align with your enterprise policies, also accounting for whether it is a desktop or mobile device:</p>
+
+-   Disallow all access
+-   Disallow access to HBI assets
+-   Trigger a corrective action, such as informing the technical support team to contact the owner investigate the issue.
+
+**Bcdedit.exe /set {current} vsmlaunchtype auto**
+
+<p style="margin-left: 20px">If ELAMDriverLoaded = 1 (True), then allow access.</p>
+
+<p style="margin-left: 20px">If ELAMDriverLoaded = 0 (False), then take one of the following actions that align with your enterprise policies:</p>
+
+-   Disallow all access
+-   Disallow access to HBI assets
+-   Trigger a corrective action, such as informing the technical support team to contact the owner investigate the issue.
+
+<a href="" id="vsmenabled"></a>**VSMEnabled**  
+<p style="margin-left: 20px">Virtual Secure Mode (VSM) is a container that protects high value assets from a compromised kernel. VSM requires about 1GB of memory – it has just enough capability to run the LSA service that is used for all authentication brokering.</p>
+
+<p style="margin-left: 20px">VSM can be enabled by using the following command in WMI or a PowerShell script:</p>
+
+<p style="margin-left: 20px">cdedit.exe /set {current} vsmlaunchtype auto</p>
+
+<p style="margin-left: 20px">If VSMEnabled = 1 (True), then allow access.</p>
+<p style="margin-left: 20px">If VSMEnabled = 0 (False), then take one of the following actions that align with your enterprise policies:</p>
+
+- Disallow all access
+- Disallow access to HBI assets
+- Trigger a corrective action, such as informing the technical support team to contact the owner investigate the issue
+
+<a href="" id="pcrhashalgorithmid"></a>**PCRHashAlgorithmID**
+<p style="margin-left: 20px">This attribute is an informational attribute that identifies the HASH algorithm that was used by TPM; no compliance action required.</p>
+
+<a href="" id="bootappsvn"></a>**BootAppSVN**
+<p style="margin-left: 20px">This attribute identifies the security version number of the Boot Application that was loaded during initial boot on the attested device</p>
+
+<p style="margin-left: 20px">If reported BootAppSVN equals an accepted value, then allow access.</p>
+
+ <p style="margin-left: 20px">If reported BootAppSVN does not equal an accepted value, then take one of the following actions that align with your enterprise policies:</p>
+
+- Disallow all access
+- Direct the device to an enterprise honeypot, to further monitor the device's activities.
+
+<a href="" id="bootmanagersvn"></a>**BootManagerSVN**
+<p style="margin-left: 20px">This attribute identifies the security version number of the Boot Manager that was loaded during initial boot on the attested device.</p>
+
+<p style="margin-left: 20px">If reported BootManagerSVN equals an accepted value, then allow access.</p>
+
+<p style="margin-left: 20px">If reported BootManagerSVN does not equal an accepted value, then take one of the following actions that align with your enterprise policies:</p>
+
+- Disallow all access
+- Direct the device to an enterprise honeypot, to further monitor the device's activities.
+
 <a href="" id="tpmversion"></a>**TPMVersion**
 
 <p style="margin-left: 20px">This attribute identifies the version of the TPM that is running on the attested device.</p>
@@ -797,28 +742,64 @@ Each of these are described in further detail in the following sections, along w
     - Disallow all access
     - Direct the device to an enterprise honeypot, to further monitor the device's activities.
 
-<a href="" id="vsmenabled"></a>**VSMEnabled**  
-<p style="margin-left: 20px">Virtual Secure Mode (VSM) is a container that protects high value assets from a compromised kernel. VSM requires about 1GB of memory – it has just enough capability to run the LSA service that is used for all authentication brokering.</p>
+<a href="" id="pcr0"></a>**PCR0**
+<p style="margin-left: 20px">The measurement that is captured in PCR\[0\] typically represents a consistent view of the Host Platform between boot cycles. It contains a measurement of components that are provided by the host platform manufacturer.</p>
 
-<p style="margin-left: 20px">VSM can be enabled by using the following command in WMI or a PowerShell script:</p>
+<p style="margin-left: 20px">Enterprise managers can create a whitelist of trusted PCR\[0\] values, compare the PCR\[0\] value of the managed devices (the value that is verified and reported by HAS) with the whitelist, and then make a trust decision based on the result of the comparison.</p>
 
-<a href="" id="winpe"></a>**WinPE**  
-<p style="margin-left: 20px">Windows pre-installation Environment (Windows PE) is a minimal operating system with limited services that is used to prepare a computer for Windows installation, to copy disk images from a network file server, and to initiate Windows Setup.</p>
+<p style="margin-left: 20px">If your enterprise does not have a whitelist of accepted PCR\[0\] values, then take no action.</p>
 
-<p style="margin-left: 20px">If WinPE = 0 (False), then allow access.</p>
+<p style="margin-left: 20px">If PCR\[0\] equals an accepted whitelisted value, then allow access.</p>
 
-<p style="margin-left: 20px">If WinPE = 1 (True), then limit access to remote resources that are required for Windows OS installation.</p>
-
-**Bcdedit.exe /set {current} vsmlaunchtype auto**
-
-<p style="margin-left: 20px">If ELAMDriverLoaded = 1 (True), then allow access.</p>
-
-<p style="margin-left: 20px">If ELAMDriverLoaded = 0 (False), then take one of the following actions that align with your enterprise policies:</p>
+<p style="margin-left: 20px">If PCR\[0\] does not equal any accepted whitelisted value, then take one of the following actions that align with your enterprise policies:</p>
 
 -   Disallow all access
--   Disallow access to HBI assets
--   Trigger a corrective action, such as informing the technical support team to contact the owner investigate the issue.
+-   Direct the device to an enterprise honeypot, to further monitor the device's activities.
 
+<a href="" id="sbcphash"></a>**SBCPHash**
+<p style="margin-left: 20px">SBCPHash is the finger print of the Custom Secure Boot Configuration Policy (SBCP) that was loaded during boot in Windows devices, except PCs.</p>
+
+<p style="margin-left: 20px">If SBCPHash is not present, or is an accepted (whitelisted) value, then allow access.
+
+<p style="margin-left: 20px">If SBCPHash is present in DHA-Report, and is not a whitelisted value, then take one of the following actions that align with your enterprise policies:</p>
+
+- Disallow all access
+- Place the device in a watch list to monitor the device more closely for potential risks.
+
+<a href="" id="cipolicy"></a>**CIPolicy**
+<p style="margin-left: 20px">This attribute indicates the Code Integrity policy that is controlling the security of the boot environment.</p>
+
+<p style="margin-left: 20px">If CIPolicy is not present, or is an accepted (whitelisted) value, then allow access.</p>
+
+<p style="margin-left: 20px">If CIPolicy is present and is not a whitelisted value, then take one of the following actions that align with your enterprise policies:</p>
+
+- Disallow all access
+- Place the device in a watch list to monitor the device more closely for potential risks.
+
+<a href="" id="bootrevlistinfo"></a>**BootRevListInfo**
+<p style="margin-left: 20px">This attribute identifies the Boot Revision List that was loaded during initial boot on the attested device.</p>
+
+<p style="margin-left: 20px">If reported BootRevListInfo version equals an accepted value, then allow access.</p>
+
+<p style="margin-left: 20px">If reported BootRevListInfo version does not equal an accepted value, then take one of the following actions that align with your enterprise policies:</p>
+
+- Disallow all access
+- Direct the device to an enterprise honeypot, to further monitor the device's activities.
+
+<a href="" id="osrevlistinfo"></a>**OSRevListInfo**
+<p style="margin-left: 20px">This attribute identifies the Operating System Revision List that was loaded during initial boot on the attested device.</p>
+
+<p style="margin-left: 20px">If reported OSRevListInfo version equals an accepted value, then allow access.</p>
+
+<p style="margin-left: 20px">If reported OSRevListInfo version does not equal an accepted value, then take one of the following actions that align with your enterprise policies:</p>
+
+- Disallow all access
+- Direct the device to an enterprise honeypot, to further monitor the device's activities.  
+
+<a href="" id="healthstatusmismatchflags"></a>**HealthStatusMismatchFlags**
+<p style="margin-left: 20px">HealthStatusMismatchFlags attribute appears if DHA-Service detects an integrity issue (mismatch) in the DHA-Data it receives from device management solutions, for validation.</p>
+
+<p style="margin-left: 20px">In case of a detected issue a list of impacted DHA-report elements will be listed under the HealthStatusMismatchFlags attribute.</p>
 
 ## **Device HealthAttestation CSP status and error codes**
 
@@ -1134,6 +1115,46 @@ Each of these are described in further detail in the following sections, along w
     </xs:simpleType>
 </xs:schema>
 ```
+
+## DHA-Report example
+
+
+``` syntax
+<?xml version="1.0" encoding="utf-8"?>
+<HealthCertificateValidationResponse xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ErrorCode="0" ProtocolVersion="0"
+xmlns="http://schemas.microsoft.com/windows/security/healthcertificate/validation/response/v3">
+<HealthCertificateProperties>
+     <Issued>2016-10-21T02:12:58.6656577Z</Issued>
+     <AIKPresent>false</AIKPresent>
+     <ResetCount>2107533174</ResetCount>
+     <RestartCount>2749041230</RestartCount>
+     <DEPPolicy>0</DEPPolicy>
+     <BitlockerStatus>0</BitlockerStatus>
+     <BootManagerRevListVersion>0</BootManagerRevListVersion>
+     <CodeIntegrityRevListVersion>0</CodeIntegrityRevListVersion>
+     <SecureBootEnabled>false</SecureBootEnabled>
+     <BootDebuggingEnabled>false</BootDebuggingEnabled>
+     <OSKernelDebuggingEnabled>false</OSKernelDebuggingEnabled>
+     <CodeIntegrityEnabled>true</CodeIntegrityEnabled>
+     <TestSigningEnabled>true</TestSigningEnabled>
+     <SafeMode>false</SafeMode>
+     <WinPE>false</WinPE>
+     <ELAMDriverLoaded>true</ELAMDriverLoaded>
+     <VSMEnabled>false</VSMEnabled>
+     <PCRHashAlgorithmID>0</PCRHashAlgorithmID>
+     <BootAppSVN>1</BootAppSVN>
+     <BootManagerSVN>1</BootManagerSVN>
+     <TpmVersion>2</TpmVersion>
+     <PCR0>4ACCBE0ADB9627FFD6285C2E06EC5AC59ABF62C7</PCR0> 
+     <CIPolicy>00000000000001001A000B00200000005300690050006F006C006900630079002E007000370062000000A4BF7EF05585876A61CBFF7CAE8123BE756D58B1BBE04F9719D15D6271514CF5</CIPolicy>
+     <BootRevListInfo>005D447A7CC6D101200000000B00CBB56E8B19267E24A2986C4A616CCB58B4D53F6020AC8FD5FC205C20F2AB00BC</BootRevListInfo>
+     <OSRevListInfo>8073EEA7F8FAD001200000000B00A8285B04DE618ACF4174C59F07AECC002D11DD7D97FA5D464F190C9D9E3479BA</OSRevListInfo>
+ </HealthCertificateProperties>
+</HealthCertificateValidationResponse>
+```
+
+
 
 ## Related topics
 
