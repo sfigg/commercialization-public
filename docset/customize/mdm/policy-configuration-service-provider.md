@@ -3076,7 +3076,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>IoT Core</p></td>
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>EAS</p></td></tr>
 	<tr>
-		<td style="vertical-align:top"><a href="#settings-appinstallcontrol">SmartScreen/AppInstallControl</a></td>
+		<td style="vertical-align:top"><a href="#smartscreen-enableappinstallcontrol">SmartScreen/EnableAppInstallControl</a></td>
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Home</p></td>
 		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Pro</p></td>
 		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Business</p></td>
@@ -3087,7 +3087,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>IoT Core</p></td>
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>EAS</p></td></tr>
 	<tr>
-		<td style="vertical-align:top"><a href="#settings-enablesmartscreeninshell">SmartScreen/EnableSmartScreenInShell</a></td>
+		<td style="vertical-align:top"><a href="#smartscreen-enablesmartscreeninshell">SmartScreen/EnableSmartScreenInShell</a></td>
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Home</p></td>
 		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Pro</p></td>
 		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Business</p></td>
@@ -3098,7 +3098,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>IoT Core</p></td>
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>EAS</p></td></tr>
 	<tr>
-		<td style="vertical-align:top"><a href="#settings-smartscreenshellenforcementlevel">SmartScreen/SmartScreenShellEnforcementLevel</a></td>
+		<td style="vertical-align:top"><a href="#smartscreen-preventoverrideforfilesinshell">SmartScreen/PreventOverrideForFilesInShell</a></td>
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Home</p></td>
 		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Pro</p></td>
 		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Business</p></td>
@@ -7111,28 +7111,28 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 2.   Configure the policy with the following string: "hide:about".
 3.   Open System Settings again and verify that the About page is no longer accessible.
 
-<a href="" id="settings-appinstallcontrol"></a>**SmartScreen/AppInstallControl**  
+<a href="" id="smartscreen-enableappinstallcontrol"></a>**SmartScreen/EnableAppInstallControl**  
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Allows IT Admins to control whether users are allowed to install apps from places other than the Store.
 
 <p style="margin-left: 20px">The following list shows the supported values:
 
--   0 (default) – Turns off Application Installation Control, allowing users to download and install files from anywhere on the web.
+-   0 – Turns off Application Installation Control, allowing users to download and install files from anywhere on the web.
 -   1 – Turns on Application Installation Control, allowing users to only install apps from the Store.
 
-<a href="" id="settings-enablesmartscreeninshell"></a>**SmartScreen/EnableSmartScreenInShell**  
+<a href="" id="smartscreen-enablesmartscreeninshell"></a>**SmartScreen/EnableSmartScreenInShell**  
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Allows IT Admins to configure SmartScreen for Windows.
 
 <p style="margin-left: 20px">The following list shows the supported values:
 
--   0 (default)– Turns off SmartScreen in Windows.
+-   0 – Turns off SmartScreen in Windows.
 -   1 – Turns on SmartScreen in Windows.
 
-<a href="" id="settings-smartscreenshellenforcementlevel"></a>**SmartScreen/SmartScreenShellEnforcementLevel**  
+<a href="" id="smartscreen-preventoverrideforfilesinshell"></a>**SmartScreen/PreventOverrideForFilesInShell**  
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Allows IT Admins to control whether users can can ignore SmartScreen warnings and run malicious files.
 
 <p style="margin-left: 20px">The following list shows the supported values:
 
--   0 (default) – Employees can ignore SmartScreen warnings and run malicious files.
+-   0 – Employees can ignore SmartScreen warnings and run malicious files.
 -   1 – Employees cannot ignore SmartScreen warnings and run malicious files.
 
 <a href="" id="speech-allowspeechmodelupdate"></a>**Speech/AllowSpeechModelUpdate**  
