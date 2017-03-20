@@ -38,9 +38,8 @@ See the following sections for more information about what you can do to customi
 <td><p>Read about what topics have been created, updated, or deleted for Windows 10, build 1607.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Customizations for desktop devices](desktop-customizations-portal.md)</p></td>
-<td><p>Learn which framework best meets your needs if you're customizing Windows 10 for desktop editions.</p>
-<p>This section includes topics describing key tasks, as well as the reference for [Windows System Image Manager](https://msdn.microsoft.com/library/windows/hardware/dn922445) and [Unattend framework](customize-using-the-legacy-desktop-framework.md) settings.</p></td>
+<td><p>[Customizations for desktop devices](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/customize/desktop/desktop-customizations-portal)</p></td>
+<td><p>This section includes topics describing key tasks, as well as the reference for [Windows System Image Manager](https://msdn.microsoft.com/library/windows/hardware/dn922445) and [Unattended Windows Setup Reference](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/customize/desktop/unattend/index) settings.</p></td>
 </tr>
 <tr class="even">
 <td><p>[Customizations for enterprise desktop](enterprise\enterprise-custom-portal.md)</p></td>
@@ -49,11 +48,7 @@ See the following sections for more information about what you can do to customi
 <tr class="odd">
 <td><p>[Customizations for mobile](mobile/windows-10-mobile-customizations-portal.md)</p></td>
 <td><p>Learn about the capabilities that are available in Windows 10 Mobile.</p>
-<p>The additional topics in this section help with key tasks, as well as providing reference for the [mobile MCSF framework](p_phCustomization.Provisioning_and_customization).</p></td>
-</tr><tr class="even">
-<td><p>[Windows Provisioning framework](https://msdn.microsoft.com/library/windows/hardware/dn898375)</p></td>
-<td><p>Learn how to manage company policies and business applications, using run-time only provisioning settings. </p></td>
-</tr>
+</td>
 <tr class="odd">
 <td><p>[Mobile device management](mdm/index.md)</p></td>
 <td><p>Windows 10 provides an enterprise management solution to help IT pros manage company security policies and business applications, while avoiding compromise of the users’ privacy on their personal phones. A built-in management component can communicate with the management server.</p></td>
