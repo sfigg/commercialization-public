@@ -19,22 +19,22 @@ The following diagram shows the SurfaceHub CSP management objects in tree format
 ![surface hub diagram](images/provisioning-csp-surfacehub.png)
 
 <a href="" id="--vendor-msft-surfacehub"></a>**./Vendor/MSFT/SurfaceHub**  
-The root node for the Surface Hub configuration service provider.
+<p style="margin-left: 20px">The root node for the Surface Hub configuration service provider.
 
 <a href="" id="deviceaccount"></a>**DeviceAccount**  
-Node for setting device account information. A device account is a Microsoft Exchange account that is connected with Skype for Business, which allows people to join scheduled meetings, make Skype for Business calls, and share content from the device. See the Surface Hub administrator guide for more information about setting up a device account.
+<p style="margin-left: 20px">Node for setting device account information. A device account is a Microsoft Exchange account that is connected with Skype for Business, which allows people to join scheduled meetings, make Skype for Business calls, and share content from the device. See the Surface Hub administrator guide for more information about setting up a device account.
 
-**To use device account from Azure Active Directory**
+<p style="margin-left: 20px">To use a device account from Azure Active Directory
 
 1.  Set the UserPrincipalName (for Azure AD).
 2.  Set a valid Password.
 3.  Execute ValidateAndCommit to validate the specified username and password combination against Azure AD.
-4.  Get the ErrorContext in case something goes wrong during validation
+4.  Get the ErrorContext in case something goes wrong during validation.
 
 > [!NOTE]  If the device cannot auto-discover the Exchange server and Session Initiation Protocol (SIP) address from this information, you should specify the ExchangeServer and SipAddress.
 
  
-Here's a SyncML example.
+<p style="margin-left: 20px">Here's a SyncML example.
 
 ``` syntax
  <SyncML xmlns="SYNCML:SYNCML1.2">
@@ -84,7 +84,7 @@ Here's a SyncML example.
     </SyncML>
 ```
 
-**To use a device account from Active Directory**
+<p style="margin-left: 20px">To use a device account from Active Directory
 
 1.  Set the DomainName.
 2.  Set the UserName.
@@ -92,62 +92,62 @@ Here's a SyncML example.
 4.  Execute the ValidateAndCommit node.
 
 <a href="" id="deviceaccount-domainname"></a>**DeviceAccount/DomainName**  
-Domain of the device account when you are using Active Directory. To use a device account from Active Directory, you should specify both DomainName and UserName for the device account.
+<p style="margin-left: 20px">Domain of the device account when you are using Active Directory. To use a device account from Active Directory, you should specify both DomainName and UserName for the device account.
 
-The data type is char. Supported operation is Get and Replace.
+<p style="margin-left: 20px">The data type is char. Supported operation is Get and Replace.
 
 <a href="" id="deviceaccount-username"></a>**DeviceAccount/UserName**  
-Username of the device account when you are using Active Directory. To use a device account from Active Directory, you should specify both DomainName and UserName for the device account.
+<p style="margin-left: 20px">Username of the device account when you are using Active Directory. To use a device account from Active Directory, you should specify both DomainName and UserName for the device account.
 
-The data type is char. Supported operation is Get and Replace.
+<p style="margin-left: 20px">The data type is char. Supported operation is Get and Replace.
 
 <a href="" id="deviceaccount-userprincipalname"></a>**DeviceAccount/UserPrincipalName**  
-User principal name (UPN) of the device account. To use a device account from Azure Active Directory or a hybrid deployment, you should specify the UPN of the device account.
+<p style="margin-left: 20px">User principal name (UPN) of the device account. To use a device account from Azure Active Directory or a hybrid deployment, you should specify the UPN of the device account.
 
-The data type is char. Supported operation is Get and Replace.
+<p style="margin-left: 20px">The data type is char. Supported operation is Get and Replace.
 
 <a href="" id="deviceaccount-sipaddress"></a>**DeviceAccount/SipAddress**  
-Session Initiation Protocol (SIP) address of the device account. Normally, the device will try to auto-discover the SIP. This field is only required if auto-discovery fails.
+<p style="margin-left: 20px">Session Initiation Protocol (SIP) address of the device account. Normally, the device will try to auto-discover the SIP. This field is only required if auto-discovery fails.
 
-The data type is char. Supported operation is Get and Replace.
+<p style="margin-left: 20px">The data type is char. Supported operation is Get and Replace.
 
 <a href="" id="deviceaccount-password"></a>**DeviceAccount/Password**  
-Password for the device account.
+<p style="margin-left: 20px">Password for the device account.
 
-The data type is char. Supported operation is Get and Replace. The operation Get is allowed, but it will always return a blank.
+<p style="margin-left: 20px">The data type is char. Supported operation is Get and Replace. The operation Get is allowed, but it will always return a blank.
 
 <a href="" id="deviceaccount-validateandcommit"></a>**DeviceAccount/ValidateAndCommit**  
-This method validates the data provided and then commits the changes.
+<p style="margin-left: 20px">This method validates the data provided and then commits the changes.
 
-The data type is char. Supported operation is Execute.
+<p style="margin-left: 20px">The data type is char. Supported operation is Execute.
 
 <a href="" id="deviceaccount-email"></a>**DeviceAccount/Email**  
-Email address of the device account.
+<p style="margin-left: 20px">Email address of the device account.
 
-The data type is char.
+<p style="margin-left: 20px">The data type is char.
 
 <a href="" id="deviceaccount-passwordrotationperiod"></a>**DeviceAccount/PasswordRotationPeriod**  
-Specifies whether automatic password rotation is enabled. If you enforce a password expiration policy on the device account, use this setting to allow the device to manage its own password by changing it frequently, without requiring you to manually update the account information when the password expires. You can reset the password at any time using Active Directory (or Azure AD).
+<p style="margin-left: 20px">Specifies whether automatic password rotation is enabled. If you enforce a password expiration policy on the device account, use this setting to allow the device to manage its own password by changing it frequently, without requiring you to manually update the account information when the password expires. You can reset the password at any time using Active Directory (or Azure AD).
 
-Valid values:
+<p style="margin-left: 20px">Valid values:
 
 -   0 - password rotation enabled
 -   1 - disabled
 
-The data type is int. Supported operation is Get and Replace.
+<p style="margin-left: 20px">The data type is int. Supported operation is Get and Replace.
 
 <a href="" id="deviceaccount-exchangeserver"></a>**DeviceAccount/ExchangeServer**  
-Exchange server of the device account. Normally, the device will try to auto-discover the Exchange server. This field is only required if auto-discovery fails.
+<p style="margin-left: 20px">Exchange server of the device account. Normally, the device will try to auto-discover the Exchange server. This field is only required if auto-discovery fails.
 
-The data type is char. Supported operation is Get and Replace.
+<p style="margin-left: 20px">The data type is char. Supported operation is Get and Replace.
 
 <a href="" id="deviceaccount-calendarsyncenabled"></a>**DeviceAccount/CalendarSyncEnabled**  
-Specifies whether calendar sync and other Exchange server services is enabled.
+<p style="margin-left: 20px">Specifies whether calendar sync and other Exchange server services is enabled.
 
-The data type is bool. Supported operation is Get and Replace.
+<p style="margin-left: 20px">The data type is bool. Supported operation is Get and Replace.
 
 <a href="" id="deviceaccount-errorcontext"></a>**DeviceAccount/ErrorContext**  
-If there is an error calling ValidateAndCommit, there is additional context for that error in this node. Here are the possible error values:
+<p style="margin-left: 20px">If there is an error calling ValidateAndCommit, there is additional context for that error in this node. Here are the possible error values:
 
 <table>
 <colgroup>
@@ -201,70 +201,70 @@ If there is an error calling ValidateAndCommit, there is additional context for 
 </tbody>
 </table>
  
-The data type is int. Supported operation is Get.
+<p style="margin-left: 20px">The data type is int. Supported operation is Get.
 
 <a href="" id="maintenancehourssimple-hours"></a>**MaintenanceHoursSimple/Hours**  
-Node for maintenance schedule.
+<p style="margin-left: 20px">Node for maintenance schedule.
 
 <a href="" id="maintenancehourssimple-hours-starttime"></a>**MaintenanceHoursSimple/Hours/StartTime**  
-Specifies the start time for maintenance hours in minutes from midnight. For example, to set a 2:00 am start time, set this value to 120.
+<p style="margin-left: 20px">Specifies the start time for maintenance hours in minutes from midnight. For example, to set a 2:00 am start time, set this value to 120.
 
-The data type is int. Supported operation is Get and Replace.
+<p style="margin-left: 20px">The data type is int. Supported operation is Get and Replace.
 
 <a href="" id="maintenancehourssimple-hours-duration"></a>**MaintenanceHoursSimple/Hours/Duration**  
-Specifies the duration of maintenance window in minutes. For example, to set a 3-hour duration, set this value to 180.
+<p style="margin-left: 20px">Specifies the duration of maintenance window in minutes. For example, to set a 3-hour duration, set this value to 180.
 
-The data type is int. Supported operation is Get and Replace.
+<p style="margin-left: 20px">The data type is int. Supported operation is Get and Replace.
 
 <a href="" id="inboxapps"></a>**InBoxApps**  
-Node for the in-box app settings.
+<p style="margin-left: 20px">Node for the in-box app settings.
 
 <a href="" id="inboxapps-skypeforbusiness"></a>**InBoxApps/SkypeForBusiness**   
-Added in Windows 10, version 1703. Node for the Skype for Business settings.
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Node for the Skype for Business settings.
 
 <a href="" id="inboxapps-skypeforbusiness-domainname"></a>**InBoxApps/SkypeForBusiness/DomainName**  
-Added in Windows 10, version 1703. Specifies the domain of the Skype for Business account when you are using Active Directory. For more information, see [Set up Skype for Business Online](https://support.office.com/en-us/article/Set-up-Skype-for-Business-Online-40296968-e779-4259-980b-c2de1c044c6e?ui=en-US&rs=en-US&ad=US#bkmk_users).
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies the domain of the Skype for Business account when you are using Active Directory. For more information, see [Set up Skype for Business Online](https://support.office.com/en-us/article/Set-up-Skype-for-Business-Online-40296968-e779-4259-980b-c2de1c044c6e?ui=en-US&rs=en-US&ad=US#bkmk_users).
 
-The data type is char. Supported operation is Get and Replace.
+<p style="margin-left: 20px">The data type is char. Supported operation is Get and Replace.
 
 <a href="" id="inboxapps-welcome"></a>**InBoxApps/Welcome**  
-Node for the welcome screen.
+<p style="margin-left: 20px">Node for the welcome screen.
 
 <a href="" id="inboxapps-welcome-autowakescreen"></a>**InBoxApps/Welcome/AutoWakeScreen**  
-Automatically turn on the screen using motion sensors.
+<p style="margin-left: 20px">Automatically turn on the screen using motion sensors.
 
-The data type is bool. Supported operation is Get and Replace.
+<p style="margin-left: 20px">The data type is bool. Supported operation is Get and Replace.
 
 <a href="" id="inboxapps-welcome-currentbackgroundpath"></a>**InBoxApps/Welcome/CurrentBackgroundPath**  
-Background image for the welcome screen. To set this, specify a https URL to a PNG file (only PNGs are supported for security reasons).
+<p style="margin-left: 20px">Background image for the welcome screen. To set this, specify a https URL to a PNG file (only PNGs are supported for security reasons).
 
-The data type is string. Supported operation is Get and Replace.
+<p style="margin-left: 20px">The data type is string. Supported operation is Get and Replace.
 
 <a href="" id="inboxapps-welcome-meetinginfooption"></a>**InBoxApps/Welcome/MeetingInfoOption**  
-Meeting information displayed on the welcome screen.
+<p style="margin-left: 20px">Meeting information displayed on the welcome screen.
 
-Valid values:
+<p style="margin-left: 20px">Valid values:
 
 -   0 - Organizer and time only
 -   1 - Organizer, time, and subject. Subject is hidden in private meetings.
 
-The data type is int. Supported operation is Get and Replace.
+<p style="margin-left: 20px">The data type is int. Supported operation is Get and Replace.
 
 <a href="" id="inboxapps-wirelessprojection"></a>**InBoxApps/WirelessProjection**  
-Node for the wireless projector app settings.
+<p style="margin-left: 20px">Node for the wireless projector app settings.
 
 <a href="" id="inboxapps-wirelessprojection-pinrequired"></a>**InBoxApps/WirelessProjection/PINRequired**  
-Users must enter a PIN to wirelessly project to the device.
+<p style="margin-left: 20px">Users must enter a PIN to wirelessly project to the device.
 
-The data type is bool. Supported operation is Get and Replace.
+<p style="margin-left: 20px">The data type is bool. Supported operation is Get and Replace.
 
 <a href="" id="inboxapps-wirelessprojection-enabled"></a>**InBoxApps/WirelessProjection/Enabled**  
-Enables wireless projection to the device.
+<p style="margin-left: 20px">Enables wireless projection to the device.
 
-The data type is bool. Supported operation is Get and Replace.
+<p style="margin-left: 20px">The data type is bool. Supported operation is Get and Replace.
 
 <a href="" id="inboxapps-wirelessprojection-channel"></a>**InBoxApps/WirelessProjection/Channel**  
-Wireless channel to use for Miracast operation. The supported channels are defined by the Wi-Fi Alliance Wi-Fi Direct specification.
+<p style="margin-left: 20px">Wireless channel to use for Miracast operation. The supported channels are defined by the Wi-Fi Alliance Wi-Fi Direct specification.
 
 <table>
 <colgroup>
@@ -288,35 +288,37 @@ Wireless channel to use for Miracast operation. The supported channels are defin
 </table>
 
  
-The default value is 255. Outside of regulatory concerns, if the channel is configured incorrectly the driver will either not boot, or will broadcast on the wrong channel (which senders won't be looking for).
+<p style="margin-left: 20px">The default value is 255. Outside of regulatory concerns, if the channel is configured incorrectly the driver will either not boot, or will broadcast on the wrong channel (which senders won't be looking for).
 
-The data type is int. Supported operation is Get and Replace.
+<p style="margin-left: 20px">The data type is int. Supported operation is Get and Replace.
 
 <a href="" id="inboxapps-connect"></a>**InBoxApps/Connect**  
-Added in Windows 10, version 1703. Node for the Connect app.
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Node for the Connect app.
 
 <a href="" id="inboxapps-welcome-autowakescreen"></a>**InBoxApps/Connect/AutoLaunch**  
-Added in Windows 10, version 1703. Specifies whether to automatically launch the Connect app whenever a projection is initiated.
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies whether to automatically launch the Connect app whenever a projection is initiated.
 
-The data type is bool. Supported operation is Get and Replace.
+<p style="margin-left: 20px">If this setting is true, the Connect app will be automatically launched. If false, the user will need to launch the Connect app manually from the Hub’s settings.
+
+<p style="margin-left: 20px">The data type is bool. Supported operation is Get and Replace.
 
 <a href="" id="properties"></a>**Properties**  
-Node for the device properties.
+<p style="margin-left: 20px">Node for the device properties.
 
 <a href="" id="properties-friendlyname"></a>**Properties/FriendlyName**  
-Friendly name of the device. Specifies the name that users see when they want to wirelessly project to the device.
+<p style="margin-left: 20px">Friendly name of the device. Specifies the name that users see when they want to wirelessly project to the device.
 
-The data type is string. Supported operation is Get and Replace.
+<p style="margin-left: 20px">The data type is string. Supported operation is Get and Replace.
 
 <a href="" id="properties-defaultvolume"></a>**Properties/DefaultVolume**  
-Added in Windows 10, version 1703. Specifies the default volume value for a new session. Permitted values are 0-100. The default is 45.
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies the default volume value for a new session. Permitted values are 0-100. The default is 45.
 
-The data type is int. Supported operation is Get and Replace.
+<p style="margin-left: 20px">The data type is int. Supported operation is Get and Replace.
 
 <a href="" id="properties-screentimeout"></a>**Properties/ScreenTimeout**  
-Added in Windows 10, version 1703. Specifies the number of minutes until the Hub screen turns off. 
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies the number of minutes until the Hub screen turns off. 
 
-The following table shows the permitted values.
+<p style="margin-left: 20px">The following table shows the permitted values.
 
 <table>
 <thead>
@@ -363,12 +365,12 @@ The following table shows the permitted values.
 </tbody>
 </table>
 
-The data type is int. Supported operation is Get and Replace.
+<p style="margin-left: 20px">The data type is int. Supported operation is Get and Replace.
 
 <a href="" id="properties-sessiontimeout"></a>**Properties/SessionTimeout**  
-Added in Windows 10, version 1703. Specifies the number of minutes until the session times out. 
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies the number of minutes until the session times out. 
 
-The following table shows the permitted values.
+<p style="margin-left: 20px">The following table shows the permitted values.
 
 <table>
 <thead>
@@ -415,12 +417,12 @@ The following table shows the permitted values.
 </tbody>
 </table>
 
-The data type is int. Supported operation is Get and Replace.
+<p style="margin-left: 20px">The data type is int. Supported operation is Get and Replace.
 
 <a href="" id="properties-sleeptimeout"></a>**Properties/SleepTimeout**  
-Added in Windows 10, version 1703. Specifies the number of minutes until the Hub enters sleep mode. 
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies the number of minutes until the Hub enters sleep mode. 
 
-The following table shows the permitted values.
+<p style="margin-left: 20px">The following table shows the permitted values.
 
 <table>
 <thead>
@@ -467,40 +469,48 @@ The following table shows the permitted values.
 </tbody>
 </table>
 
-The data type is int. Supported operation is Get and Replace.
+<p style="margin-left: 20px">The data type is int. Supported operation is Get and Replace.
 
 <a href="" id="properties-allowsessionresume"></a>**Properties/AllowSessionResume**  
-Added in Windows 10, version 1703. Specifies whether to resume the session when the session times out. 
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies whether to allow the ability to resume a session when the session times out. 
 
-The data type is bool. Supported operation is Get and Replace.
+<p style="margin-left: 20px">If this setting is true, the "Resume Session" feature will be available on the welcome screen when the screen is idle. If false, once the screen idles, the session will be automatically cleaned up as if the “End Session" feature was initiated. 
+
+<p style="margin-left: 20px">The data type is bool. Supported operation is Get and Replace.
 
 <a href="" id="properties-allowautoproxyauth"></a>**Properties/AllowAutoProxyAuth**  
-Added in Windows 10, version 1703. Specifies whether to use the device account for proxy authentication.
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies whether to use the device account for proxy authentication.
 
-The data type is bool. Supported operation is Get and Replace.
+<p style="margin-left: 20px">If this setting is true, the device account will be used for proxy authentication. If false, a separate account will be used.
+
+<p style="margin-left: 20px">The data type is bool. Supported operation is Get and Replace.
 
 <a href="" id="properties-disablesigninsuggestions"></a>**Properties/DisableSigninSuggestions**  
-Added in Windows 10, version 1703. Specifies whether to disable the sign-in bobble UI. 
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies whether to disable auto-populating of the sign-in dialog with invitees from scheduled meetings. 
 
-The data type is bool. Supported operation is Get and Replace.
+<p style="margin-left: 20px">If this setting is true, the sign-in dialog will not be populated. If false, the dialog will auto-populate.
+
+<p style="margin-left: 20px">The data type is bool. Supported operation is Get and Replace.
 
 <a href="" id="properties-donotshowmymeetingsandfiles"></a>**Properties/DoNotShowMyMeetingsAndFiles**  
-Added in Windows 10, version 1703. Specifies whether to disable the ability to sign in to O365 to retrieve the user’s meetings and cloud files. 
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies whether to disable the "My meetings and files" feature in the Start menu, which shows the signed-in user's meetings and files from Office 365.
 
-The data type is bool. Supported operation is Get and Replace.
+<p style="margin-left: 20px">If this setting is true, the “My meetings and files” feature will not be shown. When false, the “My meetings and files” feature will be shown.
+
+<p style="margin-left: 20px">The data type is bool. Supported operation is Get and Replace.
 
 <a href="" id="momagent"></a>**MOMAgent**  
-Node for the Microsoft Operations Management Suite.
+<p style="margin-left: 20px">Node for the Microsoft Operations Management Suite.
 
 <a href="" id="momagent-workspaceid"></a>**MOMAgent/WorkspaceID**  
-GUID identifying the Microsoft Operations Management Suite workspace ID to collect the data. Set this to an empty string to disable the MOM agent.
+<p style="margin-left: 20px">GUID identifying the Microsoft Operations Management Suite workspace ID to collect the data. Set this to an empty string to disable the MOM agent.
 
-The data type is string. Supported operation is Get and Replace.
+<p style="margin-left: 20px">The data type is string. Supported operation is Get and Replace.
 
 <a href="" id="momagent-workspacekey"></a>**MOMAgent/WorkspaceKey**  
-Primary key for authenticating with the workspace.
+<p style="margin-left: 20px">Primary key for authenticating with the workspace.
 
-The data type is string. Supported operation is Get and Replace. The Get operation is allowed, but it will always return an empty string.
+<p style="margin-left: 20px">The data type is string. Supported operation is Get and Replace. The Get operation is allowed, but it will always return an empty string.
 
  
 
