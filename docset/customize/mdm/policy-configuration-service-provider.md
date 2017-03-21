@@ -3978,7 +3978,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>IoT Core</p></td>
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>EAS</p></td></tr>
 	<tr>
-		<td style="vertical-align:top"><a href="#wifi-allowautoconnecttowifisensehotspots">WiFi/AllowAutoConnectToWiFiSenseHotspots</a></td>
+		<td style="vertical-align:top"><a href="#wifi-allowautoconnecttowifisensehotspots">Wifi/AllowAutoConnectToWiFiSenseHotspots</a></td>
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Home</p></td>
 		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png"><p>Pro</p></td>
 		<td style="vertical-align:top"><p></p></td>
@@ -3989,7 +3989,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png"><p>IoT Core</p></td>
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>EAS</p></td></tr>
 	<tr>
-		<td style="vertical-align:top"><a href="#wifi-allowinternetsharing">WiFi/AllowInternetSharing</a></td>
+		<td style="vertical-align:top"><a href="#wifi-allowinternetsharing">Wifi/AllowInternetSharing</a></td>
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Home</p></td>
 		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png"><p>Pro</p></td>
 		<td style="vertical-align:top"><p></p></td>
@@ -4000,7 +4000,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png"><p>IoT Core</p></td>
 		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png"><p>EAS</p></td></tr>
 	<tr>
-		<td style="vertical-align:top"><a href="#wifi-allowmanualwificonfiguration">WiFi/AllowManualWiFiConfiguration</a></td>
+		<td style="vertical-align:top"><a href="#wifi-allowmanualwificonfiguration">Wifi/AllowManualWiFiConfiguration</a></td>
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Home</p></td>
 		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">1<p>Pro</p></td>
 		<td style="vertical-align:top"><p></p></td>
@@ -4011,7 +4011,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>IoT Core</p></td>
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>EAS</p></td></tr>
 	<tr>
-		<td style="vertical-align:top"><a href="#wifi-allowwifi">WiFi/AllowWiFi</a></td>
+		<td style="vertical-align:top"><a href="#wifi-allowwifi">Wifi/AllowWiFi</a></td>
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Home</p></td>
 		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">1<p>Pro</p></td>
 		<td style="vertical-align:top"><p></p></td>
@@ -4022,7 +4022,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png"><p>IoT Core</p></td>
 		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png"><p>EAS</p></td></tr>
 	<tr>
-		<td style="vertical-align:top"><a href="#wifi-wlanscanmode">WiFi/WLANScanMode</a></td>
+		<td style="vertical-align:top"><a href="#wifi-wlanscanmode">Wifi/WLANScanMode</a></td>
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Home</p></td>
 		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png"><p>Pro</p></td>
 		<td style="vertical-align:top"><p></p></td>
@@ -4264,10 +4264,10 @@ Footnote:
 -  [Update/ScheduledInstallDay](#update-scheduledinstallday)
 -  [Update/ScheduledInstallTime](#update-scheduledinstalltime)
 -  [Update/UpdateServiceUrl](#update-updateserviceurl)
--  [WiFi/AllowAutoConnectToWiFiSenseHotspots](#wifi-allowautoconnecttowifisensehotspots)
--  [WiFi/AllowInternetSharing](#wifi-allowinternetsharing)
--  [WiFi/AllowWiFi](#wifi-allowwifi)
--  [WiFi/WLANScanMode](#wifi-wlanscanmode)
+-  [Wifi/AllowAutoConnectToWiFiSenseHotspots](#wifi-allowautoconnecttowifisensehotspots)
+-  [Wifi/AllowInternetSharing](#wifi-allowinternetsharing)
+-  [Wifi/AllowWiFi](#wifi-allowwifi)
+-  [Wifi/WLANScanMode](#wifi-wlanscanmode)
 
 Footnote:
 
@@ -8424,7 +8424,7 @@ Example
 > If the "Alternate Download Server" Group Policy is not set, it will use the WSUS server by default to download updates.  
 > This policy is not supported on Windows RT. Setting this policy will not have any effect on Windows RT PCs.
 
-<a href="" id="wifi-allowautoconnecttowifisensehotspots"></a>**WiFi/AllowAutoConnectToWiFiSenseHotspots**  
+<a href="" id="wifi-allowautoconnecttowifisensehotspots"></a>**Wifi/AllowAutoConnectToWiFiSenseHotspots**  
 <p style="margin-left: 20px">Allow or disallow the device to automatically connect to Wi-Fi hotspots.
 
 <p style="margin-left: 20px">The following list shows the supported values:
@@ -8434,7 +8434,7 @@ Example
 
 <p style="margin-left: 20px">Most restricted value is 0.
 
-<a href="" id="wifi-allowinternetsharing"></a>**WiFi/AllowInternetSharing**  
+<a href="" id="wifi-allowinternetsharing"></a>**Wifi/AllowInternetSharing**  
 <p style="margin-left: 20px">Allow or disallow internet sharing.
 
 <p style="margin-left: 20px">The following list shows the supported values:
@@ -8444,7 +8444,7 @@ Example
 
 <p style="margin-left: 20px">Most restricted value is 0.
 
-<a href="" id="wifi-allowmanualwificonfiguration"></a>**WiFi/AllowManualWiFiConfiguration**  
+<a href="" id="wifi-allowmanualwificonfiguration"></a>**Wifi/AllowManualWiFiConfiguration**  
 <p style="margin-left: 20px">Allow or disallow connecting to Wi-Fi outside of MDM server-installed networks.
 
 <p style="margin-left: 20px">The following list shows the supported values:
@@ -8458,7 +8458,7 @@ Example
 > Setting this policy deletes any previously installed user-configured and Wi-Fi sense Wi-Fi profiles from the device. Certain Wi-Fi profiles that are not user configured nor Wi-Fi sense might not be deleted. In addition, not all non-MDM profiles are completely deleted.
 
 
-<a href="" id="wifi-allowwifi"></a>**WiFi/AllowWiFi**  
+<a href="" id="wifi-allowwifi"></a>**Wifi/AllowWiFi**  
 <p style="margin-left: 20px">Allow or disallow Wi-Fi connection.
 
 <p style="margin-left: 20px">The following list shows the supported values:
@@ -8471,7 +8471,7 @@ Example
 <a href="" id="wifi-allowwifihotspotreporting"></a>**WiFi/AllowWiFiHotSpotReporting**  
 <p style="margin-left: 20px">This policy has been deprecated.
 
-<a href="" id="wifi-wlanscanmode"></a>**WiFi/WLANScanMode**  
+<a href="" id="wifi-wlanscanmode"></a>**Wifi/WLANScanMode**  
 <p style="margin-left: 20px">Allow an enterprise to control the WLAN scanning behavior and how aggressively devices should be actively scanning for Wi-Fi networks to get devices connected.
 
 <p style="margin-left: 20px">Supported values are 0-500, where 100 = normal scan frequency and 500 = low scan frequency.
