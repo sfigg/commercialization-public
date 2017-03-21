@@ -72,7 +72,7 @@ You can use Windows SIM to do the following:
 
 [Windows System Image Manager How-to Topics](windows-system-image-manager-how-to-topics.md)
 
-[Windows System Image Manager Reference Topics](windows-system-image-manager-reference-topics.md)
+[Windows System Image Manager Reference Topics](windows-system-image-manager-technical-reference.md)
 
  
 
