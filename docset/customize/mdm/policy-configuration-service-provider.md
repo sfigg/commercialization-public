@@ -1060,7 +1060,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>IoT Core</p></td>
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>EAS</p></td></tr>
 	<tr>
-		<td style="vertical-align:top"><a href="#defender-avgcpuloadfactor">Defender/AVGCPULoadFactor</a></td>
+		<td style="vertical-align:top"><a href="#defender-avgcpuloadfactor">Defender/AvgCPULoadFactor</a></td>
 		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png"><p>Home</p></td>
 		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png"><p>Pro</p></td>
 		<td style="vertical-align:top"><p></p></td>
@@ -4163,7 +4163,7 @@ Footnote:
 -   [Defender/AllowScanningNetworkFiles](#defender-allowscanningnetworkfiles)
 -   [Defender/AllowScriptScanning](#defender-allowscriptscanning)
 -   [Defender/AllowUserUIAccess](#defender-allowuseruiaccess)
--   [Defender/AVGCPULoadFactor](#defender-avgcpuloadfactor)
+-   [Defender/AvgCPULoadFactor](#defender-avgcpuloadfactor)
 -   [Defender/DaysToRetainCleanedMalware](#defender-daystoretaincleanedmalware)
 -   [Defender/ExcludedExtensions](#defender-excludedextensions)
 -   [Defender/ExcludedPaths](#defender-excludedpaths)
@@ -5346,7 +5346,7 @@ Employees cannot remove these search engines, but they can set any one as the de
 -   0 – Not allowed.
 -   1 (default) – Allowed.
 
-<a href="" id="defender-avgcpuloadfactor"></a>**Defender/AVGCPULoadFactor**  
+<a href="" id="defender-avgcpuloadfactor"></a>**Defender/AvgCPULoadFactor**  
 > [!NOTE]
 > This policy is only enforced in Windows 10 for desktop.
 
