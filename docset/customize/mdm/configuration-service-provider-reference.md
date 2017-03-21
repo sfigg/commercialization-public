@@ -394,6 +394,17 @@ The following table show the configuration service providers supported in Window
 <td><img src="images/checkmark.png" alt="check mark" /></td>
 
 </tr>
+<tr class="even">
+<td>[EnterpriseAppVManagement CSP](enterpriseappvmanagement-csp.md)</td>
+<td><img src="images/crossmark.png" alt="cross mark" /></td>
+<td><img src="images/crossmark.png" alt="cross mark" /></td>
+<td><img src="images/checkmark.png" alt="check mark" />2</td>
+<td><img src="images/checkmark.png" alt="check mark" />2</td>
+<td><img src="images/crossmark.png" alt="cross mark" /></td>
+<td><img src="images/crossmark.png" alt="cross mark" /></td>
+<td><img src="images/crossmark.png" alt="cross mark" /></td>
+
+</tr>
 <tr class="odd">
 <td>[EnterpriseAssignedAccess CSP](enterpriseassignedaccess-csp.md)</td>
 <td><img src="images/crossmark.png" alt="cross mark" /></td>
@@ -594,13 +605,13 @@ The following table show the configuration service providers supported in Window
 </tr>
 <tr class="odd">
 <td>[Personalization CSP](personalization-csp.md)</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td><img src="images/crossmark.png" alt="cross mark" /></td>
+<td><img src="images/crossmark.png" alt="cross mark" /></td>
+<td><img src="images/checkmark.png" alt="check mark" />2</td>
+<td><img src="images/checkmark.png" alt="check mark" />2</td>
+<td><img src="images/crossmark.png" alt="cross mark" /></td>
+<td><img src="images/crossmark.png" alt="cross mark" /></td>
+<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 <tr class="even">
 <td>[PolicyManager CSP](policymanager-csp.md)</td>

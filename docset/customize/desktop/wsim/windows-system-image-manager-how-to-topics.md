@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # Windows System Image Manager How-to Topics
 
 
-The following topics describe how to use Windows® System Image Manager (Windows SIM).
+The following topics describe how to use Windows System Image Manager (Windows SIM).
 
 ## In This Section
 
@@ -86,7 +86,7 @@ The following topics describe how to use Windows® System Image Manager (Window
 
 [Windows Deployment Options](http://go.microsoft.com/fwlink/?LinkId=214574)
 
-[Windows System Image Manager Technical Reference](windows-system-image-manager-technical-reference-.md)
+[Windows System Image Manager Technical Reference](windows-system-image-manager-technical-reference.md)
 
  
 

@@ -547,6 +547,8 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>DeliveryOptimization/DOMinDiskSizeAllowedToPeer</li>
 <li>DeliveryOptimization/DOMinFileSizeToCache</li>
 <li>DeliveryOptimization/DOMinRAMAllowedToPeer</li>
+<li>Display/TurnOffGdiDPIScalingForApps</li>
+<li>Display/TurnOnGdiDPIScalingForApps</li>
 <li>EnterpriseCloudPrint/CloudPrinterDiscoveryEndPoint</li>
 <li>EnterpriseCloudPrint/CloudPrintOAuthAuthority</li>
 <li>EnterpriseCloudPrint/CloudPrintOAuthClientId</li>
@@ -602,6 +604,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <p>Starting in Windows 10, version 1703, Update/UpdateServiceUrl is not supported in Windows 10 Mobile Enteprise and IoT Enterprise</p>
 <p>Starting in Windows 10, version 1703, in Browser/HomePages you can use the "&lt;about:blank&gt;" value if you don’t want to send traffic to Microsoft.</p>
 <p>Starting in Windows 10, version 1703, Start/StartLayout can now be set on a per-device basis in addition to the pre-existing per-user basis.</p>
+<p>Added the ConfigOperations/ADMXInstall node and setting, which is used to ingest ADMX files.</p>
 </td></tr>
 <tr class="odd">
 <td style="vertical-align:top">[DevDetail CSP](devdetail-csp.md)</td>
@@ -651,6 +654,10 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 </tr>
 <tr class="odd">
 <td style="vertical-align:top">[Personalization CSP](personalization-csp.md)</td>
+<td style="vertical-align:top"><p>Added new CSP.</p></td>
+</tr>
+<tr class="even">
+<td style="vertical-align:top">[EnterpriseAppVManagement CSP](enterpriseappvmanagement-csp.md)</td>
 <td style="vertical-align:top"><p>Added new CSP.</p></td>
 </tr>
 </tbody>
@@ -943,13 +950,33 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <ul>
 <li>Accounts/AllowMicrosoftAccountSignInAssistant</li>
 <li>Connectivity/AllowConnectedDevices</li>
+<li>Display/TurnOffGdiDPIScalingForApps</li>
+<li>Display/TurnOnGdiDPIScalingForApps</li>
 <li>Update/IgnoreMOAppDownloadLimit</li>
 <li>Update/IgnoreMOUpdateDownloadLimit</li>
 </ul>
+<p>For Windows 10, version 1703, added the ConfigOperations/ADMXInstall node and setting, which is used to ingest ADMX files.</p>
 </td>
 </tr>
 <tr class="even">
+<td style="vertical-align:top">[DeviceLock/DevicePasswordEnabled](policy-configuration-service-provider.md#devicelock-devicepasswordenabled) in Policy CSP</td>
+<td style="vertical-align:top"><p>Added the following note:</p>
+<p>**DevicePasswordEnabled** should not be set to Enabled (0) when WMI is used to set the EAS DeviceLock policies given that it is Enabled by default in Policy CSP for back compat with Windows 8.x. If **DevicePasswordEnabled** is set to Enabled(0) then Policy CSP will return an error stating that **DevicePasswordEnabled** already exists. Windows 8.x did not support DevicePassword policy. When disabling **DevicePasswordEnabled** (1) then this should be the only policy set from the DeviceLock group of policies listed below:</p>
+<ul>
+<li>DevicePasswordEnabled is the parent policy of the following:
+<ul><li>AllowSimpleDevicePassword</li>
+<li>MinDevicePasswordLength</li>
+<li>AlphanumericDevicePasswordRequired
+<ul><li>MinDevicePasswordComplexCharacters</li></ul></li> 
+<li> MaxDevicePasswordFailedAttempts</li>
+<li>MaxInactivityTimeDeviceLock</td></li></ul></ul>
+</tr>
+<tr class="even">
 <td style="vertical-align:top">[Personalization CSP](personalization-csp.md)</td>
+<td style="vertical-align:top"><p>Added new CSP for Windows 10, version 1703.</p></td>
+</tr>
+<tr class="odd">
+<td style="vertical-align:top">[EnterpriseAppVManagement CSP](enterpriseappvmanagement-csp.md)</td>
 <td style="vertical-align:top"><p>Added new CSP for Windows 10, version 1703.</p></td>
 </tr>
 </tbody>

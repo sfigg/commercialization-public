@@ -68,6 +68,47 @@ The following diagram shows the Policy configuration service provider in tree fo
 
 <p style="margin-left: 20px">Supported operation is Get.
 
+<a href="" id="policy-result"></a>**Policy/ConfigOperations**  
+<p style="margin-left: 20px">Added in Windows 10, version 1703. The root node for grouping different configuration operations.
+
+<p style="margin-left: 20px">Supported operations are Add, Get, and Delete.
+
+<a href="" id="policy-configoperations-admxinstall"></a>**Policy/ConfigOperations/ADMXInstall**  
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Allows settings for ADMX files for Win32 and Centennial apps to be imported (ingested) by your device and processed into new ADMX-backed policies or preferences. By using ADMXInstall, you can add ADMX-backed polices for those Win32 or Centennial apps that have been added between OS releases. ADMX-backed policies are ingested to your device by using the Policy CSP URI: `./Vendor/MSFT/Policy/ConfigOperations/ADMXInstall`. Each ADMX-backed policy or preference that is added is assigned a unique ID. For more information about using Policy CSP to configure Win32 and Centennial app policies, see [Win32 and Centennial app policy configuration](win32-and-centennial-app-policy-configuration.md).
+
+> [!NOTE]
+> The OPAX settings that are managed by the Microsoft Office Customization Tool are not supported by MDM. For more information about this tool, see [Office Customization Tool](https://technet.microsoft.com/en-us/library/cc179097.aspx).
+
+<p style="margin-left: 20px">ADMX files that have been installed by using **ConfigOperations/ADMXInstall** can later be deleted by using the URI delete operation. Deleting an ADMX file will delete the ADMX file from disk, remove the metadata from the ADMXdefault registry hive, and delete all the policies that were set from the file. The MDM server can also delete all ADMX policies that are tied to a particular app by calling delete on the URI, `./Vendor/MSFT/Policy/ConfigOperations/ADMXInstall/{AppName}`.
+
+<p style="margin-left: 20px">Supported operations are Add, Get, and Delete.
+
+<a href="" id="policy-configoperations-admxinstall-appname"></a>**Policy/ConfigOperations/ADMXInstall/****_AppName_**  
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies the name of the Win32 or Centennial app associated with the ADMX file. 
+
+<p style="margin-left: 20px">Supported operations are Add, Get, and Delete.
+
+<a href="" id="policy-configoperations-admxinstall-appname-policy"></a>**Policy/ConfigOperations/ADMXInstall/****_AppName_/Policy**  
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies that a Win32 or Centennial app policy is to be imported.
+
+<p style="margin-left: 20px">Supported operations are Add, Get, and Delete.
+
+<a href="" id="policy-configoperations-admxinstall-appname-policy-uniqueid"></a>**Policy/ConfigOperations/ADMXInstall/****_AppName_/Policy/_UniqueID_**  
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies the unique ID of the app ADMX file that contains the policy to import.
+
+<p style="margin-left: 20px">Supported operations are Add and Get. Does not support Delete.
+
+<a href="" id="policy-configoperations-admxinstall-appname-preference"></a>**Policy/ConfigOperations/ADMXInstall/****_AppName_/Preference**  
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies that a Win32 or Centennial app preference is to be imported.
+
+<p style="margin-left: 20px">Supported operations are Add, Get, and Delete.
+
+<a href="" id="policy-configoperations-admxinstall-appname-preference-uniqueid"></a>**Policy/ConfigOperations/ADMXInstall/****_AppName_/Preference/_UniqueID_**  
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies the unique ID of the app ADMX file that contains the preference to import.
+
+<p style="margin-left: 20px">Supported operations are Add and Get. Does not support Delete.
+
+
 ## **Policy Tables**
 
 Some policies are only supported in either Windows 10 for desktop or Windows 10 Mobile. In addition, some policies also have a corresponding Group Policy. The following tables provide this information:
@@ -742,7 +783,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png"><p>Mobile</p></td>
 		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png"><p>Mobile Enterprise</p></td>
 		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png"><p>IoT Core</p></td>
-		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png"><p>EAS</p></td></tr>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png"><p>EAS</p></td></tr>	
 	<tr>
 		<td style="vertical-align:top"><a href="#connectivity-allowbluetooth">Connectivity/AllowBluetooth</a></td>
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Home</p></td>
@@ -1502,6 +1543,28 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png"><p>Mobile Enterprise</p></td>
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>IoT Core</p></td>
 		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png"><p>EAS</p></td></tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#display-turnoffgdidpiscalingforapps">Display/TurnOffGdiDPIScalingForApps</a></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Home</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Pro</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Business</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Enterprise</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Education</p></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Mobile</p></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Mobile Enterprise</p></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>IoT Core</p></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>EAS</p></td></tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#display-turnongdidpiscalingforapps">Display/TurnOnGdiDPIScalingForApps</a></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Home</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Pro</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Business</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Enterprise</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Education</p></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Mobile</p></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Mobile Enterprise</p></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>IoT Core</p></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>EAS</p></td></tr>
 	<tr>
 		<td style="vertical-align:top"><a href="#enterprisecloudprint-cloudprinterdiscoveryendpoint">EnterpriseCloudPrint/CloudPrinterDiscoveryEndPoint</a></td>
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Home</p></td>
@@ -5941,6 +6004,38 @@ The number of authentication failures allowed before the device will be wiped. A
 
 <p style="margin-left: 20px">For additional information about this policy, see [Exchange ActiveSync Policy Engine Overview](https://technet.microsoft.com/library/dn282287.aspx) and [KB article](https://support.office.com/article/This-device-doesn-t-meet-the-security-requirements-set-by-your-email-administrator-87132fc7-2c7f-4a71-9de0-779ff81c86ca).
 
+<a href="" id="display-turnoffgdidpiscalingforapps"></a>**Display/TurnOffGdiDPIScalingForApps**
+<p style="margin-left: 20px">GDI DPI Scaling enables applications that are not DPI aware to become per monitor DPI aware.
+
+<p style="margin-left: 20px">This policy setting lets you specify legacy applications that have GDI DPI Scaling turned off.
+
+<p style="margin-left: 20px">If you enable this policy setting, GDI DPI Scaling is turned off for all applications in the list, even if they are enabled by using ApplicationCompatibility database, ApplicationCompatibility UI System (Enhanced) setting, or an application manifest.
+
+<p style="margin-left: 20px">If you disable or do not configure this policy setting, GDI DPI Scaling might still be turned on for legacy applications.
+
+<p style="margin-left: 20px">If GDI DPI Scaling is configured to both turn off and turn on an application, the application will be turned off.
+
+<p style="margin-left: 20px">To validate on Desktop, do the following:
+
+1.   Configure the setting for an app which has GDI DPI scaling enabled via MDM or any other supported mechanisms.
+2.   Run the app and observe blurry text.
+
+<a href="" id="display-turnongdidpiscalingforapps"></a>**Display/TurnOnGdiDPIScalingForApps**  
+<p style="margin-left: 20px">GDI DPI Scaling enables applications that are not DPI aware to become per monitor DPI aware.
+
+<p style="margin-left: 20px">This policy setting lets you specify legacy applications that have GDI DPI Scaling turned on.
+
+<p style="margin-left: 20px">If you enable this policy setting, GDI DPI Scaling is turned on for all legacy applications in the list.
+
+<p style="margin-left: 20px">If you disable or do not configure this policy setting, GDI DPI Scaling will not be enabled for an application except when an application is enabled by using ApplicationCompatibility database, ApplicationCompatibility UI System (Enhanced) setting, or an application manifest.
+
+<p style="margin-left: 20px">If GDI DPI Scaling is configured to both turn off and turn on an application, the application will be turned off.
+
+<p style="margin-left: 20px">To validate on Desktop, do the following:
+
+1.   Configure the setting for an app which uses GDI.
+2.   Run the app and observe crisp text.
+
 <a href="" id="devicelock-screentimeoutwhilelocked"></a>**DeviceLock/ScreenTimeoutWhileLocked**  
 > [!NOTE]
 > This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
@@ -8091,6 +8186,9 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 <a href="" id="update-ignoremoappdownloadlimit"></a>**Update/IgnoreMOAppDownloadLimit**  
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies whether to ignore the MO download limit (allow unlimited downloading) over a cellular network for apps and their updates. If lower-level limits (for example, mobile caps) are required, those limits are controlled by external policies. 
 
+> [!WARNING]
+> Setting this policy might cause devices to incur costs from MO operators.
+
 <p style="margin-left: 20px">The following list shows the supported values:
 
 -   0 (default) – Do not ignore MO download limit for apps and their updates.
@@ -8109,6 +8207,9 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 
 <a href="" id="update-ignoremoupdatedownloadlimit"></a>**Update/IgnoreMOUpdateDownloadLimit**  
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies whether to ignore the MO download limit (allow unlimited downloading) over a cellular network for OS updates. If lower-level limits (for example, mobile caps) are required, those limits are controlled by external policies. 
+
+> [!WARNING]
+> Setting this policy might cause devices to incur costs from MO operators.
 
 <p style="margin-left: 20px">The following list shows the supported values:
 

@@ -18,13 +18,13 @@ When a device is protected with UWF, you must use UWF servicing mode commands to
 ## In this section
 
 
-<a href="" id="uwfantimalware-support"></a>[Antimalware support on UWF-protected devices](uwfantimalware-support.md)  
+<a href="" id="uwfantimalware-support"></a>[Antimalware support on UWF-protected devices](uwf-antimalware-support.md)  
 Describes the procedures to add support for Windows Defender and System Center Endpoint Protection (SCEP/Forefront) antimalware to your UWF-protected devices.
 
-<a href="" id="uwfapply-oem-updates"></a>[Apply OEM updates to UWF-protected devices](uwfapply-oem-updates.md)  
+<a href="" id="uwfapply-oem-updates"></a>[Apply OEM updates to UWF-protected devices](uwf-apply-oem-updates.md)  
 Provides information about how to apply OEM updates to a UWF-protected device.
 
-<a href="" id="uwfapply-windows-updates"></a>[Apply Windows updates to UWF-protected devices](uwfapply-windows-updates.md)  
+<a href="" id="uwfapply-windows-updates"></a>[Apply Windows updates to UWF-protected devices](uwf-apply-windows-updates.md)  
 Describes the procedures to apply Windows updates to your UWF-protected devices.
 
 <a href="" id="uwf-master-servicing-script"></a>[UWF master servicing script](uwf-master-servicing-script.md)  

@@ -1,27 +1,22 @@
 ---
-title: Wi-Fi Sense
-description: Partners can change the default settings for Wi-Fi Sense.
+title: Connecting to open Wi-Fi hotspots in Windows 10
+description: Partners can change the default settings for detecting Wi-Fi hotspots.
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 0900eb56-c120-41e8-9193-240b1e7d1fae
 ---
 
-# Wi-Fi Sense
+# Wi-Fi hotspots
 
 
-Partners can change the default settings for **Wi-Fi Sense**.
+Partners can change the default settings for detecting Wi-Fi hotspots.
 
-Wi-Fi Sense automatically connects you to Wi-Fi so you can get online quickly in more places. It can connect you to open Wi-Fi hotspots that it knows about through crowdsourcing, or to Wi-Fi networks that your contacts have shared with you by using Wi-Fi Sense.
+Windows 10 automatically connects users to Wi-Fi so they can get online quickly in more places. It can connect them to open Wi-Fi hotspots that it knows about through crowdsourcing.
+##How it works
+Users choose the settings for automatically connecting to suggested open hotspots by going to Settings > Network & Internet > Wi-Fi on a Windows 10 PC or a phone with Windows 10 Mobile in Settings > Network & wireless > Wi-Fi > Additional settings. To use this feature, customers will need to be signed in with their Microsoft account on your Windows 10 PC or mobile device. (Note that this feature isn't available in all countries or regions.)
 
-Wi-Fi Sense can discover your device location even when location is turned off for your user account. This is true whenever Wi-Fi Sense is turned on. Wi-Fi Sense uses your location to find suggested open Wi-Fi hotspots.
-
-**Important**  
-All Wi-Fi Sense default settings must be on (1 or ‘Enabled’) unless Microsoft executive approval has been granted for specific mobile operator requests, or for the exempt countries listed below.
-
- 
-
-Wi-Fi Sense features include auto-connect to Wi-Fi hotspots and credential sharing. When enabled, the **Wi-Fi Sense** button is displayed in the **Settings** &gt; **Wi-Fi** screen. When Wi-Fi Sense is disabled, the **Wi-Fi Sense** button is hidden in the UI and all Wi-Fi Sense features are disabled.
+Windows 10 learns about open Wi-Fi hotspots a Windows PC or Windows phone connects to by collecting information about the network, like whether the open Wi-Fi network has a high-quality Internet connection. By using that information from your device and from other Windows customers' devices, we build a database of these high-quality networks. When you’re in range of one of these Wi-Fi hotspots, you automatically get connected to it.
 
 <a href="" id="constraints---imagetimeonly"></a>**Constraints:** ImageTimeOnly  
 
@@ -31,8 +26,7 @@ Wi-Fi Sense features include auto-connect to Wi-Fi hotspots and credential shari
     ``` syntax
     <?xml version="1.0" encoding="utf-8" ?>  
     <ImageCustomizations xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate"  
-                         Name="WiFiSense"  
-                         Description="Use to enable Wi-Fi Sense and display the UI to the user for configuring or opting into Wi-Fi Sense features."  
+                         Name="WiFiConnections"  
                          Owner=""  
                          OwnerType="OEM"> 
       
@@ -67,12 +61,12 @@ Wi-Fi Sense features include auto-connect to Wi-Fi hotspots and credential shari
     <tbody>
     <tr class="odd">
     <td><p>1 or 'Enabled'</p></td>
-    <td><p>Use to enable Wi-Fi Sense and display the <strong>Wi-Fi Sense</strong> button in the <strong>Settings</strong> &gt; <strong>Wi-Fi</strong> screen. When enabled, users can opt-in to Wi-Fi Sense features.</p>
+    <td><p>Use to enable Wi-Fi detection. When enabled, users can opt-in to Wi-Fi detection.</p>
     <p>This is the default OS value.</p></td>
     </tr>
     <tr class="even">
     <td><p>0 or 'Disabled'</p></td>
-    <td><p>Use to disable Wi-Fi sense and all Wi-Fi Sense features. This also hides the <strong>Wi-Fi Sense</strong> button in the <strong>Settings</strong> &gt; <strong>Wi-Fi</strong> screen.</p></td>
+    <td><p>Use to disable Wi-Fi detection.</p></td>
     </tr>
     </tbody>
     </table>
@@ -133,22 +127,6 @@ Wi-Fi Sense features include auto-connect to Wi-Fi hotspots and credential shari
     </tbody>
     </table>
 
-     
-
-<a href="" id="testing-steps-"></a>**Testing steps:**  
-1.  Flash a build containing this customization to a phone.
-
-2.  Go through initial phone setup.
-
-    -   If `AutoConnectAllowed` is set to 1 or 'Enabled', verify if the checkboxes in the **Wi-Fi Sense** screen during initial phone setup are selected or cleared depending on the values you set for `DefaultAutoconnectState` and `DefaultWiFiSharingState`.
-
-    -   If `AutoConnectAllowed` is set to 0 or 'Disabled', during initial phone setup, verify that you cannot see the Wi-Fi Sense screen.
-
-3.  Go to the **Settings** &gt; **Wi-Fi** screen. Depending on the value you specified for `AutoConnectAllowed`, verify the following:
-
-    -   If enabled, verify that the **Wi-Fi Sense** button is displayed. Tap the button to go to the **Wi-Fi Sense** settings screen, which lets you opt-in to Wi-Fi Sense features.
-
-    -   If disabled, verify that the **Wi-Fi Sense** button is hidden and all Wi-Fi Sense features are disabled.
 
  
 

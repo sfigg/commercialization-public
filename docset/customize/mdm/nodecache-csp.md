@@ -12,6 +12,16 @@ ms.assetid: b4dd2b0d-79ef-42ac-ab5b-ee07b3097876
 
 The NodeCache configuration service provider is used to manage the client cache. This configuration service provider is to be used only by enterprise management servers. It provides a level of abstraction that decouples the management of the node list from a specific backing store. It synchronizes the client cache with the server side cache. It also provides an API for monitoring device-side cache changes.
 
+NodeCache supports the comparison of hash values instead of actual node values:
+
+``` syntax
+<Type xmlns="syncml:metinf">
+application/x-nodemon-sha256
+</type>
+```
+
+NodeCache will hash the values and compare with a hash value that was sent down by the server. This supports checking a parent node and its children recursively.
+
 The following diagram shows the NodeCache configuration service provider in tree format.
 
 ![nodecache csp](images/provisioning-csp-nodecache.png)
