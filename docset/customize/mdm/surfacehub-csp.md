@@ -149,7 +149,7 @@ The following diagram shows the SurfaceHub CSP management objects in tree format
 <a href="" id="deviceaccount-errorcontext"></a>**DeviceAccount/ErrorContext**  
 <p style="margin-left: 20px">If there is an error calling ValidateAndCommit, there is additional context for that error in this node. Here are the possible error values:
 
-<table>
+<table style="margin-left: 20px">
 <colgroup>
 <col width="15%" />
 <col width="20%" />
@@ -266,7 +266,7 @@ The following diagram shows the SurfaceHub CSP management objects in tree format
 <a href="" id="inboxapps-wirelessprojection-channel"></a>**InBoxApps/WirelessProjection/Channel**  
 <p style="margin-left: 20px">Wireless channel to use for Miracast operation. The supported channels are defined by the Wi-Fi Alliance Wi-Fi Direct specification.
 
-<table>
+<table style="margin-left: 20px">
 <colgroup>
 <col width="50%" />
 <col width="50%" />
@@ -320,7 +320,7 @@ The following diagram shows the SurfaceHub CSP management objects in tree format
 
 <p style="margin-left: 20px">The following table shows the permitted values.
 
-<table>
+<table style="margin-left: 20px">
 <thead>
 <tr class="header">
 <th>Value</th>
@@ -372,7 +372,7 @@ The following diagram shows the SurfaceHub CSP management objects in tree format
 
 <p style="margin-left: 20px">The following table shows the permitted values.
 
-<table>
+<table style="margin-left: 20px">
 <thead>
 <tr class="header">
 <th>Value</th>
@@ -424,7 +424,7 @@ The following diagram shows the SurfaceHub CSP management objects in tree format
 
 <p style="margin-left: 20px">The following table shows the permitted values.
 
-<table>
+<table style="margin-left: 20px">
 <thead>
 <tr class="header">
 <th>Value</th>
