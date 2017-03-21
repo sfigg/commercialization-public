@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # Windows System Image Manager Reference
 
 
-The following topics provide reference information about Windows® System Image Manager (Windows SIM).
+The following topics provide reference information about Windows System Image Manager (Windows SIM).
 
 ## In This Section
 
