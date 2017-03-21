@@ -13,12 +13,12 @@ ms.sitesec: msdn
 # Component Settings and Properties Reference
 
 
-Windows® System Image Manager (Windows SIM) displays the properties and settings of a selected component or package in the **Properties** pane. You can use this pane to manage and view the component settings that are available to change for each configuration pass. You can also use this pane to view properties and IDs where applicable. In the case of packages, the pane displays Windows feature selections that you can change. Settings that are not available for each component or package appear dimmed. Settings that have been changed appear in bold.
+Windows System Image Manager (Windows SIM) displays the properties and settings of a selected component or package in the **Properties** pane. You can use this pane to manage and view the component settings that are available to change for each configuration pass. You can also use this pane to view properties and IDs where applicable. In the case of packages, the pane displays Windows feature selections that you can change. Settings that are not available for each component or package appear dimmed. 
 
 ## Component Settings
 
 
-Component settings are the configurable aspects of each component in a Windows installation. For example, you can configure the Windows Internet Explorer® component setting **Home\_Page** to open to a particular URL by configuring the default value of the setting in the **Properties** pane of Windows SIM.
+Component settings are the configurable aspects of each component in a Windows installation. For example, you can configure the Windows Internet Explorer component setting **Home\_Page** to open to a particular URL by configuring the default value of the setting in the **Properties** pane of Windows SIM.
 
 ## Component Properties
 
