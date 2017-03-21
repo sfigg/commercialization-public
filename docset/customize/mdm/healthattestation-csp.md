@@ -138,7 +138,7 @@ The following is a list of functions performed by the Device HealthAttestation C
 </td>
 </tr>
 <tr class="even">
-<td style="vertical-align:top">Device Health Attestation – On Premise<p>DHA-OnPrem)</p></td>
+<td style="vertical-align:top">Device Health Attestation – On Premise<p>(DHA-OnPrem)</p></td>
 <td style="vertical-align:top"><p>DHA-OnPrem refers to DHA-Service that is running on premise:</p>
 <ul>
 <li>Offered to Windows Server 2016 customer (no added licensing cost for enabling/running DHA-Service) </li>
@@ -155,7 +155,7 @@ The following is a list of functions performed by the Device HealthAttestation C
 <td style="vertical-align:top">The operation cost of running one or more instances of Server 2016 on premise.</td>
 </tr>
 <tr class="even">
-<td style="vertical-align:top">Device Health Attestation - Enterprise Managed Cloud<p>DHA-EMC)</p></td>
+<td style="vertical-align:top">Device Health Attestation - Enterprise Managed Cloud<p>(DHA-EMC)</p></td>
 <td style="vertical-align:top"><p>DHA-EMC refers to an enterprise managed DHA-Service that is running as a virtual host/service on a Windows Server 2016 compatible - enterprise managed cloud service, such as Microsoft Azure.</p>
 <ul>
 <li>Offered to Windows Server 2016 customers with no additional licensing cost (no added licensing cost for enabling/running DHA-Service)</li>
@@ -181,7 +181,7 @@ The following diagram shows the Device HealthAttestation configuration service p
 ![healthattestation csp](images/provisioning-csp-healthattestation.png)
 
 <a href="" id="healthattestation"></a>**./Vendor/MSFT/HealthAttestation**  
-<p style="margin-left: 20px">The root node for the Device HealthAttestation configuration service provider.</p>
+<p style="margin-left: 20px">The root node for the device HealthAttestation configuration service provider.</p>
 
 <a href="" id="verifyhealth"></a>**VerifyHealth** (Required)  
 <p style="margin-left: 20px">Notifies the device to prepare a device health verification request.</p>
@@ -197,7 +197,7 @@ The following diagram shows the Device HealthAttestation configuration service p
 
 -   0 - (HEALTHATTESTATION\_CERT\_RETRI_UNINITIALIZED): DHA-CSP is preparing a request to get a new DHA-EncBlob from DHA-Service
 -   1 - (HEALTHATTESTATION\_CERT\_RETRI_REQUESTED): DHA-CSP is waiting for the DHA-Service to respond back, and issue a DHA-EncBlob to the device
--   2 - (HEALTHATTESTATION\_CERT\_RETRIEVAL_FAILED): A DHA-EncBlob could not be retrieved from the DHA-Service for reasons other than discussed in the DHA error/status codes
+-   2 - (HEALTHATTESTATION\_CERT\_RETRIEVAL_FAILED): A valid DHA-EncBlob could not be retrieved from the DHA-Service for reasons other than discussed in the DHA error/status codes
 -   3 - (HEALTHATTESTATION\_CERT\_RETRI_COMPLETE): DHA-Data is ready for pick up
 
 <a href="" id="forceretrieve"></a>**ForceRetrieve** (Optional)  
@@ -441,7 +441,7 @@ When the MDM-Server receives the above data, it must:
 ```
 - Forward (HTTP Post) the XML data struct (including the nonce that was appended in the previous step) to the assigned DHA-Service that runs on:
     - DHA-Cloud (Microsoft owned and operated DHA-Service) scenario: https://has.spserv.microsoft.com/DeviceHealthAttestation/ValidateHealthCertificate/v3
-    - DHA-OnPrem or DHA-EMC: : https://FullyQualifiedDomainName-FDQN/DeviceHealthAttestation/ValidateHealthCertificate/v3
+    - DHA-OnPrem or DHA-EMC: https://FullyQualifiedDomainName-FDQN/DeviceHealthAttestation/ValidateHealthCertificate/v3
 
 
 ## <a href="" id="receive-has-response"></a>**Step 7: Receive response from the DHA-service**
@@ -510,7 +510,7 @@ Each of these are described in further detail in the following sections, along w
 <a href="" id="resetcount"></a>**ResetCount** (Reported only for devices that support TPM 2.0)
 <p style="margin-left: 20px">This attribute reports the number of times a PC device has hibernated or resumed.</p>
 
-<a href="" id="restartcount"></a>**RestartCount** (TPM 2.0 only)
+<a href="" id="restartcount"></a>**RestartCount** (Reported only for devices that support TPM 2.0)
 <p style="margin-left: 20px">This attribute reports the number of times a PC device has rebooted</p>
 
 <a href="" id="deppolicy"></a>**DEPPolicy**  
@@ -694,7 +694,7 @@ Each of these are described in further detail in the following sections, along w
 
 <p style="margin-left: 20px">VSM can be enabled by using the following command in WMI or a PowerShell script:</p>
 
-<p style="margin-left: 20px">cdedit.exe /set {current} vsmlaunchtype auto</p>
+<p style="margin-left: 20px">bcdedit.exe /set {current} vsmlaunchtype auto</p>
 
 <p style="margin-left: 20px">If VSMEnabled = 1 (True), then allow access.</p>
 <p style="margin-left: 20px">If VSMEnabled = 0 (False), then take one of the following actions that align with your enterprise policies:</p>
