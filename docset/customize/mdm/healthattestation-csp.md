@@ -13,14 +13,14 @@ ms.assetid: 6F2D783C-F6B4-4A81-B9A2-522C4661D1AC
 > [!WARNING]
 > Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.  
 
-The HealthAttestation configuration service provider enables enterprise IT managers to assess the health of managed devices and take enterprise policy actions.
+The Device HealthAttestation configuration service provider (DHA-CSP) enables enterprise IT managers to assess if a if a device is booted to a trusted and compliant state, and take enterprise policy actions.
 
 The following is a list of functions performed by the Device HealthAttestation CSP:
 
--   Collects data that is used in verifying a devices health states
--   Forwards the data to the Device HealthAttestation Service
--   Provisions the Health Attestation Certificate that it receives from the service
--   Upon request, forwards the Health Attestation Certificate (received from the service) and related runtime information to the MDM Server for verification
+-   Collects device boot logs, TPM audit trails and the TPM certificate (DHA-BootData) from a managed device
+-   Forwards DHA-BootData to Device Health Attestation Service (DHA-Service)
+-   Receives an encrypted blob (DHA-EncBlob) from DHA-Service, and stores it in a local cache on the device
+-   Receives attestation requests (DHA-Requests) from a DHA-Enabled MDM, and replies with Device Health Attestation data (DHA-Data
 
 ## Terms
 
@@ -462,12 +462,12 @@ After the MDM server receives the verified data, the information can be used to 
 
 The following list of data points are verified by the DHA-Service in DHA-Report version 3:
 
-- [Issued](#issued )
+- [Issued](#issued ) 
 - [AIKPresent](#aikpresent)
-- [ResetCount](#resetcount)
-- [RestartCount](#restartcount)
+- [ResetCount](#resetcount) *
+- [RestartCount](#restartcount) *
 - [DEPPolicy](#deppolicy)
-- [BitlockerStatus](#bitlockerstatus)
+- [BitlockerStatus](#bitlockerstatus) **
 - [BootManagerRevListVersion](#bootmanagerrevlistversion)
 - [CodeIntegrityRevListVersion](#codeintegrityrevlistversion)
 - [SecureBootEnabled](#securebootenabled)
@@ -477,7 +477,7 @@ The following list of data points are verified by the DHA-Service in DHA-Report 
 - [TestSigningEnabled](#testsigningenabled)
 - [SafeMode](#safemode)
 - [WinPE ](#winpe)
-- [ELAMDriverLoaded](#elamdriverloaded)
+- [ELAMDriverLoaded](#elamdriverloaded) ***
 - [VSMEnabled](#vsmenabled)
 - [PCRHashAlgorithmID](#pcrhashalgorithmid)
 - [BootAppSVN](#bootappsvn)
@@ -489,6 +489,10 @@ The following list of data points are verified by the DHA-Service in DHA-Report 
 - [BootRevListInfo](#bootrevlistinfo)
 - [OSRevListInfo](#osrevlistinfo)
 - [HealthStatusMismatchFlags](#healthstatusmismatchflags)
+
+\*  TPM 2.0 only   
+**  Reports if Bitlocker was enabled during initial boot. The “Hybrid Resume” must be disabled on the device.   
+*** Reports 1st party ELAM “Defender” was loaded during boot.  
 
 Each of these are described in further detail in the following sections, along with the recommended actions to take.
 
@@ -533,7 +537,7 @@ Each of these are described in further detail in the following sections, along w
 -   Take one of the previous actions and additionally place the device in a watch list to monitor the device more closely for potential risks.
 
 <a href="" id="bitlockerstatus"></a>**BitlockerStatus** (at boot time) 
-<p style="margin-left: 20px">When Bitlocker is on at boot time, the device is able to protect data that is stored on the drive from unauthorized access, when the system is turned off or goes to hibernation.</p>
+<p style="margin-left: 20px">To use this reporting feature you must disable "Hybrid Resume" on the device. When Bitlocker is reported "on" at boot time, the device is able to protect data that is stored on the drive from unauthorized access, when the system is turned off or goes to hibernation.</p>
 
 <p style="margin-left: 20px">Windows BitLocker Drive Encryption, encrypts all data stored on the Windows operating system volume. BitLocker uses the TPM to help protect the Windows operating system and user data and helps to ensure that a computer is not tampered with, even if it is left unattended, lost, or stolen.</p>
 
