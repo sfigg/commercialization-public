@@ -244,6 +244,9 @@ typedef enum _PUBLIC_KEY_SOURCE_TAG {
 
 <p style="margin-left: 20px">Supported operations are Add, Get, Replace and Delete. Value type is integer.
 
+<a href="" id="settings-revokeonmdmhandoff"></a>**Settings/RevokeOnMDMHandoff**  
+<p style="margin-left: 20px">Supported operations are Add, Get, Replace and Delete. Value type is integer.</p>
+
 <a href="" id="settings-rmstemplateidforedp"></a>**Settings/RMSTemplateIDForEDP**  
 <p style="margin-left: 20px">TemplateID GUID to use for RMS encryption. The RMS template allows the IT admin to configure the details about who has access to RMS-protected file and how long they have access.
 
@@ -256,6 +259,10 @@ typedef enum _PUBLIC_KEY_SOURCE_TAG {
 -   1 – Use RMS.
 
 <p style="margin-left: 20px">Supported operations are Add, Get, Replace and Delete. Value type is integer.
+
+<a href="" id="settings-smbautoencryptedfileextensions"></a>**Settings/SMBAutoEncryptedFileExtensions**  
+<p style="margin-left: 20px">Specifies a list of extensions to be encrypted when copying from SMB share.  When this policy is not specified, the existing auto-encryption behavior is applied.  When this policy is configured, only files with the extensions in the list will be encrypted.</p>
+<p style="margin-left: 20px">Supported operations are Add, Get, Replace and Delete. Value type is string.</p>
 
 <a href="" id="settings-edpshowicons"></a>**Settings/EDPShowIcons**  
 <p style="margin-left: 20px">Determines whether overlays are added to icons for WIP protected files in Explorer and enterprise only app tiles in the Start menu. Starting in Windows 10, version 1703 this setting also configures the visibility of the WIP icon in the title bar of a WIP-protected app.
