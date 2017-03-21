@@ -1247,7 +1247,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>IoT Core</p></td>
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>EAS</p></td></tr>
 	<tr>
-		<td style="vertical-align:top"><a href="#deliveryoptimization-dogroupid">DeliveryOptimization/DOGroupID</a></td>
+		<td style="vertical-align:top"><a href="#deliveryoptimization-dogroupid">DeliveryOptimization/DOGroupId</a></td>
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Home</p></td>
 		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png"><p>Pro</p></td>
 		<td style="vertical-align:top"><p></p></td>
@@ -4180,7 +4180,7 @@ Footnote:
 -   [DeliveryOptimization/DOAbsoluteMaxCacheSize](#deliveryoptimization-doabsolutemaxcachesize)
 -   [DeliveryOptimization/DOAllowVPNPeerCaching](#deliveryoptimization-doallowvpnpeercaching)
 -   [DeliveryOptimization/DODownloadMode](#deliveryoptimization-dodownloadmode)
--   [DeliveryOptimization/DOGroupID](#deliveryoptimization-dogroupid)
+-   [DeliveryOptimization/DOGroupId](#deliveryoptimization-dogroupid)
 -   [DeliveryOptimization/DOMaxCacheAge](#deliveryoptimization-domaxcacheage)
 -   [DeliveryOptimization/DOMaxCacheSize](#deliveryoptimization-domaxcachesize)
 -   [DeliveryOptimization/DOMaxDownloadBandwidth](#deliveryoptimization-domaxdownloadbandwidth)
@@ -5580,7 +5580,7 @@ Employees cannot remove these search engines, but they can set any one as the de
 -   99 - Simple download mode with no peering. Delivery Optimization downloads using HTTP only and does not attempt to contact the Delivery Optimization cloud services. Added in Windows 10, version 1607.
 -   100 - Bypass mode. Do not use Delivery Optimization and use BITS instead. Added in Windows 10, version 1607.
 
-<a href="" id="deliveryoptimization-dogroupid"></a>**DeliveryOptimization/DOGroupID**  
+<a href="" id="deliveryoptimization-dogroupid"></a>**DeliveryOptimization/DOGroupId**  
 > [!NOTE]
 > This policy is only enforced in Windows 10 Pro, Enterprise, and Education editions and not supported in Windows 10 Mobile.
 
