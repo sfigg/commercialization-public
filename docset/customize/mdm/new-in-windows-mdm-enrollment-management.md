@@ -663,6 +663,14 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <td style="vertical-align:top">[EnterpriseAppVManagement CSP](enterpriseappvmanagement-csp.md)</td>
 <td style="vertical-align:top"><p>Added new CSP.</p></td>
 </tr>
+<tr class="odd">
+<td style="vertical-align:top">[HealthAttestation CSP](healthattestation-csp.md)</td>
+<td style="vertical-align:top"><p>Added the following settings:.</p>
+<ul>
+<li>HASEndpoint - added in Windows 10, version 1607, but not documented</li>
+<li>TpmReadyStatus - added in the March service release of Windows 10, version 1607</li>
+</ul></td>
+</tr>
 </tbody>
 </table> 
 
@@ -984,6 +992,14 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <tr class="odd">
 <td style="vertical-align:top">[EnterpriseAppVManagement CSP](enterpriseappvmanagement-csp.md)</td>
 <td style="vertical-align:top"><p>Added new CSP for Windows 10, version 1703.</p></td>
+</tr>
+<tr class="odd">
+<td style="vertical-align:top">[HealthAttestation CSP](healthattestation-csp.md)</td>
+<td style="vertical-align:top"><p>Added the following settings:.</p>
+<ul>
+<li>HASEndpoint - added in Windows 10, version 1607, but not documented</li>
+<li>TpmReadyStatus - added in the March service release of Windows 10, version 1607</li>
+</ul></td>
 </tr>
 </tbody>
 </table>
