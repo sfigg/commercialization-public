@@ -570,6 +570,9 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>Privacy/LetAppsRunInBackground_UserInControlOfTheseApps</li>
 <li>Settings/ConfigureTaskbarCalendar</li>
 <li>Settings/PageVisibilityList</li>
+<li>SmartScreen/EnableAppInstallControl</li>
+<li>SmartScreen/EnableSmartScreenInShell</li>
+<li>SmartScreen/PreventOverrideForFilesInShell</li>
 <li>Start/HideAppList</li>
 <li>Start/HideChangeAccountSettings</li>
 <li>Start/HideFrequentlyUsedApps</li>
@@ -960,6 +963,9 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>Connectivity/AllowConnectedDevices</li>
 <li>Display/TurnOffGdiDPIScalingForApps</li>
 <li>Display/TurnOnGdiDPIScalingForApps</li>
+<li>SmartScreen/EnableAppInstallControl</li>
+<li>SmartScreen/EnableSmartScreenInShell</li>
+<li>SmartScreen/PreventOverrideForFilesInShell</li>
 <li>Update/IgnoreMOAppDownloadLimit</li>
 <li>Update/IgnoreMOUpdateDownloadLimit</li>
 </ul>

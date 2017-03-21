@@ -30,7 +30,7 @@ The following diagram shows how Windows SIM works.
 ## Related topics
 
 
-[Windows System Image Manager Reference Topics](windows-system-image-manager-reference-topics.md)
+[Windows System Image Manager Reference Topics](windows-system-image-manager-technical-reference.md)
 
 [Windows System Image Manager Overview Topics](windows-system-image-manager-overview-topics.md)
 
