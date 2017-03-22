@@ -28,11 +28,6 @@ The following diagram shows the NetworkQoSPolicy configuration service provider 
 <a href="" id="name"></a>**_Name_**  
 <p style="margin-left: 20px">Node for the QoS policy name.
 
-<a href="" id="name-policystore"></a>**_Name_/PolicyStore**  
-<p style="margin-left: 20px">The location where the QoS policy is stored.
-
-<p style="margin-left: 20px">The supported operations are Add, Get, Delete, and Replace.
-
 <a href="" id="name-ipprotocolmatchcondition"></a>**_Name_/IPProtocolMatchCondition**  
 <p style="margin-left: 20px">Specifies the IP protocol used to match the network traffic. 
 
