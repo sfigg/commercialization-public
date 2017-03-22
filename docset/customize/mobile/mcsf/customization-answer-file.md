@@ -14,15 +14,15 @@ A **customization answer file** is an XML file that you write based on the MCSF 
 
 When creating or working with customization answer files, keep the following design requirements and considerations in mind:
 
--   If you are using ImgGen.cmd to generate a mobile OS image, you can only specify one customization answer file. For more information, see [Building a mobile image using ImgGen.cmd](../../manufacture/mobile/building-a-phone-image-using-imggencmd.md). However, you can import additional answer filesto form a single set of customizations and variants that can be applied to the OS image. For more information, see the [Importing other customization answer files](#importingothercustomizationanswerfiles) section in this topic.
+-   If you are using ImgGen.cmd to generate a mobile OS image, you can only specify one customization answer file. For more information, see [Building a mobile image using ImgGen.cmd](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/manufacture/mobile/building-a-phone-image-using-imggencmd). However, you can import additional answer filesto form a single set of customizations and variants that can be applied to the OS image. For more information, see the [Importing other customization answer files](#importingothercustomizationanswerfiles) section in this topic.
 
 -   If you are using the Windows Imaging and Configuration Designer (ICD) command-line interface (CLI) to generate a mobile OS image, you can use the /MCSFCustomizationXML parameter in the **/Build-ImageFromPackages** command to specify a path to the MCSF customization answer file. For more information, see [To build an image for Windows 10 Mobile or Windows 10 IoT Core (IoT Core)](p_icd.use_the_windows_icd_command_line_interface#to-build-a-mobile-image).
 
 -   Depending on what you want to do, you can use the customization answer file to create a package containing your customization(s) or use the answer file as one of the inputs to create an OS image.
 
-    -   To use the customization answer file to generate a package without building an OS image, see [Generating customization packages without creating an image](../../manufacture/mobile/building-a-phone-image-using-imggencmd.md#generating-customization-packages-without-creating-an-image).
+    -   To use the customization answer file to generate a package without building an OS image, see [Generating customization packages without creating an image](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/manufacture/mobile/building-a-phone-image-using-imggencmd#generating-customization-packages-without-creating-an-image).
 
-    -   To build an image as an .ffu file using the customization answer file as one of the inputs, see [Using ImgGen.cmd to generate the image](../../manufacture/mobile/building-a-phone-image-using-imggencmd.md#usingimggen).
+    -   To build an image as an .ffu file using the customization answer file as one of the inputs, see [Using ImgGen.cmd to generate the image](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/manufacture/mobile/building-a-phone-image-using-imggencmd.md#usingimggen).
 
 -   The values used in the root customization answer file (or the one you specify as the input customization answer file during ImgGen.cmd or CustomizationGen.cmd in Step 6) is used to determine the package owner so it is important to provide values for the following attributes:
 
@@ -319,7 +319,7 @@ The following table defines all the elements in a customization answer file.
 <td><p><strong>Settings</strong></p></td>
 <td><p><strong>Static</strong>, <strong>Variant</strong></p></td>
 <td><p>A settings group that is determined by a provided path.</p>
-<p>For more information about the settings group, setting elements, and associated attributes, see [Managed Centralized Settings Framework (MCSF)](managed-centralized-settings-framework--mcsf-.md).</p></td>
+<p>For more information about the settings group, setting elements, and associated attributes, see [Managed Centralized Settings Framework (MCSF)](managed-centralized-settings-framework-mcsf.md).</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Setting</strong></p></td>
@@ -429,7 +429,7 @@ In the previous XML sample, a SIM target is defined through MNC/MCC pairs. The f
 
 ### <a href="" id="extensionprovisioningkeys"></a>Extension provisioning keys
 
-OEMs can use custom CSPs as conditions by listing the name/path in the **Name** attribute and the desired value to pass to the CSP to check against. For more information on how to define and use extension provisioning keys, see [Define extension provisioning keys](p_phCustomization.define_extension_provisioning_keys).
+OEMs can use custom CSPs as conditions by listing the name/path in the **Name** attribute and the desired value to pass to the CSP to check against. 
 
 ## <a href="" id="importingothercustomizationanswerfiles"></a>Importing other customization answer files
 
@@ -480,8 +480,6 @@ OEMs can preload apps using the following customization answer file code snippet
     </Applications>
 ```
 
-For more information on how to create the .app/.appx, license, and provXML files, see [Create a preloaded application](p_phPartAppDev.create_a_preloaded_application).
-
 **Note**  
 The AppPreInstaller is specifically looking for provXML files with the filename pattern **MPAP\_\*\_\*.provxml** so make sure your file names are correctly formatted.
 
@@ -518,7 +516,7 @@ The following table describes where preloaded apps are stored on the device:
 
  
 
-All applications can be uninstalled by the user. When applications are uninstalled, the application files remain on the device, but these are not shown in the application list. During a cold boot, or when the user selects **Reset my phone**, apps in the Data partition will be removed while apps in the MainOS partition will be reinstalled. For more information about these partitions, see [Partition layout](p_phBringUp.partition_layout). Users can also install apps to the SD card. When the phone boots with an SD card, the user is given an option to select the install location.
+All applications can be uninstalled by the user. When applications are uninstalled, the application files remain on the device, but these are not shown in the application list. During a cold boot, or when the user selects **Reset my phone**, apps in the Data partition will be removed while apps in the MainOS partition will be reinstalled. Users can also install apps to the SD card. When the phone boots with an SD card, the user is given an option to select the install location.
 
 ## <a href="" id="collisionsoverrides"></a>Collisions and overrides
 
