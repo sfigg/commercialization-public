@@ -27,7 +27,7 @@ Beginning with Windows 10, version 1607, the dialer codes customization support
 The OS trims the dial string for legacy apps while it passes the dial string without modifications for Universal Windows apps.
 
 **Important**  
-In your PROVXML file, you must also set the **FullyPreinstall** flag to TRUE so that the app is available to run immediate after first boot or an OS update. For more information, see [Preinstallable apps for Windows 10 Mobile](p_preinstall.preinstallable_apps_for_Window_10_for_phones).
+In your PROVXML file, you must also set the **FullyPreinstall** flag to TRUE so that the app is available to run immediate after first boot or an OS update. 
 
  
 
@@ -77,8 +77,6 @@ In your PROVXML file, you must also set the **FullyPreinstall** flag to TRUE so 
         To prevent the initial phone setup process from installing the application on first boot, do not place the provXML file in the directory that the initial phone setup process checks, such as $(runtime.commonfiles)\\Provisioning\\OEM. Instead, place the provXML file in another location, such as $(runtime.commonfiles)\\Xaps, which you can then reference from the `PartnerAppProvisioningFilePath` setting.
 
          
-
-    For more information on preloaded applications, see [Preinstallable apps for Windows 10 Mobile](p_preinstall.preinstallable_apps_for_Window_10_for_phones).
 
 2.  You must also configure the following customization settings so that the dialer will start the primary OEM dialer application. If you set these values, no application is launched and no messages are displayed to the user. The following configuration causes the dialer to start the primary OEM dialer application.
 

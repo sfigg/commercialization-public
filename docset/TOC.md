@@ -499,8 +499,6 @@
 ### [Customize using the mobile MCSF framework](customize/mobile/mcsf/provisioning-and-customization.md)
 #### [Managed Centralized Settings Framework (MCSF)](customize/mobile/mcsf/managed-centralized-settings-framework-mcsf.md)
 #### [Customization answer file](customize/mobile/mcsf/customization-answer-file.md)
-#### [MCSF to Windows Provisioning settings map](customize/mobile/mcsf/mcsf-to-windows-provisioning-settings-map.md)
-#### [MCSF settings not supported in Windows Provisioning](customize/mobile/mcsf/mcsf-settings-not-supported-in-windows-provisioning.md)
 #### [Set languages and locales](customize/mobile/mcsf/set-languages-and-locales.md)
 #### [Create a resource-only .dll for localized strings](customize/mobile/mcsf/create-a-resource-only-dll-for-localized-strings.md)
 #### [Customizations for device management](customize/mobile/mcsf/customizations-for-device-management.md)

@@ -97,54 +97,50 @@ The **Settings** app contains a predefined collection of user-configurable syste
 <td><p>Partners can configure settings related to the Wi-Fi icon.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Wi-Fi settings: Wi-Fi Sense](wi-fi-sense.md)</p></td>
-<td><p>Partners can change the default settings for <strong>Wi-Fi Sense</strong>.</p></td>
-</tr>
-<tr class="odd">
 <td><p>[Cellular + SIM settings: Add a suffix to the mobile operator name](add-a-suffix-to-the-mobile-operator-name.md)</p></td>
 <td><p>To meet branding requirements for some mobile operators, OEMs can add a suffix to the network name that is displayed on the phone.</p></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><p>[Cellular + SIM settings: Additional Internet APN settings](additional-internet-apn-settings.md)</p></td>
 <td><p>OEMs can hide both the <strong>add internet apn</strong> button and the <strong>IP type</strong> listbox in the <strong>internet APN</strong> settings screen.</p></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><p>[Cellular + SIM settings: Background cellular data restriction](background-cellular-data-restriction.md)</p></td>
 <td><p>To meet market or mobile operator requirements, OEMs can restrict background data in the data usage settings.</p></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><p>[Cellular + SIM settings: Cellular data fallback when in limited Wi-Fi connectivity](cellular-data-fallback-when-in-limited-wi-fi-connectivity.md)</p></td>
 <td><p>OEMs can change the default behavior for the device when Wi-Fi connectivity becomes limited.</p></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><p>[Cellular + SIM settings: Cellular settings for phones](cellular-settings-for-phones.md)</p></td>
 <td><p>OEMs can hide certain user options for phones that appear in the <strong>Cellular &amp; SIM</strong> screen in <strong>Settings</strong>.</p></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><p>[Cellular + SIM settings: Change SIM to SIM/UIM](change-sim-to-simuim.md)</p></td>
 <td><p>Partners can change the string &quot;SIM&quot; to &quot;SIM/UIM&quot; in the device UI.</p></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><p>[Cellular + SIM settings: Change the default SIM name to match the SPN or operator name](change-the-default-sim-name-to-match-the-spn-or-operator-name.md)</p></td>
 <td><p>By default, the OS displays <strong>SIM 1</strong> or <strong>SIM 2</strong> as the default friendly name for the SIM in slot 1 or slot 2 if the service provider name (SPN) or mobile operator name has not been set. Partners can use this customization to change the default name read from the SIM to define the SPN for SIM cards that do not contain this information or to generate the default friendly name for the SIM.</p></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><p>[Cellular + SIM settings: Connection speed option](connection-speed-option.md)</p></td>
 <td><p>Partners can customize the listed names of the connection speeds, and can hide the user option to select the connection speed that is displayed on the <strong>SIM</strong> screen.</p></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><p>[Cellular + SIM settings: Default highest connection speed](default-highest-connection-speed.md)</p></td>
 <td><p>Partners can set the default value for the <strong>Highest connection speed</strong> option in the <strong>Settings</strong> &gt; <strong>Cellular &amp; SIM</strong> &gt; <strong>SIM</strong> screen by specifying the bitmask for any combination of radio technology to be excluded from the default value. The connection speed that has not been excluded will show up as the highest connection speed.</p></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><p>[Cellular + SIM settings: Default roaming option](default-roaming-option.md)</p></td>
 <td><p>Partners can set the default value for the <strong>Default roaming options</strong> option in the <strong>Cellular &amp; SIM</strong> settings screen.</p></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><p>[Cellular + SIM settings: Extended error messages for reject codes](extended-error-messages-for-reject-codes.md)</p></td>
 <td><p>When a reject code is sent by the network, partners can specify that extended error messages should be displayed instead of the standard simple error messages.</p></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><p>[Cellular + SIM settings: Hide CDMA mode selection](hide-cdma-mode-selection.md)</p></td>
 <td><p>For CDMA phones, partners can hide <strong>CDMA</strong> option in the network <strong>Mode</strong> selection drop-down that appears on the <strong>Cellular &amp; SIM</strong> screen in <strong>Settings</strong>.</p></td>
 </tr>

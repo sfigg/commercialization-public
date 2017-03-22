@@ -42,12 +42,8 @@ See the following sections for more information about what you can do to customi
 <td><p>This section includes topics describing key tasks, as well as the reference for [Windows System Image Manager](https://msdn.microsoft.com/library/windows/hardware/dn922445) and [Unattended Windows Setup Reference](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/customize/desktop/unattend/index) settings.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Customizations for enterprise desktop](enterprise\enterprise-custom-portal.md)</p></td>
-<td><p>Learn about the customizations available to you if you are providing a controlled and specialized experience on a Windows device running Windows 10 Enterprise.</p></td>
-</tr>
-<tr class="odd">
 <td><p>[Customizations for mobile](mobile/windows-10-mobile-customizations-portal.md)</p></td>
-<td><p>Learn about the capabilities that are available in Windows 10 Mobile.</p>
+<td><p>Learn about the customizations available to you if you are providing a controlled and specialized experience on a Windows device running Windows 10 Enterprise.</p>
 </td>
 <tr class="odd">
 <td><p>[Mobile device management](mdm/index.md)</p></td>
