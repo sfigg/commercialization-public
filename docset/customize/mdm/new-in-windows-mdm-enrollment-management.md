@@ -690,6 +690,10 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 </ul>
 </td>
 </tr>
+<tr class="odd">
+<td style="vertical-align:top">[NetworkQoSPolicy CSP](networkqospolicy-csp.md)</td>
+<td style="vertical-align:top"><p>Added new CSP.</p></td>
+</tr>
 </tbody>
 </table> 
 
@@ -1038,6 +1042,10 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>Properties/DoNotShowMyMeetingsAndFiles</li>
 </ul>
 </td>
+</tr>
+<tr class="odd">
+<td style="vertical-align:top">[NetworkQoSPolicy CSP](networkqospolicy-csp.md)</td>
+<td style="vertical-align:top"><p>Added new CSP for Windows 10, version 1703.</p></td>
 </tr>
 </tbody>
 </table>
