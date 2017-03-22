@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # Windows System Image Manager User Interface Overview
 
 
-The Windows® System Image Manager (Windows SIM) user interface contains a series of panes. You can use these panes to open Windows image (.**wim**) files, create unattended answer files, and then add components and packages to the respective configuration passes in an answer file.
+The Windows System Image Manager (Windows SIM) user interface contains a series of panes. You can use these panes to open Windows image (.**wim**) files, create unattended answer files, and then add components and packages to the respective configuration passes in an answer file.
 
 The following screen shot illustrates the Windows SIM user interface.
 

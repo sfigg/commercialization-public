@@ -55,7 +55,6 @@ The following table lists Windows operating systems and the supported list of ar
 <td><p>Windows 10 (64-bit edition)</p></td>
 <td><p>x64-based</p></td>
 </tr>
-
 <tr class="even">
 <td><p>Windows Server 2012 R2 (64-bit edition)</p></td>
 <td><p>x64-based</p></td>
@@ -68,7 +67,6 @@ The following table lists Windows operating systems and the supported list of ar
 <td><p>Windows 8.1 (64-bit edition)</p></td>
 <td><p>x64-based</p></td>
 </tr>
-
 <tr class="odd">
 <td><p>Windows 8.1 (32-bit edition)</p></td>
 <td><p>x86-based, x64-based, Windows RT ARM-based</p></td>
