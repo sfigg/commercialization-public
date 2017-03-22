@@ -25,11 +25,11 @@ This topic describes Windows 10, version 1703 answer-file settings that have ch
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[](.md)</p></td>
+<td><p></p></td>
 <td><p>New.</p></td>
 </tr>
 <tr class="even">
-<td><p>[](.md)</p></td>
+<td><p></p></td>
 <td><p></p></td>
 </tr>
 
