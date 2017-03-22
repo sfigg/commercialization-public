@@ -11,7 +11,19 @@ MSHAttr:
 > [!WARNING]
 > Some information relates to prereleased product, which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
-The NetworkQoSPolicy CSP applies the Quality of Service (QoS) policy for Microsoft Surface Hub. This CSP was added in Windows 10, version 1703.
+The NetworkQoSPolicy configuration service provider creates network Quality of Service (QoS) policies. A QoS policy performs a set of actions on network traffic based on a set of matching conditions. This CSP was added in Windows 10, version 1703.
+
+The following conditions are supported:
+-	Network traffic from a specific application name
+-	Network traffic from specific source or destination ports
+-	Network traffic from a specific IP protocol (TCP, UDP, or both)
+ 
+The following actions are supported:
+-	Layer 2 tagging using a IEEE 802.1p priority value
+-	Layer 3 tagging using a differentiated services code point (DSCP) value
+
+> [!NOTE]
+> Note: The NetworkQoSPolicy CSP is supported only on Microsoft Surface Hub.
 
 The following diagram shows the NetworkQoSPolicy configuration service provider in tree format.
 
@@ -37,31 +49,47 @@ The following diagram shows the NetworkQoSPolicy configuration service provider 
    - 1 - TCP
    - 2 - UDP
 
+<p style="margin-left: 20px">The data type is int. 
+
 <p style="margin-left: 20px">The supported operations are Add, Get, Delete, and Replace.
 
 <a href="" id="name-apppathnamematchcondition"></a>**_Name_/AppPathNameMatchCondition**  
 <p style="margin-left: 20px">Specifies the name of an application to be used to match the network traffic, such as application.exe or %ProgramFiles%\application.exe.
+
+<p style="margin-left: 20px">The data type is char. 
 
 <p style="margin-left: 20px">The supported operations are Add, Get, Delete, and Replace.
 
 <a href="" id="name-sourceportmatchcondition"></a>**_Name_/SourcePortMatchCondition**  
 <p style="margin-left: 20px">Specifies a single port or a range of ports to be used to match the network traffic source. 
 
-<p style="margin-left: 20px">Valid values are [first port number]-[last port number] or [port number].
+<p style="margin-left: 20px">Valid values are: 
+
+-   A range of source ports: [first port number]-[last port number]
+-   A single source port: [port number]
+   
+<p style="margin-left: 20px">The data type is char. 
 
 <p style="margin-left: 20px">The supported operations are Add, Get, Delete, and Replace.
 
 <a href="" id="name-destinationportmatchcondition"></a>**_Name_/DestinationPortMatchCondition**  
-<p style="margin-left: 20px">Specifies a single port or a range of ports to be used to match the network traffic destination.
+<p style="margin-left: 20px">Specifies a single source port or a range of ports to be used to match the network traffic destination.
 
-<p style="margin-left: 20px">Valid values are [first port number]-[last port number] or [port number].
+<p style="margin-left: 20px">Valid values are: 
+
+-   A range of destination ports: [first port number]-[last port number]
+-   A single destination port: [port number]
+   
+<p style="margin-left: 20px">The data type is char. 
 
 <p style="margin-left: 20px">The supported operations are Add, Get, Delete, and Replace.
 
 <a href="" id="name-priorityvalue8021action"></a>**_Name_/PriorityValue8021Action**  
-<p style="margin-left: 20px">Specifies the IEEE 802.1p value to apply to matching network traffic.
+<p style="margin-left: 20px">Specifies the IEEE 802.1p priority value to apply to matching network traffic.
 
 <p style="margin-left: 20px">Valid values are 0-7.
+
+<p style="margin-left: 20px">The data type is int.
 
 <p style="margin-left: 20px">The supported operations are Add, Get, Delete, and Replace.
 
@@ -69,6 +97,8 @@ The following diagram shows the NetworkQoSPolicy configuration service provider 
 <p style="margin-left: 20px">The differentiated services code point (DSCP) value to apply to matching network traffic.
 
 <p style="margin-left: 20px">Valid values are 0-63.
+
+<p style="margin-left: 20px">The data type is int.
 
 <p style="margin-left: 20px">The supported operations are Add, Get, Delete, and Replace.
 
