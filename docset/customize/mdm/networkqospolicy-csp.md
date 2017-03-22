@@ -1,0 +1,79 @@
+---
+title: NetworkQoSPolicy CSP
+description: he NetworkQoSPolicy CSP applies the Quality of Service (QoS) policy for Microsoft Surface Hub. This CSP was added in Windows 10, version 1703.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+---
+
+# NetworkQoSPolicy CSP
+
+> [!WARNING]
+> Some information relates to prereleased product, which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+
+The NetworkQoSPolicy CSP applies the Quality of Service (QoS) policy for Microsoft Surface Hub. This CSP was added in Windows 10, version 1703.
+
+The following diagram shows the NetworkQoSPolicy configuration service provider in tree format.
+
+![NetworkQoSPolicy CSP diagram](images/provisioning-csp-networkqospolicy.png)
+
+<a href="" id="networkqospolicy"></a>**NetworkQoSPolicy**   
+<p style="margin-left: 20px">The root node for the NetworkQoSPolicy configuration service provider.</p>
+
+<a href="" id="version"></a>**Version**  
+<p style="margin-left: 20px">Specifies the version information.
+
+<p style="margin-left: 20px">The only supported operation is Get.
+
+<a href="" id="name"></a>**_Name_**  
+<p style="margin-left: 20px">Node for the QoS policy name.
+
+<a href="" id="name-policystore"></a>**_Name_/PolicyStore**  
+<p style="margin-left: 20px">The location where the QoS policy is stored.
+
+<p style="margin-left: 20px">The supported operations are Add, Get, Delete, and Replace.
+
+<a href="" id="name-ipprotocolmatchcondition"></a>**_Name_/IPProtocolMatchCondition**  
+<p style="margin-left: 20px">Specifies the IP protocol used to match the network traffic. 
+
+<p style="margin-left: 20px">Valid values are:
+
+   - 0 (default) - Both TCP and UDP 
+   - 1 - TCP
+   - 2 - UDP
+
+<p style="margin-left: 20px">The supported operations are Add, Get, Delete, and Replace.
+
+<a href="" id="name-apppathnamematchcondition"></a>**_Name_/AppPathNameMatchCondition**  
+<p style="margin-left: 20px">Specifies the name of an application to be used to match the network traffic, such as application.exe or %ProgramFiles%\application.exe.
+
+<p style="margin-left: 20px">The supported operations are Add, Get, Delete, and Replace.
+
+<a href="" id="name-sourceportmatchcondition"></a>**_Name_/SourcePortMatchCondition**  
+<p style="margin-left: 20px">Specifies a single port or a range of ports to be used to match the network traffic source. 
+
+<p style="margin-left: 20px">Valid values are [first port number]-[last port number] or [port number].
+
+<p style="margin-left: 20px">The supported operations are Add, Get, Delete, and Replace.
+
+<a href="" id="name-destinationportmatchcondition"></a>**_Name_/DestinationPortMatchCondition**  
+<p style="margin-left: 20px">Specifies a single port or a range of ports to be used to match the network traffic destination.
+
+<p style="margin-left: 20px">Valid values are [first port number]-[last port number] or [port number].
+
+<p style="margin-left: 20px">The supported operations are Add, Get, Delete, and Replace.
+
+<a href="" id="name-priorityvalue8021action"></a>**_Name_/PriorityValue8021Action**  
+<p style="margin-left: 20px">Specifies the IEEE 802.1p value to apply to matching network traffic.
+
+<p style="margin-left: 20px">Valid values are 0-7.
+
+<p style="margin-left: 20px">The supported operations are Add, Get, Delete, and Replace.
+
+<a href="" id="name-dscpaction"></a>**_Name_/DSCPAction**  
+<p style="margin-left: 20px">The differentiated services code point (DSCP) value to apply to matching network traffic.
+
+<p style="margin-left: 20px">Valid values are 0-63.
+
+<p style="margin-left: 20px">The supported operations are Add, Get, Delete, and Replace.
+
