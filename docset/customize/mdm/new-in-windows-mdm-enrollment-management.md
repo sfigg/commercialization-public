@@ -490,8 +490,8 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 </thead>
 <tbody>
 <tr class="odd">
-<td style="vertical-align:top"><p>New nodes in [Update CSP](update-csp.md)</p></td>
-<td style="vertical-align:top"><p>Added the following nodes to the [Update CSP](update-csp.md):</p>
+<td style="vertical-align:top"><p>[Update CSP](update-csp.md)</p></td>
+<td style="vertical-align:top"><p>Added the following nodes:</p>
 <ul>
 <li>FailedUpdates/<em>Failed Update Guid</em>/RevisionNumber</li>
 <li>InstalledUpdates/<em>Installed Update Guid</em>/RevisionNumber</li>
@@ -670,6 +670,25 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>HASEndpoint - added in Windows 10, version 1607, but not documented</li>
 <li>TpmReadyStatus - added in the March service release of Windows 10, version 1607</li>
 </ul></td>
+</tr>
+<tr class="even">
+<td style="vertical-align:top"><p>[SurfaceHub CSP](surfacehub-csp.md)</p></td>
+<td style="vertical-align:top"><p>Added the following nodes and settings:</p>
+<ul>
+<li>InBoxApps/SkypeForBusiness</li>
+<li>InBoxApps/SkypeForBusiness/DomainName</li>
+<li>InBoxApps/Connect</li>
+<li>InBoxApps/Connect/AutoLaunch</li>
+<li>Properties/DefaultVolume</li>
+<li>Properties/ScreenTimeout</li>
+<li>Properties/SessionTimeout</li>
+<li>Properties/SleepTimeout</li>
+<li>Properties/AllowSessionResume</li>
+<li>Properties/AllowAutoProxyAuth</li>
+<li>Properties/DisableSigninSuggestions</li>
+<li>Properties/DoNotShowMyMeetingsAndFiles</li>
+</ul>
+</td>
 </tr>
 </tbody>
 </table> 
@@ -993,13 +1012,32 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <td style="vertical-align:top">[EnterpriseAppVManagement CSP](enterpriseappvmanagement-csp.md)</td>
 <td style="vertical-align:top"><p>Added new CSP for Windows 10, version 1703.</p></td>
 </tr>
-<tr class="odd">
+<tr>
 <td style="vertical-align:top">[HealthAttestation CSP](healthattestation-csp.md)</td>
 <td style="vertical-align:top"><p>Added the following settings:.</p>
 <ul>
 <li>HASEndpoint - added in Windows 10, version 1607, but not documented</li>
 <li>TpmReadyStatus - added in the March service release of Windows 10, version 1607</li>
 </ul></td>
+</tr>
+<tr class="even">
+<td style="vertical-align:top"><p>[SurfaceHub CSP](surfacehub-csp.md)</p></td>
+<td style="vertical-align:top"><p>Updated in Windows 10, version 1703. Added the following nodes and settings:</p>
+<ul>
+<li>InBoxApps/SkypeForBusiness</li>
+<li>InBoxApps/SkypeForBusiness/DomainName</li>
+<li>InBoxApps/Connect</li>
+<li>InBoxApps/Connect/AutoLaunch</li>
+<li>Properties/DefaultVolume</li>
+<li>Properties/ScreenTimeout</li>
+<li>Properties/SessionTimeout</li>
+<li>Properties/SleepTimeout</li>
+<li>Properties/AllowSessionResume</li>
+<li>Properties/AllowAutoProxyAuth</li>
+<li>Properties/DisableSigninSuggestions</li>
+<li>Properties/DoNotShowMyMeetingsAndFiles</li>
+</ul>
+</td>
 </tr>
 </tbody>
 </table>
