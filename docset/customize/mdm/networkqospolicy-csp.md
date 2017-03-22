@@ -22,8 +22,6 @@ The following actions are supported:
 -	Layer 2 tagging using a IEEE 802.1p priority value
 -	Layer 3 tagging using a differentiated services code point (DSCP) value
 
-> [!NOTE]
-> Note: The NetworkQoSPolicy CSP is supported only on Microsoft Surface Hub.
 
 The following diagram shows the NetworkQoSPolicy configuration service provider in tree format.
 
@@ -34,6 +32,8 @@ The following diagram shows the NetworkQoSPolicy configuration service provider 
 
 <a href="" id="version"></a>**Version**  
 <p style="margin-left: 20px">Specifies the version information.
+
+<p style="margin-left: 20px">The data type is int. 
 
 <p style="margin-left: 20px">The only supported operation is Get.
 
@@ -65,8 +65,8 @@ The following diagram shows the NetworkQoSPolicy configuration service provider 
 
 <p style="margin-left: 20px">Valid values are: 
 
--   A range of source ports: [first port number]-[last port number]
--   A single source port: [port number]
+-   A range of source ports: _[first port number]_-_[last port number]_
+-   A single source port: _[port number]_
    
 <p style="margin-left: 20px">The data type is char. 
 
@@ -77,8 +77,8 @@ The following diagram shows the NetworkQoSPolicy configuration service provider 
 
 <p style="margin-left: 20px">Valid values are: 
 
--   A range of destination ports: [first port number]-[last port number]
--   A single destination port: [port number]
+-   A range of destination ports: _[first port number]_-_[last port number]_
+-   A single destination port: _[port number]_
    
 <p style="margin-left: 20px">The data type is char. 
 
