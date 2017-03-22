@@ -29,16 +29,16 @@ The following diagram shows the DMSessionActions configuration service provider 
 <a href="" id="providerid"></a>**_ProviderID_**  
 <p style="margin-left: 20px">TBD</p>
 
-<a href="" id="checkinalertconfiguration"></a>**CheckinAlertConfiguration**  
+<a href="" id="checkinalertconfiguration"></a>**_ProviderID_/CheckinAlertConfiguration**  
 <p style="margin-left: 20px">TBD</p>
 
-<a href="" id="nodes"></a>**Nodes**  
+<a href="" id="nodes"></a>**_ProviderID_/CheckinAlertConfiguration/Nodes**  
 <p style="margin-left: 20px">TBD</p>
 
-<a href="" id="nodeid"></a>**_NodeID_**  
+<a href="" id="nodeid"></a>**_ProviderID_/CheckinAlertConfiguration/Nodes/_NodeID_**  
 <p style="margin-left: 20px">TBD</p>
 
-<a href="" id="nodeuri"></a>**NodeURI**  
+<a href="" id="nodeuri"></a>**_ProviderID_/CheckinAlertConfiguration/Nodes/_NodeID_/NodeURI**  
 <p style="margin-left: 20px">TBD</p>
 <p style="margin-left: 20px">Value type is string. Supported operations are Add, Get, Replace, and Delete.</p>
 
@@ -49,10 +49,10 @@ The following diagram shows the DMSessionActions configuration service provider 
 <a href="" id="powersettings"></a>**PowerSettings**  
 <p style="margin-left: 20px">TBD</p>
 
-<a href="" id="maxskippedsessionsinlowpowerstate"></a>**MaxSkippedSessionsInLowPowerState**  
+<a href="" id="maxskippedsessionsinlowpowerstate"></a>**PowerSettings/MaxSkippedSessionsInLowPowerState**  
 <p style="margin-left: 20px">TBD</p>
 <p style="margin-left: 20px">Value type is integer. Supported operations are Add, Get, Replace, and Delete.</p>
 
-<a href="" id="maxtimesessionsskippedinlowpowerstate"></a>**MaxTimeSessionsSkippedInLowPowerState**  
+<a href="" id="maxtimesessionsskippedinlowpowerstate"></a>**PowerSettings/MaxTimeSessionsSkippedInLowPowerState**  
 <p style="margin-left: 20px">TBD</p>
 <p style="margin-left: 20px">Value type is integer. Supported operations are Add, Get, Replace, and Delete.</p>
