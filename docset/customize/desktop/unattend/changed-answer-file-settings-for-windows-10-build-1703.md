@@ -24,15 +24,14 @@ This topic describes Windows 10, version 1703 answer-file settings that have ch
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td><p></p></td>
-<td><p>New.</p></td>
-</tr>
 <tr class="even">
-<td><p></p></td>
-<td><p></p></td>
+<td><p>[Microsoft-Windows-TPM-Tasks-ClearTpm](microsoft-windows-tpm-tasks-cleartpm.md)</p></td>
+<td><p>New. Specifies whether to clear the Trusted Platform Module (TPM) during Windows setup. Clearing the TPM prevents an issue in earlier versions that kept some Windows features from working if the TPM was incorrectly set.</p></td>
 </tr>
-
+<tr class="odd">
+<td><p>[Microsoft-Windows-TwinUI-Hide](microsoft-windows-twinui-hide.md)</p></td>
+<td><p>New. Specifies whether to hide the link to an advanced settings app in the Pen and Windows Ink Settings page.</p></td>
+</tr>
 </tbody>
 </table>
 
