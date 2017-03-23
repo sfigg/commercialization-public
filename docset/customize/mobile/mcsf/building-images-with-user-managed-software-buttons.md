@@ -132,10 +132,6 @@ To build an image with software-rendered buttons that can be shown or hidden by 
     </tbody>
     </table>
 
-     
-
-    For more information about the background colors and accent colors, see [Themes and accent colors](p_phCustomization.themes_and_accent_colors).
-
 6.  **Optional**. To configure the navigation bar auto show and hide option, set `AutoHide` to one of the following values:
 
     <table>
@@ -258,7 +254,7 @@ To build an image with software-rendered buttons that can be shown or hidden by 
 
          
 
-8.  If you have not done so already, create an OEMInput XML file to define the set of packages to include in your phone image, and configure your computer to use the imaging tools. For more information, see [Building a mobile image using ImgGen.cmd](../../manufacture/mobile/building-a-phone-image-using-imggencmd.md).
+8.  If you have not done so already, create an OEMInput XML file to define the set of packages to include in your phone image, and configure your computer to use the imaging tools. For more information, see [Building a mobile image using ImgGen.cmd](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/manufacture/mobile/building-a-phone-image-using-imggencmd).
 
 9.  In your OEMInput XML file, set the value of the **Resolution** element to 1080x1920, 768x1280, 720x1280, or 540x960, depending on the resolution of the panel. For more information, see [OEMInput file contents](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/manufacture/mobile/oeminput-file-contents).
 

@@ -10,7 +10,7 @@ ms.assetid: 74B736AD-E837-4F9F-8E34-F062688BCCC4
 # Preload an app with a dependency
 
 
-OEMs can preload apps as long as they meet the requirements specified in the Windows 10 Mobile OEM Policy Document (OPD). For more information on how to create preloaded apps for mobile devices, see [Preinstallable apps for mobile devices](p_preinstall.preinstallable_apps_for_Window_10_for_phones).
+OEMs can preload apps as long as they meet the requirements specified in the Windows 10 Mobile OEM Policy Document (OPD). For more information on how to create preloaded apps for mobile devices, see [Preinstallable apps for mobile devices](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/customize/preinstall/preinstallable-apps-for-window-10-for-phones).
 
 If you need to preinstall an app that has dependencies on other packages or components, you need to make sure that the other packages or components are preinstalled first before your app. If the dependent packages or components are not installed first, your app preinstall will fail.
 
@@ -23,7 +23,7 @@ If you need to preinstall an app that has dependencies on other packages or comp
 
     -   License file - This should be included as part of the preinstallation package.
 
-    -   ProvXML file - See the section *Create a .provxml file for a preinstallable app* in [Preinstallable apps for mobile devices](p_preinstall.preinstallable_apps_for_Window_10_for_phones) for information on how to do this. When specifying the value of the **ProductID** parameter, this value must match the GUID from the AppxManifest file in the preinstallation package.
+    -   ProvXML file - See the section *Create a .provxml file for a preinstallable app* in [Preinstallable apps for mobile devices](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/customize/preinstall/preinstallable-apps-for-window-10-for-phones) for information on how to do this. When specifying the value of the **ProductID** parameter, this value must match the GUID from the AppxManifest file in the preinstallation package.
 
 2.  Make sure you have the following files for the required component:
 
@@ -91,7 +91,7 @@ If you need to preinstall an app that has dependencies on other packages or comp
 
     6.  Save the .pkg.xml file.
 
-    7.  Run PkgGen to generate the .spkg from the .pkg.xml. For more information, see *Run the pkggen.exe tool* in [Creating mobile packages](p_phPackaging.creating_packages).
+    7.  Run PkgGen to generate the .spkg from the .pkg.xml. 
 
 2.  Create an package that contains the source file for the required component and the provisioning file that corresponds to it.
 
@@ -131,11 +131,11 @@ If you need to preinstall an app that has dependencies on other packages or comp
 
     5.  Save the .pkg.xml file.
 
-    6.  Run PkgGen to generate the .spkg from the .pkg.xml. For more information, see *Run the pkggen.exe tool* in [Creating mobile packages](p_phPackaging.creating_packages).
+    6.  Run PkgGen to generate the .spkg from the .pkg.xml. 
 
 3.  Write down the location and names of the .spkg files that were generated for your primary app and the required component.
 
-4.  Update your feature manifest file to include these new packages and define a feature name for them. For more information, see [Feature manifest file contents](../../manufacture/mobile/feature-manifest-file-contents.md).
+4.  Update your feature manifest file to include these new packages and define a feature name for them. For more information, see [Feature manifest file contents](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/manufacture/mobile/feature-manifest-file-contents).
 
     1.  Edit the feature manifest file.
 
@@ -165,7 +165,7 @@ If you need to preinstall an app that has dependencies on other packages or comp
 
     6.  Save your updated feature manifest file.
 
-5.  Update your OEMInput.xml file to include the new features that you defined in the previous step. For more information, see [OEMInput file contents](../../manufacture/mobile/oeminput-file-contents.md).
+5.  Update your OEMInput.xml file to include the new features that you defined in the previous step. For more information, see [OEMInput file contents](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/manufacture/mobile/oeminput-file-contents).
 
     1.  Edit your OEMInput.xml file.
 
@@ -188,13 +188,9 @@ If you need to preinstall an app that has dependencies on other packages or comp
 
 6.  Use the OEMInput.xml file as one of the inputs to build the mobile image.
 
-    You can use either ImgGen.cmd or the Windows Imaging and Configuration Designer (ICD) command-line to do build the image. However, there may be other inputs that you need to provide using either of these tools. For more information, see these topics:
+    You can use ImgGen.cmd to build the image.
 
-    -   [Build a mobile image using ImgGen.cmd](../../manufacture/mobile/building-a-phone-image-using-imggencmd.md)
-
-    -   [Build an image for Windows 10 Mobile](p_icd.use_the_windows_icd_command_line_interface#to-build-a-mobile-image) using the Windows ICD CLI.
-
-7.  Depending on the mobile image type that you built, you may need to sign the image before you can flash it to the phone. For more information, see [Sign a full flash update (FFU) image](../../manufacture/mobile/sign-a-full-flash-update--ffu--image.md).
+7.  Depending on the mobile image type that you built, you may need to sign the image before you can flash it to the phone. For more information, see [Sign a full flash update (FFU) image](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/manufacture/mobile/sign-a-full-flash-update--ffu--image).
 
 <a href="" id="testing"></a>**Testing**  
 1.  Flash the image that contains the preloaded app to a mobile device.

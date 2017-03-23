@@ -18,7 +18,7 @@ When creating or working with customization answer files, keep the following des
 
 -   Depending on what you want to do, you can use the customization answer file to create a package containing your customization(s) or use the answer file as one of the inputs to create an OS image.
 
-    -   To use the customization answer file to generate a package without building an OS image, see [Generating customization packages without creating an image](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/manufacture/mobile/building-a-phone-image-using-imggencmd#generating-customization-packages-without-creating-an-image).
+    -   To use the customization answer file to generate a package without building an OS image, see [Generating customization packages without creating an image](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/manufacture/mobile/building-a-phone-image-using-imggencmd).
 
     -   To build an image as an .ffu file using the customization answer file as one of the inputs, see [Using ImgGen.cmd to generate the image](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/manufacture/mobile/building-a-phone-image-using-imggencmd.md#usingimggen).
 
