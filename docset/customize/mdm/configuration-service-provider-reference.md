@@ -995,10 +995,13 @@ Footnotes:
 -   [BitLocker CSP](bitlocker-csp.md)
 -   [CleanPC CSP](cleanpc-csp.md)
 -   [DeveloperSetup CSP](developersetup-csp.md)
+-   [DynamicManagement CSP](dynamicmanagement-csp.md)
+-   [EnterpriseAppVManagement CSP](enterpriseappvmanagement-csp.md)
 -   [Messaging CSP](messaging-csp.md)
 -   [NetworkProxy CSP](networkproxy-csp.md)
 -   [NetworkQoSPolicy CSP](networkqospolicy-csp.md)
 -   [Office CSP](office-csp.md)
+-   [Personalization CSP](personalization-csp.md)
 
 ## <a href="" id="newcsps"></a>New CSPs added in Windows 10, version 1511
 
