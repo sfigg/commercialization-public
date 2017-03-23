@@ -16,7 +16,7 @@ The following diagram shows the WindowsLicensing configuration service provider 
 
 ![windowslicensing csp diagram](images/provisioning-csp-windowslicensing-th2.png)
 
-<a href="" id="--vendor-msft-windowslicensing"></a>**./Vendor/MSFT/WindowsLicensing**  
+<a href="" id="--device-vendor-msft-windowslicensing"></a>**./Device/Vendor/MSFT/WindowsLicensing**  
 This is the root node for the WindowsLicensing configuration service provider.
 
 The supported operation is Get.
@@ -119,6 +119,34 @@ Returns TRUE if the entered product key can be used for an edition upgrade, acti
 The data type is a chr.
 
 The supported operation is Exec.
+
+<a href="" id="changeproductkey"></a>**ChangeProductKey**  
+Added in Windows 10, version 1703. Installs a product key for Windows 10 desktop devices. Does not reboot.
+
+The data type is a chr.
+
+The supported operation is Execute.
+
+<a href="" id="subscriptions"></a>**Subscriptions**  
+Added in Windows 10, version 1607. Node for subscriptions.
+
+<a href="" id="subscriptions-subscriptionid"></a>**Subscriptions/SubscriptionId**  
+Added in Windows 10, version 1607. Node for subscription IDs.
+
+<a href="" id="subscriptions-subscriptionid-status"></a>**Subscriptions/SubscriptionId/Status**  
+Added in Windows 10, version 1607. Returns the status of the subscription.
+
+The data type is an Int.
+
+The supported operation is Get.
+
+<a href="" id="subscriptions-subscriptionid-name"></a>**Subscriptions/SubscriptionId/Name**  
+Added in Windows 10, version 1607. Returns the name of the subscription.
+
+The data type is a chr.
+
+The supported operation is Get.
+
 
 ## SyncML examples
 
