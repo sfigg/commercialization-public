@@ -64,12 +64,22 @@ Supported operation is Get.
 Represents Windows Defender Advanced Threat Protection configuration.
 
 <a href="" id="configuration-samplesharing"></a>**Configuration/SampleSharing**  
-Returns or sets the Windows Defender Advanced Threat Protection Sample Sharing configuration parameter: 0 - none, 1 - All
+Returns or sets the Windows Defender Advanced Threat Protection Sample Sharing configuration parameter.
 
 The following list shows the supported values:
 
 -   0 – None
 -   1 (default)– All
+
+Supported operations are Get and Replace.
+
+<a href="" id="configuration-telemetryreportingfrequency"></a>**Configuration/TelemetryReportingFrequency**  
+Added in Windows 10, version 1703. Return or set the Windows Defender Advanced Threat Protection telemetry reporting frequency. 
+
+The following list shows the supported values:
+
+-   1 (default) – Normal
+-   2 - Expedite
 
 Supported operations are Get and Replace.
 
