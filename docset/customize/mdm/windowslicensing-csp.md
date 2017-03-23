@@ -145,6 +145,7 @@ The supported operation is Execute.
 <a href="" id="subscriptions"></a>**Subscriptions**  
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 Added in Windows 10, version 1607. Node for subscriptions.
 
 <a href="" id="subscriptions-subscriptionid"></a>**Subscriptions/SubscriptionId**  
@@ -157,23 +158,31 @@ Node for subscriptions.
 =======
 Added in Windows 10, version 1703. Node for subscriptions.
 >>>>>>> 9bee195... task 10803300: WindowsLicensing CSP - add new nodes & settings for RS2
+=======
+Added in Windows 10, version 1607. Node for subscriptions.
+>>>>>>> 8aab7cf... Task 10803300/bug 11375400-change root node, incorp review comments
 
 <a href="" id="subscriptions-subscriptionid"></a>**Subscriptions/SubscriptionId**  
-Added in Windows 10, version 1703. Node for subscription IDs.
+Added in Windows 10, version 1607. Node for subscription IDs.
 
 <a href="" id="subscriptions-subscriptionid-status"></a>**Subscriptions/SubscriptionId/Status**  
+<<<<<<< HEAD
 <<<<<<< HEAD
 Returns the status of the subscription.
 >>>>>>> 9797edf... task 10803300: WindowsLicensing CSP - add new nodes & settings for RS2
 =======
 Added in Windows 10, version 1703. Returns the status of the subscription.
 >>>>>>> 9bee195... task 10803300: WindowsLicensing CSP - add new nodes & settings for RS2
+=======
+Added in Windows 10, version 1607. Returns the status of the subscription.
+>>>>>>> 8aab7cf... Task 10803300/bug 11375400-change root node, incorp review comments
 
 The data type is an Int.
 
 The supported operation is Get.
 
 <a href="" id="subscriptions-subscriptionid-name"></a>**Subscriptions/SubscriptionId/Name**  
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 Added in Windows 10, version 1607. Returns the name of the subscription.
@@ -183,6 +192,9 @@ Returns the name of the subscription.
 =======
 Added in Windows 10, version 1703. Returns the name of the subscription.
 >>>>>>> 9bee195... task 10803300: WindowsLicensing CSP - add new nodes & settings for RS2
+=======
+Added in Windows 10, version 1607. Returns the name of the subscription.
+>>>>>>> 8aab7cf... Task 10803300/bug 11375400-change root node, incorp review comments
 
 The data type is a chr.
 
