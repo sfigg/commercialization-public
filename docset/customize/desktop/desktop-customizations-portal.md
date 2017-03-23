@@ -4,13 +4,50 @@ description: Customizations for desktop devices allow you to change the UI and o
 ---
 
 # Customizations for desktop devices
-
-The most common ways to customize desktop devices are:
-Using the Unattend framework
-Using an xml modification file, for items like Taskbar, Start menu, and OOBE
+You have the following options to customize your image. Depending on which options you’d like to use, you’ll employ the associated method or choice of methods to apply the customization. 
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Feature</th>
+<th>Unattend</th>
+<th>Modification file</th>
+</tr>
+</thead>
+<tbody>
+<!--<tr>
+<td><p>Start menu</p></td>
+<td><p>subset</p></td>
+<td><p>LayoutModification.xml</p></td>
+</tr>-->
+<tr>
+<td><p>Taskbar</p></td>
+<td><p>subset</p></td>
+<td><p>TaskbarLayoutModification.xml</p></td>
+</tr>
+<tr>
+<td><p>Colors</p></td>
+<td><p>yes</p></td>
+<td><p>n/a</p></td>
+</tr>
+<tr>
+<td><p>Dark mode</p></td>
+<td><p>yes</p></td>
+<td><p>n/a</p></td>
+</tr>
+<!--<tr>
+<td><p>Pen and Windows Ink Workspace</p></td>
+<td><p>subset</p></td>
+<td><p>InkWorkspaceModification.xml</p></td>
+</tr>-->
+</tbody>
+</table>
 
 ## In this section
-
+These are some common ways to customize your desktop device. You will also find the tecnical reference for Unattend and WSIM. 
 
 <table>
 <colgroup>
