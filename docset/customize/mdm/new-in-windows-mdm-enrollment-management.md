@@ -520,6 +520,14 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 </ul>
 </td>
 </tr>
+<tr class="even">
+<td style="vertical-align:top">[EnterpriseAPN CSP](enterpriseapn-csp.md)</td>
+<td style="vertical-align:top"><p>Added the following setting:</p>
+<ul>
+<li>Roaming</li>
+</ul>
+</td>
+</tr>
 <tr class="odd">
 <td style="vertical-align:top">[Messaging CSP](messaging-csp.md)</td>
 <td style="vertical-align:top"><p>Added new CSP. This CSP is only supported in Windows 10 Mobile and Mobile Enteprise editions.</p>
@@ -1046,6 +1054,14 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <tr class="odd">
 <td style="vertical-align:top">[NetworkQoSPolicy CSP](networkqospolicy-csp.md)</td>
 <td style="vertical-align:top"><p>Added new CSP for Windows 10, version 1703.</p></td>
+</tr>
+<tr class="even">
+<td style="vertical-align:top">[EnterpriseAPN CSP](enterpriseapn-csp.md)</td>
+<td style="vertical-align:top"><p>Added the following setting:</p>
+<ul>
+<li>Roaming</li>
+</ul>
+</td>
 </tr>
 </tbody>
 </table>
