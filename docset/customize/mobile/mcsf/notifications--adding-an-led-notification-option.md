@@ -84,7 +84,7 @@ In Windows 10 Mobile, the notification LED on handheld devices may not turn on 
 
     You must also replace the **Value** for **HardwareId** to one that matches your LED's DeviceId.
 
-3.  Name and save your .pkg.xml file, then generate a package (.spkg) using the .pkg.xml as input. For more information, see *Run the pkggen.exe tool* in [Creating mobile packages](p_phPackaging.creating_packages).
+3.  Name and save your .pkg.xml file, then generate a package (.spkg) using the .pkg.xml as input. 
 
 4.  After you've created the .spkg, define the specific types of image builds that you want to contain the package.
 
@@ -111,9 +111,7 @@ In Windows 10 Mobile, the notification LED on handheld devices may not turn on 
 
     In this example, replace *SourceDirectory* with the location that contains the .spkg that you created in the previous step. Also, replace the example *Contoso.LEDNotification.EnableLEDAlert.spkg* with the actual name of the .spkg file. **FeatureID** specifies the ID that you're associating with the .spkg. You can provide a different name if you'd like.
 
-    For more information about creating an FM file and other elements that you may need to fully define your feature, see [Feature manifest file contents](../../manufacture/mobile/feature-manifest-file-contents.md). For more information about additional logic that you can add to the build system, see [Feature groupings and constraints](../../manufacture/mobile/feature-groupings-and-constraints.md).
-
-5.  Once you've defined the feature, modify your OEMInput.xml file to add a **Features** element (if one doesn't already exist), add a new **OEM** child element (if one doesn't already exist), and add a new **Feature** entry with the name of the feature that you just defined.
+   5.  Once you've defined the feature, modify your OEMInput.xml file to add a **Features** element (if one doesn't already exist), add a new **OEM** child element (if one doesn't already exist), and add a new **Feature** entry with the name of the feature that you just defined.
 
     For example, the OEMInput.xml entry for the feature you defined in the previous step will look like this:
 
@@ -125,9 +123,9 @@ In Windows 10 Mobile, the notification LED on handheld devices may not turn on 
       </Features>
     ```
 
-    For more information about OEMInput.xml, see [OEMInput file contents](../../manufacture/mobile/oeminput-file-contents.md).
+    For more information about OEMInput.xml, see [OEMInput file contents](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/manufacture/mobile/oeminput-file-contents).
 
-6.  Build the OS image. For more information, see *Using ImgGen.cmd to generate an image* in [Build a mobile image using ImgGen.cmd](../../manufacture/mobile/building-a-phone-image-using-imggencmd.md).
+6.  Build the OS image. For more information, see *Using ImgGen.cmd to generate an image* in [Build a mobile image using ImgGen.cmd](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/manufacture/mobile/building-a-phone-image-using-imggencmd).
 
 <a href="" id="testing-"></a>**Testing:**  
 1.  Flash the build that contains this customization to a mobile device.

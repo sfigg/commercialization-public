@@ -217,7 +217,7 @@ OEMs should only configure **MainOSRTCDataReservedSectors** when using the runti
 
  
 
-When specifying the size, OEMs must specify a number of sectors that is sufficient to contain the latest get of applications placed in the data store that might be installed for an individual mobile operator. For example, if the OEM's customization answer file specified applications A, B, and C should be on the data partition and should only be installed for mobile operator Contoso, then the size reserved must be the size of A+B+C in MB and divided by 512 bytes per sector. At a maximum, OEMs can use **MainOSRTCDataReservedSectors** to reserve sectors up to 100 MB to be used by the runtime configuration engine. For more information about OEMDevicePlatform.xml, see [Set device platform information (OEMDevicePlatform.xml)](p_phBringUp.set_device_platform_information).
+When specifying the size, OEMs must specify a number of sectors that is sufficient to contain the latest get of applications placed in the data store that might be installed for an individual mobile operator. For example, if the OEM's customization answer file specified applications A, B, and C should be on the data partition and should only be installed for mobile operator Contoso, then the size reserved must be the size of A+B+C in MB and divided by 512 bytes per sector. At a maximum, OEMs can use **MainOSRTCDataReservedSectors** to reserve sectors up to 100 MB to be used by the runtime configuration engine. 
 
 The following example shows how to reserve 50 MB:
 

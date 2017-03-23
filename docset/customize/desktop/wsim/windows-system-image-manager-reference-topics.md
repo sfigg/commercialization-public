@@ -1,5 +1,5 @@
 ---
-title: Windows System Image Manager Reference
+title: Windows System Image Manager Reference Topics
 description: Windows System Image Manager Reference
 MSHAttr:
 - 'PreferredSiteName:MSDN'
@@ -10,7 +10,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: msdn
 ---
 
-# Windows System Image Manager Reference
+# Windows System Image Manager Reference Topics
 
 
 The following topics provide reference information about Windows System Image Manager (Windows SIM).
@@ -25,15 +25,15 @@ The following topics provide reference information about Windows System Image M
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[Component Settings and Properties Reference](component-settings-and-properties-reference.md)</p></td>
+<td><p>[Component Settings and Properties Reference](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/customize/desktop/wsim/component-settings-and-properties-reference)</p></td>
 <td><p>Describes the structure of answer files, along with the attributes and elements that components and settings use.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Windows System Image Manager Architecture](windows-system-image-manager-architecture.md)</p></td>
+<td><p>[Windows System Image Manager Architecture](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/customize/desktop/wsim/windows-system-image-manager-architecture)</p></td>
 <td><p>Describes how Windows SIM works.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Windows System Image Manager Supported Platforms](windows-system-image-manager-supported-platforms.md)</p></td>
+<td><p>[Windows System Image Manager Supported Platforms](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/customize/desktop/wsim/windows-system-image-manager-supported-platforms)</p></td>
 <td><p>Lists the supported platforms where you can install Windows SIM.</p></td>
 </tr>
 </tbody>

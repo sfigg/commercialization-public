@@ -14,9 +14,6 @@ Microsoft provides a set of free map data that OEMs can preload on the phone. Th
 
 OEMs can choose a single map region to preload from the multiple regions that are available for OEMs to download from the Microsoft partner site(s) where the Kits are also available. OEMs can choose to store this data in the user store. Maps are grouped into regions, but there are some restrictions. For more information about these restrictions, see the accompanying instructions that are part of the map data download on the Microsoft partner site(s).
 
-<a href="" id="sample---preloadedmapdata"></a>**Sample:** PreloadedMapData  
-[Use the customization samples](p_phCustomization.use_the_customization_samples)
-
 <a href="" id="constraints---none"></a>**Constraints:** None  
 
 <a href="" id="instructions-"></a>**Instructions:**  
@@ -52,7 +49,7 @@ OEMs can choose a single map region to preload from the multiple regions that ar
     To add additional maps, add a new **DataAsset** setting and set the source to the directory location of the map region you want to include.
 
 **Tip**  
-You can avoid wiping preloaded maps off the internal store on the factory line using the [ResetPhoneEx](p_phUMC.resetphoneex) API. For more information, see [Resetting a phone during manufacturing](p_phManuRetail.resetting_a_phone_during_manufacturing).
+You can avoid wiping preloaded maps off the internal store on the factory line using the [ResetPhoneEx] API. For more information, see [Resetting a phone during manufacturing](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/service/mobile/resetting-the-phone).
 
  
 

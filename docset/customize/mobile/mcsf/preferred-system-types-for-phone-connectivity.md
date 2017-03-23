@@ -65,7 +65,7 @@ This customization is only for China. OEMs should not set this customization unl
 
         For example, the value can be set to *310:026,310:030* to restrict operators with an MCC:MNC of 310:026 and 310:030.
 
-    2.  Set the value of the `ExcludedSystemTypesPerOperator` setting to match the system type to be excluded from the SIM cards that match the MCC:MNC pairs you listed in `OperatorListForExcludedSystemTypes`. For more information about the RIL system types, see [RILSYSTEMTYPE](p_phUMC.rilsystemtype).
+    2.  Set the value of the `ExcludedSystemTypesPerOperator` setting to match the system type to be excluded from the SIM cards that match the MCC:MNC pairs you listed in `OperatorListForExcludedSystemTypes`. 
 
         For example, a value of 0x8 specifies RIL\_SYSTEMTYPE\_UMTS (3G) while 0x10 specifies RIL\_SYSTEMTYPE\_LTE (4G). To exclude more than one system type, perform a bitwise **OR** operation on the radio technologies you want to exclude. For example, a bitwise **OR** operation on RIL\_SYSTEMTYPE\_LTE (4G) and RIL\_SYSTEMTYPE\_UMTS (3G) results in the value 11000 (binary) or 0x18 (hexadecimal). In this case, the `ExcludedSystemTypesPerOperator` value must be set to 0x18 to limit the matching MCC:MNC pairs to 2G.
 
