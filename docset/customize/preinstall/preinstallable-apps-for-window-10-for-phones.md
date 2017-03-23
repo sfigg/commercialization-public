@@ -133,23 +133,8 @@ Now that you have a customization answer file, you can build the image either fr
 
 ## Build the image
 
+Follow the steps in the [Build a customized mobile image using imggen](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/manufacture/mobile/build-a-customized-mobile-image-using-imggen)
 
-In Windows ICD, you can build the image from the command line, or from the gui.
-
-To build the image using the Windows ICD UI, follow the instructions in the **Build and deploy an image for Windows 10 Mobile** topic.
-
-From the command line, use the “/Build-ImageFromPackages”: switch, as in the following example.
-
-`“/Build-ImageFromPackages”: [/MCSFCustomizationXML]`
-
-where ` [/MCSFCustomizationXML]` is the path to a Windows MCSF customizations XML file (caf).
-
-## Related topics
-
-
-[Updates to preloaded apps and services](phttps://msdn.microsoft.com/en-us/windows/hardware/commercialize/service/mobile/updates-to-preloaded-apps-and-services)
-
- 
 
  
 
