@@ -362,7 +362,7 @@
 # [Customize](customize/index.md)
 
 ## [What's new in customizations](customize/what-s-new-in-customizations.md)
-## [Change history for customization docs](customize/change-history-for-customize.md)
+
 
 ## [Customizations for desktop](customize/desktop/desktop-customizations-portal.md)
 ### [Customize the taskbar](customize/desktop/customize-the-taskbar.md)
@@ -751,7 +751,7 @@
 ### [Preinstallable apps for desktop devices](customize/preinstall/preinstallable-apps-for-windows-10-desktop.md)
 ### [Preinstallable apps for mobile devices](customize/preinstall/preinstallable-apps-for-window-10-for-phones.md)
 ### [Preinstall tasks](customize/preinstall/preinstall-tasks.md)
-
+## [Change history for customization docs](customize/change-history-for-customize.md)
 
 # [Test](test/index.md)
 
