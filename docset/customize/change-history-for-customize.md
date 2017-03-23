@@ -11,7 +11,9 @@ ms.assetid: 07E710A3-3368-476E-9EC1-12AA67B52498
 
 
 The following tables record the changes that were made in the **Customize** section of the Windows 10 partner documentation since Windows 10, version 1607 was released.
+
 ## March 24, 2017
+
 <table>
 <colgroup>
 <col width="50%" />
@@ -38,7 +40,9 @@ The following tables record the changes that were made in the **Customize** sect
 </tr>
 </tbody>
 </table>
+
 ## March 15, 2017
+
 <table>
 <colgroup>
 <col width="50%" />
@@ -58,6 +62,7 @@ The following tables record the changes that were made in the **Customize** sect
 
 </tbody>
 </table>
+
 ## October 6, 2016
 
 
