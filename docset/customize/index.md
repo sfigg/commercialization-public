@@ -38,7 +38,7 @@ See the following sections for more information about what you can do to customi
 <td><p>Read about what topics have been created, updated, or deleted for Windows 10, build 1607.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Customizations for desktop devices](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/customize/desktop/desktop-customizations-portal)</p></td>
+<td><p>[Customizations for desktop](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/customize/desktop/desktop-customizations-portal)</p></td>
 <td><p>This section includes topics describing key tasks, as well as the reference for [Windows System Image Manager](https://msdn.microsoft.com/library/windows/hardware/dn922445) and [Unattended Windows Setup Reference](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/customize/desktop/unattend/index) settings.</p></td>
 </tr>
 <tr class="even">
