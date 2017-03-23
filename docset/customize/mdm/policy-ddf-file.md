@@ -41,7 +41,7 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
         <Permanent />
       </Scope>
       <DFType>
-        <MIME>com.microsoft/4.0/MDM/Policy</MIME>
+        <MIME>com.microsoft/5.0/MDM/Policy</MIME>
       </DFType>
     </DFProperties>
     <Node>
@@ -9419,7 +9419,7 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
         <Permanent />
       </Scope>
       <DFType>
-        <MIME>com.microsoft/4.0/MDM/Policy</MIME>
+        <MIME>com.microsoft/5.0/MDM/Policy</MIME>
       </DFType>
     </DFProperties>
     <Node>
@@ -11200,7 +11200,7 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
               <Get />
               <Replace />
             </AccessType>
-            <Description>This setting lets you decide whether employees can use Autofill to automatically fill in form fields while using Microsoft Edge.</Description>
+            <Description>This policy setting lets you decide whether the Address bar drop-down functionality is available in Microsoft Edge. We recommend disabling this setting if you want to minimize network connections from Microsoft Edge to Microsoft services.</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -11802,6 +11802,32 @@ Version 1703 or later:  If you don't want to send traffic to Microsoft, you ca
               <Replace />
             </AccessType>
             <Description>Specifies whether the First Run webpage is prevented from automatically opening on the first launch of Microsoft Edge. This policy is only available for Windows 10 version 1703 or later for desktop.
+
+Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on domain-joined machines or when the device is MDM-enrolled.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>PreventLiveTileDataCollection</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>This policy lets you decide whether Microsoft Edge can gather Live Tile metadata from the ieonline.microsoft.com service to provide a better experience while pinning a Live Tile to the Start menu.
 
 Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on domain-joined machines or when the device is MDM-enrolled.</Description>
             <DFFormat>
@@ -14166,6 +14192,76 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <Description>Specifies whether to show a user-configurable setting to control the screen timeout while on the lock screen of Windows 10 Mobile devices.</Description>
             <DFFormat>
               <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+      </Node>
+      <Node>
+        <NodeName>Display</NodeName>
+        <DFProperties>
+          <AccessType>
+            <Add />
+            <Get />
+            <Delete />
+          </AccessType>
+          <DFFormat>
+            <node />
+          </DFFormat>
+          <Occurrence>
+            <ZeroOrOne />
+          </Occurrence>
+          <Scope>
+            <Dynamic />
+          </Scope>
+          <DFType>
+            <DDFName></DDFName>
+          </DFType>
+        </DFProperties>
+        <Node>
+          <NodeName>TurnOffGdiDPIScalingForApps</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>This policy allows to force turn off GDI DPI Scaling for a semicolon separated list of applications. Applications can be specified either by using full path or just filename and extension.</Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>TurnOnGdiDPIScalingForApps</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>This policy allows to turn on GDI DPI Scaling for a semicolon separated list of applications. Applications can be specified either by using full path or just filename and extension.</Description>
+            <DFFormat>
+              <chr/>
             </DFFormat>
             <Occurrence>
               <ZeroOrOne />
@@ -18487,7 +18583,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
           </DFType>
         </DFProperties>
         <Node>
-          <NodeName>AllowForestSearchFolder</NodeName>
+          <NodeName>AllowForestSearchOrder</NodeName>
           <DFProperties>
             <AccessType>
               <Add />
@@ -21227,7 +21323,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
           </DFProperties>
         </Node>
         <Node>
-          <NodeName>UnsolicitedRemoteAssitance</NodeName>
+          <NodeName>UnsolicitedRemoteAssistance</NodeName>
           <DFProperties>
             <AccessType>
               <Add />
@@ -22298,6 +22394,99 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
         </Node>
       </Node>
       <Node>
+        <NodeName>SmartScreen</NodeName>
+        <DFProperties>
+          <AccessType>
+            <Add />
+            <Get />
+            <Delete />
+          </AccessType>
+          <DFFormat>
+            <node />
+          </DFFormat>
+          <Occurrence>
+            <ZeroOrOne />
+          </Occurrence>
+          <Scope>
+            <Dynamic />
+          </Scope>
+          <DFType>
+            <DDFName></DDFName>
+          </DFType>
+        </DFProperties>
+        <Node>
+          <NodeName>EnableAppInstallControl</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description></Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>EnableSmartScreenInShell</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>Don't allow users to bypass Windows Defender SmartScreen warnings for unverified files.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>PreventOverrideForFilesInShell</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description></Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+      <Node>
         <NodeName>Speech</NodeName>
         <DFProperties>
           <AccessType>
@@ -23012,6 +23201,76 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
           </DFProperties>
         </Node>
+        <Node>
+          <NodeName>StartLayout</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description></Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+      </Node>
+      <Node>
+        <NodeName>Storage</NodeName>
+        <DFProperties>
+          <AccessType>
+            <Add />
+            <Get />
+            <Delete />
+          </AccessType>
+          <DFFormat>
+            <node />
+          </DFFormat>
+          <Occurrence>
+            <ZeroOrOne />
+          </Occurrence>
+          <Scope>
+            <Dynamic />
+          </Scope>
+          <DFType>
+            <DDFName></DDFName>
+          </DFType>
+        </DFProperties>
+        <Node>
+          <NodeName>EnhancedStorageDevices</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description></Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
       </Node>
       <Node>
         <NodeName>System</NodeName>
@@ -23262,6 +23521,30 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <Description>This policy setting lets you prevent apps and features from working with files on OneDrive. If you enable this policy setting: users can’t access OneDrive from the OneDrive app and file picker; Windows Store apps can’t access OneDrive using the WinRT API; OneDrive doesn’t appear in the navigation pane in File Explorer; OneDrive files aren’t kept in sync with the cloud; Users can’t automatically upload photos and videos from the camera roll folder. If you disable or do not configure this policy setting, apps and features can work with OneDrive file storage.</Description>
             <DFFormat>
               <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>DisableSystemRestore</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description></Description>
+            <DFFormat>
+              <chr/>
             </DFFormat>
             <Occurrence>
               <ZeroOrOne />
@@ -23870,30 +24153,6 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
         </Node>
         <Node>
           <NodeName>AutoRestartNotificationSchedule</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Add />
-              <Delete />
-              <Get />
-              <Replace />
-            </AccessType>
-            <Description></Description>
-            <DFFormat>
-              <int/>
-            </DFFormat>
-            <Occurrence>
-              <ZeroOrOne />
-            </Occurrence>
-            <Scope>
-              <Dynamic />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-          </DFProperties>
-        </Node>
-        <Node>
-          <NodeName>AutoRestartNotificationStyle</NodeName>
           <DFProperties>
             <AccessType>
               <Add />
@@ -24600,6 +24859,31 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <Description></Description>
             <DFFormat>
               <chr/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+      </Node>
+        <Node>
+          <NodeName>FillEmptyContentUrls</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description></Description>
+            <DFFormat>
+              <int />
             </DFFormat>
             <Occurrence>
               <ZeroOrOne />
@@ -26773,7 +27057,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <AccessType>
                 <Get />
             </AccessType>
-            <Description>This setting lets you decide whether employees can use Autofill to automatically fill in form fields while using Microsoft Edge.</Description>
+            <Description>This policy setting lets you decide whether the Address bar drop-down functionality is available in Microsoft Edge. We recommend disabling this setting if you want to minimize network connections from Microsoft Edge to Microsoft services.</Description>
             <DefaultValue>1</DefaultValue>
             <DFFormat>
               <int/>
@@ -27356,6 +27640,30 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
                 <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            </DFProperties>
+        </Node>
+        <Node>
+            <NodeName>PreventLiveTileDataCollection</NodeName>
+            <DFProperties>
+            <AccessType>
+                <Get />
+            </AccessType>
+            <Description>This policy lets you decide whether Microsoft Edge can gather Live Tile metadata from the ieonline.microsoft.com service to provide a better experience while pinning a Live Tile to the Start menu.
+
+Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on domain-joined machines or when the device is MDM-enrolled.</Description>
+            <DefaultValue>0</DefaultValue>
+            <DFFormat>
+                <int/>
+            </DFFormat>
+            <Occurrence>
+                <One />
+            </Occurrence>
+            <Scope>
+                <Permanent />
+            </Scope>
+            <DFType>
+                <MIME>text/plain</MIME>
+            </DFType>
             </DFProperties>
         </Node>
         <Node>
@@ -29604,6 +29912,72 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <DFType>
                 <MIME>text/plain</MIME>
             </DFType>
+            </DFProperties>
+        </Node>
+      </Node>
+      <Node>
+        <NodeName>Display</NodeName>
+        <DFProperties>
+          <AccessType>
+            <Get />
+          </AccessType>
+          <DFFormat>
+            <node />
+          </DFFormat>
+          <Occurrence>
+            <One />
+          </Occurrence>
+          <Scope>
+            <Permanent />
+          </Scope>
+          <DFType>
+            <DDFName></DDFName>
+          </DFType>
+        </DFProperties>
+        <Node>
+            <NodeName>TurnOffGdiDPIScalingForApps</NodeName>
+            <DFProperties>
+            <AccessType>
+                <Get />
+            </AccessType>
+            <Description>This policy allows to force turn off GDI DPI Scaling for a semicolon separated list of applications. Applications can be specified either by using full path or just filename and extension.</Description>
+            <DefaultValue></DefaultValue>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+                <One />
+            </Occurrence>
+            <Scope>
+                <Permanent />
+            </Scope>
+            <DFType>
+                <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            </DFProperties>
+        </Node>
+        <Node>
+            <NodeName>TurnOnGdiDPIScalingForApps</NodeName>
+            <DFProperties>
+            <AccessType>
+                <Get />
+            </AccessType>
+            <Description>This policy allows to turn on GDI DPI Scaling for a semicolon separated list of applications. Applications can be specified either by using full path or just filename and extension.</Description>
+            <DefaultValue></DefaultValue>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+                <One />
+            </Occurrence>
+            <Scope>
+                <Permanent />
+            </Scope>
+            <DFType>
+                <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             </DFProperties>
         </Node>
       </Node>
@@ -34195,7 +34569,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
           </DFType>
         </DFProperties>
         <Node>
-            <NodeName>AllowForestSearchFolder</NodeName>
+            <NodeName>AllowForestSearchOrder</NodeName>
             <DFProperties>
             <AccessType>
                 <Get />
@@ -34417,7 +34791,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
                 <Get />
             </AccessType>
             <Description></Description>
-            <DefaultValue>1</DefaultValue>
+            <DefaultValue>0</DefaultValue>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -36765,7 +37139,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFProperties>
         </Node>
         <Node>
-            <NodeName>UnsolicitedRemoteAssitance</NodeName>
+            <NodeName>UnsolicitedRemoteAssistance</NodeName>
             <DFProperties>
             <AccessType>
                 <Get />
@@ -37791,6 +38165,95 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
         </Node>
       </Node>
       <Node>
+        <NodeName>SmartScreen</NodeName>
+        <DFProperties>
+          <AccessType>
+            <Get />
+          </AccessType>
+          <DFFormat>
+            <node />
+          </DFFormat>
+          <Occurrence>
+            <One />
+          </Occurrence>
+          <Scope>
+            <Permanent />
+          </Scope>
+          <DFType>
+            <DDFName></DDFName>
+          </DFType>
+        </DFProperties>
+        <Node>
+            <NodeName>EnableAppInstallControl</NodeName>
+            <DFProperties>
+            <AccessType>
+                <Get />
+            </AccessType>
+            <Description></Description>
+            <DefaultValue>0</DefaultValue>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+                <One />
+            </Occurrence>
+            <Scope>
+                <Permanent />
+            </Scope>
+            <DFType>
+                <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            </DFProperties>
+        </Node>
+        <Node>
+            <NodeName>EnableSmartScreenInShell</NodeName>
+            <DFProperties>
+            <AccessType>
+                <Get />
+            </AccessType>
+            <Description></Description>
+            <DefaultValue>1</DefaultValue>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+                <One />
+            </Occurrence>
+            <Scope>
+                <Permanent />
+            </Scope>
+            <DFType>
+                <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            </DFProperties>
+        </Node>
+        <Node>
+            <NodeName>PreventOverrideForFilesInShell</NodeName>
+            <DFProperties>
+            <AccessType>
+                <Get />
+            </AccessType>
+            <Description>Don't allow users to bypass Windows Defender SmartScreen warnings for unverified files.</Description>
+            <DefaultValue>0</DefaultValue>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+                <One />
+            </Occurrence>
+            <Scope>
+                <Permanent />
+            </Scope>
+            <DFType>
+                <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            </DFProperties>
+        </Node>
+      </Node>
+      <Node>
         <NodeName>Speech</NodeName>
         <DFProperties>
           <AccessType>
@@ -38462,6 +38925,75 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             </DFProperties>
         </Node>
+        <Node>
+            <NodeName>StartLayout</NodeName>
+            <DFProperties>
+            <AccessType>
+                <Get />
+            </AccessType>
+            <Description></Description>
+            <DefaultValue></DefaultValue>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+                <One />
+            </Occurrence>
+            <Scope>
+                <Permanent />
+            </Scope>
+            <DFType>
+                <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            </DFProperties>
+        </Node>
+      </Node>
+      <Node>
+        <NodeName>Storage</NodeName>
+        <DFProperties>
+          <AccessType>
+            <Get />
+          </AccessType>
+          <DFFormat>
+            <node />
+          </DFFormat>
+          <Occurrence>
+            <One />
+          </Occurrence>
+          <Scope>
+            <Permanent />
+          </Scope>
+          <DFType>
+            <DDFName></DDFName>
+          </DFType>
+        </DFProperties>
+        <Node>
+            <NodeName>EnhancedStorageDevices</NodeName>
+            <DFProperties>
+            <AccessType>
+                <Get />
+            </AccessType>
+            <Description></Description>
+            <DefaultValue></DefaultValue>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+                <One />
+            </Occurrence>
+            <Scope>
+                <Permanent />
+            </Scope>
+            <DFType>
+                <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ADMXBacked>enhancedstorage.admx</MSFT:ADMXBacked>
+            <MSFT:ADMXCategory>EnhancedStorage~AT~System~EnStorDeviceAccess</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>TCGSecurityActivationDisabled</MSFT:ADMXPolicyName>
+            </DFProperties>
+        </Node>
       </Node>
       <Node>
         <NodeName>System</NodeName>
@@ -38680,8 +39212,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>earlylauncham.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>EarlyLaunchAM~AT~System~ELAMCategory</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>POL_DriverLoadPolicy_Name</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>SystemRestore~AT~System~SR</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>SR_DisableSR</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -38707,6 +39239,32 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFProperties>
         </Node>
         <Node>
+            <NodeName>DisableSystemRestore</NodeName>
+            <DFProperties>
+            <AccessType>
+                <Get />
+            </AccessType>
+            <Description></Description>
+            <DefaultValue></DefaultValue>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+                <One />
+            </Occurrence>
+            <Scope>
+                <Permanent />
+            </Scope>
+            <DFType>
+                <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ADMXBacked>systemrestore.admx</MSFT:ADMXBacked>
+            <MSFT:ADMXCategory>SystemRestore~AT~System~SR</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>SR_DisableSR</MSFT:ADMXPolicyName>
+            </DFProperties>
+        </Node>
+        <Node>
             <NodeName>TelemetryProxy</NodeName>
             <DFProperties>
             <AccessType>
@@ -38726,8 +39284,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <DFType>
                 <MIME>text/plain</MIME>
             </DFType>
-            <MSFT:ADMXCategory>EarlyLaunchAM~AT~System~ELAMCategory</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>POL_DriverLoadPolicy_Name</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>SystemRestore~AT~System~SR</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>SR_DisableSR</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
       </Node>
@@ -39272,28 +39830,6 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </AccessType>
             <Description></Description>
             <DefaultValue>15</DefaultValue>
-            <DFFormat>
-              <int/>
-            </DFFormat>
-            <Occurrence>
-                <One />
-            </Occurrence>
-            <Scope>
-                <Permanent />
-            </Scope>
-            <DFType>
-                <MIME>text/plain</MIME>
-            </DFType>
-            </DFProperties>
-        </Node>
-        <Node>
-            <NodeName>AutoRestartNotificationStyle</NodeName>
-            <DFProperties>
-            <AccessType>
-                <Get />
-            </AccessType>
-            <Description></Description>
-            <DefaultValue>1</DefaultValue>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -39948,6 +40484,29 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFProperties>
         </Node>
       </Node>
+        <Node>
+          <NodeName>FillEmptyContentUrls</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <Description></Description>
+            <DefaultValue>0</DefaultValue>
+            <DFFormat>
+              <int />
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+          </DFProperties>
+        </Node>
       <Node>
         <NodeName>Wifi</NodeName>
         <DFProperties>
@@ -40426,7 +40985,6 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
     </Node>
   </Node>
 </MgmtTree>
-
 ```
 
 ## Related topics
