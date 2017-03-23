@@ -75,13 +75,13 @@ Many Microsoft first party applications apply the setting and it is easy for you
 <td><p>[Customize the Country and Operator Settings Asset](customize-cosa.md)</p></td>
 <td><p>When a SIM is inserted in a COSA-enabled Windows-based device, the provisioning framework attempts to establish a cellular connection by searching for the matching profile and APN in COSA.</p></td>
 </tr>
-<tr class="odd">
-<td><p>[Unattended Windows Setup Reference](unattend/index.md)</p></td>
-<td><p>Settings reference for Unattend.</p></td>
-</tr>
 <tr class="even">
 <td><p>[Windows SIM Technical Reference](wsim/windows-system-image-manager-technical-reference.md)</p></td>
 <td><p>Settings reference for Windows System Image Manager.</p></td>
+</tr>
+<tr class="odd">
+<td><p>[Unattended Windows Setup Reference](unattend/index.md)</p></td>
+<td><p>Settings reference for Unattend.</p></td>
 </tr>
 </tbody>
 </table>

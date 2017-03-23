@@ -33,10 +33,6 @@ See the following sections for more information about what you can do to customi
 <td><p>[What's new in customizations](what-s-new-in-customizations.md)</p></td>
 <td><p>Learn about the new customizations available in Windows 10, build 1607.</p></td>
 </tr>
-<tr class="even">
-<td><p>[Change history for Customize](change-history-for-customize.md)</p></td>
-<td><p>Read about what topics have been created, updated, or deleted for Windows 10, build 1607.</p></td>
-</tr>
 <tr class="odd">
 <td><p>[Customizations for desktop](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/customize/desktop/desktop-customizations-portal)</p></td>
 <td><p>This section includes topics describing key tasks, as well as the reference for [Windows System Image Manager](https://msdn.microsoft.com/library/windows/hardware/dn922445) and [Unattended Windows Setup Reference](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/customize/desktop/unattend/index) settings.</p></td>
@@ -52,6 +48,11 @@ See the following sections for more information about what you can do to customi
 <tr class="even">
 <td><p>[Preinstalled apps](preinstall/preinstall-apps.md)</p></td>
 <td><p>If you're a Windows OEM or mobile operator partner, find out how you can create partner apps that you can package and configure to install during the initial device setup process. While the user is going through the initial setup process, the preinstalled apps are installed in the background.</p></td>
+</tr>
+
+<tr class="even">
+<td><p>[Change history for Customize](change-history-for-customize.md)</p></td>
+<td><p>Read about what topics have been created, updated, or deleted for Windows 10, build 1607.</p></td>
 </tr>
 </tbody>
 </table>
