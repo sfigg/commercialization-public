@@ -22,7 +22,7 @@ The `Microsoft-Windows-TPM-Tasks-TwinUI-Hide` setting specifies whether to hide 
 <tbody>
 <tr class="odd">
 <td><p><em>0</em></p></td>
-<td><p>Shows the link. This is the default value.</p></td>
+<td><p>Show the link. This is the default value.</p></td>
 </tr><tr class="even">
 <td><p><em>1</em></p></td>
 <td><p>Hide the link. </p></td>

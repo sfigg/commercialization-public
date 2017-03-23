@@ -17,11 +17,6 @@ You can use **UseExternalStorage** whether or not you include an SD card with pr
 **Important**  
 SD card performance can affect the quality of the Maps experience when maps are stored on the SD card. When an SD card is used, Microsoft recommends that OEMs test the Maps experience and the speed of map downloads with the specific SD card part that will be used on retail phones to determine if performance is satisfactory.
 
- 
-
-<a href="" id="sample---useexternalstorage"></a>**Sample:** UseExternalStorage  
-[Use the customization samples](p_phCustomization.use_the_customization_samples)
-
 <a href="" id="constraints---firstvariationonly"></a>**Constraints:** FirstVariationOnly  
 **UseExternalStorage** is a first boot configuration that can be set by the OEM. The OEM cannot change or use this setting after first boot.
 
