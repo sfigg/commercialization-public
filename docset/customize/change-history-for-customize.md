@@ -11,8 +11,34 @@ ms.assetid: 07E710A3-3368-476E-9EC1-12AA67B52498
 
 
 The following tables record the changes that were made in the **Customize** section of the Windows 10 partner documentation since Windows 10, version 1607 was released.
-
-## March 15, 2016
+## March 24, 2017
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>New or updated topic</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="even">
+<td><p>[Microsoft-Windows-TPM-Tasks-ClearTpm](microsoft-windows-tpm-tasks-cleartpm.md)</p></td>
+<td><p>New. Specifies whether to clear the Trusted Platform Module (TPM) during Windows setup. Clearing the TPM prevents an issue in earlier versions that kept some Windows features from working if the TPM was incorrectly set.</p></td>
+</tr>
+<tr class="odd">
+<td><p>[Microsoft-Windows-TwinUI-Hide](microsoft-windows-twinui-hide.md)</p></td>
+<td><p>New. Specifies whether to hide the link to an advanced settings app in the Pen and Windows Ink Settings page.</p></td>
+</tr>
+<tr class="even">
+<td><p>[Preinstallable apps for Windows 10 Mobile](preinstall/preinstallable-apps-for-window-10-for-phones.md)</p></td>
+<td><p>Updated. Uses imggen.cmd to build the mobile image because ICD no longer includes support for image creation. </p></td>
+</tr>
+</tbody>
+</table>
+## March 15, 2017
 <table>
 <colgroup>
 <col width="50%" />

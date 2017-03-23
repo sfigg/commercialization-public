@@ -149,6 +149,8 @@
 ### [NAPDEF CSP](napdef-csp.md)
 ### [NetworkProxy CSP](networkproxy-csp.md)
 #### [NetworkProxy DDF file](networkproxy-ddf.md)
+### [NetworkQoSPolicy CSP](networkqospolicy-csp.md)
+#### [NetworkQoSPolicy DDF file](networkqospolicy-ddf.md)
 ### [NodeCache CSP](nodecache-csp.md)
 #### [NodeCache DDF file](nodecache-ddf-file.md)
 ### [Office CSP](office-csp.md)

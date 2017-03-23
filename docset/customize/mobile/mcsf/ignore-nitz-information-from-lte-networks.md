@@ -87,7 +87,7 @@ This customization supports: **per-IMSI** value, **per-device** value
 
 4.  Set the `Value` to 0x10.
 
-    The value specifies RIL\_SYSTEMTYPE\_LTE. For more information about the RIL system types, see [RILSYSTEMTYPE](p_phUMC.rilsystemtype).
+    The value specifies RIL\_SYSTEMTYPE\_LTE. 
 
 <a href="" id="testing-"></a>**Testing:**  
 Work with your mobile operator partner to test this customization on their network.
