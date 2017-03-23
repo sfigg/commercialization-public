@@ -38,7 +38,9 @@ The following tables record the changes that were made in the **Customize** sect
 </tr>
 </tbody>
 </table>
+
 ## March 15, 2017
+
 <table>
 <colgroup>
 <col width="50%" />
@@ -58,6 +60,7 @@ The following tables record the changes that were made in the **Customize** sect
 
 </tbody>
 </table>
+
 ## October 6, 2016
 
 
