@@ -33,7 +33,7 @@ Similar to the Unattend answer file that can be provided to Windows Setup for Wi
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[Managed Centralized Settings Framework (MCSF)](managed-centralized-settings-framework--mcsf-.md)</p></td>
+<td><p>[Managed Centralized Settings Framework (MCSF)](managed-centralized-settings-framework-mcsf.md)</p></td>
 <td><p>Provides a standard way to describe settings that are customizable within packages. MCSF also generates a policy based on the settings descriptions. The settings framework can be image time or runtime configurable. A runtime configurable MCSF can either be a configuration service provider-based customization or registry-based customization being exposed through the MSCF CSP.</p></td>
 </tr>
 <tr class="even">
