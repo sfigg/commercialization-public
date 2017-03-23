@@ -51,3 +51,5 @@ These specifications are divided into the following categories and topics:
 - [Device.Streaming.Camera](device-streaming-camera.md)
 - [Device.Streaming.HMFT](device-streaming-hmft.md)
 - [Device.TrustedPlatformModule](device-trustedplatformmodule.md)
+
+Certification for Windows Server 2016, Azure Stack and SDDC must meet the Windows Hardware Compatibility Requirements as stated in version 1607 of the documentation and use HLK version 1607 build 14393 <https://go.microsoft.com/fwlink/p/?LinkID=404112> with matching playlist <http://aka.ms/hlkplaylist> and supplemental content to generate logs and following the policies stated in the Windows Server Policy doc <https://go.microsoft.com/fwlink/p/?linkid=834831>.  Questions about the Azure Stack or SDDC program or how to submit the results for solution validation should be directed to the appropriate Microsoft contact – technical account manager or partner management contact.

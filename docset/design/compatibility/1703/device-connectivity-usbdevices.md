@@ -515,6 +515,8 @@ Wireless USB device must pass WiMedia Alliance radio compliance tests.
 <a name="device.connectivity.usbdevices.usbc"></a>
 ## Device.Connectivity.UsbDevices.USBC
 
+Certification for Windows Server 2016, Azure Stack and SDDC must meet the Windows Hardware Compatibility Requirements as stated in version 1607 of the documentation and use HLK version 1607 build 14393 <https://go.microsoft.com/fwlink/p/?LinkID=404112> with matching playlist <http://aka.ms/hlkplaylist> and supplemental content to generate logs and following the policies stated in the Windows Server Policy doc <https://go.microsoft.com/fwlink/p/?linkid=834831>.  Questions about the Azure Stack or SDDC program or how to submit the results for solution validation should be directed to the appropriate Microsoft contact – technical account manager or partner management contact.
+
 ### Device.Connectivity.UsbDevices.USBC.UsbifCertification
 
 *USB devices must either pass USB IF tests or be USB IF certified.*
