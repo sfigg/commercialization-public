@@ -1,5 +1,5 @@
 ---
-title: Windows System Image Manager Reference
+title: Windows System Image Manager Reference Topics
 description: Windows System Image Manager Reference
 MSHAttr:
 - 'PreferredSiteName:MSDN'
@@ -10,7 +10,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: msdn
 ---
 
-# Windows System Image Manager Reference
+# Windows System Image Manager Reference Topics
 
 
 The following topics provide reference information about Windows System Image Manager (Windows SIM).
