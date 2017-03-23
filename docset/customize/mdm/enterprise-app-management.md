@@ -369,6 +369,46 @@ Here is an example of an app installation with dependencies.
 </Exec>
 ```
 
+Here is an example of an app installation with dependencies and optional packages.
+
+``` syntax
+<!-- Add PackageFamilyName -->
+<Add>
+   <CmdID>0</CmdID>
+   <Item>
+      <Target>
+         <LocURI>./User/Vendor/MSFT/EnterpriseModernAppManagement/AppInstallation/{PackageFamilyName</LocURI>
+      </Target>
+   </Item>
+</Add> 
+<!-- Install appx with deployment options and framework dependencies-->
+<Exec>
+   <CmdID>1</CmdID>
+   <Item>
+      <Target>
+         <LocURI>./User/Vendor/MSFT/EnterpriseModernAppManagement/AppInstallation/{PackageFamilyName}/HostedInstall</LocURI>
+      </Target>
+      <Meta>
+         <Format xmlns="syncml:metinf">xml</Format>
+      </Meta>
+      <Data>
+         <Application PackageUri="\\server\share\HelloWorld10.appx" DeploymentOptions="0" >
+            <Dependencies>
+                <Dependency PackageUri=”\\server\share\HelloWorldFramework.appx” />
+                <Dependency PackageUri=”\\server2\share\HelloMarsFramework.appx” />
+            </Dependencies>
+            <OptionalPackages>
+                <Package PackageUri=”\\server\share\OptionalPackage1.appx” 
+                         PackageFamilyName="/{PackageFamilyName}" />
+                <Package PackageUri=”\\server2\share\OptionalPackage2.appx” 
+                         PackageFamilyName="/{PackageFamilyName}" />
+            </OptionalPackages>
+        </Application>
+      </Data>
+   </Item>
+</Exec>
+```
+
 ### Provision apps for all users of a device
 
 Provisioning allows you to stage the app to the device and all users of the device can have the app registered on their next login. This is only supported for app purchased from the Store for Business and the app is specified for an offline license or the app is a non-Store app. The app must be offered from a hosted location. The app is installed as a local system. To install to a local file share, the 'local system' of the device must have access to the share.
