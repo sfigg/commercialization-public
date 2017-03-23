@@ -45,15 +45,12 @@ To create additional custom theme files, use the **Personalization** item within
  
 </div></td>
 </tr>
+
 <tr class="odd">
-<td><p>[DefaultThemesOff](microsoft-windows-shell-setup-themes-defaultthemesoff.md)</p></td>
-<td><p>This setting is deprecated in Windows 8.Specifies whether to use the Windows Classic theme instead of the default theme.</p></td>
-</tr>
-<tr class="even">
 <td><p>[DesktopBackground](microsoft-windows-shell-setup-themes-desktopbackground.md)</p></td>
 <td><p>Specifies the path to a graphic file that is used for the desktop background.</p></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><p>[ScreenSaver](microsoft-windows-shell-setup-themes-screensaver.md)</p></td>
 <td><p>Specifies the path to a screen-saver file.</p>
 <div class="alert">

@@ -83,10 +83,6 @@ Power-off charging can only be configured when the device image is generated. Wi
 
 3.  Set the `Value` to 1 to enable power-off charging or to 0 to disable power-off charging.
 
-## Related topics
-
-
-[Battery charging in the boot environment](p_phBringUp.battery_charging_in_the_boot_environment)
 
  
 

@@ -36,7 +36,7 @@ ms.sitesec: msdn
 ## Parent Hierarchy
 
 
-[Networking-MPSSVC-Svc](Windowsnetworking-mpssvc-svc.md) | **PrivateProfile\_LogFile**
+[Networking-MPSSVC-Svc](networking-mpssvc-svc.md) | **PrivateProfile\_LogFile**
 
 ## Valid Passes
 
@@ -46,7 +46,7 @@ specialize
 ## Applies To
 
 
-For the list of the supported Windows editions and architectures that this component supports, see [Networking-MPSSVC-Svc](Windowsnetworking-mpssvc-svc.md).
+For the list of the supported Windows editions and architectures that this component supports, see [Networking-MPSSVC-Svc](networking-mpssvc-svc.md).
 
 ## XML Example
 
@@ -76,7 +76,7 @@ The following XML output shows how to set Windows Firewall.
 ## Related topics
 
 
-[Networking-MPSSVC-Svc](Windowsnetworking-mpssvc-svc.md)
+[Networking-MPSSVC-Svc](networking-mpssvc-svc.md)
 
  
 

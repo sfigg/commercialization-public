@@ -16,8 +16,6 @@ Ringtones should be a maximum of 150 KB and have a length of 5 to 15 seconds. Th
 
 **Limitations and restrictions**:
 
--   There is no limit to the number of ringtones that can be added, but the OEM must abide by the space limitations described in the topic [Partition layout](p_phBringUp.partition_layout).
-
 -   The names of the ringtones must be localized for all display languages that ship on the device.
 
 -   Partners must not move, delete, or modify the ringtones provided by Microsoft.

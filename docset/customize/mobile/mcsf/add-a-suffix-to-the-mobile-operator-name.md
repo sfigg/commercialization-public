@@ -131,8 +131,6 @@ This customization supports: **per-IMSI** value, **per-device** value
 
     For example, if you would like the mobile operator name (ABC) and the suffix (3G) to appear as **ABC 3G** (there is a space between the network name and the connection type) rather than **ABC3G** (no space between the network name and connection type), you need to include a space when setting the values.
 
-    For more information about the RIL system types, see [RILSYSTEMTYPE](netvista.rilsystemtype).
-
 <a href="" id="testing-steps-"></a>**Testing steps:**  
 1.  Flash a build containing this customization to a device with a SIM.
 

@@ -30,7 +30,7 @@ To reset the audio volume limit and show the volume level warning every time the
 
      
 
-    For more information about MCSF, see [Managed Centralized Settings Framework (MCSF)](managed-centralized-settings-framework--mcsf-.md). The following code example shows an MCSF policy setting for the **VolumeThresholdPlayTimeLimit** registry value.
+    For more information about MCSF, see [Managed Centralized Settings Framework (MCSF)](managed-centralized-settings-framework-mcsf.md). The following code example shows an MCSF policy setting for the **VolumeThresholdPlayTimeLimit** registry value.
 
     ``` syntax
              <SettingsGroup Path="VolumeLimit">
@@ -64,7 +64,7 @@ To reset the audio volume limit and show the volume level warning every time the
 
     In this example, provide values for the **Owner**, **Component**, **SubComponent**, and **ReleaseType** attributes.
 
-3.  Use the .pkg.xml file that contains your MCSF policy setting to generate a package (or .spkg file) that you can add to your OS image. For more information, see the *Run the pkg.exe tool* in the [Creating packages](p_phPackaging.creating_packages) topic.
+3.  Use the .pkg.xml file that contains your MCSF policy setting to generate a package (or .spkg file) that you can add to your OS image. 
 
 4.  After you've created the .spkg, define the specific types of image builds that you want to contain the package.
 
@@ -88,8 +88,6 @@ To reset the audio volume limit and show the volume level warning every time the
 
     In this example, replace *SourceDirectory* with the location that contains the .spkg that you created in Step 3. Also, replace the example *OEMName.SoundCustomizations.VolumeThresholdPlayTimeLimit.spkg* with the name of the .spkg file.
 
-    For more information about creating an FM file and other elements that you may need to fully define your feature, see [Feature manifest file contents](p_phBringUp.feature_manifest_file_contents). For more information about additional logic that you can add to the build system, see [Feature groupings and constraints](p_phBringUp.feature_groupings_and_constraints).
-
 5.  Once you've defined the feature, modify your OEMInput.xml file to add a **Features** element (if one doesn't already exist), add a new **OEM** child element (if one doesn't already exist), and add a new **Feature** entry with the name of the feature that you just defined.
 
     For example, the OEMInput.xml entry for the example VOLUME\_THRESHOLD\_PLAY\_TIME\_LIMIT feature may look like the following:
@@ -102,9 +100,9 @@ To reset the audio volume limit and show the volume level warning every time the
       </Features>
     ```
 
-    For more information, see [OEMInput file contents](p_phBringUp.oeminput_file_contents).
+    For more information, see [OEMInput file contents](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/manufacture/mobile/oeminput-file-contents).
 
-6.  Build the OS image. For more information, see *Using ImgGen.cmd to generate an image* in [Building a phone image using ImgGen.cmd](p_phBringUp.building_a_phone_image_using_imggencmd).
+6.  Build the OS image. For more information, see *Using ImgGen.cmd to generate an image* in [Building a mobile image using ImgGen.cmd](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/manufacture/mobile/building-a-phone-image-using-imggencmd).
 
 <a href="" id="testing-"></a>**Testing:**  
 1.  Flash the build that contains this customization to a device.
