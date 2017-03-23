@@ -94,6 +94,23 @@ The following image shows the EnterpriseAPN configuration service provider in tr
 
 <p style="margin-left: 20px">Supported operations are Add, Get, Delete, and Replace.</p>
 
+<a href="" id="enterpriseapn-connectionname-roaming"></a>**EnterpriseAPN/*ConnectionName*/Roaming**  
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies whether the connection should be activated when the device is roaming. Valid values:</p>
+
+<ul>
+<li>0 - Disallowed</li>
+<li>1 - Allowed</li>
+<li>2 - DomesticRoaming</li>
+<li>3 - UseOnlyForDomesticRoaming</li>
+<li>4 - UseOnlyForNonDomesticRoaming</li>
+<li>5 - UseOnlyForRoaming</li>
+</ul>
+
+<p style="margin-left: 20px">Default is 1 (all roaming allowed).</p>
+
+<p style="margin-left: 20px">Value type is string. Supported operations are Add, Get, Delete, and Replace.</p>
+
+
 <a href="" id="enterpriseapn-settings"></a>**EnterpriseAPN/Settings**  
 <p style="margin-left: 20px">Added in Windows 10, version 1607. Node that contains global settings.</p>
 
