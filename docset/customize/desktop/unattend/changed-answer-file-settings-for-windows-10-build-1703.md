@@ -24,10 +24,6 @@ This topic describes Windows 10, version 1703 answer-file settings that have ch
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td><p>[Microsoft-Windows-Audio-AudioCore-DisableSpatialOnComboEndpoints](microsoft-windows-audio-audiocore-disablespatialoncomboendpoints.md)</p></td>
-<td><p>New.</p></td>
-</tr>
 <tr class="even">
 <td><p>[Microsoft-Windows-TPM-Tasks-ClearTpm](microsoft-windows-tpm-tasks-cleartpm.md)</p></td>
 <td><p>New. Specifies whether to clear the Trusted Platform Module (TPM) during Windows setup. Clearing the TPM prevents an issue in earlier versions that kept some Windows features from working if the TPM was incorrectly set.</p></td>
