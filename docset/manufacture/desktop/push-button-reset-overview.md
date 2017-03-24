@@ -24,7 +24,7 @@ In Windows 10, Version 1703, Push-button reset has been updated to include the f
     - **Config_AppsOnly.xml** – Use this configuration file to specify that only desktop applications should be captured by the ScanState tool. Since desktop applications are not always well-defined, this configuration file does not guarantee that all setting related to desktop applications are captured.
     - **Config_SettingsOnly.xml** – Use this configuration file to specify that only OS settings should be captured by the ScanState tool.
 
-You can modify these configuration files by setting the migrate attribute for specific components to *no*, but components that are already excluded from capture/migration in the default configuration files must remain excluded.
+     You can modify these configuration files by setting the migrate attribute for specific components to *no*, but components that are already excluded from capture/migration in the default configuration files must remain excluded.
 
 Previous versions of Windows 10 provided the following improvements to push-button reset:
 
