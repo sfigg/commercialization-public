@@ -36,7 +36,7 @@ These classifications are represented as nodes in the EnterpriseModernAppManagem
 
 The following diagram shows the EnterpriseModernAppManagement CSP in a tree format.
 
-![enterprisemodernappmanagement csp diagram](images/provisioning-csp-enterprisemodernappmanagement.png)![enterprisemodernappmanagement csp diagram](images/provisioning-csp-enterprisemodernappmanagement2.png)
+![enterprisemodernappmanagement csp diagram](images/provisioning-csp-enterprisemodernappmanagement.png)
 
 Each app displays one package family name and 1-n package full names for installed apps. The apps are categorized based on their origin (Store, nonStore, System).
 
@@ -363,6 +363,46 @@ Here is an example of an app installation with dependencies.
                       <Dependency PackageUri=”\\server\share\HelloWorldFramework.appx” />
                 <Dependency PackageUri=”\\server2\share\HelloMarsFramework.appx” />
             </Dependencies>
+        </Application>
+      </Data>
+   </Item>
+</Exec>
+```
+
+Here is an example of an app installation with dependencies and optional packages.
+
+``` syntax
+<!-- Add PackageFamilyName -->
+<Add>
+   <CmdID>0</CmdID>
+   <Item>
+      <Target>
+         <LocURI>./User/Vendor/MSFT/EnterpriseModernAppManagement/AppInstallation/{PackageFamilyName</LocURI>
+      </Target>
+   </Item>
+</Add> 
+<!-- Install appx with deployment options and framework dependencies-->
+<Exec>
+   <CmdID>1</CmdID>
+   <Item>
+      <Target>
+         <LocURI>./User/Vendor/MSFT/EnterpriseModernAppManagement/AppInstallation/{PackageFamilyName}/HostedInstall</LocURI>
+      </Target>
+      <Meta>
+         <Format xmlns="syncml:metinf">xml</Format>
+      </Meta>
+      <Data>
+         <Application PackageUri="\\server\share\HelloWorld10.appx" DeploymentOptions="0" >
+            <Dependencies>
+                <Dependency PackageUri=”\\server\share\HelloWorldFramework.appx” />
+                <Dependency PackageUri=”\\server2\share\HelloMarsFramework.appx” />
+            </Dependencies>
+            <OptionalPackages>
+                <Package PackageUri=”\\server\share\OptionalPackage1.appx” 
+                         PackageFamilyName="/{PackageFamilyName}" />
+                <Package PackageUri=”\\server2\share\OptionalPackage2.appx” 
+                         PackageFamilyName="/{PackageFamilyName}" />
+            </OptionalPackages>
         </Application>
       </Data>
    </Item>
