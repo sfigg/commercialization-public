@@ -281,8 +281,6 @@ If you plan to use Push-button reset’s extensibility points, use the following
 
 **Step 8: Create a diskpart script for bare-metal recovery (optional)**
 
-**Step 8: Create a diskpart script for bare-metal recovery (optional)**
-
 1.  Create a diskpart script for bare-metal recovery.
 
     **Important** The diskpart script used for bare metal recovery should not include a `select disk` or `clean` command. The system disk will be selected automatically before the diskpart script is processed.
@@ -437,7 +435,7 @@ If you plan to use Push-button reset’s extensibility points, use the following
 1.  Use the ScanState tool to capture the installed customizations into a provisioning package. Use the /config option to specify one of the default configuration files included with the ADK, and save the .ppkg file in the folder C:\\Recovery\\Customizations.
 
     ``` syntax
-    D:\ScanState_amd64\scanstate.exe /apps /config:<path_to_config_file> /ppkg C:\Recovery\Customizations\apps.ppkg /o /c /v:13 /l:C:\ScanState.log
+    N:\ScanState_amd64\scanstate.exe /apps /config:<path_to_config_file> /ppkg C:\Recovery\Customizations\apps.ppkg /o /c /v:13 /l:C:\ScanState.log
     ```
 
     where N:\\ is the location of the ScanState tool installed in Step 1.
