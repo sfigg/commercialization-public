@@ -16,7 +16,7 @@ Push-button reset is included in Windows 10 for desktop editions (Home, Pro, En
 
 ## What's new for Windows 10
 
-In Windows 10, Version 1703, Push-button reset has been updated to include the folowing changes:
+In Windows 10, Version 1703, Push-button reset has been updated to include the folowing change:
 
 -   **Use default config files when using ScanState to capture customizations:**  Starting with Windows 10 Version 1703, you have to use the `/config` option with ScanState when capturing customizations. Use only one of the default configuration files included with the Assessment and Deployment Kit (ADK). These files are:
 
