@@ -9,6 +9,8 @@ ms.assetid: 2A24C922-A167-4CEE-8F74-08E7453800D2
 
 # WindowsLicensing DDF file
 
+> [!WARNING]
+> Some information relates to prereleased product, which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here. 
 
 This topic shows the OMA DM device description framework (DDF) for the **WindowsLicensing** configuration service provider. DDF files are used only with OMA DM provisioning XML.
 
@@ -38,7 +40,7 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             <Permanent />
           </Scope>
           <DFType>
-            <MIME>com.microsoft/1.1/MDM/WindowsLicensing</MIME>
+            <MIME>com.microsoft/1.2/MDM/WindowsLicensing</MIME>
           </DFType>
         </DFProperties>
         <Node>
@@ -48,6 +50,30 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
               <Exec />
             </AccessType>
             <Description>Enter a product key for an edition upgrade of Windows 10 desktop devices. Requires reboot.</Description>
+            <DFFormat>
+              <chr />
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <CaseSense>
+              <CIS />
+            </CaseSense>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>ChangeProductKey</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Exec />
+            </AccessType>
+            <Description>Installs a product key for Windows 10 desktop devices. Does not reboot.</Description>
             <DFFormat>
               <chr />
             </DFFormat>
@@ -95,7 +121,7 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             <AccessType>
               <Get />
             </AccessType>
-            <Description>Returns the status of an edition upgrade on Windows 10 desktop and mobile devices.    Status: 0 = Failed, 1 = Pending, 2 = In progress, 3 = Completed, 4 = Unknown</Description>
+            <Description>Returns the status of an edition upgrade on Windows 10 desktop and mobile devices.	 Status: 0 = Failed, 1 = Pending, 2 = In progress, 3 = Completed, 4 = Unknown</Description>
             <DFFormat>
               <int />
             </DFFormat>
