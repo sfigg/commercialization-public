@@ -474,7 +474,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 </tr>
 <tr class="even">
 <td style="vertical-align:top"><p>[WindowsLicensing CSP](windowslicensing-csp.md)</p></td>
-<td style="vertical-align:top"><p>Added the following settings in Windows 10, version 1607, but not documented:</p>
+<td style="vertical-align:top"><p>Added the following new node and settings in Windows 10, version 1607, but not documented:</p>
 <ul>
 <li>Subscriptions</li>
 <li>Subscriptions/SubscriptionId</li>
@@ -663,7 +663,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 </tr>
 <tr class="odd">
 <td style="vertical-align:top"><p>[PassportForWork CSP](passportforwork-csp.md)</p></td>
-<td style="vertical-align:top"><p>Added the following settings:</p>
+<td style="vertical-align:top"><p>Added the following new node and settings:</p>
 <ul>
 <li><em>TenantId</em>/Policies/ExcludeSecurityDevices (only for ./Device/Vendor/MSFT)</li>
 <li><em>TenantId</em>/Policies/ExcludeSecurityDevices/TPM12 (only for ./Device/Vendor/MSFT)</li>
@@ -715,7 +715,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 </tr>
 <tr class="even">
 <td style="vertical-align:top"><p>[WindowsLicensing CSP](windowslicensing-csp.md)</p></td>
-<td style="vertical-align:top"><p>Added the followng setting:</p>
+<td style="vertical-align:top"><p>Added the following setting:</p>
 <ul>
 <li>ChangeProductKey</li>
 </ul>
@@ -1088,7 +1088,7 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <ul>
 <li>ChangeProductKey</li>
 </ul>
-<p>Added the following settings in Windows 10, version 1607, but not documented:</p>
+<p>Added the following new node and settings in Windows 10, version 1607, but not previously documented:</p>
 <ul>
 <li>Subscriptions</li>
 <li>Subscriptions/SubscriptionId</li>
@@ -1204,7 +1204,7 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 </tr>
 <tr class="even">
 <td style="vertical-align:top"><p>[PassportForWork CSP](passportforwork-csp.md)</p></td>
-<td style="vertical-align:top"><p>Updated in Windows 10, version 1703. Added the following settings:</p>
+<td style="vertical-align:top"><p>Updated in Windows 10, version 1703. Added the following new node and settings:</p>
 <ul>
 <li><em>TenantId</em>/Policies/ExcludeSecurityDevices (only for ./Device/Vendor/MSFT)</li>
 <li><em>TenantId</em>/Policies/ExcludeSecurityDevices/TPM12 (only for ./Device/Vendor/MSFT)</li>
