@@ -1728,53 +1728,6 @@ Note: You will do this on the technician system.
 
     Where E: is the USB-B drive letter.
 
-#### Create ScanState configuration file
-
-OEM can use a configuration file to restore and exclude registry keys and files during the PBR process.
-
-**Important: this section includes a workaround for a known issue in Windows 10. You must apply this workaround to avoid issues with the PBR process. **
-
-In some instances, Windows Defender settings and detection history might be captured into the customizations package by the ScanState tool. This can lead to failures during recovery due to file conflicts, and causes the PC to reboot and enter the “Installing Windows” phase repeatedly.
-
-Note: You may use the sample configuration file on USB-B\Recovery\recoveryimage\pbr_config.xml, which covers the steps below.
-
-1.  Use the ScanState tool on the **reference PC running in Audit mode**.
-
-    If you use an **x64** Windows 10 image:
-    
-        MD c:\Recovery\OEM
-        E:\ScanState_amd64\ScanState.exe /apps /genconfig:C:\Recovery\OEM\pbr_config.xml
-    
-    If you use an **x86** Windows 10 image:
-     
-        MD c:\Recovery\OEM
-        E:\ScanState_x86\ScanState.exe /apps /genconfig:C:\Recovery\OEM\pbr_config.xml
-    
-
-1.  Open the configuration file in notepad
-
-        Notepad c:\Recovery\OEM\pbr_config.xml
-
-1.  Search for the following lines in the configuration file:
-
-    &lt;component displayname="Windows-Defender-AM-Sigs" migrate="yes"…
-
-    &lt;component displayname="Windows-Defender-AM-Engine" migrate="yes"…
-
-    &lt;component displayname="Security-Malware-Windows-Defender" migrate="yes"…
-
-    &lt;component displayname="Microsoft-Windows-AppX-Deployment-Server" migrate="yes"…
-
-1.  Modify the "migrate" value from "yes" to "no" for each line. For example:
-
-    &lt;component displayname="Windows-Defender-AM-Sigs" migrate="**no**"…
-
-    &lt;component displayname="Windows-Defender-AM-Engine" migrate="**no**"…
-
-    &lt;component displayname="Security-Malware-Windows-Defender" migrate="**no**"…
-
-    &lt;component displayname="Microsoft-Windows-AppX-Deployment-Server" migrate="**no**"…
-
 #### Create ScanState migration file
 
 OEM may use a configuration file to restore registry keys and files.
@@ -1827,17 +1780,17 @@ Important: The ScanState package used by PBR must be a .ppkg file stored in C:\R
 
    If you use an **x64** Windows 10 image:
     
-    '''syntax
+    ```
     Mkdir c:\recovery\customizations
-    E:\ScanState_amd64\scanstate.exe /apps /ppkg C:\Recovery\Customizations\apps.ppkg /i:c:\recovery\oem\regrecover.xml /config:C:\Recovery\OEM\pbr_config.xml /o /c /v:13 /l:C:\ScanState.log
-    '''
+    E:\ScanState_amd64\scanstate.exe /apps /ppkg C:\Recovery\Customizations\apps.ppkg /i:c:\recovery\oem\regrecover.xml /config:"E:\ScanState_amd64\Config_AppsOnly.xml" /o /c /v:13 /l:C:\ScanState.log
+    ```
     
    If you use an **x86** Windows 10 image:
     
-    '''syntax
+    ```syntax
     Mkdir c:\recovery\customizations
-    E:\ScanState_x86\scanstate.exe /apps /ppkg C:\Recovery\Customizations\apps.ppkg /i:c:\recovery\oem\regrecover.xml /config:C:\Recovery\OEM\pbr_config.xml /o /c /v:13 /l:C:\ScanState.log
-    '''
+    E:\ScanState_x86\scanstate.exe /apps /ppkg C:\Recovery\Customizations\apps.ppkg /i:c:\recovery\oem\regrecover.xml /config:"E:\ScanState_x86\Config_AppsOnly.xml" /o /c /v:13 /l:C:\ScanState.log
+    ```
     
    Where E: is the drive letter of **USB-B***
 
@@ -1859,15 +1812,15 @@ Copy unattend.xml files for restoring settings.
 
 For OA 3.0 systems: 
 
-    '''syntax
+    ```syntax
     Copy /y E:\AnswerFiles\OA3.0\Unattend.xml C:\Mount\Windows\Windows\Panther
-    '''
+    ```
     
 For non-OA 3.0 systems:
 
-    '''syntax
+    ```syntax
     Copy /y E:\AnswerFiles\Non_OA3.0\Unattend.xml C:\Mount\Windows\Windows\Panther
-    '''
+    ```
     
 where E:\ is **USB-B**
 
@@ -1885,9 +1838,9 @@ During the deployment the winre.wim file is moved. Before capturing the final im
 
 3.  Generalize the image by using answerfile with additional settings.
 
-    '''syntax
+    ```syntax
     C:\Windows\System32\Sysprep\sysprep /unattend:c:\recovery\oem\Unattend.xml /generalize /oobe /shutdown
-    '''
+    ```
 
 1.  Connect "**USB-A**" and boot the Reference computer.
 
