@@ -34,7 +34,7 @@ The following diagram shows the NetworkProxy configuration service provider in t
 <a href="" id="networkproxy"></a>**./Vendor/MSFT/NetworkProxy**  
 <p style="margin-left: 20px">The root node for the NetworkProxy configuration service provider..</p>
 
-<a href="autodetect" id=""></a>**AutoDetect**  
+<a href="" id="autodetect"></a>**AutoDetect**  
 <p style="margin-left: 20px">Automatically detect settings. If enabled, the system tries to find the path to a PAC script.</p>
 <p style="margin-left: 20px">Valid values:</p>
 <ul>
@@ -43,15 +43,15 @@ The following diagram shows the NetworkProxy configuration service provider in t
 </ul>
 <p style="margin-left: 20px">The data type is int. Supported operations are Get and Replace.</p>
 
-<a href="setupscripturl" id=""></a>**SetupScriptUrl**  
+<a href="" id="setupscripturl"></a>**SetupScriptUrl**  
 <p style="margin-left: 20px">Address to the PAC script you want to use.</p>
 <p style="margin-left: 20px">The data type is string. Supported operations are Get and Replace.</p>
 
-<a href="proxyserver" id=""></a>**ProxyServer**  
+<a href="" id="proxyserver"></a>**ProxyServer**  
 <p style="margin-left: 20px">Node for configuring a static proxy for Ethernet and Wi-Fi connections. The same proxy server is used for all protocols - including HTTP, HTTPS, FTP, and SOCKS. These settings do not apply to VPN connections.</p>
 <p style="margin-left: 20px">Supported operation is Get.</p>
 
-<a href="proxyaddress" id=""></a>**ProxyAddress**  
+<a href="" id="proxyaddress"></a>**ProxyAddress**  
 <p style="margin-left: 20px">Address to the proxy server. Specify an address in the format &lt;server&gt;[“:”&lt;port&gt;]. </p>
 <p style="margin-left: 20px">The data type is string. Supported operations are Get and Replace.</p>
 
@@ -59,7 +59,7 @@ The following diagram shows the NetworkProxy configuration service provider in t
 <p style="margin-left: 20px">Addresses that should not use the proxy server. The system will not use the proxy server for addresses beginning with what is specified in this node. Use semicolons (;) to separate entries. </p>
 <p style="margin-left: 20px">The data type is string. Supported operations are Get and Replace.</p>
 
-<a href="useproxyforlocaladdresses" id=""></a>**UseProxyForLocalAddresses**  
+<a href="" id="useproxyforlocaladdresses"></a>**UseProxyForLocalAddresses**  
 <p style="margin-left: 20px">Specifies whether the proxy server should be used for local (intranet) addresses. </p>
 <p style="margin-left: 20px">Valid values:</p>
 <ul>
