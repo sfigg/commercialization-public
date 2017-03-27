@@ -68,36 +68,6 @@ Supported operations are Get and Replace.
 ## Examples
 
 
-Retrieve all available Windows Information Protection (formerly known as Enterprise Data Protection) logs starting from the specified StartTime.
-
-``` syntax
-<SyncML>
-    <SyncBody>
-        <Replace>
-            <CmdID>3</CmdID>
-            <Item>
-                <Target><LocURI>./Vendor/MSFT/PolicyManager/My/DataProtection/EnterpriseProtectedDomainNames</LocURI></Target>
-                <Data>microsoft.com|office.com|xbox.com</Data>
-            </Item>
-        </Replace>
-        <Replace>
-            <CmdID>2</CmdID>
-            <Item>
-                <Target><LocURI>./Vendor/MSFT/Reporting/EnterpriseDataProtection/RetrieveByTimeRange/StartTime</LocURI></Target>
-                <Data>2012-11-30T01:48:14.233Z</Data>
-            </Item>
-        </Replace>
-        <Get>
-            <CmdID>4</CmdID>
-            <Item>
-                <Target><LocURI>./Vendor/MSFT/Reporting/EnterpriseDataProtection/RetrieveByTimeRange/Logs</LocURI></Target>
-            </Item>
-        </Get>
-        <Final/>
-    </SyncBody>
-</SyncML>
-```
-
 Retrieve a specified number of security auditing logs starting from the specified StartTime.
 
 ``` syntax
