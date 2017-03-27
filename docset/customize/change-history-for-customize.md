@@ -27,11 +27,11 @@ The following tables record the changes that were made in the **Customize** sect
 </thead>
 <tbody>
 <tr class="even">
-<td><p>[Microsoft-Windows-TPM-Tasks-ClearTpm](microsoft-windows-tpm-tasks-cleartpm.md)</p></td>
+<td><p>[Microsoft-Windows-TPM-Tasks-ClearTpm](desktop/unattend/microsoft-windows-tpm-tasks-cleartpm.md)</p></td>
 <td><p>New. Specifies whether to clear the Trusted Platform Module (TPM) during Windows setup. Clearing the TPM prevents an issue in earlier versions that kept some Windows features from working if the TPM was incorrectly set.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Microsoft-Windows-TwinUI-Hide](microsoft-windows-twinui-hide.md)</p></td>
+<td><p>[Microsoft-Windows-TwinUI-Hide](desktop/unattend/microsoft-windows-twinui-hide.md)</p></td>
 <td><p>New. Specifies whether to hide the link to an advanced settings app in the Pen and Windows Ink Settings page.</p></td>
 </tr>
 <tr class="even">

@@ -63,19 +63,19 @@ The following diagram shows the DynamicManagement configuration service provider
 <p style="margin-left: 20px">Settings that get applied when the Context is active.</p>
 <p style="margin-left: 20px">Value type is string. Supported operations are Add, Get, Delete, and Replace.</p>
 
-<a href="settingspackresponse" id=""></a>**SettingsPackResponse**  
+<a href="" id="settingspackresponse"></a>**SettingsPackResponse**  
 <p style="margin-left: 20px">Response from applying a Settings Pack that contains information on each individual action..</p>
 <p style="margin-left: 20px">Value type is string. Supported operation is Get.</p>
 
-<a href="contextstatus" id=""></a>**ContextStatus**  
+<a href="" id="contextstatus"></a>**ContextStatus**  
 <p style="margin-left: 20px">Reports status of the context.  If there was a failure, SettingsPackResponse should be checked for what exactly failed..</p>
 <p style="margin-left: 20px">Value type is integer. Supported operation is Get.</p>
 
-<a href="altitude" id=""></a>**Altitude**  
+<a href="" id="altitude"></a>**Altitude**  
 <p style="margin-left: 20px">A value that determines how to handle conflict resolution of applying multiple contexts on the device. This is required and must be distinct of other priorities..</p>
 <p style="margin-left: 20px">Value type is integer. Supported operations are Add, Get, Delete, and Replace.</p>
 
-<a href="alertsenabled" id=""></a>**AlertsEnabled**  
+<a href="" id="alertsenabled"></a>**AlertsEnabled**  
 <p style="margin-left: 20px">A Boolean value for sending an alert to the server when a context fails.</p>
 <p style="margin-left: 20px">Supported operations are Get and Replace.</p>
 

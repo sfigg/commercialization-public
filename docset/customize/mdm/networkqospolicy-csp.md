@@ -22,6 +22,8 @@ The following actions are supported:
 -	Layer 2 tagging using a IEEE 802.1p priority value
 -	Layer 3 tagging using a differentiated services code point (DSCP) value
 
+> [!NOTE]
+> The NetworkQoSPolicy configuration service provider is supported only in Microsoft Surface Hub.
 
 The following diagram shows the NetworkQoSPolicy configuration service provider in tree format.
 

@@ -35,11 +35,11 @@ For more information about Windows customizations, see [Customize](index.md).
 </tr>
 <tr class="odd">
 <td><p>You can now hide the link to the link to an advanced settings app in the Pen and Windows Ink Settings page.</p></td>
-<td><p> See [Microsoft-Windows-TwinUI-Hide](microsoft-windows-twinui-hide.md).</p></td>
+<td><p> See [Microsoft-Windows-TwinUI-Hide](desktop/unattend/microsoft-windows-twinui-hide.md).</p></td>
 </tr>
 <tr class="even">
 <td><p>You can now clear the Trusted Platform Module (TPM) during Windows setup. </p></td>
-<td><p>See [Microsoft-Windows-TPM-Tasks-ClearTpm](microsoft-windows-tpm-tasks-cleartpm.md).</p></td>
+<td><p>See [Microsoft-Windows-TPM-Tasks-ClearTpm](desktop/unattend/microsoft-windows-tpm-tasks-cleartpm.md).</p></td>
 </tr>
 
 </tbody>
