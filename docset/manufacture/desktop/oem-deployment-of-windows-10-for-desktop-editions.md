@@ -1782,14 +1782,14 @@ Important: The ScanState package used by PBR must be a .ppkg file stored in C:\R
     
     ```
     Mkdir c:\recovery\customizations
-    E:\ScanState_amd64\scanstate.exe /apps /ppkg C:\Recovery\Customizations\apps.ppkg /i:c:\recovery\oem\regrecover.xml /config:"E:\ScanState_amd64\Config_AppsOnly.xml" /o /c /v:13 /l:C:\ScanState.log
+    E:\ScanState_amd64\scanstate.exe /apps /ppkg C:\Recovery\Customizations\apps.ppkg /i:c:\recovery\oem\regrecover.xml /config:"E:\ScanState_amd64\Config_AppsAndSettings.xml" /o /c /v:13 /l:C:\ScanState.log
     ```
     
    If you use an **x86** Windows 10 image:
     
     ```syntax
     Mkdir c:\recovery\customizations
-    E:\ScanState_x86\scanstate.exe /apps /ppkg C:\Recovery\Customizations\apps.ppkg /i:c:\recovery\oem\regrecover.xml /config:"E:\ScanState_x86\Config_AppsOnly.xml" /o /c /v:13 /l:C:\ScanState.log
+    E:\ScanState_x86\scanstate.exe /apps /ppkg C:\Recovery\Customizations\apps.ppkg /i:c:\recovery\oem\regrecover.xml /config:"E:\ScanState_x86\Config_AppsAndSettings.xml" /o /c /v:13 /l:C:\ScanState.log
     ```
     
    Where E: is the drive letter of **USB-B***
