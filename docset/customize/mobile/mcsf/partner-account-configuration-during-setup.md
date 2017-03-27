@@ -51,8 +51,6 @@ Partners must meet the following requirements when configuring this customizatio
 <a href="" id="instructions-"></a>**Instructions:**  
 1.  Create the partner account setup app that you want to launch at the end of OOBE.
 
-    See [App design considerations and guidelines](#app-design-considerations-and-guidelines) to learn more about requirements and design considerations you need to consider when writing your app.
-
 2.  Create a customization answer file to preload your app(s) and follow the steps in the section Configure the customization settings.
 
     ``` syntax
@@ -148,13 +146,11 @@ When designing your apps, keep the following design considerations in mind:
 
 -   We recommend that you use Universal Windows apps to enable your hub and spoke model.
 
--   If the app is related to device hardware or the cellular network, you can consider adding it as a settings app. In this case, the app must adhere to the guidelines outlined in [Create a partner settings app](p_phPartAppDev.create_a_system_settings_application).
-
 -   When building a shared partner app, be aware that the app might appear in the Windows Store for every mobile device produced by the OEM, every phone ranged by the mobile operator, and might be downloaded by users that have a different mobile operator. To ensure that users do not end up seeing mobile operator configuration options that do not apply to their phone or network, consider these possible mitigations:
 
     1.  **Network verification:** The app must verify that the phone is on the specified mobile operator’s network before displaying any account setup functionality for that mobile operator. This can be done by checking the MCC and the MNC of the SIM, or by verifying the registry value `PhoneMobileOperatorName` setting (see [Phone metadata in DeviceTargetingInfo](phone-metadata-in-devicetargetinginfo.md) for more information).
 
-    2.  **System settings app:** The app can be written as a system settings app. This application will appear on the **System** screen in **Settings**, and cannot be pinned to Start. It also will be hidden in the Windows Store so that it cannot be accidentally downloaded. In this case, the app must adhere to guidelines in [Create a partner settings app](p_phPartAppDev.create_a_system_settings_application).
+    2.  **System settings app:** The app can be written as a system settings app. This application will appear on the **System** screen in **Settings**, and cannot be pinned to Start. It also will be hidden in the Windows Store so that it cannot be accidentally downloaded. 
 
 -   See [Design basics](http://go.microsoft.com/fwlink/p/?LinkId=708326) to learn more about how you can design a Universal Windows app that suits a variety of devices with different display sizes and other tips for creating an app with a great UI.
 
@@ -199,7 +195,7 @@ We recommend that you use the following APIs when implementing your apps:
 
 ### Preloading the apps and specifying the first page
 
-1.  Preload the apps to the mobile device using the following code example or follow the steps in [Preinstallable apps for mobile devices](p_preinstall.preinstallable_apps_for_Window_10_for_phones).
+1.  Preload the apps to the mobile device using the following code example.
 
     ``` syntax
         <!-- Preload up to 5 apps to use as the hub and spoke apps -->
@@ -266,7 +262,7 @@ Partners must provide three localized strings: partner name, name(s) of the acco
 
     In the above sample MCSF customization answer file, remove the comments in the section "For one supported phone language…" and set the values to the strings you want to use.
 
--   If you include support for multiple display languages, you must create a resource-only .dll that contains these three strings localized into every included language. For instructions on creating a resource-only .dll and including it in an image, see [Create a resource-only .dll for localized strings](create-a-resource-only-dll-for-localized-strings.md).
+-   If you include support for multiple display languages, you must create a resource-only .dll that contains these three strings localized into every included language. 
 
     **Note**  This capability is available only through the MCSF framework and will not work if you use the Windows provisioning framework.
 

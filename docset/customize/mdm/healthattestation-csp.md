@@ -491,8 +491,8 @@ The following list of data points are verified by the DHA-Service in DHA-Report 
 - [HealthStatusMismatchFlags](#healthstatusmismatchflags)
 
 \*  TPM 2.0 only   
-**  Reports if Bitlocker was enabled during initial boot. The “Hybrid Resume” must be disabled on the device.   
-*** Reports 1st party ELAM “Defender” was loaded during boot.  
+**  Reports if Bitlocker was enabled during initial boot.    
+*** The “Hybrid Resume” must be disabled on the device. Reports 1st party ELAM “Defender” was loaded during boot.  
 
 Each of these are described in further detail in the following sections, along with the recommended actions to take.
 
@@ -537,7 +537,7 @@ Each of these are described in further detail in the following sections, along w
 -   Take one of the previous actions and additionally place the device in a watch list to monitor the device more closely for potential risks.
 
 <a href="" id="bitlockerstatus"></a>**BitlockerStatus** (at boot time) 
-<p style="margin-left: 20px">To use this reporting feature you must disable "Hybrid Resume" on the device. When Bitlocker is reported "on" at boot time, the device is able to protect data that is stored on the drive from unauthorized access, when the system is turned off or goes to hibernation.</p>
+<p style="margin-left: 20px">When Bitlocker is reported "on" at boot time, the device is able to protect data that is stored on the drive from unauthorized access, when the system is turned off or goes to hibernation.</p>
 
 <p style="margin-left: 20px">Windows BitLocker Drive Encryption, encrypts all data stored on the Windows operating system volume. BitLocker uses the TPM to help protect the Windows operating system and user data and helps to ensure that a computer is not tampered with, even if it is left unattended, lost, or stolen.</p>
 
@@ -669,7 +669,7 @@ Each of these are described in further detail in the following sections, along w
 <p style="margin-left: 20px">If WinPE = 1 (True), then limit access to remote resources that are required for Windows OS installation.</p>
 
 <a href="" id="elamdriverloaded"></a>**ELAMDriverLoaded**  (Windows Defender)
-<p style="margin-left: 20px">Early launch anti-malware (ELAM) provides protection for the computers in your network when they start up and before third-party drivers initialize.</p>
+<p style="margin-left: 20px">To use this reporting feature you must disable "Hybrid Resume" on the device. Early launch anti-malware (ELAM) provides protection for the computers in your network when they start up and before third-party drivers initialize.</p>
 
 <p style="margin-left: 20px">In the current release, this attribute only monitors/reports if a Microsoft 1st party ELAM  (Windows Defender) was loaded during initial boot.</p>
 

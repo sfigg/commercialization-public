@@ -102,7 +102,7 @@ Although OEMs typically configure this behavior by adding a registry value in an
 
     -   For the `Area`*n* setting, set the `Value` to a string that marks the position of the current button. The string must have the format *ul.x,ul.y lr.x,lr.y*, where *ul* = upper left and *lr* = lower right. For example, `Value=" 0,1295 236,1390"`.
 
-6.  If you want to enable the built-in vibration feedback mechanism for the capacitive buttons in the OS, include the `VibrateSupport`, `VibrateDuration`, and `VibrateIntensity` settings and configure them as described below. If you do not want to enable vibration feedback, you can omit these settings from the customization answer file. For more information about vibration feedback, see [Implement capacitive buttons](p_phDrivComp.implement_capacitive_buttons).
+6.  If you want to enable the built-in vibration feedback mechanism for the capacitive buttons in the OS, include the `VibrateSupport`, `VibrateDuration`, and `VibrateIntensity` settings and configure them as described below. If you do not want to enable vibration feedback, you can omit these settings from the customization answer file. 
 
     -   For the `VibrateSupport` setting, set `Value` to one of the following values.
 
