@@ -32,7 +32,7 @@ Assigned access Windows Powershell reference
 -   Windows 10 Enterpriseor Windows 10 Education, or Windows 10 Pro .
 -   A domain or local user account
 -   The user account must have logged on at least once before you set up assigned access, or no apps will be available for that account. To set up assigned access using MDM, you need the user account (domain\\account).
--   A Universal Windows app that is installed for that account and is an above lock screen app. For details on building an above lock screen app, [Kiosk apps for assigned access: Best practices](p_phPartAppDev.create_a_kiosk_app_for_assigned_access)
+-   A Universal Windows app that is installed for that account and is an above lock screen app. For details on building an above lock screen app, [Kiosk apps for assigned access: Best practices](https://msdn.microsoft.com/en-us/windows/hardware/drivers/partnerapps/create-a-kiosk-app-for-assigned-access)
 
 The app can be your own company app that you have made available in your own app Store. To set up assigned access using MDM or PowerShell, you also need the Application User Model ID (AUMID) for the app. [Find the Application User Model ID of an installed app](find-the-application-user-model-id-of-an-installed-app.md).
 

@@ -15,7 +15,7 @@ ms.assetid: E125F6A5-EE44-41B1-A8CC-DF295082E6B2
 The EnterpriseAPN configuration service provider (CSP) is used by the enterprise to provision an APN for the Internet.
 
 > [!Note]
-Starting in the next major update to Windows 10, the EnterpriseAPN CSP is supported in Windows 10 Home, Pro, Enterprise, and Education editions.
+Starting in Windows 10, version 1703 the EnterpriseAPN CSP is supported in Windows 10 Home, Pro, Enterprise, and Education editions.
 
 The following image shows the EnterpriseAPN configuration service provider in tree format.
 
@@ -93,6 +93,23 @@ The following image shows the EnterpriseAPN configuration service provider in tr
 <p style="margin-left: 20px">The default value is true.</p>
 
 <p style="margin-left: 20px">Supported operations are Add, Get, Delete, and Replace.</p>
+
+<a href="" id="enterpriseapn-connectionname-roaming"></a>**EnterpriseAPN/*ConnectionName*/Roaming**  
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies whether the connection should be activated when the device is roaming. Valid values:</p>
+
+<ul>
+<li>0 - Disallowed</li>
+<li>1 - Allowed</li>
+<li>2 - DomesticRoaming</li>
+<li>3 - UseOnlyForDomesticRoaming</li>
+<li>4 - UseOnlyForNonDomesticRoaming</li>
+<li>5 - UseOnlyForRoaming</li>
+</ul>
+
+<p style="margin-left: 20px">Default is 1 (all roaming allowed).</p>
+
+<p style="margin-left: 20px">Value type is string. Supported operations are Add, Get, Delete, and Replace.</p>
+
 
 <a href="" id="enterpriseapn-settings"></a>**EnterpriseAPN/Settings**  
 <p style="margin-left: 20px">Added in Windows 10, version 1607. Node that contains global settings.</p>

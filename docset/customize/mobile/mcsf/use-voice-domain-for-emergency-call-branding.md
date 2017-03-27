@@ -69,7 +69,7 @@ To meet mobile operator requirements, OEMs can enable the voice domain to decide
 
     If `UseVoiceDomainForEmergencyCallBranding` is set to 1, the phone will not display **Emergency calls only** in the following cases. Instead, it will display **No service**.
 
-    -   If the system type ([RILSYSTEMTYPE](netvista.rilsystemtype)) is NONE, which means there is no signal.
+    -   If the system type [RILSYSTEMTYPE] is NONE, which means there is no signal.
 
     -   If the system type is LTE but there is no voice domain. This situation can occur in these cases:
 

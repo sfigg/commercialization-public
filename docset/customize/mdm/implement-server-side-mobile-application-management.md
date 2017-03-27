@@ -94,7 +94,7 @@ MAM on Windows support the following CSPs. All other CSPs will be blocked. Note 
 
 ## Device lock policies and EAS
 
-MAM supports device lock policies similar to MDM. The policies are configured by DeviceLock area of Policy CSP and PassportForWork CSP. The MAM client respects the [DeviceLock/MaxDevicePasswordFailedAttempts](policy-configuration-service-provider.md#devicelock-maxdevicepasswordfailedattempts) and [DeviceLock/MaxInactivityTimeDeviceLock](policy-configuration-service-provider.md#devicelock-maxinactivitytimedevicelock) policies of the DeviceLock area of Policy CSP. The rest of DeviceLock area policies are ignored. The MAM client supports all policies of PassportForWork CSP.
+MAM supports device lock policies similar to MDM. The policies are configured by DeviceLock area of Policy CSP and PassportForWork CSP. 
 
 We do not recommend configuring both Exchange Active Sync (EAS) and MAM policies for the same device. However, if both are configured, the client will behave as follows: 
 
@@ -124,7 +124,7 @@ In the process of changing MAM enrollment to MDM, MAM policies will be removed f
 <ol>
 <li>Both MAM and MDM policies for the organization support WIP</li>
 <li>EDP CSP Enterprise ID is the same for both MAM and MDM</li>
-<li>EDP CSP RevokeONUpgrade is set to FALSE</li>
+<li>EDP CSP RevokeOnMDMHandoff is set to FALSE</li>
 </ol>
 
 If the MAM device is properly configured for MDM enrollment, then the Enroll only to device management link will be displayed in **Settings>Accounts>Access work or school**. The user can click on this link, provide their credentials, and the enrollment will be changed to MDM. Their Azure AD account will not be affected.

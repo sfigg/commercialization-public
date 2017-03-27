@@ -24,8 +24,6 @@ Windows 10 Enterprise, Windows 10 Education, or Windows 10 Pro.
 
 For the most secure assigned access experience, we recommend that you configure the settings as defined in [Complementary settings for assigned access](create-a-kiosk-image.md#other-aa-settings) and [Other settings to lock down](create-a-kiosk-image.md#lockdown-settings).
 
-Before you create your own assigned access app, see [Kiosk apps for assigned access: Best practices](p_phPartAppDev.create_a_kiosk_app_for_assigned_access).
-
 ## Interactions and interoperability
 
 

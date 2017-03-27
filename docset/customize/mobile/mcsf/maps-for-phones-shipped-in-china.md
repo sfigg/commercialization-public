@@ -19,11 +19,6 @@ This customization may result in different maps, servers, or other configuration
 **Note**  
 If partners do not set the `ChinaVariant` setting to 1, partners may not ship the device in China.
 
- 
-
-<a href="" id="sample---mapsforchina"></a>**Sample:** MapsForChina  
-[Use the customization samples](p_phCustomization.use_the_customization_samples)
-
 <a href="" id="constraints---none"></a>**Constraints:** None  
 
 <a href="" id="instructions-"></a>**Instructions:**  

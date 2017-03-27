@@ -11,7 +11,6 @@
 ## [What's new in Design](design/what-s-new-in-design.md)
 ## [Change history for Design](design/change-history-for-design.md)
 ## [Minimum hardware requirements](design/minimum/minimum-hardware-requirements-overview.md)
-### [PC OEM requirements for Device Guard and Credential Guard](design/minimum/device-guard-and-credential-guard.md)
 ## [Form factors](design/form-factors/form-factors.md)
 ### [2-in-1](design/form-factors/2-in-1.md)
 ### [All-in-one](design/form-factors/all-in-one.md)
@@ -362,7 +361,7 @@
 # [Customize](customize/index.md)
 
 ## [What's new in customizations](customize/what-s-new-in-customizations.md)
-## [Change history for customization docs](customize/change-history-for-customize.md)
+
 
 ## [Customizations for desktop](customize/desktop/desktop-customizations-portal.md)
 ### [Customize the taskbar](customize/desktop/customize-the-taskbar.md)
@@ -499,8 +498,6 @@
 ### [Customize using the mobile MCSF framework](customize/mobile/mcsf/provisioning-and-customization.md)
 #### [Managed Centralized Settings Framework (MCSF)](customize/mobile/mcsf/managed-centralized-settings-framework-mcsf.md)
 #### [Customization answer file](customize/mobile/mcsf/customization-answer-file.md)
-#### [MCSF to Windows Provisioning settings map](customize/mobile/mcsf/mcsf-to-windows-provisioning-settings-map.md)
-#### [MCSF settings not supported in Windows Provisioning](customize/mobile/mcsf/mcsf-settings-not-supported-in-windows-provisioning.md)
 #### [Set languages and locales](customize/mobile/mcsf/set-languages-and-locales.md)
 #### [Create a resource-only .dll for localized strings](customize/mobile/mcsf/create-a-resource-only-dll-for-localized-strings.md)
 #### [Customizations for device management](customize/mobile/mcsf/customizations-for-device-management.md)
@@ -753,7 +750,7 @@
 ### [Preinstallable apps for desktop devices](customize/preinstall/preinstallable-apps-for-windows-10-desktop.md)
 ### [Preinstallable apps for mobile devices](customize/preinstall/preinstallable-apps-for-window-10-for-phones.md)
 ### [Preinstall tasks](customize/preinstall/preinstall-tasks.md)
-
+## [Change history for customization docs](customize/change-history-for-customize.md)
 
 # [Test](test/index.md)
 
