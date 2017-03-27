@@ -45,9 +45,9 @@ Thermal problems fall into these three categories:
 
 While the PC is turned on and being used, thermal mitigation solutions should be as transparent to the user as possible. In other words, the user ideally should never know when their PC is or is not being thermally mitigated. The overarching goal of thermal mitigation is to allow the user to use the PC for as much and as long as possible without disruption.
 
-Hardware vendors and system integrators have a great deal of control in their design of a PC to reduce the need for thermal mitigation by designing hardware that is effective at dissipating heat. For more information about hardware design for thermal management, see [Hardware thermal modeling and evaluation](cstandby.design_guide.md#hardware-thermal).
+Hardware vendors and system integrators have a great deal of control in their design of a PC to reduce the need for thermal mitigation by designing hardware that is effective at dissipating heat. For more information about hardware design for thermal management, see [Hardware thermal modeling and evaluation](design-guide.md#hardware-thermal).
 
-In addition, Windows provides thermal management software. For more information, see [Windows thermal management framework](cstandby.design_guide.md#thermal-framework).
+In addition, Windows provides thermal management software. For more information, see [Windows thermal management framework](design-guide.md#thermal-framework).
 
 **Critical thermal "shutdown" experience**
 
