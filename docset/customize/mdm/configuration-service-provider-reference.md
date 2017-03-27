@@ -978,7 +978,6 @@ The following list shows the configuration service providers supported in Window
 | [DMAcc CSP](dmacc-csp.md)                                                 | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)       |
 | [DMClient CSP](dmclient-csp.md)                                           | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)       |
 | [EnterpriseModernAppManagement CSP](enterprisemodernappmanagement-csp.md) | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       |
-| [NetworkQoSPolicy CSP](networkqospolicy-csp.md)                           | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)2      |
 | [NodeCache CSP](nodecache-csp.md)                                         | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)       |
 | [Policy CSP](policy-configuration-service-provider.md)                    | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       |
 | [RootCATrustedCertificates CSP](rootcacertificates-csp.md)                | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       |
