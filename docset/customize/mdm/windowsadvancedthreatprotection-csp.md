@@ -21,76 +21,76 @@ The following diagram shows the WDATP configuration service provider in tree for
 The following list describes the characteristics and parameters.
 
 <a href="" id="--device-vendor-msft-windowsadvancedthreatprotection"></a>**./Device/Vendor/MSFT/WindowsAdvancedThreatProtection**  
-The root node for the Windows Defender Advanced Threat Protection configuration service provider.
+<p style="margin-left: 20px">The root node for the Windows Defender Advanced Threat Protection configuration service provider.
 
-Supported operation is Get.
+<p style="margin-left: 20px">Supported operation is Get.
 
 <a href="" id="onboarding"></a>**Onboarding**  
-Sets Windows Defender Advanced Threat Protection Onboarding blob and initiates onboarding to Windows Defender Advanced Threat Protection.
+<p style="margin-left: 20px">Sets Windows Defender Advanced Threat Protection Onboarding blob and initiates onboarding to Windows Defender Advanced Threat Protection.
 
-The data type is a string.
+<p style="margin-left: 20px">The data type is a string.
 
-Supported operations are Get and Replace.
+<p style="margin-left: 20px">Supported operations are Get and Replace.
 
 <a href="" id="healthstate"></a>**HealthState**  
-Node that represents the Windows Defender Advanced Threat Protection health state.
+<p style="margin-left: 20px">Node that represents the Windows Defender Advanced Threat Protection health state.
 
 <a href="" id="healthstate-lastconnected"></a>**HealthState/LastConnected**  
-Contains the timestamp of the last successful connection.
+<p style="margin-left: 20px">Contains the timestamp of the last successful connection.
 
-Supported operation is Get.
+<p style="margin-left: 20px">Supported operation is Get.
 
 <a href="" id="healthstate-senseisrunning"></a>**HealthState/SenseIsRunning**  
-Boolean value that identifies the Windows Defender Advanced Threat Protection Sense running state.
+<p style="margin-left: 20px">Boolean value that identifies the Windows Defender Advanced Threat Protection Sense running state.
 
-The default value is false.
+<p style="margin-left: 20px">The default value is false.
 
-Supported operation is Get.
+<p style="margin-left: 20px">Supported operation is Get.
 
 <a href="" id="healthstate-onboardingstate"></a>**HealthState/OnboardingState**  
-Represents the onboarding state.
+<p style="margin-left: 20px">Represents the onboarding state.
 
-Supported operation is Get.
+<p style="margin-left: 20px">Supported operation is Get.
 
-The following list shows the supported values:
+<p style="margin-left: 20px">The following list shows the supported values:
 
 -   0 (default) – Not onboarded.
 -   1 – Onboarded
 
 <a href="" id="healthstate-orgid"></a>**HealthState/OrgId**  
-String that represents the OrgID.
+<p style="margin-left: 20px">String that represents the OrgID.
 
-Supported operation is Get.
+<p style="margin-left: 20px">Supported operation is Get.
 
 <a href="" id="configuration"></a>**Configuration**  
-Represents Windows Defender Advanced Threat Protection configuration.
+<p style="margin-left: 20px">Represents Windows Defender Advanced Threat Protection configuration.
 
 <a href="" id="configuration-samplesharing"></a>**Configuration/SampleSharing**  
-Returns or sets the Windows Defender Advanced Threat Protection Sample Sharing configuration parameter.
+<p style="margin-left: 20px">Returns or sets the Windows Defender Advanced Threat Protection Sample Sharing configuration parameter.
 
-The following list shows the supported values:
+<p style="margin-left: 20px">The following list shows the supported values:
 
 -   0 – None
 -   1 (default)– All
 
-Supported operations are Get and Replace.
+<p style="margin-left: 20px">Supported operations are Get and Replace.
 
 <a href="" id="configuration-telemetryreportingfrequency"></a>**Configuration/TelemetryReportingFrequency**  
-Added in Windows 10, version 1703. Return or set the Windows Defender Advanced Threat Protection telemetry reporting frequency. 
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Return or set the Windows Defender Advanced Threat Protection telemetry reporting frequency. 
 
-The following list shows the supported values:
+<p style="margin-left: 20px">The following list shows the supported values:
 
 -   1 (default) – Normal
 -   2 - Expedite
 
-Supported operations are Get and Replace.
+<p style="margin-left: 20px">Supported operations are Get and Replace.
 
 <a href="" id="offboarding"></a>**Offboarding**  
-Sets the Windows Defender Advanced Threat Protection Offboarding blob and initiates offboarding to Windows Defender Advanced Threat Protection.
+<p style="margin-left: 20px">Sets the Windows Defender Advanced Threat Protection Offboarding blob and initiates offboarding to Windows Defender Advanced Threat Protection.
 
-The data type is a string.
+<p style="margin-left: 20px">The data type is a string.
 
-Supported operations are Get and Replace.
+<p style="margin-left: 20px">Supported operations are Get and Replace.
 
 ## Examples
 
