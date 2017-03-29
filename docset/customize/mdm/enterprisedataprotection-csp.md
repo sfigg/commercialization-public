@@ -245,7 +245,12 @@ typedef enum _PUBLIC_KEY_SOURCE_TAG {
 <p style="margin-left: 20px">Supported operations are Add, Get, Replace and Delete. Value type is integer.
 
 <a href="" id="settings-revokeonmdmhandoff"></a>**Settings/RevokeOnMDMHandoff**  
-<p style="margin-left: 20px">Added in Windows 10, version 1703. Supported operations are Add, Get, Replace and Delete. Value type is integer.
+<p style="margin-left: 20px">Added in Windows 10, version 1703. This policy controls whether to revoke the WIP keys when a device upgrades from MAM to MDM. If set to 0 (Don't revoke keys), the keys will not be revoked and the user will continue to have access to protected files after upgrade. This is recommended if the MDM service is configured with the same WIP EnterpriseID as the MAM service.
+
+- 0 - Don't revoke keys
+- 1 (dafault) - Revoke keys
+
+<p style="margin-left: 20px">Supported operations are Add, Get, Replace and Delete. Value type is integer.
 
 <a href="" id="settings-rmstemplateidforedp"></a>**Settings/RMSTemplateIDForEDP**  
 <p style="margin-left: 20px">TemplateID GUID to use for RMS encryption. The RMS template allows the IT admin to configure the details about who has access to RMS-protected file and how long they have access.
@@ -261,7 +266,7 @@ typedef enum _PUBLIC_KEY_SOURCE_TAG {
 <p style="margin-left: 20px">Supported operations are Add, Get, Replace and Delete. Value type is integer.
 
 <a href="" id="settings-smbautoencryptedfileextensions"></a>**Settings/SMBAutoEncryptedFileExtensions**  
-<p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies a list of extensions to be encrypted when copying from SMB share.  When this policy is not specified, the existing auto-encryption behavior is applied.  When this policy is configured, only files with the extensions in the list will be encrypted.</p>
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies a list of file extensions, so that files with these extensions are encrypted when copying from an SMB share within the corporate boundary as defined in the Policy CSP nodes for [NetworkIsolation/EnterpriseIPRange](policy-configuration-service-provider.md#networkisolation-enterpriseiprange) and [NetworkIsolation/EnterpriseNetworkDomainNames](policy-configuration-service-provider.md#networkisolation-enterprisenetworkdomainnames).  When this policy is not specified, the existing auto-encryption behavior is applied.  When this policy is configured, only files with the extensions in the list will be encrypted.</p>
 <p style="margin-left: 20px">Supported operations are Add, Get, Replace and Delete. Value type is string.
 
 <a href="" id="settings-edpshowicons"></a>**Settings/EDPShowIcons**  
