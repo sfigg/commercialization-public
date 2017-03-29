@@ -1,5 +1,5 @@
 ---
-author: Justinha
+author: themar
 Description: 'UEFI/GPT-based hard drive partitions'
 ms.assetid: a6c97be2-1d1f-4639-9771-3b17234370e6
 MSHAttr: 'PreferredLib:/library/windows/hardware'
@@ -97,7 +97,7 @@ Each partition can have a maximum of 18 exabytes (~18.8 million terabytes) of sp
 ## <span id="RecommendedPartitionConfigurations"></span><span id="recommendedpartitionconfigurations"></span><span id="RECOMMENDEDPARTITIONCONFIGURATIONS"></span>Partition layout
 
 
-The default partition layout for UEFI-based PCs is: a system partition, an MSR, a Windows partition, and a recovery tools partition. If you install Windows using a bootable USB key made by Windows Imaging and Configuration Designer (ICD), it creates the following layout by default.
+The default partition layout for UEFI-based PCs is: a system partition, an MSR, a Windows partition, and a recovery tools partition. 
 
 ![diagram of default partition layout: system, msr, windows, and recovery](images/dep-win10-partitions-uefi.png)
 
