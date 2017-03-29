@@ -20,7 +20,7 @@ The first user to sign in to the device must be an administrator. This ensures t
 ## Requirements
 
 
-Windows 10 Enterprise or Windows 10 Education.
+Windows 10 Enterprise, Windows 10 Professional, or Windows 10 Education.
 
 ## Terminology
 

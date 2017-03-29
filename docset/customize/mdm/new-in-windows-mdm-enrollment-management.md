@@ -651,7 +651,11 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 </tr>
 <tr class="even">
 <td style="vertical-align:top">[EnterpriseDataProtection CSP](enterprisedataprotection-csp.md)</td>
-<td style="vertical-align:top"><p>Starting in Windows 10, version 1703, AllowUserDecryption is no longer supported.</p></td>
+<td style="vertical-align:top"><p>Starting in Windows 10, version 1703, AllowUserDecryption is no longer supported.</p><p>Added the following settings:</p>
+<ul>
+<li>RevokeOnMDMHandoff</li>
+<li>SMBAutoEncryptedFileExtensions</li>
+</ul></td>
 </tr>
 <tr class="odd">
 <td style="vertical-align:top">[DynamicManagement CSP](dynamicmanagement-csp.md)</td>
@@ -1096,6 +1100,14 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>Subscriptions/SubscriptionId/Name</li>
 </ul>
 </td>
+</tr>
+<tr class="odd">
+<td style="vertical-align:top">[EnterpriseDataProtection CSP](enterprisedataprotection-csp.md)</td>
+<td style="vertical-align:top"><p>Added the following settings:</p>
+<ul>
+<li>RevokeOnMDMHandoff</li>
+<li>SMBAutoEncryptedFileExtensions</li>
+</ul></td>
 </tr>
 </tbody>
 </table>
