@@ -1,5 +1,5 @@
 ---
-author: Justinha
+author: themar
 Description: 'Windows 10 includes tools to help you use less drive space.'
 ms.assetid: f58ee9cf-0dd1-4c46-9b1f-d16891247f2f
 MSHAttr: 'PreferredLib:/library/windows/hardware'
@@ -22,16 +22,8 @@ Compact OS installs the operating system files as compressed files. Compact OS i
 
 Unlike WIMBoot, because the files are no longer combined into a single WIM file, Windows update can replace or remove individual files as needed to help maintain the drive footprint size over time. 
 
-**Note**  When running Windows Imaging and Configuration Designer (ICD) on a PC running a previous version of Windows, such as Windows 8.1, you'll need to install the [Windows Assessment and Deployment Kit (ADK)](http://go.microsoft.com/fwlink/?LinkId=526803) with both the Windows ICD and **Deployment Tools** features. This installs the latest versions of the drivers required by DISM (wimmount.sys and adkwof.sys) used to create Compact OS images.
 
-**To deploy Compact OS with a USB bootable drive**
-
-1.  On your technician PC, open Windows ICD and create your project.
-2.  Plug in a USB flash drive and note the drive letter (example: D:).
-3.  Click **Create** &gt; **Production Media** &gt; **WIM** &gt; **Enable OS File Compression: Yes** &gt; **Next** &gt; **USB Bootable drive** &gt; drive letter (D:) &gt; **Next** &gt; **Build**.
-4.  Boot the destination PC using the USB flash drive. Windows installs automatically.
-
-**To deploy Compact OS using a WIM file**
+#### To deploy Compact OS using a WIM file
 
 1.  Boot your destination device with the Windows 10 version of Windows PE. (To use a previous version of Windows PE, make sure you use the Windows 10 version of DISM. To learn more, see [Copy DISM to Another Computer](copy-dism-to-another-computer.md).)
 
@@ -53,7 +45,24 @@ Unlike WIMBoot, because the files are no longer combined into a single WIM file,
     
     **Note:** If you're applying an image in compact mode and using the /ScratchDir option, make sure your ScratchDir folder is not on a FAT32-formatted partition. Using a FAT32 partition could result in unexpected reboots during OOBE.
 
-**To deploy Compact OS from an FFU image**
+#### To deploy Compact OS from Windows Setup
+
+-   Use an unattend.xml file with the setting: Microsoft-Windows-Setup\\ImageInstall\\OSImage\\[Compact](https://msdn.microsoft.com/library/windows/hardware/dn949267).
+
+#### To deploy Compact OS with a USB bootable drive
+
+For Windows 10, Version 1607 and earlier
+
+1.  On your technician PC, open Windows ICD and create your project.
+2.  Plug in a USB flash drive and note the drive letter (example: D:).
+3.  Click **Create** &gt; **Production Media** &gt; **WIM** &gt; **Enable OS File Compression: Yes** &gt; **Next** &gt; **USB Bootable drive** &gt; drive letter (D:) &gt; **Next** &gt; **Build**.
+4.  Boot the destination PC using the USB flash drive. Windows installs automatically.
+
+**Note**  When running Windows Imaging and Configuration Designer (ICD) on a PC running a previous version of Windows, such as Windows 8.1, you'll need to install the [Windows Assessment and Deployment Kit (ADK)](http://go.microsoft.com/fwlink/?LinkId=526803) with both the Windows ICD and **Deployment Tools** features. This installs the latest versions of the drivers required by DISM (wimmount.sys and adkwof.sys) used to create Compact OS images.
+
+#### To deploy Compact OS from an FFU image
+
+For Windows 10, Version 1607 and earlier
 
 1.  To deploy an FFU image as compressed, the original FFU image must be created as a compressed image.
 
@@ -61,11 +70,12 @@ Unlike WIMBoot, because the files are no longer combined into a single WIM file,
 
 2.  You can deploy the FFU image directly to a drive from Windows ICD or from Windows Preinstallation Environment (WinPE). To learn more, see [Deploy Windows using Full Flash Update (FFU)](deploy-windows-using-full-flash-update--ffu.md).
 
-**To deploy Compact OS from Windows Setup**
+**Note**  When running Windows Imaging and Configuration Designer (ICD) on a PC running a previous version of Windows, such as Windows 8.1, you'll need to install the [Windows Assessment and Deployment Kit (ADK)](http://go.microsoft.com/fwlink/?LinkId=526803) with both the Windows ICD and **Deployment Tools** features. This installs the latest versions of the drivers required by DISM (wimmount.sys and adkwof.sys) used to create Compact OS images.
 
--   Use an unattend.xml file with the setting: Microsoft-Windows-Setup\\ImageInstall\\OSImage\\[Compact](https://msdn.microsoft.com/library/windows/hardware/dn949267).
 
-**Command-line support** In the next release of Windows 10 and WinPE, you can query whether the operating system is running Compact OS, and change it at any time, using the [Compact.exe]( http://go.microsoft.com/fwlink/?LinkId=623487) command.
+#### Command-line support 
+
+You can query whether the operating system is running Compact OS, and change it at any time, using the [Compact.exe]( http://go.microsoft.com/fwlink/?LinkId=623487) command.
 
 **From Windows PE, determine if the OS is compacted:**
 

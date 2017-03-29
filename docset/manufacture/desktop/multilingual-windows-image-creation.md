@@ -1,5 +1,5 @@
 ---
-author: Justinha
+author: themar
 Description: Multilingual Windows Image Creation
 ms.assetid: 5bec65d1-44b0-484c-a5b6-959f221a4290
 MSHAttr: 'PreferredLib:/library/windows/hardware'
@@ -9,6 +9,8 @@ title: Multilingual Windows Image Creation
 # Multilingual Windows Image Creation
 
 
+This walkthrough describes how to use the Windows Assessment and Deployment Kit (Windows ADK) to create and deploy multilingual versions of Windows 10. It describes how to create a multilingual Windows image to help reduce the number of Windows images that need to be maintained for different regions. You can deploy images that are created by using this process from a network share, from a server, or from media.
+
 This walkthrough describes how to add language packs and other update packages to an offline Windows image and Windows recovery image. You then boot Windows to audit mode and add applications and drivers. You then capture the installation to an image and use the newly captured master image for testing purposes. After you test the image, you use it to create regional images by removing unnecessary language resources. You can then deploy these regional images.
 
 The process described in this walkthrough is primarily intended for OEMs who want to reduce the number of Windows images that they maintain. By adding language packs to an offline image, you can decrease Windows installation time and reduce the number of images that you maintain. However, because multiple language packs are added to a single image, the size of the Windows image is increased.
@@ -16,7 +18,7 @@ The process described in this walkthrough is primarily intended for OEMs who wan
 IT Professionals who want to reduce the size of their overall image should instead use the process described in [Add Multilingual Support to a Windows Distribution](add-multilingual-support-to-a-windows-distribution.md). This process describes how to copy the lp.cab file to the Windows distribution, reducing the overall image size.
 
 
-## <span id="Requirements"></span><span id="requirements"></span><span id="REQUIREMENTS"></span>Requirements
+## <span id="requirements"></span>Requirements
 
 
 To complete this walkthrough, you should have a working knowledge of common desktop deployment technologies and processes. You should also have a basic understanding of the Windows Imaging (.wim) file format. The steps in this guide assume that you use a single Windows image within the .wim file. If you want to reduce the number of images you maintain, you can use the lowest edition of Windows available in your .wim file, and then use DISM to upgrade to a higher edition of Windows. If you want to maintain multiple images, you can repeat the steps in this guide for each Windows image in the .wim file, to create multiple editions of the regional Windows image.
@@ -31,7 +33,9 @@ Before you begin, make sure you have the following items:
 
 -   A test computer that you can use to install and test Windows.
 
-## <span id="addlang"></span><span id="ADDLANG"></span>Step 1: Add language packs to a Windows image
+-   A USB drive that will be formatted during this walkthrough.
+
+## <span id="addlang"></span>Step 1: Add language packs to a Windows image
 
 
 In this step, you will use Deployment Image Servicing and Management (DISM) to add language packs to a Windows image. After you add language packs, you can add update packages. The Windows image that you start with can be in any language. For example, you can start with an English (en-US) image, and add support for French (fr-FR) and German (de-DE).
@@ -226,7 +230,7 @@ Always install language packs before you install updates. If you install an upda
     DISM /unmount-image /mountdir:C:\mount\windows /commit
     ```
 
-## <span id="optlang"></span><span id="OPTLANG"></span>Step 2 (optional): Add language packs to Windows Setup
+## <span id="optlang"></span>Step 2 (optional): Add language packs to Windows Setup
 
 
 In this step, you add multiple language support to Windows Setup. This allows an end user to run Windows Setup and select a specific language that you install. You add language packs to the default boot.wim file, and then copy language resources into your Windows distribution.
@@ -327,7 +331,7 @@ This step is optional. If you complete this step, you can run Windows Setup in a
     Dism /Unmount-image /MountDir:C:\mount\Windows /Discard
     ```
 
-## <span id="test"></span><span id="TEST"></span>Step 3: Test the Windows Installation
+## <span id="test"></span>Step 3: Test the Windows Installation
 
 
 In this step, you install Windows, selecting a language during Windows Setup, and verifying that multiple languages are installed.
@@ -335,6 +339,8 @@ In this step, you install Windows, selecting a language during Windows Setup, an
 To boot a computer without an operating system, you must create bootable Windows PE media. This walkthrough provides instructions on creating Windows PE on a bootable USB drive. For additional options, see [WinPE: Create USB Bootable drive](winpe-create-usb-bootable-drive.md).
 
 **To install Windows**
+
+**Note:** Beginning with Windows 10, Version 1703, you can create a USB drive that has multiple partitions. To format a USB key so it has one FAT32 and one NTFS partition, see [WinPE: Create USB Bootable drive](winpe-create-usb-bootable-drive.md).
 
 1.  Create a Windows PE image on your technician computer. For example:
 
@@ -356,11 +362,11 @@ To boot a computer without an operating system, you must create bootable Windows
     Makewinpemedia /ufd C:\winpe_amd64 F:
     ```
 
-    Where *F* is the drive letter of the USB drive.
+    Where *F* is the drive letter of the USB drive. If you have multiple partitions on the USB drive, choose the drive letter of the FAT32 partition. 
+    
+    Makewinpemedia will format the selected partition and copy WinPE to it.
 
-    Windows PE is copied to the USB drive.
-
-3.  Copy the contents of the Windows distribution to another USB drive that has sufficient free space. Depending on the size of your install.wim file, you might need to format the USB drive as NTFS to support files that are larger than 4 GB.
+3.  Copy the contents of the Windows distribution to a USB drive or partition that has sufficient free space. If your install.wim file is larger than 4GB, you'll need to use an NTFS-formatted partition. 
 
     For example,
 
@@ -368,7 +374,7 @@ To boot a computer without an operating system, you must create bootable Windows
     Xcopy C:\my_distribution G:\my_distribution /cherkyi
     ```
 
-    Where *G* is the letter of the second USB drive.
+    Where *G* is the letter of a second USB drive or the NTFS partition on your dual-partitioned USB drive.
 
 4.  Insert the Windows PE USB drive into your test computer. Boot the test computer, ensuring that the Windows PE USB drive is configured to boot first. You might need to change the boot options of the computer in the firmware.
 
@@ -395,7 +401,7 @@ To boot a computer without an operating system, you must create bootable Windows
 
     Windows Setup starts and you are prompted to select your language (French, German, or English). Select one of the languages and proceed with the installation. Verify that the correct language appears during installation.
 
-## <span id="bootaudit"></span><span id="BOOTAUDIT"></span> Step 4: Boot to audit mode, add applications and run sysprep
+## <span id="bootaudit"></span>Step 4: Boot to audit mode, add applications and run sysprep
 
 
 In this step, you install your Windows image on a test computer and boot it to audit mode. While the computer is running in audit mode, you add applications that must be installed online, and test the operating system. After applications are added and the computer is tested, you run the sysprep tool to prepare the image to be deployed to a computer that will ship to an end user.
@@ -424,7 +430,7 @@ In this step, you install your Windows image on a test computer and boot it to a
 
     After Sysprep is finished, the test computer shuts down.
 
-## <span id="imagex"></span><span id="IMAGEX"></span>Step 5: Capture the Windows installation
+## <span id="imagex"></span>Step 5: Capture the Windows installation
 
 
 In this step, you capture your Windows image from the test computer and store it for use as your master image.
@@ -460,7 +466,7 @@ In this step, you capture your Windows image from the test computer and store it
 
     Where *G* is the letter of the USB drive.
 
-## <span id="removepacks"></span><span id="REMOVEPACKS"></span>Step 6: Create regional images by removing language packs
+## <span id="removepacks"></span>Step 6: Create regional images by removing language packs
 
 
 In this step, you create a regional Windows image by removing language packs from your image while it is offline. This image contains only the languages that are necessary for deployment in a certain region.
@@ -552,10 +558,3 @@ You should not remove a language pack from an offline Windows image if there are
     ```
 
  
-
- 
-
-
-
-
-
