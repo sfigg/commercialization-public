@@ -31,294 +31,294 @@ The Policy configuration service provider enables the enterprise to configure po
   <tr>
     <td style="vertical-align:top"><a href="#activexcontrols-approvedinstallationsites">ActiveXControls/ApprovedInstallationSites</a></td>
     <td style="vertical-align:top">Approved Installation Sites for ActiveX Controls</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/ActiveX Installer Service</td>
     <td style="vertical-align:top">ApprovedActiveXInstallSites</td>
     <td style="vertical-align:top">ActiveXInstallService.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#appvirtualization-allowappvclient">AppVirtualization/AllowAppVClient</a></td>
     <td style="vertical-align:top">Virtual Component Process Allow List</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">System/App-V</td>
     <td style="vertical-align:top">Virtualization_JITVAllowList</td>
     <td style="vertical-align:top">appv.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#appvirtualization-allowdynamicvirtualization">AppVirtualization/AllowDynamicVirtualization</a></td>
     <td style="vertical-align:top">Virtual Component Process Allow List</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">System/App-V/Virtualization</td>
     <td style="vertical-align:top">Virtualization_JITVAllowList</td>
     <td style="vertical-align:top">appv.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#appvirtualization-allowpackagecleanup">AppVirtualization/AllowPackageCleanup</a></td>
     <td style="vertical-align:top">Virtual Component Process Allow List</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">System/App-V/Package Management</td>
     <td style="vertical-align:top">Virtualization_JITVAllowList</td>
     <td style="vertical-align:top">appv.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#appvirtualization-allowpackagescripts">AppVirtualization/AllowPackageScripts</a></td>
     <td style="vertical-align:top">Virtual Component Process Allow List</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">System/App-V/Scripting</td>
     <td style="vertical-align:top">Virtualization_JITVAllowList</td>
     <td style="vertical-align:top">appv.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#appvirtualization-allowpublishingrefreshux">AppVirtualization/AllowPublishingRefreshUX</a></td>
     <td style="vertical-align:top">Virtual Component Process Allow List</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">System/App-V/Publishing</td>
     <td style="vertical-align:top">Virtualization_JITVAllowList</td>
     <td style="vertical-align:top">appv.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#appvirtualization-allowreportingserver">AppVirtualization/AllowReportingServer</a></td>
     <td style="vertical-align:top">Virtual Component Process Allow List</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">System/App-V/Reporting</td>
     <td style="vertical-align:top">Virtualization_JITVAllowList</td>
     <td style="vertical-align:top">appv.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#appvirtualization-allowroamingfileexclusions">AppVirtualization/AllowRoamingFileExclusions</a></td>
     <td style="vertical-align:top">Virtual Component Process Allow List</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">System/App-V/Integration</td>
     <td style="vertical-align:top">Virtualization_JITVAllowList</td>
     <td style="vertical-align:top">appv.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#appvirtualization-allowroamingregistryexclusions">AppVirtualization/AllowRoamingRegistryExclusions</a></td>
     <td style="vertical-align:top">Virtual Component Process Allow List</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">System/App-V/Integration</td>
     <td style="vertical-align:top">Virtualization_JITVAllowList</td>
     <td style="vertical-align:top">appv.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#appvirtualization-allowstreamingautoload">AppVirtualization/AllowStreamingAutoload</a></td>
     <td style="vertical-align:top">Virtual Component Process Allow List</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">System/App-V/Streaming</td>
     <td style="vertical-align:top">Virtualization_JITVAllowList</td>
     <td style="vertical-align:top">appv.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#appvirtualization-clientcoexistenceallowmigrationmode">AppVirtualization/ClientCoexistenceAllowMigrationmode</a></td>
     <td style="vertical-align:top">Virtual Component Process Allow List</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">System/App-V/Client Coexistence</td>
     <td style="vertical-align:top">Virtualization_JITVAllowList</td>
     <td style="vertical-align:top">appv.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#appvirtualization-integrationallowrootglobal">AppVirtualization/IntegrationAllowRootGlobal</a></td>
     <td style="vertical-align:top">Virtual Component Process Allow List</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">System/App-V/Integration</td>
     <td style="vertical-align:top">Virtualization_JITVAllowList</td>
     <td style="vertical-align:top">appv.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#appvirtualization-integrationallowrootuser">AppVirtualization/IntegrationAllowRootUser</a></td>
     <td style="vertical-align:top">Virtual Component Process Allow List</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">System/App-V/Integration</td>
     <td style="vertical-align:top">Virtualization_JITVAllowList</td>
     <td style="vertical-align:top">appv.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#appvirtualization-publishingallowserver1">AppVirtualization/PublishingAllowServer1</a></td>
     <td style="vertical-align:top">Virtual Component Process Allow List</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">System/App-V/Publishing</td>
     <td style="vertical-align:top">Virtualization_JITVAllowList</td>
     <td style="vertical-align:top">appv.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#appvirtualization-publishingallowserver2">AppVirtualization/PublishingAllowServer2</a></td>
     <td style="vertical-align:top">Virtual Component Process Allow List</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">System/App-V/Publishing</td>
     <td style="vertical-align:top">Virtualization_JITVAllowList</td>
     <td style="vertical-align:top">appv.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#appvirtualization-publishingallowserver3">AppVirtualization/PublishingAllowServer3</a></td>
     <td style="vertical-align:top">Virtual Component Process Allow List</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">System/App-V/Publishing</td>
     <td style="vertical-align:top">Virtualization_JITVAllowList</td>
     <td style="vertical-align:top">appv.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#appvirtualization-publishingallowserver4">AppVirtualization/PublishingAllowServer4</a></td>
     <td style="vertical-align:top">Virtual Component Process Allow List</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">System/App-V/Publishing</td>
     <td style="vertical-align:top">Virtualization_JITVAllowList</td>
     <td style="vertical-align:top">appv.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#appvirtualization-publishingallowserver5">AppVirtualization/PublishingAllowServer5</a></td>
     <td style="vertical-align:top">Virtual Component Process Allow List</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">System/App-V/Publishing</td>
     <td style="vertical-align:top">Virtualization_JITVAllowList</td>
     <td style="vertical-align:top">appv.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#appvirtualization-streamingallowcertificatefilterforclient_ssl">AppVirtualization/StreamingAllowCertificateFilterForClient_SSL</a></td>
     <td style="vertical-align:top">Virtual Component Process Allow List</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">System/App-V/Streaming</td>
     <td style="vertical-align:top">Virtualization_JITVAllowList</td>
     <td style="vertical-align:top">appv.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#appvirtualization-streamingallowhighcostlaunch">AppVirtualization/StreamingAllowHighCostLaunch</a></td>
     <td style="vertical-align:top">Virtual Component Process Allow List</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">System/App-V/Streaming</td>
     <td style="vertical-align:top">Virtualization_JITVAllowList</td>
     <td style="vertical-align:top">appv.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#appvirtualization-streamingallowlocationprovider">AppVirtualization/StreamingAllowLocationProvider</a></td>
     <td style="vertical-align:top">Virtual Component Process Allow List</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">System/App-V/Streaming</td>
     <td style="vertical-align:top">Virtualization_JITVAllowList</td>
     <td style="vertical-align:top">appv.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#appvirtualization-streamingallowpackageinstallationroot">AppVirtualization/StreamingAllowPackageInstallationRoot</a></td>
     <td style="vertical-align:top">Virtual Component Process Allow List</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">System/App-V/Streaming</td>
     <td style="vertical-align:top">Virtualization_JITVAllowList</td>
     <td style="vertical-align:top">appv.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#appvirtualization-streamingallowpackagesourceroot">AppVirtualization/StreamingAllowPackageSourceRoot</a></td>
     <td style="vertical-align:top">Virtual Component Process Allow List</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">System/App-V/Streaming</td>
     <td style="vertical-align:top">Virtualization_JITVAllowList</td>
     <td style="vertical-align:top">appv.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#appvirtualization-streamingallowreestablishmentinterval">AppVirtualization/StreamingAllowReestablishmentInterval</a></td>
     <td style="vertical-align:top">Virtual Component Process Allow List</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">System/App-V/Streaming</td>
     <td style="vertical-align:top">Virtualization_JITVAllowList</td>
     <td style="vertical-align:top">appv.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#appvirtualization-streamingallowreestablishmentretries">AppVirtualization/StreamingAllowReestablishmentRetries</a></td>
     <td style="vertical-align:top">Virtual Component Process Allow List</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">System/App-V/Streaming</td>
     <td style="vertical-align:top">Virtualization_JITVAllowList</td>
     <td style="vertical-align:top">appv.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#appvirtualization-streamingsharedcontentstoremode">AppVirtualization/StreamingSharedContentStoreMode</a></td>
     <td style="vertical-align:top">Virtual Component Process Allow List</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">System/App-V/Streaming</td>
     <td style="vertical-align:top">Virtualization_JITVAllowList</td>
     <td style="vertical-align:top">appv.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#appvirtualization-streamingsupportbranchcache">AppVirtualization/StreamingSupportBranchCache</a></td>
     <td style="vertical-align:top">Virtual Component Process Allow List</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">System/App-V/Streaming</td>
     <td style="vertical-align:top">Virtualization_JITVAllowList</td>
     <td style="vertical-align:top">appv.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#appvirtualization-streamingverifycertificaterevocationlist">AppVirtualization/StreamingVerifyCertificateRevocationList</a></td>
     <td style="vertical-align:top">Virtual Component Process Allow List</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">System/App-V/Streaming</td>
     <td style="vertical-align:top">Virtualization_JITVAllowList</td>
     <td style="vertical-align:top">appv.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#appvirtualization-virtualcomponentsallowlist">AppVirtualization/VirtualComponentsAllowList</a></td>
     <td style="vertical-align:top">Virtual Component Process Allow List</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">System/App-V/Virtualization</td>
     <td style="vertical-align:top">Virtualization_JITVAllowList</td>
     <td style="vertical-align:top">appv.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#attachmentmanager-donotpreservezoneinformation">AttachmentManager/DoNotPreserveZoneInformation</a></td>
     <td style="vertical-align:top">Notify antivirus programs when opening attachments</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Attachment Manager</td>
     <td style="vertical-align:top">AM_CallIOfficeAntiVirus</td>
     <td style="vertical-align:top">AttachmentManager.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#attachmentmanager-hidezoneinfomechanism">AttachmentManager/HideZoneInfoMechanism</a></td>
     <td style="vertical-align:top">Notify antivirus programs when opening attachments</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Attachment Manager</td>
     <td style="vertical-align:top">AM_CallIOfficeAntiVirus</td>
     <td style="vertical-align:top">AttachmentManager.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#attachmentmanager-notifyantivirusprograms">AttachmentManager/NotifyAntivirusPrograms</a></td>
     <td style="vertical-align:top">Notify antivirus programs when opening attachments</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Attachment Manager</td>
     <td style="vertical-align:top">AM_CallIOfficeAntiVirus</td>
     <td style="vertical-align:top">AttachmentManager.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#autoplay-disallowautoplayfornonvolumedevices">Autoplay/DisallowAutoplayForNonVolumeDevices</a></td>
     <td style="vertical-align:top">Turn off Autoplay</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/AutoPlay Policies</td>
     <td style="vertical-align:top">Autorun</td>
     <td style="vertical-align:top">AutoPlay.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#autoplay-setdefaultautorunbehavior">Autoplay/SetDefaultAutoRunBehavior</a></td>
     <td style="vertical-align:top">Turn off Autoplay</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/AutoPlay Policies</td>
     <td style="vertical-align:top">Autorun</td>
     <td style="vertical-align:top">AutoPlay.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#autoplay-turnoffautoplay">Autoplay/TurnOffAutoPlay</a></td>
     <td style="vertical-align:top">Turn off Autoplay</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/AutoPlay Policies</td>
     <td style="vertical-align:top">Autorun</td>
     <td style="vertical-align:top">AutoPlay.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#connectivity-hardeneduncpaths">Connectivity/HardenedUNCPaths</a></td>
     <td style="vertical-align:top">Hardened UNC Paths</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Network/Network Provider</td>
     <td style="vertical-align:top">Pol_HardenedPaths</td>
     <td style="vertical-align:top">networkprovider.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#credentialproviders-allowpinlogon">CredentialProviders/AllowPINLogon</a></td>
     <td style="vertical-align:top">Turn on convenience PIN sign-in</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">System/Logon</td>
     <td style="vertical-align:top">AllowDomainPINLogon</td>
     <td style="vertical-align:top">credentialproviders.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#credentialproviders-blockpicturepassword">CredentialProviders/BlockPicturePassword</a></td>
     <td style="vertical-align:top">Turn on convenience PIN sign-in</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">System/Logon</td>
     <td style="vertical-align:top">AllowDomainPINLogon</td>
     <td style="vertical-align:top">credentialproviders.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#credentialsui-disablepasswordreveal">CredentialsUI/DisablePasswordReveal</a></td>
     <td style="vertical-align:top">Enumerate administrator accounts on elevation</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Credential User Interface</td>
     <td style="vertical-align:top">EnumerateAdministrators</td>
     <td style="vertical-align:top">credui.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#credentialsui-enumerateadministrators">CredentialsUI/EnumerateAdministrators</a></td>
     <td style="vertical-align:top">Enumerate administrator accounts on elevation</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Credential User Interface</td>
     <td style="vertical-align:top">EnumerateAdministrators</td>
     <td style="vertical-align:top">credui.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#datausage-setcost3g">DataUsage/SetCost3G</a></td>
     <td style="vertical-align:top">Set 4G Cost</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Network/WWAN Service/WWAN Media Cost</td>
     <td style="vertical-align:top">SetCost4G</td>
     <td style="vertical-align:top">wwansvc.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#datausage-setcost4g">DataUsage/SetCost4G</a></td>
     <td style="vertical-align:top">Set 4G Cost</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Network/WWAN Service/WWAN Media Cost</td>
     <td style="vertical-align:top">SetCost4G</td>
     <td style="vertical-align:top">wwansvc.admx</td>
   </tr>
@@ -332,14 +332,14 @@ The Policy configuration service provider enables the enterprise to configure po
   <tr>
     <td style="vertical-align:top"><a href="#deviceinstallation-preventinstallationofmatchingdeviceids">DeviceInstallation/PreventInstallationOfMatchingDeviceIDs</a></td>
     <td style="vertical-align:top">Prevent installation of devices using drivers that match these device setup classes</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">System/Device Installation/Device Installation Restrictions</td>
     <td style="vertical-align:top">DeviceInstall_Classes_Deny</td>
     <td style="vertical-align:top">deviceinstallation.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#deviceinstallation-preventinstallationofmatchingdevicesetupclasses">DeviceInstallation/PreventInstallationOfMatchingDeviceSetupClasses</a></td>
     <td style="vertical-align:top">Prevent installation of devices using drivers that match these device setup classes</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">System/Device Installation/Device Installation Restrictions</td>
     <td style="vertical-align:top">DeviceInstall_Classes_Deny</td>
     <td style="vertical-align:top">deviceinstallation.admx</td>
   </tr>
@@ -352,1317 +352,1312 @@ The Policy configuration service provider enables the enterprise to configure po
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#errorreporting-customizeconsentsettings">ErrorReporting/CustomizeConsentSettings</a></td>
-    <td style="vertical-align:top">&nbsp;</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Customize consent settings</td>
+    <td style="vertical-align:top">Windows Components/Windows Error Reporting/Consent</td>
     <td style="vertical-align:top">WerConsentCustomize_2</td>
     <td style="vertical-align:top">ErrorReporting.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#errorreporting-disablewindowserrorreporting">ErrorReporting/DisableWindowsErrorReporting</a></td>
-    <td style="vertical-align:top">&nbsp;</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Disable Windows Error Reporting</td>
+    <td style="vertical-align:top">Windows Components/Windows Error Reporting</td>
     <td style="vertical-align:top">WerConsentCustomize_2</td>
     <td style="vertical-align:top">ErrorReporting.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#errorreporting-displayerrornotification">ErrorReporting/DisplayErrorNotification</a></td>
-    <td style="vertical-align:top">&nbsp;</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Display Error Notification</td>
+    <td style="vertical-align:top">Windows Components/Windows Error Reporting</td>
     <td style="vertical-align:top">WerConsentCustomize_2</td>
     <td style="vertical-align:top">ErrorReporting.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#errorreporting-donotsendadditionaldata">ErrorReporting/DoNotSendAdditionalData</a></td>
-    <td style="vertical-align:top">&nbsp;</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Do not send additional data</td>
+    <td style="vertical-align:top">Windows Components/Windows Error Reporting</td>
     <td style="vertical-align:top">WerConsentCustomize_2</td>
     <td style="vertical-align:top">ErrorReporting.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#errorreporting-preventcriticalerrordisplay">ErrorReporting/PreventCriticalErrorDisplay</a></td>
-    <td style="vertical-align:top">&nbsp;</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Prevent display of the user interface for critical errors</td>
+    <td style="vertical-align:top">Windows Components/Windows Error Reporting</td>
     <td style="vertical-align:top">WerConsentCustomize_2</td>
     <td style="vertical-align:top">ErrorReporting.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#eventlogservice-controleventlogbehavior">EventLogService/ControlEventLogBehavior</a></td>
-    <td style="vertical-align:top">&nbsp;</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Control Event Log behavior when the log file reaches its maximum size</td>
+    <td style="vertical-align:top">Windows Components/Event Log Service/Application</td>
     <td style="vertical-align:top">Channel_LogMaxSize_4</td>
     <td style="vertical-align:top">eventlog.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#eventlogservice-specifymaximumfilesizeapplicationlog">EventLogService/SpecifyMaximumFileSizeApplicationLog</a></td>
-    <td style="vertical-align:top">&nbsp;</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Specify the maximum log file size (KB)</td>
+    <td style="vertical-align:top">Windows Components/Event Log Service/Application</td>
     <td style="vertical-align:top">Channel_LogMaxSize_4</td>
     <td style="vertical-align:top">eventlog.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#eventlogservice-specifymaximumfilesizesecuritylog">EventLogService/SpecifyMaximumFileSizeSecurityLog</a></td>
-    <td style="vertical-align:top">&nbsp;</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Specify the maximum log file size (KB)</td>
+    <td style="vertical-align:top">Windows Components/Event Log Service/Security</td>
     <td style="vertical-align:top">Channel_LogMaxSize_4</td>
     <td style="vertical-align:top">eventlog.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#eventlogservice-specifymaximumfilesizesystemlog">EventLogService/SpecifyMaximumFileSizeSystemLog</a></td>
-    <td style="vertical-align:top">&nbsp;</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Specify the maximum log file size (KB)</td>
+    <td style="vertical-align:top">Windows Components/Event Log Service/System</td>
     <td style="vertical-align:top">Channel_LogMaxSize_4</td>
     <td style="vertical-align:top">eventlog.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-addsearchprovider">InternetExplorer/AddSearchProvider</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-allowactivexfiltering">InternetExplorer/AllowActiveXFiltering</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-allowaddonlist">InternetExplorer/AllowAddOnList</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer/Security Features/Add-on Management</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-allowenhancedprotectedmode">InternetExplorer/AllowEnhancedProtectedMode</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Advanced Page</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-allowenterprisemodefromtoolsmenu">InternetExplorer/AllowEnterpriseModeFromToolsMenu</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-allowenterprisemodesitelist">InternetExplorer/AllowEnterpriseModeSiteList</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-allowinternetexplorer7policylist ">InternetExplorer/AllowInternetExplorer7PolicyList </a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-allowinternetexplorerstandardsmode">InternetExplorer/AllowInternetExplorerStandardsMode</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer/Compatibility View</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-allowinternetzonetemplate">InternetExplorer/AllowInternetZoneTemplate</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-allowintranetzonetemplate">InternetExplorer/AllowIntranetZoneTemplate</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-allowlocalmachinezonetemplate">InternetExplorer/AllowLocalMachineZoneTemplate</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-allowlockeddowninternetzonetemplate">InternetExplorer/AllowLockedDownInternetZoneTemplate</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-allowlockeddownintranetzonetemplate">InternetExplorer/AllowLockedDownIntranetZoneTemplate</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-allowlockeddownlocalmachinezonetemplate">InternetExplorer/AllowLockedDownLocalMachineZoneTemplate</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-allowlockeddownrestrictedsiteszonetemplate">InternetExplorer/AllowLockedDownRestrictedSitesZoneTemplate</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-allowonewordentry">InternetExplorer/AllowOneWordEntry</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer/Internet Settings/Advanced settings/Browsing</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-allowsitetozoneassignmentlist">InternetExplorer/AllowSiteToZoneAssignmentList</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-allowsuggestedsites">InternetExplorer/AllowSuggestedSites</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-allowtrustedsiteszonetemplate">InternetExplorer/AllowTrustedSitesZoneTemplate</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-allowslockeddowntrustedsiteszonetemplate">InternetExplorer/AllowsLockedDownTrustedSitesZoneTemplate</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-allowsrestrictedsiteszonetemplate">InternetExplorer/AllowsRestrictedSitesZoneTemplate</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-disableadobeflash">InternetExplorer/DisableAdobeFlash</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer/Security Features/Add-on Management</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-disablebypassofsmartscreenwarnings">InternetExplorer/DisableBypassOfSmartScreenWarnings</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-disablebypassofsmartscreenwarningsaboutuncommonfiles">InternetExplorer/DisableBypassOfSmartScreenWarningsAboutUncommonFiles</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-disablecustomerexperienceimprovementprogramparticipation">InternetExplorer/DisableCustomerExperienceImprovementProgramParticipation</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-disableenclosuredownloading">InternetExplorer/DisableEnclosureDownloading</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/RSS Feeds</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-disableencryptionsupport">InternetExplorer/DisableEncryptionSupport</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Advanced Page</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-disablefirstrunwizard">InternetExplorer/DisableFirstRunWizard</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-disableflipaheadfeature">InternetExplorer/DisableFlipAheadFeature</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Advanced Page</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-disablehomepagechange">InternetExplorer/DisableHomePageChange</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-disableproxychange">InternetExplorer/DisableProxyChange</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-disablesearchproviderchange">InternetExplorer/DisableSearchProviderChange</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-disablesecondaryhomepagechange">InternetExplorer/DisableSecondaryHomePageChange</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-disableupdatecheck">InternetExplorer/DisableUpdateCheck</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-donotallowuserstoaddsites">InternetExplorer/DoNotAllowUsersToAddSites</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-donotallowuserstochangepolicies">InternetExplorer/DoNotAllowUsersToChangePolicies</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-donotblockoutdatedactivexcontrols">InternetExplorer/DoNotBlockOutdatedActiveXControls</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer/Security Features/Add-on Management</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-donotblockoutdatedactivexcontrolsonspecificdomains">InternetExplorer/DoNotBlockOutdatedActiveXControlsOnSpecificDomains</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer/Security Features/Add-on Management</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-includealllocalsites">InternetExplorer/IncludeAllLocalSites</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-includeallnetworkpaths">InternetExplorer/IncludeAllNetworkPaths</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-internetzoneallowaccesstodatasources">InternetExplorer/InternetZoneAllowAccessToDataSources</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-internetzoneallowautomaticpromptingforactivexcontrols">InternetExplorer/InternetZoneAllowAutomaticPromptingForActiveXControls</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-internetzoneallowautomaticpromptingforfiledownloads">InternetExplorer/InternetZoneAllowAutomaticPromptingForFileDownloads</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-internetzoneallowfontdownloads">InternetExplorer/InternetZoneAllowFontDownloads</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-internetzoneallowlessprivilegedsites">InternetExplorer/InternetZoneAllowLessPrivilegedSites</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-internetzoneallownetframeworkreliantcomponents">InternetExplorer/InternetZoneAllowNETFrameworkReliantComponents</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-internetzoneallowscriptlets">InternetExplorer/InternetZoneAllowScriptlets</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-internetzoneallowsmartscreenie">InternetExplorer/InternetZoneAllowSmartScreenIE</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-internetzoneallowuserdatapersistence">InternetExplorer/InternetZoneAllowUserDataPersistence</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-internetzoneinitializeandscriptactivexcontrols">InternetExplorer/InternetZoneInitializeAndScriptActiveXControls</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-internetzonenavigatewindowsandframes">InternetExplorer/InternetZoneNavigateWindowsAndFrames</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-intranetzoneallowaccesstodatasources">InternetExplorer/IntranetZoneAllowAccessToDataSources</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Intranet Zone</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-intranetzoneallowautomaticpromptingforactivexcontrols">InternetExplorer/IntranetZoneAllowAutomaticPromptingForActiveXControls</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Intranet Zone</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-intranetzoneallowautomaticpromptingforfiledownloads">InternetExplorer/IntranetZoneAllowAutomaticPromptingForFileDownloads</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Intranet Zone</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-intranetzoneallowfontdownloads">InternetExplorer/IntranetZoneAllowFontDownloads</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Intranet Zone</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-intranetzoneallowlessprivilegedsites">InternetExplorer/IntranetZoneAllowLessPrivilegedSites</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Intranet Zone</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-intranetzoneallownetframeworkreliantcomponents">InternetExplorer/IntranetZoneAllowNETFrameworkReliantComponents</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Intranet Zone</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-intranetzoneallowscriptlets">InternetExplorer/IntranetZoneAllowScriptlets</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Intranet Zone</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-intranetzoneallowsmartscreenie">InternetExplorer/IntranetZoneAllowSmartScreenIE</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Intranet Zone</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-intranetzoneallowuserdatapersistence">InternetExplorer/IntranetZoneAllowUserDataPersistence</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Intranet Zone</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-intranetzoneinitializeandscriptactivexcontrols">InternetExplorer/IntranetZoneInitializeAndScriptActiveXControls</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Intranet Zone</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-intranetzonenavigatewindowsandframes">InternetExplorer/IntranetZoneNavigateWindowsAndFrames</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Intranet Zone</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-localmachinezoneallowaccesstodatasources">InternetExplorer/LocalMachineZoneAllowAccessToDataSources</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Local Machine Zone</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-localmachinezoneallowautomaticpromptingforactivexcontrols">InternetExplorer/LocalMachineZoneAllowAutomaticPromptingForActiveXControls</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Local Machine Zone</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-localmachinezoneallowautomaticpromptingforfiledownloads">InternetExplorer/LocalMachineZoneAllowAutomaticPromptingForFileDownloads</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Local Machine Zone</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-localmachinezoneallowfontdownloads">InternetExplorer/LocalMachineZoneAllowFontDownloads</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Local Machine Zone</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-localmachinezoneallowlessprivilegedsites">InternetExplorer/LocalMachineZoneAllowLessPrivilegedSites</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Local Machine Zone</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-localmachinezoneallownetframeworkreliantcomponents">InternetExplorer/LocalMachineZoneAllowNETFrameworkReliantComponents</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Local Machine Zone</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-localmachinezoneallowscriptlets">InternetExplorer/LocalMachineZoneAllowScriptlets</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Local Machine Zone</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-localmachinezoneallowsmartscreenie">InternetExplorer/LocalMachineZoneAllowSmartScreenIE</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Local Machine Zone</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-localmachinezoneallowuserdatapersistence">InternetExplorer/LocalMachineZoneAllowUserDataPersistence</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Local Machine Zone</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-localmachinezoneinitializeandscriptactivexcontrols">InternetExplorer/LocalMachineZoneInitializeAndScriptActiveXControls</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Local Machine Zone</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-localmachinezonenavigatewindowsandframes">InternetExplorer/LocalMachineZoneNavigateWindowsAndFrames</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Local Machine Zone</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-lockeddowninternetzoneallowaccesstodatasources">InternetExplorer/LockedDownInternetZoneAllowAccessToDataSources</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Internet Zone</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-lockeddowninternetzoneallowautomaticpromptingforactivexcontrols">InternetExplorer/LockedDownInternetZoneAllowAutomaticPromptingForActiveXControls</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Internet Zone</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-lockeddowninternetzoneallowautomaticpromptingforfiledownloads">InternetExplorer/LockedDownInternetZoneAllowAutomaticPromptingForFileDownloads</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Internet Zone</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-lockeddowninternetzoneallowfontdownloads">InternetExplorer/LockedDownInternetZoneAllowFontDownloads</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Internet Zone</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-lockeddowninternetzoneallowlessprivilegedsites">InternetExplorer/LockedDownInternetZoneAllowLessPrivilegedSites</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Internet Zone</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-lockeddowninternetzoneallownetframeworkreliantcomponents">InternetExplorer/LockedDownInternetZoneAllowNETFrameworkReliantComponents</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Internet Zone</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-lockeddowninternetzoneallowscriptlets">InternetExplorer/LockedDownInternetZoneAllowScriptlets</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Internet Zone</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-lockeddowninternetzoneallowsmartscreenie">InternetExplorer/LockedDownInternetZoneAllowSmartScreenIE</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Internet Zone</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-lockeddowninternetzoneallowuserdatapersistence">InternetExplorer/LockedDownInternetZoneAllowUserDataPersistence</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Internet Zone</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-lockeddowninternetzoneinitializeandscriptactivexcontrols">InternetExplorer/LockedDownInternetZoneInitializeAndScriptActiveXControls</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Internet Zone</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-lockeddowninternetzonenavigatewindowsandframes">InternetExplorer/LockedDownInternetZoneNavigateWindowsAndFrames</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Internet Zone</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-lockeddownintranetzoneallowaccesstodatasources">InternetExplorer/LockedDownIntranetZoneAllowAccessToDataSources</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Intranet Zone</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-lockeddownintranetzoneallowautomaticpromptingforactivexcontrols">InternetExplorer/LockedDownIntranetZoneAllowAutomaticPromptingForActiveXControls</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Intranet Zone</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-lockeddownintranetzoneallowautomaticpromptingforfiledownloads">InternetExplorer/LockedDownIntranetZoneAllowAutomaticPromptingForFileDownloads</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Intranet Zone</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-lockeddownintranetzoneallowfontdownloads">InternetExplorer/LockedDownIntranetZoneAllowFontDownloads</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Intranet Zone</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-lockeddownintranetzoneallowlessprivilegedsites">InternetExplorer/LockedDownIntranetZoneAllowLessPrivilegedSites</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Intranet Zone</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-lockeddownintranetzoneallownetframeworkreliantcomponents">InternetExplorer/LockedDownIntranetZoneAllowNETFrameworkReliantComponents</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Intranet Zone</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-lockeddownintranetzoneallowscriptlets">InternetExplorer/LockedDownIntranetZoneAllowScriptlets</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Intranet Zone</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-lockeddownintranetzoneallowsmartscreenie">InternetExplorer/LockedDownIntranetZoneAllowSmartScreenIE</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Intranet Zone</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-lockeddownintranetzoneallowuserdatapersistence">InternetExplorer/LockedDownIntranetZoneAllowUserDataPersistence</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Intranet Zone</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-lockeddownintranetzoneinitializeandscriptactivexcontrols">InternetExplorer/LockedDownIntranetZoneInitializeAndScriptActiveXControls</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Intranet Zone</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-lockeddownintranetzonenavigatewindowsandframes">InternetExplorer/LockedDownIntranetZoneNavigateWindowsAndFrames</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Intranet Zone</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-lockeddownlocalmachinezoneallowaccesstodatasources">InternetExplorer/LockedDownLocalMachineZoneAllowAccessToDataSources</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Local Machine Zone</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-lockeddownlocalmachinezoneallowautomaticpromptingforactivexcontrols">InternetExplorer/LockedDownLocalMachineZoneAllowAutomaticPromptingForActiveXControls</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Local Machine Zone</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-lockeddownlocalmachinezoneallowautomaticpromptingforfiledownloads">InternetExplorer/LockedDownLocalMachineZoneAllowAutomaticPromptingForFileDownloads</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Local Machine Zone</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-lockeddownlocalmachinezoneallowfontdownloads">InternetExplorer/LockedDownLocalMachineZoneAllowFontDownloads</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Local Machine Zone</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-lockeddownlocalmachinezoneallowlessprivilegedsites">InternetExplorer/LockedDownLocalMachineZoneAllowLessPrivilegedSites</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Local Machine Zone</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-lockeddownlocalmachinezoneallownetframeworkreliantcomponents">InternetExplorer/LockedDownLocalMachineZoneAllowNETFrameworkReliantComponents</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Local Machine Zone</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-lockeddownlocalmachinezoneallowscriptlets">InternetExplorer/LockedDownLocalMachineZoneAllowScriptlets</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Local Machine Zone</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-lockeddownlocalmachinezoneallowsmartscreenie">InternetExplorer/LockedDownLocalMachineZoneAllowSmartScreenIE</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Local Machine Zone</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-lockeddownlocalmachinezoneallowuserdatapersistence">InternetExplorer/LockedDownLocalMachineZoneAllowUserDataPersistence</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Local Machine Zone</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-lockeddownlocalmachinezoneinitializeandscriptactivexcontrols">InternetExplorer/LockedDownLocalMachineZoneInitializeAndScriptActiveXControls</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Local Machine Zone</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-lockeddownlocalmachinezonenavigatewindowsandframes">InternetExplorer/LockedDownLocalMachineZoneNavigateWindowsAndFrames</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Local Machine Zone</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-lockeddownrestrictedsiteszoneallowaccesstodatasources">InternetExplorer/LockedDownRestrictedSitesZoneAllowAccessToDataSources</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Restricted Sites Zone</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-lockeddownrestrictedsiteszoneallowautomaticpromptingforactivexcontrols">InternetExplorer/LockedDownRestrictedSitesZoneAllowAutomaticPromptingForActiveXControls</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Restricted Sites Zone</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-lockeddownrestrictedsiteszoneallowautomaticpromptingforfiledownloads">InternetExplorer/LockedDownRestrictedSitesZoneAllowAutomaticPromptingForFileDownloads</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Restricted Sites Zone</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-lockeddownrestrictedsiteszoneallowfontdownloads">InternetExplorer/LockedDownRestrictedSitesZoneAllowFontDownloads</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Restricted Sites Zone</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-lockeddownrestrictedsiteszoneallowlessprivilegedsites">InternetExplorer/LockedDownRestrictedSitesZoneAllowLessPrivilegedSites</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Restricted Sites Zone</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-lockeddownrestrictedsiteszoneallownetframeworkreliantcomponents">InternetExplorer/LockedDownRestrictedSitesZoneAllowNETFrameworkReliantComponents</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Restricted Sites Zone</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-lockeddownrestrictedsiteszoneallowscriptlets">InternetExplorer/LockedDownRestrictedSitesZoneAllowScriptlets</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Restricted Sites Zone</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-lockeddownrestrictedsiteszoneallowsmartscreenie">InternetExplorer/LockedDownRestrictedSitesZoneAllowSmartScreenIE</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Restricted Sites Zone</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-lockeddownrestrictedsiteszoneallowuserdatapersistence">InternetExplorer/LockedDownRestrictedSitesZoneAllowUserDataPersistence</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Restricted Sites Zone</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-lockeddownrestrictedsiteszoneinitializeandscriptactivexcontrols">InternetExplorer/LockedDownRestrictedSitesZoneInitializeAndScriptActiveXControls</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Restricted Sites Zone</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-lockeddownrestrictedsiteszonenavigatewindowsandframes">InternetExplorer/LockedDownRestrictedSitesZoneNavigateWindowsAndFrames</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Restricted Sites Zone</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-lockeddowntrustedsiteszoneallowaccesstodatasources">InternetExplorer/LockedDownTrustedSitesZoneAllowAccessToDataSources</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Trusted Sites Zone</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-lockeddowntrustedsiteszoneallowautomaticpromptingforactivexcontrols">InternetExplorer/LockedDownTrustedSitesZoneAllowAutomaticPromptingForActiveXControls</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Trusted Sites Zone</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-lockeddowntrustedsiteszoneallowautomaticpromptingforfiledownloads">InternetExplorer/LockedDownTrustedSitesZoneAllowAutomaticPromptingForFileDownloads</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Trusted Sites Zone</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-lockeddowntrustedsiteszoneallowfontdownloads">InternetExplorer/LockedDownTrustedSitesZoneAllowFontDownloads</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Trusted Sites Zone</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-lockeddowntrustedsiteszoneallowlessprivilegedsites">InternetExplorer/LockedDownTrustedSitesZoneAllowLessPrivilegedSites</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Trusted Sites Zone</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-lockeddowntrustedsiteszoneallownetframeworkreliantcomponents">InternetExplorer/LockedDownTrustedSitesZoneAllowNETFrameworkReliantComponents</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Trusted Sites Zone</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-lockeddowntrustedsiteszoneallowscriptlets">InternetExplorer/LockedDownTrustedSitesZoneAllowScriptlets</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Trusted Sites Zone</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-lockeddowntrustedsiteszoneallowsmartscreenie">InternetExplorer/LockedDownTrustedSitesZoneAllowSmartScreenIE</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Trusted Sites Zone</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-lockeddowntrustedsiteszoneallowuserdatapersistence">InternetExplorer/LockedDownTrustedSitesZoneAllowUserDataPersistence</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Trusted Sites Zone</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-lockeddowntrustedsiteszoneinitializeandscriptactivexcontrols">InternetExplorer/LockedDownTrustedSitesZoneInitializeAndScriptActiveXControls</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Trusted Sites Zone</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-lockeddowntrustedsiteszonenavigatewindowsandframes">InternetExplorer/LockedDownTrustedSitesZoneNavigateWindowsAndFrames</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Trusted Sites Zone</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-restrictedsiteszoneallowaccesstodatasources">InternetExplorer/RestrictedSitesZoneAllowAccessToDataSources</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-restrictedsiteszoneallowautomaticpromptingforactivexcontrols">InternetExplorer/RestrictedSitesZoneAllowAutomaticPromptingForActiveXControls</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-restrictedsiteszoneallowautomaticpromptingforfiledownloads">InternetExplorer/RestrictedSitesZoneAllowAutomaticPromptingForFileDownloads</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-restrictedsiteszoneallowfontdownloads">InternetExplorer/RestrictedSitesZoneAllowFontDownloads</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-restrictedsiteszoneallowlessprivilegedsites">InternetExplorer/RestrictedSitesZoneAllowLessPrivilegedSites</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-restrictedsiteszoneallownetframeworkreliantcomponents">InternetExplorer/RestrictedSitesZoneAllowNETFrameworkReliantComponents</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-restrictedsiteszoneallowscriptlets">InternetExplorer/RestrictedSitesZoneAllowScriptlets</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-restrictedsiteszoneallowsmartscreenie">InternetExplorer/RestrictedSitesZoneAllowSmartScreenIE</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-restrictedsiteszoneallowuserdatapersistence">InternetExplorer/RestrictedSitesZoneAllowUserDataPersistence</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-restrictedsiteszoneinitializeandscriptactivexcontrols">InternetExplorer/RestrictedSitesZoneInitializeAndScriptActiveXControls</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-restrictedsiteszonenavigatewindowsandframes">InternetExplorer/RestrictedSitesZoneNavigateWindowsAndFrames</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-searchproviderlist">InternetExplorer/SearchProviderList</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-trustedsiteszoneallowaccesstodatasources">InternetExplorer/TrustedSitesZoneAllowAccessToDataSources</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Trusted Sites Zone</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-trustedsiteszoneallowautomaticpromptingforactivexcontrols">InternetExplorer/TrustedSitesZoneAllowAutomaticPromptingForActiveXControls</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Trusted Sites Zone</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-trustedsiteszoneallowautomaticpromptingforfiledownloads">InternetExplorer/TrustedSitesZoneAllowAutomaticPromptingForFileDownloads</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Trusted Sites Zone</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-trustedsiteszoneallowfontdownloads">InternetExplorer/TrustedSitesZoneAllowFontDownloads</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Trusted Sites Zone</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-trustedsiteszoneallowlessprivilegedsites">InternetExplorer/TrustedSitesZoneAllowLessPrivilegedSites</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Trusted Sites Zone</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-trustedsiteszoneallownetframeworkreliantcomponents">InternetExplorer/TrustedSitesZoneAllowNETFrameworkReliantComponents</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Trusted Sites Zone</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-trustedsiteszoneallowscriptlets">InternetExplorer/TrustedSitesZoneAllowScriptlets</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Trusted Sites Zone</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-trustedsiteszoneallowsmartscreenie">InternetExplorer/TrustedSitesZoneAllowSmartScreenIE</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Trusted Sites Zone</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-trustedsiteszoneallowuserdatapersistence">InternetExplorer/TrustedSitesZoneAllowUserDataPersistence</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Trusted Sites Zone</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-trustedsiteszoneinitializeandscriptactivexcontrols">InternetExplorer/TrustedSitesZoneInitializeAndScriptActiveXControls</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Trusted Sites Zone</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#internetexplorer-trustedsiteszonenavigatewindowsandframes">InternetExplorer/TrustedSitesZoneNavigateWindowsAndFrames</a></td>
     <td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Trusted Sites Zone</td>
     <td style="vertical-align:top">EnterpriseModeEnable</td>
     <td style="vertical-align:top">inetres.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#kerberos-allowforestsearchorder">Kerberos/AllowForestSearchOrder</a></td>
     <td style="vertical-align:top">&nbsp;</td>
-    <td style="vertical-align:top">&nbsp;</td>
     <td style="vertical-align:top">ForestSearch</td>
     <td style="vertical-align:top">Kerberos.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#kerberos-kerberosclientsupportsclaimscompoundarmor">Kerberos/KerberosClientSupportsClaimsCompoundArmor</a></td>
-    <td style="vertical-align:top">&nbsp;</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Kerberos client support for claims, compound authentication and Kerberos armoring</td>
+    <td style="vertical-align:top">System/Kerberos</td>
     <td style="vertical-align:top">ForestSearch</td>
     <td style="vertical-align:top">Kerberos.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#kerberos-requirekerberosarmoring">Kerberos/RequireKerberosArmoring</a></td>
-    <td style="vertical-align:top">&nbsp;</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Fail authentication requests when Kerberos armoring is not available</td>
+    <td style="vertical-align:top">System/Kerberos</td>
     <td style="vertical-align:top">ForestSearch</td>
     <td style="vertical-align:top">Kerberos.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#kerberos-requirestrictkdcvalidation">Kerberos/RequireStrictKDCValidation</a></td>
-    <td style="vertical-align:top">&nbsp;</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Require strict KDC validation</td>
+    <td style="vertical-align:top">System/Kerberos</td>
     <td style="vertical-align:top">ForestSearch</td>
     <td style="vertical-align:top">Kerberos.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#kerberos-setmaximumcontexttokensize">Kerberos/SetMaximumContextTokenSize</a></td>
-    <td style="vertical-align:top">&nbsp;</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Set maximum Kerberos SSPI context token buffer size</td>
+    <td style="vertical-align:top">System/Kerberos</td>
     <td style="vertical-align:top">ForestSearch</td>
     <td style="vertical-align:top">Kerberos.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#power-allowstandbywhensleepingpluggedin">Power/AllowStandbyWhenSleepingPluggedIn</a></td>
-    <td style="vertical-align:top">&nbsp;</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Allow standby states (S1-S3) when sleeping (plugged in)</td>
+    <td style="vertical-align:top">System/Power Management/Sleep Settings</td>
     <td style="vertical-align:top">ACPromptForPasswordOnResume_2</td>
     <td style="vertical-align:top">power.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#power-requirepasswordwhencomputerwakesonbattery">Power/RequirePasswordWhenComputerWakesOnBattery</a></td>
-    <td style="vertical-align:top">&nbsp;</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Require a password when a computer wakes (on battery)</td>
+    <td style="vertical-align:top">System/Power Management/Sleep Settings</td>
     <td style="vertical-align:top">ACPromptForPasswordOnResume_2</td>
     <td style="vertical-align:top">power.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#power-requirepasswordwhencomputerwakespluggedin">Power/RequirePasswordWhenComputerWakesPluggedIn</a></td>
-    <td style="vertical-align:top">&nbsp;</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Require a password when a computer wakes (plugged in)</td>
+    <td style="vertical-align:top">System/Power Management/Sleep Settings</td>
     <td style="vertical-align:top">ACPromptForPasswordOnResume_2</td>
     <td style="vertical-align:top">power.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#printers-pointandprintrestrictions">Printers/PointAndPrintRestrictions</a></td>
-    <td style="vertical-align:top">&nbsp;</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Allow printers to be published</td>
+    <td style="vertical-align:top">Printers</td>
     <td style="vertical-align:top">PublishPrinters</td>
     <td style="vertical-align:top">Printing.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#printers-pointandprintrestrictions_user">Printers/PointAndPrintRestrictions_User</a></td>
-    <td style="vertical-align:top">&nbsp;</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Allow printers to be published</td>
     <td style="vertical-align:top">PublishPrinters</td>
     <td style="vertical-align:top">Printing.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#printers-publishprinters">Printers/PublishPrinters</a></td>
-    <td style="vertical-align:top">&nbsp;</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Allow printers to be published</td>
+    <td style="vertical-align:top">Printers</td>
     <td style="vertical-align:top">PublishPrinters</td>
     <td style="vertical-align:top">Printing2.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#remoteassistance-customizewarningmessages">RemoteAssistance/CustomizeWarningMessages</a></td>
     <td style="vertical-align:top">Turn on session logging</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">System/Remote Assistance</td>
     <td style="vertical-align:top">RA_Logging</td>
     <td style="vertical-align:top">remoteassistance.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#remoteassistance-sessionlogging">RemoteAssistance/SessionLogging</a></td>
     <td style="vertical-align:top">Turn on session logging</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">System/Remote Assistance</td>
     <td style="vertical-align:top">RA_Logging</td>
     <td style="vertical-align:top">remoteassistance.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#remoteassistance-solicitedremoteassistance">RemoteAssistance/SolicitedRemoteAssistance</a></td>
     <td style="vertical-align:top">Turn on session logging</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">System/Remote Assistance</td>
     <td style="vertical-align:top">RA_Logging</td>
     <td style="vertical-align:top">remoteassistance.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#remoteassistance-unsolicitedremoteassistance">RemoteAssistance/UnsolicitedRemoteAssistance</a></td>
     <td style="vertical-align:top">Turn on session logging</td>
-    <td style="vertical-align:top">&nbsp;</td>
     <td style="vertical-align:top">RA_Logging</td>
     <td style="vertical-align:top">remoteassistance.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#remotedesktopservices-allowuserstoconnectremotely">RemoteDesktopServices/AllowUsersToConnectRemotely</a></td>
     <td style="vertical-align:top">Set client connection encryption level</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Remote Desktop Services/Remote Desktop Session Host/Connections</td>
     <td style="vertical-align:top">TS_ENCRYPTION_POLICY</td>
     <td style="vertical-align:top">terminalserver.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#remotedesktopservices-clientconnectionencryptionlevel">RemoteDesktopServices/ClientConnectionEncryptionLevel</a></td>
     <td style="vertical-align:top">Set client connection encryption level</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Remote Desktop Services/Remote Desktop Session Host/Security</td>
     <td style="vertical-align:top">TS_ENCRYPTION_POLICY</td>
     <td style="vertical-align:top">terminalserver.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#remotedesktopservices-donotallowdriveredirection">RemoteDesktopServices/DoNotAllowDriveRedirection</a></td>
     <td style="vertical-align:top">Set client connection encryption level</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Remote Desktop Services/Remote Desktop Session Host/Device and Resource Redirection</td>
     <td style="vertical-align:top">TS_ENCRYPTION_POLICY</td>
     <td style="vertical-align:top">terminalserver.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#remotedesktopservices-donotallowpasswordsaving">RemoteDesktopServices/DoNotAllowPasswordSaving</a></td>
     <td style="vertical-align:top">Set client connection encryption level</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Remote Desktop Services/Remote Desktop Connection Client</td>
     <td style="vertical-align:top">TS_ENCRYPTION_POLICY</td>
     <td style="vertical-align:top">terminalserver.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#remotedesktopservices-promptforpassworduponconnection">RemoteDesktopServices/PromptForPasswordUponConnection</a></td>
     <td style="vertical-align:top">Set client connection encryption level</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Remote Desktop Services/Remote Desktop Session Host/Security</td>
     <td style="vertical-align:top">TS_ENCRYPTION_POLICY</td>
     <td style="vertical-align:top">terminalserver.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#remotedesktopservices-requiresecurerpccommunication">RemoteDesktopServices/RequireSecureRPCCommunication</a></td>
     <td style="vertical-align:top">Set client connection encryption level</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">Windows Components/Remote Desktop Services/Remote Desktop Session Host/Security</td>
     <td style="vertical-align:top">TS_ENCRYPTION_POLICY</td>
     <td style="vertical-align:top">terminalserver.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#remoteprocedurecall-rpcendpointmapperclientauthentication">RemoteProcedureCall/RPCEndpointMapperClientAuthentication</a></td>
     <td style="vertical-align:top">Restrict Unauthenticated RPC clients</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">System/Remote Procedure Call</td>
     <td style="vertical-align:top">RpcRestrictRemoteClients</td>
     <td style="vertical-align:top">rpc.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#remoteprocedurecall-restrictunauthenticatedrpcclients">RemoteProcedureCall/RestrictUnauthenticatedRPCClients</a></td>
     <td style="vertical-align:top">Restrict Unauthenticated RPC clients</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">System/Remote Procedure Call</td>
     <td style="vertical-align:top">RpcRestrictRemoteClients</td>
     <td style="vertical-align:top">rpc.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#storage-enhancedstoragedevices">Storage/EnhancedStorageDevices</a></td>
     <td style="vertical-align:top">Do not allow Windows to activate Enhanced Storage devices</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">System/Enhanced Storage Access</td>
     <td style="vertical-align:top">TCGSecurityActivationDisabled</td>
     <td style="vertical-align:top">enhancedstorage.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#system-bootstartdriverinitialization">System/BootStartDriverInitialization</a></td>
     <td style="vertical-align:top">Turn off System Restore</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">System/Early Launch Antimalware</td>
     <td style="vertical-align:top">SR_DisableSR</td>
     <td style="vertical-align:top">earlylauncham.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#system-disablesystemrestore">System/DisableSystemRestore</a></td>
     <td style="vertical-align:top">Turn off System Restore</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">System/System Restore</td>
     <td style="vertical-align:top">SR_DisableSR</td>
     <td style="vertical-align:top">systemrestore.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#windowslogon-disablelockscreenappnotifications">WindowsLogon/DisableLockScreenAppNotifications</a></td>
     <td style="vertical-align:top">Turn off app notifications on the lock screen</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">System/Logon</td>
     <td style="vertical-align:top">DisableLockScreenAppNotifications</td>
     <td style="vertical-align:top">logon.admx</td>
   </tr>
   <tr>
     <td style="vertical-align:top"><a href="#windowslogon-dontdisplaynetworkselectionui">WindowsLogon/DontDisplayNetworkSelectionUI</a></td>
     <td style="vertical-align:top">Turn off app notifications on the lock screen</td>
-    <td style="vertical-align:top">&nbsp;</td>
+    <td style="vertical-align:top">System/Logon</td>
     <td style="vertical-align:top">DisableLockScreenAppNotifications</td>
     <td style="vertical-align:top">logon.admx</td>
   </tr>
@@ -3364,15 +3359,33 @@ If you enable this policy setting, Windows is prevented from installing or updat
 
 <a href="" id="printers-pointandprintrestrictions"></a>**Printers/PointAndPrintRestrictions**
 
-<p style="margin-left: 20px">N/A</p>
+<p style="margin-left: 20px">Determines whether the computer's shared printers can be published in Active Directory.</p>
+
+<p style="margin-left: 20px">            If you enable this setting or do not configure it, users can use the "List in directory" option in the Printer's Properties' Sharing tab to publish shared printers in Active Directory.</p>
+
+<p style="margin-left: 20px">            If you disable this setting, this computer's shared printers cannot be published in Active Directory, and the "List in directory" option is not available.</p>
+
+<p style="margin-left: 20px">            Note: This settings takes priority over the setting "Automatically publish new printers in the Active Directory".</p>
 
 <a href="" id="printers-pointandprintrestrictions_user"></a>**Printers/PointAndPrintRestrictions_User**
 
-<p style="margin-left: 20px">N/A</p>
+<p style="margin-left: 20px">Determines whether the computer's shared printers can be published in Active Directory.</p>
+
+<p style="margin-left: 20px">            If you enable this setting or do not configure it, users can use the "List in directory" option in the Printer's Properties' Sharing tab to publish shared printers in Active Directory.</p>
+
+<p style="margin-left: 20px">            If you disable this setting, this computer's shared printers cannot be published in Active Directory, and the "List in directory" option is not available.</p>
+
+<p style="margin-left: 20px">            Note: This settings takes priority over the setting "Automatically publish new printers in the Active Directory".</p>
 
 <a href="" id="printers-publishprinters"></a>**Printers/PublishPrinters**
 
-<p style="margin-left: 20px">N/A</p>
+<p style="margin-left: 20px">Determines whether the computer's shared printers can be published in Active Directory.</p>
+
+<p style="margin-left: 20px">            If you enable this setting or do not configure it, users can use the "List in directory" option in the Printer's Properties' Sharing tab to publish shared printers in Active Directory.</p>
+
+<p style="margin-left: 20px">            If you disable this setting, this computer's shared printers cannot be published in Active Directory, and the "List in directory" option is not available.</p>
+
+<p style="margin-left: 20px">            Note: This settings takes priority over the setting "Automatically publish new printers in the Active Directory".</p>
 
 <a href="" id="remoteassistance-customizewarningmessages"></a>**RemoteAssistance/CustomizeWarningMessages**
 
@@ -3637,4 +3650,5 @@ If you enable this policy setting, Windows is prevented from installing or updat
 
 
 <!-- ADMX-DESCRIPTIONS-END -->
+
 
