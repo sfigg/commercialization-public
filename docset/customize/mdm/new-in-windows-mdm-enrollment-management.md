@@ -630,7 +630,10 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 </td></tr>
 <tr class="odd">
 <td style="vertical-align:top">[DevDetail CSP](devdetail-csp.md)</td>
-<td style="vertical-align:top"><p>Added the following setting: DeviceHardwareData.</p>
+<td style="vertical-align:top"><p>Added the following setting:</p>
+<ul>
+<li>DeviceHardwareData</li>
+</ul>
 </td>
 </tr>
 <tr class="even">
@@ -722,6 +725,14 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <td style="vertical-align:top"><p>Added the following setting:</p>
 <ul>
 <li>ChangeProductKey</li>
+</ul>
+</td>
+</tr>
+<tr class="odd">
+<td style="vertical-align:top">[WindowsAdvancedThreatProtection CSP](windowsadvancedthreatprotection-csp.md)</td>
+<td style="vertical-align:top"><p>Added the following setting:</p>
+<ul>
+<li>Configuration/TelemetryReportingFrequency</li>
 </ul>
 </td>
 </tr>
@@ -1108,6 +1119,14 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>RevokeOnMDMHandoff</li>
 <li>SMBAutoEncryptedFileExtensions</li>
 </ul></td>
+</tr>
+<tr class="odd">
+<td style="vertical-align:top">[WindowsAdvancedThreatProtection CSP](windowsadvancedthreatprotection-csp.md)</td>
+<td style="vertical-align:top"><p>Updated in Windows 10, version 1703. Added the following setting:</p>
+<ul>
+<li>Configuration/TelemetryReportingFrequency</li>
+</ul>
+</td>
 </tr>
 </tbody>
 </table>
