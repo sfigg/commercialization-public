@@ -577,6 +577,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>Experience/AllowTailoredExperiencesWithDiagnosticData</li>
 <li>Experience/AllowWindowsSpotlightOnActionCenter</li>
 <li>Experience/AllowWindowsSpotlightWindowsWelcomeExperience</li>
+<li>Location/EnableLocation</li>
 <li>Messaging/AllowMMS</li>
 <li>Messaging/AllowRCS</li>
 <li>Privacy/LetAppsGetDiagnosticInfo</li>
@@ -1028,6 +1029,7 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>Connectivity/AllowConnectedDevices</li>
 <li>Display/TurnOffGdiDPIScalingForApps</li>
 <li>Display/TurnOnGdiDPIScalingForApps</li>
+<li>Location/EnableLocation</li>
 <li>SmartScreen/EnableAppInstallControl</li>
 <li>SmartScreen/EnableSmartScreenInShell</li>
 <li>SmartScreen/PreventOverrideForFilesInShell</li>
