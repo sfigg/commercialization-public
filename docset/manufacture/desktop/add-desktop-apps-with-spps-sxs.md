@@ -83,7 +83,9 @@ You can add registry keys, for example, an OEM key, or a Windows Store identifie
 
     where *E* is the drive letter of the USB drive with ScanState.
 
-    **Optional**: ScanState creates two log files, ScanState.log and miglog.xml. The `/l` option can be used to specify where the logs are saved. The above command writes the logs to c:\. You can delete these logs to save disk space: `del C:\ScanState.log` `del c:\miglog.xml`.
+    **Optional**: Delete these logs to save disk space: `del C:\ScanState.log` `del c:\miglog.xml`. ScanState creates two log files, ScanState.log and miglog.xml. The `/l` option can be used to specify where the logs are saved. The above command writes the logs to c:\. 
+    
+    To see more about ScanState command-line options, see [Siloed Provisioning Packages](siloed-provisioning-packages.md#capture-windows-desktop-applications).
 
 ## <span id="Install_and_capture_a_Windows_desktop_application"></span><span id="install_and_capture_a_windows_desktop_application"></span><span id="INSTALL_AND_CAPTURE_A_WINDOWS_DESKTOP_APPLICATION"></span>Step 4: Install and capture a Windows desktop application (Microsoft Office)
 
