@@ -99,7 +99,7 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
                 <Delete />
                 <Replace />
               </AccessType>
-              <Description>Maps to EnterpriseProtectedDomainNames MDM policy.</Description>
+              <Description>Maps to EnerpriseProtectedDomainNames MDM policy.</Description>
               <DFFormat>
                 <chr />
               </DFFormat>
@@ -114,7 +114,30 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
               </DFType>
             </DFProperties>
           </Node>
-          
+          <Node>
+            <NodeName>AllowUserDecryption</NodeName>
+            <DFProperties>
+              <AccessType>
+                <Get />
+                <Add />
+                <Delete />
+                <Replace />
+              </AccessType>
+              <Description>Deprecated. Recommendation is to always set to 1. When fetching this policy value, client will always return 1 regardless of what was originally set by server.</Description>
+              <DFFormat>
+                <int />
+              </DFFormat>
+              <Occurrence>
+                <One />
+              </Occurrence>
+              <Scope>
+                <Dynamic />
+              </Scope>
+              <DFType>
+                <MIME>text/plain</MIME>
+              </DFType>
+            </DFProperties>
+          </Node>
           <Node>
             <NodeName>RequireProtectionUnderLockConfig</NodeName>
             <DFProperties>
@@ -185,6 +208,29 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFProperties>
           </Node>
           <Node>
+            <NodeName>RevokeOnMDMHandoff</NodeName>
+            <DFProperties>
+              <AccessType>
+                <Get />
+                <Add />
+                <Delete />
+                <Replace />
+              </AccessType>
+            <DFFormat>
+              <int />
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            </DFProperties>
+          </Node>
+          <Node>
             <NodeName>RMSTemplateIDForEDP</NodeName>
             <DFProperties>
               <AccessType>
@@ -221,6 +267,29 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
               </DFFormat>
               <Occurrence>
                 <One />
+              </Occurrence>
+              <Scope>
+                <Dynamic />
+              </Scope>
+              <DFType>
+                <MIME>text/plain</MIME>
+              </DFType>
+            </DFProperties>
+          </Node>
+          <Node>
+            <NodeName>SMBAutoEncryptedFileExtensions</NodeName>
+            <DFProperties>
+              <AccessType>
+                <Get />
+                <Add />
+                <Delete />
+                <Replace />
+              </AccessType>
+              <DFFormat>
+                <chr />
+              </DFFormat>
+              <Occurrence>
+                <ZeroOrOne />
               </Occurrence>
               <Scope>
                 <Dynamic />
