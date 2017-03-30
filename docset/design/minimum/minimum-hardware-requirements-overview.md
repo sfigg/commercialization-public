@@ -560,7 +560,7 @@ Table 3 summarizes the hardware requirements for all Windows 10 operating system
 <p>Optional</p>
 </td>
 <td>
-<p>Optional</p>
+<p>Not Supported</p>
 </td>
 <td>
 <p>Optional</p>
@@ -919,7 +919,7 @@ Table 4 lists the supported SoCs for devices that run Windows 10 Mobile. Any of
 <tbody>
 <tr class="odd">
 <td><p>Qualcomm Technologies, Inc.</p></td>
-<td><p>MSM8994, MSM8992, MSM8952, MSM8909, MSM8208, MSM8996</p></td>
+<td><p>Snapdragon 820, 810, 808, 617, 210</p></td>
 </tr>
 </tbody>
 </table>
@@ -944,7 +944,7 @@ Table 5 lists the additional supported SoCs for devices that run Windows 10 Mob
 <tbody>
 <tr class="odd">
 <td><p>Qualcomm Technologies, Inc.</p></td>
-<td><p>APQ8092, APQ8094, APQ8009</p></td>
+<td><p>Snapdragon 810, 808, 617, 210 (All: APQ variants only)</p></td>
 </tr>
 </tbody>
 </table>
@@ -969,7 +969,7 @@ Existing Windows Phones that include the SoCs listed in Table 6 can be updated t
 <tbody>
 <tr class="odd">
 <td><p>Qualcomm Technologies, Inc.</p></td>
-<td><p>MSM8x10, MSM8x12, MSM8x26, MSM8916, MSM8926, MSM8x28, MSM8928, MSM8974, MSM8974Pro, MSM8960, MSM8260A, MSM8660A, MSM8930AA, MSM8930AB, MSM8630, MSM8230, MSM8627, MSM8227, MSM8994, MSM8992, MSM8952, MSM8909, MSM8208</p></td>
+<td><p>Snapdragon 810, 808, 801, 800, 617, 410, 400, 210, 200, S4 Plus</p></td>
 </tr>
 </tbody>
 </table>
@@ -1128,7 +1128,19 @@ The phone display must support one of the resolution and size options shown in T
 <td>WXGA⁶</td>
 <td>1280 x 800</td>
 <td>16:10</td>
-<td>6.01&quot; to 7&quot;</td>
+<td>6.01&quot; to > 9&quot;</td>
+</tr>
+<tr class="even">
+<td>XGA</td>
+<td>1027 x 768</td>
+<td>4:3</td>
+<td>7&quot; to > 9&quot;</td>
+</tr>
+<tr class="odd">
+<td>WSVGA</td>
+<td>1027 x 600</td>
+<td>17:10</td>
+<td>7&quot; to > 9&quot;</td>
 </tr>
 <tr class="even">
 <td>qHD⁷</td>
@@ -1327,7 +1339,7 @@ Storage controllers used in devices that run Windows 10 for desktop editions mu
 
 ### 3.4.1 Resolution, bit depth, and size
 
-Windows 10 for desktop editions supports a minimum display resolution of SVGA (800 x 600) with a depth of 32 bits on each output simultaneously, and a minimum diagonal display size of 8-inches or larger. Tablets, 2-in-1s, and laptops that run Windows 10 for desktop editions must include a display that meets the minimum requirements listed earlier. A display is optional for desktop PC's that run Windows 10 for desktop editions.
+Windows 10 for desktop editions supports a minimum display resolution of SVGA (800 x 600) with a depth of 32 bits on each output simultaneously, and a minimum diagonal display size of 7-inches or larger. Tablets, 2-in-1s, and laptops that run Windows 10 for desktop editions must include a display that meets the minimum requirements listed earlier. A display is optional for desktop PC's that run Windows 10 for desktop editions.
 
 ### 3.4.2 Graphics
 
