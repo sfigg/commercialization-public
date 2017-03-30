@@ -19,8 +19,6 @@ The default display times for SIM toolkit commands are as follows:
 -   SELECT ITEM: 60 seconds
 -   GET INKEY: 60 seconds
 
-See [SIM toolkit](netvista.sim_toolkit) and [SIM toolkit commands](netvista.sim_toolkit_commands) for more information.
-
 OEMs can modify the values for the following settings.
 
 <table>

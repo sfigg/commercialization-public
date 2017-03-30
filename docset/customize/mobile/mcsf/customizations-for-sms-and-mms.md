@@ -99,10 +99,6 @@ Contains settings that you can configure for SMS and MMS.
 <td><p>[Sending SMS messages to SMTP addresses](sending-sms-messages-to-smtp-addresses.md)</p></td>
 <td><p>Partners can configure SMS messages to be sent to email addresses as well as phone numbers.</p></td>
 </tr>
-<tr class="odd">
-<td><p>[Server for MMS acknowledgement messages](server-for-mms-acknowledgement-messages.md)</p></td>
-<td><p>By default, the MMS transport sends an acknowledgement to the MMS application server (MMSC) provisioned by following the instructions in [MMS application configuration](../mdm/mms-application-configuration.md).</p></td>
-</tr>
 <tr class="even">
 <td><p>[SMS encoding](sms-encoding.md)</p></td>
 <td><p>Partners can change the default GSM 7-bit code page decoding and encoding, and can also extend the set of supported SMS encodings by setting an &quot;always-on&quot; GSM 7-bit shift table, adding encoders, and adding decoders.</p></td>

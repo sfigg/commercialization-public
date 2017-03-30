@@ -373,6 +373,11 @@ The following list shows the apps that may be included in the inbox.
 </tr>
 </thead>
 <tbody>
+<tr class="even">
+<td>3D Viewer</td>
+<td>f41647c9-d567-4378-b2ab-7924e5a152f3</td>
+<td>Microsoft.Microsoft3DViewer <p>(Added in Windows 10, version 1703)</p></td>
+</tr>
 <tr class="odd">
 <td>Advanced info</td>
 <td>b6e3e590-9fa5-40c0-86ac-ef475de98e88</td>
@@ -723,6 +728,11 @@ The following list shows the apps that may be included in the inbox.
 <td>Wallet</td>
 <td>587a4577-7868-4745-a29e-f996203f1462</td>
 <td>Microsoft.MicrosoftWallet</td>
+</tr>
+<tr class="even">
+<td>Wallet</td>
+<td>12ae577e-f8d1-4197-a207-4d24c309ff8f</td>
+<td>Microsoft.Wallet</td>
 </tr>
 <tr class="odd">
 <td>Weather</td>

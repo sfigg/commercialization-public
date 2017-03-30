@@ -18,7 +18,7 @@ Demonstrates how to block key combinations for Keyboard Filter.
 <a href="" id="disable-all-blocked-key-combinations"></a>[Disable all blocked key combinations](disable-all-blocked-key-combinations.md)  
 Demonstrates how to disable all blocked key combinations for Keyboard Filter.
 
-<a href="" id="keyboardfilter-list-all-configured-key-combinations.md"></a>[List all configured key combinations](keyboardfilter-list-all-configured-key-combinations.md.md)  
+<a href="" id="keyboardfilter-list-all-configured-key-combinations.md"></a>[List all configured key combinations](keyboardfilter-list-all-configured-key-combinations.md)  
 Demonstrates how to list all defined key combination configurations for Keyboard Filter.
 
 <a href="" id="modify-global-settings"></a>[Modify global settings](modify-global-settings.md)  

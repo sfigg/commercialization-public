@@ -120,7 +120,7 @@ Partners are required to set the following information:
     <p>The value must be a valid OEM ID. To get the valid OEM ID that applies to you, contact your Microsoft representative.</p>
     <p>The OEM ID value is in all capital letters, for example, FABRIKAM.</p>
     <p>To use an OEM-provided value to display in the <strong>Settings</strong> &gt; <strong>About</strong> screen, OEMs can use the optional <strong>PhoneManufacturerDisplayName</strong> setting. For more information, see the next entry in this table.</p>
-    <p>The <strong>PhoneManufacturer</strong>, <strong>PhoneManufacturerModelName</strong>, and <strong>PhoneMobileOperatorName</strong> should create a unique Phone-Operator-Pairing (POP). For more info, see [Set a Phone-Operator-Pairing (POP)](5759478e-2998-41af-b353-390a24ff8c13).</p></td>
+    <p>The <strong>PhoneManufacturer</strong>, <strong>PhoneManufacturerModelName</strong>, and <strong>PhoneMobileOperatorName</strong> should create a unique Phone-Operator-Pairing (POP). </p></td>
     </tr>
     <tr class="even">
     <td><p>ImageTimeOnly</p></td>
@@ -173,7 +173,7 @@ Partners are required to set the following information:
     <tr class="even">
     <td><p>ImageTimeOnly</p></td>
     <td><p><strong>PhoneROMLanguage</strong></p></td>
-    <td><p><strong>Required.</strong> Set the value to a four character Language Code Identifier (LCID), such as &quot;0409&quot; for English (US). For more info, see [Available Language Packs for Windows](../../manufacture/desktop/available-language-packs-for-windows-blue.md).</p></td>
+    <td><p><strong>Required.</strong> Set the value to a four character Language Code Identifier (LCID), such as &quot;0409&quot; for English (US). </p></td>
     </tr>
     <tr class="odd">
     <td><p>ImageTimeOnly</p></td>
@@ -194,7 +194,7 @@ Partners are required to set the following information:
     <td><p><strong>Required.</strong> This setting is used for targeting phone updates. It must contain a code specified by Microsoft that corresponds to the mobile operator. These codes are provided in [Registry values for mobile operator IDs](registry-values-for-mobile-operator-ids.md). For open market phones, in which the mobile operator is not known, use the codes in [Registry values for carrier-unlocked phones](registry-values-for-carrier-unlocked-phones.md) instead.</p>
     <p>This string is not visible to the user.</p>
     <p>This setting must not be changed over time even if the user switches SIMs or mobile operators, as updates are always targeted based on the first mobile operator associated with the phone.</p>
-    <p>The <strong>PhoneManufacturer</strong>, <strong>PhoneManufacturerModelName</strong>, and <strong>PhoneMobileOperatorName</strong> should create a unique Phone-Operator-Pairing (POP). For more info, see [Set a Phone-Operator-Pairing (POP)](5759478e-2998-41af-b353-390a24ff8c13).</p></td>
+    <p>The <strong>PhoneManufacturer</strong>, <strong>PhoneManufacturerModelName</strong>, and <strong>PhoneMobileOperatorName</strong> should create a unique Phone-Operator-Pairing (POP). </p></td>
     </tr>
     <tr class="odd">
     <td><p>FirstVariationOnly</p></td>
@@ -214,7 +214,7 @@ Partners are required to set the following information:
      
     </div>
     <p>Microsoft recommends using a different value for <strong>PhoneManufacturerModelname</strong> and another value for <strong>PhoneModelName</strong>. <strong>PhoneManufacturerModelname</strong> should be as unique as possible for the particular device revision or variant.</p>
-    <p>The <strong>PhoneManufacturer</strong>, <strong>PhoneManufacturerModelName</strong>, and <strong>PhoneMobileOperatorName</strong> should create a unique Phone-Operator-Pairing (POP). For more info, see [Set a Phone-Operator-Pairing (POP)](5759478e-2998-41af-b353-390a24ff8c13).</p></td>
+    <p>The <strong>PhoneManufacturer</strong>, <strong>PhoneManufacturerModelName</strong>, and <strong>PhoneMobileOperatorName</strong> should create a unique Phone-Operator-Pairing (POP). </p></td>
     </tr>
     <tr class="even">
     <td><p>FirstVariationOnly</p></td>

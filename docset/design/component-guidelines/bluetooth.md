@@ -21,7 +21,7 @@ Additional features that were added after Windows 10, version 1507 are marked a
 
 -   (1607) - The feature is new for the Windows 10, version 1607 release
 
--   (1704) - The feature is new for the Windows 10, version 1704 release
+-   (1703) - The feature is new for the Windows 10, version 1703 release
 
 
 ### <a href="" id="qd-ids-"></a>QD IDs
@@ -64,7 +64,7 @@ Additional features that were added after Windows 10, version 1507 are marked a
 
     -   (1607) (Pre-pair Bluetooth devices during manufacturing)[bluetooth-prepairing.md]: Allows for a seamless out-of-box experience that allows Bluetooth devices to just work. 
 
-    -   (1704) Hands-Free Profile (HFP) 1.6 specification with Wideband speech on Windows 10 for desktop editions.
+    -   (1703) Hands-Free Profile (HFP) 1.6 specification with Wideband speech on Windows 10 for desktop editions.
 
 -   APIs/Profiles
 
@@ -80,9 +80,9 @@ Additional features that were added after Windows 10, version 1507 are marked a
 
     -   (1607) Map apps can now use Cortana's voice for navigation.
 
-    -   (1704) Support for [Call Control APIs](https://docs.microsoft.com/en-us/uwp/api/Windows.ApplicationModel.Calls) on Windows 10 for desktop editions.
+    -   (1703) Support for [Call Control APIs](https://docs.microsoft.com/en-us/uwp/api/Windows.ApplicationModel.Calls) on Windows 10 for desktop editions.
 
-    -   (1704) Support for GATT Server, Bluetooth LE Peripheral and non-paired support for Bluetooth LE. See our [developer post](http://aka.ms/bluetoothgatt) for more details.
+    -   (1703) Support for GATT Server, Bluetooth LE Peripheral and non-paired support for Bluetooth LE. See our [developer post](http://aka.ms/bluetoothgatt) for more details.
 
 ### Bluetooth features list by edition
 

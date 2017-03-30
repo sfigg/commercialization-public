@@ -68,6 +68,47 @@ The following diagram shows the Policy configuration service provider in tree fo
 
 <p style="margin-left: 20px">Supported operation is Get.
 
+<a href="" id="policy-result"></a>**Policy/ConfigOperations**  
+<p style="margin-left: 20px">Added in Windows 10, version 1703. The root node for grouping different configuration operations.
+
+<p style="margin-left: 20px">Supported operations are Add, Get, and Delete.
+
+<a href="" id="policy-configoperations-admxinstall"></a>**Policy/ConfigOperations/ADMXInstall**  
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Allows settings for ADMX files for Win32 and Centennial apps to be imported (ingested) by your device and processed into new ADMX-backed policies or preferences. By using ADMXInstall, you can add ADMX-backed polices for those Win32 or Centennial apps that have been added between OS releases. ADMX-backed policies are ingested to your device by using the Policy CSP URI: `./Vendor/MSFT/Policy/ConfigOperations/ADMXInstall`. Each ADMX-backed policy or preference that is added is assigned a unique ID. For more information about using Policy CSP to configure Win32 and Centennial app policies, see [Win32 and Centennial app policy configuration](win32-and-centennial-app-policy-configuration.md).
+
+> [!NOTE]
+> The OPAX settings that are managed by the Microsoft Office Customization Tool are not supported by MDM. For more information about this tool, see [Office Customization Tool](https://technet.microsoft.com/en-us/library/cc179097.aspx).
+
+<p style="margin-left: 20px">ADMX files that have been installed by using **ConfigOperations/ADMXInstall** can later be deleted by using the URI delete operation. Deleting an ADMX file will delete the ADMX file from disk, remove the metadata from the ADMXdefault registry hive, and delete all the policies that were set from the file. The MDM server can also delete all ADMX policies that are tied to a particular app by calling delete on the URI, `./Vendor/MSFT/Policy/ConfigOperations/ADMXInstall/{AppName}`.
+
+<p style="margin-left: 20px">Supported operations are Add, Get, and Delete.
+
+<a href="" id="policy-configoperations-admxinstall-appname"></a>**Policy/ConfigOperations/ADMXInstall/****_AppName_**  
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies the name of the Win32 or Centennial app associated with the ADMX file. 
+
+<p style="margin-left: 20px">Supported operations are Add, Get, and Delete.
+
+<a href="" id="policy-configoperations-admxinstall-appname-policy"></a>**Policy/ConfigOperations/ADMXInstall/****_AppName_/Policy**  
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies that a Win32 or Centennial app policy is to be imported.
+
+<p style="margin-left: 20px">Supported operations are Add, Get, and Delete.
+
+<a href="" id="policy-configoperations-admxinstall-appname-policy-uniqueid"></a>**Policy/ConfigOperations/ADMXInstall/****_AppName_/Policy/_UniqueID_**  
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies the unique ID of the app ADMX file that contains the policy to import.
+
+<p style="margin-left: 20px">Supported operations are Add and Get. Does not support Delete.
+
+<a href="" id="policy-configoperations-admxinstall-appname-preference"></a>**Policy/ConfigOperations/ADMXInstall/****_AppName_/Preference**  
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies that a Win32 or Centennial app preference is to be imported.
+
+<p style="margin-left: 20px">Supported operations are Add, Get, and Delete.
+
+<a href="" id="policy-configoperations-admxinstall-appname-preference-uniqueid"></a>**Policy/ConfigOperations/ADMXInstall/****_AppName_/Preference/_UniqueID_**  
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies the unique ID of the app ADMX file that contains the preference to import.
+
+<p style="margin-left: 20px">Supported operations are Add and Get. Does not support Delete.
+
+
 ## **Policy Tables**
 
 Some policies are only supported in either Windows 10 for desktop or Windows 10 Mobile. In addition, some policies also have a corresponding Group Policy. The following tables provide this information:
@@ -742,7 +783,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png"><p>Mobile</p></td>
 		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png"><p>Mobile Enterprise</p></td>
 		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png"><p>IoT Core</p></td>
-		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png"><p>EAS</p></td></tr>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png"><p>EAS</p></td></tr>	
 	<tr>
 		<td style="vertical-align:top"><a href="#connectivity-allowbluetooth">Connectivity/AllowBluetooth</a></td>
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Home</p></td>
@@ -1019,7 +1060,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>IoT Core</p></td>
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>EAS</p></td></tr>
 	<tr>
-		<td style="vertical-align:top"><a href="#defender-avgcpuloadfactor">Defender/AVGCPULoadFactor</a></td>
+		<td style="vertical-align:top"><a href="#defender-avgcpuloadfactor">Defender/AvgCPULoadFactor</a></td>
 		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png"><p>Home</p></td>
 		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png"><p>Pro</p></td>
 		<td style="vertical-align:top"><p></p></td>
@@ -1206,7 +1247,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>IoT Core</p></td>
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>EAS</p></td></tr>
 	<tr>
-		<td style="vertical-align:top"><a href="#deliveryoptimization-dogroupid">DeliveryOptimization/DOGroupID</a></td>
+		<td style="vertical-align:top"><a href="#deliveryoptimization-dogroupid">DeliveryOptimization/DOGroupId</a></td>
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Home</p></td>
 		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png"><p>Pro</p></td>
 		<td style="vertical-align:top"><p></p></td>
@@ -3109,6 +3150,39 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>IoT Core</p></td>
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>EAS</p></td></tr>
 	<tr>
+		<td style="vertical-align:top"><a href="#smartscreen-enableappinstallcontrol">SmartScreen/EnableAppInstallControl</a></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Home</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Pro</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Business</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Enterprise</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Education</p></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Mobile</p></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Mobile Enterprise</p></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>IoT Core</p></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>EAS</p></td></tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#smartscreen-enablesmartscreeninshell">SmartScreen/EnableSmartScreenInShell</a></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Home</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Pro</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Business</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Enterprise</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Education</p></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Mobile</p></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Mobile Enterprise</p></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>IoT Core</p></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>EAS</p></td></tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#smartscreen-preventoverrideforfilesinshell">SmartScreen/PreventOverrideForFilesInShell</a></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Home</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Pro</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Business</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Enterprise</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Education</p></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Mobile</p></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Mobile Enterprise</p></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>IoT Core</p></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>EAS</p></td></tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#speech-allowspeechmodelupdate">Speech/AllowSpeechModelUpdate</a></td>
 		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">1<p>Home</p></td>
 		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">1<p>Pro</p></td>
@@ -3915,7 +3989,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>IoT Core</p></td>
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>EAS</p></td></tr>
 	<tr>
-		<td style="vertical-align:top"><a href="#wifi-allowautoconnecttowifisensehotspots">WiFi/AllowAutoConnectToWiFiSenseHotspots</a></td>
+		<td style="vertical-align:top"><a href="#wifi-allowautoconnecttowifisensehotspots">Wifi/AllowAutoConnectToWiFiSenseHotspots</a></td>
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Home</p></td>
 		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png"><p>Pro</p></td>
 		<td style="vertical-align:top"><p></p></td>
@@ -3926,7 +4000,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png"><p>IoT Core</p></td>
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>EAS</p></td></tr>
 	<tr>
-		<td style="vertical-align:top"><a href="#wifi-allowinternetsharing">WiFi/AllowInternetSharing</a></td>
+		<td style="vertical-align:top"><a href="#wifi-allowinternetsharing">Wifi/AllowInternetSharing</a></td>
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Home</p></td>
 		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png"><p>Pro</p></td>
 		<td style="vertical-align:top"><p></p></td>
@@ -3937,7 +4011,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png"><p>IoT Core</p></td>
 		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png"><p>EAS</p></td></tr>
 	<tr>
-		<td style="vertical-align:top"><a href="#wifi-allowmanualwificonfiguration">WiFi/AllowManualWiFiConfiguration</a></td>
+		<td style="vertical-align:top"><a href="#wifi-allowmanualwificonfiguration">Wifi/AllowManualWiFiConfiguration</a></td>
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Home</p></td>
 		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">1<p>Pro</p></td>
 		<td style="vertical-align:top"><p></p></td>
@@ -3948,7 +4022,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>IoT Core</p></td>
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>EAS</p></td></tr>
 	<tr>
-		<td style="vertical-align:top"><a href="#wifi-allowwifi">WiFi/AllowWiFi</a></td>
+		<td style="vertical-align:top"><a href="#wifi-allowwifi">Wifi/AllowWiFi</a></td>
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Home</p></td>
 		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">1<p>Pro</p></td>
 		<td style="vertical-align:top"><p></p></td>
@@ -3959,7 +4033,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png"><p>IoT Core</p></td>
 		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png"><p>EAS</p></td></tr>
 	<tr>
-		<td style="vertical-align:top"><a href="#wifi-wlanscanmode">WiFi/WLANScanMode</a></td>
+		<td style="vertical-align:top"><a href="#wifi-wlanscanmode">Wifi/WLANScanMode</a></td>
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Home</p></td>
 		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png"><p>Pro</p></td>
 		<td style="vertical-align:top"><p></p></td>
@@ -4100,7 +4174,7 @@ Footnote:
 -   [Defender/AllowScanningNetworkFiles](#defender-allowscanningnetworkfiles)
 -   [Defender/AllowScriptScanning](#defender-allowscriptscanning)
 -   [Defender/AllowUserUIAccess](#defender-allowuseruiaccess)
--   [Defender/AVGCPULoadFactor](#defender-avgcpuloadfactor)
+-   [Defender/AvgCPULoadFactor](#defender-avgcpuloadfactor)
 -   [Defender/DaysToRetainCleanedMalware](#defender-daystoretaincleanedmalware)
 -   [Defender/ExcludedExtensions](#defender-excludedextensions)
 -   [Defender/ExcludedPaths](#defender-excludedpaths)
@@ -4117,7 +4191,7 @@ Footnote:
 -   [DeliveryOptimization/DOAbsoluteMaxCacheSize](#deliveryoptimization-doabsolutemaxcachesize)
 -   [DeliveryOptimization/DOAllowVPNPeerCaching](#deliveryoptimization-doallowvpnpeercaching)
 -   [DeliveryOptimization/DODownloadMode](#deliveryoptimization-dodownloadmode)
--   [DeliveryOptimization/DOGroupID](#deliveryoptimization-dogroupid)
+-   [DeliveryOptimization/DOGroupId](#deliveryoptimization-dogroupid)
 -   [DeliveryOptimization/DOMaxCacheAge](#deliveryoptimization-domaxcacheage)
 -   [DeliveryOptimization/DOMaxCacheSize](#deliveryoptimization-domaxcachesize)
 -   [DeliveryOptimization/DOMaxDownloadBandwidth](#deliveryoptimization-domaxdownloadbandwidth)
@@ -4201,10 +4275,10 @@ Footnote:
 -  [Update/ScheduledInstallDay](#update-scheduledinstallday)
 -  [Update/ScheduledInstallTime](#update-scheduledinstalltime)
 -  [Update/UpdateServiceUrl](#update-updateserviceurl)
--  [WiFi/AllowAutoConnectToWiFiSenseHotspots](#wifi-allowautoconnecttowifisensehotspots)
--  [WiFi/AllowInternetSharing](#wifi-allowinternetsharing)
--  [WiFi/AllowWiFi](#wifi-allowwifi)
--  [WiFi/WLANScanMode](#wifi-wlanscanmode)
+-  [Wifi/AllowAutoConnectToWiFiSenseHotspots](#wifi-allowautoconnecttowifisensehotspots)
+-  [Wifi/AllowInternetSharing](#wifi-allowinternetsharing)
+-  [Wifi/AllowWiFi](#wifi-allowwifi)
+-  [Wifi/WLANScanMode](#wifi-wlanscanmode)
 
 Footnote:
 
@@ -5283,7 +5357,7 @@ Employees cannot remove these search engines, but they can set any one as the de
 -   0 – Not allowed.
 -   1 (default) – Allowed.
 
-<a href="" id="defender-avgcpuloadfactor"></a>**Defender/AVGCPULoadFactor**  
+<a href="" id="defender-avgcpuloadfactor"></a>**Defender/AvgCPULoadFactor**  
 > [!NOTE]
 > This policy is only enforced in Windows 10 for desktop.
 
@@ -5517,7 +5591,7 @@ Employees cannot remove these search engines, but they can set any one as the de
 -   99 - Simple download mode with no peering. Delivery Optimization downloads using HTTP only and does not attempt to contact the Delivery Optimization cloud services. Added in Windows 10, version 1607.
 -   100 - Bypass mode. Do not use Delivery Optimization and use BITS instead. Added in Windows 10, version 1607.
 
-<a href="" id="deliveryoptimization-dogroupid"></a>**DeliveryOptimization/DOGroupID**  
+<a href="" id="deliveryoptimization-dogroupid"></a>**DeliveryOptimization/DOGroupId**  
 > [!NOTE]
 > This policy is only enforced in Windows 10 Pro, Enterprise, and Education editions and not supported in Windows 10 Mobile.
 
@@ -7159,6 +7233,30 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 2.   Configure the policy with the following string: "hide:about".
 3.   Open System Settings again and verify that the About page is no longer accessible.
 
+<a href="" id="smartscreen-enableappinstallcontrol"></a>**SmartScreen/EnableAppInstallControl**  
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Allows IT Admins to control whether users are allowed to install apps from places other than the Store.
+
+<p style="margin-left: 20px">The following list shows the supported values:
+
+-   0 – Turns off Application Installation Control, allowing users to download and install files from anywhere on the web.
+-   1 – Turns on Application Installation Control, allowing users to only install apps from the Store.
+
+<a href="" id="smartscreen-enablesmartscreeninshell"></a>**SmartScreen/EnableSmartScreenInShell**  
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Allows IT Admins to configure SmartScreen for Windows.
+
+<p style="margin-left: 20px">The following list shows the supported values:
+
+-   0 – Turns off SmartScreen in Windows.
+-   1 – Turns on SmartScreen in Windows.
+
+<a href="" id="smartscreen-preventoverrideforfilesinshell"></a>**SmartScreen/PreventOverrideForFilesInShell**  
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Allows IT Admins to control whether users can can ignore SmartScreen warnings and run malicious files.
+
+<p style="margin-left: 20px">The following list shows the supported values:
+
+-   0 – Employees can ignore SmartScreen warnings and run malicious files.
+-   1 – Employees cannot ignore SmartScreen warnings and run malicious files.
+
 <a href="" id="speech-allowspeechmodelupdate"></a>**Speech/AllowSpeechModelUpdate**  
 <p style="margin-left: 20px">Added in Windows 10, version 1607. Specifies whether the device will receive updates to the speech recognition and speech synthesis models. A speech model contains data used by the speech engine to convert audio to text (or vice-versa). The models are periodically updated to improve accuracy and performance. Models are non-executable data files. If enabled, the device will periodically check for updated speech models and then download them from a Microsoft service using the Background Internet Transfer Service (BITS).
 
@@ -8115,6 +8213,9 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 <a href="" id="update-ignoremoappdownloadlimit"></a>**Update/IgnoreMOAppDownloadLimit**  
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies whether to ignore the MO download limit (allow unlimited downloading) over a cellular network for apps and their updates. If lower-level limits (for example, mobile caps) are required, those limits are controlled by external policies. 
 
+> [!WARNING]
+> Setting this policy might cause devices to incur costs from MO operators.
+
 <p style="margin-left: 20px">The following list shows the supported values:
 
 -   0 (default) – Do not ignore MO download limit for apps and their updates.
@@ -8133,6 +8234,9 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 
 <a href="" id="update-ignoremoupdatedownloadlimit"></a>**Update/IgnoreMOUpdateDownloadLimit**  
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies whether to ignore the MO download limit (allow unlimited downloading) over a cellular network for OS updates. If lower-level limits (for example, mobile caps) are required, those limits are controlled by external policies. 
+
+> [!WARNING]
+> Setting this policy might cause devices to incur costs from MO operators.
 
 <p style="margin-left: 20px">The following list shows the supported values:
 
@@ -8347,7 +8451,7 @@ Example
 > If the "Alternate Download Server" Group Policy is not set, it will use the WSUS server by default to download updates.  
 > This policy is not supported on Windows RT. Setting this policy will not have any effect on Windows RT PCs.
 
-<a href="" id="wifi-allowautoconnecttowifisensehotspots"></a>**WiFi/AllowAutoConnectToWiFiSenseHotspots**  
+<a href="" id="wifi-allowautoconnecttowifisensehotspots"></a>**Wifi/AllowAutoConnectToWiFiSenseHotspots**  
 <p style="margin-left: 20px">Allow or disallow the device to automatically connect to Wi-Fi hotspots.
 
 <p style="margin-left: 20px">The following list shows the supported values:
@@ -8357,7 +8461,7 @@ Example
 
 <p style="margin-left: 20px">Most restricted value is 0.
 
-<a href="" id="wifi-allowinternetsharing"></a>**WiFi/AllowInternetSharing**  
+<a href="" id="wifi-allowinternetsharing"></a>**Wifi/AllowInternetSharing**  
 <p style="margin-left: 20px">Allow or disallow internet sharing.
 
 <p style="margin-left: 20px">The following list shows the supported values:
@@ -8367,7 +8471,7 @@ Example
 
 <p style="margin-left: 20px">Most restricted value is 0.
 
-<a href="" id="wifi-allowmanualwificonfiguration"></a>**WiFi/AllowManualWiFiConfiguration**  
+<a href="" id="wifi-allowmanualwificonfiguration"></a>**Wifi/AllowManualWiFiConfiguration**  
 <p style="margin-left: 20px">Allow or disallow connecting to Wi-Fi outside of MDM server-installed networks.
 
 <p style="margin-left: 20px">The following list shows the supported values:
@@ -8381,7 +8485,7 @@ Example
 > Setting this policy deletes any previously installed user-configured and Wi-Fi sense Wi-Fi profiles from the device. Certain Wi-Fi profiles that are not user configured nor Wi-Fi sense might not be deleted. In addition, not all non-MDM profiles are completely deleted.
 
 
-<a href="" id="wifi-allowwifi"></a>**WiFi/AllowWiFi**  
+<a href="" id="wifi-allowwifi"></a>**Wifi/AllowWiFi**  
 <p style="margin-left: 20px">Allow or disallow Wi-Fi connection.
 
 <p style="margin-left: 20px">The following list shows the supported values:
@@ -8394,7 +8498,7 @@ Example
 <a href="" id="wifi-allowwifihotspotreporting"></a>**WiFi/AllowWiFiHotSpotReporting**  
 <p style="margin-left: 20px">This policy has been deprecated.
 
-<a href="" id="wifi-wlanscanmode"></a>**WiFi/WLANScanMode**  
+<a href="" id="wifi-wlanscanmode"></a>**Wifi/WLANScanMode**  
 <p style="margin-left: 20px">Allow an enterprise to control the WLAN scanning behavior and how aggressively devices should be actively scanning for Wi-Fi networks to get devices connected.
 
 <p style="margin-left: 20px">Supported values are 0-500, where 100 = normal scan frequency and 500 = low scan frequency.

@@ -27,7 +27,7 @@ Terminal Services uses terminal emulation to deliver the Windows desktop and Win
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[fDenyTSConnections](microsoft-windows-terminalservices-localsessionmanager=fdenytsconnections.md)</p></td>
+<td><p>[fDenyTSConnections](microsoft-windows-terminalservices-localsessionmanager-fdenytsconnections.md)</p></td>
 <td><p>Specifies whether remote desktop connections are enabled.</p></td>
 </tr>
 </tbody>
