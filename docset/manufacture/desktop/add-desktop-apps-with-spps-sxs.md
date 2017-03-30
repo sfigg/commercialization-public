@@ -83,7 +83,7 @@ You can add registry keys, for example, an OEM key, or a Windows Store identifie
 
     where *E* is the drive letter of the USB drive with ScanState.
 
-    **Optional**: Delete these logs to save disk space: `del C:\ScanState.log` `del c:\miglog.xml`. 
+    **Recommended**: Delete these logs to save disk space: `del C:\ScanState.log` `del c:\miglog.xml`. 
     
     ScanState creates two log files, ScanState.log and miglog.xml. The `/l` option can be used to specify where the logs are saved. The above command writes the logs to c:\. 
     
@@ -110,7 +110,7 @@ You can add registry keys, for example, an OEM key, or a Windows Store identifie
 
     where *E* is the drive letter of the USB drive with ScanState.
 
-    **Optional**: Delete the ScanState log files: `del C:\Scanstate.log` `del C:\miglog.xml`.
+    **Recommended**: Delete the ScanState log files: `del C:\Scanstate.log` `del C:\miglog.xml`.
 
 4.  To capture an add-on package, repeat the process. 
     Example: add Office 2016 language packs. Get these from the Office OPK Update image from the Office OPK Connect site.
@@ -130,7 +130,7 @@ You can add registry keys, for example, an OEM key, or a Windows Store identifie
           or
        -  For VMs, revert back to the checkpoint, apply the base package, then capture the next add-on pack.
 
-       **Optional**: Delete the ScanState log files: `del C:\ScanState.log` `del c:\miglog.xml`
+       **Recommended**: Delete the ScanState log files: `del C:\ScanState.log` `del c:\miglog.xml`
 
 5.  To capture more apps:
     -  Reinstall Windows, then capture the next app
