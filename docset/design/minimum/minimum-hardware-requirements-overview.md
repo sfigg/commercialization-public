@@ -1515,7 +1515,7 @@ Devices that run IoT Core must meet the RAM requirements shown in Table 14.
 | Display support         | RAM requirement\*                |
 |-------------------------|----------------------------------|
 | Without display support | &gt;= 256 MB available to the OS |
-| With display support    | &gt;= 512 MB available to the OS |
+| With display support    | &gt;= 512 MB available to the OS <br> (&gt;= 768 MB for 64bit Processors)|
 
 <sup>\*</sup>Available RAM needed after any carve-out by SoC vendor/OEM components. Additional RAM may be required based on the design and functionality of the device and display resolution.
 
