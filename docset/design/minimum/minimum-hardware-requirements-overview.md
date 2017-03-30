@@ -15,7 +15,7 @@ ms.assetid: 6B7E2CB1-A53B-4677-9F6C-D701ED777D17
 
 ### 1.1 Overview
 
-This specification defines the minimum hardware requirements for Windows 10 and all types of devices or computers designed for this release (Windows 10, version 1607). Microsoft will build and test the Windows 10 OS against the requirements described in this specification.
+This specification defines the minimum hardware requirements for Windows 10 and all types of devices or computers designed for this release (Windows 10, version 1703). Microsoft will build and test the Windows 10 OS against the requirements described in this specification.
 
 ### 1.1.1 Purpose of this specification
 
@@ -87,7 +87,7 @@ Windows is available in the following editions.
 
 Table 2 lists the device types that run Windows and the operating system editions that can run on them. In cases where the requirements for an OS differ based on the device type, this specification points out those differences.
 
-**Table 2:** Device types for Windows 10
+**Table 2:** Device types for Windows 10 and Server 2016
 
 <table>
 <colgroup>
@@ -147,8 +147,8 @@ Table 2 lists the device types that run Windows and the operating system edition
 </tr>
 <tr class="odd">
 <td>Server</td>
-<td>Traditional server computers</td>
-<td>x64 processors and SoCs</td>
+<td>Traditional server computers, to include pedestal, micro, rack mount, blade, high density/modular, partitionable, SoC</td>
+<td>x64 processors</td>
 <td>Windows Server 2016</td>
 </tr>
 <tr class="even">
@@ -326,6 +326,7 @@ Table 3 summarizes the hardware requirements for all Windows 10 operating system
 </td>
 <td>
 <p>Optional</p>
+<p>For details, see 5.5</p>
 </td>
 </tr>
 <tr>
