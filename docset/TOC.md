@@ -11,7 +11,6 @@
 ## [What's new in Design](design/what-s-new-in-design.md)
 ## [Change history for Design](design/change-history-for-design.md)
 ## [Minimum hardware requirements](design/minimum/minimum-hardware-requirements-overview.md)
-### [PC OEM requirements for Device Guard and Credential Guard](design/minimum/device-guard-and-credential-guard.md)
 ## [Form factors](design/form-factors/form-factors.md)
 ### [2-in-1](design/form-factors/2-in-1.md)
 ### [All-in-one](design/form-factors/all-in-one.md)
@@ -33,9 +32,6 @@
 #### [Windows Hello and Companion Device Framework](design/device-experiences/windows-hello-companion-device-framework.md)
 #### [Windows Hello biometric requirements](design/device-experiences/biometric-requirements.md)
 #### [Windows Hello face authentication](design/device-experiences/windows-hello-face-authentication.md)
-#### [Windows Hello OEM and IHV app scenarios for Windows 10 Build 1511](design/device-experiences/windows-hello-oem-and-ihv-app-scenarios-for-windows-10-build-1511.md)
-##### [Enable Windows Hello for a infrared camera for Windows 10 Build 1511](design/device-experiences/enable-windows-hello-for-a-infrared-camera-for-windows-10-build-1511.md)
-##### [Windows Hello infrared camera sample for Windows 10 Build 1511](design/device-experiences/windows-hello-infrared-camera-sample-for-windows-10-build-1511.md)
 ### [Modern Standby](design/device-experiences/modern-standby.md)
 #### [Power models and the advantages of using Modern Standby](design/device-experiences/advantages-of-using-modern-standby-over-s3.md)
 #### [Modern Standby design decisions](design/device-experiences/modern-standby-design-decisions.md)
@@ -143,6 +139,7 @@
 #### [Battery and charging](design/component-guidelines/battery-and-charging.md)
 #### [Battery Saver](design/component-guidelines/battery-saver.md)
 ### [Bluetooth](design/component-guidelines/bluetooth.md)
+### [Bluetooth LE pre-pairing](design/component-guidelines/bluetooth-prepairing.md)
 ### [Display](design/component-guidelines/display.md)
 ### [Ethernet](design/component-guidelines/ethernet.md)
 ### [Graphics](design/component-guidelines/graphics.md)
@@ -364,12 +361,11 @@
 # [Customize](customize/index.md)
 
 ## [What's new in customizations](customize/what-s-new-in-customizations.md)
-## [Change history for customization docs](customize/change-history-for-customize.md)
 
-## [Customizations for desktop](https://msdn.microsoft.com/library/windows/hardware/mt481437)
-### [Customiae the Start menu using Unattend](customize/desktop/customiz-the-startmenu-unattend.md)
+
+## [Customizations for desktop](customize/desktop/desktop-customizations-portal.md)
 ### [Customize the taskbar](customize/desktop/customize-the-taskbar.md)
-### [Set dark theme](customize/desktop/set-dark-mode.md)
+### [Set dark mode](customize/desktop/set-dark-mode.md)
 ### [Customize the Country and Operator Settings Asset](customize/desktop/customize-cosa.md)
 
 ### [Windows System Image Manager Technical Reference](customize/desktop/wsim/windows-system-image-manager-technical-reference.md)
@@ -502,8 +498,6 @@
 ### [Customize using the mobile MCSF framework](customize/mobile/mcsf/provisioning-and-customization.md)
 #### [Managed Centralized Settings Framework (MCSF)](customize/mobile/mcsf/managed-centralized-settings-framework-mcsf.md)
 #### [Customization answer file](customize/mobile/mcsf/customization-answer-file.md)
-#### [MCSF to Windows Provisioning settings map](customize/mobile/mcsf/mcsf-to-windows-provisioning-settings-map.md)
-#### [MCSF settings not supported in Windows Provisioning](customize/mobile/mcsf/mcsf-settings-not-supported-in-windows-provisioning.md)
 #### [Set languages and locales](customize/mobile/mcsf/set-languages-and-locales.md)
 #### [Create a resource-only .dll for localized strings](customize/mobile/mcsf/create-a-resource-only-dll-for-localized-strings.md)
 #### [Customizations for device management](customize/mobile/mcsf/customizations-for-device-management.md)
@@ -631,7 +625,7 @@
 ##### [Wi-Fi settings: Limited connectivity status](customize/mobile/mcsf/limited-connectivity-status.md)
 ##### [Wi-Fi settings: Wi-Fi always on, always connected](customize/mobile/mcsf/wi-fi-always-on-always-connected.md)
 ##### [Wi-Fi settings: Wi-Fi icon and notifications](customize/mobile/mcsf/wi-fi-icon-and-notifications.md)
-##### [Wi-Fi settings: Wi-Fi Sense](customize/mobile/mcsf/wi-fi-sense.md)
+##### [Wi-Fi settings: Connecting to open Wi-Fi hotspots in Windows 10](customize/mobile/mcsf/wi-fi-hotspots.md)
 ##### [Cellular + SIM settings: Add a suffix to the mobile operator name](customize/mobile/mcsf/add-a-suffix-to-the-mobile-operator-name.md)
 ##### [Cellular + SIM settings: Additional Internet APN settings](customize/mobile/mcsf/additional-internet-apn-settings.md)
 ##### [Cellular + SIM settings: Background cellular data restriction](customize/mobile/mcsf/background-cellular-data-restriction.md)
@@ -746,18 +740,8 @@
 ##### [Store live tile](customize/mobile/mcsf/store-live-tile.md)
 
 ## [Windows Provisioning framework](https://msdn.microsoft.com/library/windows/hardware/dn898375)
-### [Windows provisioning XML](https://msdn.microsoft.com/library/windows/hardware/dn916154)
-### [Provisioning settings store](https://msdn.microsoft.com/library/windows/hardware/mt147449)
-### [Windows provisioning answer file](https://msdn.microsoft.com/library/windows/hardware/dn916153)
-### [Provisioning engine](https://msdn.microsoft.com/library/windows/hardware/dn916152)
-### [Supported Windows customizations](https://msdn.microsoft.com/library/windows/hardware/mt147452)
-### [Provisioning packages](https://msdn.microsoft.com/library/windows/hardware/mt147447)
-### [NFC-based device provisioning](https://msdn.microsoft.com/library/windows/hardware/mt637870)
-### [Best practices when using the Windows provisioning framework](https://msdn.microsoft.com/library/windows/hardware/mt147442)
-### [Customize the Windows 10 Start screen](https://msdn.microsoft.com/library/windows/hardware/mt170651)
-### [Configure partner email account](https://msdn.microsoft.com/library/windows/hardware/mt761829)
+
 ### [Configure power settings](https://msdn.microsoft.com/library/windows/hardware/mt608264)
-### [Windows Imaging and Configuration Designer](https://msdn.microsoft.com/library/windows/hardware/dn916113)
 ### [Windows Provisioning settings reference](https://msdn.microsoft.com/library/windows/hardware/dn965990)
 
 ## [Mobile Device Management](customize/mdm/)
@@ -766,7 +750,7 @@
 ### [Preinstallable apps for desktop devices](customize/preinstall/preinstallable-apps-for-windows-10-desktop.md)
 ### [Preinstallable apps for mobile devices](customize/preinstall/preinstallable-apps-for-window-10-for-phones.md)
 ### [Preinstall tasks](customize/preinstall/preinstall-tasks.md)
-
+## [Change history for customization docs](customize/change-history-for-customize.md)
 
 # [Test](test/index.md)
 

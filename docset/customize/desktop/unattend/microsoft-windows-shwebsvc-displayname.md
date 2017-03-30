@@ -66,7 +66,7 @@ The following XML output shows how to set Lucerne Publishing for online printing
 ## Related topics
 
 
-[Microsoft-Windows-shwebsvc](microsoft-windows-shwebsvc-win7-microsoft-windows-shwebsvc.md)
+[Microsoft-Windows-shwebsvc](microsoft-windows-shwebsvc.md)
 
  
 

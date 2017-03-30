@@ -38,8 +38,6 @@ WPA is a powerful analysis tool that combines a very flexible UI with extensive 
 
 For basic procedures and a detailed walkthrough, see the [WPA Quick Start Guide](wpa-quick-start-guide.md). For complete documentation of the WPR UI, see [WPA Features](http://go.microsoft.com/fwlink/p/?linkid=223251). For step-by-step procedures, see [WPA How-to topics](http://go.microsoft.com/fwlink/p/?linkid=223252). For extended discussion of key scenarios, see [WPA Scenarios](windows-performance-analyzer-common-scenarios.md).
 
-You can download the Windows Performance Toolkit by visiting [Windows Insider Program](https://insider.windows.com/).
-
 ## Contents
 
 

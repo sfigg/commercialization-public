@@ -22,7 +22,7 @@ To add a preinstallable app, you will need to perform the following actions:
 -   Add the app to the image with Customization answer file
 -   Build the image
 
-For more information about customization answer files, see [Customization answer file](p_phCustomization.customization_answer_file). For more information about building with Customization answer files, see [Customization](setup.customization) and [Building a mobile image using ImgGen.cmd](p_phFlashing.building_a_phone_image_using_imggencmd).
+For more information about customization answer files, see [Customization answer file](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/customize/mobile/mcsf/customization-answer-file). For more information about building with Customization answer files, see [Building a mobile image using ImgGen.cmd](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/manufacture/mobile/building-a-phone-image-using-imggencmd).
 
 ## Request a preinstallation package
 
@@ -133,23 +133,8 @@ Now that you have a customization answer file, you can build the image either fr
 
 ## Build the image
 
+Follow the steps in the [Build a customized mobile image using imggen](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/manufacture/mobile/build-a-customized-mobile-image-using-imggen)
 
-In Windows ICD, you can build the image from the command line, or from the gui.
-
-To build the image using the Windows ICD UI, follow the instructions in the **Build and deploy an image for Windows 10 Mobile** topic.
-
-From the command line, use the “/Build-ImageFromPackages”: switch, as in the following example.
-
-`“/Build-ImageFromPackages”: [/MCSFCustomizationXML]`
-
-where ` [/MCSFCustomizationXML]` is the path to a Windows MCSF customizations XML file (caf).
-
-## Related topics
-
-
-[Updates to preloaded apps and services](p_phUpdate.updates_to_preloaded_apps_and_services)
-
- 
 
  
 

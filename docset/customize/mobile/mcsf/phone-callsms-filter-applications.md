@@ -27,13 +27,7 @@ OEMs can build and register a phone call/SMS filter application, which helps red
 <a href="" id="constraints---firstvariationonly"></a>**Constraints:** FirstVariationOnly  
 
 <a href="" id="instructions-"></a>**Instructions:**  
-1.  Create a phone call/SMS filter application. Refer to the following topics:
-
-    -   [Create a phone call and SMS filter application](p_phPartAppDev.create_a_phone_call_and_sms_filter_application) for information about what you need to do to create your application the main functions of the filter app architecture.
-
-    -   [Partner application API reference](p_phPartAppDev.partner_application_api_reference) contains detailed information you need about the APIs you need to create your phone call/SMS filter application.
-
-    Note the policies/limitations and restrictions for the phone call/SMS filter application.
+1.  Create a phone call/SMS filter application. 
 
 2.  Create a customization answer file using the contents shown in the following code sample.
 

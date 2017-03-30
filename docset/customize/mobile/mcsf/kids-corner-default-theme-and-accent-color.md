@@ -183,9 +183,6 @@ Partners can set the default theme, including the background color (light or dar
     </tbody>
     </table>
 
-     
-
-    To add custom accent colors, see [Themes and accent colors](p_phCustomization.themes_and_accent_colors).
 
 <a href="" id="testing-"></a>**Testing:**  
 1.  Flash the build containing this customization to a device.

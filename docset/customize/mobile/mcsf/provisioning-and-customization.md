@@ -16,7 +16,6 @@ MCSF consists of both image time and runtime components that enable a simple and
 
 Similar to the Unattend answer file that can be provided to Windows Setup for Windows Desktop image customization, a customization answer file can be passed to customize an image with specific settings and to create variants for the image. The customization answer file allows for a broader integration across the OS by providing OEMs with a single place to define nearly all OS settings. During image build time, the customization answer file is processed and built as customization packages, which are automatically included in the images. OEM partners can leverage this system by defining a registry or configuration service provider-based settings in packages using MCSF. MCSF also produces customization policy files for both OEM partners and Microsoft. These files are extracted from the packages used to build the OS image to determine the valid settings for the OS image.
 
-MCSF can co-exist with the Windows Provisioning customization framework so OEMs may continue to use their existing customization answer files that are based on the MCSF schema. However, some customizations and their associated settings may be deprecated or may no longer work as expected in Windows 10. More information about these customizations and settings will be provided in future documentation releases. Microsoft strongly recommends that OEMs port their existing Windows Phone 8.1 customizations to use the converged Windows provisioning and multivariant infrastructure in Windows 10.
 
 ## In this section
 
@@ -34,20 +33,12 @@ MCSF can co-exist with the Windows Provisioning customization framework so OEMs 
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[Managed Centralized Settings Framework (MCSF)](managed-centralized-settings-framework--mcsf-.md)</p></td>
+<td><p>[Managed Centralized Settings Framework (MCSF)](managed-centralized-settings-framework-mcsf.md)</p></td>
 <td><p>Provides a standard way to describe settings that are customizable within packages. MCSF also generates a policy based on the settings descriptions. The settings framework can be image time or runtime configurable. A runtime configurable MCSF can either be a configuration service provider-based customization or registry-based customization being exposed through the MSCF CSP.</p></td>
 </tr>
 <tr class="even">
 <td><p>[Customization answer file](customization-answer-file.md)</p></td>
 <td><p>A <strong>customization answer file</strong> is an XML file that you write based on the MCSF schema. OEMs can use the MCSF customization answer file to specify the settings and variants for a custom mobile OS image. The customization answer file allows for a broader integration across the OS by providing OEMs with a single place to define nearly all mobile OS settings.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[MCSF to Windows Provisioning settings map](https://msdn.microsoft.com/library/windows/hardware/mt450421)</p></td>
-<td><p>This topic lists the customizations available for Windows 10 Mobile.</p></td>
-</tr>
-<tr class="even">
-<td><p>[MCSF settings not supported in Windows Provisioning](https://msdn.microsoft.com/library/windows/hardware/mt573153)</p></td>
-<td><p>The following tables list the runtime and image time settings that were available in Windows Phone 8.1 but are not supported in the Windows Provisioning framework. You must use MCSF and [Customization answer files](customization-answer-file.md) to configure the values for these settings.</p></td>
 </tr>
 <tr class="odd">
 <td><p>[Set languages and locales](set-languages-and-locales.md)</p></td>

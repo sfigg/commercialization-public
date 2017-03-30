@@ -394,6 +394,17 @@ The following table show the configuration service providers supported in Window
 <td><img src="images/checkmark.png" alt="check mark" /></td>
 
 </tr>
+<tr class="even">
+<td>[EnterpriseAppVManagement CSP](enterpriseappvmanagement-csp.md)</td>
+<td><img src="images/crossmark.png" alt="cross mark" /></td>
+<td><img src="images/crossmark.png" alt="cross mark" /></td>
+<td><img src="images/checkmark.png" alt="check mark" />2</td>
+<td><img src="images/checkmark.png" alt="check mark" />2</td>
+<td><img src="images/crossmark.png" alt="cross mark" /></td>
+<td><img src="images/crossmark.png" alt="cross mark" /></td>
+<td><img src="images/crossmark.png" alt="cross mark" /></td>
+
+</tr>
 <tr class="odd">
 <td>[EnterpriseAssignedAccess CSP](enterpriseassignedaccess-csp.md)</td>
 <td><img src="images/crossmark.png" alt="cross mark" /></td>
@@ -548,6 +559,17 @@ The following table show the configuration service providers supported in Window
 <td><img src="images/checkmark.png" alt="check mark" />2</td>
 
 </tr>
+<tr class="even">
+<td>[NetworkQoSPolicy CSP](networkqospolicy-csp.md)</td>
+<td><img src="images/crossmark.png" alt="cross mark" /></td>
+<td><img src="images/crossmark.png" alt="cross mark" /></td>
+<td><img src="images/crossmark.png" alt="cross mark" /></td>
+<td><img src="images/crossmark.png" alt="cross mark" /></td>
+<td><img src="images/crossmark.png" alt="cross mark" /></td>
+<td><img src="images/crossmark.png" alt="cross mark" /></td>
+<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+
 <tr class="odd">
 <td>[NodeCache CSP](nodecache-csp.md)</td>
 <td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -557,6 +579,16 @@ The following table show the configuration service providers supported in Window
 <td><img src="images/checkmark.png" alt="check mark" /></td>
 <td><img src="images/checkmark.png" alt="check mark" /></td>
 <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+<tr class="even">
+<td>[Office CSP](office-csp.md)</td>
+<td><img src="images/checkmark.png" alt="check mark" />2</td>
+<td><img src="images/checkmark.png" alt="check mark" />2</td>
+<td><img src="images/checkmark.png" alt="check mark" />2</td>
+<td><img src="images/checkmark.png" alt="check mark" />2</td>
+<td><img src="images/crossmark.png" alt="cross mark" /></td>
+<td><img src="images/crossmark.png" alt="cross mark" /></td>
+<td><img src="images/crossmark.png" alt="cross mark" /></td>
 
 </tr>
 <tr class="even">
@@ -580,6 +612,16 @@ The following table show the configuration service providers supported in Window
 <td><img src="images/checkmark.png" alt="check mark" /></td>
 <td><img src="images/checkmark.png" alt="check mark" /></td>
 
+</tr>
+<tr class="odd">
+<td>[Personalization CSP](personalization-csp.md)</td>
+<td><img src="images/crossmark.png" alt="cross mark" /></td>
+<td><img src="images/crossmark.png" alt="cross mark" /></td>
+<td><img src="images/checkmark.png" alt="check mark" />2</td>
+<td><img src="images/checkmark.png" alt="check mark" />2</td>
+<td><img src="images/crossmark.png" alt="cross mark" /></td>
+<td><img src="images/crossmark.png" alt="cross mark" /></td>
+<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 <tr class="even">
 <td>[PolicyManager CSP](policymanager-csp.md)</td>
@@ -935,7 +977,7 @@ The following list shows the configuration service providers supported in Window
 | [DiagnosticLog CSP](diagnosticlog-csp.md)                                 | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       |
 | [DMAcc CSP](dmacc-csp.md)                                                 | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)       |
 | [DMClient CSP](dmclient-csp.md)                                           | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)       |
-| [EnterpriseModernAppManagement csp](enterprisemodernappmanagement-csp.md) | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       |
+| [EnterpriseModernAppManagement CSP](enterprisemodernappmanagement-csp.md) | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       |
 | [NodeCache CSP](nodecache-csp.md)                                         | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)       |
 | [Policy CSP](policy-configuration-service-provider.md)                    | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       |
 | [RootCATrustedCertificates CSP](rootcacertificates-csp.md)                | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       |
@@ -951,9 +993,14 @@ Footnotes:
 
 -   [BitLocker CSP](bitlocker-csp.md)
 -   [CleanPC CSP](cleanpc-csp.md)
--   [DeveloperSetup csp](developersetup-csp.md)
+-   [DeveloperSetup CSP](developersetup-csp.md)
+-   [DynamicManagement CSP](dynamicmanagement-csp.md)
+-   [EnterpriseAppVManagement CSP](enterpriseappvmanagement-csp.md)
 -   [Messaging CSP](messaging-csp.md)
 -   [NetworkProxy CSP](networkproxy-csp.md)
+-   [NetworkQoSPolicy CSP](networkqospolicy-csp.md)
+-   [Office CSP](office-csp.md)
+-   [Personalization CSP](personalization-csp.md)
 
 ## <a href="" id="newcsps"></a>New CSPs added in Windows 10, version 1511
 
@@ -978,6 +1025,7 @@ Footnotes:
 -   [DMClient CSP](dmclient-csp.md)
 -   [EnterpriseModernAppManagement CSP](enterprisemodernappmanagement-csp.md)
 -   [HealthAttestation CSP](healthattestation-csp.md)
+-   [NetworkQoSPolicy CSP](networkqospolicy-csp.md)
 -   [NodeCache CSP](nodecache-csp.md)
 -   [PassportForWork CSP](passportforwork-csp.md)
 -   [Policy CSP](policy-configuration-service-provider.md)

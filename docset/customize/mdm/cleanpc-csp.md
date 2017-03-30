@@ -15,9 +15,9 @@ The CleanPC configuration service provider (CSP) allows removal of user-installe
 
 The following diagram shows the CleanPC configuration service provider in tree format.
 
-![eUICCs csp diagram](images/provisioning-csp-cleanpc.png)
+![CleanPC csp diagram](images/provisioning-csp-cleanpc.png)
 
-<a href="" id="cleanpc"></a>**CleanPC**  
+<a href="" id="--device-vendor-msft-cleanpc"></a>**./Device/Vendor/MSFT/CleanPC**  
 <p style="margin-left: 20px">The root node for the CleanPC configuration service provider.</p>
 
 <a href="" id="cleanpcwithoutretaininguserdata"></a>**CleanPCWithoutRetainingUserData**  
