@@ -238,29 +238,6 @@ This topic shows the OMA DM device description framework (DDF) for the **Windows
               </DFType>
             </DFProperties>
           </Node>
-          <Node>
-            <NodeName>GroupIds</NodeName>
-            <DFProperties>
-              <AccessType>
-                <Get />
-                <Replace />
-              </AccessType>
-              <Description>Set of Strings used by customer to mark subset of machines for WDATP targeting</Description>
-              <DFFormat>
-                <chr />
-              </DFFormat>
-              <Occurrence>
-                <One />
-              </Occurrence>
-              <Scope>
-                <Permanent />
-              </Scope>
-              <DFTitle>Group identifiers</DFTitle>
-              <DFType>
-                <MIME>text/plain</MIME>
-              </DFType>
-            </DFProperties>
-          </Node>
         </Node>
         <Node>
           <NodeName>Offboarding</NodeName>
