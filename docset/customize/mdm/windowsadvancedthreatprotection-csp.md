@@ -118,7 +118,7 @@ The following list describes the characteristics and parameters.
         </Target>
       </Item>
     </Get>
-        <Get>
+    <Get>
       <CmdID>2</CmdID>
       <Item>
         <Target>
@@ -128,7 +128,7 @@ The following list describes the characteristics and parameters.
         </Target>
       </Item>
     </Get>
-            <Get>
+    <Get>
       <CmdID>3</CmdID>
       <Item>
         <Target>
@@ -138,7 +138,7 @@ The following list describes the characteristics and parameters.
         </Target>
       </Item>
     </Get>
-            <Get>
+    <Get>
       <CmdID>4</CmdID>
       <Item>
         <Target>
@@ -148,13 +148,22 @@ The following list describes the characteristics and parameters.
         </Target>
       </Item>
     </Get>
-
-            <Get>
+    <Get>
       <CmdID>5</CmdID>
       <Item>
         <Target>
           <LocURI>
             ./Device/Vendor/MSFT/WindowsAdvancedThreatProtection/Configuration/SampleSharing
+          </LocURI>
+        </Target>
+      </Item>
+    </Get>
+    <Get>
+      <CmdID>6</CmdID>
+      <Item>
+        <Target>
+          <LocURI>
+            ./Device/Vendor/MSFT/WindowsAdvancedThreatProtection/Configuration/TelemetryReportingFrequency
           </LocURI>
         </Target>
       </Item>
