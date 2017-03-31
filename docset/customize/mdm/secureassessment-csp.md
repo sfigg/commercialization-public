@@ -9,9 +9,6 @@ ms.assetid: 6808BE4B-961E-4638-BF15-FD7841D1C00A
 
 # SecureAssessment CSP
 
-> [!WARNING]
-> Some information relates to prereleased product, which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.  
-
 The SecureAssessment configuration service provider is used to provide configuration information for the secure assessment browser.
 
 The following diagram shows the SecureAssessment configuration service provider management objects in tree format as used by Open Mobile Alliance Device Management (OMA DM), OMA Client Provisioning, and Enterprise DM.

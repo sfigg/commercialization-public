@@ -9,10 +9,6 @@ MSHAttr:
 
 # Implement server-side support for mobile application management on Windows 
 
-
-> [!WARNING]
-> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.  
-
 The Windows version of mobile application management (MAM) is a lightweight solution for managing company data access and security on personal devices. MAM support is built into Windows on top of Windows Information Protection (WIP), starting in Windows 10, version 1703.
 
 ## Integration with Azure Active Directory

@@ -9,10 +9,6 @@ ms.assetid: D90791B5-A772-4AF8-B058-5D566865AF8D
 
 # Policy DDF file
 
-
-> [!WARNING]
-> Some information relates to prereleased product, which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.  
-
 This topic shows the OMA DM device description framework (DDF) for the **Policy** configuration service provider. DDF files are used only with OMA DM provisioning XML.
 
 The XML below is the latest version of the DDF. You can download the previous versions of the DDF for Windows 10 version 1607 from [this website](http://download.microsoft.com/download/2/3/E/23E27D6B-6E23-4833-B143-915EDA3BDD44/Windows10_1607_DDF.zip).
