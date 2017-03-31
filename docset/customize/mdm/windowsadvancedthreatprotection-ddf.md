@@ -9,6 +9,8 @@ ms.assetid: 0C62A790-4351-48AF-89FD-7D46C42D13E0
 
 # WindowsAdvancedThreatProtection DDF file
 
+> [!WARNING]
+> Some information relates to prereleased product, which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here. 
 
 This topic shows the OMA DM device description framework (DDF) for the **WindowsAdvancedThreatProtection** configuration service provider. DDF files are used only with OMA DM provisioning XML.
 
@@ -37,7 +39,7 @@ This topic shows the OMA DM device description framework (DDF) for the **Windows
             <Permanent />
           </Scope>
           <DFType>
-            <MIME>com.microsoft/1.0/MDM/WindowsAdvancedThreatProtection</MIME>
+            <MIME>com.microsoft/1.1/MDM/WindowsAdvancedThreatProtection</MIME>
           </DFType>
         </DFProperties>
         <Node>
@@ -207,6 +209,30 @@ This topic shows the OMA DM device description framework (DDF) for the **Windows
               <Scope>
                 <Permanent />
               </Scope>
+              <DFType>
+                <MIME>text/plain</MIME>
+              </DFType>
+            </DFProperties>
+          </Node>
+          <Node>
+            <NodeName>TelemetryReportingFrequency</NodeName>
+            <DFProperties>
+              <AccessType>
+                <Get />
+                <Replace />
+              </AccessType>
+              <DefaultValue>1</DefaultValue>
+              <Description>Return or set Windows Defender Advanced Threat Protection telemetry reporting frequency. Allowed values are: 1 - Normal, 2 - Expedite</Description>
+              <DFFormat>
+                <int />
+              </DFFormat>
+              <Occurrence>
+                <One />
+              </Occurrence>
+              <Scope>
+                <Permanent />
+              </Scope>
+              <DFTitle>Telemetry reporting frequency</DFTitle>
               <DFType>
                 <MIME>text/plain</MIME>
               </DFType>

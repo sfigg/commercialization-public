@@ -577,6 +577,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>Experience/AllowTailoredExperiencesWithDiagnosticData</li>
 <li>Experience/AllowWindowsSpotlightOnActionCenter</li>
 <li>Experience/AllowWindowsSpotlightWindowsWelcomeExperience</li>
+<li>Location/EnableLocation</li>
 <li>Messaging/AllowMMS</li>
 <li>Messaging/AllowRCS</li>
 <li>Privacy/LetAppsGetDiagnosticInfo</li>
@@ -630,7 +631,10 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 </td></tr>
 <tr class="odd">
 <td style="vertical-align:top">[DevDetail CSP](devdetail-csp.md)</td>
-<td style="vertical-align:top"><p>Added the following setting: DeviceHardwareData.</p>
+<td style="vertical-align:top"><p>Added the following setting:</p>
+<ul>
+<li>DeviceHardwareData</li>
+</ul>
 </td>
 </tr>
 <tr class="even">
@@ -722,6 +726,14 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <td style="vertical-align:top"><p>Added the following setting:</p>
 <ul>
 <li>ChangeProductKey</li>
+</ul>
+</td>
+</tr>
+<tr class="odd">
+<td style="vertical-align:top">[WindowsAdvancedThreatProtection CSP](windowsadvancedthreatprotection-csp.md)</td>
+<td style="vertical-align:top"><p>Added the following setting:</p>
+<ul>
+<li>Configuration/TelemetryReportingFrequency</li>
 </ul>
 </td>
 </tr>
@@ -1017,6 +1029,7 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>Connectivity/AllowConnectedDevices</li>
 <li>Display/TurnOffGdiDPIScalingForApps</li>
 <li>Display/TurnOnGdiDPIScalingForApps</li>
+<li>Location/EnableLocation</li>
 <li>SmartScreen/EnableAppInstallControl</li>
 <li>SmartScreen/EnableSmartScreenInShell</li>
 <li>SmartScreen/PreventOverrideForFilesInShell</li>
@@ -1108,6 +1121,14 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>RevokeOnMDMHandoff</li>
 <li>SMBAutoEncryptedFileExtensions</li>
 </ul></td>
+</tr>
+<tr class="odd">
+<td style="vertical-align:top">[WindowsAdvancedThreatProtection CSP](windowsadvancedthreatprotection-csp.md)</td>
+<td style="vertical-align:top"><p>Updated in Windows 10, version 1703. Added the following setting:</p>
+<ul>
+<li>Configuration/TelemetryReportingFrequency</li>
+</ul>
+</td>
 </tr>
 </tbody>
 </table>
