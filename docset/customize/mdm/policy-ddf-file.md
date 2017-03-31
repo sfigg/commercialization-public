@@ -21,7 +21,7 @@ You can download the DDF files from the links below:
 - [Download the Policy DDF file for Windows 10, version 1607](http://download.microsoft.com/download/6/1/C/61C022FD-6F5D-4F73-9047-17F630899DC4/PolicyDDF_all_version1607.xml)
 - [Download all the DDF files for Windows 10, version 1607](http://download.microsoft.com/download/2/3/E/23E27D6B-6E23-4833-B143-915EDA3BDD44/Windows10_1607_DDF.zip)
 
-The XML below is the latest version of the DDF for Windows 10, version 1703.
+The XML below is the DDF for Windows 10, version 1703.
 
 ``` syntax
 <?xml version="1.0" encoding="UTF-8"?>
