@@ -34,6 +34,7 @@ When the device switches to tablet mode, the following occur:
 -   Store apps and Win32 apps can optimize their layout to be touch-first when in tablet mode.
 -   The user can close apps, even Win32 apps, by swiping down from the top edge.
 -   The user can snap up to two apps side-by-side, including Win32 apps, and easily resize them simultaneously with their finger.
+-   Apps can auto-launch side-by-side to create multitasking layouts without much user effort.
 -   The taskbar transforms into a navigation and status bar that’s more appropriate for tablets.
 -   The touch keyboard can be auto-invoked.
 
@@ -77,7 +78,7 @@ Your SOC IHV partner may already offer a driver or other solution that injects t
 
 ### Method 3 - Use unattend setting to declare the permanent device state
 
-If your device is not a 2-n-1 device, for example a regular laptop or desktop, you can disable prompting using the [ConvertibleSlateModePromptPreference](../../customize/desktop/unattend/microsoft-windows-shell-convertibleslatemodepromptpreference.md) setting in your answer file. Set the value to 0 and the prompt will not show up and the UI will not switch. If no value is specified, the default value is 1, where the system will be prompted to switch modes.
+If your device is not a 2-in-1 device, for example a regular laptop or desktop, you can disable prompting using the [ConvertibleSlateModePromptPreference](../../customize/desktop/unattend/microsoft-windows-shell-convertibleslatemodepromptpreference.md) setting in your answer file. Set the value to 0 and the prompt will not show up and the UI will not switch. If no value is specified, the default value is 1, where the system will be prompted to switch modes.
 
 **Note**  It is also recommended that you specify the type of form factor you are building using the [DeviceForm](../../customize/desktop/unattend/microsoft-windows-deployment-deviceform.md) setting in your answer file.
 
@@ -105,7 +106,7 @@ Using the presence of a Bluetooth keyboard as a tablet mode trigger is not suppo
 
 If you are interested in making sure that a device that ships with a Bluetooth-enabled keyboard provides hardware-based hinting for the customer to change modes, we recommend implementing a sensor that would understand the current form factor and then signal to the OS through ConvertibleSlateMode.
 
-Because the Windows 10 prompt to enter/exit “tablet mode” is dependent on the implementation of ConvertibleSlateMode, it is important to ensure the firmware that toggles ConvertibleSlateMode is tested thoroughly. ConvertibleSlateMode implementations of lower quality can lead to a poor end user experience, such as asking the user to “enter ‘tablet mode’” multiple times.
+Because the Windows prompt to enter/exit “tablet mode” is dependent on the implementation of ConvertibleSlateMode, it is important to ensure the firmware that toggles ConvertibleSlateMode is tested thoroughly. ConvertibleSlateMode implementations of lower quality can lead to a poor end user experience, such as asking the user to “enter ‘tablet mode’” multiple times.
 
 In addition, when a 2-in-1 device changes from clamshell to tablet, the keyboard and touchpad can receive accidental presses from the user holding the tablet. Windows does not support ignoring input from the built-in keyboard and touchpad when a convertible changes into a tablet. We expect that device manufacturers do work in their hardware or software to avoid unintentional input during the form factor change, and test it thoroughly. The following table shows a few of the common errors that can occur, along with use cases that could cause them. These use cases should be tested to prevent the user from having a poor switching experience:
 
@@ -114,11 +115,13 @@ In addition, when a 2-in-1 device changes from clamshell to tablet, the keyboard
 <col width="50%" />
 <col width="50%" />
 </colgroup>
-<tbody>
-<tr class="odd">
-<td>Error</td>
-<td>Use cases that can cause the error</td>
+<thead>
+<tr class="header">
+<th>Error</th>
+<th>Use cases that can cause the error</th>
 </tr>
+</thead>
+<tbody>
 <tr class="even">
 <td>ConvertibleSlateMode switches even though there is no customer-observable reason (for example, a false firing).</td>
 <td><ul>
@@ -210,7 +213,7 @@ The following unattend settings are useful if you are designing for a tablet mod
 ## Creating an app that interacts with tablet mode APIs
 
 
-You can take advantage of tablet mode by using new Universal Windows Platform (UWP) and Classic Windows APIs in your apps. Using these APIs, you can tailor the user experience of your app to be touch-first for tablet mode or mouse-first for desktop usage. This section describes how to use both the UWP and Classic Windows APIs in your applications to detect and react to tablet mode.
+You can take advantage of tablet mode by using Universal Windows Platform (UWP) and Classic Windows APIs in your apps. Using these APIs, you can tailor the user experience of your app to be touch-first for tablet mode or mouse-first for desktop usage. This section describes how to use both the UWP and Classic Windows APIs in your applications to detect and react to tablet mode.
 
 The APIs allows both Windows desktop applications and Universal Windows apps to query for the current interaction mode and respond to changes to the mode, as described here.
 
@@ -336,22 +339,21 @@ void OnSettingsChange(LPARAM lParam)
 }
 ```
 
-## Frequently Ask Questions (FAQ)
+## Frequently Asked Questions (FAQ)
 
 
-|     |                                                                                                                                                |                                                                                                                                                                                                                                                                                                                                              |
-|-----|------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | \#  | **Question**                                                                                                                                   | **Answer**                                                                                                                                                                                                                                                                                                                                   |
-| 1   | Will any of the file association change when the device is in “tablet mode”?                                                                   | No, Windows 10 will not change any file associations as all apps are supported in “tablet mode”.                                                                                                                                                                                                                                             |
+|-----|------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 1   | Will any of the file association change when the device is in “tablet mode”?                                                                   | No, Windows will not change any file associations as all apps are supported in “tablet mode”.                                                                                                                                                                                                                                                |
 | 2   | My system implements ConvertibleSlateMode but state transitions don’t result in a prompt asking me to enter/exit “tablet mode”                 | If your 2-in-1 device toggles ConvertibleSlateMode correctly, but the system does not prompt you to enter/exit “tablet mode” the feature may be turned off. To turn tablet mode on, go to **Settings\\System\\Tablet Mode**. From the dropdown list, select “When my device wants to switch modes” and select “Always prompt me to confirm.” |
 | 3   | Will the auto prompt to enter/exit “tablet mode” take place upon the insertion of an external USB keyboard?                                    | No, the auto prompt will be triggered through the toggling of the ConvertibleSlateMode value, not the presence of any kind of keyboard.                                                                                                                                                                                                      |
 | 4   | What triggers the "GPIO Laptop or Slate Indicator driver" to show up in Device Manager?                                                        | Defining PNP0C60 (laptop/slate mode state indicator) will trigger the driver to show in Device Manager. You must choose “Show the hidden device” option from Device Manager to show this driver.                                                                                                                                             |
 | 5   | Can we use pure All-in-ones (AiO) with external keyboard and mouse to enable the same scenario?                                                | Yes, AiOs can take advantage of “tablet mode” by implementing ConvertibleSlateMode toggling at the appropriate transition point for the hardware.                                                                                                                                                                                            |
-| 6   | Is touch keyboard auto disabled while “tablet mode” is disabled?                                                                               | By default the touch keyboard only auto-invokes while in “tablet mode”. When using the Desktop, the touch keyboard must be invoked manually.                                                                                                                                                                                                 |
+| 6   | Is touch keyboard auto disabled while “tablet mode” is disabled?                                                                               | The touch keyboard only auto-invokes while in “tablet mode”. During Desktop usage, the touch keyboard must be invoked manually. If a user is not in "tablet mode", but they remove their keyboard from the device, the touch keyboard will appear.                                                                                           |
 | 7   | Will a Bluetooth keyboard be considered as a “dock”?                                                                                           | No, a Bluetooth keyboard will not be considered a “dock” as that scenario may not always be true. Tablet mode never uses the presence of a keyboard (USB, Bluetooth, etc.) to trigger a prompt. You can implement a Bluetooth detachable design by toggling ConvertibleSlateMode at the appropriate time.                                    |
-| 8   | Win32 apps: For a Win32 app to take advantage of tablet mode, does the app need to be complied with Windows 10 universal APIs?                 | Win32 apps will have a Win32-specific API that they can consume to adapt between touch-first and mouse-first usage.                                                                                                                                                                                                                          |
-| 9   | For application developer, do we need to call any API to handle tablet and desktop mode switching? Or will Windows 10 handle it automatically? | If you want to change the layout inside your application, you will need to consume either a Universal API or a Win32 API to indicate “tablet mode” . The actual resizing of the application when entering/exiting “tablet mode” is automatically handled.                                                                                    |
-| 10  | For tablets do we need a Virtual Driver if GPIO is supported? If GPIO is available do we need any BIOS changes?                                | You have a choice of using the physical GPIO or the injection driver approach. As long as you are properly toggling ConvertibleSlateMode, no changes are necessary. Important: Windows 10 implementation of ConvertibleSlateMode is different from Windows 8.1. You must thoroughly test your device to ensure correct behavior.             |
+| 8   | Win32 apps: For a Win32 app to take advantage of tablet mode, does the app need to be compiled with Universal Windows Platform (UWP) APIs?     | Win32 apps will have a Win32-specific API that they can consume to adapt between touch-first and mouse-first usage.                                                                                                                                                                                                                          |
+| 9   | For an application developer, do we need to call any API to handle tablet and desktop mode switching? Or will Windows handle it automatically? | If you want to change the layout inside your application, you will need to use either a UWP API or a Win32 API to indicate “tablet mode”. The actual resizing of the application when entering/exiting “tablet mode” is automatically handled.                                                                                               |
+| 10  | For tablets, do we need a Virtual Driver if GPIO is supported? If GPIO is available do we need any BIOS changes?                               | You have a choice of using the physical GPIO or the injection driver approach. As long as you are properly toggling ConvertibleSlateMode, no changes are necessary. Important: Windows 10 implementation of ConvertibleSlateMode is different from Windows 8.1. You must thoroughly test your device to ensure correct behavior.             |
 | 11  | Is there requirements or changes to UEFI BIOS to support tablet mode?                                                                          | There are no inherent changes to the UEFI BIOS required to support tablet mode. You are free to toggle ConvertibleSlateMode by whatever means work best for you.                                                                                                                                                                             |
 | 12  | Is screen rotation tied to tablet mode?                                                                                                        | No, screen rotation is not necessarily related to tablet mode. Screen rotation is tied to your current device configuration which may or may not map to whether the device is in “tablet mode”.                                                                                                                                              |
 
