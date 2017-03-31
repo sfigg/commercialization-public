@@ -3836,7 +3836,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 		<td style="vertical-align:top"><a href="#update-fillemptycontenturls">Update/FillEmptyContentUrls</a></td>
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Home</p></td>
 		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Pro</p></td>
-		<td style="vertical-align:top"><p></p></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Business</p></td>
 		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Enterprise</p></td>
 		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Education</p></td>
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Mobile</p></td>
