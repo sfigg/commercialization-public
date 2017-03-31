@@ -85,7 +85,7 @@ Customize these files to capture more or fewer components in the siloed provisio
 The following example uses a configuration file to create a siloed provisioning package that contains Windows desktop applications installed on a reference device:
 
 ```syntax
-ScanState.exe /apps:-sysdrive /o /v:13 /config:Config_AppsOnly.xml /ppkg e:\repository\SPP_base.spp
+ScanState.exe /apps:-sysdrive /o /v:13 /config:Config_AppsOnly.xml /ppkg e:\repository\SPP_base.spp /l:C:\Scanstate.log
 ```
 
 Here are what the parameters for the above command mean:
@@ -97,6 +97,7 @@ Here are what the parameters for the above command mean:
 | /o | Overwrites any existing data in the store. If not specified, ScanState will fail if the store already contains data. |
 | /v:13 | Produces a MigLog.xml file that indicates what gets captured. |
 | /diff | Used with the /apps command option to capture application add-on components relative to parent applications already captured in siloed provisioning packages. |
+| /l:ScanState.log | Tells ScanState where to save log files. When used in combination with `/v:13`, ScanState will save MigLog.xml to the same folder as ScanState.log |
 
 ### Capture add-on components
 
