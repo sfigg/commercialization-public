@@ -9,9 +9,6 @@ ms.assetid: F1627B57-0749-47F6-A066-677FDD3D7359
 
 # Update CSP
 
-> [!WARNING]
-> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
-
 The Update configuration service provider enables IT administrators to manage and control the rollout of new updates.
 
 The following diagram shows the Update configuration service provider in tree format.
