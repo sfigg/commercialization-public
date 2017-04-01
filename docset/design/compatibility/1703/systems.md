@@ -7503,6 +7503,12 @@ For systems to be awarded the Assurance AQ, the UEFI implementation must be comp
 
 This will be accomplished using the correct build options for creating the UEFI binaries. The system must include the GUID the firmware can set to claim compliance with this requirement.
 
+The platform is required to implement hardware security test interface and share documentation and tools as specified in the Hardware Security Test Interface Specification document, available at http://aka.ms/wmic
+
+This requirement is IF IMPLEMENTED for Server system designs not based on Intel® Xeon® processor Intel64 Family 6 Model 85 Stepping X, or later – where X will vary, nor AMD® Opteron® AMD64 Family 23 Model 1 Stepping 1 or later processor, for Windows Server systems seeking the Hardware Assurance Additional Qualification.
+
+This requirement will be REQUIRED for Server system designs that are based on Intel® Xeon® processor Intel64 Family 6 Model 85 Stepping X, or later – where X will vary, or AMD® Opteron® AMD64 Family 23 Model 1 Stepping 1 or later processor, for Windows Server systems seeking the Hardware Assurance Additional Qualification.
+
 
 <a name="system.server.azurestack"></a>
 ## System.Server.AzureStack
