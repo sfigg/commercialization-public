@@ -4,10 +4,7 @@ description: Starting in Windows 10, version 1703, you can import ADMX files and
 ---
 
 # Win32 and Centennial app policy configuration
-
-> [!WARNING]
-> Some information relates to pre-released product, which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.  
-
+  
 ## In this section
 
 -   [Overview](#overview)

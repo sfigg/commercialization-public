@@ -9,10 +9,6 @@ ms.assetid: 6F2D783C-F6B4-4A81-B9A2-522C4661D1AC
 
 # Device HealthAttestation CSP
 
-
-> [!WARNING]
-> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.  
-
 The Device HealthAttestation configuration service provider (DHA-CSP) enables enterprise IT managers to assess if a device is booted to a trusted and compliant state, and take enterprise policy actions.
 
 The following is a list of functions performed by the Device HealthAttestation CSP:

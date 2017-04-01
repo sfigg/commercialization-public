@@ -5,9 +5,6 @@ description: Starting in Windows 10, version 1703, you can use ADMX-backed polic
 
 # Understanding ADMX-backed policies
 
-> [!WARNING]
-> Some information relates to prereleased product, which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.  
-
 Due to increased simplicity and the ease with which devices can be targeted, enterprise businesses are finding it increasingly advantageous to move their PC management to a cloud-based device management solution. Unfortunately, current Windows PC device-management solutions lack the critical policy and app settings configuration capabilities that are supported in a traditional PC management solution. 
 
 Starting in Windows 10 version 1703, Mobile Device Management (MDM) policy configuration support will be expanded to allow access of select Group Policy administrative templates (ADMX-backed policies) for Windows PCs via the Policy configuration service provider (CSP). This expanded access ensures that enterprises do not need to compromise security of their devices in the cloud.

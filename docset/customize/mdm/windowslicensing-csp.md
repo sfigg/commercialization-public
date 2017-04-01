@@ -9,9 +9,6 @@ ms.assetid: E6BC6B0D-1F16-48A5-9AC4-76D69A7EDDA6
 
 # WindowsLicensing CSP
 
-> [!WARNING]
-> Some information relates to prereleased product, which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here. 
-
 The WindowsLicensing configuration service provider is designed for licensing related management scenarios. Currently the scope is limited to edition upgrades of Windows 10 desktop and mobile devices, such as Windows 10 Pro to Windows 10 Enterprise. In addition, this CSP provides the capability to activate or change the product key of Windows 10 desktop devices.
 
 The following diagram shows the WindowsLicensing configuration service provider in tree format.

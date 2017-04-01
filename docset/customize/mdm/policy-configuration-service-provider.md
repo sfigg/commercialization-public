@@ -9,9 +9,6 @@ ms.assetid: 4F3A1134-D401-44FC-A583-6EDD3070BA4F
 
 # Policy CSP
 
-> [!WARNING]
-> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.  
-
 The Policy configuration service provider enables the enterprise to configure policies on Windows 10. Use this configuration service provider to configure any company policies.
 
 The Policy configuration service provider has the following sub-categories:
@@ -1851,6 +1848,17 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Mobile Enterprise</p></td>
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>IoT Core</p></td>
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>EAS</p></td></tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#location-enablelocation">Location/EnableLocation</a></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Home</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Pro</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Business</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Enterprise</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Education</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Mobile</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Mobile Enterprise</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>IoT Core</p></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"<p>EAS</p></td></tr>
 	<tr>
 		<td style="vertical-align:top"><a href="#lockdown-allowedgeswipe">LockDown/AllowEdgeSwipe</a></td>
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Home</p></td>
@@ -3822,6 +3830,16 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">1<p>IoT Core</p></td>
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>EAS</p></td></tr>
 	<tr>
+		<td style="vertical-align:top"><a href="#update-fillemptycontenturls">Update/FillEmptyContentUrls</a></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Home</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Pro</p></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Business</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Enterprise</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Education</p></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Mobile</p></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Mobile Enterprise</p></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>IoT Core</p></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>EAS</p></td></tr>
 	<tr>
 		<td style="vertical-align:top"><a href="#update-ignoremoappdownloadlimit">Update/IgnoreMOAppDownloadLimit</a></td>
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Home</p></td>
@@ -3833,7 +3851,6 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Mobile Enterprise</p></td>
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>IoT Core</p></td>
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>EAS</p></td></tr>
-	<tr>
 	<tr>
 		<td style="vertical-align:top"><a href="#update-ignoremoupdatedownloadlimit">Update/IgnoreMOUpdateDownloadLimit</a></td>
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Home</p></td>
@@ -6341,6 +6358,22 @@ Enables or disables Windows Tips / soft landing.
 -   0 (default) – Disabled.
 -   1 – Enabled.
 
+<a href="" id="location-enablelocation"></a>**Location/EnableLocation**  
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Optional policy that allows for IT admin to preconfigure whether or not Location Service's Device Switch is enabled or disabled for the device. Setting this policy is not required for Location Services to function. This policy controls a device wide state that affects all users, apps, and services ability to find the device's latitude and longitude on a map. There is a separate user switch that defines whether the location service is allowed to retrieve a position for the current user. In order to retrieve a position for a specific user, both the Device Switch and the User Switch must be enabled. If either is disabled, positions cannot be retrieved for the user. The user can later change both the User Switch and the Device Switch through the user interface on the Settings -> Privacy -> Location page.
+
+> [!IMPORTANT]
+> This policy is not intended to ever be set, pushed, or refreshed more than one time after the first boot of the device because it is meant as initial configuration. Refreshing this policy might result in the Location Service's Device Switch changing state to something the user did not select, which is not an intended use for this policy.
+
+<p style="margin-left: 20px">The following list shows the supported values:
+
+-   0 (default) – Disabled.
+-   1 – Enabled.
+
+<p style="margin-left: 20px">To validate on Desktop, do the following:
+
+1.   Verify that Settings -> Privacy -> Location -> Location for this device is On/Off as expected.
+2.   Use Windows Maps Application (or similar) to see if a location can or cannot be obtained.
+
 <a href="" id="lockdown-allowedgeswipe"></a>**LockDown/AllowEdgeSwipe**  
 <p style="margin-left: 20px">Added in Windows 10, version 1607. Allows the user to invoke any system user interface by swiping in from any screen edge using touch.
 
@@ -8183,6 +8216,19 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 -   0 (default) – Allow Windows Update drivers.
 -   1 – Exclude Windows Update drivers.
 
+
+<a href="" id="update-fillemptycontenturls"></a>**Update/FillEmptyContentUrls**  
+
+<p style="margin-left: 20px">Added in the April service release of Windows 10, version 1607. Allows Windows Update Agent to determine the download URL when it is missing from the metadata.  This scenario will occur when intranet update service stores the metadata files but the download contents are stored in the ISV file cache (specified as the <a href="#update-updateserviceurlalternate">alternate download URL</a>).
+
+> [!NOTE]
+> This setting should only be used in combination with an alternate download URL and configured to use ISV file cache.  This setting is used when the intranet update service does not provide download URLs in the update metadata for files which are available on the alternate download server.
+
+<p style="margin-left: 20px">The following list shows the supported values:
+
+-   0 (default) – Disabled.
+-   1 – Enabled.
+
 <a href="" id="update-ignoremoappdownloadlimit"></a>**Update/IgnoreMOAppDownloadLimit**  
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies whether to ignore the MO download limit (allow unlimited downloading) over a cellular network for apps and their updates. If lower-level limits (for example, mobile caps) are required, those limits are controlled by external policies. 
 
@@ -8378,7 +8424,7 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 > This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
 
 > [!Important]  
-> Starting in Windows 10, version 1703 this policy is not supported in Windows 10 Mobile Enteprise and IoT Enterprise.
+> Starting in Windows 10, version 1703 this policy is not supported in Windows 10 Mobile Enteprise and IoT Mobile.
 
 <p style="margin-left: 20px">Allows the device to check for updates from a WSUS server instead of Microsoft Update. This is useful for on-premise MDMs that need to update devices that cannot connect to the Internet.
 

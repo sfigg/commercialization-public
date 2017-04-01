@@ -9,9 +9,6 @@ ms.assetid: A2182898-1577-4675-BAE5-2A3A9C2AAC9B
 
 # PassportForWork DDF
 
-> [!WARNING]
-> Some information relates to prereleased product, which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
-
 This topic shows the OMA DM device description framework (DDF) for the **PassportForWork** configuration service provider. DDF files are used only with OMA DM provisioning XML.
 
 You can download the Windows 10 version 1607 DDF files from [here](http://download.microsoft.com/download/2/3/E/23E27D6B-6E23-4833-B143-915EDA3BDD44/Windows10_1607_DDF.zip).

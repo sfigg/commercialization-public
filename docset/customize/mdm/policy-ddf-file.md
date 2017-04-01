@@ -9,15 +9,17 @@ ms.assetid: D90791B5-A772-4AF8-B058-5D566865AF8D
 
 # Policy DDF file
 
-
-> [!WARNING]
-> Some information relates to prereleased product, which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.  
-
 This topic shows the OMA DM device description framework (DDF) for the **Policy** configuration service provider. DDF files are used only with OMA DM provisioning XML.
 
-You can download the Windows 10 version 1607 DDF files from [here](http://download.microsoft.com/download/2/3/E/23E27D6B-6E23-4833-B143-915EDA3BDD44/Windows10_1607_DDF.zip).
+You can download the DDF files from the links below:
 
-```XML
+- [Download the Policy DDF file for Windows 10, version 1703](http://download.microsoft.com/download/7/2/C/72C36C37-20F9-41BF-8E23-721F6FFC253E/PolicyDDF_all.xml)
+- [Download the Policy DDF file for Windows 10, version 1607](http://download.microsoft.com/download/6/1/C/61C022FD-6F5D-4F73-9047-17F630899DC4/PolicyDDF_all_version1607.xml)
+- [Download all the DDF files for Windows 10, version 1607](http://download.microsoft.com/download/2/3/E/23E27D6B-6E23-4833-B143-915EDA3BDD44/Windows10_1607_DDF.zip)
+
+The XML below is the DDF for Windows 10, version 1703.
+
+``` syntax
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE MgmtTree PUBLIC " -//OMA//DTD-DM-DDF 1.2//EN"
   "http://www.openmobilealliance.org/tech/DTD/DM_DDF-V1_2.dtd"
@@ -4701,7 +4703,7 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>AttachmentManager.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>AttachmentManager~AT~WindowsComponents~AM_AM</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>AM_CallIOfficeAntiVirus</MSFT:ADMXPolicyName>
+            <MSFT:ADMXPolicyName>AM_MarkZoneOnSavedAtttachments</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -4727,7 +4729,7 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>AttachmentManager.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>AttachmentManager~AT~WindowsComponents~AM_AM</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>AM_CallIOfficeAntiVirus</MSFT:ADMXPolicyName>
+            <MSFT:ADMXPolicyName>AM_RemoveZoneInfo</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -4841,7 +4843,7 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>AutoPlay.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>AutoPlay~AT~WindowsComponents~AutoPlay</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>Autorun</MSFT:ADMXPolicyName>
+            <MSFT:ADMXPolicyName>NoAutoplayfornonVolume</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -4867,7 +4869,7 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>AutoPlay.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>AutoPlay~AT~WindowsComponents~AutoPlay</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>Autorun</MSFT:ADMXPolicyName>
+            <MSFT:ADMXPolicyName>NoAutorun</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -4939,7 +4941,7 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>credui.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>CredUI~AT~WindowsComponents~CredUI</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnumerateAdministrators</MSFT:ADMXPolicyName>
+            <MSFT:ADMXPolicyName>DisablePasswordReveal</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
       </Node>
@@ -5359,7 +5361,7 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXPolicyName>AddSearchProvider</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -5385,7 +5387,7 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXPolicyName>TurnOnActiveXFiltering</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -5410,8 +5412,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~SecurityFeatures~IESF_AddOnManagement</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>AddonManagement_AddOnList</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -5436,8 +5438,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~AdvancedPage</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>Advanced_EnableEnhancedProtectedMode</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -5489,7 +5491,7 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXPolicyName>EnterpriseModeSiteList</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -5514,8 +5516,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~CategoryCompatView</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>CompatView_UsePolicyList</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -5540,8 +5542,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~CategoryCompatView</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>CompatView_IntranetSites</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -5566,8 +5568,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyInternetZoneTemplate</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -5592,8 +5594,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyIntranetZoneTemplate</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -5618,8 +5620,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyLocalMachineZoneTemplate</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -5644,8 +5646,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyInternetZoneLockdownTemplate</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -5670,8 +5672,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyIntranetZoneLockdownTemplate</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -5696,8 +5698,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyLocalMachineZoneLockdownTemplate</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -5722,8 +5724,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyRestrictedSitesZoneLockdownTemplate</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -5748,8 +5750,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetSettings~Advanced~Browsing</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>UseIntranetSiteForOneWordEntry</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -5774,8 +5776,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_Zonemaps</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -5800,8 +5802,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyTrustedSitesZoneLockdownTemplate</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -5826,8 +5828,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyRestrictedSitesZoneTemplate</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -5853,7 +5855,7 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXPolicyName>EnableSuggestedSites</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -5878,8 +5880,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyTrustedSitesZoneTemplate</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -5904,8 +5906,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~SecurityFeatures~IESF_AddOnManagement</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>DisableFlashInIE</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -5930,8 +5932,6 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -5956,8 +5956,6 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -5983,7 +5981,7 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXPolicyName>SQM_DisableCEIP</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -6008,8 +6006,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~RSS_Feeds</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>Disable_Downloading_of_Enclosures</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -6034,8 +6032,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~AdvancedPage</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>Advanced_SetWinInetProtocols</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -6061,7 +6059,7 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXPolicyName>NoFirstRunCustomise</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -6086,8 +6084,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~AdvancedPage</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>Advanced_DisableFlipAhead</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -6113,7 +6111,7 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXPolicyName>RestrictHomePage</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -6138,8 +6136,6 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -6165,7 +6161,7 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXPolicyName>NoSearchProvider</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -6191,7 +6187,7 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXPolicyName>SecondaryHomePages</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -6216,8 +6212,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~SecurityFeatures~IESF_AddOnManagement</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>VerMgmtDisable</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -6242,8 +6238,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~SecurityFeatures~IESF_AddOnManagement</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>VerMgmtDomainAllowlist</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -6268,8 +6264,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_IncludeUnspecifiedLocalSites</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -6294,8 +6290,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_UNCAsIntranet</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -6320,8 +6316,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyAccessDataSourcesAcrossDomains_1</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -6346,8 +6342,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyNotificationBarActiveXURLaction_1</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -6372,8 +6368,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyNotificationBarDownloadURLaction_1</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -6398,8 +6394,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyFontDownload_1</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -6424,8 +6420,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyZoneElevationURLaction_1</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -6450,8 +6446,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyUnsignedFrameworkComponentsURLaction_1</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -6476,8 +6472,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_Policy_AllowScriptlets_1</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -6502,8 +6498,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_Policy_Phishing_1</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -6528,8 +6524,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyUserdataPersistence_1</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -6554,8 +6550,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyScriptActiveXNotMarkedSafe_1</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -6580,8 +6576,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyNavigateSubframesAcrossDomains_1</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -6606,8 +6602,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_IntranetZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyAccessDataSourcesAcrossDomains_3</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -6632,8 +6628,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_IntranetZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyNotificationBarActiveXURLaction_3</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -6658,8 +6654,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_IntranetZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyNotificationBarDownloadURLaction_3</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -6684,8 +6680,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_IntranetZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyFontDownload_3</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -6710,8 +6706,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_IntranetZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyZoneElevationURLaction_3</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -6736,8 +6732,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_IntranetZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyUnsignedFrameworkComponentsURLaction_3</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -6762,8 +6758,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_IntranetZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_Policy_AllowScriptlets_3</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -6788,8 +6784,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_IntranetZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_Policy_Phishing_3</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -6814,8 +6810,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_IntranetZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyUserdataPersistence_3</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -6840,8 +6836,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_IntranetZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyScriptActiveXNotMarkedSafe_3</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -6866,8 +6862,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_IntranetZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyNavigateSubframesAcrossDomains_3</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -6892,8 +6888,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_LocalMachineZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyAccessDataSourcesAcrossDomains_9</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -6918,8 +6914,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_LocalMachineZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyNotificationBarActiveXURLaction_9</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -6944,8 +6940,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_LocalMachineZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyNotificationBarDownloadURLaction_9</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -6970,8 +6966,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_LocalMachineZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyFontDownload_9</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -6996,8 +6992,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_LocalMachineZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyZoneElevationURLaction_9</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -7022,8 +7018,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_LocalMachineZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyUnsignedFrameworkComponentsURLaction_9</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -7048,8 +7044,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_LocalMachineZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_Policy_AllowScriptlets_9</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -7074,8 +7070,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_LocalMachineZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_Policy_Phishing_9</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -7100,8 +7096,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_LocalMachineZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyUserdataPersistence_9</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -7126,8 +7122,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_LocalMachineZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyScriptActiveXNotMarkedSafe_9</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -7152,8 +7148,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_LocalMachineZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyNavigateSubframesAcrossDomains_9</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -7178,8 +7174,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZoneLockdown</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyAccessDataSourcesAcrossDomains_2</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -7204,8 +7200,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZoneLockdown</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyNotificationBarActiveXURLaction_2</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -7230,8 +7226,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZoneLockdown</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyNotificationBarDownloadURLaction_2</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -7256,8 +7252,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZoneLockdown</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyFontDownload_2</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -7282,8 +7278,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZoneLockdown</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyZoneElevationURLaction_2</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -7308,8 +7304,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZoneLockdown</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyUnsignedFrameworkComponentsURLaction_2</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -7334,8 +7330,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZoneLockdown</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_Policy_AllowScriptlets_2</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -7360,8 +7356,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZoneLockdown</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_Policy_Phishing_2</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -7386,8 +7382,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZoneLockdown</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyUserdataPersistence_2</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -7412,8 +7408,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZoneLockdown</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyScriptActiveXNotMarkedSafe_2</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -7438,8 +7434,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZoneLockdown</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyNavigateSubframesAcrossDomains_2</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -7464,8 +7460,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_IntranetZoneLockdown</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyAccessDataSourcesAcrossDomains_4</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -7490,8 +7486,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_IntranetZoneLockdown</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyNotificationBarActiveXURLaction_4</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -7516,8 +7512,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_IntranetZoneLockdown</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyNotificationBarDownloadURLaction_4</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -7542,8 +7538,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_IntranetZoneLockdown</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyFontDownload_4</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -7568,8 +7564,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_IntranetZoneLockdown</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyZoneElevationURLaction_4</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -7594,8 +7590,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_IntranetZoneLockdown</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyUnsignedFrameworkComponentsURLaction_4</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -7620,8 +7616,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_IntranetZoneLockdown</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_Policy_AllowScriptlets_4</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -7646,8 +7642,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_IntranetZoneLockdown</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_Policy_Phishing_4</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -7672,8 +7668,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_IntranetZoneLockdown</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyUserdataPersistence_4</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -7698,8 +7694,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_IntranetZoneLockdown</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyScriptActiveXNotMarkedSafe_4</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -7724,8 +7720,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_IntranetZoneLockdown</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyNavigateSubframesAcrossDomains_4</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -7750,8 +7746,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_LocalMachineZoneLockdown</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyAccessDataSourcesAcrossDomains_10</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -7776,8 +7772,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_LocalMachineZoneLockdown</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyNotificationBarActiveXURLaction_10</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -7802,8 +7798,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_LocalMachineZoneLockdown</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyNotificationBarDownloadURLaction_10</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -7828,8 +7824,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_LocalMachineZoneLockdown</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyFontDownload_10</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -7854,8 +7850,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_LocalMachineZoneLockdown</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyZoneElevationURLaction_10</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -7880,8 +7876,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_LocalMachineZoneLockdown</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyUnsignedFrameworkComponentsURLaction_10</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -7906,8 +7902,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_LocalMachineZoneLockdown</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_Policy_AllowScriptlets_10</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -7932,8 +7928,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_LocalMachineZoneLockdown</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_Policy_Phishing_10</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -7958,8 +7954,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_LocalMachineZoneLockdown</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyUserdataPersistence_10</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -7984,8 +7980,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_LocalMachineZoneLockdown</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyScriptActiveXNotMarkedSafe_10</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -8010,8 +8006,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_LocalMachineZoneLockdown</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyNavigateSubframesAcrossDomains_10</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -8036,8 +8032,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZoneLockdown</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyAccessDataSourcesAcrossDomains_8</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -8062,8 +8058,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZoneLockdown</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyNotificationBarActiveXURLaction_8</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -8088,8 +8084,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZoneLockdown</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyNotificationBarDownloadURLaction_8</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -8114,8 +8110,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZoneLockdown</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyFontDownload_8</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -8140,8 +8136,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZoneLockdown</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyZoneElevationURLaction_8</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -8166,8 +8162,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZoneLockdown</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyUnsignedFrameworkComponentsURLaction_8</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -8192,8 +8188,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZoneLockdown</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_Policy_AllowScriptlets_8</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -8218,8 +8214,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZoneLockdown</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_Policy_Phishing_8</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -8244,8 +8240,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZoneLockdown</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyUserdataPersistence_8</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -8270,8 +8266,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZoneLockdown</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyScriptActiveXNotMarkedSafe_8</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -8296,8 +8292,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZoneLockdown</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyNavigateSubframesAcrossDomains_8</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -8322,8 +8318,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_TrustedSitesZoneLockdown</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyAccessDataSourcesAcrossDomains_6</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -8348,8 +8344,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_TrustedSitesZoneLockdown</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyNotificationBarActiveXURLaction_6</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -8374,8 +8370,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_TrustedSitesZoneLockdown</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyNotificationBarDownloadURLaction_6</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -8400,8 +8396,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_TrustedSitesZoneLockdown</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyFontDownload_6</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -8426,8 +8422,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_TrustedSitesZoneLockdown</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyZoneElevationURLaction_6</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -8452,8 +8448,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_TrustedSitesZoneLockdown</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyUnsignedFrameworkComponentsURLaction_6</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -8478,8 +8474,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_TrustedSitesZoneLockdown</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_Policy_AllowScriptlets_6</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -8504,8 +8500,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_TrustedSitesZoneLockdown</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_Policy_Phishing_6</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -8530,8 +8526,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_TrustedSitesZoneLockdown</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyUserdataPersistence_6</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -8556,8 +8552,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_TrustedSitesZoneLockdown</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyScriptActiveXNotMarkedSafe_6</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -8582,8 +8578,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_TrustedSitesZoneLockdown</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyNavigateSubframesAcrossDomains_6</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -8608,8 +8604,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyAccessDataSourcesAcrossDomains_7</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -8634,8 +8630,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyNotificationBarActiveXURLaction_7</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -8660,8 +8656,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyNotificationBarDownloadURLaction_7</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -8686,8 +8682,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyFontDownload_7</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -8712,8 +8708,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyZoneElevationURLaction_7</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -8738,8 +8734,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyUnsignedFrameworkComponentsURLaction_7</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -8764,8 +8760,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_Policy_AllowScriptlets_7</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -8790,8 +8786,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_Policy_Phishing_7</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -8816,8 +8812,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyUserdataPersistence_7</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -8842,8 +8838,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyScriptActiveXNotMarkedSafe_7</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -8868,8 +8864,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyNavigateSubframesAcrossDomains_7</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -8895,7 +8891,7 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXPolicyName>SpecificSearchProvider</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -8920,8 +8916,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_TrustedSitesZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyAccessDataSourcesAcrossDomains_5</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -8946,8 +8942,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_TrustedSitesZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyNotificationBarActiveXURLaction_5</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -8972,8 +8968,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_TrustedSitesZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyNotificationBarDownloadURLaction_5</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -8998,8 +8994,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_TrustedSitesZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyFontDownload_5</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -9024,8 +9020,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_TrustedSitesZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyZoneElevationURLaction_5</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -9050,8 +9046,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_TrustedSitesZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyUnsignedFrameworkComponentsURLaction_5</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -9076,8 +9072,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_TrustedSitesZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_Policy_AllowScriptlets_5</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -9102,8 +9098,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_TrustedSitesZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_Policy_Phishing_5</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -9128,8 +9124,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_TrustedSitesZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyUserdataPersistence_5</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -9154,8 +9150,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_TrustedSitesZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyScriptActiveXNotMarkedSafe_5</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -9180,8 +9176,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_TrustedSitesZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyNavigateSubframesAcrossDomains_5</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
       </Node>
@@ -9268,8 +9264,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>Printing.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>Printing2~AT~Printers</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>PublishPrinters</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>Printing~AT~ControlPanel~CplPrinters</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>PointAndPrint_Restrictions</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
       </Node>
@@ -9815,6 +9811,28 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFType>
           </DFProperties>
         </Node>
+      </Node>
+      <Node>
+        <NodeName>AppHVSI</NodeName>
+        <DFProperties>
+          <AccessType>
+            <Add />
+            <Get />
+            <Delete />
+          </AccessType>
+          <DFFormat>
+            <node />
+          </DFFormat>
+          <Occurrence>
+            <ZeroOrOne />
+          </Occurrence>
+          <Scope>
+            <Dynamic />
+          </Scope>
+          <DFType>
+            <DDFName></DDFName>
+          </DFType>
+        </DFProperties>
       </Node>
       <Node>
         <NodeName>ApplicationDefaults</NodeName>
@@ -11569,7 +11587,7 @@ This policy will only apply on domain joined machines or when the device is MDM 
               <Get />
               <Replace />
             </AccessType>
-            <Description>This setting lets you decide whether to turn on SmartScreen Filter.</Description>
+            <Description>This setting lets you decide whether to turn on Windows Defender SmartScreen.</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -11830,54 +11848,6 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <Description>This policy lets you decide whether Microsoft Edge can gather Live Tile metadata from the ieonline.microsoft.com service to provide a better experience while pinning a Live Tile to the Start menu.
 
 Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on domain-joined machines or when the device is MDM-enrolled.</Description>
-            <DFFormat>
-              <int/>
-            </DFFormat>
-            <Occurrence>
-              <ZeroOrOne />
-            </Occurrence>
-            <Scope>
-              <Dynamic />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-          </DFProperties>
-        </Node>
-        <Node>
-          <NodeName>PreventSmartScreenPromptOverride</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Add />
-              <Delete />
-              <Get />
-              <Replace />
-            </AccessType>
-            <Description>Don't allow SmartScreen Filter warning overrides</Description>
-            <DFFormat>
-              <int/>
-            </DFFormat>
-            <Occurrence>
-              <ZeroOrOne />
-            </Occurrence>
-            <Scope>
-              <Dynamic />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-          </DFProperties>
-        </Node>
-        <Node>
-          <NodeName>PreventSmartScreenPromptOverrideForFiles</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Add />
-              <Delete />
-              <Get />
-              <Replace />
-            </AccessType>
-            <Description>Don't allow SmartScreen Filter warning overrides for unverified files.</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -14094,6 +14064,30 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
               <Replace />
             </AccessType>
             <Description>The number of authentication failures allowed before the device will be wiped. A value of 0 disables device wipe functionality.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>MaxInactivityTimeDeviceLockWithExternalDisplay</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>Sets the maximum timeout value for the external display.</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -22447,7 +22441,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
               <Get />
               <Replace />
             </AccessType>
-            <Description>Don't allow users to bypass Windows Defender SmartScreen warnings for unverified files.</Description>
+            <Description></Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -22486,6 +22480,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
           </DFProperties>
         </Node>
+      </Node>
       <Node>
         <NodeName>Speech</NodeName>
         <DFProperties>
@@ -24440,6 +24435,30 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
           </DFProperties>
         </Node>
         <Node>
+          <NodeName>FillEmptyContentUrls</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description></Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
           <NodeName>IgnoreMOAppDownloadLimit</NodeName>
           <DFProperties>
             <AccessType>
@@ -24859,31 +24878,6 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <Description></Description>
             <DFFormat>
               <chr/>
-            </DFFormat>
-            <Occurrence>
-              <ZeroOrOne />
-            </Occurrence>
-            <Scope>
-              <Dynamic />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-          </DFProperties>
-        </Node>
-      </Node>
-        <Node>
-          <NodeName>FillEmptyContentUrls</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Add />
-              <Delete />
-              <Get />
-              <Replace />
-            </AccessType>
-            <Description></Description>
-            <DFFormat>
-              <int />
             </DFFormat>
             <Occurrence>
               <ZeroOrOne />
@@ -25665,6 +25659,26 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
         </Node>
       </Node>
       <Node>
+        <NodeName>AppHVSI</NodeName>
+        <DFProperties>
+          <AccessType>
+            <Get />
+          </AccessType>
+          <DFFormat>
+            <node />
+          </DFFormat>
+          <Occurrence>
+            <One />
+          </Occurrence>
+          <Scope>
+            <Permanent />
+          </Scope>
+          <DFType>
+            <DDFName></DDFName>
+          </DFType>
+        </DFProperties>
+      </Node>
+      <Node>
         <NodeName>ApplicationDefaults</NodeName>
         <DFProperties>
           <AccessType>
@@ -25991,8 +26005,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>appv.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>appv~AT~System~CAT_AppV~CAT_Virtualization</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>Virtualization_JITVAllowList</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>appv~AT~System~CAT_AppV</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>EnableAppV</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -26018,7 +26032,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>appv.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>appv~AT~System~CAT_AppV~CAT_Virtualization</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>Virtualization_JITVAllowList</MSFT:ADMXPolicyName>
+            <MSFT:ADMXPolicyName>Virtualization_JITVEnable</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -26043,8 +26057,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>appv.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>appv~AT~System~CAT_AppV~CAT_Virtualization</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>Virtualization_JITVAllowList</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>appv~AT~System~CAT_AppV~CAT_PackageManagement</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>PackageManagement_AutoCleanupEnable</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -26069,8 +26083,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>appv.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>appv~AT~System~CAT_AppV~CAT_Virtualization</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>Virtualization_JITVAllowList</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>appv~AT~System~CAT_AppV~CAT_Scripting</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>Scripting_Enable_Package_Scripts</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -26095,8 +26109,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>appv.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>appv~AT~System~CAT_AppV~CAT_Virtualization</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>Virtualization_JITVAllowList</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>appv~AT~System~CAT_AppV~CAT_Publishing</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>Enable_Publishing_Refresh_UX</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -26121,8 +26135,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>appv.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>appv~AT~System~CAT_AppV~CAT_Virtualization</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>Virtualization_JITVAllowList</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>appv~AT~System~CAT_AppV~CAT_Reporting</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>Reporting_Server_Policy</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -26147,8 +26161,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>appv.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>appv~AT~System~CAT_AppV~CAT_Virtualization</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>Virtualization_JITVAllowList</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>appv~AT~System~CAT_AppV~CAT_Integration</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>Integration_Roaming_File_Exclusions</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -26173,8 +26187,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>appv.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>appv~AT~System~CAT_AppV~CAT_Virtualization</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>Virtualization_JITVAllowList</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>appv~AT~System~CAT_AppV~CAT_Integration</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>Integration_Roaming_Registry_Exclusions</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -26199,8 +26213,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>appv.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>appv~AT~System~CAT_AppV~CAT_Virtualization</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>Virtualization_JITVAllowList</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>appv~AT~System~CAT_AppV~CAT_Streaming</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>Steaming_Autoload</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -26225,8 +26239,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>appv.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>appv~AT~System~CAT_AppV~CAT_Virtualization</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>Virtualization_JITVAllowList</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>appv~AT~System~CAT_AppV~CAT_Client_Coexistence</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>Client_Coexistence_Enable_Migration_mode</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -26251,8 +26265,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>appv.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>appv~AT~System~CAT_AppV~CAT_Virtualization</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>Virtualization_JITVAllowList</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>appv~AT~System~CAT_AppV~CAT_Integration</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>Integration_Root_User</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -26277,8 +26291,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>appv.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>appv~AT~System~CAT_AppV~CAT_Virtualization</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>Virtualization_JITVAllowList</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>appv~AT~System~CAT_AppV~CAT_Integration</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>Integration_Root_Global</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -26303,8 +26317,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>appv.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>appv~AT~System~CAT_AppV~CAT_Virtualization</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>Virtualization_JITVAllowList</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>appv~AT~System~CAT_AppV~CAT_Publishing</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>Publishing_Server1_Policy</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -26329,8 +26343,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>appv.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>appv~AT~System~CAT_AppV~CAT_Virtualization</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>Virtualization_JITVAllowList</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>appv~AT~System~CAT_AppV~CAT_Publishing</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>Publishing_Server2_Policy</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -26355,8 +26369,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>appv.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>appv~AT~System~CAT_AppV~CAT_Virtualization</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>Virtualization_JITVAllowList</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>appv~AT~System~CAT_AppV~CAT_Publishing</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>Publishing_Server3_Policy</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -26381,8 +26395,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>appv.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>appv~AT~System~CAT_AppV~CAT_Virtualization</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>Virtualization_JITVAllowList</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>appv~AT~System~CAT_AppV~CAT_Publishing</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>Publishing_Server4_Policy</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -26407,8 +26421,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>appv.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>appv~AT~System~CAT_AppV~CAT_Virtualization</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>Virtualization_JITVAllowList</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>appv~AT~System~CAT_AppV~CAT_Publishing</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>Publishing_Server5_Policy</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -26433,8 +26447,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>appv.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>appv~AT~System~CAT_AppV~CAT_Virtualization</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>Virtualization_JITVAllowList</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>appv~AT~System~CAT_AppV~CAT_Streaming</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>Streaming_Certificate_Filter_For_Client_SSL</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -26459,8 +26473,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>appv.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>appv~AT~System~CAT_AppV~CAT_Virtualization</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>Virtualization_JITVAllowList</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>appv~AT~System~CAT_AppV~CAT_Streaming</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>Streaming_Allow_High_Cost_Launch</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -26485,8 +26499,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>appv.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>appv~AT~System~CAT_AppV~CAT_Virtualization</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>Virtualization_JITVAllowList</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>appv~AT~System~CAT_AppV~CAT_Streaming</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>Streaming_Location_Provider</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -26511,8 +26525,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>appv.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>appv~AT~System~CAT_AppV~CAT_Virtualization</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>Virtualization_JITVAllowList</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>appv~AT~System~CAT_AppV~CAT_Streaming</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>Streaming_Package_Installation_Root</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -26537,8 +26551,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>appv.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>appv~AT~System~CAT_AppV~CAT_Virtualization</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>Virtualization_JITVAllowList</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>appv~AT~System~CAT_AppV~CAT_Streaming</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>Streaming_Package_Source_Root</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -26563,8 +26577,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>appv.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>appv~AT~System~CAT_AppV~CAT_Virtualization</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>Virtualization_JITVAllowList</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>appv~AT~System~CAT_AppV~CAT_Streaming</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>Streaming_Reestablishment_Interval</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -26589,8 +26603,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>appv.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>appv~AT~System~CAT_AppV~CAT_Virtualization</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>Virtualization_JITVAllowList</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>appv~AT~System~CAT_AppV~CAT_Streaming</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>Streaming_Reestablishment_Retries</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -26615,8 +26629,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>appv.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>appv~AT~System~CAT_AppV~CAT_Virtualization</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>Virtualization_JITVAllowList</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>appv~AT~System~CAT_AppV~CAT_Streaming</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>Streaming_Shared_Content_Store_Mode</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -26641,8 +26655,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>appv.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>appv~AT~System~CAT_AppV~CAT_Virtualization</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>Virtualization_JITVAllowList</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>appv~AT~System~CAT_AppV~CAT_Streaming</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>Streaming_Support_Branch_Cache</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -26667,8 +26681,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>appv.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>appv~AT~System~CAT_AppV~CAT_Virtualization</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>Virtualization_JITVAllowList</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>appv~AT~System~CAT_AppV~CAT_Streaming</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>Streaming_Verify_Certificate_Revocation_List</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -26804,7 +26818,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>AutoPlay.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>AutoPlay~AT~WindowsComponents~AutoPlay</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>Autorun</MSFT:ADMXPolicyName>
+            <MSFT:ADMXPolicyName>NoAutoplayfornonVolume</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -26830,7 +26844,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>AutoPlay.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>AutoPlay~AT~WindowsComponents~AutoPlay</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>Autorun</MSFT:ADMXPolicyName>
+            <MSFT:ADMXPolicyName>NoAutorun</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -27403,7 +27417,7 @@ This policy will only apply on domain joined machines or when the device is MDM 
             <AccessType>
                 <Get />
             </AccessType>
-            <Description>This setting lets you decide whether to turn on SmartScreen Filter.</Description>
+            <Description>This setting lets you decide whether to turn on Windows Defender SmartScreen.</Description>
             <DefaultValue>1</DefaultValue>
             <DFFormat>
               <int/>
@@ -27651,50 +27665,6 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <Description>This policy lets you decide whether Microsoft Edge can gather Live Tile metadata from the ieonline.microsoft.com service to provide a better experience while pinning a Live Tile to the Start menu.
 
 Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on domain-joined machines or when the device is MDM-enrolled.</Description>
-            <DefaultValue>0</DefaultValue>
-            <DFFormat>
-                <int/>
-            </DFFormat>
-            <Occurrence>
-                <One />
-            </Occurrence>
-            <Scope>
-                <Permanent />
-            </Scope>
-            <DFType>
-                <MIME>text/plain</MIME>
-            </DFType>
-            </DFProperties>
-        </Node>
-        <Node>
-            <NodeName>PreventSmartScreenPromptOverride</NodeName>
-            <DFProperties>
-            <AccessType>
-                <Get />
-            </AccessType>
-            <Description>Don't allow SmartScreen Filter warning overrides</Description>
-            <DefaultValue>0</DefaultValue>
-            <DFFormat>
-              <int/>
-            </DFFormat>
-            <Occurrence>
-                <One />
-            </Occurrence>
-            <Scope>
-                <Permanent />
-            </Scope>
-            <DFType>
-                <MIME>text/plain</MIME>
-            </DFType>
-            </DFProperties>
-        </Node>
-        <Node>
-            <NodeName>PreventSmartScreenPromptOverrideForFiles</NodeName>
-            <DFProperties>
-            <AccessType>
-                <Get />
-            </AccessType>
-            <Description>Don't allow SmartScreen Filter warning overrides for unverified files.</Description>
             <DefaultValue>0</DefaultValue>
             <DFFormat>
               <int/>
@@ -28186,7 +28156,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>credentialproviders.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>CredentialProviders~AT~System~Logon</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>AllowDomainPINLogon</MSFT:ADMXPolicyName>
+            <MSFT:ADMXPolicyName>BlockDomainPicturePassword</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
       </Node>
@@ -28232,7 +28202,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>credui.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>CredUI~AT~WindowsComponents~CredUI</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnumerateAdministrators</MSFT:ADMXPolicyName>
+            <MSFT:ADMXPolicyName>DisablePasswordReveal</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -28431,7 +28401,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:ADMXBacked>wwansvc.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>wwansvc~AT~Network~WwanSvc_Category~NetworkCost_Category</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>SetCost4G</MSFT:ADMXPolicyName>
+            <MSFT:ADMXPolicyName>SetCost3G</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -29531,7 +29501,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>deviceinstallation.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>DeviceInstallation~AT~System~DeviceInstall_Category~DeviceInstall_Restrictions_Category</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>DeviceInstall_Classes_Deny</MSFT:ADMXPolicyName>
+            <MSFT:ADMXPolicyName>DeviceInstall_IDs_Deny</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -29825,6 +29795,29 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFProperties>
         </Node>
         <Node>
+            <NodeName>MaxInactivityTimeDeviceLockWithExternalDisplay</NodeName>
+            <DFProperties>
+            <AccessType>
+                <Get />
+            </AccessType>
+            <Description>Sets the maximum timeout value for the external display.</Description>
+            <DefaultValue>0</DefaultValue>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+                <One />
+            </Occurrence>
+            <Scope>
+                <Permanent />
+            </Scope>
+            <DFType>
+                <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:NotSupportedOnPlatform>desktop</MSFT:NotSupportedOnPlatform>
+            </DFProperties>
+        </Node>
+        <Node>
             <NodeName>MinDevicePasswordComplexCharacters</NodeName>
             <DFProperties>
             <AccessType>
@@ -30049,7 +30042,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>ErrorReporting.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>ErrorReporting~AT~WindowsComponents~CAT_WindowsErrorReporting</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>WerConsentCustomize_2</MSFT:ADMXPolicyName>
+            <MSFT:ADMXPolicyName>WerDisable_2</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -30075,7 +30068,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>ErrorReporting.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>ErrorReporting~AT~WindowsComponents~CAT_WindowsErrorReporting</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>WerConsentCustomize_2</MSFT:ADMXPolicyName>
+            <MSFT:ADMXPolicyName>PCH_ShowUI</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -30101,7 +30094,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>ErrorReporting.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>ErrorReporting~AT~WindowsComponents~CAT_WindowsErrorReporting</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>WerConsentCustomize_2</MSFT:ADMXPolicyName>
+            <MSFT:ADMXPolicyName>WerNoSecondLevelData_2</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -30127,7 +30120,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>ErrorReporting.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>ErrorReporting~AT~WindowsComponents~CAT_WindowsErrorReporting</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>WerConsentCustomize_2</MSFT:ADMXPolicyName>
+            <MSFT:ADMXPolicyName>WerDoNotShowUI</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
       </Node>
@@ -30172,8 +30165,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>eventlog.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>EventLog~AT~WindowsComponents~EventLogCategory~EventLog_System</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>Channel_LogMaxSize_4</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>EventLog~AT~WindowsComponents~EventLogCategory~EventLog_Application</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>Channel_Log_Retention_1</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -30198,8 +30191,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>eventlog.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>EventLog~AT~WindowsComponents~EventLogCategory~EventLog_System</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>Channel_LogMaxSize_4</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>EventLog~AT~WindowsComponents~EventLogCategory~EventLog_Application</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>Channel_LogMaxSize_1</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -30224,8 +30217,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>eventlog.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>EventLog~AT~WindowsComponents~EventLogCategory~EventLog_System</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>Channel_LogMaxSize_4</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>EventLog~AT~WindowsComponents~EventLogCategory~EventLog_Security</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>Channel_LogMaxSize_2</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -30671,7 +30664,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXPolicyName>AddSearchProvider</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -30697,7 +30690,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXPolicyName>TurnOnActiveXFiltering</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -30722,8 +30715,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~SecurityFeatures~IESF_AddOnManagement</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>AddonManagement_AddOnList</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -30748,8 +30741,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~AdvancedPage</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>Advanced_EnableEnhancedProtectedMode</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -30801,7 +30794,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXPolicyName>EnterpriseModeSiteList</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -30826,8 +30819,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~CategoryCompatView</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>CompatView_UsePolicyList</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -30852,8 +30845,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~CategoryCompatView</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>CompatView_IntranetSites</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -30878,8 +30871,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyInternetZoneTemplate</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -30904,8 +30897,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyIntranetZoneTemplate</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -30930,8 +30923,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyLocalMachineZoneTemplate</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -30956,8 +30949,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyInternetZoneLockdownTemplate</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -30982,8 +30975,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyIntranetZoneLockdownTemplate</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -31008,8 +31001,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyLocalMachineZoneLockdownTemplate</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -31034,8 +31027,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyRestrictedSitesZoneLockdownTemplate</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -31060,8 +31053,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetSettings~Advanced~Browsing</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>UseIntranetSiteForOneWordEntry</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -31086,8 +31079,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_Zonemaps</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -31112,8 +31105,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyTrustedSitesZoneLockdownTemplate</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -31138,8 +31131,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyRestrictedSitesZoneTemplate</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -31165,7 +31158,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXPolicyName>EnableSuggestedSites</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -31190,8 +31183,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyTrustedSitesZoneTemplate</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -31216,8 +31209,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~SecurityFeatures~IESF_AddOnManagement</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>DisableFlashInIE</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -31242,8 +31235,6 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -31268,8 +31259,6 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -31295,7 +31284,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXPolicyName>SQM_DisableCEIP</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -31320,8 +31309,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~RSS_Feeds</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>Disable_Downloading_of_Enclosures</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -31346,8 +31335,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~AdvancedPage</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>Advanced_SetWinInetProtocols</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -31373,7 +31362,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXPolicyName>NoFirstRunCustomise</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -31398,8 +31387,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~AdvancedPage</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>Advanced_DisableFlipAhead</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -31424,8 +31413,6 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -31451,7 +31438,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXPolicyName>NoSearchProvider</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -31477,7 +31464,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXPolicyName>SecondaryHomePages</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -31502,8 +31489,6 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -31528,8 +31513,6 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -31554,8 +31537,6 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -31580,8 +31561,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~SecurityFeatures~IESF_AddOnManagement</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>VerMgmtDisable</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -31606,8 +31587,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~SecurityFeatures~IESF_AddOnManagement</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>VerMgmtDomainAllowlist</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -31632,8 +31613,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_IncludeUnspecifiedLocalSites</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -31658,8 +31639,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_UNCAsIntranet</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -31684,8 +31665,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyAccessDataSourcesAcrossDomains_1</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -31710,8 +31691,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyNotificationBarActiveXURLaction_1</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -31736,8 +31717,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyNotificationBarDownloadURLaction_1</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -31762,8 +31743,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyFontDownload_1</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -31788,8 +31769,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyZoneElevationURLaction_1</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -31814,8 +31795,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyUnsignedFrameworkComponentsURLaction_1</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -31840,8 +31821,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_Policy_AllowScriptlets_1</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -31866,8 +31847,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_Policy_Phishing_1</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -31892,8 +31873,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyUserdataPersistence_1</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -31918,8 +31899,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyScriptActiveXNotMarkedSafe_1</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -31944,8 +31925,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyNavigateSubframesAcrossDomains_1</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -31970,8 +31951,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_IntranetZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyAccessDataSourcesAcrossDomains_3</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -31996,8 +31977,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_IntranetZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyNotificationBarActiveXURLaction_3</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -32022,8 +32003,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_IntranetZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyNotificationBarDownloadURLaction_3</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -32048,8 +32029,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_IntranetZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyFontDownload_3</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -32074,8 +32055,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_IntranetZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyZoneElevationURLaction_3</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -32100,8 +32081,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_IntranetZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyUnsignedFrameworkComponentsURLaction_3</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -32126,8 +32107,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_IntranetZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_Policy_AllowScriptlets_3</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -32152,8 +32133,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_IntranetZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_Policy_Phishing_3</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -32178,8 +32159,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_IntranetZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyUserdataPersistence_3</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -32204,8 +32185,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_IntranetZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyScriptActiveXNotMarkedSafe_3</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -32230,8 +32211,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_IntranetZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyNavigateSubframesAcrossDomains_3</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -32256,8 +32237,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_LocalMachineZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyAccessDataSourcesAcrossDomains_9</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -32282,8 +32263,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_LocalMachineZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyNotificationBarActiveXURLaction_9</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -32308,8 +32289,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_LocalMachineZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyNotificationBarDownloadURLaction_9</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -32334,8 +32315,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_LocalMachineZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyFontDownload_9</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -32360,8 +32341,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_LocalMachineZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyZoneElevationURLaction_9</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -32386,8 +32367,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_LocalMachineZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyUnsignedFrameworkComponentsURLaction_9</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -32412,8 +32393,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_LocalMachineZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_Policy_AllowScriptlets_9</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -32438,8 +32419,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_LocalMachineZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_Policy_Phishing_9</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -32464,8 +32445,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_LocalMachineZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyUserdataPersistence_9</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -32490,8 +32471,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_LocalMachineZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyScriptActiveXNotMarkedSafe_9</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -32516,8 +32497,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_LocalMachineZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyNavigateSubframesAcrossDomains_9</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -32542,8 +32523,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZoneLockdown</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyAccessDataSourcesAcrossDomains_2</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -32568,8 +32549,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZoneLockdown</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyNotificationBarActiveXURLaction_2</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -32594,8 +32575,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZoneLockdown</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyNotificationBarDownloadURLaction_2</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -32620,8 +32601,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZoneLockdown</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyFontDownload_2</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -32646,8 +32627,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZoneLockdown</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyZoneElevationURLaction_2</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -32672,8 +32653,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZoneLockdown</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyUnsignedFrameworkComponentsURLaction_2</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -32698,8 +32679,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZoneLockdown</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_Policy_AllowScriptlets_2</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -32724,8 +32705,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZoneLockdown</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_Policy_Phishing_2</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -32750,8 +32731,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZoneLockdown</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyUserdataPersistence_2</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -32776,8 +32757,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZoneLockdown</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyScriptActiveXNotMarkedSafe_2</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -32802,8 +32783,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZoneLockdown</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyNavigateSubframesAcrossDomains_2</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -32828,8 +32809,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_IntranetZoneLockdown</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyAccessDataSourcesAcrossDomains_4</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -32854,8 +32835,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_IntranetZoneLockdown</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyNotificationBarActiveXURLaction_4</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -32880,8 +32861,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_IntranetZoneLockdown</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyNotificationBarDownloadURLaction_4</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -32906,8 +32887,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_IntranetZoneLockdown</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyFontDownload_4</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -32932,8 +32913,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_IntranetZoneLockdown</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyZoneElevationURLaction_4</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -32958,8 +32939,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_IntranetZoneLockdown</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyUnsignedFrameworkComponentsURLaction_4</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -32984,8 +32965,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_IntranetZoneLockdown</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_Policy_AllowScriptlets_4</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -33010,8 +32991,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_IntranetZoneLockdown</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_Policy_Phishing_4</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -33036,8 +33017,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_IntranetZoneLockdown</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyUserdataPersistence_4</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -33062,8 +33043,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_IntranetZoneLockdown</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyScriptActiveXNotMarkedSafe_4</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -33088,8 +33069,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_IntranetZoneLockdown</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyNavigateSubframesAcrossDomains_4</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -33114,8 +33095,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_LocalMachineZoneLockdown</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyAccessDataSourcesAcrossDomains_10</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -33140,8 +33121,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_LocalMachineZoneLockdown</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyNotificationBarActiveXURLaction_10</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -33166,8 +33147,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_LocalMachineZoneLockdown</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyNotificationBarDownloadURLaction_10</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -33192,8 +33173,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_LocalMachineZoneLockdown</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyFontDownload_10</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -33218,8 +33199,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_LocalMachineZoneLockdown</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyZoneElevationURLaction_10</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -33244,8 +33225,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_LocalMachineZoneLockdown</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyUnsignedFrameworkComponentsURLaction_10</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -33270,8 +33251,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_LocalMachineZoneLockdown</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_Policy_AllowScriptlets_10</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -33296,8 +33277,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_LocalMachineZoneLockdown</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_Policy_Phishing_10</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -33322,8 +33303,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_LocalMachineZoneLockdown</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyUserdataPersistence_10</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -33348,8 +33329,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_LocalMachineZoneLockdown</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyScriptActiveXNotMarkedSafe_10</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -33374,8 +33355,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_LocalMachineZoneLockdown</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyNavigateSubframesAcrossDomains_10</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -33400,8 +33381,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZoneLockdown</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyAccessDataSourcesAcrossDomains_8</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -33426,8 +33407,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZoneLockdown</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyNotificationBarActiveXURLaction_8</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -33452,8 +33433,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZoneLockdown</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyNotificationBarDownloadURLaction_8</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -33478,8 +33459,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZoneLockdown</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyFontDownload_8</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -33504,8 +33485,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZoneLockdown</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyZoneElevationURLaction_8</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -33530,8 +33511,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZoneLockdown</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyUnsignedFrameworkComponentsURLaction_8</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -33556,8 +33537,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZoneLockdown</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_Policy_AllowScriptlets_8</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -33582,8 +33563,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZoneLockdown</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_Policy_Phishing_8</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -33608,8 +33589,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZoneLockdown</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyUserdataPersistence_8</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -33634,8 +33615,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZoneLockdown</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyScriptActiveXNotMarkedSafe_8</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -33660,8 +33641,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZoneLockdown</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyNavigateSubframesAcrossDomains_8</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -33686,8 +33667,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_TrustedSitesZoneLockdown</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyAccessDataSourcesAcrossDomains_6</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -33712,8 +33693,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_TrustedSitesZoneLockdown</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyNotificationBarActiveXURLaction_6</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -33738,8 +33719,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_TrustedSitesZoneLockdown</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyNotificationBarDownloadURLaction_6</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -33764,8 +33745,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_TrustedSitesZoneLockdown</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyFontDownload_6</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -33790,8 +33771,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_TrustedSitesZoneLockdown</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyZoneElevationURLaction_6</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -33816,8 +33797,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_TrustedSitesZoneLockdown</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyUnsignedFrameworkComponentsURLaction_6</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -33842,8 +33823,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_TrustedSitesZoneLockdown</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_Policy_AllowScriptlets_6</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -33868,8 +33849,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_TrustedSitesZoneLockdown</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_Policy_Phishing_6</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -33894,8 +33875,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_TrustedSitesZoneLockdown</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyUserdataPersistence_6</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -33920,8 +33901,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_TrustedSitesZoneLockdown</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyScriptActiveXNotMarkedSafe_6</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -33946,8 +33927,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_TrustedSitesZoneLockdown</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyNavigateSubframesAcrossDomains_6</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -33972,8 +33953,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyAccessDataSourcesAcrossDomains_7</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -33998,8 +33979,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyNotificationBarActiveXURLaction_7</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -34024,8 +34005,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyNotificationBarDownloadURLaction_7</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -34050,8 +34031,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyFontDownload_7</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -34076,8 +34057,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyZoneElevationURLaction_7</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -34102,8 +34083,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyUnsignedFrameworkComponentsURLaction_7</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -34128,8 +34109,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_Policy_AllowScriptlets_7</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -34154,8 +34135,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_Policy_Phishing_7</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -34180,8 +34161,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyUserdataPersistence_7</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -34206,8 +34187,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyScriptActiveXNotMarkedSafe_7</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -34232,8 +34213,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyNavigateSubframesAcrossDomains_7</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -34259,7 +34240,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXPolicyName>SpecificSearchProvider</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -34284,8 +34265,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_TrustedSitesZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyAccessDataSourcesAcrossDomains_5</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -34310,8 +34291,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_TrustedSitesZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyNotificationBarActiveXURLaction_5</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -34336,8 +34317,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_TrustedSitesZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyNotificationBarDownloadURLaction_5</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -34362,8 +34343,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_TrustedSitesZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyFontDownload_5</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -34388,8 +34369,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_TrustedSitesZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyZoneElevationURLaction_5</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -34414,8 +34395,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_TrustedSitesZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyUnsignedFrameworkComponentsURLaction_5</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -34440,8 +34421,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_TrustedSitesZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_Policy_AllowScriptlets_5</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -34466,8 +34447,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_TrustedSitesZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_Policy_Phishing_5</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -34492,8 +34473,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_TrustedSitesZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyUserdataPersistence_5</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -34518,8 +34499,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_TrustedSitesZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyScriptActiveXNotMarkedSafe_5</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -34544,8 +34525,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_TrustedSitesZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyNavigateSubframesAcrossDomains_5</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
       </Node>
@@ -34617,7 +34598,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>Kerberos.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>Kerberos~AT~System~kerberos</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>ForestSearch</MSFT:ADMXPolicyName>
+            <MSFT:ADMXPolicyName>EnableCbacAndArmor</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -34643,7 +34624,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>Kerberos.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>Kerberos~AT~System~kerberos</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>ForestSearch</MSFT:ADMXPolicyName>
+            <MSFT:ADMXPolicyName>ClientRequireFast</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -34669,7 +34650,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>Kerberos.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>Kerberos~AT~System~kerberos</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>ForestSearch</MSFT:ADMXPolicyName>
+            <MSFT:ADMXPolicyName>ValidateKDC</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -34695,7 +34676,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>Kerberos.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>Kerberos~AT~System~kerberos</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>ForestSearch</MSFT:ADMXPolicyName>
+            <MSFT:ADMXPolicyName>MaxTokenSize</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
       </Node>
@@ -35241,7 +35222,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>power.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>Power~AT~System~PowerManagementCat~PowerSleepSettingsCat</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>ACPromptForPasswordOnResume_2</MSFT:ADMXPolicyName>
+            <MSFT:ADMXPolicyName>AllowStandbyStatesAC_2</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -35267,7 +35248,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>power.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>Power~AT~System~PowerManagementCat~PowerSleepSettingsCat</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>ACPromptForPasswordOnResume_2</MSFT:ADMXPolicyName>
+            <MSFT:ADMXPolicyName>DCPromptForPasswordOnResume_2</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -35338,8 +35319,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>Printing.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>Printing2~AT~Printers</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>PublishPrinters</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>Printing~AT~ControlPanel~CplPrinters</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>PointAndPrint_Restrictions_Win7</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -37083,7 +37064,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>remoteassistance.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>RemoteAssistance~AT~System~RemoteAssist</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>RA_Logging</MSFT:ADMXPolicyName>
+            <MSFT:ADMXPolicyName>RA_Options</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -37135,7 +37116,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>remoteassistance.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>RemoteAssistance~AT~System~RemoteAssist</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>RA_Logging</MSFT:ADMXPolicyName>
+            <MSFT:ADMXPolicyName>RA_Solicit</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -37161,7 +37142,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>remoteassistance.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>RemoteAssistance~AT~System~RemoteAssist</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>RA_Logging</MSFT:ADMXPolicyName>
+            <MSFT:ADMXPolicyName>RA_Unsolicit</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
       </Node>
@@ -37206,8 +37187,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>terminalserver.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>TerminalServer~AT~WindowsComponents~TS_GP_NODE~TS_TERMINAL_SERVER~TS_SECURITY</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>TS_ENCRYPTION_POLICY</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>TerminalServer~AT~WindowsComponents~TS_GP_NODE~TS_TERMINAL_SERVER~TS_CONNECTIONS</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>TS_DISABLE_CONNECTIONS</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -37258,8 +37239,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>terminalserver.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>TerminalServer~AT~WindowsComponents~TS_GP_NODE~TS_TERMINAL_SERVER~TS_SECURITY</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>TS_ENCRYPTION_POLICY</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>TerminalServer~AT~WindowsComponents~TS_GP_NODE~TS_TERMINAL_SERVER~TS_REDIRECTION</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>TS_CLIENT_DRIVE_M</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -37284,8 +37265,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>terminalserver.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>TerminalServer~AT~WindowsComponents~TS_GP_NODE~TS_TERMINAL_SERVER~TS_SECURITY</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>TS_ENCRYPTION_POLICY</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>TerminalServer~AT~WindowsComponents~TS_GP_NODE~TS_CLIENT</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>TS_CLIENT_DISABLE_PASSWORD_SAVING_2</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -37311,7 +37292,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>terminalserver.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>TerminalServer~AT~WindowsComponents~TS_GP_NODE~TS_TERMINAL_SERVER~TS_SECURITY</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>TS_ENCRYPTION_POLICY</MSFT:ADMXPolicyName>
+            <MSFT:ADMXPolicyName>TS_PASSWORD</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -37337,7 +37318,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>terminalserver.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>TerminalServer~AT~WindowsComponents~TS_GP_NODE~TS_TERMINAL_SERVER~TS_SECURITY</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>TS_ENCRYPTION_POLICY</MSFT:ADMXPolicyName>
+            <MSFT:ADMXPolicyName>TS_RPC_ENCRYPTION</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
       </Node>
@@ -37409,7 +37390,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>rpc.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>RPC~AT~System~Rpc</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>RpcRestrictRemoteClients</MSFT:ADMXPolicyName>
+            <MSFT:ADMXPolicyName>RpcEnableAuthEpResolution</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
       </Node>
@@ -38235,7 +38216,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <AccessType>
                 <Get />
             </AccessType>
-            <Description>Don't allow users to bypass Windows Defender SmartScreen warnings for unverified files.</Description>
+            <Description></Description>
             <DefaultValue>0</DefaultValue>
             <DFFormat>
               <int/>
@@ -39212,8 +39193,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>earlylauncham.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>SystemRestore~AT~System~SR</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>SR_DisableSR</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>EarlyLaunchAM~AT~System~ELAMCategory</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>POL_DriverLoadPolicy_Name</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -39284,8 +39265,6 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <DFType>
                 <MIME>text/plain</MIME>
             </DFType>
-            <MSFT:ADMXCategory>SystemRestore~AT~System~SR</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>SR_DisableSR</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
       </Node>
@@ -40087,6 +40066,28 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFProperties>
         </Node>
         <Node>
+            <NodeName>FillEmptyContentUrls</NodeName>
+            <DFProperties>
+            <AccessType>
+                <Get />
+            </AccessType>
+            <Description></Description>
+            <DefaultValue>0</DefaultValue>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+                <One />
+            </Occurrence>
+            <Scope>
+                <Permanent />
+            </Scope>
+            <DFType>
+                <MIME>text/plain</MIME>
+            </DFType>
+            </DFProperties>
+        </Node>
+        <Node>
             <NodeName>IgnoreMOAppDownloadLimit</NodeName>
             <DFProperties>
             <AccessType>
@@ -40484,29 +40485,6 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFProperties>
         </Node>
       </Node>
-        <Node>
-          <NodeName>FillEmptyContentUrls</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Get />
-            </AccessType>
-            <Description></Description>
-            <DefaultValue>0</DefaultValue>
-            <DFFormat>
-              <int />
-            </DFFormat>
-            <Occurrence>
-              <One />
-            </Occurrence>
-            <Scope>
-              <Permanent />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
-          </DFProperties>
-        </Node>
       <Node>
         <NodeName>Wifi</NodeName>
         <DFProperties>
@@ -40793,7 +40771,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>logon.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>Logon~AT~System~Logon</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>DisableLockScreenAppNotifications</MSFT:ADMXPolicyName>
+            <MSFT:ADMXPolicyName>DontDisplayNetworkSelectionUI</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -40986,18 +40964,3 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
   </Node>
 </MgmtTree>
 ```
-
-## Related topics
-
-
-[Policy configuration service provider](policy-configuration-service-provider.md)
-
- 
-
- 
-
-
-
-
-
-
