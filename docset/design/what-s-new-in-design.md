@@ -64,90 +64,82 @@ The following tables describes the changes for minimum hardware requirements in 
 <td>Clarification</td>
 </tr>
 <tr class="odd">
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td>Processors</td>
+<td>Mobile</td>
+<td>Section 2.1 Table 5: Wi-Fi only SoCs supported in devices that run Windows 10 Mobile Enterprise</td>
+<td>Updated SoCs to marketing names</td>
+<td>Clarification</td>
 </tr>
 <tr class="even">
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td>Processors</td>
+<td>Mobile</td>
+<td>Section 2.1 Table 6: SoCs supported in Windows Phones that can be updated to Windows 10 Mobile</td>
+<td>Updated SoCs to marketing names</td>
+<td>Clarification</td>
+</tr>
+<tr class="odd">
+<td>Display</td>
+<td>Mobile</td>
+<td>Section 2.4.1 Table 9: Windows 10 Mobile supported display</td>
+<td>Added support for XGA and WSVGA display resolutions. Adjusted WXGA to support up to 9" in size</td>
+<td>Requirement adjustment</td>
+</tr>
+<tr class="even">
+<td>Display</td>
+<td>Desktop</td>
+<td>Section 3.4.1</td>
+<td>Adjusted support to 7-inces or larger</td>
+<td>Requirement adjustment</td>
+</tr>
+<tr class="odd">
+<td>Memory</td>
+<td>IoT Core</td>
+<td>Section 5.2 Table 14: RAM requirements for devices that run IoT Core</td>
+<td>Clarified RAM requirement for 64bit processors</td>
+<td>Clarification</td>
+</tr>
+<tr class="even">
+<td>Memory</td>
+<td>IoT Core</td>
+<td>Section 5.2</td>
+<td>Clarified minimum RAM required for update functionality</td>
+<td>Clarification</td>
+</tr>
+<tr class="odd">
+<td>Storage</td>
+<td>IoT Core</td>
+<td>Section 5.3</td>
+<td>Clarified minimum free remaining storage for update</td>
+<td>Clarification</td>
+</tr>
+<tr class="even">
+<td>Security</td>
+<td>IoT Core</td>
+<td>Section 5.4</td>
+<td>Clarifying TPM 2.0 will be required in future releases</td>
+<td>Clarification</td>
+</tr>
+<tr class="odd">
+<td>Display</td>
+<td>IoT Core</td>
+<td>Section 5.5</td>
+<td>Added section to indicate GPU is optional and minimum DirectX version if GPU is included</td>
+<td>Clarification</td>
+</tr>
+<tr class="even">
+<td>NFC</td>
+<td>Desktop, Mobile, IoT Core, Server</td>
+<td>Section 6.3.6</td>
+<td>Removed requirement of embedded secure element not to be supported</td>
 <td></td>
 </tr>
 <tr class="odd">
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td>Accessibility</td>
+<td>Desktop, Mobile, IoT Core, Server</td>
+<td>Section 6.9</td>
+<td>Clarified accessibility requirements</td>
+<td>Clarification</td>
 </tr>
-<tr class="even">
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-
 </tbody>
 </table>
 
