@@ -737,6 +737,10 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 </ul>
 </td>
 </tr>
+<tr class="even">
+<td style="vertical-align:top">[DMSessionActions CSP](dmsessionactions-csp.md)</td>
+<td style="vertical-align:top"><p>Added new CSP.</p>
+</td></tr>
 </tbody>
 </table> 
 
@@ -1024,6 +1028,10 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <tr class="odd">
 <td style="vertical-align:top">[Policy CSP](policy-configuration-service-provider.md)</td>
 <td style="vertical-align:top"><p>DeviceLock/EnforceLockScreenAndLogonImage is not supported in Windows 10 Pro edition.</p>
+</td></tr>
+<tr class="even">
+<td style="vertical-align:top">[DMSessionActions CSP](dmsessionactions-csp.md)</td>
+<td style="vertical-align:top"><p>Added new CSP for Windows 10, version 1703.</p>
 </td></tr>
 </tbody>
 </table>
