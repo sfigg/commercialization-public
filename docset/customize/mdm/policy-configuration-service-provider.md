@@ -6342,6 +6342,9 @@ Enables or disables Windows Tips / soft landing.
 -   0 (default) – Feedback notifications are not disabled. The actual state of feedback notifications on the device will then depend on what GP has configured or what the user has configured locally.
 -   1 – Feedback notifications are disabled.
 
+<a href="" id="games-allowadvancedgamingservices"></a>**Games/AllowAdvancedGamingServices**  
+<p style="margin-left: 20px">Placeholder only. Currently not supported.
+
 <a href="" id="licensing-allowwindowsentitlementreactivation"></a>**Licensing/AllowWindowsEntitlementReactivation**  
 <p style="margin-left: 20px">Added in Windows 10, version 1607. Enables or Disable Windows license reactivation on managed devices.
 
