@@ -566,6 +566,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>DeliveryOptimization/DOMinDiskSizeAllowedToPeer</li>
 <li>DeliveryOptimization/DOMinFileSizeToCache</li>
 <li>DeliveryOptimization/DOMinRAMAllowedToPeer</li>
+<li>DeviceLock/MaxInactivityTimeDeviceLockWithExternalDisplay</li>
 <li>Display/TurnOffGdiDPIScalingForApps</li>
 <li>Display/TurnOnGdiDPIScalingForApps</li>
 <li>EnterpriseCloudPrint/CloudPrinterDiscoveryEndPoint</li>
