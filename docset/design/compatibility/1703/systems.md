@@ -6790,9 +6790,7 @@ Certification for Windows Server 2016, Azure Stack and SDDC must meet the Window
 	  <tr class="odd">
 		<td>Platform Attestation</td>
 		<td>
-		  <blockquote>
-			<p>Boot measurements recorded in the Platform Configuration Registers for all firmware code loaded after the establishment of the Core Root of Trust for Measurement.</p>
-		  </blockquote>
+		  <p>Boot measurements recorded in the Platform Configuration Registers for all firmware code loaded after the establishment of the Core Root of Trust for Measurement.</p>
 		</td>
 		<td>
 		  <strong>Mandatory</strong>
@@ -6801,9 +6799,7 @@ Certification for Windows Server 2016, Azure Stack and SDDC must meet the Window
 	  <tr class="even">
 		<td/>
 		<td>
-		  <blockquote>
-			<p>Implementation of PCRs 0 through 23 for SHA-256, dedicated to the same boot measurements as TPM 1.2.</p>
-		  </blockquote>
+          <p>Implementation of PCRs 0 through 23 for SHA-256, dedicated to the same boot measurements as TPM 1.2.</p>
 		</td>
 		<td>
 		  <strong>Mandatory</strong>
@@ -6817,9 +6813,7 @@ Certification for Windows Server 2016, Azure Stack and SDDC must meet the Window
 	  <tr class="even">
 		<td/>
 		<td>
-		  <blockquote>
-			<p>Robustness against side channel attacks including Differential Power Analysis (DPA) and Electromagnetic Emanations (EM)</p>
-		  </blockquote>
+          <p>Robustness against side channel attacks including Differential Power Analysis (DPA) and Electromagnetic Emanations (EM)</p>
 		</td>
 		<td>
 		  <strong>Recommended</strong>
