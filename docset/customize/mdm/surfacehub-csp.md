@@ -9,9 +9,6 @@ ms.assetid: 36FBBC32-AD6A-41F1-86BF-B384891AA693
 
 # SurfaceHub CSP
 
-> [!WARNING]
-> Some information relates to prereleased product, which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
-
 The SurfaceHub configuration service provider (CSP) is used to configure Microsoft Surface Hub settings. This CSP was added in Windows 10, version 1511.
 
 The following diagram shows the SurfaceHub CSP management objects in tree format.

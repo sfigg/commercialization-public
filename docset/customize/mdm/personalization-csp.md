@@ -8,10 +8,6 @@ MSHAttr:
 
 # Personalization CSP
 
-
-> [!WARNING]
-> Some information relates to prereleased product, which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
-
 The Personalization CSP can set the lock screen and desktop background images. Setting these policies also prevents the user from changing the image. You can also use the Personalization settings in a provisioning package.
 
 This CSP was added in Windows 10, version 1703.

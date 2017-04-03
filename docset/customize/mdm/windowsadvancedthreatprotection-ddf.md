@@ -9,9 +9,6 @@ ms.assetid: 0C62A790-4351-48AF-89FD-7D46C42D13E0
 
 # WindowsAdvancedThreatProtection DDF file
 
-> [!WARNING]
-> Some information relates to prereleased product, which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here. 
-
 This topic shows the OMA DM device description framework (DDF) for the **WindowsAdvancedThreatProtection** configuration service provider. DDF files are used only with OMA DM provisioning XML.
 
 ``` syntax
@@ -233,29 +230,6 @@ This topic shows the OMA DM device description framework (DDF) for the **Windows
                 <Permanent />
               </Scope>
               <DFTitle>Telemetry reporting frequency</DFTitle>
-              <DFType>
-                <MIME>text/plain</MIME>
-              </DFType>
-            </DFProperties>
-          </Node>
-          <Node>
-            <NodeName>GroupIds</NodeName>
-            <DFProperties>
-              <AccessType>
-                <Get />
-                <Replace />
-              </AccessType>
-              <Description>Set of Strings used by customer to mark subset of machines for WDATP targeting</Description>
-              <DFFormat>
-                <chr />
-              </DFFormat>
-              <Occurrence>
-                <One />
-              </Occurrence>
-              <Scope>
-                <Permanent />
-              </Scope>
-              <DFTitle>Group identifiers</DFTitle>
               <DFType>
                 <MIME>text/plain</MIME>
               </DFType>
