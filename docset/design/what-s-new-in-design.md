@@ -1,6 +1,6 @@
 ---
 title: What's new in Design
-description: This topic provides information about what's new in Windows 10, version 1607 minimum hardware requirements, form factors, device experiences, and hardware components across all Windows 10 devices.
+description: This topic provides information about what's new in Windows 10, version 1703 minimum hardware requirements, form factors, device experiences, and hardware components across all Windows 10 devices.
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
