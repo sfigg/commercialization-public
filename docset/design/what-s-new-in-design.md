@@ -10,12 +10,12 @@ ms.assetid: F882BFCB-996D-4A75-B858-D68201DB0C14
 # What's new in Design
 
 
-This topic provides information about what's new in Windows 10, version 1607 minimum hardware requirements, form factors, device experiences, and hardware components across all Windows 10 devices.
+This topic provides information about what's new in Windows 10, version 1703 minimum hardware requirements, form factors, device experiences, and hardware components across all Windows 10 devices.
 
 ## Minimum hardware requirements
 
 
-The following tables describes the changes for minimum hardware requirements in Windows 10, version 1607. The changes are organized by component area, the Windows edition that's impacted by the change, and the type of change.
+The following tables describes the changes for minimum hardware requirements in Windows 10, version 1703. The changes are organized by component area, the Windows edition that's impacted by the change, and the type of change.
 
 <table>
 <colgroup>
@@ -30,171 +30,124 @@ The following tables describes the changes for minimum hardware requirements in 
 <th>Component area</th>
 <th>Windows edition impacted</th>
 <th>Location of change</th>
-<th>Windows 10, version 1607 update</th>
+<th>Windows 10, version 1703 update</th>
 <th>Change type</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Active pen</td>
-<td>Desktop and Mobile</td>
-<td>Table 3: Minimum hardware requirements summary</td>
-<td>Digital pen changed to active pen</td>
-<td>Clarification</td>
-</tr>
-<tr class="even">
-<td>Active pen</td>
-<td>Desktop and Mobile</td>
-<td>Table 15: Touch, precision touch pad, and active pen requirements for Windows 10</td>
-<td>Clarified pen digitizer to be active</td>
-<td>Clarification</td>
-</tr>
-<tr class="odd">
-<td>Active Pen</td>
-<td>Desktop and Mobile</td>
-<td>Section 6.1 Touch, touch pad, and active pen</td>
-<td>Changed MSDN link to active pen reporting requirements</td>
-<td>Editorial</td>
-</tr>
-<tr class="even">
-<td>Camera</td>
-<td>Desktop and Mobile</td>
-<td>Section 6.2.1.1 Camera specification</td>
-<td>Clarified Autofocus is highly recommended for rear-facing cameras, but remains optional</td>
-<td>Clarification</td>
-</tr>
-<tr class="odd">
-<td>Camera</td>
-<td>Desktop and Mobile</td>
-<td>Table 16: Camera still-capture functional specifications</td>
-<td>Pixel aspect ratio changed from 1.0 to 1:1 square pixels</td>
-<td>Requirement adjustment</td>
-</tr>
-<tr class="even">
-<td>Camera</td>
-<td>Desktop and Mobile</td>
-<td>Table 18: Camera flash</td>
-<td>Changed Auto mode from being recommended to required</td>
-<td>Requirement adjustment</td>
-</tr>
-<tr class="odd">
-<td>Display</td>
-<td>Mobile</td>
-<td>Table 3: Minimum hardware requirements summary</td>
-<td>Screen size changed from less than 8-inches to less than 9-inches</td>
-<td>Requirement adjustment</td>
-</tr>
-<tr class="even">
-<td>Display</td>
-<td>Desktop</td>
-<td>Table 3: Minimum hardware requirements summary</td>
-<td>Screen size changed from 8-inches or greater required to 7-inches or greater required for tablets, 2-in-1s, laptops, and All-in-one</td>
-<td>Requirement adjustment</td>
-</tr>
-<tr class="odd">
-<td>Memory</td>
-<td>Mobile</td>
-<td>Table 3: Minimum hardware requirements summary</td>
-<td>RAM for Windows Mobile changed from 512MB to 1GB</td>
-<td>Requirement adjustment</td>
-</tr>
-<tr class="even">
-<td>Memory</td>
-<td>Mobile</td>
-<td>Table 7: RAM requirements for devices that run Windows 10 Mobile</td>
-<td>Baseline RAM for Windows Mobile updated from 512MB to 1GB</td>
-<td>Requirement adjustment</td>
-</tr>
-<tr class="odd">
-<td>Memory</td>
-<td>Mobile</td>
-<td>Table 7: RAM requirements for devices that run Windows 10 Mobile</td>
-<td>RAM carve-out by SoC vendor changed from &lt;=90MB to &lt;=115MB</td>
-<td>Requirement adjustment</td>
-</tr>
-<tr class="even">
-<td>Networking</td>
+<td>Form factor</td>
 <td>Server</td>
-<td>Section 4.6 Networking</td>
-<td>Clarified a Logo Certified network adapter must be included in systems running Windows Server 2016</td>
-<td>Clarification</td>
-</tr>
-<tr class="odd">
-<td>Processor</td>
-<td>Mobile</td>
-<td>Table 4: SoCs with integrated modems supported in devices that run Windows 10 Mobile</td>
-<td>Added MSM8996</td>
-<td>New hardware support</td>
-</tr>
-<tr class="even">
-<td>Processor</td>
-<td>Mobile</td>
-<td>Table 6: SoCs supported in Windows Phone that can be updated to Windows 10 Mobile</td>
-<td>Added MSM8994, MSM8992, MSM8952, MSM8909, MSM8208</td>
-<td>New hardware support</td>
-</tr>
-<tr class="odd">
-<td>Processor</td>
-<td>IoT</td>
-<td>5.1 Processor</td>
-<td><p>Clarified x64 processor and instruction set is supported</p>
-<p>Clarified support for CMPXCHG16b, LAHF/SAHF, and PrefetchW for 64-bit OS installations</p>
-<p>Clarified ARM SoCs must be compatible with ARMv7 Instruction Set</p>
-<p>Added table of supported SoCs:</p>
-<ul>
-<li><p>Qualcomm APQ8016, APQ8052, APQ8009</p></li>
-<li><p>Intel Bay Trail M/D/I</p></li>
-<li><p>Broadcom BCM2836</p></li>
-</ul></td>
+<td>Section 1.1.3 Table 2: Device types for Windows 10 and Server 2016 </td>
+<td>Listed example server form factors</td>
 <td>Clarification</td>
 </tr>
 <tr class="even">
-<td>Processor</td>
-<td>IoT</td>
-<td>5.1 Processor</td>
-<td><p>Added the following processors to the list of supported Intel SoCs:</p>
-<ul>
-<li>Atom E3900 series</li>
-<li>Celeron N3350</li>
-<li>Pentium N4200 platform</li>
-</ul></td>
-<td>New hardware support</td>
-</tr>
-<tr class="odd">
-<td>Resolution</td>
+<td>Processors</td>
 <td>Server</td>
-<td>Section 4.5.1 Resolution and bit depth</td>
-<td>Minimum resolution for Server with Desktop Experience clarified to 1024x768 and Nano Server option clarified to VGA</td>
+<td>Section 1.1.3 Table 2: Device types for Windows 10 and Server 2016</td>
+<td>Removed SoC from Supported processor types column</td>
 <td>Clarification</td>
 </tr>
-<tr class="even">
-<td>Security</td>
-<td>Desktop</td>
-<td>Section 3.7: Trusted Platform Module</td>
-<td><p>Changed TPM to be implemented and enabled on all new devices models, lines or series by July 28, 2016</p>
-<p>Added clarification all must be in compliance with TPM 2.0 ISO/IEC 11889 standard</p>
-<p>Added clarification TPM configurations must comply with local laws and regulations</p>
-<p>Added Firmware-based components that implement TPM capabilities must implement version 2.0 of the TPM specification</p>
-<p>Added Hardware-based components that implement TPM capabilities must implement version 2.0 of the TPM specification</p>
-<p>Removed SHA 1 measurements</p>
-<p>Added TechNet article for TPM 1.2 and 2.0 version comparisons</p></td>
-<td>Requirement adjustment</td>
-</tr>
 <tr class="odd">
-<td>Security</td>
-<td>IoT</td>
-<td>Section 5.4 Trusted Platform Module</td>
-<td><p>Changed TPM to be implemented and enabled on all new Windows 10 Mobile Enterprise editions based on IoT Mobile licensing for all new devices and platforms by July 28, 2016 and added clarification all devices must be in compliance with TPM 2.0 ISO/IEC 11889 standard</p>
-<p>Clarified that Windows 10 IoT Core (IoT Core) requirements for TPM 2.0 are optional.</p></td>
+<td>Bluetooth</td>
+<td>Server</td>
+<td>Section 1.2 Table 3: Minimum hardware requirements summary</td>
+<td>Changed Bluetooth from Optional to Not Supported on Windows Server 2016</td>
 <td>Requirement adjustment</td>
 </tr>
 <tr class="even">
-<td>Storage</td>
-<td>Server</td>
-<td>Section 4.2.2 Storage Controller</td>
-<td>Clarified a Logo Certified storage adapter must be included in systems running Windows Server 2016</td>
+<td>Processors</td>
+<td>Mobile</td>
+<td>Section 2.1 Table 4: SoCs with integrated modems supported in devices that run Windows 10 Mobile</td>
+<td>Updated SoCs to marketing names</td>
 <td>Clarification</td>
 </tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
 </tbody>
 </table>
 
