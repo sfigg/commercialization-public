@@ -1,13 +1,13 @@
 ---
-title: Customizations for mobile enterprise devices
-description: Customizations for mobile enterprise allow you to run mobile line-of-business applications on a platform that ensures that data is captured securely and efficiently.
+title: Customizations for mobile devices
+description: Customizations for mobile allow you to run mobile line-of-business applications on a platform that ensures that data is captured securely and efficiently.
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 0f2668cb-d7aa-4188-84a1-f5bd34be1bbd
 ---
 
-# Customizations for mobile enterprise devices
+# Customizations for mobile devices
 
 
 Customizations for mobile enterprise allow you to run mobile line-of-business applications on a platform that ensures that data is captured securely and efficiently.
@@ -28,6 +28,10 @@ Customizations for mobile enterprise allow you to run mobile line-of-business ap
 </thead>
 <tbody>
 <tr class="odd">
+<td><p>[Enterprise shared storage](enterprise-shared-storage.md)</p></td>
+<td><p>Enterprise shared storage defines local data locations for line of business apps to share data.</p></td>
+</tr>
+<tr class="even">
 <td><p>[Enterprise shared storage](enterprise-shared-storage.md)</p></td>
 <td><p>Enterprise shared storage defines local data locations for line of business apps to share data.</p></td>
 </tr>

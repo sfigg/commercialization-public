@@ -89,7 +89,7 @@ The Networking-MPSSVC-Svc component is part of Windows Firewall, which protects 
 <td><p>Disables Windows Firewall notifications for the public profile.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[PublicProfile_EnableFirewall](pnetworking-mpssvc-svcpublicprofile-enablefirewall.md)</p></td>
+<td><p>[PublicProfile_EnableFirewall](networking-mpssvc-svcpublicprofile-enablefirewall.md)</p></td>
 <td><p>Enables Windows Firewall for the public profile.</p></td>
 </tr>
 <tr class="even">

@@ -472,6 +472,17 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>My/WSTEP/Renew/RenewNow</li>
 </ul></td>
 </tr>
+<tr class="even">
+<td style="vertical-align:top"><p>[WindowsLicensing CSP](windowslicensing-csp.md)</p></td>
+<td style="vertical-align:top"><p>Added the following new node and settings in Windows 10, version 1607, but not documented:</p>
+<ul>
+<li>Subscriptions</li>
+<li>Subscriptions/SubscriptionId</li>
+<li>Subscriptions/SubscriptionId/Status</li>
+<li>Subscriptions/SubscriptionId/Name</li>
+</ul>
+</td>
+</tr>
 </tbody>
 </table>
 
@@ -490,8 +501,8 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 </thead>
 <tbody>
 <tr class="odd">
-<td style="vertical-align:top"><p>New nodes in [Update CSP](update-csp.md)</p></td>
-<td style="vertical-align:top"><p>Added the following nodes to the [Update CSP](update-csp.md):</p>
+<td style="vertical-align:top"><p>[Update CSP](update-csp.md)</p></td>
+<td style="vertical-align:top"><p>Added the following nodes:</p>
 <ul>
 <li>FailedUpdates/<em>Failed Update Guid</em>/RevisionNumber</li>
 <li>InstalledUpdates/<em>Installed Update Guid</em>/RevisionNumber</li>
@@ -517,6 +528,14 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <ul>
 <li>AllowTextSuggestions</li>
 <li>RequirePrinting</li>
+</ul>
+</td>
+</tr>
+<tr class="even">
+<td style="vertical-align:top">[EnterpriseAPN CSP](enterpriseapn-csp.md)</td>
+<td style="vertical-align:top"><p>Added the following setting:</p>
+<ul>
+<li>Roaming</li>
 </ul>
 </td>
 </tr>
@@ -558,6 +577,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>Experience/AllowTailoredExperiencesWithDiagnosticData</li>
 <li>Experience/AllowWindowsSpotlightOnActionCenter</li>
 <li>Experience/AllowWindowsSpotlightWindowsWelcomeExperience</li>
+<li>Location/EnableLocation</li>
 <li>Messaging/AllowMMS</li>
 <li>Messaging/AllowRCS</li>
 <li>Privacy/LetAppsGetDiagnosticInfo</li>
@@ -570,6 +590,9 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>Privacy/LetAppsRunInBackground_UserInControlOfTheseApps</li>
 <li>Settings/ConfigureTaskbarCalendar</li>
 <li>Settings/PageVisibilityList</li>
+<li>SmartScreen/EnableAppInstallControl</li>
+<li>SmartScreen/EnableSmartScreenInShell</li>
+<li>SmartScreen/PreventOverrideForFilesInShell</li>
 <li>Start/HideAppList</li>
 <li>Start/HideChangeAccountSettings</li>
 <li>Start/HideFrequentlyUsedApps</li>
@@ -604,10 +627,14 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <p>Starting in Windows 10, version 1703, Update/UpdateServiceUrl is not supported in Windows 10 Mobile Enteprise and IoT Enterprise</p>
 <p>Starting in Windows 10, version 1703, in Browser/HomePages you can use the "&lt;about:blank&gt;" value if you don’t want to send traffic to Microsoft.</p>
 <p>Starting in Windows 10, version 1703, Start/StartLayout can now be set on a per-device basis in addition to the pre-existing per-user basis.</p>
+<p>Added the ConfigOperations/ADMXInstall node and setting, which is used to ingest ADMX files.</p>
 </td></tr>
 <tr class="odd">
 <td style="vertical-align:top">[DevDetail CSP](devdetail-csp.md)</td>
-<td style="vertical-align:top"><p>Added the following setting: DeviceHardwareData.</p>
+<td style="vertical-align:top"><p>Added the following setting:</p>
+<ul>
+<li>DeviceHardwareData</li>
+</ul>
 </td>
 </tr>
 <tr class="even">
@@ -628,7 +655,11 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 </tr>
 <tr class="even">
 <td style="vertical-align:top">[EnterpriseDataProtection CSP](enterprisedataprotection-csp.md)</td>
-<td style="vertical-align:top"><p>Starting in Windows 10, version 1703, AllowUserDecryption is no longer supported.</p></td>
+<td style="vertical-align:top"><p>Starting in Windows 10, version 1703, AllowUserDecryption is no longer supported.</p><p>Added the following settings:</p>
+<ul>
+<li>RevokeOnMDMHandoff</li>
+<li>SMBAutoEncryptedFileExtensions</li>
+</ul></td>
 </tr>
 <tr class="odd">
 <td style="vertical-align:top">[DynamicManagement CSP](dynamicmanagement-csp.md)</td>
@@ -640,7 +671,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 </tr>
 <tr class="odd">
 <td style="vertical-align:top"><p>[PassportForWork CSP](passportforwork-csp.md)</p></td>
-<td style="vertical-align:top"><p>Added the following node and settings:</p>
+<td style="vertical-align:top"><p>Added the following new node and settings:</p>
 <ul>
 <li><em>TenantId</em>/Policies/ExcludeSecurityDevices (only for ./Device/Vendor/MSFT)</li>
 <li><em>TenantId</em>/Policies/ExcludeSecurityDevices/TPM12 (only for ./Device/Vendor/MSFT)</li>
@@ -655,6 +686,61 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <td style="vertical-align:top">[Personalization CSP](personalization-csp.md)</td>
 <td style="vertical-align:top"><p>Added new CSP.</p></td>
 </tr>
+<tr class="even">
+<td style="vertical-align:top">[EnterpriseAppVManagement CSP](enterpriseappvmanagement-csp.md)</td>
+<td style="vertical-align:top"><p>Added new CSP.</p></td>
+</tr>
+<tr class="odd">
+<td style="vertical-align:top">[HealthAttestation CSP](healthattestation-csp.md)</td>
+<td style="vertical-align:top"><p>Added the following settings:</p>
+<ul>
+<li>HASEndpoint - added in Windows 10, version 1607, but not documented</li>
+<li>TpmReadyStatus - added in the March service release of Windows 10, version 1607</li>
+</ul></td>
+</tr>
+<tr class="even">
+<td style="vertical-align:top"><p>[SurfaceHub CSP](surfacehub-csp.md)</p></td>
+<td style="vertical-align:top"><p>Added the following nodes and settings:</p>
+<ul>
+<li>InBoxApps/SkypeForBusiness</li>
+<li>InBoxApps/SkypeForBusiness/DomainName</li>
+<li>InBoxApps/Connect</li>
+<li>InBoxApps/Connect/AutoLaunch</li>
+<li>Properties/DefaultVolume</li>
+<li>Properties/ScreenTimeout</li>
+<li>Properties/SessionTimeout</li>
+<li>Properties/SleepTimeout</li>
+<li>Properties/AllowSessionResume</li>
+<li>Properties/AllowAutoProxyAuth</li>
+<li>Properties/DisableSigninSuggestions</li>
+<li>Properties/DoNotShowMyMeetingsAndFiles</li>
+</ul>
+</td>
+</tr>
+<tr class="odd">
+<td style="vertical-align:top">[NetworkQoSPolicy CSP](networkqospolicy-csp.md)</td>
+<td style="vertical-align:top"><p>Added new CSP.</p></td>
+</tr>
+<tr class="even">
+<td style="vertical-align:top"><p>[WindowsLicensing CSP](windowslicensing-csp.md)</p></td>
+<td style="vertical-align:top"><p>Added the following setting:</p>
+<ul>
+<li>ChangeProductKey</li>
+</ul>
+</td>
+</tr>
+<tr class="odd">
+<td style="vertical-align:top">[WindowsAdvancedThreatProtection CSP](windowsadvancedthreatprotection-csp.md)</td>
+<td style="vertical-align:top"><p>Added the following setting:</p>
+<ul>
+<li>Configuration/TelemetryReportingFrequency</li>
+</ul>
+</td>
+</tr>
+<tr class="even">
+<td style="vertical-align:top">[DMSessionActions CSP](dmsessionactions-csp.md)</td>
+<td style="vertical-align:top"><p>Added new CSP.</p>
+</td></tr>
 </tbody>
 </table> 
 
@@ -925,6 +1011,31 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 
 ## Change history in MDM documentation
 
+### April 2017
+
+<table>
+<colgroup>
+<col width="25%" />
+<col width="75%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>New or updated topic</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="vertical-align:top">[Policy CSP](policy-configuration-service-provider.md)</td>
+<td style="vertical-align:top"><p>DeviceLock/EnforceLockScreenAndLogonImage is not supported in Windows 10 Pro edition.</p>
+</td></tr>
+<tr class="even">
+<td style="vertical-align:top">[DMSessionActions CSP](dmsessionactions-csp.md)</td>
+<td style="vertical-align:top"><p>Added new CSP for Windows 10, version 1703.</p>
+</td></tr>
+</tbody>
+</table>
+
 ### March 2017
 
 <table>
@@ -947,14 +1058,106 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>Connectivity/AllowConnectedDevices</li>
 <li>Display/TurnOffGdiDPIScalingForApps</li>
 <li>Display/TurnOnGdiDPIScalingForApps</li>
+<li>Location/EnableLocation</li>
+<li>SmartScreen/EnableAppInstallControl</li>
+<li>SmartScreen/EnableSmartScreenInShell</li>
+<li>SmartScreen/PreventOverrideForFilesInShell</li>
 <li>Update/IgnoreMOAppDownloadLimit</li>
 <li>Update/IgnoreMOUpdateDownloadLimit</li>
 </ul>
+<p>For Windows 10, version 1703, added the ConfigOperations/ADMXInstall node and setting, which is used to ingest ADMX files.</p>
 </td>
+</tr>
+<tr class="even">
+<td style="vertical-align:top">[DeviceLock/DevicePasswordEnabled](policy-configuration-service-provider.md#devicelock-devicepasswordenabled) in Policy CSP</td>
+<td style="vertical-align:top"><p>Added the following note:</p>
+<p>**DevicePasswordEnabled** should not be set to Enabled (0) when WMI is used to set the EAS DeviceLock policies given that it is Enabled by default in Policy CSP for back compat with Windows 8.x. If **DevicePasswordEnabled** is set to Enabled(0) then Policy CSP will return an error stating that **DevicePasswordEnabled** already exists. Windows 8.x did not support DevicePassword policy. When disabling **DevicePasswordEnabled** (1) then this should be the only policy set from the DeviceLock group of policies listed below:</p>
+<ul>
+<li>DevicePasswordEnabled is the parent policy of the following:
+<ul><li>AllowSimpleDevicePassword</li>
+<li>MinDevicePasswordLength</li>
+<li>AlphanumericDevicePasswordRequired
+<ul><li>MinDevicePasswordComplexCharacters</li></ul></li> 
+<li> MaxDevicePasswordFailedAttempts</li>
+<li>MaxInactivityTimeDeviceLock</td></li></ul></ul>
 </tr>
 <tr class="even">
 <td style="vertical-align:top">[Personalization CSP](personalization-csp.md)</td>
 <td style="vertical-align:top"><p>Added new CSP for Windows 10, version 1703.</p></td>
+</tr>
+<tr class="odd">
+<td style="vertical-align:top">[EnterpriseAppVManagement CSP](enterpriseappvmanagement-csp.md)</td>
+<td style="vertical-align:top"><p>Added new CSP for Windows 10, version 1703.</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top">[HealthAttestation CSP](healthattestation-csp.md)</td>
+<td style="vertical-align:top"><p>Added the following settings:.</p>
+<ul>
+<li>HASEndpoint - added in Windows 10, version 1607, but not documented</li>
+<li>TpmReadyStatus - added in the March service release of Windows 10, version 1607</li>
+</ul></td>
+</tr>
+<tr class="even">
+<td style="vertical-align:top"><p>[SurfaceHub CSP](surfacehub-csp.md)</p></td>
+<td style="vertical-align:top"><p>Updated in Windows 10, version 1703. Added the following nodes and settings:</p>
+<ul>
+<li>InBoxApps/SkypeForBusiness</li>
+<li>InBoxApps/SkypeForBusiness/DomainName</li>
+<li>InBoxApps/Connect</li>
+<li>InBoxApps/Connect/AutoLaunch</li>
+<li>Properties/DefaultVolume</li>
+<li>Properties/ScreenTimeout</li>
+<li>Properties/SessionTimeout</li>
+<li>Properties/SleepTimeout</li>
+<li>Properties/AllowSessionResume</li>
+<li>Properties/AllowAutoProxyAuth</li>
+<li>Properties/DisableSigninSuggestions</li>
+<li>Properties/DoNotShowMyMeetingsAndFiles</li>
+</ul>
+</td>
+</tr>
+<tr class="odd">
+<td style="vertical-align:top">[NetworkQoSPolicy CSP](networkqospolicy-csp.md)</td>
+<td style="vertical-align:top"><p>Added new CSP for Windows 10, version 1703.</p></td>
+</tr>
+<tr class="even">
+<td style="vertical-align:top">[EnterpriseAPN CSP](enterpriseapn-csp.md)</td>
+<td style="vertical-align:top"><p>Added the following setting:</p>
+<ul>
+<li>Roaming</li>
+</ul>
+</td>
+</tr>
+<tr class="even">
+<td style="vertical-align:top"><p>[WindowsLicensing CSP](windowslicensing-csp.md)</p></td>
+<td style="vertical-align:top"><p>Added the following setting for Windows 10, version 1703:</p>
+<ul>
+<li>ChangeProductKey</li>
+</ul>
+<p>Added the following new node and settings in Windows 10, version 1607, but not previously documented:</p>
+<ul>
+<li>Subscriptions</li>
+<li>Subscriptions/SubscriptionId</li>
+<li>Subscriptions/SubscriptionId/Status</li>
+<li>Subscriptions/SubscriptionId/Name</li>
+</ul>
+</td>
+</tr>
+<tr class="odd">
+<td style="vertical-align:top">[EnterpriseDataProtection CSP](enterprisedataprotection-csp.md)</td>
+<td style="vertical-align:top"><p>Added the following settings:</p>
+<ul>
+<li>RevokeOnMDMHandoff</li>
+<li>SMBAutoEncryptedFileExtensions</li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td style="vertical-align:top">[WindowsAdvancedThreatProtection CSP](windowsadvancedthreatprotection-csp.md)</td>
+<td style="vertical-align:top"><p>Updated in Windows 10, version 1703. Added the following setting:</p>
+<ul>
+<li>Configuration/TelemetryReportingFrequency</li>
+</ul>
+</td>
 </tr>
 </tbody>
 </table>
@@ -1063,7 +1266,7 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 </tr>
 <tr class="even">
 <td style="vertical-align:top"><p>[PassportForWork CSP](passportforwork-csp.md)</p></td>
-<td style="vertical-align:top"><p>Updated in Windows 10, version 1703. Added the following node and settings:</p>
+<td style="vertical-align:top"><p>Updated in Windows 10, version 1703. Added the following new node and settings:</p>
 <ul>
 <li><em>TenantId</em>/Policies/ExcludeSecurityDevices (only for ./Device/Vendor/MSFT)</li>
 <li><em>TenantId</em>/Policies/ExcludeSecurityDevices/TPM12 (only for ./Device/Vendor/MSFT)</li>
@@ -1272,9 +1475,9 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 </tr><tr class="odd">
 <td style="vertical-align:top">[Policy CSP](policy-configuration-service-provider.md)</td>
 <td style="vertical-align:top"><p>Updated the description of the following policies.<ul>
-<li>[Browser/Homepages](policy-configuration-service-provider#browser-homepages)</li>
-<li>[DeviceLock/MaxInactivityTimeDeviceLock](policy-configuration-service-provider#devicelock-maxinactivitytimedevicelock)</li>
-<li>[Experience/ConfigureWindowsSpotlightOnLockScreen](policy-configuration-service-provider#experience-configurewindowsspotlightonlockscreen)</li>
+<li>[Browser/Homepages](policy-configuration-service-provider.md#browser-homepages)</li>
+<li>[DeviceLock/MaxInactivityTimeDeviceLock](policy-configuration-service-provider.md#devicelock-maxinactivitytimedevicelock)</li>
+<li>[Experience/ConfigureWindowsSpotlightOnLockScreen](policy-configuration-service-provider.md#experience-configurewindowsspotlightonlockscreen)</li>
 </ul></p>
 </td>
 </tr>

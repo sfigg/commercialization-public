@@ -9,10 +9,6 @@ MSHAttr:
 
 # Implement server-side support for mobile application management on Windows 
 
-
-> [!WARNING]
-> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.  
-
 The Windows version of mobile application management (MAM) is a lightweight solution for managing company data access and security on personal devices. MAM support is built into Windows on top of Windows Information Protection (WIP), starting in Windows 10, version 1703.
 
 ## Integration with Azure Active Directory
@@ -94,7 +90,7 @@ MAM on Windows support the following CSPs. All other CSPs will be blocked. Note 
 
 ## Device lock policies and EAS
 
-MAM supports device lock policies similar to MDM. The policies are configured by DeviceLock area of Policy CSP and PassportForWork CSP. The MAM client respects the [DeviceLock/MaxDevicePasswordFailedAttempts](policy-configuration-service-provider.md#devicelock-maxdevicepasswordfailedattempts) and [DeviceLock/MaxInactivityTimeDeviceLock](policy-configuration-service-provider.md#devicelock-maxinactivitytimedevicelock) policies of the DeviceLock area of Policy CSP. The rest of DeviceLock area policies are ignored. The MAM client supports all policies of PassportForWork CSP.
+MAM supports device lock policies similar to MDM. The policies are configured by DeviceLock area of Policy CSP and PassportForWork CSP. 
 
 We do not recommend configuring both Exchange Active Sync (EAS) and MAM policies for the same device. However, if both are configured, the client will behave as follows: 
 
@@ -114,6 +110,9 @@ MAM policy syncs are modeled after MDM. The MAM client uses an Azure AD token to
 
 Windows does not support applying both MAM and MDM policies to the same devices. If configured by the admin, a user can change his MAM enrollment to MDM.
 
+> [!Note]
+> When users upgrade from MAM to MDM on Windows Home edition, they lose access to WIP. On the Home edition, we do not recommend pushing MDM policies to enable users to upgrade.
+
 To configure MAM device for MDM enrollment, the admin needs to configure the MDM Discovery URL in the DMClient CSP. This URL will be used for MDM enrollment.
 
 In the process of changing MAM enrollment to MDM, MAM policies will be removed from the device after MDM policies have been successfully applied. Normally when WIP policies are removed from the device, the user’s access to WIP-protected documents is revoked (selective wipe) unless EDP CSP RevokeOnUnenroll is set to false. To prevent selective wipe on enrollment change from MAM to MDM, the admin needs to ensure that:
@@ -121,7 +120,49 @@ In the process of changing MAM enrollment to MDM, MAM policies will be removed f
 <ol>
 <li>Both MAM and MDM policies for the organization support WIP</li>
 <li>EDP CSP Enterprise ID is the same for both MAM and MDM</li>
-<li>EDP CSP RevokeONUpgrade is set to FALSE</li>
+<li>EDP CSP RevokeOnMDMHandoff is set to FALSE</li>
 </ol>
 
 If the MAM device is properly configured for MDM enrollment, then the Enroll only to device management link will be displayed in **Settings>Accounts>Access work or school**. The user can click on this link, provide their credentials, and the enrollment will be changed to MDM. Their Azure AD account will not be affected.
+
+## Skype for Business compliance with MAM
+
+We have updated Skype for Business to work with MAM. The following table explains Office release channels and release dates for Skype for Business compliance with the MAM feature.
+
+<table>
+<colgroup>
+<col width="15%" />
+<col width="35%" />
+<col width="15%" />
+<col width="35%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Update channel</th>
+<th>Primary purpose</th>
+<th>LOB Tatoo availability</th>
+<th>Default update channel for the products</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>[Current channel](https://technet.microsoft.com/en-us/library/mt455210.aspx#BKMK_CB)</td>
+<td>Provide pilot users and application compatibility testers the opportunity to test the next Deferred Channel. </td>
+<td>March 9 2017</td>
+<td><p>Visio Pro for Office 365</p>
+<p>Project Online Desktop Client</p>
+<p>Office 365 Business (the version of Office that comes with some Office 365 plans, such as Business Premium.)</p></td>
+</tr>
+<tr>
+<td>[Deferred channel](https://technet.microsoft.com/en-us/library/mt455210.aspx#BKMK_CBB)</td>
+<td>Provide users with new features of Office only a few times a year.</td>
+<td>October 10 2017</td>
+<td>Office 365 ProPlus</td>
+</tr><tr>
+<td>[First release for deferred channel](https://technet.microsoft.com/en-us/library/mt455210.aspx#BKMK_FRCBB)</td>
+<td>Provide pilot users and application compatibility testers the opportunity to test the next Deferred Channel. </td>
+<td>June 13 2017</td>
+<td></td>
+</tr>
+</tbody>
+</table>

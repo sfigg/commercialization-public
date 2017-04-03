@@ -47,36 +47,7 @@ Use the follow steps to prepare the ScanState tool to capture Windows desktop ap
     xcopy /E /Y "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Setup\amd64\Sources" C:\ScanState_amd64
     ```
 
-2.  In some instances, Windows Defender settings and detection history might be captured into the customizations package by the ScanState tool. This can lead to failures during recovery due to file conflicts, and causes the PC to reboot and enter the "Installing Windows" phase repeatedly. These next steps will prevent the capture of Windows Defender settings.
-
-    1.  Using the ScanState tool on a PC running Windows 10, generate a configuration file:
-
-        ``` syntax
-        ScanState.exe /apps /genconfig:C:\pbr_config.xml 
-        ```
-
-    2.  Open the configuration file in notepad
-    3.  Search for the following lines in the configuration file:
-
-        ``` syntax
-        <component displayname="Windows-Defender-AM-Sigs" migrate="yes"… 
-        <component displayname="Windows-Defender-AM-Engine" migrate="yes"… 
-        <component displayname="Security-Malware-Windows-Defender" migrate="yes"… 
-        ```
-
-    4.  Modify the "migrate" value from "yes" to "no" for each line. For example:
-
-        ``` syntax
-        <component displayname="Windows-Defender-AM-Sigs" migrate="no"… 
-        <component displayname="Windows-Defender-AM-Engine" migrate="no"… 
-        <component displayname="Security-Malware-Windows-Defender" migrate="no"… 
-        ```
-
-        In step 10 later in this topic, you will specify the configuration file when you use ScanState to capture the customizations into a .ppkg file.
-
-    5.  Save and close the configuration file.
-
-3.  Copy the contents of the working folder to a network location or USB flash drive.
+2.  Copy the contents of the working folder to a network location or USB flash drive.
 
 Use the following steps to customize your Windows RE boot image if additional drivers and language packs are needed.
 
@@ -310,8 +281,6 @@ If you plan to use Push-button reset’s extensibility points, use the following
 
 **Step 8: Create a diskpart script for bare-metal recovery (optional)**
 
-**Step 8: Create a diskpart script for bare-metal recovery (optional)**
-
 1.  Create a diskpart script for bare-metal recovery.
 
     **Important** The diskpart script used for bare metal recovery should not include a `select disk` or `clean` command. The system disk will be selected automatically before the diskpart script is processed.
@@ -463,10 +432,10 @@ If you plan to use Push-button reset’s extensibility points, use the following
 
 **Step 10: Capture and deploy customizations for recovery**
 
-1.  Use the ScanState tool to capture the installed customizations into a provisioning package. Use the /config option to specify the configuration file you modified in Step 1 earlier in this topic, and save the .ppkg file in the folder C:\\Recovery\\Customizations.
+1.  Use the ScanState tool to capture the installed customizations into a provisioning package. Use the /config option to specify one of the default configuration files included with the ADK, and save the .ppkg file in the folder C:\\Recovery\\Customizations.
 
     ``` syntax
-    D:\ScanState_amd64\scanstate.exe /apps /config:<path_to_config_file> /ppkg C:\Recovery\Customizations\apps.ppkg /o /c /v:13 /l:C:\ScanState.log
+    N:\ScanState_amd64\scanstate.exe /apps /config:<path_to_config_file> /ppkg C:\Recovery\Customizations\apps.ppkg /o /c /v:13 /l:C:\ScanState.log
     ```
 
     where N:\\ is the location of the ScanState tool installed in Step 1.

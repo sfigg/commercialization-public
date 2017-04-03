@@ -35,10 +35,11 @@ For left-to-right languages, the taskbar icons are ordered from left to right. F
 -   **Start**
 -   **Search**
 -   **Task view**
+-   **Mail**
 -   Windows-provided pins
 -   OEM pins
 
-You cannot remove or replace the Windows-provided pins or **Start**, **Search**, or **Task view**. You are, however, able to add up to three additional pinned apps to the taskbar.
+You cannot remove or replace the Windows-provided pins or **Start**, **Search**, **Task view**, or **Mail**. You are, however, able to add up to three additional pinned apps to the taskbar.
 
 There are eight steps to customize the taskbar with up to three additional pinned apps:
 
@@ -89,12 +90,6 @@ There are eight steps to customize the taskbar with up to three additional pinne
     TaskbarLayoutModification.xml is applied during [Sysprep](../../manufacture/desktop/sysprep-process-overview.md). After Sysprep processes the file, it is moved to %AppData%\\Local\\Microsoft\\Windows\\Shell\\. During OOBE, the tray creates an instance of ITaskbarLayoutPolicyManager and determines whether the TaskbarLayoutModification.xml is present and is well formed. If not, Windows checks for pins in the Unattend setting:[TaskbarLinks](unattend/microsoft-windows-shell-setup-taskbarlinks.md). If neither exist, no new pins are added. If the TaskbarLayoutModification.xml is valid, Windows adds the pins to the taskbar.
 
 **Note**  Note: If the taskbar detects registry keys that map to default pins (the pre-Windows 10, version 1607 method of pinning apps to the taskbar), and it also detects app pinning by using TaskbarLayoutModification.xml, only TaskbarLayoutModification.xml pinning will be applied. If, however, no TaskbarLayoutModification.xml file exists, the legacy method will be applied. **The legacy method is deprecated in Windows 10, version 1607, and may not be supported in future versions of Windows. We recommend this new approach, adding a TaskbarLayoutModification.xml file.**
-
- 
-
- 
-
- 
 
 [Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_customize_desktop\p_customize_desktop%5D:%20Customize%20the%20taskbar%20%20RELEASE:%20%2810/19/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 

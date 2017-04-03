@@ -14,9 +14,6 @@ Partners can set the expiration time before the device deletes the received part
 
 For example, if the device is waiting for a three-part SMS message and the first part has been received, the first part will be deleted when the time expires and the other part of the message has not arrived. If the second part of the message arrives before the time expires, the first and second parts of the message will be deleted if the last part does not arrive after the time expires. The expiration time is reset whenever the next part of the long message is received.
 
-<a href="" id="sample---smsexpirationtime"></a>**Sample:** SMSExpirationTime  
-[Use the customization samples](p_phCustomization.use_the_customization_samples)
-
 <a href="" id="constraints---none"></a>**Constraints:** None  
 This customization supports: **per-IMSI** value, **per-device** value
 
