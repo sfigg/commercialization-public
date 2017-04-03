@@ -87,7 +87,8 @@ Small area sensors (a sensor matrix of less than 160x160 at a dpi of 320 or grea
 <br>* False Accept Rate (FAR): < 0.002%  
 <br>* Effective, real world FRR with Anti-spoofing or liveness detection: < 10% 
 <br>* Presentation attack detection measures are a requirement. 
-<br> 
+<br>
+<br>
 Swipe sensors  
 <br>* False Accept Rate (FAR): < 0.002%  
 <br>* Effective, real world FRR with Anti-spoofing or liveness detection: < 10% 
