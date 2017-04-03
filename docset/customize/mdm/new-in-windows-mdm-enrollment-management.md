@@ -1027,7 +1027,11 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <tbody>
 <tr class="odd">
 <td style="vertical-align:top">[Policy CSP](policy-configuration-service-provider.md)</td>
-<td style="vertical-align:top"><p>DeviceLock/EnforceLockScreenAndLogonImage is not supported in Windows 10 Pro edition.</p>
+<td style="vertical-align:top"><p>Added the following new policies for Windows 10, version 1703:</p> 
+<ul>
+<li>DeviceLock/MaxInactivityTimeDeviceLockWithExternalDisplay</li>
+</ul>
+<p>DeviceLock/EnforceLockScreenAndLogonImage is not supported in Windows 10 Pro edition.</p>
 </td></tr>
 <tr class="even">
 <td style="vertical-align:top">[DMSessionActions CSP](dmsessionactions-csp.md)</td>
