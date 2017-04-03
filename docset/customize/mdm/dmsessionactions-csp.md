@@ -9,9 +9,6 @@ MSHAttr:
 # DMSessionActions CSP
 
 
-> [!WARNING]
-> Some information relates to prereleased product, which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
-
 The DMSessionActions configuration service provider (CSP) is used to manage:  
 
 - the number of sessions the client skips if the device is in a low power state
