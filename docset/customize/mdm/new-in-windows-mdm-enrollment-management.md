@@ -616,12 +616,14 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>Update/AutoRestartNotificationSchedule</li>
 <li>Update/AutoRestartNotificationStyle</li>
 <li>Update/AutoRestartRequiredNotificationDismissal</li>
+<li>Update/DetectionFrequency</li>
 <li>Update/EngagedRestartDeadline</li>
 <li>Update/EngagedRestartSnoozeSchedule</li>
 <li>Update/EngagedRestartTransistionSchedule</li>
 <li>Update/IgnoreMOAppDownloadLimit</li>
 <li>Update/IgnoreMOUpdateDownloadLimit</li>
 <li>Update/SetAutoRestartNotificationDisable</li>
+<li>Update/SetEDURestart</li>
 <li>WindowsLogon/HideFastUserSwitching</li>
 </ul><p>Removed TextInput/AllowLinguisticDataCollection</p>
 <p>Starting in Windows 10, version 1703, Update/UpdateServiceUrl is not supported in Windows 10 Mobile Enteprise and IoT Enterprise</p>
@@ -1027,7 +1029,9 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <tbody>
 <tr class="odd">
 <td style="vertical-align:top">[Policy CSP](policy-configuration-service-provider.md)</td>
-<td style="vertical-align:top"><p>DeviceLock/EnforceLockScreenAndLogonImage is not supported in Windows 10 Pro edition.</p>
+<td style="vertical-align:top"><p>DeviceLock/EnforceLockScreenAndLogonImage is not supported in Windows 10 Pro edition.</p><p>Added the following new policies:</p><ul>
+<li>Update/DetectionFrequency</li>
+<li>Update/SetEDURestart</li></ul>
 </td></tr>
 <tr class="even">
 <td style="vertical-align:top">[DMSessionActions CSP](dmsessionactions-csp.md)</td>
