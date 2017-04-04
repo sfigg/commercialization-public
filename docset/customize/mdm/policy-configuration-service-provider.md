@@ -3799,12 +3799,12 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 		<tr>
 		<td style="vertical-align:top"><a href="#update-detectionfrequency">Update/DetectionFrequency</a></td>
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Home</p></td>
-		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png"><p>Pro</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Pro</p></td>
 		<td style="vertical-align:top"><p></p></td>
-		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png"><p>Enterprise</p></td>
-		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png"><p>Education</p></td>
-		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png"><p>Mobile</p></td>
-		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png"><p>Mobile Enterprise</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Enterprise</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Education</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Mobile</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Mobile Enterprise</p></td>
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>IoT Core</p></td>
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>EAS</p></td></tr>
 	<tr>
@@ -3997,10 +3997,10 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 	<tr>
 		<td style="vertical-align:top"><a href="#update-setedurestart">Update/SetEDURestart</a></td>
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Home</p></td>
-		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png"><p>Pro</p></td>
-		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png"><p>Business</p></td>
-		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png"><p>Enterprise</p></td>
-		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png"><p>Education</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Pro</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Business</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Enterprise</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Education</p></td>
 		<td style="vertical-align:top"><p>Mobile</p></td>
 		<td style="vertical-align:top"><p>Mobile Enterprise</p></td>
 		<td style="vertical-align:top"><p>IoT Core</p></td>
@@ -8220,7 +8220,7 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 <p style="margin-left: 20px">If the "Allow Telemetry" policy is enabled and the Options value is set to 0, then the "Defer upgrades by", "Defer updates by" and "Pause Updates and Upgrades" settings have no effect.
 
 <a href="" id="update-detectionfrequency"></a>**Update/DetectionFrequency** 
-<p style="margin-left: 20px">Specifies the scan frequency from every 1 - 22 hours. Default is 22 hours.
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies the scan frequency from every 1 - 22 hours. Default is 22 hours.
 
 <a href="" id="update-engagedrestartdeadline"></a>**Update/EngagedRestartDeadline**  
 > [!NOTE]
@@ -8471,7 +8471,7 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 -   1 – Disabled
 
 <a href="" id="update-setedurestart"></a>**Update/SetEDURestart**  
-<p style="margin-left: 20px">For devices in a cart, this policy skips the check for battery level to ensure that the reboot will happen at ScheduledInstallTime.
+<p style="margin-left: 20px">Added in Windows 10, version 1703. For devices in a cart, this policy skips the check for battery level to ensure that the reboot will happen at ScheduledInstallTime.
 
 <p style="margin-left: 20px">The following list shows the supported values:
 
@@ -8573,6 +8573,9 @@ Example
 
 <p style="margin-left: 20px">Most restricted value is 0.
 
+<a href="" id="wifi-allowwifidirect"></a>**Wifi/AllowWiFiDirect**  
+<p style="margin-left: 20px">Added in Windows 10, version 1703. 
+
 <a href="" id="wifi-allowwifihotspotreporting"></a>**WiFi/AllowWiFiHotSpotReporting**  
 <p style="margin-left: 20px">This policy has been deprecated.
 
@@ -8615,6 +8618,12 @@ Example
 1.   Enable policy.
 2.   Verify that the Switch account button in Start is hidden.
 
+<a href="" id="wirelessdisplay-allowprojectionfrompc"></a>**WirelessDisplay/AllowProjectionFromPC**  
+<p style="margin-left: 20px">Added in Windows 10, version 1703. This policy allows you to turn off projection from a PC.  
+
+- 0 - your PC cannot discover or project to other devices.
+- 1 - your PC can discover and project to other devices
+
 <a href="" id="wirelessdisplay-allowprojectiontopc"></a>**WirelessDisplay/AllowProjectionToPC**  
 <p style="margin-left: 20px">Added in Windows 10, version 1607. Allow or disallow turning off the projection to a PC.
 
@@ -8624,6 +8633,21 @@ Example
 
 -   0 - projection to PC is not allowed. Always off and the user cannot enable it.
 -   1 (default) - projection to PC is allowed. Enabled only above the lock screen.
+
+<a href="" id="wirelessdisplay-allowprojectionfrompcoverinfrastructure"></a>**WirelessDisplay/AllowProjectionFromPCOverInfrastructure**  
+<p style="margin-left: 20px">Added in Windows 10, version 1703. This policy allows you to turn off projection from a PC over infrastructure.  
+
+- 0 - your PC cannot discover or project to other infrastructure devices, although it is possible to discover and project over WiFi Direct.
+- 1 - your PC can discover and project to other devices over infrastructure.
+
+<a href="" id="wirelessdisplay-allowuserinputfromwirelessdisplayreceiver"></a>**WirelessDisplay/AllowUserInputFromWirelessDisplayReceiver**  
+<p style="margin-left: 20px">Added in Windows 10, version 1703.
+
+<a href="" id="wirelessdisplay-Allowprojectiontopcoverinfrastructure"></a>**WirelessDisplay/AllowProjectionToPCOverInfrastructure**  
+<p style="margin-left: 20px">Added in Windows 10, version 1703. This policy setting allows you to turn off projection to a PC over infrastructure.  
+
+- 0 - your PC is not discoverable and other devices cannot project to it over infrastructure, although it is possible to project to it over WiFi Direct.
+- 1 - your PC is discoverable and other devices can project to it over infrastructure.
 
 <a href="" id="wirelessdisplay-requirepinforpairing"></a>**WirelessDisplay/RequirePinForPairing**  
 <p style="margin-left: 20px">Added in Windows 10, version 1607. Allow or disallow requirement for a PIN for pairing.
