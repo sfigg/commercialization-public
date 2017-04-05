@@ -626,7 +626,12 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>Update/IgnoreMOUpdateDownloadLimit</li>
 <li>Update/SetAutoRestartNotificationDisable</li>
 <li>Update/SetEDURestart</li>
+<li>WiFi/AllowWiFiDirect</li>
 <li>WindowsLogon/HideFastUserSwitching</li>
+<li>WirelessDisplay/AllowProjectionFromPC</li>
+<li>WirelessDisplay/AllowProjectionFromPCOverInfrastructure</li>
+<li>WirelessDisplay/AllowProjectionToPCOverInfrastructure</li>
+<li>WirelessDisplay/AllowUserInputFromWirelessDisplayReceiver</li>
 </ul><p>Removed TextInput/AllowLinguisticDataCollection</p>
 <p>Starting in Windows 10, version 1703, Update/UpdateServiceUrl is not supported in Windows 10 Mobile Enteprise and IoT Enterprise</p>
 <p>Starting in Windows 10, version 1703, in Browser/HomePages you can use the "&lt;about:blank&gt;" value if you don’t want to send traffic to Microsoft.</p>
@@ -1037,6 +1042,11 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>Start/ImportEdgeAssets</li>
 <li>Update/DetectionFrequency</li>
 <li>Update/SetEDURestart</li>
+<li>WiFi/AllowWiFiDirect</li>
+<li>WirelessDisplay/AllowProjectionFromPC</li>
+<li>WirelessDisplay/AllowProjectionFromPCOverInfrastructure</li>
+<li>WirelessDisplay/AllowProjectionToPCOverInfrastructure</li>
+<li>WirelessDisplay/AllowUserInputFromWirelessDisplayReceiver</li>
 </ul>
 <p>DeviceLock/EnforceLockScreenAndLogonImage is not supported in Windows 10 Pro edition.</p>
 </td></tr>
