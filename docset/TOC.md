@@ -373,7 +373,6 @@
 ####  [Device.Connectivity.MAUSB.Hub](design/compatibility/1703/device-connectivity-mausb-hub.md)
 ####  [Device.Connectivity.Network.VerticalPairing](design/compatibility/1703/device-connectivity-network-verticalpairing.md)
 ####  [Device.Connectivity.PciConnected](design/compatibility/1703/device-connectivity-pciconnected.md)
-####  [Device.Connectivity.Server](design/compatibility/1703/device-connectivity-server.md)
 ####  [Device.Connectivity.UsbDevices](design/compatibility/1703/device-connectivity-usbdevices.md)
 ####  [Device.Connectivity.UsbHub](design/compatibility/1703/device-connectivity-usbhub.md)
 ####  [Device.Connectivity.WSD](design/compatibility/1703/device-connectivity-wsd.md)
@@ -399,6 +398,7 @@
 ####  [Device.Storage](design/compatibility/1703/device-storage.md)
 ####  [Device.Streaming.Camera](design/compatibility/1703/device-streaming-camera.md)
 ####  [Device.Streaming.HMFT](design/compatibility/1703/device-streaming-hmft.md)
+####  [Device.TrustedPlatformModule](design/compatibility/1703/device-trustedplatformmodule.md)
 ### [Filter](design/compatibility/1703/filter.md)
 ### [Systems](design/compatibility/1703/systems.md)
 
