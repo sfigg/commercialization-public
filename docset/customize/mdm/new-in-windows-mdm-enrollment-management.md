@@ -1044,6 +1044,44 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <td style="vertical-align:top">[DMSessionActions CSP](dmsessionactions-csp.md)</td>
 <td style="vertical-align:top"><p>Added new CSP for Windows 10, version 1703.</p>
 </td></tr>
+<tr class="odd">
+<td style="vertical-align:top"><p>[CertificateStore CSP](certificatestore-csp.md)</p></td>
+<td style="vertical-align:top"><p>Updated in Windows 10, version 1703. Added the following nodes and settings:</p>
+<ul>
+<li>My/WSTEP/Renew/RetryAfterExpiryInterval</li>
+</ul>
+</td>
+</tr>
+<tr class="even">
+<td style="vertical-align:top"><p>[ClientCertificateInstall CSP](clientcertificateinstall-csp.md)</p></td>
+<td style="vertical-align:top"><p>Updated in Windows 10, version 1703. Added the following nodes and settings:</p>
+<ul>
+<li>SCEP/UniqueID/Install/AADKeyIdentifierList</li>
+</ul>
+</td>
+</tr>
+<tr class="odd">
+<td style="vertical-align:top"><p>[DMAcc CSP](dmacc-csp.md)</p></td>
+<td style="vertical-align:top"><p>Updated in Windows 10, version 1703. Added the following nodes and settings:</p>
+<ul>
+<li>AccountUID/EXT/Microsoft/InitiateSession</li>
+</ul>
+</td>
+</tr>
+<tr class="even">
+<td style="vertical-align:top"><p>[DMClient CSP](dmclient-csp.md)</p></td>
+<td style="vertical-align:top"><p>Updated in Windows 10, version 1703. Added the following nodes and settings:</p>
+<ul>
+<li>HWDevID</li>
+<li>Provider/ProviderID/ManagementServerToUpgradeTo</li>
+<li>Provider/ProviderID/CustomEnrollmentCompletePage</li>
+<li>Provider/ProviderID/CustomEnrollmentCompletePage/Title</li>
+<li>Provider/ProviderID/CustomEnrollmentCompletePage/BodyText</li>
+<li>Provider/ProviderID/CustomEnrollmentCompletePage/HyperlinkHref</li>
+<li>Provider/ProviderID/CustomEnrollmentCompletePage/HyperlinkText</li>
+</ul>
+</td>
+</tr>
 </tbody>
 </table>
 
