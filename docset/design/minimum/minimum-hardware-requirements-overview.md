@@ -15,7 +15,7 @@ ms.assetid: 6B7E2CB1-A53B-4677-9F6C-D701ED777D17
 
 ### 1.1 Overview
 
-This specification defines the minimum hardware requirements for Windows 10 and all types of devices or computers designed for this release (Windows 10, version 1607). Microsoft will build and test the Windows 10 OS against the requirements described in this specification.
+This specification defines the minimum hardware requirements for Windows 10 and all types of devices or computers designed for this release (Windows 10, version 1703). Microsoft will build and test the Windows 10 OS against the requirements described in this specification.
 
 ### 1.1.1 Purpose of this specification
 
@@ -87,7 +87,7 @@ Windows is available in the following editions.
 
 Table 2 lists the device types that run Windows and the operating system editions that can run on them. In cases where the requirements for an OS differ based on the device type, this specification points out those differences.
 
-**Table 2:** Device types for Windows 10
+**Table 2:** Device types for Windows 10 and Server 2016
 
 <table>
 <colgroup>
@@ -147,8 +147,8 @@ Table 2 lists the device types that run Windows and the operating system edition
 </tr>
 <tr class="odd">
 <td>Server</td>
-<td>Traditional server computers</td>
-<td>x64 processors and SoCs</td>
+<td>Traditional server computers, to include pedestal, micro, rack mount, blade, high density/modular, partitionable, SoC</td>
+<td>x64 processors</td>
 <td>Windows Server 2016</td>
 </tr>
 <tr class="even">
@@ -326,6 +326,7 @@ Table 3 summarizes the hardware requirements for all Windows 10 operating system
 </td>
 <td>
 <p>Optional</p>
+<p>For details, see 5.5</p>
 </td>
 </tr>
 <tr>
@@ -559,7 +560,7 @@ Table 3 summarizes the hardware requirements for all Windows 10 operating system
 <p>Optional</p>
 </td>
 <td>
-<p>Optional</p>
+<p>Not Supported</p>
 </td>
 <td>
 <p>Optional</p>
@@ -918,7 +919,7 @@ Table 4 lists the supported SoCs for devices that run Windows 10 Mobile. Any of
 <tbody>
 <tr class="odd">
 <td><p>Qualcomm Technologies, Inc.</p></td>
-<td><p>MSM8994, MSM8992, MSM8952, MSM8909, MSM8208, MSM8996</p></td>
+<td><p>Snapdragon 820, 810, 808, 617, 210</p></td>
 </tr>
 </tbody>
 </table>
@@ -943,7 +944,7 @@ Table 5 lists the additional supported SoCs for devices that run Windows 10 Mob
 <tbody>
 <tr class="odd">
 <td><p>Qualcomm Technologies, Inc.</p></td>
-<td><p>APQ8092, APQ8094, APQ8009</p></td>
+<td><p>Snapdragon 810, 808, 617, 210 (All: APQ variants only)</p></td>
 </tr>
 </tbody>
 </table>
@@ -968,7 +969,7 @@ Existing Windows Phones that include the SoCs listed in Table 6 can be updated t
 <tbody>
 <tr class="odd">
 <td><p>Qualcomm Technologies, Inc.</p></td>
-<td><p>MSM8x10, MSM8x12, MSM8x26, MSM8916, MSM8926, MSM8x28, MSM8928, MSM8974, MSM8974Pro, MSM8960, MSM8260A, MSM8660A, MSM8930AA, MSM8930AB, MSM8630, MSM8230, MSM8627, MSM8227, MSM8994, MSM8992, MSM8952, MSM8909, MSM8208</p></td>
+<td><p>Snapdragon 810, 808, 801, 800, 617, 410, 400, 210, 200, S4 Plus</p></td>
 </tr>
 </tbody>
 </table>
@@ -1127,7 +1128,19 @@ The phone display must support one of the resolution and size options shown in T
 <td>WXGA⁶</td>
 <td>1280 x 800</td>
 <td>16:10</td>
-<td>6.01&quot; to 7&quot;</td>
+<td>6.01&quot; to > 9&quot;</td>
+</tr>
+<tr class="even">
+<td>XGA</td>
+<td>1027 x 768</td>
+<td>4:3</td>
+<td>7&quot; to > 9&quot;</td>
+</tr>
+<tr class="odd">
+<td>WSVGA</td>
+<td>1027 x 600</td>
+<td>17:10</td>
+<td>7&quot; to > 9&quot;</td>
 </tr>
 <tr class="even">
 <td>qHD⁷</td>
@@ -1326,7 +1339,7 @@ Storage controllers used in devices that run Windows 10 for desktop editions mu
 
 ### 3.4.1 Resolution, bit depth, and size
 
-Windows 10 for desktop editions supports a minimum display resolution of SVGA (800 x 600) with a depth of 32 bits on each output simultaneously, and a minimum diagonal display size of 8-inches or larger. Tablets, 2-in-1s, and laptops that run Windows 10 for desktop editions must include a display that meets the minimum requirements listed earlier. A display is optional for desktop PC's that run Windows 10 for desktop editions.
+Windows 10 for desktop editions supports a minimum display resolution of SVGA (800 x 600) with a depth of 32 bits on each output simultaneously, and a minimum diagonal display size of 7-inches or larger. Tablets, 2-in-1s, and laptops that run Windows 10 for desktop editions must include a display that meets the minimum requirements listed earlier. A display is optional for desktop PC's that run Windows 10 for desktop editions.
 
 ### 3.4.2 Graphics
 
@@ -1502,15 +1515,15 @@ Devices that run IoT Core must meet the RAM requirements shown in Table 14.
 | Display support         | RAM requirement\*                |
 |-------------------------|----------------------------------|
 | Without display support | &gt;= 256 MB available to the OS |
-| With display support    | &gt;= 512 MB available to the OS |
+| With display support    | &gt;= 512 MB available to the OS <br> (&gt;= 768 MB for 64bit Processors)|
 
-<sup>\*</sup>Available RAM needed after any carve-out by SoC vendor/OEM components. Additional RAM may be required based on the design and functionality of the device and display resolution.
+<sup>\*</sup>Available RAM needed after any carve-out by SoC vendor/OEM components. A minimum of 512 MB of RAM is required for update functionalilty. Additional RAM may be required based on the design and functionality of the device and display resolution.
 
 ### 5.3 Storage
 
 Devices that run IoT Core must include a minimum of 2 GB of storage.
 
-**Note**  Additional storage may be required based on the design and functionality of the device. Additional storage may be required for update functionality.
+**Note**: A minimum of 1GB of storage is to remain free for update functionality. Additional storage may be required based on the design and functionality of the device.
 
  
 
@@ -1523,7 +1536,13 @@ TPM 2.0 must meet the following requirements:
 -   An EK certificate must either be pre-provisioned to the TPM by the hardware vendor or be capable of being retrieved by the device during the first boot experience.
 -   It must ship with a SHA-256 PCR bank and implement PCRs 0 through 23 for SHA-256. Note it is acceptable to ship TPMs with a single switchable PCR bank that can be used for both SHA-1 and SHA-256 measurements.
 
+TPM 2.0 will be required for IoT Core in a future release
+
 For detailed TPM information, see [Trusted Platform Module Technology Overview](http://go.microsoft.com/fwlink/?LinkId=624832) on TechNet.
+
+## 5.5 graphics
+
+A GPU is optional for computers that run Windows 10 IoT Core. If a GPU is included, it must support DirectX 9 or later.
 
 ## Section 6.0 - Shared minimum hardware requirements for components
 
@@ -1595,7 +1614,7 @@ If a touch solution, a precision touch pad solution, or an active pen solution i
 
  
 
-⁹For the reporting requirements, see the set of topics at [https://msdn.microsoft.com/library/windows/hardware/mt604233.aspx](https://msdn.microsoft.com/library/windows/hardware/jj151569.aspx).
+⁹For the reporting requirements, see the set of topics at [https://msdn.microsoft.com/library/windows/hardware/mt604233.aspx](https://msdn.microsoft.com/library/windows/hardware/mt604233.aspx).
 
 ¹⁰For HID over I2C requirements, see[http://msdn.microsoft.com/library/windows/hardware/Dn642101.aspx]( http://msdn.microsoft.com/library/windows/hardware/Dn642101.aspx). For HID over Bluetooth requirements, see <http://developer.bluetooth.org/TechnologyOverview/Documents/HID_SPEC.pdf>.
 
@@ -1867,8 +1886,7 @@ If implemented, the NFC implementation must meet the following requirements:
     -   ISO/IEC 14443-B
     -   ISO/IEC 18092 (Felica)
 -   In reader/writer mode, the NFC controller must support interoperation with the tag types specified by the NFC Forum (currently NFC Forum Tag Types 1–4).
--   If Card Emulation is implemented, the NFC controller must be connected to the default (slot 0) UICC slot by using SWP-line as specified by the ETSI. If you cannot connect the SWP line to slot 0 due to physical limitations, the OEM must indicate the slot value to which it is connected by using registry settings. The embedded secure element must not be supported.
-
+-   If Card Emulation is implemented, the NFC controller must be connected to the default (slot 0) UICC slot by using SWP-line as specified by the ETSI. If you cannot connect the SWP line to slot 0 due to physical limitations, the OEM must indicate the slot value to which it is connected by using registry settings. 
 ### 6.4 Sensors
 
 ### 6.4.1 Accelerometer
@@ -2085,7 +2103,7 @@ Windows 10 supports the following video output ports on devices where a video ou
 
 ### 6.8 UEFI and Secure Boot
 
-Windows 10 for desktop editions and Windows 10 Mobileand IoT Core must boot into UEFI mode by default and ship with UEFI Secure Boot enabled. System firmware must be compliant with the UEFI Specification Version 2.3.1 or higher.
+Windows 10 for desktop editions and Windows 10 Mobile and IoT Core must boot into UEFI mode by default and ship with UEFI Secure Boot enabled. System firmware must be compliant with the UEFI Specification Version 2.3.1 or higher.
 
 OEM systems for special purpose commercial systems, build to order, and customer systems with a custom image are not required to ship with UEFI Secure Boot enabled.
 
@@ -2095,9 +2113,26 @@ Windows 10 for desktop editions and IoT Core systems can optionally support the
 
  
 
-### <a href="" id="6-9--accessibility"></a>6.9 Accessibility
+### 6.9 Accessibility
 
-Most Windows 10 operating systems include the Narrator screen reader feature for accessibility. For Narrator to work correctly on a device that uses touch for the primary means of user input, the device must include a touch controller that can report at least four simultaneous contacts. OEMs should be aware of this when planning devices for markets with accessibility requirements. For additional guidance about how to achieve the best experience across all customer segments, refer to the related guidance in the Hardware Lab Kit.
+Most Windows 10 operating systems include the Narrator screen reader feature for accessibility. For Narrator to work correctly on a device that uses touch for the primary means of user input, the device must include a touch controller that can report at least four simultaneous contacts. OEMs should be aware of this when planning devices for markets with accessibility requirements. 
+
+Where providing user input or output device connection points, provide at least one input and/or output connection that conforms to an industry standard non-proprietary format, directly or through the use of commercially available adapters. 
+
+Numeric keys arranged in a rectangular keypad layout must have the number five key tactilely distinct from the other keys. If key repeat is supported, the delay before repeat must be adjustable to 2 seconds or more.  Keystroke should be adjustable of at least 0.5 seconds. And, the status of all locking or toggle controls must be discernible visually and either through touch or sound.   
+
+All mechanically operated controls and keys shall comply with accessibility standards.  In other words, all controls and keys for the normal operation of a desktop or portable computer must be accessible. This includes the keyboard, keypad, power switch, reset button, unlocking controls for docking stations, and release buttons for expansion cards and drives. 
+
+Hardware controls need to balance between the need to prevent accidental activation, especially for users with tremors or limited coordination, and the need to allow activation without using excessive force.  The force required to activate controls and keys shall be 5 lbs. (22.2 N) maximum. In other words, mechanically operated controls must be usable with one hand, without particular motions (twisting of the wrist, tight grasping, pinching) or considerable exertion (more than five pounds of force).
+
+Provide a means to discern without vision each operable part of the experience such that users of all abilities are able to manipulate and control a device as expected. Example, visually impaired users should be able to operate the device.
+
+Where hardware is intended for shared use and speech output is available, a tactile indication of the means to initiate the speech mode of operation shall be provided. 
+
+Architecturally installed or free-standing non-portable products intended to be used in one location must have all controls necessary to access full functionality positioned for users with limited reach (such as for people who use wheelchairs). 
+
+Do not use color as the only visual means of conveying information. Do not use color in a way that requires the user to discriminate between hues, indicate an action, prompt a response, or distinguish a visual element. 
+
 
 ## Section 7.0 Glossary: Terms and abbreviations
 
