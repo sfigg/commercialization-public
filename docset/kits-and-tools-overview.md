@@ -21,14 +21,14 @@ Start by downloading Visual Studio 2015 and Microsoft Visual Studio Tools for W
 ## Standalone Windows SDK for Windows 10
 
 
-[Install the Standalone Windows SDK for Windows 10](http://go.microsoft.com/fwlink/p/?LinkId=536682)
+[Install the Standalone Windows SDK for Windows 10](https://go.microsoft.com/fwlink/p/?LinkID=845298)
 
 Windows SDK for Windows 10 contains headers, libraries, and tools you can use when you create apps that run on Windows operating systems. You can use the Windows SDK for Windows 10, along with your chosen development environment, to write apps for Windows 10 for desktop editions and Windows 10 Mobile.
 
 ## WDK 10
 
 
-[Install the Windows Driver Kit (WDK) 10](http://go.microsoft.com/fwlink/p/?LinkId=526733)
+[Install the Windows Driver Kit (WDK) 10](https://go.microsoft.com/fwlink/p/?LinkId=845980)
 
 [Download Universal Windows driver samples](http://go.microsoft.com/fwlink/p/?LinkId=526735)
 
@@ -37,7 +37,6 @@ WDK 10 contains the tools to build, test, debug, and deploy drivers for Windows�
 For more information about driver development for Windows 10, see [What's new in Universal Windows driver development](https://msdn.microsoft.com/windows/hardware/drivers/what-s-new-in-driver-development) and [What's new in kits and tools](what-s-new-in-kits-and-tools.md).
 
 ## Enterprise WDK (EWDK)
-
 
 The Enterprise WDK (EWDK) is a kit that large organizations can use as an alternative to downloading and installing the SDK and WDK individually on each computer. The EWDK has a command-line build environment that is based on files and is not computer-dependent, so after the environment file structure has been created, it can be distributed for direct use, such as through version control software or by zipping the contents and unzipping on other computers. It contains the necessary elements to build *Windows Driver Model* (WDM) drivers, WDF drivers, and classic Windows test applications.
 
@@ -56,14 +55,14 @@ The Windows Hardware Lab Kit (HLK) for Windows 10 is an all-purpose test and me
 ## HLK supplemental test content
 
 
-Some tests, like graphics and multimedia tests, require additional files for testing. You can find this content in the **Windows HLK supplemental media test content** section on the [Download kits and tools for Windows 10](http://go.microsoft.com/fwlink/p/?LinkId=532718) page.
+Some tests, like graphics and multimedia tests, require additional files for testing. You can find this content in the **Windows HLK supplemental media test content** section on the [Download the Windows HLK, HCK, or Logo Kit](http://go.microsoft.com/fwlink/p/?LinkId=532718) page.
 
 ## ADK for Windows 10
 
 
-[Download the ADK for Windows 10](http://go.microsoft.com/fwlink/p/?LinkId=526740)
+[Download the ADK for Windows 10](https://go.microsoft.com/fwlink/p/?LinkId=845542)
 
-Download the Windows ADK to install tools and documentation for OEMs and ODMs to customize Windows 10 images, assess the quality and performance of systems or components, and to deploy Windows operating systems to new computers. The Windows ADK includes Windows Imaging and Configuration Designer (ICD), the Windows Assessment Toolkit, the Windows Performance Toolkit, and several new and improved deployment tools that can help you automate a large-scale deployment of Windows 10. For more information, see [What’s new in kits and tools](what-s-new-in-kits-and-tools.md).
+Download the Windows ADK to install tools and documentation for OEMs and ODMs to customize Windows 10 images, assess the quality and performance of systems or components, and to deploy Windows operating systems to new computers. The Windows ADK includes Windows Configuration Designer, the Windows Assessment Toolkit, the Windows Performance Toolkit, and several new and improved deployment tools that can help you automate a large-scale deployment of Windows 10. For more information, see [What’s new in kits and tools](what-s-new-in-kits-and-tools.md).
 
 
 ## What else is new?
