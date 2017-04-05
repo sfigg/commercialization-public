@@ -1,14 +1,14 @@
 ---
-title: Hardware Compatibility Specification for Filter for Windows 10, version 1607
-Description: 'This section of the documentation provides specifications for hardware compatibility for systems running Windows 10, version 1607.'
+title: Hardware Compatibility Specification for Filter for Windows 10, version 1703
+Description: 'This section of the documentation provides specifications for hardware compatibility for systems running Windows 10, version 1703.'
 ms.assetid: 
 MSHAttr: 
 author: beneluxboy
 ---
 
-# Hardware Compatibility Specification for Systems for Windows 10, version 1607
+# Hardware Compatibility Specification for Systems for Windows 10, version 1703
 
-This section of the documentation provides specifications for hardware compatibility for systems running Windows 10, version 1607.
+This section of the documentation provides specifications for hardware compatibility for systems running Windows 10, version 1703.
 
  - [System.Client.BluetoothController.Base](#system.client.bluetoothcontroller.base)
  - [System.Client.BluetoothController.NonUSB](#system.client.bluetoothcontroller.nonusb)
@@ -67,6 +67,7 @@ This section of the documentation provides specifications for hardware compatibi
  - [System.Fundamentals.SystemAudio](#system.fundamentals.systemaudio)
  - [System.Fundamentals.SystemPCIController](#system.fundamentals.systempcicontroller)
  - [System.Fundamentals.SystemUSB](#system.fundamentals.systemusb)
+ - [System.Fundamentals.SystemUSB.USBC](#system.fundamentals.systemusb.usbc)
  - [System.Fundamentals.TPM20](#system.fundamentals.tpm20)
  - [System.Fundamentals.TrustedPlatformModule](#system.fundamentals.trustedplatformmodule)
  - [System.Fundamentals.USBBoot](#system.fundamentals.usbboot)
@@ -131,7 +132,7 @@ The Bluetooth enabled controller must comply with the Basic Rate (BR) and Low En
 
 ### System.Client.BluetoothController.Base.CS
 
-*Systems that support Connected Standby with Bluetooth enabled controllers must ship with Microsoft's inbox Bluetooth stack.*
+*Systems that support Connected Standby with Bluetooth enabled controllers must ship with Microsoft's inbox Bluetooth stack and support the MSFT Defined HCI extensions support for hardware offload of advertisement and RSSI monitoring (see System.Client.BluetoothController.Base.HciExtensions). *
 
 <table>
 <tr>
@@ -149,7 +150,7 @@ The Bluetooth enabled controller must comply with the Basic Rate (BR) and Low En
 Systems that support Connected Standby that ship with Bluetooth enabled controllers must ship with Microsoft's inbox Bluetooth stack. 
 
 
-### System.Client.BluetoothController.Base.HciExtensions (if implemented)
+### System.Client.BluetoothController.Base.HciExtensions
 
 *MSFT Defined HCI extensions support for hardware offload of advertisement and RSSI monitoring.*                                                                                                                                                       
 
@@ -163,6 +164,7 @@ Systems that support Connected Standby that ship with Bluetooth enabled control
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
 
+**Terms: If-Implemented**
 
 **Description**  
 
@@ -634,7 +636,7 @@ For any camera device that is built into the chassis of the system and has mecha
 
 In addition, bit 143:128 (Vertical Offset), and bits 159:144 (Horizontal Offset) must provide the relative location of the camera with respect to the display. This origin is relative to the native pixel addressing in the display component. The origin is the lower left hand corner of the display, where positive Horizontal and Vertical Offset values are to the right and up, respectively. For more information, see the ACPI version 5.0 Section 6.1.8 "Device Configuration \_PLD (Physical Device Location)."
 
-Camera device orientation with respect to the default system display orientation (also known as native system display orientation) must be specified in the \_PLD rotation field (bits 115-118). When the pixels read out from the camera sensor can be displayed correctly without any rotation, then the camera sensor’s \_PLD rotation value must be set to 0. When the pixels read out from the camera sensor need to be rotated 90 degrees clockwise to display correctly, then the camera sensor’s \_PLD rotation value must be set to 2 and so on.
+Camera device orientation with respect to the default system display orientation (also known as native system display orientation) must be specified in the \_PLD rotation field (bits 115-118). When the pixels read out from the camera sensor can be displayed correctly without any rotation, then the camera sensor’s \_PLD rotation value must be set to 0. When the pixels read out from the camera sensor need to be rotated clockwise to display correctly, then the camera sensor’s _PLD rotation value must be set accordingly (‘0’ for 0°, ‘2’ for 90°, ‘4’ for 180°, and ‘6’ for 270°). 
 
 All other fields in the \_PLD are optional.
 
@@ -1425,11 +1427,15 @@ The following Precision Touchpad device level requirement must be met and verifi
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
 
+**Terms: Optional**
+
+**Enforcement date: September 1st, 2017**
 
 **Description**
 
 The following Precision Touchpad device level requirement must be met and verified upon integration into a system. Please refer to the **Device.Input.Digitizer.PrecisionTouchpad.ThirdPartyDrivers** requirements for full requirement details.
 
+Microsoft highly recommend the touchpad module to support Microsoft Precision Touchpad via Firmware. This recommendation may become a requirement for the future release of the Windows Hardware Compatibility Program at Microsoft's discretion.
 
 <a name="system.client.digitizer.touch"></a>
 ## System.Client.Digitizer.Touch
@@ -2825,13 +2831,14 @@ If present WLAN allows for untethered connectivity to networks allowing for a wi
  
 Timing for the above actions can be found in the Windows 10 WLAN Device requirements.
 
+Microsoft highly recommend WLAN hardware module to support at least 802.11ac 2x2 configuration/design. This recommendation may become a requirement for the future release of the Windows Hardware Compatibility Program at Microsoft's discretion.
 
 <a name="system.client.wlan.hangdetectionandrecovery"></a>
 ## System.Client.WLAN.HangDetectionAndRecovery
 
 <!--No content was provided here in the original Word file.-->
 
-### System.Client.WLAN.HangDetectionAndRecovery.WlanHangDetectionAndRecovery (If-Implemented) **(WDI Drivers Only)**
+### System.Client.WLAN.HangDetectionAndRecovery.WlanHangDetectionAndRecovery **(WDI Drivers Only)**
 
 <table>
 <tr>
@@ -2843,6 +2850,7 @@ Timing for the above actions can be found in the Windows 10 WLAN Device requirem
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
 
+**Terms: If-Implemented**
 
 **Description**
 
@@ -2866,7 +2874,7 @@ System: The system must complete the reset within 10 seconds.
 
 <!--No content was provided here in the original Word file.-->
 
-### System.Client.WLAN.HostedNetwork.WlanHostedNetwork (If-Implemented)
+### System.Client.WLAN.HostedNetwork.WlanHostedNetwork
 
 <table>
 <tr>
@@ -2878,6 +2886,7 @@ System: The system must complete the reset within 10 seconds.
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
 
+**Terms: If-Implemented**
 
 **Description**With this feature, a Windows computer can use a single physical wireless adapter to connect as a client to a hardware access point (AP), while at the same time acting as a software AP allowing other wireless-capable devices to connect to it.
 
@@ -2887,7 +2896,7 @@ System: The system must complete the reset within 10 seconds.
 
 <!--No content was provided here in the original Word file.-->
 
-### System.Client.WLAN.WiFiDirect.WlanWiFiDirect (If-Implemented)
+### System.Client.WLAN.WiFiDirect.WlanWiFiDirect
 
 <table>
 <tr>
@@ -2899,6 +2908,7 @@ System: The system must complete the reset within 10 seconds.
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
 
+**Terms: If-Implemented**
 
 **Description**
 
@@ -2910,7 +2920,7 @@ Support for Wi-Fi Direct by the Wi-Fi Driver to enable Miracast, Public APIs for
 
 <!--No content was provided here in the original Word file.-->
 
-### System.Client.WLAN.Miracast.WlanMiracast (If-Implemented)
+### System.Client.WLAN.Miracast.WlanMiracast
 
 <table>
 <tr>
@@ -2922,6 +2932,7 @@ Support for Wi-Fi Direct by the Wi-Fi Driver to enable Miracast, Public APIs for
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
 
+**Terms: If-Implemented**
 
 **Description**
 
@@ -3091,6 +3102,7 @@ Storage benchmark needs to setup a fake drive get the baseline power.</p>
 <a name="system.fundamentals.firmware"></a>
 ## System.Fundamentals.Firmware
 
+Certification for Windows Server 2016, Azure Stack and SDDC must meet the Windows Hardware Compatibility Requirements as stated in version 1607 of the documentation and use HLK version 1607 build 14393 <https://go.microsoft.com/fwlink/p/?LinkID=404112> with matching playlist <http://aka.ms/hlkplaylist> and supplemental content to generate logs and following the policies stated in the Windows Server Policy doc <https://go.microsoft.com/fwlink/p/?linkid=834831>.  Questions about the Azure Stack or SDDC program or how to submit the results for solution validation should be directed to the appropriate Microsoft contact – technical account manager or partner management contact.
 <!--No content was provided here in the original Word file.-->
 
 ### System.Fundamentals.Firmware.ACPI
@@ -3529,7 +3541,7 @@ Note: These requirements are "If Implemented" for Server systems and apply only 
 <li><p>All Windows client systems must support a USB boot path for recovery purposes. For all Windows systems configured for Secure Boot, there is a last resort of booting from USB.</p></li>
 <li><p>Supporting GetVariable() for the EFI_IMAGE_SECURITY_DATABASE (both authorized and forbidden signature database) and the SecureBoot variable.</p></li>
 <li><p>Supporting SetVariable() for the EFI_IMAGE_SECURITY_DATABASE (both authorized and forbidden signature database), using an authorized KEK for authentication.</p></li>
-<li><p>Reserved Memory for Windows Secure Boot UEFI Variables. A total of at least 64 KB of non-volatile NVRAM storage memory must be reserved for NV UEFI variables (authenticated and unauthenticated, BS and RT) used by UEFI Secure Boot and Windows, and the maximum supported variable size must be at least 32kB. There is no maximum NVRAM storage limit.</p></li>
+<li><p>Reserved Memory for Windows Secure Boot UEFI Variables. A total of at least 64 KB (Recommended 128 KB) of non-volatile NVRAM storage memory must be reserved for NV UEFI variables (authenticated and unauthenticated, BS and RT) used by UEFI Secure Boot and Windows, and the maximum supported variable size must be at least 32 KB (Recommended 64 KB). There is no maximum NVRAM storage limit.</p></li>
 <li><p>During normal firmware updates the following must be preserved:</p>
 <ol style="list-style-type: lower-alpha">
 <li><p>The Secure Boot state &amp; configuration (PK, KEK, db, dbx, SetupMode, SecureBoot)</p></li>
@@ -3560,6 +3572,10 @@ Note: These requirements are "If Implemented" for Server systems and apply only 
 <li><p>[If Implemented] If platform ships with UEFI 2.5 with support for HTTP Boot (Revision 1214, Section 23.7), then the client connection to the server must be based on a strong server authentication. In case of HTTP it must be HTTPS with minimum of EV SSL authentication or the equivalent.</p></li>
 <li><p>[If Implemented] If platform ships with UEFI 2.5 with support for Platform Recovery (Revision 1227, Section 23.7), then platform MUST also support HTTP Boot as mentioned above.</p></li>
 <li><p>[If Implemented] If platform ships with UEFI 2.5 the Platform MUST provide consistent Secure Boot workflows as specified in the “Windows Consistent Secure Boot Workflows” document (this document is available on CONNECT).</p></li>
+<li><p>Confidential & replay-protected storage:  External memory for non-volatile storage of all UEFI variables and security-sensitive BIOS settings MUST include protections of that data to ensure confidentiality and integrity of the data and to mitigate against rollback attacks.  This is generally accomplished by encrypting the data, applying a Message Authentication Code, and storing the resulting record in replay-protected storage such as Replay Protected Memory Block or Replay Protected Monotonic Counter.</p>
+<p>RPMC for non-discrete TPMs (consumer 16 MB parts) is a requirement for 2019</p>
+<p>RPMC for UEFI (commercial 32 MB parts)  is a requirement for 2020</p>
+</li>
 </ol>
 
 
@@ -4839,32 +4855,6 @@ All drivers in a system must pass all requirements under **Device.DevFund.Reliab
 
 <!--No content was provided here in the original Word file.-->
 
-### System.Fundamentals.Security.CredentialGuard (If-Implemented)
-
-*This feature checks for Credential Guard.*
-
-<table>
-<tr>
-<th>Applies to</th>
-<td>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
-<p>Windows Server 2016 x64</p>
-</td></tr></table>
-
-Description:
-
-The following table shows the hardware, firmware and software requirements for Credential Guard.
-
- - MUST meet all Device Guard requirements as described in [System.Fundamentals.Security.DeviceGuard](#_System.Fundamentals.Security.Device).
-
- - MUST meet the additional requirements as described in the table below:
-
-| **Requirement**                                                                                                                           | **Description**                                                                                                                               |
-|-------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
-| Trusted Platform Module (TPM) version 1.2 or 2.0                                                                                          | TPM 1.2 and 2.0 provides protection for encryption keys that are stored in the firmware. Either discrete or firmware TPMs will suffice.       |
-| [Firmware security patch for Secure MOR Implementation](https://msdn.microsoft.com/en-us/library/windows/hardware/mt270973.aspx) | Secure MOR bit prevents certain memory attacks and is necessary for Credential Guard. This will further enhance security of Credential Guard. |
-
-
 ### System.Fundamentals.Security.DeviceEncryption
 
 *Systems that support connected standby must support device encryption.*
@@ -4883,111 +4873,6 @@ The following table shows the hardware, firmware and software requirements for C
 **Description**
 
 Systems that support connected standby must meet the security requirements to support enablement of Device Encryption. OEMs must not block the enablement of Device Encryption when deploying the OS images unless the device is pre-provisioned with a third-party disk encryption solution. Device Encryption will be enabled on these systems to ensure that user data is protected. As pre-requisites for Device Encryption, connected standby systems must meet requirements for TPM and Secure Boot as outlined in System.Fundamentals.TPM20 and System.Fundamentals.Firmware.CS.UEFISecureBoot.ConnectedStandby.
-
-
-### System.Fundamentals.Security.DeviceGuard (If-Implemented)
-
-*Device Guard requirement for systems*
-
-<table>
-<tr>
-<th>Applies to</th>
-<td>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
-<p>Windows Server 2016 x64</p>
-</td></tr></table>
-
-
-**Description**
-
-Windows 10 has an optional feature called [Device Guard](http://blogs.msdn.com/b/windows_hardware_certification/archive/2015/05/22/driver-compatibility-with-device-guard-in-windows-10.aspx) that gives organizations the ability to lock down devices in a way that provides advanced malware protection against new and unknown malware variants as well as Advanced Persistent Threats (APTs). The following table shows the hardware, firmware and software requirements for Device Guard.
-
- - MUST meet all [HVCI Compatible](http://go.microsoft.com/fwlink/p/?LinkId=627463) Driver requirements as described in “Filter.Driver.DeviceGuard.DriverCompatibility”.
-
- - MUST meet the additional requirements as described in the table below:
-
-
-<table>
-<thead>
-<tr class="header">
-<th><strong>Requirement</strong></th>
-<th><strong>Description</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Windows 10 Enterprise</td>
-<td>The PC must be running Windows 10 Enterprise.</td>
-</tr>
-<tr class="even">
-<td>x64 architecture</td>
-<td>The features that virtualization-based security uses in the Windows hypervisor can only run on a 64-bit PC.</td>
-</tr>
-<tr class="odd">
-<td>UEFI firmware version 2.3.1 or higher with UEFI Secure Boot and Platform Secure Boot</td>
-<td><p>UEFI Secure Boot ensures that the device boots only authorized code. Additionally, Boot Integrity (aka Platform Secure Boot) must be supported following the requirement in Hardware Compatibility Specification for Systems for Windows 10:</p>
-<p><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932805.aspx#system_fundamentals_firmware_uefisecureboot">System.Fundamentals.Firmware.UEFISecureBoot</a></p>
-<p><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932807.aspx#system_fundamentals_firmware_cs_uefisecureboot_connectedstandby">System.Fundamentals.Firmware.CS.UEFISecureBoot.ConnectedStandby</a> (this includes Hardware Security Test Interface)</p></td>
-</tr>
-<tr class="even">
-<td>Secure firmware update process</td>
-<td><p>System Firmware must support field updates through Windows Update.</p>
-<p>UEFI firmware must support secure firmware update as described in <a href="http://msdn.microsoft.com/library/windows/hardware/dn932805.aspx#system_fundamentals_firmware_uefisecureboot">System.Fundamentals.Firmware.UEFISecureBoot</a>.</p></td>
-</tr>
-<tr class="odd">
-<td>Firmware BIOS lockdown</td>
-<td><p>Required BIOS capabilities:</p>
-<p>BIOS password or stronger authentication supported to ensure that only authenticated Platform BIOS administrator can change BIOS settings</p>
-<p>OEM supports capability to add OEM or Enterprise Certificate in Secure Boot DB at manufacturing time.</p>
-<p>Protected BIOS option to configure list of permitted boot devices and boot device order which overrides BOOTORDER modification made by OS (e.g. Boot only from internal hard drive).</p>
-<p>Required Configurations:</p>
-<p>Microsoft UEFI CA must be removed from Secure Boot DB. Support for 3rd-party UEFI modules is permitted but should leverage ISV-provided certificates for the specific UEFI software (e.g. Software package “foo” certificate).</p>
-<p>BIOS options related to security and boot options must be secured to prevent other operating systems from starting and to prevent changes to the BIOS settings.</p>
-<p>BIOS authentication must be set (e.g. BIOS password must be set)</p></td>
-</tr>
-<tr class="even">
-<td>Virtualization extensions</td>
-<td><p>The following virtualization extensions are required to support virtualization-based security:</p>
-<ul>
-<li><p>Intel VT-X or AMD-V</p></li>
-<li><p>Second Level Address Translation (Intel Extended Page Tables, AMD Rapid Virtualization Indexing)</p></li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td>VT-D or AMD‑Vi IOMMU (Input/output memory management unit)</td>
-<td>In Windows 10, an IOMMU enhances system resiliency against memory attacks.</td>
-</tr>
-<tr class="even">
-<td>Secure Devices</td>
-<td><p><strong>If Implemented:</strong> Systems supporting secure devices (indicated by the presence of the ACPI SDEV table, also known as VTIO table) must enable virtualization extensions AND all system IOMMUs. All system devices must be behind an IOMMU.</p>
-<ol style="list-style-type: decimal">
-<li><p>For all synchronous SMI handlers, SMM shall validate that MMIO ranges for secure devices and VT-d units are not being accessed.</p></li>
-</ol></td>
-</tr>
-<tr class="odd">
-<td>Signed Processor Microcode updates</td>
-<td>If the processor supports microcode updates then it must require signed microcode updates.</td>
-</tr>
-<tr class="even">
-<td>UEFI NX Protections</td>
-<td><ol style="list-style-type: decimal">
-<li><p>Must implement UEFI 2.6 specification’s EFI_MEMORY_ATTRIBUTES_TABLE. The entire UEFI runtime must be described by this table.</p></li>
-<li><p>All entries must include attributes EFI_MEMORY_RO, EFI_MEMORY_XP, or both</p></li>
-<li><p>No entries must be left with neither of the above attribute, indicating memory that is both executable and writable. Memory MUST be either readable and executable OR writeable and non-executable.</p></li>
-</ol></td>
-</tr>
-<tr class="odd">
-<td>Firmware support for SMM protection</td>
-<td><p>SMM communication buffer protection prevents certain memory attacks thus necessary for Device Guard. This will further enhance security of VSM (Virtual Secure Mode).</p>
-<ol style="list-style-type: decimal">
-<li><p>System MUST implement “Windows SMM Security Mitigation table” document. All non-reserved WSMT protection flags field MUST be set indicating that the documented mitigations are implemented.</p></li>
-<li><p>SMM must not execute code from memory that is writable by the OS.</p></li>
-</ol></td>
-</tr>
-</tbody>
-</table>
-
-<br/>
 
 
 ### System.Fundamentals.Security.NoTDIFilterAndLSP
@@ -5029,15 +4914,145 @@ There can be no use of TDI filters or LSPs by either kernel mode software or dri
 PlayReadyModule, when available on a device in secure firmware in conjunction with a compatible graphics driver, enables hardware-based content protection for media. If implemented, this module provides hardware-rooted protection of device keys, content keys and media content/samples that flow through a media pipeline. It will enable the device to have access to high definition (1080p and above) premium content. OEMs shipping on chipsets/SoCs that have a PlayReadyModule available (in the form of secure firmware available from the chipset vendor) must include PlayReadyModule on devices with screen resolutions of 1080p or higher.
 
 
+## System.Fundamentals.Security.DGCG
+
+Certification for Windows Server 2016, Azure Stack and SDDC must meet the Windows Hardware Compatibility Requirements as stated in version 1607 of the documentation and use HLK version 1607 build 14393 <https://go.microsoft.com/fwlink/p/?LinkID=404112> with matching playlist <http://aka.ms/hlkplaylist> and supplemental content to generate logs and following the policies stated in the Windows Server Policy doc <https://go.microsoft.com/fwlink/p/?linkid=834831>.  Questions about the Azure Stack or SDDC program or how to submit the results for solution validation should be directed to the appropriate Microsoft contact – technical account manager or partner management contact.
+
+### System.Fundamentals.Security.DGCG.CredentialGuard
+
+*This feature checks for Credential Guard.*
+
+<table>
+<tr>
+<th>Applies to</th>
+<td>
+<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
+<p>Windows Server 2016 x64</p>
+</td></tr></table>
+
+**Terms: If-Implemented**
+
+**Description:**
+
+The following table shows the hardware, firmware and software requirements for Credential Guard.
+
+ - MUST meet all Device Guard requirements as described in [System.Fundamentals.Security.DeviceGuard](#_System.Fundamentals.Security.Device). (except for the need of HVCI compatible drivers and Firmware UEFI NX Protection)
+
+ - MUST meet the additional requirements as described in the table below:
+
+| **Requirement**                                                                                                                           | **Description**                                                                                                                               |
+|-------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
+| Trusted Platform Module (TPM) version 1.2 or 2.0                                                                                          | TPM 1.2 and 2.0 provides protection for encryption keys that are stored in the firmware. Either discrete or firmware TPMs will suffice.       |
+| [Firmware security patch for Secure MOR Implementation](https://msdn.microsoft.com/en-us/library/windows/hardware/mt270973.aspx) | Secure MOR Revision 2 bit prevents certain memory attacks and is necessary for Credential Guard. This will further enhance security of Credential Guard. |
+
+
+### System.Fundamentals.Security.DGCG.DeviceGuard
+
+*Device Guard requirement for systems*
+
+<table>
+<tr>
+<th>Applies to</th>
+<td>
+<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
+<p>Windows Server 2016 x64</p>
+</td></tr></table>
+
+**Terms: If-Implemented**
+
+**Description**
+
+Windows 10 has an optional feature called [Device Guard](http://blogs.msdn.com/b/windows_hardware_certification/archive/2015/05/22/driver-compatibility-with-device-guard-in-windows-10.aspx) that gives organizations the ability to lock down devices in a way that provides advanced malware protection against new and unknown malware variants as well as Advanced Persistent Threats (APTs). The following table shows the hardware, firmware and software requirements for Device Guard.
+
+ - MUST meet all [HVCI Compatible](http://go.microsoft.com/fwlink/p/?LinkId=627463) Driver requirements as described in “Filter.Driver.DeviceGuard.DriverCompatibility”.
+
+ - MUST meet the additional requirements as described in the table below:
+
+
+<table>
+<thead>
+<tr class="header">
+<th><strong>Requirement</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Windows 10 OS SKUs</td>
+<td>The PC must be running Windows 10 Enterprise, Windows 10 Education, Windows Server 2016, Windows 10 Mobile Enterprise</td>
+</tr>
+<tr class="even">
+<td>x64 architecture</td>
+<td>The features that virtualization-based security uses in the Windows hypervisor can only run on a 64-bit PC.</td>
+</tr>
+<tr class="odd">
+<td>UEFI firmware version 2.3.1 or higher with UEFI Secure Boot and Platform Secure Boot</td>
+<td><p>UEFI Secure Boot ensures that the device boots only authorized code. Additionally, Boot Integrity (aka Platform Secure Boot) must be supported following the requirement in Hardware Compatibility Specification for Systems for Windows 10:</p>
+<p><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932805.aspx#system_fundamentals_firmware_uefisecureboot">System.Fundamentals.Firmware.UEFISecureBoot</a></p>
+<p><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932807.aspx#system_fundamentals_firmware_cs_uefisecureboot_connectedstandby">System.Fundamentals.Firmware.CS.UEFISecureBoot.ConnectedStandby</a> (this includes Hardware Security Test Interface)</p></td>
+</tr>
+<tr class="even">
+<td>Secure firmware update process</td>
+<td><p>System Firmware must support field updates through Windows Update.</p>
+<p>UEFI firmware must support secure firmware update as described in <a href="http://msdn.microsoft.com/library/windows/hardware/dn932805.aspx#system_fundamentals_firmware_uefisecureboot">System.Fundamentals.Firmware.UEFISecureBoot</a>.</p></td>
+</tr>
+<tr class="odd">
+<td>Firmware BIOS lockdown</td>
+<td><p>Required BIOS capabilities:</p>
+<p>BIOS password or stronger authentication supported to ensure that only authenticated Platform BIOS administrator can change BIOS settings</p>
+<p>OEM supports capability to add OEM or Enterprise Certificate in Secure Boot DB at manufacturing time.</p>
+<p>Protected BIOS option to configure list of permitted boot devices and boot device order which overrides BOOTORDER modification made by OS (e.g. Boot only from internal hard drive).</p>
+<p>Required Configurations:</p>
+<p>Microsoft UEFI CA must be removed from Secure Boot DB. Support for 3rd-party UEFI modules is permitted but should leverage ISV-provided certificates or OEM certificate for the specific UEFI software (e.g. Software package “foo” certificate).</p>
+<p>BIOS options related to security and boot options must be secured to prevent other operating systems from starting and to prevent changes to the BIOS settings.</p>
+<p>BIOS authentication must be set (e.g. BIOS password must be set)</p></td>
+</tr>
+<tr class="even">
+<td>Virtualization extensions</td>
+<td><p>The following virtualization extensions are required to support virtualization-based security:</p>
+<ul>
+<li><p>Intel VT-X or AMD-V</p></li>
+<li><p>Second Level Address Translation (Intel Extended Page Tables, AMD Rapid Virtualization Indexing)</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td>VT-D or AMD‑Vi IOMMU (Input/output memory management unit)</td>
+<td>In Windows 10, an IOMMU enhances system resiliency against memory attacks. For more information, see ACPI description tables. (https://msdn.microsoft.com/windows/hardware/drivers/bringup/acpi-system-description-tables)</td>
+</tr>
+<tr class="even">
+<td>UEFI NX Protections</td>
+<td><ol style="list-style-type: decimal">
+<li><p>All UEFI memory that is marked executable must be read only. Memory marked writable must not be executable.</p></li>
+<li><p>UEFI runtime services must meet these requirements:</p></li>
+<ul>
+<li><p>Implement the UEFI 2.6 EFI_MEMORY_ATTRIBUTES_TABLE. The entire UEFI runtime must be described by this table.</p></li>
+<li><p>All entries must include attributes EFI_MEMORY_RO, EFI_MEMORY_XP, or both.</p></li>
+</ul>
+<li><p>No entries must be left with neither of the above attribute, indicating memory that is both executable and writable. Memory must be either readable and executable or writeable and non-executable.</p></li>
+</ol></td>
+</tr>
+<tr class="odd">
+<td>Firmware support for SMM protection</td>
+<td><p>The <a href="http://go.microsoft.com/fwlink/p/?LinkId=786943">Windows SMM Security Mitigations Table (WSMT)</a> Revision 1, April 18, 2016  specification contains details of an Advanced Configuration and Power Interface (ACPI) table that was created for use with Windows operating systems that support Windows virtualization-based security (VBS) features. 
+
+For more information, see the Windows SMM Security Mitigations Table (WMST) specification. (http://go.microsoft.com/fwlink/p/?LinkId=786943)
+</p></td>
+</tr>
+</tbody>
+</table>
+
+
+
 <a name="system.fundamentals.servernano"></a>
 ## System.Fundamentals.ServerNano
 
-Basic requirements for Windows Server Nano.
+Basic requirements for the Nano Server installation option of Windows Server
 
+Certification for Windows Server 2016, Azure Stack and SDDC must meet the Windows Hardware Compatibility Requirements as stated in version 1607 of the documentation and use HLK version 1607 build 14393 <https://go.microsoft.com/fwlink/p/?LinkID=404112> with matching playlist <http://aka.ms/hlkplaylist> and supplemental content to generate logs and following the policies stated in the Windows Server Policy doc <https://go.microsoft.com/fwlink/p/?linkid=834831>.  Questions about the Azure Stack or SDDC program or how to submit the results for solution validation should be directed to the appropriate Microsoft contact – technical account manager or partner management contact.
 
 ### System.Fundamentals.ServerNano.Deployment
 
-All drivers intended for use with Windows Server Nano must meet these requirements.
+All drivers intended for use with Nano Server must meet these requirements.
 
 <table>
 <tr>
@@ -5049,7 +5064,7 @@ All drivers intended for use with Windows Server Nano must meet these requiremen
 
 **Description**
 
-All drivers intended for use on Windows Server Nano must meet the following deployment requirements:
+All drivers intended for use on Nano Server must meet the following deployment requirements:
 
  - Drivers must not be packaged as an MSI. All driver files (such as .inf and .sys files) must be available as a set of files that can be copied to a folder for use with Deployment Image Servicing and Management (DISM).
 
@@ -5060,7 +5075,7 @@ All tools, utilities, or agents to be installed on Nano Server must be made avai
 
 ### System.Fundamentals.ServerNano.Diagnostics
 
-All diagnostic utilities intended for use with Windows Server Nano must meet these requirements.
+All diagnostic utilities intended for use with Nano Server must meet these requirements.
 
 <table>
 <tr>
@@ -5080,12 +5095,12 @@ All diagnostics tools and utilities intended for use in a Microsoft Azure Stack 
 
 If the tool or utility runs locally on Nano Server, it must be made available as a Windows Server Application (WSA) installer package.
 
-In addition to the above, systems running Windows Server Nano must support Nano Server Recovery Console functionality by verifying that all of the appropriate features work properly on drivers used in Nano Server.
+In addition to the above, systems running Nano Server must support Nano Server Recovery Console functionality by verifying that all of the appropriate features work properly on drivers used in Nano Server.
 
 
 ### System.Fundamentals.ServerNano.FirmwareUpdate
 
-All diagnostic utilities intended for use with Windows Server Nano must meet these requirements.
+All diagnostic utilities intended for use with Nano Server must meet these requirements.
 
 <table>
 <tr>
@@ -5097,7 +5112,7 @@ All diagnostic utilities intended for use with Windows Server Nano must meet the
 
 **Description**
 
-All firmware update tools and utilities intended for use on Windows Server Nano must support installation by either of the following methods:
+All firmware update tools and utilities intended for use on Nano Server must support installation by either of the following methods:
 
  - Remote installation using Windows PowerShell or WMI
 
@@ -5108,7 +5123,7 @@ If the tool or utility runs locally on Nano Server, it must be made available as
 
 ### System.Fundamentals.ServerNano.MonitoringAndTelemetry
 
-All diagnostic utilities intended for use with Windows Server Nano must meet these requirements.
+All diagnostic utilities intended for use with Nano Server must meet these requirements.
 
 <table>
 <tr>
@@ -5133,7 +5148,7 @@ For Microsoft Azure Stack, in particular, all monitoring has to be agentless, an
 
 ### System.Fundamentals.ServerNano.OperateInServerNano
 
-All diagnostic utilities intended for use with Windows Server Nano must meet these requirements.
+Device drivers must install, configure, be serviced, and operate in Nano Server
 
 <table>
 <tr>
@@ -5156,7 +5171,7 @@ Any device driver that does not meet this requirement will not be usable on Wind
 
 ### System.Fundamentals.ServerNano.PatchAndUpdate
 
-Patching requirements for Windows Server Nano.
+Patching requirements for Nano Server.
 
 <table>
 <tr>
@@ -5957,152 +5972,6 @@ Note that a known set of currently existing devices do require a forced reset up
 
 A reset of the entire USB Host Controller results in significantly increased time that it takes for all USB devices to become available after system resume since there could be only one device at address 0 at a time, this enumeration has to be serialized for all USB devices on the bus. We have also seen that resetting the host controller can lead to an illegal SE1 signal state on some host controllers, which in turn can cause some USB devices to hang or drop off the bus. Moreover, devices cannot maintain any private state across sleep resume as that state will be lost on reset.
 
-
-### System.Fundamentals.SystemUSB.USBTypeCCharging
-
-*USB Type-C Charging cases are supported*
-
-<table>
-<tr>
-<th>Applies to</th>
-<td>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
-<p>Windows 10 Mobile ARM</p>
-<p>Windows 10 Mobile x86</p>
-</td></tr></table>
-
-
-**Description**
-
-If a System contains a USB Type-C port that can be used to charge the system, that port must support the following requirements addition to the USB Type-C and PD specs:
-
- - The system can charge via Type-C from a dead battery (using the charger that ships with the system/is sold with the system)
-
- - For multiple USB Type-C port systems, it is recommended that all USB Type-C ports on the system can be used to charge the system to reduce user confusion.
-
-
-### System.Fundamentals.SystemUSB.USBTypeCCertifiedCables
-
-*USB Type-C Systems and Devices that ship with Cables ship with certified cables *
-
-<table>
-<tr>
-<th>Applies to</th>
-<td>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
-<p>Windows 10 Mobile ARM</p>
-<p>Windows 10 Mobile x86</p>
-</td></tr></table>
-
-
-**Description**
-
-If a system or device is USB Type-C and ships with a USB Type-C cable or an adapter, the cable and/or adapter must be USB-IF certified.
-
-In addition, if the USB Type-C cable or adapter is used for an Alternate Mode Standard and the industry group that owns that Standard has a corresponding certification, the cable or adapter must get that certification.
-
-
-### System.Fundamentals.SystemUSB.USBTypeCUCM
-
-*USB Type-C systems must support UCM*
-
-<table>
-<tr>
-<th>Applies to</th>
-<td>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
-<p>Windows 10 Mobile ARM</p>
-<p>Windows 10 Mobile x86</p>
-</td></tr></table>
-
-
-**Description**
-
-Systems with local USB-C ports (e.g. directly on the system compared to on a detachable or separate device or dock) that do not implement UCSI must ship with a 3rd-party UCMCx client driver. 3rd-party UCMCx client drivers must be implemented as per the following MSDN documentation:
-
- - <https://msdn.microsoft.com/en-us/library/windows/hardware/mt188011.aspx>
-
-The UCMCx client driver is required to implement the following APIs:
-
- - UcmInitializeDevice
-
- - UcmConnectorCreate
-
- - UcmConnectorTypeCAttach
-
- - UcmConnectorTypeCDetach
-
- - UcmConnectorTypeCCurrentAdChanged
-
- - UcmConnectorChargingStateChanged
-
-If the system or controller supports Power Delivery, the following additional requirements apply:
-
- - UcmConnectorPowerDirectionChanged
-
- - UcmConnectorPdSourceCaps
-
- - UcmConnectorPdPartnerSourceCaps
-
- - UcmConnectorPdConnectionStateChanged
-
-If the system or controller exposes dual role ports, the following additional requirements apply:
-
- - UcmConnectorDataDirectionChanged
-
-
-### System.Fundamentals.SystemUSB.USBTypeCUCSI
-
-*USB Type-C Systems that support UCSI must implement USCI correctly*
-
-<table>
-<tr>
-<th>Applies to</th>
-<td>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
-<p>Windows 10 Mobile ARM</p>
-<p>Windows 10 Mobile x86</p>
-</td></tr></table>
-
-
-**Description**
-
-If a USB Type-C system has local USB-C ports (e.g. directly on the system compared to on a detachable or separate device or dock) and implements its PD/USB Type-C state machine in an Embedded Controller, it must implement UCSI v1.0 (or later). In addition, it must implement the following optional features from the UCSI spec.
-
-*Commands*
-
- - GET\_ALTERNATE\_MODES
-
- - GET\_CAM\_SUPPORTED
-
- - GET\_PDOS
-
- - SET\_NOTIFICATION\_ENABLE
-
-     - The system or controller must support the following notifications within this command:
-
-         - Supported Provider Capabilities Change
-
-         - Negotiated Power Level Change
-
- - GET\_CONNECTOR\_STATUS
-
-     - The system or controller must support the following Connector Status Changes within this command:
-
-         - Supported Provider Capabilities Change
-
-         - Negotiated Power Level Change
-
-
- - The system or controller must support the following field in GET\_CONNECTOR\_STATUS Status structure
-
-     - Provider Capabilities Limited Reason
-
-
 ### System.Fundamentals.SystemUSB.XhciBiosHandoffFollowsSpec
 
 *xHCI BIOS handoff follows specification*
@@ -6526,15 +6395,24 @@ This requirement is for the MaxPSASize in the HCCPARAMS to be set to 4 at the mi
 
 Storage devices based on the USB Attached SCSI Protocol (UASP) will utilize streams to achieve faster data transfer rates. To enable the best experience with these devices, every xHCI controller will need to support at least 31 primary streams.
 
+## System.Fundamentals.SystemUSB.USBC
 
+Certification for Windows Server 2016, Azure Stack and SDDC must meet the Windows Hardware Compatibility Requirements as stated in version 1607 of the documentation and use HLK version 1607 build 14393 <https://go.microsoft.com/fwlink/p/?LinkID=404112> with matching playlist <http://aka.ms/hlkplaylist> and supplemental content to generate logs and following the policies stated in the Windows Server Policy doc <https://go.microsoft.com/fwlink/p/?linkid=834831>.  Questions about the Azure Stack or SDDC program or how to submit the results for solution validation should be directed to the appropriate Microsoft contact – technical account manager or partner management contact.
+
+<<<<<<< HEAD
+### System.Fundamentals.SystemUSB.USBC.USBTypeCCharging
+=======
 <a name="system.fundamentals.tpm20"></a>
 ## System.Fundamentals.TPM20
+
+Certification for Windows Server 2016, Azure Stack and SDDC must meet the Windows Hardware Compatibility Requirements as stated in version 1607 of the documentation and use HLK version 1607 build 14393 <https://go.microsoft.com/fwlink/p/?LinkID=404112> with matching playlist <http://aka.ms/hlkplaylist> and supplemental content to generate logs and following the policies stated in the Windows Server Policy doc <https://go.microsoft.com/fwlink/p/?linkid=834831>.  Questions about the Azure Stack or SDDC program or how to submit the results for solution validation should be directed to the appropriate Microsoft contact – technical account manager or partner management contact.
 
 <!--No content was provided here in the original Word file.-->
 
 ### System.Fundamentals.TPM20.EKCerts 
+>>>>>>> master
 
-*Systems shipping with TPM 2.0 must contain a full endorsement key certificate.*
+*USB Type-C Charging cases are supported*
 
 <table>
 <tr>
@@ -6544,42 +6422,308 @@ Storage devices based on the USB Attached SCSI Protocol (UASP) will utilize stre
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
-<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 
 **Description**
 
-All TPMs must contain a full Endorsement Key (EK) certificate stored in the TPM NV RAM as described in the TCG PC Client Specific Implementation Specification for Conventional BIOS, section 7.4.5: TCG\_FULL\_CERT, or be capable of being retrieved by the device during the first boot experience.
+If a System contains a USB Type-C port that can be used to charge the system, that port must support the following requirements addition to the USB Type-C and PD specs:
 
-| TPM Artifact   | NV Index   | Required                                                                                                                                          |
-|----------------|------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
-| EK Certificate | 0x01c00002 | Yes. This must be a certificate associated with an RSA 2048 bit key.                                                                              |
-| EK nonce       | 0x01c00003 | Optional, required only if non-default values are used. **We recommend not using this field. Instead, provide a customized template if needed.**  |
-| EK template    | 0x01c00004 | Optional, required only if non-default values are used. Instead of a nonce, we recommend using the unique field of the template.                  |
-| EK Certificate | 0x01c0000a | Optional. If present, this must be a certificate associated with an TPM\_ECC\_NIST\_P256 key.                                                     |
-| EK nonce       | 0x01c0000b | Optional, required only if non-default values are used. **We recommend not using this field. Instead, provide a customized template if needed..** |
-| EK template    | 0x01c0000c | Optional, required only if non-default values are used. Instead of a nonce, we recommend using the unique field of the template.                  |
+ - If the system ships with or is sold with a Type-C charger, the system must be able to charge from a dead battery using that charger 
+ 
+ - The system can charge via Type-C from a dead battery using the same charging mechanisms (e.g. Type-C current, Power Delivery, etc) it can charge with when the system is booted.
 
-The ECC P256 EK cert is required effective July 28, 2017. At all times, at least one EK Certificate associated with an RSA 2048-bit key must be included.
+ - For multiple USB Type-C port systems, it is recommended that all USB Type-C ports on the system can be used to charge the system to reduce user confusion.
 
-Any EK certificates beyond those stored in 0x01c00002 and 0x01c0000a must be stored at NV Indices starting at 0x01c00012. Each even index may store an EK Certificate. The subsequent odd location shall store the associated template if required. A nonce may not be present in a separate NV Index and instead must be included in the template if needed. If a custom template is required to generate the associated EK, it must be included in whole in the associated index such that the template may be passed to TPM2\_CreatePrimary.
 
-**How Windows 10 handles EK Certificate nonces**
+### System.Fundamentals.SystemUSB.USBC.USBTypeCCertifiedCables
 
-If a nonce is present in 0x01c00003, it will be copied to the beginning of the unique.rsa.buffer field in the template. The unique field will be padded to match the length of the modulus of the key. The unique.rsa.size field will be set appropriately to match. The resulting template will be passed to the TPM2\_CreatePrimary command. Any present nonce and template must, when processed using this process, generate the EK associated with the EK Certificate for the Nonce and Template.
+*USB Type-C Systems and Devices that ship with Cables ship with certified cables *
 
-If a nonce is present in 0x01c0000b, it will be copied into the beginning of the unique.ecc.x.buffer field in the template. The unique.ecc.x.size field will be set appropriately to match. The resulting template will be passed to the TPM2\_CreatePrimary command. Any present nonce and template must, when generated using this process, generate the EK associated with the EK Certificate for the Nonce and Template.
+<table>
+<tr>
+<th>Applies to</th>
+<td>
+<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
+<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
+<p>Windows 10 Mobile ARM</p>
+<p>Windows 10 Mobile x86</p>
+</td></tr></table>
 
-The EK certificate must be capable of being written to the TPM NVRAM in such a way that the action of clearing the TPM does not delete the EK certificate.
 
-The certificate must have the EKU specified that indicates that it is indeed an EK Certificate. The OID used for this purpose is "2.23.133.8.1".
+**Description**
 
-The EK certificate may also be signed using ECDSA. The supported ECC curves for this purpose are NIST 256, 384 and 521.
+If a system or device is USB Type-C and ships with a USB Type-C cable or an adapter, the cable and/or adapter must be USB-IF certified.
 
-The EK certificate must contain an AIA extension that contains the URL for the issuing CA Certificate in the certificate chain.
+In addition, if the USB Type-C cable or adapter is used for an Alternate Mode Standard and the industry group that owns that Standard has a corresponding certification, the cable or adapter must get that certification.
 
-The AIA extension must also be present in each non-root cert in the chain with URLs that make the issuing CA certificate (any intermediate CA certs and the root CA cert) – discoverable and retrievable via iterative fetching when starting only with a single EK cert. For more information on AIA extension, please refer to http://go.microsoft.com/fwlink/?LinkId=717890.
+
+### System.Fundamentals.SystemUSB.USBC.USBTypeCUCM
+
+*USB Type-C systems must support UCM*
+
+<table>
+<tr>
+<th>Applies to</th>
+<td>
+<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
+<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
+<p>Windows 10 Mobile ARM64</p>
+<p>Windows 10 Mobile ARM</p>
+<p>Windows 10 Mobile x86</p>
+</td></tr></table>
+
+
+**Description**
+
+This requirement applies to systems that support Power Delivery or Dual Role or Alternate Modes.
+
+Systems with local USB-C ports (e.g. directly on the system compared to on a detachable or separate device or dock) that do not implement UCSI or UcmTcpci  must ship with a 3rd-party UCMCx client driver. 3rd-party UCMCx client drivers must be implemented as per the following MSDN documentation:
+
+ - <https://msdn.microsoft.com/en-us/library/windows/hardware/mt188011.aspx>
+
+The UCMCx client driver is required to implement the following APIs:
+
+ - UcmInitializeDevice
+
+ - UcmConnectorCreate
+
+ - UcmConnectorTypeCAttach
+
+ - UcmConnectorTypeCDetach
+
+ - UcmConnectorTypeCCurrentAdChanged
+
+ - UcmConnectorChargingStateChanged
+
+If the system or controller supports Power Delivery, the following additional APIs must be implemented:
+
+ - UcmConnectorPowerDirectionChanged
+
+ - UcmConnectorPdSourceCaps
+
+ - UcmConnectorPdPartnerSourceCaps
+
+ - UcmConnectorPdConnectionStateChanged
+
+If the system or controller exposes dual role ports, the following additional APIs must be implemented:
+
+ - UcmConnectorDataDirectionChanged
+
+If the system or controller supports Alternate Modes and uses UCM v1.1, the following additional APIs must be implemented:
+
+ - UcmConnectorPartnerPdAlternateModes
+ 
+ - UcmConnectorAlternateModeEntered
+
+ - UcmConnectorAlternateModeExited
+ 
+In addition, systems that support UCM v1.1 must implement a new _DSD method in ACPI according to the UCM v1.1 ACPI guidance:
+
+ - https://aka.ms/ucmacpi 
+
+
+### System.Fundamentals.SystemUSB.USBC.USBTypeCUCMTCPCI
+
+*USB Type-C systems that support UCMTCPCI must implement it correctly*
+
+<table>
+<tr>
+<th>Applies to</th>
+<td>
+<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
+<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
+<p>Windows 10 Mobile ARM64</p>
+<p>Windows 10 Mobile ARM</p>
+<p>Windows 10 Mobile x86</p>
+</td></tr></table>
+
+
+**Description**
+
+This requirement applies to systems that support Power Delivery or Dual Role or Alternate Modes.
+
+Systems with local USB-C ports that have Type-C Port Controller(s) but do not have Type-C Port Manager silicon that provides the Type-C policy engine and protocol layer should implement a UcmTcpciCx client driver. 
+
+If the system implements UcmTcpci, the UcmTcpciCx client driver is required to implement the following APIs:
+
+ - UcmTcpciPortControllerCreate
+ 
+ - UcmTcpciPortControllerSetHardwareRequestQueue
+
+ - UcmTcpciPortControllerStart
+
+ - UcmTcpciPortControllerAlert
+
+If the system implements UcmTcpci, it must also implement a new _DSD method in ACPI according to the UCM v1.1 ACPI guidance:
+
+ - https://aka.ms/ucmacpi
+
+If the system has a battery, supports PD charging, and implements UcmTcpci, must have silicon that handles PD charging before the OS has started.
+
+
+### System.Fundamentals.SystemUSB.USBC.USBTypeCUCSI
+
+*USB Type-C Systems that support UCSI must implement USCI correctly*
+
+<table>
+<tr>
+<th>Applies to</th>
+<td>
+<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
+<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
+<p>Windows 10 Mobile ARM64</p>
+<p>Windows 10 Mobile ARM</p>
+<p>Windows 10 Mobile x86</p>
+</td></tr></table>
+
+
+**Description**
+
+This requirement applies to systems that support Power Delivery or Dual Role or Alternate Modes.
+
+Systems with local USB-C ports (e.g. directly on the system compared to on a detachable or separate device or dock) that have an Embedded Controller which implements PD policy should implement UCSI. 
+
+If the system implements UCSI, it must implement UCSI v1.0 (or later). In addition, it must implement the following optional features from the UCSI spec.
+
+*Commands*
+
+ - GET\_ALTERNATE\_MODES
+
+ - GET\_CAM\_SUPPORTED
+
+ - GET\_PDOS
+
+ - SET\_NOTIFICATION\_ENABLE
+
+     - The system or controller must support the following notifications within this command:
+
+         - Supported Provider Capabilities Change
+
+         - Negotiated Power Level Change
+
+ - GET\_CONNECTOR\_STATUS
+
+     - The system or controller must support the following Connector Status Changes within this command:
+
+         - Supported Provider Capabilities Change
+
+         - Negotiated Power Level Change
+
+
+ - The system or controller must support the following field in GET\_CONNECTOR\_STATUS Status structure
+
+     - Provider Capabilities Limited Reason
+
+
+
+## System.Fundamentals.TPM20
+
+<!--No content was provided here in the original Word file.-->
+
+### System.Fundamentals.TPM20.PlatformConfiguration
+
+*All platforms which contain a TPM 2.0 must meet these functionality requirements for proper operation of the TPM*
+
+<table>
+<tr>
+<th>Applies to</th>
+<td>
+<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
+<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
+<p>Windows 10 Mobile ARM64</p>
+<p>Windows 10 Mobile ARM</p>
+<p>Windows 10 Mobile x86</p>
+<p>Windows Server 2016 x64</p>
+</td></tr></table>
+
+**Description**
+
+1.  During the boot sequence, the boot firmware/software shall measure all firmware and all software components it loads after the core root of trust for measurement is established. The measurements shall be logged as well as extended to platform configuration registers in a manner compliant with the requirements in System.Fundamentals.TPM20.PlatformSpecifications.
+
+2.  The measurements must be implemented such that they reliably and verifiably allow a third party to identify all components in the boot process up until the point either the boot finished successfully or when software with an exploited vulnerability was loaded.
+
+    1.  For example, if the third component loaded includes an exploited vulnerability, then values for the first, second, and third component in the trusted boot log correctly reflect the software that loaded but any values after that may be suspect.
+
+    2.  To achieve this, the trusted execution environment must provide a mechanism of signing the values of the registers used for Trusted Boot. See the “TCG PC Client Platform Firmware Profile” specification referenced in System.Fundamentals.TPM20.PlatformSpecifications for details.
+
+3.  The UEFI firmware update process must protect against rolling back to insecure firmware versions, or non-production versions, that may disable secure boot or include non-production keys. A physically present user may however override the rollback protection manually. In such a scenario (where the rollback protection is overridden), the TPM must be cleared. See NIST SP 800-147 for details.
+
+4.  Platform firmware must ensure invariance of PCRs 0, 2, and 4 across power cycles in the absence of changes to the platform's static core root of trust for measurements (SRTM). Platform firmware must ensure invariance of PCR\[7\] across power cycles in the absence of changes to the platform's static core SRTM. Attaching a (non-bootable) USB to the platform or attaching the platform to an officially supported docking station shall not cause changes to the SRTM  measurements.
+
+5.  If the platform is in any state, such as a “manufacturing mode”, “debug mode” or other state which puts PCR\[7\] bound assets at risk, allows for memory dumps, is intended for debugging, manufacturing use, or engineering device use, the platform shall extend PCR\[7\] to reflect such a state.
+
+6.  The platform must be configured to use SHA-256 boot log (PCR) measurements in the shipping configuration.
+
+    1.  A platform with a single PCR bank which can be switched between SHA1 and SHA-256 modes is acceptable.
+
+7.  Crypto agile event logs must be supported as specified in the “TCG EFI Protocol Specification” referenced in System.Fundamentals.TPM20.PlatformSpecifications.
+
+8.  NoPPIClear must be set to TRUE, and/or PPRequiredForClear must be set to FALSE, in the shipping configuration.
+
+9.  PPRequiredForTurnOn must be FALSE.
+
+10. PPRequiredForTurnOff must be TRUE.
+
+11.	PPRequiredForChangeEPS must be TRUE.
+
+12.	PPRequiredForChangePCRs must be FALSE.
+
+13. Per Section 8.1.1 of “TCG PC Client Platform Firmware Profile Specification”, Family “2.0”, Level 00, Revision 00.21 dated March 30, 2016, the TPM ACPI Object must contain:
+
+    1.  A \_CID matching “MSFT0101”
+
+    2.  An \_HID which correctly identifies the TPM Vendor and Model number, in such a manner as specified by the TPM manufacturer. 
+
+14.	If the memory for the TPM is a System rather than TPM component, it must not lose access to NV before ExitBootServices. The System must be delivered to the end user with the TPM un-provisioned, and without ownership taken.
+   
+    1. a.	If during manufacturing any actions are taken which may take ownership of the TPM or provision it, the TPM should be cleared during the final steps of manufacturing.
+
+15. Effective July 28, 2018 a platform manufacturer must support in-field firmware updates for the TPM.
+
+16. **Recommended**: This bullet item is currently optional and will not be enforced until July 28, 2019, when it becomes **Mandatory**, except when required by other “If Implemented” Requirements.
+
+    1.  Confidential & replay-protected storage: If a TPM uses external memory
+        for non-volatile storage of TPM state (including seeds, proof values, &
+        dictionary attack variables), movement of the TPM state to and from the
+        NV memory MUST include protections of that data to insure
+        confidentiality and integrity of the data and to mitigate against
+        rollback attacks. This is generally accomplished by encrypting the data,
+        applying a Message Authentication Code, and storing the resulting record
+        in replay-protected storage such as Replay Protected Memory Block or
+        Replay Protected Monotonic Counter.
+
+
+### System.Fundamentals.TPM20.PlatformSpecifications
+
+*All platforms which contain a TPM 2.0 must meet these functionality requirements for proper operation of the TPM*
+
+<table>
+<tr>
+<th>Applies to</th>
+<td>
+<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
+<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
+<p>Windows 10 Mobile ARM64</p>
+<p>Windows 10 Mobile ARM</p>
+<p>Windows 10 Mobile x86</p>
+<p>Windows Server 2016 x64</p>
+</td></tr></table>
+
+**Description**
+
+1.	The platform shall include a trusted execution environment supporting the command set defined in “TCG PC Client Platform Firmware Profile Specification for TPM Family 2.0 Level 00 Revision 00.21” dated March 30, 2016 along with “Errata for PC Client Specific Platform Firmware Profile Specification Version 1.0, Revision 0.21”.
+
+2.	The platform is required to measure data into PCR [7] as specified in “TCG PC Client Platform Firmware Profile Specification for TPM Family 2.0 Level 00 Revision 00.21” dated March 30, 2016. 
+
+3.	The platform shall comply with Trusted Computing Group “TCG EFI Protocol Specification” for Family “2.0”, denoted “Level 00 Revision 00.13”, dated March 30, 2016 including Errata Version 0.5
+
+4.	The platform shall comply with the requirements defined in Trusted Computing Group, "TCG ACPI Specification”, “Level 00 Revision 00.37” dated December 19, 2014.
+
+5.	The platform must comply with the Trusted Computing Group “Physical Presence Interface Specification”, Version 1.30, Revision 00.52. Dated July 28, 2015.
+
+6.	The platform must comply with the Trusted Computing Group. “Platform Reset Attack Mitigation Specification”, Version 1.00.  Dated May 15, 2008.
+
 
 
 ### System.Fundamentals.TPM20.TPM20
@@ -6600,13 +6744,11 @@ The AIA extension must also be present in each non-root cert in the chain with U
 
 **Description**
 
-**Mandatory:** All systems must contain a TPM 2.0, and the TPM 2.0 must be both available to the system and enabled in the shipping configuration. The TPM 2.0 and platform must comply with the requirements in this section as well as any other applicable requirements, except as follows
+**Mandatory:** All systems must contain a TPM 2.0, and the TPM 2.0 must be both available to the system and enabled in the shipping configuration.
 
- - This requirement is **Optional** for Server x64. However, if a TPM 2.0 is present on a Server x64 platform, that platform must comply with all requirements in System.Fundamentals.TPM20 and all sub-requirements.
+**Mandatory:** The TPM 2.0 must be a model and firmware certified under Device.TrustedPlatformModule.TPM20.
 
-**Mandatory:** A system that implements a Trusted Platform Module must include a TPM which complies with TCG Trusted Platform Module Library Specification, Family "2.0", Level 00, Revision 1.16 or later is recommended.
-
-**Mandatory:** Systems with TPM 2.0 must comply with the following requirements:
+**Exception for Server:** These requirements are **If Implemented** on Server x64.  Any Server system with a TPM 2.0 must meet all requirements in System.Fundamentals.TPM20, but Server systems are not required to contain a TPM 2.0.
 
 
 <ol>
@@ -7042,7 +7184,7 @@ The TPM must meet the following additional requirements:
 
  - The TPM must implement the TPM\_CAP\_DA\_LOGIC capability for the TPM\_GetCapability command.
 
- - By default, the TPM dictionary attack logic must permit at least 9 authorization failures in an a 24 hour time period before entering the first level of defense.  Small durations of lockout for less than five seconds are acceptable within a 24 hour period with 9 authorization failures if the TPM leaves the lockout state automatically after five seconds elapses.  Alternately, the default system image must contain non-default software anti-hammering settings which correspond to TPM default behavior.  (In the Windows 8 OS the settings can be seen by running gpedit.msc then expanding the following in the left tree view:  Local Computer Policy\\Computer Configuration\\Administrative Templates\\System\\Trusted Platform Module Services. The values to customize are:  Standard User Lockout Duration, Standard User Individual Lockout Threshold, and Standard User Total Lockout Threshold.) 
+ - By default, the TPM dictionary attack logic must permit at least 9 authorization failures in a 24 hour time period before entering the first level of defense.  Small durations of lockout for less than five seconds are acceptable within a 24 hour period with 9 authorization failures if the TPM leaves the lockout state automatically after five seconds elapses.  Alternately, the default system image must contain non-default software anti-hammering settings which correspond to TPM default behavior.  (In the Windows 8 OS the settings can be seen by running gpedit.msc then expanding the following in the left tree view:  Local Computer Policy\\Computer Configuration\\Administrative Templates\\System\\Trusted Platform Module Services. The values to customize are:  Standard User Lockout Duration, Standard User Individual Lockout Threshold, and Standard User Total Lockout Threshold.) 
 
  - The TPM dictionary attack logic must not permit more than 5000 authorization failures per a year.
 
@@ -7361,18 +7503,21 @@ For systems to be awarded the Assurance AQ, the UEFI implementation must be comp
 
 This will be accomplished using the correct build options for creating the UEFI binaries. The system must include the GUID the firmware can set to claim compliance with this requirement.
 
-The platform is required to implement hardware security test interface and share documentation and tools as specified in the Hardware Security Test Interface Specification document, available at http://aka.ms/wmic  
+The platform is required to implement hardware security test interface and share documentation and tools as specified in the Hardware Security Test Interface Specification document, available at http://aka.ms/wmic
+
 This requirement is IF IMPLEMENTED for Server system designs not based on Intel® Xeon® processor Intel64 Family 6 Model 85 Stepping X, or later – where X will vary, nor AMD® Opteron® AMD64 Family 23 Model 1 Stepping 1 or later processor, for Windows Server systems seeking the Hardware Assurance Additional Qualification.
 
-This requirement will be REQUIRED for Server system designs that are based on Intel® Xeon® processor Intel64 Family 6 Model 85 Stepping X, or later – where X will vary, or AMD® Opteron® AMD64 Family 23 Model 1 Stepping 1 or later processor, for Windows Server systems seeking the Hardware Assurance Additional Qualification. 
+This requirement will be REQUIRED for Server system designs that are based on Intel® Xeon® processor Intel64 Family 6 Model 85 Stepping X, or later – where X will vary, or AMD® Opteron® AMD64 Family 23 Model 1 Stepping 1 or later processor, for Windows Server systems seeking the Hardware Assurance Additional Qualification.
 
 
 <a name="system.server.azurestack"></a>
 ## System.Server.AzureStack
 
+Certification for Windows Server 2016, Azure Stack and SDDC must meet the Windows Hardware Compatibility Requirements as stated in version 1607 of the documentation and use HLK version 1607 build 14393 <https://go.microsoft.com/fwlink/p/?LinkID=404112> with matching playlist <http://aka.ms/hlkplaylist> and supplemental content to generate logs and following the policies stated in the Windows Server Policy doc <https://go.microsoft.com/fwlink/p/?linkid=834831>.  Questions about the Azure Stack or SDDC program or how to submit the results for solution validation should be directed to the appropriate Microsoft contact – technical account manager or partner management contact.
+
 ### System.Server.AzureStack.Base
 
-*Basic requirements that should be supported by any server used in a Microsoft Azure Stack solution.*
+*Basic requirements that must be supported by any server used in a Microsoft Azure Stack solution.*
 
 <table>
 <tr>
@@ -7424,25 +7569,6 @@ Requirements for a server used in a Microsoft Azure Stack solution are captured 
 <td>System.Server.Virtualization</td>
 <td>System.Server.Virtualization.ProcessorVirtualizationAssist</td>
 </tr>
-<tr class="even">
-<td rowspan="6">System.Fundamentals.ServerNano</td>
-<td>System.Fundamentals.ServerNano.Deployment</td>
-</tr>
-<tr class="odd">
-<td>System.Fundamentals.ServerNano.Diagnostics</td>
-</tr>
-<tr class="even">
-<td>System.Fundamentals.ServerNano.FirmwareUpdate</td>
-</tr>
-<tr class="odd">
-<td>System.Fundamentals.ServerNano.MonitoringAndTelemetry</td>
-</tr>
-<tr class="even">
-<td>System.Fundamentals.ServerNano.OperateInServerNano</td>
-</tr>
-<tr class="odd">
-<td>System.Fundamentals.ServerNano.PatchAndUpdate</td>
-</tr>
 </tbody>
 </table>
 
@@ -7451,7 +7577,7 @@ In addition to the above, the server must have:
 
 1.	CPU that is a dual socket system with Intel® Xeon® Processor E5 v3 Family or better
 
-2.	A minimum of 128 GB RAM
+2.	A minimum of 256 GB RAM
 
 
 <a name="system.server.azurestack.security"></a>
@@ -7495,7 +7621,7 @@ Servers used in an Azure Stack Solutions should meet the requirements of the Har
 
 **Description**
 
-Servers used in Microsoft Azure Stack solutions should be able to boot successfully over PXE in the UEFI mode with SecureBoot enabled.
+Servers used in Microsoft Azure Stack solutions should be able to boot successfully over PXE in UEFI mode with SecureBoot enabled.
 
 
 <a name="system.server.azurestack.bmc"></a>
@@ -7880,6 +8006,8 @@ resource rebalance operation.
 
 *Server system must include necessary devices and functionality.*
 
+Certification for Windows Server 2016, Azure Stack and SDDC must meet the Windows Hardware Compatibility Requirements as stated in version 1607 of the documentation and use HLK version 1607 build 14393 <https://go.microsoft.com/fwlink/p/?LinkID=404112> with matching playlist <http://aka.ms/hlkplaylist> and supplemental content to generate logs and following the policies stated in the Windows Server Policy doc <https://go.microsoft.com/fwlink/p/?linkid=834831>.  Questions about the Azure Stack or SDDC program or how to submit the results for solution validation should be directed to the appropriate Microsoft contact – technical account manager or partner management contact.
+
 <table>
 <tr>
 <th>Applies to</th>
@@ -7934,7 +8062,7 @@ Server systems must include the following devices or functionality.
 </tr>
 <tr class="odd">
 <td>Memory</td>
-<td>2008 – 1 TB, 2008 R2- 2TB, 2012 - 4 TB, Server Next - 4TB (subject to revision at RTM)</td>
+<td>2008 – 1 TB, 2008 R2- 2TB, 2012 - 4 TB, 2016 - 24TB</td>
 <td>Maximum supported memory</td>
 </tr>
 <tr class="even">
@@ -8135,15 +8263,35 @@ and memory must comply with the requirements defined in the PCI Express 1.0a (or
 PCI Local Bus Specification, Revision 2.3, or later. If discrepancies exist, the PCI Express Base Specification takes
 precedence.
 
+## System.Server.DriveIdentification
 
+<<<<<<< HEAD
+*Platforms must provide identification and location information for all field-replaceable storage devices.*
+=======
 <a name="system.server.bmc"></a>
 ## System.Server.BMC
+>>>>>>> master
 
-<!--No content was provided here in the original Word file.-->
+**Terms: If-Implemented**
 
-### System.Server.BMC.OutOfBandRemoteManageability
+**Enforcement Date: October 1, 2017**
 
-*Server supports out-of-band remote management capabilities.*
+**Description**
+
+Platforms must provide identification and location information for all field-replaceable storage devices, whereby the administrator can accurately and confidently locate and identify the storage devices.
+
+The following definitions will be used in describing storage device identification requirements:
+
+1.	Device Location – where the drive is physically located within a system. “Bay 3, Slot 2”, “Tray 1, Slot A”, or “Motherboard Slot 4” are good examples.
+
+2.	Device Identification – the physical-location-independent identity of a storage device. A unique serial number is a good example. 
+
+
+### System.Server.DriveIdentification.NVMe
+
+*Platform requirements*
+
+Certification for Windows Server 2016, Azure Stack and SDDC must meet the Windows Hardware Compatibility Requirements as stated in version 1607 of the documentation and use HLK version 1607 build 14393 <https://go.microsoft.com/fwlink/p/?LinkID=404112> with matching playlist <http://aka.ms/hlkplaylist> and supplemental content to generate logs and following the policies stated in the Windows Server Policy doc <https://go.microsoft.com/fwlink/p/?linkid=834831>.  Questions about the Azure Stack or SDDC program or how to submit the results for solution validation should be directed to the appropriate Microsoft contact – technical account manager or partner management contact.
 
 <table>
 <tr>
@@ -8152,20 +8300,17 @@ precedence.
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
+**Terms: If-Implemented**
+
+**Enforcement Date: October 1, 2017**
 
 **Description**
 
-Server hardware supports out-of-band remote management capability, using IPMI 2.0 through a LAN and/or Serial interfaces, as well as in-band manageability through the system KCS interface via the IPMI Driver.
+Platforms must meet the following requirements:
 
-It is not necessary that the server supports the full IPMI 2.0 specification, as only a subset of functionality is required for out-of-band remote manageability.
+1.	The device location must be described as a string, which is provided by _DSM function 7, as described in the PCI Firmware Specification Revision 3.1.
 
-Enforcement
-
-This is an “If-Implemented” optional system requirement for a server claiming to be remotely manageable out of band using the de facto IPMI standard. This requirement becomes in effect at the release of Windows Server 2016.
-
-Business Justification
-
-Out-of-band remote manageability through IPMI 2.0 allow different makes and models of server systems running Windows Server 2016 to operate efficiently in a software-defined datacenter and therefore lowering operational costs for the customers where heterogeneous hardware platforms are deployed. In order to achieve this objective, systems must expose this functionality remotely. A server BMC with a dedicated NIC can make this available via IPMI over LAN. A server BMC that only exposes its IPMI functionality through a Serial interface, must be part of a chassis or enclosure that can translate these management operations to a remote operator on the network (for example, through a Chassis Manager).
+2.	The device location string must match the text physically printed on the system (e.g. a motherboard silkscreen, an etched drive bay number, or a legend printed on a tray).
 
 
 <a name="system.server.dynamicpartitioning"></a>
@@ -8639,6 +8784,8 @@ Table below explains the scenario usage for the Graphic driver types.
 
 Server Baseboard Management Controller (BMC) devices can support out-of-band management capabilities based on the DMTF Redfish standard.
 
+Certification for Windows Server 2016, Azure Stack and SDDC must meet the Windows Hardware Compatibility Requirements as stated in version 1607 of the documentation and use HLK version 1607 build 14393 <https://go.microsoft.com/fwlink/p/?LinkID=404112> with matching playlist <http://aka.ms/hlkplaylist> and supplemental content to generate logs and following the policies stated in the Windows Server Policy doc <https://go.microsoft.com/fwlink/p/?linkid=834831>.  Questions about the Azure Stack or SDDC program or how to submit the results for solution validation should be directed to the appropriate Microsoft contact – technical account manager or partner management contact.
+
 <table>
 <tr>
 <th>Applies to</th>
@@ -8659,7 +8806,7 @@ It is not necessary that the BMC implements the full Redfish specification, as o
 <p>Security</p>
 <ol style="list-style-type: lower-alpha">
 <li><p>Support session connections using HTTPS (TLS).</p></li>
-<li><p>Support for both LDAP and Radius based authentication.</p></li>
+<li><p>Support for both LDAP or Radius based authentication.</p></li>
 <li><p>BMC must not have an anonymous user account configured by default. If this account exists, it must be disabled.</p></li>
 <li><p>The BMC allows remote credential management. The BMC must support its Administrator password being changed through the AccountService schema.</p></li>
 </ol>
@@ -9201,9 +9348,9 @@ For access to the WHEA Platform Design Guide, send e-mail to <WHEAFB@Microsoft.c
 <a name="system.solutions.azurestack"></a>
 ## System.Solutions.AzureStack
 
-Microsoft Azure Stack (MAS) is a new Microsoft offering that delivers a
+Microsoft Azure Stack (MAS) is a Microsoft offering that delivers a
 consistent set of Azure Cloud services on premise. While the exact
-composition of Microsoft Azure Stack is still under discussion, the
+composition of Microsoft Azure Stack will evolve through its product life cycle, the
 components that will be required to build a "cloud-inspired
 infrastructure" solution can be broadly split into the categories below.
 
@@ -9220,28 +9367,25 @@ infrastructure" solution can be broadly split into the categories below.
 </tr>
 <tr class="even">
 <th>Storage</th>
-<td>Components that provide permanent storage media for the Microsoft Azure Stack solution—physical disks (HDDs and SSDs), HBAs (with different interconnects: FC, SAS, ISCSI, SATA, and so forth), RAID adapters, storage enclosures, and so forth.</td>
+<td>Components that provide permanent storage media for the Microsoft Azure Stack solution—physical disks (HDDs and SSDs), HBAs and storage enclosures.</td>
 </tr>
 <tr class="odd">
 <th>Security</th>
 <td>TPM-based components needed to guarantee platform security and integrity—typically used by components such as BitLocker, Microsoft Assurance, and shielded VMs.</td>
 </tr>
-<tr class="even">
-<th>Special Items</th>
-<td>Components that are needed to enable specialized scenarios for a Microsoft Azure Stack solution, such as Skype for Business.</td>
-</tr>
 </table>
 
 
 The goal of this feature is to define product requirements for partners
-who build private cloud solutions based on the Microsoft Azure Stack.
+who build private cloud solutions based on the Microsoft Azure Stack reference architecture.
 
 OEMs and Solution Integrators that build Microsoft Azure Stack solutions
 must incorporate components that have passed the associated Microsoft
-Azure Stack logo requirements tests, including the Private Cloud
+Azure Stack requirements tests, including the Private Cloud
 Simulation (PCS) test. The fully assembled solutions must pass the PCS
 tests in their minimum and maximum scale supported configurations.
 
+Certification for Windows Server 2016, Azure Stack and SDDC must meet the Windows Hardware Compatibility Requirements as stated in version 1607 of the documentation and use HLK version 1607 build 14393 <https://go.microsoft.com/fwlink/p/?LinkID=404112> with matching playlist <http://aka.ms/hlkplaylist> and supplemental content to generate logs and following the policies stated in the Windows Server Policy doc <https://go.microsoft.com/fwlink/p/?linkid=834831>.  Questions about the Azure Stack or SDDC program or how to submit the results for solution validation should be directed to the appropriate Microsoft contact – technical account manager or partner management contact.
 
 ### System.Solutions.AzureStack.CloudStress
 
@@ -9257,15 +9401,14 @@ tests in their minimum and maximum scale supported configurations.
 
 **Description**
 
-Private cloud solutions comprise of tightly integrated software and
+Private cloud solutions are comprised of tightly integrated software and
 hardware components to deliver resiliency with high performance. Issues
 in any of the components (software, hardware, drivers, firmware, and so
 forth) can compromise the solution and undermine any promises made
 regarding the Service Level Agreement (SLA) for the private cloud.
 
 Many of these issues are surfaced only under a high-stress, private
-cloud simulation. The Private Cloud Simulator (PCS) enables you to
-validate your component in a cloud scenario and identify such issues. It
+cloud simulation. The Private Cloud Simulator (PCS) enables validation of components in a cloud scenario and identify such issues. PCS
 simulates a live datacenter/private cloud by creating VM workloads,
 scheduling administrative operations (load balancing, software/hardware
 maintenance), and injecting faults (unplanned hardware/software
@@ -9279,107 +9422,6 @@ configurations. For instance, if an Azure Stack solution ships with a
 configuration, PCS is required on both 4-node and 16-node
 configurations, but not on any intermediate (aka 8-node or 12-node)
 configurations
-
-
-### System.Solutions.AzureStack.Nano
-
-*Core requirements for Nano server support on solutions running Microsoft Azure Stack.*
-
-<table>
-<tr>
-<th>Applies to</th>
-<td>
-<p>Windows Server 2016 x64</p>
-</td></tr></table>
-
-
-**Description**
-
-Systems (AKA virtualization hosts) used in a Microsoft Azure Stack
-solution should run Windows Server Nano as the ‘host’ OS.
-
-Hence, all drivers, software utilities, diagnostic tools, patching and
-firmware update mechanisms expected to run on the host should support
-the Device.DevFund.Server.Nano feature and its applicable
-requirements.
-
-In addition to the above, for complete Microsoft Azure Stack solutions,
-the requirements below are applicable:
-
-
-<ol style="list-style-type: decimal">
-<li>
-<p><strong>Operate in Server Nano</strong></p>
-<p>All systems must be able to install, be configureable, serviceable and operable in Windows Server Nano.</p>
-</li>
-
-<li>
-<p><strong>Diagnostics</strong></p>
-<p>All diagnostics tools and utilities intended for use in a Microsoft Azure Stack solution must support management by either of the following methods:</p>
-<ul>
-<li>
-<p>Remotely, using Windows PowerShell or Windows Management Instrumentation (WMI).</p>
-</li>
-<li>
-<p>Using a command line tool that an admin can run on Nano Server by connecting to a Nano Server instance through a remote Windows PowerShell session or SSH.</p>
-</li>
-</ul>
-<p>If the tool or utility runs locally on Nano Server, it must be made available as a Windows Server Application (WSA) installer package.</p>
-<p>In addition to the above, systems running Windows Server Nano must support Nano Server Recovery Console functionality by verifying that all of the appropriate features work properly on drivers used in Nano Server.</p>
-</li>
-
-<li>
-<p><strong>Deployment</strong></p>
-<p>All drivers intended for use in a Microsoft Azure Stack solution must meet the following deployment requirements:</p>
-<ul>
-<li>
-<p>Drivers must be certified for use with Windows Server 2016 and have the Windows Server 2016 logo</p>
-</li>
-<li>
-<p>Drivers must support Device.DevFund.Server.Nano</p>
-</li>
-<li>
-<p>Drivers must not be packaged as an MSI. All driver files (such as .inf and .sys files) must be available as a set of files that can be copied to a folder for use with Deployment Image Servicing and Management (DISM).</p>
-</li>
-<li>
-<p>Drivers must be installable offline using DISM.</p>
-</li>
-</ul>
-<p>All tools, utilities, or agents to be installed on Nano Server must be made available as a Windows Server Application (WSA) installer package.</p>
-</li>
-
-<li>
-<p><strong>Patch and update requirements</strong></p>
-<p>All patches and updates must be able to install offline (as part of image creation) or online.</p>
-</li>
-
-<li>
-<p><strong>Monitoring and telemetry</strong></p>
-<p>For Microsoft Azure Stack, all monitoring has to be agentless, and agents will not be allowed on the hosts. Hence, all monitoring tools, utilities, and agents must support installation by the following method:</p>
-<ul>
-<li>
-<p>Remote installation using Windows PowerShell or WMI</p>
-</li>
-</ul>
-<p>Also see: Redfish requirement in System.Server.Manageability.Redfish</p>
-</li>
-
-<li>
-<p><strong>Firmware update</strong></p>
-<p>All firmware update tools and utilities intended for use in a Microsoft Azure Stack solution must support installation by either of the following methods:</p>
-<ul>
-<li>
-<p>Remote installation using Windows PowerShell or WMI</p>
-</li>
-<li>
-<p>Local installation using a command line tool that an admin can run on Nano Server by connecting to a Nano Server instance through a remote Windows PowerShell session or SSH</p>
-</li>
-</ul>
-<p>If the tool or utility runs locally on Nano Server, it must be made available as a Windows Server Application (WSA) installer package.</p>
-</li>
-</ol>
-
-
 
 ### System.Solutions.AzureStack.Network
 
@@ -9478,8 +9520,8 @@ The feature support table is as below:
 **Storage Solutions built on ‘Storage Spaces Direct’**
 
 Microsoft Azure Stack storage requirements for the initial product
-release are identical to the hardware requirements for **Storage Spaces
-Direct**. Future Microsoft Azure Stack iterations may support additional
+release are identical to the hardware requirements for the Microsoft Quick Path Software Defined Datacenter Premium AQ that defines the hardware requirements for Storage Spaces
+Direct offerings. Future Microsoft Azure Stack iterations may support additional
 storage types.
 
 
@@ -9583,33 +9625,6 @@ Spaces Direct solution ships with a 4-node minimum scale configuration
 and a 16-node maximum scale configuration, PCS is required on both
 4-node and 16-node configurations, but not on any intermediate (aka
 8-node or 12-node) configurations.
-
-
-### System.Solutions.StorageSpacesDirect.Nano
-
-*Core requirements for Nano server support on solutions built on Storage
-Spaces Direct.*
-
-<table>
-<tr>
-<th>Applies to</th>
-<td>
-<p>Windows Server 2016 x64</p>
-</td></tr></table>
-
-
-**Description**
-
-Nano support requirements for Storage Spaces Direct solutions are
-identical to those for the initial release of Microsoft Azure Stack.
-Hence, Storage Spaces Direct solutions must support the requirement
-below
-
-| Area                        | Azure Stack Requirement |
-|-----------------------------|-------------------------|
-| Windows Server Nano Support | System.Solutions.Azurestack.Nano |
-
-
 
 ### System.Solutions.StorageSpacesDirect.Network
 
@@ -9716,4 +9731,3 @@ The feature support table is as below:
 | Controller (HBA) | Device.Storage.Controller.AzureStack |
 | Enclosure        | Device.Storage.Enclosure.AzureStack |
 | Drive            | Device.Storage.Hd.AzureStack |
-
