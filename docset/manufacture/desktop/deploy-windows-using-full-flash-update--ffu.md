@@ -1,5 +1,5 @@
 ---
-author: Justinha
+author: themar
 Description: 'Deploy Windows faster on the factory floor by using the Full Flash Update (FFU) image format.'
 ms.assetid: af2b402f-9a5c-4c6a-8852-61039e5bec2a
 MSHAttr: 'PreferredLib:/library/windows/hardware'
@@ -9,11 +9,9 @@ title: 'Deploy Windows using Full Flash Update (FFU)'
 # Deploy Windows using Full Flash Update (FFU)
 
 
-Deploy Windows faster on the factory floor by using the Full Flash Update (FFU) image format.
+Deploy Windows faster on the factory floor by using the Full Flash Update (FFU) image format. With FFU images, you can apply a Windows image and partition information directly to a drive or an SD card.
 
-With FFU images, you can apply a Windows image directly to a drive or an SD card, laying down the entire drive at once, including the partition information.
-
-To create and apply images, you can use [Windows Imaging and Configuration Designer (ICD)](https://msdn.microsoft.com/library/windows/hardware/dn916112.aspx). You can also use the Windows 10 version of DISM to apply FFU images, which is included in the Windows 10 version of Windows Preinstallation Environment (WinPE).
+To create and apply FFU images for Windows 10, Version 1607 and earlier, you can use [Windows Imaging and Configuration Designer (ICD)](https://msdn.microsoft.com/library/windows/hardware/dn916112.aspx) which is included in the Windows Assessment and Deployment Kit (ADK) for Windows 10, Version 1607. You can use the Windows 10 version of DISM, which is included in the Windows 10 version of Windows Preinstallation Environment (WinPE)to apply FFU images. FFU workflows are not part of the ADK for Windows 10, Version 1703. 
 
 Once you've created an FFU image, it can't be modified or edited offline.
 
@@ -128,6 +126,8 @@ FFU images are often too large to fit on a standard WinPE FAT32-formatted USB fl
 
 ## <span id="related_topics"></span>Related topics
 
+[Download and install the Windows ADK](https://msdn.microsoft.com/windows/hardware/commercialize/adk-install)
+
 [Windows Imaging and Configuration Designer](https://msdn.microsoft.com/library/windows/hardware/dn916113)
 
 [FFU image format](../mobile/ffu-image-format.md)
@@ -141,9 +141,3 @@ FFU images are often too large to fit on a standard WinPE FAT32-formatted USB fl
 [DISM Image Management Command-Line Options](dism-image-management-command-line-options-s14.md)
 
 [CreateFile function](https://msdn.microsoft.com/library/windows/desktop/aa363858.aspx)
-
- 
-
-
-
-
