@@ -1,12 +1,12 @@
 ---
-title: Hardware Compatibility Specifications for Windows 10, version 1607
-Description: 'This section of the documentation provides specifications for hardware compatibility with Windows 10, version 1607.'
+title: Hardware Compatibility Specifications for Windows 10, version 1703
+Description: 'This section of the documentation provides specifications for hardware compatibility with Windows 10, version 1703.'
 ms.assetid: 
 MSHAttr: 
 author: beneluxboy
 ---
 
-# Hardware Compatibility Specifications for Windows 10, version 1607
+# Hardware Compatibility Specifications for Windows 10, version 1703
 
 The Windows Hardware Compatibility Program is designed to help your company deliver systems, software and hardware products that are compatible with Windows and run reliably on Windows 10 and Windows Server 2016.
 
@@ -28,9 +28,9 @@ The latest playlist can be downloaded at the following location:
 
 - [https://sysdev.microsoft.com/en-US/Hardware/compatibilityplaylists/](https://sysdev.microsoft.com/en-US/Hardware/compatibilityplaylists/)
 
-## Hardware Certification Policies and Processes for Windows 10, version 1607
+## Hardware Certification Policies and Processes for Windows 10, version 1703
 
 The WHCP Policies and Processes documents below contains certification testing policies, product submission, and business requirements.
 
-- [WHCP Policies and Processes](http://go.microsoft.com/fwlink/p/?LinkID=823111)
+- [WHCP Policies and Processes](http://go.microsoft.com/fwlink/p/?LinkID=846349)
 - [WHCP Policies and Processes (Windows Server)](https://go.microsoft.com/fwlink/p/?linkid=834831)

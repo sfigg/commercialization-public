@@ -12,6 +12,27 @@ ms.assetid: F044375E-98FA-4C54-AE8C-C9BDF31704C0
 
 The following tables record the changes that were made in the **Design** section of the Windows 10 partner documentation.
 
+## April 5, 2017
+
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>New or updated topic</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><p>[Minimum hardware requirements](minimum/minimum-hardware-requirements-overview.md)</p></td>
+<td><p>Updated the specification for minimum hardware requirements for Windows 10 and all types of devices or computers designed for this release (Windows 10, version 1703).</p></td>
+</tr>
+</tbody>
+</table>
+
 ## October 13, 2016
 
 
