@@ -9,10 +9,6 @@ ms.assetid: C6427C52-76F9-4EE0-98F9-DE278529D459
 
 # EnterpriseDataProtection DDF file
 
-
-> [!WARNING]
-> Some information relates to prereleased product, which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.  
-
 The following topic shows the OMA DM device description framework (DDF) for the EnterpriseDataProtection configuration service provider.
 
 > [!Important]  
@@ -99,7 +95,7 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
                 <Delete />
                 <Replace />
               </AccessType>
-              <Description>Maps to EnterpriseProtectedDomainNames MDM policy.</Description>
+              <Description>Maps to EnerpriseProtectedDomainNames MDM policy.</Description>
               <DFFormat>
                 <chr />
               </DFFormat>
@@ -114,7 +110,30 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
               </DFType>
             </DFProperties>
           </Node>
-          
+          <Node>
+            <NodeName>AllowUserDecryption</NodeName>
+            <DFProperties>
+              <AccessType>
+                <Get />
+                <Add />
+                <Delete />
+                <Replace />
+              </AccessType>
+              <Description>Deprecated. Recommendation is to always set to 1. When fetching this policy value, client will always return 1 regardless of what was originally set by server.</Description>
+              <DFFormat>
+                <int />
+              </DFFormat>
+              <Occurrence>
+                <One />
+              </Occurrence>
+              <Scope>
+                <Dynamic />
+              </Scope>
+              <DFType>
+                <MIME>text/plain</MIME>
+              </DFType>
+            </DFProperties>
+          </Node>
           <Node>
             <NodeName>RequireProtectionUnderLockConfig</NodeName>
             <DFProperties>
@@ -185,6 +204,29 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </DFProperties>
           </Node>
           <Node>
+            <NodeName>RevokeOnMDMHandoff</NodeName>
+            <DFProperties>
+              <AccessType>
+                <Get />
+                <Add />
+                <Delete />
+                <Replace />
+              </AccessType>
+            <DFFormat>
+              <int />
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            </DFProperties>
+          </Node>
+          <Node>
             <NodeName>RMSTemplateIDForEDP</NodeName>
             <DFProperties>
               <AccessType>
@@ -221,6 +263,29 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
               </DFFormat>
               <Occurrence>
                 <One />
+              </Occurrence>
+              <Scope>
+                <Dynamic />
+              </Scope>
+              <DFType>
+                <MIME>text/plain</MIME>
+              </DFType>
+            </DFProperties>
+          </Node>
+          <Node>
+            <NodeName>SMBAutoEncryptedFileExtensions</NodeName>
+            <DFProperties>
+              <AccessType>
+                <Get />
+                <Add />
+                <Delete />
+                <Replace />
+              </AccessType>
+              <DFFormat>
+                <chr />
+              </DFFormat>
+              <Occurrence>
+                <ZeroOrOne />
               </Occurrence>
               <Scope>
                 <Dynamic />

@@ -375,12 +375,6 @@ The following components are deprecated in Windows 10 and Windows Server 2016.
 </tbody>
 </table>
 
- 
-
-## Related topics
-
-
-[Unattended Windows Setup Reference](unattended-windows-setup-reference-b-unattend.md)
 
  
 

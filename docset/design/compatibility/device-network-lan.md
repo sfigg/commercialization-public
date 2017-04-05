@@ -731,7 +731,7 @@ Ethernet devices must support Jumbo Frames. MTU values in the User Interface mus
 
 **Description**
 
-A new keyword will be added called “*EncapOverhead” with type being numeric, default value of 0, max value of 480, and step increments of size 32. This value will account for overhead in Ethernet frames due to virtual network overlay encapsulation such as VXLAN and NVGRE. MTU size will therefore be determined by the summation of these two keyword values except perhaps in the case where *JumboPacket + *EncapOverhead would exceed some hardware upper bound of the NIC.
+A new keyword will be added called “*EncapOverhead” with type being numeric, default value of 0, max value of 256, and step increments of size 32. This value will account for overhead in Ethernet frames due to virtual network overlay encapsulation such as VXLAN and NVGRE. MTU size will therefore be determined by the summation of these two keyword values except perhaps in the case where *JumboPacket + *EncapOverhead would exceed some hardware upper bound of the NIC.
 
 Devices implementing GRE or VxLAN offloads must also incorporate this requirement.
 

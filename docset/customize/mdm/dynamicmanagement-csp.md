@@ -8,10 +8,6 @@ MSHAttr:
 
 # DynamicManagement CSP
 
-
-> [!WARNING]
-> Some information relates to prereleased product, which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
-
 Windows 10 allows you to manage devices differently depending on location, network, or time.  In Windows 10, version 1703 the focus is on the most common areas of concern expressed by organizations. For example, managed devices can have cameras disabled when at a work location, the cellular service can be disabled when outside the country to avoid roaming charges, or the wireless network can be disabled when the device is not within the corporate building or campus. Once configured, these settings will be enforced even if the device can’t reach the management server when the location or network changes. The Dynamic Management CSP enables configuration of policies that change how the device is managed in addition to setting the conditions on which the change occurs.  
 
 This CSP was added in Windows 10, version 1703.
@@ -63,19 +59,19 @@ The following diagram shows the DynamicManagement configuration service provider
 <p style="margin-left: 20px">Settings that get applied when the Context is active.</p>
 <p style="margin-left: 20px">Value type is string. Supported operations are Add, Get, Delete, and Replace.</p>
 
-<a href="settingspackresponse" id=""></a>**SettingsPackResponse**  
+<a href="" id="settingspackresponse"></a>**SettingsPackResponse**  
 <p style="margin-left: 20px">Response from applying a Settings Pack that contains information on each individual action..</p>
 <p style="margin-left: 20px">Value type is string. Supported operation is Get.</p>
 
-<a href="contextstatus" id=""></a>**ContextStatus**  
+<a href="" id="contextstatus"></a>**ContextStatus**  
 <p style="margin-left: 20px">Reports status of the context.  If there was a failure, SettingsPackResponse should be checked for what exactly failed..</p>
 <p style="margin-left: 20px">Value type is integer. Supported operation is Get.</p>
 
-<a href="altitude" id=""></a>**Altitude**  
+<a href="" id="altitude"></a>**Altitude**  
 <p style="margin-left: 20px">A value that determines how to handle conflict resolution of applying multiple contexts on the device. This is required and must be distinct of other priorities..</p>
 <p style="margin-left: 20px">Value type is integer. Supported operations are Add, Get, Delete, and Replace.</p>
 
-<a href="alertsenabled" id=""></a>**AlertsEnabled**  
+<a href="" id="alertsenabled"></a>**AlertsEnabled**  
 <p style="margin-left: 20px">A Boolean value for sending an alert to the server when a context fails.</p>
 <p style="margin-left: 20px">Supported operations are Get and Replace.</p>
 

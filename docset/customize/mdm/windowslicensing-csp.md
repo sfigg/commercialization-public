@@ -9,14 +9,13 @@ ms.assetid: E6BC6B0D-1F16-48A5-9AC4-76D69A7EDDA6
 
 # WindowsLicensing CSP
 
-
 The WindowsLicensing configuration service provider is designed for licensing related management scenarios. Currently the scope is limited to edition upgrades of Windows 10 desktop and mobile devices, such as Windows 10 Pro to Windows 10 Enterprise. In addition, this CSP provides the capability to activate or change the product key of Windows 10 desktop devices.
 
 The following diagram shows the WindowsLicensing configuration service provider in tree format.
 
-![windowslicensing csp diagram](images/provisioning-csp-windowslicensing-th2.png)
+![windowslicensing csp diagram](images/provisioning-csp-windowslicensing.png)
 
-<a href="" id="--vendor-msft-windowslicensing"></a>**./Vendor/MSFT/WindowsLicensing**  
+<a href="" id="--device-vendor-msft-windowslicensing"></a>**./Device/Vendor/MSFT/WindowsLicensing**  
 This is the root node for the WindowsLicensing configuration service provider.
 
 The supported operation is Get.
@@ -24,7 +23,8 @@ The supported operation is Get.
 <a href="" id="upgradeeditionwithproductkey"></a>**UpgradeEditionWithProductKey**  
 Enters a product key for an edition upgrade of Windows 10 desktop devices.
 
-> **Note**   This upgrade process requires a system restart.
+> [!NOTE]   
+> This upgrade process requires a system restart.
 
  
 
@@ -36,7 +36,8 @@ When a product key is pushed from an MDM server to a user's device, **changepk.e
 
 After the device restarts, the edition upgrade process completes. The user will receive a notification of the successful upgrade.
 
-> **Important**  If another policy requires a system reboot that occurs when **changepk.exe** is running, the edition upgrade will fail.
+> [!IMPORTANT]   
+> If another policy requires a system reboot that occurs when **changepk.exe** is running, the edition upgrade will fail.
 
  
 
@@ -46,7 +47,8 @@ After the device restarts, the edition upgrade process completes. The user will 
 
 This node can also be used to activate or change a product key on a particular edition of Windows 10 desktop device by entering a product key. Activation or changing a product key does not require a reboot and is a silent process for the user.
 
-> **Important**  The product key entered must be 29 characters (that is, it should include dashes), otherwise the activation, edition upgrade, or product key change on Windows 10 desktop devices will fail. The product key is acquired from Microsoft Volume Licensing Service Center. Your organization must have a Volume Licensing contract with Microsoft to access the portal.
+> [!IMPORTANT]   
+> The product key entered must be 29 characters (that is, it should include dashes), otherwise the activation, edition upgrade, or product key change on Windows 10 desktop devices will fail. The product key is acquired from Microsoft Volume Licensing Service Center. Your organization must have a Volume Licensing contract with Microsoft to access the portal.
 
  
 
@@ -87,7 +89,8 @@ The supported operation is Get.
 <a href="" id="upgradeeditionwithlicense"></a>**UpgradeEditionWithLicense**  
 Provides a license for an edition upgrade of Windows 10 mobile devices.
 
-> **Note**  This upgrade process does not require a system restart.
+> [!NOTE]   
+> This upgrade process does not require a system restart.
 
  
 
@@ -95,13 +98,14 @@ The date type is XML.
 
 The supported operation is Execute.
 
-> **Important**  The XML license file contents must be properly escaped (that is, it should not simply be a copied XML), otherwise the edition upgrade on Windows 10 mobile devices will fail. For more information on proper escaping of the XML license file, see Section 2.4 of the [W3C XML spec](http://www.w3.org/TR/xml/) . The XML license file is acquired from the Microsoft Volume Licensing Service Center. Your organization must have a Volume Licensing contract with Microsoft to access the portal.
+> [!IMPORTANT]   
+> The XML license file contents must be properly escaped (that is, it should not simply be a copied XML), otherwise the edition upgrade on Windows 10 mobile devices will fail. For more information on proper escaping of the XML license file, see Section 2.4 of the [W3C XML spec](http://www.w3.org/TR/xml/) . The XML license file is acquired from the Microsoft Volume Licensing Service Center. Your organization must have a Volume Licensing contract with Microsoft to access the portal.
 
  
 
 The following are valid edition upgrade paths when using this node through an MDM or provisioning package:
 
--   Windows 10 Mobileto Windows 10 Mobile Enterprise
+-   Windows 10 Mobile to Windows 10 Mobile Enterprise
 
 <a href="" id="licensekeytype"></a>**LicenseKeyType**  
 Returns the parameter type used by Windows 10 devices for an edition upgrade, activation, or product key change.
@@ -119,6 +123,36 @@ Returns TRUE if the entered product key can be used for an edition upgrade, acti
 The data type is a chr.
 
 The supported operation is Exec.
+
+<a href="" id="changeproductkey"></a>**ChangeProductKey**  
+Added in Windows 10, version 1703. Installs a product key for Windows 10 desktop devices. Does not reboot.
+
+The data type is a chr.
+
+The supported operation is Execute.
+
+<a href="" id="subscriptions"></a>**Subscriptions**  
+Added in Windows 10, version 1607. Node for subscriptions.
+
+<a href="" id="subscriptions-subscriptionid"></a>**Subscriptions/SubscriptionId**  
+Added in Windows 10, version 1607. Node for subscription IDs.
+
+<a href="" id="subscriptions-subscriptionid-status"></a>**Subscriptions/SubscriptionId/Status**  
+Added in Windows 10, version 1607. Returns the status of the subscription.
+
+The data type is an Int.
+
+The supported operation is Get.
+
+<a href="" id="subscriptions-subscriptionid-name"></a>**Subscriptions/SubscriptionId/Name**  
+Added in Windows 10, version 1607. Returns the name of the subscription.
+
+The data type is a chr.
+
+The supported operation is Get.
+
+
+
 
 ## SyncML examples
 
@@ -145,7 +179,8 @@ The supported operation is Exec.
 </SyncML>
 ```
 
-> **Note**  `XXXXX-XXXXX-XXXXX-XXXXX-XXXXX` in the **Data** tag should be replaced with your product key.
+> [!NOTE]   
+> `XXXXX-XXXXX-XXXXX-XXXXX-XXXXX` in the **Data** tag should be replaced with your product key.
 
  
 
@@ -225,7 +260,8 @@ The supported operation is Exec.
 </SyncML>
 ```
 
-> **Note**  `XXXXX-XXXXX-XXXXX-XXXXX-XXXXX` in the **Data** tag should be replaced with your product key.
+> [!NOTE]   
+> `XXXXX-XXXXX-XXXXX-XXXXX-XXXXX` in the **Data** tag should be replaced with your product key.
 
  
 

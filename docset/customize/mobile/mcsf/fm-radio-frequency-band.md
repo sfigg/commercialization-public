@@ -92,7 +92,6 @@ OEMs can change the default setting for the FM radio receiver to use an appropri
 
 [Showing the FM radio](showing-the-fm-radio.md)
 
-[FM radio](p_phDrivComp.fm_radio)
 
  
 

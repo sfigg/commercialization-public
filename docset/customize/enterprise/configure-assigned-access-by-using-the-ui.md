@@ -28,7 +28,7 @@ You have installed the Universal Windows app for the Assigned Access user accoun
      
 
 3.  Log in as the assigned access user account.
-4.  Install the Universal Windows app that follows guidance in [Kiosk apps for assigned access: Best practices](p_phpartappdev.create_a_kiosk_app_for_assigned_access).
+4.  Install the Universal Windows app that follows guidance in [Kiosk apps for assigned access: Best practices](https://msdn.microsoft.com/en-us/windows/hardware/drivers/partnerapps/create-a-kiosk-app-for-assigned-access).
 5.  Log out as the assigned access user account.
 6.  Log in as administrator.
 

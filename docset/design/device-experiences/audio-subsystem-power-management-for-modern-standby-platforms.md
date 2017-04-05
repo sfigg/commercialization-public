@@ -184,7 +184,7 @@ The context sharing interface is defined as a simple input/output buffer with a 
 
 In connected standby platforms, Windows supports a single hardware power management configuration for the audio subsystem.
 
-In the expected configuration, the audio processing units are located on the SoC, and the external audio codec is connected to the SoC through a SoC-compatible digital audio interface, a [simple peripheral bus](../../customize/design/component-guidelines/simple-peripheral-bus--spb-.md) (SPB) such as I²C, and one or more GPIO pins. We recommend that the audio codec and external logic consume no more than one milliwatt in the sleep power mode.
+In the expected configuration, the audio processing units are located on the SoC, and the external audio codec is connected to the SoC through a SoC-compatible digital audio interface, a [simple peripheral bus](../component-guidelines/simple-peripheral-bus--spb-.md) (SPB) such as I²C, and one or more GPIO pins. We recommend that the audio codec and external logic consume no more than one milliwatt in the sleep power mode.
 
 The following block diagram shows the expected hardware configuration, the **Audio device driver stack**, and the user-mode components.
 

@@ -92,7 +92,7 @@ This customization supports: **per-IMSI** value, **per-device** value
 
 4.  Specify the `ExcludedSystemTypesByDefault``Value` to set a default value for the **Highest connection speed** option in the **Settings** &gt; **Cellular** screen.
 
-    1.  Refer to [RILSYSTEMTYPE](p_phUMC.rilsystemtype) and note the values for the corresponding radio technology that you want to exclude.
+    1.  Refer to [RILSYSTEMTYPE] and note the values for the corresponding radio technology that you want to exclude.
 
         For example, on an LTE network the default setting for the highest connection speed is 4G. The other available options that show up also include 3G and 2G. However, if you want to change the default to 2G, you will need to exclude RIL\_SYSTEMTYPE\_LTE (4G) and RIL\_SYSTEMTYPE\_UMTS (3G) to set the default to 2G. To do this, note the values for RIL\_SYSTEMTYPE\_LTE (4G) and RIL\_SYSTEMTYPE\_UMTS (3G) in hexadecimal and convert these to binary.
 

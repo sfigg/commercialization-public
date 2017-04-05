@@ -9,10 +9,6 @@ ms.assetid: E2D4467F-A154-4C00-9208-7798EF3E25B3
 
 # EnterpriseDataProtection CSP
 
-
-> [!WARNING]
-> Some information relates to prereleased product, which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.  
-
 The EnterpriseDataProtection configuration service provider (CSP) is used to configure Windows Information Protection (WIP) (formerly known as Enterprise Data Protection) specific settings. For more information about WIP, see [Protect your enterprise data using Windows Information Protection (WIP)](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip).
 
 > **Note**  
@@ -244,6 +240,14 @@ typedef enum _PUBLIC_KEY_SOURCE_TAG {
 
 <p style="margin-left: 20px">Supported operations are Add, Get, Replace and Delete. Value type is integer.
 
+<a href="" id="settings-revokeonmdmhandoff"></a>**Settings/RevokeOnMDMHandoff**  
+<p style="margin-left: 20px">Added in Windows 10, version 1703. This policy controls whether to revoke the WIP keys when a device upgrades from MAM to MDM. If set to 0 (Don't revoke keys), the keys will not be revoked and the user will continue to have access to protected files after upgrade. This is recommended if the MDM service is configured with the same WIP EnterpriseID as the MAM service.
+
+- 0 - Don't revoke keys
+- 1 (dafault) - Revoke keys
+
+<p style="margin-left: 20px">Supported operations are Add, Get, Replace and Delete. Value type is integer.
+
 <a href="" id="settings-rmstemplateidforedp"></a>**Settings/RMSTemplateIDForEDP**  
 <p style="margin-left: 20px">TemplateID GUID to use for RMS encryption. The RMS template allows the IT admin to configure the details about who has access to RMS-protected file and how long they have access.
 
@@ -256,6 +260,10 @@ typedef enum _PUBLIC_KEY_SOURCE_TAG {
 -   1 – Use RMS.
 
 <p style="margin-left: 20px">Supported operations are Add, Get, Replace and Delete. Value type is integer.
+
+<a href="" id="settings-smbautoencryptedfileextensions"></a>**Settings/SMBAutoEncryptedFileExtensions**  
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies a list of file extensions, so that files with these extensions are encrypted when copying from an SMB share within the corporate boundary as defined in the Policy CSP nodes for [NetworkIsolation/EnterpriseIPRange](policy-configuration-service-provider.md#networkisolation-enterpriseiprange) and [NetworkIsolation/EnterpriseNetworkDomainNames](policy-configuration-service-provider.md#networkisolation-enterprisenetworkdomainnames).  When this policy is not specified, the existing auto-encryption behavior is applied.  When this policy is configured, only files with the extensions in the list will be encrypted.</p>
+<p style="margin-left: 20px">Supported operations are Add, Get, Replace and Delete. Value type is string.
 
 <a href="" id="settings-edpshowicons"></a>**Settings/EDPShowIcons**  
 <p style="margin-left: 20px">Determines whether overlays are added to icons for WIP protected files in Explorer and enterprise only app tiles in the Start menu. Starting in Windows 10, version 1703 this setting also configures the visibility of the WIP icon in the title bar of a WIP-protected app.
