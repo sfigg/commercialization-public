@@ -7,6 +7,24 @@ ms.assetid: EE27ABF7-C197-4E8E-AC1B-77266E2B9FD9
 
 # What's new in ADK kits and tools
 
+## <a href="" id="adk"></a>What’s new in the the Windows ADK for Windows 10, version 1703
+
+### Windows Configuration Designer
+
+Previously known as Windows Imaging and Configuration Designer (ICD), the tool for creating provisioning packages is renamed Windows Configuration Designer. Windows Configuration Designer in Windows 10, version 1703, includes several new wizards to make it easier to create provisioning packages.
+
+### New answer file settings added
+
+To see the newest unattend settings, go to [Changed answer file settings for Windows 10 for desktop editions.](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/customize/desktop/unattend/changed-answer-file-settings-for-windows-10-build-1703)
+
+### MDM: Enhanced device and PC management
+
+Check out the [new CSPs settings](https://msdn.microsoft.com/en-us/library/windows/hardware/mt299056.aspx#whatsnew_1607).
+
+### More changes
+
+See what's new in [design](https://msdn.microsoft.com/library/windows/hardware/mt703371.aspx), [customizations](https://msdn.microsoft.com/en-us/library/windows/hardware/mt723363.aspx), [manufacturing](manufacture/whats-new-in-windows-manufacturing.md).
+
 ## <a href="" id="adk"></a>What’s new in the the Windows ADK for Windows 10, version 1607
 
 ### Pick and choose desktop applications
@@ -39,9 +57,6 @@ The Chinese (Taiwan) language pack (zh-TW) supports both Taiwan and Hong Kong lo
 
 Check out the [new CSPs settings](https://msdn.microsoft.com/en-us/library/windows/hardware/mt299056.aspx#whatsnew_1607).
 
-### More changes
-
-See what's new in [design](https://msdn.microsoft.com/library/windows/hardware/mt703371.aspx), [customizations](https://msdn.microsoft.com/en-us/library/windows/hardware/mt723363.aspx), [manufacturing](manufacture/whats-new-in-windows-manufacturing.md).
 
 ## <a href="" id="adk"></a>What’s new in the Windows ADK, version 1511
 
