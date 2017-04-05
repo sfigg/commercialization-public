@@ -608,6 +608,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>Start/HideSleep</li>
 <li>Start/HideSwitchAccount</li>
 <li>Start/HideUserTile</li>
+<li>Start/ImportEdgeAssets</li>
 <li>Start/NoPinningToTaskbar</li>
 <li>System/AllowFontProviders</li>
 <li>System/DisableOneDriveFileSync</li>
@@ -1033,6 +1034,7 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <td style="vertical-align:top"><p>Added the following new policies for Windows 10, version 1703:</p> 
 <ul>
 <li>DeviceLock/MaxInactivityTimeDeviceLockWithExternalDisplay</li>
+<li>Start/ImportEdgeAssets</li>
 <li>Update/DetectionFrequency</li>
 <li>Update/SetEDURestart</li>
 </ul>
