@@ -1,3 +1,10 @@
+---
+author: themar
+Description: Instructions on how to download and install the Windows ADK
+MSHAttr: 'PreferredLib:/library/windows/hardware'
+title: Download and install the Windows ADK
+---
+
 # Download and install the Windows ADK 
 
 Updated: August 22, 2016
