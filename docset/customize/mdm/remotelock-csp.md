@@ -90,7 +90,7 @@ This node will return the following status. All OMA DM errors are listed [here](
 </table>
 
 <a href="" id="lockandrecoverpin"></a>**LockAndRecoverPIN**  
-The behavior of this setting is similar to LockAndResetPIN, but it performs a non-destructive PIN reset; i.e. it allows you to keep existing keys associated with your PIN. It does not actually recover your existing PIN. The client will generate a new PIN and send it to the MDM server.
+Added in Windows 10, version 1703. The behavior of this setting is similar to LockAndResetPIN, but it performs a non-destructive PIN reset; i.e. it allows you to keep existing keys associated with your PIN. It does not actually recover your existing PIN. The client will generate a new PIN and send it to the MDM server.
 
 Executing this node requires a ticket from our PIN recovery service, so the MDM must be enlightened about that service to support it.
 
