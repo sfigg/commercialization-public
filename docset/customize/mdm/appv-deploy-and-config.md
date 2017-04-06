@@ -24,5 +24,13 @@ MSHAttr:
 
 <p>The node structure for the EnterpriseAppVManagement CSP</p>
 
-<p>(./User/Vendor/MSFT/EnterpriseAppVManagement) contains the following subnotes:</p>
+<p>(./User/Vendor/MSFT/EnterpriseAppVManagement) contains the following subnodes:</p>
+
+<p><b>AppVPackageManagement</b> - Primarily read-only AppV package inventory data for MDM servers to query current packages.</p>
+
+<!-- INSERT screencap here -->
+
+<p>App-V attributes added. Otherwise identical to the App management CSP on MDM</p>
+
+<p><b>AppVPublishing</b> - An exec action node, which contains the AppV publishing configuration for a given MDM device (applied globally to all users for that device) or a specific MDM user.</p>
 
