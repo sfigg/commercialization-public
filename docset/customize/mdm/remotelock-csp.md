@@ -20,8 +20,11 @@ The following diagram shows the RemoteLock configuration service provider in a t
 
 ![provisioning\-csp\-remotelock](images/provisioning-csp-remotelock.png)
 
+<a href="" id="--vendor-msft-remotelock"></a>**./Vendor/MSFT/RemoteLock**  
+<p style="margin-left: 20px">Defines the root node for the RemoteLock configuration service provider.</p>
+
 <a href="" id="lock"></a>**Lock**  
-Required. The setting accepts requests to lock the device screen. The device screen will lock immediately if a PIN has been set. If no PIN is set, the lock request is ignored and the OMA DM (405) Forbidden error is returned over the management channel. All OMA DM errors are listed [here](http://go.microsoft.com/fwlink/p/?LinkId=522607) in the protocol specification. The supported operation is Exec.
+Required. The setting accepts requests to lock the device screen. The device screen will lock immediately if a PIN has been set. If no PIN is set, the lock request is ignored and the OMA DM (405) Forbidden error is returned over the management channel. All OMA DM errors are listed [here](http://go.microsoft.com/fwlink/p/?LinkId=522607) in the protocol specification. The supported operations are Get and Exec.
 
 <table>
 <colgroup>
