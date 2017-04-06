@@ -19,7 +19,7 @@ In Windows 10, the intl.cpl command line tools do not support the new settings 
 In addition, Deployment Imaging Servicing and Management (DISM) should also only be used against an offline Windows image. In Windows 10, language settings are dynamically configured based on the user’s language list. Individual settings, such as the display language, default input method, and user locale may be reset dynamically based on user preferences on a running Windows installation. Use the International PowerShell cmdlet settings to change the international settings of a running Windows installation.
 
 
-## <span id="PowerShell"></span><span id="powershell"></span><span id="POWERSHELL"></span>Configure international settings by using Winbows PowerShell
+## <span id="PowerShell"></span><span id="powershell"></span><span id="POWERSHELL"></span>Configure international settings by using Windows PowerShell
 
 
 In Windows 10, you can use the International Settings Windows PowerShell cmdlets to change the language on a running Windows installation. 

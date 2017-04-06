@@ -120,7 +120,7 @@ In this step, you'll reduce the footprint of the image by cleaning up superseded
 -   At an elevated command prompt, run the following command to reduce the size of the image file:
 
     ``` syntax
-    Dism /cleanup-image /StartComponentCleanup /ResetBase 
+    Dism /Image:C:\test\offline /cleanup-image /StartComponentCleanup /ResetBase 
     ```
 
 ### <span id="Step_6__Commit_the_Changes_and_Unmount_the_Image"></span><span id="step_6__commit_the_changes_and_unmount_the_image"></span><span id="STEP_6__COMMIT_THE_CHANGES_AND_UNMOUNT_THE_IMAGE"></span>Step 6: Commit the Changes and Unmount the Image

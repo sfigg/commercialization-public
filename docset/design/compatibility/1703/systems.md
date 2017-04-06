@@ -6399,19 +6399,8 @@ Storage devices based on the USB Attached SCSI Protocol (UASP) will utilize stre
 
 Certification for Windows Server 2016, Azure Stack and SDDC must meet the Windows Hardware Compatibility Requirements as stated in version 1607 of the documentation and use HLK version 1607 build 14393 <https://go.microsoft.com/fwlink/p/?LinkID=404112> with matching playlist <http://aka.ms/hlkplaylist> and supplemental content to generate logs and following the policies stated in the Windows Server Policy doc <https://go.microsoft.com/fwlink/p/?linkid=834831>.  Questions about the Azure Stack or SDDC program or how to submit the results for solution validation should be directed to the appropriate Microsoft contact – technical account manager or partner management contact.
 
-<<<<<<< HEAD
+
 ### System.Fundamentals.SystemUSB.USBC.USBTypeCCharging
-=======
-<a name="system.fundamentals.tpm20"></a>
-## System.Fundamentals.TPM20
-
-Certification for Windows Server 2016, Azure Stack and SDDC must meet the Windows Hardware Compatibility Requirements as stated in version 1607 of the documentation and use HLK version 1607 build 14393 <https://go.microsoft.com/fwlink/p/?LinkID=404112> with matching playlist <http://aka.ms/hlkplaylist> and supplemental content to generate logs and following the policies stated in the Windows Server Policy doc <https://go.microsoft.com/fwlink/p/?linkid=834831>.  Questions about the Azure Stack or SDDC program or how to submit the results for solution validation should be directed to the appropriate Microsoft contact – technical account manager or partner management contact.
-
-<!--No content was provided here in the original Word file.-->
-
-### System.Fundamentals.TPM20.EKCerts 
->>>>>>> master
-
 *USB Type-C Charging cases are supported*
 
 <table>
@@ -6619,7 +6608,8 @@ If the system implements UCSI, it must implement UCSI v1.0 (or later). In additi
 
 ## System.Fundamentals.TPM20
 
-<!--No content was provided here in the original Word file.-->
+Certification for Windows Server 2016, Azure Stack and SDDC must meet the Windows Hardware Compatibility Requirements as stated in version 1607 of the documentation and use HLK version 1607 build 14393 <https://go.microsoft.com/fwlink/p/?LinkID=404112> with matching playlist <http://aka.ms/hlkplaylist> and supplemental content to generate logs and following the policies stated in the Windows Server Policy doc <https://go.microsoft.com/fwlink/p/?linkid=834831>.  Questions about the Azure Stack or SDDC program or how to submit the results for solution validation should be directed to the appropriate Microsoft contact – technical account manager or partner management contact.
+
 
 ### System.Fundamentals.TPM20.PlatformConfiguration
 
@@ -6800,9 +6790,7 @@ If the system implements UCSI, it must implement UCSI v1.0 (or later). In additi
 	  <tr class="odd">
 		<td>Platform Attestation</td>
 		<td>
-		  <blockquote>
-			<p>Boot measurements recorded in the Platform Configuration Registers for all firmware code loaded after the establishment of the Core Root of Trust for Measurement.</p>
-		  </blockquote>
+		  <p>Boot measurements recorded in the Platform Configuration Registers for all firmware code loaded after the establishment of the Core Root of Trust for Measurement.</p>
 		</td>
 		<td>
 		  <strong>Mandatory</strong>
@@ -6811,9 +6799,7 @@ If the system implements UCSI, it must implement UCSI v1.0 (or later). In additi
 	  <tr class="even">
 		<td/>
 		<td>
-		  <blockquote>
-			<p>Implementation of PCRs 0 through 23 for SHA-256, dedicated to the same boot measurements as TPM 1.2.</p>
-		  </blockquote>
+          <p>Implementation of PCRs 0 through 23 for SHA-256, dedicated to the same boot measurements as TPM 1.2.</p>
 		</td>
 		<td>
 		  <strong>Mandatory</strong>
@@ -6827,9 +6813,7 @@ If the system implements UCSI, it must implement UCSI v1.0 (or later). In additi
 	  <tr class="even">
 		<td/>
 		<td>
-		  <blockquote>
-			<p>Robustness against side channel attacks including Differential Power Analysis (DPA) and Electromagnetic Emanations (EM)</p>
-		  </blockquote>
+          <p>Robustness against side channel attacks including Differential Power Analysis (DPA) and Electromagnetic Emanations (EM)</p>
 		</td>
 		<td>
 		  <strong>Recommended</strong>
@@ -8265,12 +8249,11 @@ precedence.
 
 ## System.Server.DriveIdentification
 
-<<<<<<< HEAD
+
 *Platforms must provide identification and location information for all field-replaceable storage devices.*
 =======
 <a name="system.server.bmc"></a>
 ## System.Server.BMC
->>>>>>> master
 
 **Terms: If-Implemented**
 
