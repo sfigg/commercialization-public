@@ -520,7 +520,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 </td></tr>
 <tr class="odd">
 <td style="vertical-align:top"><p>[CertificateStore CSP](certificatestore-csp.md)</p></td>
-<td style="vertical-align:top"><p>Updated in Windows 10, version 1703. Added the following nodes and settings:</p>
+<td style="vertical-align:top"><p>Added the following setting:</p>
 <ul>
 <li>My/WSTEP/Renew/RetryAfterExpiryInterval</li>
 </ul>
@@ -528,7 +528,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 </tr>
 <tr class="even">
 <td style="vertical-align:top"><p>[ClientCertificateInstall CSP](clientcertificateinstall-csp.md)</p></td>
-<td style="vertical-align:top"><p>Updated in Windows 10, version 1703. Added the following nodes and settings:</p>
+<td style="vertical-align:top"><p>Added the following setting:</p>
 <ul>
 <li>SCEP/UniqueID/Install/AADKeyIdentifierList</li>
 </ul>
@@ -536,7 +536,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 </tr>
 <tr class="odd">
 <td style="vertical-align:top"><p>[DMAcc CSP](dmacc-csp.md)</p></td>
-<td style="vertical-align:top"><p>Updated in Windows 10, version 1703. Added the following nodes and settings:</p>
+<td style="vertical-align:top"><p>Added the following setting:</p>
 <ul>
 <li>AccountUID/EXT/Microsoft/InitiateSession</li>
 </ul>
@@ -544,7 +544,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 </tr>
 <tr class="even">
 <td style="vertical-align:top"><p>[DMClient CSP](dmclient-csp.md)</p></td>
-<td style="vertical-align:top"><p>Updated in Windows 10, version 1703. Added the following nodes and settings:</p>
+<td style="vertical-align:top"><p>Added the following nodes and settings:</p>
 <ul>
 <li>HWDevID</li>
 <li>Provider/ProviderID/ManagementServerToUpgradeTo</li>
@@ -1084,7 +1084,7 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 </td></tr>
 <tr class="odd">
 <td style="vertical-align:top"><p>[CertificateStore CSP](certificatestore-csp.md)</p></td>
-<td style="vertical-align:top"><p>Updated in Windows 10, version 1703. Added the following nodes and settings:</p>
+<td style="vertical-align:top"><p>Updated in Windows 10, version 1703. Added the following setting:</p>
 <ul>
 <li>My/WSTEP/Renew/RetryAfterExpiryInterval</li>
 </ul>
@@ -1092,7 +1092,7 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 </tr>
 <tr class="even">
 <td style="vertical-align:top"><p>[ClientCertificateInstall CSP](clientcertificateinstall-csp.md)</p></td>
-<td style="vertical-align:top"><p>Updated in Windows 10, version 1703. Added the following nodes and settings:</p>
+<td style="vertical-align:top"><p>Updated in Windows 10, version 1703. Added the following setting:</p>
 <ul>
 <li>SCEP/UniqueID/Install/AADKeyIdentifierList</li>
 </ul>
@@ -1100,7 +1100,7 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 </tr>
 <tr class="odd">
 <td style="vertical-align:top"><p>[DMAcc CSP](dmacc-csp.md)</p></td>
-<td style="vertical-align:top"><p>Updated in Windows 10, version 1703. Added the following nodes and settings:</p>
+<td style="vertical-align:top"><p>Updated in Windows 10, version 1703. Added the following setting:</p>
 <ul>
 <li>AccountUID/EXT/Microsoft/InitiateSession</li>
 </ul>
