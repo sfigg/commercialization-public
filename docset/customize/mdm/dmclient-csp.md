@@ -242,7 +242,7 @@ When the server is not responding after a specified number of retries, the devic
 
 Supported operations are Get and Replace. Value type is string.
 
-<a href="" id="provider-providerid-managementservertoupgradeto"></a>**Provider/*ProviderID*/ManagementServerToUpgradeTo**
+<a href="" id="provider-providerid-managementservertoupgradeto"></a>**Provider/*ProviderID*/ManagementServerToUpgradeTo**  
 Optional. Added in Windows 10, version 1703. Specify the Discovery server URL of the MDM server to upgrade to for a Mobile Application Management (MAM) enrolled device.
 
 Supported operations are Add, Delete, Get, and Replace. Value type is string.
