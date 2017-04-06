@@ -138,7 +138,7 @@ For example, if the **DiskLevelCaching** number is set to 50 and the **DiskLevel
 
 
 <a href="" id="restrictlocalstorage"></a>**RestrictLocalStorage**  
-Restricts the user from using local storage. This node is optional. 
+Added in Windows 10, version 1703. Restricts the user from using local storage. This node is optional. 
 
 Default value is true Value type is bool. Supported operations are Get and Replace. 
 
@@ -146,7 +146,7 @@ Default value is true Value type is bool. Supported operations are Get and Repla
 > If used, this value must set before the action on the **EnableSharedPCMode** node is taken.
 
 <a href="" id="kioskmodeaumid"></a>**KioskModeAUMID**  
-Specifies the AUMID of the app to use with assigned access. This node is optional. 
+Added in Windows 10, version 1703. Specifies the AUMID of the app to use with assigned access. This node is optional. 
 
 Value type is string. Supported operations are Get and Replace.  
 
@@ -154,7 +154,7 @@ Value type is string. Supported operations are Get and Replace.
 > If used, this value must set before the action on the **EnableSharedPCMode** node is taken.
 
 <a href="" id="kioskmodeusertiledisplaytext"></a>**KioskModeUserTileDisplayText**  
-Specifies the display text for the account shown on the sign-in screen which launches the app specified by KioskModeAUMID. This node is optional. 
+Added in Windows 10, version 1703. Specifies the display text for the account shown on the sign-in screen which launches the app specified by KioskModeAUMID. This node is optional. 
 
 Value type is string. Supported operations are Get and Replace. 
 
@@ -162,12 +162,12 @@ Value type is string. Supported operations are Get and Replace.
 > If used, this value must set before the action on the **EnableSharedPCMode** node is taken.
 
 <a href="" id="inactivethreshold"></a>**InactiveThreshold**  
-Accounts will start being deleted when they have not been logged on during the specified period, given as number of days.
+Added in Windows 10, version 1703. Accounts will start being deleted when they have not been logged on during the specified period, given as number of days.
 
 Default value is 30. Value type is integer. Supported operations are Get and Replace.
 
 <a href="" id="maxpagefilesizemb"></a>**MaxPageFileSizeMB**  
-Maximum size of the paging file in MB. Applies only to systems with less than 32 GB storage and at least 3 GB of RAM. This node is optional. 
+Added in Windows 10, version 1703. Maximum size of the paging file in MB. Applies only to systems with less than 32 GB storage and at least 3 GB of RAM. This node is optional. 
 
 > [!Note]  
 > If used, this value must set before the action on the **EnableSharedPCMode** node is taken.
