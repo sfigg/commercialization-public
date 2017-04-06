@@ -137,7 +137,7 @@ The default value is 50.
 For example, if the **DiskLevelCaching** number is set to 50 and the **DiskLevelDeletion** number is set to 25 (both default values). Accounts will be cached while the free disk space is above 25%. When the free disk space is less than 25% (the deletion number) during a maintenance period, accounts will be deleted (oldest last used first) until the free disk space is above 50% (the caching number). Accounts will be deleted immediately at sign off of an account if free space is under the deletion threshold and disk space is very low, regardless whether the PC is actively in use or not.
 
 
-<a href="" id="restrictlocalstorage"></a>**RestrictLocalStorage**
+<a href="" id="restrictlocalstorage"></a>**RestrictLocalStorage**  
 Restricts the user from using local storage. This node is optional. 
 
 Default value is true Value type is bool. Supported operations are Get and Replace. 
@@ -145,7 +145,7 @@ Default value is true Value type is bool. Supported operations are Get and Repla
 > [!Note]  
 > If used, this value must set before the action on the **EnableSharedPCMode** node is taken.
 
-<a href="" id="kioskmodeaumid"></a>**KioskModeAUMID**
+<a href="" id="kioskmodeaumid"></a>**KioskModeAUMID**  
 Specifies the AUMID of the app to use with assigned access. This node is optional. 
 
 Value type is string. Supported operations are Get and Replace.  
@@ -153,7 +153,7 @@ Value type is string. Supported operations are Get and Replace.
 > [!Note]  
 > If used, this value must set before the action on the **EnableSharedPCMode** node is taken.
 
-<a href="" id="kioskmodeusertiledisplaytext"></a>**KioskModeUserTileDisplayText**
+<a href="" id="kioskmodeusertiledisplaytext"></a>**KioskModeUserTileDisplayText**  
 Specifies the display text for the account shown on the sign-in screen which launches the app specified by KioskModeAUMID. This node is optional. 
 
 Value type is string. Supported operations are Get and Replace. 
@@ -161,12 +161,12 @@ Value type is string. Supported operations are Get and Replace.
 > [!Note]  
 > If used, this value must set before the action on the **EnableSharedPCMode** node is taken.
 
-<a href="" id="inactivethreshold"></a>**InactiveThreshold**
+<a href="" id="inactivethreshold"></a>**InactiveThreshold**  
 Accounts will start being deleted when they have not been logged on during the specified period, given as number of days.
 
 Default value is 30. Value type is integer. Supported operations are Get and Replace.
 
-<a href="" id="maxpagefilesizemb"></a>**MaxPageFileSizeMB**
+<a href="" id="maxpagefilesizemb"></a>**MaxPageFileSizeMB**  
 Maximum size of the paging file in MB. Applies only to systems with less than 32 GB storage and at least 3 GB of RAM. This node is optional. 
 
 > [!Note]  
