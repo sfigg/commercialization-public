@@ -750,6 +750,13 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <td style="vertical-align:top">[DMSessionActions CSP](dmsessionactions-csp.md)</td>
 <td style="vertical-align:top"><p>Added new CSP.</p>
 </td></tr>
+<tr class="odd">
+<td style="vertical-align:top">[RemoteLock CSP](remotelock-csp.md)</td>
+<td style="vertical-align:top"><p>Added following setting:</p>
+<ul>
+<li>LockAndRecoverPIN</li>
+</ul>
+</td></tr>
 </tbody>
 </table> 
 
@@ -1053,6 +1060,13 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <tr class="even">
 <td style="vertical-align:top">[DMSessionActions CSP](dmsessionactions-csp.md)</td>
 <td style="vertical-align:top"><p>Added new CSP for Windows 10, version 1703.</p>
+</td></tr>
+<tr class="odd">
+<td style="vertical-align:top">[RemoteLock CSP](remotelock-csp.md)</td>
+<td style="vertical-align:top"><p>Added following setting:</p>
+<ul>
+<li>LockAndRecoverPIN</li>
+</ul>
 </td></tr>
 </tbody>
 </table>
