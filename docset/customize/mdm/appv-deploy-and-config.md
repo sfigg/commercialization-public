@@ -1,12 +1,12 @@
 ---
-title: App-V App deployment and configuration via MDM
-description: App-V App deployment and configuration via MDM
+title: App-V app deployment and configuration via MDM
+description: App-V app deployment and configuration via MDM
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ---
 
-# App-V App deployment and configuration via MDM
+# App-V app deployment and configuration via MDM
 
 ## Executive Summary
 
@@ -24,11 +24,10 @@ MSHAttr:
 
 <p>The node structure for the EnterpriseAppVManagement CSP</p>
 
-<p>(./User/Vendor/MSFT/EnterpriseAppVManagement) contains the following subnodes:</p>
+<p>(./User/Vendor/MSFT/EnterpriseAppVManagement) contains the following sub-nodes:</p>
 
 <p><b>AppVPackageManagement</b> - Primarily read-only AppV package inventory data for MDM servers to query current packages.</p>
 
-<!-- INSERT screencap here -->
 - EnterpriseAppVManagement
   - AppVPackageManagement
     - [EnterpriseID]
@@ -50,7 +49,6 @@ MSHAttr:
 
 <p><b>AppVPublishing</b> - An exec action node, which contains the AppV publishing configuration for a given MDM device (applied globally to all users for that device) or a specific MDM user.</p>
 
-<!-- INSERT screencap here -->
 - EnterpriseAppVManagement
   - AppVPackageManagement
   - AppVPublishing
@@ -65,7 +63,6 @@ MSHAttr:
 
 <p><b>AppVDynamicPolicy</b> - A read/write node, which contains the AppV dynamic configuration for a given MDM device (applied globally to all users for that device) or a specific MDM user.</p>
 
-<!-- INSERT screencap here -->
 - EnterpriseAppVManagement
   - AppVPackageManagement
   - AppVPublishing
@@ -77,7 +74,7 @@ MSHAttr:
 
 <p><b>Sync command</b> (<a href=" https://msdn.microsoft.com/enus/library/mt739986.aspx">App-V Sync protocol reference</a>): The examples in the scenarios section below demonstrate how the publishing document should be crafted to successfully publish packages, dynamic policies and connection groups.</p>
 
-## Scenarios addresed in AppV MDM functionality
+## Scenarios addressed in AppV MDM functionality
 
 <p>All App-V group policies will be reflected by having a corresponding CSP that can be set via the PolicyManager CSP.  The CSPs match all on-premise App-V configuration capabilities.</p>
 
@@ -171,7 +168,7 @@ MSHAttr:
 
 #### SyncML with package (with dynamic configuration policy) published for a device (global to all users on that device)
 
-<p>The following SyncML documents a basic example on publishing a package globally with a policy to add two shortcuts fot the package, on an MDM enrolled device:</p>
+<p>The following SyncML documents a basic example on publishing a package globally with a policy which adds two shortcuts for the package, on an MDM enrolled device:</p>
 
 ``` syntax
 <Replace>
@@ -262,7 +259,7 @@ MSHAttr:
 
 <p>*PackageUrl can be a UNC or HTTP/HTTPS endpoint.</p>
 
-#### SyncML with package (with depolyment user config) published for a specific user
+#### SyncML with package (using user config deployment) published for a specific user
 
 <p>The following SyncML documents publishing a package for a specific MDM user:</p>
 

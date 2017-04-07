@@ -9,6 +9,7 @@
 ## [Win32 and Centennial app policy configuration](win32-and-centennial-app-policy-configuration.md)
 ## [Implement server-side support for mobile application management on Windows](implement-server-side-mobile-application-management.md)
 ## [Diagnose MDM failures in Windows 10](diagnose-mdm-failures-in-windows-10.md)
+## [App-V app deployment and configuration via MDM](appv-deploy-and-config.md)
 ## [Azure Active Directory integration with MDM](azure-active-directory-integration-with-mdm.md)
 ### [Add an Azure AD tenant and Azure AD subscription](add-an-azure-ad-tenant-and-azure-ad-subscription.md)
 ### [Register your free Azure Active Directory subscription](register-your-free-azure-active-directory-subscription.md)
