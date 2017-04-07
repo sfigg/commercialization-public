@@ -751,6 +751,18 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <td style="vertical-align:top"><p>Added new CSP.</p>
 </td></tr>
 <tr class="odd">
+<td style="vertical-align:top">[SharedPC CSP](dmsessionactions-csp.md)</td>
+<td style="vertical-align:top"><p>Added new settings in Windows 10, version 1703.</p>
+<ul>
+<li>RestrictLocalStorage</li>
+<li>KioskModeAUMID</li>
+<li>KioskModeUserTileDisplayText</li>
+<li>InactiveThreshold</li>
+<li>MaxPageFileSizeMB</li>
+</ul>
+<p>The default value for SetEduPolicies changed to false. The default value for SleepTimeout changed to 300.</p>
+</td></tr>
+<tr class="even">
 <td style="vertical-align:top">[RemoteLock CSP](remotelock-csp.md)</td>
 <td style="vertical-align:top"><p>Added following setting:</p>
 <ul>
@@ -1058,10 +1070,22 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <p>DeviceLock/EnforceLockScreenAndLogonImage is not supported in Windows 10 Pro edition.</p>
 </td></tr>
 <tr class="even">
-<td style="vertical-align:top">[DMSessionActions CSP](dmsessionactions-csp.md)</td>
+<td style="vertical-align:top">[DMSessionActions CSP](sharedpc-csp.md)</td>
 <td style="vertical-align:top"><p>Added new CSP for Windows 10, version 1703.</p>
 </td></tr>
 <tr class="odd">
+<td style="vertical-align:top">[SharedPC CSP](dmsessionactions-csp.md)</td>
+<td style="vertical-align:top"><p>Added new settings in Windows 10, version 1703.</p>
+<ul>
+<li>RestrictLocalStorage</li>
+<li>KioskModeAUMID</li>
+<li>KioskModeUserTileDisplayText</li>
+<li>InactiveThreshold</li>
+<li>MaxPageFileSizeMB</li>
+</ul>
+<p>The default value for SetEduPolicies changed to false. The default value for SleepTimeout changed to 300.</p>
+</td></tr>
+<tr class="even">
 <td style="vertical-align:top">[RemoteLock CSP](remotelock-csp.md)</td>
 <td style="vertical-align:top"><p>Added following setting:</p>
 <ul>
