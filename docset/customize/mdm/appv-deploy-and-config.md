@@ -33,7 +33,7 @@ MSHAttr:
   - AppVPackageManagement
     - [EnterpriseID]
 	  - [PackageFamilyName]
-	    -[PackageFullName]
+	    - [PackageFullName]
 		  - Name
 		  - Version
 		  - Publisher
@@ -43,22 +43,39 @@ MSHAttr:
 		  - AppVPackageID
 		  - AppVVersionId
 		  - AppVPackageUri
-  * AppVPublishing
-  * AppVDynamicPolicy
+  - AppVPublishing
+  - AppVDynamicPolicy
 
 <p>App-V attributes added. Otherwise identical to the App management CSP on MDM</p>
 
 <p><b>AppVPublishing</b> - An exec action node, which contains the AppV publishing configuration for a given MDM device (applied globally to all users for that device) or a specific MDM user.</p>
 
 <!-- INSERT screencap here -->
+- EnterpriseAppVManagement
+  - AppVPackageManagement
+  - AppVPublishing
+    - LastSync
+	  - LastError
+	  - LastErrorDescription
+	  - SyncStatusDescription
+	  - SyncProgress
+	- Sync
+	  - PublishXML
+  - AppVDynamicPolicy
 
 <p><b>AppVDynamicPolicy</b> - A read/write node, which contains the AppV dynamic configuration for a given MDM device (applied globally to all users for that device) or a specific MDM user.
 
 <!-- INSERT screencap here -->
+- EnterpriseAppVManagement
+  - AppVPackageManagement
+  - AppVPublishing
+  - AppVDynamicPolicy
+    - [ConfigurationId]
+	  - Policy
 
-<p><b>Dynamic Policy examples are documented in the 'Dynamic configuring processing' here:</b> <!-- INSERT link here --></p>
+<p><b>Dynamic Policy examples are documented here:</b> <a href="https://technet.microsoft.com/en-us/itpro/windows/manage/appv-application-publishingand-client-interaction#bkmk-dynamic-config">Dynamic configuration processing</a></p>
 
-<p><b>Sync command - App-V Sync protocol reference:</b> <!-- INSERT link here -->.  The examples in the scenarios section below demonstrate how the publishing document should be crafted to successfully publish packages, dynamic policies and connection groups.</p>
+<p><b>Sync command</b> (<a href=" https://msdn.microsoft.com/enus/library/mt739986.aspx">App-V Sync protocol reference</a>): The examples in the scenarios section below demonstrate how the publishing document should be crafted to successfully publish packages, dynamic policies and connection groups.</p>
 
 ## Scenarios addresed in AppV MDM functionality
 
@@ -108,7 +125,7 @@ MSHAttr:
 </Replace> 
 ```
 
-<p>Complete list of AppV policies can be found at: <!-- INSERT link here --></p>
+<p>Complete list of AppV policies can be found at: <a href="https://msdn.microsoft.com/enus/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider">Policy CSP</a></p>
 
 #### SyncML with package published for a device (global to all users for that device)
 
