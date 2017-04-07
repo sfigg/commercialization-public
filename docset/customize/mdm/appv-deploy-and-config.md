@@ -56,7 +56,7 @@ MSHAttr:
 
 <p>This is a basic operation to enable App-V on the device.</p>
 
-<pre>
+``` syntax
 <Replace>
 	<CmdID>$CmdID$</CmdID>
 	<Item>
@@ -70,13 +70,13 @@ MSHAttr:
 		<Data>&lt;enabled/&gt;</Data>
 	</Item>
 </Replace>
-</pre>
+```
 
 #### Configure App-V Client
 
 <p>This is a basic operation to allow package scripts to run during package operations (publish, running, and unpublish).  Allowing package scripts will assist in package deployments (add, publishing of App-V apps).</p>
 
-<pre>
+``` syntax
 <Replace> 
 	<CmdID>$CmdID$</CmdID> 
 	<Item> 
@@ -90,7 +90,7 @@ MSHAttr:
 		<Data>&lt;enabled/&gt;</Data> 
 	</Item> 
 </Replace> 
-</pre>
+```
 
 <p>Complete list of AppV policies can be found at: <!-- INSERT link here --></p>
 
@@ -98,7 +98,7 @@ MSHAttr:
 
 <p>The following SyncML documents a basic example on publishing a package globally on an MDM enrolled device for all device users:</p>
 
-<pre>
+``` syntax
 <Replace>
 	<CmdID>$CmdID$</CmdID>
 	<Item>
@@ -132,7 +132,7 @@ MSHAttr:
 		</Data>
 	</Item>
 </Exec> 
-</pre>
+```
 
 <p>*PackageUrl can be a UNC or HTTP/HTTPS endpoint.</p>
 
@@ -140,7 +140,7 @@ MSHAttr:
 
 <p>The following SyncML documents a basic example on publishing a package globally with a policy to add two shortcuts fot the package, on an MDM enrolled device:</p>
 
-<pre>
+``` syntax
 <Replace>
 	<CmdID>$CmdID$</CmdID>
 	<Item>
@@ -225,7 +225,7 @@ MSHAttr:
 		</Data>
 	</Item>
 </Exec>
-</pre>
+```
 
 <p>*PackageUrl can be a UNC or HTTP/HTTPS endpoint.</p>
 
@@ -233,7 +233,7 @@ MSHAttr:
 
 <p>The following SyncML documents publishing a package for a specific MDM user:</p>
 
-<pre>
+``` syntax
 <Replace>
 	<CmdID>$CmdID$</CmdID>
 	<Item>
@@ -267,7 +267,7 @@ MSHAttr:
 		</Data>
 	</Item>
 </Exec> 
-</pre>	
+```	
 
 #### SyncML for publishing mixed-mode connection group containing global and user-published packages
 
@@ -276,7 +276,7 @@ MSHAttr:
 > [!Note]
 > The user connection group has the user only package as optional in this example, which implies users without the optional package can continue to launch the global package within the same connection group.
 
-<pre>
+``` syntax
 <Replace>
 	<CmdID>$CmdID$</CmdID>
 	<Item>
@@ -347,13 +347,13 @@ MSHAttr:
 		</Data>
 	</Item>
 </Exec> 
-</pre>
+```
 
 #### Unpublish example SyncML for all global packages
 
 <p>The following SyncML demonstrates unpublishing all global packages on the device, by sending an empty package and connection group list in the SyncML.</p>
 
-<pre>
+``` syntax
 <Replace>
 	<CmdID>$CmdID$</CmdID>
 	<Item>
@@ -383,13 +383,13 @@ MSHAttr:
 		</Data>
 	</Item>
 </Exec>
-</pre>
+```
 
 #### Query packages on a device
 
 <p>The following two SyncML commands return all global, and user-published packages on the device.</p>
 
-<pre>
+``` syntax
 <Get>
 	<CmdID>$CmdID$</CmdID>
 	<Item>
@@ -398,9 +398,9 @@ MSHAttr:
 		</Target>
 	</Item>
 </Get>
-</pre>
+```
 
-<pre>
+``` syntax
 <Get>
 	<CmdID>$CmdID$</CmdID>
 	<Item>
@@ -409,4 +409,4 @@ MSHAttr:
 		</Target>
 	</Item>
 </Get> 
-</pre>
+```
