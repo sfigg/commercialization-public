@@ -26,8 +26,8 @@ The following diagram shows the NodeCache configuration service provider in tree
 
 ![nodecache csp](images/provisioning-csp-nodecache.png)
 
-<a href="" id="--device-vendor-msft"></a>**./Device/Vendor/MSFT**  
-Required. The root node for the NodeCache object. Supported operation is Get. This configuration service provider is used for enterprise device management only. This is a predefined MIME type to identify this managed object in OMA DM syntax. Starting in Windows 10, version 1607 the value is com.microsoft/1.0/MDM/NodeCache.
+<a href="" id="--device-vendor-msft"></a>**./Device/Vendor/MSFT and ./User/Vendor/MSFT**  
+Required. The root node for the NodeCache object. Supported operation is Get. This configuration service provider is used for enterprise device management only. This is a predefined MIME type to identify this managed object in OMA DM syntax. Starting in Windows 10, version 1607 the value is com.microsoft/\<version\>/MDM/NodeCache.
 
 <a href="" id="providerid"></a>***ProviderID***  
 Optional. Group settings per DM server. Each group of settings is distinguished by the server’s Provider ID. It should be the same DM server **PROVIDER-ID** value that was supplied through the [w7 APPLICATION configuration service provider](w7-application-csp.md) XML during the enrollment process. Only one enterprise management server is supported. That is, there should be only one *ProviderID* node under **NodeCache**. Scope is dynamic.
@@ -43,6 +43,11 @@ Data type is string. Supported operations are Get, Add, and Replace.
 Optional. List of nodes whose values do not match their expected values as specified in **/*NodeID*/ExpectedValue**. Scope is dynamic.
 
 Data type is string. Supported operation is Get.
+
+<a href="" id="providerid-changednodesdata"></a>***ProviderID*/ChangedNodesData**  
+Added in Windows 10, version 1703. Optional. XML containing nodes whose values do not match their expected values as specified in /NodeID/ExpectedValue.
+
+Suppported operation is Get.
 
 <a href="" id="providerid-nodes"></a>***ProviderID*/Nodes**  
 Required. Root node for cached nodes. Scope is dynamic.
@@ -80,6 +85,11 @@ Here's an example for setting the ExpectedValue to nonexistent.
    </Item>
 </Add>
 ```
+
+<a href="" id="-nodeid-autosetexpectedvalue"></a>**/*NodeID*/AutoSetExpectedValue**  
+Added in Windows 10, version 1703. Required. This automatically sets the value on the device to match the actual value of the node. The node is specified in NodeURI.
+
+Supported operations are Add, Get, and Delete.
 
 ## A typical DM session with the NodeCache configuration service provider
 
