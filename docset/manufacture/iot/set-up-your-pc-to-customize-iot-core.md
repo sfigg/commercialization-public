@@ -36,7 +36,7 @@ Here's how we'll refer to them:
 
 **Install the following tools on your technician PC**
 
-1.  [Windows Assessment and Deployment Kit (Windows ADK)](http://go.microsoft.com/fwlink/?LinkId=526803) with the default features installed. You'll use these tools to create images and provisioning packages.
+1.  [Windows Assessment and Deployment Kit (Windows ADK)](http://go.microsoft.com/fwlink/?LinkId=526803) with the default features. You'll use these tools to create images and provisioning packages.
 
 2.  [Windows Driver Kit (WDK) 10](http://developer.microsoft.com/windows/hardware/windows-driver-kit)
 
