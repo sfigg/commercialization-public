@@ -21,7 +21,7 @@ MSHAttr:
 <!-- INSERT diagram here -->
 ![AppV_Config_and_Deploy](images/rs2-appv-config-and-deploy.png)
 
-<p align="center">Fig 1. App-V deployment with Enterprise MDM Server</p>
+<p align="center"><b>Fig 1.</b> App-V deployment with Enterprise MDM Server</p>
 
 <p>The node structure for the EnterpriseAppVManagement CSP</p>
 
