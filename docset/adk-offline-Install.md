@@ -1,3 +1,11 @@
+---
+author: themar
+Description: Instructions on how to build an offline installer for the Windows ADK
+MSHAttr: 'PreferredLib:/library/windows/hardware'
+title: Install the ADK offline
+---
+
+
 # Install the Windows ADK offline
 
 To install the Windows ADK on a PC that does not have Internet access, first download the installer files on a PC that has internet access. Next, copy the installer files to a location that is accessible to the offline computer. Then run ADKSetup.exe using either the GUI or the command line.

@@ -762,6 +762,13 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 </ul>
 <p>The default value for SetEduPolicies changed to false. The default value for SleepTimeout changed to 300.</p>
 </td></tr>
+<tr class="even">
+<td style="vertical-align:top">[RemoteLock CSP](remotelock-csp.md)</td>
+<td style="vertical-align:top"><p>Added following setting:</p>
+<ul>
+<li>LockAndRecoverPIN</li>
+</ul>
+</td></tr>
 </tbody>
 </table> 
 
@@ -1077,6 +1084,13 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>MaxPageFileSizeMB</li>
 </ul>
 <p>The default value for SetEduPolicies changed to false. The default value for SleepTimeout changed to 300.</p>
+</td></tr>
+<tr class="even">
+<td style="vertical-align:top">[RemoteLock CSP](remotelock-csp.md)</td>
+<td style="vertical-align:top"><p>Added following setting:</p>
+<ul>
+<li>LockAndRecoverPIN</li>
+</ul>
 </td></tr>
 </tbody>
 </table>
