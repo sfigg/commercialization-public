@@ -18,7 +18,6 @@ MSHAttr:
 
 <p>Please note that these are preliminary architecture diagrams and examples - actual schemas may vary upon release.</p>
 
-<!-- INSERT diagram here -->
 ![AppV_Config_and_Deploy](images/rs2-appv-config-and-deploy.png)
 
 <p align="center"><b>Fig 1.</b> App-V deployment with Enterprise MDM Server</p>
@@ -30,6 +29,22 @@ MSHAttr:
 <p><b>AppVPackageManagement</b> - Primarily read-only AppV package inventory data for MDM servers to query current packages.</p>
 
 <!-- INSERT screencap here -->
+- EnterpriseAppVManagement
+  - AppVPackageManagement
+    - [EnterpriseID]
+	  - [PackageFamilyName]
+	    -[PackageFullName]
+		  - Name
+		  - Version
+		  - Publisher
+		  - InstallLocation
+		  - InstallDate
+		  - Users
+		  - AppVPackageID
+		  - AppVVersionId
+		  - AppVPackageUri
+  * AppVPublishing
+  * AppVDynamicPolicy
 
 <p>App-V attributes added. Otherwise identical to the App management CSP on MDM</p>
 
@@ -43,7 +58,7 @@ MSHAttr:
 
 <p><b>Dynamic Policy examples are documented in the 'Dynamic configuring processing' here:</b> <!-- INSERT link here --></p>
 
-<p><b>Sycn command - App-V Sync protocol reference:</b> <!-- INSERT link here -->.  The examples in the scenarios section below demonstrate how the Publishing document should be crafted to successfully publish packages, dynamic policies and connection groups.</p>
+<p><b>Sync command - App-V Sync protocol reference:</b> <!-- INSERT link here -->.  The examples in the scenarios section below demonstrate how the publishing document should be crafted to successfully publish packages, dynamic policies and connection groups.</p>
 
 ## Scenarios addresed in AppV MDM functionality
 
