@@ -31,11 +31,11 @@ Setting this value to True triggers the action to configure a device to Shared P
 The default value is False.
 
 <a href="" id="setedupolicies"></a>**SetEduPolicies**  
-Optional. A boolean value that specifies that the policies defined for an education environment should be set when configuring SharedPC mode. This node is independent of the EnableSharedPCMode.
+A boolean value that specifies whether the policies for education environment are enabled. Setting this value to true triggers the action to configure a device as education environment.
 
- The supported operations are Get and Replace.
+The supported operations are Get and Replace.
 
-The default value changed to false in Windows 10, version 1703. The default value is true in Windows 10, version 1607.
+The default value changed to false in Windows 10, version 1703. This node needs to be configured independent of EnableSharedPCMode. In Windows 10, version 1607, the default value is true and education environment is automatically configured when SharedPC mode is configured.
 
 <a href="" id="setpowerpolicies"></a>**SetPowerPolicies**  
 Optional. A boolean value that specifies that the power policies should be set when configuring SharedPC mode.
@@ -109,10 +109,16 @@ Configures when accounts are deleted.
 
 The supported operations are Get and Replace.
 
-The following list shows the supported values:
+For Windows 10, version 1607, here is the list shows the supported values:
 
 -   0 - Delete immediately.
 -   1 (default) - Delete at disk space threshold.
+
+For Windows 10, version 1703, here is the list of supported values:  
+
+- 0 - Delete immediately
+- 1 - Delete at disk space threshold
+- 2 - Delete at disk space threshold and inactive threshold
 
 <a href="" id="diskleveldeletion"></a>**DiskLevelDeletion**  
 Sets the percentage of disk space remaining on a PC before cached accounts will be deleted to free disk space. Accounts that have been inactive the longest will be deleted first.
