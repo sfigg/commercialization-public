@@ -63,7 +63,7 @@ MSHAttr:
 	  - PublishXML
   - AppVDynamicPolicy
 
-<p><b>AppVDynamicPolicy</b> - A read/write node, which contains the AppV dynamic configuration for a given MDM device (applied globally to all users for that device) or a specific MDM user.
+<p><b>AppVDynamicPolicy</b> - A read/write node, which contains the AppV dynamic configuration for a given MDM device (applied globally to all users for that device) or a specific MDM user.</p>
 
 <!-- INSERT screencap here -->
 - EnterpriseAppVManagement
