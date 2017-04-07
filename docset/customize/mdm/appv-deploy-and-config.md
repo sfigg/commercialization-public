@@ -19,6 +19,7 @@ MSHAttr:
 <p>Please note that these are preliminary architecture diagrams and examples - actual schemas may vary upon release.</p>
 
 <!-- INSERT diagram here -->
+![AppV_Config_and_Deploy](images/rs2-appv-config-and-deploy.png)
 
 <p align="center">Fig 1. App-V deployment with Enterprise MDM Server</p>
 
