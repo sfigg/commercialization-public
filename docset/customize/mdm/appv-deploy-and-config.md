@@ -73,7 +73,7 @@ MSHAttr:
     - [ConfigurationId]
 	  - Policy
 
-<p><b>Dynamic Policy examples are documented here:</b> <a href="https://technet.microsoft.com/en-us/itpro/windows/manage/appv-application-publishingand-client-interaction#bkmk-dynamic-config">Dynamic configuration processing</a></p>
+<p><b>Dynamic Policy examples are documented here:</b>&nbsp<a href="https://technet.microsoft.com/en-us/itpro/windows/manage/appv-application-publishing-and-client-interaction#bkmk-dynamic-config">Dynamic configuration processing</a></p>
 
 <p><b>Sync command</b> (<a href=" https://msdn.microsoft.com/enus/library/mt739986.aspx">App-V Sync protocol reference</a>): The examples in the scenarios section below demonstrate how the publishing document should be crafted to successfully publish packages, dynamic policies and connection groups.</p>
 
@@ -125,7 +125,7 @@ MSHAttr:
 </Replace> 
 ```
 
-<p>Complete list of AppV policies can be found at: <a href="https://msdn.microsoft.com/enus/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider">Policy CSP</a></p>
+<p>Complete list of AppV policies can be found here: <a href="https://msdn.microsoft.com/en-us/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider">Policy CSP</a></p>
 
 #### SyncML with package published for a device (global to all users for that device)
 
