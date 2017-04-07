@@ -61,7 +61,7 @@ Required. The setting accepts requests to lock the device screen. The device scr
  
 
 <a href="" id="lockandresetpin"></a>**LockAndResetPIN**  
-This setting can be used to lock and reset the PIN on the device. It is used in conjunction with the NewPINValue node. After the **Exec** operation is called successfully on this node, the previous PIN will no longer work and cannot be recoverable. The supported operation is Exec.
+This setting can be used to lock and reset the PIN on the device. It is used in conjunction with the NewPINValue node. After the **Exec** operation is called successfully on this node, the previous PIN will no longer work and cannot be recovered. The supported operation is Exec.
 
 This node will return the following status. All OMA DM errors are listed [here](http://go.microsoft.com/fwlink/p/?LinkId=522607) in the protocol specification.
 
@@ -93,19 +93,19 @@ This node will return the following status. All OMA DM errors are listed [here](
 </table>
 
 <a href="" id="lockandrecoverpin"></a>**LockAndRecoverPIN**  
-Added in Windows 10, version 1703. The behavior of this setting is similar to LockAndResetPIN, but it performs a non-destructive PIN reset; i.e. it allows you to keep existing keys associated with your PIN. It does not actually recover your existing PIN. The client will generate a new PIN and send it to the MDM server.
+Added in Windows 10, version 1703. This setting performs a similar function to the LockAndResetPIN node. With LockAndResetPIN any Windows Hello keys associated with the PIN gets deleted, but with LockAndRecoverPIN those keys are saved. After the Exec operation is called successfully on this setting, the new PIN can be retrieved from the NewPINValue setting. The previous PIN will no longer work.
 
-Executing this node requires a ticket from our PIN recovery service, so the MDM must be enlightened about that service to support it.
+Executing this node requires a ticket from the Microsoft credential reset service. Additionally, the execution of this setting is only supported when the [EnablePinRecovery](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/customize/mdm/passportforwork-csp#tenantid-policies-enablepinrecovery) policy is set on the client.
 
 
 <a href="" id="newpinvalue"></a>**NewPINValue**  
-This setting contains the PIN after Exec has been called on /RemoteLock/LockAndResetPIN. If LockAndResetPIN has never been called, the value will be null. If Get is called on this node after a successful Exec call on /RemoteLock/LockAndResetPIN, then the new PIN will be provided. If another Get command is called on this node, the value will be null. If you need to reset the PIN again, then another LockAndResetPIN Exec can be communicated to the device to generate a new PIN. The PIN value will conform to the minimum PIN complexity requirements of the merged policies that are set on the device. If no PIN policy has been set on the device, the device will generate an 8-digit numeric PIN and set the device to have this PIN.
+This setting contains the PIN after Exec has been called on /RemoteLock/LockAndResetPIN or /RemoteLock/LockAndRecoverPin. If LockAndResetPIN or LockAndResetPIN has never been called, the value will be null. If Get is called on this node after a successful Exec call on /RemoteLock/LockAndResetPIN or /RemoteLock/LockAndRecoverPin, then the new PIN will be provided. If another Get command is called on this node, the value will be null. If you need to reset the PIN again, then another LockAndResetPIN Exec can be communicated to the device to generate a new PIN. The PIN value will conform to the minimum PIN complexity requirements of the merged policies that are set on the device. If no PIN policy has been set on the device, the generated PIN will conform to the default policy of the device.
 
 The data type returned is a string.
 
 The supported operation is Get.
 
-A Get operation on this node must follow an Exec operation on the /RemoteLock/LockAndResetPIN node in the proper order and in the same SyncML message. The Sequence tag can be used to guarantee the order in which commands are processed.
+A Get operation on this node must follow an Exec operation on the /RemoteLock/LockAndResetPIN or /RemoteLock/LockAndRecoverPin node in the proper order and in the same SyncML message. The Sequence tag can be used to guarantee the order in which commands are processed.
 
 ## Examples
 
@@ -147,10 +147,6 @@ Initiate a remote lock and PIN reset of the device. To successfully retrieve the
 </Sequence>
 ```
 
-> [!Note]  
-> If you send a remote lock or remote lock and PIN reset command to a device that is already locked, the device will reboot.
-
- 
 
 ## Related topics
 
