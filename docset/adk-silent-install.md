@@ -1,3 +1,10 @@
+---
+author: themar
+Description: Instructions on how to install the ADK silently
+MSHAttr: 'PreferredLib:/library/windows/hardware'
+title: Windows ADK silent install
+---
+
 # Windows ADK silent install
 
 If you have a scenario where you need to silently install the Windows ADK, you can install using the command line.

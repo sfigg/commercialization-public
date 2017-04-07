@@ -12,16 +12,19 @@ ms.assetid: c7889331-5aa3-4efe-9a7e-20d3f433659b
 
 The RemoteLock CSP supports the ability to lock a device that has a PIN set on the device or reset the PIN on a device that may or may not have a PIN set.
 
-> **Note**   The RemoteLock CSP is only supported in Windows 10 Mobile.
+> [!Note]  
+> The RemoteLock CSP is only supported in Windows 10 Mobile.
 
  
-
 The following diagram shows the RemoteLock configuration service provider in a tree format.
 
 ![provisioning\-csp\-remotelock](images/provisioning-csp-remotelock.png)
 
+<a href="" id="--vendor-msft-remotelock"></a>**./Vendor/MSFT/RemoteLock**  
+<p style="margin-left: 20px">Defines the root node for the RemoteLock configuration service provider.</p>
+
 <a href="" id="lock"></a>**Lock**  
-Required. The node accepts requests to lock the device screen. The device screen will lock immediately if a PIN has been set. If no PIN is set, the lock request is ignored and the OMA DM (405) Forbidden error is returned over the management channel. All OMA DM errors are listed [here](http://go.microsoft.com/fwlink/p/?LinkId=522607) in the protocol specification. The supported operation is Exec.
+Required. The setting accepts requests to lock the device screen. The device screen will lock immediately if a PIN has been set. If no PIN is set, the lock request is ignored and the OMA DM (405) Forbidden error is returned over the management channel. All OMA DM errors are listed [here](http://go.microsoft.com/fwlink/p/?LinkId=522607) in the protocol specification. The supported operations are Get and Exec.
 
 <table>
 <colgroup>
@@ -58,7 +61,7 @@ Required. The node accepts requests to lock the device screen. The device screen
  
 
 <a href="" id="lockandresetpin"></a>**LockAndResetPIN**  
-This node can be used to lock and reset the PIN on the device. It is used in conjunction with the NewPINValue node. After the **Exec** operation is called successfully on this node, the previous PIN will no longer work and cannot be recoverable. The supported operation is Exec.
+This setting can be used to lock and reset the PIN on the device. It is used in conjunction with the NewPINValue node. After the **Exec** operation is called successfully on this node, the previous PIN will no longer work and cannot be recoverable. The supported operation is Exec.
 
 This node will return the following status. All OMA DM errors are listed [here](http://go.microsoft.com/fwlink/p/?LinkId=522607) in the protocol specification.
 
@@ -89,10 +92,14 @@ This node will return the following status. All OMA DM errors are listed [here](
 </tbody>
 </table>
 
- 
+<a href="" id="lockandrecoverpin"></a>**LockAndRecoverPIN**  
+Added in Windows 10, version 1703. The behavior of this setting is similar to LockAndResetPIN, but it performs a non-destructive PIN reset; i.e. it allows you to keep existing keys associated with your PIN. It does not actually recover your existing PIN. The client will generate a new PIN and send it to the MDM server.
+
+Executing this node requires a ticket from our PIN recovery service, so the MDM must be enlightened about that service to support it.
+
 
 <a href="" id="newpinvalue"></a>**NewPINValue**  
-This node contains the PIN after Exec has been called on /RemoteLock/LockAndResetPIN. If LockAndResetPIN has never been called, the value will be null. If Get is called on this node after a successful Exec call on /RemoteLock/LockAndResetPIN, then the new PIN will be provided. If another Get command is called on this node, the value will be null. If you need to reset the PIN again, then another LockAndResetPIN Exec can be communicated to the device to generate a new PIN. The PIN value will conform to the minimum PIN complexity requirements of the merged policies that are set on the device. If no PIN policy has been set on the device, the device will generate an 8-digit numeric PIN and set the device to have this PIN.
+This setting contains the PIN after Exec has been called on /RemoteLock/LockAndResetPIN. If LockAndResetPIN has never been called, the value will be null. If Get is called on this node after a successful Exec call on /RemoteLock/LockAndResetPIN, then the new PIN will be provided. If another Get command is called on this node, the value will be null. If you need to reset the PIN again, then another LockAndResetPIN Exec can be communicated to the device to generate a new PIN. The PIN value will conform to the minimum PIN complexity requirements of the merged policies that are set on the device. If no PIN policy has been set on the device, the device will generate an 8-digit numeric PIN and set the device to have this PIN.
 
 The data type returned is a string.
 
@@ -140,7 +147,8 @@ Initiate a remote lock and PIN reset of the device. To successfully retrieve the
 </Sequence>
 ```
 
-> **Note**  If you send a remote lock or remote lock and PIN reset command to a device that is already locked, the device will reboot.
+> [!Note]  
+> If you send a remote lock or remote lock and PIN reset command to a device that is already locked, the device will reboot.
 
  
 
