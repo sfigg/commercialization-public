@@ -272,7 +272,7 @@ MSHAttr:
 
 #### SyncML for publishing mixed-mode connection group containing global and user-published packages
 
-<p>The following SyncML documents how to publish a connection group and grouping applications and plugins together.<p>
+<p>The following SyncML documents how to publish a connection group and grouping applications and plugins together.</p>
 
 > [!NOTE]
 > The user connection group has the user only package as optional in this example, which implies users without the optional package can continue to launch the global package within the same connection group.
