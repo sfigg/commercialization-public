@@ -23,12 +23,14 @@ MSHAttr:
 
 <p align="center"><b>Fig 1.</b> App-V deployment with Enterprise MDM Server</p>
 
-<p><b>Node structure for the EnterpriseAppVManagement CSP</b> - (./User/Vendor/MSFT/EnterpriseAppVManagement) contains the following sub-nodes:</p>
+### Node structure for the EnterpriseAppVManagement CSP
+
+<p>(./User/Vendor/MSFT/EnterpriseAppVManagement) contains the following sub-nodes</p>
 
 <p><b>AppVPackageManagement</b> - Primarily read-only App-V package inventory data for MDM servers to query current packages.</p>
 
 - EnterpriseAppVManagement
-  - AppVPackageManagement
+  - **AppVPackageManagement**
     - [EnterpriseID]
 	  - [PackageFamilyName]
 	    - [PackageFullName]
@@ -50,7 +52,7 @@ MSHAttr:
 
 - EnterpriseAppVManagement
   - AppVPackageManagement
-  - AppVPublishing
+  - **AppVPublishing**
     - LastSync
 	  - LastError
 	  - LastErrorDescription
@@ -65,7 +67,7 @@ MSHAttr:
 - EnterpriseAppVManagement
   - AppVPackageManagement
   - AppVPublishing
-  - AppVDynamicPolicy
+  - **AppVDynamicPolicy**
     - [ConfigurationId]
 	  - Policy
 
