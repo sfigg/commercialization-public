@@ -5935,8 +5935,10 @@ Employees cannot remove these search engines, but they can set any one as the de
 >	- MinDevicePasswordLength
 >	- AlphanumericDevicePasswordRequired
 >		- MinDevicePasswordComplexCharacters 
->	- MaxDevicePasswordFailedAttempts
->	- MaxInactivityTimeDeviceLock
+>	- DevicePasswordExpiration
+>	- DevicePasswordHistory
+>   - MaxDevicePasswordFailedAttempts
+>   - MaxInactivityTimeDeviceLock
 
 <a href="" id="devicelock-devicepasswordexpiration"></a>**DeviceLock/DevicePasswordExpiration**  
 <p style="margin-left: 20px">Specifies when the password expires (in days).
