@@ -10,13 +10,14 @@ MSHAttr:
 
 ## Executive Summary
 
-<p>App-V Apps have typically been configured, deployed and managed through on-premise group policies via SCCM or App-V server.  With the new build of Windows 10 Creators Update, App-V apps can be configured, deployed and managed through MDM matching their on-premise counterparts.</p>
+<p>App-V Apps have typically been configured, deployed and managed through on-premise group policies via SCCM or App-V server.  In Windows 10 Creators Update App-V apps can be configured, deployed and managed through MDM matching their on-premise counterparts.</p>
 
 ## Architectural Overview
 
-<p>MDM Service will replace SCCM and App-V Server for cloud and hybrid based deployments.  All capabilities such as App-V enablement, configuration, and publishing can be completed using MDM.</p>
+<p>MDM service will replace SCCM and App-V Server for cloud and hybrid based deployments.  All capabilities such as App-V enablement, configuration, and publishing can be completed using MDM.</p>
 
-<p>Please note that these are preliminary architecture diagrams and examples - actual schemas may vary upon release.</p>
+> [!WARNING]
+> These are preliminary architecture diagrams and examples.  Actual schemas may vary upon release.
 
 ![AppV_Config_and_Deploy](images/rs2-appv-config-and-deploy.png)
 
@@ -26,7 +27,7 @@ MSHAttr:
 
 <p>(./User/Vendor/MSFT/EnterpriseAppVManagement) contains the following sub-nodes:</p>
 
-<p><b>AppVPackageManagement</b> - Primarily read-only AppV package inventory data for MDM servers to query current packages.</p>
+<p><b>AppVPackageManagement</b> - Primarily read-only App-V package inventory data for MDM servers to query current packages.</p>
 
 - EnterpriseAppVManagement
   - AppVPackageManagement
@@ -74,7 +75,7 @@ MSHAttr:
 
 <p><b>Sync command</b> (<a href=" https://msdn.microsoft.com/enus/library/mt739986.aspx">App-V Sync protocol reference</a>): The examples in the scenarios section below demonstrate how the publishing document should be crafted to successfully publish packages, dynamic policies and connection groups.</p>
 
-## Scenarios addressed in AppV MDM functionality
+## Scenarios addressed in App-V MDM functionality
 
 <p>All App-V group policies will be reflected by having a corresponding CSP that can be set via the PolicyManager CSP.  The CSPs match all on-premise App-V configuration capabilities.</p>
 
@@ -122,7 +123,7 @@ MSHAttr:
 </Replace> 
 ```
 
-<p>Complete list of AppV policies can be found here: <a href="https://msdn.microsoft.com/en-us/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider">Policy CSP</a></p>
+<p>Complete list of App-V policies can be found here: <a href="https://msdn.microsoft.com/en-us/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider">Policy CSP</a></p>
 
 #### SyncML with package published for a device (global to all users for that device)
 
@@ -148,7 +149,7 @@ MSHAttr:
 		</Target>
 		<Meta>
 			<Format xmlns="syncml:metinf">xml</Format>
-				<Type xmlns="syncml:metinf">text/plain</Type>
+			<Type xmlns="syncml:metinf">text/plain</Type>
 		</Meta>
 		<Data>
 			<Publishing Protocol="2.0">
@@ -183,7 +184,8 @@ MSHAttr:
 		</Meta>
 		<Data>
 			<DeploymentConfiguration PackageId="57650ac1-1731-4b4c-899ca25548374dab" DisplayName="Skype_RS2Win10_X64" xmlns="http://schemas.microsoft.com/appv/2010/deploymentconfiguration">
-				<MachineConfiguration></MachineConfiguration>      <UserConfiguration>
+				<MachineConfiguration></MachineConfiguration>
+				<UserConfiguration>
 					<Subsystems>
 						<Shortcuts Enabled="true">
 							<Extensions>
@@ -399,7 +401,7 @@ MSHAttr:
 	<CmdID>$CmdID$</CmdID>
 	<Item>
 		<Target>
-			<LocURI>./Device/Vendor/MSFT/EnterpriseAppVManagement/AppVPublishing/Sync/PublishXM L</LocURI>
+			<LocURI>./Device/Vendor/MSFT/EnterpriseAppVManagement/AppVPublishing/Sync/PublishXML</LocURI>
 		</Target>
 		<Meta>
 			<Format xmlns="syncml:metinf">xml</Format>
@@ -424,7 +426,7 @@ MSHAttr:
 	<CmdID>$CmdID$</CmdID>
 	<Item>
 		<Target>
-			<LocURI>             ./Device/Vendor/MSFT/EnterpriseAppVManagement/AppVPackageManagement?list=StructData           </LocURI>
+			<LocURI>./Device/Vendor/MSFT/EnterpriseAppVManagement/AppVPackageManagement?list=StructData</LocURI>
 		</Target>
 	</Item>
 </Get>
@@ -435,7 +437,7 @@ MSHAttr:
 	<CmdID>$CmdID$</CmdID>
 	<Item>
 		<Target>
-			<LocURI>             ./User/Vendor/MSFT/EnterpriseAppVManagement/AppVPackageManagement?list=StructData           </LocURI>
+			<LocURI>./User/Vendor/MSFT/EnterpriseAppVManagement/AppVPackageManagement?list=StructData</LocURI>
 		</Target>
 	</Item>
 </Get> 
