@@ -5141,8 +5141,10 @@ Employees cannot remove these search engines, but they can set any one as the de
 
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies whether favorites are kept in sync between Internet Explorer and Microsoft Edge. Changes to favorites in one browser are reflected in the other, including: additions, deletions, modifications, and ordering.
 
-> [!NOTE]
-> This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
+> [!NOTE]  
+> This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.  
+>
+> Enabling this setting stops Microsoft Edge favorites from syncing between connected Windows 10 devices.
 
 <p style="margin-left: 20px">The following list shows the supported values:
 
