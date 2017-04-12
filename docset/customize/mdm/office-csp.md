@@ -11,6 +11,8 @@ MSHAttr:
 The Office configuration service provider (CSP) enables a Microsoft Office client to be installed on a device via the Office Deployment Tool. For more information, see [Configuration options for the Office Deployment Tool](https://technet.microsoft.com/en-us/library/jj219426.aspx). 
 This CSP was added in Windows 10, version 1703.
 
+For additional information, see [Office DDF](office-ddf.md).
+
 The following diagram shows the Office configuration service provider in tree format.
 
 ![Office CSP diagram](images/provisioning-csp-office.png)
@@ -43,3 +45,49 @@ The following diagram shows the Office configuration service provider in tree fo
 
 <p style="margin-left: 20px">The only supported operation is Get.
 
+
+## Examples
+
+Sample SyncML to install Office 365 Business Retail from current channel.
+
+```syntax
+<SyncML xmlns="SYNCML:SYNCML1.1">
+  <SyncBody>
+    <Exec>
+      <CmdID>7</CmdID>
+        <Item>
+          <Target>
+            <LocURI>./Vendor/MSFT/Office/Installation/0AA79349-F334-4859-96E8-B4AB43E9FEA0/install</LocURI>
+          </Target>
+          <Meta>
+            <Format xmlns="syncml:metinf">chr</Format>
+          </Meta> 
+          <Data>&lt;Configuration&gt;&lt;Add OfficeClientEdition=&quot;32&quot; Channel=&quot;Current&quot;&gt;&lt;Product ID=&quot;O365BusinessRetail&quot;&gt;&lt;Language ID=&quot;en-us&quot; /&gt;&lt;/Product&gt;&lt;/Add&gt;&lt;Display Level=&quot;None&quot; AcceptEULA=&quot;TRUE&quot; /&gt;&lt;/Configuration&gt;</Data>
+        </Item>
+    </Exec>
+    <Final/>
+  </SyncBody>
+</SyncML>
+```
+
+To uninstall the Office 365 from the system:
+
+```syntax
+<SyncML xmlns="SYNCML:SYNCML1.1">
+  <SyncBody>
+    <Exec>
+      <CmdID>7</CmdID>
+        <Item>
+          <Target>
+            <LocURI>./Vendor/MSFT/Office/Installation/E24B23D8-94A8-4997-9E6E-8FF25025845B/install</LocURI>
+          </Target>
+          <Meta>
+            <Format xmlns="syncml:metinf">chr</Format>
+          </Meta> 
+          <Data>&lt;Configuration&gt;&lt;Remove All=&quot;TRUE&quot;/&gt;&lt;Display Level=&quot;None&quot; AcceptEULA=&quot;TRUE&quot; /&gt;&lt;/Configuration&gt;</Data>
+        </Item>
+    </Exec>
+    <Final/>
+  </SyncBody>
+</SyncML>
+```
