@@ -1,9 +1,9 @@
 ---
-title: Win32 and Centennial app policy configuration
-description: Starting in Windows 10, version 1703, you can import ADMX files and set those ADMX-backed policies for Win32 and Centennial apps.
+title: Win32 and Desktop Bridge app policy configuration
+description: Starting in Windows 10, version 1703, you can import ADMX files and set those ADMX-backed policies for Win32 and Desktop Bridge apps.
 ---
 
-# Win32 and Centennial app policy configuration
+# Win32 and Desktop Bridge app policy configuration
   
 ## In this section
 
@@ -17,14 +17,14 @@ description: Starting in Windows 10, version 1703, you can import ADMX files and
 
 ## <a href="" id="overview"></a>Overview
 
-Starting in Windows 10, version 1703, you can import ADMX files (also called ADMX ingestion) and set those ADMX-backed policies for Win32 and Centennial apps by using Windows 10 Mobile Device Management (MDM) on desktop SKUs. The ADMX files that define policy information can be ingested to your device by using the Policy CSP URI, `./Device/Vendor/MSFT/Policy/ConfigOperations/ADMXInstall`. The ingested ADMX file is then processed into MDM policies.
+Starting in Windows 10, version 1703, you can import ADMX files (also called ADMX ingestion) and set those ADMX-backed policies for Win32 and Desktop Bridge apps by using Windows 10 Mobile Device Management (MDM) on desktop SKUs. The ADMX files that define policy information can be ingested to your device by using the Policy CSP URI, `./Device/Vendor/MSFT/Policy/ConfigOperations/ADMXInstall`. The ingested ADMX file is then processed into MDM policies.
 
 When the ADMX policies are imported, the registry keys to which each policy is written are checked so that known system registry keys, or registry keys that are used by existing inbox policies or system components, are not overwritten. This precaution helps to avoid security concerns over opening the entire registry. Currently, the ingested policies are not allowed to write to locations within the **System**, **Software\Microsoft**, and **Software\Policies\Microsoft** keys.
 
 
 ## <a href="" id="ingesting-an-app-admx-file"></a>Ingesting an app ADMX file
 
-The following ADMX file example shows how to ingest a Win32 or Centennial app ADMX file and set policies from the file. The ADMX file defines eight policies.
+The following ADMX file example shows how to ingest a Win32 or Desktop Bridge app ADMX file and set policies from the file. The ADMX file defines eight policies.
 
 **Payload**
 ```XML
@@ -324,7 +324,7 @@ The following example shows an ADMX file in SyncML format:
 
 ### <a href="" id="uri-format-for-configuring-an-app-policy"></a>URI format for configuring an app policy 
 
-The following example shows how to derive a Win32 or Centennial app policy name and policy area name:
+The following example shows how to derive a Win32 or Desktop Bridge app policy name and policy area name:
 
 ```XML
 <categories>
