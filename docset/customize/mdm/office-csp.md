@@ -91,3 +91,73 @@ To uninstall the Office 365 from the system:
   </SyncBody>
 </SyncML>
 ```
+
+## Status code
+
+<table>
+<colgroup>
+<col width="30%" />
+<col width="50%" />
+<col width="20%" />
+
+</colgroup>
+<thead>
+<tr class="header">
+<th>Status</th>
+<th>Description</th>
+<th>Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>Installation succeeded</td>
+<td>OK</td>
+</tr>
+<tr>
+<td>997</td>
+<td>Installation in progress</td>
+<td>Windows Information Protection</td>
+</tr>
+<tr>
+<td>13 (ERROR_INVALID_DATA)</td>
+<td>Cannot verify signature of the downloaded ODT</td>
+<td>Failure</td>
+</tr>
+<tr>
+<td>1460 (ERROR_TIMEOUT)</td>
+<td>Failed to download ODT </td>
+<td>Failure</td>
+</tr>
+<tr>
+<td>1603 (ERROR_INSTALL_FAILURE)</td>
+<td>Failed any pre-req check.
+<ul>
+<li>SxS (Tried to install when 2016 MSI is installed)</li>
+<li>Bit mismatch</li>
+</ul>
+</td>
+<td>Failure</td>
+</tr>
+<tr>
+<td>17002</td>
+<td>Failed to complete the process. Possible reasons:<ul>
+<li>Installation cancelled by user</li>
+<li>Installation cancelled by another installation</li>
+<li>Out of disk space during installation </li>
+<li>Unknown language ID</li>
+</ul></td>
+<td>Failure</td>
+</tr>
+<tr>
+<td>17004</td>
+<td>Unknown SKU</td>
+<td>Failure</td>
+</tr>
+<tr>
+<td>0x8000ffff (E_UNEXPECTED)</td>
+<td>Tried to uninstall when there is no C2R Office on the machine.</td>
+<td>Failure</td>
+</tr>
+</tbody>
+</table>
