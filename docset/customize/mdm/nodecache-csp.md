@@ -292,6 +292,61 @@ Replacing the cache version, node URI, and expected value:
 </Replace>
 ```
 
+For AutoSetExpectedValue, a Replace operation with empty data will query the ./DevDetail/Ext/Microsoft/DeviceName.
+
+```syntax
+          <Add>
+            <CmdID>2001</CmdID>
+            <Item>
+              <Target>
+                <LocURI>./Vendor/MSFT/NodeCache/MDM%20SyncML%20Server/Nodes/20</LocURI>
+              </Target>
+              <Meta>
+                <Format xmlns="syncml:metinf">node</Format>
+              </Meta>
+            </Item>
+          </Add>
+          <Add>
+            <CmdID>2002</CmdID>
+            <Item>
+              <Target>
+                <LocURI>./Vendor/MSFT/NodeCache/MDM%20SyncML%20Server/Nodes/20/NodeURI</LocURI>
+              </Target>
+              <Data>./DevDetail/Ext/Microsoft/DeviceName</Data>
+            </Item>
+          </Add>
+          <Replace>
+            <CmdID>2003</CmdID>
+            <Item>
+              <Target>
+               <LocURI>./Vendor/MSFT/NodeCache/MDM%20SyncML%20Server/Nodes/20/AutoSetExpectedValue</LocURI>
+              </Target>
+              <Data></Data>
+            </Item>
+          </Replace>
+```
+
+A Get operation on ./Vendor/MSFT/NodeCache/MDM%20SyncML%20Server/Nodes/20/ExpectedValue returns what the Device Name was when the AutoSet was called.
+
+A Get operation on the ChangedNodesData returns an encoded XML. Here is example:
+
+```syntax
+&lt;Nodes&gt;&lt;Node Id=&quot;10&quot; Uri=&quot;&quot;&gt;&lt;/Node&gt;&lt;Node Id=&quot;20&quot; Uri=&quot;./DevDetail/Ext/Microsoft/DeviceName&quot;&gt;U09NRU5FV1ZBTFVF&lt;/Node&gt;&lt;/Nodes&gt;
+```
+It represents this:
+
+```syntax
+<Nodes>
+    <Node Id="10" Uri=""></Node>
+    <Node Id="20" Uri="./DevDetail/Ext/Microsoft/DeviceName">U09NRU5FV1ZBTFVF</Node>
+</Nodes>
+```
+Id is the node ID that was added by the MDM server, and Uri is the path that the node is tracking.
+If a Uri is not set, the node will always be reported as changed, as in Node id 10.
+
+The value inside of the node tags is the actual value returned by the Uri, this means that for Node Id 20, the DeviceName did not match what was previously excepted, and the device name is now U09NRU5FV1ZBTFVF instead of what it was previously.
+
+
 ## Related topics
 
 
