@@ -119,8 +119,7 @@ The following list describes a suggested model for applying updates.
 
 1.  Have a "Test Group" and an "All Group".
 2.  In the Test group, just let all updates flow.
-3.  In the All Group, set up Auto Approve Definitions, Critical and Security updates.
-4.  In the All Group, set up Quality Update deferral for 7 days and then Quality Updates will be auto approved after the 7 days.  Note that Definition Updates are excluded from Quality Update deferrals and will be auto approved when they are availible. This can be done by setting Update/DeferQualityUpdatesPeriodInDays to 7 and just letting updates flow after seven days or pushing Pause in case of issues.
+3.  In the All Group, set up Quality Update deferral for 7 days and then Quality Updates will be auto approved after the 7 days.  Note that Definition Updates are excluded from Quality Update deferrals and will be auto approved when they are availible. This can be done by setting Update/DeferQualityUpdatesPeriodInDays to 7 and just letting updates flow after seven days or pushing Pause in case of issues.
 
 Updates are configured using a combination of the [Update CSP](update-csp.md), and the update portion of the [Policy CSP](policy-configuration-service-provider.md). Please refer to these topics for details on configuring updates.
 
