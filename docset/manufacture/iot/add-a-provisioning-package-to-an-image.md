@@ -14,8 +14,6 @@ Note, to test Wi-Fi, your board will need Wi-Fi support. You can use a Wi-Fi ada
 
 For this lab, we'll use the ProductB, that includes the default app (Bertha), which shows network status.
 
-Other settings that use provisioning packages:
-
 
 ## Prerequisites
 
