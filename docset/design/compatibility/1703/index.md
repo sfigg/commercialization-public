@@ -20,7 +20,7 @@ The requirements are validated by HLK tests and categorized as follows:
 
 When products meet the minimum requirements it ensures that the application and device are compatible. Systems are required to use components which have also passed compatibility testing. Products submitted with passing results will continue to be included on the Certified Products List.
 
-> [!IMPORTANT]
+> [!WARNING]
 > Certification for Windows Server 2016, Azure Stack, and SDDC must continue to meet the Windows Hardware Compatibility Requirements as stated in version 1607 of documentation, must use version 1607 of the HLK (build 14393) with matching playlist and supplemental content to generate logs, and must follow policies as stated in the Windows Server Policy document. Questions about the Azure Stack or SDDC programs or how to submit the results for solution validation should be directed to the appropriate Microsoft technical account manager or partner management contact.
 
 ## Official Test Playlist
