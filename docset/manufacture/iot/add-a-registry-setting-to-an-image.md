@@ -106,7 +106,7 @@ You'll now be able to add your files and registry keys to any of your products b
 1.  Create a new product folder. 
 
     ``` syntax
-    newproduct ProductB
+    newproduct ProductB rpi2
     ```
 
 ## <span id="Update_your_configuration_file"></span>Update your product configuration file
