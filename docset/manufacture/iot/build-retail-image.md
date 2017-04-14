@@ -24,13 +24,16 @@ We''ll take our customizations, put them together, and test them in a retail bui
 
 2.  Add your feature manifest, OEMFM.xml, into the list of AdditionalFMs. At the same time, add the feature manifest: OEMCommonFM.xml, which contains the OEM\_CustomCmd package that configures your app on the first boot:
 
-    ``` syntax
+``` syntax
     <AdditionalFMs>
-        <AdditionalFM>%AKROOT%\FMFiles\arm\IoTUAPRPi2FM.xml</AdditionalFM>
-        <AdditionalFM>%AKROOT%\FMFiles\arm\RPi2FM.xml</AdditionalFM>
-        <AdditionalFM>%SRC_DIR%\Packages\OEMFM.xml</AdditionalFM>
-        <AdditionalFM>%COMMON_DIR%\Packages\OEMCommonFM.xml</AdditionalFM>
-      </AdditionalFMs>
+      <!-- Including BSP feature manifest -->
+      <AdditionalFM>%BLD_DIR%\MergedFMs\RPi2FM.xml</AdditionalFM>
+      <!-- Including OEM feature manifest -->
+      <AdditionalFM>%BLD_DIR%\MergedFMs\OEMCommonFM.xml</AdditionalFM>
+      <AdditionalFM>%BLD_DIR%\MergedFMs\OEMFM.xml</AdditionalFM>
+       <!-- Including the test features -->
+       <AdditionalFM>%AKROOT%\FMFiles\arm\IoTUAPNonProductionPartnerShareFM.xml</AdditionalFM>
+    </AdditionalFMs>
     ```
 
 3.  Add the FeatureIDs for the your app package, the  and the OEM\_CustomCmd package.
@@ -43,7 +46,7 @@ We''ll take our customizations, put them together, and test them in a retail bui
        <!-- Include OEM features -->
        <Feature>OEM_CustomCmd</Feature> 
        <Feature>OEM_ProvAuto</Feature>
-       <Feature>OEM_AppxHelloWorld</Feature> 
+       <Feature>OEM_MyUWPApp</Feature>
        <Feature>OEM_FilesAndRegKeys</Feature>
        <Feature>OEM_DriverHelloBlinky</Feature> 
     </OEM>
@@ -53,15 +56,14 @@ We''ll take our customizations, put them together, and test them in a retail bui
     
     OEM_ProvAuto is required to pull in the provisioning package.
 	
-	OEM_FilesAndRegKeys, OEM_AppxHelloWorld, and OEM_DriverHelloBlinky were sample packages added in previous labs.
+	OEM_FilesAndRegKeys, OEM_MyUWPApp, and OEM_DriverHelloBlinky were sample packages added in previous labs.
 
 ## <span id="Copy_in_provisioning_packages"></span>Copy in the provisioning package from ProductB into ProductA.
 
 1.  In File Explorer, create a new folder, C:\\IoT-ADK-AddonKit\\Products\\ProductA\\prov.
 
-2.  Copy the .ppkg, .cat, and customizations.xml files into this folder.
+2.  Copy the customizations.xml files into this folder.
     
-    Rename the files to (your product name)Prov.cat and (your product name)Prov.ppkg, for example, ProductAProv.cat and ProductAProv.ppkg.
 
 ### <span id="Build_and_create_the_image"></span><span id="build_and_create_the_image"></span><span id="BUILD_AND_CREATE_THE_IMAGE"></span>Build and create the image
 

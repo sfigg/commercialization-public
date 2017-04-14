@@ -21,7 +21,7 @@ Here's how we'll refer to them:
 
 -   **IoT device**: A test device or board that represents all of the devices in a single model line.
 
-    For our examples, you'll need a MinnowBoard Max or Raspberry Pi 2. To see more options, see [Device options](https://developer.microsoft.com/windows/iot/explore/deviceoptions).
+    For our examples, you'll need a Raspberry Pi 3. To see more options, see [Device options](https://developer.microsoft.com/windows/iot/explore/deviceoptions).
 
 -   An **HDMI cable**, and a **monitor or TV** with a dedicated HDMI input. We'll use this to verify that the image is loaded and that our sample apps are running.
 
@@ -36,7 +36,7 @@ Here's how we'll refer to them:
 
 **Install the following tools on your technician PC**
 
-1.  [Windows Assessment and Deployment Kit (Windows ADK)](http://go.microsoft.com/fwlink/?LinkId=526803) with the default features. You'll use these tools to create images and provisioning packages.
+1.  [Windows Assessment and Deployment Kit (Windows ADK)](http://go.microsoft.com/fwlink/?LinkId=526803) including at least the **Deployment Tools** and **Imaging and Configuration Designer (ICD)** features. You'll use these tools to create images and provisioning packages.
 
 2.  [Windows Driver Kit (WDK) 10](http://developer.microsoft.com/windows/hardware/windows-driver-kit)
 
@@ -46,20 +46,21 @@ Here's how we'll refer to them:
 
 5.  [Windows 10 IoT Core Dashboard](http://go.microsoft.com/fwlink/p/?LinkId=708576).
 
+6.  [The Raspberry Pi BSP](https://github.com/ms-iot/iot-adk-addonkit/releases/download/RPiBSP/rpibsp.zip). Since this lab uses a Raspberry Pi, you'll need to download the Raspberry Pi BSP. If you're working with a device other than Raspberry Pi, visit the [Windows 10 IoT Core BSP](https://developer.microsoft.com/en-us/windows/iot/docs/bsp) page to download other BSPs.
+
 Other helpful software:
 
 -   **A text editor such as Notepad++**. You can also use the Notepad tool, though for some files, you won't see the line breaks unless you open each file as a UTF-8 file.
 
 -   **A compression program such as 7-Zip**, which can uncompress Windows app packages.
 
--   [Visual Studio 2015](http://go.microsoft.com/fwlink/?LinkId=715695), used to create an app in [Lab 1b: Add an app to your image](deploy-your-app-with-a-standard-board.md).
+-   [Visual Studio 2017](http://go.microsoft.com/fwlink/?LinkId=715695), used to create an app in [Lab 1b: Add an app to your image](deploy-your-app-with-a-standard-board.md).
 
--   [IoT Core Pro .iso package](https://www.microsoft.com/download/confirmation.aspx?id=53899): Used to change the automatic update settings (referenced in [Lab 1d: Add provisioning package settings to an image](add-a-provisioning-package-to-an-image.md).)
 
 ## <span id="Other_software"></span><span id="other_software"></span><span id="OTHER_SOFTWARE"></span>Other software
 
 
--   **An app built for IoT Core**. Our samples use the [Hello, World!](https://developer.microsoft.com/windows/iot/samples/helloworld) app, though you can use your own.
+-   **An app built for IoT Core**. Our samples use the [IoT Core Default](https://github.com/ms-iot/samples/tree/develop/IoTCoreDefaultApp) app, though you can use your own.
 
 -   **A driver built for IoT Core**. Our samples use the [Hello, Blinky](https://developer.microsoft.com/windows/iot/samples/helloblinky) driver, though you can use your own.
 
