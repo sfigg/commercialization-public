@@ -61,7 +61,8 @@ _Defines requirements that must be met if the LAN card (NIC) is supported in a M
 
 _Basic requirements for LAN cards used in Microsoft Azure Stack solutions_ 
 
-Certification for Windows Server 2016, Azure Stack and SDDC must meet the Windows Hardware Compatibility Requirements as stated in version 1607 of the documentation and use HLK version 1607 build 14393 <https://go.microsoft.com/fwlink/p/?LinkID=404112> with matching playlist <http://aka.ms/hlkplaylist> and supplemental content to generate logs and following the policies stated in the Windows Server Policy doc <https://go.microsoft.com/fwlink/p/?linkid=834831>.  Questions about the Azure Stack or SDDC program or how to submit the results for solution validation should be directed to the appropriate Microsoft contact – technical account manager or partner management contact.
+> [!WARNING]
+> Certification for Windows Server 2016, Azure Stack, and SDDC must continue to meet the Windows Hardware Compatibility Requirements as stated in version 1607 of documentation, must use [version 1607 of the HLK (build 14393)](https://go.microsoft.com/fwlink/p/?LinkID=404112) with [matching playlist](http://aka.ms/hlkplaylist) and supplemental content to generate logs, and must follow policies as stated in the [Windows Server Policy document](https://go.microsoft.com/fwlink/p/?linkid=834831). Questions about the Azure Stack or SDDC programs or how to submit the results for solution validation should be directed to the appropriate Microsoft technical account manager or partner management contact.
 
 <table><tr><th>Applies to</th><td><p>Windows Server 2016 x64</p></td></tr></table>
 
@@ -124,7 +125,8 @@ To comply with this specification, the controller must pass the PCS test run wit
 
 *Ethernet devices must support 100-Mb or greater link speeds.*
 
-Certification for Windows Server 2016, Azure Stack and SDDC must meet the Windows Hardware Compatibility Requirements as stated in version 1607 of the documentation and use HLK version 1607 build 14393 <https://go.microsoft.com/fwlink/p/?LinkID=404112> with matching playlist <http://aka.ms/hlkplaylist> and supplemental content to generate logs and following the policies stated in the Windows Server Policy doc <https://go.microsoft.com/fwlink/p/?linkid=834831>.  Questions about the Azure Stack or SDDC program or how to submit the results for solution validation should be directed to the appropriate Microsoft contact – technical account manager or partner management contact.
+> [!WARNING]
+> Certification for Windows Server 2016, Azure Stack, and SDDC must continue to meet the Windows Hardware Compatibility Requirements as stated in version 1607 of documentation, must use [version 1607 of the HLK (build 14393)](https://go.microsoft.com/fwlink/p/?LinkID=404112) with [matching playlist](http://aka.ms/hlkplaylist) and supplemental content to generate logs, and must follow policies as stated in the [Windows Server Policy document](https://go.microsoft.com/fwlink/p/?linkid=834831). Questions about the Azure Stack or SDDC programs or how to submit the results for solution validation should be directed to the appropriate Microsoft technical account manager or partner management contact.
 
 <table>
 <tr>
@@ -986,7 +988,8 @@ See the Windows Driver Kit, "OID\_GEN\_RECEIVE\_SCALE\_PARAMETERS."
 
 *Network requirements *
 
-Certification for Windows Server 2016, Azure Stack and SDDC must meet the Windows Hardware Compatibility Requirements as stated in version 1607 of the documentation and use HLK version 1607 build 14393 <https://go.microsoft.com/fwlink/p/?LinkID=404112> with matching playlist <http://aka.ms/hlkplaylist> and supplemental content to generate logs and following the policies stated in the Windows Server Policy doc <https://go.microsoft.com/fwlink/p/?linkid=834831>.  Questions about the Azure Stack or SDDC program or how to submit the results for solution validation should be directed to the appropriate Microsoft contact – technical account manager or partner management contact.
+> [!WARNING]
+> Certification for Windows Server 2016, Azure Stack, and SDDC must continue to meet the Windows Hardware Compatibility Requirements as stated in version 1607 of documentation, must use [version 1607 of the HLK (build 14393)](https://go.microsoft.com/fwlink/p/?LinkID=404112) with [matching playlist](http://aka.ms/hlkplaylist) and supplemental content to generate logs, and must follow policies as stated in the [Windows Server Policy document](https://go.microsoft.com/fwlink/p/?linkid=834831). Questions about the Azure Stack or SDDC programs or how to submit the results for solution validation should be directed to the appropriate Microsoft technical account manager or partner management contact.
 
 ### Device.Network.LAN.SRIOV.SRIOV
 
@@ -1361,7 +1364,8 @@ The implementation must comply with the Virtual Machine Multiple Queues Referenc
 
 *Ethernet devices that implement Virtual Machine Queues must comply with the Programmable Machine Queues Reference specification.*
 
-Certification for Windows Server 2016, Azure Stack and SDDC must meet the Windows Hardware Compatibility Requirements as stated in version 1607 of the documentation and use HLK version 1607 build 14393 <https://go.microsoft.com/fwlink/p/?LinkID=404112> with matching playlist <http://aka.ms/hlkplaylist> and supplemental content to generate logs and following the policies stated in the Windows Server Policy doc <https://go.microsoft.com/fwlink/p/?linkid=834831>.  Questions about the Azure Stack or SDDC program or how to submit the results for solution validation should be directed to the appropriate Microsoft contact – technical account manager or partner management contact.
+> [!WARNING]
+> Certification for Windows Server 2016, Azure Stack, and SDDC must continue to meet the Windows Hardware Compatibility Requirements as stated in version 1607 of documentation, must use [version 1607 of the HLK (build 14393)](https://go.microsoft.com/fwlink/p/?LinkID=404112) with [matching playlist](http://aka.ms/hlkplaylist) and supplemental content to generate logs, and must follow policies as stated in the [Windows Server Policy document](https://go.microsoft.com/fwlink/p/?linkid=834831). Questions about the Azure Stack or SDDC programs or how to submit the results for solution validation should be directed to the appropriate Microsoft technical account manager or partner management contact.
 
 <table>
 <tr>
