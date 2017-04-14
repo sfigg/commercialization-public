@@ -118,7 +118,7 @@ This creates the folder: C:\\IoT-ADK-AddonKit\\Source-&lt;arch&gt;\\Products\\Pr
 
 ### <span id="Try_it_out"></span>Try it out
 
-1.  Connect your IoT device, such as a Raspberry Pi 2, into a monitor using an HDMI cable.
+1.  Connect your IoT device, such as a Raspberry Pi 3, into a monitor using an HDMI cable.
     **Note**  When possible, use a direct connection to an HDMI port. The display may not appear when using DVI/VGA adapters or hubs.
 
 2.  Put in the micro SD card with your image.
