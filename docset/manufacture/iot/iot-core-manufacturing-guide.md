@@ -88,9 +88,9 @@ The image configuration file lists:
 
 -   The feature manifests (FMs) and the packages that you want to install from each one.
 
--   An **SoC** chip identifier, which is used to help set up the device partitions. The supported values for **soc** are defined in the corresponding bspfm.xml, under <devicelayoutpackages>.
+-   An **SoC** chip identifier, which is used to help set up the device partitions. The supported values for **soc** are defined in the corresponding bspfm.xml, under \<devicelayoutpackages>.
 
--   A **Device** identifier, which is used to select the device layout. The supported values for **device** are defined in the corresponding bspfm.xml, under <oemdeviceplatformpackages>.
+-   A **Device** identifier, which is used to select the device layout. The supported values for **device** are defined in the corresponding bspfm.xml, under \<oemdeviceplatformpackages>.
 
 -   The ReleaseType (either **Production** or **Test**).
 
