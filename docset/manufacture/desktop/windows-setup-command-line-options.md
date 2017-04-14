@@ -299,7 +299,7 @@ setup /netdebug:hostip=10.125.4.86,port=50000,key=dont.use.previous.keys,buspara
 <td align="left"><p><strong>/ReflectDrivers</strong><em>&lt;location&gt;</em></p></td>
 <td align="left"><p>Specifies the path to a folder that contains encryption drivers for a computer that has third-party encryption enabled.</p>
 <pre class="syntax" space="preserve"><code>Setup /ReflectDrivers &lt;folder_path&gt; </code></pre>
-<p>Make sure that \<folder_path> contains only encryption drivers. Non-encryption drivers in \<folder_path> can negatively impact upgrade scenarios.</p></td>
+<p>Make sure that \<folder_path> contains only a minimal set of encryption drivers. Having more drivers than necessary in \<folder_path> can negatively impact upgrade scenarios.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>/ResizeRecoveryPartition</strong> {<strong>Enable</strong> | <strong>Disable</strong>}</p></td>
