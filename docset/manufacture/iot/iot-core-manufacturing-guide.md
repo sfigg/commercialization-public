@@ -44,7 +44,7 @@ You can use the walkthrough as a guide to build both your test and retail images
 4.  If it works, sign your customizations, and repackage them into new .cab files.
 5.  Create a retail image with your signed files, and use it to manufacture new devices.
 
-![iot core image creation process](images/oemworkflow.png)
+![iot core image creation process](images/oemworkflow1703.png)
 
 ### <span id="Packages"></span><span id="packages"></span><span id="PACKAGES"></span>Packages
 
@@ -55,7 +55,7 @@ Each package contains:
 -   A package definition (.pkg.xml) file specifies the contents of the package and where they should be placed in the final image. See %SRC\_DIR%\\Packages\\ directory for various samples of package files.
 -   A signature. This can be a test or retail certificate.
 
-The `pkggen` tool combines these items into signed packages. Our samples include scripts: `createpkg`, `createprovpkg` and `createupdatepkgs`, which call pkggen to create packages for our drivers, apps, and settings.
+The `pkggen` tool combines these items into signed packages. Our samples include scripts: `createpkg`, and `createprovpkg`, which call pkggen to create packages for our drivers, apps, and settings.
 
 The process is similar to that used by Windows 10 Mobile. To learn more about creating packages, see [Creating mobile packages](https://msdn.microsoft.com/library/windows/hardware/dn756642).
 
@@ -67,7 +67,6 @@ You can use as many FMs into an image as you want. In this guide, we refer to th
 
 -   **OEMFM.xml** includes features an OEM might add to a device, such as the app and a provisioning package.
 -   **BSPFM.xml** includes features that a hardware manufacturer might use to define a board. For example, OEM\_RPi2FM.xml includes all of the features used for the Raspberry Pi 2.
--   **ProdFM.xml** includes features that make up IoT Core. ProdFM refers to a fully-signed version of the OS.
 
 The process is similar to that used by Windows 10 Mobile. To learn more, see [Feature manifest file contents](https://msdn.microsoft.com/library/windows/hardware/dn756745).
 
@@ -75,6 +74,9 @@ You'll list which of the features to add by using these tags:
 
 -   &lt;BasePackages&gt;: Packages that you always included in your images, for example, your base app.
 -   &lt;Features&gt;\\&lt;OEM&gt;: Other individual packages that might be specific to a particular product design.
+
+The Feature Merger tool generates the required feature identifier packages that are required for servicing the device. Run this tool whenever any changes are made to the FM files. After you change OEM FM or OEM COMMON FM files, run `Buildfm oem`. After you change bspfm files, run `buildfm bsp <bspname>`.
+
 
 ### <span id="Creating_the_image__ImgGen_and_the_image_configuration_file__OEMInput.xml_"></span><span id="creating_the_image__imggen_and_the_image_configuration_file__oeminput.xml_"></span><span id="CREATING_THE_IMAGE__IMGGEN_AND_THE_IMAGE_CONFIGURATION_FILE__OEMINPUT.XML_"></span>Creating the image: ImgGen and the image configuration file (OEMInput.xml)
 
@@ -85,13 +87,10 @@ These are the same tools used to create Windows 10 Mobile images. To learn more
 The image configuration file lists:
 
 -   The feature manifests (FMs) and the packages that you want to install from each one.
--   An **SoC** chip identifier, which is used to help set up the device partitions. This value is required, even if you're not using one of the devices listed. Start with the value for the hardware that most closely resembles your device:
 
-    **RPi2**: Raspberry Pi 2 or Raspberry Pi 3 (ARM)
+-   An **SoC** chip identifier, which is used to help set up the device partitions. The supported values for **soc** are defined in the corresponding bspfm.xml, under <devicelayoutpackages>.
 
-    **MBM**: Intel Minnowboard Max (x86)
-
-    **DB**: Qualcomm DragonBoard (ARM32)
+-   A **Device** identifier, which is used to select the device layout. The supported values for **device** are defined in the corresponding bspfm.xml, under <oemdeviceplatformpackages>.
 
 -   The ReleaseType (either **Production** or **Test**).
 
@@ -111,44 +110,12 @@ The image configuration file lists:
 
     For a sample, see %SRC\_DIR%\\Products\\SampleA\\TestOEMInput.xml.
 
-    <table>
-    <colgroup>
-    <col width="33%" />
-    <col width="33%" />
-    <col width="33%" />
-    </colgroup>
-    <thead>
-    <tr class="header">
-    <th align="left"></th>
-    <th align="left">Retail builds</th>
-    <th align="left">Test builds</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td align="left">Image release type</td>
-    <td align="left">ReleaseType: <strong>Production</strong></td>
-    <td align="left">ReleaseType: <strong>Test</strong></td>
-    </tr>
-    <tr class="even">
-    <td align="left">Package release type</td>
-    <td align="left">Only Production Type packages are supported</td>
-    <td align="left">Both Production Type or Test Type are supported</td>
-    </tr>
-    <tr class="odd">
-    <td align="left">Test-signed packages</td>
-    <td align="left">Not supported</td>
-    <td align="left">Supported
-    <p>IOT_ENABLE_TESTSIGNING feature must be included.</p></td>
-    </tr>
-    <tr class="even">
-    <td align="left">Code integrity check</td>
-    <td align="left">Supported. By default, this is enabled.</td>
-    <td align="left">Not supported
-    <p>IOT_DISABLE_UMCI feature must be included</p></td>
-    </tr>
-    </tbody>
-    </table>
+|     |  Retail builds | Test builds |
+| --- | -------------- | ----------- |
+| Image release type   | ReleaseType: **Production** | ReleaseType: **Test** |
+| Package release type | Only Production Type packages are supported | Both Production Type or Test Type are supported |
+| Test-signed packages | Not supported | Supported <p> IOT_ENABLE_TESTSIGNING feature must be included. |
+| Code integrity check | Supported. By default, this is enabled. | Not supported <p>IOT_DISABLE_UMCI feature must be included |
 
 ### <span id="Board_Support_Packages"></span><span id="board_support_packages"></span><span id="BOARD_SUPPORT_PACKAGES"></span>Board Support Packages (BSPs)
 Board Support Packages contain a set of software, drivers, and boot configurations for a particular board, typically supplied by a board manufacturer. The board manufacturer may periodically provide updates for the board, which your devices can receive and apply. 
