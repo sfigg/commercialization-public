@@ -13,11 +13,11 @@ This topic covers new improvements for desktop, mobile, and IoT manufacturing.
 
 **April 4, 2017**
 
-- You can now create more than one partition on a USB drive. This allows you to use a single USB drive with a combination of FAT32 and NTFS partitions. To learn more about creating multiple partitions on a USB drive, see [WinPE: Create USB bootable drive](winpe-create-usb-bootable-drive#windows-10-version-1703.md)
+- You can now create more than one partition on a USB drive. This allows you to use a single USB drive with a combination of FAT32 and NTFS partitions. To learn more about creating multiple partitions on a USB drive, see [WinPE: Create USB bootable drive](desktop/winpe-create-usb-bootable-drive.md#windows-10-version-1703)
 
-- Windows setup has a new command line option, `/diagnosticprompt`. This setting lets you choose whether the Command prompt is available during Windows setup when pressing Shift+10. See [Windows Setup Command-Line Options](windows-setup-command-line-options.md) for all available command line options for Windows setup.
+- Windows setup has a new command line option, `/diagnosticprompt`. This setting lets you choose whether the Command prompt is available during Windows setup when pressing Shift+10. See [Windows Setup Command-Line Options](desktop/windows-setup-command-line-options.md) for all available command line options for Windows setup.
 
-- When capturing customizations with ScanState, only use the default config files that come with the ADK. To see more about this change, see [Push button reset overview](push-button-reset-overview#whats-new-for-windows-10.md).
+- When capturing customizations with ScanState, only use the default config files that come with the ADK. To see more about this change, see [Push button reset overview](desktop/push-button-reset-overview#whats-new-for-windows-10.md).
 
 **January 5, 2017**
 

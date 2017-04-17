@@ -96,8 +96,9 @@ See [Get the tools needed to customize Windows IoT Core](set-up-your-pc-to-custo
           </FeatureIDs>
         </PackageFile>
     ```
+3. Run `buildfm oem` to generate updated files in the MergedFMs folder. This has to be done every time any time an FM file is modified.
 
-    You'll now be able to add your files and registry keys to any of your products by adding a reference to this feature manifest and Feature ID.
+You'll now be able to add your files and registry keys to any of your products by adding a reference to this feature manifest and Feature ID.
 
 
 ## <span id="Create_a_new_product"></span><span id="create_a_basic_image"></span><span id="CREATE_A_BASIC_IMAGE"></span>Create a new product
@@ -105,7 +106,7 @@ See [Get the tools needed to customize Windows IoT Core](set-up-your-pc-to-custo
 1.  Create a new product folder. 
 
     ``` syntax
-    newproduct ProductB
+    newproduct ProductB rpi2
     ```
 
 ## <span id="Update_your_configuration_file"></span>Update your product configuration file
@@ -116,13 +117,13 @@ See [Get the tools needed to customize Windows IoT Core](set-up-your-pc-to-custo
 
     ``` syntax
     <AdditionalFMs>
-      <!-- Including BSP feature manifest -->
-      <AdditionalFM>%BSPSRC_DIR%\RPi2\Packages\RPi2FM.xml</AdditionalFM>
-      <!-- Including OEM feature manifest-->
-      <AdditionalFM>%COMMON_DIR%\Packages\OEMCommonFM.xml</AdditionalFM>
-      <AdditionalFM>%SRC_DIR%\Packages\OEMFM.xml</AdditionalFM>
-      <!-- Including the test features -->
-      <AdditionalFM>%AKROOT%\FMFiles\arm\IoTUAPNonProductionPartnerShareFM.xml</AdditionalFM>
+       <!-- Including BSP feature manifest -->
+       <AdditionalFM>%BLD_DIR%\MergedFMs\RPi2FM.xml</AdditionalFM>
+       <!-- Including OEM feature manifest -->
+       <AdditionalFM>%BLD_DIR%\MergedFMs\OEMCommonFM.xml</AdditionalFM>
+       <AdditionalFM>%BLD_DIR%\MergedFMs\OEMFM.xml</AdditionalFM>
+       <!-- Including the test features -->
+       <AdditionalFM>%AKROOT%\FMFiles\arm\IoTUAPNonProductionPartnerShareFM.xml</AdditionalFM>
     </AdditionalFMs>
     ```
 
@@ -130,7 +131,7 @@ See [Get the tools needed to customize Windows IoT Core](set-up-your-pc-to-custo
 
     a. Make sure the sample apps are included (especially the IOT_BERTHA app).
 
-    b. Add the OEM features: OEM_AppxMain, OEM_CustomCmd, and OEM_ProvAuto, by removing the comment tags (_<!-- --_>) in this section. 
+    b. Verify that the OEM features: OEM_CustomCmd and OEM_ProvAuto are present.
 
     c. Add the FeatureID for your registry package, example: OEM_FilesAndRegKeys.
     
@@ -153,7 +154,6 @@ See [Get the tools needed to customize Windows IoT Core](set-up-your-pc-to-custo
         <Feature>RPI2_DRIVERS</Feature>
         <Feature>RPI3_DRIVERS</Feature>
         <!-- Include OEM features -->
-        <Feature>OEM_AppxMain</Feature>
         <Feature>OEM_CustomCmd</Feature>
         <Feature>OEM_ProvAuto</Feature>
         <Feature>OEM_FilesAndRegKeys</Feature>
@@ -166,8 +166,8 @@ Build and flash the image using the same procedures from [Lab 1a: Create a basic
 
 1.  From the IoT Core Shell, build the image (`buildimage ProductB Test`).
 2.  Install the image: Start **Windows IoT Core Dashboard** > Click the **Setup a new device** tab >  select **Device Type: Custom** >
-3.  From **Flash the pre-downloaded file (Flash.ffu) to the SD card**: click **Browse**, browse to your FFU file (C:\\IoT-ADK-AddonKit\\Build\\&lt;arch&gt;\\ProductB\\Test\\ProductB.ffu), then click **Next**.
-4.  Enter username and password (Default is: minwinpc / p@ssw0rd) > Put the Micro SD card in the device, select it, accept the license terms, and click **Install**. 
+3.  From **Flash the pre-downloaded file (Flash.ffu) to the SD card**: click **Browse**, browse to your FFU file (C:\\IoT-ADK-AddonKit\\Build\\&lt;arch&gt;\\ProductB\\Test\\Flash.ffu), then click **Next**.
+4.  Enter device name and password.Put the Micro SD card in the device, select it, accept the license terms, and click **Install**. 
 5.  Put the card into the IoT device and start it up.
 
 After a short while, you should see the [IoT test (Bertha) app](https://developer.microsoft.com/windows/iot/samples/iotdefaultapp) which shows basic info about the image.

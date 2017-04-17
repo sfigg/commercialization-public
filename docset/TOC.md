@@ -708,6 +708,7 @@
 ##### [About settings: Phone metadata in DeviceTargetingInfo](customize/mobile/mcsf/phone-metadata-in-devicetargetinginfo.md)
 ###### [Registry values for mobile operator IDs](customize/mobile/mcsf/registry-values-for-mobile-operator-ids.md)
 ###### [Registry values for carrier-unlocked phones](customize/mobile/mcsf/registry-values-for-carrier-unlocked-phones.md)
+##### [Radio settings: FM radio](customize/mobile/mcsf/fm-radio.md)
 ##### [Radio settings: Showing the FM radio](customize/mobile/mcsf/showing-the-fm-radio.md)
 ##### [Radio settings: FM radio frequency band](customize/mobile/mcsf/fm-radio-frequency-band.md)
 ##### [Browser settings: Default value for browser data saver](customize/mobile/mcsf/default-value-for-browser-data-saver.md)
