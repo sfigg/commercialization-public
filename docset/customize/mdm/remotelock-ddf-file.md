@@ -27,7 +27,9 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
     <NodeName>RemoteLock</NodeName>
     <Path>./Vendor/MSFT</Path>
     <DFProperties>
-      <AccessType />
+      <AccessType>
+        <Get />
+      </AccessType>
       <DFFormat>
         <node />
       </DFFormat>
@@ -45,6 +47,7 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
       <NodeName>Lock</NodeName>
       <DFProperties>
         <AccessType>
+          <Get />
           <Exec />
         </AccessType>
         <DFFormat>
@@ -65,6 +68,28 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
       <NodeName>LockAndResetPIN</NodeName>
       <DFProperties>
         <AccessType>
+          <Get />
+          <Exec />
+        </AccessType>
+        <DFFormat>
+          <null />
+        </DFFormat>
+        <Occurrence>
+          <One />
+        </Occurrence>
+        <Scope>
+          <Permanent />
+        </Scope>
+        <DFType>
+          <MIME>text/plain</MIME>
+        </DFType>
+      </DFProperties>
+    </Node>
+    <Node>
+      <NodeName>LockAndRecoverPIN</NodeName>
+      <DFProperties>
+        <AccessType>
+          <Get />
           <Exec />
         </AccessType>
         <DFFormat>

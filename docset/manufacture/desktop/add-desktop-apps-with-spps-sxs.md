@@ -78,12 +78,16 @@ You can add registry keys, for example, an OEM key, or a Windows Store identifie
 2.  Capture the changes into the siloed provisioning package, and save it on the hard drive:
 
     ``` syntax
-    E:\ADKTools\amd64\ScanState.exe /config:E:\ADKTools\amd64\Config_SettingsOnly.xml /o /v:13 /ppkg e:\SPPs\Fabrikam-ID.spp
+    E:\ADKTools\amd64\ScanState.exe /config:E:\ADKTools\amd64\Config_SettingsOnly.xml /o /v:13 /ppkg e:\SPPs\Fabrikam-ID.spp /l:C:\ScanState.log
     ```
 
     where *E* is the drive letter of the USB drive with ScanState.
 
-    **Optional**: Delete the ScanState logfile: `del C:\Scanstate.log`.
+    **Recommended**: Delete these logs to save disk space: `del C:\ScanState.log` `del c:\miglog.xml`. 
+    
+    ScanState creates two log files, ScanState.log and miglog.xml. The `/l` option can be used to specify where the logs are saved. The above command writes the logs to c:\. 
+    
+    To see more about ScanState command-line options, see [Siloed Provisioning Packages](siloed-provisioning-packages.md#capture-windows-desktop-applications).
 
 ## <span id="Install_and_capture_a_Windows_desktop_application"></span><span id="install_and_capture_a_windows_desktop_application"></span><span id="INSTALL_AND_CAPTURE_A_WINDOWS_DESKTOP_APPLICATION"></span>Step 4: Install and capture a Windows desktop application (Microsoft Office)
 
@@ -101,12 +105,12 @@ You can add registry keys, for example, an OEM key, or a Windows Store identifie
 3.  Capture the changes into the siloed provisioning package, and save it on the hard drive:
 
     ``` syntax
-    E:\ADKTools\amd64\ScanState.exe /apps:-sysdrive /o /v:13 /config:E:\ADKTools\amd64\Config_AppsOnly.xml /ppkg e:\SPPs\office16_base.spp
+    E:\ADKTools\amd64\ScanState.exe /apps:-sysdrive /o /v:13 /config:E:\ADKTools\amd64\Config_AppsOnly.xml /ppkg e:\SPPs\office16_base.spp /l:C:\ScanState.log
     ```
 
     where *E* is the drive letter of the USB drive with ScanState.
 
-    **Optional**: Delete the ScanState logfile: `del C:\Scanstate.log`.
+    **Recommended**: Delete the ScanState log files: `del C:\Scanstate.log` `del C:\miglog.xml`.
 
 4.  To capture an add-on package, repeat the process. 
     Example: add Office 2016 language packs. Get these from the Office OPK Update image from the Office OPK Connect site.
@@ -114,8 +118,9 @@ You can add registry keys, for example, an OEM key, or a Windows Store identifie
     1.  Install the fr-fr language pack.
 	
 	2.  Capture the combined files as an add-on pack.
+
         ``` syntax
-        E:\ADKTools\amd64\ScanState.exe /apps:-sysdrive /o /v:13 /config:E:\ADKTools\amd64\Config_AppsOnly.xml /diff:e:\SPPs\office16_base.spp /ppkg E:\SPPs\office16_fr-fr.spp
+        E:\ADKTools\amd64\ScanState.exe /apps:-sysdrive /o /v:13 /config:E:\ADKTools\amd64\Config_AppsOnly.xml /diff:e:\SPPs\office16_base.spp /ppkg E:\SPPs\office16_fr-fr.spp /l:C:\ScanState.log
         ```
 
         The Sysprep tool reseals the device. This process can take several minutes. After the process completes, the device shuts down automatically.
@@ -124,6 +129,8 @@ You can add registry keys, for example, an OEM key, or a Windows Store identifie
        -  Reinstall Windows and the Office base app, and capture the next add-on pack.
           or
        -  For VMs, revert back to the checkpoint, apply the base package, then capture the next add-on pack.
+
+       **Recommended**: Delete the ScanState log files: `del C:\ScanState.log` `del c:\miglog.xml`
 
 5.  To capture more apps:
     -  Reinstall Windows, then capture the next app

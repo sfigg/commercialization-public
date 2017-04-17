@@ -27,6 +27,8 @@ The following command-line options are available for Windows Setup. Beginning w
 
 \[**/debug:***&lt;channel&gt;* \[**baudrate:***&lt;baudrate&gt;*\]\]
 
+\[**/DiagnosticPrompt** {**Enable** | **Disable**}\]
+
 \[**/DynamicUpdate** {**enable** | **disable**}\]
 
 \[**/emsport:** {**COM1** | **COM2** | **usebiossettings** | **off**} \[**/emsbaudrate:***&lt;baudrate&gt;*\]\]
@@ -171,6 +173,11 @@ Setup /auto upgrade</code></pre></td>
 <p>[<strong>baudrate:</strong><em>&lt;baudrate&gt;</em> specifies the baud to use when Windows transfers data during debugging. The default setting is <strong>19200</strong>. You can also set the <em>&lt;baudrate&gt;</em> setting to <strong>57600</strong> or <strong>115200</strong>. For example:</p>
 <pre class="syntax" space="preserve"><code>Setup /1394debug:1 /baudrate:115200</code></pre></td>
 </tr>
+<td align="left"><p><strong>/DiagnosticPrompt</strong> {<strong>enable</strong> | <strong> disable</strong>}</p></td> 
+<td align="left"><p>Specifies that the Command Prompt is available during Windows Setup.</p>
+<p> <strong>Enable:</strong> The Command Prompt can be accessed by pressing Shift+F10 during Windows setup.</p>
+<p><strong>Disable:</Strong> The Command Prompt is not available during Windows setup. The Command Prompt wil not be available while offline and OOBE phases are running. This is the default setting.</p> Example:</p> <pre class="syntax" space="preserve"><code>setup /DiagnosticPrompt enable </code></pre>
+<p>This setting is new for Windows 10, Version 1703.</p> </td> </tr> </tr>
 <tr class="odd">
 <td align="left"><p><strong>/DynamicUpdate</strong> {<strong>enable</strong> | <strong>disable</strong>}</p></td>
 <td align="left"><p>Specifies whether setup will perform Dynamic Update operations (search, download, and install updates). Example:</p>
@@ -292,7 +299,7 @@ setup /netdebug:hostip=10.125.4.86,port=50000,key=dont.use.previous.keys,buspara
 <td align="left"><p><strong>/ReflectDrivers</strong><em>&lt;location&gt;</em></p></td>
 <td align="left"><p>Specifies the path to a folder that contains encryption drivers for a computer that has third-party encryption enabled.</p>
 <pre class="syntax" space="preserve"><code>Setup /ReflectDrivers &lt;folder_path&gt; </code></pre>
-<p>This setting is new for Windows 10, version 1607.</p></td>
+<p>Make sure that \<folder_path> contains only a minimal set of encryption drivers. Having more drivers than necessary in \<folder_path> can negatively impact upgrade scenarios.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>/ResizeRecoveryPartition</strong> {<strong>Enable</strong> | <strong>Disable</strong>}</p></td>

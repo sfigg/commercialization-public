@@ -566,6 +566,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>DeliveryOptimization/DOMinDiskSizeAllowedToPeer</li>
 <li>DeliveryOptimization/DOMinFileSizeToCache</li>
 <li>DeliveryOptimization/DOMinRAMAllowedToPeer</li>
+<li>DeviceLock/MaxInactivityTimeDeviceLockWithExternalDisplay</li>
 <li>Display/TurnOffGdiDPIScalingForApps</li>
 <li>Display/TurnOnGdiDPIScalingForApps</li>
 <li>EnterpriseCloudPrint/CloudPrinterDiscoveryEndPoint</li>
@@ -607,6 +608,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>Start/HideSleep</li>
 <li>Start/HideSwitchAccount</li>
 <li>Start/HideUserTile</li>
+<li>Start/ImportEdgeAssets</li>
 <li>Start/NoPinningToTaskbar</li>
 <li>System/AllowFontProviders</li>
 <li>System/DisableOneDriveFileSync</li>
@@ -616,13 +618,20 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>Update/AutoRestartNotificationSchedule</li>
 <li>Update/AutoRestartNotificationStyle</li>
 <li>Update/AutoRestartRequiredNotificationDismissal</li>
+<li>Update/DetectionFrequency</li>
 <li>Update/EngagedRestartDeadline</li>
 <li>Update/EngagedRestartSnoozeSchedule</li>
 <li>Update/EngagedRestartTransistionSchedule</li>
 <li>Update/IgnoreMOAppDownloadLimit</li>
 <li>Update/IgnoreMOUpdateDownloadLimit</li>
 <li>Update/SetAutoRestartNotificationDisable</li>
+<li>Update/SetEDURestart</li>
+<li>WiFi/AllowWiFiDirect</li>
 <li>WindowsLogon/HideFastUserSwitching</li>
+<li>WirelessDisplay/AllowProjectionFromPC</li>
+<li>WirelessDisplay/AllowProjectionFromPCOverInfrastructure</li>
+<li>WirelessDisplay/AllowProjectionToPCOverInfrastructure</li>
+<li>WirelessDisplay/AllowUserInputFromWirelessDisplayReceiver</li>
 </ul><p>Removed TextInput/AllowLinguisticDataCollection</p>
 <p>Starting in Windows 10, version 1703, Update/UpdateServiceUrl is not supported in Windows 10 Mobile Enteprise and IoT Enterprise</p>
 <p>Starting in Windows 10, version 1703, in Browser/HomePages you can use the "&lt;about:blank&gt;" value if you don’t want to send traffic to Microsoft.</p>
@@ -737,6 +746,37 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 </ul>
 </td>
 </tr>
+<tr class="even">
+<td style="vertical-align:top">[DMSessionActions CSP](dmsessionactions-csp.md)</td>
+<td style="vertical-align:top"><p>Added new CSP.</p>
+</td></tr>
+<tr class="odd">
+<td style="vertical-align:top">[SharedPC CSP](dmsessionactions-csp.md)</td>
+<td style="vertical-align:top"><p>Added new settings in Windows 10, version 1703.</p>
+<ul>
+<li>RestrictLocalStorage</li>
+<li>KioskModeAUMID</li>
+<li>KioskModeUserTileDisplayText</li>
+<li>InactiveThreshold</li>
+<li>MaxPageFileSizeMB</li>
+</ul>
+<p>The default value for SetEduPolicies changed to false. The default value for SleepTimeout changed to 300.</p>
+</td></tr>
+<tr class="even">
+<td style="vertical-align:top">[RemoteLock CSP](remotelock-csp.md)</td>
+<td style="vertical-align:top"><p>Added following setting:</p>
+<ul>
+<li>LockAndRecoverPIN</li>
+</ul>
+</td></tr>
+<tr class="odd">
+<td style="vertical-align:top">[NodeCache CSP](nodecache-csp.md)</td>
+<td style="vertical-align:top"><p>Added following settings:</p>
+<ul>
+<li>ChangedNodesData</li>
+<li>AutoSetExpectedValue</li>
+</ul>
+</td></tr>
 </tbody>
 </table> 
 
@@ -1006,6 +1046,70 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 
 
 ## Change history in MDM documentation
+
+### April 2017
+
+<table>
+<colgroup>
+<col width="25%" />
+<col width="75%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>New or updated topic</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="vertical-align:top">[Policy CSP](policy-configuration-service-provider.md)</td>
+<td style="vertical-align:top"><p>Added the following new policies for Windows 10, version 1703:</p> 
+<ul>
+<li>DeviceLock/MaxInactivityTimeDeviceLockWithExternalDisplay</li>
+<li>Start/ImportEdgeAssets</li>
+<li>Update/DetectionFrequency</li>
+<li>Update/SetEDURestart</li>
+<li>WiFi/AllowWiFiDirect</li>
+<li>WirelessDisplay/AllowProjectionFromPC</li>
+<li>WirelessDisplay/AllowProjectionFromPCOverInfrastructure</li>
+<li>WirelessDisplay/AllowProjectionToPCOverInfrastructure</li>
+<li>WirelessDisplay/AllowUserInputFromWirelessDisplayReceiver</li>
+</ul>
+<p>DeviceLock/EnforceLockScreenAndLogonImage is not supported in Windows 10 Pro edition.</p>
+</td></tr>
+<tr class="even">
+<td style="vertical-align:top">[DMSessionActions CSP](sharedpc-csp.md)</td>
+<td style="vertical-align:top"><p>Added new CSP for Windows 10, version 1703.</p>
+</td></tr>
+<tr class="odd">
+<td style="vertical-align:top">[SharedPC CSP](dmsessionactions-csp.md)</td>
+<td style="vertical-align:top"><p>Added new settings in Windows 10, version 1703.</p>
+<ul>
+<li>RestrictLocalStorage</li>
+<li>KioskModeAUMID</li>
+<li>KioskModeUserTileDisplayText</li>
+<li>InactiveThreshold</li>
+<li>MaxPageFileSizeMB</li>
+</ul>
+<p>The default value for SetEduPolicies changed to false. The default value for SleepTimeout changed to 300.</p>
+</td></tr>
+<tr class="even">
+<td style="vertical-align:top">[RemoteLock CSP](remotelock-csp.md)</td>
+<td style="vertical-align:top"><p>Added following setting:</p>
+<ul>
+<li>LockAndRecoverPIN</li>
+</ul>
+</td></tr>
+<tr class="odd">
+<td style="vertical-align:top">[NodeCache CSP](nodecache-csp.md)</td>
+<td style="vertical-align:top"><p>Added following settings:</p>
+<ul>
+<li>ChangedNodesData</li>
+<li>AutoSetExpectedValue</li>
+</ul>
+</td></tr>
+</tbody>
+</table>
 
 ### March 2017
 

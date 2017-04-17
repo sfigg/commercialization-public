@@ -97,6 +97,7 @@ For example, review the list of drivers in the file: \\IoT-ADK-AddonKit\\Source-
             </FeatureIDs>
           </PackageFile>
     ```
+3. Run `buildfm bsp rpi2` to generate updated files in the MergedFMs folder. This has to be done every time any time an FM file is modified.
 
     You'll now be able to add your driver to your product by adding a reference to this feature manifest.
 
@@ -105,14 +106,20 @@ For example, review the list of drivers in the file: \\IoT-ADK-AddonKit\\Source-
 
 1.  Open your product's test configuration file: **C:\\IoT-ADK-AddonKit\\Source-_<arch_>\\Products\\ProductA\\TestOEMInput.xml**.
 
-2.  Make sure your feature manifest, OEMFM.xml, is in the list of AdditionalFMs. Add it if it isn't there already there:
+2.  Make sure your feature manifest, Rpi2FM.xml, is in the list of AdditionalFMs. Add it if it isn't there already there:
 
-    ``` syntax
-      <AdditionalFMs>
-        <AdditionalFM>%AKROOT%\FMFiles\arm\IoTUAPNonProductionPartnerShareFM.xml</AdditionalFM>
-        <AdditionalFM>%SRC_DIR%\Packages\OEMFM.xml</AdditionalFM>
-      </AdditionalFMs>
-    ```
+``` syntax
+    <AdditionalFMs>
+      <!-- Including BSP feature manifest -->
+      <AdditionalFM>%BLD_DIR%\MergedFMs\RPi2FM.xml</AdditionalFM>
+      <!-- Including OEM feature manifest -->
+      <AdditionalFM>%BLD_DIR%\MergedFMs\OEMCommonFM.xml</AdditionalFM>
+      <AdditionalFM>%BLD_DIR%\MergedFMs\OEMFM.xml</AdditionalFM>
+       <!-- Including the test features -->
+       <AdditionalFM>%AKROOT%\FMFiles\arm\IoTUAPNonProductionPartnerShareFM.xml</AdditionalFM>
+    </AdditionalFMs>
+```
+
 
 3.  Add the FeatureID for your driver:
 
@@ -122,7 +129,6 @@ For example, review the list of drivers in the file: \\IoT-ADK-AddonKit\\Source-
       <Feature>RPI2_DRIVERS</Feature>
       <Feature>RPI3_DRIVERS</Feature>
       <!-- Include OEM features-->
-      <Feature>OEM_AppxMain</Feature>
       <Feature>OEM_CustomCmd</Feature>
       <Feature>OEM_ProvAuto</Feature>
       <Feature>OEM_FilesAndRegKeys</Feature>
@@ -136,8 +142,8 @@ Build and flash the image using the same procedures from [Lab 1a: Create a basic
 
 1.  From the IoT Core Shell, build the image (`buildimage ProductB Test`).
 2.  Install the image: Start **Windows IoT Core Dashboard** > Click the **Setup a new device** tab >  select **Device Type: Custom** >
-3.  From **Flash the pre-downloaded file (Flash.ffu) to the SD card**: click **Browse**, browse to your FFU file (C:\\IoT-ADK-AddonKit\\Build\\&lt;arch&gt;\\ProductB\\Test\\ProductB.ffu), then click **Next**.
-4.  Enter username and password (Default is: minwinpc / p@ssw0rd) > Put the Micro SD card in the device, select it, accept the license terms, and click *Install**. 
+3.  From **Flash the pre-downloaded file (Flash.ffu) to the SD card**: click **Browse**, browse to your FFU file (C:\\IoT-ADK-AddonKit\\Build\\&lt;arch&gt;\\ProductB\\Test\\Flash.ffu), then click **Next**.
+4.  Enter device name and password. Put the Micro SD card in the device, select it, accept the license terms, and click *Install**. 
 5.  Put the card into the IoT device and start it up.
 
 **Check to see if your driver works**

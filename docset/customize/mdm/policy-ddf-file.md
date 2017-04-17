@@ -11,9 +11,15 @@ ms.assetid: D90791B5-A772-4AF8-B058-5D566865AF8D
 
 This topic shows the OMA DM device description framework (DDF) for the **Policy** configuration service provider. DDF files are used only with OMA DM provisioning XML.
 
-The XML below is the latest version of the DDF. You can download the previous versions of the DDF for Windows 10 version 1607 from [this website](http://download.microsoft.com/download/2/3/E/23E27D6B-6E23-4833-B143-915EDA3BDD44/Windows10_1607_DDF.zip).
+You can download the DDF files from the links below:
 
-```XML
+- [Download the Policy DDF file for Windows 10, version 1703](http://download.microsoft.com/download/7/2/C/72C36C37-20F9-41BF-8E23-721F6FFC253E/PolicyDDF_all.xml)
+- [Download the Policy DDF file for Windows 10, version 1607](http://download.microsoft.com/download/6/1/C/61C022FD-6F5D-4F73-9047-17F630899DC4/PolicyDDF_all_version1607.xml)
+- [Download all the DDF files for Windows 10, version 1607](http://download.microsoft.com/download/2/3/E/23E27D6B-6E23-4833-B143-915EDA3BDD44/Windows10_1607_DDF.zip)
+
+The XML below is the DDF for Windows 10, version 1703.
+
+``` syntax
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE MgmtTree PUBLIC " -//OMA//DTD-DM-DDF 1.2//EN"
   "http://www.openmobilealliance.org/tech/DTD/DM_DDF-V1_2.dtd"
@@ -4980,6 +4986,8 @@ The XML below is the latest version of the DDF. You can download the previous ve
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>desktop.admx</MSFT:ADMXBacked>
+            <MSFT:ADMXCategory>desktop~AT~Desktop</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>DisablePersonalDirChange</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
       </Node>
@@ -5926,6 +5934,8 @@ The XML below is the latest version of the DDF. You can download the previous ve
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>DisableSafetyFilterOverride</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -5950,6 +5960,8 @@ The XML below is the latest version of the DDF. You can download the previous ve
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>DisableSafetyFilterOverrideForAppRepUnknown</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -6130,6 +6142,8 @@ The XML below is the latest version of the DDF. You can download the previous ve
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>RestrictProxy</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -9807,28 +9821,6 @@ The XML below is the latest version of the DDF. You can download the previous ve
         </Node>
       </Node>
       <Node>
-        <NodeName>AppHVSI</NodeName>
-        <DFProperties>
-          <AccessType>
-            <Add />
-            <Get />
-            <Delete />
-          </AccessType>
-          <DFFormat>
-            <node />
-          </DFFormat>
-          <Occurrence>
-            <ZeroOrOne />
-          </Occurrence>
-          <Scope>
-            <Dynamic />
-          </Scope>
-          <DFType>
-            <DDFName></DDFName>
-          </DFType>
-        </DFProperties>
-      </Node>
-      <Node>
         <NodeName>ApplicationDefaults</NodeName>
         <DFProperties>
           <AccessType>
@@ -11842,6 +11834,54 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <Description>This policy lets you decide whether Microsoft Edge can gather Live Tile metadata from the ieonline.microsoft.com service to provide a better experience while pinning a Live Tile to the Start menu.
 
 Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on domain-joined machines or when the device is MDM-enrolled.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>PreventSmartScreenPromptOverride</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>Don't allow Windows Defender SmartScreen warning overrides</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>PreventSmartScreenPromptOverrideForFiles</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>Don't allow Windows Defender SmartScreen warning overrides for unverified files.</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -25653,26 +25693,6 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
         </Node>
       </Node>
       <Node>
-        <NodeName>AppHVSI</NodeName>
-        <DFProperties>
-          <AccessType>
-            <Get />
-          </AccessType>
-          <DFFormat>
-            <node />
-          </DFFormat>
-          <Occurrence>
-            <One />
-          </Occurrence>
-          <Scope>
-            <Permanent />
-          </Scope>
-          <DFType>
-            <DDFName></DDFName>
-          </DFType>
-        </DFProperties>
-      </Node>
-      <Node>
         <NodeName>ApplicationDefaults</NodeName>
         <DFProperties>
           <AccessType>
@@ -27673,6 +27693,54 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
                 <MIME>text/plain</MIME>
             </DFType>
             </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>PreventSmartScreenPromptOverride</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>Don't allow Windows Defender SmartScreen warning overrides</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>PreventSmartScreenPromptOverrideForFiles</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>Don't allow Windows Defender SmartScreen warning overrides for unverified files.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
         </Node>
         <Node>
             <NodeName>PreventUsingLocalHostIPAddressForWebRTC</NodeName>
@@ -29877,6 +29945,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>ControlPanelDisplay.admx</MSFT:ADMXBacked>
+            <MSFT:ADMXCategory>ControlPanelDisplay~AT~ControlPanel~Personalization</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>CPL_Personalization_NoLockScreenSlideshow</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -31483,6 +31553,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>NoUpdateCheck</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -31507,6 +31579,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>Security_zones_map_edit</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>
@@ -31531,6 +31605,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>Security_options_edit</MSFT:ADMXPolicyName>
             </DFProperties>
         </Node>
         <Node>

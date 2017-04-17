@@ -12,7 +12,12 @@ ms.assetid: 70234197-07D4-478E-97BB-F6C651C0B970
 
 This topic shows the OMA DM device description framework (DDF) for the **SharedPC** configuration service provider. DDF files are used only with OMA DM provisioning XML.
 
-You can download the Windows 10 version 1607 DDF files from [here](http://download.microsoft.com/download/2/3/E/23E27D6B-6E23-4833-B143-915EDA3BDD44/Windows10_1607_DDF.zip).
+You can download the DDF files from the link below:
+
+- [Download all the DDF files for Windows 10, version 1607](http://download.microsoft.com/download/2/3/E/23E27D6B-6E23-4833-B143-915EDA3BDD44/Windows10_1607_DDF.zip)
+
+The XML below is the DDF for Windows 10, version 1703.
+
 
 ``` syntax
 <?xml version="1.0" encoding="UTF-8"?>
@@ -38,7 +43,7 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
                 <Permanent />
             </Scope>
             <DFType>
-                <MIME>com.microsoft/1.0/MDM/SharedPC</MIME>
+                <MIME>com.microsoft/1.1/MDM/SharedPC</MIME>
             </DFType>
         </DFProperties>
         <Node>
@@ -72,8 +77,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
                     <Get />
                     <Replace />
                 </AccessType>
-                <DefaultValue>true</DefaultValue>
-                <Description>Specify that the policies defined for EDU scenario should be set when configuring SharedPC mode. This node is optional. If used, it needs to be set before the action on "EnableSharedPCMode" node is taken.</Description>
+                <DefaultValue>false</DefaultValue>
+                <Description>Set a list of EDU policies. This node is independent of EnableSharedPCMode.</Description>
                 <DFFormat>
                     <bool />
                 </DFFormat>
@@ -168,8 +173,8 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
                     <Get />
                     <Replace />
                 </AccessType>
-                <DefaultValue>3600</DefaultValue>
-                <Description>Time in seconds that a device sits at Logon screen before signing the user out. 0 means never. Default is 1 hour. This node is optional. If used, it needs to be set before the action on "EnableSharedPCMode" node is taken.</Description>
+                <DefaultValue>300</DefaultValue>
+                <Description>The amount of time before the PC sleeps, giving in seconds. 0 means the PC never sleeps. Default is 5 minutes. This node is optional. If used, it needs to be set before the action on "EnableSharedPCMode" node is taken.</Description>
                 <DFFormat>
                     <int />
                 </DFFormat>
@@ -300,6 +305,124 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
                     <Permanent />
                 </Scope>
                 <DFTitle>Disk space threshold for account caching</DFTitle>
+                <DFType>
+                    <MIME>text/plain</MIME>
+                </DFType>
+            </DFProperties>
+        </Node>
+        <Node>
+            <NodeName>RestrictLocalStorage</NodeName>
+            <DFProperties>
+                <AccessType>
+                    <Get />
+                    <Replace />
+                </AccessType>
+                <DefaultValue>true</DefaultValue>
+                <Description>Restricts the user from using local storage. This node is optional. If used, it needs to be set before the action on "EnableSharedPCMode" node is taken.</Description>
+                <DFFormat>
+                    <bool />
+                </DFFormat>
+                <Occurrence>
+                    <One />
+                </Occurrence>
+                <Scope>
+                    <Permanent />
+                </Scope>
+                <DFTitle>Restrict local storage</DFTitle>
+                <DFType>
+                    <MIME>text/plain</MIME>
+                </DFType>
+            </DFProperties>
+        </Node>
+        <Node>
+            <NodeName>KioskModeAUMID</NodeName>
+            <DFProperties>
+                <AccessType>
+                    <Get />
+                    <Replace />
+                </AccessType>
+                <Description>Specifies the AUMID of the app to use with assigned access. This node is optional. If used, it needs to be set before the action on "EnableSharedPCMode" node is taken.</Description>
+                <DFFormat>
+                    <chr />
+                </DFFormat>
+                <Occurrence>
+                    <One />
+                </Occurrence>
+                <Scope>
+                    <Permanent />
+                </Scope>
+                <DFTitle>Kiosk mode AUMID</DFTitle>
+                <DFType>
+                    <MIME>text/plain</MIME>
+                </DFType>
+            </DFProperties>
+        </Node>
+        <Node>
+            <NodeName>KioskModeUserTileDisplayText</NodeName>
+            <DFProperties>
+                <AccessType>
+                    <Get />
+                    <Replace />
+                </AccessType>
+                <Description>Specifies the display text for the account shown on the sign-in screen which launches the app specified by KioskModeAUMID. This node is optional. If used, it needs to be set before the action on "EnableSharedPCMode" node is taken.</Description>
+                <DFFormat>
+                    <chr />
+                </DFFormat>
+                <Occurrence>
+                    <One />
+                </Occurrence>
+                <Scope>
+                    <Permanent />
+                </Scope>
+                <DFTitle>Kiosk mode user tile display text</DFTitle>
+                <DFType>
+                    <MIME>text/plain</MIME>
+                </DFType>
+            </DFProperties>
+        </Node>
+        <Node>
+            <NodeName>InactiveThreshold</NodeName>
+            <DFProperties>
+                <AccessType>
+                    <Get />
+                    <Replace />
+                </AccessType>
+                <DefaultValue>30</DefaultValue>
+                <Description>Accounts will start being deleted when they have not been logged on during the specified period, given as number of days.</Description>
+                <DFFormat>
+                    <int />
+                </DFFormat>
+                <Occurrence>
+                    <One />
+                </Occurrence>
+                <Scope>
+                    <Permanent />
+                </Scope>
+                <DFTitle>Account inactive threshold</DFTitle>
+                <DFType>
+                    <MIME>text/plain</MIME>
+                </DFType>
+            </DFProperties>
+        </Node>
+        <Node>
+            <NodeName>MaxPageFileSizeMB</NodeName>
+            <DFProperties>
+                <AccessType>
+                    <Get />
+                    <Replace />
+                </AccessType>
+                <DefaultValue>1024</DefaultValue>
+                <Description>Maximum size of the paging file in MB. Applies only to systems with less than 32 GB storage and at least 3 GB of RAM. This node is optional. If used, it needs to be set before the action on "EnableSharedPCMode" node is taken.</Description>
+                <DFFormat>
+                    <int />
+                </DFFormat>
+                <Occurrence>
+                    <One />
+                </Occurrence>
+                <Scope>
+                    <Permanent />
+                </Scope>
+                <DFTitle>Maximum PageFile size</DFTitle>
                 <DFType>
                     <MIME>text/plain</MIME>
                 </DFType>

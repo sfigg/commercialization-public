@@ -1466,7 +1466,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 	<tr>
 		<td style="vertical-align:top"><a href="#devicelock-enforcelockscreenandlogonimage">DeviceLock/EnforceLockScreenAndLogonImage</a></td>
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Home</p></td>
-		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">1<p>Pro</p></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Pro</p></td>
 		<td style="vertical-align:top"><p></p></td>
 		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">1<p>Enterprise</p></td>
 		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">1<p>Education</p></td>
@@ -1507,6 +1507,17 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png"><p>Mobile Enterprise</p></td>
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>IoT Core</p></td>
 		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png"><p>EAS</p></td></tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#devicelock-maxinactivitytimedevicelockwithexternaldisplay">DeviceLock/MaxInactivityTimeDeviceLockWithExternalDisplay</a></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Home</p></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Pro</p></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Business</p></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Enterprise</p></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Education</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Mobile</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Mobile Enterprise</p></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>IoT Core</p></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>EAS</p></td></tr>
 	<tr>
 		<td style="vertical-align:top"><a href="#devicelock-mindevicepasswordcomplexcharacters">DeviceLock/MinDevicePasswordComplexCharacters</a></td>
 		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png"><p>Home</p></td>
@@ -3357,6 +3368,17 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p></td>
 		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p></td></tr>
 	<tr>
+		<td style="vertical-align:top"><a href="#start-importedgeassets">Start/ImportEdgeAssets</a></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Pro</p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Business</p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Enterprise</p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Education</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p></td></tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#start-nopinningtotaskbar">Start/NoPinningToTaskbar</a></td>
 		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p></td>
 		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Pro</p></td>
@@ -3785,6 +3807,17 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Mobile Enterprise</p></td>
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>IoT Core</p></td>
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>EAS</p></td></tr>
+		<tr>
+		<td style="vertical-align:top"><a href="#update-detectionfrequency">Update/DetectionFrequency</a></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Home</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Pro</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Business</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Enterprise</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Education</p></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Mobile</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Mobile Enterprise</p></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>IoT Core</p></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>EAS</p></td></tr>
 	<tr>
 		<td style="vertical-align:top"><a href="#update-engagedrestartdeadline">Update/EngagedRestartDeadline</a></td>
 		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p></td>
@@ -3973,6 +4006,17 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p></td>
 		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p></td></tr>
 	<tr>
+		<td style="vertical-align:top"><a href="#update-setedurestart">Update/SetEDURestart</a></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Home</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Pro</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Business</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Enterprise</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Education</p></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Mobile</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Mobile Enterprise</p></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>IoT Core</p></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>EAS</p></td></tr>
+		<tr>
 		<td style="vertical-align:top"><a href="#update-updateserviceurl">Update/UpdateServiceUrl</a></td>
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Home</p></td>
 		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png"><p>Pro</p></td>
@@ -4039,6 +4083,17 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png"><p>IoT Core</p></td>
 		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png"><p>EAS</p></td></tr>
 	<tr>
+		<td style="vertical-align:top"><a href="#wifi-allowwifidirect">Wifi/AllowWiFiDirect</a></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Home</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Pro</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Business</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Enterprise</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Education</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Mobile</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Mobile Enterprise</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>IoT Core</p></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>EAS</p></td></tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#wifi-wlanscanmode">Wifi/WLANScanMode</a></td>
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Home</p></td>
 		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png"><p>Pro</p></td>
@@ -4083,6 +4138,17 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>IoT Core</p></td>
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>EAS</p></td></tr>
 	<tr>
+		<td style="vertical-align:top"><a href="#wirelessdisplay-allowprojectionfrompc">WirelessDisplay/AllowProjectionFromPC</a></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Home</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Pro</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Business</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Enterprise</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Education</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Mobile</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Mobile Enterprise</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>IoT Core</p></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>EAS</p></td></tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#wirelessdisplay-allowprojectiontopc">WirelessDisplay/AllowProjectionToPC</a></td>
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Home</p></td>
 		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">1<p>Pro</p></td>
@@ -4092,6 +4158,39 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Mobile</p></td>
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Mobile Enterprise</p></td>
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>IoT Core</p></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>EAS</p></td></tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#wirelessdisplay-allowprojectionfrompcoverinfrastructure">WirelessDisplay/AllowProjectionFromPCOverInfrastructure</a></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Home</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Pro</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Business</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Enterprise</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Education</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Mobile</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Mobile Enterprise</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>IoT Core</p></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>EAS</p></td></tr>	
+	<tr>
+		<td style="vertical-align:top"><a href="#wirelessdisplay-allowprojectiontopcoverinfrastructure">WirelessDisplay/AllowProjectionToPCOverInfrastructure</a></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Home</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Pro</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Business</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Enterprise</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Education</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Mobile</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Mobile Enterprise</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>IoT Core</p></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>EAS</p></td></tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#wirelessdisplay-allowuserinputfromwirelessdisplayreceiver">WirelessDisplay/AllowUserInputFromWirelessDisplayReceiver</a>></td>
+		<td style="vertical-align:top"><p>Home</p></td>
+		<td style="vertical-align:top"><p>Pro</p></td>
+		<td style="vertical-align:top"><p>Business</p></td>
+		<td style="vertical-align:top"><p>Enterprise</p></td>
+		<td style="vertical-align:top"><p>Education</p></td>
+		<td style="vertical-align:top"><p>Mobile</p></td>
+		<td style="vertical-align:top"><p>Mobile Enterprise</p></td>
+		<td style="vertical-align:top"><p>IoT Core</p></td>
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>EAS</p></td></tr>
 	<tr>
 		<td style="vertical-align:top"><a href="#wirelessdisplay-requirepinforpairing">WirelessDisplay/RequirePinForPairing</a></td>
@@ -5042,8 +5141,10 @@ Employees cannot remove these search engines, but they can set any one as the de
 
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies whether favorites are kept in sync between Internet Explorer and Microsoft Edge. Changes to favorites in one browser are reflected in the other, including: additions, deletions, modifications, and ordering.
 
-> [!NOTE]
-> This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
+> [!NOTE]  
+> This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.  
+>
+> Enabling this setting stops Microsoft Edge favorites from syncing between connected Windows 10 devices.
 
 <p style="margin-left: 20px">The following list shows the supported values:
 
@@ -5836,8 +5937,10 @@ Employees cannot remove these search engines, but they can set any one as the de
 >	- MinDevicePasswordLength
 >	- AlphanumericDevicePasswordRequired
 >		- MinDevicePasswordComplexCharacters 
->	- MaxDevicePasswordFailedAttempts
->	- MaxInactivityTimeDeviceLock
+>	- DevicePasswordExpiration
+>	- DevicePasswordHistory
+>   - MaxDevicePasswordFailedAttempts
+>   - MaxInactivityTimeDeviceLock
 
 <a href="" id="devicelock-devicepasswordexpiration"></a>**DeviceLock/DevicePasswordExpiration**  
 <p style="margin-left: 20px">Specifies when the password expires (in days).
@@ -5877,7 +5980,7 @@ Employees cannot remove these search engines, but they can set any one as the de
 <p style="margin-left: 20px">Added in Windows 10, version 1607. Specifies the default lock screen and logon image shown when no user is signed in. It also sets the specified image for all users, which replaces the default image. The same image is used for both the lock and logon screens. Users will not be able to change this image.
 
 > [!NOTE]
-> This policy is only enforced in Windows 10 Pro, Enterprise, and Education editions and not supported in Windows 10 Home.
+> This policy is only enforced in Windows 10 Enterprise and Education editions and not supported in Windows 10 Home and Pro.
 
 
 <p style="margin-left: 20px">Value type is a string, which is the full image filepath and filename.
@@ -5927,6 +6030,18 @@ The number of authentication failures allowed before the device will be wiped. A
 -   0 (default) - No timeout is defined. The default of "0" is Windows Phone 7.5 parity and is interpreted by as "No timeout is defined."
 
 <p style="margin-left: 20px">For additional information about this policy, see [Exchange ActiveSync Policy Engine Overview](https://technet.microsoft.com/library/dn282287.aspx).
+
+<a href="" id="devicelock-maxinactivitytimedevicelockwithexternaldisplay"></a>**DeviceLock/MaxInactivityTimeDeviceLockWithExternalDisplay**  
+<p style="margin-left: 20px">Specifies the maximum amount of time (in minutes) allowed after the device is idle that will cause the device to become PIN or password locked while connected to an external display.
+
+> [!NOTE]
+> This policy must be wrapped in an Atomic command.
+
+
+<p style="margin-left: 20px">The following list shows the supported values:
+
+-   An integer X where 0 &lt;= X &lt;= 999.
+-   0 (default) - No timeout is defined. The default of "0" is Windows Phone 7.5 parity and is interpreted by as "No timeout is defined."
 
 <a href="" id="devicelock-mindevicepasswordcomplexcharacters"></a>**DeviceLock/MinDevicePasswordComplexCharacters**  
 <p style="margin-left: 20px">The number of complex element types (uppercase and lowercase letters, numbers, and punctuation) required for a strong PIN or password.
@@ -6341,6 +6456,9 @@ Enables or disables Windows Tips / soft landing.
 
 -   0 (default) – Feedback notifications are not disabled. The actual state of feedback notifications on the device will then depend on what GP has configured or what the user has configured locally.
 -   1 – Feedback notifications are disabled.
+
+<a href="" id="games-allowadvancedgamingservices"></a>**Games/AllowAdvancedGamingServices**  
+<p style="margin-left: 20px">Placeholder only. Currently not supported.
 
 <a href="" id="licensing-allowwindowsentitlementreactivation"></a>**Licensing/AllowWindowsEntitlementReactivation**  
 <p style="margin-left: 20px">Added in Windows 10, version 1607. Enables or Disable Windows license reactivation on managed devices.
@@ -7517,6 +7635,24 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 2.   Log off.
 3.   Log in, and verify that the user tile is gone from Start.
 
+<a href="" id="start-importedgeassets"></a>**Start/ImportEdgeAssets**  
+> [!NOTE]
+> This policy requires reboot to take effect.
+
+<p style="margin-left: 20px">Added in Windows 10, version 1703. This policy imports Edge assets (e.g. .png/.jpg files) for secondary tiles into its local app data path which allows the StartLayout policy to pin Edge secondary tiles as weblink that tie to the image asset files.
+
+> [!IMPORTANT]
+> Please note that the import happens only when StartLayout policy is changed. So it is better to always change ImportEdgeAssets policy at the same time as StartLayout policy whenever there are Edge secondary tiles to be pinned from StartLayout policy.
+
+<p style="margin-left: 20px">The value set for this policy is an XML string containing Edge assets.  An example XML string is provided in the [Microsoft Edge assets example](#microsoft-edge-assets-example) later in this topic.
+
+<p style="margin-left: 20px">To validate on Desktop, do the following:
+
+1.   Set policy with an XML for Edge assets.
+2.   Set StartLayout policy to anything so that it would trigger the Edge assets import.
+3.   Sign out/in.
+4.   Verify that all Edge assets defined in XML show up in %LOCALAPPDATA%\Packages\Microsoft.MicrosoftEdge_8wekyb3d8bbwe\LocalState path.
+
 <a href="" id="start-nopinningtotaskbar"></a>**Start/NoPinningToTaskbar**  
 
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Allows IT Admins to configure the taskbar by disabling pinning and unpinning apps on the taskbar.
@@ -8171,6 +8307,9 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 
 <p style="margin-left: 20px">If the "Allow Telemetry" policy is enabled and the Options value is set to 0, then the "Defer upgrades by", "Defer updates by" and "Pause Updates and Upgrades" settings have no effect.
 
+<a href="" id="update-detectionfrequency"></a>**Update/DetectionFrequency** 
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies the scan frequency from every 1 - 22 hours. Default is 22 hours.
+
 <a href="" id="update-engagedrestartdeadline"></a>**Update/EngagedRestartDeadline**  
 > [!NOTE]
 > This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
@@ -8419,6 +8558,14 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 -   0 (default) – Enabled
 -   1 – Disabled
 
+<a href="" id="update-setedurestart"></a>**Update/SetEDURestart**  
+<p style="margin-left: 20px">Added in Windows 10, version 1703. For devices in a cart, this policy skips the check for battery level to ensure that the reboot will happen at ScheduledInstallTime.
+
+<p style="margin-left: 20px">The following list shows the supported values:
+
+- 0 - not configured
+- 1 - configured
+
 <a href="" id="update-updateserviceurl"></a>**Update/UpdateServiceUrl**  
 > [!NOTE]
 > This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
@@ -8505,14 +8652,20 @@ Example
 
 
 <a href="" id="wifi-allowwifi"></a>**Wifi/AllowWiFi**  
-<p style="margin-left: 20px">Allow or disallow Wi-Fi connection.
+<p style="margin-left: 20px">Allow or disallow WiFi connection.
 
 <p style="margin-left: 20px">The following list shows the supported values:
 
--   0 – Wi-Fi connection is not allowed.
--   1 (default) – Wi-Fi connection is allowed.
+-   0 – WiFi connection is not allowed.
+-   1 (default) – WiFi connection is allowed.
 
 <p style="margin-left: 20px">Most restricted value is 0.
+
+<a href="" id="wifi-allowwifidirect"></a>**Wifi/AllowWiFiDirect**  
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Allow WiFi Direct connection..
+
+- 0 - WiFi Direct connection is not allowed.
+- 1 - WiFi Direct connection is allowed.
 
 <a href="" id="wifi-allowwifihotspotreporting"></a>**WiFi/AllowWiFiHotSpotReporting**  
 <p style="margin-left: 20px">This policy has been deprecated.
@@ -8556,6 +8709,12 @@ Example
 1.   Enable policy.
 2.   Verify that the Switch account button in Start is hidden.
 
+<a href="" id="wirelessdisplay-allowprojectionfrompc"></a>**WirelessDisplay/AllowProjectionFromPC**  
+<p style="margin-left: 20px">Added in Windows 10, version 1703. This policy allows you to turn off projection from a PC.  
+
+- 0 - your PC cannot discover or project to other devices.
+- 1 - your PC can discover and project to other devices
+
 <a href="" id="wirelessdisplay-allowprojectiontopc"></a>**WirelessDisplay/AllowProjectionToPC**  
 <p style="margin-left: 20px">Added in Windows 10, version 1607. Allow or disallow turning off the projection to a PC.
 
@@ -8565,6 +8724,21 @@ Example
 
 -   0 - projection to PC is not allowed. Always off and the user cannot enable it.
 -   1 (default) - projection to PC is allowed. Enabled only above the lock screen.
+
+<a href="" id="wirelessdisplay-allowprojectionfrompcoverinfrastructure"></a>**WirelessDisplay/AllowProjectionFromPCOverInfrastructure**  
+<p style="margin-left: 20px">Added in Windows 10, version 1703. This policy allows you to turn off projection from a PC over infrastructure.  
+
+- 0 - your PC cannot discover or project to other infrastructure devices, although it is possible to discover and project over WiFi Direct.
+- 1 - your PC can discover and project to other devices over infrastructure.
+
+<a href="" id="wirelessdisplay-allowuserinputfromwirelessdisplayreceiver"></a>**WirelessDisplay/AllowUserInputFromWirelessDisplayReceiver**  
+<p style="margin-left: 20px">Added in Windows 10, version 1703.
+
+<a href="" id="wirelessdisplay-Allowprojectiontopcoverinfrastructure"></a>**WirelessDisplay/AllowProjectionToPCOverInfrastructure**  
+<p style="margin-left: 20px">Added in Windows 10, version 1703. This policy setting allows you to turn off projection to a PC over infrastructure.  
+
+- 0 - your PC is not discoverable and other devices cannot project to it over infrastructure, although it is possible to project to it over WiFi Direct.
+- 1 - your PC is discoverable and other devices can project to it over infrastructure.
 
 <a href="" id="wirelessdisplay-requirepinforpairing"></a>**WirelessDisplay/RequirePinForPairing**  
 <p style="margin-left: 20px">Added in Windows 10, version 1607. Allow or disallow requirement for a PIN for pairing.
@@ -8720,6 +8894,96 @@ These can be generated by using the **Export-StartLayout** PowerShell cmdlet as 
     ShowNameOnWide310x150Logo="true" 
     BackgroundColor="#7fffffff" 
   />
+```
+
+### <a href="" id="microsoft-edge-assets-example"></a>Microsoft Edge assets example
+
+An example XML string value for the **[Start/ImportEdgeAssets](#start-importedgeassets)** policy.
+
+``` syntax
+<SecondaryTileAssets>
+
+  <SecondaryTileAsset>
+
+    <RelativeFilePath><![CDATA[PinnedTiles\30382655640\lowres.png]]></RelativeFilePath>
+
+    <Base64EncodedImage>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</Base64EncodedImage>
+
+  </SecondaryTileAsset>
+
+  <SecondaryTileAsset>
+
+    <RelativeFilePath><![CDATA[PinnedTiles\30382655640\lowres.png]]></RelativeFilePath>
+
+    <Base64EncodedImage>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</Base64EncodedImage>
+
+  </SecondaryTileAsset>
+
+  <SecondaryTileAsset>
+
+    <RelativeFilePath><![CDATA[PinnedTiles\29499280780\lowres.png]]></RelativeFilePath>
+
+    <Base64EncodedImage>iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAM1BMVEUAAAD///////////////////////////////////////////////////////////////+3leKCAAAAEXRSTlMAIECAr9//MFC/73CPEJ/PYOJQWV4AAAJsSURBVHgB7dyHcqswEEDRpa2KkcT/f+1zwNHYgtebvHPPtEzPNWXp8r8BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIBhnOZFxSbnpxB1J+aMtzVoZaswjVMu2hIbBj+FRStbhW5bQ9TKVuF4y0ErW4VpHwSVvcKoldFCPaGQQgoppJBCCinUb1rNF+pqvlClCxTGEJZfLAz9F8bsk9wln3+hMEv3hVOSagg/W3iT3gsXJy+mnyvcpPfCkqSx/URhdNJ7YRzkZP3hwmUP3Lou9HKh/EhhXf5Zey6c5dMwSjX+WOH8EZiydl04yGGKqhqcPIQfKcxyl4p2XZjlUJr9hv+Bwk3uXNG+C8dm17IkOSzfK4xHYNS+CxfZDVpNcsgvhetXpsQWtfPC3ObocpqJ8sFHfVH2wJtq74W380V+Jzv3WiiuXE2J/gvHWlNtcmj/+5S1yvuUmPUNClPdcVbTubBdcdc6JfovvDjUzu1ElLsyyJ1bnqbEou9aGK4KNXp5rJjHX2NUW4V17Z0eU0LVXqGG1J5Bvvl2GNtCjU4OWd+tcPzuvvR5fKagre7n4XAxD4erQp1TnRKdFzY5i55Op/xloZYt6lsVrqcNschhNXJFeJFdiqeLGouRQnWy29qLGk6tFGY53HRXZ142U6iDHIYcwrzJwxDtFM5yJaudQvVy5tVSYXTSctFMYU1sA20VavTyzEc1U1iFUT4Ns9G73GX1491UeFKBQp4Y4qkvntyjkEIKKaSQQgp5O+/0qn3L5FuyRVu86czb6nxxgK9G8OUPvt4CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADezhemI2HJD0xgNwAAAABJRU5ErkJggg==</Base64EncodedImage>
+
+  </SecondaryTileAsset>
+
+  <SecondaryTileAsset>
+
+    <RelativeFilePath><![CDATA[PinnedTiles\29499280780\lowres.png]]></RelativeFilePath>
+
+    <Base64EncodedImage>iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAM1BMVEUAAAD///////////////////////////////////////////////////////////////+3leKCAAAAEXRSTlMAIECAr9//MFC/73CPEJ/PYOJQWV4AAAJsSURBVHgB7dyHcqswEEDRpa2KkcT/f+1zwNHYgtebvHPPtEzPNWXp8r8BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIBhnOZFxSbnpxB1J+aMtzVoZaswjVMu2hIbBj+FRStbhW5bQ9TKVuF4y0ErW4VpHwSVvcKoldFCPaGQQgoppJBCCinUb1rNF+pqvlClCxTGEJZfLAz9F8bsk9wln3+hMEv3hVOSagg/W3iT3gsXJy+mnyvcpPfCkqSx/URhdNJ7YRzkZP3hwmUP3Lou9HKh/EhhXf5Zey6c5dMwSjX+WOH8EZiydl04yGGKqhqcPIQfKcxyl4p2XZjlUJr9hv+Bwk3uXNG+C8dm17IkOSzfK4xHYNS+CxfZDVpNcsgvhetXpsQWtfPC3ObocpqJ8sFHfVH2wJtq74W380V+Jzv3WiiuXE2J/gvHWlNtcmj/+5S1yvuUmPUNClPdcVbTubBdcdc6JfovvDjUzu1ElLsyyJ1bnqbEou9aGK4KNXp5rJjHX2NUW4V17Z0eU0LVXqGG1J5Bvvl2GNtCjU4OWd+tcPzuvvR5fKagre7n4XAxD4erQp1TnRKdFzY5i55Op/xloZYt6lsVrqcNschhNXJFeJFdiqeLGouRQnWy29qLGk6tFGY53HRXZ142U6iDHIYcwrzJwxDtFM5yJaudQvVy5tVSYXTSctFMYU1sA20VavTyzEc1U1iFUT4Ns9G73GX1491UeFKBQp4Y4qkvntyjkEIKKaSQQgp5O+/0qn3L5FuyRVu86czb6nxxgK9G8OUPvt4CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADezhemI2HJD0xgNwAAAABJRU5ErkJggg==</Base64EncodedImage>
+
+  </SecondaryTileAsset>
+
+  <SecondaryTileAsset>
+
+    <RelativeFilePath><![CDATA[PinnedTiles\2819959990\lowres.png]]></RelativeFilePath>
+
+    <Base64EncodedImage>iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAAM1BMVEUAAAD///////////////////////////////////////////////////////////////+3leKCAAAAEXRSTlMAIFCAr9//QGCPv+8Qn88wcDAhSA0AAAK7SURBVHgB7d2JcrJIFIDR1pZGGzC8/9OOaHsLMOs/+8w5tWZPvupcGlKBBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/DMdjvnUlT7xuf58qUNZiPWJsc/TtQSxPvB2zG05ifWZfp5qCWJ9OsXDl7FM8R/EMsU/05vi39eb4l8QqwSxxPpnxCpf647pS2KFH9QSq0tfEiukINZ/7VAgllhiiSXWV8QSSyyxDHix/mhiiSWWWNdap5zzPIj1Yqg135yH3c882jrc3Nv0fWmm9FBLM6a7o1jxM6WhPJzTQ95dHb6IdZO3K+ktbVfSKT1cxYoaz5UzpGaMlg+Ohqs8c6Rrus1ftHqx7g7rGjk9neKtiyzWau2M+58wb34tq1h3eX04TKEvi7p5Z7Hqau1cUxjL4tLKidWku0u0abrVtmt28W+ztTq3+RWmeFub9mLF6unj2HfoU6ymFANNrPVcinObc456bYa9FbGaa8yoKS2mU7zDFCPLgG/icDinxXWI08E5xpdYmx8rt3E+PrftU/zAnVhhbofD4Tmrjs9fvnR3KEGsU4tUnysst7HepZYxiNWatEY1NvXlFCNLrDCmRdfHnird1RyT3tZhV6DGnqpt3C99nCUGsXJaPMd6bOrPh7jCHMSq+1PCKa1cyopYw/5iwzWFNrIM+HBIDzGgXt5RrHBMT8eXn7QvQaztRb8cI3/3GrFeJ3yNTf3uNWKF/Wu7l/cTK7ztB9RhP7JsHcI5Pcz7kR+vEStM8XfoJqfda8QKQ62nfNO9jPyhBLE+UmvNixIM+C+JJZZYYon1D+Nf6MQSSyyxDHixxBJLLLFGsdzGzg0S3XrTTV3FciPq4Bbn/2lunu+xDB744VEyHlKEx195sJpH9gEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAL8BVPKUzB0VBYIAAAAASUVORK5CYII=</Base64EncodedImage>
+
+  </SecondaryTileAsset>
+
+  <SecondaryTileAsset>
+
+    <RelativeFilePath><![CDATA[PinnedTiles\2819959990\lowres.png]]></RelativeFilePath>
+
+    <Base64EncodedImage>iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAAM1BMVEUAAAD///////////////////////////////////////////////////////////////+3leKCAAAAEXRSTlMAIFCAr9//QGCPv+8Qn88wcDAhSA0AAAK7SURBVHgB7d2JcrJIFIDR1pZGGzC8/9OOaHsLMOs/+8w5tWZPvupcGlKBBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/DMdjvnUlT7xuf58qUNZiPWJsc/TtQSxPvB2zG05ifWZfp5qCWJ9OsXDl7FM8R/EMsU/05vi39eb4l8QqwSxxPpnxCpf647pS2KFH9QSq0tfEiukINZ/7VAgllhiiSXWV8QSSyyxDHix/mhiiSWWWNdap5zzPIj1Yqg135yH3c882jrc3Nv0fWmm9FBLM6a7o1jxM6WhPJzTQ95dHb6IdZO3K+ktbVfSKT1cxYoaz5UzpGaMlg+Ohqs8c6Rrus1ftHqx7g7rGjk9neKtiyzWau2M+58wb34tq1h3eX04TKEvi7p5Z7Hqau1cUxjL4tLKidWku0u0abrVtmt28W+ztTq3+RWmeFub9mLF6unj2HfoU6ymFANNrPVcinObc456bYa9FbGaa8yoKS2mU7zDFCPLgG/icDinxXWI08E5xpdYmx8rt3E+PrftU/zAnVhhbofD4Tmrjs9fvnR3KEGsU4tUnysst7HepZYxiNWatEY1NvXlFCNLrDCmRdfHnird1RyT3tZhV6DGnqpt3C99nCUGsXJaPMd6bOrPh7jCHMSq+1PCKa1cyopYw/5iwzWFNrIM+HBIDzGgXt5RrHBMT8eXn7QvQaztRb8cI3/3GrFeJ3yNTf3uNWKF/Wu7l/cTK7ztB9RhP7JsHcI5Pcz7kR+vEStM8XfoJqfda8QKQ62nfNO9jPyhBLE+UmvNixIM+C+JJZZYYon1D+Nf6MQSSyyxDHixxBJLLLFGsdzGzg0S3XrTTV3FciPq4Bbn/2lunu+xDB744VEyHlKEx195sJpH9gEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAL8BVPKUzB0VBYIAAAAASUVORK5CYII=</Base64EncodedImage>
+
+  </SecondaryTileAsset>
+
+  <SecondaryTileAsset>
+
+    <RelativeFilePath><![CDATA[PinnedTiles\39721989420\lowres.png]]></RelativeFilePath>
+
+    <Base64EncodedImage>iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAAM1BMVEUAAAD///////////////////////////////////////////////////////////////+3leKCAAAAEXRSTlMAIFCAr9//QGCPv+8Qn88wcDAhSA0AAAJLSURBVHgB7d3Joqo6FEDBbUOCAYT//9nTN/cganz9fakaO1qDjRASAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA+G/a7Q/HLgV35P5UhvQmuGrMh+mcfhFbmPeHMqS1YCUvU0nbgtUUvyFWTPGKWKZ4BVP8Aaa4WPeklX87llhipfu6fWwTa8sDtcTqoppYSSyxxBJLLLEuiCVWzv3U1cUSK17ty81YYnVTn/NXkmW4Gkusso9X30nm83YssYYlYhUrxnNjsUoph8Mh5zzGtcEdL85zXMaKeWgoVlzKZTPWGFuxYmk41vbgjm/rWFEajxXzUB9r33qs2NfHiq71WHGsjzU1H2tXH6tvPlYcq2Pl5mKdyovDLr4sVxOIVdKbviZBWms0Vprj091YYk13Y63khmN18Wm4l0CsFJ9KXYK+PpZYk1gvuroEQ8OxyoMDfp8ajrXEh7kuQWk41jA+dse3pHZjdXPNveH6uVeT94an/tZThzEujF1qMtbadPGrbo6V+a2VWHlzKWzrSb1Y43BrkfXXxXuxxvPN5fv5e3VRrO1F+bRBrGVIVbHEGpcupduxxNrnnPeH0zltEWv73vB/EUssscQS6waxxBJLLANerAeJJZZYYq105XTIc1UssSr46yCWWGLZUC6WWGKJJZZYYonVieWAREdvOtRVLAdR/ybm3hHnjxnz4XgW69HPMoj1d37wg/Gv+ZSM2R/Uz/6gfvYHv+8n+wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgGdtQJGPPIrELgAAAABJRU5ErkJggg==</Base64EncodedImage>
+
+  </SecondaryTileAsset>
+
+  <SecondaryTileAsset>
+
+    <RelativeFilePath><![CDATA[PinnedTiles\39721989420\lowres.png]]></RelativeFilePath>
+
+    <Base64EncodedImage>iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAAM1BMVEUAAAD///////////////////////////////////////////////////////////////+3leKCAAAAEXRSTlMAIFCAr9//QGCPv+8Qn88wcDAhSA0AAAJLSURBVHgB7d3Joqo6FEDBbUOCAYT//9nTN/cganz9fakaO1qDjRASAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA+G/a7Q/HLgV35P5UhvQmuGrMh+mcfhFbmPeHMqS1YCUvU0nbgtUUvyFWTPGKWKZ4BVP8Aaa4WPeklX87llhipfu6fWwTa8sDtcTqoppYSSyxxBJLLLEuiCVWzv3U1cUSK17ty81YYnVTn/NXkmW4Gkusso9X30nm83YssYYlYhUrxnNjsUoph8Mh5zzGtcEdL85zXMaKeWgoVlzKZTPWGFuxYmk41vbgjm/rWFEajxXzUB9r33qs2NfHiq71WHGsjzU1H2tXH6tvPlYcq2Pl5mKdyovDLr4sVxOIVdKbviZBWms0Vprj091YYk13Y63khmN18Wm4l0CsFJ9KXYK+PpZYk1gvuroEQ8OxyoMDfp8ajrXEh7kuQWk41jA+dse3pHZjdXPNveH6uVeT94an/tZThzEujF1qMtbadPGrbo6V+a2VWHlzKWzrSb1Y43BrkfXXxXuxxvPN5fv5e3VRrO1F+bRBrGVIVbHEGpcupduxxNrnnPeH0zltEWv73vB/EUssscQS6waxxBJLLANerAeJJZZYYq105XTIc1UssSr46yCWWGLZUC6WWGKJJZZYYonVieWAREdvOtRVLAdR/ybm3hHnjxnz4XgW69HPMoj1d37wg/Gv+ZSM2R/Uz/6gfvYHv+8n+wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgGdtQJGPPIrELgAAAABJRU5ErkJggg==</Base64EncodedImage>
+
+  </SecondaryTileAsset>
+
+  <SecondaryTileAsset>
+
+    <RelativeFilePath><![CDATA[PinnedTiles\25495229280\lowres.png]]></RelativeFilePath>
+
+    <Base64EncodedImage>iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAAM1BMVEUAAAD///////////////////////////////////////////////////////////////+3leKCAAAAEXRSTlMAIFCAr9//QGCPv+8Qn88wcDAhSA0AAAJSSURBVHgB7d1HcuMwEEBRKBBglu9/WUc6tQBZmhze2832V08XGEwl/kwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALDbH45dTl+g9MM45WeJprkcljV/kGo47Q/jlKNEUO6WMdclwha/IBG2uFg3bPELbPEb2OJifSVHYon1m2Plr3X71CZWdEMtsbrUJlaU/mJiiSWWWA6l1SpiiSWWWGKJ9UOJJZZDqUPpNHaNWGJN+c1Y5vTkLJZYx/LcZj671dmfJRBrmtOzJdzpnKfzBBZ8n56V8O9DfidWvGe+bpNWHSyxNv2nHXWoDZZY9SU11wdLrE3/YcUvcbDEqo7WKT/ahcESK+rfVvwYzhFitUarz7mkJ7scOZTG0ZqnrjJYYgXrFmmIgyVWRUlP+hIHS6yKMW3CYFnwrdHaHHMgVnO0Sg7Eao/W8fpYYi1iXf/fcCfWDQt+Eevqo0O8ihYr2qUntfszDqXRVimfwmiJ1Rysvn3rT6w4WGue4k1lsaItUXl/XHFnwbdibYXGD8/FOrFeNAbrVHkuJlZjsJb8ZG2NVnrnifTu81G+F+vCuw5DfnH89DRfrMbz6M2ucltLrMZLM0t6MYoVY3UlLvRp/jRaDqXRuuZ3hzhaYl02jaMXcL3aHfmjAbHEEkssscQSSyyHUrHEEksssXzGzgcSfXpTrB9NLB+i9onz3ifObzOXw3EV69afZRDrZ/7gB/OP+SkZuz9dz+5PXL/709/LT/YBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPdXyNW8w51ZgAAAAASUVORK5CYII=</Base64EncodedImage>
+
+  </SecondaryTileAsset>
+
+  <SecondaryTileAsset>
+
+    <RelativeFilePath><![CDATA[PinnedTiles\25495229280\lowres.png]]></RelativeFilePath>
+
+    <Base64EncodedImage>iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAAM1BMVEUAAAD///////////////////////////////////////////////////////////////+3leKCAAAAEXRSTlMAIFCAr9//QGCPv+8Qn88wcDAhSA0AAAJSSURBVHgB7d1HcuMwEEBRKBBglu9/WUc6tQBZmhze2832V08XGEwl/kwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALDbH45dTl+g9MM45WeJprkcljV/kGo47Q/jlKNEUO6WMdclwha/IBG2uFg3bPELbPEb2OJifSVHYon1m2Plr3X71CZWdEMtsbrUJlaU/mJiiSWWWA6l1SpiiSWWWGKJ9UOJJZZDqUPpNHaNWGJN+c1Y5vTkLJZYx/LcZj671dmfJRBrmtOzJdzpnKfzBBZ8n56V8O9DfidWvGe+bpNWHSyxNv2nHXWoDZZY9SU11wdLrE3/YcUvcbDEqo7WKT/ahcESK+rfVvwYzhFitUarz7mkJ7scOZTG0ZqnrjJYYgXrFmmIgyVWRUlP+hIHS6yKMW3CYFnwrdHaHHMgVnO0Sg7Eao/W8fpYYi1iXf/fcCfWDQt+Eevqo0O8ihYr2qUntfszDqXRVimfwmiJ1Rysvn3rT6w4WGue4k1lsaItUXl/XHFnwbdibYXGD8/FOrFeNAbrVHkuJlZjsJb8ZG2NVnrnifTu81G+F+vCuw5DfnH89DRfrMbz6M2ucltLrMZLM0t6MYoVY3UlLvRp/jRaDqXRuuZ3hzhaYl02jaMXcL3aHfmjAbHEEkssscQSSyyHUrHEEksssXzGzgcSfXpTrB9NLB+i9onz3ifObzOXw3EV69afZRDrZ/7gB/OP+SkZuz9dz+5PXL/709/LT/YBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPdXyNW8w51ZgAAAAASUVORK5CYII=</Base64EncodedImage>
+
+  </SecondaryTileAsset>
+
+</SecondaryTileAssets>
 ```
 
 ## Related topics

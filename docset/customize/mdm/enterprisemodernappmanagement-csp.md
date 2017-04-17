@@ -360,12 +360,12 @@ The following image shows the EnterpriseModernAppManagement configuration servic
 <a href="" id="appinstallation-packagefamilyname-storeinstall"></a>**AppInstallation/*PackageFamilyName*/StoreInstall**  
 <p style="margin-left: 20px">Required. Command to perform an install of an app and a license from the Windows Store.
 
-<p style="margin-left: 20px">Supported operation is Execute.
+<p style="margin-left: 20px">Supported operation is Execute, Add, Delete, and Get.
 
 <a href="" id="appinstallation-packagefamilyname-hostedinstall"></a>**AppInstallation/*PackageFamilyName*/HostedInstall**  
 <p style="margin-left: 20px">Required. Command to perform an install of an app package from a hosted location (this can be a local drive, a UNC, or https data source).
 
-<p style="margin-left: 20px">Supported operation is Execute.
+<p style="margin-left: 20px">Supported operation is Execute, Add, Delete, and Get.
 
 <a href="" id="appinstallation-packagefamilyname-lasterror"></a>**AppInstallation/*PackageFamilyName*/LastError**  
 <p style="margin-left: 20px">Required. Last error relating to the app installation.

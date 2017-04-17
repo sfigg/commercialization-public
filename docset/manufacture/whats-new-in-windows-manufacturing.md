@@ -1,5 +1,5 @@
 ---
-author: kpacquer
+author: themar
 Description: What's new in Windows manufacturing
 MSHAttr: 'PreferredLib:/library'
 title: What's new in Windows manufacturing
@@ -10,6 +10,14 @@ title: What's new in Windows manufacturing
 This topic covers new improvements for desktop, mobile, and IoT manufacturing. 
 
 ## <span id="Whats_new_in_desktop_manufacturing"></span> What's new in desktop manufacturing 
+
+**April 4, 2017**
+
+- You can now create more than one partition on a USB drive. This allows you to use a single USB drive with a combination of FAT32 and NTFS partitions. To learn more about creating multiple partitions on a USB drive, see [WinPE: Create USB bootable drive](desktop/winpe-create-usb-bootable-drive.md#windows-10-version-1703)
+
+- Windows setup has a new command line option, `/diagnosticprompt`. This setting lets you choose whether the Command prompt is available during Windows setup when pressing Shift+10. See [Windows Setup Command-Line Options](desktop/windows-setup-command-line-options.md) for all available command line options for Windows setup.
+
+- When capturing customizations with ScanState, only use the default config files that come with the ADK. To see more about this change, see [Push button reset overview](desktop/push-button-reset-overview#whats-new-for-windows-10.md).
 
 **January 5, 2017**
 
