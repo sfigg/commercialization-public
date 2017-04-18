@@ -16,13 +16,15 @@ Typical questions related to Modern Standby are answered here.
 
     **A:** Modern Standby is supported on Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) and Windows 10 Mobile.
 
+-   **Q:** Can I switch between S3 and Modern Standby by changing a setting in the BIOS? 
+
+    **A:** No, switching the power model is not supported in Windows without a complete OS re-install.
+
 -   **Q:** What if I have a platform that needs to support both Windows 10 and older versions of Windows?
 
     **A:** The following table describes what happens with platforms in each of a number of configurations. Investigations are still ongoing to determine the behavior of a system configured for Modern Standby that is installed with Windows 8 or Windows 8.1.
 
     **Note**  The S3 object is not required for Connected Standby or Modern Standby support. However, if it is not available, S3 support won’t be available.
-
-     
 
     <table>
     <colgroup>
