@@ -777,6 +777,10 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>AutoSetExpectedValue</li>
 </ul>
 </td></tr>
+<tr class="even">
+<td style="vertical-align:top">[Download all the DDF files for Windows 10, version 1703](http://download.microsoft.com/download/C/7/C/C7C94663-44CF-4221-ABCA-BC895F42B6C2/Windows10_1703_DDF_download.zip)</td>
+<td style="vertical-align:top"><p>Added a zip file containing the DDF XML files of the CSPs. The link to the download is available in the DDF topics of various CSPs.</p>
+</td></tr>
 </tbody>
 </table> 
 
@@ -1107,6 +1111,10 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>ChangedNodesData</li>
 <li>AutoSetExpectedValue</li>
 </ul>
+</td></tr>
+<tr class="even">
+<td style="vertical-align:top">[Download all the DDF files for Windows 10, version 1703](http://download.microsoft.com/download/C/7/C/C7C94663-44CF-4221-ABCA-BC895F42B6C2/Windows10_1703_DDF_download.zip)</td>
+<td style="vertical-align:top"><p>Added a zip file containing the DDF XML files of the CSPs. The link to the download is available in the DDF topics of various CSPs.</p>
 </td></tr>
 </tbody>
 </table>
