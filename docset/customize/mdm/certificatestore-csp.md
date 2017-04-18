@@ -346,7 +346,7 @@ Added in Windows 10, version 1607. Initiates a renewal now.
 Supported operation is Execute.
 
 <a href="" id="my-wstep-renew-retryafterexpiryinterval"></a>**My/WSTEP/Renew/RetryAfterExpiryInterval**  
-Added in Windows 10, version 1703. How long after the enrollment certificate has expiried before trying to renew.
+Added in Windows 10, version 1703. How long after the enrollment certificate has expired before trying to renew.
 
 Supported operations are Add, Get, and Replace.
 
