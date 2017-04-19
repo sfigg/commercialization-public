@@ -14,7 +14,7 @@ Typical questions related to Modern Standby are answered here.
 
 -   **Q:** Which versions of Windows support Modern Standby?
 
-    **A:** Modern Standby is supported on Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) and Windows 10 Mobile.
+    **A:** Modern Standby is supported on Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) and Windows 10 Mobile. In Windows 8.0 and 8.1, the only supported standby power models were Connected Standby (CS) and S3.
 
 -   **Q:** Can I switch between S3 and Modern Standby by changing a setting in the BIOS? 
 
