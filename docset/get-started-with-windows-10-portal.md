@@ -105,9 +105,6 @@ From Cortana to Continuum to the core architecture, this release includes tons o
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>Create provisioning packages that can gather your settings, languages, drivers, and apply them all at once to a new device with Windows Imaging and Configuration Designer (ICD).</p>
-<p>OEMs can apply the packages to new devices. Enterprises can apply them to devices that employees bring from home to quickly configure them to use the corporate network.</p>
-<p>[Get started with Windows ICD](https://msdn.microsoft.com/en-us/library/windows/hardware/dn916112.aspx)</p></td>
 <td><p>For desktop PCs, you can use your existing settings file (Unattend.xml) to add settings during Windows installation.</p>
 <p>[Build a Windows Setup unattend file](manufacture/desktop/update-windows-settings-and-scripts-create-your-own-answer-file-sxs.md)</p></td>
 </tr>
