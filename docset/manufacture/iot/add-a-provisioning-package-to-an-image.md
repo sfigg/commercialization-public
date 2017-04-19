@@ -8,23 +8,21 @@ title: 'Lab 1d: Add networking and other provisioning package settings to an ima
 
 # Lab 1d: Add networking and other provisioning package settings to an image
 
-We'll create a provisioning package that contains some sample Wi-Fi settings. You can use provisioning package in Windows Imaging and Configuration Designer (ICD) to add apps, drivers, features, or to modify many common settings, such as IT device management and policy settings.
+We'll create a provisioning package that contains some sample Wi-Fi settings. You can use Windows Configuration Designer to create provisioning packages that add apps, drivers, features, or modify many common settings, such as IT device management and policy settings.
 
 Note, to test Wi-Fi, your board will need Wi-Fi support. You can use a Wi-Fi adapter/dongle, or use a board like the Raspberry Pi 3 that has Wi-Fi built-in.
 
 For this lab, we'll use the ProductB, that includes the default app (Bertha), which shows network status.
 
-Other settings that use provisioning packages:
 
-* **Change the automatic update settings in your runtime image**: [Windows 10 IoT Core Pro Update Control File](https://developer.microsoft.com/en-us/windows/iot/docs/createiotcorepro)   
-
-## <span id="Prerequisites"></span><span id="prerequisites"></span><span id="PREREQUISITES"></span>Prerequisites
+## Prerequisites
 
 * See [Get the tools needed to customize Windows IoT Core](set-up-your-pc-to-customize-iot-core.md) to get your technician PC ready.
 
-* Create a product folder (ProductB) that's set up to boot to the default (Bertha) app, as shown in [Lab 1a: Create a basic image](create-a-basic-image.md) or [Lab 1c: Add a file and a registry setting to an image](add-a-registry-setting-to-an-image.md).
+* Use ProductB that you created in [Lab 1c: Add a file and a registry setting to an image](add-a-registry-setting-to-an-image.md).
 
-## <span id="Create_your_provisioning_package_in_Windows_ICD"></span><span id="create_your_provisioning_package_in_windows_icd"></span><span id="CREATE_YOUR_PROVISIONING_PACKAGE_IN_WINDOWS_ICD"></span>Create your provisioning package in Windows ICD
+## Create your provisioning package in Windows Configuration Designer
+
 1.  Start **Windows Imaging and Configuration Designer**.
 
 2.  Click **File &gt; New project**.
@@ -51,23 +49,15 @@ Other settings that use provisioning packages:
 
 8.  Export the provisioning package. For example, click **Export &gt; Provisioning Package &gt; Next &gt; (Uncheck the Encrypt Package box) &gt; Next &gt;  Build**. (To learn more, see [Export a provisioning package](https://msdn.microsoft.com/library/windows/hardware/dn916110). )
 
+    <blockquote><p><strong>Important:</strong><br> When you make any changes to a provisioning package, Windows Configuration Designer increments the version number in the provisioning file (customizations.xml). The version number is not major.minor, it is a number with a decimal point. For example, 1.19 is a lower version than 1.2. </p></blockquote>
+
 9.  At the **All done!** page, click the link to the **Output location**.
 
-**Create a folder for the provisioning package in your test product**
+**Copy customizations.xml into your product's _prov_ folder**
 
-1.  In File Explorer, create a new folder, C:\\IoT-ADK-AddonKit\\Source-_<arch_>\\Products\\ProductB\\prov.
-
-    This folder is structure is used by the script: Provisioning.Auto.pkg.xml file in Provisioning.Auto folder. No changes are required.
-
-2.  Copy the .ppkg, .cat, and customizations.xml files into this folder.
-    
-    Rename the files if necessary to match your product names:
-
-    *  C:\\IoT-ADK-AddonKit\\Source-_<arch_>\\Products\\ProductB\\prov\\ProductBProv.cat
-    *  C:\\IoT-ADK-AddonKit\\Source-_<arch_>\\Products\\ProductB\\prov\\ProductBProv.ppkg
-    *  C:\\IoT-ADK-AddonKit\\Source-_<arch_>\\Products\\ProductB\\prov\\customizations.xml    
-    	
-3.  Optional: update customizations.xml with any desired changes. See [Windows provisioning answer file](https://msdn.microsoft.com/library/windows/hardware/dn916153) for more info.
+1.  Copy customizations.xml to C:\\IoT-ADK-AddonKit\\Source-_<arch_>\\Products\\ProductB\\prov\.
+        	
+2.  Optional: update customizations.xml with any desired changes. Make sure you increment the version number if you make changes. See [Windows provisioning answer file](https://msdn.microsoft.com/library/windows/hardware/dn916153) for more info.
 
 **Add the auto-provisioning scripts to the feature manifest and product configuration file**
 
@@ -125,17 +115,17 @@ Other settings that use provisioning packages:
 
         ``` syntax
         <AdditionalFMs>
-          <!-- Including BSP feature manifest -->
-          <AdditionalFM>%BSPSRC_DIR%\RPi2\Packages\RPi2FM.xml</AdditionalFM>
-          <!-- Including OEM feature manifest-->
-          <AdditionalFM>%COMMON_DIR%\Packages\OEMCommonFM.xml</AdditionalFM>
-          <AdditionalFM>%SRC_DIR%\Packages\OEMFM.xml</AdditionalFM>
-          <!-- Including the test features -->
-          <AdditionalFM>%AKROOT%\FMFiles\arm\IoTUAPNonProductionPartnerShareFM.xml</AdditionalFM>
+         <!-- Including BSP feature manifest -->
+         <AdditionalFM>%BLD_DIR%\MergedFMs\RPi2FM.xml</AdditionalFM>
+         <!-- Including OEM feature manifest -->
+         <AdditionalFM>%BLD_DIR%\MergedFMs\OEMCommonFM.xml</AdditionalFM>
+         <AdditionalFM>%BLD_DIR%\MergedFMs\OEMFM.xml</AdditionalFM>
+         <!-- Including the test features -->
+         <AdditionalFM>%AKROOT%\FMFiles\arm\IoTUAPNonProductionPartnerShareFM.xml</AdditionalFM>
         </AdditionalFMs>
         ```
 
-    2.  Make sure the Feature: OEM_ProvAuto is included. (Remove comment marks if necessary.)
+    2.  Make sure the Feature: OEM_ProvAuto is included.
 
         ``` syntax
         <OEM>
@@ -143,14 +133,13 @@ Other settings that use provisioning packages:
           <Feature>RPI2_DRIVERS</Feature>
           <Feature>RPI3_DRIVERS</Feature>
           <!-- Include OEM features-->
-          <Feature>OEM_AppxMain</Feature>
           <Feature>OEM_CustomCmd</Feature>
           <Feature>OEM_ProvAuto</Feature>
           <Feature>OEM_FilesAndRegKeys</Feature>
         </OEM>
         ```
 
-## <span id="Build_and_test_the_image"></span><span id="build_and_test_the_image"></span><span id="BUILD_AND_TEST_THE_IMAGE"></span>Build and test the image
+## Build and test the image
 
 Build and flash the image using the same procedures from [Lab 1a: Create a basic image](create-a-basic-image.md). Short version:
 
@@ -158,9 +147,9 @@ Build and flash the image using the same procedures from [Lab 1a: Create a basic
 
 2.  Install the image: Start **Windows IoT Core Dashboard** > Click the **Setup a new device** tab >  select **Device Type: Custom** >
 
-3.  From **Flash the pre-downloaded file (Flash.ffu) to the SD card**: click **Browse**, browse to your FFU file (C:\\IoT-ADK-AddonKit\\Build\\&lt;arch&gt;\\ProductB\\Test\\ProductB.ffu), then click **Next**.
+3.  From **Flash the pre-downloaded file (Flash.ffu) to the SD card**: click **Browse**, browse to your FFU file (C:\\IoT-ADK-AddonKit\\Build\\&lt;arch&gt;\\ProductB\\Test\\Flash.ffu), then click **Next**.
 
-4.  Enter username and password (Default is: minwinpc / p@ssw0rd). 
+4.  Enter device name and password. 
 
     **Note: We recommend using a different device name for each device to help prevent network conflicts.**
 
@@ -180,7 +169,7 @@ After a short while, you should see the [IoT test (Bertha) app](https://develope
 
 3.  If your wireless network is in range, this screen should show the network successfully connected, and show an IP address for the network.
 
-## <span id="Test_network_connections"></span>Test network connections and upload apps
+## Test network connections and upload apps
 
 You can connect to your device's portal page to troubleshoot network connections, upload apps, or see more details about your device.
 
@@ -204,7 +193,7 @@ You can connect to your device's portal page to troubleshoot network connections
 
     If your network requires steps such as accepting license terms, the device may not auto-connect.
 
-## <span id="Troubleshooting"></span>Troubleshooting
+## Troubleshooting
 
 **Check your Wi-Fi broadcast frequency (2.4GHz vs 5GHz)**. Some Wi-Fi adapters, such as the built-in Wi-Fi adapter on the Raspberry Pi 3, only support 2.4GHz Wi-Fi networks. While this is the most common Wi-Fi broadcast frequency, many Wi-Fi networks broadcast at frequencies of 5GHz. Either change the broadcast frequency or use a different adapter.
 
@@ -232,6 +221,6 @@ You can connect to your device's portal page to troubleshoot network connections
 
 **Use a different device name for each device.** This can help prevent network conflicts. Set this name while creating media for the device.
 
-## <span id="Next_steps"></span><span id="next_steps"></span><span id="NEXT_STEPS"></span>Next steps
+## Next steps
 
 [Lab 1e: Add a driver to an image](add-a-driver-to-an-image.md) 

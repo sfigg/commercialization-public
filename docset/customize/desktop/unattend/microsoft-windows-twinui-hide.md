@@ -33,7 +33,7 @@ The `Microsoft-Windows-TPM-Tasks-TwinUI-Hide` setting specifies whether to hide 
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-TPM-Tasks](microsoft-windows-twinui.md) | **Hide**
+[Microsoft-Windows-TwinUI-Tasks](microsoft-windows-twinui.md) | **Hide**
 
 ## Valid Configuration Passes
 

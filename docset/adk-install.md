@@ -1,3 +1,10 @@
+---
+author: themar
+Description: Instructions on how to download and install the Windows ADK
+MSHAttr: 'PreferredLib:/library/windows/hardware'
+title: Download and install the Windows ADK
+---
+
 # Download and install the Windows ADK 
 
 Updated: August 22, 2016
@@ -9,7 +16,7 @@ Some features require you to have matching versions of Windows and the ADK. Befo
 
 - [Download for Windows 10](https://developer.microsoft.com/en-us/windows/hardware/windows-assessment-deployment-kit)
 
-- [Download for Windows 8.1](https://www.microsoft.com/en-us/download/details.aspx?id=30652)
+- [Download for Windows 8.1](https://www.microsoft.com/en-US/download/details.aspx?id=39982)
 
 - [Download for Windows 8](https://www.microsoft.com/en-us/download/details.aspx?id=30652)
 

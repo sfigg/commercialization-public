@@ -241,6 +241,10 @@ The **Settings** app contains a predefined collection of user-configurable syste
 <td><p>Partners are required to set certain device metadata, including hardware, support, and OEM and MO information.</p></td>
 </tr>
 <tr class="odd">
+<td><p>[FM Radio](fm-radio.md)</p></td>
+<td><p>The BSP provided by the SoC vendor includes support for the FM radio.</p></td>
+</tr>
+<tr class="odd">
 <td><p>[Radio settings: Showing the FM radio](showing-the-fm-radio.md)</p></td>
 <td><p>For devices that include an FM radio chip, OEMs can show <strong>FM Radio</strong> in the Apps list.</p></td>
 </tr>

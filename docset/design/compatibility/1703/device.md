@@ -1,14 +1,14 @@
 ---
-title: Hardware Compatibility Specification for Components and Peripherals for Windows 10, version 1607
-Description: 'This section of the documentation provides specifications for hardware compatibility of components and peripherals with computers running Windows 10, version 1607.'
+title: Hardware Compatibility Specification for Components and Peripherals for Windows 10, version 1703
+Description: 'This section of the documentation provides specifications for hardware compatibility of components and peripherals with computers running Windows 10, version 1703.'
 ms.assetid: 
 MSHAttr: 
 author: beneluxboy
 ---
 
-# Hardware Compatibility Specification for Components and Peripherals for Windows 10, version 1607
+# Hardware Compatibility Specification for Components and Peripherals for Windows 10, version 1703
 
-This section of the documentation provides specifications for hardware compatibility of components and peripherals with computers running Windows 10, version 1607.
+This section of the documentation provides specifications for hardware compatibility of components and peripherals with computers running Windows 10, version 1703.
 
 These specifications are divided into the following categories and topics:
 
@@ -52,4 +52,5 @@ These specifications are divided into the following categories and topics:
 - [Device.Streaming.HMFT](device-streaming-hmft.md)
 - [Device.TrustedPlatformModule](device-trustedplatformmodule.md)
 
-Certification for Windows Server 2016, Azure Stack and SDDC must meet the Windows Hardware Compatibility Requirements as stated in version 1607 of the documentation and use HLK version 1607 build 14393 <https://go.microsoft.com/fwlink/p/?LinkID=404112> with matching playlist <http://aka.ms/hlkplaylist> and supplemental content to generate logs and following the policies stated in the Windows Server Policy doc <https://go.microsoft.com/fwlink/p/?linkid=834831>.  Questions about the Azure Stack or SDDC program or how to submit the results for solution validation should be directed to the appropriate Microsoft contact – technical account manager or partner management contact.
+> [!WARNING]
+> Certification for Windows Server 2016, Azure Stack, and SDDC must continue to meet the Windows Hardware Compatibility Requirements as stated in version 1607 of documentation, must use [version 1607 of the HLK (build 14393)](https://go.microsoft.com/fwlink/p/?LinkID=404112) with [matching playlist](http://aka.ms/hlkplaylist) and supplemental content to generate logs, and must follow policies as stated in the [Windows Server Policy document](https://go.microsoft.com/fwlink/p/?linkid=834831). Questions about the Azure Stack or SDDC programs or how to submit the results for solution validation should be directed to the appropriate Microsoft technical account manager or partner management contact.

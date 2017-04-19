@@ -26,8 +26,8 @@ The following diagram shows the NodeCache configuration service provider in tree
 
 ![nodecache csp](images/provisioning-csp-nodecache.png)
 
-<a href="" id="--device-vendor-msft"></a>**./Device/Vendor/MSFT**  
-Required. The root node for the NodeCache object. Supported operation is Get. This configuration service provider is used for enterprise device management only. This is a predefined MIME type to identify this managed object in OMA DM syntax. Starting in Windows 10, version 1607 the value is com.microsoft/1.0/MDM/NodeCache.
+<a href="" id="--device-vendor-msft"></a>**./Device/Vendor/MSFT and ./User/Vendor/MSFT**  
+Required. The root node for the NodeCache object. Supported operation is Get. This configuration service provider is used for enterprise device management only. This is a predefined MIME type to identify this managed object in OMA DM syntax. Starting in Windows 10, version 1607 the value is com.microsoft/\<version\>/MDM/NodeCache.
 
 <a href="" id="providerid"></a>***ProviderID***  
 Optional. Group settings per DM server. Each group of settings is distinguished by the server’s Provider ID. It should be the same DM server **PROVIDER-ID** value that was supplied through the [w7 APPLICATION configuration service provider](w7-application-csp.md) XML during the enrollment process. Only one enterprise management server is supported. That is, there should be only one *ProviderID* node under **NodeCache**. Scope is dynamic.
@@ -43,6 +43,11 @@ Data type is string. Supported operations are Get, Add, and Replace.
 Optional. List of nodes whose values do not match their expected values as specified in **/*NodeID*/ExpectedValue**. Scope is dynamic.
 
 Data type is string. Supported operation is Get.
+
+<a href="" id="providerid-changednodesdata"></a>***ProviderID*/ChangedNodesData**  
+Added in Windows 10, version 1703. Optional. XML containing nodes whose values do not match their expected values as specified in /NodeID/ExpectedValue.
+
+Suppported operation is Get.
 
 <a href="" id="providerid-nodes"></a>***ProviderID*/Nodes**  
 Required. Root node for cached nodes. Scope is dynamic.
@@ -80,6 +85,11 @@ Here's an example for setting the ExpectedValue to nonexistent.
    </Item>
 </Add>
 ```
+
+<a href="" id="-nodeid-autosetexpectedvalue"></a>**/*NodeID*/AutoSetExpectedValue**  
+Added in Windows 10, version 1703. Required. This automatically sets the value on the device to match the actual value of the node. The node is specified in NodeURI.
+
+Supported operations are Add, Get, and Delete.
 
 ## A typical DM session with the NodeCache configuration service provider
 
@@ -281,6 +291,61 @@ Replacing the cache version, node URI, and expected value:
    </Item>
 </Replace>
 ```
+
+For AutoSetExpectedValue, a Replace operation with empty data will query the ./DevDetail/Ext/Microsoft/DeviceName.
+
+```syntax
+          <Add>
+            <CmdID>2001</CmdID>
+            <Item>
+              <Target>
+                <LocURI>./Vendor/MSFT/NodeCache/MDM%20SyncML%20Server/Nodes/20</LocURI>
+              </Target>
+              <Meta>
+                <Format xmlns="syncml:metinf">node</Format>
+              </Meta>
+            </Item>
+          </Add>
+          <Add>
+            <CmdID>2002</CmdID>
+            <Item>
+              <Target>
+                <LocURI>./Vendor/MSFT/NodeCache/MDM%20SyncML%20Server/Nodes/20/NodeURI</LocURI>
+              </Target>
+              <Data>./DevDetail/Ext/Microsoft/DeviceName</Data>
+            </Item>
+          </Add>
+          <Replace>
+            <CmdID>2003</CmdID>
+            <Item>
+              <Target>
+               <LocURI>./Vendor/MSFT/NodeCache/MDM%20SyncML%20Server/Nodes/20/AutoSetExpectedValue</LocURI>
+              </Target>
+              <Data></Data>
+            </Item>
+          </Replace>
+```
+
+A Get operation on ./Vendor/MSFT/NodeCache/MDM%20SyncML%20Server/Nodes/20/ExpectedValue returns what the Device Name was when the AutoSet was called.
+
+A Get operation on the ChangedNodesData returns an encoded XML. Here is example:
+
+```syntax
+&lt;Nodes&gt;&lt;Node Id=&quot;10&quot; Uri=&quot;&quot;&gt;&lt;/Node&gt;&lt;Node Id=&quot;20&quot; Uri=&quot;./DevDetail/Ext/Microsoft/DeviceName&quot;&gt;U09NRU5FV1ZBTFVF&lt;/Node&gt;&lt;/Nodes&gt;
+```
+It represents this:
+
+```syntax
+<Nodes>
+    <Node Id="10" Uri=""></Node>
+    <Node Id="20" Uri="./DevDetail/Ext/Microsoft/DeviceName">U09NRU5FV1ZBTFVF</Node>
+</Nodes>
+```
+Id is the node ID that was added by the MDM server, and Uri is the path that the node is tracking.
+If a Uri is not set, the node will always be reported as changed, as in Node id 10.
+
+The value inside of the node tag is the actual value returned by the Uri, which means that for Node Id 20 the DeviceName did not match what was previously expected, and the device name is now U09NRU5FV1ZBTFVF instead of what it was previously.
+
 
 ## Related topics
 
