@@ -1,31 +1,31 @@
 ---
-title: App-V app deployment and configuration via MDM
-description: App-V app deployment and configuration via MDM
+title: Deploy and configure App-V apps using MDM
+description: Deploy and configure App-V apps using MDM
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ---
 
-# App-V app deployment and configuration via MDM
+# Deploy and configure App-V apps using MDM
 
-## Executive Summary
+## Executive summary
 
-<p>App-V Apps have typically been configured, deployed and managed through on-premise group policies via SCCM or App-V server.  In Windows 10 Creators Update App-V apps can be configured, deployed and managed through MDM matching their on-premise counterparts.</p>
+<p>Microsoft Application Virtualization (App-V) apps have typically been configured, deployed, and managed through on-premise group policies using  System Center Configuration Manager (SCCM) or App-V server.  In Windows 10, version 1703, App-V apps can be configured, deployed, and managed using mobile device management (MDM), matching their on-premise counterparts.</p>
 
-## Architectural Overview
+## Architectural overview
 
-<p>MDM service will replace SCCM and App-V Server for cloud and hybrid based deployments.  All capabilities such as App-V enablement, configuration, and publishing can be completed using MDM.</p>
+<p>MDM service will replace SCCM and App-V server for cloud and hybrid based deployments.  All capabilities such as App-V enablement, configuration, and publishing can be completed using MDM.</p>
 
 > [!WARNING]
 > These are preliminary architecture diagrams and examples.  Actual schemas may vary upon release.
 
 ![AppV_Config_and_Deploy](images/rs2-appv-config-and-deploy.png)
 
-<p align="center"><b>Fig 1.</b> App-V deployment with Enterprise MDM Server</p>
+<p align="center"><b>Fig 1.</b> App-V deployment with enterprise MDM server</p>
 
 ### EnterpriseAppVManagement CSP node structure
 
-<p>(./User/Vendor/MSFT/EnterpriseAppVManagement) contains the following sub-nodes:</p>
+<p>(./User/Vendor/MSFT/EnterpriseAppVManagement) contains the following sub-nodes.</p>
 
 <p><b>AppVPackageManagement</b> - Primarily read-only App-V package inventory data for MDM servers to query current packages.</p>
 
@@ -46,9 +46,9 @@ MSHAttr:
   - AppVPublishing
   - AppVDynamicPolicy
 
-<p>App-V attributes added. Otherwise identical to the App management CSP on MDM</p>
+<p>App-V attributes added. Otherwise identical to the app management configuration service provider (CSP) on MDM.</p>
 
-<p><b>AppVPublishing</b> - An exec action node, which contains the AppV publishing configuration for a given MDM device (applied globally to all users for that device) or a specific MDM user.</p>
+<p><b>AppVPublishing</b> - An exec action node that contains the App-V publishing configuration for an MDM device (applied globally to all users for that device) or a specific MDM user.</p>
 
 - EnterpriseAppVManagement
   - AppVPackageManagement
@@ -62,7 +62,7 @@ MSHAttr:
 	  - PublishXML
   - AppVDynamicPolicy
 
-<p><b>AppVDynamicPolicy</b> - A read/write node, which contains the AppV dynamic configuration for a given MDM device (applied globally to all users for that device) or a specific MDM user.</p>
+<p><b>AppVDynamicPolicy</b> - A read/write node that contains the App-V dynamic configuration for an MDM device (applied globally to all users for that device) or a specific MDM user.</p>
 
 - EnterpriseAppVManagement
   - AppVPackageManagement
@@ -71,21 +71,27 @@ MSHAttr:
     - [ConfigurationId]
 	  - Policy
 
-<p><b>Dynamic Policy examples are documented here: </b><a href="https://technet.microsoft.com/en-us/itpro/windows/manage/appv-application-publishing-and-client-interaction#bkmk-dynamic-config">Dynamic configuration processing</a></p>
+<p>Dynamic policy examples:</p>
 
-<p><b>Sync command</b> (<a href=" https://msdn.microsoft.com/enus/library/mt739986.aspx">App-V Sync protocol reference</a>): The examples in the scenarios section below demonstrate how the publishing document should be crafted to successfully publish packages, dynamic policies and connection groups.</p>
+[Dynamic configuration processing](https://technet.microsoft.com/en-us/itpro/windows/manage/appv-application-publishing-and-client-interaction#bkmk-dynamic-config">Dynamic configuration processing)
+
+<p>Sync command:</p>
+
+[App-V Sync protocol reference]( https://msdn.microsoft.com/enus/library/mt739986.aspx)
+
+<p>The examples in the scenarios section demonstrate how the publishing document should be created to successfully publish packages, dynamic policies, and connection groups.</p>
 
 ## Scenarios addressed in App-V MDM functionality
 
-<p>All App-V group policies will be reflected by having a corresponding CSP that can be set via the PolicyManager CSP.  The CSPs match all on-premise App-V configuration capabilities.</p>
+<p>All App-V group policies will be reflected by having a corresponding CSP that can be set using the PolicyManager CSP.  The CSPs match all on-premise App-V configuration capabilities.</p>
 
-### SyncML Examples
+### SyncML examples
 
 <p>The following SyncML examples address specific App-V client scenarios.</p>
 
-#### Enable App-V Client
+#### Enable App-V client
 
-<p>This is a basic operation to enable App-V on the device.</p>
+<p>This example shows how to enable App-V on the device.</p>
 
 ``` syntax
 <Replace>
@@ -103,9 +109,9 @@ MSHAttr:
 </Replace>
 ```
 
-#### Configure App-V Client
+#### Configure App-V client
 
-<p>This is a basic operation to allow package scripts to run during package operations (publish, running, and unpublish).  Allowing package scripts will assist in package deployments (add, publishing of App-V apps).</p>
+<p>This example shows how to allow package scripts to run during package operations (publish, run, and unpublish).  Allowing package scripts assists in package deployments (add and publish of App-V apps).</p>
 
 ``` syntax
 <Replace> 
@@ -123,11 +129,13 @@ MSHAttr:
 </Replace> 
 ```
 
-<p>Complete list of App-V policies can be found here: <a href="https://msdn.microsoft.com/en-us/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider">Policy CSP</a></p>
+<p>Complete list of App-V policies can be found here:</p>
+
+[Policy CSP](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider)
 
 #### SyncML with package published for a device (global to all users for that device)
 
-<p>The following SyncML documents a basic example on publishing a package globally on an MDM enrolled device for all device users:</p>
+<p>This SyncML example shows how to publish a package globally on an MDM enrolled device for all device users.</p>
 
 ``` syntax
 <Replace>
@@ -169,7 +177,7 @@ MSHAttr:
 
 #### SyncML with package (with dynamic configuration policy) published for a device (global to all users on that device)
 
-<p>The following SyncML documents a basic example on publishing a package globally with a policy which adds two shortcuts for the package, on an MDM enrolled device:</p>
+<p>This SyncML example shows how to publish a package globally, with a policy that adds two shortcuts for the package, on an MDM enrolled device.</p>
 
 ``` syntax
 <Replace>
@@ -263,7 +271,7 @@ MSHAttr:
 
 #### SyncML with package (using user config deployment) published for a specific user
 
-<p>The following SyncML documents publishing a package for a specific MDM user:</p>
+<p>This SyncML example shows how to publish a package for a specific MDM user.</p>
 
 ``` syntax
 <Replace>
@@ -303,10 +311,10 @@ MSHAttr:
 
 #### SyncML for publishing mixed-mode connection group containing global and user-published packages
 
-<p>The following SyncML documents how to publish a connection group and grouping applications and plugins together.</p>
+<p>This SyncML example shows how to publish a connection group, and group applications and plugins together.</p>
 
 > [!NOTE]
-> The user connection group has the user only package as optional in this example, which implies users without the optional package can continue to launch the global package within the same connection group.
+> The user connection group has the user-only package as optional in this example, which implies users without the optional package can continue to launch the global package within the same connection group.
 
 ``` syntax
 <Replace>
@@ -383,7 +391,7 @@ MSHAttr:
 
 #### Unpublish example SyncML for all global packages
 
-<p>The following SyncML demonstrates unpublishing all global packages on the device, by sending an empty package and connection group list in the SyncML.</p>
+<p>This SyncML example shows how to unpublish all global packages on the device by sending an empty package and connection group list in the SyncML.</p>
 
 ``` syntax
 <Replace>
@@ -419,7 +427,7 @@ MSHAttr:
 
 #### Query packages on a device
 
-<p>The following two SyncML commands return all global, and user-published packages on the device.</p>
+<p>These SyncML examples return all global, and user-published packages on the device.</p>
 
 ``` syntax
 <Get>
