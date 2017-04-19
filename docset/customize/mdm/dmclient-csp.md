@@ -615,22 +615,22 @@ Optional. Added in Windows 10, version 1703.
 Supported operations are Add, Delete, and Get.
 
 <a href="" id="provider-providerid-customenrollmentcompletepage-title"></a>**Provider/*ProviderID*/CustomEnrollmentCompletePage/Title**  
-Optional. Added in Windows 10, version 1703.
+Optional. Added in Windows 10, version 1703. Specifies the title of the all done page that appears at the end of the MDM enrollment flow.
 
 Supported operations are Add, Delete, Get, and Replace. Value type is string.
 
 <a href="" id="provider-providerid-customenrollmentcompletepage-bodytext"></a>**Provider/*ProviderID*/CustomEnrollmentCompletePage/BodyText**  
-Optional. Added in Windows 10, version 1703.
+Optional. Added in Windows 10, version 1703. Specifies the body text of the all done page that appears at the end of the MDM enrollment flow.
 
 Supported operations are Add, Delete, Get, and Replace. Value type is string.
 
 <a href="" id="provider-providerid-customenrollmentcompletepage-hyperlinkhref"></a>**Provider/*ProviderID*/CustomEnrollmentCompletePage/HyperlinkHref**  
-Optional. Added in Windows 10, version 1703.
+Optional. Added in Windows 10, version 1703. Specifies the URL that is shown at the end of the MDM enrollment flow.
 
 Supported operations are Add, Delete, Get, and Replace. Value type is string.
 
 <a href="" id="provider-providerid-customenrollmentcompletepage-hyperlinktext"></a>**Provider/*ProviderID*/CustomEnrollmentCompletePage/HyperlinkText**  
-Optional. Added in Windows 10, version 1703.
+Optional. Added in Windows 10, version 1703. Specifies the display text for the URL that is shown at the end of the MDM enrollment flow.
 
 Supported operations are Add, Delete, Get, and Replace. Value type is string.
 
