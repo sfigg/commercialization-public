@@ -10,11 +10,7 @@ MSHAttr:
 
 ## Executive summary
 
-<p>Microsoft Application Virtualization (App-V) apps have typically been configured, deployed, and managed through on-premise group policies using  System Center Configuration Manager (SCCM) or App-V server.  In Windows 10, version 1703, App-V apps can be configured, deployed, and managed using mobile device management (MDM), matching their on-premise counterparts.</p>
-
-## Architectural overview
-
-<p>MDM service will replace SCCM and App-V server for cloud and hybrid based deployments.  All capabilities such as App-V enablement, configuration, and publishing can be completed using MDM.</p>
+<p>Microsoft Application Virtualization (App-V) apps have typically been configured, deployed, and managed through on-premise group policies using System Center Configuration Manager (SCCM) or App-V server. In Windows 10, version 1703, App-V apps can be configured, deployed, and managed using mobile device management (MDM), matching their on-premise counterparts. MDM service provides the ability to publish App-V packages to clients running Windows 10, version 1703 (or later). All capabilities such as App-V enablement, configuration, and publishing can be completed using MDM.</p>
 
 > [!WARNING]
 > These are preliminary architecture diagrams and examples.  Actual schemas may vary upon release.
@@ -25,7 +21,42 @@ MSHAttr:
 
 ### EnterpriseAppVManagement CSP node structure
 
+[EnterpriseAppVManagement CSP reference](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/customize/mdm/enterpriseappvmanagement-csp)
+
+![enterpriseappvmanagement csp](images/provisioning-csp-enterpriseappvmanagement.png)
+
 <p>(./User/Vendor/MSFT/EnterpriseAppVManagement) contains the following sub-nodes.</p>
+
+<p><b>AppVPublishing</b> - An exec action node that contains the App-V publishing configuration for an MDM device (applied globally to all users for that device) or a specific MDM user.</p>
+
+- EnterpriseAppVManagement
+  - AppVPackageManagement
+  - **AppVPublishing**
+    - LastSync
+	  - LastError
+	  - LastErrorDescription
+	  - SyncStatusDescription
+	  - SyncProgress
+	- Sync
+	  - PublishXML
+  - AppVDynamicPolicy
+
+<p>Sync command:</p>
+
+[App-V Sync protocol reference]( https://msdn.microsoft.com/enus/library/mt739986.aspx)
+
+<p><b>AppVDynamicPolicy</b> - A read/write node that contains the App-V dynamic configuration for an MDM device (applied globally to all users for that device) or a specific MDM user.</p>
+
+- EnterpriseAppVManagement
+  - AppVPackageManagement
+  - AppVPublishing
+  - **AppVDynamicPolicy**
+    - [ConfigurationId]
+	  - Policy
+
+<p>Dynamic policy examples:</p>
+
+[Dynamic configuration processing](https://technet.microsoft.com/en-us/itpro/windows/manage/appv-application-publishing-and-client-interaction#bkmk-dynamic-config">Dynamic configuration processing)
 
 <p><b>AppVPackageManagement</b> - Primarily read-only App-V package inventory data for MDM servers to query current packages.</p>
 
@@ -46,44 +77,15 @@ MSHAttr:
   - AppVPublishing
   - AppVDynamicPolicy
 
-<p>App-V attributes added. Otherwise identical to the app management configuration service provider (CSP) on MDM.</p>
-
-<p><b>AppVPublishing</b> - An exec action node that contains the App-V publishing configuration for an MDM device (applied globally to all users for that device) or a specific MDM user.</p>
-
-- EnterpriseAppVManagement
-  - AppVPackageManagement
-  - **AppVPublishing**
-    - LastSync
-	  - LastError
-	  - LastErrorDescription
-	  - SyncStatusDescription
-	  - SyncProgress
-	- Sync
-	  - PublishXML
-  - AppVDynamicPolicy
-
-<p><b>AppVDynamicPolicy</b> - A read/write node that contains the App-V dynamic configuration for an MDM device (applied globally to all users for that device) or a specific MDM user.</p>
-
-- EnterpriseAppVManagement
-  - AppVPackageManagement
-  - AppVPublishing
-  - **AppVDynamicPolicy**
-    - [ConfigurationId]
-	  - Policy
-
-<p>Dynamic policy examples:</p>
-
-[Dynamic configuration processing](https://technet.microsoft.com/en-us/itpro/windows/manage/appv-application-publishing-and-client-interaction#bkmk-dynamic-config">Dynamic configuration processing)
-
-<p>Sync command:</p>
-
-[App-V Sync protocol reference]( https://msdn.microsoft.com/enus/library/mt739986.aspx)
-
 <p>The examples in the scenarios section demonstrate how the publishing document should be created to successfully publish packages, dynamic policies, and connection groups.</p>
 
 ## Scenarios addressed in App-V MDM functionality
 
-<p>All App-V group policies will be reflected by having a corresponding CSP that can be set using the PolicyManager CSP.  The CSPs match all on-premise App-V configuration capabilities.</p>
+<p>All App-V group policies will be reflected by having a corresponding CSP that can be set using the PolicyManager CSP. The CSPs match all on-premise App-V configuration capabilities. In addition, new App-V package management capability has been added to closely match the App-V PowerShell functionality.</p>
+
+<p>A complete list of App-V policies can be found here:</p>
+
+[ADMX-backed policy reference](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/customize/mdm/policy-admx-backed)
 
 ### SyncML examples
 
@@ -255,7 +257,7 @@ MSHAttr:
 		<Data>
 			<Publishing Protocol="2.0">
 				<Packages>
-					<Package PackageUrl="http://appv51server/appvdir/ServerPackages/Win10X64/Skype_RS2Win10_X64/Skype_RS 2Win10_X64_2.appv" VersionId="05fcf098-c949-4ea4-9aee-757abd33e0e4" PackageId="57650ac11731-4b4c-899c-a25548374dab">
+					<Package PackageUrl="http://hostname/serverpackages/apppackage.appv" VersionId="05fcf098-c949-4ea4-9aee-757abd33e0e4" PackageId="57650ac11731-4b4c-899c-a25548374dab">
 						<DeploymentConfiguration ConfigurationId="38" Path="38" Timestamp="2012-08-27T16:14:30.87" /></Package>
 				</Packages>
 				<NoGroup>
@@ -298,7 +300,7 @@ MSHAttr:
 		<Data>
 			<Publishing Protocol="2.0">
 				<Packages>
-					<Package PackageUrl="http://appv51server/appvdir/ServerPackages/Win10X64/AdobeReaderRS2/AdbRdrDCRS2_ x64_Win10_6.appv" VersionId="c68b054c-ff5f-45a6-9b41-788f2194e3c1" PackageId="e9a51aaf-5d9a48df-96e2-3372a278bca4"></Package>
+					<Package PackageUrl="http://hostname/serverpackages/apppackage.appv" VersionId="c68b054c-ff5f-45a6-9b41-788f2194e3c1" PackageId="e9a51aaf-5d9a48df-96e2-3372a278bca4"></Package>
 				</Packages>
 				<NoGroup>
 					<Package PackageId="e9a51aaf-5d9a-48df-96e23372a278bca4"/>
@@ -341,7 +343,7 @@ MSHAttr:
 		<Data>
 			<Publishing Protocol="2.0">
 				<Packages>
-					<Package PackageUrl="http://appv51server/appvdir/ServerPackages/Win10X64/Skype_RS2Win10_X64/Skype_RS 2Win10_X64_2.appv" VersionId="05fcf098-c949-4ea4-9aee-757abd33e0e4" PackageId="57650ac11731-4b4c-899c-a25548374dab"></Package>
+					<Package PackageUrl="http://hostname/serverpackages/apppackage.appv" VersionId="05fcf098-c949-4ea4-9aee-757abd33e0e4" PackageId="57650ac11731-4b4c-899c-a25548374dab"></Package>
 				</Packages>
 			</Publishing>
 		</Data>
@@ -371,8 +373,8 @@ MSHAttr:
 		<Data>
 			<Publishing Protocol="2.0">
 				<Packages> 
-					<Package PackageUrl="http://appv51server/appvdir/ServerPackages/Win10X64/AdobeReaderRS2/AdbRdrDCRS2_ x64_Win10_6.appv" VersionId="c68b054c-ff5f-45a6-9b41-788f2194e3c1" PackageId="e9a51aaf-5d9a48df-96e2-3372a278bca4"></Package>
-					<Package PackageUrl="http://appv51server/appvdir/ServerPackages/Win10X64/7ZipRS2/7ZipRS2_X64_Win10_3. appv" VersionId="fd6b51c7-959e-4d04-ac36-a8244a5693d0" PackageId="565d8479-394d-439c-824d0e09b7ee732c"></Package>
+					<Package PackageUrl="http://hostname/serverpackages/apppackage.appv" VersionId="c68b054c-ff5f-45a6-9b41-788f2194e3c1" PackageId="e9a51aaf-5d9a48df-96e2-3372a278bca4"></Package>
+					<Package PackageUrl="http://hostname/serverpackages/apppackage.appv" VersionId="fd6b51c7-959e-4d04-ac36-a8244a5693d0" PackageId="565d8479-394d-439c-824d0e09b7ee732c"></Package>
 				</Packages>
 				<NoGroup>
 					<Package PackageId="565d8479-394d-439c-824d0e09b7ee732c"/>
