@@ -73,6 +73,13 @@ Contains the last error code description. The LastErrorDesc value is looked up f
 
 Value type is string. Supported operation is Get.
 
+<a href="" id="msi-upgradecode"></a>**MSI/UpgradeCode**  
+TBD
+
+<a href="" id="msi-upgradecode"></a>**MSI/UpgradeCode/_Guid_**  
+TBD
+
+
 ## Examples
 
 
