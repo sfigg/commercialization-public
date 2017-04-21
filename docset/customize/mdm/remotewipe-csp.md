@@ -32,6 +32,13 @@ When used with OMA Client Provisioning, a dummy value of "1" should be included 
 
 The information that was backed up will be restored and applied to the device when it resumes. The return status code shows whether the device accepted the Exec command.
 
+<a href="" id="doWipeProtected"></a>**doWipeProtected**  
+Added in Windows 10, version 1703. Exec on this node performs a remote wipe on the device and fully clean the internal drive. In some device configurations, this command may leave the device unable to boot. The return status code indicates whether the device accepted the Exec command.
+
+The doWipeProtected is functionally similar to doWipe. But unlike doWipe, which can be easily circumvented by simply power cycling the device, doWipeProtected will keep trying to reset the device until it’s done.
+
+Supported operation is Exec.
+
 ## The Remote Wipe Process
 
 
