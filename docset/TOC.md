@@ -41,7 +41,6 @@
 #### [Behavior differences between S3 and Modern Standby](design/device-experiences/behavior-differences-between-s3-and-modern-standby.md)
 #### [Modern Standby system behavior verification](design/device-experiences/modern-standby-system-behavior-verification.md)
 ##### [Basic functionality and reliability testing](design/device-experiences/basic-functionality-and-reliability-testing.md)
-##### [Power/Performance Targets](design/device-experiences/power-performance-targets.md)
 ##### [Tools available](design/device-experiences/tools-available.md)
 #### [Modern Standby FAQs](design/device-experiences/modern-standby-faqs.md)
 #### [Modern standby user experiences](design/device-experiences/modern-standby-user-experiences.md)
