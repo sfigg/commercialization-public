@@ -264,6 +264,11 @@ Subject specifies the certificate to search for. For example, to specify that yo
 
 Value type is string. Supported operations are Add, Get, and Replace.
 
+<a href="" id="initiatesession"></a>**InitiateSession**  
+Optional. When this node is added, a session is started with the MDM server.
+
+Supported operations are Add, and Replace.
+
 ## Related topics
 
 

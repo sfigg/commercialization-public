@@ -28,6 +28,9 @@ Windows 10 reduces power consumption by the OS and only wakes from the lowest p
 
 Modern Standby is available for both Windows 10 desktop and Windows 10 Mobile.
 
+> [!NOTE]
+> You cannot switch between S3 and Modern Standby by changing a setting in the BIOS. Switching the power model is not supported in Windows without a complete OS re-install. 
+
 ## Terminology
 
 

@@ -519,6 +519,44 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 </ul>
 </td></tr>
 <tr class="odd">
+<td style="vertical-align:top"><p>[CertificateStore CSP](certificatestore-csp.md)</p></td>
+<td style="vertical-align:top"><p>Added the following setting:</p>
+<ul>
+<li>My/WSTEP/Renew/RetryAfterExpiryInterval</li>
+</ul>
+</td>
+</tr>
+<tr class="even">
+<td style="vertical-align:top"><p>[ClientCertificateInstall CSP](clientcertificateinstall-csp.md)</p></td>
+<td style="vertical-align:top"><p>Added the following setting:</p>
+<ul>
+<li>SCEP/UniqueID/Install/AADKeyIdentifierList</li>
+</ul>
+</td>
+</tr>
+<tr class="odd">
+<td style="vertical-align:top"><p>[DMAcc CSP](dmacc-csp.md)</p></td>
+<td style="vertical-align:top"><p>Added the following setting:</p>
+<ul>
+<li>AccountUID/EXT/Microsoft/InitiateSession</li>
+</ul>
+</td>
+</tr>
+<tr class="even">
+<td style="vertical-align:top"><p>[DMClient CSP](dmclient-csp.md)</p></td>
+<td style="vertical-align:top"><p>Added the following nodes and settings:</p>
+<ul>
+<li>HWDevID</li>
+<li>Provider/ProviderID/ManagementServerToUpgradeTo</li>
+<li>Provider/ProviderID/CustomEnrollmentCompletePage</li>
+<li>Provider/ProviderID/CustomEnrollmentCompletePage/Title</li>
+<li>Provider/ProviderID/CustomEnrollmentCompletePage/BodyText</li>
+<li>Provider/ProviderID/CustomEnrollmentCompletePage/HyperlinkHref</li>
+<li>Provider/ProviderID/CustomEnrollmentCompletePage/HyperlinkText</li>
+</ul>
+</td>
+</tr>
+<tr class="odd">
 <td style="vertical-align:top"><p>[CellularSettings CSP](cellularsettings-csp.md)</p><p>[CM_CellularEntries CSP](cm-cellularentries-csp.md)</p><p>[EnterpriseAPN CSP](enterpriseapn-csp.md)</p></td>
 <td style="vertical-align:top"><p>For these CSPs, support was added for Windows 10 Home, Pro, Enterprise, and Education editions.</p>
 </td></tr>
@@ -776,6 +814,10 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>ChangedNodesData</li>
 <li>AutoSetExpectedValue</li>
 </ul>
+</td></tr>
+<tr class="even">
+<td style="vertical-align:top">[Download all the DDF files for Windows 10, version 1703](http://download.microsoft.com/download/C/7/C/C7C94663-44CF-4221-ABCA-BC895F42B6C2/Windows10_1703_DDF_download.zip)</td>
+<td style="vertical-align:top"><p>Added a zip file containing the DDF XML files of the CSPs. The link to the download is available in the DDF topics of various CSPs.</p>
 </td></tr>
 </tbody>
 </table> 
@@ -1082,6 +1124,44 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <td style="vertical-align:top"><p>Added new CSP for Windows 10, version 1703.</p>
 </td></tr>
 <tr class="odd">
+<td style="vertical-align:top"><p>[CertificateStore CSP](certificatestore-csp.md)</p></td>
+<td style="vertical-align:top"><p>Updated in Windows 10, version 1703. Added the following setting:</p>
+<ul>
+<li>My/WSTEP/Renew/RetryAfterExpiryInterval</li>
+</ul>
+</td>
+</tr>
+<tr class="even">
+<td style="vertical-align:top"><p>[ClientCertificateInstall CSP](clientcertificateinstall-csp.md)</p></td>
+<td style="vertical-align:top"><p>Updated in Windows 10, version 1703. Added the following setting:</p>
+<ul>
+<li>SCEP/UniqueID/Install/AADKeyIdentifierList</li>
+</ul>
+</td>
+</tr>
+<tr class="odd">
+<td style="vertical-align:top"><p>[DMAcc CSP](dmacc-csp.md)</p></td>
+<td style="vertical-align:top"><p>Updated in Windows 10, version 1703. Added the following setting:</p>
+<ul>
+<li>AccountUID/EXT/Microsoft/InitiateSession</li>
+</ul>
+</td>
+</tr>
+<tr class="even">
+<td style="vertical-align:top"><p>[DMClient CSP](dmclient-csp.md)</p></td>
+<td style="vertical-align:top"><p>Updated in Windows 10, version 1703. Added the following nodes and settings:</p>
+<ul>
+<li>HWDevID</li>
+<li>Provider/ProviderID/ManagementServerToUpgradeTo</li>
+<li>Provider/ProviderID/CustomEnrollmentCompletePage</li>
+<li>Provider/ProviderID/CustomEnrollmentCompletePage/Title</li>
+<li>Provider/ProviderID/CustomEnrollmentCompletePage/BodyText</li>
+<li>Provider/ProviderID/CustomEnrollmentCompletePage/HyperlinkHref</li>
+<li>Provider/ProviderID/CustomEnrollmentCompletePage/HyperlinkText</li>
+</ul>
+</td>
+</tr>
+<tr class="odd">
 <td style="vertical-align:top">[SharedPC CSP](dmsessionactions-csp.md)</td>
 <td style="vertical-align:top"><p>Added new settings in Windows 10, version 1703.</p>
 <ul>
@@ -1107,6 +1187,10 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>ChangedNodesData</li>
 <li>AutoSetExpectedValue</li>
 </ul>
+</td></tr>
+<tr class="even">
+<td style="vertical-align:top">[Download all the DDF files for Windows 10, version 1703](http://download.microsoft.com/download/C/7/C/C7C94663-44CF-4221-ABCA-BC895F42B6C2/Windows10_1703_DDF_download.zip)</td>
+<td style="vertical-align:top"><p>Added a zip file containing the DDF XML files of the CSPs. The link to the download is available in the DDF topics of various CSPs.</p>
 </td></tr>
 </tbody>
 </table>
