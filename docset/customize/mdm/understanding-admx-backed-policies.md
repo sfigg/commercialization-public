@@ -261,7 +261,7 @@ The **LocURI** for the above GP policy is:
 
 `.\Device\Vendor\MSFT\Policy\Config\AppVirtualization\PublishingAllowServer2`
 
-To construct SyncML for your area/policy using the samples below, you need to update the **data id** and the **value** in the &ltData&gt section of the SyncML. The items prefixed with an &#39&amp&#39 character are the escape characters needed and can be retained as shown.
+To construct SyncML for your area/policy using the samples below, you need to update the **data id** and the **value** in the &ltData&gt section of the SyncML. The items prefixed with an '&' character are the escape characters needed and can be retained as shown.
 
 ### <a href="" id="text-element"></a>Text Element
 
