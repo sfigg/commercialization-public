@@ -16,13 +16,13 @@ Below is the internal OS mapping of a Group Policy to a MDM area and name. This 
 
 `./[Device|User]/Vendor/MSFT/Policy/Config/[config|result]/<area>/<policy>`
 
-The *wm.xml* for each mapped area can be found in its own directory under:
+The **wm.xml** for each mapped area can be found in its own directory under:
 
 `\\SDXROOT\onecoreuap\admin\enterprisemgmt\policymanager\policydefinition\`
 
 Note that the data payload of the SyncML needs to be encoded in order to not conflict with the boilerplate SyncML XML tags. Use this online tool for encoding and encoding the policy data [Coder's Toolbox](http://coderstoolbox.net/string/#!encoding=xml&action=encode&charset=us_ascii)
 
-*Snippet of wm.xml for AppVirtualization area:*
+**Snippet of wm.xml for AppVirtualization area:**
 
 ```XML
 <identity xmlns="urn:Microsoft.CompPlat/ManifestSchema.v1.00"  xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" owner="Microsoft" namespace="Windows-DeviceManagement-PolicyDefinition" name="AppVirtualization">
@@ -41,7 +41,7 @@ Note that the data payload of the SyncML needs to be encoded in order to not con
 .
 ```
 
-The *LocURI* for the above GP policy is:
+The **LocURI** for the above GP policy is:
 
 `.\Device\Vendor\MSFT\Policy\Config\AppVirtualization\PublishingAllowServer2`
 
@@ -51,7 +51,7 @@ To construct SyncML for your area/policy using the samples below, you need to up
 
 The text element simply corresponds to a string and correspondingly to an edit box in a policy panel display by gpedit.msc. The string is stored in the registry of type REG_SZ.
 
-*ADMX file: inetres.admx*
+**ADMX file: inetres.admx**
 
 ```XML
     <policy name="RestrictHomePage" class="User" displayName="$(string.RestrictHomePage)" explainText="$(string.IE_ExplainRestrictHomePage)" presentation="$(presentation.RestrictHomePage)" key="Software\Policies\Microsoft\Internet Explorer\Control Panel" valueName="HomePage">
@@ -63,7 +63,7 @@ The text element simply corresponds to a string and correspondingly to an edit b
     </policy>
 ```
 
-*Corresponding SyncML:*
+### Corresponding SyncML:
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -104,7 +104,7 @@ The multiText element simply corresponds to a REG_MULTISZ registry string and co
     </policy>
 ```
 
-*Corresponding SyncML:*
+### Corresponding SyncML:
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -134,7 +134,7 @@ The List element simply corresponds to a hive of REG_SZ registry strings and cor
 Note that it is expected that each string in the SyncML is to be separated by the Unicode character 0xF000 (encoded version: &#xF000;) 
 Variations of the List element dictated by attributes. These attributes are ignored by the Policy Manager runtime. It is expected that the MDM server to manage the name/value pairs. See below a simple writeup of Group Policy List. 
 
-*ADMX file: inetres.admx*
+**ADMX file: inetres.admx**
 
 ```XML
     <policy name="SecondaryHomePages" class="Both" displayName="$(string.SecondaryHomePages)" explainText="$(string.IE_ExplainSecondaryHomePages)" presentation="$(presentation.SecondaryHomePages)" key="Software\Policies\Microsoft\Internet Explorer\Main\SecondaryStartPages">
@@ -146,7 +146,7 @@ Variations of the List element dictated by attributes. These attributes are igno
     </policy>
 ```
 
-*Corresponding SyncML:*
+### Corresponding SyncML:
 
 ```XML
 <SyncML xmlns="SYNCML:SYNCML1.1">
@@ -178,7 +178,7 @@ Variations of the List element dictated by attributes. These attributes are igno
     </policy>
 ```
 
-*Corresponding SyncML:*
+### Corresponding SyncML:
 
 ```XML
 <SyncML xmlns="SYNCML:SYNCML1.1">
@@ -237,7 +237,7 @@ Variations of the List element dictated by attributes. These attributes are igno
 </policy>
 ```
 
-*Corresponding SyncML:*
+### Corresponding SyncML:
 
 ```XML
 <SyncML xmlns="SYNCML:SYNCML1.1">
@@ -273,7 +273,7 @@ Variations of the List element dictated by attributes. These attributes are igno
 </policy>
 ```
 
-*Corresponding SyncML:*
+### Corresponding SyncML:
 
 ```XML
 <SyncML xmlns="SYNCML:SYNCML1.1">
@@ -320,7 +320,7 @@ Variations of the List element dictated by attributes. These attributes are igno
       </elements>
 </policy>
 
-*Corresponding SyncML:*
+### Corresponding SyncML:
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
