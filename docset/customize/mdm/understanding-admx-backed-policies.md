@@ -18,7 +18,13 @@ Starting in Windows 10 version 1703, Mobile Device Management (MDM) policy confi
     - [Disabling a policy](#disabling-a-policy)
     - [Setting a policy to not configured](#setting-a-policy-to-not-configured)
 -   [Sample SyncML for various ADMX elements](sample-syncml-for-various-admx-elements)
-
+    - [Boolean Element](boolean-element)
+    - [Decimal Element](decimal-element)
+    - [Enum](enum)
+    - [No Elements](no-elements)
+    - [MultiText Element](multitext-element)
+    - [Text Element](text-element)
+    - [List Element (and its variations)](list-element-and-variations)
 
 ## <a href="" id="background"></a>Background
 
@@ -248,10 +254,10 @@ Note that the data payload of the SyncML needs to be encoded so that it does not
 .
 .
 .
-                 <stringPolicy name="PublishingAllowServer2" notSupportedOnPlatform="phone" admxbacked="appv.admx" scope="machine">
-                    <ADMXPolicy area="appv~AT~System~CAT_AppV~CAT_Publishing" name="Publishing_Server2_Policy" scope="machine" />
-                   <registryKeyRedirect path="SOFTWARE\Policies\Microsoft\AppV\Client\Publishing\Servers\2" />
-                 </stringPolicy >
+		 <stringPolicy name="PublishingAllowServer2" notSupportedOnPlatform="phone" admxbacked="appv.admx" scope="machine">
+			<ADMXPolicy area="appv~AT~System~CAT_AppV~CAT_Publishing" name="Publishing_Server2_Policy" scope="machine" />
+		   <registryKeyRedirect path="SOFTWARE\Policies\Microsoft\AppV\Client\Publishing\Servers\2" />
+		 </stringPolicy >
 .
 .
 .
@@ -344,7 +350,7 @@ The `multiText` element simply corresponds to a REG_MULTISZ registry string and 
 </SyncML>
 ```
 
-### <a href="" id="list-elements"></a>List Element (and its variations)
+### <a href="" id="list-elements-and-variations"></a>List Element (and its variations)
 
 The `list` element simply corresponds to a hive of REG_SZ registry strings and correspondingly to a grid to enter multiple strings in a policy panel display by gpedit.msc. How this is represented in SyncML is as a string containing pairs of strings. Each pair is a REG_SZ name/value key. 
 Note that it is expected that each string in the SyncML is to be separated by the Unicode character 0xF000 (encoded version: &#xF000;) 
