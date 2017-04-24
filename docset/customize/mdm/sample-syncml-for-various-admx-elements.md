@@ -25,7 +25,7 @@ The **wm.xml** for each mapped area can be found in its own directory under:
 
 `\\SDXROOT\onecoreuap\admin\enterprisemgmt\policymanager\policydefinition\`
 
-Note that the data payload of the SyncML needs to be encoded in order to not conflict with the boilerplate SyncML XML tags. Use this online tool for encoding and encoding the policy data [Coder's Toolbox](http://coderstoolbox.net/string/#!encoding=xml&action=encode&charset=us_ascii)
+Note that the data payload of the SyncML needs to be encoded so that it does not conflict with the boilerplate SyncML XML tags. Use this online tool for encoding and encoding the policy data [Coder's Toolbox](http://coderstoolbox.net/string/#!encoding=xml&action=encode&charset=us_ascii)
 
 **Snippet of wm.xml for AppVirtualization area:**
 
