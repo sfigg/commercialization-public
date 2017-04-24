@@ -18,7 +18,7 @@ The following diagram shows the EnterpriseDesktopAppManagement CSP in tree forma
 
 ![enterprisedesktopappmanagement csp](images/provisioning-csp-enterprisedesktopappmanagement.png)
 
-<a href="" id="--vendor-msft-enterprisedesktopappmanagement"></a>**./Vendor/MSFT/EnterpriseDesktopAppManagement**  
+<a href="" id="--vendor-msft-enterprisedesktopappmanagement"></a>**./Device/Vendor/MSFT/EnterpriseDesktopAppManagement**  
 The root node for the EnterpriseDesktopAppManagement configuration service provider.
 
 <a href="" id="msi"></a>**MSI**  
@@ -74,10 +74,12 @@ Contains the last error code description. The LastErrorDesc value is looked up f
 Value type is string. Supported operation is Get.
 
 <a href="" id="msi-upgradecode"></a>**MSI/UpgradeCode**  
-TBD
+Added in the March service release of Windows 10, version 1607.
 
 <a href="" id="msi-upgradecode"></a>**MSI/UpgradeCode/_Guid_**  
-TBD
+Added in the March service release of Windows 10, version 1607. This is a GUID used for detecting the product MSI when a user is updating an existing MSI app. If they are the same, then the update is allowed.
+
+Value type is string. Supported operation is Get. 
 
 
 ## Examples

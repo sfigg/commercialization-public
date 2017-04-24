@@ -1206,6 +1206,13 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>doWipeProtected</li>
 </ul>
 </td></tr>
+<tr class="even">
+<td style="vertical-align:top">[EnterpriseDesktopAppManagement CSP](enterprisedesktopappmanagement-csp.md)</td>
+<td style="vertical-align:top"><p>Added new setting in the March service release of Windows 10, version 1607.</p>
+<ul>
+<li>MSI/UpgradeCode/[Guid]</li>
+</ul>
+</td></tr>
 </tbody>
 </table>
 
