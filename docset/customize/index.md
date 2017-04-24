@@ -31,7 +31,7 @@ See the following sections for more information about what you can do to customi
 <tbody>
 <tr class="odd">
 <td><p>[What's new in customizations](what-s-new-in-customizations.md)</p></td>
-<td><p>Learn about the new customizations available in Windows 10, build 1607.</p></td>
+<td><p>Learn about the new customizations available in Windows 10, version 1703.</p></td>
 </tr>
 <tr class="odd">
 <td><p>[Customizations for desktop](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/customize/desktop/desktop-customizations-portal)</p></td>

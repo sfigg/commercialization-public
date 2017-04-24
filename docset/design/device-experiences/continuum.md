@@ -379,7 +379,7 @@ HRESULT OnLayout()
 
 **Example 2: React to tablet mode entry/exit**
 
-When an app launches it can query for the current state of the system and optimize its layout for the current interaction mode, as in the following example.
+When your device enters or exits tablet mode, the shell prompts the user to switch modes. You can use this as a trigger to optimize your app for the current interaction mode. You must query for the current state of the system, as in the following examples.
 
 *Universal Windows App (C#) Sample*
 

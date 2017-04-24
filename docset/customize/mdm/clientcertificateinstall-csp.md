@@ -315,6 +315,13 @@ Data type is string.
 
 <p style="margin-left: 20px">The only supported operation is Execute.
 
+<a href="" id="clientcertificateinstall-scep-uniqueid-install-aadkeyidentifierlist"></a>**ClientCertificateInstall/SCEP/*UniqueID*/Install/AADKeyIdentifierList**  
+<p style="margin-left: 20px">Optional. Specify the AAD Key Identifier List as a list of semicolon separated values. On Enroll, the values in this list are validated against the AAD Key present on the device. If no match is found, enrollment will fail.
+
+<p style="margin-left: 20px">Data type is string.
+
+<p style="margin-left: 20px">Supported operations are Add, Get, Delete, and Replace.
+
 <a href="" id="clientcertificateinstall-scep-uniqueid-certthumbprint"></a>**ClientCertificateInstall/SCEP/*UniqueID*/CertThumbprint**  
 <p style="margin-left: 20px">Optional. Specifies the current certificate’s thumbprint if certificate enrollment succeeds. It is a 20-byte value of the SHA1 certificate hash specified as a hexadecimal string value.
 
