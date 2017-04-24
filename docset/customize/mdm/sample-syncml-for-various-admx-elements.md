@@ -54,13 +54,13 @@ The text element simply corresponds to a string and correspondingly to an edit b
 **ADMX file: inetres.admx**
 
 ```XML
-    <policy name="RestrictHomePage" class="User" displayName="$(string.RestrictHomePage)" explainText="$(string.IE_ExplainRestrictHomePage)" presentation="$(presentation.RestrictHomePage)" key="Software\Policies\Microsoft\Internet Explorer\Control Panel" valueName="HomePage">
-      <parentCategory ref="InternetExplorer" />
-      <supportedOn ref="SUPPORTED_IE5" />
-      <elements>
-        <text id="EnterHomePagePrompt" key="Software\Policies\Microsoft\Internet Explorer\Main" valueName="Start Page" required="true" />
-      </elements>
-    </policy>
+<policy name="RestrictHomePage" class="User" displayName="$(string.RestrictHomePage)" explainText="$(string.IE_ExplainRestrictHomePage)" presentation="$(presentation.RestrictHomePage)" key="Software\Policies\Microsoft\Internet Explorer\Control Panel" valueName="HomePage">
+  <parentCategory ref="InternetExplorer" />
+  <supportedOn ref="SUPPORTED_IE5" />
+  <elements>
+	<text id="EnterHomePagePrompt" key="Software\Policies\Microsoft\Internet Explorer\Main" valueName="Start Page" required="true" />
+  </elements>
+</policy>
 ```
 
 ### Corresponding SyncML:
@@ -92,16 +92,16 @@ The text element simply corresponds to a string and correspondingly to an edit b
 The multiText element simply corresponds to a REG_MULTISZ registry string and correspondingly to a grid to enter multiple strings in a policy panel display by gpedit.msc.  Note that it is expected that each string in the SyncML is to be separated by the Unicode character 0xF000 (encoded version: &#xF000;)
 
 ```XML
-   <policy name="Virtualization_JITVAllowList" class="Machine" displayName="$(string.Virtualization_JITVAllowList)"
-            explainText="$(string.Virtualization_JITVAllowList_Help)" presentation="$(presentation.Virtualization_JITVAllowList)"
-              key="SOFTWARE\Policies\Microsoft\AppV\Client\Virtualization"
-              valueName="ProcessesUsingVirtualComponents">
-        <parentCategory ref="CAT_Virtualization" />
-      <supportedOn ref="windows:SUPPORTED_Windows7" />
-      <elements>
-        <multiText id="Virtualization_JITVAllowList_Prompt" valueName="ProcessesUsingVirtualComponents" />
-      </elements>
-    </policy>
+<policy name="Virtualization_JITVAllowList" class="Machine" displayName="$(string.Virtualization_JITVAllowList)"
+		explainText="$(string.Virtualization_JITVAllowList_Help)" presentation="$(presentation.Virtualization_JITVAllowList)"
+		  key="SOFTWARE\Policies\Microsoft\AppV\Client\Virtualization"
+		  valueName="ProcessesUsingVirtualComponents">
+	<parentCategory ref="CAT_Virtualization" />
+  <supportedOn ref="windows:SUPPORTED_Windows7" />
+  <elements>
+	<multiText id="Virtualization_JITVAllowList_Prompt" valueName="ProcessesUsingVirtualComponents" />
+  </elements>
+</policy>
 ```
 
 ### Corresponding SyncML:
@@ -137,13 +137,13 @@ Variations of the List element dictated by attributes. These attributes are igno
 **ADMX file: inetres.admx**
 
 ```XML
-    <policy name="SecondaryHomePages" class="Both" displayName="$(string.SecondaryHomePages)" explainText="$(string.IE_ExplainSecondaryHomePages)" presentation="$(presentation.SecondaryHomePages)" key="Software\Policies\Microsoft\Internet Explorer\Main\SecondaryStartPages">
-      <parentCategory ref="InternetExplorer" />
-      <supportedOn ref="SUPPORTED_IE8" />
-      <elements>
-        <list id="SecondaryHomePagesList" additive="true" />
-      </elements>
-    </policy>
+<policy name="SecondaryHomePages" class="Both" displayName="$(string.SecondaryHomePages)" explainText="$(string.IE_ExplainSecondaryHomePages)" presentation="$(presentation.SecondaryHomePages)" key="Software\Policies\Microsoft\Internet Explorer\Main\SecondaryStartPages">
+  <parentCategory ref="InternetExplorer" />
+  <supportedOn ref="SUPPORTED_IE8" />
+  <elements>
+	<list id="SecondaryHomePagesList" additive="true" />
+  </elements>
+</policy>
 ```
 
 ### Corresponding SyncML:
@@ -169,13 +169,13 @@ Variations of the List element dictated by attributes. These attributes are igno
 </SyncML>
 ```
 
-# No Elements
+## No Elements
 
 ```XML
-    <policy name="NoUpdateCheck" class="Machine" displayName="$(string.NoUpdateCheck)" explainText="$(string.IE_ExplainNoUpdateCheck)" key="Software\Policies\Microsoft\Internet Explorer\Infodelivery\Restrictions" valueName="NoUpdateCheck">
-      <parentCategory ref="InternetExplorer" />
-      <supportedOn ref="SUPPORTED_IE5_6" />
-    </policy>
+<policy name="NoUpdateCheck" class="Machine" displayName="$(string.NoUpdateCheck)" explainText="$(string.IE_ExplainNoUpdateCheck)" key="Software\Policies\Microsoft\Internet Explorer\Infodelivery\Restrictions" valueName="NoUpdateCheck">
+  <parentCategory ref="InternetExplorer" />
+  <supportedOn ref="SUPPORTED_IE5_6" />
+</policy>
 ```
 
 ### Corresponding SyncML:
@@ -319,6 +319,7 @@ Variations of the List element dictated by attributes. These attributes are igno
         </boolean>
       </elements>
 </policy>
+```
 
 ### Corresponding SyncML:
 
