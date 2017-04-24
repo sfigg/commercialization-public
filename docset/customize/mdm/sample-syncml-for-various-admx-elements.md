@@ -8,9 +8,14 @@ MSHAttr:
 
 # Sample syncml for various ADMX elements
 
+___
+
 This page describes sample SyncML for the various ADMX elements like Text, Multi-Text, Decimal, Boolean, and List. For more details, please refer to  [Understanding ADMX-backed policies](understanding-admx-backed-policies.md).
 
 ## How a Group Policy policy category path and name are mapped to a MDM area and policy name
+
+___
+
 
 Below is the internal OS mapping of a Group Policy to a MDM area and name. This is part of a set of Windows manifests (extension wm.xml) that when compiled parses out the associated ADMX file, finds the specified Group Policy policy and stores that definition (metadata) in the MDM Policy CSP client store.  ADMX backed policies are organized hierarchically. Their scope can be machine, user, or have a scope of both. When the MDM policy is referred to through a Syncml command and the Policy CSP URI, as shown below, this metadata is referenced and determines what registry keys are set or removed. Machine-scope policies are referenced via .\Device and the user scope policies via .\User.
 
@@ -48,6 +53,9 @@ The **LocURI** for the above GP policy is:
 To construct SyncML for your area/policy using the samples below, you need to update the data id and the value in the <Data> section of the SyncML. The items highlighted in gray are the escape characters needed and can be retained as shown.
 
 ## Text Element
+
+___
+
 
 The text element simply corresponds to a string and correspondingly to an edit box in a policy panel display by gpedit.msc. The string is stored in the registry of type REG_SZ.
 
@@ -88,6 +96,9 @@ The text element simply corresponds to a string and correspondingly to an edit b
 ```
 
 ## MultiText Element
+
+___
+
 
 The multiText element simply corresponds to a REG_MULTISZ registry string and correspondingly to a grid to enter multiple strings in a policy panel display by gpedit.msc.  Note that it is expected that each string in the SyncML is to be separated by the Unicode character 0xF000 (encoded version: &#xF000;)
 
@@ -130,6 +141,9 @@ The multiText element simply corresponds to a REG_MULTISZ registry string and co
 
 ## List Element (and its variations)
 
+___
+
+
 The List element simply corresponds to a hive of REG_SZ registry strings and correspondingly to a grid to enter multiple strings in a policy panel display by gpedit.msc. How this is represented in SyncML is as a string containing pairs of strings. Each pair is a REG_SZ name/value key. 
 Note that it is expected that each string in the SyncML is to be separated by the Unicode character 0xF000 (encoded version: &#xF000;) 
 Variations of the List element dictated by attributes. These attributes are ignored by the Policy Manager runtime. It is expected that the MDM server to manage the name/value pairs. See below a simple writeup of Group Policy List. 
@@ -171,6 +185,9 @@ Variations of the List element dictated by attributes. These attributes are igno
 
 ## No Elements
 
+___
+
+
 ```XML
 <policy name="NoUpdateCheck" class="Machine" displayName="$(string.NoUpdateCheck)" explainText="$(string.IE_ExplainNoUpdateCheck)" key="Software\Policies\Microsoft\Internet Explorer\Infodelivery\Restrictions" valueName="NoUpdateCheck">
   <parentCategory ref="InternetExplorer" />
@@ -202,6 +219,9 @@ Variations of the List element dictated by attributes. These attributes are igno
 ```
 
 ## Enum
+
+___
+
 
 ```XML
 <policy name="EncryptionMethodWithXts_Name" class="Machine" displayName="$(string.EncryptionMethodWithXts_Name)" explainText="$(string.EncryptionMethodWithXts_Help)" presentation="$(presentation.EncryptionMethodWithXts_Name)" key="SOFTWARE\Policies\Microsoft\FVE">
@@ -261,6 +281,9 @@ Variations of the List element dictated by attributes. These attributes are igno
 
 ## Decimal Element
 
+___
+
+
 ```XML
 <policy name="Streaming_Reestablishment_Interval" class="Machine" displayName="$(string.Streaming_Reestablishment_Interval)" 
             explainText="$(string.Streaming_Reestablishment_Interval_Help)" presentation="$(presentation.Streaming_Reestablishment_Interval)" 
@@ -296,6 +319,9 @@ Variations of the List element dictated by attributes. These attributes are igno
 ```
 
 ## Boolean Element
+
+___
+
 
 ```XML
 <policy name="DeviceInstall_Classes_Deny" class="Machine" displayName="$(string.DeviceInstall_Classes_Deny)" explainText="$(string.DeviceInstall_Classes_Deny_Help)" presentation="$(presentation.DeviceInstall_Classes_Deny)" key="Software\Policies\Microsoft\Windows\DeviceInstall\Restrictions" valueName="DenyDeviceClasses">
