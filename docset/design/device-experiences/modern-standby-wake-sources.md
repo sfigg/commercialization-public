@@ -163,22 +163,22 @@ The Wi-Fi and mobile broadband (MBB) devices are responsible for delivering the 
 <tr class="odd">
 <td><p>Wi-Fi radio</p></td>
 <td><p>GPIO interrupt</p></td>
-<td><p>GPIO interrupt</p></td>
+<td><p>Typically GPIO interrupt (See Note following this table.)</p></td>
 <td><p>No</p>
 <p>(See Note following this table.)</p></td>
-<td><p>The Wi-Fi wake-up source is not required for Disconnected Standby systems.</p></td>
+<td><p>The Wi-Fi wake-up source is not required for Disconnected Standby systems. </p></td>
 </tr>
 <tr class="even">
 <td><p>Mobile broadband (MBB) radio</p></td>
 <td><p>USB in-band resume signaling</p></td>
-<td><p>GPIO interrupt</p></td>
+<td><p>Typically GPIO interrupt (See Note following this table.)</p></td>
 <td><p>No</p>
 <p>(See Note following this table.)</p></td>
 <td><p></p></td>
 </tr>
 <tr class="odd">
 <td><p>Bluetooth radio</p></td>
-<td><p>GPIO interrupt</p></td>
+<td><p>Typically GPIO interrupt (See Note following this table.)</p></td>
 <td><p>N/A</p></td>
 <td><p>No</p></td>
 <td><p>Windows and its drivers are responsible for detecting the type of associated Bluetooth device. If a keyboard, mouse, or other user-input device is responsible for causing the Bluetooth radio to wake the SoC, the display will turn on. Other Bluetooth devices such as portable audio headphones will not cause the display to turn on.</p></td>
@@ -198,7 +198,7 @@ The Wi-Fi and mobile broadband (MBB) devices are responsible for delivering the 
 
 **Note**  Windows can turn on the display when an incoming critical alert or activity is detected over the Wi-Fi network. Examples include notifications from lock-screen applications and VOIP calls.
 
- 
+**Note**  The interrupt mechanism is determined by the type of bus. For example, if Wi-Fi radio, MBB radio, or Bluetooth radio is connected via USB, it would use USB in-band resume signaling.
 
 ## Input devices
 
@@ -301,9 +301,9 @@ In addition to buttons on the chassis, a modern standby PC might have other inpu
 <tr class="odd">
 <td><p>Mouse (external Bluetooth)</p></td>
 <td><p>Yes</p></td>
-<td><p>Bluetooth radio followed by GPIO interrupt</p></td>
+<td><p>Bluetooth radio event followed by GPIO interrupt</p></td>
 <td><p>Yes</p></td>
-<td><p>At a minimum, pressing any button on the mouse should generate a resume event and cause the screen to turn on. It is an optional capability for the mouse to support generating a resume event and waking the system for any movement of the mouse other than pressing a button.</p></td>
+<td><p>At a minimum, pressing any button on the mouse will generate a resume event and cause the screen to turn on. It is an optional capability for the mouse to support generating a resume event and waking the system for any movement of the mouse other than pressing a button. For a USB-connected Bluetooth radio, the Bluetooth radio event is not followed by a GPIO interrupt.</p></td>
 </tr>
 <tr class="even">
 <td><p>Touch digitizer (integrated HIDI2C)</p></td>
@@ -453,6 +453,34 @@ I</td>
 <td><p>GPIO interrupt</p></td>
 <td><p>No</p></td>
 <td><p>Removing a headphone or microphone from the system generates an interrupt to enable the audio stack to correctly route audio.</p></td>
+</tr>
+<tr class="odd">
+<td><p>eSATA insertion</p></td>
+<td><p>Yes</p></td>
+<td><p>In-band resume signaling</p></td>
+<td><p>No</p></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><p>eSATA removal</p></td>
+<td><p>Yes</p></td>
+<td><p>In-band resume signaling</p></td>
+<td><p>No</p></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><p>Optical disc drive, including Zero-Power Optical Disc Drive (ZPODD): disc insertion</p></td>
+<td><p>Yes</p></td>
+<td><p>GPIO interrupt</p></td>
+<td><p>Yes</p></td>
+<td><p>For ZPODD, the event is a GPE event handled by a storage stack component.</p></td>
+</tr>
+<tr class="even">
+<td><p>Optical disc drive, including Zero-Power Optical Disc Drive (ZPODD): disc ejection button</p></td>
+<td><p>Yes</p></td>
+<td><p>GPIO interrupt</p></td>
+<td><p>Yes</p></td>
+<td><p>For ZPODD, the event is a GPE event handled by a storage stack component.</p></td>
 </tr>
 </tbody>
 </table>
