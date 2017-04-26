@@ -14,13 +14,6 @@ MSHAttr:
 
 <p>MDM service provides the ability to publish App-V packages to clients running Windows 10, version 1703 (or later). All capabilities such as App-V enablement, configuration, and publishing can be completed using MDM.</p>
 
-> [!WARNING]
-> These are preliminary architecture diagrams and examples.  Actual schemas may vary upon release.
-
-![AppV_Config_and_Deploy](images/rs2-appv-config-and-deploy.png)
-
-<p align="center"><b>Fig 1.</b> App-V deployment with enterprise MDM server</p>
-
 ### EnterpriseAppVManagement CSP node structure
 
 [EnterpriseAppVManagement CSP reference](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/customize/mdm/enterpriseappvmanagement-csp)
@@ -83,11 +76,13 @@ MSHAttr:
 
 ## Scenarios addressed in App-V MDM functionality
 
-<p>All App-V group policies will be reflected by having a corresponding CSP that can be set using the PolicyManager CSP. The CSPs match all on-premise App-V configuration capabilities. In addition, new App-V package management capability has been added to closely match the App-V PowerShell functionality.</p>
+<p>All App-V group policies will be reflected by having a corresponding CSP that can be set using the Policy CSP. The CSPs match all on-premise App-V configuration capabilities. In addition, new App-V package management capability has been added to closely match the App-V PowerShell functionality.</p>
 
 <p>A complete list of App-V policies can be found here:</p>
 
 [ADMX-backed policy reference](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/customize/mdm/policy-admx-backed)
+
+[EnterpriseAppVManagement CSP reference](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/customize/mdm/enterpriseappvmanagement-csp)
 
 ### SyncML examples
 
@@ -166,7 +161,7 @@ MSHAttr:
 		<Data>
 			<Publishing Protocol="2.0">
 				<Packages>
-					<Package PackageUrl="http://appv51server/appvdir/ServerPackages/Win10X64/7ZipRS2/7ZipRS2_X64_Win10_3. appv" VersionId="fd6b51c7-959e-4d04-ac36-a8244a5693d0" PackageId="565d8479-394d-439c-824d0e09b7ee732c"/>
+					<Package PackageUrl="http://hostname/serverpackages/apppackage.appv" VersionId="fd6b51c7-959e-4d04-ac36-a8244a5693d0" PackageId="565d8479-394d-439c-824d0e09b7ee732c"/>
 				</Packages>
 				<NoGroup>
 					<Package PackageId="565d8479-394d-439c-824d0e09b7ee732c"/>
