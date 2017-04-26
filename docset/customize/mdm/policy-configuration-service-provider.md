@@ -5141,8 +5141,10 @@ Employees cannot remove these search engines, but they can set any one as the de
 
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies whether favorites are kept in sync between Internet Explorer and Microsoft Edge. Changes to favorites in one browser are reflected in the other, including: additions, deletions, modifications, and ordering.
 
-> [!NOTE]
-> This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
+> [!NOTE]  
+> This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.  
+>
+> Enabling this setting stops Microsoft Edge favorites from syncing between connected Windows 10 devices.
 
 <p style="margin-left: 20px">The following list shows the supported values:
 
@@ -5935,8 +5937,10 @@ Employees cannot remove these search engines, but they can set any one as the de
 >	- MinDevicePasswordLength
 >	- AlphanumericDevicePasswordRequired
 >		- MinDevicePasswordComplexCharacters 
->	- MaxDevicePasswordFailedAttempts
->	- MaxInactivityTimeDeviceLock
+>	- DevicePasswordExpiration
+>	- DevicePasswordHistory
+>   - MaxDevicePasswordFailedAttempts
+>   - MaxInactivityTimeDeviceLock
 
 <a href="" id="devicelock-devicepasswordexpiration"></a>**DeviceLock/DevicePasswordExpiration**  
 <p style="margin-left: 20px">Specifies when the password expires (in days).
@@ -6242,6 +6246,14 @@ The number of authentication failures allowed before the device will be wiped. A
 -   1 (default) – Allowed.
 
 <p style="margin-left: 20px">Most restricted value is 0.
+
+<p style="margin-left: 20px">Benefit to the customer:
+
+<p style="margin-left: 20px">Before this setting, enterprise customers could not set up Cortana during out-of-box experience (OOBE) at all, even though Cortana is the “voice” that walks you through OOBE. By sending AllowCortana in initial enrollment, enterprise customers can allow their employees to see the Cortana consent page. This enables them to choose to use Cortana and make their lives easier and more productive.
+
+<p style="margin-left: 20px">Sample scenario:
+
+<p style="margin-left: 20px">An enterprise employee customer is going through OOBE and enjoys Cortana’s help in this process. The customer is happy to learn during OOBE that Cortana can help them be more productive, and chooses to set up Cortana before OOBE finishes. When their setup is finished, they are immediately ready to engage with Cortana to help manage their schedule and more.
 
 <a href="" id="experience-allowdevicediscovery"></a>**Experience/AllowDeviceDiscovery**  
 <p style="margin-left: 20px">Allows users to turn on/off device discovery UX.

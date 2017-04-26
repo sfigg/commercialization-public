@@ -37,12 +37,6 @@ Source files for packages that are common to all architectures.
 
 -   **DeviceLayout.MBR2GB**: Package with MBR [drive/partition layout](device-layout.md) for legacy BIOS-based devices with 2GB drives.
 
--   **ImageSettings.CrashSettings**: Package with settings for system crashes. Replaces the previous package: Registry.CrashSettings.
-
--   **ImageSettings.VideoMode**: Package with settings for headed or headless video mode.
-
--   **OemTools.InstallTools**: Package that automatically installs OEM apps found in the C:\OEMApps folder.
-
 -   **Provisioning.Auto**: Package used to [add a provisioning package to an image](add-a-provisioning-package-to-an-image.md). This is product specific and picks up the input ppkg file from the product directory.
 
 -   **Provisioning.Manual**: Package for manual provisioning. This depends on Custom.Cmd for triggering the provisioning.
@@ -65,8 +59,6 @@ Some BSPs are included in each folder as a start. You can [create your own BSPs]
 
 ### <span id="Packages"></span><span id="packages"></span><span id="PACKAGES"></span>Packages
 
--   **Appx.Main**: Sample package for Appx installation, shows system and network info. You can [replace it with your own app](deploy-your-app-with-a-standard-board.md).
-
 -   **Drivers.GPIO**: Sample package for a driver.
 
 -   **OEMFM.xml:** Feature manifest for OEM packages
@@ -75,17 +67,7 @@ Some BSPs are included in each folder as a start. You can [create your own BSPs]
 
 ### <span id="Products"></span><span id="products"></span><span id="PRODUCTS"></span>Products
 
-Source file for product configurations. Use our samples (SampleA, SampleB, SampleC) or [create your own](iot-core-manufacturing-guide.md).
-
-### <span id="Updates"></span><span id="updates"></span><span id="UPDATES"></span>Updates
-
-Source files for [app packages updates](../../service/iot/updating-iot-core-apps.md). It starts with two samples: Update1 and Update2.
-
--   **UpdateVersions.txt**: Log of version numbers used so far.
-
-## <span id="Templates"></span><span id="templates"></span><span id="TEMPLATES"></span>Tools
-
-Includes templates used by the [IoT Core Add-ons command-line options](iot-core-adk-addons-command-line-options.md) to create new packages and BSPs. 
+Source file for product configurations. Use our samples (SampleA, SampleB) or [create your own](iot-core-manufacturing-guide.md).
 
 ## <span id="Tools"></span><span id="tools"></span><span id="TOOLS"></span>Tools
 

@@ -22,6 +22,11 @@ Root node for the CSP.
 <a href="" id="updatemanagementserviceaddress"></a>**UpdateManagementServiceAddress**  
 For provisioning packages only. Specifies the list of servers (semicolon delimited). The first server in the semi-colon delimited list is the server that will be used to instantiate MDM sessions. The list can be a permutation or a subset of the existing server list. You cannot add new servers to the list using this node.
 
+<a href="" id="hwdevid"></a>**HWDevID**  
+Added in Windows 10, version 1703. Returns the hardware device ID.
+
+Supported operation is Get. Value type is string.
+
 <a href="" id="provider"></a>**Provider**  
 Required. The root node for all settings that belong to a single management server. Scope is permanent.
 
@@ -236,6 +241,11 @@ If ManagementServerAddressList node is set, the device will only use the server 
 When the server is not responding after a specified number of retries, the device tries to use the next server URL in the list until it gets a successful connection. After the server list is updated, the client uses the updated list at the next session starting with the first on in the list.
 
 Supported operations are Get and Replace. Value type is string.
+
+<a href="" id="provider-providerid-managementservertoupgradeto"></a>**Provider/*ProviderID*/ManagementServerToUpgradeTo**  
+Optional. Added in Windows 10, version 1703. Specify the Discovery server URL of the MDM server to upgrade to for a Mobile Application Management (MAM) enrolled device.
+
+Supported operations are Add, Delete, Get, and Replace. Value type is string.
 
 <a href="" id="provider-providerid-poll"></a>**Provider/*ProviderID*/Poll**  
 Optional. Polling schedules must utilize the DMClient CSP. The Registry paths previously associated with polling using the Registry CSP are now deprecated.
@@ -598,6 +608,31 @@ The status error mapping is listed below.
 </table>
 
  
+
+<a href="" id="provider-providerid-customenrollmentcompletepage"></a>**Provider/*ProviderID*/CustomEnrollmentCompletePage**  
+Optional. Added in Windows 10, version 1703.
+
+Supported operations are Add, Delete, and Get.
+
+<a href="" id="provider-providerid-customenrollmentcompletepage-title"></a>**Provider/*ProviderID*/CustomEnrollmentCompletePage/Title**  
+Optional. Added in Windows 10, version 1703. Specifies the title of the all done page that appears at the end of the MDM enrollment flow.
+
+Supported operations are Add, Delete, Get, and Replace. Value type is string.
+
+<a href="" id="provider-providerid-customenrollmentcompletepage-bodytext"></a>**Provider/*ProviderID*/CustomEnrollmentCompletePage/BodyText**  
+Optional. Added in Windows 10, version 1703. Specifies the body text of the all done page that appears at the end of the MDM enrollment flow.
+
+Supported operations are Add, Delete, Get, and Replace. Value type is string.
+
+<a href="" id="provider-providerid-customenrollmentcompletepage-hyperlinkhref"></a>**Provider/*ProviderID*/CustomEnrollmentCompletePage/HyperlinkHref**  
+Optional. Added in Windows 10, version 1703. Specifies the URL that is shown at the end of the MDM enrollment flow.
+
+Supported operations are Add, Delete, Get, and Replace. Value type is string.
+
+<a href="" id="provider-providerid-customenrollmentcompletepage-hyperlinktext"></a>**Provider/*ProviderID*/CustomEnrollmentCompletePage/HyperlinkText**  
+Optional. Added in Windows 10, version 1703. Specifies the display text for the URL that is shown at the end of the MDM enrollment flow.
+
+Supported operations are Add, Delete, Get, and Replace. Value type is string.
 
 <a href="" id="provider-providerid-unenroll"></a>**Provider/*ProviderID*/Unenroll**  
 Required. The node accepts unenrollment requests by way of the OMA DM Exec command and calls the enrollment client to unenroll the device from the management server whose provider ID is specified in the `<Data>` tag under the `<Item>` element. Scope is permanent.

@@ -12,7 +12,12 @@ ms.assetid: 514B7854-80DC-4ED9-9805-F5276BF38034
 
 This topic shows the OMA DM device description framework (DDF) for the **SUPL** configuration service provider.
 
-You can download the Windows 10 version 1607 DDF files from [here](http://download.microsoft.com/download/2/3/E/23E27D6B-6E23-4833-B143-915EDA3BDD44/Windows10_1607_DDF.zip).
+You can download the DDF files from the links below:
+
+- [Download all the DDF files for Windows 10, version 1703](http://download.microsoft.com/download/C/7/C/C7C94663-44CF-4221-ABCA-BC895F42B6C2/Windows10_1703_DDF_download.zip)
+- [Download all the DDF files for Windows 10, version 1607](http://download.microsoft.com/download/2/3/E/23E27D6B-6E23-4833-B143-915EDA3BDD44/Windows10_1607_DDF.zip)
+
+The XML below is the current version for this CSP.
 
 ``` syntax
 <?xml version="1.0" encoding="UTF-8"?>
