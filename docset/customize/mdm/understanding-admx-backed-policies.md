@@ -17,14 +17,14 @@ Starting in Windows 10 version 1703, Mobile Device Management (MDM) policy confi
     - [Enabling a policy](#enabling-a-policy)
     - [Disabling a policy](#disabling-a-policy)
     - [Setting a policy to not configured](#setting-a-policy-to-not-configured)
--   [Sample SyncML for various ADMX elements](sample-syncml-for-various-admx-elements)
-    - [Boolean Element](boolean-element)
-    - [Decimal Element](decimal-element)
-    - [Enum](enum)
-    - [No Elements](no-elements)
-    - [MultiText Element](multitext-element)
-    - [Text Element](text-element)
-    - [List Element (and its variations)](list-element-and-variations)
+-   [Sample SyncML for various ADMX elements](#sample-syncml-for-various-admx-elements)
+    - [Text Element](#text-element)
+    - [MultiText Element](#multitext-element)
+    - [List Element (and its variations)](#list-element)
+    - [No Elements](#no-elements)
+    - [Enum](#enum)
+    - [Decimal Element](#decimal-element)
+    - [Boolean Element](#boolean-element)
 
 ## <a href="" id="background"></a>Background
 
@@ -234,7 +234,7 @@ This section describes sample SyncML for the various ADMX elements like Text, Mu
 
 ### <a href="" id="how-a-group-policy-policy-category-path-and-name-are-mapped-to-a-mdm-area-and-policy-name"></a>How a Group Policy policy category path and name are mapped to a MDM area and policy name
 
-Below is the internal OS mapping of a Group Policy to a MDM area and name. This is part of a set of Windows manifests (extension wm.xml) that when compiled parses out the associated ADMX file, finds the specified Group Policy policy and stores that definition (metadata) in the MDM Policy CSP client store.  ADMX backed policies are organized hierarchically. Their scope can be machine, user, or have a scope of both. When the MDM policy is referred to through a SyncML command and the Policy CSP URI, as shown below, this metadata is referenced and determines what registry keys are set or removed. Machine-scope policies are referenced via .\Device and the user scope policies via .\User.
+Below is the internal OS mapping of a Group Policy to a MDM area and name. This is part of a set of Windows manifests (extension **wm.xml**) that when compiled parses out the associated ADMX file, finds the specified Group Policy policy and stores that definition (metadata) in the MDM Policy CSP client store.  ADMX backed policies are organized hierarchically. Their scope can be **machine**, **user**, or have a scope of **both**. When the MDM policy is referred to through a SyncML command and the Policy CSP URI, as shown below, this metadata is referenced and determines what registry keys are set or removed. Machine-scope policies are referenced via .\Device and the user scope policies via .\User. 
 
 `./[Device|User]/Vendor/MSFT/Policy/Config/[config|result]/<area>/<policy>`
 
@@ -350,11 +350,11 @@ The `multiText` element simply corresponds to a REG_MULTISZ registry string and 
 </SyncML>
 ```
 
-### <a href="" id="list-elements-and-variations"></a>List Element (and its variations)
+### <a href="" id="list-element"></a>List Element (and its variations)
 
-The `list` element simply corresponds to a hive of REG_SZ registry strings and correspondingly to a grid to enter multiple strings in a policy panel display by gpedit.msc. How this is represented in SyncML is as a string containing pairs of strings. Each pair is a REG_SZ name/value key. 
+The `list` element simply corresponds to a hive of REG_SZ registry strings and correspondingly to a grid to enter multiple strings in a policy panel display by gpedit.msc. How this is represented in SyncML is as a string containing pairs of strings. Each pair is a REG_SZ name/value key. It is best to apply the policy through gpedit.msc (run as Administrator) and go to the registry hive location and see how the list values are stored. This will give you an idea of the way the name/value pairs are stored in order to express it through SyncML. 
 Note that it is expected that each string in the SyncML is to be separated by the Unicode character 0xF000 (encoded version: &#xF000;) 
-Variations of the List element dictated by attributes. These attributes are ignored by the Policy Manager runtime. It is expected that the MDM server to manage the name/value pairs. See below a simple writeup of Group Policy List. 
+Variations of the `list` element are dictated by attributes. These attributes are ignored by the Policy Manager runtime. It is expected that the MDM server manages the name/value pairs. See below for a simple writeup of Group Policy List.
 
 **ADMX file: inetres.admx**
 
@@ -427,35 +427,35 @@ Variations of the List element dictated by attributes. These attributes are igno
 
 ```XML
 <policy name="EncryptionMethodWithXts_Name" class="Machine" displayName="$(string.EncryptionMethodWithXts_Name)" explainText="$(string.EncryptionMethodWithXts_Help)" presentation="$(presentation.EncryptionMethodWithXts_Name)" key="SOFTWARE\Policies\Microsoft\FVE">
-        <parentCategory ref="FVECategory" />
-        <!--Bug OS:4242178 -->
-        <supportedOn ref="windows:SUPPORTED_Windows_10_0" />
+	<parentCategory ref="FVECategory" />
+	<!--Bug OS:4242178 -->
+	<supportedOn ref="windows:SUPPORTED_Windows_10_0" />
 
-        <elements>
-            <enum id="EncryptionMethodWithXtsOsDropDown_Name" valueName="EncryptionMethodWithXtsOs" required="true">
-                <item displayName="$(string.EncryptionMethodDropDown_AES128_Name2)">
-                    <value>
-                        <decimal value="3" />
-                    </value>
-                </item>
-                <item displayName="$(string.EncryptionMethodDropDown_AES256_Name2)">
-                    <value>
-                        <decimal value="4" />
-                    </value>
-                </item>
-                <item displayName="$(string.EncryptionMethodDropDown_XTS_AES128_Name)">
-                    <value>
-                        <decimal value="6" />
-                    </value>
-                </item>
-                <item displayName="$(string.EncryptionMethodDropDown_XTS_AES256_Name)">
-                    <value>
-                        <decimal value="7" />
-                    </value>
-                </item>
-            </enum>
+	<elements>
+		<enum id="EncryptionMethodWithXtsOsDropDown_Name" valueName="EncryptionMethodWithXtsOs" required="true">
+			<item displayName="$(string.EncryptionMethodDropDown_AES128_Name2)">
+				<value>
+					<decimal value="3" />
+				</value>
+			</item>
+			<item displayName="$(string.EncryptionMethodDropDown_AES256_Name2)">
+				<value>
+					<decimal value="4" />
+				</value>
+			</item>
+			<item displayName="$(string.EncryptionMethodDropDown_XTS_AES128_Name)">
+				<value>
+					<decimal value="6" />
+				</value>
+			</item>
+			<item displayName="$(string.EncryptionMethodDropDown_XTS_AES256_Name)">
+				<value>
+					<decimal value="7" />
+				</value>
+			</item>
+		</enum>
 
-        </elements>
+   </elements>
 </policy>
 ```
 
@@ -487,11 +487,11 @@ Variations of the List element dictated by attributes. These attributes are igno
 <policy name="Streaming_Reestablishment_Interval" class="Machine" displayName="$(string.Streaming_Reestablishment_Interval)" 
             explainText="$(string.Streaming_Reestablishment_Interval_Help)" presentation="$(presentation.Streaming_Reestablishment_Interval)" 
             key="SOFTWARE\Policies\Microsoft\AppV\Client\Streaming">
-      <parentCategory ref="CAT_Streaming" />
-      <supportedOn ref="windows:SUPPORTED_Windows7" />
-      <elements>
-        <decimal id="Streaming_Reestablishment_Interval_Prompt" valueName="ReestablishmentInterval" minValue="0" maxValue="3600"/>
-      </elements>
+	<parentCategory ref="CAT_Streaming" />
+	<supportedOn ref="windows:SUPPORTED_Windows7" />
+	<elements>
+		<decimal id="Streaming_Reestablishment_Interval_Prompt" valueName="ReestablishmentInterval" minValue="0" maxValue="3600"/>
+	</elements>
 </policy>
 ```
 
@@ -521,26 +521,26 @@ Variations of the List element dictated by attributes. These attributes are igno
 
 ```XML
 <policy name="DeviceInstall_Classes_Deny" class="Machine" displayName="$(string.DeviceInstall_Classes_Deny)" explainText="$(string.DeviceInstall_Classes_Deny_Help)" presentation="$(presentation.DeviceInstall_Classes_Deny)" key="Software\Policies\Microsoft\Windows\DeviceInstall\Restrictions" valueName="DenyDeviceClasses">
-      <parentCategory ref="DeviceInstall_Restrictions_Category" />
-      <supportedOn ref="windows:SUPPORTED_WindowsVista" />
-      <enabledValue>
-        <decimal value="1" />
-      </enabledValue>
-      <disabledValue>
-        <decimal value="0" />
-      </disabledValue>
-      <elements>
-        <list id="DeviceInstall_Classes_Deny_List" key="Software\Policies\Microsoft\Windows\DeviceInstall\Restrictions\DenyDeviceClasses" valuePrefix="" />
-        <boolean id="DeviceInstall_Classes_Deny_Retroactive" valueName="DenyDeviceClassesRetroactive" >
-          <trueValue>
-            <decimal value="1" />
-          </trueValue>
-          <falseValue>
-            <decimal value="0" />
-          </falseValue>
-        </boolean>
-      </elements>
-</policy>
+	<parentCategory ref="DeviceInstall_Restrictions_Category" />
+	<supportedOn ref="windows:SUPPORTED_WindowsVista" />
+	<enabledValue>
+	<decimal value="1" />
+	</enabledValue>
+	<disabledValue>
+	<decimal value="0" />
+	</disabledValue>
+	<elements>
+		<list id="DeviceInstall_Classes_Deny_List" key="Software\Policies\Microsoft\Windows\DeviceInstall\Restrictions\DenyDeviceClasses" valuePrefix="" />
+		<boolean id="DeviceInstall_Classes_Deny_Retroactive" valueName="DenyDeviceClassesRetroactive" >
+			<trueValue>
+				<decimal value="1" />
+			</trueValue>
+			<falseValue>
+				<decimal value="0" />
+			</falseValue>
+		</boolean>
+		</elements>
+	</policy>
 ```
 
 #### Corresponding SyncML:
