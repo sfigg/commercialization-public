@@ -311,7 +311,7 @@ The `text` element simply corresponds to a string and correspondingly to an edit
 
 ### <a href="" id="multitext-element"></a>MultiText Element
 
-The `multiText` element simply corresponds to a REG_MULTISZ registry string and correspondingly to a grid to enter multiple strings in a policy panel display by gpedit.msc.  Note that it is expected that each string in the SyncML is to be separated by the Unicode character 0xF000 (encoded version: &#xF000;)
+The `multiText` element simply corresponds to a REG_MULTISZ registry string and correspondingly to a grid to enter multiple strings in a policy panel display by gpedit.msc.  Note that it is expected that each string in the SyncML is to be separated by the Unicode character 0xF000 (encoded version: `&#xF000;`)
 
 ```XML
 <policy name="Virtualization_JITVAllowList" class="Machine" displayName="$(string.Virtualization_JITVAllowList)"
@@ -319,10 +319,10 @@ The `multiText` element simply corresponds to a REG_MULTISZ registry string and 
 		  key="SOFTWARE\Policies\Microsoft\AppV\Client\Virtualization"
 		  valueName="ProcessesUsingVirtualComponents">
 	<parentCategory ref="CAT_Virtualization" />
-  <supportedOn ref="windows:SUPPORTED_Windows7" />
-  <elements>
+	<supportedOn ref="windows:SUPPORTED_Windows7" />
+	<elements>
 	<multiText id="Virtualization_JITVAllowList_Prompt" valueName="ProcessesUsingVirtualComponents" />
-  </elements>
+	</elements>
 </policy>
 ```
 
@@ -433,7 +433,6 @@ Variations of the `list` element are dictated by attributes. These attributes ar
 	<parentCategory ref="FVECategory" />
 	<!--Bug OS:4242178 -->
 	<supportedOn ref="windows:SUPPORTED_Windows_10_0" />
-
 	<elements>
 		<enum id="EncryptionMethodWithXtsOsDropDown_Name" valueName="EncryptionMethodWithXtsOs" required="true">
 			<item displayName="$(string.EncryptionMethodDropDown_AES128_Name2)">
@@ -457,7 +456,6 @@ Variations of the `list` element are dictated by attributes. These attributes ar
 				</value>
 			</item>
 		</enum>
-
    </elements>
 </policy>
 ```
@@ -488,7 +486,8 @@ Variations of the `list` element are dictated by attributes. These attributes ar
 
 ```XML
 <policy name="Streaming_Reestablishment_Interval" class="Machine" displayName="$(string.Streaming_Reestablishment_Interval)" 
-            explainText="$(string.Streaming_Reestablishment_Interval_Help)" presentation="$(presentation.Streaming_Reestablishment_Interval)" 
+            explainText="$(string.Streaming_Reestablishment_Interval_Help)"
+			presentation="$(presentation.Streaming_Reestablishment_Interval)"
             key="SOFTWARE\Policies\Microsoft\AppV\Client\Streaming">
 	<parentCategory ref="CAT_Streaming" />
 	<supportedOn ref="windows:SUPPORTED_Windows7" />
@@ -542,8 +541,8 @@ Variations of the `list` element are dictated by attributes. These attributes ar
 				<decimal value="0" />
 			</falseValue>
 		</boolean>
-		</elements>
-	</policy>
+	</elements>
+</policy>
 ```
 
 #### Corresponding SyncML:
