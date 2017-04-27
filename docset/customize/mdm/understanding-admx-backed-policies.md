@@ -267,7 +267,7 @@ The **LocURI** for the above GP policy is:
 
 `.\Device\Vendor\MSFT\Policy\Config\AppVirtualization\PublishingAllowServer2`
 
-To construct SyncML for your area/policy using the samples below, you need to update the **data id** and the **value** in the &ltData&gt section of the SyncML. The items prefixed with an '&' character are the escape characters needed and can be retained as shown.
+To construct SyncML for your area/policy using the samples below, you need to update the **data id** and the **value** in the `<Data>` section of the SyncML. The items prefixed with an '&' character are the escape characters needed and can be retained as shown.
 
 ### <a href="" id="text-element"></a>Text Element
 
@@ -352,8 +352,10 @@ The `multiText` element simply corresponds to a REG_MULTISZ registry string and 
 
 ### <a href="" id="list-element"></a>List Element (and its variations)
 
-The `list` element simply corresponds to a hive of REG_SZ registry strings and correspondingly to a grid to enter multiple strings in a policy panel display by gpedit.msc. How this is represented in SyncML is as a string containing pairs of strings. Each pair is a REG_SZ name/value key. It is best to apply the policy through gpedit.msc (run as Administrator) and go to the registry hive location and see how the list values are stored. This will give you an idea of the way the name/value pairs are stored in order to express it through SyncML. 
-Note that it is expected that each string in the SyncML is to be separated by the Unicode character 0xF000 (encoded version: &#xF000;) 
+The `list` element simply corresponds to a hive of REG_SZ registry strings and correspondingly to a grid to enter multiple strings in a policy panel display by gpedit.msc. How this is represented in SyncML is as a string containing pairs of strings. Each pair is a REG_SZ name/value key. It is best to apply the policy through gpedit.msc (run as Administrator) and go to the registry hive location and see how the list values are stored. This will give you an idea of the way the name/value pairs are stored to express it through SyncML.
+
+Note that it is expected that each string in the SyncML is to be separated by the Unicode character 0xF000 (encoded version: `&#xF000;`)
+
 Variations of the `list` element are dictated by attributes. These attributes are ignored by the Policy Manager runtime. It is expected that the MDM server manages the name/value pairs. See below for a simple writeup of Group Policy List.
 
 **ADMX file: inetres.admx**
