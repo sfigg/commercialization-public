@@ -662,6 +662,8 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>Update/EngagedRestartTransistionSchedule</li>
 <li>Update/IgnoreMOAppDownloadLimit</li>
 <li>Update/IgnoreMOUpdateDownloadLimit</li>
+<li>Update/PauseFeatureUpdatesStartTime</li>
+<li>Update/PauseQualityUpdatesStartTime</li>
 <li>Update/SetAutoRestartNotificationDisable</li>
 <li>Update/SetEDURestart</li>
 <li>WiFi/AllowWiFiDirect</li>
@@ -1117,6 +1119,8 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>DeviceLock/MaxInactivityTimeDeviceLockWithExternalDisplay</li>
 <li>Start/ImportEdgeAssets</li>
 <li>Update/DetectionFrequency</li>
+<li>Update/PauseFeatureUpdatesStartTime</li>
+<li>Update/PauseQualityUpdatesStartTime</li>
 <li>Update/SetEDURestart</li>
 <li>WiFi/AllowWiFiDirect</li>
 <li>WirelessDisplay/AllowProjectionFromPC</li>
