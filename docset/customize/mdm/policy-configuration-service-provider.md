@@ -3918,6 +3918,17 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">1<p>IoT Core</p></td>
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>EAS</p></td></tr>
 	<tr>
+		<td style="vertical-align:top"><a href="#update-PauseFeatureUpdatesStartTime">Update/PauseFeatureUpdatesStartTime</a></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Home</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Pro</p></td>
+		<td style="vertical-align:top"><p></p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Enterprise</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Education</p></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Mobile</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Mobile Enterprise</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>IoT Core</p></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>EAS</p></td></tr>		
+	<tr>
 		<td style="vertical-align:top"><a href="#update-pausequalityupdates">Update/PauseQualityUpdates</a></td>
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Home</p></td>
 		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">1<p>Pro</p></td>
@@ -3928,6 +3939,17 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">1<p>Mobile Enterprise</p></td>
 		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">1<p>IoT Core</p></td>
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>EAS</p></td></tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#update-PauseQualityUpdatesStartTime">Update/PauseQualityUpdatesStartTime</a></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Home</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Pro</p></td>
+		<td style="vertical-align:top"><p></p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Enterprise</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Education</p></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Mobile</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Mobile Enterprise</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>IoT Core</p></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>EAS</p></td></tr>		
 	<tr>
 		<td style="vertical-align:top"><a href="#update-requiredeferupgrade">Update/RequireDeferUpgrade</a></td>
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Home</p></td>
@@ -8449,10 +8471,14 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 -   0 (default) – Feature Updates are not paused.
 -   1 – Feature Updates are paused for 60 days or until value set to back to 0, whichever is sooner.
 
+<a href="" id="update-PauseFeatureUpdatesStartTime"></a>**Update/PauseFeatureUpdatesStartTime**  
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies the date and time when the IT admin wants to start pausing the Feature Updates.
+
+<p style="margin-left: 20px">Value type is string. Supported operations are Add, Get, Delete, and Replace.
+
 <a href="" id="update-pausequalityupdates"></a>**Update/PauseQualityUpdates**  
 > [!NOTE]
 > This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
-
 
 <p style="margin-left: 20px">Added in Windows 10, version 1607. Allows IT Admins to pause Quality Updates.
 
@@ -8460,6 +8486,11 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 
 -   0 (default) – Quality Updates are not paused.
 -   1 – Quality Updates are paused for 35 days or until value set back to 0, whichever is sooner.
+
+<a href="" id="update-PauseQualityUpdatesStartTime"></a>**Update/PauseQualityUpdatesStartTime**  
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies the date and time when the IT admin wants to start pausing the Quality Updates.
+
+<p style="margin-left: 20px">Value type is string. Supported operations are Add, Get, Delete, and Replace.
 
 <a href="" id="update-requiredeferupgrade"></a>**Update/RequireDeferUpgrade**  
 > [!NOTE]
