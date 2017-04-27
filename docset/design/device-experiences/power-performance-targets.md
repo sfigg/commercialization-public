@@ -10,7 +10,7 @@ ms.assetid: EC8F535E-A59E-462A-A100-D01DC2791CBC
 # Power/performance targets
 
 The requirements for each system are dictated by the target market, workload, and form factor.
-OEMs should do modeling of their devices to determine their power and performance targets.
+OEMs should do their own modeling of their devices to determine the best power and performance targets.
 
 Microsoft recommends the following performance goals:
 
