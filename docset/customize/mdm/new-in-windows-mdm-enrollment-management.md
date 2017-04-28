@@ -828,6 +828,10 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>doWipeProtected</li>
 </ul>
 </td></tr>
+<tr class="even">
+<td style="vertical-align:top">[MDM Bridge WMI Provider](https://msdnstage.redmond.corp.microsoft.com/en-us/library/windows/desktop/dn905224(v=vs.85).aspx)</td>
+<td style="vertical-align:top"><p>Added new classes and properties.</p>
+</td></tr>
 </tbody>
 </table> 
 
@@ -1209,6 +1213,10 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <ul>
 <li>doWipeProtected</li>
 </ul>
+</td></tr>
+<tr class="even">
+<td style="vertical-align:top">[MDM Bridge WMI Provider](https://msdnstage.redmond.corp.microsoft.com/en-us/library/windows/desktop/dn905224(v=vs.85).aspx)</td>
+<td style="vertical-align:top"><p>Updated for Windows 10, version 1703. Added new classes and properties.</p>
 </td></tr>
 </tbody>
 </table>
