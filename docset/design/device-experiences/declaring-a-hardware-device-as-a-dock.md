@@ -14,7 +14,7 @@ The [Microsoft OS Descriptor](https://msdn.microsoft.com/en-us/windows/hardware/
 To declare to Windows that a device is a dock, the extended properties OS feature descriptor can be used. The extended properties descriptor will create a bitmasked registry entry, **MSOSDockProperties**, which indicates different dock properties, as shown in the following table:
 
 Offset | Property name                 | Description
-------:|-------------------------------|--------------------------------------------------------------------------
+------:|:------------------------------|:-------------------------------------------------------------------------
 0      | **IsDock**                    | This value is set to 1 to indicate that the device is the dock.
 1      | **DockHasIntegratedScreen**   | This value is set to 1 to indicate that the dock has a built-in screen.
 2      | **DockHasIntegratedKeyboard** | This value is set to 1 to indicate that the dock has a built-in keyboard.
@@ -42,7 +42,7 @@ This example demonstrates how an extended properties OS descriptor is used to in
 This section illustrates the layout of the header section, which includes the length of the entire descriptor, the number of function sections, and the version number.
 
 Offset | Field          | Size (bytes) | Type  | Value  | Description
-------:|----------------|-------------:|-------|--------|--------------------------------------------------------
+------:|:---------------|-------------:|:------|:-------|:-------------------------------------------------------
 0      | **dwLength**   | 4            | DWORD | 0x0042 | The length of this custom property section is 66 bytes.
 4      | **bcdVersion** | 2            | BCD   | 0x0100 | Version 1.0.
 6      | **wIndex**     | 2            | WORD  | 0x0005 | Extended property OS descriptor.
@@ -56,7 +56,7 @@ Offset | Field          | Size (bytes) | Type  | Value  | Description
 This section provides an example for how to set custom properties.
 
 Offset | Field                    | Size (bytes) | Value      | Description
-------:|--------------------------|-------------:|------------|-----------------------------------------------------------------------------------------
+------:|:-------------------------|-------------:|:-----------|:----------------------------------------------------------------------------------------
 0      | **dwSize**               | 4            | 0x00000038 | The length of this custom property section is 56 bytes.
 4      | **dwPropertyDataType**   | 4            | 0x00000004 | The property value stores a little-endian 32-bit integer.
 8      | **wPropertyNameLength**  | 2            | 0x00000026 | The length of the property name string is 38 bytes.
