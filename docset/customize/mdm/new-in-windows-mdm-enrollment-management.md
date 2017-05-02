@@ -589,6 +589,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>Accounts/AllowMicrosoftAccountSignInAssistant</li>
 <li>ApplicationDefaults/DefaultAssociationsConfiguration</li>
 <li>Browser/AllowAddressBarDropdown</li>
+<li>Browser/AllowFlashClickToRun</li>
 <li>Browser/AllowMicrosoftCompatibilityList</li>
 <li>Browser/AllowSearchEngineCustomization</li>
 <li>Browser/ClearBrowsingDataOnExit</li>
