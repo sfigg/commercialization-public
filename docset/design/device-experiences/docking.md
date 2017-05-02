@@ -88,7 +88,7 @@ The end goal of these docking recommendations is that all docks work with all Wi
 <tbody>
 <tr>
 <th align="left" valign="top">Dock connection to the system</th>
-<td>The recommended system connection is via USB Type-C. This connection should include at a minimum:
+<td>The recommended system connection is through USB Type-C. This connection should include at a minimum:
 <ul>
   <li>USB Data, with <a href="http://www.usb.org/developers/ssusb">USB 3.1 Gen 2</a> being optimal, to enable USB-connected peripheral devices</li>
   <li><a href="http://www.usb.org/developers/powerdelivery/">USB PD</a> power provider for charging a system while it is docked, with a minimum power of 30 watts</li>
@@ -140,6 +140,32 @@ The end goal of these docking recommendations is that all docks work with all Wi
 </tbody>
 </table>
 All these recommendations are in addition to the touchpad requirements detailed in the [minimum hardware requirements](../minimum/minimum-hardware-requirements-overview.md).
+
+### A Note on Thunderbolt
+
+#### Thunderbolt on systems
+
+Thunderbolt 3 is the only universal (data, video, and power) system port today based on the USB Type-C connector that can connect to any Thunderbolt, DisplayPort, or USB device. Thunderbolt systems can operate in 3 modes:
+
+1. Thunderbolt over Type-C alternate mode / 40 Gbps
+2. DisplayPort over Type-C alternate mode / 20 Gbps
+3. USB mode up to USB 3.1 / 10 Gbps
+
+Thunderbolt adopted the USB-PD specification and provides a standard 15 watts for bus-powered devices and (optional) notebook charging up to 100 watts. Thunderbolt also supports daisychaining up to six devices from a single Thunderbolt computer port.
+
+Thunderbolt 3 can support up to two streams (eight lanes) of DisplayPort 1.2 video bandwidth:
+
++ One 4K display (4096 x 2160) 30-bit @ 120 Hz
++ One 5K display (5120 x 2880) 30-bit @ 60 Hz
++ Two 4K displays each (4096 x 2160) 30-bit @ 60 Hz
+
+#### Thunderbolt on docks or docking displays
+
+As mentioned, Thunderbolt 3 fulfills the promise of the Type-C connector so that system ports can connect to any Thunderbolt, DisplayPort, or USB device.   Because of this, the majority of the Type-C system ports with data, video, and power support Thunderbolt today. On the dock side, however, Type-C is still evolving to enable docks that can support either (1) Thunderbolt over Type-C alternate mode or (2) DisplayPort over Type-C alternate mode, depending on the system port capabilities.
+
+Intel, Microsoft, and the industry are working on next-generation universal docking solutions to support both Thunderbolt and DisplayPort alternate modes from a single dock. Future docking solutions will enable the ultimate goal of software and hardware interoperability with any Type-C (data, video, and power) enabled computer.  Please contact your Intel field sales representative to get in contact with the Thunderbolt team for more details.
+
+For docks based on Intel’s current hardware (Alpine Ridge), we recommend that system requirements are clearly communicated on packaging, websites, and collateral to inform users that this Type-C dock or display will only work with Thunderbolt-enabled systems and how to identify whether the system supports Thunderbolt. Go to https://thunderbolttechnology.net/developers for Thunderbolt brand and usage guidelines.  
 
 ## Wireless docking
 
