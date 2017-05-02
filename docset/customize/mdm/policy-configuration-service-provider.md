@@ -7016,16 +7016,16 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 <p style="margin-left: 20px">Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Windows Store Apps. The user is able to control the radios privacy setting for the listed apps. This setting overrides the default LetAppsAccessRadios policy setting for the specified apps.
 
 <a href="" id="privacy-letappsaccesstasks"></a>**Privacy/LetAppsAccessTasks**  
-<p style="margin-left: 20px">Added in Windows 10, version 1607. Specifies whether Windows apps can access tasks.
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies whether Windows apps can access tasks.
 
 <a href="" id="privacy-letappsaccesstasks-forceallowtheseapps"></a>**Privacy/LetAppsAccessTasks_ForceAllowTheseApps**  
-<p style="margin-left: 20px">Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are allowed access to tasks. This setting overrides the default LetAppsAccessTasks policy setting for the specified apps.
+<p style="margin-left: 20px">Added in Windows 10, version 1703. List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are allowed access to tasks. This setting overrides the default LetAppsAccessTasks policy setting for the specified apps.
 
 <a href="" id="privacy-letappsaccesstasks-forcedenytheseapps"></a>**Privacy/LetAppsAccessTasks_ForceDenyTheseApps**  
-<p style="margin-left: 20px">Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are denied access to tasks. This setting overrides the default LetAppsAccessTasks policy setting for the specified apps.
+<p style="margin-left: 20px">Added in Windows 10, version 1703. List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are denied access to tasks. This setting overrides the default LetAppsAccessTasks policy setting for the specified apps.
 
 <a href="" id="privacy-letappsaccesstasks-userincontroloftheseapps"></a>**Privacy/LetAppsAccessTasks_UserInControlOfTheseApps**  
-<p style="margin-left: 20px">Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Windows Store Apps. The user is able to control the tasks privacy setting for the listed apps. This setting overrides the default LetAppsAccessTasks policy setting for the specified apps.
+<p style="margin-left: 20px">Added in Windows 10, version 1703. List of semi-colon delimited Package Family Names of Windows Store Apps. The user is able to control the tasks privacy setting for the listed apps. This setting overrides the default LetAppsAccessTasks policy setting for the specified apps.
 
 <a href="" id="privacy-letappsaccesstrusteddevices"></a>**Privacy/LetAppsAccessTrustedDevices**  
 <p style="margin-left: 20px">Added in Windows 10, version 1607. Specifies whether Windows apps can access trusted devices.
