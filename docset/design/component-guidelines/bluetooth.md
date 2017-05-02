@@ -31,7 +31,7 @@ Additional features that were added after Windows 10, version 1507 are marked a
 | [72550](http://go.microsoft.com/fwlink/?LinkId=823549) | Windows 10 Mobile                                                      | Profile Subsystem | 31-July-2015 |
 | [70587](http://go.microsoft.com/fwlink/?LinkId=823550) | Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) | Host Subsystem    | 14-July-2015 |
 | [84637](http://go.microsoft.com/fwlink/?LinkId=823551) | Windows 10 Mobile updated AVRCP                                        | Profile Subsystem | 17-June-2016 |
-| [94254](http://go.microsoft.com/fwlink/?LinkId=848229) | Windows 10 Creators Update                                             | Host Subsystem | 6-March-2017 |
+| [94254](http://go.microsoft.com/fwlink/?LinkId=848229) | Windows 10 Creators Update                                             | Host Subsystem    | 14-March-2017 |
 
  
 
@@ -83,7 +83,7 @@ Additional features that were added after Windows 10, version 1507 are marked a
 
     -   (1703) Support for [Call Control APIs](https://docs.microsoft.com/en-us/uwp/api/Windows.ApplicationModel.Calls) on Windows 10 for desktop editions.
 
-    -   (1703) Support for GATT Server, Bluetooth LE Peripheral and non-paired support for Bluetooth LE. See our [developer post](http://aka.ms/bluetoothgatt) for more details.
+    -   (1703) Support for GATT Server, Bluetooth LE Peripheral role and non-paired support for Bluetooth LE. See our [developer post](http://aka.ms/bluetoothgatt) for more details.
 
 ### Bluetooth features list by edition
 
