@@ -589,6 +589,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>Accounts/AllowMicrosoftAccountSignInAssistant</li>
 <li>ApplicationDefaults/DefaultAssociationsConfiguration</li>
 <li>Browser/AllowAddressBarDropdown</li>
+<li>Browser/AllowFlashClickToRun</li>
 <li>Browser/AllowMicrosoftCompatibilityList</li>
 <li>Browser/AllowSearchEngineCustomization</li>
 <li>Browser/ClearBrowsingDataOnExit</li>
@@ -619,6 +620,10 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>Location/EnableLocation</li>
 <li>Messaging/AllowMMS</li>
 <li>Messaging/AllowRCS</li>
+<li>Privacy/LetAppsAccessTasks</li>
+<li>Privacy/LetAppsAccessTasks_ForceAllowTheseApps</li>
+<li>Privacy/LetAppsAccessTasks_ForceDenyTheseApps</li>
+<li>Privacy/LetAppsAccessTasks_UserInControlOfTheseApps</li>
 <li>Privacy/LetAppsGetDiagnosticInfo</li>
 <li>Privacy/LetAppsGetDiagnosticInfo_ForceAllowTheseApps</li>
 <li>Privacy/LetAppsGetDiagnosticInfo_ForceDenyTheseApps</li>
@@ -674,6 +679,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>WirelessDisplay/AllowUserInputFromWirelessDisplayReceiver</li>
 </ul><p>Removed TextInput/AllowLinguisticDataCollection</p>
 <p>Starting in Windows 10, version 1703, Update/UpdateServiceUrl is not supported in Windows 10 Mobile Enteprise and IoT Enterprise</p>
+<p>Starting in Windows 10, version 1703, the maximum value of  Update/DeferFeatureUpdatesPeriodInDays has been increased from 180 days, to 365 days.</p>
 <p>Starting in Windows 10, version 1703, in Browser/HomePages you can use the "&lt;about:blank&gt;" value if you don’t want to send traffic to Microsoft.</p>
 <p>Starting in Windows 10, version 1703, Start/StartLayout can now be set on a per-device basis in addition to the pre-existing per-user basis.</p>
 <p>Added the ConfigOperations/ADMXInstall node and setting, which is used to ingest ADMX files.</p>
@@ -831,6 +837,13 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <tr class="even">
 <td style="vertical-align:top">[MDM Bridge WMI Provider](https://msdnstage.redmond.corp.microsoft.com/en-us/library/windows/desktop/dn905224(v=vs.85).aspx)</td>
 <td style="vertical-align:top"><p>Added new classes and properties.</p>
+</td></tr>
+<td style="vertical-align:top">[Understanding ADMX-backed policies](understanding-admx-backed-policies.md)</td>
+<td style="vertical-align:top"><p>Added a section describing SyncML examples of various ADMX elements.</p>
+</td></tr>
+<tr class="odd">
+<td style="vertical-align:top">[Deploy and configure App-V apps using MDM](appv-deploy-and-config.md)</td>
+<td style="vertical-align:top"><p>Added a new topic describing how to deploy and configure App-V apps using MDM.</p>
 </td></tr>
 </tbody>
 </table> 
@@ -1102,6 +1115,39 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 
 ## Change history in MDM documentation
 
+### May 2017
+
+<table>
+<colgroup>
+<col width="25%" />
+<col width="75%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>New or updated topic</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="vertical-align:top">[Policy CSP](policy-configuration-service-provider.md)</td>
+<td style="vertical-align:top"><p>Added the following new policies for Windows 10, version 1703:</p> 
+<ul>
+<li>Browser/AllowFlashClickToRun</li>
+<li>Privacy/LetAppsAccessTasks</li>
+<li>Privacy/LetAppsAccessTasks_ForceAllowTheseApps</li>
+<li>Privacy/LetAppsAccessTasks_ForceDenyTheseApps</li>
+<li>Privacy/LetAppsAccessTasks_UserInControlOfTheseApps</li>
+</ul>
+<p>Starting in Windows 10, version 1703, the maximum value of  Update/DeferFeatureUpdatesPeriodInDays has been increased from 180 days, to 365 days.</p>
+</td></tr>
+<tr class="even">
+<td style="vertical-align:top">[Understanding ADMX-backed policies](understanding-admx-backed-policies.md)</td>
+<td style="vertical-align:top"><p>Added a section describing SyncML examples of various ADMX elements.</p>
+</td></tr>
+</tbody>
+</table>
+
 ### April 2017
 
 <table>
@@ -1217,6 +1263,9 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <tr class="even">
 <td style="vertical-align:top">[MDM Bridge WMI Provider](https://msdnstage.redmond.corp.microsoft.com/en-us/library/windows/desktop/dn905224(v=vs.85).aspx)</td>
 <td style="vertical-align:top"><p>Updated for Windows 10, version 1703. Added new classes and properties.</p>
+</td></tr>
+<td style="vertical-align:top">[Deploy and configure App-V apps using MDM](appv-deploy-and-config.md)</td>
+<td style="vertical-align:top"><p>Added a new topic describing how to deploy and configure App-V apps using MDM.</p>
 </td></tr>
 </tbody>
 </table>
