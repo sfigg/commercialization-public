@@ -2663,6 +2663,50 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>IoT Core</p></td>
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>EAS</p></td></tr>
 	<tr>
+		<td style="vertical-align:top"><a href="#privacy-letappsaccesstasks">Privacy/LetAppsAccessTasks</a></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">1<p>Home</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">1<p>Pro</p></td>
+		<td style="vertical-align:top"><p></p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">1<p>Enterprise</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">1<p>Education</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">1<p>Mobile</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">1<p>Mobile Enterprise</p></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>IoT Core</p></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>EAS</p></td></tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#privacy-letappsaccesstasks-forceallowtheseapps">Privacy/LetAppsAccessTasks_ForceAllowTheseApps</a></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">1<p>Home</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">1<p>Pro</p></td>
+		<td style="vertical-align:top"><p></p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">1<p>Enterprise</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">1<p>Education</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">1<p>Mobile</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">1<p>Mobile Enterprise</p></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>IoT Core</p></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>EAS</p></td></tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#privacy-letappsaccesstasks-forcedenytheseapps">Privacy/LetAppsAccessTasks_ForceDenyTheseApps</a></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">1<p>Home</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">1<p>Pro</p></td>
+		<td style="vertical-align:top"><p></p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">1<p>Enterprise</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">1<p>Education</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">1<p>Mobile</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">1<p>Mobile Enterprise</p></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>IoT Core</p></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>EAS</p></td></tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#privacy-letappsaccesstasks-userincontroloftheseapps">Privacy/LetAppsAccessTasks_UserInControlOfTheseApps</a></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">1<p>Home</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">1<p>Pro</p></td>
+		<td style="vertical-align:top"><p></p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">1<p>Enterprise</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">1<p>Education</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">1<p>Mobile</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">1<p>Mobile Enterprise</p></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>IoT Core</p></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>EAS</p></td></tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#privacy-letappsaccesstrusteddevices">Privacy/LetAppsAccessTrustedDevices</a></td>
 		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">1<p>Home</p></td>
 		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">1<p>Pro</p></td>
@@ -6970,6 +7014,18 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 
 <a href="" id="privacy-letappsaccessradios-userincontroloftheseapps"></a>**Privacy/LetAppsAccessRadios\_UserInControlOfTheseApps**  
 <p style="margin-left: 20px">Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Windows Store Apps. The user is able to control the radios privacy setting for the listed apps. This setting overrides the default LetAppsAccessRadios policy setting for the specified apps.
+
+<a href="" id="privacy-letappsaccesstasks"></a>**Privacy/LetAppsAccessTasks**  
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies whether Windows apps can access tasks.
+
+<a href="" id="privacy-letappsaccesstasks-forceallowtheseapps"></a>**Privacy/LetAppsAccessTasks_ForceAllowTheseApps**  
+<p style="margin-left: 20px">Added in Windows 10, version 1703. List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are allowed access to tasks. This setting overrides the default LetAppsAccessTasks policy setting for the specified apps.
+
+<a href="" id="privacy-letappsaccesstasks-forcedenytheseapps"></a>**Privacy/LetAppsAccessTasks_ForceDenyTheseApps**  
+<p style="margin-left: 20px">Added in Windows 10, version 1703. List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are denied access to tasks. This setting overrides the default LetAppsAccessTasks policy setting for the specified apps.
+
+<a href="" id="privacy-letappsaccesstasks-userincontroloftheseapps"></a>**Privacy/LetAppsAccessTasks_UserInControlOfTheseApps**  
+<p style="margin-left: 20px">Added in Windows 10, version 1703. List of semi-colon delimited Package Family Names of Windows Store Apps. The user is able to control the tasks privacy setting for the listed apps. This setting overrides the default LetAppsAccessTasks policy setting for the specified apps.
 
 <a href="" id="privacy-letappsaccesstrusteddevices"></a>**Privacy/LetAppsAccessTrustedDevices**  
 <p style="margin-left: 20px">Added in Windows 10, version 1607. Specifies whether Windows apps can access trusted devices.

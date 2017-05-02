@@ -620,6 +620,10 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>Location/EnableLocation</li>
 <li>Messaging/AllowMMS</li>
 <li>Messaging/AllowRCS</li>
+<li>Privacy/LetAppsAccessTasks</li>
+<li>Privacy/LetAppsAccessTasks_ForceAllowTheseApps</li>
+<li>Privacy/LetAppsAccessTasks_ForceDenyTheseApps</li>
+<li>Privacy/LetAppsAccessTasks_UserInControlOfTheseApps</li>
 <li>Privacy/LetAppsGetDiagnosticInfo</li>
 <li>Privacy/LetAppsGetDiagnosticInfo_ForceAllowTheseApps</li>
 <li>Privacy/LetAppsGetDiagnosticInfo_ForceDenyTheseApps</li>
@@ -1127,6 +1131,10 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <td style="vertical-align:top"><p>Added the following new policies for Windows 10, version 1703:</p> 
 <ul>
 <li>Browser/AllowFlashClickToRun</li>
+<li>Privacy/LetAppsAccessTasks</li>
+<li>Privacy/LetAppsAccessTasks_ForceAllowTheseApps</li>
+<li>Privacy/LetAppsAccessTasks_ForceDenyTheseApps</li>
+<li>Privacy/LetAppsAccessTasks_UserInControlOfTheseApps</li>
 </ul>
 <p>Starting in Windows 10, version 1703, the maximum value of  Update/DeferFeatureUpdatesPeriodInDays has been increased from 180 days, to 365 days.</p>
 </td></tr>
