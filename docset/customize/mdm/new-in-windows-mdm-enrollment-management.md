@@ -1126,9 +1126,9 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <td style="vertical-align:top">
 <p>Starting in Windows 10, version 1703, the maximum value of  Update/DeferFeatureUpdatesPeriodInDays has been increased from 180 days, to 365 days.</p>
 </td></tr>
-<tr class="odd">
-<td style="vertical-align:top">[Deploy and configure App-V apps using MDM](appv-deploy-and-config.md)</td>
-<td style="vertical-align:top"><p>Added a new topic describing how to deploy and configure App-V apps using MDM.</p>
+<tr class="even">
+<td style="vertical-align:top">[Understanding ADMX-backed policies](understanding-admx-backed-policies.md)</td>
+<td style="vertical-align:top"><p>Added a section describing SyncML examples of various ADMX elements.</p>
 </td></tr>
 </tbody>
 </table>
@@ -1246,8 +1246,8 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 </ul>
 </td></tr>
 <tr class="even">
-<td style="vertical-align:top">[Understanding ADMX-backed policies](understanding-admx-backed-policies.md)</td>
-<td style="vertical-align:top"><p>Added a section describing SyncML examples of various ADMX elements.</p>
+<td style="vertical-align:top">[Deploy and configure App-V apps using MDM](appv-deploy-and-config.md)</td>
+<td style="vertical-align:top"><p>Added a new topic describing how to deploy and configure App-V apps using MDM.</p>
 </td></tr>
 </tbody>
 </table>
