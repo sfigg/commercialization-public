@@ -706,7 +706,12 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 </tr>
 <tr class="odd">
 <td style="vertical-align:top">[BitLocker CSP](bitlocker-csp.md)</td>
-<td style="vertical-align:top"><p>Added new CSP.</p></td>
+<td style="vertical-align:top"><p>Added new CSP.</p>
+<p>Added the following setting:</p>
+<ul>
+<li>AllowWarningForOtherDiskEncryption</li>
+</ul>
+</td>
 </tr>
 <tr class="even">
 <td style="vertical-align:top">[EnterpriseDataProtection CSP](enterprisedataprotection-csp.md)</td>
@@ -1145,6 +1150,15 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <td style="vertical-align:top">[Understanding ADMX-backed policies](understanding-admx-backed-policies.md)</td>
 <td style="vertical-align:top"><p>Added a section describing SyncML examples of various ADMX elements.</p>
 </td></tr>
+<tr class="odd">
+<td style="vertical-align:top">[BitLocker CSP](bitlocker-csp.md)</td>
+<td style="vertical-align:top"><p>Added new CSP.</p>
+<p>Added the following setting:</p>
+<ul>
+<li>AllowWarningForOtherDiskEncryption</li>
+</ul>
+</td>
+</tr>
 </tbody>
 </table>
 
