@@ -1136,7 +1136,8 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <tbody>
 <tr class="odd">
 <td style="vertical-align:top">[Policy CSP](policy-configuration-service-provider.md)</td>
-<td style="vertical-align:top"><p>Added the following new policies for Windows 10, version 1703:</p> 
+<td style="vertical-align:top">
+<p>Added the following new policies for Windows 10, version 1703:</p> 
 <ul>
 <li>Browser/AllowFlashClickToRun</li>
 <li>Privacy/LetAppsAccessTasks</li>
@@ -1152,7 +1153,7 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 </td></tr>
 <tr class="odd">
 <td style="vertical-align:top">[BitLocker CSP](bitlocker-csp.md)</td>
-<td style="vertical-align:top"><p>Added new CSP.</p>
+<td style="vertical-align:top">
 <p>Added the following setting:</p>
 <ul>
 <li>AllowWarningForOtherDiskEncryption</li>
