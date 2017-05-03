@@ -63,7 +63,7 @@ Additional features that were added after Windows 10, version 1507 are marked a
 
     -   Windows Phone General Distribution Release (GDR) features ported to Windows 10 (Cortana address book entry, LE HID, MAP)
 
-    -   (1607) (Pre-pair Bluetooth devices during manufacturing)[bluetooth-prepairing.md]: Allows for a seamless out-of-box experience that allows Bluetooth devices to just work. 
+    -   (1607) [Pre-pair Bluetooth devices during manufacturing](bluetooth-prepairing.md): Allows for a seamless out-of-box experience that allows Bluetooth devices to just work. 
 
     -   (1703) Hands-Free Profile (HFP) 1.6 specification with Wideband speech on Windows 10 for desktop editions.
 
