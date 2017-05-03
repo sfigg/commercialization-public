@@ -17,7 +17,7 @@ This topic covers new improvements for desktop, mobile, and IoT manufacturing.
 
 - Windows setup has a new command line option, `/diagnosticprompt`. This setting lets you choose whether the Command prompt is available during Windows setup when pressing Shift+10. See [Windows Setup Command-Line Options](desktop/windows-setup-command-line-options.md) for all available command line options for Windows setup.
 
-- When capturing customizations with ScanState, only use the default config files that come with the ADK. To see more about this change, see [Push button reset overview](desktop/push-button-reset-overview#whats-new-for-windows-10.md).
+- When capturing customizations with ScanState, only use the default config files that come with the ADK. To see more about this change, see [Push button reset overview](desktop/push-button-reset-overview.md#whats-new-for-windows-10).
 
 **January 5, 2017**
 
@@ -39,7 +39,7 @@ This topic covers new improvements for desktop, mobile, and IoT manufacturing.
 
 [Lab 9: Make changes from Windows (audit mode)](desktop/prepare-a-snapshot-of-the-pc-generalize-and-capture-windows-images-blue-sxs.md#Office_2016): Added instructions for preinstalling Microsoft Office 2016.
 
-[Lab 10: Add desktop applications and settings with siloed provisioning packages (SPPs)](add-desktop-apps-with-spps-sxs.md): For Microsoft Office, adding Start menu pins is required. You must [add Start tiles and taskbar pins](desktop/add-start-tiles-sxs.md#AppendOfficeSuite). if you don't add it to the Start menu, Windows will remove the Office files during the OOBE boot phase.
+[Lab 10: Add desktop applications and settings with siloed provisioning packages (SPPs)](desktop/add-desktop-apps-with-spps-sxs.md): For Microsoft Office, adding Start menu pins is required. You must [add Start tiles and taskbar pins](desktop/add-start-tiles-sxs.md#AppendOfficeSuite). if you don't add it to the Start menu, Windows will remove the Office files during the OOBE boot phase.
 
 [Lab 12: Update the recovery image](desktop/update-the-recovery-image.md): Added recommendation: increase the scratch space in the winre.wim recovery image to speed recovery.   
 
