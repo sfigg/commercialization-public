@@ -34,8 +34,5 @@ firmware, and hardware. This guidance applies to traditional x86-based
 PCs as well as devices that offer connected standby. It applies to both
 the consumer and commercial markets.
 
-![Important](images/note-important.gif)**Important**&nbsp;&nbsp;&nbsp;The Performance WEG is not intended to communicate the Windows Hardware
-Compatibility Requirements and OEM Policy Document (OPD). Both WHCR and
-OPD take precedence to any information in the Performance WEG. You must
-comply with the WHCR and OPD.
+> [!IMPORTANT] The Performance WEG is not intended to communicate the Windows Hardware Compatibility Requirements (WHCR) and OEM Policy Document (OPD). Both WHCR and OPD take precedence over any information in the Performance WEG. You must comply with the WHCR and OPD.
 
