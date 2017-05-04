@@ -5130,7 +5130,7 @@ Employees cannot remove these search engines, but they can set any one as the de
 <a href="" id="browser-enterprisesitelistserviceurl"></a>**Browser/EnterpriseSiteListServiceUrl**  
 
 > [!IMPORTANT]
-> This policy (introduced in Windows 10, 1507) was deprecated in Windows 10, version 1511 by [Browser/EnterpriseModeSiteList](#browser-enterprisemodesitelist).
+> This policy (introduced in Windows 10, version 1507) was deprecated in Windows 10, version 1511 by [Browser/EnterpriseModeSiteList](#browser-enterprisemodesitelist).
 
 <a href="" id="browser-firstrunurl"></a>**Browser/FirstRunURL**  
 > [!NOTE]
