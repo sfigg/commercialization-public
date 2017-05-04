@@ -6737,8 +6737,8 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 
 <p style="margin-left: 20px">The following list shows the supported values:
 
--   0 (default)– disable notification mirroring.
--   1 – enable notification mirroring.
+-   0 (default)– enable notification mirroring.
+-   1 – disable notification mirroring.
 
 <a href="" id="privacy-allowautoacceptpairingandprivacyconsentprompts"></a>**Privacy/AllowAutoAcceptPairingAndPrivacyConsentPrompts**  
 <p style="margin-left: 20px">Allows or disallows the automatic acceptance of the pairing and privacy user consent dialog when launching apps.
