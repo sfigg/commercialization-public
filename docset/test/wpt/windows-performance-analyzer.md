@@ -9,6 +9,11 @@ ms.assetid: 92bde49c-e1ab-4ba0-82c8-f708a32bfacf
 ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
+ms.author: windows-hardware-design-content
+ms.date: 05/05/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Windows Performance Analyzer

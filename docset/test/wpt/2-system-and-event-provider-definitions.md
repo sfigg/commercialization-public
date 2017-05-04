@@ -8,6 +8,11 @@ ms.assetid: 24358037-a8ad-41c8-b82c-b4c5111b17d3
 ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
+ms.author: windows-hardware-design-content
+ms.date: 05/05/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # 2. System and Event Provider Definitions

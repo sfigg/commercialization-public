@@ -8,6 +8,11 @@ ms.assetid: a64ede15-c0d0-4070-b51f-e5dce0964aa6
 ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
+ms.author: windows-hardware-design-content
+ms.date: 05/05/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WPRControlProfiles Schema

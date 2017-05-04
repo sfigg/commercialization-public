@@ -8,6 +8,11 @@ ms.assetid: 23dd86be-1262-4ec0-a7bb-1f411bc1ef04
 ms.prod: W10
 ms.mktglfcycl: plan
 ms.sitesec: msdn
+ms.author: windows-hardware-design-content
+ms.date: 05/05/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Driver Verification

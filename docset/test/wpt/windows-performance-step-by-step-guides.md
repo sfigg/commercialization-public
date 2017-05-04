@@ -8,6 +8,11 @@ ms.assetid: 97563424-EF28-4398-B986-60D3281BD7F4
 ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
+ms.author: windows-hardware-design-content
+ms.date: 05/05/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Windows Performance Step-by-Step Guides

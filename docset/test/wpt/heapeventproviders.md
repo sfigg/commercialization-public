@@ -8,6 +8,11 @@ ms.assetid: b4582698-fb7f-4158-b41c-d2f1c53f3f87
 ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
+ms.author: windows-hardware-design-content
+ms.date: 05/05/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # HeapEventProviders

@@ -8,6 +8,11 @@ ms.assetid: 10e55416-2d59-4de0-a2ab-f9d240ab3689
 ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
+ms.author: windows-hardware-design-content
+ms.date: 05/05/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Change the View Layout

@@ -8,6 +8,11 @@ ms.assetid: 01a1594a-93ab-472e-941a-49bc57cbb6a9
 ms.prod: W10
 ms.mktglfcycl: plan
 ms.sitesec: msdn
+ms.author: windows-hardware-design-content
+ms.date: 05/05/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Streaming Media Performance

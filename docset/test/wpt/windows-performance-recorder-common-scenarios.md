@@ -8,6 +8,11 @@ ms.assetid: 217ECDF0-1B6D-4995-85DE-22708D608D5E
 ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
+ms.author: windows-hardware-design-content
+ms.date: 05/05/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Windows Performance Recorder common scenarios

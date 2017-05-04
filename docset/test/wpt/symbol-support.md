@@ -8,6 +8,11 @@ ms.assetid: 3f4fcf1c-9d81-4842-82e5-a443f47f5255
 ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
+ms.author: windows-hardware-design-content
+ms.date: 05/05/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Symbol Support

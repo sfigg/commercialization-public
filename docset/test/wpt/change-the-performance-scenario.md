@@ -8,6 +8,11 @@ ms.assetid: 33a38657-48b1-412f-8530-2ef0d8ce878b
 ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
+ms.author: windows-hardware-design-content
+ms.date: 05/05/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Change the Performance Scenario

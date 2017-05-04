@@ -8,6 +8,11 @@ ms.assetid: 15f12bd8-a977-4c39-8da7-74b51bd7d54a
 ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
+ms.author: windows-hardware-design-content
+ms.date: 05/05/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # GetFileName

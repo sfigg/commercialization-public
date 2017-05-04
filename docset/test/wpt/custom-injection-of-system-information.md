@@ -8,6 +8,11 @@ ms.assetid: 18d70466-eb0c-4a3a-a711-59cda913b477
 ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
+ms.author: windows-hardware-design-content
+ms.date: 05/05/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Custom Injection of System Information

@@ -8,6 +8,11 @@ ms.assetid: 1c547a82-5e5e-4c0e-b3b5-5830f5a52bab
 ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
+ms.author: windows-hardware-design-content
+ms.date: 05/05/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # EVENT\_TRACE\_TYPE\_VIRTUAL\_FREE

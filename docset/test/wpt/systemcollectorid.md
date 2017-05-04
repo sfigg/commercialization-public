@@ -8,6 +8,11 @@ ms.assetid: bbaa7eb7-a7be-4b1d-a72c-087c7bf2fbef
 ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
+ms.author: windows-hardware-design-content
+ms.date: 05/05/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # SystemCollectorId

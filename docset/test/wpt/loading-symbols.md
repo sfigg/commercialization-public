@@ -8,6 +8,11 @@ ms.assetid: db27f063-0ae8-4762-8df4-66e3d14e55ed
 ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
+ms.author: windows-hardware-design-content
+ms.date: 05/05/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Loading Symbols

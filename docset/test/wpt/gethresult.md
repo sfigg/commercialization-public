@@ -8,6 +8,11 @@ ms.assetid: 5c7606d5-3a6d-4dc5-b232-ed24974d662c
 ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
+ms.author: windows-hardware-design-content
+ms.date: 05/05/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # GetHResult

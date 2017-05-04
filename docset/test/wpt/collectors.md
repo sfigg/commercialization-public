@@ -8,6 +8,11 @@ ms.assetid: e94d9c16-0aa7-4af3-80df-5ef086e74293
 ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
+ms.author: windows-hardware-design-content
+ms.date: 05/05/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Collectors

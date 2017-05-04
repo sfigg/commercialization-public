@@ -8,6 +8,11 @@ ms.assetid: 866984f9-5370-4ec2-b078-3034ba4c8ddd
 ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
+ms.author: windows-hardware-design-content
+ms.date: 05/05/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Apply, Create, or Delete a Preset Combination of Columns to Display

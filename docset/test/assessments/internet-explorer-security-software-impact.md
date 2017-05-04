@@ -8,6 +8,11 @@ ms.assetid: d71e8ac3-f160-4554-8a26-2d3a95ac059e
 ms.prod: W10
 ms.mktglfcycl: plan
 ms.sitesec: msdn
+ms.author: windows-hardware-design-content
+ms.date: 05/05/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Internet Explorer Security Software Impact

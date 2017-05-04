@@ -8,6 +8,11 @@ ms.assetid: 49078217-91ef-444e-9d08-88f87d1b0280
 ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
+ms.author: windows-hardware-design-content
+ms.date: 05/05/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # IEnumControlWarningInfo

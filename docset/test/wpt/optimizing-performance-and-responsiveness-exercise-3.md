@@ -8,6 +8,11 @@ ms.assetid: C17DDC73-DE68-4C4A-9968-08C5FE90CC7E
 ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
+ms.author: windows-hardware-design-content
+ms.date: 05/05/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Exercise 3 - Understand Critical Path and Wait Analysis

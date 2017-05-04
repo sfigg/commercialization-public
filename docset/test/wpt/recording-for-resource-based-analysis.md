@@ -8,6 +8,11 @@ ms.assetid: 34969714-a6f1-4748-9bc7-8437382493dc
 ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
+ms.author: windows-hardware-design-content
+ms.date: 05/05/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Recording for Resource-based Analysis

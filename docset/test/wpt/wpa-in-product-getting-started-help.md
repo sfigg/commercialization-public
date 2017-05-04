@@ -11,6 +11,11 @@ ms.assetid: 528fcff0-e164-4b65-9012-7227b397355c
 ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
+ms.author: windows-hardware-design-content
+ms.date: 05/05/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Windows Performance Analyzer in-product Getting Started Guide

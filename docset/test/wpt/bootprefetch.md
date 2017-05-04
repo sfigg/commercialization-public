@@ -8,6 +8,11 @@ ms.assetid: 482e724b-bf10-4181-a77f-40e5fdc8db7e
 ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
+ms.author: windows-hardware-design-content
+ms.date: 05/05/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # bootprefetch

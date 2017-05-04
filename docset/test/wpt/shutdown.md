@@ -8,6 +8,11 @@ ms.assetid: e6c848b1-98d9-48f7-ba94-77faa55f9714
 ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
+ms.author: windows-hardware-design-content
+ms.date: 05/05/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # shutdown

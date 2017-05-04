@@ -1046,6 +1046,11 @@ The new mode will help you to understand which software components need
 to be improved for memory usage.
 
 Tools and technical reference
+ms.author: windows-hardware-design-content
+ms.date: 05/05/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 -----------------------------
 
 You can learn more about the on/off experience, and download tools to

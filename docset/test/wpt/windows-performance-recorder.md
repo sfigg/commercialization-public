@@ -8,6 +8,11 @@ ms.assetid: 92f57f4c-f3a5-4339-a1a9-b3f5421de683
 ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
+ms.author: windows-hardware-design-content
+ms.date: 05/05/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Windows Performance Recorder

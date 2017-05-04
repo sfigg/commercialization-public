@@ -8,6 +8,11 @@ ms.assetid: C77947E1-D20A-4728-878C-3748B1068DEC
 ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
+ms.author: windows-hardware-design-content
+ms.date: 05/05/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Exercise 3 - Track Driver Footprint and Dynamic Allocations During Boot

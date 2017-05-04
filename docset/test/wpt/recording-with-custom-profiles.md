@@ -8,6 +8,11 @@ ms.assetid: 306e1296-3438-4c9d-9189-02954090fdd6
 ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
+ms.author: windows-hardware-design-content
+ms.date: 05/05/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Recording with Custom Profiles

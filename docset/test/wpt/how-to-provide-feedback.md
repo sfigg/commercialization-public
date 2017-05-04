@@ -8,6 +8,11 @@ ms.assetid: 7C5C5D0E-2BA3-40C4-B41B-0F30CEF699B8
 ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
+ms.author: windows-hardware-design-content
+ms.date: 05/05/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # How to Provide Feedback

@@ -8,6 +8,11 @@ ms.assetid: 2D48C16B-62B4-49D6-B79D-2E7ED93395AF
 ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
+ms.author: windows-hardware-design-content
+ms.date: 05/05/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Optimizing Windows Devices for Multimedia Experiences

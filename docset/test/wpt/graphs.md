@@ -8,6 +8,11 @@ ms.assetid: 44ccfef7-aaee-4194-a26d-5285e41eb683
 ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
+ms.author: windows-hardware-design-content
+ms.date: 05/05/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Graphs

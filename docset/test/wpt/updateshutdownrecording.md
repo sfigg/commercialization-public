@@ -8,6 +8,11 @@ ms.assetid: 0efaf47c-ca92-4be2-bfd4-f71a6b300297
 ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
+ms.author: windows-hardware-design-content
+ms.date: 05/05/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # UpdateShutdownRecording
