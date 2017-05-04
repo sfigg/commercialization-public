@@ -652,3 +652,29 @@ The following example is provided to show proper format and should not be taken 
     </SyncBody>
 </SyncML>
 ```
+
+<a href="" id="allowwarningforotherdiskencryption"></a>**AllowWarningForOtherDiskEncryption**  
+
+<p style="margin-left: 20px">Allows the Admin to disable the warning prompt for other disk encryption on the user machines.</p>
+
+<p style="margin-left: 20px">The following list shows the supported values:</p>
+
+-   0 – Disables the warning prompt.
+-   1 (default) – Warning prompt allowed.
+
+<p style="margin-left: 20px">Admin should set the value to 0 to disable the warning. If you want to disable this policy use the following SyncML:</p>
+
+``` syntax
+<Replace>
+	<CmdID>110</CmdID>
+	<Item>
+		<Target>
+			<LocURI>./Device/Vendor/MSFT/BitLocker/DisableWarningForOtherDiskEncryption</LocURI>
+		</Target>
+		<Meta>
+			<Format xmlns="syncml:metinf">int</Format>
+		</Meta>
+		<Data>0</Data>
+	</Item>
+</Replace>
+```

@@ -25,6 +25,9 @@ In Windows 10 Mobile, after the user’s out of box experience, an OEM or mobil
 
 Configuration data is not encrypted when sent over the air (OTA). Be aware that this is a potential security risk when sending sensitive configuration data, such as passwords.
 
+> [!IMPORTANT]
+> All Add and Replace commands need to be wrapped in an Atomic section.
+
 <a href="" id="email2"></a>**EMAIL2**  
 The configuration service provider root node.
 
