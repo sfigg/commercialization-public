@@ -420,8 +420,8 @@ When graphics drivers are submitted for certification, matching symbol files mus
 
 Symbols may by “public” or “private” per [MSDN guidance](https://msdn.microsoft.com/en-us/library/windows/hardware/ff550665.aspx).
 
-Device.Graphics.AdapterRender
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+## Device.Graphics.AdapterRender
 
 *The Render feature of a graphics device.*
 
