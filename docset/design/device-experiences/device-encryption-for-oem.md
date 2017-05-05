@@ -4,7 +4,9 @@ description: OEMs can configure hardware to support Windows 10 automatic device 
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ---
+
 # Device encryption in Windows 10
+
 With the right hardware configurations, Windows 10 automatically encrypts a device, helping to keep customer data safe.  OEMs can create a more secure device by implementing and testing the right hardware.
 
 Windows 10 device encryption is enabled only after users sign in with a **Microsoft Account** or an **Azure Active Directory** account. Device encryption is not enabled with local accounts.
