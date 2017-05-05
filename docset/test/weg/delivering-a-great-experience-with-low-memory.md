@@ -13,31 +13,29 @@ There are several things that an OEM, IHV, and ISV need to consider when targeti
 
 The typical baseline 32-bit retail Windows image consumes approximately 400 MB in terms of in-use memory post-boot (as measured using the Memory Footprint assessment in the ADK). Allowing for 10% headroom or 100 MB on 1 GB, this leaves memory for 2-3 apps to be in physical memory, enabling fast switching between the apps. The larger the base operating system memory footprint, the lesser the memory available to the user and apps.
 
-Key factors that impact baseline OS memory footprint are drivers and pre-loaded software, including antimalware apps, device desktop apps, and software updaters.
+Key factors that impact baseline OS memory footprint are drivers and pre-loaded software, including anti-malware apps, device desktop apps, and software updaters.
 
--   **Driver footprint:** This includes driver code and associated allocations. Non-pageable memory (or contents that need to be in physical memory and cannot be paged out) is extremely important because it constitutes a fixed cost in terms of memory utilization throughout the lifetime of the system as most drivers exist in memory at all times. Current hardware certification requirements cover non-pageable allocations: MDL/Contiguous memory allocations, non-paged driver code, and non-paged pool on a per-driver basis. For more information, see [Device.DevFund.Memory.DriverFootprint](https://msdn.microsoft.com/en-us/library/windows/hardware/jj124553.aspx)
+-   **Driver footprint:** This includes driver code and associated allocations. Because most drivers exist in memory at all times, non-pageable memory (or contents that need to be in physical memory and cannot be paged out) is extremely important as it constitutes a fixed cost in terms of memory utilization throughout the lifetime of the system. Current hardware certification requirements cover non-pageable allocations: MDL/Contiguous memory allocations, non-paged driver code, and non-paged pool on a per-driver basis. For more information, see [Device.DevFund.Memory.DriverFootprint](https://msdn.microsoft.com/en-us/library/windows/hardware/jj124553.aspx).
 
 -   **Hardware Memory Reservation:** This includes memory ”carve-outs,” which reduces the amount of OS visible memory that is available to Windows and is extremely important in the context of low memory devices. Current hardware certification requirements provide budgets for different RAM configurations: 
-[System.Fundamentals.Firmware.HardwareMemoryReservation](http://msdn.microsoft.com/en-us/library/windows/hardware/jj128256.aspx)
+[System.Fundamentals.Firmware.HardwareMemoryReservation](http://msdn.microsoft.com/en-us/library/windows/hardware/jj128256.aspx).
 
--   **Pre-loaded software and antimalware apps:** These include services/additional processes that start up during boot and remain active during the lifetime of a session. The set of pre-loaded software that introduces processes at startup need to be carefully considered and budgeted.
+-   **Pre-loaded software and anti-malware apps:** These include services/additional processes that start up during boot and remain active during the lifetime of a session. The set of pre-loaded software that introduces processes at startup need to be carefully considered and budgeted.
 
-From an OS perspective, several improvements have been made to reduce run-time memory footprint on Windows to make more memory available for users and their apps. For more information, see [Reducing runtime memory in Windows 8](https://blogs.msdn.microsoft.com/b8/2011/10/07/reducing-runtime-memory-in-windows-8/). It is important to ensure that OEMs, IHVs, ISVs and Microsoft partner to improve the footprint in each of these areas and configure devices with careful consideration to deliver a great customer experience.
+From an OS perspective, several improvements have been made to reduce run-time memory footprint on Windows to make more memory available for users and their apps. For more information, see [Reducing runtime memory in Windows 8](https://blogs.msdn.microsoft.com/b8/2011/10/07/reducing-runtime-memory-in-windows-8/). It is important to ensure that OEMs, IHVs, ISVs, and Microsoft partners improve the footprint in each of these areas and configure devices with careful consideration to deliver a great customer experience.
 
 ### Storage
 
 #### Disk performance
 
-In a low-memory configuration, Windows relies on paging and swapping of content from memory and thus the performance of the underlying disk is critical in delivering a smooth and responsive user experience. Hardware
-certification requirements provide guidance on key performance metrics for storage on Connected Standby devices. For more information, see [Device.Storage Requirements](https://msdn.microsoft.com/en-us/library/windows/hardware/jj134356.aspx).
+In a low-memory configuration, Windows relies on paging and swapping of content from memory and thus the performance of the underlying disk is critical in delivering a smooth and responsive user experience. Hardware certification requirements provide guidance on key performance metrics for storage on Connected Standby devices. For more information, see [Device.Storage Requirements](https://msdn.microsoft.com/en-us/library/windows/hardware/jj134356.aspx).
 
 Windows has mechanisms to reduce memory usage of suspended Windows Store apps and resume them via efficient sequential disk IO. For more information, see [Reclaiming memory from Metro style apps](https://blogs.msdn.microsoft.com/b8/2012/04/17/reclaiming-memory-from-metro-style-apps/). For example,
-consider a 120-MB app that needs to be read from disk on resume - a disk that delivers sequential read performance of 60 MB/s will take 2 seconds for that app to be read back off the disk whereas a disk that delivers
-120 MB/s will take only 1 second to bring its contents into memory. eMMC and SSD storage provide sequential read rates of approximately 120-150MB/s, while typical rotational disks have speeds of approximately 50 MB/s. Run-time policies in Windows make trade-offs based on storage performance and slower disks (e.g., HDD and HHDD), which will result in a potentially slower app switch/multitasking experience and increased app terminations.
+consider a 120-MB app that needs to be read from disk on resume; a disk that delivers sequential read performance of 60 MB/s will take 2 seconds for that app to be read back off the disk whereas a disk that delivers 120 MB/s will take only 1 second to bring its contents into memory. eMMC and SSD storage provide sequential read rates of approximately 120-150 MB/s, while typical rotational disks have speeds of approximately 50 MB/s. Run-time policies in Windows make trade-offs based on storage performance and slower disks (e.g., HDD and HHDD), which will result in a potentially slower app switch/multitasking experience and increased app terminations.
 
 #### Disk endurance
 
-The endurance or lifetime of non-rotational storage like SSDs and eMMC disks are proportional to the total volume of data written to the device along with several other factors (workload, alignment of writes, etc.). On a 1 GB device, there will be a larger volume of writes to storage given the memory constraints, which is an important consideration when selecting parts.
+The endurance or lifetime of non-rotational storage like SSDs and eMMC disks are proportional to the total volume of data written to the device along with several other factors, such as workload and alignment of writes. On a 1-GB device, there will be a larger volume of writes to storage given the memory constraints, which is an important consideration when selecting parts.
 
 Endurance varies significantly based on manufacturers (block size selection, types of flash memory, etc.); currently, there are no standardized ways of measuring endurance. It is recommended that partners evaluate disk endurance before making device selection decisions.
 
@@ -48,15 +46,15 @@ Endurance varies significantly based on manufacturers (block size selection, typ
 <table>
 <thead>
 <tr class="header">
-<th>Category</th>
-<th>Metric</th>
-<th>Goals</th>
+<th><strong>Category</strong></th>
+<th><strong>Metric</strong></th>
+<th><strong>Goals</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<th rowspan="9">Baseline Memory Footprint</th>
-<td colspan="2"><strong>System Level</strong></td>
+<th rowspan="9"><strong>Baseline memory footprint</strong></th>
+<td colspan="2"><strong>System level</strong></td>
 <!--Empty cell in colspan-->
 </tr>
 <tr class="even">
@@ -64,21 +62,21 @@ Endurance varies significantly based on manufacturers (block size selection, typ
 <td>
 <p>&nbsp;&nbsp;&nbsp;Driver non-paged code</p>
 </td>
-<td>&lt;20 MB</td>
+<td>&lt; 20 MB</td>
 </tr>
 <tr class="odd">
 <!--Empty cell in rowspan-->
 <td>
 <p>&nbsp;&nbsp;&nbsp;Driver non-paged allocations</p>
 </td>
-<td>&lt;30 MB</td>
+<td>&lt; 30 MB</td>
 </tr>
 <tr class="even">
 <!--Empty cell in rowspan-->
 <td>
 <p>&nbsp;&nbsp;&nbsp;Hardware memory reservation</p>
 </td>
-<td>&lt;130 MB</td>
+<td>&lt; 130 MB</td>
 </tr>
 <tr class="odd">
 <!--Empty cell in rowspan-->
@@ -101,22 +99,22 @@ Endurance varies significantly based on manufacturers (block size selection, typ
 <!--Empty cell in rowspan-->
 <td>&nbsp;&nbsp;&nbsp;Non-paged allocations</td>
 <td>
-<p>&lt;=6 MB for GPU driver</p>
-<p>&lt;=4 MB for other drivers</p>
+<p>&lt;= 6 MB for GPU driver</p>
+<p>&lt;= 4 MB for other drivers</p>
 </td>
 </tr>
 <tr class="odd">
 <!--Empty cell in rowspan-->
 <td>&nbsp;&nbsp;&nbsp;Non-paged driver code</td>
-<td>&lt;=10 MB for GPU drivers &lt;=1.66 MB for other drivers</td>
+<td>&lt;= 10 MB for GPU drivers, &lt;= 1.66 MB for other drivers</td>
 </tr>
 <tr class="even">
-<th>Startup apps memory footprint</th>
-<td><strong>Startup applications, services, and tasks (including Antimalware)</strong></td>
+<th><strong>Startup apps memory footprint</strong></th>
+<td><strong>Startup applications, services, and tasks (including anti-malware)</strong></td>
 <td>&lt; 40 MB</td>
 </tr>
 <tr class="odd">
-<th rowspan="13">Disk performance</th>
+<th rowspan="13"><strong>Disk performance</strong></th>
 <td colspan="2"><strong>Random performance</strong></td>
 <!--Empty cell in colspan-->
 </tr>
@@ -184,7 +182,7 @@ Endurance varies significantly based on manufacturers (block size selection, typ
 <tr class="odd">
 <!--Empty cell in rowspan-->
 <td>
-<p>&nbsp;&nbsp;&nbsp;Read speed (64KB I/Os), measured over a 10-GB area</p>
+<p>&nbsp;&nbsp;&nbsp;Read speed (64 KB I/Os), measured over a 10-GB area</p>
 </td>
 <td>&gt;= 60 MB/s †(120 MB/s)</td>
 </tr>
@@ -201,16 +199,16 @@ Endurance varies significantly based on manufacturers (block size selection, typ
 <td>&lt; 500 milliseconds</td>
 </tr>
 <tr class="even">
-<th>Disk endurance</th>
+<th><strong>Disk endurance</strong></th>
 <td><strong>Lifetime</strong></td>
-<td>&gt;=2-3 years</td>
+<td>&gt;= 2-3 years</td>
 </tr>
 </tbody>
 </table>
 
 ## Measuring memory using the Windows Assessment and Deployment Kit (ADK)
 
-The memory footprint assessment in the ADK provides a quantitative evaluation of baseline memory footprint for different configurations compared to a retail OS image.
+Compared to a retail OS image, the memory footprint assessment in the ADK provides a quantitative evaluation of baseline memory footprint for different configurations.
 
 ### Related resources
 
@@ -224,9 +222,9 @@ The memory footprint assessment in the ADK provides a quantitative evaluation of
 
 OEMs have a significant influence over the choice of hardware/drivers and pre-loaded software, which directly impacts the memory footprint of the system.
 
--   Before you deploy, understand and quantify the impact of drivers and software you install on top of a clean image and ensure that they are within the recommended goals above:
+-   Before you deploy, understand and quantify the impact of drivers and software you install on top of a clean image and ensure that they are within the recommended goals previously described.
 
--   Driver footprint: This can be achieved by reducing the number of drivers or selecting hardware/drivers that have lower memory requirements.
+-   Driver footprint: This can be reduced by lessening the number of drivers or selecting hardware/drivers that have lower memory requirements.
 
 -   Pre-loaded software/Antivirus: Reducing the number of default "run-always" startup processes (introduced by pre-loaded software) along with providing guidance to consumers on enabling specific applications or functionality if needed.
 
@@ -234,95 +232,61 @@ OEMs have a significant influence over the choice of hardware/drivers and pre-lo
 
 -   Consult your driver and software vendors for the latest versions of their software to see if they can reduce the impact on memory.
 
--   Provide feedback to your partners on specific drivers or software that have higher than recommended memory usage along with traces/logs from the assessment toolkit
+-   Provide feedback to your partners on specific drivers or software that have higher than recommended memory usage along with traces/logs from the assessment toolkit.
 
 ### For IHV/ISV
 
-IHVs that can deliver memory efficient drivers enable OEMs to build 1 GB systems that provide a great experience to consumers.
+IHVs that can deliver memory efficient drivers enable OEMs to build 1-GB systems that provide a great experience to consumers.
 
--   Ensure that hardware parts meet certification requirements described previously (particularly nonpageable footprint for drivers, performance for storage hardware, and memory usage of run-always apps for applications)
+-   Ensure that hardware parts meet the certification requirements described previously (particularly nonpageable footprint for drivers, performance for storage hardware, and memory usage of run-always apps for applications).
 
--   Be efficient with memory usage using a ‘pay for play’ model by enabling functionality only as needed:
+-   Be efficient with memory usage that uses a "pay for play" model by enabling functionality only as needed:
 
-    -   Avoid configuring drivers to support features that are only
-        needed for 1GB systems (for example, create platform- specific
-        driver packages that detect hardware and load code specific
-        to it)
+    -   Avoid configuring drivers to support features that are only needed for 1-GB systems (for example, create platform-specific driver packages that detect hardware and load code specific to it).
 
-    -   Minimize runtime cost - Allocate the minimum memory required
-        when needed and free as soon as you are done (for example,
-        buffers for supporting RAID storage are not required unless the
-        user explicitly configures it)
+    -   Minimize runtime cost - Allocate the minimum memory required when needed and free as soon as you are done (for example, buffers for supporting RAID storage are not required unless the user explicitly configures it).
 
--   Leverage tools to understand and improve memory footprint.
+-   Leverage tools to understand and improve memory footprint. The following talk describes the approach to reducing footprint along with available tools: [Reducing the memory footprint of drivers and apps](http://channel9.msdn.com/events/BUILD/BUILD2011/HW-141T).
 
-    -   The following talk describes the approach to reducing footprint
-        along with available tools\
-        Reducing the memory footprint of drivers and Apps:
-        <http://channel9.msdn.com/events/BUILD/BUILD2011/HW-141T>
+### For anti-malware app ISV
 
-### For antimalware app ISV
+Anti-malware apps can significantly impact baseline the OS memory footprint and user experience when not optimized for performance.
 
-Antimalware apps can significantly impact baseline the OS memory
-footprint and user experience when not optimized for performance.
+-   Ensure that the number and footprint of "run-always" services and processes are as minimal as possible. For example:
 
--   Ensure that the number and footprint of ‘run-always’
-    services/processes are as minimal as possible. For example:
+    -   Ideally, run only one process/service for real-time scanning.
 
-<!-- -->
+    -   Other processes for updating antivirus definitions, such as displaying the UI for the user, should be created only when needed in response to user input or notifications, and should exit after operations are complete.
 
--   Ideally only one process/service for real-time scanning
+-   Be efficient with memory usage for "run-always" processes:
 
--   Other processes for updating antivirus definitions, showing UI for
-    the user etc. should be created only when needed in response to user
-    input or notifications and should exit after operations are complete
+    -   Maintain a data structure to represent signatures and only load specific portions on demand.
 
-<!-- -->
+    -   UI should not be launched unless explicitly requested by the user (for example, popups that open immediately after boot).
 
--   Be efficient with memory usage for the ‘run-always’ process
+-   Windows has provided a core set of Windows APIs and associated documentation to optimize for performance:
 
-    -   Maintain a data structure to represent signatures and only load
-        specific portions on demand
+    -   Optimize signature loading and maintenance via the use of compression: [Xpress Compression](http://msdn.microsoft.com/en-us/library/ee915356(v=PROT.13).aspx).
 
-    -   UI should not be launched unless explicitly requested by the
-        user (for example, popups that open immediately after boot)
+    -   Maintain caches for previously scanned files to minimize work.
 
-<!-- -->
+    -   Use low CPU/disk and memory priorities for minimizing impact. For example:
 
--   Windows has provided a core set of Windows APIs and associated
-    documentation to optimize for performance
+        -   [SetPriorityClass](http://msdn.microsoft.com/en-us/library/ms686219.aspx)
 
-    -   Optimize signature loading and maintenance via the use of
-        compression
-        <http://msdn.microsoft.com/en-us/library/ee915356(v=PROT.13).aspx>
+        -   [SetThreadPriority](http://msdn.microsoft.com/en-us/library/ms686277.aspx)
 
-    -   Maintain caches for previously scanned files to minimize work
-
-    -   Use low CPU/Disk and Memory priorities for minimizing impact
-
-        -   SetPriorityClass\
-            <http://msdn.microsoft.com/en-us/library/ms686219.aspx>
-
-        -   SetThreadPriority\
-            <http://msdn.microsoft.com/en-us/library/ms686277.aspx>
-
--   Focus on idle memory footprint to ensure that memory footprint at
-    idle is &lt; 15 MB as well as during full system scans and during
-    real time scanning to reduce memory footprint as much as possible
-    during those scenarios.
+-   Focus on idle memory footprint to ensure that memory footprint at idle as well as during full system scans and 
+    real time scanning is < 15 MB. Doing so, will reduce the memory footprint as much as possible during those scenarios.
 
 ## Validation
 
-In order to evaluate and validate memory usage by processes and drivers,
-use the Memory Footprint assessment in the ADK. Once the assessment has
-executed, open the report in the Windows Assessment Console tool (WAC)
-and extract the relevant metrics using the following guidance.
+To evaluate and validate memory usage by processes and drivers, use the Memory Footprint assessment in the ADK. After the assessment has
+executed, open the report in the Windows Assessment Console (WAC) tool and extract the relevant metrics using the following guidance.
 
 ### System level 
 
-You can find system-wide memory metrics in the assessment report. The
-following screenshot highlights **Total In-Use Memory**, **Driver
-Non-Paged Code** and **Allocations** metrics.
+You can find system-wide memory metrics in the assessment report. The following screenshot highlights **Total In-Use Memory**, **Driver Non-Paged Code** and **Allocations** metrics.
 
 ![Memory footprint shown in the Windows Assessment Console.](images/weg-wac-memory-footprint-highlighted.png)
 
@@ -330,31 +294,23 @@ Non-Paged Code** and **Allocations** metrics.
 
 #### Non-Paged code
 
-To obtain the specific non-paged code contribution of individual
-drivers, expand the **Driver Non-Paged Code** metric.
+To obtain the specific non-paged code contribution of individual drivers, expand the **Driver Non-Paged Code** metric.
 
 ![Memory usage by drivers in non-paged code shown in the Windows Assessment Console (WAC).](images/weg-wac-driver-non-paged-code.png)
 
 #### Non-Paged allocations
 
-To obtain the specific non-paged allocations of individual drivers,
-expand the **Driver Non-Paged Allocations** metric and select **Group by
--&gt; (None)**.
+To obtain the specific non-paged allocations of individual drivers, expand the **Driver Non-Paged Allocations** metric and select **Group by -> (None)**.
 
 ![Non-paged allocations for drivers shown in the Windows Assessment Console (WAC).](images/weg-wac-driver-non-paged-allocations.png)
 
-### <span id="_Toc375143139" class="anchor"><span id="_Toc375143455" class="anchor"><span id="_Toc375165809" class="anchor"><span id="_Toc426441280" class="anchor"></span></span></span></span>Per process
+### Per process
 
-To obtain the amount of active private pages of individual processes
-(applications, services, or tasks) on the system, expand the **Process
-Private Pages** metric, and select the **Active** sub-metric.
+To obtain the amount of active private pages of individual processes (applications, services, or tasks) on the system, expand the **Process Private Pages** metric, and select the **Active** sub-metric.
 
-In the following screenshot, Windows Defender (MsMpEng.exe process)
-consumes 14.9 MB of memory through its private working set.
+In the following screenshot, Windows Defender (MsMpEng.exe process) consumes 14.9 MB of memory through its private working set.
 
-In order to validate that the 40MB target for startup applications, and
-services and tasks are achieved, identify every process in this list
-associated with preloaded software and calculate the sum.
+In order to validate that the 40-MB target for startup applications, services, and tasks is achieved, identify every process in this list associated with preloaded software and calculate the sum.
 
 ![Active private pages of processes shown in the Windows Assessment Console (WAC).](images/weg-wac-process-private-pages-in-use.png)
 
