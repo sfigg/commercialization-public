@@ -1,6 +1,7 @@
 ---
 title: Device encryption in Windows 10 for OEMs
 description: OEMs can configure hardware to support Windows 10 automatic device encryption.
+MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ---
@@ -19,6 +20,7 @@ Device encryption is enabled when:
 - **Direct memory access (DMA)** protections is enabled.  
 
 The following list shows the hardware and tests that a device must pass before Windows 10 can enable device encryption. OEMs who want to create hardware that supports this capability must verify that their device passes these tests. If any test in this sequence fails, no further tests can will pass.
+
 
 1. **TPM**: Device must include a TPM with PCR 7 support.  See [System.Fundamentals.TPM20.TPM20](https://msdn.microsoft.com/windows/hardware/commercialize/design/compatibility/systems#systemfundamentalstpm20tpm20).
 2. **Secure boot**: UEFI Secure Boot is enabled. See [System.Fundamentals.Firmware.UEFISecureBoot](https://msdn.microsoft.com/windows/hardware/commercialize/design/compatibility/systems#systemfundamentalsfirmwareuefisecureboot).
