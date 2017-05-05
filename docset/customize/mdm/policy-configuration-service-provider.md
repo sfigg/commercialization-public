@@ -4961,9 +4961,6 @@ PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjxEZWZhdWx0QXNzb2NpYXRpb25z
 <a href="" id="browser-allowflashclicktorun"></a>**Browser/AllowFlashClickToRun**  
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies whether users must take an action, such as clicking the content or a Click-to-Run button, before seeing content in Adobe Flash.
 
-> [!IMPORTANT]
-> Sites are put on the auto-allowed list based on how frequently employees load and run the content.
-
 <p style="margin-left: 20px">The following list shows the supported values:
 
 -   0 – Adobe Flash content is automatically loaded and run by Microsoft Edge.
