@@ -7,11 +7,11 @@
 
 When a laptop or a convertible device is attached to a USB dock, the operating system should be able to identify the attached hardware device as a dock so that it can deliver the correct user experience, such as when a convertible device is docked in a Continuum setup.
 
-To qualify as a dock, the hardware device should allow projection to external displays and support additional peripherals such as a mouse, keyboard, storage, and more. Thus, a USB hub alone or a port replicator does not quality as a dock.
+To qualify as a dock, the hardware device should allow projection to external displays and support additional peripheral devices such as a mouse, keyboard, storage, and more. Thus, a USB hub alone or a port replicator does not quality as a dock.
 
-The [Microsoft OS Descriptor](https://msdn.microsoft.com/en-us/windows/hardware/drivers/usbcon/microsoft-defined-usb-descriptors) is recommended for docks with USB-only connectors or with USB and video over standard or proprietary connectors (for example, a Surface dock or a USB Type-C dock).
+The [Microsoft OS Descriptor](https://msdn.microsoft.com/en-us/windows/hardware/drivers/usbcon/microsoft-defined-usb-descriptors) is recommended for docks with USB-only connectors or for docks with USB and video over standard or proprietary connectors, such as a Surface dock or a USB Type-C dock.
 
-To declare to Windows that a device is a dock, the extended properties OS feature descriptor can be used. The extended properties descriptor will create a bitmasked registry entry, **MSOSDockProperties**, which indicates different dock properties, as shown in the following table:
+To declare to Windows that a device is a dock, you can use the extended properties OS feature descriptor. The extended properties descriptor will create a bitmasked registry entry, **MSOSDockProperties**, which indicates different dock properties, as shown in the following table:
 
 Offset | Property name                 | Description
 ------:|:------------------------------|:-------------------------------------------------------------------------
@@ -21,7 +21,7 @@ Offset | Property name                 | Description
 3      | **DockHasIntegratedMouse**    | This value is set to 1 to indicate that the dock has a built-in mouse.
 4-31   | Reserved                      | These values are reserved and should be set to zero.
 
-All docks should have at a minimum the **IsDock** property, with the additional custom properties set if needed. The **DockHasIntegratedScreen**, **DockHasIntegratedKeyboard**, and **DockHasIntegratedMouse** properties should only be used if such a device is physically built into the dock, not just if the dock supports this type of connection.
+All docks should have at a minimum the **IsDock** property, with the additional custom properties set if needed. Only use the **DockHasIntegratedScreen**, **DockHasIntegratedKeyboard**, and **DockHasIntegratedMouse** properties if such a device is physically built into the dock, not just if the dock supports this type of connection.
 
 
 
@@ -56,20 +56,20 @@ Offset | Field          | Size (bytes) | Type  | Value  | Description
 This section provides an example for how to set custom properties.
 
 Offset | Field                    | Size (bytes) | Value      | Description
-------:|:-------------------------|-------------:|:-----------|:----------------------------------------------------------------------------------------
+------:|:-------------------------|-------------:|:-----------|:-----------------------------------------------------------------------------------------
 0      | **dwSize**               | 4            | 0x00000038 | The length of this custom property section is 56 bytes.
 4      | **dwPropertyDataType**   | 4            | 0x00000004 | The property value stores a little-endian 32-bit integer.
 8      | **wPropertyNameLength**  | 2            | 0x00000026 | The length of the property name string is 38 bytes.
 10     | **bPropertyName**        | 38           | ‘M’ ‘\0’<br/>‘S’ ‘\0’<br/>‘O’ ‘\0’<br/>‘S’ ‘\0’<br/>‘D’ ‘\0’<br/>‘O’ ‘\0’<br/>‘C’ ‘\0’<br/>‘K’ ‘\0’<br/>‘P’ ‘\0’<br/>‘R’ ‘\0’<br/>‘O’ ‘\0’<br/>“P’ ‘\0’<br/>“E’ ‘\0’<br/>‘R’ ‘\0’<br/>‘T’ ‘\0’<br/>‘I’ ‘\0’<br/>‘E’ ‘\0’<br/>‘S’ ‘\0’<br/>‘\0’ ‘\0’ | The property name is **MSOSDockProperties**.
 22     | **dwPropertyDataLength** | 4            | 0x00000004 | The length of the property value is four bytes.
-26     | **bPropertyData**        | 4            | 0x0000000F | This value indicates that device is a dock with an embedded mouse, keyboard and monitor.
+26     | **bPropertyData**        | 4            | 0x0000000F | This value indicates that device is a dock with an embedded mouse, keyboard, and monitor.
 
 
 
 ## Additional steps
 
 
-In addition to creating the extended properties OS descriptor, **one** of the following must also be updated for the Microsoft OS descriptor to be read:
+In addition to creating the extended properties OS descriptor, you must also update **one** of the following for the Microsoft OS descriptor to be read:
 
 * The product identifier (PID) of the device
 * The revision number and serial number of the device

@@ -27,22 +27,20 @@ A wired docking configuration uses a single connection to a dock. The connection
 Wired docking features to consider:
 
 -   Use of a single cable from the device to the dock
--   Support for phone, tablet and laptops
+-   Support for phone, tablet, and laptops
 -   Wired or wireless mouse and keyboard input
 -   Multiple connections on the dock
--   Monitor outputs using HDMI or DisplayPort or both
+-   Monitor outputs using HDMI, DisplayPort, or both
 -   A power connection to the device
 -   An Ethernet port
 
 ### Overall recommendations
 
-The device-to-dock connection should be USB Type-C. For more information see [Windows support for USB Type-C connectors](https://msdn.microsoft.com/library/windows/hardware/mt628692).
-
-The introduction of the USB Type-C connector allows us to truly reach a single-cable solution that supports docks, displays, data devices, and power for the majority of portable systems (phones, tablets and laptops). We expect the largest changes in the wired docking space to be around USB Type-C alternate modes, and some minor changes coming with updates of graphics standards.
+The device-to-dock connection should be USB Type-C. The introduction of the USB Type-C connector allows us to truly reach a single-cable solution that supports docks, displays, data devices, and power for the majority of portable systems (phones, tablets, and laptops). We expect the largest changes in the wired docking space to be around USB Type-C alternate modes, with minor changes coming with updates of graphics standards.
 
 USB Type-C introduced the concept of alternate modes (protocols other than USB over a symmetrical and reversible Type-C connector and cable), but because this technology is still “young,” we expect to see other alternate modes defined in the future. As more alternate modes are added, we will continue to reevaluate our USB Type-C recommendations.
 
-Currently, we are recommending that DisplayPort over Type-C be used as the alternate mode for docks and displays. Although we do allow docks and displays to use other USB Type-C alternate modes, these devices must be able to fall back to the DisplayPort over Type-C alternate mode to ensure interoperability. For example, Thunderbolt 3 docks and displays must still work when the dock or display is connected to a system that only supports DisplayPort over Type-C alternate mode. Please see A Note on Thunderbolt at the end of this section.
+Currently, we are recommending that DisplayPort over Type-C be used as the alternate mode for docks and displays. Although we do allow docks and displays to use other USB Type-C alternate modes, these devices must be able to fall back to the DisplayPort over Type-C alternate mode to ensure interoperability. For example, Thunderbolt 3 docks and displays must still work when the dock or display is connected to a system that only supports DisplayPort over Type-C alternate mode. Please see [A Note on Thunderbolt](#A-Note-on-Thunderbolt) at the end of this topic.
 
 As HDMI and DisplayPort protocol specifications mature, our recommendations will change to take advantage of new features.
 
@@ -54,13 +52,13 @@ All systems should meet at least the [minimum hardware requirements](../minimum/
 <tbody>
 <tr>
 <th align="left" valign="top">System connection to the dock</th>
-<td>The system should include at least one USB Type-C port that supports USB Host (or USB Dual Role/OTG). All USB Type-C ports should include support for the following:
+<td>The system should include at least one USB Type-C port that supports USB Host or USB Dual Role/USB On-The-Go (OTG). All USB Type-C ports should include support for the following:
 <ul>
   <li>USB Data, with <a href="http://www.usb.org/developers/ssusb">USB 3.1 Gen 2</a> being optimal</li>
-  <li><a href="http://www.usb.org/developers/powerdelivery/">USB Power Delivery (PD)</a> power receiver for systems to negotiate system charging from dock (minimum 30 watts), so that a user only needs to connect onw wire to their system to be productive for several hours</li>
+  <li><a href="http://www.usb.org/developers/powerdelivery/">USB Power Delivery (PD)</a> power receiver for systems to negotiate system charging from dock (minimum 30 watts), so that a user only needs to connect one wire to their system to be productive for several hours</li>
   <li><a href="https://www.vesa.org/wp-content/uploads/2016/10/USB-DevDays-DisplayPort-Alternate-Mode-2016-final4.pdf">DisplayPort Alternate Mode</a>, pin assignment C, D, E, and F, with support for High Bit Rate (HBR) and High Bit Rate 2 (HBR2) signaling on those pin assignments, and the ability to source DisplayPort on at least two DisplayPort lanes for all supported pin assignments</li>
 </ul>
-<p>For systems with multiple USB Type-C ports, we recommend that all ports support the specifications above. If the specifications are not supported by all of the included USB Type-C ports, we recommend that these ports are visually differentiable to the user as defined in the <a href="http://www.usb.org/developers/logo_license/USB-IF_TLA_and_Logo_Usage_Guidelines_FINAL_March_13.2017.pdf">USB-IF Trademark License Agreement</a> under the section “Logo Guidelines for USB Type-C Products and Cables that Support Alternate Modes.”</p>
+<p>For systems with multiple USB Type-C ports, we recommend that all ports support the specifications above. If the specifications are not supported by all of the included USB Type-C ports, we recommend that these ports be visually differentiable to the user as defined in the <a href="http://www.usb.org/developers/logo_license/USB-IF_TLA_and_Logo_Usage_Guidelines_FINAL_March_13.2017.pdf">USB-IF Trademark License Agreement</a> under the section “Logo Guidelines for USB Type-C Products and Cables that Support Alternate Modes.”</p>
 <p>Also, please see "Note on USB-C Alternate Modes" if you plan on including an alternate mode other than DisplayPort over USB Type-C alternate mode.</p>
 <p>For more information about implementing USB Type-C, see <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt595926.aspx">Developing Windows drivers for USB Type-C connectors</a> on MSDN.</p>
 </td>
@@ -82,7 +80,7 @@ All systems should meet at least the [minimum hardware requirements](../minimum/
 
 #### Wired docking device recommendations
 
-The end goal of these docking recommendations is that all docks work with all Windows systems. For docks that support other USB Type-C alternate modes (such as Thunderbolt 3), we strongly recommend they also support the following specifications in addition to ensure interoperability with all systems.
+The end goal of these docking recommendations is so that all docks work with all Windows systems. For docks that support other USB Type-C alternate modes (such as Thunderbolt 3), we strongly recommend they also support the following specifications in addition to ensure interoperability with all systems.
 
 <table>
 <tbody>
@@ -101,28 +99,28 @@ The end goal of these docking recommendations is that all docks work with all Wi
 <th align="left" valign="top">Dock (downstream) I/O ports</th>
 <td>The downstream device I/O ports between a dock and other peripheral devices should always interoperate with any system that meets the system docking requirements.
 <ul>
-  <li>For peripheral device connectivity, a minimum of three USB Type-A and/or USB Type-C 3.1 Gen 2 ports (can be a combination of USB Type-A and USB Type-C ports)
+  <li>For peripheral device connectivity, a combination of at least three USB Type-A and/or USB Type-C 3.1 Gen 2 ports
   <ul>
-    <li>The USB Type-C ports should provide power to devices via USB PD.</li>
-    <li>The USB Type-A ports should provide enough power to devices for 7.5-watt charging (through the USB Battery Charging 1.2 standard).</li>
+    <li>The USB Type-C ports should provide power to devices through USB PD.</li>
+    <li>The USB Type-A ports should provide enough power to devices for 7.5-watt charging through the USB Battery Charging 1.2 standard.</li>
   </ul>
   </li>
   <li>USB Type-C power input (see the "Power input" recommendation)</li>
-  <li>Ethernet connectivity (optional), to ensure that you choose a USB Ethernet adapter that works on mobile</li>
+  <li>Ethernet connectivity (optional), to ensure that you choose a USB Ethernet adapter that works on mobile devices</li>
   <li>An external monitor connection, if the dock does not include a built-in monitor (see the "Display output" recommendation)</li>
 </ul>
 </td>
 </tr>
 <tr>
 <th align="left" valign="top">Power input</th>
-<td>It is recommended that power to the dock be via a USB-C connector. The power adapter that ships with the dock should provide enough power to charge the system connected to the dock as well as power the devices attached to the dock (min 30W). The goal is that a user should only need one power supply to use both their dock and system.</td>
+<td>We recommend that power to the dock be through a USB-C connector. The power adapter that ships with the dock should provide enough power to both charge the system connected to the dock and power the devices attached to the dock (minimum 30 watts). A user should only need one power supply to use both their dock and system.</td>
 </tr>
 <tr>
 <th align="left" valign="top">Display output</th>
 <td>The connection from the dock to an external monitor should be provided by at least one digital connector that is at a minimum either HDMI 1.4 or DisplayPort 1.2 (supporting DP++).
-<p>However, if the device is a docking display (that is, the dock and the monitor are in the same device), it is optional to include an additional display output to enable a multimonitor experience. If the dock is a docking display, this needs to be indicated in the Microsoft OS docking Descriptor.</p>
+<p>However, if the device is a docking display (that is, the dock and the monitor are in the same device), it is optional to include an additional display output to enable a multimonitor experience. If the dock is a docking display, this needs to be indicated in the Microsoft OS docking descriptor.</p>
 <p>The resolution supported should at a minimum be 1080p, regardless of whether the display is externally connected through an external video port or is internally connected to the display.</p>
-<p>Also please see Note on USB-C Alternate Modes if you plan on including an alternate mode other than DisplayPort.</p>
+<p>Please see "Note on USB-C Alternate Modes" if you plan on including an alternate mode other than DisplayPort.</p>
 </td>
 </tr>
 <tr>
@@ -135,11 +133,11 @@ The end goal of these docking recommendations is that all docks work with all Wi
 </tr>
 <tr>
 <th align="left" valign="top">Touchpad (optional)</th>
-<td>If the dock has an embedded touchpad, the touchpad needs to be a precision touchpad (PTP). We recommend that IHVs follow the <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt604177(v=vs.85).aspx">PTP implementation guide</a> to create PTPs that are on par with traditional laptop PTPs. The <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt604198(v=vs.85).aspx">Device Integration</a>, <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt604199(v=vs.85).aspx">Experience Customization</a>, and <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt604201(v=vs.85).aspx">Module Design for HLK Requirements</a> sections in the implementation guide details the best practices to creating a touchpad that is superior aesthetically and experience wise.</td>
+<td>If the dock has an embedded touchpad, the touchpad needs to be a precision touchpad (PTP). We recommend that IHVs follow the <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt604177(v=vs.85).aspx">PTP implementation guide</a> to create PTPs that are on par with traditional laptop PTPs. The <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt604198(v=vs.85).aspx">Device Integration</a>, <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt604199(v=vs.85).aspx">Experience Customization</a>, and <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt604201(v=vs.85).aspx">Module Design for HLK Requirements</a> sections in the implementation guide describe the best practices for creating a touchpad that is superior aesthetically and experience-wise.</td>
 </tr>
 </tbody>
 </table>
-All these recommendations are in addition to the touchpad requirements detailed in the [minimum hardware requirements](../minimum/minimum-hardware-requirements-overview.md).
+All these recommendations are in addition to the touchpad requirements detailed in the <a href="../minimum/minimum-hardware-requirements-overview">minimum hardware requirements</a>.
 
 ### A Note on Thunderbolt
 
@@ -155,9 +153,9 @@ Thunderbolt adopted the USB-PD specification and provides a standard 15 watts fo
 
 Thunderbolt 3 can support up to two streams (eight lanes) of DisplayPort 1.2 video bandwidth:
 
-+ One 4K display (4096 x 2160) 30-bit @ 120 Hz
-+ One 5K display (5120 x 2880) 30-bit @ 60 Hz
-+ Two 4K displays each (4096 x 2160) 30-bit @ 60 Hz
++ One 4K display (4096 x 2160) of 30-bit color @120 Hz
++ One 5K display (5120 x 2880) of 30-bit color @60 Hz
++ Two 4K displays each (4096 x 2160) of 30-bit color @60 Hz
 
 #### Thunderbolt on docks or docking displays
 
@@ -165,7 +163,7 @@ As mentioned, Thunderbolt 3 fulfills the promise of the Type-C connector so that
 
 Intel, Microsoft, and the industry are working on next-generation universal docking solutions to support both Thunderbolt and DisplayPort alternate modes from a single dock. Future docking solutions will enable the ultimate goal of software and hardware interoperability with any Type-C (data, video, and power) enabled computer.  Please contact your Intel field sales representative to get in contact with the Thunderbolt team for more details.
 
-For docks based on Intel’s current hardware (Alpine Ridge), we recommend that system requirements are clearly communicated on packaging, websites, and collateral to inform users that this Type-C dock or display will only work with Thunderbolt-enabled systems and how to identify whether the system supports Thunderbolt. Go to https://thunderbolttechnology.net/developers for Thunderbolt brand and usage guidelines.  
+For docks based on Intel’s current hardware (Alpine Ridge), we recommend that system requirements be clearly communicated on packaging, websites, and collateral to inform users that this Type-C dock or display will only work with Thunderbolt-enabled systems and how to identify whether the system supports Thunderbolt. Go to https://thunderbolttechnology.net/developers for Thunderbolt brand and usage guidelines.  
 
 ## Wireless docking
 
@@ -175,7 +173,7 @@ Like a wired dock, a wireless dock has ports for input and output peripherals. T
 Wireless docking features to consider:
 
 -   A wireless connection from the device to the dock
--   Support for phone, tablet and laptops
+-   Support for phone, tablet, and laptops
 -   Wired or wireless mouse and keyboard input
 -   Monitor outputs using HDMI, DisplayPort, or both
 
@@ -188,3 +186,8 @@ Windows 10 will discover, pair, connect, and manage docks.
 -   Include Wifi-Display (Miracast) extensions in receiver firmware.
 -   Support WSB and MA-USB.
 -   Support WiGig for enterprise class docking equipment.
+
+## Related topics
+
+[Windows support for USB Type-C connectors](https://msdn.microsoft.com/library/windows/hardware/mt628692)
+<br/>[Continuum](continuum.md)
