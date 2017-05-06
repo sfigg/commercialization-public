@@ -11,7 +11,8 @@ ms.assetid: 719bbd2d-508d-439b-b175-0874c7e6c360
 
 The DevDetail configuration service provider handles the management object which provides device-specific parameters to the OMA DM server. These device parameters are not sent from the client to the server automatically, but can be queried by servers using OMA DM commands.
 
-> [!NOTE]  This configuration service provider requires the ID\_CAP\_CSP\_FOUNDATION and ID\_CAP\_DEVICE\_MANAGEMENT\_ADMIN capabilities to be accessed from a network configuration application.
+> [!NOTE]
+> This configuration service provider requires the ID\_CAP\_CSP\_FOUNDATION and ID\_CAP\_DEVICE\_MANAGEMENT\_ADMIN capabilities to be accessed from a network configuration application.
 
 For the DevDetail CSP, you cannot use the Replace command unless the node already exists.
 
@@ -130,7 +131,8 @@ The following diagram shows the DevDetail configuration service provider managem
 
 <p style="margin-left: 20px">Supported operation is Get.
 
-> [!NOTE]  This is only supported in Windows 10 Mobile.
+> [!NOTE]
+> This is only supported in Windows 10 Mobile.
 
 <a href="" id="ext-microsoft-totalram"></a>**Ext/Microsoft/TotalRAM**  
 <p style="margin-left: 20px">Added in Windows 10, version 1511. Integer that specifies the total available memory in MB on the device (may be less than total physical memory).
@@ -142,7 +144,8 @@ The following diagram shows the DevDetail configuration service provider managem
 
 <p style="margin-left: 20px">Supported operation is Get.
 
-> [!NOTE]  This is not supported in Windows 10 for desktop editions.
+> [!NOTE]
+> This is not supported in Windows 10 for desktop editions.
 
 <a href="" id="volteservicesetting"></a>**VoLTEServiceSetting**  
 <p style="margin-left: 20px">Returns the VoLTE service to on or off. This is only exposed to mobile operator OMA-DM servers.

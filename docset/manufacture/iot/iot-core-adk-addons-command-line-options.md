@@ -241,6 +241,7 @@ inf2pkg input.inf [CompName.SubCompName]
 inf2pkg C:\test\testdriver.inf
 ```
 
+<a name="iotcoreshell"></a>
 ## IoTCoreShell.cmd
 
 Opens the IoT Core Shell as an administrator. (This file is in the root folder, and uses LaunchTool.cmd)

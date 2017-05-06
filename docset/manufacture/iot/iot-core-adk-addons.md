@@ -14,7 +14,7 @@ The [IoT Core manufacturing guide](iot-core-manufacturing-guide.md) walks you th
 
 ## <span id="Root_folder"></span>Root folder
 
--   **IoTCoreShell**: Launches the [IoT Core Shell command-line](iot-core-adk-addons-command-line-options.md#iotcoreshell.cmd).
+-   **IoTCoreShell**: Launches the [IoT Core Shell command-line](iot-core-adk-addons-command-line-options.md#iotcoreshell).
 
 -   **README.md**: Version info, links to documentation
 

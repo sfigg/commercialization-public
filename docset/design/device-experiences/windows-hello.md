@@ -39,10 +39,6 @@ Microsoft Windows Hello, part of Windows 10, gives users a personal, secured ex
 <td><p>[Windows Hello face authentication](windows-hello-face-authentication.md)</p></td>
 <td><p>Microsoft face authentication in Windows 10 is an enterprise-grade identity verification mechanism that's integrated into the Windows Biometric Framework (WBF) as a core Microsoft Windows component called Windows Hello. Windows Hello face authentication utilizes a camera specially configured for near infrared (IR) imaging to authenticate and unlock Windows devices as well as unlock your Microsoft Passport.</p></td>
 </tr>
-<tr class="odd">
-<td><p>[Windows Hello OEM and IHV app scenarios for Windows 10 Build 1511](windows-hello-oem-and-ihv-app-scenarios-for-windows-10-build-1511.md)</p></td>
-<td><p>Windows Hello provides you the ability to enable facial or fingerprint recognition to log on to a Windows system or device.</p></td>
-</tr>
 </tbody>
 </table>
 

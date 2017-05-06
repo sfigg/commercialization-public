@@ -87,7 +87,8 @@ This cloud service encrypts a recovery secret, which is stored locally on the cl
 
 <p style="margin-left: 20px">If you configure this policy setting, the PIN length must be greater than or equal to this number. If you disable or do not configure this policy setting, the PIN length must be greater than or equal to 4.
 
-> [!NOTE]  If the conditions specified above for the minimum PIN length are not met, default values will be used for both the maximum and minimum PIN lengths.
+> [!NOTE]
+> If the conditions specified above for the minimum PIN length are not met, default values will be used for both the maximum and minimum PIN lengths.
 
  
 <p style="margin-left: 20px">Value type is int. Supported operations are Add, Get, Delete, and Replace.
@@ -97,7 +98,8 @@ This cloud service encrypts a recovery secret, which is stored locally on the cl
 
 <p style="margin-left: 20px">If you configure this policy setting, the PIN length must be less than or equal to this number. If you disable or do not configure this policy setting, the PIN length must be less than or equal to 127.
 
-> [!NOTE]  If the conditions specified above for the maximum PIN length are not met, default values will be used for both the maximum and minimum PIN lengths.
+> [!NOTE]
+> If the conditions specified above for the maximum PIN length are not met, default values will be used for both the maximum and minimum PIN lengths.
 
  
 <p style="margin-left: 20px">Supported operations are Add, Get, Delete, and Replace.

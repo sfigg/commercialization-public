@@ -11,7 +11,8 @@ ms.assetid: F2F25DEB-9DB3-40FB-BC3C-B816CE470D61
 
 The RootCATrustedCertificates configuration service provider enables the enterprise to set the Root Certificate Authority (CA) certificates.
 
-> [!Note]  The **./User/** configuration is not supported for **RootCATrustedCertificates/Root/**.
+> [!Note]
+> The **./User/** configuration is not supported for **RootCATrustedCertificates/Root/**.
 
  
 The following image shows the RootCATrustedCertificates configuration service provider in tree format.
@@ -27,7 +28,8 @@ The root node for the RootCATrustedCertificates configuration service provider.
 <a href="" id="rootcatrustedcertificates-root-"></a>**RootCATrustedCertificates/Root/**  
 Defines the certificate store that contains root, or self-signed certificates, in this case, the computer store.
 
-> [!Note]  The **./User/** configuration is not supported for **RootCATrustedCertificates/Root/**.
+> [!Note]
+> The **./User/** configuration is not supported for **RootCATrustedCertificates/Root/**.
 
  
 <a href="" id="rootcatrustedcertificates-ca"></a>**RootCATrustedCertificates/CA**  
