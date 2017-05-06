@@ -1,7 +1,7 @@
 
 # Delivering a great experience with low memory
 
-The amount of memory available will have a significant affect on the overall user experience, ranging from overall responsiveness of the system, responsiveness when switching between Windows Store style apps, and battery life. These are all very important factors to consider when evaluating the overall experience with low memory. (Low memory is 1 GB of RAM on 32-bit Windows and 2 GB of RAM on 64-bit Windows.)
+The amount of memory available has a significant affect on the overall user experience, ranging from overall responsiveness of the system, responsiveness when switching between Windows Store style apps, and battery life. These are all important factors to consider when evaluating the overall experience with low memory. (Low memory is 1 GB of RAM on 32-bit Windows and 2 GB of RAM on 64-bit Windows.)
 
 ## Considerations
 
@@ -11,7 +11,7 @@ There are several things that an OEM, IHV, and ISV need to consider when targeti
 
 #### Overall baseline memory footprint
 
-The typical baseline 32-bit retail Windows image consumes approximately 400 MB in terms of in-use memory post-boot (as measured using the Memory Footprint assessment in the ADK). Allowing for 10% headroom or 100 MB on 1 GB, this leaves memory for 2-3 apps to be in physical memory, enabling fast switching between the apps. The larger the base operating system memory footprint, the lesser the memory available to the user and apps.
+The typical baseline 32-bit retail Windows image consumes approximately 400 MB of in-use memory post-boot (as measured by using the Memory Footprint assessment in the ADK). Allowing for 10% headroom or 100 MB on 1 GB, this leaves memory for 2-3 apps to be in physical memory, enabling fast switching between the apps. The larger the base operating system memory footprint, the lesser the memory available to the user and apps.
 
 Key factors that impact baseline OS memory footprint are drivers and pre-loaded software, including anti-malware apps, device desktop apps, and software updaters.
 
@@ -184,7 +184,7 @@ Endurance varies significantly based on manufacturers (block size selection, typ
 <td>
 <p>&nbsp;&nbsp;&nbsp;Read speed (64 KB I/Os), measured over a 10-GB area</p>
 </td>
-<td>&gt;= 60 MB/s †(120 MB/s)</td>
+<td>&gt;= 60 MB/s (120 MB/s)</td>
 </tr>
 <tr class="even">
 <!--Empty cell in rowspan-->
@@ -224,9 +224,9 @@ OEMs have a significant influence over the choice of hardware/drivers and pre-lo
 
 -   Before you deploy, understand and quantify the impact of drivers and software you install on top of a clean image and ensure that they are within the recommended goals previously described.
 
--   Driver footprint: This can be reduced by lessening the number of drivers or selecting hardware/drivers that have lower memory requirements.
+-   Driver footprint: Reduced the driver footprint by lessening the number of drivers or selecting hardware/drivers that have lower memory requirements.
 
--   Pre-loaded software/Antivirus: Reducing the number of default "run-always" startup processes (introduced by pre-loaded software) along with providing guidance to consumers on enabling specific applications or functionality if needed.
+-   Pre-loaded software/Antivirus: Reduce the number of default "run-always" startup processes (introduced by pre-loaded software) along with providing guidance to consumers on enabling specific applications or functionality if needed.
 
 -   Consider using a different driver or software vendor that can supply you with equivalent functionality with lower impact on system memory.
 

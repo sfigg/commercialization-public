@@ -1,45 +1,23 @@
 
 # Delivering a great startup and shutdown experience
 
-This section provides an overview of the fast startup experience and our
-recommendations to partners to deliver the best on/off experience for
-customers.
+This section provides an overview of the fast startup experience and our recommendations to partners to deliver the best on/off experience for customers.
 
-PCs are turned on and off many times a day. A PC might shut down, sleep,
-or hibernate depending on usage patterns and the battery life capability
-of the device. Boot is the first experience users have with their device
-and is a recurrent experience for the lifetime of the device. Customer
-telemetry tells us that users boot and shut down their PC at least once
-a day. Connected standby capability reduces the frequency with which a
-device must be booted, but booting might still be required for
-software/firmware updates, low battery, and major configuration changes
-to the device.
+PCs are turned on and off many times a day. A PC might shut down, sleep, or hibernate depending on usage patterns and the battery life capability
+of the device. System boot is the first experience users have with their device and is a recurrent experience for the lifetime of the device. Customer
+telemetry tells us that users boot and shut down their PC at least once a day. Connected standby capability reduces the frequency with which a
+device must be booted, but booting might still be required for software and firmware updates, low battery, and major configuration changes to the device.
 
-Starting with Windows 8.x, the speed of the on/off transition is
-significantly faster than previous Windows versions. The user
-interaction model used previously was to interrupt boot with key presses
-to indicate alternate boot paths. With a much faster boot time, boot
-interruptions are impractical and negatively affect the boot experience.
-Historically, it was important to stop the boot process as early as
-possible for decision points, such as booting to an alternative
-operating system, because going backwards was a long and slow process.
-It was also much easier with slow boot times to create periods of time
-in which those key presses could be detected and activated. This is no
-longer the case in Windows 8.x and Windows 10.
+Starting with Windows 8.x, the speed of the on/off transition is significantly faster than previous Windows versions. The user
+interaction model used previously was to interrupt a boot with key presses to indicate alternate boot paths. With a much faster boot time, boot interruptions are impractical and negatively affect the boot experience. Historically, it was important to stop the boot process as early as
+possible for decision points, such as booting to an alternative operating system, because going backwards was a long and slow process.
+It was also much easier with slow boot times to create periods of time in which those key presses could be detected and activated. This is no longer the case in Windows 8.x and Windows 10.
 
-The default boot performance has improved dramatically by leveraging
-hibernate technology. To understand the improvements made to the
-performance of the on/off experience, see [Hibernate (S4) suspend
-and resume](#hibernate-s4-suspend-and-resume), later in this topic. The considerations in this
-section outline the user model for the fast on/off transitions, options
-related to those transitions, and the components required by OEMs/ODMs
-to deliver the experience.
+The default boot performance has improved dramatically by leveraging hibernate technology. To understand the improvements made to the performance of the on/off experience, see [Hibernate (S4) suspend and resume](#hibernate-s4-suspend-and-resume). The considerations in this section outline the user model for the fast on/off transitions, options related to those transitions, and the components required by OEMs/ODMs to deliver the experience.
 
 ## Considerations
 
-The main source of boot delays is the OEM software preload. Fast startup
-post on/off represents around 50% of the overall boot time and is
-directly affected by first- and third-party processes started on boot.
+The main source of boot delays is the OEM software preload. Fast startup post on/off represents around 50% of the overall boot time and is directly affected by first- and third-party processes started on boot:
 
 -   Services might continue to resume
 
@@ -47,13 +25,11 @@ directly affected by first- and third-party processes started on boot.
 
 -   Antivirus activity
 
-All of the above consume system resources (CPU and disk) result in
-bottlenecking on one, the other, or both. This can make the device
-unresponsive, delay app launch times, or make them lag or sluggish.
+These processes consume system resources (CPU and disk) and can result in bottlenecking on one, the other, or both. This can make the device unresponsive, delay app launch times, or make them run slowly.
 
 Consider these things when optimizing on/off performance:
 
--   Determine what non-inbox 1^st^- or 3rd-party processes are loaded and running on your systems.
+-   Determine what non-inbox 1st- or 3rd-party processes are loaded and running on your systems.
 
 -   Determine what is started on boot through registry run keys.
 
@@ -73,87 +49,54 @@ Consider these things when optimizing on/off performance:
 
 	-   Use the new Hiberfile Diagnostics mode.
 
-	-   We don’t recommend that you enable hybrid sleep on laptops and
-		ultraportables because this generates a hiberfile on Standby
-		suspend (S3).
+	-   Because it generates a hiberfile on Standby suspend (S3), enabling hybrid sleep on laptops and ultraportables is not recommended.
 
--   Migrate updater processes to use AM to reduce the number of
-    loaded processes.
+-   Migrate updater processes to use AM to reduce the number of loaded processes.
 
--   Understand that disk throughput is critical to on/off performance.
+-   Understand that disk throughput is critical to on/off performance:
 
-	-   On average, Hiberfile read/write times represent 50% of the boot to
-		Start screen time.
+	-   On average, Hiberfile read/write times represent 50% of the boot to Start screen time.
 
 	-   Most systems are disk-bound on boot.
 
-	-   A faster HDD/SSD can mitigate the effect of a significant software
-		preload being loaded and initialized on boot.
+	-   A faster HDD/SSD can mitigate the effect of a significant software preload being loaded and initialized on boot.
 
 	-   You should balance CPU, disk performance, and memory capacity.
 
 -   Understand that hybrid drives are beneficial to on/off performance.
 
-	-   Uses the new Hybrid Drive Hinting feature.
+	-   Use the new Hybrid Drive Hinting feature.
 
 ### Fast startup
 
-Starting with Windows 8.x, the default shutdown and restart scenario was
-updated and named as fast startup. Fast startup begins with the shutdown
-process and includes writing data to disk in a way that’s similar to the
-way hibernate works. A key difference is that all user sessions (Session 1) 
-are logged off, and the remaining information is written to the
-hiberfile. When booting the PC from this state, instead of going through
-the full boot process where Windows, drivers, devices, and services are
-initialized, Windows loads the previously initialized state by reading
-from the hiberfile. This speeds up the process of getting to the lock or
-Start screen.
+Starting with Windows 8.x, the default shutdown and restart scenario was updated and named as fast startup. Fast startup begins with the shutdown process and includes writing data to disk in a way that’s similar to the way hibernate works. A key difference is that all user sessions (Session 1) 
+are logged off, and the remaining information is written to the hiberfile. When you boot the PC from this state,  Windows loads the previously initialized state by reading from the hiberfile, instead of running the full boot process in which Windows, drivers, devices, and services are initialized. This method speeds up the process of initializing the lock or Start screen.
 
-The use of hibernate technology is expanded to create a new default
-startup and shutdown experience that is much faster than a full boot.
+The use of hibernate technology is expanded to create a new default startup and shutdown experience that is much faster than a full boot.
 
 ![Diagram of the phases in fast startup and shutdown.](images/weg-diagram-fast-startup-boot-shutdown.png)
 
-The faster startup and shutdown sequence uses the hibernate
-infrastructure to place the PC in hibernate. Unlike a full shutdown and
-boot, the user session is closed and then a hibernate is performed. As a
-result, the hibernate file is much smaller, making the hibernate and
-resume process much faster. This sequence also takes advantage of the
-parallelization optimizations.
+The faster startup and shutdown sequence uses the hibernate infrastructure to place the PC in hibernate. Unlike a full shutdown and boot, the user session is closed and a hibernate is performed. As a result, the hibernate file is much smaller, making the hibernate and resume process much faster. This sequence also takes advantage of the parallelization optimizations.
 
-Developers creating drivers, or apps with a system service, and system
-integrators should also be particularly careful of driver quality issues
-like memory leaks. While driver quality has always been important, the
-up time between kernel reboots might be significantly longer than on
-previous versions of Windows because on user initiated shutdowns, the
-kernel, drivers, and services will be preserved and restored, not
-restarted.
+Developers creating drivers, or apps with a system service, and system integrators should also be particularly careful of driver quality issues like memory leaks. While driver quality has always been important, the up time between kernel reboots might be significantly longer than on previous versions of Windows because on user initiated shutdowns, the kernel, drivers, and services will be preserved and restored, not restarted.
 
 ### Full boot
 
-The following list contains considerations that enable the best startup
-experience.
+The following list contains considerations that enable the best startup experience:
 
 -   Balance CPU performance, disk performance, and memory capacity.
 
 -   Optimize the UEFI read routing performance.
 
--   Ensure that drivers of leaf node devices follow fast
-    resume guidelines.
+-   Ensure that drivers of leaf node devices follow fast resume guidelines.
 
--   Ensure that drivers complete their S0 set-power IRPs as quickly as
-    possible to prevent other devices from getting their S0
-    set-power IRPs.
+-   Ensure that drivers complete their S0 set-power IRPs as quickly as possible to prevent other devices from getting their S0 set-power IRPs.
 
--   Validate drivers and services against memory leak.
+-   Validate drivers and services against memory leaks.
 
--   Register a service to receive power management events notification
-    only if absolutely necessary.
+-   Refrain from registering a service to receive power management events notification unless it is absolutely necessary.
 
--   Drivers should not wait to complete the S\_IRP until the D\_IRP is
-    completed because this will prevent other devices from receiving
-    their S\_IRPs, which will cause serialization delays and increase
-    overall suspend time.
+-   Drivers should not wait to complete the S\_IRP until the D\_IRP is completed because this will prevent other devices from receiving their S\_IRPs, which will cause serialization delays and increase overall suspend time.
 
 ### Shutdown API behavior
 
