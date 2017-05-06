@@ -25,7 +25,6 @@ These specifications are divided into the following categories and topics:
 - [Device.Connectivity.MAUSB.Hub](device-connectivity-mausb-hub.md)
 - [Device.Connectivity.Network.VerticalPairing](device-connectivity-network-verticalpairing.md)
 - [Device.Connectivity.PciConnected](device-connectivity-pciconnected.md)
-- [Device.Connectivity.Server](device-connectivity-server.md)
 - [Device.Connectivity.UsbDevices](device-connectivity-usbdevices.md)
 - [Device.Connectivity.UsbHub](device-connectivity-usbhub.md)
 - [Device.Connectivity.WSD](device-connectivity-wsd.md)
