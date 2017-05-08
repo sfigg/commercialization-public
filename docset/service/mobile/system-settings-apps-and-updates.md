@@ -4,6 +4,11 @@ Description: System settings apps and updates
 ms.assetid: 28da264d-0ab9-4a16-8382-53304ee86421
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: System settings apps and updates
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # System settings apps and updates

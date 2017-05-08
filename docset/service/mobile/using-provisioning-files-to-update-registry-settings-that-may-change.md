@@ -4,6 +4,11 @@ Description: Using provisioning files to update registry settings that may chang
 ms.assetid: 77262c4c-69e2-456e-909b-27bd4e0d21f1
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Using provisioning files to update registry settings that may change
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using provisioning files to update registry settings that may change

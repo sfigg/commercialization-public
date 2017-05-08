@@ -4,6 +4,11 @@ Description: 'Devices can automatically scan for updates, download them, and pro
 ms.assetid: 5ed8aad7-7aa9-4c81-844c-2e529d75f0b5
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Scan, download, and install updates'
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Scan, download, and install updates
