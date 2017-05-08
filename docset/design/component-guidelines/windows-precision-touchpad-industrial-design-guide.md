@@ -5,6 +5,11 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 5E813CE2-3886-435E-9CB7-3559D266F0A9
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Windows Precision Touchpad Industrial Design Guide

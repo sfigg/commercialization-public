@@ -8,6 +8,11 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: c14acf01-6451-4367-9030-190198bde437
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Bluetooth power management for modern standby platforms

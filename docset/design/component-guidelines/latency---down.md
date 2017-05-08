@@ -5,6 +5,11 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 9DB05720-5F69-4F9C-B076-ADC2B3706AC2
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Latency - Down

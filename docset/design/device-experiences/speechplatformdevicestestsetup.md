@@ -5,6 +5,11 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 7B5CB257-C27B-429D-82E9-1205DD4432FD
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Speech Platform: Input Device Test Setup, version 2.1

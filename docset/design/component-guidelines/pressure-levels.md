@@ -5,6 +5,11 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 7EF14ABB-FF21-4D52-A83D-D7D8BFF2C6EC
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Pressure Levels

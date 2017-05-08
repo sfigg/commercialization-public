@@ -1,17 +1,30 @@
+---
+title: Windows radial controller input reports
+author: windows-driver-content
+description: TBD
+ms.assetid:
+keywords: ["radial dial", "radial controller", "dial"]
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
+---
+
 # Windows radial controller input reports
 
 This topic details the HID input report that are used for radial controller haptic feedback support in Windows 10, version 1607 and later operating systems.
 
 The host makes use of the following usages when extracting data from an input report:
 
-Member | Description | Page | ID | Mandatory/Optional
----| --- | --- | --- | --- 
-Button | State of the button located on radial controller | 0x09 | 0x01 | Mandatory
-Dial | Relative rotation of the radial controller  | 0x01 | 0x37 | Mandatory
-X | X coordinate of contact position | 0x01 | 0x30 | Optional
-Y | Y coordinate of contact position | 0x01 | 0x31 | Optional
-Width | Width of bounding box around a contact | 0x0D | 0x48 | Optional
-Height| Height of bounding box around a contact | 0x0D | 0x49 | Optional
+| Member | Description | Page | ID | Mandatory/Optional |
+| ---| --- | --- | --- | --- |
+| Button | State of the button located on radial controller | 0x09 | 0x01 | Mandatory |
+| Dial | Relative rotation of the radial controller  | 0x01 | 0x37 | Mandatory |
+| X | X coordinate of contact position | 0x01 | 0x30 | Optional |
+| Y | Y coordinate of contact position | 0x01 | 0x31 | Optional |
+| Width | Width of bounding box around a contact | 0x0D | 0x48 | Optional |
+| Height| Height of bounding box around a contact | 0x0D | 0x49 | Optional |
 
 ### Mandatory and Windows-supported optional usages
 

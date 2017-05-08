@@ -9,6 +9,11 @@ MSHAttr:
 - 'PreferredLib:/library/windows/hardware'
 Search.SourceType: Video
 ms.assetid: 79be0006-e55f-4d77-a8c4-e10fbfc392df
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Audio subsystem power management for modern standby platforms

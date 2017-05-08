@@ -4,6 +4,11 @@ author: windows-driver-content
 description: This document provides guidelines for radial controller protocol implementation. Windows radial controller devices are expected to use the Human Interface Device (HID) protocol to communicate with the host.
 ms.assetid:
 keywords: ["radial dial", "radial controller", "dial"]
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Radial controller protocol implementation
@@ -37,10 +42,10 @@ The Windows radial controller collection provides input reporting to the host, a
 
 # In this section
 
-Topic | Description
---- | ---
-[Radial Controller Input Reports](radial-controller-input-reports.md) | This topic details the HID input reports that are used for radial controller haptic feedback support in Windows 10, version 1607 and later operating systems.
-[Radial Controller Output Reports](radial-controller-output-reports.md) | This topic details the HID output reports that are used for radial controller haptic feedback support in Windows 10, version 1607 and later operating systems.
-[Radial Controller Feature Reports](radial-controller-feature-reports.md) | This topic details the HID feature reports that are used for radial controller haptic feedback support in Windows 10, version 1607 and later operating systems.
-[Firmware Update Collection](radial-controller-firmware-update-collection.md) | This topic discusses an optional HID top-level collection that can be used for radial controller firmware updates in Windows 10, version 1607 and later operating systems.
-[Sample Report Descriptors](radial-controller-sample-report-descriptors.md) | This topic presents a sample report descriptor and some sample descriptor excerpts for a Windows radial controller device.
+| Topic | Description |
+| --- | --- |
+| [Radial Controller Input Reports](radial-controller-input-reports.md) | This topic details the HID input reports that are used for radial controller haptic feedback support in Windows 10, version 1607 and later operating systems. |
+| [Radial Controller Output Reports](radial-controller-output-reports.md) | This topic details the HID output reports that are used for radial controller haptic feedback support in Windows 10, version 1607 and later operating systems. |
+| [Radial Controller Feature Reports](radial-controller-feature-reports.md) | This topic details the HID feature reports that are used for radial controller haptic feedback support in Windows 10, version 1607 and later operating systems. |
+| [Firmware Update Collection](radial-controller-firmware-update-collection.md) | This topic discusses an optional HID top-level collection that can be used for radial controller firmware updates in Windows 10, version 1607 and later operating systems. |
+| [Sample Report Descriptors](radial-controller-sample-report-descriptors.md) | This topic presents a sample report descriptor and some sample descriptor excerpts for a Windows radial controller device. |

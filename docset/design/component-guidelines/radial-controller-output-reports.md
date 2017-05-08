@@ -4,6 +4,11 @@ author: windows-driver-content
 description: TBD
 ms.assetid:
 keywords: ["radial dial", "radial controller", "dial"]
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Windows radial controller output reports
@@ -16,12 +21,12 @@ If a Windows radial controller device supports haptic feedback, it can allow the
 
 The host uses the following usages in an output report (through the haptic feedback collection) to allow the host to issue haptic feedback events to the Windows radial controller device. If a device chooses to expose a haptic feedback collection, some usages are mandatory to allow host-initiated haptic feedback to be supported.
 
-Member | Description | Page | ID | Mandatory/Optional
----| --- | --- | --- | ---
-Manual Trigger | Waveform to fire as explicit command from the host. | 0x0E | 0x21 | Mandatory
-Intensity | Output – Intensity of Manual Trigger waveform as a percentage | 0x0E | 0x23 | Optional
-Repeat Count | Output – Number of times to play Manual Trigger waveform after initial play | 0x0E | 0x24 | Optional
-Retrigger Period | Output – Duration of time to wait before retriggering Manual Trigger when repeating | 0x0E | 0x25 | Optional
+| Member | Description | Page | ID | Mandatory/Optional |
+| ---| --- | --- | --- | --- |
+| Manual Trigger | Waveform to fire as explicit command from the host. | 0x0E | 0x21 | Mandatory |
+| Intensity | Output – Intensity of Manual Trigger waveform as a percentage | 0x0E | 0x23 | Optional |
+| Repeat Count | Output – Number of times to play Manual Trigger waveform after initial play | 0x0E | 0x24 | Optional |
+| Retrigger Period | Output – Duration of time to wait before retriggering Manual Trigger when repeating | 0x0E | 0x25 | Optional |
 
 ### Manual trigger
 
