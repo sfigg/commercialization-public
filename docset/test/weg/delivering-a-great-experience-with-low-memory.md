@@ -222,17 +222,15 @@ Compared to a retail OS image, the memory footprint assessment in the ADK provid
 
 OEMs have a significant influence over the choice of hardware/drivers and pre-loaded software, which directly impacts the memory footprint of the system.
 
--   Before you deploy, understand and quantify the impact of drivers and software you install on top of a clean image and ensure that they are within the recommended goals previously described.
+-   Before you deploy, understand and quantify the impact of drivers and software you install on top of a clean image and ensure that they are within the recommended goals previously described:
 
--   Driver footprint: Reduced the driver footprint by lessening the number of drivers or selecting hardware/drivers that have lower memory requirements.
+    -   Reduce the driver footprint by lessening the number of drivers or selecting hardware/drivers that have lower memory requirements.
 
--   Pre-loaded software/Antivirus: Reduce the number of default "run-always" startup processes (introduced by pre-loaded software) along with providing guidance to consumers on enabling specific applications or functionality if needed.
+    -  Reduce the number of default "run-always" startup processes (introduced by pre-loaded software and antivirus programs) and provide guidance, if needed, to consumers about enabling specific applications or functionality.
 
 -   Consider using a different driver or software vendor that can supply you with equivalent functionality with lower impact on system memory.
 
--   Consult your driver and software vendors for the latest versions of their software to see if they can reduce the impact on memory.
-
--   Provide feedback to your partners on specific drivers or software that have higher than recommended memory usage along with traces/logs from the assessment toolkit.
+-   Consult your driver and software vendors for the latest versions of their software and provide feedback to your partners on specific drivers or software that have higher than recommended memory usage along with traces/logs from the assessment toolkit.
 
 ### For IHV/ISV
 
@@ -242,9 +240,9 @@ IHVs that can deliver memory efficient drivers enable OEMs to build 1-GB systems
 
 -   Be efficient with memory usage that uses a "pay for play" model by enabling functionality only as needed:
 
-    -   Avoid configuring drivers to support features that are only needed for 1-GB systems (for example, create platform-specific driver packages that detect hardware and load code specific to it).
+    -   Avoid configuring drivers to support features that are needed only for 1-GB systems (for example, create platform-specific driver packages that detect hardware and load code specific to it).
 
-    -   Minimize runtime cost - Allocate the minimum memory required when needed and free as soon as you are done (for example, buffers for supporting RAID storage are not required unless the user explicitly configures it).
+    -   Minimize runtime cost by allocating the minimum memory required when needed and freeing it as soon as you are done (for example, buffers for supporting RAID storage are not required unless the user explicitly configures it).
 
 -   Leverage tools to understand and improve memory footprint. The following talk describes the approach to reducing footprint along with available tools: [Reducing the memory footprint of drivers and apps](http://channel9.msdn.com/events/BUILD/BUILD2011/HW-141T).
 
@@ -277,18 +275,17 @@ Anti-malware apps can significantly impact baseline the OS memory footprint and 
         -   [SetThreadPriority](http://msdn.microsoft.com/en-us/library/ms686277.aspx)
 
 -   Focus on idle memory footprint to ensure that memory footprint at idle as well as during full system scans and 
-    real time scanning is < 15 MB. Doing so, will reduce the memory footprint as much as possible during those scenarios.
+    real time scanning is < 15 MB. Doing so will reduce the memory footprint as much as possible during those scenarios.
 
 ## Validation
 
-To evaluate and validate memory usage by processes and drivers, use the Memory Footprint assessment in the ADK. After the assessment has
-executed, open the report in the Windows Assessment Console (WAC) tool and extract the relevant metrics using the following guidance.
+To evaluate and validate memory usage by processes and drivers, use the Memory Footprint assessment in the ADK. After the assessment has executed, open the report in the Windows Assessment Console (WAC) tool and extract the relevant metrics by using the following guidance.
 
 ### System level 
 
 You can find system-wide memory metrics in the assessment report. The following screenshot highlights **Total In-Use Memory**, **Driver Non-Paged Code** and **Allocations** metrics.
 
-![Memory footprint shown in the Windows Assessment Console.](images/weg-wac-memory-footprint-highlighted.png)
+![Memory footprint shown in the Windows Assessment Console](images/weg-wac-memory-footprint-highlighted.png)
 
 ### Per driver
 
@@ -296,13 +293,13 @@ You can find system-wide memory metrics in the assessment report. The following 
 
 To obtain the specific non-paged code contribution of individual drivers, expand the **Driver Non-Paged Code** metric.
 
-![Memory usage by drivers in non-paged code shown in the Windows Assessment Console (WAC).](images/weg-wac-driver-non-paged-code.png)
+![Memory usage by drivers in non-paged code shown in the Windows Assessment Console (WAC)](images/weg-wac-driver-non-paged-code.png)
 
 #### Non-Paged allocations
 
 To obtain the specific non-paged allocations of individual drivers, expand the **Driver Non-Paged Allocations** metric and select **Group by -> (None)**.
 
-![Non-paged allocations for drivers shown in the Windows Assessment Console (WAC).](images/weg-wac-driver-non-paged-allocations.png)
+![Non-paged allocations for drivers shown in the Windows Assessment Console (WAC)](images/weg-wac-driver-non-paged-allocations.png)
 
 ### Per process
 
@@ -312,5 +309,5 @@ In the following screenshot, Windows Defender (MsMpEng.exe process) consumes 14.
 
 In order to validate that the 40-MB target for startup applications, services, and tasks is achieved, identify every process in this list associated with preloaded software and calculate the sum.
 
-![Active private pages of processes shown in the Windows Assessment Console (WAC).](images/weg-wac-process-private-pages-in-use.png)
+![Active private pages of processes shown in the Windows Assessment Console (WAC)](images/weg-wac-process-private-pages-in-use.png)
 
