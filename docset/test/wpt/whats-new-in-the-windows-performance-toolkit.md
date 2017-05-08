@@ -8,6 +8,11 @@ ms.assetid: 3e27707c-fcba-4052-8cd9-bd04760b7439
 ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
+ms.author: windows-hardware-design-content
+ms.date: 05/05/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # What's New in the Windows Performance Toolkit

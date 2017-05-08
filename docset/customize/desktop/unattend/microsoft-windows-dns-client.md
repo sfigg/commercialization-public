@@ -8,6 +8,11 @@ ms.assetid: 2b227e7a-3738-42b3-af78-b3a98f7d8412
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # Microsoft-Windows-DNS-Client

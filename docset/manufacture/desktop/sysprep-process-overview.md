@@ -4,6 +4,11 @@ Description: Sysprep Process Overview
 ms.assetid: e764e19f-8a8a-4fae-aa1f-22e70caf1599
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Sysprep Process Overview
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # Sysprep Process Overview

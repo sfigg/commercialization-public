@@ -1,6 +1,11 @@
 ---
 title: Understanding ADMX-backed policies
 description: Starting in Windows 10, version 1703, you can use ADMX-backed policies for Windows 10 mobile device management (MDM) across Windows 10 devices.
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # Understanding ADMX-backed policies
@@ -70,7 +75,8 @@ The following diagram shows the settings for the "Publishing Server 2 Settings" 
 
 Note that most Group Policies are a simple Boolean type. For a Boolean Group Policy, if you select **Enabled**, the options panel contains no data input fields and the payload of the SyncML is simply `<enabled/>`. However, if there are data input fields in the options panel, the MDM server must supply this data. The following *Enabling a Group Policy* example illustrates this complexity. In this example, 10 name-value pairs are described by `<data />` tags in the payload, which correspond to the 10 data input fields in the Group Policy Editor options panel for the "Publishing Server 2 Settings" Group Policy. The ADMX file, which defines the Group Policies, is consumed by the MDM server, similarly to how the Group Policy Editor consumes it. The Group Policy Editor displays a UI to receive the complete Group Policy instance data, which the MDM server’s IT administrator console must also do. For every `<text>` element and id attribute in the ADMX policy definition, there must be a corresponding `<data />` element and id attribute in the payload. The ADMX file drives the policy definition and is required by the MDM server via the SyncML protocol.
 
-> [!IMPORTANT] Any data entry field that is displayed in the Group Policy page of the Group Policy Editor must be supplied in the encoded XML of the SyncML payload. The SyncML data payload is equivalent to the user-supplied Group Policy data through GPEdit.msc. 
+> [!IMPORTANT]
+> Any data entry field that is displayed in the Group Policy page of the Group Policy Editor must be supplied in the encoded XML of the SyncML payload. The SyncML data payload is equivalent to the user-supplied Group Policy data through GPEdit.msc. 
 
 For more information about the Group Policy description format, see [Administrative Template File (ADMX) format](https://msdn.microsoft.com/en-us/library/aa373476(v=vs.85).aspx). Elements can be Text, MultiText, Boolean, Enum, Decimal, or List (for more information, see [policy elements](https://msdn.microsoft.com/en-us/library/dn606004(v=vs.85).aspx)). 
 
@@ -354,7 +360,7 @@ The `multiText` element simply corresponds to a REG_MULTISZ registry string and 
 
 The `list` element simply corresponds to a hive of REG_SZ registry strings and correspondingly to a grid to enter multiple strings in a policy panel display by gpedit.msc. How this is represented in SyncML is as a string containing pairs of strings. Each pair is a REG_SZ name/value key. It is best to apply the policy through gpedit.msc (run as Administrator) and go to the registry hive location and see how the list values are stored. This will give you an idea of the way the name/value pairs are stored to express it through SyncML.
 
->[!NOTE]
+> [!NOTE]
 > It is expected that each string in the SyncML is to be separated by the Unicode character 0xF000 (encoded version: `&#xF000;`).
 
 Variations of the `list` element are dictated by attributes. These attributes are ignored by the Policy Manager runtime. It is expected that the MDM server manages the name/value pairs. See below for a simple writeup of Group Policy List.

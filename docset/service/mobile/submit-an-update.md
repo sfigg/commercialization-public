@@ -4,6 +4,11 @@ Description: Submit an update
 ms.assetid: c7052c5d-53f8-4f94-a919-ac6939e310a6
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Submit an update
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # Submit an update

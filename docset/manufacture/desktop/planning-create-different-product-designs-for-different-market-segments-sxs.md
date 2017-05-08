@@ -4,6 +4,11 @@ Description: 'Planning: Customizing reference images for different audiences'
 ms.assetid: b98343dd-bb5e-4904-9b40-f44cea88fbf0
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Planning: Customizing reference images for different audiences'
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # Planning: Customizing reference images for different audiences

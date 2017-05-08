@@ -8,6 +8,11 @@ ms.assetid: 9d719b05-f720-4464-be7a-c991a1d7639e
 ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
+ms.author: windows-hardware-design-content
+ms.date: 05/05/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # IOnOffTransitionManager

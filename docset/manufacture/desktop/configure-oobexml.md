@@ -4,6 +4,11 @@ Description: 'Configure Oobe.xml'
 ms.assetid: 4b6cef0c-30fa-4576-b580-4ec8c374da5b
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Configure Oobe.xml'
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # Configure Oobe.xml

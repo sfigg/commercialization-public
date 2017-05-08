@@ -4,6 +4,11 @@ Description: 'PAE/NX/SSE2 Support Requirement Guide for Windows 8'
 ms.assetid: 2100166b-fcd7-46af-953e-846e70090fae
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'PAE/NX/SSE2 Support Requirement Guide for Windows 8'
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # PAE/NX/SSE2 Support Requirement Guide for Windows 8

@@ -4,6 +4,11 @@ Description: 'Causes the phone to dial a call.'
 ms.assetid: f01afc0d-70cf-4d13-8d99-fb27bb329376
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: MfgPhoneDial function
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # MfgPhoneDial function
@@ -13,8 +18,7 @@ Causes the phone to dial a call.
 
 **MfgPhoneDial** is for phone manufacturers and can only be called in Manufacturing Mode.
 
-Syntax
-------
+**Syntax**
 
 ```ManagedCPlusPlus
 HRESULT APIENTRY MfgPhoneDial(
@@ -23,8 +27,7 @@ HRESULT APIENTRY MfgPhoneDial(
 );
 ```
 
-Parameters
-----------
+**Parameters**
 
 *SimSlot* \[in\]  
 The SIM-based phone line to use.
@@ -32,13 +35,11 @@ The SIM-based phone line to use.
 *DialNumber* \[in\]  
 The phone number to dial.
 
-Return value
-------------
+**Return value**
 
 S\_OK is returned upon success and an error code is returned otherwise.
 
-Requirements
-------------
+**Requirements**
 
 <table>
 <colgroup>

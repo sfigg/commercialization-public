@@ -8,6 +8,11 @@ ms.assetid: 875ee44a-765d-44e4-b303-867b6c766251
 ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
+ms.author: windows-hardware-design-content
+ms.date: 05/05/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # tracestats

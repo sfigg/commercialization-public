@@ -4,6 +4,11 @@ Description: WlanMTEQueryData
 ms.assetid: 3def2451-5c4e-490b-ad6c-dbd703d7574a
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: WlanMTEQueryData
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # WlanMTEQueryData

@@ -4,6 +4,11 @@ Description: 'We''ll take our test image and convert it to a retail build.'
 MS-HAID: 'p\_iot\_core.build\_retail\_image'
 MSHAttr: 'PreferredLib:/library'
 title: 'Lab 1f: Build a retail image'
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # Lab 1f: Build a retail image

@@ -8,6 +8,11 @@ ms.assetid: 636c4c28-705c-47c2-9dcb-92371907db71
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # Regions

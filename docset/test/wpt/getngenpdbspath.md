@@ -8,6 +8,11 @@ ms.assetid: b3abddcc-b83f-4cfc-9e9a-64ec96465b21
 ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
+ms.author: windows-hardware-design-content
+ms.date: 05/05/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # GetNGenPdbsPath
