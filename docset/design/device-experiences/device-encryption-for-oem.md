@@ -40,7 +40,7 @@ Starting with Windows 10, version 1703, use the following steps to determine if 
 ## Disable device encryption
 OEMs can choose to disable device encryption and instead implement their own encryption technology on a device. To disable device encryption:
 
-- Use an Unattend file and set [PreventDeviceEncryption](https://msdn.microsoft.com/windows/hardware/commercialize/customize/desktop/unattend/microsoft-windows-securestartup-filterdriver-preventdeviceencryption) to 1). See [Use an answer file with Sysprep](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/manufacture/desktop/use-answer-files-with-sysprep)
+- Use an Unattend file and set [PreventDeviceEncryption](https://msdn.microsoft.com/windows/hardware/commercialize/customize/desktop/unattend/microsoft-windows-securestartup-filterdriver-preventdeviceencryption) to True. See [Use an answer file with Sysprep](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/manufacture/desktop/use-answer-files-with-sysprep).
 
 - Update this registry key:
 **HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\BitLocker**
