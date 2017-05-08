@@ -44,4 +44,4 @@ OEMs can choose to disable device encryption and instead implement their own enc
 
 - Update this registry key:
 **HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\BitLocker**
-Value: **PreventDeviceEncryption** equal to True (1
+Value: **PreventDeviceEncryption** equal to True (1).
