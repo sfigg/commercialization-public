@@ -8,7 +8,7 @@ ms.author: windows-hardware-design-content
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.technology: windows-oem
 ---
 
 # <span id="part_2__classic-style_deployment"></span>Lab 2: Classic-style imaging and deployment

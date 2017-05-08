@@ -8,7 +8,7 @@ ms.author: windows-hardware-design-content
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.technology: windows-oem
 ---
 
 # Install Windows 10 using a previous version of Windows PE

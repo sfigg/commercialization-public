@@ -8,7 +8,7 @@ ms.author: windows-hardware-design-content
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.technology: windows-oem
 ---
 Windows Hello works with the [Companion Device Framework](https://msdn.microsoft.com/en-us/windows/uwp/security/companion-device-unlock) to enhance the user authentication experience. Using the Windows Hello companion device framework, a companion device can provide a rich experience for Windows Hello even when biometrics are not available (e.g., if the Windows 10 desktop lacks a camera for face authentication or fingerprint reader device, for example).
 
