@@ -5408,7 +5408,7 @@ Employees cannot remove these search engines, but they can set any one as the de
 <p style="margin-left: 20px">Lists the Cryptographic Cipher Algorithms allowed for SSL connections. Format is a semicolon delimited list. Last write win.
 
 <a href="" id="dataprotection-allowdirectmemoryaccess"></a>**DataProtection/AllowDirectMemoryAccess**  
-<p style="margin-left: 20px">Allows Direct Memory Access.
+<p style="margin-left: 20px">This policy setting allows you to block direct memory access (DMA) for all hot pluggable PCI downstream ports until a user logs into Windows. Once a user logs in, Windows will enumerate the PCI devices connected to the host plug PCI ports. Every time the user locks the machine, DMA will be blocked on hot plug PCI ports with no children devices until the user logs in again. Devices which were already enumerated when the machine was unlocked will continue to function until unplugged. This policy setting is only enforced when BitLocker or device encryption is enabled.
 
 <p style="margin-left: 20px">The following list shows the supported values:
 
