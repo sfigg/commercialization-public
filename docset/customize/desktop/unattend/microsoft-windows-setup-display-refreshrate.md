@@ -8,6 +8,11 @@ ms.assetid: 45570f1b-8e3a-4f6c-b8dc-a39ad8c169b1
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # RefreshRate

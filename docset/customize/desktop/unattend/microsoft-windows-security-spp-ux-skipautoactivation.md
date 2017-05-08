@@ -8,6 +8,11 @@ ms.assetid: ca154db3-5742-4fbf-a424-b6033ee953cd
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # SkipAutoActivation

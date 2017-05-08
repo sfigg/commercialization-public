@@ -8,6 +8,11 @@ ms.assetid: 3a4c07a3-b657-4dbc-a6dc-32ad33f447fb
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # RunSynchronousCommand

@@ -8,6 +8,11 @@ ms.assetid: 29ed6251-bb0d-4f6f-8368-0ff95ef6823a
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Parameters

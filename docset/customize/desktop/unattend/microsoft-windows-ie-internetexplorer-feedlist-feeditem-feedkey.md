@@ -8,6 +8,11 @@ ms.assetid: 4e73ca84-7444-47e1-af79-e332c322d47b
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # FeedKey

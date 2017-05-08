@@ -8,6 +8,11 @@ ms.assetid: 9ddb922a-eca0-4204-86c5-fe92dae0c5c9
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WideTile1

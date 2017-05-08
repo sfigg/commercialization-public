@@ -8,6 +8,11 @@ ms.assetid: 1a426bee-9333-414c-825e-731aab59eacc
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Credentials

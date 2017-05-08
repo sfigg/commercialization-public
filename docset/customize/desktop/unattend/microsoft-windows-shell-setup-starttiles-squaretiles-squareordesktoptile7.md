@@ -8,6 +8,11 @@ ms.assetid: d745e91a-b7d9-47e8-803b-88b67c6b7434
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # SquareOrDesktopTile7

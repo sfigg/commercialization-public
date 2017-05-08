@@ -8,6 +8,11 @@ ms.assetid: e2c075b2-330e-4bbc-80a3-4221e6d7274b
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Add a Package to an Answer File

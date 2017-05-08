@@ -8,6 +8,11 @@ ms.assetid: 38aa8ab4-d36d-4c33-8f1c-f4e35e7852ff
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # SupportPhone

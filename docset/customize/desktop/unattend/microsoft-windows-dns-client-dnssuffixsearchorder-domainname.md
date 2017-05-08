@@ -8,6 +8,11 @@ ms.assetid: d3a5be03-d687-4383-90b7-3a18d0ed70c8
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # DomainName

@@ -8,6 +8,11 @@ ms.assetid: a2a47fa8-31a6-4689-b1b1-cde185133ad4
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Microsoft-Windows-WinRE-RecoveryAgent

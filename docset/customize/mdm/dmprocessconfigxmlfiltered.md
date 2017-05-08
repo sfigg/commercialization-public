@@ -15,6 +15,11 @@ api_location:
 - dmprocessxmlfiltered.dll
 api_type:
 - DllExport
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # DMProcessConfigXMLFiltered function
@@ -43,8 +48,7 @@ Microsoft recommends that this function is not used to configure the following t
 
  
 
-Syntax
-------
+## Syntax
 
 ```C++
 HRESULT STDAPICALLTYPE DMProcessConfigXMLFiltered(
@@ -55,8 +59,7 @@ HRESULT STDAPICALLTYPE DMProcessConfigXMLFiltered(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *pszXmlIn*
 <ul style="list-style-type:none">
@@ -84,8 +87,7 @@ Parameters
 
 If **DMProcessConfigXMLFiltered** retrieves a document, the *pbstrXmlOut* holds the XML output (in string form) of the provisioning operations. If **DMProcessConfigXMLFiltered** returns a failure, the XML output often contains "error nodes" that indicate which elements of the original XML failed. If the input document does not contain queries and is successfully processed, the output document should resemble the input document. In some error cases, no output is returned.
 
-Return value
-------------
+## Return value
 
 Returns the standard **HRESULT** value **S\_OK** to indicate success. The following table shows the additional error codes that may be returned.
 
@@ -126,8 +128,7 @@ Returns the standard **HRESULT** value **S\_OK** to indicate success. The follow
 
  
 
-Remarks
--------
+## Remarks
 
 The processing of the XML is transactional; either the entire document gets processed successfully or none of the settings are processed. Therefore, the **DMProcessConfigXMLFiltered** function processes only one XML configuration request at a time.
 
@@ -186,8 +187,7 @@ if ( bstr != NULL )
 }
 ```
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

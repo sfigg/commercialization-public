@@ -8,6 +8,11 @@ ms.assetid: bdab4b5b-d51b-41ce-9e68-826b26e58cbd
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # CustomDefaultThemeFile

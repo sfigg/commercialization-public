@@ -8,6 +8,11 @@ ms.assetid: f9786c33-326a-485f-9861-9919b2356541
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # ClusterNetMask

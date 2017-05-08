@@ -8,6 +8,11 @@ ms.assetid: e28f7125-8f45-4c5b-a5b3-5287c187d2e6
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # AddonGuid

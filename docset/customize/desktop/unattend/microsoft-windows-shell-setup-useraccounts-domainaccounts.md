@@ -8,6 +8,11 @@ ms.assetid: 1b9eec7d-be85-4e61-8df7-63aa5a9b4be1
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # DomainAccounts

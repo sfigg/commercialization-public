@@ -8,6 +8,11 @@ ms.assetid: d3336b02-03e0-47ff-90a0-42ba6b8fcda0
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Microsoft-Windows-WPD-BusEnumService

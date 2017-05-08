@@ -8,6 +8,11 @@ ms.assetid: e9a61738-b166-4590-accb-20bbf0952f8f
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Path

@@ -8,6 +8,11 @@ ms.assetid: e47a7819-c12a-4997-8090-a658c405cb16
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Ipv4Settings

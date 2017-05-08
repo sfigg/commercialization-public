@@ -8,6 +8,11 @@ ms.assetid: df38c80c-5b1f-4b01-bd24-b18690483299
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # DisableAutoDaylightTimeSet

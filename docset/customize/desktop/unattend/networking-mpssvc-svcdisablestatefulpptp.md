@@ -8,6 +8,11 @@ ms.assetid: 68a56781-3d24-452c-9eb4-bb516e1fc9c8
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # DisableStatefulPPTP

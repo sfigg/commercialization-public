@@ -8,6 +8,11 @@ ms.assetid: d02c79b6-9fea-440b-a0ef-033f2a644788
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Icon

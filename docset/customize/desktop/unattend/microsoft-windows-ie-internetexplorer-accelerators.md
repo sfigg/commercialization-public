@@ -8,6 +8,11 @@ ms.assetid: 48523130-1d0d-487e-8fb5-211e0b8da906
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Accelerators

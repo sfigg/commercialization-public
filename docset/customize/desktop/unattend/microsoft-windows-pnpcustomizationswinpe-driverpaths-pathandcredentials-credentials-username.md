@@ -8,6 +8,11 @@ ms.assetid: 3e4707a6-b71b-4e31-8378-6cdf7452e331
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Username
