@@ -4,6 +4,11 @@ Description: 'How Oobe.xml Works'
 ms.assetid: 6df5c611-96f3-4268-9208-8455aa293954
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'How Oobe.xml Works'
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # How Oobe.xml Works

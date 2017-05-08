@@ -4,6 +4,11 @@ Description: 'Sets a value indicating whether the phone speaker should be used, 
 ms.assetid: ae0382d0-01fc-40eb-ae3d-72242ac4aede
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: MfgPhoneSetSpeaker function
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # MfgPhoneSetSpeaker function
@@ -13,8 +18,7 @@ Sets a value indicating whether the phone speaker should be used, as opposed to 
 
 **MfgPhoneSetSpeaker** is for phone manufacturers and can only be called in Manufacturing Mode.
 
-Syntax
-------
+**Syntax**
 
 ```ManagedCPlusPlus
 HRESULT APIENTRY MfgPhoneSetSpeaker(
@@ -22,19 +26,16 @@ HRESULT APIENTRY MfgPhoneSetSpeaker(
 );
 ```
 
-Parameters
-----------
+**Parameters**
 
 *bSpeakerOn* \[in\]  
 TRUE if the speaker should be used, otherwise false.
 
-Return value
-------------
+**Return value**
 
 S\_OK is returned upon success and an error code is returned otherwise.
 
-Requirements
-------------
+**Requirements**
 
 <table>
 <colgroup>

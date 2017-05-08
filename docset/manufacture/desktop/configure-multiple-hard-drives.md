@@ -4,6 +4,11 @@ Description: Configure Multiple Hard Drives
 ms.assetid: 2cb7386a-b3f6-40dd-b084-fce52a7aed9b
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Configure Multiple Hard Drives
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Configure multiple hard drives

@@ -4,6 +4,11 @@ Description: 'Where is DISM?'
 ms.assetid: c7be3027-8aef-4a28-9a68-76d1e14db32b
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Where is DISM?'
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Where is DISM?

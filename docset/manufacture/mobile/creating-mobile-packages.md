@@ -4,6 +4,11 @@ ms.assetid: 9d776681-9006-4dd5-b69e-fb195a888f7d
 MSHAttr: 'PreferredLib:/library'
 author: CelesteDG
 title: Create mobile packages
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Create mobile packages

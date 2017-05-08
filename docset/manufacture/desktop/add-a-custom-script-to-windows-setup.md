@@ -4,6 +4,11 @@ Description: Add a Custom Script to Windows Setup
 ms.assetid: a22c2f2f-c297-4027-9712-d747b08f7476
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Add a Custom Script to Windows Setup
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Add a Custom Script to Windows Setup

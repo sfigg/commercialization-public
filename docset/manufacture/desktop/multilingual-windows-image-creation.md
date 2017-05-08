@@ -4,6 +4,11 @@ Description: Multilingual Windows Image Creation
 ms.assetid: 5bec65d1-44b0-484c-a5b6-959f221a4290
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Multilingual Windows Image Creation
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Multilingual Windows Image Creation

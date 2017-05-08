@@ -4,6 +4,11 @@ Description: 'WinPE: Add packages (Optional Components Reference)'
 ms.assetid: 67aa9c25-9fab-4970-8aa5-65f904969e8e
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'WinPE: Add packages (Optional Components Reference)'
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WinPE: Add packages (Optional Components Reference)

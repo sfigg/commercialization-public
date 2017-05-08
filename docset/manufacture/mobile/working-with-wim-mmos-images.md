@@ -4,6 +4,11 @@ Description: Working with WIM MMOS images
 ms.assetid: c995e207-1b89-4d49-ad46-1ccc750737ec
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Working with WIM MMOS images
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Working with WIM MMOS images

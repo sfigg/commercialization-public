@@ -4,6 +4,11 @@ Description: 'Retrieves a struct that contains the current details for a given S
 ms.assetid: 6ff31b2e-4a76-48cc-aefd-f015eb8cdf4a
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: MfgPhoneGetSimLineDetail function
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # MfgPhoneGetSimLineDetail function
@@ -13,8 +18,7 @@ Retrieves a struct that contains the current details for a given SIM-based phone
 
 **MfgPhoneGetSimLineDetail** is for phone manufacturers and can only be called in Manufacturing Mode.
 
-Syntax
-------
+**Syntax**
 
 ```ManagedCPlusPlus
 HRESULT APIENTRY MfgPhoneGetSimLineDetail(
@@ -25,8 +29,7 @@ HRESULT APIENTRY MfgPhoneGetSimLineDetail(
 );
 ```
 
-Parameters
-----------
+**Parameters**
 
 *SimSlot* \[in\]  
 Specifies the SIM-based phone line.
@@ -40,13 +43,11 @@ Specifies the size of the **SimLineDetail** parameter.
 *RequiredSize* \[out\]  
 Specifies the required size for the **SimLineDetail** parameter.
 
-Return value
-------------
+**Return value**
 
 S\_OK is returned upon success and an error code is returned otherwise.
 
-Requirements
-------------
+**Requirements**
 
 <table>
 <colgroup>

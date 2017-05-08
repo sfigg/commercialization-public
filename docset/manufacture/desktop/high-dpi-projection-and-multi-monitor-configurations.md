@@ -4,6 +4,11 @@ Description: 'High DPI projection and multi-monitor configurations'
 ms.assetid: 81a96303-5ab5-4002-acac-ab356e2ec829
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'High DPI projection and multi-monitor configurations'
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # High DPI projection and multi-monitor configurations

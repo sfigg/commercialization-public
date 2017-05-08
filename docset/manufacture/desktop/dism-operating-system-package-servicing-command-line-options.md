@@ -4,6 +4,11 @@ Description: 'DISM Operating System Package (.cab or .msu) Servicing Command-Lin
 ms.assetid: ddb5f223-1c65-4380-95eb-316918e880fc
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'DISM Operating System Package (.cab or .msu) Servicing Command-Line Options'
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # DISM Operating System Package (.cab or .msu) Servicing Command-Line Options

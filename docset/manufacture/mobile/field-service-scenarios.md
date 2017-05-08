@@ -4,6 +4,11 @@ Description: Field service scenarios
 ms.assetid: 064509f8-902d-4ac8-85d9-7a405512d762
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Field service scenarios
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Field service scenarios

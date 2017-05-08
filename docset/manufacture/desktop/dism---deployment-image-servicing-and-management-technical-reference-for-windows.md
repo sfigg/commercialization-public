@@ -4,6 +4,11 @@ Description: 'DISM - Deployment Image Servicing and Management'
 ms.assetid: c0f321a9-1fc8-411a-a999-741132cff4ad
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'DISM - Deployment Image Servicing and Management'
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # DISM - Deployment Image Servicing and Management

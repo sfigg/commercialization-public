@@ -4,6 +4,11 @@ Description: 'After you''ve learned how to design, develop, and customize Window
 ms.assetid: 7e830510-851d-48b7-a916-d98e6cb2cf8a
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Desktop manufacturing
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Desktop manufacturing

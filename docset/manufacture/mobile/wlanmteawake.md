@@ -4,6 +4,11 @@ Description: WlanMTEAwake
 ms.assetid: a4e8a5af-5008-4643-afc0-036f59806528
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: WlanMTEAwake
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WlanMTEAwake

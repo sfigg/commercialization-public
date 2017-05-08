@@ -4,6 +4,11 @@ Description: WlanMTEResetAdapter
 ms.assetid: bb87f719-3277-4fcc-aa9f-94ff1dac34f1
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: WlanMTEResetAdapter
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WlanMTEResetAdapter

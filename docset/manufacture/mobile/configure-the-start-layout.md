@@ -4,6 +4,11 @@ ms.assetid: 99238b56-5c9c-4b5e-a750-e64a10e417af
 MSHAttr: 'PreferredLib:/library'
 title: Configure the Start layout
 author: CelesteDG
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Configure the Start layout

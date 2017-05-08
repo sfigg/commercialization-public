@@ -4,6 +4,11 @@ Description: 'WinPE: Install on a Hard Drive (Flat Boot or Non-RAM)'
 ms.assetid: f4495adf-63db-4fdc-ae56-70166eed930c
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'WinPE: Install on a Hard Drive (Flat Boot or Non-RAM)'
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WinPE: Install on a Hard Drive (Flat Boot or Non-RAM)

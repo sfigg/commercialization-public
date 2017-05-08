@@ -4,6 +4,11 @@ Description: 'Provides information about the state of the phone line? call?.'
 ms.assetid: 0157eda2-5066-4f2e-95f8-1ae990db2540
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'MFGPHONE\_REGISTRATIONSTATE enumeration'
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # MFGPHONE\_REGISTRATIONSTATE enumeration
@@ -13,8 +18,7 @@ Provides information about the state of the phone line? call?
 
 **MFGPHONE\_REGISTRATIONSTATE** is for phone manufacturers and can only be called in Manufacturing Mode.
 
-Syntax
-------
+**Syntax**
 
 ```ManagedCPlusPlus
 typedef enum _MFGPHONE_REGISTRATIONSTATE { 
@@ -27,8 +31,7 @@ typedef enum _MFGPHONE_REGISTRATIONSTATE {
 } MFGPHONE_REGISTRATIONSTATE;
 ```
 
-Constants
----------
+**Constants**
 
 <span id="MFGPHONE_REGISTRATIONSTATE_UNKNOWN"></span><span id="mfgphone_registrationstate_unknown"></span>**MFGPHONE\_REGISTRATIONSTATE\_UNKNOWN**  
 The registration state is not known.
@@ -48,8 +51,7 @@ The registration state is registered.
 <span id="MFGPHONE_REGISTRATIONSTATE_DENIED"></span><span id="mfgphone_registrationstate_denied"></span>**MFGPHONE\_REGISTRATIONSTATE\_DENIED**  
 The registration state is denied.
 
-Requirements
-------------
+**Requirements**
 
 <table>
 <colgroup>

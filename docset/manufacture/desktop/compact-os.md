@@ -4,6 +4,11 @@ Description: 'Windows 10 includes tools to help you use less drive space.'
 ms.assetid: f58ee9cf-0dd1-4c46-9b1f-d16891247f2f
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Compact OS, single-instancing, and image optimization'
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Compact OS, single-instancing, and image optimization
@@ -181,13 +186,13 @@ On computers that support removable media such as an SD card or USB flash drive,
 ## <span id="Size_comparisons"></span>Size comparisons
 The table below shows the additional space saved by using compact OS, Single instancing, and reducing or turning Off Hiberfile on 2GB (x86 processor architecture) and 4GB (x64 processor architecture), on Windows 10, version 1607:
 
-Image                                 | Windows 10 Home x86, 2GB memory   | Windows 10 Home x64, 4GB Memory
---------------------------------------|-----------------------------------|---------------------------------
-Base Footprint                        | 11.68GB                           | 15.06GB
-Compact OS, with no single instancing |  8.85GB (>2.75GB savings)         | 11.3GB  (>3.7GB)
-Compact OS, single instanced          |  7.66GB (>4GB)                    | 10.09GB (>4.75GB)
-Hiberfile off, no compact OS          | 10.87GB (>825MB)                  | 13.48GB (>1.5GB)
-Hiberfile reduced, no compact OS      | 11.27GB (>400MB)                  | 14.15GB (>930MB)
+| Image                                 | Windows 10 Home x86, 2GB memory   | Windows 10 Home x64, 4GB Memory |
+| --------------------------------------|-----------------------------------|--------------------------------- |
+| Base Footprint                        | 11.68GB                           | 15.06GB |
+| Compact OS, with no single instancing |  8.85GB (>2.75GB savings)         | 11.3GB  (>3.7GB) |
+| Compact OS, single instanced          |  7.66GB (>4GB)                    | 10.09GB (>4.75GB) |
+| Hiberfile off, no compact OS          | 10.87GB (>825MB)                  | 13.48GB (>1.5GB) |
+| Hiberfile reduced, no compact OS      | 11.27GB (>400MB)                  | 14.15GB (>930MB) |
 
 
 ## <span id="related_topics"></span>Related topics

@@ -4,6 +4,11 @@ Description: specialize
 ms.assetid: 9873c2be-c80c-47d7-a188-84e27200f2f8
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: specialize
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # specialize

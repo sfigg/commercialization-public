@@ -4,6 +4,11 @@ Description: WlanMTEStartSelfTest
 ms.assetid: 6c583601-3d26-4a4a-b225-11c2b54ea59b
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: WlanMTEStartSelfTest
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WlanMTEStartSelfTest

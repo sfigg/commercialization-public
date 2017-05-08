@@ -4,6 +4,11 @@ Description: Implementing image integrity validation in custom flashing tools
 ms.assetid: 0885d221-e9c6-4fe1-987b-34781546ba07
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Implementing image integrity validation in custom flashing tools
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Implementing image integrity validation in custom flashing tools

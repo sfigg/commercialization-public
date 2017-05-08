@@ -4,6 +4,11 @@ Description: Flashing security requirements
 ms.assetid: 78c22243-e9a4-4394-9f91-5922c15286e8
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Flashing security requirements
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Flashing security requirements

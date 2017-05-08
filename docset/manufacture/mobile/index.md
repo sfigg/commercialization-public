@@ -4,6 +4,11 @@ Description: 'After you have a completed the steps covered in the other guides t
 ms.assetid: f781b171-d37c-4b03-8e8b-da6d2e5d35b4
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Mobile manufacturing
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Mobile manufacturing

@@ -4,6 +4,11 @@ Description: 'Provides information about a particular SIM-based phone line.'
 ms.assetid: 004fe04e-48dc-4569-882a-035ca6918498
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'MFGPHONE\_SIMLINEDETAIL structure'
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # MFGPHONE\_SIMLINEDETAIL structure
@@ -13,8 +18,7 @@ Provides information about a particular SIM-based phone line. This **struct** is
 
 **MFGPHONE\_SIMLINEDETAIL** iis for phone manufacturers and can only be called in Manufacturing Mode.
 
-Syntax
-------
+**Syntax**
 
 ```ManagedCPlusPlus
 typedef struct _MFGPHONE_SIMLINEDETAIL {
@@ -28,8 +32,7 @@ typedef struct _MFGPHONE_SIMLINEDETAIL {
 } MFGPHONE_SIMLINEDETAIL, *PMFGPHONE_SIMLINEDETAIL;
 ```
 
-Members
--------
+**Members**
 
 **SimSlot**  
 The SIM-based phone line to which the details in this struct pertain.
@@ -52,8 +55,7 @@ Unsigned Integer containing the signal strength of the phone line.
 **CallStatus**  
 An **enum** specifying the call status of the phone line.
 
-Requirements
-------------
+**Requirements**
 
 <table>
 <colgroup>

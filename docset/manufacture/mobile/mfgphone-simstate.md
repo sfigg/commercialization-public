@@ -4,6 +4,11 @@ Description: 'Provides information about the state of the SIM.'
 ms.assetid: 8533be42-70de-433c-89ac-2c623d9b4397
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'MFGPHONE\_SIMSTATE enumeration'
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # MFGPHONE\_SIMSTATE enumeration
@@ -13,8 +18,7 @@ Provides information about the state of the SIM.
 
 **MFGPHONE\_SIMSTATE** is for phone manufacturers and can only be called in Manufacturing Mode.
 
-Syntax
-------
+**Syntax**
 
 ```ManagedCPlusPlus
 typedef enum _MFGPHONE_SIMSTATE { 
@@ -27,8 +31,7 @@ typedef enum _MFGPHONE_SIMSTATE {
 } MFGPHONE_SIMSTATE;
 ```
 
-Constants
----------
+**Constants**
 
 <span id="MFGPHONE_SIMSTATE_UNKNOWN"></span><span id="mfgphone_simstate_unknown"></span>**MFGPHONE\_SIMSTATE\_UNKNOWN**  
 The SIM state is unknown.
@@ -48,8 +51,7 @@ The SIM state is locked.
 <span id="MFGPHONE_SIMSTATE_DISABLED"></span><span id="mfgphone_simstate_disabled"></span>**MFGPHONE\_SIMSTATE\_DISABLED**  
 The SIM state is disabled.
 
-Requirements
-------------
+**Requirements**
 
 <table>
 <colgroup>

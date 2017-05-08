@@ -4,6 +4,11 @@ Description: auditSystem
 ms.assetid: 86d77a1f-2244-4600-80cd-65930a2cee3d
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: auditSystem
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # auditSystem

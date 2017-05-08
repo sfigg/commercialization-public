@@ -4,6 +4,11 @@ Description: 'Reset Protection helps you secure a device in case it is stolen. I
 ms.assetid: d9cd4f83-fb29-47cb-b26f-e82eb4d3bee8
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Reset protection
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Reset protection

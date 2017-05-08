@@ -4,6 +4,11 @@ Description: 'Sysprep (System Preparation) Overview'
 ms.assetid: f16f9f4e-c897-4a08-8c0f-e9d64043738c
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Sysprep (System Preparation) Overview'
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Sysprep (System Preparation) Overview

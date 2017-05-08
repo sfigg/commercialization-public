@@ -4,6 +4,11 @@ Description: Service a Windows Image Using DISM
 ms.assetid: 7578765f-15ca-4cdd-9327-cfe42a36add2
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Service a Windows Image Using DISM
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Service a Windows Image Using DISM

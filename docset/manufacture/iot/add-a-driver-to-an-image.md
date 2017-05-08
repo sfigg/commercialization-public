@@ -2,6 +2,11 @@
 author: kpacquer
 Description: 'We''ll show you one of two ways to add a driver to the image.'
 title: 'Lab 1e: Add a driver to an image'
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Lab 1e: Add a driver to an image

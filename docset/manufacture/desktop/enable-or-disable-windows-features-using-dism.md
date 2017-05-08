@@ -4,6 +4,11 @@ Description: Enable or Disable Windows Features Using DISM
 ms.assetid: a5280bba-7808-4752-92ca-7605a9ea29f0
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Enable or Disable Windows Features Using DISM
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Enable or Disable Windows Features Using DISM

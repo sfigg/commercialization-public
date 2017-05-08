@@ -4,6 +4,11 @@ Description: 'Provides information about the status of the call.'
 ms.assetid: dcd0fe41-15bf-4615-a9ed-aaf15dde5078
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'MFGPHONE\_CALLSTATUS enumeration'
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # MFGPHONE\_CALLSTATUS enumeration
@@ -13,8 +18,7 @@ Provides information about the status of the call.
 
 **MFGPHONE\_CALLSTATUS** is for phone manufacturers and can only be called in Manufacturing Mode.
 
-Syntax
-------
+**Syntax**
 
 ```ManagedCPlusPlus
 typedef enum _MFGPHONE_CALLSTATUS { 
@@ -26,8 +30,7 @@ typedef enum _MFGPHONE_CALLSTATUS {
 } MFGPHONE_CALLSTATUS;
 ```
 
-Constants
----------
+**Constants**
 
 <span id="MFGPHONE_CALLSTATUS_UNKNOWN_"></span><span id="mfgphone_callstatus_unknown_"></span>**MFGPHONE\_CALLSTATUS\_UNKNOWN**   
 The call status is unknown.
@@ -44,8 +47,7 @@ The call status is incoming.
 <span id="MFGPHONE_CALLSTATUS_ACTIVE"></span><span id="mfgphone_callstatus_active"></span>**MFGPHONE\_CALLSTATUS\_ACTIVE**  
 The call status is active.
 
-Requirements
-------------
+**Requirements**
 
 <table>
 <colgroup>

@@ -4,6 +4,11 @@ Description: Service an Applied Windows Image
 ms.assetid: cdf543f7-7810-4ec5-9992-af0f3b6a789f
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Service an Applied Windows Image
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Service an Applied Windows Image

@@ -4,6 +4,11 @@ Description: Create and Manage a Windows Image Using DISM
 ms.assetid: ef3d32c6-54f4-4347-9cbb-593c7ae7bf5e
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Create and Manage a Windows Image Using DISM
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Create and Manage a Windows Image Using DISM

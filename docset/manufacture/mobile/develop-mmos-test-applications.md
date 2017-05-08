@@ -4,6 +4,11 @@ Description: Develop MMOS test applications
 ms.assetid: 1149e3d6-79d9-443e-9561-c030069eb79a
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Develop MMOS test applications
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Develop MMOS test applications

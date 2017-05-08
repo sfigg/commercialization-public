@@ -4,6 +4,11 @@ Description: Creating a secure MMOS WIM image
 ms.assetid: c3ab9a94-a0a6-4831-9ac9-09c2972bb074
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Creating a secure MMOS WIM image
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Creating a secure MMOS WIM image

@@ -4,6 +4,11 @@ Description: MMOS image definition
 ms.assetid: 3b548778-0551-4ca0-9768-725d0f33dfca
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: MMOS image definition
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # MMOS image definition

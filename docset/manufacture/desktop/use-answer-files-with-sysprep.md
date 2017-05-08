@@ -4,6 +4,11 @@ Description: Use Answer Files with Sysprep
 ms.assetid: baa66548-b1f8-42f4-8027-3d515441ac0c
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Use Answer Files with Sysprep
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Use Answer Files with Sysprep

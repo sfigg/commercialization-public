@@ -4,6 +4,11 @@ Description: Change the Windows Image to a Higher Edition Using DISM
 ms.assetid: 754e7ef2-85fe-4b45-94d7-d7bd1db6eaa1
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Change the Windows Image to a Higher Edition Using DISM
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Change the Windows Image to a Higher Edition Using DISM
