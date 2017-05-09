@@ -49,13 +49,13 @@ The version numbers of the Windows ADK, the Windows image you're deploying, and 
 
 This lab assumes the 64-bit architecture, so if you’re using the 32-bit version, change all mentions of x64 to x86.
 
-### Windows 10, version 1607 image (install.wim)
+### Windows 10, version 1703 image (install.wim)
 
-|  |  |
-|-----------|----------------------------------------------------|
-| X21-08790 | Windows Home 10, version 1607 32/64 English OPK    |
-| X21-08794 | Windows Home SL 10, version 1607 32/64 English OPK |
-| X21-08798 | Windows Pro 10, version 1607 32/64 English OPK     |
+|             |                                                      |
+| ----------- | ---------------------------------------------------- |
+| X21-34314   | Windows Home 10, version 1703 32/64 English OPK      |
+| X21-34317   | Windows Home SL 10, version 1703 32/64 English OPK   |
+| X21-34321   | Windows Pro 10, version 1703 32/64 English OPK       |
 
 -   Mount the ISO file to a drive, and note the drive letter, for example, D.
 
@@ -63,21 +63,19 @@ This lab assumes the 64-bit architecture, so if you’re using the 32-bit versio
 
 ### Windows Assessment and Deployment Kit (ADK) for Windows 10, version 1607
 
-[Windows ADK for Windows 10, version 1607](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit#winADK)
-or X21-08803: Win 10 1607 32/64 OPK ADK
+[Windows ADK for Windows 10, version 1703](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit#winADK).
 
 ### Customizations: Windows updates, languages, features, apps, and Microsoft Office
 
-|  |  |
-|-----------|---------------------------------------------------|
-| X21-08801 | Win 10 1607 32/64 MultiLang OPK LangPackAll/LIP   |
-| X21-08802 | Win 10 1607 32/64 MultiLang OPK Feat on Demand    |
-| X21-08808 | Win 10 1607 32/64 MultiLang OPK App Update        |
-| X21-19559 | Win 10 1607 OPK ZDP                               |
-| X20-98485 | Office Mobile MultiLang v1.3 OPK                  |
-| X21-05453 | Office 2016 v16.2 Deployment Tool for OEM OPK     |
-| X21-05414 | Office 2016 v16.2 English OPK                     |
-| X21-05508 | Office v16.2 German OPK                           |
+|             |                                                     |
+| ----------- | --------------------------------------------------- |
+| X21-34323   | Win 10 1703 32/64 MultiLang OPK LangPackAll/LIP     |
+| X21-34324   | Win 10 1703 32/64 MultiLang OPK Feat on Demand      |
+| X21-34329   | Win 10 1607 32/64 MultiLang OPK App Update          |
+| X20-98485   | Office Mobile MultiLang v1.3 OPK                    |
+| X21-05453   | Office 2016 v16.2 Deployment Tool for OEM OPK       |
+| X21-05414   | Office 2016 v16.2 English OPK                       |                           |
+| X21-05508   | Office v16.2 German OPK |
 
 We also discuss how to add hardware drivers and other Windows apps in this guide, get those from the hardware/software manufacturers.
 
@@ -131,4 +129,6 @@ Here’s how to set up your PC.
 
 **Next steps**
 * [Get the sample scripts](windows-deployment-sample-scripts-sxs.md)
+
+
 
