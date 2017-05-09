@@ -8,6 +8,11 @@ ms.assetid: 0fc967f2-9acb-42ac-b4dc-463c6971fd13
 ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
+ms.author: windows-hardware-design-content
+ms.date: 05/05/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # Add or Remove a Custom Recording Profile

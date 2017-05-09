@@ -4,6 +4,11 @@ Description: Windows Setup Technical Reference
 ms.assetid: f0fa0e04-e8ca-43b8-a789-0ef854e09333
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Windows Setup Technical Reference
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # Windows Setup Technical Reference

@@ -4,6 +4,11 @@ Description: Service a Windows PE Image with DISM
 ms.assetid: 6434495a-bcec-47a5-a82c-756ab505cf4a
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Service a Windows PE Image with DISM
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # Service a Windows PE Image with DISM

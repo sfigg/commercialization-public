@@ -8,6 +8,11 @@ ms.assetid: 2B4E7891-E464-46B4-9E69-22F9BD185716
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # RemoveMPDW

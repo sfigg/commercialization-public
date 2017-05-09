@@ -8,6 +8,11 @@ ms.assetid: 91b90c4c-2534-4a2a-ad50-209afcca539f
 ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
+ms.author: windows-hardware-design-content
+ms.date: 05/05/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # Apply a View Profile

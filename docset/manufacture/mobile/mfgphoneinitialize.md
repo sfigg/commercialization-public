@@ -4,6 +4,11 @@ Description: 'Initializes the phone system and the internal state of the API imp
 ms.assetid: b9a9f95e-32ca-49fe-8f8c-9bf00d899edf
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: MfgPhoneInitialize function
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # MfgPhoneInitialize function
@@ -13,25 +18,21 @@ Initializes the phone system and the internal state of the API implemented by DL
 
 **MfgPhoneInitialize** is for phone manufacturers and can only be called in Manufacturing Mode.
 
-Syntax
-------
+**Syntax**
 
 ```ManagedCPlusPlus
 HRESULT APIENTRY MfgPhoneInitialize(void);
 ```
 
-Parameters
-----------
+**Parameters**
 
 This function has no parameters.
 
-Return value
-------------
+**Return value**
 
 S\_OK is returned upon success and an error code is returned otherwise.
 
-Requirements
-------------
+**Requirements**
 
 <table>
 <colgroup>

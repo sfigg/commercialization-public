@@ -1,3 +1,13 @@
+---
+Description: Provides partners with a roadmap to deliver high-performing and power-efficient PCs to customers
+MSHAttr: 'PreferredLib:/library/windows/hardware'
+title: Performance - Windows 10 Engineering Guide
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
+---
 
 # Performance – Windows 10 Engineering Guide
 
@@ -34,5 +44,6 @@ firmware, and hardware. This guidance applies to traditional x86-based
 PCs as well as devices that offer connected standby. It applies to both
 the consumer and commercial markets.
 
-> [!IMPORTANT] The Performance WEG is not intended to communicate the Windows Hardware Compatibility Requirements (WHCR) and OEM Policy Document (OPD). Both WHCR and OPD take precedence over any information in the Performance WEG. You must comply with the WHCR and OPD.
+> [!IMPORTANT]
+> The Performance WEG is not intended to communicate the Windows Hardware Compatibility Requirements (WHCR) and OEM Policy Document (OPD). Both WHCR and OPD take precedence over any information in the Performance WEG. You must comply with the WHCR and OPD.
 

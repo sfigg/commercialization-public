@@ -8,6 +8,11 @@ ms.assetid: 90390029-f6c6-4f7c-9a70-6e44c5a4dfbb
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # Windows System Image Manager Reference Topics

@@ -8,6 +8,11 @@ ms.assetid: a7f512d4-13dd-44be-881b-2b705deb973a
 ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
+ms.author: windows-hardware-design-content
+ms.date: 05/05/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # IEnumProfile

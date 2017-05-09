@@ -4,6 +4,11 @@ Description: 'Fixing blurry text in Windows 8.1 for IT Professionals'
 ms.assetid: 02738ee5-e2d4-491f-8b25-a5a360383c7c
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Fixing blurry text in Windows 8.1 for IT Professionals'
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # Fixing blurry text in Windows 8.1 for IT Professionals

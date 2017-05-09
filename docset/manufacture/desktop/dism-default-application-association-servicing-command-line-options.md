@@ -4,6 +4,11 @@ Description: 'DISM Default Application Association Servicing Command-Line Option
 ms.assetid: 78cad8f9-2048-48f7-8eb6-44011adbca24
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'DISM Default Application Association Servicing Command-Line Options'
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # DISM Default Application Association Servicing Command-Line Options

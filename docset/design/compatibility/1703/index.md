@@ -4,6 +4,11 @@ Description: 'This section of the documentation provides specifications for hard
 ms.assetid: 
 MSHAttr: 
 author: beneluxboy
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # Hardware Compatibility Specifications for Windows 10, version 1703

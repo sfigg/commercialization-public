@@ -4,6 +4,11 @@ Description: 'Callback-based notification mechanism for receiving events on SIM-
 ms.assetid: 58ca5582-71d0-4b33-a3b3-68374c6ed1d5
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: MfgPhoneSetSimLineEventNotifyCallback function
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # MfgPhoneSetSimLineEventNotifyCallback function
@@ -13,8 +18,7 @@ Callback-based notification mechanism for receiving events on SIM-based phone li
 
 **MfgPhoneSetSimLineEventNotifyCallback** is for phone manufacturers and can only be called in Manufacturing Mode.
 
-Syntax
-------
+**Syntax**
 
 ```ManagedCPlusPlus
 HRESULT APIENTRY MfgPhoneSetSimLineEventNotifyCallback(
@@ -23,8 +27,7 @@ HRESULT APIENTRY MfgPhoneSetSimLineEventNotifyCallback(
 );
 ```
 
-Parameters
-----------
+**Parameters**
 
 *Callback* \[in\]  
 The callback function to call when the event occurs.
@@ -32,13 +35,11 @@ The callback function to call when the event occurs.
 *Context* \[in\]  
 The context.
 
-Return value
-------------
+**Return value**
 
 S\_OK is returned upon success and an error code is returned otherwise.
 
-Requirements
-------------
+**Requirements**
 
 <table>
 <colgroup>

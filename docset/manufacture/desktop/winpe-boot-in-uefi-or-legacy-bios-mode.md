@@ -4,6 +4,11 @@ Description: 'WinPE: Boot in UEFI or legacy BIOS mode'
 ms.assetid: bc3c4d41-c4f7-4432-b11a-f409e171d60d
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'WinPE: Boot in UEFI or legacy BIOS mode'
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # WinPE: Boot in UEFI or legacy BIOS mode

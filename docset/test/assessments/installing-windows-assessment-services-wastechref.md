@@ -8,6 +8,11 @@ ms.assetid: fbd2036a-8d3e-43ac-b8c9-3c499e7e8322
 ms.prod: W10
 ms.mktglfcycl: plan
 ms.sitesec: msdn
+ms.author: windows-hardware-design-content
+ms.date: 05/05/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # Installing Windows Assessment Services

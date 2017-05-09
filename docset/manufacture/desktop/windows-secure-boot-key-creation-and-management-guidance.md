@@ -4,6 +4,11 @@ Description: Windows Secure Boot Key Creation and Management Guidance
 ms.assetid: 603ae3a4-d9b6-4d2a-bf46-b2fdffcd6baf
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Windows Secure Boot Key Creation and Management Guidance
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # Windows Secure Boot Key Creation and Management Guidance

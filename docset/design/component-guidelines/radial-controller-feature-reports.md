@@ -4,6 +4,11 @@ author: windows-driver-content
 description: TBD
 ms.assetid:
 keywords: ["radial dial", "radial controller", "dial"]
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # Windows radial controller feature reports
@@ -15,27 +20,27 @@ If a Windows radial controller device supports haptic feedback, it can allow the
 
 The host uses the following usages (through the haptic feedback collection) to communicate the haptic feedback waveform support and allow the host to configure the haptic feedback on the Windows radial controller device. If a device chooses to expose a haptic feedback collection, some usages are mandatory to allow automatic haptic feedback configuration to be supported.
 
-Member | Description | Page | ID | Mandatory/Optional
----| --- | --- | --- | ---
-Waveform List | Ordered list of haptic waveforms supported by the device | 0x0E | 0x10 | Mandatory
-Duration List | Ordered list of durations for waveforms in the Waveform List | 0x0E | 0x11 | Mandatory
-Auto Trigger | Waveform to fire automatically at device’s discretion | 0x0E | 0x20 | Mandatory
-Auto Trigger Associated Control | HID usage of the control associated with haptic feedback | 0x0E | 0x22 | Mandatory
-Intensity | Output – Intensity of Manual Trigger waveform as a percentage | 0x0E | 0x23 | Optional
-Repeat Count | Output – Number of times to play Manual Trigger waveform after initial play | 0x0E | 0x24 | Optional
-Retrigger Period | Output – Duration of time to wait before retriggering Manual Trigger when repeating | 0x0E | 0x25 | Optional
-Waveform Cutoff Time | Max time a Manual Trigger waveform can play before being cut off | 0x0E | 0x28 | Optional
+| Member | Description | Page | ID | Mandatory/Optional |
+| ---| --- | --- | --- | --- |
+| Waveform List | Ordered list of haptic waveforms supported by the device | 0x0E | 0x10 | Mandatory |
+| Duration List | Ordered list of durations for waveforms in the Waveform List | 0x0E | 0x11 | Mandatory |
+| Auto Trigger | Waveform to fire automatically at device’s discretion | 0x0E | 0x20 | Mandatory |
+| Auto Trigger Associated Control | HID usage of the control associated with haptic feedback | 0x0E | 0x22 | Mandatory |
+| Intensity | Output – Intensity of Manual Trigger waveform as a percentage | 0x0E | 0x23 | Optional |
+| Repeat Count | Output – Number of times to play Manual Trigger waveform after initial play | 0x0E | 0x24 | Optional |
+| Retrigger Period | Output – Duration of time to wait before retriggering Manual Trigger when repeating | 0x0E | 0x25 | Optional |
+| Waveform Cutoff Time | Max time a Manual Trigger waveform can play before being cut off | 0x0E | 0x28 | Optional |
 
 ### Waveform List
 
 Waveform List usage represents a collection of the HID usages of supported waveforms, ordered using ordinals. The pre-defined haptics waveforms are defined in the HID specification. Windows supports implementing the following waveforms for a haptic feedback enabled device:
 
-Waveform | Description | Page | ID | Mandatory/Optional
----| --- | --- | --- | ---
-WAVEFORM_NONE| No-op. Should not impact the play state of ongoing waveforms. | 0x0E | 0x1001 | Mandatory
-WAVEFORM_STOP| Stops the playback of ongoing waveforms. | 0x0E | 0x1002 | Mandatory
-WAVEFORM_CLICK| Creates a short “click” feedback | 0x0E | 0x1003 | Mandatory
-WAVEFORM_BUZZ_CONTINUOUS| Buzzes the device for an extended duration of time | 0x0E | 0x1004 | Optional
+| Waveform | Description | Page | ID | Mandatory/Optional |
+| ---| --- | --- | --- | --- |
+| WAVEFORM_NONE| No-op. Should not impact the play state of ongoing waveforms. | 0x0E | 0x1001 | Mandatory |
+| WAVEFORM_STOP| Stops the playback of ongoing waveforms. | 0x0E | 0x1002 | Mandatory |
+| WAVEFORM_CLICK| Creates a short “click” feedback | 0x0E | 0x1003 | Mandatory |
+| WAVEFORM_BUZZ_CONTINUOUS| Buzzes the device for an extended duration of time | 0x0E | 0x1004 | Optional |
 
 Both WAVEFORM_NONE and WAVEFORM_STOP are required for all HID-compliant haptics devices. Ordinals 1 and 2 are implicitly set to WAVEFORM_NONE and WAVEFORM_STOP. They do not need to be declared in the Waveform List or Duration List. The Waveform List declares supported waveforms by the physical minimum and maximum of each ordinal in the list.
 

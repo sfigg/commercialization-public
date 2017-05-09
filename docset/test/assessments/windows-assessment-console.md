@@ -8,6 +8,11 @@ ms.assetid: a7e95c40-6529-4dc9-99eb-21fd81ec368a
 ms.prod: W10
 ms.mktglfcycl: plan
 ms.sitesec: msdn
+ms.author: windows-hardware-design-content
+ms.date: 05/05/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # Windows Assessment Console

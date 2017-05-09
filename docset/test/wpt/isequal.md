@@ -8,6 +8,11 @@ ms.assetid: b555fa8d-71fc-4ca1-a1e8-592cce52d738
 ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
+ms.author: windows-hardware-design-content
+ms.date: 05/05/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # IsEqual

@@ -4,6 +4,11 @@ Description: 'There may be cases where you want a service to be normally disable
 ms.assetid: 5504bade-5342-4006-9631-7321acd983ac
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Define a service that only runs in Manufacturing Mode
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # Define a service that only runs in Manufacturing Mode

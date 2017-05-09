@@ -4,6 +4,11 @@ Description: 'The following scripts are used in the lab. It may be helpful to cr
 ms.assetid: 621503da-e74f-4eef-8315-72c8be67747a
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Sample scripts
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # Sample scripts
@@ -15,8 +20,6 @@ Copy these scripts to the root of your storage USB drive.  Refer to this page to
 **To keep moving with the labs, it's OK to skip the rest of this topic**. Come back later when you want to understand what's going on or to make changes: we designed these scripts so that you can modify them to fit your needs.
 
 **Next step**: [Deploy Windows using a script](deploy-windows-with-a-script-sxs.md)
-
---------------------------
 
 ## <span id="Image_deployment_scripts"></span><span id="image_deployment_scripts"></span><span id="IMAGE_DEPLOYMENT_SCRIPTS"></span>Image deployment scripts
 

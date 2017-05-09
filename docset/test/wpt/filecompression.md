@@ -8,6 +8,11 @@ ms.assetid: fcc2cd71-7246-40f5-ba9c-2ba79b8ffdfc
 ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
+ms.author: windows-hardware-design-content
+ms.date: 05/05/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # FileCompression

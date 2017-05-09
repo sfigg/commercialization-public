@@ -4,6 +4,11 @@ Description: 'This section of the documentation provides specifications for hard
 ms.assetid: 
 MSHAttr: 
 author: beneluxboy
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # Hardware Compatibility Specification for Components and Peripherals for Windows 10, version 1703
@@ -25,7 +30,6 @@ These specifications are divided into the following categories and topics:
 - [Device.Connectivity.MAUSB.Hub](device-connectivity-mausb-hub.md)
 - [Device.Connectivity.Network.VerticalPairing](device-connectivity-network-verticalpairing.md)
 - [Device.Connectivity.PciConnected](device-connectivity-pciconnected.md)
-- [Device.Connectivity.Server](device-connectivity-server.md)
 - [Device.Connectivity.UsbDevices](device-connectivity-usbdevices.md)
 - [Device.Connectivity.UsbHub](device-connectivity-usbhub.md)
 - [Device.Connectivity.WSD](device-connectivity-wsd.md)

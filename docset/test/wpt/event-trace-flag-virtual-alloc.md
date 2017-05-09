@@ -8,6 +8,11 @@ ms.assetid: 01bbdf2d-20e2-4588-a90b-4c962e69cbc1
 ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
+ms.author: windows-hardware-design-content
+ms.date: 05/05/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # EVENT\_TRACE\_FLAG\_VIRTUAL\_ALLOC

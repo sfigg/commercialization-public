@@ -4,6 +4,11 @@ Description: 'This section of the documentation provides specifications for hard
 ms.assetid: 
 MSHAttr: 
 author: beneluxboy
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # Hardware Compatibility Specification for Systems for Windows 10, version 1703
@@ -3087,7 +3092,7 @@ Storage benchmark needs to setup a fake drive get the baseline power.</p>
 <li><p>Diskmgmt.msc (to open disk management).</p></li>
 <li><p>Find the new disk with 4GB size.</p></li>
 <li><p>Initialize the disk using MBR partition style.</p>
-![Initialize Disk dialog box](../images/initialize-disk-dialog-box.png)
+![Initialize Disk dialog box](images/initialize-disk-dialog-box.png)
 </li>
 <li><p>Right click on it, select “New Simple Volume”. Follow the GUI to create a volume with 4GB space and format it in NTFS.</p></li>
 <li><p>Remember the assigned drive letter of the new disk, and close disk manager.</p></li>

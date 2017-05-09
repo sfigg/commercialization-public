@@ -8,6 +8,11 @@ ms.assetid: 078ba908-2684-4ffa-b3c9-8a2700c62989
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # WillShowUI

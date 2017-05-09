@@ -8,6 +8,11 @@ ms.assetid: c98256c9-59a4-4bcb-b39a-6821719c34fc
 ms.prod: W10
 ms.mktglfcycl: plan
 ms.sitesec: msdn
+ms.author: windows-hardware-design-content
+ms.date: 05/05/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # Create and run an energy efficiency job
