@@ -23,7 +23,7 @@ As an example, we'll add a setting that shows you how to automatically boot to a
 
 ## <span id="overview"></span><span id="OVERVIEW"></span>Windows settings overview
 
-While you can set many Windows settings in audit mode, some settings can only be set by using an answer file or Windows Imaging and Configuration Designer (ICD), such as adding manufacturer’s support information. A full list of answer file settings (also known as Unattend settings) is in the [Unattended Windows Setup Reference](https://msdn.microsoft.com/library/windows/hardware/dn923277).
+While you can set many Windows settings in audit mode, some settings can only be set by using an answer file or Windows Configuration Designer, such as adding manufacturer’s support information. A full list of answer file settings (also known as Unattend settings) is in the [Unattended Windows Setup Reference](https://msdn.microsoft.com/library/windows/hardware/dn923277).
 
 Enterprises can control other settings by using Group Policy. For more info, see [Group Policy](http://go.microsoft.com/fwlink/p/?linkid=268543).
 
