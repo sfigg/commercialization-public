@@ -14,7 +14,7 @@ ms.technology: windows-oem
 
 Install Windows desktop applications and system settings by capturing them into siloed provisioning packages (SPPs).
 
-SPPs are a new type of provisioning package that is available for Windows 10, version 1607. In previous versions of Windows 10, to capture these applications, you'd capture them all at once into a single provisioning package.  
+SPPs are a new type of provisioning package that is available starting with Windows 10, version 1607. In previous versions of Windows 10, to capture these applications, you'd capture them all at once into a single provisioning package.  
 
 With SPPs, you can capture individual Windows desktop applications, .exe-style drivers, and Windows settings. You can then apply these to your PCs after you've applied the Windows image. This provides more flexibility for the manufacturing process and helps reduce the time required to build PCs that run Windows.    
 
@@ -40,7 +40,7 @@ You can do this by:
 
 ## <span id="Prepare_a_copy_of_the_Deployment_and_Imaging_Tools"></span><span id="prepare_a_copy_of_the_deployment_and_imaging Tools"></span><span id="PREPARE_A_COPY_OF_THE_DEPLOYMENT_AND_IMAGING_TOOLS"></span>Step 1: Prepare a copy of the Deployment and Imaging Tools
 
-You'll need the Windows 10, version 1607 version of the Deployment and Imaging Tools from the ADK. This includes the ScanState tool and the latest version of DISM.
+You'll need the Windows 10, version 1703 version of the Deployment and Imaging Tools from the ADK. This includes the ScanState tool and the latest version of DISM.
 
 **Important**   Don't overwrite the existing DISM files on the WinPE image.
 
