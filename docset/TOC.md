@@ -131,6 +131,7 @@
 ##### [IOCTL_THERMAL_READ_POLICY](design/device-experiences/ioctl-thermal-read-policy.md)
 ##### [IOCTL_THERMAL_READ_TEMPERATURE](design/device-experiences/ioctl-thermal-read-temperature.md)
 ### [Security and reliability](design/device-experiences/security-and-reliabilty.md)
+### [Device encryption for OEMs](design/device-encryption-for-oem.md)
 ### [Versatile input platform](design/device-experiences/versitle-input-platform.md)
 
 ## [Hardware component guidelines](design/component-guidelines/components.md)
