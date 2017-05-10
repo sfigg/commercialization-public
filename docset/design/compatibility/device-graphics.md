@@ -4,6 +4,11 @@ Description: 'Requirements for the base feature set required of all graphic devi
 ms.assetid: 
 MSHAttr: 
 author: beneluxboy
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # Device.Graphics
@@ -402,8 +407,7 @@ When graphics drivers are submitted for certification, matching symbol files mus
 
 Symbols may by “public” or “private” per [MSDN guidance](https://msdn.microsoft.com/en-us/library/windows/hardware/ff550665.aspx).
 
-Device.Graphics.AdapterRender
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+## Device.Graphics.AdapterRender
 
 *The Render feature of a graphics device.*
 

@@ -1198,7 +1198,19 @@
 
 ## [Windows Engineering Guides](test/weg/index.md)
 ### [Performance - Windows Engineering Guide](test/weg/weg-performance.md)
-
+#### [Delivering a great experience with low memory](test/weg/delivering-a-great-experience-with-low-memory.md)
+#### [Delivering a great startup and shutdown experience](test/weg/delivering-a-great-startup-and-shutdown-experience.md)
+#### [Delivering a great browsing experience](test/weg/delivering-a-great-browsing-experience.md)
+#### [Delivering a great media experience](test/weg/delivering-a-great-media-experience.md)
+#### [Delivering a great app experience](test/weg/delivering-a-great-app-experience.md)
+#### [Delivering an image with high quality Windows Store apps](test/weg/delivering-an-image-with-high-quality-windows-store-apps.md)
+#### [Delivering a great energy efficiency experience with Modern Standby](test/weg/delivering-a-great-energy-efficiency-experience-with-modern-standby.md)
+#### [Delivering a great energy efficiency experience](test/weg/delivering-a-great-energy-efficiency-experience.md)
+#### [Instrumenting Your Code with ETW](test/weg/instrumenting-your-code-with-etw.md)
+#### [Performance Tools](test/weg/performance-tools.md)
+#### [Understanding the Windows ADK tools](test/weg/understanding-the-windows-adk-tools.md)
+#### [Setting up a test environment for ADK and WAS](test/weg/setting-up-a-test-environment-for-adk-and-was.md)
+#### [Onboarding and preparing a system for ADK testing](test/weg/onboarding-and-preparing-a-system-for-adk-testing.md)
 
 
 # [Manufacture](manufacture/index.md)

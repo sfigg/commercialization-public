@@ -4,6 +4,11 @@ Description: WlanMTEEnumAdapters
 ms.assetid: f89ddb61-0c2d-446b-9f81-3e2c88311d61
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: WlanMTEEnumAdapters
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # WlanMTEEnumAdapters

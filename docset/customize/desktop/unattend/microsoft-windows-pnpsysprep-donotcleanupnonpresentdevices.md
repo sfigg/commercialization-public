@@ -8,6 +8,11 @@ ms.assetid: faaf41be-d2fa-458c-9c03-e3f8e88a66d5
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # DoNotCleanUpNonPresentDevices

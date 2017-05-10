@@ -1,9 +1,14 @@
 ---
-author: Justinha
+author: themar
 Description: 'Oobe.xml Settings'
 ms.assetid: 2c8ecddc-7099-451e-a069-642f654d4fbf
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Oobe.xml Settings'
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # Oobe.xml Settings
@@ -14,367 +19,132 @@ This topic describes the settings that can be set in Oobe.xml.
 ## <span id="oobe.xml_settings"></span><span id="OOBE.XML_SETTINGS"></span>Oobe.xml Settings
 
 
-The following tables show the available settings in the Oobe.xml file, by section, along with the description and the value for each setting.
+The following shows how elements are ordered in Oobe.xml. Not all elements and sections are required for Windows to process Oobe.xml.
 
-**HID Pairing**
+```
+<FirstExperience>
+  <oobe>
+    <oem>
+      <name></name>
+      <eulafilename></eulafilename>
+      <computername></computername>
+      <registration>
+        <title></title>
+        <subtitle></subtitle>
+        <customerinfo>
+          <label></label>
+          <defaultvalue></defaultvalue>
+        </customerinfo>
+        <checkbox1>
+          <label></label>
+          <defaultvalue></defaultvalue>
+        </checkbox1>
+        <checkbox2>
+          <label></label>
+        </checkbox2>
+        <checkbox3>
+          <label></label>
+        </checkbox3>
+        <link1>
+          <label></label>
+        </link1>       
+        <link2>
+          <label></label>
+        </link2>
+        <link3>
+          <label></label>
+        </link3>
+        <hideSkip></hideSkip>
+      </registration>
+    </oem>
+    <defaults>
+      <language></language>
+      <location></location>
+      <keyboard></keyboard>
+      <adjustForDST></adjustForDST>
+    </defaults>
+    <hidSetup>
+      <title></title>
+      <mouseImagePath></mouseImagePath>
+      <mouseText></mouseText>
+      <mouseErrorImagePath></mouseErrorImagePath>
+      <mouseErrorText></mouseErrorText>
+      <keyboardImagePath></keyboardImagePath>
+      <keyboardErrorImagePath></keyboardErrorImagePath>
+      <keyboardText></keyboardText>
+      <keyboardPINText></keyboardPINText>
+      <keyboardPINImagePath></keyboardPINImagePath>
+      <keyboardErrorText></keyboardErrorText>
+    </hidSetup>
+  </oobe>
+</FirstExperience>
+```
+The following tables show descriptions and values for elements available in Oobe.xml.
 
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Setting</th>
-<th align="left">Description</th>
-<th align="left">Value</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>mouseImagePath</p></td>
-<td align="left"><p>Absolute path to the mouse pairing instruction image.</p>
-<p>The image must not be larger than 630 x 372 pixels. It's scaled to fit in portrait mode or on small form factors.</p></td>
-<td align="left"><p>Absolute path to image</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>mouseText</p></td>
-<td align="left"><p>Help text that displays at the bottom of the page if the mouse pairing instruction image cannot be opened. This text is also used by Narrator for accessibility.</p></td>
-<td align="left"><p>String</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>mouseErrorImagePath</p></td>
-<td align="left"><p>Absolute path to the mouse pairing error image.</p>
-<p>The image must not be larger than 630 x 372 pixels. It will be scaled to fit in portrait mode or on small form factors.</p></td>
-<td align="left"><p>Absolute path to the image</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>mouseErrorText</p></td>
-<td align="left"><p>This error text is displayed if there are issues loading the mouse pairing error image. This text is also used by Narrator for accessibility.</p></td>
-<td align="left"><p>String</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>keyboardImagePath</p></td>
-<td align="left"><p>Absolute path to the first keyboard pairing instruction image.</p>
-<p>The image must not be larger than 630 x 372 pixels. It will be scaled to fit in portrait mode or on small form factors.</p></td>
-<td align="left"><p>Absolute path to the image</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>keyboardText</p></td>
-<td align="left"><p>Help text that displays at the bottom of the page if the keyboard pairing instruction image cannot be opened. This text is also used by Narrator for accessibility.</p></td>
-<td align="left"><p>String</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>keyboardPINImagePath</p></td>
-<td align="left"><p>Absolute path to the second keyboard pairing instruction image.</p>
-<p>The image must not be larger than 630 x 372 pixels. It's scaled to fit in portrait mode or on small form factors.</p></td>
-<td align="left"><p>Absolute path to the image</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>keyboardErrorImagePath</p></td>
-<td align="left"><p>Absolute path to the keyboard pairing error image.</p>
-<p>The image must not be larger than 630 x 372 pixels. It's scaled to fit in portrait mode or on small form factors.</p></td>
-<td align="left"><p>Absolute path to the image</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>keyboardErrorText</p></td>
-<td align="left"><p>This error text is displayed if there are issues loading the keyboard pairing error image. This text is also used by Narrator for accessibility.</p></td>
-<td align="left"><p>String</p></td>
-</tr>
-</tbody>
-</table>
+The following table shows description for OEM customization and registration pages.
 
- 
+| Element | Setting | Description | Value |
+| ------- | ------ | ----------- | ----- |
+| <**oem**> |  |  |  |
+|  | \<name> | Optional. Text to describe the name of the OEM. | String. |
+|  | \<eulafilename> | Optional. Text with the filename of the EULA file. | Absolute path to the EULA .rtf file. The EULA .html document must be in the same folder. Windows knows to look for the .html file in that location. <p> **Note**: .htm files are ignored. <p> **Important**: All HTML files in OOBE must use UTF-8 encoding.  |
+|  | \<computername> | Optional. Text to describe the name of the computer | String. |
+|  | \<regsitration> | Optional. Additional details are below. |
+| <**registration**> | | | |
+| | \<title> | Required if registration element is used. Text to title the Registration page. | String of up to 25 characters. |  
+| | \<subtitle> | Required if registration element is used. Text to describe the Registration page. |
+| <**customerinfo**> | | | |
+| | \<label> | Text to label customerinfo. Rquired for customerinfo to appear. | String of up to 250 characters. We strongly recommend that you use no more than 100 characters because this length of text will fit on one line. |
+| | \<defaultvalue> | Value to set customerinfo as selected or not. If this field is checked, information from the four input fields will be provided via asymmetric key encryption. If not checked, no information from the four input fields will be provided. | True or False. True means the check box default condition is selected. False means the check box default condition isn't selected. |
+| <**checkbox1**> | | | |
+| | \<label> | Text to label checkbox1. Required for checkbox1 to appear. | String of up to 250 characters. We strongly recommend that you use no more than 100 characters because this length of text will fit on one line. |
+| | \<defaultvalue> | Value to set checkbox1 as selected or not selected. | True or False. True means the check box default condition is selected. False means the check box default condition isn't selected. |
+| \<**checkbox2**> | | | |
+| | \<label> | Text to label checkbox2. Required for checkbox2 to appear. | String of up to 250 characters. We strongly recommend that you use no more than 100 characters because this length of text will fit on one line. |
+| | \<defaultvalue> | Value to set checkbox3 as selected or not selected. | True or False. True means the check box default condition is selected. False means the check box default condition isn't selected. |
+| <**checkbox3**> | | | |
+| | \<label> | Text to label checkbox3. Required for checkbox3 to appear. | String of up to 250 characters. We strongly recommend that you use no more than 100 characters because this length of text will fit on one line. |
+| | \<defaultvalue> | Value to set checkbox3 as selected or not selected. | True or False. True means the check box default condition is selected. False means the check box default condition isn't selected. |
+| <**link1**> | | | |
+| | \<label> | Label for the link to the HTML file. Required for link1 to appear. | String of up to 100 characters.|
+| | \<link> | File must be named linkfile1.html. OOBE searches for these files under the oobe\info folder. OOBE searches for files under the appropriate locale and language specific subfolders of oobe\info. | linkfile1.html |
+| <**link2**> | | | |
+| | \<label> | Label for the link to the HTML file. Required for link2 to appear. | String of up to 100 characters.|
+| | \<link> | File must be named linkfile2.html. OOBE searches for these files under the oobe\info folder. OOBE searches for files under the appropriate locale and language specific subfolders of oobe\info. | linkfile2.html |
+| <**link3**> | | | |
+| | \<label> | Label for the link to the HTML file. Required for link3 to appear. | String of up to 100 characters.|
+| | \<link> | File must be named linkfile3.html. OOBE searches for these files under the oobe\info folder. OOBE searches for files under the appropriate locale and language specific subfolders of oobe\info. | linkfile3.html |
+| <**hideSkip**> | | Optional. Controls whether or not the Skip button is displayed to the user.  Default is False, resulting in the skip button being visible. | True or False. True means the skip button is not visible to the user. False means the skip button is displayed as an option to the user. |
 
-**Registration page**
+<br>
+The following table shows values for language and location.
 
-The following table shows the Registration page settings and their allowed values in OOBE.xml.
+| Element | Setting | Description | Value |
+| ------- | ------ | ----------- | ----- |
+| <**defaults**> | | | |
+| | \<language> | Specifies the default language on the system. | Decimal identifier for language. These values can be found in the following topic, [Available Language Packs for Windows.](available-language-packs-for-windows.md) |
+| | \<location> | Specifies the default location on the system. | GeoID. [A list of GeoIDs is available here.](https://msdn.microsoft.com/en-us/library/dd374073%28VS.85%29.aspx) |
+| | \<keyboard> | Specifies the default timezone on the system. | Keyboard ID string. This can be found with the GetKeyboardLayoutList API.  Or, by prepending a colon and the appropriate LCID to one of the keyboard layout IDs listed under HKLM\SYSTEM\CurrentControlSet\Control\Keyboard Layouts |
+| | \<adjustforDST> | Specifies whether to adjust for Daylight Saving Time. | True or False. True means adjust for Daylight Saving Time based on the time zone. False means always remain on Standard Time. |
 
-**Note**  
-The ampersand symbol, '&', cannot be used in this section of OOBE.xml. Use the word 'and' instead.
+<br>
+The following table shows values for HID setup.
 
- 
+| Element | Setting | Description | Value |
+| ------- | ------ | ----------- | ----- |
+| <**hidsetup**> | | | |
+| | \<title> | | |
+| | \<mouseImagePath> | Absolute path to the mouse pairing instruction image.<p>The image must not be larger than 630 x 372 pixels. It's scaled to fit in portrait mode or on small form factors. | Absolue path to the image. |
+| | \<mouseText> | Help text that displays at the bottom of the page. | String |
+| | \<mouseErrorImagePath> | Absolute path to the mouse pairing error image.<p>The image must not be larger than 630 x 372 pixels. It's scaled to fit in portrait mode or on small form factors. |
+| | \<mouseErrorText> | Error that displays to users along with mouse pairing error image. | String |
+| | \<keyboardImagePath> | Absolute path to the first keyboard pairing instruction image.<p>The image must not be larger than 630 x 372 pixels. It’s scaled to fit in portrait mode or on small form factors. |
+| | \<keyboardErrorImagePath> | Absolute path to the keyboard pairing error image.<p>The image must not be larger than 630 x 372 pixels. It's scaled to fit in portrait mode or on small form factors. | Absolute path to the image |
+ | | \<keyboardText> | Specifies the text to prompt the user to pair the keyboard. | String |
+| | \<keyboardPINText> | Specifies the prompt text for the user to enter a pin for the keyboard. | String |
+| | \<keyboardPINImagePath> | Absolute path to the keyboard pairing instruction image.<p>The image must not be larger than 630 x 372 pixels. It’s scaled to fit in portrait mode or on small form factors. | Absoulte path to image |
+| | \<keyboardErrorText> | Specifies the text to use when an error occurs when pairing the keyboard. | String |
 
-<table>
-<colgroup>
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Section</th>
-<th align="left">Setting</th>
-<th align="left">Description</th>
-<th align="left">Value</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p></p></td>
-<td align="left"><p>title</p></td>
-<td align="left"><p>Required. Text to title the Registration page.</p></td>
-<td align="left"><p>String of up to 25 characters.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p></p></td>
-<td align="left"><p>subtitle</p></td>
-<td align="left"><p>Required. Text to describe the Registration page.</p></td>
-<td align="left"><p>String of up to 200 characters.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong>textbox1</strong></p></td>
-<td align="left"><p></p></td>
-<td align="left"><p></p></td>
-<td align="left"><p></p></td>
-</tr>
-<tr class="even">
-<td align="left"><p></p></td>
-<td align="left"><p>label</p></td>
-<td align="left"><p>Text to label textbox1. Required for textbox1 to appear.</p></td>
-<td align="left"><p>String of up to 20 characters.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p></p></td>
-<td align="left"><p>inputscope</p></td>
-<td align="left"><p>Value to set scope of touch keyboard.</p></td>
-<td align="left"><p>Two supported scopes:</p>
-<p>4 (IS_EMAIL_USERNAME)</p>
-<p>29 (IS_NUMBERS)</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>textbox2</strong></p></td>
-<td align="left"><p></p></td>
-<td align="left"><p></p></td>
-<td align="left"><p></p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p></p></td>
-<td align="left"><p>label</p></td>
-<td align="left"><p>Text to label textbox2. Required for textbox2 to appear.</p>
-<p></p></td>
-<td align="left"><p>String of up to 20 characters.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p></p></td>
-<td align="left"><p>inputscope</p></td>
-<td align="left"><p>Value to set scope of touch keyboard.</p></td>
-<td align="left"><p>Two supported scopes:</p>
-<p>4 (IS_EMAIL_USERNAME)</p>
-<p>29 (IS_NUMBERS)</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong>checkbox1</strong></p></td>
-<td align="left"><p></p></td>
-<td align="left"><p></p></td>
-<td align="left"><p></p></td>
-</tr>
-<tr class="even">
-<td align="left"><p></p></td>
-<td align="left"><p>label</p></td>
-<td align="left"><p>Text to label checkbox1. Required for checkbox1 to appear.</p></td>
-<td align="left"><p>String of up to 250 characters. We strongly recommend that you use no more than 100 characters because this length of text will fit on one line.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p></p></td>
-<td align="left"><p>defaultvalue</p></td>
-<td align="left"><p>Value to set checkbox1 as selected or not selected.</p></td>
-<td align="left"><p>True or False. True means the check box default condition is selected. False means the check box default condition is not selected.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>checkbox2</strong></p>
-<p></p></td>
-<td align="left"><p></p></td>
-<td align="left"><p></p></td>
-<td align="left"><p></p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p></p></td>
-<td align="left"><p>label</p></td>
-<td align="left"><p>Text to label checkbox2. Required for checkbox2 to appear</p></td>
-<td align="left"><p>String of up to 250 characters. We strongly recommend that you use no more than 100 characters because this length of text will fit on one line.</p>
-<p></p></td>
-</tr>
-<tr class="even">
-<td align="left"><p></p></td>
-<td align="left"><p>defaultvalue</p></td>
-<td align="left"><p>Value to set checkbox2 as selected or not selected.</p></td>
-<td align="left"><p>True or False. True means the check box default condition is selected. False means the check box default condition is not selected.</p>
-<p></p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong>checkbox3</strong></p></td>
-<td align="left"><p></p></td>
-<td align="left"><p></p></td>
-<td align="left"><p></p></td>
-</tr>
-<tr class="even">
-<td align="left"><p></p></td>
-<td align="left"><p>label</p></td>
-<td align="left"><p>Text to label checkbox3. Required for checkbox3 to appear</p></td>
-<td align="left"><p>String of up to 250 characters. We strongly recommend that you use no more than 100 characters because this length of text will fit on one line.</p>
-<p></p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p></p></td>
-<td align="left"><p>defaultvalue</p></td>
-<td align="left"><p>Value to set checkbox3 as selected or not selected.</p></td>
-<td align="left"><p>True or False. True means the check box default condition is selected. False means the check box default condition is not selected.</p>
-<p></p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>link1</strong></p></td>
-<td align="left"><p></p></td>
-<td align="left"><p></p></td>
-<td align="left"><p></p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p></p></td>
-<td align="left"><p>label</p></td>
-<td align="left"><p>Label for the link to the <strong>.rtf</strong> file. Required for link1 to appear.</p></td>
-<td align="left"><p>String of up to 100 characters.</p>
-<p></p></td>
-</tr>
-<tr class="even">
-<td align="left"><p></p></td>
-<td align="left"><p>link</p></td>
-<td align="left"><p>File must be named linkfile1.rtf. OOBE searches for files named linkfile1.rtf, linkfile2.rtf, or linkfile3.rtf under the oobe\info folder. OOBE searches for files under the appropriate locale and language specific subfolders of oobe\info.</p></td>
-<td align="left"><p>linkfile1.rtf</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong>link2</strong></p></td>
-<td align="left"><p></p></td>
-<td align="left"><p></p></td>
-<td align="left"><p></p></td>
-</tr>
-<tr class="even">
-<td align="left"><p></p></td>
-<td align="left"><p>label</p></td>
-<td align="left"><p>Label for the link to the <strong>.rtf</strong> file. Required for link2 to appear.</p></td>
-<td align="left"><p>String of up to 100 characters.</p>
-<p></p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p></p></td>
-<td align="left"><p>link</p></td>
-<td align="left"><p>File must be named linkfile2.rtf. OOBE searches for files named linkfile1.rtf, linkfile2.rtf, or linkfile3.rtf under the oobe\info folder. OOBE searches for files under the appropriate locale and language specific sub-folders of oobe\info.</p></td>
-<td align="left"><p>linkfile2.rtf</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>link3</strong></p></td>
-<td align="left"><p></p></td>
-<td align="left"><p></p></td>
-<td align="left"><p></p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p></p></td>
-<td align="left"><p>label</p></td>
-<td align="left"><p>Label for the link to the <strong>.rtf</strong> file. Required for link3 to appear.</p></td>
-<td align="left"><p>String of up to 100 characters.</p>
-<p></p></td>
-</tr>
-<tr class="even">
-<td align="left"><p></p></td>
-<td align="left"><p>link</p></td>
-<td align="left"><p>File must be named linkfile3.rtf. OOBE searches for files named linkfile1.rtf, linkfile2.rtf, or linkfile3.rtf under the oobe\info folder. OOBE searches for files under the appropriate locale and language specific sub-folders of oobe\info.</p></td>
-<td align="left"><p>linkfile3.rtf</p></td>
-</tr>
-</tbody>
-</table>
-
- 
-
-**EULA file and language, locale, and timezone default values.**
-
-<table>
-<colgroup>
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Section</th>
-<th align="left">Setting</th>
-<th align="left">Description</th>
-<th align="left">Value</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p></p></td>
-<td align="left"><p>eulafilename</p></td>
-<td align="left"><p>Language- and location-specific version of manufacturer end-user license agreement (EULA).</p></td>
-<td align="left"><p>.rtf file.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>defaults</p></td>
-<td align="left"><p></p></td>
-<td align="left"><p></p></td>
-<td align="left"><p></p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p></p></td>
-<td align="left"><p>language</p></td>
-<td align="left"><p>Decimal identifier for input locale.</p></td>
-<td align="left"><p>Decimal identifier for input locale. These values can be found in the following topic, [Default Input Locales for Windows Language Packs](default-input-locales-for-windows-language-packs.md).</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p></p></td>
-<td align="left"><p>location</p></td>
-<td align="left"><p>The location is specified by using a GEOID value that is converted to its decimal value.</p></td>
-<td align="left"><p>For a list of GEOIDs, see this [MSDN Web site](http://go.microsoft.com/fwlink/?LinkId=141804).</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p></p></td>
-<td align="left"><p>locale</p></td>
-<td align="left"><p>The locale is specified by using a locale identifier (LCID) value.</p></td>
-<td align="left"><p>For a full list of LCIDs, see this [Microsoft Global Development Web site](http://go.microsoft.com/fwlink/?LinkId=63028). For a list of LCIDs and the versions of Windows in which they are available, download [&quot;Windows Language Code Identifier (LCID) Reference&quot;](http://go.microsoft.com/fwlink/?LinkId=140989) from MSDN. In this paper, in the left pane, go to &quot;Appendix A: Windows Behavior&quot; to see a table that shows the LCID and the Windows release in which it is available.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p></p></td>
-<td align="left"><p>keyboard</p></td>
-<td align="left"><p>Specifies the keyboard layout.</p></td>
-<td align="left"><p>Use the keyboard value that is listed in the registry under <strong>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Keyboard Layouts</strong>.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p></p></td>
-<td align="left"><p>timezone</p></td>
-<td align="left"><p>Specifies the time zone of the computer's end user. The time zone is set by a string that specifies the time zone for the computer. The maximum length is 256 characters. New time zones might appear in future releases. To add support for a new time zone, you must enter the exact time zone string.</p></td>
-<td align="left"><p>For a full list of time zones, refer to the values listed in the registry under <strong>HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Time Zones</strong> on a computer running Windows® 7. On a computer running Windows 7 you can use the tzutil command-line tool to list the time zone for that computer. The tzutil tool is installed by default on Windows Server 2008 R2.</p>
-<div class="alert">
-<strong>Warning</strong>  
-<p>If the time zone is not specified, a default time zone value is used. The default time zone is based on the installed language and region specified in an answer file. If a region has more than one time zone, the time zone is set to the default time zone of that region. The default time zone for that region is specified by the location of the capital/major city. For example, if en-CA is specified, <strong>Eastern Standard Time</strong> is used as the default time zone because the Canadian capital, Ottawa, uses Eastern Standard Time. If en-US is specified as the <code>UserLocale</code>, the time zone of the Windows installation defaults to Pacific Standard Time.</p>
-</div>
-<div>
- 
-</div></td>
-</tr>
-<tr class="even">
-<td align="left"><p></p></td>
-<td align="left"><p>adjustForDST</p></td>
-<td align="left"><p>Specifies whether to adjust for Daylight Savings Time. This setting is effective only when used in combination with the <code>timezone</code> and <code>hideTimeAndDate</code> settings to specify the time settings for the end user.</p></td>
-<td align="left"><p>True or False.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p></p></td>
-<td align="left"><p>hideRegionalSettings</p></td>
-<td align="left"><p>If this setting is not specified as <strong>True</strong>, then the Regional Settings page will be shown, even if all of the values for that page have been preconfigured.</p></td>
-<td align="left"><p>True or False.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p></p></td>
-<td align="left"><p>hideTimeAndDate</p></td>
-<td align="left"><p>If this setting is not specified as <strong>True</strong>, then the Time and Date page will be shown, even if all of the values for that page have been preconfigured.</p></td>
-<td align="left"><p>True or False.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
 
 ## <span id="How_to_Customize_OOBE"></span><span id="how_to_customize_oobe"></span><span id="HOW_TO_CUSTOMIZE_OOBE"></span>How to Customize OOBE
 

@@ -4,6 +4,11 @@ Description: 'Bare metal reset/recovery: create recovery media while deploying n
 ms.assetid: 2244bddf-8f49-41db-949a-2fbe9e224003
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Bare metal reset/recovery: create recovery media while deploying new devices'
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # Bare metal reset/recovery: create recovery media while deploying new devices

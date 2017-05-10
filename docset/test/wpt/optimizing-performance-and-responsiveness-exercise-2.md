@@ -8,6 +8,11 @@ ms.assetid: 85DE99FB-3E14-4A41-BE0A-8EEEBBFD5949
 ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
+ms.author: windows-hardware-design-content
+ms.date: 05/05/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # Exercise 2 - Evaluate Fast Startup Using Windows Performance Toolkit

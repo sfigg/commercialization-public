@@ -8,6 +8,11 @@ ms.assetid: 66c0e00c-12fe-4f2d-9be4-0b4a81634602
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # microsoft-windows-international-core-winpe--

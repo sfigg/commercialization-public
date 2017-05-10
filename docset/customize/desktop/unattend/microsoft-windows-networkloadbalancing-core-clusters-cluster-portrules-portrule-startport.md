@@ -8,6 +8,11 @@ ms.assetid: edcc2219-df6b-4814-ab51-3fe8e2ba958c
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # StartPort

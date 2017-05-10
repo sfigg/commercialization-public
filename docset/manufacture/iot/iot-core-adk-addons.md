@@ -4,6 +4,11 @@ Description: 'The Windows 10 IoT Core ADK Add-Ons include tools to help you cus
 ms.assetid: 26cfbad0-9528-4f89-a174-f198ece325d4
 MSHAttr: 'PreferredLib:/library'
 title: 'Windows ADK IoT Core Add-ons: contents'
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # Windows ADK IoT Core Add-ons: contents
@@ -14,7 +19,7 @@ The [IoT Core manufacturing guide](iot-core-manufacturing-guide.md) walks you th
 
 ## <span id="Root_folder"></span>Root folder
 
--   **IoTCoreShell**: Launches the [IoT Core Shell command-line](iot-core-adk-addons-command-line-options.md#iotcoreshell.cmd).
+-   **IoTCoreShell**: Launches the [IoT Core Shell command-line](iot-core-adk-addons-command-line-options.md#iotcoreshell).
 
 -   **README.md**: Version info, links to documentation
 

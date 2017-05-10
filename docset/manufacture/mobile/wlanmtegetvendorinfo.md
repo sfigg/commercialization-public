@@ -4,6 +4,11 @@ Description: WlanMTEGetVendorInfo
 ms.assetid: a36c1d73-252b-453e-a231-b26087d2e740
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: WlanMTEGetVendorInfo
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # WlanMTEGetVendorInfo

@@ -8,6 +8,11 @@ ms.assetid: C8119551-0C6B-48D8-88AF-B4D3C835008E
 ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
+ms.author: windows-hardware-design-content
+ms.date: 05/05/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # Windows Performance Analyzer common scenarios

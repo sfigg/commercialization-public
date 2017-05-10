@@ -8,6 +8,11 @@ ms.assetid: 2EE76045-2A73-4105-B90A-C73A9CF598FF
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # Group

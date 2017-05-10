@@ -8,6 +8,11 @@ ms.assetid: d19af880-aa9e-4737-9fbb-36421e879758
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # Find a Component, Setting, or Package in Windows SIM

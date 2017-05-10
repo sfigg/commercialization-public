@@ -8,6 +8,11 @@ ms.assetid: A1548D9A-6865-46FF-86B3-2874F559C893
 ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
+ms.author: windows-hardware-design-content
+ms.date: 05/05/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # Exercise 2 - Track User Mode Process Allocations

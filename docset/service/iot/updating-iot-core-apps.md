@@ -4,6 +4,11 @@ Description: 'OEM and enterprise customers can utilize a set of scripts and tool
 ms.assetid: 010c4836-a8ad-4ab9-b5a8-45babcc8a3f3
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Update apps on your IoT Core devices
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # Update apps on your IoT Core devices

@@ -4,6 +4,11 @@ Description: Access the touch interface in MMOS
 ms.assetid: 4455627d-ba59-48f1-9327-c9e2c30509da
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Access the touch interface in MMOS
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # Access the touch interface in MMOS

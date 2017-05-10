@@ -8,6 +8,11 @@ ms.assetid: 649ef6a0-019e-4e98-bb2d-e737537d84cc
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # Configure Components and Settings in an Answer File

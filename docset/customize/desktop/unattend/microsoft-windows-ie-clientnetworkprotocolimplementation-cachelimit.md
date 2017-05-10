@@ -8,6 +8,11 @@ ms.assetid: 715cebfd-5a1e-40ac-81e0-2c05e4d0fd56
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # CacheLimit

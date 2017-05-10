@@ -8,6 +8,11 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4DB2F090-A0AD-4167-8805-85930FEF926F
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # Modern standby wake sources
@@ -163,7 +168,7 @@ The Wi-Fi and mobile broadband (MBB) devices are responsible for delivering the 
 <tr class="odd">
 <td><p>Wi-Fi radio</p></td>
 <td><p>GPIO interrupt</p></td>
-<td><p>GPIO interrupt</p></td>
+<td><p>Typically, GPIO interrupt (see note following this table).</p></td>
 <td><p>No</p>
 <p>(See Note following this table.)</p></td>
 <td><p>The Wi-Fi wake-up source is not required for Disconnected Standby systems.</p></td>
@@ -171,14 +176,14 @@ The Wi-Fi and mobile broadband (MBB) devices are responsible for delivering the 
 <tr class="even">
 <td><p>Mobile broadband (MBB) radio</p></td>
 <td><p>USB in-band resume signaling</p></td>
-<td><p>GPIO interrupt</p></td>
+<td><p>Typically, GPIO interrupt (see note following this table).</p></td>
 <td><p>No</p>
 <p>(See Note following this table.)</p></td>
 <td><p></p></td>
 </tr>
 <tr class="odd">
 <td><p>Bluetooth radio</p></td>
-<td><p>GPIO interrupt</p></td>
+<td><p>Typically, GPIO interrupt (see note following this table).</p></td>
 <td><p>N/A</p></td>
 <td><p>No</p></td>
 <td><p>Windows and its drivers are responsible for detecting the type of associated Bluetooth device. If a keyboard, mouse, or other user-input device is responsible for causing the Bluetooth radio to wake the SoC, the display will turn on. Other Bluetooth devices such as portable audio headphones will not cause the display to turn on.</p></td>

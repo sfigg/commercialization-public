@@ -4,6 +4,11 @@ Description: 'WinPE: Debug Apps'
 ms.assetid: 30fe59bc-f169-4534-b5a5-dbe58a10cb83
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'WinPE: Debug Apps'
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # WinPE: Debug Apps
@@ -68,7 +73,6 @@ To debug in kernel-mode, you must enable kernel-mode debugging before the system
 The default debugger settings are as follows:
 
 ``` syntax
------------------ 
 identifier              {dbgsettings} 
 debugtype               Serial 
 debugport               1 

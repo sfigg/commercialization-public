@@ -8,6 +8,11 @@ ms.assetid: 9fc40cc0-1858-4526-9cbb-f580eb080d86
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # DriverPaths

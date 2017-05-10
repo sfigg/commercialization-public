@@ -5,6 +5,11 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 36FBBC32-AD6A-41F1-86BF-B384891AA693
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # SurfaceHub CSP
@@ -28,7 +33,8 @@ The following diagram shows the SurfaceHub CSP management objects in tree format
 3.  Execute ValidateAndCommit to validate the specified username and password combination against Azure AD.
 4.  Get the ErrorContext in case something goes wrong during validation.
 
-> [!NOTE]  If the device cannot auto-discover the Exchange server and Session Initiation Protocol (SIP) address from this information, you should specify the ExchangeServer and SipAddress.
+> [!NOTE]
+> If the device cannot auto-discover the Exchange server and Session Initiation Protocol (SIP) address from this information, you should specify the ExchangeServer and SipAddress.
 
  
 <p style="margin-left: 20px">Here's a SyncML example.

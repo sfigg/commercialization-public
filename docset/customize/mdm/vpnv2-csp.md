@@ -5,6 +5,11 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 51ADA62E-1EE5-4F15-B2AD-52867F5B2AD2
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # VPNv2 CSP
@@ -247,7 +252,7 @@ Supported operations include Get, Add, Replace, and Delete.
 <a href="" id="vpnv2-profilename-alwayson"></a>**VPNv2/***ProfileName***/AlwaysOn**  
 An optional flag to enable Always On mode. This will automatically connect the VPN at sign-in and will stay connected until the user manually disconnects.
 
-> **Note**  Always On only works for the active profile. Always On cannot be set with force tunnel. The first profile provisioned that can be auto triggered will automatically be set as active.
+> **Note**  Always On only works for the active profile. The first profile provisioned that can be auto triggered will automatically be set as active.
 
  
 

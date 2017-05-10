@@ -8,6 +8,11 @@ ms.assetid: 4ce7091b-4e6a-40c3-aeff-1c9434310f44
 ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
+ms.author: windows-hardware-design-content
+ms.date: 05/05/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # CustomEvent
