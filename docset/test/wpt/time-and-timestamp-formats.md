@@ -8,6 +8,11 @@ ms.assetid: 4ef3a58b-da6e-46cb-9655-9c81abce7b71
 ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
+ms.author: windows-hardware-design-content
+ms.date: 05/05/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # Time and Timestamp Formats

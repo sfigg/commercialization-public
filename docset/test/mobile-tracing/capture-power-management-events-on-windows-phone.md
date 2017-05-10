@@ -5,6 +5,11 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 23f40b02-33ec-4a67-8a1c-f036e720c5bf
+ms.author: windows-hardware-design-content
+ms.date: 05/05/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # Capture power management events on Windows 10 Mobile

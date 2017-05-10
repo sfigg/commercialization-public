@@ -4,6 +4,11 @@ Description: Create a WIM for Multiple Architecture Types Using DISM
 ms.assetid: fcb1b461-72c1-40c5-8405-38a5db05dd34
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Create a WIM for Multiple Architecture Types Using DISM
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # Create a WIM for Multiple Architecture Types Using DISM

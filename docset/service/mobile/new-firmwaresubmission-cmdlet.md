@@ -4,6 +4,11 @@ Description: 'New-FirmwareSubmission cmdlet'
 ms.assetid: f2a9e48c-a046-466b-8cfb-661e3bae88a8
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'New-FirmwareSubmission cmdlet'
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # New-FirmwareSubmission cmdlet

@@ -8,6 +8,11 @@ ms.assetid: 2926f382-2191-4bdd-8cd1-e01493e6daa1
 ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
+ms.author: windows-hardware-design-content
+ms.date: 05/05/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # CPU Analysis

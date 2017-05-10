@@ -4,6 +4,11 @@ Description: Install Windows 10 using a previous version of Windows PE
 ms.assetid: 8abda3c5-0689-4a61-ae3e-7fa51c7e2028
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Install Windows 10 using a previous version of Windows PE
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # Install Windows 10 using a previous version of Windows PE

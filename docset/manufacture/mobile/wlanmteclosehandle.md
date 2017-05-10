@@ -4,6 +4,11 @@ Description: WlanMTECloseHandle
 ms.assetid: f0a6a70b-bef8-43f0-adb0-f7fa2f503619
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: WlanMTECloseHandle
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # WlanMTECloseHandle

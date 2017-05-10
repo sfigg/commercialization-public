@@ -4,6 +4,11 @@ Description: 'DPI-related APIs and registry settings'
 ms.assetid: 23b0e272-a09e-4081-a129-d330b6878d8e
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'DPI-related APIs and registry settings'
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # DPI-related APIs and registry settings

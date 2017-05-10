@@ -8,6 +8,11 @@ ms.assetid: 282d79d5-7acd-442a-8528-f5894dfde2dc
 ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
+ms.author: windows-hardware-design-content
+ms.date: 05/05/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # Cancel

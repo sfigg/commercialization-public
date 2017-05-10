@@ -4,6 +4,11 @@ Description: Device Drivers
 ms.assetid: daa94074-a23d-4788-8e32-0e27c0a62d88
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Device Drivers
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # Device Drivers

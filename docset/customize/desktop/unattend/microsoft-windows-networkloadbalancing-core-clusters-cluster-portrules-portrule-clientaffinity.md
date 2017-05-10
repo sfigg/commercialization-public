@@ -8,6 +8,11 @@ ms.assetid: ed40ad07-a5a8-435f-b4e8-eeafcc67d1ba
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # ClientAffinity

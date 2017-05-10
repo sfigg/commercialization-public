@@ -5,13 +5,19 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 3BAE4827-5497-41EE-B47F-5C071ADB2C51
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # PassportForWork CSP
 
 The PassportForWork configuration service provider is used to provision Windows Hello for Business (formerly Microsoft Passport for Work). It allows you to login to Windows using your Active Directory or Azure Active Directory account and replace passwords, smartcards, and virtual smart cards.
 
-> [!IMPORTANT]  Starting with Windows 10, version 1607 all devices only have one PIN associated with Windows Hello for Business. This means that any PIN on a device will be subject to the policies specified in the PassportForWork CSP. The values specified take precedence over any complexity rules set via Exchange ActiveSync (EAS) or the DeviceLock CSP.
+> [!IMPORTANT]
+> Starting with Windows 10, version 1607 all devices only have one PIN associated with Windows Hello for Business. This means that any PIN on a device will be subject to the policies specified in the PassportForWork CSP. The values specified take precedence over any complexity rules set via Exchange ActiveSync (EAS) or the DeviceLock CSP.
  
 ### User configuration diagram
 
@@ -87,7 +93,8 @@ This cloud service encrypts a recovery secret, which is stored locally on the cl
 
 <p style="margin-left: 20px">If you configure this policy setting, the PIN length must be greater than or equal to this number. If you disable or do not configure this policy setting, the PIN length must be greater than or equal to 4.
 
-> [!NOTE]  If the conditions specified above for the minimum PIN length are not met, default values will be used for both the maximum and minimum PIN lengths.
+> [!NOTE]
+> If the conditions specified above for the minimum PIN length are not met, default values will be used for both the maximum and minimum PIN lengths.
 
  
 <p style="margin-left: 20px">Value type is int. Supported operations are Add, Get, Delete, and Replace.
@@ -97,7 +104,8 @@ This cloud service encrypts a recovery secret, which is stored locally on the cl
 
 <p style="margin-left: 20px">If you configure this policy setting, the PIN length must be less than or equal to this number. If you disable or do not configure this policy setting, the PIN length must be less than or equal to 127.
 
-> [!NOTE]  If the conditions specified above for the maximum PIN length are not met, default values will be used for both the maximum and minimum PIN lengths.
+> [!NOTE]
+> If the conditions specified above for the maximum PIN length are not met, default values will be used for both the maximum and minimum PIN lengths.
 
  
 <p style="margin-left: 20px">Supported operations are Add, Get, Delete, and Replace.

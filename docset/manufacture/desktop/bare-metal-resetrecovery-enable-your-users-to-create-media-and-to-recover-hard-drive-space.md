@@ -4,6 +4,11 @@ Description: 'Bare metal reset/recovery: enable your users to create recovery me
 ms.assetid: 2f12f7aa-2259-453a-a433-4fa56b03b375
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Bare metal reset/recovery: enable your users to create recovery media'
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # Bare metal reset/recovery: enable your users to create recovery media

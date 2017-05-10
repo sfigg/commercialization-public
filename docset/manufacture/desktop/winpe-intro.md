@@ -4,6 +4,11 @@ Description: 'Windows PE (WinPE)'
 ms.assetid: f20056af-adab-4d7a-83a0-f44c5a91e0d2
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Windows PE (WinPE)'
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # Windows PE (WinPE)

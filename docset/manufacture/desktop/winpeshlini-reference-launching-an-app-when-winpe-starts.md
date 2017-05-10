@@ -4,6 +4,11 @@ Description: 'Winpeshl.ini Reference: Launching an app when WinPE starts'
 ms.assetid: 107a3c05-791a-4daf-b188-b28dac96ef74
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Winpeshl.ini Reference: Launching an app when WinPE starts'
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # Winpeshl.ini Reference: Launching an app when WinPE starts

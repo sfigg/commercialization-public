@@ -8,6 +8,11 @@ ms.assetid: d641530d-2be1-4266-962b-97863cff2e57
 ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
+ms.author: windows-hardware-design-content
+ms.date: 05/05/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # CreateMergedTraceFile

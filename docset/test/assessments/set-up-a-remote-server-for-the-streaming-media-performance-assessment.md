@@ -8,6 +8,11 @@ ms.assetid: 7cc47476-f2c3-4f82-8430-731fc035266a
 ms.prod: W10
 ms.mktglfcycl: plan
 ms.sitesec: msdn
+ms.author: windows-hardware-design-content
+ms.date: 05/05/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # Streaming media assessment: set up a remote server

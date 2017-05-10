@@ -8,6 +8,11 @@ ms.assetid: 0aeb9e67-3ee1-445d-a8f7-3ef6eb7675e0
 ms.prod: W10
 ms.mktglfcycl: plan
 ms.sitesec: msdn
+ms.author: windows-hardware-design-content
+ms.date: 05/05/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # Windows Assessment Toolkit
