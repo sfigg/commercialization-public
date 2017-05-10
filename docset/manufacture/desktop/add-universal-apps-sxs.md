@@ -52,7 +52,7 @@ Note, in previous versions, it was required to first remove inbox apps. This is 
 
 NOTE: For Windows 10 version 1607, app bundles now only contain the dependency packages that pertain to the app. You no longer need to check the prov.xml file for what dependencies to install. Install all dependency packages found in the folder.
 
-1.  Go to <https://microsoftoem.com> and get the supplemental OPK. This package includes the Windows 10, version 1607 inbox apps. 
+1.  Go to <https://microsoftoem.com> and get the supplemental OPK. This package includes the Windows 10, version 1703 inbox apps. 
 
 2.  Extract the package to a folder, for example, E:\apps\amd64.
 
