@@ -61,9 +61,9 @@ This lab assumes the 64-bit architecture, so if you’re using the 32-bit versio
 
 -   Copy the D:\\sources\\install.wim file, and save it to the local drive, in the folder: **C:\\Images\\Win10\_x64\\**.
 
-### Windows Assessment and Deployment Kit (ADK) for Windows 10, version 1607
+### Windows Assessment and Deployment Kit (ADK) for Windows 10, version 1703
 
-[Windows ADK for Windows 10, version 1703](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit#winADK).
+[Windows ADK for Windows 10, version 1703](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit#winADK) or X21-34325: Win 10 1703 32/64 OPK ADK.
 
 ### Customizations: Windows updates, languages, features, apps, and Microsoft Office
 
