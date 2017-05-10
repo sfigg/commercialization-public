@@ -14,11 +14,11 @@ ms.technology: windows-oem
 
 You can use scripts to take a Windows image and deploy Windows onto new PCs quickly. You can modify these scripts to change the size of the drive partitions, or to completely automate deployment. 
 
-## <span id="Get_the_image></span>Step 1: Mount the image
+## <span id="Get_the_image"></span>Step 1: Mount the image
 
-1.  On your technician PC, right-click the image file for Windows 10, version 1607 Home (X21-08790 Win Home 10 1607 32 64 English OPK\Software - DVD\X21-05999 SW DVD5 NTRL Win 10 1607 64Bit English Home Pro\X21-05999.img), and select **Mount**. This loads the files to a temporary drive letter (example, D:).
+1.  On your technician PC, right-click the .img file for Windows 10, version 1703 Home from the X21-08790 DVD, and select **Mount**. This loads the files to a temporary drive letter (example, D:).
 
-2.  Extract the Home edition. The X21-08790 image includes both  Professional and Home editions. (Index 1=Professional, Index 2=Home). We recommend starting with the Home edition, because you can upgrade your images later from Home to Professional using DISM commands, but you can't downgrade. 
+2.  Extract the Home edition. The X21-34314 image includes both  Professional and Home editions. (Index 1=Professional, Index 2=Home). We recommend starting with the Home edition, because you can upgrade your images later from Home to Professional using DISM commands, but you can't downgrade. 
 
     ``` syntax
     Dism /Get-ImageInfo /ImageFile:"D:\sources\install.wim"
@@ -115,3 +115,4 @@ The PC should reboot into Windows. While you’re waiting for the preparation ph
 
 **Next Steps**
 [Lab 3: Add device drivers (.inf-style)](add-device-drivers.md) (includes basics on mounting images)
+

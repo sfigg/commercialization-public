@@ -23,7 +23,7 @@ For many customizations, like adding .inf-style drivers, Windows updates or upgr
 
 -  **For major updates, update the recovery image too**: These may include hotfixes, general distribution releases, service packs, or other pre-release updates. We'll show you how to update these later in [Lab 12: Update the recovery image](update-the-recovery-image.md).
 
--  **Servicing Stack Update (SSU):[KB3199209](http://www.catalog.update.microsoft.com/Search.aspx?q=KB3199209) is required** before applying the most recent General Distribution Release (GDR, currently KB3200970) or any future GDRs.
+-  **If a Servicing Stack Update (SSU) is available, you must install it** before applying the most recent General Distribution Release (GDR, currently KB4016871) or any future GDRs.
 
 ![image: copying image files and deployment scripts](images/dep-win8-sxs-createmodelspecificfiles.jpg)
 
@@ -61,7 +61,7 @@ Use this procedure to upgrade the edition. You cannot set a Windows image to a l
 	
 **Step 3: Add a Windows update package**
 
-1.  Get a Windows update package. For example, grab the latest cumulative update listed in [Windows 10 update history](https://support.microsoft.com/en-us/help/12387/windows-10-update-history) from the [Microsoft Update catalog](http://www.catalog.update.microsoft.com). Extract the .msu file update to a folder, for example, C:\\WindowsUpdates\\windows10.0-kb3194798-x64_8bc6befc7b3c51f94ae70b8d1d9a249bb4b5e108.msu.
+1.  Get a Windows update package. For example, grab the latest cumulative update listed in [Windows 10 update history](https://support.microsoft.com/en-us/help/12387/windows-10-update-history) from the [Microsoft Update catalog](http://www.catalog.update.microsoft.com). Extract the .msu file update to a folder, for example, C:\\WindowsUpdates\\windows10.0-kb4016871-x64_27dfce9dbd92670711822de2f5f5ce0151551b7d.msu.
 
     To learn more, see [https://myoem.microsoft.com/oem/myoem/en/product/winemb/pages/comm-ms-updt-ctlg-trnstn.aspx](https://myoem.microsoft.com/oem/myoem/en/product/winemb/pages/comm-ms-updt-ctlg-trnstn.aspx).    
 
@@ -70,7 +70,7 @@ Use this procedure to upgrade the edition. You cannot set a Windows image to a l
     Example: adding a cumulative update:
 
     ``` syntax
-    Dism /Add-Package /Image:"C:\mount\windows" /PackagePath="C:\WindowsUpdates\windows10.0-kb3194798-x64_8bc6befc7b3c51f94ae70b8d1d9a249bb4b5e108.msu"  /LogPath=C:\mount\dism.log
+    Dism /Add-Package /Image:"C:\mount\windows" /PackagePath="windows10.0-kb4016871-x64_27dfce9dbd92670711822de2f5f5ce0151551b7d.msu"  /LogPath=C:\mount\dism.log
     ```
 
     Example: adding multiple updates:
@@ -139,10 +139,10 @@ Use the steps from [Lab 2: Deploy Windows using a script](deploy-windows-with-a-
     Review the resulting list of packages and verify that the list contains the package. For example:
 
     ``` syntax
-    Package Identity : Package_for_RollupFix~31bf3856ad364e35~amd64~~14393.321.1.5
+    Package Identity : Package_for_RollupFix~31bf3856ad364e35~amd64~~15063.250.1.1
     State : Installed
     Release Type : Security Update
-    Install Time : 10/13/2016 6:26 PM
+    Install Time : 04/29/2017 6:26 PM
 
     The operation completed successfully.
     ```
