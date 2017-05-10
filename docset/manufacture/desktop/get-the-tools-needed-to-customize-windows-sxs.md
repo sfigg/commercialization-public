@@ -71,7 +71,7 @@ This lab assumes the 64-bit architecture, so if you’re using the 32-bit versio
 | ----------- | --------------------------------------------------- |
 | X21-34323   | Win 10 1703 32/64 MultiLang OPK LangPackAll/LIP     |
 | X21-34324   | Win 10 1703 32/64 MultiLang OPK Feat on Demand      |
-| X21-34329   | Win 10 1607 32/64 MultiLang OPK App Update          |
+| X21-34329   | Win 10 1703 32/64 MultiLang OPK App Update          |
 | X20-98485   | Office Mobile MultiLang v1.3 OPK                    |
 | X21-05453   | Office 2016 v16.2 Deployment Tool for OEM OPK       |
 | X21-05414   | Office 2016 v16.2 English OPK                       |                           |
