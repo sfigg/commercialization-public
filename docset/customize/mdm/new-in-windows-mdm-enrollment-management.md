@@ -855,6 +855,13 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <td style="vertical-align:top">[Deploy and configure App-V apps using MDM](appv-deploy-and-config.md)</td>
 <td style="vertical-align:top"><p>Added a new topic describing how to deploy and configure App-V apps using MDM.</p>
 </td></tr>
+<tr class="even">
+<td style="vertical-align:top">[EnterpriseDesktopAppManagement CSP](enterprisedesktopappmanagement-csp.md)</td>
+<td style="vertical-align:top"><p>Added new setting in the March service release of Windows 10, version 1607.</p>
+<ul>
+<li>MSI/UpgradeCode/[Guid]</li>
+</ul>
+</td></tr>
 </tbody>
 </table> 
 
@@ -1278,6 +1285,13 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <td style="vertical-align:top"><p>Added new setting in Windows 10, version 1703.</p>
 <ul>
 <li>doWipeProtected</li>
+</ul>
+</td></tr>
+<tr class="even">
+<td style="vertical-align:top">[EnterpriseDesktopAppManagement CSP](enterprisedesktopappmanagement-csp.md)</td>
+<td style="vertical-align:top"><p>Added new setting in the March service release of Windows 10, version 1607.</p>
+<ul>
+<li>MSI/UpgradeCode/[Guid]</li>
 </ul>
 </td></tr>
 <tr class="even">
