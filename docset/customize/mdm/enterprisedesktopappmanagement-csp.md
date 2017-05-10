@@ -82,7 +82,7 @@ Value type is string. Supported operation is Get.
 Added in the March service release of Windows 10, version 1607.
 
 <a href="" id="msi-upgradecode"></a>**MSI/UpgradeCode/_Guid_**  
-Added in the March service release of Windows 10, version 1607. This is a GUID used for detecting the product MSI when a user is updating an existing MSI app. If they are the same, then the update is allowed.
+Added in the March service release of Windows 10, version 1607. A gateway(or device management server) uses this method to detect matching upgrade MSI product when a Admin wants to update an existing MSI app. If the same upgrade product is installed, then the update is allowed.
 
 Value type is string. Supported operation is Get. 
 
