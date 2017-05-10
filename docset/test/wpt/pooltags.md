@@ -8,6 +8,11 @@ ms.assetid: 819088ce-bfda-4866-a97c-a85b768c5f7a
 ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
+ms.author: windows-hardware-design-content
+ms.date: 05/05/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # PoolTags

@@ -4,6 +4,11 @@ Description: 'Bootsect Command-Line Options'
 ms.assetid: 2021a0b5-955a-4193-a6e2-9864c047d82d
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Bootsect Command-Line Options'
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # Bootsect Command-Line Options

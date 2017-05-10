@@ -8,6 +8,11 @@ ms.assetid: 2503b5ce-6b01-4a49-b3a3-8c4b84419152
 ms.prod: W10
 ms.mktglfcycl: plan
 ms.sitesec: msdn
+ms.author: windows-hardware-design-content
+ms.date: 05/05/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # Results for the Windows Media Player Performance and Quality Assessment

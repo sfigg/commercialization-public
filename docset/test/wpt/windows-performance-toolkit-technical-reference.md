@@ -8,6 +8,11 @@ ms.assetid: f12f69dc-5b82-4a25-b829-a64365fafebc
 ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
+ms.author: windows-hardware-design-content
+ms.date: 05/05/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # Windows Performance Toolkit Technical Reference

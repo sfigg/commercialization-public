@@ -4,6 +4,11 @@ Description: 'These tools are part of the Windows 10 IoT Core (IoT Core) ADK Ad
 ms.assetid: ae043bb0-656e-4439-bdbe-a8d370629ab7
 MSHAttr: 'PreferredLib:/library'
 title: 'IoT Core Add-ons command-line options'
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # IoT Core Add-ons command-line options
@@ -241,6 +246,7 @@ inf2pkg input.inf [CompName.SubCompName]
 inf2pkg C:\test\testdriver.inf
 ```
 
+<a name="iotcoreshell"></a>
 ## IoTCoreShell.cmd
 
 Opens the IoT Core Shell as an administrator. (This file is in the root folder, and uses LaunchTool.cmd)

@@ -8,6 +8,11 @@ ms.assetid: 472bbc0b-4db2-4eb1-af51-4a6c43c321e4
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # PersistSuspendedState

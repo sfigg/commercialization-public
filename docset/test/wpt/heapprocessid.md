@@ -8,6 +8,11 @@ ms.assetid: b0d95f7c-af59-4452-9a60-3ab1e06b072a
 ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
+ms.author: windows-hardware-design-content
+ms.date: 05/05/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # HeapProcessId

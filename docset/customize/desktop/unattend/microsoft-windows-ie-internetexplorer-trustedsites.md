@@ -8,6 +8,11 @@ ms.assetid: 8c995bab-19c2-42e6-a142-a9921a6fe467
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # TrustedSites

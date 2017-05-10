@@ -8,6 +8,11 @@ ms.assetid: f5506054-3372-45b7-b1e9-7ccab0147157
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # FirstLogonCommands

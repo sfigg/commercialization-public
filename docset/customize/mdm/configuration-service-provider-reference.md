@@ -5,6 +5,11 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 71823658-951f-4163-9c40-c4d4adceaaec
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # Configuration service provider reference
@@ -676,7 +681,7 @@ The following table show the configuration service providers supported in Window
 <td></td>
 <td><img src="images/checkmark.png" alt="check mark" /></td>
 <td><img src="images/checkmark.png" alt="check mark" /></td>
-<td><img src="images/checkmark.png" alt="check mark" /></td>
+<td><img src="images/crossmark.png" alt="cross mark" /></td>
 <td><img src="images/checkmark.png" alt="check mark" /></td>
 <td><img src="images/checkmark.png" alt="check mark" /></td>
 

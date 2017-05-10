@@ -5,6 +5,11 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4F3A1134-D401-44FC-A583-6EDD3070BA4F
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # Policy CSP
@@ -4961,9 +4966,6 @@ PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjxEZWZhdWx0QXNzb2NpYXRpb25z
 <a href="" id="browser-allowflashclicktorun"></a>**Browser/AllowFlashClickToRun**  
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies whether users must take an action, such as clicking the content or a Click-to-Run button, before seeing content in Adobe Flash.
 
-> [!IMPORTANT]
-> Sites are put on the auto-allowed list based on how frequently employees load and run the content.
-
 <p style="margin-left: 20px">The following list shows the supported values:
 
 -   0 – Adobe Flash content is automatically loaded and run by Microsoft Edge.
@@ -5411,7 +5413,7 @@ Employees cannot remove these search engines, but they can set any one as the de
 <p style="margin-left: 20px">Lists the Cryptographic Cipher Algorithms allowed for SSL connections. Format is a semicolon delimited list. Last write win.
 
 <a href="" id="dataprotection-allowdirectmemoryaccess"></a>**DataProtection/AllowDirectMemoryAccess**  
-<p style="margin-left: 20px">Allows Direct Memory Access.
+<p style="margin-left: 20px">This policy setting allows you to block direct memory access (DMA) for all hot pluggable PCI downstream ports until a user logs into Windows. Once a user logs in, Windows will enumerate the PCI devices connected to the host plug PCI ports. Every time the user locks the machine, DMA will be blocked on hot plug PCI ports with no children devices until the user logs in again. Devices which were already enumerated when the machine was unlocked will continue to function until unplugged. This policy setting is only enforced when BitLocker or device encryption is enabled.
 
 <p style="margin-left: 20px">The following list shows the supported values:
 

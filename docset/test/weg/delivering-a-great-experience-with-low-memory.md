@@ -41,7 +41,8 @@ Endurance varies significantly based on manufacturers (block size selection, typ
 
 ## Recommended goals
 
-> [!IMPORTANT] The following table provides goals for systems running 32-bit Windows. The storage performance guidance is applicable to the boot storage media and tested with the smaller of 2% or 1 GB of free disk space.
+> [!IMPORTANT]
+> The following table provides goals for systems running 32-bit Windows. The storage performance guidance is applicable to the boot storage media and tested with the smaller of 2% or 1 GB of free disk space.
 
 <table>
 <thead>

@@ -4,6 +4,11 @@ Description: UEFI Validation Option ROM Guidance
 ms.assetid: 357f9a94-98dc-4f78-9f4c-25935912edd6
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: UEFI Validation Option ROM Guidance
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # UEFI Validation Option ROM Guidance

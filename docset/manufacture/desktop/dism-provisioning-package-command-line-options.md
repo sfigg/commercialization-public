@@ -4,6 +4,11 @@ Description: 'Use DISM to work with Provisioning Packages (.ppkg) files. For exa
 ms.assetid: 205d296e-fced-429a-9e74-c445743ed7e9
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'DISM Provisioning Package (.ppkg) Command-Line Options'
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # <span id="dism_provisioning_package_command-line_options"></span>DISM Provisioning Package (.ppkg) Command-Line Options

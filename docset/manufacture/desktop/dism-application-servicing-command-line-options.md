@@ -4,6 +4,11 @@ Description: 'DISM Application Servicing (.msp) Command-Line Options'
 ms.assetid: 78ed3303-1e79-4257-ad04-d5f68d34b758
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'DISM Application Servicing (.msp) Command-Line Options'
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # DISM Application Servicing (.msp) Command-Line Options

@@ -8,6 +8,11 @@ ms.assetid: CE1CE800-D2DB-41DD-B98E-650E5D676C28
 ms.prod: W10
 ms.mktglfcycl: plan
 ms.sitesec: msdn
+ms.author: windows-hardware-design-content
+ms.date: 05/05/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # Results for the Out Of Box Experience assessment

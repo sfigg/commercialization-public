@@ -8,6 +8,11 @@ ms.assetid: fbb67511-d26d-40b1-b5b6-a923ca4dc8ad
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # Add a Device Driver Path to an Answer File
