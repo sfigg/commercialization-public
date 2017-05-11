@@ -63,6 +63,13 @@ Value type is string. Use ISO 8601 format.
 
 Supported operations are Get and Replace.
 
+<a href="" id="type"></a>**Type**  
+Added in Windows 10, version 1703. Specifies the type of logs to retrieve. You can use this to retrieve the WIP learning logs.
+
+Value type is integer.
+
+Supported operations are Get and Replace.
+
 <a href="" id="logcount"></a>**LogCount**  
 Specifies the number of logs to retrieve from the StartTime.
 
