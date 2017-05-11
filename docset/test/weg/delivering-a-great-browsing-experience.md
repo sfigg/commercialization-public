@@ -1,33 +1,22 @@
 
 # Delivering a great browsing experience
 
-This section focuses on some of the performance challenges and what you
-can do to deliver a great Internet Explorer web browsing experience for
-your customers.
+This section focuses on some of the performance challenges and what you can do to deliver a great Internet Explorer web browsing experience for your customers.
 
-Because all web browsers in today’s marketplace support similar
-standards, performance quickly becomes a key differentiator for
-customers. Consumers are keenly interested in the performance of all of
-the apps that they use, including browsers.
+Because all web browsers in today’s marketplace support similar standards, performance quickly becomes a key differentiator for customers. Consumers are keenly interested in the performance of all of the apps that they use, including browsers.
 
 ## Considerations
 
-Antimalware apps affect Internet Explorer web browsing performance. Page
-load time, a measurement of how long it takes to launch the browser and
-navigate to a web page, is an important part of the user experience.
-It’s important that you understand and consider what you’re installing
-on your PC, how it affects your customers, and what perception they get
-of your product’s performance.
+Anti-malware apps affect Internet Explorer web browsing performance. Page load time, a measurement of how long it takes to launch the browser and
+navigate to a web page, is an important part of the user experience. It’s important that you understand and consider what you’re installing on your PC, how it affects your customers, and their perception of your product’s performance.
 
-### How antimalware apps affect browsing
+### How anti-malware apps affect browsing
 
-Antimalware software affects browsing speed and fluidity in four major
-categories. Some examples of how antimalware can slow down a browser
-include:
+Anti-malware software affects browsing speed and fluidity in four major categories. Some examples of how anti-malware can slow down a browser include:
 
-<ol style="list-style-type: decimal">
+<ul>
 <li>
-<p>Network and disk interference</p>
+<p>Network and disk interference:</p>
 <ul>
 <li>
 <p>Outbound network traffic delays</p>
@@ -41,7 +30,7 @@ include:
 </ul>
 </li>
 <li>
-<p>JavaScript interference</p>
+<p>JavaScript interference:</p>
 <ul>
 <li>
 <p>Reverting to legacy JavaScript script engine</p>
@@ -55,7 +44,7 @@ include:
 </ul>
 </li>
 <li>
-<p>Visual interference</p>
+<p>Visual interference:</p>
 <ul>
 <li>
 <p>Redundant layout work</p>
@@ -66,7 +55,7 @@ include:
 </ul>
 </li>
 <li>
-<p>General interference</p>
+<p>General interference:</p>
 <ul>
 <li>
 <p>Synchronous server communication</p>
@@ -76,27 +65,17 @@ include:
 </li>
 </ul>
 </li>
-</ol>
+</ul>
 
-### Selecting antimalware apps
+### Selecting anti-malware apps
 
-There are multiple factors to consider when choosing an antimalware
-product to include on your PC. You can use the ADK assessments or other
-test tools to quantify the impact to the overall performance of your PC
-and to battery life.
+There are multiple factors to consider when choosing an anti-malware product to include on your PC. You can use the ADK assessments or other test tools to quantify the impact to the overall performance of your PC and to battery life. Keep in mind that you do not have to sacrifice performance to have a high level of protection. Many top-rated anti-malware products also perform very well.
 
-Keep in mind that you do not have to sacrifice performance to have a
-high level of protection. Many top-rated antimalware products also
-perform very well in our assessment.
-
-![Important](images/note-important.gif)**Important**&nbsp;&nbsp;&nbsp;The ADK assessments do not measure the level of security provided by
-antimalware products. Many third parties produce reports measuring and
-comparing the effectiveness of various antimalware packages.
+> [!IMPORTANT] The ADK assessments do not measure the level of security provided by anti-malware products. Many third parties produce reports measuring and comparing the effectiveness of various anti-malware packages.
 
 ## Recommended goals
 
-To deliver a great Internet Explorer experience, a PC should meet the
-following goals:
+To deliver a great Internet Explorer experience, a PC should meet the following goals:
 
 | **Scenario**                                                        | **Tablet (CS)** | **Convertible** | **Notebook** | **AIO**   |
 |---------------------------------------------------------------------|-----------------|-----------------|--------------|-----------|
@@ -105,44 +84,26 @@ following goals:
 
 ## Validation and testing
 
-You can use the Windows Assessments Toolkit to improve performance of
-your PC beyond minimum requirements. Windows assessments related to
-Internet Explorer include:
+You can use the Windows Assessments Toolkit to improve performance of your PC beyond minimum requirements. Windows assessments related to Internet Explorer include:
 
 <dl>
-<dt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Internet Explorer Startup Performance assessment</strong></dt>
+<dt><strong>Internet Explorer Startup Performance assessment</strong></dt>
 <dd>
-<p>Identifies components that can affect the time it takes to start
-Internet Explorer. The assessment measures the time to fully render a
-blank page, including the load time of the IExplore.exe process and the
-frame-creation and tab-creation intervals. It also measures the effect
-of all extensions, add-ins, and toolbars installed on the system. It
-does not measure any network or browsing performance.</p>
+<p>Identifies components that can affect the time it takes to start Internet Explorer. The assessment measures the time to fully render a blank page, including the load time of the IExplore.exe process and the frame-creation and tab-creation intervals. It also measures the effect of all extensions add-ins, and toolbars installed on the system. It does not measure any network or browsing performance.</p>
 </dd>
-<dt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Internet Explorer Security Software Impact assessment</strong></dt>
+<dt><strong>Internet Explorer Security Software Impact assessment</strong></dt>
 <dd>
-<p>Measures aspects of Internet Explorer that are typically affected by
-antimalware apps and other browser add-ins. The assessment measures the
-impact of security software on the display time, CPU time, and resource
-utilization of Internet Explorer.</p>
+<p>Measures aspects of Internet Explorer that are typically affected by anti-malware apps and other browser add-ins. The assessment measures the impact of security software on the display time, CPU time, and resource utilization of Internet Explorer.</p>
 </dd>
 </dl>
 
 ### Internet Explorer Security Software Impact assessment
 
-The IE Security Software Impact Assessment is intended to measure more
-relevant browsing scenarios and focuses on the antimalware impact on
-Internet Explorer browsing performance.
+The IE Security Software Impact Assessment is intended to measure more relevant browsing scenarios and focuses on the anti-malware impact on Internet Explorer browsing performance.
 
-Antimalware and browser add-ins have a large impact on the Windows
-experience. By expanding the number of assessments that reflect their
-impact, we help you develop a clearer picture of their overall impact on
-your users.
+Anti-malware and browser add-ins have a large impact on the Windows experience. By expanding the number of assessments that reflect their impact, we help you develop a clearer picture of their overall impact on your users.
 
-![Note](images/note-regular.gif)**Note**&nbsp;&nbsp;&nbsp;We recommend that you always compare its results to a clean Windows
-image (with Windows Defender running) on the same system in order to
-quantify the impact introduced by the selected 3rd-party antimalware
-solution.
+> [!NOTE] We recommend that you always compare its results to a clean Windows image (with Windows Defender running) on the same system in order to quantify the impact introduced by the selected 3rd-party anti-malware solution.
 
 This assessment covers page navigation and JavaScript performance, both
 of which are central to the browsing experience. It launches a page to
