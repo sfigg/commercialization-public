@@ -105,9 +105,7 @@ Anti-malware and browser add-ins have a large impact on the Windows experience. 
 
 > [!NOTE] We recommend that you always compare its results to a clean Windows image (with Windows Defender running) on the same system in order to quantify the impact introduced by the selected 3rd-party anti-malware solution.
 
-This assessment covers page navigation and JavaScript performance, both
-of which are central to the browsing experience. It launches a page to
-exercise a number of key performance bottlenecks:
+This assessment covers page navigation and JavaScript performance, both of which are central to the browsing experience. It launches a page to exercise a number of key performance bottlenecks:
 
 -   Significant use of JavaScript
 
@@ -115,26 +113,21 @@ exercise a number of key performance bottlenecks:
 
 -   Complex page formatting
 
-When doing the analysis, focus on Complete Page Load Duration and Page
-Usable metrics:
+When doing the analysis, focus on Complete Page Load Duration and Page Usable metrics:
 
 -   Complete Page Load Duration
 
--   Reports the total time that elapses before the test webpage is fully
-    loaded in Internet Explorer. It measures the duration from page
-    load until Internet Explorer CPU usage is relatively stable.
+-   Reports the total time that elapses before the test webpage is fully loaded in Internet Explorer. It measures the duration from page load until Internet Explorer CPU usage is relatively stable.
 
 -   Page Load to Usable
 
--   Estimates the time that elapses between loading the page and when
-    the page is usable. This metric is based off of
-    performance events.
+-   Estimates the time that elapses between loading the page and when the page is usable. This metric is based on performance events.
 
 Multiple types of impacts can be detected:
 
-- **Network and disk interference** typically appears in network request metrics and in total CPU usage.
+- **Network and disk interference**: Typically appears in network request metrics and in total CPU usage.
 
-- **JavaScript interference** can show up in JavaScript metric or in network request metrics.
+- **JavaScript interference**: Typically appears in JavaScript metric or in network request metrics.
 
-- **Visual interference** shows up in document paints metrics.
+- **Visual interference**: Typically appears in document paints metrics.
 
