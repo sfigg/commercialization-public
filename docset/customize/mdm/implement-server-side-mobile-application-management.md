@@ -85,7 +85,7 @@ MAM on Windows support the following CSPs. All other CSPs will be blocked. Note 
 - [DMClient CSP](dmclient-csp.md) for polling schedules configuration and MDM discovery URL
 - [EnterpriseDataProtection CSP](enterprisedataprotection-csp.md) has WIP policies
 - [Health Attestation CSP](healthattestation-csp.md) required for Conditional Access support (starting with Windows 10, version 1703)
-- [PasswordForWork CSP](passportforwork-csp.md) for Windows Hello for Business PIN management
+- [PassportForWork CSP](passportforwork-csp.md) for Windows Hello for Business PIN management
 - [Policy CSP](policy-configuration-service-provider.md) specifically for NetworkIsolation and DeviceLock areas
 - [Reporting CSP](reporting-csp.md) for retrieving WIP logs
 - [RootCaTrustedCertificates CSP](rootcacertificates-csp.md)
