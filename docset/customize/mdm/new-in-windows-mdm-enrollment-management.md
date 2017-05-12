@@ -619,6 +619,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>EnterpriseCloudPrint/CloudPrintResourceId</li>
 <li>EnterpriseCloudPrint/DiscoveryMaxPrinterLimit</li>
 <li>EnterpriseCloudPrint/MopriaDiscoveryResourceId</li>
+<li>Experience/AllowFindMyDevice</li>
 <li>Experience/AllowTailoredExperiencesWithDiagnosticData</li>
 <li>Experience/AllowWindowsSpotlightOnActionCenter</li>
 <li>Experience/AllowWindowsSpotlightWindowsWelcomeExperience</li>
@@ -1160,6 +1161,7 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <p>Added the following new policies for Windows 10, version 1703:</p> 
 <ul>
 <li>Browser/AllowFlashClickToRun</li>
+<li>Experience/AllowFindMyDevice</li>
 <li>Privacy/LetAppsAccessTasks</li>
 <li>Privacy/LetAppsAccessTasks_ForceAllowTheseApps</li>
 <li>Privacy/LetAppsAccessTasks_ForceDenyTheseApps</li>

@@ -6392,6 +6392,13 @@ The number of authentication failures allowed before the device will be wiped. A
 
 <p style="margin-left: 20px">Most restricted value is 0.
 
+<a href="" id="experience-allowfindmydevice"></a>**Experience/AllowFindMyDevice**  
+<p style="margin-left: 20px">Added in Windows 10, version 1703. This policy turns on Find My Device feature.  
+        
+<p style="margin-left: 20px">When Find My Device is on, the device and its location are registered in the cloud so that the device can be located when the user initiates a Find command from account.microsoft.com.  
+
+<p style="margin-left: 20px">When Find My Device is off, the device and its location are not registered and the Find My Device feature will not work.  
+
 <a href="" id="experience-allowmanualmdmunenrollment"></a>**Experience/AllowManualMDMUnenrollment**  
 <p style="margin-left: 20px">Specifies whether to allow the user to delete the workplace account using the workplace control panel.
 
