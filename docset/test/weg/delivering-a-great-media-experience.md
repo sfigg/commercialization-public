@@ -93,7 +93,7 @@ your Windows device beyond minimum requirements. Windows assessments
 related to media playback include: 
 
 <dl>
-<dt>strong>Streaming Media Performance</strong></dt>
+<dt><strong>Streaming Media Performance</strong></dt>
 <dd>
 <p>Measures the streaming media quality of HTML5 video playback in Internet Explorer. Verbose ETW logs contain information necessary for diagnosing the cause of the performance issues identified by the test. We recommend that you set up the streaming server on a system that is different from the client.</p>
 <ul>
@@ -105,6 +105,7 @@ related to media playback include:
 </li>
 <li>
 <p>Change the assessment parameters to reflect the server configuration. For example:
+
 ![Settings in Windows Assessment Console (WAC) for assessing the performance of a streaming media server](images/weg-wat-settings-streaming-media-performance.png)</p>
 </li>
 </ul>
@@ -182,7 +183,6 @@ You can use Media eXperience Analyzer, a performance analysis and visualization 
 The following guidance checklists should be integrated into OEM’s design and test phases of new Windows devices.
 
 Power Savings guidance checklist:
-
 -   Use hardware offload and low refresh rate panels.
 
 -   Optimize Content Adaptive Backlight Control (CABC) settings.
@@ -198,7 +198,6 @@ Power Savings guidance checklist:
 -   Test key media experiences on AC and DC.
 
 Glitch-free guidance checklist for media playback:
-
 -   Stream premium content with HDMI out to TV.
 
 -   Play premium content on DLNA TV using Play To and Miracast.
@@ -206,7 +205,6 @@ Glitch-free guidance checklist for media playback:
 -   Verify Xbox Video and Xbox Music experiences.
 
 Glitch-free guidance checklist for real-time communications and webcam capture
-
 -   Fine-tune firmware to optimize audio and video quality processing.
 
 -   Validate front and back cameras using inbox & 3rd-party capture apps.
