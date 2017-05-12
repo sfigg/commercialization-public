@@ -619,6 +619,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>EnterpriseCloudPrint/CloudPrintResourceId</li>
 <li>EnterpriseCloudPrint/DiscoveryMaxPrinterLimit</li>
 <li>EnterpriseCloudPrint/MopriaDiscoveryResourceId</li>
+<li>Experience/AllowFindMyDevice</li>
 <li>Experience/AllowTailoredExperiencesWithDiagnosticData</li>
 <li>Experience/AllowWindowsSpotlightOnActionCenter</li>
 <li>Experience/AllowWindowsSpotlightWindowsWelcomeExperience</li>
@@ -860,6 +861,14 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <td style="vertical-align:top"><p>Added new setting in the March service release of Windows 10, version 1607.</p>
 <ul>
 <li>MSI/UpgradeCode/[Guid]</li>
+</ul>
+</td></tr>
+<tr class="odd">
+<td style="vertical-align:top">[Reporting CSP](reporting-csp.md)</td>
+<td style="vertical-align:top"><p>Added new settings in Windows 10, version 1703.</p>
+<ul>
+<li>EnterpriseDataProtection/RetrieveByTimeRange/Type</li>
+<li>EnterpriseDataProtection/RetrieveByCount/Type</li>
 </ul>
 </td></tr>
 </tbody>
@@ -1152,6 +1161,7 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <p>Added the following new policies for Windows 10, version 1703:</p> 
 <ul>
 <li>Browser/AllowFlashClickToRun</li>
+<li>Experience/AllowFindMyDevice</li>
 <li>Privacy/LetAppsAccessTasks</li>
 <li>Privacy/LetAppsAccessTasks_ForceAllowTheseApps</li>
 <li>Privacy/LetAppsAccessTasks_ForceDenyTheseApps</li>
@@ -1170,8 +1180,15 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <ul>
 <li>AllowWarningForOtherDiskEncryption</li>
 </ul>
-</td>
-</tr>
+</td></tr>
+<tr class="even">
+<td style="vertical-align:top">[Reporting CSP](reporting-csp.md)</td>
+<td style="vertical-align:top"><p>Added new settings in Windows 10, version 1703.</p>
+<ul>
+<li>EnterpriseDataProtection/RetrieveByTimeRange/Type</li>
+<li>EnterpriseDataProtection/RetrieveByCount/Type</li>
+</ul>
+</td></tr>
 </tbody>
 </table>
 
