@@ -862,6 +862,14 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>MSI/UpgradeCode/[Guid]</li>
 </ul>
 </td></tr>
+<tr class="odd">
+<td style="vertical-align:top">[Reporting CSP](reporting-csp.md)</td>
+<td style="vertical-align:top"><p>Added new settings in Windows 10, version 1703.</p>
+<ul>
+<li>EnterpriseDataProtection/RetrieveByTimeRange/Type</li>
+<li>EnterpriseDataProtection/RetrieveByCount/Type</li>
+</ul>
+</td></tr>
 </tbody>
 </table> 
 
@@ -1170,8 +1178,15 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <ul>
 <li>AllowWarningForOtherDiskEncryption</li>
 </ul>
-</td>
-</tr>
+</td></tr>
+<tr class="even">
+<td style="vertical-align:top">[Reporting CSP](reporting-csp.md)</td>
+<td style="vertical-align:top"><p>Added new settings in Windows 10, version 1703.</p>
+<ul>
+<li>EnterpriseDataProtection/RetrieveByTimeRange/Type</li>
+<li>EnterpriseDataProtection/RetrieveByCount/Type</li>
+</ul>
+</td></tr>
 </tbody>
 </table>
 
