@@ -8,6 +8,11 @@ ms.assetid: bfaa08d7-0bb0-4786-a925-dc54c6f78ffc
 ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
+ms.author: windows-hardware-design-content
+ms.date: 05/05/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # Recording for Basic System Diagnosis

@@ -5,6 +5,11 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 084fc682-8542-4e36-9543-bb7c84f02ddd
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # Design Windows 10 devices
@@ -17,7 +22,7 @@ Building a great Windows 10 device starts with selecting the right components. 
 
 ![windows device form factors](images/formfactors.png)
 
-Windows 10 supports a wide range of devices—from phones, to tablets and laptops, to All-in-one or desktop devices. See [Form factors](p_weg_hardware.form_factors) to choose your device and learn more info about creating great Windows devices.
+Windows 10 supports a wide range of devices—from phones, to tablets and laptops, to All-in-one or desktop devices. See [Form factors](form-factors/form-factors.md) to choose your device and learn more info about creating great Windows devices.
 
 ## Design guidelines
 
@@ -28,22 +33,22 @@ The minimum hardware requirements specification defines the minimum hardware req
 
 Minimum hardware requirements enable OEMs, ODMs, SoC vendors, and other component vendors to make early design decisions for devices and computers that will run Windows 10.
 
-[Review the minimum hardware requirements](p_weg_hardware.minimum_hardware_requirements_overview)
+[Review the minimum hardware requirements](minimum/minimum-hardware-requirements-overview.md)
 
 ![plan the user experience](images/plan-the-user-experience.png)
 
 Build devices that take full advantage of the latest Windows 10 features. To get started learn how the feature works and then choose the right hardware.
 
-[Learn more about the latest Windows 10 features](p_weg_hardware.device_experiences__scenarios_)
+[Learn more about the latest Windows 10 features](device-experiences/device-experiences-scenarios.md)
 
 ![select the right components](images/select-right-components.png)
 
 Building a great device for Windows means with selecting the right components. Microsoft makes recommendations to help you put together the best system for running Windows 10.
 
-[Learn more about individual component guidelines](p_weg_hardware.components)
+[Learn more about individual component guidelines](component-guidelines/components.md)
 
 ![test for compatibility and reliability](images/test-for-compatibility-and-reliability.png)
 
 We provide tests that help you deliver systems, software and hardware products that are compatible with Windows and run reliably on Windows 10. We also give you the opportunity to promote your product on Microsoft’s Certified Products List and with the Windows logo.
 
-[Learn more about the Windows Hardware Compatibility Program](compatibility/index.md)
+[Learn more about the Windows Hardware Compatibility Program](compatibility/1703/index.md)

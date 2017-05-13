@@ -5,6 +5,11 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: A953ADEF-4523-425F-926C-48DA62EB9E21
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # EnterpriseAPN DDF
@@ -12,7 +17,13 @@ ms.assetid: A953ADEF-4523-425F-926C-48DA62EB9E21
 
 This topic shows the OMA DM device description framework (DDF) for the **EnterpriseAPN** configuration service provider. DDF files are used only with OMA DM provisioning XML.
 
-You can download the Windows 10 version 1607 DDF files from [here](http://download.microsoft.com/download/2/3/E/23E27D6B-6E23-4833-B143-915EDA3BDD44/Windows10_1607_DDF.zip).
+You can download the DDF files from the links below:
+
+- [Download all the DDF files for Windows 10, version 1703](http://download.microsoft.com/download/C/7/C/C7C94663-44CF-4221-ABCA-BC895F42B6C2/Windows10_1703_DDF_download.zip)
+- [Download all the DDF files for Windows 10, version 1607](http://download.microsoft.com/download/2/3/E/23E27D6B-6E23-4833-B143-915EDA3BDD44/Windows10_1607_DDF.zip)
+
+The content below are the different versions of the DDF for this CSP.
+
 
 -   [EnterpriseAPN CSP version 1.0 DDF](#enterpriseapn-csp-version-1-0-ddf)
 -   [EnterpriseAPN CSP version 1.1 DDF](#enterpriseapn-csp-version-1-1-ddf)

@@ -8,6 +8,11 @@ ms.assetid: d7838756-aab0-4a92-b9e9-42cb4edb6859
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # FirstRunTask

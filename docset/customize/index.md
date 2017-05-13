@@ -5,6 +5,11 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 15cf9368-896a-42c6-81cf-424528115547
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # Customize
@@ -31,7 +36,7 @@ See the following sections for more information about what you can do to customi
 <tbody>
 <tr class="odd">
 <td><p>[What's new in customizations](what-s-new-in-customizations.md)</p></td>
-<td><p>Learn about the new customizations available in Windows 10, build 1607.</p></td>
+<td><p>Learn about the new customizations available in Windows 10, version 1703.</p></td>
 </tr>
 <tr class="odd">
 <td><p>[Customizations for desktop](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/customize/desktop/desktop-customizations-portal)</p></td>

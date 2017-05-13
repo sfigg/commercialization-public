@@ -3,6 +3,11 @@ author: KPacquer
 Description: 'Lab 4: Add languages'
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Lab 4: Add languages'
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # <span id="Add_languages"></span>Lab 4: Add languages
@@ -142,7 +147,7 @@ The following table shows the types of language packages and components availabl
     Review the resulting list of packages and verify that the list contains the package. For example:
 
     ``` syntax
-    Package Identity : Microsoft-Windows-Client-LanguagePack  ...  fr-FR~10.0.14393.0
+    Package Identity : Microsoft-Windows-Client-LanguagePack  ...  fr-FR~10.0.15063.0
     State : Installed
     ```
 
@@ -181,7 +186,7 @@ The following table shows the types of language packages and components availabl
 1.  To save space, you can remove English language components when deploying to non-English regions. You can either uninstall them in the reverse order from how you add them, or remove them all at once in the same DISM /remove-package command.
 
     ``` syntax
-    dism /Remove-Package /Image:"c:\mount\windows" /PackageName:Microsoft-Windows-Client-LanguagePack-Package~31bf3856ad364e35~amd64~en-US~10.0.14393.0 /PackageName:Microsoft-Windows-LanguageFeatures-Basic-en-us-Package~31bf3856ad364e35~amd64~~10.0.14393.0 /PackageName:Microsoft-Windows-LanguageFeatures-Handwriting-en-us-Package~31bf3856ad364e35~amd64~~10.0.14393.0 /PackageName:Microsoft-Windows-LanguageFeatures-OCR-en-us-Package~31bf3856ad364e35~amd64~~10.0.14393.0 /PackageName:Microsoft-Windows-LanguageFeatures-Speech-en-us-Package~31bf3856ad364e35~amd64~~10.0.14393.0 /PackageName:Microsoft-Windows-LanguageFeatures-TextToSpeech-en-us-Package~31bf3856ad364e35~amd64~~10.0.14393.0  /LogPath=C:\mount\dism.fod2.log
+    dism /Remove-Package /Image:"c:\mount\windows" /PackageName:Microsoft-Windows-Client-LanguagePack-Package~31bf3856ad364e35~amd64~en-US~10.0.15063.0 /PackageName:Microsoft-Windows-LanguageFeatures-Basic-en-us-Package~31bf3856ad364e35~amd64~~10.0.15063.0 /PackageName:Microsoft-Windows-LanguageFeatures-Handwriting-en-us-Package~31bf3856ad364e35~amd64~~10.0.15063.0 /PackageName:Microsoft-Windows-LanguageFeatures-OCR-en-us-Package~31bf3856ad364e35~amd64~~10.0.15063.0 /PackageName:Microsoft-Windows-LanguageFeatures-Speech-en-us-Package~31bf3856ad364e35~amd64~~10.0.15063.0 /PackageName:Microsoft-Windows-LanguageFeatures-TextToSpeech-en-us-Package~31bf3856ad364e35~amd64~~10.0.15063.0  /LogPath=C:\mount\dism.fod2.log
     ```
 
     where *C* is the drive letter of the drive.
@@ -245,7 +250,7 @@ Use the steps from [Lab 2: Deploy Windows using a script](deploy-windows-with-a-
     Review the resulting list of packages and verify that the list contains the package. For example:
 
     ``` syntax
-    Package Identity : Microsoft-Windows-Client-LanguagePack  ...  fr-FR~10.0.14393.0
+    Package Identity : Microsoft-Windows-Client-LanguagePack  ...  fr-FR~10.0.15063.0
     State : Installed
     ```
 	

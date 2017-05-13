@@ -8,6 +8,11 @@ ms.assetid: 8ebefca2-a555-4758-852d-26435a135693
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # SquareOrDesktopTile5

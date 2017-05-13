@@ -4,6 +4,11 @@ Description: Windows Setup Scenarios and Best Practices
 ms.assetid: 651cb9c3-121d-40d3-9e17-47f1a78a000f
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Windows Setup Scenarios and Best Practices
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # Windows Setup Scenarios and Best Practices

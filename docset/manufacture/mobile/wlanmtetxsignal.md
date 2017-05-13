@@ -4,6 +4,11 @@ Description: WlanMTETxSignal
 ms.assetid: 02a91cb8-de7b-4b96-aa41-7dab33a8d02e
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: WlanMTETxSignal
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # WlanMTETxSignal

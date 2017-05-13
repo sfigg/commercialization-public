@@ -5,12 +5,24 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4E2F36B7-D2EE-4F48-AD1A-6BDE7E72CC94
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # VPNv2 DDF file
 
 
 This topic shows the OMA DM device description framework (DDF) for the **VPNv2** configuration service provider.
+
+You can download the DDF files from the links below:
+
+- [Download all the DDF files for Windows 10, version 1703](http://download.microsoft.com/download/C/7/C/C7C94663-44CF-4221-ABCA-BC895F42B6C2/Windows10_1703_DDF_download.zip)
+- [Download all the DDF files for Windows 10, version 1607](http://download.microsoft.com/download/2/3/E/23E27D6B-6E23-4833-B143-915EDA3BDD44/Windows10_1607_DDF.zip)
+
+The XML below is the current version for this CSP.
 
 ``` syntax
 <?xml version="1.0" encoding="UTF-8"?>
@@ -38,7 +50,7 @@ This topic shows the OMA DM device description framework (DDF) for the **VPNv2**
                 <Permanent />
             </Scope>
             <DFType>
-                <MIME>com.microsoft/1.2/MDM/VPNv2</MIME>
+				<MIME>com.microsoft/1.2/MDM/VPNv2</MIME>
             </DFType>
         </DFProperties>
         <Node>
@@ -266,6 +278,30 @@ This topic shows the OMA DM device description framework (DDF) for the **VPNv2**
                                 <MIME>text/plain</MIME>
                             </DFType>
                         </DFProperties>
+                    </Node>
+                    <Node>
+                      <NodeName>Metric</NodeName>
+                      <DFProperties>
+                        <AccessType>
+                          <Get />
+                          <Add />
+                          <Delete />
+                          <Replace />
+                        </AccessType>
+                        <Description>The route's metric.</Description>
+                        <DFFormat>
+                          <int />
+                        </DFFormat>
+                        <Occurrence>
+                          <One />
+                        </Occurrence>
+                        <Scope>
+                          <Dynamic />
+                        </Scope>
+                        <DFType>
+                          <MIME>text/plain</MIME>
+                        </DFType>
+                      </DFProperties>
                     </Node>
                     <Node>
                         <NodeName>ExclusionRoute</NodeName>
@@ -2374,6 +2410,30 @@ This topic shows the OMA DM device description framework (DDF) for the **VPNv2**
                                 <MIME>text/plain</MIME>
                             </DFType>
                         </DFProperties>
+                    </Node>
+                    <Node>
+                      <NodeName>Metric</NodeName>
+                      <DFProperties>
+                        <AccessType>
+                          <Get />
+                          <Add />
+                          <Delete />
+                          <Replace />
+                        </AccessType>
+                        <Description>The route's metric.</Description>
+                        <DFFormat>
+                          <int />
+                        </DFFormat>
+                        <Occurrence>
+                          <One />
+                        </Occurrence>
+                        <Scope>
+                          <Dynamic />
+                        </Scope>
+                        <DFType>
+                          <MIME>text/plain</MIME>
+                        </DFType>
+                      </DFProperties>
                     </Node>
                     <Node>
                         <NodeName>ExclusionRoute</NodeName>

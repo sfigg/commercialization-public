@@ -4,6 +4,11 @@ Description: 'Add device drivers'
 ms.assetid: 9a8f525c-bb8f-492c-a555-0b512e44bcd1
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Lab 3: Add device drivers'
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # Lab 3: Add device drivers 
@@ -127,9 +132,9 @@ Use the steps from [Lab 2: Deploy Windows using a script](deploy-windows-with-a-
 
     ``` syntax
     Deployment Image Servicing and Management tool
-    Version: 10.0.14393.0
+    Version: 10.0.15063.0
 
-    Image Version: 10.0.14393.0
+    Image Version: 10.0.15063.0
 
     Obtaining list of 3rd party drivers from the driver store...
 
@@ -140,7 +145,7 @@ Use the steps from [Lab 2: Deploy Windows using a script](deploy-windows-with-a-
     Inbox : No
     Class Name : Graphics
     Provider Name : Contoso
-    Date : 10/19/2016
+    Date : 05/19/2017
     Version : 10.0.0.1
 
     The operation completed successfully.

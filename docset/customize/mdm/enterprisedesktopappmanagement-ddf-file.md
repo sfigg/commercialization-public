@@ -5,6 +5,11 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: EF448602-65AC-4D59-A0E8-779876542FE3
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # EnterpriseDesktopAppManagement DDF
@@ -23,7 +28,7 @@ DDF files are used only with OMA DM provisioning XML.
     <VerDTD>1.2</VerDTD>
     <Node>
         <NodeName>EnterpriseDesktopAppManagement</NodeName>
-        <Path>./Vendor/MSFT</Path>
+        <Path>./Device/Vendor/MSFT</Path>
         <DFProperties>
             <AccessType>
                 <Get />
@@ -210,6 +215,8 @@ DDF files are used only with OMA DM provisioning XML.
                     <NodeName>DownloadInstall</NodeName>
                     <DFProperties>
                         <AccessType>
+                            <Add />
+                            <Delete />
                             <Exec />
                             <Get />
                         </AccessType>
@@ -301,9 +308,57 @@ DDF files are used only with OMA DM provisioning XML.
                     </DFProperties>
                 </Node>
             </Node>
+            <Node>
+                <NodeName>UpgradeCode</NodeName>
+                <DFProperties>
+                    <AccessType>
+                        <Get />
+                    </AccessType>
+                    <DFFormat>
+                        <node />
+                    </DFFormat>
+                    <Occurrence>
+                        <One />
+                    </Occurrence>
+                    <Scope>
+                        <Permanent />
+                    </Scope>
+                    <CaseSense>
+                        <CS />
+                    </CaseSense>
+                    <DFType>
+                        <DDFName></DDFName>
+                    </DFType>
+                </DFProperties>
+                <Node>
+                    <NodeName></NodeName>
+                    <DFProperties>
+                        <AccessType>
+                            <Get />
+                        </AccessType>
+                        <DFFormat>
+                            <chr />
+                        </DFFormat>
+                        <Occurrence>
+                            <OneOrMore />
+                        </Occurrence>
+                        <Scope>
+                            <Dynamic />
+                        </Scope>
+                        <CaseSense>
+                            <CIS />
+                        </CaseSense>
+                        <DFTitle>Guid</DFTitle>
+                        <DFType>
+                            <MIME>text/plain</MIME>
+                        </DFType>
+                    </DFProperties>
+                </Node>
+            </Node>
         </Node>
     </Node>
 </MgmtTree>
+
 ```
 
  

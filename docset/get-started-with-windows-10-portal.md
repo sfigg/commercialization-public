@@ -5,6 +5,11 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: e9ebd4e2-f05e-40fb-9dc3-925f96dce182
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # Get started with Windows 10
@@ -105,9 +110,6 @@ From Cortana to Continuum to the core architecture, this release includes tons o
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>Create provisioning packages that can gather your settings, languages, drivers, and apply them all at once to a new device with Windows Imaging and Configuration Designer (ICD).</p>
-<p>OEMs can apply the packages to new devices. Enterprises can apply them to devices that employees bring from home to quickly configure them to use the corporate network.</p>
-<p>[Get started with Windows ICD](https://msdn.microsoft.com/en-us/library/windows/hardware/dn916112.aspx)</p></td>
 <td><p>For desktop PCs, you can use your existing settings file (Unattend.xml) to add settings during Windows installation.</p>
 <p>[Build a Windows Setup unattend file](manufacture/desktop/update-windows-settings-and-scripts-create-your-own-answer-file-sxs.md)</p></td>
 </tr>

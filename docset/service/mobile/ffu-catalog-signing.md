@@ -4,6 +4,11 @@ Description: FFU Catalog Signing
 ms.assetid: 31956395-2253-430e-a578-fc0218952a90
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: FFU Catalog Signing
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # FFU Catalog Signing

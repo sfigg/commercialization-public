@@ -5,6 +5,11 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 9DD75EDA-5913-45B4-9BED-20E30CDEBE16
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # DiagnosticLog DDF
@@ -12,7 +17,12 @@ ms.assetid: 9DD75EDA-5913-45B4-9BED-20E30CDEBE16
 
 This topic shows the OMA DM device description framework (DDF) for the DiagnosticLog configuration service provider.
 
-You can download the Windows 10 version 1607 DDF files from [here](http://download.microsoft.com/download/2/3/E/23E27D6B-6E23-4833-B143-915EDA3BDD44/Windows10_1607_DDF.zip).
+You can download the DDF files from the links below:
+
+- [Download all the DDF files for Windows 10, version 1703](http://download.microsoft.com/download/C/7/C/C7C94663-44CF-4221-ABCA-BC895F42B6C2/Windows10_1703_DDF_download.zip)
+- [Download all the DDF files for Windows 10, version 1607](http://download.microsoft.com/download/2/3/E/23E27D6B-6E23-4833-B143-915EDA3BDD44/Windows10_1607_DDF.zip)
+
+The content below are the latest versions of the DDF files:
 
 -   [DiagnosticLog CSP version 1.2](#version-1-2)
 -   [DiagnosticLog CSP version 1.3](#version-1-3)

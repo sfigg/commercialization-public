@@ -8,6 +8,11 @@ ms.assetid: d672f309-e038-4c69-9288-fbf8e251dfc5
 ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
+ms.author: windows-hardware-design-content
+ms.date: 05/05/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # CaptureStateOnSave

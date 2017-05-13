@@ -8,6 +8,11 @@ ms.assetid: 2f91a70b-25e5-4ea4-8076-e01fffa50d6f
 ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
+ms.author: windows-hardware-design-content
+ms.date: 05/05/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # Issues Window

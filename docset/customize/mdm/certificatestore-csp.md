@@ -5,6 +5,11 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 0fe28629-3cc3-42a0-91b3-3624c8462fd3
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # CertificateStore CSP
@@ -344,6 +349,11 @@ Supported operation is Get.
 Added in Windows 10, version 1607. Initiates a renewal now.
 
 Supported operation is Execute.
+
+<a href="" id="my-wstep-renew-retryafterexpiryinterval"></a>**My/WSTEP/Renew/RetryAfterExpiryInterval**  
+Added in Windows 10, version 1703. How long after the enrollment certificate has expired before trying to renew.
+
+Supported operations are Add, Get, and Replace.
 
 ## Examples
 

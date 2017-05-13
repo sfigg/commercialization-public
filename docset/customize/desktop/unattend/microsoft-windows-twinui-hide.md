@@ -4,6 +4,11 @@ description: Microsoft-Windows-TwinUI-Hide
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # Microsoft-Windows-TwinUI-Hide
@@ -33,7 +38,7 @@ The `Microsoft-Windows-TPM-Tasks-TwinUI-Hide` setting specifies whether to hide 
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-TPM-Tasks](microsoft-windows-twinui.md) | **Hide**
+[Microsoft-Windows-TwinUI-Tasks](microsoft-windows-twinui.md) | **Hide**
 
 ## Valid Configuration Passes
 

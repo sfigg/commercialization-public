@@ -1,11 +1,12 @@
 ---
-
 title: OEM deployment of Windows 10 for desktop editions
-
 author: Justinha
-
 description: Get step-by-step guidance for OEMs to deploy Windows 10 to desktop computers, laptops, and 2-in-1s. Find information about how to enable imageless, push-button reset recovery and more.  
-
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # OEM deployment of Windows 10 for desktop editions
@@ -14,7 +15,7 @@ This guide documents a prescriptive method for deploying Windows 10, version 151
 
 This guide is intended for OEMs, and applies to Windows 10 for desktop editions (Home, Pro, Enterprise, and Education). IT professionals using this guide should have prior knowledge of Windows basic administration and troubleshooting. For more information about what's new in Windows 10 deployment, see [Windows 10 Deployment and Tools](https://technet.microsoft.com/library/mt297512.aspx).
 
-For the latest version, see the [Windows 10, version 1607 version of this guide](oem-windows-deployment-and-imaging-walkthrough.md). 
+For the latest version, see the [OEM Windows Desktop Deployment and Imaging Lab](oem-windows-deployment-and-imaging-walkthrough.md). 
 
 ## About this guide
 

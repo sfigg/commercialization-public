@@ -8,6 +8,11 @@ ms.assetid: 9ac8a18d-46c0-41b8-9261-94ad3703eba2
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # AppId

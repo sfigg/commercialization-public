@@ -4,6 +4,11 @@ Description: 'Requirements.'
 ms.assetid: 
 MSHAttr: 
 author: beneluxboy
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # Device.Input.Digitizer
@@ -403,7 +408,7 @@ A logarithmic curve shall be used to report the applied force on the pen tip. Wh
 The ideal pressure curve (for a device with 256 levels) is illustrated in Figure 1, however the associated HLK tests will ensure that the device reports pressure within the ranges defined by the upper bound and lower bound. For devices that have greater number of pressure levels, the same curve should be applied but scaled to the number of levels logically reported.
 
 **Figure 1 - Ideal Pressure Reporting Curve for a Device with 256 Pressure Levels**
-![Ideal Pressure Reporting Curve for a Device with 256 Pressure Levels](../images/ideal-pressure-reporting-curve.png)
+![Ideal Pressure Reporting Curve for a Device with 256 Pressure Levels](images/ideal-pressure-reporting-curve.png)
 
 
 

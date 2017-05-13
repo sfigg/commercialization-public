@@ -8,6 +8,11 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: a5704441-d856-44ae-a3de-82c66af65098
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # Modern Standby
@@ -27,6 +32,9 @@ Windows 10 Modern Standby (MS) expands the Windows 8.1 Connected Standby power 
 Windows 10 reduces power consumption by the OS and only wakes from the lowest power state when absolutely necessary. With Modern Standby, the system wakes when there is real time action required, such as OS maintenance, or a user wakes the system.
 
 Modern Standby is available for both Windows 10 desktop and Windows 10 Mobile.
+
+> [!NOTE]
+> You cannot switch between S3 and Modern Standby by changing a setting in the BIOS. Switching the power model is not supported in Windows without a complete OS re-install. 
 
 ## Terminology
 

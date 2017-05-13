@@ -8,6 +8,11 @@ ms.assetid: 5cbff080-bdaa-412d-8412-22013f2717fb
 ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
+ms.author: windows-hardware-design-content
+ms.date: 05/05/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # UpdateHeapTrace

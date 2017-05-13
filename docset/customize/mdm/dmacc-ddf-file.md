@@ -5,6 +5,11 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 44dc99aa-2a85-498b-8f52-a81863765606
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # DMAcc DDF file
@@ -12,7 +17,12 @@ ms.assetid: 44dc99aa-2a85-498b-8f52-a81863765606
 
 This topic shows the OMA DM device description framework (DDF) for the **DMAcc** configuration service provider. DDF files are used only with OMA DM provisioning XML.
 
-You can download the Windows 10 version 1607 DDF files from [here](http://download.microsoft.com/download/2/3/E/23E27D6B-6E23-4833-B143-915EDA3BDD44/Windows10_1607_DDF.zip).
+You can download the DDF files from the links below:
+
+- [Download all the DDF files for Windows 10, version 1703](http://download.microsoft.com/download/C/7/C/C7C94663-44CF-4221-ABCA-BC895F42B6C2/Windows10_1703_DDF_download.zip)
+- [Download all the DDF files for Windows 10, version 1607](http://download.microsoft.com/download/2/3/E/23E27D6B-6E23-4833-B143-915EDA3BDD44/Windows10_1607_DDF.zip)
+
+The XML below is the current version for this CSP.
 
 ``` syntax
 <?xml version="1.0" encoding="UTF-8"?>
@@ -39,7 +49,7 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
                 <Permanent />
             </Scope>
             <DFType>
-                <DDFName>urn:oma:mo:oma-dm-dmacc:1.0</DDFName>
+                <DDFName>urn:oma:mo:oma-dm-dmacc:1.1</DDFName>
             </DFType>
         </DFProperties>
         <Node>
@@ -823,11 +833,35 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
                             </DFType>
                         </DFProperties>
                     </Node>
+                    <Node>
+                        <NodeName>InitiateSession</NodeName>
+                        <DFProperties>
+                            <AccessType>
+                                <Add />
+                                <Replace />
+                            </AccessType>
+                            <Description>When this node is added, a session is started with the MDM server.</Description>
+                            <DFFormat>
+                                <null />
+                            </DFFormat>
+                            <Occurrence>
+                                <ZeroOrOne />
+                            </Occurrence>
+                            <Scope>
+                                <Dynamic />
+                            </Scope>
+                            <DFTitle></DFTitle>
+                            <DFType>
+                                <DDFName></DDFName>
+                            </DFType>
+                        </DFProperties>
+                    </Node>
                 </Node>
             </Node>
         </Node>
     </Node>
 </MgmtTree>
+
 ```
 
 ## Related topics

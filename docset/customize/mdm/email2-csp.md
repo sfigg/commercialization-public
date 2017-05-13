@@ -5,6 +5,11 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: bcfc9d98-bc2e-42c6-9b81-0b5bf65ce2b8
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # EMAIL2 CSP
@@ -24,6 +29,9 @@ The following diagram shows the EMAIL2 configuration service provider management
 In Windows 10 Mobile, after the user’s out of box experience, an OEM or mobile operator can use the EMAIL2 configuration service provider to provision the device with a mobile operator’s proprietary mail over the air. After provisioning, the **Start** screen has a tile for the proprietary mail provider and there is also a link to it in the applications list under **Settings, email & accounts**. After an account has been updated over-the-air by the EMAIL2 CSP, the device must be powered off and then powered back on to see the sync status.
 
 Configuration data is not encrypted when sent over the air (OTA). Be aware that this is a potential security risk when sending sensitive configuration data, such as passwords.
+
+> [!IMPORTANT]
+> All Add and Replace commands need to be wrapped in an Atomic section.
 
 <a href="" id="email2"></a>**EMAIL2**  
 The configuration service provider root node.

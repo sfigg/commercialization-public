@@ -5,6 +5,11 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 2BFF7491-BB01-41BA-9A22-AB209EE59FC5
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # EnterpriseDesktopAppManagement CSP
@@ -18,7 +23,7 @@ The following diagram shows the EnterpriseDesktopAppManagement CSP in tree forma
 
 ![enterprisedesktopappmanagement csp](images/provisioning-csp-enterprisedesktopappmanagement.png)
 
-<a href="" id="--vendor-msft-enterprisedesktopappmanagement"></a>**./Vendor/MSFT/EnterpriseDesktopAppManagement**  
+<a href="" id="--vendor-msft-enterprisedesktopappmanagement"></a>**./Device/Vendor/MSFT/EnterpriseDesktopAppManagement**  
 The root node for the EnterpriseDesktopAppManagement configuration service provider.
 
 <a href="" id="msi"></a>**MSI**  
@@ -72,6 +77,15 @@ Value type is string. Supported operation is Get.
 Contains the last error code description. The LastErrorDesc value is looked up for the matching LastError value. Sometimes there is no LastErrorDesc returned.
 
 Value type is string. Supported operation is Get.
+
+<a href="" id="msi-upgradecode"></a>**MSI/UpgradeCode**  
+Added in the March service release of Windows 10, version 1607.
+
+<a href="" id="msi-upgradecode"></a>**MSI/UpgradeCode/_Guid_**  
+Added in the March service release of Windows 10, version 1607. A gateway (or device management server) uses this method to detect matching upgrade MSI product when a Admin wants to update an existing MSI app. If the same upgrade product is installed, then the update is allowed.
+
+Value type is string. Supported operation is Get. 
+
 
 ## Examples
 

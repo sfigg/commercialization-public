@@ -5,6 +5,11 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 43e73d8a-6617-44e7-8459-5c96f4422e63
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # DMAcc CSP
@@ -263,6 +268,11 @@ Subject specifies the certificate to search for. For example, to specify that yo
 ```
 
 Value type is string. Supported operations are Add, Get, and Replace.
+
+<a href="" id="initiatesession"></a>**InitiateSession**  
+Optional. When this node is added, a session is started with the MDM server.
+
+Supported operations are Add, and Replace.
 
 ## Related topics
 

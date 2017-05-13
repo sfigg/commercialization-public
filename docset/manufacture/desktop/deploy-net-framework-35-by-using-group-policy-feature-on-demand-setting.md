@@ -4,6 +4,11 @@ Description: 'Deploy .NET Framework 3.5 by using Group Policy Feature on Demand 
 ms.assetid: 764f765d-cdc1-4638-9035-64f3d6a43b8d
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Deploy .NET Framework 3.5 by using Group Policy Feature on Demand setting'
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # Deploy .NET Framework 3.5 by using Group Policy Feature on Demand setting

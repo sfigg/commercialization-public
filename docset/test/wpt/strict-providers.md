@@ -8,6 +8,11 @@ ms.assetid: b75d08cc-eaa5-42b8-9bac-d9b6aa35f31a
 ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
+ms.author: windows-hardware-design-content
+ms.date: 05/05/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # Strict Providers

@@ -5,6 +5,11 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 6e89bd37-7680-4940-8a67-11ed062ffb70
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # RemoteWipe CSP
@@ -31,6 +36,13 @@ Supported operation is Exec.
 When used with OMA Client Provisioning, a dummy value of "1" should be included for this element.
 
 The information that was backed up will be restored and applied to the device when it resumes. The return status code shows whether the device accepted the Exec command.
+
+<a href="" id="doWipeProtected"></a>**doWipeProtected**  
+Added in Windows 10, version 1703. Exec on this node performs a remote wipe on the device and fully clean the internal drive. In some device configurations, this command may leave the device unable to boot. The return status code indicates whether the device accepted the Exec command.
+
+The doWipeProtected is functionally similar to doWipe. But unlike doWipe, which can be easily circumvented by simply power cycling the device, doWipeProtected will keep trying to reset the device until it’s done.
+
+Supported operation is Exec.
 
 ## The Remote Wipe Process
 

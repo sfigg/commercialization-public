@@ -5,6 +5,11 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 148441A6-D9E1-43D8-ADEE-FB62E85A39F7
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # Reporting CSP
@@ -55,6 +60,13 @@ Supported operations are Get and Replace.
 Specifies the ending time for retrieving logs.
 
 Value type is string. Use ISO 8601 format.
+
+Supported operations are Get and Replace.
+
+<a href="" id="type"></a>**Type**  
+Added in Windows 10, version 1703. Specifies the type of logs to retrieve. You can use this to retrieve the WIP learning logs.
+
+Value type is integer.
 
 Supported operations are Get and Replace.
 

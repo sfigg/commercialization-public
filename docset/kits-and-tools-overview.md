@@ -2,6 +2,11 @@
 title: Kits and tools overview
 description: An overview of the kits and tools needed for developing with Windows 10 Mobile and Windows 10.
 ms.assetid: F0055AF7-D679-4BC6-94C8-2FCD5832B9D8
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # Kits and tools overview
@@ -28,7 +33,7 @@ Windows SDK for Windows 10 contains headers, libraries, and tools you can use w
 ## WDK 10
 
 
-[Install the Windows Driver Kit (WDK) 10](https://go.microsoft.com/fwlink/p/?LinkId=845980)
+[Install the Windows Driver Kit (WDK) 10](https://developer.microsoft.com/windows/hardware/windows-driver-kit)
 
 [Download Universal Windows driver samples](http://go.microsoft.com/fwlink/p/?LinkId=526735)
 
@@ -60,7 +65,7 @@ Some tests, like graphics and multimedia tests, require additional files for tes
 ## ADK for Windows 10
 
 
-[Download the ADK for Windows 10](https://go.microsoft.com/fwlink/p/?LinkId=845542)
+[Download the ADK for Windows 10](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit)
 
 Download the Windows ADK to install tools and documentation for OEMs and ODMs to customize Windows 10 images, assess the quality and performance of systems or components, and to deploy Windows operating systems to new computers. The Windows ADK includes Windows Configuration Designer, the Windows Assessment Toolkit, the Windows Performance Toolkit, and several new and improved deployment tools that can help you automate a large-scale deployment of Windows 10. For more information, see [What’s new in kits and tools](what-s-new-in-kits-and-tools.md).
 

@@ -5,6 +5,11 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 5F88E567-77AA-4822-A0BC-3B31100639AA
+ms.author: windows-hardware-design-content
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # EnterpriseAssignedAccess CSP
@@ -277,7 +282,8 @@ aumid=&quot;microsoft.windowscommunicationsapps_8wekyb3d8bbwe!microsoft.windowsl
 </ul></li>
 </ul>
 <p><strong>Quick action settings</strong></p>
-<p>Starting in Windows 10, version 1511, you can specify the following quick action settings in the lockdown XML file. The following list shows the quick action settings and settings page dependencies (group and page). The dependent settings group and pages are automatically added when the quick action item is specified in the lockdown XML.</p>
+<p>Starting in Windows 10, version 1511, you can specify the following quick action settings in the lockdown XML file. The following list shows the quick action settings and settings page dependencies (group and page). </p>
+<p>Note:  Only Windows 10, versions 1511 and 1607, the dependent settings group and pages are automatically added when the quick action item is specified in the lockdown XML. This statement does not apply to Windows 10, version 1703.</p>
 <ul>
 <li><p>SystemSettings_System_Display_QuickAction_Brightness</p>
 <p>Dependencies - SettingsPageSystemDisplay, SettingsPageDisplay</p></li>

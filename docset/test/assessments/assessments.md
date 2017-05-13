@@ -8,6 +8,11 @@ ms.assetid: 23640a08-1459-4676-a522-daf8bbc49c7d
 ms.prod: W10
 ms.mktglfcycl: plan
 ms.sitesec: msdn
+ms.author: windows-hardware-design-content
+ms.date: 05/05/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # Assessments
