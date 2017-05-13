@@ -121,7 +121,7 @@ The end goal of these docking recommendations is to maximize compatibility and i
 <tr>
 <th align="left" valign="top">Display output</th>
 <td>The connection from the dock to an external monitor should be provided by at least one digital connector that is at a minimum either HDMI 1.4 or DisplayPort 1.2 (supporting DP++).
-<p>However, if the device is a docking display (that is, the dock and the monitor are in the same device), it is optional to include an additional display output to enable a multimonitor experience. If the dock is a docking display, this needs to be indicated in the Microsoft OS docking descriptor.</p>
+<p>However, if the device is a docking display (that is, the dock and the monitor are in the same device), it is optional to include an additional display output to enable a multimonitor experience. If the dock is a docking display, this needs to be indicated in the [Microsoft OS docking descriptor](declaring-a-hardware-device-as-a-dock.md).</p>
 <p>The resolution supported should at a minimum be 1080p, regardless of whether the display is externally connected through an external video port or is internally connected to the display.</p>
 <p>Please see "Note on USB-C Alternate Modes" if you plan on including an alternate mode other than DisplayPort.</p>
 </td>
@@ -140,7 +140,7 @@ The end goal of these docking recommendations is to maximize compatibility and i
 </tr>
 </tbody>
 </table>
-All these recommendations are in addition to the touchpad requirements detailed in the <a href="../minimum/minimum-hardware-requirements-overview">minimum hardware requirements</a>.
+All these recommendations are in addition to the touchpad requirements detailed in the [minimum hardware requirements](../minimum/minimum-hardware-requirements-overview.md).
 
 ## Wireless docking
 
@@ -168,5 +168,3 @@ Windows 10 will discover, pair, connect, and manage docks.
 
 [Windows support for USB Type-C connectors](https://msdn.microsoft.com/library/windows/hardware/mt628692)
 <br/>[Continuum](continuum.md)
-
-[Declaring a hardware device as a dock by using a Microsoft OS Descriptor]: declaring-a-hardware-device-as-a-dock.md
