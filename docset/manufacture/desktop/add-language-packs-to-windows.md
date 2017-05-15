@@ -40,88 +40,18 @@ Use care to limit the amount and types of language packs included with each imag
 
 Some capabilities have additional dependencies, as shown in the following table.
 
-<table>
-<colgroup>
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Component</th>
-<th align="left">Sample file name</th>
-<th align="left">Dependencies</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">Language pack</td>
-<td align="left"><code>Microsoft-Windows-Client-Language-Pack_x64_es-es.cab</code></td>
-<td align="left">None</td>
-<td align="left">UI text, including basic Cortana capabilities.</td>
-</tr>
-<tr class="even">
-<td align="left">Language interface pack</td>
-<td align="left"><code>Microsoft-Windows-Client-Language-Interface-Pack_x64_ca-es-valencia.cab</code></td>
-<td align="left">Requires a specific fully-localized or partially-localized language pack. Example: ca-es-valencia requires es-es. To learn more, see [Available Language Packs for Windows](available-language-packs-for-windows.md).</td>
-<td align="left"><p>UI text, including basic Cortana capabilities.</p>
-<p>Not all of the language resources for the UI are included in a LIP. LIPs require at least one language pack (or parent language). A parent language pack provides support for a LIP. The parts of the UI that are not translated into the LIP language are displayed in the parent language. In countries or regions where two languages are commonly used, you can provide a better user experience by applying a LIP over a language pack.</p></td>
-</tr>
-<tr class="odd">
-<td align="left">Basic</td>
-<td align="left"><code>Microsoft-Windows-LanguageFeatures-Basic-fr-fr-Package</code></td>
-<td align="left">None</td>
-<td align="left"><p>Spell checking, text prediction, word breaking, and hyphenation if available for the language.</p>
-<p>You must add this component before adding any of the following components.</p></td>
-</tr>
-<tr class="even">
-<td align="left">Fonts</td>
-<td align="left"><code>Microsoft-Windows-LanguageFeatures-Fonts-Thai-Package</code></td>
-<td align="left">None</td>
-<td align="left"><p>Fonts.</p>
-<p>Required for some regions to render text that appears in documents. Example, th-TH requires the Thai font pack. To learn more, see [Features On Demand V2 (Capabilities)](features-on-demand-v2--capabilities.md).</p></td>
-</tr>
-<tr class="odd">
-<td align="left">Optical character recognition</td>
-<td align="left"><code>Microsoft-Windows-LanguageFeatures-OCR-fr-fr-Package</code></td>
-<td align="left">Basic</td>
-<td align="left">Recognizes and outputs text in an image.</td>
-</tr>
-<tr class="even">
-<td align="left">Handwriting recognition</td>
-<td align="left"><code>Microsoft-Windows-LanguageFeatures-Handwriting-fr-fr-Package</code></td>
-<td align="left">Basic</td>
-<td align="left">Enables handwriting recognition for devices with pen input.</td>
-</tr>
-<tr class="odd">
-<td align="left">Text-to-speech</td>
-<td align="left"><code>Microsoft-Windows-LanguageFeatures-TextToSpeech-fr-fr-Package</code></td>
-<td align="left">Basic</td>
-<td align="left">Enables text to speech, used by Cortana and Narrator.</td>
-</tr>
-<tr class="even">
-<td align="left">Speech recognition</td>
-<td align="left"><code>Microsoft-Windows-LanguageFeatures-Speech-fr-fr-Package</code></td>
-<td align="left">Basic, Text-To-Speech recognition</td>
-<td align="left">Recognizes voice input, used by Cortana and Windows Speech Recognition.</td>
-</tr>
-<tr class="even">
-<td align="left">Retail Demo experience</td>
-<td align="left"><code>Microsoft-Windows-RetailDemo-OfflineContent-Content-fr-fr-Package</code></td>
-<td align="left">Basic</td>
-<td align="left">[Retail Demo experience](https://msdn.microsoft.com/windows/uwp/monetize/retail-demo-experience)</td>
-</tr>
-<tr class="odd">
-<td align="left">WinRE</td>
-<td align="left">Multiple, see [Customize Windows RE](customize-windows-re.md).</td>
-<td align="left">None</td>
-<td align="left">Used to help end users repair and recover their PCs. See [Customize Windows RE](customize-windows-re.md).</td>
-</tr>
-</tbody>
-</table>
-
+| Component | Sample file name | Dependencies |	Description |
+| --- | --- | --- | --- |
+|Language pack |	`Microsoft-Windows-Client-Language-Pack_x64_es-es.cab` |	None |	UI text, including basic Cortana capabilities. |
+|Language interface pack |	`Microsoft-Windows-Client-Language-Interface-Pack_x64_ca-es-valencia.cab` |	Requires a specific fully-localized or partially-localized language pack. Example: ca-es-valencia requires es-es. To learn more, see [Available Language Packs for Windows](available-language-packs-for-windows.md). | UI text, including basic Cortana capabilities.<br><br>Not all of the language resources for the UI are included in a LIP. LIPs require at least one language pack (or parent language). A parent language pack provides support for a LIP. The parts of the UI that are not translated into the LIP language are displayed in the parent language. In countries or regions where two languages are commonly used, you can provide a better user experience by applying a LIP over a language pack. |
+|Basic |	`Microsoft-Windows-LanguageFeatures-Basic-fr-fr-Package` | None | Spell checking, text prediction, word breaking, and hyphenation if available for the language.<br><br>You must add this component before adding any of the following components. |
+| Fonts |	`Microsoft-Windows-LanguageFeatures-Fonts-Thai-Package` |	None | Fonts.<br><br>Required for some regions to render text that appears in documents. Example, th-TH requires the Thai font pack. To learn more, see [Features On Demand V2 (Capabilities)](features-on-demand-v2--capabilities.md). |
+| Optical character recognition |	`Microsoft-Windows-LanguageFeatures-OCR-fr-fr-Package` |	Basic |	Recognizes and outputs text in an image. |
+| Handwriting recognition |	`Microsoft-Windows-LanguageFeatures-Handwriting-fr-fr-Package` |	Basic |	Enables handwriting recognition for devices with pen input. |
+| Text-to-speech |	`Microsoft-Windows-LanguageFeatures-TextToSpeech-fr-fr-Package` |	Basic |	Enables text to speech, used by Cortana and Narrator. |
+| Speech recognition |	`Microsoft-Windows-LanguageFeatures-Speech-fr-fr-Package` |	Basic, Text-To-Speech recognition |	Recognizes voice input, used by Cortana and Windows Speech Recognition. |
+| Retail Demo experience |	`Microsoft-Windows-RetailDemo-OfflineContent-Content-fr-fr-Package` |	Basic |	[Retail Demo experience](https://msdn.microsoft.com/windows/uwp/monetize/retail-demo-experience). |
+| WinRE |	Multiple, see [Customize Windows RE](customize-windows-re.md).	| None |	Used to help end users repair and recover their PCs. See [Customize Windows RE](customize-windows-re.md). |
  
 
 ## <span id="Where_do_I_download_the_language_packs_"></span><span id="where_do_i_download_the_language_packs_"></span><span id="WHERE_DO_I_DOWNLOAD_THE_LANGUAGE_PACKS_"></span>Where do I download the language packs?
@@ -141,7 +71,7 @@ To see what's available, see [Available Language Packs for Windows](available-la
 -   Cross-language upgrades are not supported. This means that during upgrades or migrations, if you upgrade or migrate an operating system that has multiple language packs installed, you can upgrade or migrate to the system default UI language only. For example, if English is the default language, you can upgrade or migrate only to English.
 -   The default language cannot be removed because it is used to generate computer security identifiers (SIDs). The default UI language is the language that is selected during the Out-Of-Box-Experience (OOBE), the UI language specified in the Deployment Image Servicing and Management (DISM) command-line tool, or in the unattended answer file if you skip OOBE.
 -   To add language packs using Windows PE, you may need to add pagefile support to Windows PE. For more information, see [Deployment Image Servicing and Management (DISM) Best Practices](deployment-image-servicing-and-management--dism--best-practices.md).
--   Do not install a language pack after an update. If you install an update (hotfix, general distribution release \[GDR\], or service pack \[SP\]) that contains language-dependent resources before you install a language pack, the language-specific changes that are contained in the update are not applied and you will need to reinstall the update. Always install language packs before installing updates.
+-	If you install an update (hotfix, general distribution release [GDR], or service pack [SP]) that contains language-dependent resources prior to installing a language pack, the language-specific changes in the update won't be applied when you add the language pack. You need to reinstall the update to apply language-specific changes. To avoid reinstalling updates, install language packs before installing updates.
 -   The version of the language pack must match the version of Windows. For example, you can't add a Windows 10 language pack to Windows 8, or add Windows 8 language pack to Windows 10. The build number must also match.
 
 ## <span id="LPInstallMethods"></span><span id="lpinstallmethods"></span><span id="LPINSTALLMETHODS"></span>Installation methods
