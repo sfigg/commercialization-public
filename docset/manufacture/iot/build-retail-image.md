@@ -29,7 +29,7 @@ We''ll take our customizations, put them together, and test them in a retail bui
 
 2.  Add your feature manifest, OEMFM.xml, into the list of AdditionalFMs. At the same time, add the feature manifest: OEMCommonFM.xml, which contains the OEM\_CustomCmd package that configures your app on the first boot:
 
-``` syntax
+    ``` syntax
     <AdditionalFMs>
       <!-- Including BSP feature manifest -->
       <AdditionalFM>%BLD_DIR%\MergedFMs\RPi2FM.xml</AdditionalFM>
