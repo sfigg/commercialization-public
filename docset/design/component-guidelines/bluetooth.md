@@ -29,7 +29,7 @@ Additional features that were added after Windows 10, version 1507 are marked a
 | QD ID                                                  | Name                                                                   | Product type      | Date         |
 |--------------------------------------------------------|------------------------------------------------------------------------|-------------------|--------------|
 | [72550](http://go.microsoft.com/fwlink/?LinkId=823549) | Windows 10 Mobile                                                      | Profile Subsystem | 31-July-2015 |
-| [70587](http://go.microsoft.com/fwlink/?LinkId=823550) | Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) | Host Subsystem    | 14-July-2015 |
+| [70587](http://go.microsoft.com/fwlink/?LinkId=823550) | Windows 10 for Desktop editions (Home, Pro, Enterprise, and Education) | Host Subsystem    | 14-July-2015 |
 | [84637](http://go.microsoft.com/fwlink/?LinkId=823551) | Windows 10 Mobile updated AVRCP                                        | Profile Subsystem | 17-June-2016 |
 | [94254](http://go.microsoft.com/fwlink/?LinkId=848229) | Windows 10 Creators Update                                             | Host Subsystem    | 14-March-2017 |
 
@@ -37,7 +37,7 @@ Additional features that were added after Windows 10, version 1507 are marked a
 
 ### Bluetooth features
 
--   Converged Bluetooth Core stack. Audio profiles differ in behavior between Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) and Windows 10 Mobile. 
+-   Converged Bluetooth Core stack. Audio profiles differ in behavior between Windows 10 for Desktop editions (Home, Pro, Enterprise, and Education) and Windows 10 Mobile. 
 
 -   Compliant to the standard Bluetooth 4.1 (for all mandatory spec requirements, not for optional requirements)
 
@@ -45,7 +45,7 @@ Additional features that were added after Windows 10, version 1507 are marked a
 
     -   [Hardware Offload (HCI)](https://msdn.microsoft.com/library/windows/hardware/dn917903.aspx): Microsoft defines vendor-specific HCI commands and events that are consumed by Windows
 
-    -   Dual mode support (except in Windows 10 Mobile): Dual mode support for Bluetooth classic and Bluetooth LE. For example, a Jabra Pulse sport can transfer heart rate data over Bluetooth LE and stream music over a classic profile. Bluetooth classic, the older standard, is still needed for higher data-rate or long-range applications.
+    -   Dual mode support (except in Windows 10 Mobile): Dual mode support for Bluetooth BR/EDR and Bluetooth LE. For example, a Jabra Sport Pulse can transfer heart rate data over Bluetooth LE and stream music over a BR/EDR profile. Bluetooth BR/EDR, the older standard, is still needed for higher data-rate or long-range applications.
 
     -   LE privacy 1.1: Windows protects the user’s privacy by randomizing the Bluetooth address whenever it is broadcast.
 
@@ -65,7 +65,7 @@ Additional features that were added after Windows 10, version 1507 are marked a
 
     -   (1607) [Pre-pair Bluetooth devices during manufacturing](bluetooth-prepairing.md): Allows for a seamless out-of-box experience that allows Bluetooth devices to just work. 
 
-    -   (1703) Hands-Free Profile (HFP) 1.6 specification with Wideband speech on Windows 10 for desktop editions.
+    -   (1703) Hands-Free Profile (HFP) 1.6 specification with Wideband speech on Windows 10 for Desktop editions.
 
 -   APIs/Profiles
 
@@ -73,7 +73,7 @@ Additional features that were added after Windows 10, version 1507 are marked a
 
     -   Existing Windows Phone Background support converged to Desktop.
 
-    -   Bluetooth audio enhancements (wideband speech, aptX®) - High Definition sound while limiting Lip Sync and latency issues.
+    -   Bluetooth audio enhancements (Wideband speech, aptX®) - High Definition sound while limiting Lip Sync and latency issues.
 
     -   (1511) In App Pairing: Allows apps to discover, pair, and connect to devices all without leaving the app in question. See this [GitHub code sample](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/DeviceEnumerationAndPairing) and [DeviceInformationPairing class](https://msdn.microsoft.com/library/windows/apps/windows.devices.enumeration.deviceinformationpairing.aspx) for more information.
 
@@ -81,19 +81,19 @@ Additional features that were added after Windows 10, version 1507 are marked a
 
     -   (1607) Map apps can now use Cortana's voice for navigation.
 
-    -   (1703) Support for [Call Control APIs](https://docs.microsoft.com/en-us/uwp/api/Windows.ApplicationModel.Calls) on Windows 10 for desktop editions.
+    -   (1703) Support for [Call Control APIs](https://docs.microsoft.com/en-us/uwp/api/Windows.ApplicationModel.Calls) on Windows 10 for Desktop editions.
 
     -   (1703) Support for GATT Server, Bluetooth LE Peripheral role and non-paired support for Bluetooth LE. See our [developer post](http://aka.ms/bluetoothgatt) for more details.
 
 ### Bluetooth features list by edition
 
-The following table provides a summary of the Bluetooth features in the Windows 10 for desktop editions and Windows 10 Mobile editions.
+The following table provides a summary of the Bluetooth features in the Windows 10 for Desktop editions and Windows 10 Mobile editions.
 
 <table>
 <thead valign="bottom">
 <tr>
 <th>Feature</th>
-<th>Windows 10 for desktop editions</th>
+<th>Windows 10 for Desktop editions</th>
 <th>Windows 10 Mobile</th>
 </tr>
 </thead>
@@ -124,7 +124,7 @@ The following table provides a summary of the Bluetooth features in the Windows�
 <td>Yes</td>
 </tr>
 <tr class="odd">
-<td>Dual mode, LE Privacy 1.1 (BT Spec updates)</td>
+<td>Dual mode, LE Privacy 1.1 (Bluetooth Spec updates)</td>
 <td>Yes</td>
 <td>Dual mode - Yes
 <p>(Only while using pairing APIs)<sup>*</sup></p></td>
@@ -136,7 +136,7 @@ The following table provides a summary of the Bluetooth features in the Windows�
 </tr>
 <tr class="odd">
 <td>Bluetooth audio enhancements – Wideband speech</td>
-<td>No</td>
+<td>Yes</td>
 <td>Yes</td>
 </tr>
 <tr class="even">
@@ -196,11 +196,11 @@ The following table provides a summary of the Bluetooth features in the Windows�
 
 ### Upgrading from Windows 10
 
-During upgrade, Windows will migrate Bluetooth drivers, applications, and profile packs. There is still the ability to check for Windows Update for a more current driver, and install during the upgrade process. If Bluetooth is not working or missing after upgrade, please file feedback in the Feedback Hub with details of what is happening. Users may need to check their hardware manufacturer's or OEM's website to install Windows 10 compatible drivers.
+During upgrade, Windows will migrate Bluetooth drivers, applications, and profile packs. There is still the ability to check Windows Update for a more current driver, and install during the upgrade process. If Bluetooth is not working or missing after upgrade, please file feedback in the Feedback Hub with details of what is happening. Users may need to check their hardware manufacturer's or OEM's website to install Windows 10 compatible drivers.
 
 ### Upgrading from Windows 7, Windows 8, or Windows 8.1
 
-During upgrade, Windows 10 will not migrate existing Bluetooth drivers, applications, and profile packs. During the upgrade process, Windows setup will check Windows Update to download and install a Windows 10 Bluetooth filter driver to re-enable Bluetooth radio functionality with the inbox profile support listed in the table above. Users will have to check their hardware manufacturers/OEMs website for updated profile packs if desired.
+During upgrade, Windows 10 will not migrate existing Bluetooth drivers, applications, and profile packs. During the upgrade process, Windows setup will check Windows Update to download and install a Windows 10 Bluetooth filter driver to re-enable Bluetooth radio functionality with the inbox profile support listed in the table above. Users will have to check their hardware manufacturer's or OEM's website for updated profile packs if desired.
 
 ## Maintained guidelines from Windows 8.1
 
@@ -270,7 +270,7 @@ We do not recommend an external switch for controlling the on/off state of the B
 
 [Hardware Offload (HCI)](https://msdn.microsoft.com/library/windows/hardware/dn917903.aspx)
 
-[Dual mode, LE Privacy 1.1 (BT Core Spec updates)](https://www.bluetooth.org/DocMan/handlers/DownloadDoc.ashx?doc_id=282159)
+[Dual mode, LE Privacy 1.1 (Bluetooth Core Spec updates)](https://www.bluetooth.org/DocMan/handlers/DownloadDoc.ashx?doc_id=282159)
 
 [Bluetooth audio enhancements - aptX® audio codec](http://www.csr.com/products/aptx)
 
