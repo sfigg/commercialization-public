@@ -67,7 +67,7 @@ To complete this walkthrough, you need the following:
 
 -   Access to a network share to store your custom image and Windows Setup source files.
 
-## <span id="bkmk_1"></span><span id="BKMK_1"></span>Step 1: Copy the Windows product DVD source files to a network share
+## <span id="bkmk-1"></span><span id="BKMK-1"></span>Step 1: Copy the Windows product DVD source files to a network share
 
 
 On your technician computer, copy the entire content of the Windows product DVD to a network share. For example:
@@ -79,7 +79,7 @@ xcopy D: N:\WindowsDVD\ /s
 
 where D: is the DVD-ROM drive on your local computer.
 
-## <span id="bkmk_2"></span><span id="BKMK_2"></span>Step 2: Create a master installation
+## <span id="bkmk-2"></span><span id="BKMK-2"></span>Step 2: Create a master installation
 
 
 1.  Create a master installation by using one of the following methods:
@@ -90,7 +90,7 @@ where D: is the DVD-ROM drive on your local computer.
 
 2.  After the installation is complete, shut down the computer.
 
-## <span id="bkmk_3"></span><span id="BKMK_3"></span>Step 3: Capture an image of the installation
+## <span id="bkmk-3"></span><span id="BKMK-3"></span>Step 3: Capture an image of the installation
 
 
 In this step, you will capture an image of the reference installation by using the Deployment Image Servicing and Management (**DISM**) tool and then store the custom image on a network share.
@@ -114,7 +114,7 @@ In this step, you will capture an image of the reference installation by using t
 
 For more information, see [DISM Image Management Command-Line Options](dism-image-management-command-line-options-s14.md).
 
-## <span id="bkmk_4"></span><span id="BKMK_4"></span>Step 4: Create a custom answer file
+## <span id="bkmk-4"></span><span id="BKMK-4"></span>Step 4: Create a custom answer file
 
 
 In this step, you will create an answer file that points to your custom image. This step assumes that you have already built an answer file and have a working catalog.
@@ -235,7 +235,7 @@ In this step, you will create an answer file that points to your custom image. T
 
     If necessary, provide network credentials for appropriate network access.
 
-## <span id="bkmk_5"></span><span id="BKMK_5"></span>Step 5: Deploy the image by using Windows Setup
+## <span id="bkmk-5"></span><span id="BKMK-5"></span>Step 5: Deploy the image by using Windows Setup
 
 
 In this step, you will deploy your custom image from a network share onto a destination computer.
