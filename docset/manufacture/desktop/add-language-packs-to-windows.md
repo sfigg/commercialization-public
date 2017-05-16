@@ -83,7 +83,7 @@ You can add a language pack to an image in the following ways:
 -   [**Using Windows Setup.**](#add-setup)
 -   **On a running operating system.** If you need to boot the operating system to install an application or to test and validate the installation, you can add a language pack to the running operating system by using DISM or the language pack setup tool (Lpksetup.exe). You can use this method only for language packs that are stored outside of the Windows image. For more information, see [Add and Remove Language Packs on a Running Windows Installation](add-and-remove-language-packs-on-a-running-windows-installation.md) and [Add Language Interface Packs to Windows](add-language-interface-packs-to-windows.md).
 
-## <span id="add_setup"></span><span id="ADD_SETUP"></span>Add or remove languages using Windows Setup
+## <span id="add-setup"></span><span id="ADD-SETUP"></span>Add or remove languages using Windows Setup
 
 
 **To deploy a multilingual edition of Windows by using Windows Setup**
@@ -101,7 +101,7 @@ You can add a language pack to an image in the following ways:
 
 To learn more, see [Add Multilingual Support to a Windows Distribution](add-multilingual-support-to-a-windows-distribution.md) or [Add Multilingual Support to Windows Setup](add-multilingual-support-to-windows-setup.md).
 
-## <span id="add_offline"></span><span id="ADD_OFFLINE"></span>Add or remove languages offline
+## <span id="add-offline"></span><span id="ADD-OFFLINE"></span>Add or remove languages offline
 
 Here's how to add and remove languages on an offline image (install.wim).
 

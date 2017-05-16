@@ -33,12 +33,6 @@ For more information about sideloading line-of-business Windows Store apps, see 
 
 If your server has Remote Authentication Dial-In User Service (RADIUS) clients or remote RADIUS server groups defined in the Network Policy Server (NPS) configuration, you should remove this information before you deploy it to a different computer. For more information, see [Prepare a Network Policy Server (NPS) for Imaging](prepare-a-network-policy-server--nps--for-imaging.md).
 
-In this topic:
-
--   [Generalizing an Image](#bkmk-1)
-
--   [Generalizing a Virtual Hard Disk](#bkmk-2)
-
 ## <span id="bkmk_1"></span><span id="BKMK_1"></span>Generalizing an Image
 
 

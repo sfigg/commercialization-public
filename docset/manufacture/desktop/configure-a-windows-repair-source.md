@@ -20,13 +20,6 @@ Features on demand enables you to remove an optional feature from a Windows® im
 
 Automatic corruption repair provides files to repair Windows if the operating system has become corrupted. Users can also use a specified repair source on your network or use Windows Update to retrieve the source files that are required to enable a feature or to repair a Windows image. For more information, see [Repair a Windows Image](repair-a-windows-image.md).
 
-In this section:
-
--   [Choose a Repair Source](#bkmk-specify)
-
--   [Set Group Policy](#bkmk-setgpo)
-
--   [Maintain a Repair Source](#bkmk-maintain)
 
 ## <span id="BKMK_Specify"></span><span id="bkmk_specify"></span><span id="BKMK_SPECIFY"></span>Choose a Repair Source
 

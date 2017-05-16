@@ -16,11 +16,6 @@ ms.technology: windows-oem
 
 If a Windows device can't start, it automatically fails over to the Windows Recovery Environment (Windows RE). The Automatic Repair tool in Windows RE automates the diagnosis and repair of an unbootable Windows installation. Windows RE is also a starting point for several tools for manual system recovery. This topic describes the automatic failover behavior, manual diagnosis, and repair process in Windows RE.
 
-In this topic:
-
--   [Recovering from Startup Failures](#bkmk-1)
-
--   [Advanced Troubleshooting Utilities in Windows RE](#bkmk-2)
 
 ## <span id="bkmk_1"></span><span id="BKMK_1"></span>Recovering from startup failures
 

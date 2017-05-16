@@ -16,27 +16,6 @@ ms.technology: windows-oem
 
 This section describes some best practices related to servicing a Windows® image. We recommend that you implement these practices wherever possible.
 
-In this topic:
-
-[Elevate Permissions for Command-Line Tools](#bkmk-elevate)
-
-[Disable Antivirus Tools](#bkmk-av)
-
-[Servicing an Image](#bkmk-servicing)
-
-[Changing International Settings](#bkmk-intl)
-
-[Use Log Files](#bkmk-log)
-
-[Package Locations](#bkmk-pkg)
-
-[Storing Files on a Network Share](#netshare)
-
-[Servicing a Windows Image from Windows PE](#bkmk-pe)
-
-[Scan for Corruption and Verify the Integrity of System Files](#bkmk-verify)
-
-[Improving Security for Windows Images](#security)
 
 ## <span id="BKMK_elevate"></span><span id="bkmk_elevate"></span><span id="BKMK_ELEVATE"></span>Elevate Permissions for Command-Line Tools
 

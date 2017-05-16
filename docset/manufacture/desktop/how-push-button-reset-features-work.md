@@ -249,7 +249,7 @@ Manufacturer-created media must contain the following:
 3.  A Push-button reset configuration file (Resetconfig.xml) which specifies disk partitioning information.
 4.  A DISKPART script to perform partitioning of the disk.
 
-### <span id="extensibility_points"></span><span id="EXTENSIBILITY_POINTS"></span>Extensibility points for push-button reset features
+### <span id="extensibility-points"></span><span id="EXTENSIBILITY-POINTS"></span>Extensibility points for push-button reset features
 
 Push-button reset provides extensibility points where manufacturers can insert custom operations when a user runs the **Refresh your PC** and **Reset your PC** features.
 

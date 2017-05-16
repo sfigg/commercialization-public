@@ -44,7 +44,7 @@ Here’s what you’ll need to know in order to sideload apps:
 <td align="left"><p>Shows the requirements to be met in order to sideload apps on devices running different Windows Editions. Includes how to use Group Policy to configure your enterprise PCs for sideloading apps.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[Configure PCs for Developing Windows Store Apps](#bkmk-developerlicense)</p></td>
+<td align="left"><p>[Configure PCs for Developing Windows Store Apps](#bkmk_developerlicense)</p></td>
 <td align="left"><p>Shows you how to configure your PC to have a developer license that does not expire. The PC can be used to develop Windows Store apps or enterprise apps that will be added to your enterprise devices.</p></td>
 </tr>
 <tr class="even">
@@ -52,7 +52,7 @@ Here’s what you’ll need to know in order to sideload apps:
 <td align="left"><p>Shows you how to sideload apps that you develop.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[Add Multiple Languages for Apps](#bkmk-mulitlang)</p></td>
+<td align="left"><p>[Add Multiple Languages for Apps](#bkmk_mulitlang)</p></td>
 <td align="left"><p>Shows you how to prepare a multi-lingual image, sign-in to the image, install any desired app resource packs (including language) and then use Copy Profile to capture the image.</p></td>
 </tr>
 <tr class="even">
@@ -89,7 +89,7 @@ For more information about how to sign an app and using certificates, see [App P
 
 However, you can use a developer license to add apps that are in development to your PC. For more information about testing apps that are in development, see [Get a Developer License](http://go.microsoft.com/fwlink/?LinkId=241313).
 
-You can use Group Policy to configure your domain-joined PCs to have a developer license that does not expire to support app development. Once the PCs are configured, you won’t need to connect to the Internet to obtain or renew a license. See [Configure PCs for Developing Windows Store Apps](#bkmk-developerlicense) for more information.
+You can use Group Policy to configure your domain-joined PCs to have a developer license that does not expire to support app development. Once the PCs are configured, you won’t need to connect to the Internet to obtain or renew a license. See [Configure PCs for Developing Windows Store Apps](#bkmk_developerlicense) for more information.
 
 ## <span id="SideloadingRequirements"></span><span id="sideloadingrequirements"></span><span id="SIDELOADINGREQUIREMENTS"></span>Configure PCs for Sideloading Requirements
 

@@ -16,17 +16,6 @@ ms.technology: windows-oem
 
 You can use an answer file together with the System Preparation (**Sysprep**) tool to configure unattended Windows® Setup settings. This topic describes some considerations and processes for using answer files together with **Sysprep**. For more information about Windows components and settings that you can add to an answer file, see the [Unattended Windows Setup Reference](http://go.microsoft.com/fwlink/?LinkId=206281).
 
-In this topic:
-
--   [Running Sysprep an Unlimited Number of Times](#bkmk-skiprearm)
-
--   [Applying Settings in the generalize, auditSystem, and auditUser Configuration Passes](#bkmk-1)
-
--   [Caching Answer Files to the Computer](#bkmk-2)
-
--   [Persisting Plug and Play Device Drivers During the generalize Configuration Pass](#bkmk-3)
-
--   [Displaying RunSynchronous Actions in an Answer File](#bkmk-4)
 
 ## <span id="bkmk_skipRearm"></span><span id="bkmk_skiprearm"></span><span id="BKMK_SKIPREARM"></span>Running Sysprep an Unlimited Number of Times
 
