@@ -152,7 +152,7 @@ You can specify one `SystemDisk` section. Here's the required and optional eleme
 
  
 
-## <span id="usingresetconfig.xml"></span><span id="USINGRESETCONFIG.XML"></span>Using ResetConfig.xml
+## <span id="usingresetconfig-xml"></span><span id="USINGRESETCONFIG-XML"></span>Using ResetConfig.xml
 
 
 If you use a text editor to author your .xml files, you must save the document with an .xml file name extension, and use UTF-8 encoding. You must not use ANSI coding.
