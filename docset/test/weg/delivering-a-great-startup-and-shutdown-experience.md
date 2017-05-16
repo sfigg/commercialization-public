@@ -1,3 +1,19 @@
+---
+title: Delivering a great startup and shutdown experience
+description: Overview of fast startup and recommendations to deliver the best on/off experience
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 
+ms.prod: W10
+ms.mktglfcycl: operate
+ms.sitesec: msdn
+ms.author: windows-hardware-design-content
+ms.date: 05/05/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
+---
 
 # Delivering a great startup and shutdown experience
 

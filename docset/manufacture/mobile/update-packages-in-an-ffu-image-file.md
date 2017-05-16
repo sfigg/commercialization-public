@@ -23,7 +23,7 @@ ImageApp has the following important limitations:
 -   ImageApp cannot be used to remove packages from an image.
 -   To prepare a device platform to use compressed partitions with CompactOS, you'll need a PC with the Windows 10 version of DISM. If your technician PC is running a previous version of Windows, you can get this by installing the Windows Assessment and Deployment Kit (ADK) for Windows 10, or by copying and installing the DISM driver. This process is the same as the one used to install DISM on Windows PE. To learn more, see [Install Windows 10 using a previous version of Windows PE: To add DISM into your Windows PE image](../desktop/copy-dism-to-another-computer.md).
 
-When updating an existing package, be sure to increment the version number. For more information, see [Update requirements](../../service/mobile/update-requirements.md). When adding a package that does not already exist in the image, any version number can be used.
+When updating an existing package, be sure to increment the version number. For more information, see [Update requirements](https://msdn.microsoft.com/windows/hardware/commercialize/service/mobile/update-requirements). When adding a package that does not already exist in the image, any version number can be used.
 
 Specify the packages to be added in an input XML file similar to the one shown here.
 

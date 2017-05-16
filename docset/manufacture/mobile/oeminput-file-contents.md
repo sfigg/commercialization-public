@@ -86,7 +86,7 @@ The following table describes the required elements in the OEMInput file.
 </ul>
 <div class="alert">
 <strong>Important</strong>  
-<p>The 8960 SOC options must only be used for images that are used to create updates for Windows 10 Mobile. For more information see <a href="../../service/mobile/index.md">Update</a>.</p>
+<p>The 8960 SOC options must only be used for images that are used to create updates for Windows 10 Mobile. For more information see <a href="https://msdn.microsoft.com/windows/hardware/commercialize/service/mobile/index">Update</a>.</p>
 </div>
 <div>
  

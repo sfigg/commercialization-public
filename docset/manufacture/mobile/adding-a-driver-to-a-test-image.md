@@ -445,7 +445,7 @@ To view the driver load process, complete the following steps to set a debug sta
     2.  Generate, sign, and flash the image.
 
     **Note**  
-    It is also possible to update the version of the driver by including the driver version in the INF file and then using the IUTool to deploy the updated driver to the phone. For more information about using IUTool, see [IUTool.exe: Update packages on a phone](update-packages-on-a-phone-and-get-package-update-logs.md). This process is similar to the process that is used to create a driver update. For more information about that, see [Update a KMDF device driver](../../service/mobile/update-a-kmdf-device-driver.md).
+    It is also possible to update the version of the driver by including the driver version in the INF file and then using the IUTool to deploy the updated driver to the phone. For more information about using IUTool, see [IUTool.exe: Update packages on a phone](update-packages-on-a-phone-and-get-package-update-logs.md). This process is similar to the process that is used to create a driver update. For more information about that, see [Update a KMDF device driver](https://msdn.microsoft.com/windows/hardware/commercialize/service/mobile/update-a-kmdf-device-driver).
 
      
 
