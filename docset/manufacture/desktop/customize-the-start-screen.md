@@ -20,14 +20,6 @@ Line-of-business (LOB) Windows Store apps do not have to be certified or install
 
 To install Windows Store apps that are not part of your business line, you must use the Windows Store.
 
-**In this topic:**
-
-[Use CopyProfile to preserve Start screen layout](#bkmk-copyprofile)
-
-[Copy the AppsFolderLayout.Bin file to set default Start screen layout](#bkmk-appfolder)
-
-[Use StartTiles settings to lay out the Start screen](#bkmk-starttiles)
-
 ## <span id="BKMK_CopyProfile"></span><span id="bkmk_copyprofile"></span><span id="BKMK_COPYPROFILE"></span>Use CopyProfile to preserve Start screen layout
 
 
@@ -36,7 +28,7 @@ The CopyProfile method allows you to remove tiles from the **Start** screen, add
 You can add provisioned app packages (.appx) and customize the **Start** screen for your Windows image before you deploy the image. Windows apps that are added to the Windows image are called *provisioned* apps. Provisioned apps are staged in the image and are scheduled to be installed for every user of the Windows image at first logon.
 
 **Note**  
-If you use both the CopyProfile and StartTiles settings in your unattended answer file, CopyProfile will override the StartTiles settings. To use the StartTiles settings on an image generated with CopyProfile, delete the appsFolderLayout.bin file from the image. For more information about this file, see [Copy the AppsFolderLayout.Bin file to set default Start screen layout](#bkmk-appfolder).
+If you use both the CopyProfile and StartTiles settings in your unattended answer file, CopyProfile will override the StartTiles settings. To use the StartTiles settings on an image generated with CopyProfile, delete the appsFolderLayout.bin file from the image. For more information about this file, see [Copy the AppsFolderLayout.Bin file to set default Start screen layout](#bkmk_appfolder).
 
  
 
