@@ -18,14 +18,6 @@ A common deployment scenario is to capture a single Windows image from a referen
 
 To save time during installation and to speed up the out-of-box experience (OOBE) for end users, you can instruct Windows Setup to maintain the driver configurations from the reference computer as part of the Windows image. You should do this only when the hardware on the reference computer and the hardware on the destination computers are identical. When you do this, Windows Setup maintains driver configurations during image capture and deployment.
 
-In this topic:
-
--   [Instructing Windows Setup to Maintain Driver Configurations](#bkmk-1)
--   [Overview](#bkmk-2)
--   [Best Practices for Driver Revisions and Driver Ranking](#bkmk-3)
--   [Troubleshooting Hardware Configuration Differences](#bkmk-4)
--   [Troubleshooting Driver Conflicts](#bkmk-5)
-
 ## <span id="bkmk_1"></span><span id="BKMK_1"></span>Instructing Windows Setup to Maintain Driver Configurations
 
 
