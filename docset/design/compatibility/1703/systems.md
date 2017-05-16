@@ -80,13 +80,8 @@ This section of the documentation provides specifications for hardware compatibi
  - [System.Fundamentals.WatchDogTimer](#system.fundamentals.watchdogtimer)
  - [System.Server.Assurance](#system.server.assurance)
  - [System.Server.AzureStack](#system.server.azurestack)
- - [System.Server.AzureStack.Storage](#system.server.azurestack.storage)
- - [System.Server.AzureStack.Networking](#system.server.azurestack.networking)
- - [System.Server.AzureStack.Firmware](#system.server.azurestack.firmware)
  - [System.Server.AzureStack.Security](#system.server.azurestack.security)
- - [System.Server.AzureStack.Security.Base](#system.server.azurestack.security.base)
  - [System.Server.AzureStack.BMC](#system.server.azurestack.bmc)
- - [System.Server.AzureStack.BMC.Base](#system.server.azurestack.bmc.base)
  - [System.Server.Base](#system.server.base)
  - [System.Server.BMC](#system.server.bmc)
  - [System.Server.DynamicPartitioning](#system.server.dynamicpartitioning)
@@ -4942,7 +4937,7 @@ PlayReadyModule, when available on a device in secure firmware in conjunction wi
 
 The following table shows the hardware, firmware and software requirements for Credential Guard.
 
- - MUST meet all Device Guard requirements as described in [System.Fundamentals.Security.DeviceGuard](#_System.Fundamentals.Security.Device). (except for the need of HVCI compatible drivers and Firmware UEFI NX Protection)
+ - MUST meet all Device Guard requirements as described in System.Fundamentals.Security.DeviceGuard. (except for the need of HVCI compatible drivers and Firmware UEFI NX Protection)
 
  - MUST meet the additional requirements as described in the table below:
 
@@ -6402,6 +6397,7 @@ This requirement is for the MaxPSASize in the HCCPARAMS to be set to 4 at the mi
 
 Storage devices based on the USB Attached SCSI Protocol (UASP) will utilize streams to achieve faster data transfer rates. To enable the best experience with these devices, every xHCI controller will need to support at least 31 primary streams.
 
+<a name="system.fundamentals.systemusb.usbc"></a>
 ## System.Fundamentals.SystemUSB.USBC
 
 > [!WARNING]
@@ -6613,7 +6609,7 @@ If the system implements UCSI, it must implement UCSI v1.0 (or later). In additi
      - Provider Capabilities Limited Reason
 
 
-
+<a name="system.fundamentals.tpm20"></a>
 ## System.Fundamentals.TPM20
 
 > [!WARNING]

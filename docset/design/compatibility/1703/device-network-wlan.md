@@ -20,10 +20,10 @@ ms.technology: windows-oem
  - [Device.Network.WLAN.SupportWakeFromLowPower](#device.network.wlan.supportwakefromlowpower)
  - [Device.Network.WLAN.SupportMACAddressRandomization](#device.network.wlan.supportmacaddressrandomization)
  - [Device.Network.WLAN.SupportHotspot2Dot0](#device.network.wlan.supporthotspot2dot0)
- - [Device.Network.WLAN.SupportDot11W ](#device.network.wlan.supportdot11w )
+ - [Device.Network.WLAN.SupportDot11W](#device.network.wlan.supportdot11w)
  - [Device.Network.WLAN.SupportFIPS](#device.network.wlan.supportfips)
  - [Device.Network.WLAN.SupportWiFiDirect](#device.network.wlan.supportwifidirect)
- - [Device.Network.WLAN.SupportWiFiDirectServices ](#device.network.wlan.supportwifidirectservices )
+ - [Device.Network.WLAN.SupportWiFiDirectServices](#device.network.wlan.supportwifidirectservices)
  - [Device.Network.WLAN.SupportWirelessDocking](#device.network.wlan.supportwirelessdocking)
  - [Device.Network.WLAN.SupportHostedNetwork](#device.network.wlan.supporthostednetwork)
 
@@ -611,7 +611,7 @@ The Wi-Fi MAC address is currently used to track users as they move through publ
 
 Device must report that it supports ActionFrameSupport in WDI\_TLV\_INTERFACE\_CAPABILITIES and optinally report that it supports ConnectToSSIDsBelongingToHESSID in WDI\_STATION\_ATTRIBUTES. Please refer to the WDI Spec for implementation details.
 
-<a name="device.network.wlan.supportdot11w "></a>
+<a name="device.network.wlan.supportdot11w"></a>
 ## Device.Network.WLAN.SupportDot11W 
 
 ### Device.Network.WLAN.SupportDot11W.Dot11W
@@ -921,7 +921,7 @@ When WMM prioritization is used with AC\_VI or AC\_VO (Voice/Video), WLAN device
 | **&nbsp;**                                             | &nbsp;        | AC\_VI/AC\_VO               | 40ms                                                      | 0.5%, not more than 3 consecutive packets |
 | **&nbsp;**                                             | AC\_VI/AC\_VO | AC\_VI/AC\_VO               | 50ms                                                      | 0.5%, not more than 3 consecutive packets |
 
-<a name="device.network.wlan.supportwifidirectservices "></a>
+<a name="device.network.wlan.supportwifidirectservices"></a>
 ## Device.Network.WLAN.SupportWiFiDirectServices 
 
 ### Device.Network.WLAN.SupportWiFiDirect.WiFiDirectServices **(WDI drivers only)**

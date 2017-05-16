@@ -56,7 +56,7 @@ You can use tools that are available for Windows 8.1 Connected Standby to evalua
 <td><p>These tests perform repeated transitions into and out of standby to ensure system health over time and prolonged usage.</p>
 <p>The tests include:</p>
 <ul>
-<li>[Connected Standby energy efficiency](../../test/assessments/connected-standby-energy-efficiency.md)</li>
+<li>[Connected Standby energy efficiency](https://msdn.microsoft.com/windows/hardware/commercialize/test/assessments/connected-standby-energy-efficiency)</li>
 <li>[Connected Standby Duration Test](https://msdn.microsoft.com/library/windows/hardware/dn949525)</li>
 <li>[Connected Standby Exit Latency Stress](https://msdn.microsoft.com/library/windows/hardware/dn940611)</li>
 <li>[Connected Standby Hardware Security Test](https://msdn.microsoft.com/library/windows/hardware/dn940396)</li>
