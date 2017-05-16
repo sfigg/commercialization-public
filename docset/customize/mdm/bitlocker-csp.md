@@ -144,7 +144,7 @@ The following diagram shows the BitLocker configuration service provider in tree
 
 <p style="margin-left: 20px">If you want to use BitLocker on a computer without a TPM, set the "ConfigureNonTPMStartupKeyUsage_Name" data. In this mode either a password or a USB drive is required for start-up. When using a startup key, the key information used to encrypt the drive is stored on the USB drive, creating a USB key. When the USB key is inserted the access to the drive is authenticated and the drive is accessible. If the USB key is lost or unavailable or if you have forgotten the password then you will need to use one of the BitLocker recovery options to access the drive.</p>
 
-<p style="margin-left: 20px">On a computer with a compatible TPM, four types of authentication methods can be used at startup to provide added protection for encrypted data. When the computer starts, it can use only the TPM for authentication, or it can also require insertion of a USB flash drive containing a startup key, the entry of a 4-digit to 20-digit personal identification number (PIN), or both.</p>
+<p style="margin-left: 20px">On a computer with a compatible TPM, four types of authentication methods can be used at startup to provide added protection for encrypted data. When the computer starts, it can use only the TPM for authentication, or it can also require insertion of a USB flash drive containing a startup key, the entry of a 6-digit to 20-digit personal identification number (PIN), or both.</p>
 
 <p style="margin-left: 20px">If you enable this policy setting, users can configure advanced startup options in the BitLocker setup wizard.</p>
 
@@ -201,11 +201,11 @@ The following diagram shows the BitLocker configuration service provider in tree
 <a href="" id="systemdrivesminimumpinlength"></a>**SystemDrivesMinimumPINLength**  
 <p style="margin-left: 20px">This setting is a direct mapping to the Bitlocker Group Policy "Configure minimum PIN length for startup" (GP MinimumPINLength_Name).</p>
 
-<p style="margin-left: 20px">This setting allows you to configure a minimum length for a Trusted Platform Module (TPM) startup PIN. This setting is applied when you turn on BitLocker. The startup PIN must have a minimum length of 4 digits and can have a maximum length of 20 digits.</p>
+<p style="margin-left: 20px">This setting allows you to configure a minimum length for a Trusted Platform Module (TPM) startup PIN. This setting is applied when you turn on BitLocker. The startup PIN must have a minimum length of 6 digits and can have a maximum length of 20 digits.</p>
 
 <p style="margin-left: 20px">If you enable this setting, you can require a minimum number of digits to be used when setting the startup PIN.</p>
 
-<p style="margin-left: 20px">If you disable or do not configure this setting, users can configure a startup PIN of any length between 4 and 20 digits.</p>
+<p style="margin-left: 20px">If you disable or do not configure this setting, users can configure a startup PIN of any length between 6 and 20 digits.</p>
 
 <p style="margin-left: 20px">Sample value for this node to enable this policy is:</p>
 
