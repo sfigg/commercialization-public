@@ -34,8 +34,8 @@ Update, refresh, or refurbish your after-market devices.
 <tr class="even">
 <td align="left">Refurbishing devices</td>
 <td align="left"><ul>
-<li>[Desktop: Bare metal reset/recovery: create recovery media while deploying new devices](../manufacture/desktop/create-media-to-run-push-button-reset-features-s14.md)</li>
-<li>[Desktop: Bare metal reset/recovery: enable your users to create recovery media](../manufacture/desktop/bare-metal-resetrecovery-enable-your-users-to-create-media-and-to-recover-hard-drive-space.md)</li>
+<li>[Desktop: Bare metal reset/recovery: create recovery media while deploying new devices](https://msdn.microsoft.com/windows/hardware/commercialize/manufacture/desktop/create-media-to-run-push-button-reset-features-s14)</li>
+<li>[Desktop: Bare metal reset/recovery: enable your users to create recovery media](https://msdn.microsoft.com/windows/hardware/commercialize/manufacture/desktop/bare-metal-resetrecovery-enable-your-users-to-create-media-and-to-recover-hard-drive-space)</li>
 <li>[Desktop: Reset a device](desktop/resetting-the-pc.md)</li>
 <li>[Mobile: Device refurbishment](mobile/index.md)</li>
 </ul></td>

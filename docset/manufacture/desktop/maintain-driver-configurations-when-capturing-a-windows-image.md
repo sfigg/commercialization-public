@@ -18,14 +18,6 @@ A common deployment scenario is to capture a single Windows image from a referen
 
 To save time during installation and to speed up the out-of-box experience (OOBE) for end users, you can instruct Windows Setup to maintain the driver configurations from the reference computer as part of the Windows image. You should do this only when the hardware on the reference computer and the hardware on the destination computers are identical. When you do this, Windows Setup maintains driver configurations during image capture and deployment.
 
-In this topic:
-
--   [Instructing Windows Setup to Maintain Driver Configurations](#bkmk-1)
--   [Overview](#bkmk-2)
--   [Best Practices for Driver Revisions and Driver Ranking](#bkmk-3)
--   [Troubleshooting Hardware Configuration Differences](#bkmk-4)
--   [Troubleshooting Driver Conflicts](#bkmk-5)
-
 ## <span id="bkmk_1"></span><span id="BKMK_1"></span>Instructing Windows Setup to Maintain Driver Configurations
 
 
@@ -35,7 +27,7 @@ Before you capture an image, generalize the computer by using an answer file tha
 
 1.  On your technician computer, open Windows System Image Manager (Windows SIM). Click **Start**, type **Windows System Image Manager**, and then select **Windows System Image Manager**.
 2.  Create a new answer file, or update an existing answer file. For more information, see [Create or Open an Answer File](https://msdn.microsoft.com/library/windows/hardware/dn915085) and [Best Practices for Authoring Answer Files](https://msdn.microsoft.com/library/windows/hardware/dn915073).
-3.  Add the Microsoft-Windows-PnpSysprep/**PersistAllDeviceInstalls** setting. For more information, see the [Overview](#bkmk-2) section in this topic.
+3.  Add the Microsoft-Windows-PnpSysprep/**PersistAllDeviceInstalls** setting. For more information, see the [Overview](#bkmk_2) section in this topic.
 4.  If the computer has undetectable hardware, include the Microsoft-Windows-PnpSysprep/**DoNotCleanUpNonPresentDevices** setting. For more information, see the [Undetectable hardware](#undetectablehardware) section in this topic.
 5.  Generalize the computer by using the answer file. For example:
 
@@ -59,7 +51,7 @@ To prepare a Windows image for deployment to multiple computers, you must use th
 When you generalize the computer, use an answer file that has the Microsoft-Windows-PnpSysPrep\\**PersistAllDeviceInstalls** setting to save time. This setting prevents Windows Setup from removing and reconfiguring the device state for identical hardware. On first boot, the detected device drivers are already preconfigured, potentially enabling a quicker first-boot experience.
 
 **Important**  
-Avoid using the **PersistAllDeviceInstalls** setting when the hardware and the hardware configuration on the reference computer are not identical to those of the destination computers. Even seemingly minor differences in hardware or hardware configuration can cause severe or easily overlooked problems. For more information, see the [Troubleshooting Hardware Configuration Differences](#bkmk-4) section of this topic.
+Avoid using the **PersistAllDeviceInstalls** setting when the hardware and the hardware configuration on the reference computer are not identical to those of the destination computers. Even seemingly minor differences in hardware or hardware configuration can cause severe or easily overlooked problems. For more information, see the [Troubleshooting Hardware Configuration Differences](#bkmk_4) section of this topic.
 
  
 

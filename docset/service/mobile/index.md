@@ -13,7 +13,7 @@ ms.technology: windows-oem
 
 # Mobile update
 
-##Updating a device
+## Updating a device
 To update your devices, you'll submit an update to Microsoft. The mobile operator (MO) can help test the updates. When approved, the update goes to the production update server, where customer phones can download and receive the updates through a cellular or a Wi-Fi connection. With the users consent, the device updates automatically, with most of the update processes working in the background.
 
 ### <span id="Before_you_begin"></span><span id="before_you_begin"></span><span id="BEFORE_YOU_BEGIN"></span>Before you begin
@@ -40,7 +40,7 @@ These types of updates can only be submitted individually.
 
  
 
-##Refurbishing a device
+## Refurbishing a device
 Use the topics in this section to learn more about refurbishing a mobile device running Windows 10 Mobile.
 
 

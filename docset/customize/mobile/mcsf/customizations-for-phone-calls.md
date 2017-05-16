@@ -49,9 +49,9 @@ Provides information about customizations you can configure for the phone or dia
 <td><p>Each country/region has a varying phone number length and style so with Windows 10 Mobile the OS maps a different minimum number of digits for matching caller ID that defaults to each country/region setting on the mobile device. This enables mobile users to get the proper settings for their preferred country/region.</p>
 <p>In Windows 10 Mobile:</p>
 <ul>
-<li><p>Mobile operators can modify the default mapping values specified by Microsoft using the settings in the <code>Phone/CallIDMatchOverrides</code> settings group. For more information on how to do this, see [Overriding the OS default minimum number of digits for caller ID matching](#overriding-os-default-min-number-digits).</p>
+<li><p>Mobile operators can modify the default mapping values specified by Microsoft using the settings in the <code>Phone/CallIDMatchOverrides</code> settings group.</p>
 <p>If mobile operators specify a number of digits that is outside the OS-supported range of 4-20, the OS defaults back to 6 digits.</p></li>
-<li><p>For any country/region that doesn't exist in the default mapping table, mobile operators can use the legacy <code>CallIDMatch</code> setting to specify the minimum number of digits to use for matching caller ID. For more information on how to do this, see [Specifying the minimum number of digits for caller ID matching for other countries/regions](#specifying-min-digits-for-other-countries-regions).</p></li>
+<li><p>For any country/region that doesn't exist in the default mapping table, mobile operators can use the legacy <code>CallIDMatch</code> setting to specify the minimum number of digits to use for matching caller ID.</p></li>
 </ul>
 <p>If OEMs do not customize this setting based on mobile operator requirements, the OS uses the current default of 6, which is the last 6 digits of the phone number.</p></td>
 </tr>
@@ -162,15 +162,4 @@ Provides information about customizations you can configure for the phone or dia
 </tr>
 </tbody>
 </table>
-
- 
-
- 
-
- 
-
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_phCustomization\p_phCustomization%5D:%20Customizations%20for%20phone%20calls%20%20RELEASE:%20%289/7/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
-
-
-
 

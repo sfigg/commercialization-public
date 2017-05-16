@@ -172,7 +172,7 @@ UDF options cannot be combined with ISO 9660 options. The **-ue**, **-uf**, and 
 
 ### <span id="bootOptions"></span><span id="bootoptions"></span><span id="BOOTOPTIONS"></span>CD or DVD Boot Options
 
-Boot options can be used to create bootable CD or DVD images. The following boot options can be used to generate single-boot entries. For more information, see [Use a single boot entry to create a bootable image](#example-singleboot).
+Boot options can be used to create bootable CD or DVD images. The following boot options can be used to generate single-boot entries. For more information, see [Use a single boot entry to create a bootable image](#example_singleboot).
 
 <table>
 <colgroup>
@@ -218,7 +218,7 @@ Single-boot entries and multi-boot entries cannot be combined in the same comman
 
  
 
-The following boot options can be used to generate multi-boot entries. For more information, see [Use multi-boot entries to create an image file](#examples-multi-boot).
+The following boot options can be used to generate multi-boot entries. For more information, see [Use multi-boot entries to create an image file](#examples_multi-boot).
 
 <table>
 <colgroup>
@@ -304,7 +304,7 @@ Optimization options can be used to optimize storage by encoding duplicate files
 
 ### <span id="order"></span><span id="ORDER"></span>Order Options
 
-Order options specify the file order on disk. The file order does not have to list all files. Any files that do not appear in this file are ordered as they would be ordinarily (that is, if the ordering file did not exist). For more information, see [Specify the boot order](#example-bootorder).
+Order options specify the file order on disk. The file order does not have to list all files. Any files that do not appear in this file are ordered as they would be ordinarily (that is, if the ordering file did not exist). For more information, see [Specify the boot order](#example_bootorder).
 
 The **-yo** option takes precedence over the **-y5** option.
 

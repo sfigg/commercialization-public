@@ -5402,12 +5402,12 @@ In the case where a converted immediate flip overrides a previous pending flip-o
 
 The driver must pass GPU clock and frequency values in the VSync ISR callback (DXGKARGCB\_NOTIFY\_INTERRUPT\_DATA).
 
-<a name="device.graphics.wddm22></a>
+<a name="device.graphics.wddm22"></a>
 ## Device.Graphics.WDDM22
 
 *WDDM 2.2 is an optional version level introduced for Windows 10 version 1607 builds greater than 14393. If a driver implements WDDM 2.2 then it must implement all of the WDDM 2.1 Requirements. WDDM 2.0 drivers will continue to run on the newer Windows 10 builds*
     
-<a name="device.graphics.wddm22.adapterrender.d3d11.parametrizedswizzlesr1></a>
+<a name="device.graphics.wddm22.adapterrender.d3d11.parametrizedswizzlesr1"></a>
 ## Device.Graphics.WDDM22.AdapterRender.D3D11.ParametrizedSwizzlesR1
 
 ### Device.Graphics.WDDM22.AdapterRender.D3D11.ParametrizedSwizzlesR1.CoreRequirements
@@ -5429,7 +5429,7 @@ If implementing D3D11 for WDDM 2.2, graphics drivers must divulge the address sw
 
 Tools need simpler ways to capture & playback the memory used by GPUs. Microsoft middleware needs UMA optimizations, but doesn’t require standard swizzle. Games are interested in uploading resource data with the CPU and without GPU involvement.
 
-<a name="device.graphics.wddm22.adapterrender.d3d11d3d12.systemshadercache></a>
+<a name="device.graphics.wddm22.adapterrender.d3d11d3d12.systemshadercache"></a>
 ## Device.Graphics.WDDM22.AdapterRender.D3D11D3D12.SystemShaderCache
 
 *This feature is optional for D3D11 and D3D12, however, if a driver chooses to implement this feature for either D3D version the feature must also be implemented for the other D3D version*
@@ -5458,7 +5458,7 @@ For D3D12, the driver may only invoke the shader cache callbacks in response to 
 Having a shader cache improves application startup time.
 
 
-<a name="device.graphics.wddm22.adapterrender.d3d12.9on12></a>
+<a name="device.graphics.wddm22.adapterrender.d3d12.9on12"></a>
 ## Device.Graphics.WDDM22.AdapterRender.D3D12.9on12 
 
 ### Device.Graphics.WDDM22.AdapterRender.D3D12.9on12.FloatingPointBehavior
@@ -5483,7 +5483,7 @@ In implementing D3D12 in WDDM 2.2, drivers have the option to support 9on12 Floa
 Application compatibility.
 
 
-<a name="device.graphics.wddm22.adapterrender.d3d12.astc></a>
+<a name="device.graphics.wddm22.adapterrender.d3d12.astc"></a>
 ## Device.Graphics.WDDM22.AdapterRender.D3D12.ASTC
 
 ### Device.Graphics.WDDM22.AdapterRender.D3D12.ASTC.CoreRequirement
@@ -5508,7 +5508,7 @@ In implementing D3D12 in WDDM 2.2, drivers have the option to support for ASTC t
 This feature may be critical for platform competitiveness.
 
 
-<a name="device.graphics.wddm22.adapterrender.d3d12.depthboundtest></a>
+<a name="device.graphics.wddm22.adapterrender.d3d12.depthboundtest"></a>
 ## Device.Graphics.WDDM22.AdapterRender.D3D12.DepthBoundTest
 
 ### Device.Graphics.WDDM22.AdapterRender.D3D12.DepthBoundTest.CoreRequirement
@@ -5535,7 +5535,7 @@ This API will be exposed as a PSO enable/disable toggle in order to support hard
  This supports Xbox/Windows D3D parity. 
 
 
-<a name="device.graphics.wddm22.adapterrender.d3d12.dxil.int64></a>
+<a name="device.graphics.wddm22.adapterrender.d3d12.dxil.int64"></a>
 ## Device.Graphics.WDDM22.AdapterRender.D3D12.DXIL.Int64
 
 ### Device.Graphics.WDDM22.AdapterRender.D3D12.DXIL.Int64.CoreRequirement
@@ -5559,7 +5559,7 @@ If a driver chooses to implement Int64 it must implement ShaderModel6 outlined i
 
 The 64-bit int requirement, if implemented, allows shader authors to simplify code dealing with 64-bit int quantities natively, allowing improved hardware utilization and improved performance. Again, this can be used to provide better performance for games and some scientific applications.
 
-<a name="device.graphics.wddm22.adapterrender.d3d12.dxil.waveops></a>
+<a name="device.graphics.wddm22.adapterrender.d3d12.dxil.waveops"></a>
 ## Device.Graphics.WDDM22.AdapterRender.D3D12.DXIL.WaveOps
 
 ### Device.Graphics.WDDM22.AdapterRender.D3D12.DXIL.WaveOps.CoreRequirement
@@ -5583,7 +5583,7 @@ If a driver chooses to implement WaveOps it must implement ShaderModel6 outlined
 
 The wave intrinsics requirement, if implemented, allows shader authors to exploit intra-wave communication, with guarantees around data visibility and synchronization that lead to better hardware utilization and improved performance. This leads to more competitive games and better user experiences.
 
-<a name="device.graphics.wddm22.adapterrender.d3d12.dxilcore></a>
+<a name="device.graphics.wddm22.adapterrender.d3d12.dxilcore"></a>
 ## Device.Graphics.WDDM22.AdapterRender.D3D12.DXILCore
 
 ### Device.Graphics.WDDM22.AdapterRender.D3D12.DXILCore.ShaderModel6
@@ -5610,7 +5610,7 @@ To declare support for the feature, a driver must enumerate Shader Model 6 or hi
 Shader Model 6 modernizes the program representation and aligns it with LLVM, a popular open source toolchain that provides a wealth of supporting resources and which allows developers to familiarize themselves faster and reuse expertise from other compiler projects. This will lead to shorter cycles to deliver innovation as well as opening the platform to third-party tooling scenarios, feature and quality contributions from the development community, and partnering with academic research communities.
 
 
-<a name="device.graphics.wddm22.adapterrender.d3d12.mvpmrtarrayindexrouting></a>
+<a name="device.graphics.wddm22.adapterrender.d3d12.mvpmrtarrayindexrouting"></a>
 ## Device.Graphics.WDDM22.AdapterRender.D3D12.MVPMRTArrayIndexRouting
 
 ### Device.Graphics.WDDM22.AdapterRender.D3D12.MVPMRTArrayIndexRouting.CoreRequirement
@@ -5634,7 +5634,7 @@ In implementing D3D12 in WDDM 2.2, drivers have the option to support Multi-View
 
 Beneficial to VR scenarios, platform rendering efficiency.
 
-<a name="device.graphics.wddm22.adapterrender.d3d12.programmablemsaa></a>
+<a name="device.graphics.wddm22.adapterrender.d3d12.programmablemsaa"></a>
 ## Device.Graphics.WDDM22.AdapterRender.D3D12.ProgrammableMSAA
 
 ### Device.Graphics.WDDM22.AdapterRender.D3D12.ProgrammableMSAA.CoreRequirement
@@ -5658,7 +5658,7 @@ In implementing D3D12 in WDDM 2.2, drivers have the option to support Programmab
 
 Beneficial to console parity, customer request, platform completeness.
 
-<a name="device.graphics.wddm22.adapterrender.d3d12.stereoprimitives></a>
+<a name="device.graphics.wddm22.adapterrender.d3d12.stereoprimitives"></a>
 ## Device.Graphics.WDDM22.AdapterRender.D3D12.StereoPrimitives
 
 ### Device.Graphics.WDDM22.AdapterRender.D3D12.StereoPremitives.CoreRequirement
@@ -5683,7 +5683,7 @@ In implementing D3D12 in WDDM 2.2, drivers have the option to support stereo pri
 Beneficial to VR scenarios, platform rendering efficiency.
 
 
-<a name="device.graphics.wddm22.adapterrender.d3d12.windowsholographic></a>
+<a name="device.graphics.wddm22.adapterrender.d3d12.windowsholographic"></a>
 ## Device.Graphics.WDDM22.AdapterRender.D3D12.WindowsHolographic
 
 ### Device.Graphics.WDDM22.AdapterRender.D3D12.WindowsHolographic.CoreRequirement
@@ -5719,7 +5719,7 @@ Each feature is described separately in sections above.
 See business justification for each above feature in previous sections.
 
 
-<a name="device.graphics.wddm22.adapterrender.d3d12core></a>
+<a name="device.graphics.wddm22.adapterrender.d3d12core"></a>
 ## Device.Graphics.WDDM22.AdapterRender.D3D12Core
 
 *D3D12 is an optional feature for WDDM 2.2 drivers, however, if implementing D3D12 in WDDM 2.2, drivers must support these features*
@@ -5853,7 +5853,7 @@ To measure when the GPU begin execution, a timestamp query will be placed at the
 
 The efficiency and latency improvements are required for Windows Holographic scenarios.
 
-<a name="device.graphics.wddm22.displayrender></a>
+<a name="device.graphics.wddm22.displayrender"></a>
 ## Device.Graphics.WDDM22.DisplayRender
 
 *If implementing WDDM 2.2, full graphics drivers must implement the following features. *
@@ -5879,7 +5879,7 @@ WDDM 2.2 graphics drivers must not use CHIDs for targeting through Windows Updat
 WDDM 2.2 enables a broad feature set across new hardware features such as HDR, Windows Holographic and several other software improvements. To enable these premium experiences on a variety of Windows PC form factors, WDDM 2.2 graphics drivers from graphics IHVs must include 4-part Hardware ID targeting in a single driver package.
 
 
-<a name="device.graphics.wddm22.displayrender.colomanagement></a>
+<a name="device.graphics.wddm22.displayrender.colomanagement"></a>
 ## Device.Graphics.WDDM22.DisplayRender.ColoManagement
 
 ### Device.Graphics.WDDM22.DisplayRender.ColorManagement.CoreRequirement
@@ -5962,7 +5962,7 @@ This requirement is one of many required to support High Dynamic Range (HDR).
 IHVs and OEMs are looking for ways to differentiate in order to garner higher margins beyond commodity devices and to delight their customers.  In gaming, video, and other areas the latest technology advancement is UHD (Ultra-high definition).  Although 4K is currently the best known manifestation of this, HDR (along with wider color gamuts) provides the real payoff with this technology, allowing for “ultra-realistic” games, videos, and creation scenarios.  
 
 
-<a name="device.graphics.wddm22.displayrender.highdynamicrrange></a>
+<a name="device.graphics.wddm22.displayrender.highdynamicrrange"></a>
 ## Device.Graphics.WDDM22.DisplayRender.HighDynamicRrange
 
 ### Device.Graphics.WDDM22.DisplayRender.HighDynamicRange.CoreRequirement
@@ -6118,7 +6118,7 @@ This requirement is one of many required to support High Dynamic Range (HDR).
 
 IHVs and OEMs are looking for ways to differentiate in order to garner higher margins beyond commodity devices and to delight their customers.  In gaming, video, and other areas the latest technology advancement is UHD (Ultra-high definition).  Although 4K is currently the best known manifestation of this, HDR (along with wider color gamuts) provides the real payoff with this technology, allowing for “ultra-realistic” games, videos, and creation scenarios.  
 
-<a name="device.graphics.wddm22.render.browsersecurity></a>
+<a name="device.graphics.wddm22.render.browsersecurity"></a>
 ## Device.Graphics.WDDM22.Render.BrowserSecurity
 
 ### Device.Graphics.WDDM22.Render.BrowserSecurity.ArbitraryCodeGuard

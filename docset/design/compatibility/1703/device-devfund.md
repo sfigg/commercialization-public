@@ -28,7 +28,7 @@ ms.technology: windows-oem
  - [Device.DevFund.Rollback](#device.devfund.rollback)
  - [Device.DevFund.Security](#device.devfund.security)
  - [Device.DevFund.Server](#device.devfund.server)
- - [Device.DevFund.Server.Nano](#device.devfund.nano)
+ - [Device.DevFund.Server.Nano](#device.devfund.server.nano)
  - [Device.DevFund.Server.PCI](#device.devfund.server.pci)
  - [Device.DevFund.StaticTools](#device.devfund.statictools)
 

@@ -619,6 +619,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>EnterpriseCloudPrint/CloudPrintResourceId</li>
 <li>EnterpriseCloudPrint/DiscoveryMaxPrinterLimit</li>
 <li>EnterpriseCloudPrint/MopriaDiscoveryResourceId</li>
+<li>Experience/AllowFindMyDevice</li>
 <li>Experience/AllowTailoredExperiencesWithDiagnosticData</li>
 <li>Experience/AllowWindowsSpotlightOnActionCenter</li>
 <li>Experience/AllowWindowsSpotlightWindowsWelcomeExperience</li>
@@ -868,6 +869,18 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <ul>
 <li>EnterpriseDataProtection/RetrieveByTimeRange/Type</li>
 <li>EnterpriseDataProtection/RetrieveByCount/Type</li>
+</ul>
+</td></tr>
+<tr class="even">
+<td style="vertical-align:top">[Connecting your Windows 10-based device to work using a deep link](mdm-enrollment-of-windows-devices.md#connecting-your-windows-10-based-device-to-work-using-a-deep-link)</td>
+<td style="vertical-align:top"><p>Added following deep link parameters to the table:</p>
+<ul>
+<li>Username</li>
+<li>Servername</li>
+<li>Accesstoken</li>
+<li>Deviceidentifier</li>
+<li>Tenantidentifier</li>
+<li>Ownership</li>
 </ul>
 </td></tr>
 </tbody>
@@ -1160,6 +1173,7 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <p>Added the following new policies for Windows 10, version 1703:</p> 
 <ul>
 <li>Browser/AllowFlashClickToRun</li>
+<li>Experience/AllowFindMyDevice</li>
 <li>Privacy/LetAppsAccessTasks</li>
 <li>Privacy/LetAppsAccessTasks_ForceAllowTheseApps</li>
 <li>Privacy/LetAppsAccessTasks_ForceDenyTheseApps</li>
@@ -1185,6 +1199,18 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <ul>
 <li>EnterpriseDataProtection/RetrieveByTimeRange/Type</li>
 <li>EnterpriseDataProtection/RetrieveByCount/Type</li>
+</ul>
+</td></tr>
+<tr class="even">
+<td style="vertical-align:top">[Connecting your Windows 10-based device to work using a deep link](mdm-enrollment-of-windows-devices.md#connecting-your-windows-10-based-device-to-work-using-a-deep-link)</td>
+<td style="vertical-align:top"><p>Added following deep link parameters to the table:</p>
+<ul>
+<li>Username</li>
+<li>Servername</li>
+<li>Accesstoken</li>
+<li>Deviceidentifier</li>
+<li>Tenantidentifier</li>
+<li>Ownership</li>
 </ul>
 </td></tr>
 </tbody>

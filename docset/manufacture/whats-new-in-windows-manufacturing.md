@@ -198,7 +198,7 @@ The following changes are new for Windows 10, version 1607:
 
 **September 22, 2016**
 
-- In Windows 10, version 1607, to [prevent automatic updates of custom BSPs](../service/iot/managing-iot-device-update.md), use the IoT\_GENERIC\_POP package in the OemInput XML. (You can no longer use the Intel.Generic.DeviceInfo.cab, this file has been removed.)
+- In Windows 10, version 1607, to [prevent automatic updates of custom BSPs](https://msdn.microsoft.com/windows/hardware/commercialize/service/iot/managing-iot-device-update), use the IoT\_GENERIC\_POP package in the OemInput XML. (You can no longer use the Intel.Generic.DeviceInfo.cab, this file has been removed.)
 
 - New [command-line options](iot/iot-core-adk-addons-command-line-options.md): 
 
@@ -264,7 +264,7 @@ Several updates of [command-line tools](iot/iot-core-adk-addons-command-line-opt
 
    To troubleshoot, see log files at \\Build\\&lt;arch&gt;\\pkgs\\logs.   
 
-*  Updated: [Update apps on your IoT Core devices](../service/iot/updating-iot-core-apps.md). You can use the same procedures to build app packages and app update packages. For Windows 10, version 1607, you can also update your apps through the Windows Store. 
+*  Updated: [Update apps on your IoT Core devices](https://msdn.microsoft.com/windows/hardware/commercialize/service/iot/updating-iot-core-apps). You can use the same procedures to build app packages and app update packages. For Windows 10, version 1607, you can also update your apps through the Windows Store. 
 
 **May 18, 2016:** 
 

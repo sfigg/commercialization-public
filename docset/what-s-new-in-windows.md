@@ -41,11 +41,6 @@ The new Hardware Compatibility program gives you the opportunity to show your cu
 
 For more information on the other kits available for Windows 10, see [Kits and tools overview](kits-and-tools-overview.md) and [What's new in kits and tools](what-s-new-in-kits-and-tools.md).
 
-## New graphical UI for customizing and configuring images
-
-
-The new Windows Imaging and Configuration Designer (ICD) provides a graphical user interface that helps you install drivers, set system settings, and add languages and other Windows customizations quickly, so you can install Windows 10 onto test or retail devices. With one tool, hardware developers can create model or reference images, deployment solutions, and device provisioning packages for their mobile, desktop- or IoT-based devices. For more information, see [Windows Imaging and Configuration Designer](https://msdn.microsoft.com/library/windows/hardware/dn916113.aspx).
-
 ## Internet of Things
 
 
@@ -54,12 +49,12 @@ Quickly iterate and expand on hardware and software designs with the new edition
 ## Deploy smaller Windows images, faster
 
 
-We’ve got new tools that help you save time on the factory floor and space on your hard drives. You can now separately package and apply Windows desktop applications to your images, avoiding some of the time-consuming steps involved in generalizing and recapturing images. You can also use improvements in push-button reset and language packs to save gigabytes on the hard drives. To give the new tools a try, see our [Manufacturing End-to-End Lab](manufacture/desktop/oem-deployment-of-windows-10-for-desktop-editions.md).
+We’ve got new tools that help you save time on the factory floor and space on your hard drives. You can now separately package and apply Windows desktop applications to your images, avoiding some of the time-consuming steps involved in generalizing and recapturing images. You can also use improvements in push-button reset and language packs to save gigabytes on the hard drives. To give the new tools a try, see our [Manufacturing End-to-End Lab](https://msdn.microsoft.com/windows/hardware/commercialize/manufacture/desktop/oem-deployment-of-windows-10-for-desktop-editions).
 
 ## Mobile device management
 
 
-With the increasing use of smartphones and tablets at work, there is also an increasing burden on IT administrators to manage these mobile devices. Window 10 provides granular mobile device management (MDM) and converged admin controls for PCs and mobile devices that enable easier device management for organizations. The unified mobile device enrollment protocol is aligned across desktop and mobile devices, which provides a more seamless user experience.
+With the increasing use of smartphones and tablets at work, there is also an increasing burden on IT administrators to manage these mobile devices. Window 10 provides granular mobile device management (MDM) and converged admin controls for PCs and mobile devices that enable easier device management for organizations. The unified mobile device enrollment protocol is aligned across desktop and mobile devices, which provides a more seamless user experience. We continue to add new configuration settings and policies with each new release of Windows 10. For details, see [What's new in MDM enrollment and management](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/customize/mdm/new-in-windows-mdm-enrollment-management).
 
 Learn about known issues and workarounds for this release in our [WinHEC forums](http://go.microsoft.com/fwlink/p/?LinkId=526372).
 

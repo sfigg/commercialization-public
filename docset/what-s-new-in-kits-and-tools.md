@@ -28,17 +28,17 @@ Check out the [new CSPs settings](https://msdn.microsoft.com/en-us/library/windo
 
 ### More changes
 
-See what's new in [design](https://msdn.microsoft.com/library/windows/hardware/mt703371.aspx), [customizations](https://msdn.microsoft.com/en-us/library/windows/hardware/mt723363.aspx), [manufacturing](manufacture/whats-new-in-windows-manufacturing.md).
+See what's new in [design](https://msdn.microsoft.com/library/windows/hardware/mt703371.aspx), [customizations](https://msdn.microsoft.com/en-us/library/windows/hardware/mt723363.aspx), [manufacturing](https://msdn.microsoft.com/windows/hardware/commercialize/manufacture/whats-new-in-windows-manufacturing).
 
 ## <a href="" id="adk"></a>What’s new in the the Windows ADK for Windows 10, version 1607
 
 ### Pick and choose desktop applications
 
-With [siloed provisioning packages](manufacture/desktop/siloed-provisioning-packages.md), you can now pick and choose which desktop applications to add to your images during deployment. You no longer need to recapture the entire set of applications into your recovery image, they’re added in automatically. These packages support space-saving features like Compact OS and single-instancing. 
+With [siloed provisioning packages](https://msdn.microsoft.com/windows/hardware/commercialize/manufacture/desktop/siloed-provisioning-packages), you can now pick and choose which desktop applications to add to your images during deployment. You no longer need to recapture the entire set of applications into your recovery image, they’re added in automatically. These packages support space-saving features like Compact OS and single-instancing. 
 
 ### Build IoT Core images for large-scale deployment
 
-Capture your apps, drivers, and settings, and deploy them securely to new devices. Learn how with the [IoT Core manufacturing guides](manufacture/iot/iot-core-manufacturing-guide.md).
+Capture your apps, drivers, and settings, and deploy them securely to new devices. Learn how with the [IoT Core manufacturing guides](https://msdn.microsoft.com/windows/hardware/commercialize/manufacture/iot/iot-core-manufacturing-guide).
 
 ### The Chinese (Hong Kong SAR) language pack (zh-HK) is no longer used.
 
@@ -65,7 +65,7 @@ Check out the [new CSPs settings](https://msdn.microsoft.com/en-us/library/windo
 
 ## <a href="" id="adk"></a>What’s new in the Windows ADK, version 1511
 
-The Windows ADK now includes [Windows Imaging and Configuration Designer](https://msdn.microsoft.com/library/windows/hardware/dn916113.aspx), the [Windows Assessment Toolkit](test/assessments/index.md), the [Windows Performance Toolkit](test/wpt/index.md), and several new and improved deployment tools that can help you automate a large-scale deployment of Windows 10.
+The Windows ADK now includes [Windows Imaging and Configuration Designer](https://msdn.microsoft.com/library/windows/hardware/dn916113.aspx), the [Windows Assessment Toolkit](https://msdn.microsoft.com/windows/hardware/commercialize/test/assessments/index), the [Windows Performance Toolkit](https://msdn.microsoft.com/windows/hardware/commercialize/test/wpt/index), and several new and improved deployment tools that can help you automate a large-scale deployment of Windows 10.
 
 ### Windows Imaging and Configuration Designer (ICD)
 
@@ -82,7 +82,7 @@ Users can now refresh or restore their PCs to the updated version of the system 
 
 Want to add more languages for users when they turn on their device? Instead of adding full language packs, save space by adding just the base user interface files for a language. Later, if your user needs handwriting or voice recognition capabilities, Windows can download them as needed.
 
-For more information, see [Language Packs (lp.cab)](manufacture/desktop/language-packs-and-windows-deployment.md).
+For more information, see [Language Packs (lp.cab)](https://msdn.microsoft.com/windows/hardware/commercialize/manufacture/desktop/language-packs-and-windows-deployment).
 
 ### New package type: Capabilities
 

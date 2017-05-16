@@ -14,7 +14,7 @@ ms.technology: windows-oem
 # Updates and resetting the device
 
 
-OEMs must consider how updates are affected when the user resets the device. To understand the fundamentals of how resetting the device alters the operating system, carefully review [Resetting the device](../../manufacture/mobile/resetting-a-phone-during-manufacturing.md).
+OEMs must consider how updates are affected when the user resets the device. To understand the fundamentals of how resetting the device alters the operating system, carefully review [Resetting the device](https://msdn.microsoft.com/windows/hardware/commercialize/manufacture/mobile/resetting-a-phone-during-manufacturing).
 
 ## <span id="OS_and_BSP_updates"></span><span id="os_and_bsp_updates"></span><span id="OS_AND_BSP_UPDATES"></span>OS and BSP updates
 
