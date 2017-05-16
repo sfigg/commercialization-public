@@ -1,3 +1,19 @@
+---
+title: Setting up a test environment for ADK and WAS
+description: Setting up a test environment for ADK and WAS
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 
+ms.prod: W10
+ms.mktglfcycl: operate
+ms.sitesec: msdn
+ms.author: windows-hardware-design-content
+ms.date: 05/05/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
+---
 
 # Setting up a test environment for ADK and WAS
 

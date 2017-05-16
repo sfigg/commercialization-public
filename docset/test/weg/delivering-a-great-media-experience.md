@@ -42,7 +42,7 @@ Windows supports hardware offload and several other power savings features that 
 
 -   **Multi-plane overlay (MPO)** - Several chipsets provide support for MPO which offloads video processing to hardware. This feature reduces memory bandwidth requirements by approximately 50%, resulting in power savings and increased glitch resilience.
 
--   **[Direct Flip](https:/msdn.microsoft.com/en-us/library/windows/hardware/dn653329.aspx)** and **[Independent Flip](http://msdn.microsoft.com/en-us/library/windows/hardware/dn457716.aspx)** - Bypassess the DWM and flips surfaces directly to the GPU, removing memory copies during full screen video playback.
+-   **[Direct Flip](https://msdn.microsoft.com/en-us/library/windows/hardware/dn653329.aspx)** and **[Independent Flip](http://msdn.microsoft.com/en-us/library/windows/hardware/dn457716.aspx)** - Bypassess the DWM and flips surfaces directly to the GPU, removing memory copies during full screen video playback.
 
 -   **Low refresh rate playback** - Media engine apps drop the refresh rate to the lowest multiple that the panel supports when in full screen. For example, when playing 24fps video content in the XBox video app on a system that has an LCD that supports 48hz refresh rates, the media pipeline will drop the refresh rate from 60 to 48hz.
 

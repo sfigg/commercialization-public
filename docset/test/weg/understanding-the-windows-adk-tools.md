@@ -1,3 +1,19 @@
+---
+title: Understanding the Windows ADK tools
+description: The ADK provides a complete solution for evaluating performance and deploying Windows to PCs.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 
+ms.prod: W10
+ms.mktglfcycl: operate
+ms.sitesec: msdn
+ms.author: windows-hardware-design-content
+ms.date: 05/05/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
+---
 
 # Understanding the Windows ADK tools
 

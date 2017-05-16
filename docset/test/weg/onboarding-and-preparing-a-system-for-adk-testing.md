@@ -1,3 +1,19 @@
+---
+title: Onboarding and preparing a system for ADK testing
+description: How to prepare a system for ADK testing
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 
+ms.prod: W10
+ms.mktglfcycl: operate
+ms.sitesec: msdn
+ms.author: windows-hardware-design-content
+ms.date: 05/05/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
+---
 
 # Onboarding and preparing a system for ADK testing
 
