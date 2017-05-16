@@ -18,13 +18,6 @@ Deployment Image Servicing and Management (DISM.exe) is a command-line tool that
 
 DISM is available through the command line or from Windows PowerShell. To learn more about using DISM with PowerShell, see [Deployment Imaging Servicing Management (DISM) Cmdlets in Windows PowerShell](http://go.microsoft.com/fwlink/?LinkId=393917).
 
-This topic includes:
-
--   [System Requirements](#bkmk-reqs)
--   [Benefits](#bkmk-benefits)
--   [Common Servicing and Management Scenarios](#bkmk-common)
--   [Limitations](#bkmk-limitations)
-
 ## <span id="BKMK_reqs"></span><span id="bkmk_reqs"></span><span id="BKMK_REQS"></span>Image Requirements
 
 
