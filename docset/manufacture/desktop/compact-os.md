@@ -162,7 +162,7 @@ Some of the primary reasons for the increase over time in the memory footprint i
 
 ### <span id="RAM"></span><span id="ram"></span>RAM, Pagefile.sys, and Hiberfil.sys
 
-The Pagefile.sys and Hiberfil.sys files increase in size in direct proportion to the amount of RAM on the computer. Windows installations on 16 GB drives have a smaller memory footprint when the computer is limited to 1 GB of RAM. An increase of RAM to a size that is greater than 1 GB will result in increased size of the system files and less space on the hard drive for other applications and files. Increasing the size of the hard drive, however, does not affect the size of these system files. Learn more about [On/Off Transition Performance](../../test/assessments/onoff-transition-performance.md)
+The Pagefile.sys and Hiberfil.sys files increase in size in direct proportion to the amount of RAM on the computer. Windows installations on 16 GB drives have a smaller memory footprint when the computer is limited to 1 GB of RAM. An increase of RAM to a size that is greater than 1 GB will result in increased size of the system files and less space on the hard drive for other applications and files. Increasing the size of the hard drive, however, does not affect the size of these system files. Learn more about [On/Off Transition Performance](https://msdn.microsoft.com/windows/hardware/commercialize/test/assessments/onoff-transition-performance)
 
 To save space on the drive, you can remove or reduce the size of the hiberfil.sys. See the [size comparison table](#Size_comparisons) below. To learn more, see [Lab 7: Change settings, enter product keys, and run scripts with an answer file (unattend.xml)](update-windows-settings-and-scripts-create-your-own-answer-file-sxs.md). 
 

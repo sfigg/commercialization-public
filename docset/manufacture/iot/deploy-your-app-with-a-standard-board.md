@@ -179,4 +179,4 @@ After a short while, the device should start automatically, and you should see y
 
  ## <span id="Related_topics"></span><span id="related_topics"></span><span id="RELATED_TOPICS"></span>Related topics
 
-[Update apps on your IoT Core devices](../../service/iot/updating-iot-core-apps.md)
+[Update apps on your IoT Core devices](https://msdn.microsoft.com/windows/hardware/commercialize/service/iot/updating-iot-core-apps)
