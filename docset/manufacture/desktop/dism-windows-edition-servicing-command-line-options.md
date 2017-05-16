@@ -24,12 +24,6 @@ Offline changes do not require a product key. If you change to a higher edition 
 
 -   Use Deployment Image Servicing and Management (DISM) and the Windows edition-servicing command-line option **/Set-ProductKey** after you set the edition offline.
 
-In this topic:
-
-[Command-line Syntax](#bkmk-syntax)
-
-[Limitations](#bkmk-limitations)
-
 ## <span id="BKMK_Syntax"></span><span id="bkmk_syntax"></span><span id="BKMK_SYNTAX"></span>Command-line Syntax
 
 

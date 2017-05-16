@@ -84,7 +84,7 @@ For offline provisioning of an app into an image, you can use either the Dism.ex
 
  
 
-**Important**   If you are preinstalling a mobile broadband device app, you must insert the SIM card in the PC before you run the specialize phase of Sysprep. For more information about preinstalling a mobile broadband device app, see [Preinstall the Necessary Components for a Mobile Broadband Application Experience](#bkmk-broadband-intro).
+**Important**   If you are preinstalling a mobile broadband device app, you must insert the SIM card in the PC before you run the specialize phase of Sysprep. For more information about preinstalling a mobile broadband device app, see [Preinstall the Necessary Components for a Mobile Broadband Application Experience](#bkmk_broadband_intro).
 
  
 

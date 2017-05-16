@@ -48,7 +48,7 @@ If a password-protected screen saver starts when you are in audit mode, you cann
 
 -   To configure Windows to boot to OOBE, add the **Microsoft-Windows-Deployment | Reseal |** **Mode** **= oobe** answer file setting.
 
-    If you have configured your Windows image to boot to OOBE, but then you need to make further configurations to your image in audit mode, see [Modify an existing image that is configured to boot to OOBE](#bkmk-4).
+    If you have configured your Windows image to boot to OOBE, but then you need to make further configurations to your image in audit mode, see [Modify an existing image that is configured to boot to OOBE](#bkmk_4).
 
 ## <span id="bkmk_4"></span><span id="BKMK_4"></span>Modify an existing image that is configured to boot to OOBE
 
@@ -86,7 +86,7 @@ If a password-protected screen saver starts when you are in audit mode, you cann
     Dism /Unmount-Image /MountDir:C:\test\offline /commit
     ```
 
-    When the image is applied to the destination computer and Windows is booted, the computer boots into audit mode automatically, and the **Sysprep** tool appears. For sample procedures, see Step 1: Transfer an image to a different computer and Step 2: Prepare the computer for a customer in [Deployment examples](#bkmk-6).
+    When the image is applied to the destination computer and Windows is booted, the computer boots into audit mode automatically, and the **Sysprep** tool appears. For sample procedures, see Step 1: Transfer an image to a different computer and Step 2: Prepare the computer for a customer in [Deployment examples](#bkmk_6).
 
 Options for applying an image also include using answer file settings, such as specifying the image to install and the disk configurations to make on the destination computer. For more information, see the [Unattended Windows Setup Reference Guide](http://go.microsoft.com/fwlink/?linkid=206281).
 

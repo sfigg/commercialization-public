@@ -18,14 +18,6 @@ You can use the `CopyProfile` setting to customize a user profile and then copy 
 
 Enterprise and IT Professionals can use `CopyProfile` to preserve the customized tile layout of groups on the **Start** screen.
 
-In this topic:
-
--   [Preserving User Profile Settings](#bkmk-preserve)
-
--   [Configuring Default User Profile Settings](#bkmk-configure)
-
--   [Troubleshooting CopyProfile](#bkmk-troubleshoot)
-
 ## <span id="bkmk_preserve"></span><span id="BKMK_PRESERVE"></span>Creating an answer file with the CopyProfile setting
 
 
