@@ -20,7 +20,7 @@ ms.technology: windows-oem
 
 Enabling the low power consumption and constant connectivity of modern standby is a test and validation challenge for the system integrator. All components in the system—hardware and software—must work together to quickly turn power on and off while maintaining connection to the Internet.
 
-This section describes test and validation best practices for system designers and integrators who are building modern standby PCs. It explains what platform components you should have functionally working before you begin testing power management during modern standby. Also included in this section is information about the built-in power management diagnostics in Windows 8.1, and a description of how to use [Windows Performance Analyzer (WPA)](../../test/wpt/windows-performance-analyzer.md) to observe specific operations during modern standby. This information applies to Windows 8 and Windows 8.1.
+This section describes test and validation best practices for system designers and integrators who are building modern standby PCs. It explains what platform components you should have functionally working before you begin testing power management during modern standby. Also included in this section is information about the built-in power management diagnostics in Windows 8.1, and a description of how to use [Windows Performance Analyzer (WPA)](https://msdn.microsoft.com/windows/hardware/commercialize/test/wpt/windows-performance-analyzer) to observe specific operations during modern standby. This information applies to Windows 8 and Windows 8.1.
 
 ## About modern standby validation
 

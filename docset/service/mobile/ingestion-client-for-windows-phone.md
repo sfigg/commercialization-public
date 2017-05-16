@@ -38,7 +38,8 @@ To use the ingestion client, the following tasks that are elaborated further in 
 
 3.  Follow the instructions in the [Install the ingestion client](#install) section later in this topic to install the ingestion client and configure the ingestion client to use the provisioned certificate from the previous step.
 
-## <span id="provision_certs"></span><span id="PROVISION_CERTS"></span>Sign up for retail package signing and update submissions
+<a name="provision-certs"></a>
+## Sign up for retail package signing and update submissions
 
 
 This section reviews the steps that you must perform to sign up for retail package signing and updates. When this process is complete, you will be able to submit packages and updates to Microsoft for retail signing. For general info about retail and test code signing, see [Code signing](https://msdn.microsoft.com/library/windows/hardware/dn756634).
@@ -65,7 +66,9 @@ It typically takes about one business week to complete these requests. Once you 
 
 -   The OEM must notify Microsoft when a certificate is revoked, expires, or for any other reason that would require Microsoft to de-activate the certificate.
 
-## <span id="install_pre"></span><span id="INSTALL_PRE"></span>Install the prerequisite software
+
+<a name="install-pre"></a>
+## Install the prerequisite software
 
 
 The ingestion client requires Windows Identity Foundation and Windows PowerShell 3.0.

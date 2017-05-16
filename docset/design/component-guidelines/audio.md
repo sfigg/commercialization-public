@@ -141,9 +141,9 @@ The following sections cover recommendations for speech. To ensure a high qualit
 
 | Area                                                  | Type of guidance                                                                                                                                | Which devices should be tested                                                     |
 |-------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
-| [Device.SpeechRecognition](#device-speechrecognition) | Provides the speech recognition performance requirements to ensure a high quality speech experience.                                            | All devices should be tested against these performance requirements.               |
-| [Device.Audio](#device-audio)                         | Provides guidelines in order to function optimally with the host OS in terms of software interfaces, communication protocols, and data formats. | All devices should be tested against these guidelines.                             |
-| [Device.Audio.Acoustics](#device-audio-acoustics)     | Provides recommendations and best practices for acoustics and related properties of device design.                                              | Most relevant for devices that will use Microsoft’s speech enhancement processing. |
+| Device.SpeechRecognition | Provides the speech recognition performance requirements to ensure a high quality speech experience.                                            | All devices should be tested against these performance requirements.               |
+| Device.Audio                         | Provides guidelines in order to function optimally with the host OS in terms of software interfaces, communication protocols, and data formats. | All devices should be tested against these guidelines.                             |
+| Device.Audio.Acoustics     | Provides recommendations and best practices for acoustics and related properties of device design.                                              | Most relevant for devices that will use Microsoft’s speech enhancement processing. |
 
  
 

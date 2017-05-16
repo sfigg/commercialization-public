@@ -1,5 +1,5 @@
 ---
-title: Hardware Compatibility Specification for Filter for Windows 10, version 1607
+title: Hardware Compatibility Specification for Systems for Windows 10, version 1607
 Description: 'This section of the documentation provides specifications for hardware compatibility for systems running Windows 10, version 1607.'
 ms.assetid: 
 MSHAttr: 
@@ -79,13 +79,8 @@ This section of the documentation provides specifications for hardware compatibi
  - [System.Fundamentals.WatchDogTimer](#system.fundamentals.watchdogtimer)
  - [System.Server.Assurance](#system.server.assurance)
  - [System.Server.AzureStack](#system.server.azurestack)
- - [System.Server.AzureStack.Storage](#system.server.azurestack.storage)
- - [System.Server.AzureStack.Networking](#system.server.azurestack.networking)
- - [System.Server.AzureStack.Firmware](#system.server.azurestack.firmware)
  - [System.Server.AzureStack.Security](#system.server.azurestack.security)
- - [System.Server.AzureStack.Security.Base](#system.server.azurestack.security.base)
  - [System.Server.AzureStack.BMC](#system.server.azurestack.bmc)
- - [System.Server.AzureStack.BMC.Base](#system.server.azurestack.bmc.base)
  - [System.Server.Base](#system.server.base)
  - [System.Server.BMC](#system.server.bmc)
  - [System.Server.DynamicPartitioning](#system.server.dynamicpartitioning)
@@ -4860,7 +4855,7 @@ Description:
 
 The following table shows the hardware, firmware and software requirements for Credential Guard.
 
- - MUST meet all Device Guard requirements as described in [System.Fundamentals.Security.DeviceGuard](#_System.Fundamentals.Security.Device).
+ - MUST meet all Device Guard requirements as described in System.Fundamentals.Security.DeviceGuard.
 
  - MUST meet the additional requirements as described in the table below:
 

@@ -54,7 +54,7 @@ Quickly iterate and expand on hardware and software designs with the new edition
 ## Deploy smaller Windows images, faster
 
 
-We’ve got new tools that help you save time on the factory floor and space on your hard drives. You can now separately package and apply Windows desktop applications to your images, avoiding some of the time-consuming steps involved in generalizing and recapturing images. You can also use improvements in push-button reset and language packs to save gigabytes on the hard drives. To give the new tools a try, see our [Manufacturing End-to-End Lab](manufacture/desktop/oem-deployment-of-windows-10-for-desktop-editions.md).
+We’ve got new tools that help you save time on the factory floor and space on your hard drives. You can now separately package and apply Windows desktop applications to your images, avoiding some of the time-consuming steps involved in generalizing and recapturing images. You can also use improvements in push-button reset and language packs to save gigabytes on the hard drives. To give the new tools a try, see our [Manufacturing End-to-End Lab](https://msdn.microsoft.com/windows/hardware/commercialize/manufacture/desktop/oem-deployment-of-windows-10-for-desktop-editions).
 
 ## Mobile device management
 

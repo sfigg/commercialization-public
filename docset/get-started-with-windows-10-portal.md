@@ -48,10 +48,10 @@ You can create devices to use touch/pen, mouse/keyboard, controller/gesture—or
 <li>[... driver development](https://msdn.microsoft.com/windows/hardware/drivers/what-s-new-in-driver-development)</li>
 <li>[... design](https://msdn.microsoft.com/library/windows/hardware/mt703371.aspx)</li>
 <li>[... customizations](https://msdn.microsoft.com/library/windows/hardware/mt723363.aspx)</li>
-<li>[... manufacturing](manufacture/whats-new-in-windows-manufacturing.md)</li>
+<li>[... manufacturing](https://msdn.microsoft.com/windows/hardware/commercialize/manufacture/whats-new-in-windows-manufacturing)</li>
 <li>[... unattend settings](https://msdn.microsoft.com/library/windows/hardware/mt750416.aspx)</li>
 <li>[... MDM enrollment and management](https://msdn.microsoft.com/library/windows/hardware/mt299056.aspx)</li>
-<li>[... Windows PE](manufacture/desktop/whats-new-in-windows-pe-s14.md)</li>
+<li>[... Windows PE](https://msdn.microsoft.com/windows/hardware/commercialize/manufacture/desktop/whats-new-in-windows-pe-s14)</li>
 </ul></td>
 </tr>
 </tbody>
@@ -111,7 +111,7 @@ From Cortana to Continuum to the core architecture, this release includes tons o
 <tbody>
 <tr class="odd">
 <td><p>For desktop PCs, you can use your existing settings file (Unattend.xml) to add settings during Windows installation.</p>
-<p>[Build a Windows Setup unattend file](manufacture/desktop/update-windows-settings-and-scripts-create-your-own-answer-file-sxs.md)</p></td>
+<p>[Build a Windows Setup unattend file](https://msdn.microsoft.com/windows/hardware/commercialize/manufacture/desktop/update-windows-settings-and-scripts-create-your-own-answer-file-sxs)</p></td>
 </tr>
 </tbody>
 </table>
@@ -147,13 +147,11 @@ From Cortana to Continuum to the core architecture, this release includes tons o
 <tbody>
 <tr class="odd">
 <td><p>For desktop PCs, learn strategies to build set of images for specific markets to meet different customers' needs. Apply classic and modern Windows apps, drivers, languages, and other customizations, and mix and match your customizations as new Windows editions are released through automated scripts or a familiar Windows interface.</p>
-<p>[Build and deploy desktop devices](manufacture/desktop/oem-windows-deployment-and-imaging-walkthrough.md)</p></td>
+<p>[Build and deploy desktop devices](https://msdn.microsoft.com/windows/hardware/commercialize/manufacture/desktop/oem-windows-deployment-and-imaging-walkthrough)</p></td>
 <td><p>Build IoT Core devices, applying apps, drivers, and settings to new devices.</p>
-<p>[Build and deploy IoT Core devices](manufacture/iot/iot-core-manufacturing-guide.md)</p></td>
+<p>[Build and deploy IoT Core devices](https://msdn.microsoft.com/windows/hardware/commercialize/manufacture/iot/iot-core-manufacturing-guide)</p></td>
 <td><p>OEMs and ODMs can build and test mobile devices and drivers.</p>
-<p>[Build and deploy phones](manufacture/mobile/mobile-deployment-and-imaging.md)</p></td>
+<p>[Build and deploy phones](https://msdn.microsoft.com/windows/hardware/commercialize/manufacture/mobile/mobile-deployment-and-imaging)</p></td>
 </tr>
 </tbody>
 </table>
-
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bwdknodes\wdknodes%5D:%20Get%20started%20with%20Windows%C2%A010%20%20RELEASE:%20%286/20/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")

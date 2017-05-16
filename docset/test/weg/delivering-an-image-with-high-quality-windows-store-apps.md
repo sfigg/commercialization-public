@@ -1,3 +1,19 @@
+---
+title: Delivering an image with high quality Windows Store apps
+description: Measuring quality in Windows Store apps that are deployed with a Windows image
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 
+ms.prod: W10
+ms.mktglfcycl: operate
+ms.sitesec: msdn
+ms.author: windows-hardware-design-content
+ms.date: 05/05/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
+---
 
 # Delivering an image with high quality Windows Store apps
 
