@@ -213,25 +213,25 @@ Troubleshoot: A blank character in **specialize | Microsoft-Windows-Shell-Setup 
 
 Before mounting and editing the image please take a backup copy in the same directory and rename the image which will be modified as ModelSpecificImage.wim.
 
-    ```
-    Dism /export-image /sourceimagefile:e:\images\install.wim /sourceindex:2 /destinationimagefile:e:\images\modelspecificimage.wim
-    ```
+```
+Dism /export-image /sourceimagefile:e:\images\install.wim /sourceindex:2 /destinationimagefile:e:\images\modelspecificimage.wim
+```
 
 ### Mount images
 
 1.  Mount Windows image (ModelSpecificImage.wim). This process extracts the contents of the image file to a location where you can view and modify the mounted image.
-
-        Md C:\mount\windows
-
-        Dism /Mount-Wim /WimFile:E:\Images\ModelSpecificImage.wim /index:1 /MountDir:C:\mount\windows
-
+    ```
+    Md C:\mount\windows
+    Dism /Mount-Wim /WimFile:E:\Images\ModelSpecificImage.wim /index:1 /MountDir:C:\mount\windows
+    ```
     Where E:\ is the drive letter of USB-B.
 
 2.  Mount Windows RE Image file.
 
-        Md c:\mount\winre
-
-        Dism /Mount-Image /ImageFile:C:\mount\windows\Windows\System32\Recovery\winre.wim /index:1 /MountDir:C:\mount\winre
+    ```
+    Md c:\mount\winre
+    Dism /Mount-Image /ImageFile:C:\mount\windows\Windows\System32\Recovery\winre.wim /index:1 /MountDir:C:\mount\winre
+    ```
 
     Troubleshoot: If mounting operation fails, make sure that you are using the Windows 10 version of DISM that is installed with the Windows ADK and not an older version from your technician computer. Don’t mount images to protected folders, such as your User\Documents folder. If DISM processes are interrupted, consider temporarily disconnecting from the network and disabling virus protection.
 
@@ -246,10 +246,10 @@ Before mounting and editing the image please take a backup copy in the same dire
 If you use an x64 Windows 10 image, add x64 drivers; if you use an x86 Windows 10 image, add x86 drivers.
 
 1.  Adding driver packages one by one. (.inf files) SampleDriver\driver.inf is a **sample** driver package that is specific to the computer model. Type your own specific driver path. If you have multiple driver packages, skip to the next step.
-
-        Dism /Add-Driver /Image:C:\mount\windows /Driver:"C:\SampleDriver\driver.inf"
-
-        Dism /Add-Driver /Image:C:\mount\winre /Driver:"C:\SampleDriver\driver.inf"
+    ```
+    Dism /Add-Driver /Image:C:\mount\windows /Driver:"C:\SampleDriver\driver.inf"
+    Dism /Add-Driver /Image:C:\mount\winre /Driver:"C:\SampleDriver\driver.inf"
+    ```
 
 2.  Multiple drivers can be added on one command line if you specify a folder instead of an .inf file. To install all of the drivers in a folder and all its subfolders, use the **/recurse** option.
 
@@ -311,11 +311,11 @@ To obtain update packages, download them from [Microsoft Update Catalog](http://
 
     ![Update catalog](Images/update-catalog.png)
 
-1.  After search completes, click **Add** next to the version and architecture of the package you wish to download.
+3.  After search completes, click **Add** next to the version and architecture of the package you wish to download.
 
     ![Add Update Catalog](Images/add-update-catalog.png)
 
-1.  After you add all of the following updates, click **view basket** and then **Download**.
+4.  After you add all of the following updates, click **view basket** and then **Download**.
 
     ![Download Update Catalog](Images/download-update-catalog.png)
     
@@ -325,25 +325,33 @@ To obtain update packages, download them from [Microsoft Update Catalog](http://
 
     ![Enable Protected Mode](Images/enable-protected-mode.png)
 
-1.  After downloading all the listed essential updates, add **update packages** (KB packages) to the image one by one by using the following command:
+5.  After downloading all the listed essential updates, add **update packages** (KB packages) to the image one by one by using the following command:
 
     *Amd64 architecture*
 
-        Dism /Add-Package /Image:C:\mount\windows /PackagePath:":"C:\windows10.0-kb4016871-x64_27dfce9dbd92670711822de2f5f5ce0151551b7d.msu”"
-
+    ```
+    Dism /Add-Package /Image:C:\mount\windows /PackagePath:":"C:\windows10.0-kb4016871-x64_27dfce9dbd92670711822de2f5f5ce0151551b7d.msu”"
+    ```
+    
     *X86 architecture*
 
-        Dism /Add-Package /Image:C:\mount\windows /PackagePath:"CC:\windows10.0-kb4016871-x86_5901409e58d1c6c9440e420d99c42b08f227356e.msu"
+    ```
+    Dism /Add-Package /Image:C:\mount\windows /PackagePath:"CC:\windows10.0-kb4016871-x86_5901409e58d1c6c9440e420d99c42b08f227356e.msu"
+    ```
 
-1.  Add updates to winre.wim (where they apply; not all updates apply to winre.wim)
+6.  Add updates to winre.wim (where they apply; not all updates apply to winre.wim)
 
     *Amd64 architecture*
 
-        Dism /Add-Package /Image:C:\mount\winre /PackagePath:"C:\windows10.0-kb4016871-x64_27dfce9dbd92670711822de2f5f5ce0151551b7d.msu"
+    ```
+    Dism /Add-Package /Image:C:\mount\winre /PackagePath:"C:\windows10.0-kb4016871-x64_27dfce9dbd92670711822de2f5f5ce0151551b7d.msu"
+    ```
 
     *X86 architecture*
-
-        Dism /Add-Package /Image:C:\mount\winre /PackagePath:"C:\ windows10.0-kb4016871-x86_5901409e58d1c6c9440e420d99c42b08f227356e.msu"
+    
+    ```
+    Dism /Add-Package /Image:C:\mount\winre /PackagePath:"C:\ windows10.0-kb4016871-x86_5901409e58d1c6c9440e420d99c42b08f227356e.msu"
+    ```
 
 #### Add OEM specific visual customizations
 
@@ -389,8 +397,9 @@ The Start tile layout in Windows 10 provides OEMs the ability to append tiles to
 
 3.  Add your LayoutModification.xml file to the Windows image. You’ll need to put the file in the following specific location before first boot. If the file exists, you should replace the LayoutModification.XML that is already included in the image.
 
-        Copy E:\StartLayout\layoutmodification.xml c:\mount\windows\users\default\AppData\Local\Microsoft\Windows\Shell\
-
+    ```
+    Copy E:\StartLayout\layoutmodification.xml c:\mount\windows\users\default\AppData\Local\Microsoft\Windows\Shell\
+    ```
     Where E: is the drive letter of USB-B.
 
 4.  If you pinned tiles that require .url or .lnk files, add the files to the following legacy Start Menu directories:
@@ -399,23 +408,21 @@ The Start tile layout in Windows 10 provides OEMs the ability to append tiles to
 
     2.  %ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\
 
-            Copy e:\StartLayout\Bing.url "C:\mount\windows\ProgramData\Microsoft\Windows\Start Menu\Programs\"
-
-            Copy e:\StartLayout\Paint.lnk "C:\mount\windows\ProgramData\Microsoft\Windows\Start Menu\Programs"
-
-            Copy E:\StartLayout\Bing.url "C:\mount\windows\users\All Users\Microsoft\Windows\Start Menu\Programs"
-
-            Copy E:\StartLayout\Paint.lnk "C:\Mount\Windows\Users\All Users\Microsoft\Windows\Start Menu\Programs"
-
-    Note: If you don’t create a LayoutModification.xml file and you continue to use the Start Unattend settings, the OS will use the Unattend answer file and take the first 12 SquareTiles or DesktoporSquareTiles settings specified in the Unattend file. The system then places these tiles automatically within the newly-created groups at the end of Start. The first six tiles are placed in the first OEM group, and the second set of six tiles are placed in the second OEM group. If OEMName is specified in the Unattend file, the value for this element is used to name the OEM groups that will be created.
+        ```
+        Copy e:\StartLayout\Bing.url "C:\mount\windows\ProgramData\Microsoft\Windows\Start Menu\Programs\"
+        Copy e:\StartLayout\Paint.lnk "C:\mount\windows\ProgramData\Microsoft\Windows\Start Menu\Programs"
+        Copy E:\StartLayout\Bing.url "C:\mount\windows\users\All Users\Microsoft\Windows\Start Menu\Programs"
+        Copy E:\StartLayout\Paint.lnk "C:\Mount\Windows\Users\All Users\Microsoft\Windows\Start Menu\Programs"
+        ```
+        Note: If you don’t create a LayoutModification.xml file and you continue to use the Start Unattend settings, the OS will use the Unattend answer file and take the first 12 SquareTiles or DesktoporSquareTiles settings specified in the Unattend file. The system then places these tiles automatically within the newly-created groups at the end of Start. The first six tiles are placed in the first OEM group, and the second set of six tiles are placed in the second OEM group. If OEMName is specified in the Unattend file, the value for this element is used to name the OEM groups that will be created.
 
 #### Copy the answer file
 
 A system builder may want to make additional customizations through an unattend file. The sample unattend file on USB-B contains additional common customizations.
 
-    ```
-    Copy /y E:\AnswerFiles\Unattend.xml C:\Mount\Windows\Windows\Panther
-    ```
+```
+Copy /y E:\AnswerFiles\Unattend.xml C:\Mount\Windows\Windows\Panther
+```
 
 Where E:\ is USB-B.
 
@@ -423,12 +430,15 @@ Where E:\ is USB-B.
 
 1.  Increase scratchspace size.
 
-        Dism /image:c:\mount\winre /set-scratchspace:512
+    ```
+    Dism /image:c:\mount\winre /set-scratchspace:512
+    ```
 
-1.  Cleanup unused files and reduce size of winre.wim
+2.  Cleanup unused files and reduce size of winre.wim
 
-        Dism /image:"c:\mount\winre" /Cleanup-Image /StartComponentCleanup /Resetbase
-
+    ```
+    Dism /image:"c:\mount\winre" /Cleanup-Image /StartComponentCleanup /Resetbase
+    ```
 ### Unmount images
 
 1.  Close all applications that might access files from the image
@@ -445,19 +455,20 @@ Where E:\ is USB-B.
 
     Troubleshoot: If you cannot see winre.wim under the specified directory, use the following command to set the file visible:
 
-        attrib -h -a -s C:\mount\windows\Windows\System32\Recovery\winre.wim
-
-        Dism /export-image /sourceimagefile:c:\mount\windows\windows\system32\recovery\winre.wim /sourceindex:1 /DestinationImageFile:e:\images\winre_bak.wim
-
-        Del c:\mount\windows\windows\system32\recovery\winre.wim
-
-        Copy e:\images\winre_bak.wim c:\mount\windows\windows\system32\recovery\winre.wim
+    ```
+    attrib -h -a -s C:\mount\windows\Windows\System32\Recovery\winre.wim
+    Dism /export-image /sourceimagefile:c:\mount\windows\windows\system32\recovery\winre.wim /sourceindex:1 /DestinationImageFile:e:\images\winre_bak.wim
+    Del c:\mount\windows\windows\system32\recovery\winre.wim
+    Copy e:\images\winre_bak.wim c:\mount\windows\windows\system32\recovery\winre.wim
+    ```
 
     When prompted, specify **F** for file
 
 1.  Check the new size of the Windows RE image.
 
-            Dir "C:\mount\windows\Windows\System32\Recovery\winre.wim"
+    ```
+    Dir "C:\mount\windows\Windows\System32\Recovery\winre.wim"
+    ```
 
     Use the following partition layout size guidance to determine the size of your recovery partition in createpartitions-&lt;firmware&gt;.txt files. The amount of free space left is after you copy winre.wim to the hidden partition.
 
@@ -494,16 +505,20 @@ Where E:\ is USB-B.
 
 4.  Type *diskpart* and hit enter to start Diskpart. Then type *list volume* to identify volume label of USB-B (For example: E:\). 
 
-        E:\Deployment\Walkthrough-Deploy.bat E:\Images\ModelSpecificImage.wim
+    ```
+    E:\Deployment\Walkthrough-Deploy.bat E:\Images\ModelSpecificImage.wim
+    ```
 
     Note: There are several pauses in the script. You will be prompted Y/N for the Apply operation if this is a Compact OS deployment.
 
-1.  Note: Only use Compact OS on Flash drive based devices because Compact OS performance depends on the storage device capabilities. Compact OS is NOT recommend on rotational devices. For more information, see [Compact OS](compact-os.md).
+**Note**: Only use Compact OS on Flash drive based devices because Compact OS performance depends on the storage device capabilities. Compact OS is NOT recommend on rotational devices. For more information, see [Compact OS](compact-os.md).
 
-    Remove USB-A and USB-B, and then type:
+5. Remove USB-A and USB-B, and then type:
+
     ```
     Exit
     ```
+
 ## Update images manually by using AUDIT MODE (online servicing)
 
 Important: Connecting the computer to internet is not recommended during manufacturing stages. It is not recommended to get the updates from Windows Update in audit mode. This will likely generate an error while generalize + syspreping the machine from audit mode.
@@ -719,9 +734,9 @@ This will restore the additional layout settings from these 2 answer files durin
 
 During a PC deployment, winre gets moved. Before you caputre a final image, you have to copy the backup of winre.wim back into Windows.
 
-    ```
-    Copy e:\images\winre_bak.wim c:\windows\system32\recovery\winre.wim
-    ```
+```
+Copy e:\images\winre_bak.wim c:\windows\system32\recovery\winre.wim
+```
 
 ## Reseal the image
 
@@ -739,7 +754,9 @@ During a PC deployment, winre gets moved. Before you caputre a final image, you 
 
     These changes include Microsoft Office tile component pinned to the Start screen.
 
-        Cmd /c C:\Windows\System32\Sysprep\sysprep /unattend:c:\Recovery\OEM\Unattend.xml /generalize /oobe /shutdown
+    ```
+    Cmd /c C:\Windows\System32\Sysprep\sysprep /unattend:c:\Recovery\OEM\Unattend.xml /generalize /oobe /shutdown
+    ```
 
 5.  Boot reference computer and connect USB-A.
 
@@ -843,6 +860,9 @@ Before starting the deployment procedure OEM requires to download certain kits w
 [Windows Guidelines for System Builders](http://www.microsoft.com/oem/en/pages/download.aspx?wpid=w_w8_129)
 
 [Windows Policy for System Builders](http://www.microsoft.com/oem/en/pages/download.aspx?wpid=w_w8_008)
+
+
+
 
 
 
