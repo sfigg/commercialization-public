@@ -1,6 +1,6 @@
 ---
 title: System builder deployment of Windows 10 for desktop editions
-author: themar
+author: Justinha
 description: Get step-by-step guidance for system builders to deploy Windows 10 to desktop computers, laptops, and 2-in-1s.   
 ms.author: windows-hardware-design-content
 ms.date: 05/02/2017
@@ -8,7 +8,6 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 
 # System builder deployment of Windows 10 for desktop editions 
 
@@ -96,7 +95,7 @@ For more details about the Windows ADK, see the [Windows 10 ADK Documentation Ho
 
 1.  Follow the on-screen instructions to install the Windows ADK, including the **Deployment Tools**, **Windows Preinstallation Environment**, and **Windows Assessment Toolkit** features.
 
-    **Note**: Disable Secure Boot before installing the ADK.
+    **Note**: If you have Secure Boot enabled, disable it before installing the ADK.
 
     ![Select ADK Features](Images/adk-select-features.png)
 
@@ -110,11 +109,14 @@ For more details about the Windows ADK, see the [Windows 10 ADK Documentation Ho
 
     If you use an **x64** Windows 10 image, copy the x64 WinPE folder structure:
 
-        Copype amd64 C:\winpe_amd64
+    ```
+    Copype amd64 C:\winpe_amd64
+    ```
 
     If you use an **x86** Windows 10 image, copy the x86 WinPE folder structure:
-
-        Copype x86 C:\winpe_x86
+    ```
+    Copype x86 C:\winpe_x86
+    ```
 
 1.  You may add packages and/or drivers to WinPE here.
 
@@ -126,12 +128,14 @@ For more details about the Windows ADK, see the [Windows 10 ADK Documentation Ho
 
     If you use an **x64** Windows 10 image, make an x64 WinPE USB:
 
-        MakeWinPEMedia /UFD C:\winpe_amd64 F:
+    ```
+    MakeWinPEMedia /UFD C:\winpe_amd64 F:
+    ```
 
     If you use an **x86** Windows 10 image, make an x86 WinPE USB:
-
-        MakeWinPEMedia /UFD C:\winpe_x86 F:
-
+    ```
+    MakeWinPEMedia /UFD C:\winpe_x86 F:
+    ```
     (Where F: is the drive letter of USB)
 
 ## Install Windows with basic customizations
@@ -252,16 +256,17 @@ If you use an x64 Windows 10 image, add x64 drivers; if you use an x86 Windows 1
     ```
 
 2.  Multiple drivers can be added on one command line if you specify a folder instead of an .inf file. To install all of the drivers in a folder and all its subfolders, use the **/recurse** option.
-
-        Dism /Image:C:\mount\windows /Add-Driver /Driver:c:\drivers /Recurse
+    ```
+    Dism /Image:C:\mount\windows /Add-Driver /Driver:c:\drivers /Recurse
+    ```
 
 3.  Review the contents of the %WINDIR%\Inf\ (C:\mount\windows\Windows\Inf\) directory in the mounted Windows image to ensure that the .inf files were installed. Drivers added to the Windows image are named Oem\*.inf. This is to ensure unique naming for new drivers added to the computer. For example, the files MyDriver1.inf and MyDriver2.inf are renamed Oem0.inf and Oem1.inf.
 
 4.  Verify your driver has been installed for both images.
-
-        Dism /Image:C:\mount\windows /Get-Drivers
-
-        Dism /Image:C:\mount\winre /Get-Drivers
+    ```
+    Dism /Image:C:\mount\windows /Get-Drivers
+    Dism /Image:C:\mount\winre /Get-Drivers
+    ```
 
 Important: If the driver contains only the installer package and doesn’t have an .inf file, you may choose to install the driver in AUDIT mode by double-clicking the corresponding installer package. Some drivers may be incompatible with Sysprep tool; they will be removed after sysprep generalize even if they have been injected offline.
 
@@ -288,14 +293,14 @@ If you use an x64 Windows 10 image, install x64 LIPs; if you use an x86 Windows 
 2.  Apply the LIP to mounted image.
 
     *Amd64 architecture*
-        ```
-        Dism /image:C:\mount\windows /add-package /packagepath:e:\LanguagePacks\amd64\ga-ie\lp.cab
-        ```
+    ```
+    Dism /image:C:\mount\windows /add-package /packagepath:e:\LanguagePacks\x64\Microsoft-Windows-Client-Language-Interface-Pack_x64_as-in.cab
+    ```
 
     *X86 architecture*
-        ```
-        Dism /image:C:\mount\windows /add-package /packagepath:e:\LanguagePacks\x86\ga-ie\lp.cab
-        ```
+    ```
+    Dism /image:C:\mount\windows /add-package /packagepath:e:\LanguagePacks\x86\Microsoft-Windows-Client-Language-Interface-Pack_x86_as-in.cab
+    ```
 
 **Important: If you install an update (hotfix, general distribution release [GDR], or service pack [SP]) that contains language-dependent resources prior to installing a language pack, the language-specific changes in the update won't be applied when you add the language pack. You need to reinstall the update to apply language-specific changes. To avoid reinstalling updates, install language packs before installing updates.**
 
@@ -330,13 +335,13 @@ To obtain update packages, download them from [Microsoft Update Catalog](http://
     *Amd64 architecture*
 
     ```
-    Dism /Add-Package /Image:C:\mount\windows /PackagePath:":"C:\windows10.0-kb4016871-x64_27dfce9dbd92670711822de2f5f5ce0151551b7d.msu”"
+    Dism /Add-Package /Image:C:\mount\windows /PackagePath:"C:\windows10.0-kb4016871-x64_27dfce9dbd92670711822de2f5f5ce0151551b7d.msu"
     ```
     
     *X86 architecture*
 
     ```
-    Dism /Add-Package /Image:C:\mount\windows /PackagePath:"CC:\windows10.0-kb4016871-x86_5901409e58d1c6c9440e420d99c42b08f227356e.msu"
+    Dism /Add-Package /Image:C:\mount\windows /PackagePath:"C:\windows10.0-kb4016871-x86_5901409e58d1c6c9440e420d99c42b08f227356e.msu"
     ```
 
 6.  Add updates to winre.wim (where they apply; not all updates apply to winre.wim)
@@ -521,11 +526,8 @@ Where E:\ is USB-B.
 
 ## Update images manually by using AUDIT MODE (online servicing)
 
-Important: Connecting the computer to internet is not recommended during manufacturing stages. It is not recommended to get the updates from Windows Update in audit mode. This will likely generate an error while generalize + syspreping the machine from audit mode.
+Important: Connecting the computer to internet is not recommended during manufacturing stages. We don't recommend getting updates from Windows Update in audit mode, as it will likely generate errors when you generalize + sysprep the machine from audit mode.
 
-1.  Windows boots in AUDIT mode and by default, user profile settings are removed during the generalization process.
-
-2.  If installing Office, refer to [Preload Microsoft Office single image v15.4 OPK](#preload-microsoft-office-single-image-v15.4-opk) for Microsoft Office Single image v15.4 or [Preload Microsoft Office 2016](#preload-microsoft-office-2016) for Office 2016.
 
 ### Preload Microsoft Office 2016
 
@@ -779,7 +781,7 @@ Copy e:\images\winre_bak.wim c:\windows\system32\recovery\winre.wim
     ```
     Where E: is the volume label of Windows and F is the volume label of USB-B.
 
-    This will overwrite the image created in the section [Deploy the image to new computers](#deploy-the-image-to-new-computers).
+    This will overwrite the image created in the section [Deploy the image to new computers](#deploy-the-image-to-new-computers-windows-installation).
 
 ## Deploy the image 
 
@@ -796,7 +798,7 @@ E:\Deployment\walkthrough-deploy.bat E:\Images\modelspecificimage.wim
 
 Note: There are several pauses in the script. You will be prompted Y/N for the Apply operation if this is a Compact OS deployment.
 
-Note: Only use Compact OS on high end storage devices because Compact OS performance depends on the storage device capabilities. Compact OS is NOT recommend on rotational devices or storage greater than 32 GB. For more information, see [Compact OS](compact-os.md).
+Note: Only use Compact OS on high end storage devices because Compact OS performance depends on the storage device capabilities. Compact OS is NOT recommend on rotational devices or storage greater than 32 GB. For more information, see [Compact OS](#compact-os.md).
 
 Remove USB-A and USB-B and type *exit* to reboot your computer with Windows 10.
 
@@ -808,7 +810,7 @@ Remove USB-A and USB-B and type *exit* to reboot your computer with Windows 10.
 
     For more information about the first boot time requirements, see [Windows Policy for System Builders](http://www.microsoft.com/oem/en/pages/download.aspx?wpid=w_w8_008).
 
-1.  Please note that at the end of the section [Update images manually by using AUDIT MODE (online servicing)](#update-images-manually-by-using-audit-mode-online-servicing-), the system was sealed with OOBE mode. Please proceed with Audit. If the system boots in OOBE, press Ctrl+Shift+F3 in order to pass OOBE and boot in audit mode.
+1.  Please note that at the end of the section [Update images manually by using AUDIT MODE (online servicing)](#update-images-manually-by-using-audit-mode-online-servicing), the system was sealed with OOBE mode. Please proceed with Audit. If the system boots in OOBE, press Ctrl+Shift+F3 in order to pass OOBE and boot in audit mode.
 
 2.  If you want to apply additional steps, such as executing OEM diagnostics tests and so on, apply them here.
 
@@ -836,7 +838,7 @@ The overall deployment flow mentioned in this guide doesn’t differ between 64-
 | **Distinction**                         | **Description**                                                                                                                                                                                                                                                                              | **Related Section**                  |
 |-----------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------|
 | Windows installed on Technican Computer | When Windows ADK gets installed on a technican computer the the deployment tools in the ADK would be installed according to the architecture of the Windows on technician computer. In short if ADK is installed on Windows x64, the tools would be installed 64-bit version, or vice-versa. | [Prepare your lab environment](#prepare-your-lab-environment)         |
-| Creating WinPE folder structure         | WinPE differs between x64 and x86 architecture, so you have to use different commands to create a different WinPE folder for each architecture.                                                                                                                                                    | [Create WinPE bootable USB](#create-winpe-bootable-usb) |
+| Creating WinPE folder structure         | WinPE differs between x64 and x86 architecture, so you have to use different commands to create a different WinPE folder for each architecture.                                                                                                                                                    | [Create WinPE bootable USB](#create-a-usb-drive-that-can-boot-to-winpe) |
 | Drivers                                 | Driver versions differ between different architectures. If you are manufacturing a 64-bit Windows image, please use x64 drivers, and vice-versa for 32-bit Windows.                                                                                                                                                   | [Add drivers](#add-drivers)         |
 | Update Packages for Windows Image       | Update package versions differ between different architectures. If you are manufacturing a 64-bit Windows image please use x64 update packages, and vice-versa for 32-bit Windows.                                                                                                                                   | [Add update packages](#add-update-packages) |
 | Language Interface Packs                | IF you will be using x64 Windows 10 image, install x64 LIPs or if you will be using x86 Windows 10 image install x86 LIPs.                                                                                                                                                                    | [Prepare the system for recovery with Push-button reset](#prepare-the-system-for-recovery-with-push-button-reset)                          |
@@ -847,7 +849,7 @@ Before starting the deployment procedure OEM requires to download certain kits w
 
 | Resource/Kit  |   Available at    | Related section   |
 |---------------|-------------------|-------------------|
-| Windows 10 ADK|   [Download the Windows ADK](https://developer.microsoft.com/en-us/windows/hardware/windows-assessment-deployment-kit) | [Create WinPE bootable USB](#create-winpe-bootable-usb) |
+| Windows 10 ADK|   [Download the Windows ADK](https://developer.microsoft.com/en-us/windows/hardware/windows-assessment-deployment-kit) | [Create WinPE bootable USB](#create-a-usb-drive-that-can-boot-to-winpe) |
 | Windows 10 x64/x86 DVD Media (desired language) | Obtain Windows 10 media which you will be customizing from Microsoft Authorized Distributor | [Install Windows with basic customizations](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/manufacture/desktop/system-builder-deployment-of-windows-10-for-desktop-editions#install-windows-with-basic-customizations) |
 | Windows 10 Default Product Keys | Default Product Keys are located at [OEM Partner Center](https://dpcenter.microsoft.com/en/Windows/Build/cp-windows-10-build) listed under **Default product keys** tab | [Customize the answer file](#customize-the-answer-file) |
 | Language interface packs | LIPs are located at [OEM Partner Center](https://dpcenter.microsoft.com/en/Windows/Build/cc-windows-10-v1703-lip) listed under **LIPs** tab | [Prepare the system for recovery with Push Button Reset](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/manufacture/desktop/system-builder-deployment-of-windows-10-for-desktop-editions#prepare-the-system-for-recovery-with-push-button-reset) |
@@ -860,10 +862,5 @@ Before starting the deployment procedure OEM requires to download certain kits w
 [Windows Guidelines for System Builders](http://www.microsoft.com/oem/en/pages/download.aspx?wpid=w_w8_129)
 
 [Windows Policy for System Builders](http://www.microsoft.com/oem/en/pages/download.aspx?wpid=w_w8_008)
-
-
-
-
-
 
 
