@@ -1201,6 +1201,7 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <ul>
 <li>AllowWarningForOtherDiskEncryption</li>
 </ul>
+<p>Note that SystemDrivesMinimumPINLength is 6 digits instead of 4.</p>
 </td></tr>
 <tr class="even">
 <td style="vertical-align:top">[Reporting CSP](reporting-csp.md)</td>
