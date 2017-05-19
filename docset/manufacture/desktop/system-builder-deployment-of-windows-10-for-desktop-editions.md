@@ -13,11 +13,13 @@ ms.technology: windows-oem
 
 You can use this guide to deploy Windows 10 to a line of computers. It provides prescriptive guidance for Windows 10 deployment, including online and offline customizations, and optional steps for specific scenarios. It is intended to help system builders (level 200 technicians) with both 64-bit and 32-bit configurations, and applies to Windows 10 for desktop editions (Home, Pro, Enterprise, and Education). 
 
+If you're a system builder, you can also use the [Express Deployment Tool](https://dpcenter.microsoft.com/en/Windows/Build/dp-express-deployment-tool-windows-10) (EDT) to build a custom Windows deployment. The EDT simplifies the process of installing and configuring Windows for a consistent brand and customized end-user experience. 
+
 ## Prepare your lab environment
 
 The first step is to set up your lab environment, which includes installing the latest Windows Assessment and Deployment Kit (Windows ADK) tools onto your designated Technician computer. The Technician computer must run Windows 10 x64 if you are going to deploy x64 images, or run Windows 10 x86 for x86 image deployment. Incorrect configurations may result in supported architecture mismatch while using deployment tools in the Windows ADK. Where noted, follow the appropriate guidelines for either a 64-bit vs 32-bit deployment.
 
-Before starting the deployment procedure, you need to download the kits that will be used throughout the guide. Go to the [OEM Partner Center](http://www.microsoft.com/oem/en/pages/index.aspx#fbid=7JcJYKYGEfo) > **Downloads and Installation** > **Understanding ADKs and OPKs**. For a list of resources and kits that will be used and where to obtain them, see [What you will need and where to get it](#what-you-will-need-and-where-to-get-it).
+Before starting the deployment procedure, you need to download the kits that will be used throughout the guide. Go to the [Device Partner Center](http://www.microsoft.com/oem/en/pages/index.aspx#fbid=7JcJYKYGEfo) > **Downloads and Installation** > **Understanding ADKs and OPKs**. For a list of resources and kits that will be used and where to obtain them, see [What you will need and where to get it](#what-you-will-need-and-where-to-get-it).
 
 You will need two USB drives. USB-A will be used to boot the system in Windows Preinstallation Environment (WinPE). USB-B will be used to move files between computers, store deployment and recovery scripts, and store and apply created images.
 
@@ -178,7 +180,7 @@ Troubleshoot: A blank character in **specialize | Microsoft-Windows-Shell-Setup 
 
     You may use the sample answer file and modify relevant parts or start from scratch by specifying some basic customizations.
 
-    Please see and use the Windows 10 default product key from [OEM Partner Center](https://www.microsoft.com/OEM/en/products/windows/Pages/windows-10-build.aspx#fbid=nV7H02bHHiv) listed under **Default product keys** tab.
+    Please see and use the Windows 10 default product key from [Device Partner Center](https://www.microsoft.com/OEM/en/products/windows/Pages/windows-10-build.aspx#fbid=nV7H02bHHiv) listed under **Default product keys** tab.
 
 2.  Add a product key that matches the Windows edition. This key isn't used to activate Windows, so you can reuse the same key for multiple installations:
 
@@ -278,7 +280,7 @@ This property must be added to USB-B\AnswerFiles\UnattendSysprep.xml during gene
 
 #### Add language interface packs
 
-Obtain the Windows 10 Language Interface Packs from [OEM Partner Center](https://www.microsoft.com/OEM/en/installation/downloads/Pages/Windows-10-v1511-Language-Interface-Packs.aspx#fbid=nV7H02bHHiv) under the **LIPs** tab.
+Obtain the Windows 10 Language Interface Packs from [Device Partner Center](https://www.microsoft.com/OEM/en/installation/downloads/Pages/Windows-10-v1511-Language-Interface-Packs.aspx#fbid=nV7H02bHHiv) under the **LIPs** tab.
 
 For more information about LIPs, see [Add Language Interface Packs to Windows 10](add-language-interface-packs-to-windows.md).
 
@@ -477,7 +479,7 @@ Where E:\ is USB-B.
 
     Use the following partition layout size guidance to determine the size of your recovery partition in createpartitions-&lt;firmware&gt;.txt files. The amount of free space left is after you copy winre.wim to the hidden partition.
 
-    Please reference [Disk Partition rules](https://technet.microsoft.com/library/hh824839.aspx#DiskPartitionRules) for more information.
+    Please reference [Disk Partition rules](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/manufacture/desktop/configure-uefigpt-based-hard-drive-partitions#diskpartitionrules) for more information.
 
     - If the partition is less than 500 MB, it must have at least 50 MB of free space.
 
@@ -630,6 +632,7 @@ Note: You must be using at least version Windows 10, version 1607.
     
     ![Office tiles pinned to the Start menu](Images/office-tiles-pinned-to-start-menu.png)
     
+## Prepare the system for Push Button Reset
 
 This section provides guidance for setting up the recovery environment for Push Button Reset (PBR) scenarios.
 
@@ -854,11 +857,11 @@ Before starting the deployment procedure OEM requires to download certain kits w
 | Resource/Kit  |   Available at    | Related section   |
 |---------------|-------------------|-------------------|
 | Windows 10 ADK|   [Download the Windows ADK](https://developer.microsoft.com/en-us/windows/hardware/windows-assessment-deployment-kit) | [Create WinPE bootable USB](#create-a-usb-drive-that-can-boot-to-winpe) |
-| Windows 10 x64/x86 DVD Media (desired language) | Obtain Windows 10 media which you will be customizing from Microsoft Authorized Distributor | [Install Windows with basic customizations](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/manufacture/desktop/system-builder-deployment-of-windows-10-for-desktop-editions#install-windows-with-basic-customizations) |
-| Windows 10 Default Product Keys | Default Product Keys are located at [OEM Partner Center](https://dpcenter.microsoft.com/en/Windows/Build/cp-windows-10-build) listed under **Default product keys** tab | [Customize the answer file](#customize-the-answer-file) |
-| Language interface packs | LIPs are located at [OEM Partner Center](https://dpcenter.microsoft.com/en/Windows/Build/cc-windows-10-v1703-lip) listed under **LIPs** tab | [Prepare the system for recovery with Push Button Reset](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/manufacture/desktop/system-builder-deployment-of-windows-10-for-desktop-editions#prepare-the-system-for-recovery-with-push-button-reset) |
-| Update Packages | Obtain update packages by downloading from [Microsoft Update Catalog](http://catalog.update.microsoft.com/v7/site/Home.aspx). The detailed procedure downloading update packages is mentioned in the releated section. | [Add language interface packs](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/manufacture/desktop/system-builder-deployment-of-windows-10-for-desktop-editions#add-language-interface-packs) |
-| Microsoft Office v16.3 | Obtain Microsoft Office v15.4 by downloading from [OEM Partner Center](https://dpcenter.microsoft.com/en/Office/Build/cc-microsoft-office-v16-3-opk) | [Preload Microsoft Office single image v15.4 OPK](https://dpcenter.microsoft.com/en/Office?tag=%7b889D6CB8-8AC1-4D27-85F8-7DDE73EF3DAF%7d&mode=0#filters) |
+| Windows 10 x64/x86 DVD Media (desired language) | Obtain Windows 10 media which you will be customizing from Microsoft Authorized Distributor | [Install Windows with basic customizations](#install-windows-with-basic-customizations) |
+| Windows 10 Default Product Keys | Default Product Keys are located at [Device Partner Center](https://dpcenter.microsoft.com/en/Windows/Build/cp-windows-10-build) listed under **Default product keys** tab | [Customize the answer file](#customize-the-answer-file) |
+| Language interface packs | LIPs are located at [Device Partner Center](https://dpcenter.microsoft.com/en/Windows/Build/cc-windows-10-v1703-lip) listed under **LIPs** tab | [Prepare the system for recovery with Push Button Reset](#prepare-the-system-for-push-button-reset) |
+| Update Packages | Obtain update packages by downloading from [Microsoft Update Catalog](http://catalog.update.microsoft.com/v7/site/Home.aspx). The detailed procedure downloading update packages is mentioned in the releated section. | [Add language interface packs](#add-language-interface-packs) |
+| Microsoft Office v16.3 | Obtain Microsoft Office v15.4 by downloading from [Device Partner Center](https://dpcenter.microsoft.com/en/Office/Build/cc-microsoft-office-v16-3-opk) | [Preload Microsoft Office single image v15.4 OPK](https://dpcenter.microsoft.com/en/Office?tag=%7b889D6CB8-8AC1-4D27-85F8-7DDE73EF3DAF%7d&mode=0#filters) |
 
 
 ## References
