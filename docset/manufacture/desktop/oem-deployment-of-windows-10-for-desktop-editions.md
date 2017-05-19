@@ -14,6 +14,8 @@ ms.technology: windows-oem
 
 Getting ready to build and test Windows 10 desktop PCs? This lab shows you the steps to take to make and deploy Windows images. We'll show you the tools to use and the commands to run to setup an end-to-end deployment. The commands can be scripted, helping you quickly customize new images for specific markets to meet your customers' needs.
 
+If you're an OEM, you can also use the [Express Deployment Tool](aka.ms/edt) (EDT) to build a custom Windows deployment. The EDT simplifies the process of installing and configuring Windows for a consistent brand and customized end-user experience. 
+
 We'll walk you through the process of building a customized Windows deployment. Here's what we'll cover:
 
 ![Deployment Flow Image](images/lab-deployment-flow-17031.png)
@@ -75,7 +77,7 @@ If you plan to build devices with both 64-bit and 32-bit (x86) chipsets and arch
 
 If you're building designs for both retail and business customers, you can start with a single base edition such as Windows 10 Home or Windows 10 Pro, and then later upgrade it to a higher edition such as Windows 10 Enterprise, as needed. Once you've built a higher edition, however, you can't downgrade it to the lower edition. For more info, see [Windows Upgrade Paths](http://go.microsoft.com/fwlink/?LinkId=526838).
 
-If you're building devices to sell to retail customers, you'll need to meet a set of minimum requirements. For info, see the Licensing and Policy guidance on the [OEM Partner Center](http://go.microsoft.com/fwlink/?LinkId=131358).
+If you're building devices to sell to retail customers, you'll need to meet a set of minimum requirements. For info, see the Licensing and Policy guidance on the [Device Partner Center](http://go.microsoft.com/fwlink/?LinkId=131358).
 
 If you're building devices for businesses, you'll have fewer restrictions. IT professionals can customize their devices in all sorts of ways. However, you should consider the implications of IT policies, as well as customer needs such as migrating data, activating security tools, and managing volume license agreements and product keys.
 
@@ -1662,12 +1664,6 @@ Windows deployment generates many logs. To diagnose deployment issues, a script 
 The script should return Success message and give a path to the folder to .zip.
 
 ![Log collection tool successful completion](images/lab-log-collect.png)
- 
-
-
-
-
-
 
 
 
