@@ -15,7 +15,7 @@ ms.technology: windows-oem
 
 Getting ready to build and test Windows 10 desktop PCs? This lab shows you the steps to take to make and deploy Windows images. We'll show you the tools to use and the commands to run to setup an end-to-end deployment. The commands can be scripted, helping you quickly customize new images for specific markets to meet your customers' needs.
 
-If you're an OEM, you can also use the [Express Deployment Tool](aka.ms/edt) (EDT) to build a custom Windows deployment. The EDT simplifies the process of installing and configuring Windows for a consistent brand and customized end-user experience. 
+If you're an OEM, you can also use the [Express Deployment Tool](http://aka.ms/edt) (EDT) to build a custom Windows deployment. The EDT simplifies the process of installing and configuring Windows for a consistent brand and customized end-user experience. 
 
 We'll walk you through the process of building a customized Windows deployment. Here's what we'll cover:
 
