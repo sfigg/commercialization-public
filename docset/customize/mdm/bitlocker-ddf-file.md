@@ -205,7 +205,7 @@ The XML below is the current version for this CSP.
             <Description>This policy setting allows you to configure whether BitLocker requires additional authentication each time the computer starts and whether you are using BitLocker with or without a Trusted Platform Module (TPM). This policy setting is applied when you turn on BitLocker.
                          Note: Only one of the additional authentication options can be required at startup, otherwise a policy error occurs.
                          If you want to use BitLocker on a computer without a TPM, set the "ConfigureNonTPMStartupKeyUsage_Name" data. In this mode either a password or a USB drive is required for start-up. When using a startup key, the key information used to encrypt the drive is stored on the USB drive, creating a USB key. When the USB key is inserted the access to the drive is authenticated and the drive is accessible. If the USB key is lost or unavailable or if you have forgotten the password then you will need to use one of the BitLocker recovery options to access the drive.
-                         On a computer with a compatible TPM, four types of authentication methods can be used at startup to provide added protection for encrypted data. When the computer starts, it can use only the TPM for authentication, or it can also require insertion of a USB flash drive containing a startup key, the entry of a 4-digit to 20-digit personal identification number (PIN), or both.
+                         On a computer with a compatible TPM, four types of authentication methods can be used at startup to provide added protection for encrypted data. When the computer starts, it can use only the TPM for authentication, or it can also require insertion of a USB flash drive containing a startup key, the entry of a 6-digit to 20-digit personal identification number (PIN), or both.
                          If you enable this policy setting, users can configure advanced startup options in the BitLocker setup wizard.
                          If you disable or do not configure this policy setting, users can configure only basic options on computers with a TPM.
                          Note: If you want to require the use of a startup PIN and a USB flash drive, you must configure BitLocker settings using the command-line tool manage-bde instead of the BitLocker Drive Encryption setup wizard.
@@ -269,9 +269,9 @@ The XML below is the current version for this CSP.
               <Get />
               <Replace />
             </AccessType>
-            <Description>This policy setting allows you to configure a minimum length for a Trusted Platform Module (TPM) startup PIN. This policy setting is applied when you turn on BitLocker. The startup PIN must have a minimum length of 4 digits and can have a maximum length of 20 digits.
+            <Description>This policy setting allows you to configure a minimum length for a Trusted Platform Module (TPM) startup PIN. This policy setting is applied when you turn on BitLocker. The startup PIN must have a minimum length of 6 digits and can have a maximum length of 20 digits.
                          If you enable this policy setting, you can require a minimum number of digits to be used when setting the startup PIN.
-                         If you disable or do not configure this policy setting, users can configure a startup PIN of any length between 4 and 20 digits.
+                         If you disable or do not configure this policy setting, users can configure a startup PIN of any length between 6 and 20 digits.
                          The format is string.
                          Sample value for this node to enable this policy is:
                          &lt;enabled/&gt;&lt;data id=&quot;MinPINLength&quot; value=&quot;xx&quot;/&gt;

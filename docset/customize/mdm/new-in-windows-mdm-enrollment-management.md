@@ -1180,6 +1180,15 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>Privacy/LetAppsAccessTasks_UserInControlOfTheseApps</li>
 </ul>
 <p>Starting in Windows 10, version 1703, the maximum value of  Update/DeferFeatureUpdatesPeriodInDays has been increased from 180 days, to 365 days.</p>
+<p>Added a statment that the following policies must target ./User.</p>
+<ul>
+<li>EnterpriseCloudPrint/CloudPrinterDiscoveryEndPoint </li>
+<li>EnterpriseCloudPrint/CloudPrintOAuthAuthority </li>
+<li>EnterpriseCloudPrint/CloudPrintOAuthClientId </li>
+<li>EnterpriseCloudPrint/CloudPrintResourceId </li>
+<li>EnterpriseCloudPrint/DiscoveryMaxPrinterLimit </li>
+<li>EnterpriseCloudPrint/MopriaDiscoveryResourceId</li>
+</ul>
 </td></tr>
 <tr class="even">
 <td style="vertical-align:top">[Understanding ADMX-backed policies](understanding-admx-backed-policies.md)</td>
@@ -1192,6 +1201,7 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <ul>
 <li>AllowWarningForOtherDiskEncryption</li>
 </ul>
+<p>Note that SystemDrivesMinimumPINLength is 6 digits instead of 4.</p>
 </td></tr>
 <tr class="even">
 <td style="vertical-align:top">[Reporting CSP](reporting-csp.md)</td>
