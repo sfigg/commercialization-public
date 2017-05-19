@@ -316,11 +316,11 @@ To obtain update packages, download them from [Microsoft Update Catalog](http://
 
 2.  Type every single update package one by one into the search box and click **Search**.
 
-    ![Update catalog](Images/update-catalog.png)
+    ![Update catalog](Images/sb-update-catalog.png)
 
 3.  After search completes, click **Add** next to the version and architecture of the package you wish to download.
 
-    ![Add Update Catalog](Images/add-update-catalog.png)
+    ![Add Update Catalog](Images/sb-add-update-catalog.png)
 
 4.  After you add all of the following updates, click **view basket** and then **Download**.
 
