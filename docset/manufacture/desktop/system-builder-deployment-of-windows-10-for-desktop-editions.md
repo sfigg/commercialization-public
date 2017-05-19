@@ -310,7 +310,7 @@ If you use an x64 Windows 10 image, add x64 update packages; if you use an x86 W
 
 To obtain update packages, download them from [Microsoft Update Catalog](http://catalog.update.microsoft.com/v7/site/Home.aspx).
 
-1.  Run Internet Explorer and navigate to [Microsoft Update Catalog](http://catalog.update.microsoft.com/v7/site/Home.aspx) webpage. See [What you will need and where to get it](#what-you-will-need-and-where-to-get-it) for more information about which packages you should obtain from Microsoft Update Catalog.
+1.  Run Internet Explorer and navigate to the [Microsoft Update Catalog](http://catalog.update.microsoft.com/v7/site/Home.aspx) webpage. See [What you will need and where to get it](#what-you-will-need-and-where-to-get-it) for more information about which packages you should obtain from Microsoft Update Catalog.
 
 2.  Type every single update package one by one into the search box and click **Search**.
 
@@ -372,7 +372,7 @@ To obtain update packages, download them from [Microsoft Update Catalog](http://
 
     ![OEM Logo details](Images/oem-logo-details.png)
 
-1.  To display an OEM specific desktop background picture, the image file must be placed in %windir%\system32\OEM\**Fabrikam.bmp** directory. Verify that the path is same in answer file corresponding to oobeSystem &gt; Microsoft-Windows-Shell-Setup &gt; Themes &gt; DesktopBackground property. See the below image to add desktop background in an answer file.
+3.  To display an OEM specific desktop background picture, the image file must be placed in %windir%\system32\OEM\**Fabrikam.bmp** directory. Verify that the path is same in answer file corresponding to oobeSystem &gt; Microsoft-Windows-Shell-Setup &gt; Themes &gt; DesktopBackground property. See the below image to add desktop background in an answer file.
 
     ![Add desktop background](Images/add-desktop-background.png)
 
@@ -485,16 +485,20 @@ Where E:\ is USB-B.
 
     - If the partition is larger than 1 GB, we recommend that it should have at least 1 GB free.
 
-            rem == Windows RE tools partition =============== 
-            create partition primary size=500
+    ```
+    rem == Windows RE tools partition =============== 
+    create partition primary size=500
+    ```
 
     Optional: This section assumes you’d rather keep winre.wim inside of install.wim to keep your languages and drivers in sync. If you’d like to save a bit of time on the factory floor, and if you’re OK managing these images separately, you may prefer to pull winre.wim from the image and apply it separately.
 
 1.  Commit the changes and unmount the Windows image:
 
-        Dism /Unmount-Image /MountDir:"C:\mount\windows" /Commit
- 
-    where C is the drive letter of the drive that contains the image.
+    ```
+    Dism /Unmount-Image /MountDir:"C:\mount\windows" /Commit
+    ```
+
+    Where C is the drive letter of the drive that contains the image.
 
     This process may take several minutes.
 
@@ -567,10 +571,10 @@ Obtain Office Deployment Tool from from X21-32422 Office 2016 Deployment Tool fo
 9. Open an elevated command prompt as administrator.
 
 10. From E:\Officev16, type and run setup.exe /download ConfigureO365Home.xml:
-
+    ```
     CD E:\Officev16
     Setup.exe /download ConfigureO365Home.xml
-    
+    ```   
     This will download the language packs for German and Japanese.
     
 11. Type and run echo %errorlevel% and verify return code is 0.
@@ -579,7 +583,7 @@ Obtain Office Deployment Tool from from X21-32422 Office 2016 Deployment Tool fo
 
 #### Install Office 2016 on Reference PC
 
-1. Plug USB-B into the reference computer, which is in Audit mode.
+1.  Plug USB-B into the reference computer, which is in Audit mode.
 2.	Find the drive letter for USB-B; for this example USB-B is E:\.
 3.	Notepad ConfigureO365Home.xml.
 4.	Configure the SourcePath to point to USB-B E:\Officev16.
