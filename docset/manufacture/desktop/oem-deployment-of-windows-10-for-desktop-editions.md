@@ -10,6 +10,7 @@ ms.technology: windows-oem
 ---
 
 
+
 # OEM Windows Desktop Deployment and Imaging Lab
 
 Getting ready to build and test Windows 10 desktop PCs? This lab shows you the steps to take to make and deploy Windows images. We'll show you the tools to use and the commands to run to setup an end-to-end deployment. The commands can be scripted, helping you quickly customize new images for specific markets to meet your customers' needs.
@@ -1664,6 +1665,8 @@ Windows deployment generates many logs. To diagnose deployment issues, a script 
 The script should return Success message and give a path to the folder to .zip.
 
 ![Log collection tool successful completion](images/lab-log-collect.png)
+ 
+
 
 
 
