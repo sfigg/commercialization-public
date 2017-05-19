@@ -871,15 +871,14 @@ To begin adding license terms, you'll have to create folders for your license fi
 
 2.	Name each folder under C:\mount\windows\Windows\System32\oobe\info\default\ directory as the Language Decimal Identifier corresponding the language. Do this step for each language pack that's in the Windows image.
 
-    **Note:**  Please see [this link to see complete list of language decimal identifiers of corresponding languages](available-language-packs-for-windows.md)
+    **Note:**  Please see [this link to see complete list of language decimal identifiers of corresponding languages](available-language-packs-for-windows.md).
 
     For example: If en-us and de-de language packs are added to the Windows image, add a folder named “1033” (representing en-us language) in C:\mount\windows\Windows\System32\oobe\info\default\. Then add a folder named “1031” (de-de language) under the same C:\mount\windows\Windows\System32\oobe\info\default\ directory.
 
-
-    ```
-    MD c:\mount\windows\windows\system32\oobe\info\default\1031
-    MD c:\mount\windows\windows\system32\oobe\info\default\1033
-    ```
+     ```
+     MD c:\mount\windows\windows\system32\oobe\info\default\1031
+     MD c:\mount\windows\windows\system32\oobe\info\default\1033
+     ```
 
 4.	Create a license terms file for each language you have in your image, and copy them to the language-specific oobe folder.
 
