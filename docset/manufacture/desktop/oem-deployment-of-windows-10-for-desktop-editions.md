@@ -9,7 +9,8 @@ ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-# OEM deployment of Windows 10 for desktop editions
+
+# OEM Windows Desktop Deployment and Imaging Lab
 
 Getting ready to build and test Windows 10 desktop PCs? This lab shows you the steps to take to make and deploy Windows images. We'll show you the tools to use and the commands to run to setup an end-to-end deployment. The commands can be scripted, helping you quickly customize new images for specific markets to meet your customers' needs.
 
@@ -186,7 +187,7 @@ Download the lab samples from [USB-B.zip](http://download.microsoft.com/download
 
 **Note**: _USB-B_ has to be an NTFS-formatted drive.
 
-    ![Extract USB](images/extract-usb.png) 
+![Extract USB](images/extract-usb.png) 
 
 
 ### Product keys
@@ -298,7 +299,6 @@ If you're using an x64 Windows 10 image:
 
 ```
 dism /image:C:\winpe_amd64\mount /Add-Package /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\WinPE-NetFx.cab"
-
 dism /image:C:\winpe_amd64\mount /Add-Package /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\en-us\WinPE-NetFx_en-us.cab"
 ```
 
@@ -306,7 +306,6 @@ If you're using an x86 Windows 10 image:
 
 ```
 dism /image:C:\winpe_x86\mount /Add-Package /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\x86\WinPE_OCs\WinPE-NetFx.cab"
-
 dism /image:C:\winpe_x86\mount /Add-Package /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\x86\WinPE_OCs\en-us\WinPE-NetFx_en-us.cab"
 ```
 
@@ -503,8 +502,9 @@ Add drivers to an image to ensure that all hardware in a PC is setup properly wh
     ```
 
 3.	Verify that the drivers are part of the image:
-4.	`Dism /Get-Drivers /Image:"C:\mount\windows"`
-
+    ```
+	Dism /Get-Drivers /Image:"C:\mount\windows"
+    ```
     Check the list of packages and verify that the list contains the drivers you added.
 
 ### Languages
@@ -724,15 +724,15 @@ Notes:
 
 Use Dism to apply the latest servicing stack update (SSU) and general distribution release (GDR) as well as any prerequisite KB updates. You can find KB updates in the following locations:
 
-GDR: http://aka.ms/win10releaseinfo
+GDR: [http://aka.ms/win10releaseinfo](http://aka.ms/win10releaseinfo)
 
-SSU: https://msdn.microsoft.com/en-us/windows/hardware/commercialize/manufacture/whats-new-in-windows-manufacturing
+SSU: [https://msdn.microsoft.com/en-us/windows/hardware/commercialize/manufacture/whats-new-in-windows-manufacturing](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/manufacture/whats-new-in-windows-manufacturing)
 
-KB Files: http://catalog.update.microsoft.com
+KB Files: [http://catalog.update.microsoft.com](http://catalog.update.microsoft.com)
 
 > **Important**: If you install an update (hotfix, general distribution release [GDR], or service pack [SP]) that contains language-dependent resources prior to installing a language pack, the language-specific changes in the update won't be applied when you add the language pack. You need to reinstall the update to apply language-specific changes. To avoid reinstalling updates, install language packs before installing updates.
 
-1. Get a Windows update package. For example, grab the latest cumulative update listed in Windows 10 update history from the Microsoft Update catalog. Extract the .msu file update to a folder, for example, E:\updates\windows10.0-kb4016240-x86_7c7fcf0d4018e4244561cde531c3fb583d9f3051.msu. Make sure that your update matches the architecture of the image you are working with.
+1. Get a Windows update package. For example, grab the [latest cumulative update listed in Windows 10 update history from the Microsoft Update catalog](http://www.catalog.update.microsoft.com/Search.aspx?q=Cumulative+update). Extract the .msu file update to a folder, for example, E:\updates\windows10.0-kb4016240-x64_0e60aebeb151d4b3598e4cfa9b4ccb1fc80e6e4d.msu. Make sure that your update matches the architecture of the image you are working with.
 
 
     To learn more, see https://myoem.microsoft.com/oem/myoem/en/product/winemb/pages/comm-ms-updt-ctlg-trnstn.aspx.
@@ -742,12 +742,12 @@ KB Files: http://catalog.update.microsoft.com
     For 64-bit images:
 
     ```
-    Dism /Add-Package /Image:C:\mount\windows /PackagePath:"E:\updates\ZDP-x64\Windows10.0-KB3176927-x64.msu"
+    Dism /Add-Package /Image:C:\mount\windows /PackagePath:"E:\updates\windows10.0-kb4016871-x64_27dfce9dbd92670711822de2f5f5ce0151551b7d.msu"
     ```
 
     For 32-bit images:
     ```
-    Dism /Add-Package /Image:C:\mount\windows /PackagePath:"E:\updates\ZDP-x86\Windows10.0-KB3176927-x86.msu"
+    Dism /Add-Package /Image:C:\mount\windows /PackagePath:"E:\updates\windows10.0-kb4016240-x86_7c7fcf0d4018e4244561cde531c3fb583d9f3051.msu"
     ```
 
 **Note:** Each package is typically a new KB that increases the build revision number of Windows. You can find the revision number of windows in the following registry key: 
@@ -765,13 +765,13 @@ To apply the update that you downloaded in the previous section to your WinRE im
 For 64-bit Windows:
 
 ```
-Dism /Add-Package /Image:C:\mount\winre /PackagePath:"E:\updates\ZDP-x64\Windows10.0-KB3176927-x64.msu"
+Dism /Add-Package /Image:C:\mount\winre /PackagePath:"E:\updates\windows10.0-kb4016871-x64_27dfce9dbd92670711822de2f5f5ce0151551b7d.msu"
 ```
 
 For 32-bit Windows:
 
 ```
-Dism /Add-Package /Image:C:\mount\windows /PackagePath:"E:\updates\ZDP-x86\Windows10.0-KB3176927-x86.msu"
+Dism /Add-Package /Image:C:\mount\windows /PackagePath:"E:\updates\windows10.0-kb4016240-x86_7c7fcf0d4018e4244561cde531c3fb583d9f3051.msu"
 ```
 
 ## Service inbox apps
@@ -784,7 +784,7 @@ Starting with Windows 10, version 1703, inbox apps won't get monthly updates. Do
 
 1. Mount the inbox apps ISO. You can do this by double-clicking on the inbox apps iso in File Explorer.
 2. From the mounted inbox apps ISO, copy the folder that matches your architecture to _USB-B_\Apps.
-3. Use DISM to reinstall inbox apps. You no longer have to uninstall inbox apps prior to reinstalling them. You'll have to run reinstallation commands for each inbox app. Example reinstallation scripts are included in USB-B. Here is an example of how to reinstall one inbox app, the 3D Builder app:
+3. Use DISM to reinstall inbox apps. You no longer have to uninstall inbox apps prior to reinstalling them. You'll have to run reinstallation commands for each inbox app. Here is an example of how to reinstall one inbox app, the 3D Builder app:
 
 For 64-bit Windows:
 
@@ -878,7 +878,7 @@ To begin adding license terms, you'll have to create folders for your license fi
     MD c:\mount\windows\windows\system32\oobe\info\default\1033
     ```
 
-4.	Create license term document for each language specified. Move each license term document to the corresponding language folder
+4.	Create a license terms file for each language you have in your image, and copy them to the language-specific oobe folder.
 
     For example: Move the English agreement.rtf file to C:\mount\windows\Windows\System32\oobe\info\default\1033\ directory and move the German agreement.rtf to C:\mount\windows\Windows\System32\oobe\info\default\1031\. 
 
@@ -1663,6 +1663,17 @@ The script should return Success message and give a path to the folder to .zip.
 
 ![Log collection tool successful completion](images/lab-log-collect.png)
  
+
+
+
+
+
+
+
+
+
+
+
 
 
 
