@@ -996,11 +996,6 @@
         "redirect_document_id": true 
     }, 
     {   
-        "source_path": "docset/customize/mdm/TOC.md", 
-        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/TOC", 
-        "redirect_document_id": true 
-    }, 
-    {   
         "source_path": "docset/customize/mdm/understanding-admx-backed-policies.md", 
         "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/understanding-admx-backed-policies", 
         "redirect_document_id": true 
