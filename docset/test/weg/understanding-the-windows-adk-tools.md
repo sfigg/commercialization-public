@@ -17,42 +17,26 @@ ms.technology: windows-oem
 
 # Understanding the Windows ADK tools
 
-The Windows Assessment Toolkit and the Windows Performance Toolkit make
-up the Windows Assessment and Deployment Kit (ADK). Together they
-provide a complete solution for evaluating overall computer performance
-and automating the deployment of the Windows operating system to new
-PCs.
+The Windows Assessment Toolkit and the Windows Performance Toolkit make up the Windows Assessment and Deployment Kit (ADK). Together, they provide a complete solution for evaluating overall computer performance and automating the deployment of the Windows operating system to new PCs.
 
-This section focuses on the Windows Assessment Toolkit. The assessment
-results are used to diagnose potential problems, so that the hardware
-and apps you develop are responsive and have a minimal impact on battery
-life, startup performance, and shutdown time. The same assessments are
-available for OEMs, ISVs, IHVs, enthusiasts, and other members of the
-community to establish a common framework to measure, compare, and
-review various aspects of quality.
+This topic focuses on the Windows Assessment Toolkit. The assessment results are used to diagnose potential problems, so that the hardware and apps you develop are responsive and have a minimal impact on battery life, startup performance, and shutdown time. The same assessments are available for OEMs, ISVs, IHVs, enthusiasts, and other members of the community to establish a common framework to measure, compare, and review various aspects of quality.
 
-Important business objectives can be achieved by using the Windows
-Assessment Toolkit:
+Important business objectives can be achieved by using the Windows Assessment Toolkit:
 
 <dl>
-<dt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Measure & compare</strong></dt>
+<dt>**Measure & compare**</dt>
 <dd>
-<p>You can use the data to compare components (apps, drivers, or both)
-against other similar components to facilitate your decision making,
-recommendations, and competitive benchmarking.</p>
+<p>You can use the data to compare components (apps, drivers, or both) against other similar components to facilitate your decision-making, recommendations, and competitive benchmarking.</p>
 </dd>
-<dt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Improve quality</strong></dt>
+<dt>**Improve quality**</dt>
 <dd>
-<p>You can work independently or involve partners to build a component
-(app, driver, or both) as per pre-defined quality criteria.</p>
+<p>You can work independently or involve partners to build a component (app, driver, or both) as per pre-defined quality criteria.</p>
 </dd>
-<dt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Track quality</strong></dt>
+<dt>**Track quality**</dt>
 <dd>
-<p>You can create a process for efficiently tracking the quality of
-component versions and detect regressions after each iteration.</p>
+<p>You can create a process for efficiently tracking the quality of component versions and detect regressions after each iteration.</p>
 </dd>
 </dl>
-
 
 The Assessment Toolkit is typically used in these scenarios:
 
@@ -92,9 +76,7 @@ The Assessment Toolkit is typically used in these scenarios:
 </tbody>
 </table>
 
-For more information, see [Windows Assessments and Deployment
-Kit](http://go.microsoft.com/fwlink/?LinkId=206587)
-(https://msdn.microsoft.com/en-us/library/windows/hardware/hh825420.aspx).
+For more information, see [Windows Assessments and Deployment Kit](https://msdn.microsoft.com/en-us/library/windows/hardware/hh825420.aspx).
 
 <table>
 <thead>
@@ -111,12 +93,12 @@ Kit](http://go.microsoft.com/fwlink/?LinkId=206587)
 <li><p>Windows Assessment Console</p></li>
 <li><p>Assessments</p></li>
 </ul>
-<p>For more information, see <a href="http://go.microsoft.com/fwlink/?LinkId=214554">Windows Assessment Toolkit</a> (https://msdn.microsoft.com/en-us/library/windows/hardware/hh825508.aspx).</p></td>
+<p>For more information, see [Windows Assessment Toolkit Technical Reference](https://msdn.microsoft.com/en-us/library/windows/hardware/hh825508.aspx).</p></td>
 </tr>
 <tr class="even">
 <td>Windows Assessment Services</td>
 <td><p>App for remotely managing settings, PCs, images, and assessments in a lab environment where Windows Assessment Services is installed. This app can run on any PC that has access to the server that’s running Windows Assessment Services.</p>
-<p>For more information, see <a href="http://go.microsoft.com/fwlink/?LinkId=215628">Windows Assessment Services</a> (https://msdn.microsoft.com/en-us/library/windows/hardware/hh825573.aspx).</p></td>
+<p>For more information, see [Windows Assessment Services Technical Reference](https://msdn.microsoft.com/en-us/library/windows/hardware/hh825573.aspx)</p></td>
 </tr>
 <tr class="odd">
 <td>Windows Performance Toolkit (WPT)</td>
@@ -126,12 +108,12 @@ Kit](http://go.microsoft.com/fwlink/?LinkId=206587)
 <li><p>Windows Performance Analyzer</p></li>
 <li><p>Xperf</p></li>
 </ul>
-<p>For more information, see <a href="http://go.microsoft.com/fwlink/?LinkId=228914">Windows Performance Toolkit</a> (https://msdn.microsoft.com/en-us/library/hh162945.aspx).</p></td>
+<p>For more information, see [Windows Performance Toolkit Technical Reference](https://msdn.microsoft.com/en-us/library/hh162945.aspx).</p></td>
 </tr>
 <tr class="even">
 <td>Assessment Execution Engine (AXE)</td>
 <td><p>The Assessment Execution Engine (AXE) lets you manage and execute Windows system assessments. AXE provides infrastructure needed to manage assessments using a UX tool or script, run assessments, make measurements, process raw data into results, run diagnostics, and publish the results.</p>
-<p>For more information, see <a href="http://go.microsoft.com/fwlink/?LinkId=309781">Assessment Execution Engine</a> (https://msdn.microsoft.com/library/windows/desktop/hh437709.aspx).</p></td>
+<p>For more information, see [Assessment Execution Engine](https://msdn.microsoft.com/library/windows/desktop/hh437709.aspx).</p></td>
 </tr>
 </tbody>
 </table>
@@ -141,9 +123,9 @@ Kit](http://go.microsoft.com/fwlink/?LinkId=206587)
 
 | Resource title                                               | Content type  | Description                                                                                                                                                                                                                                                                                                                 | Link |
 |--------------------------------------------------------------|---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Windows Performance Analyzer                                 | Documentation | WPT Documentation and videos                                                                                                                                                                                                                                                                                                | [MSDN](https://msdn.microsoft.com/en-us/library/windows/hardware/hh448170.aspx) (https://msdn.microsoft.com/en-us/library/windows/hardware/hh448170.aspx) |
-| CPU Analysis Techniques                                      | White paper   | This guide provides detailed techniques that you can use to investigate Central Processing Units (CPU)-related issues that impact assessment metrics.                                                                                                                                                                       | [MSDN](http://msdn.microsoft.com/en-us/library/windows/desktop/jj679884.aspx) (https://msdn.microsoft.com/en-us/library/windows/desktop/jj679884.aspx) |
-| Engineering performance with the Windows Performance Toolkit | Video         | The Windows Performance Toolkit (WPT) is a powerful tool, used widely by the Windows engineering team within Microsoft, for improving app and system performance. This session focuses on providing tips and tricks, in a case study format with videos, for using the WPT along with WPS traces to optimize your own apps. | [Channel 9](http://channel9.msdn.com/events/BUILD/BUILD2011/HW-59T) (http://channel9.msdn.com/events/BUILD/BUILD2011/HW-59T) |
+| Windows Performance Analyzer                                 | Documentation | WPT Documentation and videos                                                                                                                                                                                                                                                                                                | [MSDN](https://msdn.microsoft.com/en-us/library/windows/hardware/hh448170.aspx) |
+| CPU Analysis Techniques                                      | White paper   | This guide provides detailed techniques that you can use to investigate Central Processing Units (CPU)-related issues that impact assessment metrics.                                                                                                                                                                       | [MSDN](https://msdn.microsoft.com/en-us/library/windows/desktop/jj679884.aspx) |
+| Improving performance with the Windows Performance Toolkit | Video         | The Windows Performance Toolkit (WPT) is a powerful tool, used widely by the Windows engineering team within Microsoft, for improving app and system performance. This session focuses on providing tips and tricks, in a case study format with videos, for using the WPT along with WPS traces to optimize your own apps. | [Channel 9](https://channel9.msdn.com/events/BUILD/BUILD2011/HW-59T) |
 
 
 
