@@ -1,23 +1,1133 @@
 { 
   "redirections": [ 
     {   
-        "source_path": "design/component-guidelines/radial-implementation-guide.md", 
+        "source_path": "design/component-guidelines/radial-implementation-guide", 
         "redirect_url": "https://msdn.microsoft.com/windows/hardware/design", 
         "redirect_document_id": true 
     }, 
     {   
-        "source_path": "design/component-guidelines/radial-controller-designs.md", 
+        "source_path": "design/component-guidelines/radial-controller-designs", 
         "redirect_url": "https://msdn.microsoft.com/windows/hardware/design", 
         "redirect_document_id": true 
     }, 
     {   
-        "source_path": "design/component-guidelines/radial-controller-device-bus-connectivity.md", 
+        "source_path": "design/component-guidelines/radial-controller-device-bus-connectivity", 
         "redirect_url": "https://msdn.microsoft.com/windows/hardware/design", 
         "redirect_document_id": true 
     }, 
     {   
-        "source_path": "design/component-guidelines/radial-controller-protocol-implementation.md", 
+        "source_path": "design/component-guidelines/radial-controller-protocol-implementation", 
         "redirect_url": "https://msdn.microsoft.com/windows/hardware/design", 
+        "redirect_document_id": true 
+    },
+	    {   
+        "source_path": "docset/customize/mdm/activesync-csp", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/activesync-csp", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/activesync-ddf-file", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/activesync-ddf-file", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/add-an-azure-ad-tenant-and-azure-ad-subscription", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/add-an-azure-ad-tenant-and-azure-ad-subscription", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/alljoynmanagement-csp", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/alljoynmanagement-csp", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/alljoynmanagement-ddf", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/alljoynmanagement-ddf", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/application-csp", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/application-csp", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/applicationrestrictions-xsd", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/applicationrestrictions-xsd", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/applocker-csp", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/applocker-csp", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/applocker-ddf-file", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/applocker-ddf-file", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/applocker-xsd", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/applocker-xsd", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/appv-deploy-and-config", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/appv-deploy-and-config", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/assign-seats", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/assign-seats", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/assignedaccess-csp", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/assignedaccess-csp", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/assignedaccess-ddf", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/assignedaccess-ddf", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/azure-active-directory-integration-with-mdm", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/azure-active-directory-integration-with-mdm", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/bitlocker-csp", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/bitlocker-ddf-file", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/bitlocker-ddf-file", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/bootstrap-csp", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/bootstrap-csp", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/browserfavorite-csp", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/browserfavorite-csp", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/bulk-assign-and-reclaim-seats-from-user", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/bulk-assign-and-reclaim-seats-from-user", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/bulk-enrollment-using-windows-provisioning-tool", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/bulk-enrollment-using-windows-provisioning-tool", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/cellularsettings-csp", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/cellularsettings-csp", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/certificate-authentication-device-enrollment", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/certificate-authentication-device-enrollment", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/certificate-renewal-windows-mdm", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/certificate-renewal-windows-mdm", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/certificatestore-csp", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/certificatestore-csp", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/certificatestore-ddf-file", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/certificatestore-ddf-file", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/cleanpc-csp", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/cleanpc-csp", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/cleanpc-ddf", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/cleanpc-ddf", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/clientcertificateinstall-csp", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/clientcertificateinstall-csp", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/clientcertificateinstall-ddf-file", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/clientcertificateinstall-ddf-file", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/cm-cellularentries-csp", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/cm-cellularentries-csp", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/cm-proxyentries-csp", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/cm-proxyentries-csp", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/cmpolicy-csp", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/cmpolicy-csp", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/cmpolicyenterprise-csp", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/cmpolicyenterprise-csp", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/cmpolicyenterprise-ddf-file", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/cmpolicyenterprise-ddf-file", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/configuration-service-provider-reference", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/create-a-custom-configuration-service-provider", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/create-a-custom-configuration-service-provider", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/customdeviceui-csp", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/customdeviceui-csp", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/customdeviceui-ddf", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/customdeviceui-ddf", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/data-structures-windows-store-for-business", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/data-structures-windows-store-for-business", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/defender-csp", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/defender-csp", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/defender-ddf", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/defender-ddf", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/design-a-custom-windows-csp", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/design-a-custom-windows-csp", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/devdetail-csp", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/devdetail-csp", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/devdetail-ddf-file", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/devdetail-ddf-file", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/developersetup-csp", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/developersetup-csp", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/developersetup-ddf", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/developersetup-ddf", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/device-update-management", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/device-update-management", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/deviceinstanceservice-csp", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/deviceinstanceservice-csp", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/devicelock-csp", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/devicelock-csp", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/devicelock-ddf-file", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/devicelock-ddf-file", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/devicemanageability-csp", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/devicemanageability-csp", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/devicemanageability-ddf", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/devicemanageability-ddf", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/devicestatus-csp", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/devicestatus-csp", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/devicestatus-ddf", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/devicestatus-ddf", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/devinfo-csp", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/devinfo-csp", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/devinfo-ddf-file", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/devinfo-ddf-file", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/diagnose-mdm-failures-in-windows-10", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/diagnosticlog-csp", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/diagnosticlog-csp", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/diagnosticlog-ddf", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/diagnosticlog-ddf", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/disconnecting-from-mdm-unenrollment", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/disconnecting-from-mdm-unenrollment", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/dmacc-csp", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/dmacc-csp", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/dmacc-ddf-file", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/dmacc-ddf-file", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/dmclient-csp", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/dmclient-csp", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/dmclient-ddf-file", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/dmclient-ddf-file", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/dmprocessconfigxmlfiltered", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/dmprocessconfigxmlfiltered", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/dmsessionactions-csp", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/dmsessionactions-csp", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/dmsessionactions-ddf", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/dmsessionactions-ddf", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/dynamicmanagement-csp", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/dynamicmanagement-csp", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/dynamicmanagement-ddf", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/dynamicmanagement-ddf", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/eap-configuration", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/eap-configuration", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/email2-csp", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/email2-csp", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/email2-ddf-file", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/email2-ddf-file", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/enable-offline-updates-for-windows-embedded-8-1-handheld-devices-to-windows-10", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/enable-offline-updates-for-windows-embedded-8-1-handheld-devices-to-windows-10", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/enterprise-app-management", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/enterprise-app-management", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/enterpriseapn-csp", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/enterpriseapn-csp", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/enterpriseapn-ddf", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/enterpriseapn-ddf", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/enterpriseappmanagement-csp", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/enterpriseappmanagement-csp", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/enterpriseappvmanagement-csp", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/enterpriseappvmanagement-csp", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/enterpriseappvmanagement-ddf", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/enterpriseappvmanagement-ddf", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/enterpriseassignedaccess-csp", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/enterpriseassignedaccess-csp", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/enterpriseassignedaccess-ddf", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/enterpriseassignedaccess-ddf", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/enterpriseassignedaccess-xsd", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/enterpriseassignedaccess-xsd", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/enterprisedataprotection-csp", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/enterprisedataprotection-csp", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/enterprisedataprotection-ddf-file", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/enterprisedataprotection-ddf-file", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/enterprisedesktopappmanagement-csp", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/enterprisedesktopappmanagement-csp", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/enterprisedesktopappmanagement-ddf-file", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/enterprisedesktopappmanagement-ddf-file", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/enterprisedesktopappmanagement2-xsd", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/enterprisedesktopappmanagement2-xsd", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/enterpriseext-csp", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/enterpriseext-csp", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/enterpriseext-ddf", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/enterpriseext-ddf", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/enterpriseextfilessystem-csp", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/enterpriseextfilessystem-csp", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/enterpriseextfilesystem-ddf", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/enterpriseextfilesystem-ddf", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/enterprisemodernappmanagement-csp", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/enterprisemodernappmanagement-csp", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/enterprisemodernappmanagement-ddf", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/enterprisemodernappmanagement-ddf", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/enterprisemodernappmanagement-xsd", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/enterprisemodernappmanagement-xsd", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/federated-authentication-device-enrollment", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/federated-authentication-device-enrollment", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/filesystem-csp", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/filesystem-csp", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/get-inventory", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/get-inventory", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/get-localized-product-details", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/get-localized-product-details", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/get-offline-license", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/get-offline-license", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/get-product-details", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/get-product-details", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/get-product-package", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/get-product-package", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/get-product-packages", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/get-product-packages", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/get-seat", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/get-seat", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/get-seats-assigned-to-a-user", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/get-seats-assigned-to-a-user", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/get-seats", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/get-seats", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/healthattestation-csp", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/healthattestation-csp", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/healthattestation-ddf", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/healthattestation-ddf", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/hotspot-csp", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/hotspot-csp", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/iconfigserviceprovider2", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/iconfigserviceprovider2", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/iconfigserviceprovider2configmanagernotification", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/iconfigserviceprovider2configmanagernotification", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/iconfigserviceprovider2getnode", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/iconfigserviceprovider2getnode", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/icspnode", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/icspnode", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/icspnodeadd", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/icspnodeadd", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/icspnodeclear", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/icspnodeclear", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/icspnodecopy", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/icspnodecopy", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/icspnodedeletechild", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/icspnodedeletechild", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/icspnodedeleteproperty", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/icspnodedeleteproperty", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/icspnodeexecute", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/icspnodeexecute", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/icspnodegetchildnodenames", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/icspnodegetchildnodenames", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/icspnodegetproperty", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/icspnodegetproperty", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/icspnodegetpropertyidentifiers", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/icspnodegetpropertyidentifiers", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/icspnodegetvalue", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/icspnodegetvalue", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/icspnodemove", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/icspnodemove", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/icspnodesetproperty", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/icspnodesetproperty", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/icspnodesetvalue", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/icspnodesetvalue", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/icspnodetransactioning", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/icspnodetransactioning", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/icspvalidate", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/icspvalidate", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/implement-server-side-mobile-application-management", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/implement-server-side-mobile-application-management", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/index", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/index", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/management-tool-for-windows-store-for-business", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/management-tool-for-windows-store-for-business", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/maps-csp", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/maps-csp", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/maps-ddf-file", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/maps-ddf-file", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/mdm-enrollment-of-windows-devices", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/mdm-enrollment-of-windows-devices", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/messaging-csp", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/messaging-csp", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/messaging-ddf", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/messaging-ddf", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/mobile-device-enrollment", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/mobile-device-enrollment", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/nap-csp", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/nap-csp", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/napdef-csp", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/napdef-csp", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/networkproxy-csp", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/networkproxy-csp", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/networkproxy-ddf", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/networkproxy-ddf", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/networkqospolicy-csp", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/networkqospolicy-csp", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/networkqospolicy-ddf", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/networkqospolicy-ddf", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/new-in-windows-mdm-enrollment-management", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/new-in-windows-mdm-enrollment-management", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/nodecache-csp", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/nodecache-csp", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/nodecache-ddf-file", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/nodecache-ddf-file", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/office-csp", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/office-csp", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/office-ddf", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/office-ddf", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/oma-dm-protocol-support", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/oma-dm-protocol-support", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/on-premise-authentication-device-enrollment", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/on-premise-authentication-device-enrollment", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/passportforwork-csp", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/passportforwork-csp", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/passportforwork-ddf", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/passportforwork-ddf", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/personalization-csp", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/personalization-csp", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/personalization-ddf", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/personalization-ddf", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/policy-admx-backed", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/policy-configuration-service-provider", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/policy-ddf-file", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/policy-ddf-file", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/policymanager-csp", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/policymanager-csp", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/provisioning-csp", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/provisioning-csp", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/proxy-csp", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/proxy-csp", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/push-notification-windows-mdm", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/push-notification-windows-mdm", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/pxlogical-csp", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/pxlogical-csp", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/reboot-csp", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/reboot-csp", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/reboot-ddf-file", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/reboot-ddf-file", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/reclaim-seat-from-user", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/reclaim-seat-from-user", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/register-your-free-azure-active-directory-subscription", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/register-your-free-azure-active-directory-subscription", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/registry-csp", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/registry-csp", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/registry-ddf-file", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/registry-ddf-file", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/remotefind-csp", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/remotefind-csp", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/remotefind-ddf-file", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/remotefind-ddf-file", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/remotelock-csp", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/remotelock-csp", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/remotelock-ddf-file", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/remotelock-ddf-file", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/remotering-csp", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/remotering-csp", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/remotering-ddf-file", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/remotering-ddf-file", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/remotewipe-csp", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/remotewipe-csp", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/remotewipe-ddf-file", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/remotewipe-ddf-file", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/reporting-csp", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/reporting-csp", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/reporting-ddf-file", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/reporting-ddf-file", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/rest-api-reference-windows-store-for-business", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/rest-api-reference-windows-store-for-business", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/rootcacertificates-csp", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/rootcacertificates-csp", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/rootcacertificates-ddf-file", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/rootcacertificates-ddf-file", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/samples-for-writing-a-custom-configuration-service-provider", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/samples-for-writing-a-custom-configuration-service-provider", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/secureassessment-csp", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/secureassessment-csp", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/secureassessment-ddf-file", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/secureassessment-ddf-file", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/securitypolicy-csp", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/securitypolicy-csp", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/server-requirements-windows-mdm", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/server-requirements-windows-mdm", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/sharedpc-csp", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/sharedpc-csp", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/sharedpc-ddf-file", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/sharedpc-ddf-file", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/storage-csp", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/storage-csp", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/storage-ddf-file", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/storage-ddf-file", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/structure-of-oma-dm-provisioning-files", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/structure-of-oma-dm-provisioning-files", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/supl-csp", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/supl-csp", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/supl-ddf-file", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/supl-ddf-file", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/surfacehub-csp", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/surfacehub-csp", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/surfacehub-ddf-file", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/surfacehub-ddf-file", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/TOC", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/TOC", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/understanding-admx-backed-policies", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/understanding-admx-backed-policies", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/unifiedwritefilter-csp", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/unifiedwritefilter-csp", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/unifiedwritefilter-ddf", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/unifiedwritefilter-ddf", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/update-csp", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/update-csp", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/update-ddf-file", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/update-ddf-file", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/using-powershell-scripting-with-the-wmi-bridge-provider", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/using-powershell-scripting-with-the-wmi-bridge-provider", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/vpn-csp", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/vpn-csp", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/vpn-ddf-file", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/vpn-ddf-file", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/vpnv2-csp", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/vpnv2-csp", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/vpnv2-ddf-file", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/vpnv2-ddf-file", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/vpnv2-profile-xsd", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/vpnv2-profile-xsd", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/w4-application-csp", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/w4-application-csp", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/w7-application-csp", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/w7-application-csp", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/wifi-csp", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/wifi-csp", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/wifi-ddf-file", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/wifi-ddf-file", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/win32-and-centennial-app-policy-configuration", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/win32-and-centennial-app-policy-configuration", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/win32appinventory-csp", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/win32appinventory-csp", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/win32appinventory-ddf-file", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/win32appinventory-ddf-file", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/windows-mdm-enterprise-settings", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/windows-mdm-enterprise-settings", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/windowsadvancedthreatprotection-csp", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/windowsadvancedthreatprotection-csp", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/windowsadvancedthreatprotection-ddf", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/windowsadvancedthreatprotection-ddf", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/windowslicensing-csp", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/windowslicensing-csp", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/windowslicensing-ddf-file", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/windowslicensing-ddf-file", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/windowssecurityauditing-csp", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/windowssecurityauditing-csp", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/windowssecurityauditing-ddf-file", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/windowssecurityauditing-ddf-file", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "docset/customize/mdm/wmi-providers-supported-in-windows", 
+        "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/wmi-providers-supported-in-windows", 
         "redirect_document_id": true 
     }
   ] 
