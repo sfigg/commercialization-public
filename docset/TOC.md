@@ -790,8 +790,6 @@
 ### [Configure power settings](https://msdn.microsoft.com/library/windows/hardware/mt608264)
 ### [Windows Provisioning settings reference](https://msdn.microsoft.com/library/windows/hardware/dn965990)
 
-## [Mobile Device Management](customize/mdm/)
-
 ## [Preinstalled apps](customize/preinstall/preinstall-apps.md)
 ### [Preinstallable apps for desktop devices](customize/preinstall/preinstallable-apps-for-windows-10-desktop.md)
 ### [Preinstallable apps for mobile devices](customize/preinstall/preinstallable-apps-for-window-10-for-phones.md)
