@@ -1,6 +1,6 @@
 ---
 author: kpacquer
-Description: 'We''ll take our test image and convert it to a retail build.'
+Description: 'Convert our test image to a retail build.'
 MS-HAID: 'p\_iot\_core.build\_retail\_image'
 MSHAttr: 'PreferredLib:/library'
 title: 'Lab 1f: Build a retail image'
@@ -13,7 +13,7 @@ ms.technology: windows-oem
 
 # Lab 1f: Build a retail image
 
-We''ll take our customizations, put them together, and test them in a retail build. 
+We'll take our customizations, put them together, and test them in a retail build. 
 
 ## <span id="Prerequisites"></span><span id="prerequisites"></span><span id="PREREQUISITES"></span>Prerequisites
 
