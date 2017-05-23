@@ -23,7 +23,7 @@ ms.technology: windows-oem
 
 2.	Enter the firmware settings page (e.g., press F2 while booting).
 
-3.	On the firmware settings page, set the following:
+3.	On the firmware settings page, do the following:
 
 	-   Restore all default settings.
 
@@ -45,7 +45,7 @@ ms.technology: windows-oem
 
 	-   If you use local testing with WAC or prepackaged jobs, wired LAN doesn't apply.
 
-	-   If you use WAS, we recommended that you deploy assessments through a wired LAN. It that isn't possible, you use wireless.
+	-   If you use WAS, we recommended that you deploy assessments through a wired LAN. If that isn't possible, use wireless.
 
 	-   Don’t enable sharing when connecting to a network.
 
@@ -53,7 +53,7 @@ ms.technology: windows-oem
 
 -   All DUTs should have all signed/certified Windows 8 drivers before you run the assessments.
 
--   No external devices should be plugged in unless they are provided with the system.
+-   External devices should not be plugged in unless they are provided with the system.
 
 	
 ## Testing the device
@@ -70,7 +70,7 @@ ms.technology: windows-oem
 
 4. Disable Automatic Updates by selecting **Never check updates** in the Windows Update settings. You can automate this step by running the following command from an elevated command prompt:
 
-   <**reg &quot;HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\WindowsUpdate\Auto Update&quot; /v AUOptions /t REG_DWORD /d 1 /f**
+   ```reg &quot;HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\WindowsUpdate\Auto Update&quot; /v AUOptions /t REG_DWORD /d 1 /f```
 
 5. Use Device Manager to verify that the DUT has no problems with drivers or devices.
 
@@ -82,26 +82,26 @@ ms.technology: windows-oem
 
 7. Force execution of IdleTasks once a day (when system is under test) to ensure that no maintenance tasks interfere with ADK assessment execution. Run the following command from an elevated command prompt:
 
-   **rundll32.exe advapi32.dll,ProcessIdleTasks**
+   ```rundll32.exe advapi32.dll,ProcessIdleTasks```
 
 8. Disable Windows Store updates, after applying all available updates.
 
-<ol type="a">
-<li><p>Open the Store settings, go to <strong>App updates</strong>.</p></li>
-<li><p>Set <strong>Automatically download updates for my apps</strong> to <strong>No</strong>.</p></li>
-<li><p>You can automate this step by running the following command from an elevated command prompt:</p>
-<p>**reg add &quot;HKLM\Software\Microsoft\Windows\CurrentVersion\WindowsStore\WindowsUpdate&quot; /v AutoDownload /t REG_DWORD /d 2 /f**</p>
-</li>
-</ol>
+   a. Open the Store settings and go to <strong>App updates</strong>.
+
+   b. Set <strong>Automatically download updates for my apps</strong> to <strong>No</strong>.
+
+   c. You can automate this step by running the following command from an elevated command prompt:
+
+   ```reg add &quot;HKLM\Software\Microsoft\Windows\CurrentVersion\WindowsStore\WindowsUpdate&quot; /v AutoDownload /t REG_DWORD /d 2 /f```
 
 9. Enable autologon.
-<ul>
-<li>
-Certain assessments reboot the PC and require the user to log on before continuing the assessment run. Because the assessments are often measuring the boot time, delays caused by the user logging on to the PC can cause unpredictable variance in the metrics.
-</li>
-<li>
-A best practice is to enable automatic logon for the user account running the assessments. You can configure automatic logon in the registry under the following key: **HKLM\Software\Microsoft\Windows NT\CurrentVersion\WinLogon**
-<p>Configure the following five values:</p>
+
+   - Certain assessments reboot the PC and require the user to log on before continuing the assessment run. Because the assessments are often measuring the boot time, delays caused by the user logging on to the PC can cause unpredictable variance in the metrics.
+
+   - A best practice is to enable automatic logon for the user account running the assessments. You can configure automatic logon in the registry under the following key: ```HKLM\Software\Microsoft\Windows NT\CurrentVersion\WinLogon```
+
+   Configure the following five values:
+
 <table>
 <thead>
 <tr class="header">
@@ -128,24 +128,26 @@ A best practice is to enable automatic logon for the user account running the as
 </tr>
 </tbody>
 </table>
-</li>
-</ul>
-</li>
-<li>If the system has access to a timer server, verify the clock has been synchronized with the server time. If the clock time changes during assessment execution, it might cause failures.
-</li>
-<li>Disable Windows system restore to prevent System Restore point creation during the test, which will skew test results:
-<p>**reg add &quot;HKLM\Software\Microsoft\Windows NT\CurrentVersion\SystemRestore&quot; /v RPSessionInterval /t REG_DWORD /d 0 /f**</p>
-<p>**reg DELETE &quot;HKLM\Software\Microsoft\Windows NT\CurrentVersion\SPP\Clients&quot; /f**</p>
-</li>
-<li><p>Disable scheduled hard drive defragmentation:</p>
-<p>**schtasks /change /tn &quot;Microsoft\Windows\Defrag\ScheduledDefrag&quot; /disable**</p>
-</li>
-<li><p>Verify all .NET compilation targets are up to date:</p>
-<p>**C:\Windows\Microsoft.NET\Framework\v4.0.30319\ngen.exe executequeueditems**</p>
-<p>**C:\Windows\Microsoft.NET\Framework64\v4.0.30319\ngen.exe executequeueditems**</p>
-</li>
-<li>Restart the DUT.
-</li>
-</ol>
+
+10. If the system has access to a timer server, verify the clock has been synchronized with the server time. If the clock time changes during assessment execution, it might cause failures.
+
+11. Disable Windows system restore to prevent System Restore point creation during the test, which will skew test results:
+
+    ```reg add &quot;HKLM\Software\Microsoft\Windows NT\CurrentVersion\SystemRestore&quot; /v RPSessionInterval /t REG_DWORD /d 0 /f**```
+
+    ```reg DELETE &quot;HKLM\Software\Microsoft\Windows NT\CurrentVersion\SPP\Clients&quot; /f```
+
+12. Disable scheduled hard drive defragmentation:
+
+    ```schtasks /change /tn &quot;Microsoft\Windows\Defrag\ScheduledDefrag&quot; /disable```
+
+13. Verify all .NET compilation targets are up to date:
+
+    ```C:\Windows\Microsoft.NET\Framework\v4.0.30319\ngen.exe executequeueditems```
+
+    ```C:\Windows\Microsoft.NET\Framework64\v4.0.30319\ngen.exe executequeueditems```
+
+14. Restart the DUT.
+
 
 
