@@ -3,7 +3,7 @@ title: Windows radial controller sample report descriptors
 author: windows-driver-content
 description: This topic presents a sample report descriptor and some sample descriptor excerpts for a Windows radial controller device.
 ms.assetid:
-keywords: ["radial dial", "radial controller", "dial"]
+keywords: radial dial, radial controller, dial
 ms.author: windows-hardware-design-content
 ms.date: 05/02/2017
 ms.topic: article
