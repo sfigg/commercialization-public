@@ -62,7 +62,7 @@ ms.technology: windows-oem
 
 1. Activate the system using the appropriate product key.
 
-2. Some operating system components change their behaviors based on some WinSAT metrics. Verify that the WinSAT datastore is populated in the following path: **%WINDIR%\performance\winsat\datastore\**
+2. Some operating system components change their behaviors based on some WinSAT metrics. Verify that the WinSAT datastore is populated in the following path: ```%WINDIR%\performance\winsat\datastore\```
 
    Run **Winsat prepop** on an elevated command line or follow the [deployment guidance](https://technet.microsoft.com/en-us/library/jj573887.aspx).
 
@@ -102,32 +102,11 @@ ms.technology: windows-oem
 
    Configure the following five values:
 
-<table>
-<thead>
-<tr class="header">
-<th>Value name</th>
-<th>Value type</th>
-<th>Data</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>DefaultUserName</td>
-<td>REG_SZ</td>
-<td>&lt;<em>TestUserName</em>&gt;</td>
-</tr>
-<tr class="even">
-<td>DefaultPassword</td>
-<td>REG_SZ</td>
-<td>&lt;<em>LOCALPASSWORD</em>&gt;</td>
-</tr>
-<tr class="odd">
-<td>AutoAdminLogon</td>
-<td>REG_SZ</td>
-<td>1</td>
-</tr>
-</tbody>
-</table>
+   | Value name      | Value type    | Data              |
+   |-----------------|---------------|-------------------|
+   | DefaultUserName | REG_SZ        | <*TestUserName*>  | 
+   | DefaultPassword | REG_SZ        | <*LOCALPASSWORD*> | 
+   | AutoAdminLogon  | REG_SZ        | 1                 | 
 
 10. If the system has access to a timer server, verify the clock has been synchronized with the server time. If the clock time changes during assessment execution, it might cause failures.
 
