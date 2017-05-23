@@ -8,7 +8,7 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 9d35da6f-d82f-4370-9f75-0f9f99c84886
-keywords: ["driver certification WDK Touch", "driver distribution WDK Touch", "Windows Touch WDK , whitepapers", "Windows Touch WDK , certifying drivers", "Windows Touch WDK , distributing drivers", "Windows Touch WDK , HID-related specifications"]
+keywords: driver certification WDK Touch, driver distribution WDK Touch, Windows Touch WDK, whitepapers, certifying drivers, distributing drivers, HID-related specifications
 ms.author: windows-hardware-design-content
 ms.date: 05/02/2017
 ms.topic: article

@@ -8,7 +8,7 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 5435d73c-8e18-477c-870f-859eae12fafe
-keywords: ["Windows Touch WDK , capability discovery", "Windows Touch WDK , using report descriptors for capability discovery", "capability discovery WDK Touch", "capability discovery WDK Touch , using report descriptors", "report descriptors WDK Touch", "report descriptors WDK Touch , capability discovery"]
+keywords: Windows Touch WDK, Windows Touch WDK, using report descriptors for capability discovery, capability discovery WDK Touch, using report descriptors, report descriptors WDK Touch, capability discovery
 ms.author: windows-hardware-design-content
 ms.date: 05/02/2017
 ms.topic: article
