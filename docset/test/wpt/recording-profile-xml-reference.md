@@ -18,7 +18,7 @@ ms.technology: windows-oem
 # Recording Profile XML Reference
 
 
-This reference describes all XML elements that are used to author Windows Performance Recorder (WPR) recording profiles, and provides the text of the **WPRControlProfiles.xsd** schema definition file. For more information about recording profiles, see [Recording Profiles](recording-profiles.md).
+This reference describes all XML elements that are used to author Windows Performance Recorder (WPR) recording profiles, and provides the text of the schema definition file, **WPRControlProfiles.xsd**. For more information about recording profiles, see [Recording Profiles](recording-profiles.md).
 
 ## In This Section
 
@@ -35,7 +35,7 @@ This reference describes all XML elements that are used to author Windows Perfo
 </tr>
 <tr class="even">
 <td><p>[WPRControlProfiles Schema](wprcontrolprofiles-schema.md)</p></td>
-<td><p>Provides the complete schema.</p></td>
+<td><p>Provides the complete schema for WPR recording profiles.</p></td>
 </tr>
 </tbody>
 </table>
