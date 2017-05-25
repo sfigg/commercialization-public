@@ -635,6 +635,7 @@ Note: You must be using at least version Windows 10, version 1607.
     
     ![Office tiles pinned to the Start menu](Images/office-tiles-pinned-to-start-menu.png)
     
+<a name="prepare-the-system-for-recovery-with-push-button-reset"></a>
 ## Prepare the system for Push Button Reset
 
 This section provides guidance for setting up the recovery environment for Push Button Reset (PBR) scenarios.
@@ -808,7 +809,7 @@ E:\Deployment\walkthrough-deploy.bat E:\Images\modelspecificimage.wim
 
 Note: There are several pauses in the script. You will be prompted Y/N for the Apply operation if this is a Compact OS deployment.
 
-Note: Only use Compact OS on high end storage devices because Compact OS performance depends on the storage device capabilities. Compact OS is NOT recommend on rotational devices or storage greater than 32 GB. For more information, see [Compact OS](#compact-os.md).
+Note: Only use Compact OS on high end storage devices because Compact OS performance depends on the storage device capabilities. Compact OS is NOT recommend on rotational devices or storage greater than 32 GB. For more information, see [Compact OS](compact-os.md).
 
 Remove USB-A and USB-B and type *exit* to reboot your computer with Windows 10.
 
