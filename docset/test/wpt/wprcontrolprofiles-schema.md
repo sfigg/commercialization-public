@@ -18,7 +18,7 @@ ms.technology: windows-oem
 # WPRControlProfiles Schema
 
 
-The complete **WPRControlProfiles** schema is as follows:
+The complete schema for Windows Performance Recorder (WPR) recording profiles, **WPRControlProfiles.xsd**, is as follows:
 
 ``` syntax
 <?xml version='1.0' encoding='utf-8' standalone='yes'?>

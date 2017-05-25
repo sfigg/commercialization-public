@@ -18,7 +18,7 @@ Now that you've configured your customization settings in the MCSF CAF and added
 
 For more information about each element in the OEMInput file, see [OEMInput file contents](https://msdn.microsoft.com/library/windows/hardware/dn756778).
 
-In this walkthrough, we will add the two features we defined in [Adding a package to an OEM manifest file](#adding-a-package-to-an-oem-manifest-file), specifying the languages that we want to support, and defining the rest of our image.
+In this walkthrough, we will add the two features we defined in [Adding a package to an OEM manifest file](add-a-package-to-an-oem-manifest-file.md), specifying the languages that we want to support, and defining the rest of our image.
 
 **To configure the OEMInput file**
 
@@ -30,7 +30,7 @@ In this walkthrough, we will add the two features we defined in [Adding a packag
 
     -   Added English (United Kingdom), French (France), Spanish (Spain), and Chinese (Simplified) to the list of included devices languages in addition to English (United States). We added this in the **UserInterface** section. For more information about other languages you can add to your mobile device, including how to change the default device language and regional format, see [Mobile device languages](https://msdn.microsoft.com/library/windows/hardware/dn772212).
 
-    -   Added the ContosoOptionalFeatures.xml feature manifest file that we created in the [Adding a package to an OEM manifest file](#adding-a-package-to-an-oem-manifest-file) walkthrough and placed it under the **AdditionalFMs** section of the OEMInput file by adding a new **AdditionalFM** entry and specifying the location and name of the feature manifest file.
+    -   Added the ContosoOptionalFeatures.xml feature manifest file that we created in the [Adding a package to an OEM manifest file](add-a-package-to-an-oem-manifest-file.md) walkthrough and placed it under the **AdditionalFMs** section of the OEMInput file by adding a new **AdditionalFM** entry and specifying the location and name of the feature manifest file.
 
     -   Added the ECHO\_DRIVER and QUICK\_ACTIONS features by adding a new **OEM** subsection within the **Features** section of the OEMInput file. For each feature that we add within the **OEM** section, we add a new **Feature** entry and then specify the name of the feature that we defined in the feature manifest file.
 

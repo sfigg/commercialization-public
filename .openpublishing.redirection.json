@@ -1,26 +1,6 @@
 { 
   "redirections": [ 
     {   
-        "source_path": "docset/design/component-guidelines/radial-implementation-guide.md", 
-        "redirect_url": "https://msdn.microsoft.com/windows/hardware/commercialize/design", 
-        "redirect_document_id": true 
-    }, 
-    {   
-        "source_path": "docset/design/component-guidelines/radial-controller-designs.md", 
-        "redirect_url": "https://msdn.microsoft.com/windows/hardware/commercialize/design", 
-        "redirect_document_id": true 
-    }, 
-    {   
-        "source_path": "docset/design/component-guidelines/radial-controller-device-bus-connectivity.md", 
-        "redirect_url": "https://msdn.microsoft.com/windows/hardware/commercialize/design", 
-        "redirect_document_id": true 
-    }, 
-    {   
-        "source_path": "docset/design/component-guidelines/radial-controller-protocol-implementation.md", 
-        "redirect_url": "https://msdn.microsoft.com/windows/hardware/commercialize/design", 
-        "redirect_document_id": true 
-    },
-	    {   
         "source_path": "docset/customize/mdm/activesync-csp.md", 
         "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/activesync-csp", 
         "redirect_document_id": true 

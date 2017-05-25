@@ -60,7 +60,8 @@ There are three types of events:
 
 3.  Manifest based: An XML-based unified tracing definition was introduced in Windows Vista. An XML file contains elements for events that a provider writes. For more information, see [Writing an Instrumentation Manifest](https://msdn.microsoft.com/library/dd996930.aspx).
 
-> [!NOTE] The guidance in this section focuses solely on manifest-based event instrumentation.
+> [!NOTE]
+> The guidance in this section focuses solely on manifest-based event instrumentation.
 
 ETW has the following important characteristics:
 

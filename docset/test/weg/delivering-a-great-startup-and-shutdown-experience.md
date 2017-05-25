@@ -248,7 +248,8 @@ Desktop apps that are in the boot path will impact on/off transition and energy 
 
 ## Recommended goals
 
-> [!IMPORTANT] All goals defined exclude BIOS initialization time.
+> [!IMPORTANT]
+> All goals defined exclude BIOS initialization time.
 
 To deliver a great on/off experience, it is recommended that a PC meets the goals in the following tables.
 
