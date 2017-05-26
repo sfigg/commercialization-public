@@ -66,7 +66,7 @@ All systems should meet at least the [minimum hardware requirements](../minimum/
       <li><a href="https://www.vesa.org/wp-content/uploads/2016/10/USB-DevDays-DisplayPort-Alternate-Mode-2016-final4.pdf">DisplayPort Alternate Mode</a>, pin assignment C, D, E, and F, with support for High Bit Rate (HBR) and High Bit Rate 2 (HBR2) signaling on those pin assignments, and the ability to source DisplayPort on at least two DisplayPort lanes for all supported pin assignments</li>
     </ul>
     <p>For systems with multiple USB Type-C ports, we recommend that all ports support the specifications above. If the specifications are not supported by all of the included USB Type-C ports, we recommend that these ports be visually differentiable to the user as defined in the <a href="http://www.usb.org/developers/logo_license/USB-IF_TLA_and_Logo_Usage_Guidelines_FINAL_March_13.2017.pdf">USB-IF Trademark License Agreement</a> under the section “Logo Guidelines for USB Type-C Products and Cables that Support Alternate Modes.”</p>
-    <p>Also, please see "Note on USB-C Alternate Modes" if you plan on including an alternate mode other than DisplayPort over USB Type-C alternate mode.</p>
+    <p>If you plan on including an alternate mode other than DisplayPort over USB Type-C alternate mode, see "Note on USB-C Alternate Modes."</p>
     <p>For more information about implementing USB Type-C, see <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt595926.aspx">Developing Windows drivers for USB Type-C connectors</a> on MSDN.</p>
   </td>
 </tr>
@@ -99,7 +99,7 @@ The end goal of these docking recommendations is to maximize compatibility and i
       <li><a href="http://www.usb.org/developers/powerdelivery/">USB Power Delivery (PD)</a> power provider for charging a system while it is docked, with a minimum power of 30W, following the PD power rules (see section 10 of the Power Delivery specification); for additional information, see the "Power budget policy" section</li>
       <li>USB Type-C <a href="https://www.vesa.org/wp-content/uploads/2016/10/USB-DevDays-DisplayPort-Alternate-Mode-2016-final4.pdf">DisplayPort Alternate Mode</a>, pin assignments C and D, with support for HBR and HBR2 signaling on those pin assignments (and pin assignments E and F, if supported), and the ability to sink DisplayPort on at least two DisplayPort lanes for all supported pin assignments</li>
     </ul>
-    <p>Also, please see "Note on USB-C Alternate Modes" if you plan on including an alternate mode other than DisplayPort over USB Type-C alternate mode.</p>
+    <p>If you plan on including an alternate mode other than DisplayPort over USB Type-C alternate mode, see "Note on USB-C Alternate Modes."</p>
   </td>
 </tr>
 <tr>
@@ -165,10 +165,8 @@ The end goal of these docking recommendations is to maximize compatibility and i
 </tr>
 <tr>
   <th align="left" valign="top">Display output</th>
-  <td>The connection from the dock to an external monitor should be provided by at least one digital connector that is at a minimum either HDMI 1.4 or DisplayPort 1.2 (supporting DP++).
-    <p>However, if the device is a docking display (that is, the dock and the monitor are in the same device), it is optional to include an additional display output to enable a multimonitor experience. If the dock is a docking display, this needs to be indicated in the [Microsoft OS docking descriptor](declaring-a-hardware-device-as-a-dock.md).</p>
-    <p>The resolution supported should at a minimum be 1080p, regardless of whether the display is externally connected through an external video port or is internally connected to the display.</p>
-    <p>Please see "Note on USB-C Alternate Modes" if you plan on including an alternate mode other than DisplayPort.</p>
+  <td>The connection from the dock to an external monitor should be provided by at least one digital connector that is at a minimum either HDMI 1.4 or DisplayPort 1.2 (supporting DP++). However, if the device is a docking display (that is, the dock and the monitor are in the same device), it is optional to include an additional display output to enable a multimonitor experience. The resolution supported should at a minimum be 1080p, regardless of whether the display is externally connected through an external video port or is internally connected to the display.
+    <p>If you plan on including an alternate mode other than DisplayPort, see "Note on USB-C Alternate Modes."</p>
   </td>
 </tr>
 <tr>
