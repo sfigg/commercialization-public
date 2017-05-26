@@ -139,7 +139,8 @@ This walkthrough shows how to use the Windows ICD UI to customize, build, and fl
 
     -   If you are done, click **Finish** to close the wizard and go back to the **Customizations Page**.
 
-## <span id="configure_customizations_in_the_windows_icd_ui"></span><span id="CONFIGURE_CUSTOMIZATIONS_IN_THE_WINDOWS_ICD_UI"></span>Configure customizations in the Windows ICD UI
+<a name="configure-customizations-in-the-windows-icd-ui"></a>
+## Configure customizations in the Windows ICD UI
 
 
 **Note**  When configuring customizations using Windows ICD, do not use the **Image time settings**, use the **Runtime settings** instead. If you configure the image-time settings, this will cause an error due to a settings collision if the setting is configured in both WPAF and MCSF CAF.
@@ -174,7 +175,8 @@ Enterprise policies and enrollment settings are some of the customizations avail
 
     This specifies the duration, in seconds, for the screen timeout while on the lock screen. For this example, the duration is 15 seconds.
 
-## <span id="Deploy_an_image_to_a_mobile_device"></span><span id="deploy_an_image_to_a_mobile_device"></span><span id="DEPLOY_AN_IMAGE_TO_A_MOBILE_DEVICE"></span>Deploy an image to a mobile device
+<a name="deploy-an-image-to-a-mobile-device"></a>
+## Deploy an image to a mobile device
 
 
 Follow these steps if you deferred flashing the image to the device after it was built.

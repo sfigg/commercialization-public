@@ -68,7 +68,8 @@ Anti-malware software affects browsing speed and fluidity in four major categori
 
 There are multiple factors to consider when choosing an anti-malware product to include on your PC. You can use the ADK assessments or other test tools to quantify the impact to the overall performance of your PC and to battery life. Keep in mind that you need not sacrifice performance to have a high level of protection. 
 
-> [!IMPORTANT] The ADK assessments do not measure the level of security provided by anti-malware products. Many third parties produce reports measuring and comparing the effectiveness of various anti-malware packages.
+> [!IMPORTANT]
+> The ADK assessments do not measure the level of security provided by anti-malware products. Many third parties produce reports measuring and comparing the effectiveness of various anti-malware packages.
 
 ## Recommended goals
 
@@ -101,6 +102,7 @@ The IE Security Software Impact Assessment is intended to measure more relevant 
 Anti-malware and browser add-ins have a large impact on the Windows experience. By expanding the number of assessments that reflect their impact, we help you develop a clearer picture of their overall impact on your users.
 
 > [!NOTE] We recommend that you always compare results to a clean Windows image (with Windows Defender running) on the same system in order to quantify the impact introduced by the selected 3rd-party anti-malware solution.
+
 
 This assessment covers page navigation and JavaScript performance, both of which are central to the browsing experience. It launches a page to exercise a number of key performance bottlenecks:
 

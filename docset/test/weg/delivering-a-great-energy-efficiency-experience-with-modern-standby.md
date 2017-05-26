@@ -21,13 +21,15 @@ The number of systems capable of S0 low power idle is dramatically increasing an
 
 The new power model in Windows 10, called Modern Standby (MS), allows systems that have a hard disk drive, and/or a NIC that doesn’t support all the requirements for Windows 8.x Connected Standby to still be able to take advantage of the low power idle model. 
 
-> [!NOTE] Windows 8.x Connected Standby can be considered as a special case of Windows 10 Modern Standby.
+> [!NOTE]
+> Windows 8.x Connected Standby can be considered as a special case of Windows 10 Modern Standby.
 
 To learn more about this new power mode, see [Modern Standby](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/design/device-experiences/modern-standby).
 
 *Deepest run-time idle platform state* (DRIPS) occurs when the system is consuming the lowest amount of power possible, limited by the power floor. When the screen is turned off, the connected standby session starts and the system goes through multiple phases to move into a low-power state. When the system is in the lowest-power state, the system is considered to be in DRIPS. The system is not considered to be in DRIPS when performing such tasks as receiving emails, updating live tiles with fresh content, receiving VoIP calls, or any other background task that consumes power. The more time the system spends in DRIPS before the screen is turned back on, the longer the battery life.
 
-> [!NOTE] Total Modern Standby session time = DRIPS time + non-DRIPS time
+> [!NOTE]
+> Total Modern Standby session time = DRIPS time + non-DRIPS time
 
 The Performance WEG provides information to help you:
 
@@ -159,7 +161,8 @@ You can use the PwrTest.exe tool in the Microsoft Windows Drivers Kit (WDK) to c
 
 3. Run PwrTest.exe with the **/cs** option. You can also specify the number of cycles (**/c**), delay time between transitions in seconds (**/d**), and exit time in seconds (**/p**). For example, type: **pwrtest.exe /cs /c:4 /p:120 /d:150**
 
-> [!NOTE]  The connected standby scenario requires the virtual power button driver. This driver is installed by the Windows Device Testing Framework (WDTF), which is found in WDK 8.
+> [!NOTE]
+> The connected standby scenario requires the virtual power button driver. This driver is installed by the Windows Device Testing Framework (WDTF), which is found in WDK 8.
 
 The PwrTest.exe connected standby scenario log file provides information about transitions between power states.
 
