@@ -37,8 +37,8 @@ The items in the following table are required.
 | Ethernet           | Hardware          | WAS requires Ethernet. For robustness and efficiency, we recommend gigabit Ethernet. |
 | Symbols            | Internet access   | ADK’s auto-analysis feature does not work without symbol files. Because operating system binaries are updated via Windows Update after a Windows version is released, it is not practical to collect updated symbol files. We recommend that you use a public symbol server and cache the symbol files locally for re-use.<br/><br/>For Connect operating system downloads, use the provided symbols packages and cache them locally on the WAS server. ||
 | Wi-Fi Access Point | Hardware          | It is recommended to connect to a Wi-Fi network when you run Energy Efficiency assessments. |
-| DHCP Server        | Hardware/Software | PXE Boot requires DHCP. **The WAS server can be a DHCP server as well**. You can use a Wi-Fi router as a DHCP server. If you don’t plan to push the operating system image by using WAS via PXE boot, you don’t need to have DHCP. |
-| File Share         | Hardware          | Depends on the method you use to store your results files. **Results can be stored on the WAS server as well.** |
+| DHCP Server        | Hardware/Software | PXE Boot requires DHCP. *The WAS server can be a DHCP server as well*. You can use a Wi-Fi router as a DHCP server. If you don’t plan to push the operating system image by using WAS via PXE boot, you don’t need to have DHCP. |
+| File Share         | Hardware          | Depends on the method you use to store your results files. *Results can be stored on the WAS server as well.* |
 | USB Flash Drives   | Hardware          | For example, you can boot into Windows PE to inventory a bare metal machine to WAS. |
 
 These items are not required, but are often necessary depending on your needs and corporate network policy:
@@ -49,7 +49,7 @@ These items are not required, but are often necessary depending on your needs an
 | IP Control Power Switch | Hardware          | You can buy a power switch that you can control remotely. You can use this to fully automate Energy Efficiency assessments. |
 | USB to Ethernet Adapter | Hardware          | Some form factors don’t have Ethernet. You can also use Wi-Fi. We recommend that you use an USB Ethernet adapter with inbox driver support so that you don’t have to customize Relax Windows PE. |
 
-The diagram below illustrates one possible network configuration.
+The following diagram illustrates one possible network configuration.
 
 ![Diagram of an example network of devices and connections](images/web-diagram-network-example-configuration.png)
 

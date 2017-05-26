@@ -17,16 +17,16 @@ ms.technology: windows-oem
 
 # Delivering a great energy efficiency experience with Modern Standby
 
-The number of systems capable of S0 low power idle is dramatically increasing. We expect more systems to use the always on, instantly available power model instead of the traditional S3/S4 power model. Windows 10 introduces some changes to support this trend.
+The number of systems capable of S0 low power idle is dramatically increasing and it is expected that more systems will use the always on, instantly available power model instead of the traditional S3/S4 power model. To support this trend, Windows 10 has introduced some changes.
 
-The new power model in Windows 10, called Modern Standby (MS), allows systems that have a hard disk drive, and/or a NIC that doesn’t support all the requirements for Windows 8.x Connected Standby to still take advantage of the low power idle model. 
+The new power model in Windows 10, called Modern Standby (MS), allows systems that have a hard disk drive, and/or a NIC that doesn’t support all the requirements for Windows 8.x Connected Standby to still be able to take advantage of the low power idle model. 
 
 > [!NOTE]
 > Windows 8.x Connected Standby can be considered as a special case of Windows 10 Modern Standby.
 
 To learn more about this new power mode, see [Modern Standby](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/design/device-experiences/modern-standby).
 
-*Deepest run-time idle platform state* (DRIPS) is when the system is consuming the lowest amount of power possible, limited by the power floor. When the screen is turned off, the connected standby session starts and the system goes through multiple phases to move into a low-power state. When the system is in the lowest-power state, we say the system is in DRIPS. The system is not in DRIPS when performing tasks like receiving emails, updating live tiles with fresh content, receiving VoIP calls, or any other background task that consumes power. The more time the system spends in DRIPS before the screen is turned back on, the longer the battery life.
+*Deepest run-time idle platform state* (DRIPS) occurs when the system is consuming the lowest amount of power possible, limited by the power floor. When the screen is turned off, the connected standby session starts and the system goes through multiple phases to move into a low-power state. When the system is in the lowest-power state, the system is considered to be in DRIPS. The system is not considered to be in DRIPS when performing such tasks as receiving emails, updating live tiles with fresh content, receiving VoIP calls, or any other background task that consumes power. The more time the system spends in DRIPS before the screen is turned back on, the longer the battery life.
 
 > [!NOTE]
 > Total Modern Standby session time = DRIPS time + non-DRIPS time
@@ -37,17 +37,17 @@ The Performance WEG provides information to help you:
 
 -   Identify and resolve issues that affect Modern Standby.
 
-For more information about how Modern Standby works, see these resources:
+For more information about how Modern Standby works, see the resources in the following table.
 
 | Resource title                                                       | Content type | Description                                                                                                                                                                                                                                                                        | Download link |
 |----------------------------------------------------------------------|--------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Introducing to Modern Standby                                       | White paper  | The new power model in Windows 10, called Modern Standby (MS), allows systems that have a hard disk drive, and/or a NIC that doesn’t support all of the requirements for Windows 8.x Connected Standby to still take advantage of the low-power idle model.                        | [MSDN](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/design/device-experiences/modern-standby) |
-| WinHEC 2015 Battery Life Optimization Overview Talk                  | Video        | Power modeling and tuning, Optimizing the power floor during screen on and standby                                                                                                                                                                                                 | [Channel9](http://channel9.msdn.com/Events/WinHEC/2015/OWD202) |
-| WinHEC 2015 Battery Life: Debugging Power Problems with Standby Talk | Video        | Windows 10 CS/MS power transition flow, System integration, Impact of subcomponents on system, Power management of storage, networking and USB connected devices, Process for analyzing battery drain issues, and SleepStudy and Windows Performance Analyzer (WPA) tools overview | [Channel9](http://channel9.msdn.com/Events/WinHEC/2015/OWD200) |
-| WinHEC 2015 Battery Life: Debugging Power Problems with Standby Lab  | Lab document | This lab demonstrates how to validate the energy efficiency of a Connected Standby or Modern Standby system                                                                                                                                                                        | [Channel9](http://channel9.msdn.com/Events/WinHEC/2015/OWDHOL304) |
+| Introducing to Modern Standby                                       | White paper  | Describes Modern Standby, the new power model in Windows 10                        | [MSDN](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/design/device-experiences/modern-standby) |
+| WinHEC 2015 Battery Life Optimization Overview Talk                  | Video        | Covers power modeling and tuning, and optimizing the power floor during screen on and standby                                                                                                                                                                                                 | [Channel 9](http://channel9.msdn.com/Events/WinHEC/2015/OWD202) |
+| WinHEC 2015 Battery Life: Debugging Power Problems with Standby Talk | Video        | Covers Windows 10 CS/MS power transition flow, system integration, the impact of subcomponents on a system, power management of storage, networking and USB connected devices, process for analyzing battery drain issues, and a SleepStudy and Windows Performance Analyzer (WPA) tools overview | [Channel 9](http://channel9.msdn.com/Events/WinHEC/2015/OWD200) |
+| WinHEC 2015 Battery Life: Debugging Power Problems with Standby Lab  | Lab document | Demonstrates how to validate the energy efficiency of a Connected Standby or Modern Standby system                                                                                                                                                                        | [Channel 9](http://channel9.msdn.com/Events/WinHEC/2015/OWDHOL304) |
 | Introduction to Connected Standby                                    | Document     | Details the connected standby experience, software impacts of connected standby, and hardware requirements to enable connected standby on qualified systems.                                                                                                                       | [MSDN](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/design/device-experiences/modern-standby)  |
-| Understanding Connected Standby                                      | Video        | This session provides an overview of connected standby, including key user scenarios, system architecture, and technical requirements.                                                                                                                                             | [Channel9](http://channel9.msdn.com/events/BUILD/BUILD2011/HW-456T) |
-| Desktop Activity Moderator                                           | Article      | Overview of DAM feature                                                                                                                                                                                                                                                            | [MSDN](https://msdn.microsoft.com/en-us/library/hh848040.aspx) |
+| Understanding Connected Standby                                      | Video        | Provides an overview of connected standby, including key user scenarios, system architecture, and technical requirements                                                                                                                                             | [Channel 9](http://channel9.msdn.com/events/BUILD/BUILD2011/HW-456T) |
+| Desktop Activity Moderator                                           | Article      | Provides an overview of the DAM feature                                                                                                                                                                                                                                                            | [MSDN](https://msdn.microsoft.com/en-us/library/hh848040.aspx) |
 
 
 ## Considerations
@@ -135,17 +135,17 @@ SleepStudy generates a summary of top issues causing poor Modern Standby battery
 
 For more information about the PowerCfg /SleepStudy tool, see [Connected standby SleepStudy](https://msdn.microsoft.com/windows/hardware/commercialize/design/device-experiences/modern-standby-sleepstudy).
 
-The following screen shows PC info, including device name, firmware, and build version. The chart shows the drain rate while in Modern Standby.
+The following screen shot shows PC info, including device name, firmware, and build version. The chart shows the drain rate while in Modern Standby.
 
 ![Example chart of the rate of power drain shown in Sleep Study](images/weg-sleepstudy-chart-drain-rate.jpg)
 
-This is the per session table. In this example, session 3 has the highest drain rate. Clicking it opens the next level of detail to identify the possible offenders.
+The following screen shot shows an example of a per-session table. In this example, session 3 has the highest drain rate. Clicking it opens the next level of detail to identify the possible offenders.
 
 The **Energy Change** column represents the amount of energy drained from the battery (in mWh) during a specific CS session. The **Change Rate** column represents the average power consumption (in mW) during a specific CS session.
 
 ![Table in Sleep Study showing data about the rate of power drain in an example](images/weg-sleepstudy-table-drain-rate.jpg)
 
-In this example, a UART driver is active throughout the session. This example can be used as a starting point for a more thorough investigation.
+In the following screen shot, a UART driver is active throughout the session. This example can be used as a starting point for a more thorough investigation.
 
 ![Top offenders shown in an example in Sleep Study](images/weg-sleepstudy-screen-top-offenders.jpg)
 
