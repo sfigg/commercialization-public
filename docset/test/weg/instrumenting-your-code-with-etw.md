@@ -17,7 +17,9 @@ ms.technology: windows-oem
 
 # Instrumenting Your Code with ETW
 
-Event Tracing for Windows (ETW) is a high speed tracing facility built into Windows. Using a buffering and logging mechanism implemented in the operating system kernel, ETW provides an infrastructure for events raised by both user mode (apps) and kernel mode components (drivers). ETW can be used for system and app diagnosis, troubleshooting, and performance monitoring. Historically tracing was used to diagnose unexpected behavior both in hardware and apps. Recently, there has been an increasing demand for managing and monitoring system stability and performance to meet business demands. As a result, performance analysis in development and production environments became a critical part of the computing world. In contrast to failures and errors, performance-related issues are difficult to detect and diagnose because they’re often dependent on configuration and workload. Tracing in a production environment provides valuable data for detecting root-cause performance=related issues, as well as capacity planning and evaluation.
+Event Tracing for Windows (ETW) is a high speed tracing facility built into Windows. Using a buffering and logging mechanism implemented in the operating system kernel, ETW provides an infrastructure for events raised by both user mode (apps) and kernel mode components (drivers). ETW can be used for system and app diagnosis, troubleshooting, and performance monitoring. 
+
+Historically, tracing was used to diagnose unexpected behavior both in hardware and apps. However, recently there has been an increasing demand for managing and monitoring system stability and performance to meet business demands. As a result, performance analysis in development and production environments have become a critical part of the computing world. In contrast to failures and errors, performance-related issues are difficult to detect and diagnose because they’re often dependent on configuration and workload. Tracing in a production environment provides valuable data for detecting root-cause performance-related issues, as well as capacity planning and evaluation.
 
 The ETW mechanism lets you control tracing sessions dynamically, which makes it possible to capture detailed tracing in production environments without system reboot or app restart.
 
@@ -50,7 +52,7 @@ The following list shows some of the beneficial characteristics of ETW:
 </dd>
 </dl>
 
-Before Windows 2000, only basic text-based tracing mechanisms were available in Windows: **DbgPrint**() and **DebugPrint**() APIs. They required debuggers and typically weren’t dynamically controllable. The Windows tracing mechanism evolved over time; today, four different tracing mechanisms are available. ETW and Event Log API sets have been merged into the Unified Event Logging API set in Windows Vista, which gives users and developers a unified mechanism for raising events.
+Before Windows 2000, only basic text-based tracing mechanisms were available in Windows: **DbgPrint()** and **DebugPrint()** APIs. They required debuggers and typically weren’t dynamically controllable. The Windows tracing mechanism evolved over time; today, four different tracing mechanisms are available. ETW and Event Log API sets have been merged into the Unified Event Logging API set in Windows Vista, which gives users and developers a unified mechanism for raising events.
 
 There are three types of events:
 
@@ -70,23 +72,23 @@ ETW has the following important characteristics:
 
 -   The same implementation is used for user mode apps and kernel mode components.
 
--   It’s accessible in crash dumps and live debug.
+-   ETW is accessible in crash dumps and live debug.
 
--   It can be redirected to the kernel debugger for a real-time view.
+-   ETW can be redirected to the kernel debugger for a real-time view.
 
--   It has a real-time view.
+-   ETW has a real-time view.
 
 -   Log files are saved in a binary log file (an ETL file).
 
--   It supports multiple processes logging.
+-   ETW supports multiple processes logging.
 
--   It has a high throughput.
+-   ETW has a high throughput.
 
 -   Log files can be viewed on another machine.
 
--   It supports circular buffering for continuous logging and monitoring.
+-   ETW supports circular buffering for continuous logging and monitoring.
 
--   It can be grouped into one of the channels based on the target audience.
+-   ETW can be grouped into one of the channels based on the target audience.
 
 ## ETW architecture
 
@@ -161,13 +163,11 @@ An event manifest is divided into the following sections:
 </dd>
 <dt>**Static event data**</dt>
 <dd>
-<p>Used to help interpret, sort, and group the events.</p>
+Used to help interpret, sort, and group the events.
 <ul>
-<li>
-<p><Tasks> define the names of the operations (or tasks) that are being instrumented.</p>
+<li>Defines the names of the operations (or tasks) that are being instrumented.
 </li>
-<li>
-<p><Opcodes> define the types of operations that you want to create for your events, like the Start event, the Stop event for delimiting operations in time, the Informational event for logging debug data, and so on.</p>
+<li>Defines the types of operations that you want to create for your events, like the Start event, the Stop event for delimiting operations in time, the Informational event for logging debug data, and so on.
 </li>
 <li>
 <p>Event definition: <events></p>
@@ -220,10 +220,13 @@ The next step is to compile the manifest by using the [Message Compiler tool (mc
 <dl>
 <dt>**ManifestFileName.h**</dt>
 <dd>Contains event descriptors to use in code.</dd>
+
 <dt>**ManifestFileName.rc**</dt>
 <dd>A resource compiler script.</dd>
+
 <dt>**MSG00001.bin**</dt>
 <dd>A language resource.</dd>
+
 <dt>**ManifestFileNameTEMP.bin**</dt>
 <dd>A template resource (provider and metadata).</dd>
 </dl>
@@ -307,5 +310,5 @@ After your provider is properly installed on this system, you can start a tracin
 
 After you have an ETL file, you can open it with the Windows Performance Analyzer tool and visualize your events with the Generic Events graph and table.
 
-![Graph and charts of generic events in Windows Performance Advisor (WPA)(images/weg-wpa-screen-generic-events-graph-and-table.jpg)
+![Graph and charts of generic events in Windows Performance Advisor (WPA)](images/weg-wpa-screen-generic-events-graph-and-table.jpg)
 

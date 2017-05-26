@@ -17,11 +17,11 @@ ms.technology: windows-oem
 
 # Delivering an image with high quality Windows Store apps
 
-For more information about deploying Windows Store apps in your Windows images, see the Windows Engineering Guide for Apps and Store. After the apps are deployed, you can measure the activation and resume times of every app preloaded on the image.
+For more information about deploying Windows Store apps in your Windows images, see the Windows Engineering Guide for Apps and Store. After the apps are deployed, you can measure the activation and resume times of every app that is preloaded on the image.
 
 ## Recommended goals
 
-The following table shows minimum targets for app activation, based on our user research.
+The following table shows the minimum targets for app activation, based on our user research.
 
 | Scenario/workload                            | Target |
 |----------------------------------------------|----------------------------|
@@ -31,18 +31,12 @@ The following table shows minimum targets for app activation, based on our user 
 
 ## Validation and testing
 
-You can use the Windows Assessment Toolkit to improve the performance of your apps beyond minimum requirements. Windows assessments related to apps experience include:
-
--   Windows Store apps performance assessment
-
--   To measure the app resume times, use the default recommended settings.
-
--   To measure the app activation (launch from cold state) times, select the *Restart each Windows Store app* option in the assessment parameters.
+You can use the Windows Assessment Toolkit to improve the performance of your apps beyond the minimum requirements. To measure the app resume times, use the default recommended settings in the Windows Store apps performance assessment. To measure the app activation (launch from cold state) times, select the *Restart each Windows Store app* option in the assessment parameters.
 
 ## Tools and technical reference
 
-| Resource title                | Content type | Description                       | Download link |
+| Resource title and link        | Content type | Description                       | 
 |-------------------------------|--------------|-----------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Windows Store App Performance | Article      | Official Assessment Documentation | [MSDN](https://msdn.microsoft.com/en-us/library/windows/hardware/dn246955.aspx) |
+| [Windows Store App Performance](https://msdn.microsoft.com/en-us/library/windows/hardware/dn246955.aspx) | Article      | Official Assessment Documentation | 
 
 
