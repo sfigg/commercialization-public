@@ -1,14 +1,11 @@
 
 # Delivering a great browsing experience
 
-This section focuses on some of the performance challenges and what you can do to deliver a great Internet Explorer web browsing experience for your customers.
-
-Because all web browsers in today’s marketplace support similar standards, performance quickly becomes a key differentiator for customers. Consumers are keenly interested in the performance of all of the apps that they use, including browsers.
+Because all web browsers in today’s marketplace support similar standards, performance quickly becomes a key differentiator for customers. Consumers are keenly interested in the performance of all of the apps that they use, including browsers. This topic focuses on some of the performance challenges and what you can do to deliver a great Internet Explorer web browsing experience for your customers.
 
 ## Considerations
 
-Anti-malware apps affect Internet Explorer web browsing performance. Page load time, a measurement of how long it takes to launch the browser and
-navigate to a web page, is an important part of the user experience. It’s important that you understand and consider what you’re installing on your PC, how it affects your customers, and their perception of your product’s performance.
+Anti-malware apps affect Internet Explorer web browsing performance. Page load time, a measurement of how long it takes to launch the browser and navigate to a web page, is an important part of the user experience. It’s important that you understand and consider what you’re installing on your PC, how it affects your customers, and their perception of your product’s performance.
 
 ### How anti-malware apps affect browsing
 
@@ -69,14 +66,14 @@ Anti-malware software affects browsing speed and fluidity in four major categori
 
 ### Selecting anti-malware apps
 
-There are multiple factors to consider when choosing an anti-malware product to include on your PC. You can use the ADK assessments or other test tools to quantify the impact to the overall performance of your PC and to battery life. Keep in mind that you do not have to sacrifice performance to have a high level of protection. Many top-rated anti-malware products also perform very well.
+There are multiple factors to consider when choosing an anti-malware product to include on your PC. You can use the ADK assessments or other test tools to quantify the impact to the overall performance of your PC and to battery life. Keep in mind that you need not sacrifice performance to have a high level of protection. 
 
 > [!IMPORTANT]
 > The ADK assessments do not measure the level of security provided by anti-malware products. Many third parties produce reports measuring and comparing the effectiveness of various anti-malware packages.
 
 ## Recommended goals
 
-To deliver a great Internet Explorer experience, a PC should meet the following goals:
+To deliver a great Internet Explorer experience, a PC should meet the goals in the following table.
 
 | **Scenario**                                                        | **Tablet (CS)** | **Convertible** | **Notebook** | **AIO**   |
 |---------------------------------------------------------------------|-----------------|-----------------|--------------|-----------|
@@ -104,8 +101,8 @@ The IE Security Software Impact Assessment is intended to measure more relevant 
 
 Anti-malware and browser add-ins have a large impact on the Windows experience. By expanding the number of assessments that reflect their impact, we help you develop a clearer picture of their overall impact on your users.
 
-> [!NOTE]
-> We recommend that you always compare its results to a clean Windows image (with Windows Defender running) on the same system in order to quantify the impact introduced by the selected 3rd-party anti-malware solution.
+> [!NOTE] We recommend that you always compare results to a clean Windows image (with Windows Defender running) on the same system in order to quantify the impact introduced by the selected 3rd-party anti-malware solution.
+
 
 This assessment covers page navigation and JavaScript performance, both of which are central to the browsing experience. It launches a page to exercise a number of key performance bottlenecks:
 
@@ -117,13 +114,9 @@ This assessment covers page navigation and JavaScript performance, both of which
 
 When doing the analysis, focus on Complete Page Load Duration and Page Usable metrics:
 
--   Complete Page Load Duration
+-   **Complete Page Load Duration**: Reports the total time that elapses before the test webpage is fully loaded in Internet Explorer. It measures the duration from page load until Internet Explorer CPU usage is relatively stable.
 
--   Reports the total time that elapses before the test webpage is fully loaded in Internet Explorer. It measures the duration from page load until Internet Explorer CPU usage is relatively stable.
-
--   Page Load to Usable
-
--   Estimates the time that elapses between loading the page and when the page is usable. This metric is based on performance events.
+-   **Page Load to Usable**: Estimates the time that elapses between loading the page and when the page is usable. This metric is based on performance events.
 
 Multiple types of impacts can be detected:
 

@@ -17,7 +17,7 @@ ms.technology: windows-oem
 
 # Understanding the Windows ADK tools
 
-The Windows Assessment Toolkit and the Windows Performance Toolkit make up the Windows Assessment and Deployment Kit (ADK). Together, they provide a complete solution for evaluating overall computer performance and automating the deployment of the Windows operating system to new PCs.
+The Windows Assessment Toolkit and the Windows Performance Toolkit compose the Windows Assessment and Deployment Kit (ADK). Together, they provide a complete solution for evaluating overall computer performance and automating the deployment of the Windows operating system to new PCs.
 
 This topic focuses on the Windows Assessment Toolkit. The assessment results are used to diagnose potential problems, so that the hardware and apps you develop are responsive and have a minimal impact on battery life, startup performance, and shutdown time. The same assessments are available for OEMs, ISVs, IHVs, enthusiasts, and other members of the community to establish a common framework to measure, compare, and review various aspects of quality.
 
