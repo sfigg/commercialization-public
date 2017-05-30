@@ -101,7 +101,8 @@ The IE Security Software Impact Assessment is intended to measure more relevant 
 
 Anti-malware and browser add-ins have a large impact on the Windows experience. By expanding the number of assessments that reflect their impact, we help you develop a clearer picture of their overall impact on your users.
 
-> [!NOTE] We recommend that you always compare results to a clean Windows image (with Windows Defender running) on the same system in order to quantify the impact introduced by the selected 3rd-party anti-malware solution.
+> [!NOTE]
+> We recommend that you always compare results to a clean Windows image (with Windows Defender running) on the same system in order to quantify the impact introduced by the selected 3rd-party anti-malware solution.
 
 
 This assessment covers page navigation and JavaScript performance, both of which are central to the browsing experience. It launches a page to exercise a number of key performance bottlenecks:
