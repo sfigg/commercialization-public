@@ -27,7 +27,7 @@ The energy efficiency and battery life of your PC is affected at every step of t
 
 ### How to select battery capacity
 
-Determine your battery life goals, industrial design, target cost, and the target market for your PC to help you select an appropriate battery capacity. Consider this early in your planning and development phase so that you don’t acquire a battery that is too small to meet your goals. For more information about modeling battery life runtime, see the *Battery Guidelines* document included with the WEGs on Connect.
+Determine your battery life goals, industrial design, target cost, and the target market for your PC to help you select an appropriate battery capacity. Consider this early in your planning and development phase so that you don’t end up with a battery that is too small to meet your goals. For more information about modeling battery life runtime, see the *Battery Guidelines* document included with the WEGs on Connect.
 
 ### How to design an OEM image to improve battery life
 
@@ -148,7 +148,7 @@ We recommend that you use the environment settings in the following table when y
 <tr class="odd">
 <td><strong>Display setting</strong></td>
 <td>Brightness = 150 - 200 nits depending on form factor</td>
-<td>Brightness is measured on a white desktop background with the brightness meter placed in the center of the screen.</td>
+<td>Brightness is measured on a white desktop background with the brightness meter placed in the center of the screen</td>
 </tr>
 <tr class="even">
 <td><strong>Power policy</strong></td>
@@ -164,13 +164,13 @@ We recommend that you use the environment settings in the following table when y
 <td><strong>Radios</strong></td>
 <td><p>Wi-Fi on <em>and</em> connected</p>
 <p>All other radios on but not connected</p></td>
-<td>Connect to a consumer class wireless router that has Internet access.</td>
+<td>Connect to a consumer class wireless router that has Internet access</td>
 </tr>
 <tr class="even">
 <td><strong>Other networking</strong></td>
 <td>Ethernet disconnected</td>
 <td><p>Disconnect before starting test</p>
-<p>Reconnect after battery rundown is complete.</p></td>
+<p>Reconnect after battery rundown is complete</p></td>
 </tr>
 </tbody>
 </table>
@@ -179,15 +179,15 @@ We recommend that you use the environment settings in the following table when y
 
 ## Tools and technical reference
 
-You can learn more about battery life and download tools to help you analyze performance from the resources in the following table.
+You can learn more about battery life and download tools to help you analyze performance from these resources:
 
 | Resource title                                               | Content type | Description                                                                                                                                                                                                                                                                | Download link |
 |--------------------------------------------------------------|--------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Windows Assessment and Deployment Kit<br/><br/>Idle Energy Efficiency and Battery Run Down jobs | Tool | Helps you measure energy efficiency on your PC. | Use the latest Windows ADK drop from Connect |
+| Windows Assessment and Deployment Kit<br/><br/>Idle Energy Efficiency and Battery Run Down jobs | Tool | The Windows ADK helps you measure energy efficiency on your PC. | Use the latest Windows ADK drop from Connect |
 | Windows Engineering Readiness Training: Battery Life Session | Reference    | Includes information on user research, using the ADK tools, and selecting a battery.  | [Connect](https://connect.microsoft.com/site1304/Downloads/DownloadDetails.aspx?DownloadID=48261) |
-| Delivering Great Performance and Battery Life                | Video        | Describes how to create high-performance and energy efficient experiences on the full spectrum of Windows 8 platforms. Learn app design and development practices that maximize the performance of apps and power consumption as a whole.                                  | [Channel 9](http://channel9.msdn.com/events/BUILD/BUILD2011/HW-459T) |
-| Improving Battery Life and Energy Efficiency                 | Video        | Demonstrates how the Windows ADK has made it easy to consistently measure battery life, and to identify and fix energy efficiency problems. Learn how to configure battery life assessments, and design assessment workflows, for multiple scenarios.  |  [Channel 9](http://channel9.msdn.com/events/BUILD/BUILD2011/HW-149P) |
-| Results for Idle Energy Efficiency                           | Document     | Helps you interpret the results produced by an Energy Efficiency job that uses the Idle workload. |  [MSDN](https://msdn.microsoft.com/en-us/library/windows/hardware/jj130809.aspx)  |
+| Delivering Great Performance and Battery Life                | Video        | Describes how to create high-performance and energy efficient experiences on the full spectrum of Windows 8 platforms. Learn app design and development practices that maximize the performance of apps and power consumption as a whole.                                  | [Channel9](http://channel9.msdn.com/events/BUILD/BUILD2011/HW-459T) |
+| Improving Battery Life and Energy Efficiency                 | Video        | Demonstrates how the Windows ADK has made it easy to consistently measure battery life, and to identify and fix energy efficiency problems. Learn how to configure battery life assessments, and design assessment workflows, for multiple scenarios.  |  [Channel9](http://channel9.msdn.com/events/BUILD/BUILD2011/HW-149P) |
+| Results for Idle Energy Efficiency                           | Document     | This topic helps you interpret the results produced by an Energy Efficiency job that uses the Idle workload. |  [MSDN](https://msdn.microsoft.com/en-us/library/windows/hardware/jj130809.aspx)  |
 | Mobile Battery Life Solutions                                | Document     | Outlines issues and solutions for advancing battery life for portable computers that run the Windows 7 operating system. Provides system design, power policy guidelines, and preinstallation configuration recommendations as well as test configuration recommendations. | [MSDN](https://msdn.microsoft.com/en-us/library/windows/hardware/dn641606.aspx) |
 | Using PowerCfg to Evaluate System Energy Efficiency          | Document     | Provides information about functionality in the PowerCfg utility for evaluating system energy efficiency for the Windows family of operating systems.  | [MSDN](https://msdn.microsoft.com/en-US/library/windows/hardware/dn550976) |
 

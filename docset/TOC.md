@@ -1206,7 +1206,7 @@
 #### [Delivering a great energy efficiency experience with Modern Standby](test/weg/delivering-a-great-energy-efficiency-experience-with-modern-standby.md)
 #### [Delivering a great energy efficiency experience](test/weg/delivering-a-great-energy-efficiency-experience.md)
 #### [Instrumenting Your Code with ETW](test/weg/instrumenting-your-code-with-etw.md)
-#### [Performance tools](test/weg/performance-tools.md)
+#### [Performance Tools](test/weg/performance-tools.md)
 #### [Understanding the Windows ADK tools](test/weg/understanding-the-windows-adk-tools.md)
 #### [Setting up a test environment for ADK and WAS](test/weg/setting-up-a-test-environment-for-adk-and-was.md)
 #### [Onboarding and preparing a system for ADK testing](test/weg/onboarding-and-preparing-a-system-for-adk-testing.md)

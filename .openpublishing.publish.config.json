@@ -116,15 +116,18 @@
     }
   ],
   "notification_subscribers": [
-    "justinha@microsoft.com",
     "joshbax@microsoft.com",
     "maricia@microsoft.com",
-    "pabloan@microsoft.com",
     "dawnwood@microsoft.com",
+<<<<<<< HEAD
+    "themar@microsoft.com",
+    "v-gmoor@microsoft.com",
+=======
     "kenpacq@microsoft.com",
     "themar@microsoft.com",
     "v-gmoor@microsoft.com",
     "v-desim@microsoft.com",
+>>>>>>> live
     "elkr@microsoft.com",
     "nibr@microsoft.com"
   ],

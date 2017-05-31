@@ -44,12 +44,17 @@ See the following sections for more information about what you can do to customi
 </tr>
 <tr class="even">
 <td><p>[Customizations for mobile](mobile/windows-10-mobile-customizations-portal.md)</p></td>
-<td><p>Learn about the customizations available to you if you are providing a controlled and specialized experience on a Windows device running Windows 10 Enterprise.</p></td>
-</tr>
+<td><p>Learn about the customizations available to you if you are providing a controlled and specialized experience on a Windows device running Windows 10 Enterprise.</p>
+</td>
 <tr class="odd">
+<td><p>[Mobile device management](mdm/index.md)</p></td>
+<td><p>Windows 10 provides an enterprise management solution to help IT pros manage company security policies and business applications, while avoiding compromise of the users’ privacy on their personal phones. A built-in management component can communicate with the management server.</p></td>
+</tr>
+<tr class="even">
 <td><p>[Preinstalled apps](preinstall/preinstall-apps.md)</p></td>
 <td><p>If you're a Windows OEM or mobile operator partner, find out how you can create partner apps that you can package and configure to install during the initial device setup process. While the user is going through the initial setup process, the preinstalled apps are installed in the background.</p></td>
 </tr>
+
 <tr class="even">
 <td><p>[Change history for Customize](change-history-for-customize.md)</p></td>
 <td><p>Read about what topics have been created, updated, or deleted for Windows 10, build 1607.</p></td>

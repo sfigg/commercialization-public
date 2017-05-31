@@ -174,8 +174,7 @@ You can develop a custom flashing tool to address the life cycle needs of the de
 
 -   [Developing custom OEM flashing tools](developing-custom-oem-flashing-tools.md)
 
-<a name="manufacturing-workflow"></a>
-## Manufacturing workflow
+## <span id="Manufacturing_workflow"></span><span id="manufacturing_workflow"></span><span id="MANUFACTURING_WORKFLOW"></span>Manufacturing workflow
 
 
 OEMs need to determine the manufacturing process to use to implement MMOS in their manufacturing facilities.
@@ -230,9 +229,7 @@ One tradeoff in this approach is that the manufacturing line must be designed to
 
 For more info on working with the flashing tools, see [Flashing tools](flashing-tools.md).
 
-
-<a name="example-test"></a>
-## Example test area by manufacturing phase
+## <span id="Example_test"></span><span id="example_test"></span><span id="EXAMPLE_TEST"></span>Example test area by manufacturing phase
 
 
 Test area by manufacturing phase is provided only as an example; each manufacturer may wish to sequence the tests differently.

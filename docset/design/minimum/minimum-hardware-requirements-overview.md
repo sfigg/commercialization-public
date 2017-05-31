@@ -1468,7 +1468,46 @@ Devices that run IoT Core require an ARM SoC or x86, x64 processor/SoC that meet
 
 **Note**  Faster processor performance may be required based on the design and functionality of the device.
 
-For a sample of enabled SoCs, see [Enabled SoCs](https://developer.microsoft.com/en-us/windows/iot/explore/SoC). 
+ 
+
+The following SoCs are supported in-box:
+
+<table>
+<colgroup>
+<col width="33%" />
+<col width="33%" />
+<col width="33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Broadcom</th>
+<th>Intel</th>
+<th>Qualcomm</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><ul>
+<li>BCM2837</li>
+<li>BCM2836</li>
+</ul></td>
+<td><ul>
+<li><a href="http://www.intel.com/joule">Intel® Joule™</a></li>
+<li><a href="http://ark.intel.com/products/codename/80644/">Intel® Atom™ processor E3900 series (Apollo Lake)</a></li>
+<li><a href="http://ark.intel.com/products/codename/80644/">Intel® Celeron® processor N3350 (Apollo Lake)</a></li>
+<li><a href="http://ark.intel.com/products/codename/80644/">Intel® Pentium® Processor N4200 platform (Apollo Lake)</a></li>
+<li><a href="http://ark.intel.com/products/codename/55844/#@Embedded">Intel® Atom™ processor E3800 Product Family (Bay Trail-I)</a></li>
+<li><a href="http://ark.intel.com/products/codename/55844/">Intel® Celeron® Processor N and J Series (Bay Trail-M/D)</a></li>
+<li><a href="http://ark.intel.com/products/codename/55844/">Intel® Pentium® Processor N and J Series (Bay Trail-M/D)</a></li>
+</ul></td>
+<td><ul>
+<li><a href="https://www.qualcomm.com/products/snapdragon/processors/212">Qualcomm® Snapdragon™ 212 (APQ8009)</a></li>
+<li><a href="https://www.qualcomm.com/products/snapdragon/processors/410">Qualcomm® Snapdragon™ 410 (APQ8016)</a></li>
+<li><a href="https://www.qualcomm.com/products/snapdragon/processors/617">Qualcomm® Snapdragon™ 617 (APQ8052)</a></li>
+</ul></td>
+</tr>
+</tbody>
+</table>
 
  
 

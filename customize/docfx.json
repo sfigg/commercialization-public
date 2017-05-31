@@ -2,10 +2,8 @@
   "build": {
     "content": [
       {
-        "files": [
-          "**/*.md"
-        ],
-        "exclude": [
+          "files": ["**/**.md", "**/**.yml"],
+		  "exclude": [
           "**/obj/**",
           "**/includes/**",
           "README.md",
@@ -19,6 +17,7 @@
       {
         "files": [
           "**/*.png",
+		  "**/*.gif",
           "**/*.jpg"
         ],
         "exclude": [
@@ -29,7 +28,10 @@
     ],
     "overwrite": [],
     "externalReference": [],
-    "globalMetadata": {},
+    "globalMetadata": {
+	    "uhfHeaderId": "MSDocsHeader-WinHW",
+        "breadcrumb_path": "/windows-hardware/customize/breadcrumbs/toc.json"
+	},
     "fileMetadata": {},
     "template": [],
     "dest": "oem-customize"

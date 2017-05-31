@@ -19,16 +19,16 @@ ms.technology: windows-oem
 
 This section provides an overview of the fast startup experience and our recommendations to partners to deliver the best on/off experience for customers.
 
-PCs can be turned on and off many times a day. Depending on usage patterns and the battery life capability of the device, a PC might shut down, sleep, or hibernate. System boot is the first experience users have with their device and is a recurrent experience for the lifetime of the device. Customer telemetry tells us that users boot and shut down their PC at least once a day. Although connected standby capability reduces the frequency with which a device must be booted, booting might still be required for software and firmware updates, low battery states, and major configuration changes to the device.
+PCs are turned on and off many times a day. Depending on usage patterns and the battery life capability of the device, a PC might shut down, sleep, or hibernate. System boot is the first experience users have with their device and is a recurrent experience for the lifetime of the device. Customer telemetry tells us that users boot and shut down their PC at least once a day. Connected standby capability reduces the frequency with which a device must be booted, but booting might still be required for software and firmware updates, low battery states, and major configuration changes to the device.
 
 Starting with Windows 8.x, the speed of the on/off transition is significantly faster than previous Windows versions. The user
-interaction model used previously was to interrupt a boot with key presses to indicate alternate boot paths. With a much faster boot time, boot interruptions are impractical and negatively affect the boot experience. In previous releases, it was important to stop the boot process as early as possible for decision points, such as booting to an alternative operating system, because moving backwards was a long and slow process. It was also much easier with slow boot times to create periods of time in which key presses could be detected and activated. In Windows 8.x and Windows 10, this is no longer the case.
+interaction model used previously was to interrupt a boot with key presses to indicate alternate boot paths. With a much faster boot time, boot interruptions are impractical and negatively affect the boot experience. In previous releases, it was important to stop the boot process as early as possible for decision points, such as booting to an alternative operating system, because moving backwards was a long and slow process. It was also much easier with slow boot times to create periods of time in which key presses could be detected and activated. This is no longer the case in Windows 8.x and Windows 10.
 
-The default boot performance has improved dramatically with the leveraging of hibernation technology. For information about the improvements made to the performance of the on/off experience, see [Hibernate (S4) suspend and resume](#hibernate-s4-suspend-and-resume). The considerations in this topic outline the user model for the fast on/off transitions, options related to those transitions, and the components required by OEMs/ODMs to deliver the experience.
+The default boot performance has improved dramatically by leveraging hibernate technology. To understand the improvements made to the performance of the on/off experience, see [Hibernate (S4) suspend and resume](#hibernate-s4-suspend-and-resume). The considerations in this section outline the user model for the fast on/off transitions, options related to those transitions, and the components required by OEMs/ODMs to deliver the experience.
 
 ## Considerations
 
-The main source of boot delays is the OEM software preload. Fast startup represents about 50% of the overall boot time and is directly affected by the following first- and third-party processes started on boot:
+The main source of boot delays is the OEM software preload. Fast startup represents around 50% of the overall boot time and is directly affected by the following first- and third-party processes started on boot:
 
 -   Services that are resuming
 
@@ -62,7 +62,7 @@ When optimizing on/off performance, consider the following suggestions:
 
 -   Understand that disk throughput is critical to on/off performance. For example:
 
-	-   On average, the hiberfile read/write times represent 50% of the boot to Start screen time.
+	-   On average, Hiberfile read/write times represent 50% of the boot to Start screen time.
 
 	-   Most systems are disk-bound on boot.
 
@@ -74,15 +74,15 @@ When optimizing on/off performance, consider the following suggestions:
 
 ### Fast startup
 
-Starting with Windows 8.x, the default shutdown and restart scenario has been updated and named fast startup. Fast startup begins with the shutdown process and includes writing data to disk similar to the hibernate process. A key difference is that all user sessions (Session 1) are logged off and the remaining information is written to the hiberfile. When you boot the PC from this state,  Windows loads the previously initialized state by reading from the hiberfile, instead of running the full boot process in which Windows, drivers, devices, and services are initialized. This method speeds up the process of initializing the lock or Start screen. 
+Starting with Windows 8.x, the default shutdown and restart scenario has been updated and named fast startup. Fast startup begins with the shutdown process and includes writing data to disk in a way that’s similar to the way hibernate works. A key difference is that all user sessions (Session 1) are logged off, and the remaining information is written to the hiberfile. When you boot the PC from this state,  Windows loads the previously initialized state by reading from the hiberfile, instead of running the full boot process in which Windows, drivers, devices, and services are initialized. This method speeds up the process of initializing the lock or Start screen. 
 
-In addition, the use of hibernate technology has been expanded to create a new default startup and shutdown experience that is much faster than a full boot. For details, see the following diagram:
+In addition, the use of hibernate technology has been expanded to create a new default startup and shutdown experience that is much faster than a full boot.
 
 ![Diagram of the phases in fast startup and shutdown](images/weg-diagram-fast-startup-boot-shutdown.png)
 
-The faster startup and shutdown sequence uses the hibernate infrastructure to place the PC in hibernate. Unlike a full shutdown and boot, the user session is closed and a hibernate is performed. As a result, the hibernate file is much smaller, ensuring that the hibernate and resume process is faster. This sequence also takes advantage of the parallelization optimizations.
+The faster startup and shutdown sequence uses the hibernate infrastructure to place the PC in hibernate. Unlike a full shutdown and boot, the user session is closed and a hibernate is performed. As a result, the hibernate file is much smaller, making the hibernate and resume process much faster. This sequence also takes advantage of the parallelization optimizations.
 
-Developers creating drivers or apps with a system service and system integrators should monitor driver quality issues, such as memory leaks. Although driver quality has always been important, note that the up-time between kernel reboots might be significantly longer than on previous versions of Windows because during user-initiated shutdowns, the kernel, drivers, and services are preserved and restored, not just restarted.
+Developers creating drivers or apps with a system service and system integrators should monitor driver quality issues such as memory leaks. Although driver quality has always been important, note that the up time between kernel reboots might be significantly longer than on previous versions of Windows because during user-initiated shutdowns, the kernel, drivers, and services will be preserved and restored, not just restarted.
 
 ### Full boot
 
@@ -163,7 +163,7 @@ Although this list may evolve as the needs and capabilities of PCs evolve, it is
 
 ![Diagram of the hibernate phase](images/weg-diagram-hibernate-phase.png)
 
-In the hibernate phase, Windows notifies the various components that a hibernate phase is occuring and then saves the user's context and system state. The data is compressed and written to the disk; the system uses all the processor cores on the system to compress the data in memory and uses one processor when writing the data to disk. After all of the data is written to disk, Windows notifies the firmware that it is ready for power down.
+In this phase, Windows notifies the various components that a hibernate phase is occuring and then saves the user's context and system state. The data is compressed and written to the disk; the system uses all the processor cores on the system to compress the data in memory and uses one processor when writing the data to disk. After all of the data is written to disk, Windows notifies the firmware that it is ready for power down.
 
 The firmware notification is done by writing to the sleep-type registers with values that were provided in the S4 object as defined in ACPI 4, Section 4.5, Table 4-13, and Section 7.3.4. This indicates to the firmware that on next power-on, a resume will be attempted rather than a full boot.
 
@@ -194,7 +194,7 @@ The UEFI architecture flows through several phases of firmware and platform init
 
 #### Security (SEC)
 
-In the SEC phase, a platform performs extraction, decompression, and validation of platform microcode stored on a SPI NOR flash. At this point of power-on, the platform has initialization RAM and its bus. The following list includes some questions to consider for this phase:
+In the SEC phase, a platform performs extraction, decompression, and validation of platform microcode stored on a SPI NOR flash. At this point of power-on, the platform has initialization RAM and its bus. The following list are considerations for this phase:
 
 -   Is the microcode specific to the SKU or general to multiple platforms? The size of the microcode will affect decompression transfer to RAM, and validation.
 
@@ -214,9 +214,9 @@ Balancing compression, design, and transfer of microcode might improve performan
 
 After the kernel is in RAM, the platform initializes the kernel and starts to validate the integrity of the code, system table, and other elements. Consider designing a UEFI kernel that is optimized for your platform instead of a generic non-optimized kernel. Optimizations can include:
 
--   Compiling flags during kernel builds that optimize memory buffers
+-   Compiling flags during kernel builds that optimize memory buffers.
 
--   Linking to modules that aren’t required for platform initialization
+-   Linking to modules that aren’t required for platform initialization.
 
 Consult with your firmware designers for ideas on how to optimize the UEFI kernel.
 
@@ -232,23 +232,23 @@ Boot device selection is the final step in platform initialization before hand-o
 
 #### USB Enumeration
 
-The USB enumeration portion of POST can take a long time. With new changes introduced in Windows 8, USB enumeration will no longer be required in the default boot case. For additional POST time optimizations, contact your silicon and firmware vendor.
-We recommend that the USB be enumerated if the boot sequence is set to boot to any other path, such as in the following scenarios:
+The USB enumeration portion of POST can take a long time. With new changes introduced in Windows 8, USB enumeration will no longer be required in the default boot case. For additional POST time optimizations, contact your silicon and firmware vendor .
 
--   There are other options higher in the boot order, such as when Windows To Go Startup Options inserts a USB class boot entry at the top of the boot order.
+However, we do recommend that the USB be enumerated if the boot sequence is set to boot to any other path, such as:
+
+-   If there are other options higher in the boot order, such as when Windows To Go Startup Options inserts a USB class boot entry at the top of the boot order.
 
 -   A boot next variable is set, causing a different boot device to be used.
 
--   Failures occur on the immediately preceding boots.
+-   Failures occurring on the immediately preceding boots.
 
 ### Apps
 
-Desktop apps that are in the boot path will impact on/off transition and energy efficiency. Task Manager will flag desktop apps that have a high impact and notify the user about desktop apps that are always running. For more information, see [Startup apps](https://msdn.microsoft.com/windows/compatibility/startup-apps). Instead of automatically starting desktop apps, we strongly recommend that you use automatic maintenance and run them only when needed.
+Desktop apps that are in the boot path will impact on/off transition and energy efficiency. Task Manager will also flag desktop apps that have a high impact and notify the user about desktop apps that are always running. For more information, see [Startup apps](https://msdn.microsoft.com/windows/compatibility/startup-apps). Instead of automatically starting desktop apps, we strongly recommend that you use automatic maintenance and run them only when needed.
 
 ## Recommended goals
 
-> [!IMPORTANT]
-> All goals defined exclude BIOS initialization time.
+> [!IMPORTANT] All goals defined exclude BIOS initialization time.
 
 To deliver a great on/off experience, it is recommended that a PC meets the goals in the following tables.
 
@@ -310,19 +310,19 @@ You can use the Windows Assessment Toolkit to improve the performance of your PC
 
 The new versions of the Fast Startup and Hibernate assessments include a *Hiberfile Diagnostics* mode. This mode helps detect drivers and apps that contribute to large hiberfile size and detects storage drivers that do not implement multi-stage resume.
 
-There are two main categories of memory pages that are stored in the hiberfile with respect to system evaluation: driver non-paged pool pages and app/services private working sets pages.
+There are two main categories of memory pages going into the hiberfile with respect to system evaluation: driver non-paged pool pages and app/services private working sets pages.
 
 The new mode will help you to understand which software components must be improved for memory usage.
 
 Tools and technical reference
 -----------------------------
 
-You can learn more about the on/off experience, and download tools for you to analyze performance from these resources:
+You can learn more about the on/off experience, and download tools to help you analyze performance from these resources:
 
-| Resource title and link                    | Content type | Description                                                                                                                                                                                                                 |	
+| Resource title                     | Content type | Description                                                                                                                                                                                                                 | Link |
 |------------------------------------|--------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Startup apps](https://msdn.microsoft.com/windows/compatibility/startup-apps)                       | Article      | Highlights some of the effects that startup apps have on a Windows device, and provides guidance to developers (ISV/IHV) and OEMs to rethink the usage patterns of startup apps to improve battery life and responsiveness. | 
-| [Results for the On/Off Assessments](http://msdn.microsoft.com/en-us/library/windows/hardware/jj130812.aspx) | Document     | Helps you interpret the results produced by the On/Off assessments (Boot Performance (Fast Startup), Boot Performance (Full Boot), Standby Performance, and Hibernate Performance.                                          | 
+| Startup Apps                       | Article      | Highlights some of the effects that startup apps have on a Windows device, and provides guidance to developers (ISV/IHV) and OEMs to rethink the usage patterns of startup apps to improve battery life and responsiveness. | [Startup apps](https://msdn.microsoft.com/windows/compatibility/startup-apps) |
+| Results for the On/Off Assessments | Document     | Helps you interpret the results produced by the On/Off assessments (Boot Performance (Fast Startup), Boot Performance (Full Boot), Standby Performance, and Hibernate Performance.                                          | [Results for the On/Off Assessments](http://msdn.microsoft.com/en-us/library/windows/hardware/jj130812.aspx)  |
 
 
 

@@ -84,7 +84,6 @@ You will need two USB drives. USB-A will be used to boot the system in Windows P
 
 - Pinning desktop applications to start sceen
 
-<a name="create-a-usb-drive-that-can-boot-to-winpe"></a>
 ## Create a USB drive that can boot to WinPE
 
 You must use the matching version of Windows ADK for the images being customized. If building an image using the RTM image, use Windows ADK for Windows 10. If using a Windows 10, version 1511 image, use the Windows ADK for Windows 10, version 1511.
@@ -505,7 +504,6 @@ Where E:\ is USB-B.
 
     This process may take several minutes.
 
-<a name="deploy-the-image-to-new-computers-windows-installation"></a>
 ## Deploy the image to new computers (Windows installation)
 
 1.  On the technician computer, locate the following files in USB-B/Deployment. Please see [Creating My USB-B](#creating-my-usb-b) to create and place the files in correct paths. 
@@ -532,7 +530,6 @@ Where E:\ is USB-B.
     Exit
     ```
 
-<a name="update-images-manually-by-using-audit-mode-online-servicing"></a>
 ## Update images manually by using AUDIT MODE (online servicing)
 
 Important: Connecting the computer to internet is not recommended during manufacturing stages. We don't recommend getting updates from Windows Update in audit mode, as it will likely generate errors when you generalize + sysprep the machine from audit mode.
@@ -635,7 +632,6 @@ Note: You must be using at least version Windows 10, version 1607.
     
     ![Office tiles pinned to the Start menu](Images/office-tiles-pinned-to-start-menu.png)
     
-<a name="prepare-the-system-for-recovery-with-push-button-reset"></a>
 ## Prepare the system for Push Button Reset
 
 This section provides guidance for setting up the recovery environment for Push Button Reset (PBR) scenarios.
@@ -809,7 +805,7 @@ E:\Deployment\walkthrough-deploy.bat E:\Images\modelspecificimage.wim
 
 Note: There are several pauses in the script. You will be prompted Y/N for the Apply operation if this is a Compact OS deployment.
 
-Note: Only use Compact OS on high end storage devices because Compact OS performance depends on the storage device capabilities. Compact OS is NOT recommend on rotational devices or storage greater than 32 GB. For more information, see [Compact OS](compact-os.md).
+Note: Only use Compact OS on high end storage devices because Compact OS performance depends on the storage device capabilities. Compact OS is NOT recommend on rotational devices or storage greater than 32 GB. For more information, see [Compact OS](#compact-os.md).
 
 Remove USB-A and USB-B and type *exit* to reboot your computer with Windows 10.
 

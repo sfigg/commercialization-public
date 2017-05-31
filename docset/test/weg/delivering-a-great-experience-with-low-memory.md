@@ -27,7 +27,7 @@ There are several things that an OEM, IHV, and ISV need to consider when targeti
 
 #### Overall baseline memory footprint
 
-The typical baseline 32-bit retail Windows image consumes approximately 400 MB of in-use memory post-boot (as measured by using the Memory Footprint assessment in the ADK). Allowing for 10% headroom or 100 MB on 1 GB, this leaves enought memory for 2-3 apps to be in physical memory, enabling fast switching between the apps. The larger the base operating system memory footprint, the lesser the memory available to the user and apps.
+The typical baseline 32-bit retail Windows image consumes approximately 400 MB of in-use memory post-boot (as measured by using the Memory Footprint assessment in the ADK). Allowing for 10% headroom or 100 MB on 1 GB, this leaves memory for 2-3 apps to be in physical memory, enabling fast switching between the apps. The larger the base operating system memory footprint, the lesser the memory available to the user and apps.
 
 Key factors that impact baseline OS memory footprint are drivers and pre-loaded software, including anti-malware apps, device desktop apps, and software updaters.
 
@@ -237,7 +237,7 @@ Compared to a retail OS image, the memory footprint assessment in the ADK provid
 
 ### For OEM
 
-OEMs have a significant influence over the choice of hardware/drivers and pre-loaded software, which directly impacts the memory footprint of the system:
+OEMs have a significant influence over the choice of hardware/drivers and pre-loaded software, which directly impacts the memory footprint of the system.
 
 -   Before you deploy, understand and quantify the impact of drivers and software you install on top of a clean image and ensure that they are within the recommended goals previously described:
 
@@ -247,11 +247,11 @@ OEMs have a significant influence over the choice of hardware/drivers and pre-lo
 
 -   Consider using a different driver or software vendor that can supply you with equivalent functionality with lower impact on system memory.
 
--   Consult your driver and software vendors for the latest versions of their software. Also, provide feedback to your partners on specific drivers or software that have higher than recommended memory usage and provide traces and logs from the assessment toolkit.
+-   Consult your driver and software vendors for the latest versions of their software and provide feedback to your partners on specific drivers or software that have higher than recommended memory usage along with traces/logs from the assessment toolkit.
 
 ### For IHV/ISV
 
-IHVs that can deliver memory efficient drivers enable OEMs to build 1-GB systems that provide a great experience to consumers:
+IHVs that can deliver memory efficient drivers enable OEMs to build 1-GB systems that provide a great experience to consumers.
 
 -   Ensure that hardware parts meet the certification requirements described previously (particularly nonpageable footprint for drivers, performance for storage hardware, and memory usage of run-always apps for applications).
 
@@ -265,7 +265,7 @@ IHVs that can deliver memory efficient drivers enable OEMs to build 1-GB systems
 
 ### For anti-malware app ISV
 
-Anti-malware apps can significantly impact baseline the OS memory footprint and user experience when not optimized for performance:
+Anti-malware apps can significantly impact baseline the OS memory footprint and user experience when not optimized for performance.
 
 -   Ensure that the number and footprint of "run-always" services and processes are as minimal as possible. For example:
 
@@ -279,7 +279,7 @@ Anti-malware apps can significantly impact baseline the OS memory footprint and 
 
     -   UI should not be launched unless explicitly requested by the user (for example, popups that open immediately after boot).
 
--   Windows provides a core set of Windows APIs and associated documentation to optimize for performance:
+-   Windows has provided a core set of Windows APIs and associated documentation to optimize for performance:
 
     -   Optimize signature loading and maintenance via the use of compression: [Xpress Compression](http://msdn.microsoft.com/en-us/library/ee915356(v=PROT.13).aspx).
 
