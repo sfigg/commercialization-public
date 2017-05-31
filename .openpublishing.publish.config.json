@@ -8,14 +8,15 @@
       "build_source_folder": "docset",
       "build_output_subfolder": "docset",
       "locale": "en-us",
-      "version": 0,
+      "monikers": [],
       "open_to_public_contributors": false,
       "type_mapping": {
         "Conceptual": "Content",
         "ManagedReference": "Content",
         "RestApi": "Content"
       },
-      "build_entry_point": "op"
+      "build_entry_point": "op",
+      "version": 0
     },
     {
       "docset_name": "oem-customize",
@@ -118,8 +119,15 @@
     "joshbax@microsoft.com",
     "maricia@microsoft.com",
     "dawnwood@microsoft.com",
+<<<<<<< HEAD
     "themar@microsoft.com",
     "v-gmoor@microsoft.com",
+=======
+    "kenpacq@microsoft.com",
+    "themar@microsoft.com",
+    "v-gmoor@microsoft.com",
+    "v-desim@microsoft.com",
+>>>>>>> live
     "elkr@microsoft.com",
     "nibr@microsoft.com"
   ],
