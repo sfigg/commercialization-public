@@ -9,7 +9,7 @@
       "build_output_subfolder": "oem-customize",
       "locale": "en-us",
       "monikers": [],
-      "open_to_public_contributors": false,
+      "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content",
         "ManagedReference": "Content",
@@ -23,6 +23,22 @@
       "docset_name": "oem-design",
       "build_source_folder": "design",
       "build_output_subfolder": "oem-design",
+      "locale": "en-us",
+      "monikers": [],
+      "open_to_public_contributors": false,
+      "type_mapping": {
+        "Conceptual": "Content",
+        "ManagedReference": "Content",
+        "RestApi": "Content"
+      },
+      "build_entry_point": "docs",
+      "template_folder": "_themes",
+      "version": 0
+    },
+    {
+      "docset_name": "oem-get-started",
+      "build_source_folder": "get-started",
+      "build_output_subfolder": "oem-get-started",
       "locale": "en-us",
       "monikers": [],
       "open_to_public_contributors": false,
@@ -71,22 +87,6 @@
       "docset_name": "oem-test",
       "build_source_folder": "test",
       "build_output_subfolder": "oem-test",
-      "locale": "en-us",
-      "monikers": [],
-      "open_to_public_contributors": false,
-      "type_mapping": {
-        "Conceptual": "Content",
-        "ManagedReference": "Content",
-        "RestApi": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes",
-      "version": 0
-    },
-    {
-      "docset_name": "oem-get-started",
-      "build_source_folder": "get-started",
-      "build_output_subfolder": "oem-get-started",
       "locale": "en-us",
       "monikers": [],
       "open_to_public_contributors": false,
