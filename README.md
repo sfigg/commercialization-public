@@ -1,7 +1,5 @@
-# wdg-cpub-hardware-commercialization
+# Windows Hardware Commercialization
 
-Documentation for Windows Hardware Partner Commercialization
-
-For guidance about authoring and publishing topics, see the [Windows Open Publishing Guide](http://aka.ms/windows-op-guide). 
+Documentation for Windows Hardware commercialization for partners
 
 For support, contact [Windows Open Publishing Support](winopsup@microsoft.com). 
