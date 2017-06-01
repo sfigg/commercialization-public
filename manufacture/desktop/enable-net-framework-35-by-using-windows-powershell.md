@@ -32,13 +32,13 @@ For a Windows Server installation that is not connected to the Internet, you ca
 
 1.  Start Windows PowerShell in the Administrator Command Prompt by typing:
 
-    ``` batchfile
+    ```
     powershell
     ```
 
 2.  To install .NET Framework 3.5 from installation media located on a network share, use the following command:
 
-    ``` bat
+    ```
     Install-WindowsFeature Net-Framework-Core -source \\network\share\sxs
     ```
 
@@ -48,7 +48,7 @@ For a Windows Server installation that is not connected to the Internet, you ca
 
 3.  To verify installation, run the following command:
 
-    ``` batch
+    ```
     Get-WindowsFeature
     ```
 
