@@ -105,7 +105,7 @@ The host deployment environment is the operating system where DISM runs. The tar
 </tr>
 <tr class="odd">
 <td align="left"><p>Windows Server 2008 SP2 (x86 or x64)</p></td>
-<td align="left">Supported, using the Windows 10 version of DISM</td>
+<td align="left">Not supported</td>
 <td align="left"><p>Supported, using the Windows 8.1 version of DISM or later</p></td>
 <td align="left"><p>Supported, using the Windows 8 version of DISM or later</p></td>
 <td align="left"><p>Supported</p></td>
