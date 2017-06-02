@@ -40,8 +40,8 @@ The host deployment environment is the operating system where DISM runs. The tar
 <thead>
 <tr class="header">
 <th align="left">Host deployment environment</th>
-<th align="left">Target Image:Windows 10 , Windows 10, or WinPE for Windows 10</th>
-<th align="left">Target Image: , Windows 8.1, Windows Server 2016, Windows Server 2012 R2, or WinPE 5.0 (x86 or x64)</th>
+<th align="left">Target Image: Windows 10 or WinPE for Windows 10</th>
+<th align="left">Target Image: Windows 8.1, Windows Server 2016, Windows Server 2012 R2, or WinPE 5.0 (x86 or x64)</th>
 <th align="left">Target Image: Windows 8, Windows Server 2012, or WinPE 4.0 (x86 or x64)</th>
 <th align="left">Target Image: Windows 7, Windows Server 2008 R2, or WinPE 3.0 (x86 or x64)</th>
 </tr>
