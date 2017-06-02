@@ -49,70 +49,70 @@ The host deployment environment is the operating system where DISM runs. The tar
 <tbody>
 <tr class="odd">
 <td align="left"><p>Windows 10 (x86 or x64)</p></td>
-<td align="left">Supported</td>
+<td align="left"><p>Supported</td>
 <td align="left"><p>Supported</p></td>
 <td align="left"><p>Supported</p></td>
 <td align="left"><p>Supported</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Windows Server 2016 (x86 or x64)</p></td>
-<td align="left">Supported</td>
+<td align="left"><p>Supported</td>
 <td align="left"><p>Supported</p></td>
 <td align="left"><p>Supported</p></td>
 <td align="left"><p>Supported</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Windows 8.1 (x86 or x64)</p></td>
-<td align="left">Supported, using the Windows 10 version of DISM</td>
+<td align="left"><p>Supported, using the Windows 10 version of DISM</td>
 <td align="left"><p>Supported</p></td>
 <td align="left"><p>Supported</p></td>
 <td align="left"><p>Supported</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Windows Server 2012 R2 (x86 or x64)</p></td>
-<td align="left">Supported, using the Windows 10 version of DISM</td>
+<td align="left"><p>Supported, using the Windows 10 version of DISM</td>
 <td align="left"><p>Supported</p></td>
 <td align="left"><p>Supported</p></td>
 <td align="left"><p>Supported</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Windows 8(x86 or x64)</p></td>
-<td align="left">Supported, using the Windows 10 version of DISM</td>
+<td align="left"><p>Supported, using the Windows 10 version of DISM</td>
 <td align="left"><p>Supported, using the Windows 8.1 version of DISM or later</p></td>
 <td align="left"><p>Supported</p></td>
 <td align="left"><p>Supported</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Windows Server 2012 (x86 or x64)</p></td>
-<td align="left">Supported, using the Windows 10 version of DISM</td>
+<td align="left"><p>Supported, using the Windows 10 version of DISM</td>
 <td align="left"><p>Supported, using the Windows 8.1 version of DISM or later</p></td>
 <td align="left"><p>Supported</p></td>
 <td align="left"><p>Supported</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Windows 7 (x86 or x64)</p></td>
-<td align="left">Supported, using the Windows 10 version of DISM</td>
+<td align="left"><p>Supported, using the Windows 10 version of DISM</td>
 <td align="left"><p>Supported, using the Windows 8.1 version of DISM or later</p></td>
 <td align="left"><p>Supported, using the Windows 8 version of DISM or later</p></td>
 <td align="left"><p>Supported</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Windows Server 2008 R2 (x86 or x64)</p></td>
-<td align="left">Supported, using the Windows 10 version of DISM</td>
+<td align="left"><p>Supported, using the Windows 10 version of DISM</td>
 <td align="left"><p>Supported, using the Windows 8.1 version of DISM or later</p></td>
 <td align="left"><p>Supported, using the Windows 8 version of DISM or later</p></td>
 <td align="left"><p>Supported</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Windows Server 2008 SP2 (x86 or x64)</p></td>
-<td align="left">Not supported</td>
+<td align="left"><p>Not supported</td>
 <td align="left"><p>Supported, using the Windows 8.1 version of DISM or later</p></td>
 <td align="left"><p>Supported, using the Windows 8 version of DISM or later</p></td>
 <td align="left"><p>Supported</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>WinPE for Windows 10 x86</p></td>
-<td align="left">Supported</td>
+<td align="left"><p>Supported</td>
 <td align="left"><p>Supported</p></td>
 <td align="left"><p>Supported</p></td>
 <td align="left"><p>Supported</p></td>
@@ -126,42 +126,42 @@ The host deployment environment is the operating system where DISM runs. The tar
 </tr>
 <tr class="even">
 <td align="left"><p>WinPE 5.0 x86</p></td>
-<td align="left">Supported, using the Windows 10 version of DISM</td>
+<td align="left"><p>Supported, using the Windows 10 version of DISM</td>
 <td align="left"><p>Supported</p></td>
 <td align="left"><p>Supported</p></td>
 <td align="left"><p>Supported</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>WinPE 5.0 x64</p></td>
-<td align="left">Supported, using the Windows 10 version of DISM: X64 target image only</td>
+<td align="left"><p>Supported, using the Windows 10 version of DISM: X64 target image only</td>
 <td align="left"><p>Supported: X64 target image only</p></td>
 <td align="left"><p>Supported: X64 target image only</p></td>
 <td align="left"><p>Supported: X64 target image only</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>WinPE 4.0 x86</p></td>
-<td align="left">Supported, using the Windows 10 version of DISM</td>
+<td align="left"><p>Supported, using the Windows 10 version of DISM</td>
 <td align="left"><p>Supported, using the Windows 8.1 version of DISM or later</p></td>
 <td align="left"><p>Supported</p></td>
 <td align="left"><p>Supported</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>WinPE 4.0 x64</p></td>
-<td align="left">Supported, using the Windows 10 version of DISM: X64 target image only</td>
+<td align="left"><p>Supported, using the Windows 10 version of DISM: X64 target image only</td>
 <td align="left"><p>Supported, using the Windows 8.1 version of DISM or later: X64 target image only</p></td>
 <td align="left"><p>Supported: X64 target image only</p></td>
 <td align="left"><p>Supported: X64 target image only</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>WinPE 3.0 x86</p></td>
-<td align="left">Supported, using the Windows 10 version of DISM</td>
+<td align="left"><p>Supported, using the Windows 10 version of DISM</td>
 <td align="left"><p>Supported, using the Windows 8.1 version of DISM or later</p></td>
 <td align="left"><p>Supported, using the Windows 8 version of DISM or later</p></td>
 <td align="left"><p>Supported</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>WinPE 3.0 x64</p></td>
-<td align="left">Supported, using the Windows 10 version of DISM: X64 target image only</td>
+<td align="left"><p>Supported, using the Windows 10 version of DISM: X64 target image only</td>
 <td align="left"><p>Supported, using the Windows 8.1 version of DISM or later: X64 target image only</p></td>
 <td align="left"><p>Supported, using the Windows 8 version of DISM or later: X64 target image only</p></td>
 <td align="left"><p>Supported: X64 target image only</p></td>
