@@ -88,7 +88,7 @@ The following table provides a description of how each driver servicing option c
 <p>If you point to a path and use the <strong>/Recurse</strong> option, all subfolders are queried for drivers to add.</p>
 <p>For testing purposes you can use <strong>/ForceUnsigned</strong> to add unsigned drivers and override the requirement that drivers installed on X64-based computers must have a digital signature. For more information about driver signing requirements, see [Device Drivers and Deployment Overview](device-drivers-and-deployment-overview.md).</p>
 <p>Examples:</p>
-<p><strong>Dism /image:C:\test\offline /Add-Driver /driver:C:\test\drivers\</strong></p>
+<p><strong>Dism /image:C:\test\offline /Add-Driver /driver:C:\test\drivers\\</strong></p>
 <p><strong>Dism /image:C:\test\offline /Add-Driver /driver:C:\test\drivers /recurse</strong></p>
 <p><strong>Dism /image:C:\test\offline /Add-Driver /driver:C:\test\drivers\mydriver.inf</strong></p>
 <p><strong>Dism /image:C:\test\offline /Add-Driver /driver:C:\test\drivers\mydriver.inf /ForceUnsigned</strong></p></td>
