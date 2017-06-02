@@ -58,7 +58,7 @@ All systems should meet at least the [minimum hardware requirements](../minimum/
 <table>
 <tbody>
 <tr>
-  <th align="left" valign="top">System connection to the dock</th>
+  <td align="left" valign="top">System connection to the dock</td>
   <td>The system should include at least one USB Type-C port that supports USB Host or USB Dual Role/USB On-The-Go (OTG). All USB Type-C ports should include support for the following:
     <ul>
       <li>USB Data, with <a href="http://www.usb.org/developers/ssusb">USB 3.1 Gen 2</a> being optimal</li>
@@ -71,15 +71,15 @@ All systems should meet at least the [minimum hardware requirements](../minimum/
   </td>
 </tr>
 <tr>
-  <th align="left" valign="top">RAM</th>
+  <td align="left" valign="top">RAM</td>
   <td>The system should have at least 2 GB of RAM.</td>
 </tr>
 <tr>
-  <th align="left" valign="top">Flash storage</th>
+  <td align="left" valign="top">Flash storage</td>
   <td>The system should have at least 16 GB of nonremovable flash memory.</td>
 </tr>
 <tr>
-  <th align="left" valign="top">Audio/video latency</th>
+  <td align="left" valign="top">Audio/video latency</td>
   <td>Audio or video latency should not exceed 80 milliseconds.</td>
 </tr>
 </tbody>
@@ -92,7 +92,7 @@ The end goal of these docking recommendations is to maximize compatibility and i
 <table>
 <tbody>
 <tr>
-  <th align="left" valign="top">Dock connection to the system</th>
+  <td align="left" valign="top">Dock connection to the system</td>
   <td>We recommend that the dock connect to the system by using USB Type-C. At a minimum, the dock's USB Type-C connector should support the following features:
     <ul>
       <li>USB Data (<a href="http://www.usb.org/developers/ssusb">USB 3.1 Gen 2</a>) to enable USB-connected peripheral devices</li>
@@ -103,7 +103,7 @@ The end goal of these docking recommendations is to maximize compatibility and i
   </td>
 </tr>
 <tr>
-  <th align="left" valign="top">Dock (downstream) I/O ports</th>
+  <td align="left" valign="top">Dock (downstream) I/O ports</td>
   <td>The downstream device I/O ports between a dock and other peripheral devices should always interoperate with any system that meets the system docking requirements.
   <ul>
     <li>For peripheral device connectivity, a combination of at least three USB Type-A and/or USB Type-C 3.1 Gen 2 ports
@@ -120,7 +120,7 @@ The end goal of these docking recommendations is to maximize compatibility and i
   </td>
 </tr>
 <tr>
-  <th align="left" valign="top">Power</th>
+  <td align="left" valign="top">Power</td>
   <td>For the power input to the dock, we have the following recommendations:
     <ul>
       <li>The power input port should be a USB Type-C port.</li>
@@ -142,7 +142,7 @@ The end goal of these docking recommendations is to maximize compatibility and i
   </td>
 </tr>
 <tr>
-  <th align="left" valign="top">Power budget policy</th>
+  <td align="left" valign="top">Power budget policy</td>
   <td>A dock’s power budget is the total amount of power that the dock can provide to the connected host and connected devices. The dock can receive its power budget from a combination of internal sources and external sources (for example, a battery and a power adapter, respectively). A power budget policy is required to allocate power in a consistent manner if the total power requirements of the connected host and connected devices exceeds the dock’s power budget, such as if a 30W charger is connected to the dock that is connected to a PC that is requesting 27W, while a device is requesting 15W.
 
   <p>The following are recommendations for the power budget policy:</p>
@@ -164,21 +164,21 @@ The end goal of these docking recommendations is to maximize compatibility and i
   </td>
 </tr>
 <tr>
-  <th align="left" valign="top">Display output</th>
+  <td align="left" valign="top">Display output</td>
   <td>The connection from the dock to an external monitor should be provided by at least one digital connector that is at a minimum either HDMI 1.4 or DisplayPort 1.2 (supporting DP++). However, if the device is a docking display (that is, the dock and the monitor are in the same device), it is optional to include an additional display output to enable a multimonitor experience. The resolution supported should at a minimum be 1080p, regardless of whether the display is externally connected through an external video port or is internally connected to the display.
     <p>If you plan on including an alternate mode other than DisplayPort, review the fallback requirements in the [Overall recommendations](#overall-recommendations) section above.</p>
   </td>
 </tr>
 <tr>
-  <th align="left" valign="top">Audio output</th>
+  <td align="left" valign="top">Audio output</td>
   <td>If the dock has one or more 3.5 mm audio output jacks, a minimum of stereo outputs need to be supported at 16 bits / 44.1 kHz format. Audio support in the dock must comply with the USB Audio Device Class 2 specification and implement jack insertion detection as outlined in the specification.</td>
 </tr>
 <tr>
-  <th align="left" valign="top">Audio/video latency</th>
+  <td align="left" valign="top">Audio/video latency</td>
   <td>The audio and video latency of devices attached either through USB (or for audio through a 3.5 mm jack) should not exceed 40 milliseconds.</td>
 </tr>
 <tr>
-  <th align="left" valign="top">Touchpad (optional)</th>
+  <td align="left" valign="top">Touchpad (optional)</td>
   <td>If the dock has an embedded touchpad, the touchpad needs to be a precision touchpad (PTP). We recommend that IHVs follow the <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt604177(v=vs.85).aspx">PTP implementation guide</a> to create PTPs that are on par with traditional laptop PTPs. The <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt604198(v=vs.85).aspx">Device Integration</a>, <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt604199(v=vs.85).aspx">Experience Customization</a>, and <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt604201(v=vs.85).aspx">Module Design for HLK Requirements</a> sections in the implementation guide describe the best practices for creating a touchpad that is superior aesthetically and experience-wise.</td>
 </tr>
 </tbody>
