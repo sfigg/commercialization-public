@@ -14,12 +14,12 @@ ms.technology: windows-oem
 # Enable .NET Framework 3.5 by using Windows PowerShell
 
 
-For a Windows Server® 2012 core installation that is not connected to the Internet, you can use Windows PowerShell to add .NET Framework 3.5 and provide access to the **\\sources\\sxs** folder on the installation media. The **\\sources\\sxs** folder can be copied to network share (for example, \\\\network\\share\\sxs) to make it easily accessible to multiple computers. The target computer account DOMAIN\\SERVERNAME$ must have at least read access to the network share.
+For a Windows Server installation that is not connected to the Internet, you can use Windows PowerShell to add .NET Framework 3.5 and provide access to the **\\sources\\sxs** folder on the installation media. The **\\sources\\sxs** folder can be copied to network share (for example, \\\\network\\share\\sxs) to make it easily accessible to multiple computers. The target computer account DOMAIN\\SERVERNAME$ must have at least read access to the network share.
 
 ## <span id="Requirements"></span><span id="requirements"></span><span id="REQUIREMENTS"></span>Requirements
 
 
--   Windows Server 2012
+-   Windows Server 2012 or Windows Server 2016
 
 -   Installation media
 
@@ -32,13 +32,13 @@ For a Windows Server® 2012 core installation that is not connected to the Inte
 
 1.  Start Windows PowerShell in the Administrator Command Prompt by typing:
 
-    ``` syntax
+    ```
     powershell
     ```
 
 2.  To install .NET Framework 3.5 from installation media located on a network share, use the following command:
 
-    ``` syntax
+    ```
     Install-WindowsFeature Net-Framework-Core -source \\network\share\sxs
     ```
 
@@ -48,7 +48,7 @@ For a Windows Server® 2012 core installation that is not connected to the Inte
 
 3.  To verify installation, run the following command:
 
-    ``` syntax
+    ```
     Get-WindowsFeature
     ```
 
