@@ -8,7 +8,7 @@ ms.assetid: 1c4712cb-31ed-4e3b-9a54-a7d86b9c07ea
 ms.prod: W10
 ms.mktglfcycl: plan
 ms.sitesec: msdn
-ms.author: windows-hardware-design-content
+ms.author: joshbax
 ms.date: 05/05/2017
 ms.topic: article
 ms.prod: windows-hardware
