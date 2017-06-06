@@ -4,7 +4,7 @@ Description: Install Windows from a USB Flash Drive
 ms.assetid: b1ed80f1-cc1d-4eeb-9d5e-22c615479e1d
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Install Windows from a USB Flash Drive
-ms.author: windows-hardware-design-content
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

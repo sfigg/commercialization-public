@@ -4,7 +4,7 @@ Description: Manage the Component Store
 ms.assetid: 97e222b5-67cf-4d05-a010-de3e5518cb60
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Manage the Component Store
-ms.author: windows-hardware-design-content
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

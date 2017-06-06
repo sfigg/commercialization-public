@@ -4,7 +4,7 @@ Description: 'Returns a boolean indicating whether the phone speaker is being us
 ms.assetid: 933f0816-a094-4f7b-a26f-5d31ed97f677
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: MfgPhoneGetSpeaker function
-ms.author: windows-hardware-design-content
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

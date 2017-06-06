@@ -4,7 +4,7 @@ Description: 'Windows 10 IoT Core (IoT Core) is a version of Windows 10 that i
 ms.assetid: d67b79a7-c889-45ad-aaf2-199a347d7d64
 MSHAttr: 'PreferredLib:/library'
 title: IoT Core manufacturing
-ms.author: windows-hardware-design-content
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

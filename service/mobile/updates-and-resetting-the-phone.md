@@ -4,7 +4,7 @@ Description: Updates and resetting the device
 ms.assetid: ad197224-ed30-4483-816e-a48ec385197d
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Updates and resetting the device
-ms.author: windows-hardware-design-content
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

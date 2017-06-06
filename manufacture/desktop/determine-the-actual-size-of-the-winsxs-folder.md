@@ -4,7 +4,7 @@ Description: Determine the Actual Size of the WinSxS Folder
 ms.assetid: 059afbeb-3911-4e50-9ba5-ffd4fe6f38a4
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Determine the Actual Size of the WinSxS Folder
-ms.author: windows-hardware-design-content
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

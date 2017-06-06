@@ -4,7 +4,7 @@ Description: WlanMTERegisterCallbackHandler
 ms.assetid: 7a61e9e2-fa0c-4c01-96c2-f3720aab7cde
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: WlanMTERegisterCallbackHandler
-ms.author: windows-hardware-design-content
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

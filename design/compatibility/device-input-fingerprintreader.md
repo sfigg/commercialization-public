@@ -4,7 +4,7 @@ Description: 'General requirements for biometric fingerprint readers.'
 ms.assetid: 
 MSHAttr: 
 author: beneluxboy
-ms.author: windows-hardware-design-content
+ms.author: joshbax
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

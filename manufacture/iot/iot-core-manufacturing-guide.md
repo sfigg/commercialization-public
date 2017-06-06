@@ -4,7 +4,7 @@ Description: 'This guide walks you through creating Windows 10 IoT Core (IoT Co
 ms.assetid: 2b208536-20fc-42da-abf3-39bfb141276d
 MSHAttr: 'PreferredLib:/library'
 title: IoT Core manufacturing guide
-ms.author: windows-hardware-design-content
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

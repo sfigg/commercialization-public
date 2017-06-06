@@ -4,7 +4,7 @@ Description: 'OEM and enterprise customers using Windows 10 IoT Core Pro (IoT C
 ms.assetid: c25c6a6a-9965-40d6-b1da-725e45d2f00a
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Manage IoT Core device updates
-ms.author: windows-hardware-design-content
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

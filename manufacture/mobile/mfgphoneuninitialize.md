@@ -4,7 +4,7 @@ Description: 'Uninitializes the phone system and the internal state of the API i
 ms.assetid: 7b82c8c8-6244-4f72-ab14-390a0757f120
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: MfgPhoneUninitialize function
-ms.author: windows-hardware-design-content
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -3,7 +3,7 @@ author: themar
 Description: What's new in Windows manufacturing
 MSHAttr: 'PreferredLib:/library'
 title: What's new in Windows manufacturing
-ms.author: windows-hardware-design-content
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

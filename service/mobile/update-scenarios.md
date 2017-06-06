@@ -4,7 +4,7 @@ Description: Update scenarios
 ms.assetid: f881a58e-7539-42d8-b4f7-9ac7d52e4fee
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Update scenarios
-ms.author: windows-hardware-design-content
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

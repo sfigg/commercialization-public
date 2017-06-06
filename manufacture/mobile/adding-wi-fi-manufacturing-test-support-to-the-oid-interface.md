@@ -4,7 +4,7 @@ Description: 'Adding Wi-Fi manufacturing test support to the OID interface'
 ms.assetid: f041b6a9-8c05-487d-9dd1-e538865a9104
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Adding Wi-Fi manufacturing test support to the OID interface'
-ms.author: windows-hardware-design-content
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

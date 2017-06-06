@@ -4,7 +4,7 @@ Description: 'Deploy Windows faster on the factory floor by using the Full Flash
 ms.assetid: af2b402f-9a5c-4c6a-8852-61039e5bec2a
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Deploy Windows using Full Flash Update (FFU)'
-ms.author: windows-hardware-design-content
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

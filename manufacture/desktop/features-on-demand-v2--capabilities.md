@@ -4,7 +4,7 @@ Description: 'Features on Demand v2 (Capabilities), introduced in Windows 10, a
 ms.assetid: 6390f427-a201-487e-928f-964e7b84327c
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Features On Demand V2 (Capabilities)'
-ms.author: windows-hardware-design-content
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

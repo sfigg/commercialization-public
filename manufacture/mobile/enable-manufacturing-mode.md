@@ -4,7 +4,7 @@ Description: 'If you want to test Manufacturing Mode, you can enable it by using
 ms.assetid: a5506896-0692-4256-a307-075da141ad44
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Enable or Disable Manufacturing Mode
-ms.author: windows-hardware-design-content
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

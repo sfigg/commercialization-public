@@ -4,7 +4,7 @@ Description: Update requirements
 ms.assetid: 3f2c96f5-cc52-44a2-b61d-279b649995fc
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Update requirements
-ms.author: windows-hardware-design-content
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

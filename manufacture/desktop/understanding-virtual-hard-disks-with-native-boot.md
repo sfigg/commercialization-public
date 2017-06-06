@@ -4,7 +4,7 @@ Description: Understanding Virtual Hard Disks with Native Boot
 ms.assetid: e063e475-6f39-4ed9-9473-ea7537adc30a
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Understanding Virtual Hard Disks with Native Boot
-ms.author: windows-hardware-design-content
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

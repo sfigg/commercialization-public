@@ -4,7 +4,7 @@ Description: 'Wi-Fi manufacturing API'
 ms.assetid: 014c7111-cb2f-43a9-a0d0-4b097261493e
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Wi-Fi manufacturing API'
-ms.author: windows-hardware-design-content
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

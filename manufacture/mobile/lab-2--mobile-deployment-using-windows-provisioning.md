@@ -4,7 +4,7 @@ ms.assetid: 6e018255-b629-4d69-8b85-7a5c3ec53944
 MSHAttr: 'PreferredLib:/library'
 title: 'Part 2: Mobile deployment using Windows Provisioning'
 author: CelesteDG
-ms.author: windows-hardware-design-content
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

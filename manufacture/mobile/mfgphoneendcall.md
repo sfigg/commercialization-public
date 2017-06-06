@@ -4,7 +4,7 @@ Description: 'Ends a phone call.'
 ms.assetid: 2f6ce0fe-177b-4af5-8673-a9a4316309e4
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: MfgPhoneEndCall function
-ms.author: windows-hardware-design-content
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

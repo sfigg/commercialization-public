@@ -4,7 +4,7 @@ Description: Flash MMOS to the device
 ms.assetid: 23b741e6-ba15-4a81-a78e-9545ff62c3af
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Flash MMOS to the device
-ms.author: windows-hardware-design-content
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

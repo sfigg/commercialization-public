@@ -4,7 +4,7 @@ Description: Manufacturing test environment supported APIs
 ms.assetid: a51f7722-ccca-4571-9f07-3ff512a0ddaa
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Manufacturing test environment supported APIs
-ms.author: windows-hardware-design-content
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

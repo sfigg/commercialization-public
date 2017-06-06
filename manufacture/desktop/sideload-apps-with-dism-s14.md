@@ -4,7 +4,7 @@ Description: Sideload Apps with DISM
 ms.assetid: ce95f34a-b9a4-4130-89ed-b7a7126fe21b
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Sideload Apps with DISM
-ms.author: windows-hardware-design-content
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

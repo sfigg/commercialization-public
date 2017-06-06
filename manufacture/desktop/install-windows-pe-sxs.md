@@ -4,7 +4,7 @@ Description: Install Windows PE
 ms.assetid: e6e571df-8b4f-43f8-9a8c-cb5f25969a5d
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Install Windows PE
-ms.author: windows-hardware-design-content
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

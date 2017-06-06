@@ -4,7 +4,7 @@ Description: Battery Life
 ms.assetid: 8da66522-0ada-4e48-abd3-b70efc1f5f06
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Battery Life
-ms.author: windows-hardware-design-content
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

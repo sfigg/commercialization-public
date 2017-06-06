@@ -4,7 +4,7 @@ Description: Test Battery Life and Power Consumption
 ms.assetid: e74e5e8c-6f0b-4c4d-ba2d-65be36b88495
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Test Battery Life and Power Consumption
-ms.author: windows-hardware-design-content
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

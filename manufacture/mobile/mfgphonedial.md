@@ -4,7 +4,7 @@ Description: 'Causes the phone to dial a call.'
 ms.assetid: f01afc0d-70cf-4d13-8d99-fb27bb329376
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: MfgPhoneDial function
-ms.author: windows-hardware-design-content
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

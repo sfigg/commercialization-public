@@ -4,7 +4,7 @@ Description: Disabling the initial setup process
 ms.assetid: e0aa36a7-5524-42de-855d-1a9b7e03e250
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Disabling the initial setup process
-ms.author: windows-hardware-design-content
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

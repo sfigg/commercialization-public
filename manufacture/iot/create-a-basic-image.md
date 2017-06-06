@@ -4,7 +4,7 @@ Description: 'To get started, we''ll create a basic Windows 10 IoT Core (IoT Co
 ms.assetid: aeba79b8-d8dd-481a-a8bf-03ae28174632
 MSHAttr: 'PreferredLib:/library'
 title: 'Lab 1a: Create a basic image'
-ms.author: windows-hardware-design-content
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

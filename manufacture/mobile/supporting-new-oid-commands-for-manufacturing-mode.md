@@ -4,7 +4,7 @@ Description: Supporting new OID commands for manufacturing mode
 ms.assetid: 0ebb9581-043e-47f8-84c9-6fa97c0900cc
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Supporting new OID commands for manufacturing mode
-ms.author: windows-hardware-design-content
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

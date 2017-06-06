@@ -4,7 +4,7 @@ ms.assetid: 507fea31-f113-4cd3-84bf-1ab14898782f
 MSHAttr: 'PreferredLib:/library'
 title: Configure customization settings
 author: CelesteDG
-ms.author: windows-hardware-design-content
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

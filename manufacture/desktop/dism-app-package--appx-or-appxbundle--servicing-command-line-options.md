@@ -4,7 +4,7 @@ Description: 'DISM App Package (.appx or .appxbundle) Servicing Command-Line Opt
 ms.assetid: 3a2de7c0-d132-41ec-9603-a54e958fee2c
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'DISM App Package (.appx or .appxbundle) Servicing Command-Line Options'
-ms.author: windows-hardware-design-content
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

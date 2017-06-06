@@ -4,7 +4,7 @@ Description: Repair a Windows Image
 ms.assetid: 4ca60b08-6801-4af4-a504-3e88ec0c8fb8
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Repair a Windows Image
-ms.author: windows-hardware-design-content
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

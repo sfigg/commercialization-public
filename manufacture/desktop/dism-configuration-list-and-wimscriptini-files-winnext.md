@@ -4,7 +4,7 @@ Description: 'DISM Configuration List and WimScript.ini Files'
 ms.assetid: 8e765558-4138-4215-bf53-09e46666a718
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'DISM Configuration List and WimScript.ini Files'
-ms.author: windows-hardware-design-content
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

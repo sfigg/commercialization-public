@@ -4,7 +4,7 @@ Description: Disabling Secure Boot
 ms.assetid: 2b98718d-13ce-4a5d-bd89-d276a0dc493d
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Disabling Secure Boot
-ms.author: windows-hardware-design-content
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

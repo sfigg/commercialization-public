@@ -4,7 +4,7 @@ Description: 'You can add manufacturing profiles to your device by using a packa
 ms.assetid: 9925eedf-a49e-4545-b071-72d10925f080
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Create a custom manufacturing profile package
-ms.author: windows-hardware-design-content
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

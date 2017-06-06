@@ -4,7 +4,7 @@ Description: Update a KMDF device driver
 ms.assetid: e391e00a-b764-4d47-8e14-30b4446ddfb2
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Update a KMDF device driver
-ms.author: windows-hardware-design-content
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

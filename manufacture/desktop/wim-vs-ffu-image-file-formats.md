@@ -3,7 +3,7 @@ author: Justinha
 ms.assetid: 0fbb2a9b-d3ce-4d7f-b68a-af641ceec96d
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'WIM vs. VHD vs. FFU: comparing image file formats'
-ms.author: windows-hardware-design-content
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

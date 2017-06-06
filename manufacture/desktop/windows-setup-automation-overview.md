@@ -4,7 +4,7 @@ Description: Windows Setup Automation Overview
 ms.assetid: 240b02ae-1f06-4b92-9b46-b4dbd1089c65
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Windows Setup Automation Overview
-ms.author: windows-hardware-design-content
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

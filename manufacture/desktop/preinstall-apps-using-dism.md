@@ -4,7 +4,7 @@ Description: Preinstall Apps Using DISM
 ms.assetid: 707607d6-eb3a-4a5b-b52d-4d465d82f69d
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Preinstall Apps Using DISM
-ms.author: windows-hardware-design-content
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

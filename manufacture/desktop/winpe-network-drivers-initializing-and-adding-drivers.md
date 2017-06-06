@@ -4,7 +4,7 @@ Description: 'WinPE Network Drivers: Initializing and adding drivers'
 ms.assetid: 36eba03c-ba15-4b34-b1cb-fd83cad08d63
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'WinPE Network Drivers: Initializing and adding drivers'
-ms.author: windows-hardware-design-content
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

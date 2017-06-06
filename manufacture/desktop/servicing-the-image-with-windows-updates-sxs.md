@@ -4,7 +4,7 @@ Description: 'Add updates, and upgrade the edition.'
 ms.assetid: 9a8f525c-bb8f-492c-a555-0b512e44bcd1
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Lab 5: Add updates and upgrade the edition'
-ms.author: windows-hardware-design-content
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

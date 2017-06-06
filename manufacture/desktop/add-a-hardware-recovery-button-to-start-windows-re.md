@@ -4,7 +4,7 @@ Description: 'On UEFI-based computers, you can configure a hardware recovery but
 ms.assetid: d7edf215-ced0-4052-a442-08a6c19e6078
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Add a hardware recovery button to start Windows RE
-ms.author: windows-hardware-design-content
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

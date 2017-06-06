@@ -4,7 +4,7 @@ Description: 'The Windows 10 IoT Core ADK Add-Ons include tools to help you cus
 ms.assetid: 26cfbad0-9528-4f89-a174-f198ece325d4
 MSHAttr: 'PreferredLib:/library'
 title: 'Windows ADK IoT Core Add-ons: contents'
-ms.author: windows-hardware-design-content
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -4,7 +4,7 @@ Description: 'Provides information about the status of the call.'
 ms.assetid: dcd0fe41-15bf-4615-a9ed-aaf15dde5078
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'MFGPHONE\_CALLSTATUS enumeration'
-ms.author: windows-hardware-design-content
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

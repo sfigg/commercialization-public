@@ -4,7 +4,7 @@ Description: 'WinPE: Optimize and shrink the image'
 ms.assetid: 5d5c13e8-8754-4fff-afd1-dcc3fb757bb9
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'WinPE: Optimize and shrink the image'
-ms.author: windows-hardware-design-content
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

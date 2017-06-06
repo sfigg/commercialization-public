@@ -4,7 +4,7 @@ Description: 'This function supplies a boot mode and optional profile name to th
 ms.assetid: b4cc9267-0237-41eb-bce3-ced8247c42b5
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'EFI\_BOOT\_MODE\_MGMT\_PROTOCOL.SetBootModeInfo'
-ms.author: windows-hardware-design-content
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

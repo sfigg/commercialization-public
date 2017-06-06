@@ -4,7 +4,7 @@ Description: 'Default time zones by region in Windows 10. When the first user l
 ms.assetid: 499b2fe3-ae37-4ae1-85aa-1bc30716f043
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Default Time Zones
-ms.author: windows-hardware-design-content
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

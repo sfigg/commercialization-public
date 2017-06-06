@@ -2,7 +2,7 @@
 title: What's new in Windows 10
 description: New features for Windows 10.
 ms.assetid: 1E8F0E54-1E5B-495B-848D-260620C7DF4F
-ms.author: windows-hardware-design-content
+ms.author: alhopper
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
