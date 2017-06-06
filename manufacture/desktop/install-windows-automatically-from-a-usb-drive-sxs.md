@@ -4,7 +4,7 @@ Description: 'Lab 1: Customize and install Windows using the Windows Imaging and
 ms.assetid: 97f2cc2b-ae4b-4117-a73b-42e508fe7a03
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Lab 1: Customize and install Windows using the Windows Imaging and Configuration Designer (ICD)'
-ms.author: windows-hardware-design-content
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

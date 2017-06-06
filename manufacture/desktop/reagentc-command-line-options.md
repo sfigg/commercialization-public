@@ -4,7 +4,7 @@ Description: 'REAgentC command-line options'
 ms.assetid: da498872-1c26-4cb8-a5da-80a0d45200f3
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'REAgentC command-line options'
-ms.author: windows-hardware-design-content
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

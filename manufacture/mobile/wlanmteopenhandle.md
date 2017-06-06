@@ -4,7 +4,7 @@ Description: WlanMTEOpenHandle
 ms.assetid: 82017f67-a089-4c99-af7e-f10735db60c3
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: WlanMTEOpenHandle
-ms.author: windows-hardware-design-content
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -4,7 +4,7 @@ Description: 'This document lists the basic validation scenarios that are requir
 ms.assetid: 42e7c93e-3af3-496a-8fdf-ac97b4e85970
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Validating Windows UEFI Firmware Update Platform Functionality
-ms.author: windows-hardware-design-content
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

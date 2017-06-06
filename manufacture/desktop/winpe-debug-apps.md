@@ -4,7 +4,7 @@ Description: 'WinPE: Debug Apps'
 ms.assetid: 30fe59bc-f169-4534-b5a5-dbe58a10cb83
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'WinPE: Debug Apps'
-ms.author: windows-hardware-design-content
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

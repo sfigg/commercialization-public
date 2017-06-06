@@ -4,7 +4,7 @@ ms.assetid: 40d64242-b299-4cc5-ac6d-6b154c90d8b2
 MSHAttr: 'PreferredLib:/library'
 title: Flash an image to a mobile device
 author: CelesteDG
-ms.author: windows-hardware-design-content
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -4,7 +4,7 @@ Description: Automate Windows Setup
 ms.assetid: 882a3774-d0c3-405f-af31-2b9a5d1458d5
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Automate Windows Setup
-ms.author: windows-hardware-design-content
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

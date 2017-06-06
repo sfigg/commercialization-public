@@ -4,7 +4,7 @@ Description: 'Use keyboard identifiers and Input Method Editors (IMEs) identify 
 ms.assetid: 8a5739fa-36a6-4b21-8cdb-5d18843633a2
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Keyboard Identifiers and Input Method Editors for Windows
-ms.author: windows-hardware-design-content
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

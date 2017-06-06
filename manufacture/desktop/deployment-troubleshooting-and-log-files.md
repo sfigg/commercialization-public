@@ -4,7 +4,7 @@ Description: Deployment Troubleshooting and Log Files
 ms.assetid: 6dcada17-852e-4a2a-bc22-ebf3504b9ccc
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Deployment Troubleshooting and Log Files
-ms.author: windows-hardware-design-content
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -4,7 +4,7 @@ Description: 'Download WinPE (Windows PE)'
 ms.assetid: e1b5bcac-761f-4efb-9288-a20da1086446
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Download WinPE (Windows PE)'
-ms.author: windows-hardware-design-content
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

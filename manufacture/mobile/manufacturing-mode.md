@@ -4,7 +4,7 @@ Description: 'Introduced in Windows 10 Mobile, manufacturing mode is a mode of 
 ms.assetid: 9c5831f5-a200-436c-97cc-8bd92b30cb3e
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Manufacturing Mode
-ms.author: windows-hardware-design-content
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

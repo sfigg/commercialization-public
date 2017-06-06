@@ -4,7 +4,7 @@ Description: 'Defines the possible boot modes that the operating system can use 
 ms.assetid: cb78662f-8ce0-4adb-97ad-e8520c8513fd
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'EFI\_BOOT\_MODE\_INFO enumeration'
-ms.author: windows-hardware-design-content
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

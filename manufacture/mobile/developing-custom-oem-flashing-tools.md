@@ -4,7 +4,7 @@ Description: Developing custom OEM flashing tools
 ms.assetid: 121f6c72-5d87-4391-9b40-dbd89e57a826
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Developing custom OEM flashing tools
-ms.author: windows-hardware-design-content
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

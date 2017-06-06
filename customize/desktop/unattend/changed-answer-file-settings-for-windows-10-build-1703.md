@@ -1,7 +1,7 @@
 ---
 title: Changed answer file settings for Windows 10 for desktop editions, build 1703
 description: This topic describes Windows 10, version 1703 answer-file settings that have changed since Windows 10 for desktop editions (Home, Pro, Enterprise, and Education), Build 1607.
-ms.author: windows-hardware-design-content
+ms.author: alhopper
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

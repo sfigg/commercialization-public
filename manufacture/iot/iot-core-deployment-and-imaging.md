@@ -4,7 +4,7 @@ Description: 'Windows 10 IoT Core (IoT Core) brings the power of Microsoft Win
 ms.assetid: 800596ab-ce50-4bc0-921a-280ed63a2d75
 MSHAttr: 'PreferredLib:/library'
 title: IoT Core deployment and imaging
-ms.author: windows-hardware-design-content
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

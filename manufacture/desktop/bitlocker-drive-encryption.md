@@ -4,7 +4,7 @@ Description: BitLocker Drive Encryption
 ms.assetid: 47d6aadf-0496-4a8a-b0a5-dfb6fa9f5748
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: BitLocker Drive Encryption
-ms.author: windows-hardware-design-content
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

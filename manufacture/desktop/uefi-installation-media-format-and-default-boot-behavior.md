@@ -4,7 +4,7 @@ Description: UEFI Installation Media Format and default boot behavior
 ms.assetid: 983e25d4-ce72-463e-ad59-02467f19f4a4
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: UEFI Installation Media Format and default boot behavior
-ms.author: windows-hardware-design-content
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -4,7 +4,7 @@ Description: WlanMTEQuerySelfTestResult
 ms.assetid: 7c728c46-7adb-4b1c-8b0e-85eb58ddd026
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: WlanMTEQuerySelfTestResult
-ms.author: windows-hardware-design-content
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

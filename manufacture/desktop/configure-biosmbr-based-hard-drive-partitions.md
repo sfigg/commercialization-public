@@ -4,7 +4,7 @@ Description: 'BIOS/MBR-based hard drive partitions'
 ms.assetid: 653e0c30-c90d-4d6b-ac77-6489501bad36
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'BIOS/MBR-based hard drive partitions'
-ms.author: windows-hardware-design-content
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

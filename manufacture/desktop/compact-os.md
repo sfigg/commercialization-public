@@ -4,7 +4,7 @@ Description: 'Windows 10 includes tools to help you use less drive space.'
 ms.assetid: f58ee9cf-0dd1-4c46-9b1f-d16891247f2f
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Compact OS, single-instancing, and image optimization'
-ms.author: windows-hardware-design-content
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

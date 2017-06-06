@@ -3,7 +3,7 @@ author: cpubcomm-op-feedback
 Description: 'Launch the MDM enrollment app in Windows'
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Launch the MDM enrollment app in Windows'
-ms.author: windows-hardware-design-content
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -4,7 +4,7 @@ Description: 'What''s New in DISM'
 ms.assetid: f1b463c0-96b5-4ad2-afac-53f9baf475a3
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'What''s New in DISM'
-ms.author: windows-hardware-design-content
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

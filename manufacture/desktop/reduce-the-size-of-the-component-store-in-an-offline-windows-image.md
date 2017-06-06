@@ -4,7 +4,7 @@ Description: Reduce the Size of the Component Store in an Offline Windows Image
 ms.assetid: 2cdff215-30b9-4360-9e2c-cc2c3d695608
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Reduce the Size of the Component Store in an Offline Windows Image
-ms.author: windows-hardware-design-content
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

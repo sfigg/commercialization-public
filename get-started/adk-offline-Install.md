@@ -3,7 +3,7 @@ author: themar
 Description: Instructions on how to build an offline installer for the Windows ADK
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Install the ADK offline
-ms.author: windows-hardware-design-content
+ms.author: alhopper
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

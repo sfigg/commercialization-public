@@ -4,7 +4,7 @@ Description: Clean Up the WinSxS Folder
 ms.assetid: 67fe462d-cda1-4f2e-9652-62c374a6be97
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Clean Up the WinSxS Folder
-ms.author: windows-hardware-design-content
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

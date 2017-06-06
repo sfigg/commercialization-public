@@ -4,7 +4,7 @@ Description: Supporting updated OID behavior in manufacturing mode
 ms.assetid: 1ae614a7-fbf9-4c3b-834e-d62d7f7ab352
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Supporting updated OID behavior in manufacturing mode
-ms.author: windows-hardware-design-content
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

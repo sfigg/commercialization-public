@@ -4,7 +4,7 @@ Description: BCD System Store Settings for UEFI
 ms.assetid: bfafe378-7ac3-453e-99ca-e5fde83dee2f
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: BCD System Store Settings for UEFI
-ms.author: windows-hardware-design-content
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

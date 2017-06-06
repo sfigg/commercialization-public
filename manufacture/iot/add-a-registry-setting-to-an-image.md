@@ -4,7 +4,7 @@ Description: 'We''ll create some test files and registry keys to the image, agai
 ms.assetid: 7ca2b835-4d36-43d9-b46f-d5d5d8410335
 MSHAttr: 'PreferredLib:/library'
 title: 'Lab 1c: Add a file and a registry setting to an image'
-ms.author: windows-hardware-design-content
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

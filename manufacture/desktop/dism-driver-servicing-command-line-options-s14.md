@@ -4,7 +4,7 @@ Description: 'DISM Driver Servicing (.inf) Command-Line Options'
 ms.assetid: 39beacf3-7982-477c-93f6-4c6883efd69e
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'DISM Driver Servicing (.inf) Command-Line Options'
-ms.author: windows-hardware-design-content
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

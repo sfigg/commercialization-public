@@ -4,7 +4,7 @@ Description: 'Lab 2, Classic-style deployment, uses command line tools in the Wi
 ms.assetid: 31ec67f4-8a6b-4bc3-a8b8-12e6c537d6a6
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Lab 2: Classic-style imaging and deployment'
-ms.author: windows-hardware-design-content
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

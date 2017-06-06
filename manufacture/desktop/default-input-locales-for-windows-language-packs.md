@@ -4,7 +4,7 @@ Description: 'Input profiles (or input locales) describe the language of the inp
 ms.assetid: 0bae00b5-dfcb-472e-a271-07ef62ad5fc5
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Default Input Profiles (Input Locales) in Windows'
-ms.author: windows-hardware-design-content
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

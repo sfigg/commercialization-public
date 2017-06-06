@@ -4,7 +4,7 @@ Description: 'Provides information about the state of the SIM.'
 ms.assetid: 8533be42-70de-433c-89ac-2c623d9b4397
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'MFGPHONE\_SIMSTATE enumeration'
-ms.author: windows-hardware-design-content
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

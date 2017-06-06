@@ -4,7 +4,7 @@ Description: 'We''ll create a provisioning package that contains some sample Wi-
 ms.assetid: d9a50f87-e8c0-48da-89e7-0cdd542ce053
 MSHAttr: 'PreferredLib:/library'
 title: 'Lab 1d: Add networking and other provisioning package settings to an image'
-ms.author: windows-hardware-design-content
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

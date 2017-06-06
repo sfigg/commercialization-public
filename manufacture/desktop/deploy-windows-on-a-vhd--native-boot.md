@@ -4,7 +4,7 @@ Description: 'Deploy Windows on a VHD (Native Boot)'
 ms.assetid: 0802bca0-646e-4453-b78c-6257f1ed7e80
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Deploy Windows on a VHD (Native Boot)'
-ms.author: windows-hardware-design-content
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

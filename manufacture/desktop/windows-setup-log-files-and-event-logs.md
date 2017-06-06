@@ -4,7 +4,7 @@ Description: Windows Setup Log Files and Event Logs
 ms.assetid: f3f32c6c-c1f9-4b85-ba0f-1e2a0b07c50f
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Windows Setup Log Files and Event Logs
-ms.author: windows-hardware-design-content
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

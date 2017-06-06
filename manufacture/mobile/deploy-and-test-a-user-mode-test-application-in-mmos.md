@@ -4,7 +4,7 @@ Description: 'Deploy and test a user-mode test application in MMOS'
 ms.assetid: f8a7c14f-66b6-4023-86cb-c10bc3f52734
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Deploy and test a user-mode test application in MMOS'
-ms.author: windows-hardware-design-content
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

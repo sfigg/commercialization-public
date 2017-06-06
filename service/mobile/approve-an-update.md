@@ -4,7 +4,7 @@ Description: Approve an update
 ms.assetid: 766c5961-4291-4547-a3a4-8ce98d3525e5
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Approve an update
-ms.author: windows-hardware-design-content
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

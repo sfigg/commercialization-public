@@ -4,7 +4,7 @@ Description: Managing Battery Life and Power Consumption Overview
 ms.assetid: 9e5f962a-7647-431f-b10e-98c7589ec388
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Managing Battery Life and Power Consumption Overview
-ms.author: windows-hardware-design-content
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

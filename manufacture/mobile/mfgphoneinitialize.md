@@ -4,7 +4,7 @@ Description: 'Initializes the phone system and the internal state of the API imp
 ms.assetid: b9a9f95e-32ca-49fe-8f8c-9bf00d899edf
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: MfgPhoneInitialize function
-ms.author: windows-hardware-design-content
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

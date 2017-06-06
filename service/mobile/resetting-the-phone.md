@@ -4,7 +4,7 @@ Description: 'Resetting the device addresses a number of key scenarios: A user m
 ms.assetid: 2db677f1-edf6-421d-8482-770ee5f16140
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Resetting a mobile device
-ms.author: windows-hardware-design-content
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

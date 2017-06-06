@@ -4,7 +4,7 @@ Description: Configure a Trusted Image Identifier for Windows Defender
 ms.assetid: b55f681f-94d7-4800-a927-ec186dc046e2
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Configure a Trusted Image Identifier for Windows Defender
-ms.author: windows-hardware-design-content
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

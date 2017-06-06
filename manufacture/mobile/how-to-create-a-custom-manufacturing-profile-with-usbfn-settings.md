@@ -4,7 +4,7 @@ Description: 'You can also specify custom USBFN settings in a manufacturing prof
 ms.assetid: 0b95ffc6-f3c4-4b22-a48f-513466c36eac
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Create a custom manufacturing profile package with USBFN settings
-ms.author: windows-hardware-design-content
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -4,7 +4,7 @@ Description: 'Microsoft will provide update packages to Windows 10 that need to
 ms.assetid: 3273a638-d635-45e8-b418-ee9c5b06333e
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Add updates to customized Windows images
-ms.author: windows-hardware-design-content
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

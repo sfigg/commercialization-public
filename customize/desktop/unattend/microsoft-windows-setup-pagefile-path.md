@@ -8,7 +8,7 @@ ms.assetid: e03978f5-a516-4fb0-b501-df2f5c30f345
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
-ms.author: windows-hardware-design-content
+ms.author: alhopper
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

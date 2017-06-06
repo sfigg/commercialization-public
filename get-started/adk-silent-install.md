@@ -3,7 +3,7 @@ author: themar
 Description: Instructions on how to install the ADK silently
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Windows ADK silent install
-ms.author: windows-hardware-design-content
+ms.author: alhopper
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
