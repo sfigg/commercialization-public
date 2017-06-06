@@ -4,7 +4,7 @@ Description: Reporting operating mode capabilities
 ms.assetid: 1beda5a7-63d7-4519-955c-cc240733fc49
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Reporting operating mode capabilities
-ms.author: windows-hardware-design-content
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

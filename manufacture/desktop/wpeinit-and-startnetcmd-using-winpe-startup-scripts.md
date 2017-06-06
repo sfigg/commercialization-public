@@ -4,7 +4,7 @@ Description: 'Wpeinit and Startnet.cmd: Using WinPE Startup Scripts'
 ms.assetid: d43621bb-b9ab-4e19-8fb4-8d05d5ee3d07
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Wpeinit and Startnet.cmd: Using WinPE Startup Scripts'
-ms.author: windows-hardware-design-content
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

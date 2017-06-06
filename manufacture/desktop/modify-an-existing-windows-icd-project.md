@@ -4,7 +4,7 @@ Description: 'You can typically go back into Windows Imaging and Configuration D
 ms.assetid: 88b2c902-4bd2-4d09-814b-be86c75c8085
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Lab 1c: Modify an existing Windows ICD project'
-ms.author: windows-hardware-design-content
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

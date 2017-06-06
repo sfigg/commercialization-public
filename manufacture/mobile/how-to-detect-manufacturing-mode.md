@@ -4,7 +4,7 @@ Description: 'You can determine whether the device is in Manufacturing Mode or n
 ms.assetid: fc888a9a-a004-4689-9972-a40b4d5ba50c
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Detect Manufacturing Mode
-ms.author: windows-hardware-design-content
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

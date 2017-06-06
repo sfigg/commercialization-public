@@ -4,7 +4,7 @@ Description: Determine if MMOS is running
 ms.assetid: 10069416-7093-47b1-a553-f0b8ef4b7c76
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Determine if MMOS is running
-ms.author: windows-hardware-design-content
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

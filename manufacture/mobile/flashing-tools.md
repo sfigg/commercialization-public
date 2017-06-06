@@ -4,7 +4,7 @@ Description: Flashing tools
 ms.assetid: ac04af30-84ef-4d09-9c6f-5b9c01f9a2a0
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Flashing tools
-ms.author: windows-hardware-design-content
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

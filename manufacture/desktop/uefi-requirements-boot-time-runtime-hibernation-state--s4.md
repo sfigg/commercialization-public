@@ -4,7 +4,7 @@ Description: 'UEFI Requirements: Boot time, Runtime, Hibernation State (S4)'
 ms.assetid: 8fad2f32-6ff5-49db-9d34-041485a34a4c
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'UEFI Requirements: Boot time, Runtime, Hibernation State (S4)'
-ms.author: windows-hardware-design-content
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

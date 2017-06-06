@@ -4,7 +4,7 @@ Description: 'To update your devices, you''ll submit an update to Microsoft.'
 ms.assetid: 529f841c-abd2-4b33-93c6-509e3dfcbff7
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Mobile update
-ms.author: windows-hardware-design-content
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

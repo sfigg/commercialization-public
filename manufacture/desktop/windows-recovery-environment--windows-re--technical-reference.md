@@ -4,7 +4,7 @@ Description: 'Windows Recovery Environment (Windows RE)'
 ms.assetid: af78b72b-9f45-4ac3-882b-411a2bafbeed
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Windows Recovery Environment (Windows RE)'
-ms.author: windows-hardware-design-content
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -4,7 +4,7 @@ Description: 'We''re now going to take an app (like the sample Hello, World! app
 ms.assetid: a801d768-0397-4f85-b68f-bd85ddcc3f1f
 MSHAttr: 'PreferredLib:/library'
 title: 'Lab 1b: Add an app to your image'
-ms.author: windows-hardware-design-content
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

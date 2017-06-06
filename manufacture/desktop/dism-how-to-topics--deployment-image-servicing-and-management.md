@@ -4,7 +4,7 @@ Description: 'DISM How-to Topics (Deployment Image Servicing and Management)'
 ms.assetid: 49c00b5d-d7bd-466f-8c66-9022bfad02db
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'DISM How-to Topics (Deployment Image Servicing and Management)'
-ms.author: windows-hardware-design-content
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -4,7 +4,7 @@ Description: 'When you boot into Manufacturing Mode, can you skip OOBE and prein
 ms.assetid: e448479f-6831-40b5-bb19-7ad4c22cdf6a
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Create a full operating system manufacturing profile
-ms.author: windows-hardware-design-content
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

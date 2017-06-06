@@ -4,7 +4,7 @@ Description: UEFI Firmware
 ms.assetid: 63cab521-9f35-4428-85b6-5561889243fd
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: UEFI Firmware
-ms.author: windows-hardware-design-content
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

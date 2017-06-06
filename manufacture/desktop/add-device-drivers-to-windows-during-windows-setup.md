@@ -4,7 +4,7 @@ Description: Add Device Drivers to Windows During Windows Setup
 ms.assetid: adb22778-06a2-493a-81de-3a1306a0b208
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Add Device Drivers to Windows During Windows Setup
-ms.author: windows-hardware-design-content
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

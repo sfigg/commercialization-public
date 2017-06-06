@@ -4,7 +4,7 @@ Description: 'Enable and Disable the Built-in Administrator Account'
 ms.assetid: d6011433-badb-4707-a5b9-9325f33b6a95
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Enable and Disable the Built-in Administrator Account'
-ms.author: windows-hardware-design-content
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -3,7 +3,7 @@ author: KPacquer
 Description: 'Lab 12: Update the recovery image'
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Lab 12: Update the recovery image'
-ms.author: windows-hardware-design-content
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

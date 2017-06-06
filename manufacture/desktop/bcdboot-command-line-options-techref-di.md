@@ -4,7 +4,7 @@ Description: 'BCDBoot Command-Line Options'
 ms.assetid: 294a0181-f3e9-42c1-8e7f-5a5c28323e25
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'BCDBoot Command-Line Options'
-ms.author: windows-hardware-design-content
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

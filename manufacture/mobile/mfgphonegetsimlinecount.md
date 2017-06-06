@@ -4,7 +4,7 @@ Description: 'Gets the number of currently detected SIM slots.'
 ms.assetid: 432b3748-4444-41b8-ac0b-f227d0f36aef
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: MfgPhoneGetSimLineCount function
-ms.author: windows-hardware-design-content
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

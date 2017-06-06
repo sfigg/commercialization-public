@@ -4,7 +4,7 @@ Description: 'Drvload Command-Line Options'
 ms.assetid: d4e6f566-2763-4774-876e-24357f223a52
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Drvload Command-Line Options'
-ms.author: windows-hardware-design-content
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

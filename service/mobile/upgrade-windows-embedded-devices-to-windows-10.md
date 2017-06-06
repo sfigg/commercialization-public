@@ -4,7 +4,7 @@ Description: 'This topic describes the supported installation paths for upgradin
 ms.assetid: f008eb17-a950-446d-8b90-9043adfdf3c6
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Upgrade Windows Embedded devices to Windows 10
-ms.author: windows-hardware-design-content
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

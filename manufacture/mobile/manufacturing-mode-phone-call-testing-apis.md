@@ -4,7 +4,7 @@ Description: 'These APIs are used by phone manufacturers to test phone call func
 ms.assetid: 3a1bdf3e-e95d-4277-bad7-1063a138f473
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Manufacturing Mode Phone Call Testing APIs
-ms.author: windows-hardware-design-content
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

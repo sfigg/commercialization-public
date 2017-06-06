@@ -4,7 +4,7 @@ Description: 'Where is WinPE.wim?'
 ms.assetid: 21a05e67-84d6-417e-a789-5e1aef5914c9
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Where is WinPE.wim?'
-ms.author: windows-hardware-design-content
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

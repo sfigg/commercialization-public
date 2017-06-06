@@ -4,7 +4,7 @@ Description: 'Repair the boot menu on a dual-boot PC'
 ms.assetid: 166c9499-b9b2-48bb-9ff6-d91dc0e497a3
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Repair the boot menu on a dual-boot PC'
-ms.author: windows-hardware-design-content
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -4,7 +4,7 @@ Description: 'Windows 10 IoT Core (IoT Core) devices will automatically receive
 ms.assetid: d8298c99-6fa7-4825-a0b8-181b99e40975
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: IoT Core Update
-ms.author: windows-hardware-design-content
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

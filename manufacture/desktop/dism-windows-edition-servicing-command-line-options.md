@@ -4,7 +4,7 @@ Description: 'DISM Windows Edition-Servicing Command-Line Options'
 ms.assetid: e7faf4eb-7de8-49f7-9d42-caededf1b289
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'DISM Windows Edition-Servicing Command-Line Options'
-ms.author: windows-hardware-design-content
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

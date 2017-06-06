@@ -4,7 +4,7 @@ Description: Microsoft Manufacturing OS
 ms.assetid: 8a46f749-6405-40e8-b3a5-32955e1c0070
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Microsoft Manufacturing OS
-ms.author: windows-hardware-design-content
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

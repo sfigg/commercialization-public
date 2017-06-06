@@ -4,7 +4,7 @@ Description: WlanMTEDeRegisterCallbackHandler
 ms.assetid: 0c787146-75f6-4dbe-8e7e-b4c7834142a1
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: WlanMTEDeRegisterCallbackHandler
-ms.author: windows-hardware-design-content
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

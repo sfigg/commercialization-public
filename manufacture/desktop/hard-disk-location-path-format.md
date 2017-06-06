@@ -4,7 +4,7 @@ Description: Hard Disk Location Path Format
 ms.assetid: 9f9d96ae-4fec-487d-95d2-ffd09b7d9fd1
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Hard Disk Location Path Format
-ms.author: windows-hardware-design-content
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

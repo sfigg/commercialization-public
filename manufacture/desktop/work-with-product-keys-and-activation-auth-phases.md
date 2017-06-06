@@ -4,7 +4,7 @@ Description: Work with Product Keys and Activation
 ms.assetid: 923c0cd1-527c-4610-b979-e068fcc0ef99
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Work with Product Keys and Activation
-ms.author: windows-hardware-design-content
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

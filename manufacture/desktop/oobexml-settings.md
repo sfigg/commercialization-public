@@ -4,7 +4,7 @@ Description: 'Oobe.xml Settings'
 ms.assetid: 2c8ecddc-7099-451e-a069-642f654d4fbf
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Oobe.xml Settings'
-ms.author: windows-hardware-design-content
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

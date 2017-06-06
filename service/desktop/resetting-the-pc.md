@@ -3,7 +3,7 @@ author: kpacquer
 Description: 'Reset the PC to repair the device or transfer it to another owner.'
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Resetting a desktop PC
-ms.author: windows-hardware-design-content
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -4,7 +4,7 @@ Description: 'Provides information about the type of line system.'
 ms.assetid: 03dd827c-00f4-4288-b79d-7cfb3d4feab0
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'MFGPHONE\_LINESYSTEMTYPE enumeration'
-ms.author: windows-hardware-design-content
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

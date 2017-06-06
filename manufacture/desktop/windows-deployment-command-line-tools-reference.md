@@ -4,7 +4,7 @@ Description: 'Windows Deployment Command-Line Tools Reference'
 ms.assetid: 503d5760-44d8-45d8-bc05-c8fc157e6269
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Windows Deployment Command-Line Tools Reference'
-ms.author: windows-hardware-design-content
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

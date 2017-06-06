@@ -4,7 +4,7 @@ ms.assetid: 941023d3-14d5-415f-817b-a48ac2a4ec87
 MSHAttr: 'PreferredLib:/library'
 title: Use the Windows ICD CLI to customize and build a mobile image
 author: CelesteDG
-ms.author: windows-hardware-design-content
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

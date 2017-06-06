@@ -4,7 +4,7 @@ Description: 'What''s New in Windows PE'
 ms.assetid: db434eb7-ef16-4edc-af6a-f0057c86a56e
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'What''s New in Windows PE'
-ms.author: windows-hardware-design-content
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -4,7 +4,7 @@ Description: Get the tools needed to customize Windows
 ms.assetid: a52b4efe-ead0-4319-ae19-799d4e9d9e7b
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Get the tools needed to customize Windows
-ms.author: windows-hardware-design-content
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

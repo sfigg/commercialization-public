@@ -4,7 +4,7 @@ Description: 'The following features can be used with devices running in Manufac
 ms.assetid: 6f675ace-3f76-4421-8109-16fdf9e469fd
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Optional features for Manufacturing Mode
-ms.author: windows-hardware-design-content
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

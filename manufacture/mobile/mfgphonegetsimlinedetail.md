@@ -4,7 +4,7 @@ Description: 'Retrieves a struct that contains the current details for a given S
 ms.assetid: 6ff31b2e-4a76-48cc-aefd-f015eb8cdf4a
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: MfgPhoneGetSimLineDetail function
-ms.author: windows-hardware-design-content
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -4,7 +4,7 @@ Description: 'What is DISM?'
 ms.assetid: ad08e68c-616f-404a-bfc6-c7bf1a4666f0
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'What is DISM?'
-ms.author: windows-hardware-design-content
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

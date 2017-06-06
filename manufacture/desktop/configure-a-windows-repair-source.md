@@ -4,7 +4,7 @@ Description: Configure a Windows Repair Source
 ms.assetid: 00c879d8-5c56-4e96-9c44-df0c2fc4371d
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Configure a Windows Repair Source
-ms.author: windows-hardware-design-content
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

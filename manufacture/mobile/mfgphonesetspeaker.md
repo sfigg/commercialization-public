@@ -4,7 +4,7 @@ Description: 'Sets a value indicating whether the phone speaker should be used, 
 ms.assetid: ae0382d0-01fc-40eb-ae3d-72242ac4aede
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: MfgPhoneSetSpeaker function
-ms.author: windows-hardware-design-content
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
