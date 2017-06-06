@@ -8,7 +8,7 @@ ms.assetid: 8bab6760-0aa9-403b-b552-eabe21f780dd
 ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
-ms.author: windows-hardware-design-content
+ms.author: joshbax
 ms.date: 05/05/2017
 ms.topic: article
 ms.prod: windows-hardware
