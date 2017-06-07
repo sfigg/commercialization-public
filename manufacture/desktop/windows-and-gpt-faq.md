@@ -257,7 +257,7 @@ The ESP partition isn't hidden, but also doesn't have an assigned drive letter. 
 
 ### Will end-users see the MSR and OEM-specific partitions?
 
-The user will not see these partitions exposed in Windows Explorer, nor is any recognized file system exposed to legacy programs such as Context Indexing. The OEM-specific and other unrecognized partitions will be visible only in the Disk Management MMC snap-in since they will not have a recognizable file system.
+Users will not see these partitions exposed in Windows Explorer, nor is any recognized file system exposed to legacy programs such as Context Indexing. The OEM-specific and other unrecognized partitions will be visible only in the Disk Management MMC snap-in since they will not have a recognizable file system.
 
 ### What partitions are mounted by default by Windows?
 
