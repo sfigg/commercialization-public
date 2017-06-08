@@ -189,7 +189,7 @@ This step is required when you're capturing images to apply to other PCs.
 2.  Cleanup the Windows files:
 
     ``` syntax
-    md temp
+    md c:\temp
 
     DISM /Cleanup-Image /Image=C:\ /StartComponentCleanup /ResetBase /ScratchDir:C:\Temp
     ```
