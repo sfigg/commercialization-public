@@ -51,6 +51,10 @@ The guidance provided here ensures compliance with Hardware Lab Kit (HLK) testin
 <td><p>This section lists the topics that provide details about the active pen tests in the Windows Hardware Lab Kit (HLK) for Windows 10.</p></td>
 </tr>
 <tr class="even">
+<td><p>[Simultaneous Pen and Touch Validation](simultaneous-pen-and-touch-validation.md)</p></td>
+<td><p>This section provides details on validating simultaneous pen and touch reporting for Windows 10</p></td>
+</tr>
+<tr class="odd">
 <td><p>[Appendix](appendix.md)</p></td>
 <td><p>The appendix for the Windows Pen Validation Guide, provides information about manually running the Windows Hardware Lab Kit (HLK) tests, some points to note (following our latest content release), and answers to some frequently asked questions.</p></td>
 </tr>
