@@ -291,6 +291,7 @@
 ##### [Device Bus Connectivity](component-guidelines/windows-precision-touchpad-device-bus-connectivity.md)
 ##### [Power Management](component-guidelines/windows-precision-touchpad-power-management.md)
 ##### [Protocol Implementation](component-guidelines/windows-precision-touchpad-protocol-implementation.md)
+##### [Tuning Guidelines](component-guidelines/touchpad-tuning-guidelines.md)
 ###### [Required HID Descriptors](component-guidelines/windows-precision-touchpad-required-hid-descriptors.md)
 ###### [Required HID Top-Level Collections](component-guidelines/windows-precision-touchpad-required-hid-top-level-collections.md)
 ###### [Sample Report Descriptors](component-guidelines/windows-precision-touchpad-sample-report-descriptors.md)
