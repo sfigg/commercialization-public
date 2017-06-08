@@ -45,7 +45,7 @@ Registry keys to control these values are shown in the following table.
 
 ## Super-curtain region sizing
 
-![An image showing the restricted sensitivity zone on a touchpad](../images/restricted-sensitivity.png)
+![An image showing the restricted sensitivity zone on a touchpad](../images/restricted-sensitivity-zone.png)
 
 The restricted sensitivity zone is the lowest sensitivity region of the touchpad, and is designed for the region of the touchpad where users would not leave fingers during intentional use. Note these are very small by default and should only be widened for very large devices. 
 
