@@ -77,7 +77,7 @@ For Windows 10, language packs and LIPs are also available to download from Win
 
     ``` syntax
     Dism /Image:C:\mount\windows /Gen-LangIni 
-           /Distribution:C:\images\Win10\sources
+           /Distribution:C:\images\Win10\
     ```
 
     The lang.ini file in C:\\images\\Win10\\sources should look similar to the following:
