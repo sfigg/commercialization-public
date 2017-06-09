@@ -13,9 +13,9 @@ In previous versions of Windows, touch contacts were supressed when pen input wa
 
 Currently, the Windows Hardware Compatibility Program does not contain requirements for simultaneous pen and touch performance. Microsoft instead provides the following recommendations for simultaneous pen and touch performance.
 
-* All pen requirements can be met when 5 simultaneous touch contacts are present on the screen.
+* A device should continue to meet all Windows 10 Pen compatibility requirements when five simultaneous touch contacts are present on the screen.
 
-* All touch requirements can be met when the pen is within range of the screen.
+* A device should continue to meet all Windows 10 touch compatibility requirements when a pen is within reporting range of the screen.
 
 Devices capable of following these recommendations will be able to follow future requirements for pen and touch reporting
 
@@ -29,9 +29,9 @@ Using the Windows Ink Workspace and a pen device, you can validate an SPT system
 
 ![An image showing the windows ink workspace ruler at an angle.](../images/windows-ink-ruler.png)
 
-1. Using a touch contact, grab the Ruler and move its location on the screen. 
+1. Using touch, grab the Ruler and move its location on the screen. 
 
-2. Without lifting the touch contact, bring the pen into contact with the screen on the canvas, then remove the pen contact. 
+2. Without lifting the touch contact from the screen, bring the pen into contact with the screen on the canvas, then remove the pen contact. 
 
 3. If the system supports SPT, you should still be able to move the Ruler with the touch contact that is still against the screen. If the system does not support SPT, you will need to remove the touch contact from the screen and tap the Ruler again to move the Ruler.
 
@@ -70,13 +70,8 @@ Windows supports SPT testing on the following Pen HLK tests when performed with 
 * Moving Jitter
 * Hover Accuracy
 * Hover Range
-* Down Latency
-
 
 For more information on these tests, see the [Pen validation guide](https://docs.microsoft.com/windows-hardware/design/component-guidelines/pen-validation-guide)
-
-> [!NOTE]
-> For the Down Latency test, please palce the finger contacts against the screen prior to the start of the calibration phase. This ensures the sound of the fingers contacting the screen does not interfere with the calibration. 
 
 ### Finger placement 
 
@@ -94,18 +89,14 @@ Windows supports SPT testing on the following Touch HLK tests when performed wit
 * Buffering
 * Latency - Down
 * Reporting Rate
-* Down Latency
 
 For more information on these tests, see the [Touchscreen validation guide](https://msdn.microsoft.com/library/windows/hardware/mt604231)
-
-> [!NOTE]
-> For the Down Latency test, please palce the finger contacts against the screen prior to the start of the calibration phase. This ensures the sound of the fingers contacting the screen does not interfere with the calibration. 
 
 ### Pen Placement
 
 To ensure the pen placement does not interfere with the results of the Touch HLK tests, place the pen as far from the starting/ending sections,  and the path of the fingers as possible. If a finger passes within 12cm of the pen during an iteration, Windows’ built in palm rejection may choose to suppress the contact, causing the iteration to fail. 
 
-To decrease the likelihood of touch contacts being suppressed, you can change the system's handedness setting. To do this, open the **Settings** menu, and select **Devices**. On the **Devices** list on the left, select **Pen & Windows Ink**. 
+To decrease the likelihood of touch contacts being suppressed, you can verify the system's handedness setting. To do this, open the **Settings** menu, and select **Devices**. On the **Devices** list on the left, select **Pen & Windows Ink**. 
 
 If the **Choose which hand you write with** option is set to "Right Hand", placing the pen in the bottom right corner of the screen when a touch target is not in that area will greatly reduce the chance of contacts being suppressed. If it is set to “Left Hand”, placing the pen in the bottom left corner of the screen will do the same. 
 
@@ -114,3 +105,5 @@ For all tests, bring the pen in contact with the screen before bringing any touc
 ### Additional testing tools
 
 The test tool [Digiinfo](http://connect.microsoft.com/site1304/Downloads/DownloadDetails.aspx?DownloadID=62352) can be used to view input from touch and pen devices in real time to inspect issues with input reporting. For SPT validation, Digiinfo can be used simply to validate that input is being received from all five fingers when pen is in range of the screen, that the report rate of each touch contact equals/exceeds the screen refresh rate, and that the report rate of the pen is at least 133Hz. 
+
+![An image showing the Digiinfo screen](../digiinfo.png)
