@@ -22,7 +22,7 @@ Now you can write one driver that runs on all versions of Windows that share a c
 ## Windows OneCore
 
 
-Windows OneCore is a platform for any device—phone, tablet, desktop, or IoT. Windows 10 provides a set of API and DDI interfaces that are common to multiple editions of Windows 10. This set of interfaces is called OneCore. With OneCore, you can also be assured that drivers and apps that are created using OneCore interfaces will run on multiple devices. For more information, see [Getting started with Windows drivers](https://msdn.microsoft.com/windows/hardware/drivers/develop/getting-started-with-universal-drivers).
+Windows OneCore is a platform for any device—phone, tablet, desktop, or IoT. Windows 10 provides a set of API and DDI interfaces that are common to multiple editions of Windows 10. This set of interfaces is called OneCore. With OneCore, you can also be assured that drivers and apps that are created using OneCore interfaces will run on multiple devices. For more information, see [Getting started with Universal Windows drivers](https://msdn.microsoft.com/windows/hardware/drivers/develop/getting-started-with-universal-drivers).
 
 ## Continuum
 

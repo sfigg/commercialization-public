@@ -43,7 +43,7 @@ To implement a tail-end Bluetooth button, the device will report 3 distinct keyb
 | Bluetooth Button Action | Key Combination to Report |
 |-------------------------|---------------------------|
 | Single-click            | WIN+F20                   |
-| Double-clock            | WIN+F19                   |
+| Double-click            | WIN+F19                   |
 | Press and hold          | WIN+F18                   |
 
  
