@@ -106,4 +106,4 @@ For all tests, bring the pen in contact with the screen before bringing any touc
 
 The test tool [Digiinfo](http://connect.microsoft.com/site1304/Downloads/DownloadDetails.aspx?DownloadID=62352) can be used to view input from touch and pen devices in real time to inspect issues with input reporting. For SPT validation, Digiinfo can be used simply to validate that input is being received from all five fingers when pen is in range of the screen, that the report rate of each touch contact equals/exceeds the screen refresh rate, and that the report rate of the pen is at least 133Hz. 
 
-![An image showing the Digiinfo screen](../digiinfo.png)
+![An image showing the Digiinfo screen](../images/digiinfo.png)
