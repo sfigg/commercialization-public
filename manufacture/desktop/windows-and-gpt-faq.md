@@ -14,6 +14,8 @@ ms.technology: windows-oem
 
 Answers to frequently asked questions about the GUID Partition Table (GPT).
 
+This version of the Windows and GPT FAQ applies to Windows 10 and Windows Server 2016. For a previous version of this FAQ, see the [Windows and GPT FAQ on MSDN](https://msdn.microsoft.com/en-us/library/windows/hardware/dn640535.aspx).
+
 Since the introduction of the personal computer, the data storage area on a hard disk has been divided into smaller areas called sectors. These sectors are grouped into partitions creating separate volumes, or 'drives' on a disk. The partitions were organized using a scheme called the Master Boot Record (MBR). The MBR is a table of disk locations, or addresses, along with a certain length, of each of the partitions present on the disk. The MBR itself occupies a small amount of the disk and is read during the boot phase to determine where to locate the operating system to boot into. The MBR information is also used by the operating system as a map of the volumes present on the disk.
 
 Eventually, data density for disks became too large for the MBR scheme to account for all the available data locations. Also, the layout, or format, of the MBR was designed for early computers and not flexible enough to accommodate newer disk configurations. A new partitioning method was needed so the GUID Partition Table (GPT) partitioning scheme was created.
