@@ -41,25 +41,25 @@ On the technician PC:
 
 1.  Open Diskpart from the Command Prompt.
 
-    ``` syntax
+    ``` 
     diskpart
     ```
 
 2.  Create and prepare a new VHD. In this example, we create a 25 GB fixed-type VHD.
 
-    ``` syntax
+    ``` 
     create vdisk file=C:\windows.vhd maximum=25600 type=fixed
     ```
 
 3.  Attach the VHD. This adds the VHD as a disk to the storage controller on the host.
 
-    ``` syntax
+    ``` 
     attach vdisk
     ```
 
 4.  Create a partition for the Windows files, format it, and assign it a drive letter. This drive letter will appear in File Explorer.
 
-    ``` syntax
+    ``` 
     create partition primary
     format quick label=vhd
     assign letter=v
@@ -67,7 +67,7 @@ On the technician PC:
 
 5.  Exit Diskpart
 
-    ``` syntax
+    ``` 
     exit
     ```
 
@@ -89,7 +89,7 @@ You can deploy the VHD to a device that already has a copy of Windows installed 
 
 1.  On your technician PC, use the Command Prompt to detach the virtual disk.
 
-    ``` syntax
+    ``` 
     diskpart
     select vdisk file=C:\windows.vhd
     detach vdisk
@@ -98,7 +98,7 @@ You can deploy the VHD to a device that already has a copy of Windows installed 
 
 2.  Copy the VHD to a network share or removable storage drive. The following maps a drive letter to a network share, creates a directory for the VHD, and then copies the VHD.
 
-    ``` syntax
+    ``` 
     net use n: \\server\share\
     md N:\VHDs
     copy C:\windows.vhd n:\VHDs\
@@ -150,13 +150,13 @@ On your destination PC:
 
 3.  Connect to the network drive or storage location where you copied the VHD in [step 3.2](#Step_3__Detach_the_VHD__copy_it_to_a_new_device__and_attach_it__optional_). 
 
-    ``` syntax
+    ``` 
     net use N: \\server\share
     ```
 
 4.  Copy the VHD to the destination PC's main partition.
 
-    ``` syntax
+    ``` 
     copy N:\VHDs\Windows.vhd M:
     ```
 
@@ -183,7 +183,7 @@ On your destination PC:
 
 1.  Open Diskpart (if necessary) and identify the drive letters of the VHD and the system partition, for example, V and S.
 
-    ``` syntax
+    ``` 
     diskpart
     list volume
     exit
@@ -193,7 +193,7 @@ On your destination PC:
 
     BIOS:
 
-    ``` syntax
+    ``` 
     V:
     cd v:\windows\system32
     bcdboot v:\windows /s S: /f BIOS
@@ -201,7 +201,7 @@ On your destination PC:
 
     UEFI:
 
-    ``` syntax
+    ``` 
     V:\
     cd v:\windows\system32
     bcdboot v:\windows /s S: /f UEFI
