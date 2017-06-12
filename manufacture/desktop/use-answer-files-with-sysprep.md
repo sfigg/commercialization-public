@@ -14,7 +14,7 @@ ms.technology: windows-oem
 # Use Answer Files with Sysprep
 
 
-You can use an answer file together with the System Preparation (**Sysprep**) tool to configure unattended Windows® Setup settings. This topic describes some considerations and processes for using answer files together with **Sysprep**. For more information about Windows components and settings that you can add to an answer file, see the [Unattended Windows Setup Reference](http://go.microsoft.com/fwlink/?LinkId=206281).
+You can use an answer file together with the System Preparation (**Sysprep**) tool to configure unattended Windows Setup settings. This topic describes some considerations and processes for using answer files together with **Sysprep**. For more information about Windows components and settings that you can add to an answer file, see the [Unattended Windows Setup Reference](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/components-b-unattend).
 
 
 ## <span id="bkmk_skipRearm"></span><span id="bkmk_skiprearm"></span><span id="BKMK_SKIPREARM"></span>Running Sysprep an Unlimited Number of Times
