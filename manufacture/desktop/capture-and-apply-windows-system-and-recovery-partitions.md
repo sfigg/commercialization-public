@@ -91,7 +91,7 @@ Here's a few ways to apply the image:
 
     ``` syntax
     md R:\Recovery\WindowsRE
-    copy C:\Windows\System32\Recovery\winre.wim R:\Recovery\WindowsRE\winre.wim
+    copy W:\Windows\System32\Recovery\winre.wim R:\Recovery\WindowsRE\winre.wim
     ```
 
     Where R: is the recovery partition

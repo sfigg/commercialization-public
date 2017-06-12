@@ -1,5 +1,5 @@
 ---
-author: Justinha
+author: themar
 Description: 'DISM Image Management Command-Line Options'
 ms.assetid: a6382d83-5748-4b08-9d9a-46ff576bac54
 MSHAttr: 'PreferredLib:/library/windows/hardware'
@@ -80,9 +80,9 @@ DISM.exe /Apply-Image /ImageFile:<path_to_image_file> /ApplyDrive:<target_drive>
 | /CheckIntegrity | Detects and tracks .wim file corruption when used with capture, unmount, export, and commit operations. /CheckIntegrity stops the operation if DISM detects that the .wim file is corrupted when used with apply and mount operations. |
 | /Verify | Checks for errors and file duplication. |
 | /NoRpFix | Disables the reparse point tag fix. A reparse point is a file that contains a link to another file on the file system. If /NoRpFix is not specified, reparse points that resolve to paths outside the value specified by /ImageFile will not be captured. |
-| /SWMFile | Enables you to reference split .wim files (SWMs). *Pattern* is the naming pattern and location of split files. You can also specify wildcard characters. For example, "E:\image\install.swm" will apply all of the split files in the E:\image directory named install1.swm, install2.swm, and so on. |
+| /SWMFile | Enables you to reference split .wim files (SWMs). *Pattern* is the naming pattern and location of split files. Use a wildcard character when specifying the naming pattern. For example, "E:\image\install*.swm" will apply all of the split files in the E:\image directory named install1.swm, install2.swm, and so on. |
 | /ConfirmTrustedFile | Validates the image for Trusted Desktop on a Windows 10, Windows 8.1, or Windows 8. This option can only be run on a computer running at least WinPE 4.0. When using /Apply-Image with the /ConfirmTrustedFile option in WinPE, always specify the /ScratchDir option pointed to a physical media location. This ensures that short file names will always be available. See [DISM Global Options for Command-Line Syntax](dism-global-options-for-command-line-syntax.md) for more information about the default behavior of the /ScratchDir option. Beginning with Windows 10, version 1607, you can use /EA to apply extended attributes.  |
-|   /WIMBoot | Use /WIMBoot to append the image with Windows image file boot (WIMBoot) configuration. This only applies to Windows 8.1 images that have been captured or exported as a WIMBoot file. This feature isn't supported in Windows 10.|
+| /WIMBoot | Use /WIMBoot to append the image with Windows image file boot (WIMBoot) configuration. This only applies to Windows 8.1 images that have been captured or exported as a WIMBoot file. This feature isn't supported in Windows 10.|
 | /Compact | Applies an image in compact mode, saving drive space. Replaces WIMBoot. For Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) only. <br><br>**Note:** If you're applying an image in compact mode with the /ScratchDir option, make sure your ScratchDir folder is not on a FAT32-formatted partition. Using a FAT32 partition could result in unexpected reboots during OOBE. | 
 | /EA      | New in Windows 10, version 1607. Applies extended attributes. |
 | /ApplyDrive  | Specifies the logical drive, using the DeviceID. to get the device ID from the command line, type "wmic diskdrive list brief". Note: a VHD may appear with the name “PhysicalDrive” in the description, for example, \.\PhysicalDrive2.|

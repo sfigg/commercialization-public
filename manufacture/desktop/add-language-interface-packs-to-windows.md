@@ -43,7 +43,7 @@ For Windows 10, language packs and LIPs are also available to download from Win
 
     Open a command prompt and run: 
     
-    ``` syntax
+    ``` 
     sysprep /oobe /generalize
     ``` 
     
@@ -55,7 +55,7 @@ For Windows 10, language packs and LIPs are also available to download from Win
 2.  Open a command prompt with elevated permissions.
 3.  Mount the Windows image that you want to install the LIP to.
 
-    ``` syntax
+    ``` 
     md "C:\mount\windows"
 
     Dism /Mount-Image /ImageFile:C:\images\Win10\sources\install.wim /Index:1 /MountDir:"C:\mount\windows"
@@ -63,26 +63,25 @@ For Windows 10, language packs and LIPs are also available to download from Win
 
 4.  If the base LP isn't in the image already, add it.
 
-    ``` syntax
+    ``` 
     Dism /Image:C:\mount\windows /Add-Package /PackagePath:C:\Languages\x64\langpacks\Microsoft-Windows-Client-Language-Pack_x64_es-es.cab
     ```
 
 5.  Add the LIP.
 
-    ``` syntax
+    ``` 
     Dism /Image:C:\mount\windows /Add-Package /PackagePath:C:\Languages\x64\langpacks\Microsoft-Windows-Client-Language-Interface-Pack_x64_ca-es.cab
     ```
 
 6.  If you're creating Windows Setup media or using a distribution share, recreate the lang.ini file.
 
-    ``` syntax
-    Dism /Image:C:\mount\windows /Gen-LangIni 
-           /Distribution:C:\images\Win10\sources
+    ``` 
+    Dism /Image:C:\mount\windows /Gen-LangIni /Distribution:C:\images\Win10\
     ```
 
     The lang.ini file in C:\\images\\Win10\\sources should look similar to the following:
 
-    ``` syntax
+    ``` 
     [Available UI Languages]
     ca-ES = 2
     es-ES = 3
@@ -93,19 +92,19 @@ For Windows 10, language packs and LIPs are also available to download from Win
 
 7.  Optional: Change the default language, locale, and other international settings to the local language.
 
-    ``` syntax
+    ``` 
     Dism /image:C:\mount\windows /set-allIntl:ca-es
     ```
 
     Optional: Review the default international settings.
 
-    ``` syntax
+    ``` 
     Dism /image:C:\mount\windows /get-intl
     ```
 
     For example, you should see output similar to the following:
 
-    ``` syntax
+    ``` 
     Reporting offline international settings.
      
     Default system UI language : es-ES
@@ -129,7 +128,7 @@ For Windows 10, language packs and LIPs are also available to download from Win
 
 8.  Unmount the image, committing the changes.
 
-    ``` syntax
+    ``` 
     Dism /Unmount-Image /MountDir:C:\mount\windows /Commit
     ```
 
