@@ -39,7 +39,7 @@ To learn more about using VHDs in an enterprise environment, see [Understanding 
 
 On the technician PC:
 
-1.  Open Diskpart from the Command Prompt.
+1.  From the Command Prompt, open Diskpart.
 
     ``` 
     diskpart
@@ -87,7 +87,7 @@ You can deploy the VHD to a device that already has a copy of Windows installed 
 **Detach the VHD and save it to a network share or storage drive**
 
 
-1.  On your technician PC, use the Command Prompt to detach the virtual disk.
+1.  Use diskpart to detach the virtual disk from your technician PC.
 
     ``` 
     diskpart
@@ -209,7 +209,7 @@ On your destination PC:
 
 3.  Remove the Windows PE USB key.
 
-4.  Restart the device.
+4.  Restart the destination PC.
 
     If there's only one boot entry, the device immediately boots to Windows. If there's more than one boot entry, you'll see a boot menu where you can choose between the available versions of Windows on the device.
 
