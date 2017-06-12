@@ -154,7 +154,7 @@ On your destination PC:
     net use N: \\server\share
     ```
 
-4.  Copy the VHD to the destination PC's main partition.
+4.  Copy the VHD from the network drive or storage location to the destination PC's main partition.
 
     ``` 
     copy N:\VHDs\Windows.vhd M:
@@ -162,7 +162,7 @@ On your destination PC:
 
 **Attach the VHD**
 
-1.  While still booted into WinPE, attach your VHD to the detination PC.
+1.  While still booted into WinPE, attach your VHD to the destination PC.
 
     ```
     diskpart
@@ -181,7 +181,7 @@ On your destination PC:
 ## <span id="Step_4__Add_a_boot_entry"></span>Step 4: Add a boot entry
 
 
-1.  Open Diskpart (if necessary) and identify the drive letters of the VHD and the system partition, for example, V and S.
+1.  From your destination PC, open Diskpart (if necessary) and identify the drive letters of the VHD and the system partition, for example, V and S.
 
     ``` 
     diskpart
