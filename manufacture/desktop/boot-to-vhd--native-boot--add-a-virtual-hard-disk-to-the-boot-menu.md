@@ -107,7 +107,7 @@ You can deploy the VHD to a device that already has a copy of Windows installed 
 **Clean and prepare a new device for native boot**
 
 On your destination PC:
-1.  Using your bootable WinPE key, [boot the destination PC to WinPE](winpe-create-usb-bootable-drive.md#boot-to-windows-pe).
+1.  Use your bootable WinPE key to [boot the destination PC to WinPE](winpe-create-usb-bootable-drive.md#boot-to-windows-pe).
 2.  Clean and prepare the destination PC's hard drive. Create a system partition (S), and a main partition (M) where the VHD will be stored.
 
     BIOS:
