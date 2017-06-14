@@ -47,6 +47,10 @@ The guidance provided here ensures compliance with Hardware Lab Kit (HLK) testin
 <td><p>This section lists the topics that provide details about the Touchscreen tests in the Windows Hardware Lab Kit (HLK) for Windows 10.</p></td>
 </tr>
 <tr class="odd">
+<td><p>[Simultaneous Pen and Touch Validation](simultaneous-pen-and-touch-validation.md)</p></td>
+<td><p>This section provides details on validating simultaneous pen and touch reporting for Windows 10</p></td>
+</tr>
+<tr class="even">
 <td><p>[Appendix](touchscreen-appendix.md)</p></td>
 <td><p>The appendix for the Windows Touchscreen Validation Guide, provides information about common HID-specific error messages.</p></td>
 </tr>

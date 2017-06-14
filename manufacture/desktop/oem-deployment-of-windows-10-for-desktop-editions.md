@@ -11,7 +11,7 @@ ms.technology: windows-oem
 
 
 
-# OEM Windows Desktop Deployment and Imaging Lab
+# OEM Deployment of Windows 10 for desktop editions
 
 Getting ready to build and test Windows 10 desktop PCs? This lab shows you the steps to take to make and deploy Windows images. We'll show you the tools to use and the commands to run to setup an end-to-end deployment. The commands can be scripted, helping you quickly customize new images for specific markets to meet your customers' needs.
 
