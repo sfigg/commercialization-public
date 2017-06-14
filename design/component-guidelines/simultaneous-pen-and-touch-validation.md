@@ -53,8 +53,9 @@ To ensure that a device can meet Microsoft's Pen and Touch requirements, Microso
 ## Pre-testing requirements 
 
 In addition to the setup steps required for Touch HLK testing, testing SPT requires you to download and have two additional .reg files:
-* `Run_Before_SPT_Testing_And_Restart.reg`
-* `Run_After_SPT_Testing_And_Restart.reg`
+* [Run_Before_SPT_Testing_And_Restart.reg](http://download.microsoft.com/download/8/1/1/81142741-7429-433D-81FA-FB2FCF2CCB26/Simultaneous Pen and Touch Validation reg files/Run_Before_SPT_Testing_And_Restart.reg)
+
+* [Run_After_SPT_Testing_And_Restart.reg](http://download.microsoft.com/download/8/1/1/81142741-7429-433D-81FA-FB2FCF2CCB26/Simultaneous Pen and Touch Validation reg files/Run_After_SPT_Testing_And_Restart.reg)
 
 Be sure to run the appropriate .reg file before SPT testing to enable the correct testing conditions, and after SPT testing to return the system to its normal state.
 
