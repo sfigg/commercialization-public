@@ -1,5 +1,5 @@
 ---
-author: Justinha
+author: themar
 Description: 'Boot to VHD (Native Boot): Add a Virtual Hard Disk to the Boot Menu'
 ms.assetid: e00d7f8f-502c-40e5-904c-8cc653c1899e
 MSHAttr: 'PreferredLib:/library/windows/hardware'
@@ -24,7 +24,7 @@ You can also deploy the VHD to a PC that already has Windows installed on it, an
 
 To learn more about using VHDs in an enterprise environment, see [Understanding Virtual Hard Disks with Native Boot](understanding-virtual-hard-disks-with-native-boot.md).
 
-## <span id="Prerequisites"></span><span id="prerequisites"></span><span id="PREREQUISITES"></span>Prerequisites
+## <span id="Prerequisites"></span>Prerequisites
 
 
 -   A technician PC with the Windows Assessment and Deployment Kit (Windows ADK) tools installed on it.
@@ -35,30 +35,31 @@ To learn more about using VHDs in an enterprise environment, see [Understanding 
 
 -   A destination PC or device on which to install the VHD. This device requires 30 gigabytes (GB) or more of free disk space. You can install the VHD to a device already running other operating system installations, or as the only operating system on a device.
 
-## <span id="Step_1__Create_a_VHD_from_diskpart"></span><span id="step_1__create_a_vhd_from_diskpart"></span><span id="STEP_1__CREATE_A_VHD_FROM_DISKPART"></span>Step 1: Create a VHD from diskpart
+## <span id="Step_1__Create_a_VHD_from_diskpart">Step 1: Create a VHD from diskpart
 
+On the technician PC:
 
-1.  On the technician PC, open Diskpart.
+1.  From the Command Prompt, open Diskpart.
 
-    ``` syntax
+    ``` 
     diskpart
     ```
 
 2.  Create and prepare a new VHD. In this example, we create a 25 GB fixed-type VHD.
 
-    ``` syntax
+    ``` 
     create vdisk file=C:\windows.vhd maximum=25600 type=fixed
     ```
 
 3.  Attach the VHD. This adds the VHD as a disk to the storage controller on the host.
 
-    ``` syntax
+    ``` 
     attach vdisk
     ```
 
 4.  Create a partition for the Windows files, format it, and assign it a drive letter. This drive letter will appear in File Explorer.
 
-    ``` syntax
+    ``` 
     create partition primary
     format quick label=vhd
     assign letter=v
@@ -66,38 +67,38 @@ To learn more about using VHDs in an enterprise environment, see [Understanding 
 
 5.  Exit Diskpart
 
-    ``` syntax
+    ``` 
     exit
     ```
 
-## <span id="Step_2__Apply_a_Windows_image_to_the_VHD"></span><span id="step_2__apply_a_windows_image_to_the_vhd"></span><span id="STEP_2__APPLY_A_WINDOWS_IMAGE_TO_THE_VHD"></span>Step 2: Apply a Windows image to the VHD
+## <span id="Step_2__Apply_a_Windows_image_to_the_VHD">Step 2: Apply a Windows image to the VHD
+
+On your technician PC, apply a generalized Windows image to the primary partition of the VHD that you created and attached in [Step 1](#Step_1__Create_a_VHD_from_diskpart).
+
+```
+Dism /Apply-Image /ImageFile:install.wim /index:1 /ApplyDir:V:\
+```
+
+## <span id="Step_3__Detach_the_VHD__copy_it_to_a_new_device__and_attach_it__optional_">Step 3: Detach the VHD, copy it to a new device, and attach it (optional)
 
 
--   Apply a generalized Windows image to the primary partition of the VHD.
-
-    ``` syntax
-    Dism /Apply-Image /ImageFile:install.wim /index:1 /ApplyDir:V:\
-    ```
-
-## <span id="Step_3__Detach_the_VHD__copy_it_to_a_new_device__and_attach_it__optional_"></span><span id="step_3__detach_the_vhd__copy_it_to_a_new_device__and_attach_it__optional_"></span><span id="STEP_3__DETACH_THE_VHD__COPY_IT_TO_A_NEW_DEVICE__AND_ATTACH_IT__OPTIONAL_"></span>Step 3: Detach the VHD, copy it to a new device, and attach it (optional)
-
-
-You can deploy the VHD to a device that already has a copy of Windows installed on it, or you can clean and prepare the drive to just use the VHD.
+You can deploy the VHD to a device that already has a copy of Windows installed on it, or you can clean and prepare the destination PC's hard drive to use the VHD.
 
 **Detach the VHD and save it to a network share or storage drive**
 
-1.  Detach the virtual disk.
 
-    ``` syntax
+1.  Use diskpart to detach the virtual disk from your technician PC.
+
+    ``` 
     diskpart
     select vdisk file=C:\windows.vhd
     detach vdisk
     exit
     ```
 
-2.  Copy the VHD to a network share or removable storage drive.
+2.  Copy the VHD to a network share or removable storage drive. The following maps a drive letter to a network share, creates a directory for the VHD, and then copies the VHD.
 
-    ``` syntax
+    ``` 
     net use n: \\server\share\
     md N:\VHDs
     copy C:\windows.vhd n:\VHDs\
@@ -105,12 +106,13 @@ You can deploy the VHD to a device that already has a copy of Windows installed 
 
 **Clean and prepare a new device for native boot**
 
-1.  Boot the destination device to Windows Preinstallation Environment (WinPE).
-2.  Clean and prepare the drive. Create a system partition (S), and a main partition (M) where the VHD will be stored.
+On your destination PC:
+1.  Use your bootable WinPE key to [boot the destination PC to WinPE](winpe-create-usb-bootable-drive.md#boot-to-windows-pe).
+2.  Clean and prepare the destination PC's hard drive. Create a system partition (S), and a main partition (M) where the VHD will be stored.
 
     BIOS:
 
-    ``` syntax
+    ``` 
     diskpart
     select disk 0
     clean
@@ -146,42 +148,42 @@ You can deploy the VHD to a device that already has a copy of Windows installed 
     exit
     ```
 
-3.  Connect to a network drive or storage location, and note the drive letter.
+3.  Connect to the network drive or storage location where you copied the VHD in [step 3.2](#Step_3__Detach_the_VHD__copy_it_to_a_new_device__and_attach_it__optional_). 
 
-    ``` syntax
+    ``` 
     net use N: \\server\share
     ```
 
-4.  Copy the VHD to the main partition.
+4.  Copy the VHD from the network drive or storage location to the destination PC's main partition.
 
-    ``` syntax
+    ``` 
     copy N:\VHDs\Windows.vhd M:
     ```
 
 **Attach the VHD**
 
-1.  Attach the VHD.
+1.  While still booted into WinPE, attach your VHD to the destination PC.
 
-    ``` syntax
+    ```
     diskpart
     select vdisk file=M:\windows.vhd
     attach vdisk
     ```
 
-2.  Identify the volume letter. (Optional: Change it to another letter that makes more sense, for example V, and leave the diskpart command line open for the next step).
+2.  Identify the attached VHD's volume letter. (Optional: Change it to another letter that makes more sense, for example V, and leave the diskpart command line open for the next step).
 
-    ``` syntax
+    ```
     list volume
     select volume 3
     assign letter=v
     ```
 
-## <span id="Step_4__Add_a_boot_entry"></span><span id="step_4__add_a_boot_entry"></span><span id="STEP_4__ADD_A_BOOT_ENTRY"></span>Step 4: Add a boot entry
+## <span id="Step_4__Add_a_boot_entry"></span>Step 4: Add a boot entry
 
 
-1.  Open Diskpart (if necessary) and identify the drive letters of the VHD and the system partition, for example, V and S.
+1.  From your destination PC, open Diskpart (if necessary) and identify the drive letters of the VHD and the system partition, for example, V and S.
 
-    ``` syntax
+    ``` 
     diskpart
     list volume
     exit
@@ -191,7 +193,7 @@ You can deploy the VHD to a device that already has a copy of Windows installed 
 
     BIOS:
 
-    ``` syntax
+    ``` 
     V:
     cd v:\windows\system32
     bcdboot v:\windows /s S: /f BIOS
@@ -199,7 +201,7 @@ You can deploy the VHD to a device that already has a copy of Windows installed 
 
     UEFI:
 
-    ``` syntax
+    ``` 
     V:\
     cd v:\windows\system32
     bcdboot v:\windows /s S: /f UEFI
@@ -207,7 +209,7 @@ You can deploy the VHD to a device that already has a copy of Windows installed 
 
 3.  Remove the Windows PE USB key.
 
-4.  Restart the device.
+4.  Restart the destination PC.
 
     If there's only one boot entry, the device immediately boots to Windows. If there's more than one boot entry, you'll see a boot menu where you can choose between the available versions of Windows on the device.
 
@@ -217,13 +219,3 @@ You can deploy the VHD to a device that already has a copy of Windows installed 
 [Understanding Virtual Hard Disks with Native Boot](understanding-virtual-hard-disks-with-native-boot.md)
 
 [BCDboot Command-Line Options](bcdboot-command-line-options-techref-di.md)
-
- 
-
- 
-
-
-
-
-
-
