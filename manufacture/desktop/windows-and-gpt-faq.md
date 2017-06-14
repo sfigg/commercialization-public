@@ -305,7 +305,7 @@ You can access the GPT disk partitions of different types using the tools that a
 | Diskpart.efi Disk Partition Tool  |                      | ESP MSR Data |
 | Diskpart.exe Disk Partition Tool  | ESP MSR Data         |              |
 | Diskmgmt.msc Logical Disk Manager | ESP Data             |              |
-| Explorer.exe                      | File Explorer Data   |              |
+| Explorer.exe File Explorer        | Data                 |              |
 
  
 
