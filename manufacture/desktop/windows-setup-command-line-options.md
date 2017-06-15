@@ -16,69 +16,71 @@ ms.technology: windows-oem
 
 The following command-line options are available for Windows Setup. Beginning with Windows 10, version 1607, you can use a setupconfig file as an alternative to passing paramters to Windows Setup on a command line. For more information, see [Windows Setup Automation Overview](windows-setup-automation-overview.md).
 
-**setup.exe** \[**/1394debug:***&lt;channel&gt;* \[**baudrate:***&lt;baudrate&gt;*\]\]
+**setup.exe** 
 
-\[**/addbootmgrlast**\]
+[\[**/1394debug:***&lt;channel&gt;* \[**baudrate:***&lt;baudrate&gt;*\]\]](#1394debugltchannelgt-baudrateltbaudrategt)
 
-\[**/Auto** {**Clean** | **DataOnly** | **Upgrade**}\]
+[\[**/addbootmgrlast**\]](#addbootmgrlast)
 
-\[**/busparams:***&lt;bus.device.function&gt;*\]
+[\[**/Auto** {**Clean** | **DataOnly** | **Upgrade**}\]](#auto-clean--dataonly--upgrade)
 
-\[**/CompactOS** {**Enable** | **Disable**}\]
+[\[**/busparams:***&lt;bus.device.function&gt;*\]](#busparamsltbusdevicefunctiongt)
 
-\[**/Compat** {**IgnoreWarning** | **ScanOnly**}\]
+[\[**/CompactOS** {**Enable** | **Disable**}\]](compactos-enable--disable)
 
-\[**/CopyLogs***&lt;location&gt;*\]
+[\[**/Compat** {**IgnoreWarning** | **ScanOnly**}\]](#compat-ignorewarning--scanonly)
 
-\[**/debug:***&lt;channel&gt;* \[**baudrate:***&lt;baudrate&gt;*\]\]
+[\[**/CopyLogs***&lt;location&gt;*\]](#copylogsltlocationgt)
 
-\[**/DiagnosticPrompt** {**Enable** | **Disable**}\]
+[\[**/debug:***&lt;channel&gt;* \[**baudrate:***&lt;baudrate&gt;*\]\]](#debugltportgt-baudrateltbaudrategt)
 
-\[**/DynamicUpdate** {**enable** | **disable**}\]
+[\[**/DiagnosticPrompt** {**Enable** | **Disable**}\]](#diagnosticprompt-enable--disable)
 
-\[**/emsport:** {**COM1** | **COM2** | **usebiossettings** | **off**} \[**/emsbaudrate:***&lt;baudrate&gt;*\]\]
+[\[**/DynamicUpdate** {**enable** | **disable**}\]](#dynamicupdate-enable--disable)
 
-\[**/InstallDrivers***&lt;location&gt;*\]
+[\[**/emsport:** {**COM1** | **COM2** | **usebiossettings** | **off**} \[**/emsbaudrate:***&lt;baudrate&gt;*\]\]](#emsport-com1--com2---off-emsbaudrateltbaudrategt)
 
-\[**/installfrom** *&lt;path&gt;*\]
+[\[**/InstallDrivers***&lt;location&gt;*\]](#installdriversltlocationgt)
 
-\[**/InstallLangPacks***&lt;location&gt;*\]
+[\[**/installfrom** *&lt;path&gt;*\]](#installfrom-ltpathgt)
 
-\[**/m:***&lt;folder\_name&gt;*\] \[**/noreboot**\] 
+[\[**/InstallLangPacks***&lt;location&gt;*\]](#installlangpacksltlocationgt)
 
-\[**/MigrateDrivers** {**all** | **none**}\]
+[\[**/m:***&lt;folder\_name&gt;*\] \[**/noreboot**\]](#mltfoldernamegt)
 
-\[**/netdebug:**hostip=&lt;*w.x.y.z*&gt;,port=&lt;*n*&gt;,key=&lt;*q.r.s.t*&gt;\[,nodhcp\]\[,busparams=*n.o.p*\]\]
+[\[**/MigrateDrivers** {**all** | **none**}\]](#migratedrivers-all--none)
 
-\[**/NoReboot**\]
+[\[**/netdebug**:hostip=&lt;*w.x.y.z*&gt;,port=&lt;*n*&gt;,key=&lt;*q.r.s.t*&gt;\[,nodhcp\]\[,busparams=*n.o.p*\]\]](#netdebughostipltwxyzgtportltngtkeyltqrstgtnodhcpbusparamsnop)
 
-\[**/PKey** *&lt;product key&gt;*\]
+[\[**/NoReboot**\]](#noreboot)
 
-\[**/PostOOBE***&lt;location&gt;*\[**\\setupcomplete.cmd**\]\]
+[\[**/PKey** *&lt;product key&gt;*\]](#pkey-ltproduct-keygt)
 
-\[**/PostRollback***&lt;location&gt;*\[**\\setuprollback.cmd**\]\]
+[\[**/PostOOBE***&lt;location&gt;*\[**\\setupcomplete.cmd**\]\]](#postoobeltlocationgtsetupcompletecmd)
 
-\[**/Quiet** \]
+[\[**/PostRollback***&lt;location&gt;*\[**\\setuprollback.cmd**\]\]](#postrollbackltlocationgtsetuprollbackcmd)
 
-\[**/ReflectDrivers***&lt;location&gt;*\]
+[\[**/Quiet** \]](#quiet)
 
-\[**/ResizeRecoveryPartition** {**Enable** | **Disable**}\]
+[\[**/ReflectDrivers***&lt;location&gt;*\]](#reflectdriversltlocationgt)
 
-\[**/ShowOOBE** {**full** | **none**}\]
+[\[**/ResizeRecoveryPartition** {**Enable** | **Disable**}\]](#resizerecoverypartition-enable--disable)
 
-\[**/Telemetry** {**Enable** | **Disable**}\]
+[\[**/ShowOOBE** {**full** | **none**}\]](#showoobe-full--none)
 
-\[**/TempDrive** *&lt;drive_letter&gt;*\]
+[\[**/Telemetry** {**Enable** | **Disable**}\]](#telemetry-enable--disable)
 
-\[**/unattend:***&lt;answer\_file&gt;*\]
+[\[**/TempDrive** *&lt;drive_letter&gt;*\]](#tempdrive-ltdrivelettergt)
 
-\[**/Uninstall** {**enable** | **disable**}\]
+[\[**/unattend:***&lt;answer\_file&gt;*\]](#unattendltanswerfilegt)
 
-\[**/usbdebug:***&lt;hostname&gt;*\]
+[\[**/Uninstall** {**enable** | **disable**}\]](#uninstall-enable--disable)
 
-\[**/wdsdiscover**\]
+[\[**/usbdebug:***&lt;hostname&gt;*\]](#usbdebuglthostnamegt)
 
-\[**/wdsserver:***&lt;servername&gt;*\]
+[\[**/wdsdiscover**\]](#wdsdiscover)
+
+[\[**/wdsserver:***&lt;servername&gt;*\]](#wdsserverltservernamegt)
 
 ## <span id="Setup_Command-Line_Options"></span><span id="setup_command-line_options"></span><span id="SETUP_COMMAND-LINE_OPTIONS"></span>Setup Command-Line Options
 
