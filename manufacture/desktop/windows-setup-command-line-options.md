@@ -124,15 +124,11 @@ When /auto is used, Windows Setup consumes ei.cfg, an checks compatibility issue
 
 **Upgrade**: Performs an upgrade of Windows saving apps and data. If the upgrade installation option is not available, or the user needs to resolve an app compatibility issue, Windows Setup will exit silently and log an exit code.
 
-**Setup.exe exit codes:** 
-
 | Exit code name                              | Exit code | Cause                                                                                            |
 | ------------------------------------------- | --------- | ------------------------------------------------------------------------------------------------ |
 | CONX_SETUP_EXITCODE_CONTINUE_REBOOT         | 0x3       | This upgrade was successful.                                                                     |
 | CONX_SETUP_EXITCODE_RESUME_AT_COMPAT_REPORT | 0x5       | The compatibility check detected issues that require resolution before the upgrade can continue. |
 | CONX_SETUP_EXITCODE_AUTO_INSTALL_FAIL       | 0x7       | The installation option (upgrade or data only) was not available.                                |
-
-**Clean** 
 
 **/noautoexit**: Not used in Windows 10. In Windows 8.1, if an error is found, Windows Setup does not exit, but instead stops and stays on the setup screen until the user addresses the issue. The installation from that point on is attended.
 
