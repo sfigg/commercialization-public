@@ -91,7 +91,9 @@ The following command-line options are available for Windows Setup. Beginning w
 ### **/1394Debug**:_&lt;channel&gt;_ [**BaudRate:**_&lt;baudrate&gt;_]
 
 Enables kernel debugging over an IEEE 1394 (FireWire) port while Windows is running and during the [windowsPE](windowspe.md) configuration pass of Windows Setup.
+
 _&lt;channel&gt;_ specifies the debugging channel. The default value for _&lt;channel&gt;_ is **1**.
+
 [**baudrate:**_&lt;baudrate&gt;_] specifies the baud to use when Windows transfers data during debugging. The default setting is **19200**. You can also set the _&lt;baudrate&gt;_ setting to **57600** or **115200**. 
 
 Example:
@@ -111,7 +113,9 @@ Instructs Windows Setup to add the Windows Boot Manager as the last entry in the
 ### **/Auto** {**Clean** | **DataOnly** | **Upgrade**}
 
 Performs an automated upgrade to Windows 10 or Windows 8.1 volume license editions only.
+
 When /auto is used, an unattend file cannot be used.
+
 When /auto is used, Windows Setup consumes ei.cfg, an checks compatibility issues before starting the installation. If ei.cfg is malformed, setup exits silently and logs an exit code.
 
 **Clean**: Performs an clean install of Windows.
@@ -230,8 +234,12 @@ This setting is new for Windows 10.
 ### **/Debug:**_&lt;port&gt;_ [**BaudRate:**_&lt;baudrate&gt;_]
 
 Enables kernel debugging over a communications (COM) port when Windows is running, and during the [windowsPE](windowspe.md) configuration pass of Windows Setup.
+
 _&lt;port&gt;_ specifies the debugging port. The default value for _&lt;port&gt;_ is **1**.
-[**baudrate:**_&lt;baudrate&gt;_ specifies the baud to use when Windows transfers data during debugging. The default setting is **19200**. You can also set the _&lt;baudrate&gt;_ setting to **57600** or **115200**. For example:
+
+[**baudrate:**_&lt;baudrate&gt;_ specifies the baud to use when Windows transfers data during debugging. The default setting is **19200**. You can also set the _&lt;baudrate&gt;_ setting to **57600** or **115200**. 
+For example:
+
 ```
 Setup /1394debug:1 /baudrate:115200
 ```
@@ -294,11 +302,16 @@ Setup /emsport:COM1 /emsbaudrate:115200
 
 ### **/InstallDrivers**_&lt;location&gt;_
 
-Adds .inf-style drivers to the new Windows 10 installation. The driver .inf can be in a folder within the specified location. The command will recurse through the specified location. Example:
+Adds .inf-style drivers to the new Windows 10 installation. The driver .inf can be in a folder within the specified location. The command will recurse through the specified location. 
+
 Accepted parameters are a local file path or UNC network path to a folder that contains .inf files.
+
+Example:
+
 ```
 setup.exe /auto upgrade /installdrivers C:\Fabrikam\drivers /noreboot 
 ```
+
 This setting is new for Windows 10.
 
 ---
@@ -306,6 +319,7 @@ This setting is new for Windows 10.
 ### **/InstallFrom** _&lt;path&gt;_
 
 Specifies a different Install.wim file to use during Windows Setup. This enables you to use a single preinstallation environment to install multiple versions of Windows images. For example, you can use a 32-bit version of Windows Setup to deploy a 64-bit Windows image. You can also use an answer file for cross-platform deployments. For more information, see “Creating a WIM for Multiple Architecture Types” in [Windows Setup Supported Platforms and Cross-Platform Deployments](windows-setup-supported-platforms-and-cross-platform-deployments.md).
+
 _&lt;path&gt;_ specifies the path of the .wim file to install. 
 
 Example:
@@ -319,7 +333,9 @@ Setup /installfrom D:\custom.wim
 ### **/InstallLangPacks**_&lt;location&gt;_
 
 Adds language packs (lp.cab) to the new Windows 10 installation.
+
 The language packs can be in a folder within the specified location. The command installs all lp.cab files and language capabilities such as text-to-speech recognition, in the folder and subfolders at the specified location.
+
 Accepted parameters are a local file path or UNC network path to a folder that contains .inf files.
 
 Example:
@@ -334,8 +350,11 @@ This setting is new for Windows 10.
 ### **/m:**_&lt;folder_name&gt;_
 
 Instructs Setup to copy alternate files from an alternate location. This option instructs Setup to look in the alternate location first, and, if files are present, to use them instead of the files from the default location.
+
 _&lt;folder_name&gt;_ specifies the name and the location of the folder that contains the replacement files and can be any local drive location. UNC paths are not supported.
+
 You must know where the files will be installed on the Windows installation. All the additional files must be copied to an $OEM$ folder in your installation sources or in the _&lt;folder_name&gt;_. The $OEM$ structure provides a representation of the destination installation disk. For example:
+
 ```
 $OEM$\$1
 ```
@@ -352,6 +371,7 @@ maps to the program files directory.
 $OEM$\$docs
 ```
 maps to the user's My Documents folder.
+
 For example, to copy an updated C:\Program Files\Messenger\Msmsgs.exe file into the Windows installation, create the following folder structure on the Pro\Sources\$OEM$\$Progs\Messenger\Msmsgs.exe installation source by using the **Setup** command:
 ```
 Pro\sources\setup.exe /m
@@ -438,6 +458,7 @@ This setting is new for Windows 10.
 ### **/PostOOBE**_&lt;location&gt;_[**\setupcomplete.cmd**]
 
 After Setup is complete, run a script.
+
 Accepted parameters are a local file path or UNC network path to a file named setupcomplete.cmd or to a folder that contains setupcomplete.cmd.
 ```
 setup.exe /auto upgrade /postoobe c:\Fabrikam\setupcomplete.cmd
@@ -455,6 +476,7 @@ This setting is new for Windows 10.
 
 ### **/PostRollback**_&lt;location&gt;_[**\setuprollback.cmd**]
 If the user rolls back their version of Windows, run a script.
+
 Accepted parameters are a local file path or UNC network path to a file named setuprollback.cmd or to a folder that contains setuprollback.cmd.
 
 ```
@@ -547,7 +569,9 @@ Setup /telemetry disable
 
 ### **/TempDrive** _&lt;drive_letter&gt;_
 
-Instructs Windows Setup to put temporary installation files on the specified partition. For an upgrade, the **/tempdrive** option affects only the placement of temporary files. The operating system is upgraded in the partition from which you run the Setup.exe file.The /tempdrive parameter is available in Windows 10, version 1607, but it is not available in earlier versions of Windows 10.
+Instructs Windows Setup to put temporary installation files on the specified partition. For an upgrade, the **/tempdrive** option affects only the placement of temporary files. The operating system is upgraded in the partition from which you run the Setup.exe file.
+
+The /tempdrive parameter is available in Windows 10, version 1607, but it is not available in earlier versions of Windows 10.
 
 _&lt;drive_letter&gt;_ specifies the partition to copy installation files to during Windows Setup. 
 
@@ -562,6 +586,7 @@ Setup /tempdrive H
 ### **/Unattend:**_&lt;answer_file_&gt;
 
 Enables you to use an answer file with Windows Setup. This is known as an unattended installation. You must specify a value for _&lt;answer_file&gt;_. Windows Setup applies the values in the answer file during installation.
+
 _&lt;answer_file&gt;_ specifies the file path and file name of the unattended Windows Setup answer file.
 
 ```
@@ -583,6 +608,7 @@ Setup /uninstall disable
 
 ### **/USBDebug:**_&lt;hostname&gt;_
 Sets up debugging on a USB port. Debug data is effective on the next reboot.
+
 _&lt;hostname&gt;_ specifies the name of the computer to debug. 
 
 Example:
@@ -596,6 +622,7 @@ Setup /usbdebug:testmachine01
 ### **/WDSDiscover**
 
 Specifies that the Windows Deployment Services (WDS) client should be in discover mode.
+
 If you do not specify **/wdsserver** with this option, WDS searches for a server. For example, to start the WDS client in this dynamic discover mode, run the following command:
 
 ```
@@ -607,7 +634,9 @@ Setup /wds /wdsdiscover
 ### **/WDSServer:**_&lt;servername&gt;_
 
 Specifies the name of the Windows Deployment Services server that the client should connect to.
+
 To use this setting, you must also use the `/wdsdiscover` option.
+
 _&lt;servername&gt;_ can be an IP address, a NetBIOS name, or a fully qualified domain name (FQDN). For example, to start the Windows Deployment Services client in this static discover mode, run the following command:
 
 ```
