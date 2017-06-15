@@ -26,7 +26,7 @@ The following command-line options are available for Windows Setup. Beginning w
 
 [\[**/busparams:***&lt;bus.device.function&gt;*\]](#busparamsltbusdevicefunctiongt)
 
-[\[**/CompactOS** {**Enable** | **Disable**}\]](compactos-enable--disable)
+[\[**/CompactOS** {**Enable** | **Disable**}\]](#compactos-enable--disable)
 
 [\[**/Compat** {**IgnoreWarning** | **ScanOnly**}\]](#compat-ignorewarning--scanonly)
 
