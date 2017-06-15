@@ -1,36 +1,24 @@
 ---
 title: Windows Processor Requirements
+description: This specification details the processors that can be used with Customer Systems that include Windows Products (including Custom Images).
+ms.author: elkr
+ms.date: 06/15/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # Windows Processor Requirements
 
+This specification details the processors that can be used with Customer Systems that include Windows Products (including Custom Images). Updates to this specification may be released in the future as requirements change.
 
-This specification details the processors that can be used with Customer Systems
-that include Windows Products (including Custom Images). Updates to this
-specification may be released in the future as requirements change.
+For each listed edition, Company must use only the processors listed, as specified in the table below. The requirements below apply whenever the edition below is pre-installed or provided on external media, including as downgrade or down edition software.
 
-For each listed edition, Company must use only the processors listed, as
-specified in the table below. The requirements below apply whenever the edition
-below is pre-installed or provided on external media, including as downgrade or
-down edition software.
+For clarity, Company must also meet all processor and other requirements specified in Minimum Hardware Requirements for Windows 10, located at <https://msdn.microsoft.com/library/windows/hardware/dn915086(v=vs.85).aspx> (or updated URL).
 
-For clarity, Company must also meet all processor and other requirements
-specified in Minimum Hardware Requirements for Windows 10, located at
-<https://msdn.microsoft.com/library/windows/hardware/dn915086(v=vs.85).aspx> (or
-updated URL).
+If after the inclusion of a processor series in this specification (“Listed Processor”), a processor becomes commercially available that uses the same naming convention or identifier as a Listed Processor but has additional or different features or functionality (“New Processor”), Company must not use New Processor for Customer Systems without Microsoft’s prior written permission. If Company believes a processor has been omitted from this list, please contact Company’s Microsoft OEM or ODM Account Manager.
 
-If after the inclusion of a processor series in this specification (“Listed
-Processor”), a processor becomes commercially available that uses the same
-naming convention or identifier as a Listed Processor but has additional or
-different features or functionality (“New Processor”), Company must not use New
-Processor for Customer Systems without Microsoft’s prior written permission. If
-Company believes a processor has been omitted from this list, please contact
-Company’s Microsoft OEM or ODM Account Manager.
-
-Some product editions or edition/processor configurations listed below may have
-no or limited support. Information on support is available at Microsoft Support
-Policy (<https://support.microsoft.com/en-us/lifecycle>) and Microsoft Lifecycle
-FAQ (<https://support.microsoft.com/en-us/help/18581>).
+Some product editions or edition/processor configurations listed below may have no or limited support. Information on support is available at Microsoft Support Policy (<https://support.microsoft.com/en-us/lifecycle>) and Microsoft Lifecycle FAQ (<https://support.microsoft.com/en-us/help/18581>).
 
 **Windows Client Edition Processor table**
 
@@ -51,8 +39,7 @@ FAQ (<https://support.microsoft.com/en-us/help/18581>).
 |-----------------|----------------------------------------------------------------------------------|---------------------------------------------------------------|----------------------------------------------------|
 | Windows 10 1703 | Up through currently enabled Intel Joule, Atom, Celeron and Pentium Processors\* | Up through currently enabled Qualcomm Snapdragon Processors\* | Up through currently enabled Broadcom Processors\* |
 
-\*Information on which processors are currently enabled is available at
-<https://developer.microsoft.com/en-us/windows/iot/explore/SoC>
+\*Information on which processors are currently enabled is available at <https://developer.microsoft.com/en-us/windows/iot/explore/SoC>
 
 **Windows IoT Enterprise / Embedded Processor table**
 
