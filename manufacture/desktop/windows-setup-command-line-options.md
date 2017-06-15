@@ -82,10 +82,9 @@ The following command-line options are available for Windows Setup. Beginning w
 
 [\[**/wdsserver:***&lt;servername&gt;*\]](#wdsserverltservernamegt)
 
-## <span id="Setup_Command-Line_Options"></span><span id="setup_command-line_options"></span><span id="SETUP_COMMAND-LINE_OPTIONS"></span>Setup Command-Line Options
 
+## Setup Command-Line Options
 
-The following lists Setup command-line options:
 
 ---
 
@@ -121,7 +120,13 @@ When /auto is used, Windows Setup consumes ei.cfg, an checks compatibility issue
 
 **Upgrade**: Performs an upgrade of Windows saving apps and data. If the upgrade installation option is not available, or the user needs to resolve an app compatibility issue, Windows Setup will exit silently and log an exit code.
 
-**Setup.exe exit codes:** [ See table below](#setup_exe_exit_codes)
+**Setup.exe exit codes:** 
+
+| Exit code name                              | Exit code | Cause                                                                                            |
+| ------------------------------------------- | --------- | ------------------------------------------------------------------------------------------------ |
+| CONX_SETUP_EXITCODE_CONTINUE_REBOOT         | 0x3       | This upgrade was successful.                                                                     |
+| CONX_SETUP_EXITCODE_RESUME_AT_COMPAT_REPORT | 0x5       | The compatibility check detected issues that require resolution before the upgrade can continue. |
+| CONX_SETUP_EXITCODE_AUTO_INSTALL_FAIL       | 0x7       | The installation option (upgrade or data only) was not available.                                |
 
 **Clean** 
 
@@ -610,41 +615,6 @@ Setup /wds /wdsdiscover /wdsserver:MyWDSServer
 ```
 
 ---
-
-
-### <span id="setup_exe_exit_codes"></span>Setup.exe exit codes
-
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Exit code name</th>
-<th align="left">Exit code</th>
-<th align="left">Cause</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">CONX_SETUP_EXITCODE_CONTINUE_REBOOT</td>
-<td align="left">0x3</td>
-<td align="left">This upgrade was successful.</td>
-</tr>
-<tr class="even">
-<td align="left">CONX_SETUP_EXITCODE_RESUME_AT_COMPAT_REPORT</td>
-<td align="left">0x5</td>
-<td align="left">The compatibility check detected issues that require resolution before the upgrade can continue.</td>
-</tr>
-<tr class="odd">
-<td align="left">CONX_SETUP_EXITCODE_AUTO_INSTALL_FAIL</td>
-<td align="left">0x7</td>
-<td align="left">The installation option (upgrade or data only) was not available.</td>
-</tr>
-</tbody>
-</table>
 
 ## <span id="related_topics"></span>Related topics
 
