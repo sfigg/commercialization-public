@@ -93,7 +93,7 @@ For any country/region that you want to modify, note the **GEOID** for the count
 | 56        | Cuba                                         | 6   |
 | 57        | Cabo Verde                                   | 6   |
 | 59        | Cyprus                                       | 6   |
-| 61        | Denmark                                      | 6   |
+| 61        | Denmark                                      | 8   |
 | 62        | Djibouti                                     | 6   |
 | 63        | Dominica                                     | 6   |
 | 65        | Dominican Republic                           | 7   |
@@ -137,7 +137,7 @@ For any country/region that you want to modify, note the **GEOID** for the count
 | 118       | Italy                                        | 9   |
 | 119       | Côte d'Ivoire                                | 6   |
 | 121       | Iraq                                         | 7   |
-| 122       | Japan                                        | 6   |
+| 122       | Japan                                        | 9   |
 | 124       | Jamaica                                      | 7   |
 | 125       | Jan Mayen                                    | 6   |
 | 126       | Jordan                                       | 7   |
