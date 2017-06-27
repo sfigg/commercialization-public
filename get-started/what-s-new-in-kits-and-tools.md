@@ -44,11 +44,13 @@ Capture your apps, drivers, and settings, and deploy them securely to new device
 
 The Chinese (Taiwan) language pack (zh-TW) supports both Taiwan and Hong Kong locales. For more information, see Available Language Packs for Windows.
 
-### You can limit access to a single Windows app (assigned access)](https://msdn.microsoft.com/library/windows/hardware/mt620043)
+### You can limit access to a single Windows app (assigned access)
+
+ - [Configure Assigned Access](https://msdn.microsoft.com/library/windows/hardware/mt620043)
 
 ### New answer file settings added
 
--  Add more tiles to the Start Menu: [Microsoft-Windows-Shell-Setup|StartTiles|SquareTiles|SquareTiles|SquareOrDesktopTile7](https://msdn.microsoft.com/library/windows/hardware/dn915881) through [SquareOrDesktopTile12](https://msdn.microsoft.com/library/windows/hardware/dn915868)
+-  Add more tiles to the Start Menu: [SquareOrDesktopTile7](https://msdn.microsoft.com/library/windows/hardware/dn915881) through [SquareOrDesktopTile12](https://msdn.microsoft.com/library/windows/hardware/dn915868)
 
 -  Add an [advanced pen settings app](https://msdn.microsoft.com/library/windows/hardware/mt757353)
 

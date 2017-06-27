@@ -41,7 +41,7 @@ This table compares the features and functionality with those of previous versio
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
+<tr class="odd" valign="top">
 <td align="left"><p>Operating systems deployed</p></td>
 <td align="left"><p>Windows 10, Windows 8.1, Windows Server 2012 R2, Windows 8, Windows Server 2012, Windows 7, or Windows Server 2008 R2.</p></td>
 <td align="left"><p>Windows 8.1, Windows Server 2012 R2, Windows 8, Windows Server 2012, Windows 7, or Windows Server 2008 R2.</p>
@@ -50,7 +50,7 @@ This table compares the features and functionality with those of previous versio
 <td align="left"><p>Windows 7, Windows Server 2008 R2, Windows Vista, or Windows Server 2008.</p></td>
 <td align="left"><p>Windows Vista or Windows Server 2008</p></td>
 </tr>
-<tr class="even">
+<tr class="even" valign="top">
 <td align="left"><p>Scripts used to deploy Windows PE</p></td>
 <td align="left"><p>No change.</p></td>
 <td align="left"><p>No change.</p></td>
@@ -60,7 +60,7 @@ This table compares the features and functionality with those of previous versio
 <td align="left"><p>CopyPE and Oscdimg tools included.</p>
 <p>Windows PE 2.1: Oscdimg tool updated to support larger images.</p></td>
 </tr>
-<tr class="odd">
+<tr class="odd" valign="top">
 <td align="left"><p>Scripting tools</p></td>
 <td align="left"><p>No change.</p></td>
 <td align="left"><p>.NET Framework optional component renamed to WinPE_NetFx.</p>
@@ -71,7 +71,7 @@ This table compares the features and functionality with those of previous versio
 <td align="left"><p>Command-line scripting tools included.</p></td>
 <td align="left"><p>Command-line scripting tools included.</p></td>
 </tr>
-<tr class="even">
+<tr class="even" valign="top">
 <td align="left"><p>Image capturing and servicing tools</p></td>
 <td align="left"><p>DISM supports Windows 10 and Windows Imaging and Configuration Designer (ICD) features.</p></td>
 <td align="left"><p>DISM supports Windows 8.1 and Windows Server 2012 R2 images but doesn’t support Windows Vista or Windows Server 2008 images. For more info, see [DISM - Deployment Image Servicing and Management Technical Reference for Windows](dism---deployment-image-servicing-and-management-technical-reference-for-windows.md).</p></td>
@@ -87,7 +87,7 @@ This table compares the features and functionality with those of previous versio
 <p><strong>Pkgmgr</strong> is used to install, remove, or update Windows packages in offline images.</p>
 <p>Doesn't support servicing Windows 8.1 or Windows Server 2012 R2 images.</p></td>
 </tr>
-<tr class="odd">
+<tr class="odd" valign="top">
 <td align="left"><p>Optimizing Windows PE</p></td>
 <td align="left"><p>No change.</p></td>
 <td align="left"><p>The profiling feature is removed.</p>
@@ -98,7 +98,7 @@ This table compares the features and functionality with those of previous versio
 <td align="left"><p>Windows PE 2.1: Supports booting directly from the hard disk, not into RAM disk.</p>
 <p>Windows PE 2.1: Writable RAM drive: when booting from read-only media, Windows PE automatically creates a writable RAM disk (drive X) and allocates 32 megabytes (MB) of the RAM disk for general-purpose storage. You can customize the size, in megabytes, by using <strong>PEImg /scratchspace</strong>. Valid values are 32, 64, 128, 256, and 512.</p></td>
 </tr>
-<tr class="even">
+<tr class="even" valign="top">
 <td align="left"><p>File management</p></td>
 <td align="left"><p>No change.</p></td>
 <td align="left"><p>No change.</p></td>
@@ -106,7 +106,7 @@ This table compares the features and functionality with those of previous versio
 <td align="left"><p>Windows PE 3.1: base image contains improvements that are related to 4k/512e drive support.</p></td>
 <td align="left"><p>No 4k/512e drive support.</p></td>
 </tr>
-<tr class="odd">
+<tr class="odd" valign="top">
 <td align="left"><p>Memory</p></td>
 <td align="left"><p>No change.</p></td>
 <td align="left"><p>Maximum supported:</p>
@@ -122,7 +122,7 @@ This table compares the features and functionality with those of previous versio
 <li><p>x64: 128 GB</p></li>
 </ul></td>
 </tr>
-<tr class="even">
+<tr class="even" valign="top">
 <td align="left"><p>Virtualization</p></td>
 <td align="left"><p>No change.</p></td>
 <td align="left"><p>No change.</p></td>
@@ -130,7 +130,7 @@ This table compares the features and functionality with those of previous versio
 <td align="left"><p>Windows PE 3.0 includes all Hyper-V drivers except display drivers. This enables Windows PE to run in Hypervisor. Supported features include mass storage, mouse integration, and network adapters.</p></td>
 <td align="left"><p>Not supported.</p></td>
 </tr>
-<tr class="odd">
+<tr class="odd" valign="top">
 <td align="left"><p>Networking</p></td>
 <td align="left"><p>No change.</p></td>
 <td align="left"><p>No change.</p></td>
@@ -138,10 +138,9 @@ This table compares the features and functionality with those of previous versio
 <td align="left"><p>The Windows PE 3.1 base image contains RNDIS binaries.</p>
 <p>Windows PE 3.0: [Hotfix](http://support.microsoft.com/kb/972831) available for 802.1X (LAN) support.</p>
 <p>Windows PE 3.1 includes 802.1X binaries as an optional component. The file name of this package is WinPE-Dot3Svc.cab.</p></td>
-<td align="left"><p>Supports IPv4 and IPv6. Doesn't support other protocols, like Internetwork Packet Exchange/Sequenced Packet Exchange (IPX/SPX).</p>
-<p>Windows PE 2.1: [Hotfix](http://support.microsoft.com/kb/975483) available for 802.1X (LAN) support.</p></td>
+<td align="left"><p>Supports IPv4 and IPv6. Doesn't support other protocols, like Internetwork Packet Exchange/Sequenced Packet Exchange (IPX/SPX).</p></td>
 </tr>
-<tr class="even">
+<tr class="even" valign="top">
 <td align="left"><p>Recovery</p></td>
 <td align="left"><p>No change.</p></td>
 <td align="left"><p>No change.</p></td>
@@ -149,7 +148,7 @@ This table compares the features and functionality with those of previous versio
 <td align="left"><p>No change.</p></td>
 <td align="left"><p>Supports Windows Recovery Environment (Windows RE).</p></td>
 </tr>
-<tr class="odd">
+<tr class="odd" valign="top">
 <td align="left"><p>Security</p></td>
 <td align="left"><p>No change.</p></td>
 <td align="left"><p>No change.</p></td>
@@ -157,7 +156,7 @@ This table compares the features and functionality with those of previous versio
 <td align="left"><p>No change.</p></td>
 <td align="left"><p>Supports BitLocker and Trusted Platform Module.</p></td>
 </tr>
-<tr class="even">
+<tr class="even" valign="top">
 <td align="left"><p>Architectures</p></td>
 <td align="left"><p>No change.</p></td>
 <td align="left"><p>No change.</p></td>
