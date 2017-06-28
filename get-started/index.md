@@ -39,19 +39,19 @@ You can create devices to use touch/pen, mouse/keyboard, controller/gesture—or
 <li>[Windows Hardware Lab Kit (HLK) for Windows 10](https://go.microsoft.com/fwlink/p/?LinkId=733613)</li>
 <li>[Windows Assessment and Deployment Kit (ADK) for Windows 10](https://go.microsoft.com/fwlink/p/?LinkId=733615)</li>
 </ul></td>
-<td><p>Welcome back! Here's what's new in:</p>
+<td><p>Welcome back! Here's what's new:</p>
 <ul>
-<li>[... Windows 10](what-s-new-in-windows.md)</li>
-<li>[... Windows ADK](what-s-new-in-kits-and-tools.md)</li>
-<li>[... Windows Performance Toolkit](https://msdn.microsoft.com/en-us/library/windows/hardware/dn927303.aspx)</li>
-<li>[... Hardware Lab Kit](https://msdn.microsoft.com/library/windows/hardware/mt187880.aspx)</li>
-<li>[... driver development](https://msdn.microsoft.com/windows/hardware/drivers/what-s-new-in-driver-development)</li>
-<li>[... design](https://msdn.microsoft.com/library/windows/hardware/mt703371.aspx)</li>
-<li>[... customizations](https://msdn.microsoft.com/library/windows/hardware/mt723363.aspx)</li>
-<li>[... manufacturing](https://msdn.microsoft.com/windows/hardware/commercialize/manufacture/whats-new-in-windows-manufacturing)</li>
-<li>[... unattend settings](https://msdn.microsoft.com/library/windows/hardware/mt750416.aspx)</li>
-<li>[... MDM enrollment and management](https://msdn.microsoft.com/library/windows/hardware/mt299056.aspx)</li>
-<li>[... Windows PE](https://msdn.microsoft.com/windows/hardware/commercialize/manufacture/desktop/whats-new-in-windows-pe-s14)</li>
+<li>[Windows 10](what-s-new-in-windows.md)</li>
+<li>[Windows ADK](what-s-new-in-kits-and-tools.md)</li>
+<li>[Windows Performance Toolkit](https://msdn.microsoft.com/en-us/library/windows/hardware/dn927303.aspx)</li>
+<li>[Hardware Lab Kit](https://msdn.microsoft.com/library/windows/hardware/mt187880.aspx)</li>
+<li>[driver development](https://msdn.microsoft.com/windows/hardware/drivers/what-s-new-in-driver-development)</li>
+<li>[design](https://msdn.microsoft.com/library/windows/hardware/mt703371.aspx)</li>
+<li>[customizations](https://msdn.microsoft.com/library/windows/hardware/mt723363.aspx)</li>
+<li>[manufacturing](https://msdn.microsoft.com/windows/hardware/commercialize/manufacture/whats-new-in-windows-manufacturing)</li>
+<li>[unattend settings](https://msdn.microsoft.com/library/windows/hardware/mt750416.aspx)</li>
+<li>[MDM enrollment and management](https://msdn.microsoft.com/library/windows/hardware/mt299056.aspx)</li>
+<li>[Windows PE](https://msdn.microsoft.com/windows/hardware/commercialize/manufacture/desktop/whats-new-in-windows-pe-s14)</li>
 </ul></td>
 </tr>
 </tbody>
@@ -95,7 +95,7 @@ From Cortana to Continuum to the core architecture, this release includes tons o
 <p>[Get started with Windows drivers](https://msdn.microsoft.com/en-us/library/windows/hardware/ff554690.aspx)</p></td>
 <td><p>Build a universal sensor driver based on the Sharks Cove dev board. Learn how to load a Windows 10 image and provision these boards for driver deployment, debugging, and testing.</p>
 <p>[Work with the Sharks Cove hardware development board](https://msdn.microsoft.com/en-us/library/windows/hardware/dn745910.aspx)</p></td>
-<td><p>Create a single driver that runs across multiple different device types, from embedded systems to tablets and desktop PCs. UMDF and KMDF templates are included in Visual Studio to help you get started.</p>
+<td><p>Create a single driver that runs across multiple device types, from embedded systems to tablets and desktop PCs. UMDF and KMDF templates are included in Visual Studio to help you get started.</p>
 <p>[Get started with Universal Windows drivers](http://go.microsoft.com/fwlink/p/?LinkId=526095)</p></td>
 </tr>
 </tbody>
@@ -146,7 +146,7 @@ From Cortana to Continuum to the core architecture, this release includes tons o
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>For desktop PCs, learn strategies to build set of images for specific markets to meet different customers' needs. Apply classic and modern Windows apps, drivers, languages, and other customizations, and mix and match your customizations as new Windows editions are released through automated scripts or a familiar Windows interface.</p>
+<td><p>For desktop PCs, learn strategies to build a set of images for specific markets to meet different customers' needs. Apply classic and modern Windows apps, drivers, languages, and other customizations, and mix and match your customizations as new Windows editions are released through automated scripts or a familiar Windows interface.</p>
 <p>[Build and deploy desktop devices](https://msdn.microsoft.com/windows/hardware/commercialize/manufacture/desktop/oem-windows-deployment-and-imaging-walkthrough)</p></td>
 <td><p>Build IoT Core devices, applying apps, drivers, and settings to new devices.</p>
 <p>[Build and deploy IoT Core devices](https://msdn.microsoft.com/windows/hardware/commercialize/manufacture/iot/iot-core-manufacturing-guide)</p></td>

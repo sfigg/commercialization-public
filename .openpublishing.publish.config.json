@@ -109,7 +109,8 @@
     "v-gmoor@microsoft.com",
     "elkr@microsoft.com",
     "nibr@microsoft.com",
-	"alhopper@microsoft.com"
+	"alhopper@microsoft.com",
+	"sapaetsc@microsoft.com"
   ],
   "branches_to_filter": [
     ""
@@ -133,6 +134,10 @@
   ],
   "branch_target_mapping": {
     "live": [
+      "Publish",
+      "Pdf"
+    ],
+    "requirements-pdf": [
       "Publish",
       "Pdf"
     ]
