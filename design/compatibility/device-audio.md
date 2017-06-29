@@ -217,9 +217,8 @@ For devices that are in a detachable docking station, mechanism (b) is recommend
 
 For connectors that are on a detachable docking station, mechanism (b) is recommended to reflect the attachment of the dock. Mechanism (a) is recommended to reflect whether the connector is plugged.
 
-*Design notes:* See the Microsoft UAA HD Audio Pin Configuration Programming Guidelines white paper for additional clarifications on the specified jack connectors that require jack detection.
+*Design notes:* See the [Microsoft UAA HD Audio Pin Configuration Programming Guidelines](http://go.microsoft.com/fwlink/?LinkId=716908) white paper for additional clarifications on the specified jack connectors that require jack detection.
 
-http://go.microsoft.com/fwlink/?LinkId=716908
 
 ### Device.Audio.Base.FunctionsPostUpgrade
 
@@ -295,9 +294,9 @@ If the PnP ID of an audio device is compatible with any of the audio class drive
 
 A device provides *basic functionality* when it meets all the Windows Hardware Certification audio device requirements.
 
-**For more info**
+**More info**
 
-[Audio Device Technologies](http://msdn.microsoft.com/en-us/library/windows/hardware/gg454527.aspx): http://go.microsoft.com/fwlink/?LinkId=716909
+[Audio Device Technologies](http://msdn.microsoft.com/en-us/library/windows/hardware/gg454527.aspx)
 
 ### Device.Audio.Base.PowerManagement
 
