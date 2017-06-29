@@ -1,6 +1,6 @@
 # [Test](index.md)
 
-## [Windows Hardware Lab Kit](https://msdn.microsoft.com/library/windows/hardware/dn930814.aspx)
+## [Windows Hardware Lab Kit](hlk/)
 ## [Windows Hardware Certification Kit](https://msdn.microsoft.com/library/windows/hardware/jj124227.aspx)
 
 ## [Windows Performance Toolkit](wpt/index.md)
