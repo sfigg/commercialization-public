@@ -35,7 +35,9 @@ You can mount an image using the **/optimize** option to reduce initial mount ti
 2.  Mount the image.
 
     ``` syntax
-    Dism /Mount-Image /ImageFile:C:\test\images\myimage.wim /index:1 /MountDir:C:\test\offline
+   DISM /Mount-Wim /WimFile:<path_to_WIM_file>
+  {/Index:<image_index> | /Name:<image_name>}
+  /MountDir:<target_mount_directory> [/readonly]
     ```
 
     **Note**  
@@ -46,7 +48,9 @@ You can mount an image using the **/optimize** option to reduce initial mount ti
     You can also add options to mount the image with read-only permissions or to reduce the initial mount time with the **/Optimize** option. For example,
 
     ``` syntax
-    Dism /Mount-Image /ImageFile:C:\test\images\myimage.wim /index:1 /MountDir:C:\test\offline /ReadOnly /Optimize
+    DISM /Mount-Wim /WimFile:<path_to_WIM_file>
+  {/Index:<image_index> | /Name:<image_name>}
+  /MountDir:<target_mount_directory> [/readonly]
     ```
 
     For more information about the options available for the **/Mount-Image** option in DISM, see [DISM Image Management Command-Line Options](dism-image-management-command-line-options-s14.md).
@@ -101,7 +105,7 @@ After you modify an image, you must unmount it. If you mounted your image with t
 2.  Unmount the image.
 
     ``` syntax
-    Dism /Unmount-Image /MountDir:C:\test\offline /commit
+    Dism /Unmount-Wim /MountDir:<target_mount_directory> {/Commit | /Discard}
     ```
 
     where `C:\test\offline` is the location of the mount directory. If you do not specify the parameters to unmount, this option lists all of the mounted images but does not perform the unmount action.

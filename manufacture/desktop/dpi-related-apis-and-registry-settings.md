@@ -339,9 +339,9 @@ All display scale factors in this mode are constrained to be one of these four v
 ## <span id="system"></span><span id="SYSTEM"></span>System-wide scale factor in Windows 8 scaling mode
 
 
-When the **Let me choose one scaling level for all my displays** checkbox is checked, the user can specify a scale factor that applies to all displays, regardless of each display’s pixel density. By using the custom setting, the user can select values other than 100%, 125%, 150%, 200%, although they are limited to the range (100%-500%). This setting is configured in the **HKCU\\ControlPanel\\Desktop\\LogPixels** registry key.
+When the **Let me choose one scaling level for all my displays** checkbox is checked, the user can specify a scale factor that applies to all displays, regardless of each display’s pixel density. By using the custom setting, the user can select values other than 100%, 125%, 150%, 200%, although they are limited to the range (100%-500%). This setting is configured in the **HKCU\\Control Panel\\Desktop\\LogPixels** registry key.
 
-**Table 6 HKCU\\ControlPanel\\Desktop\\LogPixels Values**
+**Table 6 HKCU\\Control Panel\\Desktop\\LogPixels Values**
 
 <table>
 <colgroup>
