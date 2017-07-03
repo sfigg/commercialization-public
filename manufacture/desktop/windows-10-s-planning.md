@@ -16,7 +16,7 @@ Building a Windows 10 S image is like building an image for any other desktop ed
 
 ## Executables
 
-When planning a deployment, make sure you understand what runs, and what is blocked in Windows 10 S. Choose and test customizations that work with Windows 10 S and won't interrupt your deployment. If you need to run unsigned code, you can [enable the manufacturing mode registry key](windows-10-s-manufacturing-key.md) which allows you to run unsigned code in audit mode, but once the PC ships the unsigned code will be blocked.
+When planning a deployment, make sure you understand what runs, and what is blocked in Windows 10 S. Choose and test customizations that work with Windows 10 S and won't interrupt your deployment. If you need to run unsigned code, you can [enable the manufacturing mode registry key](windows-10-s-manufacturing-mode.md) which allows you to run unsigned code in audit mode, but once the PC ships the unsigned code will be blocked.
 
 ### What runs on Windows 10 S?
 
