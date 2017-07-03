@@ -12,11 +12,11 @@ ms.technology: windows-oem
 
 # Planning a Windows 10 S image
 
-Building a Windows 10 S image is like building an image for any other desktop edition of Windows, with some key differences you must consider when planning your deployment. Windows 10 S allows adding drivers, applications, and other customizations, but you'll have to consider the following when you decide what to include in an image.
+Building a Windows 10 S image is like building an image for any other desktop edition of Windows, with some key differences to consider when planning your deployment. You can add apps, drivers, and customizations to Windows 10 S, but you'll have to make sure they are compatible Windows 10 S.
 
 ## Executables
 
-When planning a deployment, make sure you understand what runs, and what is blocked in Windows 10 S. Choose and test customizations that work with Windows 10 S and won't interrupt your deployment. If you need to run unsigned code, you can [enable the manufacturing mode registry key](windows-10-s-manufacturing-mode.md) which allows you to run unsigned code in audit mode, but once the PC ships the unsigned code will be blocked.
+When planning a deployment, make sure you understand what runs, and what is blocked in Windows 10 S. Choose and test customizations that work with Windows 10 S and won't interrupt your deployment. If you need to run unsigned code, you can [enable the manufacturing mode registry key](windows-10-s-manufacturing-mode.md) which allows you to run unsigned code, but once the PC ships the unsigned code will be blocked.
 
 ### What runs on Windows 10 S?
 
@@ -61,6 +61,8 @@ For Windows 10 S driver guidelines and requirements, see [Windows 10 S Driver Re
 
 The following table shows customizations in Windows 10 S, the mechanism to deploy the customizations, and the environment where you can deploy the customizations.
 
+### Supported customizations
+
 | Customization or task                                               | Mechanism                            | Environment                |
 | ------------------------------------------------------------------- | ------------------------------------ | -------------------------- |
 | Language Packs                                                      | DISM                                 | Offline, WinPE, Audit Mode |
@@ -74,6 +76,11 @@ The following table shows customizations in Windows 10 S, the mechanism to deplo
 | Drivers with no unsigned or win32 scripts/exe/binaries              | DISM                                 | Offline, WinPE, Audit Mode |
 | Wallpaper                                                           | unattend.xml                         | N/A                        |
 | \<Shift + F10> from first OOBE screen                               | Manufacturing reg key                | OOBE                       |
+
+### Unsupported customizations
+
+| Customization or task                                               | Mechanism                            | Environment                |
+| ------------------------------------------------------------------- | ------------------------------------ | -------------------------- |
 | Driver installation with setup.exe                                  | Unsupported                          | Unsupported                |
 | Drivers with co-installers or dependent on scripts or cmd execution | Unsupported                          | Unsupported                |
 | Win32 apps                                                          | Unsupported                          | Unsupported                |
@@ -91,11 +98,17 @@ You'll also have to configure ScanState to exclude the registry key when capturi
 
 Windows 10 S allows the following upgrade paths:
 
-|  Upgrade paths                         |   |  
-| -------------------------------------- | ------------------------- |
-| Windows 10 S to Professional           | Windows 10 S N to Professional N |          
-| Windows 10 S to Professional Education | Windows 10 S N to Professional Education N |
-| Windows 10 S to Enterprise             | Windows 10 S N to Enterprise N |
-| Windows 10 S to Education              | Windows 10 S N to Education N |
+|  Upgrade paths                         |   
+| -------------------------------------- | 
+| Windows 10 S to Professional           |
+| Windows 10 S N to Professional N      | 
+| Windows 10 S to Enterprise             |
+| Windows 10 S N to Enterprise N         |  
+| Windows 10 S to Education              | 
+| Windows 10 S N to Education N          |        
+| Windows 10 S to Professional Education |
+| Windows 10 S N to Professional Education N |
+
+
 
 
