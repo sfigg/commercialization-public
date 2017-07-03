@@ -16,7 +16,7 @@ Building a Windows 10 S image is like building an image for any other desktop ed
 
 ## Executables
 
-When planning a deployment, make sure you understand what runs, and what is blocked in Windows 10 S. Choose and test customizations that work with Windows 10 S and won't interrupt your deployment. If you need to run unsigned code, you can [enable the manufacturing mode registry key](xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) which allows you to run unsigned code in audit mode, but once the PC ships the unsigned code will be blocked.
+When planning a deployment, make sure you understand what runs, and what is blocked in Windows 10 S. Choose and test customizations that work with Windows 10 S and won't interrupt your deployment. If you need to run unsigned code, you can [enable the manufacturing mode registry key](windows-10-s-manufacturing-key.md) which allows you to run unsigned code in audit mode, but once the PC ships the unsigned code will be blocked.
 
 ### What runs on Windows 10 S?
 
@@ -81,9 +81,9 @@ The following table shows customizations in Windows 10 S, the mechanism to deplo
 
 ### Enable customizations in audit mode
 
-To enable customizations in audit mode, you have to enable manufacturing mode by adding a registry key to your offline image. Manufacturing mode allows you to run unsigned code that is normally blocked. For instructions on how to add or remove the manufacturing registry key, see [Manufacturing registry key](xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx).
+To enable customizations in audit mode, you have to enable manufacturing mode by adding a registry key to your offline image. Manufacturing mode allows you to run unsigned code that is normally blocked. For instructions on how to add or remove the manufacturing registry key, see [Manufacturing registry key](windows-10-s-manufacturing-mode.md).
 
-You'll also have to configure ScanState to exclude the registry key when capturing your recovery package. This ensures that the registry key doesn't get restored during reset or recovery scenarios. We'll cover how to exclude the key from recovery in the [Windows 10 S deployment lab](XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX)
+You'll also have to configure ScanState to exclude the registry key when capturing your recovery package. This ensures that the registry key doesn't get restored during reset or recovery scenarios. We'll cover how to exclude the key from recovery in the [Windows 10 S deployment lab](windows-10-s-deployment-sxs.md)
 
 >**Important**: Don't ship your Windows 10 S PC with the registry in place. You'll have to remove the registry key prior to shipping the device.
 
