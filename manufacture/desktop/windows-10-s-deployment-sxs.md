@@ -303,7 +303,7 @@ copy c:\temp\winre-optimized.wim t:\
 1. Boot your reference PC if it's not already booted.
 2. When the device boots to OOBE, press Ctrl+Shift+F3 to enter Audit mode.
 3. The PC will restart into audit mode.
-4. Make changes to the PC. See the table on [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx]xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx to see which customizations are available in audit mode.
+4. Make changes to the PC. See the table on [Planning a Windows 10 S image](windows-10-s-planning.md#customizations) to see which customizations are available in audit mode.
 
 
 ## Capture your audit mode changes for the recovery tools
@@ -343,6 +343,7 @@ xcopy t:\winre-optimized.wim c:\windows\system32\recovery\winre.wim
 2. Run sysprep to reseal the PC and make it ready for capture.
     ```
     c:\windows\system32\sysprep\sysprep /generalize /oobe /shutdown
+    ```
 
 ## Capture the image
 
