@@ -109,7 +109,7 @@ Windows 10 S allows the following upgrade paths:
 | Windows 10 S to Professional Education |
 | Windows 10 S N to Professional Education N |
 
-## Recovery in Windows 10 S
+## Recovery
 
 ### Built-in recovery
 
