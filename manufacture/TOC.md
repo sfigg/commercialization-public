@@ -28,7 +28,6 @@
 #### [Planning a Windows 10 S image](desktop/windows-10-s-planning.md)
 #### [Manufacturing considerations](desktop/windows-10-s-manufacturing-considerations.md)
 #### [Manufacturing mode](desktop/windows-10-s-manufacturing-mode.md)
-#### [Recovery in Windows 10 S](desktop/windows-10-s-recovery.md)
 #### [Windows 10 S deployment lab](desktop/windows-10-s-deployment-sxs.md)
 ### [Deployment Options](desktop/windows-deployment-options.md)
 #### [Add updates to customized Windows images](desktop/add-updates-to-customized-windows-and-winpe-images.md)
