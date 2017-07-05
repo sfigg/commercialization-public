@@ -51,7 +51,13 @@ On your technician PC:
     reg unload HKLM\Windows10S
     ```
 
-The mounted image now has the manufacturing key that will allow you to make changes in audit mode.
+5. Unmount the image and commit changes.
+
+    ```
+    Dism /Unmount-Image /MountDir:"C:\mount\windows" /Commit
+    ```
+
+The Windows 10 S image now has the manufacturing key that will allow you to make changes in audit mode.
 
 ## Remove the manufacturing registry key
 
