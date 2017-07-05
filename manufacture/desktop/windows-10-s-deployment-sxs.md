@@ -10,9 +10,9 @@ ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-# Windows 10 S manufacturing
+# Windows 10 S deployment lab
 
-Windows 10 S is the most secure version of Windows 10. Creating a deployment of Windows 10 S has some differences when compared to other versions of Windows. When planning your deployment, you have to make sure that your drivers and apps are the right types and work with Windows 10 S.
+Creating a deployment of Windows 10 S has some differences when compared to other versions of Windows. When [planning your deployment](windows-10-s-planning.md), you have to make sure that your [drivers](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/Windows10SDriverRequirements) and [apps](https://docs.microsoft.com/en-us/windows/uwp/porting/desktop-to-uwp-test-windows-s) are compatible with Windows 10 S.
 
 
 ## Get the tools you need
@@ -24,7 +24,7 @@ To start building a Windows 10 S image for deployment, here's what you'll need.
 - Reference PC where you can deploy your image
 - The latest version of the ADK installed on your technician PC
 - A USB key that you can format
-- Deployment scripts
+- [Deployment scripts](http://go.microsoft.com/fwlink/p/?LinkId=800657)
 - Customizations such as drivers, language packs
 - The latest GDR from [the Microsoft Update Catalog](http://www.catalog.update.microsoft.com)
 
@@ -71,6 +71,8 @@ To prepare your USB drive, you'll create separate FAT32 and NTFS partitions. The
 
 ## Make a bootable WinPE partition on your USB key
 
+On your technician PC:
+
 1.  Open the Deployment and Imaging Tools Environment as administrator.
 
 2.  Copy the base WinPE files into a new folder:
@@ -88,12 +90,13 @@ To prepare your USB drive, you'll create separate FAT32 and NTFS partitions. The
 
 ## Create Data USB Key
 
-1. In File Explorer, open deploymentscripts.zip and copy the deployment folder to the Data partition of your USB drive. 
+1. In File Explorer, open the deployment scripts zip and copy the scripts folder to the Data partition of your USB drive. 
 2. From the Deployment and Imaging Tools Environment use copydandi.cmd to copy deployment and imaging tools to your USB drive
 
     ```
     copydandi amd64 T:\deploymenttools
-
+    ```
+    
 3. Copy any other customizations you need for Audit mode.
 
 ## Mount install.wim and winre.wim
