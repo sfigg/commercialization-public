@@ -158,7 +158,7 @@
 ###### [General Testing Guidelines](component-guidelines/general-testing-guidelines.md)
 ###### [Pen Testing Interface](component-guidelines/pen-testing-interface.md)
 ###### [Active Pen Tests](component-guidelines/active-pen-tests.md)
-###### [Simultaneous pen and touch validation](component-guidelines/simultaneous-pen-and-touch-validation.md)
+####### [Simultaneous pen and touch validation](component-guidelines/simultaneous-pen-and-touch-validation.md)
 ####### [Buffering](component-guidelines/buffering.md)
 ####### [Contact accuracy](component-guidelines/contact-accuracy.md)
 ####### [Custom Gestures](component-guidelines/custom-gestures.md)
