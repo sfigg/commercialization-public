@@ -89,7 +89,7 @@ Now we'll create a file that automates the exclusion of the customizations regis
 
 1. Create an xml file in a text editor.
 
-2. Copy and paste the following code. This tells ScanState to not capture the registry key in the reovery package that it creates:
+2. Copy and paste the following code. This tells ScanState to not capture the registry key in the recovery package that it creates:
 
     ```
     <?xml version="1.0" encoding="UTF-8"?>
