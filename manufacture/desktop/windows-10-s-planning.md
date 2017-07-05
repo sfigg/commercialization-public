@@ -59,9 +59,11 @@ For Windows 10 S driver guidelines and requirements, see [Windows 10 S Driver Re
 
 ## Customizations
 
-The following table shows customizations in Windows 10 S, the mechanism to deploy the customizations, and the environment where you can deploy the customizations.
+Not all customizations are supported in Windows 10 S. This section shows which customizations are supported, which customizations are not supported, and how to enable manufacturing mode that allows you to perform customizations in audit mode.
 
 ### Supported customizations
+
+The following table shows customizations in Windows 10 S, the mechanism to deploy the customizations, and the environment where you can deploy the customizations.
 
 | Customization or task                                               | Mechanism                            | Environment                |
 | ------------------------------------------------------------------- | ------------------------------------ | -------------------------- |
@@ -78,6 +80,8 @@ The following table shows customizations in Windows 10 S, the mechanism to deplo
 | \<Shift + F10> from first OOBE screen                               | Manufacturing reg key                | OOBE                       |
 
 ### Unsupported customizations
+
+The following tables shows customizations that are not supported in Windows 10 S.
 
 | Customization or task                                               | Mechanism                            | Environment                |
 | ------------------------------------------------------------------- | ------------------------------------ | -------------------------- |
