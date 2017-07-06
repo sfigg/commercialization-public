@@ -18,12 +18,6 @@ You can enter a product key during an automated installation of Windows by inclu
 
 You can also use product keys to select an image to install during an automated Windows installation.
 
-## <span id="In_this_Topic"></span><span id="in_this_topic"></span><span id="IN_THIS_TOPIC"></span>In this Topic
-
-
--   [Select Which Windows Edition to Install](#selectwhichwindowstoinstall)
-
--   [Activate Windows](#activatewindowsbyusingaproductkey)
 
 ## <span id="SelectWhichWindowsToInstall"></span><span id="selectwhichwindowstoinstall"></span><span id="SELECTWHICHWINDOWSTOINSTALL"></span>Select Which Windows Edition to Install
 
