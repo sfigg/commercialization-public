@@ -14,7 +14,7 @@ ms.technology: windows-oem
 # Work with Product Keys and Activation
 
 
-You can enter a product key during an automated installation of Windows® by including it in your answer file.
+You can enter a product key during an automated installation of Windows by including it in your answer file.
 
 You can also use product keys to select an image to install during an automated Windows installation.
 
@@ -55,7 +55,7 @@ To automatically activate Windows by using a product key, you can do one of the 
 -   Original Equipment Manufacturers (OEMs) can use OEM-specific activation tools.
 
 >**Warning**  
-In most Windows deployment scenarios, you no longer have to use the `SkipRearm` answer file setting to reset the Windows Product Activation clock when you run the **Sysprep** command multiple times on a computer. The `SkipRearm` setting is used to specify the Windows licensing state. If you specify a retail product key or volume license product key, Windows is automatically activated. You can run the **Sysprep** command up to 8 additional times on a single Windows image. After running Sysprep 8 times on a Windows 8 image, you must recreate your Windows image. For more information about Windows components and settings that you can add to an answer file, see the [Unattended Windows Setup Reference](http://go.microsoft.com/fwlink/?LinkId=206281).
+In most Windows deployment scenarios, you no longer have to use the `SkipRearm` answer file setting to reset the Windows Product Activation clock when you run the **Sysprep** command multiple times on a computer. The `SkipRearm` setting is used to specify the Windows licensing state. If you specify a retail product key or volume license product key, Windows is automatically activated. You can run the **Sysprep** command up to 8 additional times on a single Windows image. After running Sysprep 8 times on a Windows image, you must recreate your Windows image. For more information about Windows components and settings that you can add to an answer file, see the [Unattended Windows Setup Reference](http://go.microsoft.com/fwlink/?LinkId=206281).
 
  
 
