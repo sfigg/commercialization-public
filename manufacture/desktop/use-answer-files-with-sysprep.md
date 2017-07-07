@@ -20,7 +20,7 @@ You can use an answer file together with the System Preparation (**Sysprep**) to
 ## <span id="bkmk_skipRearm"></span><span id="bkmk_skiprearm"></span><span id="BKMK_SKIPREARM"></span>Running Sysprep an Unlimited Number of Times
 
 
-If you specify a product key, Windows is automatically activated, and you can run the **Sysprep** command an unlimited number of times. To automatically activate Windows by supplying a product key, specify a valid product key in the Microsoft-Windows-Shell-Setup\\`ProductKey` unattend setting during the [specialize](specialize.md) configuration pass. If you don't automatically activate Windows by providing a product key, Windows prompts the end user for a product key. If the end user skips this step during OOBE, Windows reminds the end user to enter a valid product key later.
+If you specify a product key, Windows is automatically activated, and you can run the **Sysprep** command an unlimited number of times. To automatically activate Windows by supplying a product key, specify a valid product key in the Microsoft-Windows-Shell-Setup\\`ProductKey` unattend setting during the [specialize](specialize.md) configuration pass. If you don't automatically activate Windows by providing a product key, Windows prompts the end user for a product key. 
 
 ## <span id="bkmk_1"></span><span id="BKMK_1"></span>Applying Settings in the generalize, auditSystem, and auditUser Configuration Passes
 
