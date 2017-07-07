@@ -58,7 +58,7 @@ The certificates are added to the root. To learn more, see [Set up the signing e
 
 ### Build a Raspberry Pi BSP (New for Windows 10, Version 1703)
 
-1. Extract rpibsp.zip to a folder on your hard drive, for example C:\\BSP
+1. Extract [rpibsp.zip](https://github.com/ms-iot/iot-adk-addonkit/releases/download/RPiBSP/rpibsp.zip) to a folder on your hard drive, for example C:\\BSP
 
 2. From the IOT Core Shell, navigate to C:\BSP, and run `build.cmd`. This will add the pakages necessary to create a project with the RPi2 BSP
 
@@ -66,7 +66,7 @@ The certificates are added to the root. To learn more, see [Set up the signing e
 cd c:\BSP
 build.cmd
 ```
-
+For more information on available bsps, see [Windows 10 IoT Core BSPs](https://developer.microsoft.com/windows/iot/docs/bsp).
 ### Build packages
 
 Get your environment ready to create products by building all of the packages in the working folders.
