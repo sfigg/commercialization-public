@@ -36,124 +36,20 @@ If you need to perform deployment customizations, the following sections explain
 
 **Table 1 Windows 8.1 Scaling Levels**
 
-<table>
-<colgroup>
-<col width="16%" />
-<col width="16%" />
-<col width="16%" />
-<col width="16%" />
-<col width="16%" />
-<col width="16%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Display size</th>
-<th align="left">Display resolution</th>
-<th align="left">Horizontal (pixels)</th>
-<th align="left">Vertical (pixels)</th>
-<th align="left">Panel DPI</th>
-<th align="left">Scaling level</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>10.6&quot;</p></td>
-<td align="left"><p>FHD</p></td>
-<td align="left"><p>1920</p></td>
-<td align="left"><p>1080</p></td>
-<td align="left"><p>208</p></td>
-<td align="left"><p>150%</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>10.6&quot;</p></td>
-<td align="left"><p>HD</p></td>
-<td align="left"><p>1366</p></td>
-<td align="left"><p>768</p></td>
-<td align="left"><p>148</p></td>
-<td align="left"><p>100%</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>11.6&quot;</p></td>
-<td align="left"><p>WUXGA</p></td>
-<td align="left"><p>1920</p></td>
-<td align="left"><p>1200</p></td>
-<td align="left"><p>195</p></td>
-<td align="left"><p>150%</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>11.6&quot;</p></td>
-<td align="left"><p>HD</p></td>
-<td align="left"><p>1366</p></td>
-<td align="left"><p>768</p></td>
-<td align="left"><p>135</p></td>
-<td align="left"><p>100%</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>13.3&quot;</p></td>
-<td align="left"><p>WUXGA</p></td>
-<td align="left"><p>1920</p></td>
-<td align="left"><p>1200</p></td>
-<td align="left"><p>170</p></td>
-<td align="left"><p>150%</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>13.3&quot;</p></td>
-<td align="left"><p>QHD</p></td>
-<td align="left"><p>2560</p></td>
-<td align="left"><p>1440</p></td>
-<td align="left"><p>221</p></td>
-<td align="left"><p>200%</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>13.3&quot;</p></td>
-<td align="left"><p>HD</p></td>
-<td align="left"><p>1366</p></td>
-<td align="left"><p>768</p></td>
-<td align="left"><p>118</p></td>
-<td align="left"><p>100%</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>15.4&quot;</p></td>
-<td align="left"><p>FHD</p></td>
-<td align="left"><p>1920</p></td>
-<td align="left"><p>1080</p></td>
-<td align="left"><p>143</p></td>
-<td align="left"><p>125%</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>15.6&quot;</p></td>
-<td align="left"><p>QHD+</p></td>
-<td align="left"><p>3200</p></td>
-<td align="left"><p>1800</p></td>
-<td align="left"><p>235</p></td>
-<td align="left"><p>200%</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>17&quot;</p></td>
-<td align="left"><p>FHD</p></td>
-<td align="left"><p>1920</p></td>
-<td align="left"><p>1080</p></td>
-<td align="left"><p>130</p></td>
-<td align="left"><p>125%</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>23”</p></td>
-<td align="left"><p>QFHD (4K)</p></td>
-<td align="left"><p>3840</p></td>
-<td align="left"><p>2160</p></td>
-<td align="left"><p>192</p></td>
-<td align="left"><p>200%</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>24&quot;</p></td>
-<td align="left"><p>QHD</p></td>
-<td align="left"><p>2560</p></td>
-<td align="left"><p>1440</p></td>
-<td align="left"><p>122</p></td>
-<td align="left"><p>125%</p></td>
-</tr>
-</tbody>
-</table>
+| Display size | Display resolution | Horizontal (pixels) |	Vertical (pixels) |	Panel DPI |	Scaling level |
+| --- | --- | --- | --- | --- | --- |
+| 10.6" | FHD | 1920 | 1080 | 208 | 150% |
+| 10.6" | HD | 1366 | 768 | 148 | 100% |
+| 11.6" | WUXGA | 1920 | 1200 | 195 | 150% |
+| 11.6" | HD | 1366 | 768 | 135 | 100% |
+| 13.3" | WUXGA | 1920 | 1200 | 170 | 150% |
+| 13.3" | QHD | 2560 | 1440 | 221 | 200% |
+| 13.3" | HD | 1366 | 768 | 118 | 100% |
+| 15.4" | FHD | 1920 | 1080 | 143 | 125% |
+| 15.6" | QHD+ | 3200 | 1800 | 235 | 200% |
+| 17" | FHD | 1920 | 1080 | 130 | 125% |
+| 23" | QFHD (4K) | 3840 | 2160 | 192 | 200% |
+| 24" | QHD | 2560 | 1440 | 122 | 125% |
 
  
 
@@ -186,36 +82,12 @@ These results are returned in a coordinate system in which 96 corresponds to 100
 
 **Table 2 DPI Scale Factors**
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">DPI</th>
-<th align="left">Scale factor</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>96</p></td>
-<td align="left"><p>100</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>120</p></td>
-<td align="left"><p>125</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>144</p></td>
-<td align="left"><p>150</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>192</p></td>
-<td align="left"><p>200</p></td>
-</tr>
-</tbody>
-</table>
+| DPI | Scale factor |
+| --- | --- |
+| 96 | 100 |
+| 120 | 125 |
+| 144 | 150 |
+|192 | 200 |
 
  
 
@@ -238,28 +110,10 @@ The **Control Panel\\ Appearance and Personalization\\Display** user interface (
 
 **Table 3 HKCU\\Control Panel\\Desktop\\Win8DpiScaling Values**
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Key value</th>
-<th align="left">Meaning</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>0</p></td>
-<td align="left"><p>Different scale factors for each display: Windows 8.1 default.Content that is moved from one display to another will be the right size, but can be bitmap-scaled.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>1</p></td>
-<td align="left"><p>Same scale factor is applied to all displays: Windows 8 and earlier Windows versions behavior. Content that is moved from one display to another might be the wrong size.</p></td>
-</tr>
-</tbody>
-</table>
+| Key value | Meaning |
+| --- | --- |
+| 0 | Different scale factors for each display: Windows 8.1 default.Content that is moved from one display to another will be the right size, but can be bitmap-scaled. |
+| 1 | Same scale factor is applied to all displays: Windows 8 and earlier Windows versions behavior. Content that is moved from one display to another might be the wrong size. |
 
  
 
@@ -270,32 +124,11 @@ When the **Let me choose one scaling level for all my displays** checkbox is cle
 
 **Table 4 HKCU\\Control Panel\\Desktop\\DesktopDPIOverride Values**
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Key value</th>
-<th align="left">Meaning</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>&lt;0</p></td>
-<td align="left"><p>Reduce each display scale factor from the default by this value (for example, if the default was 150% scaling, -1 corresponds to 125%, -2 to 100%).</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>0</p></td>
-<td align="left"><p>Use the default value for each display.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>0&gt;</p></td>
-<td align="left"><p>Increase each display factor by this value (using the previous example, +1 corresponds to 200% scaling).</p></td>
-</tr>
-</tbody>
-</table>
+| Key value | Meaning |
+| ---- | ---- |
+| <0 | Reduce each display scale factor from the default by this value (for example, if the default was 150% scaling, -1 corresponds to 125%, -2 to 100%). |
+| 0 | Use the default value for each display. |
+| 0> | Increase each display factor by this value (using the previous example, +1 corresponds to 200% scaling). |
 
  
 
@@ -303,36 +136,12 @@ All display scale factors in this mode are constrained to be one of these four v
 
 **Table 5 Display Values**
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Vertical lines</th>
-<th align="left">Supported scale factors</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>&lt;900</p></td>
-<td align="left"><p>100%</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>&gt;= 900 and &lt;1080</p></td>
-<td align="left"><p>100%, 125%</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>&gt;=1080 and &lt;1440</p></td>
-<td align="left"><p>100%, 125%, 150%</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>&gt;=1440</p></td>
-<td align="left"><p>100%, 125%, 150%, 200%</p></td>
-</tr>
-</tbody>
-</table>
+| Vertical lines | Supported scale factors |
+| --- | --- |
+| <900 | 100% |
+| >= 900 and <1080 | 100%, 125% |
+| >=1080 and <1440 | 100%, 125%, 150% |
+| >=1440 | 100%, 125%, 150%, 200% |
 
  
 
@@ -343,40 +152,13 @@ When the **Let me choose one scaling level for all my displays** checkbox is che
 
 **Table 6 HKCU\\Control Panel\\Desktop\\LogPixels Values**
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Key value</th>
-<th align="left">Meaning</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>96</p></td>
-<td align="left"><p>100% scaling on every display</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>120</p></td>
-<td align="left"><p>125% scaling on every display</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>144</p></td>
-<td align="left"><p>150% scaling on every display</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>192</p></td>
-<td align="left"><p>200% scaling on every display</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>&lt;other&gt;</p></td>
-<td align="left"><p>&lt;other&gt;*100/96 scaling on every display</p></td>
-</tr>
-</tbody>
-</table>
+| Key value | Meaning |
+| --- | --- |
+| 96 | 100% scaling on every display |
+| 120 | 125% scaling on every display |
+| 144 | 150% scaling on every display |
+| 192 | 200% scaling on every display |
+| \<other> | \<other>*100/96 scaling on every display |
 
  
 ## <span id="related_topics"></span>Related topics
