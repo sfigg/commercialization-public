@@ -46,8 +46,8 @@ We provide an array of tools and technology to help you test performance, compat
 
 ## Step-by-step guidance
 
--   [HLK Getting Started Guide](https://msdn.microsoft.com/en-us/library/windows/hardware/dn915002.aspx)
--   [HLK Additional Troubleshooting Guide](hlk/index.md)
+-   [HLK getting started guide](https://msdn.microsoft.com/en-us/library/windows/hardware/dn915002.aspx)
+-   [HLK additional troubleshooting guides](hlk/index.md)
 -   [Windows Performance step-by-step guides](wpt/windows-performance-step-by-step-guides.md)
 -   [Windows Assessment Console step-by-step guide](assessments/windows-assessment-console-step-by-step-guide.md)
 -   [Windows Assessment Services step-by-step guide](assessments/windows-assessment-services-step-by-step-guide-was.md)
