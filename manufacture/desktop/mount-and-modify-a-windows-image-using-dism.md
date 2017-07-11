@@ -34,23 +34,16 @@ You can mount an image using the **/optimize** option to reduce initial mount ti
 
 2.  Mount the image.
 
-    ``` syntax
-   DISM /Mount-Wim /WimFile:<path_to_WIM_file>
-  {/Index:<image_index> | /Name:<image_name>}
-  /MountDir:<target_mount_directory> [/readonly]
+    ```
+    DISM /Mount-Wim /WimFile:<path_to_WIM_file> {/Index:<image_index> | /Name:<image_name>} /MountDir:<target_mount_directory> [/readonly]
     ```
 
-    **Note**  
-    To mount a Windows image from a VHD file, you must specify `/index:1`.
-
-     
+    >**Note**: To mount a Windows image from a VHD file, you must specify `/index:1`.
 
     You can also add options to mount the image with read-only permissions or to reduce the initial mount time with the **/Optimize** option. For example,
 
-    ``` syntax
-    DISM /Mount-Wim /WimFile:<path_to_WIM_file>
-  {/Index:<image_index> | /Name:<image_name>}
-  /MountDir:<target_mount_directory> [/readonly]
+    ```
+    DISM /Mount-Wim /WimFile:<path_to_WIM_file> {/Index:<image_index> | /Name:<image_name> /MountDir:<target_mount_directory> [/readonly]
     ```
 
     For more information about the options available for the **/Mount-Image** option in DISM, see [DISM Image Management Command-Line Options](dism-image-management-command-line-options-s14.md).
