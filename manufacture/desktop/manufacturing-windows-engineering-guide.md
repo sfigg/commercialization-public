@@ -440,7 +440,7 @@ You can use this checklist to plan your manufacturing tasks.
 
 ### Small disk footprint optimization
 
-The basic disk footprint of Windows 10 x86 with Office and 2GB of RAM will contain: 
+The basic disk footprint of Windows 10 x86 with Office and 2GB of RAM will contain:
 
 | | |
 |---|---|
