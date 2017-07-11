@@ -1580,9 +1580,9 @@ If a touch solution, a precision touch pad solution, or an active pen solution i
 
  
 
-⁹For the reporting requirements, see the set of topics at [https://msdn.microsoft.com/library/windows/hardware/mt604233.aspx](https://msdn.microsoft.com/library/windows/hardware/mt604233.aspx).
+⁹For the reporting requirements, see [Windows Digitizer Class Input Devices](https://msdn.microsoft.com/library/windows/hardware/mt604233.aspx).
 
-¹⁰For HID over I2C requirements, see[http://msdn.microsoft.com/library/windows/hardware/Dn642101.aspx]( http://msdn.microsoft.com/library/windows/hardware/Dn642101.aspx). For HID over Bluetooth requirements, see <http://developer.bluetooth.org/TechnologyOverview/Documents/HID_SPEC.pdf>.
+¹⁰For HID over I2C requirements, see [HID Over I2C Protocol Specification](http://msdn.microsoft.com/library/windows/hardware/Dn642101.aspx). For HID over Bluetooth requirements, see [HID Service Specification](https://www.bluetooth.com/specifications/adopted-specifications).
 
 ### 6.2 Multimedia
 

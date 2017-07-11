@@ -14,16 +14,10 @@ ms.technology: windows-oem
 # Work with Product Keys and Activation
 
 
-You can enter a product key during an automated installation of Windows® by including it in your answer file.
+You can enter a product key during an automated installation of Windows by including it in your answer file.
 
 You can also use product keys to select an image to install during an automated Windows installation.
 
-## <span id="In_this_Topic"></span><span id="in_this_topic"></span><span id="IN_THIS_TOPIC"></span>In this Topic
-
-
--   [Select Which Windows Edition to Install](#selectwhichwindowstoinstall)
-
--   [Activate Windows](#activatewindowsbyusingaproductkey)
 
 ## <span id="SelectWhichWindowsToInstall"></span><span id="selectwhichwindowstoinstall"></span><span id="SELECTWHICHWINDOWSTOINSTALL"></span>Select Which Windows Edition to Install
 
@@ -36,7 +30,7 @@ To select a Windows edition to install, you can do one of the following:
 
 -   Install Windows with an answer file, and then manually type in a product key during Windows Setup. The product key selects a Windows edition to install.
 
-**Warning**  
+>**Warning**  
 If you have multiple Windows images with the same Windows edition that are stored in the same Windows image file (.wim), you can use the setting: Microsoft-Windows-Setup\\ImageInstall\\OSImage\\InstallFrom\\`MetaData` to differentiate between them. You must still provide a product key using one of the methods listed in the previous list.
 
  
@@ -54,10 +48,8 @@ To automatically activate Windows by using a product key, you can do one of the 
 
 -   Original Equipment Manufacturers (OEMs) can use OEM-specific activation tools.
 
-If a product key isn’t provided prior to Out-Of-Box Experience (OOBE), then OOBE will prompt the end user for a product key. If the end user skips this during OOBE, the user will be reminded later to enter a valid product key.
-
-**Warning**  
-In most Windows 8 deployment scenarios, you no longer have to use the `SkipRearm` answer file setting to reset the Windows Product Activation clock when you run the **Sysprep** command multiple times on a computer. In Windows 8, the `SkipRearm` setting is used to specify the Windows licensing state. If you specify a retail product key or volume license product key, Windows is automatically activated. You can run the **Sysprep** command up to 8 additional times on a single Windows image. After running Sysprep 8 times on a Windows 8 image, you must recreate your Windows image. For more information about Windows components and settings that you can add to an answer file, see the [Unattended Windows Setup Reference](http://go.microsoft.com/fwlink/?LinkId=206281).
+>**Warning**  
+In most Windows deployment scenarios, you no longer have to use the `SkipRearm` answer file setting to reset the Windows Product Activation clock when you run the **Sysprep** command multiple times on a computer. The `SkipRearm` setting is used to specify the Windows licensing state. If you specify a retail product key or volume license product key, Windows is automatically activated. You can run the **Sysprep** command up to 8 additional times on a single Windows image. After running Sysprep 8 times on a Windows image, you must recreate your Windows image. For more information about Windows components and settings that you can add to an answer file, see the [Unattended Windows Setup Reference](http://go.microsoft.com/fwlink/?LinkId=206281).
 
  
 
