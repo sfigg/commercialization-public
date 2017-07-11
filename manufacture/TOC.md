@@ -4,7 +4,7 @@
 
 ## [Desktop manufacturing](desktop/index.md)
 
-### [Deployment guides and walkthroughs] (desktop/windows-10-guides-and-walkthroughs.md)
+### [Deployment guides and walkthroughs](desktop/windows-10-guides-and-walkthroughs.md)
 #### [OEM deployment of Windows 10 for desktop editions](desktop/oem-deployment-of-windows-10-for-desktop-editions.md)
 #### [System builder deployment of Windows 10 for desktop editions](desktop/system-builder-deployment-of-windows-10-for-desktop-editions.md)
 #### [OEM Windows Desktop Deployment and Imaging Lab](desktop/oem-windows-deployment-and-imaging-walkthrough.md)
