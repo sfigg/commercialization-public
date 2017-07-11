@@ -36,8 +36,6 @@ We'll take our customizations, put them together, and test them in a retail buil
       <!-- Including OEM feature manifest -->
       <AdditionalFM>%BLD_DIR%\MergedFMs\OEMCommonFM.xml</AdditionalFM>
       <AdditionalFM>%BLD_DIR%\MergedFMs\OEMFM.xml</AdditionalFM>
-       <!-- Including the test features -->
-       <AdditionalFM>%AKROOT%\FMFiles\arm\IoTUAPNonProductionPartnerShareFM.xml</AdditionalFM>
     </AdditionalFMs>
     ```
 
