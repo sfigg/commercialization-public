@@ -41,7 +41,7 @@ Note, each of these commands requires either the **/Online** or **/Image:**&lt;*
 <td align="left"><p><strong>/Add-Capability</strong></p>
 <p><strong>/Name:</strong>&lt;<em>capability_name</em>&gt; <strong>[/Source:</strong>&lt;<em>source</em>&gt;<strong>] [/LimitAccess]</strong></p></td>
 <td align="left">Adds a capability to an image.
-<p>Example:</p><pre>Dism /Online /Add-Capability /Name:Language.Basic~~~en-US~0.0.1.0</pre>
+<p>Example:</p><pre white-space: pre-wrap;>Dism /Online /Add-Capability /Name:Language.Basic~~~en-US~0.0.1.0</pre>
 <div class="alert">
 <strong>Note</strong>  DISM checks for the source files in the following order:
 <ol>
