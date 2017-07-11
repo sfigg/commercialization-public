@@ -3,4 +3,4 @@ The Windows HLK is a test framework used to test reliability and compatibility o
 * [MSDN HLK Getting Started Guide](https://msdn.microsoft.com/en-us/library/windows/hardware/dn915002.aspx)
 
 #### Additional Troubleshooting Guides
-##### [QosRemoteSettings](qosremotesettings.md)
+* [QosRemoteSettings](qosremotesettings.md)
