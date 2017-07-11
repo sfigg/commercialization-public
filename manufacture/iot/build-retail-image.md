@@ -36,8 +36,6 @@ We'll take our customizations, put them together, and test them in a retail buil
       <!-- Including OEM feature manifest -->
       <AdditionalFM>%BLD_DIR%\MergedFMs\OEMCommonFM.xml</AdditionalFM>
       <AdditionalFM>%BLD_DIR%\MergedFMs\OEMFM.xml</AdditionalFM>
-       <!-- Including the test features -->
-       <AdditionalFM>%AKROOT%\FMFiles\arm\IoTUAPNonProductionPartnerShareFM.xml</AdditionalFM>
     </AdditionalFMs>
     ```
 
@@ -46,8 +44,8 @@ We'll take our customizations, put them together, and test them in a retail buil
     ``` syntax
     <OEM> 
        <!-- Include BSP Features -->
-       <Feature>RPi2_DRIVERS</Feature> 
-       <Feature>RPi3_DRIVERS</Feature>
+       <Feature>RPI2_DRIVERS</Feature> 
+       <Feature>RPI3_DRIVERS</Feature>
        <!-- Include OEM features -->
        <Feature>OEM_CustomCmd</Feature> 
        <Feature>OEM_ProvAuto</Feature>
@@ -57,17 +55,15 @@ We'll take our customizations, put them together, and test them in a retail buil
     </OEM>
     ```
     
-    OEM_CustomCmd is required to trigger the app installation.
-    
     OEM_ProvAuto is required to pull in the provisioning package.
 	
 	OEM_FilesAndRegKeys, OEM_MyUWPApp, and OEM_DriverHelloBlinky were sample packages added in previous labs.
 
 ## <span id="Copy_in_provisioning_packages"></span>Copy in the provisioning package from ProductB into ProductA.
 
-1.  In File Explorer, create a new folder, C:\\IoT-ADK-AddonKit\\Products\\ProductA\\prov.
+1.  Copy the customizations.xml file from C:\\IoT-ADK-AddonKit\\Products\\ProductB\\prov to C:\\IoT-ADK-AddonKit\\Products\\ProductA\\prov.
 
-2.  Copy the customizations.xml files into this folder.
+2.  Delete ProductAProv.ppkg file if present.
     
 
 ### <span id="Build_and_create_the_image"></span><span id="build_and_create_the_image"></span><span id="BUILD_AND_CREATE_THE_IMAGE"></span>Build and create the image
@@ -100,7 +96,11 @@ We'll take our customizations, put them together, and test them in a retail buil
     ``` syntax
 	buildpkg all
 	```
-
+    If the BSP drivers/packages are test signed, you may also need to rebuild them to have retail signature. For RPI2 BSP, run the following command again.
+    ``` syntax
+    C:\rpibsp\build.cmd
+    ```
+	
 4.  From the IoT Core Shell, create the image:
 
     ``` syntax

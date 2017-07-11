@@ -16,7 +16,7 @@ ms.technology: windows-oem
 
 Windows 10 IoT Core (IoT Core) devices automatically receive OS updates via Windows Update when connected to the internet.
 
--   **OS updates.** OS updates includes security updates for all Microsoft packages (releasetype=Production) present in the ESP (EFI System Partition) and Main OS partition. These updates are performed automatically. OEM and enterprise customers have the option to manage the OS updates using the Windows 10 IoT Core Pro SKU. To learn more, see [Manage Updates](managing-iot-device-update.md).
+-   **OS updates.** OS updates includes security updates for all Microsoft packages (releasetype=Production) present in the ESP (EFI System Partition) and Main OS partition. These updates are performed automatically. OEM and enterprise customers have the option to manage the OS updates. To learn more, see [Manage Updates](managing-iot-device-update.md).
 
 -   **Windows Store app updates.** Submit your updated signed package to the Windows Store. When your devices are connected to the internet, they'll periodically check for updates from the Windows Store, and install the updates automatically. 
 
