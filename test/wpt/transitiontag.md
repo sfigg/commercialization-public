@@ -5,7 +5,6 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: ead6001f-02f3-4a85-a207-7af8e558a8f2
-ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
 ms.author: joshbax
