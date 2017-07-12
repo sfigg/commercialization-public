@@ -143,7 +143,7 @@ Mounting a Windows image is the same process that we used to mount the WinPE ima
 
 Enabling manufacturing mode is a new step you'll have to do when working with Windows 10 S. To enable customizations during the manufacturing process, you'll have to add a registry key that gives you the ability to run unsigned code when booted into audit mode. This can help you build and test your image when getting a PC ready to ship.
 
-We'll add the custimazation registry key to the mounted image by loading the mounted image's SYSTEM registry hive, and then then adding a key. Then we'll configure ScanState to exclude the registry key when capturing your recovery package to ensure that the registry key doesn't get restored during reset or recovery scenarios.
+We'll add the customization registry key to the mounted image by loading the mounted image's SYSTEM registry hive, and then then adding a key. Then we'll configure ScanState to exclude the registry key when capturing your recovery package to ensure that the registry key doesn't get restored during reset or recovery scenarios.
 
 > **Important**: Don't ship your Windows 10 S PC with the registry in place. You'll have to remove the registry key prior to shipping the device.
 
@@ -173,7 +173,7 @@ Now we'll create a file that automates the exclusion of the customizations regis
 
 1. Create an xml file in a text editor.
 
-2. Copy and paste the following code. This tells ScanState to not capture the registry key in the reovery package that it creates:
+2. Copy and paste the following code. This tells ScanState to not capture the registry key in the recovery package that it creates:
 
     ```
 <?xml version="1.0" encoding="UTF-8"?>
