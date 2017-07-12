@@ -6,7 +6,6 @@ MSHAttr:
 - 'PreferredLib:/library/windows/hardware'
 author: v-gmoor
 ms.assetid: 
-ms.prod: W10
 ms.mktglfcycl: 
 ms.sitesec: msdn
 ms.author: joshbax
