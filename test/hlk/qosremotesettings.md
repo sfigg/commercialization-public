@@ -1,4 +1,11 @@
-﻿#### Test Summary
+﻿---
+title: QosRemoteSettings
+description: Provides troubleshooting guidelines for the QosRemoteSettings HLK test.
+---
+
+# QosRemoteSettings Troubleshooting
+
+#### Test Summary
 This test verifies that the DUT correctly accepts, and resolves remote QoS settings via DCBX.
 
 This test requires two machines, with the "Support Device" on the Server machine (PEER) **connected directly** to the "Test Device" (DUT) on the Client machine.
@@ -7,12 +14,16 @@ This test requires two machines, with the "Support Device" on the Server machine
 #### Traces and Packet Capture
 The following traces can be enabled before starting the test, if you would like to get more information: 
 - NDIS traces to enable on the DUT machine if you want to see how the OS handles DCB & DCBX status indication, and QoS capabilities advertisements from the DUT.
-    - netsh trace start provider={dd7a21e6-a651-46d4-b7c2-66543067b869} keywords=0x00801400 level=5 tracefile=ndis.etl 
-        - 0x800000 is for QoS status indication traces
-        - 0x001000 is for QoS capability advertisement traces 
-        - 0x000400 is for QoS OID request from the OS traces
-    - _start the NDIS test_
-    - netsh trace stop
+    - 0x800000 is for QoS status indication traces
+      0x001000 is for QoS capability advertisement traces 
+      0x000400 is for QoS OID request from the OS traces
+    
+```
+netsh trace start provider={dd7a21e6-a651-46d4-b7c2-66543067b869} keywords=0x00801400 level=5 tracefile=ndis.etl 
+<start the NDIS test>
+netsh trace stop
+```
+
 - Run packet capture on the "Support Device" on PEER machine capture the LLDP DCBX packet sent out of the "Support Device".
     - Note that the test might reset the Support Device. Therefore, you might need to start/restart packet capture after the test has started.
 
