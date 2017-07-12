@@ -12,9 +12,9 @@ ms.technology: windows-oem
 
 # Windows 10 S manufacturing overview
 
-Windows 10 S provides a secure experience for users. The same technology that makes Windows 10 S secure also creates some differences when creating Windows 10 devices.
+Windows 10 S provides a secure experience for users. The same technology that makes Windows 10 S secure also creates some differences when creating software images for Windows 10 devices.
 
-When you plan your Windows 10 S deployment, you'll have to ensure that your customizations will work with Windows 10 S, as well as the manufacturing environment.
+When you plan your Windows 10 S image and deployment, you'll have to ensure that your customizations will work with Windows 10 S, as well as the manufacturing environment.
 
 While the overall process is similar to building other Windows 10 devices, Windows 10 S has some additional considerations.
 
