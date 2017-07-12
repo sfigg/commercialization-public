@@ -20,7 +20,7 @@ We provide an array of tools and technology to help you test performance, compat
 ## About the tools
 
 
--   [Windows Hardware Lab Kit](hlk/index.md) – The Windows HLK is a test framework used to test reliability and compatibility of hardware devices used with Windows 10.
+-   [Windows Hardware Lab Kit](https://msdn.microsoft.com/en-us/library/windows/hardware/dn930814.aspx) – The Windows HLK is a test framework used to test reliability and compatibility of hardware devices used with Windows 10.
 -   [Windows Performance Toolkit](wpt/index.md) – WPT helps you measure, analyze and troubleshoot performance to create fast, fluid, and efficient systems.
 -   [Windows Assessment Toolkit](assessments/index.md) – The assessment toolkit provides additional tools and tests that help you determine the quality of a running operating system or a set of components with regard to performance, reliability, and functionality.
 
@@ -46,8 +46,7 @@ We provide an array of tools and technology to help you test performance, compat
 
 ## Step-by-step guidance
 
--   [HLK getting started guide](https://msdn.microsoft.com/en-us/library/windows/hardware/dn915002.aspx)
--   [HLK additional troubleshooting guides](hlk/index.md)
+-   [HLK Getting Started Guide](https://msdn.microsoft.com/en-us/library/windows/hardware/dn915002.aspx)
 -   [Windows Performance step-by-step guides](wpt/windows-performance-step-by-step-guides.md)
 -   [Windows Assessment Console step-by-step guide](assessments/windows-assessment-console-step-by-step-guide.md)
 -   [Windows Assessment Services step-by-step guide](assessments/windows-assessment-services-step-by-step-guide-was.md)
