@@ -31,14 +31,14 @@ Use the examples in the [USB-B.zip](http://download.microsoft.com/download/5/8/4
 
     For example, if en-us and de-de language packs are added to the Windows image, add a folder named “1033” (representing en-us language) under C:\mount\windows\Windows\System32\oobe\info\default\. Then add a folder named “1031” (representing de-de language) under the same directory.
 
-    ```syntax
+    ```
     md c:\mount\windows\windows\system32\oobe\info\default\1033
     md c:\mount\windows\windows\system32\oobe\info\default\1031
     ```
 
 3.  Create license terms documents using the .rtf file format for each language specified. Move each license term document to the corresponding language folder. For example:
 
-    ```syntax
+    ```
     C:\mount\windows\Windows\System32\oobe\info\default\1033\agreement.rtf  (English version)
     C:\mount\windows\Windows\System32\oobe\info\default\1031\agreement.rtf  (German version)
     ```
@@ -47,7 +47,7 @@ Use the examples in the [USB-B.zip](http://download.microsoft.com/download/5/8/4
     
 4.  Create an **oobe.xml** file to specify the agreement.rtf file path.
 
-    ```syntax
+    ```
     <?xml version="1.0" encoding="utf-8"?>
     <FirstExperience>
       <oobe>
@@ -60,7 +60,7 @@ Use the examples in the [USB-B.zip](http://download.microsoft.com/download/5/8/4
 
 5.  Copy **oobe.xml file** to each language folder.
 
-    ```syntax
+    ```
     Copy e:\configset\oobe.xml c:\mount\windows\windows\system32\oobe\info\default\1033
     Copy e:\configset\oobe.xml c:\mount\windows\windows\system32\oobe\info\default\1031
     ```
@@ -69,7 +69,7 @@ Use the examples in the [USB-B.zip](http://download.microsoft.com/download/5/8/4
 
     File: c:\mount\windows\Windows\System32\OOBE\Info\OOBE.xml
     
-    ```syntax
+    ```
     <?xml version="1.0" encoding="utf-8" ?>
     <FirstExperience>
       <oobe>
@@ -87,7 +87,7 @@ Use the examples in the [USB-B.zip](http://download.microsoft.com/download/5/8/4
 ### <span id="Create_image_files"></span>Create image info file
 1.  Create an **csup.txt** file to specify when the Windows image was created. This file must include the date that the image was created, in the form of 'MM-DD-YYYY', with no other characters, on a single line at the top of the file.
 
-    ```syntax
+    ```
     12-31-2016
     ```
 

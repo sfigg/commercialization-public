@@ -27,7 +27,7 @@ Setupconfig.ini files can contain single parameters, or parameters and value pai
 
 For example, you create a Setupconfig.ini with the following. Note that the header `[SetupConfig]` is required.
 
-```syntax
+```
 [SetupConfig]
 NoReboot
 ShowOobe=None
@@ -37,7 +37,7 @@ ReflectDrivers = <path of folder containing INF and SYS files for the encryption
 
 This is equivalent to the following command line:
 
-```syntax
+```
 Setup /NoReboot /ShowOobe None /Telemetry Enable
 ```
 
@@ -47,7 +47,7 @@ Setup /NoReboot /ShowOobe None /Telemetry Enable
 
 If you are running Windows setup from media or an ISO file, you must include the location to the setupconfig file on the command line (“/ConfigFile `<path>`”) when running setup.exe. For example:
 
-```syntax
+```
 Setup.exe /ConfigFile <path to Setupconfig.ini>
 ```
 

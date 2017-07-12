@@ -167,7 +167,7 @@ Examples:
 Dism /Capture-Image /ImageFile:install.wim /CaptureDir:D:\ /Name:Drive-D
 ```
 
-```syntax
+```
 dism /Capture-Image /CaptureDir:C:\ /ImageFile:"C:\WindowsWithOffice.wim" /Name:"Chinese Traditional" /ea
 ```
 
