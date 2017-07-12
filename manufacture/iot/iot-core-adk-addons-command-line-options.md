@@ -397,7 +397,7 @@ retailsign {On/Off}
 
 **Examples**:
 
-```syntax
+```
 retailsign On
 retailsign Off
 ```

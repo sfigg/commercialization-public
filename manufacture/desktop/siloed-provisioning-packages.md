@@ -89,7 +89,7 @@ Customize these files to capture more or fewer components in the siloed provisio
 
 The following example uses a configuration file to create a siloed provisioning package that contains Windows desktop applications installed on a reference device:
 
-```syntax
+```
 ScanState.exe /apps:-sysdrive /o /v:13 /config:Config_AppsOnly.xml /ppkg e:\repository\SPP_base.spp /l:C:\Scanstate.log
 ```
 
@@ -108,7 +108,7 @@ Here are what the parameters for the above command mean:
 
 You can use /diff to create a siloed provisioning package that captures components relative to parent applications already captured in a siloed provisioning package. To use /diff, you must specify a SPP to compare the capture against: 
 
-```syntax
+```
 ScanState.exe /apps:-sysdrive /o /v:13 /config:Config_AppsOnly.xml /diff:e:\repository\SPP_base.spp /ppkg e:\repository\SPP_AddOn1.spp
 ```
 
@@ -117,7 +117,7 @@ ScanState.exe /apps:-sysdrive /o /v:13 /config:Config_AppsOnly.xml /diff:e:\repo
 In a scenario where all deployment tasks for a device are complete and no Windows desktop applications have been installed, you can use ScanState to capture system settings that have not been captured in any other SPP by using Config_SettingsOnly.xml. The SPP can be placed directly into the recovery folder during capture for use during Push-Button Reset.
 
 The following example creates a siloed provisioning package of only system settings on a device, and places it into the recovery folder: 
-```syntax
+```
 ScanState.exe /apps:-appfiles /o /v:13 /config:Config_SettingsOnly.xml /ppkg %systemdrive%\Recovery\Customizations\systemsettings.spp
 ```
 
@@ -215,7 +215,7 @@ The functionality for applying siloed provisioning packages using DISM is limite
 
 The following example uses DISM that is created by CopyDandI.cmd to apply a base SPP, as well as two add-on SPPs:
 
-```syntax
+```
 DISM.exe /Apply-SiloedPackage /ImagePath:C:\ /PackagePath:e:\repository\BaseSPP.spp /PackagePath:e:\repository\SPP_AddOn1.spp /PackagePath:e:\repository\SPP_AddOn2.spp
 ```
 For syntax, see [DISM Image Management Command-Line Options](dism-image-management-command-line-options-s14.md), or run ``` DISM.exe /Apply-SiloedPackage /? ``` from the target location of CopyDandI.cmd.
@@ -228,7 +228,7 @@ When DISM applies siloed provisioning packages to the OS image that has been app
 
 To single-instance your siloed provisioning packages on devices without Compact OS image, use DISM /Apply-CustomDataImage while the device is booted into Windows PE.
 
-```syntax
+```
 DISM.exe /ImagePath:C:\ /Apply-CustomDataImage /CustomDataImage:C:\Recovery\Customizations\myApp.spp /SingleInstance 
 ```
 

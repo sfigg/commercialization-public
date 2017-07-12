@@ -143,13 +143,13 @@ If you are required to remove the inbox Skype app due to policy requirements, yo
 
 To remove Skype online in audit mode from Windows PowerShell:
 
-```syntax
+```
 get-provisionedappxpackage -online | where-object {$_.displayname -eq "Microsoft.SkypeApp"} | Remove-ProvisionedAppxPackage -online
 ```
 
 To remove Skype offline with Windows PowerShell:
 
-```syntax
+```
 get-provisionedappxpackage -path c:\mount | where-object {$_.displayname -eq "Microsoft.SkypeApp"} | Remove-ProvisionedAppxPackage
 ```
 
@@ -157,12 +157,12 @@ To remove Skype offline using Dism.exe:
 
 1. Get the full package name:
 
-    ```syntax
+    ```
     Dism.exe /image:<Windows_volume> /get-provisionedappxpackages
     ```
 2. Remove the package, using the <PackageName> from the Microsoft.SkypeApp listing:
 
-    ```syntax
+    ```
     Dism.exe /image:<Windows_volume> /remove-provisionedappxpackage /PackageName:<PackageName>
     ```
     
@@ -172,7 +172,7 @@ Note: If you use the Windows 8 version of WinPE, then after any servicing operat
 
 To resolve this problem, after any servicing operation run from the Windows 8 version of WinPE, the OEM must run: 
 
-```syntax
+```
 dir %windir%\System32\catroot\{F750E6C3-38EE-11D1-85E5-00C04FC295EE}
 ```
 
@@ -189,31 +189,31 @@ To disable the app readiness service offline:
 1.	Create a .reg file where HKLM\Software\Microsoft\Windows\CurrentVersion\AppReadiness DisableInAuditMode is set to a value of 1.
 2.	Mount the Windows image. For example:
     
-    ```syntax
+    ```
     Dism /Mount-Image /ImageFile:"C:\Images\ModelSpecificImage.wim" /Name:"Fabrikam" /MountDir:"C:\mount\windows" /Optimize
     ```
     
 3.	Load the registry hive. For example:
     
-    ```syntax
+    ```
     reg load hklm\LoadedHive C:\mount\Windows\System32\config\SYSTEM
     ```
     
 4.	Add the registry value. For example, using a .reg file from your USB stick:
     
-    ```syntax
+    ```
     regedit /s e:\registry\regFile.reg
     ```
     
 5.	Unload the hive.
 
-    ```syntax
+    ```
     reg unload hklm\LoadedHive
     ```
     
 6.	Unmount the Windows image, committing changes. For example:
 
-    ```syntax
+    ```
     Dism /Unmount-Image /MountDir:"C:\mount\windows" /Commit
     ```
     
@@ -259,7 +259,7 @@ The installation of the test OS can be handled a variety of ways. Since the test
 
 **Important**: Disable TPM (Trusted Platform Module) auto-provisioning when booting into a test OS to ensure both good performance and to make sure the user’s OS has ownership of the module. To do this in Windows, you need to set the following registry keys: 
 
-```syntax
+```
 [HKLM\System\CurrentControlSet\Services\Tpm\WMI\NoAutoProvision] (REG_DWORD) to 1
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\TPM\WMI]
 "NoAutoProvision"=dword:00000001
@@ -285,7 +285,7 @@ Create an efficient and resilient imaging system with a minimum amount of overhe
     
 2. Create the hard drive partition structure using diskpart. 
 
-    ```syntax
+    ```
     diskpart /s F:\CreatePartitions-UEFI.txt
     ```
     
@@ -293,7 +293,7 @@ Create an efficient and resilient imaging system with a minimum amount of overhe
     
 3. Apply the images that you created using DISM to the Windows partitions. 
 
-    ```syntax
+    ```
     ApplyImage F:\Images\ThinImage.wim
     ```
     
@@ -308,14 +308,14 @@ Create an efficient and resilient imaging system with a minimum amount of overhe
     - Microsoft strongly advises that OEMs run DISM with the /StartComponentCleanup /resetbase flags to gain additional free disk space.
     - Ensure .NET Framework apps are compiled by running the following commands
         
-        ```syntax
+        ```
         C:\Windows\Microsoft.NET\Framework\v4.0.30319\ngen.exe update /queue
         C:\Windows\Microsoft.NET\Framework\v4.0.30319\ngen.exe eqi
         ```
         
         On 64-bit machines, do the same for 64-bit CLR:
 
-        ```syntax
+        ```
         C:\Windows\Microsoft.NET\Framework64\v4.0.30319\ngen.exe update /queue
         C:\Windows\Microsoft.NET\Framework64\v4.0.30319\ngen.exe eqi
         ```
@@ -323,7 +323,7 @@ Create an efficient and resilient imaging system with a minimum amount of overhe
     - Create the OA3 computer build report (CBR) using OAtool.exe, inject the key into firmware, and validate the provisioning.
     - If you’re using Windows Preinstallation Environment (WinPE) 5.x, fix the timestamps. (This step is not necessary if you’re using WinPE for Windows 10).
 
-        ```syntax
+        ```
         dir %windir%\System32\catroot\{F750E6C3-38EE-11D1-85E5-00C04FC295EE}
         ``` 
         
@@ -364,7 +364,7 @@ Ensure a good customer experience, while protecting the user data.
 
 To clear the TPM use the following commands:
 
-```syntax
+```
 $Tpm = Get-WmiObject -class Win32_Tpm -namespace "root\CIMv2\Security\MicrosoftTpm"
 $Tpm.SetPhysicalPresenceRequest(22)
 ```
@@ -474,7 +474,7 @@ Adding Windows Update KB packages can add significantly to the size of the disk.
 1.	Install KB and reboot if prompted
 2.	From an elevated command prompt, run the following commands:
 
-    ```syntax
+    ```
     dism.exe /online /cleanup-image /startcomponent
     ```
     
@@ -525,14 +525,14 @@ Native image GENeration is a task compiling .NET framework’s MSIL (virtual mac
 
 On 32-bit, x86 ,or ARM devices:
 
-```syntax
+```
 C:\Windows\Microsoft.NET\Framework\v4.0.30319\ngen.exe update /queue
 C:\Windows\Microsoft.NET\Framework\v4.0.30319\ngen.exe eqi
 ```
 
 On 64-bit devices, do this for both versions of the .NET framework:
 
-```syntax
+```
 C:\Windows\Microsoft.NET\Framework\v4.0.30319\ngen.exe update /queue
 C:\Windows\Microsoft.NET\Framework\v4.0.30319\ngen.exe eqi
 C:\Windows\Microsoft.NET\Framework64\v4.0.30319\ngen.exe update /queue

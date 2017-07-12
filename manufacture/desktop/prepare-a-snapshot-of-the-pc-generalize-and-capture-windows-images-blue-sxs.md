@@ -78,7 +78,7 @@ The current OEM recommendation is to install Office Home and Student 2016, rathe
 
     Make sure the ProductID is HomeStudentRetail, as follows: 
 
-    ```syntax
+    ```
     <?xml version="1.0"?> 
     <Configuration> 
       <Add OfficeClientEdition="32" SourcePath="\\Server\Share\">
@@ -92,7 +92,7 @@ The current OEM recommendation is to install Office Home and Student 2016, rathe
 
 2.  On the reference computer, install Office 2016 using the configuration file:
 
-    ```syntax
+    ```
     D:\Officev16.2\Setup.exe /configure D:\Officev16.2\ConfigureO365Home.xml
     ```
 
@@ -211,7 +211,7 @@ This step is required when you're capturing images to apply to other PCs.
     **Troubleshooting**: If you receive an: "A parameter is incorrect" error message when you try to capture or copy the file to the USB key, the file might be too large for the destination file system. Copy the file to a different drive that is formatted as NTFS.
 
 	2.  Copy the image to a network share. Example: 
-    ```syntax
+    ```
 	net use N: \\server\share
 	copy C:\WindowsWithFinalChanges.wim N:\Images\WindowsWithFinalChanges.wim
 	```

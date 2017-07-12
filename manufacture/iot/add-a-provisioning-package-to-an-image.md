@@ -218,7 +218,7 @@ You can connect to your device's portal page to troubleshoot network connections
 
 3.  When connected, check to see what profiles have been installed:
 
-    ```syntax
+    ```
     netsh wlan show profiles
     ``` 
 

@@ -83,7 +83,7 @@ The sample scripts include steps that detect the firmware type (the newer UEFI-b
 
 1.  Apply desktop applications.
 
-    ```syntax
+    ```
     D:\ADKTools\amd64\WimMountAdkSetupAmd64.exe /Install /q
     D:\ADKTools\amd64\DISM.exe /ImagePath:C:\ /Apply-SiloedPackage /PackagePath:E:\SPPs\office16_base.spp /PackagePath:E:\SPPs\office16_fr-fr.spp /PackagePath:E:\SPPs\office16_de-de.spp
 	```
@@ -96,7 +96,7 @@ Include a recovery image for your final images, but it's not required for these 
 
 1.  Apply the Windows Recovery Environment (Windows RE) image. These tools help repair common causes of unbootable operating systems. The image is stored in a separate drive partition. The script **ApplyRecovery.bat** uses the diskpart scripts: HidePartitions-UEFI.txt and HidePartitions-BIOS.txt to set up this partition. These scripts must be placed in the same folder as ApplyRecovery.bat.
 
-	```syntax
+	```
 	D:\ApplyRecovery.bat
 	```
 

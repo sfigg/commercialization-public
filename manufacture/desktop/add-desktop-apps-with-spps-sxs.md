@@ -172,7 +172,7 @@ The short version:
 
 3.  Apply the SPPs. This example applies the Office base pack, plus two language packs: fr-fr and de-de.
     
-    ```syntax
+    ```
     W:\ADKTools\amd64\DISM.exe /Apply-SiloedPackage /ImagePath:W:\ /PackagePath:"e:\SPPs\fabrikam-id.spp" /PackagePath:"D:\SPPs\office16_base.spp" /PackagePath:"D:\SPPs\office16_fr-fr.spp" /PackagePath:"D:\SPPs\office16_de-de.spp"
 	```
 
