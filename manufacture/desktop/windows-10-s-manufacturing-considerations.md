@@ -2,7 +2,7 @@
 author: themar
 Description: 'Windows 10 S WinPE, CI policy, OOBE, and DISM information.'
 MSHAttr: 'PreferredLib:/library/windows/hardware'
-title: 'Windows 10 S manufacturing considerations'
+title: 'Windows 10 S manufacturing environment'
 ms.author: themar
 ms.date: 0/07/2017
 ms.topic: article
@@ -10,7 +10,7 @@ ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-# Manufacturing considerations
+# Manufacturing environment
 
 ## Overview
 
@@ -26,7 +26,7 @@ Once the CI policy is enabled on a system, it is enabled in two places:
 
 ## WinPE
 
-WinPE behaves the same for Windows 10 S as it does for Windows Home or Windows Profesional until the CI policy is enabled and Secure Boot is turned on. Once the policy is enabled and Secure Boot is turned on, WinPE (EFI\Boot folder) needs the CI policy (winsipolicy.p7b) to boot, or you must turn off Secure Boot.
+WinPE behaves the same for Windows 10 S as it does for Windows Home or Windows Professional until the CI policy is enabled and Secure Boot is turned on. Once the policy is enabled and Secure Boot is turned on, WinPE (EFI\Boot folder) needs the CI policy (winsipolicy.p7b) to boot, or you must turn off Secure Boot.
 
 The winsipolicy.p7b file is in the Windows 10 S install.wim in the `Windows\Boot\EFI\` folder and should be copied to the WinPE Boot location (EFI\Boot) on the WinPE media.
 
