@@ -12,7 +12,7 @@ ms.technology: windows-oem
 
 # Planning a Windows 10 S image
 
-Building a Windows 10 S image is like building an image for any other desktop edition of Windows, with some key differences to consider when planning your deployment. You can add apps, drivers, and customizations to Windows 10 S, but you'll have to make sure they are compatible Windows 10 S.
+Building a Windows 10 S image is like building an image for any other desktop edition of Windows, with some key differences to consider when planning your deployment. You can add apps, drivers, and customizations to Windows 10 S, but you'll have to make sure they are supported in Windows 10 S.
 
 ## Executables
 
@@ -20,13 +20,13 @@ When planning a deployment, make sure you understand what runs, and what is bloc
 
 ### What runs on Windows 10 S?
 
-Windows 10 S will only run executable code that is signed with a **Windows**, **WHQL**, **ELAM**, or **Store** certificate from the [Windows Hardware Developer Center Dashboard](https://aka.ms/DevCenterPortal). This includes companion software for drivers.
+Windows 10 S will only run executable code that is signed with a **Windows**, **WHQL**, **ELAM**, or **Store** certificate from the [Windows Hardware Developer Center Dashboard](https://aka.ms/DevCenterPortal). This includes companion apps for drivers.
 
 Any apps not signed with one of the certificates mentioned, including companion apps, are blocked. When a blocked app is run, the user is notified that the app cannot run.
 
 ### What is blocked in Windows 10 S?
 
-The following components are also blocked from running in Windows 10 S:
+The following components are blocked from running in Windows 10 S. Any script or application that calls one of these blocked components will be blocked. If your manufacturing process uses scripts or applications that rely on blocked components, you can temporarily enable manufacturing mode for configuring and testing.
 
 - bash.exe
 - cdb.exe
@@ -47,7 +47,6 @@ The following components are also blocked from running in Windows 10 S:
 - wmic.exe
 - wscript.exe
 
-Any script or application that calls one of these blocked components will be blocked.
 
 ### Testing your app
 
@@ -77,7 +76,7 @@ The following table shows customizations in Windows 10 S, the mechanism to deplo
 | Bridge apps                                                         | DISM                                 | Offline, WinPE, Audit Mode |
 | Drivers with no unsigned or win32 scripts/exe/binaries              | DISM                                 | Offline, WinPE, Audit Mode |
 | Wallpaper                                                           | unattend.xml                         | N/A                        |
-| \<Shift + F10> from first OOBE screen                               | Manufacturing reg key                | OOBE                       |
+| Command prompt from OOBE using \<Shift + F10>                    | Manufacturing reg key                | OOBE                       |
 
 ### Unsupported customizations
 
