@@ -49,7 +49,7 @@ The [Windows Hardware Certification Kit (HCK)](http://go.microsoft.com/fwlink/p/
 ## Alignment
 
 
-The precision touchpad is integrated so that it is level with the palm deck and there is no perceivable depth or delta. *Figure 4 Optimal Depth Offset* shows a side view of the touchpad as seen from the edge of the device. Due to manufacturing and integration tolerances, an allowance of 1.5mm is permitted for the depth offset as described in the Windows HCK. However, we recommend as close to 0mm depth offset (preferably 0-0.2mm as shown in *Figure 4 Optimal Depth Offset*) as possible, for the ideal user experience.
+The precision touchpad is integrated so that it is level with the palm deck and there is no perceivable depth or delta. *Figure 4 Optimal Depth Offset* shows a side view of the touchpad as seen from the edge of the device. Due to manufacturing and integration tolerances, an allowance of 1.5mm is permitted for the depth offset. However, we recommend as close to 0mm depth offset (preferably 0-0.2mm as shown in *Figure 4 Optimal Depth Offset*) as possible, for the ideal user experience.
 
 ![optimal depth offset](../images/igfig4optimaldepthoffset.png)
 
