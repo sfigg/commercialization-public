@@ -134,7 +134,7 @@ Use the steps from [Lab 3: Add device drivers (.inf-style)](add-device-drivers.m
 
     Example: 
     
-    ```syntax
+    ```
     Copy E:\StartLayout\Bing.url  "C:\mount\Windows\ProgramData\Microsoft\Windows\Start Menu\Programs"
     Copy E:\StartLayout\Paint.lnk "C:\mount\Windows\ProgramData\Microsoft\Windows\Start Menu\Programs"
     Copy E:\StartLayout\Bing.url  "C:\mount\Windows\Users\All Users\Microsoft\Windows\Start Menu\Programs"
@@ -164,7 +164,7 @@ In **layoutmodification.xml**:
 
 1.	Add <AppendOfficeSuiteChoice Choice="Desktop2016" /> to the tile:
 
-    ```syntax
+    ```
     <LayoutModificationTemplate	xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification" xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout" xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout">
     <AppendOfficeSuite/>
     <AppendOfficeSuiteChoice Choice="Desktop2016" /> 

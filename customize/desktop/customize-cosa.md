@@ -35,7 +35,7 @@ You can add a new profile that is not yet included in the COSA database using th
 
 1. Create an answer file or edit an existing answer file that contains the new profiles. Here is an example:
 
-  ```syntax
+  ```
     <?xml version="1.0" encoding="UTF-8"?>
   <WindowsCustomizations>
     <PackageConfig xmlns="urn:schemas-Microsoft-com:Windows-ICD-Package-Config.v1.0">

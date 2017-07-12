@@ -73,7 +73,7 @@ To complete the walkthrough, you need the following:
  
     To see the performance effects while the task is running, click Start > Run and type the following command:
     
-    ```syntax
+    ```
     Schtasks.exe /Run /I /TN \Microsoft\Windows\Servicing\StartComponentCleanup
     ```
     
