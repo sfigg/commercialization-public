@@ -73,7 +73,7 @@ While still booted into audit mode:
     reg delete HKLM\system\ControlSet001\Control\CI\Policy /v ManufacturingMode
     ```
 
-The manufacturing registry key is now removed. You can check in the Registry Editor to double check that the key has been removed.
+The manufacturing registry key is now removed. You can check the Registry Editor to double check that the key has been removed.
 
 On your Windows 10 S PC in audit mode:
 
