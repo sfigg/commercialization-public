@@ -56,7 +56,6 @@ The following command-line options are available for Windows Setup. Beginning w
 
 The following table lists Setup command-line options:
 > [!div class="mx-tableFixed"]
-
 | Option | Description |
 |--------|-------------|
 | <span id="1"></span>**/1394Debug:***\<channel>* [**BaudRate:***\<baudrate>*] | Enables kernel debugging over an IEEE 1394 (FireWire) port while Windows is running and during the [windowsPE](windowspe.md) configuration pass of Windows Setup.<br><br>\<channel> specifies the debugging channel. The default value for **\<channel>** is **1**.<br><br>**[baudrate:**\<*baudrate>*] specifies the baud to use when Windows transfers data during debugging. The default setting is **19200**. You can also set the <baudrate> setting to **57600** or **115200**. For example:<br><br> ```Setup /1394debug:1 /baudrate:115200``` |
