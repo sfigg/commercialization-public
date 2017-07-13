@@ -35,7 +35,7 @@ You can mount an image using the **/optimize** option to reduce initial mount ti
 2.  Mount the image.
 
     ```
-    DISM /Mount-Wim /WimFile:<path_to_WIM_file> {/Index:<image_index> | /Name:<image_name>} /MountDir:<target_mount_directory> [/readonly]
+    DISM /Mount-Wim /WimFile:<path_to_WIM_file> {/Index:<image_index> | /Name:<image_name>} /MountDir:<target_mount_directory> [/readonly]}
     ```
 
     >**Note**: To mount a Windows image from a VHD file, you must specify `/index:1`.
