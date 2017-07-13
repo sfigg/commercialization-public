@@ -22,7 +22,7 @@ Removes all profiles from the collection.
 ## Syntax
 
 
-``` syntax
+```
 HRESULT Clear();
 ```
 

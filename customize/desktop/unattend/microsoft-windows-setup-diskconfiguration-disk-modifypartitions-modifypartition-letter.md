@@ -66,7 +66,7 @@ For a list of the Windows editions and architectures that this component support
 
 The following example for the `DiskConfiguration` setting shows two partition modifications. The System and Recovery partitions do not receive a letter. The Windows partition receives the drive letter C. The Data partition receives the first available drive letter between D and Z, depending on what other drives and hardware are present on the computer.
 
-``` syntax
+```
 <DiskConfiguration>
 
   <Disk wcm:action="add">

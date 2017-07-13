@@ -58,7 +58,7 @@ For the list of the supported Windows editions and architectures that this compo
 
 The following XML output shows how to create a page file.
 
-``` syntax
+```
 <PageFile>
    <Path>%WINDIR%\MyPagefile.sys</Path>
    <Size>512</Size>

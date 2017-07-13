@@ -20,7 +20,7 @@ Disables UWF protection of the volume after the next system restart.
 ## Syntax
 
 
-``` syntax
+```
 UInt32 Unprotect();
 ```
 

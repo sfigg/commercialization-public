@@ -57,7 +57,7 @@ For the list of the supported Windows editions and architectures that this compo
 
 The following XML output shows two devices specified, by using `LinearityData`.
 
-``` syntax
+```
 <LinearityData>
 <DeviceElement wcm:action="modify" wcm:keyValue="MyKey">11</DeviceElement>
 <DeviceElement wcm:action="add" wcm:keyValue="MyKey1">12</DeviceElement>

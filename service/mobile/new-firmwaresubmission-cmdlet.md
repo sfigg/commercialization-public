@@ -21,7 +21,7 @@ This is the syntax for **New-FirmwareSubmission**:
 ## <span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>Syntax
 
 
-``` syntax
+```
 NAME
     New-FirmwareSubmission
 SYNOPSIS
@@ -54,13 +54,13 @@ Typically, the only parameter that is specified in this cmdlet is the path to th
 
 Request a new firmware submission and store the result object in a PowerShell variable named $result:
 
-``` syntax
+```
 PS> $result=New-FirmwareSubmission -path C:\Data1\TESTOEM1-MS.TKT-SIGN-TEST-M3ZABC.zip
 ```
 
 Display the result on the console:
 
-``` syntax
+```
 PS> $result | Format-List
 
 FirmwareSubmissionTicketId : TKT-SIGN-TEST-761234    
@@ -76,11 +76,11 @@ FirmwareSubmissionTicketId : TKT-SIGN-TEST-761234
 
 Attempt to retrieve the signed submission for a ticket that is still in process:
 
-``` syntax
+```
 PS> $result=New-FirmwareSubmission -path C:\Data1\TESTOEM1-MS.TKT-SIGN-TEST-NOT-HERE.zip
 ```
 
-``` syntax
+```
 PS C:\windows\system32> $result=New-FirmwareSubmission -path C:\Data1\TESTOEM1-M
 S.TKT-SIGN-TEST-NOT-HERE.zip
 New-FirmwareSubmission : File
@@ -102,7 +102,7 @@ C:\Data1\TESTOEM1-MS.TKT-SIGN-TEST-NOT-HERE ...
 
 The following is the help documentation for the **New-FirmwareSubmission** cmdlet from Windows PowerShell.
 
-``` syntax
+```
 PS C:\Windows\system32> get-help New-FirmwareSubmission -full
 
 NAME
@@ -220,7 +220,7 @@ PS C:\Windows\system32>
 
 Error message:
 
-``` syntax
+```
 New-FirmwareSubmission : An error has occurred. There was no endpoint
     listening at http://wp8partnerservicesv1.cloudapp.net:7159/Firmware.svc that
     could accept the message. This is often caused by an incorrect address or SOAP

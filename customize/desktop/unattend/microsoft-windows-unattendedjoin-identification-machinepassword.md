@@ -59,7 +59,7 @@ For a list of the supported Windows editions and architectures that this compone
 
 The following XML output shows how to specify the value of the unique password for the computer.
 
-``` syntax
+```
 <Identification>
    <Credentials>
       <Domain>fabrikam.com</Domain>

@@ -39,7 +39,7 @@ Describes the configuration to enable the kernel-mode provider. The system provi
 ## Syntax
 
 
-``` syntax
+```
 <SystemProvider Id   = IdType
                 Base = string>
 
@@ -164,7 +164,7 @@ For information about how to define pool tags, see [PoolTag](pooltag.md).
 ## Example
 
 
-``` syntax
+```
 <SystemProvider Id="system-provider">
   <Keywords>
     <Keyword Value="ProcessThread"/>

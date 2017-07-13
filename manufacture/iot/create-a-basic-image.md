@@ -27,7 +27,7 @@ See [Get the tools needed to customize Windows IoT Core](set-up-your-pc-to-custo
 
 -   Open the file **C:\\IoT-ADK-AddonKit\\Tools\\setOEM.cmd** in Notepad, and modify it with your company name. We've added this variable to help you create packages with names that are easy to differentiate from those provided from other manufacturers you're working with.
 
-    ``` syntax
+    ```
     set OEM_NAME=Fabrikam
     ```
 
@@ -80,7 +80,7 @@ buildpkg All
 
 Create a new product folder that uses the Rpi2 BSP. This folder represents a new device we want to build, and contains sample customization files that we can use to start our project.
 
-``` syntax
+```
 newproduct ProductA rpi2
 ```
     
@@ -94,7 +94,7 @@ This creates the folder: C:\\IoT-ADK-AddonKit\\Source-&lt;arch&gt;\\Products\\Pr
 
 2.  Build a flashable test image using the default files. Test images include additional tools, and you can create test images using either signed or unsigned test packages.
 
-    ``` syntax
+    ```
     buildimage ProductA test
     ```
 

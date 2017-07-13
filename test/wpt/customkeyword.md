@@ -47,7 +47,7 @@ Represents a custom keyword for the profile.
 ## Syntax
 
 
-``` syntax
+```
 <CustomKeyword Value = SystemCustomKeywordAttributeType>
 </CustomKeyword>
 ```

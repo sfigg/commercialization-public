@@ -17,7 +17,7 @@ ms.technology: windows-oem
 
 The mouse report descriptor sample shows the pointer device usage in a physical collection.
 
-``` syntax
+```
 //
     // Dummy mouse collection starts here
     //

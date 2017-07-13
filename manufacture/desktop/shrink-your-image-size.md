@@ -36,7 +36,7 @@ After adding a language or Windows update package, you can reduce the size of th
 
 1.  Optimize the image:
 
-    ``` syntax
+    ```
     Dism /Image:c:\mount\windows /Cleanup-Image /StartComponentCleanup /ResetBase
     ```
 
@@ -47,7 +47,7 @@ After adding a language or Windows update package, you can reduce the size of th
 
 -   Unmount and save the image:
 
-    ``` syntax
+    ```
     Dism /Unmount-Image /MountDir:C:\mount\windows /Commit
     ```
 
@@ -57,7 +57,7 @@ If you've optimized the image, you'll need to export the image in order to see a
 
 1.  Export the Windows image into a new image file.
 
-    ``` syntax
+    ```
     Dism /Export-Image /SourceImageFile:"C:\Images\Win10_x64\sources\install.wim" /SourceIndex:1 /DestinationImageFile:"C:\Images\Win10_x64\sources\install-optimized.wim"
     ```
 

@@ -18,19 +18,19 @@ Use DISM with Windows cabinet (.cab) or Windows Update Stand-alone Installer (.
 
 ## <span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>Syntax
 
-``` syntax
+```
 DISM.exe {/Image:<path_to_image_directory> | /Online} [dism_global_options] {servicing_option} [<servicing_argument>]
 ```
 
 The following operating system package-servicing options are available for an offline image:
 
-``` syntax
+```
 DISM.exe /Image:<path_to_image_directory> [/Get-Packages | /Get-PackageInfo | /Add-Package | /Remove-Package ] [/Get-Features | /Get-FeatureInfo | /Enable-Feature | /Disable-Feature ] [/Cleanup-Image]
 ```
 
 The following operating system package-servicing options are available for a running operating system:
 
-``` syntax
+```
 DISM.exe /Online [/Get-Packages | /Get-PackageInfo | /Add-Package | /Remove-Package ] [/Get-Features | /Get-FeatureInfo | /Enable-Feature | /Disable-Feature ] [/Cleanup-Image]
 ```
 
@@ -46,17 +46,17 @@ Additional topics might become available when an image is specified.
 
 Syntax:
 
-``` syntax
+```
 Dism /Get-Help 
 ```
 
 Examples:
 
-``` syntax
+```
 Dism /Image:C:\test\offline /Add-Package /?
 ```
 
-``` syntax
+```
 Dism /Online /Get-Packages /?
 ```
 
@@ -66,21 +66,21 @@ Displays basic information about all packages in the image. Use the /Format:Tabl
 
 Syntax:
 
-``` syntax
+```
 Dism /Get-Packages [/Format:{Table | List}]
 ```
 
 Examples:
 
-``` syntax
+```
 Dism /Image:C:\test\offline /Get-Packages
 ```
 
-``` syntax
+```
 Dism /Image:C:\test\offline /Get-Packages /Format:Table
 ```
 
-``` syntax
+```
 Dism /Online /Get-Packages
 ```
 
@@ -92,17 +92,17 @@ You can use the /Get-Packages option to find the name of the package in the imag
 
 Syntax:
 
-``` syntax
+```
 Dism /Get-PackageInfo {/PackageName:<name_in_image> | /PackagePath:<path_to_cabfile>}
 ```
 
 Examples:
 
-``` syntax
+```
 Dism /Image:C:\test\offline /Get-PackageInfo /PackagePath:C:\packages\package.cab
 ```
 
-``` syntax
+```
 Dism /Image:C:\test\offline /Get-PackageInfo /PackageName:Microsoft.Windows.Calc.Demo~6595b6144ccf1df~x86~en~1.0.0.0
 ```
 
@@ -130,21 +130,21 @@ Use the /PreventPending option to skip the installation of the package if the pa
 
 Syntax:
 
-``` syntax
+```
 Dism /Add-Package /PackagePath:<path_to_cabfile> [/IgnoreCheck] [/PreventPending]
 ```
 
 Examples:
 
-``` syntax
+```
 Dism /Image:C:\test\offline /LogPath:AddPackage.log /Add-Package /PackagePath:C:\packages\package.msu
 ```
 
-``` syntax
+```
 Dism /Image:C:\test\offline /Add-Package /PackagePath:C:\packages\package1.cab /PackagePath:C:\packages\package2.cab /IgnoreCheck
 ```
 
-``` syntax
+```
 Dism /Image:C:\test\offline /Add-Package /PackagePath:C:\test\packages\package.cab /PreventPending
 ```
 
@@ -159,21 +159,21 @@ You can use the /PackagePath option to point to the original source of the packa
 
 Syntax:
 
-``` syntax
+```
 /Remove-Package {/PackageName:<name_in_image> | /PackagePath:<path_to_cabfile>}
 ```
 
 Examples:
 
-``` syntax
+```
 Dism /Image:C:\test\offline /LogPath:C:\test\RemovePackage.log /Remove-Package /PackageName:Microsoft.Windows.Calc.Demo~6595b6144ccf1df~x86~en~1.0.0.0
 ```
 
-``` syntax
+```
 Dism /Image:C:\test\offline /LogPath:C:\test\RemovePackage.log /Remove-Package /PackageName:Microsoft.Windows.Calc.Demo~6595b6144ccf1df~x86~en~1.0.0.0 /PackageName:Microsoft-Windows-MediaPlayer-Package~31bf3856ad364e35~x86~~6.1.6801.0
 ```
 
-``` syntax
+```
 Dism /Image:C:\test\offline /LogPath:C:\test\RemovePackage.log /Remove-Package /PackagePath:C:\packages\package1.cab /PackagePath:C:\packages\package2.cab
 ```
 
@@ -187,25 +187,25 @@ Use the /Format:Table or /Format:List argument to display the output as a table 
 
 Syntax:
 
-``` syntax
+```
 /Get-Features {/PackageName:<name_in_image> | /PackagePath:<path_to_cabfile>} [/Format:{Table | List}]
 ```
 
 Examples:
 
-``` syntax
+```
 Dism /Image:C:\test\offline /Get-Features
 ```
 
-``` syntax
+```
 Dism /Image:C:\test\offline /Get-Features /Format:List
 ```
 
-``` syntax
+```
 Dism /Image:C:\test\offline /Get-Features /PackageName:Microsoft.Windows.Calc.Demo~6595b6144ccf1df~x86~en~1.0.0.0
 ```
 
-``` syntax
+```
 Dism /Image:C:\test\offline /Get-Features /PackagePath:C:\packages\package1.cab
 ```
 
@@ -217,17 +217,17 @@ Displays detailed information about a feature. You must use /FeatureName. Featur
 
 Syntax:
 
-``` syntax
+```
 /Get-FeatureInfo /FeatureName:<name_in_image> [{/PackageName:<name_in_image> | /PackagePath:<path_to_cabfile>}]
 ```
 
 Examples:
 
-``` syntax
+```
 Dism /Image:C:\test\offline /Get-FeatureInfo /FeatureName:Hearts
 ```
 
-``` syntax
+```
 Dism /Image:C:\test\offline /Get-FeatureInfo /FeatureName:Hearts /PackagePath:C:\packages\package.cab
 ```
 
@@ -251,21 +251,21 @@ The /Source, /LimitAccess, and /All arguments can be used with Windows 10, Wind
 
 Syntax:
 
-``` syntax
+```
 /Enable-Feature /FeatureName:<name_in_image> [/PackageName:<name_in_image>] [/Source: <source>] [/LimitAccess] [/All]
 ```
 
 Examples:
 
-``` syntax
+```
 Dism /Online /Enable-Feature /FeatureName:Hearts /All
 ```
 
-``` syntax
+```
 Dism /Online /Enable-Feature /FeatureName:Calc /Source:c:\test\mount\Windows /LimitAccess
 ```
 
-``` syntax
+```
 Dism /Image:C:\test\offline /Enable-Feature /FeatureName:Calc /PackageName:Microsoft.Windows.Calc.Demo~6595b6144ccf1df~x86~en~1.0.0.0
 ```
 
@@ -281,17 +281,17 @@ Use /Remove to remove a feature without removing the feature's manifest from the
 
 Syntax:
 
-``` syntax
+```
 /Disable-Feature /FeatureName:<name_in_image> [/PackageName:<name_in_image>] [/Remove]
 ```
 
 Examples:
 
-``` syntax
+```
 *Dism /Online /Disable-Feature /FeatureName:Hearts
 ```
 
-``` syntax
+```
 Dism /Image:C:\test\offline /Disable-Feature /FeatureName:Calc /PackageName:Microsoft.Windows.Calc.Demo~6595b6144ccf1df~x86~en~1.0.0.0
 ```
 
@@ -306,7 +306,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Component Based Ser
 
 Syntax:
 
-``` syntax
+```
 /Cleanup-Image {/RevertPendingActions | /SPSuperseded [/HideSP] | /StartComponentCleanup [/ResetBase [/Defer]] | /AnalyzeComponentStore | /CheckHealth | /ScanHealth | /RestoreHealth [/Source: <filepath>] [/LimitAccess]}
 ```
 
@@ -324,19 +324,19 @@ Syntax:
 
 Examples:
 
-``` syntax
+```
 Dism /Image:C:\test\offline /Cleanup-Image /RevertPendingActions
 ```
 
-``` syntax
+```
 Dism /Image:C:\test\offline /Cleanup-Image /SPSuperseded /HideSP
 ```
 
-``` syntax
+```
 Dism /Online /Cleanup-Image /ScanHealth
 ```
 
-``` syntax
+```
 Dism /Online /Cleanup-Image /RestoreHealth /Source:c:\test\mount\windows /LimitAccess
 ```
 

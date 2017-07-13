@@ -211,7 +211,7 @@ The following table describes the optional elements that OEMs can include in the
 
 The OEMInput file is validated against the following XML schema. You can use this schema to validate the OEMInput XML files that you create. To do this in Visual Studio, first save this in a file with an XSD extension. In Visual Studio select **XML** &gt; **Schemas** and select the file that you created. Any deviations in your XML from the schema will be highlighted. Hover over the highlighted items to see additional information.
 
-``` syntax
+```
 <?xml version="1.0" encoding="utf-8"?>  
 <xs:schema targetNamespace="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate" 
       elementFormDefault="qualified" 

@@ -84,7 +84,7 @@ specialize
 
 The following example shows how to set values for customizing the **Help and Support** user interface. This example customizes the **Help and Support** page to have a blue (16711680) OEM tile that includes the Fabrikam logo. When a user clicks the tile, the default Web browser opens http://www.fabrikam.com/support. When a user performs a search while offline, the system returns the matching offline Fabrikam topics in the **Help and Support** search results. When a user performs a search while online, the system returns the matching Fabrikam topics from the http://www.fabrikam.com/support/search page in the **Help and Support** search results. The Fabrikam name appears on the search-results page and on the OEM tile on the home page.
 
-``` syntax
+```
 <HelpAndSupport>
   <Logo>C:\Fabrikam\Logos\Logo.bmp</Logo>
   <LogoURL>http://www.fabrikam.com/support</LogoURL>

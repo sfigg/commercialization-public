@@ -20,7 +20,7 @@ Disables Unified Write Filter (UWF) on the next restart.
 ## Syntax
 
 
-``` syntax
+```
 UInt32 Disable();
 ```
 

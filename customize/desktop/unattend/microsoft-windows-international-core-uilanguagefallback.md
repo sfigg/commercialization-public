@@ -72,7 +72,7 @@ For the list of the Windows editions and architectures that this component suppo
 
 The following example shows how to set the fallback language to US English (United States).
 
-``` syntax
+```
 <InputLocale>0401:00000401</InputLocale> 
 <SystemLocale>ar-SA</SystemLocale> 
 <UILanguage>ar-SA</UILanguage> 

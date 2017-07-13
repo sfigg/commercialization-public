@@ -82,7 +82,7 @@ For the list of the supported Windows editions and architectures this component 
 
 The following XML output shows how to set asynchronous commands.
 
-``` syntax
+```
 <RunAsynchronous>
    <RunAsynchronousCommand wcm:action="add">
       <Credentials>

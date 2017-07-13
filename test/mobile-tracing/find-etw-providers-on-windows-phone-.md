@@ -28,7 +28,7 @@ Open FieldMedic.zip, and then open the ProfileXMLs folder.
 
 In the ProfileXMLs folder, open any profile XML file to see the GUIDs of the ETW providers that belong to the profile. For example, open FieldMedic-Performance.xml.
 
-``` syntax
+```
 <EventProvider Name="A6BF0DEB-3659-40ad-9F81-E25AF62CE3C7" …/>
 <EventProvider Name="331C3B3A-2005-44C2-AC5E-77220C37D6B4" …/>
 <EventProvider Name="0F67E49F-FE51-4E9F-B490-6F2948CC6027" …/>
@@ -47,7 +47,7 @@ Example: C:\\Program Files (x86)\\Windows Kits\\10\\Manifests
 
 In the Manifests folder, open any manifest (.mc) file to see the ETW provider name and GUID. For example, open microsoft-windowsphone-mtp.mc.
 
-``` syntax
+```
 <provider name="Microsoft-WindowsPhone-Mtp"
           guid="{13D97131-EE68-43F4-A1D0-9E762D2A4729}"
 ```
@@ -59,13 +59,13 @@ Establish a TShell connection between a computer and the device.
 
 On the computer, in TShell, enter this command:
 
-``` syntax
+```
 exec-device xperf –providers I
 ```
 
 The output is similar to this:
 
-``` syntax
+```
 …
 0063715b-eeda-4007-9429-ad526f62696e             : Microsoft-Windows-Services
 00a083e0-1eda-4c82-9a16-e62b1bbc0659             : Microsoft-WindowsPhone-WboExt
@@ -80,13 +80,13 @@ The output is similar to this:
 
 In TShell, enter this command:
 
-``` syntax
+```
 reg-device query HKLM\Software\Microsoft\Windows\CurrentVersion\WINEVT\Publishers /s > publishers.txt
 ```
 
 The output is similar to this:
 
-``` syntax
+```
 HKEY_LOCAL_MACHINE\...\Publishers\{0063715B-EEDA-4007-9429-AD526F62696E}
     (Default)    REG_SZ    Microsoft-Windows-Services
     Enabled    REG_DWORD    0x1
@@ -108,7 +108,7 @@ In TShell, enter these commands:
 
 For production images, you might be interested in the WinPhoneCritical and WinPhoneCircular sessions.
 
-``` syntax
+```
  Copy imageCopy code  
 exec-device tracelog –q WinPhoneCritical -lp
 exec-device tracelog –q WinPhoneCircular -lp
@@ -116,7 +116,7 @@ exec-device tracelog –q WinPhoneCircular -lp
 
 The output is similar to this:
 
-``` syntax
+```
 Logger Name:            WinPhoneCritical
 …
 Log Mode:               AddToTriageDump  Buffering-only

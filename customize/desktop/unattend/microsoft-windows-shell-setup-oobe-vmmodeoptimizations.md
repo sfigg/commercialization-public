@@ -73,7 +73,7 @@ For a list of the Windows editions and architectures that this component support
 
 The following example shows how to set the VM mode optimization settings in the OOBE node of your Unattend.xml file.
 
-``` syntax
+```
             <OOBE>
                 <VMModeOptimizations>
                     <SkipAdministratorProfileRemoval>true</SkipAdministratorProfileRemoval>

@@ -219,7 +219,7 @@ To modify the list of speech languages, the OEM must edit the **Keyboard** secti
 
 OEMs must include at least one keyboard language. To include multiple languages, add additional **Language** entries to the **Keyboard** section of the OEMInput.xml file, as shown in the following sample.
 
-``` syntax
+```
   <SupportedLanguages>
     <UserInterface>
       <Language>en-US</Language>

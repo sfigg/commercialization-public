@@ -22,7 +22,7 @@ Starts shutdown recording.
 ## Syntax
 
 
-``` syntax
+```
 HRESULT StartShutdownRecording
   ([in] IProfileCollection* pProfileCollection)
 ;

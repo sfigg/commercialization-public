@@ -19,7 +19,7 @@ ms.technology: windows-oem
 
 Displays available providers and groups.
 
-``` syntax
+```
 xperf -providers [Installed|I] [Registered|R] [KernelFlags|KF] [KernelGroups|KG] [Kernel|K]
 ```
 

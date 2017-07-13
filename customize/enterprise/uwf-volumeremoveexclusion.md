@@ -20,7 +20,7 @@ Removes a specific file or folder from the file exclusion list for a volume prot
 ## Syntax
 
 
-``` syntax
+```
 UInt32 RemoveExclusion(
     string FileName
 );

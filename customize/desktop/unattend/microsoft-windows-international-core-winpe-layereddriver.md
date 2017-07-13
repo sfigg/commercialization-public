@@ -81,7 +81,7 @@ For a list of the Windows editions and architectures that this component support
 
 The following example configures the `LayeredDriver` setting to use the Japanese (106/109) keyboard.
 
-``` syntax
+```
 <LayeredDriver>6</LayeredDriver>
 ```
 

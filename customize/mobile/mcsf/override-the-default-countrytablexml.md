@@ -24,7 +24,7 @@ OEMs can override the default country/region lookup table and instruct the runti
 <a href="" id="instructions-"></a>**Instructions:**  
 1.  Create a customization answer file using the contents shown in the following code sample.
 
-    ``` syntax
+    ```
     <?xml version="1.0" encoding="utf-8" ?>  
     <ImageCustomizations xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate"  
                          Name="OverrideDefaultCountryLookup"  
@@ -76,7 +76,7 @@ OEMs can override the default country/region lookup table and instruct the runti
 
     OEMs who provide their own country/region lookup table must use the following format for the XML file:
 
-    ``` syntax
+    ```
     <countrytable>
        <country mcc="202" iso3166="GR" GeoID="98"/>        <!-- Greece -->
        <country mcc="204" iso3166="NL" GeoID="176"/>       <!-- Netherlands -->

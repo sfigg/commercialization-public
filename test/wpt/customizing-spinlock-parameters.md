@@ -19,7 +19,7 @@ ms.technology: windows-oem
 
 By default, the system logs one spinlock event for every 1000 non-contended acquisitions, and one spinlock event for every contended acquisition. Spinlock data collection supports three parameters that enable you to customize data collection. To set spinlock collection parameters, use the following command.
 
-``` syntax
+```
 xperf -setspinlocksample [spin_threshold] [acquire_sample_rate] [contention_sample_rate]
 ```
 
@@ -45,19 +45,19 @@ Spinlock collection parameters return to the default values when the system rebo
 
 The following example shows how to query for the current values.
 
-``` syntax
+```
 xperf -spinlock
 ```
 
 The following example sets the spin threshold to 1, the acquire sample rate to 1000, and the spinlock contention sample rate to 100.
 
-``` syntax
+```
 xperf -setspinlocksample 1 1000 100
 ```
 
 This query returns the following result for the values set in the previous example.
 
-``` syntax
+```
 Current Spinlock Spin Threshold = 1
 Current Spinlock Acquire Sample Rate = 1000
 Current Spinlock Contention Sample Rate = 100

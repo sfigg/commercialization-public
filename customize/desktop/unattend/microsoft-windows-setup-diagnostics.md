@@ -57,7 +57,7 @@ For the list of the supported Windows editions and architectures that this compo
 
 The following XML output shows how to change this setting so that no information is sent.
 
-``` syntax
+```
 <Diagnostics>
    <OptIn>false</OptIn>
 </Diagnostics>

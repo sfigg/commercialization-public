@@ -19,7 +19,7 @@ ms.technology: windows-oem
 
 This action produces an XML file that summarizes the metrics for the suspend sequence.
 
-``` syntax
+```
 -a suspend [-summary] [-timeout <unit> [<precision>]] [-min <duration>]
 ```
 

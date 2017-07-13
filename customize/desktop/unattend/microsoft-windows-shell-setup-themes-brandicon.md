@@ -69,7 +69,7 @@ For a list of the Windows editions and architectures that this component support
 
 The following example shows how to set a customized logo to represent a theme.
 
-``` syntax
+```
 <Themes>
    <ThemeName>Fabrikam Theme</ThemeName>
    <DesktopBackground>%WINDIR%\web\wallpaper\fabrikam.jpg</DesktopBackground>

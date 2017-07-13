@@ -59,7 +59,7 @@ For the list of the supported Windows editions and architectures that this compo
 
 The following XML output shows how to set [UserAccounts](microsoft-windows-shell-setup-useraccounts.md).
 
-``` syntax
+```
 <UserAccounts>
    <LocalAccounts>
       <LocalAccount wcm:action="add">

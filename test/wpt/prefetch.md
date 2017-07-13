@@ -19,7 +19,7 @@ ms.technology: windows-oem
 
 This action produces a text file that summarizes the metrics regarding prefetches.
 
-``` syntax
+```
 -a prefetch [-summary] [-timeunit <unit> [<precision>]] [-min <duration>]
 ```
 

@@ -31,7 +31,7 @@ Represents a collection of problem categories and collectors elements.
 ## Syntax
 
 
-``` syntax
+```
 <Profile Id          = IdType
          Name        = string
          Description = string
@@ -216,7 +216,7 @@ Derived profiles have all the attributes of the base profile by default. These c
 
 The following code example shows a profile definition.
 
-``` syntax
+```
 <Profile
   Id="Example.Light.File"
   Name="Example"

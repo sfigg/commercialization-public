@@ -36,7 +36,7 @@ For a comprehensive list of optional Microsoft components, refer to the *OEM Pol
 
     In the following example, the &lt;FEATURE&gt; entry shows what you need to delete from your OEMInput.xml file.
 
-    ``` syntax
+    ```
     <Features>
        <Microsoft>
           <Feature>SKYPE</Feature>
@@ -58,7 +58,7 @@ For a comprehensive list of optional Microsoft components, refer to the *OEM Pol
 
     In the following example, the &lt;FEATURE&gt; entry shows what you need to delete from your OEMInput.xml file.
 
-    ``` syntax
+    ```
     <Features>
        <Microsoft>
           <Feature>FACEBOOK</Feature>
@@ -82,7 +82,7 @@ For a comprehensive list of optional Microsoft components, refer to the *OEM Pol
 
     In the following example, the &lt;FEATURE&gt; entry shows what you need to delete from your OEMInput.xml file.
 
-    ``` syntax
+    ```
     <Features>
        <Microsoft>
           <Feature>Docking</Feature>

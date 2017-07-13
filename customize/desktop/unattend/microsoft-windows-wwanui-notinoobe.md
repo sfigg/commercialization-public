@@ -63,7 +63,7 @@ For a full list of the Windows editions and architectures that this component su
 
 The following XML output shows how to hide the mobile broadband category in OOBE.
 
-``` syntax
+```
 <NotInOOBE>true</NotInOOBE>
 ```
 

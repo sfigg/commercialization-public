@@ -25,7 +25,7 @@ The UWF master servicing script (UwfServicingMasterScript.cmd) is located in the
 
 The full UWF master servicing script follows:
 
-``` syntax
+```
 REM servicing of the device with UWF installed. The script will 
 REM call UWF manager application to update the system with the 
 REM latest available updates.

@@ -78,7 +78,7 @@ For the list of the supported Windows editions and architectures that this compo
 
 The following XML output shows how to specify that the entry points for these Windows features not be displayed.
 
-``` syntax
+```
 <WindowsFeatures>
    <ShowInternetExplorer>false</ShowInternetExplorer>
    <ShowMediaCenter>false</ShowMediaCenter>

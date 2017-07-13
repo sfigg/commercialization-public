@@ -33,7 +33,7 @@ Indicates the delay, in seconds, when emerging from a sleep state for an [OnOffT
 ## Syntax
 
 
-``` syntax
+```
 <WakeupDelay Value = SimpleDelayValueType>
 </WakeupDelay>
 ```
@@ -105,7 +105,7 @@ None.
 
 The following code example shows the configuration of this element.
 
-``` syntax
+```
 <OnOffTransitionConfiguration
   Id="OnOffTransitionConfiguration_Default_Boot"
   Name="OnOffTransitionConfiguration_Default_Boot"

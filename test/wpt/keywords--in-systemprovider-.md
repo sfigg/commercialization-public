@@ -47,7 +47,7 @@ Represents a collection of keywords. If the **Operation** attribute is specified
 ## Syntax
 
 
-``` syntax
+```
 <Keywords Operation = OperationEnumeration = "Set" | "Add" | “Remove” >
 
   <!-- Child elements -->

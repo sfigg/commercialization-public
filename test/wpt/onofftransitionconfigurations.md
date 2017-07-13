@@ -29,7 +29,7 @@ Represents a collection of on/off transitions.
 ## Syntax
 
 
-``` syntax
+```
 <OnOffTransitionConfigurations>
 
   <!-- Child elements -->

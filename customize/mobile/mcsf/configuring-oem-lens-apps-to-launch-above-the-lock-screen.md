@@ -28,7 +28,7 @@ The steps for configuring an OEM lens app to run above the lock screen are very 
 
 1.  Create a customization answer file using the contents shown in the following code sample.
 
-    ``` syntax
+    ```
     <?xml version="1.0" encoding="utf-8" ?>  
     <ImageCustomizations xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate"  
                          Name="OEMLensAboveLock"  
@@ -75,7 +75,7 @@ The steps for configuring an OEM lens app to run above the lock screen are very 
 
     3.  Specify up to 5 lens apps by creating a registry entry for each as shown in the preceding example. For example, to configure two lens apps to show in the camera CPL, you need to add the following registry entries:
 
-        ``` syntax
+        ```
            <Settings Path="Photos/LensApps/{00000000-0000-0000-0000-000000000000}">       
               <Setting Name="Title" Value="Contoso Fish Eye Lens" />  
            </Settings> 
@@ -95,7 +95,7 @@ The steps for configuring an OEM lens app to run above the lock screen are very 
 
         In the following example, the Contoso Sepia Lens app has been designated as the OEM lens app to run above the lock screen.
 
-        ``` syntax
+        ```
            <Settings Path="Photos/LensApps/{00000000-0000-0000-0000-000000000000}">       
               <Setting Name="Title" Value="Contoso Fish Eye Lens" />  
            </Settings> 

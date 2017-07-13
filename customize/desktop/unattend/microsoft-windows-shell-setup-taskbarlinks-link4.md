@@ -77,7 +77,7 @@ For a list of the supported Windows editions and architectures that this compone
 
 The following XML output shows how to add shortcuts for Remote Desktop Connection, Sound Recorder in the desktop, calculator in the desktop, Snipping Tool, Sticky Notes, and Wordpad on the taskbar.
 
-``` syntax
+```
 <TaskbarLinks>
    <Link0>%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\Accessories\Remote Desktop Connection.lnk</Link0>
    <Link1>%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\Accessories\Sound Recorder.lnk</Link1>

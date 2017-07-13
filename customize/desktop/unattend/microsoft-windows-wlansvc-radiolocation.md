@@ -82,7 +82,7 @@ For a list of the Windows editions and architectures that this component support
 
 This XML example shows how to configure Windows to provide specific instructions on how to activate the WLAN for the fictitious computer, Fabrikam Model FNB1:
 
-``` syntax
+```
 <RadioLocation>To activate the wireless LAN on the Fabrikam Model FNB1, slide the wireless switch on the left side of the computer to ON.</RadioLocation>
 ```
 

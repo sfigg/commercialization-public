@@ -66,7 +66,7 @@ For a list of the Windows editions and architectures that this component support
 
 The following example shows how to set search providers.
 
-``` syntax
+```
 <SearchScopes>
    <Scope wcm:action="add">
       <ScopeDefault>true</ScopeDefault>

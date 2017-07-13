@@ -73,7 +73,7 @@ For a list of the supported Windows editions and architectures that this compone
 
 The following XML output shows **ClearType** enabled for font smoothing.
 
-``` syntax
+```
 <VisualEffects>
    <FontSmoothing>ClearType</FontSmoothing>
 </VisualEffects>

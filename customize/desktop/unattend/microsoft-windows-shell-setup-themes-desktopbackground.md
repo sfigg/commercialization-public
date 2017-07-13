@@ -75,7 +75,7 @@ For a list of the Windows editions and architectures that this component support
 
 The following XML output shows how to assign a background to a customized theme.
 
-``` syntax
+```
 <Themes>
    <ThemeName>Fabrikam Theme</ThemeName>
    <DesktopBackground>%WINDIR%\web\wallpaper\fabrikam.jpg</DesktopBackground>

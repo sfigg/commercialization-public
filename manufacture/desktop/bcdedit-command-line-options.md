@@ -95,13 +95,13 @@ The following command-line options are available for BCDEdit.exe.
 
 For example, this command will enable the system to trust Windows Insider Preview builds that are signed with certificates that are not trusted by default:
 
-``` syntax
+```
 Bcdedit /set {bootmgr} flightsigning on
 Bcdedit /set flightsigning on
 ```
 Reboot after running the command. To turn off flightsigning:
 
-``` syntax
+```
 Bcdedit /set {bootmgr} flightsigning off
 Bcdedit /set flightsigning off
 ``` 
@@ -169,13 +169,13 @@ Bcdedit /set flightsigning off
 
 To troubleshoot a new installation, enable debug mode by modifying the boot configuration file (BCD). For example, use the following syntax to enable kernel or boot debug.
 
-``` syntax
+```
 bcdedit /set <id> debug on
 ```
 
 -or-
 
-``` syntax
+```
 bcdedit /set <id> bootdebug on
 ```
 

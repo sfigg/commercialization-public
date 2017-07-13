@@ -32,7 +32,7 @@ This is how to retrieve existing ETW logs from a retail device:
 
 4.  In Windows Explorer, copy the files from these two directories.
 
-    ``` syntax
+    ```
     <mass storage drive letter>:\Data\SystemData\Telemetry
     <mass storage drive letter>:\Data\SystemData\ETW
     ```

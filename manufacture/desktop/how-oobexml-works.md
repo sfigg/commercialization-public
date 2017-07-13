@@ -114,7 +114,7 @@ To identify the country/region:
 
 2.  Convert the value from hexadecimal to decimal, and use that value for the folder name. For example, to create a folder for Chile (GeoID 0x2E), name the folder "46".
 
-    ``` syntax
+    ```
     \%WINDIR%\System32\Oobe\Info\46\Oobe.xml
     ```
 
@@ -122,7 +122,7 @@ To identify the country/region:
 
 To identify the language, use the decimal version of the Locale ID (LCID) value. For example, to create a Spanish folder, name the folder "3082".
 
-``` syntax
+```
 %WINDIR%\System32\Oobe\Info\Default\3082\Oobe.xml
 ```
 

@@ -83,7 +83,7 @@ For the list of the supported Windows editions and architectures that this compo
 
 The following XML output shows how to enable RAS and set the router type for LAN access.
 
-``` syntax
+```
 <ConfigurationFlags>true</ConfigurationFlags> 
 <RouterType>2</RouterType>
 ```

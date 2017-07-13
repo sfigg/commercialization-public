@@ -26,7 +26,7 @@ For phones that will ship in China and India, OEMs can add one preloaded WAP bro
 
     2.  Add the following XML to the **App** element of the application manifest.
 
-        ``` syntax
+        ```
         <Extensions> 
            <Protocol Name="wap" Category="phone.protocol" TaskID="_default" NavUriFragment="uri=%s"/>
            <FileTypeAssociation Name="TestFileAssoc1" Category="phone.fileTypeAssociation" TaskID="_default" 
@@ -50,7 +50,7 @@ For phones that will ship in China and India, OEMs can add one preloaded WAP bro
 
     3.  The WAP browser application manifest file should look like the following XML.
 
-        ``` syntax
+        ```
         <?xml version="1.0" encoding="UTF-8"?>
         <Deployment AppPlatformVersion="8.0" xmlns="http://schemas.microsoft.com/windowsphone/2009/deployment"> 
            <App xmlns="" Publisher="TestWAPApp" Description="Sample description" Author="TestWAPApp author" 
@@ -91,7 +91,7 @@ For phones that will ship in China and India, OEMs can add one preloaded WAP bro
 
     1.  Create a customization answer file using the contents shown in the following code sample.
 
-        ``` syntax
+        ```
         <?xml version="1.0" encoding="utf-8" ?>  
         <ImageCustomizations xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate"  
                              Name="WAPBrowser"  

@@ -71,7 +71,7 @@ Adjust the screen to 40% of the baseline brightness level when the ambient light
 
 Adjust the screen to 80% of the baseline brightness level when the ambient light sensor detects 68 lux.
 
-``` syntax
+```
 <ALRPoints>000000000a0000000a00000028000000280000005000000044</ALRPoints>
 <DisplayResponseInterval>60000</DisplayResponseInterval>
 <IlluminanceChangeSensitivity>20</IlluminanceChangeSensitivity>

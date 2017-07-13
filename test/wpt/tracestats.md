@@ -19,7 +19,7 @@ ms.technology: windows-oem
 
 This action produces a text file that summarizes trace statistics.
 
-``` syntax
+```
 -a tracestats [-timespan [actual]] [-detail] [-timezone {utc | local}]
 ```
 

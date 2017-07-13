@@ -62,7 +62,7 @@ For the list of the supported Windows editions and architectures that this compo
 
 The following XML output shows a DNS domain configuration for Fabrikam.
 
-``` syntax
+```
    <DNSDomain>fabrikam.com</DNSDomain>
    <DNSSuffixSearchOrder>
       <DomainName wcm:action="add" wcm:keyValue="1">server1.fabrikam.com</DomainName>

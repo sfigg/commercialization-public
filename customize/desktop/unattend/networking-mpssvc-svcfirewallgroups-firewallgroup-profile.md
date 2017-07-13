@@ -69,7 +69,7 @@ For the list of the supported Windows editions and architectures that this compo
 
 The following XML output shows how to set Windows Firewall groups.
 
-``` syntax
+```
 <FirewallGroups>
       <FirewallGroup wcm:action="add" wcm:keyValue="RemoteDesktop">
       <Active>true</Active> 

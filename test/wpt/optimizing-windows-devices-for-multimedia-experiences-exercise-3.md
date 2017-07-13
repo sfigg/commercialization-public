@@ -30,13 +30,13 @@ Offloading audio processing on chipsets that support audio offload results in lo
 
 5.  Run the following command:
 
-    ``` syntax
+    ```
     xa -i <AudioNotOffloaded.etl location>\AudioNotOffloaded.etl
     ```
 
     For example, if you downloaded **AudioNotOffloaded.etl** to C:\\Performance\\Media\\, you would type the following command:
 
-    ``` syntax
+    ```
     xa -i C:\Performance\Media\AudioOffload\AudioNotOffloaded.etl
     ```
 

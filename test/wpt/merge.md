@@ -19,7 +19,7 @@ ms.technology: windows-oem
 
 Displays trace merge options.
 
-``` syntax
+```
 xperf -merge trace1.etl trace2.etl … merged.etl
 ```
 
@@ -28,7 +28,7 @@ xperf -merge trace1.etl trace2.etl … merged.etl
 
 The following example merges individual trace files into merged.etl and adds image identification information and event manifest information that is required for safe symbol decoding.
 
-``` syntax
+```
 -merge trace1.etl trace2.etl … merged.etl
 ```
 

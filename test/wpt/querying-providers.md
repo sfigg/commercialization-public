@@ -19,7 +19,7 @@ ms.technology: windows-oem
 
 Displays trace and providers query options.
 
-``` syntax
+```
 xperf {-providers [options] | -loggers | -boottrace | -profint | -profiles | -profileswithdetails | -profilesessions | -profileproviders | -profileloggers}
 ```
 

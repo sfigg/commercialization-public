@@ -61,7 +61,7 @@ For the list of the supported Windows editions and architectures that this compo
 
 The following XML output deletes all pre-existing favorites and quick links.
 
-``` syntax
+```
 <FavoritesDelete>true</FavoritesDelete>
 ```
 

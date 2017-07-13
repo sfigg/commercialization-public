@@ -63,7 +63,7 @@ For a list of Windows editions and architectures that this component supports, s
 
 The following XML output specifies adding two Accelerators.
 
-``` syntax
+```
 <Accelerators>
   <Accelerator wcm:action="add">
     <AcceleratorXML>http://www.contoso.com/accelerators/Accelerator1.xml</AcceleratorXML>

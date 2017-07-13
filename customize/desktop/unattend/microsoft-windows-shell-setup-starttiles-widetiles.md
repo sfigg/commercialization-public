@@ -85,7 +85,7 @@ For a list of the Windows editions and architectures that this component support
 
 The following XML output shows how to use the `<WideTiles>` component and its settings.
 
-``` syntax
+```
      <WideTiles>
           <WideTile1>
                <AppId>12345ChannelFabrikam.channel-ABC_defghij6789!App</AppId>

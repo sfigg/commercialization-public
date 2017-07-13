@@ -77,7 +77,7 @@ You can identify the Windows app by one of the following:
 
 -   At a Windows PowerShell prompt, type the following:
 
-    ``` syntax
+    ```
     Set-AssignedAccess -AppUserModelId microsoft.windows.photos_8wekyb3d8bbwe!app -UserName <username>
     ```
 
@@ -85,7 +85,7 @@ You can identify the Windows app by one of the following:
 
 -   At a Windows PowerShell prompt, type the following, using the app name and user name:
 
-    ``` syntax
+    ```
     Set-AssignedAccess -AppName CustomApp -UserName <username>
     ```
 
@@ -93,7 +93,7 @@ You can identify the Windows app by one of the following:
 
 -   At a Windows PowerShell prompt, type the following, using the AppUserModelID and user SID:
 
-    ``` syntax
+    ```
     Set-AssignedAccess -AppUserModelId microsoft.windows.photos_8wekyb3d8bbwe!app -UserSID S-1-5-21-523423449-2432423479-234123443-1004
     ```
 
@@ -101,7 +101,7 @@ You can identify the Windows app by one of the following:
 
 -   At a Windows PowerShell prompt, type the following, using the desired app name and user SID:
 
-    ``` syntax
+    ```
     Set-AssignedAccess -AppName CustomApp  -UserSID S-1-5-21-523423449-2432423479-234123443-1004
     ```
 

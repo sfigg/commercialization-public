@@ -20,7 +20,7 @@ Enables Unified Write Filter (UWF) to protect the volume after the next system r
 ## Syntax
 
 
-``` syntax
+```
 UInt32 Protect();
 ```
 

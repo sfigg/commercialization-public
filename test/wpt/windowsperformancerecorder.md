@@ -27,7 +27,7 @@ This element is the root element of the schema. It represents metadata about the
 ## Syntax
 
 
-``` syntax
+```
 <WindowsPerformanceRecorder Version   = float
                             Author    = string
                             Team      = string

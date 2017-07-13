@@ -33,7 +33,7 @@ Represents the transition tag for an [OnOffTransitionConfiguration](onofftransit
 ## Syntax
 
 
-``` syntax
+```
 <TransitionTag Value = TransitionTagType>
 </TransitionTag>
 ```
@@ -115,7 +115,7 @@ None.
 
 The following code example shows how to configure this element.
 
-``` syntax
+```
 <OnOffTransitionConfiguration
   Id="OnOffTransitionConfiguration_Default_Boot"
   Name="OnOffTransitionConfiguration_Default_Boot"

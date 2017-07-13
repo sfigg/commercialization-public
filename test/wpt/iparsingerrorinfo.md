@@ -22,7 +22,7 @@ Provides functions that identify where the validation of an XML file failed. The
 ## Syntax
 
 
-``` syntax
+```
 {
   [id(1), helpstring("GetColumnNumber")] HRESULT GetColumnNumber
     ([out, retval] ULONG* pColumnNumber);

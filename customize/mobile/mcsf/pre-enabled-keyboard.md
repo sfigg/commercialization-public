@@ -26,7 +26,7 @@ The mapping works for almost all regions and additional customizations are not n
 <a href="" id="instructions-"></a>**Instructions:**  
 1.  Create a customization answer file using the contents shown in the following code sample.
 
-    ``` syntax
+    ```
     <?xml version="1.0" encoding="utf-8" ?>  
     <ImageCustomizations xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate"  
                          Name="PreEnabledKeyboard"  
@@ -61,7 +61,7 @@ The mapping works for almost all regions and additional customizations are not n
 
     For example, to pre-enable US English and Korean 12-key Sky, add the following key/value pairs:
 
-    ``` syntax
+    ```
     <Settings Path="TextInput">  
           <Setting Name="PreEnabledKeyboard/en-US.1" Value="1" />
           <Setting Name="PreEnabledKeyboard/ko-KR.4" Value="1" />

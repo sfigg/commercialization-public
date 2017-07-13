@@ -66,7 +66,7 @@ For a list of the Windows editions and architectures that this component support
 
 The following XML output shows how to specify that a proxy server be used to connect to the Internet.
 
-``` syntax
+```
 <HKLMProxyEnable>true</HKLMProxyEnable>
 ```
 

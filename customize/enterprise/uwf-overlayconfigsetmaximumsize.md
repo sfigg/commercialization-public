@@ -20,7 +20,7 @@ Sets the maximum cache size of the Unified Write Filter (UWF) overlay.
 ## Syntax
 
 
-``` syntax
+```
 UInt32 SetMaximumSize(
     UInt32 size
 );

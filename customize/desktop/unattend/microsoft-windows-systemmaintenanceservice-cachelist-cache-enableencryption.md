@@ -73,7 +73,7 @@ For a list of the supported Windows editions and architectures that this compone
 
 The following XML output example shows a configuration of two ReadyBoost devices. On this sample system, the first device does not use encryption, while the second device uses encryption.
 
-``` syntax
+```
 <CacheList>
   <Cache>
     <CacheID>ReadyBoostCache1</CacheID>

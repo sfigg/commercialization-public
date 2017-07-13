@@ -35,7 +35,7 @@ See [Get the tools needed to customize Windows IoT Core](set-up-your-pc-to-custo
 
 2.  Create a working folder for the registry key and test files, for example:
 
-    ``` syntax
+    ```
     newcommonpkg Registry.FilesAndRegKeys
     ```
 
@@ -55,7 +55,7 @@ See [Get the tools needed to customize Windows IoT Core](set-up-your-pc-to-custo
     
     Variables like $(runtime.root) are defined in C:\\Program Files (x86)\\Windows Kits\\10\\Tools\\bin\\i386\\pkggen.cfg.xml.
 
-    ``` syntax
+    ```
       <OSComponent> 
          <RegKeys> 
              <RegKey KeyName="$(hklm.software)\$(OEMNAME)\Test">
@@ -75,7 +75,7 @@ See [Get the tools needed to customize Windows IoT Core](set-up-your-pc-to-custo
 
 2.  From the IoT Core Shell, build the package. (The `BuildPkg All` command builds everything in the source folders.)
 
-    ``` syntax
+    ```
     buildpkg Registry.FilesAndRegKeys
     ```
 
@@ -91,7 +91,7 @@ See [Get the tools needed to customize Windows IoT Core](set-up-your-pc-to-custo
 
 2.  Create a new PackageFile section in the XML, with your package file listed, and give it a new FeatureID, such as "OEM\_FilesAndRegKeys".
 
-    ``` syntax
+    ```
     <Features>
       <OEM>
         <!-- Feature definitions below -->
@@ -110,7 +110,7 @@ You'll now be able to add your files and registry keys to any of your products b
 
 1.  Create a new product folder. 
 
-    ``` syntax
+    ```
     newproduct ProductB rpi2
     ```
 
@@ -120,7 +120,7 @@ You'll now be able to add your files and registry keys to any of your products b
 
     Make sure the feature manifest: **OEMCommonFM.xml** is included, removing comment marks if necessary.
 
-    ``` syntax
+    ```
     <AdditionalFMs>
        <!-- Including BSP feature manifest -->
        <AdditionalFM>%BLD_DIR%\MergedFMs\RPi2FM.xml</AdditionalFM>
@@ -140,7 +140,7 @@ You'll now be able to add your files and registry keys to any of your products b
 
     c. Add the FeatureID for your registry package, example: OEM_FilesAndRegKeys.
     
-    ``` syntax
+    ```
     <Features>
       <Microsoft>
     
@@ -187,7 +187,7 @@ After a short while, you should see the [IoT test (Bertha) app](https://develope
 
 3.  On your technician PC, open File Explorer, and type in the IP address of the device with a \\\\ prefix and \\c$ suffix:
 
-    ``` syntax
+    ```
     \\10.100.0.100\c$
     ```
 
@@ -205,7 +205,7 @@ After a short while, you should see the [IoT test (Bertha) app](https://develope
 
 2.  From the command line in the SSH client, query the system for the registry key.
 
-    ``` syntax
+    ```
     reg query HKLM\Software\Fabrikam\Test
     ```
 

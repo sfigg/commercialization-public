@@ -62,7 +62,7 @@ For a list of the supported Windows editions and architectures that this compone
 
 The following XML output example shows a configuration of two ReadyBoost devices. On this sample system, the first device includes a cache size of 1 GB. On the second device, the cache is configured to fill the entire device.
 
-``` syntax
+```
 <CacheList>
   <Cache>
     <CacheID>ReadyBoostCache1</CacheID>

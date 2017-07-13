@@ -69,23 +69,23 @@ Some assessments require access to symbols. If the symbols are not available, th
 
 3.  Change the unattended answer file template for deployment images, under **C:\\relax\\scripts\\tempate**, by adding the following in the `<FirstLogonCommands>` section. Update the order number to the last sequence of the synchronous commands.
 
-    ``` syntax
+    ```
     <SynchronousCommand>
     ```
 
-    ``` syntax
+    ```
        <Order>8</Order>
     ```
 
-    ``` syntax
+    ```
        <CommandLine>setx _NT_SYMBOL_PATH SRV*%systemdrive%\relax\symbols\%PROCESSOR_ARCHITECTURE%;%systemdrive%\relax\symbols\%PROCESSOR_ARCHITECTURE% /M</CommandLine>
     ```
 
-    ``` syntax
+    ```
        <Description>"Setting _NT_SYMBOL_PATH"</Description>
     ```
 
-    ``` syntax
+    ```
     </SynchronousCommand>
     ```
 
@@ -130,7 +130,7 @@ Add network adapter (NIC) drivers to the Windows PE images that Windows Deploym
 
 1.  On the server, create a folder for the NIC drivers and copy them to the folder. For example, if your drivers are stored on a share, you can use a command such as the following:
 
-    ``` syntax
+    ```
     robocopy \\Server\share\drivers  C:\Drivers\amd64NIC /MIR
     ```
 
@@ -184,11 +184,11 @@ To inventory x86-based test computers, you must use an x86-based Windows PE ima
 
 1.  On the technician computer where you created the Windows PE build environment, type this command:
 
-    ``` syntax
+    ```
     xcopy %SystemDrive%\REMINST\Boot\x86\Images\RelaxWinPE.wim c:\winpe_x86\media\sources\boot.wim
     ```
 
-    ``` syntax
+    ```
     xcopy %SystemDrive%\REMINST\Boot\x64\Images\RelaxWinPE.wim c:\winpe_x64\media\sources\boot.wim
     ```
 
@@ -240,7 +240,7 @@ You shouldn't include a test computer in multiple Windows Assessment Services se
 
 1.  On a running test computer, log on to the Windows Assessment Services server. For example, at the command prompt, type:
 
-    ``` syntax
+    ```
     Net use \\<servername>\relax /u:localadmin Pass.word
     ```
 

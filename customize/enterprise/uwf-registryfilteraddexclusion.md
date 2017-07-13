@@ -42,7 +42,7 @@ Excluding a registry key from filtering also excludes all subkeys from filtering
 ## Syntax
 
 
-``` syntax
+```
 UInt32 AddExclusion(
     string RegistryKey
 );

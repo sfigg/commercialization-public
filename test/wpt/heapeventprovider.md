@@ -41,7 +41,7 @@ Represents a provider of heap events for the profile.
 ## Syntax
 
 
-``` syntax
+```
 <HeapEventProvider Id   = IdType
                    Base = string>
 

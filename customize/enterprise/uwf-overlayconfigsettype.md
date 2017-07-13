@@ -23,7 +23,7 @@ Sets the type of the Unified Write Filter (UWF) overlay to either RAM-based or d
 ## Syntax
 
 
-``` syntax
+```
 UInt32 SetType(
     UInt32 type
 );

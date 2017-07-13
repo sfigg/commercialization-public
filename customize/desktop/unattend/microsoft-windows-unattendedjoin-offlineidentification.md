@@ -56,7 +56,7 @@ For a list of the supported Windows editions and architectures that this compone
 
 The following XML output shows how to set the identification settings.
 
-``` syntax
+```
 <OfflineIdentification>
   <Provisioning>
     <AccountData>BASE64-ENCODED-BLOB</AccountData>

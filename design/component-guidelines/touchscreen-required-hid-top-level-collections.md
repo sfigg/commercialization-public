@@ -146,7 +146,7 @@ Devices that report C must also report the Width and Height usages. The host use
 
 A device that reports only T, must not have a usage array for the X and Y properties. In other words, the report count for each usage is 1 as indicated in the following extracts from the sample descriptor. The excerpts also illustrate the difference between a device that supports only T, and a device that supports T and C.
 
-``` syntax
+```
     0x05, 0x01,                         //       USAGE_PAGE (Generic Desk..
     0x26, 0xff, 0x0f,                   //       LOGICAL_MAXIMUM (4095)         
     0x75, 0x10,                         //       REPORT_SIZE (16)             
@@ -164,7 +164,7 @@ A device that reports only T, must not have a usage array for the X and Y proper
 
 A device that supports T and C, uses usage arrays for reporting the X and Y values. The report count for both X and Y is 2.
 
-``` syntax
+```
     0x05, 0x01,                         //       USAGE_PAGE (Generic Desk..
     0x26, 0xff, 0x0f,                   //       LOGICAL_MAXIMUM (4095)         
     0x75, 0x10,                         //       REPORT_SIZE (16)             
@@ -266,7 +266,7 @@ When a device passes the compatibility requirements, Microsoft will issue a cryp
 
 The blob itself will consist of 256 bytes of binary data, and should be reported as illustrated by the following HID descriptor. Device manufacturers should be sure that before they issue the signed binary blob from Microsoft, the sample blob provided below is presented to Windows instead.
 
-``` syntax
+```
     0x06, 0x00, 0xff,                   //     USAGE_PAGE (Vendor Defined)  
     0x09, 0xC5,                         //     USAGE (Vendor Usage 0xC5)    
     0x15, 0x00,                         //     LOGICAL_MINIMUM (0)          
@@ -277,7 +277,7 @@ The blob itself will consist of 256 bytes of binary data, and should be reported
 
 The following is the sample blob in clear text.
 
-``` syntax
+```
 0xfc, 0x28, 0xfe, 0x84, 0x40, 0xcb, 0x9a, 0x87, 0x0d, 0xbe, 0x57, 0x3c, 0xb6, 0x70, 0x09, 0x88,
 0x07, 0x97, 0x2d, 0x2b, 0xe3, 0x38, 0x34, 0xb6, 0x6c, 0xed, 0xb0, 0xf7, 0xe5, 0x9c, 0xf6, 0xc2,
 0x2e, 0x84, 0x1b, 0xe8, 0xb4, 0x51, 0x78, 0x43, 0x1f, 0x28, 0x4b, 0x7c, 0x2d, 0x53, 0xaf, 0xfc,

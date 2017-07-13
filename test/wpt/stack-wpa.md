@@ -53,7 +53,7 @@ Describes the kernel events on which stacks are to be enabled.
 ## Syntax
 
 
-``` syntax
+```
 <Stack Value = "AlpcClosePort" | "AlpcConnectFail" | "AlpcConnectRequest" ...>
 </Stack>
 ```

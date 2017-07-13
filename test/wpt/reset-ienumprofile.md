@@ -22,7 +22,7 @@ Resets the enumeration.
 ## Syntax
 
 
-``` syntax
+```
 HRESULT Reset();
 ```
 

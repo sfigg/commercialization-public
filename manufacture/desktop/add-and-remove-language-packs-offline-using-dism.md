@@ -45,25 +45,25 @@ Do not install a language pack after an update. If you install an update (hotfix
 
 3.  If your image is already mounted from the previous procedure, you can type the following command to list the images that are currently mounted and information about the mounted image such as mount location and mounted image index.
 
-    ``` syntax
+    ```
     Dism /Get-MountedImageInfo
     ```
 
     If your image is not mounted, type the following command to retrieve the name or index number for the image that you want to modify.
 
-    ``` syntax
+    ```
     Dism /Get-ImageInfo /ImageFile:C:\test\images\install.wim
     ```
 
     An index or name value is required for most operations that specify an image file. Type the following command to mount the image.
 
-    ``` syntax
+    ```
     Dism /Mount-Image /ImageFile:C:\test\images\install.wim /Name:"Windows 7 HomeBasic" /MountDir:C:\test\offline
     ```
 
 4.  Type the following command to add a language pack to the mounted offline image. You can add multiple packages on one command line.
 
-    ``` syntax
+    ```
     Dism /Image:C:\test\offline /ScratchDir:C:\Scratch /Add-Package /PackagePath:C:\packages\package1.cab /PackagePath:C:\packages\package2.cab ...
     ```
 
@@ -72,7 +72,7 @@ Do not install a language pack after an update. If you install an update (hotfix
 
 5.  Type the following command to commit the changes. The image remains mounted until the **/unmount** option is used.
 
-    ``` syntax
+    ```
     Dism /Commit-Image /MountDir:C:\test\offline
     ```
 
@@ -101,13 +101,13 @@ Do not install a language pack after an update. If you install an update (hotfix
 
 8.  If the image is not already mounted, use DISM to mount the Windows image. For example,
 
-    ``` syntax
+    ```
     Dism /Mount-Image /ImageFile:C:\test\images\install.wim /Index:1 /MountDir:C:\test\offline
     ```
 
 9.  Use DISM to apply the unattended installation answer file to the mounted Windows image. For example,
 
-    ``` syntax
+    ```
     DISM /Image:C:\test\offline /Apply-Unattend:C:\test\answerfiles\myunattend.xml
     ```
 
@@ -133,7 +133,7 @@ You cannot remove a language pack from an offline Windows image if there are pen
 
 3.  At the command prompt, type the following command to retrieve the name or index number for the image that you want to modify.
 
-    ``` syntax
+    ```
     Dism /Get-ImageInfo /ImageFile:C:\test\images\install.wim 
     ```
 
@@ -141,25 +141,25 @@ You cannot remove a language pack from an offline Windows image if there are pen
 
 4.  Type the following command to mount the offline Windows image.
 
-    ``` syntax
+    ```
     Dism /Mount-Image /ImageFile:C:\test\images\install.wim /Name:"Windows 7 HomeBasic" /MountDir:C:\test\offline
     ```
 
 5.  Optional: Type the following command to list the languages in the offline image.
 
-    ``` syntax
+    ```
     Dism /Image:C:\test\offline /Get-Intl
     ```
 
 6.  Type the following command to remove a language pack from the image. You can remove multiple .cab files by using one command-line statement.
 
-    ``` syntax
+    ```
     Dism /Image:C:\test\offline /Remove-Package /PackagePath:C:\packages\package1.cab /PackagePath:C:\packages\package2.cab ...
     ```
 
 7.  Type the following command to commit the changes. The image remains mounted until the **/unmount** option is used.
 
-    ``` syntax
+    ```
     Dism /Commit-Image /MountDir:C:\test\offline
     ```
 
@@ -175,7 +175,7 @@ You cannot remove a language pack from an offline Windows image if there are pen
 
 4.  Save the answer file and close Windows SIM. The answer file must resemble the following example.
 
-    ``` syntax
+    ```
     <package action="remove">
        <assemblyIdentity name="Microsoft-Windows-LanguagePack-Package" version="6.0.5714.0" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" language="en-US" />
     </package>
@@ -183,13 +183,13 @@ You cannot remove a language pack from an offline Windows image if there are pen
 
 5.  Use DISM to mount the Windows image. For example,
 
-    ``` syntax
+    ```
     Dism /Mount-Image /ImageFile:C:\test\images\install.wim /Index:1 /MountDir:C:\test\offline
     ```
 
 6.  Use DISM to apply the unattended answer file to the mounted Windows image. For example,
 
-    ``` syntax
+    ```
     Dism /Image:C:\test\offline /Apply-Unattend:C:\test\answerfiles\myunattend.xml
     ```
 
@@ -197,7 +197,7 @@ You cannot remove a language pack from an offline Windows image if there are pen
 
 7.  Type the following command to commit the changes. The image remains mounted until the **/unmount** option is used.
 
-    ``` syntax
+    ```
     Dism /Commit-Image /MountDir:C:\test\offline
     ```
 
@@ -219,13 +219,13 @@ If you specify a default UI language and locale settings with the DISM tool, and
 
 1.  You must first mount the image if it is not already mounted. For example,
 
-    ``` syntax
+    ```
     Dism /Mount-Image /ImageFile:C:\test\images\install.wim /Index:1 /MountDir:C:\test\offline
     ```
 
 2.  To change all international language settings in the mounted offline image to match the default values set by Microsoft for a given language, at the DISM command prompt, type the following command,
 
-    ``` syntax
+    ```
     Dism /Image:C:\test\offline /Set-SKUIntlDefaults:en-us
     ```
 
@@ -240,7 +240,7 @@ If you specify a default UI language and locale settings with the DISM tool, and
 
 3.  At a command prompt, type the following command to commit the changes and unmount the image.
 
-    ``` syntax
+    ```
     Dism /Unmount-Image /MountDir:C:\test\offline /Commit
     ```
 

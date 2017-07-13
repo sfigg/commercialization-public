@@ -99,7 +99,7 @@ The following XML examples show how to use the **Group** setting to add domain g
 
 Example 1:
 
-``` syntax
+```
 <DomainAccounts>
    <DomainAccountList wcm:action="add">
       <DomainAccount wcm:action="add">
@@ -113,7 +113,7 @@ Example 1:
 
 Example 2:
 
-``` syntax
+```
 <DomainAccounts>
    <DomainAccountList wcm:action="add">
       <DomainAccount wcm:action="add">

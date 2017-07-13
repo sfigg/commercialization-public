@@ -23,7 +23,7 @@ Removes all files and folders from the file exclusion list for a volume protecte
 ## Syntax
 
 
-``` syntax
+```
 UInt32 RemoveAllExclusions();
 ```
 

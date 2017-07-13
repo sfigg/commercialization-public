@@ -62,7 +62,7 @@ For a list of the supported Windows editions and architectures that this compone
 
 The following XML output shows how to configure Internet Explorer not to display tabs in groups.
 
-``` syntax
+```
 <GroupTabs>false</GroupTabs>
 ```
 

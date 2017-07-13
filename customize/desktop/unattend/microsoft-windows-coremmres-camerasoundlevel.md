@@ -76,7 +76,7 @@ For a list of the supported Windows editions and architectures that this compone
 
 The following XML output specifies that Windows will play a medium volume tone when a photo is taken.
 
-``` syntax
+```
 <CameraSoundLevel>50</CameraSoundLevel>
 ```
 

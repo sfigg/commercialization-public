@@ -57,7 +57,7 @@ Describes the size of each buffer, in KB.
 ## Syntax
 
 
-``` syntax
+```
 <BufferSize Operation = "Set" | "Add" | “Remove”
             Value     = unsignedLong>
 </BufferSize>
@@ -167,7 +167,7 @@ This element is used only for in-memory capture.
 
 The following code examples show how this element is used in system collector and event collector definitions.
 
-``` syntax
+```
 <SystemCollector
   Id="WPRSystemCollector"
   Name="NT Kernel Logger"

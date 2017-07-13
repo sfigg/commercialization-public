@@ -19,7 +19,7 @@ ms.technology: windows-oem
 
 Displays time and timespan formats on the command line.
 
-``` syntax
+```
 xperf -help format
 ```
 

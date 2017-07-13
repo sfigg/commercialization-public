@@ -24,7 +24,7 @@ New for Windows 10: You won't be able to add WinRE optional components that are
 
 1.  Extract and mount a Windows image (install.wim) and its corresponding WinRE image (winre.wim):
 
-    ``` syntax
+    ```
     md c:\mount
     xcopy D:\sources\install.wim C:\mount 
     md C:\mount\windows
@@ -37,7 +37,7 @@ New for Windows 10: You won't be able to add WinRE optional components that are
 
 2.  In Notepad, create a configuration file that specifies the custom tool’s filename and parameters (if any):
 
-    ``` syntax
+    ```
     <?xml version="1.0" encoding="utf-8"?>
     <!-- WinREConfig.xml -->
     <Recovery>
@@ -59,7 +59,7 @@ New for Windows 10: You won't be able to add WinRE optional components that are
 
 3.  Create a \\Sources\\Recovery\\Tools folder in the WinRE mount folder, and then copy the custom tool and its configuration file into the new folder:
 
-    ``` syntax
+    ```
     md C:\mount\winre\sources\recovery\tools
     copy C:\Tools\OEMDiagnostics.exe C:\mount\winre\sources\recovery\tools
     copy C:\mount\WinREConfig.xml C:\mount\winre\sources\recovery\tools
@@ -69,13 +69,13 @@ New for Windows 10: You won't be able to add WinRE optional components that are
 
 4.  Commit your customizations and unmount the WinRE image:
 
-    ``` syntax
+    ```
     Dism /unmount-image /mountdir:C:\mount\winre /commit
     ```
 
 5.  Optional: make a backup copy of the WinRE image.
 
-    ``` syntax
+    ```
     copy C:\mount\windows\windows\system32\recovery\winre.wim C:\mount\winre_amd64_backup.wim
     ```
 
@@ -83,7 +83,7 @@ New for Windows 10: You won't be able to add WinRE optional components that are
 
 6.  Unmount and save the changes from the base Windows image:
 
-    ``` syntax
+    ```
     Dism /unmount-image /mountdir:C:\mount\windows /commit
     ```
 
@@ -91,7 +91,7 @@ New for Windows 10: You won't be able to add WinRE optional components that are
 
 1.  In Notepad, create a configuration file that describes the custom tool in the boot options menu. Add descriptions for each language you support. This example specifies both English and French language versions of the tool name and description:
 
-    ``` syntax
+    ```
     <?xml version="1.0" encoding="utf-8"?>
     <!-- AddDiagnosticsToolToBootMenu.xml -->
     <BootShell>
@@ -117,7 +117,7 @@ New for Windows 10: You won't be able to add WinRE optional components that are
 
 2.  On your destination computer, during image deployment, but after you register the custom WinRE boot image and the Windows operating system, you must register the description of the custom tool:
 
-    ``` syntax
+    ```
     Reagentc /setbootshelllink /configfile E:\Recovery\BootMenu\AddDiagnosticsToolToBootMenu.xml
     ```
 
@@ -151,7 +151,7 @@ New for Windows 10: You won't be able to add WinRE optional components that are
 
     -   Disable WinRE, register the custom tool again, and then enable WinRE. For example:
 
-        ``` syntax
+        ```
         Reagentc /disable 
         Reagentc /setbootshelllink /configfile E:\Recovery\BootMenu\AddDiagnosticsToolToBootMenu.xml
         Reagentc /enable

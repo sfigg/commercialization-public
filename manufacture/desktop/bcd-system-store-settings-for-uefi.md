@@ -33,7 +33,7 @@ Windows Boot Manager (`{bootmgr}`) manages the boot process. UEFI-based systems 
 
 The BCD settings for the `device` and `path` elements in Windows Boot Manager indicate the firmware boot manager. The template that is named BCD-template for Windows includes the following settings for Windows Boot Manager.
 
-``` syntax
+```
 ## Windows Boot Manager
 
 identifier              {bootmgr}
@@ -48,7 +48,7 @@ The `device` element specifies the volume that contains Windows Boot Manager. Fo
 
 The following Diskpart commands select disk 0 and then list the details of the volumes on that disk, including their drive letters. It shows volume 2 as the system partition.
 
-``` syntax
+```
 DISKPART> select disk 0
 DISKPART> list volume
 
@@ -61,7 +61,7 @@ DISKPART> list volume
 
 If the system partition does not have an assigned drive letter, assign one by using the **Diskpart assign** command. The following example assumes that the system partition is volume 2 and assigns it S as the drive letter.
 
-``` syntax
+```
 Diskpart
 select disk 0
 list volume
@@ -71,7 +71,7 @@ assign letter=s
 
 After you have determined the system partition volume, set the `device` element for Windows Boot Manager to the corresponding drive letter. The following example sets `device` to drive S.
 
-``` syntax
+```
 Bcdedit /set {bootmgr} device partition=s:// system partition
 ```
 
@@ -81,13 +81,13 @@ The `path` element specifies the location of the Windows Boot Manager applicatio
 
 You can confirm that BCD-template has the correct path by enumerating the values in the store, as follows:
 
-``` syntax
+```
 bcdedit /store bcd-template /enum all
 ```
 
 To explicitly set `path` to \\EFI\\Microsoft\\Boot\\Bootmgfw.efi, use the following command.
 
-``` syntax
+```
 Bcdedit /set {bootmgr} path \efi\microsoft\boot\bootmgfw.efi
 ```
 
@@ -95,13 +95,13 @@ Bcdedit /set {bootmgr} path \efi\microsoft\boot\bootmgfw.efi
 
 You should set Windows Boot Manager to be the first item in the display order of the UEFI firmware, as shown in the following example.
 
-``` syntax
+```
 Bcdedit /set {fwbootmgr} displayorder {bootmgr} /addfirst
 ```
 
 You should also specify the topmost Windows boot loader application in the Windows Boot Manager display order. The following example shows how to put a specified Windows boot loader at the top of the display order.
 
-``` syntax
+```
 Bcdedit /set {bootmgr} displayorder {<GUID>} /addfirst
 ```
 
@@ -119,7 +119,7 @@ A BCD store has at least one instance, and optionally multiple instances, of the
 
 `BCD-template` for Windows has a single Windows boot loader object that has the following settings.
 
-``` syntax
+```
 ## Windows Boot Loader
 
 identifier              {9f25ee7a-e7b7-11db-94b5-f7e662935912}
@@ -136,7 +136,7 @@ The identifier for this Windows boot loader is {9f25ee7a-e7b7-11db-94b5-f7e66293
 
 To simplify BCDEdit commands, you can specify one of the Windows boot loaders in the BCD system store as the default loader. You can then use the standard identifier (`{default}`) in place of the full GUID.The following example specifies the Windows boot loader for EFI as the default boot loader, assuming that it uses the identifier GUID from BCD-template.
 
-``` syntax
+```
 Bcdedit /default {9f25ee7a-e7b7-11db-94b5-f7e662935912}
 ```
 
@@ -150,7 +150,7 @@ The `osdevice` element specifies the partition that contains the system root.
 
 For the Windows boot loader for EFI, both elements are usually set to the drive letter of the Windows system partition. However, if BitLocker is enabled or a computer has multiple installed versions of Windows, `osdevice` and `device` might be set to different partitions.BCD-template sets both elements to drive C, which is the typical value. You can also explicitly set the `osdevice` and `device` values, as shown in the following example. The example also assumes that you have specified the Windows boot loader for EFI as the default boot-loader object.
 
-``` syntax
+```
 Bcdedit /set {default} device partition=c:
 Bcdedit /set {default} osdevice partition=c:
 ```
@@ -161,7 +161,7 @@ The `path` element of a Windows boot loader specifies the location of the boot l
 
 You can confirm that BCD-template has the correct `path` value by enumerating the values in the store. You can also explicitly set the `path` value, as shown in the following example.
 
-``` syntax
+```
 Bcdedit /set {default} path \windows\system32\winload.efi
 ```
 
@@ -177,7 +177,7 @@ Note: Intel Itanium computers do not include a Windows memory tester and do not 
 
 BCD-template for Windows has the following settings.
 
-``` syntax
+```
 ## Windows Memory Tester
 
 identifier              {memdiag}
@@ -190,7 +190,7 @@ description             Windows Memory Diagnostic
 
 For UEFI systems, the `device` element for the Windows memory tester is set to the system partition drive letter. The following example assumes that the system partition is drive S, as used in earlier examples.
 
-``` syntax
+```
 Bcdedit /set {bootmgr} device partition=s:  // system partition
 ```
 
@@ -200,7 +200,7 @@ The `path` element specifies the location of Windows Test Manager on the volume 
 
 You can confirm that BCD-template has the correct `path` value by enumerating the values in the store. You can also use the BCDEdit tool to explicitly set the `path` value, as shown in the following example.
 
-``` syntax
+```
 Bcdedit /set {memdiag} path \efi\microsoft\boot\memtest.efi
 ```
 

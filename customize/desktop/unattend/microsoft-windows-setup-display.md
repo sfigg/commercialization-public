@@ -85,7 +85,7 @@ For the list of the Windows editions and architectures that this component suppo
 
 The following XML output sets the display resolution to 1920x1080, with 16-bit color depth and a refresh rate of 60 hertz.
 
-``` syntax
+```
 <Display>
    <HorizontalResolution>1920</HorizontalResolution>
    <VerticalResolution>1080</VerticalResolution>

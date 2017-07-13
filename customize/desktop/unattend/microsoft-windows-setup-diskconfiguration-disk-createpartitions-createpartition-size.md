@@ -72,7 +72,7 @@ For a list of supported Windows editions and architectures that this component s
 The following XML output for the `DiskConfiguration` setting shows how to create two partitions on a hard drive on a BIOS-based system. The first partition is 300 MB. The second partition extends to fill the remainder of the hard disk. 
 
 
-``` syntax
+```
 <DiskConfiguration>
 
   <Disk wcm:action="add">
@@ -136,7 +136,7 @@ The following XML output for the `DiskConfiguration` setting shows how to create
 
 The following XML output for the `DiskConfiguration` setting shows how to create an extended partition that fills the remainder of the drive on a BIOS-based system. The extended partition includes two logical partitions. The first logical partition is 15 GB. The second logical partition extends to fill the remainder of the extended partition. 
 
-``` syntax
+```
 <DiskConfiguration>
 
   <Disk wcm:action="add">

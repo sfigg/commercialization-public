@@ -77,7 +77,7 @@ For a list of the Windows editions and architectures that this component support
 
 The following XML output shows how to specify two commands to run after first logon.
 
-``` syntax
+```
 <FirstLogonCommands>
    <SynchronousCommand wcm:action="add">
       <CommandLine>c:\synccommands\command1.exe</CommandLine>

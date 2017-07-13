@@ -37,7 +37,7 @@ A Virtual Ethernet console window will open. Leave this window open to maintain 
 
 1.  With Virtual Ethernet running, connect and power on the phone. When the device is connected, you will see lines of output that include the MAC address of the device. Virtual Ethernet reports the device’s MAC address in output similar to the following:
 
-    ``` syntax
+    ```
     NIC UP: 00-11-38-EA-88-7E : SUCCESS
     ```
 
@@ -45,7 +45,7 @@ A Virtual Ethernet console window will open. Leave this window open to maintain 
 
 2.  Open a new command-prompt window and type **arp -a**. Output similar to the following will be displayed.
 
-    ``` syntax
+    ```
     C:\>arp -a
 
     Interface: 10.178.1.40 --- 0xb
@@ -98,7 +98,7 @@ To enable debugger support in MMOS, both communication and OS settings must be m
 
 To enable debugging support in MMOS, specify the following internal optional feature in the MfgOEMInput.xml file.
 
-``` syntax
+```
 <Microsoft>
   ...
   <Feature>KDNETUSB_ON</Feature>
@@ -116,7 +116,7 @@ To enable the OS, communication settings must be changed after the image is flas
 
 To connect to MMOS for debugging, use WinDbg to specify the key and port that you configured earlier by using BCDEdit.
 
-``` syntax
+```
 windbg.exe -k net:Port=50000,Key=1.2.3.4
 ```
 

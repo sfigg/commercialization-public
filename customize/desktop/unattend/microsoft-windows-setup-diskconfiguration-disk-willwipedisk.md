@@ -69,7 +69,7 @@ For a list of supported Windows editions and architectures that this component s
 
 The following XML output for the `DiskConfiguration` setting shows how to erase all partitions and data on a hard disk, and then create two new partitions.
 
-``` syntax
+```
 <DiskConfiguration>
 
   <Disk wcm:action="add">

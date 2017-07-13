@@ -58,7 +58,7 @@ For a list of the supported Windows editions and architectures that this compone
 
 The following XML output for the `DiskConfiguration` setting shows a configuration for a UEFI-based system with two hard drives.
 
-``` syntax
+```
 <DiskConfiguration>
 
   <!-- First hard drive -->

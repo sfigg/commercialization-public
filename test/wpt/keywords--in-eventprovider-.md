@@ -49,7 +49,7 @@ Represents a collection of event keywords.
 ## Syntax
 
 
-``` syntax
+```
 <Keywords Operation = "Set" | "Add" | “Remove” >
 
   <!-- Child elements -->

@@ -68,7 +68,7 @@ For a list of the Windows editions and architectures that this component support
 ## XML example
 
 
-``` syntax
+```
 <settings pass="specialize">
     <component name="Microsoft-Windows-Embedded-EmbeddedLogon" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
       <AnimationDisabled>1</AnimationDisabled>

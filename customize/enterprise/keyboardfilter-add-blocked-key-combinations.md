@@ -26,7 +26,7 @@ The third function, `Enable-Scancode`, blocks custom key combinations by using t
 ## Enable-rules.ps1
 
 
-``` syntax
+```
 #
 # Copyright (C) Microsoft. All rights reserved.
 #

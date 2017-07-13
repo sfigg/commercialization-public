@@ -20,7 +20,7 @@ Contains the registry keys that are currently in the registry key exclusion list
 ## Syntax
 
 
-``` syntax
+```
 class UWF_ExcludedRegistryKey {
     [Read] string RegistryKey;
 };

@@ -19,7 +19,7 @@ ms.technology: windows-oem
 
 Displays trace stop options.
 
-``` syntax
+```
 xperf [-stop [LoggerNames]|[ProfileFileName!ProfileName|SessionName merged.etl]]|[-stopall]|[-cancel rofileFileName!ProfileName|SessionName [NoDelete]] [-d merged.etl] [-heap|-critsec]
 ```
 

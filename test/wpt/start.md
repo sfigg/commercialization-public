@@ -19,7 +19,7 @@ ms.technology: windows-oem
 
 Displays logger start options.
 
-``` syntax
+```
 xperf [-start [LoggerName] [ProfileFileName!ProfileName|SessionName]|-update [LoggerName]|[ProfileFileName!ProfileName|SessionName]] -flush [LoggerName] -save ProfileFileName!ProfileName|SessionName merged.etl -setprofint [<n>] [cached] -seteresourcesample <n1> <n2> <n3> -setspinlocksample <n1> <n2> <n3> -pooltag <P1>+<P2>+<P3>+<P4> -on (GUID|KnownProviderName)[:Flags[:Level[<:0xnnnnnnnn|’stack|[,]sid[,]tsid’]]]
 ```
 

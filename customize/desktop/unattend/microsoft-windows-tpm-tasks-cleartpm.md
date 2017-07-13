@@ -59,7 +59,7 @@ For a list of the supported Windows editions and architectures that this compone
 
 The following XML shows how to use the `<ClearTpm>` setting in an unattend file.
 
-``` syntax
+```
 <?xml version="1.0" encoding="UTF-8"?>
 
 -<unattend xmlns="urn:schemas-microsoft-com:unattend">

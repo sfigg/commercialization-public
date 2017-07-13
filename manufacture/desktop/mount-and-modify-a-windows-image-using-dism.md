@@ -59,7 +59,7 @@ You can also use the DISM tool to add and remove drivers and packages, including
 
 1.  On your technician computer open the mounted directory. For example,
 
-    ``` syntax
+    ```
     cd C:\mounted_images
     ```
 
@@ -79,7 +79,7 @@ You can commit changes to an image without unmounting the image.
 
 -   At the command prompt, type:
 
-    ``` syntax
+    ```
     Dism /Commit-Image /MountDir:C:\test\offline
     ```
 
@@ -97,7 +97,7 @@ After you modify an image, you must unmount it. If you mounted your image with t
 
 2.  Unmount the image.
 
-    ``` syntax
+    ```
     Dism /Unmount-Wim /MountDir:<target_mount_directory> {/Commit | /Discard}
     ```
 

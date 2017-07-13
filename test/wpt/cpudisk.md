@@ -19,7 +19,7 @@ ms.technology: windows-oem
 
 This action produces a text report that summarizes the various metrics regarding the CPU and disk.
 
-``` syntax
+```
 -a cpudisk [-thread] [-exc_dpcisr] [-pids ...] [-exes ..] [-marks ..] [-times ..]
 ```
 

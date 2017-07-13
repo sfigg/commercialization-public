@@ -20,7 +20,7 @@ This method adds a new custom scan code combination and enables Keyboard Filter 
 ## Syntax
 
 
-``` syntax
+```
 [Static] uint32 Add(
     [In] string Modifiers, 
     [In] uint16 Scancode

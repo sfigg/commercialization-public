@@ -20,7 +20,7 @@ Sets the **BindByDriveLetter** property, which indicates if the Unified Write Fi
 ## Syntax
 
 
-``` syntax
+```
 UInt32 SetBindByDriveLetter(
     boolean bBindByDriveLetter
 );

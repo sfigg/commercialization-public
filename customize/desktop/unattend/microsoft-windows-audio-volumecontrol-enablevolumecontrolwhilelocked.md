@@ -64,7 +64,7 @@ For a list of the supported Windows editions and architectures that this compone
 
 The following XML output specifies that volume controls are not available when the computer is locked.
 
-``` syntax
+```
 <EnableVolumeControlWhileLocked>false</EnableVolumeControlWhileLocked>
 ```
 

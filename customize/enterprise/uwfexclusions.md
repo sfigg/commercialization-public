@@ -28,7 +28,7 @@ CEIP data is stored in files that have a .sqm file name extension. To make sure 
 
 To locate the .sqm files and folders on your device, search for .sqm files by using File Explorer. Alternately, at a command prompt with administrator rights at the root of the drive, type the following command to obtain a list of .sqm files on the device:
 
-``` syntax
+```
 dir *.sqm /s
 ```
 

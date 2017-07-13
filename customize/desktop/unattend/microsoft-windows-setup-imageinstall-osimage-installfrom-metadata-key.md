@@ -73,7 +73,7 @@ For a list of the Windows editions and architectures that this component support
 
 The following XML output shows how to configure the `MetaData` setting to install a specific Windows image using the image index value.
 
-``` syntax
+```
             <MetaData wcm:action="add">
                 <Key>/IMAGE/INDEX</Key>
                 <Value>2</Value>
@@ -82,7 +82,7 @@ The following XML output shows how to configure the `MetaData` setting to instal
 
 The following XML output shows how to configure the `MetaData` setting to install a specific Windows image using the image name.
 
-``` syntax
+```
             <MetaData wcm:action="add">
                 <Key>/IMAGE/NAME</Key>
                 <Value>Model FNB1</Value>
@@ -91,7 +91,7 @@ The following XML output shows how to configure the `MetaData` setting to instal
 
 The following XML output shows how to configure the `MetaData` setting to install a specific Windows image from a custom .wim file using the image description.
 
-``` syntax
+```
             <MetaData wcm:action="add">
                 <Key>/IMAGE/DESCRIPTION</Key>
                 <Value>Model FNB1</Value>

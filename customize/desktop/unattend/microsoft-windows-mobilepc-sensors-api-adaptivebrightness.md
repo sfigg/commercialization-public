@@ -67,13 +67,13 @@ For the list of the supported Windows editions and architectures that this compo
 
 The following sample XML output shows how to set adaptive brightness:
 
-``` syntax
+```
 <ALRPoints>000000000a0000000a00000028000000280000005000000044</ALRPoints>
 <DisplayResponseInterval>60000</DisplayResponseInterval>
 <IlluminanceChangeSensitivity>20</IlluminanceChangeSensitivity>
 ```
 
-``` syntax
+```
 ```
 
 ## Related topics

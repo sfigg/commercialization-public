@@ -319,7 +319,7 @@ This activity can be seen in the WPA **Activities** graph as a large gap between
 
 Look at the **CPU Usage (Sampled)** graph during this time to show CPU utilization in the csrss.exe process on the following stack:
 
-``` syntax
+```
 [Root] (csrss.exe) 
 winsrv.dll!RegisterForDeviceBroadcastNotifications 
 |- winsrv.dll!ZwUserCallNoParam 

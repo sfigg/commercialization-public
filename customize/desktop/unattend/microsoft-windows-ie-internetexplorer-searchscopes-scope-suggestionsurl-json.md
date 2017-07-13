@@ -65,7 +65,7 @@ For a list of the supported Microsoft Windows editions and architectures that th
 
 The following XML example shows how to specify a URL to provide search suggestions by using a search based on JavaScript Object Notation (JSON).
 
-``` syntax
+```
  
 <SearchScopes>
    <Scope wcm:action="add">

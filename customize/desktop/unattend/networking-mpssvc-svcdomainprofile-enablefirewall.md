@@ -61,7 +61,7 @@ For a list of the supported Windows editions and architectures that this compone
 
 The following XML output shows how to disable Windows Firewall.
 
-``` syntax
+```
 <DomainProfile_EnableFirewall>false</DomainProfile_EnableFirewall>
 <PrivateProfile_EnableFirewall>false</PrivateProfile_EnableFirewall>
 <PublicProfile_EnableFirewall>false</PublicProfile_EnableFirewall>

@@ -253,7 +253,7 @@ In this scenario, you run DISM against an offline Windows image.
 
 1.  Run DISM tool against an offline Windows image and specify an answer file. For example, to list the package in an offline Windows image, use the following command:
 
-    ``` syntax
+    ```
     Dism /image:C:\test\offline /Get-Packages
     ```
 
@@ -267,7 +267,7 @@ In this scenario, you run the DISM tool against a running Windows installation.
 
 -   Run DISM against an online Windows image and specify an answer file. For example, to list driver information in a Windows image, use the following command:
 
-    ``` syntax
+    ```
     Dism /online /Get-Drivers
     ```
 

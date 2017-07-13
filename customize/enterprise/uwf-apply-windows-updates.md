@@ -44,17 +44,17 @@ You can follow these steps to apply Windows updates to your device.
 
 1.  To apply Windows updates to your device, at an administrator command prompt, type the following command:
 
-    ``` syntax
+    ```
     uwfmgr.exe servicing enable
     ```
 
 2.  Restart the device. Use either command.
 
-    ``` syntax
+    ```
     uwfmgr.exe filter restart
     ```
 
-    ``` syntax
+    ```
     shutdown /r /t 0
     ```
 

@@ -65,7 +65,7 @@ For a list of the Windows editions and architectures that this component support
 
 The following XML example shows three Favorite bar items.
 
-``` syntax
+```
 <FavoriteBarItems> 
   <FavoriteBarItem> 
     <ItemKey>1</ItemKey> 

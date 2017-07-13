@@ -22,7 +22,7 @@ Obtains the XML format of all profiles in the [IProfileCollection](iprofilecolle
 ## Syntax
 
 
-``` syntax
+```
 [id(5), helpstring("LoadIntoXML")] HRESULT LoadIntoXML([out] BSTR* pbstrResults);
 ```
 

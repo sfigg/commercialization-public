@@ -69,7 +69,7 @@ For the list of the Windows editions and architectures that this component suppo
 
 The following example shows how to set the system locale to English (United States).
 
-``` syntax
+```
 <InputLocale>0409:00000409</InputLocale> 
 <SystemLocale>en-US</SystemLocale> 
 <UILanguage>en-US</UILanguage> 

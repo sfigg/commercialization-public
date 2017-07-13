@@ -69,7 +69,7 @@ The following example shows how to set a customized **Help and Support** page.
 
 When a user searches on the **Help and Support** page for "email", the **Support** section of the **Search Results** pane displays results from the `http://www.fabrikam.com/support/search/?term=email` webpage.
 
-``` syntax
+```
 <HelpAndSupport>
   <Logo>C:\Fabrikam\Logos\Logo.png</Logo>
   <LogoURL>http://www.fabrikam.com/support</LogoURL>

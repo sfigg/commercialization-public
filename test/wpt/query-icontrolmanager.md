@@ -22,7 +22,7 @@ Queries the properties of the session and providers in all profiles.
 ## Syntax
 
 
-``` syntax
+```
 HRESULT Query
   ([out] BSTR* pbstrResults,
   [in] VARIANT_BOOL fValidateRuntimeState)

@@ -63,7 +63,7 @@ For the list of the supported Windows editions and architectures that this compo
 
 The following XML output specifies that the installation is to run in guaranteed quiet mode without displaying to the UI.
 
-``` syntax
+```
 <ComplianceCheck>
    <DisplayReport>Never</DisplayReport>
 </ComplianceCheck>

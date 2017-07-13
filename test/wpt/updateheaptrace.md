@@ -21,7 +21,7 @@ ms.technology: windows-oem
 
 This function updates an existing heap tracing session with a new set of PIDs, stackwalking events, or other ETW session changes.
 
-``` syntax
+```
 ULONG
 WINAPI
 UpdateHeapTrace(

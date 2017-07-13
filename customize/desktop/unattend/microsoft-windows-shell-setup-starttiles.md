@@ -620,7 +620,7 @@ For a list of the Windows editions and architectures that this component support
 
 The following XML output shows to how to use the &lt;StartTiles&gt; component and its settings.
 
-``` syntax
+```
 <StartTiles>
      <LockScreen>    
           <Badge>

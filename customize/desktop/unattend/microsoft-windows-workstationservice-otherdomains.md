@@ -57,7 +57,7 @@ For the list of the supported Windows editions and architectures that this compo
 
 The following XML output shows how to specify the Microsoft LAN Manager domains to be listed for browsing.
 
-``` syntax
+```
 <OtherDomains>domain1.fabrikam.com;domain2.fabrikam.com</OtherDomains>
 ```
 

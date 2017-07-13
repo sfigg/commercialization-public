@@ -20,7 +20,7 @@ This method retrieves the default Shell Launcher configuration.
 ## Syntax
 
 
-``` syntax
+```
 [Static] uint32 GetDefaultShell (
     [Out, Required] string Shell,
     [Out, Required] sint32 DefaultAction

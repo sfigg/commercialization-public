@@ -20,7 +20,7 @@ Returns a list of files of a volume that were cached in the Unified Write Filter
 ## Syntax
 
 
-``` syntax
+```
 UInt32 GetOverlayFiles(
     [in] string Volume,
     [out, EmbeddedInstance("UWF_OverlayFile")] string OverlayFiles[]

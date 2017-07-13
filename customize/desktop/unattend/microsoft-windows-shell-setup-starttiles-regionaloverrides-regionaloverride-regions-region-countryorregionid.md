@@ -66,7 +66,7 @@ oobeSystem
 
 The following XML output shows how to configure a set of Apps that apply to only in France and Italy.
 
-``` syntax
+```
 <RegionalOverrides>
   <RegionalOverride>
     <Order>1</Order>

@@ -19,7 +19,7 @@ ms.technology: windows-oem
 
 This action produces a text file that summarizes metrics related to registry accesses and changes.
 
-``` syntax
+```
 -a registry [-counts [n]] [-tree] [-unknown] [-range T1 T2]
 ```
 

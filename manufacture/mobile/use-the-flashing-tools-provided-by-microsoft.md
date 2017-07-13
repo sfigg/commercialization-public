@@ -72,7 +72,7 @@ After the device-side and host-side setup is complete, perform the following ste
 
 2.  Run ffutool.exe from the command line to flash an image. This program is in %ProgramFiles(x86)%\\Windows Kits\\10\\Tools\\bin\\i386. The following is a usage example.
 
-    ``` syntax
+    ```
     ffutool -flash <FFU file>
     ```
 
@@ -145,7 +145,7 @@ The device platform validation for flashing must not be disabled in retail image
 
 When using the FFU tool to flash an image to your device, you may encounter an error as shown below.
 
-``` syntax
+```
 Error: Failed to flash with device error { 0x18, 0x0, 0x0, 0x2, 0xa, 0x5 }
 ```
 

@@ -20,7 +20,7 @@ Adds or removes registry exclusions from Unified Write Filter (UWF) filtering, a
 ## Syntax
 
 
-``` syntax
+```
 class UWF_RegistryFilter{
     [key, Read] boolean CurrentSession;
     [Read, Write] boolean PersistDomainSecretKey;
@@ -164,7 +164,7 @@ The third function, **Remove-RegistryExclusion**, removes a registry entry from 
 
 The fourth function, **Clear-RegistryExclusions**, removes all UWF registry exclusions. You must restart the device before UWF stops filtering the exclusions.
 
-``` syntax
+```
 $COMPUTER = "EMBEDDEDDEVICE"
 $NAMESPACE = "root\standardcimv2\embedded"
 

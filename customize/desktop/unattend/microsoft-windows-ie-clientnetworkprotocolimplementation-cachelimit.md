@@ -63,7 +63,7 @@ For a list of the Windows editions and architectures that this component support
 
 The following XML output shows how to reserve 100 MB of disk space for storing temporary Internet files.
 
-``` syntax
+```
 <CacheLimit>102400</CacheLimit>
 ```
 

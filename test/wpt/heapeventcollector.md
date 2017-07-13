@@ -31,7 +31,7 @@ Represents a collector for heap events.
 ## Syntax
 
 
-``` syntax
+```
 <HeapEventCollector Id       = IdType
                     Base     = string
                     Name     = string

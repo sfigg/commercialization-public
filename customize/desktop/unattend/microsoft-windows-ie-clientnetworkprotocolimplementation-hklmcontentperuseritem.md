@@ -61,7 +61,7 @@ For a list of the supported Windows editions and architectures that this compone
 
 The following XML output shows how to specify that there is a common cache for all users for Internet Explorer content.
 
-``` syntax
+```
 <HKLMContentPerUserItem>false</HKLMContentPerUserItem>
 ```
 

@@ -62,7 +62,7 @@ For a list of the supported Windows editions and architectures that this compone
 
 The following XML output specifies the host's unique priority ID in the Network Load Balancing cluster.
 
-``` syntax
+```
 <HostPriority>1</HostPriority>
 ```
 

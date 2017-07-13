@@ -63,7 +63,7 @@ For a full list of the Windows editions and architectures that this component su
 
 The following XML output shows how to always show the Network Selection control in the **Mobile Broadband Properties** dialog.
 
-``` syntax
+```
 <DisplayNetworkSelection>true</DisplayNetworkSelection>
 ```
 

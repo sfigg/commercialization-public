@@ -69,7 +69,7 @@ For a list of the supported Windows editions and architectures that this compone
 
 The following example shows how to change the fallback language to English (United States) from Arabic (Saudi Arabia).
 
-``` syntax
+```
 <InputLocale>0401:00000401</InputLocale> 
 <SystemLocale>ar-sa</SystemLocale> 
 <UILanguage>ar-sa</UILanguage> 

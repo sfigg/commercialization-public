@@ -60,7 +60,7 @@ For a list of the supported Windows editions and architectures that this compone
 
 The following XML output shows how to set the identification credentials.
 
-``` syntax
+```
 <Identification>
    <Credentials>
       <Domain>fabrikam.com</Domain>

@@ -22,7 +22,7 @@ This topic presents a sample report descriptor and some sample descriptor excerp
 
 The following is a report descriptor for an integrated Windows Pen top-level collection.
 
-``` syntax
+```
 // Integrated Windows Pen TLC
     0x05, 0x0d,                         // USAGE_PAGE (Digitizers)          
     0x09, 0x02,                         // USAGE (Pen)                      
@@ -83,7 +83,7 @@ The following is a report descriptor for an integrated Windows Pen top-level col
 
 The following is a report descriptor excerpt from the integrated Windows Pen top-level collection, for the optional (but highly recommended) support of the latency mode feature report.
 
-``` syntax
+```
     0x05, 0x0d,                         //    USAGE_PAGE (Digitizer)
     0x85, REPORTID_LATENCY,             //    REPORT_ID (Latency)              
     0x09, 0x60,                         //    USAGE(Latency Mode)
@@ -101,7 +101,7 @@ The following is a report descriptor excerpt from the integrated Windows Pen top
 
 The following is a report descriptor excerpt from the integrated Windows Pen top-level collection, for the optional (but highly recommended) support of the device certification status feature report.
 
-``` syntax
+```
     0x06, 0x00, 0xff,                   //    USAGE_PAGE (Vendor Defined)
     0x85, REPORTID_PENHQA,              //    REPORT_ID (PTPHQA)  
     0x09, 0xC5,                         //    USAGE (Vendor Usage 0xC5)    

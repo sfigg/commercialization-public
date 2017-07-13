@@ -43,7 +43,7 @@ For more information about buffers, see [Logging Mode](logging-mode.md).
 
 The following code example shows a system collector definition and an event collector definition.
 
-``` syntax
+```
 <SystemCollector
   Id="WPRSystemCollector"
   Name="NT Kernel Logger"

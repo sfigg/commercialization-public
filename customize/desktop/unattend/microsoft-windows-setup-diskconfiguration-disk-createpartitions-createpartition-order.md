@@ -61,7 +61,7 @@ For a list of the supported Windows editions and architectures that this compone
 
 The following XML output for the `DiskConfiguration` setting shows partition modifications for a BIOS-based computer with two hard drives. The first hard drive includes three partitions that are ordered 1, 2, and 3. The second hard drive includes a single data partition, ordered 1.
 
-``` syntax
+```
 <DiskConfiguration>
 
   <!-- First hard drive -->
@@ -169,7 +169,7 @@ The following XML output for the `DiskConfiguration` setting shows partition mod
 
 The following XML output for the `DiskConfiguration` setting shows partition modifications for a Unified Extensible Firmware Interface (UEFI)-based computer with two hard drives. The first hard drive includes three partitions, ordered 1, 2, and 3. The second hard drive contains a single data partition, ordered 1.
 
-``` syntax
+```
 <DiskConfiguration>
 
   <!-- First hard drive -->

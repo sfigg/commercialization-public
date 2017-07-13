@@ -62,7 +62,7 @@ For a list of the supported Windows editions and architectures that this compone
 
 The following XML output shows how to specify that Compatibility View uses updated website lists from Microsoft to determine how to display a website.
 
-``` syntax
+```
 <MSCompatibilityMode>true</MSCompatibilityMode>
 ```
 

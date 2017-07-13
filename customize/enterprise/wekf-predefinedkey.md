@@ -20,7 +20,7 @@ This class blocks or unblocks predefined key combinations, such as Ctrl+Alt+Dele
 ## Syntax
 
 
-``` syntax
+```
 class WEKF_PredefinedKey {
     [Static] uint32 Enable (
         [In] string PredefinedKey
@@ -34,7 +34,7 @@ class WEKF_PredefinedKey {
 };
 ```
 
-``` syntax
+```
 ```
 
 ## Members
@@ -138,7 +138,7 @@ For a list of predefined key combinations for Keyboard Filter, see [Predefined k
 
 The following sample Windows PowerShell script blocks the Ctrl+Alt+Delete and the Ctrl+Esc key combinations when the Keyboard Filter service is running.
 
-``` syntax
+```
 <#
 .Synopsis
     This script shows how to use the built in WMI providers to enable and add 

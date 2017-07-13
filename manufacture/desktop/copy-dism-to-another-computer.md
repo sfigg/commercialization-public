@@ -29,7 +29,7 @@ You'll need the Windows 10, version 1607 version of the Deployment and Imaging T
 
 2.  From the technician PC, copy the Deployment and Imaging Tools from the Windows ADK to the storage USB key.
 
-    ``` syntax
+    ```
     CopyDandI.cmd amd64 E:\ADKTools\amd64
 	```
 
@@ -41,7 +41,7 @@ Note: this will add roughly 4MB to the size of your DISM image, which may affect
 
 2.  Mount WinPE. For WinPE 3.x, mount the file: \\sources\\winpe.wim. For WinPE 4.x and 5.x, mount the file: \\sources\\boot.wim.
 
-    ``` syntax
+    ```
     md "C:\WinPE_amd64\mount"
 
     Dism /Mount-Image /ImageFile:"C:\WinPE_amd64\media\sources\boot.wim" /index:1 /MountDir:"C:\WinPE_amd64\mount"
@@ -49,7 +49,7 @@ Note: this will add roughly 4MB to the size of your DISM image, which may affect
 
 3.  Copy the DISM folder from the Windows ADK into a new folder in the mounted WinPE image.
 
-    ``` syntax
+    ```
     md C:\WinPE_amd64\mount\DISM
 
     robocopy "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Deployment Tools\amd64\DISM" C:\WinPE_amd64\mount\DISM
@@ -59,13 +59,13 @@ Note: this will add roughly 4MB to the size of your DISM image, which may affect
 
 4.  Unmount WinPE.
 
-    ``` syntax
+    ```
     Dism /Unmount-Image /MountDir:"C:\WinPE_amd64\mount" /commit
     ```
 
 5.  Create WinPE bootable media, or replace the WinPE image file on your existing removable media.
 
-    ``` syntax
+    ```
     MakeWinPEMedia /UFD C:\WinPE_amd64 F:
     ```
 
@@ -77,7 +77,7 @@ Note: this will add roughly 4MB to the size of your DISM image, which may affect
 
 3.  Install and configure DISM's required drivers by using either **wimmountadksetupamd64.exe /Install** or **wimmountadksetupx86.exe /Install**.
 
-    ``` syntax
+    ```
     W:\ADKTools\amd64\wimmountadksetupAmd64.exe /Install /q
     ```
 
@@ -85,20 +85,20 @@ Note: this will add roughly 4MB to the size of your DISM image, which may affect
 
 4.  Verify the new version of DISM:
 
-    ``` syntax
+    ```
     W:\ADKTools\amd64\DISM.exe /?
     ```
 
     The output shows the build number, for example:
 
-    ``` syntax
+    ```
     Deployment Image Servicing and Management tool
     Version: 10.0.14939.0
     ```
 
 4.  Use the new version of DISM. Example:
 
-    ``` syntax
+    ```
     W:\ADKTools\amd64\DISM.exe /Apply-Image /ImageFile:install.wim /Index:1 /ApplyDir:W: /Compact
     W:\ADKTools\amd64\DISM.exe /Apply-SiloedPackage /ImagePath:W:\ /PackagePath:"e:\SPPs\fabrikam-id.spp" /PackagePath:"D:\SPPs\office16_base.spp" /PackagePath:"D:\SPPs\office16_fr-fr.spp" /PackagePath:"D:\SPPs\office16_de-de.spp"
     ```

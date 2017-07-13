@@ -46,7 +46,7 @@ Use the follow steps to prepare the ScanState tool to capture Windows desktop ap
 
 1.  On the technician PC, copy the Windows ADK files from Windows User State Migration Tool (USMT) and Windows Setup to a working folder. You'll need to match the architecture of the destination device. You don't need to copy the subfolders.
 
-    ``` syntax
+    ```
     md C:\ScanState_amd64
     xcopy /E "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\User State Migration Tool\amd64" C:\ScanState_amd64
     xcopy /E /Y "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Setup\amd64\Sources" C:\ScanState_amd64
@@ -61,19 +61,19 @@ Use the following steps to customize your Windows RE boot image if additional dr
 1.  On the technician PC, click **Start**, and type deployment. Right-click **Deployment and Imaging Tools Environment** and then select **Run as administrator**.
 2.  In **Deployment and Imaging Tools Environment**, create the folder structure to store the Windows image and its mount point.
 
-    ``` syntax
+    ```
     Mkdir C:\OS_image\mount
     ```
 
 3.  Create the folder structure to store the Windows RE boot image and its mount point.
 
-    ``` syntax
+    ```
     Mkdir C:\winre_amd64\mount
     ```
 
 4.  Mount the Windows image (install.wim) to the folder \\OS\_image\\mount by using DISM.
 
-    ``` syntax
+    ```
     Dism /mount-image /imagefile:C:\OS_image\install.wim /index:1 /mountdir:C:\OS_image\mount
     ```
 
@@ -81,19 +81,19 @@ Use the following steps to customize your Windows RE boot image if additional dr
 
 5.  Copy the Windows RE image from the mounted Windows image to the new folder.
 
-    ``` syntax
+    ```
     xcopy /H C:\OS_image\mount\windows\system32\recovery\winre.wim C:\winre_amd64 
     ```
 
 6.  Unmount the Windows image. Tip: If you haven't made any other changes in the Windows image, you can unmount the image faster by using the `/discard` option.
 
-    ``` syntax
+    ```
     Dism /unmount-image /mountdir:C:\OS_image\mount /discard
     ```
 
 7.  Mount the Windows RE boot image for editing.
 
-    ``` syntax
+    ```
     Dism /mount-image /imagefile:C:\winre_amd64\winre.wim /index:1 /mountdir:C:\winre_amd64\mount
     ```
 
@@ -104,7 +104,7 @@ Use the following steps to customize your Windows RE boot image if additional dr
 8.  Add language packs, boot-critical device drivers, and input device drivers to the Windows RE boot image. To learn more, see [Customize Windows RE](customize-windows-re.md).
 9.  Commit your customizations and unmount the image.
 
-    ``` syntax
+    ```
     Dism /unmount-image /mountdir:C:\winre_amd64\mount /commit 
     ```
 
@@ -160,7 +160,7 @@ If you plan to use Push-button reset’s extensibility points, use the following
 3.  Save the scripts to a network location, or USB flash drive.
 4.  Create a ResetConfig.xml file that specifies the location of the scripts that you created for the four extensibility points. For example:
 
-    ``` syntax
+    ```
     <?xml version="1.0" encoding="utf-8"?>
     <Reset>
         <Run Phase="BasicReset_BeforeImageApply">
@@ -194,7 +194,7 @@ If you plan to use Push-button reset’s extensibility points, use the following
 
 -   To specify the partition layout to be used when users perform bare metal recovery using recovery media created from their PCs, modify resetconfig.xml to include the following elements:
 
-    ``` syntax
+    ```
     <?xml version="1.0" encoding="utf-8"?>
     <Reset>
                 <SystemDisk>
@@ -221,7 +221,7 @@ If you plan to use Push-button reset’s extensibility points, use the following
 
     **UEFI example**:
 
-    ``` syntax
+    ```
     rem These commands are used with DiskPart tool.
     rem Erase the drive and create four partitions
     rem for a UEFI/GPT-based PC.
@@ -254,7 +254,7 @@ If you plan to use Push-button reset’s extensibility points, use the following
 
     **BIOS example**:
 
-    ``` syntax
+    ```
     rem These commands are used with DiskPart to 
     rem erase the drive and create three partitions 
     rem for a BIOS/MBR-based PC. 
@@ -292,7 +292,7 @@ If you plan to use Push-button reset’s extensibility points, use the following
 
     **UEFI example**:
 
-    ``` syntax
+    ```
     rem These commands are used with DiskPart tool.
     rem Erase the drive and create five partitions
     rem for a UEFI/GPT-based PC.
@@ -323,7 +323,7 @@ If you plan to use Push-button reset’s extensibility points, use the following
     
     **BIOS example**:
 
-    ``` syntax
+    ```
     rem These commands are used with DiskPart to 
     rem erase the drive and create three partitions 
     rem for a BIOS/MBR-based PC. 
@@ -356,7 +356,7 @@ If you plan to use Push-button reset’s extensibility points, use the following
 1.  On the destination PC, boot to Windows PE.
 2.  At the Windows PE command prompt, run the script to create the recommended hard drive partitions.
 
-    ``` syntax
+    ```
     Diskpart /s N:\CreatePartitions.txt
     ```
 
@@ -364,13 +364,13 @@ If you plan to use Push-button reset’s extensibility points, use the following
 
 3.  Apply the Windows reference image to the Windows partition.
 
-    ``` syntax
+    ```
     Dism /Apply-Image /ImageFile:N:\Install.wim /Index:1 /ApplyDir:W:\
     ```
 
     Optional: You can also specify the /compact option so that the files written to disk are compressed. For example:
 
-    ``` syntax
+    ```
     Dism /Apply-Image /ImageFile:N:\Install.wim /Index:1 /ApplyDir:W:\ /Compact:on
     ```
 
@@ -378,13 +378,13 @@ If you plan to use Push-button reset’s extensibility points, use the following
 
 4.  Configure the system partition by using BCDboot.
 
-    ``` syntax
+    ```
     W:\Windows\System32\Bcdboot W:\Windows
     ```
 
 5.  Create a folder in the Windows RE tools partition, and copy your custom Windows RE boot image to it.
 
-    ``` syntax
+    ```
     Mkdir T:\Recovery\WindowsRE
     xcopy /H N:\Winre.wim T:\Recovery\WindowsRE
     ```
@@ -397,7 +397,7 @@ If you plan to use Push-button reset’s extensibility points, use the following
 
 6.  Register the Windows RE boot image together with the Windows image.
 
-    ``` syntax
+    ```
     W:\Windows\System32\Reagentc /setreimage /path T:\Recovery\WindowsRE /target W:\Windows
     ```
 
@@ -405,7 +405,7 @@ If you plan to use Push-button reset’s extensibility points, use the following
 
     **For UEFI-based PCs:**
 
-    ``` syntax
+    ```
     select disk 0
     select partition 4
     remove
@@ -416,7 +416,7 @@ If you plan to use Push-button reset’s extensibility points, use the following
 
     **For BIOS-based PCs:**
 
-    ``` syntax
+    ```
     select disk 0
     select partition 3
     remove
@@ -431,7 +431,7 @@ If you plan to use Push-button reset’s extensibility points, use the following
 
 9.  If you have installed OS updates, clean up the superseded components and mark the updates as permanent so that they will be restored during recovery:
 
-    ``` syntax
+    ```
     DISM.exe /Cleanup-Image /StartComponentCleanup /ResetBase
     ```
 
@@ -439,7 +439,7 @@ If you plan to use Push-button reset’s extensibility points, use the following
 
 1.  Use the ScanState tool to capture the installed customizations into a provisioning package. Use the /config option to specify one of the default configuration files included with the ADK, and save the .ppkg file in the folder C:\\Recovery\\Customizations.
 
-    ``` syntax
+    ```
     N:\ScanState_amd64\scanstate.exe /apps /config:<path_to_config_file> /ppkg C:\Recovery\Customizations\apps.ppkg /o /c /v:13 /l:C:\ScanState.log
     ```
 
@@ -447,7 +447,7 @@ If you plan to use Push-button reset’s extensibility points, use the following
 
 2.  If you have used Windows ICD to create additional provisioning packages with customizations which should be restored during recovery, copy the packages to the destination PC. For example:
 
-    ``` syntax
+    ```
     xcopy N:\RecoveryPPKG\*.ppkg C:\Recovery\Customizations
     ```
 
@@ -455,7 +455,7 @@ If you plan to use Push-button reset’s extensibility points, use the following
 
 3.  Copy any Push-button reset configuration file (resetconfig.xml) and extensibility scripts to the destination PC, and then configure permissions to write/modify them. For example:
 
-    ``` syntax
+    ```
     mkdir C:\Recovery\OEM
     xcopy /E N:\RecoveryScripts\* C:\Recovery\OEM
     ```
@@ -464,7 +464,7 @@ If you plan to use Push-button reset’s extensibility points, use the following
 
 4.  Restrict the Write/Modify permissions of the customizations, and hide the root folder. For example:
 
-    ``` syntax
+    ```
     icacls C:\Recovery\Customizations /inheritance:r /T
     icacls C:\Recovery\Customizations /grant:r SYSTEM:(F) /T
     icacls C:\Recovery\Customizations / grant:r *S-1-5-32-544:(F) /T
@@ -476,7 +476,7 @@ If you plan to use Push-button reset’s extensibility points, use the following
 
 5.  Use the Sysprep tool to reseal the Windows image without using the /generalize option.
 
-    ``` syntax
+    ```
     Sysprep /oobe /exit
     ```
 
@@ -486,7 +486,7 @@ If you plan to use Push-button reset’s extensibility points, use the following
 
 6.  (Optional) To save space, you can also convert your installed Windows desktop applications into file pointers referencing the customizations package. To do so, boot the destination PC to Windows PE and run the following:
 
-    ``` syntax
+    ```
     DISM /Apply-CustomDataImage /CustomDataImage:C:\Recovery\Customizations\USMT.ppkg /ImagePath:C:\ /SingleInstance
     ```
 

@@ -25,7 +25,7 @@ The process for which heap tracing is to be enabled must be created before calli
 
 Heap tracing is very verbose and can quickly generate a very large trace file. Events may be lost easily if the session’s buffers are too small or too few. It is recommended that the number of processes for which heap tracing is enabled be limited in order to not lose events. Enabling heap tracing may have a performance impact on the process being traced.
 
-``` syntax
+```
 ULONG
 WINAPI
 StartHeapTrace(

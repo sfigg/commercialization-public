@@ -70,7 +70,7 @@ For the list of the Windows editions and architectures that this component suppo
 
 The following XML output shows how to describe a recommended online backup service. This includes provider information, descriptions, links, and an icon.
 
-``` syntax
+```
 <EnableOnlineBackup>true</EnableOnlineBackup>
 <ResourceDll>%ProgramFiles%\Microsoft Shared\Resource.dll</ResourceDll>
 <ProviderName>100</ProviderName>

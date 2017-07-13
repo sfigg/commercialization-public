@@ -21,7 +21,7 @@ The Single Finger Hybrid Mode Multi-touch Devices sample report descriptor conta
 
  
 
-``` syntax
+```
 0x05, 0x0d,                         // USAGE_PAGE (Digitizers)          
     0x09, 0x04,                         // USAGE (Touch Screen)             
     0xa1, 0x01,                         // COLLECTION (Application)         

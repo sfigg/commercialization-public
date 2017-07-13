@@ -36,7 +36,7 @@ The following command-line option is available for Wpeinit:
 
 Example:
 
-``` syntax
+```
 Wpeinit -unattend:"C:\Unattend-PE.xml"
 ```
 

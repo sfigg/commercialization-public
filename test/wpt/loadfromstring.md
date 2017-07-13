@@ -22,7 +22,7 @@ Loads a profile from the specified XML profile definition string.
 ## Syntax
 
 
-``` syntax
+```
 HRESULT LoadFromString
   ([in] BSTR bstrProfile)
 ;

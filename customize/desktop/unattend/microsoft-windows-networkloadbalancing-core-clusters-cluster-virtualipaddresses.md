@@ -62,7 +62,7 @@ For the list of the supported Windows editions and architectures that this compo
 
 The following XML output specifies details about the cluster's virtual IP addresses.
 
-``` syntax
+```
 <VirtualIpAddresses>
    <IpAddress wcm:keyValue="Ip1">
       <IpAddress>10.192.45.1</IpAddress>

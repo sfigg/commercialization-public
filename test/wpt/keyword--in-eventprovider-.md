@@ -93,7 +93,7 @@ Describes the Event Tracing for Windows (ETW) keyword for a user-mode provider.
 ## Syntax
 
 
-``` syntax
+```
 <Keyword Value string
 </Keyword>
 ```

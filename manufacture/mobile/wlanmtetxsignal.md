@@ -19,7 +19,7 @@ Requests the driver to transmit a signal at the specified band and channel.
 ## <span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>Syntax
 
 
-``` syntax
+```
 DWORD WlanMTETxSignal(
     __in    HANDLE      hAdapter,
     __in    BOOLEAN     bEnable,
@@ -46,7 +46,7 @@ DWORD WlanMTETxSignal(
 <span id="Dot11Band"></span><span id="dot11band"></span><span id="DOT11BAND"></span>*Dot11Band*  
 \[in\] The band on which the signal is to be detected. The values of the *Dot11Band* parameter are defined by the DOT11\_BAND enum, shown below:
 
-``` syntax
+```
 typedef enum DOT11_BAND {
         dot11_band_2p4g = 1,
         dot11_band_4p9g,

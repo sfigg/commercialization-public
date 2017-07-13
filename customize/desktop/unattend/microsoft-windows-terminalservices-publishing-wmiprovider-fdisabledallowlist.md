@@ -65,7 +65,7 @@ For a list of the supported Windows editions and architectures that this compone
 
 The following XML output specifies that the Allow list is not checked and enforced.
 
-``` syntax
+```
 <fDisabledAllowList>1</fDisabledAllowList>
 ```
 

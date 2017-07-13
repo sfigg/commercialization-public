@@ -37,7 +37,7 @@ Deploy your Windows image to a test computer and configure the programs that are
 
 2.  Export the default application association settings from the test computer to an .xml file on a network share or USB drive. For example, at a command prompt type the following command:
 
-    ``` syntax
+    ```
     Dism /Online /Export-DefaultAppAssociations:\\Server\Share\AppAssoc.xml
     ```
 
@@ -58,13 +58,13 @@ You can change the default application association settings in a WIM or VHD file
 
 2.  Mount a Windows image from a WIM or VHD file. For example, at the command prompt type the following command:
 
-    ``` syntax
+    ```
     Dism /Mount-Image /ImageFile:C:\test\images\install.wim /Name:"Windows" /MountDir:C:\test\offline
     ```
 
 3.  Import the .xml file that has the default application association settings to the Windows image. For example, at the command prompt type the following command:
 
-    ``` syntax
+    ```
     Dism.exe /Image:C:\test\offline /Import-DefaultAppAssociations:\\Server\Share\AppAssoc.xml
     ```
 
@@ -80,7 +80,7 @@ You can change the default application association settings in a WIM or VHD file
 
 2.  List the application associations that have been applied to the mounted image. For example, at the command prompt, type the following command:
 
-    ``` syntax
+    ```
     Dism.exe /Image:C:\test\offline /Get-DefaultAppAssociations
     ```
 
@@ -90,7 +90,7 @@ You can change the default application association settings in a WIM or VHD file
 
 2.  Remove the custom default application association that have been added to the mounted image. For example, at the command prompt type the following command:
 
-    ``` syntax
+    ```
     Dism.exe /Image:C:\test\offline /Remove-DefaultAppAssociations
     ```
 

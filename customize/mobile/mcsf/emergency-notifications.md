@@ -41,7 +41,7 @@ This customization supports: **per-SIM** value
 <a href="" id="instructions-"></a>**Instructions:**  
 1.  Modify the following answer file code sample based on the instructions given for the alert type that you want to enable.
 
-    ``` syntax
+    ```
     <?xml version="1.0" encoding="utf-8" ?>  
     <ImageCustomizations xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate"  
                          Name="EmergencyNotifications"  
@@ -151,7 +151,7 @@ Users' settings persist across update and restore, including updates and restore
 
 1.  Use the following settings to fully configure CMAS alert types:
 
-    ``` syntax
+    ```
         <Settings Path="Messaging/PerSimSettings/$(__ICCID)/EmergencyAlertOptions">  
           <Setting Name="EmOperatorEnabled" Value="1" />
           <Setting Name="CmasExtremeAlertEnabled" Value="" />
@@ -233,7 +233,7 @@ Partners can turn on the Earthquake & Tsunami Warning System (ETWS) and configur
 
 1.  Use the following settings to fully configure ETWS alert types:
 
-    ``` syntax
+    ```
         <Settings Path=Messaging/PerSimSettings/$(__ICCID)">
           <!-- Use to add a custom alert sound
           <Asset Name="EtwsSound" Source="" 
@@ -278,7 +278,7 @@ The Netherlands NL alert system is based on the US CMAS system and the device sh
 
 1.  Use the following settings to fully configure NL alert types:
 
-    ``` syntax
+    ```
         <Settings Path="Messaging/PerSimSettings/$(__ICCID)/NlAlertOptions">
             <Setting Name="EmOperatorEnabled" Value="2" />
             <Setting Name="CmasExtremeAlertEnabled" Value="" />
@@ -300,7 +300,7 @@ The LAT-Alert emergency alert system is based on the 3GPP emergency alerts and C
 
 1.  Use the following settings to fully configure Chile LAT-Alert Local Alert types:
 
-    ``` syntax
+    ```
         <Settings Path="Messaging/PerSimSettings/$(__ICCID)/LatAlertOptions">
             <Setting Name="EmOperatorEnabled" Value="4" />
             <Setting Name="LatLocalAlertEnabled" Value="" />
@@ -342,7 +342,7 @@ Users can change the Taiwan Alert settings through the Messaging settings screen
 
 1.  Use the following settings to fully configure Taiwan Emergency Alerts:
 
-    ``` syntax
+    ```
         <Settings Path="Messaging/PerSimSettings/$(__ICCID)/TaiwanAlertOptions">
             <Setting Name="EmOperatorEnabled" Value="5" />
             <Setting Name="TaiwanAlertEnabled" Value="" />

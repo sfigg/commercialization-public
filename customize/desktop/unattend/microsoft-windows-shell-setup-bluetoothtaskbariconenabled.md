@@ -73,7 +73,7 @@ For a list of other supported Windows editions and architectures that this compo
 
 The following XML output shows how to enable the Bluetooth taskbar.
 
-``` syntax
+```
 <BluetoothTaskbarIconEnabled>true</BluetoothTaskbarIconEnabled>
 ```
 

@@ -82,7 +82,7 @@ You can use tools such as Xperf and Tracerpt, and ETWDump to examine the ETL fil
 
     Here’s an example of using EtwDump to decode the FieldMedic-Contacts-Calendar.etl log file.
 
-    ``` syntax
+    ```
     etwdump FieldMedic-Contacts-Calendar.etl -import "C:\Program Files (x86)\Windows Kits\10\Manifests" -o FmCC.csv –of CSV
     ```
 

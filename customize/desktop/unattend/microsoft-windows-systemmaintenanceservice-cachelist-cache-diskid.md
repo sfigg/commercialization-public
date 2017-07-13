@@ -57,7 +57,7 @@ For a list of the supported Windows editions and architectures that this compone
 
 The following example XML output shows a configuration of two ReadyBoost devices. On this sample system, the primary hard drive is disk 0 (which is not listed in the XML example), and the two ReadyBoost devices are on Disk 1, Partition 1, and Disk 2, Partition 1.
 
-``` syntax
+```
 <CacheList>
   <Cache>
     <CacheID>ReadyBoostCache1</CacheID>

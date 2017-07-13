@@ -47,7 +47,7 @@ Represents a collection of stacks. If the **Operation** attribute is specified, 
 ## Syntax
 
 
-``` syntax
+```
 <Stacks Operation = OperationEnumeration>
 
   <!-- Child elements -->

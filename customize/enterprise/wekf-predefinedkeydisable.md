@@ -20,7 +20,7 @@ Unblocks the specified predefined key combination.
 ## Syntax
 
 
-``` syntax
+```
 [Static] uint32 Disable(
     [In] string PredefinedKey
 );

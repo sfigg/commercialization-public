@@ -48,7 +48,7 @@ For a list of the supported Windows editions and architectures that this compone
 
 The following XML output shows how to configure the AppId for the `LockScreen`.
 
-``` syntax
+```
 <LockScreen>
   <Badge>
       <AppId>34567ChannelFabrikam.channel-DEF_012ghijk345!App</AppId>

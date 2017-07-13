@@ -66,7 +66,7 @@ For the list of the Windows editions and architectures that this component suppo
 
 The following XML output disables Windows CEIP.
 
-``` syntax
+```
 <CEIPEnabled>0</CEIPEnabled>
 ```
 

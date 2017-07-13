@@ -77,7 +77,7 @@ For a list of the Windows editions and architectures that this component support
 
 This XML shows how to specify that Help is customized:
 
-``` syntax
+```
 <OEMInformation>
    <HelpCustomized>true</HelpCustomized>
    <Manufacturer><OEM name></Manufacturer>

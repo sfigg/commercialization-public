@@ -18,7 +18,7 @@ You can determine whether the device is in Manufacturing Mode or not by using ei
 
 In kernel mode, a new API has been defined in wdm.h:
 
-``` syntax
+```
 _IRQL_requires_max_(APC_LEVEL)
 NTKERNELAPI
 BOOLEAN
@@ -29,7 +29,7 @@ ExIsManufacturingModeEnabled (
 
 Here's an example of how you might use it:
 
-``` syntax
+```
 BOOLEAN ManufacturingModeEnabled = FALSE;
 
 NTSTATUS
@@ -58,7 +58,7 @@ DoManufacturingOperation(
 
 In user mode, the API is defined in sysinfoapi.h:
 
-``` syntax
+```
 WINBASEAPI
 BOOL
 WINAPI
@@ -69,7 +69,7 @@ GetOsManufacturingMode(
 
 Here's an example of how you might use it:
 
-``` syntax
+```
 DWORD
 DoManufacturingOperation(
     VOID

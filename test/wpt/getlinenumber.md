@@ -22,7 +22,7 @@ Gets the number of the line at which the XML validation error occurred.
 ## Syntax
 
 
-``` syntax
+```
 HRESULT GetLineNumber
   ([out, retval] ULONG* pLineNumber)
 ;

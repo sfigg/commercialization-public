@@ -65,7 +65,7 @@ For a list of the Windows editions and architectures that this component support
 
 The following XML output shows how to set `AutoLogon` so that you can log onto the computer twice using the built-in administrator account.
 
-``` syntax
+```
 <AutoLogon>
    <Password>
       <Value>MyPassword</Value>

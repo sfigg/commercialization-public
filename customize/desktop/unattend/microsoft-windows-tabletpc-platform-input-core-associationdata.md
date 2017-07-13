@@ -57,7 +57,7 @@ For a list of the supported Windows editions and architectures that this compone
 
 The following XML output shows how to configure `AssociationData` to associate two Tablet PC monitors to two digitizers on the same system, using the key values: Monitor1, Monitor2, and Monitor3.
 
-``` syntax
+```
 <AssociationData>
    <AssociationElement wcm:action="add" wcm:keyValue="Monitor1">&quot;hid#VID_1B96&amp;PID_0008&amp;REV_2100&amp;mi_01&amp;col01&quot;=&quot;PCI\\VEN_8086&amp;DEV_4102&amp;SUBSYS_16B510CF|FUJ5812&quot;</AssociationElement>
    <AssociationElement wcm:action="add" wcm:keyValue="Monitor2">&quot;hid#VID_1B96&amp;PID_0008&amp;REV_2100&amp;mi_01&amp;col02&quot;=&quot;PCI\\VEN_8086&amp;DEV_4102&amp;SUBSYS_16B510CF|FUJ5812&quot;</AssociationElement>

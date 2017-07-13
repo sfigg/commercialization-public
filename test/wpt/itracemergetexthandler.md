@@ -22,7 +22,7 @@ Obtains the text and other metadata that was added by the user.
 ## Syntax
 
 
-``` syntax
+```
 {
     [propget, id(1), helpstring("Count")] HRESULT Count([out, retval] ULONG* cText);
     [id(2), helpstring("GetText")] HRESULT GetText([in] ULONG iText, [out] BSTR* pbstrText);

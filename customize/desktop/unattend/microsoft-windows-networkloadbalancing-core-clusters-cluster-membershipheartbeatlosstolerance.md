@@ -62,7 +62,7 @@ For a list of the supported Windows editions and architectures that this compone
 
 The following XML output specifies that when five heartbeat messages are lost, setup considers the Network Load Balancing cluster host inactive and initiates convergence.
 
-``` syntax
+```
 <MembershipHeartbeatLossTolerance>5</MembershipHeartbeatLossTolerance>
 ```
 

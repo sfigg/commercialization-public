@@ -64,7 +64,7 @@ For a list of the supported Windows editions and architectures that this compone
 
 The following XML output specifies the subnet mask for the Network Load Balancing cluster IP address.
 
-``` syntax
+```
 <ClusterNetMask>255.255.255.0</ClusterNetMask>
 ```
 

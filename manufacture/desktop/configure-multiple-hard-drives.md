@@ -79,7 +79,7 @@ For BIOS-based computers or a computer that is running Virtual Disk Service (VDS
 
     Example:
 
-    ``` syntax
+    ```
     SELECT DISK=PCIROOT(0)#PCI(0100)#ATA(C00T00L00)
     ```
 
@@ -92,7 +92,7 @@ For BIOS-based computers or a computer that is running Virtual Disk Service (VDS
 
     UEFI-based example:
 
-    ``` syntax
+    ```
     SELECT DISK=PCIROOT(0)#PCI(0100)#ATA(C00T00L00)
     clean
     convert gpt
@@ -137,7 +137,7 @@ For BIOS-based computers or a computer that is running Virtual Disk Service (VDS
 
 After you reboot, drive lettering may change. You can use the following example script to select the system drive and then reassign letters to the ESP, recovery, and Windows partitions.
 
-``` syntax
+```
 SELECT DISK=PCIROOT(0)#PCI(0100)#ATA(C01T01L00)
 select partition=1
 assign letter=s
@@ -153,7 +153,7 @@ This example script selects the system drive and then skips past the drive witho
 
 UEFI-based example:
 
-``` syntax
+```
 SELECT DISK=PCIROOT(0)#PCI(0100)#ATA(C01T01L00)
 SELECT DISK=NEXT
 clean

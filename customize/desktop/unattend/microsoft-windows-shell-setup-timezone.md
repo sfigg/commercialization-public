@@ -74,13 +74,13 @@ For a list of the Windows editions and architectures that this component support
 
 The following example shows how to set the time zone to China Standard Time (UTC+08:00).
 
-``` syntax
+```
 <TimeZone>China Standard Time</TimeZone>
 ```
 
 The following example shows how to set the time zone to Pacific Standard Time (UTC-08:00) without observing daylight savings time (UTC+01:00).
 
-``` syntax
+```
 <TimeZone>Pacific Standard Time_dstoff</TimeZone>
 ```
 

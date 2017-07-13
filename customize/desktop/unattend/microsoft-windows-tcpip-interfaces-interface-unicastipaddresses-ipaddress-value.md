@@ -134,7 +134,7 @@ The following XML output shows how to configure two static IP addresses. In this
 
 -   The IPv6 address is set to ffff:1::3, with a routing prefix length of 48. This defines the subnet mask as ffff:ffff:ffff:0000:0000:0000:0000:0000.
 
-``` syntax
+```
       <UnicastIpAddresses>
          <IpAddress wcm:action="add" wcm:keyValue="1">192.168.0.1/25</IpAddress> 
          <IpAddress wcm:action="add" wcm:keyValue="2">ffff:1::3/48</IpAddress> 
@@ -143,7 +143,7 @@ The following XML output shows how to configure two static IP addresses. In this
 
 The following XML output shows how to configure a single IP address. In this example, the IP address is set to 10.168.1.0. This is an IPv4 Class A address. Windows uses the default subnet mask of 255.0.0.0.
 
-``` syntax
+```
       <UnicastIpAddresses>
          <IpAddress wcm:action="add" wcm:keyValue="1">10.168.1.0</IpAddress> 
       </UnicastIpAddresses>
@@ -151,7 +151,7 @@ The following XML output shows how to configure a single IP address. In this exa
 
 The following XML output shows how to configure a single TCP/IP address. In this example, the IP address is set to 160.168.1.0. This is an IPv4 Class B address. Windows uses the default subnet mask of 255.255.0.0.
 
-``` syntax
+```
       <UnicastIpAddresses>
          <IpAddress wcm:action="add" wcm:keyValue="1">160.168.1.0</IpAddress> 
       </UnicastIpAddresses>

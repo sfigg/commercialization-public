@@ -192,7 +192,7 @@ You can specify which configuration pass to add new settings:
 
 -   Copy the following sample script into Notepad, and save it as **C:\\AnswerFiles\\SampleCommand.cmd**.
 
-    ``` syntax
+    ```
     @rem Scan the integrity of system files 
     @rem (Required after removing the base English language from an image)
     sfc.exe /scannow
@@ -220,7 +220,7 @@ Use the steps from [Lab 3: Add device drivers (.inf-style)](add-device-drivers.m
 **Step 7: Add the answer file**
 2.  Copy the answer file into the image into the **\\Windows\\Panther** folder, and name it unattend.xml. Create the folder if it doesn’t exist. If there’s an existing answer file, replace it or use Windows System Image Manager to edit/combine settings if necessary.
 
-    ``` syntax
+    ```
     MkDir c:\mount\windows\Windows\Panther
     Copy C:\AnswerFiles\BootToAudit-x64.xml  C:\mount\windows\Windows\Panther\unattend.xml
     MkDir c:\mount\windows\Fabrikam
@@ -235,7 +235,7 @@ Use the steps from [Lab 3: Add device drivers (.inf-style)](add-device-drivers.m
 
 2.  Commit the changes and unmount the Windows image:
 
-    ``` syntax
+    ```
     Dism /Unmount-Image /MountDir:"C:\mount\windows" /Commit
     ```
 

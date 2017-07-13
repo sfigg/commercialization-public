@@ -24,7 +24,7 @@ To build an FWVGA image with software-rendered buttons:
 
 1.  Create a customization answer file using the contents shown in the following code sample.
 
-    ``` syntax
+    ```
     <?xml version="1.0" encoding="utf-8" ?>  
     <ImageCustomizations xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate"  
                          Name="FWVGASoftwareButtons"  
@@ -116,7 +116,7 @@ To build an FWVGA image with software-rendered buttons:
 
 9.  In your OEMInput XML file, add the **NAVIGATIONBAR** feature to the **Microsoft** element that is a child of the **Features** element. This feature adds a phone setting that enables users to configure the color of the software buttons.
 
-    ``` syntax
+    ```
     <Features>
       <Microsoft>
         <Feature>NAVIGATIONBAR</Feature>

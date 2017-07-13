@@ -88,7 +88,7 @@ For a list of the Windows editions and architectures that this component support
 
 The following XML output shows how to set the product key.
 
-``` syntax
+```
 <ProductKey>AAAAA-BBBBB-CCCCC-DDDDD-EEEEE</ProductKey>
 ```
 

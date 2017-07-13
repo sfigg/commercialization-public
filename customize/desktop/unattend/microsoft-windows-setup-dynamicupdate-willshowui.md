@@ -68,7 +68,7 @@ For the list of the supported Windows editions and architectures that this compo
 
 The following XML output shows the value for the `WillShowUI` setting.
 
-``` syntax
+```
 <DynamicUpdate>
    <Enable>true</Enable>
    <WillShowUI>Never</WillShowUI>

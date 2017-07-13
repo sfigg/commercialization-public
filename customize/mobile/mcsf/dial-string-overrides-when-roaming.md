@@ -33,7 +33,7 @@ This customization supports: **per-IMSI** value
 <a href="" id="instructions-"></a>**Instructions:**  
 1.  Create a customization answer file using the contents shown in the following code sample.
 
-    ``` syntax
+    ```
     <?xml version="1.0" encoding="utf-8" ?>  
     <ImageCustomizations xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate"  
                          Name="DialStringOverrides"  
@@ -91,19 +91,19 @@ This customization supports: **per-IMSI** value
 
     1.  Replace *$(DialString)* in the settings name with the name of the dial string or number that the user will dial when roaming. For example, if the user will dial \*611, set the setting name to:
 
-        ``` syntax
+        ```
               <Setting Name="DialString/*611" Value="" />
         ```
 
     2.  Set the setting value to the override number or number that the dial string is translated into. This corresponds to the number that is actually called. For example, if the user dials \*611 and the number that must be called whenever the user dials \*611 is +18001234567, set the value as shown in the following example:
 
-        ``` syntax
+        ```
               <Setting Name="DialString/*611" Value="+18001234567" />
         ```
 
     The following example shows how to create a mapping for two dial strings, \*611 and \*86:
 
-    ``` syntax
+    ```
         <Settings Path="Phone/PerSimSettings/$(__IMSI)/RoamingNumberOverrides">  
           <Setting Name="DialString/*611" Value="+18001234567" />      
           <Setting Name="DialString/*86" Value="+1&lt;SUB&gt;" />      

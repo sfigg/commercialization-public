@@ -22,7 +22,7 @@ Indicates the number of elements to skip.
 ## Syntax
 
 
-``` syntax
+```
 HRESULT Skip
   ([in] ULONG celt)
 ;

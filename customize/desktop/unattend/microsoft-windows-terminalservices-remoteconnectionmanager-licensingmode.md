@@ -83,7 +83,7 @@ For the list of the supported Windows editions and architectures that this compo
 ## XML Example
 
 
-``` syntax
+```
 <LicensingMode>2</LicensingMode>
 ```
 

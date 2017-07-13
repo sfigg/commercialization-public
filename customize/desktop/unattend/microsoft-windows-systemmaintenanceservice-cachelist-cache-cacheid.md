@@ -57,7 +57,7 @@ For a list of the supported Windows editions and architectures that this compone
 
 The following XML output example shows a configuration of two ReadyBoost devices. On this sample system, the primary hard drive is disk 0 (not shown in the XML), and the two ReadyBoost devices are Disk 1 and 2. On the first device, the CacheID is ReadyBoostCache1. On the second device, the CacheID is ReadyBoostCache2.
 
-``` syntax
+```
 <CacheList>
   <Cache>
     <CacheID>ReadyBoostCache1</CacheID>

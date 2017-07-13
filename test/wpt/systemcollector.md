@@ -31,7 +31,7 @@ Describes the configurations to enable the Event Tracing for Windows (ETW) kerne
 ## Syntax
 
 
-``` syntax
+```
 <SystemCollector Id       = IdType
                  Base     = string
                  Name     = "NT Kernel Logger" | "Circular Kernel Context Logger"
@@ -174,7 +174,7 @@ System collector definitions should precede event collector definitions.
 
 The following code example defines a system collector.
 
-``` syntax
+```
 <SystemCollector
   Id="WPRSystemCollector”
   Name="NT Kernel Logger"

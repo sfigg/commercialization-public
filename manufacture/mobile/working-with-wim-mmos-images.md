@@ -32,7 +32,7 @@ In addition, follow these guidelines to prepare an image so that it will operate
 
 -   The following XML shows an example of the Microsoft features that can be used in a test WIM Image.
 
-    ``` syntax
+    ```
     <Microsoft>
       <Feature>MOBILECOREBOOTSH</Feature>
       <Feature>ENABLE_BOOT_KEYS_TEST</Feature>
@@ -46,13 +46,13 @@ In addition, follow these guidelines to prepare an image so that it will operate
 
 After you complete the steps in the preceding topics, use the **ImgToWIM** command to convert the signed FFU image to a WIM image. The ImgToWim executable is located in %WPDKCONTENTROOT%\\Tools\\bin\\i386. The usage is summarized here.
 
-``` syntax
+```
 ImgToWIM <FFUFileName> <WIMFileName> 
 ```
 
 When you enter the **ImgToWim** command, you should see output that is similar to the following.
 
-``` syntax
+```
 C:\TestWIM>ImgToWim MMOS.ffu MMOSWim.wim
 Reading the image file: MMOS.ffu
 ETW Log Path: C:\Users\USER1\AppData\Local\Temp\storage_session_1210.etl
@@ -78,7 +78,7 @@ Storage Service: Dismounting the image in 2.9 seconds.
 
 Use the FFUTool **WIM** option to boot from a WIM image. The usage is summarized here.
 
-``` syntax
+```
 ffutool -WIM <WIMFileName.wim>
 ```
 
@@ -90,7 +90,7 @@ To boot the device from a WIM image, complete the following steps.
 
 3.  Use the **FFUTool** command with the **-WIM** option to boot a device from a WIM image. It is located in %WPDKCONTENTROOT%\\Tools\\bin\\i386. When you enter the **FFUTool -WIM** command, you should see output that is similar to the following.
 
-    ``` syntax
+    ```
     C:\> ffutool -wim MMOSWim.wim
     Found device:
     Name:   Contoso.MSM8960.JD301_ATT.3.2.1

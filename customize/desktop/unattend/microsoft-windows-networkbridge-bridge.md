@@ -64,7 +64,7 @@ For a list of the supported Windows editions and architectures that this compone
 
 The following XML output shows how to set the bridge.
 
-``` syntax
+```
 <Bridge>{A123B456-C789-DE00-FFA4-E73F7B925305},{123F654D-00FF-AABB-CCDD1-EEFF7777702}</Bridge>
 ```
 

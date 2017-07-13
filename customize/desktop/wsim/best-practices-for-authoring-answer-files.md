@@ -126,7 +126,7 @@ You can use the **Sysprep** command with the **generalize** option and the **Loc
 
 If you specify the settings in the following example in the **specialize** configuration pass, all the values of *NEWVALUE* will be changed. However, *MyAccount* will retain its security group memberships. *MyAccount* is considered to be the same account with a different display name, description, and password value.
 
-``` syntax
+```
 <LocalAccount>
    <Name>MyAccount</Name>
    <DisplayName>NEWVALUE</DisplayName>

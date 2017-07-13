@@ -19,7 +19,7 @@ ms.technology: windows-oem
 
 This flag enables stack tracing for ReadyThread events.
 
-``` syntax
+```
 #define EVENT_TRACE_TYPE_READYTHREAD 0x32
 ```
 

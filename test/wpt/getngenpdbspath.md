@@ -22,7 +22,7 @@ Returns the path for both cache and destination NGEN PDB files for managed code.
 ## Syntax
 
 
-``` syntax
+```
 HRESULT GetNGenPdbsPath
   ([out] VARIANT_BOOL* pfEnable,
   [out] BSTR* pbstrNGenPdbsCachePath,

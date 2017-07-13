@@ -62,7 +62,7 @@ For a list of the supported Windows editions and architectures that this compone
 
 The following XML output specifies that the **Stop** and **Refresh** buttons show on the left side of the **Address** bar in Internet Explorer.
 
-``` syntax
+```
 <ShowLeftAddressToolbar>true</ShowLeftAddressToolbar>
 ```
 

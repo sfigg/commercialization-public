@@ -61,7 +61,7 @@ For a list of the supported Windows editions and architectures that this compone
 
 The following XML output shows how to set Shared Access.
 
-``` syntax
+```
 <EnableICS>true</EnableICS>
 <ExternalAdapter>MyExternalAdapter</ExternalAdapter>
 <InternalAdapter>MyInternalAdapter</InternalAdapter>

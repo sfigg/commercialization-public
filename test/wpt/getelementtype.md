@@ -22,7 +22,7 @@ Returns the type of the element at which the XML validation error occurred.
 ## Syntax
 
 
-``` syntax
+```
 HRESULT GetElementType
   ([out, retval] BSTR* pbstrElementType)
 ;

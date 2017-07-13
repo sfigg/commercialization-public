@@ -22,7 +22,7 @@ Represents a collection of profiles that the library runs as a unit. The interfa
 ## Syntax
 
 
-``` syntax
+```
 {
     [id(1), helpstring("Add")] HRESULT Add([in] IProfile* pProfile, [in] VARIANT_BOOL fMerge);
     [id(2), helpstring("Remove")] HRESULT Remove([in] IProfile* pProfile);

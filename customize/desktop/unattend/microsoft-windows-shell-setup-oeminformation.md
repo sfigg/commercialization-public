@@ -100,7 +100,7 @@ For a list of the Windows editions and architectures that this component support
 
 The following example shows how to set OEM information.
 
-``` syntax
+```
 <OEMInformation>
    <HelpCustomized>true</HelpCustomized>
    <Manufacturer>OEM name</Manufacturer>

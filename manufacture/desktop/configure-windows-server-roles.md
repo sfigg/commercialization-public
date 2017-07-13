@@ -27,7 +27,7 @@ For more information about adding the `FirstLogonCommands` setting, see [Add a C
 
 The following example shows the PowerShell.exe syntax for installing the ServerManager module and the DHCP, FAX, DNS, and File-Services roles.
 
-``` syntax
+```
 <FirstLogonCommands>
    <SynchronousCommand wcm:action="add">
       <Order>1</Order>

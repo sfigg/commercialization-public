@@ -35,7 +35,7 @@ Represents an identifier for a collector of heap events for the profile.
 ## Syntax
 
 
-``` syntax
+```
 <HeapEventCollectorId Value = IdType>
 
   <!-- Child elements -->

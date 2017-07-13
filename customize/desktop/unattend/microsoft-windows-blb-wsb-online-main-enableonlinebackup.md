@@ -66,7 +66,7 @@ For the list of the Windows editions and architectures that this component suppo
 
 The following XML output shows how to specify that no recommendations for online backup services appear in the Windows Server Backup menus.
 
-``` syntax
+```
 <EnableOnlineBackup>false</EnableOnlineBackup>
 ```
 

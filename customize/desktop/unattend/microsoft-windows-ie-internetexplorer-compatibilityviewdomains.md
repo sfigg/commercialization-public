@@ -59,7 +59,7 @@ For a list of the supported Windows editions and architectures that this compone
 
 The following XML output specifies how to render Web pages from the fabrikam.com and contoso.com domains in Compatibility View mode.
 
-``` syntax
+```
 <CompatibilityViewDomains>www.fabrikam.com;www.contoso.com</CompatibilityViewDomains>
 ```
 

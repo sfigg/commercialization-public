@@ -20,7 +20,7 @@ Restores UWF settings to the original configuration settings.
 ## Syntax
 
 
-``` syntax
+```
 UInt32 ResetSettings();
 ```
 

@@ -19,7 +19,7 @@ ms.technology: windows-oem
 
 This action produces an ANSI text file of the ETL trace log.
 
-``` syntax
+```
 -a dumper [-range T1 T2] [-stacktimeshifting] [exc_dpcisr] [-provider id1 id2 …] [-add_rawdata] [-add_pgodata] [-add_inline]
 ```
 
@@ -57,7 +57,7 @@ Events in the trace are dumped in text form.
 
 The following is an example of this action with providers specified.
 
-``` syntax
+```
 xperf -i trace.etl -o trace.etl.csv -a dumper -provider {315a8872-923e-4ea2-9889-33cd4754bf64} {7dd42a49-5329-4832-8dfd-43d979153a88}
 ```
 

@@ -19,7 +19,7 @@ ms.technology: windows-oem
 
 This flag enables stack tracing for virtual memory allocation events.
 
-``` syntax
+```
 #define EVENT_TRACE_TYPE_VIRTUAL_ALLOC 0x62
 ```
 

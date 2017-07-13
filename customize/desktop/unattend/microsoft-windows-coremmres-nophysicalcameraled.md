@@ -70,7 +70,7 @@ For a list of the supported Windows editions and architectures that this compone
 
 The following XML output specifies that no physical camera LED exists for the device.
 
-``` syntax
+```
 < NoPhysicalCameraLED >1</ NoPhysicalCameraLED >
 ```
 

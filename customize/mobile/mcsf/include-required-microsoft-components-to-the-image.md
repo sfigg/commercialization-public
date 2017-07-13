@@ -41,7 +41,7 @@ For a comprehensive list of required Microsoft components that must be included 
 
 3.  Add a &lt;Feature&gt;MESSAGINGLITE&lt;/Feature&gt; entry in your OEMInput.xml file.
 
-    ``` syntax
+    ```
     <Features>
        <Microsoft>
           <Feature>MESSAGINGLITE</Feature>
@@ -61,7 +61,7 @@ For a comprehensive list of required Microsoft components that must be included 
 
 3.  Add a &lt;Feature&gt;MESSAGINGGLOBAL&lt;/Feature&gt; entry in your OEMInput.xml file.
 
-    ``` syntax
+    ```
     <Features>
        <Microsoft>
           <Feature>MESSAGINGGLOBAL</Feature>

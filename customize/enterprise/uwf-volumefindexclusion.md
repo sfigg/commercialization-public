@@ -20,7 +20,7 @@ Checks if a specific file or folder is in the exclusion list for a volume protec
 ## Syntax
 
 
-``` syntax
+```
 UInt32 FindExclusion (
     [in] string FileName,
     [out] boolean bFound 

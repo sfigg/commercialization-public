@@ -22,7 +22,7 @@ Clones the whole set of errors and warnings.
 ## Syntax
 
 
-``` syntax
+```
 HRESULT Clone
   ([out] IEnumControlWarningInfo** ppEnum)
 ;

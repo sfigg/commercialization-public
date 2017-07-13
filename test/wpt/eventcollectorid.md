@@ -35,7 +35,7 @@ Represents an event collector identifier.
 ## Syntax
 
 
-``` syntax
+```
 <EventCollectorId Value = IdType>
 
   <!-- Child elements -->

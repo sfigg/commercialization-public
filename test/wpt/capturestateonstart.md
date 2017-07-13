@@ -47,7 +47,7 @@ Represents a collection of keywords that describe events to be captured at the s
 ## Syntax
 
 
-``` syntax
+```
 <CaptureStateOnStart Operation = "Set" | "Add"> | “Remove”
 
   <!-- Child elements -->
@@ -154,7 +154,7 @@ Represents a collection of keywords that describe events to be captured at the s
 
 The following code example shows how this element is used.
 
-``` syntax
+```
 <EventProvider Id="sample-provider" Name="SampleProvider" NonPagedMemory="true" Level="5">
   <Keywords>
     <Keyword Value="0x98"/> <!-- Provider is enabled with these keywords throughout tracing session -->

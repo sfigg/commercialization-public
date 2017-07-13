@@ -21,7 +21,7 @@ To add a customized app, create a file named Winpeshl.ini and place it in %SYSTE
 ## <span id="Example"></span><span id="example"></span><span id="EXAMPLE"></span>Example
 
 
-``` syntax
+```
 [LaunchApp]
 AppPath = %SYSTEMDRIVE%\Fabrikam\shell.exe
 [LaunchApps]

@@ -64,7 +64,7 @@ For a list of the supported Windows editions and architectures that this compone
 
 The following XML output specifies the IP address for the virtual IP address.
 
-``` syntax
+```
 <IpAddress>10.192.45.1</IpAddress>
 ```
 

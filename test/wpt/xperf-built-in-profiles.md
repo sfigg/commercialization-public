@@ -19,7 +19,7 @@ ms.technology: windows-oem
 
 To display all the built-in Xperf profiles, run the following command.
 
-``` syntax
+```
 xperf -profiles
 ```
 
@@ -87,19 +87,19 @@ The following examples turn on several ETW sessions and merge them into a single
 
 For an in-memory repeated snapshots trace profile, run the following command.
 
-``` syntax
+```
 xperf -start perf!GeneralProfiles.InBuffer
 ```
 
 Run some scenario, and then run the following command.
 
-``` syntax
+```
 xperf -save perf!GeneralProfiles.InBuffer snapshot1.etl
 ```
 
 You can optionally continue saving additional snapshots, and then stop the trace capturing by running the following command.
 
-``` syntax
+```
 xperf -cancel perf!GeneralProfiles.InBuffer
 ```
 
@@ -107,13 +107,13 @@ xperf -cancel perf!GeneralProfiles.InBuffer
 
 To start a file-based trace profile, run following command.
 
-``` syntax
+```
 xperf -start perf!RegistryProfiles.InSequentialFile
 ```
 
 Run some scenario, and then run the following command to stop trace capturing.
 
-``` syntax
+```
 xperf -stop perf!RegistryProfiles.InSequentialFile trace.etl
 ```
 
@@ -121,7 +121,7 @@ xperf -stop perf!RegistryProfiles.InSequentialFile trace.etl
 
 Profile definitions can be extended and composed using the command line. For example, to add **ReadyThread** stacks to the **perf!FileIOProfiles.InSequentialFile** profile, run the following command.
 
-``` syntax
+```
 xperf -start perf!FileIOProfiles.InSequentialFile -stackwalk ReadyThread
 ```
 

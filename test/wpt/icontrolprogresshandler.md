@@ -22,7 +22,7 @@ This interface is a client-side handler that receives updates when the library p
 ## Syntax
 
 
-``` syntax
+```
 {
   [id(1), helpstring("OnBegin")] HRESULT OnBegin();
   [id(2), helpstring("OnUpdate")] HRESULT OnUpdate

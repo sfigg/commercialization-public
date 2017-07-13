@@ -71,7 +71,7 @@ For the list of the Windows editions and architectures that this component suppo
 
 The following XML output shows how to configure `CustomPowerApplication1`.
 
-``` syntax
+```
 <CustomPowerApplication1>
    <Application>C:\Program Files\CustomPower\Application.exe</Application>
    <IconID>@%ProgramFiles%\Microsoft Shared\Resource.dll,-200</IconID>

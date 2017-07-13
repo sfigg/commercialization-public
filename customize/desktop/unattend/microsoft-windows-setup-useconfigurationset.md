@@ -63,7 +63,7 @@ For the list of the supported Windows editions and architectures that this compo
 
 The following XML output specifies that a configuration set is used.
 
-``` syntax
+```
 <UseConfigurationSet>true</UseConfigurationSet>
 ```
 

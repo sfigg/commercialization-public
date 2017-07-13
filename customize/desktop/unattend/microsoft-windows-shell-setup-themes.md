@@ -104,7 +104,7 @@ For a list of the supported Windows editions and architectures that this compone
 
 The following XML output shows how to set a customized theme.
 
-``` syntax
+```
 <Themes>
    <ThemeName>Fabrikam Theme</ThemeName>
    <DefaultThemesOff>false</DefaultThemesOff>

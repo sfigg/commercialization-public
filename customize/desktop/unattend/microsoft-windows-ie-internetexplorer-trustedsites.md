@@ -68,7 +68,7 @@ For a list of the supported Windows editions and architectures that this compone
 
 The following XML output specifies the fully qualified URLs.
 
-``` syntax
+```
 <TrustedSites>http://www.fabrikam.com;http://www.contoso.com</TrustedSites>
 ```
 

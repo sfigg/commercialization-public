@@ -67,7 +67,7 @@ For the list of the Windows editions and architectures that this component suppo
 
 The following example shows how to set the UI language to German (Germany).
 
-``` syntax
+```
 <InputLocale>0407:00000407</InputLocale> 
 <SystemLocale>de-DE</SystemLocale> 
 <UILanguage>de-DE</UILanguage> 

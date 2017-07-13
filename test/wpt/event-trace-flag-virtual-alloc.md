@@ -19,7 +19,7 @@ ms.technology: windows-oem
 
 This flag enables capture of virtual allocations and free events.
 
-``` syntax
+```
 #define EVENT_TRACE_FLAG_VIRTUAL_ALLOC 0x00004000
 ```
 

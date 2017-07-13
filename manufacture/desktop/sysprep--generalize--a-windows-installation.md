@@ -61,7 +61,7 @@ Windows replaces only the computer security identifier (SID) on the operating sy
 
         -   Close the **System Preparation Tool** window, open a Command Prompt window as an administrator, and then move to the **%WINDIR%\\system32\\sysprep** directory. Use the **Sysprep** command together with the **/generalize**, **/shutdown**, and **/oobe** options. For example:
 
-            ``` syntax
+            ```
             Sysprep /generalize /shutdown /oobe
             ```
 
@@ -92,7 +92,7 @@ If you have additional customizations, you can enter audit mode manually and mak
 
     Close the **System Preparation Tool** window, open a Command Prompt window as an administrator, and then move to the **%WINDIR%\\system32\\sysprep** directory. Use the **Sysprep** command together with the **/generalize**, **/shutdown**, and **/oobe** options. For example:
 
-    ``` syntax
+    ```
     Sysprep /generalize /shutdown /oobe
     ```
 
@@ -123,7 +123,7 @@ You can use **Sysprep** VM mode to generalize a VHD that you want to deploy as a
 
 2.  Use the **Sysprep** command together with the **/generalize**, **/oobe**, and **/mode:vm** options. For example:
 
-    ``` syntax
+    ```
     Sysprep /generalize /oobe /mode:vm
     ```
 

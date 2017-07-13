@@ -53,7 +53,7 @@ Describes the pool tags to be enabled for analyzing pool pages.
 ## Syntax
 
 
-``` syntax
+```
 <PoolTag" Value = SystemPoolTagAttributeType>
 </PoolTag>
 ```

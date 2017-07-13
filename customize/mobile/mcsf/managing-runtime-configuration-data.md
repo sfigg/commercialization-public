@@ -148,7 +148,7 @@ OEMs can configure the following settings to manage the cleanup of runtime confi
 <a href="" id="instructions-"></a>**Instructions:**  
 1.  Create a customization answer file using the contents shown in the following code sample.
 
-    ``` syntax
+    ```
     <?xml version="1.0" encoding="utf-8" ?>  
     <ImageCustomizations xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate"  
                          Name="MVDataManagement"  
@@ -226,7 +226,7 @@ When specifying the size, OEMs must specify a number of sectors that is sufficie
 
 The following example shows how to reserve 50 MB:
 
-``` syntax
+```
 <?xml version="1.0" encoding="utf-8\">
 <OEMDevicePlatform xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate">
     <MinSectorCount>20971520</MinSectorCount>

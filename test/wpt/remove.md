@@ -22,7 +22,7 @@ Removes an [IProfile](iprofile.md) object from the collection.
 ## Syntax
 
 
-``` syntax
+```
 HRESULT Remove
   ([in] IProfile* pProfile)
 ;

@@ -102,7 +102,7 @@ For a list of the supported Windows editions and architectures that this compone
 
 The following XML output shows how to configure a port rule for a cluster
 
-``` syntax
+```
 <Portrule wcm:keyValue="Portrule2">
    <VirtualIpAddress>10.100.0.223</VirtualIpAddress>
    <Protocol>Both</Protocol>

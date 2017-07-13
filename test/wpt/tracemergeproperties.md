@@ -29,7 +29,7 @@ Represents a collection of [TraceMergeProperty](tracemergeproperty.md) element. 
 ## Syntax
 
 
-``` syntax
+```
 <TraceMergeProperties>
 
   <!-- Child elements -->
@@ -99,7 +99,7 @@ None.
 
 The following code example shows how to define this element.
 
-``` syntax
+```
 <TraceMergeProperties>
   <TraceMergeProperty
     Id="TraceMerge_Default"

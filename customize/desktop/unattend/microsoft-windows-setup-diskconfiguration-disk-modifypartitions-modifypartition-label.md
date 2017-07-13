@@ -64,7 +64,7 @@ For a list of the supported Windows editions and architectures that this compone
 
 The following XML output for the `DiskConfiguration` setting shows two partition modifications. The first modification labels partition 1 as "System". The second modification labels partition 2 as "Windows".
 
-``` syntax
+```
 <DiskConfiguration>
 
   <Disk wcm:action="add">

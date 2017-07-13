@@ -65,7 +65,7 @@ For a list of the Windows editions and architectures that this component support
 
 The following XML output shows how to configure the `ImageInstall` setting to install a specific Windows image from the Windows DVD by using the image index value:
 
-``` syntax
+```
 <ImageInstall>
     <OSImage>
         <InstallFrom>
@@ -84,7 +84,7 @@ The following XML output shows how to configure the `ImageInstall` setting to in
 
 The following XML output shows how to configure the `ImageInstall` setting to install a specific Windows image from a custom Windows image file (.wim) located on a network share. Windows Setup selects the image from the LaptopImages.wim file by referencing the image description of a fictional laptop model named "Model FNB1".
 
-``` syntax
+```
 <ImageInstall>
     <OSImage>
         <InstallFrom>

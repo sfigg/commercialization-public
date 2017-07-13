@@ -20,7 +20,7 @@ This method sets the default Shell Launcher configuration.
 ## Syntax
 
 
-``` syntax
+```
 [Static] uint32 SetDefaultShell (
     [In, Required] string Shell,
     [In, Required] sint32 DefaultAction

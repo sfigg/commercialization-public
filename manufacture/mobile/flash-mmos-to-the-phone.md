@@ -26,33 +26,33 @@ After the MMOS image definition is complete, the image can be flashed to the dev
 
 5.  Prior to flashing the FFU file to the device, you must sign the FFU file using the following syntax in the command prompt. The cat file is generated with the FFU, when using the ImgGen tool.
 
-    ``` syntax
+    ```
     c:\>sign <path to cat file>
     c:\>ImageSigner SIGN <path to ffu> <path to cat file>
     ```
 
     For example:
 
-    ``` syntax
+    ```
     c:\>sign MMOS.cat
     c:\>ImageSigner SIGN MMOS.ffu MMOS.cat
     ```
 
 6.  At a command prompt, run the ffutool command, which uses the following syntax:
 
-    ``` syntax
+    ```
     c:\>ffutool -flash <path to ffu image file>
     ```
 
     For example:
 
-    ``` syntax
+    ```
     c:\>ffutool -flash C:\MMOS\MMOS.ffu
     ```
 
 7.  You should see output similar to the following.
 
-    ``` syntax
+    ```
     Logging to ETL file: C:\Users\Nancy\AppData\Local\Temp\ffutool8276.etl 
     Found device: 
     Name: Contoso.DCD6000 Phone.DCD6000 

@@ -60,7 +60,7 @@ For a list of the Windows editions and architectures that this component support
 
 The following XML output shows how to specify a GUID for Internet Explorer toolbars.
 
-``` syntax
+```
 <InstalledToolbarsList>
   <AddonGuidItem>
     <AddonGuid>{a1b1c123d1e1f4a5a6a7aa8a9a0a}</AddonGuid>
