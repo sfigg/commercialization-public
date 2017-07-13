@@ -63,7 +63,7 @@ For a list of the supported Windows editions and architectures that this compone
 
 The following XML output specifies that Windows does not notify the user when programs try to install software or make changes to the computer.
 
-``` syntax
+```
 <EnableLUA>false</EnableLUA>
 ```
 

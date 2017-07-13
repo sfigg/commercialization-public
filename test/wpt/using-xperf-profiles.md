@@ -24,7 +24,7 @@ This section shows how to capture traces by using profiles. If you are analyzing
 
 1.  Select a profile such as **perf!FileIOProfiles.InBuffer** and use command similar to the following example to display information about it.
 
-    ``` syntax
+    ```
     xperf -profiles perf!FileIOProfiles.InBuffer
     ```
 
@@ -46,7 +46,7 @@ This section shows how to capture traces by using profiles. If you are analyzing
 
 2.  Assuming that you chose to use a file-based trace, start an **InSequentialFile** trace profile by using the following command.
 
-    ``` syntax
+    ```
     xperf -start perf!GeneralProfiles.InSequentialFile
     ```
 
@@ -54,7 +54,7 @@ This section shows how to capture traces by using profiles. If you are analyzing
 
 3.  Show which **InSequentialFile** loggers have already started for a specific profile by using the following command.
 
-    ``` syntax
+    ```
     xperf -profileloggers perf!GeneralProfiles.InSequentialFile
     ```
 
@@ -68,7 +68,7 @@ This section shows how to capture traces by using profiles. If you are analyzing
 
 4.  Stop the **InSequentialFile** trace profile, save the traces, and then merge them into a trace file, such as Merged.etl, by using the following command.
 
-    ``` syntax
+    ```
     xperf -stop perf!GeneralProfiles.InSequentialFile merged.etl
     ```
 
@@ -76,7 +76,7 @@ This section shows how to capture traces by using profiles. If you are analyzing
 
 5.  Start the **InSequentialFile** trace profile, overriding, at start time, *MaxBuffers* values for all ETW sessions, for which loggers are to be started to 256. To perform this action, use the following command.
 
-    ``` syntax
+    ```
     xperf -start perf!GeneralProfiles.InSequentialFile -MaxBuffers 256
     ```
 
@@ -84,7 +84,7 @@ This section shows how to capture traces by using profiles. If you are analyzing
 
 6.  Update *MaxBuffers* values for the active **InSequentialFile** ETW loggers specified in the trace profile by using the following command.
 
-    ``` syntax
+    ```
     xperf -update perf!GeneralProfiles.InSequentialFile -MaxBuffers 256
     ```
 

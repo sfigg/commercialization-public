@@ -29,7 +29,7 @@ Represents a collection of collectors, providers, and profiles.
 ## Syntax
 
 
-``` syntax
+```
 <Profiles>
 
   <!-- Child elements -->

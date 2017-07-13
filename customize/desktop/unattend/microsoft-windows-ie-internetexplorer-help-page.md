@@ -61,7 +61,7 @@ For a list of the supported Windows editions and architectures that this compone
 
 The following XML output specifies the fully qualified URL.
 
-``` syntax
+```
 <Help_Page>http://www.fabrikam.com/support</Help_Page>
 ```
 

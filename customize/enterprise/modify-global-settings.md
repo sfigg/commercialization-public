@@ -26,7 +26,7 @@ In the second script, the function **Set-ForceOffAccessibility** modifies the va
 ## Set-DisableKeyboardFilterForAdministrators.ps1
 
 
-``` syntax
+```
 #
 # Copyright (C) Microsoft. All rights reserved.
 #
@@ -101,7 +101,7 @@ Set-DisableKeyboardFilterForAdministrators $On
 ## Set-ForceOffAccessibility.ps1
 
 
-``` syntax
+```
 #
 # Copyright (C) Microsoft. All rights reserved.
 #

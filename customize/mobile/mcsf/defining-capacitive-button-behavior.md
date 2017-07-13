@@ -27,7 +27,7 @@ Although OEMs typically configure this behavior by adding a registry value in an
 <a href="" id="instructions-"></a>**Instructions:**  
 1.  Create a customization answer file using the contents shown in the following code sample.
 
-    ``` syntax
+    ```
     <?xml version="1.0" encoding="utf-8" ?>  
     <ImageCustomizations xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate"  
                          Name="CapButtons"  
@@ -138,13 +138,13 @@ Although OEMs typically configure this behavior by adding a registry value in an
 
     -   For the `VibrateDuration` setting, set `Value` to a hexadecimal value between 0 and 1000 in decimal (or 0x0 and 0x3E8 in hexadecimal) that specifies the duration for a vibration, in milliseconds. The following example sets this value to 100.
 
-        ``` syntax
+        ```
         <Setting Name="VibrateDuration" Value="0x64" />
         ```
 
     -   For the `VibrateIntensity` setting, set `Value` to a value between 0 and 100 in decimal (or 0x0 and 0x64 in hexadecimal) that specifies the intensity of the vibration. The following example sets this value to 50.
 
-        ``` syntax
+        ```
         <Setting Name="VibrateIntensity" Value="0x32" />
         ```
 

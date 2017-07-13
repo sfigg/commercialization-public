@@ -24,13 +24,13 @@ For a more extensive check that can repair issues with the store, use `DISM /Cle
 
 1.  Scan the image to check for corruption. This operation will take several minutes. For example, at a command prompt, type the following command:
 
-    ``` syntax
+    ```
     Dism /Online /Cleanup-Image /ScanHealth
     ```
 
 2.  Check the image to see whether any corruption has been detected. For example, at a command prompt, type:
 
-    ``` syntax
+    ```
     Dism /Online /Cleanup-Image /CheckHealth
     ```
 
@@ -40,13 +40,13 @@ When you use the */CheckHealth* sfc argument, the DISM tool will report whether 
 
 -   Use the */RestoreHealth* argument to repair the image. For example, to repair an offline image using a mounted image as a repair source, at a command prompt, type the following command:
 
-    ``` syntax
+    ```
     Dism /Image:C:\offline /Cleanup-Image /RestoreHealth /Source:c:\test\mount\windows
     ```
 
     Or to repair an online image using some of your own sources instead of Windows Update, type:
 
-    ``` syntax
+    ```
     Dism /Online /Cleanup-Image /RestoreHealth /Source:c:\test\mount\windows /LimitAccess
     ```
 
@@ -57,7 +57,7 @@ When you use the */CheckHealth* sfc argument, the DISM tool will report whether 
 
 In some cases, an image can be corrupted while modifying it with DISM. Use */Cleanup-MountPoints* to repair it. This command will not unmount images that are already mounted, nor will it delete images that can be recovered using the /Remount-Image command.
 
-``` syntax
+```
 Dism /Cleanup-Mountpoints
 ```
 

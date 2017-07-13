@@ -22,7 +22,7 @@ Instructs the library to continue an operation.
 ## Syntax
 
 
-``` syntax
+```
 HRESULT OnUpdate
   ([in] ULONG CurrentValuePercent)
 ;

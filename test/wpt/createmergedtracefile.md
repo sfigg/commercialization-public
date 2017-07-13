@@ -19,7 +19,7 @@ ms.technology: windows-oem
 
 This function merges multiple trace files into a single output file.
 
-``` syntax
+```
 ULONG
 WINAPI
 CreateMergedTraceFile(

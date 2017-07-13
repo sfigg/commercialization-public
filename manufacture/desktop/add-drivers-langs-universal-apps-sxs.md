@@ -124,13 +124,13 @@ The following table shows the types of language packages and components availabl
     
     Example for adding French, x64:
 
-    ``` syntax
+    ```
     Dism /Add-Package /Image:"C:\mount\windows" /PackagePath="C:\Languages\fr-fr x64\Microsoft-Windows-Client-Language-Pack_x64_fr-fr" /PackagePath="C:\Languages\fr-fr x64\Microsoft-Windows-LanguageFeatures-Basic-fr-fr-Package.cab" /PackagePath="C:\Languages\fr-fr x64\Microsoft-Windows-LanguageFeatures-OCR-fr-fr-Package.cab" /PackagePath="C:\Languages\fr-fr x64\Microsoft-Windows-LanguageFeatures-Handwriting-fr-fr-Package.cab" /PackagePath="C:\Languages\fr-fr x64\Microsoft-Windows-LanguageFeatures-TextToSpeech-fr-fr-Package.cab" /PackagePath="C:\Languages\fr-fr x64\Microsoft-Windows-LanguageFeatures-Speech-fr-fr-Package.cab" /LogPath=C:\mount\dism.log
     ```
 
     Example for adding Japanese, x64. Note, Japanese requires a font pack.
 
-    ``` syntax
+    ```
     Dism /Add-Package /Image:"C:\mount\windows" /PackagePath="C:\Languages\ja-jp x64\Microsoft-Windows-Client-Language-Pack_x64_ja-jp" /PackagePath="C:\Languages\ja-jp x64\Microsoft-Windows-LanguageFeatures-Basic-ja-jp-Package.cab" /PackagePath="C:\Languages\ja-jp x64\Microsoft-Windows-LanguageFeatures-OCR-ja-jp-Package.cab" /PackagePath="C:\Languages\ja-jp x64\Microsoft-Windows-LanguageFeatures-Handwriting-ja-jp-Package.cab" /PackagePath="C:\Languages\ja-jp x64\Microsoft-Windows-LanguageFeatures-TextToSpeech-ja-jp-Package.cab" /PackagePath="C:\Languages\ja-jp x64\Microsoft-Windows-LanguageFeatures-Speech-ja-jp-Package.cab" /PackagePath:"C:\Languages\ja-jp x64\Microsoft-Windows-LanguageFeatures-Fonts-Jpan-Package.cab"  /LogPath=C:\mount\dism.log
     ```
 
@@ -138,7 +138,7 @@ The following table shows the types of language packages and components availabl
 
 2.  Verify that the language package is part of the image:
 
-    ``` syntax
+    ```
     Dism /Get-Packages /Image:"C:\mount\windows"
     ```
 
@@ -146,14 +146,14 @@ The following table shows the types of language packages and components availabl
 
     Review the resulting list of packages and verify that the list contains the package. For example:
 
-    ``` syntax
+    ```
     Package Identity : Microsoft-Windows-Client-LanguagePack  ...  fr-FR~10.0.15063.0
     State : Installed
     ```
 
 3.  Verify that the language components are part of the image:
 
-    ``` syntax
+    ```
     Dism /Get-Capabilities /Image:"C:\mount\windows"
     ```
 
@@ -161,7 +161,7 @@ The following table shows the types of language packages and components availabl
 
     Review the resulting list of packages and verify that the list contains the packages. For example:
 
-    ``` syntax
+    ```
     Capability Identity : Language.Basic~~~fr-fr~0.0.1.0
     State : Installed
     ...
@@ -171,13 +171,13 @@ The following table shows the types of language packages and components availabl
 
 4.  Change the default language to match the preferred language for your customers.
 
-    ``` syntax
+    ```
     Dism /Set-AllIntl:fr-fr /Image:"C:\mount\windows"
     ```
     
 5.  Change the default timezone to match the timezone for your customers. See [List of timezones](default-time-zones.md).
 
-    ``` syntax
+    ```
     Dism /Set-TimeZone:"W. Europe Standard Time" /Image:"C:\mount\windows"
     ```
 
@@ -185,7 +185,7 @@ The following table shows the types of language packages and components availabl
 
 1.  To save space, you can remove English language components when deploying to non-English regions. You can either uninstall them in the reverse order from how you add them, or remove them all at once in the same DISM /remove-package command.
 
-    ``` syntax
+    ```
     dism /Remove-Package /Image:"c:\mount\windows" /PackageName:Microsoft-Windows-Client-LanguagePack-Package~31bf3856ad364e35~amd64~en-US~10.0.15063.0 /PackageName:Microsoft-Windows-LanguageFeatures-Basic-en-us-Package~31bf3856ad364e35~amd64~~10.0.15063.0 /PackageName:Microsoft-Windows-LanguageFeatures-Handwriting-en-us-Package~31bf3856ad364e35~amd64~~10.0.15063.0 /PackageName:Microsoft-Windows-LanguageFeatures-OCR-en-us-Package~31bf3856ad364e35~amd64~~10.0.15063.0 /PackageName:Microsoft-Windows-LanguageFeatures-Speech-en-us-Package~31bf3856ad364e35~amd64~~10.0.15063.0 /PackageName:Microsoft-Windows-LanguageFeatures-TextToSpeech-en-us-Package~31bf3856ad364e35~amd64~~10.0.15063.0  /LogPath=C:\mount\dism.fod2.log
     ```
 
@@ -195,7 +195,7 @@ The following table shows the types of language packages and components availabl
 
 2.  Verify that the language package is no longer part of the image:
 
-    ``` syntax
+    ```
     Dism /Get-Packages /Image:"C:\mount\windows"
     ```
 
@@ -203,7 +203,7 @@ The following table shows the types of language packages and components availabl
 
 3.  Verify that the language components are no longer part of the image:
 
-    ``` syntax
+    ```
     Dism /Get-Capabilities /Image:"C:\mount\windows"
     ```
 
@@ -217,7 +217,7 @@ The following table shows the types of language packages and components availabl
 
 2.  Commit the changes and unmount the Windows image:
 
-    ``` syntax
+    ```
     Dism /Unmount-Image /MountDir:"C:\mount\windows" /Commit
     ```
 
@@ -243,13 +243,13 @@ Use the steps from [Lab 2: Deploy Windows using a script](deploy-windows-with-a-
 
 4.  Verify that the language packages appear correctly:
 
-    ``` syntax
+    ```
     C:\Windows\System32\Dism /Get-Packages /Online
     ```
 
     Review the resulting list of packages and verify that the list contains the package. For example:
 
-    ``` syntax
+    ```
     Package Identity : Microsoft-Windows-Client-LanguagePack  ...  fr-FR~10.0.15063.0
     State : Installed
     ```

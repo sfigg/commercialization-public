@@ -22,7 +22,7 @@ Returns the type of the object that caused the error.
 ## Syntax
 
 
-``` syntax
+```
 HRESULT GetObjectType
   ([out, retval] CObjectType* pObjectType)
 ;

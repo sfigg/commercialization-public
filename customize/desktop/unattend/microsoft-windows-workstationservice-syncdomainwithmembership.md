@@ -61,7 +61,7 @@ For a list of the supported Windows editions and architectures that this compone
 
 The following XML output shows how to specify that the primary Domain Name Service (DNS) suffix does not change when domain membership changes.
 
-``` syntax
+```
 <SyncDomainWithMembership>false</SyncDomainWithMembership>
 ```
 

@@ -20,7 +20,7 @@ Retrieves all registry key exclusions from a device that is protected by Unified
 ## Syntax
 
 
-``` syntax
+```
 UInt32 GetExclusions(
     [out, EmbeddedInstance("UWF_ExcludedRegistryKey")] string ExcludedKeys[]
 );

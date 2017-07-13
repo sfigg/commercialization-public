@@ -62,7 +62,7 @@ Always install language packs before you install updates. If you install an upda
 
 2.  Type the following commands to create the following folders:
 
-    ``` syntax
+    ```
     Mkdir C:\mount\windows
     Mkdir C:\mount\winre 
     Mkdir C:\mount\boot
@@ -72,20 +72,20 @@ Always install language packs before you install updates. If you install an upda
 
 3.  Copy the entire contents of the en-US Windows DVD to C:\\my\_Distribution. For example:
 
-    ``` syntax
+    ```
     xcopy e:\windows C:\my_distribution /s /e
     ```
 
 4.  Copy each language pack to the technician computer. For example:
 
-    ``` syntax
+    ```
     xcopy H:\LPs\Microsoft-Windows-Client-Language-Pack_x64_fr-fr.cab C:\LanguagePack
     xcopy H:\LPs\Microsoft-Windows-Client-Language-Pack_x64_de-de.cab C:\LanguagePack
     ```
 
 5.  Type the following command to retrieve the name or index number for the image that you want to modify:
 
-    ``` syntax
+    ```
     Dism /Get-ImageInfo /ImageFile:C:\my_distribution\sources\install.wim
     ```
 
@@ -93,25 +93,25 @@ Always install language packs before you install updates. If you install an upda
 
 6.  Use DISM to mount the Windows image. For example:
 
-    ``` syntax
+    ```
     Dism /Mount-Image /ImageFile:C:\my_distribution\sources\install.wim /Index:1 /MountDir:C:\mount\windows
     ```
 
 7.  Use DISM to mount the Windows recovery environment image that exists in the Windows image. For example:
 
-    ``` syntax
+    ```
     Dism /Mount-Image /ImageFile:C:\mount\windows\Windows\System32\recovery\winre.wim /Index:1 /MountDir:C:\mount\winre
     ```
 
 8.  Add language packs to the mounted offline Windows image. You can add multiple packages on one command line.
 
-    ``` syntax
+    ```
     Dism /Add-Package /image:C:/mount/windows /PackagePath:C:\LanguagePack\Microsoft-Windows-Client-Language-Pack_x64_de-de.cab /PackagePath:C:\LanguagePack\Microsoft-Windows-Client-Language-Pack_x64_fr-fr.cab 
     ```
 
 9.  Add language packs to the mounted offline Windows recovery image. The language packs that are used for the Windows recovery image are the same lp.cab files used with Windows PE. Use the language packs for Windows PE that are installed with the Windows ADK. For example:
 
-    ``` syntax
+    ```
     Dism /image:C:/mount/winre /Add-Package /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\de-de\lp.cab"
 
     Dism /image:C:/mount/winre /Add-Package /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\fr-fr\lp.cab"
@@ -121,7 +121,7 @@ Always install language packs before you install updates. If you install an upda
 
 10. (Optional) Add additional optional components and language packs to the Windows recovery image. If you want to install additional optional components to the recovery image, you must install the language-neutral cab file first, and then add the language specific cab files. For example, run the following command to add the WinPE-WinReCfg.cab optional component:
 
-    ``` syntax
+    ```
     Dism /image:C:/mount/winre /Add-Package /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\WinPE-WinReCfg.cab"
 
     Dism /image:C:/mount/winre /Add-Package /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\de-de\WinPE-WinReCfg_de-de.cab" 
@@ -151,32 +151,32 @@ Always install language packs before you install updates. If you install an upda
 
 11. Configure the default language settings to use in the Windows image.
 
-    ``` syntax
+    ```
     Dism /image:C:\mount\windows /set-allIntl:fr-fr
     ```
 
 12. Configure the default language settings to use in the Windows recovery image.
 
-    ``` syntax
+    ```
     Dism /image:C:\mount\winre /set-allIntl:fr-fr
     ```
 
 13. Recreate the lang.ini file.
 
-    ``` syntax
+    ```
     Dism /image:C:\mount\windows /gen-langini /distribution:C:\my_distribution
     ```
 
 14. Verify that the languages are installed and the correct language is configured as the default.
 
-    ``` syntax
+    ```
     Dism /image:C:\mount\windows /get-intl /distribution:C:\my_distribution 
     Dism /image:C:\mount\winre /get-intl
     ```
 
     The output for the Windows image should be similar to the following:
 
-    ``` syntax
+    ```
     Reporting offline international settings.
 
     Default system UI language : fr-FR
@@ -207,7 +207,7 @@ Always install language packs before you install updates. If you install an upda
 
     The output for the Windows recovery image should be similar to the following:
 
-    ``` syntax
+    ```
     Reporting offline international settings.
 
     Default system UI language : fr-FR
@@ -230,7 +230,7 @@ Always install language packs before you install updates. If you install an upda
 
 15. Unmount the images, committing the changes. Note that you must unmount the Windows recovery image before you unmounts and commit the Windows image.
 
-    ``` syntax
+    ```
     DISM /unmount-image /mountdir:C:\mount\winre /commit
     DISM /unmount-image /mountdir:C:\mount\windows /commit
     ```
@@ -251,13 +251,13 @@ This step is optional. If you complete this step, you can run Windows Setup in a
 
 2.  Use DISM to mount index 2 of the Boot.wim file. For example,
 
-    ``` syntax
+    ```
     Dism /Mount-Image /ImageFile:C:\my_distribution\sources\boot.wim /Index:2 /MountDir:C:\mount\boot
     ```
 
 3.  Add Windows PE language packs and Windows Setup optional components to the mounted image for each language you want to support. For example:
 
-    ``` syntax
+    ```
     DISM /add-package /image:C:\mount\boot /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\fr-fr\lp.cab" 
 
     DISM /add-package /image:C:\mount\boot /packagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\de-de\lp.cab"
@@ -265,7 +265,7 @@ This step is optional. If you complete this step, you can run Windows Setup in a
 
 4.  Add the Windows PE Setup optional components. For example:
 
-    ``` syntax
+    ```
     DISM /add-package /image:C:\mount\boot /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\WinPE-Setup.cab" 
 
     DISM /add-package /image:C:\mount\boot /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\WinPE-Setup-client.cab"
@@ -278,7 +278,7 @@ This step is optional. If you complete this step, you can run Windows Setup in a
 
 5.  Add the Windows PE language specific optional components. For example:
 
-    ``` syntax
+    ```
     DISM /add-package /image:C:\mount\boot /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\fr-fr\WinPE-Setup_fr-fr.cab"
 
     DISM /add-package /image:C:\mount\boot /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\fr-fr\WinPE-Setup-client_fr-fr.cab"
@@ -290,7 +290,7 @@ This step is optional. If you complete this step, you can run Windows Setup in a
 
 6.  In your Windows distribution, copy the language-specific Setup resources from each language specific Windows distribution to the Sources folder in your distribution share. For example, insert the Windows DVD for Fr-FR in your DVD drive (E:) and copy the Fr-FR sources folder to your Windows distribution.
 
-    ``` syntax
+    ```
     Mkdir C:\my_distribution\sources\fr-fr 
     Mkdir C:\my_distribution\sources\de-de
 
@@ -300,38 +300,38 @@ This step is optional. If you complete this step, you can run Windows Setup in a
 
 7.  Use DISM to mount the Windows image. For example:
 
-    ``` syntax
+    ```
     Dism /Mount-Image /ImageFile:C:\my_distribution\sources\install.wim /Index:1 /MountDir:C:\mount\windows
     ```
 
 8.  Get the language settings that are configured in the Windows image by using the /Get-Intl parameter. For example
 
-    ``` syntax
+    ```
     Dism /image:C:\mount\windows /Get-Intl
     Dism /image:C:\mount\winre /Get-Intl
     ```
 
 9.  Change the default language, locale, and other international settings by using the /set-allInlt parameter.
 
-    ``` syntax
+    ```
     Dism /image:C:\mount\boot /set-allIntl:fr-fr
     ```
 
 10. Recreate the lang.ini file. The Lang.ini file must be re-created each time you add or remove language resources from your distribution, and when you add or remove language packs from your Windows image.
 
-    ``` syntax
+    ```
     Dism /image:C:\mount\windows /Gen-Langini /distribution:C:\my_distribution
     ```
 
 11. Copy the lang.ini file from the Windows distribution to the boot.wim file. The Lang.ini file used in the Boot.wim file must match the Lang.ini file for the operating-system image.
 
-    ``` syntax
+    ```
     Xcopy C:\my_distribution\sources\lang.ini C:\mount\winre\sources\lang.ini
     ```
 
 12. Use DISM to unmount the Windows boot image and commit the changes. You must also unmount the Windows image. Because none of the files have changed in the Windows image, you can discard the changes. For example,
 
-    ``` syntax
+    ```
     Dism /Unmount-image /MountDir:C:\mount\boot /Commit 
     Dism /Unmount-image /MountDir:C:\mount\Windows /Discard
     ```
@@ -349,7 +349,7 @@ To boot a computer without an operating system, you must create bootable Windows
 
 1.  Create a Windows PE image on your technician computer. For example:
 
-    ``` syntax
+    ```
     Copype amd64 C:\winpe_amd64
     ```
 
@@ -363,7 +363,7 @@ To boot a computer without an operating system, you must create bootable Windows
 
 2.  Insert a USB drive into the technician computer and run the following command:
 
-    ``` syntax
+    ```
     Makewinpemedia /ufd C:\winpe_amd64 F:
     ```
 
@@ -375,7 +375,7 @@ To boot a computer without an operating system, you must create bootable Windows
 
     For example,
 
-    ``` syntax
+    ```
     Xcopy C:\my_distribution G:\my_distribution /cherkyi
     ```
 
@@ -387,20 +387,20 @@ To boot a computer without an operating system, you must create bootable Windows
 
 6.  Identify the drives, volumes, and drive letters on the test computer. From the Windows PE command prompt, type:
 
-    ``` syntax
+    ```
     Diskpart 
     List volume 
     ```
 
     Identify the drive letter of the USB drive that contains your Windows distribution. This example uses “F:\\”. Exit diskpart.
 
-    ``` syntax
+    ```
     exit
     ```
 
 7.  Install Windows by running Windows Setup.
 
-    ``` syntax
+    ```
     F:\my_distribution\setup.exe
     ```
 
@@ -446,26 +446,26 @@ In this step, you capture your Windows image from the test computer and store it
 
 2.  Identify the drives, volumes, and drive letters on the test computer. From the Windows PE command prompt, type:
 
-    ``` syntax
+    ```
     Diskpart 
     List volume 
     ```
 
     Identify the drive letter of the USB drive that contains your Windows distribution. Exit diskpart.
 
-    ``` syntax
+    ```
     exit
     ```
 
 3.  At the Windows PE command prompt, capture the Windows image. This example uses E:\\ as the location of the Windows installation. For example:
 
-    ``` syntax
+    ```
     dism /Capture-Image /CaptureDir:E:\ /ImageFile:E:\MyInstall.wim /Name:"Fabrikam"
     ```
 
 4.  Copy the image to a USB drive or to a network share. For example:
 
-    ``` syntax
+    ```
     xcopy E:\MyInstall.wim G:\MyInstall.wim
     ```
 
@@ -485,7 +485,7 @@ You should not remove a language pack from an offline Windows image if there are
 
 1.  Locate the Windows image that you intend to remove languages from, and copy it to your technician computer. For example:
 
-    ``` syntax
+    ```
     xcopy F:\sources\MyInstall.wim C:\my_images\MyInstall.wim
     ```
 
@@ -493,14 +493,14 @@ You should not remove a language pack from an offline Windows image if there are
 
 3.  Type the following command to mount the Windows image.
 
-    ``` syntax
+    ```
     Dism /mount-image /ImageFile:C:\my_images\MyInstall.wim /Name:"Fabrikam" /MountDir:C:\mount\windows 
     Dism /Mount-Image /ImageFile:C:\mount\windows\Windows\System32\recovery\winre.wim /Index:1 /MountDir:C:\mount\winre
     ```
 
 4.  Optional: Type the following command to list the packages that are installed in the offline image.
 
-    ``` syntax
+    ```
     Dism /Image:C:\mount\windows /Get-Packages 
     Dism /Image:C:\mount\winre /Get-Packages
     ```
@@ -512,7 +512,7 @@ You should not remove a language pack from an offline Windows image if there are
     **Note**  
     You can specify the package identity using the **/PackageName** option, or you can point to the original source of the package using the **/PackagePath** option. For example:
 
-    ``` syntax
+    ```
     Dism /Image:C:\mount\windows /Remove-Package /PackagePath:C:\LanguagePack\Microsoft-Windows-Client-Language-Pack_x64_fr-fr.cab 
     Dism /Image:C:\mount\winre /Remove-Package /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\fr-fr\lp.cab"
     ```
@@ -521,13 +521,13 @@ You should not remove a language pack from an offline Windows image if there are
 
 6.  If you added additional optional components to the Recovery image, remove the language-specific optional components and change the default language settings. For example:
 
-    ``` syntax
+    ```
     Dism /image:C:/mount/winre /Remove-Package /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\fr-fr\WinPE-WinReCfg_fr-fr.cab"
     ```
 
 7.  Optional. If you added additional language support to the boot.wim file, remove the language specific resources and optional components from the boot.wim file. For example:
 
-    ``` syntax
+    ```
     Dism /mount-image /ImageFile:C:\my_distribution\boot.wim /index:2 /MountDir:C:\mount\boot  
 
     Dism /remove-package /image:C:\mount\boot /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\fr-fr\lp.cab" 
@@ -544,20 +544,20 @@ You should not remove a language pack from an offline Windows image if there are
 
 8.  Recreate the lang.ini file and change the default language settings by running the following command:
 
-    ``` syntax
+    ```
     Dism /image:C:\mount\winre /Set-AllIntl:de-de
     Dism /image:C:\mount/windows /Gen-LangINI /distribution:C:\my_distribution /Set-AllIntl:de-DE
     ```
 
 9.  Optional. If you removed languages from the boot.wim file, copy the updated lang.ini file to the boot image. After you have updated the lang.ini file in the boot.wim, unmounts the boot.wim file.
 
-    ``` syntax
+    ```
     Dism /unmount-image /MountDir:C:\mount\boot /Commit
     ```
 
 10. Type the following command to commit the changes and unmount the images.
 
-    ``` syntax
+    ```
     Dism /unmount-image /MountDir:C:\mount\winre /Commit 
     Dism /unmount-image /MountDir:C:\mount\windows /Commit
     ```

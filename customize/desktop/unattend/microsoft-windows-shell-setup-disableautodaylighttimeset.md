@@ -65,7 +65,7 @@ For a list of the supported Windows editions and architectures that this compone
 
 The following XML output shows how to disable daylight saving time.
 
-``` syntax
+```
 <DisableAutoDaylightTimeSet>true</DisableAutoDaylightTimeSet>
 ```
 

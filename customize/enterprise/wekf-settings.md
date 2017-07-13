@@ -20,7 +20,7 @@ Enables or disables settings for Keyboard Filter.
 ## Syntax
 
 
-``` syntax
+```
 class WEKF_Settings {
   [Key] string Name;
   [Read, Write] string Value;
@@ -131,7 +131,7 @@ When setting the **BreakoutKeyScanCode**, be sure to use the scan code of the ke
 
 The following Windows PowerShell script demonstrates how to use this class to modify the breakout mode key for Keyboard Filter. This example sets the **BreakoutKeyScanCode** setting to the scan code for the Home key on a standard keyboard.
 
-``` syntax
+```
 #---Define variables---
 
 $COMPUTER = "localhost"

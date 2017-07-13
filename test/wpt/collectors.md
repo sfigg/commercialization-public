@@ -33,7 +33,7 @@ Represents a collection of system collector identifiers, event collector identif
 ## Syntax
 
 
-``` syntax
+```
 <Collectors Operation = "Set" | "Add" | “Remove” >
 
   <!-- Child elements -->

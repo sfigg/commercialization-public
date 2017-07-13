@@ -68,7 +68,7 @@ For the list of the supported Windows editions and architectures that this compo
 
 The following XML output shows how to set debug joins.
 
-``` syntax
+```
 <DebugJoin>true</DebugJoin>
 <DebugJoinOnlyOnThisError>1355</DebugJoinOnlyOnThisError>
 ```

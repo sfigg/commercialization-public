@@ -72,7 +72,7 @@ For a list of the supported Windows editions and architectures that this compone
 
 The following XML example shows how to set the network location to a private office network.
 
-``` syntax
+```
 <OOBE>
    <NetworkLocation>Work</NetworkLocation>
 </OOBE>

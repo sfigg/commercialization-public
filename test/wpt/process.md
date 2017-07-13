@@ -19,7 +19,7 @@ ms.technology: windows-oem
 
 This action produces a text file that summarizes metrics related to processes.
 
-``` syntax
+```
 -a process [[-thread] [-image] [-vm]]|[-tree] [-range T1 T2] [-withsids] [-withcmdline]
 ```
 

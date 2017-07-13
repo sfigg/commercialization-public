@@ -70,7 +70,7 @@ For a list of the supported Windows editions and architectures that this compone
 
 The following XML output specifies details about a BDA team.
 
-``` syntax
+```
 <BDATeam>
    <Team>{BF967924-0DE6-11D0-A285-00AA003049E2}</Team>
    <Master>true</Master>

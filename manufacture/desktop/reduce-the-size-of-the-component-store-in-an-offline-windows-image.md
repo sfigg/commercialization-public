@@ -35,13 +35,13 @@ To complete the walkthrough, you need the following:
 
 4.  Run the **DISM /Get-ImageInfo** command to retrieve the name or index number for the image that you want to update. For example:
 
-    ``` syntax
+    ```
     Dism /Get-ImageInfo /ImageFile:C:\test\images\MyImage.wim
     ```
 
 5.  Mount the Windows image. For example:
 
-    ``` syntax
+    ```
     Dism /Mount-Image /ImageFile:C:\test\images\MyImage.wim /Index:1 /MountDir:C:\test\offline
     ```
 
@@ -49,7 +49,7 @@ To complete the walkthrough, you need the following:
 
 6.  Analyze the size of the component store. For example:
 
-    ``` syntax
+    ```
     Dism /Image:C:\test\offline /Cleanup-Image /AnalyzeComponentStore
     ```
 
@@ -57,13 +57,13 @@ To complete the walkthrough, you need the following:
 
 7.  If the component store cleanup was recommended in the displayed report, then you can start cleanup of the image. For example:
 
-    ``` syntax
+    ```
     Dism /Image:C:\test\offline /Cleanup-Image /StartComponentCleanup
     ```
 
 8.  You can reduce the size of the component store further by adding the /ResetBase parameter. For example:
 
-    ``` syntax
+    ```
     Dism /Image:C:\test\offline /Cleanup-Image /StartComponentCleanup /ResetBase
     ```
     
@@ -79,7 +79,7 @@ To complete the walkthrough, you need the following:
     
 9.  Commit the changes and unmounts the image in order to save the changes that you’ve made. For example:
 
-    ``` syntax
+    ```
     Dism /Unmount-Image /MountDir:C:\test\offline /Commit
     ```
 

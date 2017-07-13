@@ -61,7 +61,7 @@ For the list of the supported Windows editions and architectures that this compo
 
 The following XML output shows how to allow a friend or support professional to offer help by using an encrypted ticket. The ticket is configured to expire after one day.
 
-``` syntax
+```
 <CreateEncryptedOnlyTickets>true</CreateEncryptedOnlyTickets>
 <fAllowToGetHelp>true</fAllowToGetHelp>
 <fAllowFullControl>true</fAllowFullControl>

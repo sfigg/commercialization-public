@@ -68,7 +68,7 @@ For a list of the Windows editions and architectures that this component support
 
 The following XML output shows how to configure Windows so that Windows does not automatically encrypt eDrives.
 
-``` syntax
+```
 <TCGSecurityActivationDisabled>1</TCGSecurityActivationDisabled>
 ```
 

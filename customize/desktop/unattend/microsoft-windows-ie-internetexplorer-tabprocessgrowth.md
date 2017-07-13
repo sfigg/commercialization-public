@@ -68,7 +68,7 @@ For a list of the Windows editions and architectures that this component support
 
 The following XML output shows how to configure Internet Explorer to allow tab processes to grow quickly.
 
-``` syntax
+```
 <TabProcessGrowth>Large</TabProcessGrowth>
 ```
 

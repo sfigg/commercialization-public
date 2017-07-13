@@ -19,7 +19,7 @@ ms.technology: windows-oem
 
 This action produces a text report that summarizes the file names in the trace.
 
-``` syntax
+```
 -a filename [-range T1 T2]
 ```
 

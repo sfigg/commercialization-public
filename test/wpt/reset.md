@@ -22,7 +22,7 @@ Resets the enumerator back to the beginning.
 ## Syntax
 
 
-``` syntax
+```
 HRESULT Reset();
 ```
 

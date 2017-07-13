@@ -57,7 +57,7 @@ For the list of the supported Windows editions and architectures that this compo
 
 The following XML output specifies the path to the license database.
 
-``` syntax
+```
 <DBPath>%SystemRoot%\System32\LSystem</DBPath>
 ```
 

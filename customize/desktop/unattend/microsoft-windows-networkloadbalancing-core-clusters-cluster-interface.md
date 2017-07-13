@@ -64,13 +64,13 @@ For a list of the supported Windows editions and architectures that this compone
 
 The following XML output specifies that the interface to be used is Local Area Connection 2.
 
-``` syntax
+```
 <Interface>Local Area Connection 2</Interface>
 ```
 
 The following XML output specifies the interface to be used by the MAC address.
 
-``` syntax
+```
 <Interface>00-30-6E-12-9F-5E</Interface>
 ```
 

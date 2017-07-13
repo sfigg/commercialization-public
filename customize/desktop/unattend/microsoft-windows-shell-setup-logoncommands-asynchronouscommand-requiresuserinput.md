@@ -66,7 +66,7 @@ For a list of the supported Windows editions and architectures that this compone
 
 The following XML output shows examples of how to set two logon commands. The `RequiresUserInput` setting has no effect for either of the commands.
 
-``` syntax
+```
 <LogonCommands>
   <AsynchronousCommand wcm:action="add">
     <CommandLine>c:\asynccommands\command1.exe</CommandLine>

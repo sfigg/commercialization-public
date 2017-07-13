@@ -20,7 +20,7 @@ Sets the critical threshold for monitoring the size of the Unified Write Filter 
 ## Syntax
 
 
-``` syntax
+```
 UInt32 SetCriticalThreshold(
     UInt32 size
 );

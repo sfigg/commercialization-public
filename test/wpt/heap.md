@@ -35,7 +35,7 @@ Writes a text file containing the following information in tabular form based on
 
 -   Heap handle
 
-``` syntax
+```
 -a heap [-pid <processId>] [-stacks] [-frames] [-images] [-range T1 T2] [-lifetime T1 T2] [-size S1 S2] [-cullframes Frame1 Frame2 ... FrameN] [-requireframes Frame1 Frame2 ... FrameN] [-cullLists cullfuncs.txt] [-top <n>] [-totals]
 ```
 

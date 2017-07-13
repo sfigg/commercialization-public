@@ -20,7 +20,7 @@ This Windows Management Instrumentation (WMI) provider class configures settings
 ## Syntax
 
 
-``` syntax
+```
 class WEDL_AssignedAccess {
     [Key] string UserSID;
     [Read, Write] string AppUserModelId;
@@ -130,7 +130,7 @@ Changes to assigned access do not affect any sessions that are currently signed 
 
 The following Windows PowerShell script demonstrates how to use this class to set up an assigned access account.
 
-``` syntax
+```
 #
 #---Define variables---
 #

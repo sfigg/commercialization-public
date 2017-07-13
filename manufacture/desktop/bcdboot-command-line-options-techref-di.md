@@ -198,7 +198,7 @@ When setting up a PC to boot more than one operating system, you may sometimes l
     1.  Open a command line, either as an administrator from inside Windows, or by booting to a command line using the Windows installation media and pressing Shift+F10, or by booting to Windows PE ([WinPE: Create USB Bootable drive](winpe-create-usb-bootable-drive.md)).
     2.  Add boot options for a Windows operating system.
 
-        ``` syntax
+        ```
         bcdboot D:\Windows
         ```
 

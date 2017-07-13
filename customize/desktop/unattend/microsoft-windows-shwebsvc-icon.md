@@ -63,7 +63,7 @@ For a list of the supported Windows editions and architectures that this compone
 
 The following XML output shows how to set Lucerne Publishing for online printing.
 
-``` syntax
+```
 <Description>Get photos printed by Lucerne and delivered to your home.</Description>
 <DisplayName>Lucerne Publishing</DisplayName>
 <href>lucernepublishing.com</href>

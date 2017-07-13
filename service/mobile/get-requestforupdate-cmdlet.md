@@ -21,7 +21,7 @@ This is the syntax for **Get-RequestForUpdate**.
 ## <span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>Syntax
 
 
-``` syntax
+```
 NAME
      Get-RequestForUpdate
 SYNTAX
@@ -96,13 +96,13 @@ The following exceptions are thrown for their corresponding error scenarios.
 
 Retrieve the status of the update and store the result object in a PowerShell variable named $result:
 
-``` syntax
+```
 PS> $result = Get-RequestForUpdate -RequestForUpdateTicketId TKT-SIGN-TEST-FO03ST-1
 ```
 
 Show the result on the console:
 
-``` syntax
+```
 PS> $result | Format-List
 
 Ticket             : TKT-SIGN-TEST-FO03ST-1
@@ -121,7 +121,7 @@ ExtensionData      : System.Runtime.Serialization.ExtensionDataObjectFile
 
 Show the resulted status on the console:
 
-``` syntax
+```
 PS> $result.Status
 
 ## StatusErrorCodeErrorMessageExtensionData
@@ -139,11 +139,11 @@ InProcessOnTrack    System.Runtime.Serializati...
 
 Attempt to retrieve the signed submission for a ticket that is still in process:
 
-``` syntax
+```
 PS> $result = Get-RequestForUpdate –RequestForUpdateTicketId TKT-SIGN-TEST-NONONO
 ```
 
-``` syntax
+```
 Get-RequestForUpdate : An error has ocurred.  The request could not be
 processed because operation is not valid for current state of service.
 Details: The specified RequestForUpdate ticket does not exist.
@@ -164,7 +164,7 @@ At line:1 char:11
 
 The following is the help documentation for the **Get-RequestForUpdate** cmdlet from Windows PowerShell.
 
-``` syntax
+```
 PS C:\Windows\system32> get-help get-requestforupdate -full
 
 NAME

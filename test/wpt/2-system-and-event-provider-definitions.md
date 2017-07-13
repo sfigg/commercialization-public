@@ -50,7 +50,7 @@ Items in the .wprp file must be defined in the following order:
 
 In some cases, providers can be defined in, instead of before, the profile definition. For example:
 
-``` syntax
+```
 <EventCollector Id="Collector1" Name="Sample Event Collector">
    <BufferSize Value="128"/>
    <Buffers Value="64"/>
@@ -78,7 +78,7 @@ The only mandatory attribute for a system provider definition is **Id**. Inner X
 
 The following code example shows a system provider definition.
 
-``` syntax
+```
 <SystemProvider
   Id="system-provider">
   <Keywords>
@@ -151,7 +151,7 @@ Optional inner XML tags specify the keywords to enable. Unlike system providers,
 
 The heap provider definition specifies the process identifier of the process for which WPR captures heap events. **Id** is the only mandatory attribute. The **HeapProcessId** child element is not mandatory. This element specifies the process **Id** attribute of the process that you want to analyze. The following example shows how to do this.
 
-``` syntax
+```
 <HeapEventProvider
   Id="Base_Heap_Provider">
 </HeapEventProvider>
@@ -169,7 +169,7 @@ The heap provider definition specifies the process identifier of the process for
 
 Unlike regular providers that are enabled throughout the whole tracing session, capture-state providers are enabled only when you save or start a capture session. The following example shows both regular and capture-state providers.
 
-``` syntax
+```
 <EventProvider Id="sample-provider" Name="SampleProvider" NonPagedMemory="true" Level="5">
   <Keywords>
     <Keyword Value="0x98"/> <!-- Provider is enabled with these keywords throughout the tracing session. -->
@@ -195,7 +195,7 @@ Unlike regular providers that are enabled throughout the whole tracing session, 
 
 The following code example defines two event providers.
 
-``` syntax
+```
 <EventProvider
   Id="Win32K-provider"
   Name="Microsoft-Windows-Win32K"

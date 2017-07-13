@@ -62,7 +62,7 @@ The custom image files to represent the phone must meet the following specificat
 
             The .ddf file must have the following contents:
 
-            ``` syntax
+            ```
             ;*** OEMImage.ddf example
             ;
             .OPTION EXPLICIT     ; Generate errors 
@@ -81,7 +81,7 @@ The custom image files to represent the phone must meet the following specificat
 
         2.  Place the OEMImage.ddf file in the OEMImage folder along with the six .png image files. At a command-line prompt in the OEMImage folder, run the following command:
 
-            ``` syntax
+            ```
             Makecab.exe /F OEMImage.ddf
             ```
 
@@ -89,7 +89,7 @@ The custom image files to represent the phone must meet the following specificat
 
 2.  Create a customization answer file using the contents shown in the following code sample.
 
-    ``` syntax
+    ```
     <?xml version="1.0" encoding="utf-8" ?>  
     <ImageCustomizations xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate"  
                          Name="WindowsPhoneAppImage"  

@@ -64,7 +64,7 @@ For a list of the supported Windows editions and architectures that this compone
 
 The following XML output specifies that an end user cannot configure the system to play audio from a device connected to an **Audio In** port.
 
-``` syntax
+```
 <EnableCaptureMonitor>false</EnableCaptureMonitor>
 ```
 

@@ -72,7 +72,7 @@ For a list of the supported Windows editions and architectures that this compone
 
 The following sample XML output shows how to specify that the host will immediately join the cluster when the operating system is started.
 
-``` syntax
+```
 <InitialHostState>Started</InitialHostState>
 ```
 

@@ -244,13 +244,13 @@ The Windows PE USB must be at least 512MB and at most 32GB. Don't use a Windows-
 
 2.  Copy the base WinPE files into a new folder:
 
-    ``` syntax
+    ```
     copype amd64 C:\winpe_amd64
     ```
 
     Repeat if you’re also deploying x86 devices:
 
-    ``` syntax
+    ```
     copype x86 C:\winpe_x86
     ```
 
@@ -395,7 +395,7 @@ Now that you've updated your WinPE image to have everything it needs to work wit
 
     For x64 WinPE:
 
-    ``` syntax
+    ```
     MakeWinPEMedia /UFD C:\winpe_amd64 D:
     ```
     Where D: is the letter of the _WinPE_ drive.
@@ -404,7 +404,7 @@ Now that you've updated your WinPE image to have everything it needs to work wit
 
     For x86 WinPE:
 
-    ``` syntax
+    ```
     MakeWinPEMedia /UFD C:\winpe_x86 D:
     ```
     Where D: is the letter of the USB drive.

@@ -22,7 +22,7 @@ Represents the control manager that runs a profile collection. The class impleme
 ## Syntax
 
 
-``` syntax
+```
 {
   [default] interface IControlManager;
   interface IOnOffTransitionManager;

@@ -66,7 +66,7 @@ For a list of the supported Windows editions and architectures that this compone
 
 The following XML output specifies the path to the OEM XML file that contains the OEM resources and tasks that are displayed in the Initial Configuration Tasks and Server applications.
 
-``` syntax
+```
 <OemExtensionXmlFilePath>C:\windows\system32\OEM\OEMExtension.xml</OemExtensionXmlFilePath>
 ```
 

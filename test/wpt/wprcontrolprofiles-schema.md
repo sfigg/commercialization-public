@@ -19,7 +19,7 @@ ms.technology: windows-oem
 
 The complete schema for Windows Performance Recorder (WPR) recording profiles, **WPRControlProfiles.xsd**, is as follows:
 
-``` syntax
+```
 <?xml version='1.0' encoding='utf-8' standalone='yes'?>
 <xs:schema
     xmlns:xs="http://www.w3.org/2001/XMLSchema"

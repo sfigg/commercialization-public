@@ -22,7 +22,7 @@ Represents the Windows Performance Recorder manager, which controls Event Tracin
 ## Syntax
 
 
-``` syntax
+```
 {
   [propget, id(1), helpstring("property ControlProgressHandler")] HRESULT ControlProgressHandler
     ([out, retval] IControlProgressHandler** ppControlProgressHandler);

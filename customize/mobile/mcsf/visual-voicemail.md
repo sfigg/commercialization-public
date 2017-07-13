@@ -152,7 +152,7 @@ Visual voicemail settings have already been set for AT&T, T-Mobile USA, and Deut
 
 1.  Create a customization answer file using the contents shown in the following code sample.
 
-    ``` syntax
+    ```
     <?xml version="1.0" encoding="utf-8" ?>  
     <ImageCustomizations xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate"  
                          Name="VisualVoicemail"  
@@ -215,7 +215,7 @@ Visual voicemail settings have already been set for AT&T, T-Mobile USA, and Deut
 
 3.  Set multiple MCCMNC\\VVMMO pairs by adding the following entry in your customization answer file.
 
-    ``` syntax
+    ```
         <Settings Path="Phone/VoicemailRegistrationTable">
           <Setting Name="ProviderRegistration/$(MCCMNC)" Value="" /> 
         </Settings>
@@ -227,7 +227,7 @@ Visual voicemail settings have already been set for AT&T, T-Mobile USA, and Deut
 
     3.  Add and set as many MCCMNC\\VVMMO pairs as you need for each mobile operator ID. For example, if you are adding another VVMMO called Fabrikam with MCC/MNC of 999/10, your entries will look like this:
 
-        ``` syntax
+        ```
             <Settings Path="Phone/VoicemailRegistrationTable">
               <Setting Name="ProviderRegistration/99999" Value="Contoso" /> 
               <Setting Name="ProviderRegistration/99910" Value="Fabrikam" /> 
@@ -236,7 +236,7 @@ Visual voicemail settings have already been set for AT&T, T-Mobile USA, and Deut
 
 4.  For each mobile operator ID defined in the previous step, you must define the applicable settings for that mobile operator by adding the following settings in your customization answer file.
 
-    ``` syntax
+    ```
         <Settings Path="Phone/VoicemailRegistrationTable/$(VVMMO)">  
           <Setting Name="CLSIDProvider" Value="" />   
           <Setting Name="CLSIDAccessor" Value="" />

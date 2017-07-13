@@ -60,7 +60,7 @@ For a list of the Windows editions and architectures thatthis component supports
 
 The following XML output shows how to set the `ImageInstall` setting to install both an operating system image and a data image.
 
-``` syntax
+```
 <ImageInstall>
     <OSImage>
         <InstallFrom>
@@ -106,12 +106,12 @@ The following XML output shows how to set the `ImageInstall` setting to install 
 
 **Relative paths:** In this XML example, the installer has the Windows installation programs, the unattend file, and the data image on a USB drive, which is currently assigned to the letter E. The technician changes the working directory to E: before running Windows Setup.
 
-``` syntax
+```
 X:\Windows\System32> E:
 E:\> setup.exe /installfrom:".\wims\32bitimage.wim" /unattend:".\autounattend_files\32bit_autounattend.xml"
 ```
 
-``` syntax
+```
 <ImageInstall>
     <DataImage>
         <InstallFrom>

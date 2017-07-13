@@ -77,7 +77,7 @@ For a list of the supported Windows editions and architectures that this compone
 
 The following XML output shows how to remove the Microsoft Print to PDF print queue and driver package.
 
-``` syntax
+```
 <RemoveMPDW>1</RemoveMPDW>
 ```
 

@@ -47,7 +47,7 @@ Reset Protection is enabled on a device by provisioning UEFI secure boot keys an
 
     The following excerpt includes the changes to the script that creates the DBX variable:
 
-    ``` syntax
+    ```
     write-progress -activity "Making secure boot variables" -status "Creating DBX"
 # add SHA256 hashes from the supplied file to the DBX variable
     $hashes = Get-Content .\OEM_RollbackHashes.bin

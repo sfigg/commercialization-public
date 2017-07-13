@@ -31,7 +31,7 @@ Represents an event collector for the profile.
 ## Syntax
 
 
-``` syntax
+```
 <EventCollector Id             = IdType
                 Base           = string
                 Name           = string
@@ -204,7 +204,7 @@ Derived collectors inherit all attributes of the base collector unless they are 
 
 The following code example defines an event collector with 64 buffers of 128 KB each.
 
-``` syntax
+```
 <EventCollector
   Id="WPREventCollector"
   Name="WPR Event Collector"

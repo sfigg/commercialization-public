@@ -38,7 +38,7 @@ The WIFI\_FEATURE\_PACK package reduces memory usage and improves the user exper
 
 3.  Add a &lt;Feature&gt;WIFI\_FEATURE\_PACK&lt;/Feature&gt; entry in your OEMInput.xml file.
 
-    ``` syntax
+    ```
     <Features>
        <Microsoft>
           <Feature>WIFI_FEATURE_PACK</Feature>

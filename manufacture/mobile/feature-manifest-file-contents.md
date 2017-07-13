@@ -27,7 +27,7 @@ Most of the elements in a FM file include a path to a package. If the package is
 
 The following example shows a sample OEM FM file.
 
-``` syntax
+```
 <?xml version="1.0" encoding="utf-8"?>
 <FeatureManifest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
   xmlns:xsd="http://www.w3.org/2001/XMLSchema" 

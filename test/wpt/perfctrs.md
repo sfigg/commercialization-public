@@ -19,7 +19,7 @@ ms.technology: windows-oem
 
 This action produces a text file that summarizes metrics related to performance counters.
 
-``` syntax
+```
 -a perfctrs [-range T1 T2]
 ```
 

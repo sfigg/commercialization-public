@@ -22,7 +22,7 @@ Compares two [ITraceMergeProperties](itracemergeproperties.md) objects.
 ## Syntax
 
 
-``` syntax
+```
 HRESULT IsEqual
   ([in] ITraceMergeProperties* pTraceMergeProperties)
 ;

@@ -22,7 +22,7 @@ Saves a recording that is logged to circular buffers in memory to the specified 
 ## Syntax
 
 
-``` syntax
+```
 HRESULT Save
   ([in] BSTR bstrFileName,
   [in] IProfileCollection* pProfileCollection,

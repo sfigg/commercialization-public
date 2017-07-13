@@ -63,7 +63,7 @@ For a list of the supported Windows editions and architectures that this compone
 
 The following XML output shows how to configure the **Additional Information** icon to point to the Fabrikam Troubleshooting application by using a GUID to specify the application location.
 
-``` syntax
+```
   <Title>@%SystemRoot%\System32\DiagCpl.dll,-82</Title>
   <Description>@%SystemRoot%\System32\DiagCpl.dll,-83</Description>
   <Icon>@%SystemRoot%\System32\imageres.dll,-179</Icon>
@@ -72,7 +72,7 @@ The following XML output shows how to configure the **Additional Information** i
 
 The following XML output shows how to configure the **Additional Information** icon to point to the Fabrikam Support website by using a URL.
 
-``` syntax
+```
   <Title>@%SystemRoot%\System32\DiagCpl.dll,-82</Title>
   <Description>@%SystemRoot%\System32\DiagCpl.dll,-83</Description>
   <Icon>@%SystemRoot%\System32\imageres.dll,-179</Icon>

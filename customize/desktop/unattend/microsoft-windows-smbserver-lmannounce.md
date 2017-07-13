@@ -61,7 +61,7 @@ For a list of the supported Windows editions and architectures that this compone
 
 The following XML output shows how to specify that the server sends LanMan (LM) or Net BIOS announcements to notify other computers of its availability.
 
-``` syntax
+```
 <LmAnnounce>true</LmAnnounce>
 <Size>2</Size>
 ```

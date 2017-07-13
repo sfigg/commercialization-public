@@ -39,7 +39,7 @@ By default, this option creates new split .wim files with a .swm extension. The 
 1.  On your technician PC, open the **Deployment and Imaging Tools Environment** as an administrator.
 2.  Split the Windows image:
 
-    ``` syntax
+    ```
     Dism /Split-Image /ImageFile:C:\images\install.wim /SWMFile:C:\images\install.swm /FileSize:4700
     ```
 

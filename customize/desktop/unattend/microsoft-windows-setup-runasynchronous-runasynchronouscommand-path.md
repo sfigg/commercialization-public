@@ -61,7 +61,7 @@ For a list of the supported Windows editions and architectures that this compone
 
 The following XML output shows how to configure asynchronous commands to run.
 
-``` syntax
+```
 <RunAsynchronous>
    <RunAsynchronousCommand>
       <Order>1</Order>

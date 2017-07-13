@@ -20,7 +20,7 @@ Blocks or unblocks key combinations by using the keyboard scan code, which is an
 ## Syntax
 
 
-``` syntax
+```
 class WEKF_Scancode {
     [Static] uint32 Add(
         [In] string Modifiers,
@@ -144,7 +144,7 @@ You can specify key combinations by including the modifier keys in the *Modifier
 
 The following code demonstrates how to add or enable a keyboard scan code that Keyboard Filter will block by using the Windows Management Instrumentation (WMI) providers for Keyboard Filter. This example modifies the properties directly, and does not call any of the methods defined in **WEKF\_Scancode**.
 
-``` syntax
+```
 <#
 .Synopsis
     This script shows how to use the WMI provider to enable and add 

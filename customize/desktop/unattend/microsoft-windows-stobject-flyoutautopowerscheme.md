@@ -21,7 +21,7 @@ ms.technology: windows-oem
 
 You can use the Powercfg command-line tool to list the available power plans. For example,
 
-``` syntax
+```
 powercfg -LIST
 
 ## Existing Power Schemes (* Active)
@@ -76,7 +76,7 @@ For a list of the Windows editions and architectures that this component support
 
 The following XML output shows how to configure `FlyoutAutoPowerScheme`.
 
-``` syntax
+```
 <FlyoutAutoPowerScheme>391b4222-f694-41f0-9685-ff5bb260df2e</FlyoutAutoPowerScheme>
 ```
 

@@ -74,7 +74,7 @@ For a list of the supported Windows editions and architectures that this compone
 
 The following XML example shows how to set Windows Welcome to always hide the **Join Wireless Network** screen.
 
-``` syntax
+```
 <OOBE>
   <HideWirelessSetupInOOBE>true</HideWirelessSetupInOOBE>
 </OOBE>

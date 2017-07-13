@@ -24,7 +24,7 @@ If enabling this customization, OEMs can specify one or more ICCID digit prefix 
 <a href="" id="instructions-"></a>**Instructions:**  
 1.  Create a customization answer file using the contents shown in the following code sample.
 
-    ``` syntax
+    ```
     <?xml version="1.0" encoding="utf-8" ?>  
     <ImageCustomizations xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate"  
                          Name="SetBrandingSlot"  
@@ -75,7 +75,7 @@ If enabling this customization, OEMs can specify one or more ICCID digit prefix 
 
     The following example shows the first few segments and digit strings in the default OS IccidToRegion.xml mapping table:
 
-    ``` syntax
+    ```
     <?xml version="1.0" encoding="utf-8" ?>  
     <IccidToRegion>   
       <Segment> <!-- Row 1 -->  

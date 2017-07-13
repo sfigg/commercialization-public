@@ -66,7 +66,7 @@ For a list of the supported Windows editions and architectures that this compone
 
 The following XML output specifies that the cluster MAC address is automatically calculated from the primary cluster IP address.
 
-``` syntax
+```
 <ClusterIpToClusterMacEnabled>true</ClusterIpToClusterMacEnabled>
 ```
 

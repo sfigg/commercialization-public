@@ -75,7 +75,7 @@ For a list of the Windows editions and architectures that this component support
 
 The following example configures Windows 8.1 to not automatically encrypt the operating system drive and any fixed data drive using BitLocker when the PC first boots.
 
-``` syntax
+```
 <component name="microsoft-windows-securestartup-filterdriver-" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS">
       <PreventDeviceEncryption>true</PreventDeviceEncryption>
 </component

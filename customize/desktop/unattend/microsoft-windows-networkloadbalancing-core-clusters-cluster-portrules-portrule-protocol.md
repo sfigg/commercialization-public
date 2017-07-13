@@ -72,7 +72,7 @@ For the list of the supported Windows editions and architectures that this compo
 
 The following XML output shows how to specify that the TCP protocol is used by the cluster for TCP traffic.
 
-``` syntax
+```
 <Protocol>TCP</Protocol>
 ```
 

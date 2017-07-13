@@ -36,7 +36,7 @@ OEMs can build and register a phone call/SMS filter application, which helps red
 
 2.  Create a customization answer file using the contents shown in the following code sample.
 
-    ``` syntax
+    ```
     <?xml version="1.0" encoding="utf-8" ?>  
     <ImageCustomizations xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate"  
                          Name="PhoneCallSMSFilterApp"  

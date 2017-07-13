@@ -63,7 +63,7 @@ For a list of the supported Windows editions and architectures that this compone
 
 The following XML output specifies how to disable pop-up blocking.
 
-``` syntax
+```
 <BlockPopups>no</BlockPopups>
 ```
 

@@ -34,7 +34,7 @@ For example, after you have completed initial testing on a new image, the image 
 
 To prepare an FFU catalog to be signed:
 
-``` syntax
+```
 PS> Initialize-FirmwareSubmission -TypeOfProduct WindowsPhoneBlue -TypeOfSubmission FfuCatalog -UpdateHistoryPath c:\input\UpdateHistory.xml -OemInputPath c:\input -OutputFilePath c:\output -FfuPath c:\input\flash.ffu
 ```
 

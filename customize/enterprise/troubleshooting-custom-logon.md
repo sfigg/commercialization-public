@@ -27,13 +27,13 @@ This can occur when your device is configured to require a password when waking 
 
     1.  At an administrator command prompt, type the following command:
 
-        ``` syntax
+        ```
         uwfmgr.exe filter disable
         ```
 
     2.  To restart the device, type the following command:
 
-        ``` syntax
+        ```
         uwfmgr.exe restart
         ```
 
@@ -47,13 +47,13 @@ This can occur when your device is configured to require a password when waking 
 
     1.  At an administrator command prompt, type the following command:
 
-        ``` syntax
+        ```
         uwfmgr.exe filter enable
         ```
 
     2.  To restart the device, type the following command:
 
-        ``` syntax
+        ```
         uwfmgr.exe restart
         ```
 
@@ -100,7 +100,7 @@ When the BSDR screen is disabled, restarting or shutting down the device causes 
 
 2.  Type the following, replacing *&lt;accountname&gt;* with the name of the account you want to remove the password expiration from.
 
-    ``` syntax
+    ```
     net accounts <accountname> /expires:never
     ```
 
@@ -110,7 +110,7 @@ When the BSDR screen is disabled, restarting or shutting down the device causes 
 
 2.  Type the following
 
-    ``` syntax
+    ```
     net accounts /MaxPWAge:unlimited
     ```
 

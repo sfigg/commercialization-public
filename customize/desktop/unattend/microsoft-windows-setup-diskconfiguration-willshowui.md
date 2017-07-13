@@ -66,7 +66,7 @@ For the list of the supported Windows editions and architectures that this compo
 
 The following XML output for the `DiskConfiguration` setting shows how to modify an existing partition structure. By default, Windows Setup will apply the partition structure, if it is possible. If Windows Setup detects an error with the partition structure, Windows Setup will display the disk configuration UI.
 
-``` syntax
+```
 <DiskConfiguration>
 
   <WillShowUI>OnError</WillShowUI> 

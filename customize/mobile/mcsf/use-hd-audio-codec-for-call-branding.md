@@ -22,7 +22,7 @@ OEMs can customize call progress branding when a call is made using a specific a
 <a href="" id="instructions-"></a>**Instructions:**  
 1.  Create a customization answer file using the contents shown in the following code sample.
 
-    ``` syntax
+    ```
      <?xml version="1.0" encoding="utf-8" ?>  
     <ImageCustomizations xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate"  
                          Name="EnableSupplementaryServiceEraseToDeactivateOverride" Description=”Call progress branding”

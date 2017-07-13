@@ -47,7 +47,7 @@ Represents a collection of keywords that describe events to be captured when a t
 ## Syntax
 
 
-``` syntax
+```
 <CaptureStateOnSave Operation = "Set" | "Add"> | “Remove”
 
   <!-- Child elements -->
@@ -154,7 +154,7 @@ Represents a collection of keywords that describe events to be captured when a t
 
 The following code example shows how this element is used.
 
-``` syntax
+```
 <EventProvider Id="EventProvider_DWMWin32k_CaptureState" Name="e7ef96be-969f-414f-97d7-3ddb7b558ccc" NonPagedMemory="true" CaptureStateOnly="true" > 
   <!-- CaptureStateOnly="true" means provider is not enabled throughout the tracing session. -->
   <CaptureStateOnSave>

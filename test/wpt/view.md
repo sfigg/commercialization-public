@@ -19,7 +19,7 @@ ms.technology: windows-oem
 
 Displays the trace in the graphical viewer.
 
-``` syntax
+```
 xperf <trace file>
 ```
 

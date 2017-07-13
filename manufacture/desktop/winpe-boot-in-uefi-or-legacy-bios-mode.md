@@ -34,7 +34,7 @@ For many operations, such as applying Windows images using Diskpart and DISM, th
 
 1.  Check the **HKLM\\System\\CurrentControlSet\\Control\\PEFirmwareType** registry value to see if the PC is booted to UEFI or BIOS mode. Note: you may need to run `wpeutil UpdateBootInfo` to make sure this value is present.
 
-    ``` syntax
+    ```
     reg query HKLM\System\CurrentControlSet\Control /v PEFirmwareType
     ```
 
@@ -42,7 +42,7 @@ For many operations, such as applying Windows images using Diskpart and DISM, th
 
     Sample script:
 
-    ``` syntax
+    ```
     wpeutil UpdateBootInfo
     for /f "tokens=2* delims=    " %%A in ('reg query HKLM\System\CurrentControlSet\Control /v PEFirmwareType') DO SET Firmware=%%B
     :: Note: delims is a TAB followed by a space.

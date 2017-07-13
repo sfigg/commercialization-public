@@ -73,7 +73,7 @@ For a list of the Windows editions and architectures that this component support
 
 The following XML output shows how to set Windows Anytime Upgrade.
 
-``` syntax
+```
 <ReferralId>12345</ReferralId>
 ```
 

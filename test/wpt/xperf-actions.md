@@ -21,7 +21,7 @@ Xperf actions are trace processing components that collate event information to 
 
 All actions are invoked using the following command-line pattern:
 
-``` syntax
+```
 xperf -i input.etl -o output.txt -a <action_name> [action_parameters]
 ```
 

@@ -67,7 +67,7 @@ For a list of the supported Windows editions and architectures that this compone
 
 The following XML output shows how to configure the Pop-up Blocker.
 
-``` syntax
+```
 <AllowedSites>http://www.fabrikam.com;http://www.contoso.com</AllowedSites>
 <FilterLevel>High</FilterLevel> 
 <PlaySound>false</PlaySound> 

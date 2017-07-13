@@ -148,7 +148,7 @@ For a list of the Windows editions and architectures that this component support
 
 The following XML output shows two partition modifications. The first modification formats the partition for the NTFS file system, marks the partition as active, and labels it "System". The second modification formats the second partition on the disk to NTFS, labels it "Windows", and extends the partition to fill the remainder of the disk.
 
-``` syntax
+```
 <DiskConfiguration>
 
   <Disk wcm:action="add">

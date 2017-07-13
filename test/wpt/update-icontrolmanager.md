@@ -22,7 +22,7 @@ Updates a profile collection.
 ## Syntax
 
 
-``` syntax
+```
 HRESULT Update
   ([in] IProfileCollection* pProfileCollection)
 ;

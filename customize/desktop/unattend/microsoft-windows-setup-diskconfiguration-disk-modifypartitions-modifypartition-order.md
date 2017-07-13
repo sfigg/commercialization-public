@@ -63,7 +63,7 @@ For a list of the Windows editions and architectures that this component support
 
 The following XML output for the `DiskConfiguration` setting shows partition modifications for a BIOS-based computer with two hard drives. The first hard drive includes three partitions, including three modifications configured, that are ordered 1, 2, and 3. The second hard drive includes a single partition, with a single modification configured, that is ordered 1.
 
-``` syntax
+```
 <DiskConfiguration>
 
   <!-- First hard drive -->
@@ -171,7 +171,7 @@ The following XML output for the `DiskConfiguration` setting shows partition mod
 
 The following XML output for the `DiskConfiguration` setting shows partition modifications for a BIOS-based computer with six partitions: three primary partitions, an extended partition, and two logical partitions. There are five modifications configured, ordered 1, 2, 3, 4, and 5. The extended partition does not require modification.
 
-``` syntax
+```
 <DiskConfiguration>
 
   <Disk wcm:action="add">
@@ -302,7 +302,7 @@ The following XML output for the `DiskConfiguration` setting shows partition mod
 
 The following XML output for the `DiskConfiguration` setting shows partition modifications for a UEFI-based computer. The hard drive includes three partitions: an EFI system partition, a Microsoft Reserved (MSR) partition, and a primary Windows partition. There are two modifications configured, ordered 1 and 2. The MSR extended partition does not require modification.
 
-``` syntax
+```
 <DiskConfiguration>
 
   <Disk wcm:action="add">

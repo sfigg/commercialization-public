@@ -66,7 +66,7 @@ For the list of the supported Windows editions and architectures that this compo
 
 The following XML output specifies that a host that is shut down while in a suspended state will remain suspended when Windows is started.
 
-``` syntax
+```
 <PersistSuspendedState>false</PersistSuspendedState>
 ```
 

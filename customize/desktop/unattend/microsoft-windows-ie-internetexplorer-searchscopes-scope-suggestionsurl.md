@@ -65,7 +65,7 @@ For a list of the supported Windows editions and architectures that this compone
 
 The following XML output shows how to specify a URL to provide search suggestions by using a search based on XML.
 
-``` syntax
+```
 <SearchScopes>
    <Scope wcm:action="add">
       <ScopeDisplayName>MySecondSearchProvider</ScopeDisplayName>

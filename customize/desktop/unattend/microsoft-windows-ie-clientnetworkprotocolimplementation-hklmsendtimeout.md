@@ -57,7 +57,7 @@ For a list of the supported Windows editions and architectures that this compone
 
 The following XML output shows how to specify that the system waits two minutes for data to be sent over the network. If the send takes longer than this time-out value, the send is canceled..
 
-``` syntax
+```
  
 <HKLMConnectTimeOut>120000</HKLMConnectTimeOut>
 ```

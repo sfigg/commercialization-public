@@ -20,7 +20,7 @@ Adds a file or folder to the file exclusion list for a volume protected by Unifi
 ## Syntax
 
 
-``` syntax
+```
 UInt32 AddExclusion(
     string FileName
 );

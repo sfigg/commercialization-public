@@ -42,7 +42,7 @@ Before the host app can reboot a device to flashing mode or retrieve version inf
 
 2.  Enumerate through the collection of device IDs to determine which connected device is a Windows 10 Mobile For each device ID, create an [IPortableDevice](http://msdn.microsoft.com/library/windows/desktop/dd319361.aspx) object and then use the [IPortableDevice::Content](http://msdn.microsoft.com/library/windows/desktop/dd375688.aspx) and [IPortableDeviceContent::Properties](http://msdn.microsoft.com/library/windows/desktop/dd388540.aspx) functions to retrieve the value of the WPD\_DEVICE\_MODEL\_UNIQUE\_ID device property for the device. If the device is a Windows 10 Mobile device, the value of the WPD\_DEVICE\_MODEL\_UNIQUE\_ID property is a GUID with the following value.
 
-    ``` syntax
+    ```
     0x59f12ea9, 0x53ce, 0x452d, 0x97, 0x11, 0xca, 0x4e, 0xea, 0xf1, 0x80, 0x89
     ```
 
@@ -137,7 +137,7 @@ After you have opened an [IPortableDeviceService](http://msdn.microsoft.com/libr
 
     -   The *fmtid* field must have the following GUID value:
 
-        ``` syntax
+        ```
         0x9BFC64C1, 0x19C9, 0x4F3D, 0xA1, 0x4D,  0xC8,  0xDB,  0xE0,  0x47,  0x5D,  0x13
         ```
 

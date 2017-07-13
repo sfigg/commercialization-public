@@ -22,7 +22,7 @@ Gets the provider GUID associated with the specified name.
 ## Syntax
 
 
-``` syntax
+```
 HRESULT GetProviderGuidFromName
   ([out] GUID* ProviderId,
   [in] BSTR bstrProViderName)

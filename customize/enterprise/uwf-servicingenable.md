@@ -20,7 +20,7 @@ Enables Unified Write Filter (UWF) servicing mode.
 ## Syntax
 
 
-``` syntax
+```
 UInt32 Enable();
 ```
 

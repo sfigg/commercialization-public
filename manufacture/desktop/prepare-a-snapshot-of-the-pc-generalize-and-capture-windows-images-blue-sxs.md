@@ -28,7 +28,7 @@ You'll the Windows 10, version 1607 or later version of the Deployment and Imagi
 
 1.  From the technician PC, copy the Deployment and Imaging Tools from the Windows ADK to external storage (for example, a storage USB key with drive letter D:).
 
-    ``` syntax
+    ```
     CopyDandI.cmd amd64 D:\ADKTools\amd64
 	```
 	
@@ -130,7 +130,7 @@ NOTE: “Referral”   switch is optional,  If OEM partner is  participating in 
 
 2.  Capture the changes into a provisioning package. This creates a compressed copy of the desktop applications and drivers that you added in audit mode that can be used by the recovery tools.
 
-    ``` syntax
+    ```
     D:\ADKTools\amd64\scanstate.exe /apps /ppkg C:\Recovery\Customizations\usmt.ppkg /o /c /v:13 /l:C:\Recovery\ScanState.log
     ```
 
@@ -142,7 +142,7 @@ This step is required when you're capturing images to apply to other PCs.
 	
 1.  Prepare the device for the end user: Right-click **Start**, select **Command Prompt (Admin)**, and from the command prompt, run the following command:
 
-    ``` syntax
+    ```
     C:\Windows\System32\Sysprep\sysprep /oobe /generalize /shutdown
     ```
 
@@ -158,13 +158,13 @@ This step is required when you're capturing images to apply to other PCs.
 
 3.  Optional: speed up the optimization and image capture processes by setting the power scheme to High performance:
 
-    ``` syntax
+    ```
     powercfg /s 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c
     ```
 
 4.  Find the drive letters by using DiskPart:
 
-    ``` syntax
+    ```
     diskpart
     DISKPART> list volume
     DISKPART> exit
@@ -178,7 +178,7 @@ This step is required when you're capturing images to apply to other PCs.
 
 1.  Save space by single-instancing the image. This removes the original copy of the desktop applications, and adds pointer files so that these applications can run from the recovery provisioning package you created earlier.
 
-    ``` syntax
+    ```
     DISM /Apply-CustomDataImage /CustomDataImage:C:\Recovery\Customizations\USMT.ppkg /ImagePath:C:\ /SingleInstance
     ```
 
@@ -188,7 +188,7 @@ This step is required when you're capturing images to apply to other PCs.
 
 2.  Cleanup the Windows files:
 
-    ``` syntax
+    ```
     md c:\temp
 
     DISM /Cleanup-Image /Image=C:\ /StartComponentCleanup /ResetBase /ScratchDir:C:\Temp
@@ -200,7 +200,7 @@ This step is required when you're capturing images to apply to other PCs.
 
 -   Capture the image of the Windows partition.
 
-    ``` syntax
+    ```
     dism /Capture-Image /CaptureDir:C:\ /ImageFile:"C:\WindowsWithFinalChanges.wim" /Name:"Final changes"
     ```
 

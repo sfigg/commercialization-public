@@ -22,7 +22,7 @@ Enables the client to specify how multiple event trace log (ETL) files should be
 ## Syntax
 
 
-``` syntax
+```
 {
   [id(1), helpstring("LoadFromFile")] HRESULT LoadFromFile([in] BSTR bstrTraceMergeName, [in] BSTR bstrFileName);
   [id(2), helpstring("LoadFromString")] HRESULT LoadFromString([in] BSTR bstrTraceMerge);

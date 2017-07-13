@@ -19,7 +19,7 @@ ms.technology: windows-oem
 
 This action produces a text file that has detailed information about the system on which the trace was taken.
 
-``` syntax
+```
 -a sysconfig [-xml] [-netidentity] [-cpu] [-memory] [-build] [-etw] [-power] [-disk] [-idechannel] [-video] [-nic] [-irq] [-services] [-pnp]
 ```
 

@@ -20,7 +20,7 @@ This method enables or disables Shell Launcher.
 ## Syntax
 
 
-``` syntax
+```
 [Static] uint32 SetEnabled(
     [In, Required] boolean Enabled
 );

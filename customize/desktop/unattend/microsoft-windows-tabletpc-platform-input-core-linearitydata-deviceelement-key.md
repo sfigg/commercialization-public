@@ -66,7 +66,7 @@ For a list of the supported Windows editions and architectures that this compone
 
 The following XML output shows how to configure `Key`.
 
-``` syntax
+```
 <NameServerList>
    <IpAddress wcm:action="add" wcm:keyValue="MyKey">MyValue</IpAddress> 
    </NameServerList>

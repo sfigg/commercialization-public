@@ -20,7 +20,7 @@ This method retrieves a value that indicates if Shell Launcher is enabled or dis
 ## Syntax
 
 
-``` syntax
+```
 [Static] uint32 IsEnabled(
     [Out, Required] boolean Enabled
 );

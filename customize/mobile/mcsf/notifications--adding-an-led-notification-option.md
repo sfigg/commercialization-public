@@ -22,7 +22,7 @@ In Windows 10 Mobile, the notification LED on handheld devices may not turn on 
 <a href="" id="instructions-"></a>**Instructions:**  
 1.  You must configure the **HardwareId** and **InstanceId** registry keys to enable LED notification on the device. In the following example, you must change the value of **HardwareId** to match your device ID (DeviceId).
 
-    ``` syntax
+    ```
       [HKEY_LOCAL_MACHINE\Microsoft\Shell\Nocontrol\LedAlert]
        "HardwareId"="ACPI\\QCOM0D50"   
        "InstanceId"=dword:0
@@ -32,7 +32,7 @@ In Windows 10 Mobile, the notification LED on handheld devices may not turn on 
 
     If the OS correctly detects the LED, the following registry keys will also be populated. Otherwise, they will not be created.
 
-    ``` syntax
+    ```
       "LedHwAvailable"=dword:00000001
        "Intensity"=dword:00000064 
        "Period"=dword:000007d0 
@@ -51,7 +51,7 @@ In Windows 10 Mobile, the notification LED on handheld devices may not turn on 
 
     The following example shows how to do this.
 
-    ``` syntax
+    ```
     <?xml version="1.0" encoding="utf-8"?>
     <Package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
       Owner=""
@@ -95,7 +95,7 @@ In Windows 10 Mobile, the notification LED on handheld devices may not turn on 
 
     For example, the following code snippet shows a sample OEM feature manifest (FM) file that may contain the .spkg that includes the customization:
 
-    ``` syntax
+    ```
     <?xml version="1.0" encoding="utf-8"?>  
     <FeatureManifest 
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
@@ -120,7 +120,7 @@ In Windows 10 Mobile, the notification LED on handheld devices may not turn on 
 
     For example, the OEMInput.xml entry for the feature you defined in the previous step will look like this:
 
-    ``` syntax
+    ```
       <Features>
         <OEM>
           <Feature>WEH_LEDALERT</Feature>

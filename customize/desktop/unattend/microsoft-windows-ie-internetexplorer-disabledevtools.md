@@ -64,7 +64,7 @@ For a list of the supported Windows editions and architectures that this compone
 
 The following XML output shows how to disable the Internet Explorer 8 Development Tools.
 
-``` syntax
+```
 <DisableDevTools>true</DisableDevTools>
 ```
 

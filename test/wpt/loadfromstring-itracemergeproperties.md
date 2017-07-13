@@ -22,7 +22,7 @@ Loads trace merge properties from an XML definition string.
 ## Syntax
 
 
-``` syntax
+```
 HRESULT LoadFromString
   ([in] BSTR bstrTraceMerge)
 ;

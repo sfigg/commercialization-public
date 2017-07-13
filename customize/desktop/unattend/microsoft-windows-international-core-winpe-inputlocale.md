@@ -73,7 +73,7 @@ For a list of the Windows editions and architectures that this component support
 
 The following example shows how to set the input locale to the English (United States) Dvorak keyboard.
 
-``` syntax
+```
 <InputLocale>0409:00010409</InputLocale>
 <SystemLocale>en-US</SystemLocale> 
 <UILanguage>en-US</UILanguage> 

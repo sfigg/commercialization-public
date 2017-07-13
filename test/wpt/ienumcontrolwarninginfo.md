@@ -22,7 +22,7 @@ Provides a standard COM enumeration method for enumerating a collection of [ICon
 ## Syntax
 
 
-``` syntax
+```
 {
   [id(1), helpstring("Next")] HRESULT Next
     ([in] ULONG celt,

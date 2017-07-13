@@ -22,7 +22,7 @@ Loads trace merge properties from a file.
 ## Syntax
 
 
-``` syntax
+```
 HRESULT LoadFromFile
   ([in] BSTR bstrTraceMergeName,
   [in] BSTR bstrFileName)

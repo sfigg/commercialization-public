@@ -72,7 +72,7 @@ For the list of the supported Windows editions and architectures that this compo
 
 The following XML example shows how to set the network so that requests from the same client are guaranteed to be picked up by the same cluster host until a timeout period of 15 minutes expires.
 
-``` syntax
+```
 <Timeout>900</Timeout>
 ```
 

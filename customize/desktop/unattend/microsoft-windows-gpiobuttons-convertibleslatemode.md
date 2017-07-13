@@ -81,7 +81,7 @@ For a list of the supported Windows editions and architectures that this compone
 
 The following XML output specifies a laptop form factor.
 
-``` syntax
+```
 <ConvertibleSlateMode>1</ConvertibleSlateMode>
 ```
 

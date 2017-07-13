@@ -35,7 +35,7 @@ Represents the identifier of a system collector.
 ## Syntax
 
 
-``` syntax
+```
 <SystemCollectorId Value = IdType>
 
   <!-- Child elements -->

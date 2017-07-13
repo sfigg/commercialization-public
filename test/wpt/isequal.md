@@ -22,7 +22,7 @@ Compares two [IProfile](iprofile.md) objects.
 ## Syntax
 
 
-``` syntax
+```
 HRESULT IsEqual
   ([in] IProfile* pProfile)
 ;

@@ -33,7 +33,7 @@ Indicates whether to delete premerged event trace log (ETL) files.
 ## Syntax
 
 
-``` syntax
+```
 <DeletePreMergedTraceFiles Value = boolean>
 </DeletePreMergedTraceFiles>
 ```

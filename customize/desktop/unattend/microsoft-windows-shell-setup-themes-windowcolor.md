@@ -60,7 +60,7 @@ For a list of the Windows editions and architectures that this component support
 
 The following XML output shows how to set the default `WindowColor` to match the color palette of the desktop wallpaper.
 
-``` syntax
+```
             <Themes>
                 <ThemeName>Test</ThemeName>
                 <WindowColor>Automatic</WindowColor>

@@ -111,7 +111,7 @@ To save space, you can remove English language components when deploying to non-
 
 -   Mount the Windows and Windows RE images. The Windows RE image file is part of the Windows image.
 
-    ``` syntax
+    ```
     md C:\mount\windows
     Dism /Mount-Image /ImageFile:install.wim /Index:1 /MountDir:"C:\mount\windows"
     md C:\mount\winre
@@ -128,7 +128,7 @@ To save space, you can remove English language components when deploying to non-
 
     After adding the language pack, verify that it's in the images.
 
-    ``` syntax
+    ```
     rem Remove the paragraph marks to make this into one really big, long command. 
     Dism /Add-Package /Image:"C:\mount\windows"
          /PackagePath="C:\Languages\Microsoft-Windows-Client-Language-Pack_x64_fr-fr.cab"
@@ -142,7 +142,7 @@ To save space, you can remove English language components when deploying to non-
 
 2.  Add any other capabilities, such as fonts, required for that region. To learn more, see [Features On Demand V2 (Capabilities)](features-on-demand-v2--capabilities.md).
 
-    ``` syntax
+    ```
     rem Thai example (add th-TH first).
     Dism /Add-Package /Image:"C:\mount\windows"
          /PackagePath="C:\Languages\fr-fr x64\Microsoft-Windows-LanguageFeatures-Fonts-Thai-Package"
@@ -153,7 +153,7 @@ To save space, you can remove English language components when deploying to non-
 
     After adding the packages, verify that they're in the image.
 
-    ``` syntax
+    ```
     Dism /Image:C:\mount\winre /Add-Package /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\fr-fr\lp.cab"
     Dism /Image:C:\mount\winre /Add-Package /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\fr-fr\WinPE-Rejuv_fr-fr.cab"
     Dism /Image:C:\mount\winre /Add-Package /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\fr-fr\WinPE-EnhancedStorage_fr-fr.cab"
@@ -175,21 +175,21 @@ To save space, you can remove English language components when deploying to non-
 
     After adding the packages, verify that they're in the image.
 
-    ``` syntax
+    ```
     Dism /Image:C:\mount\windows /Add-Package /PackagePath:C:\Languages\Microsoft-Windows-Client-Language-Pack_x64_bn-in.cab
          /PackagePath="C:\Languages\bn-in x64\Microsoft-Windows-LanguageFeatures-Basic-bn-in-Package.cab"
     ```
 
 2.  Add any other capabilities, such as fonts, required for that region.
 
-    ``` syntax
+    ```
     Dism /Add-Package /Image:"C:\mount\windows"
          /PackagePath="C:\Languages\Microsoft-Windows-LanguageFeatures-Fonts-Beng-Package"
     ```
 
 3.  Verify that they're in the image.
 
-    ``` syntax
+    ```
     Dism /Get-Packages /Image:"C:\mount\windows" 
     ```
 
@@ -203,7 +203,7 @@ To save space, you can remove English language components when deploying to non-
 
     You can use either the DISM /Remove-Package or DISM /Remove-Capability command to remove a capability, and either /DISM /Get-Packages or DISM /Get-Capabilities to verify that they're no longer in the image.
 
-    ``` syntax
+    ```
     DISM /Remove-Capability /Image:"C:\mount\windows"
      /CapabilityName:Language.Speech~~~en-US~0.0.1.0 
     DISM /Remove-Capability /Image:"C:\mount\windows"
@@ -223,7 +223,7 @@ To save space, you can remove English language components when deploying to non-
 
 2.  Remove the Windows RE optional components. After removing, verify that they're no longer in the image. Replace build number 10.0.10120.0 with the build you are using. 
 
-    ``` syntax
+    ```
     Dism /Remove-Package /Image:"C:\mount\winre" /PackageName:WinPE-Rejuv-Package~31bf3856ad364e35~amd64~en-US~10.0.10120.0 
     Dism /Remove-Package /Image:"C:\mount\winre" /PackageName:WinPE-HTA-Package~31bf3856ad364e35~amd64~en-US~10.0.10120.0
     Dism /Remove-Package /Image:"C:\mount\winre" /PackageName:WinPE-StorageWMI-Package~31bf3856ad364e35~amd64~en-US~10.0.10120.0 
@@ -245,7 +245,7 @@ Note:  In Windows 10, version 1607, it is no longer necessary to remove inbox ap
 
 1.  Re-install the apps. The following example shows you how to reinstall the Get Started inbox app. Repeat these steps for each of the inbox apps (with the exception of AppConnector) by substituting the appropriate package.
 
-    ``` syntax
+    ```
     Dism /Image:"c:\mount\windows" /Add-ProvisionedAppxPackage /packagepath:<path to appxbundle>\2b362ab83144485d9e9629ad2889a680.appxbundle /licensepath:<path to license file> \2b362ab83144485d9e9629ad2889a680_License1.xml
     ```
 
@@ -257,13 +257,13 @@ Note:  In Windows 10, version 1607, it is no longer necessary to remove inbox ap
 
     Recreate the lang.ini file.
 
-    ``` syntax
+    ```
     Dism /Image:C:\mount\windows /gen-langini /distribution:C:\my_distribution
     ```
 
     The lang.ini file in C:\\myDistribution\\sources should look similar to the following:
 
-    ``` syntax
+    ```
     [Available UI Languages]
     ca-ES = 2
     es-ES = 3
@@ -274,13 +274,13 @@ Note:  In Windows 10, version 1607, it is no longer necessary to remove inbox ap
 
 2.  Review the default international settings in the Windows image by using DISM.
 
-    ``` syntax
+    ```
     Dism /Image:C:\mount\windows /get-intl
     ```
 
     For example, you should see output similar to the following:
 
-    ``` syntax
+    ```
     Reporting offline international settings.
      
     Default system UI language : es-ES
@@ -306,7 +306,7 @@ Note:  In Windows 10, version 1607, it is no longer necessary to remove inbox ap
 
 -   Set the default Windows language to match the preferred language for your customers.
 
-    ``` syntax
+    ```
     Dism /Set-AllIntl:fr-fr /Image:C:\mount\windows
     ```
 
@@ -314,7 +314,7 @@ Note:  In Windows 10, version 1607, it is no longer necessary to remove inbox ap
 
 -   Unmount the Windows RE and Windows images.
 
-    ``` syntax
+    ```
     Dism /Unmount-Image /MountDir:"C:\mount\winre" /Commit
     Dism /Unmount-Image /MountDir:"C:\mount\windows" /Commit
     ```

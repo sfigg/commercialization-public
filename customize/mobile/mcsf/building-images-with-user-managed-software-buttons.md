@@ -47,7 +47,7 @@ To build an image with software-rendered buttons that can be shown or hidden by 
 
 1.  Create a customization answer file using the contents shown in the following code sample.
 
-    ``` syntax
+    ```
     <?xml version="1.0" encoding="utf-8" ?>  
     <ImageCustomizations xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate"  
                          Name="UserManagedSoftwareButtons"  
@@ -265,7 +265,7 @@ To build an image with software-rendered buttons that can be shown or hidden by 
 
     In the following example, the highlighted entry shows what you need to add to the OEMInput XML file if you are supporting a 1080x1920 resolution.
 
-    ``` syntax
+    ```
     <Resolutions>
           <Resolution>1080x1920</Resolution>
     </Resolutions>
@@ -273,7 +273,7 @@ To build an image with software-rendered buttons that can be shown or hidden by 
 
 10. In your OEMInput XML file, add the **NAVIGATIONBAR** feature to the **Microsoft** element that is a child of the **Features** element. This feature adds a phone setting that enables users to configure the color of the software buttons.
 
-    ``` syntax
+    ```
     <Features>
       <Microsoft>
         <Feature>NAVIGATIONBAR</Feature>

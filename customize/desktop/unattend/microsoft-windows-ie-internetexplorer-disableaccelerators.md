@@ -66,7 +66,7 @@ For the list of the Windows editions and architectures that this component supp
 
 The following XML output shows how to disable the **Accelerators** menu.
 
-``` syntax
+```
 <DisableAccelerators>true</DisableAccelerators>
 ```
 

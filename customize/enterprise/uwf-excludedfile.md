@@ -20,7 +20,7 @@ Contains the files and folders that are currently in the file exclusion list for
 ## Syntax
 
 
-``` syntax
+```
 class UWF_ExcludedFile {
     [Read] string FileName;
 };

@@ -59,7 +59,7 @@ For the list of the supported Windows editions and architectures that this compo
 
 The following XML output specifies that RemoteApp and Desktop Connection Management use port 5510 for communication.
 
-``` syntax
+```
 <Port>5510</Port>
 ```
 

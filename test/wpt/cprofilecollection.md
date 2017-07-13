@@ -22,7 +22,7 @@ Represents a collection of [CProfile](cprofile.md) objects. This class implement
 ## Syntax
 
 
-``` syntax
+```
 {
   [default] interface IProfileCollection;
   interface IEnumProfile;

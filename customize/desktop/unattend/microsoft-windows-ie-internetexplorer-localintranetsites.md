@@ -63,7 +63,7 @@ For a list of the supported Windows editions and architectures that this compone
 
 The following XML output specifies the URLs of local intranet sites with trusted content.
 
-``` syntax
+```
 <LocalIntranetSites>http://internal;http://internal2</LocalIntranetSites>
 ```
 

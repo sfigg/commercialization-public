@@ -27,7 +27,7 @@ When updating an existing package, be sure to increment the version number. For 
 
 Specify the packages to be added in an input XML file similar to the one shown here.
 
-``` syntax
+```
 <?xml version="1.0" encoding="utf-8"?>
 <UpdateOSInput xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
       xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
@@ -41,14 +41,14 @@ Specify the packages to be added in an input XML file similar to the one shown h
 
 For example, if the `updateInput.xml` file is in the C:\\temp folder, use this command to add the specified packages to the existing `flash.ffu` image file.
 
-``` syntax
+```
 ImageApp flash.ffu /UpdateInputXML:C:\temp\updateInput.xml
 ```
 
 ## Command-line syntax for ImageApp.exe
 
 
-``` syntax
+```
 ImageApp.exe <imageFile.ffu> </UpdateInputXML:updateInputfile.xml> 
 ```
 

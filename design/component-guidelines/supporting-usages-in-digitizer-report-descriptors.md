@@ -59,7 +59,7 @@ The following usages are required for all digitizers. Devices that do not suppor
 
 A device that reports only T must not have a usage array for the X and Y properties (that is, the report count for each usage is 1 as indicated in the following.)
 
-``` syntax
+```
 0x05, 0x01,                         //       USAGE_PAGE (Generic Desk..
     0x26, 0xff, 0x0f,                   //       LOGICAL_MAXIMUM (4095)         
     0x75, 0x10,                         //       REPORT_SIZE (16)             
@@ -77,7 +77,7 @@ A device that reports only T must not have a usage array for the X and Y propert
 
 A device that supports T and C uses usage arrays for reporting the X and Y values. The report count for both **X** and **Y** is 2.
 
-``` syntax
+```
 0x05, 0x01,                         //       USAGE_PAGE (Generic Desk..
     0x26, 0xff, 0x0f,                   //       LOGICAL_MAXIMUM (4095)         
     0x75, 0x10,                         //       REPORT_SIZE (16)             
@@ -131,7 +131,7 @@ It should be noted that the host will recognize the values outside the logical r
 
 Report extract with **NULL** support for X and Y:
 
-``` syntax
+```
 0x05, 0x01,                         //     USAGE_PAGE (Generic Desktop) 42
     0x09, 0x30,                         //     USAGE (X)                    44
     0x75, 0x10,                         //     REPORT_SIZE (16)             46
@@ -151,7 +151,7 @@ Report extract with **NULL** support for X and Y:
 
 Report extract without NULL support for X and Y:
 
-``` syntax
+```
 0x05, 0x01,                         //       USAGE_PAGE (Generic Desk..
     0x26, 0xff, 0x0f,                   //       LOGICAL_MAXIMUM (4095)         
     0x75, 0x10,                         //       REPORT_SIZE (16)             

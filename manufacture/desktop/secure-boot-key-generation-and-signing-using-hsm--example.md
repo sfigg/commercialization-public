@@ -50,7 +50,7 @@ You can use either the certutil.exe tool or a tool used by the HSM to list the C
 
 -   **This example uses the certutil tool to show the CSPs on the Thales/nCipher HSM:**
 
-    ``` syntax
+    ```
     C:\secureboot_training\certreq> certutil -csplist
     Provider Name: Microsoft Base Cryptographic Provider v1.0
     Provider Type: 1 - PROV_RSA_FULL
@@ -94,7 +94,7 @@ You can use either the certutil.exe tool or a tool used by the HSM to list the C
 
 -   **This example uses the built-in Thales/nCipher tool to list the CSP:**
 
-    ``` syntax
+    ```
     C:\Program Files\nCipher\nfast\bin> cnglist --list-providers
     Microsoft Primitive Provider
     Microsoft Smart Card Key Storage Provider
@@ -108,7 +108,7 @@ You can use either the certutil.exe tool or a tool used by the HSM to list the C
 
 -   **This example uses the SafeNet Luna HSMs tool to list the CSP:**
 
-    ``` syntax
+    ```
     C:\>certutil -csplist
     ------------------------------------------------------------------------------------------
     Provider Name: Luna Cryptographic Services for Microsoft Windows
@@ -163,13 +163,13 @@ You can use either the certutil.exe tool or a tool used by the HSM to list the C
 
 To generate the key:
 
-``` syntax
+```
 certreq.exe -new request.inf PK.cer
 ```
 
 Sample request.inf file:
 
-``` syntax
+```
 [Version]
 Signature= "$Windows NT$"
 [NewRequest]
@@ -199,7 +199,7 @@ Update the following values:
 
 Verify that the certificate has been generated correctly:
 
-``` syntax
+```
 certutil -store -v my  "<Certificate_serial_number_or_thumbprint>"
 ```
 
@@ -207,7 +207,7 @@ For example: `certutil -store -v my  "7569d364a2e77b814274c81ae6360ffe"`
 
 Sample output:
 
-``` syntax
+```
 my
 ================ Certificate 16 ================
 X509 Certificate:
@@ -357,13 +357,13 @@ Determine the SHA1 hash of the certificate. You can get the SHA1 hash by using e
 
 -   Or use the following command:
 
-    ``` syntax
+    ```
     C:\>certutil -store My PKContainer
     ```
 
     Sample output:
 
-    ``` syntax
+    ```
     My
     ================ Certificate 5 ================
     Serial Number: 58efcfd8f929c5bd41152a8ec413051e
@@ -386,7 +386,7 @@ Determine the SHA1 hash of the certificate. You can get the SHA1 hash by using e
 
 Use the SHA1 hash to sign the KEK certificate:
 
-``` syntax
+```
 C:\> signtool.exe  sign /v /fd sha256 /sha1 "db314da0d0ef87d42b42f74b9c38a1f9173ef7a2" /sm /p7  .\ /p7co 1.2.840.113549.1.7.1 /p7ce  DetachedSignedData KEK.bin
 ```
 
@@ -394,7 +394,7 @@ Where KEK.bin is the filename of the binary certificate you want to sign.
 
 Sample output:
 
-``` syntax
+```
 The following certificate was selected:
     Issued to: test self-signed
     Issued by: test self-signed
@@ -449,7 +449,7 @@ For more info, see the nCipher/Thales Users Guide.
 
 For more details, please consult the SafeNet Luna HSM documentation.
 
-``` syntax
+```
 C:\Program Files\SafeNet\LunaClient>cmu list
 Please enter password for token in slot 1: ********
 handle=72       label=PKContainer

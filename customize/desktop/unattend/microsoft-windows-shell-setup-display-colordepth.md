@@ -63,7 +63,7 @@ For a list of the supported Windows editions and architectures that this compone
 
 The following XML output sets the display resolution to 1024x768, with 32-bit color depth, a refresh rate of 72 hertz, and 120 dpi.
 
-``` syntax
+```
 <Display>
    <ColorDepth>32</ColorDepth>
    <DPI>120</DPI>

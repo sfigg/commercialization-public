@@ -21,7 +21,7 @@ Connect to the device from another PC**
 
 3.  On your technician PC, open Internet Explorer, and type in the address with an http:// prefix and :8080 suffix:
 
-    ``` syntax
+    ```
     http://100.100.0.100:8080
     ```
 

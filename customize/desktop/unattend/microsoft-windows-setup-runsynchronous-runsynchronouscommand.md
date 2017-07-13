@@ -69,7 +69,7 @@ For the list of the Windows editions and architectures that this component suppo
 
 The following XML output shows how to set synchronous commands.
 
-``` syntax
+```
 <RunSynchronous>
    <!-- First synchronous command to run -->
    <RunSynchronousCommand>

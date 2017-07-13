@@ -64,7 +64,7 @@ For a list of the supported Windows editions and architectures that this compone
 
 The following XML output specifies the full Internet name for the Network Load Balancing cluster.
 
-``` syntax
+```
 <ClusterName>mycluster.domain.com</ClusterName>
 ```
 

@@ -43,13 +43,13 @@ FFU images are often too large to fit on a standard WinPE FAT32-formatted USB fl
 1.  Boot your destination device to WinPE.
 2.  Connect a storage drive or a network location and note the drive letter, for example, N.
 
-    ``` syntax
+    ```
     net use N: \\server\share
     ```
 
 3.  Identify the drive to which you'll be applying the image. You can use diskpart, or [add Windows PowerShell support to WinPE](winpe-adding-powershell-support-to-windows-pe.md) and use [Get-Disk](https://technet.microsoft.com/library/hh848657.aspx) for scriptability and more complex setups such as a server with multiple disks. 
 
-    ``` syntax
+    ```
     diskpart 
     list disk
     exit
@@ -59,7 +59,7 @@ FFU images are often too large to fit on a standard WinPE FAT32-formatted USB fl
     
     For more information about /SkipPlatformCheck, see [/Apply-Image in DISM image management command-line options](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/manufacture/desktop/dism-image-management-command-line-options-s14#apply-image) 
 
-    ``` syntax
+    ```
     DISM /Apply-Image /ImageFile:N:\flash.ffu /ApplyDrive:\\.\PhysicalDrive0 /SkipPlatformCheck
     ```
 
@@ -67,7 +67,7 @@ FFU images are often too large to fit on a standard WinPE FAT32-formatted USB fl
 
 1.  Split the FFU image into smaller files:
 
-    ``` syntax
+    ```
     DISM.exe /Split-Image /ImageFile:flash.ffu /SFUFile:flash.sfu /FileSize:3500
     ```
 
@@ -75,21 +75,21 @@ FFU images are often too large to fit on a standard WinPE FAT32-formatted USB fl
 3.  Boot your destination device to WinPE.
 4.  Identify the letter of the Windows PE drive, for example, E.
 
-    ``` syntax
+    ```
     diskpart
     list volume
     ```
 
 5.  While in the diskpart menu, identify the drive to which you'll be applying the image, for example, \\\\.\\PhysicalDrive0.
 
-    ``` syntax 
+    ``` 
     list disk
     exit
     ```
 
 6.  Apply the image to a drive.
 
-    ``` syntax
+    ```
     DISM.exe /Apply-Image /ImageFile:E:\flash.sfu /SFUFile:flash*.sfu /ApplyDrive:\\.\PhysicalDrive0 /SkipPlatformCheck
     ```
 
@@ -98,34 +98,34 @@ FFU images are often too large to fit on a standard WinPE FAT32-formatted USB fl
 1.  Plug in a WinPE USB key and note the drive letter, for example, E.
 2.  Add the Windows 10 version of DISM to the WinPE drive. To learn more, see [Install Windows 10 using a previous version of Windows PE](copy-dism-to-another-computer.md).
 
-    ``` syntax
+    ```
     copy "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Deployment Tools\amd64\DISM" E:\DISM_Win10 /s
     ```
 
 3.  Boot the destination device using the Windows PE USB key.
 4.  Identify the letter of the drive where the FFU is stored, for example, E.
 
-    ``` syntax
+    ```
     diskpart
     list volume
     ```
 
 5.  While in the diskpart menu, identify the drive to which you'll be applying the image, for example, \\\\.\\PhysicalDrive0.
 
-    ``` syntax
+    ```
     list disk
     exit
     ```
 
 6.  Install the Windows 10 version of DISM.
 
-    ``` syntax
+    ```
     E:\DISM_Win10\WimMountAdkSetupAmd64.exe /Install /q
     ```
 
 7.  Apply the image to a drive.
 
-    ``` syntax
+    ```
     E:\DISM_Win10\DISM.exe /Apply-Image /ImageFile:E:\flash.sfu /SFUFile:E:\flash*.sfu /ApplyDrive:\\.\PhysicalDrive0 /SkipPlatformCheck
     ```
 

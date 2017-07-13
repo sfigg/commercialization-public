@@ -36,7 +36,7 @@ In a region's definition, the *version* attribute in the XML declaration, such a
 
 The following example is a complete Regions of Interest file that defines a simple region. Explanations for the attributes and nodes within **Region** are described after the example.
 
-``` syntax
+```
 <?xml version='1.0' encoding='utf-8' standalone='yes'?>
 <?Copyright (c) Microsoft Corporation. All rights reserved.?>
 <InstrumentationManifest>
@@ -110,7 +110,7 @@ Additionally, you can further refine your definition by adding one or more **Pay
 
 Following is a basic example for this type of region:
 
-``` syntax
+```
 <Region Guid="{d8d639a0-cf4c-45fb-976a-000111000100}"
         Name="FastStartup-Suspend-UserSession-Shutdown"
         FriendlyName="User Session Shutdown">
@@ -125,7 +125,7 @@ Following is a basic example for this type of region:
 
 In the following example, the region ends only when the specified event contains a field named `StartOrStop` with a value of `Stop`:
 
-``` syntax
+```
 <Region Guid="{d8d639a0-cf4c-45fb-976a-000111000100}"
         Name="FastStartup-Suspend-UserSession-Shutdown"
         FriendlyName="User Session Shutdown">
@@ -163,7 +163,7 @@ If you define a duration for the starting point, the duration is subtracted from
 
 The following example defines a region that stops when another region starts. To calculate the starting point, we subtract a duration from our stopping point. The duration is found in the HiberHiberFileTime payload field. We then multiply the duration by 1,000,000 to convert it to nanoseconds and subtract it from the stopping point.
 
-``` syntax
+```
 <Region Guid="{7D6BA3F6-BC04-4776-8A7F-93CF7F4E2B6D}"
    Name="FastStartup-Suspend-WriteHiberFile"
    FriendlyName="Subscribers for Create Session">
@@ -194,7 +194,7 @@ By default, a region whose starting point is based on another region will start 
 
 The following region definition contains starting and stopping points that are defined by other regions:
 
-``` syntax
+```
 <Region Guid="{93783B2C-A67F-49cb-89BC-BF305D7E2CEA}"
         Name="FastStartup-Suspend-HiberInitTime"
         FriendlyName="Hiberfile Initialization">
@@ -219,7 +219,7 @@ To define a container region, simply define a region without a starting point or
 
 In the example below, *Subscribers for Create Session* is a container for *Child of Subscribers of Create Session*. Notice that *Subscribers for Create Session* does not have a starting point or a stopping point. It will start when the first instance of a child region starts and stop when the last instance of a child region stops.
 
-``` syntax
+```
 <Region Guid="{A75D8F5D-E8F8-40b8-B453-5CC70DEAC06F}"
    Name="FastStartup-Suspend-Winlogon-CreateSession-Subscribers"
    FriendlyName="Subscribers for Create Session">
@@ -260,7 +260,7 @@ Payload fields are case-sensitive, and the XML definition must fully match the p
 
 The following example contains **PayloadIdentifier** nodes for both the starting point and the stopping point:
 
-``` syntax
+```
 <Region Guid="{AB719FB1-D863-4305-AE8E-F21281899A85}"
         Name="FastStartup-ConsoleSessionDisconnect"
         FriendlyName="Console Session Disconnect">
@@ -300,7 +300,7 @@ Alternatively, the **Payload** node can also contain an optional attribute, *Tar
 
 The following example forms a region when the starting event contains a payload field, *SubscriberName*, whose value matches that of a payload field, *Client*, in the stopping node. The starting and stopping events must also have matching thread IDs.
 
-``` syntax
+```
 <Region Guid="{A75D8F5D-E8F8-40b8-B453-5CCC70DEAC06F}"
         Name="FastStartup-Suspend-Winlogon-CreateSession-Subscribers"
         FriendlyName="Subscribers for Create Session">
@@ -354,7 +354,7 @@ If a child has more than one potential parent, the parent with the earliest star
 
 The example below defines criteria for a parent. The parent must have a matching thread ID, and a payload value for the `SubscriberName` field in the child must match a value for the `Client` field in the parent.
 
-``` syntax
+```
 <Region Guid="{A75D8F5D-E8F8-40b8-B453-5CC70DEAC06F}"
         Name="FastStartup-Suspend-Winlogon-CreateSession-Subscribers"
         FriendlyName="Subscribers for Create Session">
@@ -403,7 +403,7 @@ The **SelfNest** node has no required parameters. You can, however, use the same
 
 The following example defines a **Match** tag that simply invokes self-nesting:
 
-``` syntax
+```
 <Match>
    <SelfNest />
 </Match>
@@ -411,7 +411,7 @@ The following example defines a **Match** tag that simply invokes self-nesting:
 
 The following example defines a more complex self-nesting scenario that requires matching thread IDs and payload fields:
 
-``` syntax
+```
 <Match>
    <SelfNest TID="true">
       <Payload FieldName="SubscriberName" />
@@ -427,7 +427,7 @@ Instances can be named based on payload values by using the **PayloadBased** nod
 
 Following is an example of a region with a payload-based **Naming** node:
 
-``` syntax
+```
 <Region Guid="{9261872F-D3A7-4d80-BDE3-8479CC920639}"
         Name="FastStartup-Suspend-Winlogon-EndShell-CallSubscriber"
         FriendlyName="Call Subscriber for End Shell">
@@ -466,7 +466,7 @@ Sometimes, the information in the payload is not the only information we want. F
 
 -   `PID`, associates the process name with the region
 
-``` syntax
+```
 <Naming>
    <PayloadBased NameField="SubscriberName" Type="Device" />
 </Naming>
@@ -474,7 +474,7 @@ Sometimes, the information in the payload is not the only information we want. F
 
 If it is possible for the payload value to be found in both the starting and stopping points, you can use the optional *InstanceEndpoint* attribute to specify which point to use. Possible values for *InstanceEndpoint* are `Start` and `Stop`.
 
-``` syntax
+```
 <Naming>
    <PayloadBased NameField="SubscriberName" InstanceEndpoint="Start" />
 </Naming>
@@ -492,7 +492,7 @@ You can also name a region based on relationships with other regions. To associa
 
 The following example defines a region that has region-based naming. If a region with a matching GUID is found somewhere in the trace, then each instance of `Launch` is named `Warm`. Otherwise, each instance is named `Cold`.
 
-``` syntax
+```
 <Region Guid="{C99EFA90-F645-4A24-9576-740351171BD0}"
         Name="WinStoreAppActivationDuration"
         FriendlyName="Launch">
@@ -528,7 +528,7 @@ WPA adds this metadata to each region instance in the chart view of the Regions 
 
 The following example includes a **Metadata** node in the region definition:
 
-``` syntax
+```
 <Region Guid="{F466EE67-192C-4772-B13D-052CCD2D70B3}"
         Name="FastStartup-Suspend-Winlogon-Logoff-Subscribers"
         FriendlyName="Subscribers for Logoff">

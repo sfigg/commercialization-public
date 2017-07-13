@@ -33,7 +33,7 @@ Indicates the number of times that an on-off transition is run.
 ## Syntax
 
 
-``` syntax
+```
 <NumberOfRuns Value = SimpleValueType>
 </NumberOfRuns>
 ```
@@ -105,7 +105,7 @@ None.
 
 The following code example shows how to configure this element.
 
-``` syntax
+```
 <OnOffTransitionConfiguration
   Id="OnOffTransitionConfiguration_Default_Boot"
   Name="OnOffTransitionConfiguration_Default_Boot"

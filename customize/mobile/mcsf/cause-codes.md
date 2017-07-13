@@ -32,7 +32,7 @@ This customization enables the cause code to persist in the call history so that
 <a href="" id="instructions-"></a>**Instructions:**  
 1.  Create a customization answer file using the contents shown in the following code sample.
 
-    ``` syntax
+    ```
     <?xml version="1.0" encoding="utf-8" ?>  
     <ImageCustomizations xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate"  
                          Name="CauseCodes"  
@@ -86,7 +86,7 @@ This customization enables the cause code to persist in the call history so that
 
         The following example shows how to describe two networks that have MCC/MNC pairs of 412/89, 412/123, and 412/125 and network descriptors MOID1, MOID2, and MOID2, respectively:
 
-        ``` syntax
+        ```
             <Settings Path="Phone/CauseCodeRegistrationTable">  
               <Setting Name="NetworkDescriptor/412089" Value="MOID1" />      
               <Setting Name="NetworkDescriptor/412123" Value="MOID2" />      
@@ -100,7 +100,7 @@ This customization enables the cause code to persist in the call history so that
 
         For example, if you have two network descriptors or mobile operator IDs called MOID1 and MOID2, define a settings group for each as shown in the following example.
 
-        ``` syntax
+        ```
             <Settings Path="Phone/CauseCodeRegistrationTable/MOID1">  
               <Setting Name="CauseCode/$(CAUSECODE)/$(LOCALEID)" Value="" />   
               <Setting Name="CauseCode/$(CAUSECODE)/$(LOCALEID)" Value="" />   
@@ -122,7 +122,7 @@ This customization enables the cause code to persist in the call history so that
 
         For example, to register a cause code 1 for MOID1 and specify all the localized strings for cause code 1 for the 0409 (English (US)), 0416 (Portuguese (Brazil)), and 040A (Spanish (Spain)) locales, add the following settings and values:
 
-        ``` syntax
+        ```
             <Settings Path="Phone/CauseCodeRegistrationTable/MOID1">  
               <Setting Name="CauseCode/1/0409" Value="Dialed number is unavailable -01-" />   
               <Setting Name="CauseCode/1/0416" Value="Numero discado indisponivel -01-" />   
@@ -135,7 +135,7 @@ This customization enables the cause code to persist in the call history so that
 <a href="" id="example-"></a>**Example:**  
 The following example customization answer file shows how to register two mobile networks (MOID1 and MOID2), specify their corresponding MCC/MNC pairs, and register a set of cause codes for both mobile networks in a limited number of locales.
 
-``` syntax
+```
 <?xml version="1.0" encoding="utf-8" ?>  
 <ImageCustomizations xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate"  
                      Name="CauseCodes"  

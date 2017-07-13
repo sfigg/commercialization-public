@@ -62,7 +62,7 @@ For the list of the supported Windows editions and architectures that this compo
 
 The following XML output shows how to specify details about the port rules used for the cluster.
 
-``` syntax
+```
 <Portrules>
    <Portrule wcm:keyValue="Portrule1">
       <VirtualIpAddress>255.255.255.255</VirtualIpAddress>

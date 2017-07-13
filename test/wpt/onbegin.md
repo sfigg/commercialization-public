@@ -22,7 +22,7 @@ Instructs the library to continue progress of an operation.
 ## Syntax
 
 
-``` syntax
+```
 HRESULT OnBegin();
 ```
 

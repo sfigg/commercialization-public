@@ -63,7 +63,7 @@ For the list of the Windows editions and architectures that this component suppo
 
 The following example shows how to configure the Windows Setup UI language to display French (France).
 
-``` syntax
+```
    <SetupUILanguage>
        <UILanguage>fr-FR</UILanguage>
    </SetupUILanguage>

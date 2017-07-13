@@ -20,7 +20,7 @@ This class contains properties and methods that enable you to query and control 
 ## Syntax
 
 
-``` syntax
+```
 class UWF_Servicing {
     [key, read] boolean CurrentSesson;
     [read] boolean ServicingEnabled;
@@ -116,7 +116,7 @@ This class only has two instances, one for the current session, and another for 
 
 The following example shows how to enable and disable UWF servicing mode on a device by using the Windows Management Instrumentation (WMI) provider in a PowerShell script.
 
-``` syntax
+```
 $COMPUTER = "localhost"
 $NAMESPACE = "root\standardcimv2\embedded"
 

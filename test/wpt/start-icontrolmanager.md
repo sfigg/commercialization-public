@@ -22,7 +22,7 @@ Starts a recording.
 ## Syntax
 
 
-``` syntax
+```
 HRESULT Start
   ([in] IProfileCollection* pProfileCollection,
   [out, retval] CLoggingMode* pLoggingMode)

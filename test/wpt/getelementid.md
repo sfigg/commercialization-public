@@ -22,7 +22,7 @@ Returns the identifier of the element at which the XML validation error occurred
 ## Syntax
 
 
-``` syntax
+```
 HRESULT GetElementId
   ([out, retval] BSTR* pbstrElementId)
 ;

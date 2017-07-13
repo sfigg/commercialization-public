@@ -33,7 +33,7 @@ Indicates the length of the delay, in seconds, after booting for an [OnOffTransi
 ## Syntax
 
 
-``` syntax
+```
 <PostBootDelay Value = SimpleDelayValueType>
 </PostBootDelay>
 ```
@@ -105,7 +105,7 @@ None.
 
 The following example shows how to configure this element.
 
-``` syntax
+```
 <OnOffTransitionConfiguration
   Id="OnOffTransitionConfiguration_Default_Boot"
   Name="OnOffTransitionConfiguration_Default_Boot"

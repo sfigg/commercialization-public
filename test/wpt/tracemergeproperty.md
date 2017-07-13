@@ -31,7 +31,7 @@ Contains configurations that are applied when recordings from multiple profiles 
 ## Syntax
 
 
-``` syntax
+```
 <TraceMergeProperty Id   = IdType
                     Name = string
                     Base = string>
@@ -161,7 +161,7 @@ Contains configurations that are applied when recordings from multiple profiles 
 
 The following code example shows a trace merge property definition.
 
-``` syntax
+```
 <TraceMergeProperty
   Id="TraceMerge_Default"
   Name="TraceMerge_Default">

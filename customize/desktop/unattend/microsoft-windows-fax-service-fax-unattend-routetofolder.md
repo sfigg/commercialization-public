@@ -61,7 +61,7 @@ For the list of the supported Windows editions and architectures this component 
 
 The following XML output shows how to set fax settings.
 
-``` syntax
+```
 <Fax>
    <ArchiveFaxes>false</ArchiveFaxes>
    <IncomingFaxesArePublic>false</IncomingFaxesArePublic>

@@ -63,7 +63,7 @@ For the list of the supported Windows editions and architectures that this compo
 
 The following XML output shows how to set the Microsoft-Windows-TerminalServices-RDP-WinStationExtensions component.
 
-``` syntax
+```
 <SecurityLayer>2</SecurityLayer>
 <UserAuthentication>0</UserAuthentication>
 ```

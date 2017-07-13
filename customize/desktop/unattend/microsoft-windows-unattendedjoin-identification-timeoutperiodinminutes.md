@@ -61,7 +61,7 @@ For the list of the Windows editions and architectures that this component suppo
 
 The following XML output shows how to set the default timeout period to 5 minutes.
 
-``` syntax
+```
 <TimeoutPeriodInMinutes>5</TimeoutPeriodInMinutes>
 ```
 

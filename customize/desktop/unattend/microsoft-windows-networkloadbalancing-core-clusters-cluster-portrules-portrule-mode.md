@@ -72,7 +72,7 @@ For a list of the supported Windows editions and architectures that this compone
 
 The following sample XML output shows how to specify that multiple hosts in the cluster handle network traffic for the associated port rule.
 
-``` syntax
+```
 <Mode>MultipleHost</Mode>
 ```
 

@@ -70,7 +70,7 @@ For a list of the Windows editions and architectures that this component support
 
 The following example shows how to set the background color of the OEM tile on the **Help and Support** page to green.
 
-``` syntax
+```
 <Manufacturer>Fabrikam</Manufacturer>
 <Logo>C:\Windows\Fabrikam\FabrikamLogo.png</Logo>
 <LogoURL>http://www.fabrikam.com/support</LogoURL>

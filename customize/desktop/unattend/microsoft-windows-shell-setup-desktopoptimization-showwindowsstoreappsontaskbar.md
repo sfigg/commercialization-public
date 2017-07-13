@@ -75,7 +75,7 @@ For a list of the supported Windows editions and architectures that this compone
 
 The following XML output specifies to go to the desktop on sign in and to show Windows Store apps on the taskbar.
 
-``` syntax
+```
 <DesktopOptimization>
      <GoToDesktopOnSignIn>true</GoToDesktopOnSignIn>
      <ShowWindowsStoreAppsOnTaskbar>true</ShowWindowsStoreAppsOnTaskbar>

@@ -20,7 +20,7 @@ This method retrieves the Shell Launcher configuration for a specific user or gr
 ## Syntax
 
 
-``` syntax
+```
 [Static] uint32 GetCustomShell (
     [In, Required] string Sid,
     [Out, Required] string Shell,

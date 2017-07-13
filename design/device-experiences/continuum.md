@@ -311,7 +311,7 @@ When an app launches it can query for the current state of the system and optimi
 
 *Universal Windows App (C#) Sample*
 
-``` syntax
+```
 using Windows.UI.Xaml;
 using Windows.UI.ViewManagement;
  
@@ -345,7 +345,7 @@ using Windows.UI.ViewManagement;
 
 *Classic Windows App (C++) Sample*
 
-``` syntax
+```
 using namespace Microsoft::WRL::Wrappers;
 using namespace Microsoft::WRL;
 HRESULT OnLayout()
@@ -392,7 +392,7 @@ Same as Example 1.
 
 *Classic Windows App (C++) Sample*
 
-``` syntax
+```
 // WM_SETTINGCHANGE handler
 void OnSettingsChange(LPARAM lParam)
 {

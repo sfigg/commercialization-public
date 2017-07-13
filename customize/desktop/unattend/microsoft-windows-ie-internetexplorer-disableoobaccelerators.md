@@ -66,7 +66,7 @@ For a list of the Windows editions and architectures that this component support
 
 The following XML example demonstrates not including the default Internet Explorer Accelerators.
 
-``` syntax
+```
 <DisableOOBAccelerators>true</DisableOOBAccelerators>
 ```
 

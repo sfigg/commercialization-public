@@ -33,7 +33,7 @@ Indicates whether the ETL file is compressed. This element is for internal use o
 ## Syntax
 
 
-``` syntax
+```
 <FileCompression = Value boolean>
 ```
 

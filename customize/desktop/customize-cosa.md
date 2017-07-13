@@ -136,7 +136,7 @@ You can add a new profile that is not yet included in the COSA database using th
 
 1. Create an answer file or edit an existing answer file that contains the profiles using the Replace operator. Here is an example:
 
-  ``` syntax
+  ```
   <Replace Name="MobileCarrier1 (Replaced)">
           <TargetRefs>
             <TargetRef Id="aaaaaaaa-d95d-4833-8f13-605691a20fb3" />
@@ -194,7 +194,7 @@ You can add a new profile that is not yet included in the COSA database using th
 
 1. Create an answer file or edit an existing answer file that contains the profiles using the Replace operator. Here is an example:  
 
-  ``` syntax
+  ```
         <Replace Name="MobileCarrier2 (Removed)">
           <TargetRefs>
             <TargetRef Id="bbbbbbbb-aafd-46f3-88b1-014d2bdf879f" />

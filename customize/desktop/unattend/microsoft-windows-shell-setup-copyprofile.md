@@ -73,7 +73,7 @@ For a list of the Windows editions and architectures that this component support
 
 The following XML output specifies that Sysprep copies the customized user profile settings from the built-in administrator account to the default user profile.
 
-``` syntax
+```
 <CopyProfile>true</CopyProfile>
 ```
 

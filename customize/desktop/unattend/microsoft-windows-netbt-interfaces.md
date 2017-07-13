@@ -57,7 +57,7 @@ For a list of the supported Windows editions and architectures that this compone
 
 The following XML output shows how to configure [microsoft-windows-netbt-](microsoft-windows-netbt.md).
 
-``` syntax
+```
 <Interfaces>
    <Interface wcm:action="add">
       <NameServerList>

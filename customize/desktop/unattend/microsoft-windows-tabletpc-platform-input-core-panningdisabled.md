@@ -61,7 +61,7 @@ For the list of the supported Windows editions and architectures that this compo
 
 The following XML output shows how to disable panning on a Tablet PC.
 
-``` syntax
+```
 <PanningDisabled>true</PanningDisabled>
 ```
 

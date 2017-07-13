@@ -64,7 +64,7 @@ To determine whether a component applies to the image you’re building, load yo
 
 The following example shows how to set a customized **Help and Support** page. The home page is branded with the Fabrikam logo. When the user clicks the logo, the default browser starts and the URL bar is prepopulated with http://www.fabrikam.com.
 
-``` syntax
+```
 <HelpAndSupport>
   <Logo>C:\Fabrikam\Logos\Logo.png</Logo>
   <LogoURL>http://www.fabrikam.com/support</LogoURL>

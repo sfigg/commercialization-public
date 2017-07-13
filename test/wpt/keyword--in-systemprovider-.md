@@ -53,7 +53,7 @@ Describes the kernel flags that can be enabled for the kernel-mode session.
 ## Syntax
 
 
-``` syntax
+```
 <Keyword Value = "AllFaults" | "CompactCSwitch" | "ContiguousMemorygeneration" | ... >
 </Keyword>
 ```

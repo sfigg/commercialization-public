@@ -25,7 +25,7 @@ Users with standard accounts can use commands that retrieve information, but onl
 ## Syntax
 
 
-``` syntax
+```
 uwfmgr.exe
     Help | ?
     Get-Config

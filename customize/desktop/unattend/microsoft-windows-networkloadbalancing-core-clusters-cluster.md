@@ -150,7 +150,7 @@ For a list of the Windows editions and architectures that this component support
 
 The following XML output shows how to specify details about a cluster.
 
-``` syntax
+```
 <Cluster>
    <Interface>Local Area Connection 2</Interface>
    <ClusterIpAddress>10.100.0.234</ClusterIpAddress>

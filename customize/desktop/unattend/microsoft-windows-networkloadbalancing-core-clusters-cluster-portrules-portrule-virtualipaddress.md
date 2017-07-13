@@ -64,7 +64,7 @@ For the list of the supported Windows editions and architectures that this compo
 
 The following XML output shows how to specify the virtual IP address of the portrule used by the cluster.
 
-``` syntax
+```
 <VirtualIpAddress>255.255.255.255</VirtualIpAddress>
 ```
 

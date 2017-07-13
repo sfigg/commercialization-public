@@ -21,7 +21,7 @@ If your device includes a digitizer that provides both touch and pen functionali
 
 To facilitate palm rejection, the pen device should report data at a vertical distance higher than it normally would. It is highly recommended that this distance be 50 mm (or as close to this as possible), as this produces a better user experience. This will allow the host to handle touch input differently when it’s aware that the pen is in range. Since most devices that are able to detect the pen at a higher vertical distance won’t be able to accurately detect the coordinates of the pen, NULL coordinates should be reported by the device. The report descriptor below shows how NULL values can be supported for X and Y. When delivering NULL data, the device simply needs to set values that are outside the specified logical range for X and Y. Both values must be NULL for the host to recognize this reporting mode.
 
-``` syntax
+```
 0x05, 0x0d,                         // USAGE_PAGE (Digitizers)          0
     0x09, 0x02,                         // USAGE (Pen)                      2
     0xa1, 0x01,                         // COLLECTION (Application)         4
@@ -91,7 +91,7 @@ When a device passes the logo requirements, Microsoft will issue a cryptographic
 
 The blob itself will consist of 256 bytes of binary data, and should be reported as illustrated by the highlighted lines in the HID descriptor below. Device manufacturers should be sure that prior to issuance of the signed binary blob from Microsoft that the sample blob provided below is presented to Windows instead.
 
-``` syntax
+```
 0x06, 0x00, 0xff,                   //     USAGE_PAGE (Vendor Defined)  
     0x09, 0xC5,                         //     USAGE (Vendor Usage 0xC5)    
     0x15, 0x00,                         //     LOGICAL_MINIMUM (0)          
@@ -103,7 +103,7 @@ The blob itself will consist of 256 bytes of binary data, and should be reported
 
 The following is the sample blob in clear text.
 
-``` syntax
+```
 0xfc, 0x28, 0xfe, 0x84, 0x40, 0xcb, 0x9a, 0x87, 0x0d, 0xbe, 0x57, 0x3c, 0xb6, 0x70, 0x09, 0x88,
 0x07, 0x97, 0x2d, 0x2b, 0xe3, 0x38, 0x34, 0xb6, 0x6c, 0xed, 0xb0, 0xf7, 0xe5, 0x9c, 0xf6, 0xc2,
 0x2e, 0x84, 0x1b, 0xe8, 0xb4, 0x51, 0x78, 0x43, 0x1f, 0x28, 0x4b, 0x7c, 0x2d, 0x53, 0xaf, 0xfc,

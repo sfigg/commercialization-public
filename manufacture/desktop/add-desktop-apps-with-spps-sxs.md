@@ -48,7 +48,7 @@ You'll need the Windows 10, version 1703 version of the Deployment and Imaging T
 
 2.  From the technician PC, copy the Deployment and Imaging Tools from the Windows ADK to the storage USB key.
 
-    ``` syntax
+    ```
     CopyDandI.cmd amd64 E:\ADKTools\amd64
 	```
 
@@ -82,7 +82,7 @@ You can add registry keys, for example, an OEM key, or a Windows Store identifie
 
 2.  Capture the changes into the siloed provisioning package, and save it on the hard drive:
 
-    ``` syntax
+    ```
     E:\ADKTools\amd64\ScanState.exe /config:E:\ADKTools\amd64\Config_SettingsOnly.xml /o /v:13 /ppkg e:\SPPs\Fabrikam-ID.spp /l:C:\ScanState.log
     ```
 
@@ -109,7 +109,7 @@ You can add registry keys, for example, an OEM key, or a Windows Store identifie
 
 3.  Capture the changes into the siloed provisioning package, and save it on the hard drive:
 
-    ``` syntax
+    ```
     E:\ADKTools\amd64\ScanState.exe /apps:-sysdrive /o /v:13 /config:E:\ADKTools\amd64\Config_AppsOnly.xml /ppkg e:\SPPs\office16_base.spp /l:C:\ScanState.log
     ```
 
@@ -124,7 +124,7 @@ You can add registry keys, for example, an OEM key, or a Windows Store identifie
 	
 	2.  Capture the combined files as an add-on pack.
 
-        ``` syntax
+        ```
         E:\ADKTools\amd64\ScanState.exe /apps:-sysdrive /o /v:13 /config:E:\ADKTools\amd64\Config_AppsOnly.xml /diff:e:\SPPs\office16_base.spp /ppkg E:\SPPs\office16_fr-fr.spp /l:C:\ScanState.log
         ```
 
@@ -160,13 +160,13 @@ The short version:
 
 1.  Copy the ADK tools to a non-removable file location, such as the primary hard drive, which is assigned to W after the ApplyImage command. 
     Copying the file to a non-removable location avoids an error associated with installing DISM from removable drives.
-    ``` syntax
+    ```
     xcopy D:\ADKTools\ W:\ADKTools\ /s
     ```
 
 2.  Install the ADK Tools by using either **WimMountAdkSetupAmd64.exe /Install /q** or **WimMountAdkSetupX86.exe /Install /q**.
 
-    ``` syntax
+    ```
     W:\ADKTools\amd64\WimMountAdkSetupAmd64.exe /Install /q
     ```
 

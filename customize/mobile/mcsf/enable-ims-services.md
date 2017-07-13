@@ -19,7 +19,7 @@ Partners can identify which IP Multimedia Subsystem (IMS) services, if any, are 
 
 To allow configuration of the default values of IMS services out of the box using multivariant, the `IMSServices` setting is mapped as follows:
 
-``` syntax
+```
 IMSServices 
 {
      IMS  ----------------> RILDMCONFIG_IMS_TEST_NODE_STATUS -> NV 67264 subitem ‘RegConfigTestMode’ (// 1 means disabling IMS and 0 means enabling it) 
@@ -36,7 +36,7 @@ All values need to be set at once. For example, you cannot just set the value fo
 
 wpblue\_gdr2 allows configuration of the OMA DM services mask (sub-item of NV 69750) separately. You can use a new setting similar to `IMSServices` called `IMSOMADMServices` which will be directly mapped to RIL\_IMS\_NW\_ENABLED\_FLAGS on the modem side. See the SoC modem documentation for more details about the flags.
 
-``` syntax
+```
 IMSOMADMServices
 {
      0 = NONE
@@ -56,7 +56,7 @@ This customization supports: **per-IMSI** value
 <a href="" id="instructions-"></a>**Instructions:**  
 1.  Create a customization answer file using the contents shown in the following code sample.
 
-    ``` syntax
+    ```
     <?xml version="1.0" encoding="utf-8" ?>  
     <ImageCustomizations xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate"  
                          Name="EnableIMSServices"  

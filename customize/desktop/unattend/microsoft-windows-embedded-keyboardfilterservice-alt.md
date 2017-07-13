@@ -69,7 +69,7 @@ For a list of the Windows editions and architectures that this component support
 ## XML example
 
 
-``` syntax
+```
 <settings pass="offlineServicing">
 <component name="Microsoft-Windows-Embedded-KeyboardFilterService" 
 processorArchitecture="amd64" 

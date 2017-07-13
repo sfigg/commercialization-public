@@ -58,19 +58,19 @@ However, the basic MBR drive format does not support drives over 4TB. It's also 
 
 4.  Open the diskpart tool:
 
-    ``` syntax
+    ```
     diskpart
     ```
 
 5.  Identify the drive to reformat:
 
-    ``` syntax
+    ```
     list disk
     ```
 
 6.  Select the drive, and reformat it:
 
-    ``` syntax
+    ```
     select disk <disk number>
     clean
     convert gpt

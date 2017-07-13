@@ -25,7 +25,7 @@ Use the following steps to create, deploy, and test a MMOS test application.
 
 2.  Add code to test the desired component and display or send those results as desired. For example, this sample code can be used to display a console message in MMOS.
 
-    ``` syntax
+    ```
 #include <stdio.h>
 #include <Windows.h>
 
@@ -53,7 +53,7 @@ Use the following steps to create, deploy, and test a MMOS test application.
 
 5.  Sign the executable by using the sign.cmd script in the “%WPDKCONTENTROOT%\\Tools\\bin\\i386” folder, as shown in the example below.
 
-    ``` syntax
+    ```
     sign.cmd ApplicationForDrivers.exe
     ```
 
@@ -64,20 +64,20 @@ Use the following steps to create, deploy, and test a MMOS test application.
 
 Adding a lib in MMOS is similar to adding a lib in the production OS. Currently, this default lib location for the kit is configured in Visual Studio.
 
-``` syntax
+```
 $(WPDKInstallDir)lib\$(KitOs)\wp_um\$(Platform)
 $(WPDKInstallDir)Tools\WPE\CRT\lib\$(Platform)
 ```
 
 To add a lib in Visual Studio, select **Project** &gt; **Properties** &gt; **Configuration Properties** &gt; **VC++ Directories** &gt; **Include Directories**. To use the MMOS libraries, append the following directory to the path.
 
-``` syntax
+```
 $(WPDKContentRoot)include\mmos
 ```
 
 Add the arm directory. In Visual Studio, select **Project** &gt; **Properties** &gt; **Configuration Properties** &gt; **Linker** &gt; **General** &gt; **Additional Library Directories**. To use the MMOS libraries, append the following directories to the path.
 
-``` syntax
+```
 $(WPDKContentRoot)lib\win8\mmos\arm
 ```
 
@@ -88,7 +88,7 @@ In development environments, user-mode test binaries can be test signed (not pro
 
 If the test binaries are not signed and code integrity checking is active as it normally is, you will receive an error message similar to the following in the debug window.
 
-``` syntax
+```
 * This is not a failure in CI, but a problem with the failing binary.
 * Please contact the binary owner for getting the binary correctly signed.
 ```

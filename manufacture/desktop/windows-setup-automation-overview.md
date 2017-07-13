@@ -96,13 +96,13 @@ Because reboots are required during Setup, a copy of the answer file is cached t
 
 3.  Mount the Windows image.
 
-    ``` syntax
+    ```
     Dism /Mount-Image /ImageFile:"C:\images\CustomImage.wim" /Index:1 /MountDir:C:\mount
     ```
 
 4.  Modify or replace the file: \\Windows\\Panther\\unattend.xml in the mounted image.
 
-    ``` syntax
+    ```
     Copy CustomAnswerFile.xml C:\mount\Windows\Panther\unattend.xml
     ```
 
@@ -113,7 +113,7 @@ Because reboots are required during Setup, a copy of the answer file is cached t
 
 5.  Unmount the image.
 
-    ``` syntax
+    ```
     Dism /Unmount-Image /MountDir:C:\mount /Commit
     ```
 
@@ -278,7 +278,7 @@ The following examples help describe the behavior of implicit answer file search
 
     To use the new answer file, you can copy it to a directory of a higher precedence than the cached answer file, or you can specify the answer file by using the **/unattend** option. For example:
 
-    ``` syntax
+    ```
     sysprep /generalize /unattend:C:\MyAnswerFile.xml
     ```
 

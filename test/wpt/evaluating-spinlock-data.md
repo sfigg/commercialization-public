@@ -68,13 +68,13 @@ A spin lock can be acquired or released from different code paths. A list of rel
 
 The following example shows how to obtain a summary of spinlock data.
 
-``` syntax
+```
 xperf -i example.etl -symbols -o example.txt -a spinlock -summary
 ```
 
 The following example shows how to limit the number of records returned to the five most active spin locks.
 
-``` syntax
+```
 xperf -i example.etl -symbols -o example.txt -a spinlock -summary -counts 5
 ```
 

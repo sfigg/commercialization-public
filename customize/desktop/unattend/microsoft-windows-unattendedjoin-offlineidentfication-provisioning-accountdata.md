@@ -29,7 +29,7 @@ To generate the `AccountData` information:
 
     Example:
 
-    ``` syntax
+    ```
     djoin.exe /provision /domain contoso.com /machine machinename /savefile AccountData.txt
     ```
 
@@ -80,7 +80,7 @@ For a list of the supported Windows editions and architectures that this compone
 
 The following XML output shows how to set the Provisioning settings.
 
-``` syntax
+```
 <OfflineIdentification>
    <Provisioning>
       <AccountData>BASE64-ENCODED-BLOB</AccountData>   

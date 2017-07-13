@@ -130,7 +130,7 @@ The OEMDevicePlatform.xml file contains a single **OEMDevicePlatform** element w
 
 The following example demonstrates an OEMDevicePlatform.xml file.
 
-``` syntax
+```
 <?xml version="1.0" encoding="utf-8"?>
 <OEMDevicePlatform xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
    xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
@@ -145,7 +145,7 @@ The following example demonstrates an OEMDevicePlatform.xml file.
 
 To create a package that includes the OEMDevicePlatform.xml file, follow the guidance in [Creating packages](creating-mobile-packages.md). The following example demonstrates a device platform XML file that specifies a single device platform ID.
 
-``` syntax
+```
 <?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="urn:Microsoft.WindowsPhone/PackageSchema.v8.00"
    Owner="OEMName" OwnerType="OEM" Component="OEMDevicePlatform" 

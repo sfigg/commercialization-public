@@ -19,7 +19,7 @@ ms.technology: windows-oem
 
 This action produces a text file that summarizes metrics related to shutdown.
 
-``` syntax
+```
 -a shutdown [-minCPUToShow <percent>] [-maxFilesToShow <n>]
 ```
 

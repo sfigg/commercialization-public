@@ -61,7 +61,7 @@ Represents a collection of a maximum of four pool tags. If the **Operation** att
 ## Syntax
 
 
-``` syntax
+```
 <PoolTags Operation = "Set" | "Add" | “Remove” >
 
   <!-- Child elements -->

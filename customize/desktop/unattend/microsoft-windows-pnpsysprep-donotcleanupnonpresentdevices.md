@@ -98,7 +98,7 @@ For a list of the supported Windows editions and architectures that this compone
 
 The following XML output specifies that drivers for devices that are not on the destination computer remain installed during the **generalize** configuration pass and the next **specialize** configuration pass.
 
-``` syntax
+```
 <PersistAllDeviceInstalls>true</PersistAllDeviceInstalls>
 <DoNotCleanUpNonPresentDevices>true</DoNotCleanUpNonPresentDevices>
 ```

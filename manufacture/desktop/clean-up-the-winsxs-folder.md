@@ -60,7 +60,7 @@ Deployment Image Servicing and Management (DISM) is a command-line tool that all
 
     From an elevated command prompt, type the following:
 
-    ``` syntax
+    ```
     Dism.exe /online /Cleanup-Image /StartComponentCleanup
     ```
 
@@ -70,7 +70,7 @@ Deployment Image Servicing and Management (DISM) is a command-line tool that all
 
     From an elevated command prompt, type the following:
 
-    ``` syntax
+    ```
     Dism.exe /online /Cleanup-Image /StartComponentCleanup /ResetBase
     ```
 
@@ -85,7 +85,7 @@ Deployment Image Servicing and Management (DISM) is a command-line tool that all
 
     From an elevated command prompt, type the following:
 
-    ``` syntax
+    ```
     Dism.exe /online /Cleanup-Image /SPSuperseded
     ```
 

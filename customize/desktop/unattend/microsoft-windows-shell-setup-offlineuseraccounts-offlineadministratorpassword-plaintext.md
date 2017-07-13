@@ -77,7 +77,7 @@ For the list of the supported Windows editions and architectures that this compo
 
 The following XML output shows how to set the password for [OfflineUserAccounts](microsoft-windows-shell-setup-offlineuseraccounts.md).
 
-``` syntax
+```
 <OfflineUserAccounts>
    <OfflineAdministratorPassword>
       <Value>cAB3AEEAZABtAGkAbgBpAHMAdAByAGEAdABvAHIAUABhAHMAcwB3AG8AcgBkAA==</Value>

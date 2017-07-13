@@ -33,7 +33,7 @@ Indicates whether to prepare the system for an [OnOffTransitionConfiguration](on
 ## Syntax
 
 
-``` syntax
+```
 <PrepareSystem Value = boolean>
 </PrepareSystem>
 ```
@@ -105,7 +105,7 @@ None.
 
 The following code example shows how to configure this element.
 
-``` syntax
+```
 <OnOffTransitionConfiguration
   Id="OnOffTransitionConfiguration_Default_Boot"
   Name="OnOffTransitionConfiguration_Default_Boot"

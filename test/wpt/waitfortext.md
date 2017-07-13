@@ -22,7 +22,7 @@ Waits until the user adds the appropriate text strings and calls SetTextAvailabl
 ## Syntax
 
 
-``` syntax
+```
 HRESULT WaitForText
   ([in] ULONG Milliseconds)
 ;

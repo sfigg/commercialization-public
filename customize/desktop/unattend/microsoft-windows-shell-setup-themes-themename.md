@@ -69,7 +69,7 @@ For a list of the Windows editions and architectures that this component support
 
 The following XML output shows how to name a customized theme, as well as set the desktop background.
 
-``` syntax
+```
 <Themes>
    <ThemeName>Fabrikam Theme</ThemeName>
    <DesktopBackground>%WINDIR%\web\wallpaper\fabrikam.jpg</DesktopBackground>

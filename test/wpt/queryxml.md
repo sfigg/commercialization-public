@@ -22,7 +22,7 @@ Indicates the XML format of the currently running profile and whether the profil
 ## Syntax
 
 
-``` syntax
+```
 HRESULT QueryXML
   ([out] BSTR* pbstrResults,
   [in] VARIANT_BOOL fValidateRuntimeState)

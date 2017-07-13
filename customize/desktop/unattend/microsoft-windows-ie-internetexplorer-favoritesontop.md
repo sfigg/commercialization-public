@@ -63,7 +63,7 @@ For the list of the supported Windows editions and architectures that this compo
 
 The following XML output specifies that new favorites are added to the top of the **Favorites** menu.
 
-``` syntax
+```
 <FavoritesOnTop>true</FavoritesOnTop>
 ```
 

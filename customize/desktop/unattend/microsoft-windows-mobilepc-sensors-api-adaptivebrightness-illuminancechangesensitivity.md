@@ -58,7 +58,7 @@ For a list of the supported Windows editions and architectures that this compone
 
 The following sample XML output shows how to specify that a minimum of a 20% change in lux is required to cause a change in display brightness.
 
-``` syntax
+```
 <ALRPoints>000000000a0000000a00000028000000280000005000000044</ALRPoints>
 <DisplayResponseInterval>60000</DisplayResponseInterval>
 <IlluminanceChangeSensitivity>20</IlluminanceChangeSensitivity>

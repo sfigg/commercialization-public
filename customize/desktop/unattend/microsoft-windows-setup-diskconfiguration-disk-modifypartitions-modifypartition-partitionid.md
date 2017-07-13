@@ -136,7 +136,7 @@ The following XML output for the `DiskConfiguration` setting shows two partition
 
 When modifying the partitions, the first modification (ordered 1) affects the partition with the ID of 1, which is the System partition. The second modification affects the partition with the ID of 2, which is the Windows partition.
 
-``` syntax
+```
 <DiskConfiguration>
 
   <Disk wcm:action="add">
@@ -200,7 +200,7 @@ When modifying the partitions, the first modification (ordered 1) affects the pa
 
 In this example, an extended partition is created after all the primary partitions. In this case, the PartitionIDs are assigned in the order in that the partitions are created.
 
-``` syntax
+```
 <DiskConfiguration>
 
   <Disk wcm:action="add">
@@ -331,7 +331,7 @@ In this example, an extended partition is created after all the primary partitio
 
 In this example, the extended partition is located first, before the primary partitions. Note that even though the logical partitions are created last, they receive the first partition numbers.
 
-``` syntax
+```
 <DiskConfiguration>
 
   <Disk wcm:action="add">

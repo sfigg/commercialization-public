@@ -105,14 +105,14 @@ Use the steps from [Lab 3: Add device drivers (.inf-style)](add-device-drivers.m
 
 1.  Copy the answer file into the image into the \\Windows\\System32\\oobe\\ folder. Create the folder if it doesn’t exist.
 
-    ``` syntax
+    ```
     MkDir c:\mount\windows\windows\system32\oobe
     xcopy C:\oobe \c:\mount\windows\windows\system32\oobe /s
     ```
     
 2.  Copy the image info file into the image.
 
-    ``` syntax
+    ```
     xcopy C:\temp\CSUP.txt c:\mount\windows\windows\csup.txt
     ```
 
@@ -122,7 +122,7 @@ Learn how to apply the logo using the [User Experience Windows Engineering Guide
 
 1.  Copy the logo files into the image into the \\Windows\\System32\\OEM\\ folder. Create the folder if it doesn’t exist.
 
-    ``` syntax
+    ```
     MkDir c:\mount\windows\windows\system32\OEM
     Copy C:\OEM c:\mount\windows\windows\system32\OEM
     ```
@@ -133,7 +133,7 @@ Learn how to apply the logo using the [User Experience Windows Engineering Guide
 
 2.  Commit the changes and unmount the Windows image:
 
-    ``` syntax
+    ```
     Dism /Unmount-Image /MountDir:"C:\mount\windows" /Commit
     ```
 

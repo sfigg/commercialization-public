@@ -44,7 +44,7 @@ The following steps describe how to configure and build the custom encodings:
 
     -   A .def file that declares the name of the DLL—for example, `MyCodePageDLL`—and exports the **NlsDllCodePageTranslation** function:
 
-        ``` syntax
+        ```
         LIBRARY       MyCodePageDLL
 
         EXPORTS
@@ -53,7 +53,7 @@ The following steps describe how to configure and build the custom encodings:
 
     -   A .c file that defines the DLL entry point function—for example, `DllMain`—as well as the **NlsDllCodePageTranslation** function. This is the function that the APIs will call in case a particular code page value is associated with your code page DLL.
 
-        ``` syntax
+        ```
         //  NlsDllCodePageTranslation
         //
         //  This routine is the main exported procedure for the functionality in
@@ -89,7 +89,7 @@ The following steps describe how to configure and build the custom encodings:
 
         Here's an example. Be sure to complete the items marked "OEM-TODO".
 
-        ``` syntax
+        ```
         switch (dwFlags & 0xF0000000) // only look at the highest nibble
         {
             case (NLS_CP_CPINFO):
@@ -251,7 +251,7 @@ The following steps describe how to configure and build the custom encodings:
 
 3.  Add your code page DLL to the device. To do this, set the **CodepageDLL** asset source to the location and file name of your code page DLL. For example:
 
-    ``` syntax
+    ```
           <Asset Name="CodePageDLL" Source="C:\OEMCodePages\CodePage55050.dll" />
     ```
 
@@ -259,7 +259,7 @@ The following steps describe how to configure and build the custom encodings:
 
     For example, if the DLL is `Codepage55050.dll`, set `EncodingCodePages/CodepageID55050` as shown in the following example:
 
-    ``` syntax
+    ```
           <Setting Name="EncodingCodePages/CodepageID55050" Value="CodePage55050.dll" />
     ```
 
@@ -267,7 +267,7 @@ The following steps describe how to configure and build the custom encodings:
 
     Alternatively, you can write a settings app that dynamically sets the registry values depending on the user-selected encoding scheme. For example, if the OEM app sets the encoding to 55050, set the `Encodings/GSM7BitEncodingPage` setting and reboot the device.
 
-    ``` syntax
+    ```
           <Setting Name="Encodings/GSM7BitEncodingPage" Value="55050" />
     ```
 

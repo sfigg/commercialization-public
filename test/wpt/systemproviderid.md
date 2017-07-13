@@ -35,7 +35,7 @@ Uniquely identifies the system provider.
 ## Syntax
 
 
-``` syntax
+```
 <SystemProviderId Value = IdType>
 
   <!-- Child elements -->
@@ -150,7 +150,7 @@ For more information about authoring system provider definitions, see [2. System
 
 The following code example shows the section of a profile definition that contains this element.
 
-``` syntax
+```
 <Profile
   Id="Example.Light.File"
   Name="Example"

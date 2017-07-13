@@ -64,7 +64,7 @@ For a list of the Windows editions and architectures that this component support
 
 The following XML output shows how to lock the Internet Explorer toolbars.
 
-``` syntax
+```
 <LockToolbars>true</LockToolbars> 
 ```
 

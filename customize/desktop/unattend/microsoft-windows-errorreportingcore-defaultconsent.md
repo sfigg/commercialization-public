@@ -69,7 +69,7 @@ For the list of the Windows editions and architectures that this component suppo
 
 The following XML output specifies that all data is sent automatically.
 
-``` syntax
+```
 <DefaultConsent>4</DefaultConsent>
 ```
 

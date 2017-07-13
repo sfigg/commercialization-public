@@ -19,7 +19,7 @@ ms.technology: windows-oem
 
 This structure tells the kernel logger to include the call stack for the named events.
 
-``` syntax
+```
 typedef struct _STACK_TRACING_EVENT_ID {
 GUID EventGuid; 
 UCHAR Type; 
@@ -44,7 +44,7 @@ Reserved for future use.
 
 The members of this structure are identical to those of the CLASSIC\_EVENT\_ID structure available in the Windows 7 and Windows Server 2008 SDK:
 
-``` syntax
+```
 typedef struct _CLASSIC_EVENT_ID {
 GUID EventGuid; 
 UCHAR Type; 

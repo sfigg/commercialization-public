@@ -20,7 +20,7 @@ Contains a file that is currently in the overlay for a volume protected by Unifi
 ## Syntax
 
 
-``` syntax
+```
 class UWF_OverlayFile {
     [read] string FileName;
     [read] UInt64 FileSize;

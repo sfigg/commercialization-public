@@ -61,7 +61,7 @@ For a list of the supported Windows editions and architectures that this compone
 
 The following XML output specifies that ESC is enabled for all administrators on the computer.
 
-``` syntax
+```
 <IEHardenAdmin>true</IEHardenAdmin>
 ```
 

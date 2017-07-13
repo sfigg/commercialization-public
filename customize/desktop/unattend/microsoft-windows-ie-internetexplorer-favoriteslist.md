@@ -57,7 +57,7 @@ For the list of the supported Windows editions and architectures that this compo
 
 The following XML output specifies how to configure favorites.
 
-``` syntax
+```
 <FavoritesList>
    <FavoriteItem wcm:action="add">
       <FavIconFile>C:\Windows\favlink1.ico</FavIconFile>

@@ -60,7 +60,7 @@ For a list of the supported Windows editions and architectures that this compone
 
 The following XML output shows how to specify a GUID for two Internet Explorer Browser Help Objects.
 
-``` syntax
+```
 <InstalledBHOList>
   <AddonGuidItem>
     <AddonGuid>{a1b1c123-d1e1f4a-5a6a7aa8a9a0a}</AddonGuid>

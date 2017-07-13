@@ -77,7 +77,7 @@ For a list of the supported Windows editions and architectures that this compone
 
 The following XML output specifies details about the cluster's virtual IP address.
 
-``` syntax
+```
 <IpAddress wcm:keyValue="Ip1">
    <IpAddress>207.46.197.32</IpAddress>
    <NetworkMask>255.255.255.0</NetworkMask>

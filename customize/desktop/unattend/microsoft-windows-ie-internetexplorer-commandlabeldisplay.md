@@ -68,7 +68,7 @@ For a list of the Windows editions and architectures that this component support
 
 The following XML output shows how to configure the Command Bar to show a tooltip next to each icon in the Command Bar.
 
-``` syntax
+```
 <CommandLabelDisplay>1</CommandLabelDisplay>
 ```
 

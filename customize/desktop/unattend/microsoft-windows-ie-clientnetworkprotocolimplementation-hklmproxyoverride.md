@@ -69,7 +69,7 @@ For a list of the Windows editions and architectures that this component support
 
 The following XML output shows how to specify a list of host names or IP addresses that bypass the proxy server for all users on the computer.
 
-``` syntax
+```
 <HKLMProxyEnable>true</HKLMProxyEnable>
 <HKLMProxyOverride>www.fabrikam.com;*.contoso.com; 207.46.197.32</HKLMProxyOverride>
 <HKLMProxyServer>207.46.197.32</HKLMProxyServer>

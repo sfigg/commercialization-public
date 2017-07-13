@@ -65,7 +65,7 @@ For a list of the supported Windows editions and architectures that this compone
 
 The following XML output specifies that the computer cannot act as a master or backup browser.
 
-``` syntax
+```
 <MaintainServerList>No</MaintainServerList>
 ```
 

@@ -80,7 +80,7 @@ For a list of the supported Windows editions and architectures that this compone
 
 The following XML output shows how to set a customized theme.
 
-``` syntax
+```
 <Themes>
    <CustomDefaultThemeFile>c:\themefiles\theme1.theme</CustomDefaultThemeFile>
    <DefaultThemesOff>false</DefaultThemesOff>

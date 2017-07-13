@@ -61,7 +61,7 @@ For a list of the supported Windows editions and architectures that this compone
 
 The following XML output shows how to set the OU.
 
-``` syntax
+```
 <MachineObjectOU>OU=MyOu,OU=MyParentOu,DC=MyDomain,DC=MyCompany,DC=com</MachineObjectOU>
 ```
 

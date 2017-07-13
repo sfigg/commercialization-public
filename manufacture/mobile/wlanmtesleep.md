@@ -19,7 +19,7 @@ Requests that the driver to go to sleep either for a specified time interval, or
 ## <span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>Syntax
 
 
-``` syntax
+```
 DWORD WlanMTESleep(
     __in                    HANDLE  hAdapter,
     __in                    ULONG   uSleepTime,

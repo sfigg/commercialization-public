@@ -25,13 +25,13 @@ Native boot for Windows 10 requires the **.vhdx** format, not the .vhd format.
 
 1.  Copy the .vhdx file to the destination computer. For example, at a command prompt, type:
 
-    ``` syntax
+    ```
     copy N:\VHDs\windows.vhdx C:
     ```
 
 2.  Use the DiskPart tool in Windows PE to attach the VHD on the destination computer. You can attach a VHD by using the **Attach vdisk** command. This enables the VHD so that it appears on the host as a disk drive instead of as a .vhdx file. At a command prompt, type:
 
-    ``` syntax
+    ```
     diskpart
     select vdisk file=c:\windows.vhdx
     attach vdisk
@@ -43,7 +43,7 @@ Native boot for Windows 10 requires the **.vhdx** format, not the .vhd format.
 
 3.  Use the BCDboot tool, located in the **\\System32** directory of the VHD image or in Windows PE to copy the boot environment files and Boot Configuration Data (BCD) configuration from the **\\Windows** directory in the VHD to the system partition. On a computer that has BIOS firmware, the system partition is the active partition of the first hard disk. For example, to use BCDboot from the VHD image, at a command prompt, type:
 
-    ``` syntax
+    ```
     cd v:\windows\system32
     bcdboot v:\windows
     ```
@@ -54,13 +54,13 @@ The BCDboot tool automatically imports information from the existing installatio
 
 1.  Copy the .vhdx file to the destination computer. For example, at a command prompt, type:
 
-    ``` syntax
+    ```
     copy N:\VHDs\windows.vhdx C:
     ```
 
 2.  Use the DiskPart tool in Windows PE to attach the VHD on the destination computer. You can attach a VHD by using the **Attach vdisk** command. This enables the VHD so that it appears on the host as a disk drive instead of as a .vhdx file. At a command prompt, type:
 
-    ``` syntax
+    ```
     diskpart
     select vdisk file=C:\windows.vhdx
     attach vdisk
@@ -72,7 +72,7 @@ The BCDboot tool automatically imports information from the existing installatio
 
 3.  On a UEFI-based computer, the system partition is hidden by default and must be assigned a drive letter before you run the BCDboot tool. Use the DiskPart tool to locate the EFI system partition and assign a drive letter to it. At a command prompt, type:
 
-    ``` syntax
+    ```
     diskpart
     select disk 0
     list partition
@@ -85,7 +85,7 @@ The BCDboot tool automatically imports information from the existing installatio
 
 4.  Use the BCDboot tool, located in the \\System32 directory of the VHD image or in Windows PE to copy the boot environment files and BCD configuration from the \\Windows directory in the VHD to the system partition. For example, to use BCDboot from the VHD image, at a command prompt, type:
 
-    ``` syntax
+    ```
     cd v:\windows\system32
     bcdboot v:\windows
     ```
@@ -98,7 +98,7 @@ The BCDboot tool automatically imports information from the existing installatio
 
 2.  Copy an existing boot entry for a Windows installation. You will then modify the copy for use as the VHD boot entry. At a command prompt, type:
 
-    ``` syntax
+    ```
     bcdedit /copy {default} /d "vhd boot (locate)"
     ```
 
@@ -108,20 +108,20 @@ The BCDboot tool automatically imports information from the existing installatio
 
 4.  Set the **device** and **osdevice** options for the VHD boot entry. At a command prompt, type:
 
-    ``` syntax
+    ```
     bcdedit /set {guid} device vhd=[locate]\windows.vhdx
     bcdedit /set {guid} osdevice vhd=[locate]\windows.vhdx
     ```
 
 5.  Set the boot entry for the VHD as the default boot entry. When the computer restarts, the boot menu will display all of the Windows installations on the computer and boot into the VHD after the operating-system selection countdown is completed. At a command prompt, type:
 
-    ``` syntax
+    ```
     bcdedit /default {guid}
     ```
 
 6.  Some x86-based systems require a boot configuration option for the kernel in order to detect certain hardware information and successfully native-boot from a VHD. At a command prompt, type:
 
-    ``` syntax
+    ```
     bcdedit /set {guid} detecthal on
     ```
 

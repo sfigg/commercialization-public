@@ -22,7 +22,7 @@ Creates a clone enumerator.
 ## Syntax
 
 
-``` syntax
+```
 HRESULT Clone
   ([out] IEnumProfile** ppEnum)
 ;

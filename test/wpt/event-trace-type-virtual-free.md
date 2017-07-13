@@ -19,7 +19,7 @@ ms.technology: windows-oem
 
 This flag enables stack tracing for virtual memory free events.
 
-``` syntax
+```
 #define EVENT_TRACE_TYPE_VIRTUAL_FREE 0x63
 ```
 

@@ -44,7 +44,7 @@ To create the recovery media that you can include with the PC, you must have the
 
 1.  Mount the Windows image:
 
-    ``` syntax
+    ```
     md c:\mount\Windows
 
     Dism /Mount-Image /ImageFile:D:\sources\install.wim /Index:1 /MountDir:C:\mount
@@ -52,7 +52,7 @@ To create the recovery media that you can include with the PC, you must have the
 
 2.  Copy the Windows RE image.
 
-    ``` syntax
+    ```
     md C:\Images
 
     xcopy C:\mount\Windows\System32\Recovery\winre.wim C:\Images\winre.wim /h
@@ -60,7 +60,7 @@ To create the recovery media that you can include with the PC, you must have the
 
 3.  Unmount the Windows image:
 
-    ``` syntax
+    ```
     Dism /Unmount-Image /MountDir:C:\mount\winre /Discard
     ```
 
@@ -68,7 +68,7 @@ To create the recovery media that you can include with the PC, you must have the
 
 1.  Create a folder structure for Windows RE, which is based on Windows PE:
 
-    ``` syntax
+    ```
     copype amd64 C:\resetmedia_amd64
     ```
 
@@ -76,7 +76,7 @@ To create the recovery media that you can include with the PC, you must have the
 
 2.  Replace the default Windows PE boot image (Boot.wim) with a Windows RE tools image.
 
-    ``` syntax
+    ```
     xcopy C:\MyImages\winre.wim C:\resetmedia_amd64\media\sources\boot.wim /h
     ```
 
@@ -84,7 +84,7 @@ To create the recovery media that you can include with the PC, you must have the
 
 -   Copy the Windows image to the working folder.
 
-    ``` syntax
+    ```
     copy D:\sources\install.wim C:\resetmedia_amd64\media\sources\install.wim
     ```
 
@@ -94,7 +94,7 @@ To create the recovery media that you can include with the PC, you must have the
 
 -   If you're using a customized partition layout, add bare metal recovery configuration scripts to the working folder, under \\sources. For more info, see [Bare Metal Reset/Recovery: Enable Your Users to Create Media](bare-metal-resetrecovery-enable-your-users-to-create-media-and-to-recover-hard-drive-space.md).
 
-    ``` syntax
+    ```
     copy E:\Recovery\RecoveryImage\ResetConfig.xml C:\resetmedia_amd64\media\sources\ResetConfig.xml
 
     copy E:\Recovery\RecoveryImage\ResetPartitions-UEFI.txt C:\resetmedia_amd64\media\sources\ResetPartitions-UEFI.txt
@@ -107,7 +107,7 @@ To create the recovery media that you can include with the PC, you must have the
 
 1.  Install Windows RE to a USB flash drive:
 
-    ``` syntax
+    ```
     Makewinpemedia /ufd C:\resetmedia_amd64 F:
     ```
 
@@ -121,7 +121,7 @@ To create the recovery media that you can include with the PC, you must have the
 
 1.  Create a DVD image file:
 
-    ``` syntax
+    ```
     Makewinpemedia /iso C:\resetmedia_amd64 C:\resetmedia_amd64\RecoveryImage.iso
     ```
 

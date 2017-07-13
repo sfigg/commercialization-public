@@ -53,7 +53,7 @@ Heap tracing should be considered optional and done when **VirtualAlloc** analys
 
 Add the registry key for the process of interest (**MemoryTestApp.exe** in this case); heap tracing is then enabled for every subsequent process creation.
 
-``` syntax
+```
 reg add "HKLM\Software\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\MemoryTestApp.exe" /v TracingFlags /t REG_DWORD /d 1 /f
 ```
 
@@ -346,7 +346,7 @@ In the real world, the application developer should then determine if this behav
 
 Once the analysis is complete, you should clean up the registry to make sure that heap tracing is disabled for the process. Run this command on an elevated command prompt:
 
-``` syntax
+```
 reg delete "HKLM\Software\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\MemoryTestApp.exe" /v TracingFlags /f
 ```
 

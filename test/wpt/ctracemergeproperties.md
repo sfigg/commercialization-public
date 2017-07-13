@@ -22,7 +22,7 @@ Represents policies that are applied when the library merges the event trace log
 ## Syntax
 
 
-``` syntax
+```
 {
   [default] interface ITraceMergeProperties;
   interface IParsingErrorInfo;

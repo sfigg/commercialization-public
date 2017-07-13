@@ -56,7 +56,7 @@ The test renders test sounds that are captured by the microphone.
 
 1.  Run the following command:
 
-    ``` syntax
+    ```
     te.exe latencytest.dll /name:LatencyTest::Vanilla
     ```
 
@@ -67,7 +67,7 @@ The test renders test sounds that are captured by the microphone.
 
 1.  Run the following command:
 
-    ``` syntax
+    ```
     te.exe latencytest.dll /name:LatencyTest::Raw
     ```
 
@@ -78,7 +78,7 @@ The test renders test sounds that are captured by the microphone.
 
 1.  Run the following command:
 
-    ``` syntax
+    ```
     te.exe latencytest.dll /name:LatencyTest::LowPeriod
     ```
 

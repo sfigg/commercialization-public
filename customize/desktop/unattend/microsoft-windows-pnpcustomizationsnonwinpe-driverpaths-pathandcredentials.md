@@ -67,7 +67,7 @@ For the list of the supported Windows editions and architectures that this compo
 
 The following XML output specifies the UNC paths to two additional locations for device drivers and the credentials used to access those paths.
 
-``` syntax
+```
 <DriverPaths>
 <DriverPaths>
 <!-- First PathAndCredentials list item -->

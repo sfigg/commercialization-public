@@ -20,7 +20,7 @@ Contains the current size of the Unified Write Filter (UWF) overlay and manages 
 ## Syntax
 
 
-``` syntax
+```
 class UWF_Overlay {
     [key]  string Id;
     [read] UInt32 OverlayConsumption;
@@ -134,7 +134,7 @@ The following tables list any methods and properties that belong to this class.
 
 The following example demonstrates how to use the UWF overlay by using the WMI provider in a PowerShell script.
 
-``` syntax
+```
 $COMPUTER = "localhost"
 $NAMESPACE = "root\standardcimv2\embedded"
 

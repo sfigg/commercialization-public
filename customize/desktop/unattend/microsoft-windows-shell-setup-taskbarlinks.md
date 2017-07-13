@@ -125,7 +125,7 @@ For a list of the supported Windows editions and architectures that this compone
 
 The following XML output shows how to set a shortcut for Wordpad, a shortcut to Sound Recorder, a shortcut to a Windows Store app with an AUMID of AppID1 and a shortcut to the Bing website.
 
-``` syntax
+```
 <TaskbarLinks>
    <Link0>%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\Accessories\Wordpad.lnk</Link0>
    <Link1>%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\Accessories\Sound Recorder.lnk</Link1>

@@ -82,7 +82,7 @@ For the list of the supported Windows editions and architectures that this compo
 
 The following XML sample output shows how to set SNMP.
 
-``` syntax
+```
 <PermittedManagers>
    <A1>networkhost</A1>
 </PermittedManagers>

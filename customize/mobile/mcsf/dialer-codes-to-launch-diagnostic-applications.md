@@ -45,7 +45,7 @@ In your PROVXML file, you must also set the **FullyPreinstall** flag to TRUE so 
 
 1.  Preload the OEM dialer application. To do this, use the following code example.
 
-    ``` syntax
+    ```
     <?xml version="1.0" encoding="utf-8" ?>  
     <!--  Copyright (c) Microsoft Corporation.  All rights reserved.  -->  
 
@@ -87,7 +87,7 @@ In your PROVXML file, you must also set the **FullyPreinstall** flag to TRUE so 
 
     In the customization answer file, add the following settings:
 
-    ``` syntax
+    ```
     <Static>
 
         <Settings Path="Phone/PartnerAppSupport"> 
@@ -147,7 +147,7 @@ Microsoft recommends that OEMs implement an input screen that is displayed when 
 
 The following code example shows how to parse the dialer code parameter that was passed. The code requests the **DialString** String object out of the **navigationContext** by calling the **QueryString.TryGetValue** function.
 
-``` syntax
+```
 string dialCode = "";if (NavigationContext.QueryString.TryGetValue("DialString", out dialCode)){   int intDialCode = int.Parse(dialCode);}
 ```
 

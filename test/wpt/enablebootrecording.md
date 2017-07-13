@@ -22,7 +22,7 @@ Enables boot recording for the specified profile collection.
 ## Syntax
 
 
-``` syntax
+```
 HRESULT EnableBootRecording
   ([in] IProfileCollection* pProfileCollection)
 ;

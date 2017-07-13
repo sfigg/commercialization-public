@@ -19,7 +19,7 @@ Requests vendor-specific information, such as the vendor ID and vendor descripti
 ## <span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>Syntax
 
 
-``` syntax
+```
 DWORD WlanMTEGetVendorInfo(
     __in                        HANDLE  hAdapter,
     __out                       ULONG   *puVendorId,

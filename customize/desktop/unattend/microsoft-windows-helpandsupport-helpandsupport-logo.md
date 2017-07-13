@@ -68,7 +68,7 @@ For a list of the Windows editions and architectures that this component support
 
 The following example shows how to set a customized **Help and Support** home page. The **Help and Support** home page displays the logo from the %systemdrive%:\\Fabrikam\\Logos\\Logo.png file.
 
-``` syntax
+```
 <HelpAndSupport>
   <Logo>C:\Fabrikam\Logos\Logo.png</Logo>
   <LogoURL>http://www.fabrikam.com/support</LogoURL>

@@ -19,7 +19,7 @@ ms.technology: windows-oem
 
 Enables and configures symbol decoding support.
 
-``` syntax
+```
 xperf -i <trace file>… [-o output] -symbols [cacheonly] [verbose] [dbghelplog]
 ```
 

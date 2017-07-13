@@ -45,7 +45,7 @@ You must have administrative rights to run these commands.
 
 1.  At an elevated command prompt, type this:
 
-    ``` syntax
+    ```
     regasmt C:\MyAssessments\example.asmtmanifest.asmtx
     ```
 
@@ -53,7 +53,7 @@ You must have administrative rights to run these commands.
 
 2.  To register more than one assessment, list the assessments. For example:
 
-    ``` syntax
+    ```
     regasmt C:\MyAssessments\example.asmtmanifest.asmtx example2.asmtmanifest.asmtx
     ```
 
@@ -61,7 +61,7 @@ You must have administrative rights to run these commands.
 
 -   At an elevated command prompt, type this:
 
-    ``` syntax
+    ```
     regasmt /u C:\MyAssessments\example.asmtmanifest.asmtx
     ```
 

@@ -62,7 +62,7 @@ For a list of the supported Windows editions and architectures that this compone
 
 The following XML output shows how to set logon commands.
 
-``` syntax
+```
 <LogonCommands>
    <AsynchronousCommand wcm:action="add">
       <CommandLine>c:\asynccommands\command1.exe</CommandLine>

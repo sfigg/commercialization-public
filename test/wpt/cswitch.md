@@ -19,7 +19,7 @@ ms.technology: windows-oem
 
 This action produces a report file that summarizes the metrics for context switches.
 
-``` syntax
+```
 -a cswitch [-avail [n]] [-util [n]] [-process] [-thread] [-exc_dpcisr] [-range T1 T2]
 ```
 

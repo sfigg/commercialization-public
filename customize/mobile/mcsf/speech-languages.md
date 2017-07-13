@@ -115,7 +115,7 @@ To modify the list of speech languages, you must edit the **Speech** section of 
 
 To include one speech language, add one **Language** entry to the **Speech** section of the OEMInput.xml file as shown in the following example:
 
-``` syntax
+```
 <SupportedLanguages>
   <UserInterface>
     <Language>en-US</Language>
@@ -131,7 +131,7 @@ To include one speech language, add one **Language** entry to the **Speech** sec
 
 To include multiple speech languages, add additional **Language** entries to the **Speech** section of the OEMInput.xml file as shown in the following sample.
 
-``` syntax
+```
 <SupportedLanguages>
   <UserInterface>
     <Language>en-US</Language>

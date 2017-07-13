@@ -22,7 +22,7 @@ Returns an HRESULT value that indicates the error code.
 ## Syntax
 
 
-``` syntax
+```
 HRESULT GetHResult
   ([out, retval] HRESULT* pHResult)
 ;

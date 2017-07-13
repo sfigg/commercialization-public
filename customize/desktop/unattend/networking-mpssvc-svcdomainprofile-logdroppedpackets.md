@@ -61,7 +61,7 @@ For a list of the supported Windows editions and architectures that this compone
 
 The following XML output shows how to set the Windows Firewall.
 
-``` syntax
+```
 <DisableStatefulFTP>true</DisableStatefulFTP>
 <DisableStatefulPPTP>true</DisableStatefulPPTP>
 <DomainProfile_DisableNotifications>true</DomainProfile_DisableNotifications>

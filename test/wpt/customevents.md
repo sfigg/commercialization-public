@@ -33,7 +33,7 @@ Represents a collection of custom events.
 ## Syntax
 
 
-``` syntax
+```
 <CustomEvents Operation = "Set" | "Add"
 
   <!-- Child elements -->
@@ -136,7 +136,7 @@ Represents a collection of custom events.
 
 The following code example shows how this element is used.
 
-``` syntax
+```
 <TraceMergeProperty
   Id="TraceMerge_Default"
   Name="TraceMerge_Default">

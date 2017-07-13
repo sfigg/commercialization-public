@@ -22,7 +22,7 @@ Merges recordings collected during last shutdown.
 ## Syntax
 
 
-``` syntax
+```
 HRESULT MergeShutdownRecording
   ([in] BSTR bstrFileName,
   [in] IProfileCollection* pProfileCollection,

@@ -39,7 +39,7 @@ In unattended installations, the Windows image to install is specified by the `O
 
 3.  Use DISM to compress your data files to a .wim file. For example:
 
-    ``` syntax
+    ```
     Dism /Capture-Image /ImageFile:c:\data\myData.wim /CaptureDir:C:\data\dataFiles /Name:MyData
     ```
 
@@ -59,7 +59,7 @@ In unattended installations, the Windows image to install is specified by the `O
 
     The answer file must resemble the following example:
 
-    ``` syntax
+    ```
        <settings pass="windowsPE">
           <component name="Microsoft-Windows-Setup" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
              <ImageInstall>
@@ -85,7 +85,7 @@ In unattended installations, the Windows image to install is specified by the `O
 
 4.  Run Setup.exe, specifying the location of the answer file. For example:
 
-    ``` syntax
+    ```
     setup /unattend:C:\unattend.xml
     ```
 

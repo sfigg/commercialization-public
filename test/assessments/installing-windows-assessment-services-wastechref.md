@@ -96,7 +96,7 @@ To install Windows Assessment Services, your server must meet the following requ
 
     For Windows Server 2012, the .NET Framework 4 is installed by default and you must enable the .NET Framework 3.5 before you install Windows Assessment Services. To enable the .NET Framework 3.5, on the server, at the command prompt, type the following:
 
-    ``` syntax
+    ```
     DISM /Online /Enable-Feature /FeatureName:NetFx3 /All
     ```
 
