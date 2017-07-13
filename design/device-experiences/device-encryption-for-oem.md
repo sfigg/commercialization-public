@@ -31,12 +31,13 @@ The following list shows the hardware and tests that a device must pass before W
         2.	Excluding Thunderbolt, HSTI must report no non-allowed DMA busses.
         3.	If Thunderbolt is present, HSTI must report that Thunderbolt is configured securely (security level must be SL1 – “User Authorization” or higher).
 
-### Verify the device supports encryption
+## Verify the device supports encryption
 Starting with Windows 10, version 1703, use the following steps to determine if the system supports automatic device encryption.
 1.	Click **Start**, and type **System information**
 2.	Right-click **System Information** app and click **Open as Administrator**. Allow the app to make changes to your device by clicking **Yes**. Some devices might require elevated permissions to view the encryption settings.
 3.	In **System Summary**, see **Device Encryption Support**.  The value will state if the device is encrypted, or if not, reasons why it is disabled. 
-##"Un-allowed DMA capable bus/device(s) detected."
+
+## Un-allowed DMA capable bus/device(s) detected
 This error means that the system detected at least one DMA capable bus or device that may expose a DMA threat.  To determine which bus/device triggered this error, run the Microsoft.UefiSecureBootLogo.CS.HardwareSecurity.Tests.ProbeForInsecureDirectMemoryAccessBusses HLK test. 
 If the listed bus has only has internal facing access and with no ports exposed on the exterior of the device, then the OEM should consult with the IHV to ensure the bus is correctly identified before adding it to the "allowed" list as described below: 
  ```
