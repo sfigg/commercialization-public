@@ -19,7 +19,7 @@ The following command-line options are available for Windows Setup. Beginning w
 **setup.exe** 
 
 > [!div class="op_single_selector"]
-> - [1394Debug:\<channel> baudrate:\<baudrate>](#1)
+> - [1394Debug:<channel> baudrate:<baudrate>](#1)
 > - [AddBootMgrLast](#2)
 > - [Auto {Clean | DataOnly | Upgrade}](#3)
 > - [BusParams:\<bus.device.function>](#4)
