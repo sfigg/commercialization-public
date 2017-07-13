@@ -17,15 +17,15 @@ ms.technology: windows-oem
 
 You can use Shell Launcher to replace the default Windows 10 shell with a custom shell. You can use any application or executable as your custom shell, such as a command window or a custom dedicated application.
 
-**Warning**  
-You may specify any executable file to be the default shell except C:\\Windows\\System32\\Eshell.exe. Using Eshell.exe as the default shell will result in a blank screen after user signs in.
+> [!WARNING]
+> You may specify any executable file to be the default shell except C:\\Windows\\System32\\Eshell.exe. Using Eshell.exe as the default shell will result in a blank screen after user signs in.
 
  
 
 You can also configure Shell Launcher to launch different shell applications for different users or user groups.
 
-**Important**  
-You cannot use Shell Launcher to launch a Universal Windows app as a custom shell.
+> [!IMPORTANT]
+> You cannot use Shell Launcher to launch a Universal Windows app as a custom shell.
 
  
 
@@ -172,8 +172,8 @@ When a custom shell exits, Shell Launcher can perform one of four actions, based
 
  
 
-**Important**  
-Make sure that your shell application does not automatically exit and is not automatically closed by any features such as Dialog Filter, as this can lead to an infinite cycle of exiting and restarting, unless the return code action is set to do nothing.
+> [!IMPORTANT]
+> Make sure that your shell application does not automatically exit and is not automatically closed by any features such as Dialog Filter, as this can lead to an infinite cycle of exiting and restarting, unless the return code action is set to do nothing.
 
  
 
@@ -383,8 +383,8 @@ $IsShellLauncherEnabled = $ShellLauncherClass.IsEnabled()
 
 A custom shell is launched with the same level of user rights as the account that is signed in. This means that a user with administrator rights can perform any system action that requires administrator rights, including launching other applications with administrator rights, while a user without administrator rights cannot.
 
-**Warning**  
-If your shell application requires administrator rights and needs to be elevated, and User Account Control (UAC) is present on your device, you must disable UAC in order for Shell Launcher to launch the shell application.
+> [!WARNING]
+> If your shell application requires administrator rights and needs to be elevated, and User Account Control (UAC) is present on your device, you must disable UAC in order for Shell Launcher to launch the shell application.
 
  
 
