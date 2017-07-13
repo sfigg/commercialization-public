@@ -36,7 +36,7 @@ Starting with Windows 10, version 1703, use the following steps to determine if 
 1.	Click **Start**, and type **System information**
 2.	Right-click **System Information** app and click **Open as Administrator**. Allow the app to make changes to your device by clicking **Yes**. Some devices might require elevated permissions to view the encryption settings.
 3.	In **System Summary**, see **Device Encryption Support**.  The value will state if the device is encrypted, or if not, reasons why it is disabled. 
-###"Un-allowed DMA capable bus/device(s) detected."
+##"Un-allowed DMA capable bus/device(s) detected."
 This error means that the system detected at least one DMA capable bus or device that may expose a DMA threat.  To determine which bus/device triggered this error, run the Microsoft.UefiSecureBootLogo.CS.HardwareSecurity.Tests.ProbeForInsecureDirectMemoryAccessBusses HLK test. 
 If the listed bus has only has internal facing access and with no ports exposed on the exterior of the device, then the OEM should consult with the IHV to ensure the bus is correctly identified before adding it to the "allowed" list as described below: 
  ```
@@ -48,7 +48,7 @@ For example, for a bus identified as “Contoso Root Port” with Vendor ID “0
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\DmaSecurity\AllowedBuses] 
 "Contoso Root Port"="PCI\VEN_0000&DEV_FFFF" 
  ```
- 
+
 ## Disable device encryption
 OEMs can choose to disable device encryption and instead implement their own encryption technology on a device. To disable device encryption:
 
