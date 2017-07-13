@@ -154,7 +154,7 @@ If the **Run** button is unavailable, make sure that you have selected specific 
 
 If you receive the following error:
 
-``` syntax
+```
 Error updating machine configuration in RelaxServer. Please check that the server is available and try again later. (ErrorCode:-2143485946)
 ```
 
@@ -188,7 +188,7 @@ Diskpart failed to find any hard disk drive that could be used to apply an image
 
 If you receive the following error while taking inventory of a computer, you must use the x86 Windows PE image for the bootable USB drive that you created for inventory.
 
-``` syntax
+```
 An error occurred. You cannot service an x86-based image from an x64-based host that does not support WOW64. Try the operation again from a host environment that supports WOW64. 
 Error running Driver Scavenge. ErrorCode 193.
 ```
@@ -225,7 +225,7 @@ If you are running Windows ASC on a Windows server and you do not have Windows A
 
 On the server where Windows ASC is installed, enable the optional component MSMQ-Server using the following DISM command from an elevated command prompt.
 
-``` syntax
+```
 Dism /Online /Enable-Feature:MSMQ-Server
 ```
 

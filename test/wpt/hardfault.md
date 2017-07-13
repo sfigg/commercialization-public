@@ -19,7 +19,7 @@ ms.technology: windows-oem
 
 This action produces a text report that summarizes hard faults.
 
-``` syntax
+```
 -a hardfault [-file] [-bytes] [-range T1 T2]
 ```
 

@@ -64,7 +64,7 @@ For a list of the supported Windows editions and architectures that this compone
 
 The following XML output shows how to hide the Search Suggestions.
 
-``` syntax
+```
 <SearchScopes>
    <Scope wcm:action="add">
       <ScopeDefault>true</ScopeDefault>

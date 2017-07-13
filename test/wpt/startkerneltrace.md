@@ -19,7 +19,7 @@ ms.technology: windows-oem
 
 This function registers and starts a kernel event tracing session. You can also enable stackwalking for certain kernel events using this function.
 
-``` syntax
+```
 ULONG
 WINAPI
 StartKernelTrace(

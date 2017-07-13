@@ -64,7 +64,7 @@ For a list of the supported Windows editions and architectures that this compone
 
 The following XML example shows how to hide the Administrator password screen during OOBE.
 
-``` syntax
+```
 <OOBE>
      <HideLocalAccountScreen>true</HideLocalAccountScreen>
 </OOBE>

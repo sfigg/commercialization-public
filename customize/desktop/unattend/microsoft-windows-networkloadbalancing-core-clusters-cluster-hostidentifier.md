@@ -62,7 +62,7 @@ For a list of the supported Windows editions and architectures that this compone
 
 The following XML output shows how to specify the host identifier used by the cluster as 6.
 
-``` syntax
+```
 <HostIdentifier>6</HostIdentifier>
 ```
 

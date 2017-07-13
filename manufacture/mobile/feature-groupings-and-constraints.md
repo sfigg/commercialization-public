@@ -78,7 +78,7 @@ Constraints are grouped at the Microsoft and OEM level of features. OEMs cannot 
 
 The following XML sample illustrates the use of constraints to appropriately restrain the fake modem feature.
 
-``` syntax
+```
 <Features>
   <Microsoft>
     <FeatureGroup Constraint="OneAndOnlyOne">
@@ -95,7 +95,7 @@ The constraints in the sample specify that either IMGFAKEMODEM or IMGNOFAKEMODEM
 
 The following XML sample illustrates the use of constraints to appropriately restrain the production build settings. This sample shows how multiple constraints can be associated with a single feature.
 
-``` syntax
+```
 <Features>
   <Microsoft>
     <FeatureGroups>
@@ -125,7 +125,7 @@ The constraints in the sample specify that:
 
 The build options are more complex and are expressed in the following XML.
 
-``` syntax
+```
 FeatureGroup Constraint="OneAndOnlyOne">
   <FeatureIDs>
     <FeatureID>RELEASE_PRODUCTION</FeatureID> 
@@ -169,7 +169,7 @@ For each OEM and Microsoft feature, implicit feature IDs are automatically creat
 
 For example if an OEM creates a feature called TEST\_FEATURE1 using the XML shown below, the implicit Feature ID will be *OEM\_TEST\_FEATURE1*.
 
-``` syntax
+```
 <Features>
     <OEM>
      <PackageFile Path="%oempackageroot%\test\" 
@@ -184,7 +184,7 @@ For example if an OEM creates a feature called TEST\_FEATURE1 using the XML show
 
 To create a feature constraint to make sure this test feature is only shipped with test release types, use the following XML.
 
-``` syntax
+```
 <FeatureGroup Constraint="ZeroOrOne">
    <FeatureIDs>
       <FeatureID>RELEASE_PRODUCTION</FeatureID>

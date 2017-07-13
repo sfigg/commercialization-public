@@ -22,7 +22,7 @@ The Windows Driver Kit (WDK) includes a tool for updating packages on a device o
 
 IUTool.exe must be used in a command-line window that is opened as an administrator. The command-line syntax for IUTool.exe is the following.
 
-``` syntax
+```
 IUTool -p <path to packages>
 ```
 
@@ -64,7 +64,7 @@ If the specified package already exists on the device, the new version of the pa
 
 Use GetDULogs.exe to get package update logs from a device.
 
-``` syntax
+```
 GetDULogs -o <output file path>
 ```
 

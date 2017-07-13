@@ -80,19 +80,19 @@ For the list of the Windows editions and architectures that this component suppo
 
 The following XML output shows how to configure the network route TCP/IP prefix as an integer.
 
-``` syntax
+```
 <Prefix>16</Prefix>
 ```
 
 The following XML output shows how to configure an IP v4 network prefix as a string.
 
-``` syntax
+```
 <Prefix>192.168/16</Prefix>
 ```
 
 The following XML output shows how to configure the TCP/IP interfaces, including route prefixes in integer format.
 
-``` syntax
+```
 <Interfaces>
    <Interface wcm:action="add">
       <Ipv4Settings>
@@ -153,7 +153,7 @@ The following XML output shows how to configure the TCP/IP interfaces, including
 
 The following XML output shows how to configure the TCP/IP interfaces, including route prefixes in string format.
 
-``` syntax
+```
 <Interfaces>
    <Interface wcm:action="add">
       <Ipv4Settings>

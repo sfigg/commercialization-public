@@ -57,7 +57,7 @@ For the list of the supported windows editions and architectures that this compo
 
 The following XML output shows how to configure `QuickLinkList`.
 
-``` syntax
+```
 <QuickLinkList>
    <QuickLinkItem>
       <QLID>0</QLID>

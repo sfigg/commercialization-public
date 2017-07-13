@@ -1067,7 +1067,7 @@ The following table shows the country/region associated with the **BootLocale** 
 
 The following example demonstrates how to set the default regional format to Japan (ja-JP) in the OEMInput.xml file.
 
-``` syntax
+```
   <SupportedLanguages>
     <UserInterface>
       <Language>en-US</Language>

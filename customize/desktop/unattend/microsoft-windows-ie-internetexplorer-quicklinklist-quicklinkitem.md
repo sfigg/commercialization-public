@@ -65,7 +65,7 @@ For the list of the supported Windows editions and architectures that this compo
 
 The following XML output shows how to configure a [QuickLinkList](microsoft-windows-ie-internetexplorer-quicklinklist.md).
 
-``` syntax
+```
 <QuickLinkList>
    <QuickLinkItem>
       <QLID>0</QLID>

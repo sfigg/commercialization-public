@@ -49,7 +49,7 @@ Represents a collection of heap process identifiers.
 ## Syntax
 
 
-``` syntax
+```
 <HeapProcessIds Operation = "Set" | "Add" | “Remove” >
 
   <!-- Child elements -->

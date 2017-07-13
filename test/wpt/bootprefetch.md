@@ -19,7 +19,7 @@ ms.technology: windows-oem
 
 This action collates and summarizes events that are relevant to boot when you use the **On/Off Trace Capture** tool.
 
-``` syntax
+```
 bootprefetch [-summary | -events [-pattern [-type name]] [-range T1 T2] | disktime]
 ```
 

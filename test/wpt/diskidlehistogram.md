@@ -19,7 +19,7 @@ ms.technology: windows-oem
 
 This action produces a histogram that displays all disk activity and idle time.
 
-``` syntax
+```
 -a diskidlehistogram [-disknum <n>] [-buckets B1 B2 ... Bn] [-idletimeout T1 T2 ... Tn] [-idletheshold <t>] [-spindownOverhead [t]] [-spinupOverhead [t]] [-exc_file File1 File2 ... FileN] [-exc_filestr String1 String2 ... StringN] [-exc_filere <regex>]
 ```
 
@@ -224,13 +224,13 @@ Avoid perturbing the disk(s) under study by using a different physical disk (or 
 
 The following example shows a typical use of this action with default parameters
 
-``` syntax
+```
 Xperf -i Trace.etl -a diskidlehistogram > output.csv
 ```
 
 Collect information on disk I/Os as well as related information, such as registry/cswitch/stacks, in case deeper analysis is needed. `Compact_cswitch` can be used to reduce trace file size. The following example shows a set of recommended Xperf flags.
 
-``` syntax
+```
 xperf -on dispatcher+PROC_THREAD+LOADER+CSWITCH+COMPACT_CSWITCH +registry+DISK_IO+DISK_IO_INIT+FILEIO -stackwalk cswitch+readythread+DiskReadInit+DiskWriteInit+DiskFlushInit -buffersize 1024
 sleep <desired trace time in seconds> or run scenario
 xperf -d trace.etl

@@ -73,7 +73,7 @@ For the list of the Windows editions and architectures that this component suppo
 
 The following XML output shows how to set an upgrade installation to run in guaranteed quiet mode.
 
-``` syntax
+```
 <UpgradeData>
    <Upgrade>true</Upgrade>
    <WillShowUI>Never</WillShowUI>

@@ -67,7 +67,7 @@ The following sections appear in the DISM configuration list file.
 
 By default, the DISM.exe tool will exclude the following files.
 
-``` syntax
+```
 [ExclusionList]
 \$ntfs.log
 \hiberfil.sys
@@ -88,34 +88,34 @@ By default, the DISM.exe tool will exclude the following files.
 
 -   You can only use wildcard characters in the last component in a file path that does not begin with a backslash. For example:
 
-    ``` syntax
+    ```
     myfolder\*.txt
     ```
 
 -   You can use a preceding backslash to limit file-matching and directory-matching relative to the root directory. For example, you can use this exclusion list:
 
-    ``` syntax
+    ```
     \myfolder
     \folder\subfolder
     ```
 
     This list will exclude the following files and directories when you capture the "C:\\" drive:
 
-    ``` syntax
+    ```
     C:\myfolder
     C:\folder\subfolder
     ```
 
     However, DISM will not exclude files or directories that are contained in the following example.
 
-    ``` syntax
+    ```
     C:\main\myfolder
     C:\data\folder\subfolder
     ```
 
 -   You can override the default exclusion list by using the `[ExclusionException]` section. For example:
 
-    ``` syntax
+    ```
     [ExclusionException]
     \pagefile.sys
     "\System Volume Information"
@@ -130,13 +130,13 @@ By default, the DISM.exe tool will exclude the following files.
 
 If you create a custom-named configuration file and store it outside the DISM directory, you can use the DISM command to run the file. At a command prompt, open the DISM directory. For example:
 
-``` syntax
+```
 Dism /Capture-Image /ImageFile:install.wim /CaptureDir:D:\ /Name:Drive-D /ConfigFile:<configuration list>
 ```
 
 or
 
-``` syntax
+```
 Dism /Append-Image /ImageFile:install.wim /CaptureDir:D:\ /Name:Drive-D /ConfigFile:<configuration list>
 ```
 

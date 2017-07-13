@@ -38,14 +38,14 @@ Use the steps from [Lab 3: Add device drivers (.inf-style)](add-device-drivers.m
 
 2.  To use different layouts for different regions, use the optional **Region** attribute in the **RequiredStartGroups** element. The Region value must be equal to two-letter country/region codes. Use a pipe “|” delimiter if you need to specify multiple countries/regions.
 
-    ``` syntax
+    ```
     <RequiredStartGroups
           Region="DE|ES|FR|GB|IT|US">
     ```
 
 3.  Specify the tiles you want to add within an **AppendGroup**. OEMs can add a maximum of two **AppendGroup**. The following example shows two groups called “Fabrikam Group 1” and “Fabrikam Group 2”, which contain tiles that will be applied if the device country/region matches what’s specified in **Region** (in this case, the regions are Germany, Spain, France, United Kingdom, Italy, and United States). Each group contains three tiles and the various elements you need to use depending on the tile that you want to pin to Start.
 
-    ``` syntax
+    ```
     <RequiredStartGroups
           Region="DE|ES|FR|GB|IT|US">
           
@@ -103,7 +103,7 @@ Use the steps from [Lab 3: Add device drivers (.inf-style)](add-device-drivers.m
 
     The following example shows one group called “Fabrikam Group 1”, which will be applied if the device country/region doesn’t match any of the ones specified in the previous RequiredStartGroups.
 
-    ``` syntax
+    ```
         <!-- Non-region specific group -->
         <RequiredStartGroups>
           <AppendGroup
@@ -144,7 +144,7 @@ Use the steps from [Lab 3: Add device drivers (.inf-style)](add-device-drivers.m
 
 5.  Optionally, you can add up to 3 apps to the frequently used section of the system area. The following example shows how to add the calculator app to the frequently used system area.
 
-    ``` syntax
+    ```
       <!-- Add the calculator app to the frequently used system area -->
       <TopMFUApps>
         <Tile AppUserModelID="Microsoft.WindowsCalculator_8wekyb3d8bbwe!App" />
@@ -177,7 +177,7 @@ In **layoutmodification.xml**:
 
 1.  Add your LayoutModification.xml file to the Windows image. You’ll need to put the file in the following specific location before first boot. If the file already exists in the image, replace it with your new file.
 
-    ``` syntax
+    ```
     C:\Mount\Windows\Users\Default\AppData\Local\Microsoft\Windows\Shell\
     ```
 
@@ -192,7 +192,7 @@ In **layoutmodification.xml**:
 
 2.  Commit the changes and unmount the Windows image:
 
-    ``` syntax
+    ```
     Dism /Unmount-Image /MountDir:"C:\mount\windows" /Commit
     ```
 

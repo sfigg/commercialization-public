@@ -67,7 +67,7 @@ For a list of the supported Windows editions and architectures that this compone
 
 The following XML output for the `DiskConfiguration` setting shows how to set the first partition as the active partition.
 
-``` syntax
+```
 <DiskConfiguration>
 
   <Disk wcm:action="add">

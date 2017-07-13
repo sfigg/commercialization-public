@@ -69,7 +69,7 @@ For a list of the Windows editions and architectures that this component support
 
 The following XML output shows how to promote a new notification icon to appear in place of the **Battery** icon.
 
-``` syntax
+```
   <PromotedIcon2>
     <Path>%PROGRAMFILES%\Fabrikam\Application2.exe</Path>
     <GUID>{a1bc23cb-3456-bcde-abcd-feb363cacc88}</GUID>

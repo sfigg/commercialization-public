@@ -72,7 +72,7 @@ For a list of the supported Windows editions and architectures that this compone
 
 The following XML output shows a deployment with no asynchronous or synchronous commands.
 
-``` syntax
+```
 <AuditComputerName>
    <MustReboot>true</MustReboot>
    <Name>MyComputer</Name>

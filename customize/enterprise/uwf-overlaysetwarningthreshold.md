@@ -20,7 +20,7 @@ Sets the warning threshold for monitoring the size of the Unified Write Filter (
 ## Syntax
 
 
-``` syntax
+```
 UInt32 SetWarningThreshold(
     UInt32 size
 );

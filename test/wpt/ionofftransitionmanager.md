@@ -22,7 +22,7 @@ Enables the client to store the profiles in the [IProfileCollection](iprofilecol
 ## Syntax
 
 
-``` syntax
+```
 {
   [id(1), helpstring("EnableBootRecording")] HRESULT EnableBootRecording
     ([in] IProfileCollection* pProfileCollection);

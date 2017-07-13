@@ -22,7 +22,7 @@ Gets the number of the column at which the XML validation error occurred.
 ## Syntax
 
 
-``` syntax
+```
 HRESULT GetColumnNumber
   ([out, retval] ULONG* pColumnNumber)
 ;

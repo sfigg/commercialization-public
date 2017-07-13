@@ -62,7 +62,7 @@ For a list of the supported Windows editions and architectures that this compone
 
 The following XML output for the `Clusters` setting shows how to set up a cluster for network load balancing.
 
-``` syntax
+```
 <Clusters>
    <Cluster>
       <Interface>Local Area Connection 2</Interface>

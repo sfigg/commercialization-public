@@ -20,7 +20,7 @@ Adds or removes custom-defined key combinations.
 ## Syntax
 
 
-``` syntax
+```
 class WEKF_CustomKey {
     [Static] uint32 Add(
         [In] string CustomKey
@@ -137,7 +137,7 @@ When you specify the key combination to block, you must use the English names fo
 
 The following code demonstrates how to add or enable a custom key combination that Keyboard Filter will block by using the Windows Management Instrumentation (WMI) providers for Keyboard Filter. This example modifies the properties directly and does not call any of the methods defined in **WEKF\_CustomKey**.
 
-``` syntax
+```
 <#
 .Synopsis
     This script shows how to use the WMI provider to enable and add 

@@ -102,7 +102,7 @@ For a list of Windows editions and architectures that this component supports, s
 
 The following XML output for the `DiskConfiguration` setting shows a configuration for a UEFI-based system with four partitions, including an EFI partition, an MSR partition, and two primary partitions.
 
-``` syntax
+```
 <DiskConfiguration>
 
   <Disk wcm:action="add">

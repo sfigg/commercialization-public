@@ -22,7 +22,7 @@ Skips the specified number of errors or warnings.
 ## Syntax
 
 
-``` syntax
+```
 HRESULT Skip
   ([in] ULONG celt)
 ;

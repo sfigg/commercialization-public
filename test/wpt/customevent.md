@@ -35,7 +35,7 @@ Represents a custom event.
 ## Syntax
 
 
-``` syntax
+```
 <CustomEvent Value = "None" | "ImageId" | "BuildInfo" | ...>
 </CustomEvent>
 ```
@@ -117,7 +117,7 @@ None.
 
 The following code example shows how this element is used in a trace merge property definition.
 
-``` syntax
+```
 <TraceMergeProperty
   Id="TraceMerge_Default"
   Name="TraceMerge_Default">

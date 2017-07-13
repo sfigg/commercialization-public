@@ -62,7 +62,7 @@ For the list of the supported Windows editions and architectures that this compo
 
 The following XML output shows how to configure microsoft-windows-netbt-.
 
-``` syntax
+```
 <Interfaces>
    <Interface wcm:action="add">
       <NameServerList>

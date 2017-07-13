@@ -58,7 +58,7 @@ For a list of the supported Windows editions and architectures that this compone
 
 The following XML output shows how to set Internet Explorer to wait 45 seconds to receive a response to a request. If the response takes longer than this time-out value, the request is canceled.
 
-``` syntax
+```
 <HKLMReceiveTimeOut>45000</HKLMReceiveTimeOut>
 ```
 

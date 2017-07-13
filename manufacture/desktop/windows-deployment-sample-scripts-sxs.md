@@ -33,7 +33,7 @@ Use these scripts together with DiskPart to format and set up the hard disk part
 
 Use this script apply a Windows image to a new device.
 
-``` syntax
+```
 @echo Apply-Image.bat
 @echo     Run from the reference device in the WinPE environment
 @echo     This script erases the primary hard drive and applies a new image
@@ -137,7 +137,7 @@ The following diagram shows the resulting partition configuration:
 
 ![diagram of default partition layout: system, msr, windows, and recovery](images/dep-win10-partitions-uefi.png)
 
-``` syntax
+```
 rem == CreatePartitions-UEFI.txt ==
 rem == These commands are used with DiskPart to
 rem    create four partitions
@@ -188,7 +188,7 @@ The following diagram shows the resulting partition configuration:
 
 ![diagram of default partition layout: system, windows, and recovery](images/dep-win10-partitions-bios.png)
 
-``` syntax
+```
 rem == CreatePartitions-BIOS.txt ==
 rem == These commands are used with DiskPart to
 rem    create three partitions
@@ -226,7 +226,7 @@ exit
 
 Use this script to prepare the Windows recovery partition.
 
-``` syntax
+```
 @echo == ApplyRecovery.bat ==
 @echo  *********************************************************************
 @echo  == Copy the Windows RE image to the Windows RE Tools partition ==
@@ -279,7 +279,7 @@ This script relies on the following two DiskPart scripts, HideRecoveryPartitions
 
 ### HideRecoveryPartitions-UEFI.txt
 
-``` syntax
+```
 rem === HideRecoveryPartitions-UEFI.txt ===
 select disk 0
 select partition 4
@@ -291,7 +291,7 @@ list volume
 
 ### HideRecoveryPartitions-BIOS.txt
 
-``` syntax
+```
 rem === HideRecoveryPartitions-BIOS.txt ===
 select disk 0
 select partition 3
@@ -310,7 +310,7 @@ To take advantage of all these new features and have the most robust and complet
 
 Sample **LayoutModification.xml**:
 
-``` syntax
+```
 <LayoutModificationTemplate
     xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification"
     xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout"
@@ -391,7 +391,7 @@ Use this script to tune your device’s microphone to help maximize speech accur
 
 ### SpeechSetting.cmd
 
-``` syntax
+```
 @echo off
 @echo.
 @echo This script will set the Device.SpeechRecognition.DefaultMicGain values.
@@ -493,7 +493,7 @@ Here's two scripts, one which can be used to remove the apps from an offline ima
 
 This script assumes the file name is install.wim, that the script is being run from the same folder as install.wim, that the index being modified is \#1, and that there are no other Windows images in other index locations (\#2, \#3) that need to be preserved.
 
-``` syntax
+```
 @echo off
 @rem Run this script from the same folder that includes install.wim 
 cls
@@ -532,7 +532,7 @@ del install-temp.wim
 
 This script assumes you’re running in audit mode on the reference PC.
 
-``` syntax
+```
 @echo off
 @rem Use MOUNT folder in folder where script is run 
 cls
@@ -571,7 +571,7 @@ Add an answer file to the Windows image in C:\\mount\\windows\\Windows\\Panther\
 
 ### BootToAudit-x64
 
-``` syntax
+```
 <?xml version="1.0" encoding="utf-8"?>
 <unattend xmlns="urn:schemas-microsoft-com:unattend">
 <!-- BootToAudit-x64.xml -->
@@ -587,7 +587,7 @@ Add an answer file to the Windows image in C:\\mount\\windows\\Windows\\Panther\
 
 ### BootToAudit-x86
 
-``` syntax
+```
 <?xml version="1.0" encoding="utf-8"?>
 <unattend xmlns="urn:schemas-microsoft-com:unattend">
 <!-- BootToAudit-x86.xml -->
@@ -609,7 +609,7 @@ To make sure your customizations are saved, that includes steps to put the unatt
 
 ### ResetConfig.xml
 
-``` syntax
+```
 <?xml version="1.0" encoding="utf-8"?>
 <!-- ResetConfig.xml -->
 <Reset>
@@ -626,7 +626,7 @@ To make sure your customizations are saved, that includes steps to put the unatt
 
 ### EnableCustomizations.cmd
 
-``` syntax
+```
 rem EnableCustomizations.cmd
 
 rem Set the variable %TARGETOS%      (Typically this is C:\Windows)
@@ -652,7 +652,7 @@ Reinstall Windows apps after adding a new language. You can reinstall the apps w
 
 ### ReinstallInboxApps-x64.cmd
 
-``` syntax
+```
 DISM /Add-ProvisionedAppxPackage /Image:c:\mount\windows /PackagePath:e:\apps\amd64\Microsoft.3DBuilder_8wekyb3d8bbwe.appxbundle /LicensePath:e:\apps\amd64\Microsoft.3DBuilder_8wekyb3d8bbwe.xml /DependencyPackagePath:e:\apps\amd64\Microsoft.VCLibs.x64.14.00.appx /DependencyPackagePath:e:\apps\amd64\Microsoft.VCLibs.x86.14.00.appx
 
 DISM /Add-ProvisionedAppxPackage /Image:c:\mount\windows /PackagePath:e:\apps\amd64\Microsoft.WindowsAlarms_8wekyb3d8bbwe.appxbundle /LicensePath:e:\apps\amd64\Microsoft.WindowsAlarms_8wekyb3d8bbwe.xml /DependencyPackagePath:e:\apps\amd64\Microsoft.VCLibs.x64.14.00.appx /DependencyPackagePath:e:\apps\amd64\Microsoft.VCLibs.x86.14.00.appx
@@ -707,7 +707,7 @@ DISM /Add-ProvisionedAppxPackage /Image:c:\mount\windows /PackagePath:e:\apps\am
 
 ### ReinstallInboxApps-x86.cmd
 
-``` syntax
+```
 DISM /Add-ProvisionedAppxPackage /Image:c:\mount\windows /PackagePath:e:\apps\x86\Microsoft.3DBuilder_8wekyb3d8bbwe.appxbundle /LicensePath:e:\apps\x86\Microsoft.3DBuilder_8wekyb3d8bbwe.xml /DependencyPackagePath:e:\apps\x86\Microsoft.VCLibs.x86.14.00.appx
 
 DISM /Add-ProvisionedAppxPackage /Image:c:\mount\windows /PackagePath:e:\apps\x86\Microsoft.WindowsAlarms_8wekyb3d8bbwe.appxbundle /LicensePath:e:\apps\x86\Microsoft.WindowsAlarms_8wekyb3d8bbwe.xml /DependencyPackagePath:e:\apps\x86\Microsoft.VCLibs.x86.14.00.appx

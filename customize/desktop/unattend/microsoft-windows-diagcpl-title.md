@@ -63,7 +63,7 @@ For a list of the supported Windows editions and architectures that this compone
 
 The following XML output shows how to configure the **Online Support** icon to point to the Fabrikam Troubleshooting application.
 
-``` syntax
+```
   <Title>@%SystemRoot%\System32\DiagCpl.dll,-82</Title>
   <Description>@%SystemRoot%\System32\DiagCpl.dll,-83</Description>
   <Icon>@%SystemRoot%\System32\imageres.dll,-179</Icon>

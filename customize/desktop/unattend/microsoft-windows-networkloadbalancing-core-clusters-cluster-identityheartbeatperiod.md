@@ -62,7 +62,7 @@ For a list of the supported Windows editions and architectures that this compone
 
 The following XML output specifies the interval for transmitting identity heartbeats between the Network Load Balancing cluster is 2 seconds.
 
-``` syntax
+```
 <IdentityHeartbeatPeriod>2000</IdentityHeartbeatPeriod>
 ```
 

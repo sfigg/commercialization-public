@@ -40,7 +40,7 @@ The 64-bit version of Windows Setup does not run on the 32-bit version of Window
 
     -   Run a 32-bit version of Windows Setup, and use the **/InstallFrom** command-line option to select a 64-bit Windows image:
 
-        ``` syntax
+        ```
         X:\windows\system32> D:\setup /InstallFrom:"N:\Windows_64-bit\sources\install.wim"
         ```
 
@@ -48,7 +48,7 @@ The 64-bit version of Windows Setup does not run on the 32-bit version of Window
 
     -   Run a 32-bit version of Windows Setup, and use the `Microsoft-Windows-Setup\ImageInstall\OSImage\`[InstallFrom](http://go.microsoft.com/fwlink/?LinkId=275617) unattend setting to select a 64-bit Windows image.
 
-        ``` syntax
+        ```
         X:\windows\system32> D:\setup /unattend:"D:\unattend_install_64-bit.xml"
         ```
 
@@ -56,7 +56,7 @@ The 64-bit version of Windows Setup does not run on the 32-bit version of Window
 
     -   Use image-capturing tools to apply a 64-bit version of Windows to the PC.
 
-        ``` syntax
+        ```
         Dism /Apply-Image /ImageFile:"Fabrikam_64-bit_image.wim" /Index:1 /ApplyDir:D:\
         ```
 

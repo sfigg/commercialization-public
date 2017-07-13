@@ -73,7 +73,7 @@ For a list of the supported Windows editions and architectures that this compone
 
 The following XML output specifies that the Initial Configuration Tasks application opens automatically when the end user logs on for the first time.
 
-``` syntax
+```
 <DoNotOpenInitialConfigurationTasksAtLogon>false</DoNotOpenInitialConfigurationTasksAtLogon>
 ```
 

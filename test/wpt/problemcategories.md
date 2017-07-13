@@ -33,7 +33,7 @@ Represents a collection of problem categories. This element is for internal use 
 ## Syntax
 
 
-``` syntax
+```
 <ProblemCategories Operation = "Set" | "Add" | “Remove” >
 
   <!-- Child elements -->

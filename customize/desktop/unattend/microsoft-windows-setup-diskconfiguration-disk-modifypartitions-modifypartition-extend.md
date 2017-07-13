@@ -84,7 +84,7 @@ For a list of the Windows editions and architectures that this component support
 
 The following XML output for the `DiskConfiguration` setting shows partition modifications for a BIOS-based computer with two logical partitions. This XML example includes the creation of an extended partition that is set to extend to the end of the hard disk. The second logical partition, labeled **Logical2**, is set to extend to the end of the extended partition. 
 
-``` syntax
+```
 <DiskConfiguration>
 
   <Disk wcm:action="add">
@@ -220,7 +220,7 @@ For more information, see [How to Configure More Than Four Partitions on a BIOS-
 
 The following XML output for the `DiskConfiguration` setting shows how to modify an existing hard drive partition structure. In this example, the third partition is extended to fill the remainder of the drive.
 
-``` syntax
+```
 <DiskConfiguration>
    <WillShowUI>OnError</WillShowUI>
    <Disk>

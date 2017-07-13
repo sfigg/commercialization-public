@@ -95,7 +95,7 @@ buildimage [ProductName]/[All]/[Clean] [BuildType] [Version]
 
 **Examples**:
 
-``` syntax
+```
 buildimage SampleA Test
 buildimage SampleA Retail
 buildimage SampleA
@@ -129,7 +129,7 @@ buildpkg [CompName.SubCompName]/[packagefile.pkg.xml]/[All]/[Clean] [version]
 
 **Examples**:
 
-``` syntax
+```
 buildpkg Appx.Main
 buildpkg Appx.Main 10.0.1.0
 buildpkg sample.pkg.xml
@@ -220,7 +220,7 @@ inf2cab filename.inf [CompName.SubCompName]
 
 **Examples**:
 
-``` syntax
+```
 inf2cab C:\test\gpiodriver.inf
 inf2cab C:\test\gpiodriver.inf Drivers.GPIO
 ```
@@ -242,7 +242,7 @@ inf2pkg input.inf [CompName.SubCompName]
 | /? | Displays this usage string. |
 
 **Example**:
-``` syntax
+```
 inf2pkg C:\test\testdriver.inf
 ```
 
@@ -279,7 +279,7 @@ newappxpkg filename.appx [fga]/[bgt]/[none] [CompName.SubCompName]
 
 **Example**:
 
-``` syntax
+```
 newappxpkg C:\test\MainAppx_1.0.0.0_arm.appx fga AppX.Main
 ```
 
@@ -301,7 +301,7 @@ newbsp BSPName
 
 **Example**:
 
-``` syntax
+```
 newbsp CustomRPi2
 ```
 
@@ -326,7 +326,7 @@ newcommonpkg CompName.SubCompName
 
 **Example**:
 
-``` syntax
+```
 newcommonpkg Registry.FilesAndRegKeys
 ```
 
@@ -355,7 +355,7 @@ newdrvpkg filename.inf [CompName.SubCompName]
 
 **Example**:
 
-``` syntax
+```
 newdrvpkg C:\test\GPIO.inf Drivers.GPIO
 ```
 
@@ -376,7 +376,7 @@ newproduct <productname> bsp
 
 **Example**:
 
-``` syntax
+```
 newproduct ProductA rpi2
 ```
 
@@ -421,7 +421,7 @@ setenv {arm|x86|x64}
 
 **Example**:
 
-``` syntax
+```
 setenv.cmd arm
 ```
 
@@ -431,7 +431,7 @@ Sets your OEM company name. Edit this file with a text editor.
 
 Example: 
 
-``` syntax
+```
 set OEM_NAME=Fabrikam
 ```
 Where _Fabrikam_ is the OEM company name.
@@ -458,7 +458,7 @@ setversion x.y.z.a
 
 **Example**:
 
-``` syntax
+```
 setversion 10.0.0.1
 ```
 ## SignBinaries.cmd

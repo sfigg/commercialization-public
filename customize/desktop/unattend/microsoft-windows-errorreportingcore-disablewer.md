@@ -63,7 +63,7 @@ For a list of the supported Windows editions and architectures this component su
 
 The following XML output disables Windows Error Reporting.
 
-``` syntax
+```
 <DisableWER>1</DisableWER>
 ```
 

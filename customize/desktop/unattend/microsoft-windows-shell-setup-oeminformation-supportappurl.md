@@ -26,7 +26,7 @@ Set the value to your app's protocol handler, which is the value that's register
 
 For example, in the following app manifest file snippet, the **Protocol Name** is **contoso-contact-support** so this will be the value that will be used for `SupportAppURL`:
 
-``` syntax
+```
       <Extensions>
         <uap:Extension Category="windows.protocol">
           <uap:Protocol Name="contoso-contact-support">
@@ -64,7 +64,7 @@ For the list of the supported Windows editions and architectures that this compo
 
 The following XML output shows how to set OEM information.
 
-``` syntax
+```
 <OEMInformation>
    <HelpCustomized>true</HelpCustomized>
    <Manufacturer>OEM name</Manufacturer>

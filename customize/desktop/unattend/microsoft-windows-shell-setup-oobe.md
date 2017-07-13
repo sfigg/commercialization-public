@@ -101,7 +101,7 @@ For a list of the Windows editions and architectures that this component support
 
 The following XML example shows how to set OOBE information for testing.
 
-``` syntax
+```
 <OOBE>
    <HideEULAPage>true</HideEULAPage>
    <NetworkLocation>Other</NetworkLocation>

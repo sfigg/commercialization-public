@@ -20,7 +20,7 @@ Deletes the specified file and commits the deletion to the physical volume.
 ## Syntax
 
 
-``` syntax
+```
 UInt32 CommitFileDeletion(
     string FileName
 );

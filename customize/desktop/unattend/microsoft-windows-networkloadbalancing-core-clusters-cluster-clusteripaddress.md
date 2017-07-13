@@ -66,7 +66,7 @@ For a list of the supported Windows editions and architectures that this compone
 
 The following XML output specifies the Network Load Balancing cluster's primary IP address.
 
-``` syntax
+```
 <ClusterIpAddress>10.100.0.234</ClusterIpAddress>
 ```
 

@@ -27,7 +27,7 @@ The UWF Master Servicing Script (UwfServicingMasterScript.cmd) is located in the
 
 The UPDATE\_SUCCESS block of the UWF master servicing script follows:
 
-``` syntax
+```
 :UPDATE_SUCCESS
 echo UpdateAgent returned success.
 REM

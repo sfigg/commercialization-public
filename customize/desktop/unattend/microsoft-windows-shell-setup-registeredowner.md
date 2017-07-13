@@ -67,7 +67,7 @@ For the list of the Windows editions and architectures that this component suppo
 
 The following XML output shows how to set the registered owner.
 
-``` syntax
+```
 <RegisteredOwner>Luciana Ramos</RegisteredOwner>
 ```
 

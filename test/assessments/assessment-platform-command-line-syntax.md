@@ -30,7 +30,7 @@ Where *&lt;architecture&gt;* is either x86 or amd64.
 
 The base syntax for using the Assessment Platform from the command line is:
 
-``` syntax
+```
 AXE.exe jobfile [AXE_options]
 ```
 

@@ -72,7 +72,7 @@ For a list of the supported Windows editions and architectures that this compone
 
 The following XML output specifies a host's unique IP address.
 
-``` syntax
+```
 <IpAddress wcm:keyValue="Ip1>
    <IpAddress>10.192.45.1</IpAddress>
    <NetworkMask>255.255.255.0</NetworkMask>

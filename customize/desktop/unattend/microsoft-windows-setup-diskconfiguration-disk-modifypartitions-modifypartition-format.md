@@ -67,7 +67,7 @@ For a list of the supported Windows editions and architectures that this compone
 
 The following XML output for the `DiskConfiguration` settings shows how to erase and reformat the second partition of a disk.
 
-``` syntax
+```
 <DiskConfiguration>
 
   <Disk wcm:action="add">

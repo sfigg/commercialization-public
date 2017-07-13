@@ -72,7 +72,7 @@ For a list of the Windows editions and architectures that this component support
 
 The following XML output for the `DiskConfiguration` setting shows how to create two partitions on a hard drive. The first partition has a fixed size of 100 megabytes (MB). The second partition is extended to fill the remainder of the hard disk.
 
-``` syntax
+```
 <DiskConfiguration>
 
   <Disk wcm:action="add">

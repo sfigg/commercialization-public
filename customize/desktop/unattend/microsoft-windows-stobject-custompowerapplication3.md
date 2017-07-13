@@ -71,7 +71,7 @@ For the list of the supported Windows editions and architectures that this compo
 
 The following XML output shows how to configure `CustomPowerApplication3`.
 
-``` syntax
+```
 <CustomPowerApplication3>
    <Application>C:\Program Files\CustomPower\Application.exe</Application> 
    <IconID>@%ProgramFiles%\Microsoft Shared\Resource.dll,-200</IconID> 

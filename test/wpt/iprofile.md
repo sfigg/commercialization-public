@@ -22,7 +22,7 @@ Represents a profile that the client controls. The interface provides functions 
 ## Syntax
 
 
-``` syntax
+```
 {
   typedef enum
   {

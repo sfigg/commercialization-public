@@ -61,7 +61,7 @@ For a list of the supported Windows editions and architectures that this compone
 
 The following XML output shows how to enable a friend or a support professional to take full control of a user's computer. The ticket is configured to expire after one day.
 
-``` syntax
+```
 <CreateEncryptedOnlyTickets>true</CreateEncryptedOnlyTickets>
 <fAllowToGetHelp>true</fAllowToGetHelp>
 <fAllowFullControl>true</fAllowFullControl>

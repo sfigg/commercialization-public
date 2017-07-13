@@ -20,7 +20,7 @@ Checks if a specific registry key is excluded from being filtered by Unified Wri
 ## Syntax
 
 
-``` syntax
+```
 UInt32 FindExclusion(
     [in] string RegistryKey,
     [out] boolean bFound

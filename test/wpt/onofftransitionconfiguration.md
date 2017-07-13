@@ -31,7 +31,7 @@ Represents an on/off transition configuration.
 ## Syntax
 
 
-``` syntax
+```
 <OnOffTransitionConfiguration Id = IdType
                               Name = string
                               Type = "On/Off - Boot" | "On/Off - HybridBoot" | "On/Off - Shutdown" | ...>
@@ -177,7 +177,7 @@ Represents an on/off transition configuration.
 
 The following code example shows how to configure this element.
 
-``` syntax
+```
 <OnOffTransitionConfiguration
   Id="OnOffTransitionConfiguration_Default_Boot"
   Name="OnOffTransitionConfiguration_Default_Boot"

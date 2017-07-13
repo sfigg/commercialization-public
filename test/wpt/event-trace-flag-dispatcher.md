@@ -19,7 +19,7 @@ ms.technology: windows-oem
 
 This flag enables capture of Ready Thread events.
 
-``` syntax
+```
 #define EVENT_TRACE_FLAG_DISPATCHER 0x00000800
 ```
 

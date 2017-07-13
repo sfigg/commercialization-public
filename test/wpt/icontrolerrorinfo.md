@@ -22,7 +22,7 @@ Provides functions that obtain information about errors that occur when the cont
 ## Syntax
 
 
-``` syntax
+```
 {
   typedef enum
   {

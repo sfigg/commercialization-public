@@ -21,7 +21,7 @@ When running in manufacturing mode, Wi-Fi miniport drivers must add support for 
 
 OID\_DOT11\_MANUFACTURING\_TEST is called as a method request in the driver to perform a specific test. This OID should never be used during normal operation.
 
-``` syntax
+```
 typedef struct _DOT11_MANUFACTURING_TEST {
     DOT11_MANUFACTURING_TEST_TYPE dot11ManufacturingTestType;
     ULONG uBufferLength;
@@ -34,7 +34,7 @@ typedef struct _DOT11_MANUFACTURING_TEST {
 
 The DOT11 manufacturing test type enumeration is defined as follows:
 
-``` syntax
+```
 typedef enum _DOT11_MANUFACTURING_TEST_TYPE {
     dot11_manufacturing_test_unknown = 0,
     dot11_manufacturing_test_self_start = 1,
@@ -65,7 +65,7 @@ The **dot11\_manufacturing\_test\_self\_start** command is called to request the
 
 When called, the driver should run the requested tests as defined in the **DOT11\_MANUFACTURING\_SELF\_TEST\_SET\_PARAMS** structure and return success when the tests have been started. On completion, whether the tests have succeeded or failed, the driver should indicate the test status by using the **NDIS\_STATUS\_DOT11\_MANUFACTURING\_CALLBACK** callback handler, with the *dot11ManufacturingCallbackType* set to **dot11\_manufacturing\_callback\_self\_test\_complete** and the status describing the result of the test. The driver will then call the **OID\_DOT11\_MANUFACTURING\_TEST** oid with the **dot11\_manufacturing\_test\_self\_query\_result** command to query the detailed result of the test.
 
-``` syntax
+```
 typedef struct _DOT11_MANUFACTURING_SELF_TEST_SET_PARAMS {
     DOT11_MANUFACTURING_SELF_TEST_TYPE SelfTestType;
     ULONG uTestID;
@@ -122,7 +122,7 @@ typedef struct _DOT11_MANUFACTURING_SELF_TEST_SET_PARAMS {
 
 This command gets the results of a previously requested self-test. It should only be called when the driver has indicated that the self-test is complete by using the **NDIS\_STATUS\_DOT11\_MANUFACTURING\_CALLBACK** with the *dot11ManufacturingCallbackType* set to **dot11\_manufacturing\_callback\_self\_test\_complete** and the status describing the result of the test.
 
-``` syntax
+```
 typedef struct _DOT11_MANUFACTURING_SELF_TEST_QUERY_RESULTS {
     DOT11_MANUFACTURING_SELF_TEST_TYPE SelfTestType;
     ULONG uTestID;
@@ -162,7 +162,7 @@ The **dot11\_manufacturing\_test\_rx** read-only command tests and verifies that
 
 To test this connectivity, a signal generator generates a non-modulated carrier wave (CW) at a certain frequency and power that will be measured and returned by the device under test (DUT). If the band and/or channel setting are inconsistent, then the driver returns **STATUS\_INVALID\_PARAMETER**.
 
-``` syntax
+```
 typedef struct _DOT11_MANUFACTURING_FUNCTIONAL_TEST_RX {
     BOOLEAN bEnabled;
     DOT11_BAND Dot11Band;
@@ -190,7 +190,7 @@ The **dot11\_manufacturing\_test\_tx** set-only command validates the connection
 
 To perform this test, a signal analyzer is physically connected to the antenna port and the DUT is requested to transmit a CW with specific band, channel, and power level settings. The driver also measures its own ADC reading for the transmitted signal and returns it to the application.
 
-``` syntax
+```
 typedef struct _DOT11_MANUFACTURING_FUNCTIONAL_TEST_TX {
     BOOLEAN bEnable;
     BOOLEAN bOpenLoop;
@@ -228,7 +228,7 @@ This must be set if *bOpenLoop* is **True** and the hardware supports it.
 
 The **dot11\_manufacturing\_test\_set\_data** set-only command enables the application to write data at a specific location.
 
-``` syntax
+```
 typedef struct _DOT11_MANUFACTURING_TEST_SET_DATA {
     ULONG uKey;
     ULONG uOffset;
@@ -254,7 +254,7 @@ typedef struct _DOT11_MANUFACTURING_TEST_SET_DATA {
 
 The **dot11\_manufacturing\_test\_query\_data** command enables the application to read data at a specific location.
 
-``` syntax
+```
 typedef struct _DOT11_MANUFACTURING_TEST_QUERY_DATA {
     ULONG uKey;
     ULONG uOffset;
@@ -288,7 +288,7 @@ For this test, all radios should be turned off and the Wi-Fi chipset should be p
 
 The driver can be awakened from the sleep state at any time by using the **dot11\_manufacturing\_test\_awake** command. If the sleep time-out is set to −1, the driver should sleep indefinitely unless asked to wake up by using **dot11\_manufacturing\_test\_awake**. When the driver wakes up, either due to the time-out expiring or as a result of the awake command, it should indicate its awake status by using the **NDIS\_STATUS\_DOT11\_MANUFACTURING\_CALLBACK** callback handler with the *dot11ManufacturingCallbackType* set to **dot11\_manufacturing\_callback\_sleep\_complete**.
 
-``` syntax
+```
 typedef struct _DOT11_MANUFACTURING_TEST_SLEEP {
     ULONG uSleepTime;
     PVOID pvContext;

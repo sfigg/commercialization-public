@@ -34,7 +34,7 @@ Ensure that you have enough disk space for the **/Append-Image** option to run. 
 
 Syntax:
 
-``` syntax
+```
 DISM.exe /Append-Image /ImageFile:<path_to_image_file> /CaptureDir:<source_directory> /Name:<image_name> [/Description:<image_description>] [/ConfigFile:<configurtion_file.ini>] [/Bootable] /WIMBoot [/CheckIntegrity] [/Verify] [/NoRpFix]
 ```
 
@@ -49,7 +49,7 @@ DISM.exe /Append-Image /ImageFile:<path_to_image_file> /CaptureDir:<source_direc
 
 Example:
 
-``` syntax
+```
 Dism /Append-Image /ImageFile:install.wim /CaptureDir:D:\ /Name:Drive-D
 ```
 
@@ -65,13 +65,13 @@ If Dism /Apply-Image fails with error code 5 and you are using Windows 10 versio
 
 Arguments for WIM:
 
-``` syntax
+```
 DISM.exe /Apply-Image /ImageFile:<path_to_image_file> [/SWMFile:<pattern>] /ApplyDir:<target_directory> {/Index:< image_index> | /Name:<image_name>} [/CheckIntegrity] [/Verify] [/NoRpFix] [/ConfirmTrustedFile] [/WIMBoot (deprecated)] [/Compact] [/EA]
 ```
 
 Arguments for FFU
 
-``` syntax
+```
 DISM.exe /Apply-Image /ImageFile:<path_to_image_file> /ApplyDrive:<target_drive> [/SFUFile:<pattern>] [/SkipPlatformCheck]
 ```
 
@@ -91,19 +91,19 @@ DISM.exe /Apply-Image /ImageFile:<path_to_image_file> /ApplyDrive:<target_drive>
 
 Examples:
 
-``` syntax
+```
 Dism /apply-image /imagefile:install.wim /index:1 /ApplyDir:D:\
 ```
 
-``` syntax
+```
 Dism /apply-image /imagefile:install.swm /swmfile:install.swm /index:1 /applydir:D:
 ```
 
-``` syntax
+```
 DISM.exe /Apply-Ffu /ImageFile:flash.ffu /ApplyDrive:\\.\PhysicalDrive0
 ```
 
-``` syntax
+```
 DISM.exe /Apply-Ffu /ImageFile:flash.sfu /SFUFile:flash*.sfu /ApplyDrive:\\.\PhysicalDrive0
 ```
 
@@ -119,7 +119,7 @@ Captures the incremental file changes based on the specific install.wim file to 
 
 Syntax: 
 
-``` syntax
+```
 Dism /Capture-CustomImage /CaptureDir:<source_directory> [/ConfigFile:<configuration_file.ini>] [/CheckIntegrity] [/Verify] [/ConfirmTrustedFile]
 ```
 
@@ -133,7 +133,7 @@ Dism /Capture-CustomImage /CaptureDir:<source_directory> [/ConfigFile:<configura
 
 Example:
 
-``` syntax
+```
 Dism /Capture-CustomImage /CaptureDir:D:\
 ```
 
@@ -145,7 +145,7 @@ You can capture the image as a Windows image (.wim) file or a set of split Windo
 
 Syntax:
 
-``` syntax
+```
 Dism /Capture-Image /ImageFile:<path_to_image_file> /CaptureDir:<source_directory> /Name:<image_name> [/Description:<image_description>]
 [/ConfigFile:<configuration_file.ini>] {[/Compress:{max|fast|none}] [/Bootable] | [/WIMBoot]} [/CheckIntegrity] [/Verify] [/NoRpFix] [/EA]
 ```
@@ -163,7 +163,7 @@ Dism /Capture-Image /ImageFile:<path_to_image_file> /CaptureDir:<source_director
 
 Examples:
 
-``` syntax
+```
 Dism /Capture-Image /ImageFile:install.wim /CaptureDir:D:\ /Name:Drive-D
 ```
 
@@ -177,7 +177,7 @@ Deletes all of the resources associated with a mounted image that has been corru
 
 Example: 
 
-``` syntax
+```
 Dism /Cleanup-Mountpoints
 ```
 
@@ -189,7 +189,7 @@ Applies the changes that you have made to the mounted image. The image remains m
 
 Syntax:
 
-``` syntax
+```
 Dism /Commit-Image /MountDir:<path_to_mount_directory> [/CheckIntegrity] [/Append]
 ```
 
@@ -200,7 +200,7 @@ Dism /Commit-Image /MountDir:<path_to_mount_directory> [/CheckIntegrity] [/Appen
 
 Example: 
 
-``` syntax
+```
 Dism /Commit-Image /MountDir:C:\test\offline
 ```
 
@@ -212,7 +212,7 @@ This command-line option does not apply to virtual hard disk (VHD) files.
 
 Syntax:
 
-``` syntax
+```
 Dism /Delete-Image /ImageFile:<path_to_image_file> {/Index:<image_index> | /Name:<image_name>} [/CheckIntegrity]
 ```
 
@@ -222,7 +222,7 @@ Dism /Delete-Image /ImageFile:<path_to_image_file> {/Index:<image_index> | /Name
 
 Example: 
 
-``` syntax
+```
 Dism /Delete-Image /ImageFile:install.wim /Index:1
 ```
 
@@ -234,7 +234,7 @@ This command-line option does not apply to virtual hard disk (VHD) files.
 
 Syntax:
 
-``` syntax
+```
 Dism /Export-Image /SourceImageFile:<path_to_image_file> {/SourceIndex:<image_index> | /SourceName:<image_name>} /DestinationImageFile:<path_to_image_file> [/DestinationName:<Name>] [/Compress:{fast|max|none|recovery}] [/Bootable] [/WIMBoot] [/CheckIntegrity]
 ```
 
@@ -248,7 +248,7 @@ Dism /Export-Image /SourceImageFile:<path_to_image_file> {/SourceIndex:<image_in
 
 Example: 
 
-``` syntax
+```
 Dism /Export-Image /SourceImageFile:install.wim /SourceIndex:1 /DestinationImageFile:install2.wim
 ```
 
@@ -258,7 +258,7 @@ Lists the images that are currently mounted and information about the mounted im
 
 Example: 
 
-``` syntax
+```
 Dism /Get-MountedImageInfo
 ```
 
@@ -268,17 +268,17 @@ Displays information about the images that are contained in the .wim, vhd or .vh
 
 Syntax: 
 
-``` syntax
+```
 Dism /Get-ImageInfo /ImageFile:<path_to_image.wim> [{/Index:<Image_index> | /Name:<Image_name>}]
 ```
 
 Examples: 
 
-``` syntax
+```
 Dism /Get-ImageInfo /ImageFile:C:\test\offline\install.wim
 ```
 
-``` syntax
+```
 Dism /Get-ImageInfo /ImageFile:C:\test\images\myimage.vhd /Index:1
 ```
 
@@ -292,13 +292,13 @@ This only applies to Windows 8.1; this feature isn't supported in Windows 10.
 
 Syntax:
 
-``` syntax
+```
 Dism /Get-WIMBootEntry /Path:<volume_path>
 ```
 
 Example: 
 
-``` syntax
+```
 Dism /Get-WIMBootEntry /Path:C:\
 ```
 
@@ -310,13 +310,13 @@ This command-line option does not apply to virtual hard disk (VHD) files.
 
 Syntax:
 
-``` syntax
+```
 Dism /List-Image /ImageFile:<path_to_image_file> {/Index:<image_index> | /Name:<image_name>}
 ```
 
 Example: 
 
-``` syntax
+```
 Dism /List-Image /ImageFile:install.wim /Index:1
 ```
 
@@ -326,7 +326,7 @@ Mounts an image from a .wim, .vhd or .vhdx file to the specified directory so th
 
 Syntax:
 
-``` syntax
+```
 Dism /Mount-Image /ImageFile:<path_to_image_file> {/Index:<image_index> | /Name:<image_name>} /MountDir:<path_to_mount_directory> [/ReadOnly] [/Optimize] [/CheckIntegrity]
 ```
 
@@ -338,11 +338,11 @@ Dism /Mount-Image /ImageFile:<path_to_image_file> {/Index:<image_index> | /Name:
 
 Examples: 
 
-``` syntax
+```
 Dism /Mount-Image /ImageFile:C:\test\images\myimage.wim /index:1 /MountDir:C:\test\offline
 ```
 
-``` syntax
+```
 Dism /Mount-Image /ImageFile:C:\test\images\myimage.vhd /index:1 /MountDir:C:\test\offline /ReadOnly
 ```
 
@@ -357,7 +357,7 @@ Performs specified configurations to an offline image.
 
 Example: 
 
-``` syntax
+```
 Dism /Image:C:\test\offline /Optimize-Image /WIMBoot
 ```
 
@@ -367,13 +367,13 @@ Remounts a mounted image that has become inaccessible and makes it available for
 
 Syntax: 
 
-``` syntax
+```
 Dism /Remount-Image /MountDir:<path_to_mount_directory>
 ```
 
 Example:
 
-``` syntax
+```
 Dism /Remount-Image /MountDir:C:\test\offline
 ```
 
@@ -393,13 +393,13 @@ This option creates the .sfu files in the specified directory, naming each file 
 
 Syntax for WIM:
 
-``` syntax
+```
 Dism /Split-Image /ImageFile:<path_to_image_file> /SWMFile:<path_to_swm> /FileSize:<MB-Size> [/CheckIntegrity]
 ```
 
 Syntax for FFU:
 
-``` syntax
+```
 Dism /Split-Ffu /ImageFile:<path_to_image_file> /SFUFile:<pattern> /FileSize:<MB-Size>
 ```
 
@@ -412,11 +412,11 @@ Dism /Split-Ffu /ImageFile:<path_to_image_file> /SFUFile:<pattern> /FileSize:<MB
 
 Examples:
 
-``` syntax
+```
 Dism /Split-Image /ImageFile:install.wim /SWMFile:split.swm /FileSize:650
 ```
 
-``` syntax
+```
 DISM.exe /Split-Ffu /ImageFile:flash.ffu /SFUFile:flash.sfu /FileSize:650
 ```
 
@@ -428,7 +428,7 @@ You must use either the /commit or /discard argument when you use the /Unmount-I
 
 Syntax: 
 
-``` syntax
+```
 Dism /Unmount-Image /MountDir:<path_to_mount_directory> {/Commit | /Discard} [/CheckIntegrity] [/Append]
 ```
 
@@ -439,11 +439,11 @@ Dism /Unmount-Image /MountDir:<path_to_mount_directory> {/Commit | /Discard} [/C
 
 Examples:
 
-``` syntax
+```
 Dism /Unmount-Image /MountDir:C:\test\offline /commit
 ```
 
-``` syntax
+```
 Dism /Unmount-Image /MountDir:C:\test\offline /discard
 ```
 
@@ -466,7 +466,7 @@ Dism /Update-WIMBootEntry /Path:<Volume_path> /DataSourceID:<Data_source_id> /Im
 
 Example:
 
-``` syntax
+```
 DISM.exe /Update-WIMBootEntry /Path:C:\ /DataSourceID:0 /ImageFile:R:\Install.wim
 ```
 
@@ -480,7 +480,7 @@ For more information about siloed provisioning packages, and how to use CopyDand
 
 To find out how to work with siloed provisioning packages, see [Lab 10: Add desktop applications and settings with siloed provisioning packages (SPPs)](add-desktop-apps-with-spps-sxs.md).
 
-``` Syntax
+```
 /Apply-SiloedPackage /PackagePath:<package_path> /ImagePath:<applied_image_path>
 ```
 
@@ -491,7 +491,7 @@ To find out how to work with siloed provisioning packages, see [Lab 10: Add desk
 
 Example:
 
-``` syntax
+```
 Dism.exe /apply-SiloedPackage /PackagePath:C:\test\Word.spp /PackagePath:C:\test\spp2.spp /ImagePath:C:\
 ```
 

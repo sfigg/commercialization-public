@@ -60,7 +60,7 @@ For the list of the supported Windows editions and architectures that this compo
 ## XML Example
 
 
-``` syntax
+```
 <StartPort>0</StartPort>
 ```
 

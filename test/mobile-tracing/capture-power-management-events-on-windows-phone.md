@@ -37,7 +37,7 @@ TShell is required to run Tracelog.
 
 Verify the device is connected to TShell by running the command dird in the TShell command window. Ensure a directory listing from the phone is displayed. If an error message is seen, ensure that TShell is configured correctly,, and a device command prompt is shown above the regular command prompt in the TShell window similar to the following:
 
-``` syntax
+```
 DEVICE C:\
 PS C:\>
 ```
@@ -56,7 +56,7 @@ For detailed Tracelog command line syntax, see [Tracelog Command Syntax](http://
 
 Use the following commands to create a session called "MyPowerTrace" and enable the Microsoft-Windows-Kernel-Power provider.
 
-``` syntax
+```
 DEVICE C:\
 PS C:\> cdd data
 DEVICE C:\data
@@ -160,7 +160,7 @@ Enable additional power management related providers if desired.
 
 The following command requests the provider to log state information. The capture of state information is initiated at the beginning or end of a trace. This ensures that the information necessary to determine the state at a specific point in the trace is logged.
 
-``` syntax
+```
 cmdd 'tracelog -capturestate MyPowerTrace -guid #331C3B3A-2005-44C2-AC5E-77220C37D6B4'
 ```
 
@@ -174,7 +174,7 @@ Event trace logging is now enabled. Run the scenarios or tests you want to analy
 
 After the scenarios or tests are complete, use Tracelog to flush the buffers and stop event trace logging.
 
-``` syntax
+```
 cmdd 'tracelog -flush MyPowerTrace'
 cmdd 'tracelog -stop MyPowerTrace'
 ```
@@ -184,7 +184,7 @@ cmdd 'tracelog -stop MyPowerTrace'
 
 Run Xperf on the device to process the log.
 
-``` syntax
+```
 DEVICE C:\data
 PS C:\> cmdd 'xperf -merge MyPowerLog.etl c:\data\MyPowerLogOut.etl'
 Merged Etl: c:\data\MyPowerLogOut.etl
@@ -200,7 +200,7 @@ PS C:\>
 
 Copy the merged trace log from the phone by using the **getd** command in the TShell command window.
 
-``` syntax
+```
 DEVICE C:\data
 PS C:\> getd MyPowerLogOut.etl C:\Users\username\Documents
 C:\data\MyPowerLogOut.etl
@@ -211,7 +211,7 @@ PS C:\>
 
 You can also rename the file at copy time.
 
-``` syntax
+```
 DEVICE C:\
 PS C:\> getd C:\data\MyPowerLogOut.etl C:\Users\username\Documents\NewName.etl
 C:\data\MyPowerLogOut.etl
@@ -225,7 +225,7 @@ PS C:\>
 
 Run Xperf on the PC for additional processing. On 32-bit operating systems, Xperf is installed in C:\\Program Files\\Windows Kits\\10\\Windows Performance Toolkit. On 64-bit operating systems, it is installed in C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit.
 
-``` syntax
+```
 C:\>cd Users\username\Documents
 C:\Users\username\Documents>xperf -i MyPowerLogOut.etl -o MyPowerLogCSV.csv -tle
 [1/2]    100.0%

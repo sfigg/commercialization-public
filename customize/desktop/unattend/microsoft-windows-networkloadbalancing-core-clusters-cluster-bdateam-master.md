@@ -66,7 +66,7 @@ For a list of the supported Windows editions and architectures that this compone
 
 The following XML output specifies that the host is the master.
 
-``` syntax
+```
 <Master>true</Master>
 ```
 

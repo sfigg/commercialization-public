@@ -65,7 +65,7 @@ For a list of the Windows editions and architectures that this component support
 
 The following sample XML output specifies that auto-activation is skipped.
 
-``` syntax
+```
 <SkipAutoActivation>true</SkipAutoActivation>
 ```
 

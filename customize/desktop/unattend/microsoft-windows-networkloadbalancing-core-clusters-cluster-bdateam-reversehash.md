@@ -66,7 +66,7 @@ For the list of the supported Windows editions and architectures that this compo
 
 The following XML output specifies that the adapter reverses the source and destination IP addresses and ports.
 
-``` syntax
+```
 <ReverseHash>true</ReverseHash>
 ```
 

@@ -39,7 +39,7 @@ Represents an event provider identifier for the profile.
 ## Syntax
 
 
-``` syntax
+```
 <EventProviderId Value = IdType>
 
   <!-- Child elements -->
@@ -149,7 +149,7 @@ Represents an event provider identifier for the profile.
 
 For managed scenarios, use the following event provider definition.
 
-``` syntax
+```
 <EventCollectorId Value ="WPAEventCollector">
   <EventProviders>
     <EventProviderId Value="EventProvider_DotNetProvider" />

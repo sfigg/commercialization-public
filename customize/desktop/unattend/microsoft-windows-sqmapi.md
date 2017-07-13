@@ -49,7 +49,7 @@ To determine whether a component applies to the image you’re building, load yo
 
 The following XML output shows how to enable Windows CEIP.
 
-``` syntax
+```
 <CEIPEnabled>true</CEIPEnabled>
 ```
 

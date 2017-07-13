@@ -45,7 +45,7 @@ This method initializes Windows Preinstallation Environment (Windows PE) and pr
 
 5.  Save the answer file, and then close Windows SIM. The answer file must resemble the following example:
 
-    ``` syntax
+    ```
     <?xml version="1.0" encoding="utf-8" ?> 
     <unattend xmlns="urn:schemas-microsoft-com:unattend">
        <settings pass="windowsPE">
@@ -69,7 +69,7 @@ This method initializes Windows Preinstallation Environment (Windows PE) and pr
 
 7.  At a command prompt, run Windows Setup. Specify the name of the answer file. For example:
 
-    ``` syntax
+    ```
     Setup /unattend:C:\unattend.xml
     ```
 

@@ -63,7 +63,7 @@ For a full list of the Windows editions and architectures that this component su
 
 The following XML output shows how to replace the "Wi-Fi" heading in the Networks list with "WLAN".
 
-``` syntax
+```
 <WiFiToWlan>true</WiFiToWlan>
 ```
 

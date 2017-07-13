@@ -37,7 +37,7 @@ TShell is required to run Tracelog.
 
 Verify the device is connected to TShell by running the command dird in the TShell command window. Ensure a directory listing from the device is displayed. If an error message is seen, ensure that TShell is configured correctly, and a device command prompt is shown above the regular command prompt in the TShell window similar to the following:
 
-``` syntax
+```
 DEVICE C:\
 PS C:\>
 ```
@@ -58,7 +58,7 @@ For detailed Tracelog command line syntax, see [Tracelog Command Syntax](http://
 
 The following command starts a session that enables tracing of process and thread create/deletes, kernel and user mode image load/unload events, DPC events, context switches, and CPU sample profiles.
 
-``` syntax
+```
 DEVICE C:\
 PS C:\> cdd data
 DEVICE C:\data
@@ -107,7 +107,7 @@ PS C:\>
 
 The following commands start a new session named "MyPowerTrace" and enable the Microsoft-Windows-Kernel-Power provider.
 
-``` syntax
+```
 DEVICE C:\
 PS C:\> cdd data
 DEVICE C:\data
@@ -192,7 +192,7 @@ After the scenarios or tests are complete, use Tracelog to flush the buffers and
 
 The following commands flush and stop the "MyTrace" session.
 
-``` syntax
+```
 cmdd 'tracelog -flush MyTrace'
 cmdd 'tracelog -stop MyTrace'
 ```
@@ -201,7 +201,7 @@ cmdd 'tracelog -stop MyTrace'
 
 The following commands flush and stop the "MyPowerTrace" session.
 
-``` syntax
+```
 cmdd 'tracelog -flush MyPowerTrace'
 cmdd 'tracelog -stop MyPowerTrace'
 ```
@@ -213,7 +213,7 @@ Run Xperf on the device to process the log.
 
 ### Example 1
 
-``` syntax
+```
 DEVICE C:\data
 PS C:\> cmdd 'xperf -merge MyLog.etl c:\data\MyLogOut.etl'
 Merged Etl: c:\data\MyLogOut.etl
@@ -226,7 +226,7 @@ PS C:\>
 
 ### Example 2
 
-``` syntax
+```
 DEVICE C:\data
 PS C:\> cmdd 'xperf -merge MyPowerLog.etl c:\data\MyPowerLogOut.etl'
 Merged Etl: c:\data\MyPowerLogOut.etl
@@ -244,7 +244,7 @@ Copy the merged trace log from the phone by using the **getd** command in the TS
 
 ### Example 1
 
-``` syntax
+```
 DEVICE C:\data
 PS C:\> getd MyLogOut.etl C:\Users\username\Documents
 C:\data\MyLogOut.etl
@@ -255,7 +255,7 @@ PS C:\>
 
 ### Example 2
 
-``` syntax
+```
 DEVICE C:\data
 PS C:\> getd MyPowerLogOut.etl C:\Users\username\Documents
 C:\data\MyPowerLogOut.etl
@@ -266,7 +266,7 @@ PS C:\>
 
 You can also rename the file at copy time.
 
-``` syntax
+```
 DEVICE C:\
 PS C:\> cdd data
 DEVICE C:\
@@ -284,7 +284,7 @@ Run Xperf on the desktop PC for additional processing. On 32-bit operating syste
 
 ### Example 1
 
-``` syntax
+```
 C:\>cd Users\username\Documents
 C:\Users\username\Documents>xperf -i d:\MyLogOut.etl -o MyLogCSV.csv -tle
 [1/2]    100.0%
@@ -295,7 +295,7 @@ C:\Users\username\Documents>
 
 ### Example 2
 
-``` syntax
+```
 C:\>cd Users\username\Documents
 C:\Users\username\Documents>xperf -i MyPowerLogOut.etl -o MyPowerLogCSV.csv -tle 
 [1/2]    100.0%

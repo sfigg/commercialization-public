@@ -64,7 +64,7 @@ For a list of the supported Windows editions and architectures that this compone
 
 The following XML output shows how to specify a virtual IP address by using the name "Ip1".
 
-``` syntax
+```
 <IpAddress wcm:keyValue="Ip1">
    <IpAddress>10.192.45.1</IpAddress>
    <NetworkMask>255.255.255.0</NetworkMask>

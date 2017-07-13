@@ -35,7 +35,7 @@ Represents a problem category for the profile. This element is for internal use 
 ## Syntax
 
 
-``` syntax
+```
 <ProblemCategory Value = "First Level Triage" | "CPU" | "Storage" ...>
 </ProblemCategory>
 ```

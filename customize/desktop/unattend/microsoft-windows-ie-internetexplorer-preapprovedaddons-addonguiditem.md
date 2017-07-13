@@ -59,7 +59,7 @@ For the list of the supported Windows editions and architectures that this compo
 
 The following XML output shows how to set two Internet Explorer add-on modules.
 
-``` syntax
+```
 <PreApprovedAddons>
   <AddonGuidItem>
     <AddonGuid>{a1b1c123d1e1f4a5a6a7aa8a9a0a}</AddonGuid>

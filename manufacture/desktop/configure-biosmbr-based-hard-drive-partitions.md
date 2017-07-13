@@ -112,7 +112,7 @@ The following steps describe how to partition your hard drives and prepare to ap
 
 1.  Save the following code as a text file (CreatePartitions-BIOS.txt) on a USB flash drive.
 
-    ``` syntax
+    ```
     rem == CreatePartitions-BIOS.txt ==
     rem == These commands are used with DiskPart to
     rem    create three partitions
@@ -149,7 +149,7 @@ The following steps describe how to partition your hard drives and prepare to ap
 2.  Use Windows PE to boot the destination computer.
 3.  Clean and partition the drive. In this example, *F* is the letter of the USB flash drive.
 
-    ``` syntax
+    ```
     DiskPart /s F:\CreatePartitions-BIOS.txt
     ```
 

@@ -19,7 +19,7 @@ This topic provides sample report descriptors.
 
 Everything that is specified in the following sample descriptor is mandatory.
 
-``` syntax
+```
 //TOUCH PAD input TLC
     0x05, 0x0d,                         // USAGE_PAGE (Digitizers)          
     0x09, 0x05,                         // USAGE (Touch Pad)             
@@ -155,7 +155,7 @@ Everything that is specified in the following sample descriptor is mandatory.
 
 The following excerpt is from the descriptor for the Windows Precision Touchpad top-level collection for the optional (highly recommended) support of the latency mode feature report.
 
-``` syntax
+```
     0x05, 0x0d,                         //    USAGE_PAGE (Digitizer)
     0x85, REPORTID_LATENCY,             //    REPORT_ID (Latency)              
     0x09, 0x60,                         //    USAGE(Latency Mode)
@@ -173,7 +173,7 @@ The following excerpt is from the descriptor for the Windows Precision Touchpad 
 
 The following excerpt is from the descriptor for the Windows Precision Touchpad top-level collection for a segmented version of the device certification status feature report. This allows the certification status blob to be split in to 8 32-byte segments versus a single 256-byte segment. The host indicates which segment \# it would like returned in a SET FEATURE and the device shall return the segment \# and associated segment in the GET FEATURE.
 
-``` syntax
+```
     0x06, 0x00, 0xff,                   //     USAGE_PAGE (Vendor Defined)  
     0x85, REPORTID_PTPHQA,              //     REPORT_ID (PTPHQA)              
     0x09, 0xC6,                         //     USAGE (Vendor usage for segment #) 
@@ -190,7 +190,7 @@ The following excerpt is from the descriptor for the Windows Precision Touchpad 
 ## Sample Report Descriptor Excerpt - (PTP Input Report with Geometry Support)
 
 
-``` syntax
+```
     0x85, REPORTID_TOUCHPAD,            //   REPORT_ID (Touch pad)              
     0x09, 0x22,                         //   USAGE (Finger)                 
     0xa1, 0x02,                         //   COLLECTION (Logical)  

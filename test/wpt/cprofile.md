@@ -22,7 +22,7 @@ Represents a **Profile** object and contains data to configure Event Tracing for
 ## Syntax
 
 
-``` syntax
+```
 {
   [default] interface IProfile;
   interface IParsingErrorInfo;

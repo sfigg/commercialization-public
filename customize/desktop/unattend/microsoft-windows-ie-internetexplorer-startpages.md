@@ -59,7 +59,7 @@ For a list of the supported Windows editions and architectures that this compone
 
 The following XML output shows how to set a primary home page and two secondary home pages.
 
-``` syntax
+```
 <Home_Page>http://www.fabrikam.com</Home_Page>
 <StartPages>
    <StartPage>

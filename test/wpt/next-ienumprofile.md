@@ -22,7 +22,7 @@ Returns an array that contains the specified number of elements.
 ## Syntax
 
 
-``` syntax
+```
 HRESULT Next
   ([in] ULONG celt,
   [out, size_is(celt), length_is(*pCeltFetched)] IProfile** prgVar,

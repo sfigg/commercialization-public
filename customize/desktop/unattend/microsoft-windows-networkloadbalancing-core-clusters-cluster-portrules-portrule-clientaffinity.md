@@ -72,7 +72,7 @@ For a list of the supported Windows editions and architectures that this compone
 
 The following XML output shows how to specify that multiple connections from the same client IP address can be handled by different cluster hosts.
 
-``` syntax
+```
 <ClientAffinity>None</ClientAffinity>
 ```
 

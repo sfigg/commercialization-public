@@ -19,7 +19,7 @@ ms.technology: windows-oem
 
 This action produces a text file that summarizes metrics for profiles.
 
-``` syntax
+```
 -a profile [-util [n]] [-detail] [-range T1 [T2]]
 ```
 

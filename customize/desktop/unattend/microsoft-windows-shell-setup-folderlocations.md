@@ -70,7 +70,7 @@ For a list of the Windows editions and architectures that this component support
 
 The following XML example shows how to set the paths to folder locations.
 
-``` syntax
+```
 <FolderLocations>
    <ProfilesDirectory>%SYSTEMDRIVE%\Profiles</ProfilesDirectory>
 </FolderLocations>

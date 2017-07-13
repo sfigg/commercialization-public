@@ -70,7 +70,7 @@ For the list of the Windows editions and architectures that this component suppo
 
 The following XML output shows how to show the Power Options button on the Start Screen.
 
-``` syntax
+```
 <ShowPowerButtonOnStartScreen>true</ShowPowerButtonOnStartScreen>
 ```
 

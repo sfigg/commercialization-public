@@ -128,7 +128,7 @@ The following steps describe how to partition your hard drives and prepare to ap
 
 1.  Save the following code in the as a text file (CreatePartitions-UEFI.txt) on a USB flash drive.
 
-    ``` syntax
+    ```
     rem == CreatePartitions-UEFI.txt ==
     rem == These commands are used with DiskPart to
     rem    create four partitions
@@ -171,7 +171,7 @@ The following steps describe how to partition your hard drives and prepare to ap
 
 3.  Clean and partition the drive. In this example, *F* is the letter of the USB flash drive.
 
-    ``` syntax
+    ```
     DiskPart /s F:\CreatePartitions-UEFI.txt
     ```
 

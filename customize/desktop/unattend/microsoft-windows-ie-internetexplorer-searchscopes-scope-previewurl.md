@@ -60,7 +60,7 @@ For a list of the supported Windows editions and architectures that this compone
 
 The following XML output shows how to specify a Search Scope, including a preview URL for the Accelerators window.
 
-``` syntax
+```
 <SearchScopes>
    <Scope wcm:action="add">
       <ScopeDefault>true</ScopeDefault>

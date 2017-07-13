@@ -24,7 +24,7 @@ OEMs can choose a single map region to preload from the multiple regions that ar
 <a href="" id="instructions-"></a>**Instructions:**  
 1.  Create a customization answer file using the contents shown in the following code sample or use the sample PreloadedMapData.xml file.
 
-    ``` syntax
+    ```
     <?xml version="1.0" encoding="utf-8" ?>
     <ImageCustomizations xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate"  
                          Name="PreloadedMapData"  

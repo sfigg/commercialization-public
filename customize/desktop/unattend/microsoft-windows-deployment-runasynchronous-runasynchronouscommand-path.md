@@ -64,7 +64,7 @@ The following XML output shows how to set asynchronous commands.
 
 The first command runs an application on the local hard drive. The command includes the environment variable %ProgramFiles%. The second command runs a command from the network.
 
-``` syntax
+```
 <RunAsynchronous>
    <RunAsynchronousCommand wcm:action="add">
       <Description>AsynchCommand1</Description>

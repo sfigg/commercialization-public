@@ -20,7 +20,7 @@ Safely restarts a system protected by UWF, even if the overlay is full.
 ## Syntax
 
 
-``` syntax
+```
 UInt32 RestartSystem();
 ```
 

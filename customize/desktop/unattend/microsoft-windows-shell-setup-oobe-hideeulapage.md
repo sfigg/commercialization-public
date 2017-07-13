@@ -74,7 +74,7 @@ For a list of the Windows editions and architectures that this component support
 
 The following XML output shows how to hide the EULA page during Windows Welcome.
 
-``` syntax
+```
 <OOBE>
    <HideEULAPage>true</HideEULAPage>
 </OOBE>

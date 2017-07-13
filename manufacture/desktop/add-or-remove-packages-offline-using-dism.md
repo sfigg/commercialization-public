@@ -24,7 +24,7 @@ You must install the latest version of the Windows Assessment and Deployment Kit
 
 1.  At an elevated command prompt, locate the Windows ADK servicing folder, and type the following command to retrieve the name or index number for the image that you want to modify.
 
-    ``` syntax
+    ```
     Dism /Get-ImageInfo /ImageFile:C:\test\images\install.wim
     ```
 
@@ -32,19 +32,19 @@ You must install the latest version of the Windows Assessment and Deployment Kit
 
 2.  Type the following command to mount the offline Windows image.
 
-    ``` syntax
+    ```
     Dism /Mount-Image /ImageFile:C:\test\images\install.wim /Name:"Windows 7 HomeBasic" /MountDir:C:\test\offline
     ```
 
 3.  At a command prompt, type the following command to add a specific package to the image. You can add multiple packages on one command line. They will be installed in the order listed in the command line.
 
-    ``` syntax
+    ```
     Dism /Image:C:\test\offline /Add-Package /PackagePath:C:\packages\package1.cab /PackagePath:C:\packages\package2.cab
     ```
 
 4.  At a command prompt, type the following command to commit the changes and unmount the image.
 
-    ``` syntax
+    ```
     Dism /Unmount-Image /MountDir:C:\test\offline /Commit
     ```
 
@@ -52,7 +52,7 @@ You must install the latest version of the Windows Assessment and Deployment Kit
 
 1.  At an elevated command prompt, locate the Windows ADK servicing folder, and type the following command to retrieve the name or index number for the image that you want to modify.
 
-    ``` syntax
+    ```
     Dism /Get-ImageInfo /ImageFile:C:\test\images\install.wim
     ```
 
@@ -60,13 +60,13 @@ You must install the latest version of the Windows Assessment and Deployment Kit
 
 2.  Type the following command to mount the offline Windows image.
 
-    ``` syntax
+    ```
     Dism /Mount-Image /ImageFile:C:\test\images\install.wim /Name:"Windows 7 HomeBasic" /MountDir:C:\test\offline
     ```
 
 3.  Optional: Type the following command to list the packages in the image.
 
-    ``` syntax
+    ```
     Dism /Image:C:\test\offline /Get-Packages
     ```
 
@@ -76,7 +76,7 @@ You must install the latest version of the Windows Assessment and Deployment Kit
 
 5.  At a command prompt, specify the package identity to remove it from the image. You can remove multiple packages on one command line.
 
-    ``` syntax
+    ```
     DISM /Image:C:\test\offline /Remove-Package /PackageName:Microsoft.Windows.Calc.Demo~6595b6144ccf1df~x86~en~1.0.0.0 /PackageName:Microsoft-Windows-MediaPlayer-Package~31bf3856ad364e35~x86~~6.1.6801.0
     ```
 
@@ -84,7 +84,7 @@ You must install the latest version of the Windows Assessment and Deployment Kit
 
 6.  At a command prompt, type the following command to commit the changes and unmount the image.
 
-    ``` syntax
+    ```
     Dism /Unmount-Image /MountDir:C:\test\offline /Commit
     ```
 
@@ -103,13 +103,13 @@ You must install the latest version of the Windows Assessment and Deployment Kit
 
 5.  At an elevated command prompt, locate the Windows ADK servicing folder, and then type the following command to retrieve the name or index number for the image that you want to mount.
 
-    ``` syntax
+    ```
     Dism /Get-ImageInfo /ImageFile:C:\test\images\install.wim
     ```
 
 6.  Type the following command to mount the offline Windows image.
 
-    ``` syntax
+    ```
     Dism /Mount-Image /ImageFile:C:\test\images\install.wim /name:"Windows 7 HomeBasic" /MountDir:C:\test\offline
     ```
 
@@ -117,13 +117,13 @@ You must install the latest version of the Windows Assessment and Deployment Kit
 
 7.  At a command prompt, type the following command to apply the unattended answer file to the image.
 
-    ``` syntax
+    ```
     DISM /Image:C:\test\offline /Apply-Unattend:C:\test\answerfiles\myunattend.xml
     ```
 
 8.  At a command prompt, type the following command to commit the changes and unmount the image.
 
-    ``` syntax
+    ```
     Dism /Unmount-Image /MountDir:C:\test\offline /Commit
     ```
 

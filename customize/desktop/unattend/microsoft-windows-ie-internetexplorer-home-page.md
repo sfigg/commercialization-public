@@ -59,7 +59,7 @@ For a list of the supported Windows editions and architectures that this compone
 
 The following XML output specifies the fully qualified URL.
 
-``` syntax
+```
 <Home_Page>http://www.fabrikam.com</Home_Page>
 ```
 

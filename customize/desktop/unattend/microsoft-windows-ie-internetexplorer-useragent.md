@@ -59,7 +59,7 @@ For the list of the supported Windows editions and architectures that this compo
 
 The following XML output specifies the text string appended to the user agent string.
 
-``` syntax
+```
 <UserAgent>UATEST</UserAgent>
 ```
 

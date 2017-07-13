@@ -59,7 +59,7 @@ For a list of the supported Windows editions and architectures that this compone
 
 The following XML output specifies device driver search paths.
 
-``` syntax
+```
 <DriverPaths>
 <!-- First PathAndCredentials list item -->
    <PathAndCredentials wcm:action="add" wcm:keyValue="1">

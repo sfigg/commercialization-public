@@ -67,7 +67,7 @@ For the list of the supported Windows editions and architectures that this compo
 
 The following XML shows how to set OEM information.
 
-``` syntax
+```
 <OEMInformation>
    <HelpCustomized>false</HelpCustomized>
    <Manufacturer>OEM name</Manufacturer>

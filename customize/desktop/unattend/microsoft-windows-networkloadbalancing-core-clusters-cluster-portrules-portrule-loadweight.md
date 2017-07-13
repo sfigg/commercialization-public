@@ -62,7 +62,7 @@ For list of the supported Windows editions and architectures that this component
 
 The following example specifies that the load weight for the cluster is 100.
 
-``` syntax
+```
 <LoadWeight>100</LoadWeight>
 ```
 

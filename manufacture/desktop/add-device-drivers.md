@@ -29,14 +29,14 @@ To make the changes to a Windows image, you'll mount the image contents into a t
 1.  Click **Start**, and type **deployment**. Right-click **Deployment and Imaging Tools Environment** and then select **Run as administrator**.
 
 2.  Make a backup of the image file:
-``` syntax
+```
 copy "C:\Images\Win10_x64\sources\install.wim" C:\Images\install-backup.wim
 ```
 
 **Step 2: Mount the Windows image file**
 
 Create a temporary folder to mount the files, and mount the image into it: 
-``` syntax
+```
 md C:\mount\windows
 Dism /Mount-Image /ImageFile:"C:\Images\install.wim" /Index:1 /MountDir:"C:\mount\windows" /Optimize
 ```
@@ -53,7 +53,7 @@ This step can take several minutes.
 	
 -   If you've mounted an image to the folder before, try cleaning up the resources associated with the mounted image:
 
-	``` syntax
+	```
 	Dism /Cleanup-Mountpoints
 	```
 
@@ -66,7 +66,7 @@ These are just examples - you don't have to add all of these.
 
 1.  Add a single driver that includes an .inf file:
 
-    ``` syntax
+    ```
     Dism /Add-Driver /Image:"C:\mount\windows" /Driver:"C:\Drivers\PnP.Media.V1\media1.inf"
     ```
 
@@ -74,7 +74,7 @@ These are just examples - you don't have to add all of these.
 
     **Troubleshooting**: For many DISM commands, you can detailed information about the error by adding the /LogPath option. For example:
 
-    ``` syntax
+    ```
     Dism /Add-Driver /Image:"C:\mount\windows" /Driver:"C:\Drivers\PnP.Media.V1\media1.inf" /LogPath=C:\mount\dism.log
     ```
 
@@ -82,13 +82,13 @@ These are just examples - you don't have to add all of these.
 
     **Warning**: While /Recurse can be handy, it's easy to bloat your image with it. Some driver packages include multiple .inf driver packages, which often share payload files from the same folder. During installation, each .inf driver package is expanded into a separate folder, each with a copy of the payload files. We've seen cases where a popular driver in a 900MB folder added 10GB to images when added with the /Recurse option.
 
-    ``` syntax
+    ```
     Dism /Add-Driver /Image:"C:\mount\windows" /Driver:c:\drivers /Recurse 
     ```
     
 3.  Verify that the drivers are part of the image:
 
-    ``` syntax
+    ```
     Dism /Get-Drivers /Image:"C:\mount\windows"
     ```
 
@@ -102,7 +102,7 @@ These are just examples - you don't have to add all of these.
 1.  Close all applications that might access files from the image.
 
 2.  Commit the changes and unmount the Windows image:
-    ``` syntax
+    ```
     Dism /Unmount-Image /MountDir:"C:\mount\windows" /Commit
     ```
 
@@ -124,13 +124,13 @@ Use the steps from [Lab 2: Deploy Windows using a script](deploy-windows-with-a-
 
 3.  Verify that the drivers appear correctly:
 
-    ``` syntax
+    ```
     Dism /Get-Drivers /Online
     ```
 
     Review the resulting list of drivers. For example:
 
-    ``` syntax
+    ```
     Deployment Image Servicing and Management tool
     Version: 10.0.15063.0
 

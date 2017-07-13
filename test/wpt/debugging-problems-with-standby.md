@@ -43,7 +43,7 @@ This guide will show you how to perform the following tasks:
 
 -   **Deepest runtime idle platform state (DRIPS)**: The system is said to be in **DRIPS** when the system is consuming the lowest amount of power possible, limited by the system’s power floor. When the screen is turned off, the Modern Standby session starts and the system goes through multiple phases to move into a low-power state. When the system is in the lowest-power state, the system is in **DRIPS**. The system is not in **DRIPS** when it is performing tasks like receiving emails, updating live tiles with fresh content, receiving VoIP calls, or any other background task that requires system resources. The more time the system spends in **DRIPS** before the screen is turned back on, the longer the battery life.
 
-    ``` syntax
+    ```
     Total standby session time = DRIPS time + non-DRIPS time
     ```
 
@@ -58,7 +58,7 @@ The **Windows Performance Toolkit** consists of two independent tools: **Windows
 
 To obtain a **SleepStudy** report, type the following command into an Administrator Command Prompt:
 
-``` syntax
+```
 powercfg.exe /SleepStudy
 ```
 

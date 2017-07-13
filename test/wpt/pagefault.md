@@ -19,7 +19,7 @@ ms.technology: windows-oem
 
 This action produces a text file that summarizes metrics related to page faults.
 
-``` syntax
+```
 -a pagefault [-detail -range T1 T2]
 ```
 

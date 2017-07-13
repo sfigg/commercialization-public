@@ -74,7 +74,7 @@ For the list of the Windows editions and architectures that this component suppo
 
 The following XML output shows how to set the `ImageInstall` setting to install both an operating system image and a data image.
 
-``` syntax
+```
 <ImageInstall>
     <OSImage>
         <InstallFrom>

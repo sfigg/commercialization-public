@@ -64,13 +64,13 @@ For a list of the Windows editions and architectures that this component support
 
 The following XML output shows how to specify the IP address of the proxy server on the network for all users on the computer.
 
-``` syntax
+```
 <HKLMProxyServer>207.46.197.32</HKLMProxyServer>
 ```
 
 The following XML output shows how to specify the hostname of the proxy server on the network for all users on the computer.
 
-``` syntax
+```
 <HKLMProxyServer>proxyserver.fabrikam.com</HKLMProxyServer>
 ```
 

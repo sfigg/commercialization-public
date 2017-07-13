@@ -19,7 +19,7 @@ Closes a handle to the driver previously opened by [WlanMTEOpenHandle](wlanmteop
 ## <span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>Syntax
 
 
-``` syntax
+```
 DWORD WlanMTECloseHandle(
     __in    HANDLE  hAdapter
 );

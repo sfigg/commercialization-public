@@ -19,7 +19,7 @@ ms.technology: windows-oem
 
 This action produces a text file that summarizes metrics for Plug and Play events.
 
-``` syntax
+```
 -a pnp [-range T1 T2]
 ```
 

@@ -60,7 +60,7 @@ For a list of the supported Windows editions and architectures that this compone
 
 The following XML output for the `DiskConfiguration` setting shows two partition modifications for a BIOS-based system. The System partition is labeled, formatted for NTFS, and marked as active. The Windows partition is labeled, formatted for NTFS, and extended to fill the remainder of the disk.
 
-``` syntax
+```
 <DiskConfiguration>
 
   <Disk wcm:action="add">

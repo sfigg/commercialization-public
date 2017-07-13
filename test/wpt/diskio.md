@@ -19,7 +19,7 @@ ms.technology: windows-oem
 
 This action produces a text report that summarizes the metrics for disk I/O.
 
-``` syntax
+```
 -a diskio [-util <n>] [-summary] [-counts] [-detail] [-overlap] [-range T1 T2]
 ```
 

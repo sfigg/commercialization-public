@@ -67,7 +67,7 @@ For a list of the Windows editions and architectures that this component support
 
 The following example shows how to set the user locale to Japanese (Japan).
 
-``` syntax
+```
 <InputLocale>0411:00000411</InputLocale> 
 <SystemLocale>ja-JP</SystemLocale> 
 <UILanguage>ja-JP</UILanguage> 

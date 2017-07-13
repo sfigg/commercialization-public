@@ -19,7 +19,7 @@ ms.technology: windows-oem
 
 This action produces a text report that summarizes the focus changes in the Z-ordering of windows.
 
-``` syntax
+```
 -a focuschange [-range T1 T2]
 ```
 

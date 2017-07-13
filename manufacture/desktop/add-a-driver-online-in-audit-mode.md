@@ -46,7 +46,7 @@ The [auditSystem](auditsystem.md) configuration pass processes unattended Setup 
 
 8.  Save the answer file and close Windows SIM. The answer file must resemble this example:
 
-    ``` syntax
+    ```
     <?xml version="1.0" encoding="utf-8" ?> 
     <unattend xmlns="urn:schemas-microsoft-com:unattend">
        <settings pass="auditSystem">
@@ -68,7 +68,7 @@ The [auditSystem](auditsystem.md) configuration pass processes unattended Setup 
 
 9.  Boot in Windows Preinstallation Environment (Windows PE), run Windows Setup, and specify the name of the answer file. For example:
 
-    ``` syntax
+    ```
     Setup /unattend:C:\unattend.xml
     ```
 
@@ -78,7 +78,7 @@ The [auditSystem](auditsystem.md) configuration pass processes unattended Setup 
 
 10. Run the **Sysprep** command with the **/audit** option to configure the computer to start in audit mode the next time that it boots. For example:
 
-    ``` syntax
+    ```
     Sysprep /audit /reboot
     ```
 

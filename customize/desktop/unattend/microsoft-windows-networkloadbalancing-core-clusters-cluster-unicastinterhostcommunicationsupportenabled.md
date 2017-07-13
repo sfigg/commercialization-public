@@ -66,7 +66,7 @@ For the list of the supported Windows editions and architectures that this compo
 
 The following XML output specifies that Unicast interhost communication support is not enabled for the cluster.
 
-``` syntax
+```
 <UnicastInterHostCommunicationSupportEnabled>false</UnicastInterHostCommunicationSupportEnabled>
 ```
 

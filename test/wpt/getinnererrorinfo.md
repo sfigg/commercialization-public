@@ -22,7 +22,7 @@ Returns additional information about the error.
 ## Syntax
 
 
-``` syntax
+```
 HRESULT GetInnerErrorInfo
   ([out, retval] IUnknown** ppVal)
 ;

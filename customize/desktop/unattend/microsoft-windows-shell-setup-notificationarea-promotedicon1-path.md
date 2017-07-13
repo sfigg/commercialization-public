@@ -69,7 +69,7 @@ For a list of the Windows editions and architectures that this component support
 
 The following XML output shows how to promote a new system notification icon to be visible in place of the **Action Center** icon.
 
-``` syntax
+```
 <NotificationArea>
   <PromotedIcon1>
     <Path>%PROGRAMFILES%\Fabrikam\Application1.exe</Path>

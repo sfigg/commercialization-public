@@ -68,7 +68,7 @@ For a list of the supported Windows editions and architectures that this compone
 
 The following XML output shows how to specify the name of the port rule used by the cluster as "Portrule1".
 
-``` syntax
+```
 <Portrule wcm:keyValue="Portrule1">
    <VirtualIpAddress>255.255.255.255</VirtualIpAddress>
    <Protocol>TCP</Protocol>

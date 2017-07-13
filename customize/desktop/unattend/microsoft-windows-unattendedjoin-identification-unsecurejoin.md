@@ -71,7 +71,7 @@ For the list of the supported Windows editions and architectures that this compo
 
 The following XML output shows the computer added to the domain without the requirement of a unique password.
 
-``` syntax
+```
 <UnsecureJoin>true</UnsecureJoin>
 ```
 

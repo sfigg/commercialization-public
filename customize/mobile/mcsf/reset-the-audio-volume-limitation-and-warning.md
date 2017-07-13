@@ -24,7 +24,7 @@ To reset the audio volume limit and show the volume level warning every time the
 <a href="" id="instructions-"></a>**Instructions:**  
 1.  Create the MCSF policy setting that corresponds to the following registry key:
 
-    ``` syntax
+    ```
     $(HKLM.MICROSOFT)\ZMediaQ\VolumeLimit\VolumeThresholdPlayTimeLimit
     Type:  REG_DWORD
     Value:  000117D8
@@ -37,7 +37,7 @@ To reset the audio volume limit and show the volume level warning every time the
 
     For more information about MCSF, see [Managed Centralized Settings Framework (MCSF)](managed-centralized-settings-framework-mcsf.md). The following code example shows an MCSF policy setting for the **VolumeThresholdPlayTimeLimit** registry value.
 
-    ``` syntax
+    ```
              <SettingsGroup Path="VolumeLimit">
                 <Setting Name="VolumeThresholdPlayTimeLimit" Description="Resets the audio volume limit and shows the volume level warning
                               every time the volume exceeds the VolumeLimit threshold for at least 20 cumulative hours.">
@@ -48,7 +48,7 @@ To reset the audio volume limit and show the volume level warning every time the
 
 2.  Add the policy setting in the previous step to a .pkg.xml file. The following code example shows the MCSF policy setting within the .pkg.xml file.
 
-    ``` syntax
+    ```
     <?xml version="1.0" encoding="utf-8"?>
     <Package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
       Owner=""
@@ -75,7 +75,7 @@ To reset the audio volume limit and show the volume level warning every time the
 
     For example, the following code snippet shows a sample OEM feature manifest (FM) file that may contain the .spkg that includes the customization:
 
-    ``` syntax
+    ```
     <?xml version="1.0" encoding="utf-8"?>  
     <FeatureManifest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate">  
     <!--  Sample FM File -->
@@ -97,7 +97,7 @@ To reset the audio volume limit and show the volume level warning every time the
 
     For example, the OEMInput.xml entry for the example VOLUME\_THRESHOLD\_PLAY\_TIME\_LIMIT feature may look like the following:
 
-    ``` syntax
+    ```
       <Features>
         <OEM>
           <Feature>VOLUME_THRESHOLD_PLAY_TIME_LIMIT</Feature>

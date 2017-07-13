@@ -36,7 +36,7 @@ Starting with Windows 10, Version 1703, you can create multiple partitions on US
 
 3.  Use Diskpart to reformat the drive and create two new partitions for WinPE and for your images:
 
-    ``` syntax
+    ```
     List disk
     select disk X    (where X is your USB drive)
     clean
@@ -52,14 +52,14 @@ Starting with Windows 10, Version 1703, you can create multiple partitions on US
 
 4.  Copy the WinPE files to the WinPE partition:
 
-    ``` syntax
+    ```
     copype amd64 C:\WinPE_amd64
     xcopy C:\WinPE_amd64\media P:\ /s
     ```
 
 5.  Copy the Windows image file to the Images partition:
 
-    ``` syntax
+    ```
     xcopy C:\Images\install.wim I:\install.wim
     ```
 
@@ -81,7 +81,7 @@ If you are using Windows 10, Version 1607 or earlier and your PC only has one US
 
 3.  Connect a network drive using a drive letter, for example, N.
 
-    ``` syntax
+    ```
     net use N: \\server\share
     ```
 
@@ -106,7 +106,7 @@ If you are using Windows 10, Version 1607 or earlier and your PC only has one US
 
 3.  Split the Windows image into files smaller than 4GB each:
 
-    ``` syntax
+    ```
     Dism /Split-Image /ImageFile:C:\install.wim /SWMFile:C:\images\install.swm /FileSize:4000
     ```
 

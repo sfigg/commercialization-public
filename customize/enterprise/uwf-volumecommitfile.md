@@ -20,7 +20,7 @@ Commits changes from the overlay to the physical volume for a specified file on 
 ## Syntax
 
 
-``` syntax
+```
 UInt32 CommitFile(
     [in] string FileName
 );

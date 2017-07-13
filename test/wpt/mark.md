@@ -19,7 +19,7 @@ ms.technology: windows-oem
 
 Displays mark and mark-flush options.
 
-``` syntax
+```
 xperf -m | -mf <mark text>
 ```
 

@@ -77,7 +77,7 @@ There may be instances when Windows Setup encounters more than one error and ru
     -or-
 
 -   Add **ErrorHandler.cmd** to a temporary file location (for example, C:\\Temp\\ErrorHandler.cmd), and then run Windows Setup using the **/m** option.
-    ``` syntax
+    ```
     Setup /m:C:\Temp
     ```
 

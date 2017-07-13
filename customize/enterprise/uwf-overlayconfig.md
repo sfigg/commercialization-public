@@ -20,7 +20,7 @@ Displays and configures global settings for the Unified Write Filter (UWF) overl
 ## Syntax
 
 
-``` syntax
+```
 class UWF_OverlayConfig{
     [key, Read] boolean CurrentSession;
     [read] UInt32 Type;
@@ -122,7 +122,7 @@ The following example demonstrates how to change the maximum size or the storage
 
 The PowerShelll script creates two functions to modify the overlay configuration. It then demonstrates how to use the functions. The first function, **Set-OverlaySize**, sets the maximum size of the overlay. The second function, **Set-OverlayType**, sets the type of the overlay to RAM-based or disk-based.
 
-``` syntax
+```
 $COMPUTER = "localhost"
 $NAMESPACE = "root\standardcimv2\embedded"
 

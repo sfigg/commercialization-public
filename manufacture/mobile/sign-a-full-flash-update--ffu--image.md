@@ -37,7 +37,7 @@ Before images can be shipped on a retail device, they must be signed by Microsof
 
 2.  Add the directory for the sign.cmd script that is located in %WPDKCONTENTROOT%\\tools\\bin\\i386 to your path using the path command.
 
-    ``` syntax
+    ```
     C:\> PATH = %PATH%;%WPDKCONTENTROOT%\Tools\bin\I386
     ```
 
@@ -45,7 +45,7 @@ Before images can be shipped on a retail device, they must be signed by Microsof
 
 4.  Confirm that you have the latest version of the kit that includes updated versions of imagesigner.exe and imagecommon.dll by typing the following command. Confirm that the truncate option is displayed.
 
-    ``` syntax
+    ```
     C:\> ImageSigner /?
     Usage:
             imagsigner sign <FFU> <catalog file>
@@ -57,13 +57,13 @@ Before images can be shipped on a retail device, they must be signed by Microsof
 
 5.  Extract the first one MB of the FFU image which contains the FFU catalog and associated metadata using the truncate option.
 
-    ``` syntax
+    ```
     C:\> ImageSigner TRUNCATE OEM.ffu OEM.trunc
     ```
 
 6.  Extract the catalog from the truncated FFU image in Step 5.
 
-    ``` syntax
+    ```
     C:\> ImageSigner GETCATALOG OEM.trunc OEM.cat
     Platform ID: <OEMID>.QC8960.P728
     Successfully extracted catalog.
@@ -86,13 +86,13 @@ Before images can be shipped on a retail device, they must be signed by Microsof
 
 10. Sign the FFU with the retail Microsoft signed catalog file using ImageSigner.
 
-    ``` syntax
+    ```
     C:\> ImageSigner SIGN OEM.ffu OEM.cat
     ```
 
 11. Flash the retail signed retail image on to a device and verify that it behaves as expected.
 
-    ``` syntax
+    ```
     C:\> FFUTool -flash OEM.ffu
     ```
 
@@ -112,7 +112,7 @@ If your development environment includes work outside of Windows ICD, you can ma
 
 2.  Add the directory for the sign.cmd script that is located in %WPDKCONTENTROOT%\\tools\\bin\\i386 to your path using the path command.
 
-    ``` syntax
+    ```
     C:\> PATH = %PATH%;%WPDKCONTENTROOT%\Tools\bin\I386
     ```
 
@@ -120,20 +120,20 @@ If your development environment includes work outside of Windows ICD, you can ma
 
 4.  Extract the catalog of the unsigned FFU file.
 
-    ``` syntax
+    ```
     C:\> ImageSigner GETCATALOG TestSigned.FFU TestSigned.Cat
     ```
 
 5.  Sign the catalog using the /pk option.
 
-    ``` syntax
+    ```
     C:\> Set SIGN_OEM=1
     C:\> Sign.cmd /pk TestSigned.cat
     ```
 
 6.  Sign the FFU with the signed catalog file using ImageSigner.
 
-    ``` syntax
+    ```
     C:\> ImageSigner SIGN TestSigned.FFU TestSigned.Cat
     ```
 
@@ -153,7 +153,7 @@ Sign the catalog file using an appropriate certificate by performing the followi
 
 2.  Test sign a catalog file named `TestRetailSigned.cat` using a certificate named `TestCertName.pfx` by typing the following command.
 
-    ``` syntax
+    ```
     C:\> SignTool sign /f TestCertName.pfx  TestRetailSigned.cat
     ```
 
@@ -164,14 +164,14 @@ Sign the catalog file using an appropriate certificate by performing the followi
 
 3.  Create a signed .ffu file from the unsigned .ffu file and the matching signed .cat file using ImageSigner.exe tool.
 
-    ``` syntax
+    ```
     C:\> ImageSigner SIGN TestRetailSigned.FFU TestRetailSigned.Cat
     ```
 
 ## ImageSigner syntax reference
 
 
-``` syntax
+```
 ImageSigner {SIGN|GETCATALOG|TRUNCATE} FFUFile CatalogFile|TruncatedFFU
 ```
 

@@ -20,7 +20,7 @@ Deletes the specified registry key or registry value and commits the deletion.
 ## Syntax
 
 
-``` syntax
+```
 UInt32 CommitRegistryDeletion(
     string Registrykey,
     string ValueName

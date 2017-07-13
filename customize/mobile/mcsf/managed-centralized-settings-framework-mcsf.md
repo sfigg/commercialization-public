@@ -44,7 +44,7 @@ These XML files are provided only for your convenience so that you can review th
 
 Declared settings are added in the components’ existing .pkg.xml file as children of any **Component** element. For example, the following XML exposes a simple **DWORD** in the registry as a setting in a package file:
 
-``` syntax
+```
 <SettingsGroup Path="OSArea/Feature">
    <Setting Name="Setting" Description="This is a DWORD registry value.">
      <RegistrySource Type="REG_DWORD" Path="HKEY_LOCAL_MACHINE\Software\Sample\RegKey" />
@@ -119,7 +119,7 @@ A setting can point to a particular location in the registry or to a configurati
 
     The **RegistrySource** must contain a **Path** attribute that specifies the full path to the desired value in the registry. You must also specify the **Type** attribute, such as REG\_DWORD, REG\_SZ. and so on, to indicate the type of registry value. Optionally, you can specify a default value for your registry setting by including a **Default** value. The following example shows what a registry-sourced setting looks like:
 
-    ``` syntax
+    ```
     <Setting Name="MyString">
        <!-- Use '@' to specify the default registry value. The Path must resolve to a value, rather than a key.
             Note that this registry location will have a default value of 3. -->
@@ -131,7 +131,7 @@ A setting can point to a particular location in the registry or to a configurati
 
     The **CSPSource** must contain a **Path** attribute that specifies the full URI path to the desired configuration service provider node. You must also specify the **Type** attribute, which may contain one of the ConfigManager2 data types such as CFG\_DATATYPE\_INTEGER, CFG\_DATATYPE\_STRING, and so on. The following example shows what a configuration service provider-sourced setting looks like:
 
-    ``` syntax
+    ```
     <Setting Name="MyPhoneVersion">
        <CspSource Type="CFG_DATATYPE_STRING" Path="./devdetail/swv" />
     </Setting>
@@ -143,7 +143,7 @@ You can control access to each setting by including an optional **AccessType** e
 
 The following example shows how to specify the type of access for a setting:
 
-``` syntax
+```
 <Setting Name="NoDeleteSetting">
    <RegistrySource Type="REG_DWORD" Path="HKEY_LOCAL_MACHINE\Software\Sample\NoDelete" Default="3" />
  
@@ -163,7 +163,7 @@ MCSF allows you to specify simple rules to control which values are allowed for 
 
 -   For numeric values, you can specify a minimum and/or a maximum value. You can do this by setting the **Min** and **Max** attributes in the **Validate** element.
 
-    ``` syntax
+    ```
     <Setting Name="MyNumericSetting">
        <RegistrySource Type="REG_DWORD" Path="HKEY_LOCAL_MACHINE\Software\Sample\Number" Default="3" />
 
@@ -174,7 +174,7 @@ MCSF allows you to specify simple rules to control which values are allowed for 
 
 -   For string values, you can specify a minimum and/or a maximum string length. You can do this by setting the **MinLength** and **MaxLength** attributes in the **Validate** element.
 
-    ``` syntax
+    ```
     <Setting Name="MyString">
        <RegistrySource Type="REG_SZ" Path="HKEY_LOCAL_MACHINE\Software\Sample\PutStringHere" Default="" />
      
@@ -185,7 +185,7 @@ MCSF allows you to specify simple rules to control which values are allowed for 
 
 -   You can also specify an explicit list of allowed values for your setting. You can do this by adding the **Option** element to the **Validate** element for each allowed value. Option elements have a **Value** attribute and an optional **FriendlyName** attribute. You can use the friendly name to show identifiable string names in your customization tools for simple enum values. The following example shows several options with friendly names:
 
-    ``` syntax
+    ```
     <Setting Name="MyEnum">
        <RegistrySource Type="REG_DWORD" Path="HKEY_LOCAL_MACHINE\Software\Sample\PutOneOfListHere" Default="1" />
      
@@ -215,7 +215,7 @@ When creating your own policy settings and you're adding an **Asset** to a **Set
 
 The following example shows how an **Asset** as the first attribute declared within the **SettingsGroup** and a **Setting** that references the **Asset** that was declared:
 
-``` syntax
+```
 <SettingsGroup Path="LockScreen">
    <Asset Name="Wallpapers" Type=".jpg;.jpeg;.png" Path="\Programs\CommonFiles\Wallpapers" Description="Use to add lock screen backgrounds to the phone." >
        <MultiStringList Key="HKEY_LOCAL_MACHINE\Software\Microsoft\Shell\OEM\Wallpaper" Value="WallpaperSet" />
@@ -234,7 +234,7 @@ Macros in **SettingsGroup** paths do not work with Assets. To use a macro in an 
 
  
 
-``` syntax
+```
 <SettingsGroup Path="Contoso/MyConfig">
     <Asset Name="MyVariant/$(VarType)"
         Type=".txt"
@@ -249,7 +249,7 @@ Optionally, the image customization process can build a list of supplemental ass
 
     The following example shows this model:
 
-    ``` syntax
+    ```
     <Asset Name="Ringtones" Type=".wma" Path="\Programs\CommonFiles\Sounds">
        <ValueList
           OEMKey="HKEY_LOCAL_MACHINE\Software\Microsoft\Shell\OEM\Sounds\Ringtones"
@@ -266,7 +266,7 @@ Optionally, the image customization process can build a list of supplemental ass
 
     The following example shows this model:
 
-    ``` syntax
+    ```
     <Asset Name="Wallpapers" Type=".jpg;.jpeg;.png" Path="\Programs\CommonFiles\Wallpapers">
        <MultiStringList
           Key="HKEY_LOCAL_MACHINE\Software\Microsoft\Shell\OEM\Wallpaper"
@@ -280,7 +280,7 @@ Multi-settings are settings or groups of settings that are SIM-based or account-
 
 To declare a multi-setting variable, you can use the **$(VariableName)** packaging XML macro format. The following examples show how to do this:
 
-``` syntax
+```
 <!-- Specifies a pair of Settings that we may have many sets of, one per "account" -->
 <SettingsGroup Path="TestSettings/MyAccounts/$(AccountID)">
  
@@ -300,7 +300,7 @@ To declare a multi-setting variable, you can use the **$(VariableName)** packagi
 
 In the above example, the variable name is **AccountID**. You must specify that segment of the setting’s URI to provision this setting. In this example, when MCSF sets the underlying value, it fetches the string value of the **AccountID** segment and injects it into the registry paths for Username and Password. For example, provisioning the following XML sets `HKEY_LOCAL_MACHINE\Software\Sample\{71986}\Username` to “RobinNail” and `HKEY_LOCAL_MACHINE\Software\Sample\{71986}\Password` to “1234Password”.
 
-``` syntax
+```
 <wap-provisioningdoc>
    <characteristic type="MCSF">
       <!-- This sets the username and password for account {71986}. -->
@@ -314,7 +314,7 @@ In the above example, the variable name is **AccountID**. You must specify that 
 
 For SIM-based settings, you can use the special variable **$(\_\_IMSI)** that’s built-in to MCSF. When these types of settings are being provisioned, the **$(\_\_IMSI)** segment is replaced with the IMSI string for the current SIM card. The following example shows how to do this:
 
-``` syntax
+```
 <!-- Specifies some SIM-specific settings... -->
 <SettingsGroup Path="TestSettings/SimSpecific/$(__IMSI)">
   <Setting Name="SimSpecificValue">

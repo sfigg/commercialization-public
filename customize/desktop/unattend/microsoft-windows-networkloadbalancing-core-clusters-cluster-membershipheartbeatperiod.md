@@ -62,7 +62,7 @@ For the list of a supported Windows editions and architectures that this compone
 
 The following XML output shows how to set the period between sending Network Load Balancing cluster heartbeat messages to two seconds.
 
-``` syntax
+```
 <MembershipHeartbeatPeriod>2000</MembershipHeartbeatPeriod>
 ```
 

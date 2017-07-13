@@ -22,7 +22,7 @@ Updates shutdown recording.
 ## Syntax
 
 
-``` syntax
+```
 HRESULT MergeShutdownRecording
   ([in] BSTR bstrFileName,
   [in] IProfileCollection* pProfileCollection,

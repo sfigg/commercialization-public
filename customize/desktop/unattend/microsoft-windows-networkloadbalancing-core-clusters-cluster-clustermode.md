@@ -72,7 +72,7 @@ For the list of the supported Windows editions and architectures that this compo
 
 The following XML output specifies that the host joins the Network Load Balancing cluster upon startup.
 
-``` syntax
+```
 <ClusterMode>Multicast</ClusterMode>
 ```
 

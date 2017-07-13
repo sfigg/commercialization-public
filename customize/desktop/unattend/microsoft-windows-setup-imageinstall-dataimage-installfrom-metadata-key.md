@@ -73,7 +73,7 @@ For a list of the Windows editions and architectures that this component support
 
 The following XML output shows how to configure the `MetaData` setting to install a specific data image by using the image index value.
 
-``` syntax
+```
             <MetaData wcm:action="add">
                 <Key>/IMAGE/INDEX</Key>
                 <Value>1</Value>
@@ -82,7 +82,7 @@ The following XML output shows how to configure the `MetaData` setting to instal
 
 The following XML output shows how to configure the `MetaData` setting to install a specific data image using the image name.
 
-``` syntax
+```
             <MetaData wcm:action="add">
                 <Key>/IMAGE/NAME</Key>
                 <Value>FNB2Drivers</Value>
@@ -92,7 +92,7 @@ The following XML output shows how to configure the `MetaData` setting to instal
 
 The following XML output shows how to configure the `MetaData` setting to install a specific data image by using the image description.
 
-``` syntax
+```
             <MetaData wcm:action="add">
                 <Key>/IMAGE/DESCRIPTION</Key>
                 <Value>FabriKam Model FNB3 Drivers</Value>

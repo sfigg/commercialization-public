@@ -61,7 +61,7 @@ For a list of the supported Windows editions and architectures that this compone
 
 The following XML output enables RAS and sets the Router type to enable Local Area Network (LAN) access.
 
-``` syntax
+```
 <ConfigurationFlags>true</ConfigurationFlags>
 <RouterType>2</RouterType>
 ```

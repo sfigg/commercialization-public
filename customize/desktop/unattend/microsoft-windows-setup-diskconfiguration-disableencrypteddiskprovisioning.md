@@ -68,7 +68,7 @@ For the list of the Windows editions and architectures that this component suppo
 
 The following XML output for the `DisableEncryptedDiskProvisioning` setting shows how to specify that Windows does not activate encryption on blank drives, even if those drives are capable of hardware-based encryption.
 
-``` syntax
+```
 <DisableEncryptedDiskProvisioning>true</DisableEncryptedDiskProvisioning>
 ```
 

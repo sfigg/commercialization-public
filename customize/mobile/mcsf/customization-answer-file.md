@@ -66,7 +66,7 @@ The following sample customization answer file shows how to:
 
 -   Define settings for a **Variant**, which are applied if the associated target's conditions are met.
 
-``` syntax
+```
 <?xml version="1.0" encoding="utf-8" ?>  
 <!--  Copyright (c) Microsoft Corporation.  All rights reserved.  -->  
 
@@ -196,7 +196,7 @@ The following sample customization answer file snippet shows how to:
 
 -   Specify the customizations for a specific mobile operator in a **Variant** section.
 
-``` syntax
+```
 <!-- Variant Section -->
 
   <!-- Example of a static variant. There are no TargetRefs. -->
@@ -415,7 +415,7 @@ When creating a customization answer file, OEMs can define **Targets** to descri
 
 In the previous XML sample, a SIM target is defined through MNC/MCC pairs. The following example shows how the SIM targets may be defined:
 
-``` syntax
+```
 <Targets>
     <Target Id="SIM_TinyMO">
         <TargetState>
@@ -445,7 +445,7 @@ When importing customization answer files, if there are any settings that are de
 
 To add the priority order for the imported answer file, set the **Priority** attribute within the **ImageCustomizations** block of the customization answer file to be imported. The following example shows how to do this:
 
-``` syntax
+```
 <ImageCustomizations xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate"
                   Name="Settings Input"
                   Description="Settings for image build"
@@ -463,7 +463,7 @@ When setting **Priority**, 1 is the highest, and zero (0) and negative numbers a
 
 The following code example shows how you can specify other customization answer files to be imported. The **Imports** element must be specified in the root customization answer file.
 
-``` syntax
+```
   <Imports>
     <Import Source="C:\Customization\SampleOperators.xml" />
     <Import Source="C:\Customization\SampleBrandCommon.xml" />
@@ -475,7 +475,7 @@ The following code example shows how you can specify other customization answer 
 
 OEMs can preload apps using the following customization answer file code snippet:
 
-``` syntax
+```
     <Applications>
       <Application Source="C:\Customization\TestData\apps\OEMMOApp.xap"
                    License="C:\Customization\TestData\apps\OEMMOApp_License.xml"

@@ -28,13 +28,13 @@ This sample user-mode application displays the touch coordinates received by the
 
 The sample app uses the **CreateFile** function to open an exclusive handle to the device to receive raw touch samples. The device name "TouchRaw0" is exposed by tchhid.sys, the HID touch class driver provided by Microsoft and included in Microsoft.Input.TchHID.spkg.
 
-``` syntax
+```
 #define TOUCH_RAW_SAMPLES_DEVICE_NAME L"\\\\.\\TouchRaw0"
 ```
 
 After the handle is successfully opened, the application loops until a touch contact point is received near the top-left corner of the screen. The application reads and displays the coordinates and the associated touch contact ID.
 
-``` syntax
+```
 #include "sample.h"
 #include <cfgmgr32.h>
 #include <strsafe.h>
@@ -137,7 +137,7 @@ exit:
 
 The application uses the TouchInfo and TouchContact data structures, which are defined in %WPDKCONTENTROOT%\\include\\um\\WinPhoneInput.h. The header code is shown here.
 
-``` syntax
+```
 #pragma once
 
 #include <windows.h>

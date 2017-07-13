@@ -63,7 +63,7 @@ For the list of the supported Windows editions and architectures that this compo
 
 The following XML output specifies that the system will search for MTP/BT portable devices every 60 seconds while plugged in to AC power, and will not search for MTP/BT portable devices while on battery power:
 
-``` syntax
+```
 <BTSearchIntervalOnAC>60</BTSearchIntervalOnAC>
 <BTSearchIntervalOnDC>0</BTSearchIntervalOnDC>
 ```

@@ -20,7 +20,7 @@ This class manages a volume protected by Unified Write Filter (UWF).
 ## Syntax
 
 
-``` syntax
+```
 class UWF_Volume {
     [key, Read] boolean CurrentSession;
     [key, Read] string DriveLetter;
@@ -179,7 +179,7 @@ The following example demonstrates how to protect or unprotect a volume with UWF
 
 The PowerShellscript creates a function, **Set-ProtectVolume**, that turns UWF protection on or off for a volume. The script then demonstrates how to use the function.
 
-``` syntax
+```
 $COMPUTER = "localhost"
 $NAMESPACE = "root\standardcimv2\embedded"
 
@@ -241,7 +241,7 @@ The third function, **Remove-FileExclusion**, removes a file or folder from the 
 
 The fourth function, **Clear-FileExclusions**, removes all UWF file and folder exclusions from a given volume. The exclusions are removed for the next session that follows a restart.
 
-``` syntax
+```
 $COMPUTER = "localhost"
 $NAMESPACE = "root\standardcimv2\embedded"
 

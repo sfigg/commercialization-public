@@ -114,7 +114,7 @@ For a list of the supported Windows editions and architectures that this compone
 
 The following XML output changes the `ComplianceCheck` setting to run in guaranteed quiet mode.
 
-``` syntax
+```
 <ComplianceCheck>
    <DisplayReport>Never</DisplayReport>
 </ComplianceCheck>

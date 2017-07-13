@@ -64,7 +64,7 @@ For the list of the supported Windows editions and architectures that this compo
 
 The following XML output shows how to configure Windows Disk Diagnostic.
 
-``` syntax
+```
 <EnabledScenarioExecutionLevel>2</EnabledScenarioExecutionLevel>
 <DfdAlertTextOverride>Custom alert text that describes additional support information</DfdAlertTextOverride>
 ```

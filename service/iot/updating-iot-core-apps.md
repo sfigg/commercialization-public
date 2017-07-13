@@ -41,7 +41,7 @@ Try out your updates on your devices before submitting them to the Windows Store
 
     Use a new version number. This version number will apply to all of the packages in your projects.
 
-    ``` syntax
+    ```
     newupdate Update1 10.0.0.1
     ```
 
@@ -59,7 +59,7 @@ Try out your updates on your devices before submitting them to the Windows Store
 		
 5.  Build the update package
 
-    ``` syntax
+    ```
     createupdatepkgs Update1
     ```
 
@@ -72,12 +72,12 @@ Try out your updates on your devices before submitting them to the Windows Store
 2.  On your technician PC, connect to your device using an SSH client, such as [PuTTY](http://the.earth.li/~sgtatham/putty/latest/x86/putty.exe). For example, use the IP address and port 22 to connect to the device, then log in using the Administrator account and password. (To learn more, see [Using SSH to connect and configure a device running Windows IoT Core](https://developer.microsoft.com/windows/iot/docs/ssh).)
 
 3.  From the device command line, stage the update. You can repeat this step to stage multiple updates.
-    ``` syntax
+    ```
     ApplyUpdate.exe -stage <DownloadedPackageName.cab>
     ```
 
 4.  Commit the changes. This command also triggers the Windows Update process, installing any applicable updates. 
-    ``` syntax
+    ```
     ApplyUpdate.exe -commit
     ```
 	

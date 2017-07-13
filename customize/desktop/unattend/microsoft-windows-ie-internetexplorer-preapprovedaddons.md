@@ -66,7 +66,7 @@ For a list of the supported Windows editions and architectures that this compone
 
 The following XML output shows how to set two Internet Explorer pre-approved add-ons.
 
-``` syntax
+```
 <PreapprovedAddons>
   <AddonGuidItem>
     <AddonGuid>{a1b1c123d1e1f4a5a6a7aa8a9a0a}</AddonGuid>

@@ -48,7 +48,7 @@ For a list of the Windows editions and architectures that this component support
 
 The following XML output shows how to use the `<SquareTile11>` component.
 
-``` syntax
+```
 <SquareTiles>
           <SquareOrDesktopTile1>
                <AppIdOrPath>C:\programdata\microsoft\windows\start menu\programs\desktoptile1.lnk</AppIdOrPath>

@@ -19,7 +19,7 @@ ms.technology: windows-oem
 
 Displays trace post-processing options.
 
-``` syntax
+```
 xperf -i <trace file>… [-o output] [-symbols …] [-target {human|machine}] [-a action …[-a action …] …]
 ```
 

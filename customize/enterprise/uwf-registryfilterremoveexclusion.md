@@ -20,7 +20,7 @@ Removes a registry key from the registry exclusion list for Unified Write Filter
 ## Syntax
 
 
-``` syntax
+```
 UInt32 RemoveExclusion(
     string RegistryKey
 );

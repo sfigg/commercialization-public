@@ -19,7 +19,7 @@ ms.technology: windows-oem
 
 This action produces a text report that summarizes the various metrics regarding deferred procedure calls (DPCs) and interrupt service routines (ISRs).
 
-``` syntax
+```
 -a dpcisr [-dpc | -isr] [-summary] [-interval [n]] [-bucket [n]] [-range T1 T2 ]
 ```
 

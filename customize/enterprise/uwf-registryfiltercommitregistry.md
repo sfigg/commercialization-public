@@ -20,7 +20,7 @@ Commits changes to the specified registry key and value.
 ## Syntax
 
 
-``` syntax
+```
 UInt32 CommitRegistry(
     [in] string RegistryKey,
     [in] string ValueName

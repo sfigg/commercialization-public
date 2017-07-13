@@ -19,7 +19,7 @@ ms.technology: windows-oem
 
 This action produces a text file that summarizes marks placed in a trace.
 
-``` syntax
+```
 -a marks [-summary] [-range T1 T2]
 ```
 

@@ -32,13 +32,13 @@ The default installation runs from memory (also known as a RAM disk), which allo
 
 2.  Create a working copy of the Windows PE files. Specify either x86 or amd64:
 
-    ``` syntax
+    ```
     copype amd64 C:\WinPE_amd64
     ```
 
 3.  Create an ISO file containing the Windows PE files:
 
-    ``` syntax
+    ```
     MakeWinPEMedia /ISO C:\WinPE_amd64 C:\WinPE_amd64\WinPE_amd64.iso
     ```
 
@@ -53,7 +53,7 @@ When running Windows PE in Hyper-V, consider using an ISO file format instead of
 
 1.  Create a virtual hard drive (.vhd or .vhdx):
 
-    ``` syntax
+    ```
     diskpart
     create vdisk file="C:\WinPE.vhdx" maximum=1000
     attach vdisk
@@ -65,13 +65,13 @@ When running Windows PE in Hyper-V, consider using an ISO file format instead of
 
 2.  Prepare the drive by using MakeWinPEMedia:
 
-    ``` syntax
+    ```
     MakeWinPEMedia /UFD C:\WinPE_amd64 V:
     ```
 
 3.  Detach the drive:
 
-    ``` syntax
+    ```
     diskpart
     select vdisk file="C:\WinPE.vhdx"
     detach vdisk

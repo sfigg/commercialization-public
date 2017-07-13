@@ -37,7 +37,7 @@ Represents a collection of heap event provider identifiers and heap event provid
 ## Syntax
 
 
-``` syntax
+```
 <HeapEventProviders Operation = "Set" | "Add" | “Remove” >
 
   <!-- Child elements -->

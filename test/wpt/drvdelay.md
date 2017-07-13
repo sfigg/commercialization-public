@@ -19,7 +19,7 @@ ms.technology: windows-oem
 
 This action produces a text report that summarizes the metrics regarding drivers.
 
-``` syntax
+```
 -a drvdelay [-min [t]] [-name <driver>] [-range T1 T2]
 ```
 

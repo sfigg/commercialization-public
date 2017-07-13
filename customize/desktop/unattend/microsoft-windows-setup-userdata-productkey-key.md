@@ -88,7 +88,7 @@ For a list of the Windows editions and architectures that this component support
 
 The following XML output shows how to set user data.
 
-``` syntax
+```
 <UserData>
    <AcceptEula>true</AcceptEula>
    <FullName>EndUserName</FullName>

@@ -22,7 +22,7 @@ You can use the powercfg.exe tool to control power schemes (also named power pla
 
 From the Windows command-line, you can run "powercfg.exe /?" to bring up the following usage information:
 
-``` syntax
+```
 powercfg /COMMAND [ARGUMENTS] [/?]
 ```
 

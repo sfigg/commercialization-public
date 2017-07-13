@@ -59,7 +59,7 @@ For a list of the supported Windows editions and architectures that this compone
 
 The following XML output shows how to set the URL of the **Find More Providers** option.
 
-``` syntax
+```
 <FindProvidersURL>http://www.fabrikam.com/FindMoreSearchProviders.htm</FindProvidersURL>
 ```
 

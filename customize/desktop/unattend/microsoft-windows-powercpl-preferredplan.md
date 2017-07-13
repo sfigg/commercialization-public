@@ -38,7 +38,7 @@ When an end user clicks the battery meter, Windows displays two featured power-p
 
 Use the **powercfg -list** option to view the GUIDs for the different power plans on the Windows installation. For example:
 
-``` syntax
+```
 C:\>powercfg -LIST
 
 ## Existing Power Schemes (* Active)
@@ -92,7 +92,7 @@ For a list of the Windows editions and architectures that this component support
 
 The following XML output shows how to configure a GUID for `PreferredPlan`.
 
-``` syntax
+```
 <PreferredPlan>381b4222-f694-41f0-9685-ff5bb260df2e</PreferredPlan>
 ```
 

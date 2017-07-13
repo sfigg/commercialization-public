@@ -68,7 +68,7 @@ For a list of the supported Windows editions and architectures that this compone
 
 The following XML output shows how to configure the SAN policy to mount all available storage devices.
 
-``` syntax
+```
 <SanPolicy>1</SanPolicy>
 ```
 

@@ -71,7 +71,7 @@ For a list of the Windows editions and architectures that this component support
 
 The following example shows how to set a customized **Help and Support** home page. When a user clicks the Fabrikam logo on the **Help and Support** home page, the http://www.fabrikam.com/support webpage opens.
 
-``` syntax
+```
 <HelpAndSupport>
   <Logo>%systemdrive%\Fabrikam\Logos\Logo.png</Logo>
   <LogoURL>http://www.fabrikam.com/support</LogoURL>

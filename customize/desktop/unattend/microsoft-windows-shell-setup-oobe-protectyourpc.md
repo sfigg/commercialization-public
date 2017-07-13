@@ -81,7 +81,7 @@ For a list of the supported Windows editions and architectures that this compone
 
 The following XML example shows how to turn off Express settings.
 
-``` syntax
+```
 <OOBE>
    <ProtectYourPC>3</ProtectYourPC>
 </OOBE>

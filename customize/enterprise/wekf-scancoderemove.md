@@ -20,7 +20,7 @@ This method removes a custom scan code key combination, causing Keyboard Filter 
 ## Syntax
 
 
-``` syntax
+```
 [Static] uint32 Remove(
     [In] string Modifiers,
     [In] uint16 Scancode

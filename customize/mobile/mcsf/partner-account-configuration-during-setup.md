@@ -58,7 +58,7 @@ Partners must meet the following requirements when configuring this customizatio
 
 2.  Create a customization answer file to preload your app(s) and follow the steps in the section Configure the customization settings.
 
-    ``` syntax
+    ```
     <?xml version="1.0" encoding="utf-8" ?>  
     <ImageCustomizations xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate"  
                          Name="PartnerAccountConfiguration"  
@@ -202,7 +202,7 @@ We recommend that you use the following APIs when implementing your apps:
 
 1.  Preload the apps to the mobile device using the following code example.
 
-    ``` syntax
+    ```
         <!-- Preload up to 5 apps to use as the hub and spoke apps -->
         <Applications>
           <Application Source=""

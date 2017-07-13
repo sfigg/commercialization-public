@@ -22,7 +22,7 @@ This topic presents a sample report descriptor and sample descriptor excerpts fo
 
 All the values and parameters specified in the following sample descriptor are mandatory.
 
-``` syntax
+```
 //TOUCH PAD input TLC
     0x05, 0x0d,                         // USAGE_PAGE (Digitizers)          
     0x09, 0x05,                         // USAGE (Touch Pad)             
@@ -161,7 +161,7 @@ All the values and parameters specified in the following sample descriptor are m
 
 The following excerpt is from the descriptor for the Windows Precision Touchpad top-level collection. This descriptor excerpt is for the optional (but highly recommended) support of the latency mode feature report.
 
-``` syntax
+```
     0x05, 0x0d,                         //    USAGE_PAGE (Digitizer)
     0x85, REPORTID_LATENCY,             //    REPORT_ID (Latency)              
     0x09, 0x60,                         //    USAGE(Latency Mode)
@@ -179,7 +179,7 @@ The following excerpt is from the descriptor for the Windows Precision Touchpad 
 
 The following excerpt is from the descriptor for the Windows Precision Touchpad top-level collection, for a segmented version of the device certification status feature report. This allows the certification status blob to be split into eight 32-byte segments, versus a single 256-byte segment. The host indicates which segment \# it would like returned in a SET FEATURE. In response, the device returns the segment \#, along with the associated segment in GET FEATURE.
 
-``` syntax
+```
     0x06, 0x00, 0xff,                   //     USAGE_PAGE (Vendor Defined)  
     0x85, REPORTID_PTPHQA,              //     REPORT_ID (PTPHQA)              
     0x09, 0xC6,                         //     USAGE (Vendor usage for segment #) 

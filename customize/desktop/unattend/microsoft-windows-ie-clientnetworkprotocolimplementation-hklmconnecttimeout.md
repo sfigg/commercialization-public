@@ -58,7 +58,7 @@ For a list of the supported Windows editions and architectures that this compone
 
 The following XML output shows how to set the timeout limit to two minutes.
 
-``` syntax
+```
 <HKLMConnectRetries>1</HKLMConnectRetries>
 <HKLMConnectTimeOut>120000</HKLMConnectTimeOut>
 ```

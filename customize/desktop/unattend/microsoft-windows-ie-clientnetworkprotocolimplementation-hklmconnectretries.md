@@ -62,13 +62,13 @@ For a list of the supported Windows editions and architectures that this compone
 
 The following XML example shows how to specify that the system try the first two IP addresses in the list. If the host has seven IP addresses, the system tries only the first two IP addresses because `HKLMConnectRetries` is set to **2**.
 
-``` syntax
+```
 <HKLMConnectRetries>2</HKLMConnectRetries>
 ```
 
 The following XML example shows how to specify that the system try 10 IP addresses. If the host has seven IP addresses, the system tries seven times, because the system attempts each IP address only once.
 
-``` syntax
+```
 <HKLMConnectRetries>10</HKLMConnectRetries>
 ```
 

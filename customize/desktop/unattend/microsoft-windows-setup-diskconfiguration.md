@@ -71,7 +71,7 @@ For a list of the Windows editions and architectures that this component support
 
 The following XML output for the `DiskConfiguration` setting shows how to specify that you will configure disk partitions manually through the disk configuration UI in Windows Setup:
 
-``` syntax
+```
 <DiskConfiguration>
    <WillShowUI>Always</WillShowUI>
 </DiskConfiguration>

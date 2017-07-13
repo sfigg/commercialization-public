@@ -223,13 +223,13 @@ When you deploy a Windows 10 Enterprise image with UWF on a VHD boot disk, you 
 
 To add a file exclusion for the VHD file, at an administrator command prompt, type the following:
 
-``` syntax
+```
 uwfmgr.exe file add-exclusion <drive containing VHD file>:\<path to VHD file>\<VHD file name>.vhd
 ```
 
 For example:
 
-``` syntax
+```
 uwfmgr.exe file add-exclusion E:\VHD\test.vhd
 ```
 

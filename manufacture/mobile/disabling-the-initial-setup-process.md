@@ -18,7 +18,7 @@ To disable the device's initial setup process (also sometimes called the *out-of
 
 The SKIPOOBE feature sets the **OobeHeadless** registry value (a REG\_DWORD value under the HKEY\_LOCAL\_MACHINE\\Software\\Microsoft\\Shell\\OOBE entry) to 1. Alternatively, you can configure this registry value directly in one of your own packages. The following example demonstrates a package XML file that sets this registry value.
 
-``` syntax
+```
 <?xml version="1.0" encoding="utf-8"?>
 <Package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
   xmlns:xsd="http://www.w3.org/2001/XMLSchema"

@@ -315,7 +315,7 @@ The following device languages are supported.
 
 -   **List of included device languages:** OEMs must include at least one device language. To include multiple device languages, add additional `Language` entries to the `UserInterface` section of the OEMInput.xml file. In the following example, English (US), Japanese, and Dutch are included as device languages.
 
-    ``` syntax
+    ```
       <SupportedLanguages>
         <UserInterface>
           <Language>en-US</Language>
@@ -344,7 +344,7 @@ The following device languages are supported.
 
      
 
-    ``` syntax
+    ```
       <SupportedLanguages>
         <UserInterface>
           <Language>en-US</Language>

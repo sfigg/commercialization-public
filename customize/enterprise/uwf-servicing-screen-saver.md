@@ -34,7 +34,7 @@ Do not select **UwfServicingScr** as the screen saver and then click **Preview**
 
 1.  To modify the default registry settings for the UWF servicing screen saver, from the example shown here, change the values in a text editor, and then save as a .reg file (for example, Overridescreensaver.reg).
 
-    ``` syntax
+    ```
     Windows Registry Editor Version 5.00
     [HKEY_LOCAL_MACHINE\Software\Microsoft\Windows Embedded\ServicingScreenSaver]
     "ColorBackground"=dword:000000ff
@@ -55,7 +55,7 @@ Do not select **UwfServicingScr** as the screen saver and then click **Preview**
 
 3.  To apply the custom registry settings for the screen saver to the device, type the following command:
 
-    ``` syntax
+    ```
     regedit.exe /s overridescreensaver.reg
     ```
 

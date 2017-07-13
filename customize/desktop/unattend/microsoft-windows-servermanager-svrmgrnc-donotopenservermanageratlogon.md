@@ -70,7 +70,7 @@ For a list of the supported Windows editions and architectures that this compone
 
 The following XML output shows how to specify that Server Manager opens the first time the end user logs on.
 
-``` syntax
+```
 <DoNotOpenServerManagerAtLogon>false</DoNotOpenServerManagerAtLogon>
 ```
 

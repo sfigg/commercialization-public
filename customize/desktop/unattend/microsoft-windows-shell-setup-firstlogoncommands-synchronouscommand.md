@@ -81,7 +81,7 @@ For the list of the supported Windows editions and architectures that this compo
 
 The following XML output shows how to set first logon commands.
 
-``` syntax
+```
 <FirstLogonCommands>
    <SynchronousCommand wcm:action="add">
       <CommandLine>c:\synccommands\command1.exe</CommandLine>

@@ -29,7 +29,7 @@ By enabling runtime configuration, SIM-based language detection will also be ena
 <a href="" id="instructions-"></a>**Instructions:**  
 1.  Create a customization answer file using the contents shown in the following code sample.
 
-    ``` syntax
+    ```
     <?xml version="1.0" encoding="utf-8" ?>  
     <ImageCustomizations xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate"  
                          Name="EnableRuntime configuration"  
@@ -82,7 +82,7 @@ By enabling runtime configuration, SIM-based language detection will also be ena
 
 The registry key for enabling or disabling runtime configuration is below. This registry key can have a value of 1 or 0 where 1 represents enabled and 0 represents disabled.
 
-``` syntax
+```
 HKLM\software\microsoft\multivariant\enable
 ```
 

@@ -89,7 +89,7 @@ The following examples show how to access state information.
 
 -   To access state information from the registry:
 
-    ``` syntax
+    ```
     C:\>reg query HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Setup\State /v Imag
     eState
 
@@ -99,7 +99,7 @@ The following examples show how to access state information.
 
 -   To access state information from a file:
 
-    ``` syntax
+    ```
     C:\>type %windir%\Setup\State\State.ini
     [State]
     ImageState="IMAGE_STATE_SPECIALIZE_RESEAL_TO_OOBE"

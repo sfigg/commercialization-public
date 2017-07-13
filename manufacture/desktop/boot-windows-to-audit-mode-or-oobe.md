@@ -72,7 +72,7 @@ If a password-protected screen saver starts when you are in audit mode, you cann
 
 2.  At an elevated command prompt, mount the Windows image. For example:
 
-    ``` syntax
+    ```
     Dism /Mount-Image /ImageFile:C:\test\images\MyImage.wim /index:<image_index> /MountDir:C:\test\offline
     ```
 
@@ -82,7 +82,7 @@ If a password-protected screen saver starts when you are in audit mode, you cann
 
 4.  Commit the changes, and then unmount the image. For example:
 
-    ``` syntax
+    ```
     Dism /Unmount-Image /MountDir:C:\test\offline /commit
     ```
 

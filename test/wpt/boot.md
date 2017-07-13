@@ -19,7 +19,7 @@ ms.technology: windows-oem
 
 This action produces an XML report that summarizes the various metrics in boot.
 
-``` syntax
+```
 -a boot [-minCPUToShow <n>] [-maxFilesToShow <n>] [-expectedProcessesFile <file name>] [-minIntervalToShow <n>] [-userShellExecutable]
 ```
 

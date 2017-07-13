@@ -40,13 +40,13 @@ In this lab, you’ll analyze audio glitches. Audio glitches are often caused by
 
 6.  Open the **AudioGlitches\_ThreadsAtDispatchLevel.etl** trace file by typing the following command:
 
-    ``` syntax
+    ```
     xa.exe -i <AudioGlitches_ThreadsAtDispatchLevel.etl location>\AudioGlitches_ThreadsAtDispatchLevel.etl
     ```
 
     For example, if you downloaded **AudioGlitches\_ThreadsAtDispatchLevel.etl** to C:\\Performance\\Media, you would type the following command:
 
-    ``` syntax
+    ```
     xa.exe -i C:\Performance\Media\AudioGlitches_ThreadsAtDispatchLevel.etl
     ```
 

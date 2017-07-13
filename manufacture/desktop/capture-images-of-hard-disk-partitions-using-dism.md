@@ -77,20 +77,20 @@ If any of the partitions you want to capture don’t already have a drive letter
 
 2.  At the Windows PE command prompt, type `diskpart` to open the DiskPart tool.
 
-    ``` syntax
+    ```
     X:> diskpart
     DISKPART>
     ```
 
 3.  Select the hard disk with the `select disk` command. For example,
 
-    ``` syntax
+    ```
     DISKPART> select disk 0
     ```
 
 4.  View the partitions with the `list partition` command. For example,
 
-    ``` syntax
+    ```
     DISKPART> list partition
 
     DISKPART> list partition
@@ -103,19 +103,19 @@ If any of the partitions you want to capture don’t already have a drive letter
 
 5.  Select the partition with the `select partition` command. For example,
 
-    ``` syntax
+    ```
     DISKPART> select partition=1
     ```
 
 6.  Assign a letter to the partition with the `assign letter` command. For example,
 
-    ``` syntax
+    ```
     DISKPART> assign letter=S
     ```
 
 7.  Type `exit` to return to the Windows PE command prompt.
 
-    ``` syntax
+    ```
     DISKPART> exit
     X:\>
     ```
@@ -129,7 +129,7 @@ Capture images for each customized partition.
 
 -   At the Windows PE command prompt, capture the images by using the **DISM** command together with the **/captureImage** option. For example,
 
-    ``` syntax
+    ```
     Dism /Capture-Image /ImageFile:c:\my-windows-partition.wim /CaptureDir:C:\ /Name:"My Windows partition"
     Dism /Capture-Image /ImageFile:s:\my-system-partition.wim /CaptureDir:S:\ /Name:"My system partition"
     ```
@@ -143,7 +143,7 @@ Save your .wim files to your network or another safe location.
 
 1.  Connect to your distribution share by using the **net use** command. For example,
 
-    ``` syntax
+    ```
     net use n: \\Server\Share
     ```
 
@@ -151,7 +151,7 @@ Save your .wim files to your network or another safe location.
 
 2.  Copy the partitions to your network share. For example,
 
-    ``` syntax
+    ```
     md N:\Images\
     copy C:\my-windows-partition.wim N:\Images\
     copy c:\my-system-partition.wim N:\Images\

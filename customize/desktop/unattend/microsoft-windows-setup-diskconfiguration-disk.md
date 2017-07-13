@@ -71,7 +71,7 @@ For a list of supported Windows editions and architectures that this component s
 
 The following XML output for the `DiskConfiguration` setting shows partition modifications for a BIOS-based computer with two hard drives.
 
-``` syntax
+```
 <DiskConfiguration>
 
   <!-- First hard drive -->

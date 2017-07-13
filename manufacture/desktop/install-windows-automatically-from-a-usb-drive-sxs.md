@@ -292,7 +292,7 @@ Windows ICD can store the entire image into a single .FFU file. The FFU format w
 
 4.  From the WinPE command prompt, type the following:
 
-    ``` syntax
+    ```
     Dism.exe /apply-image /imagefile=G:\MyFFUImage.ffu /applydrive=\\.\physicaldrive0 /skipplatformcheck /logpath:G:\dism.applyffu.log
     ```
 

@@ -26,13 +26,13 @@ Use the MetaData\\[Key](microsoft-windows-setup-imageinstall-dataimage-installfr
 
 Use the `DISM /Get-WimInfo` command to determine which images and editions are included on your data image (.wim) file, such as in the following example:
 
-``` syntax
+```
 DISM /Get-WimInfo /WimFile:N:\Drivers\FNBDrivers.wim
 ```
 
 Information about the available images will be displayed; for example:
 
-``` syntax
+```
 Deployment Image Servicing and Management tool
 Version: 6.1.7108.0
  
@@ -96,7 +96,7 @@ For a list of the Windows editions and architectures that this component support
 
 The following XML output shows how to configure the `DataImage` setting to install a specific data image from a custom .wim file located on a network share using the image index value.
 
-``` syntax
+```
 <ImageInstall>
     <DataImage>
         <InstallFrom>
@@ -122,7 +122,7 @@ The following XML output shows how to configure the `DataImage` setting to insta
 
 The following XML output shows how to configure the `MetaData` setting to install a specific data image using the image name.
 
-``` syntax
+```
 <ImageInstall>
     <DataImage>
         <InstallFrom>
@@ -148,7 +148,7 @@ The following XML output shows how to configure the `MetaData` setting to instal
 
 The following XML output shows how to configure the `MetaData` setting to install a specific data image from a custom .wim file located on a network share using the image description.
 
-``` syntax
+```
 <ImageInstall>
     <OSImage>
         <InstallFrom>

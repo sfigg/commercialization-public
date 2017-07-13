@@ -18,7 +18,7 @@ You can add manufacturing profiles to your device by using a package. For more i
 
 For example, if you wanted to create a new custom profile for factory testing that is a copy of the default profile but also starts your factory test service, it may look like this:
 
-``` syntax
+```
 <?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="urn:Microsoft.WindowsPhone/PackageSchema.v8.00"
         Owner="Contoso"
@@ -168,7 +168,7 @@ For example, if you wanted to create a new custom profile for factory testing th
 
 You can then create the package by using pkggen.exe (included with the Windows Driver Kit):
 
-``` syntax
+```
 pkggen.exe example.pkg.xml /config:pkggen.cfg.xml
 ```
 

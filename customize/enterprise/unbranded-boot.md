@@ -67,19 +67,19 @@ BCDEdit is the primary tool for editing the startup configuration and is on your
 1.  Open a command prompt as an administrator.
 2.  To disable the F8 key during startup to prevent access to the **Advanced startup options** menu, type the following:
 
-    ``` syntax
+    ```
     bcdedit.exe -set {globalsettings} advancedoptions false
     ```
 
 3.  To disable the F10 key during startup to prevent access to the **Advanced startup options** menu, type the following:
 
-    ``` syntax
+    ```
     bcdedit.exe -set {globalsettings} optionsedit false
     ```
 
 4.  To suppress all Windows UI elements (logo, status indicator, and status message) during startup, type the following:
 
-    ``` syntax
+    ```
     bcdedit.exe -set {globalsettings} bootuxdisabled on
     ```
 

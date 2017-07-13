@@ -20,7 +20,7 @@ This method removes a Shell Launcher configuration for a specific user or group,
 ## Syntax
 
 
-``` syntax
+```
 [Static] uint32 RemoveCustomShell (
     [In, Required] string Sid
 );

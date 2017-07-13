@@ -69,7 +69,7 @@ For the list of the Windows editions and architectures that this component suppo
 
 The following XML output shows how to instruct Windows to save drive space by uninstalling any default or OEM-specified Windows RE image from the system.
 
-``` syntax
+```
 <UninstallWindowsRE>true</UninstallWindowsRE>
 ```
 

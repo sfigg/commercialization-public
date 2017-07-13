@@ -22,7 +22,7 @@ Stops a recording in file logging mode.
 ## Syntax
 
 
-``` syntax
+```
 HRESULT Stop
   ([in] BSTR bstrFileName,
   [in] IProfileCollection* pProfileCollection,

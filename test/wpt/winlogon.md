@@ -19,7 +19,7 @@ ms.technology: windows-oem
 
 This action produces a text file that summarizes metrics related to logon.
 
-``` syntax
+```
 -a winlogon [-range T1 T2]
 ```
 

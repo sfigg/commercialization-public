@@ -23,7 +23,7 @@ To set this up, you add the apps that should be installed with the manufacturing
 
 In a manufacturing mode profile, you must create a new registry key that lists the apps that should be installed with the manufacturing profile:
 
-``` syntax
+```
 HKEY_LOCAL_MACHINE\System\ControlSet001\Control\ManufacturingMode\<Profile Name>\Apps\OobeInstall
 ```
 
@@ -43,13 +43,13 @@ Here are some things to consider when adding apps to a manufacturing profile:
 
 The name of the registry key must match the filename of the app package. You can get a list of the apps that are on the device by running the following command on the device's drive root:
 
-``` syntax
+```
 dir /S MPAP_*.provxml
 ```
 
 This command returns a list of files, similar to the following:
 
-``` syntax
+```
 MPAP_systemsettings_001.provxml
 ```
 
@@ -60,7 +60,7 @@ The part of the filename after **MPAP\_** and before **\_0xx.provxml** is what y
 
 You add the registry keys to your custom manufacturing profile package like you would with any other package. For more info about packaging, see [Creating Phone Packages](https://msdn.microsoft.com/library/dn756642).
 
-``` syntax
+```
 <?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="urn:Microsoft.WindowsPhone/PackageSchema.v8.00"
         Owner="Contoso"

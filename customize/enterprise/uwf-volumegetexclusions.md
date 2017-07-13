@@ -20,7 +20,7 @@ Gets a list of all file exclusions for a Unified Write Filter (UWF) protected vo
 ## Syntax
 
 
-``` syntax
+```
 UInt32 GetExclusions(
     [out, EmbeddedInstance("UWF_ExcludedFile")] string ExcludedFiles[]
 );

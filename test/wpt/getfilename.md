@@ -22,7 +22,7 @@ Obtains the string from the specified file.
 ## Syntax
 
 
-``` syntax
+```
 HRESULT GetFileName
   ([out] BSTR* pbstrFileName)
 ;

@@ -80,7 +80,7 @@ For a list of the Windows editions and architectures that this component support
 
 The following example shows how to configure Windows to perform **Help and Support** searches from both Windows and offline Help files that the OEM or organization provides when the computer is offline.
 
-``` syntax
+```
 <Manufacturer>Fabrikam</Manufacturer>
 <SearchContent>true</SearchContent>
 ```

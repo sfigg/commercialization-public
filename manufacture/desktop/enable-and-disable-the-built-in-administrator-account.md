@@ -55,7 +55,7 @@ Both the Microsoft-Windows-Shell-Setup\\`Autologon` section and the Microsoft-Wi
 
 The following XML output shows how to set the appropriate values:
 
-``` syntax
+```
    <component name="Microsoft-Windows-Shell-Setup" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
       <AutoLogon>
          <Password>
@@ -79,7 +79,7 @@ To prevent having to enter a password for the built-in Administrator account aft
 
 The following XML output shows how to set the appropriate values:
 
-``` syntax
+```
             <UserAccounts>
                 <AdministratorPassword>
                     <Value>SecurePasswd123</Value>
@@ -127,7 +127,7 @@ For upgrade installations, the built-in Administrator account remains enabled wh
 
     Run the following command to disable the Administrator account:
 
-    ``` syntax
+    ```
     net user administrator /active:no
     ```
 

@@ -61,7 +61,7 @@ For a list of the supported Windows editions and architectures that this compone
 
 The following XML output for the `DiskConfiguration` setting shows how to create two partitions on a hard drive on a BIOS-based system.
 
-``` syntax
+```
 <DiskConfiguration>
 
   <Disk wcm:action="add">

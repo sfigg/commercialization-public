@@ -67,7 +67,7 @@ For a list of the supported Windows editions and architectures that this compone
 
 The following XML output shows how to specify the total number of active (concurrent) connections allowed on a node.
 
-``` syntax
+```
 <MaximumConnectionDescriptors>262144</MaximumConnectionDescriptors>
 ```
 

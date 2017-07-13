@@ -26,7 +26,7 @@ This topic presents a sample report descriptor and a sample descriptor excerpt f
 
 The following is a sample descriptor of a two-finger parallel/hybrid mode device.
 
-``` syntax
+```
     0x05, 0x0d,                         // USAGE_PAGE (Digitizers)          
     0x09, 0x04,                         // USAGE (Touch Screen)             
     0xa1, 0x01,                         // COLLECTION (Application)         
@@ -150,7 +150,7 @@ Note that Windows expects the coordinate (0,0) to be the top-left corner of the 
 
 The following excerpt is from the descriptor for the Windows Touchscreen top-level collection for the optional (highly recommended) support of the latency mode feature report.
 
-``` syntax
+```
     0x05, 0x0d,                         //    USAGE_PAGE (Digitizer)
     0x85, REPORTID_LATENCY,             //    REPORT_ID (Latency)              
     0x09, 0x60,                         //    USAGE(Latency Mode)

@@ -71,7 +71,7 @@ For a list of the supported Windows editions and architectures that this compone
 
 The following XML output specifies the subnet mask for the dedicated IP address.
 
-``` syntax
+```
 <NetworkMask>255.255.255.0</NetworkMask>
 ```
 

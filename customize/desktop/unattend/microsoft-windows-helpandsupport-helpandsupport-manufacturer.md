@@ -66,7 +66,7 @@ For a list of the Windows editions and architectures that this component support
 
 The following example shows how to set a customized **Help and Support** home page. The title of the **Help and Support** home page includes the Fabrikam company name. For example, the page title may be **Fabrikam Help and Support**.
 
-``` syntax
+```
 <HelpAndSupport>
   <Logo>C:\Fabrikam\Logos\Logo.png</Logo>
   <LogoURL>http://www.fabrikam.com/support</LogoURL>

@@ -20,7 +20,7 @@ This class configures which application Shell Launcher starts based on the secur
 ## Syntax
 
 
-``` syntax
+```
 class WESL_UserSetting {
     [read, write, Required] string Sid;
     [read, write, Required] string Shell;
@@ -240,7 +240,7 @@ You can find the SID for a user and any groups that the user is a member of by u
 
 The following Windows PowerShell script demonstrates how to add and remove custom shell configurations for Shell Launcher by using the Windows Management Instrumentation (WMI) providers for Shell Launcher.
 
-``` syntax
+```
 $COMPUTER = "localhost"
 $NAMESPACE = "root\standardcimv2\embedded"
 

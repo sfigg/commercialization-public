@@ -20,31 +20,31 @@ If you intend to create an image of an installation for deployment to a differen
 
 1.  Display the list of Remote Authentication Dial-In User Service (RADIUS) clients on the NPS server. To do that, open an elevated command prompt, type this command, and then press Enter:
 
-    ``` syntax
+    ```
     Netsh nps show client
     ```
 
 2.  Delete each RADIUS client in the list. To do that, at the elevated command prompt, type this command and then press Enter:
 
-    ``` syntax
+    ```
     Netsh nps delete client [name]
     ```
 
     For example, this command deletes a RADIUS client named *&lt;WirelessAP1&gt;* from the NPS server configuration:
 
-    ``` syntax
+    ```
     Netsh nps delete client name = <WirelessAP1>
     ```
 
     You can delete multiple RADIUS clients by inserting a comma between each client. For example:
 
-    ``` syntax
+    ```
     Netsh nps delete client name = <WirelessAP1>,<WirelessAP2>,<WirelessAP3>
     ```
 
     You can also remove a RADIUS client by using the following command.
 
-    ``` syntax
+    ```
     Remove-NpsRadiusClient [-Name] <Radius Client Name>-
     ```
 
@@ -54,19 +54,19 @@ If you intend to create an image of an installation for deployment to a differen
 
 1.  Display the list of remote RADIUS server groups that are configured on the NPS server. To do that, open an elevated command prompt, type the following command, and then press Enter:
 
-    ``` syntax
+    ```
     Netsh nps show remoteservergroup
     ```
 
 2.  Delete each remote server group in the list. To do that, at the elevated command prompt, type this command and then press Enter:
 
-    ``` syntax
+    ```
     Netsh nps delete remoteservergroup [name =] name
     ```
 
     For example, this command deletes a remote RADIUS server group named *&lt;RemoteServers1&gt;* from the NPS server configuration:
 
-    ``` syntax
+    ```
     Netsh nps delete remoteservergroup name = <RemoteServers1>
     ```
 

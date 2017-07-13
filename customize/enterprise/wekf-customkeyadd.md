@@ -20,7 +20,7 @@ Creates a new custom key combination and enables Keyboard Filter to block the ne
 ## Syntax
 
 
-``` syntax
+```
 [Static] uint32 Add(
     [In] string CustomKey
 );
@@ -49,7 +49,7 @@ If a **WEKF\_CustomKey** object already exists with the **Id** property equal to
 
 The following code demonstrates how to add or enable a custom key that Keyboard Filter will block by using the Windows Management Instrumentation (WMI) providers for Keyboard Filter.
 
-``` syntax
+```
 $COMPUTER = "localhost"
 $NAMESPACE = "root\standardcimv2\embedded"
 

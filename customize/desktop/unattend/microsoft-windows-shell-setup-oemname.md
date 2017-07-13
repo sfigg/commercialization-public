@@ -59,7 +59,7 @@ For the list of the supported Windows editions and architectures that this compo
 
 The following XML output shows how to set the OEM name. On the Start screen, the group of Start Tiles created by the OEM appears with the heading: "Fabrikam apps".
 
-``` syntax
+```
 <OEMName>Fabrikam</OEMName>
 ```
 

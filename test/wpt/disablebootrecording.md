@@ -22,7 +22,7 @@ Disables boot recording for the specified profile collection.
 ## Syntax
 
 
-``` syntax
+```
 HRESULT DisableBootRecording
   ([in] IProfileCollection* pProfileCollection)
 ;

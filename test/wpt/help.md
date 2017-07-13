@@ -19,7 +19,7 @@ ms.technology: windows-oem
 
 Displays Help for Xperf options and actions.
 
-``` syntax
+```
 xperf -help [<option>|<action>]
 ```
 

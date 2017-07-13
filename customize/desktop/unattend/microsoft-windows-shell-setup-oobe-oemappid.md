@@ -44,7 +44,7 @@ For a list of the supported Windows editions and architectures that this compone
 
 The following XML example shows how to use the `OEMAppID` setting.
 
-``` syntax
+```
 <OOBE>
    <OEMAppID>winstore_abc123def!Windows.Store</OEMAppID>
 </OOBE>

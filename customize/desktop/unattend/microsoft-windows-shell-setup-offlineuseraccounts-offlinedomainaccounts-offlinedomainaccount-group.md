@@ -87,7 +87,7 @@ The following XML examples show how to use the **Group** setting to add domain g
 
 Example 1:
 
-``` syntax
+```
    <OfflineDomainAccounts>
       <OfflineDomainAccount wcm:action="add">
         <Group>Users</Group> 
@@ -98,7 +98,7 @@ Example 1:
 
 Example 2:
 
-``` syntax
+```
    <OfflineDomainAccounts>
       <OfflineDomainAccount wcm:action="add">
         <Group>Administrators</Group> 

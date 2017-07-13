@@ -22,7 +22,7 @@ Obtains the specified text.
 ## Syntax
 
 
-``` syntax
+```
 HRESULT GetText
   ([in] ULONG iText,
   [out] BSTR* pbstrText)

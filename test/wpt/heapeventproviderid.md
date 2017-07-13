@@ -39,7 +39,7 @@ Represents an identifier for a provider of heap events.
 ## Syntax
 
 
-``` syntax
+```
 <HeapEventProviderId Value = IdType>
 
   <!-- Child elements -->

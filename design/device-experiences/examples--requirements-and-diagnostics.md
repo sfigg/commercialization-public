@@ -60,7 +60,7 @@ In the following block diagram, two thermal zones that manage the same devices u
 
 The two thermal zones shown in the preceding diagram might be defined as follows:
 
-``` syntax
+```
 Thermal Zone 1 {     _PSV = 80C  Thermal Throttling  Devices:    Monitor Driver  Battery Driver } Thermal Zone 2 {   _PSV = 90C  Thermal Throttling  Devices:    Monitor Driver  Battery Driver }
 ```
 

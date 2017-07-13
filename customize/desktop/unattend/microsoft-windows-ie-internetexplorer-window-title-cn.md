@@ -59,7 +59,7 @@ For a list of the supported Windows editions and architectures that this compone
 
 The following XML output specifies the text appended to the window title.
 
-``` syntax
+```
 <Window_Title_CN>Fabrikam</Window_Title_CN>
 ```
 

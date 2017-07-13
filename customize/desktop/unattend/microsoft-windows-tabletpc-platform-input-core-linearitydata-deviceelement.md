@@ -61,7 +61,7 @@ For the list of the supported Windows editions and architectures that this compo
 
 The following XML output shows how to configure `DeviceElement`.
 
-``` syntax
+```
 <LinearityData>
 <DeviceElement wcm:action="add" wcm:keyValue="MyKey">11</DeviceElement>
 </LinearityData>

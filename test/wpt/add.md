@@ -22,7 +22,7 @@ Adds a profile to the collection.
 ## Syntax
 
 
-``` syntax
+```
 HRESULT Add
   ([in] IProfile* pProfile,
   [in] VARIANT_BOOL fMerge)

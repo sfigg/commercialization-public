@@ -20,7 +20,7 @@ Removes a custom key combination, causing Keyboard Filter to stop blocking the r
 ## Syntax
 
 
-``` syntax
+```
 [Static] uint32 Remove(
     [In] string CustomKey
 );
@@ -49,7 +49,7 @@ Because this method is static, you cannot call it on an object instance, but mus
 
 The following code demonstrates how to remove a custom key from Keyboard Filter so it is no longer blocked by using the Windows Management Instrumentation (WMI) providers for Keyboard Filter.
 
-``` syntax
+```
 $COMPUTER = "localhost"
 $NAMESPACE = "root\standardcimv2\embedded"
 

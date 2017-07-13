@@ -25,7 +25,7 @@ For Windows PE images that are available in the Windows Assessment and Deployme
 
 1.  Mount the Windows PE image to an available mount point. For example:
 
-    ``` syntax
+    ```
     Dism /mount-image /imagefile:C:\winpe_x86\ISO\sources\boot.wim /index:<image_index> /mountdir:C:\winpe_x86\mount
     ```
 
@@ -33,7 +33,7 @@ For Windows PE images that are available in the Windows Assessment and Deployme
 
 2.  Run the **setsanpolicy** command. For example:
 
-    ``` syntax
+    ```
     Setsanpolicy.cmd <image_path> <policy_number>
     ```
 
@@ -88,7 +88,7 @@ For Windows PE images that are available in the Windows Assessment and Deployme
 
 3.  Unmount the image and commit the changes. For example:
 
-    ``` syntax
+    ```
     Dism /unmount-image /mountdir:C:\winpe_x86\mount /commit
     ```
 

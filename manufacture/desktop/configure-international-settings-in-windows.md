@@ -33,13 +33,13 @@ In Windows 10, you can use the International Settings Windows PowerShell cmdlet
 
 3.  Display the locale information on the computer by running the following command:
 
-    ``` syntax
+    ```
     Get-WinSystemLocale
     ```
 
     Set the locale for the region and language that you want. For example, the following command sets the system locale to Japanese (Japan):
 
-    ``` syntax
+    ```
     Set-WinSystemLocale ja-JP
     ```
 
@@ -76,19 +76,19 @@ You can use Deployment Imaging Servicing and Management (DISM) to change the int
 
 1.  Mount a Windows image. For example,
 
-    ``` syntax
+    ```
     Dism /Mount-Image /ImageFile:C:\my_distribution\sources\install.wim /Index:1 /MountDir:C:\mount\windows
     ```
 
 2.  Get the language settings that are configured in the Windows image by using the **/Get-Intl** parameter. For example
 
-    ``` syntax
+    ```
     Dism /image:C:\mount\windows /Get-Intl
     ```
 
 3.  Change the default language, locale, and other international settings by using the **/set-allInlt** parameter.
 
-    ``` syntax
+    ```
     Dism /image:C:\mount\windows /set-allIntl:fr-fr
     ```
 

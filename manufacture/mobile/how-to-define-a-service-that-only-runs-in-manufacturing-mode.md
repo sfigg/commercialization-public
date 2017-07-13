@@ -18,7 +18,7 @@ There may be cases where you want a service to be normally disabled but automati
 
 Here's an example manufacturing profile:
 
-``` syntax
+```
 <?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="urn:Microsoft.WindowsPhone/PackageSchema.v8.00"
         Owner="Contoso"

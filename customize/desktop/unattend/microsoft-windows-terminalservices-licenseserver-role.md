@@ -61,7 +61,7 @@ For the list of the supported Windows editions and architectures that this compo
 
 The following XML output specifies that the Terminal Services license server role is for a workgroup and a domain.
 
-``` syntax
+```
 <Role>0</Role>
 ```
 

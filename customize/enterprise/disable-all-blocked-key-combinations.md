@@ -20,7 +20,7 @@ The following sample Windows PowerShell script uses the WMI providers to disable
 ## Disable-all-rules.ps1
 
 
-``` syntax
+```
 #
 # Copyright (C) Microsoft. All rights reserved.
 #

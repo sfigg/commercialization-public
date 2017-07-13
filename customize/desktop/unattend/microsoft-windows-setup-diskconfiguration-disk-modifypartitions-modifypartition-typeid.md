@@ -167,7 +167,7 @@ For a list of Windows editions and architectures that this component supports, s
 
 The following XML output for the `DiskConfiguration` setting shows partition modifications that set the recovery partition with the utility partition type. This partition does not appear with a drive letter in Windows.
 
-``` syntax
+```
       <ModifyPartition wcm:action="add">
         <Order>1</Order> 
         <PartitionID>1</PartitionID> 

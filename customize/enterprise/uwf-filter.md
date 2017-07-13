@@ -20,7 +20,7 @@ Enables or disables Unified Write Filter (UWF), resets configuration settings fo
 ## Syntax
 
 
-``` syntax
+```
 class UWF_Filter{
     [key]  string Id;
     [read] boolean CurrentEnabled;
@@ -135,7 +135,7 @@ The second function, `Enable-UWF`, retrieves a WMI object for **UWF\_Filter**, a
 
 The third function, `Display-UWFState`, examines the properties of the **UWF\_Filter** object, and prints out the current settings for **UWF\_Filter**.
 
-``` syntax
+```
 $COMPUTER = "localhost"
 $NAMESPACE = "root\standardcimv2\embedded"
 

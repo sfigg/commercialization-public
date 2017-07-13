@@ -20,7 +20,7 @@ Calls Windows Update to download and install critical and security updates for y
 ## Syntax
 
 
-``` syntax
+```
 UInt32 UpdateWindows(
     [out] UInt32 UpdateStatus
 );

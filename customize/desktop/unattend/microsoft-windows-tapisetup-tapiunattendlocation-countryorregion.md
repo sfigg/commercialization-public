@@ -71,7 +71,7 @@ For the list of the supported Windows editions and architectures that this compo
 
 The following example shows how to set the location that you are calling from.
 
-``` syntax
+```
 <TapiUnattendLocation>
    <AreaCode>123</AreaCode>
    <CountryOrRegion>246</CountryOrRegion>

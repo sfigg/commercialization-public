@@ -22,7 +22,7 @@ Returns a status code after the end of an operation.
 ## Syntax
 
 
-``` syntax
+```
 HRESULT OnEnd(HRESULT hrResult);
 ```
 

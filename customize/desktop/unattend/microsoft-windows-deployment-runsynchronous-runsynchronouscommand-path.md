@@ -68,7 +68,7 @@ The following XML output shows how to set synchronous commands.
 
 The first command runs an application on the local hard drive. The command includes the environment variable %ProgramFiles%. The second command runs a command from the network.
 
-``` syntax
+```
 <RunSynchronous>
    <RunSynchronousCommand wcm:action="add">
       <Description>Command1-Local</Description>

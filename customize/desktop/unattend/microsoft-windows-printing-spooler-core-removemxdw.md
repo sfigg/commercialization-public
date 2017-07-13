@@ -77,7 +77,7 @@ For a list of the supported Windows editions and architectures that this compone
 
 The following XML output shows how to remove the XPS Document Writer print queue and driver package.
 
-``` syntax
+```
 <RemoveMXDW>1</RemoveMXDW>
 ```
 

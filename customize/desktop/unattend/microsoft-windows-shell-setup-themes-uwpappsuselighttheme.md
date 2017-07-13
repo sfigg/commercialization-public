@@ -65,7 +65,7 @@ For a list of the supported Windows editions and architectures that this compone
 
 The following XML output shows how to set a customized theme.
 
-``` syntax
+```
 In Windows 10, build 1607, a setting has been added for light/dark mode toggle. 
     <settings pass=”oobeSystem”> 
         <Themes> 

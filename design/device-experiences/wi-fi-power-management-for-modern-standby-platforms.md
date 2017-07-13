@@ -405,7 +405,7 @@ In this configuration, which is shown in the [preceding block diagram](#block-di
 
 The Wi-Fi device must be able to generate a wake interrupt over an out-of-band signal line routed from an interrupt output pin on the Wi-Fi device to a GPIO pin on the SoC. The interrupt line from the device must be connected to an always-on GPIO pin on the SoC so that the Wi-Fi device's wake signal can wake the SoC from its lowest power state during modern standby. The system integrator must use the ACPI GpioInt macro to describe the GPIO interrupt connection under the Wi-Fi device in the ACPI namespace. The **Shared** field of the GpioInt macro must be set to ExclusiveAndWake to indicate that the GPIO interrupt is capable of waking the system from sleep. The ExclusiveAndWake setting enables the ACPI driver to automatically complete the wait-wake IRP for the Wi-Fi device, and to return the device to connected-idle (D0) mode if the device is in connected-sleep (D2) mode when it interrupts the SoC. The ACPI firmware must indicate that the Wi-Fi device can wake the platform from connected-sleep (D2) mode. To do so, the system integrator must include both \_S4W and \_S0W objects in the ACPI namespace under the Wi-Fi device, as shown in the following example:
 
-``` syntax
+```
     Name(_S0W, 2)
     Name(_S4W, 2)
 ```
@@ -430,7 +430,7 @@ When in D3, the device must be able to signal a wake event by sending a PM\_PME 
 
 To grant the operating system control over native PCIe features, the ACPI firmware must include an \_OSC control method in the ACPI namespace. In addition, the ACPI namespace must include an \_S0W object to indicate that the Wi-Fi device can wake the platform from connected-sleep mode or disconnected-sleep mode. This object must be located under the Wi-Fi device in the ACPI namespace, and declared as shown in the following example:
 
-``` syntax
+```
     Name(_S0W, 3)
 ```
 

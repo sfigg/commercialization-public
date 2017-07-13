@@ -26,7 +26,7 @@ You cannot remove the predefined key combination configurations for Keyboard Fil
 ## Remove-rules.ps1
 
 
-``` syntax
+```
 #
 # Copyright (C) Microsoft. All rights reserved.
 #

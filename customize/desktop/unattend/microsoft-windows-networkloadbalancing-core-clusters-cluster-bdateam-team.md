@@ -64,7 +64,7 @@ For the list of the supported Windows editions and architectures that this compo
 
 The following XML output specifies a valid GUID that identifies a BDA team.
 
-``` syntax
+```
 <Team>{BF967924-0DE6-11D0-A285-00AA003049E2}</Team>
 ```
 

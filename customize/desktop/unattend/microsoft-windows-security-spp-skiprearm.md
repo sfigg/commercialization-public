@@ -84,7 +84,7 @@ For a list of the Windows editions and architectures that this component support
 
 The following example XML output specifies that the Windows licensing state will not be changed.
 
-``` syntax
+```
 <SkipRearm>1</SkipRearm>
 ```
 

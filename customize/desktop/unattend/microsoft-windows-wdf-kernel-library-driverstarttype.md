@@ -61,7 +61,7 @@ For a list of the Windows editions and architectures that this component support
 
 The following XML output shows how to set the service to start on demand.
 
-``` syntax
+```
 <DriverStartType>3</DriverStartType>
 ```
 

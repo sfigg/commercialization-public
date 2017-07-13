@@ -90,19 +90,19 @@ To sort the localizable resources into separate .mui files, you can add the foll
 
 1.  Pre-build:
 
-    ``` syntax
+    ```
     rmdir /s /q “.\en-us”
     ```
 
 2.  Pre-link:
 
-    ``` syntax
+    ```
     mkdir “.\en-us”
     ```
 
 3.  Post-build line 1:
 
-    ``` syntax
+    ```
     muirct.exe -q "DoReverseMuiLoc.rcconfig" -v 2 -x 0x0409 -g 0x0409 ".\Debug\DisplayStrings0409.dll" ".\Debug\DisplayStrings.dll" ".\en-us\DisplayStrings.dll.mui"
     ```
 
@@ -110,7 +110,7 @@ To sort the localizable resources into separate .mui files, you can add the foll
 
 4.  Post-build line 2:
 
-    ``` syntax
+    ```
     muirct.exe -c ".\Debug\DisplayStrings.dll" -e ".\en-us\DisplayStrings.dll.mui"
     ```
 
@@ -130,7 +130,7 @@ To sort the localizable resources into separate .mui files, you can add the foll
 
 DoReverseMuiLoc.rcconfig is an XML file that contains the following lines. Copy this XML file to the *ProjectRootDirectory*\\*ProjectName* folder.
 
-``` syntax
+```
 <?xml version="1.0" encoding="utf-8"?>
     <localization>
         <resources>
@@ -177,7 +177,7 @@ To add the resource .dll files to a phone image and access localized strings in 
 
 1.  Add the DisplayStrings.dll file and the DisplayStrings.dll.*LCID*.mui files to your customization answer file by using the following syntax.
 
-    ``` syntax
+    ```
     <Settings Path="Localization/MUI">  
       <!-- Use to add your base MUI DLL file -->
       <Asset Name="BaseDll" Source="C:\Path\DisplayStrings.dll" />
@@ -196,7 +196,7 @@ To add the resource .dll files to a phone image and access localized strings in 
 
 2.  To access strings from a resource .dll file in a customization asset, set the `DisplayName` attribute for the asset to the name of the resource-only .dll file and specify the string offset as shown in the following customization answer file excerpt.
 
-    ``` syntax
+    ```
     <!-- Use to add one additional alarm sound -->
     <Settings Path="EventSounds">  
       <Asset Name="AlarmSounds" DisplayName="@DisplayStrings.dll,-101" Source="C:\Path\NewAlarmSound.wma" />

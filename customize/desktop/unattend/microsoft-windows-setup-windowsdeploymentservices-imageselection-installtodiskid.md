@@ -57,7 +57,7 @@ For the list of the Windows editions and architectures that this component suppo
 
 The following XML output shows a complete Windows Deployment Services deployment.
 
-``` syntax
+```
 <WindowsDeploymentServices>
    <Login>
       <WillShowUI>OnError</WillShowUI>

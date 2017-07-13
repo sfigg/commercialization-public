@@ -62,7 +62,7 @@ For a list of the supported Windows editions and architectures that this compone
 
 The following XML output shows how to configure Internet Explorer to allow arbitrary code execution from virtual memory pages marked as non-executable.
 
-``` syntax
+```
 <DisableDataExecutionPrevention>false</DisableDataExecutionPrevention>
 ```
 

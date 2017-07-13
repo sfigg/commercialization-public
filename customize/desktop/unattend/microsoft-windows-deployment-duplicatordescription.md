@@ -59,7 +59,7 @@ For a list of the supported Windows editions and architectures that this compone
 
 The following XML output specifies the duplication tool.
 
-``` syntax
+```
 <DuplicatorDescription>MyDescription</DuplicatorDescription>
 ```
 

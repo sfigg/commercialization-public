@@ -65,7 +65,7 @@ For a list of the Windows editions and architectures that this component support
 
 The following XML output shows how to promote two other notification icons to be visible in place of the **Action Center** and **Battery** icons.
 
-``` syntax
+```
 <NotificationArea>
   <PromotedIcon1>
     <Path>%PROGRAMFILES%\Fabrikam\Application1.exe</Path>

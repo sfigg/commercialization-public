@@ -29,7 +29,7 @@ The `Group` setting specifies the name of a [FirewallGroup](networking-mpssvc-sv
 
 In unattended installations, you can use a string for the **Group** setting—for example, "Remote Desktop." However, to specify a Group in an answer file that applies to multilingual unattended installations, you can reference an indirect string resource stored in the FirewallAPI.dll binary. For example, to enable Remote Desktop, use the following:
 
-``` syntax
+```
 <Group>@FirewallAPI.dll,-28752</Group>
 ```
 
@@ -73,7 +73,7 @@ For a list of the supported Windows editions and architectures that this compone
 
 The following XML output shows how to set two Windows Firewall groups. The first group is set using the name of the group. The second is set using information from the @FirewallAPI.dll file.
 
-``` syntax
+```
 <FirewallGroups>
       <FirewallGroup wcm:action="add" wcm:keyValue="WindowsMediaPlayer">
       <Active>true</Active> 

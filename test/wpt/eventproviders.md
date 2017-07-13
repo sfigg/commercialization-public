@@ -37,7 +37,7 @@ Represents a collection of event provider identifiers and event providers.
 ## Syntax
 
 
-``` syntax
+```
 <EventProviders Operation = "Set" | "Add" | “Remove”>
 
   <!-- Child elements -->
@@ -146,7 +146,7 @@ Represents a collection of event provider identifiers and event providers.
 
 For managed scenarios, use the following event provider definition:
 
-``` syntax
+```
 <EventCollectorId Value ="WPAEventCollector">
   <EventProviders>
     <EventProviderId Value="EventProvider_DotNetProvider" />

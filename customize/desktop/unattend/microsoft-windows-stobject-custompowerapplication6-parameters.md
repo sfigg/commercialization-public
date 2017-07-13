@@ -64,7 +64,7 @@ For the list of the supported Windows editions and architectures that this compo
 
 The following XML output shows `CustomPowerApplication6` Application.exe with `parameter -param`. `IconID` and `ItemName` are included in Resource.dll.
 
-``` syntax
+```
 <CustomPowerApplication6>
    <Application>C:\Program Files\CustomPower\Application.exe</Application>
    <IconID>@%ProgramFiles%\Microsoft Shared\Resource.dll,-200</IconID>

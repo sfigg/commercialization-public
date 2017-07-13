@@ -22,7 +22,7 @@ Loads a profile from a file.
 ## Syntax
 
 
-``` syntax
+```
 HRESULT LoadFromFile
   ([in] BSTR bstrProfileName,
   [in] BSTR bstrFileName)

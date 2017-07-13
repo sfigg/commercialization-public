@@ -32,7 +32,7 @@ You can also add language packs to Windows Preinstallation and Windows Recovery 
 
 2.  Type the following command to add a language pack (Greek, in this example) to the operating system. 
 
-    ``` syntax
+    ```
     Dism /online /Add-Package /PackagePath:D:\x64\LangPacks\Microsoft-Windows-Client-Language-Pack_x64_el-gr.cab
     ```
 

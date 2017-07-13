@@ -16,7 +16,7 @@ ms.technology: windows-oem
 
 This function is used to retrieve the boot mode and optional profile name from the UEFI firmware.
 
-``` syntax
+```
 typedef EFI_STATUS
 (EFIAPI *EFI_GET_BOOT_MODE_INFO)(
     IN  struct _EFI_BOOT_MODE_MGMT_PROTOCOL *This,

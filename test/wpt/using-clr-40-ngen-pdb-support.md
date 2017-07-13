@@ -39,19 +39,19 @@ To use NGEN support with Xperf, do the following:
 
 1.  At an elevated command prompt, type the following:
 
-    ``` syntax
+    ```
     set _NT_SYMBOL_PATH=srv*C:\Symbols.NGEN;srv*http://msdl.microsoft.com/download/symbols
     ```
 
 2.  Type the following to start the kernel session:
 
-    ``` syntax
+    ```
     xperf -on Base -stackwalk Profile -f kernel.etl
     ```
 
 3.  Type the following to start the CLR runtime session recording:
 
-    ``` syntax
+    ```
     xperf -start ClrSession -on ClrAll:0x98:5 -f clr.etl -buffersize 128 -minbuffers 256 -maxbuffers 512
     ```
 
@@ -59,19 +59,19 @@ To use NGEN support with Xperf, do the following:
 
 5.  Type the following to start the CLR rundown session:
 
-    ``` syntax
+    ```
     xperf -start ClrRundownSession -on ClrAll:0x118:5+a669021c-c450-4609-a035-5af59af4df18:0x118:5 -f clr_DCend.etl -buffersize 128 -minbuffers 256 -maxbuffers 512
     ```
 
 6.  Type the following to allow time for CLR rundown to complete by setting the timeout to 15:
 
-    ``` syntax
+    ```
     timeout /t 15
     ```
 
 7.  Type the following to stop the CLR runtime session, CLR rundown session, and kernel session, and to merge them into a single file:
 
-    ``` syntax
+    ```
     xperf -stop ClrSession ClrRundownSession -stop -d recording.etl
     ```
 
@@ -80,7 +80,7 @@ To use NGEN support with Xperf, do the following:
 
 At an elevated command prompt, type the following:
 
-``` syntax
+```
 set _NT_SYMBOL_PATH=srv*C:\Symbols.NGEN;srv*http://msdl.microsoft.com/download/symbols
 ```
 
@@ -89,7 +89,7 @@ set _NT_SYMBOL_PATH=srv*C:\Symbols.NGEN;srv*http://msdl.microsoft.com/download/s
 
 To transfer a recording with CLR 4.0 NGEN PDB support enabled, include the following in the symbol path:
 
-``` syntax
+```
 srv*C:\Symbols.NGEN
 ```
 

@@ -70,7 +70,7 @@ For a list of the supported Windows editions and architectures that this compone
 
 The following XML output shows how to specify that the computer balances memory usage with network performance.
 
-``` syntax
+```
 <LmAnnounce>true</LmAnnounce>
 <Size>2</Size>
 ```

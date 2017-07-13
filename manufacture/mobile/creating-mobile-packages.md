@@ -88,7 +88,7 @@ In this walkthrough, we're extending the [Configure Quick actions](https://msdn.
 
 1.  Write the MCSF policy setting that corresponds to the following registry key:
 
-    ``` syntax
+    ```
     $(HKLM.SOFTWARE)\Microsoft\Shell\OEM\QuickActions\Slot\X
     Type:  REG_SZ
     Possible values:  
@@ -114,7 +114,7 @@ In this walkthrough, we're extending the [Configure Quick actions](https://msdn.
 
     The following code example shows how the MCSF policy settings for the quick actions can be declared:
 
-    ``` syntax
+    ```
         <SettingsGroup Path="Notifications/QuickActions">  
           <!-- Default Quick actions configuration -->  
           <Setting Name="QuickActionSlot1" Description="App to place in quick action slot 1.">  

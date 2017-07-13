@@ -22,7 +22,7 @@ Cancels a recording without saving any data.
 ## Syntax
 
 
-``` syntax
+```
 HRESULT Cancel
   ([in] IProfileCollection* pProfileCollection)
 ;

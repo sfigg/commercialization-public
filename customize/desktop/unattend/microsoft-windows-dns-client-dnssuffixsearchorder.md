@@ -29,7 +29,7 @@ However, the entries are not guaranteed to be applied in any particular order.
 
 To ensure that the correct ordering of DNS servers, use [Key](microsoft-windows-dns-client-interfaces-interface-dnsserversearchorder-ipaddress-key.md) in [DNSServerSearchOrder](microsoft-windows-dns-client-interfaces-interface-dnsserversearchorder.md) and [Key](microsoft-windows-dns-client-dnssuffixsearchorder-domainname-key.md) in `DNSSuffixSearchOrder` to specify the order in which each DNS server should be searched. For example,
 
-``` syntax
+```
    <DNSServerSearchOrder>
       <IpAddress wcm:action="add" wcm:keyValue="2">2001:4898:28:4:213:20ff:fe16:3e96</IpAddress>
       <IpAddress wcm:action="add" wcm:keyValue="3">172.16.1.12</IpAddress>
@@ -39,7 +39,7 @@ To ensure that the correct ordering of DNS servers, use [Key](microsoft-windows-
 
 You can also use the [Key](microsoft-windows-dns-client-dnssuffixsearchorder-domainname-key.md) setting under `DNSSuffixSearchOrder` element to ensure that suffixes are searched in a specific order. For example,
 
-``` syntax
+```
    <DNSSuffixSearchOrder>
       <DomainName wcm:action="add" wcm:keyValue="2">fabrikam.com</DomainName>
       <DomainName wcm:action="add" wcm:keyValue="3">server2.fabrikam.com</DomainName>
@@ -103,7 +103,7 @@ For the list of the supported Windows editions and architectures that this compo
 
 The following XML output shows a DNS domain configuration for Fabrikam.
 
-``` syntax
+```
    <DNSDomain>fabrikam.com</DNSDomain>
    <DNSSuffixSearchOrder>
       <DomainName wcm:action="add" wcm:keyValue="1">server1.fabrikam.com</DomainName>

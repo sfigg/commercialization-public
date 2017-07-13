@@ -41,7 +41,7 @@ You shouldn't include a test computer in multiple Windows Assessment Services se
 
 1.  On a running test computer, log on to the Windows Assessment Services server. For example, at a command prompt, type:
 
-    ``` syntax
+    ```
     Net use \\<servername>\relax /u:localadmin Pass.word
     ```
 
