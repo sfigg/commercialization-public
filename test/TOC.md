@@ -390,7 +390,6 @@
 ### [Retrieve retail ETW logs](mobile-tracing/retrieve-retail-etw-logs.md)
 ### [Field Medic](mobile-tracing/field-medic.md)
 #### [Use Field Medic to generate a report](mobile-tracing/use-field-medic-to-generate-a-report.md)
-#### [Use Field Medic from a command prompt](mobile-tracing/use-field-medic-from-a-command-prompt.md)
 #### [Custom logging with Field Medic](mobile-tracing/custom-logging-with-field-medic.md)
 ### [Capture event trace logs on Windows 10 Mobile](mobile-tracing/capture-event-trace-logs-on-windows-phone.md)
 ### [Capture power management events on Windows 10 Mobile](mobile-tracing/capture-power-management-events-on-windows-phone.md)
