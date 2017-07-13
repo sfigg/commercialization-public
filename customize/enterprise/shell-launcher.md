@@ -58,14 +58,15 @@ Shell Launcher is an optional component and is not turned on by default in Windo
 
 1.  In the **Search the web and Windows** field, type **Programs and Features** and either press **Enter** or tap or click **Programs and Features** to open it.
 2.  In the **Programs and Features** window, click **Turn Windows features on or off**.
-3.  For Windows 10, version 1511 , in the **Windows Features** box, select **Embedded Shell Launcher**.
+3.  For Windows 10, version 1511, in the **Windows Features** box, select **Embedded Shell Launcher**.
 
-    For Windows 10, version 1607 , in the **Windows Features** window, expand the **Device Lockdown** node, select or clear the checkbox for **Shell Launcher**, and then click **OK.**
+    For Windows 10, version 1607, in the **Windows Features** window, expand the **Device Lockdown** node, select or clear the checkbox for **Shell Launcher**, and then click **OK.**
 
 4.  The **Windows Features** window indicates that Windows is searching for required files and displays a progress bar. Once found, the window indicates that Windows is applying the changes. When completed, the window indicates the requested changes are completed.
 5.  Click **Close** to close the **Windows Features** window.
 
-    **Note**  Turning on Shell Launcher does not require a device restart.
+    > [!Note]  
+    > Turning on Shell Launcher does not require a device restart.
 
      
 
