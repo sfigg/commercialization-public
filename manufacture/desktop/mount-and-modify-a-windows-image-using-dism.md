@@ -43,7 +43,7 @@ You can mount an image using the **/optimize** option to reduce initial mount ti
     You can also add options to mount the image with read-only permissions or to reduce the initial mount time with the **/Optimize** option. For example,
 
     ```
-    DISM /Mount-Wim /WimFile:<path_to_WIM_file> {/Index:<image_index> | /Name:<image_name> /MountDir:<target_mount_directory> [/readonly]
+    DISM /Mount-Wim /WimFile:<path_to_WIM_file> {/Index:<image_index> | /Name:<image_name> /MountDir:<target_mount_directory> [/readonly] /[optimize]}
     ```
 
     For more information about the options available for the **/Mount-Image** option in DISM, see [DISM Image Management Command-Line Options](dism-image-management-command-line-options-s14.md).
