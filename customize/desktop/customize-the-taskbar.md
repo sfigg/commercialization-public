@@ -56,7 +56,7 @@ There are eight steps to customize the taskbar with up to three additional pinne
 
 2.  Create a TaskbarLayoutModification.xml file that includes the pins. Here is an example of the xml you’d add to the TaskbarLayoutModification.xml to add three pinned apps.
 
-    ```
+   ``` 
     <?xml version="1.0" encoding="utf-8"?>
     <LayoutModificationTemplate
         xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification"
