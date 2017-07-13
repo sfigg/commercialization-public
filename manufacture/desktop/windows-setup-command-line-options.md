@@ -19,21 +19,21 @@ The following command-line options are available for Windows Setup. Beginning w
 **setup.exe** 
 
 > [!div class="op_single_selector"]
-> - [1394Debug](#1)
+> - [1394Debug:\<channel> baudrate:\<baudrate>](#1)
 > - [AddBootMgrLast](#2)
 > - [Auto {Clean | DataOnly | Upgrade}](#3)
-> - [BusParams:](#4)
+> - [BusParams:\<bus.device.function>](#4)
 > - [CompactOS {Enable / Disable}](#5)
 > - [Compat {IgnoreWarning / ScanOnly}](#6)
 > - [CopyLogs\<location>](#7)
 > - [Debug:\<port> {BaudRate:\<baudrate>}](#8)
 > - [DiagnosticPrompt {enable | disable}](#9)
 > - [DynamicUpdate {enable | disable}](#10)
-> - [EMSPort](#11)
+> - [EMSPort: {COM1 | COM2 | usebiossettings | off} /emsbaudrate:\<baudrate>](#11)
 > - [InstallDrivers\<location>:](#12)
 > - [InstallFrom\<path>](#13)
 > - [InstallLangPacks\<location>](#14)
-> - [/m:\<*folder_name*>](#15)
+> - [/m:\<*folder_name*> /noreboot](#15)
 > - [MigrateDrivers {all | none}](#16)
 > - [NetDebug](#17)
 > - [NoReboot](#18)
@@ -51,71 +51,6 @@ The following command-line options are available for Windows Setup. Beginning w
 > - [USBDebug:\<hostname>](#30)
 > - [WDSDiscover](#31)
 > - [WDSServer:\<servername>](#32)
-
-\[**/1394debug:***&lt;channel&gt;* \[**baudrate:***&lt;baudrate&gt;*\]\]
-
-\[**/addbootmgrlast**\]
-
-\[**/Auto** {**Clean** | **DataOnly** | **Upgrade**}\]
-
-\[**/busparams:***&lt;bus.device.function&gt;*\]
-
-\[**/CompactOS** {**Enable** | **Disable**}\]
-
-\[**/Compat** {**IgnoreWarning** | **ScanOnly**}\]
-
-\[**/CopyLogs***&lt;location&gt;*\]
-
-\[**/debug:***&lt;channel&gt;* \[**baudrate:***&lt;baudrate&gt;*\]\]
-
-\[**/DiagnosticPrompt** {**Enable** | **Disable**}\]
-
-\[**/DynamicUpdate** {**enable** | **disable**}\]
-
-\[**/emsport:** {**COM1** | **COM2** | **usebiossettings** | **off**} \[**/emsbaudrate:***&lt;baudrate&gt;*\]\]
-
-\[**/InstallDrivers***&lt;location&gt;*\]
-
-\[**/installfrom** *&lt;path&gt;*\]
-
-\[**/InstallLangPacks***&lt;location&gt;*\]
-
-\[**/m:***&lt;folder\_name&gt;*\] \[**/noreboot**\] 
-
-\[**/MigrateDrivers** {**all** | **none**}\]
-
-\[**/netdebug:**hostip=&lt;*w.x.y.z*&gt;,port=&lt;*n*&gt;,key=&lt;*q.r.s.t*&gt;\[,nodhcp\]\[,busparams=*n.o.p*\]\]
-
-\[**/NoReboot**\]
-
-\[**/PKey** *&lt;product key&gt;*\]
-
-\[**/PostOOBE***&lt;location&gt;*\[**\\setupcomplete.cmd**\]\]
-
-\[**/PostRollback***&lt;location&gt;*\[**\\setuprollback.cmd**\]\]
-
-\[**/Quiet** \]
-
-\[**/ReflectDrivers***&lt;location&gt;*\]
-
-\[**/ResizeRecoveryPartition** {**Enable** | **Disable**}\]
-
-\[**/ShowOOBE** {**full** | **none**}\]
-
-\[**/Telemetry** {**Enable** | **Disable**}\]
-
-\[**/TempDrive** *&lt;drive_letter&gt;*\]
-
-\[**/unattend:***&lt;answer\_file&gt;*\]
-
-\[**/Uninstall** {**enable** | **disable**}\]
-
-\[**/usbdebug:***&lt;hostname&gt;*\]
-
-\[**/wdsdiscover**\]
-
-\[**/wdsserver:***&lt;servername&gt;*\]
-
 
 ## Setup Command-Line Options
 
