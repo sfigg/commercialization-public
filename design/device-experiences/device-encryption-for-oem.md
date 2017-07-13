@@ -14,7 +14,7 @@ Windows 10 device encryption is enabled only after users sign in with a **Micros
 
 ## Hardware requirements
 Device encryption is enabled when:
-- The device contains a **TPM** (Trusted Platform Module) with PCR7 support
+- The device contains a **TPM 2.0** (Trusted Platform Module) with PCR7 support
 - **UEFI Secure Boot** is enabled
 - **Platform Secure Boot** is enabled
 - **Direct memory access (DMA)** protections is enabled.  
