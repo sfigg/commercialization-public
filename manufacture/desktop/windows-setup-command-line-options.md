@@ -18,6 +18,40 @@ The following command-line options are available for Windows Setup. Beginning w
 
 **setup.exe** 
 
+> [!div class="op_single_selector"]
+> - [1394Debug](#1)
+> - [AddBootMgrLast](#2)
+> - [Auto {Clean | DataOnly | Upgrade}](#3)
+> - [BusParams:](#4)
+> - [CompactOS {Enable / Disable}](#5)
+> - [Compat {IgnoreWarning / ScanOnly}](#6)
+> - [CopyLogs\<location>](#7)
+> - [Debug:\<port> {BaudRate:\<baudrate>}](#8)
+> - [DiagnosticPrompt {enable | disable}](#9)
+> - [DynamicUpdate {enable | disable}](#10)
+> - [EMSPort](#11)
+> - [InstallDrivers\<location>:](#12)
+> - [InstallFrom\<path>](#13)
+> - [InstallLangPacks\<location>](#14)
+> - [/m:\<*folder_name*>](#15)
+> - [MigrateDrivers {all | none}](#16)
+> - [NetDebug](#17)
+> - [NoReboot](#18)
+> - [/PKey\<product key>](#19)
+> - [PostOOBE\<location> \\setupcomplete.exe](#20)
+> - [PostRollback\<location> \\setuprollback.exe](#21)
+> - [Quiet](#22)
+> - [ReflectDrivers\<location>](#23)
+> - [ResizeRecoveryPartition {Enable / Disable}](#24)
+> - [ShowOOBE {full / none}](#25)
+> - [Telemetry {Enable / Disable}](#26)
+> - [TempDrive \<drive_letter>](#27)
+> - [Unattend:\<answer_file>](#28)
+> - [Uninstall {enable / disable}](#29)
+> - [USBDebug:\<hostname>](#30)
+> - [WDSDiscover](#31)
+> - [WDSServer:\<servername>](#32)
+
 \[**/1394debug:***&lt;channel&gt;* \[**baudrate:***&lt;baudrate&gt;*\]\]
 
 \[**/addbootmgrlast**\]
