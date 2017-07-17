@@ -14,11 +14,11 @@ ms.technology: windows-oem
 
 ## Overview
 
-This topic covers information about how the manufacturing environment works with Windows 10 S.
+This topic covers the differences in the Windows 10 S manufacturing environment from the manufacturing environments of other versions of Windows.
 
 ## Code integrity policy
 
-The code integrity policy (CI) blocks the execution of unsigned or improperly signed binaries. Using unsupported binaries is only recommended when performing lab or factory image customization, or deployment where the execution environment is either WinPE or Audit Mode.
+The code integrity policy (CI) blocks the execution of unsigned or improperly signed binaries. Using unsupported binaries is only recommended when performing lab or factory image customization, or during deployment where the execution environment is either WinPE or Audit Mode.
 
 Once the CI policy is enabled on a system, it is enabled in two places:
 1. Windows 10 S, enforced at boot.
@@ -39,6 +39,10 @@ If you want a single WIM that includes multiple Windows editions including Windo
 ### Detect Windows 10 S with DISM
 
 You can use DISM to detect Windows 10 S (offline in WinPE or in Audit mode). In Audit mode, use `DISM /online /get-currentedition`. If an image is Windows 10 S, the command should return S. In WinPE, use `DISM /image:c:\ /get-currentedition`.
+
+## Audit mode
+
+Audit mode is availabe when manufacturing a Windows 10 S PC. By default, the [blocked inbox components](windows-10-s-planning.md#what-is-blocked-in-windows-10-s) are blocked in audit mode. If you need to use blocked inbox components during the manufacturing process, you can [enable manufacturing mode](windows-10-s-manufacturing-mode.md#enable-manufacturing-mode). If you enable manufacturing mode, you'll have to make sure to [disable manufacturing mode](windows-10-s-manufacturing-mode.md#remove-the-manufacturing-registry-key) prior to shipping your PC.
 
 ## OOBE
 
