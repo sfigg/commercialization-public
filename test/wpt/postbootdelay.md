@@ -5,7 +5,6 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: fef41639-e619-456f-95a6-776aa0b0036a
-ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
 ms.author: joshbax
@@ -34,7 +33,7 @@ Indicates the length of the delay, in seconds, after booting for an [OnOffTransi
 ## Syntax
 
 
-``` syntax
+```
 <PostBootDelay Value = SimpleDelayValueType>
 </PostBootDelay>
 ```
@@ -106,7 +105,7 @@ None.
 
 The following example shows how to configure this element.
 
-``` syntax
+```
 <OnOffTransitionConfiguration
   Id="OnOffTransitionConfiguration_Default_Boot"
   Name="OnOffTransitionConfiguration_Default_Boot"

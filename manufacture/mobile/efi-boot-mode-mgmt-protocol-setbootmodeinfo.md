@@ -16,7 +16,7 @@ ms.technology: windows-oem
 
 This function supplies a boot mode and optional profile name to the firmware to use on subsequent boots.
 
-``` syntax
+```
 typedef EFI_STATUS
 (EFIAPI *EFI_SET_BOOT_MODE_INFO)(
     IN  struct _EFI_BOOT_MODE_MGMT_PROTOCOL *This,

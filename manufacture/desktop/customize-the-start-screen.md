@@ -53,7 +53,7 @@ If you use both the CopyProfile and StartTiles settings in your unattended answe
 
     Apply the image to a test computer. For example, at an elevated command prompt, type:
 
-    ``` syntax
+    ```
     Dism /apply-image /imagefile:F:\install.wim /index:1 /ApplyDir:C:\
     ```
 
@@ -79,7 +79,7 @@ If you use both the CopyProfile and StartTiles settings in your unattended answe
 
     You must set the FilterAdministratorToken registry key in order to allow the Administrator account to run Windows Store apps. For example, at a command prompt, type:
 
-    ``` syntax
+    ```
     cmd /c reg add HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\system /v FilterAdministratorToken /t REG_DWORD /d 1 /f
     ```
 
@@ -110,7 +110,7 @@ You can use an unattended answer file to preserve the layout of the **Start** sc
 
 Example of the XML to set CopyProfile in an answer file:
 
-``` syntax
+```
 <settings pass="specialize">
    <component name="Microsoft-Windows-Shell-Setup" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
      <CopyProfile>true</CopyProfile>
@@ -140,7 +140,7 @@ When you generalize an image by using the Sysprep tool, hardware-specific settin
 
     You should reset the FilterAdministratorToken registry key before you deploy the image. For example, at a command prompt, type:
 
-    ``` syntax
+    ```
     cmd /c reg add HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\system /v FilterAdministratorToken /t REG_DWORD /d 0 /f
     ```
 
@@ -148,7 +148,7 @@ When you generalize an image by using the Sysprep tool, hardware-specific settin
 
 -   At an elevated command prompt, run Sysprep and specify the location of the unattended answer file. For example, type:
 
-    ``` syntax
+    ```
     %windir%\system32\Sysprep\Sysprep.exe /oobe /generalize /shutdown /unattend:f:\unattend.xml
     ```
 
@@ -163,7 +163,7 @@ You can customize the **Start** screen for Windows 10 Enterprise, Windows Serve
 
 2.  Run the Sysprep tool to initialize system cleanup. For example, from a command prompt type:
 
-    ``` syntax
+    ```
     %windir%\System32\Sysprep\sysprep.exe
     ```
 
@@ -171,13 +171,13 @@ You can customize the **Start** screen for Windows 10 Enterprise, Windows Serve
 
 3.  Copy the AppsFolderLayout.bin file from the user profile with the customized **Start** screen. For example, to copy the **Start** screen customizations for “TestProfile” to a USB flash drive, at a command prompt, type:
 
-    ``` syntax
+    ```
     xcopy C:\Users\TestProfile\AppData\Local\Microsoft\Windows\AppsFolderLayout.bin F:\ /h
     ```
 
 4.  In the mounted or online Windows image that you want to add the **Start** screen customizations to, copy the AppsFolderLayout.bin file to the default user profile. For example, at a command prompt, type:
 
-    ``` syntax
+    ```
     xcopy F:\AppsFolderLayout.bin C:\Users\Default\AppData\Local\Microsoft\Windows
     ```
 
@@ -200,7 +200,7 @@ You can use settings in an unattended answer file to specify how the app tiles d
 
     To use the unattend settings, you need the specific AppID string that is associated with an installed app. You can create this string by using the get-AppxPackage cmdlet in Windows PowerShell. The following example shows how to get the AppID string to use in the unattend settings for every app that is already installed on the computer:
 
-    ``` syntax
+    ```
     $installedapps = get-AppxPackage
     foreach ($app in $installedapps)
     {

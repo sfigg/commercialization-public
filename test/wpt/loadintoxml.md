@@ -5,7 +5,6 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: aa5556fa-d58a-450d-b217-93986c383239
-ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
 ms.author: joshbax
@@ -23,7 +22,7 @@ Obtains the XML format of all profiles in the [IProfileCollection](iprofilecolle
 ## Syntax
 
 
-``` syntax
+```
 [id(5), helpstring("LoadIntoXML")] HRESULT LoadIntoXML([out] BSTR* pbstrResults);
 ```
 

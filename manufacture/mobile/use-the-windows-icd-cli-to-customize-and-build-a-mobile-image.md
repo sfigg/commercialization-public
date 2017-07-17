@@ -249,7 +249,7 @@ In this section, we'll modify the customizations.xml file that was created from 
 
     For example:
 
-    ``` syntax
+    ```
     icd.exe /Build-ProvisioningPackage /CustomizationXML:"C:\CustomProject\customizations.xml" /PackagePath:"C:\CustomProject\output.ppkg" /StoreFile:C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Imaging and Configuration Designer\x86\Microsoft-Common-Provisioning.dat"
     ```
 

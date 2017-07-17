@@ -28,7 +28,7 @@ This is the syntax for **New-RequestForUpdate**:
 ## <span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>Syntax
 
 
-``` syntax
+```
 NAME
     New-RequestForUpdate
 SYNTAX
@@ -100,13 +100,13 @@ The **MOId** is the mobile operator at which the request for update is being tar
 
 Request a new update and store the result object in a Windows PowerShell variable named $result:
 
-``` syntax
+```
 $result = New-RequestForUpdate -FirmwareSubmissionTicketId TKT-SIGN-PROD-ABCD56 –RequestForUpdateType RetailServicing -SourceFirmwareSubmissionTicketId TKT-SIGN-PROD-XYZ123 -OemDeviceName P4301 -MOId 000-22
 ```
 
 Show the result on the console:
 
-``` syntax
+```
 PS> $result | Format-List
 
 Ticket             : TKT-SIGN-TEST-AB03ST-2
@@ -132,11 +132,11 @@ ExtensionData      : System.Runtime.Serialization.ExtensionDataObjectFile
 
 ### <span id="Example_usage_with_expected_output"></span><span id="example_usage_with_expected_output"></span><span id="EXAMPLE_USAGE_WITH_EXPECTED_OUTPUT"></span>Example usage with expected output
 
-``` syntax
+```
 $result = New-RequestForUpdate -FirmwareSubmissionTicketId TKT-SIGN-TEST-NONONO -RequestForUpdateType Trial -SourceFirmwareSubmissionTicketId TKT-SIGN-PROD-XYZ123 -OemDeviceName P4301 -MOId 000-22
 ```
 
-``` syntax
+```
 New-RequestForUpdate : An error has ocurred.  The request could not be
 processed because operation is not valid for current state of service.
 Details: The specified FirmwareSubmission ticket does not exist.
@@ -152,7 +152,7 @@ TKT-SIGN-TEST-NONONO  ...
 
 The following is the help documentation for the **New-RequestForUpdate** cmdlet from Windows PowerShell.
 
-``` syntax
+```
 PS C:\Windows\system32> get-help New-RequestForUpdate -full
 
 NAME

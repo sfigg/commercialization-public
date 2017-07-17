@@ -5,7 +5,6 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 62442c73-627c-4f91-b33e-ec3e55293d70
-ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
 ms.author: joshbax
@@ -23,7 +22,7 @@ Represents a profile that the client controls. The interface provides functions 
 ## Syntax
 
 
-``` syntax
+```
 {
   typedef enum
   {

@@ -5,7 +5,6 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 20262ec7-6b20-42cb-903f-1db57a9f1e58
-ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
 ms.author: joshbax
@@ -40,7 +39,7 @@ Describes the configuration to enable the kernel-mode provider. The system provi
 ## Syntax
 
 
-``` syntax
+```
 <SystemProvider Id   = IdType
                 Base = string>
 
@@ -165,7 +164,7 @@ For information about how to define pool tags, see [PoolTag](pooltag.md).
 ## Example
 
 
-``` syntax
+```
 <SystemProvider Id="system-provider">
   <Keywords>
     <Keyword Value="ProcessThread"/>

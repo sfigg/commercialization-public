@@ -5,7 +5,6 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: c9b194b8-c179-49da-ac8d-aae373c9d706
-ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
 ms.author: joshbax
@@ -32,7 +31,7 @@ Represents an on/off transition configuration.
 ## Syntax
 
 
-``` syntax
+```
 <OnOffTransitionConfiguration Id = IdType
                               Name = string
                               Type = "On/Off - Boot" | "On/Off - HybridBoot" | "On/Off - Shutdown" | ...>
@@ -178,7 +177,7 @@ Represents an on/off transition configuration.
 
 The following code example shows how to configure this element.
 
-``` syntax
+```
 <OnOffTransitionConfiguration
   Id="OnOffTransitionConfiguration_Default_Boot"
   Name="OnOffTransitionConfiguration_Default_Boot"

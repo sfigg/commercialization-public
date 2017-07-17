@@ -31,7 +31,7 @@ When setting up a PC to boot more than one operating system, you may sometimes l
 
     2.  Add boot options for a Windows operating system.
 
-        ``` syntax
+        ```
         Bcdboot D:\Windows
         ```
 

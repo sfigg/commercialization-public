@@ -19,7 +19,7 @@ Requests that the driver wake up from its current sleep state.
 ## <span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>Syntax
 
 
-``` syntax
+```
 DWORD WlanMTEAwake(
     __in                    HANDLE  hAdapter
 );

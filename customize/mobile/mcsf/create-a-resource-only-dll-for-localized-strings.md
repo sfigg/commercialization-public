@@ -90,19 +90,19 @@ To sort the localizable resources into separate .mui files, you can add the foll
 
 1.  Pre-build:
 
-    ``` syntax
+    ```
     rmdir /s /q “.\en-us”
     ```
 
 2.  Pre-link:
 
-    ``` syntax
+    ```
     mkdir “.\en-us”
     ```
 
 3.  Post-build line 1:
 
-    ``` syntax
+    ```
     muirct.exe -q "DoReverseMuiLoc.rcconfig" -v 2 -x 0x0409 -g 0x0409 ".\Debug\DisplayStrings0409.dll" ".\Debug\DisplayStrings.dll" ".\en-us\DisplayStrings.dll.mui"
     ```
 
@@ -110,7 +110,7 @@ To sort the localizable resources into separate .mui files, you can add the foll
 
 4.  Post-build line 2:
 
-    ``` syntax
+    ```
     muirct.exe -c ".\Debug\DisplayStrings.dll" -e ".\en-us\DisplayStrings.dll.mui"
     ```
 
@@ -130,7 +130,7 @@ To sort the localizable resources into separate .mui files, you can add the foll
 
 DoReverseMuiLoc.rcconfig is an XML file that contains the following lines. Copy this XML file to the *ProjectRootDirectory*\\*ProjectName* folder.
 
-``` syntax
+```
 <?xml version="1.0" encoding="utf-8"?>
     <localization>
         <resources>
@@ -177,7 +177,7 @@ To add the resource .dll files to a phone image and access localized strings in 
 
 1.  Add the DisplayStrings.dll file and the DisplayStrings.dll.*LCID*.mui files to your customization answer file by using the following syntax.
 
-    ``` syntax
+    ```
     <Settings Path="Localization/MUI">  
       <!-- Use to add your base MUI DLL file -->
       <Asset Name="BaseDll" Source="C:\Path\DisplayStrings.dll" />
@@ -196,7 +196,7 @@ To add the resource .dll files to a phone image and access localized strings in 
 
 2.  To access strings from a resource .dll file in a customization asset, set the `DisplayName` attribute for the asset to the name of the resource-only .dll file and specify the string offset as shown in the following customization answer file excerpt.
 
-    ``` syntax
+    ```
     <!-- Use to add one additional alarm sound -->
     <Settings Path="EventSounds">  
       <Asset Name="AlarmSounds" DisplayName="@DisplayStrings.dll,-101" Source="C:\Path\NewAlarmSound.wma" />
@@ -209,7 +209,7 @@ To add the resource .dll files to a phone image and access localized strings in 
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_phCustomization\p_phCustomization%5D:%20Create%20a%20resource-only%20.dll%20for%20localized%20strings%20%20RELEASE:%20%289/7/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+
 
 
 

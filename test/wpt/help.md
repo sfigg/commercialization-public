@@ -5,7 +5,6 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 0af009c2-5d2c-4b15-88d6-9f51b647c84e
-ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
 ms.author: joshbax
@@ -20,7 +19,7 @@ ms.technology: windows-oem
 
 Displays Help for Xperf options and actions.
 
-``` syntax
+```
 xperf -help [<option>|<action>]
 ```
 

@@ -5,7 +5,6 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: b0d95f7c-af59-4452-9a60-3ab1e06b072a
-ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
 ms.author: joshbax
@@ -56,7 +55,7 @@ Uniquely identifies a heap process.
 ## Syntax
 
 
-``` syntax
+```
 <HeapProcessId Value = unsignedLong>
 </HeapProcessId>
 ```

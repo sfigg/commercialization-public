@@ -31,19 +31,19 @@ To modify a power plans on your own PC, see [Power Plans: Frequently asked quest
 
     For example, to import a power plan that is named OutdoorPlan, type the following at a command prompt:
 
-    ``` syntax
+    ```
     powercfg -IMPORT C:\OutdoorPlan.pow
     ```
 
 3.  Type the following to find the GUID for all the power plans on the computer:
 
-    ``` syntax
+    ```
     powercfg -LIST
     ```
 
     The computer returns the list of available power plans. The following examples refer to these plans as *guidPlan1* and *guidPlan2*.
 
-    ``` syntax
+    ```
     Existing Power Schemes (* Active)
     -----------------------------------
     Power Scheme GUID: {guidPlan1}  (Balanced) *
@@ -54,7 +54,7 @@ To modify a power plans on your own PC, see [Power Plans: Frequently asked quest
 
 5.  Set the power plan that you want to set as the default as the active power plan. For example, you can use the following command:
 
-    ``` syntax
+    ```
     powercfg -SETACTIVE {guidPlan2}
     ```
 

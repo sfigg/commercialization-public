@@ -143,13 +143,13 @@ If you are required to remove the inbox Skype app due to policy requirements, yo
 
 To remove Skype online in audit mode from Windows PowerShell:
 
-```syntax
+```
 get-provisionedappxpackage -online | where-object {$_.displayname -eq "Microsoft.SkypeApp"} | Remove-ProvisionedAppxPackage -online
 ```
 
 To remove Skype offline with Windows PowerShell:
 
-```syntax
+```
 get-provisionedappxpackage -path c:\mount | where-object {$_.displayname -eq "Microsoft.SkypeApp"} | Remove-ProvisionedAppxPackage
 ```
 
@@ -157,12 +157,12 @@ To remove Skype offline using Dism.exe:
 
 1. Get the full package name:
 
-    ```syntax
+    ```
     Dism.exe /image:<Windows_volume> /get-provisionedappxpackages
     ```
 2. Remove the package, using the <PackageName> from the Microsoft.SkypeApp listing:
 
-    ```syntax
+    ```
     Dism.exe /image:<Windows_volume> /remove-provisionedappxpackage /PackageName:<PackageName>
     ```
     
@@ -172,7 +172,7 @@ Note: If you use the Windows 8 version of WinPE, then after any servicing operat
 
 To resolve this problem, after any servicing operation run from the Windows 8 version of WinPE, the OEM must run: 
 
-```syntax
+```
 dir %windir%\System32\catroot\{F750E6C3-38EE-11D1-85E5-00C04FC295EE}
 ```
 
@@ -189,31 +189,31 @@ To disable the app readiness service offline:
 1.	Create a .reg file where HKLM\Software\Microsoft\Windows\CurrentVersion\AppReadiness DisableInAuditMode is set to a value of 1.
 2.	Mount the Windows image. For example:
     
-    ```syntax
+    ```
     Dism /Mount-Image /ImageFile:"C:\Images\ModelSpecificImage.wim" /Name:"Fabrikam" /MountDir:"C:\mount\windows" /Optimize
     ```
     
 3.	Load the registry hive. For example:
     
-    ```syntax
+    ```
     reg load hklm\LoadedHive C:\mount\Windows\System32\config\SYSTEM
     ```
     
 4.	Add the registry value. For example, using a .reg file from your USB stick:
     
-    ```syntax
+    ```
     regedit /s e:\registry\regFile.reg
     ```
     
 5.	Unload the hive.
 
-    ```syntax
+    ```
     reg unload hklm\LoadedHive
     ```
     
 6.	Unmount the Windows image, committing changes. For example:
 
-    ```syntax
+    ```
     Dism /Unmount-Image /MountDir:"C:\mount\windows" /Commit
     ```
     
@@ -259,7 +259,7 @@ The installation of the test OS can be handled a variety of ways. Since the test
 
 **Important**: Disable TPM (Trusted Platform Module) auto-provisioning when booting into a test OS to ensure both good performance and to make sure the user’s OS has ownership of the module. To do this in Windows, you need to set the following registry keys: 
 
-```syntax
+```
 [HKLM\System\CurrentControlSet\Services\Tpm\WMI\NoAutoProvision] (REG_DWORD) to 1
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\TPM\WMI]
 "NoAutoProvision"=dword:00000001
@@ -285,7 +285,7 @@ Create an efficient and resilient imaging system with a minimum amount of overhe
     
 2. Create the hard drive partition structure using diskpart. 
 
-    ```syntax
+    ```
     diskpart /s F:\CreatePartitions-UEFI.txt
     ```
     
@@ -293,7 +293,7 @@ Create an efficient and resilient imaging system with a minimum amount of overhe
     
 3. Apply the images that you created using DISM to the Windows partitions. 
 
-    ```syntax
+    ```
     ApplyImage F:\Images\ThinImage.wim
     ```
     
@@ -308,14 +308,14 @@ Create an efficient and resilient imaging system with a minimum amount of overhe
     - Microsoft strongly advises that OEMs run DISM with the /StartComponentCleanup /resetbase flags to gain additional free disk space.
     - Ensure .NET Framework apps are compiled by running the following commands
         
-        ```syntax
+        ```
         C:\Windows\Microsoft.NET\Framework\v4.0.30319\ngen.exe update /queue
         C:\Windows\Microsoft.NET\Framework\v4.0.30319\ngen.exe eqi
         ```
         
         On 64-bit machines, do the same for 64-bit CLR:
 
-        ```syntax
+        ```
         C:\Windows\Microsoft.NET\Framework64\v4.0.30319\ngen.exe update /queue
         C:\Windows\Microsoft.NET\Framework64\v4.0.30319\ngen.exe eqi
         ```
@@ -323,7 +323,7 @@ Create an efficient and resilient imaging system with a minimum amount of overhe
     - Create the OA3 computer build report (CBR) using OAtool.exe, inject the key into firmware, and validate the provisioning.
     - If you’re using Windows Preinstallation Environment (WinPE) 5.x, fix the timestamps. (This step is not necessary if you’re using WinPE for Windows 10).
 
-        ```syntax
+        ```
         dir %windir%\System32\catroot\{F750E6C3-38EE-11D1-85E5-00C04FC295EE}
         ``` 
         
@@ -364,7 +364,7 @@ Ensure a good customer experience, while protecting the user data.
 
 To clear the TPM use the following commands:
 
-```syntax
+```
 $Tpm = Get-WmiObject -class Win32_Tpm -namespace "root\CIMv2\Security\MicrosoftTpm"
 $Tpm.SetPhysicalPresenceRequest(22)
 ```
@@ -380,887 +380,75 @@ To use Windows PE, you’ll need a customized Windows PE image with:
 
 You can use this checklist to plan your manufacturing tasks.
 
-<table width="97%">
-<thead>
-<tr>
-<td>
-<p><strong>Task</strong></p>
-</td>
-<td>
-<p><strong>Pre-EV phase</strong></p>
-</td>
-<td>
-<p><strong>EV phase</strong></p>
-</td>
-<td>
-<p><strong>DV phase</strong></p>
-</td>
-<td>
-<p><strong>PV phase</strong></p>
-</td>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p><strong>Prerequisite manufacturing work:</strong></p>
-</td>
-<td>
-<p><strong>Pre-EV</strong></p>
-</td>
-<td>
-<p><strong>EV</strong></p>
-</td>
-<td>
-<p><strong>DV</strong></p>
-</td>
-<td>
-<p><strong>PV</strong></p>
-</td>
-</tr>
-<tr>
-<td>
-<p>ODM chosen?</p>
-</td>
-<td><img src="https://i-technet.sec.s-msft.com/en-us/itpro/windows/manage/images/checkmark.png" alt="supported" /></td>
-<td>
-<p>-</p>
-</td>
-<td>
-<p>-</p>
-</td>
-<td>
-<p>-</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>OEM access to Windows&nbsp;10?</p>
-</td>
-<td><img src="https://i-technet.sec.s-msft.com/en-us/itpro/windows/manage/images/checkmark.png" alt="supported" /></td>
-<td>
-<p>-</p>
-</td>
-<td>
-<p>-</p>
-</td>
-<td>
-<p>-</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>ODM access to Windows&nbsp;10?</p>
-</td>
-<td><img src="https://i-technet.sec.s-msft.com/en-us/itpro/windows/manage/images/checkmark.png" alt="supported" /></td>
-<td>
-<p>-</p>
-</td>
-<td>
-<p>-</p>
-</td>
-<td>
-<p>-</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>OEM access to Manufacturing WEG?</p>
-</td>
-<td><img src="https://i-technet.sec.s-msft.com/en-us/itpro/windows/manage/images/checkmark.png" alt="supported" /></td>
-<td>
-<p>-</p>
-</td>
-<td>
-<p>-</p>
-</td>
-<td>
-<p>-</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>ODM access to Manufacturing WEG?</p>
-</td>
-<td><img src="https://i-technet.sec.s-msft.com/en-us/itpro/windows/manage/images/checkmark.png" alt="supported" /></td>
-<td>
-<p>-</p>
-</td>
-<td>
-<p>-</p>
-</td>
-<td>
-<p>-</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>ODM points of contact identified?</p>
-</td>
-<td><img src="https://i-technet.sec.s-msft.com/en-us/itpro/windows/manage/images/checkmark.png" alt="supported" /></td>
-<td>
-<p>-</p>
-</td>
-<td>
-<p>-</p>
-</td>
-<td>
-<p>-</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>OEM points of contact identified?</p>
-</td>
-<td><img src="https://i-technet.sec.s-msft.com/en-us/itpro/windows/manage/images/checkmark.png" alt="supported" /></td>
-<td>
-<p>-</p>
-</td>
-<td>
-<p>-</p>
-</td>
-<td>
-<p>-</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>ODM kick-off?</p>
-</td>
-<td><img src="https://i-technet.sec.s-msft.com/en-us/itpro/windows/manage/images/checkmark.png" alt="supported" /></td>
-<td>
-<p>-</p>
-</td>
-<td>
-<p>-</p>
-</td>
-<td>
-<p>-</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>OEM kick-off?</p>
-</td>
-<td><img src="https://i-technet.sec.s-msft.com/en-us/itpro/windows/manage/images/checkmark.png" alt="supported" /></td>
-<td>
-<p>-</p>
-</td>
-<td>
-<p>-</p>
-</td>
-<td>
-<p>-</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Regular manufacturing call?</p>
-</td>
-<td>
-<p>-</p>
-</td>
-<td><img src="https://i-technet.sec.s-msft.com/en-us/itpro/windows/manage/images/checkmark.png" alt="supported" /></td>
-<td>
-<p>-</p>
-</td>
-<td>
-<p>-</p>
-</td>
-</tr>
-<tr>
-<td>
-<p><strong>Deployment:</strong></p>
-</td>
-<td>
-<p><strong>Pre-EV</strong></p>
-</td>
-<td>
-<p><strong>EV</strong></p>
-</td>
-<td>
-<p><strong>DV</strong></p>
-</td>
-<td>
-<p><strong>PV</strong></p>
-</td>
-</tr>
-<tr>
-<td>
-<p>OEM understanding of deployment concepts</p>
-</td>
-<td><img src="https://i-technet.sec.s-msft.com/en-us/itpro/windows/manage/images/checkmark.png" alt="supported" /></td>
-<td>
-<p>-</p>
-</td>
-<td>
-<p>-</p>
-</td>
-<td>
-<p>-</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>ODM understanding of deployment concepts</p>
-</td>
-<td><img src="https://i-technet.sec.s-msft.com/en-us/itpro/windows/manage/images/checkmark.png" alt="supported" /></td>
-<td>
-<p>-</p>
-</td>
-<td>
-<p>-</p>
-</td>
-<td>
-<p>-</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Using Windows&nbsp;10 DISM</p>
-</td>
-<td>
-<p>-</p>
-</td>
-<td><img src="https://i-technet.sec.s-msft.com/en-us/itpro/windows/manage/images/checkmark.png" alt="supported" /></td>
-<td>
-<p>-</p>
-</td>
-<td>
-<p>-</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Using Windows&nbsp;10 Windows PE</p>
-</td>
-<td>
-<p>-</p>
-</td>
-<td><img src="https://i-technet.sec.s-msft.com/en-us/itpro/windows/manage/images/checkmark.png" alt="supported" /></td>
-<td>
-<p>-</p>
-</td>
-<td>
-<p>-</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Extended attributes applied via DISM</p>
-</td>
-<td>
-<p>-</p>
-</td>
-<td><img src="https://i-technet.sec.s-msft.com/en-us/itpro/windows/manage/images/checkmark.png" alt="supported" /></td>
-<td>
-<p>-</p>
-</td>
-<td>
-<p>-</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>WinSxS check being run? /AnalyzeComponentStore</p>
-</td>
-<td>
-<p>-</p>
-</td>
-<td><img src="https://i-technet.sec.s-msft.com/en-us/itpro/windows/manage/images/checkmark.png" alt="supported" /></td>
-<td>
-<p>-</p>
-</td>
-<td>
-<p>-</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Image is cleaned up? (DISM /Cleanup-Image /StartComponentCleanup /ResetBase)</p>
-</td>
-<td>
-<p>-</p>
-</td>
-<td><img src="https://i-technet.sec.s-msft.com/en-us/itpro/windows/manage/images/checkmark.png" alt="supported" /></td>
-<td>
-<p>-</p>
-</td>
-<td>
-<p>-</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Push-button reset</p>
-</td>
-<td>
-<p><strong>Pre-EV</strong></p>
-</td>
-<td>
-<p><strong>EV</strong></p>
-</td>
-<td>
-<p><strong>DV</strong></p>
-</td>
-<td>
-<p><strong>PV</strong></p>
-</td>
-</tr>
-<tr>
-<td>
-<p>OEM understanding of push-button reset concepts</p>
-</td>
-<td>
-<p>-</p>
-</td>
-<td><img src="https://i-technet.sec.s-msft.com/en-us/itpro/windows/manage/images/checkmark.png" alt="supported" /></td>
-<td>
-<p>-</p>
-</td>
-<td>
-<p>-</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>ODM understanding of push-button reset concepts</p>
-</td>
-<td>
-<p>-</p>
-</td>
-<td><img src="https://i-technet.sec.s-msft.com/en-us/itpro/windows/manage/images/checkmark.png" alt="supported" /></td>
-<td>
-<p>-</p>
-</td>
-<td>
-<p>-</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Recommended partition layout to use for Windows RE and push-button reset?</p>
-</td>
-<td>
-<p>-</p>
-</td>
-<td>
-<p>-</p>
-</td>
-<td><img src="https://i-technet.sec.s-msft.com/en-us/itpro/windows/manage/images/checkmark.png" alt="supported" /></td>
-<td>
-<p>-</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>If a non-standard partition layout is used, is bare-metal recovery configured?</p>
-</td>
-<td>
-<p>-</p>
-</td>
-<td>
-<p>-</p>
-</td>
-<td><img src="https://i-technet.sec.s-msft.com/en-us/itpro/windows/manage/images/checkmark.png" alt="supported" /></td>
-<td>
-<p>-</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Recovery image ACL settings correct?</p>
-</td>
-<td>
-<p>-</p>
-</td>
-<td>
-<p>-</p>
-</td>
-<td><img src="https://i-technet.sec.s-msft.com/en-us/itpro/windows/manage/images/checkmark.png" alt="supported" /></td>
-<td>
-<p>-</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Refresh/reset time is within guidelines?</p>
-</td>
-<td>
-<p>-</p>
-</td>
-<td>
-<p>-</p>
-</td>
-<td>
-<p>-</p>
-</td>
-<td><img src="https://i-technet.sec.s-msft.com/en-us/itpro/windows/manage/images/checkmark.png" alt="supported" /></td>
-</tr>
-<tr>
-<td>
-<p><strong>Windows RE:</strong></p>
-</td>
-<td>
-<p><strong>Pre-EV</strong></p>
-</td>
-<td>
-<p><strong>EV</strong></p>
-</td>
-<td>
-<p><strong>DV</strong></p>
-</td>
-<td>
-<p><strong>PV</strong></p>
-</td>
-</tr>
-<tr>
-<td>
-<p>OEM understanding of Windows RE concepts</p>
-</td>
-<td>
-<p>-</p>
-</td>
-<td><img src="https://i-technet.sec.s-msft.com/en-us/itpro/windows/manage/images/checkmark.png" alt="supported" /></td>
-<td>
-<p>-</p>
-</td>
-<td>
-<p>-</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>ODM understanding of Windows RE concepts</p>
-</td>
-<td>
-<p>-</p>
-</td>
-<td><img src="https://i-technet.sec.s-msft.com/en-us/itpro/windows/manage/images/checkmark.png" alt="supported" /></td>
-<td>
-<p>-</p>
-</td>
-<td>
-<p>-</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Windows RE is enabled</p>
-</td>
-<td>
-<p>-</p>
-</td>
-<td>
-<p>-</p>
-</td>
-<td><img src="https://i-technet.sec.s-msft.com/en-us/itpro/windows/manage/images/checkmark.png" alt="supported" /></td>
-<td>
-<p>-</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Windows RE location is correct</p>
-</td>
-<td>
-<p>-</p>
-</td>
-<td>
-<p>-</p>
-</td>
-<td><img src="https://i-technet.sec.s-msft.com/en-us/itpro/windows/manage/images/checkmark.png" alt="supported" /></td>
-<td>
-<p>-</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>BCD GUID for Windows RE matches Windows RE GUID entry in Reagent.xml</p>
-</td>
-<td>
-<p>-</p>
-</td>
-<td>
-<p>-</p>
-</td>
-<td><img src="https://i-technet.sec.s-msft.com/en-us/itpro/windows/manage/images/checkmark.png" alt="supported" /></td>
-<td>
-<p>-</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Image index is correct</p>
-</td>
-<td>
-<p>-</p>
-</td>
-<td>
-<p>-</p>
-</td>
-<td><img src="https://i-technet.sec.s-msft.com/en-us/itpro/windows/manage/images/checkmark.png" alt="supported" /></td>
-<td>
-<p>-</p>
-</td>
-</tr>
-<tr>
-<td>
-<p><strong>Manufacturing:</strong></p>
-</td>
-<td>
-<p><strong>Pre-EV</strong></p>
-</td>
-<td>
-<p><strong>EV</strong></p>
-</td>
-<td>
-<p><strong>DV</strong></p>
-</td>
-<td>
-<p><strong>PV</strong></p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Windows RE partition size (MB) and position on selected disk</p>
-</td>
-<td>
-<p>-</p>
-</td>
-<td><img src="https://i-technet.sec.s-msft.com/en-us/itpro/windows/manage/images/checkmark.png" alt="supported" /></td>
-<td>
-<p>-</p>
-</td>
-<td>
-<p>-</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Test partition uses full Windows</p>
-</td>
-<td>
-<p>-</p>
-</td>
-<td>
-<p>-</p>
-</td>
-<td><img src="https://i-technet.sec.s-msft.com/en-us/itpro/windows/manage/images/checkmark.png" alt="supported" /></td>
-<td>
-<p>-</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Image deployment via [NIC] or [duplication]</p>
-</td>
-<td>
-<p>-</p>
-</td>
-<td><img src="https://i-technet.sec.s-msft.com/en-us/itpro/windows/manage/images/checkmark.png" alt="supported" /></td>
-<td>
-<p>-</p>
-</td>
-<td>
-<p>-</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>OPM key provisioning plan done?</p>
-</td>
-<td>
-<p>-</p>
-</td>
-<td><img src="https://i-technet.sec.s-msft.com/en-us/itpro/windows/manage/images/checkmark.png" alt="supported" /></td>
-<td>
-<p>-</p>
-</td>
-<td>
-<p>-</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Language packs per SKU</p>
-</td>
-<td>
-<p>-</p>
-</td>
-<td>
-<p>-</p>
-</td>
-<td><img src="https://i-technet.sec.s-msft.com/en-us/itpro/windows/manage/images/checkmark.png" alt="supported" /></td>
-<td>
-<p>-</p>
-</td>
-</tr>
-<tr>
-<td>
-<p><strong>Secure boot:</strong></p>
-</td>
-<td>
-<p><strong>Pre-EV</strong></p>
-</td>
-<td>
-<p><strong>EV</strong></p>
-</td>
-<td>
-<p><strong>DV</strong></p>
-</td>
-<td>
-<p><strong>PV</strong></p>
-</td>
-</tr>
-<tr>
-<td>
-<p>OEM understanding of security concepts</p>
-</td>
-<td><img src="https://i-technet.sec.s-msft.com/en-us/itpro/windows/manage/images/checkmark.png" alt="supported" /></td>
-<td>
-<p>-</p>
-</td>
-<td>
-<p>-</p>
-</td>
-<td>
-<p>-</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>ODM understanding of security concepts</p>
-</td>
-<td><img src="https://i-technet.sec.s-msft.com/en-us/itpro/windows/manage/images/checkmark.png" alt="supported" /></td>
-<td>
-<p>-</p>
-</td>
-<td>
-<p>-</p>
-</td>
-<td>
-<p>-</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Secure boot process tested with preproduction signing?</p>
-</td>
-<td>
-<p>-</p>
-</td>
-<td>
-<p>-</p>
-</td>
-<td><img src="https://i-technet.sec.s-msft.com/en-us/itpro/windows/manage/images/checkmark.png" alt="supported" /></td>
-<td>
-<p>-</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Watermark off?</p>
-</td>
-<td>
-<p>-</p>
-</td>
-<td>
-<p>-</p>
-</td>
-<td>
-<p>-</p>
-</td>
-<td><img src="https://i-technet.sec.s-msft.com/en-us/itpro/windows/manage/images/checkmark.png" alt="supported" /></td>
-</tr>
-<tr>
-<td>
-<p>Drivers signed from IHV/ISV?</p>
-</td>
-<td>
-<p>-</p>
-</td>
-<td>
-<p>-</p>
-</td>
-<td>
-<p>-</p>
-</td>
-<td><img src="https://i-technet.sec.s-msft.com/en-us/itpro/windows/manage/images/checkmark.png" alt="supported" /></td>
-</tr>
-<tr>
-<td>
-<p>Drivers signed by Microsoft?</p>
-</td>
-<td>
-<p>-</p>
-</td>
-<td>
-<p>-</p>
-</td>
-<td>
-<p>-</p>
-</td>
-<td><img src="https://i-technet.sec.s-msft.com/en-us/itpro/windows/manage/images/checkmark.png" alt="supported" /></td>
-</tr>
-<tr>
-<td>
-<p>Re-manufacturing process complete [factory]</p>
-</td>
-<td>
-<p>-</p>
-</td>
-<td>
-<p>-</p>
-</td>
-<td><img src="https://i-technet.sec.s-msft.com/en-us/itpro/windows/manage/images/checkmark.png" alt="supported" /></td>
-<td>
-<p>-</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Re-manufacturing process complete [field service]</p>
-</td>
-<td>
-<p>-</p>
-</td>
-<td>
-<p>-</p>
-</td>
-<td><img src="https://i-technet.sec.s-msft.com/en-us/itpro/windows/manage/images/checkmark.png" alt="supported" /></td>
-<td>
-<p>-</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Secure boot and debug policy plans vetted by FT</p>
-</td>
-<td>
-<p>-</p>
-</td>
-<td><img src="https://i-technet.sec.s-msft.com/en-us/itpro/windows/manage/images/checkmark.png" alt="supported" /></td>
-<td>-</td>
-<td>
-<p>-</p>
-</td>
-</tr>
-<tr>
-<td>
-<p><strong>OA 3.0:</strong></p>
-</td>
-<td>
-<p><strong>Pre-EV</strong></p>
-</td>
-<td>
-<p><strong>EV</strong></p>
-</td>
-<td>
-<p><strong>DV</strong></p>
-</td>
-<td>
-<p><strong>PV</strong></p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Using updated OA3tool.exe</p>
-</td>
-<td>
-<p>-</p>
-</td>
-<td>
-<p>-</p>
-</td>
-<td><img src="https://i-technet.sec.s-msft.com/en-us/itpro/windows/manage/images/checkmark.png" alt="supported" /></td>
-<td>
-<p>-</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Validate image/key offline</p>
-</td>
-<td>
-<p>-</p>
-</td>
-<td>
-<p>-</p>
-</td>
-<td><img src="https://i-technet.sec.s-msft.com/en-us/itpro/windows/manage/images/checkmark.png" alt="supported" /></td>
-<td>
-<p>-</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Injection done in `[Windows PE][Windows]`</p><p>Refer to the OEM Activation 3.0 section.</p>
-</td>
-<td>
-<p>-</p>
-</td>
-<td>
-<p>-</p>
-</td>
-<td><img src="https://i-technet.sec.s-msft.com/en-us/itpro/windows/manage/images/checkmark.png" alt="supported" /></td>
-<td>
-<p>-</p>
-</td>
-</tr>
-</tbody>
-</table>
+|Task|Pre-EV phase|EV phase|DV phase|PV phase|
+|--- |--- |--- |--- |--- |
+|**Prerequisite manufacturing work:**|**Pre-EV**|**EV**|**DV**|**PV**|
+|ODM chosen?|✔|-|-|-|
+|OEM access to Windows 10?|✔|-|-|-|
+|ODM access to Windows 10?|✔|-|-|-|
+|OEM access to Manufacturing WEG?|✔|-|-|-|
+|ODM access to Manufacturing WEG?|✔|-|-|-|
+|ODM points of contact identified?|✔|-|-|-|
+|OEM points of contact identified?|✔|-|-|-|
+|ODM kick-off?|✔|-|-|-|
+|OEM kick-off?|✔|-|-|-|
+|Regular manufacturing call?|-|✔|-|-|
+|**Deployment:**|**Pre-EV**|**EV**|**DV**|**PV**|
+|OEM understanding of deployment concepts|✔|-|-|-|
+|ODM understanding of deployment concepts|✔|-|-|-|
+|Using Windows 10 DISM|-|✔|-|-|
+|Using Windows 10 Windows PE|-|✔|-|-|
+|Extended attributes applied via DISM|-|✔|-|-|
+|WinSxS check being run? /AnalyzeComponentStore|-|✔|-|-|
+|Image is cleaned up? (DISM /Cleanup-Image /StartComponentCleanup /ResetBase)|-|✔|-|-|
+|**Push-button reset**|**Pre-EV**|**EV**|**DV**|**PV**|
+|OEM understanding of push-button reset concepts|-|✔|-|-|
+|ODM understanding of push-button reset concepts|-|✔|-|-|
+|Recommended partition layout to use for Windows RE and push-button reset?|-|-|✔|-|
+|If a non-standard partition layout is used, is bare-metal recovery configured?|-|-|✔|-|
+|Recovery image ACL settings correct?|-|-|✔|-|
+|Refresh/reset time is within guidelines?|-|-|-|✔|
+|**Windows RE:**|**Pre-EV**|**EV**|**DV**|**PV**|
+|OEM understanding of Windows RE concepts|-|✔|-|-|
+|ODM understanding of Windows RE concepts|-|✔|-|-|
+|Windows RE is enabled|-|-|✔|-|
+|Windows RE location is correct|-|-|✔|-|
+|BCD GUID for Windows RE matches Windows RE GUID entry in Reagent.xml|-|-|✔|-|
+|Image index is correct|-|-|✔|-|
+|**Manufacturing:**|**Pre-EV**|**EV**|**DV**|**PV**|
+|Windows RE partition size (MB) and position on selected disk|-|✔|-|-|
+|Test partition uses full Windows|-|-|✔|-|
+|Image deployment via [NIC] or [duplication]|-|✔|-|-|
+|OPM key provisioning plan done?|-|✔|-|-|
+|Language packs per SKU|-|-|✔|-|
+|**Secure boot:**|**Pre-EV**|**EV**|**DV**|**PV**|
+|OEM understanding of security concepts|✔|-|-|-|
+|ODM understanding of security concepts|✔|-|-|-|
+|Secure boot process tested with preproduction signing?|-|-|✔|-|
+|Watermark off?|-|-|-|✔|
+|Drivers signed from IHV/ISV?|-|-|-|✔|
+|Drivers signed by Microsoft?|-|-|-|✔|
+|Re-manufacturing process complete [factory]|-|-|✔|-|
+|Re-manufacturing process complete [field service]|-|-|✔|-|
+|Secure boot and debug policy plans vetted by FT|-|✔|-|-|
+|**OA 3.0:**|**Pre-EV**|**EV**|**DV**|**PV**|
+|Using updated OA3tool.exe|-|-|✔|-|
+|Validate image/key offline|-|-|✔|-|
+|Injection done in `[Windows PE][Windows]`Refer to the OEM Activation 3.0 section.|-|-|✔|-|
 
 ## Appendix
 
 ### Small disk footprint optimization
 
-The basic disk footprint of Windows 10 x86 with Office and 2GB of RAM will contain: 
+The basic disk footprint of Windows 10 x86 with Office and 2GB of RAM will contain:
 
-<table width="97%">
-<tbody>
-<tr>
-<td>
-<p>Windows (w/Office), Page file, hiberfile, swapfile, and two language packs</p>
-</td>
-<td>
-<p>11.7GB</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>WinRE</p>
-</td>
-<td>
-<p>500MB</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>System Partitions (MSR, ESP)</p>
-</td>
-<td>
-<p>428MB</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Total</p>
-</td>
-<td>
-<p>~23GB</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Available space for OEM customizations on a 32GB (29GB usable) device</p>
-</td>
-<td>
-<p>~6GB</p>
-</td>
-</tr>
-</tbody>
-</table>
+| | |
+|---|---|
+|Windows (w/Office), Page file, hiberfile, swapfile, and two language packs|11.7GB|
+|WinRE|500MB|
+|System Partitions (MSR, ESP)|428MB|
+|Total|~23GB|
+|Available space for OEM customizations on a 32GB (29GB usable) device|~6GB|
 
 Assumptions:
 
@@ -1286,7 +474,7 @@ Adding Windows Update KB packages can add significantly to the size of the disk.
 1.	Install KB and reboot if prompted
 2.	From an elevated command prompt, run the following commands:
 
-    ```syntax
+    ```
     dism.exe /online /cleanup-image /startcomponent
     ```
     
@@ -1337,14 +525,14 @@ Native image GENeration is a task compiling .NET framework’s MSIL (virtual mac
 
 On 32-bit, x86 ,or ARM devices:
 
-```syntax
+```
 C:\Windows\Microsoft.NET\Framework\v4.0.30319\ngen.exe update /queue
 C:\Windows\Microsoft.NET\Framework\v4.0.30319\ngen.exe eqi
 ```
 
 On 64-bit devices, do this for both versions of the .NET framework:
 
-```syntax
+```
 C:\Windows\Microsoft.NET\Framework\v4.0.30319\ngen.exe update /queue
 C:\Windows\Microsoft.NET\Framework\v4.0.30319\ngen.exe eqi
 C:\Windows\Microsoft.NET\Framework64\v4.0.30319\ngen.exe update /queue

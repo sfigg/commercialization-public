@@ -130,7 +130,7 @@ On your destination PC:
 
     UEFI:
 
-    ``` syntax
+    ```
     diskpart
     select disk 0
     clean

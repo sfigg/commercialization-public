@@ -21,7 +21,7 @@ The following is the syntax for the **Get-SignedFirmwareSubmission** cmdlet.
 ## <span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>Syntax
 
 
-``` syntax
+```
 NAME
      Get-SignedFirmwareSubmission
 SYNTAX
@@ -50,7 +50,7 @@ If any of the non-required parameters are explicitly specified on the command li
 
 To support Windows PowerShell automation scripts, the cmdlet returns an object of type `Microsoft.Phone.PartnerServices.SignedFirmwareSubmission`:
 
-``` syntax
+```
 TypeName: Microsoft.Phone.PartnerServices.SignedFirmwareSubmission
 
 Name        MemberType Definition
@@ -110,14 +110,14 @@ The following exceptions are thrown for their corresponding error scenarios.
 
 Retrieve the signed submission for a ticket and store the result object in a Windows PowerShell variable:
 
-``` syntax
+```
 PS> $result = Get-SignedFirmwareSubmission –FirmwareSubmissionTicketId TKT-SIGN-TEST-BTUADL 
 -DownloadDirectory C:\temp
 ```
 
 Show the result on the console:
 
-``` syntax
+```
 PS> $result | Format-List
 
 TicketId : TKT-SIGN-TEST-BTUADL
@@ -138,12 +138,12 @@ File     : c:\temp\OemTest.TKT-SIGN-TEST-BTUADL.zip
 
 Attempt to retrieve the signed submission for a ticket that is still in process:
 
-``` syntax
+```
 PS> Get-SignedFirmwareSubmission -FirmwareSubmissionTicketId TKT-SIGN-TEST-XD252Y 
 -DownloadDirectory c:\temp
 ```
 
-``` syntax
+```
 Get-SignedFirmwareSubmission : An error has occurred.  The request could not be processed because the operation is not
 valid for the current state of service.
 Details: Unable to retrieve the specified firmware submission. Reason: Code signing is still in progress.
@@ -162,7 +162,7 @@ This state is indicated by the returned reason, “Code signing is still in prog
 
 If a custom PowerShell script is being used, it can be programmed to catch an exception (Microsoft.Phone.PartnerServices.Exceptions.FirmwareSubmissionInProgressException). That exception can be examined to determine if the submission has completed. The following code sample illustrates how to extract the error information from the returned result object.
 
-``` syntax
+```
       $result = ''
         try {
             $result = Get-SignedFirmwareSubmission -FirmwareSubmissionTicketId "TKT-SIGN-TEST-17Y8M5" -DownloadDirectory c:\MyFirmwareSubmissions
@@ -192,11 +192,11 @@ A loop can be constructed to wait (for at least 30 minutes) and then try again t
 
 Attempt to retrieve the signed submission for a ticket that has failed permanently:
 
-``` syntax
+```
 PS> Get-SignedFirmwareSubmission -FirmwareSubmissionTicketId TKT-SIGN-TEST-TUKJGG -DownloadDirectory c:\temp
 ```
 
-``` syntax
+```
 Get-SignedFirmwareSubmission : An error has occurred.  The request could not be
 processed because the operation is not valid for the current state of service.
 Details: Unable to retrieve the specified firmware submission. Reason: Code
@@ -223,11 +223,11 @@ TKT-SIGN-TEST ...
 
 ### <span id="Example_usage_with_expected_output"></span><span id="example_usage_with_expected_output"></span><span id="EXAMPLE_USAGE_WITH_EXPECTED_OUTPUT"></span>Example usage with expected output
 
-``` syntax
+```
 PS> Get-SignedFirmwareSubmission -FirmwareSubmissionTicketId bad_ticket_number -DownloadDirectory c:\temp
 ```
 
-``` syntax
+```
 Get-SignedFirmwareSubmission : An error has ocurred.  The request could not be
 processed because the operation is not valid for the current state of service.
 Details: The specified FirmwareSubmission ticket does not exist.
@@ -250,7 +250,7 @@ TKT-SIGN-TEST ...
 
 The following is the help documentation for the **Get-SignedFirmwareSubmission** cmdlet from Windows PowerShell.
 
-``` syntax
+```
 NAME
     Get-SignedFirmwareSubmission
 

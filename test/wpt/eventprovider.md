@@ -5,7 +5,6 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: bf7e4e86-e837-41f8-847f-42fc12c5a98c
-ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
 ms.author: joshbax
@@ -42,7 +41,7 @@ Configures the Event Tracing for Windows (ETW) user-mode provider.
 ## Syntax
 
 
-``` syntax
+```
 <EventProvider Id               = IdType
                Name             = string
                Base             = string
@@ -258,7 +257,7 @@ Derived event providers have all the attributes of the base provider by default.
 
 The following example defines two event providers.
 
-``` syntax
+```
 <EventProvider
   Id="Win32K-provider"
   Name="Microsoft-Windows-Win32K"
@@ -277,7 +276,7 @@ The following example defines two event providers.
 
 The following code examples define capture-state providers.
 
-``` syntax
+```
 <EventProvider Id="sample-provider" Name="SampleProvider" NonPagedMemory="true" Level="5">
   <Keywords>
     <Keyword Value="0x98"/> <!-- Provider is enabled with these keywords throughout the tracing session. -->
@@ -300,7 +299,7 @@ The following code examples define capture-state providers.
 
 For managed scenarios, use the following event provider definition:
 
-``` syntax
+```
 <EventCollectorId Value ="WPAEventCollector">
   <EventProviders>
     <EventProviderId Value="EventProvider_DotNetProvider" />

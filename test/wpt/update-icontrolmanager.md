@@ -5,7 +5,6 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4d3707c3-2694-47e9-845b-8d3767c0b2cc
-ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
 ms.author: joshbax
@@ -23,7 +22,7 @@ Updates a profile collection.
 ## Syntax
 
 
-``` syntax
+```
 HRESULT Update
   ([in] IProfileCollection* pProfileCollection)
 ;

@@ -5,7 +5,6 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: b8eab537-85ae-441e-aea9-486626ec0c16
-ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
 ms.author: joshbax
@@ -20,7 +19,7 @@ ms.technology: windows-oem
 
 This function registers and starts a kernel event tracing session. You can also enable stackwalking for certain kernel events using this function.
 
-``` syntax
+```
 ULONG
 WINAPI
 StartKernelTrace(

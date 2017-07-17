@@ -5,7 +5,6 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: b0b4c89c-70e7-4fe8-986d-e057b8074c9e
-ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
 ms.author: joshbax
@@ -20,7 +19,7 @@ ms.technology: windows-oem
 
 This action produces a text file that summarizes metrics for profiles.
 
-``` syntax
+```
 -a profile [-util [n]] [-detail] [-range T1 [T2]]
 ```
 

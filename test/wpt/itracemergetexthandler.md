@@ -5,7 +5,6 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 0827802d-a62a-4420-8bb9-83f8af650669
-ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
 ms.author: joshbax
@@ -23,7 +22,7 @@ Obtains the text and other metadata that was added by the user.
 ## Syntax
 
 
-``` syntax
+```
 {
     [propget, id(1), helpstring("Count")] HRESULT Count([out, retval] ULONG* cText);
     [id(2), helpstring("GetText")] HRESULT GetText([in] ULONG iText, [out] BSTR* pbstrText);

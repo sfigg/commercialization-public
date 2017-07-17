@@ -34,13 +34,13 @@ When Windows PE is running from the drive, you must turn off the PC before disc
 
     The 64-bit version of Windows PE can boot 64-bit UEFI and 64-bit BIOS PCs:
 
-    ``` syntax
+    ```
     copype amd64 C:\WinPE_amd64
     ```
 
     The 32-bit version of Windows PE can boot 32-bit UEFI, 32-bit BIOS, and 64-bit BIOS PCs:
 
-    ``` syntax
+    ```
     copype x86 C:\WinPE_x86
     ```
 
@@ -50,7 +50,7 @@ When Windows PE is running from the drive, you must turn off the PC before disc
 
 2.  From the **Deployment and Imaging Tools Environment**, create a working directory for the Windows PE files.
 
-    ``` syntax
+    ```
     copype amd64 C:\WinPE_amd64
     ```
 
@@ -63,7 +63,7 @@ When Windows PE is running from the drive, you must turn off the PC before disc
 
     On UEFI-based PCs, Windows PE requires a boot partition formatted using the FAT32 file format, which only supports file sizes up to 4 GB. We recommend creating a separate partition on the drive, formatted using NTFS, so that you can store Windows images and other large files. To learn more, see [WinPE: Identify drive letters with a script](winpe-identify-drive-letters.md). 
 
-    ``` syntax
+    ```
     diskpart
     list disk
     select <disk number>
@@ -85,13 +85,13 @@ When Windows PE is running from the drive, you must turn off the PC before disc
 
 2.  Apply the Windows PE image to the hard drive.
 
-    ``` syntax
+    ```
     dism /Apply-Image /ImageFile:"C:\WinPE_amd64\media\sources\boot.wim" /Index:1 /ApplyDir:P:\
     ```
 
 3.  Set up the boot files.
 
-    ``` syntax
+    ```
     BCDboot P:\Windows /s P: /f ALL
     ```
 

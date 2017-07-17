@@ -5,7 +5,6 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: a1e0a35c-c074-4833-86a0-046aa6d4baf5
-ms.prod: W10
 ms.mktglfcycl: plan
 ms.sitesec: msdn
 ms.author: joshbax
@@ -43,7 +42,7 @@ Add network adapter (NIC) drivers to the Windows PE images that Windows Deploym
 
 1.  On the server, create a folder for the NIC drivers and copy them to the folder. For example, if your drivers are stored on a share, you can use a command such as the following:
 
-    ``` syntax
+    ```
     robocopy \\Server\share\drivers C:\Drivers\amd64NIC /MIR
     ```
 
@@ -97,11 +96,11 @@ To inventory x86-based test computers, you must use an x86-based Windows PE ima
 
 1.  On the technician computer where you created the Windows PE build environment, type the following command:
 
-    ``` syntax
+    ```
     xcopy %SystemDrive%\REMINST\Boot\x86\Images\RelaxWinPE.wim c:\winpe_x86\media\sources\boot.wim
     ```
 
-    ``` syntax
+    ```
     xcopy %SystemDrive%\REMINST\Boot\x64\Images\RelaxWinPE.wim c:\winpe_x64\media\sources\boot.wim
     ```
 

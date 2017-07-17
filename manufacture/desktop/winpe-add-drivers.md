@@ -32,13 +32,13 @@ You can also update device drivers while you're running Windows PE. For more in
 
     -   The 64-bit version can boot 64-bit UEFI and 64-bit BIOS PCs.
 
-        ``` syntax
+        ```
         copype amd64 C:\WinPE_amd64
         ```
 
     -   The 32-bit version can boot 32-bit UEFI, 32-bit BIOS, and 64-bit BIOS PCs.
 
-        ``` syntax
+        ```
         copype x86 C:\WinPE_x86
         ```
 
@@ -46,7 +46,7 @@ You can also update device drivers while you're running Windows PE. For more in
 
 -   Mount the Windows PE image.
 
-    ``` syntax
+    ```
     Dism /Mount-Image /ImageFile:"C:\WinPE_amd64\media\sources\boot.wim" /index:1 /MountDir:"C:\WinPE_amd64\mount"
     ```
 
@@ -57,7 +57,7 @@ You can also update device drivers while you're running Windows PE. For more in
 
 1.  Add the device driver to the Windows PE image.
 
-    ``` syntax
+    ```
     Dism /Add-Driver /Image:"C:\WinPE_amd64\mount" /Driver:"C:\SampleDriver\driver.inf"
     ```
 
@@ -68,7 +68,7 @@ You can also update device drivers while you're running Windows PE. For more in
 
 2.  Verify that the driver packages are part of the image:
 
-    ``` syntax
+    ```
     Dism /Get-Drivers /Image:"C:\WinPE_amd64\mount"
     ```
 
@@ -84,13 +84,13 @@ You can also update device drivers while you're running Windows PE. For more in
 
 1.  Unmount the Windows PE image.
 
-    ``` syntax
+    ```
     Dism /Unmount-Image /MountDir:"C:\WinPE_amd64\mount" /commit
     ```
 
 2.  Create bootable media, such as a USB flash drive.
 
-    ``` syntax
+    ```
     MakeWinPEMedia /UFD C:\WinPE_amd64 F:
     ```
 

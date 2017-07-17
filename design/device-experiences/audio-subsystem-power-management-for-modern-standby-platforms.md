@@ -149,7 +149,7 @@ The idle time-out settings are stored in registry entries that are located under
 
 The following .inf directives must be used to set a PerformanceIdleTime time-out of one second and a ConservationIdleTime time-out of one second:
 
-``` syntax
+```
 [MyAudioDevice.AddReg]
 HKR,PowerSettings,ConservationIdleTime,1,01,00,00,00
 HKR,PowerSettings,PerformanceIdleTime,1,01,00,00,00
@@ -246,7 +246,7 @@ On a system that has WPA installed, a set of commands can be used to collect pow
 
 To start power management ETW tracing, open a Command Prompt window as Administrator, change to the directory that contains WPA, and run the following commands:
 
-``` syntax
+```
 >xperf -start powertracesession -on Microsoft-Windows-Kernel-Power
 >xperf -capturestate powertracesession Microsoft-Windows-Kernel-Power
 ```
@@ -262,7 +262,7 @@ After the ETW tracing has started, the developer should exercise system scenario
 
 After these test scenarios have completed, use the following command stop ETW trace collection:
 
-``` syntax
+```
 >xperf -stop powertracesession -d trace.etl
 ```
 
@@ -292,7 +292,7 @@ System integrators and SoC vendors should use the following checklist to ensure 
     -   Set the IdlePowerState value to D3.
     -   In the .inf file for the audio driver, set IdlePowerState, PerformanceIdleTime, and ConservationIdleTime to the following values:
 
-        ``` syntax
+        ```
         [MyAudioDevice.AddReg]
         HKR,PowerSettings,ConservationIdleTime,1,01,00,00,00
         HKR,PowerSettings,PerformanceIdleTime,1,01,00,00,00

@@ -5,7 +5,6 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: bddf3860-873b-470d-8f41-a678f48e04b5
-ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
 ms.author: joshbax
@@ -20,7 +19,7 @@ ms.technology: windows-oem
 
 This action produces a text report that summarizes the metrics regarding drivers.
 
-``` syntax
+```
 -a drvdelay [-min [t]] [-name <driver>] [-range T1 T2]
 ```
 

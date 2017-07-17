@@ -27,13 +27,13 @@ Run these commands using DISM from a command prompt with administrator privilege
 
 Example: append an image of the D drive to an existing image called install.wim. Each new image receives a new index number, starting from 1.
 
-``` syntax
+```
 Dism /Append-Image /ImageFile:"C:\images\install.wim /CaptureDir:D:\ /Name:"Home + drivers"
  ```
 
 **See a list of the volume images contained in a .WIM file**
 
-``` syntax
+```
 Dism /Get-ImageInfo /ImageFile:"C:\images\install.wim"
 ```
 
@@ -41,7 +41,7 @@ Dism /Get-ImageInfo /ImageFile:"C:\images\install.wim"
 
 You can refer to an image either by image name or image index number. Examples:
 
-``` syntax
+```
 Dism /Apply-Image /ImageFile:"C:\images\install.wim" /Index:2 /ApplyDir:D:\
 
 Dism /Apply-Image /ImageFile:"C:\images\install.wim" /Name:"Home + drivers" /ApplyDir:D:\
@@ -53,7 +53,7 @@ Create a new .WIM file that includes only the files you need from a single volum
 
 Examples:
 
-``` syntax
+```
 Dism /Export-Image /SourceImageFile:"C:\images\install.wim" /SourceIndex:2 /DestinationImageFile:"C:\resetmedia_amd64\media\sources\install.wim"
 
 Dism /Export-Image /SourceImageFile:"C:\images\install.wim" /SourceName:"Home + drivers" /DestinationImageFile:"C:\resetmedia_amd64\media\sources\install.wim"

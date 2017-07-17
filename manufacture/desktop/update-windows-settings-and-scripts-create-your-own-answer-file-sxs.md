@@ -121,7 +121,7 @@ You can specify which configuration pass to add new settings:
 
     Add RunAsynchronousCommands for each registry key to add. (Right-click **RunAsynchronousCommand Properties** and click **Insert New AsynchronousCommand**).
     
-    ```syntax
+    ```
     Path = CMD /c REG ADD HKEY_LOCAL_MACHINE\Software\OEM /v Value /t REG_SZ ABCD
     Description = Adds a OEM registry key
     Order = 2
@@ -138,7 +138,7 @@ You can specify which configuration pass to add new settings:
 
 *  Set the Internet Explorer default search engine: Create a [RunAsynchronous](https://msdn.microsoft.com/library/windows/hardware/dn915799) command as shown above to add a registry key:
 
-   ```syntax
+   ```
    Path = `CMD /c REG.exe add HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\InternetSettings\Configuration m /v PartnerSearchCode /t REG_DWORD /d "https://search.fabrikam.com/search?p={searchTerms}" /f`   
    Description = Changes the Internet Explorer default browser to Fabrikam Search
    Order = 3
@@ -149,7 +149,7 @@ You can specify which configuration pass to add new settings:
 
    Example:
 
-   ```syntax
+   ```
    <component name="Microsoft-Windows-IE-InternetExplorer" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
    <SearchScopes>
      <Scope wcm:action="add">             <SuggestionsURL>http://api.bing.com/qsml.aspx?query={searchTerms}&amp;src={referrer:source?}&amp;maxwidth={ie:maxWidth}&amp;rowheight={ie:rowHeight}&amp;sectionHeight={ie:sectionHeight}&amp;FORM=IE8SSC&amp;market={Language}</SuggestionsURL>
@@ -165,7 +165,7 @@ You can specify which configuration pass to add new settings:
 
 *  Save drive space by reducing or turning off the hiberfile. The hiberfile helps speed up the time after the system powers up or recovers from low-power states. Create a [RunAsynchronous](https://msdn.microsoft.com/library/windows/hardware/dn915799) command as shown below. To learn more, see [Compact OS, single-instancing, and image optimization: RAM, Pagefile.sys, and Hiberfil.sys](compact-os.md#RAM)
 
-   ```syntax
+   ```
    Path = `powercfg /h /type reduced`   
    Description = Saves drive space by reducing hiberfile by 30%.
    Order = 4
@@ -174,7 +174,7 @@ You can specify which configuration pass to add new settings:
 
    or
 
-   ```syntax   
+   ```   
    Path = `powercfg /h /off`   
    Description = Turns off the hiberfile.
    Order = 4
@@ -192,7 +192,7 @@ You can specify which configuration pass to add new settings:
 
 -   Copy the following sample script into Notepad, and save it as **C:\\AnswerFiles\\SampleCommand.cmd**.
 
-    ``` syntax
+    ```
     @rem Scan the integrity of system files 
     @rem (Required after removing the base English language from an image)
     sfc.exe /scannow
@@ -220,7 +220,7 @@ Use the steps from [Lab 3: Add device drivers (.inf-style)](add-device-drivers.m
 **Step 7: Add the answer file**
 2.  Copy the answer file into the image into the **\\Windows\\Panther** folder, and name it unattend.xml. Create the folder if it doesn’t exist. If there’s an existing answer file, replace it or use Windows System Image Manager to edit/combine settings if necessary.
 
-    ``` syntax
+    ```
     MkDir c:\mount\windows\Windows\Panther
     Copy C:\AnswerFiles\BootToAudit-x64.xml  C:\mount\windows\Windows\Panther\unattend.xml
     MkDir c:\mount\windows\Fabrikam
@@ -235,7 +235,7 @@ Use the steps from [Lab 3: Add device drivers (.inf-style)](add-device-drivers.m
 
 2.  Commit the changes and unmount the Windows image:
 
-    ``` syntax
+    ```
     Dism /Unmount-Image /MountDir:"C:\mount\windows" /Commit
     ```
 

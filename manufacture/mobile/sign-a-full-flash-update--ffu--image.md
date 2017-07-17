@@ -37,7 +37,7 @@ Before images can be shipped on a retail device, they must be signed by Microsof
 
 2.  Add the directory for the sign.cmd script that is located in %WPDKCONTENTROOT%\\tools\\bin\\i386 to your path using the path command.
 
-    ``` syntax
+    ```
     C:\> PATH = %PATH%;%WPDKCONTENTROOT%\Tools\bin\I386
     ```
 
@@ -45,7 +45,7 @@ Before images can be shipped on a retail device, they must be signed by Microsof
 
 4.  Confirm that you have the latest version of the kit that includes updated versions of imagesigner.exe and imagecommon.dll by typing the following command. Confirm that the truncate option is displayed.
 
-    ``` syntax
+    ```
     C:\> ImageSigner /?
     Usage:
             imagsigner sign <FFU> <catalog file>
@@ -57,13 +57,13 @@ Before images can be shipped on a retail device, they must be signed by Microsof
 
 5.  Extract the first one MB of the FFU image which contains the FFU catalog and associated metadata using the truncate option.
 
-    ``` syntax
+    ```
     C:\> ImageSigner TRUNCATE OEM.ffu OEM.trunc
     ```
 
 6.  Extract the catalog from the truncated FFU image in Step 5.
 
-    ``` syntax
+    ```
     C:\> ImageSigner GETCATALOG OEM.trunc OEM.cat
     Platform ID: <OEMID>.QC8960.P728
     Successfully extracted catalog.
@@ -86,13 +86,13 @@ Before images can be shipped on a retail device, they must be signed by Microsof
 
 10. Sign the FFU with the retail Microsoft signed catalog file using ImageSigner.
 
-    ``` syntax
+    ```
     C:\> ImageSigner SIGN OEM.ffu OEM.cat
     ```
 
 11. Flash the retail signed retail image on to a device and verify that it behaves as expected.
 
-    ``` syntax
+    ```
     C:\> FFUTool -flash OEM.ffu
     ```
 
@@ -112,7 +112,7 @@ If your development environment includes work outside of Windows ICD, you can ma
 
 2.  Add the directory for the sign.cmd script that is located in %WPDKCONTENTROOT%\\tools\\bin\\i386 to your path using the path command.
 
-    ``` syntax
+    ```
     C:\> PATH = %PATH%;%WPDKCONTENTROOT%\Tools\bin\I386
     ```
 
@@ -120,20 +120,20 @@ If your development environment includes work outside of Windows ICD, you can ma
 
 4.  Extract the catalog of the unsigned FFU file.
 
-    ``` syntax
+    ```
     C:\> ImageSigner GETCATALOG TestSigned.FFU TestSigned.Cat
     ```
 
 5.  Sign the catalog using the /pk option.
 
-    ``` syntax
+    ```
     C:\> Set SIGN_OEM=1
     C:\> Sign.cmd /pk TestSigned.cat
     ```
 
 6.  Sign the FFU with the signed catalog file using ImageSigner.
 
-    ``` syntax
+    ```
     C:\> ImageSigner SIGN TestSigned.FFU TestSigned.Cat
     ```
 
@@ -153,7 +153,7 @@ Sign the catalog file using an appropriate certificate by performing the followi
 
 2.  Test sign a catalog file named `TestRetailSigned.cat` using a certificate named `TestCertName.pfx` by typing the following command.
 
-    ``` syntax
+    ```
     C:\> SignTool sign /f TestCertName.pfx  TestRetailSigned.cat
     ```
 
@@ -164,14 +164,14 @@ Sign the catalog file using an appropriate certificate by performing the followi
 
 3.  Create a signed .ffu file from the unsigned .ffu file and the matching signed .cat file using ImageSigner.exe tool.
 
-    ``` syntax
+    ```
     C:\> ImageSigner SIGN TestRetailSigned.FFU TestRetailSigned.Cat
     ```
 
 ## ImageSigner syntax reference
 
 
-``` syntax
+```
 ImageSigner {SIGN|GETCATALOG|TRUNCATE} FFUFile CatalogFile|TruncatedFFU
 ```
 
@@ -196,7 +196,7 @@ ImageSigner {SIGN|GETCATALOG|TRUNCATE} FFUFile CatalogFile|TruncatedFFU
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_phFlashing\p_phFlashing%5D:%20Sign%20a%20full%20flash%20update%20%28FFU%29%20image%20%20RELEASE:%20%2810/4/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+
 
 
 

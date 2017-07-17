@@ -5,7 +5,6 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 1d072198-f631-463a-886c-b69a48c1acd1
-ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
 ms.author: joshbax
@@ -51,7 +50,7 @@ WPR supports performance recording for both file and memory logging modes for ea
 
 The following code example shows **Example1.wprp**. This file contains two profile definitions. The ellipsis (…) represents the body of the profile.
 
-``` syntax
+```
 <Profile
   Id="Example1.Verbose.File"
   Name="Example1"
@@ -72,7 +71,7 @@ The following code example shows **Example1.wprp**. This file contains two profi
 
 The following code example shows **Example2.wprp**. This file contains four profile definitions. The ellipsis (…) represents the body of the profile.
 
-``` syntax
+```
 <Profile
   Id="Example2.Verbose.File"
   Name="Example2"
@@ -121,7 +120,7 @@ You can also define collectors and providers inside the profile definition.
 
 The following code example shows a complete profile definition.
 
-``` syntax
+```
 <Profile
   Id="Example.Light.File"
   Name="Example"

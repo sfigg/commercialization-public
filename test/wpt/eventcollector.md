@@ -5,7 +5,6 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: d7c94d21-b834-44f2-bad0-f0af6555bb5d
-ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
 ms.author: joshbax
@@ -32,7 +31,7 @@ Represents an event collector for the profile.
 ## Syntax
 
 
-``` syntax
+```
 <EventCollector Id             = IdType
                 Base           = string
                 Name           = string
@@ -205,7 +204,7 @@ Derived collectors inherit all attributes of the base collector unless they are 
 
 The following code example defines an event collector with 64 buffers of 128 KB each.
 
-``` syntax
+```
 <EventCollector
   Id="WPREventCollector"
   Name="WPR Event Collector"

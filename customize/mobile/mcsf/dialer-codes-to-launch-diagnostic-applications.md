@@ -45,7 +45,7 @@ In your PROVXML file, you must also set the **FullyPreinstall** flag to TRUE so 
 
 1.  Preload the OEM dialer application. To do this, use the following code example.
 
-    ``` syntax
+    ```
     <?xml version="1.0" encoding="utf-8" ?>  
     <!--  Copyright (c) Microsoft Corporation.  All rights reserved.  -->  
 
@@ -87,7 +87,7 @@ In your PROVXML file, you must also set the **FullyPreinstall** flag to TRUE so 
 
     In the customization answer file, add the following settings:
 
-    ``` syntax
+    ```
     <Static>
 
         <Settings Path="Phone/PartnerAppSupport"> 
@@ -147,7 +147,7 @@ Microsoft recommends that OEMs implement an input screen that is displayed when 
 
 The following code example shows how to parse the dialer code parameter that was passed. The code requests the **DialString** String object out of the **navigationContext** by calling the **QueryString.TryGetValue** function.
 
-``` syntax
+```
 string dialCode = "";if (NavigationContext.QueryString.TryGetValue("DialString", out dialCode)){   int intDialCode = int.Parse(dialCode);}
 ```
 
@@ -213,7 +213,7 @@ The following table describes the predefined application dialer codes available.
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_phCustomization\p_phCustomization%5D:%20Dialer%20codes%20to%20launch%20diagnostic%20applications%20%20RELEASE:%20%289/7/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+
 
 
 

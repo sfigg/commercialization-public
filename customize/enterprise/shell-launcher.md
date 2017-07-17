@@ -17,15 +17,15 @@ ms.technology: windows-oem
 
 You can use Shell Launcher to replace the default Windows 10 shell with a custom shell. You can use any application or executable as your custom shell, such as a command window or a custom dedicated application.
 
-**Warning**  
-You may specify any executable file to be the default shell except C:\\Windows\\System32\\Eshell.exe. Using Eshell.exe as the default shell will result in a blank screen after user signs in.
+> [!WARNING]
+> You may specify any executable file to be the default shell except C:\\Windows\\System32\\Eshell.exe. Using Eshell.exe as the default shell will result in a blank screen after user signs in.
 
  
 
 You can also configure Shell Launcher to launch different shell applications for different users or user groups.
 
-**Important**  
-You cannot use Shell Launcher to launch a Universal Windows app as a custom shell.
+> [!IMPORTANT]
+> You cannot use Shell Launcher to launch a Universal Windows app as a custom shell.
 
  
 
@@ -58,14 +58,15 @@ Shell Launcher is an optional component and is not turned on by default in Windo
 
 1.  In the **Search the web and Windows** field, type **Programs and Features** and either press **Enter** or tap or click **Programs and Features** to open it.
 2.  In the **Programs and Features** window, click **Turn Windows features on or off**.
-3.  For Windows 10, version 1511 , in the **Windows Features** box, select **Embedded Shell Launcher**.
+3.  For Windows 10, version 1511, in the **Windows Features** box, select **Embedded Shell Launcher**.
 
-    For Windows 10, version 1607 , in the **Windows Features** window, expand the **Device Lockdown** node, select or clear the checkbox for **Shell Launcher**, and then click **OK.**
+    For Windows 10, version 1607, in the **Windows Features** window, expand the **Device Lockdown** node, select or clear the checkbox for **Shell Launcher**, and then click **OK.**
 
 4.  The **Windows Features** window indicates that Windows is searching for required files and displays a progress bar. Once found, the window indicates that Windows is applying the changes. When completed, the window indicates the requested changes are completed.
 5.  Click **Close** to close the **Windows Features** window.
 
-    **Note**  Turning on Shell Launcher does not require a device restart.
+    > [!Note]  
+    > Turning on Shell Launcher does not require a device restart.
 
      
 
@@ -172,8 +173,8 @@ When a custom shell exits, Shell Launcher can perform one of four actions, based
 
  
 
-**Important**  
-Make sure that your shell application does not automatically exit and is not automatically closed by any features such as Dialog Filter, as this can lead to an infinite cycle of exiting and restarting, unless the return code action is set to do nothing.
+> [!IMPORTANT]
+> Make sure that your shell application does not automatically exit and is not automatically closed by any features such as Dialog Filter, as this can lead to an infinite cycle of exiting and restarting, unless the return code action is set to do nothing.
 
  
 
@@ -239,6 +240,8 @@ You can use the Shell Launcher WMI providers directly in a PowerShell script or 
 
 ## <a href="" id="custom-shell"></a>Set your custom shell
 
+> [!WARNING]
+> Shell Launcher doesn't support a custom shell with an application that launches a different process and exits. For example, you cannot specify **write.exe** in Shell Launcher. Shell Launcher launches a custom shell and monitors the process to identify when the custom shell exits. **Write.exe** creates a 32-bit wordpad.exe process and exits. Because Shell Launcher is not aware of the newly created wordpad.exe process, Shell Launcher will take action based on the exit code of **Write.exe**, such as restarting the custom shell. 
 
 Modify the following PowerShell script as appropriate and run the script on the device.
 
@@ -381,8 +384,8 @@ $IsShellLauncherEnabled = $ShellLauncherClass.IsEnabled()
 
 A custom shell is launched with the same level of user rights as the account that is signed in. This means that a user with administrator rights can perform any system action that requires administrator rights, including launching other applications with administrator rights, while a user without administrator rights cannot.
 
-**Warning**  
-If your shell application requires administrator rights and needs to be elevated, and User Account Control (UAC) is present on your device, you must disable UAC in order for Shell Launcher to launch the shell application.
+> [!WARNING]
+> If your shell application requires administrator rights and needs to be elevated, and User Account Control (UAC) is present on your device, you must disable UAC in order for Shell Launcher to launch the shell application.
 
  
 
@@ -399,7 +402,7 @@ If your shell application requires administrator rights and needs to be elevated
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_enterprise_customizations\p_enterprise_customizations%5D:%20Shell%20Launcher%20%20RELEASE:%20%2810/17/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default.aspx. "Send comments about this topic to Microsoft")
+
 
 
 

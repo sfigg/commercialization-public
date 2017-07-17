@@ -5,7 +5,6 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 7cc47476-f2c3-4f82-8430-731fc035266a
-ms.prod: W10
 ms.mktglfcycl: plan
 ms.sitesec: msdn
 ms.author: joshbax
@@ -40,19 +39,19 @@ Any computer that has the Windows Assessment Toolkit installed can act as a stre
 
     -   For an x86-based computer, type this:
 
-        ``` syntax
+        ```
         C:\Program Files\Windows Kits\10\Assessment and Deployment Kit\Windows Assessment Toolkit\Content Based Assessments\x86
         ```
 
     -   For an x64-based computer, type this:
 
-        ``` syntax
+        ```
         C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Assessment Toolkit\Content Based Assessments\amd64
         ```
 
 4.  At the command prompt, type this:
 
-    ``` syntax
+    ```
     StreamingMediaAssessmentServer.exe -ContentPath <path_to_streaming_content>  [-PopulateCache <file_name_list>] [-Port <number>]
     ```
 

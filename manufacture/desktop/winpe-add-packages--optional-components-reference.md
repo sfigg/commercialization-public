@@ -39,13 +39,13 @@ Optional components are included as part of the Windows Assessment and Deploymen
 
     -   The 64-bit version can boot 64-bit UEFI and 64-bit BIOS PCs.
 
-        ``` syntax
+        ```
         copype amd64 C:\WinPE_amd64
         ```
 
     -   The 32-bit version can boot 32-bit UEFI, 32-bit BIOS, and 64-bit BIOS PCs.
 
-        ``` syntax
+        ```
         copype x86 C:\WinPE_x86
         ```
 
@@ -53,7 +53,7 @@ Optional components are included as part of the Windows Assessment and Deploymen
 
 -   Mount the Windows PE image.
 
-    ``` syntax
+    ```
     Dism /Mount-Image /ImageFile:"C:\WinPE_amd64\media\sources\boot.wim" /index:1 /MountDir:"C:\WinPE_amd64\mount"
     ```
 
@@ -61,7 +61,7 @@ Optional components are included as part of the Windows Assessment and Deploymen
 
 1.  Add the optional component into Windows PE. To add optional components, you need to add both the optional component and its associated language packs.
 
-    ``` syntax
+    ```
     Dism /Add-Package /Image:"C:\WinPE_amd64\mount" /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\WinPE-HTA.cab"  
 
     Dism /Add-Package /Image:"C:\WinPE_amd64\mount" /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\en-us\WinPE-HTA_en-us.cab"
@@ -74,7 +74,7 @@ Optional components are included as part of the Windows Assessment and Deploymen
 
 2.  Verify that the optional component is part of the image:
 
-    ``` syntax
+    ```
     Dism /Get-Packages /Image:"C:\WinPE_amd64\mount"
     ```
 
@@ -84,13 +84,13 @@ Optional components are included as part of the Windows Assessment and Deploymen
 
 1.  List the optional components in the Windows PE image:
 
-    ``` syntax
+    ```
     Dism /Get-Packages /Image:"C:\WinPE_amd64\mount"
     ```
 
 2.  Review the resulting list of packages, and add the corresponding language packs for each package in the image, including the base Windows PE language pack.
 
-    ``` syntax
+    ```
     Dism /Add-Package /Image:"C:\WinPE_amd64\mount" /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\fr-fr\lp.cab"
 
     Dism /Add-Package /Image:"C:\WinPE_amd64\mount" /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\fr-fr\WinPE-HTA_fr-fr.cab"
@@ -100,13 +100,13 @@ Optional components are included as part of the Windows Assessment and Deploymen
 
 3.  If you're adding language packs for Japan, Korea, or China, add the font packages for these languages. Here's an example for Japan:
 
-    ``` syntax
+    ```
     Dism /Add-Package /Image:"C:\WinPE_amd64\mount" /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\WinPE-Font Support-JA-JP.cab"
     ```
 
 4.  Verify that the language packs are part of the image:
 
-    ``` syntax
+    ```
     Dism /Get-Packages /Image:"C:\WinPE_amd64\mount"
     ```
 
@@ -114,7 +114,7 @@ Optional components are included as part of the Windows Assessment and Deploymen
 
 5.  Change the regional settings to the language you'd like to use:
 
-    ``` syntax
+    ```
     Dism /Set-AllIntl:en-US /Image:"C:\WinPE_amd64\mount"
     ```
 
@@ -124,13 +124,13 @@ Optional components are included as part of the Windows Assessment and Deploymen
 
 1.  Unmount the Windows PE image.
 
-    ``` syntax
+    ```
     Dism /Unmount-Image /MountDir:"C:\WinPE_amd64\mount" /commit
     ```
 
 2.  Create bootable media, such as a USB flash drive.
 
-    ``` syntax
+    ```
     MakeWinPEMedia /UFD C:\WinPE_amd64 F:
     ```
 

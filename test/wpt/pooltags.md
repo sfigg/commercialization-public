@@ -5,7 +5,6 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 819088ce-bfda-4866-a97c-a85b768c5f7a
-ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
 ms.author: joshbax
@@ -62,7 +61,7 @@ Represents a collection of a maximum of four pool tags. If the **Operation** att
 ## Syntax
 
 
-``` syntax
+```
 <PoolTags Operation = "Set" | "Add" | “Remove” >
 
   <!-- Child elements -->

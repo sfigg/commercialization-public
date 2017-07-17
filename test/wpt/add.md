@@ -5,7 +5,6 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 85e46ed9-12d7-45b8-8e5a-ffbd9193e668
-ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
 ms.author: joshbax
@@ -23,7 +22,7 @@ Adds a profile to the collection.
 ## Syntax
 
 
-``` syntax
+```
 HRESULT Add
   ([in] IProfile* pProfile,
   [in] VARIANT_BOOL fMerge)

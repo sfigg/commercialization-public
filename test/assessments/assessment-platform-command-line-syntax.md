@@ -5,7 +5,6 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 34286b79-1867-4d0d-8b65-6a0c6a7e5df8
-ms.prod: W10
 ms.mktglfcycl: plan
 ms.sitesec: msdn
 ms.author: joshbax
@@ -31,7 +30,7 @@ Where *&lt;architecture&gt;* is either x86 or amd64.
 
 The base syntax for using the Assessment Platform from the command line is:
 
-``` syntax
+```
 AXE.exe jobfile [AXE_options]
 ```
 

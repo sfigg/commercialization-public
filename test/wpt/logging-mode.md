@@ -5,7 +5,6 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 96dc60e4-0550-4cac-b405-9aab923b7435
-ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
 ms.author: joshbax
@@ -47,7 +46,7 @@ When you author a custom profile, you must define the [BufferSize](buffersize.md
 
 You can use the WPR command-line interface to view the size and number of buffers that each provider uses.
 
-``` syntax
+```
 wpr -profiledetails CPU
 
 Microsoft Windows Performance Recorder Version 6.2.9200

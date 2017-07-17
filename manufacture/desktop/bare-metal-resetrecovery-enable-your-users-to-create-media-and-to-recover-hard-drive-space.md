@@ -42,7 +42,7 @@ If you're deploying Windows with a custom partition layout, you'll need to add a
 
     UEFI (based on [UEFI/GPT-based hard drive partitions](configure-uefigpt-based-hard-drive-partitions.md)):
 
-    ``` syntax
+    ```
     rem == ResetPartitions-UEFI.txt ==
     rem == These commands are used with DiskPart to
     rem    reset the drive and recreate five partitions
@@ -85,7 +85,7 @@ If you're deploying Windows with a custom partition layout, you'll need to add a
 
     BIOS (based on [BIOS/MBR-based hard drive partitions](configure-biosmbr-based-hard-drive-partitions.md)):
 
-    ``` syntax
+    ```
     rem == ResetPartitions-BIOS.txt ==
     rem == These commands are used with DiskPart to
     rem    reset the drive and create three partitions
@@ -131,7 +131,7 @@ If you're deploying Windows with a custom partition layout, you'll need to add a
 
     UEFI:
 
-    ``` syntax
+    ```
     <?xml version="1.0" encoding="utf-8"?>
     <!-- ResetConfig.xml for UEFI -->
     <Reset>
@@ -148,7 +148,7 @@ If you're deploying Windows with a custom partition layout, you'll need to add a
 
     BIOS:
 
-    ``` syntax
+    ```
     <?xml version="1.0" encoding="utf-8"?>
     <!-- ResetConfig.xml for BIOS -->
     <Reset>
@@ -178,7 +178,7 @@ Users can use this option to create recovery media, and to reclaim the hard driv
 
 2.  Copy the configuration files to the destination computer:
 
-    ``` syntax
+    ```
     Copy E:\Recovery\RecoveryImage\* R:\RecoveryImage\*
     ```
 

@@ -5,7 +5,6 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8f60d3e3-cb32-4879-8ac2-80ceaea945d3
-ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
 ms.author: joshbax
@@ -58,7 +57,7 @@ Describes either the number of buffers to be allocated when starting a session o
 ## Syntax
 
 
-``` syntax
+```
 <Buffers Operation               = "Set" | "Add" | “Remove”
          Value                   = unsignedLong
          PercentageOfTotalMemory = boolean>
@@ -178,7 +177,7 @@ The following examples show how this element is used in system collector and eve
 
 The first example sets the buffer size to 512 KB and limits the total amount of memory consumed to 3 percent. The second example sets 64 buffers of 128 KB each.
 
-``` syntax
+```
 <SystemCollector
   Id="WPRSystemCollector"
   Name="NT Kernel Logger"

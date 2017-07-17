@@ -5,7 +5,6 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: bbaa7eb7-a7be-4b1d-a72c-087c7bf2fbef
-ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
 ms.author: joshbax
@@ -36,7 +35,7 @@ Represents the identifier of a system collector.
 ## Syntax
 
 
-``` syntax
+```
 <SystemCollectorId Value = IdType>
 
   <!-- Child elements -->

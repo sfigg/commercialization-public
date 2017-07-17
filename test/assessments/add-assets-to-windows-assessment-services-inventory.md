@@ -5,7 +5,6 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: bddc94de-3531-4de9-a1bc-5ae359d1f6c6
-ms.prod: W10
 ms.mktglfcycl: plan
 ms.sitesec: msdn
 ms.author: joshbax
@@ -42,7 +41,7 @@ You shouldn't include a test computer in multiple Windows Assessment Services se
 
 1.  On a running test computer, log on to the Windows Assessment Services server. For example, at a command prompt, type:
 
-    ``` syntax
+    ```
     Net use \\<servername>\relax /u:localadmin Pass.word
     ```
 

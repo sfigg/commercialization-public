@@ -45,7 +45,7 @@ You can create a single .wim file that includes both 32-bit and 64-bit Windows i
 
 For example, if you copy the distribution to C:\\WindowsDistribution and the 64-bit Install.wim file to C:\\Windows64-bit, you would use the following at a command prompt.
 
-``` syntax
+```
 Dism /Export-Image /SourceImageFile:c:\windows64-bit\install.wim /SourceIndex:1 /DestinationImageFile:c:\windowsdistribution\sources\install.wim /DestinationName:"Fabrikam 64-bit Image"
 ```
 

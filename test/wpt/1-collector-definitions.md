@@ -5,7 +5,6 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 40712815-d517-49aa-b208-76a2115ed9fd
-ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
 ms.author: joshbax
@@ -44,7 +43,7 @@ For more information about buffers, see [Logging Mode](logging-mode.md).
 
 The following code example shows a system collector definition and an event collector definition.
 
-``` syntax
+```
 <SystemCollector
   Id="WPRSystemCollector"
   Name="NT Kernel Logger"

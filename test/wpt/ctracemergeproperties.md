@@ -5,7 +5,6 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: d7991df7-574a-4b48-9e2c-a76bb5da1cd3
-ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
 ms.author: joshbax
@@ -23,7 +22,7 @@ Represents policies that are applied when the library merges the event trace log
 ## Syntax
 
 
-``` syntax
+```
 {
   [default] interface ITraceMergeProperties;
   interface IParsingErrorInfo;

@@ -5,7 +5,6 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4546c402-5966-4f36-acad-51418a1698d1
-ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
 ms.author: joshbax
@@ -23,7 +22,7 @@ Returns the type of the element at which the XML validation error occurred.
 ## Syntax
 
 
-``` syntax
+```
 HRESULT GetElementType
   ([out, retval] BSTR* pbstrElementType)
 ;

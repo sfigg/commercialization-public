@@ -33,7 +33,7 @@ Here is an example how to create of a custom profile XML file. Suppose you want 
 
 This custom profile XML file describes an event collector that has an ID of EventCollector\_TileManager. The event collector contains your two providers, which are specified in the &lt;EventProvider&gt; and &lt;EventProviderId&gt; elements.
 
-``` syntax
+```
 <?xml version="1.0" encoding="utf-8" standalone='yes'?>
 
 <WindowsPerformanceRecorder Version="1.0" Author="You" Team="Your team" Comments="Your comments" Company="Your company" Copyright="Your company" Tag="WPDiet">

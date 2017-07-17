@@ -5,7 +5,6 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: d641530d-2be1-4266-962b-97863cff2e57
-ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
 ms.author: joshbax
@@ -20,7 +19,7 @@ ms.technology: windows-oem
 
 This function merges multiple trace files into a single output file.
 
-``` syntax
+```
 ULONG
 WINAPI
 CreateMergedTraceFile(

@@ -5,7 +5,6 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: afe8e6db-f5ad-4a94-9878-97840f91b8b2
-ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
 ms.author: joshbax
@@ -54,7 +53,7 @@ Describes the kernel flags that can be enabled for the kernel-mode session.
 ## Syntax
 
 
-``` syntax
+```
 <Keyword Value = "AllFaults" | "CompactCSwitch" | "ContiguousMemorygeneration" | ... >
 </Keyword>
 ```

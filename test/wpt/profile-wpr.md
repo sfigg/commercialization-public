@@ -5,7 +5,6 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 92a5d494-cd6f-4a9b-942b-f1318ab48b00
-ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
 ms.author: joshbax
@@ -32,7 +31,7 @@ Represents a collection of problem categories and collectors elements.
 ## Syntax
 
 
-``` syntax
+```
 <Profile Id          = IdType
          Name        = string
          Description = string
@@ -217,7 +216,7 @@ Derived profiles have all the attributes of the base profile by default. These c
 
 The following code example shows a profile definition.
 
-``` syntax
+```
 <Profile
   Id="Example.Light.File"
   Name="Example"

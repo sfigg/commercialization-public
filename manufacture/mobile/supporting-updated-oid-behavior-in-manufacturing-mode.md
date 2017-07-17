@@ -21,7 +21,7 @@ When running in manufacturing mode, Wi-Fi miniport drivers must add support for 
 
 The **OID\_DOT11\_OPERATION\_MODE\_CAPABILITY** command is called in query mode to return the list of operation modes supported by the driver. This command functions as previously documented, but drivers are now required to support a new operation mode, **DOT11\_OPERATION\_MODE\_MANUFACTURING**, which is the context in which manufacturing operations are performed. For complete documentation of this OID, see [OID\_DOT11\_OPERATION\_MODE\_CAPABILITY](http://msdn.microsoft.com/library/ff569396.aspx) on MSDN.
 
-``` syntax
+```
 #define DOT11_OPERATION_MODE_UNKNOWN            0x00000000
 #define DOT11_OPERATION_MODE_STATION            0x00000001
 #define DOT11_OPERATION_MODE_AP                 0x00000002
@@ -50,7 +50,7 @@ The **OID\_DOT11\_CURRENT\_OPERATION\_MODE** command can be called in either set
 
 This command functions as previously documented, but the driver is now required to support the **DOT11\_OPERATION\_MODE\_MANUFACTURING** operation mode. For complete documentation of this OID, see [OID\_DOT11\_CURRENT\_OPERATION\_MODE](https://msdn.microsoft.com/library/windows/hardware/ff569132) on MSDN.
 
-``` syntax
+```
 typedef struct _DOT11_CURRENT_OPERATION_MODE {
     ULONG uReserved;
     ULONG uCurrentOpMode;

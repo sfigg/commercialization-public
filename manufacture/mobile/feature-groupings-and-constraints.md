@@ -78,7 +78,7 @@ Constraints are grouped at the Microsoft and OEM level of features. OEMs cannot 
 
 The following XML sample illustrates the use of constraints to appropriately restrain the fake modem feature.
 
-``` syntax
+```
 <Features>
   <Microsoft>
     <FeatureGroup Constraint="OneAndOnlyOne">
@@ -95,7 +95,7 @@ The constraints in the sample specify that either IMGFAKEMODEM or IMGNOFAKEMODEM
 
 The following XML sample illustrates the use of constraints to appropriately restrain the production build settings. This sample shows how multiple constraints can be associated with a single feature.
 
-``` syntax
+```
 <Features>
   <Microsoft>
     <FeatureGroups>
@@ -125,7 +125,7 @@ The constraints in the sample specify that:
 
 The build options are more complex and are expressed in the following XML.
 
-``` syntax
+```
 FeatureGroup Constraint="OneAndOnlyOne">
   <FeatureIDs>
     <FeatureID>RELEASE_PRODUCTION</FeatureID> 
@@ -169,7 +169,7 @@ For each OEM and Microsoft feature, implicit feature IDs are automatically creat
 
 For example if an OEM creates a feature called TEST\_FEATURE1 using the XML shown below, the implicit Feature ID will be *OEM\_TEST\_FEATURE1*.
 
-``` syntax
+```
 <Features>
     <OEM>
      <PackageFile Path="%oempackageroot%\test\" 
@@ -184,7 +184,7 @@ For example if an OEM creates a feature called TEST\_FEATURE1 using the XML show
 
 To create a feature constraint to make sure this test feature is only shipped with test release types, use the following XML.
 
-``` syntax
+```
 <FeatureGroup Constraint="ZeroOrOne">
    <FeatureIDs>
       <FeatureID>RELEASE_PRODUCTION</FeatureID>
@@ -216,7 +216,7 @@ For more information about working with the SOC, SV and DEVICE attributes, see [
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_phFlashing\p_phFlashing%5D:%20Feature%20groupings%20and%20constraints%20%20RELEASE:%20%2810/4/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+
 
 
 

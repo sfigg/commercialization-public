@@ -66,7 +66,7 @@ The following sample customization answer file shows how to:
 
 -   Define settings for a **Variant**, which are applied if the associated target's conditions are met.
 
-``` syntax
+```
 <?xml version="1.0" encoding="utf-8" ?>  
 <!--  Copyright (c) Microsoft Corporation.  All rights reserved.  -->  
 
@@ -196,7 +196,7 @@ The following sample customization answer file snippet shows how to:
 
 -   Specify the customizations for a specific mobile operator in a **Variant** section.
 
-``` syntax
+```
 <!-- Variant Section -->
 
   <!-- Example of a static variant. There are no TargetRefs. -->
@@ -415,7 +415,7 @@ When creating a customization answer file, OEMs can define **Targets** to descri
 
 In the previous XML sample, a SIM target is defined through MNC/MCC pairs. The following example shows how the SIM targets may be defined:
 
-``` syntax
+```
 <Targets>
     <Target Id="SIM_TinyMO">
         <TargetState>
@@ -445,7 +445,7 @@ When importing customization answer files, if there are any settings that are de
 
 To add the priority order for the imported answer file, set the **Priority** attribute within the **ImageCustomizations** block of the customization answer file to be imported. The following example shows how to do this:
 
-``` syntax
+```
 <ImageCustomizations xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate"
                   Name="Settings Input"
                   Description="Settings for image build"
@@ -463,7 +463,7 @@ When setting **Priority**, 1 is the highest, and zero (0) and negative numbers a
 
 The following code example shows how you can specify other customization answer files to be imported. The **Imports** element must be specified in the root customization answer file.
 
-``` syntax
+```
   <Imports>
     <Import Source="C:\Customization\SampleOperators.xml" />
     <Import Source="C:\Customization\SampleBrandCommon.xml" />
@@ -475,7 +475,7 @@ The following code example shows how you can specify other customization answer 
 
 OEMs can preload apps using the following customization answer file code snippet:
 
-``` syntax
+```
     <Applications>
       <Application Source="C:\Customization\TestData\apps\OEMMOApp.xap"
                    License="C:\Customization\TestData\apps\OEMMOApp_License.xml"
@@ -536,7 +536,7 @@ When two different files set the same unique **Settings** group, the following r
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_phCustomization\p_phCustomization%5D:%20Customization%20answer%20file%20%20RELEASE:%20%289/7/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+
 
 
 

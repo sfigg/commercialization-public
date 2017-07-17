@@ -5,7 +5,6 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: b555fa8d-71fc-4ca1-a1e8-592cce52d738
-ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
 ms.author: joshbax
@@ -23,7 +22,7 @@ Compares two [IProfile](iprofile.md) objects.
 ## Syntax
 
 
-``` syntax
+```
 HRESULT IsEqual
   ([in] IProfile* pProfile)
 ;

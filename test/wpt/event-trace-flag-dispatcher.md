@@ -5,7 +5,6 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 939bd14d-06f4-4109-9e7c-95e35815c2e3
-ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
 ms.author: joshbax
@@ -20,7 +19,7 @@ ms.technology: windows-oem
 
 This flag enables capture of Ready Thread events.
 
-``` syntax
+```
 #define EVENT_TRACE_FLAG_DISPATCHER 0x00000800
 ```
 

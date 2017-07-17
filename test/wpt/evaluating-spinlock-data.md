@@ -5,7 +5,6 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 9e5e4ffa-5fb7-401e-bfc3-760cbb7955d9
-ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
 ms.author: joshbax
@@ -69,13 +68,13 @@ A spin lock can be acquired or released from different code paths. A list of rel
 
 The following example shows how to obtain a summary of spinlock data.
 
-``` syntax
+```
 xperf -i example.etl -symbols -o example.txt -a spinlock -summary
 ```
 
 The following example shows how to limit the number of records returned to the five most active spin locks.
 
-``` syntax
+```
 xperf -i example.etl -symbols -o example.txt -a spinlock -summary -counts 5
 ```
 

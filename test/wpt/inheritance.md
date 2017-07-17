@@ -5,7 +5,6 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 5caaf667-4c1a-4459-8a45-36001ce6b414
-ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
 ms.author: joshbax
@@ -38,7 +37,7 @@ In this article:
 
 You can use XML tags to change the content of a profile. You must use the **Operation** attribute. The possible values for the **Operation** attribute are **Set** and **Add**. In the following example, **DerivedProfile** adds the **ReadyThread** system keyword to the **CpuConfig**, **CSwitch**, and **SampledProfile** keywords that **BaseProfile** defines.
 
-``` syntax
+```
 <SystemCollector
   Id="BaseSystemCollector" ... />
 
@@ -98,7 +97,7 @@ If you do not specify the **Operation** attribute but you use inheritance, WPR u
 
 The following example defines a profile for file logging mode. The memory version inherits from the file version and overwrites the logging mode only.
 
-``` syntax
+```
 <Profile
    Id="SampleProfile.Verbose.File"
    LoggingMode = "File"

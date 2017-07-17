@@ -5,7 +5,6 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 1c547a82-5e5e-4c0e-b3b5-5830f5a52bab
-ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
 ms.author: joshbax
@@ -20,7 +19,7 @@ ms.technology: windows-oem
 
 This flag enables stack tracing for virtual memory free events.
 
-``` syntax
+```
 #define EVENT_TRACE_TYPE_VIRTUAL_FREE 0x63
 ```
 

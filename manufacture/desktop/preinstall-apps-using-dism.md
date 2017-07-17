@@ -43,19 +43,19 @@ For offline provisioning of an app into an image, you can use either the Dism.ex
 1.  Open the Deployment Tools Command Prompt, installed with the Windows ADK, with administrator privileges. From the Start screen, type **Deployment and Imaging Tools Environment**, right-click the icon, and select **Run as Administrator**.
 2.  Mount the offline image for servicing. At the command prompt, type:
 
-    ``` syntax
+    ```
     Dism /Mount-Image /ImageFile:c:\images\myimage.wim /Index:1 /mountdir:c:\test\offline
     ```
 
 3.  Add the app to the mounted image. Use the /PackagePath option and the /DependencyPackagePath option to specify the location of the folder containing all of the unpacked files and the dependency files from the Store package. /PackagePath should specify the root folder for the extracted folders. The root folder contains the license.xml, AUMIDs.txt, and all of the package files. At the command prompt, type:
 
-    ``` syntax
+    ```
     Dism /Image:c:\test\offline /Add-ProvisionedAppxPackage /PackagePath:c:\downloads\appxpackage /DependencyPackagePath:c:\downloads\appxpackagedependency
     ```
 
 4.  Save changes and unmount the image. At the command prompt, type:
 
-    ``` syntax
+    ```
     Dism /Unmount-Image /mountdir:c:\test\offline /commit
     ```
 
@@ -64,19 +64,19 @@ For offline provisioning of an app into an image, you can use either the Dism.ex
 1.  Open Windows PowerShell with administrator privileges. You must be running Windows 10 or Windows 8.1 on the host PC or install a supported version of Windows PowerShell. For more information, see [How to Use DISM in Windows PowerShell](http://go.microsoft.com/fwlink/p/?linkid=239927).
 2.  Mount the image. At the Windows PowerShell prompt, type:
 
-    ``` syntax
+    ```
     Mount-WindowsImage -ImagePath c:\images\myimage.wim -Index 1 -Path c:\test\offline
     ```
 
 3.  Use the Add-AppxProvisionedPackage cmdlet in Windows PowerShell to preinstall the app. Use the /PackagePath option and the /DependencyPackagePath option to specify the location of the folder containing all of the unpacked files and the dependency files from the Store package. In Windows PowerShell, type:
 
-    ``` syntax
+    ```
     Add-AppxProvisionedPackage -Path c:\test\offline -FolderPath c:\downloads\appxpackage -DependencyPackagePath c:\downloads\appxpackagedependency
     ```
 
 4.  Save changes and dismount the image. At the Windows PowerShell prompt, type:
 
-    ``` syntax
+    ```
     Dismount-WindowsImage -Path c:\test\offline -Save
     ```
 
@@ -98,19 +98,19 @@ You can remove a preinstalled app, including the license and custom data files, 
 1.  Open the Deployment Tools Command Prompt, installed with the Windows ADK, with administrator privileges. From the Start screen, type **Deployment and Imaging Tools Environment**, right-click the icon, and select **Run as Administrator**.
 2.  Mount the offline image for servicing. At the command prompt, type:
 
-    ``` syntax
+    ```
     Dism /Mount-Image /ImageFile:c:\images\myimage.wim /Index:1 /mountdir:c:\test\offline
     ```
 
 3.  Find the full package name of the app that you want to remove. At the command prompt, type:
 
-    ``` syntax
+    ```
     Dism /Image:C:\test\offline /Get-ProvisionedAppxPackages
     ```
 
 4.  Remove the app from the mounted image. For example, at the command prompt, type:
 
-    ``` syntax
+    ```
     Dism /Image:c:\test\offline /Remove-ProvisionedAppxPackage /PackageName:microsoft.devx.appx.app1_1.0.0.0_neutral_en-us_ac4zc6fex2zjp
     ```
 
@@ -120,13 +120,13 @@ You can remove a preinstalled app, including the license and custom data files, 
 
 5.  If you want to update the app, you can preinstall the updated version of the Store-signed app. At a command prompt, type:
 
-    ``` syntax
+    ```
     Dism /Image:c:\test\offline /Add-ProvisionedAppxPackage/FolderPath:c:\downloads\appxpackage
     ```
 
 6.  Save changes and unmount the image. At the command prompt, type:
 
-    ``` syntax
+    ```
     Dism /Unmount-Image /mountdir:c:\test\offline /commit
     ```
 
@@ -135,19 +135,19 @@ You can remove a preinstalled app, including the license and custom data files, 
 1.  Open Windows PowerShell with administrator privileges. You must be running Windows 10 or Windows 8.x on the host PC or install a supported version of Windows PowerShell. For more information, see [How to Use DISM in Windows PowerShell](http://go.microsoft.com/fwlink/?LinkId=239927).
 2.  Mount the image. At the Windows PowerShell prompt, type:
 
-    ``` syntax
+    ```
     Mount-WindowsImage -ImagePath c:\images\myimage.wim -Index 1 -Path c:\test\offline
     ```
 
 3.  Find the full package name of the app you want to remove. At the Windows PowerShell prompt, type:
 
-    ``` syntax
+    ```
     Get-AppxProvisionedPackage -Path c:\test\offline
     ```
 
 4.  Use the Add-AppxProvisionedPackage cmdlet in Windows PowerShell to remove the app. In Windows PowerShell, type:
 
-    ``` syntax
+    ```
     Remove-AppxProvisionedPackage -Path c:\test\offline -PackageName microsoft.devx.appx.app1_1.0.0.0_neutral_en-us_ac4zc6fex2zjp 
     ```
 
@@ -157,13 +157,13 @@ You can remove a preinstalled app, including the license and custom data files, 
 
 1.  If you want to update the app, you can preinstall the updated version of the Store-signed app. At the Windows PowerShell prompt, type:
 
-    ``` syntax
+    ```
     Add- AppxProvisionedPackage -Path c:\test\offline -FolderPath c:\downloads\appxpackage
     ```
 
 2.  Save changes and dismount the image. At the Windows PowerShell prompt, type:
 
-    ``` syntax
+    ```
     Dismount-WindowsImage -Path c:\test\offline -Save
     ```
 
@@ -176,7 +176,7 @@ Apps that are preinstalled on a PC can access custom data specific to the instal
 
 You must specify the custom data file when you preinstall the app by using the DISM tool and through Windows PowerShell using the **Add-AppxProvisionedPackage** cmdlet. The following command shows how to do this using the DISM tool:
 
-``` syntax
+```
 Dism /Image:C:\test\offline /Add-ProvisionedAppxPackage / FolderPath:f:\Apps\Fabrikam_KnowMyPC /CustomDataPath:f:\Contoso_Promotion.xml
 ```
 
@@ -193,7 +193,7 @@ Apps that are preinstalled on a PC can access custom data specific to the instal
 
 The Custom.data file appears at the app's installed location. The name Custom.data is hard-coded and can't be modified. Your app can check for the existence of this file to determine if the app was preinstalled on the PC. Here's an example of how to access the Custom.data file.
 
-``` syntax
+```
 var outputDiv = document.getElementById("CustomData");
 Windows.ApplicationModel.Package.current.installedLocation.getFileAsync
      ("microsoft.system.package.metadata\\Custom.data").then(function (file) {
@@ -218,13 +218,13 @@ Your Custom.data file can include any content and be in any format your app requ
 
 When you're building and debugging your app in Microsoft Visual Studio, you can't access the Custom.data file from the app's installed location because the app isn't preinstalled yet. You can simulate using your Custom.data file by putting a test Custom.data file in the app itself, and then loading and testing the app local file. To do this, modify the code sample from:
 
-``` syntax
+```
 ("microsoft.system.package.metadata\\Custom.data").then(function (file) {
 ```
 
 to:
 
-``` syntax
+```
 ("Custom.data").then(function (file) {
 ```
 
@@ -235,7 +235,7 @@ After you have verified your file format and content, you can change the locatio
 1.  Open the Deployment Tools Command Prompt, installed with the Windows ADK, with administrator privileges. From the Start screen, type **Deployment and Imaging Tools Environment**, right-click the icon, and select **Run as Administrator**.
 2.  Add the application with the custom data file:
 
-    ``` syntax
+    ```
     dism /online /Add-ProvisionedAppxPackage /PackagePath:.\CustomData_1.0.0.1_AnyCPU_Debug.appx /CustomDataPath:.\Test.txt /SkipLicense
     ```
 
@@ -293,19 +293,19 @@ For each type of app, two things should be preinstalled to provide the correct W
 
         1.  Mount the offline image for servicing.
 
-            ``` syntax
+            ```
             Dism /Mount-Image /ImageFile:C:\test\images\myimage.wim /index:1 /MountDir:C:\test\offline
             ```
 
         2.  Copy the metadata package files to the device metadata store of the mounted image. For example, to copy the **0ECF2029-2C6A-41AE-9E0A-63FFC9EAD877.devicemetadata-ms** metadata package file to the device metadata store, **ProgramData\\Microsoft\\Windows\\DeviceMetadataStore**:
 
-            ``` syntax
+            ```
             copy 0ECF2029-2C6A-41AE-9E0A-63FFC9EAD877.devicemetadata-ms C:\test\offline\ProgramData\Microsoft\Windows\DeviceMetadataStore
             ```
 
         3.  Save the changes and unmount the image.
 
-            ``` syntax
+            ```
             dism /Unmount-Image /mountdir: c:\test\offline /commit
             ```
 
@@ -320,19 +320,19 @@ For more info about service metadata, see [Service metadata](http://go.microsoft
 
 1.  Mount the offline image for servicing.
 
-    ``` syntax
+    ```
     Dism /Mount-Image /ImageFile:C:\test\images\myimage.wim /index:1 /MountDir:C:\test\offline
     ```
 
 2.  Add the Windows Store device app or mobile broadband app to the image.
 
-    ``` syntax
+    ```
     dism /Image:<mounted folder> /Add-ProvisionedAppxPackage /FolderPath:<appxpackage path>
     ```
 
 3.  Save the changes and unmount the image.
 
-    ``` syntax
+    ```
     dism /Unmount-Image /mountdir: c:\test\offline /commit
     ```
 

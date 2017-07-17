@@ -5,7 +5,6 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 3daba834-c555-40d4-8afa-ed0a1f6aaedf
-ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
 ms.author: joshbax
@@ -23,7 +22,7 @@ Returns a status code after the end of an operation.
 ## Syntax
 
 
-``` syntax
+```
 HRESULT OnEnd(HRESULT hrResult);
 ```
 

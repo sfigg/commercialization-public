@@ -5,7 +5,6 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 05c08784-fcfe-46f8-8209-51fd2b1367fe
-ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
 ms.author: joshbax
@@ -23,7 +22,7 @@ This interface is a client-side handler that receives updates when the library p
 ## Syntax
 
 
-``` syntax
+```
 {
   [id(1), helpstring("OnBegin")] HRESULT OnBegin();
   [id(2), helpstring("OnUpdate")] HRESULT OnUpdate

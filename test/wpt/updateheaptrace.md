@@ -5,7 +5,6 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 5cbff080-bdaa-412d-8412-22013f2717fb
-ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
 ms.author: joshbax
@@ -22,7 +21,7 @@ ms.technology: windows-oem
 
 This function updates an existing heap tracing session with a new set of PIDs, stackwalking events, or other ETW session changes.
 
-``` syntax
+```
 ULONG
 WINAPI
 UpdateHeapTrace(

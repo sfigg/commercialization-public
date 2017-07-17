@@ -5,7 +5,6 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: bb976f48-b804-4de3-bbd1-108cbad6e922
-ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
 ms.author: joshbax
@@ -20,7 +19,7 @@ ms.technology: windows-oem
 
 This action produces a report file that summarizes the metrics for context switches.
 
-``` syntax
+```
 -a cswitch [-avail [n]] [-util [n]] [-process] [-thread] [-exc_dpcisr] [-range T1 T2]
 ```
 

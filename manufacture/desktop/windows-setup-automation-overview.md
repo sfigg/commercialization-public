@@ -27,7 +27,7 @@ Setupconfig.ini files can contain single parameters, or parameters and value pai
 
 For example, you create a Setupconfig.ini with the following. Note that the header `[SetupConfig]` is required.
 
-```syntax
+```
 [SetupConfig]
 NoReboot
 ShowOobe=None
@@ -37,7 +37,7 @@ ReflectDrivers = <path of folder containing INF and SYS files for the encryption
 
 This is equivalent to the following command line:
 
-```syntax
+```
 Setup /NoReboot /ShowOobe None /Telemetry Enable
 ```
 
@@ -47,7 +47,7 @@ Setup /NoReboot /ShowOobe None /Telemetry Enable
 
 If you are running Windows setup from media or an ISO file, you must include the location to the setupconfig file on the command line (“/ConfigFile `<path>`”) when running setup.exe. For example:
 
-```syntax
+```
 Setup.exe /ConfigFile <path to Setupconfig.ini>
 ```
 
@@ -96,13 +96,13 @@ Because reboots are required during Setup, a copy of the answer file is cached t
 
 3.  Mount the Windows image.
 
-    ``` syntax
+    ```
     Dism /Mount-Image /ImageFile:"C:\images\CustomImage.wim" /Index:1 /MountDir:C:\mount
     ```
 
 4.  Modify or replace the file: \\Windows\\Panther\\unattend.xml in the mounted image.
 
-    ``` syntax
+    ```
     Copy CustomAnswerFile.xml C:\mount\Windows\Panther\unattend.xml
     ```
 
@@ -113,7 +113,7 @@ Because reboots are required during Setup, a copy of the answer file is cached t
 
 5.  Unmount the image.
 
-    ``` syntax
+    ```
     Dism /Unmount-Image /MountDir:C:\mount /Commit
     ```
 
@@ -278,7 +278,7 @@ The following examples help describe the behavior of implicit answer file search
 
     To use the new answer file, you can copy it to a directory of a higher precedence than the cached answer file, or you can specify the answer file by using the **/unattend** option. For example:
 
-    ``` syntax
+    ```
     sysprep /generalize /unattend:C:\MyAnswerFile.xml
     ```
 

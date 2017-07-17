@@ -48,7 +48,7 @@ Download the latest updates. Note, the ZDP is a cumulative update, so you'll onl
 1.  From your technician PC, click **Start**, and type **deployment**. Right-click **Deployment and Imaging Tools Environment** and then select **Run as administrator**.
 2.  Create a mount directory for your Windows image (install.wim), and then mount the image.
 
-    ``` syntax
+    ```
     md C:\mount\Windows
 
     Dism /Mount-Image /ImageFile:"C:\Images\install.wim" /Index:1 /MountDir:C:\mount\Windows
@@ -56,7 +56,7 @@ Download the latest updates. Note, the ZDP is a cumulative update, so you'll onl
 
 3.  Update your Windows images with the latest ZDP. Example:
 
-    ``` syntax
+    ```
     Dism /Add-Package /Image:C:\mount\Windows /PackagePath:C:\MSU\Windows10-KBxxxxxxx-x64.msu /LogPath:AddPackage.log
     ```
 
@@ -64,7 +64,7 @@ Download the latest updates. Note, the ZDP is a cumulative update, so you'll onl
 
 4.  Unmount the Windows image.
 
-    ``` syntax
+    ```
     Dism /Unmount-Image /MountDir:C:\mount\Windows /Commit
     ```
 
@@ -75,7 +75,7 @@ Download the latest updates. Note, the ZDP is a cumulative update, so you'll onl
 3.  Open the Command Prompt as an administrator.
 4.  Clean up the Windows image. (It's OK to use /ResetBase now that the PC has been booted into audit mode.)
 
-    ``` syntax
+    ```
     Dism /Cleanup-Image /Online /StartComponentCleanup /ResetBase
     ```
 
@@ -85,20 +85,20 @@ Download the latest updates. Note, the ZDP is a cumulative update, so you'll onl
 
 5.  Use Sysprep to generalize and shut down the PC.
 
-    ``` syntax
+    ```
     C:\Windows\System32\Sysprep\sysprep /generalize /shutdown /oobe
     ```
 
 6.  Boot the PC to Windows PE. If the PC starts rebooting to Windows, you'll need to let it finish booting and then use Sysprep to generalize and shut down the PC again.
 7.  Create a temporary scratch directory for DISM on a physical drive, rather than the default Windows PE virtual drive, to avoid issues related to short file names. To prevent capturing the DISM logs in your image, choose a location that’s in your DISM Exclusion list, for example, inside C:\\Recycler. For more info, see [DISM Configuration List and WimScript.ini Files](dism-configuration-list-and-wimscriptini-files-winnext.md).
 
-    ``` syntax
+    ```
     md C:\Recycler\Scratch
     ```
 
 8.  Recapture the Windows image. This captures the applied updates and removes any files that were marked as superseded during DISM /Cleanup-Image. Save the file to a location on a USB drive or a network (example: N:\\Images), and give the image a name (example: "Enterprise\_x64 with ZDP KBxxxxxxx").
 
-    ``` syntax
+    ```
     DISM /Capture-Image /ImageFile:"N:\Images\install_updated.wim" /CaptureDir:C: /Name: "Enterprise_x64 with ZDP KBxxxxxxx" /ScratchDir:C:\Recycler\Scratch
     ```
 
@@ -106,20 +106,20 @@ Download the latest updates. Note, the ZDP is a cumulative update, so you'll onl
 
 1.  Copy your bootable media (DVDs or other bootable media for Windows Setup, Windows Deployment Services (WDS), or System Center) to a writable folder on your PC.
 
-    ``` syntax
+    ```
     Xcopy D:\ C:\InstallMedia /s /h
     ```
 
 2.  Mount the file: sources\\boot.wim.
 
-    ``` syntax
+    ```
     md C:\mount\boot
     Dism /Mount-Image /ImageFile:"C:\InstallMedia\sources\boot.wim" /Index:1 /MountDir:C:\mount\boot
     ```
 
 3.  Add the ZDP.
 
-    ``` syntax
+    ```
     Dism /Add-Package /PackagePath:/PackagePath:C:\MSU\Windows10-KBxxxxxxx-x64.msu /Image:C:\mount\boot /LogPath:AddPackage.log
     ```
 
@@ -128,7 +128,7 @@ Download the latest updates. Note, the ZDP is a cumulative update, so you'll onl
 4.  In Windows Explorer, navigate to the mounted image root folder and sort the list of files by Date modified. Copy everything that’s been recently modified (setup.exe, locale.nls, setupplatform.dll, setupplatform.exe, reagent.dll, and anything else that looks recently modified) to the root of the install media.
 5.  Unmount the boot.wim file.
 
-    ``` syntax
+    ```
     Dism /Unmount-Image /MountDir:C:\mount\boot /Commit
     ```
 
@@ -146,7 +146,7 @@ If you need to add language packs or language features on demand after installin
 
 The following sample script modifies a given Windows image by adding all of the updates in a specific folder into the image. After adding the image, it cleans up the image.
 
-``` syntax
+```
 REM # InjectPackages.cmd: Adds packages (.cbs, .cab, .msu) to a Windows image
 REM # Usage:   InjectPackages <.WIM file> <Index> <Folder with CBS packages>
 REM # Example: InjectPackages C:\Images\install.wim 1 C:\Packages\ZDP

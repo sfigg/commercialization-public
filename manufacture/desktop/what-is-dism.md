@@ -174,7 +174,7 @@ Here are some common scenarios for image servicing and management:
 
 **Package installation order.** Packages are installed in the order that they are listed in the command line. In the following example, 1.inf, 2.inf, and 3.inf will be installed in the order in which they are listed in the command line.
 
-``` syntax
+```
 DISM.exe /image:"c:\images\Image1" /Add-Driver /ForceUnsigned /DriverName:"C:\Drivers\1.inf" /DriverName:"C:\Drivers\2.inf" /DriverName:"C:\Drivers\3.inf"
 ```
 

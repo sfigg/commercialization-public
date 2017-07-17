@@ -66,7 +66,7 @@ The following steps describe how to partition your hard drives and prepare to ap
 
 Save the following code as "PrepareMyPartitions.txt", and then run the script by using the DiskPart tool to automate the configuration of the Utility1, Utility2, system, extended, Windows, and recovery tools partitions:
 
-``` syntax
+```
 select disk 0
 clean
 rem == 1. System partition ======================

@@ -5,7 +5,6 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: d25dc5f0-386e-4dc1-aaaf-c59523a23c21
-ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
 ms.author: joshbax
@@ -23,7 +22,7 @@ Gets the number of the line at which the XML validation error occurred.
 ## Syntax
 
 
-``` syntax
+```
 HRESULT GetLineNumber
   ([out, retval] ULONG* pLineNumber)
 ;

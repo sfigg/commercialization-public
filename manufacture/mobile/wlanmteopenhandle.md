@@ -19,7 +19,7 @@ Opens a handle on the driver based on the interface GUID specified and returns t
 ## <span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>Syntax
 
 
-``` syntax
+```
 DWORD WlanMTEOpenHandle(
     __in    GUID    *pAdapterGuid,
     __out   HANDLE  *phAdapter

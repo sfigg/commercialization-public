@@ -405,7 +405,7 @@ A single Reference to the device that will return the temperature of the thermal
 
 The thermal zone must also specify a dependency on the temperature sensor device with \_DEP. Here's a simple example for \_DSM implementation of a sensor device.
 
-``` syntax
+```
 Device(\_SB.TSEN) {
     Name(_HID, "FBKM0001")     // temperature sensor device
 }
@@ -472,7 +472,7 @@ An Integer value with the current overthrottle threshold, expressed as a percent
 
 Here's an example \_DSM which indicates that the zone is overthrottled, at throttle levels 0% through 49%.
 
-``` syntax
+```
  ThermalZone (TZ4) {
     Name (_HID, "QCOM24AE")
     Name (_UID, 0)
@@ -667,7 +667,7 @@ An Integer value with the current minimum throttle limit, expressed as a percent
 
 Here's a simple example for \_DSM limiting throttle no less than 50 percent.
 
-``` syntax
+```
 ThermalZone(\_TZ.TZ01) {
     Method(_DSM, 0x4, NotSerialized) {
         Switch (ToBuffer(Arg0)) {
@@ -838,7 +838,7 @@ For a processor, the thermal manager communicates the thermal throttling percent
 
 The processor aggregator device allows *core parking* as a thermal mitigation. Zones can specify core parking as a thermal mitigation if the processor aggregator device is a member of a thermal zone. Processors are not required to be throttled for core parking to occur. This implementation works in parallel with *logical processor idling* (LPI). Note that this is still subject to the caveats of core parking. In particular, any work affinitized to a parked core will cause the core to run.
 
-``` syntax
+```
 Device(\_SB.PAGR) {
     Name(_HID, "ACPI000C")
 }
@@ -918,7 +918,7 @@ The following block diagram shows the control flow for a fan controlled by an AC
 
 ![control flow for a fan controlled by an acpi thermal zone](../images/thermal-guide7.png)
 
-``` syntax
+```
 Scope(\_SB) {
     Device(FAN) {
         Name(_HID, EISAID("PNP0C0B"))
@@ -978,7 +978,7 @@ The following block diagram shows the control flow for a fan controlled by an em
 
 The following ASL example defines a "FAN" device that can notify the operating system of changes in the fan state:
 
-``` syntax
+```
 Scope(\_SB) {
     Device(FAN) {
         Name(_HID, EISAID("PNP0C0B"))
@@ -1009,7 +1009,7 @@ The following block diagram shows the control flow for a fan controlled by a thi
 
 ![control flow for a fan controlled by a third-party driver](../images/thermal-guide9.png)
 
-``` syntax
+```
 Scope(\_SB) {
     Device(FAN) {
         Name(_HID, EISAID("PNP0C0B"))

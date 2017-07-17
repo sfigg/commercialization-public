@@ -5,7 +5,6 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 65612d2b-6fa2-4bda-b183-8e25d62605c1
-ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
 ms.author: joshbax
@@ -23,7 +22,7 @@ Gets the provider name that is associated with a GUID identifier.
 ## Syntax
 
 
-``` syntax
+```
 HRESULT GetProviderNameFromGuid
   ([out] BSTR* bstrProviderIdStr,
   [in] REFGUID ProviderId)

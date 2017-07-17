@@ -5,7 +5,6 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: b97422a9-0fa1-484b-9b2e-8fd72dcbf494
-ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
 ms.author: joshbax
@@ -40,7 +39,7 @@ Represents an event provider identifier for the profile.
 ## Syntax
 
 
-``` syntax
+```
 <EventProviderId Value = IdType>
 
   <!-- Child elements -->
@@ -150,7 +149,7 @@ Represents an event provider identifier for the profile.
 
 For managed scenarios, use the following event provider definition.
 
-``` syntax
+```
 <EventCollectorId Value ="WPAEventCollector">
   <EventProviders>
     <EventProviderId Value="EventProvider_DotNetProvider" />

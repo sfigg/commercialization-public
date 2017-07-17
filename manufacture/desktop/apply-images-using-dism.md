@@ -29,7 +29,7 @@ If you apply an image to a volume with an existing Windows installation, files f
 
 2.  Connect to the network distribution share where your Windows image is stored. For example, you can use the **net use** command to do this:
 
-    ``` syntax
+    ```
     net use n: \\server\share
     ```
 
@@ -39,7 +39,7 @@ If you apply an image to a volume with an existing Windows installation, files f
 
 4.  Create your partition structure using the **Diskpart** tool. For example:
 
-    ``` syntax
+    ```
     select disk 0
     clean
     create partition primary size=3000 id=27
@@ -68,7 +68,7 @@ If you apply an image to a volume with an existing Windows installation, files f
 
     For each partition that you apply an image to, run the **DISM** **/apply-image** /imageFile: *&lt;image\_file&gt;* /index:*&lt;index\_number&gt;* /ApplyDir:*&lt;image\_path&gt;* command.
 
-    ``` syntax
+    ```
     Dism /apply-image /imagefile:N:\Images\my-windows-partition.wim /index:1 /ApplyDir:C:\
     ```
 
@@ -80,7 +80,7 @@ If you apply an image to a volume with an existing Windows installation, files f
 
     Use the BCDboot tool to copy common system partition files and to initialize boot configuration data:
 
-    ``` syntax
+    ```
     C:\Windows\System32\bcdboot C:\Windows /l en-US
     ```
 

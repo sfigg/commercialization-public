@@ -5,7 +5,6 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 2ff38035-21a6-4081-b8e7-37b6fd3b6f4e
-ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
 ms.author: joshbax
@@ -58,7 +57,7 @@ Describes the size of each buffer, in KB.
 ## Syntax
 
 
-``` syntax
+```
 <BufferSize Operation = "Set" | "Add" | “Remove”
             Value     = unsignedLong>
 </BufferSize>
@@ -168,7 +167,7 @@ This element is used only for in-memory capture.
 
 The following code examples show how this element is used in system collector and event collector definitions.
 
-``` syntax
+```
 <SystemCollector
   Id="WPRSystemCollector"
   Name="NT Kernel Logger"

@@ -1,7 +1,6 @@
 # [Design](index.md)
 
 ## [What's new in Design](what-s-new-in-design.md)
-## [Change history for Design](change-history-for-design.md)
 ## [Minimum hardware requirements](minimum/minimum-hardware-requirements-overview.md)
 ## [Form factors](form-factors/form-factors.md)
 ### [2-in-1](form-factors/2-in-1.md)
@@ -313,3 +312,5 @@
 ## [Windows Hardware Compatibility Program for Windows 10, version 1607](compatibility/)
 
 ## [Windows Hardware Compatibility Program for Windows 10, version 1703](compatibility/1703/)
+
+## [Change history for Design](change-history-for-design.md)

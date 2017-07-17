@@ -5,7 +5,6 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: b3640f46-7bf4-4ee3-8094-ace27f275bd8
-ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
 ms.author: joshbax
@@ -32,7 +31,7 @@ Contains configurations that are applied when recordings from multiple profiles 
 ## Syntax
 
 
-``` syntax
+```
 <TraceMergeProperty Id   = IdType
                     Name = string
                     Base = string>
@@ -162,7 +161,7 @@ Contains configurations that are applied when recordings from multiple profiles 
 
 The following code example shows a trace merge property definition.
 
-``` syntax
+```
 <TraceMergeProperty
   Id="TraceMerge_Default"
   Name="TraceMerge_Default">

@@ -35,7 +35,7 @@ You can use OMA CP provisioning using provxml.
 
 This sample provxml sets the value of a single registry entry.
 
-``` syntax
+```
 <wap-provisioningdoc>
   <characteristic type="Registry">
     <characteristic type="HKLM\Software\ExampleRegistryKey>
@@ -47,13 +47,13 @@ This sample provxml sets the value of a single registry entry.
 
 Use the following syntax for the provxml file naming:
 
-``` syntax
+```
 mxipupdate_PackageName_n.provxml
 ```
 
 For the value of *n* for the first update, start with 001 and increment the value for each subsequent update. All provxml updates are applied in the order specified by *n*.
 
-``` syntax
+```
 mxipupdate_updateExample_001.provxml
 ```
 
@@ -62,7 +62,7 @@ mxipupdate_updateExample_001.provxml
 
 Create a package file that places these files in the proper update directory as shown. Provide an appropriate Owner value. For more info, see [Primary elements and attributes of a package project file](https://msdn.microsoft.com/library/dn756796).
 
-``` syntax
+```
 <?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="urn:Microsoft.WindowsPhone/PackageSchema.v8.00"
     Owner="Contoso"

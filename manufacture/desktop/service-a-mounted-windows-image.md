@@ -42,13 +42,13 @@ In this step, you mount a Windows image to a specified directory, so that it is 
 
 4.  Run the **DISM /Get-ImageInfo** command to retrieve the name or index number for the image that you want to update. For example:
 
-    ``` syntax
+    ```
     Dism /Get-ImageInfo /ImageFile:C:\test\images\MyImage.wim
     ```
 
 5.  Mount the Windows image. For example:
 
-    ``` syntax
+    ```
     Dism /Mount-Image /ImageFile:C:\test\images\MyImage.wim /Index:1 /MountDir:C:\test\offline
     ```
 
@@ -60,13 +60,13 @@ In this step, you add packages to the mounted Windows image.
 
 1.  At an elevated command prompt, add packages to the mounted Windows image. For example:
 
-    ``` syntax
+    ```
     Dism /Image:C:\test\offline /Add-Package /PackagePath:C:\test\packages\package1.cab /PackagePath:C:\test\packages\package2.cab
     ```
 
 2.  If you added a language pack, you can change all international language settings in the mounted offline image by typing the following command:
 
-    ``` syntax
+    ```
     Dism /Image:C:\test\offline /Set-SKUIntlDefaults:fr-FR
     ```
 
@@ -74,7 +74,7 @@ In this step, you add packages to the mounted Windows image.
 
 3.  At the command prompt, commit the changes. The image remains mounted until the **/Unmount-Image** option is used. For example:
 
-    ``` syntax
+    ```
     Dism /Commit-Image /MountDir:C:\test\offline
     ```
 
@@ -84,7 +84,7 @@ In this step, you review the packages that have been installed in your image, an
 
 1.  At an elevated command prompt, find the names of the packages that are in your image. For example:
 
-    ``` syntax
+    ```
     Dism /Image:C:\test\offline /Get-Packages
     ```
 
@@ -94,7 +94,7 @@ In this step, you review the packages that have been installed in your image, an
 
 3.  At a command prompt, specify the package identity of a package and remove it from the mounted image. For example:
 
-    ``` syntax
+    ```
     Dism /Image:C:\test\offline /Remove-Package /PackageName:Microsoft.Windows.Calc.Demo~6595b6144ccf1df~x86~en~1.0.0.0
     ```
 
@@ -104,7 +104,7 @@ All of the changes that you make are also applied to each potential target editi
 
 1.  At an elevated command prompt, list the editions that are available for the upgrade. For example:
 
-    ``` syntax
+    ```
     Dism /Image:C:\test\offline /Get-TargetEditions
     ```
 
@@ -112,7 +112,7 @@ All of the changes that you make are also applied to each potential target editi
 
 2.  At the command prompt, specify the edition that you want to upgrade to. For example:
 
-    ``` syntax
+    ```
     Dism /Image:C:\test\offline /Set-Edition:Ultimate
     ```
 
@@ -124,7 +124,7 @@ In this step, you'll reduce the footprint of the image by cleaning up superseded
 
 -   At an elevated command prompt, run the following command to reduce the size of the image file:
 
-    ``` syntax
+    ```
     Dism /Image:C:\test\offline /cleanup-image /StartComponentCleanup /ResetBase 
     ```
 
@@ -134,7 +134,7 @@ In this step, you unmount the image and save the changes that you have made.
 
 -   At an elevated command prompt, unmount the image and commit the changes to the image file. For example:
 
-    ``` syntax
+    ```
     Dism /Unmount-Image /MountDir:C:\test\offline /Commit
     ```
 

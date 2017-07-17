@@ -53,7 +53,7 @@ For more information about image commands available in DISM, see [DISM - Deploym
 
 2.  To list information about all of the images in a WIM or VHD file, at the elevated command prompt, type:
 
-    ``` syntax
+    ```
     Dism /Get-ImageInfo /imagefile:C:\test\images\install.wim
     ```
 
@@ -106,7 +106,7 @@ The report that is generated includes the following information.
 
 2.  At the elevated command prompt, type:
 
-    ``` syntax
+    ```
     Dism /Get-MountedImageInfo 
     ```
 
@@ -170,7 +170,7 @@ You can mount a Windows Preinstallation Environment (Windows PE) image for servi
 
 2.  To list information about all of the Windows PE settings in the mounted Windows PE image, at the elevated command prompt, type:
 
-    ``` syntax
+    ```
     Dism /image:C:\test\offline /Get-PESettings
     ```
 
@@ -225,21 +225,21 @@ For more information about driver-servicing commands available in DISM, see [DIS
 
 2.  Use one of the following commands to list information about all of the driver packages in a mounted offline Windows image:
 
-    ``` syntax
+    ```
     Dism /image:C:\test\offline /Get-Drivers
     ```
 
-    ``` syntax
+    ```
     Dism /image:C:\test\offline /Get-Drivers /all
     ```
 
     For a running operating system, type one of the following commands:
 
-    ``` syntax
+    ```
     Dism /online /Get-Drivers
     ```
 
-    ``` syntax
+    ```
     Dism /online /Get-Drivers /all
     ```
 
@@ -305,13 +305,13 @@ The report generated includes the following information:
 
 2.  List information about a specific driver package in the offline Windows image. For example, type:
 
-    ``` syntax
+    ```
     Dism /image:C:\test\offline /Get-DriverInfo /driver:oem1.inf
     ```
 
     For a running operating system, type:
 
-    ``` syntax
+    ```
     Dism /online /Get-DriverInfo /driver:oem1.inf
     ```
 
@@ -438,13 +438,13 @@ For more information about operating system package-servicing commands available
 
 2.  To list information about all of the packages in the offline Windows image, type the following command:
 
-    ``` syntax
+    ```
     Dism /image:C:\test\offline /Get-Packages
     ```
 
     For a running operating system, type the following command:
 
-    ``` syntax
+    ```
     Dism /online /Get-Packages
     ```
 
@@ -501,21 +501,21 @@ The report generated includes the following information:
 
 2.  To list information about a specific package in the offline Windows image, type one of the following commands:
 
-    ``` syntax
+    ```
     Dism /image:C:\test\offline /Get-PackageInfo /PackagePath:C:\packages\package.cab
     ```
 
-    ``` syntax
+    ```
     Dism /image:C:\test\offline /Get-PackageInfo /PackageName:Microsoft.Windows.Calc.Demo~6595b6144ccf1df~x86~en~1.0.0.0
     ```
 
     For a running operating system, type one of the following commands:
 
-    ``` syntax
+    ```
     Dism /online /Get-PackageInfo /PackagePath:C:\packages\package.cab
     ```
 
-    ``` syntax
+    ```
     Dism /online /Get-PackageInfo /PackageName:Microsoft.Windows.Calc.Demo~6595b6144ccf1df~x86~en~1.0.0.0
     ```
 
@@ -658,29 +658,29 @@ The report generated includes the following information:
 
 2.  To list information about the features in the offline Windows image, type one of the following commands:
 
-    ``` syntax
+    ```
     Dism /image:C:\test\offline /Get-Features
     ```
 
-    ``` syntax
+    ```
     Dism /image:C:\test\offline /Get-Features /PackageName:Microsoft.Windows.Calc.Demo~6595b6144ccf1df~x86~en~1.0.0.0
     ```
 
-    ``` syntax
+    ```
     Dism /image:C:\test\offline /Get-Features /PackagePath:C:\packages\package.cab
     ```
 
     For a running operating system, type one of the following commands:
 
-    ``` syntax
+    ```
     Dism /online /Get-Features
     ```
 
-    ``` syntax
+    ```
     Dism /online /Get-Features /PackageName:Microsoft.Windows.Calc.Demo~6595b6144ccf1df~x86~en~1.0.0.0
     ```
 
-    ``` syntax
+    ```
     Dism /online /Get-Features /PackagePath:C:\packages\package.cab
     ```
 
@@ -728,17 +728,17 @@ The report generated includes the following information:
 
 2.  To list information about a specific feature in the offline Windows image, type one of the following commands:
 
-    ``` syntax
+    ```
     Dism /image:C:\test\offline /Get-FeatureInfo /FeatureName:Hearts
     ```
 
-    ``` syntax
+    ```
     Dism /image:C:\test\offline /Get-FeatureInfo /FeatureName:LocalPack-GB /PackageName:Microsoft-Windows-LocalPack-GB-Package~6595b6144ccf1df~x86~~1.0.0.0
     ```
 
     For a running operating system, type the following command:
 
-    ``` syntax
+    ```
     Dism /online /Get-FeatureInfo /FeatureName:Hearts 
     ```
 
@@ -811,13 +811,13 @@ For more information about app package servicing commands available in DISM, see
 
 2.  To list provisioned apps in a mounted offline Windows image, type:
 
-    ``` syntax
+    ```
     Dism /image:c:\test\offline /Get-ProvisionedAppxPackages
     ```
 
     For a running operating system, type:
 
-    ``` syntax
+    ```
     Dism /online /Get-ProvisionedAppxPackages
     ```
 
@@ -885,17 +885,17 @@ Use the **/online** option to display information about international settings a
 
 2.  To list information about all of the international settings in the offline Windows image, type one of the following commands:
 
-    ``` syntax
+    ```
     Dism /image:C:\test\offline /Get-Intl
     ```
 
-    ``` syntax
+    ```
     Dism /image:C:\test\offline /distribution:C:\windows_distribution\langpacks /Get-Intl
     ```
 
     For a running operating system, type the following command:
 
-    ``` syntax
+    ```
     Dism /online /Get-Intl
     ```
 
@@ -1002,13 +1002,13 @@ For more information about Windows edition servicing commands available in DISM,
 
 2.  To list information about the current edition of the offline Windows image, type the following command:
 
-    ``` syntax
+    ```
     Dism /image:C:\test\offline /Get-CurrentEdition
     ```
 
     For a running operating system, type the following command:
 
-    ``` syntax
+    ```
     Dism /online /Get-CurrentEdition
     ```
 
@@ -1018,13 +1018,13 @@ For more information about Windows edition servicing commands available in DISM,
 
 2.  To list information about the target edition of the offline Windows image, type the following command:
 
-    ``` syntax
+    ```
     Dism /image:C:\test\offline /Get-TargetEditions
     ```
 
     For a running operating system, type the following command:
 
-    ``` syntax
+    ```
     Dism /online /Get-TargetEditions
     ```
 
@@ -1045,19 +1045,19 @@ For more information about application servicing commands available in DISM, see
 
 2.  To list information about the MSP patches, type one of the following commands:
 
-    ``` syntax
+    ```
     Dism /image:C:\test\offline /Get-AppPatchInfo
     ```
 
-    ``` syntax
+    ```
     Dism /image:C:\test\offline /Get-AppPatchInfo /PatchCode:{B0B9997C-GUID-GUID-GUID-74D866BBDFFF}
     ```
 
-    ``` syntax
+    ```
     Dism /image:C:\test\offline /Get-AppPatchInfo /ProductCode:{B0F9497C-GUID-GUID-GUID-74D866BBDF59}
     ```
 
-    ``` syntax
+    ```
     Dism /image:C:\test\offline /Get-AppPatchInfo /PatchCode:{B0B9997C-GUID-GUID-GUID-74D866BBDFFF} /ProductCode:{B0F9497C-GUID-GUID-GUID-74D866BBDF59}
     ```
 
@@ -1135,11 +1135,11 @@ The report generated includes the following information:
 
 2.  To list information about the MSP patches, type one of the following commands:
 
-    ``` syntax
+    ```
     Dism /image:C:\test\offline /Get-AppPatches
     ```
 
-    ``` syntax
+    ```
     Dism /image:C:\test\offline /Get-AppPatches /ProductCode:{B0F9497C-GUID-GUID-GUID-74D866BBDF59}
     ```
 
@@ -1185,7 +1185,7 @@ The report generated includes the following information:
 
 2.  To list information about the MSP patches, type the following command:
 
-    ``` syntax
+    ```
     Dism /image:C:\test\offline /Get-Apps
     ```
 
@@ -1201,7 +1201,7 @@ Product Name : MsiTestApplication2
 
 2.  To list information about the MSP patches, type the following command:
 
-    ``` syntax
+    ```
     Dism /image:C:\test\offline /Get-AppInfo /ProductCode:{B0F9497C-GUID-GUID-GUID-74D866BBDF59}
     ```
 

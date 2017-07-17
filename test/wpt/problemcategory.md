@@ -5,7 +5,6 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 93db9658-1b8a-4713-8cac-702034d017d3
-ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
 ms.author: joshbax
@@ -36,7 +35,7 @@ Represents a problem category for the profile. This element is for internal use 
 ## Syntax
 
 
-``` syntax
+```
 <ProblemCategory Value = "First Level Triage" | "CPU" | "Storage" ...>
 </ProblemCategory>
 ```

@@ -22,7 +22,7 @@ In Windows 10 Mobile, the notification LED on handheld devices may not turn on 
 <a href="" id="instructions-"></a>**Instructions:**  
 1.  You must configure the **HardwareId** and **InstanceId** registry keys to enable LED notification on the device. In the following example, you must change the value of **HardwareId** to match your device ID (DeviceId).
 
-    ``` syntax
+    ```
       [HKEY_LOCAL_MACHINE\Microsoft\Shell\Nocontrol\LedAlert]
        "HardwareId"="ACPI\\QCOM0D50"   
        "InstanceId"=dword:0
@@ -32,7 +32,7 @@ In Windows 10 Mobile, the notification LED on handheld devices may not turn on 
 
     If the OS correctly detects the LED, the following registry keys will also be populated. Otherwise, they will not be created.
 
-    ``` syntax
+    ```
       "LedHwAvailable"=dword:00000001
        "Intensity"=dword:00000064 
        "Period"=dword:000007d0 
@@ -51,7 +51,7 @@ In Windows 10 Mobile, the notification LED on handheld devices may not turn on 
 
     The following example shows how to do this.
 
-    ``` syntax
+    ```
     <?xml version="1.0" encoding="utf-8"?>
     <Package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
       Owner=""
@@ -95,7 +95,7 @@ In Windows 10 Mobile, the notification LED on handheld devices may not turn on 
 
     For example, the following code snippet shows a sample OEM feature manifest (FM) file that may contain the .spkg that includes the customization:
 
-    ``` syntax
+    ```
     <?xml version="1.0" encoding="utf-8"?>  
     <FeatureManifest 
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
@@ -120,7 +120,7 @@ In Windows 10 Mobile, the notification LED on handheld devices may not turn on 
 
     For example, the OEMInput.xml entry for the feature you defined in the previous step will look like this:
 
-    ``` syntax
+    ```
       <Features>
         <OEM>
           <Feature>WEH_LEDALERT</Feature>
@@ -145,7 +145,7 @@ In Windows 10 Mobile, the notification LED on handheld devices may not turn on 
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_phCustomization\p_phCustomization%5D:%20Adding%20an%20LED%20notification%20option%20%20RELEASE:%20%289/7/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+
 
 
 
