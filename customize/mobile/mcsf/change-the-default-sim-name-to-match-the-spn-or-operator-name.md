@@ -83,7 +83,7 @@ This customization supports: **per-IMSI** value
 
     -   *SIM 1* or *SIM 2* is the default friendly name for the SIM in slot 1 or slot 2.
 
-
+    DELETE THIS!
 
     | Multivariant setting set? | SPN provisioned? | MSISDN (last 4 digitis: 1234, for example) provisioned? | Default SIM name                                                        |
     |---------------------------|------------------|---------------------------------------------------------|-------------------------------------------------------------------------|
