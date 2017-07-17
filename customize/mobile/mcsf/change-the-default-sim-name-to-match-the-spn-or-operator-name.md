@@ -84,7 +84,7 @@ This customization supports: **per-IMSI** value
     -   *SIM 1* or *SIM 2* is the default friendly name for the SIM in slot 1 or slot 2.
 
      
-
+    <html>
     <table>
     <colgroup>
     <col width="25%" />
@@ -152,7 +152,7 @@ This customization supports: **per-IMSI** value
     </tr>
     </tbody>
     </table>
-
+    </html>
      
 
 <a href="" id="testing-steps-"></a>**Testing steps:**  
