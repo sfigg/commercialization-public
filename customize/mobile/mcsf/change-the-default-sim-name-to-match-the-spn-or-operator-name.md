@@ -74,7 +74,7 @@ This customization supports: **per-IMSI** value
 
     The following table shows the scenarios supported by this customization:
 
-    **Note**  
+    **Note**<br/>
     In the **Default SIM name** column:
 
     -   The **" "** in *MultivariantProvisionedSPN*" "1234 means that there is a space between the mobile operator name or SPN and the last 4 digits of the MSISDN.
