@@ -83,76 +83,19 @@ This customization supports: **per-IMSI** value
 
     -   *SIM 1* or *SIM 2* is the default friendly name for the SIM in slot 1 or slot 2.
 
-     
-    <html>
-    <table>
-    <colgroup>
-    <col width="25%" />
-    <col width="25%" />
-    <col width="25%" />
-    <col width="25%" />
-    </colgroup>
-    <thead>
-    <tr class="header">
-    <th>Multivariant setting set?</th>
-    <th>SPN provisioned?</th>
-    <th>MSISDN (last 4 digitis: 1234, for example) provisioned?</th>
-    <th>Default SIM name</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td><p>Yes</p></td>
-    <td><p>Yes</p></td>
-    <td><p>Yes</p></td>
-    <td><p><em>MultivariantProvisionedSPN</em>1234 or <em>MultivariantProvisionedSPN</em>&quot; &quot;1234</p></td>
-    </tr>
-    <tr class="even">
-    <td><p>Yes</p></td>
-    <td><p>No</p></td>
-    <td><p>No</p></td>
-    <td><p><em>MultivariantProvisionedSPN</em> (up to 16 characters)</p></td>
-    </tr>
-    <tr class="odd">
-    <td><p>Yes</p></td>
-    <td><p>Yes</p></td>
-    <td><p>No</p></td>
-    <td><p><em>MultivariantProvisionedSPN</em> (up to 16 characters)</p></td>
-    </tr>
-    <tr class="even">
-    <td><p>Yes</p></td>
-    <td><p>No</p></td>
-    <td><p>Yes</p></td>
-    <td><p><em>MultivariantProvisionedSPN</em>1234 or <em>MultivariantProvisionedSPN</em>&quot; &quot;1234</p></td>
-    </tr>
-    <tr class="odd">
-    <td><p>No</p></td>
-    <td><p>Yes</p></td>
-    <td><p>Yes</p></td>
-    <td><p>If SPN string &gt;= 12: <em>SPN</em>1234</p>
-    <p>If SPN string &lt; 12: <em>SPN</em>&quot; &quot;1234</p></td>
-    </tr>
-    <tr class="even">
-    <td><p>No</p></td>
-    <td><p>No</p></td>
-    <td><p>No</p></td>
-    <td><p><em>SIM 1</em> or <em>SIM 2</em></p></td>
-    </tr>
-    <tr class="odd">
-    <td><p>No</p></td>
-    <td><p>Yes</p></td>
-    <td><p>No</p></td>
-    <td><p>SPN (up to 16 characters)</p></td>
-    </tr>
-    <tr class="even">
-    <td><p>No</p></td>
-    <td><p>No</p></td>
-    <td><p>Yes</p></td>
-    <td><p><em>SIM 1</em> or <em>SIM 2</em></p></td>
-    </tr>
-    </tbody>
-    </table>
-    </html>
+
+
+    | Multivariant setting set? | SPN provisioned? | MSISDN (last 4 digitis: 1234, for example) provisioned? | Default SIM name                                                        |
+    |---------------------------|------------------|---------------------------------------------------------|-------------------------------------------------------------------------|
+    | Yes                       | Yes              | Yes                                                     | *MultivariantProvisionedSPN*1234 or *MultivariantProvisionedSPN*" "1234 |
+    | Yes                       | No               | No                                                      | *MultivariantProvisionedSPN* (up to 16 characters)                      |
+    | Yes                       | Yes              | No                                                      | *MultivariantProvisionedSPN* (up to 16 characters)                      |
+    | Yes                       | No               | Yes                                                     | *MultivariantProvisionedSPN*1234 or *MultivariantProvisionedSPN*" "1234 |
+    | No                        | Yes              | Yes                                                     | If SPN string >= 12: *SPN*1234<br/>If SPN string < 12: *SPN*" "1234     |
+    | No                        | No               | No                                                      | *SIM 1* or *SIM 2*                                                      |
+    | No                        | Yes              | No                                                      | SPN (up to 16 characters)                                               |
+    | No                        | No               | Yes                                                     | *SIM 1* or *SIM 2*                                                      |
+
      
 
 <a href="" id="testing-steps-"></a>**Testing steps:**  
