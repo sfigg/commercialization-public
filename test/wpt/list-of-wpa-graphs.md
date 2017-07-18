@@ -19,22 +19,17 @@ ms.technology: windows-oem
 
 \[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.\]
 
-The Graph Explorer window in Windows Performance Analyzer (WPA) displays thumbnails of all graphs that you can use to view the data of the current recording. The thumbnails are grouped by type under the following six categories:
+The Graph Explorer window in Windows Performance Analyzer (WPA) displays thumbnails of all graphs that you can use to view the data of the current recording. The following sections detail the available graphs for each graph type.
 
--   System Activity
--   Computation
--   Storage
--   Memory
--   Video
--   Power
-
-The following sections detail the available graphs for each graph type.
-
-**Note**  Depending on the trace recorded and saved in the .etl file, not all graphs listed in the following tables may display in the Graph Explorer when performing your analysis.
-
+<div class="alert">
+<strong>Note</strong>  
+<p>
+Depending on the trace recorded and saved in the .etl file, not all graphs listed in the following tables may display in the Graph Explorer when performing your analysis.
+</p>
+</div>
  
 
-### System Activity graphs
+## System Activity graphs
 
 |                     |                                      |       |
 |---------------------|--------------------------------------|-------|
@@ -60,7 +55,7 @@ The following sections detail the available graphs for each graph type.
 
  
 
-### Computation graphs
+## Computation graphs
 
 |                        |                                           |       |
 |------------------------|-------------------------------------------|-------|
@@ -90,7 +85,7 @@ The following sections detail the available graphs for each graph type.
 
  
 
-### Storage graphs
+## Storage graphs
 
 |                    |                                                  |       |
 |--------------------|--------------------------------------------------|-------|
@@ -122,7 +117,7 @@ The following sections detail the available graphs for each graph type.
 
  
 
-### Memory graphs
+## Memory graphs
 
 |                               |                                |       |
 |-------------------------------|--------------------------------|-------|
@@ -140,7 +135,7 @@ The following sections detail the available graphs for each graph type.
 
  
 
-### Video graphs
+## Video graphs
 
 |                      |                               |       |
 |----------------------|-------------------------------|-------|
@@ -154,7 +149,7 @@ The following sections detail the available graphs for each graph type.
 
  
 
-### Power graphs
+## Power graphs
 
 Text
 
