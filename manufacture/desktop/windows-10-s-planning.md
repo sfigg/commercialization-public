@@ -95,7 +95,8 @@ To enable customizations in audit mode, you have to enable manufacturing mode by
 
 You'll also have to configure ScanState to exclude the registry key when capturing your recovery package. This ensures that the registry key doesn't get restored during reset or recovery scenarios. We'll cover how to exclude the key from recovery in the [Windows 10 S deployment lab](windows-10-s-deployment-sxs.md)
 
->**Important**: Don't ship your Windows 10 S PC with the registry in place. You'll have to remove the registry key prior to shipping the device.
+> [!IMPORTANT]
+> Don't ship your Windows 10 S PC with the registry in place. You'll have to remove the registry key prior to shipping the device.
 
 ## Upgrade paths
 
