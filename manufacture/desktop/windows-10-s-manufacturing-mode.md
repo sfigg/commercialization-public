@@ -86,9 +86,9 @@ On your Windows 10 S PC in audit mode:
 
 ## Exclude the manufacturing registry key from recovery
 
-Now we'll create a file that automates the exclusion of the customizations registry key when you capture settings for recovery. This ensures that your PC doesn't restore the customization registry key during the recovery process.
+When you create a recovery package, you want to make sure to exclude the manufacturing registry key. Create an exclusion file that you use with scanstate to capture a recovery package.
 
-1. Create an xml file in a text editor.
+1. Create an .xml file in a text editor.
 
 2. Copy and paste the following code. This tells ScanState to not capture the registry key in the recovery package that it creates:
 
@@ -112,7 +112,7 @@ Now we'll create a file that automates the exclusion of the customizations regis
 
 3. Save the file as exclusion.xml.
 
-4. Use scanstate to generate a recovery package, and place it into the recovery folder.
+4. When you use scanstate to generate a recovery package, add /i:exclusion.xml to the scanstate command to exclude the manufacturing key from the capture. This command creates a recovery package that excludes the manufacturing registry key, and places it into the recovery folder.
 
     ```
     Scanstate.exe /config:T:\deploymenttools\Config_SettingsOnly.xml /o /v:13 /ppkg C:\Recovery\Customizations\usmt.ppkg /i:exclusion.xml /l:C:\Scanstate.log
