@@ -18,6 +18,7 @@ This topic describes common errors you can encounter when you use Features on De
 
 **Table 1 Features on Demand Error Codes**
 
+> [!div class="mx-tableFixed"]
 <table>
 <thead>
 <tr class="header">
