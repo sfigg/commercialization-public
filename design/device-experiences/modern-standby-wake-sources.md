@@ -48,13 +48,6 @@ The remainder of this topic describes, for each device type, whether a device sh
 The core silicon or SoC chip in a modern standby platform has one or more timers that are always powered on that so that Windows can schedule future work and place the SoC into a deep idle state. During standby, the always-on timer reliably wakes the SoC as programmed by the OS.
 
 <table>
-<colgroup>
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-</colgroup>
 <thead>
 <tr class="header">
 <th>Device</th>
@@ -64,7 +57,7 @@ The core silicon or SoC chip in a modern standby platform has one or more timers
 <th>Remarks</th>
 </tr>
 </thead>
-<tbody>
+<tbody valign="top">
 <tr class="odd">
 <td><p>Always-on timer</p></td>
 <td><p>Yes</p></td>
@@ -85,13 +78,6 @@ The system power button is the most common user-initiated wake source in a moder
 Modern standby PCs might feature other system buttons, including rotation-lock and volume up/down buttons.
 
 <table>
-<colgroup>
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-</colgroup>
 <thead>
 <tr class="header">
 <th>Device</th>
@@ -101,7 +87,7 @@ Modern standby PCs might feature other system buttons, including rotation-lock a
 <th>Remarks</th>
 </tr>
 </thead>
-<tbody>
+<tbody valign="top">
 <tr class="odd">
 <td><p>Power button</p></td>
 <td><p>Yes</p></td>
@@ -149,13 +135,6 @@ Modern standby PCs might feature other system buttons, including rotation-lock a
 The Wi-Fi and mobile broadband (MBB) devices are responsible for delivering the real-time and constant connectivity features of modern standby.
 
 <table>
-<colgroup>
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-</colgroup>
 <thead>
 <tr class="header">
 <th>Device</th>
@@ -165,7 +144,7 @@ The Wi-Fi and mobile broadband (MBB) devices are responsible for delivering the 
 <th>Remarks</th>
 </tr>
 </thead>
-<tbody>
+<tbody valign="top">
 <tr class="odd">
 <td><p>Wi-Fi radio</p></td>
 <td><p>GPIO interrupt</p></td>
@@ -216,13 +195,6 @@ We recommend using HIDI2C for input peripherals whenever possible, but this is n
 In addition to buttons on the chassis, a modern standby PC might have other input devices physically integrated into the system or attached to the system directly or indirectly through a dock. When the user generates input through an input device, it must always wake the SoC from the deepest idle state and cause the display to turn on.
 
 <table>
-<colgroup>
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-</colgroup>
 <thead>
 <tr class="header">
 <th>Device</th>
@@ -232,7 +204,7 @@ In addition to buttons on the chassis, a modern standby PC might have other inpu
 <th>Remarks</th>
 </tr>
 </thead>
-<tbody>
+<tbody valign="top">
 <tr class="odd">
 <td><p>Keyboard (integrated HIDI2C)</p></td>
 <td><p>Yes</p>
@@ -370,13 +342,6 @@ In addition to buttons on the chassis, a modern standby PC might have other inpu
 In addition to buttons on the chassis, a modern standby PC may have other input devices that are physically integrated into the system, or are attached to the system directly or indirectly through a dock. When the user generates input through an input device, this event must always wake the SoC from the deepest idle state and cause the display to turn on.
 
 <table>
-<colgroup>
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-</colgroup>
 <thead>
 <tr class="header">
 <th>Device</th>
@@ -386,7 +351,7 @@ In addition to buttons on the chassis, a modern standby PC may have other input 
 <th>Remarks</th>
 </tr>
 </thead>
-<tbody>
+<tbody valign="top">
 <tr class="odd">
 <td><p>USB device insertion</p></td>
 <td><p>Yes</p></td>
@@ -501,13 +466,6 @@ I</td>
 The modern standby PC must also respond in real-time to changes in environmental conditions. The common cases are thermal events and power source change events.
 
 <table>
-<colgroup>
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-</colgroup>
 <thead>
 <tr class="header">
 <th>Device</th>
@@ -517,7 +475,7 @@ The modern standby PC must also respond in real-time to changes in environmental
 <th>Remarks</th>
 </tr>
 </thead>
-<tbody>
+<tbody valign="top">
 <tr class="odd">
 <td><p>Power source change (AC to battery, or battery to AC)</p></td>
 <td><p>Yes</p></td>
