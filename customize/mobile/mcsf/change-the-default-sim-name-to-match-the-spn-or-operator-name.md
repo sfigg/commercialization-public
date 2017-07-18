@@ -95,7 +95,7 @@ This customization supports: **per-IMSI** value
 
     -   *SIM 1* or *SIM 2* is the default friendly name for the SIM in slot 1 or slot 2.
 
-<p></p>     
+    ** **
 
 <a href="" id="testing-steps-"></a>**Testing steps:**  
 1.  Flash a build containing this customization to a phone that supports either a single or dual SIM.
