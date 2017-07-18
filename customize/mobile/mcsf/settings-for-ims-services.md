@@ -451,12 +451,8 @@ This customization supports: **per-IMSI** value, **per-device** value
 
          
 
-9.  
-
-    **Important**  
+9.  **Important**<br/>
     Beginning with Windows Phone 8.1 GDR1, the `ShowVoLTEToggle` setting under the CellCore/PerDevice/CellUX/Critical settings path must be set. This ensures that OMA-DM VoLTE features for certain mobile operators are functioning properly. Once you have made this change to your answer file, the `ShowVoLTEToggle` setting in the CellCore/PerIMSI/$(\_\_IMSI)/CellUX/Critical settings path will be ignored. You may remove or leave the per-IMSI setting in your answer file.
-
-     
 
     Set the value for `ShowVoLTEToggle` to one of the following to hide or show the VoLTE toggle.
 
