@@ -10,7 +10,7 @@ ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-# Planning a Windows 10 S image
+# Planning a Windows 10 S deployment
 
 Building a Windows 10 S image is like building an image for any other desktop edition of Windows, with some key differences to consider when planning your deployment. You can add apps, drivers, and customizations to Windows 10 S, but you'll have to make sure they are supported in Windows 10 S.
 
