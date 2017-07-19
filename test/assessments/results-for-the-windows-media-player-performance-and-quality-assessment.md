@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: 2503b5ce-6b01-4a49-b3a3-8c4b84419152
 ms.mktglfcycl: plan
 ms.sitesec: msdn
-ms.author: joshbax
+ms.author: sapaetsc
 ms.date: 05/05/2017
 ms.topic: article
 ms.prod: windows-hardware
