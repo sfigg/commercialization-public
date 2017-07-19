@@ -16,7 +16,7 @@ By default, IoT Core devices are setup to synchronize time from time.windows.com
 
 ##Update the server from a command line (for example, using a tool like PuTTY):
 
-1.	 Identify the required NTP server(s) and make sure you can reach them from your network. If time.windows.com, NTPServer1, NTPServer2 are the three desired NTP servers, make sure the following commands succeed when run on a Windows computer on the network before using in an IOT device:
+1.	 Identify the required NTP server(s) and make sure you can reach them from your network. For example, if time.windows.com, NTPServer1, NTPServer2 are the three desired NTP servers, make sure the following commands succeed when run on a Windows computer on the network before using in an IoT device:
      ```
      W32tm.exe /stripchart /computer:time.windows.com /samples:5
      W32tm.exe /stripchart /computer:NtpServer1 /samples:5
@@ -29,17 +29,15 @@ By default, IoT Core devices are setup to synchronize time from time.windows.com
 	```
 
 3.	Restart the time service
-    
 	```
     net stop w32time
     net start w32time
 	```
 
-You can verify the time servers the device is currently receiving time from, using 
+4.	Verify the time servers from which the device is currently receiving time.If you restarted the time service, allow a minute or so before verifying the time service.
 	```
-	W32tm.exe /query /peers
+    W32tm.exe /query /peers
 	```
-If you restarted the time service, allow a minute or so before verifying the time service.
 
 ##Update the server in an IoT Core image
 
