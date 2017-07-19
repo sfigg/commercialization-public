@@ -96,7 +96,9 @@ We'll take our customizations, put them together, and test them in a retail buil
     ```
 	buildpkg all
 	```
+
     If the BSP drivers/packages are test signed, you may also need to rebuild them to have retail signature. For RPI2 BSP, run the following command again.
+
     ```
     C:\rpibsp\build.cmd
     ```
