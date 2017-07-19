@@ -84,8 +84,6 @@ For more information about these settings, see the StartTiles settings topics in
 
 [Mount and Modify a Windows Image Using DISM](mount-and-modify-a-windows-image-using-dism.md)
 
-[Customize the Default User Profile by Using CopyProfile](customize-the-default-user-profile-by-using-copyprofile.md)
-
 [Deployment Imaging Servicing Management (DISM) Cmdlets in Windows PowerShell](http://go.microsoft.com/fwlink/?LinkId=239926)
 
  
