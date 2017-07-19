@@ -1,6 +1,6 @@
 ---
-title: Windows Hello: Steps to submit a fingerprint driver
-description: Windows Hello: Steps to submit a fingerprint driver
+title: Windows Hello fingerprint driver signature process
+description: Windows Hello fingerprint driver signature process
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
@@ -11,8 +11,6 @@ ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-# Windows Hello: Steps to submit a fingerprint driver
-
 
 ## Submitting a fingerprint driver for Windows Hello compatibility  
 Microsoft has introduced new requirements on biometric sensors to comply with Windows Hello quality guidelines. A new manual review process will be necessary to gain approval to interoperate with Windows Hello. The process will be enforced with an OS check for a specific signature obtained through the Windows DevCenter (here: https://developer.microsoft.com/en-us/) that can only be obtained by undergoing the process in this document. Drivers that have been created and signed by WHQL before 6/1/17 are grandfathered. New and updated drivers that do not obtain this signature after this date will not work with Windows Hello in Window 10, version 1703 or later after the enforcement date. 
@@ -20,19 +18,18 @@ Microsoft has introduced new requirements on biometric sensors to comply with Wi
 A driver will always undergo manual approval to obtain the Windows Hello signature. Updates to approved drivers can refer to previous submissions for faster approval. Drivers must undergo a new review if it applies to a new sensor, or if changes to the matching engine have occurred that impact FAR, FRR, or presentation attack detection.  
 
 
-For the initial pre-release and release builds of Window 10, version 1703 in 2017, a period of auditing will verify drivers are being signed. Sensors that are not signed during this period will continue to work. Vendors responsible for drivers that are not signed will be instructed to perform the signing process and upload the signed driver to Windows Update. 
-
-The biometric signature enforcement date is 6/1/2017, after which drivers that do not contain the bio signature will not be loaded and will no longer work with Windows Hello. 
+The biometric signature enforcement date is 6/1/2017, after which drivers that do not contain the appropriate signature will no longer work with Windows Hello. 
 
 ###Step One: Create a biometric driver
 Follow the instructions here to create a biometric driver: https://msdn.microsoft.com/en-us/library/windows/desktop/dd401509(v=vs.85).aspx
 
-###Step Two:Test your sensor and self-validate
-Self validate the sensor and diver to ensure they meet Microsoft’s biometric requirements (Windows 10 Hello FPR – Biometric Requirements v*) and report findings in the Fingerprint Security Review Template (Windows 10 Hello FPR – Security Review Template v*).
-Both of these documents can be found within the Fingerprint partner package on Connect. If you do not have access to Connect, contact your Microsoft representative.
+###Step Two: Test your sensor and self-validate
+Self validate the sensor and driver to ensure they meet Microsoft’s biometric requirements. For more information, see the following two documents that you can find in the Fingerprint reader partner package on http://connect.microsoft.com. If you do not have access to Connect, contact your Microsoft representative.
+*Windows 10 Hello FPR – Biometric Requirements
+*Windows 10 Hello FPR – Security Review Template 
 
 ###Step Three: Modify the driver configuration xml file
-When you submit your driver, the Windows 10, version 1703 Fingerprint HLK test will check to ensure that the <vendorCompliance> and <securityReview> tag are included with the following fields:
+The Windows 10, version 1703 Fingerprint HLK test will check to ensure that the <vendorCompliance> and <securityReview> tag are included with the following fields, so you need to add these tags to the file.
 
 **bugId**: ID number for the previous HLK submission that contains the previously approved security review information or 0 if the submission is undergoing an entirely new security review.
 
@@ -90,7 +87,7 @@ The HLK tests will make sure the above modifications have been made in steps 3 a
 When packaging the final HLK in HLK studio include the security review template submitted in the bug as a supplemental file.
 
 ###Step Six: Submit the driver package and HLK logs
-Submit the packaged HLK file to DevCenter for review. The feature team within Microsoft will be notified of the submission when it reaches the manual review process. The team will review the submitted template in the HLK package to make sure the self-validated information meets the Microsoft’s Biometric Requirements (here: http://connect.microsoft.com/site1304/Downloads/DownloadDetails.aspx?DownloadID=61357).  SLAs for approval/denial are within 1-2 business days.
+Submit the packaged HLK file to DevCenter for review. The feature team within Microsoft will be notified of the submission when it reaches the manual review process. The team will review the submitted template in the HLK package to make sure the self-validated information meets the Microsoft’s Biometric Requirements. Contact your Microsoft representative for more information. SLAs for approval/denial are within 1-2 business days.
 
 ###Step Seven: Wait for Microsoft approval and signing
 Microsoft will approve the submission provided it meets all Biometric requirements
