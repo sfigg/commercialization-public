@@ -19,14 +19,6 @@ ms.technology: windows-oem
 
 Windows Performance Recorder (WPR) recording profiles are stored in an XML file that has a .wprp extension. *Profile definitions* bring together the collector and provider definitions in the .wprp file.
 
-In this article:
-
--   [Profiles](#profiles)
-
--   [Collectors Element](#collectors)
-
--   [Profile Definition Example](#profdefex)
-
 ## Profiles
 
 
@@ -168,14 +160,3 @@ The following code example shows a complete profile definition.
 [SystemCollectorId](systemcollectorid.md)
 
 [HeapEventProviderId](heapeventproviderid.md)
-
- 
-
- 
-
-
-
-
-
-
-
