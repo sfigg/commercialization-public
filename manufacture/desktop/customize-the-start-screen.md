@@ -22,12 +22,13 @@ To install Windows Store apps that are not part of your business line, you must 
 
 ## <span id="BKMK_layoutmodificationxml"></span> Use LayoutModification XML
 
-You can customize the Windows 10 Start menu by using layoutmodification.xml to modify or replace the default Start layou and its tiles. To see how to use layoutmodification.xml, see [Start layout XML for desktop editions of Windows 10](https://docs.microsoft.com/en-us/windows/configuration/start-layout-xml-desktop).
+You can customize the Windows 10 Start menu by using layoutmodification.xml to modify or replace the default Start layout and its tiles. To see how to use layoutmodification.xml, see [Start layout XML for desktop editions of Windows 10](https://docs.microsoft.com/en-us/windows/configuration/start-layout-xml-desktop).
 
 
 ## <span id="BKMK_StartTiles"></span><span id="bkmk_starttiles"></span><span id="BKMK_STARTTILES"></span>Use StartTiles settings to lay out the Start screen
 
-> **Note:** Customizing the Start menu using StartTiles in unattend is deprecated. Use layoutmodification.xml to customize the Windows 10 Start menu.
+> [!IMPORTANT]
+> Customizing the Start menu using StartTiles in unattend is deprecated. Use layoutmodification.xml to customize the Windows 10 Start menu.
 
 You can use settings in an unattended answer file to specify how the app tiles display on the **Start** screen. You can’t remove tiles from the **Start** screen or label groups using unattend settings, but you can specify how tiles for 24 installed apps are displayed using the StartTiles settings. Each of the settings maps to a fixed position in the **Start** screen templates, and these positions vary according to the destination PC's screen size, resolution, and DPI. Each setting specifies whether the tile is a wide tile or a square tile for an app, or if it's a square tile for a desktop app.
 
