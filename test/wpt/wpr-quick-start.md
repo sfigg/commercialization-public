@@ -24,18 +24,6 @@ You can also run WPR from the command-line; for information about that option, s
 
  
 
-**In this article:**
-
--   [Recording by using the WPR Default Settings](#default)
-
--   [Using Recording Profiles](#profiles)
-
--   [Using Performance Scenarios](#perf)
-
--   [Using Detail Levels](#detail)
-
--   [Using Logging Mode](#logmode)
-
 ## <a href="" id="default"></a>Recording by using the WPR Default Settings
 
 

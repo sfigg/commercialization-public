@@ -13,9 +13,6 @@ ms.technology: windows-oem
 
 # Manufacturing Mode Phone Call Testing APIs
 
-
-\[Some information relates to pre-released product, which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.\]
-
 These APIs are used by phone manufacturers to test phone call functionality while the device is booted into Manufacturing Mode.
 
 ## <span id="in_this_section"></span>In this section
