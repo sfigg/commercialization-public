@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: 71EC5490-7245-45B4-91B0-8B689404A885
 ms.mktglfcycl: operate
 ms.sitesec: msdn
-ms.author: joshbax
+ms.author: sapaetsc
 ms.date: 05/05/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -20,7 +20,6 @@ The Graph Explorer window in Windows Performance Analyzer (WPA) displays thumbna
 
 > [!NOTE]
 > Depending on the trace recorded and saved in the .etl file, not all graphs listed in the following tables may display in the Graph Explorer when performing your analysis.
- 
 
 ## System Activity graphs
 

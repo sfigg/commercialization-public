@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: 19c60e7c-2673-4e7c-9b04-978ac94ce812
 ms.mktglfcycl: operate
 ms.sitesec: msdn
-ms.author: joshbax
+ms.author: sapaetsc
 ms.date: 05/05/2017
 ms.topic: article
 ms.prod: windows-hardware
