@@ -14,9 +14,6 @@ ms.technology: windows-oem
 
 # Enable call recording by default
 
-
-\[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.\]
-
 Partners can configure devices to have the call recording feature enabled by default.
 
 <a href="" id="constraints---firstvariationonly"></a>**Constraints:** FirstVariationOnly  

@@ -16,9 +16,6 @@ ms.technology: windows-oem
 
 # StartHeapTrace
 
-
-\[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.\]
-
 This function registers and starts a heap tracing session for a set of specified PIDs. You can also enable stack walking for certain heap events such as allocation or deletion using this function.
 
 The process for which heap tracing is to be enabled must be created before calling this function. In order to capture heap events from the very start of the program, it is advisable that the process be started with the [CREATE\_SUSPENDED](https://msdn.microsoft.com/library/windows/desktop/ms682425.aspx) flag, then heap tracing enabled for its PID, then the process resumed.
