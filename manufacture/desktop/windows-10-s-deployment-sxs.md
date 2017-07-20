@@ -19,13 +19,13 @@ Creating a deployment of Windows 10 S has some differences when compared to othe
 
 To start building a Windows 10 S image for deployment, here's what you'll need:
 
-- Windows 10 S ISO
+- Windows 10 S image
 - Technician PC running Windows 10, Version 1703 or later
 - Reference PC where you can deploy your image
-- The latest version of the ADK installed on your technician PC
+- The [latest version of the ADK](https://developer.microsoft.com/en-us/windows/hardware/windows-assessment-deployment-kit) installed on your technician PC
 - A USB key that you can format
 - [Deployment scripts](http://go.microsoft.com/fwlink/p/?LinkId=800657)
-- Customizations such as drivers, language packs
+- Customizations such as drivers or language packs
 - The latest GDR from [the Microsoft Update Catalog](http://www.catalog.update.microsoft.com)
 
 ## Format your USB key
@@ -88,7 +88,9 @@ On your technician PC:
     ```
     When prompted, press **Y** to format the drive and install WinPE.
 
-## Create Data USB Key
+See WinPE: For more information about how to create a WinPE drive, see WinPE: Create USB bootable drive(winpe-create-usb-bootable-drive.md).
+
+## Create Data USB partition
 
 1. In File Explorer, open the deployment scripts zip and copy the scripts folder to the Data partition of your USB drive. 
 2. From the Deployment and Imaging Tools Environment use copydandi.cmd to copy deployment and imaging tools to your USB drive
@@ -136,6 +138,9 @@ Mounting a Windows image is the same process that we used to mount the WinPE ima
 
     **Troubleshoot:** If mounting operation fails, make sure the Windows 10 version of DISM is the one installed with the Windows ADK is being used and not an older version that might be on the Technician Computer. Don't mount images to protected folders, such as the User\Documents folder.  If DISM processes are interrupted, consider temporarily disconnecting from the network and disabling virus protection.
 
+For more information about mounting a Windows image, see [Mount and Modify a Windows Image Using DISM](mount-and-modify-a-windows-image-using-dism.md).
+
+To learn about customizing WinRE, see (Customize Windows RE)[customize-windows-re.md].
 
 ## Enable customizations
 
@@ -168,6 +173,8 @@ We'll add the customization registry key to the mounted image by loading the mou
 
 The mounted image now has the manufacturing key that will allow you to make changes in audit mode. You'll have to remove it before shipping the PC.
 
+To learn about the Windows 10 S manufacturing registry key, see [Windows 10 S manufacturing mode](windows-10-s-manufacturing-mode.md).
+
 ### Create exclusion.xml
 
 Now we'll create a file that automates the exclusion of the customizations registry key when you capture settings for recovery. This ensures that your PC doesn't restore the customization registry key during the recovery process.
@@ -198,6 +205,7 @@ Now we'll create a file that automates the exclusion of the customizations regis
 
 We'll use this config file when we capture a ScanState package for recovery later in the lab.
 
+You can learn about excluding files and settings from a ScanState package at [Exclude Files and Settings](https://docs.microsoft.com/en-us/windows/deployment/usmt/usmt-exclude-files-and-settings).
 
 ## Add drivers
 
@@ -222,7 +230,7 @@ Like other versions of Windows, you can add drivers to a Windows 10 S image to e
     ```
     Check the list of packages and verify that the list contains the drivers you added.
  
-
+For more information about adding drivers to an offline Windows image, see [Add and Remove Drivers to an Offline Windows Image](add-and-remove-drivers-to-an-offline-windows-image.md).
 
 ## Add a language (optional)
 
@@ -243,6 +251,7 @@ In this section, we'll add the German (de-de) language pack to the mounted Windo
     ```
     Dism /image:C:\mount\winre /add-package /packagepath:"E:\Windows Preinstallation Environment\x64\WinPE_OCs\de-de\lp.cab" 
     ```
+See [Add and remove language packs offline using DISM](add-and-remove-language-packs-offline-using-dism.md) for more information.
 
 ## Add the latest General Distribution Release (GDR)
 
@@ -264,6 +273,9 @@ Install the latest GDR package that include the latest bug fixes and OS changes.
     ```
     DISM /Cleanup-Image /Image=C:\mount\winre /StartComponentCleanup /ResetBase /ScratchDir:C:\Temp
     ```
+
+See [Add or remove packages offline using DISM](add-or-remove-packages-offline-using-dism.md) for more information about adding packages to your Windows image.
+
 ## Unmount WinRE Image and make a copy
 
 Now that you have made all of your offline customizations, you can unmount your images.
@@ -292,7 +304,7 @@ copy c:\temp\install.wim t:\
 copy c:\temp\winre-optimized.wim t:\
 ```
 
-## Apply image to reference PC
+## Deploy the image to reference PC
 
 1. Boot your reference PC to WinPE.
 
@@ -309,6 +321,8 @@ copy c:\temp\winre-optimized.wim t:\
 3. The PC will restart into audit mode.
 4. Make changes to the PC. See the table on [Planning a Windows 10 S image](windows-10-s-planning.md#customizations) to see which customizations are available in audit mode.
 
+To learn about audit mode, see [Audit mode overview](audit-mode-overview.md).
+To learn about Audit mode's behavior with Windows 10 S, see [Audit mode](windows-10-s-manufacturing-considerations.md#audit-mode) in [Windows 10 S manufacturing environment](windows-10-s-manufacturing-considerations.md).
 
 ## Capture your audit mode changes for the recovery tools
 
@@ -320,6 +334,7 @@ Now that you've customized your image in Audit mode, you can use ScanState to ca
     md c:\Recovery\Customizations
     T:\deploymenttools\scanstate /config:T:\deploymenttools\Config_SettingsOnly.xml /o /v:13 /ppkg c:\recovery\customizations\usmt.ppkg /i:exclusion.xml /l:C:\Scanstate.log
     ```
+
 
 2. When the capture completes successfully, delete the ScanState logfile: `del c:\scanstate.log`.
 
@@ -367,8 +382,9 @@ xcopy t:\winre-optimized.wim c:\windows\system32\recovery\winre.wim
     ```
     Where C:\ is the Windows partition.
 
+See [Capture and apply Windows system and recovery partitions](capture-and-apply-windows-system-and-recovery-partitions.md) for more information.
 
-### Deploy your image and verify customizations and recovery
+## Deploy your image and verify customizations and recovery
 
 #### Apply your image
 
@@ -394,7 +410,7 @@ To verify recovery is working as expected, perform the following validation task
 - Validate extensibility scripts in the simulated RS3 enforcement level using the provided policy file.
 - If you created a recovery package with ScanState, ensure that the manufacturing key was excluded when the package was captured.
 
-## Shipping the PC
+## Ship the PC
 
 Now that you have an image, you are ready to build and ship Windows 10 S PCs. Make sure that the manufacturing registry key is removed and Secure Boot is enabled on shipped PCs.
 
