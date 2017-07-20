@@ -1,4 +1,10 @@
 ---
+title: Windows Hello fingerprint driver signature process
+description: Windows Hello fingerprint driver signature process
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.author: dawnwood
 title: Windows Hello: Steps to submit a fingerprint driver
 description: Windows Hello: Steps to submit a fingerprint driver
 MSHAttr:
