@@ -128,6 +128,8 @@
 ####[OEM identity protection considerations](device-experiences/OEM-identity-protection.md)
 ####[OEM information protection considerations](device-experiences/OEM-information-protection.md)
 #### [Device encryption for OEMs](device-experiences/device-encryption-for-oem.md)
+
+
 ### [Versatile input platform](device-experiences/versitle-input-platform.md)
 
 ## [Hardware component guidelines](component-guidelines/components.md)
