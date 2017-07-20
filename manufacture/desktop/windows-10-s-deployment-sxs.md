@@ -88,7 +88,7 @@ On your technician PC:
     ```
     When prompted, press **Y** to format the drive and install WinPE.
 
-See WinPE: For more information about how to create a WinPE drive, see WinPE: Create USB bootable drive(winpe-create-usb-bootable-drive.md).
+For more information about how to create a WinPE drive, see [WinPE: Create USB bootable drive](winpe-create-usb-bootable-drive.md).
 
 ## Create Data USB partition
 
@@ -140,7 +140,7 @@ Mounting a Windows image is the same process that we used to mount the WinPE ima
 
 For more information about mounting a Windows image, see [Mount and Modify a Windows Image Using DISM](mount-and-modify-a-windows-image-using-dism.md).
 
-To learn about customizing WinRE, see (Customize Windows RE)[customize-windows-re.md].
+To learn about customizing WinRE, see [Customize Windows RE](customize-windows-re.md).
 
 ## Enable customizations
 
@@ -251,6 +251,7 @@ In this section, we'll add the German (de-de) language pack to the mounted Windo
     ```
     Dism /image:C:\mount\winre /add-package /packagepath:"E:\Windows Preinstallation Environment\x64\WinPE_OCs\de-de\lp.cab" 
     ```
+
 See [Add and remove language packs offline using DISM](add-and-remove-language-packs-offline-using-dism.md) for more information.
 
 ## Add the latest General Distribution Release (GDR)
