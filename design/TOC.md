@@ -22,7 +22,7 @@
 ### [Windows Hello](device-experiences/windows-hello.md)
 #### [Windows Hello and Companion Device Framework](device-experiences/windows-hello-companion-device-framework.md)
 #### [Windows Hello biometric requirements](device-experiences/windows-hello-biometric-requirements.md)
-#####[Windows Hello driver signing](device-experiences/windows-hello-driver-signing.md)
+#####[Windows Hello fingerprint driver signature process](device-experiences/windows-hello-driver-signing.md)
 #### [Windows Hello face authentication](device-experiences/windows-hello-face-authentication.md)
 ### [Modern Standby](device-experiences/modern-standby.md)
 #### [Power models and the advantages of using Modern Standby](device-experiences/advantages-of-using-modern-standby-over-s3.md)
