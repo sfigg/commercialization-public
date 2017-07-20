@@ -21,13 +21,8 @@
 ### [Tablet mode](device-experiences/continuum.md)
 ### [Windows Hello](device-experiences/windows-hello.md)
 #### [Windows Hello and Companion Device Framework](device-experiences/windows-hello-companion-device-framework.md)
-<<<<<<< HEAD
 #### [Windows Hello biometric requirements](device-experiences/biometric-requirements.md)
 #####[Windows Hello fingerprint driver signature process](device-experiences/windows-hello-driver-signing.md)
-=======
-#### [Windows Hello biometric requirements](device-experiences/windows-hello-biometric-requirements.md)
-#####[Windows Hello driver signing](device-experiences/windows-hello-driver-signing.md)
->>>>>>> a5df1ee9777227bcafa36522be552e6bcc928492
 #### [Windows Hello face authentication](device-experiences/windows-hello-face-authentication.md)
 ### [Modern Standby](device-experiences/modern-standby.md)
 #### [Power models and the advantages of using Modern Standby](device-experiences/advantages-of-using-modern-standby-over-s3.md)
