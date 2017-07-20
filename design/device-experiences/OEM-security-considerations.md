@@ -1,18 +1,18 @@
 ---
-title: Security and reliability
+title: OEM Security considerations
 description: Provides guidance on platform integrity and data protection features including Secure boot and BitLocker.
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 0C1E8C46-553F-4877-8119-683F6883B4A1
-ms.author: sapaetsc
-ms.date: 05/02/2017
+ms.author: dawnwood
+ms.date: 07/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-# Security and reliability
+# OEM Security considerations
 
 
 Windows 10 has platform integrity and data protection features that rely on the underlying hardware to strengthen the system's security:
