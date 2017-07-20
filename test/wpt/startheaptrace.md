@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: 2f3ecae0-532a-45ab-a5e3-a5ed4868decf
 ms.mktglfcycl: operate
 ms.sitesec: msdn
-ms.author: joshbax
+ms.author: sapaetsc
 ms.date: 05/05/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -15,9 +15,6 @@ ms.technology: windows-oem
 ---
 
 # StartHeapTrace
-
-
-\[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.\]
 
 This function registers and starts a heap tracing session for a set of specified PIDs. You can also enable stack walking for certain heap events such as allocation or deletion using this function.
 

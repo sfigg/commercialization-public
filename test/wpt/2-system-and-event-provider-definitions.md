@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: 24358037-a8ad-41c8-b82c-b4c5111b17d3
 ms.mktglfcycl: operate
 ms.sitesec: msdn
-ms.author: joshbax
+ms.author: sapaetsc
 ms.date: 05/05/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -18,20 +18,6 @@ ms.technology: windows-oem
 
 
 Windows Performance Recorder (WPR) recording profiles are stored in an XML file that has a .wprp extension. A system provider definition specifies the system keywords, stacks, and memory pool tags in the .wprp file.
-
-In this article:
-
--   [Provider Definition](#provdef)
-
--   [System Providers](#sys)
-
--   [Event Providers](#event)
-
--   [Heap Event Providers](#heap)
-
--   [Capture-State Providers](#cap)
-
--   [Example](#ex)
 
 ## <a href="" id="provdef"></a>Provider Definition
 
@@ -232,14 +218,3 @@ The following code example defines two event providers.
 [Stack](stack-wpa.md)
 
 [PoolTag](pooltag.md)
-
- 
-
- 
-
-
-
-
-
-
-

@@ -12,20 +12,31 @@ ms.technology: windows-oem
 
 # Update the time server
 
-Synchronize the system time between IoT Core devices and a time server. Windows 10, version 1607 defaults to using the Windows Time Service at http://time.windows.com. You can change the time server or add multiple time servers for when your devices are on different network environments.
+By default, IoT Core devices are setup to synchronize time from time.windows.com.  If you don’t have internet connectivity or behind a firewall, then you’ll need to synchronize the system time for your IoT Core devices to a time server reachable in your network.  You can change the time server or add multiple time servers using the information below.
 
 ##Update the server from a command line (for example, using a tool like PuTTY):
 
-1.	 Add the time server using a registry key
+1.	 Identify the required NTP server(s) and make sure you can reach them from your network. For example, if time.windows.com, NTPServer1, NTPServer2 are the three desired NTP servers, make sure the following commands succeed when run on a Windows computer on the network before using in an IoT device:
      ```
-     reg add HKLM\SYSTEM\CurrentControlSet\Services\w32time\Parameters /v NtpServer /t REG_SZ /d "time.windows.com,0x9 tick.usno.navy.mil,0x9 europe.pool.ntp.org,0x9 asia.pool.ntp.org,0x9" /f >nul 2>&1
+     W32tm.exe /stripchart /computer:time.windows.com /samples:5
+     W32tm.exe /stripchart /computer:NtpServer1 /samples:5
+     W32tm.exe /stripchart /computer:NtpServer2 /samples:5
      ```
 
-2.	Stop and restart the network services
-    
+2.	Modify the W32Time service configuration on the IoT device to use your NTP time server(s).
 	```
-    net stop
-    net start
+    reg add HKLM\SYSTEM\CurrentControlSet\Services\w32time\Parameters /v NtpServer /t REG_SZ /d "time.windows.com,0x9 NtpServer1,0x9 NtpServer2,0x9 " /f >nul 2>&1
+	```
+
+3.	Restart the time service
+	```
+    net stop w32time
+    net start w32time
+	```
+
+4.	Verify the time servers from which the device is currently receiving time.If you restarted the time service, allow a minute or so before verifying the time service.
+	```
+    W32tm.exe /query /peers
 	```
 
 ##Update the server in an IoT Core image
@@ -35,8 +46,8 @@ Synchronize the system time between IoT Core devices and a time server. Windows 
 	```
     <OSComponent> 
       <RegKeys> 
-         <RegKey KeyName="$(hklm.software)\CurrentControlSet\Services\w32time\Parameters">
-            <RegValue Name="NtpServer" Value="time.windows.com,0x9 tick.usno.navy.mil,0x9 europe.pool.ntp.org,0x9 asia.pool.ntp.org,0x9" Type="REG_SZ"/>
+         <RegKey KeyName="$(hklm.system)\CurrentControlSet\Services\w32time\Parameters">
+            <RegValue Name="NtpServer" Value="time.windows.com,0x9 NtpServer1,0x9 NtpServer2,0x9" Type="REG_SZ"/>
         </RegKey>
       </RegKeys>
     </OSComponent>

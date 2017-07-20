@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: bb93222f-a938-45a9-8fd7-0a1eb254537c
 ms.mktglfcycl: operate
 ms.sitesec: msdn
-ms.author: joshbax
+ms.author: sapaetsc
 ms.date: 05/05/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -23,18 +23,6 @@ This article summarizes the features that are available in the Windows Performa
 You can also run WPR from the command-line; for information about that option, see [WPR Command-Line Options](http://go.microsoft.com/fwlink/p/?linkid=223233).
 
  
-
-**In this article:**
-
--   [Recording by using the WPR Default Settings](#default)
-
--   [Using Recording Profiles](#profiles)
-
--   [Using Performance Scenarios](#perf)
-
--   [Using Detail Levels](#detail)
-
--   [Using Logging Mode](#logmode)
 
 ## <a href="" id="default"></a>Recording by using the WPR Default Settings
 
