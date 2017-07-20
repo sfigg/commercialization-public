@@ -12,12 +12,12 @@ ms.technology: windows-oem
 
 # Windows 10 S deployment lab
 
-Creating a deployment of Windows 10 S has some differences when compared to other versions of Windows. When [planning your deployment](windows-10-s-planning.md), you have to make sure that your [drivers](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/Windows10SDriverRequirements) and [apps](https://docs.microsoft.com/en-us/windows/uwp/porting/desktop-to-uwp-test-windows-s) are compatible with Windows 10 S.
+Creating a deployment of Windows 10 S has some differences when compared to other versions of Windows. When [planning your deployment](windows-10-s-planning.md), you have to make sure that your [drivers](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/Windows10SDriverRequirements) and [apps](https://docs.microsoft.com/en-us/windows/uwp/porting/desktop-to-uwp-test-windows-s) are supported by Windows 10 S.
 
 
 ## Get the tools you need
 
-To start building a Windows 10 S image for deployment, here's what you'll need.
+To start building a Windows 10 S image for deployment, here's what you'll need:
 
 - Windows 10 S ISO
 - Technician PC running Windows 10, Version 1703 or later
@@ -101,7 +101,7 @@ On your technician PC:
 
 ## Mount install.wim and winre.wim
 
-Mounting a Windows image is the same process that we used to mount the WinPE image earlier. When we mount our Windows image (install.wim), we'll be able to access a second image, WinRe.wim, which is the image that supports recovery scenarios. Updating install.wim and WinRE.wim at the same time helps you keep the two images in sync, which ensures that recovery goes as expected.
+Mounting a Windows image is the same process that we used to mount the WinPE image earlier. When you mount your Windows image (install.wim), you'll be able to access a second image, WinRe.wim, which is the image that supports recovery scenarios. Updating install.wim and WinRE.wim at the same time helps you keep the two images in sync, which ensures that recovery goes as expected.
 
 1.	Mount the Windows 10 S iso in File Explorer.
 
@@ -134,7 +134,7 @@ Mounting a Windows image is the same process that we used to mount the WinPE ima
     attrib -h -a -s C:\mount\windows\Windows\System32\Recovery\winre.wim
     ```
 
-    **Troubleshoot:** If mounting operation fails, make sure the Windows 10 version of DISM is the one installed with the Windows ADK is being used and not an older version that might be on the Technician Computer. Do not mount images to protected folders, such as the User\Documents folder.  If DISM processes are interrupted, consider temporarily disconnecting from the network and disabling virus protection.
+    **Troubleshoot:** If mounting operation fails, make sure the Windows 10 version of DISM is the one installed with the Windows ADK is being used and not an older version that might be on the Technician Computer. Don't mount images to protected folders, such as the User\Documents folder.  If DISM processes are interrupted, consider temporarily disconnecting from the network and disabling virus protection.
 
 
 ## Enable customizations
@@ -145,7 +145,8 @@ Enabling manufacturing mode is a new step you'll have to do when working with Wi
 
 We'll add the customization registry key to the mounted image by loading the mounted image's SYSTEM registry hive, and then then adding a key. Then we'll configure ScanState to exclude the registry key when capturing your recovery package to ensure that the registry key doesn't get restored during reset or recovery scenarios.
 
-> **Important**: Don't ship your Windows 10 S PC with the registry in place. You'll have to remove the registry key prior to shipping the device.
+> [!IMPORTANT]
+> Don't ship your Windows 10 S PC with the registry in place. You'll have to remove the registry key prior to shipping the device.
 
 1. Load the SYSTEM registry hive from your mounted image into regedit on your technician PC. We'll use a temporary hive called HKLM\Windows10S.
 
