@@ -11,7 +11,7 @@ ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-# Identity protection
+# OEMiIdentity protection considerations
 This is the top-level page for OEM security identity protection requirements or guidelines. 
 Describe identity protection briefly, then link to child topics
 

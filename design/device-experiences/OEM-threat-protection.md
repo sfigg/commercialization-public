@@ -11,7 +11,7 @@ ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-# Threat protection
+# OEM threat protection considerations
 This is the top-level page for OEM Security Threat protection requirements or guidelines. 
 Describe threat protection briefly, then link to child topics
 

@@ -11,7 +11,7 @@ ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-# Information protection
+# OEM information protection considerations
 This is the top-level page for OEM Security information protection requirements or guidelines. 
 Describe information protection briefly, then link to child topics
 

@@ -14,6 +14,10 @@ ms.technology: windows-oem
 
 # OEM Security considerations
 
+[OEM threat protection considerations](OEM-threat-protection.md)
+[OEM identity protection considerations](OEM-identity-protection.md)
+[OEM information protection considerations](OEM-information-protection.md)
+
 
 Windows 10 has platform integrity and data protection features that rely on the underlying hardware to strengthen the system's security:
 
