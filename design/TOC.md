@@ -125,9 +125,14 @@
 
 ### [OEM security considerations](device-experiences/OEM-security-considerations.md)
 ####[OEM threat protection considerations](device-experiences/OEM-threat-protection.md)
+#####[Windows Defender Exploit Guard](device-experiences/OEM-exploit-guard.md)
+#####[Device integrity protection](device-experiences/OEM-device-integrity-protection.md)
+#####[Device encryption for OEMs](device-experiences/device-encryption-for-oem.md)
 ####[OEM identity protection considerations](device-experiences/OEM-identity-protection.md)
+#####[Windows Defender Application Guard](device-experiences/OEM-application-guard.md)
+#####[Windows Defender Credential Guard](device-experiences/OEM-credential-guard.md)
 ####[OEM information protection considerations](device-experiences/OEM-information-protection.md)
-#### [Device encryption for OEMs](device-experiences/device-encryption-for-oem.md)
+
 
 
 ### [Versatile input platform](device-experiences/versitle-input-platform.md)
