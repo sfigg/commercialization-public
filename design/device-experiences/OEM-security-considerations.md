@@ -19,9 +19,9 @@ Top-level portal page with introductory text, value prop, brief descriptions of 
 	2. what do I as an OEM need to know about building a secure system?
     3. What does a secure system look like? 
 
-[OEM threat protection considerations](OEM-threat-protection.md)
-[OEM identity protection considerations](OEM-identity-protection.md)
-[OEM information protection considerations](OEM-information-protection.md)
+-[OEM threat protection considerations](OEM-threat-protection.md)
+-[OEM identity protection considerations](OEM-identity-protection.md)
+-[OEM information protection considerations](OEM-information-protection.md)
 
 
 Windows 10 has platform integrity and data protection features that rely on the underlying hardware to strengthen the system's security:
@@ -108,8 +108,6 @@ If the firmware has the option to enable and disable this protection, the shippi
 ## Related topics
 
 
-****
-[Keep Windows 10 secure](http://go.microsoft.com/fwlink/?LinkId=624831)
 
  
 
