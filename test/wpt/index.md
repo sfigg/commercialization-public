@@ -17,7 +17,7 @@ ms.technology: windows-oem
 # Windows Performance Toolkit
 
 
-Included in the [Windows Assessment and Deployment Kit](http://go.microsoft.com/fwlink/p/?LinkId=526740), the Windows Performance Toolkit consists of performance monitoring tools that produce in-depth performance profiles of Windows operating systems and applications. This documentation discusses both Windows Performance Recorder (WPR) and Windows Performance Analyzer (WPA).
+Included in the [Windows Assessment and Deployment Kit](http://aka.ms/adk), the Windows Performance Toolkit consists of performance monitoring tools that produce in-depth performance profiles of Windows operating systems and applications. This documentation discusses both Windows Performance Recorder (WPR) and Windows Performance Analyzer (WPA).
 
 ## Windows Performance Toolkit
 
