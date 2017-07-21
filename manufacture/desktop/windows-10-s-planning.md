@@ -26,7 +26,7 @@ Any apps not signed with one of the certificates mentioned, including companion 
 
 ### What is blocked in Windows 10 S?
 
-The following components are blocked from running in Windows 10 S. Any script or application that calls one of these blocked components will be blocked. If your manufacturing process uses scripts or applications that rely on blocked components, you can temporarily enable manufacturing mode for configuring and testing.
+The following components are blocked from running in Windows 10 S. Any script or application that calls one of these blocked components will be blocked. If your manufacturing process uses scripts or applications that rely on blocked components, you can temporarily [enable manufacturing mode](windows-10-s-manufacturing-mode.md#enable-manufacturing-mode) for configuring and testing, but you can't ship a PC with manufacturing mode enabled.
 
 - bash.exe
 - cdb.exe
