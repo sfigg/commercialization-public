@@ -137,5 +137,9 @@ After you configure your Windows 10 S PC for recovery scenarios, validate that i
 - Validate extensibility scripts in the simulated RS3 enforcement level using the provided policy file.
 - If you created a recovery package with ScanState, ensure that the manufacturing key was excluded from capture.
 
+## Retail Demo eXperience (RDX)
 
+Microsoft will provide updated content for RDX that will need to be deployed during Manufacturing. This updated content includes new content packages with Windows 10 Pro in S mode (Windows 10 S) specific marketing messages for Windows and Office. 
+
+The Updated RDX supersedes previously released RDX included in the RS2 Features on Demand.  The updated RDX which includes Windows 10 Pro in S mode (Windows 10 S) specific content can be used on all SKUs. The RDX will detect the Windows edition to display the corresponding RDX content. 
 
