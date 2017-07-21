@@ -1,5 +1,5 @@
 ---
-title: OEM information protection considerations
+title: Information protection considerations for OEMs
 description: Provides guidance on what an OEM should do to enable information protection
 MSHAttr:
 - 'PreferredSiteName:MSDN'
@@ -11,9 +11,8 @@ ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-# OEM information protection considerations
-This is the top-level page for OEM Security information protection requirements or guidelines. 
-Describe information protection briefly, then link to child topics
+# Information protection considerations for OEMs
+
 
  
 

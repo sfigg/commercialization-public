@@ -13,7 +13,6 @@ ms.technology: windows-oem
 
 # Windows Defender Credential Guard considerations for OEMs
 
-
  
 
 ## Related topics

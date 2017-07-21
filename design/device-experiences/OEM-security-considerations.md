@@ -1,5 +1,5 @@
 ---
-title: OEM Security considerations
+title: Security considerations for OEMs
 description: Provides guidance on platform integrity and data protection features including Secure boot and BitLocker.
 MSHAttr:
 - 'PreferredSiteName:MSDN'
@@ -12,7 +12,7 @@ ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-# OEM Security considerations
+# Security considerations for OEMs
 
 Top-level portal page with introductory text, value prop, brief descriptions of each "consideration" or "area" with links to key content pieces for more information. Should answer these questions: 
 	1. Why do I care? What does an OEM to understand about security threats and why to enable security features?

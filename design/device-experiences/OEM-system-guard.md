@@ -1,6 +1,6 @@
 ---
-title: Threat protection considerations for OEMs
-description: Provides guidance on what an OEM should do to enable threat protection
+title: Windows Defender System Guard considerations for OEMs
+description: Provides guidance on what an OEM should do to enable Windows Defender System Guard
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
@@ -11,7 +11,7 @@ ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-# Threat protection considerations for OEMs
+# Windows Defender System Guard considerations for OEMs
 
 
  
@@ -20,15 +20,3 @@ ms.technology: windows-oem
 
 
 ****
-
-
- 
-
- 
-
-
-
-
-
-
-

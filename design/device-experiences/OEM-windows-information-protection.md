@@ -1,6 +1,6 @@
 ---
-title: Identity protection considerations for OEMs
-description: Provides guidance on what an OEM should do to enable identity protection
+title: Windows Information Protection considerations for OEMs
+description: Provides guidance on what an OEM should do to enable Windows Information Protection
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
@@ -11,7 +11,7 @@ ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-# Identity protection considerations for OEMs
+# Windows Information Protection considerations for OEMs
 
  
 
@@ -19,15 +19,3 @@ ms.technology: windows-oem
 
 
 ****
-
-
- 
-
- 
-
-
-
-
-
-
-

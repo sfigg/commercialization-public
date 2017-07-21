@@ -12,7 +12,8 @@ ms.technology: windows-oem
 ---
 
 # Device Integrity Protection considerations for OEMs
-Includes TP measurements, UEFI Secure Boot, Trusted Boot, Measured Boot, ELAM
+
+Includes TPM measurements, UEFI Secure Boot, Trusted Boot, Measured Boot, ELAM
 
  
 
