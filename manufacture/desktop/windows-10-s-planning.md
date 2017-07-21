@@ -64,19 +64,19 @@ Not all customizations are supported in Windows 10 S. This section shows which c
 
 The following table shows customizations in Windows 10 S, the mechanism to deploy the customizations, and the environment where you can deploy the customizations.
 
-| Customization or task                                               | Mechanism                            | Environment                |
-| ------------------------------------------------------------------- | ------------------------------------ | -------------------------- |
-| Language Packs                                                      | DISM                                 | Offline, WinPE, Audit Mode |
-| Features on Demand                                                  | DISM                                 | Offline, WinPE, Audit Mode |
-| Start Menu Layout                                                   | layoutmodification.xml               | N/A                        |
-| OEM Taskbar tiles                                                   | taskbarlayoutmodification.xml        | N/A                        |
-| InkWorkstationTiles                                                 | InkWorkstationLayoutModification.xml | N/A                        |
-| OOBE customizations                                                 | OOBE.xml, OOBE folder structure      | OOBESystem pass            |
-| UWP apps                                                            | DISM                                 | Offline, WinPE, Audit mode |
-| Bridge apps                                                         | DISM                                 | Offline, WinPE, Audit Mode |
-| Drivers with no unsigned or win32 scripts/exe/binaries              | DISM                                 | Offline, WinPE, Audit Mode |
-| Wallpaper                                                           | unattend.xml                         | N/A                        |
-| Command prompt from OOBE using \<Shift + F10>                    | Manufacturing reg key                | OOBE                       |
+| Customization or task                                                                                          | Mechanism                            | Environment                |
+| -------------------------------------------------------------------------------------------------------------- | ------------------------------------ | -------------------------- |
+| [Language Packs](language-packs-and-windows-deployment.md)                                                     | DISM                                 | Offline, WinPE, Audit Mode |
+| [Features on Demand](features-on-demand-v2--capabilities.md)                                                   | DISM                                 | Offline, WinPE, Audit Mode |
+| [Start Menu Layout](customize-the-start-screen.md)                                                             | layoutmodification.xml               | N/A                        |
+| [OEM Taskbar tiles](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/customize-the-taskbar) | taskbarlayoutmodification.xml        | N/A                        |
+| InkWorkstationTiles                                                                                            | InkWorkstationLayoutModification.xml | N/A                        |
+| [OOBE customizations](configure-oobexml.md)                                                                    | OOBE.xml, OOBE folder structure      | OOBESystem pass            |
+| [UWP apps](https://docs.microsoft.com/en-us/windows/uwp/get-started/universal-application-platform-guide)      | DISM                                 | Offline, WinPE, Audit mode |
+| [Bridge apps](https://docs.microsoft.com/en-us/windows/uwp/porting/desktop-to-uwp-root.md)                     | DISM                                 | Offline, WinPE, Audit Mode |
+| Drivers with no unsigned or win32 scripts/exe/binaries                                                         | DISM                                 | Offline, WinPE, Audit Mode |
+| [Wallpaper](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-shell-setup-themes-desktopbackground) | unattend.xml                         | N/A                        |
+| Command prompt from OOBE using \<Shift + F10>                                                                  | Manufacturing reg key                | OOBE                       |
 
 ### Unsupported customizations
 
@@ -112,6 +112,8 @@ Windows 10 S allows the following upgrade paths:
 | Windows 10 S N to Education N          |        
 | Windows 10 S to Professional Education |
 | Windows 10 S N to Professional Education N |
+
+For information on using DISM to change the a Windows image to a different edition, see [Change the windows image to a higher edition using dism](change-the-windows-image-to-a-higher-edition-using-dism.md).
 
 ## Recovery
 
