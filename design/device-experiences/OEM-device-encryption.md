@@ -58,3 +58,27 @@ OEMs can choose to disable device encryption and instead implement their own enc
 - Update this registry key:
 **HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\BitLocker**
 Value: **PreventDeviceEncryption** equal to True (1).
+
+
+
+## Data protection (BitLocker)
+
+
+To support full volume encryption of all data in a manner that does not consume excessive power yet performs well, Advanced Encryption Standard (AES) acceleration within the must be provided to Windows.
+
+A BCrypt provider for the is required to access the platform's cryptographic acceleration capabilities. The BCrypt interface is documented on the MSDN website, and provides the base framework for cryptographic operations. A BCrypt provider is used in both user mode and kernel mode to provide the necessary cryptographic run-time services.
+
+### Encrypted drive
+
+An encrypted drive is a hardware solution that protects the user's data with BitLocker. It uses the hardware-based encryption solution to provide the user with a seamless end-to-end data security solution.
+
+With Encrypted Drive, you can deliver enhanced security protection out-of-the-box, with near zero-impact to the user. The combination of BitLocker and Encrypted Drive provides immediate encryption support with nonoticeable effect on the user experience. You can set up BitLocker so the user doesn’t have to do anything. Encrypted Drive offers a premium configuration.
+
+To enable support for Encrypted Drive, the PC must meet the following requirements:
+
+-   Self-encrypting drives that meet industry specifications of IEEE 1667, TCG OPAL (subset), and INCITS T13
+-   UEFI 2.3.1 Class 2 implementation using GPT on the Encrypted Drive (to support boot)
+-   Windows SKUs that support BitLocker
+-   TPM
+
+For additional recommendations, see [Bitlocker topic on TechNet](http://go.microsoft.com/fwlink/?LinkId=624828).
