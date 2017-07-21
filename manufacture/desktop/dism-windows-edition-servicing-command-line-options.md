@@ -14,7 +14,7 @@ ms.technology: windows-oem
 # DISM Windows Edition-Servicing Command-Line Options
 
 
-You can use the Windows® edition-servicing commands to change one edition of Windows 8 to a higher edition in the same edition family. The edition packages for each potential target edition are staged in a Windows image. This is referred to as an edition-family image. Because the target editions are staged, you can service a single image, and the updates will be applied appropriately to each edition in the image. This can help reduce the number of images that you have to manage, but it might increase the factory time or end-user time that must be spent in the **specialize** configuration pass.
+You can use the Windows edition-servicing commands to change one edition of Windows to a higher edition in the same edition family. The edition packages for each potential target edition are staged in a Windows image. This is referred to as an edition-family image. Because the target editions are staged, you can service a single image, and the updates will be applied appropriately to each edition in the image. This can help reduce the number of images that you have to manage, but it might increase the factory time or end-user time that must be spent in the **specialize** configuration pass.
 
 Offline changes do not require a product key. If you change to a higher edition using offline servicing, you can add the product key using one of the following methods:
 
