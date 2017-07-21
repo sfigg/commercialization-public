@@ -26,9 +26,11 @@ Once the CI policy is enabled on a system, it is enabled in two places:
 
 ## WinPE
 
-WinPE behaves the same for Windows 10 S as it does for Windows Home or Windows Professional until the CI policy is enabled and Secure Boot is turned on. Once the policy is enabled and Secure Boot is turned on, WinPE (EFI\Boot folder) needs the CI policy (winsipolicy.p7b) to boot, or you must turn off Secure Boot.
+The Windows Preinstallation Environment (WinPE) behaves the same for Windows 10 S as it does for Windows Home or Windows Professional until the CI policy is enabled and Secure Boot is turned on. Once the policy is enabled and Secure Boot is turned on, WinPE (EFI\Boot folder) needs the CI policy (winsipolicy.p7b) to boot, or you must turn off Secure Boot.
 
 The winsipolicy.p7b file is in the Windows 10 S install.wim in the `Windows\Boot\EFI\` folder and should be copied to the WinPE Boot location (EFI\Boot) on the WinPE media.
+
+For more information about WinPE, see [Windows PE](winpe-intro.md).
 
 ## DISM
 
@@ -40,9 +42,13 @@ If you want a single WIM that includes multiple Windows editions including Windo
 
 You can use DISM to detect Windows 10 S (offline in WinPE or in Audit mode). In Audit mode, use `DISM /online /get-currentedition`. If an image is Windows 10 S, the command should return S. In WinPE, use `DISM /image:c:\ /get-currentedition`.
 
+See [DISM Windows edition-servicing command-line options](dism-windows-edition-servicing-command-line-options.md) to see additional commands for working with Windows editions.
+
 ## Audit mode
 
 Audit mode is availabe when manufacturing a Windows 10 S PC. By default, the [blocked inbox components](windows-10-s-planning.md#what-is-blocked-in-windows-10-s) are blocked in audit mode. If you need to use blocked inbox components during the manufacturing process, you can [enable manufacturing mode](windows-10-s-manufacturing-mode.md#enable-manufacturing-mode). If you enable manufacturing mode, you'll have to make sure to [disable manufacturing mode](windows-10-s-manufacturing-mode.md#remove-the-manufacturing-registry-key) prior to shipping your PC.
+
+To learn more about Audit Mode, see [Audit Mode overview](audit-mode-overview.md).
 
 ## OOBE
 
