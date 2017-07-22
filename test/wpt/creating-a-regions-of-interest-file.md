@@ -29,8 +29,8 @@ A Regions of Interest file is a valid XML file that contains the following nodes
 
 -   One or more **Region** nodes
 
-**Note**  
-In a region's definition, the *version* attribute in the XML declaration, such as `version='1.0'`, is optional.
+> [!NOTE]
+> In a region's definition, the *version* attribute in the XML declaration, such as `version='1.0'`, is optional.
 
  
 
@@ -61,19 +61,7 @@ The following example is a complete Regions of Interest file that defines a simp
 </InstrumentationManifest>
 ```
 
-This topic has the following contents:
-
--   [Defining a region](#defining-a-region)
--   [Region types](#region-types)
--   [Using payload fields to identify events](#using-payload-fields-to-identify-events)
--   [Matching events for regions](#matching-events-for-regions)
--   [Filtering a region based on a condition](#filtering-a-region-based-on-a-condition)
--   [Parent-child relationships](#parent-child-relationships)
--   [Self-nesting regions](#self-nesting-regions)
--   [Instance names](#instance-names)
--   [Metadata](#metadata)
-
-### Defining a region
+## Defining a region
 
 A region definition contains the following attributes in the **Region** node:
 
@@ -83,7 +71,7 @@ A region definition contains the following attributes in the **Region** node:
 
 -   *FriendlyName* (optional), an alternate name for the region.
 
-### Region types
+## Region types
 
 You can create the following types of regions based on how they start and stop:
 
@@ -106,7 +94,7 @@ To specify an event as the starting or stopping point, you need to provide the f
 
 Additionally, you can further refine your definition by adding one or more **PayloadIdentifier** nodes. These tags contain two string attributes, *FieldName* and *FieldValue*, that specify a field that the event must contain. **PayloadIdentifier** tags are further described below in **Using payload fields to identify events**.
 
-### Examples
+#### Examples
 
 Following is a basic example for this type of region:
 
@@ -159,7 +147,7 @@ The **Duration** node can have the following attributes:
 
 If you define a duration for the starting point, the duration is subtracted from the stopping point. Similarly, if you define a duration for the stopping point, the duration is added to the starting point.
 
-### Example
+#### Example
 
 The following example defines a region that stops when another region starts. To calculate the starting point, we subtract a duration from our stopping point. The duration is found in the HiberHiberFileTime payload field. We then multiply the duration by 1,000,000 to convert it to nanoseconds and subtract it from the stopping point.
 
@@ -190,7 +178,7 @@ You can define a region whose starting and stopping points are defined by other 
 
 By default, a region whose starting point is based on another region will start when the starting point region stops. Similarly, a region whose stopping point is based on another region will stop when the stopping point region starts. You can override this default behavior by adding an optional attribute, *Endpoint*, to the Region node. *Endpoint* can have a value of `Start` or `Stop` and specifies which endpoint of the region to use for the starting or stopping event.
 
-### Example
+#### Example
 
 The following region definition contains starting and stopping points that are defined by other regions:
 
@@ -215,7 +203,7 @@ Regions that contain other regions are called *containers*. Containers start whe
 
 To define a container region, simply define a region without a starting point or a stopping point.
 
-### Example
+#### Example
 
 In the example below, *Subscribers for Create Session* is a container for *Child of Subscribers of Create Session*. Notice that *Subscribers for Create Session* does not have a starting point or a stopping point. It will start when the first instance of a child region starts and stop when the last instance of a child region stops.
 
@@ -237,7 +225,7 @@ In the example below, *Subscribers for Create Session* is a container for *Child
 </Region>
 ```
 
-### Using payload fields to identify events
+## Using payload fields to identify events
 
 Often the event ID properties (process ID, thread ID, and activity ID) are not enough to identify specific scenarios. For example, when a service starts, a generic event is fired that might not identify which service started. When this occurs, you must rely on *payload fields* for additional information. In this case, one of the additional fields should include the service name. You can use this information to further specify region starting and stopping points.
 
@@ -251,8 +239,8 @@ The **PayloadIdentifier** node has the following attributes:
 
 -   *FieldValueRelationship* (optional). Use **IsEqual** to specify that the event must contain the payload value. Use **DoesNotContain** to specify that the event must not contain the payload value. If this attribute is not specified, the default value is **IsEqual**.
 
-**Note**  
-Payload fields are case-sensitive, and the XML definition must fully match the payload value. For example, if a payload field has a value of `00000`, the region definition must also specify `00000` as the payload value.
+> [!NOTE]
+> Payload fields are case-sensitive, and the XML definition must fully match the payload value. For example, if a payload field has a value of `00000`, the region definition must also specify `00000` as the payload value.
 
  
 
@@ -278,7 +266,7 @@ The following example contains **PayloadIdentifier** nodes for both the starting
 </Region>
 ```
 
-### Matching events for regions
+## Matching events for regions
 
 WPA matches starting events with stopping events to form regions in a process called *event matching*. At the event level, WPA attempts to match a single starting or stopping event based on its provider ID, event ID, event version, and any additional specified payload fields.
 
@@ -320,7 +308,7 @@ The following example forms a region when the starting event contains a payload 
 </Region>
 ```
 
-### Filtering a region based on a condition
+## Filtering a region based on a condition
 
 WPA can include or exclude a region based on a condition, or *trigger*, which can be an event or another region. The trigger is specified in a **Filter** element, and the region that contains **Filter** is the *target*.
 
@@ -340,7 +328,7 @@ If the trigger is an *event*, then **Filter** must contain an **Event** element 
 | InPrev         | Include the target region only when it occurred prior to the first triggering event or region.       |
 
 
-### Parent-child relationships
+## Parent-child relationships
 
 You can define a region within another to create a parent-child relationship. For a region to be a parent, it must have a start time that is earlier than or equal to the start time of the child region. It must also have a stopping time that is later than or equal to the stopping time of the child region. If these conditions are not met, a parent-child relationship cannot be formed.
 
@@ -377,7 +365,7 @@ The example below defines criteria for a parent. The parent must have a matching
 </Region>
 ```
 
-### Self-nesting regions
+## Self-nesting regions
 
 *Self-nesting* is an optional feature that optimizes parent-child relationships.
 
@@ -419,7 +407,7 @@ The following example defines a more complex self-nesting scenario that requires
 </Match>
 ```
 
-### Instance names
+## Instance names
 
 You can assign a unique name to each instance of a matched region by using the **Naming** node. Naming is useful when you have a large number of instances of the same region or when you need to categorize regions based on other criteria. Instance names can be based on either payload fields or on relationships with other regions.
 
@@ -451,8 +439,8 @@ Following is an example of a region with a payload-based **Naming** node:
 
 In the preceding example, the **Naming** node indicates that either the starting or the stopping event contains a payload field named `SubscriberName`. For each instance of the region that is created, the instance name is the associated payload value.
 
-**Note**  
-When naming region instances, WPA first checks the starting event for the matching payload field. If one is not found, WPA will then search the stopping event for the payload field. If a match is not found in either event, an error is printed to the console.
+> [!NOTE]
+> When naming region instances, WPA first checks the starting event for the matching payload field. If one is not found, WPA will then search the stopping event for the payload field. If a match is not found in either event, an error is printed to the console.
 
  
 
@@ -513,12 +501,12 @@ The following example defines a region that has region-based naming. If a region
 </Region>
 ```
 
-**Note**  
-You can see instance names in WPA by hovering the mouse over a region instance in the Regions of Interest graph.
+> [!NOTE]
+> You can see instance names in WPA by hovering the mouse over a region instance in the Regions of Interest graph.
 
  
 
-### Metadata
+## Metadata
 
 You can add additional information to a region definition in the form of *metadata*, contained within a **Metadata** node. For example, you might include information in metadata that explains the region criteria so that another user can more easily understand the purpose of the region. Metadata is simply additional data—it does not affect the processing of regions.
 
@@ -560,14 +548,3 @@ The following example includes a **Metadata** node in the region definition:
 [Regions of Interest](regions-of-interest.md)
 
 [WPA Features](wpa-features.md)
-
- 
-
- 
-
-
-
-
-
-
-
