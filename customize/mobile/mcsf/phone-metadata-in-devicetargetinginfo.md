@@ -104,11 +104,6 @@ Partners are required to set the following information:
 3.  Specify a value for each of the following settings.
 
     <table>
-    <colgroup>
-    <col width="33%" />
-    <col width="33%" />
-    <col width="33%" />
-    </colgroup>
     <thead>
     <tr class="header">
     <th>Constraint</th>
@@ -116,7 +111,7 @@ Partners are required to set the following information:
     <th>Description</th>
     </tr>
     </thead>
-    <tbody>
+    <tbody valign="top">
     <tr class="odd">
     <td><p>ImageTimeOnly</p></td>
     <td><p><strong>PhoneManufacturer</strong></p></td>
