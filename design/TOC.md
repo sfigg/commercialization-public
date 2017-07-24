@@ -112,6 +112,12 @@
 ##### [Output reports](component-guidelines/radial-controller-output-reports.md)
 ##### [Sample report descriptors](component-guidelines/radial-controller-sample-report-descriptors.md)
 
+### [Security considerations for OEMs](device-experiences/OEM-security-considerations.md)
+####[Threat protection](device-experiences/OEM-threat-protection.md)
+####[Identity protection](device-experiences/OEM-identity-protection.md)
+####[Information protection](device-experiences/OEM-information-protection.md)
+####[Hardware-based protection](device-experiences/OEM-hardware-based-protection.md)
+
 ### [Thermal management in Windows](device-experiences/thermal-management-in-windows.md)
 #### [Design Guide](device-experiences/design-guide.md)
 #### [User Experience](device-experiences/user-experience.md)
@@ -122,14 +128,6 @@
 #### [Thermal Management IOCTLs](device-experiences/thermal-management-ioctls.md)
 ##### [IOCTL_THERMAL_READ_POLICY](device-experiences/ioctl-thermal-read-policy.md)
 ##### [IOCTL_THERMAL_READ_TEMPERATURE](device-experiences/ioctl-thermal-read-temperature.md)
-
-### [Security considerations for OEMs](device-experiences/OEM-security-considerations.md)
-####[Threat protection](device-experiences/OEM-threat-protection.md)
-####[Identity protection](device-experiences/OEM-identity-protection.md)
-####[Information protection](device-experiences/OEM-information-protection.md)
-####[Hardware-based protection](device-experiences/OEM-hardware-based-protection.md)
-
-
 
 ### [Versatile input platform](device-experiences/versitle-input-platform.md)
 
