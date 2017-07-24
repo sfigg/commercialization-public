@@ -13,10 +13,3 @@ ms.technology: windows-oem
 
 # Windows Defender System Guard considerations for OEMs
 
-
- 
-
-## Related topics
-
-
-****

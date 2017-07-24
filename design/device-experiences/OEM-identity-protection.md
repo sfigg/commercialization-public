@@ -13,13 +13,27 @@ ms.technology: windows-oem
 
 # Identity protection considerations for OEMs
 
-Windows Defender Application Guard
-Windows Defender Credential Guard
+##Windows Defender Application Guard
 
-## Related topics
+##Windows Defender Credential Guard
+
+Do any of these areas have OEM customizations/hardware guidelines?
+
+--multi-factor authentication
+
+--multiple user profile
+
+--user account control
+
+--secure user data (NTFS)
+
+--Hardware secured and attested digital identities (TPM Key Attestation)
+
+--Cloud based Certificate Reputation Service
+
+--AAD Sign-In to Windows 
 
 
-****
 
 
  

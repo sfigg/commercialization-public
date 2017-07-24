@@ -13,15 +13,20 @@ ms.technology: windows-oem
 
 # Information protection considerations for OEMs
 
-Windows Information Protection
-Device encryption
-Encrypted Individual Files and Folders (EFS)
+##Windows Information Protection
+
+##Device encryption
+
+
  
 
-## Related topics
+Do any of these areas have OEM customizations/hardware guidelines?
+
+--remote business data removal
+
+--Encrypted Individual Files and Folders (EFS)
 
 
-****
 
 
  

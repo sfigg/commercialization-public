@@ -125,15 +125,8 @@
 
 ### [Security considerations for OEMs](device-experiences/OEM-security-considerations.md)
 ####[Threat protection](device-experiences/OEM-threat-protection.md)
-
-
-
 ####[Identity protection](device-experiences/OEM-identity-protection.md)
-
-
 ####[Information protection](device-experiences/OEM-information-protection.md)
-
-
 ####[Hardware-based protection](device-experiences/OEM-hardware-based-protection.md)
 
 
