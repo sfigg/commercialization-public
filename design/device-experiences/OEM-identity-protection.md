@@ -87,6 +87,20 @@ You can use either discrete or firmware TPMs. TPM 1.2 and 2.0 provide protection
 
 UEFI Secure Boot ensures that the device boots with only authorized code in the pre-OS environment. For more information, see [System.Fundamentals.Firmware.UEFISecureBoot](https://docs.microsoft.com/en-us/windows-hardware/design/compatibility/systems#systemfundamentalsfirmwareuefisecureboot).
 
+###Securing boot configuration and management
+To support this, you must allow BIOS password or stronger authentication to ensure that only the authenticated Platform BIOS administrator can change BIOS settings. You must also provide a protected BIOS option to configure a list of permitted boot devices and the boot device order, which overrides the BOOTORDER modification made by the OS to boot only from an internal hard drive, for example.
+
+BIOS options related to security and boot options must be secured to prevent other operating systems from starting and to prevent changes to the BIOS settings. BIOS authentication must be set. For example, the BIOS password must be set.
+
+There are two security benefits.
+
+1. BIOS password is required to protect against a physically present user with BIOS access.
+
+2. When locked, boot order provides protection against an admin user booting into WinRE or any other OS from bootable media.
+
+###Secure Memory Overwrite Request (MOR) revision 2
+A secure MOR bit prevents certain memory attacks so this is necessary for Credential Guard. For more information, see [Secure MOR implementation](https://docs.microsoft.com/en-us/windows-hardware/drivers/bringup/device-guard-requirements).
+
 ##Multi-factor authentication
 
 ##Multiple user profile
