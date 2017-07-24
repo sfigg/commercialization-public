@@ -24,6 +24,8 @@ Top-level portal page with introductory text, value prop, brief descriptions of 
 
 -[OEM information protection considerations](OEM-information-protection.md)
 
+-[OEM hardware-based considerations](OEM-hardware-based-protection.md)
+
 
 
  
