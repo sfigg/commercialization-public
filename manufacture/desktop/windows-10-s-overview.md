@@ -23,6 +23,6 @@ While the overall process is similar to building other Windows 10 devices, Windo
 | | |
 | ----- | ----- |
 | [Planning a Windows 10 S image](windows-10-s-planning.md) | Gives an overview of what to consider when planning a Windows 10 S image. |
-| [Manufacturing considerations](windows-10-s-manufacturing-considerations.md) | Describes how the manufacturing environment behaves with Windows 10 S. |
+| [Manufacturing environment](windows-10-s-manufacturing-considerations.md) | Describes how the manufacturing environment behaves with Windows 10 S. |
 | [Manufacturing mode](windows-10-s-manufacturing-mode.md) | Explains how to enable and disable manufacturing mode. |
 | [Windows 10 S deployment lab](windows-10-s-deployment-sxs.md) | Provides step by step instructions on how to create a Windows 10 S deployment. |
