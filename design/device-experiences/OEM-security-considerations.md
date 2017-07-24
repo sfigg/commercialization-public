@@ -18,11 +18,21 @@ Top-level portal page with introductory text, value prop, brief descriptions of 
 	1. What does an OEM to understand about security threats and why to enable security features?
 	2. What does an OEM need to know about building a secure system? What does a secure system look like? 
 
+Security consideration are categorized into four areas: threat protection, Identity protection, Information protection, and Hardware-based protection.
+
+##Threat protection considerations
+
 -[Threat protection considerations](OEM-threat-protection.md)
+
+##Identity protection considerations
 
 -[Identity protection considerations](OEM-identity-protection.md)
 
+##Information protection considerations
+
 -[Information protection considerations](OEM-information-protection.md)
+
+##Hardware-based considerations
 
 -[Hardware-based considerations](OEM-hardware-based-protection.md)
 

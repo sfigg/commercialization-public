@@ -16,12 +16,17 @@ ms.technology: windows-oem
 ##Device Guard
 
 
-##Windows Defender Exploit Guard
+###Windows Defender Exploit Guard
 
 
-##Windows Defender Application Control
+###Windows Defender Application Control
 
 
-##Device integrity protection
+##Device integrity protectio
+###TPM measurements
+###UEFI Secure Boot
+###Trusted Boot
+###Measured Boot
+###Early Launch Anti-Malware (ELAM)) 
  
 
