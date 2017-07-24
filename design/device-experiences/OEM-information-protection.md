@@ -17,14 +17,9 @@ ms.technology: windows-oem
 
 ##Device encryption
 
+##Remote business data removal
 
- 
-
-Do any of these areas have OEM customizations/hardware guidelines?
-
---remote business data removal
-
---Encrypted Individual Files and Folders (EFS)
+##Encrypted Individual Files and Folders (EFS)
 
 
 

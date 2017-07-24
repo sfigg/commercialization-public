@@ -17,21 +17,19 @@ ms.technology: windows-oem
 
 ##Windows Defender Credential Guard
 
-Do any of these areas have OEM customizations/hardware guidelines?
+##Multi-factor authentication
 
---multi-factor authentication
+##Multiple user profile
 
---multiple user profile
+##User account control
 
---user account control
+##Secure user data (NTFS)
 
---secure user data (NTFS)
+##Hardware secured and attested digital identities (TPM Key Attestation)
 
---Hardware secured and attested digital identities (TPM Key Attestation)
+##Cloud based Certificate Reputation Service
 
---Cloud based Certificate Reputation Service
-
---AAD Sign-In to Windows 
+##AAD Sign-In to Windows 
 
 
 
