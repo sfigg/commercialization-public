@@ -38,6 +38,8 @@ For more information about WinPE, see [Windows PE](winpe-intro.md).
 
 If you want a single WIM that includes multiple Windows editions including Windows 10 S, you can add/append your Windows 10 S image to an existing WIM, which allows you to specify the Windows 10 S image index during DISM /apply.
 
+To see more about adding/appending images to an existing WIM, see [Append, apply, and export volume images with a Windows Image (.wim) file](append-a-volume-image-to-an-existing-image-using-dism--s14.md).
+
 ### Detect Windows 10 S with DISM
 
 You can use DISM to detect Windows 10 S (offline in WinPE or in Audit mode). In Audit mode, use `DISM /online /get-currentedition`. If an image is Windows 10 S, the command should return S. In WinPE, use `DISM /image:c:\ /get-currentedition`.
