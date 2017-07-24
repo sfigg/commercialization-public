@@ -240,7 +240,7 @@ Partners are required to set the following information:
     <tr class="even">
     <td><p><strong>PhoneModelName</strong></p></td>
     <td><p><strong>Required.</strong> This string is the brand name of the phone and is used for Customer Support and Watson reports. This string is the name marketed to consumers or end users and appears as part of the phone friendly name in multiple places in the phone’s UI including: on the Welcome screen, the <strong>About</strong> screen in <strong>Settings</strong>, and on the desktop computer.</p>
-    <p>OEMs should ensure that this value matches the value of the <strong>ProductString</strong> value under the <strong>HKLM\CurrentControlSet\Control\USBFN\Default</strong> registry key.</p>
+    <p>OEMs should ensure that this value matches the value of the <strong>ProductString</strong> value under the <strong>HKEY_LOCAL_MACHINE</strong> registry subtree's <strong>CurrentControlSet\Control\USBFN\Default</strong> subkey.</p>
     <p>Microsoft recommends that partners consider the following when specifying the value for the <code>PhoneModelName</code> setting:</p>
     <ul>
     <li><p>Leave this name blank during development until the phone is ready to enter trials, as applications can collect and read this value.</p></li>
