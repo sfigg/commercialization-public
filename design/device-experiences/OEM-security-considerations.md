@@ -18,13 +18,13 @@ Top-level portal page with introductory text, value prop, brief descriptions of 
 	1. What does an OEM to understand about security threats and why to enable security features?
 	2. What does an OEM need to know about building a secure system? What does a secure system look like? 
 
--[OEM threat protection considerations](OEM-threat-protection.md)
+-[Threat protection considerations](OEM-threat-protection.md)
 
--[OEM identity protection considerations](OEM-identity-protection.md)
+-[Identity protection considerations](OEM-identity-protection.md)
 
--[OEM information protection considerations](OEM-information-protection.md)
+-[Information protection considerations](OEM-information-protection.md)
 
--[OEM hardware-based considerations](OEM-hardware-based-protection.md)
+-[Hardware-based considerations](OEM-hardware-based-protection.md)
 
 
 
