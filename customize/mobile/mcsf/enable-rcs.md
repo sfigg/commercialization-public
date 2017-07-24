@@ -287,21 +287,18 @@ This customization supports: **per-SIM** value
         |:-------------|:----------------------------------------------------------------------------------------------------------------------------------------------|
         | 0 or 'False' | Hides the toggle for RCS activation. This is the default OS value.                                                                            |
         | 1 or 'True'  | Shows the toggle for RCS activation. If you use this value, you can also configure the default value for the service by setting `RcsEnabled`. |
-
     -   To set the default value for the RCS service toggle, set `RcsEnabled` to one of the following values.
 
         | Value        | Description                                                     |
         |:-------------|:----------------------------------------------------------------|
         | 0 or 'False' | RCS service toggle is set to Off. This is the default OS value. |
         | 1 or 'True'  | RCS service toggle is set to On.                                |
-
     -   To specify whether a read receipt is sent to the sender, set `RcsSendReadReceipt` to one of the following values.
 
         | Value        | Description                                                         |
         |:-------------|:--------------------------------------------------------------------|
         | 0 or 'False' | A read receipt is not sent to the sender.                           |
         | 1 or 'True'  | A read receipt is sent to the sender. This is the default OS value. |
-
     -   To specify whether to automatically download an incoming RCS file transfer when the file size is less than the limit for the warning file size, set `RcsFileTransferAutoAccept` to one of the following values.
 
         | Value        | Description                                                                             |
