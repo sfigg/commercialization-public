@@ -134,7 +134,7 @@
 ####[Information protection](device-experiences/OEM-information-protection.md)
 
 
-####[Hardware-based protection](device-experiences/OEM-information-protection.md)
+####[Hardware-based protection](device-experiences/OEM-hardware-based-protection.md)
 
 
 
