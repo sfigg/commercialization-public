@@ -16,12 +16,19 @@ ms.technology: windows-oem
 ##Windows Defender Application Guard
 
 ##Windows Defender Credential Guard
-TBD: Break out requirements for virtualization based security and HVCI enablement and Cred Guard? What are OEM requirements for cred guard?
+Credential Guard adds identity protection support to Windows 10.
+In order for a device to support Crendential Guard as specified in the Windows Hardware Compatibility Requirements (WHCR), you as the OEM must provide the following hardware, software, or firmware features. Depending on how you support these features, your device will fall into one of the following categories of hardware readiness.
 
-In order for a device to support Crendential Guard as specified in the Windows Hardware Compatibility Requirements (WHCR), you as the OEM must provide the following:
+--Ready. Devices are immediately capable of enabling all Credential Guard features through central administration tasks, such as Group Policy or device management. Credential Guard Ready machines that are built with a custom desktop image can be provided to a customer with fully enabled virtualization-based security features. 
+
+--Capable. Devices support the required hardware features, but the configuration state of the device is such that a physically present, privileged user must change it to the required state before the device is in the Credential Guard "Ready" state. An example is a computer that supports virtualization extensions but does not have virtualization extensions enabled in the BIOS. As a result, those extensions will need to be enabled before any of the virtualization-based security features are enabled. 
+
+--Not supported. Devices that do not support the required hardware features and configurations in the following sections are not capable of supporting Credential Guard.
+
+Important: The following sectionss are additive, so that you must meet all of the previous requirements in addition to the requirements for the current build. 
 
 ###Virtualization Based Security (VBS) enablement of No-Execute protection for UEFI runtime services
-In Windows 10, Version 1793, and after, you must enable VBS. VBS will provide No-Execute (NX) protection on UEFI runtime service code and data memory regions. UEFI runtime service code must support read-only page protections, and UEFI runtime service data must not be executable.
+In Windows 10, Version 1703, and after, you must enable VBS. VBS will provide No-Execute (NX) protection on UEFI runtime service code and data memory regions. UEFI runtime service code must support read-only page protections, and UEFI runtime service data must not be executable.
 UEFI runtime services must meet these requirements (applies to UEFI runtime service memory, but not UEFI boot service memory):
 
 --Implement the UEFI 2.6 EFI_MEMORY_ATTRIBUTES_TABLE. All UEFI runtime service memory (code and data) must be described by this table.
@@ -41,9 +48,44 @@ The security benefit is that vulnerabilities in UEFI runtime services, if any (s
 ###Hardware-rooted Platform Secure Boot
 In Windows 10, version 1607 and Windows Server 2016, and after, Boot Integrity (known as Platform Secure Boot) must be supported. To learn more, see the [Hardware Compatibility Specification for Systems for Windows 10, version 1607](https://docs.microsoft.com/en-us/windows-hardware/design/compatibility/systems) under System.Fundamentals.Firmware.CS.UEFISecureBoot.ConnectedStandby. The Hardware Security Test Interface (HSTI) must be implemented. To learn more, see the [Hardware Security Testability Specification](https://msdn.microsoft.com/en-us/library/windows/hardware/mt712332(v=vs.85).aspx).
 
+Note:
+This is independent of Modern Standby/Connected Standby Systems; all systems using Credential Guard must pass HSTI 1.1.a.
+
 There are two security benefits. 
 1. After the system is powered on, Platform Secure Boot provides protections against physically present attackers, and defense-in-depth against malware.
-2. HSTI provides additional security assurance for correctly secured silicon and platform. TBD: what does "correctly secured silicon and platform" mean?
+2. HSTI provides additional security assurance for correctly secured silicon and platform. TBD: what does "correctly secured silicon and platform" mean? Does saying this add anything to the understanding of this feature? I would probably remove this sentence or provide a better desription of what HSTI provides.
+
+###Firmware update through Windows Update
+Firmware must support field updates through Windows Update and UEFI encapsulation update. 
+
+The security benefit is that firmware updates are fast, secure, and reliable.
+
+###Secure Boot configuration and Management
+
+As the OEM, you must provide the ability, in BIOS, to add ISV, OEM, or Enterprise certificates to the Secure Boot database at manufacturing time. The Microsoft UEFI CA must be removed from the same Secure Boot database. Support for 3rd-party UEFI modules is permitted but should leverage ISV-provided certificates or OEM certificate for the specific UEFI software.
+
+There are two security benefits. 
+1. Enterprises can choose to allow proprietary EFI drivers/applications to run.
+2. emoving Microsoft UEFI CA from the Secure Boot database provides enterprises with full control over software that runs before the operating system boots.
+
+###64-bit CPU
+In Windows 10, Version 1507 and after, Virtualization-Based Security (VBS) features requires Windows hypervisor, which is only supported on 64-bit processors. 
+
+###Virtualization extensions - Intel VT-x, AMD-V, and extended page tables
+VBS only works if the processor supports virtualization with second level address translation. 
+The security benefit is that VBS provides isolation of the secure kernel from the rest of Windows. TBD: is this still technically accurate? Zero-day vulnerabilities and in Windows cannot be exploited because of this isolation.
+
+###VT-D or AMD Vi Input/output memory management unit(IOMMU)
+
+IOMMU enhances system resiliency against memory attacks. For more information, see [ACPI system description tables](https://docs.microsoft.com/en-us/windows-hardware/drivers/bringup/acpi-system-description-tables).
+
+###Trusted Platform Module (TPM)
+
+You can use either discrete or firmware TPMs. TPM 1.2 and 2.0 provide protection for VBS encryption keys that are stored in the firmware. Credential Guard data is protected against attacks involving a physically present user with BIOS and hardware access.
+
+###UEFI 2.3.1.c or higher firmware along with Secure Boot
+
+UEFI Secure Boot ensures that the device boots with only authorized code in the pre-OS environment. For more information, see [System.Fundamentals.Firmware.UEFISecureBoot](https://docs.microsoft.com/en-us/windows-hardware/design/compatibility/systems#systemfundamentalsfirmwareuefisecureboot).
 
 ##Multi-factor authentication
 
