@@ -28,7 +28,27 @@ Security consideration are categorized into four areas: threat protection, Ident
 
 -[Identity protection considerations](OEM-identity-protection.md)
 
-##Information protection considerations
+--Windows Defender Application Guard
+
+--Windows Defender Credential Guard
+
+--Multi-factor authentication
+
+--Multiple user profile
+
+--User account control
+
+--Secure user data (NTFS)
+Also in list on Hardware considerations. Leave both places?
+
+--Hardware secured and attested digital identities (TPM Key Attestation)
+Also in list on Hardware considerations. Leave both places?
+
+--Cloud based Certificate Reputation Service
+
+--AAD Sign-In to Windows 
+
+Information protection considerations
 
 -[Information protection considerations](OEM-information-protection.md)
 

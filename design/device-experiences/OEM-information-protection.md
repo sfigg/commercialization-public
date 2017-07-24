@@ -16,6 +16,7 @@ ms.technology: windows-oem
 ##Windows Information Protection
 
 ##Device encryption
+With the right hardware configurations, Windows 10 automatically encrypts a device, helping to keep customer data safe. OEMs contribute by implementing and testing the right hardware. To learn more, refer to [OEM device encryption](OEM-device-encryption).
 
 ##Remote business data removal
 
