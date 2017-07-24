@@ -13,7 +13,8 @@ ms.technology: windows-oem
 
 # Identity protection considerations for OEMs
 
- 
+Windows Defender Application Guard
+Windows Defender Credential Guard
 
 ## Related topics
 

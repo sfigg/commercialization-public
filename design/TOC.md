@@ -125,23 +125,17 @@
 
 ### [Security considerations for OEMs](device-experiences/OEM-security-considerations.md)
 ####[Threat protection](device-experiences/OEM-threat-protection.md)
-#####[Windows Defender System Guard](device-experiences/OEM-threat-protection.md)
+
 
 
 ####[Identity protection](device-experiences/OEM-identity-protection.md)
-#####[Windows Defender Application Guard](device-experiences/OEM-application-guard.md)
-#####[Windows Defender Credential Guard](device-experiences/OEM-credential-guard.md)
+
 
 ####[Information protection](device-experiences/OEM-information-protection.md)
-#####[Windows Information Protection](device-experiences/OEM-windows-information-protection.md)
-#####[Device encryption](device-experiences/OEM-device-encryption.md)
-#####[Encrypted Individual Files and Folders (EFS)](device-experiences/EFS.md)
+
 
 ####[Hardware-based protection](device-experiences/OEM-information-protection.md)
-#####[Device Guard](device-experiences/OEM-device-guard.md)
-######[Windows Defender Exploit Guard](device-experiences/OEM-exploit-guard.md)
-######[Windows Defender Application Control](device-experiences/OEM-application-control.md)
-#####[Device integrity protection](device-experiences/OEM-device-integrity-protection.md)
+
 
 
 ### [Versatile input platform](device-experiences/versitle-input-platform.md)

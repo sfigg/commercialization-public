@@ -14,7 +14,7 @@ ms.technology: windows-oem
 # Threat protection considerations for OEMs
 
 
- 
+ Windows Defender System Guard
 
 ## Related topics
 

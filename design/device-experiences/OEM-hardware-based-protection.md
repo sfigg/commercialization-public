@@ -13,7 +13,10 @@ ms.technology: windows-oem
 
 # Hardware-based protection considerations for OEMs
 
-
+Device Guard
+Windows Defender Exploit Guard
+Windows Defender Application Control
+Device integrity protection
  
 
 ## Related topics
