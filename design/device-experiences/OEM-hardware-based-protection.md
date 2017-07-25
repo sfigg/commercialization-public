@@ -21,6 +21,7 @@ Device Guard is not a feature; rather it is a set of features designed to work t
 ###Windows Defender Exploit Guard
 Windows Defender Exploit Guard provides the hardware configuration portion of Device Guard.
 * Platform & UEFI Secure Boot
+* HVSI
 
 ###Windows Defender Application Control
 Windows Defender Application Control provides the software configuration portion of Device Guard.
