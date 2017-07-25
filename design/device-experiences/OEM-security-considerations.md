@@ -15,47 +15,73 @@ ms.technology: windows-oem
 # Security considerations for OEMs
 
 Top-level portal page with introductory text, value prop, brief descriptions of each "consideration" or "area" with links to key content pieces for more information. Discuss these questions in this topic:
-	1. What does an OEM to understand about security threats and why to enable security features?
-	2. What does an OEM need to know about building a secure system? What does a secure system look like? 
+1. What does an OEM to understand about security threats and why to enable security features? Or do you think our audience knows this already?
+2. What does an OEM need to know about building a secure system? What does a secure system look like?
+3. What does a secure system look like? 
+4. what do I as an OEM need to know about building a secure system?
 
 Security consideration are categorized into four areas: threat protection, Identity protection, Information protection, and Hardware-based protection.
 
 ##Threat protection considerations
 
 -[Threat protection considerations](OEM-threat-protection.md)
+*Windows Defender System Guard
 
 ##Identity protection considerations
 
 -[Identity protection considerations](OEM-identity-protection.md)
 
---Windows Defender Application Guard
+*Windows Defender Application Guard
 
---Windows Defender Credential Guard
+*Windows Defender Credential Guard
 
---Multi-factor authentication
+*Multi-factor authentication
 
---Multiple user profile
+*Multiple user profile
 
---User account control
+*User account control
 
---Secure user data (NTFS)
+*Secure user data (NTFS)
 Also in list on Hardware considerations. Leave both places?
 
---Hardware secured and attested digital identities (TPM Key Attestation)
+*Hardware secured and attested digital identities (TPM Key Attestation)
 Also in list on Hardware considerations. Leave both places?
 
---Cloud based Certificate Reputation Service
+*Cloud based Certificate Reputation Service
 
---AAD Sign-In to Windows 
+*AAD Sign-In to Windows 
 
 Information protection considerations
 
 -[Information protection considerations](OEM-information-protection.md)
 
+*Windows Information Protection
+
+*Device encryption
+With the right hardware configurations, Windows 10 automatically encrypts a device, helping to keep customer data safe. OEMs contribute by implementing and testing the right hardware. To learn more, refer to [OEM device encryption](OEM-device-encryption).
+
+*Remote business data removal
+
+*Encrypted Individual Files and Folders (EFS)
+
 ##Hardware-based considerations
 
 -[Hardware-based considerations](OEM-hardware-based-protection.md)
 
+*Device Guard
+
+*Windows Defender Exploit Guard
+
+
+*Windows Defender Application Control
+
+
+*Device integrity protection
+*TPM measurements
+*UEFI Secure Boot
+*Trusted Boot
+*Measured Boot
+*Early Launch Anti-Malware (ELAM)) 
 
 
  
