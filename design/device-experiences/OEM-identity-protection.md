@@ -18,18 +18,19 @@ ms.technology: windows-oem
 ##Windows Defender Credential Guard
 Introduced in Windows 10 Enterprise and Windows Server 2016, Credential Guard uses virtualization-based security to isolate secrets so that only privileged system software can access them. 
 In order for a device to support Crendential Guard as specified in the Windows Hardware Compatibility Requirements (WHCR), you as the OEM must provide the following hardware, software, or firmware features. 
+If you are an IT Pro looking for information on how to deploy Windows Defender Credential Guard, see the [Deploying Credential Guard](https://technet.microsoft.com/en-us/windows/mt796471.aspx) video. 
 
 TBD: Do we have to support previous versions or can we say these are the current requirements for the latest version of Windows 10?Important: The following sectionss are additive, so that you must meet all of the previous requirements in addition to the requirements for the current build. 
 
 ###Virtualization Based Security (VBS) enablement of No-Execute protection for UEFI runtime services
-In Windows 10, Version 1703, and after, you must enable VBS. VBS will provide No-Execute (NX) protection on UEFI runtime service code and data memory regions. UEFI runtime service code must support read-only page protections, and UEFI runtime service data must not be executable.
+In Windows 10, Version 1703 and after, you must enable VBS. VBS will provide No-Execute (NX) protection on UEFI runtime service code and data memory regions. UEFI runtime service code must support read-only page protections, and UEFI runtime service data must not be executable.
 UEFI runtime services must meet these requirements (applies to UEFI runtime service memory, but not UEFI boot service memory):
 
--Implement the UEFI 2.6 EFI_MEMORY_ATTRIBUTES_TABLE. All UEFI runtime service memory (code and data) must be described by this table.
+*Implement the UEFI 2.6 EFI_MEMORY_ATTRIBUTES_TABLE. All UEFI runtime service memory (code and data) must be described by this table.
 
--PE sections must be page-aligned in memory, except in non-volatile storage.
+*PE sections must be page-aligned in memory, except in non-volatile storage.
 
---The Memory Attributes Table must correctly mark code and data as RO/NX for configuration by Windows. 
+*The Memory Attributes Table must correctly mark code and data as RO/NX for configuration by Windows. 
 All entries must include attributes EFI_MEMORY_RO, EFI_MEMORY_XP, or both. Entries cannot be left with neither of these attributes, indicating memory that is both executable and writable. Memory must be either readable and executable or writeable and non-executable.
 
 The security benefit is that vulnerabilities in UEFI runtime services, if any (such as in functions like UpdateCapsule and SetVariable), will be blocked from compromising VBS.
@@ -101,17 +102,12 @@ A secure MOR bit prevents certain memory attacks so this is necessary for Creden
 
 ##User account control
 
-##Secure user data (NTFS)
-Also in list on Hardware considerations. Leave both places?
-
-##Hardware secured and attested digital identities (TPM Key Attestation)
-Also in list on Hardware considerations. Leave both places?
-
 ##Cloud based Certificate Reputation Service
 
 ##AAD Sign-In to Windows 
 
 
+See also
 
 
  
