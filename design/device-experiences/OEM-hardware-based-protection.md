@@ -22,7 +22,7 @@ ms.technology: windows-oem
 ###Windows Defender Application Control
 
 
-##Device integrity protectio
+##Device integrity protection
 ###TPM measurements
 ###UEFI Secure Boot
 ###Trusted Boot
