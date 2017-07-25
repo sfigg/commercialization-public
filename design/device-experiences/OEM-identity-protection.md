@@ -12,6 +12,7 @@ ms.technology: windows-oem
 ---
 
 # Identity protection considerations for OEMs
+**Note:** If you are an IT Professional and want to deploy these features, learn more in the [Device Security](https://docs.microsoft.com/en-us/windows/device-security/) content. 
 
 ##Windows Defender Application Guard
 

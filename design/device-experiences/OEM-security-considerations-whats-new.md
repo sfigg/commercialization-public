@@ -14,4 +14,6 @@ ms.technology: windows-oem
 
 #What's New for OEM Security in Windows 10
 
+**Note:** If you are an IT Professional and want to deploy these features, learn more in the [Device Security](https://docs.microsoft.com/en-us/windows/device-security/) content. 
+
 * Folder Guard

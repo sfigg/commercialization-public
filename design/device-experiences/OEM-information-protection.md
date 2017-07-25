@@ -13,9 +13,13 @@ ms.technology: windows-oem
 
 # Information protection considerations for OEMs
 
+**Note:** If you are an IT Professional and want to deploy these features, learn more in the [Device Security](https://docs.microsoft.com/en-us/windows/device-security/) content. 
+
 ##Windows Information Protection
 
 ##Device encryption
+TBD: I have a note that device encryption only works on Home. Is that still or newly true?
+
 Encrypted Hard Drive uses the rapid encryption that is provided by BitLocker Drive Encryption to enhance data security and management. By offloading the cryptographic operations to hardware, Encrypted Hard Drives increase BitLocker performance and reduce CPU usage and power consumption. Because Encrypted Hard Drives encrypt data quickly, enterprise devices can expand deployment with minimal impact on productivity.
 OEMs contribute by implementing and testing the right hardware. 
 

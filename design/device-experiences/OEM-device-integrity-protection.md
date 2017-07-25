@@ -1,6 +1,6 @@
 ---
 title: Device Integrity Protection considerations for OEMs
-description: Provides guidance on what an OEM should do to enable Dxploit Guard
+description: Provides guidance on what an OEM should do to enable Exploit Guard
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
