@@ -113,6 +113,7 @@
 ##### [Sample report descriptors](component-guidelines/radial-controller-sample-report-descriptors.md)
 
 ### [Security considerations for OEMs](device-experiences/OEM-security-considerations.md)
+####[What's new in Security for OEMs](OEM-security-considerations-whats-new.md)
 ####[Threat protection](device-experiences/OEM-threat-protection.md)
 ####[Identity protection](device-experiences/OEM-identity-protection.md)
 ####[Information protection](device-experiences/OEM-information-protection.md)

@@ -15,15 +15,9 @@ ms.technology: windows-oem
 
 ##Windows Information Protection
 
-
-## Data protection (BitLocker)
-To support full volume encryption of all data in a manner that does not consume excessive power yet performs well, Advanced Encryption Standard (AES) acceleration must be provided to Windows.
-
-A BCrypt provider is required to access the platform's cryptographic acceleration capabilities. A BCrypt provider is used in both user mode and kernel mode to provide the necessary cryptographic run-time services.
-
 ##Device encryption
-With the right hardware configurations, Windows 10 automatically encrypts a device, helping to keep customer data safe. 
-With Encrypted Drive, you can deliver enhanced security protection out-of-the-box, with near zero-impact to the user. The combination of BitLocker and Encrypted Drive provides immediate encryption support with nonoticeable effect on the user experience. You can set up BitLocker so the user doesn’t have to do anything. Encrypted Drive offers a premium configuration. OEMs contribute by implementing and testing the right hardware. 
+Encrypted Hard Drive uses the rapid encryption that is provided by BitLocker Drive Encryption to enhance data security and management. By offloading the cryptographic operations to hardware, Encrypted Hard Drives increase BitLocker performance and reduce CPU usage and power consumption. Because Encrypted Hard Drives encrypt data quickly, enterprise devices can expand deployment with minimal impact on productivity.
+OEMs contribute by implementing and testing the right hardware. 
 
 Device encryption is enabled when:
 1. The device contains a TPM 2.0 (Trusted Platform Module) with PCR7 support
