@@ -5,12 +5,6 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.author: dawnwood
-title: Windows Hello: Steps to submit a fingerprint driver
-description: Windows Hello: Steps to submit a fingerprint driver
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
-ms.author: sapaetsc
 ms.date: 07/19/2017
 ms.topic: article
 ms.prod: windows-hardware
