@@ -76,7 +76,7 @@ With the right hardware configurations, Windows 10 automatically encrypts a devi
 	* TPM measurements
 	* UEFI Secure Boot
 	* Trusted Boot
-	 *Measured Boot
+	* Measured Boot
 	* Early Launch Anti-Malware (ELAM)) 
 
 

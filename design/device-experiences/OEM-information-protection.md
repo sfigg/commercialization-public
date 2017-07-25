@@ -27,8 +27,28 @@ Device encryption is enabled when:
 **Note**: Windows 10 device encryption is enabled only after a user signs in with a Microsoft Account or an Azure Active Directory account. Device encryption is not enabled with local accounts.
 
 * **TPM**: Device must include a TPM with PCR 7 support. See System.Fundamentals.TPM20.TPM20.
-*Secure boot: UEFI Secure Boot is enabled. See System.Fundamentals.Firmware.UEFISecureBoot.
-*InstantGo (AOAC) requirements or HSTI 1.1a validation. This requirement is met by one of the following:
+    * Secure boot: UEFI Secure Boot is enabled. See System.Fundamentals.Firmware.UEFISecureBoot.
+    * InstantGo (AOAC) requirements or HSTI 1.1a validation. This requirement is met by one of the following:
+        * InstantGo (AOAC) requirements are implemented. These include requirements for UEFI secure boot and protection from unauthorized DMA.
+        * Starting with Windows 10, version, 1703, this requirement can be met through HSTI test:
+        * Platform Secure Boot self-test (or additional self-tests as configured in the registry) must be reported by HSTI as implemented and passed.
+        * Excluding Thunderbolt, HSTI must report no non-allowed DMA busses.
+        * If Thunderbolt is present, HSTI must report that Thunderbolt is configured securely (security level must be SL1 – “User Authorization” or higher).
+
+###Disable device encryption        
+OEMs can choose to disable device encryption and instead implement their own encryption technology on a device. To disable device encryption, use one of the following to options:
+
+1. Use an Unattend file and set PreventDeviceEncryption to True. To learn more about using an Unattend file, see Use an answer file with Sysprep.
+-OR-
+2. Update this registry key directly: HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\BitLocker Value: PreventDeviceEncryption equal to True (1).
+
+###DMA bus/device error
+This error means that the system detected at least one DMA capable bus or device that may expose a DMA threat. To determine which bus/device triggered this error, run the Microsoft.UefiSecureBootLogo.CS.HardwareSecurity.Tests.ProbeForInsecureDirectMemoryAccessBusses HLK test. If the listed bus has only has internal facing access and with no ports exposed on the exterior of the device, then the OEM should consult with the IHV to ensure the bus is correctly identified before adding it to the "allowed" list. 
+
+To add the bus to the allow list, dd string (REG_SZ) name/value pairs for the flagged DMA capable bus that is determined to be safe. For example, for a bus identified as “Contoso Root Port” with Vendor ID “0000” and Device ID “FFFF”, you'd add the following:
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\DmaSecurity\AllowedBuses] 
+"Contoso Root Port"="PCI\VEN_0000&DEV_FFFF"
 
 ##Remote business data removal
 
