@@ -17,10 +17,10 @@ ms.technology: windows-oem
 
 
 ###Windows Defender Exploit Guard
-
+Windows Defender Exploit Guard provides the hardware configuration portion of Device Guard.
 
 ###Windows Defender Application Control
-
+Windows Defender Application Control provides the software configuration portion of Device Guard.
 
 ##Device integrity protection
 ###TPM measurements
@@ -29,4 +29,5 @@ ms.technology: windows-oem
 ###Measured Boot
 ###Early Launch Anti-Malware (ELAM)
  
-
+#See also
+[Windows 10 Device Guard and Credential Guard Demystified](https://blogs.technet.microsoft.com/ash/2016/03/02/windows-10-device-guard-and-credential-guard-demystified)
