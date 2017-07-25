@@ -27,6 +27,6 @@ ms.technology: windows-oem
 ###UEFI Secure Boot
 ###Trusted Boot
 ###Measured Boot
-###Early Launch Anti-Malware (ELAM)) 
+###Early Launch Anti-Malware (ELAM)
  
 

@@ -51,7 +51,7 @@ For example, for a bus identified as “Contoso Root Port” with Vendor ID “0
 ## Disable device encryption
 OEMs can choose to disable device encryption and instead implement their own encryption technology on a device. To disable device encryption:
 
-- Use an Unattend file and set [PreventDeviceEncryption](hhttps://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-securestartup-filterdriver-preventdeviceencryption) to True. To learn more, see [Use an answer file with Sysprep](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/use-answer-files-with-sysprep).
+- Use an Unattend file and set [PreventDeviceEncryption](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-securestartup-filterdriver-preventdeviceencryption) to True. To learn more, see [Use an answer file with Sysprep](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/use-answer-files-with-sysprep).
 
 - Update this registry key:
 **HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\BitLocker**
