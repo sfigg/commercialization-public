@@ -57,73 +57,58 @@ The following design principles for RCS settings apply in Windows 10 Mobile:
     | Yes                | N/A                | Off               | Off         |
     | Yes                | On                 | Off               | Off         |
 
-     
-
     Per-provider SIM Slot 2 settings will fall back to the default service behavior. The following table shows the expected behavior.
 
-    Windows 10 Mobile OEM configuration
-
-    Windows 10 Mobile behavior
-
-    Windows 10 Mobile final value
-
-    OEM: Is it hidden?
-
-    User setting value
-
-    OEM default value
-
-    OEM: Is it hidden?
-
-    OEM and user default fallback behavior
-
-    N/A
-
-    N/A
-
-    N/A
-
-    Yes
-
-    On
-
-    On
-
-    No
-
-    Off
-
-    On
-
-    Yes
-
-    On
-
-    Off
-
-    Yes
-
-    N/A
-
-    Off
-
-    Yes
-
-    On
-
-    Off
-
-    No
-
-    N/A
-
-    Off
-
-    Yes
-
-    On
-
-    Off
+    <table border="1" rules="cols">
+    <thead valign="bottom">
+        <tr>
+            <th colspan="3">Windows 10 Mobile OEM configuration</th>
+            <th colspan="2">Windows 10 Mobile behavior</th>
+            <th rowspan="2">Windows 10 Mobile final value</th>
+        </tr>
+        <tr>
+            <th>OEM: Is it hidden?</th>
+            <th>User setting value</th>
+            <th>OEM default value</th>
+            <th>OEM: Is it hidden?</th>
+            <th>OEM and user default fallback behavior</th>
+        </tr>
+    </thead>
+    <tbody valign="top">
+        <tr>
+            <td>N/A</td>
+            <td>N/A</td>
+            <td>N/A</td>
+            <td>Yes</td>
+            <td>On</td>
+            <td>On</td>
+        </tr>
+        <tr>
+            <td>No</td>
+            <td>Off</td>
+            <td>On</td>
+            <td>Yes</td>
+            <td>On</td>
+            <td>Off</td>
+        </tr>
+        <tr>
+            <td>Yes</td>
+            <td>N/A</td>
+            <td>Off</td>
+            <td>Yes</td>
+            <td>On</td>
+            <td>Off</td>
+        </tr>
+        <tr>
+            <td>No</td>
+            <td>N/A</td>
+            <td>Off</td>
+            <td>Yes</td>
+            <td>On</td>
+            <td>Off</td>
+        </tr>
+    </tbody>
+    </table>
 
      
 
@@ -198,86 +183,25 @@ This customization supports: **per-SIM** value
 
 5.  To specify whether the system is RCS-enabled and the RCS package is installed, set `SystemEnabled` to one of the following values.
 
-    <table>
-    <colgroup>
-    <col width="50%" />
-    <col width="50%" />
-    </colgroup>
-    <thead>
-    <tr class="header">
-    <th>Value</th>
-    <th>Description</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td><p>0 or 'No'</p></td>
-    <td><p>The system is not RCS-enabled.</p></td>
-    </tr>
-    <tr class="even">
-    <td><p>1 or 'Yes'</p></td>
-    <td><p>The system is RCS-enabled.</p>
-    <p>If the system supports RCS, you can also specify whether to show the user setting by configuring the value for <code>UserEnabled</code>.</p></td>
-    </tr>
-    </tbody>
-    </table>
-
+    | Value      | Description                                                                                                                                              |
+    |:-----------|:---------------------------------------------------------------------------------------------------------------------------------------------------------|
+    | 0 or 'No'  | The system is not RCS-enabled.                                                                                                                           |
+    | 1 or 'Yes' | The system is RCS-enabled. If the system supports RCS, you can also specify whether to show the user setting by configuring the value for `UserEnabled`. |
      
 
 6.  To show the user setting if RCS is enabled on the device, set `UserEnabled` to one of the following values.
 
-    <table>
-    <colgroup>
-    <col width="50%" />
-    <col width="50%" />
-    </colgroup>
-    <thead>
-    <tr class="header">
-    <th>Value</th>
-    <th>Description</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td><p>0 or 'No'</p></td>
-    <td><p>Don't show the user setting if RCS is enabled on the device.</p></td>
-    </tr>
-    <tr class="even">
-    <td><p>1 or 'Yes'</p></td>
-    <td><p>Show the user setting if RCS is enabled on the device.</p></td>
-    </tr>
-    </tbody>
-    </table>
-
-     
+    | Value      | Description                                                  |
+    |:-----------|:-------------------------------------------------------------|
+    | 0 or 'No'  | Don't show the user setting if RCS is enabled on the device. |
+    | 1 or 'Yes' | Show the user setting if RCS is enabled on the device.       |
 
 7.  To specify whether to use single registration for RCS, set `UseSingleRegistration` to one of the following values.
 
-    <table>
-    <colgroup>
-    <col width="50%" />
-    <col width="50%" />
-    </colgroup>
-    <thead>
-    <tr class="header">
-    <th>Value</th>
-    <th>Description</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td><p>0 or 'False'</p></td>
-    <td><p>Do not use single registration for RCS.</p></td>
-    </tr>
-    <tr class="even">
-    <td><p>1 or 'True'</p></td>
-    <td><p>Use single registration for RCS.</p>
-    <p>The RCS stack will use the modem interface to communicate with the RCS backend.</p></td>
-    </tr>
-    </tbody>
-    </table>
-
-     
+    | Value        | Description                                                                                                      |
+    |:-------------|:-----------------------------------------------------------------------------------------------------------------|
+    | 0 or 'False' | Do not use single registration for RCS.                                                                          |
+    | 1 or 'True'  | Use single registration for RCS. The RCS stack will use the modem interface to communicate with the RCS backend. |
 
 8.  To configure the user experience for RCS, set the following settings.
 
@@ -310,13 +234,3 @@ This customization supports: **per-SIM** value
 
 <a href="" id="testing-"></a>**Testing:**  
 Work with your mobile operator partner to test this customization on the operator's network.
-
- 
-
- 
-
-
-
-
-
-
