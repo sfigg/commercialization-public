@@ -29,55 +29,55 @@ Security consideration are categorized into four areas: threat protection, Ident
 ##Threat protection considerations
 
 -[Threat protection considerations](OEM-threat-protection.md)
-*Windows Defender System Guard
+* Windows Defender System Guard
 
 ##Identity protection considerations
 
 -[Identity protection considerations](OEM-identity-protection.md)
 
-*Windows Defender Application Guard
-*Windows Defender Credential Guard
-*Multi-factor authentication
-*Multiple user profile
-*User account control
-*Secure user data (NTFS)
+* Windows Defender Application Guard
+* Windows Defender Credential Guard
+* Multi-factor authentication
+* Multiple user profile
+* User account control
+* Secure user data (NTFS)
 Also in list on Hardware considerations. Leave both places?
-*Hardware secured and attested digital identities (TPM Key Attestation)
+* Hardware secured and attested digital identities (TPM Key Attestation)
 Also in list on Hardware considerations. Leave both places?
-*Cloud based Certificate Reputation Service
-*AAD Sign-In to Windows 
+* Cloud based Certificate Reputation Service
+* AAD Sign-In to Windows 
 
 ##Information protection considerations
 
 -[Information protection considerations](OEM-information-protection.md)
 
-*Windows Information Protection
+* Windows Information Protection
 
-*Device encryption
+* Device encryption
 With the right hardware configurations, Windows 10 automatically encrypts a device, helping to keep customer data safe. OEMs contribute by implementing and testing the right hardware. To learn more, refer to [OEM device encryption](OEM-device-encryption).
 
-*Remote business data removal
+* Remote business data removal
 
-*Encrypted Individual Files and Folders (EFS)
+* Encrypted Individual Files and Folders (EFS)
 
 ##Hardware-based considerations
 
 -[Hardware-based considerations](OEM-hardware-based-protection.md)
 
-*Device Guard
+* Device Guard
 
-*Windows Defender Exploit Guard
-
-
-*Windows Defender Application Control
+* Windows Defender Exploit Guard
 
 
-*Device integrity protection
-	*TPM measurements
-	*UEFI Secure Boot
-	*Trusted Boot
-	*Measured Boot
-	*Early Launch Anti-Malware (ELAM)) 
+* Windows Defender Application Control
+
+
+* Device integrity protection
+	* TPM measurements
+	* UEFI Secure Boot
+	* Trusted Boot
+	 *Measured Boot
+	* Early Launch Anti-Malware (ELAM)) 
 
 
  

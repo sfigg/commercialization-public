@@ -118,6 +118,7 @@
 ####[Information protection](device-experiences/OEM-information-protection.md)
 ####[Hardware-based protection](device-experiences/OEM-hardware-based-protection.md)
 
+
 ### [Thermal management in Windows](device-experiences/thermal-management-in-windows.md)
 #### [Design Guide](device-experiences/design-guide.md)
 #### [User Experience](device-experiences/user-experience.md)
