@@ -59,7 +59,7 @@ The following design principles for RCS settings apply in Windows 10 Mobile:
 
     Per-provider SIM Slot 2 settings will fall back to the default service behavior. The following table shows the expected behavior.
 
-    <table border="1">
+    <table border="1" rules="cols">
     <thead valign="bottom">
         <tr>
             <th colspan="3">Windows 10 Mobile OEM configuration</th>
