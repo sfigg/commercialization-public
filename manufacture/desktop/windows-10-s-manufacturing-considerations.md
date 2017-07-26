@@ -52,15 +52,12 @@ Audit mode is availabe when manufacturing a Windows 10 S PC. By default, the [bl
 
 To learn more about Audit Mode, see [Audit Mode overview](audit-mode-overview.md).
 
-## OOBE
-
-If you need access to the Command Prompt from the first OOBE screen, Secure Boot must be disabled and the manufacturing registry key must be in place. Prior to shipping a device, Secure Boot must be enabled and the manufacturing registry key removed.
 
 ## Factory device diagnostics
 
 During factory testing, Win32-based diagnostic tools can be run by using one of the following options:
 
-1. Windows 10 S in Audit Mode with with Secure Boot turned off and the manufacturing registry key in place.
+1. Windows 10 S in Audit Mode with Secure Boot turned off and the manufacturing registry key in place.
 
     or 
 
