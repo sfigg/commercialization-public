@@ -31,7 +31,6 @@
 #### [Manufacturing mode](desktop/windows-10-s-manufacturing-mode.md)
 #### [Windows 10 S deployment lab](desktop/windows-10-s-deployment-sxs.md)
 ### [Deployment Options](desktop/windows-deployment-options.md)
-#### [Add updates to customized Windows images](desktop/add-updates-to-customized-windows-and-winpe-images.md)
 #### [UEFI Firmware](desktop/uefi-firmware.md)
 ##### [UEFI Installation Media Format and default boot behavior](desktop/uefi-installation-media-format-and-default-boot-behavior.md)
 ##### [UEFI Requirements: Boot time, Runtime, Hibernation State (S4)](desktop/uefi-requirements-boot-time-runtime-hibernation-state--s4.md)
