@@ -16,6 +16,9 @@ ms.technology: windows-oem
 
 Top-level portal page with introductory text, value prop, brief descriptions of each "consideration" or "area" with links to key content pieces for more information. Overarching question to answer is "What do you as an OEM need to know about building a secure system?" This should be answered by this group of topics. 
 
+
+OEMs need to implement security features correctly, because it’s the top concern of businesses and IT. 
+
 **Note:** If you are an IT Professional and want to deploy these features, learn more in the [Device Security](https://docs.microsoft.com/en-us/windows/device-security/) content. 
 Discuss these questions in this topic:
 
