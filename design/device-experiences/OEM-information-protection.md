@@ -65,7 +65,7 @@ For additional recommendations, see [Bitlocker topic on TechNet](http://go.micro
 
 ##Encrypted Individual Files and Folders (EFS)
 
-#See also
+##See also
 
 [Control the health of Windows 10-based devices](https://docs.microsoft.com/en-us/windows/device-security/protect-high-value-assets-by-controlling-the-health-of-windows-10-based-devices)
 

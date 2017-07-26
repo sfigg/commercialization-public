@@ -18,6 +18,9 @@ ms.technology: windows-oem
 
 **Note:** If you are an IT Professional and want to deploy these features, learn more in the [Device Security](https://docs.microsoft.com/en-us/windows/device-security/) content. 
 
+##Windows Biometric Framework and Windows Hello
+
+
 ##Windows Defender Application Guard
 
 ##Windows Defender Credential Guard

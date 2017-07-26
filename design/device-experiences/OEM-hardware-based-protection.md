@@ -11,7 +11,11 @@ ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-# Hardware-based protection considerations for OEMs
+#Hardware-based protection considerations for OEMs
+1. Describe each feature and what it does. Link to more information if available. 
+2. What OEM opportunities are there for each feature?
+3. Note that this is not IT Pro or consumer content, link to such if available. 
+
 You as the OEM have an unique opportunity to ensure that customers buying Windows 10 devices can securly set up their devices. Here's an explanation of hardware considerations for you to configure. 
 **Note:** If you are an IT Professional and want to deploy these features, learn more in the [Device Security](https://docs.microsoft.com/en-us/windows/device-security/) content. 
 
