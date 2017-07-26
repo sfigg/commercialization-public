@@ -87,7 +87,7 @@ With the right hardware configurations, Windows 10 automatically encrypts a devi
 
  
 
-#See also
+##See also
 
 [Control the health of Windows 10-based devices](https://docs.microsoft.com/en-us/windows/device-security/protect-high-value-assets-by-controlling-the-health-of-windows-10-based-devices)
 
