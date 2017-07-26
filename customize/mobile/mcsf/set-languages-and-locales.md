@@ -18,7 +18,7 @@ ms.technology: windows-oem
 There are several types of language settings that partners can control on the mobile device. The languages that partners choose to include should be based on the market in which the device will ship, and the amount of space available for language data. The following table shows the different kind of language and locale settings. This is just an overview. For more detailed information, including implementation instructions and limitations and restrictions, click through to the following topics.
 
 <table>
-<thead>
+<thead valign="bottom">
 <tr class="header">
 <th></th>
 <th>Partners must specify</th>
@@ -28,27 +28,26 @@ There are several types of language settings that partners can control on the mo
 </thead>
 <tbody valign="top">
 <tr class="odd">
-<td><p>[Mobile device languages](phone-languages.md)</p></td>
-<td><ul>
-<li><p>The set of available mobile device languages that need to be installed.</p>
-<p>OEMs must specify the value they want to use using the <strong>UserInterface</strong> element in the OEMInput.xml file.</p></li>
-</ul>
-<ul>
-<li><p>The default mobile device language.</p>
-<p>OEMs can specify this value using the <strong>BootUILanguage</strong> element in the OEMInput.xml file.</p></li>
-</ul></td>
-<td><ul>
-<li><p>At least one. The maximum number is determined by space constraints.</p></li>
-<li><p>One default device language is required.</p></li>
-</ul></td>
-<td><p>There is no way to add additional languages to the device later without re-flashing a new image.</p></td>
+<td>[Mobile device languages](phone-languages.md)</td>
+<td>
+    <ul>
+        <li>The set of available mobile device languages that need to be installed. OEMs must specify the value they want to use using the <strong>UserInterface</strong> element in the OEMInput.xml file.</li>
+        <li>The default mobile device language. OEMs can specify this value using the <strong>BootUILanguage</strong> element in the OEMInput.xml file.</li>
+    </ul>
+</td>
+<td>
+    <ul>
+        <li>At least one. The maximum number is determined by space constraints.</li>
+        <li>One default device language is required.</li>
+    </ul>
+</td>
+<td>There is no way to add additional languages to the device later without re-flashing a new image.</td>
 </tr>
 <tr class="even">
-<td><p>[Regional format](regional-format.md)</p></td>
-<td><p>The OEM must specify a default locale, which determines the country or region, regional format, pre-enabled keyboard, and speech languages.</p>
-<p>OEMs can specify the value this value using the <strong>BootLocale</strong> element in the OEMInput.xml file.</p></td>
-<td><p>One locale is required.</p></td>
-<td><p>The user can change the country/region.</p></td>
+<td>[Regional format](regional-format.md)</td>
+<td>The OEM must specify a default locale, which determines the country or region, regional format, pre-enabled keyboard, and speech languages. OEMs can specify the value this value using the <strong>BootLocale</strong> element in the OEMInput.xml file.</td>
+<td>One locale is required.</td>
+<td>The user can change the country/region.</td>
 </tr>
 <tr class="odd">
 <td>Keyboard layout</td>
@@ -57,29 +56,29 @@ There are several types of language settings that partners can control on the mo
 <td></td>
 </tr>
 <tr class="even">
-<td><p>[Text correction and suggestions](text-correction-and-suggestions.md)</p></td>
-<td><p>The set of keyboard language files used for text correction and suggestions while typing.</p>
-<p>OEMs must specify the value they want to use using the <strong>Keyboard</strong> element in the OEMInput.xml file.</p></td>
-<td><p>At least one. The maximum number is determined by space constraints.</p></td>
-<td><p>Users can download additional keyboard language files as needed. If the keyboard language file for a given keyboard is not already on the device, it is downloaded automatically when the user enables the keyboard for the first time.</p></td>
+<td>[Text correction and suggestions](text-correction-and-suggestions.md)</td>
+<td>The set of keyboard language files used for text correction and suggestions while typing. OEMs must specify the value they want to use using the <strong>Keyboard</strong> element in the OEMInput.xml file.</td>
+<td>At least one. The maximum number is determined by space constraints.</td>
+<td>Users can download additional keyboard language files as needed. If the keyboard language file for a given keyboard is not already on the device, it is downloaded automatically when the user enables the keyboard for the first time.</td>
 </tr>
 <tr class="odd">
-<td><p>[Pre-enabled keyboard](pre-enabled-keyboard.md)</p></td>
-<td><p>For each mobile device language, the OS automatically determines which keyboards to show the user. If the OEM needs to enable additional keyboards by default to meet the needs of their market, they can.</p>
-<p>The <strong>Recommended additional pre-enabled keyboard(s)</strong> apply to these locales:</p>
-<ul>
-<li><p>The primary language script is non-Latin or where the default keyboard is a Latin-based keyboard so users can type their Microsoft account email and password.</p></li>
-<li><p>There is more than one official language.</p></li>
-</ul></td>
-<td><p>Additional keyboards are not necessary for most markets.</p></td>
-<td><p>Users can select which keyboards they wish to use.</p></td>
+<td>[Pre-enabled keyboard](pre-enabled-keyboard.md)</td>
+<td>
+    <p>For each mobile device language, the OS automatically determines which keyboards to show the user. If the OEM needs to enable additional keyboards by default to meet the needs of their market, they can.</p>
+    <p>The <strong>Recommended additional pre-enabled keyboard(s)</strong> apply to these locales:</p>
+    <ul>
+        <li>The primary language script is non-Latin or where the default keyboard is a Latin-based keyboard so users can type their Microsoft account email and password.</li>
+        <li>There is more than one official language.</li>
+    </ul>
+</td>
+<td>Additional keyboards are not necessary for most markets.</td>
+<td>Users can select which keyboards they wish to use.</td>
 </tr>
 <tr class="even">
-<td><p>[Speech languages](speech-languages.md)</p></td>
-<td><p>The set of available speech languages on the mobile device.</p>
-<p>OEMs can specify the value they want to use using the <strong>Speech</strong> element in the OEMInput.xml file.</p></td>
-<td><p>OEMs are not required to include speech by default. The maximum number is determined by space constraints.</p></td>
-<td><p>Users can download additional speech languages if they need them.</p></td>
+<td>[Speech languages](speech-languages.md)</td>
+<td>The set of available speech languages on the mobile device. OEMs can specify the value they want to use using the <strong>Speech</strong> element in the OEMInput.xml file.</td>
+<td>OEMs are not required to include speech by default. The maximum number is determined by space constraints.</td>
+<td>Users can download additional speech languages if they need them.</td>
 </tr>
 </tbody>
 </table>
