@@ -51,13 +51,10 @@ There are several types of language settings that partners can control on the mo
 <td><p>The user can change the country/region.</p></td>
 </tr>
 <tr class="odd">
-<td><p>Keyboard layout</p></td>
-<td><p>Nothing. 160 keyboard layouts are included on the device by default, and OEMs cannot modify, add, or delete keyboard layouts from the OS image.</p>
-<div>
- 
-</div></td>
-<td><p></p></td>
-<td><p></p></td>
+<td>Keyboard layout</td>
+<td>Nothing. 160 keyboard layouts are included on the device by default, and OEMs cannot modify, add, or delete keyboard layouts from the OS image.</td>
+<td></td>
+<td></td>
 </tr>
 <tr class="even">
 <td><p>[Text correction and suggestions](text-correction-and-suggestions.md)</p></td>
