@@ -4,7 +4,7 @@ Description: 'How to create a Windows 10 S image'
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Windows 10 S deployment lab'
 ms.author: themar
-ms.date: 06/07/2017
+ms.date: 07/27/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -14,6 +14,9 @@ ms.technology: windows-oem
 
 Creating a deployment of Windows 10 S has some differences when compared to other versions of Windows. When [planning your deployment](windows-10-s-planning.md), you have to make sure that your [drivers](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/Windows10SDriverRequirements) and [apps](https://docs.microsoft.com/en-us/windows/uwp/porting/desktop-to-uwp-test-windows-s) are supported by Windows 10 S.
 
+This lab walks you through the process of configuring a Windows 10 S image for deployment. We'll customize an image, add the manufacutring registry key in WinPE, and then remove the registry key in Audit Mode. Then we'll configure recovery and prepare the image for shipment.
+
+Let's get started.
 
 ## Get the tools you need
 
@@ -26,7 +29,7 @@ To start building a Windows 10 S image for deployment, here's what you'll need:
 - A USB key that you can format
 - [Deployment scripts](http://go.microsoft.com/fwlink/p/?LinkId=800657)
 - Customizations such as drivers or language packs
-- The latest GDR from [the Microsoft Update Catalog](http://www.catalog.update.microsoft.com)
+- The latest General Distribution Release update from [the Microsoft Update Catalog](http://www.catalog.update.microsoft.com)
 
 ## Format your USB key
 
