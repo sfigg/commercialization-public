@@ -16,6 +16,8 @@ ms.technology: windows-oem
 
 # FontSmoothing
 
+> [!Note]  
+> We do not recommend using this Unattend setting when preparing images, as ClearType is now the default font appearance across the system. This Unattend setting will be removed in a future release of Windows.
 
 `FontSmoothing` specifies whether font smoothing is enabled, and which type.
 
