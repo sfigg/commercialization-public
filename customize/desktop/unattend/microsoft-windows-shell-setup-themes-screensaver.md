@@ -17,7 +17,7 @@ ms.technology: windows-oem
 # ScreenSaver
 
 
-In Windows 10 version 1607, ScreenSaver is deprecated.
+In Windows 10 version 1709, ScreenSaver functionality in Themes is removed. ScreenSaver is deprecated in Group Policy, Control Panel, and SysPrep. Lockscreen features and policies are preferred over using ScreenSaver. 
 
 `ScreenSaver` specifies the path to a Windows screen saver file in a theme.
 
