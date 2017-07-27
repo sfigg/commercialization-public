@@ -79,6 +79,9 @@ The following XML output shows how to set Windows Firewall groups.
 </FirewallGroups>
 ```
 
+> [!Note]
+> In unattended installations, you can use a string for the Group setting, for example, "Remote Desktop." However, to specify a Group in an answer file that applies to multilingual unattended installations, you can reference an indirect string resource stored in the firewallAPI.dll binary. See the child topic on the [Group](networking-mpssvc-svcfirewallgroups-firewallgroup-group.md) setting for more information.
+
 ## Related topics
 
 
