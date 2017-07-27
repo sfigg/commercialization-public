@@ -20,16 +20,7 @@ When the runtime configuration engine applies a variant to a device, a number of
 To allow users to reset their device and not wait for apps to download from the Windows Store if the same variant is used, the OS protects the data by copying it to the OS partition. The following table describes what happens to the device content during initial install, upon resetting the storage limit, and after the device is reset.
 
 <table style="width:100%;">
-<colgroup>
-<col width="14%" />
-<col width="14%" />
-<col width="14%" />
-<col width="14%" />
-<col width="14%" />
-<col width="14%" />
-<col width="14%" />
-</colgroup>
-<thead>
+<thead valign="bottom">
 <tr class="header">
 <th>Content</th>
 <th>Initial storage location</th>
@@ -40,87 +31,87 @@ To allow users to reset their device and not wait for apps to download from the 
 <th>Result after reset</th>
 </tr>
 </thead>
-<tbody>
+<tbody valign="top">
 <tr class="odd">
-<td><p> </p></td>
-<td><p><strong>Selected subvariant</strong></p></td>
-<td><p><strong>Other subvariants</strong></p></td>
-<td><p><strong>Selected subvariant</strong></p></td>
-<td><p><strong>Other subvariants</strong></p></td>
-<td><p><strong>If the same subvariant is selected</strong></p></td>
-<td><p><strong>Other subvariants</strong></p></td>
+<td></td>
+<td><strong>Selected subvariant</strong></td>
+<td><strong>Other subvariants</strong></td>
+<td><strong>Selected subvariant</strong></td>
+<td><strong>Other subvariants</strong></td>
+<td><strong>If the same subvariant is selected</strong></td>
+<td><strong>Other subvariants</strong></td>
 </tr>
 <tr class="even">
-<td><p>UI languages</p></td>
-<td><p>OS partition</p></td>
-<td><p>OS partition</p></td>
-<td><p>Stays in OS partition</p></td>
-<td><p>Stays in OS partition</p></td>
-<td><p>Used from OS partition</p></td>
-<td><p>Used from OS partition</p></td>
+<td>UI languages</td>
+<td>OS partition</td>
+<td>OS partition</td>
+<td>Stays in OS partition</td>
+<td>Stays in OS partition</td>
+<td>Used from OS partition</td>
+<td>Used from OS partition</td>
 </tr>
 <tr class="odd">
-<td><p>Retail mode</p></td>
-<td><p>User partition</p></td>
-<td><p>User partition</p></td>
-<td><p>Deleted</p></td>
-<td><p>Deleted</p></td>
-<td><p>Downloaded from the Internet</p></td>
-<td><p>Downloaded from the Internet</p></td>
+<td>Retail mode</td>
+<td>User partition</td>
+<td>User partition</td>
+<td>Deleted</td>
+<td>Deleted</td>
+<td>Downloaded from the Internet</td>
+<td>Downloaded from the Internet</td>
 </tr>
 <tr class="even">
-<td><p>Applications</p></td>
-<td><p>User partition</p></td>
-<td><p>User partition</p></td>
-<td><p>Copied to OS partition</p></td>
-<td><p>Deleted</p></td>
-<td><p>Used from OS partition</p></td>
-<td><p>Downloaded from the Internet</p></td>
+<td>Applications</td>
+<td>User partition</td>
+<td>User partition</td>
+<td>Copied to OS partition</td>
+<td>Deleted</td>
+<td>Used from OS partition</td>
+<td>Downloaded from the Internet</td>
 </tr>
 <tr class="odd">
-<td><p>Wallpapers</p></td>
-<td><p>OS partition</p></td>
-<td><p>OS partition</p></td>
-<td><p>Stays in OS partition</p></td>
-<td><p>Stays in OS partition</p></td>
-<td><p>Used from OS partition</p></td>
-<td><p>Used from OS partition</p></td>
+<td>Wallpapers</td>
+<td>OS partition</td>
+<td>OS partition</td>
+<td>Stays in OS partition</td>
+<td>Stays in OS partition</td>
+<td>Used from OS partition</td>
+<td>Used from OS partition</td>
 </tr>
 <tr class="even">
-<td><p>Ringtones</p></td>
-<td><p>OS partition</p></td>
-<td><p>OS partition</p></td>
-<td><p>Stays in OS partition</p></td>
-<td><p>Stays in OS partition</p></td>
-<td><p>Used from OS partition</p></td>
-<td><p>Used from OS partition</p></td>
+<td>Ringtones</td>
+<td>OS partition</td>
+<td>OS partition</td>
+<td>Stays in OS partition</td>
+<td>Stays in OS partition</td>
+<td>Used from OS partition</td>
+<td>Used from OS partition</td>
 </tr>
 <tr class="odd">
-<td><p>Configuration files</p></td>
-<td><p>OS partition</p></td>
-<td><p>OS partition</p></td>
-<td><p>Stays in OS partition</p></td>
-<td><p>Stays in OS partition</p></td>
-<td><p>Used from OS partition</p></td>
-<td><p>Used from OS partition</p></td>
+<td>Configuration files</td>
+<td>OS partition</td>
+<td>OS partition</td>
+<td>Stays in OS partition</td>
+<td>Stays in OS partition</td>
+<td>Used from OS partition</td>
+<td>Used from OS partition</td>
 </tr>
 <tr class="even">
-<td><p>Online apps metadata</p></td>
-<td><p>OS partition</p></td>
-<td><p>OS partition</p></td>
-<td><p>Stays in OS partition</p></td>
-<td><p>Stays in OS partition</p></td>
-<td><p>Used from OS partition</p></td>
-<td><p>Used from OS partition</p></td>
+<td>Online apps metadata</td>
+<td>OS partition</td>
+<td>OS partition</td>
+<td>Stays in OS partition</td>
+<td>Stays in OS partition</td>
+<td>Used from OS partition</td>
+<td>Used from OS partition</td>
 </tr>
 <tr class="odd">
-<td><p>Maps and voice navigation</p></td>
-<td><p>User partition</p></td>
-<td><p>User partition</p></td>
-<td><p>Deleted</p></td>
-<td><p>Deleted</p></td>
-<td><p>Downloaded from the Internet</p></td>
-<td><p>Downloaded from the Internet</p></td>
+<td>Maps and voice navigation</td>
+<td>User partition</td>
+<td>User partition</td>
+<td>Deleted</td>
+<td>Deleted</td>
+<td>Downloaded from the Internet</td>
+<td>Downloaded from the Internet</td>
 </tr>
 </tbody>
 </table>
@@ -132,16 +123,6 @@ To reclaim storage for users, the OS performs data cleanup in two stages:
 -   The OS performs post-variant cleanup in some amount of time (default of 0 hours) after applying a variant for the user's primary SIM card and after completing initial device setup. Variant data is deleted from the user store because the device has been effectively branded during this time.
 
 -   The OS deletes all variant data from the user store in some amount of time (default of 72 hours) after completing initial device setup, if no variant has been applied to the device. No data type will be persisted on the device.
-
-OEMs can configure the following settings to manage the cleanup of runtime configuration data on the device:
-
--   [Persist variant data](#persistvariantdata)
-
--   [Post variant cleanup delay](#postvariantcleanupdelay)
-
--   [Unconditional cleanup delay](#unconditionalcleanupdelay)
-
--   [Factory mode](#factorymode)
 
 <a href="" id="constraints---imagetimeonly"></a>**Constraints:** ImageTimeOnly  
 
@@ -190,35 +171,15 @@ OEMs can configure the following settings to manage the cleanup of runtime confi
 
 Use the `PersistVariantData` setting to configure runtime configuration to back up the app installers for the selected variant when the device is branded. The setting can be set to one of the following values:
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Value</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>0</p></td>
-<td><p>Disable backup.</p></td>
-</tr>
-<tr class="even">
-<td><p>1</p></td>
-<td><p>Enable backup. There must be sufficient space for runtime configuration backup to enable backup.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Value | Description                                                                                      |
+|:------|:-------------------------------------------------------------------------------------------------|
+| 0     | Disable backup.                                                                                  |
+| 1     | Enable backup. There must be sufficient space for runtime configuration backup to enable backup. |
 
 OEMs can configure the amount of reserved space to enable runtime configuration backup. To do this, set the **MainOSRTCDataReservedSectors** element in the OEMDevicePlatform.xml file.
 
-**Note**  
-OEMs should only configure **MainOSRTCDataReservedSectors** when using the runtime configuration feature to dynamically install certain applications from the Data partition depending on the SIM card(s) in the device during runtime. When using this functionality, the value is used to reserve space on the System partition to back up these applications so that they can be installed after a device reset.
+> [!Note]
+> OEMs should only configure **MainOSRTCDataReservedSectors** when using the runtime configuration feature to dynamically install certain applications from the Data partition depending on the SIM card(s) in the device during runtime. When using this functionality, the value is used to reserve space on the System partition to back up these applications so that they can be installed after a device reset.
 
  
 
@@ -249,13 +210,3 @@ Use the `UnconditionalCleanupDelay` setting to specify the time, in minutes, for
 
 
 This setting is not exposed through MCSF. OEMs can set the **Enable** value (REG\_DWORD) under the HKEY\_LOCAL\_MACHINE\\Software\\OEM\\FactoryMode registry key to 1 (indicates factory mode) or 0 (not in factory mode). A dialer plugin or other mechanism used during factory testing can turn on factory mode to prevent runtime configuration backup/restore/cleanup of variant data as well as retail mode offline content cleanup.
-
- 
-
- 
-
-
-
-
-
-
