@@ -12,14 +12,17 @@ ms.technology: windows-oem
 ---
 
 #Hardware-based protection considerations for OEMs
+Each section (one per feature) contains the following information.
 1. Describe each feature and what it does. Link to more information if available. 
-2. What OEM opportunities are there for each feature?
-3. Note that this is not IT Pro or consumer content, link to such if available. 
+2. What are the OEM opportunities for each feature?
+3. What are the OEM requirements for each feature?
+4. Note that this is not IT Pro or consumer content, link to such if available. 
 
 You as the OEM have an unique opportunity to ensure that customers buying Windows 10 devices can securly set up their devices. Here's an explanation of hardware considerations for you to configure. 
 **Note:** If you are an IT Professional and want to deploy these features, learn more in the [Device Security](https://docs.microsoft.com/en-us/windows/device-security/) content. 
 
 ##Device Guard
+TBD: do we want to keep this naming? It's one of the keyword
 Device Guard is not a feature; rather it is a set of features designed to work together to prevent and eliminate untrusted code from running on a Windows 10 system. Starting in Windows 10, version 1709, Device Guard consists of two parts, one focusing on hardware--called Windows Defender Exploit Guard, the other focusing on software--called Windows Defender Application Control. 
 
 ###Windows Defender Exploit Guard

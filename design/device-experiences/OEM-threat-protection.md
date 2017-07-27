@@ -12,9 +12,11 @@ ms.technology: windows-oem
 ---
 
 # Threat protection considerations for OEMs
+Each section (one per feature) contains the following information.
 1. Describe each feature and what it does. Link to more information if available. 
-2. What OEM opportunities are there for each feature?
-3. Note that this is not IT Pro or consumer content, link to such if available. 
+2. What are the OEM opportunities for each feature?
+3. What are the OEM requirements for each feature?
+4. Note that this is not IT Pro or consumer content, link to such if available. 
 
 
 ##Windows Defender System Guard
