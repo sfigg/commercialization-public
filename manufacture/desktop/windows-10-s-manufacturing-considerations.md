@@ -57,7 +57,7 @@ To learn more about Audit Mode, see [Audit Mode overview](audit-mode-overview.md
 
 During factory testing, Win32-based diagnostic tools can be run by using one of the following options:
 
-1. Windows 10 S in Audit Mode with the manufacturing registry key in place.
+1. Windows 10 S in Audit Mode with the manufacturing registry key in place. If you’ve previously booted the PC without the manufacturing registry key in place, you’ll have to turn off Secure Boot before you can use Win32-based diagnostic tools.
 
     or 
 
