@@ -4,7 +4,7 @@ Description: 'Windows 10 S WinPE, CI policy, OOBE, and DISM information.'
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Windows 10 S manufacturing environment'
 ms.author: themar
-ms.date: 0/07/2017
+ms.date: 7/27/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -57,7 +57,7 @@ To learn more about Audit Mode, see [Audit Mode overview](audit-mode-overview.md
 
 During factory testing, Win32-based diagnostic tools can be run by using one of the following options:
 
-1. Windows 10 S in Audit Mode with Secure Boot turned off and the manufacturing registry key in place.
+1. Windows 10 S in Audit Mode with the manufacturing registry key in place.
 
     or 
 
