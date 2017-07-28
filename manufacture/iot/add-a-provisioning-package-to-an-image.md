@@ -103,15 +103,6 @@ For this lab, we'll use the ProductB, that includes the default app (Bertha), wh
         <FeatureID>OEMCommon_ALL</FeatureID>
       </FeatureIDs>
     </PackageFile>    
-    ...
-    <OEMFeatureGroups>
-    <!-- Feature Constraints below -->
-    <!-- This ensures that only one of the Provisioning package is included -->
-      <FeatureGroup Constraint="ZeroOrOne">
-        <FeatureIDs>
-          <FeatureID>OEM_ProvAuto</FeatureID>
-          <FeatureID>OEM_ProvManual</FeatureID>        
-        </FeatureIDs>
     ```
 
 3.  Update the test configuration file C:\\IoT-ADK-AddonKit\\Source-_<arch_>\\Products\\ProductB\\TestOEMInput.xml:
