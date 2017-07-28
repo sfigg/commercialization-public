@@ -113,7 +113,6 @@ This customization supports: **per-IMSI** value, **per-device** value
           <Setting Name="RoamingTables/3GPPRoamingTables/HomePLMN/$(SerialNumber)" Value="" />  
         </Settings>  
 
-
         <!-- Define for 3GPP2. All these settings must be configured at the same time. -->
         <Settings Path="Cellcore/PerDevice/General/atomicRoamingTableSettings3GPP2">        
           <Setting Name="RoamingTables/3GPP2RoamingTables/Enabled" Value="" />    
@@ -148,10 +147,8 @@ This customization supports: **per-IMSI** value, **per-device** value
 
     The settings group is atomic so you must configure all the settings at the same time to correctly configure roaming filters.
 
-    **Important**  
-    When specifying the `$(SerialNumber)`, make sure that the order is absolutely sequential within the different lists. For example: 000, 001, 002.., or 001, 002, 003…, and so on.
-
-     
+    > [!IMPORTANT]
+    > When specifying the `$(SerialNumber)`, make sure that the order is absolutely sequential within the different lists. For example: 000, 001, 002.., or 001, 002, 003…, and so on.
 
     **3GPP**
 
@@ -195,13 +192,3 @@ This customization supports: **per-IMSI** value, **per-device** value
 
 <a href="" id="testing-steps-"></a>**Testing steps:**  
 Work with your mobile operator to test this customization on their network.
-
- 
-
- 
-
-
-
-
-
-

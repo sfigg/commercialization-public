@@ -19,7 +19,8 @@ OEMs can change the default set of actions for each slot on the **Quick actions*
 
 The **Notifications & actions** settings screen contains a section at the top for users to configure **Quick actions**, which are actions that users can have available for quick access or without having to open the apps list or the settings screen to find them. Each quick action has a slot. If a user selects a quick action to go into an occupied slot (for example, Slot 1), and the chosen action already exists in another slot (for example, Slot 2), the two quick actions will swap so that the user-selected action always moves to the slot that the user has selected even though the action may already be in another slot.
 
-**Note**  In Windows 10 Mobile, the quick actions are not configurable through MCSF settings or Windows provisioning. OEMs must directly set the registry key to change the OS default quick actions.
+> [!NOTE]
+> In Windows 10 Mobile, the quick actions are not configurable through MCSF settings or Windows provisioning. OEMs must directly set the registry key to change the OS default quick actions.
 
  
 
@@ -51,86 +52,24 @@ A slot cannot be empty. If an OEM sets the value for Slot 5, but the mobile devi
 
     The following table shows the friendly names that you can use as the value for the slot number that you want to configure.
 
-    <table>
-    <colgroup>
-    <col width="50%" />
-    <col width="50%" />
-    </colgroup>
-    <thead>
-    <tr class="header">
-    <th>FriendlyName</th>
-    <th>Description</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td><p>Microsoft.QuickAction.AllSettings</p></td>
-    <td><p>Pins All settings</p></td>
-    </tr>
-    <tr class="even">
-    <td><p>Microsoft.QuickAction.Connect</p></td>
-    <td><p>Pins the Connect app</p></td>
-    </tr>
-    <tr class="odd">
-    <td><p>Microsoft.QuickAction.Note</p></td>
-    <td><p>Pins the Note app</p></td>
-    </tr>
-    <tr class="even">
-    <td><p>Microsoft.QuickAction.Flashlight</p></td>
-    <td><p>Pins the Flashlight app</p></td>
-    </tr>
-    <tr class="odd">
-    <td><p>Microsoft.QuickAction.RotationLock</p></td>
-    <td><p>Pins Rotation lock</p></td>
-    </tr>
-    <tr class="even">
-    <td><p>Microsoft.QuickAction.BatterySaver</p></td>
-    <td><p>Pins Battery saver</p></td>
-    </tr>
-    <tr class="odd">
-    <td><p>Microsoft.QuickAction.Bluetooth</p></td>
-    <td><p>Pins Bluetooth settings</p></td>
-    </tr>
-    <tr class="even">
-    <td><p>Microsoft.QuickAction.WiFi</p></td>
-    <td><p>Pins Wi-Fi settings</p></td>
-    </tr>
-    <tr class="odd">
-    <td><p>Microsoft.QuickAction.AirplaneMode</p></td>
-    <td><p>Pins Airplane mode settings</p></td>
-    </tr>
-    <tr class="even">
-    <td><p>Microsoft.QuickAction.Vpn</p></td>
-    <td><p>Pins VPN settings</p></td>
-    </tr>
-    <tr class="odd">
-    <td><p>Microsoft.QuickAction.Cellular</p></td>
-    <td><p>Pins Cellular settings</p></td>
-    </tr>
-    <tr class="even">
-    <td><p>Microsoft.QuickAction.MobileHotspot</p></td>
-    <td><p>Pins Mobile hotspot settings</p></td>
-    </tr>
-    <tr class="odd">
-    <td><p>Microsoft.QuickAction.Camera</p></td>
-    <td><p>Pins the Camera app</p></td>
-    </tr>
-    <tr class="even">
-    <td><p>Microsoft.QuickAction.Brightness</p></td>
-    <td><p>Pins Brightness</p></td>
-    </tr>
-    <tr class="odd">
-    <td><p>Microsoft.QuickAction.QuietHours</p></td>
-    <td><p>Pins Quiet hours</p></td>
-    </tr>
-    <tr class="even">
-    <td><p>Microsoft.QuickAction.Location</p></td>
-    <td><p>Pins Location settings</p></td>
-    </tr>
-    </tbody>
-    </table>
-
-     
+    | FriendlyName                        | Description                  |
+    |:------------------------------------|:-----------------------------|
+    | Microsoft.QuickAction.AllSettings   | Pins All settings            |
+    | Microsoft.QuickAction.Connect       | Pins the Connect app         |
+    | Microsoft.QuickAction.Note          | Pins the Note app            |
+    | Microsoft.QuickAction.Flashlight    | Pins the Flashlight app      |
+    | Microsoft.QuickAction.RotationLock  | Pins Rotation lock           |
+    | Microsoft.QuickAction.BatterySaver  | Pins Battery saver           |
+    | Microsoft.QuickAction.Bluetooth     | Pins Bluetooth settings      |
+    | Microsoft.QuickAction.WiFi          | Pins Wi-Fi settings          |
+    | Microsoft.QuickAction.AirplaneMode  | Pins Airplane mode settings  |
+    | Microsoft.QuickAction.Vpn           | Pins VPN settings            |
+    | Microsoft.QuickAction.Cellular      | Pins Cellular settings       |
+    | Microsoft.QuickAction.MobileHotspot | Pins Mobile hotspot settings |
+    | Microsoft.QuickAction.Camera        | Pins the Camera app          |
+    | Microsoft.QuickAction.Brightness    | Pins Brightness              |
+    | Microsoft.QuickAction.QuietHours    | Pins Quiet hours             |
+    | Microsoft.QuickAction.Location      | Pins Location settings       |
 
     For example, to change Slot 4 on 4-slot mobile devices from Wi-Fi to Airplane mode, set the value for `HKLM\Software\Microsoft\Shell\OEM\QuickActions\Slot\4` to Microsoft.QuickAction.AirplaneMode.
 
@@ -140,13 +79,3 @@ A slot cannot be empty. If an OEM sets the value for Slot 5, but the mobile devi
 2.  Verify that the default quick action(s) that you set are showing up in the correct slot(s). For large screen devices, verify that there are 5 quick actions that are showing up instead of 4.
 
 3.  Navigate to the **Quick actions** screen in **Notifications & actions** screen and verify that the default quick settings action(s) that you set are also showing up in the correct slots.
-
- 
-
- 
-
-
-
-
-
-
