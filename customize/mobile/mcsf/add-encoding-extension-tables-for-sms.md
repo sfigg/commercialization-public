@@ -35,10 +35,8 @@ The following steps describe how to configure and build the custom encodings:
 
 1.  Implement your code page DLL and make sure that it exports the [NlsDllCodePageTranslation](http://go.microsoft.com/fwlink/p/?LinkId=260792) function.
 
-    **Note**  
-    Ignore the note about not using the function found on the MSDN web site. This note does not apply for SMS encoding.
-
-     
+    > [!NOTE]
+    > Ignore the note about not using the function found on the MSDN web site. This note does not apply for SMS encoding.
 
     When implementing your code page DLL, the DLL must have at least the following:
 
@@ -204,50 +202,15 @@ The following steps describe how to configure and build the custom encodings:
 
     Here are the code page identifiers for the new supported SMS encodings in Windows 10 Mobile as well as the reserved ranges to be used for future SMS encodings:
 
-    <table>
-    <colgroup>
-    <col width="50%" />
-    <col width="50%" />
-    </colgroup>
-    <thead>
-    <tr class="header">
-    <th>NLS code page ID</th>
-    <th>Description</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td><p>55000</p></td>
-    <td><p>GSM 7-bit</p></td>
-    </tr>
-    <tr class="even">
-    <td><p>55001</p></td>
-    <td><p>GSM with Single Shift for Spanish</p></td>
-    </tr>
-    <tr class="odd">
-    <td><p>55002</p></td>
-    <td><p>GSM with Single Shift for Portuguese</p></td>
-    </tr>
-    <tr class="even">
-    <td><p>55003</p></td>
-    <td><p>GSM with Single Shift for Turkish</p></td>
-    </tr>
-    <tr class="odd">
-    <td><p>55004</p></td>
-    <td><p>SMS Greek Reduction</p></td>
-    </tr>
-    <tr class="even">
-    <td><p>55005–55049</p></td>
-    <td><p>Reserved</p></td>
-    </tr>
-    <tr class="odd">
-    <td><p><strong>55050–55099</strong></p></td>
-    <td><p>Available for OEM-supplied SMS encodings</p></td>
-    </tr>
-    </tbody>
-    </table>
-
-     
+    | NLS code page ID | Description                              |
+    |:-----------------|:-----------------------------------------|
+    | 55000            | GSM 7-bit                                |
+    | 55001            | GSM with Single Shift for Spanish        |
+    | 55002            | GSM with Single Shift for Portuguese     |
+    | 55003            | GSM with Single Shift for Turkish        |
+    | 55004            | SMS Greek Reduction                      |
+    | 55005–55049      | Reserved                                 |
+    | **55050–55099**  | Available for OEM-supplied SMS encodings |
 
 3.  Add your code page DLL to the device. To do this, set the **CodepageDLL** asset source to the location and file name of your code page DLL. For example:
 
@@ -273,13 +236,3 @@ The following steps describe how to configure and build the custom encodings:
 
 <a href="" id="testing-steps-"></a>**Testing steps:**  
 Work with your mobile operator to test this customization on their network.
-
- 
-
- 
-
-
-
-
-
-
