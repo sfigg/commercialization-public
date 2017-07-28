@@ -148,10 +148,8 @@ This customization supports: **per-IMSI** value, **per-device** value
 
     The settings group is atomic so you must configure all the settings at the same time to correctly configure roaming filters.
 
-    **Important**  
-    When specifying the `$(SerialNumber)`, make sure that the order is absolutely sequential within the different lists. For example: 000, 001, 002.., or 001, 002, 003…, and so on.
-
-     
+    > [!IMPORTANT]
+    > When specifying the `$(SerialNumber)`, make sure that the order is absolutely sequential within the different lists. For example: 000, 001, 002.., or 001, 002, 003…, and so on.
 
     **3GPP**
 
@@ -195,13 +193,3 @@ This customization supports: **per-IMSI** value, **per-device** value
 
 <a href="" id="testing-steps-"></a>**Testing steps:**  
 Work with your mobile operator to test this customization on their network.
-
- 
-
- 
-
-
-
-
-
-
