@@ -38,8 +38,6 @@ The following steps describe how to configure and build the custom encodings:
     **Note**  
     Ignore the note about not using the function found on the MSDN web site. This note does not apply for SMS encoding.
 
-     
-
     When implementing your code page DLL, the DLL must have at least the following:
 
     -   A .def file that declares the name of the DLL—for example, `MyCodePageDLL`—and exports the **NlsDllCodePageTranslation** function:
@@ -273,13 +271,3 @@ The following steps describe how to configure and build the custom encodings:
 
 <a href="" id="testing-steps-"></a>**Testing steps:**  
 Work with your mobile operator to test this customization on their network.
-
- 
-
- 
-
-
-
-
-
-
