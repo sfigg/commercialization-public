@@ -20,7 +20,7 @@ You can use scripts to take a Windows image and deploy Windows onto new PCs quic
 
 2.  Extract the Home edition. The X21-34314 image includes both  Professional and Home editions. (Index 1=Professional, Index 2=Home). We recommend starting with the Home edition, because you can upgrade your images later from Home to Professional using DISM commands, but you can't downgrade. 
 
-    ``` syntax
+    ```
     Dism /Get-ImageInfo /ImageFile:"D:\sources\install.wim"
 
     md E:\images
@@ -49,7 +49,7 @@ The sample scripts include steps that detect the firmware type (the newer UEFI-b
 	
 3.  Find the drive letters of the USB key by using diskpart:
 
-    ``` syntax
+    ```
     diskpart
     DISKPART> list volume
     DISKPART> exit
@@ -61,7 +61,7 @@ The sample scripts include steps that detect the firmware type (the newer UEFI-b
 
     The script **ApplyImage.bat** uses the diskpart scripts: CreatePartitions-UEFI.txt and CreatePartitions-BIOS.txt to create the partitions and define the partition layout. These scripts must be placed in the same folder. You can update these scripts to change the partition sizes.
 
-    ``` syntax
+    ```
     D:
     D:\ApplyImage.bat D:\Images\install.wim
     ```
@@ -83,7 +83,7 @@ The sample scripts include steps that detect the firmware type (the newer UEFI-b
 
 1.  Apply desktop applications.
 
-    ```syntax
+    ```
     D:\ADKTools\amd64\WimMountAdkSetupAmd64.exe /Install /q
     D:\ADKTools\amd64\DISM.exe /ImagePath:C:\ /Apply-SiloedPackage /PackagePath:E:\SPPs\office16_base.spp /PackagePath:E:\SPPs\office16_fr-fr.spp /PackagePath:E:\SPPs\office16_de-de.spp
 	```
@@ -96,7 +96,7 @@ Include a recovery image for your final images, but it's not required for these 
 
 1.  Apply the Windows Recovery Environment (Windows RE) image. These tools help repair common causes of unbootable operating systems. The image is stored in a separate drive partition. The script **ApplyRecovery.bat** uses the diskpart scripts: HidePartitions-UEFI.txt and HidePartitions-BIOS.txt to set up this partition. These scripts must be placed in the same folder as ApplyRecovery.bat.
 
-	```syntax
+	```
 	D:\ApplyRecovery.bat
 	```
 

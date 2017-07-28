@@ -35,7 +35,7 @@ You can mount an image using the **/optimize** option to reduce initial mount ti
 2.  Mount the image.
 
     ```
-    DISM /Mount-Wim /WimFile:<path_to_WIM_file> {/Index:<image_index> | /Name:<image_name>} /MountDir:<target_mount_directory> [/readonly]
+    DISM /Mount-Wim /WimFile:<path_to_WIM_file> {/Index:<image_index> | /Name:<image_name>} /MountDir:<target_mount_directory> [/readonly]}
     ```
 
     >**Note**: To mount a Windows image from a VHD file, you must specify `/index:1`.
@@ -43,7 +43,7 @@ You can mount an image using the **/optimize** option to reduce initial mount ti
     You can also add options to mount the image with read-only permissions or to reduce the initial mount time with the **/Optimize** option. For example,
 
     ```
-    DISM /Mount-Wim /WimFile:<path_to_WIM_file> {/Index:<image_index> | /Name:<image_name> /MountDir:<target_mount_directory> [/readonly]
+    DISM /Mount-Wim /WimFile:<path_to_WIM_file> {/Index:<image_index> | /Name:<image_name> /MountDir:<target_mount_directory> [/readonly] /[optimize]}
     ```
 
     For more information about the options available for the **/Mount-Image** option in DISM, see [DISM Image Management Command-Line Options](dism-image-management-command-line-options-s14.md).
@@ -59,7 +59,7 @@ You can also use the DISM tool to add and remove drivers and packages, including
 
 1.  On your technician computer open the mounted directory. For example,
 
-    ``` syntax
+    ```
     cd C:\mounted_images
     ```
 
@@ -79,7 +79,7 @@ You can commit changes to an image without unmounting the image.
 
 -   At the command prompt, type:
 
-    ``` syntax
+    ```
     Dism /Commit-Image /MountDir:C:\test\offline
     ```
 
@@ -97,7 +97,7 @@ After you modify an image, you must unmount it. If you mounted your image with t
 
 2.  Unmount the image.
 
-    ``` syntax
+    ```
     Dism /Unmount-Wim /MountDir:<target_mount_directory> {/Commit | /Discard}
     ```
 

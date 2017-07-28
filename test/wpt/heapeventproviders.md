@@ -5,10 +5,9 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: b4582698-fb7f-4158-b41c-d2f1c53f3f87
-ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
-ms.author: joshbax
+ms.author: sapaetsc
 ms.date: 05/05/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -38,7 +37,7 @@ Represents a collection of heap event provider identifiers and heap event provid
 ## Syntax
 
 
-``` syntax
+```
 <HeapEventProviders Operation = "Set" | "Add" | “Remove” >
 
   <!-- Child elements -->

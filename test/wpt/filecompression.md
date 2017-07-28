@@ -5,10 +5,9 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: fcc2cd71-7246-40f5-ba9c-2ba79b8ffdfc
-ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
-ms.author: joshbax
+ms.author: sapaetsc
 ms.date: 05/05/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -34,7 +33,7 @@ Indicates whether the ETL file is compressed. This element is for internal use o
 ## Syntax
 
 
-``` syntax
+```
 <FileCompression = Value boolean>
 ```
 

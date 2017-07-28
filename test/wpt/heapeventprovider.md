@@ -5,10 +5,9 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 0f2fe538-bfd6-490b-b1c8-8f151153b8ef
-ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
-ms.author: joshbax
+ms.author: sapaetsc
 ms.date: 05/05/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -42,7 +41,7 @@ Represents a provider of heap events for the profile.
 ## Syntax
 
 
-``` syntax
+```
 <HeapEventProvider Id   = IdType
                    Base = string>
 

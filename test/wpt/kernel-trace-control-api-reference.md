@@ -5,10 +5,9 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 16ecacd5-25aa-43d7-b842-cb8f92db8eeb
-ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
-ms.author: joshbax
+ms.author: sapaetsc
 ms.date: 05/05/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -30,13 +29,13 @@ On Windows 7 and Windows Vista, stackwalking on x64 systems requires that you 
 
 The following example shows how to query for this registry value.
 
-``` syntax
+```
 @REG QUERY "HKLM\System\CurrentControlSet\Control\Session Manager\Memory Management" -v DisablePagingExecutive
 ```
 
 The following example shows how to enable stackwalking.
 
-``` syntax
+```
 @REG ADD "HKLM\System\CurrentControlSet\Control\Session Manager\Memory Management" -v DisablePagingExecutive -d 0x1 -t REG_DWORD -f
 @IF NOT %ERRORLEVEL% == 0 echo error: Could not configure system for 64-bit stackwalking. Please run this script from an elevated administrator console.
 ```
@@ -48,7 +47,7 @@ To make these changes effective, you must restart the system.
 
 The following example shows how to disable stackwalking.
 
-``` syntax
+```
 @REG ADD "HKLM\System\CurrentControlSet\Control\Session Manager\Memory Management" -v DisablePagingExecutive -d 0x0 -t REG_DWORD -f
 @IF NOT %ERRORLEVEL% == 0 echo error: Could not remove 64-bit stackwalking configuration. Please run this script from an elevated administrator console.
 ```

@@ -5,7 +5,7 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 9BE866A3-1DFE-4AEE-BEB6-EF785AEF5833
-ms.author: elkr
+ms.author: dawnwood
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -37,7 +37,7 @@ Microsoft Windows Hello, part of Windows 10, gives users a personal, secured ex
 <td><p>Windows Hello works with the [Companion Device Framework](https://msdn.microsoft.com/en-us/windows/uwp/security/companion-device-unlock) to enhance the user authentication experience. Using the Windows Hello companion device framework, a companion device can provide a rich experience for Windows Hello even when biometrics are not available (e.g., if the Windows 10 desktop lacks a camera for face authentication or fingerprint reader device, for example).</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Windows Hello biometric requirements](biometric-requirements.md)</p></td>
+<td><p>[Windows Hello biometric requirements](windows-hello-biometric-requirements.md)</p></td>
 <td><p>Learn about the hardware requirements for biometric equipment, such as IR camera and fingerprint readers in order to support Windows Hello.</p></td>
 </tr>
 <tr class="even">

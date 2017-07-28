@@ -5,7 +5,7 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 82D894F5-D715-4991-92B2-287A33C48ECD
-ms.author: elkr
+ms.author: sapaetsc
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -435,8 +435,8 @@ private:
 
 The following requirements must be met in order for your IR camera to function correctly for Windows Hello.
 
--   [**PixelWidth**](https://msdn.microsoft.com/library/windows/hardware/br226203) must be equal or less than the maximum listed in [Windows Hello biometric requirements](biometric-requirements.md).
--   [**PixelHeight**](https://msdn.microsoft.com/library/windows/hardware/br226244) must be equal or less than the maximum listed in [Windows Hello biometric requirements](biometric-requirements.md).
+-   [**PixelWidth**](https://msdn.microsoft.com/library/windows/hardware/br226203) must be equal or less than the maximum listed in [Windows Hello biometric requirements](windows-hello-biometric-requirements.md).
+-   [**PixelHeight**](https://msdn.microsoft.com/library/windows/hardware/br226244) must be equal or less than the maximum listed in [Windows Hello biometric requirements](windows-hello-biometric-requirements.md).
 -   [**BitmapPixelFormat**](https://msdn.microsoft.com/library/windows/hardware/br226179) must be Gray8.
 
 ### PerceptionVideoProfile.FrameDuration requirements

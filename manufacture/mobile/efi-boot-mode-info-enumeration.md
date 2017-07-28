@@ -19,7 +19,7 @@ Defines the possible boot modes that the operating system can use when it starts
 ## <span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>Syntax
 
 
-``` syntax
+```
 typedef enum _EFI_OS_BOOT_MODE {
     EfiOsBootModeFullOs = 0,
     EfiOsBootModeManufacturingOs = 1

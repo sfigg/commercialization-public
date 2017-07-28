@@ -5,10 +5,9 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 7ec136bc-f59a-4b36-9ae5-1e25c6fe06c4
-ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
-ms.author: joshbax
+ms.author: sapaetsc
 ms.date: 05/05/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -34,7 +33,7 @@ Indicates whether to prepare the system for an [OnOffTransitionConfiguration](on
 ## Syntax
 
 
-``` syntax
+```
 <PrepareSystem Value = boolean>
 </PrepareSystem>
 ```
@@ -106,7 +105,7 @@ None.
 
 The following code example shows how to configure this element.
 
-``` syntax
+```
 <OnOffTransitionConfiguration
   Id="OnOffTransitionConfiguration_Default_Boot"
   Name="OnOffTransitionConfiguration_Default_Boot"

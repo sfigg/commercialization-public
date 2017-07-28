@@ -5,10 +5,9 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: a486a6e7-56b9-4458-8b7d-23024b3b7762
-ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
-ms.author: joshbax
+ms.author: sapaetsc
 ms.date: 05/05/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -38,7 +37,7 @@ Represents a collection of event provider identifiers and event providers.
 ## Syntax
 
 
-``` syntax
+```
 <EventProviders Operation = "Set" | "Add" | “Remove”>
 
   <!-- Child elements -->
@@ -147,7 +146,7 @@ Represents a collection of event provider identifiers and event providers.
 
 For managed scenarios, use the following event provider definition:
 
-``` syntax
+```
 <EventCollectorId Value ="WPAEventCollector">
   <EventProviders>
     <EventProviderId Value="EventProvider_DotNetProvider" />

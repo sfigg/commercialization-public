@@ -5,10 +5,9 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: d450807c-ad86-4d1d-a089-0b3cfa86219c
-ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
-ms.author: joshbax
+ms.author: sapaetsc
 ms.date: 05/05/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -20,7 +19,7 @@ ms.technology: windows-oem
 
 Displays trace merge options.
 
-``` syntax
+```
 xperf -merge trace1.etl trace2.etl … merged.etl
 ```
 
@@ -29,7 +28,7 @@ xperf -merge trace1.etl trace2.etl … merged.etl
 
 The following example merges individual trace files into merged.etl and adds image identification information and event manifest information that is required for safe symbol decoding.
 
-``` syntax
+```
 -merge trace1.etl trace2.etl … merged.etl
 ```
 

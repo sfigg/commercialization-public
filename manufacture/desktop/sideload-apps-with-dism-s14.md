@@ -179,7 +179,7 @@ Setting the Group Policy to allow trusted applications updates the following reg
 
 1.  Open a command prompt with administrator privileges and type the following to add the sideloading product key:
 
-    ``` syntax
+    ```
     Slmgr /ipk <sideloading product key>
     ```
 
@@ -187,7 +187,7 @@ Setting the Group Policy to allow trusted applications updates the following reg
 
 2.  Activate the sideloading key by typing:
 
-    ``` syntax
+    ```
     slmgr /ato ec67814b-30e6-4a50-bf7b-d55daf729d1e
     ```
 
@@ -248,7 +248,7 @@ You can install an app package (.appx or .appxbundle) on a per-user basis by usi
 
 -   At the Windows PowerShell prompt on a Windows 8 or Windows Server 2012 computer, add an .appx (or .appxbundle) file package. Include any required dependency app packages when you add the app. For example, type:
 
-    ``` syntax
+    ```
     add-appxpackage C:\app1.appx -DependencyPath C:\winjs.appx
     ```
 
@@ -275,13 +275,13 @@ On Windows 8.1 and newer, you no longer need to remove the provisioned app prio
 
 -   Use the Deployment Image Servicing and Management (DISM) command-line tool or PowerShell cmdlets to add the LOB app without a Windows Store license. For example, at an elevated command prompt, type:
 
-    ``` syntax
+    ```
     DISM /Online /Add-ProvisionedAppxPackage /PackagePath:C:\App1.appx /SkipLicense
     ```
 
     Or, at a Windows PowerShell prompt, type:
 
-    ``` syntax
+    ```
     Add-AppxProvisionedPackage -Online -FolderPath C:\Appx -SkipLicense
     ```
 
@@ -302,7 +302,7 @@ On Windows 8.1 and newer, to update a provisioned app, you will need to update 
 
 1.  Use the PowerShell to update the LOB app without a Windows Store license. This must be done for each user that has signed in to the PC running the Windows image. For example, if you have installed the original version of the app, 1.0.0.0, that now needs to be updated to version 1.0.0.1, then at a PowerShell session, type:
 
-    ``` syntax
+    ```
     Add-AppxPackage -Path App1_1.0.0.2 -DependencyPath C:\appx\WinJS.appx
     ```
 
@@ -310,7 +310,7 @@ On Windows 8.1 and newer, to update a provisioned app, you will need to update 
 
 2.  Once you have updated your app, you can verify the version of the updated app. From a PowerShell session, type:
 
-    ``` syntax
+    ```
     Get-AppxPackage | Out-GridView
     ```
 
@@ -323,7 +323,7 @@ To prepare a multi-lingual image, sign-in to the image, install any desired app 
 
 1.  Create an unattend.xml with the following contents to c:\\unattend.xml:
 
-    ``` syntax
+    ```
     <?xml version="1.0" encoding="utf-8"?>
     <unattend xmlns="urn:schemas-microsoft-com:unattend">
         <settings pass="specialize">
@@ -368,7 +368,7 @@ To prepare a multi-lingual image, sign-in to the image, install any desired app 
 
 5.  Open an elevated command prompt and type:
 
-    ``` syntax
+    ```
     Sysprep.exe /generalize /oobe /reboot /unattend:C:\unattend.xml
     ```
 
@@ -395,25 +395,25 @@ You can list the LOB apps installed in on offline or online Windows image and ge
 
 1.  You can get a list of the Windows apps installed for a specific user account on the computer. You must open PowerShell with administrator privileges to list the packages for a user other than the current user. For example, at the PowerShell prompt, type:
 
-    ``` syntax
+    ```
     Get-AppxPackage -AllUsers
     ```
 
 2.  You can get a list of packages installed for a specific user. You must open PowerShell with administrator privileges to list the packages for a user other than the current user. For example, at the PowerShell prompt, type:
 
-    ``` syntax
+    ```
     Get-AppxPackage -Name Package1 -User domain\username
     ```
 
 3.  You can also get the manifest of an app package (.appx) which includes information such as the package ID. For example, at the PowerShell prompt, type:
 
-    ``` syntax
+    ```
     Get-AppxPackageManifest -Package Package1
     ```
 
 4.  You can use the pipeline to get the manifest for an app package (.appx) if you don’t know the full name of the package. For example, at the PowerShell prompt, type:
 
-    ``` syntax
+    ```
     (Get-AppxPackage -Name "*WinJS*" | Get-AppxPackageManifest).package.applications.application.id
     ```
 
@@ -421,13 +421,13 @@ You can list the LOB apps installed in on offline or online Windows image and ge
 
 -   You can get a list of the packages that are provisioned in a Windows image that will be installed for each new user by using Dism.exe or PowerShell. For example, at a PowerShell prompt, type:
 
-    ``` syntax
+    ```
     Get-AppxProvisionedPackage -Path c:\offline
     ```
 
     Or, at a command prompt, type:
 
-    ``` syntax
+    ```
     DISM.exe /Image:C:\test\offline /Get-ProvisionedAppxPackages
     ```
 
@@ -442,7 +442,7 @@ You can remove individual instances of an app, or remove the provisioning settin
 
 -   You can remove a single app for the current user only. For example, at a command prompt, type:
 
-    ``` syntax
+    ```
     Remove-AppxPackage Package1
     ```
 
@@ -452,13 +452,13 @@ You can remove individual instances of an app, or remove the provisioning settin
 
     For example, to remove a provisioned LOB app, MyAppxPkg, from a Windows image, at an elevated PowerShell prompt, type:
 
-    ``` syntax
+    ```
     Remove-AppxProvisionedPackage -Online -PackageName MyAppxPkg
     ```
 
     Or, at a command prompt, type:
 
-    ``` syntax
+    ```
     DISM.exe /Online /Remove-ProvisionedAppxPackage /PackageName:microsoft.app1_1.0.0.0_neutral_en-us_ac4zc6fex2zjp
     ```
 

@@ -290,7 +290,7 @@ Several updates of [command-line tools](iot/iot-core-adk-addons-command-line-opt
 
 *  Updated: CreatePkg now supports adding just the Component.Subcomponent names. Example:
 
-    ``` syntax
+    ```
     createpkg Registry.SystemSettings
     ```
 

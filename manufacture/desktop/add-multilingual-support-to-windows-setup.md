@@ -35,7 +35,7 @@ To get started, copy Windows installation files from media to a local directory.
 
 -   On your technician computer, create a new directory for your Windows distribution and copy the Windows media content to that directory. For example:
 
-    ``` syntax
+    ```
     md C:\my_distribution
     xcopy /E D: C:\my_distribution
     md C:\mount\boot 
@@ -55,7 +55,7 @@ In this step, you add language support and the Windows Setup optional components
 
 2.  Mount the second image (index 2) in Boot.wim to a local mount directory using **Dism /Mount-Image**. For example:
 
-    ``` syntax
+    ```
     Dism /mount-image /imagefile:C:\my_distribution\sources\boot.wim /index:2 /mountdir:C:\Mount\boot
     ```
 
@@ -65,7 +65,7 @@ In this step, you add language support and the Windows Setup optional components
 
     For example:
 
-    ``` syntax
+    ```
     Dism /image:C:\mount\boot /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\fr-fr\lp.cab"
 
     Dism /image:C:\mount\boot /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\fr-fr\WinPE-Setup_fr-fr.cab"
@@ -79,7 +79,7 @@ In this step, you add language support and the Windows Setup optional components
      
 4.  For Japanese (ja-JP), Korean (ko-KR), and Chinese (zh-HK, zh-CN, zh-TW), you have to add additional font support to your image. For example, to add Japanese font support:
 
-    ``` syntax
+    ```
     Dism /image:C:\mount\boot /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\WinPE-FontSupport-JA-JP.cab"
     ```
 
@@ -92,14 +92,14 @@ In this step, you add language support and the Windows Setup optional components
 
 1.   Mount the Windows image with DISM
 
-        ``` syntax
+        ```
         Dism /mount-image /imagefile:C:\my_distribution\sources\install.wim /index:1 /mountdir:C:\mount\windows    
         ```
         Where *1* is the index of the image that you want to mount.
 
 2.   Add one or more language packs to the Windows image.
 
-        ``` syntax
+        ```
         Dism /image:C:\mount\windows /add-package /packagepath:F:\x64\langpacks\Microsoft-Windows-Client-Language-Pack_x64_fr-fr.cab 
         ```
 
@@ -114,7 +114,7 @@ In this step you copy the language-specific Setup resources from each language s
 
 -   Copy the localized Windows setup files to your Windows distribution.
 
-    ``` syntax
+    ```
     xcopy E:\sources\fr-fr C:\my_distribution\sources\fr-fr /cherkyi 
     ```
 
@@ -126,13 +126,13 @@ In this step you recreate the Lang.ini file and specify the default language set
 
 1.  Recreate the Lang.ini file to reflect the additional languages using *Dism /Gen-LangINI*.
 
-    ``` syntax
+    ```
     Dism /image:C:\mount\windows /gen-langINI /distribution:C:\my_distribution
     ```
 
 2.  Change the Windows Setup default language with DISM. For example:
 
-    ``` syntax
+    ```
     Dism /image:C:\mount\windows /Set-SetupUILang:fr-FR /distribution:C:\my_distribution
     ```
 
@@ -140,7 +140,7 @@ In this step you recreate the Lang.ini file and specify the default language set
 
 3.  Copy the lang.ini file in the Windows distribution to the boot.wim file.
 
-    ``` syntax
+    ```
     Xcopy C:\my_distribution\sources\lang.ini C:\mount\boot\sources\lang.ini
     ```
 
@@ -151,7 +151,7 @@ In this step you commit the changes to all of the images you have updated
 
 -   Use DISM to unmount and commit the changes to the Windows and boot images.
 
-    ``` syntax
+    ```
     Dism /unmount-image /mountdir:C:\mount\boot /commit 
     Dism /unmount-image /mountdir:C:\mount\windows /commit
     ```
@@ -163,13 +163,13 @@ In this step, you create a boot order file. Due to the size of the image, you mu
 
 -   Create a boot order file (bootorder.txt). For example:
 
-    ``` syntax
+    ```
     Oscdimg -m -n -yo C:\temp\bootOrder.txt -bC:\winpe_amd64\Efisys.bin C:\winpe_amd64\winpeamd64.iso
     ```
 
     where Bootorder.txt contains the following list of files:
 
-    ``` syntax
+    ```
     boot\bcd
     boot\boot.sdi
     boot\bootfix.bin

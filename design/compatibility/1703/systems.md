@@ -4,7 +4,7 @@ Description: 'This section of the documentation provides specifications for hard
 ms.assetid: 
 MSHAttr: 
 author: beneluxboy
-ms.author: joshbax
+ms.author: sapaetsc
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

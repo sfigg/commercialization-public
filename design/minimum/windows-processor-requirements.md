@@ -1,7 +1,7 @@
 ---
 title: Windows Processor Requirements
 description: This specification details the processors that can be used with Customer Systems that include Windows Products (including Custom Images).
-ms.author: elkr
+ms.author: sapaetsc
 ms.date: 06/15/2017
 ms.topic: article
 ms.prod: windows-hardware

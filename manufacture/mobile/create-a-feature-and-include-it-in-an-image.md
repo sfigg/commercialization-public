@@ -47,7 +47,7 @@ This walkthrough assumes that you have already created a test app named *TestApp
 
 2.  Create a text file named *TestApplication.pkg.xml* that contains the following package definition XML.
 
-    ``` syntax
+    ```
     <?xml version="1.0" encoding="utf-8" ?> 
       <Package xmlns="urn:Microsoft.WindowsPhone/PackageSchema.v8.00" Owner="Contoso" 
     OwnerType="OEM" 
@@ -79,20 +79,20 @@ This walkthrough assumes that you have already created a test app named *TestApp
 
 4.  Display the environment variables by typing **SET** in the command prompt window. Look for *WPDKCONTENTROOT* to confirm that the build environment is properly configured.On a Windows 64-bit PC, the path should look similar to the following.
 
-    ``` syntax
+    ```
     ...
     WPDKCONTENTROOT=C:\Program Files (x86)\Windows Phone Kits\10
     ```
 
 5.  Generate the package using PkgGen. Provide the version number of 1.0.0.0. The /config parameter points to the location of the pkggen.cfg.xml file.
 
-    ``` syntax
+    ```
     C:\TestApplication>PkgGen TestApplication.pkg.xml /version:1.0.0.0 /config:" %WPDKCONTENTROOT% \Tools\bin\i386\pkggen.cfg.xml"
     ```
 
 6.  If PkgGen creates the package successfully, it should return output that is similar to the following.
 
-    ``` syntax
+    ```
     Microsoft (C) pkggen 8.0.12134.0
 
     info: Using external macro file: 'C:\Program Files (x86)\Windows Phone Kits\10\
@@ -113,13 +113,13 @@ Create a feature manifest file that will define a TEST\_APP OEM feature by compl
 
 1.  Create a feature manifest file named *OEMCustomAppFM.xml* in the following directory:
 
-    ``` syntax
+    ```
     %WPDKCONTENTROOT%\FMFiles
     ```
 
 2.  Define the TEST\_APP feature by adding the following XML to the *OEMCustomAppFM.xml* file.
 
-    ``` syntax
+    ```
     <?xml version="1.0" encoding="utf-8"?>  
     <FeatureManifest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate">  
     <!--  TEST_APP FM File 4/30/2015   -->
@@ -145,7 +145,7 @@ Add the TEST\_APP OEM feature to the OEMInput.xml file by completing the followi
 
 2.  Edit the OEMinput.xml file to include the *OEMCustomAppFM.xml* feature manifest file that you created in the previous step. The XML will be similar to the following.
 
-    ``` syntax
+    ```
     ...
     <AdditionalFMs>
         ...
@@ -155,7 +155,7 @@ Add the TEST\_APP OEM feature to the OEMInput.xml file by completing the followi
 
 3.  Later in the &lt;Features&gt; section of the OEMInput.xml file add the new TEST\_APP feature to the list of existing features.
 
-    ``` syntax
+    ```
     <Features>
       <Microsoft>
        ...
@@ -173,7 +173,7 @@ Complete the following steps to generate, sign, and flash the image.
 
 1.  Generate the image using ImgGen and the OEMInput.xml file that you customized in the previous step.
 
-    ``` syntax
+    ```
     C:\>ImgGen Flash.ffu OEMInput.xml "%WPDKCONTENTROOT%\10\MSPackages"
     ```
 
@@ -181,20 +181,20 @@ Complete the following steps to generate, sign, and flash the image.
 
 3.  Sign the generated catalog using the /pk option.
 
-    ``` syntax
+    ```
     C:\> Set SIGN_OEM=1
     C:\> Sign.cmd /pk TestSigned.cat
     ```
 
 4.  Sign the FFU with the signed catalog file using ImageSigner.
 
-    ``` syntax
+    ```
     C:\> ImageSigner Sign Flash.FFU Flash.Cat
     ```
 
 5.  Flash the image to the phone using FFUTool.
 
-    ``` syntax
+    ```
     C:\> FFUTool –Flash Flash.ffu
     ```
 
@@ -208,25 +208,25 @@ Verify that the TestApplication executes as expected by completing the following
 
 2.  Establish a connection to the device using the **Open-device** TShell command. Provide the MAC address of the device.
 
-    ``` syntax
+    ```
     PS C:\> Open-device 001122334455
     ```
 
 3.  Confirm that the TestApplication is on the device by using the TShell **Dir-Device** command. The short form of the command, DirD, is shown.
 
-    ``` syntax
+    ```
     PS C:\> DirD \TestApplication.exe /s
     ```
 
 4.  Execute the application by entering the **Exec-Device** cmdlet in the TShell window. The **Exec-Device** cmdlet starts a process on the connected device. By default, the **Exec-Device** cmdlet waits for the process to exit before returning. Use the -Async switch to return immediately. Use the –displayoutput parameter to echo the output.
 
-    ``` syntax
+    ```
     PS C:\> ExecD -displayoutput -filename \Data\Test\TestApplication.exe
     ```
 
 5.  Output similar to the following should be displayed.
 
-    ``` syntax
+    ```
     Output    : Testing console output
     Error     :
     Exit Code : 0
@@ -243,7 +243,7 @@ Verify that the TestApplication executes as expected by completing the following
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_phFlashing\p_phFlashing%5D:%20Create%20a%20feature%20and%20include%20it%20in%20an%20image%20%20RELEASE:%20%2810/4/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+
 
 
 

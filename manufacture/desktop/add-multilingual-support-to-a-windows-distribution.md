@@ -35,20 +35,20 @@ Adding language packs to the **\\Langpacks** directory can extend the Windows S
 
 3.  Create the **\\Langpacks** directory in the distribution share. For example:
 
-    ``` syntax
+    ```
     mkdir C:\my_distribution\langpacks 
     ```
 
 4.  Copy the language packs to the **\\Langpacks** directory of the distribution share. For example:
 
-    ``` syntax
+    ```
     mkdir C:\my_distribution\langpacks
     xcopy C:\LPs\Microsoft-Windows-Client-Language-Pack_x64_fr-fr.cab C:\my_distribution\langpacks\Microsoft-Windows-Client-Language-Pack_x64_fr-fr.cab
     ```
 
 5.  (Optional) To make additional languages available in Windows Setup, copy the localized Windows Setup sources to the distribution share. For example:
 
-    ``` syntax
+    ```
     xcopy E:\sources\fr-fr C:\my_distribution\sources\fr-fr /cherkyi 
     xcopy E:\sources\de-de C:\my_distribution\sources\de-de /cherkyi
     ```
@@ -59,19 +59,19 @@ Adding language packs to the **\\Langpacks** directory can extend the Windows S
 
 6.  Mount the Windows image that is in the distribution share. This step is required for the Deployment Image Servicing and Management tool (DISM.exe) to report the list of languages that are installed in the .wim file, and to recreate the Lang.ini file. Use DISM to mount the Windows image. For example:
 
-    ``` syntax
+    ```
     DISM.exe /Mount-Image /ImageFile:C:\my_distribution\sources\install.wim /index:1 /MountDir:C:\mount\windows
     ```
 
 7.  Report the languages that are available in the distribution share or installed to the Windows image by using the **/Get-Intl** option and specifying the distribution share. For example:
 
-    ``` syntax
+    ```
     DISM.exe /image:c:\mount\windows /distribution:c:\my_distribution /Get-Intl
     ```
 
     Verify that the correct languages are displayed as available languages and that **The other available languages in the distribution** display the correct languages. For example:
 
-    ``` syntax
+    ```
     Default system UI language : en-US
     System locale : en-US
     Default time zone : Pacific Standard Time
@@ -94,13 +94,13 @@ Adding language packs to the **\\Langpacks** directory can extend the Windows S
 
 8.  Recreate the Lang.ini file. For example:
 
-    ``` syntax
+    ```
     DISM.exe /image:c:\mount\windows /Gen-LangINI /distribution:c:\my_distribution
     ```
 
     When you add or remove language packs from a Windows distribution, you must recreate the Lang.ini file. The Lang.ini file is located in the sources directory of the Windows distribution and is used during Windows Setup. The lang.ini file in the sources directory should look similar to the following:
 
-    ``` syntax
+    ```
     [Available UI Languages]
     en-US = 3
     de-de = 0
@@ -117,7 +117,7 @@ Adding language packs to the **\\Langpacks** directory can extend the Windows S
 
 9.  Unmount the .wim file and commit the changes. For example:
 
-    ``` syntax
+    ```
     DISM.exe /Unmount-Image /MountDir:C:\mount\windows /commit 
     ```
 

@@ -24,7 +24,7 @@ The following sample script creates a version of Windows PE with Windows PowerSh
 
 3.  Create a working copy of the Windows PE files. Specify either x86, amd64, or arm:
 
-    ``` syntax
+    ```
     copype amd64 C:\WinPE_amd64_PS
     ```
 
@@ -33,7 +33,7 @@ The following sample script creates a version of Windows PE with Windows PowerSh
 
 Use the following script to mount the Windows image, add the Windows PE optional components for Windows PowerShell, and to unmount the image.
 
-``` syntax
+```
 Dism /Mount-Image /ImageFile:"C:\WinPE_amd64_PS\media\sources\boot.wim" /Index:1 /MountDir:"C:\WinPE_amd64_PS\mount"
 
 Dism /Add-Package /Image:"C:\WinPE_amd64_PS\mount" /PackagePath:"C:\Program Files\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\WinPE-WMI.cab"
@@ -66,7 +66,7 @@ Dism /Unmount-Image /MountDir:C:\WinPE_amd64_PS\mount /Commit
 ## <span id="Install_this_version_of_Windows_PE_to_a_USB_key"></span><span id="install_this_version_of_windows_pe_to_a_usb_key"></span><span id="INSTALL_THIS_VERSION_OF_WINDOWS_PE_TO_A_USB_KEY"></span>Install this version of Windows PE to a USB key
 
 
-``` syntax
+```
 MakeWinPEMedia /UFD C:\WinPE_amd64_PS F:
 ```
 
@@ -75,7 +75,7 @@ MakeWinPEMedia /UFD C:\WinPE_amd64_PS F:
 
 After you boot a PC to Windows PE using this USB key, start Windows PowerShell:
 
-``` syntax
+```
 X:\Windows\system32\WindowsPowerShell\v1.0\powershell
 ```
 

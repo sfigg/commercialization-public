@@ -50,7 +50,7 @@ You can skip these steps if you've already created and tested your app.
 
 2.  Create a new package for the app, for example:
 
-    ``` syntax
+    ```
     newAppxPkg "C:\DefaultApp\IoTCoreDefaultApp_1.2.0.0_ARM_Debug_Test\IoTCoreDefaultApp_1.2.0.0_ARM_Debug_Test.appx" fga Appx.MyUWPApp
     ```
 
@@ -58,7 +58,7 @@ You can skip these steps if you've already created and tested your app.
 
 3.  From the IoT Core Shell, build the package.
 
-    ``` syntax
+    ```
     buildpkg Appx.MyUWPApp
     ```
 
@@ -73,7 +73,7 @@ You can skip these steps if you've already created and tested your app.
 
 2.  Create a new PackageFile section in the XML, with your package file listed, and give it a new FeatureID, such as "OEM\_MyUWPApp".
 
-    ``` syntax
+    ```
 <?xml version="1.0" encoding="utf-8"?>
 <FeatureManifest 
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
@@ -115,7 +115,7 @@ You can skip these steps if you've already created and tested your app.
 
 2.  Make sure both your feature manifest, OEMFM.xml, and the feature manifest: OEMCommonFM.xml, are both listed in the AdditionalFMs section.
 
-    ``` syntax
+    ```
     <AdditionalFMs>
       <!-- Including BSP feature manifest -->
       <AdditionalFM>%BLD_DIR%\MergedFMs\RPi2FM.xml</AdditionalFM>
@@ -135,7 +135,7 @@ You can skip these steps if you've already created and tested your app.
 
     c. Add the FeatureID for your app package, example: OEM_MyUWPApp.
     
-    ``` syntax
+    ```
     <Features>
       <Microsoft>
     

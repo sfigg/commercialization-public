@@ -5,10 +5,9 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 7df30160-5a77-40f9-a03f-f21fec9cbafb
-ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
-ms.author: joshbax
+ms.author: sapaetsc
 ms.date: 05/05/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -20,7 +19,7 @@ ms.technology: windows-oem
 
 This action produces a text report that summarizes the metrics for disk I/O.
 
-``` syntax
+```
 -a diskio [-util <n>] [-summary] [-counts] [-detail] [-overlap] [-range T1 T2]
 ```
 

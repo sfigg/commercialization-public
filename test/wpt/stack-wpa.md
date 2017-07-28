@@ -5,10 +5,9 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 21653c0c-ed2b-45d2-aecb-872eac23d3dd
-ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
-ms.author: joshbax
+ms.author: sapaetsc
 ms.date: 05/05/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -54,7 +53,7 @@ Describes the kernel events on which stacks are to be enabled.
 ## Syntax
 
 
-``` syntax
+```
 <Stack Value = "AlpcClosePort" | "AlpcConnectFail" | "AlpcConnectRequest" ...>
 </Stack>
 ```

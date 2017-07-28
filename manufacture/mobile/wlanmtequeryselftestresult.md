@@ -19,7 +19,7 @@ Queries the driver for the results of a previously requested self-test.
 ## <span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>Syntax
 
 
-``` syntax
+```
 DWORD WlanMTEQuerySelfTestResult(
     __in                            HANDLE                              hAdapter,
     __in                            DOT11_MANUFACTURING_SELF_TEST_TYPE  eTestType,
@@ -42,7 +42,7 @@ DWORD WlanMTEQuerySelfTestResult(
 <span id="eTestType"></span><span id="etesttype"></span><span id="ETESTTYPE"></span>*eTestType*  
 \[in\] The type of self-test requested. The values of *eTestType* are defined by the DOT11\_MANUFACTURING\_SELF\_TEST\_TYPE enumeration, shown below:
 
-``` syntax
+```
 typedef enum DOT11_MANUFACTURING_SELF_TEST_TYPE {
         DOT11_MANUFACTURING_SELF_TEST_TYPE_INTERFACE = 1,
         DOT11_MANUFACTURING_SELF_TEST_TYPE_RF_INTERFACE,

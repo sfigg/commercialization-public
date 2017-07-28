@@ -5,10 +5,9 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 5c7606d5-3a6d-4dc5-b232-ed24974d662c
-ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
-ms.author: joshbax
+ms.author: sapaetsc
 ms.date: 05/05/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -23,7 +22,7 @@ Returns an HRESULT value that indicates the error code.
 ## Syntax
 
 
-``` syntax
+```
 HRESULT GetHResult
   ([out, retval] HRESULT* pHResult)
 ;

@@ -5,10 +5,9 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 5ca2ee5f-ad3f-42ec-91e4-a044ce982650
-ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
-ms.author: joshbax
+ms.author: sapaetsc
 ms.date: 05/05/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -20,7 +19,7 @@ ms.technology: windows-oem
 
 This action produces a text file listing information related to spinlock activity.
 
-``` syntax
+```
 -a spinlock [-summary] [-counts [n]]
 ```
 
@@ -54,13 +53,13 @@ For more information about the **spinlock** action, see [Customizing Spinlock Pa
 
 The following command example shows how to start a trace with spinlock data.
 
-``` syntax
+```
 xperf -on PROC_THREAD+LOADER+SPINLOCK
 ```
 
 Spinlock event data can also be collected using only the "SPINLOCK" option, as shown in the following command example.
 
-``` syntax
+```
 xperf -on SPINLOCK
 ```
 
@@ -68,7 +67,7 @@ However, if the "PROC\_THREAD+LOADER" options are omitted, symbol information is
 
 After event data has been collected into an ETL file, process the ETL file as shown in the following command example.
 
-``` syntax
+```
 xperf -i example.etl -symbols -o example.txt -a spinlock
 ```
 

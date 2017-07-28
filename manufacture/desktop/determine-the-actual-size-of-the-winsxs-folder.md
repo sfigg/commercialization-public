@@ -29,7 +29,7 @@ A new option has been added to the DISM tool for Windows 8.1 to help determine h
 
 -   Open an elevated command window and type:
 
-    ``` syntax
+    ```
     Dism.exe /Online /Cleanup-Image /AnalyzeComponentStore
     ```
 
@@ -127,7 +127,7 @@ In this example, the WinSxS folder appears to be 4.98 GB, but the actual overhea
 
 1.  Open an elevated command window and type:
 
-    ``` syntax
+    ```
     Dism.exe /Online /Cleanup-Image /AnalyzeComponentStore
     ```
 

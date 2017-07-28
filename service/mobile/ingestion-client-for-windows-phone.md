@@ -143,7 +143,7 @@ The command to install the client requires the following parameters:
 
 The parameters are specified in the following format:
 
-``` syntax
+```
 msiexec /I WPIngestionClient.msi 
     BASEURI="[Microsoft service environment URL]"
     NAMESPACE="[Microsoft access control identifier]" 
@@ -156,7 +156,7 @@ After obtaining a valid X.509 certificate run the following install:
 
 -   Production (retail image signing): Install the client to submit or retrieve requests to the Microsoft production environment:
 
-    ``` syntax
+    ```
     msiexec /I WPIngestionClient.msi 
         BASEURI="http://wp8partnerservicesv1.cloudapp.net:7159"
         NAMESPACE="wp8partnerservicesv1" 
@@ -191,7 +191,7 @@ By default, the verbose messages are not displayed, but this can be changed by s
 
 Consider a typical example where an existing signed firmware submission is retrieved. This is the terse output of such a cmdlet:
 
-``` syntax
+```
 PS> Get-SignedFirmwareSubmission –TicketId TKT-SIGN-TEST-BTUADL -DownloadDirectory C:\temp | Format-List
 
 TicketId : TKT-SIGN-TEST-BTUADL
@@ -200,7 +200,7 @@ File     : c:\temp\OemTest.TKT-SIGN-TEST-BTUADL.zip
 
 When the **Verbose** parameter is specified, additional information about the interaction with the service is displayed:
 
-``` syntax
+```
 PS> Get-SignedFirmwareSubmission –Verbose –TicketId TKT-SIGN-TEST-BTUADL -DownloadDirectory C:\temp | Format-List
 
 VERBOSE: Parameter assignment: 'TicketId' = TKT-SIGN-TEST-BTUADL.

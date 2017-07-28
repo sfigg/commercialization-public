@@ -489,7 +489,7 @@ The following metrics can help you select a HSM PC based on the requirements of 
 
     Makecert is a Microsoft tool and can be used as follows for key generation. To make sure that the attack surface is minimized you may need to “air gap” the PC. The PC that has the PKpriv on should not be connected to the network. It should be in a secure location and ideally should at least use a smart card reader if not a real HSM.
 
-    ``` syntax
+    ```
     makecert -pe -ss MY -$ individual -n "CN=your name here" -len 2048 -r
     ```
 

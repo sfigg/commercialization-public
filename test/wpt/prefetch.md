@@ -5,10 +5,9 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8769558a-7749-4696-82b3-50e237d846d7
-ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
-ms.author: joshbax
+ms.author: sapaetsc
 ms.date: 05/05/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -20,7 +19,7 @@ ms.technology: windows-oem
 
 This action produces a text file that summarizes the metrics regarding prefetches.
 
-``` syntax
+```
 -a prefetch [-summary] [-timeunit <unit> [<precision>]] [-min <duration>]
 ```
 

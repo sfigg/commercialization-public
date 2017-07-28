@@ -5,10 +5,9 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 5a8b4c32-9a36-4668-831a-8dc6fa9e2c5d
-ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
-ms.author: joshbax
+ms.author: sapaetsc
 ms.date: 05/05/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -36,7 +35,7 @@ Writes a text file containing the following information in tabular form based on
 
 -   Heap handle
 
-``` syntax
+```
 -a heap [-pid <processId>] [-stacks] [-frames] [-images] [-range T1 T2] [-lifetime T1 T2] [-size S1 S2] [-cullframes Frame1 Frame2 ... FrameN] [-requireframes Frame1 Frame2 ... FrameN] [-cullLists cullfuncs.txt] [-top <n>] [-totals]
 ```
 

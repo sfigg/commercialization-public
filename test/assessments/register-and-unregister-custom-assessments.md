@@ -5,10 +5,9 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: b86c6b47-08d0-441a-ba92-3a7be65ebe16
-ms.prod: W10
 ms.mktglfcycl: plan
 ms.sitesec: msdn
-ms.author: joshbax
+ms.author: sapaetsc
 ms.date: 05/05/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -46,7 +45,7 @@ You must have administrative rights to run these commands.
 
 1.  At an elevated command prompt, type this:
 
-    ``` syntax
+    ```
     regasmt C:\MyAssessments\example.asmtmanifest.asmtx
     ```
 
@@ -54,7 +53,7 @@ You must have administrative rights to run these commands.
 
 2.  To register more than one assessment, list the assessments. For example:
 
-    ``` syntax
+    ```
     regasmt C:\MyAssessments\example.asmtmanifest.asmtx example2.asmtmanifest.asmtx
     ```
 
@@ -62,7 +61,7 @@ You must have administrative rights to run these commands.
 
 -   At an elevated command prompt, type this:
 
-    ``` syntax
+    ```
     regasmt /u C:\MyAssessments\example.asmtmanifest.asmtx
     ```
 

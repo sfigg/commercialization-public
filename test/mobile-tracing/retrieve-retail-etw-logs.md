@@ -5,7 +5,7 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: a32d9f2b-1a4a-4d69-aae0-c5e80472a708
-ms.author: joshbax
+ms.author: sapaetsc
 ms.date: 05/05/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -32,7 +32,7 @@ This is how to retrieve existing ETW logs from a retail device:
 
 4.  In Windows Explorer, copy the files from these two directories.
 
-    ``` syntax
+    ```
     <mass storage drive letter>:\Data\SystemData\Telemetry
     <mass storage drive letter>:\Data\SystemData\ETW
     ```

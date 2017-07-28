@@ -34,7 +34,7 @@ Unlike WIMBoot, because the files are no longer combined into a single WIM file,
 
 2.  Create a pagefile equal to 256 MB.
 
-    ``` syntax
+    ```
     Wpeutil createpagefile C:\pagefile /size=256
     ```
 
@@ -42,7 +42,7 @@ Unlike WIMBoot, because the files are no longer combined into a single WIM file,
 
 3.  Format and prepare the partitions, and then apply the image to a partition using the DISM /Apply-Image /Compact option:
 
-    ``` syntax
+    ```
     DISM /Apply-Image /ImageFile:install.wim /Index:1 /ApplyDir:D:\ /compact
     ```
 
@@ -85,7 +85,7 @@ You can query whether the operating system is running Compact OS, and change it 
 **From Windows PE, determine if the OS is compacted:**
 
 
-``` syntax
+```
 Compact.exe /CompactOS:Query /WinDir:E:\Windows
 ```
 
@@ -94,7 +94,7 @@ Where E:\\Windows is the folder where Windows has been installed.
 **From an online installation, change from non-compacted to compacted OS:**
 
 
-``` syntax
+```
 Compact.exe /CompactOS:always
 ```
 
@@ -106,7 +106,7 @@ While single-instancing is supported on both solid-state drives and rotational d
 
 Example:
 
-``` syntax
+```
 DISM /Apply-CustomDataImage /CustomDataImage:C:\Recovery\Customizations\USMT.ppkg /ImagePath:C:\ /SingleInstance
 ```
 
@@ -116,7 +116,7 @@ where *C* is the drive letter of the Windows partition.
 
 You can determine whether a provisioning package (.ppkg) is single-instanced by using fsutil.exe:
 
-``` syntax
+```
 fsutil.exe wim enumwims C:
 ```
 
@@ -126,7 +126,7 @@ where *C* is the drive that contains the provisioning package. Any single-instan
 
 After applying updates to a Windows image, cleanup the image and then export it to a new file:
 
-``` syntax
+```
 md c:\mount\Windows
 md C:\mount\temp
 

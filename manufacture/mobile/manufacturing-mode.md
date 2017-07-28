@@ -36,7 +36,7 @@ You must create a subkey for each manufacturing profile. Under the profile key, 
 
 The following example creates a manufacturing profile named CustomProfile, causes the service named OEMFactoryTestService to automatically start, and all other Win32 services to demand start:
 
-``` syntax
+```
 [HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\ManufacturingMode\CustomProfile]
 
 [HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\ManufacturingMode\CustomProfile\Services]

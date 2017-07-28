@@ -132,7 +132,7 @@ The following table provides a description of how each driver servicing option c
 -   The driver servicing command supports only .inf files. Windows Installer or other driver package types (such as .exe files) are not supported.
 -   Drivers are installed in the order that they are listed in the command line. In the following example, 1.inf, 2.inf, and 3.inf will be installed in the order that they are listed in the command line.
 
-    ``` syntax
+    ```
     Dism /Image:C:\test\offline /Add-Driver /Driver:C:\test\drivers\1.inf /Driver:C:\test\drivers\2.inf /Driver:C:\test\drivers\3.inf
     ```
 

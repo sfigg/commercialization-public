@@ -21,7 +21,7 @@ You can cancel either OEM/mixed updates sent through the [New-RequestForUpdate c
 ## <span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>Syntax
 
 
-``` syntax
+```
     Request-UpdateCancellation [-RequestForUpdateTicketId] <String> 
     [-ServiceUri <Uri>] [-ServiceAccessControlNamespace <String>] 
     [-CertificateStoreLocation <StoreLocation>] [-CertificateStoreName 
@@ -34,7 +34,7 @@ You can cancel either OEM/mixed updates sent through the [New-RequestForUpdate c
 
 Typically, the only parameter that is specified in this cmdlet is the firmware submission Ticket ID.
 
-``` syntax
+```
 Request-UpdateCancellation -RequestForUpdateTicketId 
     TKT-RFU-PROD-ABCD56-1
 ```
@@ -44,7 +44,7 @@ Request-UpdateCancellation -RequestForUpdateTicketId
 
 The following is the help documentation for the **New-FirmwareSubmission** cmdlet from Windows PowerShell.
 
-``` syntax
+```
 NAME
     Request-UpdateCancellation
     

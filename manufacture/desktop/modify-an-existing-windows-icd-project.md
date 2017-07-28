@@ -30,7 +30,7 @@ Export your Windows ICD project into a provisioning package. You can then create
 
 Use the ICD.exe command to combine the provisioning packages.
 
-``` syntax
+```
 "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Imaging and Configuration Designer\x86\icd.exe" /Build-ImageFromWIM /MediaPath:"c:\WICDOutput" /SourceImage:"C:\Images\install.wim" /ImageIndex:1 /ProvisioningPackage:"c:\users\terry\Documents\Windows Imaging and Configuration Designer (WICD)\Fabrikam_Notebook_1\Fabrikam_Notebook_1.ppkg" /DeploymentConfigXml:"C:\Samples\DeploymentConfig.xml" /CustomizationXML:"C:\Samples\Customizations.xml" 
 ```
 
@@ -44,7 +44,7 @@ Where /ImageIndex is the index of the Windows image you want to use. Note which 
 
 The ICD.exe command requires a deployment configuration XML file. When you use the WICD UI, this file is created for you. When using the ICD command-line, you must create it and specify it as the DeploymentConfigXml parameter in the command. Here’s a sample that you can use for this lab:
 
-``` syntax
+```
 <?xml version="1.0" encoding="UTF-8"?>
 <DeploymentConfig xmlns="urn:schemas-Microsoft-com:Windows-ICD-Deployment-Config.v1.0">
     <EnableCompactOS>false</EnableCompactOS>
@@ -60,7 +60,7 @@ Windows ICD will create the project in the path you select. You can then copy th
 
 For this build of Windows 10, you must specify a customizations file by using the CustomizationXML parameter. The provisioning package should contain all of your customizations so we’ll create a blank customizations XML file for this lab:
 
-``` syntax
+```
 <?xml version="1.0" encoding="utf-8"?>
 <WindowsCustomizations>
   <PackageConfig xmlns="urn:schemas-Microsoft-com:Windows-ICD-Package-Config.v1.0">

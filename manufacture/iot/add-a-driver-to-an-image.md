@@ -41,7 +41,7 @@ For example, review the list of drivers in the file: \\IoT-ADK-AddonKit\\Source-
 
 2.  Create the driver package using the .inf file as the base:
 
-    ``` syntax
+    ```
     newdrvpkg C:\gpiokmdfdemo\gpiokmdfdemo.inf Drivers.HelloBlinky
     ```
 
@@ -57,7 +57,7 @@ For example, review the list of drivers in the file: \\IoT-ADK-AddonKit\\Source-
 
     If necessary, update the value of File Source to point to your .SYS file, and the ACPITABL.dat file. (You don't need to add the .INF file.)  Add the DestinationDir of "$(runtime.drivers)".
     
-    ``` syntax
+    ```
     <Package xmlns="urn:Microsoft.WindowsPhone/PackageSchema.v8.00" 
          Owner="$(OEMNAME)" OwnerType="OEM" ReleaseType="Production" 
          Platform="arm" Component="Drivers" SubComponent="HelloBlinky"> 
@@ -79,7 +79,7 @@ For example, review the list of drivers in the file: \\IoT-ADK-AddonKit\\Source-
 
 2.  From the IoT Core Shell, build the package.
 
-    ``` syntax
+    ```
     createpkg Drivers.HelloBlinky
     ```
 
@@ -95,7 +95,7 @@ For example, review the list of drivers in the file: \\IoT-ADK-AddonKit\\Source-
 
 2.  Create a new PackageFile section in the XML, with your package file listed, and give it a new FeatureID, such as "OEM\_DriverHelloBlinky".
 
-    ``` syntax      
+    ```      
           <PackageFile Path="%PKGBLD_DIR%" Name="%OEM_NAME%.Drivers.HelloBlinky.cab">
             <FeatureIDs>
               <FeatureID>OEM_DriverHelloBlinky</FeatureID>
@@ -113,7 +113,7 @@ For example, review the list of drivers in the file: \\IoT-ADK-AddonKit\\Source-
 
 2.  Make sure your feature manifest, Rpi2FM.xml, is in the list of AdditionalFMs. Add it if it isn't there already there:
 
-``` syntax
+```
     <AdditionalFMs>
       <!-- Including BSP feature manifest -->
       <AdditionalFM>%BLD_DIR%\MergedFMs\RPi2FM.xml</AdditionalFM>
@@ -128,7 +128,7 @@ For example, review the list of drivers in the file: \\IoT-ADK-AddonKit\\Source-
 
 3.  Add the FeatureID for your driver:
 
-    ``` syntax
+    ```
     <OEM>
       <!-- Include BSP Features -->
       <Feature>RPI2_DRIVERS</Feature>

@@ -19,7 +19,7 @@ Returns the list of adapters that are recognized by the Wi-Fi stack.
 ## <span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>Syntax
 
 
-``` syntax
+```
 DWORD WlanMTEEnumAdapters(
     __out_opt   WLAN_MTE_ADAPTER_LIST  **ppWlanAdapterList
 );

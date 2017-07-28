@@ -5,10 +5,9 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 2926f382-2191-4bdd-8cd1-e01493e6daa1
-ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
-ms.author: joshbax
+ms.author: sapaetsc
 ms.date: 05/05/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -161,7 +160,7 @@ Detailed CPU hardware information is available in the `EcoSysInfo` section of an
 
 For example:
 
-``` syntax
+```
 <Processor>
   <Instance id="0">
     <ProcessorName>The name of the first CPU</ProcessorName>
@@ -970,7 +969,7 @@ Figure 22 Tree Built from Stacks shows how the common segments are combined to f
 
 The **Stacks** column in the WPA UI contains an expander for each non-leaf node. In assessment-reported issues, the tree is displayed together with the aggregate weights. Some branches can be removed from the graph if their weights do not meet a specified threshold. The sample stack below shows how the events represented above are displayed as part of an assessment-reported issue.
 
-``` syntax
+```
 5ms   ModuleA!Function1
 5ms   ModuleA!Function2
 5ms   ModuleA!Function3
@@ -993,7 +992,7 @@ The `<itself>` node in a stack represents the time that a function itself is at 
 
 For example, **Function1** calls **Function2**. **Function2** spent 2ms in a CPU-intensive loop and called another function that ran for 4ms. This can be represented by the following stack:
 
-``` syntax
+```
 6ms   ModuleA!Function1
       |
 2ms   |-<itself>

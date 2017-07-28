@@ -22,13 +22,13 @@ Adds applicable payload of provisioning package to the specified image.
 
 Syntax:
 
-``` syntax
+```
 DISM.exe /Add-ProvisioningPackage /PackagePath:<package_path> [/CatalogPath:<path>]
 ```
 
 Example:
 
-``` syntax
+```
 DISM.exe /Image=C:\ /Add-ProvisioningPackage /PackagePath:C:\oem.ppkg
 ```
 
@@ -38,13 +38,13 @@ Get the information of provisioning package.
 
 Syntax:
 
-``` syntax
+```
 DISM.exe /Get-ProvisioningPackageInfo /PackagePath:<package_path>
 ```
 
 Example:
 
-``` syntax
+```
 DISM.exe /Image=C:\ /Get-ProvisioningPackageInfo /PackagePath:C:\oem.ppkg
 ```
 
@@ -54,7 +54,7 @@ Dehydrates files contained in the custom data image to save space. For client ed
 
 Syntax:
 
-``` syntax
+```
 /Apply-CustomDataImage /CustomDataImage:<path_to_image_file> /ImagePath:<target_drive> /SingleInstance
 ```
 
@@ -68,7 +68,7 @@ Syntax:
 
 Example:
 
-``` syntax
+```
 DISM.exe /Apply-CustomDataImage /CustomDataImage:C:\oem.ppkg /ImagePath:C:\ /SingleInstance
 ```
 

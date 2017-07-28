@@ -5,10 +5,9 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: a64ede15-c0d0-4070-b51f-e5dce0964aa6
-ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
-ms.author: joshbax
+ms.author: sapaetsc
 ms.date: 05/05/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -20,7 +19,7 @@ ms.technology: windows-oem
 
 The complete schema for Windows Performance Recorder (WPR) recording profiles, **WPRControlProfiles.xsd**, is as follows:
 
-``` syntax
+```
 <?xml version='1.0' encoding='utf-8' standalone='yes'?>
 <xs:schema
     xmlns:xs="http://www.w3.org/2001/XMLSchema"

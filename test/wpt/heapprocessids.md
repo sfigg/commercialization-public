@@ -5,10 +5,9 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: bc7619b5-11f7-48d1-93f3-5103fbfc52ce
-ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
-ms.author: joshbax
+ms.author: sapaetsc
 ms.date: 05/05/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -50,7 +49,7 @@ Represents a collection of heap process identifiers.
 ## Syntax
 
 
-``` syntax
+```
 <HeapProcessIds Operation = "Set" | "Add" | “Remove” >
 
   <!-- Child elements -->

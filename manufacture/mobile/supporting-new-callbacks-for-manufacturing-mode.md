@@ -21,7 +21,7 @@ When running in manufacturing mode, Wi-Fi miniport drivers must add support for 
 
 The **NDIS\_STATUS\_DOT11\_MANUFACTURING\_CALLBACK** callback is used to indicate completion status for certain requests. The data structure used for this callback is defined here.
 
-``` syntax
+```
 typedef enum _DOT11_MANUFACTURING_CALLBACK_TYPE {
     dot11_manufacturing_callback_unknown = 0,
     dot11_manufacturing_callback_self_test_complete = 1,

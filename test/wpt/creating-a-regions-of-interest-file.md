@@ -5,10 +5,9 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: e8818fd2-3536-4b02-840d-f7d2eb4fbd91
-ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
-ms.author: joshbax
+ms.author: sapaetsc
 ms.date: 05/05/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -30,14 +29,14 @@ A Regions of Interest file is a valid XML file that contains the following nodes
 
 -   One or more **Region** nodes
 
-**Note**  
-In a region's definition, the *version* attribute in the XML declaration, such as `version='1.0'`, is optional.
+> [!NOTE]
+> In a region's definition, the *version* attribute in the XML declaration, such as `version='1.0'`, is optional.
 
  
 
 The following example is a complete Regions of Interest file that defines a simple region. Explanations for the attributes and nodes within **Region** are described after the example.
 
-``` syntax
+```
 <?xml version='1.0' encoding='utf-8' standalone='yes'?>
 <?Copyright (c) Microsoft Corporation. All rights reserved.?>
 <InstrumentationManifest>
@@ -62,19 +61,7 @@ The following example is a complete Regions of Interest file that defines a simp
 </InstrumentationManifest>
 ```
 
-This topic has the following contents:
-
--   [Defining a region](#defining-a-region)
--   [Region types](#region-types)
--   [Using payload fields to identify events](#using-payload-fields-to-identify-events)
--   [Matching events for regions](#matching-events-for-regions)
--   [Filtering a region based on a condition](#filtering-a-region-based-on-a-condition)
--   [Parent-child relationships](#parent-child-relationships)
--   [Self-nesting regions](#self-nesting-regions)
--   [Instance names](#instance-names)
--   [Metadata](#metadata)
-
-### Defining a region
+## Defining a region
 
 A region definition contains the following attributes in the **Region** node:
 
@@ -84,7 +71,7 @@ A region definition contains the following attributes in the **Region** node:
 
 -   *FriendlyName* (optional), an alternate name for the region.
 
-### Region types
+## Region types
 
 You can create the following types of regions based on how they start and stop:
 
@@ -107,11 +94,11 @@ To specify an event as the starting or stopping point, you need to provide the f
 
 Additionally, you can further refine your definition by adding one or more **PayloadIdentifier** nodes. These tags contain two string attributes, *FieldName* and *FieldValue*, that specify a field that the event must contain. **PayloadIdentifier** tags are further described below in **Using payload fields to identify events**.
 
-### Examples
+#### Examples
 
 Following is a basic example for this type of region:
 
-``` syntax
+```
 <Region Guid="{d8d639a0-cf4c-45fb-976a-000111000100}"
         Name="FastStartup-Suspend-UserSession-Shutdown"
         FriendlyName="User Session Shutdown">
@@ -126,7 +113,7 @@ Following is a basic example for this type of region:
 
 In the following example, the region ends only when the specified event contains a field named `StartOrStop` with a value of `Stop`:
 
-``` syntax
+```
 <Region Guid="{d8d639a0-cf4c-45fb-976a-000111000100}"
         Name="FastStartup-Suspend-UserSession-Shutdown"
         FriendlyName="User Session Shutdown">
@@ -160,11 +147,11 @@ The **Duration** node can have the following attributes:
 
 If you define a duration for the starting point, the duration is subtracted from the stopping point. Similarly, if you define a duration for the stopping point, the duration is added to the starting point.
 
-### Example
+#### Example
 
 The following example defines a region that stops when another region starts. To calculate the starting point, we subtract a duration from our stopping point. The duration is found in the HiberHiberFileTime payload field. We then multiply the duration by 1,000,000 to convert it to nanoseconds and subtract it from the stopping point.
 
-``` syntax
+```
 <Region Guid="{7D6BA3F6-BC04-4776-8A7F-93CF7F4E2B6D}"
    Name="FastStartup-Suspend-WriteHiberFile"
    FriendlyName="Subscribers for Create Session">
@@ -191,11 +178,11 @@ You can define a region whose starting and stopping points are defined by other 
 
 By default, a region whose starting point is based on another region will start when the starting point region stops. Similarly, a region whose stopping point is based on another region will stop when the stopping point region starts. You can override this default behavior by adding an optional attribute, *Endpoint*, to the Region node. *Endpoint* can have a value of `Start` or `Stop` and specifies which endpoint of the region to use for the starting or stopping event.
 
-### Example
+#### Example
 
 The following region definition contains starting and stopping points that are defined by other regions:
 
-``` syntax
+```
 <Region Guid="{93783B2C-A67F-49cb-89BC-BF305D7E2CEA}"
         Name="FastStartup-Suspend-HiberInitTime"
         FriendlyName="Hiberfile Initialization">
@@ -216,11 +203,11 @@ Regions that contain other regions are called *containers*. Containers start whe
 
 To define a container region, simply define a region without a starting point or a stopping point.
 
-### Example
+#### Example
 
 In the example below, *Subscribers for Create Session* is a container for *Child of Subscribers of Create Session*. Notice that *Subscribers for Create Session* does not have a starting point or a stopping point. It will start when the first instance of a child region starts and stop when the last instance of a child region stops.
 
-``` syntax
+```
 <Region Guid="{A75D8F5D-E8F8-40b8-B453-5CC70DEAC06F}"
    Name="FastStartup-Suspend-Winlogon-CreateSession-Subscribers"
    FriendlyName="Subscribers for Create Session">
@@ -238,7 +225,7 @@ In the example below, *Subscribers for Create Session* is a container for *Child
 </Region>
 ```
 
-### Using payload fields to identify events
+## Using payload fields to identify events
 
 Often the event ID properties (process ID, thread ID, and activity ID) are not enough to identify specific scenarios. For example, when a service starts, a generic event is fired that might not identify which service started. When this occurs, you must rely on *payload fields* for additional information. In this case, one of the additional fields should include the service name. You can use this information to further specify region starting and stopping points.
 
@@ -252,8 +239,8 @@ The **PayloadIdentifier** node has the following attributes:
 
 -   *FieldValueRelationship* (optional). Use **IsEqual** to specify that the event must contain the payload value. Use **DoesNotContain** to specify that the event must not contain the payload value. If this attribute is not specified, the default value is **IsEqual**.
 
-**Note**  
-Payload fields are case-sensitive, and the XML definition must fully match the payload value. For example, if a payload field has a value of `00000`, the region definition must also specify `00000` as the payload value.
+> [!NOTE]
+> Payload fields are case-sensitive, and the XML definition must fully match the payload value. For example, if a payload field has a value of `00000`, the region definition must also specify `00000` as the payload value.
 
  
 
@@ -261,7 +248,7 @@ Payload fields are case-sensitive, and the XML definition must fully match the p
 
 The following example contains **PayloadIdentifier** nodes for both the starting point and the stopping point:
 
-``` syntax
+```
 <Region Guid="{AB719FB1-D863-4305-AE8E-F21281899A85}"
         Name="FastStartup-ConsoleSessionDisconnect"
         FriendlyName="Console Session Disconnect">
@@ -279,7 +266,7 @@ The following example contains **PayloadIdentifier** nodes for both the starting
 </Region>
 ```
 
-### Matching events for regions
+## Matching events for regions
 
 WPA matches starting events with stopping events to form regions in a process called *event matching*. At the event level, WPA attempts to match a single starting or stopping event based on its provider ID, event ID, event version, and any additional specified payload fields.
 
@@ -301,7 +288,7 @@ Alternatively, the **Payload** node can also contain an optional attribute, *Tar
 
 The following example forms a region when the starting event contains a payload field, *SubscriberName*, whose value matches that of a payload field, *Client*, in the stopping node. The starting and stopping events must also have matching thread IDs.
 
-``` syntax
+```
 <Region Guid="{A75D8F5D-E8F8-40b8-B453-5CCC70DEAC06F}"
         Name="FastStartup-Suspend-Winlogon-CreateSession-Subscribers"
         FriendlyName="Subscribers for Create Session">
@@ -321,7 +308,7 @@ The following example forms a region when the starting event contains a payload 
 </Region>
 ```
 
-### Filtering a region based on a condition
+## Filtering a region based on a condition
 
 WPA can include or exclude a region based on a condition, or *trigger*, which can be an event or another region. The trigger is specified in a **Filter** element, and the region that contains **Filter** is the *target*.
 
@@ -341,7 +328,7 @@ If the trigger is an *event*, then **Filter** must contain an **Event** element 
 | InPrev         | Include the target region only when it occurred prior to the first triggering event or region.       |
 
 
-### Parent-child relationships
+## Parent-child relationships
 
 You can define a region within another to create a parent-child relationship. For a region to be a parent, it must have a start time that is earlier than or equal to the start time of the child region. It must also have a stopping time that is later than or equal to the stopping time of the child region. If these conditions are not met, a parent-child relationship cannot be formed.
 
@@ -355,7 +342,7 @@ If a child has more than one potential parent, the parent with the earliest star
 
 The example below defines criteria for a parent. The parent must have a matching thread ID, and a payload value for the `SubscriberName` field in the child must match a value for the `Client` field in the parent.
 
-``` syntax
+```
 <Region Guid="{A75D8F5D-E8F8-40b8-B453-5CC70DEAC06F}"
         Name="FastStartup-Suspend-Winlogon-CreateSession-Subscribers"
         FriendlyName="Subscribers for Create Session">
@@ -378,7 +365,7 @@ The example below defines criteria for a parent. The parent must have a matching
 </Region>
 ```
 
-### Self-nesting regions
+## Self-nesting regions
 
 *Self-nesting* is an optional feature that optimizes parent-child relationships.
 
@@ -404,7 +391,7 @@ The **SelfNest** node has no required parameters. You can, however, use the same
 
 The following example defines a **Match** tag that simply invokes self-nesting:
 
-``` syntax
+```
 <Match>
    <SelfNest />
 </Match>
@@ -412,7 +399,7 @@ The following example defines a **Match** tag that simply invokes self-nesting:
 
 The following example defines a more complex self-nesting scenario that requires matching thread IDs and payload fields:
 
-``` syntax
+```
 <Match>
    <SelfNest TID="true">
       <Payload FieldName="SubscriberName" />
@@ -420,7 +407,7 @@ The following example defines a more complex self-nesting scenario that requires
 </Match>
 ```
 
-### Instance names
+## Instance names
 
 You can assign a unique name to each instance of a matched region by using the **Naming** node. Naming is useful when you have a large number of instances of the same region or when you need to categorize regions based on other criteria. Instance names can be based on either payload fields or on relationships with other regions.
 
@@ -428,7 +415,7 @@ Instances can be named based on payload values by using the **PayloadBased** nod
 
 Following is an example of a region with a payload-based **Naming** node:
 
-``` syntax
+```
 <Region Guid="{9261872F-D3A7-4d80-BDE3-8479CC920639}"
         Name="FastStartup-Suspend-Winlogon-EndShell-CallSubscriber"
         FriendlyName="Call Subscriber for End Shell">
@@ -452,8 +439,8 @@ Following is an example of a region with a payload-based **Naming** node:
 
 In the preceding example, the **Naming** node indicates that either the starting or the stopping event contains a payload field named `SubscriberName`. For each instance of the region that is created, the instance name is the associated payload value.
 
-**Note**  
-When naming region instances, WPA first checks the starting event for the matching payload field. If one is not found, WPA will then search the stopping event for the payload field. If a match is not found in either event, an error is printed to the console.
+> [!NOTE]
+> When naming region instances, WPA first checks the starting event for the matching payload field. If one is not found, WPA will then search the stopping event for the payload field. If a match is not found in either event, an error is printed to the console.
 
  
 
@@ -467,7 +454,7 @@ Sometimes, the information in the payload is not the only information we want. F
 
 -   `PID`, associates the process name with the region
 
-``` syntax
+```
 <Naming>
    <PayloadBased NameField="SubscriberName" Type="Device" />
 </Naming>
@@ -475,7 +462,7 @@ Sometimes, the information in the payload is not the only information we want. F
 
 If it is possible for the payload value to be found in both the starting and stopping points, you can use the optional *InstanceEndpoint* attribute to specify which point to use. Possible values for *InstanceEndpoint* are `Start` and `Stop`.
 
-``` syntax
+```
 <Naming>
    <PayloadBased NameField="SubscriberName" InstanceEndpoint="Start" />
 </Naming>
@@ -493,7 +480,7 @@ You can also name a region based on relationships with other regions. To associa
 
 The following example defines a region that has region-based naming. If a region with a matching GUID is found somewhere in the trace, then each instance of `Launch` is named `Warm`. Otherwise, each instance is named `Cold`.
 
-``` syntax
+```
 <Region Guid="{C99EFA90-F645-4A24-9576-740351171BD0}"
         Name="WinStoreAppActivationDuration"
         FriendlyName="Launch">
@@ -514,12 +501,12 @@ The following example defines a region that has region-based naming. If a region
 </Region>
 ```
 
-**Note**  
-You can see instance names in WPA by hovering the mouse over a region instance in the Regions of Interest graph.
+> [!NOTE]
+> You can see instance names in WPA by hovering the mouse over a region instance in the Regions of Interest graph.
 
  
 
-### Metadata
+## Metadata
 
 You can add additional information to a region definition in the form of *metadata*, contained within a **Metadata** node. For example, you might include information in metadata that explains the region criteria so that another user can more easily understand the purpose of the region. Metadata is simply additional data—it does not affect the processing of regions.
 
@@ -529,7 +516,7 @@ WPA adds this metadata to each region instance in the chart view of the Regions 
 
 The following example includes a **Metadata** node in the region definition:
 
-``` syntax
+```
 <Region Guid="{F466EE67-192C-4772-B13D-052CCD2D70B3}"
         Name="FastStartup-Suspend-Winlogon-Logoff-Subscribers"
         FriendlyName="Subscribers for Logoff">
@@ -561,14 +548,3 @@ The following example includes a **Metadata** node in the region definition:
 [Regions of Interest](regions-of-interest.md)
 
 [WPA Features](wpa-features.md)
-
- 
-
- 
-
-
-
-
-
-
-

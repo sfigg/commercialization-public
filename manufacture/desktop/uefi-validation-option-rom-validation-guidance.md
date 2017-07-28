@@ -147,7 +147,7 @@ This vulnerability was still present in EDK II and UDK2010 as of August 2013. Th
 
 The source code for the TianoCore vulnerability is SecurityPkg\\SecurityPkg.dec file:
 
-``` syntax
+```
 ## Pcd for OptionRom.
   #  Image verification policy settings:
   #  ALWAYS_EXECUTE                         0x00000000
@@ -167,7 +167,7 @@ Recommended Value (Best Flexibility): `QUERY_USER_ON_SECURITY_VIOLATION (0x05)`
 
 In EDK II & UDK2010, proper coding practice uses an override mechanism to modify PCD values for platform firmware. Therefore, the value for `PcdOptionRomImageVerificationPolicy` should not be changed in `SecurityPkg\SecurityPkg.dec`. The override value should be set in the platform’s DSC file. An example is shown below using Nt32Pkg\\Nt32Pkg.dsc:
 
-``` syntax
+```
 [PcdsFixedAtBuild]
 gEfiSecurityPkgTokenSpaceGuid.PcdOptionRomImageVerificationPolicy|0x04
 ```
@@ -341,7 +341,7 @@ Prior to this step the PC should be in setup mode.
 
     This step requires the makecert.exe tool available in the [Windows SDK](http://go.microsoft.com/fwlink/?LinkId=271979).
 
-    ``` syntax
+    ```
     MakeCert.exe -cy authority -len 2048 -m 60 -a sha256  -pe -ss my -n "CN=DO NOT SHIP - Fabrikam Test KEK CA" Fabrikam_Test_KEK_CA.cer
     MakeCert.exe -cy authority -len 2048 -m 60 -a sha256  -pe -ss my -n "CN=DO NOT SHIP - Fabrikam Test PK" TestPK.cer
     ```

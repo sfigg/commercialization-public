@@ -231,13 +231,13 @@ The Deployment Image Servicing and Management (DISM) cmdlets can be used to perf
 
     On other supported operating systems, you can use the DISM PowerShell module included in the Windows ADK. By default, the module is installed with the Windows ADK in the DISM folder at *&lt;x86 or amd64&gt;*\\DISM\\ under the path: C:\\Program Files (x86)\\Windows Kits\\10.0\\Assessment and Deployment Kit\\Deployment Tools\\ in Windows 10. To import this module, at the command prompt, type:
 
-    ``` syntax
+    ```
     import-module <path to DISM folder>
     ```
 
     For example, using the Windows 10 version of the Windows ADK on a 64-bit PC type:
 
-    ``` syntax
+    ```
     import-module "C:\Program Files (x86)\Windows Kits\10.0\Assessment and Deployment Kit\Deployment Tools\amd64\DISM"
     ```
 
@@ -248,7 +248,7 @@ The Deployment Image Servicing and Management (DISM) cmdlets can be used to perf
 
 3.  Set the `%path%` environment variable to the location of the DISM folder in the Windows ADK installation. At the command prompt, type:
 
-    ``` syntax
+    ```
     $env:path = <path to DISM folder>
     ```
 
@@ -258,13 +258,13 @@ The Deployment Image Servicing and Management (DISM) cmdlets can be used to perf
 
 -   To get the syntax to use with a cmdlet, at a command prompt, type:
 
-    ``` syntax
+    ```
     get-help <cmdlet name>
     ```
 
     For example, type:
 
-    ``` syntax
+    ```
     get-help get-WindowsImage
     ```
 

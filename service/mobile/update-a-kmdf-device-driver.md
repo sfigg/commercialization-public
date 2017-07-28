@@ -96,7 +96,7 @@ The original driver will be located in the \\Version1 folder, and the updated ve
 
 The walkthrough assumes that the following environmental variables are similar to what is shown here:
 
-``` syntax
+```
 set AK_ROOT=C:\Program Files (x86)\Windows Kits\10
 set WINKIT_ROOT=C:\Program Files (x86)\Windows Kits\10
 PATH=%AK_ROOT%\Tools\bin\i386;%WINKIT_ROOT%\bin\x86;%PATH%
@@ -117,7 +117,7 @@ Use the following steps to include the version 1 driver in the OS.
 
 2.  In the XKmdfDriver.inf file, set the `DriverVer` directive in the `[Version]` section as shown here. The highlighted string "11/01/2012,1.00.00.00" is the version number of the driver.
 
-    ``` syntax
+    ```
     …
     [Version]
     Signature="$WINDOWS NT$"
@@ -134,7 +134,7 @@ Use the following steps to include the version 1 driver in the OS.
 
 3.  The package XML (XKmdfdriver.pkg.xml) for the version 1 driver, is shown below. Specify an OEM `Owner` name.
 
-    ``` syntax
+    ```
     <?xml version="1.0" encoding="utf-8"?>
     <Package xmlns="urn:Microsoft.WindowsPhone/PackageSchema.v8.00"
       Owner="OEMName"
@@ -160,7 +160,7 @@ Use the following steps to include the version 1 driver in the OS.
 
 4.  Move to the \\Version1 directory, set the package version as shown, and build the driver package.
 
-    ``` syntax
+    ```
     cd \Version1
     set PKGVER=8.00.9907.12
     pkggen  XKmdfDriver.pkg.xml /version:%PKGVER% /build:fre /cpu:ARM /config:"%AK_ROOT%\Tools\bin\i386\pkggen.cfg.xml" /output:. /variables:"HIVE_ROOT=%AK_ROOT%\CoreSystem"
@@ -177,7 +177,7 @@ Use the following steps to include the version 1 driver in the OS by using IUToo
 
 2.  Use IuTool to add the version 1 driver package to an existing image.
 
-    ``` syntax
+    ```
     IuTool -p OEMName.Phone.Test.BaseOS.XKmdfDriver.spkg
     ```
 
@@ -229,7 +229,7 @@ When the package is installed, the XKmkdfDriver.inf is added to `[SYSTEM\DriverD
 
 The following shows the system driver GUID in the `[SYSTEM\DriverDatabase\DeviceIds\Root\XKmdfDriver]` registry subkey.
 
-``` syntax
+```
 [SYSTEM\DriverDatabase\DeviceIds\Root\XKmdfDriver]
 "XKmdfDriver.inf"=hex:01,ff,00,00
 [SYSTEM\DriverDatabase\DeviceIds\{4d36e97d-e325-11ce-bfc1-08002be10318}]
@@ -241,7 +241,7 @@ Under the `[SYSTEM\DriverDatabase\DriverInfFiles\XKmdfDriver.inf]` subkey, the a
 
 The `"Active"` entry is pointing to the active driver INF. When the driver package is updated, there are multiple INF settings, and `"Active"` points to the latest one.
 
-``` syntax
+```
 [SYSTEM\DriverDatabase\DriverInfFiles\XKmdfDriver.inf]
 "Active"="xkmdfdriver.inf_arm_c8e7ab79be6b088b"
 @=hex(7):78,00,6b,00,6d,00,64,00,66,00,64,00,72,00,69,00,76,00,65,00,72,00,2e,\
@@ -254,7 +254,7 @@ The `"Active"` entry is pointing to the active driver INF. When the driver packa
 
 The `[SYSTEM\DriverDatabase\DriverPackages\xkmdfdriver.inf_arm_c8e7ab79be6b088b]` subkey contains a replication of the XKmdfDriver.inf contents.
 
-``` syntax
+```
 [SYSTEM\DriverDatabase\DriverPackages\xkmdfdriver.inf_arm_c8e7ab79be6b088b]
 @="XKmdfDriver.inf"
 "BootCritical"=dword:00000001
@@ -268,7 +268,7 @@ e1,03,18,00,40,f9,d5,c3,b7,cd,01,00,00,00,00,00,00,01,00,00,00,00,00,00,00,\
 
 This subkey references the service associated with the system driver:
 
-``` syntax
+```
 [SYSTEM\DriverDatabase\DriverPackages\xkmdfdriver.inf_arm_c8e7ab79be6b088b\Configurations\XKMDFDRIVER.NT]
 "ConfigFlags"=dword:00000000
 "Service"="XKmdfDriver"
@@ -276,7 +276,7 @@ This subkey references the service associated with the system driver:
 
 This subkey sets the driver description strings:
 
-``` syntax
+```
 [SYSTEM\DriverDatabase\DriverPackages\xkmdfdriver.inf_arm_c8e7ab79be6b088b\Descriptors\Root\XKmdfDriver]
 "Configuration"="XKMDFDRIVER.NT"
 "Description"="%xkmdfdriver_devdesc%"
@@ -285,7 +285,7 @@ This subkey sets the driver description strings:
 
 This subkey sets the value of the driver description string:
 
-``` syntax
+```
 [SYSTEM\DriverDatabase\DriverPackages\xkmdfdriver.inf_arm_c8e7ab79be6b088b\Strings]
 "xkmdfdriver_devdesc"="X KMDF Driver"
 ```
@@ -298,7 +298,7 @@ The `Control` subkey contains information for controlling system startup and som
 
 `SYSTEM\ControlSet001\Control\Class\{4d36e97d-e325-11ce-bfc1-08002be10318}\0120` indicates that the driver has the 120th rank among SYSTEM class drivers. This subkey includes the driver date and version as shown here:
 
-``` syntax
+```
 [SYSTEM\ControlSet001\Control\Class\{4d36e97d-e325-11ce-bfc1-08002be10318}\0120]
 "DriverDesc"="X KMDF Driver"
 "ProviderName"="Microsoft"
@@ -312,14 +312,14 @@ The `Control` subkey contains information for controlling system startup and som
 
 The DeviceClasses subkey includes the device instance ID:
 
-``` syntax
+```
 [SYSTEM\ControlSet001\Control\DeviceClasses\{5cdce65b-f1bc-4e15-a1f8-c541f21c43f2}\##?#ROOT#XKmdfDriver#0000#{5cdce65b-f1bc-4e15-a1f8-c541f21c43f2}]
 "DeviceInstance"="ROOT\\XKmdfDriver\\0000"
 ```
 
 This next subkey associates the XKmdfDriver with the system containerId 00000000-0000-0000-ffff-ffffffffffff:
 
-``` syntax
+```
 [SYSTEM\ControlSet001\Control\DeviceContainers\{00000000-0000-0000-FFFF-FFFFFFFFFFFF}\BaseContainers\{00000000-0000-0000-FFFF-FFFFFFFFFFFF}]
 ..
 "ROOT\\XKmdfDriver\\0000"=hex(0):
@@ -328,7 +328,7 @@ This next subkey associates the XKmdfDriver with the system containerId 00000000
 
 `[SYSTEM\ControlSet001\Enum\ROOT\XKmdfDriver\0000]` contains information about the installed driver. It has one instance, `XKmdfDriver\0000`:
 
-``` syntax
+```
 [SYSTEM\ControlSet001\Enum\ROOT\XKmdfDriver\0000]
 "HardwareID"=hex(7):52,00,4f,00,4f,00,54,00,5c,00,58,00,4b,00,6d,00,64,00,66,\
   00,44,00,72,00,69,00,76,00,65,00,72,00,00,00,00,00
@@ -345,7 +345,7 @@ This next subkey associates the XKmdfDriver with the system containerId 00000000
 
 `[SYSTEM\ControlSet001\services\XKmdfDriver]` contains the driver file "ImagePath" value; it is ASCII characters encoded in hexadecimal binary format. The actual value is "ImagePath" = REG\_EXPAND\_SZ: "\\SystemRoot\\System32\\drivers\\XKmdfDriver.sys". For more information, see [Registry Value Types](http://msdn.microsoft.com/library/windows/desktop/ms724884.aspx) on MSDN.
 
-``` syntax
+```
 [SYSTEM\ControlSet001\services\XKmdfDriver]
 "DisplayName"="@XKmdfDriver.inf,%xkmdfdriver_DevDesc%;X KMDF Driver"
 "ErrorControl"=dword:00000001
@@ -361,7 +361,7 @@ This next subkey associates the XKmdfDriver with the system containerId 00000000
 
 `[SYSTEM\ControlSet001\services\XKmdfDriver\Parameters\Wdf]` contains the WDF version number:
 
-``` syntax
+```
 [SYSTEM\ControlSet001\services\XKmdfDriver\Parameters\Wdf]
 "WdfMajorVersion"=dword:00000001
 "WdfMinorVersion"=dword:0000000b
@@ -390,7 +390,7 @@ As described earlier, the new driver version will be 2/19/2013,1.32.00.00, which
 
 3.  Add a new registry value named "DW123", of type DWORD. The presence of this key is used as an additional indication that the version 2 driver is active.
 
-    ``` syntax
+    ```
     [Version]
     Signature="$WINDOWS NT$"
     Class=System
@@ -407,7 +407,7 @@ As described earlier, the new driver version will be 2/19/2013,1.32.00.00, which
 
 4.  Move to the \\Version2 directory, set the package version, and build the package.
 
-    ``` syntax
+    ```
     cd \Version2
     set PKGVER=8.00.10211.25
     pkggen  XKmdfDriver.pkg.xml /version:%PKGVER% /build:fre /cpu:ARM /config:"%AK_ROOT%\Tools\bin\i386\pkggen.cfg.xml" /output:. /variables:"HIVE_ROOT=%AK_ROOT%\CoreSystem"
@@ -422,7 +422,7 @@ Use the following steps to include the version 2 driver in the OS using IUTool a
 
 2.  Use IuTool to add the version 2 driver package to an existing image.
 
-    ``` syntax
+    ```
     IuTool -p OEMName.Phone.Test.BaseOS.XKmdfDriver.spkg
     ```
 
@@ -437,14 +437,14 @@ Use the following process to confirm that the updated driver is active.
 
 2.  DriverPackages should have two INF registry key sets: one for the previously installed driver and the one for the updated driver.
 
-    ``` syntax
+    ```
     [SYSTEM\DriverDatabase\DriverPackages\xkmdfdriver.inf_arm_6ec7dae5e1ab5fd5]
     [SYSTEM\DriverDatabase\DriverPackages\xkmdfdriver.inf_arm_c8e7ab79be6b088b]
     ```
 
 3.  `Active` in XKmdfDriver.inf should point to the newer INF key:
 
-    ``` syntax
+    ```
     [SYSTEM\DriverDatabase\DriverInfFiles\XKmdfDriver.inf]
     "Active"="xkmdfdriver.inf_arm_6ec7dae5e1ab5fd5"
     ```
@@ -455,7 +455,7 @@ Use the following process to confirm that the updated driver is active.
 
     -   "DriverVersion"="1.32.0.0"
 
-    ``` syntax
+    ```
     [SYSTEM\ControlSet001\Control\Class\{4d36e97d-e325-11ce-bfc1-08002be10318}\0120]
     "DriverDate"="2-19-2013"
     "DriverDateData"=hex:00,c0,69,0f,34,0e,ce,01
@@ -469,7 +469,7 @@ Use the following process to confirm that the updated driver is active.
 
 5.  The newly added DWORD registry value DW123 should appear under the `Device Parameters` subkey.
 
-    ``` syntax
+    ```
     [SYSTEM\ControlSet001\Enum\ROOT\XKmdfDriver\0000\Device Parameters]
     "DWORD123"="0x4567"
     ```

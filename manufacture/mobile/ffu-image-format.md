@@ -41,7 +41,7 @@ The size in bytes of the hash table after the security header and catalog.
 
 **Security header**, byte count: cbSize
 
-``` syntax
+```
 #define SECURITY_SIGNATURE "SignedImage "
 
 typedef struct _SECURITY_HEADER
@@ -84,7 +84,7 @@ The size of chunks used to generate the hash table. Used to break the image up i
 
 **Image header**, byte count: cbSize
 
-``` syntax
+```
 #define FFU_SIGNATURE "ImageFlash  "
 
 typedef struct _IMAGE_HEADER
@@ -187,7 +187,7 @@ Size of the device path that follows, in characters, without including the termi
 <span id="DevicePath__V2_only_"></span><span id="devicepath__v2_only_"></span><span id="DEVICEPATH__V2_ONLY_"></span>DevicePath (V2 only)  
 Actual device path that the store is targeted for. This should be the same as device path retrieved from UEFI protocol: DEVICE\_PATH\_TO\_TEXT\_PROTOCOL. ConvertDevicePathToText()
 
-``` syntax
+```
 typedef struct _STORE_HEADER
 {
     UINT32 dwUpdateType; // indicates partial or full flash
@@ -223,7 +223,7 @@ The validation section is used only for partial updates. It contains a set of VA
 
 Each VALIDATION\_ENTRY struct describes a location on disk that whose data should match the byte array in that entry.
 
-``` syntax
+```
 typedef struct _VALIDATION_ENTRY
 {
     UINT32 dwSectorIndex;
@@ -245,7 +245,7 @@ The fields **dwFlashOnlyTableIndex** and **dwFlashOnlyTableCount** are used to d
 
 Each block data entry describes a block of data in the store data section. Each entry describes the number of data blocks and the locations to which they should be written on disk. The accessMethod is used like the accessMethod in SetFilePointer, meaning that it gives meaning to the blockIndex.
 
-``` syntax
+```
 enum DISK_ACCESS_METHOD
 {
     DISK_BEGIN  = 0,

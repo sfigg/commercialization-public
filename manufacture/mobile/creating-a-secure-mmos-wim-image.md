@@ -43,7 +43,7 @@ To create a secure wim image, complete the following steps.
 
     You can display the platform ID using the ffutool command with the **-list** option.
 
-    ``` syntax
+    ```
     C:\> ffutool -list
     Name:   Contoso.DCD9X0X.BD301_ATT.3.2.1
     ID:     00000011-f151-a509-0000-FF0000000000
@@ -51,13 +51,13 @@ To create a secure wim image, complete the following steps.
 
     Build the unsigned secure WIM targeted for a specific platform using the *-platform* command option as shown here. No output is returned if the command completes successfully.
 
-    ``` syntax
+    ```
     C:\> SecWimTool -build MMOSwim.wim MMOS wim.secwim -platform Contoso.DCD9X0X.BD301_ATT.3.2.1
     ```
 
 3.  Extract the catalog from the secure WIM image. No output is returned if the command completes successfully.
 
-    ``` syntax
+    ```
     C:\> SecWimTool -extractcat MMOSwim.secwim MMOSwim.cat
     ```
 
@@ -68,13 +68,13 @@ To create a secure wim image, complete the following steps.
 
     To sign the catalog using the test image certificate, use this command.
 
-    ``` syntax
+    ```
     C:\> sign /pk MMOSwim.cat
     ```
 
     This command will generate output that is similar to the following.
 
-    ``` syntax
+    ```
     signtool.exe sign /v /a /u 1.3.6.1.4.1.311.76.5.10 /r "Microsoft Testing Root Certificate Authority 2010" /fd SHA256 /s my /c "1.3.6.1.4.1.311.21.8.7587021.7518
     74.11030412.6202749.3702260.207.4167089.4524209"    "MMOSwim.cat"
     The following certificate was selected:
@@ -95,7 +95,7 @@ To create a secure wim image, complete the following steps.
 
 5.  Replace the existing catalog with a signed catalog. No output is returned if the command completes successfully.
 
-    ``` syntax
+    ```
     C:\> SecWimTool -replacecat flashwim.cat MMOSwim.secwim
     ```
 
@@ -103,13 +103,13 @@ To create a secure wim image, complete the following steps.
 
 7.  Flash the WIM to the device to test it using the FFUTool.
 
-    ``` syntax
+    ```
     C:\> ffutool -wim MMOSwim.secwim
     ```
 
     The command will generate output that is similar to the following.
 
-    ``` syntax
+    ```
     Found device:
     Name:   Contoso.MSM8X0X.BD301_ATT.3.2.1
     ID:     00000011-f151-a509-0000-FF0000000000
@@ -125,14 +125,14 @@ The serial number option can be used when including tools that should only be us
 
 **Serial Number**- The serial number is a unique ID for the phone that is generated automatically. You can display the serial number using the ffutool command with the *-serial* option.
 
-``` syntax
+```
 C:\> ffutool -serial
 Serial No. : 01000500000000000000000000001234
 ```
 
 To build a secure WIM targeted for a specific device, use the *–serial* command option as shown here.
 
-``` syntax
+```
 C:\> SecWimTool -build MMOSwim.wim MMOS wim.secwim -serial 01000500000000000000000000001234
 ```
 
@@ -141,7 +141,7 @@ C:\> SecWimTool -build MMOSwim.wim MMOS wim.secwim -serial 010005000000000000000
 
 When you flash the image if the PK doesn’t match, you will receive this message.
 
-``` syntax
+```
 An FFU error occurred: Device returned WIM boot failure status code 0x80000004.
 ```
 
@@ -150,7 +150,7 @@ An FFU error occurred: Device returned WIM boot failure status code 0x80000004.
 
 The following summarizes the command syntax and the four command-line options for SecWimTool.
 
-``` syntax
+```
 SecWimTool <command> <arguments>
 ```
 
@@ -160,19 +160,19 @@ SecWimTool <command> <arguments>
 
 -   *Serial* - Includes the serial number of a specific device the WIM will be used on. This option can be used when including tools that should only be used for a specific device.
 
-``` syntax
+```
 SecWimTool -build <WIM> <output file> [-platform <ID>] [-serial <serial number>]
 ```
 
 **-extractcat** - Retrieves the catalog from the secure WIM file, and writes it either to the output file (if specified) or stdout.
 
-``` syntax
+```
 secwim -extractcat <path to .secwim> [<output file>]
 ```
 
 **-replacecat** - Replaces the catalog in the specified .secwim with the contents of the new catalog.
 
-``` syntax
+```
 secwim -replacecat <path to catalog> <path to .secwim>
 ```
 

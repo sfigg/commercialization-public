@@ -5,7 +5,7 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 2264F1B3-27BC-4140-9A90-0532604298BC
-ms.author: joshbax
+ms.author: sapaetsc
 ms.date: 05/05/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -56,7 +56,7 @@ The test renders test sounds that are captured by the microphone.
 
 1.  Run the following command:
 
-    ``` syntax
+    ```
     te.exe latencytest.dll /name:LatencyTest::Vanilla
     ```
 
@@ -67,7 +67,7 @@ The test renders test sounds that are captured by the microphone.
 
 1.  Run the following command:
 
-    ``` syntax
+    ```
     te.exe latencytest.dll /name:LatencyTest::Raw
     ```
 
@@ -78,7 +78,7 @@ The test renders test sounds that are captured by the microphone.
 
 1.  Run the following command:
 
-    ``` syntax
+    ```
     te.exe latencytest.dll /name:LatencyTest::LowPeriod
     ```
 

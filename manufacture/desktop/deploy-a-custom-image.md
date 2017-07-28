@@ -72,7 +72,7 @@ To complete this walkthrough, you need the following:
 
 On your technician computer, copy the entire content of the Windows product DVD to a network share. For example:
 
-``` syntax
+```
 net use N: \\server\share\
 xcopy D: N:\WindowsDVD\ /s
 ```
@@ -99,13 +99,13 @@ In this step, you will capture an image of the reference installation by using t
 
 2.  At a command prompt, capture an image of the installation. You specify a name and description as part of your image capture. All values are required by Windows Setup. If a .wim file does not include these values, then the image will not install correctly. For example:
 
-    ``` syntax
+    ```
     Dism /Capture-Image /ImageFile:C:\myimage.wim /CaptureDir:c:\ /Compress:fast /CheckIntegrity /ImageName:"x86_Ultimate" /ImageDescription:"x86 Ultimate Compressed"
     ```
 
 3.  Replace the default Install.wim on the network share with your custom image. The image must be called Install.wim. For example:
 
-    ``` syntax
+    ```
     net use N: \\server\share\
     copy C:\myimage.wim N:\WindowsDVD\sources\install.wim
     ```
@@ -227,7 +227,7 @@ In this step, you will create an answer file that points to your custom image. T
 
 6.  In a command prompt window copy the answer file to a network location. For example:
 
-    ``` syntax
+    ```
     net use N: \\server\share\
     md N:\AnswerFiles
     copy C:\deploy_unattend.xml N:\AnswerFiles\
@@ -244,7 +244,7 @@ In this step, you will deploy your custom image from a network share onto a dest
 
 2.  Connect to the network share that you specified in [Step 4: Create a custom answer file](#bkmk-4), and then run Setup with your answer file. For example:
 
-    ``` syntax
+    ```
     net use N: \\server\share
     N:\WindowsDVD\setup /unattend:N:\AnswerFiles\deploy_unattend.xml
     ```

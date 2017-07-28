@@ -58,7 +58,7 @@ Partners must meet the following requirements when configuring this customizatio
 
 2.  Create a customization answer file to preload your app(s) and follow the steps in the section Configure the customization settings.
 
-    ``` syntax
+    ```
     <?xml version="1.0" encoding="utf-8" ?>  
     <ImageCustomizations xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate"  
                          Name="PartnerAccountConfiguration"  
@@ -202,7 +202,7 @@ We recommend that you use the following APIs when implementing your apps:
 
 1.  Preload the apps to the mobile device using the following code example.
 
-    ``` syntax
+    ```
         <!-- Preload up to 5 apps to use as the hub and spoke apps -->
         <Applications>
           <Application Source=""
@@ -344,7 +344,7 @@ The following screenshots show what a partner setup app's UI might look like and
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_phCustomization\p_phCustomization%5D:%20Partner%20account%20configuration%20during%20setup%20%20RELEASE:%20%289/7/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+
 
 
 

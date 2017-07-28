@@ -18,7 +18,7 @@ You can use Windows Debuggers, such as Ntsd.exe, Cdb.exe, and Windbg.exe, and su
 
 To debug Windows PE remotely, you may need to turn off the built-in firewall on the PC:
 
-``` syntax
+```
 wpeutil disablefirewall
 ```
 
@@ -33,13 +33,13 @@ The easiest user-mode debugging method is to run a process server on the Windows
 
 2.  At the Windows PE command prompt, disable the firewall.
 
-    ``` syntax
+    ```
     wpeutil disablefirewall
     ```
 
 3.  Start the Windows Debugging Process Server, specifying a connection method to the PC, for example, a TCP port:
 
-    ``` syntax
+    ```
     dbgsrv.exe -t tcp:port=1234
     ```
 
@@ -47,7 +47,7 @@ The easiest user-mode debugging method is to run a process server on the Windows
 
 4.  From the remote computer, use the process server to attach to or start processes on the Windows PE destination computer:
 
-    ``` syntax
+    ```
     windbg -premote tcp:server=Server, port=1234
     ```
 
@@ -72,7 +72,7 @@ To debug in kernel-mode, you must enable kernel-mode debugging before the system
 
 The default debugger settings are as follows:
 
-``` syntax
+```
 identifier              {dbgsettings} 
 debugtype               Serial 
 debugport               1 
@@ -89,7 +89,7 @@ For information about how to modify the default BCD store (default.bcd), see [Ho
 
 2.  At the command prompt, type the following bcdedit command to set the debug flag of the BCD store used to boot the image to `debug on`:
 
-    ``` syntax
+    ```
     bcdedit /store <path to winpe>/boot/bcd /set {default} debug on
     ```
 

@@ -5,10 +5,9 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: f3cfd46e-bed5-47fd-a2bb-f7e34f7877c6
-ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
-ms.author: joshbax
+ms.author: sapaetsc
 ms.date: 05/05/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -23,7 +22,7 @@ Returns additional information about the error.
 ## Syntax
 
 
-``` syntax
+```
 HRESULT GetInnerErrorInfo
   ([out, retval] IUnknown** ppVal)
 ;

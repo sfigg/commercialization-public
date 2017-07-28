@@ -5,10 +5,9 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 046b4559-0408-4766-8bb5-d50a695138b9
-ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
-ms.author: joshbax
+ms.author: sapaetsc
 ms.date: 05/05/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -23,7 +22,7 @@ Represents a **Profile** object and contains data to configure Event Tracing for
 ## Syntax
 
 
-``` syntax
+```
 {
   [default] interface IProfile;
   interface IParsingErrorInfo;

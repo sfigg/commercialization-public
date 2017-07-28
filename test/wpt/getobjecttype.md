@@ -5,10 +5,9 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 5df5ef07-aad9-4bbe-a293-05dd18c4b319
-ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
-ms.author: joshbax
+ms.author: sapaetsc
 ms.date: 05/05/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -23,7 +22,7 @@ Returns the type of the object that caused the error.
 ## Syntax
 
 
-``` syntax
+```
 HRESULT GetObjectType
   ([out, retval] CObjectType* pObjectType)
 ;

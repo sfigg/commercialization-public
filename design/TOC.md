@@ -1,7 +1,6 @@
 # [Design](index.md)
 
 ## [What's new in Design](what-s-new-in-design.md)
-## [Change history for Design](change-history-for-design.md)
 ## [Minimum hardware requirements](minimum/minimum-hardware-requirements-overview.md)
 ## [Form factors](form-factors/form-factors.md)
 ### [2-in-1](form-factors/2-in-1.md)
@@ -22,7 +21,8 @@
 ### [Tablet mode](device-experiences/continuum.md)
 ### [Windows Hello](device-experiences/windows-hello.md)
 #### [Windows Hello and Companion Device Framework](device-experiences/windows-hello-companion-device-framework.md)
-#### [Windows Hello biometric requirements](device-experiences/biometric-requirements.md)
+#### [Windows Hello biometric requirements](device-experiences/windows-hello-biometric-requirements.md)
+#####[Windows Hello fingerprint driver signature process](device-experiences/windows-hello-driver-signing.md)
 #### [Windows Hello face authentication](device-experiences/windows-hello-face-authentication.md)
 ### [Modern Standby](device-experiences/modern-standby.md)
 #### [Power models and the advantages of using Modern Standby](device-experiences/advantages-of-using-modern-standby-over-s3.md)
@@ -313,3 +313,5 @@
 ## [Windows Hardware Compatibility Program for Windows 10, version 1607](compatibility/)
 
 ## [Windows Hardware Compatibility Program for Windows 10, version 1703](compatibility/1703/)
+
+## [Change history for Design](change-history-for-design.md)
