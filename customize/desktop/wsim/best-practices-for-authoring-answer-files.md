@@ -19,7 +19,7 @@ ms.technology: windows-oem
 
 We recommend the following best practices for creating answer files.
 
-There are many ways in which you can use answer files. For more information about how to use an answer file with Windows® Setup, see [Windows Setup Automation Overview](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/windows-setup-automation-overview). For more information about how to use an answer file with the **Sysprep** tool, [Using Answer Files with Sysprep](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/use-answer-files-with-sysprep). For more information about how to use an answer file with Deployment Image Servicing and Management (DISM), see [Unattended Servicing Command-Line Options](http://go.microsoft.com/fwlink/?LinkId=224959).
+There are many ways in which you can use answer files. For more information about how to use an answer file with Windows® Setup, see [Windows Setup Automation Overview](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/windows-setup-automation-overview). For more information about how to use an answer file with the **Sysprep** tool, [Using Answer Files with Sysprep](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/use-answer-files-with-sysprep). For more information about how to use an answer file with Deployment Image Servicing and Management (DISM), see [DISM Unattended Servicing Command-Line Options](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/dism-unattended-servicing-command-line-options).
 
 ## Always Validate Answer Files in Windows SIM
 
