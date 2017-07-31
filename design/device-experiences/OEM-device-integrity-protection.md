@@ -4,14 +4,8 @@ description: Provides guidance on what an OEM should do to enable Exploit Guard
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-<<<<<<< HEAD:design/device-experiences/OEM-device-integrity-protection.md
 ms.author: dawnwood
 ms.date: 07/20/2017
-=======
-ms.assetid: 0C1E8C46-553F-4877-8119-683F6883B4A1
-ms.author: dawnwood
-ms.date: 05/02/2017
->>>>>>> 9abc0e5598d0430039c0c25c98556f3611fe7eef:design/device-experiences/security-and-reliabilty.md
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem

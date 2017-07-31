@@ -1,6 +1,6 @@
 ---
-title: Hardware-based protection considerations for OEMs
-description: Provides guidance on what an OEM should do to enable Hardware-based protections
+title: Hardware considerations for secure systems
+description: Provides guidance on what an OEM should do to enable hardware-based protections
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
@@ -11,7 +11,7 @@ ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-#Hardware-based protection considerations for OEMs
+#Hardware considerations for secure systems
 Each section (one per feature) contains the following information.
 1. Describe each feature and what it does. Link to more information if available. 
 2. What are the OEM opportunities for each feature?
@@ -31,12 +31,6 @@ Windows Defender Exploit Guard provides the hardware configuration portion of De
 * HVCI
 * EMET
 * CFG
-
-###Windows Defender Application Control
-Windows Defender Application Control provides the software configuration portion of Device Guard.
-* Configurable Code Integrity (CCI)
-* VSM Protected Code Integrity
-
 
 ##Device integrity protection
 Includes TPM measurements, UEFI Secure Boot, Trusted Boot, Measured Boot, ELAM
