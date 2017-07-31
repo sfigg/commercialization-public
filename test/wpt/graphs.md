@@ -16,16 +16,7 @@ ms.technology: windows-oem
 
 # Graphs
 
-Windows Performance Analyzer (WPA) provides the following types of graphs:
-
--   [Line graphs](#line_stacked_bar)
--   [Stacked-line graphs](#line_stacked_bar)
--   [Stacked-bar graphs](#line_stacked_bar)
--   [Flame graphs](#flame_graphs)
--   [Lifetime graphs](#lifetime_graphs)
--   [Activity type graphs](#activity_type_graphs)
--   Sequential resource trails
--   [Generic events graphs](#generic_events_graphs)
+Windows Performance Analyzer (WPA) provides several types of graphs.
 
 <a name="line_stacked_bar"></a>
 ## Line, Stacked-Line, and Stacked-Bar Graphs
