@@ -60,7 +60,7 @@ If any of the partitions you want to capture don’t already have a drive letter
 
     Disk ###  Status         Size     Free     Dyn  Gpt
     --------  -------------  -------  -------  ---  ---
-    Disk 0    Online          238 GB      0 B        *
+    Disk 0    Online          127 GB      0 B        *
     ```
 
 4.  Select the hard disk with the `select disk` command. For example,
@@ -76,14 +76,16 @@ If any of the partitions you want to capture don’t already have a drive letter
 
       Partition ###  Type              Size     Offset
       -------------  ----------------  -------  -------
-      Partition 1    Primary            300 MB  1024 KB
-      Partition 2    Primary            200 GB   301 MB
+      Partition 1    Recovery           300 MB  1024 KB
+      Partition 2    System             100 MB   451 MB
+      Partition 3    Reserved            16 MB   551 MB
+      Partition 4    Primary            126 GB   567 MB
     ```
 
 6.  Select the partition with the `select partition` command. For example,
 
     ```
-    DISKPART> select partition=1
+    DISKPART> select partition=2
     ```
 
 7.  Assign a letter to the partition with the `assign letter` command. For example,
