@@ -19,11 +19,15 @@ ms.technology: windows-oem
 
 `CameraSoundLevel` specifies the sound volume that a camera will play when a photo is taken, when a series of photos are taken, or while a video is recorded.
 
-As devices get smaller it is important that bystanders be aware that they are being recorded for privacy purposes. This feature will enable OEMs to set the device to a mode where the sound cannot be bypassed
+As devices get smaller it is important that bystanders be aware that they are being recorded for privacy purposes. This feature will enable OEMs to set the device to a mode where the sound cannot be bypassed.
 
 You can use this setting to set the device to a mode where the sound is played when a camera is actively recording or taking a photo cannot be bypassed by a user or application.
 
 This feature will make a best effort to provide the restrictions for the camera sound. This setting applies to all Modern video capture applications.
+
+**Note**
+
+Audio effects implemented in Audio Processing Objects (APOs) or in the DSP can sometimes interfere with the implementation of this feature, and could result in the attenuation of the camera sound.
 
 ## Values
 
