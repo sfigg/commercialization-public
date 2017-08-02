@@ -74,16 +74,11 @@ This customization supports: **per-IMSI** value
 
     The following table shows the scenarios supported by this customization:
 
-    **Note**<br/>
-    In the **Default SIM name** column:
-
-    -   The **" "** in *MultivariantProvisionedSPN*" "1234 means that there is a space between the mobile operator name or SPN and the last 4 digits of the MSISDN.
-
-    -   *MultivariantProvisionedSPN* means the value that you set for the `MultivariantProvisionedSPN` setting.
-
-    -   *SIM 1* or *SIM 2* is the default friendly name for the SIM in slot 1 or slot 2.
-
-    ** **
+    > [!NOTE]
+    > In the **Default SIM name** column:
+    > -   The **" "** in *MultivariantProvisionedSPN*" "1234 means that there is a space between the mobile operator name or SPN and the last 4 digits of the MSISDN.
+    > -   *MultivariantProvisionedSPN* means the value that you set for the `MultivariantProvisionedSPN` setting.
+    > -   *SIM 1* or *SIM 2* is the default friendly name for the SIM in slot 1 or slot 2.
 
     | Multivariant setting set? | SPN provisioned? | MSISDN (last 4 digitis: 1234, for example) provisioned? | Default SIM name                                                        |
     |---------------------------|------------------|---------------------------------------------------------|-------------------------------------------------------------------------|
@@ -96,22 +91,9 @@ This customization supports: **per-IMSI** value
     | No                        | Yes              | No                                                      | SPN (up to 16 characters)                                               |
     | No                        | No               | Yes                                                     | *SIM 1* or *SIM 2*                                                      |
 
-
-
-
 <a href="" id="testing-steps-"></a>**Testing steps:**  
 1.  Flash a build containing this customization to a phone that supports either a single or dual SIM.
 
 2.  Boot the phone and verify that the displayed friendly name for the SIM matches the SPN name or the value set for `MultivariantProvisionedSPN`.
 
     If there are two SIMs, verify that the displayed friendly names appear as expected.
-
- 
-
- 
-
-
-
-
-
-
