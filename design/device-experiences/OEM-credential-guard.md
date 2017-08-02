@@ -62,7 +62,7 @@ There are two security benefits.
 2. emoving Microsoft UEFI CA from the Secure Boot database provides enterprises with full control over software that runs before the operating system boots.
 
 ###64-bit CPU
-**Starting in Windows 10, Version 1507**, Virtualization-Based Security (VBS) features requires Windows hypervisor, which is only supported on 64-bit processors. 
+Virtualization-Based Security (VBS) features requires Windows hypervisor, which is only supported on 64-bit processors. 
 
 ###Virtualization extensions - Intel VT-x, AMD-V, and extended page tables
 VBS only works if the processor supports virtualization with second level address translation. 
