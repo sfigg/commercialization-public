@@ -139,9 +139,9 @@ This customization supports: **per-IMSI** value, **per-device** value.
 
         Set the values for the `CardAllowList` and `CardBlockList` settings to configure the allow list and block list, respectively.
 
-    2.  To configure the list of SIM cards allowed in the first slot, set the value for `CardAllowList` to a comma separated MCC:MNC list. You can also use wild cards, represented by an asterisk (\*), to accept any value. For example, you can set the value to *310:410,311:\*,404:012,310:70*.
+    2.  To configure the list of SIM cards allowed in the first slot, set the value for `CardAllowList` to a comma separated MCC:MNC list. You can also use wild cards, represented by an asterisk (\*), to accept any value. For example, you can set the value to <em>310:410,311:*,404:012,310:70</em>.
 
-    3.  To configure the list of SIM cards that are not allowed in the first slot, set the value for `CardBlockList` to a comma separated MCC:MNC list. You can also use wild cards, represented by an asterisk (\*), to accept any value. For example, you can set the value to *310:410,311:\*,404:012,310:70*.
+    3.  To configure the list of SIM cards that are not allowed in the first slot, set the value for `CardBlockList` to a comma separated MCC:MNC list. You can also use wild cards, represented by an asterisk (\*), to accept any value. For example, you can set the value to <em>310:410,311:*,404:012,310:70</em>.
 
     > [!NOTE]
     > These settings support per-IMSI or per-device values. Determine which one you would like to set. By default, this setting is off or missing.
