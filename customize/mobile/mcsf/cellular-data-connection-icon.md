@@ -79,34 +79,34 @@ The one-, two-, or three-character codes used to signify the data connection typ
 
     The following table shows the settings you can modify and their default values.
 
-| Setting Name      | Default Value | Description                                  |
-|:------------------|:--------------|:---------------------------------------------|
-| 1XRTTDEFAULT      | 1X            | 1XRTT connection                             |
-| 1XRTT             | 1X            | 1XRTT                                        |
-| EVDODEFAULT       | DO            | EVDO connection                              |
-| EVDOREV0          | DO            | EVDO rev. 0                                  |
-| EVDOREVA          | DO            | EVDO rev. A                                  |
-| EVDOREVB          | DO            | EVDO rev. B                                  |
-| GSMDEFAULT        | G             | GSM connection                               |
-| GSMGSM            |               | No GSM connection                            |
-| GSMGPRS           | G             | GSM General Packet Radio Service             |
-| GSMEDGE           | E             | GSM Enhanced Data rates for Global Evolution |
-| UMTSDEFAULT       | 3G            | UMTS connection                              |
-| UMTSUMTS          | 3G            | UMTS                                         |
-| UMTSHSDPA         | H             | High Speed Downlink Packet Access            |
-| UMTSHSUPA         | H             | High Speed Uplink Packet Access              |
-| UMTSHSPAPLUS      | H+            | High Speed Packet Access “Plus”              |
-| UMTSDCHSPAPLUS    | H+            | Dual-carrier HSPA+                           |
-| UMTSHSPAPLUS64QAM | By default, the value inherited from UMTSDCHSPAPLUS. <br/><br/> To set a value different from the value for UMTSDCHSPAPLUS, you must set the value explicitly. | UMTS HSPA+ 64QAM (high order modulation) |
-| LTEDEFAULT        | LTE           | LTE connection                               |
-| LTEFDD            | LTE           | LTE Frequency Division Duplexing             |
-| LTETDD            | LTE           | LTE Time Division Duplexing                  |
-| TDSCDMADEFAULT    | T             | TD-SCDMA connection                          |
-| TDSCDMAUMTS       | T             | TD-SCDMA                                     |
-| TDSCDMAHSDPA      | H             | TD-SCDMA High Speed Downlink Packet Access   |
-| TDSCDMAHSUPA      | H             | TD-SCDMA High Speed Uplink Packet Access     |
-| TDSCDMAHSPAPLUS   | H+            | TD-SCDMA High Speed Packet Access “Plus”     |
-| TDSCDMADCHSPAPLUS | H+            | TD-SCDMA Dual-carrier HSPA+                  |
+    | Setting Name      | Default Value | Description                                  |
+    |:------------------|:--------------|:---------------------------------------------|
+    | 1XRTTDEFAULT      | 1X            | 1XRTT connection                             |
+    | 1XRTT             | 1X            | 1XRTT                                        |
+    | EVDODEFAULT       | DO            | EVDO connection                              |
+    | EVDOREV0          | DO            | EVDO rev. 0                                  |
+    | EVDOREVA          | DO            | EVDO rev. A                                  |
+    | EVDOREVB          | DO            | EVDO rev. B                                  |
+    | GSMDEFAULT        | G             | GSM connection                               |
+    | GSMGSM            |               | No GSM connection                            |
+    | GSMGPRS           | G             | GSM General Packet Radio Service             |
+    | GSMEDGE           | E             | GSM Enhanced Data rates for Global Evolution |
+    | UMTSDEFAULT       | 3G            | UMTS connection                              |
+    | UMTSUMTS          | 3G            | UMTS                                         |
+    | UMTSHSDPA         | H             | High Speed Downlink Packet Access            |
+    | UMTSHSUPA         | H             | High Speed Uplink Packet Access              |
+    | UMTSHSPAPLUS      | H+            | High Speed Packet Access “Plus”              |
+    | UMTSDCHSPAPLUS    | H+            | Dual-carrier HSPA+                           |
+    | UMTSHSPAPLUS64QAM | By default, the value inherited from UMTSDCHSPAPLUS. <br/><br/> To set a value different from the value for UMTSDCHSPAPLUS, you must set the value explicitly. | UMTS HSPA+ 64QAM (high order modulation) |
+    | LTEDEFAULT        | LTE           | LTE connection                               |
+    | LTEFDD            | LTE           | LTE Frequency Division Duplexing             |
+    | LTETDD            | LTE           | LTE Time Division Duplexing                  |
+    | TDSCDMADEFAULT    | T             | TD-SCDMA connection                          |
+    | TDSCDMAUMTS       | T             | TD-SCDMA                                     |
+    | TDSCDMAHSDPA      | H             | TD-SCDMA High Speed Downlink Packet Access   |
+    | TDSCDMAHSUPA      | H             | TD-SCDMA High Speed Uplink Packet Access     |
+    | TDSCDMAHSPAPLUS   | H+            | TD-SCDMA High Speed Packet Access “Plus”     |
+    | TDSCDMADCHSPAPLUS | H+            | TD-SCDMA Dual-carrier HSPA+                  |
 
 <a href="" id="testing-"></a>**Testing:**  
 1.  Flash an image containing this customization to a phone that has a UICC.
