@@ -32,7 +32,7 @@ To update install the latest updates:
 
 **July 28, 2017**
 
-Windows 10 S manufacturing guidance is available. [See Windows 10 S overview](windows-10-s-overview.md) for information about the manufacturing environment for Windows 10 S.
+Windows 10 S manufacturing guidance is available. [See Windows 10 S overview](desktop/windows-10-s-overview.md) for information about the manufacturing environment for Windows 10 S.
 
 **April 4, 2017**
 
