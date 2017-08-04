@@ -22,7 +22,7 @@ Servicing Stack Update (SSU):KB4022405 is required before applying the most rece
 
 To update install the latest updates: 
 
--  Download [SSU:KB4022405](http://www.catalog.update.microsoft.com/Search.aspx?q=KB4022405) and the [latest GDR](https://support.microsoft.com/en-us/help/12387/windows-10-update-history) from the [Microsoft Update catalog](http://www.catalog.update.microsoft.com).
+-  Download [SSU:KB4022405](http://www.catalog.update.microsoft.com/Search.aspx?q=KB4022405) and the [latest GDR](https://support.microsoft.com/en-us/help/12387/windows-10-update-history) (currently [KB4032188](http://www.catalog.update.microsoft.com/Search.aspx?q=4032188)) from the [Microsoft Update catalog](http://www.catalog.update.microsoft.com).
 
 -  Apply this SSU, and then apply the latest GDR, into both Windows and WinRE.
 
@@ -32,7 +32,7 @@ To update install the latest updates:
 
 **July 28, 2017**
 
-Windows 10 S manufacturing guidance is available. [See Windows 10 S overview](desktop/windows-10-s-overview.md) for information about the manufacturing environment for Windows 10 S.
+- Windows 10 S manufacturing guidance is available. [See Windows 10 S overview](desktop/windows-10-s-overview.md) for information about the manufacturing environment for Windows 10 S.
 
 **April 4, 2017**
 
