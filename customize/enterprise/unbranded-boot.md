@@ -132,10 +132,18 @@ The following table shows Unbranded Boot settings and their values.
 </tr>
 <tr class="odd">
 <td>CrashDumpEnabled</td>
-<td>Contains an integer that specifies the type of information to capture in a dump (.dmp) file that is generated when the system stops unexpectedly.
+<td>Contains an integer that specifies the type of information to capture in a dump (.dmp) file that is generated when the system stops unexpectedly. The integers and the types of capture information are explained in the next section.
 <p>The .dmp file is typically saved in %SystemRoot% as Memory.dmp.</p>
-<p>The following table shows the possible values.</p>
-<table border="1">
+</td>
+</tr>
+</tbody>
+</table>
+
+#### Crash dump information types
+
+The following table shows the integers that can be specified in the **CrashDumpEnabled** setting to specify certain types of information to capture in the crash dump at %SystemRoot%\Memory.dmp.
+
+<table>
 <thead valign="bottom">
 <tr class="header">
 <th>Value</th>
@@ -177,11 +185,6 @@ The following table shows Unbranded Boot settings and their values.
 </tr>
 </tbody>
 </table>
-<p> </p></td>
-</tr>
-</tbody>
-</table>
-
 
 ## <a href="" id="custom-boot"></a>Customize the boot screen using Windows ICD and Deployment Image Servicing and Management (DISM)
 
