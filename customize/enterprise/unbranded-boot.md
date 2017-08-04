@@ -141,7 +141,7 @@ The following table shows Unbranded Boot settings and their values.
 
 #### Crash dump information types
 
-The following table shows the integers that can be specified in the **CrashDumpEnabled** setting to specify certain types of information to capture in the crash dump at %SystemRoot%\Memory.dmp.
+The following table shows the integers that can be specified in the **CrashDumpEnabled** setting to specify certain types of information to capture in the crash dump.
 
 <table>
 <thead valign="bottom">
