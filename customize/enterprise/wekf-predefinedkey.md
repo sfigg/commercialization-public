@@ -34,9 +34,6 @@ class WEKF_PredefinedKey {
 };
 ```
 
-```
-```
-
 ## Members
 
 
@@ -44,88 +41,17 @@ The following tables list any constructors, methods, fields, and properties that
 
 ### <a href="" id="mth"></a>Methods
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Methods</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>[WEKF_PredefinedKey.Enable](wekf-predefinedkeyenable.md)</p></td>
-<td><p>Blocks the specified predefined key.</p></td>
-</tr>
-<tr class="even">
-<td><p>[WEKF_PredefinedKey.Disable](wekf-predefinedkeydisable.md)</p></td>
-<td><p>Unblocks the specified predefined key.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Methods                                                    | Description                            |
+|:-----------------------------------------------------------|:---------------------------------------|
+| [WEKF_PredefinedKey.Enable](wekf-predefinedkeyenable.md)   | Blocks the specified predefined key.   |
+| [WEKF_PredefinedKey.Disable](wekf-predefinedkeydisable.md) | Unblocks the specified predefined key. |
 
 ### <a href="" id="pro"></a>Properties
 
-<table>
-<colgroup>
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Property</th>
-<th>Data type</th>
-<th>Qualifiers</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><strong>Id</strong></p></td>
-<td><p>string</p></td>
-<td><p>[key]</p></td>
-<td><p>The name of the predefined key combination.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Enabled</strong></p></td>
-<td><p>Boolean</p></td>
-<td><p>[read, write]</p></td>
-<td><p>Indicates if the key is blocked or unblocked. This property can be one of the following values:</p>
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Value</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><strong>true</strong></p></td>
-<td><p>Indicates that the key is blocked.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>false</strong></p></td>
-<td><p>Indicates that the key is not blocked.</p></td>
-</tr>
-</tbody>
-</table>
-<p> </p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Property    | Data type | Qualifiers    | Description                                                                                                                                                           |
+|:------------|:----------|:--------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Id**      | string    | [key]         | The name of the predefined key combination.                                                                                                                           |
+| **Enabled** | Boolean   | [read, write] | Indicates whether the key is blocked or unblocked. To indicate that the key is blocked, specify **true**. To indicate that the key is not blocked, specify **false**. |
 
 ### Remarks
 
@@ -183,8 +109,6 @@ function Enable-Predefined-Key($Id) {
     }
 }
 
-
-
 # Some example uses of the function defined above.
 
 Enable-Predefined-Key "Ctrl+Alt+Delete"
@@ -210,14 +134,3 @@ Enable-Predefined-Key "Ctrl+Esc"
 [Keyboard Filter WMI provider reference](keyboardfilter-wmi-provider-reference.md)
 
 [Keyboard Filter](keyboardfilter.md)
-
- 
-
- 
-
-
-
-
-
-
-

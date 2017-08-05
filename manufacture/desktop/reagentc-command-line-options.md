@@ -55,7 +55,7 @@ The following table describes these command-line options:
 </tr>
 <tr class="even">
 <td align="left"><p><strong>/enable</strong> [<strong>/auditmode</strong>] [<strong>/osguid</strong> &lt;bcd_guid&gt;]</p></td>
-<td align="left"><p>Online</p></td>
+<td align="left"><p>Both</p></td>
 <td align="left"><p>Enables a custom Windows RE boot image.</p>
 <p>The <strong>/enable</strong> option runs automatically during the specialize configuration pass. If you don't specify a Windows RE boot image, the computer attempts to enable Windows RE by using the default Winre.wim file from the \Windows\System32\Recovery folder.</p>
 <ul>
