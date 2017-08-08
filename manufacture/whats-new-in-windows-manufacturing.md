@@ -16,6 +16,24 @@ This topic covers new improvements for desktop, mobile, and IoT manufacturing.
 
 ## <span id="Whats_new_in_desktop_manufacturing"></span> What's new in desktop manufacturing 
 
+**August 4, 2017**
+
+Servicing Stack Update (SSU):KB4022405 is required before applying the most recent General Distribution Release or any future GDRs.
+
+To update install the latest updates: 
+
+-  Download [SSU:KB4022405](http://www.catalog.update.microsoft.com/Search.aspx?q=KB4022405) and the [latest GDR](https://support.microsoft.com/en-us/help/12387/windows-10-update-history) (currently [KB4032188](http://www.catalog.update.microsoft.com/Search.aspx?q=4032188)) from the [Microsoft Update catalog](http://www.catalog.update.microsoft.com).
+
+-  Apply this SSU, and then apply the latest GDR, into both Windows and WinRE.
+
+-  Run DISM /Cleanup-Image /Resetbase.  This step is recommended after any cumulative update, and in this case, it's required to make sure the changes stay in effect after a user resets their PC back to OOBE.
+
+   To learn more about applying updates, see [Lab 5: Add updates and upgrade the edition](desktop/servicing-the-image-with-windows-updates-sxs.md) and [Lab 12: Update the recovery image](desktop/update-the-recovery-image.md).
+
+**July 28, 2017**
+
+- Windows 10 S manufacturing guidance is available. [See Windows 10 S overview](desktop/windows-10-s-overview.md) for information about the manufacturing environment for Windows 10 S.
+
 **April 4, 2017**
 
 - You can now create more than one partition on a USB drive. This allows you to use a single USB drive with a combination of FAT32 and NTFS partitions. To learn more about creating multiple partitions on a USB drive, see [WinPE: Create USB bootable drive](desktop/winpe-create-usb-bootable-drive.md#windows-10-version-1703)
