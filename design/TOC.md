@@ -117,7 +117,7 @@
 #### [Virtualization-based security](device-experiences/OEM-VBS.md)
 #### [Trusted Plaform Module (TPM)](device-experiences/OEM-TPM.md)
 #### [Windows Defender Credential Guard](device-experiences/OEM-credential-guard.md)
-#### [Windows Defender Device Guard](device-experiences/OEM-credential-guard.md)
+#### [Windows Defender Device Guard](device-experiences/OEM-device-guard.md)
 
 
 ### [Thermal management in Windows](device-experiences/thermal-management-in-windows.md)

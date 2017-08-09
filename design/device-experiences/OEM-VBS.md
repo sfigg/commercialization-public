@@ -12,7 +12,7 @@ ms.technology: windows-oem
 ---
 
 ##Virtualization Based Security (VBS)
-
+Hardware-based security features, also called virtualization-based security or VBS, enforces configurable code integrity.
 
 ##Virtualization Based Security (VBS) enablement of No-Execute protection for UEFI runtime services
 

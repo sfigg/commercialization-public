@@ -42,7 +42,6 @@ Trusted Platform Module (TPM) technology is designed to provide hardware-based, 
 ## Virtualization-based Security (VBS)
 
 
-**Note:** If you are an IT Professional and want to understand how TPM works in your enterprise, see [Trusted Platform Module](https://docs.microsoft.com/en-us/windows/device-security/tpm/trusted-platform-module-top-node)
 
 ## Windows Defender Credential Guard
 
@@ -52,8 +51,8 @@ Note that this is not IT Pro or consumer content, link to such if available.
 **Note:** If you are an IT Professional and want to understand how to configure Windows Defender Credential Guard, see [Trusted Platform Module](https://docs.microsoft.com/en-us/windows/device-security/tpm/trusted-platform-module-top-node)
 
 ## Windows Defender Device Guard
-Windows Defender Device Guard is a combination of enterprise-related hardware and software security features that, when configured together, will lock a device down so that it can only run trusted applications that you define in your code integrity policies. I
-**Note:** If you are an IT Professional and want to understand how TPM works in your enterprise, see [Device Guard deployment guide](https://docs.microsoft.com/en-us/windows/device-security/device-guard/device-guard-deployment-guide)
+Windows Defender Device Guard is a combination of enterprise-related hardware and software security features that, when configured together, will lock a device down so that it can only run trusted applications that you define in your code integrity policies. 
+**Note:** If you are an IT Professional and want to understand how to configure and deploy Windows Defender Device Guard in your enterprise, see [Device Guard deployment guide](https://docs.microsoft.com/en-us/windows/device-security/device-guard/device-guard-deployment-guide)
 
 ## Windows Hello
 
