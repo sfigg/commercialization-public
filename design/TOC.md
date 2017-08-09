@@ -112,7 +112,6 @@
 ##### [Output reports](component-guidelines/radial-controller-output-reports.md)
 ##### [Sample report descriptors](component-guidelines/radial-controller-sample-report-descriptors.md)
 
-### [Security and reliability](device-experiences/security-and-reliability.md)
 ### [Security considerations for OEMs](device-experiences/OEM-security-considerations.md)
 #### [Bitlock device encryption for OEMs](device-experiences/OEM-device-encryption.md)
 #### [Virtualization-based security](device-experiences/OEM-VBS.md)
