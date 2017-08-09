@@ -1,5 +1,5 @@
 ---
-title: Device Guard considerations for OEMs
+title: Device Guard hardware reuirements
 description: Provides guidance on what an OEM should do to enable Device Guard
 MSHAttr:
 - 'PreferredSiteName:MSDN'
@@ -11,7 +11,7 @@ ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-# Device Guard considerations for OEMs
+# Device Guard hardware requirements
 
 
  

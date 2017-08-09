@@ -11,9 +11,16 @@ ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-#Virtualization Based Security (VBS) enablement of No-Execute protection for UEFI runtime services
-**Starting in Windows 10, Version 1703**, you must enable VBS. VBS will provide No-Execute (NX) protection on UEFI runtime service code and data memory regions. UEFI runtime service code must support read-only page protections, and UEFI runtime service data must not be executable.
+##Virtualization Based Security (VBS)
+
+
+##Virtualization Based Security (VBS) enablement of No-Execute protection for UEFI runtime services
+
+**Starting in Windows 10, Version 1703**, you must enable VBS. VBS sprovide No-Execute (NX) protection on UEFI runtime service code and data memory regions. 
+
 UEFI runtime services must meet these requirements (applies to UEFI runtime service memory, but not UEFI boot service memory):
+
+* UEFI runtime service code must support read-only page protections, and UEFI runtime service data must not be executable.
 
 * Implement the UEFI 2.6 EFI_MEMORY_ATTRIBUTES_TABLE. All UEFI runtime service memory (code and data) must be described by this table.
 

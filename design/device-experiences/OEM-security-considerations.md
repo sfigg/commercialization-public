@@ -22,8 +22,7 @@ What are the OEM requirements
 Note that this is not IT Pro or consumer content, link to such if available. 
 ##Trusted Plaform Module (TPM) 2.0
 What does TPM do?
-What are the hardware opportunites
-What are the OEM requirements
+##Virtualization Based Security (VBS)
 Note that this is not IT Pro or consumer content, link to such if available. 
 ##Virtualization-based security (VBS)
 What does TPM do?

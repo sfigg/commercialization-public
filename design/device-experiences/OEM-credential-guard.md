@@ -1,6 +1,6 @@
 ---
-title: Windows Defender Credential Guard considerations for OEMs
-description: Provides guidance on what an OEM should do to enable Exploit Guard
+title: Windows Defender Credential Guard hardware requirements
+description: Provides guidance on what an OEM should do to enable Credential Guard
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
@@ -11,7 +11,7 @@ ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-# Windows Defender Credential Guard considerations for OEMs
+# Windows Defender Credential Guard hardware requirements
 
 Introduced in Windows 10 Enterprise and Windows Server 2016, Credential Guard uses virtualization-based security to isolate secrets so that only privileged system software can access them. With Credential Guard, Windows 10 implemented an architectural change that fundamentally prevents the current forms of the pass-the-hash (PtH) attack.
 In order for a device to support Crendential Guard as specified in the Windows Hardware Compatibility Requirements (WHCR), you as the OEM must provide the following hardware, software, or firmware features. 
