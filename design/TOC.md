@@ -113,7 +113,7 @@
 ##### [Sample report descriptors](component-guidelines/radial-controller-sample-report-descriptors.md)
 
 ### [Security considerations for OEMs](device-experiences/OEM-security-considerations.md)
-#### [Bitlock device encryption for OEMs](device-experiences/OEM-device-encryption.md)
+#### [Bitlocker device encryption](device-experiences/OEM-device-encryption.md)
 #### [Virtualization-based security](device-experiences/OEM-VBS.md)
 #### [Trusted Plaform Module (TPM)](device-experiences/OEM-TPM.md)
 #### [Windows Defender Credential Guard](device-experiences/OEM-credential-guard.md)

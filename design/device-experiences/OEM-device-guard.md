@@ -1,5 +1,5 @@
 ---
-title: Device Guard hardware reuirements
+title: Device Guard hardware requirements
 description: Provides guidance on what an OEM should do to enable Device Guard
 MSHAttr:
 - 'PreferredSiteName:MSDN'

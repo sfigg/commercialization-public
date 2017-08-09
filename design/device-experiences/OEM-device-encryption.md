@@ -12,8 +12,8 @@ Bitlocker device encryption is a set of features that you as an Original Equipme
 
 **Note:** Windows 10 device encryption is enabled only after users sign in with a **Microsoft Account** or an **Azure Active Directory** account. Device encryption is not enabled with local accounts.
 
-Device encryption is enabled when:
-- The device contains a **TPM 2.0** (Trusted Platform Module) with PCR7 support
+Device encryption is enabled when the following conditions are met. 
+- The device contains a **TPM 2.0** (Trusted Platform Module) with PCR7 support. For more information, see [Trusted Plaform Module (TPM) 2.0 requirments]()
 - **UEFI Secure Boot** is enabled
 - **Platform Secure Boot** is enabled
 - **Direct memory access (DMA)** protections is enabled
