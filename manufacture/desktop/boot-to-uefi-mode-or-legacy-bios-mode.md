@@ -37,7 +37,7 @@ After Windows is installed, the device boots automatically using the same mode i
 
 ## Detect UEFI or BIOS mode on a factory floor
 
-Before Windows is installed, there's not an single automatic way to choose which mode the device boots to. Once the device boots to either Windows Setup or Windows PE, you can perform checks to make sure you're in the right mode before installing Windows:
+Before installing Windows, check to make sure your firmware is booted to the right mode, using any of these methods:
 
 *  **Use a script to check**. Windows PE: create a script that checks which mode the device is booted in before installing. See [WinPE: Boot in UEFI or legacy BIOS mode](winpe-boot-in-uefi-or-legacy-bios-mode.md).
 
