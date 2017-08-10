@@ -18,10 +18,8 @@ Why is the WinSxS folder so big? The short answer to this commonly asked questio
 
 For operating system files, it can appear that more than one copy of the same version of a file is stored in more than one place on the operating system, but there’s usually only one real copy of the file. The rest of the copies are just “projected” by hard linking from the component store. A *hard link* is a file system object that lets two files refer to the same location on disk. Some tools, such as the File Explorer, determine the size of directories without taking into account that the contained files might be hard linked. This might lead you to think that the WinSxS folder takes up more disk space than it really does.
 
-**Warning**  
-Some important system files are located only in the WinSxS folder. Deleting files from the WinSxS folder or deleting the entire WinSxS folder might severely damage your system, so that your PC might not boot, and make it impossible to update.
-
- 
+> [!WARNING]
+> Some important system files are located only in the WinSxS folder. Deleting files from the WinSxS folder or deleting the entire WinSxS folder might severely damage your system, so that your PC might not boot, and make it impossible to update.
 
 A new option has been added to the DISM tool for Windows 8.1 to help determine how much disk space the WinSxS folder really uses.
 
@@ -33,68 +31,27 @@ A new option has been added to the DISM tool for Windows 8.1 to help determine h
     Dism.exe /Online /Cleanup-Image /AnalyzeComponentStore
     ```
 
-    **Note**  
-    The **/AnalyzeComponentStore** option isn’t recognized on Windows 8 and earlier.
+    > [!NOTE]
+    > The **/AnalyzeComponentStore** option isn’t recognized on Windows 8 and earlier.
 
-     
+    The information returned is:
 
-   The information returned is:
+    | Title                                             | Description                                                                                                                                                                                                                                                                                                                               |
+    |:--------------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+    | Windows Explorer Reported Size of Component Store | This value the size of the WinSxS folder if computed by Windows Explorer. This value doesn’t factor in the use of hard links within the WinSxS folder.                                                                                                                                                                                    |
+    | Actual Size of Component Store                    | This value factors in hard links within the WinSxS folder. It doesn’t exclude files that are shared with Windows by using hard links.                                                                                                                                                                                                     |
+    | Shared with Windows                               | This value provides the size of files that are hard linked so that they appear both in the component store and in other locations (for the normal operation of Windows). This is included in the actual size, but shouldn’t be considered part of the component store overhead.                                                           |
+    | Backups and Disabled Features                     | This is the size of the components that are being kept to respond to failures in newer components or to provide the option of enabling more functionality. It also includes the size of component store metadata and side-by-side components. <br/><br/> This is included in the actual size and is part of the component store overhead. |
+    | Cache and Temporary Data                          | This is the size of files that are used internally by the component store to make component servicing operations faster. This is included in the actual size and is part of the component store overhead.                                                                                                                                 |
+    | Date of Last Cleanup                              | This is the date of the most recently completed component store cleanup.                                                                                                                                                                                                                                                                  |
+    | Number of Reclaimable Packages                    | This is the number of superseded packages on the system that component cleanup can remove.                                                                                                                                                                                                                                                |
+    | Component Store Cleanup Recommended               | This is a component store cleanup recommendation. Cleanup is recommended when performing a cleanup process may reduce the size of the component store overhead.                                                                                                                                                                           |
 
-    <table>
-    <colgroup>
-    <col width="50%" />
-    <col width="50%" />
-    </colgroup>
-    <thead>
-    <tr class="header">
-    <th align="left">Title</th>
-    <th align="left">Description</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td align="left"><p>Windows Explorer Reported Size of Component Store</p></td>
-    <td align="left"><p>This value the size of the WinSxS folder if computed by Windows Explorer. This value doesn’t factor in the use of hard links within the WinSxS folder.</p></td>
-    </tr>
-    <tr class="even">
-    <td align="left"><p>Actual Size of Component Store</p></td>
-    <td align="left"><p>This value factors in hard links within the WinSxS folder. It doesn’t exclude files that are shared with Windows by using hard links.</p></td>
-    </tr>
-    <tr class="odd">
-    <td align="left"><p>Shared with Windows</p></td>
-    <td align="left"><p>This value provides the size of files that are hard linked so that they appear both in the component store and in other locations (for the normal operation of Windows). This is included in the actual size, but shouldn’t be considered part of the component store overhead.</p></td>
-    </tr>
-    <tr class="even">
-    <td align="left"><p>Backups and Disabled Features</p></td>
-    <td align="left"><p>This is the size of the components that are being kept to respond to failures in newer components or to provide the option of enabling more functionality. It also includes the size of component store metadata and side-by-side components.</p>
-    <p>This is included in the actual size and is part of the component store overhead.</p></td>
-    </tr>
-    <tr class="odd">
-    <td align="left"><p>Cache and Temporary Data</p></td>
-    <td align="left"><p>This is the size of files that are used internally by the component store to make component servicing operations faster. This is included in the actual size and is part of the component store overhead.</p></td>
-    </tr>
-    <tr class="even">
-    <td align="left"><p>Date of Last Cleanup</p></td>
-    <td align="left"><p>This is the date of the most recently completed component store cleanup.</p></td>
-    </tr>
-    <tr class="odd">
-    <td align="left"><p>Number of Reclaimable Packages</p></td>
-    <td align="left"><p>This is the number of superseded packages on the system that component cleanup can remove.</p></td>
-    </tr>
-    <tr class="even">
-    <td align="left"><p>Component Store Cleanup Recommended</p></td>
-    <td align="left"><p>This is a component store cleanup recommendation. Cleanup is recommended when performing a cleanup process may reduce the size of the component store overhead.</p></td>
-    </tr>
-    </tbody>
-    </table>
+    Based on this analysis you can determine the overhead of the WinSxS folder by taking the sum of the backups and disabled features size with the cache and temporary data size.
 
-     
+    Example output:
 
-   Based on this analysis you can determine the overhead of the WinSxS folder by taking the sum of the backups and disabled features size with the cache and temporary data size.
-
-Example output:
-
-```
+    ```
     C:\>dism /online /cleanup-image /analyzecomponentstore
 
     Deployment Image Servicing and Management tool
@@ -120,8 +77,9 @@ Example output:
     Component Store Cleanup Recommended : No
 
     The operation completed successfully.
-```
-In this example, the WinSxS folder appears to be 4.98 GB, but the actual overhead (the sum of the size of backups and disabled features and the size of cache and temporary data) is 507.18 MB.
+    ```
+
+    In this example, the WinSxS folder appears to be 4.98 GB, but the actual overhead (the sum of the size of backups and disabled features and the size of cache and temporary data) is 507.18 MB.
 
 **Determine if you should clean up the component store (WinSxS folder) based on the analysis results**
 
@@ -149,13 +107,3 @@ In this example, the WinSxS folder appears to be 4.98 GB, but the actual overhea
 [How to create and manipulate NTFS junction points](http://support.microsoft.com/kb/205524)
 
 [DISM Operating System Package Servicing Command-Line Options](dism-operating-system-package-servicing-command-line-options.md)
-
- 
-
- 
-
-
-
-
-
-
