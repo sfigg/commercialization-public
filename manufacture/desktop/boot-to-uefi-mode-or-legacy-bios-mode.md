@@ -1,6 +1,6 @@
 ---
 author: kpacquer
-Description: Boot to UEFI Mode or Legacy BIOS mode
+Description: Boot to UEFI Mode or legacy BIOS mode
 ms.assetid: 04ad6b97-b41d-40fd-88a7-d63d4722c336
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Boot to UEFI Mode or Legacy BIOS mode
@@ -11,31 +11,31 @@ ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-# Boot to UEFI Mode or Legacy BIOS mode
+# Boot to UEFI Mode or legacy BIOS mode
 
 Choose UEFI or legacy BIOS modes while installing Windows. After Windows is installed, you can't easily change this without reformatting the drive. [Learn about the advantages of UEFI and GPT](windows-and-gpt-faq.md).
 
-In general, we recommend using the newer UEFI mode, as it includes more security features than the the legacy BIOS mode. In some situations like booting on a corporate network, you may need to boot to the legacy BIOS mode.
+In general, we recommend installing Windows using the newer UEFI mode, as it includes more security features than the legacy BIOS mode. In some situations like booting on a corporate network, you may need to boot to BIOS mode.
 
-## Open the firmware menus
+After Windows is installed, the device boots automatically using the same mode it was installed with.
 
-Try one of these methods to boot to the firmware menus: 
+## To boot to UEFI or BIOS:
 
-*  Tablets: Boot the device, and during startup, hold a button (often **Volume down**). 
-*  PCs: Boot the PC. As the firmware starts to run, press the key, for example, press the Esc, F2, F9, F12, or another key.
-*  If Windows is already installed on the device, select **Shift+Restart > Troubleshoot > Advanced options > UEFI Firmware settings**.
+1. Open the firmware menus. You can use any of these methods: 
 
-## Boot to a device while specifying UEFI or BIOS
+   *  Tablets: Boot the device, and during startup, hold a button (often **Volume down**). Search the manufacturer’s website to find which button to press. 
+   *  PCs: Boot the PC. As the firmware starts to run, press the key, for example, press the Esc, F2, F9, F12, or another key. Search the manufacturer’s website to find which key to press.
+   *  If Windows is already installed on the device, select **Shift+Restart > Troubleshoot > Advanced options > UEFI Firmware settings**.
 
-On the boot device menu, select the command that identifies both the firmware mode and the device. For example, select **UEFI: USB Drive** or **BIOS: Network/LAN**.
+2.  From the firmware menus, boot to UEFI or BIOS:
 
-You might see separate commands for the same device. For example, you might see **UEFI USB Drive** and **BIOS USB Drive**. Each command uses the same device and media, but boots the PC in a different firmware mode.
+    On the boot device menu, select the command that identifies both the firmware mode and the device. For example, select **UEFI: USB Drive** or **BIOS: Network/LAN**.
 
-Some devices only support one mode (either legacy BIOS or UEFI). Other devices will only allow you to boot to legacy BIOS mode by manually disabling the UEFI security features. To disable the security features, go to **Security > Secure Boot** and disable the feature. 
+    You might see separate commands for the same device. For example, you might see **UEFI USB Drive** and **BIOS USB Drive**. Each command uses the same device and media, but boots the PC in a different firmware mode.
 
-## Installing to UEFI or BIOS modes automatically
+    Some devices only support one mode (either UEFI or BIOS). Other devices will only allow you to boot to BIOS mode by manually disabling the UEFI security features. To disable the security features, go to **Security > Secure Boot** and disable the feature. 
 
-After Windows is installed, the device automatically will choose UEFI or BIOS, depending on how it was installed.
+## Detect UEFI or BIOS mode on a factory floor
 
 Before Windows is installed, there's not an single automatic way to choose which mode the device boots to. Once the device boots to either Windows Setup or Windows PE, you can perform checks to make sure you're in the right mode before installing Windows:
 
@@ -45,9 +45,9 @@ Before Windows is installed, there's not an single automatic way to choose which
 
 *  **Remove the UEFI or BIOS boot files**: Windows PE or Windows Setup: remove the files that Windows PE or Windows Setup to boot in UEFI or BIOS mode. When the device is booted in the wrong mode, it will immediately fail to boot, and you can begin troubleshooting right away.
 
-    -   **Boot only when in UEFI mode**: Remove the **bootmgr** file from the root of the Windows PE or Windows Setup media. This prevents the device from starting in legacy BIOS mode.
+    -   **Boot only when in UEFI mode**: Remove the **bootmgr** file from the root of the Windows PE or Windows Setup media. This prevents the device from starting in BIOS mode.
 
-    -   **Boot only when in legacy BIOS mode**: Remove the **efi** folder from the root of the Windows PE or Windows Setup media. This prevents the device from starting in UEFI mode.
+    -   **Boot only when in BIOS mode**: Remove the **efi** folder from the root of the Windows PE or Windows Setup media. This prevents the device from starting in UEFI mode.
 
 ## <span id="related_topics"></span>Related topics
 
