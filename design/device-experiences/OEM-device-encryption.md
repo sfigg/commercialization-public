@@ -10,13 +10,13 @@ MSHAttr:
 
 Bitlocker device encryption is a set of features that you as an Original Equipment Manufacturer (OEM) enable by providing the right set of hardware in the devices you sell. Without the proper hardware configuration, device encryption is not enabled. With the right hardware configurations, Windows 10 automatically encrypts a device.
 
-**Note:** Windows 10 device encryption is enabled only after users sign in with a **Microsoft Account** or an **Azure Active Directory** account. Device encryption is not enabled with local accounts.
 
 Device encryption is enabled when the following conditions are met. 
-- The device contains a **TPM 2.0** (Trusted Platform Module) with PCR7 support. For more information, see [Trusted Plaform Module (TPM) 2.0 requirments]()
+- The device contains a **TPM 2.0** (Trusted Platform Module) with PCR[7] support. For more information, see [Trusted Plaform Module (TPM) 2.0 requirments]()
 - **UEFI Secure Boot** is enabled
 - **Platform Secure Boot** is enabled
-- **Direct memory access (DMA)** protections is enabled
+- **Direct memory access (DMA)** protections are enabled
+- **MSA** or **AAD** account. Device encryption is enabled only after users sign in with a **Microsoft Account** or an **Azure Active Directory** account. Device encryption is not enabled with local accounts.
 
 The following list shows the hardware and tests that a device must pass before Windows 10 can enable device encryption. OEMs who want to create hardware that supports this capability must verify that their device passes these tests. If any test in this sequence fails, the remaining tests will also fail.
 

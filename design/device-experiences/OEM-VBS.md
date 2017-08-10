@@ -12,9 +12,14 @@ ms.technology: windows-oem
 ---
 
 ##Virtualization Based Security (VBS)
-Hardware-based security features, also called virtualization-based security or VBS, enforces configurable code integrity.
+Hardware-based security features, also called virtualization-based security or VBS, provides isolation of secure kernel from normal operating system. Vulnerabilities and Day zero attacks in the operating system cannot be exploited because of this isolation.
 
-##Virtualization Based Security (VBS) enablement of No-Execute protection for UEFI runtime services
+VBS requires: 
+* 64-bit CPU
+* CPU virtualization extensions plus extended page tables
+* Windows hypervisor
+
+###Virtualization Based Security (VBS) enablement of No-Execute protection for UEFI runtime services
 
 **Starting in Windows 10, Version 1703**, you must enable VBS. VBS sprovide No-Execute (NX) protection on UEFI runtime service code and data memory regions. 
 
