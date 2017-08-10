@@ -19,11 +19,14 @@ As an OEM you have an unique opportunity to impact the efficacy of the security 
 The following section describes the security hardware you should include in your systems and why.
 
 ### Unified Extensible Firmware Interface (UEFI) secure boot
-Switch legacy BIOS boot and CSM to UEFI and GPT
-What does UEFI secure boot do?
-What are the hardware opportunites
-What are the OEM requirements
-Note that this is not IT Pro or consumer content, link to such if available. 
+UEFI is a replacement for the older BIOS firmware interface and the Extensible Firmware Interface (EFI) 1.10 specifications. When the devices starts, the firmware interface controls the booting process of the PC, and then passes control to Windows or another operating system. UEFI enables security features such as Secure Boot and factory encrypted drives that help prevent untrusted code from running before the operating system is loaded. 
+
+Secure Boot requires UEFI 2.3.1 Errata C or higher.
+
+Switch legacy BIOS boot and CSM to UEFI and GPT 
+
+To learn more about the specific requirements for UEFI, see the Unified Extensible Firmware Interface specification from [http://www.uefi.org/specifications](http://www.uefi.org/specifications). 
+
 **Note:** If you are an IT Professional and want to understand how these features work in your enterprise, see [Bitlocker](https://docs.microsoft.com/en-us/windows/device-security/bitlocker/bitlocker-overview) content. 
 **Note:** If you are an Independent Hardware Vendor(IHV) and want to unknow how to configure XXX, see [Bitlocker](https://docs.microsoft.com/en-us/windows/device-security/bitlocker/bitlocker-overview) content. 
 ### Trusted boot

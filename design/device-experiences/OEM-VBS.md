@@ -14,10 +14,12 @@ ms.technology: windows-oem
 ##Virtualization Based Security (VBS)
 Hardware-based security features, also called virtualization-based security or VBS, provides isolation of secure kernel from normal operating system. Vulnerabilities and Day zero attacks in the operating system cannot be exploited because of this isolation.
 
-VBS requires: 
+VBS requires the following components be present and properly configured. 
 * 64-bit CPU
-* CPU virtualization extensions plus extended page tables
 * Windows hypervisor
+* CPU virtualization extensions (called "Intel VT-x" or "AMD-V")
+* second-level address translation (SLAT)
+In addition, hardware that includes input/output memory management units (IOMMUs) provides even stronger protections. 
 
 ###Virtualization Based Security (VBS) enablement of No-Execute protection for UEFI runtime services
 
