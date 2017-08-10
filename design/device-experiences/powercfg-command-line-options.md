@@ -34,6 +34,7 @@ The following command-line options are available for powercfg.
 > [!IMPORTANT]
 > To navigate the table horizontally, click on the table and then use the left and right scroll keys on your keyboard or use the scroll bar at the bottom of the table.
 
+> [!div class="mx-tableFixed"]
 <table>
 <colgroup>
 <col width="33%" />
