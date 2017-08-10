@@ -1,5 +1,5 @@
 ---
-author: Justinha
+author: kpacquer
 Description: Boot to UEFI Mode or Legacy BIOS mode
 ms.assetid: 04ad6b97-b41d-40fd-88a7-d63d4722c336
 MSHAttr: 'PreferredLib:/library/windows/hardware'
@@ -13,44 +13,43 @@ ms.technology: windows-oem
 
 # Boot to UEFI Mode or Legacy BIOS mode
 
+Choose UEFI or legacy BIOS modes while installing Windows. After Windows is installed, you can't easily change this without reformatting the drive. [Learn about the advantages of UEFI and GPT](windows-and-gpt-faq.md).
 
-Boot into UEFI mode or legacy BIOS-compatibility mode when installing Windows from your USB, DVD, or network location.
+In general, we recommend using the newer UEFI mode, as it includes more security features than the the legacy BIOS mode. In some situations like booting on a corporate network, you may need to boot to the legacy BIOS mode.
 
-If you install Windows using the wrong mode, you won’t be able to use the features of that firmware mode without reformatting the drive.
+## Open the firmware menus
 
-**Select the firmware mode during bootup**
+Try one of these methods to boot to the firmware menus: 
 
-1.  Boot the PC. As the firmware starts to run, press the key that opens the boot device menu. For example, press the Esc, F2, F9, F12, or other key to enter the firmware or boot menus.
+*  Tablets: Boot the device, and during startup, hold a button (often **Volume down**). 
+*  PCs: Boot the PC. As the firmware starts to run, press the key, for example, press the Esc, F2, F9, F12, or another key.
+*  If Windows is already installed on the device, select **Shift+Restart > Troubleshoot > Advanced options > UEFI Firmware settings**.
 
-2.  On the boot device menu, select the command that identifies both the firmware mode and the device. For example, select **UEFI USB Drive** or **Network - BIOS**.
+## Boot to a device while specifying UEFI or BIOS
 
-    **Note**  
-    You might see separate commands for the same device. For example, you might see **UEFI USB Drive** and **BIOS USB Drive**. Each command uses the same device and media, but boots the PC in a different firmware mode.
+On the boot device menu, select the command that identifies both the firmware mode and the device. For example, select **UEFI: USB Drive** or **BIOS: Network/LAN**.
 
-     
+You might see separate commands for the same device. For example, you might see **UEFI USB Drive** and **BIOS USB Drive**. Each command uses the same device and media, but boots the PC in a different firmware mode.
 
-**If a boot device option does not appear for your device:**
+Some devices only support one mode (either legacy BIOS or UEFI). Other devices will only allow you to boot to legacy BIOS mode by manually disabling the UEFI security features. To disable the security features, go to **Security > Secure Boot** and disable the feature. 
 
--   Check the options in the firmware menus to enable or disable BIOS-compatibility mode.
+## Installing to UEFI or BIOS modes automatically
 
--   To use BIOS-compatibility mode, check for options in the firmware menus to disable UEFI SecureBoot features.
+After Windows is installed, the device automatically will choose UEFI or BIOS, depending on how it was installed.
 
--   For older PCs (Windows® 7-era or earlier), look for options to **Boot from file**, and browse to the \\EFI\\BOOT\\BOOTX64.EFI file on that device.
+Before Windows is installed, there's not an single automatic way to choose which mode the device boots to. Once the device boots to either Windows Setup or Windows PE, you can perform checks to make sure you're in the right mode before installing Windows:
 
-**Use any of these methods to help make sure that Windows is installed using the correct firmware mode**
+*  **Use a script to check**. Windows PE: create a script that checks which mode the device is booted in before installing. See [WinPE: Boot in UEFI or legacy BIOS mode](winpe-boot-in-uefi-or-legacy-bios-mode.md).
 
-1.  If you install Windows by using Windows Setup or the Windows installation DVD, use preformatted hard drive on your destination PCs. Use the GPT file format for UEFI mode, or the MBR file format for BIOS mode. When Windows Setup runs, if the PC is booted to the wrong mode, Windows will fail to install. For more info, see [Windows Setup: Installing using the MBR or GPT partition style](windows-setup-installing-using-the-mbr-or-gpt-partition-style.md).
+*  **Use preformatted drives**. Windows PE or Windows Setup: use drives that have been preformatted using the GPT file format for UEFI mode, or the MBR file format for BIOS mode. Don't include any settings to automatically format the drive. When Windows Setup runs, if the PC is booted to the wrong mode, Windows will fail to install, and you can begin troubleshooting immediately. For more info, see [Windows Setup: Installing using the MBR or GPT partition style](windows-setup-installing-using-the-mbr-or-gpt-partition-style.md).
 
-2.  You can remove the UEFI or BIOS boot files from either Windows PE or Windows Setup. For example, if you only include boot files for UEFI mode on the Windows installation DVD, and during manufacturing you accidentally attempt to boot the PC to BIOS mode, the PC will immediately fail to boot, and you can begin troubleshooting right away.
+*  **Remove the UEFI or BIOS boot files**: Windows PE or Windows Setup: remove the files that Windows PE or Windows Setup to boot in UEFI or BIOS mode. When the device is booted in the wrong mode, it will immediately fail to boot, and you can begin troubleshooting right away.
 
-    -   **UEFI**: To prevent Windows Setup or Windows PE from booting in BIOS mode, remove the **bootmgr** file on the root of the media.
+    -   **Boot only when in UEFI mode**: Remove the **bootmgr** file from the root of the Windows PE or Windows Setup media. This prevents the device from starting in legacy BIOS mode.
 
-    -   **BIOS**: To prevent Windows Setup or Windows PE from booting in UEFI mode, remove the **efi** folder on the root of the media.
-
-3.  From Windows PE, you can check the [GetFirmwareEnvironmentVariable function](http://go.microsoft.com/fwlink/p/?LinkId=698644). For more info, see [WinPE: Boot in UEFI or legacy BIOS mode](winpe-boot-in-uefi-or-legacy-bios-mode.md).
+    -   **Boot only when in legacy BIOS mode**: Remove the **efi** folder from the root of the Windows PE or Windows Setup media. This prevents the device from starting in UEFI mode.
 
 ## <span id="related_topics"></span>Related topics
-
 
 [WinPE: Create USB Bootable drive](winpe-create-usb-bootable-drive.md)
 
