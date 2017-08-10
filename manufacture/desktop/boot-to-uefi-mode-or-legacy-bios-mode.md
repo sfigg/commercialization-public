@@ -13,9 +13,9 @@ ms.technology: windows-oem
 
 # Boot to UEFI Mode or legacy BIOS mode
 
-Choose UEFI or legacy BIOS modes while installing Windows. After Windows is installed, you can't easily change this without reformatting the drive. [Learn about the advantages of UEFI and GPT](windows-and-gpt-faq.md).
+Choose UEFI or legacy BIOS modes while installing Windows. After Windows is installed, you can't easily change this without reformatting the drive.
 
-In general, we recommend installing Windows using the newer UEFI mode, as it includes more security features than the legacy BIOS mode. In some situations like booting on a corporate network, you may need to boot to BIOS mode.
+In general, [we recommend installing Windows using the newer UEFI mode](windows-and-gpt-faq.md), as it includes more security features than the legacy BIOS mode. In some situations like booting on a legacy network, you may need to boot to legacy BIOS mode.
 
 After Windows is installed, the device boots automatically using the same mode it was installed with.
 
@@ -37,7 +37,7 @@ After Windows is installed, the device boots automatically using the same mode i
 
 ## Detect UEFI or BIOS mode on a factory floor
 
-Before installing Windows, check to make sure your firmware is booted to the right mode, using any of these methods:
+Before installing Windows, check to make sure your firmware is booted to the right mode using any of these methods:
 
 *  **Use a script to check**. Windows PE: create a script that checks which mode the device is booted in before installing. See [WinPE: Boot in UEFI or legacy BIOS mode](winpe-boot-in-uefi-or-legacy-bios-mode.md).
 
