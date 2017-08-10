@@ -14,20 +14,20 @@ ms.technology: windows-oem
 # Windows Defender Credential Guard hardware requirements
 
 Introduced in Windows 10 Enterprise and Windows Server 2016, Credential Guard uses virtualization-based security to isolate secrets so that only privileged system software can access them. With Credential Guard, Windows 10 implemented an architectural change that fundamentally prevents the current forms of the pass-the-hash (PtH) attack.
-In order for a device to support Crendential Guard as specified in the Windows Hardware Compatibility Requirements (WHCR), you as the OEM must provide the following hardware, software, or firmware features. 
-If you are an IT Pro looking for information on how to deploy Windows Defender Credential Guard, see the [Deploying Credential Guard](https://technet.microsoft.com/en-us/windows/mt796471.aspx) video. 
+
+For a device to support Crendential Guard as specified in the Windows Hardware Compatibility Requirements (WHCR), you as the OEM must provide the following hardware, software, or firmware features. 
 
 
+If you are an IT Pro looking for information on how to deploy Windows Defender Credential Guard, see [Protect derived domain credentials with Credential Guard](https://docs.microsoft.com/en-us/windows/access-protection/credential-guard/credential-guard#hardware-and-software-requirements), and the [Deploying Credential Guard](https://technet.microsoft.com/en-us/windows/mt796471.aspx) video.
 
-###Hyper-V Code Integrity (HVCI)
-Hyper-V Code Integrity (HVCI) is a feature of Device Guard that ensures only drivers, executables, and DLLs that comply with the Device Guard Code Integrity policy are allowed to run. 
+ 
 
 ###Firmware support for SMM protection
 The Windows SMM Security Mitigations Table (WSMT) specification contains details of an Advanced Configuration and Power Interface (ACPI) table that was created for use with Windows operating systems that support Windows virtualization-based security (VBS) features. For more information, see the Windows SMM Security Mitigations Table (WMST) specification.
 
 The security benefit is that vulnerabilities in UEFI runtime services, if any (such as in functions like UpdateCapsule and SetVariable), will be blocked from compromising VBS. This firmware protection also blocks additional security attacks against SMM.
 
-###Hardware-rooted Platform Secure Boot
+###Hardware-based Platform Secure Boot
 **Starting with Windows 10, version 1607 and Windows Server 2016**, Boot Integrity (known as Platform Secure Boot) must be supported. To learn more, see the [Hardware Compatibility Specification for Systems for Windows 10, version 1607](https://docs.microsoft.com/en-us/windows-hardware/design/compatibility/systems) under System.Fundamentals.Firmware.CS.UEFISecureBoot.ConnectedStandby. The Hardware Security Test Interface (HSTI) must be implemented. To learn more, see the [Hardware Security Testability Specification](https://msdn.microsoft.com/en-us/library/windows/hardware/mt712332(v=vs.85).aspx).
 
 Note:
@@ -48,7 +48,7 @@ As the OEM, you must provide the ability, in BIOS, to add ISV, OEM, or Enterpris
 
 There are two security benefits. 
 1. Enterprises can choose to allow proprietary EFI drivers/applications to run.
-2. emoving Microsoft UEFI CA from the Secure Boot database provides enterprises with full control over software that runs before the operating system boots.
+2. removing Microsoft UEFI CA from the Secure Boot database provides enterprises with full control over software that runs before the operating system boots.
 
 ###64-bit CPU
 Virtualization-Based Security (VBS) features requires Windows hypervisor, which is only supported on 64-bit processors. 

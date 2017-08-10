@@ -7,6 +7,9 @@ MSHAttr:
 ---
 
 # Bitlocker device encryption hardware requirements
+		Preboot memory protection
+Encrypted Individual Files and Folders (EFS)
+
 
 Bitlocker device encryption is a set of features that you as an Original Equipment Manufacturer (OEM) enable by providing the right set of hardware in the devices you sell. Without the proper hardware configuration, device encryption is not enabled. With the right hardware configurations, Windows 10 automatically encrypts a device. This topic, written for OEMs, describes what hardware requirements you have to meet to enable Bitlocker device encryption. 
 
