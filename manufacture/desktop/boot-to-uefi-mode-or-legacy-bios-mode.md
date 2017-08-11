@@ -23,10 +23,10 @@ After Windows is installed, the device boots automatically using the same mode i
 
 1. Open the firmware menus. You can use any of these methods: 
 
-   *  Tablets: Boot the device, and during startup, hold a button (often **Volume down**). Search the manufacturer’s website to find which button to press. 
-   *  PCs: Boot the PC. As the firmware starts to run, press the key, for example, press the Esc, F2, F9, F12, or another key. Search the manufacturer’s website to find which key to press.
-   *  If Windows is already installed on the device, select **Shift+Restart > Troubleshoot > Advanced options > UEFI Firmware settings**.
-
+   *  Boot the PC, and press the manufacturer’s key to open the menus. Common keys used: **Esc, Delete, F1, F2, F10, F11, or F12**. On tablets, common buttons are **Volume up or Volume down**. During startup, there’s often a screen that mentions the key. If there’s not one, or if the screen goes by too fast to see it, check your manufacturer’s site. 
+   
+   *  Or, if Windows is already installed, from either the Sign on screen or the Start menu, select **Power (![Power button icon](images/power.png)) >** hold **Shift** while selecting **Restart**. Select **Troubleshoot > Advanced options > UEFI Firmware settings**. 
+      
 2.  From the firmware menus, boot to UEFI or BIOS:
 
     On the boot device menu, select the command that identifies both the firmware mode and the device. For example, select **UEFI: USB Drive** or **BIOS: Network/LAN**.
