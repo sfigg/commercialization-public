@@ -24,10 +24,10 @@ If you are an OEM building secure systems, you must provide the hardware to enab
 MOR, ASLR
 
 Exploit Guard requires the following hardware. 
-| Hardware requirement | Details | Benefit |
-|----------------------|---------|---------|
-| Hyper-V Code Integrity (HVCI) | HVCI) is a feature of Windows Defender Exploit Guard that ensures only drivers, executables, and DLLs that comply with the Windows Defender Application Control Code Integrity policy are allowed to run. | |
-| Virtualization-based security (VBS) | In order for VBS to function, you as the OEM must provide CPU Virtualization extensions (called "Intel VT-x" or "AMD-V") and second-level address translation (SLAT). When the enterprise administrators enable the features associated with CPU virtualization extensions and SLAT, the Code Integrity service can run alongside the kernel in a Windows hypervisor-protected container. In addition, hardware that includes input/output memory management units (IOMMUs) provides even stronger protections. | |
+| Hardware requirement | Details |
+|----------------------|---------|
+| Hyper-V Code Integrity (HVCI) | HVCI is a feature of Windows Defender Exploit Guard that ensures only drivers, executables, and DLLs that comply with the Windows Defender Application Control Code Integrity policy are allowed to run. |
+| Virtualization-based security (VBS) | In order for VBS to function, you as the OEM must provide CPU Virtualization extensions (called "Intel VT-x" or "AMD-V") and second-level address translation (SLAT). When the enterprise administrators enable the features associated with CPU virtualization extensions and SLAT, the Code Integrity service can run alongside the kernel in a Windows hypervisor-protected container. In addition, hardware that includes input/output memory management units (IOMMUs) provides even stronger protections. |
 
 
 #Application control
