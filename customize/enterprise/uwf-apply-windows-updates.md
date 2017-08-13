@@ -25,10 +25,8 @@ UWF servicing mode uses the following files to when it applies Windows updates t
 
 -   UwfServicingMasterScript.cmd script
 
-**Note**  
-The master servicing script can be modified to service third-party applications, service custom OEM applications, or call custom OEM servicing scripts.
-
- 
+> [!NOTE]
+> The master servicing script can be modified to service third-party applications, service custom OEM applications, or call custom OEM servicing scripts.
 
 UWF servicing supports the following types of Windows updates:
 
@@ -60,31 +58,24 @@ You can follow these steps to apply Windows updates to your device.
 
     On restart, the device will automatically sign in to the servicing account and servicing will start.
 
-    **Important**  
-    The default servicing account that is automatically created and used for servicing is named **UWF-Servicing**. It is important that you do not have a user account that has that same name on a device before starting UWF servicing.
-
-     
+    > [!IMPORTANT]
+    > The default servicing account that is automatically created and used for servicing is named **UWF-Servicing**. It is important that you do not have a user account that has that same name on a device before starting UWF servicing.
 
     Once servicing has started, no user interaction is required. The system may restart if it is required by the Windows updates that are installing. If a restart is required, the system will re-enter servicing mode on restart and continue until all updates have been installed.
 
     While servicing is underway, the UwfServicingScr.scr screen saver displays on the device.
 
-    **Note**  
-    The UwfServicingScr.scr screen saver that is included with Windows 10 Enterprise is a standard Windows screen saver and can be replaced by a custom OEM screen saver if required.
-
-     
+    > [!NOTE]
+    > The UwfServicingScr.scr screen saver that is included with Windows 10 Enterprise is a standard Windows screen saver and can be replaced by a custom OEM screen saver if required.
 
     When Windows update servicing is finished, the system will disable UWF servicing and restart the system with UWF-protection enabled and all file and registry exclusions restored to their original pre-servicing state.
 
-    **Note**  
-    Be aware that during UWF servicing in Windows 10 Enterprise, Windows Update automatically accepts all Microsoft Software License Terms.
+    > [!NOTE]
+    > Be aware that during UWF servicing in Windows 10 Enterprise, Windows Update automatically accepts all Microsoft Software License Terms.
 
-     
+> [!NOTE]
+> If Windows updates cannot be installed or return an error, servicing will be disabled and the system will restart with UWF-protection re-enabled and all file and registry exclusions restored to their original pre-servicing state.
 
-**Note**  
-If Windows updates cannot be installed or return an error, servicing will be disabled and the system will restart with UWF-protection re-enabled and all file and registry exclusions restored to their original pre-servicing state.
-
- 
 
 ## Related topics
 
@@ -94,14 +85,3 @@ If Windows updates cannot be installed or return an error, servicing will be dis
 [UWF master servicing script](uwf-master-servicing-script.md)
 
 [UWF servicing screen saver](uwf-servicing-screen-saver.md)
-
- 
-
- 
-
-
-
-
-
-
-
