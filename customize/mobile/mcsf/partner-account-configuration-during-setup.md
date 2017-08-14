@@ -239,32 +239,30 @@ Partners must provide three localized strings: partner name, name(s) of the acco
 The following screenshots show what a partner setup app's UI might look like and some of the tasks that the app may walk the user through during account setup.
 
 <table>
-<tbody>
-<tr class="odd">
-<td>Screen 1</td>
-<td>Screen 2</td>
-<td>Screen 3</td>
-</tr>
-<tr class="even">
-<td><p><img src="images/windows-mo-samplelayouts-01.png" alt="sample app ui 1" style="width: 126px;" /></p></td>
-<td><p><img src="images/windows-mo-samplelayouts-02.png" alt="sample app ui 2" style="width: 126px;" /></p></td>
-<td><p><img src="images/windows-mo-samplelayouts-03.png" alt="sample app 3" style="width: 126px;" /></p></td>
-</tr>
-<tr class="odd">
-<td>Screen 4</td>
-<td>Screen 5</td>
-<td>Screen 6</td>
-</tr>
-<tr class="even">
-<td><p><img src="images/windows-mo-samplelayouts-04.png" alt="sample layout 4" style="width: 126px;" /></p></td>
-<td><p><img src="images/windows-mo-samplelayouts-05.png" alt="sample app screen 5" style="width: 126px;" /></p></td>
-<td><p><img src="images/windows-mo-samplelayouts-06.png" alt="sample app screen 6" style="width: 126px;" /></p></td>
-</tr>
-<tr class="odd">
-<td>Screen 7</td>
-</tr>
-<tr class="even">
-<td><p><img src="images/windows-mo-samplelayouts-07.png" alt="sample app screen 7" style="width: 126px;" /></p></td>
-</tr>
-</tbody>
+    <tr>
+        <td>Screen 1</td>
+        <td>Screen 2</td>
+        <td>Screen 3</td>
+    </tr>
+    <tr>
+        <td><img src="images/windows-mo-samplelayouts-01.png" style="width: 180px; height=320px;" alt="sample app ui 1" /></td>
+        <td><img src="images/windows-mo-samplelayouts-02.png" style="width: 180px; height=320px;" alt="sample app ui 2" /></td>
+        <td><img src="images/windows-mo-samplelayouts-03.png" style="width: 180px; height=320px;" alt="sample app 3" /></td>
+    </tr>
+    <tr>
+        <td>Screen 4</td>
+        <td>Screen 5</td>
+        <td>Screen 6</td>
+    </tr>
+    <tr>
+        <td><img src="images/windows-mo-samplelayouts-04.png" style="width: 180px; height=320px;" alt="sample layout 4" /></td>
+        <td><img src="images/windows-mo-samplelayouts-05.png" style="width: 180px; height=320px;" alt="sample app screen 5" /></td>
+        <td><img src="images/windows-mo-samplelayouts-06.png" style="width: 180px; height=320px;" alt="sample app screen 6" /></td>
+    </tr>
+    <tr>
+        <td>Screen 7</td>
+    </tr>
+    <tr>
+        <td><img src="images/windows-mo-samplelayouts-07.png" style="width: 180px; height=320px;" alt="sample app screen 7" /></td>
+    </tr>
 </table>
