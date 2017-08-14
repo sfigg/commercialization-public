@@ -241,8 +241,8 @@ The following screenshots show what a partner setup app's UI might look like and
 |                                                                |                                                                |                                                                |
 |:---------------------------------------------------------------|:---------------------------------------------------------------|:---------------------------------------------------------------|
 | Screen 1                                                       | Screen 2                                                       | Screen 3                                                       |
-| ![sample app ui 1](images/windows-mo-samplelayouts-01.png)     | ![sample app ui 2](images/windows-mo-samplelayouts-02.png)     | ![sample app 3](images/windows-mo-samplelayouts-03.png)        |
+| ![sample app ui 1](images/windows-mo-samplelayouts-01.png)     | ![sample app ui 2](images/windows-mo-samplelayouts-02.png)     | ![sample app 3](images/windows-mo-samplelayouts-03.png){:width="50%"}         |
 | Screen 4                                                       | Screen 5                                                       | Screen 6                                                       |
-| ![sample layout 4](images/windows-mo-samplelayouts-04.png)     | ![sample app screen 5](images/windows-mo-samplelayouts-05.png) | ![sample app screen 6](images/windows-mo-samplelayouts-06.png) |
+| ![sample layout 4](images/windows-mo-samplelayouts-04.png)     | ![sample app screen 5](images/windows-mo-samplelayouts-05.png) | ![sample app screen 6](images/windows-mo-samplelayouts-06.png){:width="50%"}  |
 | Screen 7                                                       |                                                                |                                                                |
 | ![sample app screen 7](images/windows-mo-samplelayouts-07.png) |                                                                |                                                                |
