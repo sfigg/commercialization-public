@@ -33,7 +33,7 @@ Bitlocker device encryption is enabled when the following conditions are met. OE
         2.	Excluding Thunderbolt, HSTI must report no non-allowed DMA busses.
         3.	If Thunderbolt is present, HSTI must report that Thunderbolt is configured securely (security level must be SL1 – “User Authorization” or higher). |
  
-### Un-allowed DMA capable bus/device(s) detected
+### "Un-allowed DMA capable bus/device(s) detected" error
 This error means that the system detected at least one DMA capable bus or device that may expose a DMA threat.  To determine which bus/device triggered this error, run the Microsoft.UefiSecureBootLogo.CS.HardwareSecurity.Tests.ProbeForInsecureDirectMemoryAccessBusses HLK test. 
 If the listed bus has only has internal facing access and with no ports exposed on the exterior of the device, then the OEM should consult with the IHV to ensure the bus is correctly identified before adding it to the "allowed" list as described below.
  ```
@@ -47,7 +47,7 @@ For example, for a bus identified as “Contoso Root Port” with Vendor ID “0
  ```
 
 ### Disable device encryption
-OEMs can choose to disable device encryption and instead implement their own encryption technology on a device. To disable device encryption, use one of the following methods, which essentially do the same thing. 
+You as the OEM can choose to disable device encryption and instead implement your own encryption technology on a device. To disable device encryption, use one of the following methods, which essentially do the same thing. 
 
 - Choice One: Use an Unattend file and set [PreventDeviceEncryption](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-securestartup-filterdriver-preventdeviceencryption) to True. To learn more, see [Use an answer file with Sysprep](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/use-answer-files-with-sysprep).
 
