@@ -13,9 +13,9 @@ ms.technology: windows-oem
 
 # Boot to UEFI Mode or legacy BIOS mode
 
-Choose UEFI or legacy BIOS modes while installing Windows. After Windows is installed, you can't easily change this without reformatting the drive.
+Choose UEFI or legacy BIOS modes while installing Windows. After Windows is installed, if you need to switch firmware modes, you may be able to use the [MBR2GPT](https://docs.microsoft.com/en-us/windows/deployment/mbr-to-gpt) tool.
 
-In general, [we recommend installing Windows using the newer UEFI mode](windows-and-gpt-faq.md), as it includes more security features than the legacy BIOS mode. In some situations like booting on a legacy network, you may need to boot to legacy BIOS mode.
+In general, [we recommend installing Windows using the newer UEFI mode](windows-and-gpt-faq.md), as it includes more security features than the legacy BIOS mode. If you're booting from a network that only supports BIOS, you'll need to boot to legacy BIOS mode.
 
 After Windows is installed, the device boots automatically using the same mode it was installed with.
 
@@ -27,7 +27,7 @@ After Windows is installed, the device boots automatically using the same mode i
    
    *  Or, if Windows is already installed, from either the Sign on screen or the Start menu, select **Power (![Power button icon](images/power.png)) >** hold **Shift** while selecting **Restart**. Select **Troubleshoot > Advanced options > UEFI Firmware settings**. 
       
-2.  From the firmware menus, boot to UEFI or BIOS:
+2.  From the firmware menus, boot to drive or network while in UEFI or BIOS mode:
 
     On the boot device menu, select the command that identifies both the firmware mode and the device. For example, select **UEFI: USB Drive** or **BIOS: Network/LAN**.
 
@@ -35,13 +35,15 @@ After Windows is installed, the device boots automatically using the same mode i
 
     Some devices only support one mode (either UEFI or BIOS). Other devices will only allow you to boot to BIOS mode by manually disabling the UEFI security features. To disable the security features, go to **Security > Secure Boot** and disable the feature. 
 
-## Detect UEFI or BIOS mode on a factory floor
+    Some older PCs (Windows 7-era or earlier) support UEFI, but require you to browse to the boot file. From the firmware menus, look for the option: "Boot from file", then browse to \EFI\BOOT\BOOTX64.EFI on Windows PE or Windows Setup media.
+
+## Detecting UEFI or BIOS mode on a factory floor
 
 Before installing Windows, check to make sure your firmware is booted to the right mode using any of these methods:
 
 *  **Use a script to check**. Windows PE: create a script that checks which mode the device is booted in before installing. See [WinPE: Boot in UEFI or legacy BIOS mode](winpe-boot-in-uefi-or-legacy-bios-mode.md).
 
-*  **Use preformatted drives**. Windows PE or Windows Setup: use drives that have been preformatted using the GPT file format for UEFI mode, or the MBR file format for BIOS mode. Don't include any settings to automatically format the drive. When Windows Setup runs, if the PC is booted to the wrong mode, Windows will fail to install, and you can begin troubleshooting immediately. For more info, see [Windows Setup: Installing using the MBR or GPT partition style](windows-setup-installing-using-the-mbr-or-gpt-partition-style.md).
+*  **Use preformatted hard drives, and use a method that doesn't automatically format the drive.** Use drives that have been preformatted using the GPT file format for UEFI mode, or the MBR file format for BIOS mode. When the installation starts, if the PC is booted to the wrong mode, Windows will fail to install, and the technician can restart the PC in the correct firmware mode.
 
 *  **Remove the UEFI or BIOS boot files**: Windows PE or Windows Setup: remove the files that Windows PE or Windows Setup to boot in UEFI or BIOS mode. When the device is booted in the wrong mode, it will immediately fail to boot, and you can begin troubleshooting right away.
 
