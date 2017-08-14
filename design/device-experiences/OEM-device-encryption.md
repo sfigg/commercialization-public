@@ -7,7 +7,7 @@ MSHAttr:
 ---
 
 # Bitlocker device encryption hardware requirements
-		Preboot memory protection
+Preboot memory protection
 Encrypted Individual Files and Folders (EFS)
 
 
@@ -22,7 +22,7 @@ Bitlocker device encryption is enabled when the following conditions are met. OE
 |:-------------|:-------------|:------|
 | **TPM** | requires version 2.0 with PCR[7] support. For more information, see [Trusted Plaform Module (TPM) 2.0 requirments](OEM-TPM.md) | [System.Fundamentals.TPM20.TPM20](https://docs.microsoft.com/en-us/windows-hardware/design/compatibility/systems#systemfundamentalstpm20tpm20)|
 | **UEFI Secure Boot** | | [System.Fundamentals.Firmware.UEFISecureBoot](https://docs.microsoft.com/en-us/windows-hardware/design/compatibility/systems#systemfundamentalsfirmwareuefisecureboot) |
-| **Platform Secure Boot** | | |
+| **Platform Secure Boot** |For more information, see [Secure Boot](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/secure-boot-overview) | |
 | **Direct memory access (DMA)** | | |
 | **MSA** or **AAD** account | Device encryption is enabled only after users sign in with a **Microsoft Account** or an **Azure Active Directory** account; device encryption is not enabled with local accounts | |
 | **Advanced Encryption Standard (AES) acceleration** | | |
@@ -64,11 +64,11 @@ With encrypted drive, you can deliver enhanced security protection out-of-the-bo
 To enable support for encrypted hard drive, the device must meet the following requirements:
 
 * Self-encrypting drives that meet industry specifications of IEEE 1667, TCG OPAL (subset), and INCITS T13
-* UEFI 2.3.1 Class 2 implementation using GPT on the encrypted drive (to support boot)
+* UEFI 2.3.1 Class 2 implementation using GPT on the encrypted drive
 * TPM 2.0
 
 **Warning:** Self-encrypting hard drives and encrypted hard drives for Windows are not the same type of device. Encrypted hard drives for Windows require compliance for specific TCG protocols as well as IEEE 1667 compliance; self-Encrypting hard drives do not have these requirements. 
 
-**Note:** If you are an IT Professional and want to deploy encrypted hard drive, learn more in [Encrypted hard drive](https://docs.microsoft.com/en-us/windows/device-security/encrypted-hard-drive). 
+
 
 
