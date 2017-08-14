@@ -238,11 +238,33 @@ Partners must provide three localized strings: partner name, name(s) of the acco
 
 The following screenshots show what a partner setup app's UI might look like and some of the tasks that the app may walk the user through during account setup.
 
-|                                                                |                                                                |                                                                |
-|:---------------------------------------------------------------|:---------------------------------------------------------------|:---------------------------------------------------------------|
-| Screen 1                                                       | Screen 2                                                       | Screen 3                                                       |
-| ![sample app ui 1](images/windows-mo-samplelayouts-01.png)     | ![sample app ui 2](images/windows-mo-samplelayouts-02.png)     | ![sample app 3](images/windows-mo-samplelayouts-03.png){:width="50%"}         |
-| Screen 4                                                       | Screen 5                                                       | Screen 6                                                       |
-| ![sample layout 4](images/windows-mo-samplelayouts-04.png)     | ![sample app screen 5](images/windows-mo-samplelayouts-05.png) | ![sample app screen 6](images/windows-mo-samplelayouts-06.png){:width="50%"}  |
-| Screen 7                                                       |                                                                |                                                                |
-| ![sample app screen 7](images/windows-mo-samplelayouts-07.png) |                                                                |                                                                |
+<table>
+<tbody>
+<tr class="odd">
+<td>Screen 1</td>
+<td>Screen 2</td>
+<td>Screen 3</td>
+</tr>
+<tr class="even">
+<td><p><img src="images/windows-mo-samplelayouts-01.png" alt="sample app ui 1" style="width: 126px;" /></p></td>
+<td><p><img src="images/windows-mo-samplelayouts-02.png" alt="sample app ui 2" style="width: 126px;" /></p></td>
+<td><p><img src="images/windows-mo-samplelayouts-03.png" alt="sample app 3" style="width: 126px;" /></p></td>
+</tr>
+<tr class="odd">
+<td>Screen 4</td>
+<td>Screen 5</td>
+<td>Screen 6</td>
+</tr>
+<tr class="even">
+<td><p><img src="images/windows-mo-samplelayouts-04.png" alt="sample layout 4" style="width: 126px;" /></p></td>
+<td><p><img src="images/windows-mo-samplelayouts-05.png" alt="sample app screen 5" style="width: 126px;" /></p></td>
+<td><p><img src="images/windows-mo-samplelayouts-06.png" alt="sample app screen 6" style="width: 126px;" /></p></td>
+</tr>
+<tr class="odd">
+<td>Screen 7</td>
+</tr>
+<tr class="even">
+<td><p><img src="images/windows-mo-samplelayouts-07.png" alt="sample app screen 7" style="width: 126px;" /></p></td>
+</tr>
+</tbody>
+</table>
