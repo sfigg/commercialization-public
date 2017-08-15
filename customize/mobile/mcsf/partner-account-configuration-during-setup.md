@@ -169,31 +169,10 @@ MIDL bindings allow an app to be launched through a protocol and package family 
 
 We recommend that you use the following APIs when implementing your apps:
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>API</th>
-<th>Usecase</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>[Windows.System.Launcher.LaunchUriForResultsAsync](http://go.microsoft.com/fwlink/p/?LinkId=708268)</p></td>
-<td><p>Allows a parent app to launch a child app. The child app must return to the parent app. This achieves the hub and spoke model requirement for this customization (for partners that want to use this model).</p>
-<p>When using this API, keep in mind the memory usage for mobile devices. Every time the API is used, another child app is launched while requesting not to terminate the parent app, which means that it must be kept in memory.</p></td>
-</tr>
-<tr class="even">
-<td><p>[Windows.System.Launcher.LaunchUriAsync](http://go.microsoft.com/fwlink/p/?LinkId=708317)</p></td>
-<td><p>Allows forward navigation from App 1 to App 2. The second app is not a child app of the first app.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+API                                                                                                 | Usecase
+:---------------------------------------------------------------------------------------------------|:-------
+[Windows.System.Launcher.LaunchUriForResultsAsync](http://go.microsoft.com/fwlink/p/?LinkId=708268) | Allows a parent app to launch a child app. The child app must return to the parent app. This achieves the hub and spoke model requirement for this customization (for partners that want to use this model). <br/><br/> When using this API, keep in mind the memory usage for mobile devices. Every time the API is used, another child app is launched while requesting not to terminate the parent app, which means that it must be kept in memory.
+[Windows.System.Launcher.LaunchUriAsync](http://go.microsoft.com/fwlink/p/?LinkId=708317)           | Allows forward navigation from App 1 to App 2. The second app is not a child app of the first app.
 
 ## <a href="" id="configure-customization-settings"></a>Configure the customization settings
 
@@ -228,30 +207,10 @@ If the user selects a **Custom** configuration on the **Settings** screen in set
 
 The values supported by this setting are:
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Value</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>1 or 'Enable'</p></td>
-<td><p>Prompt the user to user to enable network connections before the app is run.</p></td>
-</tr>
-<tr class="even">
-<td><p>0 or 'Disable'</p></td>
-<td><p>Do not prompt the user to user to enable network connections before the app is run.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Value          | Description                                                                 |
+|:---------------|:----------------------------------------------------------------------------|
+| 1 or `Enable`  | Prompt the user to enable network connections before the app is run.        |
+| 0 or `Disable` | Do not prompt the user to enable network connections before the app is run. |
 
 ### Localized strings for partner name, account name, and Table of Contents
 
@@ -269,9 +228,8 @@ Partners must provide three localized strings: partner name, name(s) of the acco
 
 -   If you include support for multiple display languages, you must create a resource-only .dll that contains these three strings localized into every included language. 
 
-    **Note**  This capability is available only through the MCSF framework and will not work if you use the Windows provisioning framework.
-
-     
+    > [!NOTE]
+    > This capability is available only through the MCSF framework and will not work if you use the Windows provisioning framework.
 
     In the above sample customization answer file, remove the comments around the section "For multiple supported phone languages…". The sample shows an installed .dll file named DisplayNames.dll, and that the partner name is string 101 and the account names are string 102. The string for the Table of Contents is string 103. Update these values to match your implementation and update the path to the path of your installed application.
 
@@ -281,71 +239,30 @@ Partners must provide three localized strings: partner name, name(s) of the acco
 The following screenshots show what a partner setup app's UI might look like and some of the tasks that the app may walk the user through during account setup.
 
 <table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td>Screen 1</td>
-<td>Screen 2</td>
-<td>Screen 3</td>
-</tr>
-<tr class="even">
-<td><p><img src="images/windows-mo-samplelayouts-01.png" alt="sample app ui 1" /></p></td>
-<td><p><img src="images/windows-mo-samplelayouts-02.png" alt="sample app ui 2" /></p></td>
-<td><p><img src="images/windows-mo-samplelayouts-03.png" alt="sample app 3" /></p></td>
-</tr>
-</tbody>
+    <tr>
+        <td>Screen 1</td>
+        <td>Screen 2</td>
+        <td>Screen 3</td>
+    </tr>
+    <tr>
+        <td><img src="images/windows-mo-samplelayouts-01.png" style="width: 180px; height=320px;" alt="sample app ui 1" /></td>
+        <td><img src="images/windows-mo-samplelayouts-02.png" style="width: 180px; height=320px;" alt="sample app ui 2" /></td>
+        <td><img src="images/windows-mo-samplelayouts-03.png" style="width: 180px; height=320px;" alt="sample app 3" /></td>
+    </tr>
+    <tr>
+        <td>Screen 4</td>
+        <td>Screen 5</td>
+        <td>Screen 6</td>
+    </tr>
+    <tr>
+        <td><img src="images/windows-mo-samplelayouts-04.png" style="width: 180px; height=320px;" alt="sample layout 4" /></td>
+        <td><img src="images/windows-mo-samplelayouts-05.png" style="width: 180px; height=320px;" alt="sample app screen 5" /></td>
+        <td><img src="images/windows-mo-samplelayouts-06.png" style="width: 180px; height=320px;" alt="sample app screen 6" /></td>
+    </tr>
+    <tr>
+        <td>Screen 7</td>
+    </tr>
+    <tr>
+        <td><img src="images/windows-mo-samplelayouts-07.png" style="width: 180px; height=320px;" alt="sample app screen 7" /></td>
+    </tr>
 </table>
-
- 
-
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td>Screen 4</td>
-<td>Screen 5</td>
-<td>Screen 6</td>
-</tr>
-<tr class="even">
-<td><p><img src="images/windows-mo-samplelayouts-04.png" alt="sample layout 4" /></p></td>
-<td><p><img src="images/windows-mo-samplelayouts-05.png" alt="sample app screen 5" /></p></td>
-<td><p><img src="images/windows-mo-samplelayouts-06.png" alt="sample app screen 6" /></p></td>
-</tr>
-</tbody>
-</table>
-
- 
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td>Screen 7</td>
-</tr>
-<tr class="even">
-<td><p><img src="images/windows-mo-samplelayouts-07.png" alt="sample app screen 7" /></p></td>
-</tr>
-</tbody>
-</table>
-
- 
-
- 
-
- 
-
-
-
-
-
-
