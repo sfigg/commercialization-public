@@ -18,8 +18,8 @@ VBS requires the following components be present and properly configured.
 * 64-bit CPU
 * Windows hypervisor
 * CPU virtualization extensions (called "Intel VT-x" or "AMD-V")
-* second-level address translation (SLAT)
-In addition, hardware that includes input/output memory management units (IOMMUs) provides even stronger protections. 
+* Second-level address translation (SLAT)
+* [optional] Input/output memory management units (IOMMUs) provides even stronger protections
 
 ###Virtualization Based Security (VBS) enablement of No-Execute protection for UEFI runtime services
 
