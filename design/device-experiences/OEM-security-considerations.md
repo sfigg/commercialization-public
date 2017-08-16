@@ -21,9 +21,12 @@ To learn more about what you need to do in order to support UEFI, see [UEFI in W
 
 To learn more about the specific requirements for UEFI, refer to the Unified Extensible Firmware Interface specification from [http://www.uefi.org/specifications](http://www.uefi.org/specifications). 
 
-## Secure boot
-Secure Boot is a security standard developed by members of the PC industry to help make sure that your PC boots using only software that is trusted by the PC manufacturer.
+### Secure boot
+Secure Boot is a security standard developed by members of the PC industry to help make sure that your PC boots using only software that is trusted by the PC manufacturer. When the PC starts, the firmware checks the signature of each piece of boot software, including firmware drivers (Option ROMs), EFI applications, and the operating system. If the signatures are good, the PC boots, and the firmware gives control to the operating system.
 
+You as the OEM use instructions from the firmware manufacturer to create Secure Boot keys and to store them in the PC firmware. When you add UEFI drivers (also known as Option ROMs), you'll also need to make sure these are signed and included in the Secure Boot database. When you add UEFI drivers (also known as Option ROMs), you'll also need to make sure these are signed and included in the Secure Boot database. For info, see the _UEFI Validation Option ROM Validation Guidance_ section below.
+
+#### Secure boot hardware requirements
 The firmware requirements for Secure boot are listed here.
 - UEFI 2.3.1 Errata C or higher.
 - The platform exposes an interface that adheres to the profile of UEFI v2.3.1 Section 27.
@@ -36,7 +39,7 @@ The platform provides the EFI_HASH_PROTOCOL (per UEFI v2.3.1) for offloading cry
 
 To learn more about Secure boot including manufacturing requirements, see [Secure boot](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/secure-boot-overview).
 
-
+#### UEFI Validation Option ROM Guidance
 
 ### Hypervisor-protected code integrity (HVCI)
 HVCI is a system mitigation that protects kernel memory and the kernel mode code integrity process. It blocks malware that attempts to exploit kernel memory vulnerabilities (e.g. buffer overflows etc) because kernel memory pages are never writable and executable.
