@@ -13,15 +13,15 @@ ms.technology: windows-oem
 #Security considerations for Original Equipment Manufacturers (OEMs)
 As an OEM you have an unique opportunity to impact the efficacy of the security measures abailable to your customers. Customers want and need the ability to secure their devices. Windows 10 security features are built on top of security enabled hardware and firmware. That's where you come in. If you want to provide a differentiator for your devices, or to sell in the Enterprise space, you want to provide the latest hardware enhancements, which in turn allow Windows 10 to be configured for safety. 
 
-**Note:** If you are an IT Professional and want to deploy these features, learn more in the [Device Security](https://docs.microsoft.com/en-us/windows/device-security/) content. 
+**Note:** If you are an IT Professional and want to understand how these features work, or how to deploy them in your enterprise, see [Device Security](https://docs.microsoft.com/en-us/windows/device-security/). 
 
 ## Unified Extensible Firmware Interface (UEFI)
 UEFI is a replacement for the older BIOS firmware interface and the Extensible Firmware Interface (EFI) 1.10 specifications. When the devices starts, the firmware interface controls the booting process of the PC, and then passes control to Windows or another operating system. UEFI enables security features such as Secure Boot and factory encrypted drives that help prevent untrusted code from running before the operating system is loaded. 
 To learn more about what you need to do in order to support UEFI, see [UEFI in Windows](https://docs.microsoft.com/en-us/windows-hardware/drivers/bringup/uefi-in-windows).
 
-To learn more about the specific requirements for UEFI, see the Unified Extensible Firmware Interface specification from [http://www.uefi.org/specifications](http://www.uefi.org/specifications). 
+To learn more about the specific requirements for UEFI, refer to the Unified Extensible Firmware Interface specification from [http://www.uefi.org/specifications](http://www.uefi.org/specifications). 
 
-**Note:** If you are an IT Professional and want to understand how these features work in your enterprise, see [Bitlocker](https://docs.microsoft.com/en-us/windows/device-security/bitlocker/bitlocker-overview) content. 
+**Note:** If you are an IT Professional and want to understand how these features work, or how to deploy them in your enterprise, see [Bitlocker](https://docs.microsoft.com/en-us/windows/device-security/bitlocker/bitlocker-overview). 
 
 ## Secure boot
 Secure Boot is a security standard developed by members of the PC industry to help make sure that your PC boots using only software that is trusted by the PC manufacturer.
@@ -38,12 +38,6 @@ The platform provides the EFI_HASH_PROTOCOL (per UEFI v2.3.1) for offloading cry
 
 To learn more about Secure boot including manufacturing requirements, see [Secure boot](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/secure-boot-overview)
 
-### Trusted boot
-
-### Measured boot
-
-### Early Launch Anti-Malware (ELAM)) 
-
 ### Hypervisor-protected code integrity (HVCI)
 HVCI is a system mitigation that protects kernel memory and the kernel mode code integrity process. It blocks malware that attempts to exploit kernel memory vulnerabilities (e.g. buffer overflows etc) because kernel memory pages are never writable and executable.
 
@@ -54,7 +48,7 @@ For more information, see [Virtualization-based Security (VBS)](OEM-VBS.md).
 ## Trusted Plaform Module (TPM) 2.0
 Trusted Platform Module (TPM) technology is designed to provide hardware-based, security-related functions. A TPM chip is a secure crypto-processor that helps you with actions such as generating, storing, and limiting the use of cryptographic keys. For more information, see [Trusted Plaform Module (TPM)](OEM-TPM.md). 
 
-**Note:** If you are an IT Professional and want to understand how TPM works in your enterprise, see [Trusted Platform Module](https://docs.microsoft.com/en-us/windows/device-security/tpm/trusted-platform-module-top-node)
+**Note:** If you are an IT Professional and want to understand how TPM works, see [Trusted Platform Module](https://docs.microsoft.com/en-us/windows/device-security/tpm/trusted-platform-module-top-node)
 
 ## Bitlocker device encryption
 Bitlocker device encryption is a set of features that you as an Original Equipment Manufacturer (OEM) enable by providing the right set of hardware in the devices you sell. Without the proper hardware configuration, device encryption is not enabled. With the right hardware configurations, Windows 10 automatically encrypts a device.
@@ -63,9 +57,9 @@ For more information on what hardware you need to provide to enable device encry
 **Note:** If you are an IT Professional and want to understand how to configure and deploy Bitlocker in your enterprise, see [Bitlocker](https://docs.microsoft.com/en-us/windows/device-security/bitlocker/bitlocker-overview) content. 
 
 ## Windows Defender Credential Guard
-To learn more about hardware requirements for Windows Defender Credential Guard, see [Windows Defender Credential Guard hardware requirements](OEM-credential-guard.md) 
+To learn more about hardware requirements for Windows Defender Credential Guard in your enterprise, see [Windows Defender Credential Guard hardware requirements](OEM-credential-guard.md) 
 
-**Note:** If you are an IT Professional and want to understand how to configure Windows Defender Credential Guard, see [Trusted Platform Module](https://docs.microsoft.com/en-us/windows/device-security/tpm/trusted-platform-module-top-node)
+**Note:** If you are an IT Professional and want to understand how to configure and deploy Windows Defender Credential Guard in your enterprise, see [Trusted Platform Module](https://docs.microsoft.com/en-us/windows/device-security/tpm/trusted-platform-module-top-node)
 
 ## Windows Defender Device Guard
 Windows Defender Device Guard is a combination of enterprise-related hardware and software security features that, when configured together, will lock a device down so that it can only run trusted applications that are defined in code integrity policies. Starting in Windows 10, 1703, the Windows Defender Device Guard features have been grouped into two new features: **Windows Defender Exploit Guard** and **Windows Defender Application control**. When these are both enabled, Windows Defender Device Guard is enabled. 
@@ -80,4 +74,8 @@ HLK tests
 driver security framework
 New IT Pro docs from Iaan and Justin
 
+## Still to cover
+Trusted boot
+Measured boot
+Early Launch Anti-Malware (ELAM)) 
 
