@@ -21,8 +21,6 @@ To learn more about what you need to do in order to support UEFI, see [UEFI in W
 
 To learn more about the specific requirements for UEFI, refer to the Unified Extensible Firmware Interface specification from [http://www.uefi.org/specifications](http://www.uefi.org/specifications). 
 
-**Note:** If you are an IT Professional and want to understand how these features work, or how to deploy them in your enterprise, see [Bitlocker](https://docs.microsoft.com/en-us/windows/device-security/bitlocker/bitlocker-overview). 
-
 ## Secure boot
 Secure Boot is a security standard developed by members of the PC industry to help make sure that your PC boots using only software that is trusted by the PC manufacturer.
 
@@ -36,22 +34,48 @@ When power is turned on, the system starts executing code in the firmware and us
 - The system must protect against rollback of firmware to older versions.
 The platform provides the EFI_HASH_PROTOCOL (per UEFI v2.3.1) for offloading cryptographic hash operations and the EFI_RNG_PROTOCOL (Microsoft defined) for accessing platform entropy.
 
-To learn more about Secure boot including manufacturing requirements, see [Secure boot](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/secure-boot-overview)
+To learn more about Secure boot including manufacturing requirements, see [Secure boot](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/secure-boot-overview).
+
+
 
 ### Hypervisor-protected code integrity (HVCI)
 HVCI is a system mitigation that protects kernel memory and the kernel mode code integrity process. It blocks malware that attempts to exploit kernel memory vulnerabilities (e.g. buffer overflows etc) because kernel memory pages are never writable and executable.
 
-## Virtualization-based Security (VBS)
+### Virtualization-based Security (VBS)
 Hardware-based security features, also called virtualization-based security or VBS, provides isolation of secure kernel from normal operating system. Vulnerabilities and Day zero attacks in the operating system cannot be exploited because of this isolation.
-For more information, see [Virtualization-based Security (VBS)](OEM-VBS.md). 
+
+VBS requires the following components be present and properly configured. 
+* 64-bit CPU
+* Windows hypervisor
+* CPU virtualization extensions (called "Intel VT-x" or "AMD-V")
+* Virtualization-based Security (VBS)
+* Second-level address translation (SLAT)
+* [optional] Input/output memory management units (IOMMUs) provides even stronger protections
+
+#### Virtualization-based Security (VBS) enablement of No-Execute protection for UEFI runtime services
+
+When you enable VBS, which is now required, VBS provides No-Execute (NX) protection for UEFI runtime service code and data memory regions. UEFI runtime service memory (not UEFI boot service memory) must meet the following requirements:
+
+* UEFI runtime service code must support read-only page protections, and UEFI runtime service data must not be executable.
+
+* Implement the UEFI 2.6 EFI_MEMORY_ATTRIBUTES_TABLE. All UEFI runtime service memory (code and data) must be described by this table.
+
+* PE sections must be page-aligned in memory, except in non-volatile storage.
+
+* The Memory Attributes Table must correctly mark code and data as RO/NX for configuration by Windows. 
+All entries must include attributes EFI_MEMORY_RO, EFI_MEMORY_XP, or both. Entries cannot be left with neither of these attributes, indicating memory that is both executable and writable. Memory must be either readable and executable or writeable and non-executable.
+
+The security benefit is that vulnerabilities in UEFI runtime services, if any (such as in functions like UpdateCapsule and SetVariable), will be blocked from compromising VBS.
 
 ## Trusted Plaform Module (TPM) 2.0
-Trusted Platform Module (TPM) technology is designed to provide hardware-based, security-related functions. A TPM chip is a secure crypto-processor that helps you with actions such as generating, storing, and limiting the use of cryptographic keys. For more information, see [Trusted Plaform Module (TPM)](OEM-TPM.md). 
+Trusted Platform Module (TPM) technology is designed to provide hardware-based, security-related functions. A TPM chip is a secure crypto-processor that helps you with actions such as generating, storing, and limiting the use of cryptographic keys. 
+
 
 **Note:** If you are an IT Professional and want to understand how TPM works, see [Trusted Platform Module](https://docs.microsoft.com/en-us/windows/device-security/tpm/trusted-platform-module-top-node)
 
 ## Bitlocker device encryption
 Bitlocker device encryption is a set of features that you as an Original Equipment Manufacturer (OEM) enable by providing the right set of hardware in the devices you sell. Without the proper hardware configuration, device encryption is not enabled. With the right hardware configurations, Windows 10 automatically encrypts a device.
+
 For more information on what hardware you need to provide to enable device encryption, see [Bitlocker device encryption hardware requirements](OEM-device-encryption.md)
 
 **Note:** If you are an IT Professional and want to understand how to configure and deploy Bitlocker in your enterprise, see [Bitlocker](https://docs.microsoft.com/en-us/windows/device-security/bitlocker/bitlocker-overview) content. 
@@ -70,12 +94,12 @@ To learn more about hardware requirements for Windows Defender Device Guard, inc
 ## Windows Hello
 
 ## Related topics
-HLK tests
-driver security framework
+- HLK tests
+- driver security framework
 New IT Pro docs from Iaan and Justin
 
 ## Still to cover
-Trusted boot
-Measured boot
-Early Launch Anti-Malware (ELAM)) 
+- Trusted boot
+- Measured boot
+- Early Launch Anti-Malware (ELAM)) 
 
