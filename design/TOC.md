@@ -113,12 +113,6 @@
 ##### [Sample report descriptors](component-guidelines/radial-controller-sample-report-descriptors.md)
 
 ### [Security considerations for OEMs](device-experiences/OEM-security-considerations.md)
-#### [Virtualization-based security](device-experiences/OEM-VBS.md)
-#### [Trusted Plaform Module (TPM)](device-experiences/OEM-TPM.md)
-#### [Bitlocker device encryption](device-experiences/OEM-device-encryption.md)
-#### [Windows Defender Credential Guard](device-experiences/OEM-credential-guard.md)
-#### [Windows Defender Device Guard](device-experiences/OEM-device-guard.md)
-
 
 ### [Thermal management in Windows](device-experiences/thermal-management-in-windows.md)
 #### [Design Guide](device-experiences/design-guide.md)
