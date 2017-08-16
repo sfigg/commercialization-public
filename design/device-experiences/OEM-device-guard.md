@@ -21,7 +21,9 @@ If you are an OEM building secure systems, you must provide the hardware to enab
 **Note**  If you are an enterprise IT administrator looking to deploy Device Guard, see [Requirements and deployment planning guidelines for Device Guard](http://go.microsoft.com/fwlink/?LinkId=822877).
 
 ## Windows Defender Exploit Guard
-MOR, ASLR, HIPS/EMET
+Look into the following: MOR, ASLR, HIPS/EMET
+
+Windows Defender Exploit Guard includes hypervisor-protected code integrity (HVCI), which is a kernel process mitigation that leverages virtualization based security to isolate the process that performs integrity validation and authorization for kernel-mode code. 
 
 Exploit Guard requires the following hardware. 
 | Hardware requirement | Details |
@@ -42,20 +44,14 @@ Exploit Guard requires the following hardware.
 | Securing Boot Configuration and Management | Required BIOS capability to allow adding of ISV, OEM, or Enterprise Certificate in Secure Boot DB at manufacturing time. Microsoft UEFI CA must be removed from Secure Boot DB. Support for 3rd-party UEFI modules is permitted but should leverage ISV-provided certificates or OEM certificate for the specific UEFI software.|
 
 | UEFI 2.3.1.c or higher firmware along with Secure Boot | UEFI Secure Boot ensures that the device boots with only authorized code in the pre-OS environment. For more information, see the Hardware Compatibility Specification for Systems for Windows 10 under [System.Fundamentals.Firmware.UEFISecureBoot](https://msdn.microsoft.com/en-us/library/windows/hardware/dn932805.aspx#systemfundamentalsfirmwareuefisecureboot). |
-
-
-
-
-
-
-
+| Firmware support for SMM protection | The Windows SMM Security Mitigations Table (WSMT) specification contains details of an Advanced Configuration and Power Interface (ACPI) table that was created for use with Windows operating systems that support Windows virtualization-based security (VBS) features.<br><br>• For more information, see the [Windows SMM Security Mitigations Table (WMST) specification](https://msdn.microsoft.com/en-us/library/windows/hardware/dn614617.aspx). |
 
 
 # Windows Defender Application control
 Starting with Windows 10, version 1709, the code integretity part of Device Guard has been split out into a separate feature known as Application control. 
 With appropriate hardware, application control can use virtualization-based security (VBS) in Windows 10 to isolate the Code Integrity service from the Microsoft Windows kernel itself. In this case, the Code Integrity service runs alongside the kernel in a Windows hypervisor-protected container.
   
-
+ WDAC is used to control what code can run on the system in either kernel or user mode. When HVCI is enabled, WDAC benefits from the increased kernel memory protections since the kernel mode CI checks occur in virtualization based security and user mode code integrity runs as part of the kernel itself and is thus protected against kernel memory exploits.
 
 
 ## Related topics

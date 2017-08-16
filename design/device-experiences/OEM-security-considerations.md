@@ -44,7 +44,8 @@ To learn more about Secure boot including manufacturing requirements, see [Secur
 
 ### Early Launch Anti-Malware (ELAM)) 
 
-
+### Hypervisor-protected code integrity (HVCI)
+HVCI is a system mitigation that protects kernel memory and the kernel mode code integrity process. It blocks malware that attempts to exploit kernel memory vulnerabilities (e.g. buffer overflows etc) because kernel memory pages are never writable and executable.
 
 ## Virtualization-based Security (VBS)
 Hardware-based security features, also called virtualization-based security or VBS, provides isolation of secure kernel from normal operating system. Vulnerabilities and Day zero attacks in the operating system cannot be exploited because of this isolation.
