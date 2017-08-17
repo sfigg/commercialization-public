@@ -113,7 +113,8 @@
 ##### [Sample report descriptors](component-guidelines/radial-controller-sample-report-descriptors.md)
 
 ### [Security considerations for OEMs](device-experiences/OEM-security-considerations.md)
-#### [UEFI requirements](device-experiences/OEM-UEFI.md)
+#### [UEFI firmware requirements](device-experiences/OEM-UEFI.md)
+#### [Validating Windows UEFI firmware update](device-experiences/OEM-validate-UEFI-update.md)
 #### [Virtualization-based security (VBS)](device-experiences/OEM-VBS.md)
 #### [Trusted Platform Module 2.0](device-experiences/OEM-TPM.md)
 #### [Secure Boot](device-experiences/OEM-secure-boot.md)
