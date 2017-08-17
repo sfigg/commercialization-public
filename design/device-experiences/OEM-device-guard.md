@@ -55,5 +55,6 @@ With appropriate hardware, application control can use virtualization-based secu
 
 
 ## Related topics
+- [Managing Managing Windows 10 Device Guard with Configuration Manager](https://blogs.technet.microsoft.com/enterprisemobility/2015/10/30/managing-windows-10-device-guard-with-configuration-manager/)
 
 
