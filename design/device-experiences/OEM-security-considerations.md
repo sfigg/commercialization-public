@@ -67,8 +67,3 @@ Starting in Windows 10, 1703, the Windows Defender Device Guard features have be
 - driver security framework
 - New IT Pro docs from Iaan and Justin
 
-### Still to cover
-- Trusted boot
-- Measured boot
-- Early Launch Anti-Malware (ELAM)) 
-
