@@ -15,7 +15,7 @@ Bitlocker device encryption is a set of features that you as an Original Equipme
 
 **Note:** If you are an IT Professional and want to deploy Bitlocker, learn more in [Bitlocker overview](https://docs.microsoft.com/en-us/windows/device-security/bitlocker/bitlocker-overviewe). 
 
-##Enable Bitlocker
+##  Enable Bitlocker
 Bitlocker device encryption is enabled when the following conditions are met. OEMs who want to create hardware that supports this capability must verify that their device passes the tests in the column on the right. If any test in this sequence fails, the remaining tests will also fail.
 
 | Requirement | Details | Test |
