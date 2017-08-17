@@ -20,15 +20,13 @@ Bitlocker device encryption is enabled when the following conditions are met. OE
 
 | Requirement | Details | Test |
 |:-------------|:-------------|:------|
-| **TPM** | requires version 2.0 with PCR[7] support. For more information, see [Trusted Plaform Module (TPM) 2.0 requirments](OEM-TPM.md) | [System.Fundamentals.TPM20.TPM20](https://docs.microsoft.com/en-us/windows-hardware/design/compatibility/systems#systemfundamentalstpm20tpm20)|
-| **UEFI Secure Boot** | | [System.Fundamentals.Firmware.UEFISecureBoot](https://docs.microsoft.com/en-us/windows-hardware/design/compatibility/systems#systemfundamentalsfirmwareuefisecureboot) |
-| **Platform Secure Boot** |For more information, see [Secure Boot](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/secure-boot-overview) | |
-| **Direct memory access (DMA)** | | |
+| TPM | requires version 2.0 with PCR[7] support. For more information, see [Trusted Plaform Module (TPM) 2.0 requirments](OEM-TPM.md) | [System.Fundamentals.TPM20.TPM20](https://docs.microsoft.com/en-us/windows-hardware/design/compatibility/systems#systemfundamentalstpm20tpm20)|
+| UEFI Secure Boot | | [System.Fundamentals.Firmware.UEFISecureBoot](https://docs.microsoft.com/en-us/windows-hardware/design/compatibility/systems#systemfundamentalsfirmwareuefisecureboot) |
+| Direct memory access (DMA) | | |
 | **MSA** or **AAD** account | Device encryption is enabled only after users sign in with a **Microsoft Account** or an **Azure Active Directory** account; device encryption is not enabled with local accounts | |
-| **Advanced Encryption Standard (AES) acceleration** | | |
-| **BCrypt provider**| required to access the platform's cryptographic acceleration capabilities. A BCrypt provider is used in both user mode and kernel mode to provide the necessary cryptographic run-time services. | |
-| **InstantGo (AOAC)** requirements or **HSTI 1.1a** validation | This requirement is met by implementing InstantGo (AOAC) requirements. You can see these requirements in the [requirements for UEFI secure boot](https://msdn.microsoft.com/windows/hardware/commercialize/design/compatibility/systems#systemfundamentalsfirmwarecsuefisecurebootconnectedstandby) topic.
-     | Starting with Windows 10, version, 1703, this requirement can be met through [HSTI test](https://msdn.microsoft.com/library/windows/hardware/mt712332.aspx):
+| Advanced Encryption Standard (AES) acceleration** | | |
+| BCrypt provider| required to access the platform's cryptographic acceleration capabilities. A BCrypt provider is used in both user mode and kernel mode to provide the necessary cryptographic run-time services. | |
+| HSTI validation | This requirement is met through [HSTI test](https://msdn.microsoft.com/library/windows/hardware/mt712332.aspx):
         1.	Platform Secure Boot self-test (or additional self-tests as configured in the registry) must be reported by HSTI as implemented and passed.
         2.	Excluding Thunderbolt, HSTI must report no non-allowed DMA busses.
         3.	If Thunderbolt is present, HSTI must report that Thunderbolt is configured securely (security level must be SL1 – “User Authorization” or higher). |

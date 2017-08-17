@@ -1,5 +1,5 @@
 ---
-title: Virtualization Based Security (VBS)
+title: Virtualization Based Security (VBS) hardware requirements
 description: Provides guidance on what an OEM should do to enable VBS
 MSHAttr:
 - 'PreferredSiteName:MSDN'
@@ -11,7 +11,7 @@ ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-##Virtualization Based Security (VBS)
+# Virtualization Based Security (VBS) hardware requirements
 Hardware-based security features, also called virtualization-based security or VBS, provides isolation of secure kernel from normal operating system. Vulnerabilities and Day zero attacks in the operating system cannot be exploited because of this isolation.
 
 VBS requires the following components be present and properly configured. 
@@ -21,7 +21,7 @@ VBS requires the following components be present and properly configured.
 * Second-level address translation (SLAT)
 * [optional] Input/output memory management units (IOMMUs) provides even stronger protections
 
-###Virtualization Based Security (VBS) enablement of No-Execute protection for UEFI runtime services
+## Virtualization Based Security (VBS) enablement of No-Execute protection for UEFI runtime services
 
 **Starting in Windows 10, Version 1703**, you must enable VBS. VBS sprovide No-Execute (NX) protection on UEFI runtime service code and data memory regions. 
 

@@ -113,9 +113,11 @@
 ##### [Sample report descriptors](component-guidelines/radial-controller-sample-report-descriptors.md)
 
 ### [Security considerations for OEMs](device-experiences/OEM-security-considerations.md)
+#### [UEFI requirements](device-experiences/OEM-UEFI.md)
 #### [Virtualization-based security (VBS)](device-experiences/OEM-VBS.md)
 #### [Trusted Platform Module 2.0](device-experiences/OEM-TPM.md)
-#### [itlocker device encryption hardware requirements](device-experiences/OEM-device-encryption.md)
+#### [Secure Boot](device-experiences/OEM-secure-boot.md)
+#### [Bitlocker device encryption hardware requirements](device-experiences/OEM-device-encryption.md)
 #### [Credential Guard hardware requirements](device-experiences/OEM-credential-guard.md)
 #### [Device Guard hardware requirments](device-experiences/OEM-device-guard.md)
 
