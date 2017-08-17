@@ -84,7 +84,7 @@ For more information on what hardware you need to provide to enable device encry
 
 **Note:** If you are an IT Professional and want to understand how to configure and deploy Bitlocker in your enterprise, see [Bitlocker](https://docs.microsoft.com/en-us/windows/device-security/bitlocker/bitlocker-overview) content. 
 
-##3 Windows Defender Credential Guard
+### Windows Defender Credential Guard
 To learn more about hardware requirements for Windows Defender Credential Guard in your enterprise, see [Windows Defender Credential Guard hardware requirements](OEM-credential-guard.md) 
 
 **Note:** If you are an IT Professional and want to understand how to configure and deploy Windows Defender Credential Guard in your enterprise, see [Trusted Platform Module](https://docs.microsoft.com/en-us/windows/device-security/tpm/trusted-platform-module-top-node)
