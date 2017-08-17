@@ -20,18 +20,18 @@ UEFI is a replacement for the older BIOS firmware interface and the Extensible F
 
 To learn more about what you need to do in order to support UEFI drivers, see [UEFI in Windows](https://docs.microsoft.com/en-us/windows-hardware/drivers/bringup/uefi-in-windows).
 
-To learn more about the specific requirements for UEFI, refer to the Unified Extensible Firmware Interface specification from [http://www.uefi.org/specifications](http://www.uefi.org/specifications). 
+To learn more about the requirements specified in the Unified Extensible Firmware Interface specification, see [http://www.uefi.org/specifications](http://www.uefi.org/specifications). 
 
 ## Secure boot
 Secure Boot is a security standard developed by members of the PC industry to help make sure that your PC boots using only software that is trusted by the PC manufacturer. When the PC starts, the firmware checks the signature of each piece of boot software, including firmware drivers (Option ROMs), EFI applications, and the operating system. If the signatures are good, the PC boots, and the firmware gives control to the operating system.
 
-To learn more about Secure boot including manufacturing requirements, see [Secure boot](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/secure-boot-overview).
+To learn more about Secure boot including manufacturing requirements, see [ecure Boot, trusted boot, and Measured boot](OEM-secure-boot.md).
 
 ## Hypervisor-protected code integrity (HVCI)
 HVCI is a system mitigation that protects kernel memory and the kernel mode code integrity process. It blocks malware that attempts to exploit kernel memory vulnerabilities (e.g. buffer overflows etc) because kernel memory pages are never writable and executable.
 
 ## Virtualization-based Security (VBS)
-Hardware-based security features, also called virtualization-based security or VBS, provides isolation of secure kernel from normal operating system. Vulnerabilities and Day zero attacks in the operating system cannot be exploited because of this isolation. For more information about VBS hardware requirements, see [](OEM-VBS.md)
+Hardware-based security features, also called virtualization-based security or VBS, provides isolation of secure kernel from normal operating system. Vulnerabilities and Day zero attacks in the operating system cannot be exploited because of this isolation. For more information about VBS hardware requirements, see [Virtualization Based Security (VBS) hardware requirements](OEM-VBS.md)
 
 
 ## Trusted Plaform Module (TPM) 2.0
