@@ -119,6 +119,7 @@
 #### [Trusted Platform Module 2.0](device-experiences/OEM-TPM.md)
 #### [Secure Boot](device-experiences/OEM-secure-boot.md)
 #### [Bitlocker device encryption hardware requirements](device-experiences/OEM-device-encryption.md)
+#### [Windows Defender trusted image identifier](device-experiences/OEM-trusted-image-identifier.md)
 #### [Credential Guard hardware requirements](device-experiences/OEM-credential-guard.md)
 #### [Device Guard hardware requirments](device-experiences/OEM-device-guard.md)
 #### [Application Guard hardware requirements](device-experiences/OEM-app-guard.md)

@@ -27,7 +27,7 @@ The Windows SMM Security Mitigations Table (WSMT) specification contains details
 
 The security benefit is that vulnerabilities in UEFI runtime services, if any (such as in functions like UpdateCapsule and SetVariable), will be blocked from compromising VBS. This firmware protection also blocks additional security attacks against SMM.
 
-###H ardware-based Platform Secure Boot
+### Hardware-based Platform Secure Boot
 **Starting with Windows 10, version 1607 and Windows Server 2016**, Boot Integrity (known as Platform Secure Boot) must be supported. To learn more, see the [Hardware Compatibility Specification for Systems for Windows 10, version 1607](https://docs.microsoft.com/en-us/windows-hardware/design/compatibility/systems) under System.Fundamentals.Firmware.CS.UEFISecureBoot.ConnectedStandby. The Hardware Security Test Interface (HSTI) must be implemented. To learn more, see the [Hardware Security Testability Specification](https://msdn.microsoft.com/en-us/library/windows/hardware/mt712332(v=vs.85).aspx).
 
 Note:
@@ -63,7 +63,7 @@ IOMMU enhances system resiliency against memory attacks. For more information, s
 
 ### Trusted Platform Module (TPM)
 
-You can use either discrete or firmware TPMs. TPM 2.0 provides protection for VBS encryption keys that are stored in the firmware. Credential Guard data is protected against attacks involving a physically present user with BIOS and hardware access.
+TPM 2.0 provides protection for VBS encryption keys that are stored in the firmware. Credential Guard data is protected against attacks involving a physically present user with BIOS and hardware access.
 
 ### UEFI 2.3.1.c or higher firmware along with Secure Boot
 
@@ -89,9 +89,10 @@ Two-step verification is a method of authentication that requires more than one 
  
 
 ## Related topics
+- [Windows Defender Device Guard hardware requirements](OEM-device-guard.md)
+- [Windows Defender Application Guard hardware requirements](OEM-app-guard.md)
+- [Bitlocker device encryption](OEM-device-encryption.md)
 
-
-****
 
 
  
