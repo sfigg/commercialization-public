@@ -14,7 +14,7 @@ ms.technology: windows-oem
 # Validating Windows UEFI firmware update
 
 
-This document lists the basic validation scenarios that are required to pass before signing-off on the Windows UEFI Firmware Update Platform functionality. Specification can be downloaded from [here](http://go.microsoft.com/fwlink/p/?linkid=523808).
+UEFI Firware update platform functionaliy requires that certain criteria passes before signing-off on the Windows UEFI Firmware Update Platform functionality.  
 
 ##  Prerequisites
 
@@ -53,7 +53,7 @@ This document lists the basic validation scenarios that are required to pass bef
     5.  Recommended: Check to make sure that the devices you are updating are also still functioning.
     6.  Set the rollback policy: Some of the scenarios might require rolling back firmware. Rollback is not a production scenario. In order to be able to rollback, a registry policy key has to be created. Create a REG\_DWORD key with the name “Policy” under the node HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\FirmwareResources\\{&lt;GUID&gt;} and set the value of the Policy key to 1. Note that the GUID should be replaced with the actual GUID from the ESRT.
 
-## Troubleshooting
+## Criteria for enabling UEFI Firware update platform functionaliy
 
 
 ### Each ESRT entry is successfully updatable through capsule

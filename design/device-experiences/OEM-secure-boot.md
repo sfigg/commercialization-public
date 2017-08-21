@@ -1,11 +1,11 @@
 ---
-title: Secure Boot, trusted boot, and Measured boot
+title: Secure boot, Trusted boot, and Measured boot
 description: Provides guidance on what an OEM should do to enable Securely booting a device
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.author: dawnwood
-ms.date: 07/20/2017
+ms.date: 08/30/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -14,11 +14,21 @@ ms.technology: windows-oem
 # Secure boot, Trusted boot, and Measured boot
 Secure boot is a security standard developed by members of the PC industry to help make sure that your PC boots using only software that is trusted by the PC manufacturer. When the PC starts, the firmware checks the signature of each piece of boot software, including firmware drivers (Option ROMs), EFI applications, and the operating system. If the signatures are good, the PC boots, and the firmware gives control to the operating system.
 
-You as the OEM use instructions from the firmware manufacturer to create Secure boot keys and to store them in the PC firmware. When you add UEFI drivers (also known as Option ROMs), you'll also need to make sure these are signed and included in the Secure Boot database. When you add UEFI drivers (also known as Option ROMs), you'll also need to make sure these are signed and included in the Secure Boot database. For info, see the _UEFI Validation Option ROM Validation Guidance_ section below.
+You as the OEM use instructions from the firmware manufacturer to create Secure boot keys and to store them in the PC firmware. When you add UEFI drivers (also known as Option ROMs), you'll also need to make sure these are signed and included in the Secure Boot database. When you add UEFI drivers (also known as Option ROMs), you'll also need to make sure these are signed and included in the Secure Boot database. For info, see the _UEFI Validation Option ROM Validation Guidance
+
+## Secure boot hardware requirements
+The firmware requirements for Secure boot are listed here.
+- UEFI 2.3.1 Errata C or higher.
+- The platform exposes an interface that adheres to the profile of UEFI v2.3.1 Section 27.
+- The platform must come provisioned with the correct keys in the UEFI Signature database (db) to allow Windows to boot. It must also support secure authenticated updates to the db and dbx per the spec.
+Storage of secure variables must be isolated from the running operating system such that they cannot be modified without detection.
+- All firmware components are signed using at least RSA-2048 with SHA-256.
+When power is turned on, the system starts executing code in the firmware and uses public key cryptography as per algorithm policy to verify the signatures of all images in the boot sequence, up to and including the Windows Boot Manager.
+- The system must protect against rollback of firmware to older versions.
+The platform provides the EFI_HASH_PROTOCOL (per UEFI v2.3.1) for offloading cryptographic hash operations and the EFI_RNG_PROTOCOL (Microsoft defined) for accessing platform entropy.
 
 ## Trusted boot
 Trusted boot takes over where Secure boot leaves off. The bootloader verifies the digital signature of the Windows 10 kernel before loading it. The Windows 10 kernel, in turn, verifies every other component of the Windows startup process, including the boot drivers, startup files, and ELAM. If a file has been modified, the bootloader detects the problem and refuses to load the corrupted component. Often, Windows 10 can automatically repair the corrupted component, restoring the integrity of Windows and allowing the PC to start normally.
-
 
 
 ## Early Launch Anti-Malware (ELAM)
@@ -37,16 +47,6 @@ Measured Boot uses the following process:
 4. The client sends the log to the server, possibly with other security information.
 5. Depending on the implementation and configuration, the server can now determine whether the client is healthy and grant the client access to either a limited quarantine network or to the full network.
 
-## Secure boot hardware requirements
-The firmware requirements for Secure boot are listed here.
-- UEFI 2.3.1 Errata C or higher.
-- The platform exposes an interface that adheres to the profile of UEFI v2.3.1 Section 27.
-- The platform must come provisioned with the correct keys in the UEFI Signature database (db) to allow Windows to boot. It must also support secure authenticated updates to the db and dbx per the spec.
-Storage of secure variables must be isolated from the running operating system such that they cannot be modified without detection.
-- All firmware components are signed using at least RSA-2048 with SHA-256.
-When power is turned on, the system starts executing code in the firmware and uses public key cryptography as per algorithm policy to verify the signatures of all images in the boot sequence, up to and including the Windows Boot Manager.
-- The system must protect against rollback of firmware to older versions.
-The platform provides the EFI_HASH_PROTOCOL (per UEFI v2.3.1) for offloading cryptographic hash operations and the EFI_RNG_PROTOCOL (Microsoft defined) for accessing platform entropy.
 
 ## Signature Databases and Keys
 Before the PC is deployed, the OEM stores the Secure Boot databases onto the PC. This includes the signature database (db), revoked signatures database (dbx), and Key Enrollment Key database (KEK) onto the PC. These databases are stored on the firmware nonvolatile RAM (NV-RAM) at manufacturing time.
