@@ -12,3 +12,9 @@ ms.technology: windows-oem
 ---
 
 # Windows Defender Application Guard hardware requirements
+
+
+## Related topics
+- [Windows Defender Device Guard hardware requirements](OEM-device-guard.md)
+- [Windows Defender Credential Guard hardware requirements](OEM-credential-guard.md)
+- [Bitlocker device encryption](OEM-device-encryption.md)
