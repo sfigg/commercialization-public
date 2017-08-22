@@ -37,7 +37,7 @@ Trusted Platform Module (TPM) technology is designed to provide hardware-based, 
 ## Secure boot
 Secure Boot is a security standard developed by members of the PC industry to help make sure that your PC boots using only software that is trusted by the PC manufacturer. When the PC starts, the firmware checks the signature of each piece of boot software, including firmware drivers (Option ROMs), EFI applications, and the operating system. If the signatures are good, the PC boots, and the firmware gives control to the operating system.
 
-To learn more about Secure boot including manufacturing requirements, see [Secure Boot, Trusted boot, and Measured boot](OEM-secure-boot.md).
+To learn more about Secure Boot requirements, see [Secure Boot, Trusted Boot, and Measured Boot](OEM-secure-boot.md).
 
 ## Bitlocker device encryption
 Bitlocker device encryption is a set of features that you as an Original Equipment Manufacturer (OEM) enable by providing the right set of hardware in the devices you sell. Without the proper hardware configuration, device encryption is not enabled. With the right hardware configurations, Windows 10 automatically encrypts a device.
@@ -65,7 +65,7 @@ Starting in Windows 10, 1703, the Windows Defender Device Guard features have be
 To learn more about hardware requirements for Windows Defender Application Guard, see [Windows Defender Application Guard hardware requirements](OEM-app-guard.md).
 
 ## Windows Defender System Guard
-
+System Guard maintains system integrity at boot and at runtime, and continues to validate system integrity at runtime. For more information about System Guard requirements, see [Windows Defender System Guard hardware requirements](OEM-system-guard.md)
 
 ## Windows Hello
 Window Defender System Guard provides advanced protection for Windows Hello by hardware isolating Windows Hello’s biometric capabilities and the user’s biometric data. To learn more about Windows Hello, see 

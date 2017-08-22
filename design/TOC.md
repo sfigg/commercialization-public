@@ -117,7 +117,7 @@
 #### [Validating Windows UEFI firmware update](device-experiences/OEM-validate-UEFI-update.md)
 #### [Virtualization-based security (VBS)](device-experiences/OEM-VBS.md)
 #### [Trusted Platform Module 2.0](device-experiences/OEM-TPM.md)
-#### [Secure Boot](device-experiences/OEM-secure-boot.md)
+#### [Secure Boot, Trusted Boot, and Measured Boot](device-experiences/OEM-secure-boot.md)
 #### [Bitlocker device encryption hardware requirements](device-experiences/OEM-device-encryption.md)
 #### [Windows Defender trusted image identifier](device-experiences/OEM-trusted-image-identifier.md)
 #### [Credential Guard hardware requirements](device-experiences/OEM-credential-guard.md)

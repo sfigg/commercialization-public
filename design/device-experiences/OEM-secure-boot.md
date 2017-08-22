@@ -69,5 +69,4 @@ You should contact your firmware manufacturer for tools and assistance in creati
 
 
 ## Related Topics
-
 - [Secure the Windows 10 boot process](https://docs.microsoft.com/en-us/windows/threat-protection/secure-the-windows-10-boot-process)
