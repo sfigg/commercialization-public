@@ -15,17 +15,12 @@ As an OEM you have an unique opportunity to impact the efficacy of the security 
 
 **Note:** If you are an IT Professional and want to understand how these features work, or how to deploy them in your enterprise, see [Device Security](https://docs.microsoft.com/en-us/windows/device-security/). 
 
-## Unified Extensible Firmware Interface (UEFI)
+## Unified Extensible Firmware Interface (UEFI) requirements
 UEFI is a replacement for the older BIOS firmware interface and the Extensible Firmware Interface (EFI) 1.10 specifications. When the devices starts, the firmware interface controls the booting process of the PC, and then passes control to Windows or another operating system. UEFI enables security features such as Secure Boot and factory encrypted drives that help prevent untrusted code from running before the operating system is loaded. Tp learn more aobut the OEM requirements for UEFI, see [UEFI firmware requirements](OEM-UEFI.md)
 
 To learn more about what you need to do in order to support UEFI drivers, see [UEFI in Windows](https://docs.microsoft.com/en-us/windows-hardware/drivers/bringup/uefi-in-windows).
 
 To learn more about the requirements specified in the Unified Extensible Firmware Interface specification, see [http://www.uefi.org/specifications](http://www.uefi.org/specifications). 
-
-## Secure boot
-Secure Boot is a security standard developed by members of the PC industry to help make sure that your PC boots using only software that is trusted by the PC manufacturer. When the PC starts, the firmware checks the signature of each piece of boot software, including firmware drivers (Option ROMs), EFI applications, and the operating system. If the signatures are good, the PC boots, and the firmware gives control to the operating system.
-
-To learn more about Secure boot including manufacturing requirements, see [Secure Boot, Trusted boot, and Measured boot](OEM-secure-boot.md).
 
 ## Hypervisor-protected code integrity (HVCI)
 HVCI is a system mitigation that protects kernel memory and the kernel mode code integrity process. It blocks malware that attempts to exploit kernel memory vulnerabilities (e.g. buffer overflows etc) because kernel memory pages are never writable and executable.
@@ -39,12 +34,20 @@ Trusted Platform Module (TPM) technology is designed to provide hardware-based, 
 
 **Note:** If you are an IT Professional and want to understand how TPM works in your enterprise, see [Trusted Platform Module](https://docs.microsoft.com/en-us/windows/device-security/tpm/trusted-platform-module-top-node)
 
+## Secure boot
+Secure Boot is a security standard developed by members of the PC industry to help make sure that your PC boots using only software that is trusted by the PC manufacturer. When the PC starts, the firmware checks the signature of each piece of boot software, including firmware drivers (Option ROMs), EFI applications, and the operating system. If the signatures are good, the PC boots, and the firmware gives control to the operating system.
+
+To learn more about Secure boot including manufacturing requirements, see [Secure Boot, Trusted boot, and Measured boot](OEM-secure-boot.md).
+
 ## Bitlocker device encryption
 Bitlocker device encryption is a set of features that you as an Original Equipment Manufacturer (OEM) enable by providing the right set of hardware in the devices you sell. Without the proper hardware configuration, device encryption is not enabled. With the right hardware configurations, Windows 10 automatically encrypts a device.
 
 For more information on what hardware you need to provide to enable device encryption, see [Bitlocker device encryption hardware requirements](OEM-device-encryption.md)
 
 **Note:** If you are an IT Professional and want to understand how to configure and deploy Bitlocker in your enterprise, see [Bitlocker](https://docs.microsoft.com/en-us/windows/device-security/bitlocker/bitlocker-overview) content. 
+
+## Windows Defender Trusted Image Identifier
+To learn more about providing a Windows Defender Trusted Image Identifier, see [Windows Defender Trusted Image Identifier](OEM-trusted-image-identifier.md)
 
 ## Windows Defender Credential Guard
 To learn more about hardware requirements for Windows Defender Credential Guard, see [Windows Defender Credential Guard hardware requirements](OEM-credential-guard.md) 
@@ -61,8 +64,11 @@ Starting in Windows 10, 1703, the Windows Defender Device Guard features have be
 ## Windows Defender Application Guard
 To learn more about hardware requirements for Windows Defender Application Guard, see [Windows Defender Application Guard hardware requirements](OEM-app-guard.md).
 
+## Windows Defender System Guard
+
+
 ## Windows Hello
-To learn more about Windows Hello, see 
+Window Defender System Guard provides advanced protection for Windows Hello by hardware isolating Windows Hello’s biometric capabilities and the user’s biometric data. To learn more about Windows Hello, see 
 
 ## Related topics
 - HLK tests
