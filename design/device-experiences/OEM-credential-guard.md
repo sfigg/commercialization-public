@@ -13,15 +13,11 @@ ms.technology: windows-oem
 
 # Windows Defender Credential Guard hardware requirements
 
-Introduced in Windows 10 Enterprise and Windows Server 2016, Credential Guard uses virtualization-based security to isolate secrets so that only privileged system software can access them. With Credential Guard, Windows 10 implemented an architectural change that fundamentally prevents the current forms of the pass-the-hash (PtH) attack.
+Credential Guard uses virtualization-based security to isolate secrets so that only privileged system software can access them. With Credential Guard, Windows 10 implemented an architectural change that fundamentally prevents the current forms of the pass-the-hash (PtH) attack.
 
 For a device to support Crendential Guard as specified in the Windows Hardware Compatibility Requirements (WHCR), you as the OEM must provide the following hardware, software, or firmware features. 
 
-
 If you are an IT Pro looking for information on how to deploy Windows Defender Credential Guard, see [Protect derived domain credentials with Credential Guard](https://docs.microsoft.com/en-us/windows/access-protection/credential-guard/credential-guard#hardware-and-software-requirements), and the [Deploying Credential Guard](https://technet.microsoft.com/en-us/windows/mt796471.aspx) video.
-
-## System Guard
-Window Defender System Guard provides advanced protection for Windows authentication by hardware isolating Credential Guard and it’s authentication capabilities and data. For more information about System Guard, see [Windows Defender System Guard hardware requirements](OEM-system-guard.md)
 
 ### Firmware support for SMM protection
 The Windows SMM Security Mitigations Table (WSMT) specification contains details of an Advanced Configuration and Power Interface (ACPI) table that was created for use with Windows operating systems that support Windows virtualization-based security (VBS) features. For more information, see the Windows SMM Security Mitigations Table (WMST) specification.
