@@ -47,7 +47,7 @@ For more information on what hardware you need to provide to enable device encry
 **Note:** If you are an IT Professional and want to understand how to configure and deploy Bitlocker in your enterprise, see [Bitlocker](https://docs.microsoft.com/en-us/windows/device-security/bitlocker/bitlocker-overview) content. 
 
 ## Windows Defender Credential Guard
-To learn more about hardware requirements for Windows Defender Credential Guard in your enterprise, see [Windows Defender Credential Guard hardware requirements](OEM-credential-guard.md) 
+To learn more about hardware requirements for Windows Defender Credential Guard, see [Windows Defender Credential Guard hardware requirements](OEM-credential-guard.md) 
 
 **Note:** If you are an IT Professional and want to understand how to configure and deploy Windows Defender Credential Guard in your enterprise, see [Trusted Platform Module](https://docs.microsoft.com/en-us/windows/device-security/tpm/trusted-platform-module-top-node)
 
@@ -58,9 +58,11 @@ Starting in Windows 10, 1703, the Windows Defender Device Guard features have be
 
 **Note**  If you are an enterprise IT administrator looking to deploy Device Guard, see [Requirements and deployment planning guidelines for Device Guard](http://go.microsoft.com/fwlink/?LinkId=822877).
 
+## Windows Defender Application Guard
+To learn more about hardware requirements for Windows Defender Application Guard, see [Windows Defender Application Guard hardware requirements](OEM-app-guard.md).
 
 ## Windows Hello
-
+To learn more about Windows Hello, see 
 
 ## Related topics
 - HLK tests
