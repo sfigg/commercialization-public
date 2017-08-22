@@ -80,7 +80,7 @@ You can use any name or file location by defining this in the registry key; the 
     </LayoutModificationTemplate>
     ```
 
-5.  Generalize the Windows image using Sysprep:
+5.  Generalize the Windows image using [Sysprep](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/sysprep--system-preparation--overview):
     ```
     Sysprep /generalize /oobe /shutdown
     ```
