@@ -20,12 +20,14 @@ Windows 10 and Windows Server 2016 automatically reduces the size of the WinSx
 
 You can also reduce the size of a Windows image using some of the same techniques, as discussed in [Reduce the Size of the Component Store in an Offline Windows Image](reduce-the-size-of-the-component-store-in-an-offline-windows-image.md).
 
-**Warning**  
-Deleting files from the WinSxS folder or deleting the entire WinSxS folder may severely damage your system so that your PC might not boot and make it impossible to update.
+To learn about finding the size of your WinSxS folder, see [Determine the actual size of the WinSxS folder.(determine-the-actual-size-of-the-winsxs-folder.md).
+
+> [!WARNING]
+> Deleting files from the WinSxS folder or deleting the entire WinSxS folder may severely damage your system so that your PC might not boot and make it impossible to update.
 
  
-
 In Windows 10 and Windows Server 2016, you have a number of ways to start the cleanup of the component store, which use a combination of package deletion and component compression to clean up the WinSxS folder:
+
 
 ## <span id="Task_Scheduler"></span><span id="task_scheduler"></span><span id="TASK_SCHEDULER"></span>Task Scheduler
 
