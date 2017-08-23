@@ -307,11 +307,10 @@
 #### [Additional Resources](component-guidelines/additional-resources.md)
 ### [Universal Serial Bus (USB)](component-guidelines/universal-serial-bus--usb-.md)
 
-
-
-
-## [Windows Hardware Compatibility Program for Windows 10, version 1607](compatibility/)
+## [Windows Hardware Compatibility Program for Windows 10, version 1709](compatibility/1709/)
 
 ## [Windows Hardware Compatibility Program for Windows 10, version 1703](compatibility/1703/)
+
+## [Windows Hardware Compatibility Program for Windows 10, version 1607](compatibility/)
 
 ## [Change history for Design](change-history-for-design.md)
