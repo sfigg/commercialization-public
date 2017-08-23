@@ -44,17 +44,15 @@ If you choose to run this task, the task will have a 1 hour timeout and may not 
 
 3.  Under **Selected Item**, click **Run**
 
-**Note**  
-The StartComponentCleanup task can also be started from the command line:
-
-**schtasks.exe /Run /TN "\\Microsoft\\Windows\\Servicing\\StartComponentCleanup"**
-
- 
+    ```
+    **schtasks.exe /Run /TN "\\Microsoft\\Windows\\Servicing\\StartComponentCleanup"**
+    ```
+    > [!NOTE]
+    > The StartComponentCleanup task can also be started from the command line.
 
 ## <span id="dism.exe"></span><span id="DISM.EXE"></span>Dism.exe
 
-
-Deployment Image Servicing and Management (DISM) is a command-line tool that allows you to install, uninstall, configure, and update Windows features, packages, drivers, and international settings. The **/Cleanup-Image** parameter of **Dism.exe** provides advanced users more options to further reduce the size of the WinSxS folder. For more information, see [DISM Operating System Package Servicing Command-Line Options](dism-operating-system-package-servicing-command-line-options.md).
+The **/Cleanup-Image** parameter of **Dism.exe** provides advanced users more options to further reduce the size of the WinSxS folder. For more information, see [DISM Operating System Package Servicing Command-Line Options](dism-operating-system-package-servicing-command-line-options.md).
 
 **Use the /StartComponentCleanup parameter**
 
@@ -76,8 +74,8 @@ Deployment Image Servicing and Management (DISM) is a command-line tool that all
     Dism.exe /online /Cleanup-Image /StartComponentCleanup /ResetBase
     ```
 
-    **Warning**  
-    All existing service packs and updates cannot be uninstalled after this command is completed. This will not block the uninstallation of future service packs or updates.
+    > [!WARNING]  
+    > All existing service packs and updates cannot be uninstalled after this command is completed. This will not block the uninstallation of future service packs or updates.
 
      
 
