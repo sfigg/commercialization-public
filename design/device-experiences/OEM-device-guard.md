@@ -21,7 +21,6 @@ If you are an OEM building secure systems, you must provide the hardware to enab
 **Note**  If you are an enterprise IT administrator looking to deploy Device Guard, see [Requirements and deployment planning guidelines for Device Guard](http://go.microsoft.com/fwlink/?LinkId=822877).
 
 ## Windows Defender Exploit Guard
-Look into the following: MOR, ASLR, HIPS/EMET
 
 Windows Defender Exploit Guard includes hypervisor-protected code integrity (HVCI), which is a kernel process mitigation that leverages virtualization based security to isolate the process that performs integrity validation and authorization for kernel-mode code. 
 
@@ -55,9 +54,7 @@ With appropriate hardware, application control can use virtualization-based secu
 
 
 ## Related topics
-- [Windows Defender Credential Guard hardware requirements](OEM-device-guard.md)
-- [Windows Defender Application Guard hardware requirements](OEM-app-guard.md)
-- [Bitlocker device encryption](OEM-device-encryption.md)
+- [Driver Compatibility with Device Guard on Windows 10](https://blogs.msdn.microsoft.com/windows_hardware_certification/2015/05/22/driver-compatibility-with-device-guard-in-windows-10)
 - [Managing Managing Windows 10 Device Guard with Configuration Manager](https://blogs.technet.microsoft.com/enterprisemobility/2015/10/30/managing-windows-10-device-guard-with-configuration-manager/)
 
 

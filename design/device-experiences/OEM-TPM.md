@@ -1,5 +1,5 @@
 ---
-title: Trusted Plaform Module (TPM) 2.0 requirements
+title: Trusted Plaform Module (TPM) 2.0 hardware requirements
 description: Provides guidance on what an OEM should do to enable TPM 2.0
 MSHAttr:
 - 'PreferredSiteName:MSDN'
@@ -11,7 +11,7 @@ ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-#Trusted Platform Module 2.0 requirements
+#Trusted Platform Module 2.0 hardware requirements
 Trusted Platform Module (TPM) technology is designed to provide hardware-based, security-related functions. A TPM chip is a secure crypto-processor that helps you with actions such as generating, storing, and limiting the use of cryptographic keys. The chip includes multiple physical security mechanisms to make it tamper resistant, and malicious software is unable to tamper with the security functions of the TPM. 
 
 Traditionally, TPMs have been discrete chips soldered to a computer’s motherboard. Such implementations allow you as the original equipment manufacturer (OEM) to evaluate and certify the TPM separate from the rest of the system. Although discrete TPM implementations are still common, they can be problematic for integrated devices that are small or have low power consumption. Some newer TPM implementations integrate TPM functionality into the same chipset as other platform components while still providing logical separation similar to discrete TPM chips.
