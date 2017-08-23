@@ -1,5 +1,5 @@
 ---
-author: Justinha
+author: themar
 Description: Clean Up the WinSxS Folder
 ms.assetid: 67fe462d-cda1-4f2e-9652-62c374a6be97
 MSHAttr: 'PreferredLib:/library/windows/hardware'
@@ -13,19 +13,22 @@ ms.technology: windows-oem
 
 # Clean Up the WinSxS Folder
 
+This topic is about the different ways to reduce the size of the WinSxS folder on a running version of Windows 10.
 
-One commonly asked question is can I delete the WinSxS folder to regain some disk space? The short answer is no. However, there are ways to reduce the size of the WinSxS folder. For more information about the WinSxS folder, see [Manage the Component Store](manage-the-component-store.md). This topic was written to provide information about the different ways to reduce the size of the WinSxS folder on a running version of Windows 10.
+One commonly asked question is, "Can I delete the WinSxS folder to regain some disk space?" The short answer is no. You can, however, reduce the size of the WinSxS folder using tools built into Windows. For more information about the WinSxS folder, see [Manage the Component Store](manage-the-component-store.md). 
 
-Windows 10 and Windows Server 2016 automatically reduces the size of the WinSxS by using methods similar to the ones described in this topic, however these methods also include internal processes, such as uninstalling and deleting packages with components that have been replaced by other components with newer versions. Previous versions of some components are kept on the system for a period of time, allowing you to rollback if necessary. After a period of time, these components are removed from the installation.
+Windows 10 and Windows Server 2016 automatically reduce the size of the WinSxS folder by using methods similar to the ones described in this topic, in addition to internal processes, such as uninstalling and deleting packages with components that have been replaced by other components with newer versions. Previous versions of some components are kept on the system for a period of time, allowing you to rollback if necessary. After a period of time, these older components are automatically removed from the installation.
 
 You can also reduce the size of a Windows image using some of the same techniques, as discussed in [Reduce the Size of the Component Store in an Offline Windows Image](reduce-the-size-of-the-component-store-in-an-offline-windows-image.md).
 
-**Warning**  
-Deleting files from the WinSxS folder or deleting the entire WinSxS folder may severely damage your system so that your PC might not boot and make it impossible to update.
+To learn about finding the size of your WinSxS folder, see [Determine the actual size of the WinSxS folder](determine-the-actual-size-of-the-winsxs-folder.md).
+
+> [!WARNING]
+> Deleting files from the WinSxS folder or deleting the entire WinSxS folder may severely damage your system so that your PC might not boot and make it impossible to update.
 
  
-
 In Windows 10 and Windows Server 2016, you have a number of ways to start the cleanup of the component store, which use a combination of package deletion and component compression to clean up the WinSxS folder:
+
 
 ## <span id="Task_Scheduler"></span><span id="task_scheduler"></span><span id="TASK_SCHEDULER"></span>Task Scheduler
 
@@ -42,17 +45,15 @@ If you choose to run this task, the task will have a 1 hour timeout and may not 
 
 3.  Under **Selected Item**, click **Run**
 
-**Note**  
-The StartComponentCleanup task can also be started from the command line:
-
-**schtasks.exe /Run /TN "\\Microsoft\\Windows\\Servicing\\StartComponentCleanup"**
-
- 
+    ```
+    **schtasks.exe /Run /TN "\\Microsoft\\Windows\\Servicing\\StartComponentCleanup"**
+    ```
+    > [!NOTE]
+    > The StartComponentCleanup task can also be started from the command line.
 
 ## <span id="dism.exe"></span><span id="DISM.EXE"></span>Dism.exe
 
-
-Deployment Image Servicing and Management (DISM) is a command-line tool that allows you to install, uninstall, configure, and update Windows features, packages, drivers, and international settings. The **/Cleanup-Image** parameter of **Dism.exe** provides advanced users more options to further reduce the size of the WinSxS folder. For more information, see [DISM Operating System Package Servicing Command-Line Options](dism-operating-system-package-servicing-command-line-options.md).
+The **/Cleanup-Image** parameter of **Dism.exe** provides advanced users more options to further reduce the size of the WinSxS folder. For more information, see [DISM Operating System Package Servicing Command-Line Options](dism-operating-system-package-servicing-command-line-options.md).
 
 **Use the /StartComponentCleanup parameter**
 
@@ -74,8 +75,8 @@ Deployment Image Servicing and Management (DISM) is a command-line tool that all
     Dism.exe /online /Cleanup-Image /StartComponentCleanup /ResetBase
     ```
 
-    **Warning**  
-    All existing service packs and updates cannot be uninstalled after this command is completed. This will not block the uninstallation of future service packs or updates.
+    > [!WARNING]  
+    > All existing service packs and updates cannot be uninstalled after this command is completed. This will not block the uninstallation of future service packs or updates.
 
      
 

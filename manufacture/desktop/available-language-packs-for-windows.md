@@ -132,8 +132,7 @@ Except where noted, the following LIPs are available for Windows 10. For Windows
 | Lao (Laos) | lo-LA | Primary: en-US <p>Secondary: en-GB</p> | 0x0454 | 1108 |
 | Luxembourgish (Luxembourg) | lb-LU | Primary: fr-FR <p>Secondary: de-DE, en-GB, en-US</p> | 0x046e | 1134 |
 | Macedonian (FYROM) | mk-MK | Primary: en-US <p>Secondary: en-GB</p> | 0x042f | 1071
-| Malay (Brunei Darussalam) | ms-BN | Primary: en-US <p>Secondary: en-GB</p> | 0x083e | 2110 |
-| Malay (Malaysia) | ms-MY | Primary: en-US <p>Secondary: en-GB</p> | 0x043e | 1086 |
+| Malay (Malaysia, Brunei, and Singapore) | ms-MY | Primary: en-US <p>Secondary: en-GB</p> | 0x043e | 1086 |
 | Malayalam (India) | ml-IN | Primary: en-US <p>Secondary: en-GB</p> | 0x044c | 1100 |
 | Maltese (Malta) | mt-MT | Primary: en-US <p>Secondary: en-GB</p> | 0x043a | 1082 |
 | Maori (New Zealand) | mi-NZ | Primary: en-US <p>Secondary: en-GB</p> | 0x0481 | 1153 |
@@ -152,7 +151,7 @@ Except where noted, the following LIPs are available for Windows 10. For Windows
 | Serbian (Cyrillic, Serbia) | sr-Cyrl-RS | Primary: sr-Latn-RS <p>Secondary: en-GB, en-US</p> | 0x281A | 10266 |
 | Sesotho sa Leboa (South Africa) | nso-ZA | Primary: en-US <p>Secondary: en-GB</p> | 0x046c | 1132 |
 | Setswana (South Africa) | tn-ZA | Primary: en-US <p>Secondary: en-GB</p> | 0x0432 | 1074 |
-| Sindhi (Arabic) | Ad-Arab-PK | Primary: en-US <p>Secondary: en-GB</p> | 0x0859 | 2137 |
+| Sindhi (Arabic) | sd-Arab-PK | Primary: en-US <p>Secondary: en-GB</p> | 0x0859 | 2137 |
 | Sinhala (Sri Lanka) | si-LK | Primary: en-US <p>Secondary: en-GB</p> | 0x045b | 1115 |
 | Tajik (Cyrillic) | tg-Cyrl-TJ | Primary: ru-RU <p>Secondary: en-GB, en-US</p> | 0x0428 | 1064 |
 | Tamil (India) | ta-IN | Primary: en-US <p>Secondary: en-GB</p> | 0x0449 | 1097 |

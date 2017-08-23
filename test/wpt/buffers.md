@@ -21,38 +21,29 @@ Describes either the number of buffers to be allocated when starting a session o
 
 ## Element Hierarchy
 
+<!-- The inelegant use of non-breaking spaces in the following element hierarchy solves the problem of Markdown automatically formatting lines that start with 4+ spaces as code blocks. [v-gmoor, 2017-08-14]-->
 
-&lt;[WindowsPerformanceRecorder](windowsperformancerecorder.md)&gt;
+&lt;[WindowsPerformanceRecorder](windowsperformancerecorder.md)&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;[Profiles](profiles.md)&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;[SystemCollector](systemcollector.md)&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;**Buffers**&gt;<br/>
 
-     &lt;[Profiles](profiles.md)&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;[EventCollector](eventcollector.md)&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;**Buffers**&gt;<br/>
 
-          &lt;[SystemCollector](systemcollector.md)&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;[HeapEventCollector](heapeventcollector.md)&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;**Buffers**&gt;<br/>
 
-               &lt;**Buffers**&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;[Profile](profile-wpr.md)&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;[Collectors](collectors.md)&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;[SystemCollectorId](systemcollectorid.md)&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;**Buffers**&gt;<br/>
 
-          &lt;[EventCollector](eventcollector.md)&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;[EventCollectorId](eventcollectorid.md)&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;**Buffers**&gt;<br/>
 
-               &lt;**Buffers**&gt;
-
-          &lt;[HeapEventCollector](heapeventcollector.md)
-
-               &lt;**Buffers**&gt;
-
-          &lt;[Profile](profile-wpr.md)&gt;
-
-               &lt;[Collectors](collectors.md)&gt;
-
-                    &lt;[SystemCollectorId](systemcollectorid.md)&gt;
-
-                         &lt;**Buffers**&gt;
-
-                    &lt;[EventCollectorId](eventcollectorid.md)&gt;
-
-                         &lt;**Buffers**&gt;
-
-                    &lt;[HeapEventCollectorId](heapeventcollectorid.md)&gt;
-
-                         &lt;**Buffers**&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;[HeapEventCollectorId](heapeventcollectorid.md)&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;**Buffers**&gt;
 
 ## Syntax
 
@@ -60,7 +51,8 @@ Describes either the number of buffers to be allocated when starting a session o
 ```
 <Buffers Operation               = "Set" | "Add" | “Remove”
          Value                   = unsignedLong
-         PercentageOfTotalMemory = boolean>
+         PercentageOfTotalMemory = Boolean
+         MaximumBufferSpace      = Boolean >
 </Buffers>
 ```
 
@@ -88,30 +80,37 @@ Describes either the number of buffers to be allocated when starting a session o
 </thead>
 <tbody>
 <tr class="odd">
+<td><p><strong>MaximumBufferSpace</strong></p></td>
+<td><p>Indicates the maximum size of the buffer, in megabytes, that will be used for collection. This value only applies when <strong>PercentageOfTotalMemory</strong> is <strong>true</strong>.</p></td>
+<td><p>unsignedLong</p></td>
+<td><p>No</p></td>
+<td><p></p></td>
+</tr>
+<tr class="even">
 <td><p><strong>Operation</strong></p></td>
 <td><p>Indicates whether buffers should be set or added.</p></td>
 <td><p>This attribute can have one of the following values:</p>
 <ul>
-<li><p>Set</p></li>
-<li><p>Add</p></li>
-<li><p>Remove</p></li>
+<li>Set</li>
+<li>Add</li>
+<li>Remove</li>
 </ul></td>
 <td><p>No</p></td>
 <td><p>Set</p></td>
 </tr>
+<tr class="odd">
+<td><p><strong>PercentageOfTotalMemory</strong></p></td>
+<td><p>When set to <strong>true</strong>, limits the amount of memory that can be consumed to the value of <strong>Value</strong>.</p></td>
+<td><p>Boolean</p></td>
+<td><p>No</p></td>
+<td><p>false</p></td>
+</tr>
 <tr class="even">
 <td><p><strong>Value</strong></p></td>
-<td><p>Indicates the number of buffers, or if <strong>PercentageOfTotalMemory</strong> is set to &quot;true&quot;, the percentage of memory for the buffers.</p></td>
+<td><p>Indicates the number of buffers, or if <strong>PercentageOfTotalMemory</strong> is set to <strong>true</strong>, the percentage of memory for the buffers.</p></td>
 <td><p>unsignedLong</p></td>
 <td><p>Yes</p></td>
 <td><p></p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>PercentageOfTotalMemory</strong></p></td>
-<td><p>When set to &quot;true&quot;, limits the amount of memory that can be consumed to the value of <strong>Value</strong>.</p></td>
-<td><p>boolean</p></td>
-<td><p>No</p></td>
-<td><p>false</p></td>
 </tr>
 </tbody>
 </table>
