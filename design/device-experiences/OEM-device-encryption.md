@@ -54,19 +54,18 @@ You as the OEM can choose to disable device encryption and instead implement you
 Value: **PreventDeviceEncryption** equal to True (1).
 
 ### Encrypted hard drive
-
 An encrypted drive is a hardware solution that protects the user's data with BitLocker. It uses the hardware-based encryption solution to provide the user with seamless end-to-end data security.
 
 With encrypted drive, you can deliver enhanced security protection out-of-the-box, with near zero-impact to the user. The combination of BitLocker and encrypted drive provides immediate encryption support with no noticeable effect on the user experience. 
 
-To enable support for encrypted hard drive, the device must meet the following requirements:
+To enable support for encrypted hard drive (eHDD), the device must meet the following requirements:
 
 * Self-encrypting drives that meet industry specifications of IEEE 1667, TCG OPAL (subset), and INCITS T13
 * UEFI 2.3.1 Class 2 implementation using GPT on the encrypted drive
 * TPM 2.0
-
-**Warning:** Self-encrypting hard drives and encrypted hard drives for Windows are not the same type of device. Encrypted hard drives for Windows require compliance for specific TCG protocols as well as IEEE 1667 compliance; self-Encrypting hard drives do not have these requirements. 
-
+ 
+### To use another encryption standard
+To use another encryption standard on your drive, you must first disable the automatic drive provisioning that Windows provides. To do this on a new installation, set the Microsoft-Windows-EnhancedStorage-Adm/TCGSecurityActivationDisabled Unattend setting to true. For more information, see the Unattended Windows Setup Reference.
 
 
 

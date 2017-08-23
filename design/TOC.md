@@ -122,6 +122,8 @@
 #### [Configure a trusted image identifier for Windows Defender](device-experiences/OEM-trusted-image-identifier.md)
 #### [Credential Guard hardware requirements](device-experiences/OEM-credential-guard.md)
 #### [Device Guard hardware requirments](device-experiences/OEM-device-guard.md)
+##### [Managing Device Guard with SCCM](device-experiences/OEM-device-guard-sccm.md)
+##### [Device Guard readiness tool](device-experiences/OEM-device-guard-readiness-tool.md)
 #### [Application Guard hardware requirements](device-experiences/OEM-app-guard.md)
 
 
