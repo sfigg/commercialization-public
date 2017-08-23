@@ -1,5 +1,5 @@
 ---
-author: Justinha
+author: themar
 Description: Clean Up the WinSxS Folder
 ms.assetid: 67fe462d-cda1-4f2e-9652-62c374a6be97
 MSHAttr: 'PreferredLib:/library/windows/hardware'
@@ -14,7 +14,7 @@ ms.technology: windows-oem
 # Clean Up the WinSxS Folder
 
 
-One commonly asked question is can I delete the WinSxS folder to regain some disk space? The short answer is no. However, there are ways to reduce the size of the WinSxS folder. For more information about the WinSxS folder, see [Manage the Component Store](manage-the-component-store.md). This topic was written to provide information about the different ways to reduce the size of the WinSxS folder on a running version of Windows 10.
+One commonly asked question is, "Can I delete the WinSxS folder to regain some disk space?" The short answer is no. You can, however, reduce the size of the WinSxS folder. For more information about the WinSxS folder using tools included with Windows. See [Manage the Component Store](manage-the-component-store.md). This topic was written to provide information about the different ways to reduce the size of the WinSxS folder on a running version of Windows 10.
 
 Windows 10 and Windows Server 2016 automatically reduces the size of the WinSxS by using methods similar to the ones described in this topic, however these methods also include internal processes, such as uninstalling and deleting packages with components that have been replaced by other components with newer versions. Previous versions of some components are kept on the system for a period of time, allowing you to rollback if necessary. After a period of time, these components are removed from the installation.
 
