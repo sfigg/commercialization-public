@@ -8,7 +8,7 @@ ms.assetid: 2e12464c-73c5-4b99-9506-d5edb166e839
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
 ms.author: alhopper
-ms.date: 05/02/2017
+ms.date: 08/22/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -19,17 +19,17 @@ ms.technology: windows-oem
 
 The `Themes` setting includes settings to customize elements of the Windows visual style, including the window glass color, desktop background, and screen saver.
 
-To customize the Windows default theme, you must include the settings: [DesktopBackground](microsoft-windows-shell-setup-themes-desktopbackground.md) and [ThemeName](microsoft-windows-shell-setup-themes-themename.md). You may also optionally include the settings: [BrandIcon](microsoft-windows-shell-setup-themes-brandicon.md), [ScreenSaver](microsoft-windows-shell-setup-themes-screensaver.md), and [WindowColor](microsoft-windows-shell-setup-themes-windowcolor.md).
+To customize the Windows default theme, you must include the settings: [DesktopBackground](microsoft-windows-shell-setup-themes-desktopbackground.md) and [ThemeName](microsoft-windows-shell-setup-themes-themename.md). You may also optionally include the settings: [BrandIcon](microsoft-windows-shell-setup-themes-brandicon.md), [ScreenSaver](microsoft-windows-shell-setup-themes-screensaver.md), [UWPAppsUseLightTheme](microsoft-windows-shell-setup-themes-uwpappsuselighttheme.md), and [WindowColor](microsoft-windows-shell-setup-themes-windowcolor.md).
 
-To create additional custom theme files, use the **Personalization** item within Control Panel, or see the MSDN topic: [Creating and Installing Theme Files](http://go.microsoft.com/fwlink/?LinkId=141343).
+To create additional custom theme files, see instructions in the MSDN topic: [Creating and Installing Theme Files](http://go.microsoft.com/fwlink/?LinkId=141343). Themes you create using these instructions can't be used as the default, however, users can choose to apply one of your custom themes from their **Personalization** settings if desired.
 
 ## Child Elements
 
 
 <table>
 <colgroup>
-<col width="50%" />
-<col width="50%" />
+<col width="30%" />
+<col width="80%" />
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -38,11 +38,10 @@ To create additional custom theme files, use the **Personalization** item within
 </tr>
 <tr class="even">
 <td><p>[CustomDefaultThemeFile](microsoft-windows-shell-setup-themes-customdefaultthemefile.md)</p></td>
-<td><p>This setting is deprecated.</p>
+<td><p>This setting is deprecated. To customize the Windows default theme, simply define the [DesktopBackground](microsoft-windows-shell-setup-themes-desktopbackground.md) and [ThemeName](microsoft-windows-shell-setup-themes-themename.md) for your Theme. You may also optionally include the settings: [BrandIcon](microsoft-windows-shell-setup-themes-brandicon.md), [ScreenSaver](microsoft-windows-shell-setup-themes-screensaver.md), [UWPAppsUseLightTheme](microsoft-windows-shell-setup-themes-uwpappsuselighttheme.md), and [WindowColor](microsoft-windows-shell-setup-themes-windowcolor.md).</p>
 <div class="alert">
 <strong>Note</strong>  
-<p>While you can add themes to a Windows 7 or Windows 8 installation by using a .theme file, .theme files can no longer be used as the default theme.</p>
-<p>To define a default theme, use the settings: [BrandIcon](microsoft-windows-shell-setup-themes-brandicon.md), [DesktopBackground](microsoft-windows-shell-setup-themes-desktopbackground.md), [ScreenSaver](microsoft-windows-shell-setup-themes-screensaver.md), [ThemeName](microsoft-windows-shell-setup-themes-themename.md), and [WindowColor](microsoft-windows-shell-setup-themes-windowcolor.md).</p>
+<p>While you can add additional custom themes to a Windows installation using a [.theme file](https://msdn.microsoft.com/en-us/library/bb773190(VS.85).aspx(d=robot)#boot), .theme files can no longer be used as the default theme. The Windows default theme can only be customized as defined here.</p>
 <p></p>
 </div>
 <div>
@@ -59,7 +58,7 @@ To create additional custom theme files, use the **Personalization** item within
 <td><p>Specifies the path to a screen-saver file.</p>
 <div class="alert">
 <strong>Note</strong>  
-<p>We do not recommend setting this value. Instead, we recommend using automatic power plans to dim the screen. This can help reduce system power consumption. </p>
+<p>We do not recommend setting this deprecated value. Instead, we recommend using automatic power plans to dim the screen. This can help reduce system power consumption. </p>
 </div>
 <div>
  
@@ -70,6 +69,10 @@ To create additional custom theme files, use the **Personalization** item within
 <td><p>Specifies the name of the custom default theme.</p></td>
 </tr>
 <tr class="odd">
+<td><p>[UWPAppsUseLightTheme](microsoft-windows-shell-setup-themes-uwpappsuselighttheme.md)</p></td>
+<td><p>Specifies whether dark mode is applied to UWP apps. By default, the classic Windows color mode (light theme) is used. </p></td>
+</tr>
+<tr class="even">
 <td><p>[WindowColor](microsoft-windows-shell-setup-themes-windowcolor.md)</p></td>
 <td><p>Specifies the color of the Windows border and taskbar.</p></td>
 </tr>
