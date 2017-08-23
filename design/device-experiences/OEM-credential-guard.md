@@ -20,7 +20,7 @@ For a device to support Crendential Guard as specified in the Windows Hardware C
 If you are an IT Pro looking for information on how to deploy Windows Defender Credential Guard, see [Protect derived domain credentials with Credential Guard](https://docs.microsoft.com/en-us/windows/access-protection/credential-guard/credential-guard#hardware-and-software-requirements), and the [Deploying Credential Guard](https://technet.microsoft.com/en-us/windows/mt796471.aspx) video.
 
 ### Firmware support for SMM protection
-The Windows SMM Security Mitigations Table (WSMT) specification contains details of an Advanced Configuration and Power Interface (ACPI) table that was created for use with Windows operating systems that support Windows virtualization-based security (VBS) features. For more information, see the Windows SMM Security Mitigations Table (WMST) specification.
+The Windows SMM Security Mitigations Table (WSMT) specification contains details of an Advanced Configuration and Power Interface (ACPI) table that was created for use with Windows operating systems that support Windows virtualization-based security (VBS) features. For more information, see the [Windows SMM Security Mitigations Table (WMST) specification](https://docs.microsoft.com/en-us/windows-hardware/drivers/bringup/acpi-system-description-tables).
 
 The security benefit is that vulnerabilities in UEFI runtime services, if any (such as in functions like UpdateCapsule and SetVariable), will be blocked from compromising VBS. This firmware protection also blocks additional security attacks against SMM.
 
@@ -52,7 +52,7 @@ Virtualization-Based Security (VBS) features requires Windows hypervisor, which 
 
 ### Virtualization extensions - Intel VT-x, AMD-V, and extended page tables
 VBS only works if the processor supports virtualization with second level address translation. 
-The security benefit is that VBS provides isolation of the secure kernel from the rest of Windows. TBD: is this still technically accurate? Zero-day vulnerabilities and in Windows cannot be exploited because of this isolation.
+The security benefit is that VBS provides isolation of the secure kernel from the rest of Windows. 
 
 ### VT-D or AMD Vi Input/output memory management unit(IOMMU)
 
