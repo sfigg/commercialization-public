@@ -12,16 +12,16 @@ ms.technology: windows-oem
 ---
 
 # UEFI requirements
-When the devices starts, the firmware interface controls the booting process of the PC, and then passes control to Windows or another operating system.+
+When the devices starts, the firmware interface controls the booting process of the PC, and then passes control to Windows or another operating system.
 UEFI is a replacement for the older BIOS firmware interface and the Extensible Firmware Interface (EFI) 1.10 specifications.
 More than 140 leading technology companies participate in the Unified EFI Forum, including AMD, AMI, Apple, Dell, HP, IBM, Insyde, Intel, Lenovo, Microsoft, and Phoenix Technologies.
 
 ## UEFI benefits
-Firmware that meets the UEFI 2.3.1 specifications provides the following benefits:+
+Firmware that meets the UEFI 2.3.1 specifications provides the following benefits:
 - Faster boot and resume times.
-- Ability to use security features such as Secure Boot and factory encrypted drives that help prevent untrusted code from running before the operating system is loaded. For more information, see Secure Boot Overview and Factory Encrypted Drives.
+- Ability to use security features such as Secure Boot and factory encrypted drives that help prevent untrusted code from running before the operating system is loaded. For more information, see [Secure boot, Trusted boot, and Measured boot](OEM-secure-boot.md) and [Factory Encrypted Drives](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/factory-encrypted-drives).
 - Ability to more easily support large hard drives (more than 2 terabytes) and drives with more than four partitions.
-- Compatibility with legacy BIOS. Some UEFI-based PCs contain a Compatibility Support Module (CSM) that emulates earlier BIOS, providing more flexibility and compatibility for end users. To use the CSM, Secure Boot must be disabled.
+- Compatibility with legacy BIOS. Some UEFI-based PCs contain a Compatibility Support Module (CSM) that emulates earlier BIOS, providing more flexibility and compatibility for end users. To use the CSM, Secure Boot must be disabled. 
 - Support for multicast deployment, which allows PC manufacturers to broadcast a PC image that can be received by multiple PCs without overwhelming the network or image server.
 - Support for UEFI firmware drivers, applications, and option ROMs.
 
@@ -45,7 +45,7 @@ Firmware vendors must ensure that the following conditions exist:
 - A graphical protocol—either GOP or UGA.
 - Either 1024x768 display resolution with 32-bit pixel color or 800x600 display resolution with 24-bit pixel color.
 - If the firmware does not support any of these graphics modes, Windows still functions, but all boot display reverts to text mode and English.
-Windows 8.1, Windows Server 2012 R2, Windows 7, Windows Server 2008 R2, and Windows Server 2008 require GOP to display a high-resolution, animated image during boot. If GOP is not available, Windows uses the video graphics array (VGA) standard to display a lower resolution image and a simple progress indicator. For an optimal boot experience with these versions of Windows, sealed platforms without expansion card slots can safely boot with graphics mode enabled and eliminate transitions to text mode.
+Windows requires GOP to display a high-resolution, animated image during boot. If GOP is not available, Windows uses the video graphics array (VGA) standard to display a lower resolution image and a simple progress indicator. For an optimal boot experience with these versions of Windows, sealed platforms without expansion card slots can safely boot with graphics mode enabled and eliminate transitions to text mode.
 - Whenever the firmware boot manager hands off execution to a Windows EFI application, platform firmware and the firmware boot manager must not use the frame buffer for any purpose.
 - When upgrading Windows, Windows preserves the existing boot order. When you perform a clean install of Windows, Windows updates the boot order so that it's the first boot entry in the list.
 - To ensure proper operation, Windows requires EFI firmware to comply with its indicated specification version. EFI firmware must fully implement the appropriate version of the EFI System Table, EFI Boot Services, and EFI Runtime Services. Other specific required protocols and specifications include the following:
@@ -205,3 +205,5 @@ In the preceding example, &lt;GUID&gt; is the identifier for the specified Windo
 A multiboot system that has multiple installed operating systems has multiple instances of the Windows boot loader. Each instance of the Windows boot loader has its own identifier. You can set the default Windows boot loader (`{default}`) to any of these identifiers.
 
 
+## Related Topics
+- [Validating Windows UEFI firmware update](OEM-validate-UEFI-update.md)

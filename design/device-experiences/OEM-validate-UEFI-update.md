@@ -42,7 +42,7 @@ UEFI Firware update platform functionaliy requires that certain criteria passes 
 
 ## Query the version and status details:
 
--   Run the QueryVersionAndStatus.ps1 PowerShell (PS) script to query the current firmware version, last attempt firmware version and last attempt status.
+Run the QueryVersionAndStatus.ps1 PowerShell (PS) script to query the current firmware version, last attempt firmware version and last attempt status.
 
     **To run the script:**
 

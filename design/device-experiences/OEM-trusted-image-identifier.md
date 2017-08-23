@@ -27,4 +27,4 @@ For optimal performance, we recommend that you add this setting when you prepare
 Sysprep /oobe /shutdown /unattend:Unattend.xml
 6. Perform other offline tasks, such as offline servicing of the image. Capture and apply the image to other computers, and then deliver the computer to the customer.
 
-The next time that the computer starts, Windows identifies all of the files currently on the system, and skips these files during subsequent scans.
+The next time that the computer starts, Windows identifies all of the previously scanned files currently on the system, and skips these files during subsequent scans.
