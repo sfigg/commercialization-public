@@ -14,9 +14,9 @@ ms.technology: windows-oem
 # Clean Up the WinSxS Folder
 
 
-One commonly asked question is, "Can I delete the WinSxS folder to regain some disk space?" The short answer is no. You can, however, reduce the size of the WinSxS folder. For more information about the WinSxS folder using tools included with Windows. See [Manage the Component Store](manage-the-component-store.md). This topic was written to provide information about the different ways to reduce the size of the WinSxS folder on a running version of Windows 10.
+One commonly asked question is, "Can I delete the WinSxS folder to regain some disk space?" The short answer is no. You can, however, reduce the size of the WinSxS folder using tools built into Windows. For more information about the WinSxS folder, see [Manage the Component Store](manage-the-component-store.md). This topic was written to provide information about the different ways to reduce the size of the WinSxS folder on a running version of Windows 10.
 
-Windows 10 and Windows Server 2016 automatically reduces the size of the WinSxS by using methods similar to the ones described in this topic, however these methods also include internal processes, such as uninstalling and deleting packages with components that have been replaced by other components with newer versions. Previous versions of some components are kept on the system for a period of time, allowing you to rollback if necessary. After a period of time, these components are removed from the installation.
+Windows 10 and Windows Server 2016 automatically reduce the size of the WinSxS by using methods similar to the ones described in this topic, however these methods also include internal processes, such as uninstalling and deleting packages with components that have been replaced by other components with newer versions. Previous versions of some components are kept on the system for a period of time, allowing you to rollback if necessary. After a period of time, these components are removed from the installation.
 
 You can also reduce the size of a Windows image using some of the same techniques, as discussed in [Reduce the Size of the Component Store in an Offline Windows Image](reduce-the-size-of-the-component-store-in-an-offline-windows-image.md).
 
