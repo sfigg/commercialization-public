@@ -120,6 +120,66 @@ Many of these issues are surfaced only under a high-stress, private cloud simula
 
 To comply with this specification, the controller must pass the PCS test run with the ‘Network Controller – AzureStack’ profile on a 4-node clustered configuration.
 
+<a name="Device.Network.LAN.SDDC"></a>
+## Device.Network.LAN.SDDC
+
+*Defines requirements that must be met if the LAN card (NIC) is supported in a Microsoft SDDC offering*
+
+### Device.Network.LAN.SDDC.AzureStack.BasicFunction
+
+_Basic requirements for LAN cards used in Microsoft SDDC offering _ 
+
+<table><tr><th>Applies to</th><td><p>Windows Server 2016 x64</p></td></tr></table>
+
+**Description**
+
+Microsoft SDDC requirements for LAN cards (NICs) are captured by the following table.
+
+| **Feature**                         | **Requirement**                                      |
+|-------------------------------------|------------------------------------------------------|
+| Device.Network.LAN.10GbOrGreater    | Device.Network.LAN.10GbOrGreater.CloudStress         |
+| Device.Network.LAN.VXLAN            | Device.Network.LAN.VXLAN.VXLANPacketTaskOffloads     |
+| Device.Network.LAN.VMQ              | Device.Network.LAN.VMQ.VirtualMachineQueues          |
+| Device.Network.LAN.VMMQ             | Device.Network.LAN.VMMQ.VirtualMachineMultipleQueues |
+| Device.Network.LAN. RSS             | Device.Network.LAN.RSS.RSS                           |
+|                                     | Device.Network.LAN.RSS.SetHashFunctionTypeAndValue   |
+|                                     | Device.Network.LAN.RSS.SupportIndirectionTablesSizes |
+|                                     | Device.Network.LAN.RSS.SupportToeplitzHashFunction   |
+|                                     | Device.Network.LAN.RSS.SupportUpdatesToRSSInfo       |
+| Device.Network.LAN.MTUSize          | Device.Network.LAN.MTUSize                           |
+| Device.Network.LAN.LargeSendOffload | Device.Network.LAN.LargeSendOffload.LargeSendOffload |
+| Device.Network.LAN.KRDMA            | Device.Network.LAN.KRDMA.KRDMA                       |
+| Device.Network.LAN.GRE              | Device.Network.LAN.GRE.GREPacketTaskOffloads         |
+| Device.Network.LAN.DCB              | Device.Network.LAN.DCB.DCB                           |
+| Device.Network.LAN.ChecksumOffload  | Device.Network.LAN.ChecksumOffload.ChecksumOffload   |
+| Device.Network.LAN.Base             | Device.Network.LAN.Base.100MbOrGreater               |
+|                                     | Device.Network.LAN.Base.32MulticastAddresses         |
+|                                     | Device.Network.LAN.Base.AdvProperties                |
+|                                     | Device.Network.LAN.Base.AnyBoundary                  |
+|                                     | Device.Network.LAN.Base.IPv4AndIPv6OffloadParity     |
+|                                     | Device.Network.LAN.Base.NDISCalls                    |
+|                                     | Device.Network.LAN.Base.NDISRequirements             |
+|                                     | Device.Network.LAN.Base.PacketFiltering              |
+|                                     | Device.Network.LAN.Base.PreserveOSServices           |
+|                                     | Device.Network.LAN.Base.PriorityVLAN                 |
+|                                     | Device.Network.LAN.Base.ShortPacketPadding           |
+|                                     | Device.Network.LAN.Base.SupportIEEEE8023             |
+
+
+### Device.Network.LAN.SDDC.CloudStress
+
+_Network controllers that are used for Microsoft SDDC offering must comply with this specification_ 
+
+<table><tr><th>Applies to</th><td><p>Windows Server 2016 x64</p></td></tr></table>
+
+**Description**
+
+SDDC solutions comprise of tightly integrated software and hardware components to deliver resiliency with high performance. Issues in any of the components (software, hardware, drivers, firmware, and so forth) can compromise the solution and undermine any promises made regarding the Service Level Agreement (SLA) for the private cloud. 
+
+Many of these issues are surfaced only under a high-stress, private cloud simulation. The Private Cloud Simulator (PCS) enables you to validate your component in a cloud scenario and identify such issues. It simulates a live datacenter/private cloud by creating VM workloads, scheduling administrative operations (load balancing, software/hardware maintenance), and injecting faults (unplanned hardware/software failures) on the private cloud. 
+
+To comply with this specification, the controller must pass the PCS test run with the ‘Network Controller – SDDC’ profile on a 4-node clustered configuration.
+
 
 <a name="device.network.lan.base"></a>
 ## Device.Network.LAN.Base
@@ -657,15 +717,13 @@ Ethernet devices that support IPsec task offload for Windows 8 must use NDIS 6.3
 <th>Applies to</th>
 <td>
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
-<p>Windows 10 Mobile ARM</p>
-<p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
 
-This requirement only applies to Ethernet devices that implement the Network Direct Kernel Mode Interface (NDKPI) Specification. Devices that implement Network Direct Kernel Mode Interface (NDKPI) (a.k.a., Kernel-mode RDMA) must comply with the Network Direct Kernel Mode Interface (NDKPI) Specification. Version 2.0 has been the current specification since July 2014.  Submissions complying with Version 1.2 of the NDKPI Specification will be accepted until December 31, 2016, but will be unable to work with the hyper-converged scenarios in Windows Server 2016.  Effective January 1, 2017, only NDKPI version 2.0 compliant devices will be accepted.  Submissions for the Microsoft Azure Stack (MAS) AQ LOGO not AQ must support NDKPI Version 2.0.
+This requirement only applies to Ethernet devices that implement the Network Direct Kernel Mode Interface (NDKPI) Specification. Devices that implement Network Direct Kernel Mode Interface (NDKPI) (a.k.a., Kernel-mode RDMA) must comply with the Network Direct Kernel Mode Interface (NDKPI) Specification. Version 2.0 has been the current specification since July 2014.  Submissions complying with Version 1.2 of the NDKPI Specification will be accepted until December 31, 2016, but will be unable to work with the hyper-converged scenarios in Windows Server 2016.  Effective January 1, 2017, only NDKPI version 2.0 compliant devices will be accepted.
+Submissions for the Microsoft SDDC Premium or Azure Stack AQ LOGO not AQ must support NDKPI Version 2.0.
 
 NDKPI version 2.0 describes three modes of operation:
 
