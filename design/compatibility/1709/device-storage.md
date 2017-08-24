@@ -934,8 +934,6 @@ SAS host bus adapter miniport drivers must use the Microsoft hbaapi DLL to suppo
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
-**Terms: If-Implemented**
-
 **Description**
 
 SAS HBAs and/or their drivers should implement the following SCSI / ATA Translations, as defined in the T10 SAT-4 spec (Rev. 03a):
@@ -2557,7 +2555,7 @@ Serial Attached SCSI devices comply with the Serial Attached SCSI (SAS) Specific
 
 -   If the LBPRZ bit in ReadCapacity(16) return is set to one, the SAS SSD device must set LBPRZ bit of Logical Block Provisioning VPD page to one.
 
-(If Implemented) Firmware Download & Activate
+(Server Only) Firmware Download & Activate
 
 SAS devices implementing the ability to download and activate firmware, i.e., command WRITE BUFFER, shall behave in the following way:
 
@@ -2629,7 +2627,7 @@ SATA Devices: 
 
     -   If the device is connected to a port marked as “internal” no interrupt needs to be generated for a hot-plug event
 
-(If Implemented) Firmware Download & Activate
+(Server Only) Firmware Download & Activate
 
 SATA drives implementing the ability to download and activate firmware, i.e., command DOWNLOAD MICROCODE DMA (IDENTIFY DEVICE word 69 bit 8 == 1) or command DOWNLOAD MICROCODE (IDENTIFY DEVICE word 83 bit 0 == 1) shall behave in the following way:
 
