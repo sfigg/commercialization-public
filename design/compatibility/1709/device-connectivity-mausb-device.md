@@ -175,6 +175,13 @@ MA-USB requirements are currently optional and will not be enforced until 2017.
 
 MA-USB Devices must be compliant with MA-USB specification v1.0a or later.
 
+MA-USB devices must do the following certification (once certification is available):
+
+-   Pass the MA-USB interoperability tests
+-   Pass the MA-USB compliance device tests
+-   Pass the MA-USB CV test
+
+
 ### Device.Connectivity.MAUSB.Device.MsOsContainerId
 
 *USB devices that implement the Microsoft OS Container ID descriptor must implement it correctly.*
