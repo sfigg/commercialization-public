@@ -16,9 +16,11 @@ Starting with Windows 10, version 1709, Device Guard is split into two features 
 
 With hardware that meets basic requirements, it also means that even if an attacker manages to get control of the Windows kernel, he or she will be much less likely to be able to run malicious executable code. 
 
+Windows Defender Device Guard can also leverage advanced hardware features on hardware that supports them. These features include CPU virtualization extensions (called "Intel VT-x" or "AMD-V") and second-level address translation (SLAT). In addition, hardware that includes input/output memory management units (IOMMUs) provides even stronger protections. When you enable the features associated with CPU virtualization extensions and SLAT, the Code Integrity service can run alongside the kernel in a Windows hypervisor-protected container. 
+
 If you are an OEM building secure systems, you must provide the hardware to enable these features.
 
-**Note**  If you are an enterprise IT administrator looking to deploy Device Guard, see [Requirements and deployment planning guidelines for Device Guard](http://go.microsoft.com/fwlink/?LinkId=822877).
+**Note**  If you are an enterprise IT administrator looking to deploy Device Guard, see [Windows Defender Device Guard deployment guide](https://docs.microsoft.com/en-us/windows/device-security/device-guard/device-guard-deployment-guide).
 
 ## Windows Defender Exploit Guard
 
@@ -38,7 +40,7 @@ Exploit Guard requires the following hardware.
 | Trusted Platform Module (TPM) version 2.0 | | Provides protection for VBS encryption keys that are stored in the firmware. |
 | Hyper-V Code Integrity (HVCI) | HVCI is a feature of Windows Defender Exploit Guard that ensures only drivers, executables, and DLLs that comply with the Windows Defender Application Control Code Integrity policy are allowed to run. |
 | HVCI-compatible drivers | VCI compatible drivers ensure that virtualization-based security can maintain the appropriate memory permissions. <p>Must meet all [HVCI Compatible](http://go.microsoft.com/fwlink/p/?LinkId=627463) Driver requirements as described in Hardware Compatibility Specification for Systems for Windows 10 under [Filter.Driver.DeviceGuard.DriverCompatibility](https://msdn.microsoft.com/en-us/library/windows/hardware/mt589732.aspx#filterdriverdeviceguarddrivercompatibility). |
-| Virtualization-based security (VBS) | In order for VBS to function, you as the OEM must provide CPU Virtualization extensions (called "Intel VT-x" or "AMD-V") and second-level address translation (SLAT). When the enterprise administrators enable the features associated with CPU virtualization extensions and SLAT, the Code Integrity service can run alongside the kernel in a Windows hypervisor-protected container. In addition, hardware that includes input/output memory management units (IOMMUs) provides even stronger protections. 
+| Virtualization-based security (VBS) | In order for VBS to function, you as the OEM must provide CPU Virtualization extensions (called "Intel VT-x" or "AMD-V") and second-level address translation (SLAT). When the enterprise administrators enable the features associated with CPU virtualization extensions and SLAT, the Code Integrity service can run alongside the kernel in a Windows hypervisor-protected container. In addition, hardware that includes input/output memory management units (IOMMUs) provides even stronger protections. |
 
 | Securing Boot Configuration and Management | Required BIOS capability to allow adding of ISV, OEM, or Enterprise Certificate in Secure Boot DB at manufacturing time. Microsoft UEFI CA must be removed from Secure Boot DB. Support for 3rd-party UEFI modules is permitted but should leverage ISV-provided certificates or OEM certificate for the specific UEFI software.|
 

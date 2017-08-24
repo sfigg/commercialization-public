@@ -16,7 +16,7 @@ As an OEM you have an unique opportunity to impact the efficacy of the security 
 **Note:** If you are an IT Professional and want to understand how these features work, or how to deploy them in your enterprise, see [Device Security](https://docs.microsoft.com/en-us/windows/device-security/). 
 
 ## Unified Extensible Firmware Interface (UEFI) requirements
-UEFI is a replacement for the older BIOS firmware interface and the Extensible Firmware Interface (EFI) 1.10 specifications. When the devices starts, the firmware interface controls the booting process of the PC, and then passes control to Windows or another operating system. UEFI enables security features such as Secure Boot and factory encrypted drives that help prevent untrusted code from running before the operating system is loaded. Tp learn more aobut the OEM requirements for UEFI, see [UEFI firmware requirements](OEM-UEFI.md)
+UEFI is a replacement for the older BIOS firmware interface and the Extensible Firmware Interface (EFI) 1.10 specifications. When the devices starts, the firmware interface controls the booting process of the PC, and then passes control to Windows or another operating system. UEFI enables security features such as Secure Boot and factory encrypted drives that help prevent untrusted code from running before the operating system is loaded. To learn more aobut the OEM requirements for UEFI, see [UEFI firmware requirements](OEM-UEFI.md)
 
 To learn more about what you need to do in order to support UEFI drivers, see [UEFI in Windows](https://docs.microsoft.com/en-us/windows-hardware/drivers/bringup/uefi-in-windows).
 
@@ -30,14 +30,14 @@ Hardware-based security features, also called virtualization-based security or V
 
 
 ## Trusted Plaform Module (TPM) 2.0
-Trusted Platform Module (TPM) technology is designed to provide hardware-based, security-related functions. A TPM chip is a secure crypto-processor that helps you with actions such as generating, storing, and limiting the use of cryptographic keys. The chip includes multiple physical security mechanisms to make it tamper resistant, and malicious software is unable to tamper with the security functions of the TPM. For more information, see [Trusted Plaform Module (TPM) 2.0 requirements](OEM-TPM.md).
+Trusted Platform Module (TPM) technology is designed to provide hardware-based, security-related functions. A TPM chip is a secure crypto-processor that helps you with actions such as generating, storing, and limiting the use of cryptographic keys. The chip includes multiple physical security mechanisms to make it tamper resistant, and malicious software is unable to tamper with the security functions of the TPM. For more information, see [Trusted Plaform Module (TPM) 2.0 hardware requirements](OEM-TPM.md).
 
 **Note:** If you are an IT Professional and want to understand how TPM works in your enterprise, see [Trusted Platform Module](https://docs.microsoft.com/en-us/windows/device-security/tpm/trusted-platform-module-top-node)
 
 ## Secure Boot
 Secure Boot is a security standard developed by members of the PC industry to help make sure that your PC boots using only software that is trusted by the PC manufacturer. When the PC starts, the firmware checks the signature of each piece of boot software, including firmware drivers (Option ROMs), EFI applications, and the operating system. If the signatures are good, the PC boots, and the firmware gives control to the operating system.
 
-To learn more about Secure Boot requirements, see [Secure Boot, Trusted Boot, and Measured Boot](OEM-secure-boot.md).
+To learn more about Secure Boot requirements for OEMs, see [Secure Boot, Trusted Boot, and Measured Boot](OEM-secure-boot.md).
 
 ## Bitlocker device encryption
 Bitlocker device encryption is a set of features that you as an Original Equipment Manufacturer (OEM) enable by providing the right set of hardware in the devices you sell. Without the proper hardware configuration, device encryption is not enabled. With the right hardware configurations, Windows 10 automatically encrypts a device.
@@ -46,13 +46,8 @@ For more information on what hardware you need to provide to enable device encry
 
 **Note:** If you are an IT Professional and want to understand how to configure and deploy Bitlocker in your enterprise, see [Bitlocker](https://docs.microsoft.com/en-us/windows/device-security/bitlocker/bitlocker-overview) content. 
 
-## Windows Defender Trusted Image Identifier
-To learn more about providing a Windows Defender Trusted Image Identifier, see [Windows Defender Trusted Image Identifier](OEM-trusted-image-identifier.md)
-
 ## Windows Defender Credential Guard
 To learn more about hardware requirements for Windows Defender Credential Guard, see [Windows Defender Credential Guard hardware requirements](OEM-credential-guard.md) 
-
-**Note:** If you are an IT Professional and want to understand how to configure and deploy Windows Defender Credential Guard in your enterprise, see [Trusted Platform Module](https://docs.microsoft.com/en-us/windows/device-security/tpm/trusted-platform-module-top-node)
 
 ## Windows Defender Device Guard
 Windows Defender Device Guard is a combination of enterprise-related hardware and software security features that, when configured together, will lock a device down so that it can only run trusted applications that are defined in code integrity policies. If the app isn’t trusted it can’t run, period. With hardware that meets basic requirements, it also means that even if an attacker manages to get control of the Windows kernel, he or she will be much less likely to be able to run malicious executable code. If you are an OEM building secure systems, you must provide the hardware to enable these features.
@@ -62,16 +57,15 @@ Starting in Windows 10, 1703, the Windows Defender Device Guard features have be
 **Note**  If you are an enterprise IT administrator looking to deploy Device Guard, see [Requirements and deployment planning guidelines for Device Guard](http://go.microsoft.com/fwlink/?LinkId=822877).
 
 ## Windows Defender Application Guard
-To learn more about hardware requirements for Windows Defender Application Guard, see [Windows Defender Application Guard hardware requirements](OEM-app-guard.md).
-
-## Windows Defender System Guard
-System Guard maintains system integrity at boot and at runtime, and continues to validate system integrity at runtime. For more information about System Guard requirements, see [Windows Defender System Guard hardware requirements](OEM-system-guard.md)
+Application Guard helps to isolate enterprise-defined untrusted sites, protecting an enterprise while its employees browse the Internet. If you are selling devices to enterprise customers, you want to provide hardware that supports the security features that enterprises need. To learn more about hardware requirements for Windows Defender Application Guard, see [Windows Defender Application Guard hardware requirements](OEM-app-guard.md).
 
 ## Windows Hello
-Window Defender System Guard provides advanced protection for Windows Hello by hardware isolating Windows Hello’s biometric capabilities and the user’s biometric data. To learn more about Windows Hello, see 
+Microsoft Windows Hello, part of Windows 10, gives users a personal, secured experience where the device is authenticated based on their presence. Users can log in with a look or a touch, with no need for a password. In conjunction with Microsoft Passport, biometric authentication uses fingerprints or facial recognition and is more secure, more personal, and more convenient. 
 
-## Related topics
-- HLK tests
-- driver security framework
-- New IT Pro docs from Iaan and Justin
+For information about how Windows Hello works with the Companion Device Framework, see [Windows Hello and the Companion Device Framework](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/windows-hello-companion-device-framework). 
+
+For information on requirements for supporting Windows Hello, see [Windows Hello biometric requirements](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/windows-hello-biometric-requirements). 
+
+For information about how face authentication works, see [Windows Hello face authentication](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/windows-hello-face-authentication).
+
 
