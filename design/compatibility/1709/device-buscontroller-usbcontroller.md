@@ -560,6 +560,8 @@ If the USB Type-C PD silicon implements UCSI, it must implement UCSI v1.0 (or la
 
 -   GET\_PDOS
 
+-   GET_CABLE_PROPERTY
+
 -   SET\_NOTIFICATION\_ENABLE
 
     -   The system or controller must support the following notifications within this command:
@@ -568,6 +570,8 @@ If the USB Type-C PD silicon implements UCSI, it must implement UCSI v1.0 (or la
 
         -   Negotiated Power Level Change
 
+        -   Supported CAM Change
+
 -   GET\_CONNECTOR\_STATUS
 
     -   The system or controller must support the following Connector Status Changes within this command:
@@ -575,6 +579,8 @@ If the USB Type-C PD silicon implements UCSI, it must implement UCSI v1.0 (or la
         -   Supported Provider Capabilities Change
 
         -   Negotiated Power Level Change
+
+        -   Request Data Object
         
     -   The system or controller must support the following field in GET\_CONNECTOR\_STATUS Status structure
 
