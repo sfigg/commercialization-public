@@ -2025,7 +2025,7 @@ All tools, utilities, or agents to be installed on Nano Server must be made avai
 
 **Description**
 
-All diagnostics tools and utilities intended for use in a Microsoft Azure Stack solution must support management by either of the following methods:
+All diagnostics tools and utilities intended for use in a SDDC offering must support management by either of the following methods:
 
 - Remotely, using Windows PowerShell or Windows Management Instrumentation (WMI).
 - Using a command line tool that an admin can run on Nano Server by connecting to a Nano Server instance through a remote Windows PowerShell session or SSH.
@@ -2060,7 +2060,7 @@ All monitoring tools, utilities, and agents must support installation by either 
 
 If the tool, utility, or agent runs locally on Nano Server, it must be made available as a Windows Server Application (WSA) installer package.
 
-For Microsoft Azure Stack, in particular, all monitoring has to be agentless, and agents will not be allowed on the hosts. Also see ‘if implemented’ Redfish requirement at System.Server.Manageability.Redfish
+For Microsoft SDDC offering, in particular, all monitoring has to be agentless, and agents will not be allowed on the hosts. Also see ‘if implemented’ Redfish requirement at System.Server.Manageability.Redfish
 
 ### Device.DevFund.Server.Nano.OperateInServerNano
 
