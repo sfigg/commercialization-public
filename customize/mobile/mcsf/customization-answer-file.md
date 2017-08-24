@@ -19,13 +19,13 @@ A **customization answer file** is an XML file that you write based on the MCSF 
 
 When creating or working with customization answer files, keep the following design requirements and considerations in mind:
 
--   If you are using ImgGen.cmd to generate a mobile OS image, you can only specify one customization answer file. For more information, see [Building a mobile image using ImgGen.cmd](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/manufacture/mobile/building-a-phone-image-using-imggencmd). However, you can import additional answer filesto form a single set of customizations and variants that can be applied to the OS image. For more information, see the [Importing other customization answer files] section in this topic.
+-   If you are using ImgGen.cmd to generate a mobile OS image, you can only specify one customization answer file. For more information, see [Building a mobile image using ImgGen.cmd](https://docs.microsoft.com/en-us/windows-hardware/manufacture/mobile/building-a-phone-image-using-imggencmd). However, you can import additional answer filesto form a single set of customizations and variants that can be applied to the OS image. For more information, see the [Importing other customization answer files] section in this topic.
 
 -   Depending on what you want to do, you can use the customization answer file to create a package containing your customization(s) or use the answer file as one of the inputs to create an OS image.
 
-    -   To use the customization answer file to generate a package without building an OS image, see [Generating customization packages without creating an image](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/manufacture/mobile/building-a-phone-image-using-imggencmd).
+    -   To use the customization answer file to generate a package without building an OS image, see [Generating customization packages without creating an image](https://docs.microsoft.com/en-us/windows-hardware/manufacture/mobile/building-a-phone-image-using-imggencmd#generating-customization-packages-without-creating-an-image).
 
-    -   To build an image as an .ffu file using the customization answer file as one of the inputs, see [Using ImgGen.cmd to generate the image](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/manufacture/mobile/building-a-phone-image-using-imggencmd.md#usingimggen).
+    -   To build an image as an .ffu file using the customization answer file as one of the inputs, see [Using ImgGen.cmd to generate the image](https://docs.microsoft.com/en-us/windows-hardware/manufacture/mobile/building-a-phone-image-using-imggencmd#a-href-idusingimggenausing-imggencmd-to-generate-the-image).
 
 -   The values used in the root customization answer file (or the one you specify as the input customization answer file during ImgGen.cmd or CustomizationGen.cmd in Step 6) is used to determine the package owner so it is important to provide values for the following attributes:
 

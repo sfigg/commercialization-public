@@ -15,86 +15,129 @@ ms.technology: windows-oem
 # Customize the taskbar
 
 
-You can pin up to three additional apps to the taskbar by adding a taskbar layout modification file, for example, TaskbarLayoutModification.xml. You can specify different taskbar configurations based on SKU, device locale, or region.
+You can pin up to three additional apps to the taskbar. There are two methods to do this:
 
-**Note**  The file name “TaskbarLayoutModification.xml” is not required, you can choose any name you like. The important things are that the registry key is set to the path of mounted location of the xml file.
+-   **Taskar Layout Modification XML** method (recommended)
+    -   Supports multivariant images; you can specify different sets of taskbar layouts for different regions.
+    -   Uses a single XML file.
+    -   Is the only method that allows you to add UWP apps to the taskbar.
+    -   In the examples below, the file name “TaskbarLayoutModification.xml” is used, however, you can choose any name you like.
 
- 
+-   **Classic Unattend method** (still supported in Windows 10, but marked as deprecated, and may not be available in future builds)
+    -   Uses the Unattend setting: [TaskbarLinks](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-shell-setup-taskbarlinks)
 
-This file is similar to the file used to customize the Start menu, LayoutModification.xml.
+## Taskbar links and ordering
 
-There are two ways of adding pins:
+The taskbar starts with the following links: **Start**, **Search**, and **Task View**, plus four additional Windows-provided links: Mail, Edge, File Explorer, and Store. These pins cannot be removed or replaced. 
 
--   Use a shortcut (.lnk) file. Example:
+OEMs can add up to three additional pinned apps to the taskbar.
+
+For left-to-right languages, the taskbar icons are ordered from left to right (Start, Search, Task View, Windws-provided Pins, OEM-provided pins, Mail).
+For right-to-left languages, the taskbar icons are in the opposite order, with the right-most element being **Start**.
+
+## Add a default path
+
+To use a Taskbar Layout Modification XML file in Windows, you’ll need to add a registry key (LayoutXMLPath) to the image, and then generalize and recapture the image. The registry key must be processed before the specialize configuration pass. This means you won’t be able to simply add the registry key by using Synchronous Commands/FirstLogonCommands unless you plan to generalize the image afterwards. 
+
+You can use any name or file location by defining this in the registry key; the filename and path to TaskbarLayoutModification.xml is not required. The other shortcut files, apps, and the Taskbar Layout Modification file itself can be changed at any time through regular imaging techniques. You can add this registry key to all your images, even if you intend to add taskbar links using the Classic Unattend method. 
+
+## Customize the taskbar
+
+1.  Install the Windows image to a technician computer.
+2.	After the image boots, go into audit mode by pressing CTRL+SHIFT+F3.
+3.	Add the following registry key to define a default location for the Taskbar Layout Modification file: `cmd /c reg add HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\ /v LayoutXMLPath /d C:\Windows\Fabrikam\TaskbarLayoutModification.xml`
+4.	Add a Taskbar Layout Modification file (TaskbarLayoutModification.xml) in the default location for example: `C:\Windows\Fabrikam\TaskbarLayoutModification.xml`
+    ```
+    <?xml version="1.0" encoding="utf-8"?>
+    <LayoutModificationTemplate
+    xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification"
+    xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout"
+    xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout"
+    xmlns:taskbar="http://schemas.microsoft.com/Start/2014/TaskbarLayout"
+    Version="1">
+
+    <CustomTaskbarLayoutCollection PinListPlacement="Replace">
+        <defaultlayout:TaskbarLayout>
+            <taskbar:TaskbarPinList>
+                <taskbar:UWA AppUserModelID="Microsoft.Windows.Photos_8wekyb3d8bbwe!App" />
+                <taskbar:DesktopApp DesktopApplicationLinkPath="%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\Accessories\Paint.lnk"/>
+            </taskbar:TaskbarPinList>
+        </defaultlayout:TaskbarLayout>
+        <defaultlayout:TaskbarLayout Region="US|GB">
+            <taskbar:TaskbarPinList >
+                <taskbar:DesktopApp DesktopApplicationLinkPath="%APPDATA%\Microsoft\Windows\Start Menu\Programs\Accessories\Notepad.lnk" />
+                <taskbar:UWA AppUserModelID="Microsoft.WindowsCalculator_8wekyb3d8bbwe!App" />
+            </taskbar:TaskbarPinList>
+        </defaultlayout:TaskbarLayout>
+        <defaultlayout:TaskbarLayout Region="CN|TW">
+            <taskbar:TaskbarPinList>
+                <taskbar:DesktopApp DesktopApplicationLinkPath="%APPDATA%\Microsoft\Windows\Start Menu\Programs\Accessories\Notepad.lnk" />
+                <taskbar:UWA AppUserModelID="Microsoft.Windows.Photos_8wekyb3d8bbwe!App" />
+                <taskbar:DesktopApp DesktopApplicationLinkPath="%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\Accessories\Paint.lnk"/>
+            </taskbar:TaskbarPinList>
+        </defaultlayout:TaskbarLayout>
+    </CustomTaskbarLayoutCollection>
+    </LayoutModificationTemplate>
+    ```
+
+5.  Generalize the Windows image using [Sysprep](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/sysprep--system-preparation--overview):
+    ```
+    Sysprep /generalize /oobe /shutdown
+    ```
+
+6.	Boot to Windows PE.
+7.	Recapture the image. For example:
+    ```
+    Dism /Capture-Image /CaptureDir:C:\ /ImageFile:c:\install-with-new-taskbar-layout.wim /Name:"Windows image with Taskbar layout"
+    ```
+
+8.	You can now apply this image to other PCs.
+
+### To reference your apps
+
+-   For **Classic Windows applications**, use shortcut (.lnk) files. We recommend using the same shortcut .lnk files in the All Users Start menu. Example:
     ```
     DesktopApp 
     DesktopApplicationLinkPath="%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\Accessories\Paint.lnk"
     ```
 
--   Use a UWA app user model ID. Example:
+-   For **Universal Windows apps**, use the Universal Windows app user model ID. Example:
     ```
     UWA AppUserModelID="Microsoft.Windows.Photos_8wekyb3d8bbwe!App"
     ```
-For left-to-right languages, the taskbar icons are ordered from left to right. For right-to-left languages, the taskbar icons are ordered from right to left (the rightmost element is **Start**).
 
--   **Start**
--   **Search**
--   **Task view**
--   **Mail**
--   Windows-provided pins
--   OEM pins
+> [!Note]  
+> Links to .url files are not supported.
 
-You cannot remove or replace the Windows-provided pins or **Start**, **Search**, **Task view**, or **Mail**. You are, however, able to add up to three additional pinned apps to the taskbar.
+### To use different layouts for different regions
 
-There are eight steps to customize the taskbar with up to three additional pinned apps:
+To use different layouts for different regions, include a region in the defaultlayout tag. These regions use the second half of the language/region tags listed in [Available Language Packs for Windows](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/available-language-packs-for-windows). You can use multiple region tags separated by a pipe (|) character. Here is an example of adding pins to the Chinese (PRC) and Chinese (Taiwan) regions: 
 
-1.  Create the shortcuts to your apps.
+```
+<defaultlayout:TaskbarLayout Region="CN|TW">
+```
 
-    We recommend storing the shortcut .lnk files in the All Users Start menu For example:
+## How Windows parses the setting for Unattend and Taskbar Layout Modification XML
 
-    %ALLUSERSPROFILE%\\Microsoft\\Windows\\Start Menu\\Programs\\Fabrikam\\Application.lnk
+While you’re transitioning to the new method to customize the taskbar, you may end up using existing images that still include your old Unattend TaskbarLinks settings. When that happens: 
 
-2.  Create a TaskbarLayoutModification.xml file that includes the pins. Here is an example of the xml you’d add to the TaskbarLayoutModification.xml to add three pinned apps.
+1.  If Windows finds a valid Taskbar Layout Modification XML file, it uses the XML file, and ignores any of the Unattend taskbar settings.
+2.  If the Taskbar Layout Modification XML file isn't found, or is invalid, Windows looks for the old Unattend TaskbarLinks settings. If it finds them, it uses them.
+3.  If Windows can't find either a valid Taskbar Layout Modification XML file, or Unattend TaskbarLink settings, then only the Windows-provided pins and **Start**, **Search**, and **Task View** are shown.
 
-   ``` 
-    <?xml version="1.0" encoding="utf-8"?>
-    <LayoutModificationTemplate
-        xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification"
-        xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout"
-        xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout"
-        xmlns:taskbar="http://schemas.microsoft.com/Start/2014/TaskbarLayout"
-        Version="1">
-        <CustomTaskbarLayoutCollection>
-            <defaultlayout:TaskbarLayout>
-                <taskbar:TaskbarPinList>
-                    <taskbar:DesktopApp DesktopApplicationLinkPath="%APPDATA%\Microsoft\Windows\Start Menu\Programs\Accessories\Internet Explorer.lnk" />
-                    <taskbar:DesktopApp DesktopApplicationLinkPath="%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\Accessories\Paint.lnk" />
-                    <taskbar:UWA AppUserModelID="Microsoft.Windows.Photos_8wekyb3d8bbwe!App" />
-                </taskbar:TaskbarPinList>
-            </defaultlayout:TaskbarLayout>
-        </CustomTaskbarLayoutCollection>
-    </LayoutModificationTemplate>
-    ```
+## Set transparency for the taskbar
 
-3.  Mount your Windows image, and add your TaskbarLayoutModification.xml file to the image. For example, add (or replace) the file:
+The default transparency setting for the taskbar is 15%. To make Taskbar work with the Dark Mode on OLED displays, you need to set the taskbar transparency to 40%. 
 
-    C:\\Mount\\Windows\\Users\\Default\\AppData\\Local\\Microsoft\\Windows\\Shell\\TaskbarLayoutModification.xml
+To set the transparency for the Taskbar, create a registry key called “UseOLEDTaskbarTransparency” and place it in the following location:
 
-4.  Create a registry key (.reg) file that includes the key:
+```
+HKLM\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced
+```
 
-    “HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Explorer\\LayoutXMLPath”, and save it in the image.
+> [!Important]  
+> This registry key should only be used to change the taskbar transparency for OLED screens. We do not advise changing the default transparency on non-OLED displays.
 
-    1.  Put the path of the mounted TaskbarLayoutModification.xml file as the registry key’s value, for example, %AppData%\\Local\\Microsoft\\Windows\\Shell\\TaskbarLayoutModification.xml.
-    2.  Add this file to the image.
-
-5.  Prepare to run this registry key by adding a [FirstLogonCommands](unattend/microsoft-windows-shell-setup-firstlogoncommands.md) in an Unattend file.
-6.  Add the Unattend file to the image.
-7.  Unmount the image.
-8.  Apply and boot the image.
-
-    TaskbarLayoutModification.xml is applied during [Sysprep](https://msdn.microsoft.com/windows/hardware/commercialize/manufacture/desktop/sysprep-process-overview). After Sysprep processes the file, it is moved to %AppData%\\Local\\Microsoft\\Windows\\Shell\\. During OOBE, the tray creates an instance of ITaskbarLayoutPolicyManager and determines whether the TaskbarLayoutModification.xml is present and is well formed. If not, Windows checks for pins in the Unattend setting:[TaskbarLinks](unattend/microsoft-windows-shell-setup-taskbarlinks.md). If neither exist, no new pins are added. If the TaskbarLayoutModification.xml is valid, Windows adds the pins to the taskbar.
-
-**Note**  Note: If the taskbar detects registry keys that map to default pins (the pre-Windows 10, version 1607 method of pinning apps to the taskbar), and it also detects app pinning by using TaskbarLayoutModification.xml, only TaskbarLayoutModification.xml pinning will be applied. If, however, no TaskbarLayoutModification.xml file exists, the legacy method will be applied. **The legacy method is deprecated in Windows 10, version 1607, and may not be supported in future versions of Windows. We recommend this new approach, adding a TaskbarLayoutModification.xml file.**
 
 
 
