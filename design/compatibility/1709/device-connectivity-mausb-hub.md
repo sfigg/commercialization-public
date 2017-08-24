@@ -112,6 +112,14 @@ MA-USB requirements are currently optional and will not be enforced until 2017.
 
 MA-USB Hubs must be compliant with MA-USB specification v1.0a or later.
 
+MA-USB hubs must do the following certification (once certification is available):
+
+-   Pass the MA-USB interoperability tests
+-   Pass the MA-USB compliance device tests
+-   Pass the MA-USB CV test
+-   Pass the MA-USB Electrical Tests on the downstream Ports of the hub
+
+
 ### Device.Connectivity.MAUSB.Hub.SupportSuspend
 
 *MA-USB hubs must support suspend, and downstream devices must not drop off the bus when the hub resumes from suspend.*
