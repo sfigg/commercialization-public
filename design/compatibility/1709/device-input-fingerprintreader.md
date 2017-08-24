@@ -63,7 +63,7 @@ The following table lists the hardware requirements for fingerprint sensors.
 <tr>
 <td>Performance</td>
 <td colspan="2">
-<br>* Fingerprint recognition speed: < 350 ms from user touching sensor to recognition of the user for on host matching 
+<br>* Fingerprint recognition speed: < 350 ms from user touching sensor to recognition of the user for on host matching only
 <br>* Enrollment samples: <= 20 samples needed for enrollment
 <br>* Enrollment success rate: Enrollment is successful 99% of the time 
 </td>
@@ -71,7 +71,7 @@ The following table lists the hardware requirements for fingerprint sensors.
 <tr>
 <td>Power Consumption</td>
 <td>Operating (during capture) 100mW</td>
-<td>Required for Connected Standby devices and recommended for others</td>
+<td>Required for Connected Standby devices and recommended for others. USB devices should implement USB Selective Suspend.</td>
 </tr>
 <tr>
 <td>&nbsp;</td>
@@ -104,8 +104,8 @@ Swipe sensors
 </tr>
 <tr>
 <td>Sensor Type</td>
-<td>Touch recommended if implemented</td>
-<td>Touch sensor type is the preferred option compare to swipe sensor. Due to the nature, placement, and fixed orientation of swipe sensors especially on devices that can have multiple orientations (such as tablets that can function in landscape and portrait mode), they result in ergonomic challenges for the user which may result in failure to capture an accurate fingerprint thereby resulting in the need for multiple swipes.</td>
+<td>Effective from the Windows release after April 1st, 2018, swipe sensor is not allowed</td>
+<td>Touch sensor type is the preferred option compared to swipe sensor. Due to the nature, placement, and fixed orientation of swipe sensors especially on devices that can have multiple orientations (such as tablets that can function in landscape and portrait mode), they result in ergonomic challenges for the user which may result in failure to capture an accurate fingerprint thereby resulting in the need for multiple swipes. Investments in presentation attack detection are also not mature for swipe sensors.</td>
 </tr>
 <tr>
 <td>WBF Compliant with HCK</td>
