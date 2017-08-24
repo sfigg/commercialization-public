@@ -48,9 +48,9 @@ ms.technology: windows-oem
 
 **Mandatory:** The TPM must comply with TCG Trusted Platform Module Library Specification, Family "2.0", Level 00, Revision 1.16 or later, including errata version 1.4 and all security patches published at least 120 days prior to testing.
 
-**Recommended:** The TPM should comply with TCG Trusted Platform Module Library Specification, Family "2.0", Level 00, Revision 1.38.
+**Mandatory:** Effective July 28, 2018 The TPM must comply with TCG Trusted Platform Module Library Specification, Family "2.0", Level 00, Revision 1.38, including Errata Version 1.0.
 
-**Mandatory:** Effective July 28, 2018 The TPM must comply with TCG Trusted Platform Module Library Specification, Family "2.0", Level 00, Revision 1.38.
+**Information:** Revision 1.38 without Errata Version 1.0 is not acceptable at any time for certification.
 
 **Mandatory:** The TPM 2.0 must implement all “Mandatory” features in the table below:
 
@@ -287,6 +287,7 @@ In the below table, if unspecified, all TPM_ALG_RSA keys are 2048 bit keys and T
 | **TPM2\_HMAC**            | HMAC Operation                                                                                                                                         | 50                        |
 | **TPM2\_PolicySigned**    | Sapss RSA 2048                                                                                                                                         | 50                        |
 |                           | Sassa RSA 2048                                                                                                                                         | 50                        |
+|                           | TPM_ALG_ECC, TPM_ECC_NIST_P256                                                                                                                         | 150                       |
 | **TPM2\_PolicyTicket**    |                                                                                                                                                        | 50                        |
 | **TPM2\_Unseal**          | 1 kB of data                                                                                                                                           | 30                        |
 | **TPM2\_NV\_Certify**     | TPM\_ALG\_RSA, 2048                                                                                                                                    | 400                       |
@@ -317,11 +318,13 @@ In the below table, if unspecified, all TPM_ALG_RSA keys are 2048 bit keys and T
 
 | **Command**               | **Arguments**                                                                    | **Mean Requirement (ms)** |
 |---------------------------|----------------------------------------------------------------------------------|---------------------------|
-| **TPM2\_Create**          | TPM\_ALG\_ECC, TPM\_ECC\_NIST\_P384                                              | 100                       |
+| **TPM2\_Create**          | TPM\_ALG\_ECC, TPM\_ECC\_NIST\_P384                                              | 250                       |
+| **TPM2\_CreatePrimary**   | TPM\_ALG\_ECC, TPM\_ECC\_NIST\_P384                                              | 250                       |
 | **TPM2\_Load**            | TPM\_ALG\_ECC, TPM\_ECC\_NIST\_P384 Parent = TPM\_ALG\_ECC, TPM\_ECC\_NIST\_P384 | 100                       |
 | **TPM2\_Sign**            | TPM\_ALG\_ECC, TPM\_ECC\_NIST\_P384                                              | 100                       |
 | **TPM2\_VerifySignature** | TPM\_ALG\_ECC, TPM\_ECC\_NIST\_P384                                              | 150                       |
 | **TPM2\_Import**          | TPM\_ALG\_ECC, TPM\_ECC\_NIST\_P384 Parent = TPM\_ALG\_ECC, TPM\_ECC\_NIST\_P384 | 500                       |
+| **TPM2\_PolicySigned**    | TPM\_ALG\_ECC, TPM\_ECC\_NIST\_P384                                              | 150                       |
 
 
 
@@ -343,17 +346,22 @@ In the below table, if unspecified, all TPM_ALG_RSA keys are 2048 bit keys and T
 
 **Description**
 
-**Mandatory:** All TPMs must contain a full Endorsement Key (EK) certificate
-stored in the TPM NV RAM as described in the "TCG EK Credential Profile for TPM
-Family 2.0, Level 0, Revision 14" or be capable of retrieving such a certificate
-on first boot.
+**Mandatory:** 
 
-The device may not be designed such that it contains a key with an associated
-certificate from the TPM manufacturer which would allow the device to generate
-EK Certificates.
+1. All TPMs must contain a full Endorsement Key (EK) certificate
+stored in the TPM NV RAM as described in the "TCG EK Credential Profile for TPM
+Family 2.0, Level 0, Revision 14" or have an associated certificate available to obtain from a public facing server via a documented process retrieving such a certificate on first boot.
+
+2. The device may not be designed such that it contains a key with an associated
+certificate from the TPM manufacturer which would allow the device to sign
+EK Certificates which chain up to a trusted Manufacturer CA.
+
+3. The Issuing Authority for the EK Certificates included on the Device must be provided to Microsoft before a Device may be certified. 
 
 **Mandatory:** Effective July 28, 2020, the TPM must include an EK Certificate
 for the TPM\_ECC\_NIST\_P384 curve.
+
+**Mandatory:** EK Certificates for the RSA 2048 bit EK and ECC P256 curve EK must be populated at the following NV locations.
 
 | TPM Artifact          | NV Index   | Required                                                                    |
 |-----------------------|------------|-----------------------------------------------------------------------------|
