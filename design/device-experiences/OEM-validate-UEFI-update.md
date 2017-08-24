@@ -5,7 +5,7 @@ ms.assetid: 42e7c93e-3af3-496a-8fdf-ac97b4e85970
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Validating Windows UEFI Firmware Update Platform Functionality
 ms.author: dawnwood
-ms.date: 05/02/2017
+ms.date: 09/05/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -13,11 +13,9 @@ ms.technology: windows-oem
 
 # Validating Windows UEFI firmware update
 
-
 UEFI Firware update platform functionaliy requires that certain criteria passes before signing-off on the Windows UEFI Firmware Update Platform functionality.  
 
 ##  Prerequisites
-
 
 -   For each EFI System Resource Table (ESRT) entry, you need a capsule for the latest firmware version. The scenarios will refer to the latest version as X. Each ESRT entry is identified using a unique GUID.
 -   For each ESRT entry exposed, create a capsule package that its version is incremented above the package created in step 1. These capsules will be referred to as X+1.
@@ -40,7 +38,7 @@ UEFI Firware update platform functionaliy requires that certain criteria passes 
 12. The system asks you to reboot.
 13. After you installed the capsule for the firmware, you need to reboot. If you wish to install multiple capsule packages, then wait to reboot until all capsules are installed and then reboot on the final capsule.
 
-## Query the version and status details:
+## Query the version and status details
 
 Run the QueryVersionAndStatus.ps1 PowerShell (PS) script to query the current firmware version, last attempt firmware version and last attempt status.
 

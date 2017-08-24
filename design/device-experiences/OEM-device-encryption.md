@@ -4,18 +4,21 @@ description: OEMs can configure hardware to support Windows 10 automatic device 
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
+ms.author: dawnwood
+ms.date: 09/05/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # Bitlocker device encryption hardware requirements
-Preboot memory protection
-Encrypted Individual Files and Folders (EFS)
-
 
 Bitlocker device encryption is a set of features that you as an Original Equipment Manufacturer (OEM) enable by providing the right set of hardware in the devices you sell. Without the proper hardware configuration, device encryption is not enabled. With the right hardware configurations, Windows 10 automatically encrypts a device. This topic, written for OEMs, describes what hardware requirements you have to meet to enable Bitlocker device encryption. 
 
 **Note:** If you are an IT Professional and want to deploy Bitlocker, learn more in [Bitlocker overview](https://docs.microsoft.com/en-us/windows/device-security/bitlocker/bitlocker-overviewe). 
 
 ##  Enable Bitlocker
+
 Bitlocker device encryption is enabled when the following conditions are met. OEMs who want to create hardware that supports this capability must verify that their device passes the tests in the column on the right. If any test in this sequence fails, the remaining tests will also fail.
 
 | Requirement | Details | Test |
@@ -32,7 +35,7 @@ Bitlocker device encryption is enabled when the following conditions are met. OE
         3.	If Thunderbolt is present, HSTI must report that Thunderbolt is configured securely (security level must be SL1 – “User Authorization” or higher). |
  
 ### "Un-allowed DMA capable bus/device(s) detected" error
-This error means that the system detected at least one DMA capable bus or device that may expose a DMA threat.  To determine which bus/device triggered this error, run the Microsoft.UefiSecureBootLogo.CS.HardwareSecurity.Tests.ProbeForInsecureDirectMemoryAccessBusses HLK test. 
+This error means that the system detected at least one DMA capable bus or device that may expose a DMA threat. To determine which bus/device triggered this error, run the Microsoft.UefiSecureBootLogo.CS.HardwareSecurity.Tests.ProbeForInsecureDirectMemoryAccessBusses HLK test. 
 If the listed bus has only has internal facing access and with no ports exposed on the exterior of the device, then the OEM should consult with the IHV to ensure the bus is correctly identified before adding it to the "allowed" list as described below.
  ```
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\DmaSecurity\AllowedBuses 
