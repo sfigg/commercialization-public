@@ -3525,13 +3525,13 @@ Note: These requirements are "If Implemented" for Server systems and apply only 
 <li><p>UEFI Shells and related applications. UEFI Modules that are not required to boot the platform must not be signed by any production certificate stored in &quot;db&quot;, as UEFI applications can weaken the security of Secure Boot. For example, this includes and is not limited to UEFI Shells as well as manufacturing, test, debug, RMA, &amp; decommissioning tools. Running these tools and shells must require that a platform administrator disables Secure Boot.</p></li>
 <li><p>Secure Boot Variable. The firmware shall implement the SecureBoot variable as documented in Section 3.2 &quot;Globally Defined Variables' of UEFI Specification Version 2.3.1 Errata C&quot;</p></li>
 <li><p>For devices which are designed to always boot with a specific Secure Boot configuration, the two requirements below to support Custom Mode and the ability to disable Secure Boot are optional.</p></li>
-<li><p>On non-ARM systems, the platform MUST implement the ability for a physically present user to select between two Secure Boot modes in firmware setup: &quot;Custom&quot; and &quot;Standard&quot;. Custom Mode allows for more flexibility as specified in the following:</p>
+<li><p>(Optional for ARM systems and systems intended to be locked down) The platform MUST implement the ability for a physically present user to select between two Secure Boot modes in firmware setup: &quot;Custom&quot; and &quot;Standard&quot;. Custom Mode allows for more flexibility as specified in the following:</p>
 <ol style="list-style-type: upper-alpha">
 <li><p>It shall be possible for a physically present user to use the Custom Mode firmware setup option to modify the contents of the Secure Boot signature databases and the PK. This may be implemented by simply providing the option to clear all Secure Boot databases (PK, KEK, db, dbx), which puts the system into setup mode.</p></li>
 <li><p>If the user ends up deleting the PK then, upon exiting the Custom Mode firmware setup, the system is operating in Setup Mode with SecureBoot turned off.</p></li>
-<li><p>The firmware setup shall indicate if Secure Boot is turned on, and if it is operated in Standard or Custom Mode. The firmware setup must provide an option to return from Custom to Standard Mode which restores the factory defaults. On an ARM system, it is forbidden to enable Custom Mode. Only Standard Mode may be enabled.</p></li>
+<li><p>The firmware setup shall indicate if Secure Boot is turned on, and if it is operated in Standard or Custom Mode. The firmware setup must provide an option to return from Custom to Standard Mode which restores the factory defaults.</p></li>
 </ol></li>
-<li><p>Enable/Disable Secure Boot. A physically present user must be allowed to disable Secure Boot via firmware setup without possession of PKpriv. A Windows Server may also disable Secure Boot remotely using a strongly authenticated (preferably public-key based) out-of-band management connection, such as to a baseboard management controller or service processor. Programmatic disabling of Secure Boot either during Boot Services or after exiting EFI Boot Services MUST NOT be possible. Disabling Secure Boot must not be possible on ARM systems.</p></li>
+<li><p>(Optional for ARM systems and systems intended to be locked down) Enable/Disable Secure Boot. A physically present user must be allowed to disable Secure Boot via firmware setup without possession of PKpriv. A Windows Server may also disable Secure Boot remotely using a strongly authenticated (preferably public-key based) out-of-band management connection, such as to a baseboard management controller or service processor. Programmatic disabling of Secure Boot either during Boot Services or after exiting EFI Boot Services MUST NOT be possible.</p></li>
 <li><p>If the firmware is reset to factory defaults, then any customized Secure Boot variables are also factory reset. If the firmware settings are reset to factory defaults, all custom-set variables shall be erased and the OEM PKpub shall be re-established along with the original, manufacturer-provisioned signature databases.</p></li>
 <li><p>OEM mechanism exists to remediate failed EFI boot components up to and including the Windows OS loader (bootmgr.efi). Images in the EFI boot path that fail Secure Boot signature verification MUST not be executed, and the EFI_IMAGE_EXECUTION_INFO_TABLE entry for that component shall be updated with the reason for the failure. The UEFI boot manager shall initiate recovery according to an OEM-specific strategy for all components up to and including Windows bootmgr.efi.</p></li>
 <li><p>A working Windows RE image must be present on all Windows client systems The Windows Recovery image must be present in the factory image on every Secure Boot capable system. To support automated recovery and provide a positive user experience on Secure Boot systems, the Windows RE image must be present and enabled by default. As part of the Windows Trusted Boot work enhancements have been made to Windows RE to allow optimized recovery from signature verification failures in Secure Boot. OEMs must include Windows RE as part of their factory image on all Windows client systems.</p></li>
@@ -3541,7 +3541,7 @@ Note: These requirements are "If Implemented" for Server systems and apply only 
 <li><p>All Windows client systems must support a USB boot path for recovery purposes. For all Windows systems configured for Secure Boot, there is a last resort of booting from USB.</p></li>
 <li><p>Supporting GetVariable() for the EFI_IMAGE_SECURITY_DATABASE (both authorized and forbidden signature database) and the SecureBoot variable.</p></li>
 <li><p>Supporting SetVariable() for the EFI_IMAGE_SECURITY_DATABASE (both authorized and forbidden signature database), using an authorized KEK for authentication.</p></li>
-<li><p>Reserved Memory for Windows Secure Boot UEFI Variables. A total of at least 64 KB (Recommended 128 KB) of non-volatile NVRAM storage memory must be reserved for NV UEFI variables (authenticated and unauthenticated, BS and RT) used by UEFI Secure Boot and Windows, and the maximum supported variable size must be at least 32 KB (Recommended 64 KB). There is no maximum NVRAM storage limit.</p></li>
+<li><p>Reserved Memory for Windows Secure Boot UEFI Variables. A total of at least 128 KB of non-volatile NVRAM storage memory must be reserved for NV UEFI variables (authenticated and unauthenticated, BS and RT) used by UEFI Secure Boot and Windows, and the maximum supported variable size must be at least  64 KB. There is no maximum NVRAM storage limit. Note that this is an increase from Windows 10, version 1703 requirements of 64 KB total and 32 KB variable size. This requirement will become enforced in the next release cycle.</p></li>
 <li><p>During normal firmware updates the following must be preserved:</p>
 <ol style="list-style-type: lower-alpha">
 <li><p>The Secure Boot state &amp; configuration (PK, KEK, db, dbx, SetupMode, SecureBoot)</p></li>
@@ -3857,33 +3857,28 @@ Since all components in the boot path as well as many performance-critical OS su
 
 3.  Secure Boot launch of Windows 8 BootMgr must not require use of an Allowed DB entry other than the Microsoft-provided EFI\_CERT\_X509 signature with "CN=Microsoft Windows Production PCA 2011" and "Cert Hash(sha1): 58 0a 6f 4c c4 e4 b6 69 b9 eb dc 1b 2b 3e 08 7b 80 d0 67 8d.
 
-4.  On ARM, the UEFI Allowed database ("db") must not contain any other entry than the Microsoft- provided EFI\_CERT\_X509 signature with "CN=Microsoft Windows Production PCA 2011" and "Cert Hash(sha1): 58 0a 6f 4c c4 e4 b6 69 b9 eb dc 1b 2b 3e 08 7b 80 d0 67 8d.
+4.  The policy for acceptable signature algorithms (and padding schemes) shall be possible to update. The exact method for updating the policy is determined by each authority (for example: Microsoft determines policies for binaries it is responsible for; SOC vendor for firmware updates). It is recognized that the initial ROM code need not have an ability to update the initial signature scheme.
+The platform shall maintain and enforce a policy with regards to signature authorities for firmware and pre-Operating System components; the policy (and hence the set of authorities) shall be possible to update. The update must happen either as a result of actions by a physically present authorized user or by providing a policy update signed by an existing authority authorized for this task. On ARM platforms, the physical presence alone is not sufficient. Signature authority (db or KEK) updates must be authenticated on ARM platforms.
 
-5.  The policy for acceptable signature algorithms (and padding schemes) shall be possible to update. The exact method for updating the policy is determined by each authority (for example: Microsoft determines policies for binaries it is responsible for; SOC vendor for firmware updates). It is recognized that the initial ROM code need not have an ability to update the initial signature scheme.
+6.  Upon power-on, the platform shall start executing read-only boot firmware stored on-die and use public key cryptography as per algorithm policy to verify the signatures of all images in the boot sequence up- to the Windows Boot Manager.
 
-6.  The platform shall maintain and enforce a policy with regards to signature authorities for firmware and pre-Operating System components; the policy (and hence the set of authorities) shall be possible to update. The update must happen either as a result of actions by a physically present authorized user or by providing a policy update signed by an existing authority authorized for this task. On ARM platforms, the physical presence alone is not sufficient. Signature authority (db or KEK) updates must be authenticated on ARM platforms.
+7.  Protection of physical memory from unauthorized internal DMA (for example: GPU accessing memory outside of video-specific memory) and no unauthenticated DMA access to the SOC. The firmware shall enable this protection as early as feasible, preferably within the initial boot firmware.
 
-7.  Upon power-on, the platform shall start executing read-only boot firmware stored on-die and use public key cryptography as per algorithm policy to verify the signatures of all images in the boot sequence up- to the Windows Boot Manager.
+8.  Optional: The memory containing the initial boot firmware (executing in SRAM) may be made inaccessible upon jumping to the next validated stage of the boot sequence. The initial boot firmware may remain inaccessible until power-on-reset is triggered.
 
-8.  Protection of physical memory from unauthorized internal DMA (for example: GPU accessing memory outside of video-specific memory) and no unauthenticated DMA access to the SOC. The firmware shall enable this protection as early as feasible, preferably within the initial boot firmware.
+9.  The platform shall enforce policy regarding the replacement of firmware components. The policy must include protection against rollback. It is left to the platform vendor to define the exact method for policy enforcement, but the signature verification of all firmware updates must pass and the update must be identified in such a manner that a later version of a component cannot, without proper authorization (for example: physical presence), be replaced by an earlier version of the component where earlier and later may be defined by a (signed) version number, for example.
 
-9.  Optional: The memory containing the initial boot firmware (executing in SRAM) may be made inaccessible upon jumping to the next validated stage of the boot sequence. The initial boot firmware may remain inaccessible until power-on-reset is triggered.
+10. Optional: The platform shall offer at least 112 logical eFuse bits to support platform firmware revision control in accordance with the above requirement.
 
-10. The platform shall enforce policy regarding the replacement of firmware components. The policy must include protection against rollback. It is left to the platform vendor to define the exact method for policy enforcement, but the signature verification of all firmware updates must pass and the update must be identified in such a manner that a later version of a component cannot, without proper authorization (for example: physical presence), be replaced by an earlier version of the component where earlier and later may be defined by a (signed) version number, for example.
+11. Physical Security Requirements. In retail parts, once the platform is configured for Production mode, the hardware must disable all external hardware debug interfaces such as JTAG that may be used to modify the platform's security state, and disable all hardware test modes and disable all scan chains. The disabling must be permanent unless re-enablement unconditionally causes all device-managed keys that impact secure boot, TPM, and storage security to be rendered permanently erased.
 
-11. Optional: The platform shall offer at least 112 logical eFuse bits to support platform firmware revision control in accordance with the above requirement.
+12. Platforms shall be UEFI Class three (see UEFI Industry Group, Evaluating UEFI using Commercially Available Platforms and Solutions, version 0.3, for a definition) with no Compatibility Support Module installed or installable. BIOS emulation and legacy PC/AT boot must be disabled.
 
-12. Physical Security Requirements. In retail parts, once the platform is configured for Production mode, the hardware must disable all external hardware debug interfaces such as JTAG that may be used to modify the platform's security state, and disable all hardware test modes and disable all scan chains. The disabling must be permanent unless re-enablement unconditionally causes all device-managed keys that impact secure boot, TPM, and storage security to be rendered permanently erased.
+13. Each device is required to leave manufacturing provisioned with all cryptographic seeds and keys that are necessary to prevent attacks against the device’s Secure Boot, TPM and secure persistent storage implementations. Seeds and symmetric keys shall be immutable, per-device-unique, and non- predictable (random with sufficient length to resist exhaustive search; see NIST 800-31A for acceptable key sizes).
 
-13. On ARM platforms Secure Boot Custom Mode is not allowed.
+14. The platform is required to implement the Hardware Security Testability Interface and share documentation and tools as specified in System.Fundamentals.Firmware.HSTI.
 
-14. A physically present user cannot override Secure Boot authenticated variables (for example: PK, KEK, db, dbx).
-
-15. Platforms shall be UEFI Class three (see UEFI Industry Group, Evaluating UEFI using Commercially Available Platforms and Solutions, version 0.3, for a definition) with no Compatibility Support Module installed or installable. BIOS emulation and legacy PC/AT boot must be disabled.
-
-16. Each device is required to leave manufacturing provisioned with all cryptographic seeds and keys that are necessary to prevent attacks against the device’s Secure Boot, TPM and secure persistent storage implementations. Seeds and symmetric keys shall be immutable, per-device-unique, and non- predictable (random with sufficient length to resist exhaustive search; see NIST 800-31A for acceptable key sizes).
-
-17. The platform is required to implement hardware security test interface and share documentation and tools as specified in the ‘Hardware Security Test Interface Specification’ document. This requirement is IF IMPLEMENTED for Server.
+15. All Security Features marked as Implemented in HSTI must report as Successfully Verified.
 
 
 <a name="system.fundamentals.firmware.tpr"></a>
@@ -4987,7 +4982,7 @@ Windows 10 has an optional feature called [Device Guard](http://blogs.msdn.com/b
 <td>The features that virtualization-based security uses in the Windows hypervisor can only run on a 64-bit PC.</td>
 </tr>
 <tr class="odd">
-<td>UEFI firmware version 2.3.1 or higher with UEFI Secure Boot and Platform Secure Boot</td>
+<td>UEFI firmware version 2.3.1.c or higher with UEFI Secure Boot and Platform Secure Boot</td>
 <td><p>UEFI Secure Boot ensures that the device boots only authorized code. Additionally, Boot Integrity (aka Platform Secure Boot) must be supported following the requirement in Hardware Compatibility Specification for Systems for Windows 10:</p>
 <p><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932805.aspx#system_fundamentals_firmware_uefisecureboot">System.Fundamentals.Firmware.UEFISecureBoot</a></p>
 <p><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932807.aspx#system_fundamentals_firmware_cs_uefisecureboot_connectedstandby">System.Fundamentals.Firmware.CS.UEFISecureBoot.ConnectedStandby</a> (this includes Hardware Security Test Interface)</p></td>
@@ -5089,7 +5084,7 @@ All diagnostic utilities intended for use with Nano Server must meet these requi
 
 **Description**
 
-All diagnostics tools and utilities intended for use in a Microsoft Azure Stack solution must support management by either of the following methods:
+All diagnostics tools and utilities intended for use on Nano Server must support management by either of the following methods:
 
  - Remotely, using Windows PowerShell or Windows Management Instrumentation (WMI).
 
@@ -5144,8 +5139,6 @@ All monitoring tools, utilities, and agents must support installation by either 
  - Local installation using a command line tool that an admin can run on Nano Server by connecting to a Nano Server instance through a remote Windows PowerShell session or SSH
  
 If the tool, utility, or agent runs locally on Nano Server, it must be made available as a Windows Server Application (WSA) installer package.
-
-For Microsoft Azure Stack, in particular, all monitoring has to be agentless, and agents will not be allowed on the hosts. Also see ‘if implemented’ Redfish requirement at System.Server.Manageability.Redfish.
 
 
 ### System.Fundamentals.ServerNano.OperateInServerNano
@@ -5629,7 +5622,7 @@ When used in systems that support connected standby, the SATA device must meet t
 
 Platforms supporting the use of NVDIMM-N devices have to comply with the *Microsoft \_DSM for JEDEC Byte-Addressable Energy-Backed Interface NVDIMMs* specification, located here:
 
- - <http://go.microsoft.com/fwlink/?LinkId=620289>
+ - <https://msdn.microsoft.com/en-us/library/windows/hardware/mt604741(v=vs.85).aspx>
 
 Note: NVDIMM-N devices are identified through the Firmware’s NFIT table as defined in ACPI 6.1.
 
@@ -5943,6 +5936,8 @@ If a system exposes multiple Dual Role capable ports, only one port should in fu
 **Description**
 
 Systems with Extensible Host Controller Interface (xHCI) Controllers must be tested with Microsoft's xHCI Stack installed and enabled.
+
+Any system using xHCI must ship using Microsoft’s inbox xHCI stack. Additionally if a system ships with dock that has an xHCI controller, that dock must use Microsoft’s xHCI stack.
 
 
 ### System.Fundamentals.SystemUSB.USBDevicesandHostControllersWorkAfterPowerCycle
@@ -6587,6 +6582,8 @@ If the system implements UCSI, it must implement UCSI v1.0 (or later). In additi
 
  - GET\_PDOS
 
+ - GET_CABLE_PROPERTY
+
  - SET\_NOTIFICATION\_ENABLE
 
      - The system or controller must support the following notifications within this command:
@@ -6595,6 +6592,8 @@ If the system implements UCSI, it must implement UCSI v1.0 (or later). In additi
 
          - Negotiated Power Level Change
 
+		 - Supported CAM Change
+
  - GET\_CONNECTOR\_STATUS
 
      - The system or controller must support the following Connector Status Changes within this command:
@@ -6602,6 +6601,8 @@ If the system implements UCSI, it must implement UCSI v1.0 (or later). In additi
          - Supported Provider Capabilities Change
 
          - Negotiated Power Level Change
+
+		 - Request Data Object
 
 
  - The system or controller must support the following field in GET\_CONNECTOR\_STATUS Status structure
@@ -7568,6 +7569,124 @@ In addition to the above, the server must have:
 1.	CPU that is a dual socket system with Intel® Xeon® Processor E5 v3 Family or better
 
 2.	A minimum of 256 GB RAM
+
+
+<a name="system.server.SDDC"></a>
+## System.Server.SDDC
+
+### System.Server.SDDC.Base
+
+*Basic requirements that must be supported by any server used in a Windows Server Software Defined offering*
+
+<table>
+<tr>
+<th>Applies to</th>
+<td>
+<p>Windows Server 2016 x64</p>
+</td></tr></table>
+
+
+**Description**
+Requirements for a server used in a Windows Server Software Defined offering are captured in the following table.
+
+| Feature                      | Requirement                                                |
+|------------------------------|------------------------------------------------------------|
+| System.Fundamentals.Firmware | System.Fundamentals.Firmware.FirmwareSupportsUSBDevices    |
+|                              | System.Fundamentals.Firmware.UEFIBitLocker                 |
+|                              | System.Fundamentals.Firmware.UEFIBootEntries               |
+|                              | System.Fundamentals.Firmware.UEFICompatibility             |
+|                              | System.Fundamentals.Firmware.UEFIDefaultBoot               |
+|                              | System.Fundamentals.Firmware.UEFILegacyFallback            |
+|                              | System.Fundamentals.Firmware.UEFISecureBoot                |
+|                              | System.Fundamentals.Firmware.Update                        |
+| System.Server.Virtualization | System.Server.Virtualization.ProcessorVirtualizationAssist |
+
+In addition to the above, the server must have:
+- CPU that is a dual socket system with Intel® Xeon® Processor E5 v3 Family or better
+- A minimum of 128GB RAM
+
+### System.Server.SDDC.Assurance
+
+*Hardware Assurance requirements for Servers used in a Windows Server Software Defined offering*
+
+<table>
+<tr>
+<th>Applies to</th>
+<td>
+<p>Windows Server 2016 x64</p>
+</td></tr></table>
+
+
+**Description**
+Servers used in a Windows Server Software Defined offering should meet the requirements of the Hardware Assurance AQ
+
+| Feature                 | Requirement                                                    |
+|-------------------------|----------------------------------------------------------------|
+| System.Server.Assurance | System.Server.Assurance.EnhancedPlatformIntegrityProtection    |
+
+### System.Server.SDDC.SecureBootUEFIOverPXE
+
+*PXE boot requirements for deploying Microsoft Azure Stack*
+
+<table>
+<tr>
+<th>Applies to</th>
+<td>
+<p>Windows Server 2016 x64</p>
+</td></tr></table>
+
+
+**Description**
+Servers used in a Windows Server Software Defined offering should be able to boot successfully over PXE in UEFI mode with SecureBoot enabled.
+
+<a name="system.server.SDDC.BMC"></a>
+## System.Server.SDDC.BMC
+
+### System.Server.SDDC.BMC.Base
+*Baseboard Management Controller requirements for a Windows Server Software Defined offering*
+
+<table>
+<tr>
+<th>Applies to</th>
+<td>
+<p>Windows Server 2016 x64</p>
+</td></tr></table>
+
+
+**Description**
+The BMC feature requirement for a Windows Server Software Defined offering is captured in the following table.
+
+| Feature                             | Requirement                                                    | Azure Stack Certification |
+|-------------------------------------|----------------------------------------------------------------|---------------------------|
+| System.Server.BMC                   | System.Server.BMC.OutOfBandRemoteManageability                 | Required                  |
+| System.Server.Manageability.Redfish | System.Server.Manageability.Redfish.Basic                      | If Implemented            |
+
+In addition to the above, the BMC should implement LDAP-based authentication.
+
+### System.Server.SDDC.BMC.Reliability
+*Baseboard Management Controller reliability requirements for a Windows Server Software Defined offering.*
+
+<table>
+<tr>
+<th>Applies to</th>
+<td>
+<p>Windows Server 2016 x64</p>
+</td></tr></table>
+
+
+**Description**
+The IPMI functionality below will be tested from a reliability perspective since it is critical for a successful deployment and continued access to a Windows Server Software Defined offering. The following powershell cmdlets will be used with the ‘-ManagementProtocol IPMI’ parameter to exercise IPMI functionality in a stress environment. 
+	
+- Get-PcsvDevice
+- Get-PcsvDeviecLog
+- Restart-PcsvDevice
+- Set-PcsvDeviceBootConfiguration
+- Set-PcsvDeviceNetworkConfiguration
+- Set-PcsvDeviceUserPassword
+- Start-PcsvDevice
+- Stop-PcsvDevice
+- Clear-PcsvDeviceLog
+
 
 
 <a name="system.server.azurestack.security"></a>
@@ -9516,6 +9635,86 @@ Microsoft Azure Stack storage requirements for the initial product
 release are identical to the hardware requirements for the Microsoft Quick Path Software Defined Datacenter Premium AQ that defines the hardware requirements for Storage Spaces
 Direct offerings. Future Microsoft Azure Stack iterations may support additional
 storage types.
+
+## System.Solutions.SDDC
+
+Windows Server 2016 offers a range of competitive and differentiated
+capabilities to enable lower cost, cloud scale Software-Defined Datacenter
+(SDDC) scenarios. One key learning in the early days of SDDC, across the broader
+industry, is the need for prescriptive guidance including certified hardware
+components and configuration. The goal with Windows Server Software-Defined
+(WSSD) program is to ensure that end customers have a seamless deployment and
+steady state operational experience on validated hardware. Towards that end,
+WSSD will provide guidance around 4 distinct technical stages
+
+-   **Design:** Reference Architecture (this document) for configuration
+    selection, design principles, and best practices
+
+-   **Validate:** Additional SDDC tests to ensure components and systems meet
+    WSSD requirements.
+
+-   **Deploy:** Automated deployment guidance and tooling
+
+-   **Operate:** Experience guides for steady state operational management using
+    System Center Virtual Machine Manager (VMM) and System Center Operations
+    Manager (OM)
+
+WSSD provides three offerings:
+
+-   **Hyper-converged Infrastructure (HCI) Standard** - Combines compute and
+    storage in the same cluster of server nodes to provide a highly virtualized
+    solution that’s easy to deploy, manage, and scale. This deployment option
+    simplifies IT infrastructure since customers no longer need traditional IT
+    silos of compute, shared storage (SAN/NAS), and networking. It’s best suited
+    for small to mid-sized IT environment running virtualized (Hyper-V)
+    workloads.
+
+-   **Converged Software-Defined Storage (SDS)** –Provides a lower cost,
+    enterprise-grade, shared storage alternative to traditional SAN/NAS. Built
+    using a cluster of server nodes, it’s easy to deploy, manage, and scale out
+    to build storage capacity as customer’s needs grow over time. On one hand,
+    it’s simplicity and low cost would appeal to small/mid-sized IT
+    environments, it’s scale, flexibility, and cloud-scale traits would benefit
+    large service providers and enterprise IT. Any workloads that are compatible
+    with SMB storage are a good fit for this offer.
+
+-   **Hyper-converged Infrastructure (HCI) Premium** Provides a comprehensive
+    software-defined “datacenter in a box”. Building on the same foundation as
+    HCI-Standard, these offers add Software-Defined Networking (SDN) and
+    Assurance to the stack. These offerings provide the perfect building blocks
+    for customers – typically a large enterprise, service provider or hoster –
+    that want to build on premise SDDC that emulates large public clouds like
+    Azure. While SDN provides the benefit to deploy, provision and manage
+    networking services at scale, Assurance provides essential tenant isolation
+    and services for running a secure on-premises multi-tenant cloud.
+
+|                |                                                                                        | HCI Standard                                                                                               | Converged SDS                                                                                                                                                     | HCI Premium                                                                 |
+|----------------|----------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|
+| Positioning    |                                                                                        | Hyper-converged compute and storage for Hyper-V Targeted at Windows Server 2008 or later Hyper-V customers | Scale Out File Server storage for Hyper-V Seamless SAN/NAS replacement with no compute cluster changes Targeted at Windows Server 2012 or later Hyper-V customers | SDDC for new WSSC customers Targeted at new Windows Server 2016 deployments |
+| Compute        | Software Defined Compute – Hyper-V                                                     |                                                                                                            |                                                                                                                                                                   |                                                                             |
+| Storage        | Software Defined Storage – Storage Spaces Direct                                       |                                                                                                            |                                                                                                                                                                   |                                                                             |
+| Networking     | V-Switch, Switch-Embedded Teaming (SET), and SMB Direct                                |                                                                                                            |                                                                                                                                                                   |                                                                             |
+|                | Software-Defined Networking (Network Controller, Software Load Balancer, Gateway)      |                                                                                                            |                                                                                                                                                                   |                                                                             |
+| Security       | Platform security (UEFI secure boot)                                                   |                                                                                                            |                                                                                                                                                                   |                                                                             |
+|                | Assurance (TPM 2.0, Shielded VM’s)                                                     |                                                                                                            |                                                                                                                                                                   |                                                                             |
+| Deployment     | Deployment using Microsoft-provided guidance                                           |                                                                                                            |                                                                                                                                                                   | SDN deployment using SC 2016 VMM                                            |
+| Management     | System Center 2016 VMM & OM (Deployed on infrastructure outside of “WSSD” stack)       |                                                                                                            |                                                                                                                                                                   |                                                                             |
+|                | Partner-developed SC management packs and plug-ins, and other SC components (optional) |                                                                                                            |                                                                                                                                                                   |                                                                             |
+| Pre-requisites |                                                                                        | System Center 2016 Active Directory Domain Services                                                        | System Center 2016 Active Directory Domain Services                                                                                                               | System Center 2016 Active Directory Domain Services                         |
+
+The following table describes the SDDC design limits
+
+| Element          | WSSD Standard                                 | WSSD Premium                                  | WSSD Converged SDS                            |
+|------------------|-----------------------------------------------|-----------------------------------------------|-----------------------------------------------|
+| Servers          | 2-16                                          | 4-16                                          | 4-16                                          |
+| CPU              | Intel® Xeon® Processor E5 v3 Family or better | Intel® Xeon® Processor E5 v3 Family or better | Intel® Xeon® Processor E5 v3 Family or better |
+| RAM              | 128GB+                                        | 128GB+                                        | 64GB+                                         |
+| Disk devices     | Up to 416 total                               | Up to 416 total                               | Up to 416 total                               |
+| Caching devices  | 2+ per node                                   | 2+ per node                                   | 2+ per node                                   |
+| Capacity devices | 4+ per node                                   | 4+ per node                                   | 4+ per node                                   |
+| Storage Pool     | 1                                             | 1                                             | 1                                             |
+| Volumes          | Up to 32                                      | Up to 32                                      | Up 32                                         |
+| Volume size      | Up to 32TB                                    | Up to 32TB                                    | Up to 32TB                                    |
 
 
 <a name="system.solutions.storagespacesdirect"></a>
