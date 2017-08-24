@@ -36,7 +36,7 @@ ms.technology: windows-oem
 
 **Description**
 
-Camera implementations must be based on the AVStream class interface and Windows Driver Model (WDM) as defined in the Windows Driver Kit. AVStream is the replacement technology for Stream class interface, which is no longer supported.
+Camera implementations must be based on the AVStream class interface and Windows Driver Model (WDM) as defined in the Windows Driver Kit. AVStream is the replacement technology for Stream class interface, which is no longer supported. Camera drivers must register under the class “Camera” in their .inf, not “Image” or “Media.”
 
 Camera drivers must support all of the required pins, properties, and settings as defined in the Windows Driver Kit.
 
