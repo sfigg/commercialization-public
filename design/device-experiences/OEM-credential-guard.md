@@ -28,60 +28,27 @@ For a device to support Crendential Guard as specified in the Windows Hardware C
 This is independent of Modern Standby/Connected Standby Systems; all systems using Credential Guard must pass HSTI 1.1.a. | There are two security benefits. 
 1. After the system is powered on, Platform Secure Boot provides protections against physically present attackers, and defense-in-depth against malware.
 2. HSTI provides additional security assurance for correctly secured silicon and platform. TBD: what does "correctly secured silicon and platform" mean? Does saying this add anything to the understanding of this feature? I would probably remove this sentence or provide a better desription of what HSTI provides. |
-
-
-
-
-
-### Firmware update through Windows Update
-Firmware must support field updates through Windows Update and UEFI encapsulation update. 
-
-The security benefit is that firmware updates are fast, secure, and reliable.
-
-### Secure Boot configuration and Management
-
-As the OEM, you must provide the ability, in BIOS, to add ISV, OEM, or Enterprise certificates to the Secure Boot database at manufacturing time. The Microsoft UEFI CA must be removed from the same Secure Boot database. Support for 3rd-party UEFI modules is permitted but should leverage ISV-provided certificates or OEM certificate for the specific UEFI software.
-
-There are two security benefits. 
+| Firmware update through Windows Update | Firmware must support field updates through Windows Update and UEFI encapsulation update. | Firmware updates are fast, secure, and reliable. |
+| Secure Boot configuration and Management | As the OEM, you must provide the ability, in BIOS, to add ISV, OEM, or Enterprise certificates to the Secure Boot database at manufacturing time. The Microsoft UEFI CA must be removed from the same Secure Boot database. Support for 3rd-party UEFI modules is permitted but should leverage ISV-provided certificates or OEM certificate for the specific UEFI software. | There are two security benefits. 
 1. Enterprises can choose to allow proprietary EFI drivers/applications to run.
-2. removing Microsoft UEFI CA from the Secure Boot database provides enterprises with full control over software that runs before the operating system boots.
+2. removing Microsoft UEFI CA from the Secure Boot database provides enterprises with full control over software that runs before the operating system boots. |
+| 64-bit CPU | Virtualization-Based Security (VBS) features requires Windows hypervisor, which is only supported on 64-bit processors. | |
+|Virtualization extensions - Intel VT-x, AMD-V, and extended page tables | VBS only works if the processor supports virtualization with second level address translation. | VBS provides isolation of the secure kernel from the rest of Windows. |
+| VT-D or AMD Vi Input/output memory management unit(IOMMU) | IOMMU enhances system resiliency against memory attacks. For more information, see [ACPI system description tables](https://docs.microsoft.com/en-us/windows-hardware/drivers/bringup/acpi-system-description-tables). | |
+| Trusted Platform Module (TPM) 2.0 | TPM 2.0 provides protection for VBS encryption keys that are stored in the firmware. Credential Guard data is protected against attacks involving a physically present user with BIOS and hardware access. | |
+| UEFI 2.3.1.c or higher firmware along with Secure Boot | UEFI Secure Boot ensures that the device boots with only authorized code in the pre-OS environment. For more information, see [System.Fundamentals.Firmware.UEFISecureBoot](https://docs.microsoft.com/en-us/windows-hardware/design/compatibility/systems#systemfundamentalsfirmwareuefisecureboot). | |
+| Securing boot configuration and management | To support this, you must allow BIOS password or stronger authentication to ensure that only the authenticated Platform BIOS administrator can change BIOS settings. You must also provide a protected BIOS option to configure a list of permitted boot devices and the boot device order, which overrides the BOOTORDER modification made by the OS to boot only from an internal hard drive, for example.
 
-### 64-bit CPU
-Virtualization-Based Security (VBS) features requires Windows hypervisor, which is only supported on 64-bit processors. 
-
-### Virtualization extensions - Intel VT-x, AMD-V, and extended page tables
-VBS only works if the processor supports virtualization with second level address translation. 
-The security benefit is that VBS provides isolation of the secure kernel from the rest of Windows. 
-
-### VT-D or AMD Vi Input/output memory management unit(IOMMU)
-
-IOMMU enhances system resiliency against memory attacks. For more information, see [ACPI system description tables](https://docs.microsoft.com/en-us/windows-hardware/drivers/bringup/acpi-system-description-tables).
-
-### Trusted Platform Module (TPM)
-
-TPM 2.0 provides protection for VBS encryption keys that are stored in the firmware. Credential Guard data is protected against attacks involving a physically present user with BIOS and hardware access.
-
-### UEFI 2.3.1.c or higher firmware along with Secure Boot
-
-UEFI Secure Boot ensures that the device boots with only authorized code in the pre-OS environment. For more information, see [System.Fundamentals.Firmware.UEFISecureBoot](https://docs.microsoft.com/en-us/windows-hardware/design/compatibility/systems#systemfundamentalsfirmwareuefisecureboot).
-
-### Securing boot configuration and management
-To support this, you must allow BIOS password or stronger authentication to ensure that only the authenticated Platform BIOS administrator can change BIOS settings. You must also provide a protected BIOS option to configure a list of permitted boot devices and the boot device order, which overrides the BOOTORDER modification made by the OS to boot only from an internal hard drive, for example.
-
-BIOS options related to security and boot options must be secured to prevent other operating systems from starting and to prevent changes to the BIOS settings. BIOS authentication must be set. For example, the BIOS password must be set.
-
-There are two security benefits.
+BIOS options related to security and boot options must be secured to prevent other operating systems from starting and to prevent changes to the BIOS settings. BIOS authentication must be set. For example, the BIOS password must be set. |
+|There are two security benefits.
 
 1. BIOS password is required to protect against a physically present user with BIOS access.
 
-2. When locked, boot order provides protection against an admin user booting into WinRE or any other OS from bootable media.
+2. When locked, boot order provides protection against an admin user booting into WinRE or any other OS from bootable media. | 
 
-### Secure Memory Overwrite Request (MOR) revision 2
-A secure MOR bit prevents certain memory attacks so this is necessary for Credential Guard. For more information, see [Secure MOR implementation](https://docs.microsoft.com/en-us/windows-hardware/drivers/bringup/device-guard-requirements).
+| Secure Memory Overwrite Request (MOR) revision 2 | A secure MOR bit prevents certain memory attacks so this is necessary for Credential Guard. For more information, see [Secure MOR implementation](https://docs.microsoft.com/en-us/windows-hardware/drivers/bringup/device-guard-requirements). | |
 
-### Multi-factor authentication
-Two-step verification is a method of authentication that requires more than one verification method and adds a critical second layer of security to user sign-ins and transactions. For more information, see [What is Azure Multi-Factor Authentication?](https://docs.microsoft.com/en-us/azure/multi-factor-authentication/multi-factor-authentication)
-
+| Multi-factor authentication | Two-step verification is a method of authentication that requires more than one verification method and adds a critical second layer of security to user sign-ins and transactions. For more information, see [What is Azure Multi-Factor Authentication?](https://docs.microsoft.com/en-us/azure/multi-factor-authentication/multi-factor-authentication) | |
  
 
 ## Related topics
