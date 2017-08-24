@@ -20,6 +20,8 @@ For example, running Windows Setup through Windows PE requires you to be in the
 
 For many operations, such as applying Windows images using Diskpart and DISM, the firmware mode might not make a difference.
 
+For more in-depth details on booting to UEFI or BIOS mode, see [Boot to UEFI mode or legacy BIOS mode](boot-to-uefi-mode-or-legacy-bios-mode.md).
+
 **Boot to UEFI mode**
 
 -   When booting the PC, you may need to manually select the UEFI boot files: \\EFI\\BOOT\\BOOTX64.EFI.
@@ -31,6 +33,8 @@ For many operations, such as applying Windows images using Diskpart and DISM, th
     3.  Select the file from the USB drive: `\EFI\BOOT\BOOTX64.EFI`.
 
 **Detect whether Windows PE is booted in BIOS or UEFI mode**
+
+Once you're booted into WinPE, you can check to see which mode you've booted into. If you want to know which mode WinPE is in every time you boot, you can add a script that checks to your WinPE image. See [Wpeinit and Startnet.cmd: Using WinPE startup scripts](wpeinit-and-startnetcmd-using-winpe-startup-scripts.md) for more information.
 
 1.  Check the **HKLM\\System\\CurrentControlSet\\Control\\PEFirmwareType** registry value to see if the PC is booted to UEFI or BIOS mode. Note: you may need to run `wpeutil UpdateBootInfo` to make sure this value is present.
 
@@ -58,6 +62,8 @@ For many operations, such as applying Windows images using Diskpart and DISM, th
 
 ## <span id="related_topics"></span>Related topics
 
+
+[Boot to UEFI mode or legacy BIOS mode](boot-to-uefi-mode-or-legacy-bios-mode.md)
 
 [WinPE for Windows 10](winpe-intro.md)
 
