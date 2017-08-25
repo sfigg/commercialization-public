@@ -19,7 +19,7 @@ We recommend that you manually cancel the job and reboot the machine to alert Ob
 
  
 
-The process for running the Windows HLK tests in a series of scripted steps follows a workflow that is similar to the [Windows HLK Getting Started](p_sxs_hlk.windows_hlk_getting_started) Guide.
+The process for running the Windows HLK tests in a series of scripted steps follows a workflow that is similar to the [Windows HLK Getting Started](..\getstarted\windows_hlk_getting_started) Guide.
 
 ![hlk automation tools test process](images/hlk-winb-hlkautotool-process.jpg)
 
@@ -48,14 +48,14 @@ The individual steps are as follows:
 ## <span id="BKMK_prereq"></span><span id="bkmk_prereq"></span><span id="BKMK_PREREQ"></span>Windows HLK automation tools prerequisites
 
 
-Before you begin testing, make sure that you are familiar with the Windows HLK automation concepts and hardware requirements. See [Windows HLK Prerequisites](p_sxs_hlk.windows_hlk_prerequisites).
+Before you begin testing, make sure that you are familiar with the Windows HLK automation concepts and hardware requirements. See [Windows HLK Prerequisites](..\getstarted\windows_hlk_prerequisites).
 
 ## <span id="BKMK_installctrl"></span><span id="bkmk_installctrl"></span><span id="BKMK_INSTALLCTRL"></span>Step 1: Install Controller and supporting programs on the test server
 
 
-The test server computer should be installed with an operating system and configured as described in [Windows HLK Prerequisites](p_sxs_hlk.windows_hlk_prerequisites). You can then install the following programs:
+The test server computer should be installed with an operating system and configured as described in [Windows HLK Prerequisites](..\getstarted\windows_hlk_prerequisites). You can then install the following programs:
 
-1.  Windows HLK. For detailed instructions about how to install the Windows HLK, see [Step 1: Install Controller and Studio on the test server](p_sxs_hlk.step_1_install_controller_and_studio_on_the_test_server).
+1.  Windows HLK. For detailed instructions about how to install the Windows HLK, see [Step 1: Install Controller and Studio on the test server](..\getstarted\step_1_install_controller_and_studio_on_the_test_server).
 
 2.  Windows PowerShell 3.0. See [KB2506143](http://www.microsoft.com/en-us/download/details.aspx?id=34595).
 
@@ -113,7 +113,7 @@ To verify the successful installation of Windows PowerShell 3.0, do the follow
 ## <span id="BKMK_installClient"></span><span id="bkmk_installclient"></span><span id="BKMK_INSTALLCLIENT"></span>Step 2: Install HLK Client on the test system(s)
 
 
-To install the HLK client on a test system, follow the instructions found in [Step 2: Install Client on the test system(s)](p_sxs_hlk.step_2__install_client_on_the_test_system_s_).
+To install the HLK client on a test system, follow the instructions found in [Step 2: Install Client on the test system(s)](..\getstarted\step_2__install_client_on_the_test_system_s_).
 
 **Note**  
 When you install Windows HLK Client software on a computer, the computer is automatically added into the Windows HLK Controller Default Pool. The Default Pool is only supported in the Project Definition File that you define in the next steps.
@@ -896,7 +896,7 @@ Some projects require Test-specific information for discovering and executing te
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_hlk\p_hlk%5D:%20HLK%20Automation%20Tool%20%20RELEASE:%20%288/1/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default.aspx. "Send comments about this topic to Microsoft")
+
 
 
 
