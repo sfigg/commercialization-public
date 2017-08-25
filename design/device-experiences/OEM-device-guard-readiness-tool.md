@@ -12,7 +12,7 @@ ms.technology: windows-oem
 ---
 
 # Windows Defender Device Guard and Credential Guard Readiness tool
-Microsoft provides a tool that you can use to determine if a device is capable of utilizing Device Guard. You can see the tool download at [Device Guard and Credential Guard hardware readiness tool](https://www.microsoft.com/en-us/download/details.aspx?id=53337)
+Microsoft provides a tool that you can use to determine if a device is capable of utilizing Device Guard. You can download it at [Device Guard and Credential Guard hardware readiness tool](https://www.microsoft.com/en-us/download/details.aspx?id=53337)
 
 
 
