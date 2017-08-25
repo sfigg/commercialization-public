@@ -1216,7 +1216,7 @@ The following requirements that the device must fulfill are specific to revision
 
     -   Format NVM must be targetable at individual namespaces, i.e., Bit 1 and Bit 0 in the Identify Controller data structure, of Byte 524 (FNA), must be set to 0.
 
--   6.6 Dataset Management – Deallocate
+-   6.6 (If Implemented) Dataset Management – Deallocate
 
     -   All I/O and Deallocate commands shall be completed in less than 500 ms.
 
