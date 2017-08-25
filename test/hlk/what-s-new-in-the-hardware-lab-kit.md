@@ -45,7 +45,7 @@ The Results tab now indicates when a test fails due to a system crash. The tab a
 See the following topics for more information:
 
 -   [Step 7: View test results and log files (Getting started guide)](getstarted\step-7-view-test-results-and-log-files)
--   [HLK Studio - Results Tab](\user\hlk-studio---results-tab)
+-   [HLK Studio - Results Tab](user\hlk-studio---results-tab)
 -   [Troubleshooting Windows HLK Test Failures (system crashes)](user\troubleshooting-windows-hlk-test-failures#sysx)
 
 ### <span id="Exporting_failed_HLK_jobs"></span><span id="exporting_failed_hlk_jobs"></span><span id="EXPORTING_FAILED_HLK_JOBS"></span>Exporting failed HLK jobs
@@ -54,7 +54,7 @@ You can now export a failed job and re-run it on a machine that does not have th
 
 ### <span id="Support_for_Mobile_testing"></span><span id="support_for_mobile_testing"></span><span id="SUPPORT_FOR_MOBILE_TESTING"></span>Support for Mobile testing
 
-Mobile devices running Test and Health images are now supported for testing with the HLK. For more information, see [HLK Proxy Client Getting Started Guide](\getstarted\hlk-proxy-client-getting-started-guide.md).
+Mobile devices running Test and Health images are now supported for testing with the HLK. For more information, see [HLK Proxy Client Getting Started Guide](getstarted\hlk-proxy-client-getting-started-guide.md).
 
 ### <span id="SQL_Server_2012_Express_SP2"></span><span id="sql_server_2012_express_sp2"></span><span id="SQL_SERVER_2012_EXPRESS_SP2"></span>SQL Server 2012 Express SP2
 
@@ -66,11 +66,11 @@ Test levels have been replaced by Development Phases to better align with the ha
 
 ### <span id="Playlists"></span><span id="playlists"></span><span id="PLAYLISTS"></span>Playlists
 
-Playlists describe a collection of tests and can be created from the HLK Studio and [Object Model](\developer\microsoftwindowskitshardwareobjectmodel) to define custom test passes.
+Playlists describe a collection of tests and can be created from the HLK Studio and [Object Model](developer\microsoftwindowskitshardwareobjectmodel) to define custom test passes.
 
 <iframe src="https://hubs-video.ssl.catalog.video.msn.com/embed/afc1a262-6147-448f-910c-dbb1bcb18d07/IA?csid=ux-en-us&MsnPlayerLeadsWith=html&PlaybackMode=Inline&MsnPlayerDisplayShareBar=false&MsnPlayerDisplayInfoButton=false&iframe=true&QualityOverride=HD" width="720" height="405" allowFullScreen="true" frameBorder="0" scrolling="no"></iframe>
 
-Learn more about playlists in the [Getting Started Guide](\getstarted\step-6-select-and-run-tests.md).
+Learn more about playlists in the [Getting Started Guide](getstarted\step-6-select-and-run-tests.md).
 
 ### <span id="Windows_Hardware_Compatibility_Program"></span><span id="windows_hardware_compatibility_program"></span><span id="WINDOWS_HARDWARE_COMPATIBILITY_PROGRAM"></span>Windows Hardware Compatibility Program
 
@@ -89,7 +89,7 @@ To support unified driver submissions, results from HCK and HLK projects can be 
 
 ### <span id="Virtual_machine_support"></span><span id="virtual_machine_support"></span><span id="VIRTUAL_MACHINE_SUPPORT"></span>Virtual machine support
 
-The HLK Controller now supports installation and execution in a virtual machine. When configuring your virtual machines, ensure the virtual machine meets the [minimum requirements](\getstarted\windows-hlk-prerequisites) for the HLK Controller.
+The HLK Controller now supports installation and execution in a virtual machine. When configuring your virtual machines, ensure the virtual machine meets the [minimum requirements](getstarted\windows-hlk-prerequisites) for the HLK Controller.
 
 ### <span id="Partial_packaging"></span><span id="partial_packaging"></span><span id="PARTIAL_PACKAGING"></span>Partial packaging
 
