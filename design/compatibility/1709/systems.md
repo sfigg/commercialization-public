@@ -3299,6 +3299,30 @@ Applies to Windows Client OS SKUs only
 Installed memory is queried via Query [GetPhysicallyInstalledSystemMemory](http://msdn.microsoft.com/en-us/library/windows/desktop/cc300158.aspx) and OS visible memory is queried via [GlobalMemoryStatusEx](http://msdn.microsoft.com/en-us/library/aa366589.aspx) – ullTotalPhys.
 
 
+### System.Fundamentals.Firmware.HSTI
+
+*The Hardware Security Testability Interface provides a standardized mechanism for reporting the results of Security Configuration Self-Tests*
+
+<table>
+<tr>
+<th>Applies to</th>
+<td>
+<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
+<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
+<p>Windows 10 Mobile ARM</p>
+<p>Windows 10 Mobile x86</p>
+</td></tr></table>
+
+
+**Description**
+
+HSTI is defined by a specification available publicly on MSDN (https://msdn.microsoft.com/en-us/library/windows/hardware/mt712332). The current version of HSTI is 1.1a.
+
+**Mandatory:** Effective July 28, 2018, Systems must implement and accurately report the results of HSTI 1.1a or greater.
+
+**Mandatory:** Effective July 28, 2019, Systems must implement and accurately report the results of HSTI 2.0 or greater.
+
+
 ### System.Fundamentals.Firmware.NoExternalDMAOnBoot
 
 *All external DMA ports must be off by default until the OS explicitly powers them through related controller(s).*
@@ -6640,9 +6664,7 @@ If the system implements UCSI, it must implement UCSI v1.0 (or later). In additi
 
 **Mandatory:** The TPM 2.0 must be a model and firmware certified under Device.TrustedPlatformModule.TPM20.
 
-**Mandatory:** The TPM Interrupt PIN must be connected to an Interrupt Controller.
--	**Mandatory:** The System must configure this Interrupt Controller to allow Interrupts.
-
+**Recommended** until March 2018, then **Mandatory** The TPM Interrupt PIN should be connected to an Interrupt Controller and the System should configure this Interrupt Controller to allow Interrupts. This requirement applies to discrete TPM devices only.
 
 **Exception for Server:** These requirements are **If Implemented** on Server x64.  Any Server system with a TPM 2.0 must meet all requirements in System.Fundamentals.TPM20, but Server systems are not required to contain a TPM 2.0.
 
