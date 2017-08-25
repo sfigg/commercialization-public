@@ -1158,20 +1158,6 @@ The following requirements that the device must fulfill are specific to revision
 
 -   5.9 Get Features – at least the following must be reported accurately:
 
--   5.12.1.5 Error Recovery
-
--   5.12.1.6 Volatile Write Cache
-
-    -   A volatile write cache is not required on the device to adhere to these requirements. This field has to be accurately reported.
-
--   5.12.1.8 Interrupt Coalescing
-
-    -   \[Server\] required
-
-    -   \[Client\] not required
-
--   5.12.1.11 Asynchronous Event Configuration
-
 -   5.10 Get Log Page
 
     -   The device must implement and populate at least the log pages for Error Information (01h), SMART / Health Information (02h), and Firmware Slot Information (03h)
@@ -1184,9 +1170,7 @@ The following requirements that the device must fulfill are specific to revision
 
     -   NN (Number of Namespaces) must be at least 1. Bytes: 519:516
 
-    -   FLBAS (Formatted LBA Size) must have bit 4 set to 0. Byte: 26
-
-        -   If the Metadata Capabilities feature is supported, this requirement holds, otherwise it can be ignored; i.e., iff MC bit 1 is set to 1, the above FLBAS requirement is binding. Byte: 27
+    -   MS (Metadata Size) must be set to 00h, to indicate that no metadata is supported on the current LBA Format. 
 
     -   LBADS (LBA Data Size) must be set to 9 or 12, i.e., 512B or 4KB. Bits: 23:16
 
@@ -1209,6 +1193,20 @@ The following requirements that the device must fulfill are specific to revision
     -   Interrupt Coalescing (08h)
 
     -   Asynchronous Event Configuration (0Bh)
+
+    -   5.12.1.5 Error Recovery
+
+    -   5.12.1.6 Volatile Write Cache
+
+        -   A volatile write cache is not required on the device to adhere to these requirements. This field has to be accurately reported.
+
+    -   5.12.1.8 Interrupt Coalescing
+
+        -   \[Server\] required
+
+        -   \[Client\] not required
+
+    -   5.12.1.11 Asynchronous Event Configuration    
 
 -   5.13 (If Implemented) Format NVM
 
