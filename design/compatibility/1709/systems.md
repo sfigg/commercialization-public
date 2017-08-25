@@ -48,6 +48,7 @@ This section of the documentation provides specifications for hardware compatibi
  - [System.Fundamentals.Firmware.Boot](#system.fundamentals.firmware.boot)
  - [System.Fundamentals.Firmware.CS](#system.fundamentals.firmware.cs)
  - [System.Fundamentals.Firmware.TPR](#system.fundamentals.firmware.tpr)
+ - [System.Fundamentals.Security](#System.Fundamentals.Security)
  - [System.Fundamentals.Graphics](#system.fundamentals.graphics)
  - [System.Fundamentals.Graphics.DisplayRender](#system.fundamentals.graphics.displayrender)
  - [System.Fundamentals.Graphics.HybridGraphics](#system.fundamentals.graphics.hybridgraphics)
@@ -2768,6 +2769,65 @@ All Windows systems with an accelerometer must have sufficient graphics performa
 Both the above mentioned requirements are optional for Stereo 3D capable resolutions.
 
 
+<a name="System.Client.SensorCamera"></a>
+## System.Client.SensorCamera
+
+<!--No content was provided here in the original Word file.-->
+
+### System.Client.SensorCamera.Device
+
+*Systems with integrated cameras must meet camera device requirements.*
+
+<table>
+<tr>
+<th>Applies to</th>
+<td>
+<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
+<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
+<p>Windows 10 Mobile ARM</p>
+<p>Windows 10 Mobile x86</p>
+</td></tr></table>
+
+**Description**
+
+Please refer to System.Client.Camera.Device for description
+
+### System.Client.Camera.PhysicalLocation
+
+*Systems with integrated cameras must report the physical location of each camera.*
+
+<table>
+<tr>
+<th>Applies to</th>
+<td>
+<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
+<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
+<p>Windows 10 Mobile ARM</p>
+<p>Windows 10 Mobile x86</p>
+</td></tr></table>
+
+**Description**
+
+Please refer to System.Client.Camera.PhysicalLocation for description
+
+## System.Client.Camera.VideoCaptureAndCameraControls
+
+*Systems with integrated cameras meet the requirements of, and can support the Windows Capture Infrastructure.*
+
+<table>
+<tr>
+<th>Applies to</th>
+<td>
+<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
+<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
+<p>Windows 10 Mobile ARM</p>
+<p>Windows 10 Mobile x86</p>
+</td></tr></table>
+
+**Description**
+
+Please refer to System.Client.Camera.VideoCaptureAndCameraControls for description
+
 <a name="system.client.tablet.graphics"></a>
 ## System.Client.Tablet.Graphics
 
@@ -3565,7 +3625,7 @@ Note: These requirements are "If Implemented" for Server systems and apply only 
 <li><p>All Windows client systems must support a USB boot path for recovery purposes. For all Windows systems configured for Secure Boot, there is a last resort of booting from USB.</p></li>
 <li><p>Supporting GetVariable() for the EFI_IMAGE_SECURITY_DATABASE (both authorized and forbidden signature database) and the SecureBoot variable.</p></li>
 <li><p>Supporting SetVariable() for the EFI_IMAGE_SECURITY_DATABASE (both authorized and forbidden signature database), using an authorized KEK for authentication.</p></li>
-<li><p>Reserved Memory for Windows Secure Boot UEFI Variables. A total of at least 128 KB of non-volatile NVRAM storage memory must be reserved for NV UEFI variables (authenticated and unauthenticated, BS and RT) used by UEFI Secure Boot and Windows, and the maximum supported variable size must be at least  64 KB. There is no maximum NVRAM storage limit. Note that this is an increase from Windows 10, version 1703 requirements of 64 KB total and 32 KB variable size. This requirement will become enforced in the next release cycle.</p></li>
+<li><p>Reserved Memory for Windows Secure Boot UEFI Variables. A total of at least 128 KB of non-volatile NVRAM storage memory must be reserved for NV UEFI variables (authenticated and unauthenticated, BS and RT) used by UEFI Secure Boot and Windows, and the maximum supported variable size must be at least  64 KB. There is no maximum NVRAM storage limit. Note that this is an increase from Windows 10, version 1703 requirements of 64 KB total and 32 KB variable size. This requirement will become enforced in the next release cycle, after April 2018</p></li>
 <li><p>During normal firmware updates the following must be preserved:</p>
 <ol style="list-style-type: lower-alpha">
 <li><p>The Secure Boot state &amp; configuration (PK, KEK, db, dbx, SetupMode, SecureBoot)</p></li>
@@ -3589,7 +3649,7 @@ Note: These requirements are "If Implemented" for Server systems and apply only 
 <p>EFI_VARIABLE_TIME_BASED_AUTHENTICATED_WRITE_ACCESS</p>
 </blockquote>
 </li>
-<li><p>Microsoft UEFI CA key MUST be included in SecureBoot DB unless the platform, by design, blocks all the 3<sup>rd</sup> party UEFI extensions or implements Customized Deployment of Secure Boot and ships in User Mode.</p></li>
+<li><p>Microsoft UEFI CA key MUST be included in SecureBoot DB unless the platform, by design, blocks all the 3<sup>rd</sup> party UEFI extensions.</p></li>
 <li><p>All Windows client systems must ship with up-to-date DBX content out-of-the-box.</p></li>
 <li><p>Platform MUST expose dbDefault, dbxDefault, KEKDefault, &amp; PKDefault to be accessible for read by the OS.</p></li>
 <li><p>[If Implemented] If platform ships with support for Customized Deployment of Secure boot (Revision 1263, Section 30.3 of UEFI 2.7), then the device MUST ship in deployed mode. Devices may be shipped in User Mode for custom orders from enterprise customers.</p></li>
@@ -3597,8 +3657,8 @@ Note: These requirements are "If Implemented" for Server systems and apply only 
 <li><p>[If Implemented] If platform ships with support for Platform Recovery (Revision 1227, Section 23.7 if UEFI 2.7), then platform MUST also support HTTP Boot as mentioned above.</p></li>
 <li><p>[If Implemented] If platform ships with support for Customized Deployment of Secure Boot (Revision 1263, Section 30.3 of UEFI 2.7), then the Platform MUST provide consistent Secure Boot workflows as specified in the “Windows Consistent Secure Boot Workflows” document is available on CONNECT.</p></li>
 <li><p>Confidential & replay-protected storage:  External memory for non-volatile storage of all UEFI variables and security-sensitive BIOS settings MUST include protections of that data to ensure confidentiality and integrity of the data and to mitigate against rollback attacks.  This is generally accomplished by encrypting the data, applying a Message Authentication Code, and storing the resulting record in replay-protected storage such as Replay Protected Memory Block or Replay Protected Monotonic Counter.</p>
-<p>RPMC for non-discrete TPMs (consumer 16 MB parts) is a requirement for 2019</p>
-<p>RPMC for UEFI (commercial 32 MB parts)  is a requirement for 2020</p>
+<p>RPMC for non-discrete TPMs is a requirement for 2019</p>
+<p>RPMC for UEFI is a requirement for 2020</p>
 </li>
 </ol>
 
@@ -3944,6 +4004,34 @@ All necessary partitions have to be created, managed individually pre/post encry
 If WinRE is on the system partition, the size is 350 MB. If it’s not the system partition, then it’s 300MB. This is assuming MBR layout. (For GPT, WinRE is always separate from the ESP, therefore 300 MB.)
 
 This requirement is “If Implemented” for Server systems and applies only if a Server system is UEFI capable.
+
+
+<a name="System.Fundamentals.Security"></a>
+## System.Fundamentals.Security 
+
+*This feature includes requirements specific to the default platform configuration for enablement of virtualization features*
+
+### System.Fundamentals.Security.VirtualizationSupport
+
+*Systems must ship with virtualization enabled by default*
+
+<table>
+<tr>
+<th>Applies to</th>
+<td>
+<p>Windows Server 2016 x64</p>
+</td></tr></table>
+
+
+**Description**
+
+Systems must provide the following hardware virtualization extensions, and these must be enabled by default and available for use by the operating system. These features provide support required for Windows Virtualization Based Security (VBS) features. 
+
+  - Virtual machine extensions (Intel VT-x or AMD-V) with extended page table support (second level page tables)
+
+  - System IOMMUs (Intel VT-D or AMD Vi IOMMU).  All I/O devices must be behind an IOMMU
+
+  - By default, the presence of these hardware virtualization features, including virtual machine extensions and IOMMUs, must be unmasked and reported as supported by system firmware to the OS, and these features must be available for OS use.
 
 
 <a name="system.fundamentals.graphics"></a>
@@ -5284,11 +5372,23 @@ In the Windows Hardware Lab Kit, this requirement will be tested by using the Em
 
 **Description**
 
-All buses, devices and other components in a system must meet their respective Windows Compatible Hardware Requirements and use drivers that either are included with the Windows operating system installation media or are digitally signed by Microsoft through the Windows Hardware Compatibility Program that match the Windows OS version being submitted for and shipping with.
+All buses, devices and other components in a system must meet their respective Windows Compatible Hardware Requirements and use drivers that either are included with the Windows operating system installation media or are digitally signed by Microsoft through the Windows Hardware Compatibility Program that match the Windows OS version being submitted for and shipping with. 
 
-For example, if a logo qualifying a system for Windows 10, then all drivers on the system must be signed by Microsoft for Windows 10 or be drivers that ship on the Windows 10 media.  All devices in the system would also need to be logo qualified or certified for Windows 10.  This requirement applies to all versions of Microsoft Windows.
+For example, if a logo qualifying a system for Windows 10, then all drivers on the system must be signed by Microsoft for Windows 10 or be drivers that ship on the Windows 10 media.  All devices in the system would also need to be logo qualified or certified for Windows 10.  This requirement applies to all versions of Microsoft Windows.
 
-All devices and drivers need to be fully installed, and does not contain any problem codes. 
+All devices and drivers need to be fully installed, and does not contain any problem codes.  
+
+Driver ship with Windows 10 S based systems must meet the following dependent device-level requirements by the official release of the Windows 10 S. Driver ship with Windows 10 Client based systems must meet the following requirements by February 1st, 2018.
+
+  - Device.DevFund.INF.DDInstall.CoInstallers
+  - Device.DevFund.DriverSecurity.DriverPackage
+  - Device.DevFund.Reliability.ProperINF
+  - Device.DevFund.CDA.Application (If applicable)
+T
+he driver must be signed by Microsoft for Windows 10 RS3 and later version, or use drivers that ship on the Windows 10 S.
+
+All drivers and firmware servicing must use Windows Update.
+
 
 
 <a name="system.fundamentals.smbios"></a>
@@ -6566,10 +6666,6 @@ If the system implements UcmTcpci, the UcmTcpciCx client driver is required to i
 
  - UcmTcpciPortControllerAlert
 
-If the system implements UcmTcpci, it must also implement a new _DSD method in ACPI according to the UCM v1.1 ACPI guidance:
-
- - https://aka.ms/ucmacpi
-
 If the system has a battery, supports PD charging, and implements UcmTcpci, must have silicon that handles PD charging before the OS has started.
 
 
@@ -6663,6 +6759,8 @@ If the system implements UCSI, it must implement UCSI v1.0 (or later). In additi
 **Mandatory:** The System must not provide a mechanism to put the TPM in a state where it is visible to Windows but disabled. 
 
 **Mandatory:** The TPM 2.0 must be a model and firmware certified under Device.TrustedPlatformModule.TPM20.
+
+**Mandatory:** The TPM 2.0 must have an associated EK Certificate compliant with Device.TrustedPlatformModule.TPM20.EKCert
 
 **Recommended** until March 2018, then **Mandatory** The TPM Interrupt PIN should be connected to an Interrupt Controller and the System should configure this Interrupt Controller to allow Interrupts. This requirement applies to discrete TPM devices only.
 
