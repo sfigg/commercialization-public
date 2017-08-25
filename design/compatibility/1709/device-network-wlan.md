@@ -563,6 +563,9 @@ WLAN devices that implement WoWLAN (Wake on Wireless LAN) must support all the f
 
 -   Must support ARP and NS offloads to ensure link local network discovery. WLAN device should be able to respond to ARP and NS requests without interrupting the CPU when the device is in low power (D3) state. Devices must support at least 1 ARP offload and at least 2 NS offloads (each NS offload with up to 2 target IPv6 addresses).
 
+-   When screen is off, device must stay connected and functional after 30 simultaneous power transitions within a stipulated period of time. 
+
+
 Network List Offload
 
 **Description: **
