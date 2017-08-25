@@ -25,7 +25,7 @@ ms.assetid: 8A9F73C6-030F-4A1D-A466-6A9ADDD06A51
 
 ### <span id="Improved_playlist_support"></span><span id="improved_playlist_support"></span><span id="IMPROVED_PLAYLIST_SUPPORT"></span>Improved playlist support
 
-The process for loading and using playlists has been improved and simplified. For more information, see [Step 6: Select and run tests](p_sxs_hlk.step_6_select_and_run_tests) in the Getting Started guide
+The process for loading and using playlists has been improved and simplified. For more information, see [Step 6: Select and run tests](..\getstarted\step-6-select-and-run-tests.md) in the Getting Started guide
 
 ### <span id="Support_for_ARM64_desktop"></span><span id="support_for_arm64_desktop"></span><span id="SUPPORT_FOR_ARM64_DESKTOP"></span>Support for ARM64 desktop
 
@@ -70,7 +70,7 @@ Playlists describe a collection of tests and can be created from the HLK Studio 
 
 <iframe src="https://hubs-video.ssl.catalog.video.msn.com/embed/afc1a262-6147-448f-910c-dbb1bcb18d07/IA?csid=ux-en-us&MsnPlayerLeadsWith=html&PlaybackMode=Inline&MsnPlayerDisplayShareBar=false&MsnPlayerDisplayInfoButton=false&iframe=true&QualityOverride=HD" width="720" height="405" allowFullScreen="true" frameBorder="0" scrolling="no"></iframe>
 
-Learn more about playlists in the [Getting Started Guide](p_sxs_hlk.step_6_select_and_run_tests).
+Learn more about playlists in the [Getting Started Guide](..\getstarted\step-6-select-and-run-tests.md).
 
 ### <span id="Windows_Hardware_Compatibility_Program"></span><span id="windows_hardware_compatibility_program"></span><span id="WINDOWS_HARDWARE_COMPATIBILITY_PROGRAM"></span>Windows Hardware Compatibility Program
 
@@ -119,7 +119,7 @@ The HLK now supports 64-bit SQL editions exclusively. Previously, the HCK suppor
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bwdknodes\wdknodes%5D:%20What's%20new%20in%20the%20Hardware%20Lab%20Kit%20%20RELEASE:%20%287/11/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default.aspx. "Send comments about this topic to Microsoft")
+
 
 
 
