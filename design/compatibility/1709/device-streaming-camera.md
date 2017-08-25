@@ -54,6 +54,11 @@ USB based cameras must be USB Video Class (UVC) compliant as defined in **Device
 
 Error Conditions include (but are not limited to) forced invalid pin connections, invalid property sets, buffers with invalid data, null pointers, and error conditions from drivers above or below on the stack
 
+**Co-installers**
+
+Effective from the Windows release after April 1st, 2018, Camera devices must not use co-installers.
+
+
 ### Device.Streaming.Camera.Base.DirectShow
 
 *RGB camera implementation must support DirectShow.*
@@ -320,6 +325,8 @@ Any stream exposed by the driver should be usable in some way by an application.
 
 All USB streaming video Cameras must be compatible with Microsoft USB Video class driver (USBVideo.sys).
 
+Effective from the Windows release after April 1st, 2018, all USB streaming video Cameras must use the Microsoft USB Video class driver (USBVideo.sys). Custom drivers are not allowed. Any custom functionality must be implemented by creating a Device MFT (preferred) or by implementing extension units.
+
 ### Device.Streaming.Camera.UVC.UVCDriver
 
 *USB streaming video cameras must comply with USB Video Class specifications*
@@ -334,11 +341,7 @@ All USB streaming video Cameras must be compatible with Microsoft USB Video clas
 
 **Description**
 
-All USB streaming video cameras, including those not natively using the Microsoft USB Video Class driver (USBVideo.sys), must comply with the USB Video Class specifications. At a minimum, all mandatory properties and commands must be implemented. All implemented commands must comply with the specifications.
-
-*Non Microsoft Driver (If Implemented)*
-
-USB Camera implementations that do not use the Microsoft USB Video Class driver must still be compatible with USBVideo.sys (per **Device.Streaming.Camera.UVC.USBClassDriver**)
+All USB streaming video cameras must comply with the USB Video Class specifications. At a minimum, all mandatory properties and commands must be implemented. All implemented commands must comply with the specifications.
 
 *Native H264 Support (If Implemented*)*
 
