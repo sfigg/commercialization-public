@@ -25,7 +25,7 @@ ms.assetid: 8A9F73C6-030F-4A1D-A466-6A9ADDD06A51
 
 ### <span id="Improved_playlist_support"></span><span id="improved_playlist_support"></span><span id="IMPROVED_PLAYLIST_SUPPORT"></span>Improved playlist support
 
-The process for loading and using playlists has been improved and simplified. For more information, see [Step 6: Select and run tests](\getstarted\step-6-select-and-run-tests.md) in the Getting Started guide
+The process for loading and using playlists has been improved and simplified. For more information, see [Step 6: Select and run tests](getstarted\step-6-select-and-run-tests.md) in the Getting Started guide
 
 ### <span id="Support_for_ARM64_desktop"></span><span id="support_for_arm64_desktop"></span><span id="SUPPORT_FOR_ARM64_DESKTOP"></span>Support for ARM64 desktop
 
@@ -44,13 +44,13 @@ The Results tab now indicates when a test fails due to a system crash. The tab a
 
 See the following topics for more information:
 
--   [Step 7: View test results and log files (Getting started guide)](\getstarted\step-7-view-test-results-and-log-files)
+-   [Step 7: View test results and log files (Getting started guide)](getstarted\step-7-view-test-results-and-log-files)
 -   [HLK Studio - Results Tab](\user\hlk-studio---results-tab)
--   [Troubleshooting Windows HLK Test Failures (system crashes)](\user\troubleshooting-windows-hlk-test-failures#sysx)
+-   [Troubleshooting Windows HLK Test Failures (system crashes)](user\troubleshooting-windows-hlk-test-failures#sysx)
 
 ### <span id="Exporting_failed_HLK_jobs"></span><span id="exporting_failed_hlk_jobs"></span><span id="EXPORTING_FAILED_HLK_JOBS"></span>Exporting failed HLK jobs
 
-You can now export a failed job and re-run it on a machine that does not have the HLK Client installed. For more information, see [Exporting a Failed HLK Job](\user\exporting-a-failed-hlk-job).
+You can now export a failed job and re-run it on a machine that does not have the HLK Client installed. For more information, see [Exporting a Failed HLK Job](user\exporting-a-failed-hlk-job).
 
 ### <span id="Support_for_Mobile_testing"></span><span id="support_for_mobile_testing"></span><span id="SUPPORT_FOR_MOBILE_TESTING"></span>Support for Mobile testing
 
