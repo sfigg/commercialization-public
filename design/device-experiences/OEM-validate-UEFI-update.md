@@ -1,7 +1,5 @@
 ---
-author: dawnwood
-Description: 'This document lists the basic validation scenarios that are required to pass before signing-off on the Windows UEFI Firmware Update Platform functionality. Specification can be downloaded from here.'
-ms.assetid: 42e7c93e-3af3-496a-8fdf-ac97b4e85970
+Description: 'This document lists the basic validation scenarios that are required to pass before signing-off on the Windows UEFI Firmware Update Platform functionality.'
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Validating Windows UEFI Firmware Update Platform Functionality
 ms.author: dawnwood
@@ -11,7 +9,7 @@ ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-# Validating Windows UEFI firmware update
+# Validating Windows United Extensible Firmware Interface(UEFI) firmware update
 
 UEFI Firware update platform functionaliy requires that certain criteria passes before signing-off on the Windows UEFI Firmware Update Platform functionality.  
 
