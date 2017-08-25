@@ -25,6 +25,8 @@ ms.technology: windows-oem
 
 **Informative:** TPM hardware which shipped in a system certified for Windows Server 2016 will be considered to pass Redstone 2 certification requirements until March 1, 2019, irrespective of newer requirements, at Microsoft’s discretion. This does not apply to any TPM which passed the tests with exceptions. This applies to all Device.TrustedPlatformModule.TPM20 subrequirements.
 
+**Informative:** The TPM is a hardware security device, and Windows relies on the security of the TPM to provide security guarantees for Windows features.  Accordingly, Microsoft may at its sole discretion, revoke the Windows certification of a specific firmware version or hardware model as appropriate.
+
 > [!WARNING]
 > Certification for Windows Server 2016, Azure Stack, and SDDC must continue to meet the Windows Hardware Compatibility Requirements as stated in version 1607 of documentation, must use [version 1607 of the HLK (build 14393)](https://go.microsoft.com/fwlink/p/?LinkID=404112) with [matching playlist](http://aka.ms/hlkplaylist) and supplemental content to generate logs, and must follow policies as stated in the [Windows Server Policy document](https://go.microsoft.com/fwlink/p/?linkid=834831). Questions about the Azure Stack or SDDC programs or how to submit the results for solution validation should be directed to the appropriate Microsoft technical account manager or partner management contact.
 
@@ -94,10 +96,12 @@ ms.technology: windows-oem
 <tr>
 <td>**Miscellaneous**</td>
 <td>Execution of the TPM 2.0 command TPM2_NV_Increment must not require an open object slot.
-<br>Under normal use cases the clock may not become “Unsafe”.  Normal use cases exclude a “disorderly shutdown” as defined in TCG TPM Library Specification Part 1, or a call to TPM2_ClockSet.
-<br>The clock must be rendered “safe” within 15 seconds of any boot of the system. 
+<br>Under normal use cases the clock may not become “Unsafe”.  Normal use cases exclude a “disorderly shutdown” as defined in TCG TPM Library Specification.
 <br>The TPM may only increment the FailedTries counter on TPM_Startup if no TPM_Shutdown has occurred since the most recent use of a DA protected asset.
 <br>The TPM Vendor must provide Microsoft with documentation detailing how to decode TPM Get Capability calls into the TPM Manufacturer Identity, Model Number and Firmware Version.  All of these items must be available on every device, and consistent with the actual firmware and model under test.
+<br>The TPM must support TPM_PT_NV_BUFFER_MAX of at least 0x300 (HEX) bytes.
+<br>The TPM Vendor must provide Microsoft with the datasheets for the TPM under test.
+<br>The TPM Vendor must on request provide sample devices to Microsoft to validate compliance with the requirements before being considered certified.
 </td>
 <td>**Mandatory**</td>
 </tr>
@@ -224,7 +228,7 @@ In the below table, if unspecified, all TPM_ALG_RSA keys are 2048 bit keys and T
 | **TPM2\_RSA\_Encrypt**               | 2048 bit RSA key, 256 bytes                                                                                                                            | 50                        |
 | **TPM2\_RSA\_Decrypt**               | 2048 bit RSA key, 256 bytes                                                                                                                            | 500                       |
 | **TPM2\_HMAC**                       | HMAC Operation                                                                                                                                         | 100                       |
-| **TPM2\_PolicySigned**               | Ecdsa NistP256                                                                                                                                         | 150                       |
+| **TPM2\_PolicySigned**               | Ecdsa NistP256                                                                                                                                         | 250                       |
 |                                      | Sapss RSA 2048                                                                                                                                         | 150                       |
 |                                      | Sassa RSA 2048                                                                                                                                         | 150                       |
 | **TPM2\_PolicyTicket**               |                                                                                                                                                        | 150                       |
@@ -234,6 +238,7 @@ In the below table, if unspecified, all TPM_ALG_RSA keys are 2048 bit keys and T
 | **TPM2\_StartAuthSession**           | Bind is not TPM\_RH\_NULL                                                                                                                              | 30                        |
 |                                      | Bind is TPM\_RH\_NULL                                                                                                                                  | 15                        |
 | **TPM2\_LoadExternal**               | TPM\_ALG\_RSA, 2048                                                                                                                                    | 200                       |
+|                                      | Public key portion                                                                                                                                     | 200                       |
 | **TPM2\_ReadPublic**                 | TPM\_ALG\_RSA, 2048                                                                                                                                    | 20                        |
 |                                      | TPM\_ALG\_ECC, TPM\_ECC\_NIST\_P256                                                                                                                    | 20                        |
 | **TPM2\_ActivateCredential**         | TPM\_ALG\_RSA, 2048                                                                                                                                    | 600                       |
@@ -290,9 +295,9 @@ In the below table, if unspecified, all TPM_ALG_RSA keys are 2048 bit keys and T
 |                           | TPM\_ALG\_KEYEDHASH Parent = TPM\_ALG\_RSA, 2048                                                                                                       | 100                       |
 | **TPM2\_Sign**            | TPM\_ALG\_RSA, 2048                                                                                                                                    | 300                       |
 |                           | TPM\_ALG\_ECC, TPM\_ECC\_NIST\_P256                                                                                                                    | 150                       |
-| **TPM2\_VerifySignature** | TPM\_ALG\_ECC, TPM\_ECC\_NIST\_P256                                                                                                                    | 250                       |
+| **TPM2\_VerifySignature** | TPM\_ALG\_ECC, TPM\_ECC\_NIST\_P256                                                                                                                    | 150                       |
 | **TPM2\_Import**          | TPM\_ALG\_RSA, 2048 Parent = TPM\_ALG\_RSA, 2048                                                                                                       | 500                       |
-|                           | TPM\_ALG\_ECC, TPM\_ECC\_NIST\_P256 Parent = TPM\_ALG\_ECC, TPM\_ECC\_NIST\_P256 InSymSeed contains asymmetrically encrypted seed using ECDH algorithm | 250                       |
+|                           | TPM\_ALG\_ECC, TPM\_ECC\_NIST\_P256 Parent = TPM\_ALG\_ECC, TPM\_ECC\_NIST\_P256 InSymSeed contains asymmetrically encrypted seed using ECDH algorithm | 300                       |
 | **TPM2\_RSA\_Decrypt**    | 1 kB of data                                                                                                                                           | 300                       |
 | **TPM2\_HMAC**            | HMAC Operation                                                                                                                                         | 50                        |
 | **TPM2\_PolicySigned**    | Sapss RSA 2048                                                                                                                                         | 50                        |
@@ -368,10 +373,10 @@ EK Certificates which chain up to a trusted Manufacturer CA.
 
 3. The Issuing Authority for the EK Certificates included on the Device must be provided to Microsoft before a Device may be certified. 
 
-**Mandatory:** Effective July 28, 2020, the TPM must include an EK Certificate
+**Mandatory:** Effective July 28, 2020, the TPM manufacturer must provide an EK Certificate
 for the TPM\_ECC\_NIST\_P384 curve.
 
-**Mandatory:** EK Certificates for the RSA 2048 bit EK and ECC P256 curve EK must be populated at the following NV locations.
+**Mandatory:** EK Certificates for the RSA 2048 bit EK and ECC P256 curve EK if populated in the TPM at shipping must be populated at the following NV locations.
 
 | TPM Artifact          | NV Index   | Required                                                                    |
 |-----------------------|------------|-----------------------------------------------------------------------------|
