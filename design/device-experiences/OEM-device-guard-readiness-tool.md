@@ -1,5 +1,5 @@
 ---
-title: Windows Defender Device Guard Readiness tool
+title: Windows Defender Device Guard and Credential Guard Readiness tool
 description: Provides guidance on how an OEM can use the WDDG Readiness tool
 MSHAttr:
 - 'PreferredSiteName:MSDN'
@@ -11,8 +11,8 @@ ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-# Windows Defender Device Guard Readiness tool
-
+# Windows Defender Device Guard and Credential Guard Readiness tool
+Microsoft provides a tool that you can use to determine if a device is capable of utilizing Device Guard. You can see the tool download at [Device Guard and Credential Guard hardware readiness tool](https://www.microsoft.com/en-us/download/details.aspx?id=53337)
 
 
 
