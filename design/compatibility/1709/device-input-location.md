@@ -297,7 +297,7 @@ The Secure User Plane Location (SUPL) client must be implemented by the IHV to 
 
 The tests in this section ensures that the SUPL client is able to receive SUPL configuration commands from the Location Platform. There are no tests in the HLK to validate the integration between the GNSS driver and the Location Platform for the support of user notifications upon reception of NI (Network Initiated) location requests. Such validations will need to be done using dedicated systems and test suites that validate SUPL OMA conformance.
 
-### Device.Input.Location.V2PUL
+### Device.Input.Location.V2UPL
 
 *This requirement is applicable only to a GNSS driver integrating with the GNSS DDI introduced in Windows 10.*
 
