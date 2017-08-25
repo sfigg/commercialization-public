@@ -3565,13 +3565,13 @@ Note: These requirements are "If Implemented" for Server systems and apply only 
 <p>EFI_VARIABLE_TIME_BASED_AUTHENTICATED_WRITE_ACCESS</p>
 </blockquote>
 </li>
-<li><p>Microsoft UEFI CA key MUST be included in SecureBoot DB unless the platform, by design, blocks all the 3<sup>rd</sup> party UEFI extensions.</p></li>
+<li><p>Microsoft UEFI CA key MUST be included in SecureBoot DB unless the platform, by design, blocks all the 3<sup>rd</sup> party UEFI extensions or implements Customized Deployment of Secure Boot and ships in User Mode.</p></li>
 <li><p>All Windows client systems must ship with up-to-date DBX content out-of-the-box.</p></li>
 <li><p>Platform MUST expose dbDefault, dbxDefault, KEKDefault, &amp; PKDefault to be accessible for read by the OS.</p></li>
-<li><p>[If Implemented] If platform ships with UEFI 2.5 with support for Customized Deployment of Secure boot (Revision 1263, Section 30.3), then the device MUST ship in deployed mode. Devices may be shipped in User Mode for custom orders from enterprise customers.</p></li>
-<li><p>[If Implemented] If platform ships with UEFI 2.5 with support for HTTP Boot (Revision 1214, Section 23.7), then the client connection to the server must be based on a strong server authentication. In case of HTTP it must be HTTPS with minimum of EV SSL authentication or the equivalent.</p></li>
-<li><p>[If Implemented] If platform ships with UEFI 2.5 with support for Platform Recovery (Revision 1227, Section 23.7), then platform MUST also support HTTP Boot as mentioned above.</p></li>
-<li><p>[If Implemented] If platform ships with UEFI 2.5 the Platform MUST provide consistent Secure Boot workflows as specified in the “Windows Consistent Secure Boot Workflows” document (this document is available on CONNECT).</p></li>
+<li><p>[If Implemented] If platform ships with support for Customized Deployment of Secure boot (Revision 1263, Section 30.3 of UEFI 2.7), then the device MUST ship in deployed mode. Devices may be shipped in User Mode for custom orders from enterprise customers.</p></li>
+<li><p>[If Implemented] If platform ships with support for HTTP Boot (Revision 1214, Section 23.7 or UEFI 2.7), then the client connection to the server must be based on a strong server authentication. In case of HTTP it must be HTTPS with minimum of EV SSL authentication or the equivalent.</p></li>
+<li><p>[If Implemented] If platform ships with support for Platform Recovery (Revision 1227, Section 23.7 if UEFI 2.7), then platform MUST also support HTTP Boot as mentioned above.</p></li>
+<li><p>[If Implemented] If platform ships with support for Customized Deployment of Secure Boot (Revision 1263, Section 30.3 of UEFI 2.7), then the Platform MUST provide consistent Secure Boot workflows as specified in the “Windows Consistent Secure Boot Workflows” document is available on CONNECT.</p></li>
 <li><p>Confidential & replay-protected storage:  External memory for non-volatile storage of all UEFI variables and security-sensitive BIOS settings MUST include protections of that data to ensure confidentiality and integrity of the data and to mitigate against rollback attacks.  This is generally accomplished by encrypting the data, applying a Message Authentication Code, and storing the resulting record in replay-protected storage such as Replay Protected Memory Block or Replay Protected Monotonic Counter.</p>
 <p>RPMC for non-discrete TPMs (consumer 16 MB parts) is a requirement for 2019</p>
 <p>RPMC for UEFI (commercial 32 MB parts)  is a requirement for 2020</p>
@@ -4975,11 +4975,11 @@ Windows 10 has an optional feature called [Device Guard](http://blogs.msdn.com/b
 <tbody>
 <tr class="odd">
 <td>Windows 10 OS SKUs</td>
-<td>The PC must be running Windows 10 Enterprise, Windows 10 Education, Windows Server 2016, Windows 10 Mobile Enterprise</td>
+<td>Windows 10 Enterprise, Windows 10 Education, Windows Server 2016, Windows 10 IoT Enterprise </td>
 </tr>
 <tr class="even">
 <td>x64 architecture</td>
-<td>The features that virtualization-based security uses in the Windows hypervisor can only run on a 64-bit PC.</td>
+<td>Virtualization-based security (VBS) features require the Windows hypervisor, which is only supported on 64-bit processors </td>
 </tr>
 <tr class="odd">
 <td>UEFI firmware version 2.3.1.c or higher with UEFI Secure Boot and Platform Secure Boot</td>
@@ -4989,19 +4989,18 @@ Windows 10 has an optional feature called [Device Guard](http://blogs.msdn.com/b
 </tr>
 <tr class="even">
 <td>Secure firmware update process</td>
-<td><p>System Firmware must support field updates through Windows Update.</p>
+<td><p>Like UEFI software, UEFI firmware can have security vulnerabilities. It is essential to have the capability to immediately patch such vulnerabilities when found through firmware updates. </p>
 <p>UEFI firmware must support secure firmware update as described in <a href="http://msdn.microsoft.com/library/windows/hardware/dn932805.aspx#system_fundamentals_firmware_uefisecureboot">System.Fundamentals.Firmware.UEFISecureBoot</a>.</p></td>
 </tr>
 <tr class="odd">
 <td>Firmware BIOS lockdown</td>
 <td><p>Required BIOS capabilities:</p>
 <p>BIOS password or stronger authentication supported to ensure that only authenticated Platform BIOS administrator can change BIOS settings</p>
-<p>OEM supports capability to add OEM or Enterprise Certificate in Secure Boot DB at manufacturing time.</p>
-<p>Protected BIOS option to configure list of permitted boot devices and boot device order which overrides BOOTORDER modification made by OS (e.g. Boot only from internal hard drive).</p>
+<p>Protected BIOS option to configure a list of permitted boot devices and the boot device order, which overrides the BOOTORDER modification made by the OS, for example, to boot only from an internal hard drive. Ability of OEM to add ISV, OEM, or Enterprise Certificate in Secure Boot DB at manufacturing time. </p>
 <p>Required Configurations:</p>
-<p>Microsoft UEFI CA must be removed from Secure Boot DB. Support for 3rd-party UEFI modules is permitted but should leverage ISV-provided certificates or OEM certificate for the specific UEFI software (e.g. Software package “foo” certificate).</p>
+<p>Microsoft UEFI CA must be removed from Secure Boot DB. Support for 3rd-party UEFI modules is permitted but should leverage ISV-provided certificates or OEM certificate for the specific UEFI software.</p>
 <p>BIOS options related to security and boot options must be secured to prevent other operating systems from starting and to prevent changes to the BIOS settings.</p>
-<p>BIOS authentication must be set (e.g. BIOS password must be set)</p></td>
+<p>BIOS authentication must be set. For example, the BIOS password must be set.</p></td>
 </tr>
 <tr class="even">
 <td>Virtualization extensions</td>
@@ -5013,18 +5012,30 @@ Windows 10 has an optional feature called [Device Guard](http://blogs.msdn.com/b
 </tr>
 <tr class="odd">
 <td>VT-D or AMD‑Vi IOMMU (Input/output memory management unit)</td>
-<td>In Windows 10, an IOMMU enhances system resiliency against memory attacks. For more information, see ACPI description tables. (https://msdn.microsoft.com/windows/hardware/drivers/bringup/acpi-system-description-tables)</td>
+<td>In Windows 10, an IOMMU can be used to enhances system resiliency against memory attacks. For more information, see ACPI description tables. (https://msdn.microsoft.com/windows/hardware/drivers/bringup/acpi-system-description-tables)</td>
 </tr>
 <tr class="even">
-<td>UEFI NX Protections</td>
+<td>VBS enablement of NX protection for UEFI runtime services</td>
 <td><ol style="list-style-type: decimal">
-<li><p>All UEFI memory that is marked executable must be read only. Memory marked writable must not be executable.</p></li>
+<li><p>VBS will enable No-Execute (NX) protection on UEFI runtime service code and data memory regions. UEFI runtime service code must support read-only page protections, and UEFI runtime service data must not be executable.</p></li>
 <li><p>UEFI runtime services must meet these requirements:</p></li>
 <ul>
-<li><p>Implement the UEFI 2.6 EFI_MEMORY_ATTRIBUTES_TABLE. The entire UEFI runtime must be described by this table.</p></li>
+<li><p>Implement the UEFI 2.6 EFI_MEMORY_ATTRIBUTES_TABLE. All UEFI runtime service memory (code and data) must be described by this table.</p></li>
+<li><p>PE sections need to be page-aligned in memory (not required in non-volatile storage).</p></li>
+<li><p>The Memory Attributes Table needs to correctly mark code and data as RO/NX for configuration by the OS: </p></li>
+<ul>
 <li><p>All entries must include attributes EFI_MEMORY_RO, EFI_MEMORY_XP, or both.</p></li>
+<li><p>No entries may be left with neither of the above attributes, indicating memory that is both executable and writable. Memory must be either readable and executable or writeable and non-executable.</p></li>
 </ul>
-<li><p>No entries must be left with neither of the above attribute, indicating memory that is both executable and writable. Memory must be either readable and executable or writeable and non-executable.</p></li>
+</ul>
+<li><p>Note: this only applies to UEFI runtime service memory, and not UEFI boot service memory.</p></li>
+<li><p>Note: this protection is applied by VBS on OS page tables.</p></li>
+<li><p>Please also note the following:</p></li>
+<ul>
+<li><p>Do not use sections that are both writable and executable</p></li>
+<li><p>Do not attempt to directly modify executable system memory</p></li>
+<li><p>Do not use dynamic code</p></li>
+</ul>
 </ol></td>
 </tr>
 <tr class="odd">
@@ -6008,7 +6019,7 @@ For all xHCI controllers exposed to the OS, the system firmware must follow the 
 
 **Description**
 
-Please reference ACPI specification version 4.0.
+Please reference ACPI specification version 6.1.
 
 The ACPI namespace hierarchy for USB devices should exactly match the devices hierarchy enumerated by Windows operating system. 
 
@@ -6016,7 +6027,7 @@ All connectable USB ports are required to have a \_PLD object. In addition, two 
 
 No two USB connection points should have identical combination of Group token and Group Position. If two ports are sharing a connection point, they should have identical \_PLD objects.
 
-This information helps define the mapping of USB ports to uniquely identifiable connection points.  The Windows USB 3.x stack will use this information to determine which ports are tied to the same connection points. Any USB port that does not have a \_PLD object will be assumed to be not connectable and not visible (i.e. it is not being used at all).  The definition of connectable port as per ACPI 4.0 spec (section 9.13), is a port on which either a user can connect a device OR there is an integrated device connected to it.
+This information helps define the mapping of USB ports to uniquely identifiable connection points.  The Windows USB 3.x stack will use this information to determine which ports are tied to the same connection points. Any USB port that does not have a \_PLD object will be assumed to be not connectable and not visible (i.e. it is not being used at all).  The definition of connectable port as per ACPI 6.1 spec (section 9.14), is a port on which either a user can connect a device OR there is an integrated device connected to it.
 
 Please see design notes for additional information on how to implement this requirement.
 
@@ -6498,18 +6509,6 @@ If the system or controller exposes dual role ports, the following additional AP
 
  - UcmConnectorDataDirectionChanged
 
-If the system or controller supports Alternate Modes and uses UCM v1.1, the following additional APIs must be implemented:
-
- - UcmConnectorPartnerPdAlternateModes
- 
- - UcmConnectorAlternateModeEntered
-
- - UcmConnectorAlternateModeExited
- 
-In addition, systems that support UCM v1.1 must implement a new _DSD method in ACPI according to the UCM v1.1 ACPI guidance:
-
- - https://aka.ms/ucmacpi 
-
 
 ### System.Fundamentals.SystemUSB.USBC.USBTypeCUCMTCPCI
 
@@ -6617,6 +6616,67 @@ If the system implements UCSI, it must implement UCSI v1.0 (or later). In additi
 > Certification for Windows Server 2016, Azure Stack, and SDDC must continue to meet the Windows Hardware Compatibility Requirements as stated in version 1607 of documentation, must use [version 1607 of the HLK (build 14393)](https://go.microsoft.com/fwlink/p/?LinkID=404112) with [matching playlist](http://aka.ms/hlkplaylist) and supplemental content to generate logs, and must follow policies as stated in the [Windows Server Policy document](https://go.microsoft.com/fwlink/p/?linkid=834831). Questions about the Azure Stack or SDDC programs or how to submit the results for solution validation should be directed to the appropriate Microsoft technical account manager or partner management contact.
 
 
+### System.Fundamentals.TPM20.TPM20
+
+*Requirements for all systems that implement the TPM 2.0 specification*
+
+<table>
+<tr>
+<th>Applies to</th>
+<td>
+<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
+<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
+<p>Windows 10 Mobile ARM</p>
+<p>Windows 10 Mobile x86</p>
+<p>Windows Server 2016 x64</p>
+</td></tr></table>
+
+
+**Description**
+
+**Mandatory:** All systems must contain a TPM 2.0, and the TPM 2.0 must be both available to the system and enabled in the shipping configuration.
+
+**Mandatory:** The System must not provide a mechanism to put the TPM in a state where it is visible to Windows but disabled. 
+
+**Mandatory:** The TPM 2.0 must be a model and firmware certified under Device.TrustedPlatformModule.TPM20.
+
+**Mandatory:** The TPM Interrupt PIN must be connected to an Interrupt Controller.
+-	**Mandatory:** The System must configure this Interrupt Controller to allow Interrupts.
+
+
+**Exception for Server:** These requirements are **If Implemented** on Server x64.  Any Server system with a TPM 2.0 must meet all requirements in System.Fundamentals.TPM20, but Server systems are not required to contain a TPM 2.0.
+
+### System.Fundamentals.TPM20.PlatformSpecifications
+
+*All platforms which contain a TPM 2.0 must meet these functionality requirements for proper operation of the TPM*
+
+<table>
+<tr>
+<th>Applies to</th>
+<td>
+<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
+<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
+<p>Windows 10 Mobile ARM64</p>
+<p>Windows 10 Mobile ARM</p>
+<p>Windows 10 Mobile x86</p>
+<p>Windows Server 2016 x64</p>
+</td></tr></table>
+
+**Description**
+
+1.	The platform shall include a trusted execution environment supporting the command set defined in “TCG PC Client Platform Firmware Profile Specification for TPM Family 2.0 Level 00 Revision 00.21” dated March 30, 2016 along with “Errata for PC Client Specific Platform Firmware Profile Specification Version 1.0, Revision 0.21”.
+
+2.	The platform is required to measure data into PCR [7] as specified in “TCG PC Client Platform Firmware Profile Specification for TPM Family 2.0 Level 00 Revision 00.21” dated March 30, 2016. 
+
+3.	The platform shall comply with Trusted Computing Group “TCG EFI Protocol Specification” for Family “2.0”, denoted “Level 00 Revision 00.13”, dated March 30, 2016 including Errata Version 0.5
+
+4.	The platform shall comply with the requirements defined in Trusted Computing Group, "TCG ACPI Specification”, “Level 00 Revision 00.37” dated December 19, 2014.
+
+5.	The platform must comply with the Trusted Computing Group “Physical Presence Interface Specification”, Version 1.30, Revision 00.52. Dated July 28, 2015.
+
+6.	The platform must comply with the Trusted Computing Group. “Platform Reset Attack Mitigation Specification”, Version 1.00.  Dated May 15, 2008.
+
+
 ### System.Fundamentals.TPM20.PlatformConfiguration
 
 *All platforms which contain a TPM 2.0 must meet these functionality requirements for proper operation of the TPM*
@@ -6655,7 +6715,11 @@ If the system implements UCSI, it must implement UCSI v1.0 (or later). In additi
 
 7.  Crypto agile event logs must be supported as specified in the “TCG EFI Protocol Specification” referenced in System.Fundamentals.TPM20.PlatformSpecifications.
 
-8.  NoPPIClear must be set to TRUE, and/or PPRequiredForClear must be set to FALSE, in the shipping configuration.
+8.  PPRequiredForClear must be set to FALSE
+
+	1.	In earlier versions of PPI (prior to 1.3) this variable was called “NoPPIClear” and had opposite polarity.  The equivalent setting for NoPPIClear is True.  The meaning of this requirement that the default configuration must not require the user to accept a prompt to clear the TPM when the Clear command is sent from the OS using PPI.
+
+	2.	A system may contain a UEFI option to allow end-users or admins to change this setting, and/or be compatible with a tool to automate changing this setting.
 
 9.  PPRequiredForTurnOn must be FALSE.
 
@@ -6671,13 +6735,15 @@ If the system implements UCSI, it must implement UCSI v1.0 (or later). In additi
 
     2.  An \_HID which correctly identifies the TPM Vendor and Model number, in such a manner as specified by the TPM manufacturer. 
 
-14.	If the memory for the TPM is a System rather than TPM component, it must not lose access to NV before ExitBootServices. The System must be delivered to the end user with the TPM un-provisioned, and without ownership taken.
+14. The TPM ACPI Object must reflect correctly report the support for Interrupt based communication.
+
+15.	If the memory for the TPM is a System rather than TPM component, it must not lose access to NV before ExitBootServices. The System must be delivered to the end user with the TPM un-provisioned, and without ownership taken.
    
     1. a.	If during manufacturing any actions are taken which may take ownership of the TPM or provision it, the TPM should be cleared during the final steps of manufacturing.
 
-15. Effective July 28, 2018 a platform manufacturer must support in-field firmware updates for the TPM.
+16. Effective July 28, 2018 a platform manufacturer must support in-field firmware updates for the TPM.
 
-16. **Recommended**: This bullet item is currently optional and will not be enforced until July 28, 2019, when it becomes **Mandatory**, except when required by other “If Implemented” Requirements.
+17. **Recommended**: This bullet item is currently optional and will not be enforced until July 28, 2019, when it becomes **Mandatory**, except when required by other “If Implemented” Requirements.
 
     1.  Confidential & replay-protected storage: If a TPM uses external memory
         for non-volatile storage of TPM state (including seeds, proof values, &
@@ -6690,452 +6756,6 @@ If the system implements UCSI, it must implement UCSI v1.0 (or later). In additi
         Replay Protected Monotonic Counter.
 
 
-### System.Fundamentals.TPM20.PlatformSpecifications
-
-*All platforms which contain a TPM 2.0 must meet these functionality requirements for proper operation of the TPM*
-
-<table>
-<tr>
-<th>Applies to</th>
-<td>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
-<p>Windows 10 Mobile ARM64</p>
-<p>Windows 10 Mobile ARM</p>
-<p>Windows 10 Mobile x86</p>
-<p>Windows Server 2016 x64</p>
-</td></tr></table>
-
-**Description**
-
-1.	The platform shall include a trusted execution environment supporting the command set defined in “TCG PC Client Platform Firmware Profile Specification for TPM Family 2.0 Level 00 Revision 00.21” dated March 30, 2016 along with “Errata for PC Client Specific Platform Firmware Profile Specification Version 1.0, Revision 0.21”.
-
-2.	The platform is required to measure data into PCR [7] as specified in “TCG PC Client Platform Firmware Profile Specification for TPM Family 2.0 Level 00 Revision 00.21” dated March 30, 2016. 
-
-3.	The platform shall comply with Trusted Computing Group “TCG EFI Protocol Specification” for Family “2.0”, denoted “Level 00 Revision 00.13”, dated March 30, 2016 including Errata Version 0.5
-
-4.	The platform shall comply with the requirements defined in Trusted Computing Group, "TCG ACPI Specification”, “Level 00 Revision 00.37” dated December 19, 2014.
-
-5.	The platform must comply with the Trusted Computing Group “Physical Presence Interface Specification”, Version 1.30, Revision 00.52. Dated July 28, 2015.
-
-6.	The platform must comply with the Trusted Computing Group. “Platform Reset Attack Mitigation Specification”, Version 1.00.  Dated May 15, 2008.
-
-
-
-### System.Fundamentals.TPM20.TPM20
-
-*Requirements for all systems that implement the TPM 2.0 specification*
-
-<table>
-<tr>
-<th>Applies to</th>
-<td>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
-<p>Windows 10 Mobile ARM</p>
-<p>Windows 10 Mobile x86</p>
-<p>Windows Server 2016 x64</p>
-</td></tr></table>
-
-
-**Description**
-
-**Mandatory:** All systems must contain a TPM 2.0, and the TPM 2.0 must be both available to the system and enabled in the shipping configuration.
-
-**Mandatory:** The TPM 2.0 must be a model and firmware certified under Device.TrustedPlatformModule.TPM20.
-
-**Exception for Server:** These requirements are **If Implemented** on Server x64.  Any Server system with a TPM 2.0 must meet all requirements in System.Fundamentals.TPM20, but Server systems are not required to contain a TPM 2.0.
-
-
-<ol>
-<li>
-  <p>The platform shall implement all "Required" features in the table below.</p>
-  <table>
-	<thead>
-	  <tr class="header">
-		<th>Integrity Feature</th>
-		<th>SOC Hardware Functionality</th>
-		<th>Requirement</th>
-	  </tr>
-	</thead>
-	<tbody>
-	  <tr class="odd">
-		<td>Trusted Execution Environment</td>
-		<td>
-		  <p>
-			<em>
-			  <strong>Isolated Storage</strong>
-			</em>
-		  </p>
-		  <p>Availability of storage for storing long term secrets. This storage must not be possible to modify by the OS without detection by pre-Operating System components.</p>
-		</td>
-		<td>
-		  <strong>Mandatory</strong>
-		</td>
-	  </tr>
-	  <tr class="even">
-		<td>Secure Storage</td>
-		<td>
-		  <p>Secure (isolated from runtime OS) storage of:</p>
-		  <ul>
-			<li>
-			  <p>Values (such as an endorsement primary seed) that survive complete platform power off as well as firmware updates</p>
-			</li>
-			<li>
-			  <p>Values (such as a NV counters) that survive complete platform power off but do not necessarily survive firmware updates (in this case these values shall be reset to a random value)</p>
-			</li>
-			<li>
-			  <p>Values (such as the Platform Configuration Registers) that survive platform power-down to the equivalent of ACPI S3 if TPM2_Shutdown (TPM_SU_STATE) is called but may be lost on further power-down.</p>
-			</li>
-		  </ul>
-		</td>
-		<td>
-		  <strong>Mandatory</strong>
-		</td>
-	  </tr>
-	  <tr class="odd">
-		<td>Platform Attestation</td>
-		<td>
-		  <p>Boot measurements recorded in the Platform Configuration Registers for all firmware code loaded after the establishment of the Core Root of Trust for Measurement.</p>
-		</td>
-		<td>
-		  <strong>Mandatory</strong>
-		</td>
-	  </tr>
-	  <tr class="even">
-		<td/>
-		<td>
-          <p>Implementation of PCRs 0 through 23 for SHA-256, dedicated to the same boot measurements as TPM 1.2.</p>
-		</td>
-		<td>
-		  <strong>Mandatory</strong>
-		</td>
-	  </tr>
-	  <tr class="odd">
-		<td/>
-		<td/>
-		<td/>
-	  </tr>
-	  <tr class="even">
-		<td/>
-		<td>
-          <p>Robustness against side channel attacks including Differential Power Analysis (DPA) and Electromagnetic Emanations (EM)</p>
-		</td>
-		<td>
-		  <strong>Recommended</strong>
-		</td>
-	  </tr>
-	  <tr class="odd">
-		<td>Physical Presence Interface</td>
-		<td>
-		  <p>Mobile SKUs: NoPPIClear must be set to TRUE.</p>
-		  <p>Server SKUs: NoPPIClear must be set to TRUE.</p>
-		  <p>IoT SKUs: NoPPIClear must be set to TRUE.</p>
-		  <p>Client SKUs: NoPPIClear must be set to FALSE.</p>
-		</td>
-		<td>
-		  <strong>Mandatory</strong>
-		</td>
-	  </tr>
-	</tbody>
-  </table>
-</li>
-<li>
-  <p>The TPM <strong>Must</strong> have support for the following:</p>
-  <table>
-	<thead>
-	  <tr class="header">
-		<th>TPM Feature</th>
-		<th>Description</th>
-		<th>Recommended</th>
-	  </tr>
-	</thead>
-	<tbody>
-	  <tr class="odd">
-		<td>Commands</td>
-		<td>
-		  <p><strong>Mandatory:</strong> The TPM2_HMAC command must be supported.</p>
-		  <p><strong>Optional:</strong> Support for TPM2_EncryptDecrypt.</p>
-		  <p><strong>Mandatory:</strong> TPM2_PolicyTicket must be supported.</p>
-		  <p><strong>Mandatory:</strong> TPM2_PolicySigned must be supported.</p>
-		</td>
-		<td>
-		  <strong>Mandatory</strong>
-		</td>
-	  </tr>
-	  <tr class="even">
-		<td>Algorithms</td>
-		<td>
-		  <p><strong>Mandatory:</strong> Support for the following algorithms: TPM_ALG_RSA, TPM_ALG_SHA1, TPM_ALG_AES, TPM_ALG_HMAC, TPM_ALG_SHA256, TPM_ALG_RSAES, TPM_ALG_RSAPSS, TPM_ALG_OAEP.</p>
-		</td>
-		<td>
-		  <strong>Mandatory</strong>
-		</td>
-	  </tr>
-	  <tr class="odd">
-		<td>ECC</td>
-		<td>
-		  <p><strong>Mandatory</strong>:</p>
-		  <ul>
-			<li>Support for the TPM_ECC_NIST_P256 curve as specified in Table 8 of TPM library specification Part 2 for the above algorithms.</li>
-		  </ul>
-		  <p><strong>Mandatory:</strong> The following commands are required. Details for these commands can be found in TCG TPM Library Specification Part 3</p>
-		  <ul>
-			<li>
-			  <p>TPM2_ECDH_KeyGen</p>
-			</li>
-			<li>
-			  <p>TPM2_ECDH_ZGen</p>
-			</li>
-			<li>
-			  <p>TPM2_ECC_Parameters</p>
-			</li>
-			<li>
-			  <p>TPM2_Commit</p>
-			</li>
-		  </ul>
-		</td>
-		<td>
-		  <strong>Mandatory</strong>
-		</td>
-	  </tr>
-	  <tr class="even">
-		<td>PCR Banks</td>
-		<td>
-		  <p><strong>Mandatory:</strong> With TPM 2.0 enabled, SHA-256 PCR banks are required to be enabled by default.</p>
-		  <ul>
-			<li>
-			  <p>The system must make PCR measurements as required into these SHA 256 banks in the shipping configuration.</p>
-			</li>
-			<li>
-			  <p>It is acceptable to ship TPMs with a single switchable PCR bank that can be utilized for either SHA-1 and SHA-256 measurements.</p>
-			</li>
-		  </ul>
-		</td>
-		<td>
-		  <strong>Mandatory</strong>
-		</td>
-	  </tr>
-	  <tr class="odd">
-		<td>Event Logs</td>
-		<td><strong>Mandatory</strong>: Crypto Agile event logs must be supported as specified in TCG EFI Protocol Specification for TPM Family 2.0 Revision 1.0 Version 9</td>
-		<td>
-		  <strong>Mandatory</strong>
-		</td>
-	  </tr>
-	</tbody>
-  </table>
-</li>
-<li>
-  <p><strong>Mandatory</strong>: The TPM shall Comply with the following performance requirements. These requirements apply to the time the command is issued to the TPM from the OS or UEFI until the result is returned. Times specified as a mean refer to the mean of 100 or more operations completed in direct succession. For operations on keys other than import, the operations may be assumed to be being completed on imported (internal) keys.</p>
-  <ol style="list-style-type: lower-alpha">
-	<li>
-	  <p><strong>Caching</strong>: For TPM\_Create operations, if a TPM is capable of creating 10 of the specified key type within 1s each, in direct succession, starting 5s after first boot by the end user, they may otherwise generate keys within 3x the allotted time below.</p>
-	</li>
-	<li>
-	  <p><strong>Protected Import</strong>: Protected Import is defined as an import operation on a key where encryptedDuplication was set in the duplicated object.</p>
-	</li>
-  </ol>
-  <table>
-	<thead>
-	  <tr class="header">
-		<th>Command</th>
-		<th>Metric and Description</th>
-		<th>Required</th>
-		<th>Recommended</th>
-	  </tr>
-	</thead>
-	<tbody>
-	  <tr class="odd">
-		<td>PCR Extend</td>
-		<td><strong>Mandatory:</strong> TPM shall complete extend operations (TPM_Extend) within 20ms.</td>
-		<td>X</td>
-		<td/>
-	  </tr>
-	  <tr class="even">
-		<td>RSA</td>
-		<td>
-		  <p><strong>Mandatory:</strong> The distribution of RSA 2048 bit key generation times must have a mean of 25s or less.</p>
-		  <p><strong>Mandatory</strong>: RSA 2048 bit keys must complete Unprotected Import within 1000ms.</p>
-		  <p><strong>Mandatory</strong>: Keys undergoing Protected import where they were protected by an RSA 2048 bit key shall complete Protected Import within 1600ms.</p>
-		</td>
-		<td>X</td>
-		<td/>
-	  </tr>
-	  <tr class="odd">
-		<td>RSA: Signing</td>
-		<td>
-		  <p><strong>Mandatory:</strong> The TPM shall complete sign (TPM2_SIGN) operations with 2048 bit RSA keys within 600ms.</p>
-		</td>
-		<td>X</td>
-		<td/>
-	  </tr>
-	  <tr class="even">
-		<td>RSA: Encryption</td>
-		<td>
-		  <p><strong>Mandatory:</strong> The TPM shall complete PKCS15 encryption operations within 120ms.</p>
-		  <p><strong>Mandatory:</strong> The TPM shall complete PKCS15 decryption operations within 600ms.</p>
-		</td>
-		<td>X</td>
-		<td/>
-	  </tr>
-	  <tr class="odd">
-		<td>ECC</td>
-		<td>
-		  <p><strong>Mandatory</strong>: The TPM shall complete sign operations with the P256 ECC curve (TPM_ECC_NIST_256) within 250ms.</p>
-		  <p><strong>Mandatory:</strong> TPM_ECC_NIST_256 keys must be generated with a mean time of 400ms or less.</p>
-		  <p><strong>Mandatory</strong>: ECDH_ZGen must complete within a mean time of 250ms or less.</p>
-		  <p><strong>Mandatory</strong>: Keys undergoing Protected Import where the key was protected by an ECDH ECC P256 bit key shall complete protected import within 450ms.</p>
-		</td>
-		<td>X</td>
-		<td/>
-	  </tr>
-	  <tr class="even">
-		<td>HMAC</td>
-		<td>
-		  <p><strong>Mandatory</strong>: HMAC Create operations shall complete within 320ms.</p>
-		  <p><strong>Mandatory</strong>: HMAC Operations shall complete within 125ms.</p>
-		</td>
-		<td>X</td>
-		<td/>
-	  </tr>
-	  <tr class="odd">
-		<td>Symmetric Encrypt/Decrypt: AES</td>
-		<td>
-		  <p><strong>Mandatory</strong>: AES Create operations shall complete within 320ms.</p>
-		  <p><strong>Mandatory</strong>: AES Unprotected Import operations shall complete within 250ms.</p>
-		  <p><strong>Mandatory</strong>: AES Encrypt/Decrypt operations shall complete with 1k of data within 250ms.</p>
-		</td>
-		<td>X</td>
-		<td/>
-	  </tr>
-	</tbody>
-  </table>
-</li>
-<li>
-  <p>The following performance requirements supersede those in item 3 where conflicting once they come into effect. The performance requirements below come into effect on July 28, 2018.</p>
-  <table>
-	<thead>
-	  <tr class="header">
-		<th>Command</th>
-		<th>Metric and Description</th>
-		<th>Required</th>
-		<th>Recommended</th>
-	  </tr>
-	</thead>
-	<tbody>
-	  <tr class="odd">
-		<td>Key Generation</td>
-		<td>
-		  <p><strong>Mandatory:</strong> RSA 2048 bit keys must be generated in a mean time of 5s.</p>
-		  <p><strong>Mandatory:</strong> ECC P256 (both TPM_ECC_NIST_256 and TPM_ECC_BN_256 variants) must be generated in a maximum time of 150ms.</p>
-		</td>
-		<td>X</td>
-		<td/>
-	  </tr>
-	  <tr class="even">
-		<td>Signing</td>
-		<td>
-		  <p><strong>Mandatory:</strong> The TPM shall complete sign operations with 2048 bit RSA keys within 250ms.</p>
-		  <p><strong>Mandatory</strong>: The TPM shall complete sign operations with the P256 ECC curve within 150ms.</p>
-		</td>
-		<td>X</td>
-		<td/>
-	  </tr>
-	  <tr class="odd">
-		<td>Import</td>
-		<td>
-		  <p><strong>Mandatory</strong>: The TPM shall complete Protected import operations with 2048 bit RSA protected keys within 250ms.</p>
-		  <p><strong>Mandatory</strong>: The TPM shall complete Protected import operations with ECC P256 protected keys within 150ms.</p>
-		</td>
-		<td>X</td>
-		<td/>
-	  </tr>
-	</tbody>
-  </table>
-</li>
-<li>
-  <p>The following requirements supersede those in items 3 and 4 where conflicting. The performance requirements below come into effect on July 28, 2019.</p>
-  <table>
-	<thead>
-	  <tr class="header">
-		<th>Command</th>
-		<th>Metric and Description</th>
-		<th>Required</th>
-		<th>Recommended</th>
-	  </tr>
-	</thead>
-	<tbody>
-	  <tr class="odd">
-		<td>Key Generation</td>
-		<td><strong>Mandatory</strong>: ECC P256 keys must be generated in a mean time of 50ms.</td>
-		<td>X</td>
-		<td/>
-	  </tr>
-	  <tr class="even">
-		<td>Signing</td>
-		<td><strong>Mandatory</strong>: The TPM shall complete sign operations with the P256 ECC curve within 100ms.</td>
-		<td>X</td>
-		<td/>
-	  </tr>
-	  <tr class="odd">
-		<td>Import</td>
-		<td><strong>Mandatory</strong>: The TPM shall complete Protected import operations with ECC P256 protected keys within 100ms.</td>
-		<td>X</td>
-		<td/>
-	  </tr>
-	  <tr class="even">
-		<td>Encryption</td>
-		<td><strong>Mandatory</strong>: AES Encrypt/Decrypt operations shall complete with 1kB of data within 50ms.</td>
-		<td>X</td>
-		<td/>
-	  </tr>
-	  <tr class="odd">
-		<td>Algorithms</td>
-		<td><strong>Mandatory</strong>: AES 256 is required.</td>
-		<td>X</td>
-		<td/>
-	  </tr>
-	</tbody>
-  </table>
-</li>
-<li>
-  <p>A platform that does not support a separate, and from the main CPU(s) isolated, cryptographic processing unit must support a Trusted Execution Mode. The Trusted Execution Mode must have a higher privilege level than the Normal Execution Mode, giving it access to data and code not available to the Normal Execution Mode.</p>
-</li>
-<li>
-  <p>During the boot sequence, the boot firmware/software shall measure all firmware and all software components it loads after the core root of trust for measurement is established. The measurements shall be logged as well as extended to platform configuration registers in a manner compliant with the following requirements.</p>
-</li>
-<li>
-  <p>The measurements must be implemented such that they reliably and verifiably allow a third party to identify all components in the boot process up until the point either the boot finished successfully or when software with an exploited vulnerability was loaded (for example, if the third component loaded includes an exploited vulnerability, then values for the first, second, and third component in the trusted boot log correctly reflect the software that loaded but any values after that may be suspect). To achieve this, the trusted execution environment must provide a mechanism of signing the values of the registers used for Trusted Boot. The interface to the signature ("attestation") mechanism shall comply with the requirements defined in Microsoft Corporation, "Trusted Execution Environment ACPI Profile, 1.0 dated March 2, 2012.</p>
-</li>
-<li>
-  <p>The system shall include a trusted execution environment supporting the command set defined in Microsoft Corporation, "TPM v2.0 Command and Signature Profile, 1.0 dated March 2, 2012.</p>
-</li>
-<li>
-  <p>The system shall support the interface specified in Microsoft Corporation, "Trusted Execution Environment ACPI Profile, 1.0 dated March 2, 2012.</p>
-</li>
-<li>
-  <p>The system is required to measure data into PCR \[7\] as specified in TCG PC Client Platform Firmware Profile Specification for TPM Family 2.0 Level 00 Revision 00.21 dated 27 August 2015.</p>
-</li>
-<li>
-  <p>The UEFI firmware update process must also protect against rolling back to insecure firmware versions, or non-production versions that may disable secure boot or include non-production keys. A physically present user may however override the rollback protection manually. In such a scenario (where the rollback protection is overridden), the TPM must be cleared.</p>
-</li>
-<li>
-  <p>Platform firmware must ensure invariance of PCRs 0, 2, and 4 across power cycles in the absence of changes to the platform's static core root of trust for measurements (SRTM). Platform firmware must ensure invariance of PCR\[7\] as specified in TCG EFI Protocol Specification for TPM Family 2.0 Revision 1.0 Version 9, across power cycles in the absence of changes to the platform's static core SRTM. Attaching a (non-bootable) USB to the platform or attaching the platform to a docking station shall not cause changes to the SRTM.</p>
-</li>
-<li>
-  <p>Execution of the TPM 2.0 command TPM2\_NV\_Increment must not require an open object slot.</p>
-</li>
-<li>
-  <p>The platform must comply with the Trusted Computing Group Physical Presence Interface Specification Version 1.30.</p>
-</li>
-<li>
-  <p>If the platform is in any state, such as a manufacturing mode, debug mode or other state which puts PCR\[7\] bound assets at risk, allows for memory dumps, is intended for debugging, manufacturing use, or engineering device use, the platform shall extend PCR\[7\] to reflect such a state.</p>
-</li>
-<li>
-  <p>The Platform must comply with TCG EFI Protocol Specification for TPM Family 2.0 Revision 1.0 Version 9.</p>
-</li>
-</ol>
 
 
 <a name="system.fundamentals.trustedplatformmodule"></a>
@@ -7493,12 +7113,11 @@ For systems to be awarded the Assurance AQ, the UEFI implementation must be comp
 
 This will be accomplished using the correct build options for creating the UEFI binaries. The system must include the GUID the firmware can set to claim compliance with this requirement.
 
-The platform is required to implement hardware security test interface and share documentation and tools as specified in the Hardware Security Test Interface Specification document, available at http://aka.ms/wmic
+The platform is required to implement hardware security test interface and share documentation and tools as specified in the Hardware Security Test Interface Specification document, available at http://aka.ms/wmic  
 
 This requirement is IF IMPLEMENTED for Server system designs not based on Intel® Xeon® processor Intel64 Family 6 Model 85 Stepping X, or later – where X will vary, nor AMD® Opteron® AMD64 Family 23 Model 1 Stepping 1 or later processor, for Windows Server systems seeking the Hardware Assurance Additional Qualification.
 
 This requirement will be REQUIRED for Server system designs that are based on Intel® Xeon® processor Intel64 Family 6 Model 85 Stepping X, or later – where X will vary, or AMD® Opteron® AMD64 Family 23 Model 1 Stepping 1 or later processor, for Windows Server systems seeking the Hardware Assurance Additional Qualification.
-
 
 <a name="system.server.azurestack"></a>
 ## System.Server.AzureStack
@@ -9636,7 +9255,7 @@ release are identical to the hardware requirements for the Microsoft Quick Path 
 Direct offerings. Future Microsoft Azure Stack iterations may support additional
 storage types.
 
-## System.Solutions.SDDC
+## System.Solutions.WSSD
 
 Windows Server 2016 offers a range of competitive and differentiated
 capabilities to enable lower cost, cloud scale Software-Defined Datacenter
@@ -9697,24 +9316,58 @@ WSSD provides three offerings:
 |                | Software-Defined Networking (Network Controller, Software Load Balancer, Gateway)      |                                                                                                            |                                                                                                                                                                   |                                                                             |
 | Security       | Platform security (UEFI secure boot)                                                   |                                                                                                            |                                                                                                                                                                   |                                                                             |
 |                | Assurance (TPM 2.0, Shielded VM’s)                                                     |                                                                                                            |                                                                                                                                                                   |                                                                             |
-| Deployment     | Deployment using Microsoft-provided guidance                                           |                                                                                                            |                                                                                                                                                                   | SDN deployment using SC 2016 VMM                                            |
-| Management     | System Center 2016 VMM & OM (Deployed on infrastructure outside of “WSSD” stack)       |                                                                                                            |                                                                                                                                                                   |                                                                             |
-|                | Partner-developed SC management packs and plug-ins, and other SC components (optional) |                                                                                                            |                                                                                                                                                                   |                                                                             |
-| Pre-requisites |                                                                                        | System Center 2016 Active Directory Domain Services                                                        | System Center 2016 Active Directory Domain Services                                                                                                               | System Center 2016 Active Directory Domain Services                         |
 
-The following table describes the SDDC design limits
 
-| Element          | WSSD Standard                                 | WSSD Premium                                  | WSSD Converged SDS                            |
-|------------------|-----------------------------------------------|-----------------------------------------------|-----------------------------------------------|
-| Servers          | 2-16                                          | 4-16                                          | 4-16                                          |
-| CPU              | Intel® Xeon® Processor E5 v3 Family or better | Intel® Xeon® Processor E5 v3 Family or better | Intel® Xeon® Processor E5 v3 Family or better |
-| RAM              | 128GB+                                        | 128GB+                                        | 64GB+                                         |
-| Disk devices     | Up to 416 total                               | Up to 416 total                               | Up to 416 total                               |
-| Caching devices  | 2+ per node                                   | 2+ per node                                   | 2+ per node                                   |
-| Capacity devices | 4+ per node                                   | 4+ per node                                   | 4+ per node                                   |
-| Storage Pool     | 1                                             | 1                                             | 1                                             |
-| Volumes          | Up to 32                                      | Up to 32                                      | Up 32                                         |
-| Volume size      | Up to 32TB                                    | Up to 32TB                                    | Up to 32TB                                    |
+**Software Defined Data Center (SDDC) Additional Qualifications (AQ’s)**
+
+| Component            | Required Features                            | Software-Defined Data Center (SDDC) Standard AQ | Software-Defined Data Center (SDDC) Premium AQ |
+|----------------------|----------------------------------------------|-------------------------------------------------|------------------------------------------------|
+| NIC                  | Device.Network.LAN.10GbOrGreater             | Yes                                             | Yes                                            |
+|                      | Device.Network.LAN.VMQ                       | Yes                                             | Yes                                            |
+|                      | Device.Network.LAN. RSS                      | Yes                                             | Yes                                            |
+|                      | Device.Network.LAN.LargeSendOffload          | Yes                                             | Yes                                            |
+|                      | Device.Network.LAN.ChecksumOffload           | Yes                                             | Yes                                            |
+|                      | Device.Network.LAN.Base                      | Yes                                             | Yes                                            |
+|                      | Device.Network.LAN.VXLAN                     |                                                 | Yes                                            |
+|                      | Device.Network.LAN.VMMQ                      |                                                 | Yes                                            |
+|                      | Device.Network.LAN.MTUSize                   | Required if using Encap offloads                | Yes                                            |
+|                      | Device.Network.LAN.KRDMA                     |                                                 | Yes                                            |
+|                      | Device.Network.LAN.GRE                       |                                                 | Yes                                            |
+|                      | Device.Network.LAN.DCB                       | Required if using RoCE RDMA                     | Yes                                            |
+|                      | Device.Network.LAN.AzureStack                |                                                 | Yes                                            |
+| SAS HBA              | Device.Storage.Controller                    | Yes                                             | Yes                                            |
+|                      | Device.Storage.Controller.Flush              | Yes                                             | Yes                                            |
+|                      | Device.Storage.Controller.PassThroughSupport | Yes                                             | Yes                                            |
+|                      | Device.Storage.Controller.Sas                | Yes                                             | Yes                                            |
+|                      | Device.Storage.Controller.AzureStack         | Yes                                             | Yes                                            |
+| NVMe Storage Devices | Device.Storage.ControllerDrive.NVMe          | Yes                                             | Yes                                            |
+|                      | Device.Storage.Hd.AzureStack                 | Yes                                             | Yes                                            |
+| HDD (SAS)            | Device.Storage.Hd                            | Yes                                             | Yes                                            |
+|                      | Device.Storage.Hd.DataVerification           | Yes                                             | Yes                                            |
+|                      | Device.Storage.Hd.Flush                      | Yes                                             | Yes                                            |
+|                      | Device.Storage.Hd.PortAssociation            | Yes                                             | Yes                                            |
+|                      | Device.Storage.Hd.Sas                        | Yes                                             | Yes                                            |
+|                      | Device.Storage.Hd.Scsi.ReliabilityCounters   | Yes                                             | Yes                                            |
+|                      | Device.Storage.Hd.AzureStack                 | Yes                                             | Yes                                            |
+|                      | Device.Storage.Hd.FirmwareUpgrade            |                                                 | Yes                                            |
+| HDD (SATA)           | Device.Storage.Hd.Sata                       | Yes                                             | Yes                                            |
+|                      | Device.Storage.Hd                            | Yes                                             | Yes                                            |
+|                      | Device.Storage.Hd.DataVerification           | Yes                                             | Yes                                            |
+|                      | Device.Storage.Hd.Flush                      | Yes                                             | Yes                                            |
+|                      | Device.Storage.Hd.PortAssociation            | Yes                                             | Yes                                            |
+|                      | Device.Storage.Hd.AzureStack                 | Yes                                             | Yes                                            |
+|                      | Device.Storage.Hd.FirmwareUpgrade            |                                                 | Yes                                            |
+| SSD (SAS)            | Device.Storage.Hd                            | Yes                                             | Yes                                            |
+|                      | Device.Storage.Hd.DataVerification           | Yes                                             | Yes                                            |
+|                      | Device.Storage.Hd.PortAssociation            | Yes                                             | Yes                                            |
+|                      | Device.Storage.Hd.Sas                        | Yes                                             | Yes                                            |
+|                      | Device.Storage.Hd.AzureStack                 | Yes                                             | Yes                                            |
+|                      | Device.Storage.Hd.FirmwareUpgrade            |                                                 | Yes                                            |
+| Server               | System.Fundamentals.Firmware                 | Yes                                             | Yes                                            |
+|                      | System.Server.Virtualization                 | Yes                                             | Yes                                            |
+|                      | System.Server.AzureStack.Security            | Yes                                             | Yes                                            |
+|                      | System.Server.Assurance                      |                                                 | Yes                                            |
+|                      | System.Server.AzureStack.BMC                 |                                                 | Yes                                            |
 
 
 <a name="system.solutions.storagespacesdirect"></a>
