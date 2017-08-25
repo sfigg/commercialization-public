@@ -2792,7 +2792,7 @@ Both the above mentioned requirements are optional for Stereo 3D capable resolut
 
 Please refer to System.Client.Camera.Device for description
 
-### System.Client.Camera.PhysicalLocation
+### System.Client.SensorCamera.PhysicalLocation
 
 *Systems with integrated cameras must report the physical location of each camera.*
 
@@ -2810,7 +2810,7 @@ Please refer to System.Client.Camera.Device for description
 
 Please refer to System.Client.Camera.PhysicalLocation for description
 
-## System.Client.Camera.VideoCaptureAndCameraControls
+## System.Client.SensorCamera.VideoCaptureAndCameraControls
 
 *Systems with integrated cameras meet the requirements of, and can support the Windows Capture Infrastructure.*
 
@@ -5022,6 +5022,8 @@ PlayReadyModule, when available on a device in secure firmware in conjunction wi
 
 
 ## System.Fundamentals.Security.DGCG
+
+*For Device Guard and Credential Guard, Intel TXT fully works when enabled and operates in parallel with these feature sets.*
 
 > [!WARNING]
 > Certification for Windows Server 2016, Azure Stack, and SDDC must continue to meet the Windows Hardware Compatibility Requirements as stated in version 1607 of documentation, must use [version 1607 of the HLK (build 14393)](https://go.microsoft.com/fwlink/p/?LinkID=404112) with [matching playlist](http://aka.ms/hlkplaylist) and supplemental content to generate logs, and must follow policies as stated in the [Windows Server Policy document](https://go.microsoft.com/fwlink/p/?linkid=834831). Questions about the Azure Stack or SDDC programs or how to submit the results for solution validation should be directed to the appropriate Microsoft technical account manager or partner management contact.
