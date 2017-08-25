@@ -525,9 +525,6 @@ If the Type-C Port Controller uses UcmTcpci, the UcmTcpciCx client driver is req
 -	UcmTcpciPortControllerStart
 -	UcmTcpciPortControllerAlert
 
-If the Type-C Port Controller uses UcmTcpci, the system must also implement a new _DSD method in ACPI according to the UCM v1.1 ACPI guidance:
-
--	https://aka.ms/ucmacpi (https://aka.ms/ucmacpi)
 
 ### Device.BusController.UsbController.USBC.UsbTypeCUCSI
 
