@@ -25,7 +25,7 @@ ms.assetid: 8A9F73C6-030F-4A1D-A466-6A9ADDD06A51
 
 ### <span id="Improved_playlist_support"></span><span id="improved_playlist_support"></span><span id="IMPROVED_PLAYLIST_SUPPORT"></span>Improved playlist support
 
-The process for loading and using playlists has been improved and simplified. For more information, see [Step 6: Select and run tests](..\getstarted\step-6-select-and-run-tests.md) in the Getting Started guide
+The process for loading and using playlists has been improved and simplified. For more information, see [Step 6: Select and run tests](\getstarted\step-6-select-and-run-tests.md) in the Getting Started guide
 
 ### <span id="Support_for_ARM64_desktop"></span><span id="support_for_arm64_desktop"></span><span id="SUPPORT_FOR_ARM64_DESKTOP"></span>Support for ARM64 desktop
 
@@ -44,17 +44,17 @@ The Results tab now indicates when a test fails due to a system crash. The tab a
 
 See the following topics for more information:
 
--   [Step 7: View test results and log files (Getting started guide)](p_sxs_hlk.step_7_view_test_results_and_log_files)
--   [HLK Studio - Results Tab](p_hlk.hlk_studio___results_tab)
--   [Troubleshooting Windows HLK Test Failures (system crashes)](p_hlk.troubleshooting_windows_hlk_test_failures#sysx)
+-   [Step 7: View test results and log files (Getting started guide)](\getstarted\step_7_view_test_results_and_log_files)
+-   [HLK Studio - Results Tab](\user\hlk_studio___results_tab)
+-   [Troubleshooting Windows HLK Test Failures (system crashes)](\user\troubleshooting_windows_hlk_test_failures#sysx)
 
 ### <span id="Exporting_failed_HLK_jobs"></span><span id="exporting_failed_hlk_jobs"></span><span id="EXPORTING_FAILED_HLK_JOBS"></span>Exporting failed HLK jobs
 
-You can now export a failed job and re-run it on a machine that does not have the HLK Client installed. For more information, see [Exporting a Failed HLK Job](p_hlk.exporting_a_failed_hlk_job).
+You can now export a failed job and re-run it on a machine that does not have the HLK Client installed. For more information, see [Exporting a Failed HLK Job](\user\exporting_a_failed_hlk_job).
 
 ### <span id="Support_for_Mobile_testing"></span><span id="support_for_mobile_testing"></span><span id="SUPPORT_FOR_MOBILE_TESTING"></span>Support for Mobile testing
 
-Mobile devices running Test and Health images are now supported for testing with the HLK. For more information, see [HLK Proxy Client Getting Started Guide](p_sxs_hlk.hlk_proxy_client_getting_started_guide).
+Mobile devices running Test and Health images are now supported for testing with the HLK. For more information, see [HLK Proxy Client Getting Started Guide](\getstarted\hlk_proxy_client_getting_started_guide).
 
 ### <span id="SQL_Server_2012_Express_SP2"></span><span id="sql_server_2012_express_sp2"></span><span id="SQL_SERVER_2012_EXPRESS_SP2"></span>SQL Server 2012 Express SP2
 
@@ -66,15 +66,15 @@ Test levels have been replaced by Development Phases to better align with the ha
 
 ### <span id="Playlists"></span><span id="playlists"></span><span id="PLAYLISTS"></span>Playlists
 
-Playlists describe a collection of tests and can be created from the HLK Studio and [Object Model](p_hlk_om.microsoftwindowskitshardwareobjectmodel) to define custom test passes.
+Playlists describe a collection of tests and can be created from the HLK Studio and [Object Model](\developer\microsoftwindowskitshardwareobjectmodel) to define custom test passes.
 
 <iframe src="https://hubs-video.ssl.catalog.video.msn.com/embed/afc1a262-6147-448f-910c-dbb1bcb18d07/IA?csid=ux-en-us&MsnPlayerLeadsWith=html&PlaybackMode=Inline&MsnPlayerDisplayShareBar=false&MsnPlayerDisplayInfoButton=false&iframe=true&QualityOverride=HD" width="720" height="405" allowFullScreen="true" frameBorder="0" scrolling="no"></iframe>
 
-Learn more about playlists in the [Getting Started Guide](..\getstarted\step-6-select-and-run-tests.md).
+Learn more about playlists in the [Getting Started Guide](\getstarted\step-6-select-and-run-tests.md).
 
 ### <span id="Windows_Hardware_Compatibility_Program"></span><span id="windows_hardware_compatibility_program"></span><span id="WINDOWS_HARDWARE_COMPATIBILITY_PROGRAM"></span>Windows Hardware Compatibility Program
 
-Hardware certification is no longer required. Instead, the Windows Hardware Compatibility Program is an optional program in which you can participate. For more information, see [Windows Hardware Compatibility Program](p_hlk.windows_hardware_compatibility_program_overview).
+Hardware certification is no longer required. Instead, the Windows Hardware Compatibility Program is an optional program in which you can participate. For more information, see [Windows Hardware Compatibility Program](\user\windows_hardware_compatibility_program_overview).
 
 -   Compatibility Playlist - Levels are no longer used to identify tests required for the Compatibility Program. To create a Compatibility Program test pass, download the official [Hardware Compatibility Program Playlist](https://sysdev.microsoft.com/en-US/Hardware/compatibilityplaylists/) and apply to your HLK project.
 -   [Windows Hardware Certification blog](http://blogs.msdn.com/b/windows_hardware_certification) –This blog provides up-to-date news about the Windows Compatibility Program. Including Compatibility Playlist update announcements.
@@ -89,7 +89,7 @@ To support unified driver submissions, results from HCK and HLK projects can be 
 
 ### <span id="Virtual_machine_support"></span><span id="virtual_machine_support"></span><span id="VIRTUAL_MACHINE_SUPPORT"></span>Virtual machine support
 
-The HLK Controller now supports installation and execution in a virtual machine. When configuring your virtual machines, ensure the virtual machine meets the [minimum requirements](p_sxs_hlk.windows_hlk_prerequisites) for the HLK Controller.
+The HLK Controller now supports installation and execution in a virtual machine. When configuring your virtual machines, ensure the virtual machine meets the [minimum requirements](\getstarted\windows_hlk_prerequisites) for the HLK Controller.
 
 ### <span id="Partial_packaging"></span><span id="partial_packaging"></span><span id="PARTIAL_PACKAGING"></span>Partial packaging
 
