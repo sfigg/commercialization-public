@@ -44,17 +44,17 @@ The Results tab now indicates when a test fails due to a system crash. The tab a
 
 See the following topics for more information:
 
--   [Step 7: View test results and log files (Getting started guide)](\getstarted\step_7_view_test_results_and_log_files)
--   [HLK Studio - Results Tab](\user\hlk_studio___results_tab)
--   [Troubleshooting Windows HLK Test Failures (system crashes)](\user\troubleshooting_windows_hlk_test_failures#sysx)
+-   [Step 7: View test results and log files (Getting started guide)](\getstarted\step-7-view-test-results-and-log-files)
+-   [HLK Studio - Results Tab](\user\hlk-studio---results-tab)
+-   [Troubleshooting Windows HLK Test Failures (system crashes)](\user\troubleshooting-windows-hlk-test-failures#sysx)
 
 ### <span id="Exporting_failed_HLK_jobs"></span><span id="exporting_failed_hlk_jobs"></span><span id="EXPORTING_FAILED_HLK_JOBS"></span>Exporting failed HLK jobs
 
-You can now export a failed job and re-run it on a machine that does not have the HLK Client installed. For more information, see [Exporting a Failed HLK Job](\user\exporting_a_failed_hlk_job).
+You can now export a failed job and re-run it on a machine that does not have the HLK Client installed. For more information, see [Exporting a Failed HLK Job](\user\exporting-a-failed-hlk-job).
 
 ### <span id="Support_for_Mobile_testing"></span><span id="support_for_mobile_testing"></span><span id="SUPPORT_FOR_MOBILE_TESTING"></span>Support for Mobile testing
 
-Mobile devices running Test and Health images are now supported for testing with the HLK. For more information, see [HLK Proxy Client Getting Started Guide](\getstarted\hlk_proxy_client_getting_started_guide).
+Mobile devices running Test and Health images are now supported for testing with the HLK. For more information, see [HLK Proxy Client Getting Started Guide](\getstarted\hlk-proxy-client-getting-started-guide).
 
 ### <span id="SQL_Server_2012_Express_SP2"></span><span id="sql_server_2012_express_sp2"></span><span id="SQL_SERVER_2012_EXPRESS_SP2"></span>SQL Server 2012 Express SP2
 
@@ -89,7 +89,7 @@ To support unified driver submissions, results from HCK and HLK projects can be 
 
 ### <span id="Virtual_machine_support"></span><span id="virtual_machine_support"></span><span id="VIRTUAL_MACHINE_SUPPORT"></span>Virtual machine support
 
-The HLK Controller now supports installation and execution in a virtual machine. When configuring your virtual machines, ensure the virtual machine meets the [minimum requirements](\getstarted\windows_hlk_prerequisites) for the HLK Controller.
+The HLK Controller now supports installation and execution in a virtual machine. When configuring your virtual machines, ensure the virtual machine meets the [minimum requirements](\getstarted\windows-hlk-prerequisites) for the HLK Controller.
 
 ### <span id="Partial_packaging"></span><span id="partial_packaging"></span><span id="PARTIAL_PACKAGING"></span>Partial packaging
 
