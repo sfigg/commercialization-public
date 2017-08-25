@@ -1,5 +1,5 @@
 ---
-title: Secure boot, Trusted boot, and Measured boot
+title: Secure boot
 description: Provides guidance on what an OEM should do to enable Securely booting a device
 MSHAttr:
 - 'PreferredSiteName:MSDN'
@@ -11,12 +11,14 @@ ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-# Secure boot, Trusted boot, and Measured boot
+# Secure boot
+
 Secure boot is a security standard developed by members of the PC industry to help make sure that your PC boots using only software that is trusted by the PC manufacturer. When the PC starts, the firmware checks the signature of each piece of boot software, including firmware drivers (Option ROMs), EFI applications, and the operating system. If the signatures are good, the PC boots, and the firmware gives control to the operating system.
 
 You as the OEM use instructions from the firmware manufacturer to create Secure boot keys and to store them in the PC firmware. When you add UEFI drivers (also known as Option ROMs), you'll also need to make sure these are signed and included in the Secure Boot database. When you add UEFI drivers (also known as Option ROMs), you'll also need to make sure these are signed and included in the Secure Boot database. For info, see the _UEFI Validation Option ROM Validation Guidance
 
 ## Secure boot hardware requirements
+
 The firmware requirements for Secure boot are listed here.
 - UEFI 2.3.1 Errata C or higher.
 - The platform exposes an interface that adheres to the profile of UEFI v2.3.1 Section 27.
@@ -28,13 +30,16 @@ When power is turned on, the system starts executing code in the firmware and us
 The platform provides the EFI_HASH_PROTOCOL (per UEFI v2.3.1) for offloading cryptographic hash operations and the EFI_RNG_PROTOCOL (Microsoft defined) for accessing platform entropy.
 
 ## Trusted boot
+
 Trusted boot takes over where Secure boot leaves off. The bootloader verifies the digital signature of the Windows 10 kernel before loading it. The Windows 10 kernel, in turn, verifies every other component of the Windows startup process, including the boot drivers, startup files, and ELAM. If a file has been modified, the bootloader detects the problem and refuses to load the corrupted component. Often, Windows 10 can automatically repair the corrupted component, restoring the integrity of Windows and allowing the PC to start normally.
 
 
 ## Early Launch Anti-Malware (ELAM)
+
 Because Secure Boot has protected the bootloader and Trusted Boot has protected the Windows kernel, the next opportunity for malware to start is by infecting a non-Microsoft boot driver. Traditional anti-malware apps don’t start until after the boot drivers have been loaded, giving a rootkit disguised as a driver the opportunity to work. Early Launch Anti-Malware (ELAM) can load a Microsoft or non-Microsoft anti-malware driver before all non-Microsoft boot drivers and applications, thus continuing the chain of trust established by Secure Boot and Trusted Boot. Because the operating system hasn’t started yet, and because Windows needs to boot as quickly as possible, ELAM has a simple task: examine every boot driver and determine whether it is on the list of trusted drivers. If it’s not trusted, Windows won’t load it.
 
 ## Measured boot
+
 If a PC in your organization does become infected with a rootkit, you need to know about it. Enterprise anti-malware apps can report malware infections to the IT department, but that doesn’t work with rootkits that hide their presence. In other words, you can’t trust the client to tell you whether it’s healthy. 
 
 As a result, PCs infected with rootkits appear to be healthy, even with anti-malware running. Infected PCs continue to connect to the enterprise network, giving the rootkit access to vast amounts of confidential data and potentially allowing the rootkit to spread across the internal network.
@@ -49,6 +54,7 @@ Measured Boot uses the following process:
 
 
 ## Signature Databases and Keys
+
 Before the PC is deployed, the OEM stores the Secure Boot databases onto the PC. This includes the signature database (db), revoked signatures database (dbx), and Key Enrollment Key database (KEK) onto the PC. These databases are stored on the firmware nonvolatile RAM (NV-RAM) at manufacturing time.
 
 The signature database (db) and the revoked signatures database (dbx) list the signers or image hashes of UEFI applications, operating system loaders (such as the Microsoft Operating System Loader, or Boot Manager), and UEFI drivers that can be loaded on the individual PC, and the revoked images for items that are no longer trusted and may not be loaded.
@@ -60,6 +66,7 @@ After these databases have been added, and after final firmware validation and t
 You should contact your firmware manufacturer for tools and assistance in creating these databases. 
 
 ## Boot sequence
+
 1. After the PC is turned on, the signature databases are each checked against the platform key.
 2. If the firmware is not trusted, the UEFI firmware must initiate OEM-specific recovery to restore trusted firmware.
 3. If there is a problem with Windows Boot Manager, the firmware will attempt to boot a backup copy of Windows Boot Manager. If this also fails, the firmware must initiate OEM-specific remediation.
@@ -69,4 +76,5 @@ You should contact your firmware manufacturer for tools and assistance in creati
 
 
 ## Related Topics
+
 - [Secure the Windows 10 boot process](https://docs.microsoft.com/en-us/windows/threat-protection/secure-the-windows-10-boot-process)

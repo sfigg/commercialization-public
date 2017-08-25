@@ -19,7 +19,7 @@ More than 140 leading technology companies participate in the Unified EFI Forum,
 ## UEFI benefits
 Firmware that meets the UEFI 2.3.1 specifications provides the following benefits:
 - Faster boot and resume times.
-- Ability to use security features such as Secure Boot and factory encrypted drives that help prevent untrusted code from running before the operating system is loaded. For more information, see [Secure boot, Trusted boot, and Measured boot](OEM-secure-boot.md) and [Factory Encrypted Drives](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/factory-encrypted-drives).
+- Ability to use security features such as Secure Boot that helps prevent untrusted code from running before the operating system is loaded. For more information, see [Secure boot](OEM-secure-boot.md).
 - Ability to more easily support large hard drives (more than 2 terabytes) and drives with more than four partitions.
 - Compatibility with legacy BIOS. Some UEFI-based PCs contain a Compatibility Support Module (CSM) that emulates earlier BIOS, providing more flexibility and compatibility for end users. To use the CSM, Secure Boot must be disabled. 
 - Support for multicast deployment, which allows PC manufacturers to broadcast a PC image that can be received by multiple PCs without overwhelming the network or image server.
@@ -30,7 +30,7 @@ Firmware that meets the UEFI 2.3.1 specifications provides the following benefit
 - The default El Torito boot entry is a BIOS entry that includes the 80x86 Platform ID, which is defined as “0x00” in hexadecimal.
 - The second El Torito boot entry is an EFI entry that includes the Platform ID as “0xEF” in hexadecimal. The entry references a FAT partition that contains the bootable EFI application at \EFI\BOOT\BOOTX64.EFI.
 - Windows supports both CD and DVD boot from the Universal Disk Format (UDF) file system. Windows installation media also uses El Torito and is built by using the UDF bridge format to support both ISO 9660 and UDF version 1.02 file systems.
-- The Windows Assessment and Deployment Kit (Windows ADK) includes an updated version of Oscdimg.exe that supports the creation of a multi-entry El Torito boot catalog.
+- The Windows Assessment and Deployment Kit (Windows ADK) includes an updated version of Oscdimg.exe that supports the creation of a multi-entry El Torito boot catalog. [Download the ADK](https://developer.microsoft.com/en-us/windows/hardware/windows-assessment-deployment-kit).
 
 ## Boot requirements
 Firmware vendors must ensure that the following conditions exist:
