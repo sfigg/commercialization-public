@@ -96,7 +96,7 @@ ms.technology: windows-oem
  - [Device.Graphics.WDDM22.AdapterRender.D3D12.ProgrammableMSAA](#device.graphics.wddm22.adapterrender.d3d12.programmablemsaa)
  - [Device.Graphics.WDDM22.AdapterRender.D3D12.9on12 ](#device.graphics.wddm22.adapterrender.d3d12.9on12)
  - [Device.Graphics.WDDM22.AdapterRender.D3D11D3D12.SystemShaderCache](#device.graphics.wddm22.adapterrender.d3d11d3d12.systemshadercache)
- - [Device.Graphics.WDDM22.AdapterRender.D3D12.DXILCore](#device.graphics.wddm22.adapterrender.d3d12.dxilcore)
+ - [Device.Graphics.WDDM22.AdapterRender.D3D12.DXILCore.ShaderModel60](#device.graphics.wddm22.adapterrender.d3d12.dxilcore.shadermodel60)
  - [Device.Graphics.WDDM22.AdapterRender.D3D12.DXIL.WaveOps](#device.graphics.wddm22.adapterrender.d3d12.dxil.waveops)
  - [Device.Graphics.WDDM22.AdapterRender.D3D12.DXIL.Int64](#device.graphics.wddm22.adapterrender.d3d12.dxil.int64)
 
@@ -5583,10 +5583,10 @@ If a driver chooses to implement WaveOps it must implement ShaderModel6 outlined
 
 The wave intrinsics requirement, if implemented, allows shader authors to exploit intra-wave communication, with guarantees around data visibility and synchronization that lead to better hardware utilization and improved performance. This leads to more competitive games and better user experiences.
 
-<a name="device.graphics.wddm22.adapterrender.d3d12.dxilcore"></a>
-## Device.Graphics.WDDM22.AdapterRender.D3D12.DXILCore
+<a name="device.graphics.wddm22.adapterrender.d3d12.dxilcore.shadermodel60"></a>
+## Device.Graphics.WDDM22.AdapterRender.D3D12.DXILCore.ShaderModel60
 
-### Device.Graphics.WDDM22.AdapterRender.D3D12.DXILCore.ShaderModel6
+### evice.Graphics.WDDM22.AdapterRender.D3D12.DXILCore.ShaderModel60.CoreRequirement
 
 <table>
 <tr>
