@@ -46,11 +46,15 @@ ms.technology: windows-oem
 
 **Description**
 
-**Mandatory:** The TPM must comply with TCG Trusted Platform Module Library Specification, Family "2.0", Level 00, Revision 1.16 or later, including errata version 1.4 and all security patches published at least 120 days prior to testing.
+**Mandatory:** The TPM must comply with exactly one of:
 
-**Mandatory:** Effective July 28, 2018 The TPM must comply with TCG Trusted Platform Module Library Specification, Family "2.0", Level 00, Revision 1.38, including Errata Version 1.0.
+-   TCG Trusted Platform Module Library Specification, Family "2.0", Level 00, Revision 1.16, including errata version 1.5 and all security patches published at least 120 days prior to testing.
 
-**Information:** Revision 1.38 without Errata Version 1.0 is not acceptable at any time for certification.
+-   2.	TCG Trusted Platform Module Library Specification, Family "2.0", Level 00, Revision 1.38, including Errata Version 1.1 and all security patches published at least 120 days prior to testing.
+
+**Mandatory:** Effective July 28, 2018 The TPM must comply with TCG Trusted Platform Module Library Specification, Family "2.0", Level 00, Revision 1.38, including Errata Version 1.1.
+
+**Information:** Revision 1.38 without Errata Version 1.1 is not acceptable at any time for certification.
 
 **Mandatory:** The TPM 2.0 must implement all “Mandatory” features in the table below:
 
@@ -100,7 +104,11 @@ ms.technology: windows-oem
 </tbody>
 </table>
 
-**Mandatory:** The TPM must comply with “TCG PC Client Platform TPM Profile (PTP) Specification”, Family “2.0”, Level 00 Revision 00.43, dated January 26, 2015 except as stated below:
+**Mandatory:** If the TPM device complies with Library Version 1.16, the TPM must comply with “TCG PC Client Platform TPM Profile (PTP) Specification”, Family “2.0”, Level 00 Revision 00.43, dated January 26, 2015 except as stated below:
+
+   -   Any statements in the “System.Fundamentals.TPM20” or “Device.TrustedPlatformModule.TPM20” are authoritative if there is a conflict between them and the PTP specification.
+
+**Mandatory:** If the TPM device complies with Library Version 1.38, the TPM must comply with “TCG PC Client Platform TPM Profile (PTP) Specification”, Family “2.0”, Level 00 Revision 1.03, except as stated below:
 
    -   Any statements in the “System.Fundamentals.TPM20” or “Device.TrustedPlatformModule.TPM20” are authoritative if there is a conflict between them and the PTP specification.
 
@@ -143,6 +151,8 @@ ms.technology: windows-oem
    -   TPM_ECC_NIST_P256
    
 **Mandatory:** The TPM must support interrupt driven communication.
+
+**Mandatory:** The TPM Interrupt PIN must be connected to an interrupt controller.
 
 **Optional:** Support for TPM_EncryptDecrypt.
 
