@@ -535,8 +535,6 @@ WDI\_PHY\_INFO structures returned by OID\_WDI\_GET\_ADAPTER\_CAPABILITIES.
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
 
-Implement Wake on WLAN
-
 **Terms: If-Implemented**
 
 **Description: **
@@ -563,7 +561,7 @@ WLAN devices that implement WoWLAN (Wake on Wireless LAN) must support all the f
 
 -   Must support ARP and NS offloads to ensure link local network discovery. WLAN device should be able to respond to ARP and NS requests without interrupting the CPU when the device is in low power (D3) state. Devices must support at least 1 ARP offload and at least 2 NS offloads (each NS offload with up to 2 target IPv6 addresses).
 
--   When screen is off, device must stay connected and functional after 30 simultaneous power transitions within a stipulated period of time. 
+-   When screen is off, device must stay connected and functional after 100 simultaneous power transitions within a stipulated period of time. 
 
 
 Network List Offload
@@ -749,6 +747,88 @@ If this requirements is supported then all Wi-Fi Direct Ports must support eCSA.
 
 OS will not control the eCSA behavior of the Device, this is device specific implementation.
 
+#### Support Internet Sharing
+
+**Description**
+
+If implemented**,** support for Tethering over Virtualized Wi-Fi Port including
+support for Custom SSID and WPA2 Auth/Encryption for concurrent operation of
+tethering and station connectivity.  
+
+Devices are recommended to support tethering for a minimum of 3 clients.
+
+Device must report the relevant capabilities in the
+WIFI\_GET\_ADAPTER\_CAPABILITIES per the WDI Specification
+
+-   WIFI\_VIRTUALIZATION\_ATTRIBUTES
+
+-   WIFI\_P2P\_ATTRIBUTES
+
+-   WIFI\_BAND\_INFO
+
+-   WIFI\_PHY\_INFO
+
+Support Advanced WMM Levels across WFD Role Ports
+
+**Description**
+
+This requirements captures the work needed to be done by the Wi-Fi Driver. This
+includes support for concurrent operation over Miracast, Station & Bluetooth.
+** **
+
+**Details  **
+
+The Connection Quality & Performance of Wi-Fi Direct is essential to the
+Miracast Scenario. The assessment for the Device/Driver will provide the results
+for your device, below is guidance for a reasonable quality Miracast Connection.
+ 
+
+WMM shall be supported on all ports including virtualized ports – ExtSTA, Wi-Fi
+Direct Role Port (Group Owner), and Wi-Fi Direct Role Port (Client).
+
+-   The NIC should be capable of supporting prioritization across two ports (ExtSTA & one Wi-Fi Direct Role Port) at the same time.
+
+-   Prioritize traffic based on 802.11e Access Category (AC) tagging.
+
+-   When the NIC is virtualized with Concurrency in single channel, it must be able to prioritize transmit traffic across different virtual ports based on WMM & Media Streaming indication.
+
+-   When the NIC is virtualized with Concurrency across multiple channels, it must be able to prioritize transmit traffic across different virtual ports based on WMM and Media Streaming Indication and receiving traffic is serviced across the concurrent channels.
+
+When WMM prioritization is used with AC\_VI or AC\_VO (Voice/Video), WLAN device
+should meet the following latency and packet loss requirements.
+
+|                                                        | **ExSTA**     | **Wi-Fi Direct Role Port**  | **Max. One Way Latency at UDP for AC\_VI/AC\_VO Traffic** | **Packet Loss for AC\_VI/AC\_VO Traffic** |
+|--------------------------------------------------------|---------------|-----------------------------|-----------------------------------------------------------|-------------------------------------------|
+| **ExSTA Only**                                         | AC\_VI/AC\_VO | NA                          | 30ms                                                      | 0.5%, not more than 3 consecutive packets |
+|                                                        |               |                             |                                                           |                                           |
+| **ExSTA + Wi-Fi Direct in Single Channel Concurrency** | AC\_VI/AC\_VO |                             | 30ms                                                      | 0.5%, not more than 3 consecutive packets |
+|                                                        |               | AC\_VI/AC\_VO               | 30ms                                                      | 0.5%, not more than 3 consecutive packets |
+|                                                        | AC\_VI/AC\_VO | AC\_VI/AC\_VO               | 30ms                                                      | 0.5%, not more than 3 consecutive packets |
+|                                                        |               |                             |                                                           |                                           |
+| **ExSTA + Wi-Fi Direct in Multi Channel Concurrency**  | AC\_VI/AC\_VO |                             | 40ms                                                      | 0.5%, not more than 3 consecutive packets |
+|                                                        |               | AC\_VI/AC\_VO               | 40ms                                                      | 0.5%, not more than 3 consecutive packets |
+|                                                        | AC\_VI/AC\_VO | AC\_VI/AC\_VO               | 50ms                                                      | 0.5%, not more than 3 consecutive packets |
+
+
+<a name="Device.Network.WLAN.SupportWiFiDirectConcurrency"></a>
+## Device.Network.WLAN.SupportWiFiDirectConcurrency
+
+### Device.Network.WLAN.SupportWiFiDirectConcurrency.WiFiDirectConcurrency
+
+<table>
+<tr>
+<th>Applies to</th>
+<td>
+<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
+<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
+<p>Windows 10 Mobile ARM</p>
+<p>Windows 10 Mobile x86</p>
+</td></tr></table>
+
+**Terms: If-Implemented**
+
+**Description**
+
 #### Support Concurrency
 
 The requirement does not currently apply to **802.11ad**
@@ -927,7 +1007,7 @@ When WMM prioritization is used with AC\_VI or AC\_VO (Voice/Video), WLAN device
 <a name="device.network.wlan.supportwifidirectservices"></a>
 ## Device.Network.WLAN.SupportWiFiDirectServices 
 
-### Device.Network.WLAN.SupportWiFiDirect.WiFiDirectServices **(WDI drivers only)**
+### Device.Network.WLAN.SupportWiFiDirectServices.WiFiDirectServices **(WDI drivers only)**
 
 <table>
 <tr>
