@@ -54,18 +54,22 @@ ms.technology: windows-oem
 
 **Description**
 
-If a device driver supports a privileged app performing Custom Driver Access, it must declare a restricted interface. 
+Microsoft is making significant investments to ensure that device partners are able to provide best-in-class experiences from their custom Universal Windows Platform (UWP) applications. There are two key features involved in crafting a device specific Hardware Support Application (HSA):
 
-By declaring a restricted interface, the following requirements must be met:
+  - The protected RPC communication channel that enables communication to a Windows Service, protected by a Custom Capability.
+
+  - The Windows.Devices.Custom API allowing direct communication with a kernel-mode driver, protected by a Custom Capability.
+
+It is critical for all of the device dependent applications to transform into HSA/UWP based custom applications. Device driver package must not include any custom applications in executable formats.
+
+**Windows 10 Client**
+
+Windows 10 Client driver package must not include any custom applications after February 1st, 2018
+
+**Windows 10 S**
+
+Windows 10 S driver package must not include any custom applications by the official release of the Windows 10 S. All device dependent applications must be HSA/UWP based and release through the Windows Store.
  
-
--   Assert that the device io control interfaces provided by this device driver are intended to be accessed by a privileged app running in an app container that accesses hardware functionality using CreateDeviceAccessInstance() and IDeviceIoControl() on Windows 10.   
-
-<!-- -->
-
--   The restricted interface cannot be opened directly from an app container.
-
-A device driver declares an interface is restricted by setting the DEVPKEY\_DeviceInterface\_Restricted property to true on that interface.  
 
 <a name="device.devfund.deviceguard"></a>
 ## Device.DevFund.DeviceGuard
@@ -179,11 +183,8 @@ In the Windows Logo Kit, the WDF Test can be run to validate this requirement.
 <ul>
 <li><p>All information (INF) files in Windows Driver Foundation (WDF) driver packages must call WDF-specific sections properly. Correctly structured INF sections help to ensure that the driver will be installed properly. However, even when a driver is installed, a poorly or wrongly configured section can cause unpredictable problems during the operation of the driver or device. These problems can be prevented by following the guidelines for WDF INF settings.<br />
 To meet this requirement, all WDF INF files must have the following:</p></li>
-<li><p>A coinstaller section, as follows:</p></li>
-<code>[DDInstall.Coinstallers]<br />
-CopyFiles=<br />
-AddReg=<br />
- </code></li>
+
+
 
 <li><p>A WDF section, as follows:</p>
 
@@ -333,11 +334,6 @@ To meet this requirement, all WDF INF files must have the following:
 
 <ul>
 <li><p>A coinstaller section, as follows:</p></li>
-<li><code>[DDInstall.Coinstallers]<br />
-CopyFiles=<br />
-AddReg=<br />
-<br />
- </code></li>
 
 <li><p>A WDF section, as follows:</p>
 
@@ -391,6 +387,49 @@ For more information about WDF-specific INF settings, visit the following websit
 <a href="http://www.microsoft.com/whdc/driver/wdf/wdfbook.mspx" class="uri">http://www.microsoft.com/whdc/driver/wdf/wdfbook.mspx</a><br />
 http://msdn.microsoft.com/en-us/library/ff560526.aspx<br />
 http://msdn.microsoft.com/en-us/library/ff560526.aspx</p>
+
+
+<a name="Device.DevFund.DriverSecurity"></a>
+## Device.DevFund.DriverSecurity
+
+### Device.DevFund.DriverSecurity.DriverPackage
+
+*All binaries must be digitally signed by Microsoft, including all binaries in a compressed file*
+
+<table>
+<tr>
+<th>Applies to</th>
+<td>
+<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
+<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
+</td></tr></table>
+
+**Description**
+
+**Windows 10 S only**
+
+Driver packages may not include any 3rd party UI components, apps, or settings. Instead Universal applications from the Windows Store should be provided for user interfaces and may also leverage Settings app extensibility to achieve custom configuration on hardware level tuning or setting.
+
+Drivers must not reference any of the following inbox components:
+
+  - bash.exe 
+  - cdb.exe 
+  - cmd.exe 
+  - cscript.exe 
+  - csi.exe 
+  - dnx.exe 
+  - kd.exe 
+  - lxssmanager.dll 
+  - msbuild.exe 
+  - ntsd.exe 
+  - powershell.exe 
+  - powershell_ise.exe 
+  - rcsi.exe 
+  - reg.exe 
+  - regedt32.exe 
+  - windbg.exe 
+  - wmic.exe 
+  - wscript.exe
 
 
 <a name="device.devfund.firmware"></a>
@@ -673,7 +712,17 @@ The following INF directive may not be referenced in an INF file:
 
 **Description**
 
-An INF file may not reference any co-installers within a DDInstall.CoInstallers section. Therefore, a driver package cannot execute any co-installers during device installation.
+An INF file may not reference any co-installers (a Windows32 DLL) within a DDInstall.CoInstallers section. A co-installer typically writes additional configuration information or performs other installation tasks. Co-installer opacity makes it difficult to keep systems current. Unbounded co-installer execution could cause an unknown impact on systems. Therefore, a driver package cannot execute any co-installers during device installation. 
+
+**Windows 10 Client**
+
+Windows 10 Client driver package must not include and execute any co-installer after February 1st, 2018
+
+**Windows 10 S**
+
+Windows 10 S driver package must not include and execute any co-installer by the official release of the Windows 10 S.
+
+
 
 *Design Notes*
 
@@ -720,15 +769,6 @@ Device-class co-installer example:
 **HKLM,System\\CurrentControlSet\\Control\\CoDeviceInstallers, \\**
 **{SetupClassGUID}, 0x00010008,"DevClssCoInst.dll\[,DevClssEntryPoint\]"**
 ```
-
-<table>
-<tr>
-<th>Exceptions</th>
-<td>
-<p>This is a requirement for Windows 10 Mobile (ARM, ARM64, x86), but recommended for Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) (x64, x86) and Windows Server 2016 Technical Preview x64. It will be required in the future for those architectures.</p>
-</tr>
-</table>
-
 
 
 ### Device.DevFund.INF.DeviceConfigOnly
@@ -1525,7 +1565,7 @@ Driver installation and removal must use Windows®-based methods. Therefore, onl
 
 *Design Notes*
 
-The "INFTest against a single INF" test in the Windows Hardware Certification Kit (WHCK) validates this requirement. For more information about this test, see the Help documentation of the test kit.
+The ”DF - InfVerif INF Verification” test in the Windows Hardware Lab Kit (WHLK) validates this requirement. For more information about this test, see the Help documentation of the test kit.
 
 Note: If the device does not provide an INF file (that is, the device uses the inbox driver and the INF file only), this requirement does not apply.
 
@@ -2166,3 +2206,52 @@ The resulting DVL file output by Static Analysis tools will be captured by the H
 
 **Note:** Microsoft reserves the right to add other device categories to the Static Analysis Tools requirement in future releases.
 
+
+<a name="Device.DevFund.UniversalDriver"></a>
+## Device.DevFund.UniversalDriver
+
+### Device.DevFund.UniversalDriver.API
+
+*Driver must use OneCoreUAP supported APIs*
+
+<table>
+<tr>
+<th>Applies to</th>
+<td>
+<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
+<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
+<p>Windows 10 ARM64 Desktop</p>
+</td></tr></table>
+
+**Description**
+
+Device driver must not use any OS APIs that are not part of OneCoreUAP. This enables drivers to successfully run on all OneCore-based Windows devices.
+
+Device drivers must be fully compliant with this requirement by the Windows release after April, 2018
+
+For more information, please refer to MSDN: http;//aka.ms/CompatOneCoreUAP
+
+### Device.DevFund.UniversalDriver.Base
+
+*Device driver must be Universal Windows driver*
+
+<table>
+<tr>
+<th>Applies to</th>
+<td>
+<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
+<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
+<p>Windows 10 ARM64 Desktop</p>
+</td></tr></table>
+
+**Description**
+Universal Windows drivers enable developers to create a single driver that runs all Windows 10 editions, and designed to improve system reliability, performance and serviceability. In order for a driver to be considered as a Universal Windows driver, it must be meet the following requirements:
+
+Universal Windows drivers run on all Windows 10 editions and Device.DevFund.Reliability.ProperINF
+
+  - Device.DevFund.INF.DDInstall.CoInstallers
+  - Device.DevFund.UniversalDriver.API
+
+If a Hardware Support Application is provided, it must meet Device.DevFund.CDA.Application requirement
+
+Device drivers must be fully compliant with this requirement by the Windows release after April, 2018
