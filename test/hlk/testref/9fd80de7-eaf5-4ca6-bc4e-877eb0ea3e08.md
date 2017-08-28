@@ -1,0 +1,117 @@
+---
+title: NDISTest 6.5 - [2 Machine] - Stats
+Description: NDISTest 6.5 - [2 Machine] - Stats
+ms.assetid: dc816554-cfb8-4408-b68b-b2f1831231c9
+author: sapaetsc-msft
+ms.author: sapaetsc
+ms.date: 08/28/17
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
+---
+
+# NDISTest 6.5 - [2 Machine] - Stats
+
+<conditional_block> <conditions> <docset value="standalone"></docset> </conditions>
+
+>[!NOTE]
+You can find the latest version of this test documentation on MSDN at the following link:
+
+-   <xref hlink="http://msdn.microsoft.com/en-us/library/windows/hardware/dc816554-cfb8-4408-b68b-b2f1831231c9">http://msdn.microsoft.com/en-us/library/windows/hardware/dc816554-cfb8-4408-b68b-b2f1831231c9</b>
+
+
+</conditional_block>
+
+For NDIS 6.0 miniports, this test verifies that miniport maintains and report statistics from OID\_GEN\_STATISTICS correctly. The test also verifies that the miniport correctly supports statistics OIDs OID\_GEN\_RCV\_OK OID\_GEN\_RCV\_NO\_BUFFER OID\_GEN\_RCV\_ERROR. It sends a bunch of packets to the test adapter and checks that the statistics get incremented. It expects the OID\_GEN\_RCV\_NO\_BUFFER to incremented exactly by the number of packets that were dropped.
+
+## Test details
+
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><mark type="bullet_intro">Specifications</b></td>
+<td><ul>
+<li>Device.Network.LAN.Base.NDISRequirements</li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><mark type="bullet_intro">Platforms</b></td>
+<td><ul>
+<li><tla rid="win_threshold_desktop"></tla> x86</li>
+<li><tla rid="win_threshold_desktop"></tla> x64</li>
+<li><tla rid="win_threshold_server"></tla> x64</li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><mark type="bullet_intro">Supported Releases</b></td>
+<td><ul>
+<li><tla rid="win_10"></tla></li>
+<li><tla rid="win_10_th2"></tla></li>
+<li><tla rid="win_10_rs1"></tla></li>
+<li>Windows 10, version 1703</li>
+<li>Windows 10, version 1709</li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><mark type="bullet_intro">Expected run time (in minutes)</b></td>
+<td>10</td>
+</tr>
+<tr class="odd">
+<td><mark type="bullet_intro">Category</b></td>
+<td>Development</td>
+</tr>
+<tr class="even">
+<td><mark type="bullet_intro">Timeout (in minutes)</b></td>
+<td>10</td>
+</tr>
+<tr class="odd">
+<td><mark type="bullet_intro">Requires reboot</b></td>
+<td>false</td>
+</tr>
+<tr class="even">
+<td><mark type="bullet_intro">Requires special configuration</b></td>
+<td>false</td>
+</tr>
+<tr class="odd">
+<td><mark type="bullet_intro">Type</b></td>
+<td>automatic</td>
+</tr>
+</tbody>
+</table>
+
+## Additional documentation
+
+Tests in this feature area might have additional documentation, including prerequisites, setup, and troubleshooting information, that can be found in the following topic(s):
+
+-   <xref rid="p_hlk_test.device_network_additional_documentation">Device.Network additional documentation</b>
+
+## Running the test
+
+Before you run the test, complete the test setup as described in the test requirements: <xref rid="p_hlk_test.lan_testing_prerequisites">LAN Testing Prerequisites</b>.
+
+## Troubleshooting
+
+For generic troubleshooting of HLK test failures, see <xref rid="p_hlk.troubleshooting_windows_hlk_test_failures">Troubleshooting Windows HLK Test Failures</b>.
+
+For troubleshooting information, see <xref rid="p_hlk_test.troubleshooting_lan_testing">Troubleshooting LAN Testing</b>.
+
+## More information
+
+## Parameters
+
+| Parameter name                                        | Parameter description                    |
+|-------------------------------------------------------|------------------------------------------|
+| <mark type="bullet_intro">queryTestDeviceID</b>       |                                          |
+| <mark type="bullet_intro">SupportDeviceGuid0</b>      |                                          |
+| <mark type="bullet_intro">ClientMessageDeviceGuid</b> |                                          |
+| <mark type="bullet_intro">ServerMessageDeviceGuid</b> |                                          |
+| <mark type="bullet_intro">TestScript</b>              | comma separated list of test jobs to run |
+
+
+
+
+

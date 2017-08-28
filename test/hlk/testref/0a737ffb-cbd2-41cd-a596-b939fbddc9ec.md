@@ -1,0 +1,107 @@
+---
+title: Wlan Test - Connect to a WPA2 PSK AES AP with Sleep cycle - (WoW64 for ARM64)
+Description: Wlan Test - Connect to a WPA2 PSK AES AP with Sleep cycle - (WoW64 for ARM64)
+ms.assetid: 8598ae3b-1731-4cbc-8c2f-3e2a1b31951d
+author: sapaetsc-msft
+ms.author: sapaetsc
+ms.date: 08/28/17
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
+---
+
+# Wlan Test - Connect to a WPA2 PSK AES AP with Sleep cycle - (WoW64 for ARM64)
+
+<conditional_block> <conditions> <docset value="standalone"></docset> </conditions>
+
+>[!NOTE]
+You can find the latest version of this test documentation on MSDN at the following link:
+
+-   <xref hlink="http://msdn.microsoft.com/en-us/library/windows/hardware/8598ae3b-1731-4cbc-8c2f-3e2a1b31951d">http://msdn.microsoft.com/en-us/library/windows/hardware/8598ae3b-1731-4cbc-8c2f-3e2a1b31951d</b>
+
+
+</conditional_block> Connect to a specified WPA2PSK AES network with sleep resume (Defaults: SSID=kitstestssid Passphrase=password SleepDurationInSec=20, SleepCycleIterations=2) - This test is a WoW64 for ARM64 version of test guid 2ae2cb26-ea04-4def-8e07-ae7b92e61e1b
+
+## Test details
+
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><mark type="bullet_intro">Specifications</b></td>
+<td><ul>
+<li>Device.Network.WLAN.SupportConnectionToAP.ConnectionToAP</li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><mark type="bullet_intro">Platforms</b></td>
+<td><ul>
+<li><tla rid="win_threshold_desktop"></tla> ARM64</li>
+<li><tla rid="win_threshold_mobile"></tla> ARM64</li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><mark type="bullet_intro">Supported Releases</b></td>
+<td><ul>
+<li><tla rid="win_10"></tla></li>
+<li><tla rid="win_10_th2"></tla></li>
+<li><tla rid="win_10_rs1"></tla></li>
+<li>Windows 10, version 1703</li>
+<li>Windows 10, version 1709</li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><mark type="bullet_intro">Expected run time (in minutes)</b></td>
+<td>5</td>
+</tr>
+<tr class="odd">
+<td><mark type="bullet_intro">Category</b></td>
+<td>Scenario</td>
+</tr>
+<tr class="even">
+<td><mark type="bullet_intro">Timeout (in minutes)</b></td>
+<td>15</td>
+</tr>
+<tr class="odd">
+<td><mark type="bullet_intro">Requires reboot</b></td>
+<td>false</td>
+</tr>
+<tr class="even">
+<td><mark type="bullet_intro">Requires special configuration</b></td>
+<td>true</td>
+</tr>
+<tr class="odd">
+<td><mark type="bullet_intro">Type</b></td>
+<td>automatic</td>
+</tr>
+</tbody>
+</table>
+
+## Additional documentation
+
+Tests in this feature area might have additional documentation, including prerequisites, setup, and troubleshooting information, that can be found in the following topic(s):
+
+-   <xref rid="p_hlk_test.device_network_additional_documentation">Device.Network additional documentation</b>
+
+## More information
+
+## Parameters
+
+| Parameter name                                     | Parameter description                                                 |
+|----------------------------------------------------|-----------------------------------------------------------------------|
+| <mark type="bullet_intro">EnableTracing</b>        | Enable Tracing                                                        |
+| <mark type="bullet_intro">WPA2\_PSK\_AES\_SSID</b> | SSID of a WPA2\_PSK\_AES network to connect to (MUST be WPA2 PSK AES) |
+| <mark type="bullet_intro">WPA2\_PSK\_Password</b>  | Password for WPA2\_PSK network                                        |
+| <mark type="bullet_intro">SleepDurationInSec</b>   | The amount of time in seconds the device will asleep                  |
+| <mark type="bullet_intro">SleepCycleIterations</b> | The number of sleep/wake cycles to do                                 |
+| <mark type="bullet_intro">queryTestDeviceID</b>    | Device id of device under test                                        |
+
+## Troubleshooting
+
+For generic troubleshooting of HLK test failures, see <xref rid="p_hlk.troubleshooting_windows_hlk_test_failures">Troubleshooting Windows HLK Test Failures</b>.
+
+
+

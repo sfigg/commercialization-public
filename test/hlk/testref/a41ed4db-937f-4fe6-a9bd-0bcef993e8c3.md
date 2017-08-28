@@ -1,0 +1,230 @@
+---
+title: Stretch Rect
+Description: Stretch Rect
+ms.assetid: b5e3b4d0-b925-4b07-ad2a-f4c6aedc8a62
+author: sapaetsc-msft
+ms.author: sapaetsc
+ms.date: 08/28/17
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
+---
+
+# Stretch Rect
+
+<conditional_block> <conditions> <docset value="standalone"></docset> </conditions>
+
+>[!NOTE]
+You can find the latest version of this test documentation on MSDN at the following link:
+
+-   <xref hlink="http://msdn.microsoft.com/en-us/library/windows/hardware/b5e3b4d0-b925-4b07-ad2a-f4c6aedc8a62">http://msdn.microsoft.com/en-us/library/windows/hardware/b5e3b4d0-b925-4b07-ad2a-f4c6aedc8a62</b>
+
+
+</conditional_block>
+
+This automated test verifies correct implementation of the driver functionality that underlies the **IDirect3DDevice9::StretchRect** method.
+
+The Stretch Rect test uses the **IDirect3D9::CheckDeviceFormat** method to determine the combinations of formats and surface types that the driver supports. It also uses the **IDirect3D9::CheckDeviceFormatConversion** method to determine the color-conversion operations that the driver supports.
+
+For all valid surface-type combinations, the test performs a comprehensive set of **StretchRect** operations. These operations include those that involve stretching, color conversion, and copies to or from a subset rectangle (subrect). In these test cases, the source surface may be a texture surface (RT or non-RT), an off-screen render target, or an off-screen plain surface. The destination must be a render target or an RT texture surface.
+
+Under D3D9L, the test also considers a more comprehensive set of source and destination surface-type combinations: Each surface may be a non-RT texture surface, an RT texture surface, an off-screen RT, or an off-screen plain surface. All sixteen combinations are tested. However, in compliance with D3D9L specifications, the **StretchRect** operations are limited to those that involve only full-surface copies without stretching or color conversion.
+
+The test accomplishes automatic verification by rendering both the destination surface and a reference surface and comparing the rendered images. The test uses the **LoadSurfaceFromSurface** function in D3DX9 to prepare reference images.
+
+This topic applies to the following test jobs:
+
+-   Stretch Rect
+
+-   Stretch Rect (WoW64)
+
+## Test details
+
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><mark type="bullet_intro">Specifications</b></td>
+<td><ul>
+<li>Device.Graphics.AdapterRender.MinimumDirectXLevel</li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><mark type="bullet_intro">Platforms</b></td>
+<td><ul>
+<li><tla rid="win_threshold_desktop"></tla> x86</li>
+<li><tla rid="win_threshold_desktop"></tla> x64</li>
+<li><tla rid="win_threshold_server"></tla> x64</li>
+<li><tla rid="win_threshold_desktop"></tla> ARM64</li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><mark type="bullet_intro">Supported Releases</b></td>
+<td><ul>
+<li><tla rid="win_10"></tla></li>
+<li><tla rid="win_10_th2"></tla></li>
+<li><tla rid="win_10_rs1"></tla></li>
+<li>Windows 10, version 1703</li>
+<li>Windows 10, version 1709</li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><mark type="bullet_intro">Expected run time (in minutes)</b></td>
+<td>45</td>
+</tr>
+<tr class="odd">
+<td><mark type="bullet_intro">Category</b></td>
+<td>Compatibility</td>
+</tr>
+<tr class="even">
+<td><mark type="bullet_intro">Timeout (in minutes)</b></td>
+<td>45</td>
+</tr>
+<tr class="odd">
+<td><mark type="bullet_intro">Requires reboot</b></td>
+<td>false</td>
+</tr>
+<tr class="even">
+<td><mark type="bullet_intro">Requires special configuration</b></td>
+<td>false</td>
+</tr>
+<tr class="odd">
+<td><mark type="bullet_intro">Type</b></td>
+<td>automatic</td>
+</tr>
+</tbody>
+</table>
+
+## Additional documentation
+
+Tests in this feature area might have additional documentation, including prerequisites, setup, and troubleshooting information, that can be found in the following topic(s):
+
+-   <xref rid="p_hlk_test.device_graphics_additional_documentation">Device.Graphics additional documentation</b>
+
+## Running the test
+
+Before you run the test, complete the test setup as described in the test requirements: <xref rid="p_hlk_test.graphic_adapter_or_chipset_testing_prerequisites">Graphic Adapter or Chipset Testing Prerequisites</b>.
+
+## Troubleshooting
+
+For generic troubleshooting of HLK test failures, see <xref rid="p_hlk.troubleshooting_windows_hlk_test_failures">Troubleshooting Windows HLK Test Failures</b>.
+
+For troubleshooting information, see <xref rid="p_hlk_test.troubleshooting_devicegraphics_testing">Troubleshooting Device.Graphics Testing</b>.
+
+## More information
+
+## Command syntax
+
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Command option</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><p><strong>Stretchrect.exe -M:1 -dx9 -whql -logclean</strong></p></td>
+<td><p>Runs the Stretch Rect test job.</p></td>
+</tr>
+<tr class="even">
+<td><p><strong>stretchrect.exe -M:1 -whql -logclean</strong></p></td>
+<td><p>Runs the Stretch Rect (WoW64) test job.</p></td>
+</tr>
+</tbody>
+</table>
+
+>[!NOTE]
+For command-line help for this test binary, type **/?**.
+
+
+## File List
+
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>File</th>
+<th>Location</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><p>Configdisplay.exe</p></td>
+<td><p><placeholder>&lt;[testbinroot]&gt;</placeholder>\nttest\windowstest\tools\</p></td>
+</tr>
+<tr class="even">
+<td><p>D3d10ref.dll</p></td>
+<td><p><placeholder>&lt;[testbinroot]&gt;</placeholder>\nttest\graphics\d3d\support\</p></td>
+</tr>
+<tr class="odd">
+<td><p>D3d11ref.dll</p></td>
+<td><p><placeholder>&lt;[testbinroot]&gt;</placeholder>\nttest\windowstest\graphics\d3d\support\</p></td>
+</tr>
+<tr class="even">
+<td><p>D3dcompiler_test.dll</p></td>
+<td><p><placeholder>&lt;[testbinroot]&gt;</placeholder>\nttest\windowstest\graphics\d3d\support\</p></td>
+</tr>
+<tr class="odd">
+<td><p>D3dref9.dll</p></td>
+<td><p><placeholder>&lt;[testbinroot]&gt;</placeholder>\nttest\windowstest\graphics\d3d\support</p></td>
+</tr>
+<tr class="even">
+<td><p>D3dx10_test.dll</p></td>
+<td><p><placeholder>&lt;[testbinroot]&gt;</placeholder>\nttest\windowstest\graphics\d3d\support\</p></td>
+</tr>
+<tr class="odd">
+<td><p>D3dx11_test.dll</p></td>
+<td><p><placeholder>&lt;[testbinroot]&gt;</placeholder>\nttest\windowstest\graphics\d3d\support\</p></td>
+</tr>
+<tr class="even">
+<td><p>Fpstate.dll</p></td>
+<td><p><placeholder>&lt;[testbinroot]&gt;</placeholder>\nttest\windowstest\graphics\d3d\utility\</p></td>
+</tr>
+<tr class="odd">
+<td><p>Modechange.exe</p></td>
+<td><p><placeholder>&lt;[testbinroot]&gt;</placeholder>\nttest\windowstest\graphics\d3d\utility\</p></td>
+</tr>
+<tr class="even">
+<td><p>Stretchrect.exe</p></td>
+<td><p><placeholder>&lt;[testbinroot]&gt;</placeholder>\nttest\</p></td>
+</tr>
+<tr class="odd">
+<td><p>TDRWatch.exe</p></td>
+<td><p><placeholder>&lt;[testbinroot]&gt;</placeholder>\nttest\windowstest\graphics\</p></td>
+</tr>
+<tr class="even">
+<td><p>Vbswap.x</p></td>
+<td><p><placeholder>&lt;[testbinroot]&gt;</placeholder>\nttest\windowstest\graphics\d3d\conf\</p></td>
+</tr>
+<tr class="odd">
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+
+## Parameters
+
+| Parameter name                                         | Parameter description                                 |
+|--------------------------------------------------------|-------------------------------------------------------|
+| <mark type="bullet_intro">MONITOR</b>                  | Index of display output to target with test           |
+| <mark type="bullet_intro">MODIFIEDCMDLINE</b>          | Additional command line arguments for test executable |
+| <mark type="bullet_intro">LLU\_NetAccessOnly</b>       | LLU Name of net user                                  |
+| <mark type="bullet_intro">ConfigDisplayCommandLine</b> | Custom Command Line for ConfigDisplay. Default: logo  |
+| <mark type="bullet_intro">TDRArgs</b>                  | /get or /set                                          |
+
+
+
+
+
