@@ -33,7 +33,7 @@ Microsoft Windows Hello, part of Windows 10, gives users a personal, secured ex
 </thead>
 <tbody>
 <tr class="even">
-<td><p>[Windows Hello and the Companion Device Frawework](windows-hello-companion-device-framework.md)</p></td>
+<td><p>[Windows Hello and the Companion Device Framework](windows-hello-companion-device-framework.md)</p></td>
 <td><p>Windows Hello works with the [Companion Device Framework](https://msdn.microsoft.com/en-us/windows/uwp/security/companion-device-unlock) to enhance the user authentication experience. Using the Windows Hello companion device framework, a companion device can provide a rich experience for Windows Hello even when biometrics are not available (e.g., if the Windows 10 desktop lacks a camera for face authentication or fingerprint reader device, for example).</p></td>
 </tr>
 <tr class="odd">
