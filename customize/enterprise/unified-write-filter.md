@@ -193,11 +193,11 @@ You must use an administrator account to add or remove file or folder exclusions
 > [!Important]  
 > You cannot add exclusions for the following items:
 > 
-> -   \\Windows\\System32\\DEFAULT
-> -   \\Windows\\System32\\SAM
-> -   \\Windows\\System32\\SECURITY
-> -   \\Windows\\System32\\SOFTWARE
-> -   \\Windows\\System32\\SYSTEM
+> -   \\Windows\\System32\\config\\DEFAULT
+> -   \\Windows\\System32\\config\\SAM
+> -   \\Windows\\System32\\config\\SECURITY
+> -   \\Windows\\System32\\config\\SOFTWARE
+> -   \\Windows\\System32\\config\\SYSTEM
 > -   \\Users\\*&lt;User Name&gt;*\\NTUSER.DAT
 > 
 > You also cannot add exclusions for the following items:
