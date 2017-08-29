@@ -24,7 +24,7 @@ For more information about Windows 10S, see [Windows 10S manufacturing overview]
 
 ## Unified Extensible Firmware Interface (UEFI) requirements
 
-UEFI is a replacement for the older BIOS firmware interface and the Extensible Firmware Interface (EFI) 1.10 specifications. When the devices starts, the firmware interface controls the booting process of the PC, and then passes control to Windows or another operating system. UEFI enables security features such as Secure Boot and factory encrypted drives that help prevent untrusted code from running before the operating system is loaded. To learn more aobut the OEM requirements for UEFI, see [UEFI firmware requirements](OEM-UEFI.md)
+UEFI is a replacement for the older BIOS firmware interface. When the devices starts, the firmware interface controls the booting process of the PC, and then passes control to Windows or another operating system. UEFI enables security features such as Secure Boot and factory encrypted drives that help prevent untrusted code from running before the operating system is loaded. To learn more aobut the OEM requirements for UEFI, see [UEFI firmware requirements](OEM-UEFI.md)
 
 To learn more about what you need to do in order to support UEFI drivers, see [UEFI in Windows](https://docs.microsoft.com/en-us/windows-hardware/drivers/bringup/uefi-in-windows).
 
