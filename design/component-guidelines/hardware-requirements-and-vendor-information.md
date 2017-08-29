@@ -17,14 +17,14 @@ ms.technology: windows-oem
 
 This topic provides a list of the test equipment that is required for the pen-related tests in the Windows Hardware Lab Kit (HLK), and information about the vendors who stock the listed equipment.
 
-Here's a list of all the required test equipment for completing the [Active Pen Tests](active-pen-tests.md) in the HLK. The images, instructions and examples in Active Pen Tests are based on the TRIEX tools, but you should be able to run all the tests successfully, on both TRIEX and ITRI tools and hardware.
+Here's a list of all the required test equipment for completing the [Active Pen Tests](active-pen-tests.md) in the HLK. The images, instructions and examples in Active Pen Tests are based on the original TRIEX tools, but you should be able to run all the tests successfully on TRIEX, Tactile Automation, and ITRI tools and hardware.
 
 ## Precision Touch Test Tool (PT3)
 
 
 You can use either one of these tools for precision touch testing.
 
--   TRIEX Precision Touch Test Tool (PT3)
+-   TRIEX/Tactile Precision Touch Test Tool (PT3)
 -   ITRI Precision Touch Test Tool (PT3)
 
 ## Rotation and Acoustic (RA) Tool
@@ -32,13 +32,13 @@ You can use either one of these tools for precision touch testing.
 
 You can use either one of these tools for RA testing.
 
--   TRIEX RA Tool
+-   TRIEX/Tactile RA Tool
 -   ITRI RA Tool
 
 ## Pen / Stylus Holders and Accessories
 
 
-**TRIEX**
+**Tactile**
 
 | Part number | Part description                                           | Quantity required |
 |-------------|------------------------------------------------------------|-------------------|
@@ -77,14 +77,14 @@ In addition to the Pen Holder parts from TRIEX and ITRI, the following accessori
     
     Anything that can measure in millimeters will meet requirements
 
-## <a href="" id="hw-vendor-contacts"></a>Contacts for TRIEX and ITRI
+## <a href="" id="hw-vendor-contacts"></a>Contacts for Tactile and ITRI
 
 
--   Triex Technologies, Inc.
+-   Tactile Automation, Inc.
     <p>
-    Tim Wright
-    <br/>+1 (206) 940-0943
-    <br/>timw@triextech.com
+    Emery Parks
+    <br/>+1 (425) 3108380
+    <br/>emeryp@tactileautomation.com
     </p>
 -   Industrial Technology Research Institute
     <p>
