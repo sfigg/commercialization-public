@@ -74,162 +74,39 @@ The one-, two-, or three-character codes used to signify the data connection typ
 
 3.  To change the default one-, two-, or three-character codes used to signify the data connection type in the status bar, modify the `Value` that corresponds to the setting you want to change.
 
-    **Note**  
-    All the `Value` attributes are the current default values for each data connection type. You can change these to something else. Maximum character length is 3 characters.
-
-     
+    > [!NOTE]
+    > All the `Value` attributes are the current default values for each data connection type. You can change these to something else. Maximum character length is 3 characters.
 
     The following table shows the settings you can modify and their default values.
 
-    <table>
-    <colgroup>
-    <col width="33%" />
-    <col width="33%" />
-    <col width="33%" />
-    </colgroup>
-    <thead>
-    <tr class="header">
-    <th>Setting Name</th>
-    <th>Default Value</th>
-    <th>Description</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td><p>1XRTTDEFAULT</p></td>
-    <td><p>1X</p></td>
-    <td><p>1XRTT connection</p></td>
-    </tr>
-    <tr class="even">
-    <td><p>1XRTT</p></td>
-    <td><p>1X</p></td>
-    <td><p>1XRTT</p></td>
-    </tr>
-    <tr class="odd">
-    <td><p>EVDODEFAULT</p></td>
-    <td><p>DO</p></td>
-    <td><p>EVDO connection</p></td>
-    </tr>
-    <tr class="even">
-    <td><p>EVDOREV0</p></td>
-    <td><p>DO</p></td>
-    <td><p>EVDO rev. 0</p></td>
-    </tr>
-    <tr class="odd">
-    <td><p>EVDOREVA</p></td>
-    <td><p>DO</p></td>
-    <td><p>EVDO rev. A</p></td>
-    </tr>
-    <tr class="even">
-    <td><p>EVDOREVB</p></td>
-    <td><p>DO</p></td>
-    <td><p>EVDO rev. B</p></td>
-    </tr>
-    <tr class="odd">
-    <td><p>GSMDEFAULT</p></td>
-    <td><p>G</p></td>
-    <td><p>GSM connection</p></td>
-    </tr>
-    <tr class="even">
-    <td><p>GSMGSM</p></td>
-    <td><p></p></td>
-    <td><p>No GSM connection</p></td>
-    </tr>
-    <tr class="odd">
-    <td><p>GSMGPRS</p></td>
-    <td><p>G</p></td>
-    <td><p>GSM General Packet Radio Service</p></td>
-    </tr>
-    <tr class="even">
-    <td><p>GSMEDGE</p></td>
-    <td><p>E</p></td>
-    <td><p>GSM Enhanced Data rates for Global Evolution</p></td>
-    </tr>
-    <tr class="odd">
-    <td><p>UMTSDEFAULT</p></td>
-    <td><p>3G</p></td>
-    <td><p>UMTS connection</p></td>
-    </tr>
-    <tr class="even">
-    <td><p>UMTSUMTS</p></td>
-    <td><p>3G</p></td>
-    <td><p>UMTS</p></td>
-    </tr>
-    <tr class="odd">
-    <td><p>UMTSHSDPA</p></td>
-    <td><p>H</p></td>
-    <td><p>High Speed Downlink Packet Access</p></td>
-    </tr>
-    <tr class="even">
-    <td><p>UMTSHSUPA</p></td>
-    <td><p>H</p></td>
-    <td><p>High Speed Uplink Packet Access</p></td>
-    </tr>
-    <tr class="odd">
-    <td><p>UMTSHSPAPLUS</p></td>
-    <td><p>H+</p></td>
-    <td><p>High Speed Packet Access “Plus”</p></td>
-    </tr>
-    <tr class="even">
-    <td><p>UMTSDCHSPAPLUS</p></td>
-    <td><p>H+</p></td>
-    <td><p>Dual-carrier HSPA+</p></td>
-    </tr>
-    <tr class="odd">
-    <td><p>UMTSHSPAPLUS64QAM</p></td>
-    <td><p>By default, the value inherited from UMTSDCHSPAPLUS.</p>
-    <p>To set a value different from the value for UMTSDCHSPAPLUS, you must set the value explicitly.</p></td>
-    <td><p>UMTS HSPA+ 64QAM (high order modulation)</p></td>
-    </tr>
-    <tr class="even">
-    <td><p>LTEDEFAULT</p></td>
-    <td><p>LTE</p></td>
-    <td><p>LTE connection</p></td>
-    </tr>
-    <tr class="odd">
-    <td><p>LTEFDD</p></td>
-    <td><p>LTE</p></td>
-    <td><p>LTE Frequency Division Duplexing</p></td>
-    </tr>
-    <tr class="even">
-    <td><p>LTETDD</p></td>
-    <td><p>LTE</p></td>
-    <td><p>LTE Time Division Duplexing</p></td>
-    </tr>
-    <tr class="odd">
-    <td><p>TDSCDMADEFAULT</p></td>
-    <td><p>T</p></td>
-    <td><p>TD-SCDMA connection</p></td>
-    </tr>
-    <tr class="even">
-    <td><p>TDSCDMAUMTS</p></td>
-    <td><p>T</p></td>
-    <td><p>TD-SCDMA</p></td>
-    </tr>
-    <tr class="odd">
-    <td><p>TDSCDMAHSDPA</p></td>
-    <td><p>H</p></td>
-    <td><p>TD-SCDMA High Speed Downlink Packet Access</p></td>
-    </tr>
-    <tr class="even">
-    <td><p>TDSCDMAHSUPA</p></td>
-    <td><p>H</p></td>
-    <td><p>TD-SCDMA High Speed Uplink Packet Access</p></td>
-    </tr>
-    <tr class="odd">
-    <td><p>TDSCDMAHSPAPLUS</p></td>
-    <td><p>H+</p></td>
-    <td><p>TD-SCDMA High Speed Packet Access “Plus”</p></td>
-    </tr>
-    <tr class="even">
-    <td><p>TDSCDMADCHSPAPLUS</p></td>
-    <td><p>H+</p></td>
-    <td><p>TD-SCDMA Dual-carrier HSPA+</p></td>
-    </tr>
-    </tbody>
-    </table>
-
-     
+    | Setting Name      | Default Value | Description                                  |
+    |:------------------|:--------------|:---------------------------------------------|
+    | 1XRTTDEFAULT      | 1X            | 1XRTT connection                             |
+    | 1XRTT             | 1X            | 1XRTT                                        |
+    | EVDODEFAULT       | DO            | EVDO connection                              |
+    | EVDOREV0          | DO            | EVDO rev. 0                                  |
+    | EVDOREVA          | DO            | EVDO rev. A                                  |
+    | EVDOREVB          | DO            | EVDO rev. B                                  |
+    | GSMDEFAULT        | G             | GSM connection                               |
+    | GSMGSM            |               | No GSM connection                            |
+    | GSMGPRS           | G             | GSM General Packet Radio Service             |
+    | GSMEDGE           | E             | GSM Enhanced Data rates for Global Evolution |
+    | UMTSDEFAULT       | 3G            | UMTS connection                              |
+    | UMTSUMTS          | 3G            | UMTS                                         |
+    | UMTSHSDPA         | H             | High Speed Downlink Packet Access            |
+    | UMTSHSUPA         | H             | High Speed Uplink Packet Access              |
+    | UMTSHSPAPLUS      | H+            | High Speed Packet Access “Plus”              |
+    | UMTSDCHSPAPLUS    | H+            | Dual-carrier HSPA+                           |
+    | UMTSHSPAPLUS64QAM | By default, the value inherited from UMTSDCHSPAPLUS. <br/><br/> To set a value different from the value for UMTSDCHSPAPLUS, you must set the value explicitly. | UMTS HSPA+ 64QAM (high order modulation) |
+    | LTEDEFAULT        | LTE           | LTE connection                               |
+    | LTEFDD            | LTE           | LTE Frequency Division Duplexing             |
+    | LTETDD            | LTE           | LTE Time Division Duplexing                  |
+    | TDSCDMADEFAULT    | T             | TD-SCDMA connection                          |
+    | TDSCDMAUMTS       | T             | TD-SCDMA                                     |
+    | TDSCDMAHSDPA      | H             | TD-SCDMA High Speed Downlink Packet Access   |
+    | TDSCDMAHSUPA      | H             | TD-SCDMA High Speed Uplink Packet Access     |
+    | TDSCDMAHSPAPLUS   | H+            | TD-SCDMA High Speed Packet Access “Plus”     |
+    | TDSCDMADCHSPAPLUS | H+            | TD-SCDMA Dual-carrier HSPA+                  |
 
 <a href="" id="testing-"></a>**Testing:**  
 1.  Flash an image containing this customization to a phone that has a UICC.
@@ -237,13 +114,3 @@ The one-, two-, or three-character codes used to signify the data connection typ
 2.  Verify that the one-, two-, or three-character code(s) you used for the cellular data connection type is displayed in the status bar at the top of the screen.
 
     You may have to tap the clock to make the status bar appear if it is hidden.
-
- 
-
- 
-
-
-
-
-
-

@@ -93,64 +93,64 @@ You can also configure the Unattend settings in the [Microsoft-Windows-Embedded-
 The following table shows Unbranded Boot settings and their values.
 
 <table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
+<thead valign="bottom">
 <tr class="header">
 <th>Setting</th>
 <th>Description</th>
 </tr>
 </thead>
-<tbody>
+<tbody valign="top">
 <tr class="odd">
 <td>DisableBootMenu</td>
-<td><p>Contains an integer that disables the F8 and F10 keys during startup to prevent access to the Advanced startup options menu.</p>
+<td>Contains an integer that disables the F8 and F10 keys during startup to prevent access to the Advanced startup options menu.
 <p>Set to 1 to disable the menu; otherwise; set to 0 (zero). The default value is 0.</p></td>
 </tr>
 <tr class="even">
 <td>DisplayDisabled</td>
-<td><p>Contains an integer that configures the device to display a blank screen when Industry 8.1 encounters an error that it cannot recover from.</p>
+<td>Contains an integer that configures the device to display a blank screen when Industry 8.1 encounters an error that it cannot recover from.
 <p>Set to 1 to display a blank screen on error; otherwise; set to 0 (zero). The default value is 0.</p></td>
 </tr>
 <tr class="odd">
 <td>HideAllBootUI</td>
-<td><p>Contains an integer that suppresses all Windows UI elements (logo, status indicator, and status message) during startup.</p>
+<td>Contains an integer that suppresses all Windows UI elements (logo, status indicator, and status message) during startup.
 <p>Set to 1 to suppress all Windows UI elements during startup; otherwise; set to 0 (zero). The default value is 0.</p></td>
 </tr>
 <tr class="even">
 <td>HideBootLogo</td>
-<td><p>Contains an integer that suppresses the default Windows logo that displays during the OS loading phase.</p>
+<td>Contains an integer that suppresses the default Windows logo that displays during the OS loading phase.
 <p>Set to 1 to suppress the default Windows logo; otherwise; set to 0 (zero). The default value is 0.</p></td>
 </tr>
 <tr class="odd">
 <td>HideBootStatusIndicator</td>
-<td><p>Contains an integer that suppresses the status indicator that displays during the OS loading phase.</p>
+<td>Contains an integer that suppresses the status indicator that displays during the OS loading phase.
 <p>Set to 1 to suppress the status indicator; otherwise; set to 0 (zero). The default value is 0.</p></td>
 </tr>
 <tr class="even">
 <td>HideBootStatusMessage</td>
-<td><p>Contains an integer that suppresses the startup status text that displays during the OS loading phase.</p>
+<td>Contains an integer that suppresses the startup status text that displays during the OS loading phase.
 <p>Set to 1 to suppress the startup status text; otherwise; set to 0 (zero). The default value is 0.</p></td>
 </tr>
 <tr class="odd">
 <td>CrashDumpEnabled</td>
-<td><p>Contains an integer that specifies the type of information to capture in a dump (.dmp) file that is generated when the system stops unexpectedly.</p>
+<td>Contains an integer that specifies the type of information to capture in a dump (.dmp) file that is generated when the system stops unexpectedly. The integers and the types of capture information are explained in the next section.
 <p>The .dmp file is typically saved in %SystemRoot% as Memory.dmp.</p>
-<p>The following table shows the possible values.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+#### Crash dump information types
+
+The following table shows the integers that can be specified in the **CrashDumpEnabled** setting to specify certain types of information to capture in the crash dump.
+
 <table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
+<thead valign="bottom">
 <tr class="header">
 <th>Value</th>
 <th>Description</th>
 </tr>
 </thead>
-<tbody>
+<tbody valign="top">
 <tr class="odd">
 <td>1</td>
 <td>Records all the contents of system memory. This dump file may contain data from processes that were running when the information was collected.</td>
@@ -161,7 +161,7 @@ The following table shows Unbranded Boot settings and their values.
 </tr>
 <tr class="odd">
 <td>3</td>
-<td><p>Records the smallest amount of useful information that may help identify why the device stopped unexpectedly. This type of dump file includes the following information:</p>
+<td>Records the smallest amount of useful information that may help identify why the device stopped unexpectedly. This type of dump file includes the following information:
 <ul>
 <li>A list of loaded drivers.</li>
 <li>The processor context (PRCB) for the processor that stopped.</li>
@@ -185,12 +185,6 @@ The following table shows Unbranded Boot settings and their values.
 </tr>
 </tbody>
 </table>
-<p> </p></td>
-</tr>
-</tbody>
-</table>
-
- 
 
 ## <a href="" id="custom-boot"></a>Customize the boot screen using Windows ICD and Deployment Image Servicing and Management (DISM)
 
@@ -248,14 +242,3 @@ The only supported way to replace the startup logo with a custom logo is to modi
 
 
 [Custom Logon](custom-logon.md)
-
- 
-
- 
-
-
-
-
-
-
-

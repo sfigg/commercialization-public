@@ -94,7 +94,8 @@ Obtaining the biometric signature is not certification that the driver will work
 
 ### Step Eight: Update an existing driver
 If an update to a previously signed driver needs to be made, follow the instructions under step 3 for filling in the bugId and updateExistingSubmission fields in the driver configuration xml for the updated driver.
-If an update is being made to a grandfathered driver, the same steps should be used. The bugId field should be set to the submission ID of the grandfathered driver and the updateExistingSubmission field should be set to true.
+If an update is being made to a grandfathered driver, the same steps should be used. The bugId field should be set to the submission ID of the grandfathered driver and the updateExistingSubmission field should be set to true. 
+The driver configuration xml should be included in the driver package that is submitted.
 
 ## Related topics
 

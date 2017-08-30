@@ -30,10 +30,8 @@ To reset the audio volume limit and show the volume level warning every time the
     Value:  000117D8
     ```
 
-    **Note**  
-    Set **Value** to a hexadecimal value that corresponds to 19 hours and 54 minutes or less. In the above example, the value 0x00117D8 corresponds to 71640 seconds or 19 hours and 54 minutes.
-
-     
+    > [!NOTE]
+    > Set **Value** to a hexadecimal value that corresponds to 19 hours and 54 minutes or less. In the above example, the value 0x00117D8 corresponds to 71640 seconds or 19 hours and 54 minutes.
 
     For more information about MCSF, see [Managed Centralized Settings Framework (MCSF)](managed-centralized-settings-framework-mcsf.md). The following code example shows an MCSF policy setting for the **VolumeThresholdPlayTimeLimit** registry value.
 
@@ -119,13 +117,3 @@ To reset the audio volume limit and show the volume level warning every time the
     Continue to listen to music for 20 or more hours.
 
 4.  If you set **VolumeThresholdPlayTimeLimit** to a hexadecimal value that corresponds to 19 hours and 54 minutes (or less), verify that the volume level is reset and the volume warning is shown before you reach 20 cumulative hours of playing music with the volume set above the **VolumeLimit**.
-
- 
-
- 
-
-
-
-
-
-

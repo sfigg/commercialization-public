@@ -16,7 +16,7 @@ ms.technology: windows-oem
 
 Deployment Image Servicing and Management (DISM.exe) is a command-line tool that can be used to service and prepare Windows images, including those used for [Windows PE](winpe-intro.md), [Windows Recovery Environment (Windows RE)](windows-recovery-environment--windows-re--technical-reference.md) and [Windows Setup](windows-setup-technical-reference.md). DISM can be used to service a Windows image (.wim) or a virtual hard disk (.vhd or .vhdx).
 
-DISM is available through the command line or from Windows PowerShell. To learn more about using DISM with PowerShell, see [Deployment Imaging Servicing Management (DISM) Cmdlets in Windows PowerShell](http://go.microsoft.com/fwlink/?LinkId=393917).
+DISM is available through the command line or from Windows PowerShell. To learn more about using DISM with PowerShell, see [Deployment Imaging Servicing Management (DISM) Cmdlets in Windows PowerShell](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/use-dism-in-windows-powershell-s14).
 
 ## <span id="BKMK_reqs"></span><span id="bkmk_reqs"></span><span id="BKMK_REQS"></span>Image Requirements
 

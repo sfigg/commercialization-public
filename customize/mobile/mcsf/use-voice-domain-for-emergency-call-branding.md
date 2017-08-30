@@ -46,31 +46,10 @@ To meet mobile operator requirements, OEMs can enable the voice domain to decide
 
 3.  Set the `UseVoiceDomainForEmergencyCallBranding` setting to one of the following values:
 
-    <table>
-    <colgroup>
-    <col width="50%" />
-    <col width="50%" />
-    </colgroup>
-    <thead>
-    <tr class="header">
-    <th>Value</th>
-    <th>Description</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td><p>0 or 'False'</p></td>
-    <td><p>The OS inspects the registration state to decide the emergency call branding.</p>
-    <p>This is the default OS behavior.</p></td>
-    </tr>
-    <tr class="even">
-    <td><p>1 or 'True'</p></td>
-    <td><p>The voice domain decides the emergency call branding.</p></td>
-    </tr>
-    </tbody>
-    </table>
-
-     
+    | Value        | Description                                                                                                    |
+    |:-------------|:---------------------------------------------------------------------------------------------------------------|
+    | 0 or 'False' | The OS inspects the registration state to decide the emergency call branding. This is the default OS behavior. |
+    | 1 or 'True'  | The voice domain decides the emergency call branding.                                                          |
 
     If `UseVoiceDomainForEmergencyCallBranding` is set to 1, the phone will not display **Emergency calls only** in the following cases. Instead, it will display **No service**.
 
@@ -86,13 +65,3 @@ To meet mobile operator requirements, OEMs can enable the voice domain to decide
 
 <a href="" id="testing-steps-"></a>**Testing steps:**  
 Work with your mobile operator partner to test this customization on their network.
-
- 
-
- 
-
-
-
-
-
-
