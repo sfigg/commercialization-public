@@ -1,3 +1,3 @@
 # System.Server
-### [System.Server tests](testref/system_server_tests.md)
-### [System.Server additional documentation](testref/system_server_additional_documentation.md)
+### [System.Server tests](system_server_tests.md)
+### [System.Server additional documentation](system_server_additional_documentation.md)

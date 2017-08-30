@@ -1,2 +1,2 @@
 # System.Fundamentals.Security
-### [System.Fundamentals.Security tests](testref/system_fundamentals_security_tests.md)
+### [System.Fundamentals.Security tests](system_fundamentals_security_tests.md)

@@ -1,2 +1,2 @@
 # Device.TrustedPlatformModule
-### [Device.TrustedPlatformModule tests](testref/device_trustedplatformmodule_tests.md)
+### [Device.TrustedPlatformModule tests](device_trustedplatformmodule_tests.md)

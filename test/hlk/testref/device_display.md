@@ -1,2 +1,2 @@
 # Device.Display
-### [Device.Display tests](testref/device_display_tests.md)
+### [Device.Display tests](device_display_tests.md)

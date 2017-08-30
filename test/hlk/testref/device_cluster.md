@@ -1,2 +1,2 @@
 # Device.Cluster
-### [Device.Cluster tests](testref/device_cluster_tests.md)
+### [Device.Cluster tests](device_cluster_tests.md)
