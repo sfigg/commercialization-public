@@ -110,7 +110,7 @@ Catalog files have several advantages over Windows image files:
     _What's going on_: This message usually shows up the first time you open a .wim file. 
 
     
--   **Access denied** 
+-   **"Access denied"** 
 
     _Fix:_ Copy the .wim file to a simple writable file location, like C:\Images, then try again.
     
