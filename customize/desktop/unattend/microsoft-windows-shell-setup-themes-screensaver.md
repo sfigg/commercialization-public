@@ -17,14 +17,11 @@ ms.technology: windows-oem
 # ScreenSaver
 
 
-In Windows 10 version 1709, ScreenSaver functionality in Themes is removed. ScreenSaver is deprecated in Group Policy, Control Panel, and SysPrep. Lockscreen features and policies are preferred over using ScreenSaver. 
+> [!Note]
+> In Windows 10 version 1709, ScreenSaver functionality in Themes is removed. ScreenSaver is deprecated in Group Policy, Control Panel, and SysPrep. Lockscreen features and policies are preferred over using ScreenSaver. We recommend using automatic power plans to dim the screen. This can help reduce system power consumption. 
 
 `ScreenSaver` specifies the path to a Windows screen saver file in a theme.
 
-**Note**  
-We do not recommend setting this value. Instead, we recommend using automatic power plans to dim the screen. This can help reduce system power consumption. 
-
- 
 
 ## Values
 
