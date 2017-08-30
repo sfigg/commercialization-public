@@ -1,18 +1,21 @@
----
-title: HLK Test Reference
-Description: HLK Test Reference
-ms.assetid: b55db790-bf5d-41c5-9afc-4f1e0d350d5e
-author: sapaetsc-msft
-ms.author: sapaetsc
-ms.date: 08/28/17
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
----
-
-# HLK Test Reference
-
-<auto_keylinks omit_link_descriptions="1"></auto_keylinks>
-
-
-
+# Hardware Lab Kit Test Reference
+### [Device.Audio](testref/device-audio.md)
+### [Device.BusController](testref/device-buscontroller.md)
+### [Device.Cluster](testref/device-cluster.md)
+### [Device.Connectivity](testref/device-connectivity.md)
+### [Device.DevFund](testref/device-devfund.md)
+### [Device.Display](testref/device-display.md)
+### [Device.Graphics](testref/device-graphics.md)
+### [Device.Imaging](testref/device-imaging.md)
+### [Device.Input](testref/device-input.md)
+### [Device.Network](testref/device-network.md)
+### [Device.Portable](testref/device-portable.md)
+### [Device.Storage](testref/device-storage.md)
+### [Device.Streaming](testref/device-streaming.md)
+### [Device.TrustedPlatformModule](testref/device-trustedplatformmodule.md)
+### [Filter.Driver](testref/filter-driver.md)
+### [System.Client](testref/system-client.md)
+### [System.Fundamentals](testref/system-fundamentals.md)
+### [System.Fundamentals.Security](testref/system-fundamentals-security.md)
+### [System.Fundamentals.SystemUSB](testref/system-fundamentals-systemusb.md)
+### [System.Server](testref/system-server.md)
