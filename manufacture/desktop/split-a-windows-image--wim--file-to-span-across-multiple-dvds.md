@@ -28,7 +28,7 @@ Note, before you can apply the image, you must first put all of the split files 
 By default, this option creates new split .wim files with a .swm extension. The first file name is based on the specified file name, and each of the following files receives a number after it. For example, when you split "Install.wim", the default filenames are "Install.swm", "Install2.swm", "Install3.swm", and so on.
 
 **Important**  
--   Windows Setup doesn't support installing from a split .swm file for Windows 10.
+-   Windows Setup doesn't support installing from a split .swm file for Windows 10 and Windows Server 2016.
 -   You cannot modify a split .swm file.
 
  

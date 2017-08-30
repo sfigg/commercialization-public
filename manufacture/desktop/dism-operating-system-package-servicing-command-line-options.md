@@ -126,7 +126,7 @@ Use the /PreventPending option to skip the installation of the package if the pa
 
 **Notes**  
 -   If /PackagePath points to a folder that contains a .cab or .msu files at its root, any subfolders will also be recursively checked for .cab and .msu files.
--   /Add-Package doesn't check for a package's dependencies. If you're adding a package with dependencies, make sure that all dependencies are installed when you add the package.
+-   /Add-Package doesn't run a full check for a package's applicability and dependencies. If you're adding a package with dependencies, make sure that all dependencies are installed when you add the package.
 
 Syntax:
 
