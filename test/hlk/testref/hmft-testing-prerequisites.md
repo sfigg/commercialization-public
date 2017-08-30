@@ -20,7 +20,8 @@ This section describes the tasks that you must complete before you test a Hardwa
 
 An HMFT-compliant device is a video card or chipset that supports hardware-based encoding or decoding of digital content.
 
-**Note**  
+>[!NOTE]
+>  
 If the video card is a not a stand-alone product (for example, a video chipset on a system board), these tests run as part of system certification.
 
  
@@ -32,8 +33,9 @@ The following hardware is required for testing an HMFT-compliant device:
 
 -   A test computer.
 
-    **Note**  
-    The test computer must meet the [Windows HLK Prerequisites](p_sxs_hlk.windows_hlk_prerequisites). It also must have at least 75 GB free on the drive used as the HLK working directory.
+    >[!NOTE]
+>  
+    The test computer must meet the [Windows HLK Prerequisites](..\getstarted\windows-hlk-prerequisites.md). It also must have at least 75 GB free on the drive used as the HLK working directory.
 
      
 
@@ -50,7 +52,8 @@ The following software is required for testing an HMFT-compliant device:
 
 -   Standard video files that are used during decoding or encoding tests.
 
-    **Note**  
+    >[!NOTE]
+>  
     During installation of the Windows HLK, standard video files are downloaded to Windows HLK Studio.
 
      
@@ -63,7 +66,8 @@ Before running the HMFT encoding and decoding tests, you must download the [Wind
 
 -   Copy the content locally on each client computer before running the tests. You must configure the ContentSource parameter to be the path to the content on the client computer. For example, if you use an external drive with letter d: and place the content in d:\\HMFTContent, the ContentSource parameter must be configured to d:\\HMFTContent. This will cause the test to use the local content and not copy each file for each test. This option requires at least 75 GB of free space on the client computers but will speed up the test run because the content will not have to be copied for each test.
 
-    **Note**  
+    >[!NOTE]
+>  
     The ContentSource parameter is passed to all client computers that the tests are scheduled against so ensure that content location is identical on all client computers.
 
      
@@ -77,7 +81,8 @@ To configure the test computer for testing a HMFT-compliant device:
 
 1.  Install the appropriate Windows operating system on the test computer, and then configure the computer for your test network (the network that contains Windows HLK Studio and Windows HLK Controller).
 
-    **Note**  
+    >[!NOTE]
+>  
     If you are testing on Windows Server 2008 R2, Windows Server 2012, or Windows Server 2012 R2, you must install the Desktop Experience package. From a command prompt, type:
 
     **Dism.exe /online /enable-feature /featurename:DesktopExperience /all**
@@ -102,7 +107,7 @@ Manual Windows HLK tests require user intervention. When running tests for a sub
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_hlk_test\p_hlk_test%5D:%20HMFT%20Testing%20Prerequisites%20%20RELEASE:%20%288/29/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default.aspx. "Send comments about this topic to Microsoft")
+
 
 
 

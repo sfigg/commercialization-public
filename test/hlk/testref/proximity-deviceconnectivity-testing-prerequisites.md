@@ -25,7 +25,7 @@ To run the proximity tests, you need the following hardware:
 
 -   One test device that includes the proximity feature (for example, a proximity-enabled mouse or keyboard).
 
--   One test computer that meets the [Windows HLK Prerequisites](p_sxs_hlk.windows_hlk_prerequisites) and has one near field proximity hardware device attached.
+-   One test computer that meets the [Windows HLK Prerequisites](..\getstarted\windows-hlk-prerequisites.md) and has one near field proximity hardware device attached.
 
 -   One proximity controller.
 
@@ -57,12 +57,14 @@ Make sure that the test computer is in the ready state before you begin your tes
 
 Some Windows HLK tests require user intervention. When you're running tests for a submission, it's a best practice to run the automated tests in a block separately from manual tests. This prevents a manual test from interrupting the completion of an automated test.
 
-**Important**  
+>[!IMPORTANT]
+>  
 You must open the desktop on the test computer before you run any proximity tests. To do this, choose the Desktop tile from the Start screen after the test computer starts.
 
  
 
-**Note**  
+>[!NOTE]
+>  
 If a device supports multiple connectivity methods, complete a separate submission for each connectivity method.
 
  
@@ -71,7 +73,7 @@ If a device supports multiple connectivity methods, complete a separate submissi
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_hlk_test\p_hlk_test%5D:%20Proximity%20Device.Connectivity%20Testing%20Prerequisites%20%20RELEASE:%20%288/29/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default.aspx. "Send comments about this topic to Microsoft")
+
 
 
 

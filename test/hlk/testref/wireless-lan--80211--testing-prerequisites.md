@@ -12,12 +12,14 @@ ms.assetid: e8a87fcd-b289-45b4-bdb8-1530ef8bf558
 
 This topic describes the process to test a Wireless LAN (WLAN) device to make sure that it functions correctly with Windows®. These procedures use the Microsoft Windows Driver Kit (WDK) and Windows Hardware Lab Kit (Windows HLK). To comply with the WLAN Windows Hardware Certification Program, you must run all of the tests that Windows HLK identifies as being required for the device. We also recommend that you work through the tests in order by the following levels: “Basic”, “Functional”, “Reliability”, and “Certification.”
 
-**Note**  
+>[!NOTE]
+>  
 For a driver to pass testing and obtain Windows Hardware Certification, you must use the latest version of the WDK to compile the driver.
 
  
 
-**Note**  
+>[!NOTE]
+>  
 WLAN Windows HLK tests that use software-based access points are exclusively supported by using specific Atheros WLAN NICs. Windows HLK customers who test WLAN drivers must use two Atheros WLAN adapters that are installed in the SoftAP Machine to complete their submissions. Only two devices have been specifically tested at the time of Windows 8.1 release: Dlink DWA-552 and Dlink DWA-556. Additional models might have worked in the past and might continue to work, but cannot be guaranteed. If you have questions about this, please contact us at wlanndt@microsoft.com.
 
  
@@ -61,7 +63,8 @@ A Windows HLK setup for WLAN device testing consists of the following nine compo
 
 -   An 802.11w-capable access point. This item is unchanged from previous WLAN Windows HLK releases and the previously used access point can be used.
 
-**Note**  
+>[!NOTE]
+>  
 Windows Vista and earlier versions of Windows are deprecated and are not supported for any role in the test configuration.
 
  
@@ -139,7 +142,8 @@ The following table summarizes the configurations:
 
 -   For debugging purposes from the AP Controller, we highly recommend that you enable web access from WAN on the **System** tab in the **Administration** section of **Advanced Settings** on both AP1 and AP2.
 
-    **Important**  
+    >[!IMPORTANT]
+>  
     When the tests run for the first time, the tests disable all LAN ports on both RT-N66U routers. This is expected. If you want to connect to the APs to verify settings during the testing, use the AP controller and connect over the WAN port by using the provisioned port. The tests enable the LAN ports of each AP as needed during testing. If you need to connect to a LAN port for testing, stop the tests from running and manually power off and on the AP. This action re-enables the LAN ports until the next test starts.
 
      
@@ -204,7 +208,7 @@ After you configure the test topology, prepare the test systems for WLAN device 
 
 2.  Based on the operating system for which you are testing the device, install operating system builds on the Windows HLK clients (three test computers namely DUT, SUT and SoftAP machine) as described in the previous section.
 
-3.  Install HLK controller and HLK studio machine on Windows Server 2008 R2 machine. For more information see [Step 2: Install Client on the test system(s)](p_sxs_hlk.step_2__install_client_on_the_test_system_s_).
+3.  Install HLK controller and HLK studio machine on Windows Server 2008 R2 machine. For more information see [Step 2: Install Client on the test system(s)](..\getstarted\step-2--install-client-on-the-test-system-s-.md).
 
 4.  Install HLK clients on three test computers namely DUT, SUT and SoftAP machine. For more information see the **Windows Hardware Certification Step-by-Step Guide**. Note that when the DUT is a Windows RT machine, the AP machines must be running a 32bit operating system. When the DUT is a Windows RT machine, the HLK client should be installed from (\\\\&lt;HCKcontroller&gt;\\HCKInstall\\WoAClient\\setup.exe), where &lt;*HCKcontroller*&gt; is the name of the Windows HLK Controller.
 
@@ -243,7 +247,8 @@ The following procedure demonstrates how to run the WLAN device tests:
 
 5.  In the list, locate the WLAN driver under test and check the box next to it.
 
-    **Note**  
+    >[!NOTE]
+>  
     There might be more than one WLAN driver listed. Make sure you check the one that is on the DUT. The machine name is listed in the right column.
 
      
@@ -351,7 +356,8 @@ The most reliable way to install firmware on an RT-N66U device is by using the F
 
 12. After the upgrade is successful, you can remove the static IP address from the computer and access the devices web-server at http://192.168.1.1/index.asp to confirm a successful upgrade.
 
-    **Important**  
+    >[!IMPORTANT]
+>  
     Every time that you upgrade firmware, after the device has finished the upgrade and has restarted, you should reset the NVRAM settings by performing a 30-30-30 reset. The steps for this are as follows:
 
      
@@ -387,7 +393,7 @@ If a device is no longer functional for any reason, or specifically because of a
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_hlk_test\p_hlk_test%5D:%20Wireless%20LAN%20%28802.11%29%20Testing%20Prerequisites%20%20RELEASE:%20%288/29/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default.aspx. "Send comments about this topic to Microsoft")
+
 
 
 

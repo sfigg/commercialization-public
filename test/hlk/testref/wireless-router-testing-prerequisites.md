@@ -27,7 +27,7 @@ This section describes the tasks that you must complete before you test a wirele
 
 The following hardware is required for wireless router testing.
 
--   Basic Windows HLK test setup (Controller, Studio, and client systems). See [Windows HLK Getting Started](p_sxs_hlk.windows_hlk_getting_started)
+-   Basic Windows HLK test setup (Controller, Studio, and client systems). See [Windows HLK Getting Started](..\getstarted\windows-hlk-getting-started.md)
 
 -   Four test computers. Each test computer must meet the Windows HLK prerequisites. See [Windows HLK Prerequisites](p_sxs_hlk.windows_hlk_prerequisites) for more information.
 
@@ -49,7 +49,8 @@ Among the four test computers, there are three individual configurations. The te
 
 ![wireless router test configuration](images/hck-win8-lan-wireless-router-config.png)
 
-**Note**  
+>[!NOTE]
+>  
 In the above illustration, **Y** indicates a computer that is wirelessly connected to the router.
 
  
@@ -426,7 +427,8 @@ Test sends and receives data over TCP through router with Explicit Congestion No
 
 These tests can be identified by the presence of “TotalBytesSent” or “TotalBytesReceived” in their names. The tests should be run one at a time. Although the sequence is not important it is recommended that the Basic logo tests are ran first.
 
-**Important**  
+>[!IMPORTANT]
+>  
 Before running the tests, please perform the following on each LAN-side machine. This is required to make sure that the LAN-side machines can resolve the correct IP address of the WAN machine.
 
 -   The user logged on to the console of the machines has administrator privileges.
@@ -520,7 +522,7 @@ UPnP™ is a certification mark of the UPnP™ Implementers Corporation.
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_hlk_test\p_hlk_test%5D:%20Wireless%20Router%20Testing%20Prerequisites%20%20RELEASE:%20%288/29/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default.aspx. "Send comments about this topic to Microsoft")
+
 
 
 

@@ -27,7 +27,8 @@ To certify your client systems for Windows 8 and Windows 8.1, you’ll need the
 
 -   Another computer. Ideally, the second computer is already certified.
 
-    **Note**  
+    >[!NOTE]
+>  
     If you’re testing a computer with Bluetooth, the second computer must also have Bluetooth 4.0 or have a Bluetooth adapter installed.
 
      
@@ -121,7 +122,8 @@ The Bluetooth radio included with the system must have been previously certified
 
 Before running system tests, you must configure the test system and install the operating system. This section summarizes the related procedures.
 
-**Important**  
+>[!IMPORTANT]
+>  
 Before you begin testing, make sure that you enable all of the devices in the test system and load all of the related drivers.
 
  
@@ -168,7 +170,7 @@ Before you begin testing, make sure that you enable all of the devices in the te
 
 3.  Insert a valid data CD into the CD or DVD drive of the test system.
 
-Once your test computers are configured, you are ready to begin testing. Refer to [Step 4: Create a project](p_sxs_hlk.step_4_create_a_project).
+Once your test computers are configured, you are ready to begin testing. Refer to [Step 4: Create a project](..\getstarted\step-4-create-a-project.md).
 
 ## <span id="Mobile_Broadband_Testing_Requirements"></span><span id="mobile_broadband_testing_requirements"></span><span id="MOBILE_BROADBAND_TESTING_REQUIREMENTS"></span>Mobile Broadband Testing Requirements
 
@@ -190,7 +192,7 @@ Make sure that the test computer is in the ready state before you begin your tes
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_hlk_test\p_hlk_test%5D:%20System%20Client%20Testing%20Prerequisites%20%20RELEASE:%20%288/29/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default.aspx. "Send comments about this topic to Microsoft")
+
 
 
 

@@ -10,7 +10,7 @@ ms.assetid: bd74588f-9024-42de-8f47-aa80190b09a8
 # Device.Network.Switch.DAL-TOR Test
 
 
-This topic describes how to test network switches for OMI compatibility as part of the Windows® Certification Program. To begin the testing part of the certification process, you must install and run the Windows Hardware Lab Kit (Windows HLK) and set up the test environment. For information about how to install and configure Windows HLK, see [Step 1: Install Controller and Studio on the test server](p_sxs_hlk.step_1_install_controller_and_studio_on_the_test_server).
+This topic describes how to test network switches for OMI compatibility as part of the Windows® Certification Program. To begin the testing part of the certification process, you must install and run the Windows Hardware Lab Kit (Windows HLK) and set up the test environment. For information about how to install and configure Windows HLK, see [Step 1: Install Controller and Studio on the test server](..\getstarted\step-1-install-controller-and-studio-on-the-test-server.md).
 
 The types of products in the Device.Network.Switch.DAL-TOR category include Top of the Rack Switches.
 
@@ -43,7 +43,8 @@ The following hardware is required for switch testing. Additional hardware can b
 
 -   Two test computers.
 
-    **Note**  
+    >[!NOTE]
+>  
     All computers must meet the Windows HLK requirements. If two test computers are required, both computers must be in the same computer pool. For more information, see [Windows HLK Prerequisites](p_sxs_hlk.windows_hlk_prerequisites).
 
     For testing networking capabilities, the test computer to which the switch is physically attached to is referred to as the System Under Test (SUT).
@@ -116,7 +117,8 @@ To configure the test computer for switch testing, follow these steps:
 
     GenerateVirtualNode generates a virtual target for the switch in the Windows HLK controller for targeting Top of the Rack switch tests. The script makes a connection to the switch over OMI, and tries to retrieve critical information that is used for test submission on the switch.
 
-    **Note**  
+    >[!NOTE]
+>  
     At the end of a successful script execution, the machine is restarted.
 
      
@@ -169,7 +171,8 @@ The Switch category includes the following tests:
 
 -   Driver Memory Test
 
-**Note**  
+>[!NOTE]
+>  
 TDI filters and LSPs are not allowed.
 
  
@@ -446,7 +449,7 @@ TDI filters and LSPs are not allowed.
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_hlk_test\p_hlk_test%5D:%20Device.Network.Switch.DAL-TOR%20Test%20%20RELEASE:%20%288/29/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default.aspx. "Send comments about this topic to Microsoft")
+
 
 
 

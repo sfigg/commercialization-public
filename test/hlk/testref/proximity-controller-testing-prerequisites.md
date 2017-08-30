@@ -23,13 +23,14 @@ This topic describes the tasks that you must complete before you test a proximit
 
 The following hardware is required for testing a proximity-compliant controller. You might need more hardware if the controller includes more capabilities. See the test description for each test that the Windows HLK identifies to determine whether your controller requires more hardware.
 
--   Two test computers. These test computers must meet the Windows HLK prerequisites and must be included in the same machine pool. For more information, see [Windows HLK Prerequisites](p_sxs_hlk.windows_hlk_prerequisites).
+-   Two test computers. These test computers must meet the Windows HLK prerequisites and must be included in the same machine pool. For more information, see [Windows HLK Prerequisites](..\getstarted\windows-hlk-prerequisites.md).
 
 -   Two test proximity controllers.
 
 -   One Near Field Communication (NFC) Forum Type 2 tag.
 
-**Note**  
+>[!NOTE]
+>  
 For more information about the NFC Forum Type 2 tag, see [Near Field Communication (NFC) Forum](http://go.microsoft.com/fwlink/?LinkID=236991).
 
  
@@ -68,7 +69,8 @@ Make sure that the test computer is in the ready state before you begin your tes
 
 Manual Windows HLK tests require user intervention. When you run tests for a submission, it’s best to run the automated tests in a block separately from manual tests. This prevents a manual test from interrupting an automated test.
 
-**Important**  
+>[!IMPORTANT]
+>  
 On both Computer A and Computer B, switch to the Windows Desktop before you run your proximity tests.
 
  
@@ -77,7 +79,7 @@ On both Computer A and Computer B, switch to the Windows Desktop before you run 
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_hlk_test\p_hlk_test%5D:%20Proximity%20Controller%20Testing%20Prerequisites%20%20RELEASE:%20%288/29/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default.aspx. "Send comments about this topic to Microsoft")
+
 
 
 

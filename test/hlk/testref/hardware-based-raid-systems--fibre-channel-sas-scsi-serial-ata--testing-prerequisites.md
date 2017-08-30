@@ -25,12 +25,13 @@ The storage tests that you must run, the testing prerequisites, and the test set
 
 To test a hardware-based RAID array, you need the following hardware. You might need additional hardware if the test device offers other features. To determine whether additional hardware requirements apply, see the description for each test that appears for the device in Windows HLK Studio.
 
-**Note**  
+>[!NOTE]
+>  
 All hardware (except the test device, monitor, keyboard, mouse, and floppy disk drive) must be listed in the Windows Catalog.
 
  
 
--   1 test computer that meets the Windows HLK requirements. For more information, see [Windows HLK Prerequisites](p_sxs_hlk.windows_hlk_prerequisites). In addition, this computer must include:
+-   1 test computer that meets the Windows HLK requirements. For more information, see [Windows HLK Prerequisites](..\getstarted\windows-hlk-prerequisites.md). In addition, this computer must include:
 
     -   1 logo-compliant Advanced Configuration and Power Interface (ACPI) BIOS, with ACPI enabled by default.
 
@@ -49,7 +50,8 @@ All hardware (except the test device, monitor, keyboard, mouse, and floppy disk 
 
 -   1 PCI-based, test-specific type of host bus adapter (HBA). If the test system supports Microsoft® Multipath I/O (MPIO), 2 ports in the HBA or 2 identical HBAs (if each of them has only 1 port) must be connected to the same target device.
 
-    **Note**  
+    >[!NOTE]
+>  
     The RAID system should support the PCI-based HBA that you select to test the RAID system. Any drivers that you use on the test system for this HBA must have a Windows logo, and the HBA model and firmware version must be included in the Windows Catalog.
 
      
@@ -62,12 +64,14 @@ If you use a pool of test computers to test your device, at least 1 computer in 
 
 For tests that don't include a driver to test, like tests for a hard disk drive, the Windows HLK scheduler constrains the tests that validate the device's and driver's Rebalance, D3 State, and Multiple Processor Groups functionality to run on the default test computer. You must manually configure this computer to have multiple processor groups. The default computer is the first test computer in the list. Make sure that the first test computer in the list meets the minimum hardware requirements.
 
-**Note**  
+>[!NOTE]
+>  
 Except for para-virtualization drivers (as defined by the [WHCP Policies and Processes](http://go.microsoft.com/fwlink/p/?LinkID=615222) document), you can't use any form of virtualization when you test physical devices and their associated drivers for server certification or signature. Virtualization products don't support the underlying functionality that's required to pass the tests that relate to multiple processor groups, device power management, device PCI functionality, and other tests.
 
  
 
-**Note**  Multiple Processor Groups Setting
+>[!NOTE]
+>  Multiple Processor Groups Setting
 You must set the value for the processor group size for Hardware Lab Kit testing of Windows Server 2008 R2 and later device drivers for certification. This is done by running bcdedit in an elevated command prompt window, using the /set option.
 
 The commands for adding the group settings and restarting are as follows:
@@ -88,7 +92,8 @@ shutdown.exe -r -t 0 -f
 
  
 
-**Note**  
+>[!NOTE]
+>  
 **Code Integrity Setting**
 
 The Virtualization Based Security feature (VBS) of Windows Server 2016 must be enabled using Server Manager first.
@@ -208,7 +213,8 @@ To configure the test computer to test your Fibre Channel, SAS, SCSI, or SATA RA
 
 4.  In the test system, connect the HBA to the RAID system by using the appropriate cables for the bus type (for example, SCSI, SATA, and so on).
 
-    **Note**  
+    >[!NOTE]
+>  
     If the test RAID system supports more than 1 bus protocol, you must test and submit your device for Windows certification 1 time with each protocol that you want to have it qualified for.
 
      
@@ -221,7 +227,8 @@ To configure the test computer to test your Fibre Channel, SAS, SCSI, or SATA RA
 
     2.  Create a 36-GB NTFS file system partition on RAID Array 1, and then install the appropriate operating system on this partition.
 
-        **Note**  
+        >[!NOTE]
+>  
         We recommend SAN-boot configuration, but it isn't required.
 
          
@@ -252,7 +259,8 @@ To configure the test computer to test your Fibre Channel, SAS, SCSI, or SATA RA
 
     2.  Right-click each disk, and then click **New Partition**.
 
-        **Note**  
+        >[!NOTE]
+>  
         Each partition should be a primary partition, should use all of the disk space, should use any drive letter, and should be formatted in NTFS.
 
         For a non-MPIO test environment, if the HBA that you're using to test the RAID system is bootable, and if the RAID system supports boot, RAID Array 1 should already have a 36-GB partition. Create a new NTFS partition by using the remaining space on this drive.
@@ -337,7 +345,7 @@ Upon completion of hardware setup, and manually select this feature when going t
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_hlk_test\p_hlk_test%5D:%20Hardware-based%20Raid%20Systems%20%28Fibre%20Channel,%20SAS,%20SCSI,%20Serial%20ATA%29%20Testing%20Prerequisites%20%20RELEASE:%20%288/29/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default.aspx. "Send comments about this topic to Microsoft")
+
 
 
 

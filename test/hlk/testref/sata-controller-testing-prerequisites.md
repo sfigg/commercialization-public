@@ -23,12 +23,13 @@ This section describes the tasks that you must complete before you test a SATA c
 
 The following hardware is required to test an SATA controller. You might need additional hardware if the test device offers other features. To determine whether additional hardware requirements apply, see the test description for each test that appears for the device in Windows HLK Studio.
 
-**Note**  
+>[!NOTE]
+>  
 With the exception of the test computer and test controller, all hardware that is involved in the test must already have a logo.
 
  
 
--   One test computer. The test computer must meet the Windows HLK requirements. For more information, see [Windows HLK Prerequisites](p_sxs_hlk.windows_hlk_prerequisites).
+-   One test computer. The test computer must meet the Windows HLK requirements. For more information, see [Windows HLK Prerequisites](..\getstarted\windows-hlk-prerequisites.md).
 
 -   If the SATA controller supports RAID, the following requirements apply:
 
@@ -60,12 +61,14 @@ If you use a pool of test computers to test devices, at least one computer in th
 
 For tests that do not include a driver to test, such as hard disk drive tests, the Windows HLK scheduler constrains the tests that validate the device’s and driver’s rebalance, D3 state, and multiple processor groups functionality to run on the default test computer. You must manually configure this computer to have multiple processor groups. The default computer is the first test computer in the list. Test personnel must make sure that the first test computer in the list meets the minimum hardware requirements.
 
-**Note**  
+>[!NOTE]
+>  
 Except for para-virtualization drivers (as defined by the [WHCP Policies and Processes](http://go.microsoft.com/fwlink/p/?LinkID=615222) document), you cannot use any form of virtualization when you test physical devices and their associated drivers for server certification or signature. All virtualization products do not support the underlying functionality that is required to pass the tests that relate to multiple processor groups, device power management, device PCI functionality, and other tests.
 
  
 
-**Note**  Multiple Processor Groups Setting
+>[!NOTE]
+>  Multiple Processor Groups Setting
 You must set the value for the processor group size for Hardware Lab Kit testing of Windows Server 2008 R2 and later device drivers for certification. This is done by running bcdedit in an elevated command prompt window, using the /set option.
 
 The commands for adding the group settings and restarting are as follows:
@@ -86,7 +89,8 @@ shutdown.exe -r -t 0 -f
 
  
 
-**Note**  
+>[!NOTE]
+>  
 **Code Integrity Setting**
 
 The Virtualization Based Security feature (VBS) of Windows Server 2016 must be enabled using Server Manager first.
@@ -288,7 +292,8 @@ To configure the test computer to test a SATA controller as-an add-in RAID contr
 
     3.  Click the **Advanced** tab (or click **Advanced system settings** in the left pane for Windows Vista, Windows 7, Windows 8, Windows Server 2008, Windows Server 2008 R2 or Windows Server® 2012), and then, in the **Performance** area, click **Settings**.
 
-        **Note**  
+        >[!NOTE]
+>  
         If you are prompted to enter administrative credentials or allow the action, enter the credentials or allow the action.
 
          
@@ -434,7 +439,8 @@ To configure the test computer to test a SATA controller in an integrated RAID c
 
     3.  Click the **Advanced** tab (or click **Advanced system settings** in the left pane for Windows Vista, Windows 7, Windows 8, Windows Server 2008, Windows Server 2008 R2 or Windows Server® 2012), and then, in the **Performance** area, click **Settings**.
 
-        **Note**  
+        >[!NOTE]
+>  
         If you are prompted to enter administrative credentials or allow the action, enter the credentials or allow the action.
 
          
@@ -514,7 +520,8 @@ To configure the test computer for testing of an SATA controller in a non-RAID c
 
     3.  Click the **Advanced** tab (or click **Advanced system settings** in the left pane for Windows Vista, Windows 7, Windows 8, Windows Server 2008, Windows Server 2008 R2 or Windows Server® 2012), and then, in the **Performance** area, click **Settings**.
 
-        **Note**  
+        >[!NOTE]
+>  
         If you are prompted to enter administrative credentials or allow the action, enter the credentials or allow the action.
 
          
@@ -546,7 +553,7 @@ When testing storage devices, we strongly recommend that you complete all Device
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_hlk_test\p_hlk_test%5D:%20SATA%20Controller%20Testing%20Prerequisites%20%20RELEASE:%20%288/29/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default.aspx. "Send comments about this topic to Microsoft")
+
 
 
 

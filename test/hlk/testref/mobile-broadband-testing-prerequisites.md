@@ -12,7 +12,8 @@ ms.assetid: 244887d2-474e-461a-ac3d-47610ec12991
 
 This section describes the tasks that you must complete before you test an audio device by using the Windows Hardware Lab Kit (Windows HLK).
 
-**Note**  
+>[!NOTE]
+>  
 The wireless testing of mobile phones verifies support for 802.11 capabilities. However, the Windows HLK validates basic mobile phone capabilities only for devices based on modems that implement the MSFT IHV RIL interface. For data-only devices that are based on MBIM modems, the Windows HLK does not validate basic mobile phone capabilities.
 
  
@@ -25,7 +26,8 @@ Before beginning testing, complete the following:
 
 -   [Test computer configuration](#bkmk-hck-mobile-tc).
 
-**Note**  
+>[!NOTE]
+>  
 Software-based Access Points using the Realtek 8185 chipset were deprecated with the release of WLK version 1.3. HLK testing with Software-based Access Points are exclusively supported with Atheros WLAN NICs. Customers that are testing WLAN drivers must use Atheros hardware to complete their submissions. If you have further questions on this, please let us know at wlanndt@microsoft.com.
 
  
@@ -35,7 +37,7 @@ Software-based Access Points using the Realtek 8185 chipset were deprecated with
 
 The following hardware is required for LAN device testing. You might need additional hardware if the test device provides bus-specific support. See the test description for each bus-specific test to determine if there are additional hardware requirements.
 
--   Basic Windows HLK test setup (Controller, Studio, and client systems). See [Windows HLK Getting Started](p_sxs_hlk.windows_hlk_getting_started)
+-   Basic Windows HLK test setup (Controller, Studio, and client systems). See [Windows HLK Getting Started](..\getstarted\windows-hlk-getting-started.md)
 
 -   One test computer. This test computer must meet the Windows HLK prerequisites. See [Windows HLK Prerequisites](p_sxs_hlk.windows_hlk_prerequisites) for more information.
 
@@ -55,7 +57,8 @@ The following hardware is required for LAN device testing. You might need additi
 
     -   'Inactive' SIM
 
-**Note**  
+>[!NOTE]
+>  
 The operating systems installed on the test clients must be matching processor architecture versions. If you are Logo testing a 32-bit driver, the DUT, SUT, and Test SoftAP must all have 32-bit versions of Windows installed upon them. For example, you may not use a 64-bit DUT with a 32-bit Test SoftAP.The Ethernet cross over cable can be used in place of the test network when running the NDISTest 6.0 "2c\_priority" test job. The cross over cable enables vendors to resolve an switch-related issue. In some cases, a switch will strip the priority header causing this test job to fail.
 
  
@@ -87,7 +90,8 @@ This section is intended to provide guidance to mobile broadband (MB) device man
 
 Loopback testing ensures that the link between host and device is tested for performance with no dependency on the mobile broadband network. A successful pass of this test, by the device, assures that neither the OS stack nor the device firmware is going to be the bottleneck for throughput when the network conditions are right.
 
-**Note**  
+>[!NOTE]
+>  
 Loopback functionality is tested only for the IP data traffic because it is in the performance critical path. The scope of this test does not include any other network traffic, such as SMS or USSD. Also, because this is a loopback test that terminates at the device firmware, there is no dependency to the network, SIM, or air interfaces.
 
  
@@ -149,7 +153,7 @@ Loopback functionality is tested only for the IP data traffic because it is in t
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_hlk_test\p_hlk_test%5D:%20Mobile%20Broadband%20Testing%20Prerequisites%20%20RELEASE:%20%288/29/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default.aspx. "Send comments about this topic to Microsoft")
+
 
 
 

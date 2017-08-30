@@ -23,12 +23,13 @@ This topic describes the tasks that you must complete before you test an Interne
 
 To test an iSCSI hardware-based RAID array, you need the following hardware. You might need additional hardware if the test device offers other features. To determine whether additional hardware requirements apply, see the description for each test that appears for the device in Windows HLK Studio.
 
-**Note**  
+>[!NOTE]
+>  
 All hardware (except the test device, monitor, keyboard, mouse, and floppy disk drive) must be listed in the Windows Catalog.
 
  
 
--   1 test computer that meets the Windows HLK requirements. For more information, see [Windows HLK Prerequisites](p_sxs_hlk.windows_hlk_prerequisites). In addition, this computer must include:
+-   1 test computer that meets the Windows HLK requirements. For more information, see [Windows HLK Prerequisites](..\getstarted\windows-hlk-prerequisites.md). In addition, this computer must include:
 
     -   1 logo-compliant Advanced Configuration and Power Interface (ACPI) BIOS, with ACPI enabled by default.
 
@@ -40,7 +41,8 @@ All hardware (except the test device, monitor, keyboard, mouse, and floppy disk 
 
 -   1 iSCSI RAID storage system (the test device).
 
-    **Note**  
+    >[!NOTE]
+>  
     The RAID system must be a single cabinet that consists of an array controller that's enclosed in an external subsystem with hard disk drives. Or it must be an external array controller that connects to a RAID JBOD. The RAID system can't consist of only a Peripheral Component Interconnect (PCI)–based controller and 1 RAID JBOD.
 
      
@@ -57,12 +59,14 @@ If you use a pool of test computers to test your device, at least 1 computer in 
 
 For tests that don't include a driver to test, like tests for a hard disk drive, the Windows HLK scheduler constrains the tests that validate the device's and driver's Rebalance, D3 State, and Multiple Processor Groups functionality to run on the default test computer. You must manually configure this computer to have multiple processor groups. The default computer is the first test computer in the list. Make sure that the first test computer in the list meets the minimum hardware requirements.
 
-**Note**  
+>[!NOTE]
+>  
 Except for para-virtualization drivers (as defined by the [WHCP Policies and Processes](http://go.microsoft.com/fwlink/p/?LinkID=615222) document), you can't use any form of virtualization when you test physical devices and their associated drivers for server certification or signature. Virtualization products don't support the underlying functionality that's required to pass the tests that relate to multiple processor groups, device power management, device PCI functionality, and other tests.
 
  
 
-**Note**  Multiple Processor Groups Setting
+>[!NOTE]
+>  Multiple Processor Groups Setting
 You must set the value for the processor group size for Hardware Lab Kit testing of Windows Server 2008 R2 and later device drivers for certification. This is done by running bcdedit in an elevated command prompt window, using the /set option.
 
 The commands for adding the group settings and restarting are as follows:
@@ -83,7 +87,8 @@ shutdown.exe -r -t 0 -f
 
  
 
-**Note**  
+>[!NOTE]
+>  
 **Code Integrity Setting**
 
 The Virtualization Based Security feature (VBS) of Windows Server 2016 must be enabled using Server Manager first.
@@ -126,7 +131,8 @@ To configure the test computer to test your iSCSI RAID array, follow these steps
 
 2.  Connect the Gigabit Ethernet switch to a power supply.
 
-    **Note**  
+    >[!NOTE]
+>  
     Don't connect the switch to any other network.
 
      
@@ -145,14 +151,16 @@ To configure the test computer to test your iSCSI RAID array, follow these steps
 
     If your device supports mutual CHAP, also configure the device to use mutual CHAP.
 
-    **Note**  
+    >[!NOTE]
+>  
     When you configure the device to use CHAP, you must provide a password that's 12 to 16 characters long. If you're configuring the device to use both one-way CHAP and mutual CHAP, you must provide different passwords for the target and the initiator.
 
      
 
 9.  Log on to the target disk storage system with Persistent Login set.
 
-    **Important**  
+    >[!IMPORTANT]
+>  
     You must log on to the iSCSI target device that's used for testing, or the tests won't work properly.
 
     For a multipath test environment, if multiple ports (IP addresses) relate to one storage target, you must make sure that at least 2 iSCSI sessions are connected through the IP address to during testing.
@@ -201,7 +209,7 @@ See “Hardware-based Raid Systems (Fibre Channel, SAS, SCSI, Serial ATA) Testin
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_hlk_test\p_hlk_test%5D:%20Hardware-based%20RAID%20Systems%20%28iSCSI%29%20Testing%20Prerequisites%20%20RELEASE:%20%288/29/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default.aspx. "Send comments about this topic to Microsoft")
+
 
 
 

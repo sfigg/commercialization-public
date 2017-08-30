@@ -12,7 +12,8 @@ ms.assetid: d5a26f57-7d23-4b0e-ae6c-0730412ff6ec
 
 This section describes the IPsec Task Offload v2 testing prerequisites that you should complete before testing your network adapter using the Windows Hardware Lab Kit (Windows HLK). The Network Driver Interface Specification (NDIS) test suite includes test jobs that verify Internet Protocol Security (IPsec) functionality. If your network adapter supports IPsec, you must complete the IPsec-specific NDIS test jobs to certify your device.
 
-**Note**  
+>[!NOTE]
+>  
 This content applies to both standalone network and integrated network devices.
 
  
@@ -38,9 +39,10 @@ This hardware is required for testing:
 
 -   IPsec offload–capable network adapters.
 
--   Two test computers that meet the Windows HLK prerequisites. For more info, see [Windows HLK Prerequisites](p_sxs_hlk.windows_hlk_prerequisites).
+-   Two test computers that meet the Windows HLK prerequisites. For more info, see [Windows HLK Prerequisites](..\getstarted\windows-hlk-prerequisites.md).
 
-    **Note**  
+    >[!NOTE]
+>  
     The test computers must be in the same machine pool.
 
      
@@ -75,7 +77,8 @@ Here's a summary of each computer shown, devices installed on them, and their ro
 
 -   **Windows HLK Controller computer.** Used to control client computers and gather all test information from them.
 
-    **Note**  
+    >[!NOTE]
+>  
     Windows HLK Studio and Windows HLK Controller can run on the same test server, which can help reduce setup complexity.
 
      
@@ -141,7 +144,8 @@ You can use Windows HLK Studio to schedule the LAN device test jobs on the clien
 
 1.  In Windows HLK Studio, enter all of the information that the LAN device test job needs, and then schedule the job.
 
-    **Note**  
+    >[!NOTE]
+>  
     Test computers must be in the ready state before testing begins. If a test requires parameters to be set before it's run, a dialog box is displayed for that test. Review the specific test topic for more information.
 
      
@@ -239,7 +243,7 @@ Before LAN testing can begin, you must first create your own machine pool to hol
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_hlk_test\p_hlk_test%5D:%20IPsec%20Task%20Offload%20v2%20Testing%20Prerequisites%20%20RELEASE:%20%288/29/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default.aspx. "Send comments about this topic to Microsoft")
+
 
 
 

@@ -1,4 +1,4 @@
 # Device.Streaming Additional Documentation
-### [Hmft Testing Prerequisites](hmft_testing_prerequisites.md)
-### [Troubleshooting Devicestreaming Testing](troubleshooting_devicestreaming_testing.md)
-### [Webcam Testing Prerequisites](webcam_testing_prerequisites.md)
+### [Hmft-Testing-Prerequisites](hmft-testing-prerequisites.md)
+### [Troubleshooting-Devicestreaming-Testing](troubleshooting-devicestreaming-testing.md)
+### [Webcam-Testing-Prerequisites](webcam-testing-prerequisites.md)

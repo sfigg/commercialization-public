@@ -153,7 +153,8 @@ To help debug this test failure, you should determine how the reference count of
 
     -   If the reference count of the PDO is equal to 0 before starting the test, it is likely that running the test is what is causing the reference count of the PDO to be greater than zero at the time the test performs the surprise remove of the device. This usually indicates a handle leak. Run the PNP Surprise Remove Device test from a Command Prompt window or from Visual Studio to reproduce the failure and capture the information that is needed to troubleshoot the problem.
 
-    **Note**  
+    >[!NOTE]
+>  
     If you set the *DoConcurrentIO* parameter to TRUE, the test opens hundreds of file handles to the PDO. We recommend that you set this parameter to FALSE when you reproduce this failure.
 
      
@@ -257,9 +258,10 @@ Next
 
 The test ends up testing I/O on devices several times (one time for each sleep state) when it runs. See [Review Log Files](review-log-files-troubleshooting-device-fundamentals-reliability-tests.md) for information about how to see this in the log files.
 
-One of the common failures when testing I/O is that testing I/O on a particular device can permanently hang. This results in the test to eventually fail after a test timeout period (which is typically hours). See [Troubleshooting Windows HLK Test Failures](p_hlk.troubleshooting_windows_hlk_test_failures) for information about how to identify failures caused by timeout. 
+One of the common failures when testing I/O is that testing I/O on a particular device can permanently hang. This results in the test to eventually fail after a test timeout period (which is typically hours). See [Troubleshooting Windows HLK Test Failures](..\user\troubleshooting-windows-hlk-test-failures.md) for information about how to identify failures caused by timeout. 
 
-**Note**  
+>[!NOTE]
+>  
 Windows HLK will terminate the hung process after the timeout period. Instead of waiting for the test to eventually fail because of a permanent hang, we recommend that you investigate the hang while the hung process is still running on the system. See the **Test Hangs** section of the [Troubleshooting Device Fundamentals Reliability Testing by using the Windows HLK](troubleshooting-device-fundamentals-reliability-testing-by-using-the-windows-hck.md) topic for information about how to troubleshoot test hangs.
 
  
@@ -301,7 +303,7 @@ Device Fundamentals Reliability tests rely on system wake timers to wake up the 
 
 The system can also permanently hang during power up or power down because of driver bugs. In this case, you should re-run the test by using the test system connected to a kernel debugger, and debug the system hang from the kernel debugger.
 
-See [Setting Up Kernel-Mode Debugging Manually](http://go.microsoft.com/fwlink/?LinkID=299467) for information about how to setup a kernel debugger. See [Troubleshooting Windows HLK Test Failures](p_hlk.troubleshooting_windows_hlk_test_failures#clientunre) for general guidance on how to troubleshoot system hangs during Windows HLK test runs.
+See [Setting Up Kernel-Mode Debugging Manually](http://go.microsoft.com/fwlink/?LinkID=299467) for information about how to setup a kernel debugger. See [Troubleshooting Windows HLK Test Failures](..\user\troubleshooting-windows-hlk-test-failures.md#clientunre) for general guidance on how to troubleshoot system hangs during Windows HLK test runs.
 
 ## <span id="nonet"></span><span id="NONET"></span>WirelessPlugin: ConnectToTestProfile() - Failed to connect to test profile. Reason string: "The specific network is not available." error message
 
@@ -333,7 +335,7 @@ If the log contains an error stating that the device was missing or did not star
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_hlk_test\p_hlk_test%5D:%20Review%20common%20Device%20Fundamentals%20Reliability%20test%20failures%20%20RELEASE:%20%288/29/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default.aspx. "Send comments about this topic to Microsoft")
+
 
 
 

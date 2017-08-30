@@ -16,7 +16,8 @@ Ensuring that the block device and the operating system maintain compliance with
 
 The test uses SCSI pass-through requests (IOCTL\_SCSI\_PASS\_THROUGH) to construct and send SCSI command descriptor blocks (CDBs) to the device. The test evaluates the results of the commands to verify compliance.
 
-**Note**  
+>[!NOTE]
+>  
 If you are running this test as a part of a Storage RAID Hardware-based RAID (Storage Array) submission, and your storage array supports Multipath I/O (MPIO), you must configure your MPIO to use Fail-Over Only policy, and set the target storage disk to use the same active path for all MPIO-capable disks.
 
 If you are running this test as a part of a Storage RAID Hardware-based RAID (Storage Array) submission, make sure that LUN0 is configured as the largest size non-boot LUN.
@@ -102,7 +103,7 @@ Before you run the test, complete the test setup as described in the test requir
 ## <span id="Troubleshooting"></span><span id="troubleshooting"></span><span id="TROUBLESHOOTING"></span>Troubleshooting
 
 
-For generic troubleshooting of HLK test failures, see [Troubleshooting Windows HLK Test Failures](p_hlk.troubleshooting_windows_hlk_test_failures).
+For generic troubleshooting of HLK test failures, see [Troubleshooting Windows HLK Test Failures](..\user\troubleshooting-windows-hlk-test-failures.md).
 
 For general troubleshooting information, see [Troubleshooting Device.Storage Testing](troubleshooting-devicestorage-testing.md).
 
@@ -116,7 +117,8 @@ To pass, the SCSI device must support every mandatory command and must be fully 
 
 Optional commands are also tested. If a device supports the optional commands and the commands are found to be non-compliant, the test fails. If the device does not support optional commands, the test passes.
 
-**Note**  
+>[!NOTE]
+>  
 Errors from this test occur via issues identified in the log file and in stop errors produced through stressing the driver under test.
 
  
@@ -141,7 +143,8 @@ If you have a device reset that results in the device falling off the bus and su
 
 4.  From a command prompt, from the directory containing the test binary, type the following command: Scsicompliance.exe /device &lt;deviceID&gt; /verbosity 4 /operation test /scenario &lt;scenario&gt; /CDB &lt;failingcdbname&gt;
 
-    **Note**  
+    >[!NOTE]
+>  
     DeviceID and scenario values can be found by checking the repro line within the test log. The failingcdbname can be found by running the test binary with the /?option (scsicompliance.exe /?).
 
      
@@ -157,7 +160,8 @@ If you are running this test against Windows Server 2003, make sure the disks or
 
 The following commands are validated:
 
-**Note**  
+>[!NOTE]
+>  
 For more information about **Reference**, visit the [Technical Committee T10 SCSI Storage Interfaces](http://go.microsoft.com/fwlink/?LinkId=237712) website.
 
  
@@ -1239,7 +1243,8 @@ Expectation: Scsi Status is 0x2 (CHECK CONDITION).
 
  
 
-**Note**  
+>[!NOTE]
+>  
 For command-line help for this test binary, type **/?**.
 
  
@@ -1286,7 +1291,7 @@ For command-line help for this test binary, type **/?**.
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_hlk_test\p_hlk_test%5D:%20SCSI%20Compliance%20Test%202.0%20%28LOGO%29%20%20RELEASE:%20%288/29/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default.aspx. "Send comments about this topic to Microsoft")
+
 
 
 

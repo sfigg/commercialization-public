@@ -49,7 +49,7 @@ Some touch quality tests require high-precision tools. To learn about the tools 
 ## <span id="enviro"></span><span id="ENVIRO"></span>The Windows Hardware Lab Kit test environment
 
 
-You must install at least a minimal configuration of the [Windows Hardware Lab Kit (Windows HLK)](http://go.microsoft.com/fwlink/?LinkID=8705). The Windows HLK provides you with the tools, processes, and tests to create and upload submission packages to certify devices and systems. The Windows HLK eliminates the need for external tools such as the WLK Log Viewer. For instructions about how to install the Windows HLK, see [Windows HLK Getting Started](p_sxs_hlk.windows_hlk_getting_started). This document assumes that you are familiar with the Windows HLK.
+You must install at least a minimal configuration of the [Windows Hardware Lab Kit (Windows HLK)](http://go.microsoft.com/fwlink/?LinkID=8705). The Windows HLK provides you with the tools, processes, and tests to create and upload submission packages to certify devices and systems. The Windows HLK eliminates the need for external tools such as the WLK Log Viewer. For instructions about how to install the Windows HLK, see [Windows HLK Getting Started](..\getstarted\windows-hlk-getting-started.md). This document assumes that you are familiar with the Windows HLK.
 
 The Windows HLK requires that you install at least one test controller and one test computer. The test computer must have a clean install of the Windows 8 client operating system and it must support touch input according to the HID protocol. You must manually install all required drivers to enable touch devices to function correctly.
 
@@ -123,7 +123,8 @@ If the version has incremented, the FFU requirement has been met; otherwise, thi
 
 Before it starts to run any series of tests, WTTL runs the physical dimension test (Device.Digitizer.Touch.PhysicalDimension), in the [Windows Touch Test (System)](85a694cc-231b-4bbd-9b52-65e7aa90d57d.md) collection of tests. The measured size value reflects the size and separation of various user interface (UI) elements in the test and in the operating system. This value must be consistent and accurate before you can proceed because further test results would be flawed by any differential. If there is a difference between the physical size as measured by the WTTL and the reported size from the device, then the test fails.
 
-**Note**  
+>[!NOTE]
+>  
 The tests are designed to run in landscape orientation and might not display correctly in portrait mode. If you are testing a device that boots into portrait mode, change to landscape orientation before you run the tests.
 
  
@@ -567,7 +568,7 @@ The following table lists dynamic HID compliance errors that can occur during to
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_hlk_test\p_hlk_test%5D:%20How%20to%20run%20the%20Windows%20HLK%20Tests%20for%20Touch%20and%20Pen%20Devices%20%20RELEASE:%20%288/29/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default.aspx. "Send comments about this topic to Microsoft")
+
 
 
 

@@ -21,7 +21,7 @@ This information applies to the Windows 8 operating system.
 
 You must install at least a minimal configuration of the Windows Hardware Lab Kit (Windows HLK). Windows HLK provides you the tools, processes, and tests to create and upload submission packages to certify devices and systems. The Windows HLKeliminates the need for external tools such as the WLK Log Viewer. This document assumes that you are familiar with the Windows HLK.
 
-For instructions about how to install the Windows HLK, see [Windows HLK Getting Started](p_sxs_hlk.windows_hlk_getting_started).
+For instructions about how to install the Windows HLK, see [Windows HLK Getting Started](..\getstarted\windows-hlk-getting-started.md).
 
 ### <span id="Windows_HLK_Studio"></span><span id="windows_hlk_studio"></span><span id="WINDOWS_HLK_STUDIO"></span>Windows HLK Studio
 
@@ -168,7 +168,8 @@ Perform the following steps to set up the test components for calibration.
 
 3.  Run the touch down latency test from Windows HLK Studio on the Windows HLK controller, or run the standalone test **audiotouch.exe** on the test computer.
 
-    **Important**  
+    >[!IMPORTANT]
+>  
     This test requires an extremely quiet environment to obtain accurate results.
 
      
@@ -273,7 +274,8 @@ Use the following steps to perform collection.
 
 4.  Repeat steps 1-3 to cover all areas of the screen.
 
-    **Note**  
+    >[!NOTE]
+>  
     The preceding index (for example, \[10\] in the case **\[10\] latency: 11.2 \[ms\]**), is not the actual count of the measurement: it is the index for acoustic signals that are received from the microphone through the microcontroller. The index does not always change in increments of one; it can change in increments of two or more if noise was perceived between taps. The best way to ensure that you tapped exactly 500 times is to tap 10-20% more times than required; that is, tap 550 times or 600 times.
 
      
@@ -302,7 +304,8 @@ You might not be able to place the microphone directly on an optical device scre
 
 -   Place the microphone just above the scan line: You can place the microphone just above the laser scan line (~2-3 mm from the screen) and then follow the test procedure described for fragile devices.
 
-    **Note**  
+    >[!NOTE]
+>  
     You might have to experiment to find the scan line.
 
      
@@ -311,7 +314,8 @@ You might not be able to place the microphone directly on an optical device scre
 
 For some devices, especially devices in the prototype stage, placing the microphone firmly on the screen might produce ghost touches or other undesired behavior. In this case, place the microphone just above the screen and leave an approximate one mm gap between the microphone and the screen. Firmly tap the screen so that the sound wave reaches the microphone. For this test, you should tap more firmly than when you run a test in which the microphone is attached to the screen.
 
-**Note**  
+>[!NOTE]
+>  
 Partially touching the screen is not recommended because it generates vibration.
 
  
@@ -358,7 +362,7 @@ Contact one of these certified jig vendors if additional support is required:
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_hlk_test\p_hlk_test%5D:%20How%20to%20measure%20Touch%20Down%20Latency%20by%20using%20an%20Acoustic%20Measurement%20Tool%20%20RELEASE:%20%288/29/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default.aspx. "Send comments about this topic to Microsoft")
+
 
 
 

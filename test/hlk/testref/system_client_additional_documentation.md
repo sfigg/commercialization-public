@@ -1,6 +1,6 @@
 # System.Client Additional Documentation
-### [Combined Radio Tests Prerequisites](combined_radio_tests_prerequisites.md)
-### [System Client Testing Prerequisites](system_client_testing_prerequisites.md)
-### [System Testing With Secure Boot](system_testing_with_secure_boot.md)
-### [Troubleshooting System Client Testing](troubleshooting_system_client_testing.md)
-### [Webcam Basicperf System  Manual  Test Best Practices](webcam_basicperf_system__manual__test_best_practices.md)
+### [Combined-Radio-Tests-Prerequisites](combined-radio-tests-prerequisites.md)
+### [System-Client-Testing-Prerequisites](system-client-testing-prerequisites.md)
+### [System-Testing-With-Secure-Boot](system-testing-with-secure-boot.md)
+### [Troubleshooting-System-Client-Testing](troubleshooting-system-client-testing.md)
+### [Webcam-Basicperf-System--Manual--Test-Best-Practices](webcam-basicperf-system--manual--test-best-practices.md)

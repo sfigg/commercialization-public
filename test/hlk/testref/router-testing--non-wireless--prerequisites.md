@@ -23,7 +23,7 @@ This section describes the tasks that you must complete before you test an Ether
 
 The following hardware is required for router testing. You might need additional hardware if the test device provides bus-specific support. See the test description for each bus-specific test to determine if there are additional hardware requirements.
 
--   Basic Windows HLK test setup (Controller, Studio). See [Windows HLK Getting Started](p_sxs_hlk.windows_hlk_getting_started)
+-   Basic Windows HLK test setup (Controller, Studio). See [Windows HLK Getting Started](..\getstarted\windows-hlk-getting-started.md)
 
 -   Four test computers. Each test computer must meet the Windows HLK prerequisites. See [Windows HLK Prerequisites](p_sxs_hlk.windows_hlk_prerequisites) for more information.
 
@@ -33,7 +33,8 @@ The following hardware is required for router testing. You might need additional
 
 -   One test router.
 
-**Note**  
+>[!NOTE]
+>  
 To certify a router for use with servers, the test computer must support four processors and a minimum of 1 GB of RAM. These system capabilities are required to test the Rebalance, D3 State, and Multiple Processor Group functionality of the device and driver. You do not need a computer that actually has more than 64 processors to test your device.
 
 If you use a pool of test computers to test devices, at least one computer in the pool must contain four processors and a minimum of 1 GB of RAM.
@@ -42,12 +43,14 @@ Since routers do not include a driver to test, the Windows HLK scheduler constra
 
  
 
-**Note**  
+>[!NOTE]
+>  
 Except for para-virtualization drivers (as defined by the [WHCP Policies and Processes](http://go.microsoft.com/fwlink/p/?LinkID=615222) document), you may not use any form of virtualization when you test physical devices and their associated drivers for server certification or signature. All virtualization products do not support the underlying functionality that is required to pass the tests that relate to multiple processor groups, device power management, device PCI functionality, and other tests.
 
  
 
-**Note**  Multiple Processor Groups Setting
+>[!NOTE]
+>  Multiple Processor Groups Setting
 You must set the value for the processor group size for Hardware Lab Kit testing of Windows Server 2008 R2 and later device drivers for certification. This is done by running bcdedit in an elevated command prompt window, using the /set option.
 
 The commands for adding the group settings and restarting are as follows:
@@ -68,7 +71,8 @@ shutdown.exe -r -t 0 -f
 
  
 
-**Note**  
+>[!NOTE]
+>  
 **Code Integrity Setting**
 
 The Virtualization Based Security feature (VBS) of Windows Server 2016 must be enabled using Server Manager first.
@@ -97,7 +101,8 @@ Among the 4 test computers, there are 3 individual configurations. The test comp
 
 ![diagram of machine requirements and configuration](images/hck-win8-router-config-1-6.png)
 
-**Note**  
+>[!NOTE]
+>  
 Although not illustrated above, the Windows HLK Studio and the Windows HLK controller can be running on one computer to reduce the cost of the setup.
 
  
@@ -182,7 +187,8 @@ The test computers identified as LAN1 and LAN2 have an identical setup procedure
 
 13. Make sure that all network connections are set to **Private** in the **Network Center** in the **Control Panel**.
 
-    **Note**  
+    >[!NOTE]
+>  
     In order to ensure that your test network remains set to Private, you can set a policy to do this automatically by running **gpedit.msc** from a command prompt (as an Administrator) and modifying the settings for "Unidentified Networks".
 
      
@@ -327,7 +333,7 @@ Some Windows HLK tests require user intervention. When running tests for a submi
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_hlk_test\p_hlk_test%5D:%20Router%20Testing%20%28Non-wireless%29%20Prerequisites%20%20RELEASE:%20%288/29/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default.aspx. "Send comments about this topic to Microsoft")
+
 
 
 

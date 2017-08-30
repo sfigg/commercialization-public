@@ -10,7 +10,7 @@ ms.assetid: 7484dfcc-0680-404e-a10a-fc109a573ce4
 # Windows Touch Device Certification Processes and Windows Touch Test Lab (WTTL) Service
 
 
-This article describes the Windows Touch device certification processes and the Microsoft Windows Touch Test Lab (WTTL) service for vendors and manufacturers of touch digitizers. It contains guidelines about how to use Microsoft testing facilities to certify the touch quality of a device to meet [Windows Hardware Compatibility Program](p_hlk.windows_hardware_compatibility_program_overview) (formerly known as the Windows Certification/Logo Program) requirements.
+This article describes the Windows Touch device certification processes and the Microsoft Windows Touch Test Lab (WTTL) service for vendors and manufacturers of touch digitizers. It contains guidelines about how to use Microsoft testing facilities to certify the touch quality of a device to meet [Windows Hardware Compatibility Program](..\user\windows-hardware-compatibility-program-overview.md) (formerly known as the Windows Certification/Logo Program) requirements.
 
 This information applies for computers that run on Windows 8 and Windows 8.1.
 
@@ -117,7 +117,7 @@ Prior to submission, Microsoft requires that a test signature be placed in firmw
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_hlk_test\p_hlk_test%5D:%20Windows%20Touch%20Device%20Certification%20Processes%20and%20Windows%20Touch%20Test%20Lab%20%28WTTL%29%20Service%20%20RELEASE:%20%288/29/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default.aspx. "Send comments about this topic to Microsoft")
+
 
 
 

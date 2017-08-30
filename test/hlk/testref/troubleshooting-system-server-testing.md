@@ -41,7 +41,7 @@ In this article:
 
     -   [LoadGen Server Stress - Run Last - Reset Machine Policies](8cb4f87c-d2a4-4d90-92a7-edd016ccdeac.md)
 
-    -   [Troubleshooting Windows HLK](p_hlk.troubleshooting_windows_hlk).
+    -   [Troubleshooting Windows HLK](..\user\troubleshooting-windows-hlk.md).
 
 2.  For server device and driver testing, make sure that the system under test (SUT) is configured as follows:
 
@@ -96,7 +96,8 @@ If a test fails, follow these steps:
 
 If existing clients cannot generate enough stress against the SUT, Loadgen asks for more stress clients (SCs). This feature is intended to accommodate large servers, and the possibility of some SCs failing in the middle of a run. In general, you should start with eight SCs. The stress level should stabilize in the first three to four hours of the test. If more clients are needed, you will generally see the pop-up in the master controller (MC) in that time frame. You will have sixty minutes to add a new client or the test will terminate and fail.
 
-**Note**  
+>[!NOTE]
+>  
 You cannot add more machines to a machine pool after a submission has started. If you start the test by using less than eight clients, make sure that you have additional clients in the machine pool before you start to test.
 
  
@@ -115,7 +116,8 @@ In this case, try the following troubleshooting steps:
 
 5.  If multiple NICs are installed directly on to the system board, and you cannot install an additional device into a PCI Express slot, go into the hardware system setup and disable all but one of the NICs so that Windows does not detect them.
 
-**Note**  
+>[!NOTE]
+>  
 Each detected NIC must be stressed during the test. This requires that each NIC has SCs on a separate physical network segment.
 
  
@@ -167,7 +169,7 @@ There are no known issues by the DHCP, DNS, AD, and other systems being in a VM.
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_hlk_test\p_hlk_test%5D:%20Troubleshooting%20System%20Server%20Testing%20%20RELEASE:%20%288/29/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default.aspx. "Send comments about this topic to Microsoft")
+
 
 
 
