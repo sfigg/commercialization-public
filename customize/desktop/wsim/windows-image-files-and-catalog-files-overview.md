@@ -120,7 +120,7 @@ Catalog files have several advantages over Windows image files:
 
     _Fix:_  Use an x86 version installation of Windows to create catalog files for x86 or ARM-based .wim files. 
 
-    _What's going on_: Windows SIM can't create x86 or ARM catalog files from a 64-bit Windows installation. See [architectures](supported_architectures).
+    _What's going on_: Windows SIM can't create x86 or ARM catalog files from a 64-bit Windows installation. See [architectures](#supported_architectures).
     
 
 ## Related topics
