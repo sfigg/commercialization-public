@@ -67,13 +67,11 @@ In this step, you install Windows HLK software on the designated test server. Th
 
     Installation takes about 45 minutes.
 
-    >[!Note]
-    >  If Microsoft .NET Framework 4.5 isn't already installed on the computer, follow the prompts to install it. After the computer restarts, you must repeat the installation instructions from **Step 1** for installing to this computer.
+     >[!Note]
+     >If Microsoft .NET Framework 4.5 isn't already installed on the computer, follow the prompts to install it. After the computer restarts, you must repeat the installation instructions from **Step 1** for installing to this computer.
 
-     
-
-    >[!Note]  
-    >If you selected the download option, copy your download to your test server. Run HLKSetup.exe and repeat the installation instructions from **Step 3** for installing to this computer.
+     >[!Note]  
+     >If you selected the download option, copy your download to your test server. Run HLKSetup.exe and repeat the installation instructions from **Step 3** for installing to this computer.
 
      
 
