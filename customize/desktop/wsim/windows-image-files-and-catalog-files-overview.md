@@ -51,7 +51,6 @@ Don't have an x86 PC handy?
 * You can install the 32-bit version of Windows on a 64-bit PC. 
 * You can install Windows on a 32-bit virtual machine from a 64-bit PC.
 
-
 ## Windows Image Files
 
 
@@ -117,15 +116,12 @@ Catalog files have several advantages over Windows image files:
     
     _What's going on_: This message appears when you're creating a catalog file from a .wim file that's in a location that the system can't write to, like a DVD or secured network share.
 
--   **"Windows SIM was unable to generate a catalog"** or **"Parameter count mismatch":**
+-   **"Catalog creation failed to complete. This 64-bit version of Windows SIM can only create catalogs for 64-bit Windows images. For a list of supported architecture types, see link below."** 
 
     _Fix:_  Use an x86 version installation of Windows to create catalog files for x86 or ARM-based .wim files. 
 
     _What's going on_: Windows SIM can't create x86 or ARM catalog files from a 64-bit Windows installation. See [architectures](supported_architectures).
     
-
-
- 
 
 ## Related topics
 
