@@ -1,129 +1,131 @@
 ---
 title: Camera Driver Controls System Test - SCENEMODE - Get Default setting
-Description: Camera Driver Controls System Test - SCENEMODE - Get Default setting
+description: Camera Driver Controls System Test - SCENEMODE - Get Default setting
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: c86b674e-6089-440d-9970-931543122209
-author: sapaetsc-msft
-ms.author: sapaetsc
-ms.date: 08/28/17
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
 ---
 
-# Camera Driver Controls System Test - SCENEMODE - Get Default setting
+# <span id="p_hlk_test.2ca0e801-8b1e-4f5a-bee3-c2eaec6fd0fc"></span>Camera Driver Controls System Test - SCENEMODE - Get Default setting
 
-<conditional_block> <conditions> <docset value="standalone"></docset> </conditions>
-
->[!NOTE]
-You can find the latest version of this test documentation on MSDN at the following link:
-
--   <xref hlink="http://msdn.microsoft.com/en-us/library/windows/hardware/c86b674e-6089-440d-9970-931543122209">http://msdn.microsoft.com/en-us/library/windows/hardware/c86b674e-6089-440d-9970-931543122209</b>
-
-
-</conditional_block>
-
-These set of tests validate cameras functionality if the driver supports KSPROPERTY\_CAMERACONTROL\_EXTENDED\_\*. If the driver does not support KSPROPERTY\_CAMERACONTROL\_EXTENDED\_\*, skip this test. This is an optional control.
-
-If a driver does not support a control, do not implement a control handler. If a control handler is implemented, the registered test will expect the control to be fully functional.
-
-If a driver implements a control handler, the following checks run (based on the definition of the controls):
-
--   The test verifies default values and validates that the appropriate property is advertised on the correct pin or filter level.
-
--   The test enumerates possible control values during the times that pins are streaming and not streaming.
-
--   Scenario tests are run on the control to determine the end-to-end functionality.
-
->[!NOTE]
-Implementation of extended controls, such as photo mode, require that you implement additional extended controls.
-
-
-## Test details
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><mark type="bullet_intro">Specifications</b></td>
-<td><ul>
-<li>System.Client.Camera.VideoCaptureAndCameraControls</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td><mark type="bullet_intro">Platforms</b></td>
-<td><ul>
-<li><tla rid="win_threshold_desktop"></tla> x86</li>
-<li><tla rid="win_threshold_desktop"></tla> x64</li>
-<li><tla rid="win_threshold_mobile"></tla> ARM</li>
-<li><tla rid="win_threshold_desktop"></tla> ARM64</li>
-<li><tla rid="win_threshold_mobile"></tla> ARM64</li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td><mark type="bullet_intro">Supported Releases</b></td>
-<td><ul>
-<li><tla rid="win_10"></tla></li>
-<li><tla rid="win_10_th2"></tla></li>
-<li><tla rid="win_10_rs1"></tla></li>
-<li>Windows 10, version 1703</li>
-<li>Windows 10, version 1709</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td><mark type="bullet_intro">Expected run time (in minutes)</b></td>
-<td>15</td>
-</tr>
-<tr class="odd">
-<td><mark type="bullet_intro">Category</b></td>
-<td>Scenario</td>
-</tr>
-<tr class="even">
-<td><mark type="bullet_intro">Timeout (in minutes)</b></td>
-<td>25</td>
-</tr>
-<tr class="odd">
-<td><mark type="bullet_intro">Requires reboot</b></td>
-<td>false</td>
-</tr>
-<tr class="even">
-<td><mark type="bullet_intro">Requires special configuration</b></td>
-<td>false</td>
-</tr>
-<tr class="odd">
-<td><mark type="bullet_intro">Type</b></td>
-<td>automatic</td>
-</tr>
-</tbody>
-</table>
-
-## Additional documentation
-
-Tests in this feature area might have additional documentation, including prerequisites, setup, and troubleshooting information, that can be found in the following topic(s):
-
--   <xref rid="p_hlk_test.system_client_additional_documentation">System.Client additional documentation</b>
-
-## Running the test
-
-Before you run the test, complete the test setup as described in the test requirements: <xref rid="p_hlk_test.system_client_testing_prerequisites">System Client Testing Prerequisites</b> and <xref rid="p_hlk_test.webcam_testing_prerequisites">Webcam Testing Prerequisites</b>.
-
-## Troubleshooting
-
-For generic troubleshooting of HLK test failures, see <xref rid="p_hlk.troubleshooting_windows_hlk_test_failures">Troubleshooting Windows HLK Test Failures</b>.
-
-For troubleshooting information, see <xref rid="p_hlk_test.troubleshooting_system_client_testing">Troubleshooting System Client Testing</b> and <xref rid="p_hlk_test.troubleshooting_devicestreaming_testing">Troubleshooting Device.Streaming Testing</b>.
-
-## More information
-
-## Parameters
-
-| Parameter name                                            | Parameter description                                                |
-|-----------------------------------------------------------|----------------------------------------------------------------------|
-| <mark type="bullet_intro">DriverVerifierExcludedFlags</b> | Driver Verifier flags that may be manually excluded for the test run |
-
-
+
+These set of tests validate cameras functionality if the driver supports KSPROPERTY\_CAMERACONTROL\_EXTENDED\_\*. If the driver does not support KSPROPERTY\_CAMERACONTROL\_EXTENDED\_\*, skip this test. This is an optional control.
+
+If a driver does not support a control, do not implement a control handler. If a control handler is implemented, the registered test will expect the control to be fully functional.
+
+If a driver implements a control handler, the following checks run (based on the definition of the controls):
+
+-   The test verifies default values and validates that the appropriate property is advertised on the correct pin or filter level.
+
+-   The test enumerates possible control values during the times that pins are streaming and not streaming.
+
+-   Scenario tests are run on the control to determine the end-to-end functionality.
+
+**Note**  
+Implementation of extended controls, such as photo mode, require that you implement additional extended controls.
+
+ 
+
+## <span id="Test_details"></span><span id="test_details"></span><span id="TEST_DETAILS"></span>Test details
+
+
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><strong>Specifications</strong></td>
+<td><ul>
+<li>System.Client.Camera.VideoCaptureAndCameraControls</li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><strong>Platforms</strong></td>
+<td><ul>
+<li>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</li>
+<li>Windows 10 for desktop editions x64</li>
+<li>Windows 10 Mobile ARM</li>
+<li>Windows 10 for desktop editions ARM64</li>
+<li>Windows 10 Mobile ARM64</li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><strong>Supported Releases</strong></td>
+<td><ul>
+<li>Windows 10</li>
+<li>Windows 10, version 1511</li>
+<li>Windows 10, version 1607</li>
+<li>Windows 10, version 1703</li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><strong>Expected run time (in minutes)</strong></td>
+<td>15</td>
+</tr>
+<tr class="odd">
+<td><strong>Category</strong></td>
+<td>Scenario</td>
+</tr>
+<tr class="even">
+<td><strong>Timeout (in minutes)</strong></td>
+<td>25</td>
+</tr>
+<tr class="odd">
+<td><strong>Requires reboot</strong></td>
+<td>false</td>
+</tr>
+<tr class="even">
+<td><strong>Requires special configuration</strong></td>
+<td>false</td>
+</tr>
+<tr class="odd">
+<td><strong>Type</strong></td>
+<td>automatic</td>
+</tr>
+</tbody>
+</table>
+
+ 
+
+## <span id="Additional_documentation"></span><span id="additional_documentation"></span><span id="ADDITIONAL_DOCUMENTATION"></span>Additional documentation
+
+
+Tests in this feature area might have additional documentation, including prerequisites, setup, and troubleshooting information, that can be found in the following topic(s):
+
+-   [System.Client additional documentation](system-client-additional-documentation.md)
+
+## <span id="Running_the_test"></span><span id="running_the_test"></span><span id="RUNNING_THE_TEST"></span>Running the test
+
+
+Before you run the test, complete the test setup as described in the test requirements: [System Client Testing Prerequisites](system-client-testing-prerequisites.md) and [Webcam Testing Prerequisites](webcam-testing-prerequisites.md).
+
+## <span id="Troubleshooting"></span><span id="troubleshooting"></span><span id="TROUBLESHOOTING"></span>Troubleshooting
+
+
+For generic troubleshooting of HLK test failures, see [Troubleshooting Windows HLK Test Failures](p_hlk.troubleshooting_windows_hlk_test_failures).
+
+For troubleshooting information, see [Troubleshooting System Client Testing](troubleshooting-system-client-testing.md) and [Troubleshooting Device.Streaming Testing](troubleshooting-devicestreaming-testing.md).
+
+## <span id="More_information"></span><span id="more_information"></span><span id="MORE_INFORMATION"></span>More information
+
+
+### <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+
+| Parameter name                  | Parameter description                                                |
+|---------------------------------|----------------------------------------------------------------------|
+| **DriverVerifierExcludedFlags** | Driver Verifier flags that may be manually excluded for the test run |
+
+ 
+
+ 
+
+ 
+
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_hlk_test\p_hlk_test%5D:%20Camera%20Driver%20Controls%20System%20Test%20-%20SCENEMODE%20-%20Get%20Default%20setting%20%20RELEASE:%20%288/29/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default.aspx. "Send comments about this topic to Microsoft")
+
 
 
 

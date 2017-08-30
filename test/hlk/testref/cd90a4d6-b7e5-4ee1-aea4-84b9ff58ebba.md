@@ -1,105 +1,109 @@
 ---
 title: Mobile Print - Rendering Tests (Device Processed)
-Description: Mobile Print - Rendering Tests (Device Processed)
+description: Mobile Print - Rendering Tests (Device Processed)
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4addd258-39ba-45bb-b52b-43a1925abbdc
-author: sapaetsc-msft
-ms.author: sapaetsc
-ms.date: 08/28/17
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
 ---
 
-# Mobile Print - Rendering Tests (Device Processed)
+# <span id="p_hlk_test.cd90a4d6-b7e5-4ee1-aea4-84b9ff58ebba"></span>Mobile Print - Rendering Tests (Device Processed)
 
-<conditional_block> <conditions> <docset value="standalone"></docset> </conditions>
-
->[!NOTE]
-You can find the latest version of this test documentation on MSDN at the following link:
-
--   <xref hlink="http://msdn.microsoft.com/en-us/library/windows/hardware/4addd258-39ba-45bb-b52b-43a1925abbdc">http://msdn.microsoft.com/en-us/library/windows/hardware/4addd258-39ba-45bb-b52b-43a1925abbdc</b>
-
-
-</conditional_block> The Mobile Print Rendering Tests test printing to PWG-Raster, PCLm, XPS, and OXPS compatible printers. The tests produce numerous pages of output at different DPI sizes, page sizes, page orientations, page orderings, and color formats suported by the printer (as defined by the PrintDeviceCapabilities).
-
-## Test details
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><mark type="bullet_intro">Specifications</b></td>
-<td><ul>
-<li>Device.Imaging.Printer.Mobile.PDL</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td><mark type="bullet_intro">Platforms</b></td>
-<td><ul>
-<li><tla rid="win_threshold_desktop"></tla> x86</li>
-<li><tla rid="win_threshold_desktop"></tla> x64</li>
-<li><tla rid="win_threshold_server"></tla> x64</li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td><mark type="bullet_intro">Supported Releases</b></td>
-<td><ul>
-<li><tla rid="win_10"></tla></li>
-<li><tla rid="win_10_th2"></tla></li>
-<li><tla rid="win_10_rs1"></tla></li>
-<li>Windows 10, version 1703</li>
-<li>Windows 10, version 1709</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td><mark type="bullet_intro">Expected run time (in minutes)</b></td>
-<td>10</td>
-</tr>
-<tr class="odd">
-<td><mark type="bullet_intro">Category</b></td>
-<td>Compatibility</td>
-</tr>
-<tr class="even">
-<td><mark type="bullet_intro">Timeout (in minutes)</b></td>
-<td>30</td>
-</tr>
-<tr class="odd">
-<td><mark type="bullet_intro">Requires reboot</b></td>
-<td>false</td>
-</tr>
-<tr class="even">
-<td><mark type="bullet_intro">Requires special configuration</b></td>
-<td>false</td>
-</tr>
-<tr class="odd">
-<td><mark type="bullet_intro">Type</b></td>
-<td>manual</td>
-</tr>
-</tbody>
-</table>
-
-## Additional documentation
-
-Tests in this feature area might have additional documentation, including prerequisites, setup, and troubleshooting information, that can be found in the following topic(s):
-
--   <xref rid="p_hlk_test.device_imaging_additional_documentation">Device.Imaging additional documentation</b>
-
-## More information
-
-## Parameters
-
-| Parameter name                                 | Parameter description   |
-|------------------------------------------------|-------------------------|
-| <mark type="bullet_intro">WDKWSDServiceURL</b> | WSD Printer Service URL |
-| <mark type="bullet_intro">WDKWSDServiceID</b>  | WSD Printer Service Id  |
-| <mark type="bullet_intro">WDKWSDDeviceID</b>   | WSD Printer Device Id   |
-
-## Troubleshooting
-
-For generic troubleshooting of HLK test failures, see <xref rid="p_hlk.troubleshooting_windows_hlk_test_failures">Troubleshooting Windows HLK Test Failures</b>.
+
+The Mobile Print Rendering Tests test printing to PWG-Raster, PCLm, XPS, and OXPS compatible printers. The tests produce numerous pages of output at different DPI sizes, page sizes, page orientations, page orderings, and color formats suported by the printer (as defined by the PrintDeviceCapabilities).
+
+## <span id="Test_details"></span><span id="test_details"></span><span id="TEST_DETAILS"></span>Test details
+
+
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><strong>Specifications</strong></td>
+<td><ul>
+<li>Device.Imaging.Printer.Mobile.PDL</li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><strong>Platforms</strong></td>
+<td><ul>
+<li>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</li>
+<li>Windows 10 for desktop editions x64</li>
+<li>Windows Server 2016 x64</li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><strong>Supported Releases</strong></td>
+<td><ul>
+<li>Windows 10</li>
+<li>Windows 10, version 1511</li>
+<li>Windows 10, version 1607</li>
+<li>Windows 10, version 1703</li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><strong>Expected run time (in minutes)</strong></td>
+<td>10</td>
+</tr>
+<tr class="odd">
+<td><strong>Category</strong></td>
+<td>Compatibility</td>
+</tr>
+<tr class="even">
+<td><strong>Timeout (in minutes)</strong></td>
+<td>30</td>
+</tr>
+<tr class="odd">
+<td><strong>Requires reboot</strong></td>
+<td>false</td>
+</tr>
+<tr class="even">
+<td><strong>Requires special configuration</strong></td>
+<td>false</td>
+</tr>
+<tr class="odd">
+<td><strong>Type</strong></td>
+<td>manual</td>
+</tr>
+</tbody>
+</table>
+
+ 
+
+## <span id="Additional_documentation"></span><span id="additional_documentation"></span><span id="ADDITIONAL_DOCUMENTATION"></span>Additional documentation
+
+
+Tests in this feature area might have additional documentation, including prerequisites, setup, and troubleshooting information, that can be found in the following topic(s):
+
+-   [Device.Imaging additional documentation](device-imaging-additional-documentation.md)
+
+## <span id="More_information"></span><span id="more_information"></span><span id="MORE_INFORMATION"></span>More information
+
+
+### <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+
+| Parameter name       | Parameter description   |
+|----------------------|-------------------------|
+| **WDKWSDServiceURL** | WSD Printer Service URL |
+| **WDKWSDServiceID**  | WSD Printer Service Id  |
+| **WDKWSDDeviceID**   | WSD Printer Device Id   |
+
+ 
+
+## <span id="Troubleshooting"></span><span id="troubleshooting"></span><span id="TROUBLESHOOTING"></span>Troubleshooting
+
+
+For generic troubleshooting of HLK test failures, see [Troubleshooting Windows HLK Test Failures](p_hlk.troubleshooting_windows_hlk_test_failures).
+
+ 
+
+ 
+
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_hlk_test\p_hlk_test%5D:%20Mobile%20Print%20-%20Rendering%20Tests%20%28Device%20Processed%29%20%20RELEASE:%20%288/29/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default.aspx. "Send comments about this topic to Microsoft")
+
 
 
 

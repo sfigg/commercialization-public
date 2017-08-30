@@ -1,282 +1,288 @@
 ---
 title: Present Validation 2 - Present
-Description: Present Validation 2 - Present
+description: Present Validation 2 - Present
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 45456ff3-1338-418c-9f12-c2c6ca696a2e
-author: sapaetsc-msft
-ms.author: sapaetsc
-ms.date: 08/28/17
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
 ---
 
-# Present Validation 2 - Present
+# <span id="p_hlk_test.b687537f-bbd2-40d7-bc43-ddd9bde29dcf"></span>Present Validation 2 - Present
 
-<conditional_block> <conditions> <docset value="standalone"></docset> </conditions>
-
->[!NOTE]
-You can find the latest version of this test documentation on MSDN at the following link:
-
--   <xref hlink="http://msdn.microsoft.com/en-us/library/windows/hardware/45456ff3-1338-418c-9f12-c2c6ca696a2e">http://msdn.microsoft.com/en-us/library/windows/hardware/45456ff3-1338-418c-9f12-c2c6ca696a2e</b>
-
-
-</conditional_block>
-
-This automated test validates the **Present()** method.
-
-Specifically, this test performs the following tasks:
-
--   Shrinks or stretches the height
-
--   Shrinks or stretches the width
-
--   Clips to the source area
-
--   Clips to the destination area
-
--   Overrides the destination window
-
-The test performs these tasks individually and in combination. It then verifies the resulting output for correctness.
-
-This topic applies to the following test jobs:
-
--   Present Validation 2
-
--   Present Validation 2 (WoW64)
-
--   Present Validation 2 - ColorConverting
-
--   Present Validation 2 - ColorConverting (WoW64)
-
--   Present Validation 2 - GammaPresent
-
--   Present Validation 2 - GammaPresent (WoW64)
-
--   Present Validation 2 - Present
-
--   Present Validation 2 - Present (WoW64)
-
-## Test details
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><mark type="bullet_intro">Specifications</b></td>
-<td><ul>
-<li>Device.Graphics.AdapterRender.MinimumDirectXLevel</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td><mark type="bullet_intro">Platforms</b></td>
-<td><ul>
-<li><tla rid="win_threshold_desktop"></tla> x86</li>
-<li><tla rid="win_threshold_desktop"></tla> x64</li>
-<li><tla rid="win_threshold_server"></tla> x64</li>
-<li><tla rid="win_threshold_desktop"></tla> ARM64</li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td><mark type="bullet_intro">Supported Releases</b></td>
-<td><ul>
-<li><tla rid="win_10"></tla></li>
-<li><tla rid="win_10_th2"></tla></li>
-<li><tla rid="win_10_rs1"></tla></li>
-<li>Windows 10, version 1703</li>
-<li>Windows 10, version 1709</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td><mark type="bullet_intro">Expected run time (in minutes)</b></td>
-<td>23</td>
-</tr>
-<tr class="odd">
-<td><mark type="bullet_intro">Category</b></td>
-<td>Compatibility</td>
-</tr>
-<tr class="even">
-<td><mark type="bullet_intro">Timeout (in minutes)</b></td>
-<td>23</td>
-</tr>
-<tr class="odd">
-<td><mark type="bullet_intro">Requires reboot</b></td>
-<td>false</td>
-</tr>
-<tr class="even">
-<td><mark type="bullet_intro">Requires special configuration</b></td>
-<td>false</td>
-</tr>
-<tr class="odd">
-<td><mark type="bullet_intro">Type</b></td>
-<td>automatic</td>
-</tr>
-</tbody>
-</table>
-
-## Additional documentation
-
-Tests in this feature area might have additional documentation, including prerequisites, setup, and troubleshooting information, that can be found in the following topic(s):
-
--   <xref rid="p_hlk_test.device_graphics_additional_documentation">Device.Graphics additional documentation</b>
-
-## Running the test
-
-Before you run the test, complete the test setup as described in the test requirements: <xref rid="p_hlk_test.graphic_adapter_or_chipset_testing_prerequisites">Graphic Adapter or Chipset Testing Prerequisites</b>.
-
-## Troubleshooting
-
-For generic troubleshooting of HLK test failures, see <xref rid="p_hlk.troubleshooting_windows_hlk_test_failures">Troubleshooting Windows HLK Test Failures</b>.
-
-For troubleshooting information, see <xref rid="p_hlk_test.troubleshooting_devicegraphics_testing">Troubleshooting Device.Graphics Testing</b>.
-
-## More information
-
-This test is similar to the standard Present Validation test. The difference is that Present Validation 2 resets the device into a state where the back buffer and the front buffer have different formats (if the call to the **CheckDeviceFormatConversion** method was successful). The test performs a comparison with a reference image that the Microsoft® Direct3D® API generates. The driver must perform the color conversion between those two formats. (Direct3D does not perform any software emulation.)
-
-This test uses the **IDirect3DSwapChain9::Present** method with the **D3DPRESENT\_LINEAR\_CONTENT** option.
-
-If the driver supports gamma presentation (that is, the driver exposes the D3DCAPS3 capabilities option **D3DCAPS3\_LINEAR\_TO\_SRGB\_PRESENTATION**), a gamma-corrected presentation should occur. This test verifies the correct output by post-processing the reference image via gamma 2.2 correction. If the driver claims that gamma presentation is not supported, the test verifies that no gamma correction occurs.
-
-The test performs the following tasks:
-
--   Scales the color channels to <inline_code devlang="cpp">\[0..1)</inline_code>
-
--   Calculates <inline_code devlang="cpp">Channel = pow( Channel, 1 / Gamma )</inline_code>
-
--   Scales the result back to <inline_code devlang="cpp">int \[0..256)</inline_code>
-
-<note type="warning">
-Gamma presentation is supported only on a desktop that has a 32-bit color depth.
-
-
-## Command syntax
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Command option</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><strong>Present2.exe -M:1 -dx9 -whql -logclean</strong></p></td>
-<td><p>Runs the Present Validation 2 test job.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Present2.exe -M:1 -whql -logclean</strong></p></td>
-<td><p>Runs the Present Validation 2 (WoW64) test job.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Present2.exe -ColorConverting -src:ref -M:1 -whql -logclean</strong></p></td>
-<td><p>Runs both the Present Validation 2 - ColorConverting test job and the Present Validation 2 - ColorConverting (WoW64) test job.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Present2.exe -GammaPresent -src:ref -M:1 -whql -logclean</strong></p></td>
-<td><p>Runs both the Present Validation 2 - GammaPresent test job and the Present Validation 2 - GammaPresent (WoW64) test job.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Present2.exe -Present -src:ref -M:1 -whql -logclean</strong></p></td>
-<td><p>Runs both the Present Validation 2 - Present test job and the Present Validation 2 - Present (WoW64) test job.</p></td>
-</tr>
-</tbody>
-</table>
-
->[!NOTE]
-For command-line help for this test binary, type **/?**.
-
-
-## File list
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>File</th>
-<th>Location</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>Configdisplay.exe</p></td>
-<td><p><placeholder>&lt;[testbinroot]&gt;</placeholder>\nttest\windowstest\tools\</p></td>
-</tr>
-<tr class="even">
-<td><p>D3d10ref.dll</p></td>
-<td><p><placeholder>&lt;[testbinroot]&gt;</placeholder>\nttest\graphics\d3d\support\</p></td>
-</tr>
-<tr class="odd">
-<td><p>D3d11ref.dll</p></td>
-<td><p><placeholder>&lt;[testbinroot]&gt;</placeholder>\nttest\windowstest\graphics\d3d\support\</p></td>
-</tr>
-<tr class="even">
-<td><p>D3dcompiler_test.dll</p></td>
-<td><p><placeholder>&lt;[testbinroot]&gt;</placeholder>\nttest\windowstest\graphics\d3d\support\</p></td>
-</tr>
-<tr class="odd">
-<td><p>D3dref9.dll</p></td>
-<td><p><placeholder>&lt;[testbinroot]&gt;</placeholder>\nttest\windowstest\graphics\d3d\support</p></td>
-</tr>
-<tr class="even">
-<td><p>D3dref8.dll</p></td>
-<td><p><placeholder>&lt;[testbinroot]&gt;</placeholder>\nttest\windowstest\graphics\d3d\support\</p></td>
-</tr>
-<tr class="odd">
-<td><p>D3dx10_test.dll</p></td>
-<td><p><placeholder>&lt;[testbinroot]&gt;</placeholder>\nttest\windowstest\graphics\d3d\support\</p></td>
-</tr>
-<tr class="even">
-<td><p>D3dx11_TEST.dll</p></td>
-<td><p><placeholder>&lt;[testbinroot]&gt;</placeholder>\nttest\windowstest\graphics\d3d\support\</p></td>
-</tr>
-<tr class="odd">
-<td><p>D3dx9_TEST.dll</p></td>
-<td><p><placeholder>&lt;[testbinroot]&gt;</placeholder>\nttest\windowstest\graphics\d3d\support\</p></td>
-</tr>
-<tr class="even">
-<td><p>D3dx8d.dll</p></td>
-<td><p><placeholder>&lt;[testbinroot]&gt;</placeholder>\nttest\windowstest\graphics\d3d\support\</p></td>
-</tr>
-<tr class="odd">
-<td><p>Fpstate.dll</p></td>
-<td><p><placeholder>&lt;[testbinroot]&gt;</placeholder>\nttest\windowstest\graphics\d3d\utility\</p></td>
-</tr>
-<tr class="even">
-<td><p>Modechange.exe</p></td>
-<td><p><placeholder>&lt;[testbinroot]&gt;</placeholder>\nttest\windowstest\graphics\d3d\utility\</p></td>
-</tr>
-<tr class="odd">
-<td><p>TDRWatch.exe</p></td>
-<td><p><placeholder>&lt;[testbinroot]&gt;</placeholder>\nttest\windowstest\graphics\</p></td>
-</tr>
-<tr class="even">
-<td><p>Vbswap.x</p></td>
-<td><p><placeholder>&lt;[testbinroot]&gt;</placeholder>\nttest\windowstest\graphics\d3d\conf\</p></td>
-</tr>
-</tbody>
-</table>
-
-## Parameters
-
-| Parameter name                                         | Parameter description                                 |
-|--------------------------------------------------------|-------------------------------------------------------|
-| <mark type="bullet_intro">MODIFIEDCMDLINE</b>          | Additional command line arguments for test executable |
-| <mark type="bullet_intro">LLU\_NetAccessOnly</b>       | LLU Name of net user                                  |
-| <mark type="bullet_intro">MONITOR</b>                  | Display device to test                                |
-| <mark type="bullet_intro">ConfigDisplayCommandLine</b> | Custom Command Line for ConfigDisplay. Default: logo  |
-| <mark type="bullet_intro">TDRArgs</b>                  | /get or /set                                          |
-
-
+
+This automated test validates the **Present()** method.
+
+Specifically, this test performs the following tasks:
+
+-   Shrinks or stretches the height
+
+-   Shrinks or stretches the width
+
+-   Clips to the source area
+
+-   Clips to the destination area
+
+-   Overrides the destination window
+
+The test performs these tasks individually and in combination. It then verifies the resulting output for correctness.
+
+This topic applies to the following test jobs:
+
+-   Present Validation 2
+
+-   Present Validation 2 (WoW64)
+
+-   Present Validation 2 - ColorConverting
+
+-   Present Validation 2 - ColorConverting (WoW64)
+
+-   Present Validation 2 - GammaPresent
+
+-   Present Validation 2 - GammaPresent (WoW64)
+
+-   Present Validation 2 - Present
+
+-   Present Validation 2 - Present (WoW64)
+
+## <span id="Test_details"></span><span id="test_details"></span><span id="TEST_DETAILS"></span>Test details
+
+
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><strong>Specifications</strong></td>
+<td><ul>
+<li>Device.Graphics.AdapterRender.MinimumDirectXLevel</li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><strong>Platforms</strong></td>
+<td><ul>
+<li>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</li>
+<li>Windows 10 for desktop editions x64</li>
+<li>Windows Server 2016 x64</li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><strong>Supported Releases</strong></td>
+<td><ul>
+<li>Windows 10</li>
+<li>Windows 10, version 1511</li>
+<li>Windows 10, version 1607</li>
+<li>Windows 10, version 1703</li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><strong>Expected run time (in minutes)</strong></td>
+<td>23</td>
+</tr>
+<tr class="odd">
+<td><strong>Category</strong></td>
+<td>Compatibility</td>
+</tr>
+<tr class="even">
+<td><strong>Timeout (in minutes)</strong></td>
+<td>1380</td>
+</tr>
+<tr class="odd">
+<td><strong>Requires reboot</strong></td>
+<td>false</td>
+</tr>
+<tr class="even">
+<td><strong>Requires special configuration</strong></td>
+<td>false</td>
+</tr>
+<tr class="odd">
+<td><strong>Type</strong></td>
+<td>automatic</td>
+</tr>
+</tbody>
+</table>
+
+ 
+
+## <span id="Additional_documentation"></span><span id="additional_documentation"></span><span id="ADDITIONAL_DOCUMENTATION"></span>Additional documentation
+
+
+Tests in this feature area might have additional documentation, including prerequisites, setup, and troubleshooting information, that can be found in the following topic(s):
+
+-   [Device.Graphics additional documentation](device-graphics-additional-documentation.md)
+
+## <span id="Running_the_test"></span><span id="running_the_test"></span><span id="RUNNING_THE_TEST"></span>Running the test
+
+
+Before you run the test, complete the test setup as described in the test requirements: [Graphic Adapter or Chipset Testing Prerequisites](graphic-adapter-or-chipset-testing-prerequisites.md).
+
+## <span id="Troubleshooting"></span><span id="troubleshooting"></span><span id="TROUBLESHOOTING"></span>Troubleshooting
+
+
+For generic troubleshooting of HLK test failures, see [Troubleshooting Windows HLK Test Failures](p_hlk.troubleshooting_windows_hlk_test_failures).
+
+For troubleshooting information, see [Troubleshooting Device.Graphics Testing](troubleshooting-devicegraphics-testing.md).
+
+## <span id="More_information"></span><span id="more_information"></span><span id="MORE_INFORMATION"></span>More information
+
+
+This test is similar to the standard Present Validation test. The difference is that Present Validation 2 resets the device into a state where the back buffer and the front buffer have different formats (if the call to the **CheckDeviceFormatConversion** method was successful). The test performs a comparison with a reference image that the Microsoft® Direct3D® API generates. The driver must perform the color conversion between those two formats. (Direct3D does not perform any software emulation.)
+
+This test uses the **IDirect3DSwapChain9::Present** method with the **D3DPRESENT\_LINEAR\_CONTENT** option.
+
+If the driver supports gamma presentation (that is, the driver exposes the D3DCAPS3 capabilities option **D3DCAPS3\_LINEAR\_TO\_SRGB\_PRESENTATION**), a gamma-corrected presentation should occur. This test verifies the correct output by post-processing the reference image via gamma 2.2 correction. If the driver claims that gamma presentation is not supported, the test verifies that no gamma correction occurs.
+
+The test performs the following tasks:
+
+-   Scales the color channels to `[0..1)`
+
+-   Calculates `Channel = pow( Channel, 1 / Gamma )`
+
+-   Scales the result back to `int [0..256)`
+
+**Warning**  
+Gamma presentation is supported only on a desktop that has a 32-bit color depth.
+
+ 
+
+### <span id="Command_syntax"></span><span id="command_syntax"></span><span id="COMMAND_SYNTAX"></span>Command syntax
+
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Command option</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><p><strong>Present2.exe -M:1 -dx9 -whql -logclean</strong></p></td>
+<td><p>Runs the Present Validation 2 test job.</p></td>
+</tr>
+<tr class="even">
+<td><p><strong>Present2.exe -M:1 -whql -logclean</strong></p></td>
+<td><p>Runs the Present Validation 2 (WoW64) test job.</p></td>
+</tr>
+<tr class="odd">
+<td><p><strong>Present2.exe -ColorConverting -src:ref -M:1 -whql -logclean</strong></p></td>
+<td><p>Runs both the Present Validation 2 - ColorConverting test job and the Present Validation 2 - ColorConverting (WoW64) test job.</p></td>
+</tr>
+<tr class="even">
+<td><p><strong>Present2.exe -GammaPresent -src:ref -M:1 -whql -logclean</strong></p></td>
+<td><p>Runs both the Present Validation 2 - GammaPresent test job and the Present Validation 2 - GammaPresent (WoW64) test job.</p></td>
+</tr>
+<tr class="odd">
+<td><p><strong>Present2.exe -Present -src:ref -M:1 -whql -logclean</strong></p></td>
+<td><p>Runs both the Present Validation 2 - Present test job and the Present Validation 2 - Present (WoW64) test job.</p></td>
+</tr>
+</tbody>
+</table>
+
+ 
+
+**Note**  
+For command-line help for this test binary, type **/?**.
+
+ 
+
+### <span id="File_list"></span><span id="file_list"></span><span id="FILE_LIST"></span>File list
+
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>File</th>
+<th>Location</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><p>Configdisplay.exe</p></td>
+<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\windowstest\tools\</p></td>
+</tr>
+<tr class="even">
+<td><p>D3d10ref.dll</p></td>
+<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\graphics\d3d\support\</p></td>
+</tr>
+<tr class="odd">
+<td><p>D3d11ref.dll</p></td>
+<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\windowstest\graphics\d3d\support\</p></td>
+</tr>
+<tr class="even">
+<td><p>D3dcompiler_test.dll</p></td>
+<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\windowstest\graphics\d3d\support\</p></td>
+</tr>
+<tr class="odd">
+<td><p>D3dref9.dll</p></td>
+<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\windowstest\graphics\d3d\support</p></td>
+</tr>
+<tr class="even">
+<td><p>D3dref8.dll</p></td>
+<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\windowstest\graphics\d3d\support\</p></td>
+</tr>
+<tr class="odd">
+<td><p>D3dx10_test.dll</p></td>
+<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\windowstest\graphics\d3d\support\</p></td>
+</tr>
+<tr class="even">
+<td><p>D3dx11_TEST.dll</p></td>
+<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\windowstest\graphics\d3d\support\</p></td>
+</tr>
+<tr class="odd">
+<td><p>D3dx9_TEST.dll</p></td>
+<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\windowstest\graphics\d3d\support\</p></td>
+</tr>
+<tr class="even">
+<td><p>D3dx8d.dll</p></td>
+<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\windowstest\graphics\d3d\support\</p></td>
+</tr>
+<tr class="odd">
+<td><p>Fpstate.dll</p></td>
+<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\windowstest\graphics\d3d\utility\</p></td>
+</tr>
+<tr class="even">
+<td><p>Modechange.exe</p></td>
+<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\windowstest\graphics\d3d\utility\</p></td>
+</tr>
+<tr class="odd">
+<td><p>TDRWatch.exe</p></td>
+<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\windowstest\graphics\</p></td>
+</tr>
+<tr class="even">
+<td><p>Vbswap.x</p></td>
+<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\windowstest\graphics\d3d\conf\</p></td>
+</tr>
+</tbody>
+</table>
+
+ 
+
+### <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+
+| Parameter name               | Parameter description                                 |
+|------------------------------|-------------------------------------------------------|
+| **MODIFIEDCMDLINE**          | Additional command line arguments for test executable |
+| **LLU\_NetAccessOnly**       | LLU Name of net user                                  |
+| **MONITOR**                  | Display device to test                                |
+| **ConfigDisplayCommandLine** | Custom Command Line for ConfigDisplay. Default: logo  |
+| **TDRArgs**                  | /get or /set                                          |
+
+ 
+
+ 
+
+ 
+
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_hlk_test\p_hlk_test%5D:%20Present%20Validation%202%20-%20Present%20%20RELEASE:%20%288/29/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default.aspx. "Send comments about this topic to Microsoft")
+
 
 
 

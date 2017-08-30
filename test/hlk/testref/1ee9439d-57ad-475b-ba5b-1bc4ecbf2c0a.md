@@ -1,194 +1,200 @@
 ---
 title: iSCSI Boot Firmware Table Test (LOGO)
-Description: iSCSI Boot Firmware Table Test (LOGO)
+description: iSCSI Boot Firmware Table Test (LOGO)
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: bf46d5cf-8d5e-4678-a9ce-7c8be3b42574
-author: sapaetsc-msft
-ms.author: sapaetsc
-ms.date: 08/28/17
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
 ---
 
-# iSCSI Boot Firmware Table Test (LOGO)
+# <span id="p_hlk_test.1ee9439d-57ad-475b-ba5b-1bc4ecbf2c0a"></span>iSCSI Boot Firmware Table Test (LOGO)
 
-<conditional_block> <conditions> <docset value="standalone"></docset> </conditions>
-
->[!NOTE]
-You can find the latest version of this test documentation on MSDN at the following link:
-
--   <xref hlink="http://msdn.microsoft.com/en-us/library/windows/hardware/bf46d5cf-8d5e-4678-a9ce-7c8be3b42574">http://msdn.microsoft.com/en-us/library/windows/hardware/bf46d5cf-8d5e-4678-a9ce-7c8be3b42574</b>
-
-
-</conditional_block>
-
-This test verifies that the iSCSI Boot Firmware table is available and is valid.
-
-The iSCSI Boot Firmware Table (iBFT) is a block of information residing in memory that contains different entries that are required by the iSCSI boot process.
-
-## Test details
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><mark type="bullet_intro">Specifications</b></td>
-<td><ul>
-<li>Device.Storage.Controller.Iscsi.iSCSIBootComponent.FwTable</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td><mark type="bullet_intro">Platforms</b></td>
-<td><ul>
-<li><tla rid="win_threshold_server"></tla> x64</li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td><mark type="bullet_intro">Supported Releases</b></td>
-<td><ul>
-<li><tla rid="win_10"></tla></li>
-<li><tla rid="win_10_th2"></tla></li>
-<li><tla rid="win_10_rs1"></tla></li>
-<li>Windows 10, version 1703</li>
-<li>Windows 10, version 1709</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td><mark type="bullet_intro">Expected run time (in minutes)</b></td>
-<td>10</td>
-</tr>
-<tr class="odd">
-<td><mark type="bullet_intro">Category</b></td>
-<td>Development</td>
-</tr>
-<tr class="even">
-<td><mark type="bullet_intro">Timeout (in minutes)</b></td>
-<td>10</td>
-</tr>
-<tr class="odd">
-<td><mark type="bullet_intro">Requires reboot</b></td>
-<td>false</td>
-</tr>
-<tr class="even">
-<td><mark type="bullet_intro">Requires special configuration</b></td>
-<td>false</td>
-</tr>
-<tr class="odd">
-<td><mark type="bullet_intro">Type</b></td>
-<td>automatic</td>
-</tr>
-</tbody>
-</table>
-
-## Additional documentation
-
-Tests in this feature area might have additional documentation, including prerequisites, setup, and troubleshooting information, that can be found in the following topic(s):
-
--   <xref rid="p_hlk_test.device_storage_additional_documentation">Device.Storage additional documentation</b>
-
-## Running the test
-
-Before you run the test, complete the test setup as described in the test requirements: <xref rid="p_hlk_test.iscsi_boot_component_testing_prerequisites">iSCSI Boot Component Testing Prerequisites</b>.
-
-## Troubleshooting
-
-For generic troubleshooting of HLK test failures, see <xref rid="p_hlk.troubleshooting_windows_hlk_test_failures">Troubleshooting Windows HLK Test Failures</b>.
-
-For troubleshooting information, see: <xref rid="p_hlk_test.troubleshooting_devicestorage_testing">Troubleshooting Device.Storage Testing</b>.
-
-## More information
-
-iSCSI Boot Firmware Table test (iBFTest) consists of two binaries. A user-mode binary (ibftestwrap.exe) and a kernel-mode binary (ibftest.sys). Both binaries are required for the test to run successfully.
-
-1.  ibftestwrap.exe loads ibftest.sys into kernel mode.
-
-2.  ibftest.sys checks if iBFT exists in memory.
-
-3.  If iBFT exists in memory, ibftest.sys will get a copy of the table.
-
-4.  ibftest.sys validates the table and returns results to ibftestwrap.exe.
-
-5.  ibftestwrap.exe in turn provides a friendly log.
-
-6.  The log contains either the table if it is available and valid or a detailed error information if the table is unavailable or invalid.
-
-iBFTest ensures that the iBFT is present and available to the operating system for a consistent flow of the boot process. It also validates the various entries within the table and ensures that the table is intact. It ensures that all the information is compliant with the specification
-
-To run the test, do the following:
-
-1.  Copy iBFTest binaries: (Or make sure iBFTest is available within HLK Studio)
-
-    1.  Copy ibftestwrap.exe to test working directory.
-
-    2.  Copy ibftest.sys to test working directory.
-
-2.  Run ibftestwrap.exe
-
-## Command syntax
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Command option</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><strong>ibftest.exe</strong></p></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-
->[!NOTE]
-For command-line help for this test binary, type <inline_code devlang="cpp">/h</inline_code>
-
-
-## File list
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>File</th>
-<th>Location</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>Ibftest.exe</p></td>
-<td><p><placeholder>&lt;[testbinroot]&gt;</placeholder>\nttest\DriversTest\storage\wdk\ibftest\</p></td>
-</tr>
-<tr class="even">
-<td><p>Ibftest.sys</p></td>
-<td><p><placeholder>&lt;[testbinroot]&gt;</placeholder>\nttest\DriversTest\storage\wdk\ibftest\</p></td>
-</tr>
-<tr class="odd">
-<td><p>Ibftestwrap.exe</p></td>
-<td><p><placeholder>&lt;[testbinroot]&gt;</placeholder>\nttest\DriversTest\storage\wdk\ibftest\</p></td>
-</tr>
-</tbody>
-</table>
-
-## Parameters
-
-| Parameter name                                   | Parameter description                      |
-|--------------------------------------------------|--------------------------------------------|
-| <mark type="bullet_intro">LLU\_NetAccessOnly</b> | User account for accessing test fileshare. |
-| <mark type="bullet_intro">LLU\_LclAdminUsr</b>   | User account for running the test.         |
-
-
+
+This test verifies that the iSCSI Boot Firmware table is available and is valid.
+
+The iSCSI Boot Firmware Table (iBFT) is a block of information residing in memory that contains different entries that are required by the iSCSI boot process.
+
+## <span id="Test_details"></span><span id="test_details"></span><span id="TEST_DETAILS"></span>Test details
+
+
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><strong>Specifications</strong></td>
+<td><ul>
+<li>Device.Storage.Controller.Iscsi.iSCSIBootComponent.FwTable</li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><strong>Platforms</strong></td>
+<td><ul>
+<li>Windows Server 2016 x64</li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><strong>Supported Releases</strong></td>
+<td><ul>
+<li>Windows 10</li>
+<li>Windows 10, version 1511</li>
+<li>Windows 10, version 1607</li>
+<li>Windows 10, version 1703</li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><strong>Expected run time (in minutes)</strong></td>
+<td>10</td>
+</tr>
+<tr class="odd">
+<td><strong>Category</strong></td>
+<td>Development</td>
+</tr>
+<tr class="even">
+<td><strong>Timeout (in minutes)</strong></td>
+<td>600</td>
+</tr>
+<tr class="odd">
+<td><strong>Requires reboot</strong></td>
+<td>false</td>
+</tr>
+<tr class="even">
+<td><strong>Requires special configuration</strong></td>
+<td>false</td>
+</tr>
+<tr class="odd">
+<td><strong>Type</strong></td>
+<td>automatic</td>
+</tr>
+</tbody>
+</table>
+
+ 
+
+## <span id="Additional_documentation"></span><span id="additional_documentation"></span><span id="ADDITIONAL_DOCUMENTATION"></span>Additional documentation
+
+
+Tests in this feature area might have additional documentation, including prerequisites, setup, and troubleshooting information, that can be found in the following topic(s):
+
+-   [Device.Storage additional documentation](device-storage-additional-documentation.md)
+
+## <span id="Running_the_test"></span><span id="running_the_test"></span><span id="RUNNING_THE_TEST"></span>Running the test
+
+
+Before you run the test, complete the test setup as described in the test requirements: [iSCSI Boot Component Testing Prerequisites](iscsi-boot-component-testing-prerequisites.md).
+
+## <span id="Troubleshooting"></span><span id="troubleshooting"></span><span id="TROUBLESHOOTING"></span>Troubleshooting
+
+
+For generic troubleshooting of HLK test failures, see [Troubleshooting Windows HLK Test Failures](p_hlk.troubleshooting_windows_hlk_test_failures).
+
+For troubleshooting information, see: [Troubleshooting Device.Storage Testing](troubleshooting-devicestorage-testing.md).
+
+## <span id="More_information"></span><span id="more_information"></span><span id="MORE_INFORMATION"></span>More information
+
+
+iSCSI Boot Firmware Table test (iBFTest) consists of two binaries. A user-mode binary (ibftestwrap.exe) and a kernel-mode binary (ibftest.sys). Both binaries are required for the test to run successfully.
+
+1.  ibftestwrap.exe loads ibftest.sys into kernel mode.
+
+2.  ibftest.sys checks if iBFT exists in memory.
+
+3.  If iBFT exists in memory, ibftest.sys will get a copy of the table.
+
+4.  ibftest.sys validates the table and returns results to ibftestwrap.exe.
+
+5.  ibftestwrap.exe in turn provides a friendly log.
+
+6.  The log contains either the table if it is available and valid or a detailed error information if the table is unavailable or invalid.
+
+iBFTest ensures that the iBFT is present and available to the operating system for a consistent flow of the boot process. It also validates the various entries within the table and ensures that the table is intact. It ensures that all the information is compliant with the specification
+
+To run the test, do the following:
+
+1.  Copy iBFTest binaries: (Or make sure iBFTest is available within HLK Studio)
+
+    1.  Copy ibftestwrap.exe to test working directory.
+
+    2.  Copy ibftest.sys to test working directory.
+
+2.  Run ibftestwrap.exe
+
+### <span id="Command_syntax"></span><span id="command_syntax"></span><span id="COMMAND_SYNTAX"></span>Command syntax
+
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Command option</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><p><strong>ibftest.exe</strong></p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+ 
+
+**Note**  
+For command-line help for this test binary, type `/h`
+
+ 
+
+### <span id="File_list"></span><span id="file_list"></span><span id="FILE_LIST"></span>File list
+
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>File</th>
+<th>Location</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><p>Ibftest.exe</p></td>
+<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\DriversTest\storage\wdk\ibftest\</p></td>
+</tr>
+<tr class="even">
+<td><p>Ibftest.sys</p></td>
+<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\DriversTest\storage\wdk\ibftest\</p></td>
+</tr>
+<tr class="odd">
+<td><p>Ibftestwrap.exe</p></td>
+<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\DriversTest\storage\wdk\ibftest\</p></td>
+</tr>
+</tbody>
+</table>
+
+ 
+
+### <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+
+| Parameter name         | Parameter description                      |
+|------------------------|--------------------------------------------|
+| **LLU\_NetAccessOnly** | User account for accessing test fileshare. |
+| **LLU\_LclAdminUsr**   | User account for running the test.         |
+
+ 
+
+ 
+
+ 
+
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_hlk_test\p_hlk_test%5D:%20iSCSI%20Boot%20Firmware%20Table%20Test%20%28LOGO%29%20%20RELEASE:%20%288/29/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default.aspx. "Send comments about this topic to Microsoft")
+
 
 
 

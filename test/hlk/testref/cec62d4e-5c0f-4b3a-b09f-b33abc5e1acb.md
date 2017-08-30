@@ -1,108 +1,112 @@
 ---
 title: SMB FileIObvt LOGO test
-Description: SMB FileIObvt LOGO test
+description: SMB FileIObvt LOGO test
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 0f3d414c-160c-450a-9d1f-2f71ab4a52e9
-author: sapaetsc-msft
-ms.author: sapaetsc
-ms.date: 08/28/17
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
 ---
 
-# SMB FileIObvt LOGO test
+# <span id="p_hlk_test.cec62d4e-5c0f-4b3a-b09f-b33abc5e1acb"></span>SMB FileIObvt LOGO test
 
-<conditional_block> <conditions> <docset value="standalone"></docset> </conditions>
-
->[!NOTE]
-You can find the latest version of this test documentation on MSDN at the following link:
-
--   <xref hlink="http://msdn.microsoft.com/en-us/library/windows/hardware/0f3d414c-160c-450a-9d1f-2f71ab4a52e9">http://msdn.microsoft.com/en-us/library/windows/hardware/0f3d414c-160c-450a-9d1f-2f71ab4a52e9</b>
-
-
-</conditional_block> SMB FileIO test.
-
-## Test details
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><mark type="bullet_intro">Specifications</b></td>
-<td><ul>
-<li>Device.Network.LAN.KRDMA.KRDMA</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td><mark type="bullet_intro">Platforms</b></td>
-<td><ul>
-<li><tla rid="win_threshold_server"></tla> x64</li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td><mark type="bullet_intro">Supported Releases</b></td>
-<td><ul>
-<li><tla rid="win_10"></tla></li>
-<li><tla rid="win_10_th2"></tla></li>
-<li><tla rid="win_10_rs1"></tla></li>
-<li>Windows 10, version 1703</li>
-<li>Windows 10, version 1709</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td><mark type="bullet_intro">Expected run time (in minutes)</b></td>
-<td>150</td>
-</tr>
-<tr class="odd">
-<td><mark type="bullet_intro">Category</b></td>
-<td>Development</td>
-</tr>
-<tr class="even">
-<td><mark type="bullet_intro">Timeout (in minutes)</b></td>
-<td>150</td>
-</tr>
-<tr class="odd">
-<td><mark type="bullet_intro">Requires reboot</b></td>
-<td>false</td>
-</tr>
-<tr class="even">
-<td><mark type="bullet_intro">Requires special configuration</b></td>
-<td>false</td>
-</tr>
-<tr class="odd">
-<td><mark type="bullet_intro">Type</b></td>
-<td>automatic</td>
-</tr>
-</tbody>
-</table>
-
-## Additional documentation
-
-Tests in this feature area might have additional documentation, including prerequisites, setup, and troubleshooting information, that can be found in the following topic(s):
-
--   <xref rid="p_hlk_test.device_network_additional_documentation">Device.Network additional documentation</b>
-
-## More information
-
-## Parameters
-
-| Parameter name                                            | Parameter description |
-|-----------------------------------------------------------|-----------------------|
-| <mark type="bullet_intro">Test Drive 1</b>                |                       |
-| <mark type="bullet_intro">LOG\_FILE</b>                   |                       |
-| <mark type="bullet_intro">TestCase</b>                    |                       |
-| <mark type="bullet_intro">RemoteSupportIpv4Address</b>    |                       |
-| <mark type="bullet_intro">CONNECTIONS\_PER\_INTERFACE</b> |                       |
-| <mark type="bullet_intro">RemoteMessageIpAddress</b>      |                       |
-| <mark type="bullet_intro">FileIO Test Parameters</b>      |                       |
-| <mark type="bullet_intro">Test Drive 2</b>                |                       |
-
-## Troubleshooting
-
-For generic troubleshooting of HLK test failures, see <xref rid="p_hlk.troubleshooting_windows_hlk_test_failures">Troubleshooting Windows HLK Test Failures</b>.
+
+SMB FileIO test.
+
+## <span id="Test_details"></span><span id="test_details"></span><span id="TEST_DETAILS"></span>Test details
+
+
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><strong>Specifications</strong></td>
+<td><ul>
+<li>Device.Network.LAN.KRDMA.KRDMA</li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><strong>Platforms</strong></td>
+<td><ul>
+<li>Windows Server 2016 x64</li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><strong>Supported Releases</strong></td>
+<td><ul>
+<li>Windows 10</li>
+<li>Windows 10, version 1511</li>
+<li>Windows 10, version 1607</li>
+<li>Windows 10, version 1703</li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><strong>Expected run time (in minutes)</strong></td>
+<td>150</td>
+</tr>
+<tr class="odd">
+<td><strong>Category</strong></td>
+<td>Development</td>
+</tr>
+<tr class="even">
+<td><strong>Timeout (in minutes)</strong></td>
+<td>9000</td>
+</tr>
+<tr class="odd">
+<td><strong>Requires reboot</strong></td>
+<td>false</td>
+</tr>
+<tr class="even">
+<td><strong>Requires special configuration</strong></td>
+<td>false</td>
+</tr>
+<tr class="odd">
+<td><strong>Type</strong></td>
+<td>automatic</td>
+</tr>
+</tbody>
+</table>
+
+ 
+
+## <span id="Additional_documentation"></span><span id="additional_documentation"></span><span id="ADDITIONAL_DOCUMENTATION"></span>Additional documentation
+
+
+Tests in this feature area might have additional documentation, including prerequisites, setup, and troubleshooting information, that can be found in the following topic(s):
+
+-   [Device.Network additional documentation](device-network-additional-documentation.md)
+
+## <span id="More_information"></span><span id="more_information"></span><span id="MORE_INFORMATION"></span>More information
+
+
+### <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+
+| Parameter name                  | Parameter description |
+|---------------------------------|-----------------------|
+| **Test Drive 1**                |                       |
+| **LOG\_FILE**                   |                       |
+| **TestCase**                    |                       |
+| **RemoteSupportIpv4Address**    |                       |
+| **CONNECTIONS\_PER\_INTERFACE** |                       |
+| **RemoteMessageIpAddress**      |                       |
+| **FileIO Test Parameters**      |                       |
+| **Test Drive 2**                |                       |
+
+ 
+
+## <span id="Troubleshooting"></span><span id="troubleshooting"></span><span id="TROUBLESHOOTING"></span>Troubleshooting
+
+
+For generic troubleshooting of HLK test failures, see [Troubleshooting Windows HLK Test Failures](p_hlk.troubleshooting_windows_hlk_test_failures).
+
+ 
+
+ 
+
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_hlk_test\p_hlk_test%5D:%20SMB%20FileIObvt%20LOGO%20test%20%20RELEASE:%20%288/29/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default.aspx. "Send comments about this topic to Microsoft")
+
 
 
 
