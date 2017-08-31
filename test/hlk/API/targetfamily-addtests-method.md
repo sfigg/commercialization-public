@@ -10,7 +10,8 @@ ms.assetid: DD78D0DF-FDD3-4A83-80E4-4B5303A03243
 # TargetFamily.AddTests Method
 
 
-**Warning**  This functionality is being deprecated. Please use playlists to create custom test pass lists.
+>[!WARNING]
+>  This functionality is being deprecated. Please use playlists to create custom test pass lists.
 
  
 

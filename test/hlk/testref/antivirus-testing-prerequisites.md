@@ -27,7 +27,8 @@ The following hardware is required for testing. You might need additional hardwa
 
 -   Another computer that is running Windows Server 2008 R2 SP1
 
-**Note**  
+>[!NOTE]
+>  
 To certify your product for use on servers, the test computer must support four processors and a minimum of 1 GB of RAM. These system capabilities are required to test the Rebalance, D3 State, and Multiple Processor Group functionality of the device and driver. You do not need a computer that actually has more than 64 processors to test your device. Additionally, the server system(s) being used for device or driver testing must have Server Core installed prior to testing. For more information see [Windows Server Installation Options](http://go.microsoft.com/fwlink/p/?LinkID=251454).
 
 If you use a pool of test computers to test your product, at least one computer in the pool must contain four processors and a minimum of 1 GB of RAM. Additionally, that computer must contain the product that you want to test. As long as the driver is the same on all the computers in the pool, the system creates a schedule to run against all test computers.
@@ -36,12 +37,14 @@ For tests that do not include a driver to test, such as hard disk drive tests, t
 
  
 
-**Note**  
+>[!NOTE]
+>  
 Except for para-virtualization drivers (as defined by the [WHCP Policies and Processes](http://go.microsoft.com/fwlink/p/?LinkID=615222) document), you may not use any form of virtualization when you test physical devices and their associated drivers for server certification or signature. All virtualization products do not support the underlying functionality that is required to pass the tests that relate to multiple processor groups, device power management, device PCI functionality, and other tests.
 
  
 
-**Note**  Multiple Processor Groups Setting
+>[!NOTE]
+>  Multiple Processor Groups Setting
 You must set the value for the processor group size for Hardware Lab Kit testing of Windows Server 2008 R2 and later device drivers for certification. This is done by running bcdedit in an elevated command prompt window, using the /set option.
 
 The commands for adding the group settings and restarting are as follows:
@@ -62,7 +65,8 @@ shutdown.exe -r -t 0 -f
 
  
 
-**Note**  
+>[!NOTE]
+>  
 **Code Integrity Setting**
 
 The Virtualization Based Security feature (VBS) of Windows Server 2016 must be enabled using Server Manager first.
@@ -84,7 +88,8 @@ The following software is required for testing:
 
 -   The antivirus filter driver under test
 
-    **Warning**  
+    >[!WARNING]
+>  
     Make sure that you install the product on the test computer before you install the Windows HLK Client.
 
      

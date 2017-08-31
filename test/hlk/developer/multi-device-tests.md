@@ -12,7 +12,8 @@ ms.assetid: 235abea3-3345-439d-8992-0cd684863aaf
 
 This sample code show illustrates running multi-device tests.
 
-**Note**  
+>[!NOTE]
+>  
 The method returns the base target for multi-device tests (that is the base test device into which additional tests were consolidated). The TestResults.GetAllTests() method should return the list of tests that were actually run together; from that list, you can derive the actual targets against which the test ran.
 
  

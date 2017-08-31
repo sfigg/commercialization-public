@@ -10,7 +10,8 @@ ms.assetid: A661C62C-049D-4C9C-95D1-7D73A933FA7A
 # IRunTests.AddTests Method (IEnumerable{TestDefinition})
 
 
-**Warning**  This functionality is being deprecated. Please use playlists to create custom test pass lists.
+>[!WARNING]
+>  This functionality is being deprecated. Please use playlists to create custom test pass lists.
 
  
 

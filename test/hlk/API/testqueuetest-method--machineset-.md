@@ -56,7 +56,8 @@ This method schedules this object for execution.
 
 Returns IList, a list of results for the jobs that were scheduled. The test computer is always part of the machine set, this is only for additional test computers, required in multi-machine tests.
 
-**Tip**  
+>[!TIP]
+>  
 If you use the **QueueTest** method to add a computer to a test queue and that computer configuration subsequently changes, **QueueTest** can throw an exception. If an exception occurs, immediately retry **QueueTest**.
 
  

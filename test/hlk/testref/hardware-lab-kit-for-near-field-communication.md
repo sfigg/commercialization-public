@@ -38,7 +38,8 @@ After setting up the [HLK test framework](https://msdn.microsoft.com/en-us/libra
 -   Device with NFC chip that implements the Near Field Proximity DDIs (NFC client)
 -   Smart card reader connected to the PC client (either by USB or embedded in the PC client)
 
-**Note**  The PC client requires the installation of the Universal C Runtime. This package is available directly from the [Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=48234).
+>[!NOTE]
+>  The PC client requires the installation of the Universal C Runtime. This package is available directly from the [Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=48234).
 
  
 

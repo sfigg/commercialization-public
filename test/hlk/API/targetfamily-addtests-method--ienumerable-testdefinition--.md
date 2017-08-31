@@ -10,7 +10,8 @@ ms.assetid: E42E8DE2-22E3-417E-B170-1E4DF03CEFE6
 # TargetFamily.AddTests Method (IEnumerable{TestDefinition})
 
 
-**Warning**  This functionality is being deprecated. Please use playlists to create custom test pass lists.
+>[!WARNING]
+>  This functionality is being deprecated. Please use playlists to create custom test pass lists.
 
  
 

@@ -63,7 +63,8 @@ Callbacks are asynchronous, will not always occur on the same thread, and will o
 
 Each touch hardware certification run consists of a series of tests that is configurable by the Hardware Certification Kit (HLK) controller. Each test is designed to test a specific aspect of a touch digitizer, such as a tap, double tap, or drag test. Every test is composed of an interaction the robot is expected to perform and repeat a set number of times. The goal of the robot is to complete all of the tests by iterating through each one sequentially and performing each interaction.
 
-**Note**  
+>[!NOTE]
+>  
 While the basic idea of the interaction remains the same throughout the test, details such as the start and end points, are changed randomly.
 
  
@@ -72,7 +73,8 @@ While the basic idea of the interaction remains the same throughout the test, de
 
 The touch certification tool must be started from the HLK controller, or manually by using command line. The robot should not start the touch certification tool remotely. If the **ILogoAutomation** interface is created when the touch certification tool is not running, the interface will not be created.
 
-**Note**  
+>[!NOTE]
+>  
 It is not possible to automatically start the robot when the touch certification tool starts. The robot must be started manually for every test run or you must try to create the **ILogoAutomation** interface until it succeeds.
 
  
@@ -369,7 +371,8 @@ CoTaskMemFree(pszInteractionType);</code></pre>
 
 The following are a list of parameters for the **IInteractionObject** interface:
 
-**Note**  
+>[!NOTE]
+>  
 The type given is a subtype within Variant. You can get the values for **startTimes** by using **VariantToDoubleArrayAlloc**.
 
  
@@ -667,7 +670,8 @@ The following table lists the interaction types:
 
  
 
-**Note**  
+>[!NOTE]
+>  
 Even parameters marked as unused may be defined. The API consumer should be robust against extra information stored in the **InteractionObject**.
 
  
@@ -986,7 +990,8 @@ Developers should implement this interface and register it with the touch certif
 
 After registration, the interface will get callbacks for any events that happen.
 
-**Note**  
+>[!NOTE]
+>  
 Make sure to call this method to unregister the event sink before the robot controller is finished. Failing to do so may cause the status UI to freeze for several minutes before DCOM times out. The touch certification tool may try to call the event sink to deliver status updates and will be blocked by an event sink that is not responding. Eventually, the RPC call will timeout and the touch certification tool will recover and automatically unregister the event sink that is not responding.
 
 If the robot controller crashes, or the network is not available, the call to **UnregisterEventSink** cannot be guaranteed so the status UI may stop responding for a while. In such cases, if you want to preserve the previous touch certification tool test results, you should wait at least 6 minutes to allow the touch certification tool to recover from an RPC call timeout. If you do not need to preserve the previous test results, you can stop the touch certification tool process.
@@ -998,7 +1003,8 @@ If the robot controller crashes, or the network is not available, the call to **
 
 This is a partial example of how a robot controller could use the robot APIs.
 
-**Note**  
+>[!NOTE]
+>  
 This example does not cover error handling. For more information about error handling, see [Error handling](#bkmk-errorhandling).
 
  
@@ -1733,7 +1739,8 @@ You can also open the ports by using the command line by running the following c
 
 2.  From an elevated command prompt, type **logo3.exe /RegServer** and then press Enter.
 
-    **Note**  
+    >[!NOTE]
+>  
     The **RegServer** parameter is case sensitive.
 
      
@@ -1772,7 +1779,8 @@ Alternatively, you can call **CoCreateEx()** and specify the server name. If TCP
 
 Once you have completed all of the procedures in this section, the touch certification tool should be working and the robot controller should be able to connect.
 
-**Important**  
+>[!IMPORTANT]
+>  
 The touch certification tool does not allow com instantiations so it must be running on the server in order for the robot controller to connect.
 
  
@@ -1781,7 +1789,8 @@ The touch certification tool does not allow com instantiations so it must be run
 
 To configure the Robot API on Windows 8 computers that are not joined to a domain, you must modify the Access Permissions and Launch and Activation Permissions to allow the user account access from the server.
 
-**Note**  
+>[!NOTE]
+>  
 The client and server devices must be either in the same domain or in the same workgroup.
 
  
@@ -1826,7 +1835,8 @@ It is possible that some robot controllers only run by using an earlier version 
 
 3.  Save the contents of the Touch Certification Tool section into a registry file in the temporary folder.
 
-    **Note**  
+    >[!NOTE]
+>  
     If you are using a folder other than C:\\Logo as your temporary folder, you must update the registry file with the proper path.
 
      

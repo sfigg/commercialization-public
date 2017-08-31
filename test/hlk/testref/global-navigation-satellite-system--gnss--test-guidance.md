@@ -14,7 +14,8 @@ This article provides global positioning system (GPS) implementation guidelines 
 
 Testing of areas other than GPS is out of the scope of this document. Fully exercising the operating system components or the GNSS device is out of the scope of this document. It is assumed that the IHVs and OEMs thoroughly test their GNSS device both independently and integrated into the system. Interoperability testing is limited to the components that interact with the location platform and devices. This testing should include successful completion of the [Windows Hardware Lab Kit (Windows HLK)](http://go.microsoft.com/fwlink/?LinkID=8705) tests, this test plan, pre-operator trial tests, and internal tests that are developed specifically for the GNSS driver and GNSS receiver.
 
-**Note**  
+>[!NOTE]
+>  
 In this article, the term GPS is used interchangeably with GNSS. Unless it is otherwise stated, GPS refers to satellite positioning as a location provider solution, instead of as the GPS satellite system that is deployed by the United States government.
 
  
@@ -430,7 +431,8 @@ A GPS IHV can provide NMEA logging and plotting tools and documentation.
 
 Compare Signal-to-Noise Ratio (SNR) on the test device and on a reference device that has good GPS RF sensitivity at the same location under the same conditions. Enable IHV NMEA logs and take the devices for walk/drive testing for 15+ minutes under a clear sky. Analyze the logs by using the NMEA Plotting tool that the IHV provides. Compare average signal strength of the devices.
 
-**Note**  
+>[!NOTE]
+>  
 If you do not have the NMEA Plotting tool from an IHV, you can use Microsoft<sup>®</sup> Bing
 
  
@@ -472,7 +474,8 @@ Commonly used states for slates:
 
 -   Disable Mobile Broadband and confirm that GPS can still get a location fix. Re-enable Mobile Broadband.
 
-    **Note**  
+    >[!NOTE]
+>  
     GPS devices that use device services is an exception; these devices should first go into SENSOR\_STATE\_INITIALIZING state and, after 30 seconds, should go into the SENSOR\_STATE\_NOT\_AVAILABLE state when Mobile Broadband is disabled
 
      

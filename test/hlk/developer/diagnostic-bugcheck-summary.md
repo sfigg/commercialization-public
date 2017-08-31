@@ -12,7 +12,8 @@ ms.assetid: 4F0CC716-DDD1-4F89-B0B4-A035BDF3E000
 
 This sample shows how to retrieve and display a diagnostic bugcheck summary for a test that fails during a system crash.
 
-**Note**  This feature is available only for Desktop client and server machines.
+>[!NOTE]
+>  This feature is available only for Desktop client and server machines.
 
  
 

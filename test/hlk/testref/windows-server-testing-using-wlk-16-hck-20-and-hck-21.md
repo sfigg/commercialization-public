@@ -12,7 +12,8 @@ ms.assetid: 1d6e161d-81be-4211-95e3-e66e5c01f7b5
 
 The following information defines which certification kit (WLK 1.6, HLK 2.0, HLK 2.1) are applicable to Windows Server 2012 R2 and earlier.
 
-**Important**  
+>[!IMPORTANT]
+>  
 Please forward to those in your organization who could benefit from this information, particularly your certification and/or test teams.
 
  

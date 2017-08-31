@@ -10,7 +10,8 @@ ms.assetid: 215C9AD1-6AA7-4F6C-98E1-56B4F632C385
 # Project.AddTests Method
 
 
-**Warning**  This functionality is being deprecated. Please use playlists to create custom test pass lists.
+>[!WARNING]
+>  This functionality is being deprecated. Please use playlists to create custom test pass lists.
 
  
 

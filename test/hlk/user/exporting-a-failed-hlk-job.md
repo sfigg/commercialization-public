@@ -38,7 +38,8 @@ Not all results can be exported. The following list describes the limitatons on 
 
 3.  The test binaries and a batch file required to execute the test on a standalone system are exported to the specified directory. The exported test is saved in a subdirectory with the name and architecture of the failed job. Infrastructure components that must be installed to run the test is saved in a subdirectory called **Infrastructure** along with the name of the architecture to which the infrastructure is targeted.
 
-    **Note**  Infrastructure components should be installed only once on the target system. You do not need to reinstall these components for each failed job.
+    >[!NOTE]
+>  Infrastructure components should be installed only once on the target system. You do not need to reinstall these components for each failed job.
 
      
 
@@ -74,11 +75,13 @@ Not all results can be exported. The following list describes the limitatons on 
 
 5.  Execute (save folder)\\Infrastructure(*architecture*)\\setup(*architecture*).exe to install the infrastructure components before running the test. The infrastructure installer will display a dialog box that indicates whether the install of the components was successful.
 
-    **Note**  Infrastructure components should be installed only once on the target system. You do not need to reinstall these components for each failed job.
+    >[!NOTE]
+>  Infrastructure components should be installed only once on the target system. You do not need to reinstall these components for each failed job.
 
      
 
-    **Note**  The architecture of the installer and the job must match the architecture of the target system on which it is installed.
+    >[!NOTE]
+>  The architecture of the installer and the job must match the architecture of the target system on which it is installed.
 
      
 
@@ -88,7 +91,8 @@ Not all results can be exported. The following list describes the limitatons on 
     -   Changing parameter values to match the machine on which the exported test is run. For example, the instance ID of the same hardware often differs on two separate systems, so this would need to be updated before running the exported test.
     -   Adding commands to connect a debugger
 
-    **Note**  If a task shows the error message "This test cannot be run as it might reboot the machine.", you must edit run.cmd, and append **/rebootstatefile=(some\_file\_name)** to the command line of the failing task, as shown in the example below:
+    >[!NOTE]
+>  If a task shows the error message "This test cannot be run as it might reboot the machine.", you must edit run.cmd, and append **/rebootstatefile=(some\_file\_name)** to the command line of the failing task, as shown in the example below:
     ``` syntax
     cmd /c TE.exe /inproc /enablewttlogging /appendwttlogging devfund_pcirootportsurpriseremovetest_wlk_certification.dll 
     /p:"MultiDeviceHardwareIdSdelQueryHardwareID=!MultiDeviceHardwareIdSdelQueryHardwareID!" 
@@ -114,7 +118,8 @@ Not all results can be exported. The following list describes the limitatons on 
 
 8.  Once you identify and fix the issue that is causing the test to fail, you can deploy the fix and verify that the job succeeds within the HLK environment.
 
-    **Note**  You cannot import successful results back into the HLK environment. You must re-run the job from within the environment.
+    >[!NOTE]
+>  You cannot import successful results back into the HLK environment. You must re-run the job from within the environment.
 
      
 

@@ -10,7 +10,8 @@ ms.assetid: 7A7844B0-93CE-4B6B-BC47-D921DB7321E9
 # PlaylistManager.LoadPlaylist Method (string, bool, bool)
 
 
-**Warning**  This overload is being deprecated. The additional parameter options are no longer supported. Please use [LoadPlaylist(string playlistPath)](playlistmanager-loadplaylist-method--string-.md).
+>[!WARNING]
+>  This overload is being deprecated. The additional parameter options are no longer supported. Please use [LoadPlaylist(string playlistPath)](playlistmanager-loadplaylist-method--string-.md).
 
  
 

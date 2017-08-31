@@ -105,7 +105,8 @@ The following software is required to run the Windows Server System tests:
 
 -   The optional Windows Server BitLocker Drive Encryption component must be installed on the server if it is supported by the vendor pre-installed.
 
-**Warning**  
+>[!WARNING]
+>  
 The System Tests topic provides more information about the system requirements for the BitLocker Drive Encryption tests.
 
  
@@ -142,7 +143,8 @@ For tests that do not include a driver to test, such as hard disk drive tests, t
 
 Except for para-virtualization drivers (as defined by the [WHCP Policies and Processes](http://go.microsoft.com/fwlink/p/?LinkID=615222) document), you may not use any form of virtualization when you test physical devices and their associated drivers for server certification or signature. All virtualization products do not support the underlying functionality that is required to pass the tests that relate to multiple processor groups, device power management, device PCI functionality, and other tests.
 
-**Note**  Multiple Processor Groups Setting
+>[!NOTE]
+>  Multiple Processor Groups Setting
 You must set the value for the processor group size for Hardware Lab Kit testing of Windows Server 2008 R2 and later device drivers for certification. This is done by running bcdedit in an elevated command prompt window, using the /set option.
 
 The commands for adding the group settings and restarting are as follows:
@@ -163,7 +165,8 @@ shutdown.exe -r -t 0 -f
 
  
 
-**Note**  
+>[!NOTE]
+>  
 **Code Integrity Setting**
 
 The Virtualization Based Security feature (VBS) of Windows Server 2016 must be enabled using Server Manager first.

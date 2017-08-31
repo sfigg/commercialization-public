@@ -19,7 +19,8 @@ This specification defines the ACPI device object for a TPM 2.0 device and the c
 
 An additional static ACPI table (TPM2) is used to define the mechanism for communicating between the TPM 2.0 device and the Windows 8 OS.
 
-**Note**  
+>[!NOTE]
+>  
 Microsoft refers to the Trusted Computing Group’s “TPM.Next” term as “TPM 2.0”
 
  
@@ -86,7 +87,8 @@ This scenario illustrates how the memory clear feature of the system helps thwar
 
 10. The code on the USB device scans the system memory for the BitLocker Volume Master Key but it is not found.
 
-    **Warning**  
+    >[!WARNING]
+>  
     Steps 11 through 16 are similar to the earlier steps, but use the UEFI interface instead of ACPI
 
      
@@ -341,7 +343,8 @@ The system MUST implement the specification defined in \[TCG11\] per the additio
 
          
 
-        **Important**  
+        >[!IMPORTANT]
+>  
         For **SetNoPPIClear\_False**: if the BIOS implements the items marked “O1” or “O2” it must implement them as a set. For the **No Operation** that follows **SetNoPPIClear\_True**, the BIOS must not implement operations 19 and 20 if it does not implement operation 12.
 
          
@@ -970,7 +973,8 @@ This state diagram is for informative purposes only. The normative description o
 
 Figure 1: TPM 2.0 device states when using ACPI Start method
 
-**Note**  
+>[!NOTE]
+>  
 (a) Please note that multiple concurrent threads can interact with the Control Area concurrently. For example: one thread could initiate a command by setting the Start field and then issuing the Start method. Another thread can set the Cancel field in parallel. Hence, the possibility to have the Cancel field set after setting the Start field, but before issuing the Start method. (b) A Windows TPM 2.0 driver may react to error conditions differently than depicted. It might, for instance, transition into an error state when a timeout hits.
 
  

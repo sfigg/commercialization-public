@@ -10,7 +10,8 @@ ms.assetid: F0AB802F-02E9-4E19-8723-401570E44358
 # PlaylistManager.GetMissingTests Method
 
 
-**Warning**  This method is being deprecated.
+>[!WARNING]
+>  This method is being deprecated.
 
  
 

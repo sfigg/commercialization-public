@@ -10,7 +10,8 @@ ms.assetid: 22BB6A98-2895-4154-AA0A-9316C62480FE
 # ProductInstance.AddTests Method (IEnumerable{TestDefinition}, bool)
 
 
-**Warning**  This functionality is being deprecated. Please use playlists to create custom test pass lists.
+>[!WARNING]
+>  This functionality is being deprecated. Please use playlists to create custom test pass lists.
 
  
 

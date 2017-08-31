@@ -12,14 +12,16 @@ ms.assetid: 25425C6A-D375-4C5A-9A91-5F596DB32E96
 
 Follow these steps on the machine you have designated as your Proxy system– this can be either the same machine as the HLK Controller or a separate machine running a Client or Server SKU.
 
-**Note**  If a separate system is used as the Proxy client host, ensure that the Domain or Workgroup configuration matches the configuration of the HLK Controller. Account name and password of the proxy system should also match the HLK Controller.
+>[!NOTE]
+>  If a separate system is used as the Proxy client host, ensure that the Domain or Workgroup configuration matches the configuration of the HLK Controller. Account name and password of the proxy system should also match the HLK Controller.
 
  
 
 1.  On the Proxy system (which may be the same machine as the HLK Controller), run setup.exe from the following location:
     -   \\\\&lt;ControllerName&gt;\\HLKInstall\\ProxyClient\\setup.exe
 
-    **Note**  Replace &lt;ControllerName&gt; with the name of the test server.
+    >[!NOTE]
+>  Replace &lt;ControllerName&gt; with the name of the test server.
 
      
 

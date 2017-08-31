@@ -13,7 +13,8 @@ ms.assetid: 90f4912d-78be-4465-8ea0-de3d14512638
 ## <span id="Adding_a_driver_package"></span><span id="adding_a_driver_package"></span><span id="ADDING_A_DRIVER_PACKAGE"></span>Adding a driver package
 
 
-**Note**  We highly encourage you to include driver symbols as part of package creation. Including symbols enables Microsoft to triage and root cause issues related to your driver.
+>[!NOTE]
+>  We highly encourage you to include driver symbols as part of package creation. Including symbols enables Microsoft to triage and root cause issues related to your driver.
 
  
 

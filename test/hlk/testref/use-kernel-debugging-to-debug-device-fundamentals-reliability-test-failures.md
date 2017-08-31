@@ -127,7 +127,8 @@ To view local variables from a stack frame, you must perform the following actio
 
 4.  View locals by using the [dv (Display Local Variables)](http://go.microsoft.com/fwlink/?LinkID=299554) command.
 
-**Note**  
+>[!NOTE]
+>  
 You must use private symbols to dump local variables.
 
  

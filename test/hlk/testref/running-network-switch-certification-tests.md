@@ -110,7 +110,8 @@ The host machines that are connected to the network switch need to be configured
     -   SwitchUserName: The management user of the network switch
     -   SwitchPassword: The password for the network switch specified above
 
-    **Note**  The same credentials need to be set across all the hosts connected on the downlink of the host. Similarly, same credentials need to be set on both the network switches as well.
+    >[!NOTE]
+>  The same credentials need to be set across all the hosts connected on the downlink of the host. Similarly, same credentials need to be set on both the network switches as well.
 
      
 

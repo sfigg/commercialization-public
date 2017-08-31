@@ -42,7 +42,8 @@ You can start a WDTF trace collection from the command line, as shown in the fol
 
 3.  Reboot the computer.
 
-**Note**  
+>[!NOTE]
+>  
 For more information about trace options, see [Configuring and Starting an AutoLogger Session](http://go.microsoft.com/fwlink/?LinkID=296751) and [Logman](http://go.microsoft.com/fwlink/?LinkID=296752).
 
  

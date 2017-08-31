@@ -21,7 +21,8 @@ This document details the following sub-requirement of Windows Hardware Certific
 
 **Mandatory:  **The platform is required to implement a hardware interface and share documentation and tools as specified in this topic.
 
-**Note**  The reader is expected to know the fundamentals of UEFI and have a basic understanding of Secure Boot (Chapter 27 of the UEFI specification).
+>[!NOTE]
+>  The reader is expected to know the fundamentals of UEFI and have a basic understanding of Secure Boot (Chapter 27 of the UEFI specification).
 
  
 

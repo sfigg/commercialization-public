@@ -98,7 +98,8 @@ A test system encounters a critical error, or blue screen, during a test. After 
 
 In Windows HLK Manager, select and right-click the test and then select **Delete**. This action deletes the result and forces the test to run again.
 
-**Note**  
+>[!NOTE]
+>  
 Cancelling a running job requires the running test to check with the Windows HLK Controller to see if it has been canceled. Because this job is no longer running on the Windows HLK Client, selecting **Cancel** has no effect.
 
  

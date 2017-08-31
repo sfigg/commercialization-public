@@ -720,7 +720,8 @@ The TPM 2.0 MUST have access to its persistent storage prior to the call to Exit
 ## <span id="Appendix_A__Static_Root_of_Trust_Measurements"></span><span id="appendix_a__static_root_of_trust_measurements"></span><span id="APPENDIX_A__STATIC_ROOT_OF_TRUST_MEASUREMENTS"></span>Appendix A: Static Root of Trust Measurements
 
 
-**Important**  
+>[!IMPORTANT]
+>  
 Appendix A implementation of PCR\[7\] measurements is mandatory for InstantGo systems.
 
  
@@ -833,7 +834,8 @@ For all EFI variable value events, the EventType shall be EV\_EFI\_VARIABLE\_DRI
 
 6.  Before launching any additional EFI Drivers or EFI Boot Applications, the UEFI firmware SHALL check if the entry in the EFI\_IMAGE\_SECURITY\_DATABASE\_GUID/EFI\_IMAGE\_SECURITY\_DATABASE variable which validates the EFI image has previously been measured with the EV\_EFI\_VARIABLE\_AUTHORITY event type in PCR\[7\]. If it has not been, it MUST be measured as described in the previous step. If it has been measured previously, it MUST NOT be measured again.
 
-**Note**  
+>[!NOTE]
+>  
 A measurement example for PCR\[7\] measurements is available upon request from Microsoft.
 
  

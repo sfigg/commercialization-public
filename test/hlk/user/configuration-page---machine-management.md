@@ -27,7 +27,8 @@ Every project needs a machine pool. A machine pool can be used for multiple proj
 
 3.  Click **Default Pool**, and then confirm that each test computer appears in the main pane. If you've installed the Client software on multiple test computers, you can add any of them to the pool.
 
-    **Note**  
+    >[!NOTE]
+>  
     A computer can't be in more than one pool at a time.
 
      
@@ -38,7 +39,8 @@ Every project needs a machine pool. A machine pool can be used for multiple proj
 
     The **Status** column changes to **Ready**.
 
-    **Warning**  
+    >[!WARNING]
+>  
     You cannot schedule a test against a computer with status equal to **NotReady**. A computer cannot be set to ready while in the Default pool.
 
      
@@ -62,7 +64,8 @@ If you are upgrading your Test Server to a newer version, you must uninstall and
 
 3.  Delete the test computer from the machine pool.
 
-**Note**  
+>[!NOTE]
+>  
 If you do not uninstall HCK Client after deleting a test computer from the machine pool, the test computer will reappear in the machine pool. Once you uninstall HCK Client, the association between tests and results are broken. The package will contain the test results, but no log files associated with that client.
 
  

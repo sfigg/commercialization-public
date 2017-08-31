@@ -21,7 +21,8 @@ In some cases, having Secure Boot enabled on a test computer can cause the HLK C
 
     -   For Windows RT, install the **Windows Debug Policy**; you don't need to disable Secure Boot.
 
-        **Note**  
+        >[!NOTE]
+>  
         Only OEMs and Microsoft can perform this step.
 
          
@@ -201,7 +202,8 @@ In some cases, having Secure Boot enabled on a test computer can cause the HLK C
 
 6.  Enter the BIOS configuration and clear the Secure Boot configuration. This restores the system to Setup Mode by deleting PK and other keys.
 
-    **Note**  
+    >[!NOTE]
+>  
     Support for clearing is required for x86/x64 and prohibited for production Windows RT devices.
 
      
@@ -215,7 +217,8 @@ In some cases, having Secure Boot enabled on a test computer can cause the HLK C
 
 2.  Run device tests for only your devices.
 
-    **Note**  
+    >[!NOTE]
+>  
     System tests and tests that use drivers that are not signed by Microsoft will fail.
 
      

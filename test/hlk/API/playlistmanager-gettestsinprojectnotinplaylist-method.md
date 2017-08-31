@@ -10,7 +10,8 @@ ms.assetid: 0D1CE135-ED26-46D2-A8FA-BE80BEC56916
 # PlaylistManager.GetTestsInProjectNotInPlaylist Method
 
 
-**Warning**  This method is being deprecated.
+>[!WARNING]
+>  This method is being deprecated.
 
  
 

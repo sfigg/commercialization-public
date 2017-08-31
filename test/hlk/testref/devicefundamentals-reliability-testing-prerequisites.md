@@ -28,7 +28,8 @@ This topic describes configuration requirements for the Windows HLK Device Funda
 
 -   [Microsoft USB Test Tool (MUTT)](#mutt)
 
-**Note**  For information regarding prerequisites and configuration details for additional device types, see [Provided WDTF Simple I/O plug-ins](http://msdn.microsoft.com/en-us/library/windows/hardware/Hh781398.aspx).
+>[!NOTE]
+>  For information regarding prerequisites and configuration details for additional device types, see [Provided WDTF Simple I/O plug-ins](http://msdn.microsoft.com/en-us/library/windows/hardware/Hh781398.aspx).
 
  
 
@@ -47,7 +48,8 @@ When you test a Bluetooth mouse, you must keep the mouse moving during the entir
 ## <span id="lan"></span><span id="LAN"></span>LAN adapters
 
 
-**Note**  
+>[!NOTE]
+>  
 The network test configuration that is required to run Device Fundamentals Reliability tests for network LAN adapters is different from the network test configuration that is required to run [Device.Network Tests](device-network-tests.md).
 
  

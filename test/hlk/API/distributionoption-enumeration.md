@@ -12,7 +12,8 @@ ms.assetid: 2a062c9d-7578-413a-aac8-0b9043863044
 
 This class contains an enumeration that defines the options available for scheduling a test job.
 
-**Note**  
+>[!NOTE]
+>  
 These enumeration values are now used as flags that can be combined and retrieved by using bitwise operations.
 
  

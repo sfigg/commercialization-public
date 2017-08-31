@@ -27,7 +27,8 @@ You can also test portions of a single-product (at the target family level) acro
 
 When you open a package with an applied playlist in HLK Studio, only the playlist tests are shown in the UI.
 
-**Note**  
+>[!NOTE]
+>  
 To guarantee that none of the tests are missed, we recommend that you create a package for the source project before you divide testing into separate projects. This package does not necessarily hold any test results; its purpose is to hold all required tests for all family targets. Later, this package can be merged with other packages into a single submission package. In this way, the submission package holds all required tests, regardless of whether the test has been executed.
 
  
@@ -40,7 +41,8 @@ To guarantee that none of the tests are missed, we recommend that you create a p
 
 3.  Click **Add** and, in the Open dialog box, select an .hlkx package that you want to merge.
 
-    **Note**  
+    >[!NOTE]
+>  
     If you accidentally selected the wrong package, select the package in the data grid and click **Remove**.
 
     Packages that were previously selected and saved (by clicking **OK** in the dialog box) can only be removed by clicking **Reset** on the main **Package** tab. These packages have a lock icon next to them.

@@ -23,7 +23,8 @@ When Microsoft discovers a problem in either a Windows HLK test or in the operat
 
 ![download image](images/downloadbutton.jpg)[Download the latest HLK Filters](https://sysdev.microsoft.com/member/SubmissionWizard/LegalExemptions/HCKFilterUpdates.cab)
 
-**Note**  
+>[!NOTE]
+>  
 If your HLK environment doesn’t have access to the Internet, you can copy the file to your test server.
 
  

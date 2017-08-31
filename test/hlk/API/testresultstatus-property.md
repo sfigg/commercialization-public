@@ -43,7 +43,8 @@ This property represents the status of this certification test result.
 
 Returns **TestResultStatus**.
 
-**Note**  
+>[!NOTE]
+>  
 **TestResult.Status** does not return **Queued** (if a test is scheduled or running it returns **Running**).
 
  

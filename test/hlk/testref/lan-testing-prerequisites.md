@@ -12,7 +12,8 @@ ms.assetid: 5196ca19-9efa-4d47-8377-89aaa8895ad9
 
 The content in this section describes the LAN (Ethernet) testing prerequisites that you should complete before testing your network adapter using the Windows Hardware Lab Kit (Windows HLK).
 
-**Note**  
+>[!NOTE]
+>  
 This content applies to both stand-alone network adapters and integrated network devices.
 
  
@@ -85,7 +86,8 @@ It is recommended that the backchannel switch be the same network which the test
 
 The machine requirements are often dictated by the features which the test target supports. Certification on client SKUs will require 2 processing cores while certification on server SKUs will require 4 processing cores.
 
-**Note**  
+>[!NOTE]
+>  
 The term *cores* refers to physical processing cores (not virtual or hyper-threaded cores). If your device supports advanced features such as the ones below, then the minimum system requirements may be increased.
 
  
@@ -102,12 +104,14 @@ The term *cores* refers to physical processing cores (not virtual or hyper-threa
 
 -   QoS: storage target writes at 20% of max link rate
 
-**Note**  
+>[!NOTE]
+>  
 If send/receive packet loss problems happen frequently and throughout the test, it’s not likely a selective suspend problem.
 
  
 
-**Note**  
+>[!NOTE]
+>  
 To certify your product for use on servers, the test computer must support four processors and a minimum of 1 GB of RAM. These system capabilities are required to test the Rebalance, D3 State, and Multiple Processor Group functionality of the device and driver. You do not need a computer that actually has more than 64 processors to test your device. Additionally, the server system(s) being used for device or driver testing must have Server Core installed prior to testing. For more information see [Windows Server Installation Options](http://go.microsoft.com/fwlink/p/?LinkID=251454).
 
 If you use a pool of test computers to test devices, at least one computer in the pool must contain four processors and a minimum of 1 GB of RAM. Additionally, that computer must contain the device and the driver that you want to test. If the driver is the same on all the computers in the pool, the system creates a schedule to run against all test computers.
@@ -116,12 +120,14 @@ For tests that do not include a driver to test, such as hard disk drive tests, t
 
  
 
-**Note**  
+>[!NOTE]
+>  
 Except for para-virtualization drivers (as defined by the [WHCP Policies and Processes](http://go.microsoft.com/fwlink/p/?LinkID=615222) document), you may not use any form of virtualization when you test physical devices and their associated drivers for server certification or signature. All virtualization products do not support the underlying functionality that is required to pass the tests that relate to multiple processor groups, device power management, device PCI functionality, and other tests.
 
  
 
-**Note**  Multiple Processor Groups Setting
+>[!NOTE]
+>  Multiple Processor Groups Setting
 You must set the value for the processor group size for Hardware Lab Kit testing of Windows Server 2008 R2 and later device drivers for certification. This is done by running bcdedit in an elevated command prompt window, using the /set option.
 
 The commands for adding the group settings and restarting are as follows:
@@ -142,7 +148,8 @@ shutdown.exe -r -t 0 -f
 
  
 
-**Note**  
+>[!NOTE]
+>  
 **Code Integrity Setting**
 
 The Virtualization Based Security feature (VBS) of Windows Server 2016 must be enabled using Server Manager first.

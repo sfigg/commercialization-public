@@ -39,7 +39,8 @@ This method schedules this object for execution.
 
 Returns **IList**, which is a list of results for the jobs that were scheduled.
 
-**Tip**  
+>[!TIP]
+>  
 If you use the **QueueTest** method to add a computer to a test queue and that computer configuration subsequently changes, **QueueTest** can throw an exception. If an exception occurs, immediately retry **QueueTest**.
 
  

@@ -84,12 +84,14 @@ There are a number of checks done:
 
 If any of the checks fail, the method returns false.
 
-**Note**  
+>[!NOTE]
+>  
 This specifically allows different Device ID, PID (Product Id) or "Dev" and different sub vendor or implementer Ids.
 
  
 
-**Note**  
+>[!NOTE]
+>  
 This function populates the event log with additional data if the comparison has failed.
 
  

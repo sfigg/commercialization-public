@@ -491,7 +491,8 @@ Lay the device on a flat surface with the Windows button pointing due south.
 
 The compass should return a heading near 0 degrees.
 
-**Note**  
+>[!NOTE]
+>  
 Ignore the logging exception text. This will not cause a failure to be logged.
 
  
@@ -557,7 +558,8 @@ Based on the guidance in the [Integrating Motion and Orientation Sensors whitepa
 
 The tests will allow for angle errors of +/- 10 degrees.
 
-**Important**  
+>[!IMPORTANT]
+>  
 Please refer to the Validation of Euler Angles section of the Integrating Motion and Orientation Sensors whitepaper for the expected angles for each of the inclinometer tests.
 
  
@@ -665,7 +667,8 @@ Most rotation matrix and quaternion implementations will use data derived from b
 
 The tests use dot products to compute the delta between the expected vector and the vector retrieved from the advanced orientation sensors. The tests allow for a delta of up to 15 degrees. If testers find that the sensor is returning different values than what the test expects then the orientation fusion algorithm should be reviewed to see that it produces consistent results with the values given in the [Integrating Motion and Orientation Sensors whitepaper](http://go.microsoft.com/fwlink/?LinkId=262274).
 
-**Important**  
+>[!IMPORTANT]
+>  
 Please refer to the Validation of Euler Angles section of the Integrating Motion and Orientation Sensors whitepaper for the expected quaternion and rotation matrix values.
 
  

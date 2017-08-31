@@ -12,7 +12,8 @@ ms.assetid: 350AE7DA-0836-44C8-BA98-DEA1FD97F636
 
 This sample shows how to flash an OS image onto a mobile device as part of a test run.
 
-**Note**  This feature is supported only on mobile devices.
+>[!NOTE]
+>  This feature is supported only on mobile devices.
 
  
 

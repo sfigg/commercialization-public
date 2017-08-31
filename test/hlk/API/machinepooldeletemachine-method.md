@@ -12,7 +12,8 @@ ms.assetid: 6cfe9017-0b12-49a7-a4c3-0a892ef5f7d3
 
 This method delete the named machine for this machine pool. The machine to be deleted must be a child machine of this pool.
 
-**Warning**  
+>[!WARNING]
+>  
 Using the **MachinePool.DeleteMachine** method is NOT recommended because it may leave the deleted machine in an unusable state.
 
  

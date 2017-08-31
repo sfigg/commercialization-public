@@ -14,7 +14,8 @@ An HLK user account is automatically created for the person who installed the HL
 
 HLK administrators can create new HLK user accounts or modify the permissions of existing HLK user accounts.
 
-**Important**  
+>[!IMPORTANT]
+>  
 To create an HLK user account for a domain user, as opposed to a user account for a local user, you must be logged on to the HLK Studio computer as a domain user with administrator rights on the local machine.
 
  
@@ -159,14 +160,16 @@ The following is a list of the HLK datastore roles that you can assign a user wh
 
     2.  In the **Datastore User Properties - New User** dialog box, in the top pane, type the user name of the person you are creating a HLK user account for using the format domain\\username, where domain is the user's domain or workgroup name, and username is the user's user name.
 
-        **Note**  
+        >[!NOTE]
+>  
         If you are creating multiple user accounts, separate each user with a semicolon.
 
          
 
     3.  In the **Datastore Role** pane, select the **HLK\_DSOwners** check box.
 
-        **Warning**  
+        >[!WARNING]
+>  
         You can assign multiple roles to a new user at the same time. To grant this user administrator privileges, select the **hlk\_DSAdmins** check box also.
 
          
@@ -190,7 +193,8 @@ Complete the following procedure to grant a HLK user permission to run jobs on a
 
 6.  In the **User List** dialog box, click the user name, and then click **OK**.
 
-    **Warning**  
+    >[!WARNING]
+>  
     If the user name does not appear in the user list, the user does not have a HLK user account. Create the user account, and then give the user permission to run jobs.
 
      

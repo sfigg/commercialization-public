@@ -65,7 +65,8 @@ Each test that is described in this topic is available through the Windows HLK.
 
     -   Because the touchpad might not be perfectly aligned within the device, start PTLogo and use the visualization to make sure that the contact’s path is completely parallel to the visualization grid lines.
 
-        **Note**  
+        >[!NOTE]
+>  
         Pressing **C** in PTLogo will clear the visualization if you start to fill up the screen. If you started PTLogo with the actual test to be run, press **R** after the sensor is aligned to start at the beginning of the test.
 
          

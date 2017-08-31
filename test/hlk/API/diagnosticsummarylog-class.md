@@ -12,7 +12,8 @@ ms.assetid: F87098B0-5AE3-40FD-88F4-5F101494C496
 
 Represents a diagnostic or failure summary for a test result.
 
-**Note**  Currently, the summary only contains information for kernel mode crashes.
+>[!NOTE]
+>  Currently, the summary only contains information for kernel mode crashes.
 
  
 

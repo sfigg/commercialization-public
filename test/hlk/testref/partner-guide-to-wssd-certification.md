@@ -57,7 +57,8 @@ Ensure all components and systems have achieved Windows Server Software Defined 
 -   Component and System SDDC AQs are listed in the Windows Server Catalog [here](https://www.windowsservercatalog.com/)
 -   [Windows Hardware Lab Kit User's Guide](https://msdn.microsoft.com/library/windows/hardware/dn939963)
 
-**Note**  Microsoft will make updates to the HLK content and documentation available and needed. Those updates will be required for certification when released.
+>[!NOTE]
+>  Microsoft will make updates to the HLK content and documentation available and needed. Those updates will be required for certification when released.
 
  
 
@@ -144,7 +145,8 @@ HLKController VM
 6
  
 
-**Note**  \*Redeploy order specifies whether the stamp is to be redeployed along with the order of steps
+>[!NOTE]
+>  \*Redeploy order specifies whether the stamp is to be redeployed along with the order of steps
 
  
 
@@ -290,7 +292,8 @@ Prior to scheduling or running any tests in the HLK, complete the following step
 2.  On the **Explorers** menu, click **Job Explorer**.
 3.  In **Job Explorer**, press CTRL+Q to open the query pane, and search for jobs where **Name Equals Windows Logo Kit- Prepare client for submission**.
 4.  In the **Results** pane, note the **Job ID** for the matching job.
-    **Note**  The Job ID will be 1416.
+    >[!NOTE]
+>  The Job ID will be 1416.
 
      
 

@@ -12,7 +12,8 @@ ms.assetid: 2266843a-d9ec-41a1-9f65-e9c401b3b917
 
 This article describes the algorithm that is used by the Windows Hardware Lab Kit (Windows HLK) to determine the delta between the received and expected vector for 9-Axis data accuracy in the advanced orientation sensor tests. The tests validate that sensor fusion is properly integrated and that all sensors that are required for sensor fusion are properly integrated and installed.
 
-**Note**  
+>[!NOTE]
+>  
 In some cases, you can use the Sensor Diagnostic Tool to examine the 3D inclinometer and aggregated device orientation sensor that is under test.
 
  

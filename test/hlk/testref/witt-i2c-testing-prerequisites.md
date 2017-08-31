@@ -165,7 +165,8 @@ To setup a typical test configuration that uses a single controller, perform the
 
         In this test, TP1 is used as test interface (0x7F), TP2 (0x11) is configured as standard I²C target, TP3 (0x12) is configured as fast I²C target and TP4 (0x13) is configured as fast plus I²C target.
 
-        **Note**  
+        >[!NOTE]
+>  
         Change the I²C controller address that is listed in the table to that of the actual I²C controller.
 
          

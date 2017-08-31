@@ -10,7 +10,8 @@ ms.assetid: 2d5271aa-1102-4ad8-940d-68f75bdfdbcf
 # Creating a Submission Package
 
 
-**Note**  We highly encourage you to include driver symbols as part of package creation. Including symbols enables Microsoft to triage and root cause issues related to your driver.
+>[!NOTE]
+>  We highly encourage you to include driver symbols as part of package creation. Including symbols enables Microsoft to triage and root cause issues related to your driver.
 
  
 

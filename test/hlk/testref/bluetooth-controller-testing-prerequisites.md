@@ -21,7 +21,8 @@ The radio should be tested while connected over the transport type OEMs and ODMs
 
 The radio testing should be done in the default Windows configuration and no changes to Bluetooth settings should be made. For example, USB radios must support Selective Suspend and this will be enabled in Windows by default. Do not change this setting from the OS selected default.
 
-**Note**  
+>[!NOTE]
+>  
 It is **highly recommended** that IHVs who also produce a Profile Add-on pack perform additional Bluetooth System level testing (System.Client.BluetoothController) with their profile pack installed on the system as OEMs and ODMs will be required to certify their systems with these profile packs installed.
 
  

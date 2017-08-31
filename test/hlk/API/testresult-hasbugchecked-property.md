@@ -12,7 +12,8 @@ ms.assetid: 178D7CEC-4840-4316-A47D-E76BC45E6764
 
 Indicates whether a bugcheck occurred on the client machine during the test run.
 
-**Note**  Bugchecks aren't necessarily caused by tests. Additional triage of the crash dump file is required to determine what caused the bugcheck. For example, while running WiFi tests, a display driver might cause a bugcheck.
+>[!NOTE]
+>  Bugchecks aren't necessarily caused by tests. Additional triage of the crash dump file is required to determine what caused the bugcheck. For example, while running WiFi tests, a display driver might cause a bugcheck.
 
  
 

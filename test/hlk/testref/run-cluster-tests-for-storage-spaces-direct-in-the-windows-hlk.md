@@ -18,7 +18,8 @@ ms.assetid: D527C27B-F91E-41BF-B4DD-C404585C7944
 
 This document contains instructions for partners and original equipment manufacturers (OEMs) about how to use tests included in the Windows Hardware Lab Kit (HLK, formerly HCK) to validate specific hardware configurations for basic functionality and reliability for [Storage Spaces Direct (S2D)](https://technet.microsoft.com/library/mt126109.aspx).
 
-**Important**  Instructions in this document are for testing purposes only. They are *not* intended for end users or to configure systems for production use.
+>[!IMPORTANT]
+>  Instructions in this document are for testing purposes only. They are *not* intended for end users or to configure systems for production use.
 
  
 
@@ -57,7 +58,8 @@ For detailed instructions about how to install the HLK, see the [HLK user’s gu
 
 This step deploys the required test binaries and drivers to the cluster nodes and test controller so that you can run S2D tests. This test job needs to be run only once per cluster, even if you run actual S2D tests multiple times. This job will restart the machines.
 
-**Important**  Before running this test job, ensure that both secure boot and BitLocker are disabled on all machines used for testing. If you are using a virtual machine for the test controller, you may need to manually disable secure boot and BitLocker, as they may be enabled by default.
+>[!IMPORTANT]
+>  Before running this test job, ensure that both secure boot and BitLocker are disabled on all machines used for testing. If you are using a virtual machine for the test controller, you may need to manually disable secure boot and BitLocker, as they may be enabled by default.
 
  
 
@@ -95,7 +97,8 @@ This process takes about 10 minutes to run. It can take longer if your machines 
 
 After you prepare machines for tests, S2D also needs to be configured before you can run related tests. The following job will create cluster, enable S2D, and configure a pool and space.
 
-**Important**  This job will succeed only if *no* existing cluster, storage pool, or virtual disk has already been created. Before you run this job, first remove all virtual disks, storage pools, and cluster roles. Also remove the cluster itself. If you have already created a cluster, enabled S2D, and configured and validated the pool and spaces, skip this step and proceed to running the tests.
+>[!IMPORTANT]
+>  This job will succeed only if *no* existing cluster, storage pool, or virtual disk has already been created. Before you run this job, first remove all virtual disks, storage pools, and cluster roles. Also remove the cluster itself. If you have already created a cluster, enabled S2D, and configured and validated the pool and spaces, skip this step and proceed to running the tests.
 
  
 

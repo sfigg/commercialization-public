@@ -111,7 +111,8 @@ In Windows HLK Studio, review the test status icons on the **Results** tab. The 
 
  
 
-**Note**  
+>[!NOTE]
+>  
 If the status icon suggests that you have a Windows HLK infrastructure problem, see [Troubleshooting the Windows HLK Environment](troubleshooting-the-windows-hlk-environment.md).
 
  
@@ -143,7 +144,8 @@ Some Windows HLK tests require additional files that are not included in the Win
 
 Tests that require special configuration are denoted by a toolbox icon (![special configuration](images/hlk-winb-toolboxicon-commonts.png)) in the **Type** column in the **Test** pane and the **Results** pane in Windows HLK Studio. Special configuration details are described in the test reference topic for each test. For specific test reference documentation, see [HLK Test Reference](p_hlk_test.hardware_lab_kit_test_reference), or from in Windows HLK Studio, select the specific test on the **Test** tab or the **Result** tab, and then press **F1**.
 
-**Note**  
+>[!NOTE]
+>  
 The online version of the help content is generally the most current.
 
  
@@ -167,7 +169,8 @@ If a test fails during a multi-device test run, we recommend that you rerun the 
 
 Confirm that the Windows HLK infrastructure or the device configuration did not change after you selected the test target. Windows HLK gets the Windows HLK Client system configuration information when you select the test target. If you change the system or device configuration after you select the test target, you must then re-select the test target.
 
-**Warning**  
+>[!WARNING]
+>  
 Be aware that re-selecting the test target invalidates and removes all previous test results. We highly recommend that you do not make any device or infrastructure changes after you have started testing.
 
  
@@ -303,7 +306,8 @@ The system crash icon (![system crash icon](images/status-icon-failed-bug-check.
 
 In the **Configuration** tab of HLK Studio, the **Crash Dump Copy Back Setting** specifies whether to copy the kernel dump back to the HLK Controller.
 
-**Note**  Copying is disabled by default. For more information, see [Manually Configure HLK Client Kernel Debugger Settings](manually-configure-hlk-client-kernel-debugger-settings.md).
+>[!NOTE]
+>  Copying is disabled by default. For more information, see [Manually Configure HLK Client Kernel Debugger Settings](manually-configure-hlk-client-kernel-debugger-settings.md).
 
  
 

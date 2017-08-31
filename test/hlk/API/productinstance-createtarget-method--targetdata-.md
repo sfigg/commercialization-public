@@ -10,7 +10,8 @@ ms.assetid: 31A00F66-F9CC-44AC-8275-7C2A6BCEFBB8
 # ProductInstance.CreateTarget Method (TargetData)
 
 
-**Warning**  This functionality is being deprecated.
+>[!WARNING]
+>  This functionality is being deprecated.
 
  
 
