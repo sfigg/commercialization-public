@@ -14,7 +14,7 @@ ms.technology: windows-oem
 
 As an OEM you have an unique opportunity to impact the efficacy of the security measures abailable to your customers. Customers want and need the ability to secure their devices. Windows 10 security features are built on top of security enabled hardware and firmware. That's where you come in. If you want to provide a differentiator for your devices, or to sell in the Enterprise space, you want to provide the latest hardware enhancements, which in turn allow Windows 10 to be configured for safety. 
 
-**Note:** If you are an IT Professional and want to understand how these features work, or how to deploy them in your enterprise, see [Device Security](https://docs.microsoft.com/en-us/windows/device-security/). 
+**IT Professionals** To learn how to deploy these features in your enterprise, see [Device Security](https://docs.microsoft.com/en-us/windows/device-security/). 
 
 ## Windows 10S
 
@@ -57,7 +57,7 @@ Bitlocker device encryption is a set of features that you as an Original Equipme
 
 For more information on what hardware you need to provide to enable device encryption, see [Bitlocker device encryption hardware requirements](OEM-device-encryption.md)
 
-**Note:** If you are an IT Professional and want to understand how to configure and deploy Bitlocker in your enterprise, see [Bitlocker](https://docs.microsoft.com/en-us/windows/device-security/bitlocker/bitlocker-overview) content. 
+
 
 ## Windows Defender Credential Guard
 
