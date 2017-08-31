@@ -14,7 +14,7 @@ ms.technology: windows-oem
 
 As an OEM you have an unique opportunity to impact the efficacy of the security measures abailable to your customers. Customers want and need the ability to secure their devices. Windows 10 security features are built on top of security enabled hardware and firmware. That's where you come in. If you want to provide a differentiator for your devices, or to sell in the Enterprise space, you want to provide the latest hardware enhancements, which in turn allow Windows 10 to be configured for safety. 
 
-**IT Professionals** To learn how to deploy these features in your enterprise, see [Device Security](https://docs.microsoft.com/en-us/windows/device-security/). 
+**IT Professionals:** To learn how to deploy these features in your enterprise, see [Device Security](https://docs.microsoft.com/en-us/windows/device-security/). 
 
 ## Windows 10S
 
@@ -43,7 +43,7 @@ Hardware-based security features, also called virtualization-based security or V
 
 Trusted Platform Module (TPM) technology is designed to provide hardware-based, security-related functions. A TPM chip is a secure crypto-processor that helps you with actions such as generating, storing, and limiting the use of cryptographic keys. The chip includes multiple physical security mechanisms to make it tamper resistant, and malicious software is unable to tamper with the security functions of the TPM. For more information, see [Trusted Plaform Module (TPM) 2.0 hardware requirements](OEM-TPM.md).
 
-**Note:** If you are an IT Professional and want to understand how TPM works in your enterprise, see [Trusted Platform Module](https://docs.microsoft.com/en-us/windows/device-security/tpm/trusted-platform-module-top-node)
+**IT Professionals:** To understand how TPM works in your enterprise, see [Trusted Platform Module](https://docs.microsoft.com/en-us/windows/device-security/tpm/trusted-platform-module-top-node)
 
 ## Secure Boot
 
@@ -66,7 +66,7 @@ When Windows Defender Credential Guard is enabled, Kerberos does not allow uncon
 
 To learn more about hardware requirements for Windows Defender Credential Guard, see [Windows Defender Credential Guard hardware requirements](OEM-credential-guard.md) 
 
-**Note:** If you are an IT professional and want to understand how to configure and deploy Credential Guard in your enterprise, see [Protect derived domain credentials with Windows Defender Credential Guard](https://docs.microsoft.com/en-us/windows/access-protection/credential-guard/credential-guard).
+**IT Professionals:** To learn how to configure and deploy Windows Defender Credential Guard in your enterprise, see [Protect derived domain credentials with Windows Defender Credential Guard](https://docs.microsoft.com/en-us/windows/access-protection/credential-guard/credential-guard).
 
 ## Windows Defender Device Guard
 
@@ -74,7 +74,7 @@ Windows Defender Device Guard is a combination of enterprise-related hardware an
 
 Starting in Windows 10, 1703, the Windows Defender Device Guard features have been grouped into two new features: **Windows Defender Exploit Guard** and **Windows Defender Application control**. When these are both enabled, Windows Defender Device Guard is enabled. For more information about Windows Defender Device Guard hardware requirements, see [](Windows Defender Device Guard hardware requirements.md).
 
-**Note**  If you are an enterprise IT administrator looking to deploy Device Guard, see [Requirements and deployment planning guidelines for Device Guard](http://go.microsoft.com/fwlink/?LinkId=822877).
+***IT Professionals:** To learn how to deploy Windows Defender Device in your enterprise, see [Requirements and deployment planning guidelines for Device Guard](http://go.microsoft.com/fwlink/?LinkId=822877).
 
 ## Windows Defender Application Guard
 
