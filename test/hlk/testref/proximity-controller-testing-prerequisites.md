@@ -18,7 +18,7 @@ This topic describes the tasks that you must complete before you test a proximit
 
 -   [Test Computer Configuration](#bkmk-testcomputerconfiguration).
 
-## <span id="BKMK-HardwareRequirements"></span><span id="bkmk_hardwarerequirements"></span><span id="BKMK_HARDWAREREQUIREMENTS"></span>Hardware Requirements
+## <span id="BKMK_HardwareRequirements"></span><span id="bkmk-hardwarerequirements"></span><span id="BKMK_HARDWAREREQUIREMENTS"></span>Hardware Requirements
 
 
 The following hardware is required for testing a proximity-compliant controller. You might need more hardware if the controller includes more capabilities. See the test description for each test that the Windows HLK identifies to determine whether your controller requires more hardware.

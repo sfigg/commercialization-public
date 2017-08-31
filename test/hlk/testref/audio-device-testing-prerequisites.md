@@ -18,7 +18,7 @@ This section describes the tasks that you must complete before you test an audio
 
 -   [Test computer configuration](#bkmk-hlk-audio-tc).
 
-## <span id="BKMK-HLK-Audio-hR"></span><span id="bkmk_hlk_audio_hr"></span><span id="BKMK_HLK_AUDIO_HR"></span>Hardware requirements
+## <span id="BKMK_HLK_Audio_hR"></span><span id="bkmk-hlk-audio-hr"></span><span id="BKMK_HLK_AUDIO_HR"></span>Hardware requirements
 
 
 The following hardware is required for testing an audio device. You might need additional hardware if the test device provides bus-specific support. To determine whether additional hardware requirements apply, see the test description for each bus-specific test.

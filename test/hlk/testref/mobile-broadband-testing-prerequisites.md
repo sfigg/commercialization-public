@@ -32,7 +32,7 @@ Software-based Access Points using the Realtek 8185 chipset were deprecated with
 
  
 
-## <span id="BKMK-HCK-Mobile-hR"></span><span id="bkmk_hck_mobile_hr"></span><span id="BKMK_HCK_MOBILE_HR"></span>Hardware requirements
+## <span id="BKMK_HCK_Mobile_hR"></span><span id="bkmk-hck-mobile-hr"></span><span id="BKMK_HCK_MOBILE_HR"></span>Hardware requirements
 
 
 The following hardware is required for LAN device testing. You might need additional hardware if the test device provides bus-specific support. See the test description for each bus-specific test to determine if there are additional hardware requirements.

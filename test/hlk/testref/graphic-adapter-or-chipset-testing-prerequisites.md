@@ -18,7 +18,7 @@ This section describes the tasks that you must complete before you test a graphi
 
 -   [Test computer configuration](#bkmk-configure).
 
-## <span id="BKMK-HardwareRequirements"></span><span id="bkmk_hardwarerequirements"></span><span id="BKMK_HARDWAREREQUIREMENTS"></span>Hardware requirements
+## <span id="BKMK_HardwareRequirements"></span><span id="bkmk-hardwarerequirements"></span><span id="BKMK_HARDWAREREQUIREMENTS"></span>Hardware requirements
 
 
 The following hardware is required for testing a graphics adapter or chipset. This specific hardware fulfills the diversity requirements that demonstrate the stability of display drivers and chipsets. You might need additional hardware if the test device offers other features. To determine whether additional hardware requirements apply, see the test description for each test that appears for the device in Windows HLK Studio.

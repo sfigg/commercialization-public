@@ -20,7 +20,7 @@ This section describes the tasks that you must complete before you test a sensor
 
 Sensor devices as defined here are devices that work with the Windows® Sensor and Location platform. Currently this platform is only available on Windows 8 and Windows 7.
 
-## <span id="BKMK-HCK-Sensor-hR"></span><span id="bkmk_hck_sensor_hr"></span><span id="BKMK_HCK_SENSOR_HR"></span>Hardware requirements
+## <span id="BKMK_HCK_Sensor_hR"></span><span id="bkmk-hck-sensor-hr"></span><span id="BKMK_HCK_SENSOR_HR"></span>Hardware requirements
 
 
 The following hardware is required for testing a sensor device. You might need additional hardware if the test device offers other features. To determine whether additional hardware requirements apply, see the test description for each test displayed for the device in Windows HLK Studio.

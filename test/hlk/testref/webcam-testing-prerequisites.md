@@ -26,7 +26,7 @@ If the webcam isn't a stand-alone product (for example, an integrated webcam in 
 
  
 
-## <span id="BKMK-HCK-Webcam-hR"></span><span id="bkmk_hck_webcam_hr"></span><span id="BKMK_HCK_WEBCAM_HR"></span>Hardware requirements
+## <span id="BKMK_HCK_Webcam_hR"></span><span id="bkmk-hck-webcam-hr"></span><span id="BKMK_HCK_WEBCAM_HR"></span>Hardware requirements
 
 
 The following hardware is required for testing a webcam:

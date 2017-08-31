@@ -12,7 +12,7 @@ ms.assetid: 8ef5cdc1-5802-48a5-b3f4-7e511840bc9b
 
 This section describes the tasks that you must complete before you test a device by using the Windows Hardware Lab Kit (Windows HLK):
 
-## <span id="BKMK-HCK-Server-hR"></span><span id="bkmk_hck_server_hr"></span><span id="BKMK_HCK_SERVER_HR"></span>Hardware requirements
+## <span id="BKMK_HCK_Server_hR"></span><span id="bkmk-hck-server-hr"></span><span id="BKMK_HCK_SERVER_HR"></span>Hardware requirements
 
 
 The following hardware is required for Windows Server System testing. Additional hardware may be required if the test device provides bus-specific support. See the test description for each bus-specific test to determine if there are additional hardware requirements.

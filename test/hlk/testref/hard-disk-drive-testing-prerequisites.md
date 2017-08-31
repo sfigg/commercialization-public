@@ -40,7 +40,7 @@ The Windows HLK supports the testing of hard disks that have these connection ty
 
 -   SD / EMMC
 
-## <span id="BKMK-HardwareRequirements"></span><span id="bkmk_hardwarerequirements"></span><span id="BKMK_HARDWAREREQUIREMENTS"></span>Hardware Requirements
+## <span id="BKMK_HardwareRequirements"></span><span id="bkmk-hardwarerequirements"></span><span id="BKMK_HARDWAREREQUIREMENTS"></span>Hardware Requirements
 
 
 The hardware that's required for testing a hard drive varies depending on the connection type. But, all tests for hard disks require 1 test computer. The test computer must meet the Windows HLK requirements. For more information, see [Windows HLK Prerequisites](..\getstarted\windows-hlk-prerequisites.md).

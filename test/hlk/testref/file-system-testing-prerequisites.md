@@ -18,7 +18,7 @@ This section describes the tasks that you must complete before you test an audio
 
 -   Configure the test computers.
 
-## <span id="Hardware-requirements"></span><span id="hardware_requirements"></span><span id="HARDWARE_REQUIREMENTS"></span>Hardware requirements
+## <span id="Hardware_requirements"></span><span id="hardware_requirements"></span><span id="HARDWARE_REQUIREMENTS"></span>Hardware requirements
 
 
 The following hardware is required for File System testing.
@@ -102,7 +102,7 @@ The following software is required to run the File System tests:
 
      
 
-## <span id="BKMK_Configure"></span><span id="bkmk_configure"></span><span id="BKMK_CONFIGURE"></span>Test system configuration
+## <span id="BKMK_Configure"></span><span id="bkmk-configure"></span><span id="BKMK_CONFIGURE"></span>Test system configuration
 
 
 To configure the test system, follow these steps:

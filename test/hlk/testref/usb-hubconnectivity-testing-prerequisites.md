@@ -18,7 +18,7 @@ This topic describes the tasks that you must complete before you test your USB h
 
 -   [USB Device.Connectivity Testing Prerequisites](usb-deviceconnectivity-testing-prerequisites.md#bkmk-configuringtestcomputer).
 
-## <span id="BKMK-hardwareRequirements"></span><span id="bkmk_hardwarerequirements"></span><span id="BKMK_HARDWAREREQUIREMENTS"></span>Hardware requirements
+## <span id="BKMK_hardwareRequirements"></span><span id="bkmk-hardwarerequirements"></span><span id="BKMK_HARDWAREREQUIREMENTS"></span>Hardware requirements
 
 
 The following hardware is required for USB device testing. You might need additional hardware if the device includes additional features.

@@ -12,7 +12,7 @@ ms.assetid: 76a0105c-4009-4a0e-8995-240efd8bb76f
 
 This document covers how to properly setup your test environment and test machines for running the Bluetooth Windows HLK tests for a Bluetooth radio.
 
-## <span id="Bluetooth-Bus-Controller-Requirements--Device.BusController.Bluetooth-"></span><span id="bluetooth_bus_controller_requirements__device.buscontroller.bluetooth_"></span><span id="BLUETOOTH_BUS_CONTROLLER_REQUIREMENTS__DEVICE.BUSCONTROLLER.BLUETOOTH_"></span>Bluetooth Bus Controller Requirements (Device.BusController.Bluetooth)
+## <span id="Bluetooth_Bus_Controller_Requirements__Device.BusController.Bluetooth_"></span><span id="bluetooth_bus_controller_requirements__device.buscontroller.bluetooth_"></span><span id="BLUETOOTH_BUS_CONTROLLER_REQUIREMENTS__DEVICE.BUSCONTROLLER.BLUETOOTH_"></span>Bluetooth Bus Controller Requirements (Device.BusController.Bluetooth)
 
 
 When certifying a Bluetooth radio, it is required that all testing is done with the Microsoft Inbox Bluetooth stack. Filter drivers required for radio operation can still be used as long as the functionality of the Microsoft stack is not replaced.

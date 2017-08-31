@@ -18,7 +18,7 @@ This section describes the tasks that you must complete before you test a smart 
 
 -   [Test computer configuration](#bkmk-hck-sc-tc)
 
-## <span id="BKMK-HCK-SC-hR"></span><span id="bkmk_hck_sc_hr"></span><span id="BKMK_HCK_SC_HR"></span>Hardware requirements
+## <span id="BKMK_HCK_SC_hR"></span><span id="bkmk-hck-sc-hr"></span><span id="BKMK_HCK_SC_HR"></span>Hardware requirements
 
 
 The following hardware is required for testing a smart card reader. You might need additional hardware if the test device offers other features. To determine whether additional hardware requirements apply, see the test description for each test that appears for the device in Windows HLK Studio.

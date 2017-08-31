@@ -18,7 +18,7 @@ This section describes the tasks that you must complete before you test a printe
 
 -   [Test computer configuration](#bkmk-hck-printer-sc).
 
-## <span id="BKMK-HCK-Printer-hR"></span><span id="bkmk_hck_printer_hr"></span><span id="BKMK_HCK_PRINTER_HR"></span>Hardware requirements
+## <span id="BKMK_HCK_Printer_hR"></span><span id="bkmk-hck-printer-hr"></span><span id="BKMK_HCK_PRINTER_HR"></span>Hardware requirements
 
 
 The following hardware is required for printer testing. Additional hardware may be required if the test device provides bus-specific support. See the test description for each bus-specific test to determine whether there are additional hardware requirements.

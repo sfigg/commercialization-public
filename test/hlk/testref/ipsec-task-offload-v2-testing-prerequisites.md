@@ -32,7 +32,7 @@ Before beginning testing, do this:
 
 -   [IPsec Task Offload v2 Manual Test](ipsec-task-offload-v2-manual-test.md)
 
-## <span id="BKMK-HCK-IPSec-hR"></span><span id="bkmk_hck_ipsec_hr"></span><span id="BKMK_HCK_IPSEC_HR"></span>Hardware requirements
+## <span id="BKMK_HCK_IPSec_hR"></span><span id="bkmk-hck-ipsec-hr"></span><span id="BKMK_HCK_IPSEC_HR"></span>Hardware requirements
 
 
 This hardware is required for testing:

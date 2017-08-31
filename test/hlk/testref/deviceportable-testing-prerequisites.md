@@ -12,7 +12,7 @@ ms.assetid: d5c12d65-3ac9-4bf1-9fb8-9b40ce2e3d7f
 
 Before you test a portable device by using the Windows Hardware Lab Kit (Windows HLK), review the following requirements:
 
-## <span id="BKMK-HCK-Devfund-hR"></span><span id="bkmk_hck_devfund_hr"></span><span id="BKMK_HCK_DEVFUND_HR"></span>Hardware requirements
+## <span id="BKMK_HCK_Devfund_hR"></span><span id="bkmk-hck-devfund-hr"></span><span id="BKMK_HCK_DEVFUND_HR"></span>Hardware requirements
 
 
 -   System that supports USB 2.0 (at a minimum)

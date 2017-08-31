@@ -33,7 +33,7 @@ This topic describes configuration requirements for the Windows HLK Device Funda
 
  
 
-## <span id="BKMK-HCK-Devfund-gR"></span><span id="bkmk_hck_devfund_gr"></span><span id="BKMK_HCK_DEVFUND_GR"></span>General requirements
+## <span id="BKMK_HCK_Devfund_gR"></span><span id="bkmk-hck-devfund-gr"></span><span id="BKMK_HCK_DEVFUND_GR"></span>General requirements
 
 
 Device Fundamentals Reliability tests require devices to be configured properly for the tests to test I/O on devices when they run. Tests log device configuration errors if devices are not configured properly.

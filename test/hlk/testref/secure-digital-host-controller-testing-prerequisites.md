@@ -20,7 +20,7 @@ This topic describes the tasks that you must complete before you test your audio
 
 Secure Digital I/O (SDIO) host controllers must comply with Peripheral Component Interconnect (PCI) 2.3 or later requirements for that interface. For PCI configuration registers and interface information, see the SD Host Controller Specification, Version 1.0, Appendix A, which is available from the [SD Association website](http://go.microsoft.com/fwlink/?LinkId=229850).
 
-## <span id="BKMK-HardwareRequirements"></span><span id="bkmk_hardwarerequirements"></span><span id="BKMK_HARDWAREREQUIREMENTS"></span>Hardware requirements
+## <span id="BKMK_HardwareRequirements"></span><span id="bkmk-hardwarerequirements"></span><span id="BKMK_HARDWAREREQUIREMENTS"></span>Hardware requirements
 
 
 The following hardware is required for SDIO host controller testing. You might need additional hardware if the controller includes additional capabilities. See the test description for each test that is listed for the device in Windows HLK Studio to determine whether your hardware requires additional tests.

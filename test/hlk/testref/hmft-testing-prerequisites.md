@@ -26,7 +26,7 @@ If the video card is a not a stand-alone product (for example, a video chipset o
 
  
 
-## <span id="BKMK-HCK-HMFT-hR"></span><span id="bkmk_hck_hmft_hr"></span><span id="BKMK_HCK_HMFT_HR"></span>Hardware requirements
+## <span id="BKMK_HCK_HMFT_hR"></span><span id="bkmk-hck-hmft-hr"></span><span id="BKMK_HCK_HMFT_HR"></span>Hardware requirements
 
 
 The following hardware is required for testing an HMFT-compliant device:

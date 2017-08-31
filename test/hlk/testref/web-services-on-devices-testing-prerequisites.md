@@ -18,7 +18,7 @@ This section describes the tasks that you must complete before you test a Web Se
 
 -   [Test computer configuration](#bkmk-hck-wsd-tc).
 
-## <span id="BKMK-HCK-WSD-hR"></span><span id="bkmk_hck_wsd_hr"></span><span id="BKMK_HCK_WSD_HR"></span>Hardware requirements
+## <span id="BKMK_HCK_WSD_hR"></span><span id="bkmk-hck-wsd-hr"></span><span id="BKMK_HCK_WSD_HR"></span>Hardware requirements
 
 
 The following hardware is required for testing WSD compliance. Additional hardware may be required if the test device provides bus-specific support. See the test description for each bus-specific test to determine whether there are additional hardware requirements.
