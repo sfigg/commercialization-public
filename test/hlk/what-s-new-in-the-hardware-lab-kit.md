@@ -19,7 +19,7 @@ ms.assetid: 8A9F73C6-030F-4A1D-A466-6A9ADDD06A51
 
 ### <span id="Breaking_changes"></span><span id="breaking_changes"></span><span id="BREAKING_CHANGES"></span>Breaking changes
 
-**Note**  With each new release, anyone who builds tools that utilize the HLK object model should rebuild those tools to use the latest versions of the object model files. In addition, be sure to always use the same version of each object model file (i.e. do not mix object model files from different kit releases).
+>[!NOTE] With each new release, anyone who builds tools that utilize the HLK object model should rebuild those tools to use the latest versions of the object model files. In addition, be sure to always use the same version of each object model file (i.e. do not mix object model files from different kit releases).
 
  
 
