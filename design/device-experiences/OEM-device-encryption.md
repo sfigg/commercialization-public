@@ -11,15 +11,15 @@ ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-# Bitlocker device encryption hardware requirements
+# BitLocker device encryption hardware requirements
 
-Bitlocker device encryption is a set of features that you as an Original Equipment Manufacturer (OEM) enable by providing the right set of hardware in the devices you sell. Without the proper hardware configuration, device encryption is not enabled. With the right hardware configurations, Windows 10 automatically encrypts a device. This topic, written for OEMs, describes what hardware requirements you have to meet to enable Bitlocker device encryption. 
+BitLocker device encryption is a set of features that you as an Original Equipment Manufacturer (OEM) enable by providing the right set of hardware in the devices you sell. Without the proper hardware configuration, device encryption is not enabled. With the right hardware configurations, Windows 10 automatically encrypts a device. This topic, written for OEMs, describes what hardware requirements you have to meet to enable BitLocker device encryption. 
 
-**IT Professionals** Learn how to deploy BitLocker in the enterprise by reading the [BitLocker overview](https://docs.microsoft.com/en-us/windows/device-security/bitlocker/bitlocker-overviewe). 
+**IT Professionals:** Learn how to deploy BitLocker in the enterprise by reading the [BitLocker overview](https://docs.microsoft.com/en-us/windows/device-security/bitlocker/bitlocker-overviewe). 
 
-##  Enable Bitlocker
+##  Enable BitLocker
 
-Bitlocker device encryption is enabled when the following conditions are met. OEMs who want to create hardware that supports this capability must verify that their device passes the tests in the column on the right. If any test in this sequence fails, the remaining tests will also fail.
+BitLocker device encryption is enabled when the following conditions are met. OEMs who want to create hardware that supports this capability must verify that their device passes the tests in the column on the right. If any test in this sequence fails, the remaining tests will also fail.
 
 | Requirement | Details | Test |
 |:-------------|:-------------|:------|

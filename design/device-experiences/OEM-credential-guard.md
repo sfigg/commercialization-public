@@ -13,7 +13,7 @@ ms.technology: windows-oem
 
 # Windows Defender Credential Guard hardware requirements
 
-Credential Guard uses virtualization-based security to isolate secrets so that only privileged system software can access them. With Credential Guard, Windows 10 implemented an architectural change that fundamentally prevents the current forms of the pass-the-hash (PtH) attack.
+Credential Guard uses virtualization-based security to isolate secrets so that only privileged system software can access them. Credential Guard prevents the known forms of the pass-the-hash (PtH) attack.
 
 For a device to support Crendential Guard as specified in the Windows Hardware Compatibility Requirements (WHCR), you as the OEM must provide the following hardware, software, or firmware features. 
 
@@ -21,11 +21,11 @@ For a device to support Crendential Guard as specified in the Windows Hardware C
 
 | Hardware requirement | Details |
 |----------------------|---------|
-| Firmware support for SMM protection | The Windows SMM Security Mitigations Table (WSMT) specification contains details of an Advanced Configuration and Power Interface (ACPI) table that was created for use with Windows operating systems that support Windows virtualization-based security (VBS) features. For more information, see the [Windows SMM Security Mitigations Table (WMST) specification](https://docs.microsoft.com/en-us/windows-hardware/drivers/bringup/acpi-system-description-tables). The security benefit is that vulnerabilities in UEFI runtime services, if any (such as in functions like UpdateCapsule and SetVariable), will be blocked from compromising VBS. This firmware protection also blocks additional security attacks against SMM. |
+| 64-bit CPU | Virtualization-Based Security (VBS) features requires Windows hypervisor, which is only supported on 64-bit processors. |
+| Firmware support for SMM protection | The [Windows SMM Security Mitigations Table (WMST) specification](https://docs.microsoft.com/en-us/windows-hardware/drivers/bringup/acpi-system-description-tables) contains details of an Advanced Configuration and Power Interface (ACPI) table that was created for use with Windows operating systems that support Windows virtualization-based security (VBS) features. Any vulnerabilities in UEFI runtime services are blocked from compromising VBS. |
 | Hardware-based Platform Secure Boot | **Starting with Windows 10, version 1607 and Windows Server 2016**, Boot Integrity (known as Platform Secure Boot) must be supported. To learn more, see the [Hardware Compatibility Specification for Systems for Windows 10, version 1607](https://docs.microsoft.com/en-us/windows-hardware/design/compatibility/systems) under System.Fundamentals.Firmware.CS.UEFISecureBoot.ConnectedStandby. The Hardware Security Test Interface (HSTI) must be implemented. To learn more, see the [Hardware Security Testability Specification](https://msdn.microsoft.com/en-us/library/windows/hardware/mt712332(v=vs.85).aspx). This is independent of Modern Standby/Connected Standby Systems; all systems using Credential Guard must pass HSTI 1.1.a. There are two security benefits. <ul><li>After the system is powered on, Platform Secure Boot provides protections against physically present attackers, and defense-in-depth against malware.</li><li>HSTI provides additional security assurance for correctly secured silicon and platform.</li></ul> |
 | Firmware update through Windows Update | Firmware must support field updates through Windows Update and UEFI encapsulation update. |
 | Secure Boot configuration and Management | As the OEM, you must provide the ability, in BIOS, to add ISV, OEM, or Enterprise certificates to the Secure Boot database at manufacturing time. The Microsoft UEFI CA must be removed from the same Secure Boot database. Support for 3rd-party UEFI modules is permitted but should leverage ISV-provided certificates or OEM certificate for the specific UEFI software. There are two security benefits. <ul><li>Enterprises can choose to allow proprietary EFI drivers/applications to run. </li> <li>Removing Microsoft UEFI CA from the Secure Boot database provides enterprises with full control over software that runs before the operating system boots. </li></ul>|
-| 64-bit CPU | Virtualization-Based Security (VBS) features requires Windows hypervisor, which is only supported on 64-bit processors. |
 |Virtualization extensions - Intel VT-x, AMD-V, and extended page tables | VBS only works if the processor supports virtualization with second level address translation. | VBS provides isolation of the secure kernel from the rest of Windows. |
 | VT-D or AMD Vi Input/output memory management unit(IOMMU). | IOMMU enhances system resiliency against memory attacks. For more information, see [ACPI system description tables](https://docs.microsoft.com/en-us/windows-hardware/drivers/bringup/acpi-system-description-tables). |
 | Trusted Platform Module (TPM) 2.0 | TPM 2.0 provides protection for VBS encryption keys that are stored in the firmware. Credential Guard data is protected against attacks involving a physically present user with BIOS and hardware access. |
@@ -39,7 +39,7 @@ For a device to support Crendential Guard as specified in the Windows Hardware C
 
 - [Windows Defender Device Guard hardware requirements](OEM-device-guard.md)
 - [Windows Defender Application Guard hardware requirements](OEM-app-guard.md)
-- [Bitlocker device encryption](OEM-device-encryption.md)
+- [BitLocker device encryption](OEM-device-encryption.md)
 
 
 
