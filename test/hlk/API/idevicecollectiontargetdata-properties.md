@@ -10,7 +10,7 @@ ms.assetid: 8302f4d4-d363-4f61-8ead-4e506907bbef
 # IDeviceCollectionTargetData Properties
 
 
-## <span id="Public_Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
+## <span id="Public-Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
 
 
 <table>

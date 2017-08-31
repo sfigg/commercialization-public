@@ -10,7 +10,7 @@ ms.assetid: a3f6dbe2-5fbc-4278-8da2-e17b7c92338e
 # Task Properties
 
 
-## <span id="Public_Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
+## <span id="Public-Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
 
 
 <table>

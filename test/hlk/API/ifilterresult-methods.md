@@ -10,7 +10,7 @@ ms.assetid: 771ae49a-8ff5-4b5d-920f-84869df37d25
 # IFilterResult Methods
 
 
-## <span id="Public_Methods"></span><span id="public_methods"></span><span id="PUBLIC_METHODS"></span>Public Methods
+## <span id="Public-Methods"></span><span id="public_methods"></span><span id="PUBLIC_METHODS"></span>Public Methods
 
 
 <table>

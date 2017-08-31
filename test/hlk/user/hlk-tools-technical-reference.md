@@ -12,7 +12,7 @@ ms.assetid: 7611ef5b-8dda-410b-a933-bb68f2daa0f3
 
 This section provides a technical description for the tools that are included in the HLK.
 
-## <span id="in_this_section"></span>In this section
+## <span id="in-this-section"></span>In this section
 
 
 -   [HLK Studio](hlk-studio.md)

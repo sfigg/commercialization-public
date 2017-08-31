@@ -20,7 +20,7 @@ This section describes the tasks that you must complete before you test a client
 
 -   [Test computer configuration](#bkmk-hck-client-tc)
 
-## <span id="BKMK_HCK_Client_hR"></span><span id="bkmk_hck_client_hr"></span><span id="BKMK_HCK_CLIENT_HR"></span>Hardware requirements
+## <span id="BKMK-HCK-Client-hR"></span><span id="bkmk_hck_client_hr"></span><span id="BKMK_HCK_CLIENT_HR"></span>Hardware requirements
 
 
 To certify your client systems for Windows 8 and Windows 8.1, you’ll need the following hardware in addition to the system that you’re testing:

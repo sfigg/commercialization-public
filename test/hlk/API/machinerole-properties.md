@@ -10,7 +10,7 @@ ms.assetid: 0c37e688-fd50-4794-8cf9-6a9dd5d5594f
 # MachineRole Properties
 
 
-## <span id="Public_Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
+## <span id="Public-Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
 
 
 <table>

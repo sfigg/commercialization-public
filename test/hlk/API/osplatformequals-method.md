@@ -10,7 +10,7 @@ ms.assetid: a33af479-3395-4206-8a83-f2eba1a53a40
 # OSPlatform.Equals Method
 
 
-## <span id="Overload_List"></span><span id="overload_list"></span><span id="OVERLOAD_LIST"></span>Overload List
+## <span id="Overload-List"></span><span id="overload_list"></span><span id="OVERLOAD_LIST"></span>Overload List
 
 
 <table>

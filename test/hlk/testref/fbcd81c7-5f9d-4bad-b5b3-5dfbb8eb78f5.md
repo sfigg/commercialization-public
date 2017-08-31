@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: 8ab1468d-9c7d-4328-b3d3-ac88f68659e6
 ---
 
-# <span id="p_hlk_test.fbcd81c7-5f9d-4bad-b5b3-5dfbb8eb78f5"></span>Pixel Shaders Ver 2.0 Landscape - Starburst (WoW64)
+# <span id="p-hlk-test.fbcd81c7-5f9d-4bad-b5b3-5dfbb8eb78f5"></span>Pixel Shaders Ver 2.0 Landscape - Starburst (WoW64)
 
 
 This automated test verifies the requirements listed in the test details table.

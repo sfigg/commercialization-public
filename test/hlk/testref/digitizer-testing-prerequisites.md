@@ -22,7 +22,7 @@ In this topic:
 
 To learn more, go to [Windows Certification Program Polices and Process](http://msdn.microsoft.com/en-us/library/windows/hardware/hh852370)
 
-## <span id="BKMK_HCK_Digitizer_hR"></span><span id="bkmk_hck_digitizer_hr"></span><span id="BKMK_HCK_DIGITIZER_HR"></span>Hardware requirements
+## <span id="BKMK-HCK-Digitizer-hR"></span><span id="bkmk_hck_digitizer_hr"></span><span id="BKMK_HCK_DIGITIZER_HR"></span>Hardware requirements
 
 
 To test a digitizer, you must have the following hardware. You might need additional hardware if the test device offers other features. To determine whether additional hardware requirements apply, see the test description for each test that appears for the device in Windows HLK Studio.

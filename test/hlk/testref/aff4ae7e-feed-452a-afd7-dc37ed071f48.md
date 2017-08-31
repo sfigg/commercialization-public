@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: 1e140b1f-84f2-40d7-bde3-f4875680d7ec
 ---
 
-# <span id="p_hlk_test.aff4ae7e-feed-452a-afd7-dc37ed071f48"></span>NDISTest 6.0 - \[1 Machine\] - 1c\_Mini6RSSOids
+# <span id="p-hlk-test.aff4ae7e-feed-452a-afd7-dc37ed071f48"></span>NDISTest 6.0 - \[1 Machine\] - 1c\_Mini6RSSOids
 
 
 This test exercises the various receive side scaling OIDs. The miniport driver should:

@@ -18,7 +18,7 @@ This topic describes the tasks that you must complete before you test your USB h
 
 -   [Test computer configuration](#bkmk-testcomputerconfiguration).
 
-## <span id="BKMK_HardwareRequirements"></span><span id="bkmk_hardwarerequirements"></span><span id="BKMK_HARDWAREREQUIREMENTS"></span>Hardware requirements
+## <span id="BKMK-HardwareRequirements"></span><span id="bkmk_hardwarerequirements"></span><span id="BKMK_HARDWAREREQUIREMENTS"></span>Hardware requirements
 
 
 The following hardware is required for USB host controller testing. You might need additional hardware if the USB host controller includes additional capabilities. See the test description for each test that the Windows HLK identifies to determine whether the USB host controller requires additional hardware.

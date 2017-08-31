@@ -10,7 +10,7 @@ ms.assetid: 1CB21BC7-8F0F-4E84-B2F5-DA0AB381C9D6
 # BugcheckSummary Members
 
 
-## <span id="Public_Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
+## <span id="Public-Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
 
 
 <table>

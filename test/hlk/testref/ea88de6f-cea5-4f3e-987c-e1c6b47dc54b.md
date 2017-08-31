@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: 504a38ea-106e-439b-87f4-5aec5db7d2d3
 ---
 
-# <span id="p_hlk_test.ea88de6f-cea5-4f3e-987c-e1c6b47dc54b"></span>E3 Display Benchmark
+# <span id="p-hlk-test.ea88de6f-cea5-4f3e-987c-e1c6b47dc54b"></span>E3 Display Benchmark
 
 
 Learns display model coefficients for Energy Estimation Engine

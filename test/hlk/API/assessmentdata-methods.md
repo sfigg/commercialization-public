@@ -12,7 +12,7 @@ ms.assetid: 938dc16c-9af9-46b5-95ff-b72d94ed3b72
 
 The following tables describe the methods exposed by the [AssessmentData Class](assessmentdata-class.md):
 
-## <span id="Public_Methods"></span><span id="public_methods"></span><span id="PUBLIC_METHODS"></span>Public Methods
+## <span id="Public-Methods"></span><span id="public_methods"></span><span id="PUBLIC_METHODS"></span>Public Methods
 
 
 <table>

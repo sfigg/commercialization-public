@@ -22,7 +22,7 @@ The new hardware compatibility program provides you with:
 -   Guidance for developing, testing and distributing drivers.
 -   Access to the Windows Dev Center hardware dashboard to manage submissions, track the performance of your device or app, review telemetry and much more.
 
-## <span id="Windows_Hardware_Compatibility_Program__Requirements"></span><span id="windows_hardware_compatibility_program__requirements"></span><span id="WINDOWS_HARDWARE_COMPATIBILITY_PROGRAM__REQUIREMENTS"></span>Windows Hardware Compatibility Program Requirements
+## <span id="Windows-Hardware-Compatibility-Program--Requirements"></span><span id="windows_hardware_compatibility_program__requirements"></span><span id="WINDOWS_HARDWARE_COMPATIBILITY_PROGRAM__REQUIREMENTS"></span>Windows Hardware Compatibility Program Requirements
 
 
 The requirements define how to build Windows-compatible devices, systems, and filter drivers across all Windows Platforms. They were developed in collaboration with partners, and focus on ensuring compatibility, interoperability and reliability.

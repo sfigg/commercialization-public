@@ -16,7 +16,7 @@ In addition to the standard self-certification submission for devices through th
 
 This section describes the process that you should follow before you start to test a Windows® Touch device by using the Windows® Hardware Certification Kit (Windows HLK) and complete the certification for your touch device.
 
-## <span id="BKMK_labEnvironments"></span><span id="bkmk_labenvironments"></span><span id="BKMK_LABENVIRONMENTS"></span>Windows Touch Test Lab
+## <span id="BKMK-labEnvironments"></span><span id="bkmk_labenvironments"></span><span id="BKMK_LABENVIRONMENTS"></span>Windows Touch Test Lab
 
 
 Microsoft provides this service free of any additional charge beyond a standard submission fee. Before you submit the touch devices to WTTL for device certification, a passed Windows HLK submission package must be generated and attached through in-house Windows HLK test for touch. Once the submission has been made and the physical touch device has delivered to WTTL, the WTTL will run a complete set of Windows Touch tests in Windows HLK using high-precision assistant jigs and styluses where possible to minimize human error. It attempts each test item up to a maximum of two times.

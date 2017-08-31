@@ -12,7 +12,7 @@ ms.assetid: 81824ca4-562e-4cb0-9e5a-607765cce4f0
 
 The following tables list the members exposed by the **ISystemTargetData** type.
 
-## <span id="Public_Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
+## <span id="Public-Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
 
 
 <table>

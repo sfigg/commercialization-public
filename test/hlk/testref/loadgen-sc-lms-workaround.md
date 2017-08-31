@@ -12,7 +12,7 @@ ms.assetid: 67ad8e97-5533-467d-a59f-cfcd20e378d6
 
 Due to a limitation in the HLK scheduling engine, the following steps must be applied to each test machine before any multi-machine tests like LoadGen can be scheduled on them.
 
-### <span id="Run_Hardware_Lab_Kit_-_Prepare_client_for_submission_job_on_every_machine_in_the_machine_pool."></span><span id="run_hardware_lab_kit_-_prepare_client_for_submission_job_on_every_machine_in_the_machine_pool."></span><span id="RUN_HARDWARE_LAB_KIT_-_PREPARE_CLIENT_FOR_SUBMISSION_JOB_ON_EVERY_MACHINE_IN_THE_MACHINE_POOL."></span>Run Hardware Lab Kit - Prepare client for submission job on every machine in the machine pool.
+### <span id="Run-Hardware-Lab-Kit---Prepare-client-for-submission-job-on-every-machine-in-the-machine-pool."></span><span id="run_hardware_lab_kit_-_prepare_client_for_submission_job_on_every_machine_in_the_machine_pool."></span><span id="RUN_HARDWARE_LAB_KIT_-_PREPARE_CLIENT_FOR_SUBMISSION_JOB_ON_EVERY_MACHINE_IN_THE_MACHINE_POOL."></span>Run Hardware Lab Kit - Prepare client for submission job on every machine in the machine pool.
 
 1.  Open HLK Manager.
 2.  On the **Explorers** menu, click **Job Explorer**.

@@ -12,7 +12,7 @@ ms.assetid: 9A5C12BB-9357-4503-92A1-22DF68A24FFC
 
 The following tables list the members exposed by the [PlaylistFeature Class](playlistfeature-class.md).
 
-## <span id="Public_Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
+## <span id="Public-Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
 
 
 <table>

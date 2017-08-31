@@ -14,7 +14,7 @@ The **Connect** option lets you view .hlkx files. This feature is useful if you 
 
 An .hlkx file is a compressed file format created by HLK Studio. An .hlkx file, also known as a submission package, is what you submit for certification. An .hlkx file must be digitally signed to be a valid submission package.
 
-## <span id="view_an_.hlkx_package"></span><span id="VIEW_AN_.HLKX_PACKAGE"></span>View an .hlkx package
+## <span id="view-an-.hlkx-package"></span><span id="VIEW_AN_.HLKX_PACKAGE"></span>View an .hlkx package
 
 
 HLK Studio supports viewing .hlkx packages. For example, if you want to troubleshoot a test offline, you can open an existing .hlkx package using the **Connect** option. In this mode, you can view all details of the project, including pass/fail results and log files.

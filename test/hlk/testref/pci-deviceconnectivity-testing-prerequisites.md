@@ -20,7 +20,7 @@ Before beginning testing, complete the following:
 
 -   [Test computer configuration](#bkmk-hck-pci-tc).
 
-## <span id="BKMK_HCK_PCI_hR"></span><span id="bkmk_hck_pci_hr"></span><span id="BKMK_HCK_PCI_HR"></span>Hardware requirements
+## <span id="BKMK-HCK-PCI-hR"></span><span id="bkmk_hck_pci_hr"></span><span id="BKMK_HCK_PCI_HR"></span>Hardware requirements
 
 
 The following hardware is required for PCI device testing. You might need additional hardware if the test device includes additional features.

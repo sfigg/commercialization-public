@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: 6fe30ae9-5c3b-46e4-ab86-7737d3a66570
 ---
 
-# <span id="p_hlk_test.e8dfa3cc-a19f-4e97-b4da-aa6f7d32697d"></span>OPM - Protocol Test (WoW64)
+# <span id="p-hlk-test.e8dfa3cc-a19f-4e97-b4da-aa6f7d32697d"></span>OPM - Protocol Test (WoW64)
 
 
 These automated tests run PVP-OPM (Protected Video Path - Output Protection Management) commands. They test display drivers for PVP-OPM compatibility, and check for the availability of digital protection (HDCP) and analog protections (ACP and CGMSA).

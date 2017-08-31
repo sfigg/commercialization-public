@@ -22,7 +22,7 @@ The following image shows an example Windows HLK Studio screen:
 
 -   **Main Detailed View** – Displays detailed information for the respective tabs. In this area, you can right-click on an entry to see more options. You can click the **F1** key to view context-sensitive help.
 
-## <span id="Features_and_Limitations"></span><span id="features_and_limitations"></span><span id="FEATURES_AND_LIMITATIONS"></span>Features and Limitations
+## <span id="Features-and-Limitations"></span><span id="features_and_limitations"></span><span id="FEATURES_AND_LIMITATIONS"></span>Features and Limitations
 
 
 -   Windows HLK does not support the modification of the same project across multiple instances of Windows HLK studio.

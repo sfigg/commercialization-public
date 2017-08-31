@@ -15,7 +15,7 @@ ms.assetid: d78399bc-9ed7-4f13-9717-1eb37831794c
 
 The following table lists the members exposed by the [TestResult Class](testresult-class.md).
 
-## <span id="Public_Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
+## <span id="Public-Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
 
 
 <table>

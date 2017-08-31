@@ -10,7 +10,7 @@ ms.assetid: 32df209c-24b6-4325-81d3-2767b545885e
 # PackageFilter Methods
 
 
-## <span id="Public_Methods"></span><span id="public_methods"></span><span id="PUBLIC_METHODS"></span>Public Methods
+## <span id="Public-Methods"></span><span id="public_methods"></span><span id="PUBLIC_METHODS"></span>Public Methods
 
 
 <table>

@@ -18,7 +18,7 @@ This section describes the tasks that you must complete before you test a scanne
 
 -   [Test system configuration](#bkmk-hck-scanner-tc).
 
-## <span id="BKMK_HCK_Scanner_hR"></span><span id="bkmk_hck_scanner_hr"></span><span id="BKMK_HCK_SCANNER_HR"></span>Hardware requirements
+## <span id="BKMK-HCK-Scanner-hR"></span><span id="bkmk_hck_scanner_hr"></span><span id="BKMK_HCK_SCANNER_HR"></span>Hardware requirements
 
 
 The following hardware is required for scanner testing. Additional hardware may be required if the test device provides bus-specific support. See the test description for each bus-specific test to determine whether there are additional hardware requirements.

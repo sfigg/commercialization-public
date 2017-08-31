@@ -18,7 +18,7 @@ When Microsoft discovers a problem in either a Windows HLK test or in the operat
 
 -   **Autotriage** – These filters don’t change the status of a test from fail to pass. They display information on common errors that can cause test failures.
 
-## <span id="To_install_filters"></span><span id="to_install_filters"></span><span id="TO_INSTALL_FILTERS"></span>To install filters
+## <span id="To-install-filters"></span><span id="to_install_filters"></span><span id="TO_INSTALL_FILTERS"></span>To install filters
 
 
 ![download image](images/downloadbutton.jpg)[Download the latest HLK Filters](https://sysdev.microsoft.com/member/SubmissionWizard/LegalExemptions/HCKFilterUpdates.cab)

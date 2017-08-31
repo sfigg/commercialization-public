@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: 592a3ec7-4b47-4853-a81b-ac5e96550ef3
 ---
 
-# <span id="p_hlk_test.eebce46c-1e5d-4f70-b2d0-d3fbf59481ab"></span>Win6\_4.MB.SMS.Encoding
+# <span id="p-hlk-test.eebce46c-1e5d-4f70-b2d0-d3fbf59481ab"></span>Win6\_4.MB.SMS.Encoding
 
 
 Send loopback short text message using various supported encoding methods.

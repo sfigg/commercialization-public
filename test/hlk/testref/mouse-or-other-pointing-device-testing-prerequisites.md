@@ -18,7 +18,7 @@ This section describes the tasks that you must complete before you test a mouse 
 
 -   [Test computer configuration](#bkmk-hck-mouse-tc).
 
-## <span id="BKMK_HCK_Mouse_hR"></span><span id="bkmk_hck_mouse_hr"></span><span id="BKMK_HCK_MOUSE_HR"></span>Hardware requirements
+## <span id="BKMK-HCK-Mouse-hR"></span><span id="bkmk_hck_mouse_hr"></span><span id="BKMK_HCK_MOUSE_HR"></span>Hardware requirements
 
 
 The following hardware is required for testing a mouse or pointing device. You might need additional hardware if the test device offers other features. To determine whether additional hardware requirements apply, see the test description for each test displayed for the device in Windows HLK Studio.

@@ -10,7 +10,7 @@ ms.assetid: 7125cb93-174b-47cc-b0a0-19fd47dc324c
 # TargetException Methods
 
 
-## <span id="Public_Methods"></span><span id="public_methods"></span><span id="PUBLIC_METHODS"></span>Public Methods
+## <span id="Public-Methods"></span><span id="public_methods"></span><span id="PUBLIC_METHODS"></span>Public Methods
 
 
 <table>

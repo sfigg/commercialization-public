@@ -18,7 +18,7 @@ This topic describes the tasks that you must complete before you WFP drivers by 
 
 -   [Test computer configuration](#bkmk-configuration).
 
-## <span id="BKMK_HardwareRequirements"></span><span id="bkmk_hardwarerequirements"></span><span id="BKMK_HARDWAREREQUIREMENTS"></span>Hardware requirements
+## <span id="BKMK-HardwareRequirements"></span><span id="bkmk_hardwarerequirements"></span><span id="BKMK_HARDWAREREQUIREMENTS"></span>Hardware requirements
 
 
 The following hardware is required for network security software testing:

@@ -16,7 +16,7 @@ ms.assetid: 3a5a28ac-fffb-4515-ada1-07f8b2d6dfff
 
 **Assembly:** Microsoft.Windows.Kits.Hardware.ObjectModel (in Microsoft.Windows.Kits.Hardware.ObjectModel)
 
-## <span id="Inheritance_Hierarchy"></span><span id="inheritance_hierarchy"></span><span id="INHERITANCE_HIERARCHY"></span>Inheritance Hierarchy
+## <span id="Inheritance-Hierarchy"></span><span id="inheritance_hierarchy"></span><span id="INHERITANCE_HIERARCHY"></span>Inheritance Hierarchy
 
 
 **System.Object**

@@ -10,7 +10,7 @@ ms.assetid: fae67a15-8ef4-42d4-a604-aa8fee7e972a
 # MachinePool.Equals Method
 
 
-## <span id="Overload_List"></span><span id="overload_list"></span><span id="OVERLOAD_LIST"></span>Overload List
+## <span id="Overload-List"></span><span id="overload_list"></span><span id="OVERLOAD_LIST"></span>Overload List
 
 
 <table>

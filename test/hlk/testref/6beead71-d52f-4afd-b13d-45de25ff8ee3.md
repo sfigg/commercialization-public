@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: bcd8cc77-5e60-447a-9297-9d03470cbd1e
 ---
 
-# <span id="p_hlk_test.6beead71-d52f-4afd-b13d-45de25ff8ee3"></span>Win6\_4.MB.SMS.SendRecvSMSTransferDataOnDiffSubPhoneStress
+# <span id="p-hlk-test.6beead71-d52f-4afd-b13d-45de25ff8ee3"></span>Win6\_4.MB.SMS.SendRecvSMSTransferDataOnDiffSubPhoneStress
 
 
 Stress send and receive SMS while there is downloading data on another subphone.

@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: 59f4029d-d18c-410e-8da8-70cbf4c58ea9
 ---
 
-# <span id="p_hlk_test.d35e0fd7-2d8a-42a9-badd-1dc951d5fada"></span>Point Sprites
+# <span id="p-hlk-test.d35e0fd7-2d8a-42a9-badd-1dc951d5fada"></span>Point Sprites
 
 
 This automated test verifies the requirements listed in the test details table.

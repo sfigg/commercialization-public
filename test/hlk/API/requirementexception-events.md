@@ -12,7 +12,7 @@ ms.assetid: 9edcf4d7-3bec-42b4-a8ad-fd60f7a48602
 
 The following table lists the events exposed by the **RequirementException** type.
 
-## <span id="Protected_Events"></span><span id="protected_events"></span><span id="PROTECTED_EVENTS"></span>Protected Events
+## <span id="Protected-Events"></span><span id="protected_events"></span><span id="PROTECTED_EVENTS"></span>Protected Events
 
 
 <table>

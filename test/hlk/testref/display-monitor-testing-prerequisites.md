@@ -18,7 +18,7 @@ This section describes the tasks that you must complete before you test a displa
 
 -   [Test computer configuration](#bkmk-configure).
 
-## <span id="BKMK_HardwareRequirements"></span><span id="bkmk_hardwarerequirements"></span><span id="BKMK_HARDWAREREQUIREMENTS"></span>Hardware requirements
+## <span id="BKMK-HardwareRequirements"></span><span id="bkmk_hardwarerequirements"></span><span id="BKMK_HARDWAREREQUIREMENTS"></span>Hardware requirements
 
 
 The following hardware is required for testing a CRT or flat panel display monitor or a projector.

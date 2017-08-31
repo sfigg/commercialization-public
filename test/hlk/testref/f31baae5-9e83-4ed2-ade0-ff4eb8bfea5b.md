@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: 38797d12-18c2-41c7-8583-1a346a20b959
 ---
 
-# <span id="p_hlk_test.f31baae5-9e83-4ed2-ade0-ff4eb8bfea5b"></span>D3D12 - Resource Binding - Copy Descriptors using the copy descriptor API to do the exact same as the CopyDescriptorSimple
+# <span id="p-hlk-test.f31baae5-9e83-4ed2-ade0-ff4eb8bfea5b"></span>D3D12 - Resource Binding - Copy Descriptors using the copy descriptor API to do the exact same as the CopyDescriptorSimple
 
 
 Validates whether descriptor copies work correctly, by creating an arbitrary heap with descriptor entries copying that into a new heap and rendering a rectangle which uses all heap entries to produce a color.

@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: c1b1b28a-32fe-4145-b2c6-59708fc44996
 ---
 
-# <span id="p_hlk_test.a2e0db44-2ac8-49fb-bf5a-fe321bbfc1a2"></span>Present Validation 2 (FullScreen) (WoW64)
+# <span id="p-hlk-test.a2e0db44-2ac8-49fb-bf5a-fe321bbfc1a2"></span>Present Validation 2 (FullScreen) (WoW64)
 
 
 This automated test verifies that all modes that the **EnumAdapterModes** method reports for the device are available to applications.

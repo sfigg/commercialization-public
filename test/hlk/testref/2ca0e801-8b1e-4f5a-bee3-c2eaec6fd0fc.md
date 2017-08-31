@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: c86b674e-6089-440d-9970-931543122209
 ---
 
-# <span id="p_hlk_test.2ca0e801-8b1e-4f5a-bee3-c2eaec6fd0fc"></span>Camera Driver Controls System Test - SCENEMODE - Get Default setting
+# <span id="p-hlk-test.2ca0e801-8b1e-4f5a-bee3-c2eaec6fd0fc"></span>Camera Driver Controls System Test - SCENEMODE - Get Default setting
 
 
 These set of tests validate cameras functionality if the driver supports KSPROPERTY\_CAMERACONTROL\_EXTENDED\_\*. If the driver does not support KSPROPERTY\_CAMERACONTROL\_EXTENDED\_\*, skip this test. This is an optional control.

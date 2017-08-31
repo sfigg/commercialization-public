@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: 92f0600e-25b3-4fb8-a6d5-dc09616cfd25
 ---
 
-# <span id="p_hlk_test.0e3d24f5-b4db-4dcc-b9d2-b70bf83d3dfa"></span>Camera Driver System Test - MediaCapture - ValidateSceneModeControlSupportedScenarios
+# <span id="p-hlk-test.0e3d24f5-b4db-4dcc-b9d2-b70bf83d3dfa"></span>Camera Driver System Test - MediaCapture - ValidateSceneModeControlSupportedScenarios
 
 
 This test validates the camera's Scene Mode control in supported settings and conditions. If supported, validates that supported scene mode preset list is not empty and that default scene mode value is auto.

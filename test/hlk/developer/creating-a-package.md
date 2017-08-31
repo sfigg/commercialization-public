@@ -28,7 +28,7 @@ The following code samples show how to:
 
 -   [Verify a digital certificate](#bkmk-verifiycertificate)
 
-## <span id="C_"></span><span id="c_"></span>**C#**
+## <span id="C-"></span><span id="c_"></span>**C#**
 
 
 ### <span id="BKMK_CS_CreateSubmissionPackage"></span><span id="bkmk_cs_createsubmissionpackage"></span><span id="BKMK_CS_CREATESUBMISSIONPACKAGE"></span>Create a submission package from a project

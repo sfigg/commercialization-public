@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: f68e9031-5b1a-46c7-8fb7-12bad0f3a20b
 ---
 
-# <span id="p_hlk_test.bac5d6e5-6fed-421e-b27f-2b7bc9c5ecd1"></span>Win6\_4.MB.UICC.Security.VerifyAppPersoState
+# <span id="p-hlk-test.bac5d6e5-6fed-421e-b27f-2b7bc9c5ecd1"></span>Win6\_4.MB.UICC.Security.VerifyAppPersoState
 
 
 Verify GetUiccAppPersoCheckState

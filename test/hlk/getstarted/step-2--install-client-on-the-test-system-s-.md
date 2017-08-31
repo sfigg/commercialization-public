@@ -18,7 +18,7 @@ If you are testing software, be sure to install the product on the test system f
 
  
 
-## <span id="To_install_the_Windows_HLK_Client"></span><span id="to_install_the_windows_hlk_client"></span><span id="TO_INSTALL_THE_WINDOWS_HLK_CLIENT"></span>To install the Windows HLK Client
+## <span id="To-install-the-Windows-HLK-Client"></span><span id="to_install_the_windows_hlk_client"></span><span id="TO_INSTALL_THE_WINDOWS_HLK_CLIENT"></span>To install the Windows HLK Client
 
 
 1.  On the test system, browse to the following location:

@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: e120ab33-bcbb-45c6-99be-51974d688cdb
 ---
 
-# <span id="p_hlk_test.0fef46b0-cbd2-4e4c-ac7d-b5cbbe55d180"></span>D3D12 - Bundle DescriptorTable Test
+# <span id="p-hlk-test.0fef46b0-cbd2-4e4c-ac7d-b5cbbe55d180"></span>D3D12 - Bundle DescriptorTable Test
 
 
 Bundle conformance test. Verifies whether the device-driver support bundles correctly.

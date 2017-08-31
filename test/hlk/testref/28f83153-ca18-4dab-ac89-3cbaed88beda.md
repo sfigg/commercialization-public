@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: bc72bcc8-a933-45c7-9fa5-8566ec852c28
 ---
 
-# <span id="p_hlk_test.28f83153-ca18-4dab-ac89-3cbaed88beda"></span>UCSI commands - Get Alternate Modes, SOP-DoublePrime
+# <span id="p-hlk-test.28f83153-ca18-4dab-ac89-3cbaed88beda"></span>UCSI commands - Get Alternate Modes, SOP-DoublePrime
 
 
 Verifies that the system supports the UCSI Get Alternate Modes command, with 'Recipient' as 'SOP-DoublePrime'.

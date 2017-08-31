@@ -12,7 +12,7 @@ ms.assetid: 40937540-e4a1-4389-92e9-36e2f34c6b42
 
 The following tables list the members exposed by the **IFilterConstraintEvaluator** type.
 
-## <span id="Public_Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
+## <span id="Public-Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
 
 
 <table>

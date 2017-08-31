@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: fbf3beab-eea0-45b7-8c69-1e2fe2e86499
 ---
 
-# <span id="p_hlk_test.5e35f8df-ae0b-4b79-8a0a-f72a2b21beaf"></span>Test.ExternalButtons
+# <span id="p-hlk-test.5e35f8df-ae0b-4b79-8a0a-f72a2b21beaf"></span>Test.ExternalButtons
 
 
 ## <span id="Test_details"></span><span id="test_details"></span><span id="TEST_DETAILS"></span>Test details

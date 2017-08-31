@@ -16,7 +16,7 @@ This section describes the tasks that you must complete before you test a client
 
 -   For server systems, see [System Server Testing Prerequisites](system-server-testing-prerequisites.md)
 
-## <span id="BKMK_HCK_Devfund_gR"></span><span id="bkmk_hck_devfund_gr"></span><span id="BKMK_HCK_DEVFUND_GR"></span>General Requirements
+## <span id="BKMK-HCK-Devfund-gR"></span><span id="bkmk_hck_devfund_gr"></span><span id="BKMK_HCK_DEVFUND_GR"></span>General Requirements
 
 
 **Audio**

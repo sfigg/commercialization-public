@@ -10,7 +10,7 @@ ms.assetid: 8e0a7bbd-7fc0-4ad2-916d-9912ea70a235
 # ProjectInfo Properties
 
 
-## <span id="Public_Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
+## <span id="Public-Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
 
 
 <table>

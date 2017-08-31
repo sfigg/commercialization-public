@@ -20,7 +20,7 @@ This topic describes the tasks that you must complete before you test a hardware
 
 The storage tests that you must run, the testing prerequisites, and the test setup vary depending on whether the RAID system is Internet SCSI (iSCSI) based or whether it uses another connection type: Fibre Channel, Serial Attached SCSI (SAS), SCSI, or Serial Advanced Technology Attachment (SATA).
 
-## <span id="BKMK_HardwareRequirements"></span><span id="bkmk_hardwarerequirements"></span><span id="BKMK_HARDWAREREQUIREMENTS"></span>Hardware Requirements
+## <span id="BKMK-HardwareRequirements"></span><span id="bkmk_hardwarerequirements"></span><span id="BKMK_HARDWAREREQUIREMENTS"></span>Hardware Requirements
 
 
 To test a hardware-based RAID array, you need the following hardware. You might need additional hardware if the test device offers other features. To determine whether additional hardware requirements apply, see the description for each test that appears for the device in Windows HLK Studio.

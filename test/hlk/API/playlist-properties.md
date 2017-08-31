@@ -10,7 +10,7 @@ ms.assetid: 0407E7FA-416B-4C01-8827-FF560EA95C4D
 # Playlist Properties
 
 
-## <span id="Public_Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
+## <span id="Public-Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
 
 
 <table>

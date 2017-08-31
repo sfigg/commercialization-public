@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: 8e9517a7-6fb8-4477-ae5c-6cf420a020cd
 ---
 
-# <span id="p_hlk_test.17be6b7f-654f-43ac-aff9-ccbf6d7e607d"></span>Sensor Camera Driver Basic Capture Session - Preview Sink - All Mediatype
+# <span id="p-hlk-test.17be6b7f-654f-43ac-aff9-ccbf6d7e607d"></span>Sensor Camera Driver Basic Capture Session - Preview Sink - All Mediatype
 
 
 Test to validate key user scenarios in the camera stack

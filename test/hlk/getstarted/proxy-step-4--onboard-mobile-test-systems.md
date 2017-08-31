@@ -12,7 +12,7 @@ ms.assetid: 3CEA61AA-5625-4F1F-84ED-69ED726BB74F
 
 After you install the Windows Hardware Lab Kit (Windows HLK) on the test server, and the Windows HLK Proxy Client on the Proxy system, you are ready to add mobile test systems to the environment.
 
-## <span id="Known_Issues"></span><span id="known_issues"></span><span id="KNOWN_ISSUES"></span>Known Issues
+## <span id="Known-Issues"></span><span id="known_issues"></span><span id="KNOWN_ISSUES"></span>Known Issues
 
 
 | Issue                                                                               | Workaround         |

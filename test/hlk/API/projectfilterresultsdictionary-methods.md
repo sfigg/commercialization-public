@@ -10,7 +10,7 @@ ms.assetid: 1b8a18e3-1517-4efd-9588-2e8949079313
 # ProjectFilterResultsDictionary Methods
 
 
-## <span id="Public_Methods"></span><span id="public_methods"></span><span id="PUBLIC_METHODS"></span>Public Methods
+## <span id="Public-Methods"></span><span id="public_methods"></span><span id="PUBLIC_METHODS"></span>Public Methods
 
 
 <table>

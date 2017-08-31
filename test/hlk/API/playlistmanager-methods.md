@@ -10,7 +10,7 @@ ms.assetid: 3C266330-1712-4CE1-937C-8E012754857F
 # PlaylistManager Methods
 
 
-## <span id="Public_Methods"></span><span id="public_methods"></span><span id="PUBLIC_METHODS"></span>Public Methods
+## <span id="Public-Methods"></span><span id="public_methods"></span><span id="PUBLIC_METHODS"></span>Public Methods
 
 
 <table>

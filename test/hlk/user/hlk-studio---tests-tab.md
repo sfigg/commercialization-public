@@ -34,7 +34,7 @@ A grayed-out test indicates one of the following states:
 
  
 
-## <span id="Test_Type_Definition"></span><span id="test_type_definition"></span><span id="TEST_TYPE_DEFINITION"></span>Test Type Definition
+## <span id="Test-Type-Definition"></span><span id="test_type_definition"></span><span id="TEST_TYPE_DEFINITION"></span>Test Type Definition
 
 
 The Type column provides additional information about each test. Some tests require additional configuration and/or manual interaction. Use this information in addition to **F1** key to plan your testing strategy.

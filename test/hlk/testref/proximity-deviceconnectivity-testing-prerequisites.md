@@ -18,7 +18,7 @@ This topic describes the tasks that you must complete before you test your devic
 
 -   [Test computer configuration](#bkmk-hck-sdc-tc).
 
-## <span id="BKMK_HCK_SDC_hR"></span><span id="bkmk_hck_sdc_hr"></span><span id="BKMK_HCK_SDC_HR"></span>Hardware requirements
+## <span id="BKMK-HCK-SDC-hR"></span><span id="bkmk_hck_sdc_hr"></span><span id="BKMK_HCK_SDC_HR"></span>Hardware requirements
 
 
 To run the proximity tests, you need the following hardware:

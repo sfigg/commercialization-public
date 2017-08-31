@@ -12,7 +12,7 @@ ms.assetid: 6495030a-2a71-4d6e-abf0-317ddd6bf4ef
 
 The following tables list the members exposed by the **Feature** type.
 
-## <span id="Public_Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
+## <span id="Public-Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
 
 
 <table>

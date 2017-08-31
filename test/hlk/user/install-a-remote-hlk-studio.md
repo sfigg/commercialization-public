@@ -12,7 +12,7 @@ ms.assetid: 9e5262b8-f623-4497-b0e8-a71d38ad6faf
 
 You can optionally install HLK Studio on a separate computer. The computer must be able to connect to the installation folder that is shared from the HLK Controller computer. Therefore, before you can install HLK Studio, you must have already installed HLK Controller.
 
-## <span id="Install_remote_HLK_Studio"></span><span id="install_remote_hlk_studio"></span><span id="INSTALL_REMOTE_HLK_STUDIO"></span>Install remote HLK Studio
+## <span id="Install-remote-HLK-Studio"></span><span id="install_remote_hlk_studio"></span><span id="INSTALL_REMOTE_HLK_STUDIO"></span>Install remote HLK Studio
 
 
 -   From your remote computer, click **Start**, click **Run**, type **\\\\*ControllerName*\\HLKInstall\\Studio\\Setup.exe**, and then click **Yes**.

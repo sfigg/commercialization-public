@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: d65c952d-5a02-45fa-8f1a-c26128538a5d
 ---
 
-# <span id="p_hlk_test.cc71f911-fac3-4a3a-9a9e-f9ddc2e37bde"></span>Camera Driver Controls System Test - OIS - Iterate through possible settings while Recording
+# <span id="p-hlk-test.cc71f911-fac3-4a3a-9a9e-f9ddc2e37bde"></span>Camera Driver Controls System Test - OIS - Iterate through possible settings while Recording
 
 
 Test to validate key user scenarios in the camera stack

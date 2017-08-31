@@ -18,7 +18,7 @@ The method returns the base target for multi-device tests (that is the base test
 
  
 
-## <span id="C_"></span><span id="c_"></span>**C#**
+## <span id="C-"></span><span id="c_"></span>**C#**
 
 
 ``` syntax

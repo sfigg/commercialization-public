@@ -32,7 +32,7 @@ The **TotalCount** property represents the number of all the tests that are pass
 
 A **TestResult** object is a test outcome. It's instantiated when a test is scheduled. **TestResult** includes information such as start/end time, pass/fail count, logs, and task results. You can schedule a test to run multiple times, and each test pass has its own result.
 
-## <span id="related_topics"></span>Related topics
+## <span id="related-topics"></span>Related topics
 
 
 [Distributing Tests](distributing-tests.md)

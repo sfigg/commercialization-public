@@ -12,7 +12,7 @@ ms.assetid: eceb6740-96e8-4821-badc-491b875ab59b
 
 The format for the Project Definition File is described below:
 
-## <span id="Schema_definition"></span><span id="schema_definition"></span><span id="SCHEMA_DEFINITION"></span>Schema definition
+## <span id="Schema-definition"></span><span id="schema_definition"></span><span id="SCHEMA_DEFINITION"></span>Schema definition
 
 
 ``` syntax

@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: fea70455-d537-4c69-b164-9373b1fbb25a
 ---
 
-# <span id="p_hlk_test.1b73b5dc-fbf6-48fc-b9da-eaf7e6aa9c2c"></span>Camera Driver DirectShow Interfaces - IAMVideoCompression
+# <span id="p-hlk-test.1b73b5dc-fbf6-48fc-b9da-eaf7e6aa9c2c"></span>Camera Driver DirectShow Interfaces - IAMVideoCompression
 
 
 This test validates that the IAMVideoCompression interface has been implemented according to specification.

@@ -10,7 +10,7 @@ ms.assetid: f1773568-f232-44ba-9aec-8b2dde1a997a
 # PackageWriter Methods
 
 
-## <span id="Public_Methods"></span><span id="public_methods"></span><span id="PUBLIC_METHODS"></span>Public Methods
+## <span id="Public-Methods"></span><span id="public_methods"></span><span id="PUBLIC_METHODS"></span>Public Methods
 
 
 <table>

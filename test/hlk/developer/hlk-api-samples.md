@@ -107,7 +107,7 @@ In this section:
 
  
 
-## <span id="Resource_Files"></span><span id="resource_files"></span><span id="RESOURCE_FILES"></span>Resource Files
+## <span id="Resource-Files"></span><span id="resource_files"></span><span id="RESOURCE_FILES"></span>Resource Files
 
 
 The samples in this section require the following resource files. Install the HLK to obtain these files. To use the DLLs in your Visual Studio project, click **Project**, click **Add Reference**, and then click **Browse** to navigate to each file.

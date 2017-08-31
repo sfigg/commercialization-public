@@ -22,7 +22,7 @@ This section describes the tasks that you must complete before you test a wirele
 
 -   [Troubleshooting Wireless Router Testing](troubleshooting-wireless-router-testing.md)
 
-## <span id="BKMK_HCK_wRouter_hR"></span><span id="bkmk_hck_wrouter_hr"></span><span id="BKMK_HCK_WROUTER_HR"></span>Hardware requirements
+## <span id="BKMK-HCK-wRouter-hR"></span><span id="bkmk_hck_wrouter_hr"></span><span id="BKMK_HCK_WROUTER_HR"></span>Hardware requirements
 
 
 The following hardware is required for wireless router testing.

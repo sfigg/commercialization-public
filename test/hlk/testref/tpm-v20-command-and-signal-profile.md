@@ -20,7 +20,7 @@ This document specifies the TPM signaling interface supported by Windows 8 and l
 
 No other signaling interface is supported but additional TPM 2.0 commands that are not used by Windows may be implemented in a TPM 2.0 device that is compliant with this specification. Please contact Microsoft for more information about vendor-specific command ranges.
 
-## <span id="Command_and_Signal_Profile"></span><span id="command_and_signal_profile"></span><span id="COMMAND_AND_SIGNAL_PROFILE"></span>Command and Signal Profile
+## <span id="Command-and-Signal-Profile"></span><span id="command_and_signal_profile"></span><span id="COMMAND_AND_SIGNAL_PROFILE"></span>Command and Signal Profile
 
 
 ### <span id="Requirements"></span><span id="requirements"></span><span id="REQUIREMENTS"></span>Requirements

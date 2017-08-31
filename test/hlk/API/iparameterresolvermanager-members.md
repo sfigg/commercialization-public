@@ -12,7 +12,7 @@ ms.assetid: c6c8a7ce-510a-4d41-b4b7-4500e2a766b7
 
 The following tables list the members exposed by the **IParameterResolverManager** type.
 
-## <span id="Public_Methods"></span><span id="public_methods"></span><span id="PUBLIC_METHODS"></span>Public Methods
+## <span id="Public-Methods"></span><span id="public_methods"></span><span id="PUBLIC_METHODS"></span>Public Methods
 
 
 <table>

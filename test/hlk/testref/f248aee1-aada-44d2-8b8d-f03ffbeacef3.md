@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: a93c542e-729c-400d-84e2-918b162bef91
 ---
 
-# <span id="p_hlk_test.f248aee1-aada-44d2-8b8d-f03ffbeacef3"></span>Wlan Test - Toggle airplane mode - (WoW64 for ARM64)
+# <span id="p-hlk-test.f248aee1-aada-44d2-8b8d-f03ffbeacef3"></span>Wlan Test - Toggle airplane mode - (WoW64 for ARM64)
 
 
 This automated test toggles the radio states in the same way as the user interface airplane mode option.

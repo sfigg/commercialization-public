@@ -12,7 +12,7 @@ ms.assetid: 3a2aa9d0-5694-43d5-a5be-6c939717eb6d
 
 This section describes the tasks that you must complete before you run Trusted Platform Module (TPM) system fundamentals tests by using the Windows Hardware Lab Kit (Windows HLK). These are settings that you must establish one time before running the TPM tests.
 
-## <span id="Before_you_run_the_TPM_system_fundamentals_tests_"></span><span id="before_you_run_the_tpm_system_fundamentals_tests_"></span><span id="BEFORE_YOU_RUN_THE_TPM_SYSTEM_FUNDAMENTALS_TESTS_"></span>Before you run the TPM system fundamentals tests:
+## <span id="Before-you-run-the-TPM-system-fundamentals-tests-"></span><span id="before_you_run_the_tpm_system_fundamentals_tests_"></span><span id="BEFORE_YOU_RUN_THE_TPM_SYSTEM_FUNDAMENTALS_TESTS_"></span>Before you run the TPM system fundamentals tests:
 
 
 1.  Open Tpm.msc and check whether state is “TPM is ready for use”. If it is not, clear the TPM from the TPM MMC console and then prepare the TPM. Make sure that TPM is enabled, active, and owned.

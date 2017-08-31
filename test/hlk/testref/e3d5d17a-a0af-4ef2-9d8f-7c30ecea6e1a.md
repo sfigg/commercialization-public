@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: 9fbf580f-4515-46ec-905f-b785d774fd87
 ---
 
-# <span id="p_hlk_test.e3d5d17a-a0af-4ef2-9d8f-7c30ecea6e1a"></span>NVMe Deallocate Performance Test (LOGO)
+# <span id="p-hlk-test.e3d5d17a-a0af-4ef2-9d8f-7c30ecea6e1a"></span>NVMe Deallocate Performance Test (LOGO)
 
 
 This test evaluates the performance of the Deallocate command for Non-Volatile Memory Express (NVMe) controller drives.

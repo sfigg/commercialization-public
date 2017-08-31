@@ -12,7 +12,7 @@ ms.assetid: 3b62a206-2e3e-4821-bc07-b1e80327ef1e
 
 This table lists the properties of the ProjectSummary class.
 
-## <span id="Public_Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
+## <span id="Public-Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
 
 
 <table>

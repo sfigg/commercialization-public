@@ -10,7 +10,7 @@ ms.assetid: bb9af0a3-0ac6-4dc8-a2b0-8d3632fe4bcd
 # TestParameter Methods
 
 
-## <span id="Public_Methods"></span><span id="public_methods"></span><span id="PUBLIC_METHODS"></span>Public Methods
+## <span id="Public-Methods"></span><span id="public_methods"></span><span id="PUBLIC_METHODS"></span>Public Methods
 
 
 <table>

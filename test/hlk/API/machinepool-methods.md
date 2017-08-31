@@ -10,7 +10,7 @@ ms.assetid: 2de694b5-e68c-4e0c-bedd-71c89a257475
 # MachinePool Methods
 
 
-## <span id="Public_Methods"></span><span id="public_methods"></span><span id="PUBLIC_METHODS"></span>Public Methods
+## <span id="Public-Methods"></span><span id="public_methods"></span><span id="PUBLIC_METHODS"></span>Public Methods
 
 
 <table>

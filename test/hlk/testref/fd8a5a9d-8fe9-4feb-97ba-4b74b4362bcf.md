@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: b7ffd42d-fcff-46c9-b4d3-7e4e9c2647a5
 ---
 
-# <span id="p_hlk_test.fd8a5a9d-8fe9-4feb-97ba-4b74b4362bcf"></span>ReadAllJewel
+# <span id="p-hlk-test.fd8a5a9d-8fe9-4feb-97ba-4b74b4362bcf"></span>ReadAllJewel
 
 
 Verify that we can read every block of a Jewel/Topaz card.

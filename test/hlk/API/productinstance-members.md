@@ -12,7 +12,7 @@ ms.assetid: debffe68-d92b-4f79-bd57-05fde26c4ff7
 
 The following table lists the members exposed by the [ProductInstance Class](productinstance-class.md).
 
-## <span id="Public_Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
+## <span id="Public-Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
 
 
 <table>

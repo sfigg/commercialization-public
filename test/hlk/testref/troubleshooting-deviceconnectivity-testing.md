@@ -34,7 +34,7 @@ To troubleshoot issues with PCI device, USB devices, or USB hub connectivity tes
 
 4.  If you cannot obtain a successful test result, contact [Windows HLK Support](p_hlk.windows_hlk_support).
 
-### <span id="Information_about_USB_connectivity_tests_for_Windows_7"></span><span id="information_about_usb_connectivity_tests_for_windows_7"></span><span id="INFORMATION_ABOUT_USB_CONNECTIVITY_TESTS_FOR_WINDOWS_7"></span>Information about USB connectivity tests for Windows 7
+### <span id="Information-about-USB-connectivity-tests-for-Windows-7"></span><span id="information_about_usb_connectivity_tests_for_windows_7"></span><span id="INFORMATION_ABOUT_USB_CONNECTIVITY_TESTS_FOR_WINDOWS_7"></span>Information about USB connectivity tests for Windows 7
 
 The advantages of connecting a device to a USB 2.0 hub are as follows:
 

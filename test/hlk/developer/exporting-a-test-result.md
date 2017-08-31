@@ -12,7 +12,7 @@ ms.assetid: 6C809273-0594-4AD7-B481-80752CFEA085
 
 This sample shows how to export a test so that it can be run on a machine outside of the full HLK environment.
 
-## <span id="C_"></span><span id="c_"></span>**C#**
+## <span id="C-"></span><span id="c_"></span>**C#**
 
 
 ``` syntax

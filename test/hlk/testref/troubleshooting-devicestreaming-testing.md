@@ -24,7 +24,7 @@ To troubleshoot issues that occur with Device.Streaming tests, follow these step
 
 3.  For a test failure, look for usable information in the Windows HLK Studio test log. If you find usable information, resolve the issue and rerun the test.
 
-### <span id="Specific_information_about_HMFT_testing"></span><span id="specific_information_about_hmft_testing"></span><span id="SPECIFIC_INFORMATION_ABOUT_HMFT_TESTING"></span>Specific information about HMFT testing
+### <span id="Specific-information-about-HMFT-testing"></span><span id="specific_information_about_hmft_testing"></span><span id="SPECIFIC_INFORMATION_ABOUT_HMFT_TESTING"></span>Specific information about HMFT testing
 
 The Hardware Media Foundation Transform (HMFT) decoding and encoding tests require the following:
 

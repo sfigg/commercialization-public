@@ -12,7 +12,7 @@ ms.assetid: c1804700-1c13-45dc-a0bb-94cc7768d84b
 
 The following table lists the members exposed by the **PackageFilter** type.
 
-## <span id="Public_Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
+## <span id="Public-Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
 
 
 <table>

@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: 1bc40b6b-1a23-467a-b2ae-03a2fc7ba3cd
 ---
 
-# <span id="p_hlk_test.5eccdfd7-7e48-4c9b-9edd-71fcd8964f0e"></span>Camera Driver Controls System Test - ADVANCEDPHOTO\_ULTRALOWLIGHT - Verify Take Photo AUTO
+# <span id="p-hlk-test.5eccdfd7-7e48-4c9b-9edd-71fcd8964f0e"></span>Camera Driver Controls System Test - ADVANCEDPHOTO\_ULTRALOWLIGHT - Verify Take Photo AUTO
 
 
 Test to validate key user scenarios in the camera stack

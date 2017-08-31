@@ -10,7 +10,7 @@ ms.assetid: 55649FB7-E4CC-4804-8C88-FEF4F806FE93
 # IRunExport Methods
 
 
-## <span id="Public_Methods"></span><span id="public_methods"></span><span id="PUBLIC_METHODS"></span>Public Methods
+## <span id="Public-Methods"></span><span id="public_methods"></span><span id="PUBLIC_METHODS"></span>Public Methods
 
 
 <table>

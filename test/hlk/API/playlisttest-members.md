@@ -12,7 +12,7 @@ ms.assetid: F9606DE0-5D51-4292-A233-9EBCDCEFF34E
 
 The following tables list the members exposed by the [PlaylistTest Class](playlisttest-class.md).
 
-## <span id="Public_Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
+## <span id="Public-Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
 
 
 <table>

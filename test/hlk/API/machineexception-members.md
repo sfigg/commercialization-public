@@ -12,7 +12,7 @@ ms.assetid: 02640862-5f84-42fb-82a5-2bf43e053c1e
 
 The following table lists the members exposed by the **Machine** type.
 
-## <span id="Public_Constructors"></span><span id="public_constructors"></span><span id="PUBLIC_CONSTRUCTORS"></span>Public Constructors
+## <span id="Public-Constructors"></span><span id="public_constructors"></span><span id="PUBLIC_CONSTRUCTORS"></span>Public Constructors
 
 
 <table>

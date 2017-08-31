@@ -28,7 +28,7 @@ Any test that could be schedules as a multi-device test displays by using the mu
 
  
 
-## <span id="Test_status"></span><span id="test_status"></span><span id="TEST_STATUS"></span>Test status
+## <span id="Test-status"></span><span id="test_status"></span><span id="TEST_STATUS"></span>Test status
 
 
 In the **Detailed Test** pane, the **Status** column shows you the status of each test that has run or is running.

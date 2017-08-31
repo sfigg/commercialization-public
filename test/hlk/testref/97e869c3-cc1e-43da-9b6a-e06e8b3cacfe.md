@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: 8928fcf4-c5aa-4388-989f-94d944e15c7e
 ---
 
-# <span id="p_hlk_test.97e869c3-cc1e-43da-9b6a-e06e8b3cacfe"></span>WinRT LightSensor SingleThread
+# <span id="p-hlk-test.97e869c3-cc1e-43da-9b6a-e06e8b3cacfe"></span>WinRT LightSensor SingleThread
 
 
 Windows::Devices::Sensors::LightSensor C++/Cx Functional Tests

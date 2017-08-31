@@ -18,7 +18,7 @@ This section describes the tasks that you must complete before you test a SATA c
 
 -   [Test Computer Configuration](#bkmk-configure).
 
-## <span id="BKMK_HardwareRequirements"></span><span id="bkmk_hardwarerequirements"></span><span id="BKMK_HARDWAREREQUIREMENTS"></span>Hardware Requirements
+## <span id="BKMK-HardwareRequirements"></span><span id="bkmk_hardwarerequirements"></span><span id="BKMK_HARDWAREREQUIREMENTS"></span>Hardware Requirements
 
 
 The following hardware is required to test an SATA controller. You might need additional hardware if the test device offers other features. To determine whether additional hardware requirements apply, see the test description for each test that appears for the device in Windows HLK Studio.

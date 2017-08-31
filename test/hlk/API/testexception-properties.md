@@ -10,7 +10,7 @@ ms.assetid: eced1e87-6bee-4e35-85b5-6bb11ab46166
 # TestException Properties
 
 
-## <span id="Public_Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
+## <span id="Public-Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
 
 
 <table>

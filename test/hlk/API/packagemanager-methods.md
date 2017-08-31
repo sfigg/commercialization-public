@@ -10,7 +10,7 @@ ms.assetid: bff068ce-2065-4fe0-92c3-867c7b37a7e4
 # PackageManager Methods
 
 
-## <span id="Public_Methods"></span><span id="public_methods"></span><span id="PUBLIC_METHODS"></span>Public Methods
+## <span id="Public-Methods"></span><span id="public_methods"></span><span id="PUBLIC_METHODS"></span>Public Methods
 
 
 <table>

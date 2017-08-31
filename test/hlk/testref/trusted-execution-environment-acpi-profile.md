@@ -12,7 +12,7 @@ ms.assetid: 263a86e5-4081-4b94-ba76-4bbc4ae3f8d0
 
 Licensing: Microsoft agrees to grant to you a no charge, royalty-free license to its Necessary Claims on reasonable and non-discriminatory terms solely to make, use, sell, offer for sale, import, or distribute any implementation of this specification. “Necessary Claims” are those claims of Microsoft-owned or Microsoft-controlled patents that are technically necessary to implement the required portions (which also include the required elements of optional portions) of this specification, where the functionality causing the infringement is described in detail and not merely referenced in this Specification.
 
-## <span id="1.0_background"></span><span id="1.0_BACKGROUND"></span>1.0 Background
+## <span id="1.0-background"></span><span id="1.0_BACKGROUND"></span>1.0 Background
 
 
 This specification defines the ACPI device object for a TPM 2.0 device and the control methods associated with the ACPI device object required for Windows 8. The control methods implement the equivalent of the TCG physical presence ACPI interface, the equivalent of the Platform Reset Attack Mitigation interface and optionally an ACPI method to send a command to the TPM 2.0 device.

@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: f40f28d7-ce1f-4bf6-951d-054ac77fc463
 ---
 
-# <span id="p_hlk_test.caa16fdf-eef6-40a6-bd80-f1079aa227bc"></span>Windows Touch Response Latency (Down) Test (System)
+# <span id="p-hlk-test.caa16fdf-eef6-40a6-bd80-f1079aa227bc"></span>Windows Touch Response Latency (Down) Test (System)
 
 
 >[!NOTE]

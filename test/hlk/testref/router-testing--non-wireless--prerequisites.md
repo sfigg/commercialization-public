@@ -18,7 +18,7 @@ This section describes the tasks that you must complete before you test an Ether
 
 -   [Test computer configuration](#bkmk-hck-router-tc).
 
-## <span id="BKMK_HCK_Router_hR"></span><span id="bkmk_hck_router_hr"></span><span id="BKMK_HCK_ROUTER_HR"></span>Hardware requirements
+## <span id="BKMK-HCK-Router-hR"></span><span id="bkmk_hck_router_hr"></span><span id="BKMK_HCK_ROUTER_HR"></span>Hardware requirements
 
 
 The following hardware is required for router testing. You might need additional hardware if the test device provides bus-specific support. See the test description for each bus-specific test to determine if there are additional hardware requirements.

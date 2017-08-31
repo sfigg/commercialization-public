@@ -18,7 +18,7 @@ This section describes the tasks that you must complete before you test an iSCSI
 
 -   [Test computer configuration](#bkmk-configure).
 
-## <span id="BKMK_HardwareRequirements"></span><span id="bkmk_hardwarerequirements"></span><span id="BKMK_HARDWAREREQUIREMENTS"></span>Hardware Requirements
+## <span id="BKMK-HardwareRequirements"></span><span id="bkmk_hardwarerequirements"></span><span id="BKMK_HARDWAREREQUIREMENTS"></span>Hardware Requirements
 
 
 You can run the iSCSI HBA tests in a single configuration. However, you can implement this configuration in one of two ways:

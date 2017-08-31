@@ -24,7 +24,7 @@ You can install a standalone Windows HLK Studio if you want to view .hlkx certif
 
 -   Add a DUA driver update to the package.
 
-## <span id="To_install_standalone_Windows_HLK_Studio"></span><span id="to_install_standalone_windows_hlk_studio"></span><span id="TO_INSTALL_STANDALONE_WINDOWS_HLK_STUDIO"></span>To install standalone Windows HLK Studio
+## <span id="To-install-standalone-Windows-HLK-Studio"></span><span id="to_install_standalone_windows_hlk_studio"></span><span id="TO_INSTALL_STANDALONE_WINDOWS_HLK_STUDIO"></span>To install standalone Windows HLK Studio
 
 
 1.  [Download the Windows HLK](https://go.microsoft.com/fwlink/p/?LinkId=733613) to a location accessible to your test server.

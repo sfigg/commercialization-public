@@ -16,7 +16,7 @@ Before you begin to test your hardware-based RAID storage array by using the Win
 
 -   [Hardware-based Raid Systems (Fibre Channel, SAS, SCSI, Serial ATA) Testing Prerequisites](hardware-based-raid-systems--fibre-channel-sas-scsi-serial-ata--testing-prerequisites.md)
 
-## <span id="related_topics"></span>Related topics
+## <span id="related-topics"></span>Related topics
 
 
 [Device.Storage Tests](device-storage-tests.md)

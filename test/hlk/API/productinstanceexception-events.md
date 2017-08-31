@@ -10,7 +10,7 @@ ms.assetid: eaa7ce1a-8c9d-4e2a-8c81-fea94f44a024
 # ProductInstanceException Events
 
 
-## <span id="Protected_Events"></span><span id="protected_events"></span><span id="PROTECTED_EVENTS"></span>Protected Events
+## <span id="Protected-Events"></span><span id="protected_events"></span><span id="PROTECTED_EVENTS"></span>Protected Events
 
 
 <table>

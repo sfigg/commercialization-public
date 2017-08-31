@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: 09b8df4b-2ff2-4ced-a53a-c8d3d1eaf583
 ---
 
-# <span id="p_hlk_test.db3cc4b3-b7fa-4cd4-aa0e-b5f8a7c9aab1"></span>Assessment - Internet Explorer Startup Performance
+# <span id="p-hlk-test.db3cc4b3-b7fa-4cd4-aa0e-b5f8a7c9aab1"></span>Assessment - Internet Explorer Startup Performance
 
 
 Measures the time to launch the Internet Explorer process, when the Internet Explorer process has already been loaded into memory. The process is loaded into memory to minimize storage I/O interference. The results help you understand the impact of third-party add-ins, such as toolbars and extensions.

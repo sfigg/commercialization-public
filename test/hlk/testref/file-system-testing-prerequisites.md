@@ -18,7 +18,7 @@ This section describes the tasks that you must complete before you test an audio
 
 -   Configure the test computers.
 
-## <span id="Hardware_requirements"></span><span id="hardware_requirements"></span><span id="HARDWARE_REQUIREMENTS"></span>Hardware requirements
+## <span id="Hardware-requirements"></span><span id="hardware_requirements"></span><span id="HARDWARE_REQUIREMENTS"></span>Hardware requirements
 
 
 The following hardware is required for File System testing.

@@ -28,7 +28,7 @@ To troubleshoot issues that occur with Device.Portable tests, follow these steps
 
 6.  If you cannot obtain a successful test result, contact [Windows HLK Support](p_hlk.windows_hlk_support).
 
-## <span id="related_topics"></span>Related topics
+## <span id="related-topics"></span>Related topics
 
 
 [Device.Portable Tests](device-portable-tests.md)

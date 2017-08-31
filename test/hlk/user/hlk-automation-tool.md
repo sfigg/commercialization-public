@@ -46,7 +46,7 @@ The individual steps are as follows:
 
 -   [PDEF reference](#pdefref)
 
-## <span id="BKMK_prereq"></span><span id="bkmk_prereq"></span><span id="BKMK_PREREQ"></span>Windows HLK automation tools prerequisites
+## <span id="BKMK-prereq"></span><span id="bkmk_prereq"></span><span id="BKMK_PREREQ"></span>Windows HLK automation tools prerequisites
 
 
 Before you begin testing, make sure that you are familiar with the Windows HLK automation concepts and hardware requirements. See [Windows HLK Prerequisites](p_sxs_hlk.windows_hlk_prerequisites).

@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: 15ea5024-b39c-455c-a5d5-f38a40dcb796
 ---
 
-# <span id="p_hlk_test.3e108dad-b2ef-4fa5-8ffc-c0e98bbebfc4"></span>Four Character Code Surface Stability Test (WoW64)
+# <span id="p-hlk-test.3e108dad-b2ef-4fa5-8ffc-c0e98bbebfc4"></span>Four Character Code Surface Stability Test (WoW64)
 
 
 This automated test verifies the requirements listed in the test details table.

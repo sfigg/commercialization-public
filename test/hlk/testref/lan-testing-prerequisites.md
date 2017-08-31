@@ -57,7 +57,7 @@ This content applies to both stand-alone network adapters and integrated network
 
  
 
-## <span id="Machine_topology"></span><span id="machine_topology"></span><span id="MACHINE_TOPOLOGY"></span>Machine topology
+## <span id="Machine-topology"></span><span id="machine_topology"></span><span id="MACHINE_TOPOLOGY"></span>Machine topology
 
 
 The following diagram shows the recommended machine topology. Topologies that differ from this are highly discouraged as they may require extra effort in order to get the tests running correctly.

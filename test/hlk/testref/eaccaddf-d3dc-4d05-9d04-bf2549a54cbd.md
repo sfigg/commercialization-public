@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: 84401502-029f-4a90-b792-2dcc1e56ec66
 ---
 
-# <span id="p_hlk_test.eaccaddf-d3dc-4d05-9d04-bf2549a54cbd"></span>USB-IF Certification Validation Test (Device)
+# <span id="p-hlk-test.eaccaddf-d3dc-4d05-9d04-bf2549a54cbd"></span>USB-IF Certification Validation Test (Device)
 
 
 This test checks that the device has passed USB-IF Certification

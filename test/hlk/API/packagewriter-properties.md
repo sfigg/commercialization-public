@@ -10,7 +10,7 @@ ms.assetid: ac945b80-843f-49de-ad91-f03c67184b1c
 # PackageWriter Properties
 
 
-## <span id="Public_Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
+## <span id="Public-Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
 
 
 <table>

@@ -12,7 +12,7 @@ ms.assetid: b7e99b19-f500-4868-9815-fc7c1e6ecf79
 
 The following table lists the members exposed by the **OSPlatform** type.
 
-## <span id="Public_Constructor"></span><span id="public_constructor"></span><span id="PUBLIC_CONSTRUCTOR"></span>Public Constructor
+## <span id="Public-Constructor"></span><span id="public_constructor"></span><span id="PUBLIC_CONSTRUCTOR"></span>Public Constructor
 
 
 <table>
