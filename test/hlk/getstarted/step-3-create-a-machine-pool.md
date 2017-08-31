@@ -29,7 +29,8 @@ The following image shows the Studio **Configuration** page.
 
 3.  Choose **Default Pool**, and confirm that each test system appears in the main pane on the right. If you've installed the Client on multiple test systems, you can add any of them to the pool.
 
-    **Note**  A computer can only be in one pool at a time.
+    >[!NOTE]
+>  A computer can only be in one pool at a time.
 
      
 
@@ -39,11 +40,13 @@ The following image shows the Studio **Configuration** page.
 
     The **Status** column changes to **Ready**.
 
-    **Warning**  You cannot schedule a test against a computer with status equal to **NotReady**.
+    >[!WARNING]
+>  You cannot schedule a test against a computer with status equal to **NotReady**.
 
      
 
-    **Warning**  A computer cannot be set to **Ready** while in the **Default** pool.
+    >[!WARNING]
+>  A computer cannot be set to **Ready** while in the **Default** pool.
 
      
 

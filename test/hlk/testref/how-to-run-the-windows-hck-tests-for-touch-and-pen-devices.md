@@ -131,7 +131,8 @@ The tests are designed to run in landscape orientation and might not display cor
 
 After you start a touch quality test, a screen displays the available scenarios for the selected requirement. There is typically more than one scenario per requirement, and more than one test per scenario. To begin a scenario, tap its tile.
 
-**Tip**  
+>[!TIP]
+>  
 You can return to the test selection screen at any time by tapping **Back to Index** in the floating UI in the test tool.
 
  
@@ -166,7 +167,8 @@ You can use the following procedure to test the Touch.ReportingRate (Single Movi
 
 3.  After you run all the tests, you can tap the **Exit** tile to exit the test suite. Results are reported to the Windows HLK controller after you tap the **Exit** tile.
 
-    **Tip**  
+    >[!TIP]
+>  
     You can also tap any test tile to review the results of the test. You can rerun any failed test.
 
      

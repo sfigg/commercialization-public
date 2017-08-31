@@ -18,7 +18,8 @@ The Server test requires the following system configuration tasks to prepare the
 
 -   One server under test" (SUT). This is the computer that you are certifying.
 
-    **Warning**  
+    >[!WARNING]
+>  
     The SUT computer name must be 15 characters or less.
 
      
@@ -87,7 +88,8 @@ Because some systems might be set to shipping configuration, they might not have
 
 5.  IPv4 and IPv6 must both be enabled on the system being tested, the master client, and all clients connected to the system.
 
-**Warning**  
+>[!WARNING]
+>  
 A network interface adapter that is not connected to a network generates an error, causing the test to fail. Note that network adapters that are used for iSCSI connectivity to storage do not need to be connected to client systems.
 
  

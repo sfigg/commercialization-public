@@ -10,7 +10,8 @@ ms.assetid: c7890995-e415-44c2-9f90-0d45e3b79ba0
 # Step 8: Create a submission package
 
 
-**Note**  We highly encourage you to include driver symbols as part of package creation. Including symbols enables Microsoft to triage and root cause issues related to your driver.
+>[!NOTE]
+>  We highly encourage you to include driver symbols as part of package creation. Including symbols enables Microsoft to triage and root cause issues related to your driver.
 
  
 
@@ -33,7 +34,8 @@ The following image shows the HLK Studio **Package** tab.
 
     2.  In the **Driver Properties** dialog box, select the appropriate **Products** and **Locales**, and then click **OK**.
 
-        **Important**  The default locale is English only. If you want to add another locale, you must add it now. After the driver package is created, you cannot change the locales.
+        >[!IMPORTANT]
+>  The default locale is English only. If you want to add another locale, you must add it now. After the driver package is created, you cannot change the locales.
 
          
 
@@ -45,7 +47,8 @@ The following image shows the HLK Studio **Package** tab.
 
 6.  From the **Signing Options** dialog box, select one of these options:
 
-    **Important**  
+    >[!IMPORTANT]
+>  
     All submissions must be digitally signed.
 
     Starting with Windows 10, you must also include an EV (extended validation) code signing certificate.

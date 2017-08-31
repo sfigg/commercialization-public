@@ -20,7 +20,8 @@ The **Windows 8 Hardware Certification Requirements** document defines Windows t
 
 On January 1, 2014, Touch device certification changes from full-test to self-test model. Partners can submit Touch device for certification without sending hardware to WTTL for full-test validation. However, we highly recommend that you continue to utilize the WTTL service as part of development validation step to ensure consistency of testing touch quality. WTTL services remain free of charge.
 
-**Tip**  
+>[!TIP]
+>  
 We recommend that you visit the [Windows Hardware Certification blog](http://go.microsoft.com/fwlink/?LinkID=285656) for up-to-date news about the Windows Hardware Certification Program.
 
  

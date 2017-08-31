@@ -91,7 +91,8 @@ If you cannot install or remove the Windows HLK Controller, review the controlle
 
 4.  Open the log file in a text editor such as Notepad.
 
-    **Note**  
+    >[!NOTE]
+>  
     If more than one file ends in HLKControllerx86\_en\_us.log, open the newest file. To open the log file in Notepad from the command line, type **Notepad**, the full file name, and then press **Enter**.
 
      

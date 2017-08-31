@@ -165,7 +165,8 @@ Some Windows HLK tests require user intervention. When you run tests for a submi
 
 Additionally, the automated Disk Verification test is a 72-hour test. We recommend that you run this test last or over the weekend, so that you can collect and analyze the results from other tests without waiting for this test to finish.
 
-**Warning**  
+>[!WARNING]
+>  
 When testing storage devices, we strongly recommend that you complete all Device Fundamentals tests before starting storage tests. Storage tests will reconfigure your test device, leaving the device in a state unsuitable to support Device Fundamentals tests. The following configurations provide steps to create volume on the storage test device. This is important to complete the Device Fundamental part of testing (DevFund).
 
  

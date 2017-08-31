@@ -141,7 +141,8 @@ The test performs the following tasks:
 
 -   Scales the result back to `int [0..256)`
 
-**Warning**  
+>[!WARNING]
+>  
 Gamma presentation is supported only on a desktop that has a 32-bit color depth.
 
  

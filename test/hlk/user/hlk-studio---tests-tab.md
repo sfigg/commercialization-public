@@ -24,7 +24,8 @@ You can filter and sort the test results by the following criteria:
 
 -   Length
 
-**Note**  
+>[!NOTE]
+>  
 A grayed-out test indicates one of the following states:
 
 -   The machine with the selected target is unavailable (debug mode or missing, etc.)
@@ -55,7 +56,8 @@ Some tests require additional parameters before they can be run. When you select
 
 ![test parameter dialog box](images/hck-winb-parameter-db.png)
 
-**Note**  
+>[!NOTE]
+>  
 The parameter dialog displays only when you schedule (run) the test. If you schedule multiple tests that require parameter input, the parameter dialog displays all the parameters. For additional help on each parameter value, click the **F1** key.
 
  

@@ -311,7 +311,8 @@ If Remote Desktop cannot connect to a Windows HLK Client computer, make sure tha
 ## <span id="remcli"></span><span id="REMCLI"></span>Remove and reinstall the Windows HLK Client
 
 
-**Warning**  
+>[!WARNING]
+>  
 Do not remove the Windows HLK Client as the first step in troubleshooting Windows HLK Client problems. If you reinstall the Windows HLK Client, any certification testing in progress is lost and you have to rerun all the tests in a new project.
 
  

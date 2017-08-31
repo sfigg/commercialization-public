@@ -24,7 +24,8 @@ The **Package** tab lets you package test results into a single HLK package (.hl
 
 -   Merge packages.
 
-**Important**  
+>[!IMPORTANT]
+>  
 To submit a package for certification, your package must be digitally signed.
 
  

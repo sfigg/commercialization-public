@@ -47,7 +47,8 @@ The following hardware is required for testing an audio device. You might need a
 
      
 
-**Warning**  
+>[!WARNING]
+>  
 All audio devices must be plugged in during audio testing.
 
  

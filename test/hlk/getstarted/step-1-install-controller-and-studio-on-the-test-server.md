@@ -12,18 +12,15 @@ ms.assetid: d5f43ad7-4ebb-4523-b3d9-b324ef44632b
 
 In this step, you install Windows HLK software on the designated test server. The setup program installs the Windows HLK Controller and Studio, in addition to other resources.
 
->[!Warning]  
->The Windows Hardware Lab Kit should only be installed on machines that are dedicated solely for testing purposes. Do not install any HLK component on a machine that is outside of a dedicated testing environment.
+**Warning**  The Windows Hardware Lab Kit should only be installed on machines that are dedicated solely for testing purposes. Do not install any HLK component on a machine that is outside of a dedicated testing environment.
 
  
 
->[!Note]  
->The test server should be preinstalled with Windows Server 2008 R2, Windows Server 2012, Windows Server 2012 R2, or Windows Server 2016.
+**Note**  The test server should be preinstalled with Windows Server 2008 R2, Windows Server 2012, Windows Server 2012 R2, or Windows Server 2016.
 
  
 
->[!Important]  
->If you are upgrading your HLK environment to a later version, you must first uninstall the previous version of the HCK or HLK software from the test server and any connected test clients.
+**Important**  If you are upgrading your HLK environment to a later version, you must first uninstall the previous version of the HCK or HLK software from the test server and any connected test clients.
 
  
 
@@ -34,15 +31,13 @@ In this step, you install Windows HLK software on the designated test server. Th
 
 1.  Download [the HLK](https://go.microsoft.com/fwlink/p/?LinkId=733613).
 
-    >[!Note]
-    >  If you are downloading directly onto your server, you must disable the IE Enhanced Security Configuration (IE ESC).
+    **Note**  If you are downloading directly onto your server, you must disable the IE Enhanced Security Configuration (IE ESC).
 
      
 
 2.  When prompted, select **Run**.
 
-    >[!Warning]
-    >  Don't select the **Save** option. The **Save** option only downloads the setup file and not the complete kit.
+    **Warning**  Don't select the **Save** option. The **Save** option only downloads the setup file and not the complete kit.
 
      
 
@@ -58,8 +53,7 @@ In this step, you install Windows HLK software on the designated test server. Th
 
 5.  When the **Join the Customer Experience Improvement Program (CEIP)** screen appears, choose **Yes** or **No**, and then choose **Next**.
 
-    >[!Note]
-    >  If your network isn't connected to the Internet, choose **No**.
+    **Note**  If your network isn't connected to the Internet, choose **No**.
 
      
 
@@ -67,11 +61,11 @@ In this step, you install Windows HLK software on the designated test server. Th
 
     Installation takes about 45 minutes.
 
-    >[!Note]
-    >If Microsoft .NET Framework 4.5 isn't already installed on the computer, follow the prompts to install it. After the computer restarts, you must repeat the installation instructions from **Step 1** for installing to this computer.
+    **Note**  If Microsoft .NET Framework 4.5 isn't already installed on the computer, follow the prompts to install it. After the computer restarts, you must repeat the installation instructions from **Step 1** for installing to this computer.
 
-    >[!Note]  
-    >If you selected the download option, copy your download to your test server. Run HLKSetup.exe and repeat the installation instructions from **Step 3** for installing to this computer.
+     
+
+    **Note**  If you selected the download option, copy your download to your test server. Run HLKSetup.exe and repeat the installation instructions from **Step 3** for installing to this computer.
 
      
 

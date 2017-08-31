@@ -12,7 +12,8 @@ ms.assetid: C750E177-5629-4E29-A3F3-999AEE9A1021
 
 This topic guides you through a series of scripting-supported steps to automate Windows HLK driver, system, and software device testing. This allows you to run the Windows HLK tests without using the Windows HLK user interface (UI).
 
-**Note**  
+>[!NOTE]
+>  
 There is a known issue with the Windows HLK execution engine. When a test has halted or the system has stopped a machine and the Windows HLK Object Model interprets the test as still running, the Windows HLK execution engine does not recognize the condition and can continue to monitor the test execution indefinitely (or until the timeout value of the project is reached). The root cause for this issue is that Windows HLK execution engine gets the test result from the Windows HLK ObjectModel; in this case, it therefore thinks that the test is still running and does not start the machine monitor to wait for recovery.
 
 We recommend that you manually cancel the job and reboot the machine to alert ObjectModel. You might need to rerun the failed/cancelled test by using a shortended test collection file, or run it manually by using Windows HLK Studio. This issue will be addressed in future releases.
@@ -63,7 +64,8 @@ The test server computer should be installed with an operating system and config
 
 4.  [Office Primary Interop Assemblies for Windows XP](http://www.microsoft.com/download/details.aspx?id=227).
 
-    **Important**  
+    >[!IMPORTANT]
+>  
     This specific version is required to export Excel.
 
      
@@ -115,7 +117,8 @@ To verify the successful installation of Windows PowerShell 3.0, do the follow
 
 To install the HLK client on a test system, follow the instructions found in [Step 2: Install Client on the test system(s)](p_sxs_hlk.step_2__install_client_on_the_test_system_s_).
 
-**Note**  
+>[!NOTE]
+>  
 When you install Windows HLK Client software on a computer, the computer is automatically added into the Windows HLK Controller Default Pool. The Default Pool is only supported in the Project Definition File that you define in the next steps.
 
 To locate the Hardware ID or Device Class of the testing device from the Device Manager of each test computer, see [Discovering Hardware IDs and Device Setup Classes for your Devices](http://technet.microsoft.com/library/cc733122.aspx).
@@ -661,7 +664,8 @@ Detailed steps of this process are as follows:
 
 3.  In Windows HLK Studio, on the **Package** tab, click **Create Package** and save the package.
 
-    **Note**  
+    >[!NOTE]
+>  
     The following step must be performed only if the initial test pass was run by having the client machines starting in the Default Pool.
 
      

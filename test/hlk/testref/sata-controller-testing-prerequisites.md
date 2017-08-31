@@ -544,7 +544,8 @@ To configure the test computer for testing of an SATA controller in a non-RAID c
 
 11. Use Windows HLK Studio to create a computer pool, and then move the test computer to that pool.
 
-**Warning**  
+>[!WARNING]
+>  
 When testing storage devices, we strongly recommend that you complete all Device Fundamentals tests before starting storage tests. Storage tests will reconfigure your test device, leaving the device in a state that is unsuitable to support Device Fundamentals tests. The following configurations provide steps to create volume on the storage test device. This is important to complete the Device Fundamental part of testing (DevFund).
 
  

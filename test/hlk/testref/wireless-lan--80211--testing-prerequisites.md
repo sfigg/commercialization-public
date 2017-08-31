@@ -325,7 +325,8 @@ You can download these items as follows:
 ## <span id="ap"></span><span id="AP"></span>AP Firmware Troubleshooting
 
 
-**Warning**  
+>[!WARNING]
+>  
 Applying new firmware to consumer devices can sometimes, although rarely, cause permanent damage. You must read the device manual that came with your router and be careful when you flash new firmware on a device. Detailed steps, especially around the 30-30-30 reset, are required before flashing.
 
  

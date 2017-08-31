@@ -22,7 +22,8 @@ The following list describes the **Results** Tab:
 
 -   If you delete a test result, you must restart HLK Studio to refresh the test results.
 
-**Note**  
+>[!NOTE]
+>  
 Any test that could be schedules as a multi-device test displays by using the multi-device icon. Multi-device-specific menu options let you reschedule a multi-device test to run as multiple non-multi-device test run equivalents, and let you see the system and targets against which the tests were scheduled. If a test run fails when it is run in multi-device mode and you suspect that one device that was consolidated into the single result is causing the failure, you can use this option to schedule each test device in its own test run (that is, without consolidating multiple devices into a single test run), to scope the failure down to a single device under test.
 
  
@@ -92,7 +93,8 @@ In the **Detailed Test** pane, the **Status** column shows you the status of eac
 
  
 
-**Note**  
+>[!NOTE]
+>  
 If a filter is applied to a child library job, when all the tasks of the library job are filtered, the child library job itself can still show as unfiltered. This does not impact the submission package.
 
  
@@ -102,7 +104,8 @@ If a filter is applied to a child library job, when all the tasks of the library
 
 In the list of test results on the Results tab, a system crash icon (![system crash icon](images/status-icon-failed-bug-check.png)) is shown for each test that fails due to a system crash.
 
-**Note**  This feature is available only for Desktop client and server machines.
+>[!NOTE]
+>  This feature is available only for Desktop client and server machines.
 
  
 
@@ -116,7 +119,8 @@ Click on this menu item to display the Bugcheck Summary dialog. The dialog conta
 
 ![sample bugcheck summary information dialog](images/results-tab-system-crash-3.png)
 
-**Note**  
+>[!NOTE]
+>  
 If a crash dump file is available, the dialog contains a link to help documentation for working with crash debug information.
 
 If a crash dump file is not present, the dialog contains instructions on how to enable crash dump collection. You'll need to re-run the test to obtain the crash dump file.
@@ -181,7 +185,8 @@ The displayed logs can be the following types, depending on the test:
 
         Application Verifier logs in the form **appverif\_WUDFHost.exe.\*.dat** can be viewed by using an Application Verifier UI client. You can use the Application Verifier tool that is installed on the client machines. Copy logs to the directory **%VERIFIER\_LOG\_PATH%\\AppVerifierLogs** before you run **Appverif.exe - VERIFIER\_LOG\_PATH**. The path variable is already set to **%systemdrive%** on the Windows HLK client. You can also add symbol paths to resolve the symbols in the stack frames where the errors or exceptions have occurred.
 
-        **Note**  
+        >[!NOTE]
+>  
         The logs are generated in binary format and are architecture-specific. To view the logs, you must use an Application Verifier tool on a client that has the same architecture as the computers on which the logs were generated. See the Application Verifier tool Online Help for more information.
 
          

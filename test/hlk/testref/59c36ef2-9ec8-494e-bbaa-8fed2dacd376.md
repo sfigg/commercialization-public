@@ -103,7 +103,8 @@ For generic troubleshooting of HLK test failures, see [Troubleshooting Windows H
 
 For troubleshooting information, see [Troubleshooting Device.Imaging Testing](troubleshooting-deviceimaging-testing.md).
 
-**Warning**  
+>[!WARNING]
+>  
 Any attempt to change the system default printer while the test is running might lead to inconsistent results.
 
  

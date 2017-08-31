@@ -94,7 +94,8 @@ The following software is required to run the SoftwareDevice.FilterDriver.Window
 
 -   Network security software to test which utilizes WFP Callouts.
 
-    **Warning**  
+    >[!WARNING]
+>  
     Make sure that you install the product on the test computer before you install the Windows HLK Client.
 
      

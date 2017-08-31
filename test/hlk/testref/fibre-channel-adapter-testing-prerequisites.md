@@ -39,7 +39,8 @@ With the exception of the test computer and test controller, all hardware involv
 
 -   One Fibre Channel RAID storage subsystem that can support any one of the following: RAID-0, RAID-1, RAID-5, RAID-10, or RAID-6.
 
-    **Warning**  
+    >[!WARNING]
+>  
     Do not test by using a storage subsystem that connects via MPIO.
 
      
@@ -275,7 +276,8 @@ To configure the test computer to test a Fibre Channel storage controller, follo
 
 12. Use Windows HLK Studio to create a computer pool, and then move the test computer to that pool.
 
-**Warning**  
+>[!WARNING]
+>  
 When testing storage devices, we strongly recommend that you complete all Device Fundamentals tests before starting storage tests. Storage tests will reconfigure your test device, leaving the device in a state unsuitable to support Device Fundamentals tests. The following configurations provide steps to create volume on the storage test device. This is important to complete the Device Fundamental part of testing (DevFund).
 
  

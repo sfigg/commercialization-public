@@ -43,7 +43,8 @@ All hardware (except the test device, monitor, keyboard, mouse, and floppy disk 
 
 -   1 test-specific type of RAID storage system: Fibre Channel, SAS, SCSI, or SATA RAID (for example, a SAS RAID storage system for a SAS system test). This device is the test device.
 
-    **Warning**  
+    >[!WARNING]
+>  
     The RAID system must be a single cabinet that consists of an array controller that's enclosed in an external subsystem with hard disk drives. Or it must be an external array controller that connects to a RAID JBOD. The RAID system can't consist of only a Peripheral Component Interconnect (PCI)–based controller and 1 RAID JBOD.
 
      
@@ -281,7 +282,8 @@ For all types of RAID arrays that you're testing, make sure that the test comput
 
 Some Windows HLK tests require user intervention. When you're running tests for a submission, it's a best practice to run the automated tests in a block separately from manual tests. This prevents a manual test from interrupting the completion of an automated test.
 
-**Warning**  
+>[!WARNING]
+>  
 When testing storage devices, we strongly recommend that you complete all Device Fundamentals tests before starting storage tests. Storage tests will reconfigure your test device, leaving the device in a state unsuitable to support Device Fundamentals tests. The following configurations provide steps to create volume on the storage test device. This is important to complete the Device Fundamental part of testing (DevFund).
 
  

@@ -157,7 +157,8 @@ To configure the test computer to test a Fibre Channel storage controller, follo
 
     2.  Install the operating system on an NTFS-formatted 120 GB partition on the SATA or SAS hard disk drive that is connected to the alternate SATA or SAS boot controller in the test system.
 
-    **Warning**  
+    >[!WARNING]
+>  
     Do not follow this step when you test MPIO.
 
      
@@ -210,7 +211,8 @@ Make sure that the test computer is in the ready state before you begin your tes
 
 Some Windows HLK tests require user intervention. When you run tests for a submission, it is a best practice to run the automated tests in a block separately from manual tests. This prevents a manual test from interrupting completion of an automated test.
 
-**Warning**  
+>[!WARNING]
+>  
 When testing storage devices, we strongly recommend that you complete all Device Fundamentals tests before starting storage tests. Storage tests will reconfigure your test device, leaving the device in a state unsuitable to support Device Fundamentals tests. The following configurations provide steps to create volume on the storage test device. This is important to complete the Device Fundamental part of testing (DevFund).
 
  
