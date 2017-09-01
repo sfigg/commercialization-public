@@ -21,7 +21,7 @@ ms.technology: windows-oem
 
 `CustomDefaultThemeFile` specifies the path to a customized theme file. These files may include a .bmp file for customized background.
 
-While you can add custom .theme files to a Windows installation using [these instructions](https://msdn.microsoft.com/en-us/library/bb773190(VS.85).aspx(d=robot)#boot), .theme files can no longer be used as the default theme.
+While you can create additional custom themes by adding .theme files to a Windows installation (using [these instructions](https://msdn.microsoft.com/en-us/library/bb773190(VS.85).aspx(d=robot)#boot)), .theme files can no longer be used as the default theme.
 
  
 

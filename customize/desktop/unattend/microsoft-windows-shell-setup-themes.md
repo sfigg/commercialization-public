@@ -8,7 +8,7 @@ ms.assetid: 2e12464c-73c5-4b99-9506-d5edb166e839
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
 ms.author: alhopper
-ms.date: 08/22/2017
+ms.date: 09/01/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -21,7 +21,7 @@ The `Themes` setting includes settings to customize elements of the Windows visu
 
 To customize the Windows default theme, you must include the settings: [DesktopBackground](microsoft-windows-shell-setup-themes-desktopbackground.md) and [ThemeName](microsoft-windows-shell-setup-themes-themename.md). You may also optionally include the settings: [BrandIcon](microsoft-windows-shell-setup-themes-brandicon.md), [ScreenSaver](microsoft-windows-shell-setup-themes-screensaver.md), [UWPAppsUseLightTheme](microsoft-windows-shell-setup-themes-uwpappsuselighttheme.md), and [WindowColor](microsoft-windows-shell-setup-themes-windowcolor.md).
 
-To create additional custom theme files, see instructions in the MSDN topic: [Creating and Installing Theme Files](http://go.microsoft.com/fwlink/?LinkId=141343). Themes you create using these instructions can't be used as the default, however, users can choose to apply one of your custom themes from their **Personalization** settings if desired.
+In addition to customizing the Windows default theme, you can also create additional custom themes using .theme files. See instructions in the MSDN topic: [Creating and Installing Theme Files](http://go.microsoft.com/fwlink/?LinkId=141343). Theme files can't be used as the Windows default, however, users can choose to apply one of your custom themes from their **Personalization** settings if desired.
 
 ## Child Elements
 
