@@ -81,7 +81,7 @@ With hardware that meets basic requirements, it also means that even if an attac
 
 Starting in Windows 10, 1703, the Windows Defender Device Guard features have been grouped into two new features: **Windows Defender Exploit Guard** and **Windows Defender Application control**. When these are both enabled, Windows Defender Device Guard is enabled. For more information about Windows Defender Device Guard hardware requirements, see [Windows Defender Device Guard hardware requirements](Windows Defender Device Guard hardware requirements.md).
 
-***IT Professionals:** To learn how to deploy Windows Defender Device in your enterprise, see [Requirements and deployment planning guidelines for Device Guard](http://go.microsoft.com/fwlink/?LinkId=822877).
+**IT Professionals:** To learn how to deploy Windows Defender Device in your enterprise, see [Requirements and deployment planning guidelines for Device Guard](http://go.microsoft.com/fwlink/?LinkId=822877).
 
 ## Windows Defender Application Guard
 
