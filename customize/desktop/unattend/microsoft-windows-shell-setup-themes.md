@@ -17,7 +17,7 @@ ms.technology: windows-oem
 # Themes
 
 
-The `Themes` setting includes settings to customize elements of the Windows visual style, including the window glass color, desktop background, and screen saver.
+The `Themes` setting includes settings to customize elements of the Windows visual style, including the window glass color, desktop background, and brand icon.
 
 To customize the Windows default theme, you must include the settings: [DesktopBackground](microsoft-windows-shell-setup-themes-desktopbackground.md) and [ThemeName](microsoft-windows-shell-setup-themes-themename.md). You may also optionally include the settings: [BrandIcon](microsoft-windows-shell-setup-themes-brandicon.md), [ScreenSaver](microsoft-windows-shell-setup-themes-screensaver.md), [UWPAppsUseLightTheme](microsoft-windows-shell-setup-themes-uwpappsuselighttheme.md), and [WindowColor](microsoft-windows-shell-setup-themes-windowcolor.md).
 
@@ -74,7 +74,7 @@ In addition to customizing the Windows default theme, you can also create additi
 </tr>
 <tr class="even">
 <td><p>[WindowColor](microsoft-windows-shell-setup-themes-windowcolor.md)</p></td>
-<td><p>Specifies the color of the window borders and the color of various other elements in the system, most notably colors in the Start menu, common controls, hover-color for the Start menu, active-underline for open apps in the taskbar, and Quick Action tiles in the notification area.</p></td>
+<td><p>Specifies the color of the window borders and the color of various other elements in the system, most notably colors in the Start menu, common controls, active-underline for open apps in the taskbar, and Quick Action tiles in the notification area.</p></td>
 </tr>
 </tbody>
 </table>
@@ -114,6 +114,7 @@ The following XML output shows how to set a customized theme.
    <DesktopBackground>%WINDIR%\web\wallpaper\fabrikam.jpg</DesktopBackground>
    <BrandIcon>%programfiles%\Fabrikam\fabrikam-logo.png</BrandIcon>
    <ScreenSaver>Bubbles.scr</ScreenSaver>
+   <UWPAppsUseLightTheme>false</UWPAppsUseLightTheme>
    <WindowColor>Automatic</WindowColor>
 </Themes>
 ```

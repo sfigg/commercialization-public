@@ -17,7 +17,7 @@ ms.technology: windows-oem
 # WindowColor
 
 
-`WindowColor` specifies the color of the window borders and the color of various other elements in the system, most notably colors in the Start menu, calendar fly-out, common controls, hover-color for the Start menu, active-underline for open apps in the taskbar, and Quick Action tiles in the notification area. It can also control the color of additional surfaces, if the user has selected those options in the Colors section of their **Personalization** settings. The user can also choose to apply the color to Start, taskbar, and action center as well as title bars (as shown below).
+`WindowColor` specifies the color of the window borders and the color of various other elements in the system, most notably colors in the Start menu, calendar fly-out, common controls, active-underline for open apps in the taskbar, and Quick Action tiles in the notification area. It can also control the color of additional surfaces, if the user has selected those options in the Colors section of their **Personalization** settings. The user can also choose to apply the color to Start, taskbar, and action center as well as title bars (as shown below).
 
  ![Colors section of Personalization settings](images/personalization-colors.png)
 
@@ -30,9 +30,9 @@ There are two options for setting `WindowColor` in unattend.xml.
 
 1.   Set `WindowColor` to `Automatic`. Use this value to select a color that’s harmonious with the color palette of the desktop wallpaper. `Automatic` sets `WindowColor` to a color that is harmonious with the color palette of the desktop wallpaper will be chosen.
 The default color is a shade of blue (`0xff0078d7`).
-2.   Use a custom hexidecimal color value. When using custom hexidecimal color values, the accent color is defined by the ARGB color scheme, where the value is 0x[Opacity][Red][Green][Blue], for example `0xffcc5029`. This value has an A or Alpha value of `ff` hexadecimal, then a red value of `9b`, a green value of `cc`, and a blue value of `29` hexadecimal. Any letters in the hexadecimal value should be lowercase, and the value must include the `0x` prefix. The ARGB color 0xff9bcc29 looks like this:
+2.   Use a custom hexidecimal color value. When using custom hexidecimal color values, the accent color is defined by the ARGB color scheme, where the value is 0x[Opacity][Red][Green][Blue], for example `0xffcc5029`. This value has an A or Alpha value of `ff` hexadecimal, then a red value of `9b`, a green value of `cc`, and a blue value of `29` hexadecimal. Any letters in the hexadecimal value should be lowercase, and the value must include the `0x` prefix. The ARGB color `0xff9bcc29` looks like this:
 
-    ![0xff9bcc29](images/0xff9bcc29.png)
+                    ![0xff9bcc29](images/0xff9bcc29.png)
 
     The opacity (also known as alpha) value is ignored and has no bearing on the color. `00` is completely transparent, and `ff` is fully opaque. 
     To learn more about ARGB values, see the [Color.ToArgb Method ()](https://msdn.microsoft.com/en-us/library/system.drawing.color.toargb(v=vs.110).aspx).
