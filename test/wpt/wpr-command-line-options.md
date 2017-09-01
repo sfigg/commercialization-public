@@ -130,9 +130,9 @@ If you supply arguments together with the **–status** option, the information 
 <td><em>profiles</em></td>
 <td>This argument lists each profile that is being used in the current WPR recording.
 <p><strong>Example:</strong></p>
-<pre class="syntax" space="preserve"><code>Recording system activity using the following set of profiles:</code>
+<pre class="syntax" space="preserve">Recording system activity using the following set of profiles:
 
-<code>Profile                 : CPU.Verbose.Memory</code></pre></td>
+Profile                 : CPU.Verbose.Memory</pre></td>
 </tr>
 <tr class="even">
 <td><em>collectors</em></td>
