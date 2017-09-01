@@ -138,7 +138,7 @@ Profile                 : CPU.Verbose.Memory</pre></td>
 <td><em>collectors</em></td>
 <td>Lists collector information. If buffers have been lost, those buffers are listed.
 <p><strong>Example:</strong></p>
-<pre class="syntax" space="preserve"><code>Actively recording collectors:
+<pre class="syntax" space="preserve">Actively recording collectors:
 
 Collector Name          : NT Kernel Logger
 Buffer Size (KB)        : 1024
@@ -158,7 +158,7 @@ Providers
         Microsoft-Windows-Shell-Core: 0x1000000000000: 0x04
         Microsoft-Windows-Win32k: 0x1000000402000: 0xff : Stack
 CaptureState Providers on Save
-        Microsoft-Windows-Win32k: 0x80000: 0xff</code></pre></td>
+        Microsoft-Windows-Win32k: 0x80000: 0xff</pre></td>
 </tr>
 <tr class="odd">
 <td><em>details</em></td>
