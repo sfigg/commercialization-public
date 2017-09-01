@@ -29,13 +29,13 @@ In Windows 10, there are no predefined colors. All the named colors (`Color 1` t
 There are two options for setting `WindowColor` in unattend.xml.
 
 1.   Set `WindowColor` to `Automatic`. Use this value to select a color that’s harmonious with the color palette of the desktop wallpaper. `Automatic` sets `WindowColor` to a color that is harmonious with the color palette of the desktop wallpaper will be chosen.
-The default color is a shade of blue (0xff0078d7).
-2.   Use a custom hexidecimal color value. When using custom hexidecimal color values, the accent color is defined by the ARGB color scheme, where the value is 0x[Opacity][Red][Green][Blue], for example '0xffcc5029'. This value has an A or Alpha value of ff hexadecimal, then a red value of `9b`, a green value of `cc`, and a blue value of `29` hexadecimal. Any letters in the hexadecimal value should be lowercase, and the value must include the `0x` prefix. The ARGB color 0xff9bcc29 looks like this:
+The default color is a shade of blue (`0xff0078d7`).
+2.   Use a custom hexidecimal color value. When using custom hexidecimal color values, the accent color is defined by the ARGB color scheme, where the value is 0x[Opacity][Red][Green][Blue], for example `0xffcc5029`. This value has an A or Alpha value of `ff` hexadecimal, then a red value of `9b`, a green value of `cc`, and a blue value of `29` hexadecimal. Any letters in the hexadecimal value should be lowercase, and the value must include the `0x` prefix. The ARGB color 0xff9bcc29 looks like this:
 
-![0xff9bcc29](images/0xff9bcc29.png)
+    ![0xff9bcc29](images/0xff9bcc29.png)
 
-The opacity (also known as alpha) value is ignored and has no bearing on the color. 00 is completely transparent, and FF is fully opaque. 
-To learn more about ARGB values, see the [Color.ToArgb Method ()](https://msdn.microsoft.com/en-us/library/system.drawing.color.toargb(v=vs.110).aspx).
+    The opacity (also known as alpha) value is ignored and has no bearing on the color. `00` is completely transparent, and `ff` is fully opaque. 
+    To learn more about ARGB values, see the [Color.ToArgb Method ()](https://msdn.microsoft.com/en-us/library/system.drawing.color.toargb(v=vs.110).aspx).
 
 Due to the large number of surfaces that are impacted by the color choice, avoid using colors that are too dark or too bright when setting `WindowColor`. The brightness of the selected color is enforced by the system to ensure readability of text. A very dark or light color will be lightened or darkened by the system. The specified `WindowColor` should have a luminosity range of 25% to 75% when converted to Hue, Saturation, and Luminosity (HSL) values. It is recommended that you use a tool that supports HSL to select your color and adjust the luminosity to be within a 25% to 75% range before you convert it to RGB to specify the WindowColor. This means that both black and white are prohibited values for WindowColor. Any color outside a luminosity value of 25% to 75% is changed by Windows. If you pick white, for instance, you will get light grey. 
 
@@ -48,22 +48,6 @@ You can also add up to eight more custom colors that end users can choose as an 
 > If you use five or fewer custom colors, the color picker in the Settings app displays them more gracefully. If you use the full eight colors, you will see line breaks and reflow in the Settings app.
 
 To add custom colors to the image, use the [RunSynchronous](microsoft-windows-deployment-runsynchronous) command to add AGRB hex color values to the registry. You can set keys 0 through 8. The default accent color is set in the 0 registry key: `HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Themes\Accents\0\Theme0`
-
-Here is an Unattend.xml example to add two more colors to the image (in addition to the `WindowColor`):
-
-```
-<settings pass="specialize">
-    <component name="Microsoft-Windows-Deployment" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-        <RunSynchronous>
-            <RunSynchronousCommand wcm:action="add">
-                <Path>cmd /c reg add HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Themes\Accents\0\Theme0 /v Color /t REG_DWORD /d 0xFF745146 /f</Path>
-                <Description>Test1</Description>
-                <Order>1</Order>
-            </RunSynchronousCommand>
-        </RunSynchronous>
-    </component>
-</settings>
-```
 
 
 

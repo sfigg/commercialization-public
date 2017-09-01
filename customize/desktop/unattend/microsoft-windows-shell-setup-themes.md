@@ -34,14 +34,14 @@ In addition to customizing the Windows default theme, you can also create additi
 <tbody>
 <tr class="odd">
 <td><p>[BrandIcon](microsoft-windows-shell-setup-themes-brandicon.md)</p></td>
-<td><p>Specifies the path to a graphic file that is incorporated in the theme preview in the <strong>Personalization</strong> item in Control Panel.</p></td>
+<td><p>Specifies the path to a graphic file that is incorporated in the theme preview in the user's <strong>Personalization</strong> settings.</p></td>
 </tr>
 <tr class="even">
 <td><p>[CustomDefaultThemeFile](microsoft-windows-shell-setup-themes-customdefaultthemefile.md)</p></td>
-<td><p>This setting is deprecated. To customize the Windows default theme, simply define the [DesktopBackground](microsoft-windows-shell-setup-themes-desktopbackground.md) and [ThemeName](microsoft-windows-shell-setup-themes-themename.md) for your Theme. You may also optionally include the settings: [BrandIcon](microsoft-windows-shell-setup-themes-brandicon.md), [ScreenSaver](microsoft-windows-shell-setup-themes-screensaver.md), [UWPAppsUseLightTheme](microsoft-windows-shell-setup-themes-uwpappsuselighttheme.md), and [WindowColor](microsoft-windows-shell-setup-themes-windowcolor.md).</p>
+<td><p>This setting is deprecated. To customize the Windows default theme, simply define the [DesktopBackground](microsoft-windows-shell-setup-themes-desktopbackground.md) and [ThemeName](microsoft-windows-shell-setup-themes-themename.md) settings. You may also optionally include the settings: [BrandIcon](microsoft-windows-shell-setup-themes-brandicon.md), [ScreenSaver](microsoft-windows-shell-setup-themes-screensaver.md), [UWPAppsUseLightTheme](microsoft-windows-shell-setup-themes-uwpappsuselighttheme.md), and [WindowColor](microsoft-windows-shell-setup-themes-windowcolor.md).</p>
 <div class="alert">
 <strong>Note</strong>  
-<p>While you can add additional custom themes to a Windows installation using a [.theme file](https://msdn.microsoft.com/en-us/library/bb773190(VS.85).aspx(d=robot)#boot), .theme files can no longer be used as the default theme. The Windows default theme can only be customized as defined here.</p>
+<p>While you can add additional custom themes to a Windows installation using a [.theme file](https://msdn.microsoft.com/en-us/library/bb773190(VS.85).aspx(d=robot)#boot), .theme files can no longer be used as the default theme. Only the elements listed here can be customized in the Windows default theme.</p>
 <p></p>
 </div>
 <div>
@@ -66,7 +66,7 @@ In addition to customizing the Windows default theme, you can also create additi
 </tr>
 <tr class="even">
 <td><p>[ThemeName](microsoft-windows-shell-setup-themes-themename.md)</p></td>
-<td><p>Specifies the name of the custom default theme.</p></td>
+<td><p>Specifies the name of the customized Windows default theme.</p></td>
 </tr>
 <tr class="odd">
 <td><p>[UWPAppsUseLightTheme](microsoft-windows-shell-setup-themes-uwpappsuselighttheme.md)</p></td>
@@ -74,7 +74,7 @@ In addition to customizing the Windows default theme, you can also create additi
 </tr>
 <tr class="even">
 <td><p>[WindowColor](microsoft-windows-shell-setup-themes-windowcolor.md)</p></td>
-<td><p>Specifies the color of the Windows border and taskbar.</p></td>
+<td><p>Specifies the color of the window borders and the color of various other elements in the system, most notably colors in the Start menu, common controls, hover-color for the Start menu, active-underline for open apps in the taskbar, and Quick Action tiles in the notification area.</p></td>
 </tr>
 </tbody>
 </table>
