@@ -79,17 +79,19 @@ If the app isn’t trusted it can’t run, period.
 
 With hardware that meets basic requirements, it also means that even if an attacker manages to get control of the Windows kernel, he or she will be much less likely to be able to run malicious executable code. If you are an OEM building secure systems, you must provide the hardware to enable these features.
 
-Starting in Windows 10, 1703, the Windows Defender Device Guard features have been grouped into two new features: **Windows Defender Exploit Guard** and **Windows Defender Application control**. When these are both enabled, Windows Defender Device Guard is enabled. For more information about Windows Defender Device Guard hardware requirements, see [](Windows Defender Device Guard hardware requirements.md).
+Starting in Windows 10, 1703, the Windows Defender Device Guard features have been grouped into two new features: **Windows Defender Exploit Guard** and **Windows Defender Application control**. When these are both enabled, Windows Defender Device Guard is enabled. For more information about Windows Defender Device Guard hardware requirements, see [Windows Defender Device Guard hardware requirements](Windows Defender Device Guard hardware requirements.md).
 
 ***IT Professionals:** To learn how to deploy Windows Defender Device in your enterprise, see [Requirements and deployment planning guidelines for Device Guard](http://go.microsoft.com/fwlink/?LinkId=822877).
 
 ## Windows Defender Application Guard
 
-Application Guard helps to isolate enterprise-defined untrusted sites, protecting an enterprise while its employees browse the Internet. If you are selling devices to enterprise customers, you want to provide hardware that supports the security features that enterprises need. To learn more about hardware requirements for Windows Defender Application Guard, see [Windows Defender Application Guard hardware requirements](OEM-app-guard.md).
+Application Guard helps to isolate enterprise-defined untrusted sites, protecting an enterprise while its employees browse the Internet. 
+
+If you are selling devices to enterprise customers, you want to provide hardware that supports the security features that enterprises need. To learn more about hardware requirements for Windows Defender Application Guard, see [Windows Defender Application Guard hardware requirements](OEM-app-guard.md).
 
 ## Windows Hello
 
-Microsoft Windows Hello, part of Windows 10, gives users a personal, secured experience where the device is authenticated based on their presence. Users can log in with a look or a touch, with no need for a password. In conjunction with Microsoft Passport, biometric authentication uses fingerprints or facial recognition and is more secure, more personal, and more convenient. 
+Microsoft Windows Hello gives users a personal, secured experience where the device is authenticated based on their presence. Users can log in with a look or a touch, with no need for a password. In conjunction with Microsoft Passport, biometric authentication uses fingerprints or facial recognition and is more secure, more personal, and more convenient. 
 
 For information about how Windows Hello works with the Companion Device Framework, see [Windows Hello and the Companion Device Framework](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/windows-hello-companion-device-framework). 
 
