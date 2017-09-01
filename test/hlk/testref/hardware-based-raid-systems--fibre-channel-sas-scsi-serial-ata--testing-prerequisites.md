@@ -109,7 +109,7 @@ HypervisorEnforcedCodeIntegrity:REG_DWORD
 
  
 
-## <span id="BKMK_SoftwareRequirements"></span><span id="bkmk_softwarerequirements"></span><span id="BKMK_SOFTWAREREQUIREMENTS"></span>Software Requirements
+## <span id="BKMK_SoftwareRequirements"></span><span id="bkmk-softwarerequirements"></span><span id="BKMK_SOFTWAREREQUIREMENTS"></span>Software Requirements
 
 
 To test a hardware-based RAID array, you need this software:
@@ -120,7 +120,7 @@ To test a hardware-based RAID array, you need this software:
 
 -   Windows symbol files. These are available from the [Symbol Files](http://go.microsoft.com/fwlink/?LinkId=231439) website.
 
-## <span id="BKMK_Configure"></span><span id="bkmk_configure"></span><span id="BKMK_CONFIGURE"></span>Configuring the Test Computer
+## <span id="BKMK_Configure"></span><span id="bkmk-configure"></span><span id="BKMK_CONFIGURE"></span>Configuring the Test Computer
 
 
 To configure the test computer to test your Fibre Channel, SAS, SCSI, or SATA RAID array, follow these steps:

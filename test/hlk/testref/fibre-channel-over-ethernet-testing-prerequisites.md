@@ -109,7 +109,7 @@ HypervisorEnforcedCodeIntegrity:REG_DWORD
 
  
 
-## <span id="BKMK_SoftwareRequirements"></span><span id="bkmk_softwarerequirements"></span><span id="BKMK_SOFTWAREREQUIREMENTS"></span>Software Requirements
+## <span id="BKMK_SoftwareRequirements"></span><span id="bkmk-softwarerequirements"></span><span id="BKMK_SOFTWAREREQUIREMENTS"></span>Software Requirements
 
 
 The following software is required to test a Fibre Channel storage controller:
@@ -122,7 +122,7 @@ The following software is required to test a Fibre Channel storage controller:
 
 -   Windows symbol files. These are available from the [Symbol Files website](http://go.microsoft.com/fwlink/?LinkId=231439).
 
-## <span id="BKMK_Configure"></span><span id="bkmk_configure"></span><span id="BKMK_CONFIGURE"></span>Test Computer Configuration
+## <span id="BKMK_Configure"></span><span id="bkmk-configure"></span><span id="BKMK_CONFIGURE"></span>Test Computer Configuration
 
 
 To configure the test computer to test a Fibre Channel storage controller, follow these steps:

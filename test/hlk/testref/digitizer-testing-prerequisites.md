@@ -87,7 +87,7 @@ HypervisorEnforcedCodeIntegrity:REG_DWORD
 
  
 
-## <span id="BKMK_HCK_Digitizer_sR"></span><span id="bkmk_hck_digitizer_sr"></span><span id="BKMK_HCK_DIGITIZER_SR"></span>Software requirements
+## <span id="BKMK_HCK_Digitizer_sR"></span><span id="bkmk-hck-digitizer-sr"></span><span id="BKMK_HCK_DIGITIZER_SR"></span>Software requirements
 
 
 To test a digitizer, you must have the following software:
@@ -104,7 +104,7 @@ To test a digitizer, you must have the following software:
 
 -   The latest Windows HLK filters or updates
 
-## <span id="BKMK_HCK_Digitizer_tC"></span><span id="bkmk_hck_digitizer_tc"></span><span id="BKMK_HCK_DIGITIZER_TC"></span>Test computer configuration
+## <span id="BKMK_HCK_Digitizer_tC"></span><span id="bkmk-hck-digitizer-tc"></span><span id="BKMK_HCK_DIGITIZER_TC"></span>Test computer configuration
 
 
 To configure the test computer for your test device, follow these steps:

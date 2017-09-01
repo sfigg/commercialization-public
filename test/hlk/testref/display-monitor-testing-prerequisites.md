@@ -87,7 +87,7 @@ HypervisorEnforcedCodeIntegrity:REG_DWORD
 
  
 
-## <span id="BKMK_SoftwareRequirements"></span><span id="bkmk_softwarerequirements"></span><span id="BKMK_SOFTWAREREQUIREMENTS"></span>Software requirements
+## <span id="BKMK_SoftwareRequirements"></span><span id="bkmk-softwarerequirements"></span><span id="BKMK_SOFTWAREREQUIREMENTS"></span>Software requirements
 
 
 The following software is required for testing a display device:
@@ -100,7 +100,7 @@ The following software is required for testing a display device:
 
 -   The latest Windows HLK filters or updates.
 
-## <span id="BKMK_Configure"></span><span id="bkmk_configure"></span><span id="BKMK_CONFIGURE"></span>Test computer configuration
+## <span id="BKMK_Configure"></span><span id="bkmk-configure"></span><span id="BKMK_CONFIGURE"></span>Test computer configuration
 
 
 To configure the two test computers for display monitor testing, follow these steps:

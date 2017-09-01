@@ -35,7 +35,7 @@ Additional test hardware will be required depending on that type of PCI device i
 
  
 
-## <span id="BKMK_HCK_PCI_sR"></span><span id="bkmk_hck_pci_sr"></span><span id="BKMK_HCK_PCI_SR"></span>Software requirements
+## <span id="BKMK_HCK_PCI_sR"></span><span id="bkmk-hck-pci-sr"></span><span id="BKMK_HCK_PCI_SR"></span>Software requirements
 
 
 The following software is required to run the Device.Connectivity tests:
@@ -44,7 +44,7 @@ The following software is required to run the Device.Connectivity tests:
 
 -   The drivers for the test device.
 
-## <span id="BKMK_HCK_PCI_tC"></span><span id="bkmk_hck_pci_tc"></span><span id="BKMK_HCK_PCI_TC"></span>Test computer configuration
+## <span id="BKMK_HCK_PCI_tC"></span><span id="bkmk-hck-pci-tc"></span><span id="BKMK_HCK_PCI_TC"></span>Test computer configuration
 
 
 To configure the test computer for PCI device testing:

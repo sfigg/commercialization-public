@@ -135,7 +135,7 @@ HypervisorEnforcedCodeIntegrity:REG_DWORD
 
  
 
-## <span id="BKMK_SoftwareRequirements"></span><span id="bkmk_softwarerequirements"></span><span id="BKMK_SOFTWAREREQUIREMENTS"></span>Software Requirements
+## <span id="BKMK_SoftwareRequirements"></span><span id="bkmk-softwarerequirements"></span><span id="BKMK_SOFTWAREREQUIREMENTS"></span>Software Requirements
 
 
 The following software is required for testing a SAS controller:
@@ -148,7 +148,7 @@ The following software is required for testing a SAS controller:
 
 -   The current release of the Windows Driver Kit (WDK).
 
-## <span id="BKMK_Configure"></span><span id="bkmk_configure"></span><span id="BKMK_CONFIGURE"></span>Test Computer Configuration
+## <span id="BKMK_Configure"></span><span id="bkmk-configure"></span><span id="BKMK_CONFIGURE"></span>Test Computer Configuration
 
 
 There are three possible configurations for testing SAS controllers:
@@ -171,7 +171,7 @@ When testing storage devices, we strongly recommend that you complete all Device
 
  
 
-### <span id="BKMK_addin"></span><span id="bkmk_addin"></span><span id="BKMK_ADDIN"></span>Add-in RAID controller test configuration
+### <span id="BKMK-addin"></span><span id="bkmk-addin"></span><span id="BKMK_ADDIN"></span>Add-in RAID controller test configuration
 
 To configure the test computer to test an SAS controller in an add-in RAID configuration, follow these steps:
 
@@ -352,7 +352,7 @@ To configure the test computer to test an SAS controller in an add-in RAID confi
 
 14. Use Windows HLK Studio to create a computer pool, and then move the test computer to that pool.
 
-### <span id="BKMK_integrated"></span><span id="bkmk_integrated"></span><span id="BKMK_INTEGRATED"></span>Integrated RAID controller test configuration
+### <span id="BKMK-integrated"></span><span id="bkmk-integrated"></span><span id="BKMK_INTEGRATED"></span>Integrated RAID controller test configuration
 
 To configure the test computer for testing of an SAS controller in an integrated RAID configuration, follow these steps:
 
@@ -499,7 +499,7 @@ To configure the test computer for testing of an SAS controller in an integrated
 
 13. Use Windows HLK Studio to create a computer pool, and then move the test computer to that pool.
 
-### <span id="BKMK_nonraid"></span><span id="bkmk_nonraid"></span><span id="BKMK_NONRAID"></span>Non-RAID controller test configuration
+### <span id="BKMK-nonraid"></span><span id="bkmk-nonraid"></span><span id="BKMK_NONRAID"></span>Non-RAID controller test configuration
 
 To configure the test computer to test an SAS controller in a non-RAID configuration, follow these steps:
 

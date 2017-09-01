@@ -103,7 +103,7 @@ HypervisorEnforcedCodeIntegrity:REG_DWORD
 
  
 
-## <span id="BKMK_HCK_SC_sR"></span><span id="bkmk_hck_sc_sr"></span><span id="BKMK_HCK_SC_SR"></span>Software requirements
+## <span id="BKMK_HCK_SC_sR"></span><span id="bkmk-hck-sc-sr"></span><span id="BKMK_HCK_SC_SR"></span>Software requirements
 
 
 The following software is required for testing a smart card reader:
@@ -112,7 +112,7 @@ The following software is required for testing a smart card reader:
 
 -   The latest Windows HLK filters or updates.
 
-## <span id="BKMK_HCK_SC_tC"></span><span id="bkmk_hck_sc_tc"></span><span id="BKMK_HCK_SC_TC"></span>Test computer configuration
+## <span id="BKMK_HCK_SC_tC"></span><span id="bkmk-hck-sc-tc"></span><span id="BKMK_HCK_SC_TC"></span>Test computer configuration
 
 
 To configure the test computer for your test device, follow these steps:

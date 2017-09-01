@@ -87,7 +87,7 @@ HypervisorEnforcedCodeIntegrity:REG_DWORD
 
  
 
-## <span id="BKMK_SoftwareRequirements"></span><span id="bkmk_softwarerequirements"></span><span id="BKMK_SOFTWAREREQUIREMENTS"></span>Software requirements
+## <span id="BKMK_SoftwareRequirements"></span><span id="bkmk-softwarerequirements"></span><span id="BKMK_SOFTWAREREQUIREMENTS"></span>Software requirements
 
 
 The following software is required to run the SoftwareDevice.FilterDriver.WindowsFilteringPlatform tests:
@@ -510,7 +510,7 @@ The following table maps filter features and requirements.
 
  
 
-## <span id="BKMK_Configuration"></span><span id="bkmk_configuration"></span><span id="BKMK_CONFIGURATION"></span>Test computer configuration
+## <span id="BKMK_Configuration"></span><span id="bkmk-configuration"></span><span id="BKMK_CONFIGURATION"></span>Test computer configuration
 
 
 To configure the test computer to test your WFP driver, follow these steps:

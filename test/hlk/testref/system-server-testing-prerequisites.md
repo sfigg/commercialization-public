@@ -92,7 +92,7 @@ The system failure of even a single client will cause the entire test to fail. T
 
 -   Use highly redundant storage and memory components: For example, ECC or better memory protection, MPIO Duplexing for storage, RAID hard disks, Teaming for NICs etc.
 
-## <span id="BKMK_HCK_Server_sR"></span><span id="bkmk_hck_server_sr"></span><span id="BKMK_HCK_SERVER_SR"></span>Software requirements
+## <span id="BKMK_HCK_Server_sR"></span><span id="bkmk-hck-server-sr"></span><span id="BKMK_HCK_SERVER_SR"></span>Software requirements
 
 
 The following software is required to run the Windows Server System tests:

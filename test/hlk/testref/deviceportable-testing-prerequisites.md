@@ -19,7 +19,7 @@ Before you test a portable device by using the Windows Hardware Lab Kit (Windows
 
 -   A USB cable for the device that you're testing
 
-## <span id="BKMK_HCK_Devfund_sR"></span><span id="bkmk_hck_devfund_sr"></span><span id="BKMK_HCK_DEVFUND_SR"></span>Software requirements
+## <span id="BKMK_HCK_Devfund_sR"></span><span id="bkmk-hck-devfund-sr"></span><span id="BKMK_HCK_DEVFUND_SR"></span>Software requirements
 
 
 -   The latest Windows HLK filters or updates
@@ -43,7 +43,7 @@ Before you test a portable device by using the Windows Hardware Lab Kit (Windows
 
 -   The battery on the device should be fully charged before testing is started.
 
-## <span id="BKMK_HCK_Devfund_tC"></span><span id="bkmk_hck_devfund_tc"></span><span id="BKMK_HCK_DEVFUND_TC"></span>Test computer configuration
+## <span id="BKMK_HCK_Devfund_tC"></span><span id="bkmk-hck-devfund-tc"></span><span id="BKMK_HCK_DEVFUND_TC"></span>Test computer configuration
 
 
 To run portable device tests, you must know how to:

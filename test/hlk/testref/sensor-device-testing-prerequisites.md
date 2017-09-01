@@ -31,7 +31,7 @@ The following hardware is required for testing a sensor device. You might need a
 
 -   USB hubs are required for sensors that are connected via USB. (Sensors that are connected via I2C or other bus do not need a hub).
 
-## <span id="BKMK_HCK_Sensor_sR"></span><span id="bkmk_hck_sensor_sr"></span><span id="BKMK_HCK_SENSOR_SR"></span>Software requirements
+## <span id="BKMK_HCK_Sensor_sR"></span><span id="bkmk-hck-sensor-sr"></span><span id="BKMK_HCK_SENSOR_SR"></span>Software requirements
 
 
 The following software is required for testing a sensor device:
@@ -40,7 +40,7 @@ The following software is required for testing a sensor device:
 
 -   The latest Windows HLK filters or updates.
 
-## <span id="BKMK_HCK_Sensor_tC"></span><span id="bkmk_hck_sensor_tc"></span><span id="BKMK_HCK_SENSOR_TC"></span>Test computer configuration
+## <span id="BKMK_HCK_Sensor_tC"></span><span id="bkmk-hck-sensor-tc"></span><span id="BKMK_HCK_SENSOR_TC"></span>Test computer configuration
 
 
 To configure the test computer for your test sensor device, follow these steps:

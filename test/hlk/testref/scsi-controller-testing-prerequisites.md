@@ -117,7 +117,7 @@ HypervisorEnforcedCodeIntegrity:REG_DWORD
 
  
 
-## <span id="BKMK_SoftwareRequirements"></span><span id="bkmk_softwarerequirements"></span><span id="BKMK_SOFTWAREREQUIREMENTS"></span>Software Requirements
+## <span id="BKMK_SoftwareRequirements"></span><span id="bkmk-softwarerequirements"></span><span id="BKMK_SOFTWAREREQUIREMENTS"></span>Software Requirements
 
 
 The following software is required to test an SCSI controller:
@@ -130,7 +130,7 @@ The following software is required to test an SCSI controller:
 
 -   The current release of the Windows Driver Kit (WDK).
 
-## <span id="BKMK_Configure"></span><span id="bkmk_configure"></span><span id="BKMK_CONFIGURE"></span>Test Computer Configuration
+## <span id="BKMK_Configure"></span><span id="bkmk-configure"></span><span id="BKMK_CONFIGURE"></span>Test Computer Configuration
 
 
 There are three possible configurations for testing SCSI controllers:
@@ -145,7 +145,7 @@ Before you test an SCSI controller in any of the three usage scenarios, make sur
 
 Some Windows HLK tests require user intervention. When you run tests for a submission, it is a best practice to run the automated tests in a block separately from manual tests. This prevents a manual test from interrupting completion of an automated test.
 
-### <span id="BKMK_addin"></span><span id="bkmk_addin"></span><span id="BKMK_ADDIN"></span>Add-in RAID controller test configuration
+### <span id="BKMK-addin"></span><span id="bkmk-addin"></span><span id="BKMK_ADDIN"></span>Add-in RAID controller test configuration
 
 To configure the test computer to test an SCSI controller in an add-in RAID configuration, follow these steps:
 
@@ -328,7 +328,7 @@ To configure the test computer to test an SCSI controller in an add-in RAID conf
 
 15. Use Windows HLK Studio to create a computer pool, and then move the test computer to that pool.
 
-### <span id="BKMK_integrated"></span><span id="bkmk_integrated"></span><span id="BKMK_INTEGRATED"></span>Integrated RAID controller test configuration
+### <span id="BKMK-integrated"></span><span id="bkmk-integrated"></span><span id="BKMK_INTEGRATED"></span>Integrated RAID controller test configuration
 
 To configure the test computer to test an SCSI controller in an integrated RAID configuration, follow these steps:
 
@@ -491,7 +491,7 @@ To configure the test computer to test an SCSI controller in an integrated RAID 
 
 16. Use Windows HLK Studio to create a computer pool, and then move the test computer to that pool.
 
-### <span id="BKMK_nonraid"></span><span id="bkmk_nonraid"></span><span id="BKMK_NONRAID"></span>Non-RAID controller test configuration
+### <span id="BKMK-nonraid"></span><span id="bkmk-nonraid"></span><span id="BKMK_NONRAID"></span>Non-RAID controller test configuration
 
 To configure the test computer to test an SCSI controller in a non-RAID configuration, follow these steps:
 

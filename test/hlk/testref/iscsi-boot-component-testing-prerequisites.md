@@ -107,7 +107,7 @@ HypervisorEnforcedCodeIntegrity:REG_DWORD
 
  
 
-## <span id="BKMK_SoftwareRequirements"></span><span id="bkmk_softwarerequirements"></span><span id="BKMK_SOFTWAREREQUIREMENTS"></span>Software Requirements
+## <span id="BKMK_SoftwareRequirements"></span><span id="bkmk-softwarerequirements"></span><span id="BKMK_SOFTWAREREQUIREMENTS"></span>Software Requirements
 
 
 The following software is required to test an iSCSI boot component:
@@ -124,7 +124,7 @@ The following software is required to test an iSCSI boot component:
 
 -   A kernel-mode driver to read iBFT in firmware or BIOS (see Microsoft-iSCSI-Boot-Firmware-Table-Spec-v1.0.doc).
 
-## <span id="BKMK_Configure"></span><span id="bkmk_configure"></span><span id="BKMK_CONFIGURE"></span>Test Computer Configuration
+## <span id="BKMK_Configure"></span><span id="bkmk-configure"></span><span id="BKMK_CONFIGURE"></span>Test Computer Configuration
 
 
 To configure the test computer to test an iSCSI boot component, follow these steps:

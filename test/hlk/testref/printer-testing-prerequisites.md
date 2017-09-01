@@ -105,7 +105,7 @@ HypervisorEnforcedCodeIntegrity:REG_DWORD
 
  
 
-## <span id="BKMK_HCK_Printer_sR"></span><span id="bkmk_hck_printer_sr"></span><span id="BKMK_HCK_PRINTER_SR"></span>Software requirements
+## <span id="BKMK_HCK_Printer_sR"></span><span id="bkmk-hck-printer-sr"></span><span id="BKMK_HCK_PRINTER_SR"></span>Software requirements
 
 
 Install the operating system on the client systems before the final test passes to ensure that the system is in a known good state.
@@ -147,7 +147,7 @@ If the driver you want to use for testing was not installed, follow these steps:
 
 For the print tests to run properly, the queue must have plug and play data populated. Do not manually create a new queue using the same port and the driver.
 
-## <span id="BKMK_HCK_Printer_sC"></span><span id="bkmk_hck_printer_sc"></span><span id="BKMK_HCK_PRINTER_SC"></span>Test computer configuration
+## <span id="BKMK_HCK_Printer_sC"></span><span id="bkmk-hck-printer-sc"></span><span id="BKMK_HCK_PRINTER_SC"></span>Test computer configuration
 
 
 To configure the test computer for printer testing, follow these steps:

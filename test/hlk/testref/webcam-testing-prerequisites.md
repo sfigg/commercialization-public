@@ -41,7 +41,7 @@ The following hardware is required for testing a webcam:
 
 You might need additional hardware (for example, a USB hub) to test some USB capabilities of the webcam. To find out if additional hardware requirements apply, see the description of each USB test that's identified for your webcam in Windows HLK Studio.
 
-## <span id="BKMK_HCK_Webcam_sR"></span><span id="bkmk_hck_webcam_sr"></span><span id="BKMK_HCK_WEBCAM_SR"></span>Software requirements
+## <span id="BKMK_HCK_Webcam_sR"></span><span id="bkmk-hck-webcam-sr"></span><span id="BKMK_HCK_WEBCAM_SR"></span>Software requirements
 
 
 The following software is required for testing a webcam:
@@ -50,7 +50,7 @@ The following software is required for testing a webcam:
 
 -   The latest Windows HLK filters or updates
 
-## <span id="BKMK_HCK_Webcam_tC"></span><span id="bkmk_hck_webcam_tc"></span><span id="BKMK_HCK_WEBCAM_TC"></span>Test computer configuration
+## <span id="BKMK_HCK_Webcam_tC"></span><span id="bkmk-hck-webcam-tc"></span><span id="BKMK_HCK_WEBCAM_TC"></span>Test computer configuration
 
 
 To configure the test computer for webcam testing:

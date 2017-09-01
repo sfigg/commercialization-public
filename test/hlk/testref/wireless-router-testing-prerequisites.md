@@ -33,7 +33,7 @@ The following hardware is required for wireless router testing.
 
 -   At least two 100-megabit switches (more may be required depending on the number of available Ethernet ports on the DUT).
 
-## <span id="BKMK_HCK_wRouter_sR"></span><span id="bkmk_hck_wrouter_sr"></span><span id="BKMK_HCK_WROUTER_SR"></span>Software requirements
+## <span id="BKMK_HCK_wRouter_sR"></span><span id="bkmk-hck-wrouter-sr"></span><span id="BKMK_HCK_WROUTER_SR"></span>Software requirements
 
 
 The following software is required to run the Device.Networking tests:
@@ -42,7 +42,7 @@ The following software is required to run the Device.Networking tests:
 
 -   Windows 7 client x86 for Windows 7 certification or Windows 8 x86 client for Windows 8 certification.
 
-## <span id="BKMK_HCK_wRouter_tC"></span><span id="bkmk_hck_wrouter_tc"></span><span id="BKMK_HCK_WROUTER_TC"></span>Test computer configuration
+## <span id="BKMK_HCK_wRouter_tC"></span><span id="bkmk-hck-wrouter-tc"></span><span id="BKMK_HCK_WROUTER_TC"></span>Test computer configuration
 
 
 Among the four test computers, there are three individual configurations. The test computers are designated as LAN1, LAN2, WAN, and SERVER. All system requirements are in addition to minimum system requirements for Windows Vista, Windows 7 or and Windows 8. The following network schematic illustrates how each is connected in the network:

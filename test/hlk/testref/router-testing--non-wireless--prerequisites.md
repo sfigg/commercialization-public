@@ -87,14 +87,14 @@ HypervisorEnforcedCodeIntegrity:REG_DWORD
 
  
 
-## <span id="BKMK_HCK_Router_sR"></span><span id="bkmk_hck_router_sr"></span><span id="BKMK_HCK_ROUTER_SR"></span>Software requirements
+## <span id="BKMK_HCK_Router_sR"></span><span id="bkmk-hck-router-sr"></span><span id="BKMK_HCK_ROUTER_SR"></span>Software requirements
 
 
 The following software is required to run the Device.Networking tests:
 
 -   The latest Windows HLK filters and software updates.
 
-## <span id="BKMK_HCK_Router_tC"></span><span id="bkmk_hck_router_tc"></span><span id="BKMK_HCK_ROUTER_TC"></span>Test computer configuration
+## <span id="BKMK_HCK_Router_tC"></span><span id="bkmk-hck-router-tc"></span><span id="BKMK_HCK_ROUTER_TC"></span>Test computer configuration
 
 
 Among the 4 test computers, there are 3 individual configurations. The test computers are designated as LAN1, LAN2, WAN, and SERVER. The test computers labled LAN1 and LAN2 are configured identically. All system requirements are in addition to minimum system requirements for Windows Vista, Windows 7 and Windows 8. The following network schematic illustrates how each is connected in the network:

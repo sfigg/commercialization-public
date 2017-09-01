@@ -57,12 +57,12 @@ To be included in the Windows HLK, the device must pass the certification tests 
 
 A Windows HLK setup for LAN (Ethernet) device testing consists of a test server (controller) and test computers (clients).
 
-## <span id="BKMK_HCK_IPSec_sR"></span><span id="bkmk_hck_ipsec_sr"></span><span id="BKMK_HCK_IPSEC_SR"></span>Software requirements
+## <span id="BKMK_HCK_IPSec_sR"></span><span id="bkmk-hck-ipsec-sr"></span><span id="BKMK_HCK_IPSEC_SR"></span>Software requirements
 
 
 To run Device.Networking tests, you need any drivers that aren't shipped with the operating system.
 
-## <span id="BKMK_HCK_IPSec_tC"></span><span id="bkmk_hck_ipsec_tc"></span><span id="BKMK_HCK_IPSEC_TC"></span>Test computer configuration
+## <span id="BKMK_HCK_IPSec_tC"></span><span id="bkmk-hck-ipsec-tc"></span><span id="BKMK_HCK_IPSEC_TC"></span>Test computer configuration
 
 
 IPsec functionality testing requires two computers. One hosts the device being tested, while the other receives and sends data to the test device. The computers also need a separate line of communication to exchange information about ongoing tests. For example, it's beneficial for the receiver of a Send test to know how much data is coming.

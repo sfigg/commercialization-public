@@ -77,7 +77,7 @@ WLAN adapters are among the more difficult devices to configure for Device Funda
 
 See [Troubleshooting Device Fundamentals Reliability Testing by using the Windows HLK](troubleshooting-device-fundamentals-reliability-testing-by-using-the-windows-hck.md) for additional help with testing WLAN devices.
 
-## <span id="BKMK_HCK_Devfund_tC"></span><span id="bkmk_hck_devfund_tc"></span><span id="BKMK_HCK_DEVFUND_TC"></span>Storage devices
+## <span id="BKMK_HCK_Devfund_tC"></span><span id="bkmk-hck-devfund-tc"></span><span id="BKMK_HCK_DEVFUND_TC"></span>Storage devices
 
 
 We strongly recommend that you complete all Device Fundamentals Reliability tests before you start to run storage tests. This means scheduling the tests two times, as follows:

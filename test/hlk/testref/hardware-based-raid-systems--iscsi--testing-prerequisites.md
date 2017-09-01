@@ -103,7 +103,7 @@ HypervisorEnforcedCodeIntegrity:REG_DWORD
 
  
 
-## <span id="BKMK_SoftwareRequirements"></span><span id="bkmk_softwarerequirements"></span><span id="BKMK_SOFTWAREREQUIREMENTS"></span>Software Requirements
+## <span id="BKMK_SoftwareRequirements"></span><span id="bkmk-softwarerequirements"></span><span id="BKMK_SOFTWAREREQUIREMENTS"></span>Software Requirements
 
 
 To test a hardware-based RAID array, you need this software:
@@ -122,7 +122,7 @@ To test a hardware-based RAID array, you need this software:
 
 The iSCSI Software Initiator and the .NET Framework are available from the [Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkId=229004).
 
-## <span id="BKMK_Configure"></span><span id="bkmk_configure"></span><span id="BKMK_CONFIGURE"></span>Configuring the Test Computer
+## <span id="BKMK_Configure"></span><span id="bkmk-configure"></span><span id="BKMK_CONFIGURE"></span>Configuring the Test Computer
 
 
 To configure the test computer to test your iSCSI RAID array, follow these steps:

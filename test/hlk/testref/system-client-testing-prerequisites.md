@@ -103,12 +103,12 @@ To certify your client systems for Windows 8 and Windows 8.1, you’ll need the
 
 -   The device that you are testing must have an IPv6 address.
 
-## <span id="BKMK_HCK_Client_sR"></span><span id="bkmk_hck_client_sr"></span><span id="BKMK_HCK_CLIENT_SR"></span>Software requirements
+## <span id="BKMK_HCK_Client_sR"></span><span id="bkmk-hck-client-sr"></span><span id="BKMK_HCK_CLIENT_SR"></span>Software requirements
 
 
 Preinstall any software as by your hardware manufacture, including any special device drivers.
 
-## <span id="BKMK_HCK_Client_bR"></span><span id="bkmk_hck_client_br"></span><span id="BKMK_HCK_CLIENT_BR"></span>Bluetooth System Requirements
+## <span id="BKMK_HCK_Client_bR"></span><span id="bkmk-hck-client-br"></span><span id="BKMK_HCK_CLIENT_BR"></span>Bluetooth System Requirements
 
 
 When certifying a System with an integrated Bluetooth radio through the Windows HLK, all drivers and packages, including filter drivers, profile packs, and 3rd party drivers must be installed on the Primary machine if the system ships with these drivers.
@@ -117,7 +117,7 @@ The system must be tested in the shipping Windows configuration, and no changes 
 
 The Bluetooth radio included with the system must have been previously certified through the Windows HLK. For more information, see [Bluetooth Controller Testing Prerequisites](bluetooth-controller-testing-prerequisites.md).
 
-## <span id="BKMK_HCK_Client_tC"></span><span id="bkmk_hck_client_tc"></span><span id="BKMK_HCK_CLIENT_TC"></span>Test computer configuration
+## <span id="BKMK_HCK_Client_tC"></span><span id="bkmk-hck-client-tc"></span><span id="BKMK_HCK_CLIENT_TC"></span>Test computer configuration
 
 
 Before running system tests, you must configure the test system and install the operating system. This section summarizes the related procedures.

@@ -113,7 +113,7 @@ HypervisorEnforcedCodeIntegrity:REG_DWORD
 
  
 
-## <span id="BKMK_HLK_Audio_sR"></span><span id="bkmk_hlk_audio_sr"></span><span id="BKMK_HLK_AUDIO_SR"></span>Software requirements
+## <span id="BKMK_HLK_Audio_sR"></span><span id="bkmk-hlk-audio-sr"></span><span id="BKMK_HLK_AUDIO_SR"></span>Software requirements
 
 
 The following software is required for testing an audio device:
@@ -130,7 +130,7 @@ The following software is required for testing an audio device:
 
      
 
-## <span id="BKMK_HLK_Audio_tC"></span><span id="bkmk_hlk_audio_tc"></span><span id="BKMK_HLK_AUDIO_TC"></span>Test computer configuration
+## <span id="BKMK_HLK_Audio_tC"></span><span id="bkmk-hlk-audio-tc"></span><span id="BKMK_HLK_AUDIO_TC"></span>Test computer configuration
 
 
 To complete audio testing, you must configure two computers. The computer that includes the test audio device is referred to as the System under Test (SUT). The computer that receives audio communications from the SUT is referred to as the AP Host.

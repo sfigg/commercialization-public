@@ -33,7 +33,7 @@ To test a SES device, you need following hardware:
 
 -   The CiB (Cluster in a Box) Continuously Available test requires a cluster configuration
 
-## <span id="BKMK_SoftwareRequirements"></span><span id="bkmk_softwarerequirements"></span><span id="BKMK_SOFTWAREREQUIREMENTS"></span>Software Requirements
+## <span id="BKMK_SoftwareRequirements"></span><span id="bkmk-softwarerequirements"></span><span id="BKMK_SOFTWAREREQUIREMENTS"></span>Software Requirements
 
 
 To test a SES device, you need the following software:
@@ -42,7 +42,7 @@ To test a SES device, you need the following software:
 
 -   The latest Windows HLK filters or updates
 
-## <span id="BKMK_Configure"></span><span id="bkmk_configure"></span><span id="BKMK_CONFIGURE"></span>Configuring the Test Computer
+## <span id="BKMK_Configure"></span><span id="bkmk-configure"></span><span id="BKMK_CONFIGURE"></span>Configuring the Test Computer
 
 
 To configure the test computer for your test device, follow these steps:

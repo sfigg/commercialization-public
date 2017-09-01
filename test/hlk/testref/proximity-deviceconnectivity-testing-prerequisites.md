@@ -29,7 +29,7 @@ To run the proximity tests, you need the following hardware:
 
 -   One proximity controller.
 
-## <span id="BKMK_HCK_SDC_sR"></span><span id="bkmk_hck_sdc_sr"></span><span id="BKMK_HCK_SDC_SR"></span>Software requirements
+## <span id="BKMK_HCK_SDC_sR"></span><span id="bkmk-hck-sdc-sr"></span><span id="BKMK_HCK_SDC_SR"></span>Software requirements
 
 
 To run the proximity tests, you need the following software:
@@ -38,7 +38,7 @@ To run the proximity tests, you need the following software:
 
 -   The latest Windows HLK filters and software updates
 
-## <span id="BKMK_HCK_SDC_tC"></span><span id="bkmk_hck_sdc_tc"></span><span id="BKMK_HCK_SDC_TC"></span>Test computer configuration
+## <span id="BKMK_HCK_SDC_tC"></span><span id="bkmk-hck-sdc-tc"></span><span id="BKMK_HCK_SDC_TC"></span>Test computer configuration
 
 
 To configure the test computer for proximity testing, follow these steps:

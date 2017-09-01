@@ -95,7 +95,7 @@ HypervisorEnforcedCodeIntegrity:REG_DWORD
 
  
 
-## <span id="BKMK_HCK_WSD_sR"></span><span id="bkmk_hck_wsd_sr"></span><span id="BKMK_HCK_WSD_SR"></span>Software requirements
+## <span id="BKMK_HCK_WSD_sR"></span><span id="bkmk-hck-wsd-sr"></span><span id="BKMK_HCK_WSD_SR"></span>Software requirements
 
 
 The following software is required to run the WSD tests:
@@ -104,7 +104,7 @@ The following software is required to run the WSD tests:
 
 -   The latest Windows HLK filters or updates.
 
-## <span id="BKMK_HCK_WSD_tC"></span><span id="bkmk_hck_wsd_tc"></span><span id="BKMK_HCK_WSD_TC"></span>Test computer configuration
+## <span id="BKMK_HCK_WSD_tC"></span><span id="bkmk-hck-wsd-tc"></span><span id="BKMK_HCK_WSD_TC"></span>Test computer configuration
 
 
 To configure the test computer for WSD testing, follow these steps:

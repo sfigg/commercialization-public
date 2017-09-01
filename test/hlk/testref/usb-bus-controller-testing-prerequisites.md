@@ -91,7 +91,7 @@ To run USB Bus Controller Tests, a Windows 10 Mobile device currently requires a
 
  
 
-## <span id="BKMK_SoftwareRequirements"></span><span id="bkmk_softwarerequirements"></span><span id="BKMK_SOFTWAREREQUIREMENTS"></span>Software requirements
+## <span id="BKMK_SoftwareRequirements"></span><span id="bkmk-softwarerequirements"></span><span id="BKMK_SOFTWAREREQUIREMENTS"></span>Software requirements
 
 
 The following software is required to run the USB host controller tests:
@@ -102,7 +102,7 @@ The following software is required to run the USB host controller tests:
 
 -   Other tools and drivers that are installed as part of the [Install MUTT Tools](8d46285a-8018-4547-9182-86d825375f6a.md) Bring-Up job. This job is not included as part of certification, so you'll need to schedule this job manually.
 
-## <span id="BKMK_TestComputerConfiguration"></span><span id="bkmk_testcomputerconfiguration"></span><span id="BKMK_TESTCOMPUTERCONFIGURATION"></span>Test computer configuration
+## <span id="BKMK_TestComputerConfiguration"></span><span id="bkmk-testcomputerconfiguration"></span><span id="BKMK_TESTCOMPUTERCONFIGURATION"></span>Test computer configuration
 
 
 Only one test computer is required for USB host controller testing. To configure the test computer for USB host controller testing, follow these steps:

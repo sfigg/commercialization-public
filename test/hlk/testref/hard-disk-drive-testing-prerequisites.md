@@ -216,7 +216,7 @@ For all configurations:
 
  
 
-## <span id="BKMK_SoftwareRequirements"></span><span id="bkmk_softwarerequirements"></span><span id="BKMK_SOFTWAREREQUIREMENTS"></span>Software Requirements
+## <span id="BKMK_SoftwareRequirements"></span><span id="bkmk-softwarerequirements"></span><span id="BKMK_SOFTWAREREQUIREMENTS"></span>Software Requirements
 
 
 To test a hard disk, you need this software:
@@ -225,7 +225,7 @@ To test a hard disk, you need this software:
 
 -   The latest Windows HLK filters or updates
 
-## <span id="BKMK_Configure"></span><span id="bkmk_configure"></span><span id="BKMK_CONFIGURE"></span>Configuring the Test Computer
+## <span id="BKMK_Configure"></span><span id="bkmk-configure"></span><span id="BKMK_CONFIGURE"></span>Configuring the Test Computer
 
 
 Before you begin testing the hard disk, you must configure the test computer and install the appropriate controller (if the test computer doesn't include this kind of controller). Then, you must complete the appropriate configuration steps, based on the type of hard disk that you're certifying.

@@ -29,7 +29,7 @@ The following hardware is required for testing a mouse or pointing device. You m
 
 -   One USB 2.0 hub that has a logo.
 
-## <span id="BKMK_HCK_Mouse_sR"></span><span id="bkmk_hck_mouse_sr"></span><span id="BKMK_HCK_MOUSE_SR"></span>Software requirements
+## <span id="BKMK_HCK_Mouse_sR"></span><span id="bkmk-hck-mouse-sr"></span><span id="BKMK_HCK_MOUSE_SR"></span>Software requirements
 
 
 The following software is required for testing a mouse or similar pointing device:
@@ -38,7 +38,7 @@ The following software is required for testing a mouse or similar pointing devic
 
 -   The latest Windows HLK filters or updates.
 
-## <span id="BKMK_HCK_Mouse_tC"></span><span id="bkmk_hck_mouse_tc"></span><span id="BKMK_HCK_MOUSE_TC"></span>Test computer configuration
+## <span id="BKMK_HCK_Mouse_tC"></span><span id="bkmk-hck-mouse-tc"></span><span id="BKMK_HCK_MOUSE_TC"></span>Test computer configuration
 
 
 To configure the test computer for your test device, follow these steps:

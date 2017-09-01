@@ -35,7 +35,7 @@ For more information about the NFC Forum Type 2 tag, see [Near Field Communicati
 
  
 
-## <span id="BKMK_SoftwareRequirements"></span><span id="bkmk_softwarerequirements"></span><span id="BKMK_SOFTWAREREQUIREMENTS"></span>Software Requirements
+## <span id="BKMK_SoftwareRequirements"></span><span id="bkmk-softwarerequirements"></span><span id="BKMK_SOFTWAREREQUIREMENTS"></span>Software Requirements
 
 
 The following software is required to run the proximity tests:
@@ -44,7 +44,7 @@ The following software is required to run the proximity tests:
 
 -   The latest Windows HLK filters or updates.
 
-## <span id="BKMK_TestComputerConfiguration"></span><span id="bkmk_testcomputerconfiguration"></span><span id="BKMK_TESTCOMPUTERCONFIGURATION"></span>Test Computer Configuration
+## <span id="BKMK_TestComputerConfiguration"></span><span id="bkmk-testcomputerconfiguration"></span><span id="BKMK_TESTCOMPUTERCONFIGURATION"></span>Test Computer Configuration
 
 
 For proximity controller tests, you must have two test computers in your machine pool so that you can test communication between the proximity controller and another proximity-compliant device. The primary test computer is Computer A. This test computer runs the proximity tests and generates test results. The second test computer is Computer B. This computer is required to test the sending and receiving of subscription messages.

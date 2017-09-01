@@ -43,7 +43,7 @@ The following hardware is required for testing an HMFT-compliant device:
 
 You might need additional hardware if the test device includes audio, networking, or other features. To determine whether additional hardware requirements apply, see the description for each test that's identified for your video card or chipset in Windows HLK Studio.
 
-## <span id="BKMK_HCK_HMFT_sR"></span><span id="bkmk_hck_hmft_sr"></span><span id="BKMK_HCK_HMFT_SR"></span>Software requirements
+## <span id="BKMK_HCK_HMFT_sR"></span><span id="bkmk-hck-hmft-sr"></span><span id="BKMK_HCK_HMFT_SR"></span>Software requirements
 
 
 The following software is required for testing an HMFT-compliant device:
@@ -74,7 +74,7 @@ Before running the HMFT encoding and decoding tests, you must download the [Wind
 
 -   Copy the content locally on each client computer before running the tests and add the content location to the %PATH% environment variable. Leave the default value for the ContentSource parameter. This will cause the tests to behave similarly to the third item in this list. This option does not require that the content is in the same location on every client computer.
 
-## <span id="BKMK_HCK_HMFT_tC"></span><span id="bkmk_hck_hmft_tc"></span><span id="BKMK_HCK_HMFT_TC"></span>Test computer configuration
+## <span id="BKMK_HCK_HMFT_tC"></span><span id="bkmk-hck-hmft-tc"></span><span id="BKMK_HCK_HMFT_TC"></span>Test computer configuration
 
 
 To configure the test computer for testing a HMFT-compliant device:

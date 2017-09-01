@@ -91,14 +91,14 @@ HypervisorEnforcedCodeIntegrity:REG_DWORD
 
  
 
-## <span id="BKMK_SoftwareRequirements"></span><span id="bkmk_softwarerequirements"></span><span id="BKMK_SOFTWAREREQUIREMENTS"></span>Software requirements
+## <span id="BKMK_SoftwareRequirements"></span><span id="bkmk-softwarerequirements"></span><span id="BKMK_SOFTWAREREQUIREMENTS"></span>Software requirements
 
 
 The following software is required to run the SDIO host controller tests:
 
 -   The drivers for the test device.
 
-## <span id="BKMK_TestComputerConfiguration"></span><span id="bkmk_testcomputerconfiguration"></span><span id="BKMK_TESTCOMPUTERCONFIGURATION"></span>Test computer configuration
+## <span id="BKMK_TestComputerConfiguration"></span><span id="bkmk-testcomputerconfiguration"></span><span id="BKMK_TESTCOMPUTERCONFIGURATION"></span>Test computer configuration
 
 
 Only one test computer is required for SDIO host controller testing. To configure the test computer for SDIO host controller testing:

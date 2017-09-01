@@ -97,7 +97,7 @@ HypervisorEnforcedCodeIntegrity:REG_DWORD
 
  
 
-## <span id="BKMK_HCK_Scanner_sR"></span><span id="bkmk_hck_scanner_sr"></span><span id="BKMK_HCK_SCANNER_SR"></span>Software requirements
+## <span id="BKMK_HCK_Scanner_sR"></span><span id="bkmk-hck-scanner-sr"></span><span id="BKMK_HCK_SCANNER_SR"></span>Software requirements
 
 
 It is good practice to clean-install the operating system on client systems before final test passes to ensure that the system is in a known clean state.
@@ -116,7 +116,7 @@ The following software is required to run the scanner tests:
 
 -   Desktop Experience, for computers with Windows Server 2008 R2 installed. Desktop Experience ensures that the scanner tests run correctly. Run the following command from the command prompt to install Desktop experience: **ocsetup.exe DesktopExperience /quiet /norestart**
 
-## <span id="BKMK_HCK_Scanner_tC"></span><span id="bkmk_hck_scanner_tc"></span><span id="BKMK_HCK_SCANNER_TC"></span>Test system configuration
+## <span id="BKMK_HCK_Scanner_tC"></span><span id="bkmk-hck-scanner-tc"></span><span id="BKMK_HCK_SCANNER_TC"></span>Test system configuration
 
 
 To configure the test computer for scanner testing, follow these steps:

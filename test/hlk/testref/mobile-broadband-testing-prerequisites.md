@@ -63,14 +63,14 @@ The operating systems installed on the test clients must be matching processor a
 
  
 
-## <span id="BKMK_HCK_Mobile_sR"></span><span id="bkmk_hck_mobile_sr"></span><span id="BKMK_HCK_MOBILE_SR"></span>Software requirements
+## <span id="BKMK_HCK_Mobile_sR"></span><span id="bkmk-hck-mobile-sr"></span><span id="BKMK_HCK_MOBILE_SR"></span>Software requirements
 
 
 The following software is required to run the Device.Networking tests:
 
 -   The latest Windows HLK filters and software updates.
 
-## <span id="BKMK_HCK_Mobile_tC"></span><span id="bkmk_hck_mobile_tc"></span><span id="BKMK_HCK_MOBILE_TC"></span>Test computer configuration
+## <span id="BKMK_HCK_Mobile_tC"></span><span id="bkmk-hck-mobile-tc"></span><span id="BKMK_HCK_MOBILE_TC"></span>Test computer configuration
 
 
 The following figure provides an overview of the Mobile broadband LAN test setup.

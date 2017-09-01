@@ -89,12 +89,12 @@ HypervisorEnforcedCodeIntegrity:REG_DWORD
 
  
 
-## <span id="BKMK_softwareRequirements"></span><span id="bkmk_softwarerequirements"></span><span id="BKMK_SOFTWAREREQUIREMENTS"></span>Software requirements
+## <span id="BKMK_softwareRequirements"></span><span id="bkmk-softwarerequirements"></span><span id="BKMK_SOFTWAREREQUIREMENTS"></span>Software requirements
 
 
 Before you run the USB tests in the Device.Connectivity category, you should install the latest Windows HLK filters or updates .
 
-## <span id="BKMK_configuringTestComputer"></span><span id="bkmk_configuringtestcomputer"></span><span id="BKMK_CONFIGURINGTESTCOMPUTER"></span>Test computer configuration
+## <span id="BKMK_configuringTestComputer"></span><span id="bkmk-configuringtestcomputer"></span><span id="BKMK_CONFIGURINGTESTCOMPUTER"></span>Test computer configuration
 
 
 To configure the test computer for USB hub testing, follow these steps:
