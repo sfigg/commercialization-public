@@ -73,7 +73,11 @@ To learn more about hardware requirements for Windows Defender Credential Guard,
 
 ## Windows Defender Device Guard
 
-Windows Defender Device Guard is a combination of enterprise-related hardware and software security features that, when configured together, will lock a device down so that it can only run trusted applications that are defined in code integrity policies. If the app isn’t trusted it can’t run, period. With hardware that meets basic requirements, it also means that even if an attacker manages to get control of the Windows kernel, he or she will be much less likely to be able to run malicious executable code. If you are an OEM building secure systems, you must provide the hardware to enable these features.
+Windows Defender Device Guard is a combination of enterprise-related hardware and software security features that, when configured together, will lock a device down so that it can only run trusted applications that are defined in code integrity policies. 
+
+If the app isn’t trusted it can’t run, period. 
+
+With hardware that meets basic requirements, it also means that even if an attacker manages to get control of the Windows kernel, he or she will be much less likely to be able to run malicious executable code. If you are an OEM building secure systems, you must provide the hardware to enable these features.
 
 Starting in Windows 10, 1703, the Windows Defender Device Guard features have been grouped into two new features: **Windows Defender Exploit Guard** and **Windows Defender Application control**. When these are both enabled, Windows Defender Device Guard is enabled. For more information about Windows Defender Device Guard hardware requirements, see [](Windows Defender Device Guard hardware requirements.md).
 
