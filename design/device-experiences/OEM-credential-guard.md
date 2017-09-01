@@ -13,7 +13,7 @@ ms.technology: windows-oem
 
 # Windows Defender Credential Guard hardware requirements
 
-Credential Guard uses virtualization-based security to isolate secrets so that only privileged system software can access them. Credential Guard prevents the known forms of the pass-the-hash (PtH) attack.
+Credential Guard uses virtualization-based security to isolate and protect secrets (e.g., NTLM password hashes and Kerberos ticket-granting tickets) to block pass-the-hash or pass-the-ticket(PtH) attacks. 
 
 For a device to support Crendential Guard as specified in the Windows Hardware Compatibility Requirements (WHCR), you as the OEM must provide the following hardware, software, or firmware features. 
 
