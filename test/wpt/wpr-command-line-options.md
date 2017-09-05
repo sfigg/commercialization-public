@@ -23,7 +23,7 @@ WPR requires Windows 7 or later version operating system.
 
 **Syntax:**
 
-**wpr** {**-profiles** \[*\<path\>*\] | **-start** *\<arguments\>* | **-stop** *\<arguments\>* | **-cancel** | **-status** *\<keywords\>* | **-profiledetails** *\<arguments\>* | **-providers** | **-disablepagingexecutive** {**on** | **off**} | **-log** {**enabled** | **disabled** | **remove**} | **-purgecache** | **-help** *\<keyword\>*}
+**wpr** {**-profiles** \[*\<path\>*\] | **-start** *\<arguments\>* | **-stop** *\<arguments\>* | **-cancel** | **-status** *\<keywords\>* | **-profiledetails** *\<arguments\>* | **-providers** | **-disablepagingexecutive** {**on** | **off**} | **-log** {**enabled** | **disabled** | **remove**} | **-purgecache** | **-help** \[*\<keyword\>*\]}
 
 > [!NOTE]
 > If you start WPR from the command line while another application is recording (such as Xperf or an application that uses NT Kernel Logger, such as logman or PerfTrace), WPR fails to start recording and returns the following error:
