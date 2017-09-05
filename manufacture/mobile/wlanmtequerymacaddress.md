@@ -19,7 +19,7 @@ Returns the MAC address of the Wi-Fi adapter.
 ## <span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>Syntax
 
 
-``` syntax
+```
 DWORD WlanMTEQueryMacAddress(
     __in    HANDLE              hAdapter,
     __out   DOT11_MAC_ADDRESS   *pDot11MacAddress

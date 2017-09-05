@@ -349,7 +349,7 @@ There are additional features that are defined in other image types of the opera
 
     You can optionally update the description to record information about the OS image.
 
-    ``` syntax
+    ```
     <Description>Manufacturing OS generation for ARM.fre</Description>
     <Product>Manufacturing OS</Product>
     ```

@@ -5,10 +5,9 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: e7b9b910-9fe4-4dca-a61a-2599f67caf00
-ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
-ms.author: joshbax
+ms.author: sapaetsc
 ms.date: 05/05/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -32,7 +31,7 @@ Describes the configurations to enable the Event Tracing for Windows (ETW) kerne
 ## Syntax
 
 
-``` syntax
+```
 <SystemCollector Id       = IdType
                  Base     = string
                  Name     = "NT Kernel Logger" | "Circular Kernel Context Logger"
@@ -175,7 +174,7 @@ System collector definitions should precede event collector definitions.
 
 The following code example defines a system collector.
 
-``` syntax
+```
 <SystemCollector
   Id="WPRSystemCollector”
   Name="NT Kernel Logger"

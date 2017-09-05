@@ -48,7 +48,7 @@ For images that will support more than one language, you must add .NET Framework
 
 2.  To Install .NET Framework 3.5 feature files from Windows Update, use the following command:
 
-    ``` syntax
+    ```
     DISM /Online /Enable-Feature /FeatureName:NetFx3 /All 
     ```
 
@@ -60,7 +60,7 @@ For images that will support more than one language, you must add .NET Framework
 
 1.  Run the following DISM command (image mounted to the **c:\\test\\offline** folder and the installation media in the **D:**\\drive) to install .NET 3.5:
 
-    ``` syntax
+    ```
     DISM /Image:C:\test\offline /Enable-Feature /FeatureName:NetFx3 /All /LimitAccess /Source:D:\sources\sxs
     ```
 
@@ -74,7 +74,7 @@ For images that will support more than one language, you must add .NET Framework
 
 2.  Run the following command to look up the status of .NET Framework 3.5 (offline image mounted to **c:\\test\\offline**):
 
-    ``` syntax
+    ```
     DISM /Image:c:\test\offline /Get-Features /Format:Table
     ```
 
@@ -98,7 +98,7 @@ You can use DISM to add .NET Framework 3.5 and provide access to the **\\sources
 
 2.  To install .NET Framework 3.5 from installation media located on the **D:** drive, use the following command:
 
-    ``` syntax
+    ```
     DISM /Online /Enable-Feature /FeatureName:NetFx3 /All /LimitAccess /Source:d:\sources\sxs
     ```
 

@@ -5,7 +5,7 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 89203B18-8C1F-40ED-9DF5-B68F2995BFD9
-ms.author: joshbax
+ms.author: sapaetsc
 ms.date: 05/05/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -26,13 +26,13 @@ Automated tests are great for verifying the audio or temporal video quality of a
 
 3.  Run the following command:
 
-    ``` syntax
+    ```
     wpr -cancel
     ```
 
 4.  Run the following command:
 
-    ``` syntax
+    ```
     wpr -start Media.wprp -filemode
     ```
 
@@ -40,7 +40,7 @@ Automated tests are great for verifying the audio or temporal video quality of a
 
 6.  Run the following command:
 
-    ``` syntax
+    ```
     wpr -stop Media.etl
     ```
 
@@ -55,13 +55,13 @@ Automated tests are great for verifying the audio or temporal video quality of a
 
 4.  Run the following command:
 
-    ``` syntax
+    ```
     xa -i <Media.etl location>\Media.etl
     ```
 
     For example, if Media.etl were located at C:\\Performance\\Media, you would type the following command:
 
-    ``` syntax
+    ```
     xa -i C:\Performance\Media\Media.etl
     ```
 

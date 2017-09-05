@@ -55,7 +55,7 @@ If you need to perform deployment customizations, the following sections explain
 
 To programmatically find this information for any device, you can write a utility program that reports back data. The native primary resolution is retrieved by calling the API [GetDeviceCaps() function](http://go.microsoft.com/fwlink/p/?linkid=331144), using the hdc for the desktop and the HORZRES and VERZRES indices:
 
-``` syntax
+```
 // Get desktop dc
 desktopDc = GetDC(NULL);
 // Get native resolution
@@ -70,7 +70,7 @@ For more information about GetDC, see [GetDC() function](http://go.microsoft.com
 
 Similarly, you can get the pixel density by using the LOGPIXELSX and LOGPIXELSY indices:
 
-``` syntax
+```
 // Get desktop dc
 desktopDc = GetDC(NULL);
 // Get native resolution

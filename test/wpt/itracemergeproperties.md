@@ -5,10 +5,9 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 6afd2bab-ef90-4182-9757-45d62b4be952
-ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
-ms.author: joshbax
+ms.author: sapaetsc
 ms.date: 05/05/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -23,7 +22,7 @@ Enables the client to specify how multiple event trace log (ETL) files should be
 ## Syntax
 
 
-``` syntax
+```
 {
   [id(1), helpstring("LoadFromFile")] HRESULT LoadFromFile([in] BSTR bstrTraceMergeName, [in] BSTR bstrFileName);
   [id(2), helpstring("LoadFromString")] HRESULT LoadFromString([in] BSTR bstrTraceMerge);

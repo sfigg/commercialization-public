@@ -1,3 +1,4 @@
+---
 author: kpacquer
 Description: 'Windows Imaging Servicing Tool'
 MSHAttr: 'PreferredLib:/library'
@@ -26,7 +27,7 @@ Please refer to the Windows10_1607_IST.ps1 PowerShell script found in [USB-B.zip
 
 Before running the tool allow PowerShell scripts execution policy by running PowerShell in elevated permission and typing in:
 
-```syntax
+```
 Set-ExecutionPolicy UNRESTRICTED
 ```
 

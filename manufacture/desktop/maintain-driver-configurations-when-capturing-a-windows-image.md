@@ -31,7 +31,7 @@ Before you capture an image, generalize the computer by using an answer file tha
 4.  If the computer has undetectable hardware, include the Microsoft-Windows-PnpSysprep/**DoNotCleanUpNonPresentDevices** setting. For more information, see the [Undetectable hardware](#undetectablehardware) section in this topic.
 5.  Generalize the computer by using the answer file. For example:
 
-    ``` syntax
+    ```
     Sysprep /generalize /unattend:C:\unattend.xml
     ```
 
@@ -278,7 +278,7 @@ The driver package defines the StandardController and ExtremeController configur
 
 This sample shows the contents of the driver package file Storctrl.inf:
 
-``` syntax
+```
 [Version]
 Signature = "$WINDOWS NT$"
 Class = SCSIAdapter

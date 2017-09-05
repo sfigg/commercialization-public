@@ -32,13 +32,13 @@ The following diagram illustrates this process:
 
 2.  Optional: speed up the image capture by setting the power scheme to High performance:
 
-    ``` syntax
+    ```
     powercfg /s 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c
     ```
 
 3.  Capture the Windows partition. For example:
 
-    ``` syntax
+    ```
     Dism /Capture-Image /ImageFile:"D:\fabrikam.wim" /CaptureDir:C:\ /Name:Fabrikam
     ```
 
@@ -69,13 +69,13 @@ Here's a few ways to apply the image:
 
 2.  Optional: speed up the image capture by setting the power scheme to High performance:
 
-    ``` syntax
+    ```
     powercfg /s 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c
     ```
 
 3.  Apply the image to the Windows partition:
 
-    ``` syntax
+    ```
     dism /Apply-Image /ImageFile:D:\install.wim /Index:1 /ApplyDir:W:\
     ```
 
@@ -83,13 +83,13 @@ Here's a few ways to apply the image:
 
 4.  Configure the system partition by using the BCDBoot tool. This tool copies and configures system partition files by using files from the Windows partition. For example:
 
-    ``` syntax
+    ```
     W:\Windows\System32\bcdboot W:\Windows /s S:
     ```
 
 5.  Copy the Windows Recovery Environment (RE) tools into the recovery tools partition.
 
-    ``` syntax
+    ```
     md R:\Recovery\WindowsRE
     copy W:\Windows\System32\Recovery\winre.wim R:\Recovery\WindowsRE\winre.wim
     ```
@@ -98,7 +98,7 @@ Here's a few ways to apply the image:
 
 6.  Register the location of the WindowsRE tools by using REAgentC.
 
-    ``` syntax
+    ```
     W:\Windows\System32\reagentc /setreimage /path R:\Recovery\WindowsRE /target W:\Windows
     ```
 
@@ -108,7 +108,7 @@ Here's a few ways to apply the image:
 
 2.  Copy the following script into Notepad, and then save the file as ApplyImage.bat:
 
-    ``` syntax
+    ```
     rem == ApplyImage.bat ==
 
     rem == These commands deploy a specified Windows
@@ -141,7 +141,7 @@ Here's a few ways to apply the image:
 
 3.  On the destination computer, run the Diskpart and ApplyImage scripts to apply the image to the computer and set up the system, Windows, and recovery partitions. For example:
 
-    ``` syntax
+    ```
     diskpart /s D:\CreatePartitions-UEFI.txt
     ApplyImage E:\Images\ThinImage.wim
     ```
@@ -160,7 +160,7 @@ Here's a few ways to apply the image:
 
 2.  Use the BCDBoot command to set up the system partition.
 
-    ``` syntax
+    ```
     bcdboot C:\Windows
     ```
 

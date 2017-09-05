@@ -5,7 +5,7 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 976B0C02-C663-42C0-81C4-BD9B9E191EF2
-ms.author: elkr
+ms.author: sapaetsc
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -21,7 +21,7 @@ The Single Finger Hybrid Mode Multi-touch Devices sample report descriptor conta
 
  
 
-``` syntax
+```
 0x05, 0x0d,                         // USAGE_PAGE (Digitizers)          
     0x09, 0x04,                         // USAGE (Touch Screen)             
     0xa1, 0x01,                         // COLLECTION (Application)         

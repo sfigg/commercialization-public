@@ -42,7 +42,7 @@ In this step, you boot to Windows PE and apply a Windows image so that it can b
 
 2.  At a command prompt, apply the master Windows image using DISM. For example:
 
-    ``` syntax
+    ```
     Dism /Apply-Image /ImageFile:C:\test\wim\install.wim /Index:1 /ApplyDir:C:\test\AppliedImages
     ```
 
@@ -56,7 +56,7 @@ Use DISM to add packages to your master Windows image.
 
 1.  At a command prompt, run DISM with the **/Add-Package** option and point to the .cab or .msu package that you want to add to the Windows image. Multiple packages can be added on one command line. For example, type the following command to add multiple packages:
 
-    ``` syntax
+    ```
     Dism /Image:C:\test\AppliedImages /Add-Package /PackagePath:C:\Test\Packages\package1.cab /PackagePath:C:\Test\Packages\package2.cab 
     ```
 

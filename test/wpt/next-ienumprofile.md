@@ -5,10 +5,9 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 488d7957-a6a6-4961-a7ff-aca254e72eb4
-ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
-ms.author: joshbax
+ms.author: sapaetsc
 ms.date: 05/05/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -23,7 +22,7 @@ Returns an array that contains the specified number of elements.
 ## Syntax
 
 
-``` syntax
+```
 HRESULT Next
   ([in] ULONG celt,
   [out, size_is(celt), length_is(*pCeltFetched)] IProfile** prgVar,

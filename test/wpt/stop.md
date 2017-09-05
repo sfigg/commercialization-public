@@ -5,10 +5,9 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: ebde3a43-c6c9-47d4-b6f1-8b1dae313af3
-ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
-ms.author: joshbax
+ms.author: sapaetsc
 ms.date: 05/05/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -20,7 +19,7 @@ ms.technology: windows-oem
 
 Displays trace stop options.
 
-``` syntax
+```
 xperf [-stop [LoggerNames]|[ProfileFileName!ProfileName|SessionName merged.etl]]|[-stopall]|[-cancel rofileFileName!ProfileName|SessionName [NoDelete]] [-d merged.etl] [-heap|-critsec]
 ```
 

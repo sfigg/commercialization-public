@@ -35,7 +35,7 @@ The majority of Windows PE apps are fixed-function shell apps that provide their
 
 By default, Winpeshl.exe is the first process run when Windows PE is booted. This is specified by the following registry value of type REG\_SZ.
 
-``` syntax
+```
 HKEY_LOCAL_MACHINE
    System
       Setup
@@ -52,7 +52,7 @@ Customized shell apps can call directly into Wpeutil.dll with the [LoadLibrary](
 
 Each of the functions exported by Wpeutil.dll has the same function signature as [WinMain Function](http://go.microsoft.com/fwlink/?LinkId=203029), as illustrated in the following code sample.
 
-``` syntax
+```
 int InitializeNetworkingW(
 HINSTANCE hInstance,
 HINSTANCE hPrevInstance,
@@ -63,7 +63,7 @@ int nCmdShow
 
 The following code sample illustrates how to initialize networking.
 
-``` syntax
+```
 #include <windows.h>
 #include <tchar.h>
 #include <stdio.h>

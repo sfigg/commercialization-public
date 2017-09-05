@@ -41,11 +41,11 @@ Use the steps from [Lab 3: Add device drivers (.inf-style)](add-device-drivers.m
 
 -   Mount the Windows RE image file. 
 
-    ``` syntax
+    ```
     md C:\mount\winre
     ```
 
-    ``` syntax
+    ```
     Dism /Mount-Image /ImageFile:"C:\mount\windows\Windows\System32\Recovery\winre.wim" /Index:1 /MountDir:"C:\mount\winre"
     ```
 
@@ -61,13 +61,13 @@ Use the steps from [Lab 3: Add device drivers (.inf-style)](add-device-drivers.m
 
 1.  Add any .inf-style drivers needed for your hardware.
 
-    ``` syntax
+    ```
     Dism /Add-Driver /Image:"C:\mount\winre" /Driver:"C:\Drivers\PnP.Media.V1\media1.inf" /LogPath=C:\mount\dism.log
     ```
 
     Example: Add a collection of drivers from a folder and its subfolders, use the /Recurse option:
 
-    ``` syntax
+    ```
     Dism /Add-Driver /Image:"C:\mount\winre" /Driver:"C:\Drivers\SampleDrivers" /Recurse /LogPath=C:\mount\dism.log
     ```
 
@@ -79,13 +79,13 @@ Use the steps from [Lab 3: Add device drivers (.inf-style)](add-device-drivers.m
 
     Example: adding a cumulative update:
 
-    ``` syntax
+    ```
     Dism /Add-Package /Image:"C:\mount\winre" /PackagePath="C:\WindowsUpdates\windows10.0-kb3194798-x64_8bc6befc7b3c51f94ae70b8d1d9a249bb4b5e108.msu"  /LogPath=C:\mount\dism.log
     ```
 
     Example: adding multiple updates:
 
-    ``` syntax
+    ```
     Dism /Add-Package /Image:"C:\mount\winre" /PackagePath="C:\WindowsUpdates\windows10.0-kb00001-x64.msu" /PackagePath="C:\WindowsUpdates\windows10.0-kb00002-x64.msu" /PackagePath="C:\WindowsUpdates\windows10.0-kb00003-x64.msu" /LogPath=C:\mount\dism.log
     ```
 
@@ -99,7 +99,7 @@ If the PC runs into trouble, your users may not be able to read/understand the r
 
     **Note**  The WinPE-WiFi-Package is not language-specific and does not need to be added when adding other languages. This is new for Windows 10.
 
-    ``` syntax
+    ```
     Dism /Add-Package /Image:C:\mount\winre /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\fr-fr\lp.cab" 
 
     Dism /Add-Package /Image:C:\mount\winre /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\fr-fr\WinPE-Rejuv_fr-fr.cab"
@@ -123,7 +123,7 @@ If the PC runs into trouble, your users may not be able to read/understand the r
 
 2.  Set the default recovery language to match the preferred language for your customers.
 
-    ``` syntax
+    ```
     Dism /Set-AllIntl:fr-fr /Image:C:\mount\winre
     ```
 
@@ -135,7 +135,7 @@ If the PC runs into trouble, your users may not be able to read/understand the r
 
     Example:
 
-    ``` syntax
+    ```
     Dism /Remove-Package /Image:"C:\mount\winre" /PackageName:WinPE-Rejuv-Package~31bf3856ad364e35~amd64~en-US~10.0.15063.0 /LogPath=C:\mount\dism.fod2.log
     Dism /Remove-Package /Image:"C:\mount\winre" /PackageName:WinPE-HTA-Package~31bf3856ad364e35~amd64~en-US~10.0.15063.0 /LogPath=C:\mount\dism.fod2.log
     Dism /Remove-Package /Image:"C:\mount\winre" /PackageName:WinPE-StorageWMI-Package~31bf3856ad364e35~amd64~en-US~10.0.15063.0 /LogPath=C:\mount\dism.fod2.log
@@ -150,7 +150,7 @@ If the PC runs into trouble, your users may not be able to read/understand the r
 
 4.  Verify that the language packages are part of the image:
 
-    ``` syntax
+    ```
     Dism /Get-Packages /Image:"C:\mount\winre"
     ```
 
@@ -158,7 +158,7 @@ If the PC runs into trouble, your users may not be able to read/understand the r
 
 5.  Review the resulting list of packages and verify that the list contains the package. For example:
 
-    ``` syntax
+    ```
     Package Identity : Microsoft-Windows-WinPE-Rejuv_fr-fr ...  fr-FR~10.0.15063.0
     State : Installed
     ```
@@ -180,7 +180,7 @@ After adding a language or Windows update package, you can reduce the size of th
 
 1.  Optimize the image:
 
-    ``` syntax
+    ```
     Dism /Cleanup-Image /Image:c:\mount\winre /StartComponentCleanup /ResetBase
     ```
 
@@ -188,7 +188,7 @@ After adding a language or Windows update package, you can reduce the size of th
 
 2.	Increase scratch space size to speed up recovery:
 
-    ``` syntax
+    ```
     Dism /Set-ScratchSpace:512 /Image:c:\mount\winre
     ```
 
@@ -196,7 +196,7 @@ After adding a language or Windows update package, you can reduce the size of th
 
 -   Unmount and save the image:
 
-    ``` syntax
+    ```
     Dism /Unmount-Image /MountDir:C:\mount\winre /Commit
     ```
 
@@ -207,13 +207,13 @@ If you've optimized the image, you'll need to export the image in order to see a
 
 1.  Export the Windows RE image into a new Windows image file.
 
-    ``` syntax
+    ```
     Dism /Export-Image /SourceImageFile:c:\mount\windows\windows\system32\recovery\winre.wim /SourceIndex:1 /DestinationImageFile:c:\mount\winre-optimized.wim
     ```
 
 2.  Replace the old Windows RE image with the newly-optimized image.
 
-    ``` syntax
+    ```
     del c:\mount\windows\windows\system32\recovery\winre.wim
 
     copy c:\mount\winre-optimized.wim c:\mount\windows\windows\system32\recovery\winre.wim
@@ -221,7 +221,7 @@ If you've optimized the image, you'll need to export the image in order to see a
 
 4.  Check the new size of the Windows RE image.
 
-    ``` syntax
+    ```
     Dir "C:\mount\windows\Windows\System32\Recovery\winre.wim"
     ```
 
@@ -238,14 +238,14 @@ If you've optimized the image, you'll need to export the image in order to see a
 
     c.  Modify the deployment scripts: [CreatePartitions-UEFI.txt](windows-deployment-sample-scripts-sxs.md#CreatePartitions-UEFI.txt) and [CreatePartitions-BIOS.txt](windows-deployment-sample-scripts-sxs.md#CreatePartitions-BIOS.txt) with the new values. Example:
 
-    ``` syntax
+    ```
     rem == 3. Windows RE tools partition ===============
     create partition primary size=465
     ```
 
 5.  Commit the changes and unmount the Windows image:
 
-    ``` syntax
+    ```
     Dism /Unmount-Image /MountDir:"C:\mount\windows" /Commit
     ```
 
@@ -273,7 +273,7 @@ The short version:
 5.  Apply the recovery image: `D:\ApplyRecovery.bat`
 	
     Note: To test a different recovery image, add it the same way, specifying the recovery image: 
-    ``` syntax
+    ```
 	D:\ApplyRecovery.bat D:\Images\winre_custom.wim
 	```
 

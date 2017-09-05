@@ -5,10 +5,9 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 875ee44a-765d-44e4-b303-867b6c766251
-ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
-ms.author: joshbax
+ms.author: sapaetsc
 ms.date: 05/05/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -20,7 +19,7 @@ ms.technology: windows-oem
 
 This action produces a text file that summarizes trace statistics.
 
-``` syntax
+```
 -a tracestats [-timespan [actual]] [-detail] [-timezone {utc | local}]
 ```
 

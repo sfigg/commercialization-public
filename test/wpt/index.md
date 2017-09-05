@@ -5,10 +5,9 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: ef3d3649-4d0e-4207-833c-f58130aca12f
-ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
-ms.author: joshbax
+ms.author: sapaetsc
 ms.date: 05/05/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -18,7 +17,7 @@ ms.technology: windows-oem
 # Windows Performance Toolkit
 
 
-Included in the [Windows Assessment and Deployment Kit](http://go.microsoft.com/fwlink/p/?LinkId=526740), the Windows Performance Toolkit consists of performance monitoring tools that produce in-depth performance profiles of Windows operating systems and applications. This documentation discusses both Windows Performance Recorder (WPR) and Windows Performance Analyzer (WPA).
+Included in the [Windows Assessment and Deployment Kit](http://aka.ms/adk), the Windows Performance Toolkit consists of performance monitoring tools that produce in-depth performance profiles of Windows operating systems and applications. This documentation discusses both Windows Performance Recorder (WPR) and Windows Performance Analyzer (WPA).
 
 ## Windows Performance Toolkit
 

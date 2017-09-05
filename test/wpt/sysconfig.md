@@ -5,10 +5,9 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: bd020833-a2fe-4619-8d9d-d049fd4e543c
-ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
-ms.author: joshbax
+ms.author: sapaetsc
 ms.date: 05/05/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -20,7 +19,7 @@ ms.technology: windows-oem
 
 This action produces a text file that has detailed information about the system on which the trace was taken.
 
-``` syntax
+```
 -a sysconfig [-xml] [-netidentity] [-cpu] [-memory] [-build] [-etw] [-power] [-disk] [-idechannel] [-video] [-nic] [-irq] [-services] [-pnp]
 ```
 

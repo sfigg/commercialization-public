@@ -49,13 +49,13 @@ Use this procedure to upgrade the edition. You cannot set a Windows image to a l
 
 1.  Determine what images you can upgrade the image to: Note the edition IDs available.
 
-    ``` syntax
+    ```
     Dism /Get-TargetEditions /Image:C:\mount\windows
     ```
 
 2.  Upgrade the edition.
 
-    ``` syntax
+    ```
     Dism /Set-Edition:Professional /Image:C:\mount\windows
     ```
 	
@@ -69,19 +69,19 @@ Use this procedure to upgrade the edition. You cannot set a Windows image to a l
 
     Example: adding a cumulative update:
 
-    ``` syntax
+    ```
     Dism /Add-Package /Image:"C:\mount\windows" /PackagePath="windows10.0-kb4016871-x64_27dfce9dbd92670711822de2f5f5ce0151551b7d.msu"  /LogPath=C:\mount\dism.log
     ```
 
     Example: adding multiple updates:
 
-    ``` syntax
+    ```
     Dism /Add-Package /Image:"C:\mount\windows" /PackagePath="C:\WindowsUpdates\windows10.0-kb00001-x64.msu" /PackagePath="C:\WindowsUpdates\windows10.0-kb00002-x64.msu" /PackagePath="C:\WindowsUpdates\windows10.0-kb00003-x64.msu" /LogPath=C:\mount\dism.log
     ```
 
 3.  Lock in the updates, so that they are restored during a recovery. 
 
-    ``` syntax
+    ```
     DISM /Cleanup-Image /Image=C:\ /StartComponentCleanup /ResetBase /ScratchDir:C:\Temp
     ```
 
@@ -93,7 +93,7 @@ Use this procedure to upgrade the edition. You cannot set a Windows image to a l
 
 2.  Commit the changes and unmount the Windows image:
 
-    ``` syntax
+    ```
     Dism /Unmount-Image /MountDir:"C:\mount\windows" /Commit
     ```
 
@@ -116,13 +116,13 @@ Use the steps from [Lab 2: Deploy Windows using a script](deploy-windows-with-a-
 
 3.  Verify that the edition is correct:
 
-    ``` syntax
+    ```
     dism /online /get-currentedition
     ```
 
     Make sure it's the right edition. For example:
 
-    ``` syntax
+    ```
     Current edition is:
 
     Current Edition : Professional
@@ -132,13 +132,13 @@ Use the steps from [Lab 2: Deploy Windows using a script](deploy-windows-with-a-
 
 4.  Verify that the packages appear correctly:
 
-    ``` syntax
+    ```
     Dism /Get-Packages /Online
     ```
 
     Review the resulting list of packages and verify that the list contains the package. For example:
 
-    ``` syntax
+    ```
     Package Identity : Package_for_RollupFix~31bf3856ad364e35~amd64~~15063.250.1.1
     State : Installed
     Release Type : Security Update

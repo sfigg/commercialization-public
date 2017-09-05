@@ -52,7 +52,7 @@ Before building an image, you must first identify all the packages you need for 
 
 -   **Microsoft packages**. These include all OS and Microsoft-implemented driver packages required for any image, as well as additional platform-specific driver and firmware packages (for example, packages for components specific to a particular device resolution or SoC). These packages are included with the MobileOS and must be installed under %WPDKCONTENTROOT%\\MSPackages. You can use the following command to display the current value of WPDKCONTENTROOT.
 
-    ``` syntax
+    ```
     ECHO %WPDKCONTENTROOT%
     ```
 
@@ -173,7 +173,7 @@ The following table lists the types of images OEMs can build and the OEMInput sa
 
 The following example shows the contents of a sample ProductionOEMInput.xml file.
 
-``` syntax
+```
 <?xml version="1.0" encoding="utf-8" ?> 
 <OEMInput xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate">
 <Description>Test FFU generation for {SOC TYPE} with build number XXXXX</Description> 
@@ -243,7 +243,7 @@ In any MobileOS release, the OEMInput samples provided by Microsoft may change f
 
     If the contents of the **AdditionalFMs** and **Features** elements in the OEMInput file deviate from the Microsoft samples, include detailed comments that explain why the changes were made. If any changes are introduced as a temporary workaround for an issue, the temporary workaround should be explained so that engineers using the file in the future can determine whether to keep the change or revert to the Microsoft sample when the OEM integrates a newer BSP or kit.
 
-    ``` syntax
+    ```
     <!-- From Microsoft sample OEMInput.xml file -->
     <AdditionalFMs>
       <AdditionalFM>%WDKCONTENTROOT%\FMFiles\MSOptionalFeatures.xml</AdditionalFM> 
@@ -284,7 +284,7 @@ To use ImgGen.cmd to generate an image:
 
         1.  Change the USN minimum size registry key by running the following command from an administrator command prompt:
 
-            ``` syntax
+            ```
             reg add HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\FileSystem  /v NtfsAllowUsnMinSize1Mb  /t REG_DWORD  /d 1
             ```
 
@@ -292,7 +292,7 @@ To use ImgGen.cmd to generate an image:
 
 2.  In the command prompt window, run ImgGen.cmd by using the following syntax. See the following section for more information about the parameters.
 
-    ``` syntax
+    ```
     ImgGen.cmd OutputFile OEMInputXML MSPackageRoot OEMCustomizationXML OEMCustomizationVer
     ```
 
@@ -341,7 +341,7 @@ The following table describes the command line parameters for ImgGen.cmd.
 
 The following sample shows the basic use of ImgGen.cmd.
 
-``` syntax
+```
 ImgGen Flash.ffu OEMInput.xml "%WPDKCONTENTROOT%\MSPackages" OEMCustomization.XML 8.1.0.1
 ```
 
@@ -376,7 +376,7 @@ To process a customization answer file without creating an image, use **Customiz
 
 For example, to process an answer file and just build customization packages, use this command.
 
-``` syntax
+```
 CustomizationGen.cmd C:\OEMCustomization OEMInput.xml "%WPDKCONTENTROOT%\MSPackages" OEMCustomization.XML 8.0.0.1
 ```
 
@@ -453,7 +453,7 @@ To generate a large volume of images, consider the following recommendations:
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_phFlashing\p_phFlashing%5D:%20Build%20a%20mobile%20image%20using%20ImgGen.cmd%20%20RELEASE:%20%2810/4/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+
 
 
 

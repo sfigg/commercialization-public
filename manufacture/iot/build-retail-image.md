@@ -29,7 +29,7 @@ We'll take our customizations, put them together, and test them in a retail buil
 
 2.  Add your feature manifest, OEMFM.xml, into the list of AdditionalFMs. At the same time, add the feature manifest: OEMCommonFM.xml, which contains the OEM\_CustomCmd package that configures your app on the first boot:
 
-    ``` syntax
+    ```
     <AdditionalFMs>
       <!-- Including BSP feature manifest -->
       <AdditionalFM>%BLD_DIR%\MergedFMs\RPi2FM.xml</AdditionalFM>
@@ -41,7 +41,7 @@ We'll take our customizations, put them together, and test them in a retail buil
 
 3.  Add the FeatureIDs for the your app package, the  and the OEM\_CustomCmd package.
 
-    ``` syntax
+    ```
     <OEM> 
        <!-- Include BSP Features -->
        <Feature>RPI2_DRIVERS</Feature> 
@@ -74,7 +74,7 @@ We'll take our customizations, put them together, and test them in a retail buil
 
 2.	Configure the cross-signing certificate to be used for retail signing. Edit setsignature.cmd file to set SIGNTOOL_OEM_SIGN:
 
-    ``` syntax
+    ```
 	set SIGNTOOL_OEM_SIGN=/s my /i "Issuer" /n "Subject" /ac "CrossCertRoot" /fd SHA256
 	```
 	
@@ -87,23 +87,25 @@ We'll take our customizations, put them together, and test them in a retail buil
 	
 2.	From the IoT Core Shell, enable retail signing.
 
-    ``` syntax
+    ```
 	retailsign On
 	```
 	
 3.	Rebuild all the packages so that they are retail signed.
 
-    ``` syntax
+    ```
 	buildpkg all
 	```
+
     If the BSP drivers/packages are test signed, you may also need to rebuild them to have retail signature. For RPI2 BSP, run the following command again.
-    ``` syntax
+
+    ```
     C:\rpibsp\build.cmd
     ```
 	
 4.  From the IoT Core Shell, create the image:
 
-    ``` syntax
+    ```
     buildimage ProductA Retail
     ```
 

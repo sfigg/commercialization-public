@@ -67,19 +67,19 @@ BCDEdit is the primary tool for editing the startup configuration and is on your
 1.  Open a command prompt as an administrator.
 2.  To disable the F8 key during startup to prevent access to the **Advanced startup options** menu, type the following:
 
-    ``` syntax
+    ```
     bcdedit.exe -set {globalsettings} advancedoptions false
     ```
 
 3.  To disable the F10 key during startup to prevent access to the **Advanced startup options** menu, type the following:
 
-    ``` syntax
+    ```
     bcdedit.exe -set {globalsettings} optionsedit false
     ```
 
 4.  To suppress all Windows UI elements (logo, status indicator, and status message) during startup, type the following:
 
-    ``` syntax
+    ```
     bcdedit.exe -set {globalsettings} bootuxdisabled on
     ```
 
@@ -93,64 +93,64 @@ You can also configure the Unattend settings in the [Microsoft-Windows-Embedded-
 The following table shows Unbranded Boot settings and their values.
 
 <table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
+<thead valign="bottom">
 <tr class="header">
 <th>Setting</th>
 <th>Description</th>
 </tr>
 </thead>
-<tbody>
+<tbody valign="top">
 <tr class="odd">
 <td>DisableBootMenu</td>
-<td><p>Contains an integer that disables the F8 and F10 keys during startup to prevent access to the Advanced startup options menu.</p>
+<td>Contains an integer that disables the F8 and F10 keys during startup to prevent access to the Advanced startup options menu.
 <p>Set to 1 to disable the menu; otherwise; set to 0 (zero). The default value is 0.</p></td>
 </tr>
 <tr class="even">
 <td>DisplayDisabled</td>
-<td><p>Contains an integer that configures the device to display a blank screen when Industry 8.1 encounters an error that it cannot recover from.</p>
+<td>Contains an integer that configures the device to display a blank screen when Industry 8.1 encounters an error that it cannot recover from.
 <p>Set to 1 to display a blank screen on error; otherwise; set to 0 (zero). The default value is 0.</p></td>
 </tr>
 <tr class="odd">
 <td>HideAllBootUI</td>
-<td><p>Contains an integer that suppresses all Windows UI elements (logo, status indicator, and status message) during startup.</p>
+<td>Contains an integer that suppresses all Windows UI elements (logo, status indicator, and status message) during startup.
 <p>Set to 1 to suppress all Windows UI elements during startup; otherwise; set to 0 (zero). The default value is 0.</p></td>
 </tr>
 <tr class="even">
 <td>HideBootLogo</td>
-<td><p>Contains an integer that suppresses the default Windows logo that displays during the OS loading phase.</p>
+<td>Contains an integer that suppresses the default Windows logo that displays during the OS loading phase.
 <p>Set to 1 to suppress the default Windows logo; otherwise; set to 0 (zero). The default value is 0.</p></td>
 </tr>
 <tr class="odd">
 <td>HideBootStatusIndicator</td>
-<td><p>Contains an integer that suppresses the status indicator that displays during the OS loading phase.</p>
+<td>Contains an integer that suppresses the status indicator that displays during the OS loading phase.
 <p>Set to 1 to suppress the status indicator; otherwise; set to 0 (zero). The default value is 0.</p></td>
 </tr>
 <tr class="even">
 <td>HideBootStatusMessage</td>
-<td><p>Contains an integer that suppresses the startup status text that displays during the OS loading phase.</p>
+<td>Contains an integer that suppresses the startup status text that displays during the OS loading phase.
 <p>Set to 1 to suppress the startup status text; otherwise; set to 0 (zero). The default value is 0.</p></td>
 </tr>
 <tr class="odd">
 <td>CrashDumpEnabled</td>
-<td><p>Contains an integer that specifies the type of information to capture in a dump (.dmp) file that is generated when the system stops unexpectedly.</p>
+<td>Contains an integer that specifies the type of information to capture in a dump (.dmp) file that is generated when the system stops unexpectedly. The integers and the types of capture information are explained in the next section.
 <p>The .dmp file is typically saved in %SystemRoot% as Memory.dmp.</p>
-<p>The following table shows the possible values.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+#### Crash dump information types
+
+The following table shows the integers that can be specified in the **CrashDumpEnabled** setting to specify certain types of information to capture in the crash dump.
+
 <table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
+<thead valign="bottom">
 <tr class="header">
 <th>Value</th>
 <th>Description</th>
 </tr>
 </thead>
-<tbody>
+<tbody valign="top">
 <tr class="odd">
 <td>1</td>
 <td>Records all the contents of system memory. This dump file may contain data from processes that were running when the information was collected.</td>
@@ -161,7 +161,7 @@ The following table shows Unbranded Boot settings and their values.
 </tr>
 <tr class="odd">
 <td>3</td>
-<td><p>Records the smallest amount of useful information that may help identify why the device stopped unexpectedly. This type of dump file includes the following information:</p>
+<td>Records the smallest amount of useful information that may help identify why the device stopped unexpectedly. This type of dump file includes the following information:
 <ul>
 <li>A list of loaded drivers.</li>
 <li>The processor context (PRCB) for the processor that stopped.</li>
@@ -185,12 +185,6 @@ The following table shows Unbranded Boot settings and their values.
 </tr>
 </tbody>
 </table>
-<p> </p></td>
-</tr>
-</tbody>
-</table>
-
- 
 
 ## <a href="" id="custom-boot"></a>Customize the boot screen using Windows ICD and Deployment Image Servicing and Management (DISM)
 
@@ -248,14 +242,3 @@ The only supported way to replace the startup logo with a custom logo is to modi
 
 
 [Custom Logon](custom-logon.md)
-
- 
-
- 
-
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_enterprise_customizations\p_enterprise_customizations%5D:%20Unbranded%20Boot%20%20RELEASE:%20%2810/17/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default.aspx. "Send comments about this topic to Microsoft")
-
-
-
-
-

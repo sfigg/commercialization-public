@@ -71,7 +71,7 @@ Use the following procedure to configure user settings in audit mode and then ge
 
 4.  On the reference computer, open an elevated command prompt, and then type this command:
 
-    ``` syntax
+    ```
     C:\Windows\System32\Sysprep\Sysprep /generalize /oobe /shutdown /unattend: F:\CopyProfile.xml
     ```
 

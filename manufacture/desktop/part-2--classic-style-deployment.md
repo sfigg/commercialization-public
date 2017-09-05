@@ -52,7 +52,7 @@ In this lab, you modify your images by adding and removing languages, drivers, a
 1.  Click **Start**, and type **deployment**. Right-click **Deployment and Imaging Tools Environment** and then select **Run as administrator**.
 2.  Create a copy of the image that you want to modify. For the purposes of this lab, use the base Windows 10 image file for either x64 or x86:
 
-    ``` syntax
+    ```
     copy "C:\Images\Win10_x64\sources\install.wim" C:\Images\WindowsWithOffice.wim
     ```
 
@@ -62,7 +62,7 @@ In this lab, you modify your images by adding and removing languages, drivers, a
 
 -   Mount the Windows image. The mounting process maps the contents of an image file to a location where you can view and modify the mounted image.
 
-    ``` syntax
+    ```
     md C:\mount\windows
     Dism /Mount-Image /ImageFile:"C:\Images\WindowsWithOffice.wim" /Index:1 /MountDir:"C:\mount\windows" /Optimize
     ```
@@ -87,11 +87,11 @@ In this lab, you modify your images by adding and removing languages, drivers, a
 
 -   Mount the Windows RE image file. The Windows RE image file is part of the Windows image.
 
-    ``` syntax
+    ```
     md C:\mount\winre
     ```
 
-    ``` syntax
+    ```
     Dism /Mount-Image /ImageFile:"C:\mount\windows\Windows\System32\Recovery\winre.wim" /Index:1 /MountDir:"C:\mount\winre"
     ```
 
@@ -107,7 +107,7 @@ In this lab, you modify your images by adding and removing languages, drivers, a
 
 1.  Add any .inf-style drivers needed for your hardware.
 
-    ``` syntax
+    ```
     Dism /Add-Driver /Image:"C:\mount\windows" /Driver:"C:\Drivers\PnP.Media.V1\media1.inf" /LogPath=C:\mount\dism.log
     ```
 
@@ -117,7 +117,7 @@ In this lab, you modify your images by adding and removing languages, drivers, a
     
     To install all of the drivers from a folder and all its subfolders, point to the folder and use the /Recurse option.
 
-    ``` syntax
+    ```
     Dism /Add-Driver /Image:"C:\mount\windows" /Driver:c:\drivers /Recurse
     ```
 
@@ -125,7 +125,7 @@ In this lab, you modify your images by adding and removing languages, drivers, a
 
 2.  Verify that the driver is part of the image:
 
-    ``` syntax
+    ```
     Dism /Get-Drivers /Image:"C:\mount\windows"
     ```
 
@@ -133,13 +133,13 @@ In this lab, you modify your images by adding and removing languages, drivers, a
 
 3.  If these drivers are critical for the hardware to boot, add them to the Windows RE image, too.
 
-    ``` syntax
+    ```
     Dism /Add-Driver /Image:"C:\mount\winre" /Driver:"C:\Drivers\PnP.Media.V1\media1.inf" /LogPath=C:\mount\dism.log
     ```
 
 4.  Optional: You can remove any .inf drivers from previous tests:
 
-    ``` syntax
+    ```
     Dism /Remove-Driver /Image:"C:\mount\windows" /Driver:"VideoDriver-Old.inf" /LogPath=C:\mount\dism.log
     ```
 
@@ -152,7 +152,7 @@ In Windows 10, OEMs can modify the default Start layout and specify the layout 
 1.  Create a LayoutModification.xml file. For this lab, you can use the sample from the Pre-Requesites document. The sample will pin Office, OneNote and Reader to Start if they are preloaded on the device (Step 8). To create your own LayoutModification.xml file by using an XML editor, see the [Sample scripts](windows-deployment-sample-scripts-sxs.md).
 2.  Add your LayoutModification.xml file to the Windows image. You’ll need to put the file in the following specific location before first boot. If the file exists, you should replace the LayoutModification.XML that is already included in the image.
 
-    ``` syntax
+    ```
     C:\Mount\Windows\Users\Default\AppData\Local\Microsoft\Windows\Shell\
     ```
 
@@ -258,13 +258,13 @@ The following table shows the types of language packages and components availabl
 
     For example:
 
-    ``` syntax
+    ```
     Dism /Add-Package /Image:"C:\mount\windows" /PackagePath="C:\Languages\fr-fr x64\lp.cab" /PackagePath="C:\Languages\fr-fr x64\Microsoft-Windows-LanguageFeatures-Basic-fr-fr-Package.cab" /PackagePath="C:\Languages\fr-fr x64\Microsoft-Windows-LanguageFeatures-OCR-fr-fr-Package.cab" /PackagePath="C:\Languages\fr-fr x64\Microsoft-Windows-LanguageFeatures-Handwriting-fr-fr-Package.cab" /PackagePath="C:\Languages\fr-fr x64\Microsoft-Windows-LanguageFeatures-TextToSpeech-fr-fr-Package.cab" /PackagePath="C:\Languages\fr-fr x64\Microsoft-Windows-LanguageFeatures-Speech-fr-fr-Package.cab" /LogPath=C:\mount\dism.log
     ```
 
 2.  Verify that the language package is part of the image:
 
-    ``` syntax
+    ```
     Dism /Get-Packages /Image:"C:\mount\windows"
     ```
 
@@ -272,14 +272,14 @@ The following table shows the types of language packages and components availabl
 
     Review the resulting list of packages and verify that the list contains the package. For example:
 
-    ``` syntax
+    ```
     Package Identity : Microsoft-Windows-Client-LanguagePack  ...  fr-FR~10.0.10020.0
     State : Installed
     ```
 
 3.  Verify that the language components are part of the image:
 
-    ``` syntax
+    ```
     Dism /Get-Capabilities /Image:"C:\mount\windows"
     ```
 
@@ -287,7 +287,7 @@ The following table shows the types of language packages and components availabl
 
     Review the resulting list of packages and verify that the list contains the packages. For example:
 
-    ``` syntax
+    ```
     Capability Identity : Language.Basic~~~fr-fr~0.0.1.0
     State : Installed
     ...
@@ -297,7 +297,7 @@ The following table shows the types of language packages and components availabl
 
 4.  Change the default language to match the preferred language for your customers.
 
-    ``` syntax
+    ```
     Dism /Set-AllIntl:fr-fr /Image:C:\mount\windows
     ```
 
@@ -305,7 +305,7 @@ The following table shows the types of language packages and components availabl
 
 1.  To save space, you can remove English language components when deploying to non-English regions. You'll need to uninstall them in the reverse order from how you add them.
 
-    ``` syntax
+    ```
     Dism /Remove-Package /Image:"C:\mount\windows" /PackageName:Microsoft-Windows-LanguageFeatures-Speech-en-us-Package~31bf3856ad364e35~amd64~~10.0.10120.0 /LogPath=C:\mount\dism.fod2.log
 
     Dism /Remove-Package /Image:"C:\mount\windows" /PackageName:Microsoft-Windows-LanguageFeatures-TextToSpeech-en-us-Package~31bf3856ad364e35~amd64~~10.0.10120.0 /LogPath=C:\mount\dism.fod2.log
@@ -323,7 +323,7 @@ The following table shows the types of language packages and components availabl
 
 2.  Verify that the language package is no longer part of the image:
 
-    ``` syntax
+    ```
     Dism /Get-Packages /Image:"C:\mount\windows"
     ```
 
@@ -331,7 +331,7 @@ The following table shows the types of language packages and components availabl
 
 3.  Verify that the language components are no longer part of the image:
 
-    ``` syntax
+    ```
     Dism /Get-Capabilities /Image:"C:\mount\windows"
     ```
 
@@ -339,7 +339,7 @@ The following table shows the types of language packages and components availabl
 
 4.  Remove the Windows RE optional components. After removing, verify that they're no longer in the image.
 
-    ``` syntax
+    ```
     Dism /Remove-Package /Image:"C:\mount\winre" /PackageName:WinPE-Rejuv-Package~31bf3856ad364e35~amd64~en-US~10.0.10120.0 
     Dism /Remove-Package /Image:"C:\mount\winre" /PackageName:WinPE-HTA-Package~31bf3856ad364e35~amd64~en-US~10.0.10120.0
     Dism /Remove-Package /Image:"C:\mount\winre" /PackageName:WinPE-StorageWMI-Package~31bf3856ad364e35~amd64~en-US~10.0.10120.0 
@@ -359,7 +359,7 @@ The following table shows the types of language packages and components availabl
 
 1.  Remove the existing inbox apps. **(This step is not required if you're using Universal apps obtained after August 18, 2015)**. The following example shows you how to remove the Get Started inbox app. Repeat these steps for each of the inbox apps (with the exception of AppConnector) by substituting the appropriate package.
 
-    ``` syntax
+    ```
     Dism /Image:"c:\mount\windows" /Remove-ProvisionedAppxPackage /PackageName:Microsoft.Getstarted_2015.522.28.1146_neutral_~_8wekyb3d8bbwe
     ```
 
@@ -369,7 +369,7 @@ The following table shows the types of language packages and components availabl
 
 2.  Re-install the apps. The following example shows you how to reinstall the Get Started inbox app. Repeat these steps for each of the inbox apps (with the exception of AppConnector) by substituting the appropriate package.
 
-    ``` syntax
+    ```
     Dism /Image:"c:\mount\windows" /Add-ProvisionedAppxPackage /packagepath:<path to appxbundle>\2b362ab83144485d9e9629ad2889a680.appxbundle /licensepath:<path to license file>\2b362ab83144485d9e9629ad2889a680_License1.xml
     ```
 
@@ -381,7 +381,7 @@ The following table shows the types of language packages and components availabl
 
     Add the AppX package.
 
-    ``` syntax
+    ```
     Dism /Image:c:\mount\windows /Add-ProvisionedAppxPackage /PackagePath:c:\samples\excelpreview\excel.appxbundle /LicensePath:c:\samples\excelpreview\excel_license.xml
     ```
 
@@ -401,7 +401,7 @@ Whenever possible, try to add and remove languages in Windows RE at the same tim
 
     **Note**  The WinPE-WiFi-Package is not language-specific and does not need to be added when adding other languages. This is new for Windows 10.
 
-    ``` syntax
+    ```
     Dism /image:C:\mount\winre /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\fr-fr\lp.cab"
 
     Dism /image:C:\mount\winre /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\fr-fr\WinPE-Rejuv_fr-fr.cab"
@@ -425,7 +425,7 @@ Whenever possible, try to add and remove languages in Windows RE at the same tim
 
 2.  Set the default recovery language to match the preferred language for your customers.
 
-    ``` syntax
+    ```
     Dism /Set-AllIntl:fr-fr /Image:C:\mount\winre
     ```
 
@@ -437,7 +437,7 @@ Whenever possible, try to add and remove languages in Windows RE at the same tim
 
     Example:
 
-    ``` syntax
+    ```
     Dism /Remove-Package /Image:"C:\mount\winre" /PackageName:WinPE-Rejuv-Package~31bf3856ad364e35~amd64~en-US~10.0.10120.0 /LogPath=C:\mount\dism.fod2.log
     Dism /Remove-Package /Image:"C:\mount\winre" /PackageName:WinPE-HTA-Package~31bf3856ad364e35~amd64~en-US~10.0.10120.0 /LogPath=C:\mount\dism.fod2.log
     Dism /Remove-Package /Image:"C:\mount\winre" /PackageName:WinPE-StorageWMI-Package~31bf3856ad364e35~amd64~en-US~10.0.10120.0 /LogPath=C:\mount\dism.fod2.log
@@ -452,7 +452,7 @@ Whenever possible, try to add and remove languages in Windows RE at the same tim
 
 4.  Verify that the language packages are part of the image:
 
-    ``` syntax
+    ```
     Dism /Get-Packages /Image:"C:\mount\winre"
     ```
 
@@ -460,7 +460,7 @@ Whenever possible, try to add and remove languages in Windows RE at the same tim
 
 5.  Review the resulting list of packages and verify that the list contains the package. For example:
 
-    ``` syntax
+    ```
     Package Identity : Microsoft-Windows-WinPE-Rejuv_fr-fr ...  fr-FR~10.0.9926.0
     State : Installed
     ```
@@ -474,13 +474,13 @@ Whenever possible, try to add and remove languages in Windows RE at the same tim
 
     Determine what images you can upgrade the image to: Note the edition IDs available.
 
-    ``` syntax
+    ```
     Dism /Get-TargetEditions /Image:C:\mount\windows
     ```
 
 2.  Upgrade the edition.
 
-    ``` syntax
+    ```
     Dism /Set-Edition:Professional /Image:C:\mount\windows
     ```
 
@@ -492,7 +492,7 @@ Whenever possible, try to add and remove languages in Windows RE at the same tim
 1.  Close all applications that might access files from the image.
 2.  Commit the changes and unmount the Windows RE image:
 
-    ``` syntax
+    ```
     Dism /Unmount-Image /MountDir:"C:\mount\winre" /Commit
     ```
 
@@ -502,7 +502,7 @@ Whenever possible, try to add and remove languages in Windows RE at the same tim
 
 3.  Make a backup copy of the updated Windows RE image (optional). This can help you save your work in case the Windows image gets corrupted.
 
-    ``` syntax
+    ```
     xcopy C:\mount\windows\Windows\System32\Recovery\winre.wim C:\Images\winre_with_drivers_for_fabrikam_model_1.wim /ah
     ```
 
@@ -514,20 +514,20 @@ Whenever possible, try to add and remove languages in Windows RE at the same tim
 
 4.  Check the new size of the Windows RE image.
 
-    ``` syntax
+    ```
     Dir "C:\mount\windows\Windows\System32\Recovery\winre.wim"
     ```
 
     If the size of the partition is greater than 524,288,000 bytes, convert the file size into megabytes, add free space, and modify the deployment script: CreatePartitions-&lt;Firmware&gt;.txt with the new value. To learn more about free space recommendations, see [UEFI/GPT-based hard drive partitions](http://go.microsoft.com/fwlink/?LinkId=526950). Example:
 
-    ``` syntax
+    ```
     rem == 3. Windows RE tools partition ===============
     create partition primary size=600
     ```
 
 5.  Commit the changes and unmount the Windows image:
 
-    ``` syntax
+    ```
     Dism /Unmount-Image /MountDir:"C:\mount\windows" /Commit
     ```
 
@@ -540,7 +540,7 @@ Whenever possible, try to add and remove languages in Windows RE at the same tim
 1.  Plug in the Windows PE USB key and note the drive location, for example, **D:**.
 2.  Copy the image and the premade deployment scripts to a USB key, for example:
 
-    ``` syntax
+    ```
     copy C:\Images\WindowsWithOffice.wim D:
 
     copy C:\Samples\Scripts\* D:
@@ -566,7 +566,7 @@ Whenever possible, try to add and remove languages in Windows RE at the same tim
 1.  Boot the reference device to Windows PE using the Windows PE USB key.
 2.  Find the drive letter of the USB key by using diskpart:
 
-    ``` syntax
+    ```
     diskpart
     DISKPART> list volume
     DISKPART> exit
@@ -583,7 +583,7 @@ Whenever possible, try to add and remove languages in Windows RE at the same tim
 
     You can download the scripts from the [Microsoft Download Center](http://go.microsoft.com/fwlink/p/?LinkId=800657). 
 
-    ``` syntax
+    ```
     D:
     D:ApplyImage.bat D:\WindowswithOffice.wim
     ```

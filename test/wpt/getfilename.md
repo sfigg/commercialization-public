@@ -5,10 +5,9 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 15f12bd8-a977-4c39-8da7-74b51bd7d54a
-ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
-ms.author: joshbax
+ms.author: sapaetsc
 ms.date: 05/05/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -23,7 +22,7 @@ Obtains the string from the specified file.
 ## Syntax
 
 
-``` syntax
+```
 HRESULT GetFileName
   ([out] BSTR* pbstrFileName)
 ;

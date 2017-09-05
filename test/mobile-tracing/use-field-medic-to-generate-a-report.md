@@ -5,7 +5,7 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 3afb13d4-30e5-4eb0-ab13-315bfa74723a
-ms.author: joshbax
+ms.author: sapaetsc
 ms.date: 05/05/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -82,7 +82,7 @@ You can use tools such as Xperf and Tracerpt, and ETWDump to examine the ETL fil
 
     Here’s an example of using EtwDump to decode the FieldMedic-Contacts-Calendar.etl log file.
 
-    ``` syntax
+    ```
     etwdump FieldMedic-Contacts-Calendar.etl -import "C:\Program Files (x86)\Windows Kits\10\Manifests" -o FmCC.csv –of CSV
     ```
 

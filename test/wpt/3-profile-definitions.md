@@ -5,10 +5,9 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 1d072198-f631-463a-886c-b69a48c1acd1
-ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
-ms.author: joshbax
+ms.author: sapaetsc
 ms.date: 05/05/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -19,14 +18,6 @@ ms.technology: windows-oem
 
 
 Windows Performance Recorder (WPR) recording profiles are stored in an XML file that has a .wprp extension. *Profile definitions* bring together the collector and provider definitions in the .wprp file.
-
-In this article:
-
--   [Profiles](#profiles)
-
--   [Collectors Element](#collectors)
-
--   [Profile Definition Example](#profdefex)
 
 ## Profiles
 
@@ -51,7 +42,7 @@ WPR supports performance recording for both file and memory logging modes for ea
 
 The following code example shows **Example1.wprp**. This file contains two profile definitions. The ellipsis (…) represents the body of the profile.
 
-``` syntax
+```
 <Profile
   Id="Example1.Verbose.File"
   Name="Example1"
@@ -72,7 +63,7 @@ The following code example shows **Example1.wprp**. This file contains two profi
 
 The following code example shows **Example2.wprp**. This file contains four profile definitions. The ellipsis (…) represents the body of the profile.
 
-``` syntax
+```
 <Profile
   Id="Example2.Verbose.File"
   Name="Example2"
@@ -121,7 +112,7 @@ You can also define collectors and providers inside the profile definition.
 
 The following code example shows a complete profile definition.
 
-``` syntax
+```
 <Profile
   Id="Example.Light.File"
   Name="Example"
@@ -169,14 +160,3 @@ The following code example shows a complete profile definition.
 [SystemCollectorId](systemcollectorid.md)
 
 [HeapEventProviderId](heapeventproviderid.md)
-
- 
-
- 
-
-
-
-
-
-
-

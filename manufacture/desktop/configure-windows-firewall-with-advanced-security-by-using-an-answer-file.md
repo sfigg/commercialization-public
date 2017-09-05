@@ -52,7 +52,7 @@ Use **RunSynchronous** commands only to add, modify, or delete rules for Windows
 
 9.  The command is added to the answer file under the configuration pass that you selected. This example illustrates how an incoming rule for Windows Messenger is configured:
 
-    ``` syntax
+    ```
           <RunSynchronous>
              <RunSynchronousCommand wcm:action="add">
                 <Path>Netsh advfirewall firewall 
@@ -80,7 +80,7 @@ The following example illustrates how to add a new outgoing firewall rule to blo
 
 -   At an elevated command prompt, enter syntax that adds a new outgoing firewall rule to block a port. For example:
 
-    ``` syntax
+    ```
     Netsh advfirewall firewall add rule name="allow80" protocol=TCP
     dir=out localport=80 action=block
     ```

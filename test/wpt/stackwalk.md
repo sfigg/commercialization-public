@@ -5,10 +5,9 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 00864c2f-0a49-4d6f-a65d-a792245f2875
-ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
-ms.author: joshbax
+ms.author: sapaetsc
 ms.date: 05/05/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -20,25 +19,25 @@ ms.technology: windows-oem
 
 Displays stack-walking options. Stack-walking flags can be specified either directly on the command line or in a file.
 
-``` syntax
+```
 xperf -on base -stackwalk ThreadCreate+ProcessCreate
 ```
 
 - Or -
 
-``` syntax
+```
 xperf -on base -stackwalk ThreadCreate -stackwalk ProcessCreate
 ```
 
 - Or -
 
-``` syntax
+```
 xperf -on base -stackwalk @stack.txt
 ```
 
 - Or -
 
-``` syntax
+```
 xperf -on base -stackwalk 0x0501
 ```
 
@@ -318,7 +317,7 @@ The following list shows the recognized stack-walking flags:
 
 The stack-walking flag file can contain any number of stack-walking flags per line, separated by spaces, plus signs (+), or on new lines, as shown in the following example.
 
-``` syntax
+```
 ThreadCreate ProcessCreate
 DiskReadInit+DiskWriteInit+DiskFlushInit
 CSwitch

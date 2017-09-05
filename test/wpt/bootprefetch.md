@@ -5,10 +5,9 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 482e724b-bf10-4181-a77f-40e5fdc8db7e
-ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
-ms.author: joshbax
+ms.author: sapaetsc
 ms.date: 05/05/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -20,7 +19,7 @@ ms.technology: windows-oem
 
 This action collates and summarizes events that are relevant to boot when you use the **On/Off Trace Capture** tool.
 
-``` syntax
+```
 bootprefetch [-summary | -events [-pattern [-type name]] [-range T1 T2] | disktime]
 ```
 

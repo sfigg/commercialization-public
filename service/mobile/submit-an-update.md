@@ -29,7 +29,7 @@ OEMs can continue to submit OS-only updates for Trial and PartnerSelfHost previe
 
 3.  With both the old and new ticket IDs, submit the update request using the [New-RequestForUpdate cmdlet](new-requestforupdate-cmdlet.md):
 
-    ``` syntax
+    ```
     New-RequestForUpdate 
        -FirmwareSubmissionTicketId TKT-SIGN-PROD-ABCD56 
        -RequestForUpdateType RetailServicing 
@@ -42,7 +42,7 @@ OEMs can continue to submit OS-only updates for Trial and PartnerSelfHost previe
 
 4.  Use the RFU ID to check the status using the [Get-RequestForUpdate cmdlet](get-requestforupdate-cmdlet.md):
 
-    ``` syntax
+    ```
     Get-RequestForUpdate
        -RequestForUpdateTicketId TKT-RFU-PROD-ABCD56-1
     ```
@@ -70,7 +70,7 @@ The following diagram shows this procedure:
 
     With the ticket IDs for both the existing firmware and the new firmware, submit an update request using the [New-RequestForUpdate cmdlet](new-requestforupdate-cmdlet.md).
 
-    ``` syntax
+    ```
     New-RequestForMicrosoftUpdate
        -SourceOSVersion 8.10.12349.825
        -TargetOSVersion 8.10.12359.845

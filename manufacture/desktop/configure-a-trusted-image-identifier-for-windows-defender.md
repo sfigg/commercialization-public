@@ -40,7 +40,7 @@ For optimal performance, we recommend that you add this setting when you prepare
 
 5.  When you run Sysprep for the final time, use the Sysprep command together with the /oobe and /unattend options, as follows:
 
-    ``` syntax
+    ```
     Sysprep /oobe /shutdown /unattend:Unattend.xml
     ```
 

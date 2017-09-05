@@ -5,10 +5,9 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4f4da898-5dba-48f4-a203-d0acbcde6153
-ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
-ms.author: joshbax
+ms.author: sapaetsc
 ms.date: 05/05/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -40,7 +39,7 @@ Represents an identifier for a provider of heap events.
 ## Syntax
 
 
-``` syntax
+```
 <HeapEventProviderId Value = IdType>
 
   <!-- Child elements -->

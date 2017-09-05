@@ -5,7 +5,7 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 96251661-55CC-4082-A3FF-4926C4931F74
-ms.author: joshbax
+ms.author: sapaetsc
 ms.date: 05/05/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -30,13 +30,13 @@ Offloading audio processing on chipsets that support audio offload results in lo
 
 5.  Run the following command:
 
-    ``` syntax
+    ```
     xa -i <AudioNotOffloaded.etl location>\AudioNotOffloaded.etl
     ```
 
     For example, if you downloaded **AudioNotOffloaded.etl** to C:\\Performance\\Media\\, you would type the following command:
 
-    ``` syntax
+    ```
     xa -i C:\Performance\Media\AudioOffload\AudioNotOffloaded.etl
     ```
 

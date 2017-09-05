@@ -43,7 +43,7 @@ To complete this walkthrough, you need the following:
 
 2.  Mount the Windows base image for editing.
 
-    ``` syntax
+    ```
     md C:\mount\windows
 
     Dism /Mount-Image /ImageFile:C:\mount\install.wim /Index:1 /MountDir:C:\mount\windows
@@ -51,7 +51,7 @@ To complete this walkthrough, you need the following:
 
 3.  Mount the Windows RE image for editing.
 
-    ``` syntax
+    ```
     md C:\mount\winre 
 
     Dism /Mount-Image /ImageFile:c:\mount\windows\windows\system32\recovery\winre.wim /Index:1 /MountDir:C:\mount\winre
@@ -79,7 +79,7 @@ We recommend adding no more than ten language packs to a Windows or Windows RE i
 
 1.  List the Windows PE optional components in the Windows RE tools image:
 
-    ``` syntax
+    ```
     Dism /Get-Packages /Image:C:\mount\winre
     ```
 
@@ -87,7 +87,7 @@ We recommend adding no more than ten language packs to a Windows or Windows RE i
 
     The following code shows how to add the French (fr-fr) language pack to the base Windows PE image, and then to each of the optional components that are present in the default Windows RE image:
 
-    ``` syntax
+    ```
     Dism /Add-Package /Image:C:\mount\winre /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\fr-fr\lp.cab"
 
     Dism /Add-Package /Image:C:\mount\winre /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\fr-fr\WinPE-Rejuv_fr-fr.cab"
@@ -113,7 +113,7 @@ We recommend adding no more than ten language packs to a Windows or Windows RE i
 
 3.  If you're adding language packs for Japan, Korea, or China, add the font packages for these languages. Here's an example for Japan:
 
-    ``` syntax
+    ```
     Dism /image:C:\mount\winre /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\WinPE-Font Support-JA-JP.cab"
     ```
 
@@ -123,7 +123,7 @@ We recommend adding no more than ten language packs to a Windows or Windows RE i
 
     Note, the **WinPE-WiFi-Package** is not language specific and should not be removed.
 
-    ``` syntax
+    ```
     Dism /Remove-Package /Image:C:\mount\winre /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\en-us\WinPE-HTA_en-us.cab"
 
     Dism /Remove-Package /Image:C:\mount\winre /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\en-us\WinPE-StorageWMI_en-us.cab"
@@ -155,7 +155,7 @@ Make sure that you add any third-party drivers that your reference device requir
 1.  If necessary, unzip or unpack the driver file from your device manufacturer.
 2.  Identify the driver setup (.inf) file, and add it.
 
-    ``` syntax
+    ```
     Dism /Image:C:\mount\winre /Add-Driver /Driver:"C:\SampleDriver\driver.inf" 
     ```
 
@@ -173,7 +173,7 @@ Occasionally, a Windows update may require you to update the Windows RE image.
 
 -   Add the Windows update package, for example, C:\\MSU\\Windows8.1-KB123456-x64.msu.
 
-    ``` syntax
+    ```
     Dism /Add-Package /PackagePath:C:\MSU\Windows8.1-KB123456-x64.msu /Image:C:\mount\winre /LogPath:AddPackage.log
     ```
 
@@ -183,7 +183,7 @@ After adding a language or Windows update package, you can reduce the size of th
 
 1.  Optimize the image:
 
-    ``` syntax
+    ```
     Dism /Image:c:\mount\winre /Cleanup-Image /StartComponentCleanup /ResetBase
     ```
 
@@ -194,7 +194,7 @@ After adding a language or Windows update package, you can reduce the size of th
 
 -   Unmount and save the image:
 
-    ``` syntax
+    ```
     Dism /Unmount-Image /MountDir:C:\mount\winre /Commit
     ```
 
@@ -205,13 +205,13 @@ If you've optimized the image, you'll need to export the image in order to see a
 
 1.  Export the Windows RE image into a new Windows image file.
 
-    ``` syntax
+    ```
     Dism /Export-Image /SourceImageFile:c:\mount\windows\windows\system32\recovery\winre.wim /SourceIndex:1 /DestinationImageFile:c:\mount\winre-optimized.wim
     ```
 
 2.  Replace the old Windows RE image with the newly-optimized image.
 
-    ``` syntax
+    ```
     del c:\mount\windows\windows\system32\recovery\winre.wim
 
     copy c:\mount\winre-optimized.wim c:\mount\windows\windows\system32\recovery\winre.wim
@@ -224,7 +224,7 @@ Save your changes back into the Windows base image.
 
 -   Unmount the base Windows image:
 
-    ``` syntax
+    ```
     Dism /Unmount-Image /MountDir:C:\mount\windows /Commit
     ```
 

@@ -25,7 +25,7 @@ If you want to test Manufacturing Mode, you can enable it by using ffutool.exe o
 
 If the device supports the boot mode UEFI protocol, you can enable or disable Manufacturing Mode with ffutool.exe by using the **setBootMode** parameter. The syntax is as follows:
 
-``` syntax
+```
 ffutool.exe -setBootMode <boot mode> <profile name>
 ```
 
@@ -34,13 +34,13 @@ ffutool.exe -setBootMode <boot mode> <profile name>
 
 The following example enables Manufacturing Mode and uses a manufacturing profile named CustomProfile:
 
-``` syntax
+```
 ffutool.exe -setBootMode 1 CustomProfile
 ```
 
 The following example disables Manufacturing Mode, allowing the operating system to boot normally:
 
-``` syntax
+```
 ffutool.exe -setBootMode 0
 ```
 
@@ -51,19 +51,19 @@ You can use the MfgMode BCD setting to test Manufacturing Mode with your custom 
 
 For example, you can start the device in Manufacturing Mode using the default manufacturing profile by running the following command on the device:
 
-``` syntax
+```
 bcdedit.exe /set {default} mfgmode "default"
 ```
 
 Or, you could start the device in Manufacturing Mode using a custom manufacturing profile named, CustomProfile, by doing the following:
 
-``` syntax
+```
 bcdedit.exe /set {default} mfgmode "CustomProfile"
 ```
 
 You can also enable it on an offline device that is plugged in and is in USB mass storage mode. For example:
 
-``` syntax
+```
 bcdedit.exe /store "D:\EFIESP\efi\Microsoft\Boot\BCD" /set {default} mfgmode "default"
 ```
 
@@ -76,7 +76,7 @@ bcdedit.exe /store "D:\EFIESP\efi\Microsoft\Boot\BCD" /set {default} mfgmode "de
 
 You can create a package that creates the MfgMode BCD entry and sets it to your custom manufacturing profile. To do this, you must first create an XML file that references the BCD entry:
 
-``` syntax
+```
 <?xml version="1.0" encoding="utf-8"?>
 <BootConfigurationDatabase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/phone/2011/10/BootConfiguration">
   <Objects>
@@ -104,7 +104,7 @@ You can create a package that creates the MfgMode BCD entry and sets it to your 
 
 After that is created, you can reference it in a package XML file:
 
-``` syntax
+```
 <?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="urn:Microsoft.WindowsPhone/PackageSchema.v8.00"
         Owner="Contoso"
@@ -126,7 +126,7 @@ After that is created, you can reference it in a package XML file:
 
 To create the package, you can use pkggen.exe (included with the Windows Driver Kit):
 
-``` syntax
+```
 pkggen.exe exampleBcd.pkg.xml /config:pkggen.cfg.xml
 ```
 

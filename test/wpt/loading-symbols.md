@@ -5,10 +5,9 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: db27f063-0ae8-4762-8df4-66e3d14e55ed
-ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
-ms.author: joshbax
+ms.author: sapaetsc
 ms.date: 05/05/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -82,13 +81,13 @@ If the **\_NT\_SYMCACHE\_PATH** environment variable is unassigned or empty, WPA
 
 The following command puts the SymCache file in the **C:\\SymCache** folder:
 
-``` syntax
+```
 C:\SymCache
 ```
 
 The following command puts the SymCache file in the **C:\\SymCache folder**, searches the **\\\\network\\SymCache** folder for symbols, and then processes the **\_NT\_SYMBOL\_PATH** environment variable:
 
-``` syntax
+```
 C:\SymCache*\\network\SymCache
 ```
 
@@ -98,7 +97,7 @@ To search multiple alternative SymCache folders, append the folders to the searc
 
 To disable copying and writing but still use the hierarchical search feature, you should leave the first position in the path empty, as shown in the following example:
 
-``` syntax
+```
 *\\network\SymCache
 ```
 
@@ -117,7 +116,7 @@ Symbol loading in WPA depends on the paths that the **\_NT\_SYMBOL\_PATH** envir
 
 When the **\_NT\_SYMBOL\_PATH** environment variable is not set, WPA uses the following default value:
 
-``` syntax
+```
  .;SRV*\Symbols* http://msdl.microsoft.com/download/symbols;
 ```
 
@@ -125,13 +124,13 @@ The semicolons (;) separate the different paths. The first path is the period (.
 
 The second path is the following:
 
-``` syntax
+```
  SRV*\Symbols* http://msdl.microsoft.com/download/symbols
 ```
 
 You must also set the NGEN PB path:
 
-``` syntax
+```
 set _NT_SYMBOL_PATH=srv*C:\Symbols.NGEN;srv*http://msdl.microsoft.com/download/symbols
 ```
 

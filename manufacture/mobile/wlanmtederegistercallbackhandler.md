@@ -19,7 +19,7 @@ Unregisters a callback handler so that it will no longer be called when a manufa
 ## <span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>Syntax
 
 
-``` syntax
+```
 DWORD WlanMTEDeRegisterCallbackHandler(
     __in    HANDLE                          hAdapter
 );

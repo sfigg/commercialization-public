@@ -5,7 +5,7 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 6A6E2E98-2B6B-4C58-B0F9-A28B650383CF
-ms.author: elkr
+ms.author: sapaetsc
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -22,7 +22,7 @@ You can use the powercfg.exe tool to control power schemes (also named power pla
 
 From the Windows command-line, you can run "powercfg.exe /?" to bring up the following usage information:
 
-``` syntax
+```
 powercfg /COMMAND [ARGUMENTS] [/?]
 ```
 
@@ -34,6 +34,7 @@ The following command-line options are available for powercfg.
 > [!IMPORTANT]
 > To navigate the table horizontally, click on the table and then use the left and right scroll keys on your keyboard or use the scroll bar at the bottom of the table.
 
+> [!div class="mx-tableFixed"]
 <table>
 <colgroup>
 <col width="33%" />

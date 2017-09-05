@@ -5,10 +5,9 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 14ea91eb-eb7b-4dd7-a09d-da4743dc3805
-ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
-ms.author: joshbax
+ms.author: sapaetsc
 ms.date: 05/05/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -22,7 +21,7 @@ Xperf actions are trace processing components that collate event information to 
 
 All actions are invoked using the following command-line pattern:
 
-``` syntax
+```
 xperf -i input.etl -o output.txt -a <action_name> [action_parameters]
 ```
 

@@ -19,7 +19,7 @@ Requests that the driver write data to a specific location defined by a key and 
 ## <span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>Syntax
 
 
-``` syntax
+```
 DWORD WlanMTESetData(
     __in                    HANDLE  hAdapter,
     __in                    ULONG   uKey,

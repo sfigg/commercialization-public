@@ -5,7 +5,6 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 59761ac8-d6ff-4803-a4eb-d2668f846441
-ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
 ms.author: alhopper
@@ -20,7 +19,7 @@ ms.technology: windows-oem
 
 We recommend the following best practices for creating answer files.
 
-There are many ways in which you can use answer files. For more information about how to use an answer file with Windows® Setup, see [Windows Setup Automation Overview](http://go.microsoft.com/fwlink/p/?linkid=219489). For more information about how to use an answer file with the **Sysprep** tool, [Using Answer Files with Sysprep](http://go.microsoft.com/fwlink/?LinkId=224958). For more information about how to use an answer file with Deployment Image Servicing and Management (DISM), see [Unattended Servicing Command-Line Options](http://go.microsoft.com/fwlink/?LinkId=224959).
+There are many ways in which you can use answer files. For more information about how to use an answer file with Windows® Setup, see [Windows Setup Automation Overview](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/windows-setup-automation-overview). For more information about how to use an answer file with the **Sysprep** tool, [Using Answer Files with Sysprep](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/use-answer-files-with-sysprep). For more information about how to use an answer file with Deployment Image Servicing and Management (DISM), see [DISM Unattended Servicing Command-Line Options](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/dism-unattended-servicing-command-line-options).
 
 ## Always Validate Answer Files in Windows SIM
 
@@ -41,7 +40,7 @@ In general, it is best to expand down to the lowest level of a component and sel
 ## Understand Configuration Passes
 
 
-Configuration passes represent different phases of installation. Understanding what happens during each configuration pass is very important to creating answer files. For more information, review [Windows Setup Automation Overview](http://go.microsoft.com/fwlink/p/?linkid=219489) and [How Configuration Passes Work](http://go.microsoft.com/fwlink/?LinkId=224960).
+Configuration passes represent different phases of installation. Understanding what happens during each configuration pass is very important to creating answer files. For more information, review [Windows Setup Automation Overview](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/windows-setup-automation-overview) and [How Configuration Passes Work](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/how-configuration-passes-work).
 
 ## Avoid Creating Empty Elements
 
@@ -64,7 +63,7 @@ Answer files store sensitive data, including product keys, passwords, and other 
 
 -   **Restrict access to answer files.** Depending on your environment, you can change the access control lists (**ACLs**) or permissions on a file. Only approved accounts can access answer files.
 
--   **Hide passwords.** To improve security in answer files, you can hide the passwords for local accounts by using Windows SIM. For more information, see [Hide Sensitive Data in an Answer File](http://go.microsoft.com/fwlink/?LinkId=224961).
+-   **Hide passwords.** To improve security in answer files, you can hide the passwords for local accounts by using Windows SIM. For more information, see [Hide Sensitive Data in an Answer File](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/wsim/hide-sensitive-data-in-an-answer-file).
 
 -   **Delete the cached answer file.** During unattended Windows installation, answer files are cached to the computer. For each configuration pass, sensitive information such as domain passwords and product keys are deleted in the cached answer file. However, other information is still readable in the answer file. Before you deliver the computer to a customer, delete the cached answer file in **%WINDIR%\\panther**.
 
@@ -73,7 +72,7 @@ Answer files store sensitive data, including product keys, passwords, and other 
 ## Do Not Overwrite Existing Files When You Are Using Data Images or $OEM$ Folders
 
 
-When you add data, such as additional drivers or applications, do not overwrite Windows system files. Overwriting system files can corrupt your computer. For information about how to add drivers and applications, see [How to Create a Data Image](http://go.microsoft.com/fwlink/?LinkId=224962) and [How to Manage Files and Folders in a Distribution Share](http://go.microsoft.com/fwlink/?LinkId=224963).
+When you add data, such as additional drivers or applications, do not overwrite Windows system files. Overwriting system files can corrupt your computer. For information about how to add drivers and applications, see [How to Create a Data Image](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/create-a-data-image-using-dism) and [How to Manage Files and Folders in a Distribution Share](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/wsim/manage-files-and-folders-in-a-distribution-share).
 
 ## Use Separate Answer Files to Deploy to Multiple Architecture Types
 
@@ -87,18 +86,18 @@ You can use multiple answer files (Unattend.xml) to create different sets of cus
 
 For example, you can define your basic customizations in an answer file that you use with Windows Setup. After installation finishes, you can use an answer file with **Sysprep** or **DISM**. For example, if you want to keep all of the drivers that were added to the installation during a **generalize** process, you can create an answer file to use with **Sysprep** that contains the **PersistAllDeviceInstalls** setting. You can apply an answer file by running the following command: **Sysprep /generalize /unattend:***answerfile*.
 
-For more information about how to use an answer file with Windows Setup, see [Windows Setup Command-Line Options](http://go.microsoft.com/fwlink/?LinkId=224964).
+For more information about how to use an answer file with Windows Setup, see [Windows Setup Command-Line Options](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/windows-setup-command-line-options).
 
-For more information about how to use an answer file with **Sysprep**, see [Sysprep Command-Line Syntax](http://go.microsoft.com/fwlink/?LinkId=224965).
+For more information about how to use an answer file with **Sysprep**, see [Sysprep Command-Line Syntax](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/sysprep-command-line-options).
 
-For more information about how to use an answer file with DISM, see [Unattended Servicing Command-Line Options](http://go.microsoft.com/fwlink/?LinkId=224959).
+For more information about how to use an answer file with DISM, see [DISM Unattended Servicing Command-Line Options](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/dism-unattended-servicing-command-line-options).
 
 ## Use the Correct Mechanisms to Add Updates to a Windows Image
 
 
 Use only the Microsoft-supported servicing mechanisms to update a Windows image.
 
-Use **DISM** to update an offline Windows image. For more information, see [Service an Offline Image](http://go.microsoft.com/fwlink/?LinkId=224966).
+Use **DISM** to update an offline Windows image. For more information, see [Service an Offline Image](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/service-a-mounted-windows-image).
 
 During installation, you can also configure the computer to automatically download updates from Windows Update.
 
@@ -107,7 +106,7 @@ Never overwrite Windows system files by using **$OEM$** Folders subfolders or da
 
  
 
-If you have additional device drivers to add to a computer, add these drivers offline by using **DISM**. You can also include additional drivers in an unattended installation by using the **Microsoft-Windows-PnPCustomizationsNonWinPE** and **Microsoft-Windows-PnPCustomizationWinPE** components. For more information, see [How to Add and Remove Drivers Offline](http://go.microsoft.com/fwlink/?LinkId=224967).
+If you have additional device drivers to add to a computer, add these drivers offline by using **DISM**. You can also include additional drivers in an unattended installation by using the **Microsoft-Windows-PnPCustomizationsNonWinPE** and **Microsoft-Windows-PnPCustomizationWinPE** components. For more information, see [How to Add and Remove Drivers Offline](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/add-and-remove-drivers-to-an-offline-windows-image).
 
 ## Specify Language Settings
 
@@ -127,7 +126,7 @@ You can use the **Sysprep** command with the **generalize** option and the **Loc
 
 If you specify the settings in the following example in the **specialize** configuration pass, all the values of *NEWVALUE* will be changed. However, *MyAccount* will retain its security group memberships. *MyAccount* is considered to be the same account with a different display name, description, and password value.
 
-``` syntax
+```
 <LocalAccount>
    <Name>MyAccount</Name>
    <DisplayName>NEWVALUE</DisplayName>
@@ -142,19 +141,19 @@ If you specify the settings in the following example in the **specialize** confi
 ## Related topics
 
 
-[Windows System Image Manager (Windows SIM)](http://go.microsoft.com/fwlink/?LinkId=214570)
+[Windows System Image Manager (Windows SIM) Technical Reference](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/wsim/windows-system-image-manager-technical-reference)
 
-[Sysprep Technical Reference](http://go.microsoft.com/fwlink/?LinkId=214573)
+[Sysprep Overview](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/sysprep--system-preparation--overview)
 
-[Windows Setup Technical Reference](http://go.microsoft.com/fwlink/?LinkId=214572)
+[Windows Setup Technical Reference](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/windows-setup-technical-reference)
 
-[Deployment Image Servicing and Management (DISM)](http://go.microsoft.com/fwlink/?LinkId=214548)
-
- 
+[Deployment Image Servicing and Management (DISM)](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/dism---deployment-image-servicing-and-management-technical-reference-for-windows)
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_wsim\p_wsim%5D:%20Best%20Practices%20for%20Authoring%20Answer%20Files%20%20RELEASE:%20%2810/17/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default.aspx. "Send comments about this topic to Microsoft")
+ 
+
+
 
 
 

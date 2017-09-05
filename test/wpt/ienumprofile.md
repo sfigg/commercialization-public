@@ -5,10 +5,9 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: a7f512d4-13dd-44be-881b-2b705deb973a
-ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
-ms.author: joshbax
+ms.author: sapaetsc
 ms.date: 05/05/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -23,7 +22,7 @@ Provides a standard COM enumeration method for enumerating a collection of [IPro
 ## Syntax
 
 
-``` syntax
+```
 {
   [id(1), helpstring("Next")] HRESULT Next
     ([in] ULONG celt,

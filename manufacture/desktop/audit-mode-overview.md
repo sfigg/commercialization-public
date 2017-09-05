@@ -58,7 +58,7 @@ We recommend adding this command-line to your answer file as a RunAsynchronousCo
 
 The answer file you create will look similar to the following:
 
-``` syntax
+```
 <settings pass="auditUser">
 <component name="Microsoft-Windows-Deployment" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <RunAsynchronous>

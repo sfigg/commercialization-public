@@ -19,7 +19,7 @@ Queries the driver for data stored at a specific location defined by a key and o
 ## <span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>Syntax
 
 
-``` syntax
+```
 DWORD WlanMTEQueryData(
     __in                        HANDLE  hAdapter,
     __in                        ULONG   uKey,

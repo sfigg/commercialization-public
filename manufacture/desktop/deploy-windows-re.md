@@ -32,7 +32,7 @@ To complete this walkthrough, you need the following:
 
     **UEFI:**
 
-    ``` syntax
+    ```
     mkdir T:\Recovery\WindowsRE
 
     xcopy /h W:\Windows\System32\Recovery\Winre.wim T:\Recovery\WindowsRE
@@ -42,7 +42,7 @@ To complete this walkthrough, you need the following:
 
     **BIOS:**
 
-    ``` syntax
+    ```
     mkdir S:\Recovery\WindowsRE
 
     xcopy /h W:\Windows\System32\Recovery\Winre.wim S:\Recovery\WindowsRE
@@ -54,7 +54,7 @@ To complete this walkthrough, you need the following:
 
     **UEFI:**
 
-    ``` syntax
+    ```
     C:\Windows\System32\Reagentc /setreimage /path T:\Recovery\WindowsRE /target W:\Windows
     ```
 
@@ -62,7 +62,7 @@ To complete this walkthrough, you need the following:
 
     **BIOS**
 
-    ``` syntax
+    ```
     C:\Windows\System32\Reagentc /setreimage /path S:\Recovery\WindowsRE /target W:\Windows
     ```
 
@@ -70,7 +70,7 @@ To complete this walkthrough, you need the following:
 
 3.  Optional: If you have added a custom tool to your Windows RE boot image, register it so that it will appear on the **Boot Options** menu:
 
-    ``` syntax
+    ```
     Reagentc /setbootshelllink /configfile E:\Recovery\BootMenu\AddDiagnosticsToolToBootMenu.xml
     ```
 
@@ -99,7 +99,7 @@ Configure your partitions as recovery partitions, and then conceal the drive let
 
     For more information about UEFI hard drive partition attributes, see [PARTITION\_INFORMATION\_GPT structure](http://go.microsoft.com/fwlink/?LinkId=240300).
 
-    ``` syntax
+    ```
     rem == HideRecoveryPartitions-UEFI.txt
     select disk 0
     select partition 1
@@ -118,7 +118,7 @@ Configure your partitions as recovery partitions, and then conceal the drive let
 
     Use the attribute: `id=27` to define the system partition, and use the `remove` command to remove the drive letter.
 
-    ``` syntax
+    ```
     rem == HideRecoveryPartitions-BIOS.txt
     select disk 0
     select partition 3
@@ -134,7 +134,7 @@ Configure your partitions as recovery partitions, and then conceal the drive let
 
 -   Run the diskpart script to identify and hide the recovery partitions:
 
-    ``` syntax
+    ```
     Diskpart /s E:\Recovery\HideRecoveryPartitions-<firmware>.txt
     ```
 
@@ -146,7 +146,7 @@ Configure your partitions as recovery partitions, and then conceal the drive let
 
     Verify the Windows RE information:
 
-    ``` syntax
+    ```
     reagentc /info
     ```
 

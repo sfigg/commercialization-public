@@ -39,7 +39,7 @@ The EI.cfg file specifies the values for the edition ID, the channel, and the vo
 
 The EI.cfg file has the following format:
 
-``` syntax
+```
 [EditionID]
 {Edition ID}
 [Channel]
@@ -54,7 +54,7 @@ The EI.cfg file has the following format:
 
 *{Volume License}* must be either 1, if this is a volume license, or 0, if this is not a volume license. For example:
 
-``` syntax
+```
 [EditionID]
 Enterprise
 [Channel]
@@ -70,7 +70,7 @@ The PID.txt file contains the product key for the edition of Windows that you ar
 
 The PID.txt file has the following format:
 
-``` syntax
+```
 [PID]
 Value=XXXXX-XXXXX-XXXXX-XXXXX-XXXXX
 ```

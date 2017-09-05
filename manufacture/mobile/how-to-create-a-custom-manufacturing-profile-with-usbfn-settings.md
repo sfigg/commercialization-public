@@ -20,7 +20,7 @@ When the device is not in Manufacturing Mode, USBFN settings will still be read 
 
 Here's an example of a manufacturing profile package that specifies USBFN settings:
 
-``` syntax
+```
 <?xml version='1.0' encoding='utf-8'?>
 <Package
     xmlns="urn:Microsoft.WindowsPhone/PackageSchema.v8.00"
@@ -147,7 +147,7 @@ Here's an example of a manufacturing profile package that specifies USBFN settin
 
 You can then create the package by using pkggen.exe (included with the Windows Driver Kit):
 
-``` syntax
+```
 pkggen.exe exampleUSBFN.pkg.xml /config:pkggen.cfg.xml
 ```
 

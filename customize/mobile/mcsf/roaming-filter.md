@@ -23,7 +23,7 @@ This customization supports: **per-IMSI** value, **per-device** value
 <a href="" id="instructions-"></a>**Instructions:**  
 1.  Create a customization answer file using the contents shown in the following code sample.
 
-    ``` syntax
+    ```
     <?xml version="1.0" encoding="utf-8" ?>  
     <ImageCustomizations xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate"  
                          Name="RoamingFilter"  
@@ -113,7 +113,6 @@ This customization supports: **per-IMSI** value, **per-device** value
           <Setting Name="RoamingTables/3GPPRoamingTables/HomePLMN/$(SerialNumber)" Value="" />  
         </Settings>  
 
-
         <!-- Define for 3GPP2. All these settings must be configured at the same time. -->
         <Settings Path="Cellcore/PerDevice/General/atomicRoamingTableSettings3GPP2">        
           <Setting Name="RoamingTables/3GPP2RoamingTables/Enabled" Value="" />    
@@ -148,10 +147,8 @@ This customization supports: **per-IMSI** value, **per-device** value
 
     The settings group is atomic so you must configure all the settings at the same time to correctly configure roaming filters.
 
-    **Important**  
-    When specifying the `$(SerialNumber)`, make sure that the order is absolutely sequential within the different lists. For example: 000, 001, 002.., or 001, 002, 003…, and so on.
-
-     
+    > [!IMPORTANT]
+    > When specifying the `$(SerialNumber)`, make sure that the order is absolutely sequential within the different lists. For example: 000, 001, 002.., or 001, 002, 003…, and so on.
 
     **3GPP**
 
@@ -195,13 +192,3 @@ This customization supports: **per-IMSI** value, **per-device** value
 
 <a href="" id="testing-steps-"></a>**Testing steps:**  
 Work with your mobile operator to test this customization on their network.
-
- 
-
- 
-
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_phCustomization\p_phCustomization%5D:%20Roaming%20filter%20%20RELEASE:%20%289/7/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
-
-
-
-

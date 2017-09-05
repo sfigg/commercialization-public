@@ -26,7 +26,7 @@ Connecting to an IPv4 network from Windows PE on an IPv6 network is not supporte
 
 1.  While in Windows PE, you can connect (or map) to a shared network folder by using the [net use](http://technet.microsoft.com/library/bb490717.aspx) command. If you’re connecting to a domain-joined PC, Windows PE prompts for a username and password.
 
-    ``` syntax
+    ```
     net use n: \\server\share
     ```
 
@@ -54,19 +54,19 @@ Connecting to an IPv4 network from Windows PE on an IPv6 network is not supporte
 
 3.  Start the dot3svc service.
 
-    ``` syntax
+    ```
     net start dot3svc
     ```
 
 4.  Add a LAN profile. For example:
 
-    ``` syntax
+    ```
     netsh lan add profile="G:\EthernetLANProfile.xml"
     ```
 
     Sample LAN Profile:
 
-    ``` syntax
+    ```
     <?xml version="1.0"?>
     <!-- Sample LAN profile: EthernetLANProfile.xml" -->
     <LANProfile xmlns="http://www.microsoft.com/networking/LAN/profile/v1">
@@ -117,13 +117,13 @@ Connecting to an IPv4 network from Windows PE on an IPv6 network is not supporte
 
 5.  Link the EAP User Data with the profile. For example:
 
-    ``` syntax
+    ```
     netsh lan set eapuserdata filename="g:\EAP_UserData.xml" alluser=yes Interface="ethernet"
     ```
 
     Sample EAP User Data file:
 
-    ``` syntax
+    ```
     <?xml version="1.0"?>
     <!-- Sample EAP user data: EAP_UserData.xml" -->
     <EapHostUserCredentials 

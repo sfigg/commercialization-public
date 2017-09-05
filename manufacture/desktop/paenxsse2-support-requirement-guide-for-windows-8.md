@@ -117,7 +117,7 @@ On a 64-bit system, the bugcheck shows the same UNSUPPORTED\_PROCESSOR code as o
 
 You can use the [Coreinfo](http://go.microsoft.com/fwlink/p/?linkid=246771) command-line utility to get a system’s processor information and review PAE, NX, and SSE2 entries in the output list. A **\*** character displays next to a supported feature name. A **-** character displays if the feature is not supported. For example:
 
-``` syntax
+```
 Coreinfo v3.04 - Dump information on system CPU and memory topology
 Copyright (C) 2008-2012 Mark Russinovich
 Sysinternals - www.sysinternals.com

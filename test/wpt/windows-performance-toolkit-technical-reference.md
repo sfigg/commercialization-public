@@ -5,10 +5,9 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: f12f69dc-5b82-4a25-b829-a64365fafebc
-ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
-ms.author: joshbax
+ms.author: sapaetsc
 ms.date: 05/05/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -18,7 +17,7 @@ ms.technology: windows-oem
 # Windows Performance Toolkit Technical Reference
 
 
-Included in the [Windows Assessment and Deployment Kit](http://go.microsoft.com/fwlink/p/?LinkId=526740), the Windows Performance Toolkit consists of performance monitoring tools that produce in-depth performance profiles of Windows operating systems and applications. This documentation discusses both Windows Performance Recorder (WPR) and Windows Performance Analyzer (WPA).
+Included in the [Windows Assessment and Deployment Kit](https://developer.microsoft.com/en-us/windows/hardware/windows-assessment-deployment-kit), the Windows Performance Toolkit consists of performance monitoring tools that produce in-depth performance profiles of Windows operating systems and applications. This documentation discusses both Windows Performance Recorder (WPR) and Windows Performance Analyzer (WPA).
 
 ## Windows Performance Xperf Command-Line
 
@@ -31,7 +30,7 @@ The following are the system requirements for running Windows Performance Toolki
 
 -   Windows Performance Analyzer (WPA): Windows 8 or later with the Microsoft .NET Framework 4.5 or later.
 
-You can download the Windows Performance Toolkit by visiting [Windows Insider Program](https://insider.windows.com/).
+You can download the Windows Performance Toolkit by visiting the [Windows Assessment and Deployment Kit](https://developer.microsoft.com/en-us/windows/hardware/windows-assessment-deployment-kit) site.
 
 ## Contents
 

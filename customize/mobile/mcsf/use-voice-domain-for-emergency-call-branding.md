@@ -22,7 +22,7 @@ To meet mobile operator requirements, OEMs can enable the voice domain to decide
 <a href="" id="instructions-"></a>**Instructions:**  
 1.  Create a customization answer file using the contents shown in the following code sample.
 
-    ``` syntax
+    ```
     <?xml version="1.0" encoding="utf-8" ?>  
     <ImageCustomizations xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate"  
                          Name="UseVoiceDomainForEmergencyCallBranding"  
@@ -46,31 +46,10 @@ To meet mobile operator requirements, OEMs can enable the voice domain to decide
 
 3.  Set the `UseVoiceDomainForEmergencyCallBranding` setting to one of the following values:
 
-    <table>
-    <colgroup>
-    <col width="50%" />
-    <col width="50%" />
-    </colgroup>
-    <thead>
-    <tr class="header">
-    <th>Value</th>
-    <th>Description</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td><p>0 or 'False'</p></td>
-    <td><p>The OS inspects the registration state to decide the emergency call branding.</p>
-    <p>This is the default OS behavior.</p></td>
-    </tr>
-    <tr class="even">
-    <td><p>1 or 'True'</p></td>
-    <td><p>The voice domain decides the emergency call branding.</p></td>
-    </tr>
-    </tbody>
-    </table>
-
-     
+    | Value        | Description                                                                                                    |
+    |:-------------|:---------------------------------------------------------------------------------------------------------------|
+    | 0 or 'False' | The OS inspects the registration state to decide the emergency call branding. This is the default OS behavior. |
+    | 1 or 'True'  | The voice domain decides the emergency call branding.                                                          |
 
     If `UseVoiceDomainForEmergencyCallBranding` is set to 1, the phone will not display **Emergency calls only** in the following cases. Instead, it will display **No service**.
 
@@ -86,13 +65,3 @@ To meet mobile operator requirements, OEMs can enable the voice domain to decide
 
 <a href="" id="testing-steps-"></a>**Testing steps:**  
 Work with your mobile operator partner to test this customization on their network.
-
- 
-
- 
-
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_phCustomization\p_phCustomization%5D:%20Use%20voice%20domain%20for%20emergency%20call%20branding%20%20RELEASE:%20%289/7/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
-
-
-
-

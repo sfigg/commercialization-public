@@ -70,7 +70,7 @@ For this lab, we'll use the ProductB, that includes the default app (Bertha), wh
 
     Make sure the file source resolves correctly. ($PROD)Prov.ppkg resolves to C:\\IoT-ADK-AddonKit\\Source-_<arch_>\\Products\\ProductB\\prov\\ProductBProv.ppkg, this should match your provisioning package's file name.
 
-    ``` syntax
+    ```
     <?xml version="1.0" encoding="utf-8"?>
       <Package xmlns="urn:Microsoft.WindowsPhone/PackageSchema.v8.00"
         Owner="$(OEMNAME)"
@@ -96,29 +96,20 @@ For this lab, we'll use the ProductB, that includes the default app (Bertha), wh
 
 2.  Make sure that the package definition file **%OEM\_NAME%.Provisioning.Auto.cab"** and the feature ID: **OEM\_ProvAuto** are referenced in the common feature manifest, C:\\IoT-ADK-AddonKit\\Common\\Packages\\OEMCommonFM.xml:
 
-    ``` syntax
+    ```
     <PackageFile Path="%PKGBLD_DIR%" Name="%OEM_NAME%.Provisioning.Auto.cab">
       <FeatureIDs>
         <FeatureID>OEM_ProvAuto</FeatureID>
         <FeatureID>OEMCommon_ALL</FeatureID>
       </FeatureIDs>
     </PackageFile>    
-    ...
-    <OEMFeatureGroups>
-    <!-- Feature Constraints below -->
-    <!-- This ensures that only one of the Provisioning package is included -->
-      <FeatureGroup Constraint="ZeroOrOne">
-        <FeatureIDs>
-          <FeatureID>OEM_ProvAuto</FeatureID>
-          <FeatureID>OEM_ProvManual</FeatureID>        
-        </FeatureIDs>
     ```
 
 3.  Update the test configuration file C:\\IoT-ADK-AddonKit\\Source-_<arch_>\\Products\\ProductB\\TestOEMInput.xml:
 
     1.  Make sure the common feature manifest: OEMCommonFM.xml is included. (Remove comment marks if necessary.)
 
-        ``` syntax
+        ```
         <AdditionalFMs>
          <!-- Including BSP feature manifest -->
          <AdditionalFM>%BLD_DIR%\MergedFMs\RPi2FM.xml</AdditionalFM>
@@ -132,7 +123,7 @@ For this lab, we'll use the ProductB, that includes the default app (Bertha), wh
 
     2.  Make sure the Feature: OEM_ProvAuto is included.
 
-        ``` syntax
+        ```
         <OEM>
           <!-- Include BSP Features -->
           <Feature>RPI2_DRIVERS</Feature>
@@ -184,7 +175,7 @@ You can connect to your device's portal page to troubleshoot network connections
 
 2.  On your technician PC, open Internet Explorer, and type in the device's IP address with an http:// prefix and :8080 suffix. 
 
-    ``` syntax
+    ```
     http://10.123.45.67:8080
     ```
 
@@ -218,7 +209,7 @@ You can connect to your device's portal page to troubleshoot network connections
 
 3.  When connected, check to see what profiles have been installed:
 
-    ```syntax
+    ```
     netsh wlan show profiles
     ``` 
 

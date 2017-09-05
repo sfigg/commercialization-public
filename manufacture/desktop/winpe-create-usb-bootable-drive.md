@@ -35,7 +35,7 @@ In Windows 10, Version 1703 you can create multiple partitions on a USB drive, a
 
 To prepare your USB drive, you'll create separate FAT32 and NTFS partitions. The following creates two partitions on a USB drive; one 2GB FAT32 partition, and one NTFS partition that uses the rest of the available space on the drive. You want to make sure that your USB drive has enough free space for the 2GB WinPE partiton and to hold large images on the NTFS partition:
 
-   ``` syntax
+   ```
     diskpart
       list disk
       select <disk number>
@@ -66,13 +66,13 @@ In the next steps you'll use `MakeWinPEMedia` to format your USB drive, so you d
 
 2.  Create a working copy of the Windows PE files. Specify either x86, amd64, or arm:
 
-    ``` syntax
+    ```
     copype amd64 C:\WinPE_amd64
     ```
 
 3.  Install Windows PE to the USB flash drive, specifying the WinPE drive letter:
 
-    ``` syntax
+    ```
     MakeWinPEMedia /UFD C:\WinPE_amd64 P:
     ```
 
@@ -107,7 +107,7 @@ In the next steps you'll use `MakeWinPEMedia` to format your USB drive, so you d
 
     -   Clean the USB flash drive, and then reinstall Windows PE. This can help remove extra boot partitions or other boot software.
 
-        ``` syntax
+        ```
         diskpart
           list disk
           select disk <disk number>
@@ -122,7 +122,7 @@ In the next steps you'll use `MakeWinPEMedia` to format your USB drive, so you d
 
     -   Try booting Windows PE from a DVD instead. Create an ISO file that you can burn onto a DVD:
 
-        ``` syntax
+        ```
         MakeWinPEMedia /ISO C:\winpe_amd64 c:\winpe_amd64\winpe.iso
         ```
 
