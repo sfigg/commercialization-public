@@ -20,6 +20,7 @@ You as the OEM use instructions from the firmware manufacturer to create Secure 
 ## Secure boot hardware requirements
 
 The firmware requirements for Secure boot are listed here.
+
 - UEFI 2.3.1 Errata C or higher.
 - The platform exposes an interface that adheres to the profile of UEFI v2.3.1 Section 27.
 - The platform must come provisioned with the correct keys in the UEFI Signature database (db) to allow Windows to boot. It must also support secure authenticated updates to the db and dbx per the spec.
@@ -31,7 +32,7 @@ The platform provides the EFI_HASH_PROTOCOL (per UEFI v2.3.1) for offloading cry
 
 ## Trusted boot
 
-Trusted boot takes over where Secure boot leaves off. The bootloader verifies the digital signature of the Windows 10 kernel before loading it. The Windows 10 kernel, in turn, verifies every other component of the Windows startup process, including the boot drivers, startup files, and ELAM. If a file has been modified, the bootloader detects the problem and refuses to load the corrupted component. Often, Windows 10 can automatically repair the corrupted component, restoring the integrity of Windows and allowing the PC to start normally.
+Trusted boot takes over where Secure boot leaves off. The bootloader verifies the digital signature of the Windows 10 kernel before loading it. The Windows 10 kernel, in turn, verifies every other component of the Windows startup process, including the boot drivers, startup files, and Early Launch Anti-Malware (ELAM). If a file has been modified, the bootloader detects the problem and refuses to load the corrupted component. Often, Windows 10 can automatically repair the corrupted component, restoring the integrity of Windows and allowing the PC to start normally.
 
 
 ## Early Launch Anti-Malware (ELAM)
@@ -78,3 +79,4 @@ You should contact your firmware manufacturer for tools and assistance in creati
 ## Related Topics
 
 - [Secure the Windows 10 boot process](https://docs.microsoft.com/en-us/windows/threat-protection/secure-the-windows-10-boot-process)
+- [UEFI firmware requirements](https://review.docs.microsoft.com/en-us/windows-hardware/design/device-experiences/oem-uefi?branch=dawn-security-toc)
