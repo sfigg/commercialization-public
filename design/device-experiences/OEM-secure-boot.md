@@ -36,7 +36,7 @@ The platform provides the EFI_HASH_PROTOCOL (per UEFI v2.3.1) for offloading cry
 
 Before the PC is deployed, you as the OEM store the Secure Boot databases on the PC. This includes the signature database (db), revoked signatures database (dbx), and Key Enrollment Key database (KEK). These databases are stored on the firmware nonvolatile RAM (NV-RAM) at manufacturing time.
 
-The signature database (db) and the revoked signatures database (dbx) list the signers or image hashes of UEFI applications, operating system loaders (such as the Microsoft Operating System Loader, or Boot Manager), and UEFI drivers that can be loaded on the device. The revoked list contains items that are no longer trusted and may not be loaded.
+The signature database (db) and the revoked signatures database (dbx) list the signers or image hashes of UEFI applications, operating system loaders (such as the Microsoft Operating System Loader, or Boot Manager), and UEFI drivers that can be loaded on the device. The revoked list contains items that are no longer trusted and may not be loaded. If an image hash is in both databases, the revoked signatures database (dbx) takes precedent. 
 
 The Key Enrollment Key database (KEK) is a separate database of signing keys that can be used to update the signature database and revoked signatures database. Microsoft requires a specified key to be included in the KEK database so that in the future Microsoft can add new operating systems to the signature database or add known bad images to the revoked signatures database.
 
