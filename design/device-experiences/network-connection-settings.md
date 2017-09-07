@@ -1,6 +1,6 @@
 ---
 title: Network Connection Settings
-description: "Under Network Connection, users have three choices for configuring when to disconnect from the network to save power"
+description: "Under Network Connection, users have three choices for configuring network connectivity power settings"
 ms.author: sapaetsc
 ms.date: 09/07/2017
 ms.topic: article
@@ -10,7 +10,7 @@ ms.technology: windows-oem
 
 # Network Connection Settings
 
-Under **Network connection**, users have three choices for configuring when to disconnect from the network to save power:
+Under **Network connection**, users have three choices for configuring network connectivity power settings:
 
 - **Never** - Never disconnect from the network when the device is asleep and on battery power.
 
