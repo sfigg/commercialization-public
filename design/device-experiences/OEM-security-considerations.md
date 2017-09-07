@@ -5,7 +5,7 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.author: dawnwood
-ms.date: 09/05/2017
+ms.date: 10/05/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -14,7 +14,7 @@ ms.technology: windows-oem
 
 As an OEM you have an unique opportunity to impact the efficacy of the security measures abailable to your customers. Customers want and need the ability to secure their devices. Windows 10 security features are built on top of security enabled hardware and firmware. That's where you come in. If you want to provide a differentiator for your devices, or to sell in the Enterprise space, you want to provide the latest hardware enhancements, which in turn allow Windows 10 to be configured for safety. 
 
-**IT Professionals:** To learn how to deploy these features in your enterprise, see [Device Security](https://docs.microsoft.com/en-us/windows/device-security/). 
+**IT Professionals:** To learn how to deploy these features in your enterprise, see [Device Security](https://docs.microsoft.com/en-us/windows/device-security/) and [Control the health of Windows 10-based devices](https://docs.microsoft.com/en-us/windows/device-security/protect-high-value-assets-by-controlling-the-health-of-windows-10-based-devices?)
 
 ## Windows 10S
 

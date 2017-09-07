@@ -3,7 +3,7 @@ Description: 'This document lists the basic validation scenarios that are requir
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Validating Windows UEFI Firmware Update Platform Functionality
 ms.author: dawnwood
-ms.date: 09/05/2017
+ms.date: 10/05/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
