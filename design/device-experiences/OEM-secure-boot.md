@@ -25,7 +25,7 @@ In order to support Secure boot, you must provide the following.
 
 - UEFI 2.3.1 Errata C or higher.
 - The platform exposes an interface that adheres to the profile of UEFI v2.3.1 Section 27.
-- The platform must come provisioned with the correct keys in the UEFI Signature database (db) to allow Windows to boot. It must also support secure authenticated updates to the db and dbx per the spec.
+- The platform must come provisioned with the correct keys in the UEFI Signature database (db) to allow Windows to boot. It must also support secure authenticated updates to the databases.
 Storage of secure variables must be isolated from the running operating system such that they cannot be modified without detection.
 - All firmware components are signed using at least RSA-2048 with SHA-256.
 When power is turned on, the system starts executing code in the firmware and uses public key cryptography as per algorithm policy to verify the signatures of all images in the boot sequence, up to and including the Windows Boot Manager.
