@@ -13,13 +13,13 @@ ms.technology: windows-oem
 
 # Secure boot
 
-Secure boot is a security standard developed by members of the PC industry to help make sure that your PC boots using only software that is trusted by the PC manufacturer. When the PC starts, the firmware checks the signature of each piece of boot software, including firmware drivers (Option ROMs), EFI applications, and the operating system. If the signatures are good, the PC boots, and the firmware gives control to the operating system.
+Secure boot is a security standard developed by members of the PC industry to help make sure that your PC boots using only software that is trusted by the PC manufacturer. When the PC starts, the firmware checks the signature of each piece of boot software, including UEFI firmware drivers (also known as Option ROMs), EFI applications, and the operating system. If the signatures are good, the PC boots, and the firmware gives control to the operating system.
 
-You as the OEM use instructions from the firmware manufacturer to create Secure boot keys and to store them in the PC firmware. When you add UEFI drivers (also known as Option ROMs), you'll also need to make sure these are signed and included in the Secure Boot database. When you add UEFI drivers (also known as Option ROMs), you'll also need to make sure these are signed and included in the Secure Boot database. For info, see the _UEFI Validation Option ROM Validation Guidance
+You as the OEM can use instructions from the firmware manufacturer to create Secure boot keys and to store them in the PC firmware. When you add UEFI drivers, you'll also need to make sure these are signed and included in the Secure Boot database. 
 
 ## Secure boot hardware requirements
 
-The firmware requirements for Secure boot are listed here.
+In order to support Secure boot, you must provide the following. 
 
 - UEFI 2.3.1 Errata C or higher.
 - The platform exposes an interface that adheres to the profile of UEFI v2.3.1 Section 27.
@@ -46,19 +46,20 @@ If a PC in your organization does become infected with a rootkit, you need to kn
 As a result, PCs infected with rootkits appear to be healthy, even with anti-malware running. Infected PCs continue to connect to the enterprise network, giving the rootkit access to vast amounts of confidential data and potentially allowing the rootkit to spread across the internal network.
 Working with the TPM and non-Microsoft software, Measured Boot in Windows 10 allows a trusted server on the network to verify the integrity of the Windows startup process. 
 
-Measured Boot uses the following process:
-1. The PC’s UEFI firmware stores in the TPM a hash of the firmware, bootloader, boot drivers, and everything that will be loaded before the anti-malware app.
+Measured Boot uses the following process, and you must provide the requirements inline in these steps. 
+
+1. The PC’s UEFI firmware stores a hash in the TPM. The hash table contains the list of the firmware, bootloader, boot drivers, and everything that will be loaded before the anti-malware app.
 2. At the end of the startup process, Windows starts the non-Microsoft remote attestation client. The trusted attestation server sends the client a unique key.
-3. The TPM uses the unique key to digitally sign the log recorded by the UEFI.
+3. The TPM uses the unique key to digitally sign the log recorded by UEFI.
 4. The client sends the log to the server, possibly with other security information.
-5. Depending on the implementation and configuration, the server can now determine whether the client is healthy and grant the client access to either a limited quarantine network or to the full network.
+5. Depending on the implementation and configuration, the server can determine whether the client is healthy and grant the client access to either a limited quarantine network or to the full network.
 
 
 ## Signature Databases and Keys
 
-Before the PC is deployed, the OEM stores the Secure Boot databases onto the PC. This includes the signature database (db), revoked signatures database (dbx), and Key Enrollment Key database (KEK) onto the PC. These databases are stored on the firmware nonvolatile RAM (NV-RAM) at manufacturing time.
+Before the PC is deployed, you as the OEM store the Secure Boot databases on the PC. This includes the signature database (db), revoked signatures database (dbx), and Key Enrollment Key database (KEK). These databases are stored on the firmware nonvolatile RAM (NV-RAM) at manufacturing time.
 
-The signature database (db) and the revoked signatures database (dbx) list the signers or image hashes of UEFI applications, operating system loaders (such as the Microsoft Operating System Loader, or Boot Manager), and UEFI drivers that can be loaded on the individual PC, and the revoked images for items that are no longer trusted and may not be loaded.
+The signature database (db) and the revoked signatures database (dbx) list the signers or image hashes of UEFI applications, operating system loaders (such as the Microsoft Operating System Loader, or Boot Manager), and UEFI drivers that can be loaded on the device. The revoked list contains items that are no longer trusted and may not be loaded.
 
 The Key Enrollment Key database (KEK) is a separate database of signing keys that can be used to update the signature database and revoked signatures database. Microsoft requires a specified key to be included in the KEK database so that in the future Microsoft can add new operating systems to the signature database or add known bad images to the revoked signatures database.
 

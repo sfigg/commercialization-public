@@ -45,7 +45,7 @@ Trusted Platform Module (TPM) technology is designed to provide hardware-based, 
 
 ## Secure Boot
 
-Secure Boot is a security standard developed by members of the PC industry to help make sure that your PC boots using only software that is trusted by the PC manufacturer. When the PC starts, the firmware checks the signature of each piece of boot software, including firmware drivers (Option ROMs), EFI applications, and the operating system. If the signatures are good, the PC boots, and the firmware gives control to the operating system.
+Secure Boot is a security standard developed by members of the PC industry to help make sure that your PC boots using only software that is trusted by the PC manufacturer. When the PC starts, the firmware checks the signature of each piece of boot software, including firmware drivers (Option ROMs), EFI applications, and the operating system. If the signatures are valid, the PC boots, and the firmware gives control to the operating system.
 
 To learn more about Secure Boot requirements for OEMs, see [Secure Boot](OEM-secure-boot.md).
 
