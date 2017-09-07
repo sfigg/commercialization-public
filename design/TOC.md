@@ -39,6 +39,7 @@
 #### [Modern standby user experiences](device-experiences/modern-standby-user-experiences.md)
 ##### [Turning off](device-experiences/turning-off.md)
 ##### [Turning on (wake)](device-experiences/turning-on--wake-.md)
+##### [Network Connection Settings](device-experiences/network-connection-settings.md)
 ##### [Simple app and tile updates](device-experiences/simple-app-and-tile-updates.md)
 ##### [Audio notifications](device-experiences/audio-notifications.md)
 ##### [Quiet Hours](device-experiences/quiet-hours.md)
