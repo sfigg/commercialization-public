@@ -18,7 +18,11 @@ Traditionally, TPMs have been discrete chips soldered to a computer’s motherbo
 
 TPMs are passive: they receive commands and return responses. To realize the full benefit of a TPM, you must carefully integrate system hardware and firmware with the TPM to send it commands and react to its responses. TPMs were originally designed to provide security and privacy benefits to a platform’s owner and users, but newer versions can provide security and privacy benefits to the system hardware itself. Before it can be used for advanced scenarios, however, a TPM must be provisioned. 
 
-Starting with Windows 10, the operating system automatically initializes and takes ownership of the TPM. That means that IT professionals should not have to configure or monitor the system. You as the Original Equipment Manufacturer(OEM) must provide the TPM 2.0 chip with PRC[7] support in your devices in order for this protection to be enabled for customers. In addition, if the user reinstalls the operating system, he or she may need to clear the TPM before reinstalling so that Windows can take full advantage of the TPM. For more information about the specific requirements that must be met, see [System.Fundamentals.TPM20](https://docs.microsoft.com/en-us/windows-hardware/design/compatibility/1703/systems#system.fundamentals.tpm20)
+Starting with Windows 10, the operating system automatically initializes and takes ownership of the TPM. That means that IT professionals should not have to configure or monitor the system. You as the Original Equipment Manufacturer(OEM) must provide the TPM 2.0 chip with PRC[7] support in your devices in order for this protection to be enabled for customers. 
+
+In addition, if the user reinstalls the operating system, he or she may need to clear the TPM before reinstalling so that Windows can take full advantage of the TPM. For more information, see [Clear all the keys from the TPM](https://docs.microsoft.com/en-us/windows/device-security/tpm/initialize-and-configure-ownership-of-the-tpm#clear-all-the-keys-from-the-tpm).
+
+For more information about the specific requirements that must be met, see [System.Fundamentals.TPM20](https://docs.microsoft.com/en-us/windows-hardware/design/compatibility/1703/systems#system.fundamentals.tpm20). 
 
 **Note:** If you are an IT Professional and want to understand how TPM works in your enterprise, see [Trusted Platform Module](https://docs.microsoft.com/en-us/windows/device-security/tpm/trusted-platform-module-top-node)
 
