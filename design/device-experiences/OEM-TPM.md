@@ -20,11 +20,11 @@ TPMs are passive: they receive commands and return responses. To realize the ful
 
 Starting with Windows 10, the operating system automatically initializes and takes ownership of the TPM. That means that IT professionals should not have to configure or monitor the system. You as the Original Equipment Manufacturer(OEM) must provide the TPM 2.0 chip with PRC[7] support in your devices in order for this protection to be enabled for customers. 
 
-In addition, if the user reinstalls the operating system, he or she may need to clear the TPM before reinstalling so that Windows can take full advantage of the TPM. For more information, see [Clear all the keys from the TPM](https://docs.microsoft.com/en-us/windows/device-security/tpm/initialize-and-configure-ownership-of-the-tpm#clear-all-the-keys-from-the-tpm).
-
 For more information about the specific requirements that must be met, see [System.Fundamentals.TPM20](https://docs.microsoft.com/en-us/windows-hardware/design/compatibility/1703/systems#system.fundamentals.tpm20). 
 
-**Note:** If you are an IT Professional and want to understand how TPM works in your enterprise, see [Trusted Platform Module](https://docs.microsoft.com/en-us/windows/device-security/tpm/trusted-platform-module-top-node)
+Since July 28, 2016, all new device models, lines or series (or if you are updating the hardware configuration of a existing model, line or series with a major update, such as CPU, graphic cards) must implement and enable by default TPM 2.0 (details in section 3.7 of the [Minimum hardware requirements page](https://msdn.microsoft.com/library/windows/hardware/dn91508.aspx)). The requirement to enable TPM 2.0 only applies to the manufacturing of new devices. 
+
+**IT Professionals** To understand how TPM works in your enterprise, see [Trusted Platform Module](https://docs.microsoft.com/en-us/windows/device-security/tpm/trusted-platform-module-top-node)
 
 ## TPM 2.0 support required for Windows 10 features
 The following table defines which Windows features require TPM support.
