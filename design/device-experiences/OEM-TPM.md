@@ -36,7 +36,7 @@ The following table defines which Windows features require TPM support.
 | Passport: Domain AADJ Join | Required |
 | Passport: MSA or Local Account | Required |
 | Platform key storage provider | Required |
-| UEFI Secure Boot | REcommended |
+| UEFI Secure Boot | Recommended |
 | Virtual smart card | Required |
 | Windows Defender Application Guard | |
 | Windows Defender Credential Guard | Required |
