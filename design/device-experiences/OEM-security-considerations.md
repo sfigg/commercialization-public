@@ -71,6 +71,8 @@ It is strongly recommended that valuable credentials, such as the sign-in creden
 
 When Windows Defender Credential Guard is enabled, Kerberos does not allow unconstrained Kerberos delegation or DES encryption, not only for signed-in credentials, but also prompted or saved credentials.
 
+**Note:**  Intel TXT fully works when enabled and operates in parallel with Windows Defender Credential Guard.
+
 To learn more about hardware requirements for Windows Defender Credential Guard, see [Windows Defender Credential Guard hardware requirements](OEM-credential-guard.md) 
 
 **IT Professionals:** To learn how to configure and deploy Windows Defender Credential Guard in your enterprise, see [Protect derived domain credentials with Windows Defender Credential Guard](https://docs.microsoft.com/en-us/windows/access-protection/credential-guard/credential-guard).
@@ -84,6 +86,8 @@ If the app isn’t trusted it can’t run, period.
 With hardware that meets basic requirements, it also means that even if an attacker manages to get control of the Windows kernel, he or she will be much less likely to be able to run malicious executable code. If you are an OEM building secure systems, you must provide the hardware to enable these features.
 
 Starting in Windows 10, 1703, the Windows Defender Device Guard features have been grouped into two new features: **Windows Defender Exploit Guard** and **Windows Defender Application control**. When these are both enabled, Windows Defender Device Guard is enabled. For more information about Windows Defender Device Guard hardware requirements, see [Windows Defender Device Guard hardware requirements](Windows Defender Device Guard hardware requirements.md).
+
+**Note:**  Intel TXT fully works when enabled and operates in parallel with Windows Defender Device Guard.
 
 **IT Professionals:** To learn how to deploy Windows Defender Device in your enterprise, see [Requirements and deployment planning guidelines for Device Guard](http://go.microsoft.com/fwlink/?LinkId=822877).
 

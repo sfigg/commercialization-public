@@ -26,7 +26,6 @@ Starting with Windows 10, the operating system automatically initializes and tak
 The following table defines which Windows features require TPM support.
 | Feature | TPM 2.0 Required or Recommended |
 |---------|-----------------------------|
-
 | Bitlocker device encryption | Required | 
 | InstantGo devices | Required | 
 | Platform key storage provider | Required |
