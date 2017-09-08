@@ -113,15 +113,16 @@
 ##### [Sample report descriptors](component-guidelines/radial-controller-sample-report-descriptors.md)
 
 ### [Security considerations for OEMs](device-experiences/OEM-security-considerations.md)
+#### [BitLocker device encryption hardware requirements](device-experiences/OEM-device-encryption.md)
+#### [Secure boot](device-experiences/OEM-secure-boot.md)
+#### [Trusted Platform Module 2.0](device-experiences/OEM-TPM.md)
 #### [UEFI firmware requirements](device-experiences/OEM-UEFI.md)
 #### [Validating Windows UEFI firmware update](device-experiences/OEM-validate-UEFI-update.md)
 #### [Virtualization-based security (VBS)](device-experiences/OEM-VBS.md)
-#### [Trusted Platform Module 2.0](device-experiences/OEM-TPM.md)
-#### [Secure boot](device-experiences/OEM-secure-boot.md)
-#### [BitLocker device encryption hardware requirements](device-experiences/OEM-device-encryption.md)
+#### [Application Guard hardware requirements](device-experiences/OEM-app-guard.md)
 #### [Credential Guard hardware requirements](device-experiences/OEM-credential-guard.md)
 #### [Device Guard hardware requirments](device-experiences/OEM-device-guard.md)
-#### [Application Guard hardware requirements](device-experiences/OEM-app-guard.md)
+
 
 
 ### [Thermal management in Windows](device-experiences/thermal-management-in-windows.md)

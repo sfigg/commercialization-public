@@ -60,5 +60,4 @@ To determine if a device is able to run Device Guard and Credential Guard, downl
 ## Related topics
 - [Driver Compatibility with Device Guard on Windows 10](https://blogs.msdn.microsoft.com/windows_hardware_certification/2015/05/22/driver-compatibility-with-device-guard-in-windows-10)
 - [Managing Managing Windows 10 Device Guard with Configuration Manager](https://blogs.technet.microsoft.com/enterprisemobility/2015/10/30/managing-windows-10-device-guard-with-configuration-manager/)
-
-
+-[Device Guard signing](https://docs.microsoft.com/en-us/microsoft-store/device-guard-signing-portal)

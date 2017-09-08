@@ -16,32 +16,15 @@ As an OEM you have an unique opportunity to impact the efficacy of the security 
 
 **IT Professionals:** To learn how to deploy these features in your enterprise, see [Device Security](https://docs.microsoft.com/en-us/windows/device-security/) and [Control the health of Windows 10-based devices](https://docs.microsoft.com/en-us/windows/device-security/protect-high-value-assets-by-controlling-the-health-of-windows-10-based-devices?).
 
-## Windows 10S
+## BitLocker device encryption
 
-Windows 10 S is a specific configuration of Windows 10 Pro that offers a familiar, productive Windows experience that’s streamlined for security and performance. By exclusively using apps in the Windows Store and ensuring that you browse safely with Microsoft Edge, Windows 10 S keeps you running fast and secure day in and day out. The same technology that makes Windows 10 S secure also creates some differences when creating software images for Windows 10 devices.
+BitLocker device encryption is a set of features that you as an Original Equipment Manufacturer (OEM) enable by providing the right set of hardware in the devices you sell. Without the proper hardware configuration, device encryption is not enabled. With the right hardware configurations, Windows 10 automatically encrypts a device.
 
-For more information about Windows 10S, see [Windows 10S manufacturing overview](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/windows-10-s-overview).
-
-## Unified Extensible Firmware Interface (UEFI) requirements
-
-UEFI is a replacement for the older BIOS firmware interface. When the devices starts, the firmware interface controls the booting process of the PC, and then passes control to Windows or another operating system. UEFI enables security features such as Secure Boot and factory encrypted drives that help prevent untrusted code from running before the operating system is loaded. As of Windows 10, version 1703, Microsoft requires UEFI Specification version 2.3.1c. To learn more aobut the OEM requirements for UEFI, see [UEFI firmware requirements](OEM-UEFI.md)
-
-To learn more about what you need to do in order to support UEFI drivers, see [UEFI in Windows](https://docs.microsoft.com/en-us/windows-hardware/drivers/bringup/uefi-in-windows).
+For more information on what hardware you need to provide to enable device encryption, see [BitLocker device encryption hardware requirements](OEM-device-encryption.md)
 
 ## Hypervisor-protected code integrity (HVCI)
 
 HVCI is a system mitigation that protects kernel memory and the kernel mode code integrity process. It blocks malware that attempts to exploit kernel memory vulnerabilities (e.g. buffer overflows etc) because kernel memory pages are never writable and executable.
-
-## Virtualization-based Security (VBS)
-
-Hardware-based security features, also called virtualization-based security or VBS, provides isolation of secure kernel from normal operating system. Vulnerabilities and Day zero attacks in the operating system cannot be exploited because of this isolation. For more information about VBS hardware requirements, see [Virtualization Based Security (VBS) hardware requirements](OEM-VBS.md)
-
-
-## Trusted Plaform Module (TPM) 2.0
-
-Trusted Platform Module (TPM) technology is designed to provide hardware-based, security-related functions. A TPM chip is a secure crypto-processor that helps you with actions such as generating, storing, and limiting the use of cryptographic keys. The chip includes multiple physical security mechanisms to make it tamper resistant, and malicious software is unable to tamper with the security functions of the TPM. For more information, see [Trusted Plaform Module (TPM) 2.0 hardware requirements](OEM-TPM.md).
-
-**IT Professionals:** To understand how TPM works in your enterprise, see [Trusted Platform Module](https://docs.microsoft.com/en-us/windows/device-security/tpm/trusted-platform-module-top-node)
 
 ## Secure Boot
 
@@ -49,12 +32,33 @@ Secure Boot is a security standard developed by members of the PC industry to he
 
 To learn more about Secure Boot requirements for OEMs, see [Secure Boot](OEM-secure-boot.md).
 
-## BitLocker device encryption
+## Trusted Plaform Module (TPM) 2.0
 
-BitLocker device encryption is a set of features that you as an Original Equipment Manufacturer (OEM) enable by providing the right set of hardware in the devices you sell. Without the proper hardware configuration, device encryption is not enabled. With the right hardware configurations, Windows 10 automatically encrypts a device.
+Trusted Platform Module (TPM) technology is designed to provide hardware-based, security-related functions. A TPM chip is a secure crypto-processor that helps you with actions such as generating, storing, and limiting the use of cryptographic keys. The chip includes multiple physical security mechanisms to make it tamper resistant, and malicious software is unable to tamper with the security functions of the TPM. For more information, see [Trusted Plaform Module (TPM) 2.0 hardware requirements](OEM-TPM.md).
 
-For more information on what hardware you need to provide to enable device encryption, see [BitLocker device encryption hardware requirements](OEM-device-encryption.md)
+**IT Professionals:** To understand how TPM works in your enterprise, see [Trusted Platform Module](https://docs.microsoft.com/en-us/windows/device-security/tpm/trusted-platform-module-top-node)
 
+## Unified Extensible Firmware Interface (UEFI) requirements
+
+UEFI is a replacement for the older BIOS firmware interface. When the devices starts, the firmware interface controls the booting process of the PC, and then passes control to Windows or another operating system. UEFI enables security features such as Secure Boot and factory encrypted drives that help prevent untrusted code from running before the operating system is loaded. As of Windows 10, version 1703, Microsoft requires UEFI Specification version 2.3.1c. To learn more aobut the OEM requirements for UEFI, see [UEFI firmware requirements](OEM-UEFI.md)
+
+To learn more about what you need to do in order to support UEFI drivers, see [UEFI in Windows](https://docs.microsoft.com/en-us/windows-hardware/drivers/bringup/uefi-in-windows).
+
+## Virtualization-based Security (VBS)
+
+Hardware-based security features, also called virtualization-based security or VBS, provides isolation of secure kernel from normal operating system. Vulnerabilities and Day zero attacks in the operating system cannot be exploited because of this isolation. For more information about VBS hardware requirements, see [Virtualization Based Security (VBS) hardware requirements](OEM-VBS.md)
+
+## Windows 10S
+
+Windows 10 S is a specific configuration of Windows 10 Pro that offers a familiar, productive Windows experience that’s streamlined for security and performance. By exclusively using apps in the Windows Store and ensuring that you browse safely with Microsoft Edge, Windows 10 S keeps you running fast and secure day in and day out. The same technology that makes Windows 10 S secure also creates some differences when creating software images for Windows 10 devices.
+
+For more information about Windows 10S, see [Windows 10S manufacturing overview](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/windows-10-s-overview).
+
+## Windows Defender Application Guard
+
+Application Guard helps to isolate enterprise-defined untrusted sites, protecting an enterprise while its employees browse the Internet. 
+
+If you are selling devices to enterprise customers, you want to provide hardware that supports the security features that enterprises need. To learn more about hardware requirements for Windows Defender Application Guard, see [Windows Defender Application Guard hardware requirements](OEM-app-guard.md).
 
 
 ## Windows Defender Credential Guard
@@ -82,12 +86,6 @@ With hardware that meets basic requirements, it also means that even if an attac
 Starting in Windows 10, 1703, the Windows Defender Device Guard features have been grouped into two new features: **Windows Defender Exploit Guard** and **Windows Defender Application control**. When these are both enabled, Windows Defender Device Guard is enabled. For more information about Windows Defender Device Guard hardware requirements, see [Windows Defender Device Guard hardware requirements](Windows Defender Device Guard hardware requirements.md).
 
 **IT Professionals:** To learn how to deploy Windows Defender Device in your enterprise, see [Requirements and deployment planning guidelines for Device Guard](http://go.microsoft.com/fwlink/?LinkId=822877).
-
-## Windows Defender Application Guard
-
-Application Guard helps to isolate enterprise-defined untrusted sites, protecting an enterprise while its employees browse the Internet. 
-
-If you are selling devices to enterprise customers, you want to provide hardware that supports the security features that enterprises need. To learn more about hardware requirements for Windows Defender Application Guard, see [Windows Defender Application Guard hardware requirements](OEM-app-guard.md).
 
 ## Windows Hello
 
