@@ -31,13 +31,18 @@ The following table defines which Windows features require TPM support.
 | Feature | TPM 2.0 Required or Recommended |
 |---------|-----------------------------|
 | Bitlocker device encryption | Required | 
+| Certificate Storage | Required |
 | InstantGo devices | Required | 
+| Passport: Domain AADJ Join | Required |
+| Passport: MSA or Local Account | Required |
 | Platform key storage provider | Required |
+| UEFI Secure Boot | REcommended |
 | Virtual smart card | Required |
 | Windows Defender Application Guard | |
 | Windows Defender Credential Guard | Required |
 | Windows Defender Device Guard | Required | 
 | Windows Defender Exploit Guard | Required |
+| Windows Hello and Windows Hello for Business | Recommended |
 
 
 ### Related topics
