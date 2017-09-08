@@ -24,15 +24,16 @@ Starting with Windows 10, the operating system automatically initializes and tak
 
 ## TPM 2.0 support required for Windows 10 features
 The following table defines which Windows features require TPM support.
-| Feature | TPM 2.0 Required or Recommended | Details |
-|---------|-----------------------------|---------|
-| Measured Boot | Required | Measured boot also requires UEFI Secure boot. |
-| Bitlocker device encryption | Required | Bitlocker device encryption also required UEFI Secure boot. |
-| InstantGo devices | Required |  |
-| Device Guard | Required |  |
-| Credential Guard | Required | |
-| Platform key storage provider | Required |  |
-| Virtual smart card | Required |  |
+| Feature | TPM 2.0 Required or Recommended |
+|---------|-----------------------------|
+
+| Bitlocker device encryption | Required | 
+| InstantGo devices | Required | 
+| Platform key storage provider | Required |
+| Virtual smart card | Required |
+| Windows Defender Credential Guard | Required |
+| Windows Defender Device Guard | Required | 
+
 
 ### Related topics
 - [Trusted Platform Module Overview](https://docs.microsoft.com/en-us/windows/device-security/tpm/trusted-platform-module-overview)
