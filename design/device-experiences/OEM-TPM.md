@@ -33,7 +33,10 @@ The following table defines which Windows features require TPM support.
 | Bitlocker device encryption | Required | 
 | InstantGo devices | Required | 
 | Platform key storage provider | Required |
+| UEFI Secure Boot | |
+| Virtualization-based security (VBS) | |
 | Virtual smart card | Required |
+| Windows Defender Application Guard | |
 | Windows Defender Credential Guard | Required |
 | Windows Defender Device Guard | Required | 
 
