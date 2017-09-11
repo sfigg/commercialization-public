@@ -14,13 +14,16 @@ ms.technology: windows-oem
 # WinPE Network Drivers: Initializing and adding drivers
 
 
-The Wpeutil command initializes the Windows PE (WinPE) network drivers as soon as WinPE boots. The default WinPE image includes support for many popular network adapters, and supports many of the same networking commands as in Windows.Windows PE includes a basic set of network drivers for many popular network adapters, and supports many of the same networking commands as in Windows.
+The Wpeutil command initializes the Windows PE (WinPE) network drivers as soon as WinPE boots. The default WinPE image includes support for many popular network adapters, and supports many of the same networking commands as in Windows. Windows PE includes a basic set of network drivers for many popular network adapters, and supports many of the same networking commands as in Windows.
 
-The supported methods of connecting to file servers are TCP/IP and NetBIOS over TCP/IP. Windows PE doesn't support other methods, like the Internetwork Packet Exchange/Sequenced Packet Exchange (IPX/SPX) network protocol.
+Networking in WinPE has the following limitations:
 
-Windows PE supports Distributed File System (DFS) name resolution for stand-alone namespaces only. It doesn't support domain namespaces. Stand-alone DFS namespaces allow for a DFS namespace that exists only on the local PC and therefore doesn't use Active Directory® Domain Services (AD DS).
+- The supported methods of connecting to file servers are TCP/IP and NetBIOS over TCP/IP. Other methods, like the Internetwork Packet Exchange/Sequenced Packet Exchange (IPX/SPX) network protocol are not supported.
+- Distributed File System (DFS) name resolution is supported for stand-alone namespaces only. It doesn't support domain namespaces. Stand-alone DFS namespaces allow for a DFS namespace that exists only on the local PC and therefore doesn't use Active Directory Domain Services (AD DS).
+- General wireless networking functionality is not supported in WinPE.
+- Connecting to an IPv4 network from Windows PE on an IPv6 network is not supported.
+- SMB1 protocol is disabled by default. You can enable SMB1 support by running `dism.exe /enable-feature /featurename=SMB1Protocol-client`.
 
-Connecting to an IPv4 network from Windows PE on an IPv6 network is not supported.
 
 **To connect to another PC or shared folder on a network**
 
