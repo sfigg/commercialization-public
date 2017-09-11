@@ -5,7 +5,7 @@ ms.assetid: a6382d83-5748-4b08-9d9a-46ff576bac54
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'DISM Image Management Command-Line Options'
 ms.author: themar
-ms.date: 09/02/2017
+ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -54,7 +54,7 @@ Dism /Append-Image /ImageFile:install.wim /CaptureDir:D:\ /Name:Drive-D
 
 ## /Apply-FFU
 
-For FFU, this command applies a Full Flash Utility (FFU) or split FFU (SFU) to a specified physical drive.
+ For FFU, this command applies a Full Flash Utility (FFU) or split FFU (SFU) to a specified physical drive.
 
 Syntax:
 
@@ -132,6 +132,31 @@ DISM.exe /Apply-image /ImageFile:flash.ffu /ApplyDrive:\\.\PhysicalDrive0 /index
 DISM.exe /Apply-image /ImageFile:flash.sfu /SFUFile:flash*.sfu /ApplyDrive:\\.\PhysicalDrive0 /index:1
 ```
 
+## /Capture-FFU
+
+Captures an image of a physical drive's partitions to a new .ffu file.
+
+You can capture the image as a full flash utility image (.ffu) file or a set of split ffu (.sfu) files; 
+
+Syntax:
+
+```
+Dism /Capture-Ffu /ImageFile:<path_to_image_file> /CaptureDrive:<physical_drive_path> /Name:<image_name> [/Description:<image_description>] [/PlatformIds:<platform_ids>] [/Compress:{default|none}] 
+```
+
+|   Parameter     |   Description     |
+|-----------------|-------------------|
+| /CaptureDrive | The physical drive to be captured. You can [use diskpart to get drive number information](deploy-windows-using-full-flash-update--ffu,md#deploy-windows-from-winpe-using-an-ffu). Uses the format `\\.\PhysicalDriveX`, where *X* is the disk number that diskpart provides. |
+| /PlatformIds | Specifies one or more platform ids (separated with semicolon) to be added to the image. If not specified, platform id will be '*'. |
+| /Compress | Specifies the type of compression used for when capturing. |
+
+
+Example:
+
+```
+DISM.exe /Capture-Ffu /ImageFile:install.ffu /CaptureDrive:\\PhysicalDrive0 /Name:Drive0 /PlatformIds:Qualcomm.MSM8994.P6211;Microsoft.MSM8994.P6211 /Compress:default
+```
+
 ## /Capture-CustomImage
 
 Captures the incremental file changes based on the specific install.wim file to a new file, custom.wim for a WIMBoot image. You can’t capture an empty directory. The captured files are converted to pointer files. The custom.wim is placed in the same folder next to the install.wim.
@@ -161,6 +186,7 @@ Example:
 ```
 Dism /Capture-CustomImage /CaptureDir:D:\
 ```
+
 
 ## /Capture-Image
 
@@ -407,7 +433,7 @@ Example:
 Dism /Remount-Image /MountDir:C:\test\offline
 ```
 
-## /Split-Ffu
+## /Split-FFU
 
 For FFU, this command splits an existing full-flash update (.ffu) file into multiple read-only split .sfu files.
 
