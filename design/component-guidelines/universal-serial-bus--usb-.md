@@ -121,9 +121,9 @@ For improved power efficiency and performance, it is recommended USB Host Contro
 ### Videos
 
 >[!VIDEO https://channel9.msdn.com/Events/WinHEC/2015/WHT200/player]
->[!VIDEO https://channel9.msdn.com/events/Build/2015/3-81/03/player]
->[!VIDEO http://channel9.msdn.com/events/BUILD/BUILD2011/HW-773T]
->[!VIDEO http://channel9.msdn.com/events/BUILD/BUILD2011/APP-408T]
+>[!VIDEO https://channel9.msdn.com/events/Build/2015/3-81/player]
+>[!VIDEO http://channel9.msdn.com/events/BUILD/BUILD2011/HW-773T/player]
+>[!VIDEO http://channel9.msdn.com/events/BUILD/BUILD2011/APP-408T/03/player]
 >[!VIDEO http://channel9.msdn.com/events/BUILD/BUILD2011/HW-245T]
 
 
