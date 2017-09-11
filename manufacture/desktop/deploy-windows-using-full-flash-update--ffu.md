@@ -13,11 +13,14 @@ ms.technology: windows-oem
 
 # Windows Full Flash Update (FFU) images
 
-You can deploy Windows faster on the factory floor by using the Full Flash Update (FFU) image format. FFU images allow you to apply an image for a phyisical drive, including Windows and system partition information all at once directly to a different drive or an SD card.
+You can deploy Windows faster on the factory floor by using the Full Flash Update (FFU) image format. FFU images allow you to apply an image of a phyisical drive, including Windows and system partition information all at once directly to a different drive or an SD card.
 
 Unlike the file-based WIM format, FFU is a sector-based file container that stores one or more disk images. Sector-based imaging mean that FFUs take less time to deploy, but have larger files sizes than WIMs. See [WIM vs. VHD vs. FFU: comparing image file formats](wim-vs-ffu-image-file-formats.md) for information about the differences between image formats.
 
-Starting with Windows 10, Version 1709, DISM has the ability to capture, deploy, and service FFUs.
+Starting with Windows 10, Version 1709, DISM has the ability to capture, deploy, and service FFUs, with the following limitations:
+- FFU captures of encrypted disks are not supported
+- Captures of disks that have VSS enabled are not supported
+
 
 ## What you need to work with FFUs in Windows
 
@@ -55,7 +58,7 @@ To capture and deploy FFUs using the instructions below, you'll also need:
     DISKPART>
     ```
 
-3. Use DISM to capture an image of all the partitions on the physical drive. For a physical drive *X:*, the string used with `/apply-drive` will look like this: `\\.\PhysicalDrive*X*`, where *X* is the disk number that diskpart provides, such as `/ApplyDrive:\\.\PhysicalDrive0`.
+3. Use DISM to capture an image of all the partitions on the physical drive. For a physical drive *X:*, the string used with `/apply-drive` will look like this: `\\.\PhysicalDriveX`, where *X* is the disk number that diskpart provides, such as `/ApplyDrive:\\.\PhysicalDrive0`.
     For more information about PhysicalDrive*X*, see [CreateFile function](https://msdn.microsoft.com/library/windows/desktop/aa363858.aspx). 
     
     To see command line options for capturing FFUs, run `dism /capture-ffu /?` or see [DISM Image Management Command-Line Options](dism-image-management-command-line-options-s14.md).
@@ -66,7 +69,7 @@ To capture and deploy FFUs using the instructions below, you'll also need:
     DISM.exe /capture-ffu /imagefile=e:\WinOEM.ffu /capturedrive=\\.\PhysicalDrive0 /name=disk0
     ```
 
-### Deploy Windows from WinPE using an FFU
+## Deploy Windows from WinPE using an FFU
 
 1.  Boot your destination device to WinPE.
 
@@ -99,11 +102,11 @@ To capture and deploy FFUs using the instructions below, you'll also need:
 
     To see the commands available with /apply-ffu, run `dism /apply-ffu /?` or see [DISM Image Management Command-Line Options](dism-image-management-command-line-options-s14.md).
 
-### Mount an FFU for servicing
+## Mount an FFU for servicing
 
 You can use DISM to mount and FFU images for servicing. Like with other image fomats, you can mount and modify an FFU before commiting changes and unmounting. Mounting an FFU for servicing uses the same `/mount-image` command that you use for mounting other image types. When mounting an FFU, you'll always use `index:1` when mounting.
 
-Unlike other mounted image formats, FFU images get mounted as virtual hard disks. Files appear in the specified mount folder, but since FFUs can contain more than one image but only have one index, DISM maps only the Windows partition from the mounted FFU to the mount folder.
+Unlike WIM images, FFU images get mounted as virtual hard disks. Files appear in the specified mount folder, but since FFUs can contain more than one image but only have one index, DISM maps only the Windows partition from the mounted FFU to the mount folder.
 
 To mount an FFU
 
