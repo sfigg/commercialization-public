@@ -26,6 +26,8 @@ Firmware that meets the UEFI 2.3.1 specifications provides the following benefit
 - Support for multicast deployment, which allows PC manufacturers to broadcast a PC image that can be received by multiple PCs without overwhelming the network or image server.
 - Support for UEFI firmware drivers, applications, and option ROMs.
 
+
+
 ## Media installation considerations
 - Windows installation media supports boot on both BIOS and UEFI platforms by taking advantage of multi-entry El Torito boot catalog support.
 - The default El Torito boot entry is a BIOS entry that includes the 80x86 Platform ID, which is defined as “0x00” in hexadecimal.
@@ -34,13 +36,12 @@ Firmware that meets the UEFI 2.3.1 specifications provides the following benefit
 - The Windows Assessment and Deployment Kit (Windows ADK) includes an updated version of Oscdimg.exe that supports the creation of a multi-entry El Torito boot catalog. [Download the ADK](https://developer.microsoft.com/en-us/windows/hardware/windows-assessment-deployment-kit).
 
 ## Boot requirements
+<p>As the OEM, you must provide the ability, in BIOS, to add ISV, OEM, or Enterprise certificates to the Secure Boot database at manufacturing time. The Microsoft UEFI CA must be removed from the same Secure Boot database. 3rd-party UEFI modules are permitted but should leverage ISV-provided certificates or OEM certificate for the specific UEFI software.</p> <ul><li>Enterprises can choose to allow proprietary EFI drivers/applications to run. </li> <li>Removing Microsoft UEFI CA from the Secure Boot database provides enterprises with full control over software that runs before the operating system boots. </li></ul> <p>To support this, you must allow BIOS password or stronger authentication to ensure that only the authenticated Platform BIOS administrator can change BIOS settings. You must also provide a protected BIOS option to configure a list of permitted boot devices and the boot device order, which overrides the BOOTORDER modification made by the OS to boot only from an internal hard drive, for example.</p> <p>BIOS options related to security and boot options must be secured to prevent other operating systems from starting and to prevent changes to the BIOS settings.</p>
 Firmware vendors must ensure that the following conditions exist:
 - The BIOS ignores boot entries that do not have the 80x86 Platform ID, which is defined as “0x00” in hexadecimal. Failure to ignore other boot entries results in the display of a confusing boot menu to the end user.
 - The BIOS boots based on the BIOS entry without prompt.
 - The UEFI boot manager ignores boot entries that do not have the “0xEF” Platform ID.
 - The UEFI boot manager boots based on the EFI entry without prompt.
-- To support the ability to boot from DVD media, the Windows installation DVD contains many El Torito boot entries that enable boot from either BIOS or UEFI. The default El Torito boot entry is for BIOS.
-- Windows supports the “Non-removable Media Boot Behavior” section from the UEFI 2.3 specification. During Windows installation and when updates are required for bootmgfw.efi, Windows copies the Windows boot application from \efi\microsoft \boot\bootmgfw.efi to \efi\boot\boot{arch}.efi on the EFI system partition. This copy enables a default boot option for Windows if a nonvolatile RAM (NVRAM) boot entry is not available, such as when a hard disk is moved from one platform to another.
 - For a platform that has a console device, the UEFI 2.0 specification requires the firmware to implement the Simple Text Output Protocol. Optionally, the firmware can also support a graphical protocol. UEFI 2.0 defines the Graphic Output Protocol (GOP), and EFI 1.1 defines the Universal Graphics Adapter (UGA) Protocol. Windows supports all three protocols, but the user experience with each protocol is different. For the best experience, if the firmware implements a graphical protocol, Windows recommends and prefers the GOP.
 - Windows requires a graphical protocol to render glyphs for non-English message resources. To do so, the firmware must support the following:
 - A graphical protocol—either GOP or UGA.
