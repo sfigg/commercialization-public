@@ -54,8 +54,6 @@ Dism /Append-Image /ImageFile:install.wim /CaptureDir:D:\ /Name:Drive-D
 
 ## /Apply-FFU
 
-**New in Windows 10, Version 1709**
-
 For FFU, this command applies a Full Flash Utility (FFU) or split FFU (SFU) to a specified physical drive.
 
 Syntax:
