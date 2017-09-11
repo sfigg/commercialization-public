@@ -19,7 +19,7 @@ The OEM can use instructions from the firmware manufacturer to create Secure boo
 
 For information on how the secure boot process works included Trusted Boot and Measured Boot, see [Secure the Windows 10 boot process](https://docs.microsoft.com/en-us/windows/threat-protection/secure-the-windows-10-boot-process). 
 
-## Secure boot hardware requirements
+## Secure boot requirements
 
 In order to support Secure boot, you must provide the following. 
 

@@ -18,6 +18,7 @@ More than 140 leading technology companies participate in the Unified EFI Forum,
 
 ## UEFI benefits
 Firmware that meets the UEFI 2.3.1 specifications provides the following benefits:
+- Ability to support Windows 10 security features like Secure Boot, Windows Defender Device Guard, Windows Defender Credential Guard, and Windows Defender Exploit Guard all require UEFI firmware.
 - Faster boot and resume times.
 - Ability to use security features such as Secure Boot that helps prevent untrusted code from running before the operating system is loaded. For more information, see [Secure boot](OEM-secure-boot.md).
 - Ability to more easily support large hard drives (more than 2 terabytes) and drives with more than four partitions.
