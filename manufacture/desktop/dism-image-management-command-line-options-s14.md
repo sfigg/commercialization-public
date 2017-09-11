@@ -132,31 +132,6 @@ DISM.exe /Apply-image /ImageFile:flash.ffu /ApplyDrive:\\.\PhysicalDrive0 /index
 DISM.exe /Apply-image /ImageFile:flash.sfu /SFUFile:flash*.sfu /ApplyDrive:\\.\PhysicalDrive0 /index:1
 ```
 
-## /Capture-FFU
-
-Captures an image of a physical drive's partitions to a new .ffu file.
-
-You can capture the image as a full flash utility image (.ffu) file or a set of split ffu (.sfu) files; 
-
-Syntax:
-
-```
-Dism /Capture-Ffu /ImageFile:<path_to_image_file> /CaptureDrive:<physical_drive_path> /Name:<image_name> [/Description:<image_description>] [/PlatformIds:<platform_ids>] [/Compress:{default|none}] 
-```
-
-|   Parameter     |   Description     |
-|-----------------|-------------------|
-| /CaptureDrive | The physical drive to be captured. You can [use diskpart to get drive number information](deploy-windows-using-full-flash-update--ffu.md#deploy-windows-from-winpe-using-an-ffu). Uses the format `\\.\PhysicalDriveX`, where *X* is the disk number that diskpart provides. |
-| /PlatformIds | Specifies one or more platform ids (separated with semicolon) to be added to the image. If not specified, platform id will be '*'. |
-| /Compress | Specifies the type of compression used for when capturing. |
-
-
-Example:
-
-```
-DISM.exe /Capture-Ffu /ImageFile:install.ffu /CaptureDrive:\\PhysicalDrive0 /Name:Drive0 /PlatformIds:Qualcomm.MSM8994.P6211;Microsoft.MSM8994.P6211 /Compress:default
-```
-
 ## /Capture-CustomImage
 
 Captures the incremental file changes based on the specific install.wim file to a new file, custom.wim for a WIMBoot image. You can’t capture an empty directory. The captured files are converted to pointer files. The custom.wim is placed in the same folder next to the install.wim.
@@ -186,6 +161,32 @@ Example:
 ```
 Dism /Capture-CustomImage /CaptureDir:D:\
 ```
+
+## /Capture-FFU
+
+Captures an image of a physical drive's partitions to a new .ffu file.
+
+You can capture the image as a full flash utility image (.ffu) file or a set of split ffu (.sfu) files; 
+
+Syntax:
+
+```
+Dism /Capture-Ffu /ImageFile:<path_to_image_file> /CaptureDrive:<physical_drive_path> /Name:<image_name> [/Description:<image_description>] [/PlatformIds:<platform_ids>] [/Compress:{default|none}] 
+```
+
+|   Parameter     |   Description     |
+|-----------------|-------------------|
+| /CaptureDrive | The physical drive to be captured. You can [use diskpart to get drive number information](deploy-windows-using-full-flash-update--ffu.md#capture-an-ffu). Uses the format `\\.\PhysicalDriveX`, where *X* is the disk number that diskpart provides. |
+| /PlatformIds | Specifies one or more platform ids (separated with semicolon) to be added to the image. If not specified, platform id will be '*'. |
+| /Compress | Specifies the type of compression used for when capturing. |
+
+
+Example:
+
+```
+DISM.exe /Capture-Ffu /ImageFile:install.ffu /CaptureDrive:\\PhysicalDrive0 /Name:Drive0 /PlatformIds:Qualcomm.MSM8994.P6211;Microsoft.MSM8994.P6211 /Compress:default
+```
+
 
 
 ## /Capture-Image
