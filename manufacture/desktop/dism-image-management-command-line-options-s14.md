@@ -146,7 +146,7 @@ Dism /Capture-Ffu /ImageFile:<path_to_image_file> /CaptureDrive:<physical_drive_
 
 |   Parameter     |   Description     |
 |-----------------|-------------------|
-| /CaptureDrive | The physical drive to be captured. You can [use diskpart to get drive number information](deploy-windows-using-full-flash-update--ffu,md#deploy-windows-from-winpe-using-an-ffu). Uses the format `\\.\PhysicalDriveX`, where *X* is the disk number that diskpart provides. |
+| /CaptureDrive | The physical drive to be captured. You can [use diskpart to get drive number information](deploy-windows-using-full-flash-update--ffu.md#deploy-windows-from-winpe-using-an-ffu). Uses the format `\\.\PhysicalDriveX`, where *X* is the disk number that diskpart provides. |
 | /PlatformIds | Specifies one or more platform ids (separated with semicolon) to be added to the image. If not specified, platform id will be '*'. |
 | /Compress | Specifies the type of compression used for when capturing. |
 
