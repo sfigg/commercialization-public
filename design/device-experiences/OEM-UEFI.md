@@ -29,16 +29,13 @@ Firmware that meets the UEFI 2.3.1 specifications provides the following benefit
 
 
 ## Media installation considerations
-- Windows installation media supports boot on both BIOS and UEFI platforms by taking advantage of multi-entry El Torito boot catalog support.
-- The default El Torito boot entry is a BIOS entry that includes the 80x86 Platform ID, which is defined as “0x00” in hexadecimal.
-- The second El Torito boot entry is an EFI entry that includes the Platform ID as “0xEF” in hexadecimal. The entry references a FAT partition that contains the bootable EFI application at \EFI\BOOT\BOOTX64.EFI.
-- Windows supports both CD and DVD boot from the Universal Disk Format (UDF) file system. Windows installation media also uses El Torito and is built by using the UDF bridge format to support both ISO 9660 and UDF version 1.02 file systems.
-- The Windows Assessment and Deployment Kit (Windows ADK) includes an updated version of Oscdimg.exe that supports the creation of a multi-entry El Torito boot catalog. [Download the ADK](https://developer.microsoft.com/en-us/windows/hardware/windows-assessment-deployment-kit).
+To download Windows, see [the Windows 10 download page](https://www.microsoft.com/en-us/software-download/windows10). If you want to use media like a USB flash drive, a DVD, or an ISO, dowload the [Windows Media creation tool]https://www.microsoft.com/en-us/software-download/windows10?d2784474-fdb0-4e9d-9e47-5e88c0e053ec=True). 
 
 ## Boot requirements
 <p>As the OEM, you must provide the ability, in BIOS, to add ISV, OEM, or Enterprise certificates to the Secure Boot database at manufacturing time. The Microsoft UEFI CA must be removed from the same Secure Boot database. 3rd-party UEFI modules are permitted but should leverage ISV-provided certificates or OEM certificate for the specific UEFI software.</p> <ul><li>Enterprises can choose to allow proprietary EFI drivers/applications to run. </li> <li>Removing Microsoft UEFI CA from the Secure Boot database provides enterprises with full control over software that runs before the operating system boots. </li></ul> <p>To support this, you must allow BIOS password or stronger authentication to ensure that only the authenticated Platform BIOS administrator can change BIOS settings. You must also provide a protected BIOS option to configure a list of permitted boot devices and the boot device order, which overrides the BOOTORDER modification made by the OS to boot only from an internal hard drive, for example.</p> <p>BIOS options related to security and boot options must be secured to prevent other operating systems from starting and to prevent changes to the BIOS settings.</p>
 Firmware vendors must ensure that the following conditions exist:
 - The BIOS ignores boot entries that do not have the 80x86 Platform ID, which is defined as “0x00” in hexadecimal. Failure to ignore other boot entries results in the display of a confusing boot menu to the end user.
+
 - The BIOS boots based on the BIOS entry without prompt.
 - The UEFI boot manager ignores boot entries that do not have the “0xEF” Platform ID.
 - The UEFI boot manager boots based on the EFI entry without prompt.
@@ -53,6 +50,8 @@ Windows requires GOP to display a high-resolution, animated image during boot. I
 - To ensure proper operation, Windows requires EFI firmware to comply with its indicated specification version. EFI firmware must fully implement the appropriate version of the EFI System Table, EFI Boot Services, and EFI Runtime Services. Other specific required protocols and specifications include the following:
 - Trusted Computing Group (TCG) EFI Specifications. All UEFI platforms that have a Trusted Platform Module (TPM) must implement the TCG EFI Platform and Protocol specifications.
 - EFI_PCI_ROOT_BRIDGE_IO_PROTOCOL. Windows uses this protocol if Windows Boot Configuration Data (BCD) specifies IEEE 1394 boot debugging.
+
+-UEFI firmware must support secure firmware update following Hardware Compatibility Specification for Systems for Windows 10 under [System.Fundamentals.Firmware.UEFISecureBoot](https://msdn.microsoft.com/en-us/library/windows/hardware/dn932805.aspx#systemfundamentalsfirmwareuefisecureboot).
 
 ## Runtime requirements
 Windows minimizes its use of UEFI services during operating system runtime and, wherever possible, relies on runtime firmware such as ACPI and Windows drivers. Windows uses the following UEFI Runtime Services to manage NVRAM boot entries and hardware error records after ExitBootServices() is called.
