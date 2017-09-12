@@ -18,7 +18,6 @@ This document provides recommendations for the design and development of USB com
 
 ## USB features in Windows 10
 
-
 Windows 10 supports:
 
 -   Dual Role controllers, which can function as either a USB Host or a USB Device. For example, a phone can connect to a PC as a USB device or it can connect to other USB peripherals as a USB host.
@@ -85,8 +84,8 @@ USB is optional for all devices and computers that run Windows 10. Windows 10 su
 
 For the complete set of hardware requirements for Windows 10, see [Minimum hardware requirements](https://msdn.microsoft.com/library/windows/hardware/dn915086.aspx).
 
-## Windows Hardware Compatibility Program requirements for USB
- The Windows Hardware Compatibility Program leverages tests in the Windows [Hardware Lab Kit](https://msdn.microsoft.com/library/windows/hardware/dn930814.aspx) (HLK), which OEMs can use to help diagnose issues early in the development process, ensure driver compatibility with Windows, and optionally certify devices or systems. New tests in the HLK can validate Dual Role and Function mode on any Windows 10 edition.
+## Windows Hardware Compatibility Program specifications for USB
+ The Windows Hardware Compatibility Program leverages tests in the Windows [Hardware Lab Kit](https://msdn.microsoft.com/library/windows/hardware/dn930814.aspx) (HLK), which OEMs can use to help diagnose issues early in the development process, ensure driver compatibility with Windows, and optionally certify devices or systems. Tests in the HLK can validate Dual Role and Function mode on any Windows 10 edition.
 
 The [System.Fundamentals.SystemUSB.SystemExposesUSBPort](https://msdn.microsoft.com/library/windows/hardware/dn932827.aspx#systemfundamentalssystemusbsystemexposesusbport) Windows Hardware Compatibility Program requirement lists which USB controller types are recommended, supported, or not supported.
 
@@ -110,7 +109,10 @@ For improved power efficiency and performance, it is recommended USB Host Contro
 
 [USB Core Team blog](http://blogs.msdn.com/b/usbcoreblog/)
 
+[Windows Hardware Certification blog](https://blogs.msdn.microsoft.com/windows_hardware_certification/)
+
 ### Videos
+
 [Docking](https://channel9.msdn.com/events/WinHEC/WinHEC-December-2016/Docking)
 
 [Enabling New USB Connectivity Scenarios](https://channel9.msdn.com/Events/WinHEC/2015/WHT200)
