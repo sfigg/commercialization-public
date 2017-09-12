@@ -35,7 +35,7 @@ To capture and deploy FFUs using the instructions below, you'll also need:
 
 ## Capture an FFU
 
-1. Boot the reference PC using bootable WinPE media.
+1. Boot the reference PC using WinPE bootable media.
 
 2. Identify the drive to which you'll be capturing the image from. You can use diskpart, or [add Windows PowerShell support to WinPE](winpe-adding-powershell-support-to-windows-pe.md) and use [Get-Disk](https://technet.microsoft.com/itpro/powershell/windows/storage/get-disk) for scriptability and more complex setups such as a server with multiple disks. 
 
@@ -58,7 +58,8 @@ To capture and deploy FFUs using the instructions below, you'll also need:
     DISKPART>
     ```
 
-3. Use DISM to capture an image of all the partitions on the physical drive. For a physical drive *X:*, the string used with `/apply-drive` will look like this: `\\.\PhysicalDriveX`, where *X* is the disk number that diskpart provides, such as `/ApplyDrive:\\.\PhysicalDrive0`.
+3. Use DISM to capture an image of all the partitions on the physical drive. For *disk X:*, the string used with `/apply-drive` will look like this: `\\.\PhysicalDriveX`, where *X* is the disk number that diskpart provides. For example, to capture Disk 0, you'd use `/CaptureDrive:\\.\PhysicalDrive0`.
+
     For more information about PhysicalDrive*X*, see [CreateFile function](https://msdn.microsoft.com/library/windows/desktop/aa363858.aspx). 
     
     To see command line options for capturing FFUs, run `dism /capture-ffu /?` or see [DISM Image Management Command-Line Options](dism-image-management-command-line-options-s14.md).
@@ -94,7 +95,7 @@ To capture and deploy FFUs using the instructions below, you'll also need:
     exit
     ```
 
-4.  Apply the image to a drive. Here, we're applying n:\WinOEM.ffu to Disk 0.
+4.  Apply the image to the cleaned drive. Here, we're applying n:\WinOEM.ffu to Disk 0.
     
     ```
     DISM /apply-ffu /ImageFile=N:\WinOEM.ffu /ApplyDrive:\\.\PhysicalDrive0
@@ -114,11 +115,11 @@ To mount an FFU
 
 2. Mount the image using `dism /mount-image`. This example mounts D:\WinOEM.ffu to C:\ffumount:
 
-```
-dism /mount-image /imagefile:"D:\WinOEM.ffu" /mountdir:"C:\ffumount" /index:1
-```
+    ```
+    dism /mount-image /imagefile:"D:\WinOEM.ffu" /mountdir:"C:\ffumount" /index:1
+    ```
 
-To see available command line options for `/mount-image` run `dism /mount-image /?` or see [DISM image management command line options](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/dism-image-management-command-line-options-s14#mount-image).
+    To see available command line options for `/mount-image` run `dism /mount-image /?` or see [DISM image management command line options](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/dism-image-management-command-line-options-s14#mount-image).
 
 3. Service your image. For example, to enable the legacy components feature:
 
