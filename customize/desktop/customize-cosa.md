@@ -27,7 +27,7 @@ In Windows 10, version 1703, we added the Country and Operator Settings Asset (C
 
 COSA can be extended with OEM-generated provisioning packages during desktop imaging. This enables OEMs to replace or extend existing COSA profiles, as well as introduce new ones.  For example, you can add a profile for a mobile virtual network operator (MVNO) not currently in COSA, or a new partner for Data Marketplace. You can also replace or disable an existing profile.  
 
-It is recommended that your organization submit any MO profile changes made to extend COSA to Microsoft. To learn more, and to review a full list of profile settings and their descriptions, see [APN database submission](https://docs.microsoft.com/en-us/windows-hardware/drivers/mobilebroadband/apn-database-submission).
+It is recommended that your organization submit any MO profile changes made to extend COSA to Microsoft. To learn more, see [APN database submission](https://docs.microsoft.com/en-us/windows-hardware/drivers/mobilebroadband/apn-database-submission).
 
 ## To add a new profile
 
@@ -132,6 +132,8 @@ You can add a new profile that is not yet included in the COSA database using th
 
 4. Perform necessary tests for validation.  
 
+For a full list of COSA settings, please see [Planning your COSA/APN database submission](https://docs.microsoft.com/en-us/windows-hardware/drivers/mobilebroadband/planning-your-apn-database-submission#complete-the-apncosa-update-spreadsheet).
+
 ## To change an existing profile  
 
 1. Navigate to the provisioning package (PPKG) that shipped with the operating system. It should be in the following location: %WINDIR%\Provisioning\COSA\OEM.
@@ -195,10 +197,9 @@ You can add a new profile that is not yet included in the COSA database using th
 6. Perform necessary tests for validation.  
 
 > [!Important]
-> When using `Replace` to change a profile, there are certain settings, listed below, which are not supported for OEM extensibility. These settings are either system specific, or contractual settings between Microsoft and Mobile Operators (MOs).
+> When using `Replace` to change a profile, there are certain settings, listed below, which should not be modified by OEMs. These settings are either system specific, or contractual settings between Microsoft and Mobile Operators (MOs).
 > 
 > * Support DataMarketplace
-> 
 > * DataMarketplace Roaming UI Enabled
 
 
