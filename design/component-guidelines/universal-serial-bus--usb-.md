@@ -14,12 +14,9 @@ ms.technology: windows-oem
 
 # Universal Serial Bus (USB)
 
-
 This document provides recommendations for the design and development of USB components. The goal of this document is to enable ecosystem partners to build a device with optimized USB functionality.
 
-
-
-## New USB features in Windows 10
+## USB features in Windows 10
 
 
 Windows 10 supports:
@@ -68,8 +65,7 @@ Figure 1 Example of new USB scenarios for a Windows 10 Desktop system
 
 Figure 2 Example of new USB scenarios for a Windows 10 Mobile device
 
-## New Guidelines for USB for Windows 10
-
+## Guidelines for USB for Windows 10
 
 -   In general, USB should “just work” with minimal user interaction.
 -   Hardware/firmware is expected to make the initial policy decisions introduced with the Dual Role, Power Delivery, and Alternate Mode features.
@@ -96,11 +92,9 @@ The [System.Fundamentals.SystemUSB.SystemExposesUSBPort](https://msdn.microsoft.
 
 ## Maintained guidelines for USB from Windows 8.1
 
-
 These guidelines from Windows 8.1 are maintained for Windows 10.
 
 ### Hardware
-
 
 For improved power efficiency and performance, it is recommended USB Host Controllers are at least USB 3.0 compatible with an XHCI controller integrated into the SoC or chipset. The operating system supports standard EHCI and XHCI 1.0 controllers, including debug registers. If the host controller is not fully compatible with the published standard specifications, the deviations must be documented and support for the host controller is determined on a case-by-case basis. In addition, the debug capability is important for XHCI host controllers.
 
@@ -110,42 +104,26 @@ For improved power efficiency and performance, it is recommended USB Host Contro
 | EHCI                                                   | Supported                                            |
 | UHCI/OHCI Companion Controllers                        | Not-supported                                        |
 
- 
-
-## Other Resources
+## Related Resources
 
 ### Blogs
 
 [USB Core Team blog](http://blogs.msdn.com/b/usbcoreblog/)
 
 ### Videos
-<table>
-<tr>
-<td>
-<iframe src="https://channel9.msdn.com/Events/WinHEC/2015/WHT200/player" allowFullScreen="true" frameBorder="0"></iframe>
-<p>Enabling New USB Connectivity Scenarios</p>
-</td>
-<td>
-<iframe src="https://channel9.msdn.com/events/Build/2015/3-81/player" allowFullScreen="true" frameBorder="0"></iframe>
-Building New Apps for USB Accessories
-</td>
-<tr>
-</table>
+[Docking](https://channel9.msdn.com/events/WinHEC/WinHEC-December-2016/Docking)
 
->[!VIDEO https://channel9.msdn.com/Events/WinHEC/2015/WHT200/player]
-<p>Enabling New USB Connectivity Scenarios</p>
+[Enabling New USB Connectivity Scenarios](https://channel9.msdn.com/Events/WinHEC/2015/WHT200)
 
->[!VIDEO https://channel9.msdn.com/events/Build/2015/3-81/player]
-Building New Apps for USB Accessories
+[Building New Apps for USB Accessories](https://channel9.msdn.com/events/Build/2015/3-81)
 
+[Building great USB 3.0 devices](http://channel9.msdn.com/events/BUILD/BUILD2011/HW-773T)
 
+[Integrating with the Windows Device Experience](http://channel9.msdn.com/events/BUILD/BUILD2011/APP-408T)
 
->[!VIDEO http://channel9.msdn.com/events/BUILD/BUILD2011/HW-773T/player]
->[!VIDEO http://channel9.msdn.com/events/BUILD/BUILD2011/APP-408T/player]
->[!VIDEO http://channel9.msdn.com/events/BUILD/BUILD2011/HW-245T/player]
+[Running Windows from an External USB drive with Windows To Go](http://channel9.msdn.com/events/BUILD/BUILD2011/HW-245T)
 
-
-### Related Topics
+### Other Guides and Reference
 
 [Windows 10: What's new for USB](https://msdn.microsoft.com/library/windows/hardware/dn957037.aspx)
 
