@@ -5,7 +5,7 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.author: alhopper
-ms.date: 05/02/2017
+ms.date: 09/12/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -27,13 +27,13 @@ In Windows 10, version 1703, we added the Country and Operator Settings Asset (C
 
 COSA can be extended with OEM-generated provisioning packages during desktop imaging. This enables OEMs to replace or extend existing COSA profiles, as well as introduce new ones.  For example, you can add a profile for a mobile virtual network operator (MVNO) not currently in COSA, or a new partner for Data Marketplace. You can also replace or disable an existing profile.  
 
-It is recommended that your organization submit any MO profile changes made to extend COSA to Microsoft. To learn more, see [APN database submission](https://msdn.microsoft.com/en-us/windows/hardware/drivers/mobilebroadband/apn-database-submission).
+It is recommended that your organization submit any MO profile changes made to extend COSA to Microsoft. To learn more, see [APN database submission](https://docs.microsoft.com/en-us/windows-hardware/drivers/mobilebroadband/apn-database-submission).
 
 ## To add a new profile
 
 You can add a new profile that is not yet included in the COSA database using the following steps.
 
-1. Create an answer file or edit an existing answer file that contains the new profiles. Here is an example:
+1. Create an answer file or edit an existing answer file that contains the new profile settings. Here is an example:
 
   ```
     <?xml version="1.0" encoding="UTF-8"?>
@@ -126,15 +126,19 @@ You can add a new profile that is not yet included in the COSA database using th
   </WindowsCustomizations>
   ```
 
-2. Create a provisioning package that includes the answer file. For more information, see [To build a provisioning package](https://msdn.microsoft.com/en-us/library/windows/hardware/dn916115(v=vs.85).aspx#to_build_a_provisioning_package).
+2. Create a provisioning package that includes the answer file. For more information, see [To build a provisioning package](https://docs.microsoft.com/en-us/windows/configuration/provisioning-packages/provisioning-command-line#to_build_a_provisioning_package).
 
 3. Place your provisioning packages (PPKG) in the following location: %WINDIR%\Provisioning\COSA\OEM.
 
 4. Perform necessary tests for validation.  
 
-## To replace an existing profile  
+## To change an existing profile  
 
-1. Create an answer file or edit an existing answer file that contains the profiles using the Replace operator. Here is an example:
+1. Navigate to the provisioning package (PPKG) that shipped with the operating system. It should be in the following location: %WINDIR%\Provisioning\COSA\OEM.
+
+2. Unzip the package and open the answer file.
+
+3. Edit the profile settings in the answer file using the `Replace` operator. Do not remove settings from the answer file as this will remove them from the profile in the COSA database.
 
   ```
   <Replace Name="MobileCarrier1 (Replaced)">
@@ -181,18 +185,22 @@ You can add a new profile that is not yet included in the COSA database using th
         </Replace>
    ```
 
-2. Create a provisioning package that includes the answer file. For more information, see [To build a provisioning package](https://msdn.microsoft.com/en-us/library/windows/hardware/dn916115(v=vs.85).aspx#to_build_a_provisioning_package).
+4. Create a provisioning package that includes the modified answer file. For more information, see [To build a provisioning package](https://docs.microsoft.com/en-us/windows/configuration/provisioning-packages/provisioning-command-line#to_build_a_provisioning_package).
 
-3. Place your provisioning packages (PPKG) in the following location: %WINDIR%\Provisioning\COSA\OEM.
+5. Place your provisioning packages (PPKG) in the following location: %WINDIR%\Provisioning\COSA\OEM.
 
-4. Perform necessary tests for validation.  
+6. Perform necessary tests for validation.  
 
 > [!Note]  
 > The TargetRef ID used by the Replace operator should be the profile GUID used by COSA.
 
 ## To remove an existing profile  
 
-1. Create an answer file or edit an existing answer file that contains the profiles using the Replace operator. Here is an example:  
+1. Navigate to the provisioning package (PPKG) that shipped with the operating system. It should be in the following location: %WINDIR%\Provisioning\COSA\OEM.
+
+2. Unzip the package and open the answer file.
+
+3. Edit the answer file to use the `Replace`operator. Delete any settings you wish to remove from the COSA database. Here is an example:  
 
   ```
         <Replace Name="MobileCarrier2 (Removed)">
@@ -202,11 +210,18 @@ You can add a new profile that is not yet included in the COSA database using th
         </Replace>
   ```
 
-2. Create a provisioning package that includes the answer file. For more information, see [To build a provisioning package](https://msdn.microsoft.com/en-us/library/windows/hardware/dn916115(v=vs.85).aspx#to_build_a_provisioning_package).
+4. Create a provisioning package that includes the answer file. For more information, see [To build a provisioning package](https://docs.microsoft.com/en-us/windows/configuration/provisioning-packages/provisioning-command-line#to_build_a_provisioning_package).
 
-3. Place your provisioning packages (PPKG) in the following location: %WINDIR%\Provisioning\COSA\OEM.
+5. Place your provisioning packages (PPKG) in the following location: %WINDIR%\Provisioning\COSA\OEM.
 
-4. Perform necessary tests for validation.  
+6. Perform necessary tests for validation.  
 
 > [!Note]
-> The settings included in a Replace element are applied instead of the original COSA settings.  If no settings are specified, the operation becomes a Removal.
+> The settings included in a Replace element are applied instead of the original COSA settings. If no settings are specified, the operation becomes a Removal.
+
+## Non-configurable COSA settings
+
+The following COSA settings are internal to Microsoft, and aren't intended to be modified by OEMs or MOs.
+* Support DataMarketplace: This setting indicates whether or not this SIM supports the Data Marketplace features. If this setting is absent, the SIM is considered not a Data Marketplace SIM and the Data Marketplace features are not supported for this SIM.
+
+* DataMarketplace Roadming UI Enabled: This setting indicates whether roaming UI should be shown for this DataMarketplace SIM.
