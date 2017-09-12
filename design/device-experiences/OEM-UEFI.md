@@ -32,26 +32,17 @@ Firmware that meets the UEFI 2.3.1 specifications provides the following benefit
 To download Windows, see [the Windows 10 download page](https://www.microsoft.com/en-us/software-download/windows10). If you want to use media like a USB flash drive, a DVD, or an ISO, dowload the [Windows Media creation tool](https://www.microsoft.com/en-us/software-download/windows10?d2784474-fdb0-4e9d-9e47-5e88c0e053ec=True). 
 
 ## Boot requirements
-<p>As the OEM, you must provide the ability, in BIOS, to add ISV, OEM, or Enterprise certificates to the Secure Boot database at manufacturing time. The Microsoft UEFI CA must be removed from the same Secure Boot database. 3rd-party UEFI modules are permitted but should leverage ISV-provided certificates or OEM certificate for the specific UEFI software.</p> <ul><li>Enterprises can choose to allow proprietary EFI drivers/applications to run. </li> <li>Removing Microsoft UEFI CA from the Secure Boot database provides enterprises with full control over software that runs before the operating system boots. </li></ul> <p>To support this, you must allow BIOS password or stronger authentication to ensure that only the authenticated Platform BIOS administrator can change BIOS settings. You must also provide a protected BIOS option to configure a list of permitted boot devices and the boot device order, which overrides the BOOTORDER modification made by the OS to boot only from an internal hard drive, for example.</p> <p>BIOS options related to security and boot options must be secured to prevent other operating systems from starting and to prevent changes to the BIOS settings.</p>
-Firmware vendors must ensure that the following conditions exist:
-- The BIOS ignores boot entries that do not have the 80x86 Platform ID, which is defined as “0x00” in hexadecimal. Failure to ignore other boot entries results in the display of a confusing boot menu to the end user.
+<p>As the OEM, you must provide support for the features outlined in the Hardware Compatibility Specification for Systems for Windows(), specifically the following items. </p>
 
-- The BIOS boots based on the BIOS entry without prompt.
-- The UEFI boot manager ignores boot entries that do not have the “0xEF” Platform ID.
-- The UEFI boot manager boots based on the EFI entry without prompt.
-- For a platform that has a console device, the UEFI 2.0 specification requires the firmware to implement the Simple Text Output Protocol. Optionally, the firmware can also support a graphical protocol. UEFI 2.0 defines the Graphic Output Protocol (GOP), and EFI 1.1 defines the Universal Graphics Adapter (UGA) Protocol. Windows supports all three protocols, but the user experience with each protocol is different. For the best experience, if the firmware implements a graphical protocol, Windows recommends and prefers the GOP.
-- Windows requires a graphical protocol to render glyphs for non-English message resources. To do so, the firmware must support the following:
-- A graphical protocol—either GOP or UGA.
-- Either 1024x768 display resolution with 32-bit pixel color or 800x600 display resolution with 24-bit pixel color.
-- If the firmware does not support any of these graphics modes, Windows still functions, but all boot display reverts to text mode and English.
-Windows requires GOP to display a high-resolution, animated image during boot. If GOP is not available, Windows uses the video graphics array (VGA) standard to display a lower resolution image and a simple progress indicator. For an optimal boot experience with these versions of Windows, sealed platforms without expansion card slots can safely boot with graphics mode enabled and eliminate transitions to text mode.
-- Whenever the firmware boot manager hands off execution to a Windows EFI application, platform firmware and the firmware boot manager must not use the frame buffer for any purpose.
-- When upgrading Windows, Windows preserves the existing boot order. When you perform a clean install of Windows, Windows updates the boot order so that it's the first boot entry in the list.
-- To ensure proper operation, Windows requires EFI firmware to comply with its indicated specification version. EFI firmware must fully implement the appropriate version of the EFI System Table, EFI Boot Services, and EFI Runtime Services. Other specific required protocols and specifications include the following:
-- Trusted Computing Group (TCG) EFI Specifications. All UEFI platforms that have a Trusted Platform Module (TPM) must implement the TCG EFI Platform and Protocol specifications.
-- EFI_PCI_ROOT_BRIDGE_IO_PROTOCOL. Windows uses this protocol if Windows Boot Configuration Data (BCD) specifies IEEE 1394 boot debugging.
+- System.Fundamentals.Firmware.UEFIBitLocker
+- System.Fundamentals.Firmware.UEFICompatibility
+- System.Fundamentals.Firmware.UEFIDefaultBoot
+- System.Fundamentals.Firmware.UEFILegacyFallback
+- [System.Fundamentals.Firmware.UEFISecureBoot](https://msdn.microsoft.com/en-us/library/windows/hardware/dn932805.aspx#systemfundamentalsfirmwareuefisecureboot)
+- System.Fundamentals.Firmware.UEFITimingClass
 
--UEFI firmware must support secure firmware update following Hardware Compatibility Specification for Systems for Windows 10 under [System.Fundamentals.Firmware.UEFISecureBoot](https://msdn.microsoft.com/en-us/library/windows/hardware/dn932805.aspx#systemfundamentalsfirmwareuefisecureboot).
+
+- UEFI firmware must support secure firmware update following Hardware Compatibility Specification for Systems for Windows 10 under .
 
 ## Runtime requirements
 Windows minimizes its use of UEFI services during operating system runtime and, wherever possible, relies on runtime firmware such as ACPI and Windows drivers. Windows uses the following UEFI Runtime Services to manage NVRAM boot entries and hardware error records after ExitBootServices() is called.
