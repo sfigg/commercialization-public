@@ -134,7 +134,9 @@ You can add a new profile that is not yet included in the COSA database using th
 
 For a full list of COSA settings, please see [Planning your COSA/APN database submission](https://docs.microsoft.com/en-us/windows-hardware/drivers/mobilebroadband/planning-your-apn-database-submission#complete-the-apncosa-update-spreadsheet).
 
-## To change an existing profile  
+## To change an existing profile 
+
+Use the `Replace` operator to make changes to an existing profile. 
 
 > [!Important]
 > When using `Replace` to change or remove a profile, there are certain settings, listed below, which should not be modified or removed by OEMs. These settings are either system specific, or contractual settings between Microsoft and Mobile Operators (MOs), and their values should be preserved.
@@ -150,7 +152,7 @@ For a full list of COSA settings, please see [Planning your COSA/APN database su
 
 2. Unzip the package and open the answer file.
 
-3. Edit the answer file to use the `Replace` operator, and make changes to any settings that require modification. Leave all other settings as they are.
+3. Edit the answer file to use the `Replace` operator, and only make changes to settings that require modification. Leave all other settings as they are.
 
   ```
   <Replace Name="MobileCarrier1 (Replaced)">
