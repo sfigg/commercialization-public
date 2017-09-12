@@ -120,26 +120,16 @@ For improved power efficiency and performance, it is recommended USB Host Contro
 
 ### Videos
 
-<table>
-<tr>
-<td>
->[!VIDEO https://channel9.msdn.com/Events/WinHEC/2015/WHT200/player]
+<iframe src="https://channel9.msdn.com/Events/WinHEC/2015/WHT200/player" width="640" height="320" allowFullScreen="true" frameBorder="0"></iframe>
 <p>Enabling New USB Connectivity Scenarios</p>
-</td>
 
-<td>
->[!VIDEO https://channel9.msdn.com/events/Build/2015/3-81/player]
+<iframe src="https://channel9.msdn.com/events/Build/2015/3-81/player" width="640" height="320" allowFullScreen="true" frameBorder="0"></iframe>
 <p>Building New Apps for USB Accessories</p>
-</td>
-</tr>
 
-</table>
-
-
+>[!VIDEO https://channel9.msdn.com/Events/WinHEC/2015/WHT200/player]
+>[!VIDEO https://channel9.msdn.com/events/Build/2015/3-81/player]
 >[!VIDEO http://channel9.msdn.com/events/BUILD/BUILD2011/HW-773T/player]
-
 >[!VIDEO http://channel9.msdn.com/events/BUILD/BUILD2011/APP-408T/03/player]
-
 >[!VIDEO http://channel9.msdn.com/events/BUILD/BUILD2011/HW-245T]
 
 
