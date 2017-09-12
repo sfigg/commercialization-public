@@ -68,15 +68,11 @@ Syntax:
 | /ApplyDrive | The path to the phyisical drive that will be imaged |
 | /SFUfile\<pattern> | Optional, for split FFUs. Use /SFUFile to reference split FFU files (SFUs). *Pattern* is the naming pattern and location of split files. Use a wildcard character when specifying the naming pattern. For example, "E:\image\install*.sfu" will apply all of the split files in the E:\image directory named install1.sfu, install2.sfu, and so on. |
 
-  Applies an .ffu image to a specified physical drive.
-  Use /SFUFile to reference split FFU files (SFUs). <pattern> is the naming
-  pattern and location of split files.
-
-  Example:
+Example:
   
-  ```
-  DISM.exe /Apply-Ffu /ImageFile:flash.ffu /ApplyDrive:\\.\PhysicalDrive0
-  ```
+```
+DISM.exe /Apply-Ffu /ImageFile:flash.ffu /ApplyDrive:\\.\PhysicalDrive0
+```
 
 ## /Apply-Image
 
@@ -401,6 +397,10 @@ Dism /Mount-Image /ImageFile:C:\test\images\myimage.wim /index:1 /MountDir:C:\te
 
 ```
 Dism /Mount-Image /ImageFile:C:\test\images\myimage.vhd /index:1 /MountDir:C:\test\offline /ReadOnly
+```
+
+```
+Dism /Mount-Image /ImageFile:C:\test\images\WinOEM.ffu /MountDir:C:\test\offline /index:1
 ```
 
 ## /Optimize-Image /WIMBoot
