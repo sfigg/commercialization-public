@@ -1,6 +1,6 @@
 ---
 author: kpacquer
-Description: 'This guide walks you through creating Windows 10 IoT Core (IoT Core) images that can be flashed to retail devices and maintained after they have been delivered to your customers.'
+Description: 'This guide walks you through creating Windows 10 Windows Core images that can be flashed to retail devices and maintained after they have been delivered to your customers.'
 ms.assetid: 2b208536-20fc-42da-abf3-39bfb141276d
 MSHAttr: 'PreferredLib:/library'
 title: IoT Core manufacturing guide
@@ -11,19 +11,17 @@ ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-# IoT Core manufacturing guide
+# Windows Core manufacturing guide
 
-Thinking about mass-producing devices running Windows 10 IoT Core? Use the [Windows ADK IoT Core Add-ons](iot-core-adk-addons.md) to create images that you can quickly flash onto new devices. 
+Thinking about mass-producing devices running Windows Core Operating System? ~~Use the [Windows ADK IoT Core Add-ons](iot-core-adk-addons.md) to create images that you can quickly flash onto new devices.~~
 
-You can create **test images**, which include tools for quickly accessing and modifying devices. Test images are great for:
+Start by creating **test images**, which include generic test certificates plus additional testing tools used for quickly accessing and modifying devices. Test images are great for:
 -  Developers, hardware vendors, and manufacturers (OEMs) who are trying out new device designs.
 -  Hobbyists and organizations that are creating devices designed to run in non-networked or controlled network environments.
 
-You can create **retail images**, which can be made more secure for public or corporate networks while still receiving updates.
+Perfect your customizations, including apps, settings, hardware configurations, and board support packages (BSPs).
 
-You can add customizations, including apps, settings, hardware configurations, and board support packages (BSPs).
-
-For OEM-style images, you’ll wrap your customizations into package (.cab) files. Packages let OEMs, ODMs, developers, and Microsoft work together to help deliver security and feature updates to your devices without stomping on each other's work.
+When you're ready to produce devices to sell, create **retail images** with official signed certificates that are stripped of the testing tools.
 
 
 ## <span id="Scenarios"></span><span id="scenarios"></span><span id="SCENARIOS"></span>Scenarios
