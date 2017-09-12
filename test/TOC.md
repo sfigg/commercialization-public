@@ -2,7 +2,7 @@
 
 ## [Windows Hardware Lab Kit](hlk/windows-hardware-lab-kit.md)
 ## [Windows Hardware Certification Kit](https://msdn.microsoft.com/library/windows/hardware/jj124227.aspx)
-
+## [Windows HLK Test TOC](hlk/TOC.md)
 ## [Windows Performance Toolkit](wpt/index.md)
 ### [What's New in the Windows Performance Toolkit](wpt/whats-new-in-the-windows-performance-toolkit.md)
 
