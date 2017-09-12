@@ -140,7 +140,7 @@ For a full list of COSA settings, please see [Planning your COSA/APN database su
 
 2. Unzip the package and open the answer file.
 
-3. Edit the profile settings in the answer file using the `Replace` operator. Do not remove settings from the answer file as this will remove them from the profile in the COSA database.
+3. Edit settings in the answer file using the `Replace` operator. Do not remove settings from the answer file as this will remove them from the profile in the COSA database.
 
   ```
   <Replace Name="MobileCarrier1 (Replaced)">
