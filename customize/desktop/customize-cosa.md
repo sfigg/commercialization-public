@@ -136,11 +136,21 @@ For a full list of COSA settings, please see [Planning your COSA/APN database su
 
 ## To change an existing profile  
 
+> [!Important]
+> When using `Replace` to change or remove a profile, there are certain settings, listed below, which should not be modified or removed by OEMs. These settings are either system specific, or contractual settings between Microsoft and Mobile Operators (MOs), and their values should be preserved.
+> 
+> * Support DataMarketplace
+> * DataMarketplace Roaming UI Enabled
+> * Account Experience URL
+> * Branding Name
+> * Branding Icon Name
+> * Use Branding Name on Roaming
+
 1. Navigate to the provisioning package (PPKG) that shipped with the operating system. It should be in the following location: %WINDIR%\Provisioning\COSA\OEM.
 
 2. Unzip the package and open the answer file.
 
-3. Edit settings in the answer file using the `Replace` operator. Do not remove settings from the answer file as this will remove them from the profile in the COSA database.
+3. Edit the answer file to use the `Replace` operator, and make changes to any settings that require modification. Leave all other settings as they are.
 
   ```
   <Replace Name="MobileCarrier1 (Replaced)">
@@ -188,19 +198,13 @@ For a full list of COSA settings, please see [Planning your COSA/APN database su
    ```
 
    > [!Note]  
-> The TargetRef ID used by the Replace operator should be the profile GUID used by COSA.
+   > The TargetRef ID used by the Replace operator should be the profile GUID used by COSA.
 
 4. Create a provisioning package that includes the modified answer file. For more information, see [To build a provisioning package](https://docs.microsoft.com/en-us/windows/configuration/provisioning-packages/provisioning-command-line#to_build_a_provisioning_package).
 
 5. Place your provisioning packages (PPKG) in the following location: %WINDIR%\Provisioning\COSA\OEM.
 
 6. Perform necessary tests for validation.  
-
-> [!Important]
-> When using `Replace` to change a profile, there are certain settings, listed below, which should not be modified by OEMs. These settings are either system specific, or contractual settings between Microsoft and Mobile Operators (MOs).
-> 
-> * Support DataMarketplace
-> * DataMarketplace Roaming UI Enabled
 
 
 ## To remove an existing profile  
