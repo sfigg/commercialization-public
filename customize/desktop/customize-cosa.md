@@ -27,7 +27,7 @@ In Windows 10, version 1703, we added the Country and Operator Settings Asset (C
 
 COSA can be extended with OEM-generated provisioning packages during desktop imaging. This enables OEMs to replace or extend existing COSA profiles, as well as introduce new ones.  For example, you can add a profile for a mobile virtual network operator (MVNO) not currently in COSA, or a new partner for Data Marketplace. You can also replace or disable an existing profile.  
 
-It is recommended that your organization submit any MO profile changes made to extend COSA to Microsoft. To learn more, see [APN database submission](https://docs.microsoft.com/en-us/windows-hardware/drivers/mobilebroadband/apn-database-submission).
+It is recommended that your organization submit any MO profile changes made to extend COSA to Microsoft. To learn more, and to review a full list of profile settings and their descriptions, see [APN database submission](https://docs.microsoft.com/en-us/windows-hardware/drivers/mobilebroadband/apn-database-submission).
 
 ## To add a new profile
 
@@ -185,14 +185,22 @@ You can add a new profile that is not yet included in the COSA database using th
         </Replace>
    ```
 
+   > [!Note]  
+> The TargetRef ID used by the Replace operator should be the profile GUID used by COSA.
+
 4. Create a provisioning package that includes the modified answer file. For more information, see [To build a provisioning package](https://docs.microsoft.com/en-us/windows/configuration/provisioning-packages/provisioning-command-line#to_build_a_provisioning_package).
 
 5. Place your provisioning packages (PPKG) in the following location: %WINDIR%\Provisioning\COSA\OEM.
 
 6. Perform necessary tests for validation.  
 
-> [!Note]  
-> The TargetRef ID used by the Replace operator should be the profile GUID used by COSA.
+> [!Important]
+> When using `Replace` to change a profile, there are certain settings, listed below, which are not supported for OEM extensibility. These settings are either system specific, or contractual settings between Microsoft and Mobile Operators (MOs).
+> 
+> * Support DataMarketplace
+> 
+> * DataMarketplace Roaming UI Enabled
+
 
 ## To remove an existing profile  
 
@@ -218,10 +226,3 @@ You can add a new profile that is not yet included in the COSA database using th
 
 > [!Note]
 > The settings included in a Replace element are applied instead of the original COSA settings. If no settings are specified, the operation becomes a Removal.
-
-## Non-configurable COSA settings
-
-The following COSA settings are internal to Microsoft, and aren't intended to be modified by OEMs or MOs.
-* Support DataMarketplace: This setting indicates whether or not this SIM supports the Data Marketplace features. If this setting is absent, the SIM is considered not a Data Marketplace SIM and the Data Marketplace features are not supported for this SIM.
-
-* DataMarketplace Roadming UI Enabled: This setting indicates whether roaming UI should be shown for this DataMarketplace SIM.
