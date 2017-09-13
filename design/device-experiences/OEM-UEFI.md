@@ -32,7 +32,7 @@ Firmware that meets the UEFI 2.3.1 specifications provides the following benefit
 To download Windows, see [the Windows 10 download page](https://www.microsoft.com/en-us/software-download/windows10). If you want to use media like a USB flash drive, a DVD, or an ISO, dowload the [Windows Media creation tool](https://www.microsoft.com/en-us/software-download/windows10?d2784474-fdb0-4e9d-9e47-5e88c0e053ec=True). 
 
 ## Boot requirements
-<p>As the OEM, you must provide support for the features outlined in the Hardware Compatibility Specification for Systems for Windows(), specifically the following items. </p>
+<p>As the OEM, you must provide support for the features outlined in the [Hardware Compatibility Specification for Systems for Windows](https://msdn.microsoft.com/en-us/library/windows/hardware/dn932805.aspx), specifically the following items. </p>
 
 - [System.Fundamentals.Firmware.UEFIBitLocker](https://msdn.microsoft.com/en-us/library/windows/hardware/dn932805.aspx#systemfundamentalsfirmwareuefibitlocker)
 - [System.Fundamentals.Firmware.UEFICompatibility](https://msdn.microsoft.com/en-us/library/windows/hardware/dn932805.aspx#systemfundamentalsfirmwareueficompatibility)
@@ -40,9 +40,6 @@ To download Windows, see [the Windows 10 download page](https://www.microsoft.co
 - [System.Fundamentals.Firmware.UEFILegacyFallback](https://msdn.microsoft.com/en-us/library/windows/hardware/dn932805.aspx#systemfundamentalsfirmwareuefilegacyfallback)
 - [System.Fundamentals.Firmware.UEFISecureBoot](https://msdn.microsoft.com/en-us/library/windows/hardware/dn932805.aspx#systemfundamentalsfirmwareuefisecureboot)
 - [System.Fundamentals.Firmware.UEFITimingClass](https://msdn.microsoft.com/en-us/library/windows/hardware/dn932805.aspx#systemfundamentalsfirmwareuefitimingclass)
-
-
-- UEFI firmware must support secure firmware update following Hardware Compatibility Specification for Systems for Windows 10 under .
 
 ## Runtime requirements
 Windows minimizes its use of UEFI services during operating system runtime and, wherever possible, relies on runtime firmware such as ACPI and Windows drivers. Windows uses the following UEFI Runtime Services to manage NVRAM boot entries and hardware error records after ExitBootServices() is called.
