@@ -15,7 +15,7 @@ ms.technology: windows-oem
 
 The Windows Core Operating System includes a set of required features and a set of optional features that can be included in your devices. 
 
-Add features by including them in your image configuration file (OEMInput). To learn more, see the [WCOS manufacturing guide](core-manufacturing-guide.md).
+Add features by including them in your image configuration file (OEMInput.xml). To learn more, see the [WCOS manufacturing guide](core-manufacturing-guide.md).
 
 ## Retail features defined by Microsoft
 
