@@ -31,7 +31,7 @@ For a device to support Windows Defender Credential Guard as specified in the Wi
 
 
 
-| Hardware requirement | Details |
+| Requirement | Details |
 |----------------------|---------|
 | Virtualization-based security (VBS) | Credential Guard requires VBS. You can learn more about VBS by reading [Virtualization-based Security (VBS) hardware requirements](https://review.docs.microsoft.com/en-us/windows-hardware/design/device-experiences/oem-vbs?branch=dawn-security-toc). |
 | Secure Boot | Hardware-based Secure Boot must be supported. To learn more, see [Secure Boot](OEM-secure-boot.md)| 
