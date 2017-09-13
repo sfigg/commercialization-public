@@ -382,8 +382,8 @@
 ### [Update the time server](iot/update-the-time-server.md)
 
 ## [WCOS manufacturing](wcos/index.md)
-### [WCOS manufacturing guide](wcos/iot-core-manufacturing-guide.md)
-#### [Get the tools needed to customize Windows IoT Core](wcos/set-up-your-pc-to-customize-iot-core.md)
+### [WCOS manufacturing guide](wcos/core-manufacturing-guide.md)
+#### [Get the tools needed to customize Windows Core](wcos/set-up-your-pc-to-customize-core.md)
 #### [Lab 1a: Create a basic image](wcos/create-a-basic-image.md)
 #### [Lab 1b: Add an app to your image](wcos/deploy-your-app-with-a-standard-board.md)
 ##### [Test an appx file on an IoT device](wcos/test-the-app.md)

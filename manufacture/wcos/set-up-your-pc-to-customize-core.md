@@ -22,7 +22,7 @@ Here's how we'll refer to them:
 
 -   **Technician PC**: Your work PC. This PC should have at least 15GB of free space for installing the software and for modifying IoT Core images.
 
-    We recommend either Windows 10 or Windows 8.1 with the latest updates. The minimum requirement is Windows 7 SP1, though this may require additional tools or workarounds for tasks such as mounting .ISO images.
+    We recommend using Windows 10 or Windows 8.1 with the latest updates. The minimum requirement is Windows 7 SP1, though this may require additional tools or workarounds for tasks such as mounting .ISO images.
 
 -   **IoT device**: A test device or board that represents all of the devices in a single model line.
 
