@@ -24,8 +24,7 @@ For information on how the secure boot process works included Trusted Boot and M
 ## Secure boot requirements
 
 In order to support Secure boot, you must provide the following. 
-
-- UEFI 2.3.1 Errata C or higher.
+- UEFI Version 2.3.1 Errata C variables must be set to **SecureBoot=1** and **SetupMode=0** with a signature database (EFI_IMAGE_SECURITY_DATABASE) necessary to boot the machine securely pre-provisioned, and including a PK that is set in a valid KEK database. For more information, see [System.Fundamentals.Firmware.UEFISecureBoot](https://docs.microsoft.com/en-us/windows-hardware/design/compatibility/systems#systemfundamentalsfirmwareuefisecureboot).
 - The platform exposes an interface that adheres to the profile of UEFI v2.3.1 Section 27.
 - The platform must come provisioned with the correct keys in the UEFI Signature database (db) to allow Windows to boot. It must also support secure authenticated updates to the databases.
 Storage of secure variables must be isolated from the running operating system such that they cannot be modified without detection.
@@ -34,7 +33,6 @@ When power is turned on, the system starts executing code in the firmware and us
 - The system must protect against rollback of firmware to older versions.
 The platform provides the EFI_HASH_PROTOCOL (per UEFI v2.3.1) for offloading cryptographic hash operations and the EFI_RNG_PROTOCOL (Microsoft defined) for accessing platform entropy. 
 - The Hardware Security Test Interface (HSTI) must be implemented. To learn more, see the [Hardware Security Testability Specification](https://msdn.microsoft.com/en-us/library/windows/hardware/mt712332(v=vs.85).aspx). This is independent of Modern Standby/Connected Standby Systems; all systems using Credential Guard must pass HSTI 1.1.a.After the system is powered on, Secure Boot provides protections against physically present attackers, and defense-in-depth against malware. HSTI provides additional security assurance for correctly secured silicon and platform. UEFI Secure Boot ensures that the device boots with only authorized code in the pre-OS environment. 
-- UEFI Version 2.3.1 Errata C variables must be set to **SecureBoot=1** and **SetupMode=0** with a signature database (EFI_IMAGE_SECURITY_DATABASE) necessary to boot the machine securely pre-provisioned, and including a PK that is set in a valid KEK database. For more information, see [System.Fundamentals.Firmware.UEFISecureBoot](https://docs.microsoft.com/en-us/windows-hardware/design/compatibility/systems#systemfundamentalsfirmwareuefisecureboot).
 
 ## Signature Databases and Keys
 

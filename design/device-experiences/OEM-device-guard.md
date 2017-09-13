@@ -30,7 +30,7 @@ For a device to support Windows Defender Exploit Guard as specified in the Windo
 
 | Requirement | Details |
 |----------------------|---------|
-| Virtualization-based security (VBS) | Credential Guard requires VBS. You can learn more about VBS by reading [Virtualization-based Security (VBS) hardware requirements](https://review.docs.microsoft.com/en-us/windows-hardware/design/device-experiences/oem-vbs?branch=dawn-security-toc). |
+| Virtualization-based security (VBS) | Credential Guard requires VBS. You can learn more about VBS by reading [Virtualization-based Security (VBS)](https://review.docs.microsoft.com/en-us/windows-hardware/design/device-experiences/oem-vbs?branch=dawn-security-toc). |
 | Secure Boot | Hardware-based Secure Boot must be supported. To learn more, see [Secure Boot](OEM-secure-boot.md). | 
 | Trusted Platform Module (TPM) 2.0 | TPM 2.0 provides protection for VBS encryption keys that are stored in the firmware. Credential Guard data is protected against attacks involving a physically present user with BIOS and hardware access. For more information, see [Trusted Platform Module 2.0](OEM-TPM.md).|
 | Secure Memory Overwrite Request (MOR) revision 2 | A secure MOR bit prevents certain memory attacks that Credential Guard requires. For more information, see [Secure MOR implementation](https://docs.microsoft.com/en-us/windows-hardware/drivers/bringup/device-guard-requirements). |
