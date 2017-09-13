@@ -20,7 +20,7 @@ Windows Defender Device Guard can also leverage advanced hardware features on ha
 
 If you are an OEM building secure systems, you must provide the hardware to enable these features.
 
-**Note**  If you are an enterprise IT administrator looking to deploy Device Guard, see [Windows Defender Device Guard deployment guide](https://docs.microsoft.com/en-us/windows/device-security/device-guard/device-guard-deployment-guide).
+**IT Professionals;**  If you want more information on how to deploy Device Guard, see [Windows Defender Device Guard deployment guide](https://docs.microsoft.com/en-us/windows/device-security/device-guard/device-guard-deployment-guide).
 
 ## Windows Defender Exploit Guard
 
