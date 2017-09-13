@@ -32,7 +32,9 @@ Storage of secure variables must be isolated from the running operating system s
 - All firmware components are signed using at least RSA-2048 with SHA-256.
 When power is turned on, the system starts executing code in the firmware and uses public key cryptography as per algorithm policy to verify the signatures of all images in the boot sequence, up to and including the Windows Boot Manager.
 - The system must protect against rollback of firmware to older versions.
-The platform provides the EFI_HASH_PROTOCOL (per UEFI v2.3.1) for offloading cryptographic hash operations and the EFI_RNG_PROTOCOL (Microsoft defined) for accessing platform entropy.
+The platform provides the EFI_HASH_PROTOCOL (per UEFI v2.3.1) for offloading cryptographic hash operations and the EFI_RNG_PROTOCOL (Microsoft defined) for accessing platform entropy. 
+- The Hardware Security Test Interface (HSTI) must be implemented. To learn more, see the [Hardware Security Testability Specification](https://msdn.microsoft.com/en-us/library/windows/hardware/mt712332(v=vs.85).aspx). This is independent of Modern Standby/Connected Standby Systems; all systems using Credential Guard must pass HSTI 1.1.a.After the system is powered on, Secure Boot provides protections against physically present attackers, and defense-in-depth against malware. HSTI provides additional security assurance for correctly secured silicon and platform. UEFI Secure Boot ensures that the device boots with only authorized code in the pre-OS environment. 
+- UEFI Version 2.3.1 Errata C variables must be set to **SecureBoot=1** and **SetupMode=0** with a signature database (EFI_IMAGE_SECURITY_DATABASE) necessary to boot the machine securely pre-provisioned, and including a PK that is set in a valid KEK database. For more information, see [System.Fundamentals.Firmware.UEFISecureBoot](https://docs.microsoft.com/en-us/windows-hardware/design/compatibility/systems#systemfundamentalsfirmwareuefisecureboot).
 
 ## Signature Databases and Keys
 
