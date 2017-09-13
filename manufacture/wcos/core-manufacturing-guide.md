@@ -107,15 +107,15 @@ Start here: [Get the tools needed to customize Windows Core](set-up-your-pc-to-c
 
 ## <span id="related_topics"></span>Related topics
 
-[Learn about Windows 10 IoT Core](https://developer.microsoft.com/windows/iot/iotcore)
-
-[IoT Core Developer Resources](https://developer.microsoft.com/windows/iot)
-
-[What's in the Windows ADK IoT Core Add-ons](iot-core-adk-addons.md)
-
 [WCOS feature list](core-feature-list.md)
 
-[IoT Core Add-ons command-line options](iot-core-adk-addons-command-line-options.md)
+~~[Learn about Windows 10 IoT Core](https://developer.microsoft.com/windows/iot/iotcore)~~
+
+~~[IoT Core Developer Resources](https://developer.microsoft.com/windows/iot)~~
+
+~~[What's in the Windows ADK IoT Core Add-ons](iot-core-adk-addons.md)~~
+
+~~[IoT Core Add-ons command-line options](iot-core-adk-addons-command-line-options.md)~~
 
  
 

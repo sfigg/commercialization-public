@@ -24,7 +24,7 @@ Here's how we'll refer to them:
 
     We recommend using Windows 10 or Windows 8.1 with the latest updates. The minimum requirement is Windows 7 SP1, though this may require additional tools or workarounds for tasks such as mounting .ISO images.
 
--   **IoT device**: A test device or board that represents all of the devices in a single model line.
+-   **Windows device**: A test device or board that represents all of the devices in a single model line.
 
     For our examples, you'll need a Raspberry Pi 3. To see more options, see [Device options](https://developer.microsoft.com/windows/iot/explore/deviceoptions).
 
