@@ -14,7 +14,7 @@ ms.technology: windows-oem
 # Windows Core Operating System (WCOS) manufacturing guide
 
 ## <span id="Step-by-step guides"></span><span id="scenarios"></span><span id="SCENARIOS"></span>Step-by-step guides
--   [Get the tools needed to customize Windows IoT Core](set-up-your-pc-to-customize-core.md)
+-   [Get the tools needed to customize WCOS](set-up-your-pc-to-customize-core.md)
 -   [Lab 1a: Create a basic image](create-a-basic-image.md)
 -   [Lab 1b: Add an app to your image](deploy-your-app-with-a-standard-board.md)
 -   [Lab 1c: Add a file and a registry setting to an image](add-a-registry-setting-to-an-image.md)
@@ -32,9 +32,11 @@ Windows Core is the base operating system which is common to wide range of devic
 ### How is Windows Core different from Windows 10?
 
 * **Windows Core doesn't include generic device drivers**. It's designed to be lightweight and secure. Part of this design means not including a lot of the generic device drivers and features supported by Windows 10. 
+
 To build a device, you'll need to add your own drivers. If you're using hardware from another manufacturer, that manufacturer will typically combine all of the drivers you'll need into a Board Support Package (BSP). If you're creating hardware for other OEMs to use, you'll need to build support packages for them, which we'll discuss in this guide.
 
-* **Windows Core requires apps and drivers that run on the Universal Windows Platform (UWP) model**. Many Windows 10 devices use UWP apps and drivers already - UWP apps and drivers are more secure and easier to update cleanly.
+* **Windows Core requires apps and drivers that run on the Universal Windows Platform (UWP) model**. Many manufacturers create UWP apps and [Universal Windows drivers](https://docs.microsoft.com/en-us/windows-hardware/drivers/develop/getting-started-with-universal-drivers) for existing Windows 10 PCs and devices.
+
 Legacy Windows apps and drivers must be repackaged to meet the UWP standards before they can be added to the device. 
 
 * **Windows Core uses the Windows packaging model to track and update everything that's on the device.** Packages let OEMs, ODMs, developers, and Microsoft work together to help deliver security and feature updates to your devices without stomping on each other's work.
@@ -42,7 +44,7 @@ Legacy Windows apps and drivers must be repackaged to meet the UWP standards bef
 ### Windows packaging model
 
 #### Packages
-*  **Everything you add is packaged**. Every file, folder, setting and customization that you add to the image gets captured into trackable package files.
+*  **Everything you add is packaged**. Every file, folder, setting and customization that you add to the device is included in a package. Each package includes a package project file (*.wm.xml) that lists the content and its locations.
 *  **Packages are signed**. Every customization on your device is trackable to a package with a signature. Only you and partners that you trust can update the packages.
 *  **Packages are versioned for easy web-based updates**. Need to change a setting or a file? Update the package and put it on an update server, and the devices can update themselves.
 
@@ -50,11 +52,12 @@ Legacy Windows apps and drivers must be repackaged to meet the UWP standards bef
 
 #### <span id="Feature_manifests__FMs_"></span><span id="feature_manifests__fms_"></span><span id="FEATURE_MANIFESTS__FMS_"></span>Feature manifests
 
-Use [feature manifest files]((https://msdn.microsoft.com/library/windows/hardware/dn756745)) to track the locations of the packages, and use feature IDs so you can easily refer to them when making your own images.
+* [Feature manifest files]((https://msdn.microsoft.com/library/windows/hardware/dn756745)) track the locations of all of your packages. 
+  -  OEMs create feature manifests (OEMFM.xml) to track OEM customizations.
+  -  Hardware manufactuers create feature manifests (BSPFM.xml) to track the drivers and settings used to support a motherboard. For example, OEM\_RPi2FM.xml includes all of the features used for the Raspberry Pi 2.
+  -  Windows Core uses its own feature manifest and packages.
 
--  OEMs create feature manifests (OEMFM.xml) to track OEM customizations.
--  Hardware manufactuers create feature manifests (BSPFM.xml) to track the drivers and settings used to support a motherboard. For example, OEM\_RPi2FM.xml includes all of the features used for the Raspberry Pi 2.
--  Windows Core uses its own feature manifest and packages.
+* Tag the packages with feature IDs so you can easily refer to them when making your own images.
 
 ![A sample feature manifest (feature manifest) includes paths to the package file, and assigns them feature IDs](images/WCOS-feature_manifest.png)
 
@@ -100,7 +103,7 @@ These are the same tools used to create Windows 10 IoT Core and Mobile images. 
 
 ## <span id="OK__let_s_try_it_"></span><span id="ok__let_s_try_it_"></span><span id="OK__LET_S_TRY_IT_"></span>OK, let's try it!
 
-Start here: [Get the tools needed to customize Windows Core](set-up-your-pc-to-customize-iot-core.md).
+Start here: [Get the tools needed to customize Windows Core](set-up-your-pc-to-customize-core.md).
 
 ## <span id="related_topics"></span>Related topics
 
@@ -110,7 +113,7 @@ Start here: [Get the tools needed to customize Windows Core](set-up-your-pc-to-c
 
 [What's in the Windows ADK IoT Core Add-ons](iot-core-adk-addons.md)
 
-[IoT Core feature list](iot-core-feature-list.md)
+[WCOS feature list](core-feature-list.md)
 
 [IoT Core Add-ons command-line options](iot-core-adk-addons-command-line-options.md)
 

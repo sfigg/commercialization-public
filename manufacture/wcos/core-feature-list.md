@@ -1,21 +1,21 @@
 ---
 author: kpacquer
-Description: 'Here''s the features you can add to Windows 10 IoT Core (IoT Core) images.'
+Description: Windows Core Operating System (WCOS) feature manifest
 ms.assetid: cbae6949-ccfe-4015-a9b0-a269f6f30d5a
 MSHAttr: 'PreferredLib:/library'
-title: IoT Core feature list
-ms.author: themar
-ms.date: 05/02/2017
+title: Windows Core Operating System (WCOS) features
+ms.author: kenpacq
+ms.date: 09/02/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-# IoT Core feature list
+# Windows Core Operating System feature manifest
 
-Here's the features you can add to Windows 10 IoT Core (IoT Core) images.
+The Windows Core Operating System includes a set of required features and a set of optional features that can be included in your devices. 
 
-Add features using the OEMInput XML file. To learn more, see the [IoT Core manufacturing guide](iot-core-manufacturing-guide.md).
+Add features by including them in your image configuration file (OEMInput). To learn more, see the [WCOS manufacturing guide](core-manufacturing-guide.md).
 
 ## Retail features defined by Microsoft
 
@@ -136,4 +136,4 @@ The following table describes the Microsoft-defined test features that can be us
 
 [What's in the Windows ADK IoT Core Add-ons](iot-core-adk-addons.md)
 
-[IoT Core manufacturing guides](iot-core-manufacturing-guide.md)
+[WCOS manufacturing guides](iot-core-manufacturing-guide.md)

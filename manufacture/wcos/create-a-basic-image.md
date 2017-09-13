@@ -19,7 +19,7 @@ We'll create a product folder that represents our first design. For our first pr
 
 ## Prerequisites
 
-See [Get the tools needed to customize Windows IoT Core](set-up-your-pc-to-customize-iot-core.md) to get your technician PC ready.
+See [Get the tools needed to customize Windows IoT Core](](set-up-your-pc-to-customize-core.md) to get your technician PC ready.
 
 ## Create a basic image
 
@@ -103,7 +103,7 @@ This creates the folder: C:\\IoT-ADK-AddonKit\\Source-&lt;arch&gt;\\Products\\Pr
     Troubleshooting:
 	
 	-  ERROR CODES: 0x80070005 or 0x800705b4: Unplug all external drives (including micro SD cards and USB thumb drives), and try again.  
-	If this doesn't work, go back to [Set up your PC and download the samples](set-up-your-pc-to-customize-iot-core.md) and make sure everything's installed.
+	If this doesn't work, go back to [Set up your PC and download the samples](set-up-your-pc-to-customize-core.md) and make sure everything's installed.
 
 ### <span id="Flash_an_image"></span>Flash the image to a memory card
 

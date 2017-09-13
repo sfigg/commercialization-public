@@ -22,7 +22,7 @@ For this lab, we'll use the ProductB, that includes the default app (Bertha), wh
 
 ## Prerequisites
 
-* See [Get the tools needed to customize Windows IoT Core](set-up-your-pc-to-customize-iot-core.md) to get your technician PC ready.
+* See [Get the tools needed to customize Windows IoT Core](Core](set-up-your-pc-to-customize-core.md) to get your technician PC ready.
 
 * Use ProductB that you created in [Lab 1c: Add a file and a registry setting to an image](add-a-registry-setting-to-an-image.md).
 

@@ -10,17 +10,17 @@ ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-# Get the tools needed to customize Windows Core Operating System
+# Get the tools needed to customize Windows Core Operating System (WCOS)
 
 
-Here's the software you'll need to create OEM images using the Windows Core Operating System (WCOS):
+Here's the software you'll need to create devices running the Windows Core Operating System (WCOS):
 
 ## <span id="PCs_and_devices"></span><span id="pcs_and_devices"></span><span id="PCS_AND_DEVICES"></span>PCs and devices
 
 
 Here's how we'll refer to them:
 
--   **Technician PC**: Your work PC. This PC should have at least 15GB of free space for installing the software and for modifying IoT Core images.
+-   **Technician PC**: Your work PC. This PC should have at least 15GB of free space for installing the software and for creating Windows images.
 
     We recommend using Windows 10 or Windows 8.1 with the latest updates. The minimum requirement is Windows 7 SP1, though this may require additional tools or workarounds for tasks such as mounting .ISO images.
 

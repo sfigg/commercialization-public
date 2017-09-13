@@ -13,19 +13,17 @@ ms.technology: windows-oem
 
 # Windows Core Operating System (WCOS)
 
-Windows Core is a version of Windows used to build a wide range of devices, including HoloLens, Xbox, PCs, phones and Nano Servers. It's designed to help you create devices that run apps & drivers built for the Universal Windows Platform (UWP) that are more compact, servicable, and secure.
+Windows Core Operating System (WCOS) is a version of Windows used to build a wide range of devices, including HoloLens, Xbox, PCs, phones and Nano Servers. It's designed to help you create devices that run apps & drivers built for the Universal Windows Platform (UWP) that are more compact, servicable, and secure.
 
-OEMs can manufacture and deploy devices using WCOS using existing or custom-built hardware. To see existing recommended hardware, see the [Hardware Compatibility List](http://go.microsoft.com/fwlink/?LinkID=532948).
+OEMs can manufacture and deploy devices with WCOS using existing or custom-built hardware. To see existing recommended hardware, see the [Hardware Compatibility List](http://go.microsoft.com/fwlink/?LinkID=532948).
 
 When developing your own devices, see the [Minimum hardware requirements](https://docs.microsoft.com/en-us/windows-hardware/design/minimum/minimum-hardware-requirements-overview).
 
 ## <span id="in_this_section"></span>In this section
 
-* [What's new in Manufacturing](whats-new-in-manufacturing.md)
+* [WCOS manufacturing guide](core-manufacturing-guide.md)
 
-* [Core manufacturing guide](core-manufacturing-guide.md)
-
-* [IoT Core feature list](iot-core-feature-list.md)
+* [WCOS feature list](core-feature-list.md)
 
 * [Windows ADK IoT Core Add-ons contents](iot-core-adk-addons.md)
 

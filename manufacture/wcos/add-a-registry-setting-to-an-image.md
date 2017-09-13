@@ -23,7 +23,7 @@ For this lab, we'll start an new product, ProductB, so that later we can use the
 
 ## <span id="Prerequisites"></span><span id="prerequisites"></span><span id="PREREQUISITES"></span>Prerequisites
 
-See [Get the tools needed to customize Windows IoT Core](set-up-your-pc-to-customize-iot-core.md) to get your technician PC ready.
+See [Get the tools needed to customize Windows IoT Core](Core](set-up-your-pc-to-customize-core.md) to get your technician PC ready.
 
 ## <span id="Create_your_test_files"></span><span id="create_your_test_files"></span><span id="CREATE_YOUR_TEST_FILES"></span>Create your test files
 

@@ -82,7 +82,7 @@ Includes the [IoT Core Add-ons command-line options](iot-core-adk-addons-command
 
 [IoT Core manufacturing guides](iot-core-manufacturing-guide.md)
 
-[IoT Core feature list](iot-core-feature-list.md)
+[WCOS feature list](core-feature-list.md)
 
 
  
