@@ -150,7 +150,7 @@ Use the `Replace` operator to make changes to an existing profile.
 
 1. Navigate to the provisioning package (PPKG) where the COSA database is stored. It should be in the following location: %WINDIR%\Provisioning\COSA\Microsoft.
 
-2. Unzip the package and open the answer file. You can use a third-party tool, such as 7-Zip File Manager ([www.7-Zip.org](www.7-Zip.org)), to inspect and unzip the package.
+2. Unzip the package and open the answer file. You can use a third-party tool, such as 7-Zip File Manager ([www.7-Zip.org](http://www.7-zip.org/)), to inspect and unzip the package.
 
 3. Edit the answer file to use the `Replace` operator, and only make changes to settings that require modification. Leave all other settings as they are.
 
@@ -213,7 +213,7 @@ Use the `Replace` operator to make changes to an existing profile.
 
 1. Navigate to the provisioning package (PPKG) where the COSA database is stored. It should be in the following location: %WINDIR%\Provisioning\COSA\Microsoft.
 
-2. Unzip the package and open the answer file. You can use a third-party tool, such as 7-Zip File Manager ([www.7-Zip.org](www.7-Zip.org)), to inspect and unzip the package.
+2. Unzip the package and open the answer file. You can use a third-party tool, such as 7-Zip File Manager ([www.7-Zip.org](http://www.7-zip.org/)), to inspect and unzip the package.
 
 3. Edit the answer file to use the `Replace`operator. Delete any settings you wish to remove from the COSA database. Here is an example:  
 
