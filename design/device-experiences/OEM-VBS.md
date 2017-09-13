@@ -1,5 +1,5 @@
 ---
-title: Virtualization Based Security (VBS) hardware requirements
+title: Virtualization Based Security (VBS)
 description: Provides guidance on what an OEM should do to enable VBS
 MSHAttr:
 - 'PreferredSiteName:MSDN'
@@ -11,7 +11,7 @@ ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-# Virtualization-based Security (VBS) hardware requirements
+# Virtualization-based Security (VBS)
 Hardware-based security features, also called virtualization-based security or VBS, provides isolation of secure kernel from normal operating system. Vulnerabilities and Day zero attacks in the operating system cannot be exploited because of this isolation.
 
 VBS requires the following components be present and properly configured. 
@@ -19,7 +19,7 @@ VBS requires the following components be present and properly configured.
 | Hardware requirement | Details |
 |----------------------|---------|
 | 64-bit CPU | Virtualization-based security (VBS) features requires Windows hypervisor, which is only supported on 64-bit processors. |
-| Virtualization machines extensions - (Intel VT-X , AMD-V, ARM 8.2), with extended page tables  | VBS only works if the processor supports virtualization with second level address translation. | VBS is the foundation of a number of OS features, such as Device Guard, Credential Guard, Application Guard.   VBS works only if the processor supports virtualization with second level address translation (SLAT) support. This is required to support virtualization based security.|
+| Virtualization machine extensions - (Intel VT-X , AMD-V, ARM 8.2), with extended page tables  | VBS only works if the processor supports virtualization with second level address translation. | VBS is the foundation of a number of OS features, such as Device Guard, Credential Guard, Application Guard.   VBS works only if the processor supports virtualization with second level address translation (SLAT) support. This is required to support virtualization based security.|
 | All I/O devices should be behind an IOMMU/SMMU (Intel VT-D, AMD-Vi, ARM64 SMMUs) or also called Input/output memory management units | In Windows 10, an IOMMU can be used to enhance system resiliency against memory attacks. For more information, see [ACPI system description tables](https://docs.microsoft.com/en-us/windows-hardware/drivers/bringup/acpi-system-description-tables). System IOMMUs need to support at least one stage of address translation: from GPA to SPA (Intel VT-D, AMD-Vi, ARM64 SMMUs). |
 | Trusted Platform Module (TPM) 2.0 | TPMs, either discrete or firmware, will suffice. |
 | Firmware support for SMM protection | The [Windows SMM Security Mitigations Table (WMST) specification](https://docs.microsoft.com/en-us/windows-hardware/drivers/bringup/acpi-system-description-tables) contains details of an Advanced Configuration and Power Interface (ACPI) table that was created for use with Windows operating systems that support Windows virtualization-based security (VBS) features. Any vulnerabilities in UEFI runtime services are blocked from compromising VBS. |
