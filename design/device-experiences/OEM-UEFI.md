@@ -34,12 +34,12 @@ To download Windows, see [the Windows 10 download page](https://www.microsoft.co
 ## Boot requirements
 <p>As the OEM, you must provide support for the features outlined in the Hardware Compatibility Specification for Systems for Windows(), specifically the following items. </p>
 
-- System.Fundamentals.Firmware.UEFIBitLocker
-- System.Fundamentals.Firmware.UEFICompatibility
-- System.Fundamentals.Firmware.UEFIDefaultBoot
-- System.Fundamentals.Firmware.UEFILegacyFallback
+- [System.Fundamentals.Firmware.UEFIBitLocker](https://msdn.microsoft.com/en-us/library/windows/hardware/dn932805.aspx#systemfundamentalsfirmwareuefibitlocker)
+- [System.Fundamentals.Firmware.UEFICompatibility](https://msdn.microsoft.com/en-us/library/windows/hardware/dn932805.aspx#systemfundamentalsfirmwareueficompatibility)
+- [System.Fundamentals.Firmware.UEFIDefaultBoot](https://msdn.microsoft.com/en-us/library/windows/hardware/dn932805.aspx#systemfundamentalsfirmwareuefidefaultboot)
+- [System.Fundamentals.Firmware.UEFILegacyFallback](https://msdn.microsoft.com/en-us/library/windows/hardware/dn932805.aspx#systemfundamentalsfirmwareuefilegacyfallback)
 - [System.Fundamentals.Firmware.UEFISecureBoot](https://msdn.microsoft.com/en-us/library/windows/hardware/dn932805.aspx#systemfundamentalsfirmwareuefisecureboot)
-- System.Fundamentals.Firmware.UEFITimingClass
+- [System.Fundamentals.Firmware.UEFITimingClass](https://msdn.microsoft.com/en-us/library/windows/hardware/dn932805.aspx#systemfundamentalsfirmwareuefitimingclass)
 
 
 - UEFI firmware must support secure firmware update following Hardware Compatibility Specification for Systems for Windows 10 under .
