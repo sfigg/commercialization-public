@@ -13,13 +13,13 @@ ms.technology: windows-oem
 
 # Windows Full Flash Update (FFU) images
 
-You can deploy Windows faster on the factory floor by using the Full Flash Update (FFU) image format. FFU images allow you to apply an image of a phyisical drive, including Windows and system partition information all at once directly to a different drive or an SD card.
+You can deploy Windows faster on the factory floor by using the Full Flash Update (FFU) image format. FFU images allow you to apply an image of a physical drive, including Windows, recovery, and system partition information all at once directly to a different drive or an SD card.
 
 Unlike the file-based WIM format, FFU is a sector-based file container that stores one or more disk images. Sector-based imaging mean that FFUs take less time to deploy, but have larger files sizes than WIMs. See [WIM vs. VHD vs. FFU: comparing image file formats](wim-vs-ffu-image-file-formats.md) for information about the differences between image formats.
 
 Starting with Windows 10, Version 1709, DISM has the ability to capture, deploy, and service FFUs, with the following limitations:
 - FFU captures of encrypted disks are not supported
-- Captures of disks that have VSS enabled are not supported
+- Captures of disks that have Volume Shadow Copy Service (VSS) enabled are not supported
 
 
 ## What you need to work with FFUs in Windows
@@ -28,7 +28,7 @@ To capture, deploy, and mount FFU images with DISM, you'll need to work in a Win
 
 To capture and deploy FFUs using the instructions below, you'll also need: 
 
-- A Windows PC that is ready to have an image captured from it. We'll refer to this as the reference PC. For a walkthrough on how to create an image that's ready for deployment, see the [Windows OEM deployment lab]().
+- A Windows PC that is ready to have an image captured from it. We'll refer to this as the reference PC. For a walkthrough on how to create an image that's ready for deployment, see the [Windows OEM deployment lab](oem-windows-deployment-and-imaging-walkthrough.md).
 - The latest version of the ADK, from [Download the Windows ADK](https://developer.microsoft.com/en-us/windows/hardware/windows-assessment-deployment-kit)
 - Bootable WinPE media for Windows 10, Version 1709 or later. See [WinPE: Create USB bootable drive](winpe-create-usb-bootable-drive.md) for instructions on how to create WinPE Media.
 - USB or network storage, formatted as NTFS with enough space to save the FFU. 16 GB is enough space to store an FFU of a basic Windows image. You can use the same USB drive for WinPE and storage if you follow the [instructions for creating a multipartiton USB drive](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/winpe-create-usb-bootable-drive#prepare-a-usb-drive).
