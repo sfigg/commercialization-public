@@ -17,7 +17,7 @@ You can deploy Windows faster on the factory floor by using the Full Flash Updat
 
 Unlike the file-based WIM format, FFU is a sector-based file container that stores one or more partitions. Sector-based imaging mean that FFUs take less time to deploy, but have larger files sizes than WIMs. See [WIM vs. VHD vs. FFU: comparing image file formats](wim-vs-ffu-image-file-formats.md) for information about the differences between image formats.
 
-Starting with Windows 10, Version 1709, DISM has the ability to capture, deploy, and service FFUs, with the following limitations:
+Starting with Windows 10, version 1709, DISM has the ability to capture, deploy, and service FFUs, with the following limitations:
 - The drive that an FFU is applied to has to be the same or larger than the drive it is captured from
 - FFU captures of encrypted disks are not supported
 - Captures of disks that have [Volume Shadow Copy Service (VSS)](https://technet.microsoft.com/en-us/library/ee923636.aspx) enabled are not supported
@@ -35,9 +35,11 @@ To capture and deploy FFUs using the instructions below, you'll also need:
 - The latest version of the ADK, from [Download the Windows ADK](https://developer.microsoft.com/en-us/windows/hardware/windows-assessment-deployment-kit)
 - Bootable WinPE media for Windows 10, Version 1709 or later. See [WinPE: Create USB bootable drive](winpe-create-usb-bootable-drive.md) for instructions on how to create WinPE Media.
 - Storage
-    - USB storage, formatted as NTFS with enough space to save the FFU. 16 GB is enough space to store an FFU of a basic Windows image. You can use the same USB drive for WinPE and storage if you follow the [instructions for creating a multipartiton USB drive](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/winpe-create-usb-bootable-drive#prepare-a-usb-drive). For best performance, you want to maximize I/O between where your FFU is stored and the destination PC. To maximize performance use a USB 3.0 drive to store the image, and an internal SSD for the destination device.
-    or
-    - Network storage to store your FFU image. For optimal performance, use a 1 Gb or faster network.
+    - USB storage, formatted as NTFS with enough space to save the FFU. 16 GB is enough space to store an FFU of a basic Windows image. You can use the same USB drive for WinPE and storage if you follow the [instructions for creating a multipartiton USB drive](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/winpe-create-usb-bootable-drive#prepare-a-usb-drive). For best performance, you want to maximize I/O between where your FFU is stored and the destination PC. For best performance use a USB 3.0 drive to store the image, and an internal SSD for the destination device.
+
+    **or**
+    
+    - Network storage where you can keep your FFU image. For optimal performance, use a 1 Gb or faster network.
 
 ## Capture an FFU
 
@@ -127,7 +129,7 @@ To capture and deploy FFUs using the instructions below, you'll also need:
 
 ## Mount an FFU for servicing
 
-You can use DISM to mount and FFU images for servicing. Like with other image formats, you can mount and modify an FFU before committing changes and unmounting. Mounting an FFU for servicing uses the same `/mount-image` command that you use for mounting other image types. When mounting an FFU, you'll always use `index:1` when mounting.
+You can use DISM to mount and FFU images for servicing. Like with other image formats, you can mount and modify an FFU before committing changes and unmounting. Mounting an FFU for servicing uses the same `/mount-image` command that you use for mounting other image types. When mounting an FFU, you'll always use `/index:1` when mounting.
 
 Unlike WIM images, FFU images get mounted as virtual hard disks. Files appear in the specified mount folder, but since FFUs can contain more than one partition but only have one index, DISM maps only the Windows partition from the mounted FFU to the mount folder.
 
