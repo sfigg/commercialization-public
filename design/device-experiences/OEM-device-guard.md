@@ -44,7 +44,7 @@ With appropriate hardware, application control can use virtualization-based secu
   
  WDAC is used to control what code can run on the system in either kernel or user mode. When HVCI is enabled, WDAC benefits from the increased kernel memory protections since the kernel mode CI checks occur in virtualization based security and user mode code integrity runs as part of the kernel itself and is thus protected against kernel memory exploits.
 
-### Device Guard and Credit Guard Readiness Tool
+### Device Guard and Credential Guard Readiness Tool
 
 To determine if a device is able to run Device Guard and Credential Guard, download the [Device Guard and Credential Guard hardware readiness tool](https://www.microsoft.com/en-us/download/details.aspx?id=53337).
 

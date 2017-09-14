@@ -39,6 +39,10 @@ For a device to support Windows Defender Credential Guard as specified in the Wi
 | Secure Memory Overwrite Request (MOR) revision 2 | A secure MOR bit prevents certain memory attacks that Credential Guard requires. For more information, see [Secure MOR implementation](https://docs.microsoft.com/en-us/windows-hardware/drivers/bringup/device-guard-requirements). |
 | Multi-factor authentication | Two-step verification is a method of authentication that requires more than one verification method and adds a critical second layer of security to user sign-ins and transactions. For more information, see [What is Azure Multi-Factor Authentication?](https://docs.microsoft.com/en-us/azure/multi-factor-authentication/multi-factor-authentication). |
 
+## Device Guard and Credential Guard Readiness Tool
+
+To determine if a device is able to run Device Guard and Credential Guard, download the [Device Guard and Credential Guard hardware readiness tool](https://www.microsoft.com/en-us/download/details.aspx?id=53337).
+
 ## Related topics
 -
 - [Windows Defender Device Guard hardware requirements](OEM-device-guard.md)
