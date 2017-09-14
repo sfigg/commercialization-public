@@ -108,7 +108,6 @@ DISM.exe /Apply-Image /ImageFile:<path_to_image_file> /ApplyDrive:<target_drive>
 | /EA      | New in Windows 10, version 1607. Applies extended attributes. |
 | /ApplyDrive  | Specifies the logical drive, using the DeviceID. to get the device ID from the command line, type "wmic diskdrive list brief". Note: a VHD may appear with the name “PhysicalDrive” in the description, for example, \.\PhysicalDrive2.|
 | /SFUFile  | Use /SFUFile to reference split FFU files (SFUs). *Pattern* is the naming pattern and location of split files. |
-|  /SkipPlatformCheck | Use /SkipPlatformCheck if the FFU file being applied is targeted for a device other than the device performing the application. A special FFU file is required. |
 
 Examples:
 
@@ -312,7 +311,7 @@ Dism /Get-MountedImageInfo
 
 ## /Get-ImageInfo
 
-Displays information about the images that are contained in the .wim, vhd or .vhdx file. When used with the /Index or /Name argument, information about the specified image is displayed, which includes if an image is a WIMBoot image, if the image is Windows 8.1, see Take Inventory of an Image or Component Using DISM. The /Name argument does not apply to VHD files. You must specify /Index:1 for VHD files.
+Displays information about the images that are contained in a .wim, .ffu, .vhd or .vhdx file. When used with the /Index or /Name argument, information about the specified image is displayed, which includes if an image is a WIMBoot image, if the image is Windows 8.1, see [Take Inventory of an Image or Component Using DISM](take-inventory-of-an-image-or-component-using-dism.md). The /Name argument does not apply to VHD files. You must specify /Index:1 for FFU and VHDX files.
 
 Syntax: 
 
