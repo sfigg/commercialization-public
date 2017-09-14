@@ -430,123 +430,74 @@ Only the common elements and attributes are documented here.  To get the full sc
 
 ### <identity>
 
-|Attribute |Type   |Required|Macro|Notes|
-|----------|-------|---------|------|------|
-|owner     |string |* | | |
-|name      |string |* |*||
-|namespace |string |  |*||
-|buildWow  |boolean|  | |Default = false, set to true to generate WOW packages|
+|Attribute |Type   |Required|Macro |Notes |
+|----------|-------|--------|------|------|
+|owner     |string |*       |      |      |
+|name      |string |*       |*     |      |
+|namespace |string |        |*     |      |
+|buildWow  |boolean|        |      |Default = false, set to true to generate WOW packages|
 
 ```xml
 <identity name="FeatureName" namespace="FeatureArea" owner="OEM" buildWow="false"/>
 ```
 
 ### <onecorePackageInfo>
-{| class="wikitable"
-!Attribute
-!Type
-!Required
-!Macro
-!Notes
-|-
-|targetPartition
-|MainOS
-Data
+|Attribute      |Type   |Required|Macro |Notes |
+|---------------|-------|--------|------|------|
+|targetPartition|MainOS  Data  UpdateOS  EFIESP  PLAT |* | |If onecorePackageInfo is not specified, Default = MainOS    |
+|releaseType    |Production   Test                    |  | |If onecorePackageInfo is not specified, Default = Production|
 
-UpdateOS
-
-EFIESP
-
-PLAT
-|*
-|
-|If onecorePackageInfo is not specified, Default = MainOS
-|-
-|releaseType
-|Production
-Test
-|
-|
-|if onecorePackageInfo is not specified, Default = Production
-|}
-<syntaxhighlight lang="xml">
+```xml
 <onecorePackageInfo targetPartition="MainOS" releaseType="Production"/>
-</syntaxhighlight>
+```
 
 ### <file>
-{| class="wikitable"
-!Attribute
-!Type
-!Required
-!Macro
-!Notes
-|-
-|source
-|string
-|*
-|*
-|
-|-
-|destinationDir
-|string
-|
-|*
-|destinationDir must start with one of the following built in runtime macros:
-$(runtime.bootDrive),
-$(runtime.systemDrive),
-$(runtime.systemRoot),
-$(runtime.windows),
-$(runtime.system32),
-$(runtime.system),
-$(runtime.drivers),
-$(runtime.help),
-$(runtime.inf),
-$(runtime.fonts),
-$(runtime.wbem),
-$(runtime.appPatch),
-$(runtime.sysWow64),
-$(runtime.mui),
-$(runtime.commonFiles),
-$(runtime.commonFilesX86),
-$(runtime.programFiles),
-$(runtime.programFilesX86),
-$(runtime.programData),
-$(runtime.userProfile),
-$(runtime.startMenu),
-$(runtime.documentSettings),
-$(runtime.sharedData),
-$(runtime.apps),
-$(runtime.clipAppLicenseInstall), If not specifed, the default is $(runtime.system32)
-|-
-|name
-|string
-|
-|
-|used to rename the source file
-|-
-|buildFilter
-|string
-|
-|
-|
-|}
-<syntaxhighlight lang="xml">
+|Attribute     |Type   |Required|Macro |Notes |
+|--------------|-------|--------|------|------|
+|source        |string |*       |*     |      |
+|destinationDir|string |        |*     |destinationDir must start with one of the following built in runtime macros below:|
+|name |string | | |used to rename the source file|
+|buildFilter |string | | | |
+
+destinationDir must start with:
+- $(runtime.bootDrive)
+- $(runtime.systemDrive)
+- $(runtime.systemRoot)
+- $(runtime.windows)
+- $(runtime.system32)
+- $(runtime.system)
+- $(runtime.drivers)
+- $(runtime.help)
+- $(runtime.inf)
+- $(runtime.fonts)
+- $(runtime.wbem)
+- $(runtime.appPatch)
+- $(runtime.sysWow64)
+- $(runtime.mui)
+- $(runtime.commonFiles)
+- $(runtime.commonFilesX86)
+- $(runtime.programFiles)
+- $(runtime.programFilesX86)
+- $(runtime.programData)
+- $(runtime.userProfile)
+- $(runtime.startMenu)
+- $(runtime.documentSettings)
+- $(runtime.sharedData)
+- $(runtime.apps)
+- $(runtime.clipAppLicenseInstall)
+- If not specifed, the default is $(runtime.system32) 
+
+```xml
 <file buildFilter="(not build.isWow) and (build.arch = arm)" name="output.dll" source="$(_RELEASEDIR)\input.dll" destinationDir="$(runtime.system32)"/>
-</syntaxhighlight>
+```
 
 ### <regKey>
-{| class="wikitable"
-!Attribute
-!Type
-!Required
-!Macro
-!Notes
-|-
-|keyName
-|string
-|*
-|*
-|keyName must start with one of the following built in runtime macros: 
+|Attribute      |Type   |Required|Macro |Notes |
+|---------------|-------|--------|------|------|
+|keyName        |string |*       |*     |keyName must start with one of the built in runtime macros below: 
+|buildFilter    |string |        |      |      |
+
+keyname must start with:
 $(hklm.system),
 $(hklm.software),
 $(hklm.hardware),
@@ -568,53 +519,24 @@ $(hkcr.root),
 $(hkcr.classes),
 $(hkcu.root),
 $(hkuser.default)
-|-
-|buildFilter
-|string
-|
-|
-|
-|}
 
 ### <regValue>
-{| class="wikitable"
-!Attribute
-!Type
-!Required
-!Macro
-!Notes
-|-
-|name
-|string
-|
-|
-|Name of the value you are specifying. If not specified, the Default value in the key will be over-written
-|-
-|type
-|string
-|*
-|
-|type must be one of the following:
+|Attribute      |Type   |Required|Macro |Notes |
+|---------------|-------|--------|------|------|
+|name           |string |        |      |Name of the value you are specifying. If not specified, the Default value in the key will be over-written|
+|type           |string |*       |      |type must be one of the following below:
+|value          |string |        |      |       |
+|buildFilter    |string |        |      |       |
+
+type must be: 
 REG_SZ,
 REG_MULTI_SZ,
 REG_DWORD,
 REG_QWORD,
 REG_BINARY,
 REG_EXPAND_SZ
-|-
-|value
-|string
-|
-|
-|
-|-
-|buildFilter
-|string
-|
-|
-|
-|}
-<syntaxhighlight lang="xml">
+
+```xml
 <regKey buildFilter="buildFilter1" keyName="keyName1">
   <regValue buildFilter="buildFilter1" name="name1" value="value1" type="REG_SZ" />
   <regValue buildFilter="buildFilter2" name="name2" value="value1,value2" type="REG_MULTI_SZ" />
@@ -623,5 +545,5 @@ REG_EXPAND_SZ
   <regValue buildFilter="buildFilter5" name="name5" value="0AFB2" type="REG_BINARY" />
   <regValue buildFilter="buildFilter6" name="name6" value="&quot;%ProgramFiles%\MediaPlayer\wmplayer.exe&quot;" type="REG_EXPAND_SZ" />
 </regKey>
+```
 
-</syntaxhighlight>
