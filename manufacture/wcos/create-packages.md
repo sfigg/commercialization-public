@@ -130,6 +130,7 @@ PkgGen.exe [project] /universalbsp ...
 ```
 
 ## View the contents of a package
+
 Packages use Windows cabinet file technology to store a set of files, double click on the CAB file to view and extract its contents.  Use notepad.exe to view update.mum, this describes how the files are installed onto the device.
 
 ```text
@@ -306,7 +307,9 @@ See the [BCDLayout template](bcdlayout.md) for more detail on possible settings
 
 ## COM Registration
 
-COM servers and class definitions should be registered using COM elements<syntaxhighlight lang="xml">
+COM servers and class definitions should be registered using COM elements.
+
+```xml
   <COM>
     <servers>
       <inProcServer path="%SystemRoot%\system32\MediaService.dll">
@@ -320,10 +323,13 @@ COM servers and class definitions should be registered using COM elements<syntax
       </inProcServer>
     </servers>
   </COM>
-</syntaxhighlight>
+```
 
 ## Project scope macros
-Package projects can utilize macros to simplify the XML creation process. Some macros are already globally defined, in which case they can't be changed or modified, but you can also define local macros for use within your own package project XML file. This local macro definition is embedded in the specific package project file through the macros element. The following example demonstrates creating a local macro for use in a package project file.<syntaxhighlight lang="xml">
+
+Package projects can utilize macros to simplify the XML creation process. Some macros are already globally defined, in which case they can't be changed or modified, but you can also define local macros for use within your own package project XML file. This local macro definition is embedded in the specific package project file through the macros element. The following example demonstrates creating a local macro for use in a package project file.
+
+```xml
   <macros>
     <macro
         id="ServiceName"
@@ -339,7 +345,7 @@ Package projects can utilize macros to simplify the XML creation process. Some m
           />
     </regKey>
   </regKeys>
-</syntaxhighlight>
+```
 
 ## Security
 
@@ -353,9 +359,13 @@ For more information on protecting or accessing protected resources using Declar
 
 https://osgwiki.com/wiki/Security_Model_How-Tos
 
-'''TBD: Currently OEM Packages only support private resources defined on services.'''
-==Private Resources==
-If a service requires exclusive access to data and/or RPC interfaces, these resources should be private.<syntaxhighlight lang="xml">
+OEM Packages only support private resources defined on services.
+
+### Private Resources
+
+If a service requires exclusive access to data and/or RPC interfaces, these resources should be private.
+
+```xml
   <service
       name="MediaService"
       objectName="LocalSystem"
@@ -371,9 +381,12 @@ If a service requires exclusive access to data and/or RPC interfaces, these reso
           />
     </privateResources>
   </service>
-</syntaxhighlight>
+```
+
 ## Build and Filter WOW Packages
-To build Guest or WOW packages (32 bit packages to run on 64 bit devices) add the buildWow="true" attribute to myPackage.wm.wml<syntaxhighlight lang="xml">
+To build Guest or WOW packages (32 bit packages to run on 64 bit devices) add the buildWow="true" attribute to myPackage.wm.wml
+
+```xml
 <identity
     xmlns="urn:Microsoft.CompPlat/ManifestSchema.v1.00"
     xmlns:xsd="http://www.w3.org/2001/XMLSchema"
@@ -383,14 +396,20 @@ To build Guest or WOW packages (32 bit packages to run on 64 bit devices) add th
     owner="OEM"
     buildWow="true"
     >
-</syntaxhighlight>Running PkgGen.exe with now generate one WOW package for each host package.<syntaxhighlight lang="text">
+```
+
+Running PkgGen.exe with now generate one WOW package for each host package.
+
+```text
 04/05/2017  07:59 AM            11,870 OEM-Media-MediaService.cab
 04/05/2017  07:59 AM             8,750 OEM-Media-MediaService.Resources_Lang_en-us.cab
 04/05/2017  08:00 AM             8,810 OEM-Media-MediaService.Resources_Lang_en-us_Wow_arm64.arm.cab
 04/05/2017  08:00 AM             8,754 OEM-Media-MediaService.Resources_Lang_fr-fr.cab
 04/05/2017  08:00 AM             8,812 OEM-Media-MediaService.Resources_Lang_fr-fr_Wow_arm64.arm.cab
 04/05/2017  07:59 AM            10,021 OEM-Media-MediaService_Wow_arm64.arm.cab
-</syntaxhighlight>Typically, the 64 bit device will get it's Host 64 bit package and it's Guest 32 bit or WOW package, both generated from myPackage.wm.xml.  To avoid resource conflicts between the two packages build filters are used:<syntaxhighlight lang="xml">
+```
+
+Typically, the 64 bit device will get it's Host 64 bit package and it's Guest 32 bit or WOW package, both generated from myPackage.wm.xml.  To avoid resource conflicts between the two packages build filters are used:<syntaxhighlight lang="xml">
   <regKeys buildFilter="not build.isWow and build.arch = arm" >
     <regKey keyName="$(hklm.software)\OEMName\MediaService">
       <regValue
@@ -399,50 +418,28 @@ To build Guest or WOW packages (32 bit packages to run on 64 bit devices) add th
           value="MediaService"
           />
     </regKey>
-</syntaxhighlight>In this case, the registry keys are exclusive to the Host 32 bit ARM package.  The CPU switch is used to set build.arch, and build.isWow is set by PkgGen to false when building the 32 bit Host Package, then true when building the 32 bit Guest or WOW package.<syntaxhighlight lang="text">
+</syntaxhighlight>In this case, the registry keys are exclusive to the Host 32 bit ARM package.  The CPU switch is used to set build.arch, and build.isWow is set by PkgGen to false when building the 32 bit Host Package, then true when building the 32 bit Guest or WOW package.
+
+```text
 [cpu]··············· CPU type. Values: (x86|arm|arm64|amd64)
                      Values:<Free Text> Default="arm"
-</syntaxhighlight>
+```
 
 ## Schema
 Only the common elements and attributes are documented here.  To get the full schema run "pkggen /universalbsp /wmxsd:.", then open WM0.XSD with Visual Studio.  
 
 ### <identity>
-{| class="wikitable"
-!Attribute
-!Type
-!Required
-!Macro
-!Notes
-|-
-|owner
-|string
-|*
-|
-|
-|-
-|name
-|string
-|*
-|*
-|
-|-
-|namespace
-|string
-|
-|*
-|
-|-
-|buildWow
-|boolean
-|
-|
-|Default = false, set to true to generate WOW packages
-|}
-<syntaxhighlight lang="xml">
-<identity name="FeatureName" namespace="FeatureArea" owner="OEM" buildWow="false"/>
 
-</syntaxhighlight>
+|Attribute |Type   |Required|Macro|Notes|
+|----------|-------|---------|------|------|
+|owner     |string |* | | |
+|name      |string |* |*||
+|namespace |string |  |*||
+|buildWow  |boolean|  | |Default = false, set to true to generate WOW packages|
+
+```xml
+<identity name="FeatureName" namespace="FeatureArea" owner="OEM" buildWow="false"/>
+```
 
 ### <onecorePackageInfo>
 {| class="wikitable"
