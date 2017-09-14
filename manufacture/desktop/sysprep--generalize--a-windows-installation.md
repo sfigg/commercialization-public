@@ -14,9 +14,9 @@ ms.technology: windows-oem
 # Sysprep (Generalize) a Windows installation
 
 
-To deploy a Windows image to different PCs, you must first generalize the image. Generalizing the image removes computer-specific information from the image. You can either use sysprep or an unattend answer file to generalize the image and make it ready for deployment.
+To deploy a Windows image to different PCs, you must first generalize the image to remove computer-specific information. You can either use sysprep or an unattend answer file to generalize the image and make it ready for deployment.
 
-## <span id="bkmk_1"></span>Generalizing an Image
+## <span id="bkmk_1"></span>Generalizing 
 
 When you generalize a Windows image, Windows Setup processes settings in the [generalize](generalize.md) configuration pass. Even if you are capturing an image that's going to be deploying to a similar PC, you must run Sysprep with the /generalize option, which removes unique information from a Windows installation and allows you to safely reuse your image.
 
@@ -49,6 +49,8 @@ For more information about sideloading line-of-business Windows Store apps, see 
 
 ## Generalize an image
 
+### Generalize from Audit Mode
+
 To generalize an image, you have to fist boot into Audit Mode. You can do boot into Audit Mode using unattend or from OOBE. You can read about the different ways of booting into audit mode at [Boot Windows to audit mode or OOBE](boot-windows-to-audit-mode-or-oobe.md).
 
 1. Boot a PC into Audit Mode. When Windows boots into Audit Mode, **System Preparation Tool** will appear on the desktop. Leave the **System Preparation Tool** window open. 
@@ -61,7 +63,7 @@ To generalize an image, you have to fist boot into Audit Mode. You can do boot i
 
     -or-
 
-    -   Use sysprep from Command Prompt. Run `%WINDIR%\system32\sysprep\sysprep.exe` to open the **System Preparation Window**. You can also use the `Sysprep` command together with the **/generalize**, **/shutdown**, and **/oobe** options. See [Sysprep command-line options](sysprep-command-line-options.md) to see available options.
+    -   Use Sysprep from Command Prompt. Run `%WINDIR%\system32\sysprep\sysprep.exe` to open the **System Preparation Window**. You can also use the `Sysprep` command together with the **/generalize**, **/shutdown**, and **/oobe** options. See [Sysprep command-line options](sysprep-command-line-options.md) to see available options.
 
     ```
     %WINDIR%\system32\sysprep\sysprep.exe /generalize /shutdown /oobe
@@ -76,6 +78,18 @@ To generalize an image, you have to fist boot into Audit Mode. You can do boot i
 
 5.  Deploy this image to a reference computer. When the reference computer boots, it displays the Out-Of-Box Experience (OOBE) screen.
 
+### Generalize using unattend
+
+If you use multiple unattend files during your computer deployment, you can add settings to your each of your unattend files so that after the unattend files are processed Windows Setup will generalize the PC.
+
+You can add one of the following settings in unattend to generalize the system as the last step in processing unattend:
+
+- To automatically generalize the image and shut down, use the Microsoft-Windows-Deployment | `Generalize` setting. Set `Mode` to **OOBE** or **Audit**, and set `ForceShutdownNow` to **true**. 
+
+-or-
+
+- To generalize the system, and have it boot into Audit Mode, use the Microsoft-Windows-Deployment | `Reseal` setting to the [oobeSystem](oobesystem.md) configuration pass. Set `Mode` to **Audit**.
+
 
 ## <span id="related_topics"></span>Related topics
 
@@ -87,3 +101,13 @@ To generalize an image, you have to fist boot into Audit Mode. You can do boot i
 [Sysprep Support for Server Roles](sysprep-support-for-server-roles.md)
 
 [Work with Product Keys and Activation](work-with-product-keys-and-activation-auth-phases.md)
+
+ 
+
+ 
+
+
+
+
+
+
