@@ -71,4 +71,5 @@ Other helpful software:
 
 ## <span id="Next_steps"></span><span id="next_steps"></span><span id="NEXT_STEPS"></span>Next steps
 
+[Create OneCore OEM packages](create-packages.md)
 [Lab 1a: Create a basic image](create-a-basic-image.md)

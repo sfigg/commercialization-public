@@ -64,8 +64,9 @@ c:\oemsample>pkggen myPackage.wm.xml /universalbsp
 
 ## Add content to a package
 
-The contents of a package are organized as a list of XML elements in the package project XML file. To add contents to a package, add a Components element with the appropriate child elements as shown in the following excerpt that demonstrates the addition of some files and registry settings to a package.
-<syntaxhighlight lang="xml">
+The contents of a package are organized as a list of XML elements in the package project XML file. To add contents to a package, add a **Components** element with the appropriate child elements as shown in the following excerpt that demonstrates the addition of some files and registry settings to a package.
+
+```xml
 <?xml version='1.0' encoding='utf-8' standalone='yes'?>
 <identity
     xmlns="urn:Microsoft.CompPlat/ManifestSchema.v1.00"
@@ -95,12 +96,17 @@ The contents of a package are organized as a list of XML elements in the package
 </identity>
 </syntaxhighlight>
 <syntaxhighlight lang="text">
+```
+
+```text
 c:\oemsample>pkggen myPackage.wm.xml /universalbsp /variables:"_RELEASEDIR=c:\release"
-</syntaxhighlight>
-=Run the pkggen.exe tool=
+```
+
+## Run the pkggen.exe tool
 
 PkgGen.exe [project] /universalbsp ...
 
+```
   [project]··········· Full path to input file : .wm.xml, .pkg.xml, .man
                        Values:<Free Text> Default=NULL
 
@@ -121,11 +127,12 @@ PkgGen.exe [project] /universalbsp ...
 
   [output]············ Output directory for the CAB(s).
                        Values:<Free Text> Default="CurrentDir"
+```
 
 ## View the contents of a package
 Packages use Windows cabinet file technology to store a set of files, double click on the CAB file to view and extract its contents.  Use notepad.exe to view update.mum, this describes how the files are installed onto the device.
 
-<syntaxhighlight lang="text">
+```text
 arm_dual_media.inf_31bf3856ad364e35_1.0.0.0_none_75dfa724a55b489d
 arm_dual_media.inf_31bf3856ad364e35_1.0.0.0_none_75dfa724a55b489d.manifest
 arm_dual_sample.inf_31bf3856ad364e35_1.0.0.0_none_a7012ffdafd1caf1
@@ -135,12 +142,12 @@ arm_oem-media-mediaservice_31bf3856ad364e35_1.0.0.0_none_7307c54952eeb87a
 arm_oem-media-mediaservice_31bf3856ad364e35_1.0.0.0_none_7307c54952eeb87a.manifest
 update.cat
 update.mum
-</syntaxhighlight>
+```
 
 ## Add a language-specific content to a package
 
 In the preceding example, all the files and registry values are language neutral. You can use the package project XML file to add language-related files and registry values to a package. Special flags are used to notify the package generator of language-specific content. The following XML example demonstrates how to designate language-specific content.
-<syntaxhighlight lang="xml">
+```xml
    <language culture="en-us">
     <files>
       <file
@@ -157,12 +164,13 @@ In the preceding example, all the files and registry values are language neutral
           />
     </files>
   </language>
-</syntaxhighlight>
+```
 
-<syntaxhighlight lang="text">
+```
 pkggen myPackage.wm.xml /universalbsp /variables:"_RELEASEDIR=c:\release" /languages:"en-us;fr-fr"
-</syntaxhighlight>
-<syntaxhighlight lang="text">
+```
+
+```text
 Directory of c:\oemsample
 
 04/04/2017  10:18 PM    <DIR>          .
@@ -171,29 +179,29 @@ Directory of c:\oemsample
 04/04/2017  10:17 PM            11,560 OEM-Media-MediaService.cab
 04/04/2017  10:17 PM             8,750 OEM-Media-MediaService.Resources_Lang_en-us.cab
 04/04/2017  10:17 PM             8,752 OEM-Media-MediaService.Resources_Lang_fr-fr.cab
-</syntaxhighlight>
+```
 
 ## Add a driver component
 
-Driver injection is supported by using the '''driver''' element in the package project XML.  Files imported by the INF should be relative to the INF source path (i.e. the default INF file import path is equal to the INF source path). This is the recommended least complex way to author your INF.
+Driver injection is supported by using the **driver** element in the package project XML.  Files imported by the INF should be relative to the INF source path (i.e. the default INF file import path is equal to the INF source path). This is the recommended least complex way to author your INF.
 
-<syntaxhighlight lang="xml">
+```xml
   <drivers>
     <driver>
       <inf source="$(_RELEASEDIR)\Media.inf"/>
     </driver>
   </drivers>
-</syntaxhighlight>
+```
 
 If the default file import path is not equal to the INF source path, you can use the defaultImportPath attribute. In the following example, the INF is in the current directory, but the files to be imported are relative to $(_RELEASEDIR).  
 
-<syntaxhighlight lang="xml">
+```xml
   <drivers>
     <driver defaultImportPath="$(_RELEASEDIR)">
       <inf source="Media.inf"/>
     </driver>
   </drivers>
-</syntaxhighlight>
+```
 
 If files to be imported are in random location (not relative to how they are defined in the INF), file overrides can be applied. This is not recommended but is available for special cases.
 
@@ -210,7 +218,9 @@ If files to be imported are in random location (not relative to how they are def
 </syntaxhighlight>
 
 ## Add a service component
-The '''service''' element in the package project XML file, its child elements, and its attributes can be used to define and package a system service.<syntaxhighlight lang="xml">
+The **service** element in the package project XML file, its child elements, and its attributes can be used to define and package a system service.
+
+```xml
    <service
       dependOnService="AudioSrv;AccountProvSvc"
       description="@%SystemRoot%\system32\MediaService.dll,-201"
@@ -225,7 +235,7 @@ The '''service''' element in the package project XML file, its child elements, a
       startAfterInstall="none"
       type="win32UserShareProcess"
       >
-</syntaxhighlight>
+```
 
 ## Add BCD Settings
 If you wish to make changes to the BCD settings, you will need to do this with 2 files. 
@@ -235,8 +245,9 @@ If you wish to make changes to the BCD settings, you will need to do this with 2
 
 The following example shows how to enable test signing:
 
-'''bcdsettings.xml'''
-<syntaxhighlight lang="xml">
+**bcdsettings.xml**
+
+```xml
   <?xml version="1.0" encoding="utf-8"?>
   <BootConfigurationDatabase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/phone/2011/10/BootConfiguration">
   <Objects>
@@ -272,10 +283,11 @@ The following example shows how to enable test signing:
 
   </Objects>
 </BootConfigurationDatabase>
-</identity></syntaxhighlight>
+</identity>
+```
 
-'''bcdsettings.wm.xml'''
-<syntaxhighlight lang="xml">
+**bcdsettings.wm.xml**
+```xml
   <?xml version='1.0' encoding='utf-8' standalone='yes'?>
   <identity
     xmlns="urn:Microsoft.CompPlat/ManifestSchema.v1.00"
@@ -288,10 +300,9 @@ The following example shows how to enable test signing:
     <onecorePackageInfo targetPartition="EFIESP" releaseType="Test" />
     <bcdStore source=".\bcdsettings.xml" buildFilter="not build.isWow"/>
   </identity>
-</syntaxhighlight>
+```
 
-See the template for more detail on possible settings.
-[https://microsoft.visualstudio.com/DefaultCollection/_git/os?_a=contents&path=%2Fonecore%2Fsdktools%2Fimagingtools%2Fmanaged%2FImageStorageServiceManaged%2FBcdLayout.xsd&version=GBofficial%2Frsmaster %SDXROOT%\onecore\sdktools\imagingtools\managed\imagestorageservicemanaged\bcdlayout.xsd]
+See the [BCDLayout template](bcdlayout.md) for more detail on possible settings
 
 ## COM Registration
 

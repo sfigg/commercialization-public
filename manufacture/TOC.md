@@ -384,6 +384,7 @@
 ## [WCOS manufacturing](wcos/index.md)
 ### [WCOS manufacturing guide](wcos/core-manufacturing-guide.md)
 #### [Get the tools needed to customize Windows Core](wcos/set-up-your-pc-to-customize-core.md)
+#### [Create OneCore OEM packages](wcos/create-packages.md)
 #### [Lab 1a: Create a basic image](wcos/create-a-basic-image.md)
 #### [Lab 1b: Add an app to your image](wcos/deploy-your-app-with-a-standard-board.md)
 ##### [Test an appx file on an IoT device](wcos/test-the-app.md)
