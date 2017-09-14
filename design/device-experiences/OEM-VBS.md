@@ -12,7 +12,9 @@ ms.technology: windows-oem
 ---
 
 # Virtualization-based Security (VBS)
-Hardware-based security features, also called virtualization-based security or VBS, provides isolation of secure kernel from normal operating system. Vulnerabilities and Day zero attacks in the operating system cannot be exploited because of this isolation.
+Hardware-based security features, also called virtualization-based security or VBS, provide isolation of the secure kernel from the normal operating system. Vulnerabilities and Day Zero attacks in the operating system cannot be exploited because of this isolation.
+VBS uses the hypervisor to help protect the kernel and other parts of the operating system. When VBS is enabled, it strengthens either the default kernel-mode code integrity policy (which protects against bad drivers or system files), or the configurable code integrity policy.
+With VBS, even if malware gains access to the kernel, the effects can be severely limited, because the hypervisor can prevent the malware from executing code. The hypervisor, the most privileged level of system software, enforces R/W/X permissions across system memory. Code integrity checks are performed in a secure environment which is resistant to attack from kernel mode software, and page permissions for kernel mode are set and maintained by the hypervisor. Even if there are vulnerabilities that allow memory modification, like a buffer overflow, the modified memory cannot be executed.
 
 VBS requires the following components be present and properly configured. 
 
