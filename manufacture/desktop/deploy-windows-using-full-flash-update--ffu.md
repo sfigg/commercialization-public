@@ -34,7 +34,10 @@ To capture and deploy FFUs using the instructions below, you'll also need:
 - A PC to deploy the FFU image to. We'll refer to this as the destination PC. The hard drive on this PC will be overwritten, so make sure you're using a PC that doesn't have any information you want to keep.
 - The latest version of the ADK, from [Download the Windows ADK](https://developer.microsoft.com/en-us/windows/hardware/windows-assessment-deployment-kit)
 - Bootable WinPE media for Windows 10, Version 1709 or later. See [WinPE: Create USB bootable drive](winpe-create-usb-bootable-drive.md) for instructions on how to create WinPE Media.
-- USB or network storage, formatted as NTFS with enough space to save the FFU. 16 GB is enough space to store an FFU of a basic Windows image. You can use the same USB drive for WinPE and storage if you follow the [instructions for creating a multipartiton USB drive](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/winpe-create-usb-bootable-drive#prepare-a-usb-drive).
+- Storage
+    - USB storage, formatted as NTFS with enough space to save the FFU. 16 GB is enough space to store an FFU of a basic Windows image. You can use the same USB drive for WinPE and storage if you follow the [instructions for creating a multipartiton USB drive](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/winpe-create-usb-bootable-drive#prepare-a-usb-drive). For best performance, you want to maximize I/O between where your FFU is stored and the destination PC. To maximize performance use a USB 3.0 drive to store the image, and an internal SSD for the destination device.
+    -or-
+    - Network storage to store your FFU image. For optimal performance, use a 1 Gb or faster network.
 
 ## Capture an FFU
 
@@ -67,7 +70,7 @@ To capture and deploy FFUs using the instructions below, you'll also need:
     
     To see command line options for capturing FFUs, run `dism /capture-ffu /?` or see [DISM Image Management Command-Line Options](dism-image-management-command-line-options-s14.md). Note that you shouldn't have to specify a PlatformID when capturing a desktop image.
 
-    The following command captures an FFU image of PhysicalDrive0 called WinOEM.ffu. The /name and /description arguments allow you to set information about your image. /name is required, /description is optional. 
+    The following command captures an FFU image of PhysicalDrive0 called WinOEM.ffu. The /name and /description arguments allow you to set information about your image. This information is displayed when you use `dism /get-imageinfo`. /name is required, /description is optional. 
 
     ```
     DISM.exe /capture-ffu /imagefile=e:\WinOEM.ffu /capturedrive=\\.\PhysicalDrive0 /name:disk0 /description:"Windows 10 FFU"
