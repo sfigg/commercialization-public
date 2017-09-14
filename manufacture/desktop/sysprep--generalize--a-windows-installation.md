@@ -13,6 +13,7 @@ ms.technology: windows-oem
 
 # Sysprep (Generalize) a Windows installation
 
+
 To deploy a Windows image to different PCs, you must first generalize the image. Generalizing the image removes computer-specific information from the image. You can either use sysprep or an unattend answer file to generalize the image and make it ready for deployment.
 
 ## <span id="bkmk_1"></span>Generalizing an Image
@@ -25,11 +26,13 @@ If your server has Remote Authentication Dial-In User Service (RADIUS) clients o
 
 ### Keeping drivers in a Windows image
 
-When you set up a Windows PC, Windows Setup installs drivers for any detected devices. By default, Windows Setup removes these drivers when you generalize the system, and the drivers will have to be reinstalled when you deploy the image. If you're deploying an image to computers that have the same hardware and devices as the original PC, you can keep these drivers on the computer during system generalization. Use an unattend file, with Microsoft-Windows-PnPSysprep | `PersistAllDeviceInstalls` sett to **true**. For more information about **Sysprep**-related Windows components that you can add to an answer file, see the [Unattended Windows Setup Reference for Microsoft-Windows-PnpSysprep](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-pnpsysprep).
+When you set up a Windows PC, Windows Setup installs drivers for any detected devices. By default, Windows Setup removes these drivers when you generalize the system, and the drivers will have to be reinstalled when you deploy the image. 
+If you're deploying an image to computers that have the same hardware and devices as the original PC, you can keep these drivers on the computer during system generalization. Use an unattend file, with Microsoft-Windows-PnPSysprep | `PersistAllDeviceInstalls` set to **true**. For more information about **Sysprep**-related Windows components that you can add to an answer file, see the [Unattended Windows Setup Reference for Microsoft-Windows-PnpSysprep](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-pnpsysprep).
 
 ### SkipRearm
 
 You can run the **Sysprep** command up to 9 times on a single Windows image. After running Sysprep 8 times, you must recreate your Windows image. In previous versions of Windows, you could use the `SkipRearm` answer file setting to reset the Windows Product Activation clock when running sysprep. If you are using a volume licensing key or a retail product key, you don't have to use `SkipRearm` because Windows is automatically activated. 
+
 
 ### Store Apps
 
@@ -37,9 +40,11 @@ Updating your Windows Store apps before generalizing a Windows image will cause 
 
 `<package name> was installed for a user, but not provisioned for all users. This package will not function properly in the sysprep image.`
 
+
 Instead of using the Windows Store to update your apps, you should sideload updates to your line-of-business apps, or have end-users update their apps by using the Windows Store on their destination PCs. In managed environments, if Windows Store access is disabled by an IT administrator, you will not be able to update the Windows Store apps.
 
 For more information about sideloading line-of-business Windows Store apps, see [Sideload Apps with DISM](sideload-apps-with-dism-s14.md) and [Customize the Start Screen](customize-the-start-screen.md).
+
 
 ## Generalize an image
 
@@ -58,11 +63,11 @@ To generalize an image, you have to fist boot into Audit Mode. You can do boot i
     -   Use sysprep from Command Prompt. Run `%WINDIR%\system32\sysprep\sysprep.exe` to open the **System Preparation Window**. You can also use the `Sysprep` command together with the **/generalize**, **/shutdown**, and **/oobe** options. See [Sysprep command-line options](sysprep-command-line-options.md) to see available options.
 
     ```
-    Sysprep /generalize /shutdown /oobe
+    %WINDIR%\system32\sysprep\sysprep.exe /generalize /shutdown /oobe
     ```
 
     >[!Note]
-    >If you are generalizing a VHD, use the `/mode:vm` options with sysprep.
+    >If you are generalizing a VHD, use the `/mode:vm` option with sysprep.
 
     The computer generalizes the image and shuts down.
 
