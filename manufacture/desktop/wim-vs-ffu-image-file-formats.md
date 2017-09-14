@@ -15,7 +15,6 @@ ms.technology: windows-oem
 
 Comparing .WIM, .VHD/.VHDX, and .FFU: These file formats are all used to deploy Windows to new devices. Here's how they compare:
 
-> [!div class="mx-tableFixed"]
 <table>
 <colgroup>
 <col width="25%" />
@@ -49,7 +48,7 @@ Comparing .WIM, .VHD/.VHDX, and .FFU: These file formats are all used to deploy 
 <td align="left">Compression</td>
 <td align="left">Supports multiple types of compression</td>
 <td align="left">None</td>
-<td align="left">DISM /capture-FFU uses Express-Huffman by default.</td>
+<td align="left">Xpress-Huffman is used by default when an FFU is captured with DISM</td>
 </tr>
 <tr class="odd">
 <td align="left">What does it capture?</td>
