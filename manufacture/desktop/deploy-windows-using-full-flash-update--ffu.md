@@ -36,7 +36,7 @@ To capture and deploy FFUs using the instructions below, you'll also need:
 - Bootable WinPE media for Windows 10, Version 1709 or later. See [WinPE: Create USB bootable drive](winpe-create-usb-bootable-drive.md) for instructions on how to create WinPE Media.
 - Storage
     - USB storage, formatted as NTFS with enough space to save the FFU. 16 GB is enough space to store an FFU of a basic Windows image. You can use the same USB drive for WinPE and storage if you follow the [instructions for creating a multipartiton USB drive](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/winpe-create-usb-bootable-drive#prepare-a-usb-drive). For best performance, you want to maximize I/O between where your FFU is stored and the destination PC. To maximize performance use a USB 3.0 drive to store the image, and an internal SSD for the destination device.
-    -or-
+    or
     - Network storage to store your FFU image. For optimal performance, use a 1 Gb or faster network.
 
 ## Capture an FFU
