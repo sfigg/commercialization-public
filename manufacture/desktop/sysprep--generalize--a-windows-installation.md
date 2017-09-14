@@ -14,17 +14,17 @@ ms.technology: windows-oem
 # Sysprep (Generalize) a Windows installation
 
 
-To deploy a Windows image to different PCs, you must first generalize the image to remove computer-specific information. You can either use sysprep or an unattend answer file to generalize the image and make it ready for deployment.
+To deploy a Windows image to different PCs, you must first generalize the image to remove computer-specific information such as device drivers and the computer security identifier (SID). You can either use sysprep or an unattend answer file to generalize the image and make it ready for deployment.
 
-## <span id="bkmk_1"></span>Generalizing 
+##  Generalizing a Windows installation
 
-When you generalize a Windows image, Windows Setup processes settings in the [generalize](generalize.md) configuration pass. Even if you are capturing an image that's going to be deploying to a similar PC, you must run Sysprep with the /generalize option, which removes unique information from a Windows installation and allows you to safely reuse your image.
+When you generalize a Windows image, Windows Setup processes settings in the [generalize](generalize.md) configuration pass. Even if you are capturing an image that's going to be deployed to a similar PC, you must generalize the Windows installation, which removes unique information from a Windows installation and allows you to safely reuse your image.
 
-When you run Sysprep to generalize an image, Windows replaces the computer security identifier (SID) only on the operating system volume where you ran sysprep. If a single computer has multiple operating systems, you must run **Sysprep** on each image individually.
+When you generalize an image, Windows replaces the computer SID only on the operating system volume where you ran sysprep. If a single computer has multiple operating systems, you must run **Sysprep** on each image individually.
 
 If your server has Remote Authentication Dial-In User Service (RADIUS) clients or remote RADIUS server groups defined in the Network Policy Server (NPS) configuration, you should remove this information before you deploy it to a different computer. For more information, see [Prepare a Network Policy Server (NPS) for Imaging](prepare-a-network-policy-server--nps--for-imaging.md).
 
-### Keeping drivers in a Windows image
+### Keep drivers in a Windows image
 
 When you set up a Windows PC, Windows Setup installs drivers for any detected devices. By default, Windows Setup removes these drivers when you generalize the system, and the drivers have to be reinstalled when you deploy the image. 
 
@@ -70,7 +70,7 @@ To generalize an image, you have to fist boot into Audit Mode. You can do boot i
     ```
 
     >[!Note]
-    >If you are generalizing a VHD, use the `/mode:vm` option with the Sysprep command-line.
+    >If you are generalizing a VHD that will be deployed as a VHD on the same virtual machine or hypervisor, use the `/mode:vm` option with the Sysprep command-line.
 
     The computer generalizes the image and shuts down.
 
