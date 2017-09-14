@@ -44,7 +44,7 @@ Legacy Windows apps and drivers must be repackaged to meet the UWP standards bef
 ### Windows packaging model
 
 #### Packages
-*  **Everything you add is packaged**. Every file, folder, setting and customization that you add to the device is included in a package. Each package includes a package project file (*.wm.xml) that lists the content and its locations.
+*  **Everything you add is packaged**. Every file, library, registry setting and customization that you add to the device is included in a package. Each package includes a package project file (*.wm.xml) that lists the content and its locations.
 *  **Packages are signed**. Every customization on your device is trackable to a package with a signature. Only you and partners that you trust can update the packages.
 *  **Packages are versioned for easy web-based updates**. Need to change a setting or a file? Update the package and put it on an update server, and the devices can update themselves.
 
@@ -63,7 +63,7 @@ Legacy Windows apps and drivers must be repackaged to meet the UWP standards bef
 
 #### <span id="image_configuration_file"></span>ImgGen and image configuration files
 
-Use image configuration file to merge your feature manifests with those from your partners to create an image that you can flash to your devices.
+Use image configuration file to merge your packages and feature manifests with those from your partners to create an image that you can flash to your devices.
 
 To design devices for different markets, use the feature ID tags from your feature manifests to decide which packages make it to your final images.
 
