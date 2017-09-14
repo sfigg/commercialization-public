@@ -71,7 +71,7 @@ To generalize an image, you have to fist boot into Audit Mode. You can do boot i
 
     The computer generalizes the image and shuts down.
 
-4.  After the computer shuts down, [capture your image with DISM](capture-images-of-hard-disk-partitions-using-dism).
+4.  After the computer shuts down, [capture your image with DISM](capture-images-of-hard-disk-partitions-using-dism.md).
 
 5.  Deploy this image to a reference computer. When the reference computer boots, it displays the Out-Of-Box Experience (OOBE) screen.
 
