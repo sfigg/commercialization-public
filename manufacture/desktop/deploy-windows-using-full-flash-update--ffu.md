@@ -15,11 +15,13 @@ ms.technology: windows-oem
 
 You can deploy Windows faster on the factory floor by using the Full Flash Update (FFU) image format. FFU images allow you to apply an image of a physical drive, including Windows, recovery, and system partition information all at once directly to a different drive or an SD card.
 
-Unlike the file-based WIM format, FFU is a sector-based file container that stores one or more disk images. Sector-based imaging mean that FFUs take less time to deploy, but have larger files sizes than WIMs. See [WIM vs. VHD vs. FFU: comparing image file formats](wim-vs-ffu-image-file-formats.md) for information about the differences between image formats.
+Unlike the file-based WIM format, FFU is a sector-based file container that stores one or more partitions. Sector-based imaging mean that FFUs take less time to deploy, but have larger files sizes than WIMs. See [WIM vs. VHD vs. FFU: comparing image file formats](wim-vs-ffu-image-file-formats.md) for information about the differences between image formats.
 
 Starting with Windows 10, Version 1709, DISM has the ability to capture, deploy, and service FFUs, with the following limitations:
+- The drive that an FFU is applied to has to be the same or larger than the drive it is captured from
 - FFU captures of encrypted disks are not supported
-- Captures of disks that have Volume Shadow Copy Service (VSS) enabled are not supported
+- Captures of disks that have [Volume Shadow Copy Service (VSS)](https://technet.microsoft.com/en-us/library/ee923636.aspx) enabled are not supported
+- Splitting compressed FFUs is not supported
 
 
 ## What you need to work with FFUs in Windows
@@ -28,7 +30,8 @@ To capture, deploy, and mount FFU images with DISM, you'll need to work in a Win
 
 To capture and deploy FFUs using the instructions below, you'll also need: 
 
-- A Windows PC that is ready to have an image captured from it. We'll refer to this as the reference PC. For a walkthrough on how to create an image that's ready for deployment, see the [Windows OEM deployment lab](oem-windows-deployment-and-imaging-walkthrough.md).
+- A Windows PC that has been [generalized with Sysprep](sysprep--generalize--a-windows-installation.md). We'll refer to this as the reference PC. For a walkthrough on how to create an image that's ready for deployment, see the [Windows OEM deployment lab](oem-windows-deployment-and-imaging-walkthrough.md).
+- A PC to deploy the FFU image to. We'll refer to this as the destination PC. The hard drive on this PC will be overwritten, so make sure you're using a PC that doesn't have any information you want to keep.
 - The latest version of the ADK, from [Download the Windows ADK](https://developer.microsoft.com/en-us/windows/hardware/windows-assessment-deployment-kit)
 - Bootable WinPE media for Windows 10, Version 1709 or later. See [WinPE: Create USB bootable drive](winpe-create-usb-bootable-drive.md) for instructions on how to create WinPE Media.
 - USB or network storage, formatted as NTFS with enough space to save the FFU. 16 GB is enough space to store an FFU of a basic Windows image. You can use the same USB drive for WinPE and storage if you follow the [instructions for creating a multipartiton USB drive](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/winpe-create-usb-bootable-drive#prepare-a-usb-drive).
@@ -62,17 +65,19 @@ To capture and deploy FFUs using the instructions below, you'll also need:
 
     For more information about PhysicalDrive*X*, see [CreateFile function](https://msdn.microsoft.com/library/windows/desktop/aa363858.aspx). 
     
-    To see command line options for capturing FFUs, run `dism /capture-ffu /?` or see [DISM Image Management Command-Line Options](dism-image-management-command-line-options-s14.md).
+    To see command line options for capturing FFUs, run `dism /capture-ffu /?` or see [DISM Image Management Command-Line Options](dism-image-management-command-line-options-s14.md). Note that you shouldn't have to specify a PlatformID when capturing a desktop image.
 
-    This command captures an FFU image of PhysicalDrive0 called WinOEM.ffu:
+    The following command captures an FFU image of PhysicalDrive0 called WinOEM.ffu. The /name and /description arguments allow you to set information about your image. /name is required, /description is optional. 
 
     ```
-    DISM.exe /capture-ffu /imagefile=e:\WinOEM.ffu /capturedrive=\\.\PhysicalDrive0 /name=disk0
+    DISM.exe /capture-ffu /imagefile=e:\WinOEM.ffu /capturedrive=\\.\PhysicalDrive0 /name:disk0 /description:"Windows 10 FFU"
     ```
+
+    This command also gives a name and description to the FFU image. Name is required when capturing
 
 ## Deploy Windows from WinPE using an FFU
 
-1.  Boot your destination device to WinPE.
+1.  Boot your destination PC to WinPE.
 
 2.  Connect a storage drive or map the network location that has your FFU file and note the drive letter, for example, N.
 
@@ -85,16 +90,6 @@ To capture and deploy FFUs using the instructions below, you'll also need:
     ```
     Note the drive number in the `Disk ###` column.
 
-4. Run diskpart to clean the reference PC’s drive.  
-
-    ```    
-    Diskpart
-    list disk
-    select disk 0 (where 0 is the destination hard drive)
-    clean
-    exit
-    ```
-
 4.  Apply the image to the cleaned drive. Here, we're applying n:\WinOEM.ffu to Disk 0.
     
     ```
@@ -103,15 +98,39 @@ To capture and deploy FFUs using the instructions below, you'll also need:
 
     To see the commands available with /apply-ffu, run `dism /apply-ffu /?` or see [DISM Image Management Command-Line Options](dism-image-management-command-line-options-s14.md).
 
+5. Optional. Run diskpart to resize the drive on the destination PC.
+
+    If the reference PC and the destination PC have different sized hard drives, you'll have to resize the destination PCs drive. The applied FFU will have the same partition sizes as the reference PC, so you'll need to expand the volume to take advantage of the additional space on the reference PC.
+
+    a. In WinPE on your destination PC, identify the volume of the Windows partiton that you have applied.
+    
+    ```
+    diskpart
+    list volume
+    ```
+
+    b. Select the volume of the Windows partition. We'll use `Volume 0` in our example.
+
+    ```
+    select volume 0
+    ```
+
+    c. Extend the partition to fill the unused space, and exit Diskpart.
+
+    ```
+    extend
+    exit
+    ````
+
 ## Mount an FFU for servicing
 
-You can use DISM to mount and FFU images for servicing. Like with other image fomats, you can mount and modify an FFU before commiting changes and unmounting. Mounting an FFU for servicing uses the same `/mount-image` command that you use for mounting other image types. When mounting an FFU, you'll always use `index:1` when mounting.
+You can use DISM to mount and FFU images for servicing. Like with other image formats, you can mount and modify an FFU before committing changes and unmounting. Mounting an FFU for servicing uses the same `/mount-image` command that you use for mounting other image types. When mounting an FFU, you'll always use `index:1` when mounting.
 
-Unlike WIM images, FFU images get mounted as virtual hard disks. Files appear in the specified mount folder, but since FFUs can contain more than one image but only have one index, DISM maps only the Windows partition from the mounted FFU to the mount folder.
+Unlike WIM images, FFU images get mounted as virtual hard disks. Files appear in the specified mount folder, but since FFUs can contain more than one partition but only have one index, DISM maps only the Windows partition from the mounted FFU to the mount folder.
 
 To mount an FFU
 
-1. Open a Command Prompt as administartor.
+1. Open a Command Prompt as administrator.
 
 2. Mount the image using `dism /mount-image`. This example mounts D:\WinOEM.ffu to C:\ffumount:
 
@@ -129,10 +148,18 @@ To mount an FFU
 
     To see available options, run `dism /image:<path to mounted image> /?` or 
 
-4. Unmount your FFU image and commit changes. The changes will be saved to your FFU file.
+4. Unmount your FFU image and commit or discard changes. If you use /commit, your changes will be saved to your FFU file.
+
+    To unmount your FFU and commit changes, you'd use `/unmount-image` with the `/commit` option:
 
     ```
     dism /unmount-image /mountdir:"C:\ffumount" /commit
+    ```
+
+    If you decide to not keep the changes you've made to the FFU, you can use `/unmount-image` with the `/discard` option:
+
+    ```
+    dism /unmount-image /mountdir:"C:\ffumount" /discard
     ```
 
 ## <span id="related_topics"></span>Related topics
