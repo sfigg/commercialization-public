@@ -51,6 +51,7 @@ ms.technology: windows-oem
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 </td></tr></table>
 
 **Description**
@@ -267,6 +268,7 @@ System: The system must complete the reset within 10 seconds.
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 </td></tr></table>
 
 **Description**
@@ -499,6 +501,7 @@ WDI\_PHY\_INFO structures returned by OID\_WDI\_GET\_ADAPTER\_CAPABILITIES.
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 </td></tr></table>
 
 **Description**
@@ -533,6 +536,7 @@ WDI\_PHY\_INFO structures returned by OID\_WDI\_GET\_ADAPTER\_CAPABILITIES.
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 </td></tr></table>
 
 **Terms: If-Implemented**
@@ -583,6 +587,7 @@ WLAN devices should support 10 offloaded BSSID profiles. Wi-Fi profiles that ar
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 </td></tr></table>
 
 **Terms: If-Implemented**
@@ -604,6 +609,7 @@ The Wi-Fi MAC address is currently used to track users as they move through publ
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 </td></tr></table>
 
 **Terms: If-Implemented**
@@ -625,6 +631,7 @@ Device must report that it supports ActionFrameSupport in WDI\_TLV\_INTERFACE\_C
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 </td></tr></table>
 
 **Terms: If-Implemented**
@@ -646,6 +653,7 @@ Device must report support for 802.11w Protected Management Frames in WDI\_STATI
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 </td></tr></table>
 
 The requirement does not currently apply to **802.11ad**
@@ -675,6 +683,7 @@ Your WLAN device must support one of the two following solutions for FIPS suppor
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 </td></tr></table>
 
 #### Support Wi-Fi Direct Base Functionality
@@ -823,6 +832,7 @@ should meet the following latency and packet loss requirements.
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 </td></tr></table>
 
 **Terms: If-Implemented**
@@ -1017,6 +1027,7 @@ When WMM prioritization is used with AC\_VI or AC\_VO (Voice/Video), WLAN device
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 </td></tr></table>
 
 **Terms: If-Implemented**
@@ -1066,6 +1077,7 @@ If this requirement is supported, then the device must be capable of performing 
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 </td></tr></table>
 
 **Terms: If-Implemented**
@@ -1093,6 +1105,7 @@ Device must report 802.11ad PHY type 9 (WDI\_PHY\_TYPE\_DMG) in the WDI\_PHY\_IN
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 </td></tr></table>
 
 **Terms: If-Implemented**
