@@ -6,7 +6,7 @@ MSHAttr:
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 9fc86f03-6d9e-4899-a4b7-fa8ad7835c65
 ms.author: alhopper
-ms.date: 05/02/2017
+ms.date: 10/05/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -296,7 +296,7 @@ You can use the values in the WEKF\_PredefinedKey.Id column to configure the Win
 <tr class="even">
 <td><p>Windows logo key+C</p></td>
 <td><p><strong>Win+C</strong></p></td>
-<td><p>Open charms</p></td>
+<td><p>Activate Cortana in listening mode (after user has enabled the shortcut through the UI)</p></td>
 </tr>
 <tr class="odd">
 <td><p>Windows logo key +I</p></td>
@@ -311,7 +311,7 @@ You can use the values in the WEKF\_PredefinedKey.Id column to configure the Win
 <tr class="odd">
 <td><p>Windows logo key +H</p></td>
 <td><p><strong>Win+H</strong></p></td>
-<td><p>Open Share charm</p></td>
+<td><p>Start dictation</p></td>
 </tr>
 <tr class="even">
 <td><p>Windows logo key +Q</p></td>
@@ -321,7 +321,7 @@ You can use the values in the WEKF\_PredefinedKey.Id column to configure the Win
 <tr class="odd">
 <td><p>Windows logo key +W</p></td>
 <td><p><strong>Win+W</strong></p></td>
-<td><p>Open Settings Search charm</p></td>
+<td><p>Open Windows Ink workspace</p></td>
 </tr>
 <tr class="even">
 <td><p>Windows logo key +Z</p></td>
