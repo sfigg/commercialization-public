@@ -39,6 +39,7 @@ ms.technology: windows-oem
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -58,6 +59,7 @@ USB devices designed for debug purposes over USB 2.0 must comply with USB2 Debug
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -77,6 +79,7 @@ USB cables designed for USB 3.0 host debugging must comply with the Universal Se
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -96,6 +99,7 @@ When the USB device has signaled device-attach, the operating system provides a 
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -122,6 +126,7 @@ Devices that are resumed from the selective suspend state retain a minimum set o
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -149,6 +154,7 @@ Devices belonging to these device classes can opt out of supporting USB Selectiv
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -190,6 +196,7 @@ See USB Specification, Revision 2.0 or later, Sections 5.6 and 5.7.
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -211,6 +218,7 @@ The Microsoft operating system **ContainerID** descriptor allows Windows® to co
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -235,6 +243,7 @@ Devices must be functional after resuming from system power states whether a por
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -257,6 +266,7 @@ To test this requirement, we will cause the device to go into the selective susp
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -282,6 +292,7 @@ A reset of the entire USB Host Controller results in significantly increased tim
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -301,6 +312,7 @@ After the system resumes from sleep, the hub driver will fetch the status of the
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -324,6 +336,7 @@ Clarification about USB Selective Suspend in Windows RT systems can be found in 
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -343,6 +356,7 @@ USB devices must respond accordingly to string requests that the host sends. Dev
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -363,6 +377,7 @@ All USB device requests contain a wLength field. Responses by the USB device to 
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -402,6 +417,7 @@ For more information on implementation of serial numbers, see USB Specification,
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -421,6 +437,7 @@ A USB serial number must be a string that contains a manufacturer-determined ID 
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -444,6 +461,7 @@ For a definition of "connect", see section 2 of the USB 3.0 Specification under 
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -465,6 +483,7 @@ All USB Devices (Low, Full, High, and Super Speed devices) must be tested with M
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -491,6 +510,7 @@ For a list of Windows class GUIDs, see the Windows Driver Kit, "System-Supplied 
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -510,6 +530,7 @@ All Wireless USB devices must get a Certified Wireless USB Logo from the USB-IF.
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -535,6 +556,7 @@ Wireless USB device must pass WiMedia Alliance radio compliance tests.
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -560,6 +582,7 @@ For more information, see the white paper on Windows Logo Kit USB-IF Testing:
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 </td></tr></table>
 
 **Description**
@@ -582,6 +605,7 @@ Certification for vendor-specific Alternate Modes is not required.
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 </td></tr></table>
 
 **Description**
@@ -602,6 +626,7 @@ In addition, if the USB Type-C cable or adapter is used for an Alternate Mode St
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 </td></tr></table>
 
 **Description**
