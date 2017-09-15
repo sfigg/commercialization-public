@@ -34,6 +34,7 @@ ms.technology: windows-oem
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 </td></tr></table>
 
 **Description**
@@ -52,6 +53,7 @@ Bluetooth PC peripherals must include the Device ID record as specified in the D
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 </td></tr></table>
 
 **Description**
@@ -70,6 +72,7 @@ Bluetooth HID devices must be discoverable only in Limited Discoverable Mode.
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 </td></tr></table>
 
 **Description**
@@ -88,6 +91,7 @@ The Bluetooth subsystem end product must list the Windows operating system in th
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 </td></tr></table>
 
 **Description**
@@ -106,6 +110,7 @@ The HIDReconnectInitiate attribute (defined in Bluetooth HID Profile, 1.0, Secti
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 </td></tr></table>
 
 **Description**
@@ -124,6 +129,7 @@ Keyboards that implement Secure Simplified Pairing must support the Passkey auth
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 </td></tr></table>
 
 **Description**
