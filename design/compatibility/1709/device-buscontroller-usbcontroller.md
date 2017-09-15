@@ -37,6 +37,7 @@ ms.technology: windows-oem
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -58,6 +59,7 @@ This affects backward compatibility with USB 2.0.
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -103,6 +105,7 @@ This requirement does not apply to systems that support Connected Standby.
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -126,6 +129,7 @@ A reset of the entire USB host controller results in significantly increased tim
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -145,6 +149,7 @@ If a USB controller is disabled and then re-enabled, all devices that were attac
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -171,6 +176,7 @@ Note: Since USB-IF is currently not certifying controllers for Windows on ARM sy
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -190,6 +196,7 @@ Extensible Host Controller Interface (xHCI) controllers must be tested with Micr
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -221,6 +228,7 @@ If AC64 is not set, there is nothing to test.
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -282,6 +290,7 @@ Note that if there is no ACPI information, a root hub cannot have both an embedd
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -310,6 +319,7 @@ Note: This requirement only applies to add-in cards because port mapping for int
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -334,6 +344,7 @@ Extensible Host Controller Interface (xHCI) host controllers are debug-capable o
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -353,6 +364,7 @@ Extensible Host Controller Interface (xHCI) controllers support Message Signaled
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -376,6 +388,7 @@ Storage devices based on the USB Attached SCSI Protocol (UASP) will utilize stre
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 </td></tr></table>
 
 **Description**
@@ -407,6 +420,7 @@ To report whether the controller supports runtime wake signaling:
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -432,6 +446,7 @@ USB 3.0 controllers must comply with the Extensible Host Controller Interface (x
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -456,6 +471,7 @@ Certification for vendor-specific Alternate Modes is not required.
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -510,6 +526,7 @@ If the system or controller exposes dual role ports, the following additional AP
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 </td></tr></table>
 
 **Terms: If-Implemented**
@@ -538,6 +555,7 @@ If the Type-C Port Controller uses UcmTcpci, the UcmTcpciCx client driver is req
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
