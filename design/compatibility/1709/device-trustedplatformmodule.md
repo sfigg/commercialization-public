@@ -43,6 +43,7 @@ ms.technology: windows-oem
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile ARM64</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -191,6 +192,7 @@ ms.technology: windows-oem
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile ARM64</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -356,6 +358,7 @@ In the below table, if unspecified, all TPM_ALG_RSA keys are 2048 bit keys and T
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile ARM64</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
