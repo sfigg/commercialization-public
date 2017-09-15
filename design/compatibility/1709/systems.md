@@ -124,6 +124,7 @@ This section of the documentation provides specifications for hardware compatibi
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 </td></tr></table>
 
 **Description**
@@ -143,6 +144,7 @@ The Bluetooth enabled controller must comply with the Basic Rate (BR) and Low En
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 </td></tr></table>
 
 
@@ -163,6 +165,7 @@ Systems that support Connected Standby that ship with Bluetooth enabled control
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 </td></tr></table>
 
 **Terms: If-Implemented**
@@ -184,6 +187,7 @@ Systems that support Connected Standby that ship with Bluetooth enabled control
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 </td></tr></table>
 
 
@@ -204,6 +208,7 @@ The Bluetooth enabled controller must allow the spec LE state combinations (as a
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 </td></tr></table>
 
 
@@ -224,6 +229,7 @@ The Bluetooth enabled controller on the system must support a minimum of 25 entr
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 </td></tr></table>
 
 
@@ -244,6 +250,7 @@ To ensure a uniform experience across Windows Store Apps using the Bluetooth LE 
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 </td></tr></table>
 
 
@@ -272,6 +279,7 @@ The radio must maintain on/off state across sleep and reboot.
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 </td></tr></table>
 
 
@@ -288,6 +296,7 @@ Bluetooth enabled controllers must allow the simultaneous use of both Basic Rate
 <td>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 </td></tr></table>
 
 
@@ -314,6 +323,7 @@ We want users to experience the best possible quality audio when using Bluetooth
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 </td></tr></table>
 
 
@@ -343,6 +353,7 @@ Windows systems that support both WLAN and Bluetooth must meet WLAN-BT Co-existe
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 </td></tr></table>
 
 
@@ -363,6 +374,7 @@ Any platform using a non-USB connected Bluetooth enabled controller must ship wi
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 </td></tr></table>
 
 
@@ -389,6 +401,7 @@ Any platform using a Non-USB connected Bluetooth enabled controller must use sid
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 </td></tr></table>
 
 
@@ -415,6 +428,7 @@ Windows Display Driver Model (*WDDM) 1.2 drivers must enable scenario based back
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -459,6 +473,7 @@ Windows Display Driver Model (*WDDM) 1.2 drivers must enable scenario based back
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -504,6 +519,7 @@ The \_BCL and \_BCM methods in the firmware enable the operating system to query
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -606,6 +622,7 @@ In the case where buttons are not wired through GPIO interrupts, buttons must be
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 </td></tr></table>
 
 
@@ -628,6 +645,7 @@ Note: With regards to ‘**Device.Streaming.Camera.Base.UsageIndicator’** if a
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 </td></tr></table>
 
 
@@ -654,6 +672,7 @@ All other fields in the \_PLD are optional.
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 </td></tr></table>
 
 
@@ -783,6 +802,7 @@ If any parameter is not set in per frame settings the driver shall follow the gl
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -806,6 +826,7 @@ The following Digitizer Base device level requirements must be met and verified 
 <td>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 </td></tr></table>
 
 
@@ -837,6 +858,7 @@ The following Pen device level requirements must be met and verified upon integr
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 </td></tr></table>
 
 
@@ -878,6 +900,7 @@ All other systems must support a minimum of 5 simultaneous contact points
 <td>
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -917,6 +940,7 @@ A touchpad may not be marketed as a Precision Touchpad if the device requires a 
 <td>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 </td></tr></table>
 
 
@@ -935,6 +959,7 @@ The following Pen device level requirement must be met and verified upon integra
 <td>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 </td></tr></table>
 
 
@@ -953,6 +978,7 @@ The following Pen device level requirement must be met and verified upon integra
 <td>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 </td></tr></table>
 
 
@@ -971,6 +997,7 @@ The following Pen device level requirement must be met and verified upon integra
 <td>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 </td></tr></table>
 
 
@@ -989,6 +1016,7 @@ The following Pen device level requirement must be met and verified upon integra
 <td>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 </td></tr></table>
 
 
@@ -1007,6 +1035,7 @@ The following Pen device level requirement must be met and verified upon integra
 <td>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 </td></tr></table>
 
 
@@ -1025,6 +1054,7 @@ The following Pen device level requirement must be met and verified upon integra
 <td>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 </td></tr></table>
 
 
@@ -1043,6 +1073,7 @@ The following Pen device level requirement must be met and verified upon integra
 <td>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 </td></tr></table>
 
 
@@ -1061,6 +1092,7 @@ The following Pen device level requirement must be met and verified upon integra
 <td>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 </td></tr></table>
 
 
@@ -1079,6 +1111,7 @@ The following Pen device level requirement must be met and verified upon integra
 <td>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 </td></tr></table>
 
 
@@ -1097,6 +1130,7 @@ The following Pen device level requirement must be met and verified upon integra
 <td>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 </td></tr></table>
 
 
@@ -1115,6 +1149,7 @@ The following Pen device level requirement must be met and verified upon integra
 <td>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 </td></tr></table>
 
 
@@ -1133,6 +1168,7 @@ The following Pen device level requirement must be met and verified upon integra
 <td>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 </td></tr></table>
 
 
@@ -1156,6 +1192,7 @@ The following Pen device level requirement must be met and verified upon integra
 <td>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 </td></tr></table>
 
 
@@ -1174,6 +1211,7 @@ The following Precision Touchpad device level requirement must be met and verifi
 <td>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 </td></tr></table>
 
 
@@ -1192,6 +1230,7 @@ The following Precision Touchpad device level requirement must be met and verifi
 <td>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 </td></tr></table>
 
 
@@ -1210,6 +1249,7 @@ The following Precision Touchpad device level requirement must be met and verifi
 <td>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 </td></tr></table>
 
 
@@ -1228,6 +1268,7 @@ The following Precision Touchpad device level requirement must be met and verifi
 <td>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 </td></tr></table>
 
 
@@ -1246,6 +1287,7 @@ The following Precision Touchpad device level requirement must be met and verifi
 <td>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 </td></tr></table>
 
 
@@ -1264,6 +1306,7 @@ The following Precision Touchpad device level requirement must be met and verifi
 <td>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 </td></tr></table>
 
 
@@ -1282,6 +1325,7 @@ The following Precision Touchpad device level requirement must be met and verifi
 <td>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 </td></tr></table>
 
 
@@ -1300,6 +1344,7 @@ The following Precision Touchpad device level requirement must be met and verifi
 <td>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 </td></tr></table>
 
 
@@ -1318,6 +1363,7 @@ The following Precision Touchpad device level requirement must be met and verifi
 <td>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 </td></tr></table>
 
 
@@ -1336,6 +1382,7 @@ The following Precision Touchpad device level requirement must be met and verifi
 <td>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 </td></tr></table>
 
 
@@ -1354,6 +1401,7 @@ The following Precision Touchpad device level requirement must be met and verifi
 <td>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 </td></tr></table>
 
 
@@ -1372,6 +1420,7 @@ The following Precision Touchpad device level requirement must be met and verifi
 <td>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 </td></tr></table>
 
 
@@ -1390,6 +1439,7 @@ The following Precision Touchpad device level requirement must be met and verifi
 <td>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 </td></tr></table>
 
 
@@ -1408,6 +1458,7 @@ The following Precision Touchpad device level requirement must be met and verifi
 <td>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 </td></tr></table>
 
 
@@ -1426,6 +1477,7 @@ The following Precision Touchpad device level requirement must be met and verifi
 <td>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 </td></tr></table>
 
 **Terms: Optional**
@@ -1455,6 +1507,7 @@ Microsoft highly recommend the touchpad module to support Microsoft Precision To
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 </td></tr></table>
 
 
@@ -1475,6 +1528,7 @@ The following Touch device level requirements must be met and verified upon inte
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 </td></tr></table>
 
 
@@ -1495,6 +1549,7 @@ The following Touch device level requirements must be met and verified upon inte
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 </td></tr></table>
 
 
@@ -1515,6 +1570,7 @@ The following Touch device level requirements must be met and verified upon inte
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 </td></tr></table>
 
 
@@ -1535,6 +1591,7 @@ The following Touch device level requirements must be met and verified upon inte
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 </td></tr></table>
 
 
@@ -1555,6 +1612,7 @@ The following Touch device level requirements must be met and verified upon inte
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 </td></tr></table>
 
 
@@ -1575,6 +1633,7 @@ The following Touch device level requirements must be met and verified upon inte
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 </td></tr></table>
 
 
@@ -1595,6 +1654,7 @@ The following Touch device level requirements must be met and verified upon inte
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 </td></tr></table>
 
 
@@ -1615,6 +1675,7 @@ The following Touch device level requirements must be met and verified upon inte
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 </td></tr></table>
 
 
@@ -1635,6 +1696,7 @@ The following Touch device level requirements must be met and verified upon inte
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 </td></tr></table>
 
 
@@ -1655,6 +1717,7 @@ The following Touch device level requirements must be met and verified upon inte
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 </td></tr></table>
 
 
@@ -1675,6 +1738,7 @@ The following Touch device level requirements must be met and verified upon inte
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 </td></tr></table>
 
 
@@ -1947,6 +2011,7 @@ Both the above mentioned requirements are optional for Stereo 3D capable resolut
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -2003,6 +2068,7 @@ System Builders must ensure that the RF performance is optimized for Mobile Broa
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -2786,6 +2852,7 @@ Both the above mentioned requirements are optional for Stereo 3D capable resolut
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 </td></tr></table>
 
 **Description**
@@ -2875,6 +2942,7 @@ Both the above mentioned requirements are optional for Stereo 3D capable resolut
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 </td></tr></table>
 
 
@@ -2908,6 +2976,7 @@ Microsoft highly recommend WLAN hardware module to support at least 802.11ac 2x2
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 </td></tr></table>
 
 **Terms: If-Implemented**
@@ -2944,6 +3013,7 @@ System: The system must complete the reset within 10 seconds.
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 </td></tr></table>
 
 **Terms: If-Implemented**
@@ -2966,6 +3036,7 @@ System: The system must complete the reset within 10 seconds.
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 </td></tr></table>
 
 **Terms: If-Implemented**
@@ -2990,6 +3061,7 @@ Support for Wi-Fi Direct by the Wi-Fi Driver to enable Miracast, Public APIs for
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 </td></tr></table>
 
 **Terms: If-Implemented**
@@ -3177,6 +3249,7 @@ Storage benchmark needs to setup a fake drive get the baseline power.</p>
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -3371,6 +3444,7 @@ Installed memory is queried via Query [GetPhysicallyInstalledSystemMemory](http:
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 </td></tr></table>
 
 
@@ -3566,6 +3640,7 @@ This requirement is "If Implemented" for Server systems and applies only if a Se
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -3769,6 +3844,7 @@ If the system includes PCI, AGP, or PCI Express expansion slots, the system fir
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -3801,6 +3877,7 @@ Systems with a boot device with a capacity greater than 2.2 terabytes must compl
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 </td></tr></table>
 
 
@@ -3930,6 +4007,7 @@ Since all components in the boot path as well as many performance-critical OS su
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 </td></tr></table>
 
 
@@ -4073,6 +4151,7 @@ A system that supports multiple graphics adapters must ensure sufficient resourc
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -4094,6 +4173,7 @@ The System must boot in a mode where the frame buffer used by the Microsoft basi
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -4122,6 +4202,7 @@ For example the graphics driver package includes the graphics driver and all ass
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -4149,6 +4230,7 @@ The system must run under prolonged stress without generating hangs or faults.
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -4460,6 +4542,7 @@ Note that the OutStanding InField GFX in \#1. Is the same as the one stated in \
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -4664,6 +4747,7 @@ The marker file goes in the c:\\windows\\system32\\drivers folder.
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -4841,6 +4925,7 @@ Power Management is an important aspect of good user experience. The system shou
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -4944,6 +5029,7 @@ Version 1.01, and Appendix C.
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -5368,6 +5454,7 @@ In the Windows Hardware Lab Kit, this requirement will be tested by using the Em
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -5411,6 +5498,7 @@ All drivers and firmware servicing must use Windows Update.
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -5482,6 +5570,7 @@ Design Notes: SKU Number has been moved to a required field in order to improve 
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -5821,6 +5910,7 @@ Platforms supporting NVDIMM-N devices must implement NFIT Health Event Notificat
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -5842,6 +5932,7 @@ Systems need to conform to all **Device.Audio** requirements.
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -5873,6 +5964,7 @@ Systems need to conform to all **Device.Audio** requirements.
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -6066,6 +6158,7 @@ If a system exposes multiple Dual Role capable ports, only one port should in fu
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -6089,6 +6182,7 @@ Any system using xHCI must ship using Microsoft’s inbox xHCI stack. Additional
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -6118,6 +6212,7 @@ A reset of the entire USB Host Controller results in significantly increased tim
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -6139,6 +6234,7 @@ For all xHCI controllers exposed to the OS, the system firmware must follow the 
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -6517,6 +6613,7 @@ Name( _PLD, Buffer( 0x10) {<br />
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -6547,6 +6644,7 @@ Storage devices based on the USB Attached SCSI Protocol (UASP) will utilize stre
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+v
 </td></tr></table>
 
 
@@ -6573,6 +6671,7 @@ If a System contains a USB Type-C port that can be used to charge the system, th
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 </td></tr></table>
 
 
@@ -6596,6 +6695,7 @@ In addition, if the USB Type-C cable or adapter is used for an Alternate Mode St
 <p>Windows 10 Mobile ARM64</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 </td></tr></table>
 
 
@@ -6649,6 +6749,7 @@ If the system or controller exposes dual role ports, the following additional AP
 <p>Windows 10 Mobile ARM64</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 </td></tr></table>
 
 
@@ -6684,6 +6785,7 @@ If the system has a battery, supports PD charging, and implements UcmTcpci, must
 <p>Windows 10 Mobile ARM64</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 </td></tr></table>
 
 
@@ -6750,6 +6852,7 @@ If the system implements UCSI, it must implement UCSI v1.0 (or later). In additi
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -6781,6 +6884,7 @@ If the system implements UCSI, it must implement UCSI v1.0 (or later). In additi
 <p>Windows 10 Mobile ARM64</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -6812,6 +6916,7 @@ If the system implements UCSI, it must implement UCSI v1.0 (or later). In additi
 <p>Windows 10 Mobile ARM64</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -6898,6 +7003,7 @@ If the system implements UCSI, it must implement UCSI v1.0 (or later). In additi
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 </td></tr></table>
 
 
@@ -6941,6 +7047,7 @@ The TPM must meet the following additional requirements:
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 </td></tr></table>
 
 
@@ -6985,6 +7092,7 @@ The TPM provides a hardware root of trust for platform integrity measurement and
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 </td></tr></table>
 
 
@@ -7130,6 +7238,7 @@ See the USB Mass Storage Class Bulk-Only Transport and the USB Mass Storage Clas
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
