@@ -75,7 +75,7 @@ The `SARMappingTable` subkey may have up to 1000 registry values. The SAR back-o
 </thead>
 <tbody>
 <tr>
-<td>Three-decimal-digit representing the MCC. </td>
+<td>Three-decimal-digit representing the MCC </td>
 <td>WCHAR string</td>
 <td>Comma-separated decimal number in WCHAR string, such as `0,2,5,8`. The numbers represent the SAR back-off indexes for the MCC. The sequence of back-off indexes corresponds to an array of antennas in modem, with the first back-off index for the antenna at index 0, the second back-off index for the antenna at index 1, and so on. For a simple modem with only one antenna, there needs to be only one index in the string, such as “2”, for the first and only antenna.</td>
 </tr>
