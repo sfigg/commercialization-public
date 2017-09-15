@@ -29,7 +29,7 @@ In addition to customizing the Windows default theme, you can also create additi
 <table>
 <colgroup>
 <col width="30%" />
-<col width="80%" />
+<col width="70%" />
 </colgroup>
 <tbody>
 <tr class="odd">
