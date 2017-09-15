@@ -97,6 +97,7 @@ ms.technology: windows-oem
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -136,6 +137,7 @@ The following Storage Controller Driver Logo requirement is for the storage cont
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -161,6 +163,7 @@ Non-PCI attached storage host controller does not need to report PCI class code.
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -317,6 +320,7 @@ Microsoft Azure Stack will require SAS and NVMe controllers to be firmware updat
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -495,6 +499,7 @@ Initiator Coexistence
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -734,6 +739,7 @@ NOTE: This applies only to SAS and SATA controllers.
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -1061,6 +1067,7 @@ SATA Interface
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -1417,6 +1424,7 @@ Microsoft Azure Stack will require enclosures to be firmware updateable.
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -1770,6 +1778,7 @@ Microsoft Azure Stack will require SAS and SATA drives to be firmware updateable
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -2059,6 +2068,7 @@ Fibre Channel devices must comply with Fibre Channel Protocol for SCSI, Second V
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -2434,6 +2444,7 @@ BitLocker must be properly enabled to protect data volumes on storage arrays.
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -2458,6 +2469,7 @@ If the logical block provisioning read zeros (LBPRZ) bit is set to one, then the
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -2956,6 +2968,7 @@ Solid-state drives must provide valid data for the below log sense page (LOG SEN
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -2978,6 +2991,7 @@ SPI-4, SAM-3, Min:SPC-2, Rec: SPC-3, Min: SBC, Rec: SBC-2
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -3013,6 +3027,7 @@ SCSI Devices must comply with SCSI Architecture Model SAM-3 or later (except as 
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -3362,6 +3377,7 @@ All HDDs and SSDs: (Optional)
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -3803,6 +3819,7 @@ To be an Optical Drive, the device must be defined as CD (Compact Disc) device, 
 <td>
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
