@@ -57,6 +57,7 @@ This white paper can be found on MSDN: <http://go.microsoft.com/fwlink/?LinkId=7
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -83,6 +84,7 @@ It is highly recommended for onboard fixed-position microphone array (multiple c
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -144,6 +146,7 @@ The loopback stream should represent the stream coming out of the speaker. Drive
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -254,6 +257,7 @@ In order to meet this requirement, no function should depend on anything (files,
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -311,6 +315,7 @@ A device provides *basic functionality* when it meets all the Windows Hardware C
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -346,6 +351,7 @@ MSDN: http://go.microsoft.com/fwlink/?LinkId=716910
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -373,6 +379,7 @@ This requirement applies to both render and capture for all formats, modes, and 
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -442,6 +449,7 @@ MSDN: <https://msdn.microsoft.com/en-us/library/windows/hardware/ff537083.aspx>
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -471,6 +479,7 @@ Drivers should stream properly when using any of the Windows Audio APIs. This in
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -499,6 +508,7 @@ See the Windows Driver Kit, "KSPROPERTY\_AUDIO\_VOLUMELEVEL” for more details.
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -599,6 +609,7 @@ IMiniportAudioEngineNode contains a list of methods related to the offload KS pr
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -658,6 +669,7 @@ Speaker compensation is the only valid scenario for audio signal processing of a
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -683,6 +695,7 @@ See "HID Audio Controls and Windows" at <http://go.microsoft.com/fwlink/?LinkId=
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
