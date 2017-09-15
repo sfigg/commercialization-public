@@ -32,6 +32,7 @@ ms.technology: windows-oem
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -53,6 +54,7 @@ A digitizer shall only report data corresponding to user input. No other data, o
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -120,6 +122,18 @@ This requirement ensures that digitizers are always available for user input reg
 
 *Pen contact accuracy*
 
+<table>
+<tr>
+<th>Applies to</th>
+<td>
+<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
+<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
+<p>Windows 10 Mobile ARM</p>
+<p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
+<p>Windows Server 2016 x64</p>
+</td></tr></table>
+
 |                |                            |
 |----------------|----------------------------|
 | Target Feature | Device.Input.Digitizer.Pen |
@@ -156,6 +170,7 @@ This requirement ensures compatibility with DirectInk and inbox pen experiences;
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -183,6 +198,7 @@ Due to host controller or bus resume times from low power states, devices may ne
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -204,6 +220,7 @@ A digitizer shall only report data corresponding to user input. No other data, o
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -231,6 +248,7 @@ This requirement ensures compatibility with DirectInk.
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -260,6 +278,7 @@ Note:  Active pens that enable eraser functionality provide the most natural me
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -279,6 +298,7 @@ See Device.Input.Digitizer.Base.HIDCompliant.
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -308,6 +328,7 @@ This requirement ensures compatibility with DirectInk and more specifically:
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -349,6 +370,7 @@ This requirement ensures compatibility with DirectInk and more specifically:
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -398,6 +420,7 @@ This requirement ensures:
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -432,6 +455,7 @@ This requirement ensures compatibility with DirectInk and more specifically:
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -459,6 +483,7 @@ This requirement ensures compatibility with DirectInk and more specifically:
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -484,6 +509,7 @@ This requirement ensures that every pixel can be inked on screen and provides a 
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -502,6 +528,7 @@ See Device.Input.Digitizer.Base.ThirdPartyDrivers.
 <td>
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -523,6 +550,7 @@ Requirement ensures an accurate moussing and gesturing surface.
 <td>
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -548,6 +576,7 @@ Due to host controller or bus resume times from low power states, devices may ne
 <td>
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -583,6 +612,7 @@ If external buttons are implemented, there must be at least two hardware buttons
 <td>
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -612,6 +642,7 @@ Prevents unintended contact activations from occurring and helps to avoid palm i
 <td>
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -635,6 +666,7 @@ Fundamental to ensure the correct button handling is performed by the operating 
 <td>
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -658,6 +690,7 @@ Precision touchpads must maintain a minimum size to allow users to interact prop
 <td>
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -681,6 +714,7 @@ This requirement ensures finger count and position remain accurate during multi-
 <td>
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -696,6 +730,7 @@ See Device.Input.Digitizer.Base.HIDCompliant.
 <td>
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -717,6 +752,7 @@ This requirement ensures that users can perform precise manipulations and cursor
 <td>
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -754,6 +790,7 @@ Ensures that precision moussing and gestures work correctly and that pausing dur
 <td>
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -805,6 +842,7 @@ Additional UX study on the impact of panning latency for indirect input devices 
 <td>
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -826,6 +864,7 @@ Precision touchpads require at least three fingers to have access to all Windows
 <td>
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -849,6 +888,7 @@ Maintain mouse experience requirements and competitive performance at &gt;= 125 
 <td>
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -870,6 +910,7 @@ This requirement ensures that precision touchpad digitizers properly respond to 
 <td>
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -889,6 +930,7 @@ See Device.Input.Digitizer.Base.ThirdPartyDrivers.
 <td>
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -918,6 +960,7 @@ This requirement ensures accurate and reliable touch interactions.
 <td>
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -945,6 +988,7 @@ Due to host controller or bus resume times from low power states, devices may ne
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -964,6 +1008,7 @@ A digitizer shall only report data corresponding to user input. No other data, o
 <td>
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -985,6 +1030,7 @@ This requirement ensures that the platform maintains a consistent and reliable g
 <td>
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -1008,6 +1054,7 @@ This requirement ensures compatibility with inbox gestures such as pinch/zoom, m
 <td>
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
@@ -1027,6 +1074,7 @@ See Device.Input.Digitizer.Base.HIDCompliant.
 <td>
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -1062,6 +1110,7 @@ This requirement ensures compatibility with inbox gestures, manipulations and in
 <td>
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -1134,6 +1183,7 @@ A touch digitizer shall have response latencies as follows:
 <td>
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -1157,6 +1207,7 @@ This requirement ensures compatibility with inbox gestures, accessibility tools,
 <td>
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -1187,6 +1238,7 @@ This requirement ensures a compatible, smooth and stutter-free gesturing experie
 <td>
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -1211,6 +1263,7 @@ This requirement ensures that every pixel is available for touch interaction and
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
