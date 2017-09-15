@@ -32,6 +32,7 @@ ms.technology: windows-oem
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
 <p>Windows 10 Mobile x86</p>
 <p>Windows 10 Mobile x64</p>
+<p>Windows 10 ARM64 Desktop</p>
 </td></tr></table>
 
 **Description**
@@ -69,6 +70,7 @@ Effective from the Windows release after April 1st, 2018, Camera devices must no
 <td>
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
+<p>Windows 10 ARM64 Desktop</p>
 </td></tr></table>
 
 **Description**
@@ -87,6 +89,7 @@ RGB cameras must work with Microsoft DirectShow in order to support legacy appli
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
 <p>Windows 10 Mobile x86</p>
 <p>Windows 10 Mobile x64</p>
+<p>Windows 10 ARM64 Desktop</p>
 </td></tr></table>
 
 **Description**
@@ -105,6 +108,7 @@ RGB cameras must register under KSCategory\_Video\_Camera for Windows to detect 
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
 <p>Windows 10 Mobile x86</p>
 <p>Windows 10 Mobile x64</p>
+<p>Windows 10 ARM64 Desktop</p>
 </td></tr></table>
 
 **Description**
@@ -123,6 +127,7 @@ Cameras must work with Microsoft Media Foundation in order to support legacy (Wi
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
 <p>Windows 10 Mobile x86</p>
 <p>Windows 10 Mobile x64</p>
+<p>Windows 10 ARM64 Desktop</p>
 </td></tr></table>
 
 **Description**
@@ -143,6 +148,7 @@ Each camera must allow multiple filter instances to be created. Devices may only
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
 <p>Windows 10 Mobile x86</p>
 <p>Windows 10 Mobile x64</p>
+<p>Windows 10 ARM64 Desktop</p>
 </td></tr></table>
 
 **Description**
@@ -161,6 +167,7 @@ To differentiate the functionality between RGB cameras and other types of sensor
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
 <p>Windows 10 Mobile x86</p>
 <p>Windows 10 Mobile x64</p>
+<p>Windows 10 ARM64 Desktop</p>
 </td></tr></table>
 
 **Description**
@@ -183,6 +190,7 @@ More info can be found at the following link:
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
 <p>Windows 10 Mobile x86</p>
 <p>Windows 10 Mobile x64</p>
+<p>Windows 10 ARM64 Desktop</p>
 </td></tr></table>
 
 **Description**
@@ -201,6 +209,7 @@ All hot-pluggable cameras must support their surprise removal from the host bu
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
 <p>Windows 10 Mobile x86</p>
 <p>Windows 10 Mobile x64</p>
+<p>Windows 10 ARM64 Desktop</p>
 </td></tr></table>
 
 **Description**
@@ -228,6 +237,7 @@ When this is set, the operating system will be able to show UI indicating when t
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
 <p>Windows 10 Mobile x86</p>
 <p>Windows 10 Mobile x64</p>
+<p>Windows 10 ARM64 Desktop</p>
 </td></tr></table>
 
 **Description**
@@ -246,6 +256,7 @@ Cameras and by extension custom media sources that act as cameras must work with
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
 <p>Windows 10 Mobile x86</p>
 <p>Windows 10 Mobile x64</p>
+<p>Windows 10 ARM64 Desktop</p>
 </td></tr></table>
 
 **Description**
@@ -264,6 +275,7 @@ To support the sharing experience, the device driver and user mode components as
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
 <p>Windows 10 Mobile x86</p>
 <p>Windows 10 Mobile x64</p>
+<p>Windows 10 ARM64 Desktop</p>
 </td></tr></table>
 
 **Description**
@@ -282,6 +294,7 @@ To advertise that Face Authentication is supported by a device, additional Windo
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
 <p>Windows 10 Mobile x86</p>
 <p>Windows 10 Mobile x64</p>
+<p>Windows 10 ARM64 Desktop</p>
 </td></tr></table>
 
 **Description**
@@ -300,6 +313,7 @@ Memory allocation by drivers must be aligned to 4k page boundaries.  It is reco
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
 <p>Windows 10 Mobile x86</p>
 <p>Windows 10 Mobile x64</p>
+<p>Windows 10 ARM64 Desktop</p>
 </td></tr></table>
 
 **Description**
@@ -319,6 +333,7 @@ Any stream exposed by the driver should be usable in some way by an application.
 <td>
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
+<p>Windows 10 ARM64 Desktop</p>
 </td></tr></table>
 
 **Description**
@@ -337,6 +352,7 @@ Effective from the Windows release after April 1st, 2018, all USB streaming vide
 <td>
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
+<p>Windows 10 ARM64 Desktop</p>
 </td></tr></table>
 
 **Description**
