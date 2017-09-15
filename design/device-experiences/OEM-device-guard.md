@@ -1,6 +1,6 @@
 ---
 title: Device Guard hardware requirements
-description: Provides guidance on what an OEM should do to enable Device Guard
+description: Provides guidance on what an OEM should do to enable Windows Defemder Device Guard
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
@@ -20,7 +20,7 @@ Windows Defender Device Guard can also leverage advanced hardware features on ha
 
 If you are an OEM building secure systems, you must provide the hardware to enable these features.
 
-**IT Professionals;**  If you want more information on how to deploy Device Guard, see [Windows Defender Device Guard deployment guide](https://docs.microsoft.com/en-us/windows/device-security/device-guard/device-guard-deployment-guide).
+**IT Professionals:**  If you want more information on how to deploy Windows Defender Device Guard, see [Windows Defender Device Guard deployment guide](https://docs.microsoft.com/en-us/windows/device-security/device-guard/device-guard-deployment-guide).
 
 ## Windows Defender Exploit Guard
 
@@ -32,21 +32,19 @@ For a device to support Windows Defender Exploit Guard as specified in the Windo
 |----------------------|---------|
 | Virtualization-based security (VBS) | Credential Guard requires VBS. You can learn more about VBS by reading [Virtualization-based Security (VBS)](OEM-vbs.md). |
 | Secure Boot | Hardware-based Secure Boot must be supported. To learn more, see [Secure Boot](OEM-secure-boot.md). | 
-| Trusted Platform Module (TPM) 2.0 | TPM 2.0 provides protection for VBS encryption keys that are stored in the firmware. Credential Guard data is protected against attacks involving a physically present user with BIOS and hardware access. For more information, see [Trusted Platform Module 2.0](OEM-TPM.md).|
 | Secure Memory Overwrite Request (MOR) revision 2 | A secure MOR bit prevents certain memory attacks that Credential Guard requires. For more information, see [Secure MOR implementation](https://docs.microsoft.com/en-us/windows-hardware/drivers/bringup/device-guard-requirements). |
 | Multi-factor authentication | Two-step verification is a method of authentication that requires more than one verification method and adds a critical second layer of security to user sign-ins and transactions. For more information, see [What is Azure Multi-Factor Authentication?](https://docs.microsoft.com/en-us/azure/multi-factor-authentication/multi-factor-authentication). |
 
 
 ## Windows Defender Application control
 
-Starting with Windows 10, version 1709, the code integretity part of Device Guard has been split out into a separate feature known as Windows Defender Application control. 
-With appropriate hardware, application control can use virtualization-based security (VBS) in Windows 10 to isolate the Code Integrity service from the Microsoft Windows kernel itself. In this case, the Code Integrity service runs alongside the kernel in a Windows hypervisor-protected container.
-  
+Starting with Windows 10, version 1709, the code integretity part of Windows Defender Device Guard has been split out into a separate feature known as Windows Defender Application control. 
+
  WDAC is used to control what code can run on the system in either kernel or user mode. When HVCI is enabled, WDAC benefits from the increased kernel memory protections since the kernel mode CI checks occur in virtualization based security and user mode code integrity runs as part of the kernel itself and is thus protected against kernel memory exploits.
 
-### Device Guard and Credential Guard Readiness Tool
+### Windows Defender Device Guard and Windows Defender Credential Guard Readiness Tool
 
-To determine if a device is able to run Device Guard and Credential Guard, download the [Device Guard and Credential Guard hardware readiness tool](https://www.microsoft.com/en-us/download/details.aspx?id=53337).
+To determine if a device is able to run Windows Defender Device Guard and Windows Defender Credential Guard, download the [Device Guard and Credential Guard hardware readiness tool](https://www.microsoft.com/en-us/download/details.aspx?id=53337).
 
 ## Related topics
 
