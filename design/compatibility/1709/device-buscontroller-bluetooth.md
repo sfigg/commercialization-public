@@ -32,6 +32,7 @@ ms.technology: windows-oem
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 </td></tr></table>
 
 **Description**
@@ -56,6 +57,7 @@ These requirements are "If Implemented" for Client systems and apply only if a C
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 </td></tr></table>
 
 **Description**
@@ -87,6 +89,7 @@ The Bluetooth controller is highly recommended to support the following LE state
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 </td></tr></table>
 
 **Description**
@@ -105,6 +108,7 @@ The Bluetooth controller must support a minimum of 25 entries in its white list 
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 </td></tr></table>
 
 **Description**
@@ -123,6 +127,7 @@ The Bluetooth controllers must be tested with Microsoft's Bluetooth stack when s
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 </td></tr></table>
 
 **Terms: If-Implemented**
@@ -145,6 +150,7 @@ Radios that support the Microsoft defined Bluetooth HCI extensions must comply w
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 </td></tr></table>
 
 **Description**
@@ -163,6 +169,7 @@ To ensure a uniform experience across Windows Store Apps using the Bluetooth LE 
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 </td></tr></table>
 
 **Description**
@@ -185,6 +192,7 @@ Bluetooth Radio Management in Windows 8.1 shall only be enabled for internal Blu
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 </td></tr></table>
 
 **Description**
@@ -205,6 +213,7 @@ Design Notes: The scatternet support should follow the enhanced scatternet suppo
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 </td></tr></table>
 
 **Description**
@@ -223,6 +232,7 @@ Bluetooth controllers must allow the simultaneous use of both Basic Rate (BR)/En
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 </td></tr></table>
 
 **Description**
@@ -241,6 +251,7 @@ The manufacturer fixes the informational parameters, which provide valuable info
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 </td></tr></table>
 
 **Description**
@@ -255,6 +266,7 @@ The Bluetooth host controller must comply with the requirements that are outline
 <td>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 </td></tr></table>
 
 **Terms: If-Implemented**
@@ -286,6 +298,7 @@ We want users to experience the best possible quality audio when using Bluetooth
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 </td></tr></table>
 
 **Description**
@@ -304,6 +317,7 @@ Non-USB Bluetooth controllers must achieve at least a throughput of 700 kbps at 
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 </td></tr></table>
 
 **Description**
@@ -327,6 +341,7 @@ In order to ensure a high quality audio experience, all non-USB connected Blueto
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
+<p>Windows 10 ARM64 Desktop</p>
 </td></tr></table>
 
 **Description**
