@@ -33,7 +33,7 @@ If you are testing software, be sure to install the product on the test system f
        
        >[!NOTE]
        >  If the test system has a Server Core installation, then you should install the HLK client using the silent install option:
-```
+```syntax
 \\<HLKController>\HLKInstall\Client\Setup.cmd /qn ICFAGREE=Yes
 ```
 
