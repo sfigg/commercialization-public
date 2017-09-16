@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: f30821e3-0c55-442b-92cf-fbdda2ef8446
 ---
 
-# <span id="p-hlk-test.a6e58d86-7fd6-4add-8ca1-dbcab7a446a6"></span>Camera Driver Test - Preview (Sample Grabber), Record H.264 Video and AAC Audio from each Capture Stream type
+# <span id="p_hlk_test.a6e58d86-7fd6-4add-8ca1-dbcab7a446a6"></span>Camera Driver Test - Preview (Sample Grabber), Record H.264 Video and AAC Audio from each Capture Stream type
 
 
 This set of tests validates cameras functionality with the MF and IMFCaptureEngine.

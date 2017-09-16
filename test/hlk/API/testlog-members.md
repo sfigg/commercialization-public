@@ -12,7 +12,7 @@ ms.assetid: afea98f1-6534-461a-845b-4df91ace497d
 
 The following table lists the members exposed by the **TestLog** type.
 
-## <span id="Public-Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
+## <span id="Public_Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
 
 
 <table>

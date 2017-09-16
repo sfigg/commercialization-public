@@ -30,7 +30,7 @@ To test a Secure Digital host controller, you need the following hardware. You m
 -   1 or more Secure Digital memory cards that comply with the requirements of the Windows Hardware Certification Program. You need a memory card for each port on the Secure Digital host controller.
 
     >[!NOTE]
->  
+    >  
     If the Secure Digital host controller supports High Speed mode, the memory card that you use must also be High Speed.
 
      
@@ -46,8 +46,6 @@ For tests that don't include a driver to test, like tests for a hard disk drive,
 >[!NOTE]
 >  
 Except for para-virtualization drivers (as defined by the [WHCP Policies and Processes](http://go.microsoft.com/fwlink/p/?LinkID=615222) document), you can't use any form of virtualization when you test physical devices and their associated drivers for server certification or signature. Virtualization products don't support the underlying functionality that's required to pass the tests that relate to multiple processor groups, device power management, device Peripheral Component Interconnect (PCI) functionality, and other tests.
-
- 
 
 >[!NOTE]
 >  Multiple Processor Groups Setting
@@ -68,8 +66,6 @@ bcdedit.exe /deletevalue groupsize
 bcdedit.exe /deletevalue groupaware
 shutdown.exe -r -t 0 -f
 ```
-
- 
 
 >[!NOTE]
 >  
@@ -110,7 +106,7 @@ To configure the test computer for your test device, follow these steps:
 4.  If the test device is connected through a USB port, connect the USB 2.0 controller to the high-speed USB 2.0 hub, and then connect the test device to the downstream port of the high-speed USB 2.0 hub.
 
     >[!NOTE]
->  
+    >  
     Don't connect the USB test device directly to the root hub of the USB 2.0 controller.
 
      

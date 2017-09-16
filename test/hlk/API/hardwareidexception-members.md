@@ -12,7 +12,7 @@ ms.assetid: 539F7337-2ABE-4DCD-A6ED-3EAC008A5891
 
 The following table lists the members exposed by the **HardwareIdException** type.
 
-## <span id="Public-Constructors"></span><span id="public_constructors"></span><span id="PUBLIC_CONSTRUCTORS"></span>Public Constructors
+## <span id="Public_Constructors"></span><span id="public_constructors"></span><span id="PUBLIC_CONSTRUCTORS"></span>Public Constructors
 
 
 <table>

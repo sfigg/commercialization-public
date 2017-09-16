@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: a8dd13ab-72f7-4f59-8d23-7dc53c77d0dc
 ---
 
-# <span id="p-hlk-test.c19eee30-1acc-4b0b-b3b3-9bec6eb4d149"></span>E3 Disk Benchmark
+# <span id="p_hlk_test.c19eee30-1acc-4b0b-b3b3-9bec6eb4d149"></span>E3 Disk Benchmark
 
 
 Learns disk model coefficients for Energy Estimation Engine

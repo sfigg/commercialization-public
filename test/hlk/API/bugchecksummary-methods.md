@@ -10,7 +10,7 @@ ms.assetid: 9B8036AF-372F-4029-988D-56FBEBE049DD
 # BugcheckSummary Methods
 
 
-## <span id="Public-Methods"></span><span id="public_methods"></span><span id="PUBLIC_METHODS"></span>Public Methods
+## <span id="Public_Methods"></span><span id="public_methods"></span><span id="PUBLIC_METHODS"></span>Public Methods
 
 
 <table>

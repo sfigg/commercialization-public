@@ -12,7 +12,7 @@ ms.assetid: 8b31828c-3862-4b0c-a289-12ecb79c7422
 
 \[This content is not available in this preliminary release.\]
 
-## <span id="Section-Heading"></span><span id="section_heading"></span><span id="SECTION_HEADING"></span>Section Heading
+## <span id="Section_Heading"></span><span id="section_heading"></span><span id="SECTION_HEADING"></span>Section Heading
 
 
 Insert section body here.

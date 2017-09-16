@@ -50,7 +50,7 @@ To configure the test computer for your test device, follow these steps:
 3.  If the game controller uses USB as the primary connection, connect the game controller USB 2.0 hub. If the game controller includes a headset, the headset must be attached to the test game controller.
 
     >[!NOTE]
->  
+    >  
     Do not connect the USB test device directly to the root hub of the USB 2.0 controller.
 
      

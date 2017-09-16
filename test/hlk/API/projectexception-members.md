@@ -12,7 +12,7 @@ ms.assetid: b3293580-414e-4dd8-bc25-c580605c6eb9
 
 The following table lists the members exposed by the **ProjectException** type.
 
-## <span id="Public-Constructor"></span><span id="public_constructor"></span><span id="PUBLIC_CONSTRUCTOR"></span>Public Constructor
+## <span id="Public_Constructor"></span><span id="public_constructor"></span><span id="PUBLIC_CONSTRUCTOR"></span>Public Constructor
 
 
 <table>

@@ -65,8 +65,6 @@ For tests that do not include a driver to test, such as hard disk drive tests, t
 >  
 Except for para-virtualization drivers (as defined by the [WHCP Policies and Processes](http://go.microsoft.com/fwlink/p/?LinkID=615222) document), you cannot use any form of virtualization when you test physical devices and their associated drivers for server certification or signature. All virtualization products do not support the underlying functionality that is required to pass the tests that relate to multiple processor groups, device power management, device PCI functionality, and other tests.
 
- 
-
 >[!NOTE]
 >  Multiple Processor Groups Setting
 You must set the value for the processor group size for Hardware Lab Kit testing of Windows Server 2008 R2 and later device drivers for certification. This is done by running bcdedit in an elevated command prompt window, using the /set option.
@@ -86,8 +84,6 @@ bcdedit.exe /deletevalue groupsize
 bcdedit.exe /deletevalue groupaware
 shutdown.exe -r -t 0 -f
 ```
-
- 
 
 >[!NOTE]
 >  
@@ -293,7 +289,7 @@ To configure the test computer to test a SATA controller as-an add-in RAID contr
     3.  Click the **Advanced** tab (or click **Advanced system settings** in the left pane for Windows Vista, Windows 7, Windows 8, Windows Server 2008, Windows Server 2008 R2 or Windows Server® 2012), and then, in the **Performance** area, click **Settings**.
 
         >[!NOTE]
->  
+        >  
         If you are prompted to enter administrative credentials or allow the action, enter the credentials or allow the action.
 
          
@@ -440,7 +436,7 @@ To configure the test computer to test a SATA controller in an integrated RAID c
     3.  Click the **Advanced** tab (or click **Advanced system settings** in the left pane for Windows Vista, Windows 7, Windows 8, Windows Server 2008, Windows Server 2008 R2 or Windows Server® 2012), and then, in the **Performance** area, click **Settings**.
 
         >[!NOTE]
->  
+        >  
         If you are prompted to enter administrative credentials or allow the action, enter the credentials or allow the action.
 
          
@@ -521,7 +517,7 @@ To configure the test computer for testing of an SATA controller in a non-RAID c
     3.  Click the **Advanced** tab (or click **Advanced system settings** in the left pane for Windows Vista, Windows 7, Windows 8, Windows Server 2008, Windows Server 2008 R2 or Windows Server® 2012), and then, in the **Performance** area, click **Settings**.
 
         >[!NOTE]
->  
+        >  
         If you are prompted to enter administrative credentials or allow the action, enter the credentials or allow the action.
 
          

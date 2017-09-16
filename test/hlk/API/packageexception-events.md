@@ -10,7 +10,7 @@ ms.assetid: 80021813-59a7-4c08-a934-0454b9c17e63
 # PackageException Events
 
 
-## <span id="Protected-Events"></span><span id="protected_events"></span><span id="PROTECTED_EVENTS"></span>Protected Events
+## <span id="Protected_Events"></span><span id="protected_events"></span><span id="PROTECTED_EVENTS"></span>Protected Events
 
 
 <table>

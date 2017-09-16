@@ -7,8 +7,7 @@ MSHAttr:
 ms.assetid: f9409262-5dfd-4005-b3b4-777af9ba9d9d
 ---
 
-# <span id="p-hlk-test.ead6cfd1-e952-4eab-8c73-635faf2fabd8"></span>CoreSys HEVCQualityTest237
-
+# <span id="p_hlk_test.ead6cfd1-e952-4eab-8c73-635faf2fabd8"></span>CoreSys HEVCQualityTest237
 
 >[!IMPORTANT]
 >  

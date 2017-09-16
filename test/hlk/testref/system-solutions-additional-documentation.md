@@ -10,7 +10,7 @@ ms.assetid: cf6519e4-c6f5-44e3-ae19-5f4881c50d15
 # System.Solutions additional documentation
 
 
-## <span id="in-this-section"></span>In this section
+## <span id="in_this_section"></span>In this section
 
 
 -   [Private Cloud Simulator for Windows Server 2016](private-cloud-simulator.md)

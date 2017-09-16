@@ -30,7 +30,7 @@ inquiry@jjgtechnologies.com
 
 After setting up the [HLK test framework](https://msdn.microsoft.com/en-us/library/windows/hardware/dn939963.aspx):
 
-### <span id="Hardware-requirements"></span><span id="hardware_requirements"></span><span id="HARDWARE_REQUIREMENTS"></span>Hardware requirements
+### <span id="Hardware_requirements"></span><span id="hardware_requirements"></span><span id="HARDWARE_REQUIREMENTS"></span>Hardware requirements
 
 -   Device with NFC chip that implements the NFC driver DDIs and is subject to compliance tests (referred to as Device Under Test (DUT))
 -   Desktop PC with USB port (PC client)

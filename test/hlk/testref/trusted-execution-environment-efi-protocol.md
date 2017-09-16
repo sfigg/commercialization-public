@@ -12,7 +12,7 @@ ms.assetid: ffb509a2-6d7b-49a2-9e12-e7a06f1bb330
 
 Licensing: Microsoft agrees to grant to you a no charge, royalty-free license to its Necessary Claims on reasonable and non-discriminatory terms solely to make, use, sell, offer for sale, import, or distribute any implementation of this specification. “Necessary Claims” are those claims of Microsoft-owned or Microsoft-controlled patents that are technically necessary to implement the required portions (which also include the required elements of optional portions) of this specification, where the functionality causing the infringement is described in detail and not merely referenced in this Specification.
 
-## <span id="1.0-introduction"></span><span id="1.0_INTRODUCTION"></span>1.0 Introduction
+## <span id="1.0_introduction"></span><span id="1.0_INTRODUCTION"></span>1.0 Introduction
 
 
 This document specifies an EFI protocol for interacting with a Trusted Execution Environment (TrEE), implementing TPM 2.0 functionality per a subset of a Trusted Computing Group (TCG) Trusted Platform Module 2.0 Library specification. This document also specifies platform firmware measurement requirements. The EFI protocol defined herein leverages to a large degree \[TCG06a\] and \[TCG06b\].
@@ -718,7 +718,6 @@ The TPM 2.0 MUST have access to its persistent storage prior to the call to Exit
  
 
 ## <span id="Appendix_A__Static_Root_of_Trust_Measurements"></span><span id="appendix_a__static_root_of_trust_measurements"></span><span id="APPENDIX_A__STATIC_ROOT_OF_TRUST_MEASUREMENTS"></span>Appendix A: Static Root of Trust Measurements
-
 
 >[!IMPORTANT]
 >  

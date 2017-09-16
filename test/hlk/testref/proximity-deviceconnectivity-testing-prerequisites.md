@@ -61,8 +61,6 @@ Some Windows HLK tests require user intervention. When you're running tests for 
 >  
 You must open the desktop on the test computer before you run any proximity tests. To do this, choose the Desktop tile from the Start screen after the test computer starts.
 
- 
-
 >[!NOTE]
 >  
 If a device supports multiple connectivity methods, complete a separate submission for each connectivity method.

@@ -54,7 +54,7 @@ If you are testing a GPS device, be sure to enable the **Allow Apps To Use my lo
 1.  Install the appropriate Windows operating system on the test computer, and then configure the computer for your test network. The test network is the network that contains Windows HLK Studio and Windows HLK Controller.
 
     >[!NOTE]
->  
+    >  
     To test your sensor device, the test computer must be running Windows 8 or Windows 7.
 
      
@@ -62,7 +62,7 @@ If you are testing a GPS device, be sure to enable the **Allow Apps To Use my lo
 2.  If the sensor uses USB as the connection type, connect the USB 2.0 controller to the high-speed USB 2.0 hub, and then connect the sensor to the downstream port of the high-speed USB 2.0 hub.
 
     >[!NOTE]
->  
+    >  
     Do not connect the USB test device directly to the root hub of the USB 2.0 controller.
 
      

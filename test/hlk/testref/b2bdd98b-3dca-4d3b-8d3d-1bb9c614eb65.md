@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: 7012c7ec-0c24-4393-a709-8535892108c8
 ---
 
-# <span id="p-hlk-test.b2bdd98b-3dca-4d3b-8d3d-1bb9c614eb65"></span>TPM 2.0 - Required Security Patches Tests
+# <span id="p_hlk_test.b2bdd98b-3dca-4d3b-8d3d-1bb9c614eb65"></span>TPM 2.0 - Required Security Patches Tests
 
 
 This manual test validates the presence of all mandatory security critical patches that are released for the 0.88 version implementation of Trusted Platform Module (TPM).

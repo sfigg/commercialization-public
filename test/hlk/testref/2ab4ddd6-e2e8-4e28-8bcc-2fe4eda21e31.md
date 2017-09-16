@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: fd2fb077-8ba2-4acc-a15f-63948f5f1c0d
 ---
 
-# <span id="p-hlk-test.2ab4ddd6-e2e8-4e28-8bcc-2fe4eda21e31"></span>Windows Touch Response Latency (Down) Test
+# <span id="p_hlk_test.2ab4ddd6-e2e8-4e28-8bcc-2fe4eda21e31"></span>Windows Touch Response Latency (Down) Test
 
 
 This test verifies that a Windows Touch device meets the response latency requirements for both idle and active states.

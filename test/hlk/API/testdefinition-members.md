@@ -12,7 +12,7 @@ ms.assetid: 38D835C4-12BF-4C39-AFC4-8FA4C8635F03
 
 The following tables list the members exposed by the [TestDefinition](testdefinition-class.md) class.
 
-## <span id="Public-Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
+## <span id="Public_Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
 
 
 <table>

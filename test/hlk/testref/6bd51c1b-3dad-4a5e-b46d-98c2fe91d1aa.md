@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: 7b33a2dc-1b41-420e-a02f-b5de0b7a7e1d
 ---
 
-# <span id="p-hlk-test.6bd51c1b-3dad-4a5e-b46d-98c2fe91d1aa"></span>DF - Sleep and PNP (disable and enable) with IO Before and After (Reliability)
+# <span id="p_hlk_test.6bd51c1b-3dad-4a5e-b46d-98c2fe91d1aa"></span>DF - Sleep and PNP (disable and enable) with IO Before and After (Reliability)
 
 
 This test cycles the system through various sleep states and performs IO and basic PNP (disable/enable) on devices before and after each sleep state cycle.

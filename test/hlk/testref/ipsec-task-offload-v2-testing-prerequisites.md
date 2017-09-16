@@ -42,7 +42,7 @@ This hardware is required for testing:
 -   Two test computers that meet the Windows HLK prerequisites. For more info, see [Windows HLK Prerequisites](..\getstarted\windows-hlk-prerequisites.md).
 
     >[!NOTE]
->  
+    >  
     The test computers must be in the same machine pool.
 
      
@@ -78,7 +78,7 @@ Here's a summary of each computer shown, devices installed on them, and their ro
 -   **Windows HLK Controller computer.** Used to control client computers and gather all test information from them.
 
     >[!NOTE]
->  
+    >  
     Windows HLK Studio and Windows HLK Controller can run on the same test server, which can help reduce setup complexity.
 
      
@@ -145,7 +145,7 @@ You can use Windows HLK Studio to schedule the LAN device test jobs on the clien
 1.  In Windows HLK Studio, enter all of the information that the LAN device test job needs, and then schedule the job.
 
     >[!NOTE]
->  
+    >  
     Test computers must be in the ready state before testing begins. If a test requires parameters to be set before it's run, a dialog box is displayed for that test. Review the specific test topic for more information.
 
      

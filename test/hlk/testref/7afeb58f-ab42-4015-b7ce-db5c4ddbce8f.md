@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: e8d83bc0-3deb-4fd5-a186-9ca239d01bd5
 ---
 
-# <span id="p-hlk-test.7afeb58f-ab42-4015-b7ce-db5c4ddbce8f"></span>D3D12 - Resource Binding - Shader Resource Visibility
+# <span id="p_hlk_test.7afeb58f-ab42-4015-b7ce-db5c4ddbce8f"></span>D3D12 - Resource Binding - Shader Resource Visibility
 
 
 Test that different shader stages can use the same register binding but reference different descriptors through the root signature parameter Shader Visibility functionality. Test uses all 5 3D shader stages, each reading from SRV0 and writting to UAV1. The UAVs are then verified to hold unique data from each stage

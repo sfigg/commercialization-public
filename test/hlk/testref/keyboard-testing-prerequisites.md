@@ -50,7 +50,7 @@ To configure the test computer for your test device, follow these steps:
 3.  If the keyboard supports USB, attach the keyboard to the test computer. Verify that the keyboard is plugged into the external USB 2.0 high-speed hub that is connected to the test computer. To test a keyboard that supports Bluetooth or wireless connections, connect the associated base station to the USB 2.0 hub.
 
     >[!NOTE]
->  
+    >  
     Do not connect the keyboard or wireless base station directly to the root hub of a USB 2.0 controller.
 
      

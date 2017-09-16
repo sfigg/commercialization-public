@@ -50,7 +50,7 @@ To configure the test computer for your test device, follow these steps:
 3.  If the mouse or pointing device supports USB, attach the device to the test computer. Verify that the device is plugged into the external USB 2.0 high-speed hub that is connected to the test computer. To test a mouse that supports Bluetooth or wireless connections, connect the associated base station to the USB 2.0 hub
 
     >[!NOTE]
->  
+    >  
     Do not connect the keyboard or wireless base station directly to the root hub of a USB 2.0 controller.
 
      

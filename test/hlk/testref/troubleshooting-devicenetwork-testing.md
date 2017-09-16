@@ -10,7 +10,7 @@ ms.assetid: 1e8ce900-ca80-4d8e-b507-2976262aa8f4
 # Troubleshooting Device.Network Testing
 
 
-## <span id="troubleshooting-device.network-testing"></span><span id="TROUBLESHOOTING_DEVICE.NETWORK_TESTING"></span>Troubleshooting Device.Network Testing
+## <span id="troubleshooting_device.network_testing"></span><span id="TROUBLESHOOTING_DEVICE.NETWORK_TESTING"></span>Troubleshooting Device.Network Testing
 
 
 To troubleshoot issues that occur with Device.Network tests, follow these steps:
@@ -99,8 +99,6 @@ The IPSec test job may fail due to issues with related LAN test jobs. See the fo
 </tr>
 </tbody>
 </table>
-
- 
 
 >[!NOTE]
 >  
@@ -207,8 +205,6 @@ Installing NDISTest separate from DTM Studio enables you to execute individual t
 >[!NOTE]
 >  
 All test machines must use the same processor architecture.
-
- 
 
 >[!NOTE]
 >  

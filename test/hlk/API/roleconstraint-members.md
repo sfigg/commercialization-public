@@ -10,7 +10,7 @@ ms.assetid: 40b1c9f7-b194-4c25-9314-d644dcddf31e
 # RoleConstraint Members
 
 
-## <span id="Public-Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
+## <span id="Public_Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
 
 
 <table>

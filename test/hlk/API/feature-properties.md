@@ -10,7 +10,7 @@ ms.assetid: 2778f057-320f-4c3c-95c0-12a85f45a388
 # Feature Properties
 
 
-## <span id="Public-Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
+## <span id="Public_Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
 
 
 <table>

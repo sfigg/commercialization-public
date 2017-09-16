@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: 5f15fc29-149a-4232-b7f3-fb5db7187fd7
 ---
 
-# <span id="p-hlk-test.aed4ff5a-77c3-4bf6-aed8-3d3aee692fcb"></span>WGF11 -- Multi-threading -- two-way stress test (FeatureLevel 10.0)
+# <span id="p_hlk_test.aed4ff5a-77c3-4bf6-aed8-3d3aee692fcb"></span>WGF11 -- Multi-threading -- two-way stress test (FeatureLevel 10.0)
 
 
 This automated test verifies the requirements listed in the test details table.
@@ -182,8 +182,6 @@ For troubleshooting information, see [Troubleshooting Device.Graphics Testing](t
 </tr>
 </tbody>
 </table>
-
- 
 
 >[!NOTE]
 >  

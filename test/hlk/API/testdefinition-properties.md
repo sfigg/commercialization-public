@@ -10,7 +10,7 @@ ms.assetid: FB3D8F51-C194-4F35-B58C-3CF7D26347BD
 # TestDefinition Properties
 
 
-## <span id="Public-Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
+## <span id="Public_Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
 
 
 <table>

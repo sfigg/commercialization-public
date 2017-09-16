@@ -9,7 +9,6 @@ ms.assetid: 05B4D47F-BDB5-4DA0-97F5-7B0F6B092865
 
 # Project.GetAllPossibleTests Method
 
-
 >[!WARNING]
 >  This functionality is being deprecated. Please use playlists to create custom test pass lists.
 

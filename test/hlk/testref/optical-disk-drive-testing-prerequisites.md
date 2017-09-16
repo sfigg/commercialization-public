@@ -36,7 +36,7 @@ To test an optical drive, you need the following hardware. You might need additi
 -   2 identical optical disk drives for testing.
 
     >[!NOTE]
->  
+    >  
     If the optical disk drive that you're testing is read-only, you must connect a writer drive in addition to the two drives that you test.
 
      
@@ -57,8 +57,6 @@ For tests that don't include a driver to test, like tests for a hard disk drive,
 >  
 Except for para-virtualization drivers (as defined by the [WHCP Policies and Processes](http://go.microsoft.com/fwlink/p/?LinkID=615222) document), you can't use any form of virtualization when you test physical devices and their associated drivers for server certification or signature. Virtualization products don't support the underlying functionality that's required to pass the tests that relate to multiple processor groups, device power management, device Peripheral Component Interconnect (PCI) functionality, and other tests.
 
- 
-
 >[!NOTE]
 >  Multiple Processor Groups Setting
 You must set the value for the processor group size for Hardware Lab Kit testing of Windows Server 2008 R2 and later device drivers for certification. This is done by running bcdedit in an elevated command prompt window, using the /set option.
@@ -78,8 +76,6 @@ bcdedit.exe /deletevalue groupsize
 bcdedit.exe /deletevalue groupaware
 shutdown.exe -r -t 0 -f
 ```
-
- 
 
 >[!NOTE]
 >  
@@ -128,7 +124,7 @@ To configure the test computer for your test device, follow these steps:
     -   For USB, connect the test device to the downstream port of the high-speed USB 2.0 hub.
 
         >[!NOTE]
->  
+        >  
         Don't connect the USB test device directly to the root hub of the USB 2.0 controller.
 
          
@@ -136,7 +132,7 @@ To configure the test computer for your test device, follow these steps:
 4.  Turn on the test system and set the system BIOS to support the S3 state.
 
     >[!NOTE]
->  
+    >  
     All adapters are operated with BIOS enabled and external termination unless otherwise noted.
 
      

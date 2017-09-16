@@ -143,7 +143,6 @@ Collect and submit results
 HLKController VM
 15 minutes
 6
- 
 
 >[!NOTE]
 >  \*Redeploy order specifies whether the stamp is to be redeployed along with the order of steps
@@ -292,8 +291,9 @@ Prior to scheduling or running any tests in the HLK, complete the following step
 2.  On the **Explorers** menu, click **Job Explorer**.
 3.  In **Job Explorer**, press CTRL+Q to open the query pane, and search for jobs where **Name Equals Windows Logo Kit- Prepare client for submission**.
 4.  In the **Results** pane, note the **Job ID** for the matching job.
+
     >[!NOTE]
->  The Job ID will be 1416.
+    >  The Job ID will be 1416.
 
      
 

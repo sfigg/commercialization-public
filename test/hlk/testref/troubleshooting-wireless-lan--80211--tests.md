@@ -18,7 +18,7 @@ This topic describes some common troubleshooting tips for WLAN testing. To begin
 
 3.  For a test failure, look for usable information in the Windows HLK Studio test log. If you find usable information, resolve the issue and rerun the test.
 
-## <span id="Changes-that-you-made-to-devices-on-HLK-clients-machines-are-not-reflected-in-HLK-Studio.-For-example--the-machine-is-expected-to-be-in-the-Ready-state-but-it-is-not."></span><span id="changes_that_you_made_to_devices_on_hlk_clients_machines_are_not_reflected_in_hlk_studio._for_example__the_machine_is_expected_to_be_in_the_ready_state_but_it_is_not."></span><span id="CHANGES_THAT_YOU_MADE_TO_DEVICES_ON_HLK_CLIENTS_MACHINES_ARE_NOT_REFLECTED_IN_HLK_STUDIO._FOR_EXAMPLE__THE_MACHINE_IS_EXPECTED_TO_BE_IN_THE_READY_STATE_BUT_IT_IS_NOT."></span>Changes that you made to devices on HLK clients machines are not reflected in HLK Studio. For example, the machine is expected to be in the Ready state but it is not.
+## <span id="Changes_that_you_made_to_devices_on_HLK_clients_machines_are_not_reflected_in_HLK_Studio._For_example__the_machine_is_expected_to_be_in_the_Ready_state_but_it_is_not."></span><span id="changes_that_you_made_to_devices_on_hlk_clients_machines_are_not_reflected_in_hlk_studio._for_example__the_machine_is_expected_to_be_in_the_ready_state_but_it_is_not."></span><span id="CHANGES_THAT_YOU_MADE_TO_DEVICES_ON_HLK_CLIENTS_MACHINES_ARE_NOT_REFLECTED_IN_HLK_STUDIO._FOR_EXAMPLE__THE_MACHINE_IS_EXPECTED_TO_BE_IN_THE_READY_STATE_BUT_IT_IS_NOT."></span>Changes that you made to devices on HLK clients machines are not reflected in HLK Studio. For example, the machine is expected to be in the Ready state but it is not.
 
 
 1.  Open a Command Prompt window on the client machine, and then run **net stop wttsvc**.
@@ -72,8 +72,6 @@ Installing NDISTest separate from HLK Studio enables you to execute individual t
 >[!NOTE]
 >  
 All test machines must use the same processor architecture.
-
- 
 
 >[!NOTE]
 >  

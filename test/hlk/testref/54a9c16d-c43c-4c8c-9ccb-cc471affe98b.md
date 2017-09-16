@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: 41337b97-c583-4fd5-9f57-d4167abb9e79
 ---
 
-# <span id="p-hlk-test.54a9c16d-c43c-4c8c-9ccb-cc471affe98b"></span>D3D AGP Texture (WoW64)
+# <span id="p_hlk_test.54a9c16d-c43c-4c8c-9ccb-cc471affe98b"></span>D3D AGP Texture (WoW64)
 
 
 This automated test measures the minimum supported Direct X renderer capability of a graphics adapter or chipset.
@@ -122,8 +122,6 @@ This requirement is “If-Implemented” for Windows Server.
 </tr>
 </tbody>
 </table>
-
- 
 
 >[!NOTE]
 >  

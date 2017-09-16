@@ -10,7 +10,7 @@ ms.assetid: fa816fd4-0e62-4e82-a06f-b132939d027a
 # ProductInstanceException Methods
 
 
-## <span id="Public-Methods"></span><span id="public_methods"></span><span id="PUBLIC_METHODS"></span>Public Methods
+## <span id="Public_Methods"></span><span id="public_methods"></span><span id="PUBLIC_METHODS"></span>Public Methods
 
 
 <table>

@@ -8,7 +8,7 @@ Search.SourceType: Video
 ms.assetid: bde8be34-cee5-4e91-9a2d-31300c02e889
 ---
 
-# <span id="p-hlk-test.62ec3a8d-6329-4077-babe-aeabaac5cc84"></span>Camera Driver Controls Device Test - CAMERA\_PROFILES - Log all profiles
+# <span id="p_hlk_test.62ec3a8d-6329-4077-babe-aeabaac5cc84"></span>Camera Driver Controls Device Test - CAMERA\_PROFILES - Log all profiles
 
 
 The Camera Sensor Quality test is an optional test for systems that include one or more built in cameras (for example: phones, laptops, tablets, all-in-one personal computers). This test verifies that the system is able to deliver a high quality real-time capture experience.

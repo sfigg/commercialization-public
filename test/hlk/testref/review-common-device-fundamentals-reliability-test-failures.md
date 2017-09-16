@@ -36,7 +36,7 @@ This topic describes common test failures that you can encounter when you run Wi
 
 -   [Test log message: Number of devices found after reboot (1) is not the same as before the reboot (2); please review logs to find the missing device(s)](#number-of-devices-changed)
 
-## <span id="failed-but-te-shows-pass"></span><span id="FAILED_BUT_TE_SHOWS_PASS"></span>The test is marked as failed in HLK Studio, but the te.wtl log shows only pass results
+## <span id="failed_but_te_shows_pass"></span><span id="FAILED_BUT_TE_SHOWS_PASS"></span>The test is marked as failed in HLK Studio, but the te.wtl log shows only pass results
 
 
 If test is marked as failed in HLK Studio, but the te.wtl log shows only pass results, you can obtain the error that caused the failure by executing the following steps:
@@ -154,7 +154,7 @@ To help debug this test failure, you should determine how the reference count of
     -   If the reference count of the PDO is equal to 0 before starting the test, it is likely that running the test is what is causing the reference count of the PDO to be greater than zero at the time the test performs the surprise remove of the device. This usually indicates a handle leak. Run the PNP Surprise Remove Device test from a Command Prompt window or from Visual Studio to reproduce the failure and capture the information that is needed to troubleshoot the problem.
 
     >[!NOTE]
->  
+    >  
     If you set the *DoConcurrentIO* parameter to TRUE, the test opens hundreds of file handles to the PDO. We recommend that you set this parameter to FALSE when you reproduce this failure.
 
      
@@ -258,7 +258,7 @@ Next
 
 The test ends up testing I/O on devices several times (one time for each sleep state) when it runs. See [Review Log Files](review-log-files-troubleshooting-device-fundamentals-reliability-tests.md) for information about how to see this in the log files.
 
-One of the common failures when testing I/O is that testing I/O on a particular device can permanently hang. This results in the test to eventually fail after a test timeout period (which is typically hours). See [Troubleshooting Windows HLK Test Failures](..\user\troubleshooting-windows-hlk-test-failures.md) for information about how to identify failures caused by timeout. 
+One of the common failures when testing I/O is that testing I/O on a particular device can permanently hang. This results in the test to eventually fail after a test timeout period (which is typically hours). See [Troubleshooting Windows HLK Test Failures](..\user\troubleshooting-windows-hlk-test-failures.md) for information about how to identify failures caused by timeout.
 
 >[!NOTE]
 >  

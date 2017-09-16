@@ -12,7 +12,7 @@ ms.assetid: d74e1671-7854-4198-ba36-9bb6dcacd458
 
 The following table lists the members exposed by the **ProjectManager** type.
 
-## <span id="Public-Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
+## <span id="Public_Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
 
 
 <table>

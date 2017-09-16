@@ -10,7 +10,7 @@ ms.assetid: 9550a49e-8fff-4792-9f13-be6b8e35589b
 # TargetException Events
 
 
-## <span id="Protected-Events"></span><span id="protected_events"></span><span id="PROTECTED_EVENTS"></span>Protected Events
+## <span id="Protected_Events"></span><span id="protected_events"></span><span id="PROTECTED_EVENTS"></span>Protected Events
 
 
 <table>

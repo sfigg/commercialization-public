@@ -10,7 +10,7 @@ ms.assetid: 7005f1db-28be-47bd-9810-bc02030974e5
 # ProjectManager Methods
 
 
-## <span id="Public-Methods"></span><span id="public_methods"></span><span id="PUBLIC_METHODS"></span>Public Methods
+## <span id="Public_Methods"></span><span id="public_methods"></span><span id="PUBLIC_METHODS"></span>Public Methods
 
 
 <table>

@@ -44,7 +44,7 @@ The following hardware is required for switch testing. Additional hardware can b
 -   Two test computers.
 
     >[!NOTE]
->  
+    >  
     All computers must meet the Windows HLK requirements. If two test computers are required, both computers must be in the same computer pool. For more information, see [Windows HLK Prerequisites](p_sxs_hlk.windows_hlk_prerequisites).
 
     For testing networking capabilities, the test computer to which the switch is physically attached to is referred to as the System Under Test (SUT).
@@ -118,7 +118,7 @@ To configure the test computer for switch testing, follow these steps:
     GenerateVirtualNode generates a virtual target for the switch in the Windows HLK controller for targeting Top of the Rack switch tests. The script makes a connection to the switch over OMI, and tries to retrieve critical information that is used for test submission on the switch.
 
     >[!NOTE]
->  
+    >  
     At the end of a successful script execution, the machine is restarted.
 
      

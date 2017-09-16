@@ -28,7 +28,7 @@ The following hardware is required for testing WSD compliance. Additional hardwa
 -   Two test computers. For testing networking capabilities, the computer that the WDS-compliant device test device is physically attached to is referred to as the System Under Test (SUT) computer and the other computer is referred to as the support computer.
 
     >[!NOTE]
->  
+    >  
     All computers must meet the Windows HLK requirements. For more information, see [Windows HLK Prerequisites](p_sxs_hlk.windows_hlk_prerequisites).
 
      
@@ -49,13 +49,9 @@ If a pool of test computers is used to test devices, at least one computer in th
 
 For those tests that do not include a driver to test, such as testing a hard disk drive, the Windows HLK scheduler will require the tests that validate the device’s and driver’s Rebalance, D3 State and Multiple Processor Groups functionality to run on the default computer. This computer should also be manually configured to have multiple processor groups. The default computer is the first computer listed. Test personnel, in this case, should ensure that this first computer meets these minimum hardware requirements.
 
- 
-
 >[!NOTE]
 >  
 Except for para-virtualization drivers (as defined by the [WHCP Policies and Processes](http://go.microsoft.com/fwlink/p/?LinkID=615222) document), physical devices and their associated drivers being tested for a server certification or signature may not be tested in virtual machines using any form of virtualization. This is because not all virtualization products support the underlying functionality that is required to pass the tests that relate to Multiple Processor Groups, Device Power Management, Device PCI functionality, and so on.
-
- 
 
 >[!NOTE]
 >  Multiple Processor Groups Setting
@@ -76,8 +72,6 @@ bcdedit.exe /deletevalue groupsize
 bcdedit.exe /deletevalue groupaware
 shutdown.exe -r -t 0 -f
 ```
-
- 
 
 >[!NOTE]
 >  

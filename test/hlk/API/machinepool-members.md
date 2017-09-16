@@ -12,7 +12,7 @@ ms.assetid: fd327c17-ad6e-4830-967a-cc0932eeb9f9
 
 This class represents an abstract pool of machines that are grouped together based on a user intention. It exposes functionality that enables machines to be regrouped among different machine pools and manage the resource pool hierarchy.
 
-## <span id="Protected-Constructors"></span><span id="protected_constructors"></span><span id="PROTECTED_CONSTRUCTORS"></span>Protected Constructors
+## <span id="Protected_Constructors"></span><span id="protected_constructors"></span><span id="PROTECTED_CONSTRUCTORS"></span>Protected Constructors
 
 
 <table>

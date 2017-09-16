@@ -10,7 +10,7 @@ ms.assetid: aca69dbf-baa3-47b0-9b20-a806d861de9d
 # TargetFamily Properties
 
 
-## <span id="Public-Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
+## <span id="Public_Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
 
 
 <table>

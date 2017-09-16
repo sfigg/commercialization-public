@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: aecc06ab-04d1-4cde-88db-44378528b15c
 ---
 
-# <span id="p-hlk-test.e24cdda3-c9d0-424b-99dc-dfaca63bc992"></span>MTP Compliance Test - Core - Miscellaneous
+# <span id="p_hlk_test.e24cdda3-c9d0-424b-99dc-dfaca63bc992"></span>MTP Compliance Test - Core - Miscellaneous
 
 
 This test validates compliance with the Windows implementation of the Media Transfer Protocol (MTP) and ensures that devices use the MTP class driver that is included with Windows.

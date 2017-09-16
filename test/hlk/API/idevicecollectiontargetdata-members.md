@@ -12,7 +12,7 @@ ms.assetid: 8fa80e5f-5c3f-440f-bb60-db73ddd99de3
 
 The following tables list the members exposed by the **IDeviceCollectionTargetData** type.
 
-## <span id="Public-Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
+## <span id="Public_Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
 
 
 <table>

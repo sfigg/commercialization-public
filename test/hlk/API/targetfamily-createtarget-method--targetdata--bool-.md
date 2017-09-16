@@ -9,7 +9,6 @@ ms.assetid: 2622AA0E-0598-4533-92F8-E809ED126C3F
 
 # TargetFamily.CreateTarget Method (TargetData, bool)
 
-
 >[!WARNING]
 >  This method is being deprecated. Please use [CreateTarget(IEnumerable&lt;TargetData&gt;)](targetfamilycreatetarget-method--ienumerable-.md) instead.
 

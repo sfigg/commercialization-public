@@ -12,7 +12,7 @@ ms.assetid: c6393473-103e-4183-a05f-d55521e9722d
 
 \[This content is not available in this preliminary release.\]
 
-## <span id="Public-Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
+## <span id="Public_Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
 
 
 <table>

@@ -26,7 +26,7 @@ If there is a connectivity issue, the job will fail in the “Run NDISTest Clien
 
 You should also check that you are selecting the correct machine as the support machine. With multiport NICs and multiple machine setups, it is very easy to select the wrong NIC or wrong machine. We suggest keeping the two machines running LAN tests in their own machine pool to avoid accidentally selecting the wrong machine.
 
-## <span id="the-ndistest-6.5----2-machine----checkconnectivity-job"></span><span id="THE_NDISTEST_6.5____2_MACHINE____CHECKCONNECTIVITY_JOB"></span>The NDISTest 6.5 – \[2 Machine\] – CheckConnectivity job
+## <span id="the_ndistest_6.5____2_machine____checkconnectivity_job"></span><span id="THE_NDISTEST_6.5____2_MACHINE____CHECKCONNECTIVITY_JOB"></span>The NDISTest 6.5 – \[2 Machine\] – CheckConnectivity job
 
 
 The NDISTest 6.5 – \[2 Machine\] – CheckConnectivity job ensures that the test and support devices can communicate correctly by doing a basic send and receive.

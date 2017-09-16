@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: 81825c51-8f8b-41b3-a2d3-0d64d9a00450
 ---
 
-# <span id="p-hlk-test.aac6b5ce-ae8d-4b1f-ab49-756e5a6b0a9f"></span>Auto Generation of Mip Maps
+# <span id="p_hlk_test.aac6b5ce-ae8d-4b1f-ab49-756e5a6b0a9f"></span>Auto Generation of Mip Maps
 
 
 This automated test measures the minimum supported Direct X renderer capability of a graphics adapter or chipset.

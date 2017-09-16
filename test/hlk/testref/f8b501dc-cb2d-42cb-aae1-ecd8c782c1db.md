@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: cdd84d26-a8f4-4c69-b695-c1a8a95956ba
 ---
 
-# <span id="p-hlk-test.f8b501dc-cb2d-42cb-aae1-ecd8c782c1db"></span>Camera Driver Performance Test - Measure media type switching latency on primary video preview stream
+# <span id="p_hlk_test.f8b501dc-cb2d-42cb-aae1-ecd8c782c1db"></span>Camera Driver Performance Test - Measure media type switching latency on primary video preview stream
 
 
 This test will measure media type switching latency on primary video preview stream

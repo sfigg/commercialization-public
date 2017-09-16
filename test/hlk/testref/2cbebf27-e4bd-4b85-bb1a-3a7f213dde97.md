@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: 5e2f2d0d-afd5-4225-b519-de6ae1dbfdce
 ---
 
-# <span id="p-hlk-test.2cbebf27-e4bd-4b85-bb1a-3a7f213dde97"></span>TPM 1.2 TCG OS Interface Server Test
+# <span id="p_hlk_test.2cbebf27-e4bd-4b85-bb1a-3a7f213dde97"></span>TPM 1.2 TCG OS Interface Server Test
 
 
 This test validates that the integration of the Trusted Platform Module (TPM) on the system motherboard meets the BitLocker Drive Encryption feature requirements for Windows.

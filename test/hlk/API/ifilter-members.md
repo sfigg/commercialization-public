@@ -12,7 +12,7 @@ ms.assetid: 4f282424-4ee8-4ce3-9329-4e752e5f19af
 
 The following tables list the members exposed by the **IFilter** type.
 
-## <span id="Public-Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
+## <span id="Public_Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
 
 
 <table>

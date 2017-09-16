@@ -9,7 +9,6 @@ ms.assetid: 41743261-9901-48D3-AD46-69AFDC702523
 
 # ProductInstance.CreateTarget Method (TargetData, bool)
 
-
 >[!WARNING]
 >  This functionality is being deprecated.
 

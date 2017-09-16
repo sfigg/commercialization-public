@@ -41,13 +41,9 @@ If you use a pool of test computers to test devices, at least one computer in th
 
 Since routers do not include a driver to test, the Windows HLK scheduler constrains the tests that validate the device’s and driver’s Rebalance, D3 State and Multiple Processor Groups functionality to run on the default test computer. You must manually configure this computer to have multiple processor groups. The default computer is the first test computer in the list. Test personnel must make sure that the first test computer in the list meets the minimum hardware requirements.
 
- 
-
 >[!NOTE]
 >  
 Except for para-virtualization drivers (as defined by the [WHCP Policies and Processes](http://go.microsoft.com/fwlink/p/?LinkID=615222) document), you may not use any form of virtualization when you test physical devices and their associated drivers for server certification or signature. All virtualization products do not support the underlying functionality that is required to pass the tests that relate to multiple processor groups, device power management, device PCI functionality, and other tests.
-
- 
 
 >[!NOTE]
 >  Multiple Processor Groups Setting
@@ -68,8 +64,6 @@ bcdedit.exe /deletevalue groupsize
 bcdedit.exe /deletevalue groupaware
 shutdown.exe -r -t 0 -f
 ```
-
- 
 
 >[!NOTE]
 >  
@@ -188,7 +182,7 @@ The test computers identified as LAN1 and LAN2 have an identical setup procedure
 13. Make sure that all network connections are set to **Private** in the **Network Center** in the **Control Panel**.
 
     >[!NOTE]
->  
+    >  
     In order to ensure that your test network remains set to Private, you can set a policy to do this automatically by running **gpedit.msc** from a command prompt (as an Administrator) and modifying the settings for "Unidentified Networks".
 
      

@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: 149aad34-08f4-42a5-9a23-8de170fa9395
 ---
 
-# <span id="p-hlk-test.d0deb0b6-c8e7-4328-ad3b-e56daa2aaf9b"></span>Present Validation 2 - GammaPresent
+# <span id="p_hlk_test.d0deb0b6-c8e7-4328-ad3b-e56daa2aaf9b"></span>Present Validation 2 - GammaPresent
 
 
 This automated test validates the **Present()** method.
@@ -183,8 +183,6 @@ Gamma presentation is supported only on a desktop that has a 32-bit color depth.
 </tr>
 </tbody>
 </table>
-
- 
 
 >[!NOTE]
 >  

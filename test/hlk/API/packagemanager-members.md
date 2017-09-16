@@ -12,7 +12,7 @@ ms.assetid: 3cf902ca-e04a-444b-ae5b-18028ab98893
 
 The following table lists the members exposed by the [PackageManager Class](packagemanager-class.md).
 
-## <span id="Public-Constructors"></span><span id="public_constructors"></span><span id="PUBLIC_CONSTRUCTORS"></span>Public Constructors
+## <span id="Public_Constructors"></span><span id="public_constructors"></span><span id="PUBLIC_CONSTRUCTORS"></span>Public Constructors
 
 
 <table>

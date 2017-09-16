@@ -10,7 +10,7 @@ ms.assetid: 90a0a9f2-2923-4321-a22c-86c7e5fe1b48
 # Test Server Configuration
 
 
-### <span id="Test-system-configuration"></span><span id="test_system_configuration"></span><span id="TEST_SYSTEM_CONFIGURATION"></span>Test system configuration
+### <span id="Test_system_configuration"></span><span id="test_system_configuration"></span><span id="TEST_SYSTEM_CONFIGURATION"></span>Test system configuration
 
 This article assumes that you have already setup the network domain controller and installed the Windows HLK controller and Windows HLK Studio on a machine, and that the Windows HLK controller and Windows HLK Studio are on the network.
 
@@ -19,7 +19,7 @@ The Server test requires the following system configuration tasks to prepare the
 -   One server under test" (SUT). This is the computer that you are certifying.
 
     >[!WARNING]
->  
+    >  
     The SUT computer name must be 15 characters or less.
 
      
@@ -103,7 +103,7 @@ A network interface adapter that is not connected to a network generates an erro
 3.  In **Step 6: Select & Run Tests**, run **LoadGen Server Stress - Run First - Set Machine Policies Test**.
 
     >[!IMPORTANT]
->  
+    >  
     You must run this test to set the correct machine policy settings on all devices.
 
      

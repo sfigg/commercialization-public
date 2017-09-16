@@ -9,7 +9,6 @@ ms.assetid: 8D945176-3518-4E74-B816-65071EF1520A
 
 # Project.AddTests Method (IEnumerable{TestDefinition})
 
-
 >[!WARNING]
 >  This functionality is being deprecated. Please use playlists to create custom test pass lists.
 

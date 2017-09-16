@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: a911f643-8459-432e-9f25-f4e392941ec6
 ---
 
-# <span id="p-hlk-test.6ed1c94e-d32c-432c-a2c3-6ab0afed1d1a"></span>Subpixel Texture
+# <span id="p_hlk_test.6ed1c94e-d32c-432c-a2c3-6ab0afed1d1a"></span>Subpixel Texture
 
 
 This automated test verifies the requirements listed in the test details table.
@@ -127,8 +127,6 @@ This section will include test-related content that may not aid the tester in ru
 </tr>
 </tbody>
 </table>
-
- 
 
 >[!NOTE]
 >  

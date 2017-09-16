@@ -40,7 +40,7 @@ With the exception of the test computer and test controller, all hardware involv
 -   One Fibre Channel RAID storage subsystem that can support any one of the following: RAID-0, RAID-1, RAID-5, RAID-10, or RAID-6.
 
     >[!WARNING]
->  
+    >  
     Do not test by using a storage subsystem that connects via MPIO.
 
      
@@ -75,13 +75,9 @@ If you use a pool of test computers to test devices, at least one computer in th
 
 For tests that do not include a driver to test, such as hard disk drive tests, the Windows HLK scheduler constrains the tests that validate the device’s and driver’s rebalance, D3 state, and multiple processor groups functionality to run on the default test computer. You must manually configure this computer to have multiple processor groups. The default computer is the first test computer in the list. Test personnel must make sure that the first test computer in the list meets the minimum hardware requirements.
 
- 
-
 >[!NOTE]
 >  
 Except for para-virtualization drivers (as defined by the [WHCP Policies and Processes](http://go.microsoft.com/fwlink/p/?LinkID=615222) document), you may not use any form of virtualization when you test physical devices and their associated drivers for server certification or signature. All virtualization products do not support the underlying functionality that is required to pass the tests that relate to multiple processor groups, device power management, device PCI functionality, and other tests.
-
- 
 
 >[!NOTE]
 >  Multiple Processor Groups Setting
@@ -102,8 +98,6 @@ bcdedit.exe /deletevalue groupsize
 bcdedit.exe /deletevalue groupaware
 shutdown.exe -r -t 0 -f
 ```
-
- 
 
 >[!NOTE]
 >  
@@ -154,7 +148,7 @@ To configure the test computer to test a Fibre Channel storage controller, follo
         -   The Fibre Channel adapter is designed for and sold only in a host test system that accepts only a single version of the controller.
 
         >[!NOTE]
->  
+        >  
         Use three Fibre Channel hard disk drives for RAID-5 testing.
 
          
@@ -162,7 +156,7 @@ To configure the test computer to test a Fibre Channel storage controller, follo
     5.  Install a PCI-to-PCI bridge in a PCI slot in the test system.
 
         >[!NOTE]
->  
+        >  
         You can also use an existing slot behind a bridge.
 
          
@@ -172,7 +166,7 @@ To configure the test computer to test a Fibre Channel storage controller, follo
     7.  Connect two Fibre Channel hard disk drives or a Fibre Channel JBOD to Test Device 2.
 
         >[!NOTE]
->  
+        >  
         Use three Fibre Channel hard disk drives for RAID-5 testing.
 
          
@@ -253,7 +247,7 @@ To configure the test computer to test a Fibre Channel storage controller, follo
     3.  Click the **Advanced** tab (or click **Advanced system settings** in the left pane for Windows Vista, Windows 7, Windows 8, Windows Server 2008, Windows Server 2008 R2 or Windows Server® 2012), and then, in the **Performance** area, click **Settings**.
 
         >[!NOTE]
->  
+        >  
         If you are prompted to enter administrative credentials or allow the action, enter the credentials or allow the action.
 
          

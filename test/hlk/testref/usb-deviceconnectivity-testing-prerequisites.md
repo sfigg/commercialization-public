@@ -39,13 +39,9 @@ If you use a pool of test computers to test devices, at least one computer in th
 
 For tests that do not include a driver to test, such as hard disk drive tests, the Windows HLK scheduler constrains the tests that validate the device’s and driver’s Rebalance, D3 State and Multiple Processor Groups functionality to run on the default test computer. You must manually configure this computer to have multiple processor groups. The default computer is the first test computer in the list. Test personnel must make sure that the first test computer in the list meets the minimum hardware requirements.
 
- 
-
 >[!NOTE]
 >  
 Except for para-virtualization drivers (as defined by the [WHCP Policies and Processes](http://go.microsoft.com/fwlink/p/?LinkID=615222) document), you may not use any form of virtualization when you test physical devices and their associated drivers for server certification or signature. All virtualization products do not support the underlying functionality that is required to pass the tests that relate to multiple processor groups, device power management, device PCI functionality, and other tests.
-
- 
 
 >[!NOTE]
 >  Multiple Processor Groups Setting
@@ -66,8 +62,6 @@ bcdedit.exe /deletevalue groupsize
 bcdedit.exe /deletevalue groupaware
 shutdown.exe -r -t 0 -f
 ```
-
- 
 
 >[!NOTE]
 >  
@@ -102,7 +96,7 @@ To configure the test computer for USB device testing, follow these steps:
 3.  Attach the other USB device to the EHCI port or to a high speed hub that is connected to the XHCI port.
 
     >[!NOTE]
->  
+    >  
     If the USB device supports a USB serial number, attach an additional USB 3.0–compliant device to the test computer before you run the USB Serial Number test. For more information about this test, see [USB Serial Number](0f2d5113-cf70-4cda-8afc-b7005d1e2739.md).
 
     To test USB 3.0 or 2.0 devices or hubs on a system running Windows 7, make sure that the device or hub is attached to a USB 2.0 port of an EHCI controller. xHCI controllers on systems running Windows 7 load non-Microsoft drivers. HLK tests cannot detect devices and hubs enumerated by third-party drivers.

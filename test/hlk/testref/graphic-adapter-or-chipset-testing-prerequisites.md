@@ -49,13 +49,9 @@ If you use a pool of test computers to test devices, at least one computer in th
 
 For tests that do not include a driver to test, such as hard disk drive tests, the Windows HLK scheduler constrains the tests that validate the device’s and driver’s Rebalance, D3 State and Multiple Processor Groups functionality to run on the default test computer. You must manually configure this computer to have multiple processor groups. The default computer is the first test computer in the list. Test personnel must make sure that the first test computer in the list meets the minimum hardware requirements.
 
- 
-
 >[!NOTE]
 >  
 Except for para-virtualization drivers (as defined by the [WHCP Policies and Processes](http://go.microsoft.com/fwlink/p/?LinkID=615222) document), you may not use any form of virtualization when you test physical devices and their associated drivers for server certification or signature. All virtualization products do not support the underlying functionality that is required to pass the tests that relate to multiple processor groups, device power management, device PCI functionality, and other tests.
-
- 
 
 >[!NOTE]
 >  Multiple Processor Groups Setting
@@ -76,8 +72,6 @@ bcdedit.exe /deletevalue groupsize
 bcdedit.exe /deletevalue groupaware
 shutdown.exe -r -t 0 -f
 ```
-
- 
 
 >[!NOTE]
 >  
@@ -103,7 +97,7 @@ The following software is required for testing a graphics adapter or chipset:
 -   The drivers for the test device.
 
     >[!NOTE]
->  
+    >  
     OPM/COPP requirements are implemented based on feature detection; Full WDDM drivers must support OPM/COPP if they have a capable connector/monitor.
 
      
@@ -111,7 +105,7 @@ The following software is required for testing a graphics adapter or chipset:
 -   **Supplemental Content for Windows HLK Tests for DXVA and HMFT Multimedia Tests** is required to pass the DXVA (DirectX Video Acceleration) tests. Download and install this supplemental test content from the MSDN® website at: <http://msdn.microsoft.com/en-us/windows/hardware/hh852358>.
 
     >[!IMPORTANT]
->  
+    >  
     Before running the DXVA tests on x86 or amd64 systems, you must install the Windows 8 Professional SKU and then install the Windows Anytime Upgrade for Media Center; otherwise, the MPEG2 tests will fail.
 
     The Media Foundation Feature must be installed on Server 2012 for DXVA testing.
@@ -163,7 +157,7 @@ To configure the test computer for the display adapter testing, follow these ste
 2.  Attach one multi-sync display data channel standard, level 2B (DDC2B)-capable monitor that has EDID 1.3 support to each test computer.
 
     >[!NOTE]
->  
+    >  
     The secondary head of a multiple-headed display adapter and chipset must be connected to a monitor and enabled before you start testing. Not all devices that support multiple heads must be enabled, but at least one device for each device family that is listed in the INF file must be enabled. To test outside of the submission process, make sure that all secondary heads are connected to a monitor and enabled. Otherwise, when a test is selected for the unattached secondary head, the test runs on the primary head.
 
      

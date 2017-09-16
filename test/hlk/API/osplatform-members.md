@@ -12,7 +12,7 @@ ms.assetid: 395efae3-aa5f-44fd-83e1-6ec5a0370d1d
 
 The following table lists the members exposed by the **OSPlatform** type.
 
-## <span id="Public-Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
+## <span id="Public_Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
 
 
 <table>

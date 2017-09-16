@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: d11b7b2c-7598-4e7e-91fd-40c728979773
 ---
 
-# <span id="p-hlk-test.eebf8171-f86b-4a66-b5cb-d5d7cabc9b2c"></span>WGF11 Geometry Shader
+# <span id="p_hlk_test.eebf8171-f86b-4a66-b5cb-d5d7cabc9b2c"></span>WGF11 Geometry Shader
 
 
 This automated test verifies verifies D3D graphics driver/hardware conformance for geometry shader features that are not specifically tested elsewhere.
@@ -126,7 +126,7 @@ The following items outline the Geometry Shader Conformance Test Plan:
     -   Cycle on Draw() and DrawInstanced().
 
         >[!NOTE]
->  
+        >  
         Make sure that the id resets to zero for each instance drawn.
 
          
@@ -142,7 +142,7 @@ The following items outline the Geometry Shader Conformance Test Plan:
 -   Limits
 
     >[!NOTE]
->  
+    >  
     Maximum GS invocation output data size (components \* vertices) go up to 1024.
 
      
@@ -173,8 +173,6 @@ The following items outline the Geometry Shader Conformance Test Plan:
 </tr>
 </tbody>
 </table>
-
- 
 
 >[!NOTE]
 >  

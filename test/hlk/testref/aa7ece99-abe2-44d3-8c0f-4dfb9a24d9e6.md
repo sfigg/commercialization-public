@@ -7,8 +7,7 @@ MSHAttr:
 ms.assetid: c750c9e5-7d8a-4bf4-90ef-6b56fd317171
 ---
 
-# <span id="p-hlk-test.aa7ece99-abe2-44d3-8c0f-4dfb9a24d9e6"></span>CoreSys WMV playback test 34
-
+# <span id="p_hlk_test.aa7ece99-abe2-44d3-8c0f-4dfb9a24d9e6"></span>CoreSys WMV playback test 34
 
 >[!IMPORTANT]
 >  

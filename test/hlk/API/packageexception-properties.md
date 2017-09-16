@@ -10,7 +10,7 @@ ms.assetid: 42bc3dc6-1ea6-4ea0-b74f-409b5ecc1bdb
 # PackageException Properties
 
 
-## <span id="Public-Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
+## <span id="Public_Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
 
 
 <table>

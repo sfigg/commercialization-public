@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: 6f561a68-a208-4e5d-9685-a6a0e21ff856
 ---
 
-# <span id="p-hlk-test.ecc9a3ad-e7f8-4ba9-a301-cbaced3adc42"></span>Sensor Camera Driver Controls System Test - WHITEBALANCEMODE - Check Default
+# <span id="p_hlk_test.ecc9a3ad-e7f8-4ba9-a301-cbaced3adc42"></span>Sensor Camera Driver Controls System Test - WHITEBALANCEMODE - Check Default
 
 
 Test to validate key user scenarios in the camera stack

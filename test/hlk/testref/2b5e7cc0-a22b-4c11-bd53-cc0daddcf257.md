@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: b393fcf2-e4a6-49c1-bb77-4401424764c2
 ---
 
-# <span id="p-hlk-test.2b5e7cc0-a22b-4c11-bd53-cc0daddcf257"></span>UCSI USB Operation Role command - Reset on PPM-Reset
+# <span id="p_hlk_test.2b5e7cc0-a22b-4c11-bd53-cc0daddcf257"></span>UCSI USB Operation Role command - Reset on PPM-Reset
 
 
 Verifies that the data role requested using the UCSI Set USB Operation Role command is reset on performing a PPM-Reset.

@@ -12,7 +12,7 @@ ms.assetid: c77e045d-9511-4432-8a38-1975f4a99032
 
 The following table lists the members exposed by the [Test Class](test-class.md).
 
-## <span id="Public-Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
+## <span id="Public_Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
 
 
 <table>

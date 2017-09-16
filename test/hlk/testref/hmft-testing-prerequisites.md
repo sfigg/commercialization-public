@@ -34,7 +34,7 @@ The following hardware is required for testing an HMFT-compliant device:
 -   A test computer.
 
     >[!NOTE]
->  
+    >  
     The test computer must meet the [Windows HLK Prerequisites](..\getstarted\windows-hlk-prerequisites.md). It also must have at least 75 GB free on the drive used as the HLK working directory.
 
      
@@ -53,7 +53,7 @@ The following software is required for testing an HMFT-compliant device:
 -   Standard video files that are used during decoding or encoding tests.
 
     >[!NOTE]
->  
+    >  
     During installation of the Windows HLK, standard video files are downloaded to Windows HLK Studio.
 
      
@@ -67,7 +67,7 @@ Before running the HMFT encoding and decoding tests, you must download the [Wind
 -   Copy the content locally on each client computer before running the tests. You must configure the ContentSource parameter to be the path to the content on the client computer. For example, if you use an external drive with letter d: and place the content in d:\\HMFTContent, the ContentSource parameter must be configured to d:\\HMFTContent. This will cause the test to use the local content and not copy each file for each test. This option requires at least 75 GB of free space on the client computers but will speed up the test run because the content will not have to be copied for each test.
 
     >[!NOTE]
->  
+    >  
     The ContentSource parameter is passed to all client computers that the tests are scheduled against so ensure that content location is identical on all client computers.
 
      
@@ -82,7 +82,7 @@ To configure the test computer for testing a HMFT-compliant device:
 1.  Install the appropriate Windows operating system on the test computer, and then configure the computer for your test network (the network that contains Windows HLK Studio and Windows HLK Controller).
 
     >[!NOTE]
->  
+    >  
     If you are testing on Windows Server 2008 R2, Windows Server 2012, or Windows Server 2012 R2, you must install the Desktop Experience package. From a command prompt, type:
 
     **Dism.exe /online /enable-feature /featurename:DesktopExperience /all**

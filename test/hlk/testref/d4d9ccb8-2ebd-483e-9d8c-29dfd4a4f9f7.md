@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: 55a287fb-bbd6-4dc4-a4a1-bbb2bed40672
 ---
 
-# <span id="p-hlk-test.d4d9ccb8-2ebd-483e-9d8c-29dfd4a4f9f7"></span>Win6\_4.MB.Registration.RebootTests
+# <span id="p_hlk_test.d4d9ccb8-2ebd-483e-9d8c-29dfd4a4f9f7"></span>Win6\_4.MB.Registration.RebootTests
 
 
 Verifies modem and executor power states are consistent after reboot

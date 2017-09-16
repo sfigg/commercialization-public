@@ -28,7 +28,7 @@ To certify your client systems for Windows 8 and Windows 8.1, you’ll need the
 -   Another computer. Ideally, the second computer is already certified.
 
     >[!NOTE]
->  
+    >  
     If you’re testing a computer with Bluetooth, the second computer must also have Bluetooth 4.0 or have a Bluetooth adapter installed.
 
      

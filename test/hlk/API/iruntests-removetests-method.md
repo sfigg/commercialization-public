@@ -9,7 +9,6 @@ ms.assetid: BF98BA4A-19D9-431D-A921-844663F42576
 
 # IRunTests.RemoveTests Method
 
-
 >[!WARNING]
 >  This functionality is being deprecated. Please use playlists to create custom test pass lists.
 

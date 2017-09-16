@@ -12,7 +12,7 @@ ms.assetid: 6fd0fe6b-714a-47da-8fa1-a34e85ba2852
 
 The following tables list the properties exposed by the **RequirementException** type.
 
-## <span id="Public-Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
+## <span id="Public_Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
 
 
 <table>

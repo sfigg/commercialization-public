@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: af2d7ee5-7ca8-4f24-a54b-caa497c4f3af
 ---
 
-# <span id="p-hlk-test.1cd56bda-d320-476e-badd-46fe9acb34cc"></span>OPM - Protocol Test
+# <span id="p_hlk_test.1cd56bda-d320-476e-badd-46fe9acb34cc"></span>OPM - Protocol Test
 
 
 These automated tests run PVP-OPM (Protected Video Path - Output Protection Management) commands. They test display drivers for PVP-OPM compatibility, and check for the availability of digital protection (HDCP) and analog protections (ACP and CGMSA).
@@ -175,10 +175,6 @@ The following jobs validate the test assertions below:
 </tr>
 </tbody>
 </table>
-
- 
-
- 
 
 >[!NOTE]
 >  

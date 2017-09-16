@@ -41,13 +41,9 @@ If you use a pool of test computers to test devices, at least one computer in th
 
 For tests that do not include a driver to test, such as hard disk drive tests, the Windows HLK scheduler constrains the tests that validate the device’s and driver’s Rebalance, D3 State and Multiple Processor Groups functionality to run on the default test computer. You must manually configure this computer to have multiple processor groups. The default computer is the first test computer in the list. Test personnel must make sure that the first test computer in the list meets the minimum hardware requirements.
 
- 
-
 >[!NOTE]
 >  
 Except for para-virtualization drivers (as defined by the [WHCP Policies and Processes](http://go.microsoft.com/fwlink/p/?LinkID=615222) document), you may not use any form of virtualization when you test physical devices and their associated drivers for server certification or signature. All virtualization products do not support the underlying functionality that is required to pass the tests that relate to multiple processor groups, device power management, device PCI functionality, and other tests.
-
- 
 
 >[!NOTE]
 >  Multiple Processor Groups Setting
@@ -68,8 +64,6 @@ bcdedit.exe /deletevalue groupsize
 bcdedit.exe /deletevalue groupaware
 shutdown.exe -r -t 0 -f
 ```
-
- 
 
 >[!NOTE]
 >  
@@ -97,7 +91,7 @@ To test a digitizer, you must have the following software:
 -   The drivers for the test device
 
     >[!NOTE]
->  
+    >  
     You cannot install any touch drivers. You must have correct drivers for other components in the test device that affects testing, such as a graphic driver.
 
      
@@ -114,7 +108,7 @@ To configure the test computer for your test device, follow these steps:
 2.  If the test device is connected through the USB port, connect the USB 2.0 controller to the high-speed USB 2.0 hub, and then connect the test device to the downstream port of the high-speed USB 2.0 hub.
 
     >[!NOTE]
->  
+    >  
     Don't connect the USB test device directly to the root hub of the USB 2.0 controller.
 
      
@@ -124,7 +118,7 @@ To configure the test computer for your test device, follow these steps:
 4.  Install the manufacturer-supplied device driver, if the device requires one, on the test computer.
 
     >[!NOTE]
->  
+    >  
     For touch digitizer, there should be no touch drivers installed.
 
      

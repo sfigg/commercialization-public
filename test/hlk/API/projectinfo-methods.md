@@ -12,7 +12,7 @@ ms.assetid: 69be3344-a810-4c73-98e3-c0ccaf90faab
 
 The following table lists the methods exposed by the **ProjectInfo** type.
 
-## <span id="Public-Methods"></span><span id="public_methods"></span><span id="PUBLIC_METHODS"></span>Public Methods
+## <span id="Public_Methods"></span><span id="public_methods"></span><span id="PUBLIC_METHODS"></span>Public Methods
 
 
 <table>

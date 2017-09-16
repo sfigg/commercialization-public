@@ -168,7 +168,7 @@ You can use the following procedure to test the Touch.ReportingRate (Single Movi
 3.  After you run all the tests, you can tap the **Exit** tile to exit the test suite. Results are reported to the Windows HLK controller after you tap the **Exit** tile.
 
     >[!TIP]
->  
+    >  
     You can also tap any test tile to review the results of the test. You can rerun any failed test.
 
      

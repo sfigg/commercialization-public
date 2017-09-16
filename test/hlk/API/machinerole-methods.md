@@ -10,7 +10,7 @@ ms.assetid: 1eb6a6ec-e9bf-4fd6-a7cd-577a874f64c3
 # MachineRole Methods
 
 
-## <span id="Public-Methods"></span><span id="public_methods"></span><span id="PUBLIC_METHODS"></span>Public Methods
+## <span id="Public_Methods"></span><span id="public_methods"></span><span id="PUBLIC_METHODS"></span>Public Methods
 
 
 <table>

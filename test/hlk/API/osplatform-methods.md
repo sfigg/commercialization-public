@@ -10,7 +10,7 @@ ms.assetid: 8c762bd0-dcf3-4036-b8c3-dd84bef65612
 # OSPlatform Methods
 
 
-## <span id="Public-Methods"></span><span id="public_methods"></span><span id="PUBLIC_METHODS"></span>Public Methods
+## <span id="Public_Methods"></span><span id="public_methods"></span><span id="PUBLIC_METHODS"></span>Public Methods
 
 
 <table>

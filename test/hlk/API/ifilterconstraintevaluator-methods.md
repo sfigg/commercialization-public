@@ -10,7 +10,7 @@ ms.assetid: 1b2c58a7-7596-410a-91aa-2a3ba58cad5f
 # IFilterConstraintEvaluator Methods
 
 
-## <span id="Public-Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
+## <span id="Public_Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
 
 
 <table>

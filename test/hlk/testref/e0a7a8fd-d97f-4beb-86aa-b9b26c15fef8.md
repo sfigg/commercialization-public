@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: 23c96792-2809-4948-bcf0-d1c2b291aa14
 ---
 
-# <span id="p-hlk-test.e0a7a8fd-d97f-4beb-86aa-b9b26c15fef8"></span>DXGI Presentation testing - Other - multihead
+# <span id="p_hlk_test.e0a7a8fd-d97f-4beb-86aa-b9b26c15fef8"></span>DXGI Presentation testing - Other - multihead
 
 
 This automated test verifies several aspects of the implementation of IDXGISwapChain::Present method.
@@ -156,8 +156,6 @@ The test automatically verifies presented images by using the IDXGIOutput::GetDi
 </tr>
 </tbody>
 </table>
-
- 
 
 >[!NOTE]
 >  

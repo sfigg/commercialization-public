@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: 77444d9a-6f15-4100-a6e1-4c26a2b00d6c
 ---
 
-# <span id="p-hlk-test.e3c439bc-fcad-4b8e-859b-f9ad2e3f5cb2"></span>Camera Driver Controls System Test - FOCUSPRIORITY - Verify correct Pin
+# <span id="p_hlk_test.e3c439bc-fcad-4b8e-859b-f9ad2e3f5cb2"></span>Camera Driver Controls System Test - FOCUSPRIORITY - Verify correct Pin
 
 
 Test to validate key user scenarios in the camera stack

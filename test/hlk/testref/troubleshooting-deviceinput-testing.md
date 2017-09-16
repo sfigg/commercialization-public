@@ -32,7 +32,7 @@ To troubleshoot issues that occur with Device.input tests, follow these steps:
 
 4.  For a test failure, look for usable information in the Windows HLK Studio test log. If you find usable information, resolve the issue and rerun the test.
 
-### <span id="Specific-information-about-keyboard-tests"></span><span id="specific_information_about_keyboard_tests"></span><span id="SPECIFIC_INFORMATION_ABOUT_KEYBOARD_TESTS"></span>Specific information about keyboard tests
+### <span id="Specific_information_about_keyboard_tests"></span><span id="specific_information_about_keyboard_tests"></span><span id="SPECIFIC_INFORMATION_ABOUT_KEYBOARD_TESTS"></span>Specific information about keyboard tests
 
 The Device.Input test category does not include specific keyboard tests. However, there are tests in the Device.Fundamentals category that apply to keyboards. For more information, see [Device.DevFund Tests](device-devfund-tests.md).
 

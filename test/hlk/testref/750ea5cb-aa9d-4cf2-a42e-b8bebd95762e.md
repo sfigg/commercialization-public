@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: 009e101a-c17e-4914-8fac-d36e03c715a2
 ---
 
-# <span id="p-hlk-test.750ea5cb-aa9d-4cf2-a42e-b8bebd95762e"></span>Lost Devices - Resource Management DX9.L
+# <span id="p_hlk_test.750ea5cb-aa9d-4cf2-a42e-b8bebd95762e"></span>Lost Devices - Resource Management DX9.L
 
 
 This automated test verifies the requirements listed in the test details table.
@@ -157,8 +157,6 @@ This section will include test-related content that may not aid the tester in ru
 </tr>
 </tbody>
 </table>
-
- 
 
 >[!NOTE]
 >  

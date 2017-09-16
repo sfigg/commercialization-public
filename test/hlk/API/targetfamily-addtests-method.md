@@ -9,13 +9,12 @@ ms.assetid: DD78D0DF-FDD3-4A83-80E4-4B5303A03243
 
 # TargetFamily.AddTests Method
 
-
 >[!WARNING]
 >  This functionality is being deprecated. Please use playlists to create custom test pass lists.
 
  
 
-## <span id="Overload-List"></span><span id="overload_list"></span><span id="OVERLOAD_LIST"></span>Overload List
+## <span id="Overload_List"></span><span id="overload_list"></span><span id="OVERLOAD_LIST"></span>Overload List
 
 
 <table>

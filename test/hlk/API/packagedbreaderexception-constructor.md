@@ -10,7 +10,7 @@ ms.assetid: CC5B3DB5-211C-4AAF-96A6-2B7F8E13DCC4
 # PackageDBReaderException Constructor
 
 
-## <span id="Public-Constructors"></span><span id="public_constructors"></span><span id="PUBLIC_CONSTRUCTORS"></span>Public Constructors
+## <span id="Public_Constructors"></span><span id="public_constructors"></span><span id="PUBLIC_CONSTRUCTORS"></span>Public Constructors
 
 
 <table>

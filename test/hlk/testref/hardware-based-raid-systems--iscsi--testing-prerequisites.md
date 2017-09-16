@@ -42,7 +42,7 @@ All hardware (except the test device, monitor, keyboard, mouse, and floppy disk 
 -   1 iSCSI RAID storage system (the test device).
 
     >[!NOTE]
->  
+    >  
     The RAID system must be a single cabinet that consists of an array controller that's enclosed in an external subsystem with hard disk drives. Or it must be an external array controller that connects to a RAID JBOD. The RAID system can't consist of only a Peripheral Component Interconnect (PCI)–based controller and 1 RAID JBOD.
 
      
@@ -63,8 +63,6 @@ For tests that don't include a driver to test, like tests for a hard disk drive,
 >  
 Except for para-virtualization drivers (as defined by the [WHCP Policies and Processes](http://go.microsoft.com/fwlink/p/?LinkID=615222) document), you can't use any form of virtualization when you test physical devices and their associated drivers for server certification or signature. Virtualization products don't support the underlying functionality that's required to pass the tests that relate to multiple processor groups, device power management, device PCI functionality, and other tests.
 
- 
-
 >[!NOTE]
 >  Multiple Processor Groups Setting
 You must set the value for the processor group size for Hardware Lab Kit testing of Windows Server 2008 R2 and later device drivers for certification. This is done by running bcdedit in an elevated command prompt window, using the /set option.
@@ -84,8 +82,6 @@ bcdedit.exe /deletevalue groupsize
 bcdedit.exe /deletevalue groupaware
 shutdown.exe -r -t 0 -f
 ```
-
- 
 
 >[!NOTE]
 >  
@@ -132,7 +128,7 @@ To configure the test computer to test your iSCSI RAID array, follow these steps
 2.  Connect the Gigabit Ethernet switch to a power supply.
 
     >[!NOTE]
->  
+    >  
     Don't connect the switch to any other network.
 
      
@@ -152,7 +148,7 @@ To configure the test computer to test your iSCSI RAID array, follow these steps
     If your device supports mutual CHAP, also configure the device to use mutual CHAP.
 
     >[!NOTE]
->  
+    >  
     When you configure the device to use CHAP, you must provide a password that's 12 to 16 characters long. If you're configuring the device to use both one-way CHAP and mutual CHAP, you must provide different passwords for the target and the initiator.
 
      
@@ -160,7 +156,7 @@ To configure the test computer to test your iSCSI RAID array, follow these steps
 9.  Log on to the target disk storage system with Persistent Login set.
 
     >[!IMPORTANT]
->  
+    >  
     You must log on to the iSCSI target device that's used for testing, or the tests won't work properly.
 
     For a multipath test environment, if multiple ports (IP addresses) relate to one storage target, you must make sure that at least 2 iSCSI sessions are connected through the IP address to during testing.

@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: 5773ab68-5633-4c00-aac3-582c1bbd3c1b
 ---
 
-# <span id="p-hlk-test.afeb4aa3-eef6-478b-a964-fdc31521bd3a"></span>Stencil (WoW64)
+# <span id="p_hlk_test.afeb4aa3-eef6-478b-a964-fdc31521bd3a"></span>Stencil (WoW64)
 
 
 This automated test verifies the requirements listed in the test details table.

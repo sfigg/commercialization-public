@@ -12,7 +12,7 @@ ms.assetid: B67DF64A-D2DE-41B2-BB8A-E799F555D044
 
 This topic describes how to successfully run the Network Switch Certification tests.
 
-## <span id="Machine-requirements-for-certification-testing"></span><span id="machine_requirements_for_certification_testing"></span><span id="MACHINE_REQUIREMENTS_FOR_CERTIFICATION_TESTING"></span>Machine requirements for certification testing
+## <span id="Machine_requirements_for_certification_testing"></span><span id="machine_requirements_for_certification_testing"></span><span id="MACHINE_REQUIREMENTS_FOR_CERTIFICATION_TESTING"></span>Machine requirements for certification testing
 
 
 ### <span id="Test_topology"></span><span id="test_topology"></span><span id="TEST_TOPOLOGY"></span>Test topology
@@ -111,7 +111,7 @@ The host machines that are connected to the network switch need to be configured
     -   SwitchPassword: The password for the network switch specified above
 
     >[!NOTE]
->  The same credentials need to be set across all the hosts connected on the downlink of the host. Similarly, same credentials need to be set on both the network switches as well.
+    >  The same credentials need to be set across all the hosts connected on the downlink of the host. Similarly, same credentials need to be set on both the network switches as well.
 
      
 

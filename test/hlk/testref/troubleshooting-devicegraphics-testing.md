@@ -22,14 +22,14 @@ To troubleshoot issues that occur with Device.Graphic tests, follow these steps:
 
 3.  For a test failure, look for usable information in the Windows HLK Studio test log. If you find usable information, resolve the issue and rerun the test.
 
-### <span id="Specific-information-about-DXVA-testing"></span><span id="specific_information_about_dxva_testing"></span><span id="SPECIFIC_INFORMATION_ABOUT_DXVA_TESTING"></span>Specific information about DXVA testing
+### <span id="Specific_information_about_DXVA_testing"></span><span id="specific_information_about_dxva_testing"></span><span id="SPECIFIC_INFORMATION_ABOUT_DXVA_TESTING"></span>Specific information about DXVA testing
 
 The DXVA tests require the following:
 
 -   **Supplemental Content for Windows HLK Tests for DXVA and HMFT Multimedia Tests**: Download and install the Supplemental Content for Windows HLK Tests for DXVA and HMFT Multimedia Tests from the MSDN® website at <http://msdn.microsoft.com/en-us/windows/hardware/hh852358>.
 
     >[!IMPORTANT]
->  
+    >  
     Before running the DXVA tests on x86 or amd64 systems, you must install the Windows 8 Professional SKU and then install Windows Anytime Upgrade for Media Center, otherwise the MPEG2 tests will fail.
 
      

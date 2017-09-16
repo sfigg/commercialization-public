@@ -30,7 +30,7 @@ To test a removable storage device, you need the following hardware. You might n
     -   1 host controller that has the appropriate bus interface for the test device.
 
         >[!NOTE]
->  
+        >  
         If the host controller isn't bootable, you also need 1 bootable bus controller (for example, a SCSI controller). If the host controller is bootable, you don't need an additional controller.
 
          
@@ -55,8 +55,6 @@ For tests that don't include a driver to test, like tests for a hard disk drive,
 >  
 Except for para-virtualization drivers (as defined by the [WHCP Policies and Processes](http://go.microsoft.com/fwlink/p/?LinkID=615222) document), you can't use any form of virtualization when you test physical devices and their associated drivers for server certification or signature. Virtualization products don't support the underlying functionality that's required to pass the tests that relate to multiple processor groups, device power management, device Peripheral Component Interconnect (PCI) functionality, and other tests.
 
- 
-
 >[!NOTE]
 >  Multiple Processor Groups Setting
 You must set the value for the processor group size for Hardware Lab Kit testing of Windows Server 2008 R2 and later device drivers for certification. This is done by running bcdedit in an elevated command prompt window, using the /set option.
@@ -76,8 +74,6 @@ bcdedit.exe /deletevalue groupsize
 bcdedit.exe /deletevalue groupaware
 shutdown.exe -r -t 0 -f
 ```
-
- 
 
 >[!NOTE]
 >  
@@ -118,7 +114,7 @@ To configure the test computer for your test device, follow these steps:
 4.  If the test device is connected through a USB port, connect the USB 2.0 controller to the high-speed USB 2.0 hub, and then connect the test device to the downstream port of the high-speed USB 2.0 hub.
 
     >[!NOTE]
->  
+    >  
     Don't connect the USB test device directly to the root hub of the USB 2.0 controller.
 
      

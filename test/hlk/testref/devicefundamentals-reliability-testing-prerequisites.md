@@ -47,7 +47,6 @@ When you test a Bluetooth mouse, you must keep the mouse moving during the entir
 
 ## <span id="lan"></span><span id="LAN"></span>LAN adapters
 
-
 >[!NOTE]
 >  
 The network test configuration that is required to run Device Fundamentals Reliability tests for network LAN adapters is different from the network test configuration that is required to run [Device.Network Tests](device-network-tests.md).

@@ -10,7 +10,7 @@ ms.assetid: C5F51113-0D73-4518-A98F-6DD6DC44A07A
 # DiagnosticSummaryLog Members
 
 
-## <span id="Public-Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
+## <span id="Public_Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
 
 
 <table>

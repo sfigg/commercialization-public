@@ -58,7 +58,7 @@ Make sure that Wireless Profile XML file exists in the current directory or spec
 
  
 
-## <span id="related-topics"></span>Related topics
+## <span id="related_topics"></span>Related topics
 
 
 [Device.Network Testing](device-network-tests.md)

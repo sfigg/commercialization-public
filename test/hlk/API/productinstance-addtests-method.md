@@ -9,13 +9,12 @@ ms.assetid: C0354E3B-6751-426F-BEDE-BB8AABCB5C3D
 
 # ProductInstance.AddTests Method
 
-
 >[!WARNING]
 >  This functionality is being deprecated. Please use playlists to create custom test pass lists.
 
  
 
-## <span id="Overload-List"></span><span id="overload_list"></span><span id="OVERLOAD_LIST"></span>Overload List
+## <span id="Overload_List"></span><span id="overload_list"></span><span id="OVERLOAD_LIST"></span>Overload List
 
 
 <table>

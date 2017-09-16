@@ -16,8 +16,6 @@ This topic describes the process to test a Wireless LAN (WLAN) device to make su
 >  
 For a driver to pass testing and obtain Windows Hardware Certification, you must use the latest version of the WDK to compile the driver.
 
- 
-
 >[!NOTE]
 >  
 WLAN Windows HLK tests that use software-based access points are exclusively supported by using specific Atheros WLAN NICs. Windows HLK customers who test WLAN drivers must use two Atheros WLAN adapters that are installed in the SoftAP Machine to complete their submissions. Only two devices have been specifically tested at the time of Windows 8.1 release: Dlink DWA-552 and Dlink DWA-556. Additional models might have worked in the past and might continue to work, but cannot be guaranteed. If you have questions about this, please contact us at wlanndt@microsoft.com.
@@ -143,7 +141,7 @@ The following table summarizes the configurations:
 -   For debugging purposes from the AP Controller, we highly recommend that you enable web access from WAN on the **System** tab in the **Administration** section of **Advanced Settings** on both AP1 and AP2.
 
     >[!IMPORTANT]
->  
+    >  
     When the tests run for the first time, the tests disable all LAN ports on both RT-N66U routers. This is expected. If you want to connect to the APs to verify settings during the testing, use the AP controller and connect over the WAN port by using the provisioned port. The tests enable the LAN ports of each AP as needed during testing. If you need to connect to a LAN port for testing, stop the tests from running and manually power off and on the AP. This action re-enables the LAN ports until the next test starts.
 
      
@@ -248,7 +246,7 @@ The following procedure demonstrates how to run the WLAN device tests:
 5.  In the list, locate the WLAN driver under test and check the box next to it.
 
     >[!NOTE]
->  
+    >  
     There might be more than one WLAN driver listed. Make sure you check the one that is on the DUT. The machine name is listed in the right column.
 
      
@@ -324,7 +322,6 @@ You can download these items as follows:
 
 ## <span id="ap"></span><span id="AP"></span>AP Firmware Troubleshooting
 
-
 >[!WARNING]
 >  
 Applying new firmware to consumer devices can sometimes, although rarely, cause permanent damage. You must read the device manual that came with your router and be careful when you flash new firmware on a device. Detailed steps, especially around the 30-30-30 reset, are required before flashing.
@@ -358,7 +355,7 @@ The most reliable way to install firmware on an RT-N66U device is by using the F
 12. After the upgrade is successful, you can remove the static IP address from the computer and access the devices web-server at http://192.168.1.1/index.asp to confirm a successful upgrade.
 
     >[!IMPORTANT]
->  
+    >  
     Every time that you upgrade firmware, after the device has finished the upgrade and has restarted, you should reset the NVRAM settings by performing a 30-30-30 reset. The steps for this are as follows:
 
      

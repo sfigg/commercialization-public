@@ -12,7 +12,7 @@ ms.assetid: 7241be2f-4053-40e7-8b7e-8bde87d1af61
 
 The following tables list the members exposed by the **IFilterConstraint** type.
 
-## <span id="Public-Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
+## <span id="Public_Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
 
 
 <table>

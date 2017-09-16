@@ -16,7 +16,7 @@ This article assumes that the reader is familiar with touch screens, understands
 
 This information applies to the Windows 8 operating system.
 
-## <span id="Windows-Hardware-Lab-Kit-requirements"></span><span id="windows_hardware_lab_kit_requirements"></span><span id="WINDOWS_HARDWARE_LAB_KIT_REQUIREMENTS"></span>Windows Hardware Lab Kit requirements
+## <span id="Windows_Hardware_Lab_Kit_requirements"></span><span id="windows_hardware_lab_kit_requirements"></span><span id="WINDOWS_HARDWARE_LAB_KIT_REQUIREMENTS"></span>Windows Hardware Lab Kit requirements
 
 
 You must install at least a minimal configuration of the Windows Hardware Lab Kit (Windows HLK). Windows HLK provides you the tools, processes, and tests to create and upload submission packages to certify devices and systems. The Windows HLKeliminates the need for external tools such as the WLK Log Viewer. This document assumes that you are familiar with the Windows HLK.
@@ -169,7 +169,7 @@ Perform the following steps to set up the test components for calibration.
 3.  Run the touch down latency test from Windows HLK Studio on the Windows HLK controller, or run the standalone test **audiotouch.exe** on the test computer.
 
     >[!IMPORTANT]
->  
+    >  
     This test requires an extremely quiet environment to obtain accurate results.
 
      
@@ -275,7 +275,7 @@ Use the following steps to perform collection.
 4.  Repeat steps 1-3 to cover all areas of the screen.
 
     >[!NOTE]
->  
+    >  
     The preceding index (for example, \[10\] in the case **\[10\] latency: 11.2 \[ms\]**), is not the actual count of the measurement: it is the index for acoustic signals that are received from the microphone through the microcontroller. The index does not always change in increments of one; it can change in increments of two or more if noise was perceived between taps. The best way to ensure that you tapped exactly 500 times is to tap 10-20% more times than required; that is, tap 550 times or 600 times.
 
      
@@ -305,7 +305,7 @@ You might not be able to place the microphone directly on an optical device scre
 -   Place the microphone just above the scan line: You can place the microphone just above the laser scan line (~2-3 mm from the screen) and then follow the test procedure described for fragile devices.
 
     >[!NOTE]
->  
+    >  
     You might have to experiment to find the scan line.
 
      

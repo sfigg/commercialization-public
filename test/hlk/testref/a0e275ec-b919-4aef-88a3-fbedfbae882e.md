@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: 97b312aa-d988-4a2a-acd6-08591a88f6fa
 ---
 
-# <span id="p-hlk-test.a0e275ec-b919-4aef-88a3-fbedfbae882e"></span>WinUSB MUTT IO Tests (Mobile)
+# <span id="p_hlk_test.a0e275ec-b919-4aef-88a3-fbedfbae882e"></span>WinUSB MUTT IO Tests (Mobile)
 
 
 This test performs Bulk, Interrupt, Isoch and Stream transfers with cancellations.

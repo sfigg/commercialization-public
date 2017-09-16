@@ -12,7 +12,7 @@ ms.assetid: 113a6815-a1b4-4c50-afbc-a91e1eac594e
 
 The following table lists the members exposed by the [Task Class](task-class.md).
 
-## <span id="Public-Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
+## <span id="Public_Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
 
 
 <table>

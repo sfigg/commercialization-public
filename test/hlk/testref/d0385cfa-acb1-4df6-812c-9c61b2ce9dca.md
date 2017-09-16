@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: 464a0b6e-296b-498d-a0e7-2de97ed51188
 ---
 
-# <span id="p-hlk-test.d0385cfa-acb1-4df6-812c-9c61b2ce9dca"></span>Basic Capture Session - Record Sink - H264 Video
+# <span id="p_hlk_test.d0385cfa-acb1-4df6-812c-9c61b2ce9dca"></span>Basic Capture Session - Record Sink - H264 Video
 
 
 Test to validate key user scenarios in the camera stack

@@ -10,7 +10,7 @@ ms.assetid: 2FDE210A-F6F6-4CB4-AE07-2493684EA60E
 # TestDefinition Methods
 
 
-## <span id="Public-Methods"></span><span id="public_methods"></span><span id="PUBLIC_METHODS"></span>Public Methods
+## <span id="Public_Methods"></span><span id="public_methods"></span><span id="PUBLIC_METHODS"></span>Public Methods
 
 
 <table>

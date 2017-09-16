@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: c09c6b33-bbec-4963-a81d-d8735f118691
 ---
 
-# <span id="p-hlk-test.d0bc8285-b90a-4bd1-b1af-fca198bd8cc3"></span>Camera Driver Controls System Test - VFR - Iterate through possible settings take Photo and Preview
+# <span id="p_hlk_test.d0bc8285-b90a-4bd1-b1af-fca198bd8cc3"></span>Camera Driver Controls System Test - VFR - Iterate through possible settings take Photo and Preview
 
 
 Test to validate key user scenarios in the camera stack

@@ -475,7 +475,7 @@ Commonly used states for slates:
 -   Disable Mobile Broadband and confirm that GPS can still get a location fix. Re-enable Mobile Broadband.
 
     >[!NOTE]
->  
+    >  
     GPS devices that use device services is an exception; these devices should first go into SENSOR\_STATE\_INITIALIZING state and, after 30 seconds, should go into the SENSOR\_STATE\_NOT\_AVAILABLE state when Mobile Broadband is disabled
 
      

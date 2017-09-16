@@ -12,7 +12,7 @@ ms.assetid: EB212282-B139-4D1F-800A-2E33C723B714
 
 The following tables list the members exposed by the [DeviceOperations Class](deviceoperations-class.md).
 
-## <span id="Public-Constructors"></span><span id="public_constructors"></span><span id="PUBLIC_CONSTRUCTORS"></span>Public Constructors
+## <span id="Public_Constructors"></span><span id="public_constructors"></span><span id="PUBLIC_CONSTRUCTORS"></span>Public Constructors
 
 
 <table>

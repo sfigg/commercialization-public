@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: babd035c-8975-44ec-92be-35698f8d8434
 ---
 
-# <span id="p-hlk-test.5d0f37ef-efd4-4f8c-a9f4-f7e55f8c8f0e"></span>Sensor Camera Driver Controls System Test - CAMERA\_PROFILES - Verify KSCAMERAPROFILE\_VideoRecording enum all
+# <span id="p_hlk_test.5d0f37ef-efd4-4f8c-a9f4-f7e55f8c8f0e"></span>Sensor Camera Driver Controls System Test - CAMERA\_PROFILES - Verify KSCAMERAPROFILE\_VideoRecording enum all
 
 
 Test to validate key user scenarios in the camera stack

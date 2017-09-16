@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: f573e5d7-9933-49e9-9160-68cd61cb6fee
 ---
 
-# <span id="p-hlk-test.d23b4ecf-0de9-4bc3-a9f9-69eddc22e35f"></span>IPSec TOv2 Logo Test
+# <span id="p_hlk_test.d23b4ecf-0de9-4bc3-a9f9-69eddc22e35f"></span>IPSec TOv2 Logo Test
 
 
 This test runs the Task Offload Logo test.
@@ -114,8 +114,6 @@ For troubleshooting information, see [Troubleshooting Device.Network Testing](tr
 </tr>
 </tbody>
 </table>
-
- 
 
 >[!NOTE]
 >  

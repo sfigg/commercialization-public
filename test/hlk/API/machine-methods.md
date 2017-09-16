@@ -10,7 +10,7 @@ ms.assetid: 6f6e1756-630f-4bdb-8245-5b176badca54
 # Machine Methods
 
 
-## <span id="Public-Methods"></span><span id="public_methods"></span><span id="PUBLIC_METHODS"></span>Public Methods
+## <span id="Public_Methods"></span><span id="public_methods"></span><span id="PUBLIC_METHODS"></span>Public Methods
 
 
 <table>

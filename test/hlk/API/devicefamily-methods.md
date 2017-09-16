@@ -12,7 +12,7 @@ ms.assetid: 6e1a30e1-9197-4048-80fc-3842924fd4dd
 
 **DeviceFamily** methods are described in the following tables.
 
-## <span id="Public-Methods"></span><span id="public_methods"></span><span id="PUBLIC_METHODS"></span>Public Methods
+## <span id="Public_Methods"></span><span id="public_methods"></span><span id="PUBLIC_METHODS"></span>Public Methods
 
 
 <table>

@@ -12,7 +12,7 @@ ms.assetid: aa2c967e-3fd1-4e22-8e84-d2d259b0210f
 
 The following tables list the members exposed by the [DatabaseProjectManager Class](databaseprojectmanager-class.md).
 
-## <span id="Protected-Constructors"></span><span id="protected_constructors"></span><span id="PROTECTED_CONSTRUCTORS"></span>Protected Constructors
+## <span id="Protected_Constructors"></span><span id="protected_constructors"></span><span id="PROTECTED_CONSTRUCTORS"></span>Protected Constructors
 
 
 <table>

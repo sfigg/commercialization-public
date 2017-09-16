@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: 5b5307fc-ce9b-4980-99fd-432d3d2ad8d1
 ---
 
-# <span id="p-hlk-test.bbfe7dc4-8ccf-4d8d-b68e-5b6ccab11f0f"></span>MTP Compliance Test - Requirements - Media Players
+# <span id="p_hlk_test.bbfe7dc4-8ccf-4d8d-b68e-5b6ccab11f0f"></span>MTP Compliance Test - Requirements - Media Players
 
 
 This test validates compliance with the Media Transfer Protocol (MTP), Revision 1.0.
@@ -313,8 +313,6 @@ All other supported operations, device properties, and object properties are con
 </tr>
 </tbody>
 </table>
-
- 
 
 >[!NOTE]
 >  

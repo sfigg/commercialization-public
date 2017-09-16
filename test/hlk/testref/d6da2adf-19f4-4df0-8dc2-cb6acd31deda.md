@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: 51290eda-acbe-4b75-852e-e8bc64c5d5b0
 ---
 
-# <span id="p-hlk-test.d6da2adf-19f4-4df0-8dc2-cb6acd31deda"></span>WLAN Association Tests - OPEN\_WPA2\_AES
+# <span id="p_hlk_test.d6da2adf-19f4-4df0-8dc2-cb6acd31deda"></span>WLAN Association Tests - OPEN\_WPA2\_AES
 
 
 This test suite validates WLAN associations.

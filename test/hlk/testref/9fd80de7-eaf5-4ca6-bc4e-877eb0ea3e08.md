@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: dc816554-cfb8-4408-b68b-b2f1831231c9
 ---
 
-# <span id="p-hlk-test.9fd80de7-eaf5-4ca6-bc4e-877eb0ea3e08"></span>NDISTest 6.5 - \[2 Machine\] - Stats
+# <span id="p_hlk_test.9fd80de7-eaf5-4ca6-bc4e-877eb0ea3e08"></span>NDISTest 6.5 - \[2 Machine\] - Stats
 
 
 For NDIS 6.0 miniports, this test verifies that miniport maintains and report statistics from OID\_GEN\_STATISTICS correctly. The test also verifies that the miniport correctly supports statistics OIDs OID\_GEN\_RCV\_OK OID\_GEN\_RCV\_NO\_BUFFER OID\_GEN\_RCV\_ERROR. It sends a bunch of packets to the test adapter and checks that the statistics get incremented. It expects the OID\_GEN\_RCV\_NO\_BUFFER to incremented exactly by the number of packets that were dropped.

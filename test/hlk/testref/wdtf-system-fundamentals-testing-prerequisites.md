@@ -52,7 +52,7 @@ This section describes the tasks that you must complete before you test a client
 -   Device has an IPv6 default gateway address.
 
     >[!NOTE]
->  
+    >  
     If the network adapters do not have an IPv6 address, you should use the WDTFREMOTESYSTEM parameter to pass an IPv6 address that is valid on your network, such as the IPv6 address of the HLK controller.
 
      

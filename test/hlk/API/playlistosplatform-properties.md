@@ -10,7 +10,7 @@ ms.assetid: A2AF1271-7D77-4AD9-9093-7A999379436A
 # PlaylistOSPlatform Properties
 
 
-## <span id="Public-Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
+## <span id="Public_Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
 
 
 <table>

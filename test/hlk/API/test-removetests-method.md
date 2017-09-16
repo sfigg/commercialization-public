@@ -9,7 +9,6 @@ ms.assetid: B41B6ECD-6D7A-41FE-A8F7-7A19D768E38C
 
 # Test.RemoveTests Method
 
-
 >[!WARNING]
 >  This functionality is being deprecated. Please use playlists to create custom test pass lists.
 

@@ -10,7 +10,7 @@ ms.assetid: ef69a30e-2cc4-49b0-b26b-44cf9196158e
 # ProductType Members
 
 
-## <span id="Public-Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
+## <span id="Public_Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
 
 
 <table>

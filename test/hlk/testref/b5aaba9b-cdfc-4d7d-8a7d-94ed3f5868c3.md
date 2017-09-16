@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: 819b87c1-b150-46d5-bb6e-0997c0fa1caa
 ---
 
-# <span id="p-hlk-test.b5aaba9b-cdfc-4d7d-8a7d-94ed3f5868c3"></span>LAN CS Test - IPv4 Basic
+# <span id="p_hlk_test.b5aaba9b-cdfc-4d7d-8a7d-94ed3f5868c3"></span>LAN CS Test - IPv4 Basic
 
 
 This test verifies that the LAN device on systems that support InstantGo delivers reliable connectivity in Connected Standby.

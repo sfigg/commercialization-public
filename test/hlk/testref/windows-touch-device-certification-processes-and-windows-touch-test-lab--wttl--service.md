@@ -26,7 +26,7 @@ We recommend that you visit the [Windows Hardware Certification blog](http://go.
 
  
 
-## <span id="Windows-Touch-device-certification-overview-"></span><span id="windows_touch_device_certification_overview_"></span><span id="WINDOWS_TOUCH_DEVICE_CERTIFICATION_OVERVIEW_"></span>Windows Touch device certification overview
+## <span id="Windows_Touch_device_certification_overview_"></span><span id="windows_touch_device_certification_overview_"></span><span id="WINDOWS_TOUCH_DEVICE_CERTIFICATION_OVERVIEW_"></span>Windows Touch device certification overview
 
 
 We provide two independent options for Touch device certification:

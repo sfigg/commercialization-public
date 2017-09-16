@@ -12,7 +12,7 @@ ms.assetid: A6208465-2B62-4059-BFDD-977F4F8D0B9A
 
 The following tables list the members exposed by the [PlaylistManager Class](playlistmanager-class.md).
 
-## <span id="Public-Constructor"></span><span id="public_constructor"></span><span id="PUBLIC_CONSTRUCTOR"></span>Public Constructor
+## <span id="Public_Constructor"></span><span id="public_constructor"></span><span id="PUBLIC_CONSTRUCTOR"></span>Public Constructor
 
 
 <table>

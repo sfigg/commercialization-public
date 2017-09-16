@@ -14,7 +14,7 @@ This topic describes how to manually test IPsec Task Offload.
 
 Before starting, be sure that ScenarioHarness.msi is in the \[SystemDrive\]\\iketest\\ folder, and add it to your PATH environment variables.
 
-## <span id="Test-Software-Preparation-Steps"></span><span id="test_software_preparation_steps"></span><span id="TEST_SOFTWARE_PREPARATION_STEPS"></span>Test Software Preparation Steps
+## <span id="Test_Software_Preparation_Steps"></span><span id="test_software_preparation_steps"></span><span id="TEST_SOFTWARE_PREPARATION_STEPS"></span>Test Software Preparation Steps
 
 
 Test installation steps are nearly the same for both the machines with some unique steps for each machine. The machine which controls the logo test process is called the IPsec\_Controller and the other machine is called the IPsec\_Client. In the following context, IPsec\_Controller-machine-name is the Windows machine name of the IPsec\_Controller role and IPsec\_Client-machine-name is the Windows machine name of the IPsec\_Client role. Both of these names are unique to the corporate or local network naming convention or configuration requirements. Notice that the tests running on the IPsec\_Controller machine would need to know the IP addresses of the IPsec\_Client in order to control the traffic flow and program behavior.

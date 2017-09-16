@@ -10,7 +10,7 @@ ms.assetid: D5F91564-5584-4FBF-9D08-775B05635437
 # DeviceOperations Methods
 
 
-## <span id="Public-Methods"></span><span id="public_methods"></span><span id="PUBLIC_METHODS"></span>Public Methods
+## <span id="Public_Methods"></span><span id="public_methods"></span><span id="PUBLIC_METHODS"></span>Public Methods
 
 
 <table>

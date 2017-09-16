@@ -61,8 +61,6 @@ For tests that don't include a driver, like tests for a hard disk drive, the Win
 >  
 Except for para-virtualization drivers (as defined by the [WHCP Policies and Processes](http://go.microsoft.com/fwlink/p/?LinkID=615222) document), you can't use any form of virtualization when you test physical devices and their associated drivers for server certification or signature. Virtualization products don't support the underlying functionality that's required to pass the tests that relate to multiple processor groups, device power management, device PCI functionality, and other tests.
 
- 
-
 >[!NOTE]
 >  Multiple Processor Groups Setting
 You must set the value for the processor group size for Hardware Lab Kit testing of Windows Server 2008 R2 and later device drivers for certification. This is done by running bcdedit in an elevated command prompt window, using the /set option.
@@ -82,8 +80,6 @@ bcdedit.exe /deletevalue groupsize
 bcdedit.exe /deletevalue groupaware
 shutdown.exe -r -t 0 -f
 ```
-
- 
 
 >[!NOTE]
 >  
@@ -427,7 +423,7 @@ When testing storage devices, we strongly recommend that you complete all Device
 4.  Connect the test device to the downstream port of the high-speed USB 2.0 hub.
 
     >[!NOTE]
->  
+    >  
     Don't connect the USB test device directly to the root hub of the USB 2.0 controller.
 
      
@@ -488,7 +484,7 @@ If your device supports any of the feature(s) in this section, please update the
 1.  Install a USB 3.0 XHCI host controller in test system 1 ().
 
     >[!NOTE]
->  
+    >  
     Ff the host controller is already available as an embedded device on the system, skip this step.
 
      

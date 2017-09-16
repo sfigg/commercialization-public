@@ -44,7 +44,7 @@ All hardware (except the test device, monitor, keyboard, mouse, and floppy disk 
 -   1 test-specific type of RAID storage system: Fibre Channel, SAS, SCSI, or SATA RAID (for example, a SAS RAID storage system for a SAS system test). This device is the test device.
 
     >[!WARNING]
->  
+    >  
     The RAID system must be a single cabinet that consists of an array controller that's enclosed in an external subsystem with hard disk drives. Or it must be an external array controller that connects to a RAID JBOD. The RAID system can't consist of only a Peripheral Component Interconnect (PCI)–based controller and 1 RAID JBOD.
 
      
@@ -52,7 +52,7 @@ All hardware (except the test device, monitor, keyboard, mouse, and floppy disk 
 -   1 PCI-based, test-specific type of host bus adapter (HBA). If the test system supports Microsoft® Multipath I/O (MPIO), 2 ports in the HBA or 2 identical HBAs (if each of them has only 1 port) must be connected to the same target device.
 
     >[!NOTE]
->  
+    >  
     The RAID system should support the PCI-based HBA that you select to test the RAID system. Any drivers that you use on the test system for this HBA must have a Windows logo, and the HBA model and firmware version must be included in the Windows Catalog.
 
      
@@ -68,8 +68,6 @@ For tests that don't include a driver to test, like tests for a hard disk drive,
 >[!NOTE]
 >  
 Except for para-virtualization drivers (as defined by the [WHCP Policies and Processes](http://go.microsoft.com/fwlink/p/?LinkID=615222) document), you can't use any form of virtualization when you test physical devices and their associated drivers for server certification or signature. Virtualization products don't support the underlying functionality that's required to pass the tests that relate to multiple processor groups, device power management, device PCI functionality, and other tests.
-
- 
 
 >[!NOTE]
 >  Multiple Processor Groups Setting
@@ -90,8 +88,6 @@ bcdedit.exe /deletevalue groupsize
 bcdedit.exe /deletevalue groupaware
 shutdown.exe -r -t 0 -f
 ```
-
- 
 
 >[!NOTE]
 >  
@@ -215,7 +211,7 @@ To configure the test computer to test your Fibre Channel, SAS, SCSI, or SATA RA
 4.  In the test system, connect the HBA to the RAID system by using the appropriate cables for the bus type (for example, SCSI, SATA, and so on).
 
     >[!NOTE]
->  
+    >  
     If the test RAID system supports more than 1 bus protocol, you must test and submit your device for Windows certification 1 time with each protocol that you want to have it qualified for.
 
      
@@ -229,7 +225,7 @@ To configure the test computer to test your Fibre Channel, SAS, SCSI, or SATA RA
     2.  Create a 36-GB NTFS file system partition on RAID Array 1, and then install the appropriate operating system on this partition.
 
         >[!NOTE]
->  
+        >  
         We recommend SAN-boot configuration, but it isn't required.
 
          
@@ -261,7 +257,7 @@ To configure the test computer to test your Fibre Channel, SAS, SCSI, or SATA RA
     2.  Right-click each disk, and then click **New Partition**.
 
         >[!NOTE]
->  
+        >  
         Each partition should be a primary partition, should use all of the disk space, should use any drive letter, and should be formatted in NTFS.
 
         For a non-MPIO test environment, if the HBA that you're using to test the RAID system is bootable, and if the RAID system supports boot, RAID Array 1 should already have a 36-GB partition. Create a new NTFS partition by using the remaining space on this drive.

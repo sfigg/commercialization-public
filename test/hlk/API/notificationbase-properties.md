@@ -10,7 +10,7 @@ ms.assetid: 717e95ff-85f1-4c6b-a759-52cdbb64dca9
 # NotificationBase Properties
 
 
-## <span id="Protected-Properties"></span><span id="protected_properties"></span><span id="PROTECTED_PROPERTIES"></span>Protected Properties
+## <span id="Protected_Properties"></span><span id="protected_properties"></span><span id="PROTECTED_PROPERTIES"></span>Protected Properties
 
 
 <table>
