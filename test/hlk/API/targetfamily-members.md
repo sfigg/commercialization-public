@@ -12,7 +12,7 @@ ms.assetid: 31be2d17-5f19-4f8d-a900-2b9f1945d515
 
 The following table lists the members exposed by the [TargetFamily Class](targetfamily-class.md).
 
-## <span id="Public-Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
+## <span id="Public_Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
 
 
 <table>

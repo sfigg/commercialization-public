@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: 8f9ee4e9-e5c3-4dc6-958d-d5a1ca26655a
 ---
 
-# <span id="p-hlk-test.dbea3fce-5776-4660-9b89-ccfebbdf88e2"></span>Texture Formats 2-10-10-10 (WoW64)
+# <span id="p_hlk_test.dbea3fce-5776-4660-9b89-ccfebbdf88e2"></span>Texture Formats 2-10-10-10 (WoW64)
 
 
 This automated test verifies the requirements listed in the test details table.

@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: 8b564842-be06-429c-9a23-2a2ce1228580
 ---
 
-# <span id="p-hlk-test.5e9fd15a-7ffa-4caf-94eb-af2541ef2ede"></span>Named Pipe State
+# <span id="p_hlk_test.5e9fd15a-7ffa-4caf-94eb-af2541ef2ede"></span>Named Pipe State
 
 
 This automated test validates the behavior of all named-pipe operations for each distinct state of a pipe instance.

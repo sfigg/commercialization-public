@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: 4addd258-39ba-45bb-b52b-43a1925abbdc
 ---
 
-# <span id="p-hlk-test.cd90a4d6-b7e5-4ee1-aea4-84b9ff58ebba"></span>Mobile Print - Rendering Tests (Device Processed)
+# <span id="p_hlk_test.cd90a4d6-b7e5-4ee1-aea4-84b9ff58ebba"></span>Mobile Print - Rendering Tests (Device Processed)
 
 
 The Mobile Print Rendering Tests test printing to PWG-Raster, PCLm, XPS, and OXPS compatible printers. The tests produce numerous pages of output at different DPI sizes, page sizes, page orientations, page orderings, and color formats suported by the printer (as defined by the PrintDeviceCapabilities).

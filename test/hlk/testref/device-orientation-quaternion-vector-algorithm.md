@@ -18,7 +18,7 @@ In some cases, you can use the Sensor Diagnostic Tool to examine the 3D inclinom
 
  
 
-## <span id="Quaternion-vector-algorithm"></span><span id="quaternion_vector_algorithm"></span><span id="QUATERNION_VECTOR_ALGORITHM"></span>Quaternion vector algorithm
+## <span id="Quaternion_vector_algorithm"></span><span id="quaternion_vector_algorithm"></span><span id="QUATERNION_VECTOR_ALGORITHM"></span>Quaternion vector algorithm
 
 
 The algorithm uses the arc cos of the 4 dimensional dot product of the two vectors, divided by the product of the magnitude of the two vectors and divided by 2. This algorithm is shown in Figure 1 Quaternion Vector Algorithm Formula:

@@ -10,7 +10,7 @@ ms.assetid: 78394dc6-a7b2-4940-bb44-c497c9e12fdb
 # MachinePool Properties
 
 
-## <span id="Public-Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
+## <span id="Public_Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
 
 
 <table>

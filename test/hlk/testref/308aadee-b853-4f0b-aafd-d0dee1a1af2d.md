@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: d1859ca0-9914-446c-96d9-887bf3dd229f
 ---
 
-# <span id="p-hlk-test.308aadee-b853-4f0b-aafd-d0dee1a1af2d"></span>D3D12 - Resource Binding - Graphics deferred descriptor editing test.
+# <span id="p_hlk_test.308aadee-b853-4f0b-aafd-d0dee1a1af2d"></span>D3D12 - Resource Binding - Graphics deferred descriptor editing test.
 
 
 Validates driver conformance when changing descriptors after a command list has been completed and closed for the graphics pipeline.

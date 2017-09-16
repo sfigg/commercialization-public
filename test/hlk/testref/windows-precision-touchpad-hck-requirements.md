@@ -533,7 +533,7 @@ ms.assetid: 83c48e99-1466-4376-b9df-5c9b97f59dd4
 
  
 
-## <span id="related-topics"></span>Related topics
+## <span id="related_topics"></span>Related topics
 
 
 [Windows Precision Touchpad Certification Process](windows-precision-touchpad-certification-process.md)

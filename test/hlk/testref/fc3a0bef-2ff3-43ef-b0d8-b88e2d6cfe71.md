@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: d1b133e4-c183-44aa-9c3e-553dd703cd75
 ---
 
-# <span id="p-hlk-test.fc3a0bef-2ff3-43ef-b0d8-b88e2d6cfe71"></span>CoreSys H264 playback test 12
+# <span id="p_hlk_test.fc3a0bef-2ff3-43ef-b0d8-b88e2d6cfe71"></span>CoreSys H264 playback test 12
 
 
 >[!IMPORTANT]

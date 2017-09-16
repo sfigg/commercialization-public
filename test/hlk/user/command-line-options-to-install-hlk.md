@@ -10,7 +10,7 @@ ms.assetid: 356d44dc-226c-482b-bf47-2fa6ab6a4d94
 # Command-line options to install HLK
 
 
-## <span id="Installation-and-Uninstallation-Examples"></span><span id="installation_and_uninstallation_examples"></span><span id="INSTALLATION_AND_UNINSTALLATION_EXAMPLES"></span>Installation and Uninstallation Examples
+## <span id="Installation_and_Uninstallation_Examples"></span><span id="installation_and_uninstallation_examples"></span><span id="INSTALLATION_AND_UNINSTALLATION_EXAMPLES"></span>Installation and Uninstallation Examples
 
 
 To install the Windows HLK Controller, Studio, Client and/or Manager (Unattended):

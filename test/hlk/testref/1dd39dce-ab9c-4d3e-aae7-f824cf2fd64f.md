@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: 7eb0e3d0-39b8-4fd3-b0a7-9e3cdf4a6295
 ---
 
-# <span id="p-hlk-test.1dd39dce-ab9c-4d3e-aae7-f824cf2fd64f"></span>WGF11 Precision
+# <span id="p_hlk_test.1dd39dce-ab9c-4d3e-aae7-f824cf2fd64f"></span>WGF11 Precision
 
 
 This automated test ensures that when shaders specify the minimum partial precision flag (8, 10, or 16-bit) that IHVs do not use a lower precision for calculations. For example, the shader specifies 16-bit but the IHV uses 10-bit.

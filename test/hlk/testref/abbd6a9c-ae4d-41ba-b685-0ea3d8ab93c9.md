@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: 561672d9-69a3-428f-ad15-bed0df454f82
 ---
 
-# <span id="p-hlk-test.abbd6a9c-ae4d-41ba-b685-0ea3d8ab93c9"></span>D2D - DImage Effect Tests - LayersAndClips
+# <span id="p_hlk_test.abbd6a9c-ae4d-41ba-b685-0ea3d8ab93c9"></span>D2D - DImage Effect Tests - LayersAndClips
 
 
 DImage ImageSource Test

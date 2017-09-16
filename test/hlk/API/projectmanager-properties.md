@@ -10,7 +10,7 @@ ms.assetid: 80ff8b61-6a50-4226-9e11-605af663139b
 # ProjectManager Properties
 
 
-## <span id="Public-Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
+## <span id="Public_Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
 
 
 <table>

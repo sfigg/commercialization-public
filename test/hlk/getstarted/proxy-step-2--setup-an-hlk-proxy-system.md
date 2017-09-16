@@ -10,32 +10,31 @@ ms.assetid: 25425C6A-D375-4C5A-9A91-5F596DB32E96
 # Step 2: Setup an HLK Proxy System
 
 
-Follow these steps on the machine you have designated as your Proxy system– this can be either the same machine as the HLK Controller or a separate machine running a Client or Server SKU.
-
 >[!NOTE]
->  If a separate system is used as the Proxy client host, ensure that the Domain or Workgroup configuration matches the configuration of the HLK Controller. Account name and password of the proxy system should also match the HLK Controller.
+>  Make sure that the credentials of the user on the proxy system match those of an administrator on your HLK controller:
+-   Local administrator account on proxy: &lt;ProxyMachineName&gt;\\TestAdmin
+-   Local administrator account on controller: &lt;HLKControllerMachineName&gt;&gt;\\TestAdmin
+-   Both with the same password
 
  
 
-1.  On the Proxy system (which may be the same machine as the HLK Controller), run setup.exe from the following location:
-    -   \\\\&lt;ControllerName&gt;\\HLKInstall\\ProxyClient\\setup.exe
+1.  On the Proxy system (which may be the same machine as the HLK Controller), run setup.exe from the following location: 
 
-    >[!NOTE]
->  Replace &lt;ControllerName&gt; with the name of the test server.
+    `\\<ControllerName>\HLKInstall\ProxyClient\setup.exe`
 
      
 
-2.  The **WTT Proxy Setup** wizard appears. To start the wizard, choose **Next**.
-3.  Select **Next** on the **Destination Folder** page.
-4.  Select **Install** to proceed.
-5.  Open an elevated command prompt and navigate to %ProgramFiles(X86)%\\WTTMobile\\Client\\
-6.  Start the Proxy Service by running the following command from the elevated command prompt:
+    >[!NOTE]
+>  Replace &lt;ControllerName&gt; with the name of the HLK Controller.
 
-    ``` syntax
-    WTTProxy.exe –console
-    ```
+     
 
-7.  Leave the elevated command prompt window open.
+2.  The WTT Proxy Setup wizard appears. Follow the instructions in the setup wizard to completion.
+3.  Start the Proxy Service by double clicking on the **WTT Proxy** shortcut on the desktop of the proxy system or by navigating to  %ProgramFiles(X86)%\\WTTMobile\\Client\\ and running the following command from the elevated command prompt:  
+
+    `WTTProxy.exe -console`
+
+4.  Leave the elevated command prompt window from the previous step open.
 
  
 

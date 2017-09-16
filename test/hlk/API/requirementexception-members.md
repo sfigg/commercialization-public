@@ -12,7 +12,7 @@ ms.assetid: 11c99cc8-4c7b-48f4-85a1-d1fe7cf7c38f
 
 The following table lists the members exposed by the **RequirementException** type.
 
-## <span id="Public-Constructors"></span><span id="public_constructors"></span><span id="PUBLIC_CONSTRUCTORS"></span>Public Constructors
+## <span id="Public_Constructors"></span><span id="public_constructors"></span><span id="PUBLIC_CONSTRUCTORS"></span>Public Constructors
 
 
 <table>

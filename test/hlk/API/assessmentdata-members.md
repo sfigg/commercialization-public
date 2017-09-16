@@ -12,7 +12,7 @@ ms.assetid: 7703ab27-6ff3-4bfd-8e90-b79992bde994
 
 The following tables list the members exposed by the [AssessmentData Class](assessmentdata-class.md).
 
-## <span id="Public-Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
+## <span id="Public_Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
 
 
 <table>

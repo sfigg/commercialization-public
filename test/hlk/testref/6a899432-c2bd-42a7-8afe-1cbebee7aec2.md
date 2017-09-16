@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: c419f2c7-f73b-4c0e-b0ad-3110e3529710
 ---
 
-# <span id="p-hlk-test.6a899432-c2bd-42a7-8afe-1cbebee7aec2"></span>Graphics Driver Installation During OS Setup.
+# <span id="p_hlk_test.6a899432-c2bd-42a7-8afe-1cbebee7aec2"></span>Graphics Driver Installation During OS Setup.
 
 
 This test verifies that a driver can be injected into an OS image, that it installs during the setup phase of the OS, and is working when the user first boots into the OS during personalization stage. In order to accomplish this the following steps need to be done: 1. Copy an existing build folder to a Windows 8.1 machine. 2. Inject the driver being tested into the image using DISM.exe 3. Enable Test signing in the image file if using test signed drivers. 4. Use the image created to install a test machine. 5. Verify the driver was installed successfully and is working. A dialog prompt requiring user intervention to indicate Pass or Fail will be presented on the HCK client. The script that can be used for creating the OS setup image is located at \\\\\[HCKControllerName\]\\Tests\\amd64\\NTTEST\\windowstest\\tools\\InjectDriversToWim.cmd The script takes the following paramerters: First parameter is the path to the location of the build folder. Second parameter is the location of the folder that contains the drivers to be injected. Example: InjectDriversToWim.cmd "c:\\Build\_9405\\Client" "C:\\MyDrivers\\AMD64" After verifying the script completed successfully installation of the OS can be ran. In the example passed setup.exe contained in the "c:\\Build\_9405\\Client" can be run to install the OS.

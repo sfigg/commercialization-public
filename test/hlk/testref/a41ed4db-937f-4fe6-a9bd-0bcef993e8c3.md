@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: b5e3b4d0-b925-4b07-ad2a-f4c6aedc8a62
 ---
 
-# <span id="p-hlk-test.a41ed4db-937f-4fe6-a9bd-0bcef993e8c3"></span>Stretch Rect
+# <span id="p_hlk_test.a41ed4db-937f-4fe6-a9bd-0bcef993e8c3"></span>Stretch Rect
 
 
 This automated test verifies correct implementation of the driver functionality that underlies the **IDirect3DDevice9::StretchRect** method.

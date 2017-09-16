@@ -10,7 +10,7 @@ ms.assetid: 23279a93-37dd-40f6-a6f5-aa8230a6efd6
 # MachineException Methods
 
 
-## <span id="Public-Methods"></span><span id="public_methods"></span><span id="PUBLIC_METHODS"></span>Public Methods
+## <span id="Public_Methods"></span><span id="public_methods"></span><span id="PUBLIC_METHODS"></span>Public Methods
 
 
 <table>

@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: 8c2cae5a-845e-4c04-ae37-bfeccfb5b74e
 ---
 
-# <span id="p-hlk-test.c0008d3b-01ba-47d8-af6b-c3aa2cfb5a0c"></span>HEVCQualityTest255
+# <span id="p_hlk_test.c0008d3b-01ba-47d8-af6b-c3aa2cfb5a0c"></span>HEVCQualityTest255
 
 
 >[!IMPORTANT]

@@ -10,7 +10,7 @@ ms.assetid: 8cbd23a8-4c11-4f61-9fa4-39619a1ca099
 # PackageFilterConstraint Methods
 
 
-## <span id="Public-Methods"></span><span id="public_methods"></span><span id="PUBLIC_METHODS"></span>Public Methods
+## <span id="Public_Methods"></span><span id="public_methods"></span><span id="PUBLIC_METHODS"></span>Public Methods
 
 
 <table>

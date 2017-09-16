@@ -22,7 +22,7 @@ To create an HLK user account for a domain user, as opposed to a user account fo
 
 If you try to create an HLK user account for a domain user while you are logged on as a local user with administrator rights, an error message will appear informing you that the user for whom you are trying to set up permissions does not exist in the domain. The domain referred to in the error message is the local machine and not the domain to which it is connected.
 
-## <span id="Assigning-Roles"></span><span id="assigning_roles"></span><span id="ASSIGNING_ROLES"></span>Assigning Roles
+## <span id="Assigning_Roles"></span><span id="assigning_roles"></span><span id="ASSIGNING_ROLES"></span>Assigning Roles
 
 
 When you create a new user account for an HLK user, you must also assign a datastore role for the user.

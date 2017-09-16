@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: 6b20275c-b0ca-406a-abd0-d5b5cfcd3889
 ---
 
-# <span id="p-hlk-test.8daf7d61-bc5a-4a7c-b8e5-bd7df91eabb8"></span>D3D12 - Simple Split Barrier Validation
+# <span id="p_hlk_test.8daf7d61-bc5a-4a7c-b8e5-bd7df91eabb8"></span>D3D12 - Simple Split Barrier Validation
 
 
 Simple Test - Debug layer catches resource split barrier transition errors.

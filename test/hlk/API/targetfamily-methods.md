@@ -10,7 +10,7 @@ ms.assetid: c781c7aa-cc60-4a48-ba7a-f9e8d424d2fa
 # TargetFamily Methods
 
 
-## <span id="Public-Methods"></span><span id="public_methods"></span><span id="PUBLIC_METHODS"></span>Public Methods
+## <span id="Public_Methods"></span><span id="public_methods"></span><span id="PUBLIC_METHODS"></span>Public Methods
 
 
 <table>

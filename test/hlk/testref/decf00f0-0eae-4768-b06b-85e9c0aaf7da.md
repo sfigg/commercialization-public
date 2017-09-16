@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: d2c60ab3-f7d2-4a86-be65-8b597eea5af7
 ---
 
-# <span id="p-hlk-test.decf00f0-0eae-4768-b06b-85e9c0aaf7da"></span>DF - PNP Surprise Remove Device Test (Reliability)
+# <span id="p_hlk_test.decf00f0-0eae-4768-b06b-85e9c0aaf7da"></span>DF - PNP Surprise Remove Device Test (Reliability)
 
 
 The Surprise Removal test encompasses IRP\_MN\_SURPRISE\_REMOVAL followed by IRP\_MN\_REMOVE\_DEVICE.

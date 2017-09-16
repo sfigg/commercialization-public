@@ -36,7 +36,7 @@ This topic describes common test failures that you can encounter when you run Wi
 
 -   [Test log message: Number of devices found after reboot (1) is not the same as before the reboot (2); please review logs to find the missing device(s)](#number-of-devices-changed)
 
-## <span id="failed-but-te-shows-pass"></span><span id="FAILED_BUT_TE_SHOWS_PASS"></span>The test is marked as failed in HLK Studio, but the te.wtl log shows only pass results
+## <span id="failed_but_te_shows_pass"></span><span id="FAILED_BUT_TE_SHOWS_PASS"></span>The test is marked as failed in HLK Studio, but the te.wtl log shows only pass results
 
 
 If test is marked as failed in HLK Studio, but the te.wtl log shows only pass results, you can obtain the error that caused the failure by executing the following steps:

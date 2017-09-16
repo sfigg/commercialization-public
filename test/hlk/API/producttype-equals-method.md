@@ -10,7 +10,7 @@ ms.assetid: 83ADACB8-D9DF-4DF6-BBE6-5952F4C960FA
 # ProductType.Equals Method
 
 
-## <span id="Overload-List"></span><span id="overload_list"></span><span id="OVERLOAD_LIST"></span>Overload List
+## <span id="Overload_List"></span><span id="overload_list"></span><span id="OVERLOAD_LIST"></span>Overload List
 
 
 <table>

@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: bf46d5cf-8d5e-4678-a9ce-7c8be3b42574
 ---
 
-# <span id="p-hlk-test.1ee9439d-57ad-475b-ba5b-1bc4ecbf2c0a"></span>iSCSI Boot Firmware Table Test (LOGO)
+# <span id="p_hlk_test.1ee9439d-57ad-475b-ba5b-1bc4ecbf2c0a"></span>iSCSI Boot Firmware Table Test (LOGO)
 
 
 This test verifies that the iSCSI Boot Firmware table is available and is valid.

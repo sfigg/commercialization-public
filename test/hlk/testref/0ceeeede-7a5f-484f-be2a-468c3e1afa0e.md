@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: 43b83adb-5095-442e-9f8e-4aaee2ff7772
 ---
 
-# <span id="p-hlk-test.0ceeeede-7a5f-484f-be2a-468c3e1afa0e"></span>Camera Driver System Test - MediaCapture - ValidateFrameExposureCompensationCapabilities
+# <span id="p_hlk_test.0ceeeede-7a5f-484f-be2a-468c3e1afa0e"></span>Camera Driver System Test - MediaCapture - ValidateFrameExposureCompensationCapabilities
 
 
 This test validates the camera's per frame Exposure (EV) Compensation capabilities

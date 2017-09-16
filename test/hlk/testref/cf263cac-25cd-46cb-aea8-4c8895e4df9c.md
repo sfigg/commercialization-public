@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: 0e30942f-2703-4653-95f2-18e4e552c0a5
 ---
 
-# <span id="p-hlk-test.cf263cac-25cd-46cb-aea8-4c8895e4df9c"></span>D2D - DImage Effect Tests - 3DTransform
+# <span id="p_hlk_test.cf263cac-25cd-46cb-aea8-4c8895e4df9c"></span>D2D - DImage Effect Tests - 3DTransform
 
 
 DImage Golden Image Effect Test

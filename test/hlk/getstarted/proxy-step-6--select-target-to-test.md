@@ -32,7 +32,7 @@ The following image shows the Studio **Selection** tab.
 
 ![hlk studio selection tab](images/hlk-studio-selection-tab.png)
 
-## <span id="Select-a-target-to-test"></span><span id="select_a_target_to_test"></span><span id="SELECT_A_TARGET_TO_TEST"></span>Select a target to test
+## <span id="Select_a_target_to_test"></span><span id="select_a_target_to_test"></span><span id="SELECT_A_TARGET_TO_TEST"></span>Select a target to test
 
 
 1.  In Windows HLK Studio, choose the **Selection** tab. In the machine pool dropdown, choose the pool that contains the devices that you want to test.

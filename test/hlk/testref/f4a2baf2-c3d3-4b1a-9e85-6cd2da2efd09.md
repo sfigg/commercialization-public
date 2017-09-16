@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: 11af68fd-547c-4286-9990-01d36b41a540
 ---
 
-# <span id="p-hlk-test.f4a2baf2-c3d3-4b1a-9e85-6cd2da2efd09"></span>Sensor Camera Driver Controls System Test - FOCUSSTATE - Verify Default setting - Record Video
+# <span id="p_hlk_test.f4a2baf2-c3d3-4b1a-9e85-6cd2da2efd09"></span>Sensor Camera Driver Controls System Test - FOCUSSTATE - Verify Default setting - Record Video
 
 
 Test to validate key user scenarios in the camera stack

@@ -14,7 +14,7 @@ This class is a base class for all logo manager exceptions.
 
 The following tables list the members exposed by the **DataIntegrityException** type.
 
-## <span id="Public-Constructors"></span><span id="public_constructors"></span><span id="PUBLIC_CONSTRUCTORS"></span>Public Constructors
+## <span id="Public_Constructors"></span><span id="public_constructors"></span><span id="PUBLIC_CONSTRUCTORS"></span>Public Constructors
 
 
 <table>

@@ -14,7 +14,7 @@ This class represents a group of Targets that correspond to WLP POLICY-0004.
 
 The following tables list the members exposed by the **DeviceFamily** type.
 
-## <span id="Public-Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
+## <span id="Public_Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
 
 
 <table>

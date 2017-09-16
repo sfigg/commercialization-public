@@ -33,7 +33,7 @@ Exporting different tests to the same directory will succeed as long as the same
 
 For more information, including how to export a failed HLK job from within the HLK, see [Exporting a Failed HLK Job](..\user\exporting-a-failed-hlk-job.md).
 
-## <span id="related-topics"></span>Related topics
+## <span id="related_topics"></span>Related topics
 
 
 [IRunExport Interface](irunexport-interface.md)

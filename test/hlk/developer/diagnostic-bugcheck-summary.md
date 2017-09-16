@@ -17,7 +17,7 @@ This sample shows how to retrieve and display a diagnostic bugcheck summary for 
 
  
 
-## <span id="C-"></span><span id="c_"></span>**C#**
+## <span id="C_"></span><span id="c_"></span>**C#**
 
 
 ``` syntax

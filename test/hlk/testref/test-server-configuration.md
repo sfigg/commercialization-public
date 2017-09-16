@@ -10,7 +10,7 @@ ms.assetid: 90a0a9f2-2923-4321-a22c-86c7e5fe1b48
 # Test Server Configuration
 
 
-### <span id="Test-system-configuration"></span><span id="test_system_configuration"></span><span id="TEST_SYSTEM_CONFIGURATION"></span>Test system configuration
+### <span id="Test_system_configuration"></span><span id="test_system_configuration"></span><span id="TEST_SYSTEM_CONFIGURATION"></span>Test system configuration
 
 This article assumes that you have already setup the network domain controller and installed the Windows HLK controller and Windows HLK Studio on a machine, and that the Windows HLK controller and Windows HLK Studio are on the network.
 

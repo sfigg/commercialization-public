@@ -12,7 +12,7 @@ ms.assetid: 91acf90b-c8c4-4891-9260-f9f3a4fa7309
 
 The following table lists the members exposed by the **Machine** type.
 
-## <span id="Protected-Constructors"></span><span id="protected_constructors"></span><span id="PROTECTED_CONSTRUCTORS"></span>Protected Constructors
+## <span id="Protected_Constructors"></span><span id="protected_constructors"></span><span id="PROTECTED_CONSTRUCTORS"></span>Protected Constructors
 
 
 <table>

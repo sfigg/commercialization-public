@@ -12,7 +12,7 @@ ms.assetid: e1590d74-49d4-4cb0-852f-acdb98b648d9
 
 Design and Usage Instructions – Microsoft, 12/2011
 
-## <span id="Scenario-Tests"></span><span id="scenario_tests"></span><span id="SCENARIO_TESTS"></span>Scenario Tests
+## <span id="Scenario_Tests"></span><span id="scenario_tests"></span><span id="SCENARIO_TESTS"></span>Scenario Tests
 
 
 The test uses the following selection variables to set up test combinations. Note that if any of these variables are not selected specifically, TE will loop through all the “un-tethered” possibilities in order.

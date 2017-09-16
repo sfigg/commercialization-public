@@ -12,7 +12,7 @@ ms.assetid: d3bde56d-d548-4d61-b913-139ea2fae9ea
 
 The following table lists the methods exposed by the **Driver** type.
 
-## <span id="Public-Methods"></span><span id="public_methods"></span><span id="PUBLIC_METHODS"></span>Public Methods
+## <span id="Public_Methods"></span><span id="public_methods"></span><span id="PUBLIC_METHODS"></span>Public Methods
 
 
 <table>

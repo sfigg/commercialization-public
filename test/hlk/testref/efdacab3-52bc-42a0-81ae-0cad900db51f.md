@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: 3bdf4d9d-59d4-42ef-933d-1655a83b58dc
 ---
 
-# <span id="p-hlk-test.efdacab3-52bc-42a0-81ae-0cad900db51f"></span>Wlan Test - Wlan Device Capabilities Check - (WoW64 for ARM64)
+# <span id="p_hlk_test.efdacab3-52bc-42a0-81ae-0cad900db51f"></span>Wlan Test - Wlan Device Capabilities Check - (WoW64 for ARM64)
 
 
 This automated test checks to make sure the WLAN device is properly reporting its capabilities to windows

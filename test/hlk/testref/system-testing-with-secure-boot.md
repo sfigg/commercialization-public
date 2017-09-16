@@ -12,7 +12,7 @@ ms.assetid: 5b4c9667-357c-4d5e-8ec7-063f57e30882
 
 In some cases, having Secure Boot enabled on a test computer can cause the HLK Client installation to fail. You should not see this failure on Windows RT devices, but might see them on non-Windows RT devices. Follow these steps to ensure proper installation:
 
-## <span id="For-system-tests-and-non-class-driver-device-tests"></span><span id="for_system_tests_and_non-class_driver_device_tests"></span><span id="FOR_SYSTEM_TESTS_AND_NON-CLASS_DRIVER_DEVICE_TESTS"></span>For system tests and non-class driver device tests
+## <span id="For_system_tests_and_non-class_driver_device_tests"></span><span id="for_system_tests_and_non-class_driver_device_tests"></span><span id="FOR_SYSTEM_TESTS_AND_NON-CLASS_DRIVER_DEVICE_TESTS"></span>For system tests and non-class driver device tests
 
 
 1.  Disable Secure Boot protections.

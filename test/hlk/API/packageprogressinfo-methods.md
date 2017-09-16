@@ -10,7 +10,7 @@ ms.assetid: 24d79c2b-24c7-45df-9b37-b0c10e5b80c0
 # PackageProgressInfo Methods
 
 
-## <span id="Public-Methods"></span><span id="public_methods"></span><span id="PUBLIC_METHODS"></span>Public Methods
+## <span id="Public_Methods"></span><span id="public_methods"></span><span id="PUBLIC_METHODS"></span>Public Methods
 
 
 <table>

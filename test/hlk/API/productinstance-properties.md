@@ -10,7 +10,7 @@ ms.assetid: b7d96451-4c9a-4d7e-b1d4-73fb487eee6d
 # ProductInstance Properties
 
 
-## <span id="Public-Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
+## <span id="Public_Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
 
 
 <table>

@@ -12,7 +12,7 @@ ms.assetid: f4f79aa8-ccaa-4d37-82b2-1c1114403aab
 
 The following tables list the members exposed by the **NotificationBase** type.
 
-## <span id="Protected-Properties"></span><span id="protected_properties"></span><span id="PROTECTED_PROPERTIES"></span>Protected Properties
+## <span id="Protected_Properties"></span><span id="protected_properties"></span><span id="PROTECTED_PROPERTIES"></span>Protected Properties
 
 
 <table>

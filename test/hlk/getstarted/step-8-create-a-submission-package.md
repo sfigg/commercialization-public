@@ -23,7 +23,7 @@ The following image shows the HLK Studio **Package** tab.
 
 ![hlk studio package tab](images/hlk-studio-package-tab.png)
 
-## <span id="To-create-a-submission-package"></span><span id="to_create_a_submission_package"></span><span id="TO_CREATE_A_SUBMISSION_PACKAGE"></span>To create a submission package
+## <span id="To_create_a_submission_package"></span><span id="to_create_a_submission_package"></span><span id="TO_CREATE_A_SUBMISSION_PACKAGE"></span>To create a submission package
 
 
 1.  Select the **Package** tab.

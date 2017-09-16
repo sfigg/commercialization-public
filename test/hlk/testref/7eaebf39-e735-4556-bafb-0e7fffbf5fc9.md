@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: 9d17504d-d85f-444b-bbc4-275c97651a80
 ---
 
-# <span id="p-hlk-test.7eaebf39-e735-4556-bafb-0e7fffbf5fc9"></span>DXGI Frame Statistics
+# <span id="p_hlk_test.7eaebf39-e735-4556-bafb-0e7fffbf5fc9"></span>DXGI Frame Statistics
 
 
 This automated test verifies support for the frame statistics feature of DirectX Graphics Infrastructure (DXGI).

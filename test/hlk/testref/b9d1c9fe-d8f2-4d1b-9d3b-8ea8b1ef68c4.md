@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: 071126df-d9e1-4b86-9073-6fe049ef00e7
 ---
 
-# <span id="p-hlk-test.b9d1c9fe-d8f2-4d1b-9d3b-8ea8b1ef68c4"></span>Win6\_4.MB.GSM.Data.TestPin
+# <span id="p_hlk_test.b9d1c9fe-d8f2-4d1b-9d3b-8ea8b1ef68c4"></span>Win6\_4.MB.GSM.Data.TestPin
 
 
 The test attempts to query pin when radio on/off, enable/disable PIN1 with correct and incorrect pins.

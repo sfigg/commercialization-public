@@ -12,7 +12,7 @@ ms.assetid: 5a0d749e-9de3-437e-b651-b898c215c9a2
 
 The following table lists the members exposed by the **RequirementDescriptionData** type.
 
-## <span id="Public-Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
+## <span id="Public_Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
 
 
 <table>

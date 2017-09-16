@@ -10,7 +10,7 @@ ms.assetid: 35cfead4-830d-41e0-a3fe-53cedd258632
 # PackageManager Fields
 
 
-## <span id="Public-Fields"></span><span id="public_fields"></span><span id="PUBLIC_FIELDS"></span>Public Fields
+## <span id="Public_Fields"></span><span id="public_fields"></span><span id="PUBLIC_FIELDS"></span>Public Fields
 
 
 <table>

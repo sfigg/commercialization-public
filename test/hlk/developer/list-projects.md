@@ -12,7 +12,7 @@ ms.assetid: 9e633249-4e36-4d17-aa28-1274d1298cca
 
 These samples list all projects in a controller and print basic information about each project.
 
-## <span id="C-"></span><span id="c_"></span>**C#**
+## <span id="C_"></span><span id="c_"></span>**C#**
 
 
 ```CSharp

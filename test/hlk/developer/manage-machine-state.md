@@ -12,7 +12,7 @@ ms.assetid: a2750940-fc66-4469-a376-e5bef3800efb
 
 The following code sample shows how to manage machine stated.
 
-## <span id="C-"></span><span id="c_"></span>C#
+## <span id="C_"></span><span id="c_"></span>C#
 
 
 ``` syntax

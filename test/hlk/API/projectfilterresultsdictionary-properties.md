@@ -10,7 +10,7 @@ ms.assetid: 9b917888-0c78-4dbb-a956-725daaabfdfe
 # ProjectFilterResultsDictionary Properties
 
 
-## <span id="Public-Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
+## <span id="Public_Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
 
 
 <table>

@@ -12,7 +12,7 @@ ms.assetid: 45986fe4-075c-4627-901f-0131e877f4d1
 
 The following table lists the members exposed by the **Machine** type.
 
-## <span id="Public-Fields"></span><span id="public_fields"></span><span id="PUBLIC_FIELDS"></span>Public Fields
+## <span id="Public_Fields"></span><span id="public_fields"></span><span id="PUBLIC_FIELDS"></span>Public Fields
 
 
 <table>

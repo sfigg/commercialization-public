@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: ebebcbda-c716-49d0-8292-0f8cde047e58
 ---
 
-# <span id="p-hlk-test.ebbc6fea-b5b8-47e5-9fb3-ac6ed6a023ac"></span>GetTransmissionRate
+# <span id="p_hlk_test.ebbc6fea-b5b8-47e5-9fb3-ac6ed6a023ac"></span>GetTransmissionRate
 
 
 Test IOCTL\_NFP\_GET\_KILO\_BYTES\_PER\_SECOND.

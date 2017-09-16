@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: ee160740-9ee7-471c-8147-d771ebec69af
 ---
 
-# <span id="p-hlk-test.f0ee7dea-aafb-4b97-b6bb-367b46eee49d"></span>MITTI2C PerfWrite
+# <span id="p_hlk_test.f0ee7dea-aafb-4b97-b6bb-367b46eee49d"></span>MITTI2C PerfWrite
 
 
 This test verifies the SPB of controller driver and I2C bus. See https://msdn.microsoft.com/en-us/library/windows/hardware/dn919852(v=vs.85).aspx

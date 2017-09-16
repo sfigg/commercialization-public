@@ -12,7 +12,7 @@ ms.assetid: 93311451-6408-4186-bf5a-5b848a374ead
 
 Using Management Tool PowerShell command, you can generate the aggregated list of test results for the project. You can then analyze the aggregated results in Excel.
 
-## <span id="Aggregate-the-list-of-test-results"></span><span id="aggregate_the_list_of_test_results"></span><span id="AGGREGATE_THE_LIST_OF_TEST_RESULTS"></span>Aggregate the list of test results
+## <span id="Aggregate_the_list_of_test_results"></span><span id="aggregate_the_list_of_test_results"></span><span id="AGGREGATE_THE_LIST_OF_TEST_RESULTS"></span>Aggregate the list of test results
 
 
 There are two ways to aggregate the list of test results for a project.

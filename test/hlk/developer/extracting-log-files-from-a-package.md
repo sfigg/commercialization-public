@@ -12,7 +12,7 @@ ms.assetid: f0ed3889-8880-4e42-9261-6b7bc72a9f53
 
 The following code sample shows you how to extract log files from a package.
 
-## <span id="C-"></span><span id="c_"></span>C#
+## <span id="C_"></span><span id="c_"></span>C#
 
 
 ``` syntax

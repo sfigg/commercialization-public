@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: 121fe154-b7a2-47a2-9aa6-629ba25bcbbc
 ---
 
-# <span id="p-hlk-test.bfcf4a45-33fc-4ece-93ca-97dfacfa2b24"></span>Camera Driver System Test - MediaCapture - ValidateFrameIsoSpeedValues
+# <span id="p_hlk_test.bfcf4a45-33fc-4ece-93ca-97dfacfa2b24"></span>Camera Driver System Test - MediaCapture - ValidateFrameIsoSpeedValues
 
 
 This test validates ISO Speed values exposed by the camera via variable photo sequence capture (3 frame and 10 frame). In each case it will step through the exposed range of values based on the number of frames captured.

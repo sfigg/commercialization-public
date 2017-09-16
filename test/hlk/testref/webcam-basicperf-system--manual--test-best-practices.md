@@ -18,7 +18,7 @@ The instructions in this article are specific to integrated webcams; however, yo
 
  
 
-## <span id="Example-test-environment"></span><span id="example_test_environment"></span><span id="EXAMPLE_TEST_ENVIRONMENT"></span>Example test environment
+## <span id="Example_test_environment"></span><span id="example_test_environment"></span><span id="EXAMPLE_TEST_ENVIRONMENT"></span>Example test environment
 
 
 In this article, a test environment is created that consists of a laptop computer that has a built-in webcam and a small mirror. A built-in webcam is typically located on the top side of the lid of the laptop computer. You can use a flexible arm or tripod to hold the mirror, as shown in the following picture (Figure 1. Example Test Environment). In this example, the computer keyboard is put under a board and the mirror is put close to the webcam. By angling both the computer screen and the mirror and adjusting the distance, you can avoid noise (reflection) from ambient room lighting.

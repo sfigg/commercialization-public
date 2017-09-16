@@ -10,7 +10,7 @@ ms.assetid: 96e78850-3da3-4b31-8825-aa38ca46ba3c
 # RequirementDescriptionData Methods
 
 
-## <span id="Public-Methods"></span><span id="public_methods"></span><span id="PUBLIC_METHODS"></span>Public Methods
+## <span id="Public_Methods"></span><span id="public_methods"></span><span id="PUBLIC_METHODS"></span>Public Methods
 
 
 <table>

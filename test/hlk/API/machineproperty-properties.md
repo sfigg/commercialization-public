@@ -10,7 +10,7 @@ ms.assetid: fa24c274-53b2-47c5-87a0-54d7a6701d49
 # MachineProperty Properties
 
 
-## <span id="Public-Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
+## <span id="Public_Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
 
 
 <table>

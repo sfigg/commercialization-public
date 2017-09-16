@@ -10,7 +10,7 @@ ms.assetid: 9c7cea3c-2b74-48bc-8617-ecf39705d16f
 # PackageProgressInfo Properties
 
 
-## <span id="Public-Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
+## <span id="Public_Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
 
 
 <table>

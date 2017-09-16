@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: 0166773e-eeef-4089-8936-34b1fa91b293
 ---
 
-# <span id="p-hlk-test.5aac52da-a57c-4a12-aaac-de878a62bb08"></span>BitLocker Tpm And Recovery Password tests for AOAC devices with PCR\[7\]
+# <span id="p_hlk_test.5aac52da-a57c-4a12-aaac-de878a62bb08"></span>BitLocker Tpm And Recovery Password tests for AOAC devices with PCR\[7\]
 
 
 All platforms that implement a TPM must ensure invariance of PCRs 7, 11 across power cycles in the absence of changes to the platform’s static core root of trust for measurements (SRTM). Attaching a (non-bootable) USB to the platform or attaching the platform to a docking station should not cause changes to the SRTM.

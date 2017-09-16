@@ -10,7 +10,7 @@ ms.assetid: 04835346-afd5-4444-ac32-3203bfc78a0d
 # Accessibility Features in Windows HLK
 
 
-## <span id="Using-Keyboard-Shortcuts"></span><span id="using_keyboard_shortcuts"></span><span id="USING_KEYBOARD_SHORTCUTS"></span>Using Keyboard Shortcuts
+## <span id="Using_Keyboard_Shortcuts"></span><span id="using_keyboard_shortcuts"></span><span id="USING_KEYBOARD_SHORTCUTS"></span>Using Keyboard Shortcuts
 
 
 This topic provides instructions for accessing Windows Hardware Lab Kit (Windows HLK) Studio commands by using keyboard shortcuts. The following table lists Windows HLK Studio menu items and the keyboard shortcuts that perform the same action as the menu item.

@@ -12,7 +12,7 @@ ms.assetid: 564db28f-e4e5-4b00-92d6-7c70505848de
 
 The following tables list the members exposed by the **Driver** type.
 
-## <span id="Public-Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
+## <span id="Public_Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
 
 
 <table>

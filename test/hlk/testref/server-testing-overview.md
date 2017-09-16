@@ -14,7 +14,7 @@ Windows Server testing is primarily stress-oriented testing that include client/
 
 This section only describes System.Server tests. A complete Windows Server Certification requires several tests that are comprised of System.Client, System.Fundamentals and System.Server tests. Windows Hardware Lab Kit (Windows HLK) Studio detects all features on a server.
 
-## <span id="General-server-stress-testing"></span><span id="general_server_stress_testing"></span><span id="GENERAL_SERVER_STRESS_TESTING"></span>General server stress testing
+## <span id="General_server_stress_testing"></span><span id="general_server_stress_testing"></span><span id="GENERAL_SERVER_STRESS_TESTING"></span>General server stress testing
 
 
 Several kinds of stress tests get run against a server, including basic system functionality, system stress and shutdown/restart tests. *LoadGen* is a test tool that generates load on a system under test (SUT). LoadGen is started on the master client and can use multiple stress client computers to generate network load on the SUT.

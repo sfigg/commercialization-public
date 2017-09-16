@@ -10,7 +10,7 @@ ms.assetid: 8ba8bc31-2478-4737-ad8b-fd75fd0ec49a
 # ProjectException Methods
 
 
-## <span id="Public-Methods"></span><span id="public_methods"></span><span id="PUBLIC_METHODS"></span>Public Methods
+## <span id="Public_Methods"></span><span id="public_methods"></span><span id="PUBLIC_METHODS"></span>Public Methods
 
 
 <table>

@@ -12,7 +12,7 @@ ms.assetid: e272a9df-f8dc-4260-8f70-5146803a73b8
 
 The following tables list the methods exposed by the IFilterTargetData type.
 
-## <span id="Public-Methods"></span><span id="public_methods"></span><span id="PUBLIC_METHODS"></span>Public Methods
+## <span id="Public_Methods"></span><span id="public_methods"></span><span id="PUBLIC_METHODS"></span>Public Methods
 
 
 <table>

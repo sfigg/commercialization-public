@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: 44b82c4a-5467-40a8-9a6f-f3943bca79df
 ---
 
-# <span id="p-hlk-test.8cb4f87c-d2a4-4d90-92a7-edd016ccdeac"></span>LoadGen Server Stress - Run Last - Reset Machine Policies
+# <span id="p_hlk_test.8cb4f87c-d2a4-4d90-92a7-edd016ccdeac"></span>LoadGen Server Stress - Run Last - Reset Machine Policies
 
 
 This automated test resets the machine policies that are used by the test on the test computers in the machine pool.

@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: 412f6b71-5081-4b75-abdf-07f7cf04ceef
 ---
 
-# <span id="p-hlk-test.d1f2fbbe-d5e4-439d-819a-dc100df0e9ba"></span>SCSI Compliance Test 2.0 (LOGO)
+# <span id="p_hlk_test.d1f2fbbe-d5e4-439d-819a-dc100df0e9ba"></span>SCSI Compliance Test 2.0 (LOGO)
 
 
 This automated test verifies that a block storage device (RAID adapter or disk target) that is supported by the operating system fully complies with the Small Computer System Interface (SCSI) standards described in the SCSI-3 Primary Commands-3 (SPC-3) or later, and SCSI Block Commands-2 (SBC-2) or later specifications. To see these specifications, go to [Technical Committee T10 SCSI Storage Interfaces](http://go.microsoft.com/fwlink/?LinkId=237712).

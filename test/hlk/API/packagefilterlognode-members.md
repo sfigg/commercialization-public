@@ -12,7 +12,7 @@ ms.assetid: 9a646669-4db8-4c15-b9e1-571ccf4b311f
 
 The following table lists the members exposed by the **PackageFilterConstraint** type.
 
-## <span id="Public-Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
+## <span id="Public_Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
 
 
 <table>

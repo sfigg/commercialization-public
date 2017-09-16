@@ -10,7 +10,7 @@ ms.assetid: 7c222f3a-b630-4924-9183-3d3b19627c29
 # TestException Methods
 
 
-## <span id="Public-Methods"></span><span id="public_methods"></span><span id="PUBLIC_METHODS"></span>Public Methods
+## <span id="Public_Methods"></span><span id="public_methods"></span><span id="PUBLIC_METHODS"></span>Public Methods
 
 
 <table>

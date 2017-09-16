@@ -10,7 +10,7 @@ ms.assetid: 75448edb-8e21-4779-b40f-d35f34fef4f3
 # DatabaseProjectManager Methods
 
 
-## <span id="Public-Methods"></span><span id="public_methods"></span><span id="PUBLIC_METHODS"></span>Public Methods
+## <span id="Public_Methods"></span><span id="public_methods"></span><span id="PUBLIC_METHODS"></span>Public Methods
 
 
 <table>

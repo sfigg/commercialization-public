@@ -10,7 +10,7 @@ ms.assetid: 3ec5b071-f1cd-4b17-9758-a75c5fb52924
 # Project Methods
 
 
-## <span id="Public-Methods"></span><span id="public_methods"></span><span id="PUBLIC_METHODS"></span>Public Methods
+## <span id="Public_Methods"></span><span id="public_methods"></span><span id="PUBLIC_METHODS"></span>Public Methods
 
 
 <table>

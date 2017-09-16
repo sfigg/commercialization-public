@@ -22,7 +22,7 @@ To troubleshoot issues that occur with Device.Graphic tests, follow these steps:
 
 3.  For a test failure, look for usable information in the Windows HLK Studio test log. If you find usable information, resolve the issue and rerun the test.
 
-### <span id="Specific-information-about-DXVA-testing"></span><span id="specific_information_about_dxva_testing"></span><span id="SPECIFIC_INFORMATION_ABOUT_DXVA_TESTING"></span>Specific information about DXVA testing
+### <span id="Specific_information_about_DXVA_testing"></span><span id="specific_information_about_dxva_testing"></span><span id="SPECIFIC_INFORMATION_ABOUT_DXVA_TESTING"></span>Specific information about DXVA testing
 
 The DXVA tests require the following:
 

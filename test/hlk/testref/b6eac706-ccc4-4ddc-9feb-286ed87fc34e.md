@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: f65318a5-d00e-4a14-a454-03ecff4066a9
 ---
 
-# <span id="p-hlk-test.b6eac706-ccc4-4ddc-9feb-286ed87fc34e"></span>Camera Driver Test - UVC Test 3
+# <span id="p_hlk_test.b6eac706-ccc4-4ddc-9feb-286ed87fc34e"></span>Camera Driver Test - UVC Test 3
 
 
 This test validates the selected camera (hw and driver) is compatible with Windows Media Foundation

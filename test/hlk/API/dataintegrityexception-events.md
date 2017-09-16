@@ -10,7 +10,7 @@ ms.assetid: aad7d6b9-097f-4067-91ea-95376eb81b40
 # DataIntegrityException Events
 
 
-## <span id="Protected-Events"></span><span id="protected_events"></span><span id="PROTECTED_EVENTS"></span>Protected Events
+## <span id="Protected_Events"></span><span id="protected_events"></span><span id="PROTECTED_EVENTS"></span>Protected Events
 
 
 <table>
