@@ -41,28 +41,26 @@ Not all results can be exported. The following list describes the limitatons on 
     >[!NOTE]
     >  Infrastructure components should be installed only once on the target system. You do not need to reinstall these components for each failed job.
 
-     
-
     As an example, saving a failed x64 job titled **Set Render Target** on the root of drive E:\\ exports the job folder and the infrastructure installer using the following folder structure:
 
-    ``` syntax
-    E:.
-    ├───Infrastructure(X64)
-    └───Set_Render_Target(X64)
-        ├───CoreClr
-        ├───MinTe
-        │   └───CoreClr
-        ├───NetFx2.0
-        ├───NetFx4.5
-        ├───verifysupportfiles
-        │   ├───CoreClr
-        │   ├───MinTe
-        │   │   └───CoreClr
-        │   ├───NetFx2.0
-        │   └───NetFx4.5
-        └───[windir]
-            └───system32 
-    ```
+``` syntax
+E:.
+├───Infrastructure(X64)
+└───Set_Render_Target(X64)
+    ├───CoreClr
+    ├───MinTe
+    │   └───CoreClr
+    ├───NetFx2.0
+    ├───NetFx4.5
+    ├───verifysupportfiles
+    │   ├───CoreClr
+    │   ├───MinTe
+    │   │   └───CoreClr
+    │   ├───NetFx2.0
+    │   └───NetFx4.5
+    └───[windir]
+        └───system32 
+```
 
     The exported test package contains several files and subfolders, including the following:
 

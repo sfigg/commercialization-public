@@ -19,9 +19,8 @@ To install the Windows HLK Controller, Studio, Client and/or Manager (Unattended
 
     -   HLKSetup.exe /q
 
->[!NOTE]
->  
-By installing one or all of the kits, you automatically install all prerequisites (Windows HLK Controller, .NET 4.5, SQL), so there is no need to individually install other Windows HLK features.
+    >[!NOTE]
+    >  By installing one or all of the kits, you automatically install all prerequisites (Windows HLK Controller, .NET 4.5, SQL), so there is no need to individually install other Windows HLK features.
 
  
 
@@ -47,9 +46,8 @@ To install/uninstall Windows HLK Controller and HLK Studio (Unattended)
 
     -   \\\\HLKController\\HLKInstall\\Studio\\setup.exe /qn /uninstall
 
->[!NOTE]
->  
-Replace “HLKController” with the name of the computer on which you installed the Controller.
+    >[!NOTE]
+    >  Replace “HLKController” with the name of the computer on which you installed the Controller.
 
  
 
