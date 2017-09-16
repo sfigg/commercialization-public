@@ -72,7 +72,7 @@ In this step, you install Windows HLK software on the designated test server. Th
 
      
 
-    >[!NOTE]
+   >[!NOTE]
 >  If you selected the download option, copy your download to your test server. Run HLKSetup.exe and repeat the installation instructions from **Step 3** for installing to this computer.
 
      

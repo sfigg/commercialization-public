@@ -25,18 +25,12 @@ If you are testing software, be sure to install the product on the test system f
 
     -   **\\\\&lt;ControllerName&gt;\\HLKInstall\\Client\\Setup.cmd**.
 
-        >[!NOTE]
->   Replace *&lt;ControllerName&gt;* with the name of the test server.
-
-         
-
-        >[!NOTE]
->  If the following software is not already installed, it is installed during this step: .NET Framework 4 (Client Profile and Extended), Application Verifier, Windows Driver Test Framework (WDTF), and Windows Performance Toolkit (WPT).
-
-         
-
-        >[!NOTE]
->  If the test system has a Server Core installation, then you should install the HLK client using the silent install option:
+       >[!NOTE]
+       >Replace *&lt;ControllerName&gt;* with the name of the test server.
+       >[!NOTE]
+       >  If the following software is not already installed, it is installed during this step: .NET Framework 4 (Client Profile and Extended), Application Verifier, Windows Driver Test Framework (WDTF), and Windows Performance Toolkit (WPT).
+       >[!NOTE]
+       >  If the test system has a Server Core installation, then you should install the HLK client using the silent install option:
         ``` syntax
         \\<HLKController>\HLKInstall\Client\Setup.cmd /qn ICFAGREE=Yes
         ```
@@ -58,8 +52,7 @@ If you are testing software, be sure to install the product on the test system f
 5.  Click **Finish** to exit the wizard.
 
     >[!TIP]
->  
-    When installation completes, confirm its success by going to the **Control Panel** and choosing **Uninstall a program**. **Windows Hardware Lab Kit Client** should appear in the program list.
+>When installation completes, confirm its success by going to the **Control Panel** and choosing **Uninstall a program**. **Windows Hardware Lab Kit Client** should appear in the program list.
 
      
 
