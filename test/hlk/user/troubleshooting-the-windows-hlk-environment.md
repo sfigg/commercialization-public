@@ -10,7 +10,7 @@ ms.assetid: 2676ecdb-5bb6-4755-866c-a12e76355cb7
 # Troubleshooting the Windows HLK Environment
 
 
-## <span id="Troubleshooting-the-Windows-Hardware-Lab-Kit"></span><span id="troubleshooting_the_windows_hardware_lab_kit"></span><span id="TROUBLESHOOTING_THE_WINDOWS_HARDWARE_LAB_KIT"></span>Troubleshooting the Windows Hardware Lab Kit
+## <span id="Troubleshooting_the_Windows_Hardware_Lab_Kit"></span><span id="troubleshooting_the_windows_hardware_lab_kit"></span><span id="TROUBLESHOOTING_THE_WINDOWS_HARDWARE_LAB_KIT"></span>Troubleshooting the Windows Hardware Lab Kit
 
 
 This topic contains information to help you to troubleshoot Windows Hardware Lab Kit (Windows HLK) issues.

@@ -92,8 +92,6 @@ The following table describes example scenarios for labs of different sizes.
 </tbody>
 </table>
 
- 
-
 >[!NOTE]
 >  
 To use Windows HLK to obtain certification, all tests must be performed from a single controller. You cannot combine results from multiple controllers to obtain certification.

@@ -9,11 +9,8 @@ ms.assetid: 004bb51b-adb9-41b4-8d1a-df662200029b
 
 # Install Microsoft SQL Server
 
-
 >[!WARNING]
 >  HLK does not support SQL Server 2014. You must uninstall SQL Server 2014 prior to installing the HLK.
-
- 
 
 >[!WARNING]
 >  HLK does not support 32-bit versions of SQL Server. Any 32-bit instance must be uninstalled prior to installing the HLK.

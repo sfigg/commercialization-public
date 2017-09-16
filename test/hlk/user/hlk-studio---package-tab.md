@@ -40,7 +40,7 @@ On this tab, you can do the following tasks:
 
 -   [Merge packages](merge-packages.md)
 
-## <span id="related-topics"></span>Related topics
+## <span id="related_topics"></span>Related topics
 
 
 [Getting Started: Create a submission package](..\getstarted\step-8-create-a-submission-package.md)

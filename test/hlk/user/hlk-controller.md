@@ -10,7 +10,7 @@ ms.assetid: 5CC208ED-C613-4881-9BA2-CE8E1F522AFC
 # HLK Controller
 
 
-## <span id="in-this-section"></span>In this section
+## <span id="in_this_section"></span>In this section
 
 
 -   [HLK Controller and Client Organization](hlk-controller-and-client-organization.md)

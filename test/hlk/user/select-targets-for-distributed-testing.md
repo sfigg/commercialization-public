@@ -36,7 +36,7 @@ When there are multiple secondary matched targets on the same system, the target
 
  
 
-## <span id="related-topics"></span>Related topics
+## <span id="related_topics"></span>Related topics
 
 
 [Configuration Page - Distributed and Multi-Device Options](configuration-page---distributed-and-multi-device-options.md)

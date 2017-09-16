@@ -27,7 +27,7 @@ The specific testable device is called the *target*. A device may contain multip
 -   **software device** - test filter drivers, firewalls, and antivirus software that's installed on the test computer.
 
     >[!NOTE]
->  
+    >  
     Some software drivers are associated with a physical device. If you cannot find your driver under **software device**, use the search bar on **device manager** to find the device under which your software driver is associated.
 
      

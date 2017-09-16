@@ -10,7 +10,7 @@ ms.assetid: cfcd4e27-e01e-4dcd-a2ee-323580f157a4
 # Windows HLK Support
 
 
-## <span id="getting-support-on-windows-hlk-test-issues."></span><span id="GETTING_SUPPORT_ON_WINDOWS_HLK_TEST_ISSUES."></span>Getting support on Windows HLK test issues.
+## <span id="getting_support_on_windows_hlk_test_issues."></span><span id="GETTING_SUPPORT_ON_WINDOWS_HLK_TEST_ISSUES."></span>Getting support on Windows HLK test issues.
 
 
 Before you contact Support, make sure you follow the basic troubleshooting steps in [Troubleshooting Windows HLK Test Failures](troubleshooting-windows-hlk-test-failures.md). You must provide information for each test issue as a separate support issue. Make sure the information that you collect is accurate; for example, provide the exact test name as it appears in Windows Hardware Lab Kit (Windows HLK) Studio.

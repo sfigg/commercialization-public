@@ -46,15 +46,15 @@ The individual steps are as follows:
 
 -   [PDEF reference](#pdefref)
 
-## <span id="BKMK-prereq"></span><span id="bkmk_prereq"></span><span id="BKMK_PREREQ"></span>Windows HLK automation tools prerequisites
+## <span id="BKMK-prereq"></span><span id="bkmk-prereq"></span><span id="BKMK_PREREQ"></span>Windows HLK automation tools prerequisites
 
 
-Before you begin testing, make sure that you are familiar with the Windows HLK automation concepts and hardware requirements. See [Windows HLK Prerequisites](p_sxs_hlk.windows_hlk_prerequisites).
+Before you begin testing, make sure that you are familiar with the Windows HLK automation concepts and hardware requirements. See [Windows HLK Prerequisites](p_sxs_hlk.windows_hlk-prerequisites).
 
-## <span id="BKMK_installctrl"></span><span id="bkmk_installctrl"></span><span id="BKMK_INSTALLCTRL"></span>Step 1: Install Controller and supporting programs on the test server
+## <span id="BKMK-installctrl"></span><span id="bkmk-installctrl"></span><span id="BKMK_INSTALLCTRL"></span>Step 1: Install Controller and supporting programs on the test server
 
 
-The test server computer should be installed with an operating system and configured as described in [Windows HLK Prerequisites](p_sxs_hlk.windows_hlk_prerequisites). You can then install the following programs:
+The test server computer should be installed with an operating system and configured as described in [Windows HLK Prerequisites](p_sxs_hlk.windows_hlk-prerequisites). You can then install the following programs:
 
 1.  Windows HLK. For detailed instructions about how to install the Windows HLK, see [Step 1: Install Controller and Studio on the test server](p_sxs_hlk.step_1_install_controller_and_studio_on_the_test_server).
 
@@ -65,7 +65,7 @@ The test server computer should be installed with an operating system and config
 4.  [Office Primary Interop Assemblies for Windows XP](http://www.microsoft.com/download/details.aspx?id=227).
 
     >[!IMPORTANT]
->  
+    >  
     This specific version is required to export Excel.
 
      
@@ -112,7 +112,7 @@ To verify the successful installation of Windows PowerShell 3.0, do the follow
     $DebugPreference = "Continue";
     ```
 
-## <span id="BKMK_installClient"></span><span id="bkmk_installclient"></span><span id="BKMK_INSTALLCLIENT"></span>Step 2: Install HLK Client on the test system(s)
+## <span id="BKMK_installClient"></span><span id="bkmk-installclient"></span><span id="BKMK_INSTALLCLIENT"></span>Step 2: Install HLK Client on the test system(s)
 
 
 To install the HLK client on a test system, follow the instructions found in [Step 2: Install Client on the test system(s)](p_sxs_hlk.step_2__install_client_on_the_test_system_s_).
@@ -125,7 +125,7 @@ To locate the Hardware ID or Device Class of the testing device from the Device 
 
  
 
-## <span id="BKMK_createPDF"></span><span id="bkmk_createpdf"></span><span id="BKMK_CREATEPDF"></span>Step 3: Create a test Project Definition File on the Controller or test server
+## <span id="BKMK_createPDF"></span><span id="bkmk-createpdf"></span><span id="BKMK_CREATEPDF"></span>Step 3: Create a test Project Definition File on the Controller or test server
 
 
 Project Definition File (also referred as PDEF) defines the Target- and Machine-specific part of the testing project. The Test and Result-specific part is defined in the Test Collection File. Together, these files fully describe the project configuration, scope and results.
@@ -462,7 +462,7 @@ The following six parameters specify the type of the targets for the project. Yo
 
 -   **ClassIdList** – specify class ID values in a comma-delimited list. Each class ID value must be in GUID format.
 
-## <span id="BKMK_fulllist"></span><span id="bkmk_fulllist"></span><span id="BKMK_FULLLIST"></span>Step 4: Generate the full list of tests based on the Project Definition File on the Controller or test server
+## <span id="BKMK-fulllist"></span><span id="bkmk-fulllist"></span><span id="BKMK_FULLLIST"></span>Step 4: Generate the full list of tests based on the Project Definition File on the Controller or test server
 
 
 You can use the Management Tool cmdlet, **New-HwCertTestCollection**, to generate the full list of tests that are required for testing targets in the project. An example of how to use the Management Tool cmdlet in the Windows Powershell session, is shown below. (This step is optional.)
@@ -540,7 +540,7 @@ Where the attributes are defined as:
 
 -   **HLKBuildVersion** – version of HLK that was used to generate the test collection
 
-## <span id="BKMK_filter"></span><span id="bkmk_filter"></span><span id="BKMK_FILTER"></span>Step 5: Filter the full list of tests on the Controller
+## <span id="BKMK-filter"></span><span id="bkmk-filter"></span><span id="BKMK_FILTER"></span>Step 5: Filter the full list of tests on the Controller
 
 
 You can use the Management Tool PowerShell cmdlet, **Import-HwCertTestCollectionFromXml**, to filter the full list of tests by a specified attribute value. (This step is optional.) Any attribute of the generated output xml file, as listed in step 4, can be used for filtering the list. The output test collection test records should be arranged in the required order for scheduling. In the following example, the **Basic** test category is used for filtering and sorting the master list. Type the following command in a Windows PowerShell session:
@@ -549,7 +549,7 @@ You can use the Management Tool PowerShell cmdlet, **Import-HwCertTestCollection
 Import-HwCertTestCollectionFromXml -Input C:\Temp\master.xml | ? { $_.ContentLevelSet.Contains("Basic") } | sort –Property GUID | Export-HwCertTestCollectionToXml -Output c:\temp\basic.xml
 ```
 
-## <span id="BKMK_add"></span><span id="bkmk_add"></span><span id="BKMK_ADD"></span>Step 6: Add filtered list of tests to the Project Definition File on the Controller
+## <span id="BKMK-add"></span><span id="bkmk-add"></span><span id="BKMK_ADD"></span>Step 6: Add filtered list of tests to the Project Definition File on the Controller
 
 
 Use any text or xml editor to update the PDEF to add the location for the test collection input xml file and the location for the output test results. An example of the updated PDEF, **C:\\Temp\\DefinitionFile\\device-win8client-x64-auto-basic.xml**, is given below.
@@ -577,7 +577,7 @@ Where the attributes are defined as:
 
 -   TestCollectionStatusLocation – path to the output xml file holding testing results
 
-## <span id="BKMK_run"></span><span id="bkmk_run"></span><span id="BKMK_RUN"></span>Step 7: Run the test project on the Controller
+## <span id="BKMK-run"></span><span id="bkmk-run"></span><span id="BKMK_RUN"></span>Step 7: Run the test project on the Controller
 
 
 Run the following from a command line:
@@ -665,7 +665,7 @@ Detailed steps of this process are as follows:
 3.  In Windows HLK Studio, on the **Package** tab, click **Create Package** and save the package.
 
     >[!NOTE]
->  
+    >  
     The following step must be performed only if the initial test pass was run by having the client machines starting in the Default Pool.
 
      
@@ -690,7 +690,7 @@ Detailed steps of this process are as follows:
 
 8.  Double-click the new project that was created from the second run. On the **Package** tab, click **Merge Package**. In the **Package To Merge** dialog, click **Add** and navigate to the first partial .hlkx package that was created from the first run of HLK Execution Engine. Click **Save** and click **Create Package** in the main window.
 
-## <span id="BKMK_analyze"></span><span id="bkmk_analyze"></span><span id="BKMK_ANALYZE"></span>Step 8: Analyze the test results in Excel
+## <span id="BKMK-analyze"></span><span id="bkmk-analyze"></span><span id="BKMK_ANALYZE"></span>Step 8: Analyze the test results in Excel
 
 
 You can use a Management Tool PowerShell command to generate the aggregated list of test results for the project. You can then analyze the aggregated results in Excel.

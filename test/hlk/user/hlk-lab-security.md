@@ -18,7 +18,7 @@ Before you deploy Windows HLK, you should consider security requirements. There 
 
 -   Running tests in an administrator role
 
-## <span id="Additional-security-precautions"></span><span id="additional_security_precautions"></span><span id="ADDITIONAL_SECURITY_PRECAUTIONS"></span>Additional security precautions
+## <span id="Additional_security_precautions"></span><span id="additional_security_precautions"></span><span id="ADDITIONAL_SECURITY_PRECAUTIONS"></span>Additional security precautions
 
 
 In addition, be aware of the following security precautions and considerations:

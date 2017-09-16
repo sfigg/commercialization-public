@@ -109,8 +109,6 @@ In Windows HLK Studio, review the test status icons on the **Results** tab. The 
 </tbody>
 </table>
 
- 
-
 >[!NOTE]
 >  
 If the status icon suggests that you have a Windows HLK infrastructure problem, see [Troubleshooting the Windows HLK Environment](troubleshooting-the-windows-hlk-environment.md).

@@ -22,7 +22,7 @@ To create an HLK user account for a domain user, as opposed to a user account fo
 
 If you try to create an HLK user account for a domain user while you are logged on as a local user with administrator rights, an error message will appear informing you that the user for whom you are trying to set up permissions does not exist in the domain. The domain referred to in the error message is the local machine and not the domain to which it is connected.
 
-## <span id="Assigning-Roles"></span><span id="assigning_roles"></span><span id="ASSIGNING_ROLES"></span>Assigning Roles
+## <span id="Assigning_Roles"></span><span id="assigning_roles"></span><span id="ASSIGNING_ROLES"></span>Assigning Roles
 
 
 When you create a new user account for an HLK user, you must also assign a datastore role for the user.
@@ -161,7 +161,7 @@ The following is a list of the HLK datastore roles that you can assign a user wh
     2.  In the **Datastore User Properties - New User** dialog box, in the top pane, type the user name of the person you are creating a HLK user account for using the format domain\\username, where domain is the user's domain or workgroup name, and username is the user's user name.
 
         >[!NOTE]
->  
+        >  
         If you are creating multiple user accounts, separate each user with a semicolon.
 
          
@@ -169,7 +169,7 @@ The following is a list of the HLK datastore roles that you can assign a user wh
     3.  In the **Datastore Role** pane, select the **HLK\_DSOwners** check box.
 
         >[!WARNING]
->  
+        >  
         You can assign multiple roles to a new user at the same time. To grant this user administrator privileges, select the **hlk\_DSAdmins** check box also.
 
          
@@ -194,7 +194,7 @@ Complete the following procedure to grant a HLK user permission to run jobs on a
 6.  In the **User List** dialog box, click the user name, and then click **OK**.
 
     >[!WARNING]
->  
+    >  
     If the user name does not appear in the user list, the user does not have a HLK user account. Create the user account, and then give the user permission to run jobs.
 
      

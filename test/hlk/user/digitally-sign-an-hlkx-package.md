@@ -22,7 +22,7 @@ HLK Studio supports three package types – one unsigned, two signed. All offici
 
     -   **Use a certificate file** - To create a digitally signed package using a portable security file. This option will ask you for an X509 certificate file (.cer). If you want to use a password protected .pfx file, you must install the file on your system with the password and select the certificate via the certificate store.
 
-## <span id="View-signability-results"></span><span id="view_signability_results"></span><span id="VIEW_SIGNABILITY_RESULTS"></span>View signability results
+## <span id="View_signability_results"></span><span id="view_signability_results"></span><span id="VIEW_SIGNABILITY_RESULTS"></span>View signability results
 
 
 When you include a driver with your package, HLK checks the signability of the driver. The **Signability** column in the **Drivers Folder** list has a green check mark for passing, or a red X mark for failed. To see signability errors and warnings, right-click the driver package folder and select **Signability Results**.

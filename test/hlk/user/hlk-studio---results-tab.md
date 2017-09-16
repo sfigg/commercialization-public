@@ -28,7 +28,7 @@ Any test that could be schedules as a multi-device test displays by using the mu
 
  
 
-## <span id="Test-status"></span><span id="test_status"></span><span id="TEST_STATUS"></span>Test status
+## <span id="Test_status"></span><span id="test_status"></span><span id="TEST_STATUS"></span>Test status
 
 
 In the **Detailed Test** pane, the **Status** column shows you the status of each test that has run or is running.
@@ -90,8 +90,6 @@ In the **Detailed Test** pane, the **Status** column shows you the status of eac
 </tr>
 </tbody>
 </table>
-
- 
 
 >[!NOTE]
 >  
@@ -186,7 +184,7 @@ The displayed logs can be the following types, depending on the test:
         Application Verifier logs in the form **appverif\_WUDFHost.exe.\*.dat** can be viewed by using an Application Verifier UI client. You can use the Application Verifier tool that is installed on the client machines. Copy logs to the directory **%VERIFIER\_LOG\_PATH%\\AppVerifierLogs** before you run **Appverif.exe - VERIFIER\_LOG\_PATH**. The path variable is already set to **%systemdrive%** on the Windows HLK client. You can also add symbol paths to resolve the symbols in the stack frames where the errors or exceptions have occurred.
 
         >[!NOTE]
->  
+        >  
         The logs are generated in binary format and are architecture-specific. To view the logs, you must use an Application Verifier tool on a client that has the same architecture as the computers on which the logs were generated. See the Application Verifier tool Online Help for more information.
 
          
