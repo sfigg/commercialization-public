@@ -19,12 +19,12 @@ A desktop PC form factor traditionally comes in an upright tower or small deskto
 
 <table>
 <tbody valign="top">
-<tr>
+<tr style="vertical-align:bottom;">
 <td style="width: 20%;">&nbsp;</td>
 <td style="width: 20%;">
 <p>![windows desktop](../images/desktop.png)</p>
 </td>
-<td style="vertical-align:bottom;">
+<td>
 <p>![mini pc desktop](../images/desktop-minipc-quarter-size.png)</p>
 </td>
 </tr>
