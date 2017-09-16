@@ -41,12 +41,10 @@ The following image shows the Studio **Configuration** page.
     The **Status** column changes to **Ready**.
 
     >[!WARNING]
->  You cannot schedule a test against a computer with status equal to **NotReady**.
-
-     
+    >  You cannot schedule a test against a computer with status equal to **NotReady**.
 
     >[!WARNING]
->  A computer cannot be set to **Ready** while in the **Default** pool.
+    >  A computer cannot be set to **Ready** while in the **Default** pool.
 
      
 
