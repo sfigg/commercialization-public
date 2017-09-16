@@ -24,6 +24,7 @@ The **Tests** tab displays all of the tests that are associated with the feature
     -   Tuning and Validation
     -   Manufacturing
     -   Support
+
         >[!NOTE]
         >  In the HLK, test categories replace the level classifications previously used with the HCK. The HLK can be used throughout the product life cycle to test and measure quality at each stage of development.
 
@@ -31,6 +32,7 @@ The **Tests** tab displays all of the tests that are associated with the feature
 -   Status
 -   Test Name
 -   Type (manual, non-distributed, special configuration, multiple machine)
+
     >[!NOTE]
     >  You can hover over the test type icons with your mouse for more information about the test types.
 
@@ -42,8 +44,6 @@ The **Tests** tab displays all of the tests that are associated with the feature
 
 >[!NOTE]
 >  Manual tests that require user input can interrupt the test process. We recommend that you run manual tests separately from automated tests.
-
- 
 
 >[!NOTE]
 >  Some tests require additional input before running. Windows HLK Studio prompts you for more info as needed.
@@ -75,11 +75,8 @@ You can save an existing collection of tests as a playlist by choosing **Save Se
 
 ## <span id="Running_a_test"></span><span id="running_a_test"></span><span id="RUNNING_A_TEST"></span>Running a test
 
-
 >[!NOTE]
 >  If you want to re-flash the device before running the test, set the ForceReflash\_KitsTemplate parameter in HLK Studio to 1 and specifying the location of the ffu to flash to the device using the ImagePath\_KitsTemplate parameter.
-
- 
 
 >[!NOTE]
 >  If using a playlist, be sure to load it before following these steps.

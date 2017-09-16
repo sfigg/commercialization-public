@@ -18,12 +18,8 @@ In this step, you install Windows HLK software on the designated test server. Th
 >[!WARNING]
 >  The Windows Hardware Lab Kit should only be installed on machines that are dedicated solely for testing purposes. Do not install any HLK component on a machine that is outside of a dedicated testing environment.
 
- 
-
 >[!NOTE]
 >  The test server should be preinstalled with Windows Server 2008 R2, Windows Server 2012, Windows Server 2012 R2, or Windows Server 2016.
-
- 
 
 >[!IMPORTANT]
 >  If you are upgrading your HLK environment to a later version, you must first uninstall the previous version of the HCK or HLK software from the test server and any connected test clients.
@@ -72,8 +68,6 @@ In this step, you install Windows HLK software on the designated test server. Th
 
     >[!NOTE]
     >  If Microsoft .NET Framework 4.5 isn't already installed on the computer, follow the prompts to install it. After the computer restarts, you must repeat the installation instructions from **Step 1** for installing to this computer.
-
-     
 
     >[!NOTE]
     >  If you selected the download option, copy your download to your test server. Run HLKSetup.exe and repeat the installation instructions from **Step 3** for installing to this computer.

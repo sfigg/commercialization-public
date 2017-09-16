@@ -43,8 +43,6 @@ The following image shows the Studio **Configuration** page.
     >[!WARNING]
     >  You cannot schedule a test against a computer with status equal to **NotReady**.
 
-     
-
     >[!WARNING]
     >  A computer cannot be set to **Ready** while in the **Default** pool.
 

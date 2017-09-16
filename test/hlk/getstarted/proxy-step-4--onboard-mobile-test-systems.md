@@ -62,8 +62,6 @@ After you install the Windows Hardware Lab Kit (Windows HLK) on the test server,
     >[!NOTE]
     >  The KitsDeviceDetector log can found at **%ProgramFiles(x86)%\\WTTMobile\\Tools\\KitsDeviceDetector.log**
 
-     
-
     >[!NOTE]
     >  If testing with a Health image, include the following parameter:
     ``` syntax
@@ -106,8 +104,6 @@ After you install the Windows Hardware Lab Kit (Windows HLK) on the test server,
     /imageprofile:health
     ```
 
-     
-
     >[!NOTE]
     >  Use %ProgramFiles(x86)%\\WTTMobile\\Tools\\AriesUtil.exe to find the name of the Aries dongles on the network.
     The command **AriesUtil.exe Discover** will return the full list of available devices.
@@ -118,13 +114,9 @@ After you install the Windows Hardware Lab Kit (Windows HLK) on the test server,
 
     Use the command **AriesUtil.exe /?** for a complete list of available commands.
 
-     
-
     >[!NOTE]
     >  The KitsDeviceDetector log can be viewed here:
     -   %ProgramFiles(x86)%\\WTTMobile\\Tools\\KitsDeviceDetector.log
-
-     
 
     >[!NOTE]
     >  For more information on HLK mobile testing tools and utilities, see the following topic:

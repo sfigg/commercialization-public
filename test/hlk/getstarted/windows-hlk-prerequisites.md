@@ -9,11 +9,8 @@ ms.assetid: 2f9fd0f0-f21a-4086-8f7f-36a9698c270d
 
 # Windows HLK Prerequisites
 
-
 >[!WARNING]
 >  The Windows Hardware Lab Kit (HLK) should only be installed on machines that are dedicated solely for testing purposes. Do not install any HLK component on a machine that is outside of a dedicated testing environment.
-
- 
 
 >[!IMPORTANT]
 >  

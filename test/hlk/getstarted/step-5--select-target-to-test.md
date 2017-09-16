@@ -43,8 +43,6 @@ The following image shows the Studio **Selection** tab.
     >[!NOTE]
     >  You must select all of the features of a specific product type for a device to receive certification.
 
-     
-
     >[!NOTE]
     >  If you're testing a Web Services on Devices (WSD) device, there may be a delay before the required WSD targets are listed.
 

@@ -9,16 +9,11 @@ ms.assetid: 2A63206F-2C05-46F8-9458-CF3E9AF33C7E
 
 # HLK Proxy Client Prerequisites
 
-
 >[!NOTE]
 >  A Battery Blank is required for Aries mobile testing in this release. For more information, see [Battery Blank Information Guide](battery-blank-information-guide.md).
 
- 
-
 >[!WARNING]
 >  The Windows Hardware Lab Kit should only be installed on machines that are dedicated solely for testing purposes. Do not install any HLK component on a machine that is outside of a dedicated testing environment.
-
- 
 
 >[!IMPORTANT]
 >  
