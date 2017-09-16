@@ -25,7 +25,7 @@ A desktop PC form factor traditionally comes in an upright tower or small deskto
 <p>![windows desktop](../images/desktop.png)</p>
 </td>
 <td style="vertical-align:bottom;">
-<p>![mini pc desktop](../images/desktop-minipc.png)</p>
+<p>![mini pc desktop](../images/desktop-minipc-quarter-size.png)</p>
 </td>
 </tr>
 <tr>
