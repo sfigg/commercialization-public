@@ -16,7 +16,7 @@ The following image shows the Studio **Results** tab.
 
 ![hlk studio results tab](images/hlk-studio-results-tab.png)
 
-## <span id="Troubleshooting-a-failed-test"></span><span id="troubleshooting_a_failed_test"></span><span id="TROUBLESHOOTING_A_FAILED_TEST"></span>Troubleshooting a failed test
+## <span id="Troubleshooting_a_failed_test"></span><span id="troubleshooting_a_failed_test"></span><span id="TROUBLESHOOTING_A_FAILED_TEST"></span>Troubleshooting a failed test
 
 
 If a test fails, you can expand the test details to review the associated log file.

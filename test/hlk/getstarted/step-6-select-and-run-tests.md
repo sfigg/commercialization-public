@@ -21,14 +21,14 @@ The **Tests** tab displays all of the tests that are associated with the feature
     -   Manufacturing
     -   Support
         >[!NOTE]
->  In the HLK, test categories replace the level classifications previously used with the HCK. The HLK can be used throughout the product life cycle to test and measure quality at each stage of development.
+        >  In the HLK, test categories replace the level classifications previously used with the HCK. The HLK can be used throughout the product life cycle to test and measure quality at each stage of development.
 
          
 -   Status
 -   Test Name
 -   Type (manual, non-distributed, special configuration, multiple machine)
     >[!NOTE]
->  You can hover over the test type icons with your mouse for more information about the test types.
+    >  You can hover over the test type icons with your mouse for more information about the test types.
 
      
 

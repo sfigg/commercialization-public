@@ -24,7 +24,7 @@ Windows HLK Studio detects all features that a device implements. An individuall
 -   **software device** - used to test filter drivers, firewalls, and antivirus software installed on the test system.
 
     >[!NOTE]
->  Some software drivers are associated with a physical device. If you cannot find your driver listed in the **software device** view, use the search bar in the **device manager** view to find the device under which your software driver is associated.
+    >  Some software drivers are associated with a physical device. If you cannot find your driver listed in the **software device** view, use the search bar in the **device manager** view to find the device under which your software driver is associated.
 
      
 
@@ -32,7 +32,7 @@ The following image shows the Studio **Selection** tab.
 
 ![hlk studio selection tab](images/hlk-studio-selection-tab.png)
 
-## <span id="Select-a-target-to-test"></span><span id="select_a_target_to_test"></span><span id="SELECT_A_TARGET_TO_TEST"></span>Select a target to test
+## <span id="Select_a_target_to_test"></span><span id="select_a_target_to_test"></span><span id="SELECT_A_TARGET_TO_TEST"></span>Select a target to test
 
 
 1.  In Windows HLK Studio, choose the **Selection** tab. In the machine pool dropdown, choose the pool that contains the devices that you want to test.
@@ -44,12 +44,12 @@ The following image shows the Studio **Selection** tab.
 3.  In the center pane, check the box next to each target that you want to test.
 
     >[!NOTE]
->  You must select all of the features of a specific product type for a device to receive certification.
+    >  You must select all of the features of a specific product type for a device to receive certification.
 
      
 
     >[!NOTE]
->  If you're testing a Web Services on Devices (WSD) device, there may be a delay before the required WSD targets are listed.
+    >  If you're testing a Web Services on Devices (WSD) device, there may be a delay before the required WSD targets are listed.
 
      
 

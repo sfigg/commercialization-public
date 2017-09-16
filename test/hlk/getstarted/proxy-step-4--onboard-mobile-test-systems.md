@@ -12,7 +12,7 @@ ms.assetid: 3CEA61AA-5625-4F1F-84ED-69ED726BB74F
 
 After you install the Windows Hardware Lab Kit (Windows HLK) on the test server, and the Windows HLK Proxy Client on the Proxy system, you are ready to add mobile test systems to the environment.
 
-## <span id="Known-Issues"></span><span id="known_issues"></span><span id="KNOWN_ISSUES"></span>Known Issues
+## <span id="Known_Issues"></span><span id="known_issues"></span><span id="KNOWN_ISSUES"></span>Known Issues
 
 
 | Issue                                                                               | Workaround         |
@@ -27,7 +27,7 @@ After you install the Windows Hardware Lab Kit (Windows HLK) on the test server,
 1.  Install the USB driver. On the proxy system, navigate to **\\\\&lt;ControllerName&gt;\\HLKInstall\\ProxyClient\\USB Drivers**, where *&lt;ControllerName&gt;* is the name of the test server. Right-click **usbnet.inf**, and then click **Install**.
 
     >[!IMPORTANT]
->  Starting with Windows 10, version 1607, the USB driver is automatically installed. You should manually install the driver only if using an older version of Windows.
+    >  Starting with Windows 10, version 1607, the USB driver is automatically installed. You should manually install the driver only if using an older version of Windows.
 
      
 
@@ -42,7 +42,7 @@ After you install the Windows Hardware Lab Kit (Windows HLK) on the test server,
         ```
 
     >[!NOTE]
->  For more information on HLK mobile testing tools and utilities, see the following topic:
+    >  For more information on HLK mobile testing tools and utilities, see the following topic:
     -   [HLK Mobile Testing Tools and Utilities](..\user\hlk-mobile-testing-tools-and-utilities.md)
 
      
@@ -60,12 +60,12 @@ After you install the Windows Hardware Lab Kit (Windows HLK) on the test server,
     ```
 
     >[!NOTE]
->  The KitsDeviceDetector log can found at **%ProgramFiles(x86)%\\WTTMobile\\Tools\\KitsDeviceDetector.log**
+    >  The KitsDeviceDetector log can found at **%ProgramFiles(x86)%\\WTTMobile\\Tools\\KitsDeviceDetector.log**
 
      
 
     >[!NOTE]
->  If testing with a Health image, include the following parameter:
+    >  If testing with a Health image, include the following parameter:
     ``` syntax
     /imageprofile:health
     ```
@@ -101,7 +101,7 @@ After you install the Windows Hardware Lab Kit (Windows HLK) on the test server,
     ```
 
     >[!NOTE]
->  If testing with a Health image, include the following parameter:
+    >  If testing with a Health image, include the following parameter:
     ``` syntax
     /imageprofile:health
     ```
@@ -109,7 +109,7 @@ After you install the Windows Hardware Lab Kit (Windows HLK) on the test server,
      
 
     >[!NOTE]
->  Use %ProgramFiles(x86)%\\WTTMobile\\Tools\\AriesUtil.exe to find the name of the Aries dongles on the network.
+    >  Use %ProgramFiles(x86)%\\WTTMobile\\Tools\\AriesUtil.exe to find the name of the Aries dongles on the network.
     The command **AriesUtil.exe Discover** will return the full list of available devices.
 
     A firewall exception must be added for AriesUtil.exe prior to use.
@@ -121,13 +121,13 @@ After you install the Windows Hardware Lab Kit (Windows HLK) on the test server,
      
 
     >[!NOTE]
->  The KitsDeviceDetector log can be viewed here:
+    >  The KitsDeviceDetector log can be viewed here:
     -   %ProgramFiles(x86)%\\WTTMobile\\Tools\\KitsDeviceDetector.log
 
      
 
     >[!NOTE]
->  For more information on HLK mobile testing tools and utilities, see the following topic:
+    >  For more information on HLK mobile testing tools and utilities, see the following topic:
     -   [HLK Mobile Testing Tools and Utilities](..\user\hlk-mobile-testing-tools-and-utilities.md)
 
      

@@ -23,7 +23,7 @@ The following image shows the HLK Studio **Package** tab.
 
 ![hlk studio package tab](images/hlk-studio-package-tab.png)
 
-## <span id="To-create-a-submission-package"></span><span id="to_create_a_submission_package"></span><span id="TO_CREATE_A_SUBMISSION_PACKAGE"></span>To create a submission package
+## <span id="To_create_a_submission_package"></span><span id="to_create_a_submission_package"></span><span id="TO_CREATE_A_SUBMISSION_PACKAGE"></span>To create a submission package
 
 
 1.  Select the **Package** tab.
@@ -35,7 +35,7 @@ The following image shows the HLK Studio **Package** tab.
     2.  In the **Driver Properties** dialog box, select the appropriate **Products** and **Locales**, and then click **OK**.
 
         >[!IMPORTANT]
->  The default locale is English only. If you want to add another locale, you must add it now. After the driver package is created, you cannot change the locales.
+        >  The default locale is English only. If you want to add another locale, you must add it now. After the driver package is created, you cannot change the locales.
 
          
 
@@ -48,7 +48,7 @@ The following image shows the HLK Studio **Package** tab.
 6.  From the **Signing Options** dialog box, select one of these options:
 
     >[!IMPORTANT]
->  
+    >  
     All submissions must be digitally signed.
 
     Starting with Windows 10, you must also include an EV (extended validation) code signing certificate.

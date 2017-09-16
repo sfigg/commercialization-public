@@ -12,7 +12,7 @@ ms.assetid: E6A1B76F-FDAB-410F-AC50-A1553308605E
 
 The HLK Proxy Client enables full support for testing on Mobile devices and is the same client used internally by Microsoft for all at-scale phone testing.
 
-## <span id="in-this-section"></span>In this section
+## <span id="in_this_section"></span>In this section
 
 
 -   [Prerequisites](hlk-proxy-client-prerequisites.md)

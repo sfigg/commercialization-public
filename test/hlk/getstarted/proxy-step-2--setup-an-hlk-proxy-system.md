@@ -21,7 +21,7 @@ Follow these steps on the machine you have designated as your Proxy system– th
     -   \\\\&lt;ControllerName&gt;\\HLKInstall\\ProxyClient\\setup.exe
 
     >[!NOTE]
->  Replace &lt;ControllerName&gt; with the name of the test server.
+    >  Replace &lt;ControllerName&gt; with the name of the test server.
 
      
 

@@ -27,7 +27,7 @@ In this step, you install Windows HLK software on the designated test server. Th
 
  
 
-## <span id="To-install-Windows-HLK--do-the-following-"></span><span id="to_install_windows_hlk__do_the_following_"></span><span id="TO_INSTALL_WINDOWS_HLK__DO_THE_FOLLOWING_"></span>To install Windows HLK, do the following:
+## <span id="To_install_Windows_HLK__do_the_following_"></span><span id="to_install_windows_hlk__do_the_following_"></span><span id="TO_INSTALL_WINDOWS_HLK__DO_THE_FOLLOWING_"></span>To install Windows HLK, do the following:
 
 
 ****
@@ -35,14 +35,14 @@ In this step, you install Windows HLK software on the designated test server. Th
 1.  Download [the HLK](https://go.microsoft.com/fwlink/p/?LinkId=733613).
 
     >[!NOTE]
->  If you are downloading directly onto your server, you must disable the IE Enhanced Security Configuration (IE ESC).
+    >  If you are downloading directly onto your server, you must disable the IE Enhanced Security Configuration (IE ESC).
 
      
 
 2.  When prompted, select **Run**.
 
     >[!WARNING]
->  Don't select the **Save** option. The **Save** option only downloads the setup file and not the complete kit.
+    >  Don't select the **Save** option. The **Save** option only downloads the setup file and not the complete kit.
 
      
 
@@ -59,7 +59,7 @@ In this step, you install Windows HLK software on the designated test server. Th
 5.  When the **Join the Customer Experience Improvement Program (CEIP)** screen appears, choose **Yes** or **No**, and then choose **Next**.
 
     >[!NOTE]
->  If your network isn't connected to the Internet, choose **No**.
+    >  If your network isn't connected to the Internet, choose **No**.
 
      
 
@@ -69,6 +69,9 @@ In this step, you install Windows HLK software on the designated test server. Th
 
     >[!NOTE]
     >  If Microsoft .NET Framework 4.5 isn't already installed on the computer, follow the prompts to install it. After the computer restarts, you must repeat the installation instructions from **Step 1** for installing to this computer.
+
+     
+
     >[!NOTE]
     >  If you selected the download option, copy your download to your test server. Run HLKSetup.exe and repeat the installation instructions from **Step 3** for installing to this computer.
 

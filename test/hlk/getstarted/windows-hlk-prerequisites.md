@@ -35,7 +35,7 @@ Before you begin testing, make sure that the test environment meets the necessar
 
 -   **Test system.** Also referred to as a client computer, each test system can have a different configuration that's appropriate for various testing scenarios, including different hardware, operating systems, service packs, and drivers. Each test system can be associated with only one test server. You can configure each test system by running the Windows HLK Client software installer directly from a shared network location on the test server.
 
-## <span id="Deployment-scenarios"></span><span id="deployment_scenarios"></span><span id="DEPLOYMENT_SCENARIOS"></span>Deployment scenarios
+## <span id="Deployment_scenarios"></span><span id="deployment_scenarios"></span><span id="DEPLOYMENT_SCENARIOS"></span>Deployment scenarios
 
 
 There are two deployment scenarios for Windows HLK:

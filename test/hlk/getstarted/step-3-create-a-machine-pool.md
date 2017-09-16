@@ -18,7 +18,7 @@ The following image shows the Studio **Configuration** page.
 
 ![hlk studio configuration page](images/hlk-studio-configuration-page.png)
 
-## <span id="To-create-a-machine-pool"></span><span id="to_create_a_machine_pool"></span><span id="TO_CREATE_A_MACHINE_POOL"></span>To create a machine pool
+## <span id="To_create_a_machine_pool"></span><span id="to_create_a_machine_pool"></span><span id="TO_CREATE_A_MACHINE_POOL"></span>To create a machine pool
 
 
 1.  In Windows HLK Studio, choose **Configuration**.
@@ -30,7 +30,7 @@ The following image shows the Studio **Configuration** page.
 3.  Choose **Default Pool**, and confirm that each test system appears in the main pane on the right. If you've installed the Client on multiple test systems, you can add any of them to the pool.
 
     >[!NOTE]
->  A computer can only be in one pool at a time.
+    >  A computer can only be in one pool at a time.
 
      
 
@@ -42,6 +42,8 @@ The following image shows the Studio **Configuration** page.
 
     >[!WARNING]
     >  You cannot schedule a test against a computer with status equal to **NotReady**.
+
+     
 
     >[!WARNING]
     >  A computer cannot be set to **Ready** while in the **Default** pool.

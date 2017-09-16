@@ -18,24 +18,28 @@ If you are testing software, be sure to install the product on the test system f
 
  
 
-## <span id="To-install-the-Windows-HLK-Client"></span><span id="to_install_the_windows_hlk_client"></span><span id="TO_INSTALL_THE_WINDOWS_HLK_CLIENT"></span>To install the Windows HLK Client
+## <span id="To_install_the_Windows_HLK_Client"></span><span id="to_install_the_windows_hlk_client"></span><span id="TO_INSTALL_THE_WINDOWS_HLK_CLIENT"></span>To install the Windows HLK Client
 
 
 1.  On the test system, browse to the following location:
 
     -   **\\\\&lt;ControllerName&gt;\\HLKInstall\\Client\\Setup.cmd**.
 
-       >[!NOTE]
-       >Replace *&lt;ControllerName&gt;* with the name of the test server.
-       
-       >[!NOTE]
-       >If the following software is not already installed, it is installed during this step: .NET Framework 4 (Client Profile and Extended), Application Verifier, Windows Driver Test Framework (WDTF), and Windows Performance Toolkit (WPT).
-       
-       >[!NOTE]
-       >  If the test system has a Server Core installation, then you should install the HLK client using the silent install option:
-```syntax
-\\<HLKController>\HLKInstall\Client\Setup.cmd /qn ICFAGREE=Yes
-```
+        >[!NOTE]
+        >   Replace *&lt;ControllerName&gt;* with the name of the test server.
+
+         
+
+        >[!NOTE]
+        >  If the following software is not already installed, it is installed during this step: .NET Framework 4 (Client Profile and Extended), Application Verifier, Windows Driver Test Framework (WDTF), and Windows Performance Toolkit (WPT).
+
+         
+
+        >[!NOTE]
+        >  If the test system has a Server Core installation, then you should install the HLK client using the silent install option:
+        ``` syntax
+        \\<HLKController>\HLKInstall\Client\Setup.cmd /qn ICFAGREE=Yes
+        ```
 
          
 
@@ -44,7 +48,7 @@ If you are testing software, be sure to install the product on the test system f
 3.  On the **Internet Connection Firewall Agreement** page, select **Yes I will allow a port to be opened**, and then choose **Next**.
 
     >[!NOTE]
->  
+    >  
     If the **Internet Connection Firewall Agreement** page doesn't appear, either Windows Firewall isn't installed, or another software firewall or hardware firewall is installed on the computer. If another firewall is installed, you must manually open TCP port 1771 to proceed with installation. Refer to the instructions that came with your firewall product to manually open a TCP port. If you continue without opening port 1771, the installation may fail or the Client software might not function properly.
 
      
@@ -54,7 +58,8 @@ If you are testing software, be sure to install the product on the test system f
 5.  Click **Finish** to exit the wizard.
 
     >[!TIP]
->When installation completes, confirm its success by going to the **Control Panel** and choosing **Uninstall a program**. **Windows Hardware Lab Kit Client** should appear in the program list.
+    >  
+    When installation completes, confirm its success by going to the **Control Panel** and choosing **Uninstall a program**. **Windows Hardware Lab Kit Client** should appear in the program list.
 
      
 
