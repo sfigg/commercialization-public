@@ -30,8 +30,6 @@ The following image shows the Studio **Project** tab.
     >[!NOTE]
     >  A project should have a meaningful name that indicates its contents, for example, "Fabrikam Multi-function Device Model Z".
 
-     
-
     When the project name appears on the page, the project is created.
 
 The right pane displays project details. More information is displayed here once you start testing your device. You can check the status of any project by loading it and referring to this pane.

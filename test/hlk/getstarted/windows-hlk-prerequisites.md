@@ -13,14 +13,10 @@ ms.assetid: 2f9fd0f0-f21a-4086-8f7f-36a9698c270d
 >  The Windows Hardware Lab Kit (HLK) should only be installed on machines that are dedicated solely for testing purposes. Do not install any HLK component on a machine that is outside of a dedicated testing environment.
 
 >[!IMPORTANT]
->  
-Controller setup will fail if .NET Framework 4.5 has not previously been installed. Be sure to install .NET Framework 4.5 from the following location prior to controller setup.
-
+>  Controller setup will fail if .NET Framework 4.5 has not previously been installed. Be sure to install .NET Framework 4.5 from the following location prior to controller setup.
 -   <http://www.microsoft.com/en-us/download/details.aspx?id=30653>
-
-32-bit SQL Server installations are not supported. You must uninstall any 32-bit SQL Server installation prior to installing the HLK.
-
-SQL Server 2014 is not supported. You must uninstall any SQL Server 2014 installations prior to installing the HLK.
+>32-bit SQL Server installations are not supported. You must uninstall any 32-bit SQL Server installation prior to installing the HLK.
+>SQL Server 2014 is not supported. You must uninstall any SQL Server 2014 installations prior to installing the HLK.
 
  
 

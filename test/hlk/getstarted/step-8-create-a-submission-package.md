@@ -47,12 +47,8 @@ The following image shows the HLK Studio **Package** tab.
 6.  From the **Signing Options** dialog box, select one of these options:
 
     >[!IMPORTANT]
-    >  
-    All submissions must be digitally signed.
-
-    Starting with Windows 10, you must also include an EV (extended validation) code signing certificate.
-
-     
+    > All submissions must be digitally signed.
+    > Starting with Windows 10, you must also include an EV (extended validation) code signing certificate.
 
     -   **Do not sign** to create an unsigned package, for example, to send to Support for debugging or to later merge with other packages into a single submission package.
 
