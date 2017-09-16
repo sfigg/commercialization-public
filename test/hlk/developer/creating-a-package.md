@@ -28,10 +28,10 @@ The following code samples show how to:
 
 -   [Verify a digital certificate](#bkmk-verifiycertificate)
 
-## <span id="C-"></span><span id="c_"></span>**C#**
+## <span id="C_"></span><span id="c_"></span>**C#**
 
 
-### <span id="BKMK_CS_CreateSubmissionPackage"></span><span id="bkmk_cs_createsubmissionpackage"></span><span id="BKMK_CS_CREATESUBMISSIONPACKAGE"></span>Create a submission package from a project
+### <span id="BKMK_CS_CreateSubmissionPackage"></span><span id="bkmk-cs-createsubmissionpackage"></span><span id="BKMK_CS_CREATESUBMISSIONPACKAGE"></span>Create a submission package from a project
 
 This sample shows how to create a submission package from a project.
 
@@ -175,7 +175,7 @@ namespace Samples
 }
 ```
 
-### <span id="BKMK_CS_SignPackage"></span><span id="bkmk_cs_signpackage"></span><span id="BKMK_CS_SIGNPACKAGE"></span>Sign a package using a digital signature stored in a pfx file
+### <span id="BKMK_CS_SignPackage"></span><span id="bkmk-cs-signpackage"></span><span id="BKMK_CS_SIGNPACKAGE"></span>Sign a package using a digital signature stored in a pfx file
 
 This sample shows how to sign a package using a digital signature stored in a pfx file.
 
@@ -208,7 +208,7 @@ namespace HLK
 ## <span id="PowerShell"></span><span id="powershell"></span><span id="POWERSHELL"></span>**PowerShell**
 
 
-### <span id="BKMK_PS_CreateSubmissionPackage"></span><span id="bkmk_ps_createsubmissionpackage"></span><span id="BKMK_PS_CREATESUBMISSIONPACKAGE"></span>Create a submission package from a project
+### <span id="BKMK_PS_CreateSubmissionPackage"></span><span id="bkmk-ps-createsubmissionpackage"></span><span id="BKMK_PS_CREATESUBMISSIONPACKAGE"></span>Create a submission package from a project
 
 This sample shows how to create a submission package from a project.
 
@@ -338,7 +338,7 @@ $Submission   = [Reflection.Assembly]::LoadFrom($env:WTTSTDIO + "microsoft.windo
        
 ```
 
-### <span id="BKMK_SignPackage"></span><span id="bkmk_signpackage"></span><span id="BKMK_SIGNPACKAGE"></span>Sign a package using a digital signature stored in a pfx file
+### <span id="BKMK_SignPackage"></span><span id="bkmk-signpackage"></span><span id="BKMK_SIGNPACKAGE"></span>Sign a package using a digital signature stored in a pfx file
 
 This sample shows how to sign a package using a digital signature stored in a pfx file.
 
@@ -371,7 +371,7 @@ When signing some (large) packages using PowerShell, you might see an exception 
 
  
 
-### <span id="BKMK_CheckOS"></span><span id="bkmk_checkos"></span><span id="BKMK_CHECKOS"></span>Determine for what operating systems a driver passes the signing checks
+### <span id="BKMK_CheckOS"></span><span id="bkmk-checkos"></span><span id="BKMK_CHECKOS"></span>Determine for what operating systems a driver passes the signing checks
 
 This sample shows how to determine for what operating systems a driver passes the signing checks.
 
@@ -408,7 +408,7 @@ $ObjectModel = [Reflection.Assembly]::LoadFrom($env:WTTSTDIO + "Microsoft.Window
     $Manager.Dispose()
 ```
 
-### <span id="BKMK_VerifiyCertificate"></span><span id="bkmk_verifiycertificate"></span><span id="BKMK_VERIFIYCERTIFICATE"></span>Verify a digital certificate
+### <span id="BKMK_VerifiyCertificate"></span><span id="bkmk-verifiycertificate"></span><span id="BKMK_VERIFIYCERTIFICATE"></span>Verify a digital certificate
 
 This sample shows how to verify a digital certificate.
 

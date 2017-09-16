@@ -17,7 +17,7 @@ This sample shows how to find tests that are missing from a package. The sample 
 -   [PlaylistHelper.cs](#playlisthelper-cs): helper class used for deserialization of downlevel playlists
 -   [PlaylistDL.xsd](#playlistdl-xsd): schema that is used to validate the output playlist XML file. Place this file next to your executable.
 
-## <span id="program-cs"></span><span id="PROGRAM_CS"></span>Program.cs
+## <span id="program_cs"></span><span id="PROGRAM_CS"></span>Program.cs
 
 
 ``` syntax

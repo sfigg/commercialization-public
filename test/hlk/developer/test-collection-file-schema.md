@@ -12,7 +12,7 @@ ms.assetid: 5bccc4a3-08c0-4711-a44b-935c67c12527
 
 The Test Collection File schema is described below.
 
-## <span id="Test-Collection-File-definition"></span><span id="test_collection_file_definition"></span><span id="TEST_COLLECTION_FILE_DEFINITION"></span>Test Collection File definition
+## <span id="Test_Collection_File_definition"></span><span id="test_collection_file_definition"></span><span id="TEST_COLLECTION_FILE_DEFINITION"></span>Test Collection File definition
 
 
 ``` syntax

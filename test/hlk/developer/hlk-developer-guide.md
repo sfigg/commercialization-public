@@ -12,7 +12,7 @@ ms.assetid: 835a278c-2899-4e85-a9cd-5017dc05ccd5
 
 Microsoft provides an API for partners that want to automate testing using the HLK.
 
-## <span id="in-this-section"></span>In this section
+## <span id="in_this_section"></span>In this section
 
 
 -   [HLK API Overview](hlk-api-overview.md)

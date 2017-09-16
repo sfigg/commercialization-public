@@ -24,7 +24,7 @@ These are the types of filters:
 
 -   Auto triage, for troubleshooting the causes of failures. Unlike the errata and contingency filters, the auto triage filters don't change the task results from fail to pass.
 
-## <span id="Applying-Filters"></span><span id="applying_filters"></span><span id="APPLYING_FILTERS"></span>Applying Filters
+## <span id="Applying_Filters"></span><span id="applying_filters"></span><span id="APPLYING_FILTERS"></span>Applying Filters
 
 
 You can apply filters to a project that has failed task results. Before you apply a filter, make sure that you have updated the controller with the latest filters from Windows Quality Online Services (Winqual). If there are matching filters on the controller for a failed task result, the task result is filtered. However, a task result can be partially filtered (that is, the number of filtered failures is less than the total number of failures in the task result).

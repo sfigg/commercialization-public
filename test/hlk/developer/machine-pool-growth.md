@@ -20,7 +20,7 @@ Before running this sample, you must do the following:
 
 3.  Move the second to the same machine pool (using HLK Studio or programmatically) as the first system and run the sample.
 
-## <span id="C-"></span><span id="c_"></span>**C#**
+## <span id="C_"></span><span id="c_"></span>**C#**
 
 
 ``` syntax

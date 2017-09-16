@@ -20,7 +20,7 @@ HLK Studio uses the HLK APIs described here. You cannot run scripts or applicati
 
  
 
-## <span id="related-topics"></span>Related topics
+## <span id="related_topics"></span>Related topics
 
 
 [HLK Studio](..\user\hlk-studio.md)
