@@ -14,7 +14,7 @@ ms.assetid: 2f9fd0f0-f21a-4086-8f7f-36a9698c270d
 
 >[!IMPORTANT]
 >  Controller setup will fail if .NET Framework 4.5 has not previously been installed. Be sure to install .NET Framework 4.5 from the following location prior to controller setup.
--   <http://www.microsoft.com/en-us/download/details.aspx?id=30653>
+>    -   <http://www.microsoft.com/en-us/download/details.aspx?id=30653>
 >
 >  32-bit SQL Server installations are not supported. You must uninstall any 32-bit SQL Server installation prior to installing the HLK.
 >
