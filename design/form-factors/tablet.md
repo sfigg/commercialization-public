@@ -147,4 +147,4 @@ Tablets are a versatile form factor that overlap the smartphone and notebook ind
 </tbody>
 </table>
 
-Research the Windows Mobile options and partner with a registered Windows phone manufacturer to build a device utilizing your brand. For more information, see [Windows 10 Hardware Developer Programs (http://go.microsoft.com/fwlink/?LinkId=618212)](http://go.microsoft.com/fwlink/?LinkId=618212).
+Research the Windows Mobile options and partner with a registered Windows phone manufacturer to build a device utilizing your brand. For more information, see [Windows 10 Hardware Developer Programs (http://go.microsoft.com/fwlink/?LinkId=618212)].
