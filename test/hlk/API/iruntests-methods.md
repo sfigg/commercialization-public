@@ -12,7 +12,7 @@ ms.assetid: ad5138d0-3cbc-430d-b933-66323a5f6339
 
 The following tables list the methods exposed by the **IRunTests** type.
 
-## <span id="Public_Methods"></span><span id="public_methods"></span><span id="PUBLIC_METHODS"></span>Public Methods
+## <span id="Public-Methods"></span><span id="public_methods"></span><span id="PUBLIC_METHODS"></span>Public Methods
 
 
 <table>

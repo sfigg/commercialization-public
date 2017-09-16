@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: ce83822f-7664-438d-985a-e4d429d6872c
 ---
 
-# <span id="p_hlk_test.4e35cd21-a1dd-4cfa-be2d-1a9c9d6a1fef"></span>USB Device Connection S3+S4+Connected Standby
+# <span id="p-hlk-test.4e35cd21-a1dd-4cfa-be2d-1a9c9d6a1fef"></span>USB Device Connection S3+S4+Connected Standby
 
 
 This test verifies that a USB-based device becomes available within 500 milliseconds after the test system exits the S3 or S4 power state or connected standby. The test also confirms that there were not any errant device disconnects during system resume.

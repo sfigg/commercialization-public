@@ -10,7 +10,7 @@ ms.assetid: 236616ba-7831-46ef-b3aa-6bc94dbaea1b
 # Task Methods
 
 
-## <span id="Public_Methods"></span><span id="public_methods"></span><span id="PUBLIC_METHODS"></span>Public Methods
+## <span id="Public-Methods"></span><span id="public_methods"></span><span id="PUBLIC_METHODS"></span>Public Methods
 
 
 <table>

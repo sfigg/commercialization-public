@@ -18,7 +18,7 @@ The following image shows the Studio **Configuration** page.
 
 ![hlk studio configuration page](images/hlk-studio-configuration-page.png)
 
-## <span id="To_create_a_machine_pool"></span><span id="to_create_a_machine_pool"></span><span id="TO_CREATE_A_MACHINE_POOL"></span>To create a machine pool
+## <span id="To-create-a-machine-pool"></span><span id="to_create_a_machine_pool"></span><span id="TO_CREATE_A_MACHINE_POOL"></span>To create a machine pool
 
 
 1.  In Windows HLK Studio, choose **Configuration**.

@@ -10,7 +10,7 @@ ms.assetid: ad93679b-9a58-4aa0-8c75-ff8d534c66e7
 # TargetException Properties
 
 
-## <span id="Public_Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
+## <span id="Public-Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
 
 
 <table>

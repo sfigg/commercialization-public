@@ -12,7 +12,7 @@ ms.assetid: EBDF0686-450D-493C-A021-B37346128A09
 
 Windows 10 has a feature called [Device Guard](http://blogs.windows.com/business/2015/04/21/windows-10-security-innovations-at-rsa-device-guard-windows-hello-and-microsoft-passport/) that gives organizations the ability to lock down devices in a way that provides advanced malware protection against new and unknown malware variants as well as Advanced Persistent Threats (APTs). Device Guard can use hardware technology and virtualization to isolate the Code Integrity (CI) decision-making function from the rest of the Windows operating system. When using virtualization-based security to isolate Code Integrity, the only way kernel memory can become executable is through a Code Integrity verification. This means that kernel memory pages can never be Writable and Executable (W+X) and executable code cannot be directly modified.
 
-## <span id="How_to_build_compatible_drivers"></span><span id="how_to_build_compatible_drivers"></span><span id="HOW_TO_BUILD_COMPATIBLE_DRIVERS"></span>How to build compatible drivers
+## <span id="How-to-build-compatible-drivers"></span><span id="how_to_build_compatible_drivers"></span><span id="HOW_TO_BUILD_COMPATIBLE_DRIVERS"></span>How to build compatible drivers
 
 
 Since memory pages and sections can never be writable and executable, the first step is to ensure a clear separation of data and code and not to attempt to directly modify code pages.

@@ -12,7 +12,7 @@ ms.assetid: cb23be56-209f-4134-8167-597e9de748bc
 
 The following table lists the members exposed by the **TestResult** type.
 
-## <span id="Public_Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
+## <span id="Public-Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
 
 
 <table>

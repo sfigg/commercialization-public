@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: 92a67bf2-8c99-48c0-91c5-cea9075dd332
 ---
 
-# <span id="p_hlk_test.a1fb1fda-1fc1-41de-9626-bf88defeb746"></span>File IO 2 Tests
+# <span id="p-hlk-test.a1fb1fda-1fc1-41de-9626-bf88defeb746"></span>File IO 2 Tests
 
 
 This automated test verifies basic file I/O on the driver stack.

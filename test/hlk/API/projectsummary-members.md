@@ -12,7 +12,7 @@ ms.assetid: f8a9fe91-9d51-4204-9416-7d995f4263f0
 
 The following table lists the members exposed by the **ProjectSummary** type.
 
-## <span id="Public_Constructors"></span><span id="public_constructors"></span><span id="PUBLIC_CONSTRUCTORS"></span>Public Constructors
+## <span id="Public-Constructors"></span><span id="public_constructors"></span><span id="PUBLIC_CONSTRUCTORS"></span>Public Constructors
 
 
 <table>

@@ -87,7 +87,7 @@ Each test that the robot performs is identified by a unique name that remains th
 
 Each test includes a set of interactions. The touch certification tool sends a notification when an interaction starts and finishes. The robot should call **ILogoAutomation::QueryInteraction** between the notifications and then perform an interaction. When all of the required interactions are complete, the touch certification tool will stop the test and send a test completed notification by using **ILogoEventHandler::TestCompleted**. At this point, the robot can move to the next test.
 
-### <span id="BKMK_ErrorHandling"></span><span id="bkmk-errorhandling"></span><span id="BKMK_ERRORHANDLING"></span>Error handling
+### <span id="BKMK_ErrorHandling"></span><span id="bkmk_errorhandling"></span><span id="BKMK_ERRORHANDLING"></span>Error handling
 
 Some of the error cases are as follows:
 
@@ -116,7 +116,7 @@ There are three interfaces that you can use:
 
 -   [Interface: ILogoEventHandler](#bkmk-ilogoevenhandler)
 
-### <span id="BKMK_ILogoAutomation"></span><span id="bkmk-ilogoautomation"></span><span id="BKMK_ILOGOAUTOMATION"></span>Interface: ILogoAutomation
+### <span id="BKMK_ILogoAutomation"></span><span id="bkmk_ilogoautomation"></span><span id="BKMK_ILOGOAUTOMATION"></span>Interface: ILogoAutomation
 
 The ILogoAutomation interface allows you to do the following:
 
@@ -292,7 +292,7 @@ The following table summarizes the custom error codes defined for the ILogoAutom
 
  
 
-### <span id="BKMK_IInteractionObject"></span><span id="bkmk-iinteractionobject"></span><span id="BKMK_IINTERACTIONOBJECT"></span>Interface: IInteractionObject
+### <span id="BKMK_IInteractionObject"></span><span id="bkmk_iinteractionobject"></span><span id="BKMK_IINTERACTIONOBJECT"></span>Interface: IInteractionObject
 
 This object defines the interaction that a test expects in order for it to pass. A robot looks at the interaction name and properties to determine the required movements.
 
@@ -774,7 +774,7 @@ The following table summarizes the interface custom error codes defined for the 
 
  
 
-### <span id="BKMK_ILogoEvenHandler"></span><span id="bkmk-ilogoevenhandler"></span><span id="BKMK_ILOGOEVENHANDLER"></span>Interface: ILogoEventHandler
+### <span id="BKMK_ILogoEvenHandler"></span><span id="bkmk_ilogoevenhandler"></span><span id="BKMK_ILOGOEVENHANDLER"></span>Interface: ILogoEventHandler
 
 This interface specifies how the touch certification tool will notify the robot controller about what is happening in the test run. The robot controller should implement this interface to get callbacks from the touch certification tool for status updates.
 

@@ -10,7 +10,7 @@ ms.assetid: 76e49d9f-5464-42a1-b3af-19fb25abbe49
 # PackageFilter Properties
 
 
-## <span id="Public_Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
+## <span id="Public-Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
 
 
 <table>

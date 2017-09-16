@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: 5523d467-5f5d-4a34-b067-a210cc2fbf18
 ---
 
-# <span id="p_hlk_test.e1fda38c-cad3-4e76-bcf0-29a5cbe064c8"></span>WriteAllMifareCL1k
+# <span id="p-hlk-test.e1fda38c-cad3-4e76-bcf0-29a5cbe064c8"></span>WriteAllMifareCL1k
 
 
 Verify that we can write to every writable block of a Mifare Classic 1k card.

@@ -12,7 +12,7 @@ ms.assetid: 65592f93-5570-4e0d-8253-4376a351609f
 
 The following tables list the members exposed by the **ITargetInformation** type.
 
-## <span id="Public_Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
+## <span id="Public-Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
 
 
 <table>

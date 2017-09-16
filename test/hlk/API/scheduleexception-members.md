@@ -12,7 +12,7 @@ ms.assetid: e8129e2e-e94f-4d85-92f2-a67d2adb9276
 
 The following table lists the members exposed by the **ScheduleException** type.
 
-## <span id="Public_Constructors"></span><span id="public_constructors"></span><span id="PUBLIC_CONSTRUCTORS"></span>Public Constructors
+## <span id="Public-Constructors"></span><span id="public_constructors"></span><span id="PUBLIC_CONSTRUCTORS"></span>Public Constructors
 
 
 <table>

@@ -12,7 +12,7 @@ ms.assetid: 5fe214b5-6609-40c5-9c40-9179b79f6f3a
 
 The following table lists the members exposed by the **ProjectInfo** type.
 
-## <span id="Public_Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
+## <span id="Public-Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
 
 
 <table>

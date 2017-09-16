@@ -12,7 +12,7 @@ ms.assetid: edce58fe-a371-4af3-8a9a-5d3179720398
 
 The Windows operating system has many built-in accessibility features that are useful for individuals who have difficulty typing or using a mouse, are blind or have low vision, or who are deaf or hard-of-hearing. The features are installed during the installation of Windows. For more information about these features, see Help in Windows and the Microsoft Accessibility website.
 
-## <span id="Free_Step-by-Step_Tutorials"></span><span id="free_step-by-step_tutorials"></span><span id="FREE_STEP-BY-STEP_TUTORIALS"></span>Free Step-by-Step Tutorials
+## <span id="Free-Step-by-Step-Tutorials"></span><span id="free_step-by-step_tutorials"></span><span id="FREE_STEP-BY-STEP_TUTORIALS"></span>Free Step-by-Step Tutorials
 
 
 Microsoft offers a series of step-by-step tutorials that provide detailed procedures for adjusting the accessibility options and settings on your computer. This information is presented in a side-by-side format so that you can learn how to use the mouse, the keyboard, or a combination of both.

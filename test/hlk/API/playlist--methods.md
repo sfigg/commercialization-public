@@ -10,7 +10,7 @@ ms.assetid: 6C072712-2A79-48A9-918E-08EFDDFFEDA1
 # Playlist Methods
 
 
-## <span id="Public_Methods"></span><span id="public_methods"></span><span id="PUBLIC_METHODS"></span>Public Methods
+## <span id="Public-Methods"></span><span id="public_methods"></span><span id="PUBLIC_METHODS"></span>Public Methods
 
 
 <table>

@@ -10,7 +10,7 @@ ms.assetid: 7f59e814-92b5-480a-9b6f-5bd033804ed7
 # PackageException Methods
 
 
-## <span id="Public_Methods"></span><span id="public_methods"></span><span id="PUBLIC_METHODS"></span>Public Methods
+## <span id="Public-Methods"></span><span id="public_methods"></span><span id="PUBLIC_METHODS"></span>Public Methods
 
 
 <table>

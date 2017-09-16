@@ -12,7 +12,7 @@ ms.assetid: c428d97e-5b2f-4799-9445-f8e2e086bca9
 
 The following table lists the methods exposed by the [ProductInstance Class](productinstance-class.md).
 
-## <span id="Public_Methods"></span><span id="public_methods"></span><span id="PUBLIC_METHODS"></span>Public Methods
+## <span id="Public-Methods"></span><span id="public_methods"></span><span id="PUBLIC_METHODS"></span>Public Methods
 
 
 <table>

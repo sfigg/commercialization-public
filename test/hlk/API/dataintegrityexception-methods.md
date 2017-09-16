@@ -14,7 +14,7 @@ This class is a base class for all logo manager exceptions.
 
 The following table lists the methods exposed by the **DataIntegrityException** type.
 
-## <span id="Public_Methods"></span><span id="public_methods"></span><span id="PUBLIC_METHODS"></span>Public Methods
+## <span id="Public-Methods"></span><span id="public_methods"></span><span id="PUBLIC_METHODS"></span>Public Methods
 
 
 <table>

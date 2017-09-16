@@ -12,7 +12,7 @@ ms.assetid: f822f9ee-50f2-437b-8e70-485f9e718669
 
 These code samples show how to apply filters to a project and retrieve filters from a project.
 
-## <span id="C_"></span><span id="c_"></span>C#
+## <span id="C-"></span><span id="c_"></span>C#
 
 
 ``` syntax

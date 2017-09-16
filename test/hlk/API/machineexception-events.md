@@ -10,7 +10,7 @@ ms.assetid: 66930603-c1ac-4814-8a77-33519f433a19
 # MachineException Events
 
 
-## <span id="Protected_Events"></span><span id="protected_events"></span><span id="PROTECTED_EVENTS"></span>Protected Events
+## <span id="Protected-Events"></span><span id="protected_events"></span><span id="PROTECTED_EVENTS"></span>Protected Events
 
 
 <table>

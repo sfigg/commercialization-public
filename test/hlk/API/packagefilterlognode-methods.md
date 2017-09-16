@@ -10,7 +10,7 @@ ms.assetid: 15c622d8-ec6a-4483-8b1e-8b9d8ae1d829
 # PackageFilterLogNode Methods
 
 
-## <span id="Public_Methods"></span><span id="public_methods"></span><span id="PUBLIC_METHODS"></span>Public Methods
+## <span id="Public-Methods"></span><span id="public_methods"></span><span id="PUBLIC_METHODS"></span>Public Methods
 
 
 <table>

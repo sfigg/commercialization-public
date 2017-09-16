@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: f15f4823-856d-4ae4-8dd7-0dfcf0b4d91b
 ---
 
-# <span id="p_hlk_test.cf9b3fb6-cbc1-4d88-836d-38a93ecbcc5c"></span>System Audio - MediaCapture API Test - Test Audio Capture
+# <span id="p-hlk-test.cf9b3fb6-cbc1-4d88-836d-38a93ecbcc5c"></span>System Audio - MediaCapture API Test - Test Audio Capture
 
 
 This test validates that the selected system audio capture endpoint is compatible with Windows Media Foundation APIs (MediaCapture)

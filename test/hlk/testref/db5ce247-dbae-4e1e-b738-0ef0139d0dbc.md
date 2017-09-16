@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: 88c1a06b-c11b-452d-813e-7ef6ee399537
 ---
 
-# <span id="p_hlk_test.db5ce247-dbae-4e1e-b738-0ef0139d0dbc"></span>WDDM Pass Through - Lock
+# <span id="p-hlk-test.db5ce247-dbae-4e1e-b738-0ef0139d0dbc"></span>WDDM Pass Through - Lock
 
 
 This automated test verifies that user-mode display drivers correctly handle failures originating from runtime callback functions

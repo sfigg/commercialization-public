@@ -10,7 +10,7 @@ ms.assetid: 9cb2f2d8-38c0-4af1-8b35-4cd20d676af5
 # DatabaseProjectManager Properties
 
 
-## <span id="Public_Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
+## <span id="Public-Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
 
 
 <table>

@@ -12,7 +12,7 @@ ms.assetid: 7c487952-1127-48da-acc6-7c1fdaa67852
 
 The following table lists the members exposed by the **MachineSet** type.
 
-## <span id="Public_Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
+## <span id="Public-Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
 
 
 <table>

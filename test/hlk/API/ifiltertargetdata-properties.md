@@ -12,7 +12,7 @@ ms.assetid: 17686006-4784-42e2-9024-ccdbe02b4734
 
 The following table lists the properties exposed by the IFilterTargetData type.
 
-## <span id="Public_Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
+## <span id="Public-Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
 
 
 <table>

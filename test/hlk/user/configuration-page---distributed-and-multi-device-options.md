@@ -14,7 +14,7 @@ The Configuration Options page lets you configure target selection for distribut
 
 ![hck configuration options](images/hck-winb-configuration-options.png)
 
-## <span id="Distributed_Testing"></span><span id="distributed_testing"></span><span id="DISTRIBUTED_TESTING"></span>Distributed Testing
+## <span id="Distributed-Testing"></span><span id="distributed_testing"></span><span id="DISTRIBUTED_TESTING"></span>Distributed Testing
 
 
 By default, the HCK tries to enable distributed testing by combining similar selected targets. In HCK 2.0, this was accomplished by selecting each target individually and letting the HCK combine the targets together under the same target family. When checked, this feature provides a dialog to allow you to select all similar targets at the same time (rather than one at a time).

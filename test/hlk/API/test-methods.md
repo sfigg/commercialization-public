@@ -10,7 +10,7 @@ ms.assetid: 3c17a066-a385-4af7-9ce2-a1136a9b748e
 # Test Methods
 
 
-## <span id="Public_Methods"></span><span id="public_methods"></span><span id="PUBLIC_METHODS"></span>Public Methods
+## <span id="Public-Methods"></span><span id="public_methods"></span><span id="PUBLIC_METHODS"></span>Public Methods
 
 
 <table>

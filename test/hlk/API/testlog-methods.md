@@ -10,7 +10,7 @@ ms.assetid: 0217ca9c-3bcc-42ca-b04a-5c9ff7872c8a
 # TestLog Methods
 
 
-## <span id="Public_Methods"></span><span id="public_methods"></span><span id="PUBLIC_METHODS"></span>Public Methods
+## <span id="Public-Methods"></span><span id="public_methods"></span><span id="PUBLIC_METHODS"></span>Public Methods
 
 
 <table>

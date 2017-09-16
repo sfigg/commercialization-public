@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: 5b561341-436e-40c1-8291-e827e8ae6ceb
 ---
 
-# <span id="p_hlk_test.0ecca7ad-aada-4c98-b153-c44ef48e00ae"></span>Sensor Camera Driver Controls System Test - FACEDETECTION - Iterate through possible settings while Preview
+# <span id="p-hlk-test.0ecca7ad-aada-4c98-b153-c44ef48e00ae"></span>Sensor Camera Driver Controls System Test - FACEDETECTION - Iterate through possible settings while Preview
 
 
 Test to validate key user scenarios in the camera stack

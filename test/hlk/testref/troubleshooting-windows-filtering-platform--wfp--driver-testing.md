@@ -18,7 +18,7 @@ To troubleshoot issues that occur with Windows Filtering Platform (WFP) driver t
 
 3.  For a test failure, look for usable information in the Windows HLK Studio test log. If you find usable information, resolve the issue and rerun the test.
 
-## <span id="related_topics"></span>Related topics
+## <span id="related-topics"></span>Related topics
 
 
 [Troubleshooting Windows HLK](p_hlk.troubleshooting_windows_hlk)

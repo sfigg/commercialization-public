@@ -16,5 +16,6 @@
 - [Filter.Driver](filter-driver.md)
 - [System.Client](system-client.md)
 - [System.Fundamentals](system-fundamentals.md)
+- [System.Fundamentals.Security](system-fundamentals-security.md)
 - [System.Fundamentals.SystemUSB](system-fundamentals-systemusb.md)
 - [System.Server](system-server.md)

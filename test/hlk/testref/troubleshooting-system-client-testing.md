@@ -26,7 +26,7 @@ To troubleshoot issues that occur with System.Client tests, follow these steps:
 
 5.  If you cannot obtain a successful test result, contact [Windows HLK Support](p_hlk.windows_hlk_support).
 
-## <span id="related_topics"></span>Related topics
+## <span id="related-topics"></span>Related topics
 
 
 [Troubleshooting Windows HLK](p_hlk.troubleshooting_windows_hlk)

@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: e2312247-b001-4ffa-83c4-a4c92f5f47b2
 ---
 
-# <span id="p_hlk_test.59c36ef2-9ec8-494e-bbaa-8fed2dacd376"></span>PrintTicket Test
+# <span id="p-hlk-test.59c36ef2-9ec8-494e-bbaa-8fed2dacd376"></span>PrintTicket Test
 
 
 This automated test exercises the unmanaged **PrintTicket** and **PrintCapabilties** APIs that are part of Windows Vista and newer version of Windows.

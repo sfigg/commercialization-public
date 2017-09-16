@@ -16,7 +16,7 @@ The Configuration page lets you manage your test clients and machine pools. A *m
 
 Every project needs a machine pool. A machine pool can be used for multiple projects, but each project can only be associated with one machine pool.
 
-## <span id="Create_a_machine_pool"></span><span id="create_a_machine_pool"></span><span id="CREATE_A_MACHINE_POOL"></span>Create a machine pool
+## <span id="Create-a-machine-pool"></span><span id="create_a_machine_pool"></span><span id="CREATE_A_MACHINE_POOL"></span>Create a machine pool
 
 
 1.  In Windows HCK Studio, click **Configuration**.

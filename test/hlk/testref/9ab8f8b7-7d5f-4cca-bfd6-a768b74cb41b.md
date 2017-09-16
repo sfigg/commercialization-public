@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: 2683bc26-d7ba-4eeb-ba75-d7e604474b5c
 ---
 
-# <span id="p_hlk_test.9ab8f8b7-7d5f-4cca-bfd6-a768b74cb41b"></span>Indirect Display Pnp Stop-Start Indirect Display Adapter
+# <span id="p-hlk-test.9ab8f8b7-7d5f-4cca-bfd6-a768b74cb41b"></span>Indirect Display Pnp Stop-Start Indirect Display Adapter
 
 
 Test Pnp stop on Indirect Display adapter

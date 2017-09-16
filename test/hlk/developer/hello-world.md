@@ -12,7 +12,7 @@ ms.assetid: c0bcc894-3ae2-4c33-b439-8a2cf0fb7d8d
 
 This sample shows how to create a project, run tests, and create a package for submission.
 
-## <span id="C_"></span><span id="c_"></span>**C#**
+## <span id="C-"></span><span id="c_"></span>**C#**
 
 
 ``` syntax

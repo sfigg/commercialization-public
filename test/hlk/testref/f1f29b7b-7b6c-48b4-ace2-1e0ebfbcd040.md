@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: 1e8ce09d-d557-464a-b5dd-a739804d8491
 ---
 
-# <span id="p_hlk_test.f1f29b7b-7b6c-48b4-ace2-1e0ebfbcd040"></span>NDISTest 6.5 - \[2 Machine\] - OffloadMisc
+# <span id="p-hlk-test.f1f29b7b-7b6c-48b4-ace2-1e0ebfbcd040"></span>NDISTest 6.5 - \[2 Machine\] - OffloadMisc
 
 
 TODO: description

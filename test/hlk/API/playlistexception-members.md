@@ -14,7 +14,7 @@ ms.assetid: 7766C2F6-2F79-4D5C-97B1-0B8E0E698A17
 
 The following tables list the members exposed by the [PlaylistException Class](playlistexception-class.md).
 
-## <span id="Public_Constructors"></span><span id="public_constructors"></span><span id="PUBLIC_CONSTRUCTORS"></span>Public Constructors
+## <span id="Public-Constructors"></span><span id="public_constructors"></span><span id="PUBLIC_CONSTRUCTORS"></span>Public Constructors
 
 
 <table>

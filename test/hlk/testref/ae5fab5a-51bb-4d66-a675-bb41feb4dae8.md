@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: 1dd9c51c-4c6c-4fcc-a9e8-fdb4b03a54b5
 ---
 
-# <span id="p_hlk_test.ae5fab5a-51bb-4d66-a675-bb41feb4dae8"></span>Audio Codec - Lullaby Test - Certification
+# <span id="p-hlk-test.ae5fab5a-51bb-4d66-a675-bb41feb4dae8"></span>Audio Codec - Lullaby Test - Certification
 
 
 This automated test verifies audio during power-state transitions. The test plays audio before, during, and after transitions into sleep and hibernate power states to verify the integrity of the audio pipeline.

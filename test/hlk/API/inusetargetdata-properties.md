@@ -10,7 +10,7 @@ ms.assetid: C0354290-7B15-4375-8007-A332307BA3D8
 # InUseTargetData Properties
 
 
-## <span id="Public_Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
+## <span id="Public-Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
 
 
 <table>

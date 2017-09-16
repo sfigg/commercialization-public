@@ -12,7 +12,7 @@ ms.assetid: ec4a5732-c5b7-4500-a4de-bc38ac53fb41
 
 The following table lists the members exposed by the **TestLog** type.
 
-## <span id="Public_Constructors"></span><span id="public_constructors"></span><span id="PUBLIC_CONSTRUCTORS"></span>Public Constructors
+## <span id="Public-Constructors"></span><span id="public_constructors"></span><span id="PUBLIC_CONSTRUCTORS"></span>Public Constructors
 
 
 <table>

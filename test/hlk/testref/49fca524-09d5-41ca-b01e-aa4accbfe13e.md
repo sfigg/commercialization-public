@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: fe9dce46-57fd-40cb-b1cf-513a15a2551a
 ---
 
-# <span id="p_hlk_test.49fca524-09d5-41ca-b01e-aa4accbfe13e"></span>Sensor Camera Driver Controls System Test - FLASHMODE - Check Default
+# <span id="p-hlk-test.49fca524-09d5-41ca-b01e-aa4accbfe13e"></span>Sensor Camera Driver Controls System Test - FLASHMODE - Check Default
 
 
 Test to validate key user scenarios in the camera stack

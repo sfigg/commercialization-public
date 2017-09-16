@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: ae8bd5e1-60e3-4ee0-aba8-e8128c622d2f
 ---
 
-# <span id="p_hlk_test.cfefca57-f1c4-4a82-91d3-bfdca295d97f"></span>Camera Driver Controls System Test - FLASHMODE - Check Default
+# <span id="p-hlk-test.cfefca57-f1c4-4a82-91d3-bfdca295d97f"></span>Camera Driver Controls System Test - FLASHMODE - Check Default
 
 
 These set of tests validate cameras functionality if the driver supports KSPROPERTY\_CAMERACONTROL\_EXTENDED\_\*. If the driver does not support KSPROPERTY\_CAMERACONTROL\_EXTENDED\_\*, skip this test. This is an optional control.

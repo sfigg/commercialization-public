@@ -10,7 +10,7 @@ ms.assetid: 151F0121-D813-42BD-97A5-DAB23AD84155
 # IRunExport Members
 
 
-## <span id="Public_Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
+## <span id="Public-Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
 
 
 <table>

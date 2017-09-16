@@ -20,7 +20,7 @@ The following image shows the Studio **Project** tab.
 
 ![hlk studio project tab](images/hlk-studio-project-tab.png)
 
-## <span id="To_create_a_project"></span><span id="to_create_a_project"></span><span id="TO_CREATE_A_PROJECT"></span>To create a project
+## <span id="To-create-a-project"></span><span id="to_create_a_project"></span><span id="TO_CREATE_A_PROJECT"></span>To create a project
 
 
 1.  In Windows HLK Studio, choose the **Project** tab, and then choose **Create project**.

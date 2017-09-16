@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: cea384f9-3989-4d77-900c-900735d6d4b1
 ---
 
-# <span id="p_hlk_test.9ebb8466-c491-44cf-8dbc-7c5b8bebbef3"></span>Test CreateSwapChainForHwnd (WoW64)
+# <span id="p-hlk-test.9ebb8466-c491-44cf-8dbc-7c5b8bebbef3"></span>Test CreateSwapChainForHwnd (WoW64)
 
 
 This test case verifies that content rendered by a swap chain created with CreateSwapChainForHwnd is correct.

@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: cd632c5a-1b13-413e-9995-ce35da94101d
 ---
 
-# <span id="p_hlk_test.f39efee9-bdb3-4cba-ade0-9fe39aa26803"></span>Camera Driver Test - Preview (Sample Grabber), Capture JPEGXR image from each image Stream type
+# <span id="p-hlk-test.f39efee9-bdb3-4cba-ade0-9fe39aa26803"></span>Camera Driver Test - Preview (Sample Grabber), Capture JPEGXR image from each image Stream type
 
 
 This set of tests validates cameras functionality with the MF and IMFCaptureEngine.

@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: 747c4eca-54b0-4b88-bdf6-4c2bf5526648
 ---
 
-# <span id="p_hlk_test.92bf534e-aa48-4aeb-b3cd-e46fb7cc7d80"></span>DF - Fuzz sub-opens test (Reliability)
+# <span id="p-hlk-test.92bf534e-aa48-4aeb-b3cd-e46fb7cc7d80"></span>DF - Fuzz sub-opens test (Reliability)
 
 
 During a *Relative Open Test*, (also known as a *Sub-open Test*) the Fuzz test attempts to open objects in the device's [namespace](https://msdn.microsoft.com/library/windows/hardware/ff542068).

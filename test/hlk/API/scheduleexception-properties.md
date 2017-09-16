@@ -10,7 +10,7 @@ ms.assetid: 33c44dd3-a3ff-47a6-a0d4-a7712eb72b0e
 # ScheduleException Properties
 
 
-## <span id="Public_Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
+## <span id="Public-Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
 
 
 <table>

@@ -10,7 +10,7 @@ ms.assetid: 692BFC5A-82BF-4719-9029-7C05D36D1423
 # PlaylistInfo Members
 
 
-## <span id="Public_Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
+## <span id="Public-Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
 
 
 <table>

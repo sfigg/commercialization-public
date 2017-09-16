@@ -8,7 +8,7 @@ Search.SourceType: Video
 ms.assetid: 31e7f2eb-4991-4d66-b797-18039ab8c5c1
 ---
 
-# <span id="p_hlk_test.df0dcae8-1cba-4a6e-bf76-ada494830aa1"></span>Camera Sensor Quality Test - Evaluate Temporal SNR at 640x480 and 20 lux
+# <span id="p-hlk-test.df0dcae8-1cba-4a6e-bf76-ada494830aa1"></span>Camera Sensor Quality Test - Evaluate Temporal SNR at 640x480 and 20 lux
 
 
 The Camera Sensor Quality test is an optional test for systems that include one or more built in cameras (for example: phones, laptops, tablets, all-in-one personal computers). This test verifies that the system is able to deliver a high quality real-time capture experience.

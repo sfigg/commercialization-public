@@ -12,7 +12,7 @@ ms.assetid: 27db1630-98e7-4d77-aec1-65e894c2056e
 
 This topic describes the classes that you use to work with projects.
 
-## <span id="ProjectManager_Class"></span><span id="projectmanager_class"></span><span id="PROJECTMANAGER_CLASS"></span>ProjectManager Class
+## <span id="ProjectManager-Class"></span><span id="projectmanager_class"></span><span id="PROJECTMANAGER_CLASS"></span>ProjectManager Class
 
 
 The **ProjectManager** class represents a connection to a server and provides access to all data. Other classes (for example, filters, instances of the **MachinePool** class, and instances of the **Requirement** class) can be accessed or enumerated through **ProjectManager**.

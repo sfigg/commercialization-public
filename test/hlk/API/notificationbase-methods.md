@@ -10,7 +10,7 @@ ms.assetid: bb782974-047a-4fb0-9b58-5ae2eec9de7b
 # NotificationBase Methods
 
 
-## <span id="Public_Methods"></span><span id="public_methods"></span><span id="PUBLIC_METHODS"></span>Public Methods
+## <span id="Public-Methods"></span><span id="public_methods"></span><span id="PUBLIC_METHODS"></span>Public Methods
 
 
 <table>

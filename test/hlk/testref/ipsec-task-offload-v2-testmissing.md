@@ -112,7 +112,7 @@ The "IPsec Offloadv2 logo verification (Win7)" job tests to verify the support f
 
 As part of the logo test a service called ScenarioService gets installed on the clients. Details about this can be found in [IPsec Task Offload v2 Manual Test](ipsec-task-offload-v2-manual-test.md).
 
-## <span id="Anatomy_of_a_Test_Case"></span><span id="anatomy_of_a_test_case"></span><span id="ANATOMY_OF_A_TEST_CASE"></span>Anatomy of a Test Case
+## <span id="Anatomy-of-a-Test-Case"></span><span id="anatomy_of_a_test_case"></span><span id="ANATOMY_OF_A_TEST_CASE"></span>Anatomy of a Test Case
 
 
 The test script (Tov2Logo.xml in %SystemDrive%\\iketest\\suites) contains the details of all test cases. ScenarioService uses this XML file for running all tests. A test XML file is broadly divided into the following XML tags:

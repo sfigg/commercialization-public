@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: 8b41a21e-8732-442e-81a8-1722d2532b27
 ---
 
-# <span id="p_hlk_test.a46ffce1-ef3b-42fb-bebf-2aed795f69e6"></span>UCSI commands - Get PDOs, partner Sink Capabilities
+# <span id="p-hlk-test.a46ffce1-ef3b-42fb-bebf-2aed795f69e6"></span>UCSI commands - Get PDOs, partner Sink Capabilities
 
 
 Verifies that the system supports the UCSI Get PDOs command, for retrieving the partner's Sink Capabilities.

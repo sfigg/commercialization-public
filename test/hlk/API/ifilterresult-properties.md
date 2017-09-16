@@ -12,7 +12,7 @@ ms.assetid: 551e6fd8-7f12-4af5-a6d8-1fceb1ca85b5
 
 Insert introduction here.
 
-## <span id="Public_Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
+## <span id="Public-Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
 
 
 <table>

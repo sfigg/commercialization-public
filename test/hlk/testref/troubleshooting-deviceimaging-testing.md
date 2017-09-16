@@ -26,7 +26,7 @@ To troubleshoot issues that occur with Device.imaging tests, follow these steps:
 
 4.  For a test failure, look for usable information in the Windows HLK Studio test log. If you find usable information, resolve the issue and rerun the test.
 
-### <span id="Specific_printer_test_information"></span><span id="specific_printer_test_information"></span><span id="SPECIFIC_PRINTER_TEST_INFORMATION"></span>Specific printer test information
+### <span id="Specific-printer-test-information"></span><span id="specific_printer_test_information"></span><span id="SPECIFIC_PRINTER_TEST_INFORMATION"></span>Specific printer test information
 
 When testing your printer over TCP/IP, if the Device.Imaging.Printer.Base feature is not being detected, you may need to go to the **Device Manager** view under **Selection** and manually select all of the devnodes that correspond to the print device.
 

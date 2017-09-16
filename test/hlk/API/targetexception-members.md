@@ -12,7 +12,7 @@ ms.assetid: 34e67360-4562-4240-a3b1-8de9ecd87390
 
 The following table lists the members exposed by the **ProjectManagerException** type.
 
-## <span id="Public_Constructors"></span><span id="public_constructors"></span><span id="PUBLIC_CONSTRUCTORS"></span>Public Constructors
+## <span id="Public-Constructors"></span><span id="public_constructors"></span><span id="PUBLIC_CONSTRUCTORS"></span>Public Constructors
 
 
 <table>

@@ -12,7 +12,7 @@ ms.assetid: 30489769-d8e7-4714-98d0-c322199141be
 
 \[This content is not available in this preliminary release.\]
 
-## <span id="Public_Methods"></span><span id="public_methods"></span><span id="PUBLIC_METHODS"></span>Public Methods
+## <span id="Public-Methods"></span><span id="public_methods"></span><span id="PUBLIC_METHODS"></span>Public Methods
 
 
 <table>

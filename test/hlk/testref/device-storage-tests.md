@@ -74,6 +74,7 @@
 - [SES Test (LOGO)](0641f37b-e994-4c02-a61c-82ef2c54e83f.md)
 - [Space creation on enclosure drives (LOGO)](fa0d4f0a-82d9-4d81-ae00-102bf4a61a1b.md)
 - [Storage Firmware Update](ccac8651-e523-48b2-8f8d-4ead94a8fb61.md)
+- [Storage HBA Firmware Update](696520df-d0ad-4792-81e2-8b98c3fe5beb.md)
 - [Storage Imports Test (LOGO)](c75585b2-a3e6-4db0-8847-f6023171d4b9.md)
 - [Storage Performance USB3](539bca7e-c42e-4ae8-980f-ca98e34a99ab.md)
 - [Storage Query Property (LOGO)](a2092b32-1f8c-46d8-bae1-767efbb2b142.md)

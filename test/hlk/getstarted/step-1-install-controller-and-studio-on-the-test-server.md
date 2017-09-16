@@ -27,7 +27,7 @@ In this step, you install Windows HLK software on the designated test server. Th
 
  
 
-## <span id="To_install_Windows_HLK__do_the_following_"></span><span id="to_install_windows_hlk__do_the_following_"></span><span id="TO_INSTALL_WINDOWS_HLK__DO_THE_FOLLOWING_"></span>To install Windows HLK, do the following:
+## <span id="To-install-Windows-HLK--do-the-following-"></span><span id="to_install_windows_hlk__do_the_following_"></span><span id="TO_INSTALL_WINDOWS_HLK__DO_THE_FOLLOWING_"></span>To install Windows HLK, do the following:
 
 
 ****

@@ -23,7 +23,7 @@ From the computer on which you installed the debugger, follow these steps:
 
 3.  Read the topic **Kernel-Mode Setup**.
 
-## <span id="Configure_HLK_Crashdump_collection_settings"></span><span id="configure_hlk_crashdump_collection_settings"></span><span id="CONFIGURE_HLK_CRASHDUMP_COLLECTION_SETTINGS"></span>Configure HLK Crashdump collection settings
+## <span id="Configure-HLK-Crashdump-collection-settings"></span><span id="configure_hlk_crashdump_collection_settings"></span><span id="CONFIGURE_HLK_CRASHDUMP_COLLECTION_SETTINGS"></span>Configure HLK Crashdump collection settings
 
 
 You can also configure the kernel crash dump collection setting in HLK Studio. This setting will force a setting of the kernel dump type on the client system when a crash occurs. When a crashed occurs, HLK will copy back the dump file and associate it with the underlying test.

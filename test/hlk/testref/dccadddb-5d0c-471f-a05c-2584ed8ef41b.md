@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: b7567c09-e039-41a9-818d-feb98f6b0451
 ---
 
-# <span id="p_hlk_test.dccadddb-5d0c-471f-a05c-2584ed8ef41b"></span>DE OOBE\_EOW Sequence Tests
+# <span id="p-hlk-test.dccadddb-5d0c-471f-a05c-2584ed8ef41b"></span>DE OOBE\_EOW Sequence Tests
 
 
 This test verifies that Encryption On Write (EOW) of the volumes is started after completion of OOBE. It also tests if Device Encryption is not blocked by the OEM by setting registry key PreventDeviceEncryption.

@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: ec2d9ccf-81b1-4e44-b39c-f6802cdf671e
 ---
 
-# <span id="p_hlk_test.6bcfad0f-4ef2-4efe-ad1f-ba1778c1cd1c"></span>CoreSys VP9 Quality Test 53
+# <span id="p-hlk-test.6bcfad0f-4ef2-4efe-ad1f-ba1778c1cd1c"></span>CoreSys VP9 Quality Test 53
 
 
 VP9 Quality test for 720x480i content

@@ -10,7 +10,7 @@ ms.assetid: 26fce7d6-7395-4b15-ab26-71f08b7415f5
 # PackageWriter.Dispose Method
 
 
-## <span id="Overload_List"></span><span id="overload_list"></span><span id="OVERLOAD_LIST"></span>Overload List
+## <span id="Overload-List"></span><span id="overload_list"></span><span id="OVERLOAD_LIST"></span>Overload List
 
 
 <table>

@@ -36,7 +36,7 @@ To troubleshoot issues that occur with Device.Storage tests, follow these steps:
 
 6.  To debug more, rerun the test manually from the Command Prompt (cmd), while setting the verbosity level to 4. This allows the test to log more information, such as data buffer, CDB information, and sense code. Documentation for each test contains details about the binary that is related to a particular test along with the binary location.
 
-## <span id="Optical_Storage_Device"></span><span id="optical_storage_device"></span><span id="OPTICAL_STORAGE_DEVICE"></span>Optical Storage Device
+## <span id="Optical-Storage-Device"></span><span id="optical_storage_device"></span><span id="OPTICAL_STORAGE_DEVICE"></span>Optical Storage Device
 
 
 These are common issues with optical disk drive tests:

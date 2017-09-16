@@ -12,7 +12,7 @@ ms.assetid: cad5855a-9366-423d-aa84-11597b3b737d
 
 The purpose of this document is to provide a comprehensive view of the MBN WHLK requirements, operations and expectations, by showing the summary log results of a successful test run.
 
-## <span id="How_to_read_MBN_Logs"></span><span id="how_to_read_mbn_logs"></span><span id="HOW_TO_READ_MBN_LOGS"></span>How to read MBN Logs
+## <span id="How-to-read-MBN-Logs"></span><span id="how_to_read_mbn_logs"></span><span id="HOW_TO_READ_MBN_LOGS"></span>How to read MBN Logs
 
 
 The MBN operations are listed in chronological order. The beginning of an operation will be shown in black and the successful completion of an operation will be shown with a leading "PASS:". If an operation has sub operations, the entries will be indented and be between the beginning and end operation. If the operation fails in test, it will be shown with a leading "FAIL:".

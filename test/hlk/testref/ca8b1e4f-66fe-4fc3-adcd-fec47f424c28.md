@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: dc5de10c-4aee-4a58-b19d-363ee7c930cc
 ---
 
-# <span id="p_hlk_test.ca8b1e4f-66fe-4fc3-adcd-fec47f424c28"></span>CoreSys MJPEG Decoder - HMFT Playback test 150
+# <span id="p-hlk-test.ca8b1e4f-66fe-4fc3-adcd-fec47f424c28"></span>CoreSys MJPEG Decoder - HMFT Playback test 150
 
 
 >[!IMPORTANT]

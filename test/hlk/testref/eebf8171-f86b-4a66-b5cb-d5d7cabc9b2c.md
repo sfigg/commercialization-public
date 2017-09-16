@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: d11b7b2c-7598-4e7e-91fd-40c728979773
 ---
 
-# <span id="p_hlk_test.eebf8171-f86b-4a66-b5cb-d5d7cabc9b2c"></span>WGF11 Geometry Shader
+# <span id="p-hlk-test.eebf8171-f86b-4a66-b5cb-d5d7cabc9b2c"></span>WGF11 Geometry Shader
 
 
 This automated test verifies verifies D3D graphics driver/hardware conformance for geometry shader features that are not specifically tested elsewhere.

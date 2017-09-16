@@ -16,7 +16,7 @@ This article assumes that the reader is familiar with touch screens, understands
 
 This information applies to the Windows 8 operating system.
 
-## <span id="Windows_Hardware_Lab_Kit_requirements"></span><span id="windows_hardware_lab_kit_requirements"></span><span id="WINDOWS_HARDWARE_LAB_KIT_REQUIREMENTS"></span>Windows Hardware Lab Kit requirements
+## <span id="Windows-Hardware-Lab-Kit-requirements"></span><span id="windows_hardware_lab_kit_requirements"></span><span id="WINDOWS_HARDWARE_LAB_KIT_REQUIREMENTS"></span>Windows Hardware Lab Kit requirements
 
 
 You must install at least a minimal configuration of the Windows Hardware Lab Kit (Windows HLK). Windows HLK provides you the tools, processes, and tests to create and upload submission packages to certify devices and systems. The Windows HLKeliminates the need for external tools such as the WLK Log Viewer. This document assumes that you are familiar with the Windows HLK.

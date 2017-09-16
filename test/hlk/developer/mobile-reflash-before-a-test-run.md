@@ -17,7 +17,7 @@ This sample shows how to flash an OS image onto a mobile device as part of a tes
 
  
 
-## <span id="C_"></span><span id="c_"></span>**C#**
+## <span id="C-"></span><span id="c_"></span>**C#**
 
 
 ``` syntax

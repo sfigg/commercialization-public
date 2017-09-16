@@ -55,7 +55,7 @@ To guarantee that none of the tests are missed, we recommend that you create a p
 
 6.  Click **Create Package**.
 
-## <span id="Merging_HLK_and_HCK_Packages"></span><span id="merging_hlk_and_hck_packages"></span><span id="MERGING_HLK_AND_HCK_PACKAGES"></span>Merging HLK and HCK Packages
+## <span id="Merging-HLK-and-HCK-Packages"></span><span id="merging_hlk_and_hck_packages"></span><span id="MERGING_HLK_AND_HCK_PACKAGES"></span>Merging HLK and HCK Packages
 
 
 HLK and HCK packages can be merged from the HLK OM or HLK Studio. When merging, ensure that the HLK package is opened first, and the HCK package(s) are merged into the HLK package.

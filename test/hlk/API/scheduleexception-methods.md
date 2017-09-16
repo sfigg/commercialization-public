@@ -10,7 +10,7 @@ ms.assetid: 2a372a0f-c0d7-4590-b20f-d60cdc5b2b46
 # ScheduleException Methods
 
 
-## <span id="Public_Methods"></span><span id="public_methods"></span><span id="PUBLIC_METHODS"></span>Public Methods
+## <span id="Public-Methods"></span><span id="public_methods"></span><span id="PUBLIC_METHODS"></span>Public Methods
 
 
 <table>

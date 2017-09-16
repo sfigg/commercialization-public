@@ -12,7 +12,7 @@ ms.assetid: 8980445B-2F10-4E31-9915-71909649A277
 
 The following table lists the members exposed by the [PackageDBReaderException Class](packagedbreaderexception-class.md).
 
-## <span id="Public_Constructors"></span><span id="public_constructors"></span><span id="PUBLIC_CONSTRUCTORS"></span>Public Constructors
+## <span id="Public-Constructors"></span><span id="public_constructors"></span><span id="PUBLIC_CONSTRUCTORS"></span>Public Constructors
 
 
 <table>

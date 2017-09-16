@@ -10,7 +10,7 @@ ms.assetid: b24ae291-b898-46ae-b54b-ab7bc6da2d3c
 # Feature Methods
 
 
-## <span id="Public_Methods"></span><span id="public_methods"></span><span id="PUBLIC_METHODS"></span>Public Methods
+## <span id="Public-Methods"></span><span id="public_methods"></span><span id="PUBLIC_METHODS"></span>Public Methods
 
 
 <table>

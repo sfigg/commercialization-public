@@ -10,7 +10,7 @@ ms.assetid: 90f4912d-78be-4465-8ea0-de3d14512638
 # Add driver and supplemental content to your package
 
 
-## <span id="Adding_a_driver_package"></span><span id="adding_a_driver_package"></span><span id="ADDING_A_DRIVER_PACKAGE"></span>Adding a driver package
+## <span id="Adding-a-driver-package"></span><span id="adding_a_driver_package"></span><span id="ADDING_A_DRIVER_PACKAGE"></span>Adding a driver package
 
 
 >[!NOTE]

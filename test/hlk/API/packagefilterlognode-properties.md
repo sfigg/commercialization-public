@@ -10,7 +10,7 @@ ms.assetid: 7ef36371-4d79-4d07-b025-d9cf7fa26b6d
 # PackageFilterLogNode Properties
 
 
-## <span id="Public_Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
+## <span id="Public-Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
 
 
 <table>

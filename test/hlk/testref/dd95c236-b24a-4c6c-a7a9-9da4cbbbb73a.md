@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: 30f277da-d528-4cde-96f5-96be6cd8fd1a
 ---
 
-# <span id="p_hlk_test.dd95c236-b24a-4c6c-a7a9-9da4cbbbb73a"></span>ReadAllMifareCL1k
+# <span id="p-hlk-test.dd95c236-b24a-4c6c-a7a9-9da4cbbbb73a"></span>ReadAllMifareCL1k
 
 
 Verify that we can read every block of a Mifare Classic 1k card.

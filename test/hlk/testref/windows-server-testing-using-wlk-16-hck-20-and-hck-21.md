@@ -18,7 +18,7 @@ Please forward to those in your organization who could benefit from this informa
 
  
 
-## <span id="Windows_Server_certification_using_WLK_1.6__HLK_2.0__and_HLK_2.1_Definition"></span><span id="windows_server_certification_using_wlk_1.6__hlk_2.0__and_hlk_2.1_definition"></span><span id="WINDOWS_SERVER_CERTIFICATION_USING_WLK_1.6__HLK_2.0__AND_HLK_2.1_DEFINITION"></span>Windows Server certification using WLK 1.6, HLK 2.0, and HLK 2.1 Definition
+## <span id="Windows-Server-certification-using-WLK-1.6--HLK-2.0--and-HLK-2.1-Definition"></span><span id="windows_server_certification_using_wlk_1.6__hlk_2.0__and_hlk_2.1_definition"></span><span id="WINDOWS_SERVER_CERTIFICATION_USING_WLK_1.6__HLK_2.0__AND_HLK_2.1_DEFINITION"></span>Windows Server certification using WLK 1.6, HLK 2.0, and HLK 2.1 Definition
 
 
 WLK 1.6 was released in conjunction with Windows 7 and Windows 2008. This kit supports:

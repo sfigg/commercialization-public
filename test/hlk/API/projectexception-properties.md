@@ -10,7 +10,7 @@ ms.assetid: 09ceb39e-725c-4c07-86c3-e8c388f17b53
 # ProjectException Properties
 
 
-## <span id="Public_Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
+## <span id="Public-Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
 
 
 <table>

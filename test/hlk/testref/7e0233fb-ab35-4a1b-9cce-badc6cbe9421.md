@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: 54b23258-a8b5-4074-8a51-902e232ebca5
 ---
 
-# <span id="p_hlk_test.7e0233fb-ab35-4a1b-9cce-badc6cbe9421"></span>System Audio - Audio Logo Test - Glitch
+# <span id="p-hlk-test.7e0233fb-ab35-4a1b-9cce-badc6cbe9421"></span>System Audio - Audio Logo Test - Glitch
 
 
 >[!IMPORTANT]

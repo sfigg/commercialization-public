@@ -10,7 +10,7 @@ ms.assetid: 164710f0-4787-4f2a-a0cb-d55b6387c195
 # RoleConstraint Methods
 
 
-## <span id="Public_Methods"></span><span id="public_methods"></span><span id="PUBLIC_METHODS"></span>Public Methods
+## <span id="Public-Methods"></span><span id="public_methods"></span><span id="PUBLIC_METHODS"></span>Public Methods
 
 
 <table>

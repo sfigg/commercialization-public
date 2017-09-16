@@ -28,7 +28,7 @@ Before you test your storage adapter or controller by using the Windows Hardware
 
 -   [SCSI Controller Testing Prerequisites](scsi-controller-testing-prerequisites.md)
 
-## <span id="related_topics"></span>Related topics
+## <span id="related-topics"></span>Related topics
 
 
 [Device.Storage Tests](device-storage-tests.md)

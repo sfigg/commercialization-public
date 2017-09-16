@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: 01a240da-3fad-4e10-8744-d8af7959f2ab
 ---
 
-# <span id="p_hlk_test.d7b43caa-9289-40dd-8ed2-bfce9eabe356"></span>DF - Fuzz sub-opens with streams test (Reliability)
+# <span id="p-hlk-test.d7b43caa-9289-40dd-8ed2-bfce9eabe356"></span>DF - Fuzz sub-opens with streams test (Reliability)
 
 
 During the Streams Test, the Fuzz test tries to open a variety of named data streams on the device. The tests use a series of arbitrary stream names with content and characters that might be valid for other uses on some devices. This test determines whether the driver can properly handle data stream requests, especially if the driver exports a device that does not support or anticipate data streams.

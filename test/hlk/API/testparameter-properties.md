@@ -10,7 +10,7 @@ ms.assetid: 965e9c7f-e029-425d-b311-5c62cc7e381f
 # TestParameter Properties
 
 
-## <span id="Public_Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
+## <span id="Public-Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
 
 
 <table>

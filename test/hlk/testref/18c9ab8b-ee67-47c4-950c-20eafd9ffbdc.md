@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: 555f033a-db84-42c2-883b-3fc7dd76b64c
 ---
 
-# <span id="p_hlk_test.18c9ab8b-ee67-47c4-950c-20eafd9ffbdc"></span>WDDM Scheduler Stress (AlwaysRepatch)
+# <span id="p-hlk-test.18c9ab8b-ee67-47c4-950c-20eafd9ffbdc"></span>WDDM Scheduler Stress (AlwaysRepatch)
 
 
 This automated test verifies system stability while running many GPU-bound memory intensive applications when all patch locations are always repatched via the Patch DDI.

@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: 0f3d414c-160c-450a-9d1f-2f71ab4a52e9
 ---
 
-# <span id="p_hlk_test.cec62d4e-5c0f-4b3a-b09f-b33abc5e1acb"></span>SMB FileIObvt LOGO test
+# <span id="p-hlk-test.cec62d4e-5c0f-4b3a-b09f-b33abc5e1acb"></span>SMB FileIObvt LOGO test
 
 
 SMB FileIO test.

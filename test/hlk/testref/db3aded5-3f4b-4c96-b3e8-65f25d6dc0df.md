@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: 2e8af0c4-5ad1-4c4d-8492-0ba17d374321
 ---
 
-# <span id="p_hlk_test.db3aded5-3f4b-4c96-b3e8-65f25d6dc0df"></span>D3D12 - CommandList Destruction Test
+# <span id="p-hlk-test.db3aded5-3f4b-4c96-b3e8-65f25d6dc0df"></span>D3D12 - CommandList Destruction Test
 
 
 Bundle conformance test. Verifies whether the device-driver support bundles correctly.

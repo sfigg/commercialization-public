@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: 8bd52143-09e7-4340-b623-553310a3a048
 ---
 
-# <span id="p_hlk_test.3aab27f6-aa75-445b-b6ba-cb0fc6ce0c9c"></span>Camera Driver Controls System Test - Photo Sequence - Max Past Frames
+# <span id="p-hlk-test.3aab27f6-aa75-445b-b6ba-cb0fc6ce0c9c"></span>Camera Driver Controls System Test - Photo Sequence - Max Past Frames
 
 
 This test validates cameras functionality if the driver supports KSPROPERTY\_CAMERACONTROL\_EXTENDED\_PHOTOMODE; if it does not, you should skip this test.

@@ -10,7 +10,7 @@ ms.assetid: d1458bc0-96af-4fa5-945f-aa61beeb941e
 # IFilterConstraint Properties
 
 
-## <span id="Public_Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
+## <span id="Public-Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
 
 
 <table>

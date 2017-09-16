@@ -12,7 +12,7 @@ ms.assetid: 710807cd-8fea-4acf-8337-aea3f7b6f032
 
 Insert introduction here.
 
-## <span id="Public_Fields"></span><span id="public_fields"></span><span id="PUBLIC_FIELDS"></span>Public Fields
+## <span id="Public-Fields"></span><span id="public_fields"></span><span id="PUBLIC_FIELDS"></span>Public Fields
 
 
 <table>

@@ -10,7 +10,7 @@ ms.assetid: 3bca78e7-6429-4d90-b107-b10a217cf908
 # IFilterResult.UpdateAppliedCount Method
 
 
-## <span id="Overload_List"></span><span id="overload_list"></span><span id="OVERLOAD_LIST"></span>Overload List
+## <span id="Overload-List"></span><span id="overload_list"></span><span id="OVERLOAD_LIST"></span>Overload List
 
 
 <table>

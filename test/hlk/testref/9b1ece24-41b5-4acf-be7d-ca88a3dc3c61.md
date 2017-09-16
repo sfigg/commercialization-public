@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: 9bb7a4cd-287b-4243-bfee-3fc690fba76e
 ---
 
-# <span id="p_hlk_test.9b1ece24-41b5-4acf-be7d-ca88a3dc3c61"></span>Windows Touch Test
+# <span id="p-hlk-test.9b1ece24-41b5-4acf-be7d-ca88a3dc3c61"></span>Windows Touch Test
 
 
 This test verifies that a Windows® Touch device meets requirements.

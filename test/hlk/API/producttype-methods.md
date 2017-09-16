@@ -10,7 +10,7 @@ ms.assetid: 227b6d00-937b-4aca-ae98-2a0dcea9cf63
 # ProductType Methods
 
 
-## <span id="Public_Methods"></span><span id="public_methods"></span><span id="PUBLIC_METHODS"></span>Public Methods
+## <span id="Public-Methods"></span><span id="public_methods"></span><span id="PUBLIC_METHODS"></span>Public Methods
 
 
 <table>

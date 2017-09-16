@@ -46,7 +46,7 @@ Before you begin testing, make sure that the test environment meets the necessar
 
 -   **Test system.** Also referred to as a client, each test system can have a different configuration that's appropriate for various testing scenarios, including different hardware, operating systems, service packs, and drivers. Each test system can be associated with only one Proxy system. No configuration is required for mobile test systems.
 
-## <span id="deployment_scenarios"></span><span id="DEPLOYMENT_SCENARIOS"></span>Deployment scenarios
+## <span id="deployment-scenarios"></span><span id="DEPLOYMENT_SCENARIOS"></span>Deployment scenarios
 
 
 There are two deployment scenarios for Windows HLK:
