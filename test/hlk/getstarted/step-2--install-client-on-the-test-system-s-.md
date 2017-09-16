@@ -31,9 +31,9 @@ If you are testing software, be sure to install the product on the test system f
        >  If the following software is not already installed, it is installed during this step: .NET Framework 4 (Client Profile and Extended), Application Verifier, Windows Driver Test Framework (WDTF), and Windows Performance Toolkit (WPT).
        >[!NOTE]
        >  If the test system has a Server Core installation, then you should install the HLK client using the silent install option:
-        ``` syntax
+```syntax
         \\<HLKController>\HLKInstall\Client\Setup.cmd /qn ICFAGREE=Yes
-        ```
+```
 
          
 
