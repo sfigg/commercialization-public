@@ -111,4 +111,4 @@ Smartphones come in a wide range of sizes from low cost phones, small tablets (p
 
 \* qHD requires &gt;&nbsp;512&nbsp;MB memory
 
-Research the Windows Mobile options and partner with a registered Windows phone manufacturer to build a device utilizing your brand. For more information, see [Windows 10 Hardware Developer Programs (http://go.microsoft.com/fwlink/?LinkId=618212)].
+Research the Windows Mobile options and partner with a registered Windows phone manufacturer to build a device utilizing your brand. For more information, see [Windows 10 Hardware Developer Programs](http://go.microsoft.com/fwlink/?LinkId=618212).
