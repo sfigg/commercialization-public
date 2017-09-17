@@ -71,32 +71,34 @@ Except for para-virtualization drivers (as defined by the [WHCP Policies and Pro
 
 >[!NOTE]
 >  Multiple Processor Groups Setting
-You must set the value for the processor group size for Hardware Lab Kit testing of Windows Server 2008 R2 and later device drivers for certification. This is done by running bcdedit in an elevated command prompt window, using the /set option.
-
-The commands for adding the group settings and restarting are as follows:
-
+>You must set the value for the processor group size for Hardware Lab Kit testing of Windows Server 2008 R2 and later device drivers for certification. This is done by running bcdedit in an elevated command prompt window, using the /set option.
+>
+>The commands for adding the group settings and restarting are as follows:
+>
 ``` syntax
 bcdedit.exe /set groupsize 2
 bcdedit.exe /set groupaware on
 shutdown.exe -r -t 0 -f
 ```
-
-The commands for removing the group settings and rebooting are as follows:
-
+>
+>
+>The commands for removing the group settings and rebooting are as follows:
+>
 ``` syntax
 bcdedit.exe /deletevalue groupsize
 bcdedit.exe /deletevalue groupaware
 shutdown.exe -r -t 0 -f
 ```
+>
 
 >[!NOTE]
 >  
 **Code Integrity Setting**
 
-The Virtualization Based Security feature (VBS) of Windows Server 2016 must be enabled using Server Manager first.
-
-Once that has occurred, the following Registry key must be created and set:
-
+>The Virtualization Based Security feature (VBS) of Windows Server 2016 must be enabled using Server Manager first.
+>
+>Once that has occurred, the following Registry key must be created and set:
+>
 ``` syntax
 HKLM\System\CurrentControlSet\Control\DeviceGuard
 HypervisorEnforcedCodeIntegrity:REG_DWORD
