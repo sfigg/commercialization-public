@@ -188,11 +188,6 @@ Capture a desktop FFU that will be split:
 DISM.exe /Capture-Ffu /ImageFile:install.ffu /CaptureDrive:\\PhysicalDrive0 /Name:Drive0 /Compress:none
 ```
 
-Capture a mobile FFU:
-```
-DISM.exe /Capture-Ffu /ImageFile:install.ffu /CaptureDrive:\\PhysicalDrive0 /Name:Drive0 /PlatformIds:Qualcomm.MSM8994.P6211;Microsoft.MSM8994.P6211 /Compress:default
-```
-
 
 ## /Capture-Image
 
