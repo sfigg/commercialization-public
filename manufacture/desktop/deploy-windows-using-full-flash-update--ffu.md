@@ -66,7 +66,7 @@ To capture and deploy FFUs using the instructions below, you'll also need:
     DISKPART>
     ```
 
-3. Use DISM to capture an image of all the partitions on the physical drive. For *disk X:*, the string used with `/apply-drive` will look like this: `\\.\PhysicalDriveX`, where *X* is the disk number that diskpart provides. For example, to capture Disk 0, you'd use `/CaptureDrive:\\.\PhysicalDrive0`.
+3. Use DISM to capture an image of all the partitions on the physical drive. For *disk X:*, the string used with `/capturedrive` will look like this: `\\.\PhysicalDriveX`, where *X* is the disk number that diskpart provides. For example, to capture Disk 0, you'd use `/CaptureDrive:\\.\PhysicalDrive0`.
 
     For more information about PhysicalDrive*X*, see [CreateFile function](https://msdn.microsoft.com/library/windows/desktop/aa363858.aspx). 
     
@@ -129,7 +129,7 @@ To capture and deploy FFUs using the instructions below, you'll also need:
 
 ## Mount an FFU for servicing
 
-You can use DISM to mount and FFU images for servicing. Like with other image formats, you can mount and modify an FFU before committing changes and unmounting. Mounting an FFU for servicing uses the same `/mount-image` command that you use for mounting other image types. When mounting an FFU, you'll always use `/index:1` when mounting.
+You can use DISM to mount FFU images for servicing. Like with other image formats, you can mount and modify an FFU before committing changes and unmounting. Mounting an FFU for servicing uses the same `/mount-image` command that you use for mounting other image types. When mounting an FFU, you'll always use `/index:1` when mounting.
 
 Unlike WIM images, FFU images get mounted as virtual hard disks. Files appear in the specified mount folder, but since FFUs can contain more than one partition but only have one index, DISM maps only the Windows partition from the mounted FFU to the mount folder.
 
