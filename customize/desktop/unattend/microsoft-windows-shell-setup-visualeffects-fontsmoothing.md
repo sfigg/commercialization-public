@@ -8,7 +8,7 @@ ms.assetid: 841603b8-abd8-48a3-8445-9ee27da1b254
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
 ms.author: alhopper
-ms.date: 05/02/2017
+ms.date: 10/17/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -17,7 +17,7 @@ ms.technology: windows-oem
 # FontSmoothing
 
 > [!Note]  
-> We do not recommend using this Unattend setting when preparing images, as ClearType is now the default font appearance across the system. This Unattend setting will be removed in a future release of Windows.
+> In Windows 10, version 1709, this setting is removed.
 
 `FontSmoothing` specifies whether font smoothing is enabled, and which type.
 
