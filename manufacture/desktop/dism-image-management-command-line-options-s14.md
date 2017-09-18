@@ -66,7 +66,7 @@ Syntax:
 | --- | --- |
 | /ImageFile | The path and name of the FFU image file that will be applied |
 | /ApplyDrive | The path to the phyisical drive that will be imaged |
-| /SFUfile\<pattern> | Optional, for split FFUs. Use /SFUFile to reference split FFU files (SFUs). *Pattern* is the naming pattern and location of split files. Use a wildcard character when specifying the naming pattern. For example, "E:\image\install*.sfu" will apply all of the split files in the E:\image directory named install1.sfu, install2.sfu, and so on. |
+| /SFUfile\<pattern> | Optional, for split FFUs that are captured with no compression. Use /SFUFile to reference split FFU files (SFUs). *Pattern* is the naming pattern and location of split files. Use a wildcard character when specifying the naming pattern. For example, "E:\image\install*.sfu" will apply all of the split files in the E:\image directory named install1.sfu, install2.sfu, and so on. |
 
 Example:
   
@@ -172,16 +172,26 @@ Dism /Capture-Ffu /ImageFile:<path_to_image_file> /CaptureDrive:<physical_drive_
 |   Parameter     |   Description     |
 |-----------------|-------------------|
 | /CaptureDrive | The physical drive to be captured. You can [use diskpart to get drive number information](deploy-windows-using-full-flash-update--ffu.md#capture-an-ffu). Uses the format `\\.\PhysicalDriveX`, where *X* is the disk number that diskpart provides. |
-| /PlatformIds | Specifies one or more platform ids (separated with semicolon) to be added to the image. If not specified, platform id will be '*'. |
-| /Compress | Specifies the type of compression used for when capturing. |
+| /PlatformIds | Not needed for desktop capture. Specifies one or more platform ids (separated with semicolon) to be added to the image. If not specified, platform id will be '*'. |
+| /Compress | Specifies the type of compression used for when capturing. If you'll be splitting the FFU, specify `none`, as DISM doesn't support splitting compressed FFUs. |
 
 
-Example:
+Examples:
 
+Capture a desktop FFU:
+```
+DISM.exe /Capture-Ffu /ImageFile:install.ffu /CaptureDrive:\\PhysicalDrive0 /Name:Drive0
+```
+
+Capture a desktop FFU that will be split:
+```
+DISM.exe /Capture-Ffu /ImageFile:install.ffu /CaptureDrive:\\PhysicalDrive0 /Name:Drive0 /Compress:none
+```
+
+Capture a mobile FFU:
 ```
 DISM.exe /Capture-Ffu /ImageFile:install.ffu /CaptureDrive:\\PhysicalDrive0 /Name:Drive0 /PlatformIds:Qualcomm.MSM8994.P6211;Microsoft.MSM8994.P6211 /Compress:default
 ```
-
 
 
 ## /Capture-Image
