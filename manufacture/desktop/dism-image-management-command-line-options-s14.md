@@ -445,7 +445,7 @@ Dism /Remount-Image /MountDir:C:\test\offline
 
 ## /Split-FFU
 
-For FFU, this command splits an existing full-flash update (.ffu) file into multiple read-only split .sfu files.
+For FFU, this command splits an existing full-flash update (.ffu) file into multiple read-only split .sfu files. DISM doesn't support splitting compressed FFUs. If you are splitting FFUs, make sure that your FFU was captured with the `/compress:none` option specificed.
 
 This option creates the .sfu files in the specified directory, naming each file the same as the specified /SFUFile, but with an appended number. For example, if you use `c:\flash.sfu`, you'll get a flash.sfu file, a flash2.ffu file, a flash3.sfu file, and so on, defining each portion of the split .sfu file and saving it to the C:\ directory.
 
