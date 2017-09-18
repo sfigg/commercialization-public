@@ -5,10 +5,9 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: a5a87699-9bd5-4ae9-9707-773ece45b4fc
-ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
-ms.author: joshbax
+ms.author: sapaetsc
 ms.date: 05/05/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -36,7 +35,7 @@ Represents an event collector identifier.
 ## Syntax
 
 
-``` syntax
+```
 <EventCollectorId Value = IdType>
 
   <!-- Child elements -->

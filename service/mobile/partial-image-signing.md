@@ -41,7 +41,7 @@ OEMs can now also use the ingestion client to create "context free" submissions.
 
 To prepare a partial FFU to be signed:
 
-``` syntax
+```
 PS> Initialize-FirmwareSubmission -TypeOfProduct WindowsPhoneBlue -TypeOfSubmission PartialImage -UpdateHistoryPath c:\input\UpdateHistory.xml -OemInputPath c:\input -OutputFilePath c:\output -PartialImageDirectory c:\input\spkg
 ```
 

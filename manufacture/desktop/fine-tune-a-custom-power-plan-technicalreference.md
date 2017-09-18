@@ -27,13 +27,13 @@ You can customize all configurable Windows power options by using the `powercfg`
 
 -   On your technician computer, at an elevated command prompt, type the following:
 
-    ``` syntax
+    ```
     powercfg -LIST
     ```
 
     The computer will return the list of available power plans. In the following examples, these plans are *Balanced* and *Power saver*.
 
-    ``` syntax
+    ```
     Existing Power Schemes (* Active)
     -----------------------------------
     Power Scheme GUID: {guidPlan1}  (Balanced) *
@@ -46,7 +46,7 @@ You can customize all configurable Windows power options by using the `powercfg`
 
 -   To modify a plan, use the GUID of the power plan that you want to change to set that power plan as the active power plan. For example:
 
-    ``` syntax
+    ```
     powercfg -SETACTIVE {guidPlan2}
     ```
 
@@ -58,7 +58,7 @@ You can customize all configurable Windows power options by using the `powercfg`
 
     1.  At an elevated command prompt, type the following:
 
-        ``` syntax
+        ```
         powercfg -QUERY
         ```
 
@@ -66,13 +66,13 @@ You can customize all configurable Windows power options by using the `powercfg`
 
     2.  Find the GUID for the subgroup of the setting that you want to change. For example, to modify a display setting, find the GUID for the Display subgroup:
 
-        ``` syntax
+        ```
         Subgroup GUID: {guidSubgroup-Display}  (Display)
         ```
 
     3.  Find the GUID for the setting that you want to change. For example, to modify the Display Brightness setting, find the GUID for the (Display brightness) setting:
 
-        ``` syntax
+        ```
         Power Setting GUID: {guidPowerSetting-Brightness}  (Display brightness)
         ```
 
@@ -83,7 +83,7 @@ You can customize all configurable Windows power options by using the `powercfg`
 
         For example, to set the maximum display brightness to 50 percent brightness, enter the value as 50. When you use the `powercfg -QUERY` command to confirm the setting, the value appears as 0x00000032.
 
-        ``` syntax
+        ```
         Power Setting GUID: {guidPowerSetting-Brightness}  (Display brightness)
           Minimum Possible Setting: 0x00000000
           Maximum Possible Setting: 0x00000064
@@ -95,25 +95,25 @@ You can customize all configurable Windows power options by using the `powercfg`
 
 2.  Adjust the value for the power setting for times when the computer is plugged in. For example, to set the display brightness level to 100 percent when the computer is plugged in, type the following:
 
-    ``` syntax
+    ```
     powercfg -SETACVALUEINDEX {guidPlan-New} {guidSubgroup-Display}  {guidPowerSetting-Brightness} 100
     ```
 
 3.  Adjust the value for the power setting for times when the computer is on battery power. For example, to set the display brightness level to 75 percent when the computer is on battery power, type the following:
 
-    ``` syntax
+    ```
     powercfg -SETDCVALUEINDEX {guidPlan-New} {guidSubgroup-Display}  {guidPowerSetting-Brightness} 75
     ```
 
 4.  Use the **Query** command to verify the setting. For example:
 
-    ``` syntax
+    ```
     powercfg -QUERY
     ```
 
     The computer shows the new power setting index in hexadecimal notation. For example:
 
-    ``` syntax
+    ```
     Power Setting GUID: {guidPowerSetting-Brightness}  (Display brightness)
           Minimum Possible Setting: 0x00000000
           Maximum Possible Setting: 0x00000064

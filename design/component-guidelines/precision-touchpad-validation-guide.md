@@ -5,7 +5,7 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 6D32D4AD-07F3-4EF5-95DE-79AFA514C716
-ms.author: elkr
+ms.author: sapaetsc
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -37,6 +37,10 @@ The guidance provided here ensures compliance with Hardware Lab Kit (HLK) testin
 <tr class="even">
 <td><p>[Precision Touchpad Tests](precision-touchpad-tests.md)</p></td>
 <td><p>This section lists the topics that provide details about the Precision Touchpad tests in the Windows Hardware Lab Kit (HLK) for Windows 10.</p></td>
+</tr>
+<tr class="odd">
+<td><p>[Hardware Requirements and Vendor Information](ptp-hardware-requirements-and-vendor-information.md)</p></td>
+<td><p>This topic provides a list of the test equipment that is required for the touch-related tests in the Windows Hardware Lab Kit (HLK), and information about the vendors who stock the listed equipment.</p></td>
 </tr>
 <tr class="odd">
 <td><p>[Appendix](precision-touchpad-appendix.md)</p></td>

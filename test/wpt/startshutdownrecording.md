@@ -5,10 +5,9 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 763c2f77-aeed-43af-9238-c0a041e02867
-ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
-ms.author: joshbax
+ms.author: sapaetsc
 ms.date: 05/05/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -23,7 +22,7 @@ Starts shutdown recording.
 ## Syntax
 
 
-``` syntax
+```
 HRESULT StartShutdownRecording
   ([in] IProfileCollection* pProfileCollection)
 ;

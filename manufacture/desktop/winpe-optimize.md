@@ -17,7 +17,7 @@ Speed up Windows Preinstallation Environment (WinPE) boot time by cleaning up th
 
 ## <span id="Mount_the_Windows_PE_boot_image"></span>Mount the Windows PE boot image
 
-``` syntax
+```
 Dism /Mount-Image /ImageFile:"C:\WinPE_amd64\media\sources\boot.wim" /index:1 /MountDir:"C:\WinPE_amd64\mount"
 ```
 
@@ -31,14 +31,14 @@ However, don't unmount the image just yet.
 
 This process marks files that can be removed during the export process. 
 
-``` syntax
+```
 DISM /Cleanup-Image /Image="C:\WinPE_amd64\mount" /StartComponentCleanup /ResetBase 
 ```
 
 ## <span id="Unmount_the_image"></span>Unmount the image
 	
 Commit the changes and unmount the WinPE image:
-``` syntax
+```
 Dism /Unmount-Image /MountDir:"C:\WinPE_amd64\mount" /Commit
 ```
 
@@ -46,7 +46,7 @@ Dism /Unmount-Image /MountDir:"C:\WinPE_amd64\mount" /Commit
 
 The exported image should be smaller than the old image. Replace the original image with the new one. 
 
-``` syntax
+```
 Dism /Export-Image /SourceImageFile:"c:\winpe_amd64\media\sources\boot.wim" /SourceIndex:1 /DestinationImageFile:"c:\winpe_amd64\mount\boot2.wim"
 Del "C:\WinPE_amd64\media\sources\boot.wim"
 Copy "C:\WinPE_amd64\mount\boot2.wim" "c:\winpe_amd64\media\sources\boot.wim"
@@ -56,7 +56,7 @@ Copy "C:\WinPE_amd64\mount\boot2.wim" "c:\winpe_amd64\media\sources\boot.wim"
 
 1.  Create bootable media, such as a USB flash drive.
 
-    ``` syntax
+    ```
     MakeWinPEMedia /UFD C:\WinPE_amd64 F:
     ```
 

@@ -80,19 +80,19 @@ Full path to a directory that contains a partial image that consists only of SPK
 
 The following Windows PowerShell script can be used to submit a FFU catalog to be signed.
 
-``` syntax
+```
 Initialize-FirmwareSubmission -TypeOfSubmission FfuCatalog –UpdateHistoryPath [path] –OemInputPath [path] –OutputFilePath [path] –FfuPath [path]
 ```
 
 The following Windows PowerShell script can be used to submit a partial image to be signed.
 
-``` syntax
+```
 Initialize-FirmwareSubmission -TypeOfSubmission PartialImage –UpdateHistoryPath [path] –OemInputPath [path] –OutputFilePath [path] –PartialImageDirectoy [path]
 ```
 
 The following Windows PowerShell script can be used to read validation errors in the output pipeline of this cmdlet, where \[path\] is replaced with the respective absolute file path.
 
-``` syntax
+```
 try 
 {
 Initialize-FirmwareSubmission -TypeOfSubmission Image –UpdateHistoryPath [path] –OemInputPath [path] –OutputFilePath [path] –SignedRemovalPackageFolder [path] –PackagesToRemoveFolder [path]
@@ -114,7 +114,7 @@ In Windows Phone 8.1, a targeting package was required (&lt;OEM&gt;.&lt;Device
 ## <span id="Help_documentation_from_Windows_PowerShell"></span><span id="help_documentation_from_windows_powershell"></span><span id="HELP_DOCUMENTATION_FROM_WINDOWS_POWERSHELL"></span>Help documentation from Windows PowerShell
 
 
-``` syntax
+```
 NAME
     Initialize-FirmwareSubmission
 

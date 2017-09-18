@@ -5,10 +5,9 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 01bbdf2d-20e2-4588-a90b-4c962e69cbc1
-ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
-ms.author: joshbax
+ms.author: sapaetsc
 ms.date: 05/05/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -20,7 +19,7 @@ ms.technology: windows-oem
 
 This flag enables capture of virtual allocations and free events.
 
-``` syntax
+```
 #define EVENT_TRACE_FLAG_VIRTUAL_ALLOC 0x00004000
 ```
 

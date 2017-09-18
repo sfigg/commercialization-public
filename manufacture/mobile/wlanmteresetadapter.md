@@ -19,7 +19,7 @@ Resets the Wi-Fi adapter. The application can specify an optional callback and c
 ## <span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>Syntax
 
 
-``` syntax
+```
 DWORD WlanMTEResetAdapter(
     __in        HANDLE                  hAdapter,
     __in        DOT11_RESET_REQUEST     *pDot11ResetRequest,
@@ -48,7 +48,7 @@ DWORD WlanMTEResetAdapter(
 
 The callback function for Wi-Fi reset adapter notifications has the following prototype:
 
-``` syntax
+```
 typedef VOID (WINAPI *WLAN_MTE_RESET_CALLBACK)(
     __in    DWORD   dwError,
     __in    PVOID   pvContext

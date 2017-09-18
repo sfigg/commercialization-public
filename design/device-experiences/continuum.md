@@ -5,7 +5,7 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 533FDAD6-56F5-4AD3-9F0A-0F2D1FC3DC09
-ms.author: elkr
+ms.author: sapaetsc
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -311,7 +311,7 @@ When an app launches it can query for the current state of the system and optimi
 
 *Universal Windows App (C#) Sample*
 
-``` syntax
+```
 using Windows.UI.Xaml;
 using Windows.UI.ViewManagement;
  
@@ -345,7 +345,7 @@ using Windows.UI.ViewManagement;
 
 *Classic Windows App (C++) Sample*
 
-``` syntax
+```
 using namespace Microsoft::WRL::Wrappers;
 using namespace Microsoft::WRL;
 HRESULT OnLayout()
@@ -392,7 +392,7 @@ Same as Example 1.
 
 *Classic Windows App (C++) Sample*
 
-``` syntax
+```
 // WM_SETTINGCHANGE handler
 void OnSettingsChange(LPARAM lParam)
 {

@@ -8,7 +8,7 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 1278D2EA-8AB1-46CB-BF96-7AC75B539FD3
-ms.author: elkr
+ms.author: sapaetsc
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -60,7 +60,7 @@ In the following block diagram, two thermal zones that manage the same devices u
 
 The two thermal zones shown in the preceding diagram might be defined as follows:
 
-``` syntax
+```
 Thermal Zone 1 {     _PSV = 80C  Thermal Throttling  Devices:    Monitor Driver  Battery Driver } Thermal Zone 2 {   _PSV = 90C  Thermal Throttling  Devices:    Monitor Driver  Battery Driver }
 ```
 

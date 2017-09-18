@@ -66,7 +66,7 @@ To create a user mode test applications to test the device in manufacturing, com
 
     To configure the service to start automatically when the OS boots, set the **Start** attribute to "Auto" in the service package configuration file.  
 
-    ``` syntax
+    ```
       <Components>
         <Service
           Name="SampleMMOSSvc"

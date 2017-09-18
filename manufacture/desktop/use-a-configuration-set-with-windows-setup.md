@@ -49,7 +49,7 @@ To use a configuration set, you need the following:
 
 1.  Create two folders on a network share to store the product DVD source files and your configuration set. For example,
 
-    ``` syntax
+    ```
     net use N: \\server\share
     md N:\WindowsDVD
     md N:\ConfigurationSets
@@ -65,13 +65,13 @@ To use a configuration set, you need the following:
 
 5.  At a command prompt in Windows PE, map a network drive to your network share. For example,
 
-    ``` syntax
+    ```
     net use N: \\server\share
     ```
 
 6.  Run Windows Setup from the network and reference your answer file in your configuration set. For example,
 
-    ``` syntax
+    ```
     N:\WindowsDVD\setup /unattend:N:\ConfigurationSets\autounattend.xml
     ```
 

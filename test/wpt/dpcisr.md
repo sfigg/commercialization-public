@@ -5,10 +5,9 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8bab6760-0aa9-403b-b552-eabe21f780dd
-ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
-ms.author: joshbax
+ms.author: sapaetsc
 ms.date: 05/05/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -20,7 +19,7 @@ ms.technology: windows-oem
 
 This action produces a text report that summarizes the various metrics regarding deferred procedure calls (DPCs) and interrupt service routines (ISRs).
 
-``` syntax
+```
 -a dpcisr [-dpc | -isr] [-summary] [-interval [n]] [-bucket [n]] [-range T1 T2 ]
 ```
 

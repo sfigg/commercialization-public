@@ -5,7 +5,7 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 84855212-A395-4585-AC45-1B53F93A568A
-ms.author: elkr
+ms.author: sapaetsc
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -17,7 +17,7 @@ ms.technology: windows-oem
 
 The Two Finger Parallel/Hybrid Mode Multi-touch Device sample report descriptor contains two logical collections (one for each finger). Be aware that this descriptor can still support more than two concurrent contacts by using Hybrid mode.
 
-``` syntax
+```
     0x05, 0x0d,                         // USAGE_PAGE (Digitizers)          
     0x09, 0x04,                         // USAGE (Touch Screen)             
     0xa1, 0x01,                         // COLLECTION (Application)         

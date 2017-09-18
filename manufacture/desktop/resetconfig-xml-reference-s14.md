@@ -164,7 +164,7 @@ These files should be placed in the folder C:\\Recovery\\OEM, and will automatic
 
 This is a code example for the ResetConfig.xml file.
 
-``` syntax
+```
 <?xml version="1.0" encoding="utf-8"?>
 <Reset>
  <Run Phase="BasicReset_BeforeImageApply">

@@ -5,10 +5,9 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 76df9308-9496-43a7-90cb-113ff5f672a8
-ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
-ms.author: joshbax
+ms.author: sapaetsc
 ms.date: 05/05/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -20,7 +19,7 @@ ms.technology: windows-oem
 
 This action produces an XML file that summarizes the metrics for the suspend sequence.
 
-``` syntax
+```
 -a suspend [-summary] [-timeout <unit> [<precision>]] [-min <duration>]
 ```
 

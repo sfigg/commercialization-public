@@ -27,7 +27,7 @@ In our lab, we'll create a new BSP based on the Raspberry Pi 2, removing the exi
 
 1.  Create a BSP working folder that you'd like to modify.
 
-    ``` syntax
+    ```
     newbsp MyRPi2
     ```
 
@@ -65,7 +65,7 @@ In our lab, we'll create a new BSP based on the Raspberry Pi 2, removing the exi
     Copy in features you want. Exclude any that don't apply to your project.
 	
 	For example, copy in each of the drivers **except** the existing GPIO driver:
-	``` syntax
+	```
      <PackageFile Path="$(mspackageroot)\Retail\$(cputype)\$(buildtype)" Name="RASPBERRYPI.RPi2.GPIO.cab">
         <FeatureIDs>
           <FeatureID>RPI2_DRIVERS</FeatureID>
@@ -77,7 +77,7 @@ In our lab, we'll create a new BSP based on the Raspberry Pi 2, removing the exi
 
 6.  Add the HelloBlinky driver:
 	
-    ``` syntax
+    ```
         <PackageFile Path="%PKGBLD_DIR%" Name="%OEM_NAME%.Drivers.HelloBlinky.cab">
           <FeatureIDs>
             <FeatureID>RPI2_DRIVERS</FeatureID>
@@ -89,7 +89,7 @@ In our lab, we'll create a new BSP based on the Raspberry Pi 2, removing the exi
 
 1.  Create a new working product folder, adding your BSP name to the end.
 
-    ``` syntax
+    ```
     newproduct ProductB MyRpi2
     ```
 
@@ -107,7 +107,7 @@ In our lab, we'll create a new BSP based on the Raspberry Pi 2, removing the exi
 
     -  Optional: add the FeatureID for the other apps and test packages: OEM_AppxHelloWorld, OEM_CustomCmd, OEM_FileAndRegKey, that you created in Lab 1.
 
-       ``` syntax
+       ```
        <Microsoft>
           <Feature>IOT_GENERIC_POP</Feature>
 	   ...
@@ -130,7 +130,7 @@ In our lab, we'll create a new BSP based on the Raspberry Pi 2, removing the exi
 
 1.  From the IoT Core Shell, create the image:
 
-    ``` syntax
+    ```
     createimage ProductB Test
     ```
 

@@ -5,10 +5,9 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: a1b68ad9-c479-4646-be41-a1dfbf346369
-ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
-ms.author: joshbax
+ms.author: sapaetsc
 ms.date: 05/05/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -23,7 +22,7 @@ Enables boot recording for the specified profile collection.
 ## Syntax
 
 
-``` syntax
+```
 HRESULT EnableBootRecording
   ([in] IProfileCollection* pProfileCollection)
 ;

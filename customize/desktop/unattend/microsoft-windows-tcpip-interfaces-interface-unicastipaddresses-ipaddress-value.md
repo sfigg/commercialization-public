@@ -5,7 +5,6 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: ec2f6d75-998c-4b09-83c6-457a681fea3d
-ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
 ms.author: alhopper
@@ -135,7 +134,7 @@ The following XML output shows how to configure two static IP addresses. In this
 
 -   The IPv6 address is set to ffff:1::3, with a routing prefix length of 48. This defines the subnet mask as ffff:ffff:ffff:0000:0000:0000:0000:0000.
 
-``` syntax
+```
       <UnicastIpAddresses>
          <IpAddress wcm:action="add" wcm:keyValue="1">192.168.0.1/25</IpAddress> 
          <IpAddress wcm:action="add" wcm:keyValue="2">ffff:1::3/48</IpAddress> 
@@ -144,7 +143,7 @@ The following XML output shows how to configure two static IP addresses. In this
 
 The following XML output shows how to configure a single IP address. In this example, the IP address is set to 10.168.1.0. This is an IPv4 Class A address. Windows uses the default subnet mask of 255.0.0.0.
 
-``` syntax
+```
       <UnicastIpAddresses>
          <IpAddress wcm:action="add" wcm:keyValue="1">10.168.1.0</IpAddress> 
       </UnicastIpAddresses>
@@ -152,7 +151,7 @@ The following XML output shows how to configure a single IP address. In this exa
 
 The following XML output shows how to configure a single TCP/IP address. In this example, the IP address is set to 160.168.1.0. This is an IPv4 Class B address. Windows uses the default subnet mask of 255.255.0.0.
 
-``` syntax
+```
       <UnicastIpAddresses>
          <IpAddress wcm:action="add" wcm:keyValue="1">160.168.1.0</IpAddress> 
       </UnicastIpAddresses>
@@ -167,7 +166,7 @@ The following XML output shows how to configure a single TCP/IP address. In this
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_unattend\p_unattend%5D:%20Value%20%20RELEASE:%20%2810/3/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+
 
 
 

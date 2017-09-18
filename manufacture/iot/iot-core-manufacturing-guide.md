@@ -37,7 +37,7 @@ For OEM-style images, you’ll wrap your customizations into package (.cab) file
 -   [Lab 2: Creating your own board support package](create-a-new-bsp.md)
 -   [Lab 3: Update your apps](https://msdn.microsoft.com/windows/hardware/commercialize/service/iot/updating-iot-core-apps)
 
-[(Previous version of this guide): IoT Core deployment and imaging](iot-core-deployment-and-imaging.md)
+
 ## <span id="Concepts"></span><span id="concepts"></span><span id="CONCEPTS"></span>Concepts
 
 You can use the walkthrough as a guide to build both your test and retail images. In general terms:

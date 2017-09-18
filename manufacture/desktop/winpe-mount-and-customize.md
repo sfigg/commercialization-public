@@ -41,13 +41,13 @@ Common customizations:
 
     -   The 64-bit version can boot 64-bit UEFI and 64-bit BIOS PCs.
 
-        ``` syntax
+        ```
         copype amd64 C:\WinPE_amd64
         ```
 
     -   The 32-bit version of WinPE can boot 32-bit UEFI, 32-bit BIOS, and 64-bit BIOS PCs.
 
-        ``` syntax
+        ```
         copype x86 C:\WinPE_x86
         ```
 
@@ -55,7 +55,7 @@ Common customizations:
 
 -   Mount the WinPE image.
 
-    ``` syntax
+    ```
     Dism /Mount-Image /ImageFile:"C:\WinPE_amd64\media\sources\boot.wim" /index:1 /MountDir:"C:\WinPE_amd64\mount"
     ```
 
@@ -66,7 +66,7 @@ Common customizations:
 
 -   Add the device driver to the WinPE image.
 
-    ``` syntax
+    ```
     Dism /Add-Driver /Image:"C:\WinPE_amd64\mount" /Driver:"C:\SampleDriver\driver.inf"
     ```
 
@@ -78,7 +78,7 @@ Common customizations:
 
 -   Add the optional component into WinPE. To add optional components, you need to add both the optional component and its associated language packs.
 
-    ``` syntax
+    ```
     Dism /Add-Package /Image:"C:\WinPE_amd64\mount" /PackagePath:"C:\Program Files\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\WinPE-HTA.cab"  
 
     Dism /Add-Package /Image:"C:\WinPE_amd64\mount" /PackagePath:"C:\Program Files\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\en-us\WinPE-HTA_en-us.cab"
@@ -104,19 +104,19 @@ Common customizations:
 
 1.  Create an app directory inside the mounted WinPE image.
 
-    ``` syntax
+    ```
     md "C:\WinPE_amd64\mount\windows\<MyApp>"
     ```
 
 2.  Copy the necessary app files to the local WinPE directory.
 
-    ``` syntax
+    ```
     Xcopy C:\<MyApp> "C:\WinPE_amd64\mount\windows\<MyApp>"
     ```
 
 3.  Test the app later by booting WinPE and running the application from the X: directory.
 
-    ``` syntax
+    ```
     X:\Windows\System32> X:\Windows\<MyApp>
     ```
 
@@ -128,7 +128,7 @@ Common customizations:
 
 -   WinPE reserves memory on the X: drive to unpack the WinPE files, plus additional temporary file storage, known as scratch space, that can be used by your applications. By default, this is 512MB for PCs with more than 1GB of RAM, otherwise the default is 32MB. Valid values are 32, 64, 128, 256, or 512.
 
-    ``` syntax
+    ```
     Dism /Set-ScratchSpace:256 /Image:"C:\WinPE_amd64\mount"
     ```
 
@@ -160,7 +160,7 @@ Note: Using the high performance power scheme can make the device run hotter tha
 
 1.  In Notepad, edit the file: `C:\WinPE_amd64\mount\windows\system32\startnet.cmd`, adding a command to set the power scheme to High Performance.
 
-    ``` syntax
+    ```
     winpeinit
     powercfg /s 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c 
     ```
@@ -173,13 +173,13 @@ Note: Using the high performance power scheme can make the device run hotter tha
 
 1.  Unmount the WinPE image.
 
-    ``` syntax
+    ```
     Dism /Unmount-Image /MountDir:"C:\WinPE_amd64\mount" /commit
     ```
 
 2.  Create bootable media, such as a USB flash drive.
 
-    ``` syntax
+    ```
     MakeWinPEMedia /UFD C:\WinPE_amd64 F:
     ```
 
@@ -198,19 +198,19 @@ In some cases, you may not be able to recover the mounted image. DISM protects y
 
 1.  Try remounting the image:
 
-    ``` syntax
+    ```
     dism /Remount-Image /MountDir:C:\mount
     ```
 
 2.  Try unmounting the image, discarding the changes:
 
-    ``` syntax
+    ```
     dism /Unmount-Image /MountDir:C:\mount /discard
     ```
 
 3.  Try cleaning up the resources associated with the mounted image:
 
-    ``` syntax
+    ```
     dism /Cleanup-Mountpoints
     ```
 

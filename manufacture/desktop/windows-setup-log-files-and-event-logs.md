@@ -70,7 +70,7 @@ Windows Setup includes the ability to review the Windows Setup performance eve
 
 To view the logs on a computer that does not include the corresponding kit, you must run a script from the root of the media that installs the Event Trace for Windows (ETW) provider. From the command line, type:
 
-``` syntax
+```
 Cscript D:\sources\etwproviders\etwproviderinstall.vbs install D:\sources\etwproviders
 ```
 
@@ -88,13 +88,13 @@ where *D* is the drive letter of the Windows DVD media.
 
 From the command line, use the **Wevtutil** or **Tracerpt** commands to save the log to an .xml or text file. For information about how to use these tools, see the command-line Help. The following commands show examples of how to use the tools:
 
-``` syntax
+```
 Wevtutil qe /lf C:\windows\panther\setup.etl 
 ```
 
 -or-
 
-``` syntax
+```
 Tracerpt /l C:\windows\panther\setup.etl
 ```
 

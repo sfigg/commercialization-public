@@ -39,13 +39,13 @@ Optional components are included as part of the Windows Assessment and Deploymen
 
     -   The 64-bit version can boot 64-bit UEFI and 64-bit BIOS PCs.
 
-        ``` syntax
+        ```
         copype amd64 C:\WinPE_amd64
         ```
 
     -   The 32-bit version can boot 32-bit UEFI, 32-bit BIOS, and 64-bit BIOS PCs.
 
-        ``` syntax
+        ```
         copype x86 C:\WinPE_x86
         ```
 
@@ -53,7 +53,7 @@ Optional components are included as part of the Windows Assessment and Deploymen
 
 -   Mount the Windows PE image.
 
-    ``` syntax
+    ```
     Dism /Mount-Image /ImageFile:"C:\WinPE_amd64\media\sources\boot.wim" /index:1 /MountDir:"C:\WinPE_amd64\mount"
     ```
 
@@ -61,7 +61,7 @@ Optional components are included as part of the Windows Assessment and Deploymen
 
 1.  Add the optional component into Windows PE. To add optional components, you need to add both the optional component and its associated language packs.
 
-    ``` syntax
+    ```
     Dism /Add-Package /Image:"C:\WinPE_amd64\mount" /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\WinPE-HTA.cab"  
 
     Dism /Add-Package /Image:"C:\WinPE_amd64\mount" /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\en-us\WinPE-HTA_en-us.cab"
@@ -74,7 +74,7 @@ Optional components are included as part of the Windows Assessment and Deploymen
 
 2.  Verify that the optional component is part of the image:
 
-    ``` syntax
+    ```
     Dism /Get-Packages /Image:"C:\WinPE_amd64\mount"
     ```
 
@@ -84,13 +84,13 @@ Optional components are included as part of the Windows Assessment and Deploymen
 
 1.  List the optional components in the Windows PE image:
 
-    ``` syntax
+    ```
     Dism /Get-Packages /Image:"C:\WinPE_amd64\mount"
     ```
 
 2.  Review the resulting list of packages, and add the corresponding language packs for each package in the image, including the base Windows PE language pack.
 
-    ``` syntax
+    ```
     Dism /Add-Package /Image:"C:\WinPE_amd64\mount" /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\fr-fr\lp.cab"
 
     Dism /Add-Package /Image:"C:\WinPE_amd64\mount" /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\fr-fr\WinPE-HTA_fr-fr.cab"
@@ -100,13 +100,13 @@ Optional components are included as part of the Windows Assessment and Deploymen
 
 3.  If you're adding language packs for Japan, Korea, or China, add the font packages for these languages. Here's an example for Japan:
 
-    ``` syntax
+    ```
     Dism /Add-Package /Image:"C:\WinPE_amd64\mount" /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\WinPE-Font Support-JA-JP.cab"
     ```
 
 4.  Verify that the language packs are part of the image:
 
-    ``` syntax
+    ```
     Dism /Get-Packages /Image:"C:\WinPE_amd64\mount"
     ```
 
@@ -114,7 +114,7 @@ Optional components are included as part of the Windows Assessment and Deploymen
 
 5.  Change the regional settings to the language you'd like to use:
 
-    ``` syntax
+    ```
     Dism /Set-AllIntl:en-US /Image:"C:\WinPE_amd64\mount"
     ```
 
@@ -124,13 +124,13 @@ Optional components are included as part of the Windows Assessment and Deploymen
 
 1.  Unmount the Windows PE image.
 
-    ``` syntax
+    ```
     Dism /Unmount-Image /MountDir:"C:\WinPE_amd64\mount" /commit
     ```
 
 2.  Create bootable media, such as a USB flash drive.
 
-    ``` syntax
+    ```
     MakeWinPEMedia /UFD C:\WinPE_amd64 F:
     ```
 
@@ -167,7 +167,7 @@ Optional components are included as part of the Windows Assessment and Deploymen
 | Scripting/WinPE-Scripting | WinPE-Scripting contains a multiple-language scripting environment that is ideal for automating system administration tasks, such as batch file processing. Scripts that run in the Windows Script Host (WSH) environment can call WSH objects and other COM-based technologies that support Automation, such as WMI, to manage the Windows subsystems that are central to many system administration tasks.<br><br>**Dependencies**: Install WinPE-Scripting to make sure that full scripting functionality is available when you are using WinPE-NetFX and WinPE-HTA. The installation order is irrelevant. |
 | Scripting/WinPE-WMI | WinPE-WMI contains a subset of the Windows Management Instrumentation (WMI) providers that enable minimal system diagnostics. WMI is the infrastructure for management data and operations on Windows-based operating systems. You can write WMI scripts or applications to automate administrative tasks on remote computers. Additionally, WMI supplies management data to other parts of the operating system and products. |
 | Setup/Winpe-LegacySetup | Winpe-LegacySetup contains all Setup files from the \Sources folder on the Windows media. Add this optional component when you service Setup or the \Sources folder on the Windows media. You must add this optional component together with the optional component for the Setup feature. To add a new Boot.wim file to the media, add the parent WinPE-Setup, either of the children (WinPE-Setup-Client or WinPE-Setup-Server), and Media optional components. Media Setup is required to support Windows Server 2008 R2 installation. |
-| Setup/WinPE-Setup | Winpe-LegacySetup contains all Setup files from the \Sources folder on the Windows media. Add this optional component when you service Setup or the \Sources folder on the Windows media. You must add this optional component together with the optional component for the Setup feature. To add a new Boot.wim file to the media, add the parent WinPE-Setup, either of the children (WinPE-Setup-Client or WinPE-Setup-Server), and Media optional components. Media Setup is required to support Windows Server 2008 R2 installation. |
+| Setup/WinPE-Setup | WinPE-Setup is the parent of WinPE-Setup-Client and WinPE-Setup-Server. It contains all Setup files from the \Sources folder that are common to the client and the server. |
 | Setup/WinPE-Setup-Client | WinPE-Setup-Client contains the client branding files for the parent WinPE-Setup optional component.<br><br>**Dependencies**: Install **WinPE-Setup** before you install **WinPE-Setup-Client**. |
 | Setup/WinPE-Setup-Server | WinPE-Setup-Server includes the server branding files for the parent WinPE-Setup optional component.<br><br>**Dependencies**: Install **WinPE-Setup** before you install **WinPE-Setup-Server**. |
 | Startup/WinPE-SecureStartup | WinPE-SecureStartup enables provisioning and management of BitLocker and the Trusted Platform Module (TPM). It includes BitLocker command-line tools, BitLocker WMI management libraries, a TPM driver, TPM Base Services (TBS), the Win32_TPM class, the BitLocker Unlock Wizard, and BitLocker UI libraries. The TPM driver provides better support for both BitLocker and the TPM in this preboot environment.<br><br>**Dependencies**: Install **WinPE-WMI** before you install **WinPE-SecureStartup**. |

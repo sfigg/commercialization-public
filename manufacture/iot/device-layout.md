@@ -133,7 +133,7 @@ The following diagrams provide an overview of two configurations.
 ### Device platform layout (OEMDevicePlatform.xml)
 
 OEMDevicePlatform.xml specifies the amount of free blocks available in the device and which partitions are compressed. Example:
-   ``` syntax
+   ```
    <?xml version="1.0" encoding="utf-8"?>
    <OEMDevicePlatform xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate">
       <MinSectorCount>7372800</MinSectorCount>

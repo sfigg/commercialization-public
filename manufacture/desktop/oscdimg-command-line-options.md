@@ -506,7 +506,7 @@ You can use the Oscdimg tool to create a bootable CD or DVD by using a single-bo
 
 -   Create an image file for a UEFI-based computer. For example:
 
-    ``` syntax
+    ```
     Oscdimg -bC:\winpe_amd64\Efisys.bin -pEF -u1 -udfver102 C:\winpe_amd64\media C:\winpe_amd64\winpeamd64.iso
     ```
 
@@ -528,7 +528,7 @@ You can use the Oscdimg tool to create a bootable CD or DVD by using multi-boot 
 
 -   Create an image file for either a UEFI-based or BIOS-based computer by using a multi-boot command. For example:
 
-    ``` syntax
+    ```
     Oscdimg -bootdata:2#p0,e,bEtfsboot.com#pEF,e,bEfisys.bin -u1 
     -udfver102 C:\winpe_amd64\media C:\winpe_amd64\winpeamd64.iso
     ```
@@ -569,14 +569,14 @@ For example, D:\\cdimage would resemble the following (where D is the drive lett
 
 -   Create a boot order file. For example:
 
-    ``` syntax
+    ```
     Oscdimg -m -n -yoC:\temp\bootOrder.txt 
     -bC:\winpe_amd64\Efisys.bin C:\winpe_amd64\winpeamd64.iso
     ```
 
     where BootOrder.txt contains the following list of files:
 
-    ``` syntax
+    ```
     boot\bcd
     boot\boot.sdi
     boot\bootfix.bin

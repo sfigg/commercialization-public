@@ -5,7 +5,6 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 9cbc49e7-e962-4d9c-a04e-59b7ed67c278
-ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
 ms.author: alhopper
@@ -18,9 +17,11 @@ ms.technology: windows-oem
 # Windows Image Files and Catalog Files Overview
 
 
-Windows® System Image Manager (Windows SIM) uses Windows image **(.wim)** files and catalog **(.clg)** files to display the available components and packages that can be added to an answer file (**Unattend.xml**). Windows images and catalog files contain configurable settings that you can modify after the component or package is added to an answer file.
+Windows System Image Manager (Windows SIM) uses Windows image **(.wim)** files and catalog **(.clg)** files to display the available components and packages that can be added to an answer file (**Unattend.xml**). Windows images and catalog files contain configurable settings that you can modify after the component or package is added to an answer file.
 
-We recommend that you use the 32-bit version of Windows SIM when you create your catalog files. The following table shows the architectures of Windows SIM and the supported Windows image architectures.
+## <a href="" id="supported_architectures"></a> Supported architectures
+
+Windows SIM can create catalog files for Windows images of the following architecture types
 
 <table>
 <colgroup>
@@ -29,23 +30,26 @@ We recommend that you use the 32-bit version of Windows SIM when you create you
 </colgroup>
 <thead>
 <tr class="header">
-<th>Windows SIM architecture</th>
-<th>Can create catalogs for Windows images of the following architecture types</th>
+<th>Your version of Windows</th>
+<th>Windows images you can create catalog files from</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>x86 version of SIM</p></td>
-<td><p>x86-based systems, x64-based systems, and Windows® RT ARM-based systems</p></td>
+<td><p>x86 version of Windows</p></td>
+<td><p>x86-based systems, x64-based systems, and ARM-based systems</p></td>
 </tr>
 <tr class="even">
-<td><p>x64 version of SIM</p></td>
+<td><p>x64 version of Windows</p></td>
 <td><p>x64-based systems only</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+Don't have an x86 PC handy?
+
+* You can install the 32-bit version of Windows on a 64-bit PC. 
+* You can install Windows on a 32-bit virtual machine from a 64-bit PC.
 
 ## Windows Image Files
 
@@ -93,42 +97,31 @@ Catalog files have several advantages over Windows image files:
 
 -   Non-administrators can create answer files for a catalog file. However, only administrators can open Windows image files.
 
-### Troubleshooting Catalog Creation
+### Troubleshooting 
 
-In some scenarios, you might not be able to create a catalog for a Windows image. Common causes and workarounds include the following:
+-   **"The catalog file for Windows Image (image name) cannot be opened for the following reason:**
 
--   **Catalog creation fails when the Windows image file is in a read-only location, such as on a DVD.** The workaround for this issue is to copy the Windows image file to a location that has read and write permission for the current user.
+    **Cannot find the catalog file associated with the Windows image (image name)**
 
--   **Windows SIM cannot create a catalog for a 32-bit Windows image from a 64-bit version of Windows SIM.** To work around this issue, use the 32-bit version of Windows SIM to create catalogs for your Windows images.
+    **You must have a valid catalog file to continue. Do you want to create a catalog file?"** 
 
-    Windows SIM cannot create catalog files for some Windows images of different architecture types. We recommend that you use the 32-bit version of Windows SIM to create catalog files because this version can create catalogs for all Windows image architecture types. The following table describes the Windows SIM architecture types and catalogs that can be created for each Windows image architecture type.
+    _Fix:_ Click **Yes** to create a catalog file. After you've created the catalog file, this message will no longer appear.
 
-    We recommend that you use the 32-bit version of Windows SIM when you create your catalog files. The following table shows the architectures of Windows SIM and the supported Windows image architectures.
+    _What's going on_: This message usually shows up the first time you open a .wim file. 
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Windows SIM architecture</th>
-<th>Can create catalogs for Windows images of the following architecture types</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>x86 version of SIM</p></td>
-<td><p>x86-based systems, x64-based systems, and Windows® RT ARM-based systems</p></td>
-</tr>
-<tr class="even">
-<td><p>x64 version of SIM</p></td>
-<td><p>x64-based systems only</p></td>
-</tr>
-</tbody>
-</table>
+    
+-   **"Access denied"** 
 
- 
+    _Fix:_ Copy the .wim file to a simple writable file location, like C:\Images, then try again.
+    
+    _What's going on_: This message appears when you're creating a catalog file from a .wim file that's in a location that the system can't write to, like a DVD or secured network share.
+
+-   **"Catalog creation failed to complete. This 64-bit version of Windows SIM can only create catalogs for 64-bit Windows images. For a list of supported architecture types, see link below."** 
+
+    _Fix:_  Use an x86 version installation of Windows to create catalog files for x86 or ARM-based .wim files. 
+
+    _What's going on_: Windows SIM can't create x86 or ARM catalog files from a 64-bit Windows installation. See [architectures](#supported_architectures).
+    
 
 ## Related topics
 
@@ -141,7 +134,7 @@ In some scenarios, you might not be able to create a catalog for a Windows image
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_wsim\p_wsim%5D:%20Windows%20Image%20Files%20and%20Catalog%20Files%20Overview%20%20RELEASE:%20%2810/17/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default.aspx. "Send comments about this topic to Microsoft")
+
 
 
 

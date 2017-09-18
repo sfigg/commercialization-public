@@ -24,7 +24,7 @@ This function is for use only in the Microsoft Manufacturing OS.
 ## <span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>Syntax
 
 
-``` syntax
+```
 HRESULT SetScreenOff();
 ```
 
@@ -48,7 +48,7 @@ There is not an equivalent function to return the device to a full power state.
 
 To use SetScreenOff, include the header and call without any parameters.
 
-``` syntax
+```
 #include <ManufacturingConnectedStandbyControl.h>
 SetScreenOff();
 ```

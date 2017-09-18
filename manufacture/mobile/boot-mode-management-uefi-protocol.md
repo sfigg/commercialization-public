@@ -23,20 +23,20 @@ This section provides a detailed description of the **EFI\_BOOT\_MODE\_MGMT\_PRO
 
 **GUID**
 
-``` syntax
+```
 #define EFI_BOOT_MODE_MGMT_PROTOCOL_GUID \
    { 0xBE464946, 0x9787, 0x4FEB, { 0xBD, 0x71, 0x14, 0xC1, 0xC5, 0x2D, 0x69, 0xD1 } }
 ```
 
 **Revision number**
 
-``` syntax
+```
 #define EFI_BOOT_MODE_MGMT_PROTOCOL_REVISION 0x00010000
 ```
 
 **Protocol interface structure**
 
-``` syntax
+```
 typedef struct _EFI_BOOT_MODE_MGMT_PROTOCOL {
     UINT32                 Revision;
     EFI_SET_BOOT_MODE_INFO SetBootModeInfo;

@@ -5,10 +5,9 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 358b6599-0360-47ee-bac7-8ae0f119c01f
-ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
-ms.author: joshbax
+ms.author: sapaetsc
 ms.date: 05/05/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -23,7 +22,7 @@ Compares two [IProfileCollection](iprofilecollection.md) objects to see whether 
 ## Syntax
 
 
-``` syntax
+```
 HRESULT IsEqual
   ([in] IProfileCollection* pProfileCollection)
 ;

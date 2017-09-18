@@ -5,10 +5,9 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 3cf0d9c8-d456-424a-8d33-1f900f78595e
-ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
-ms.author: joshbax
+ms.author: sapaetsc
 ms.date: 05/05/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -23,7 +22,7 @@ Indicates the number of elements to skip.
 ## Syntax
 
 
-``` syntax
+```
 HRESULT Skip
   ([in] ULONG celt)
 ;

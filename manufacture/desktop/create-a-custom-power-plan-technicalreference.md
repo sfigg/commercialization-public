@@ -54,13 +54,13 @@ Optimizing Windows power plans can help improve battery life. However, a single 
 
 -   On your technician computer, at an elevated command prompt, type the following:
 
-    ``` syntax
+    ```
     powercfg -LIST
     ```
 
     The computer will return the list of available power plans. In the following example, these plans are *Balanced*, *Power saver*, and *OutdoorPlan*.
 
-    ``` syntax
+    ```
     Existing Power Schemes (* Active)
     -----------------------------------
     Power Scheme GUID: {guidPlan1}  (Balanced) *
@@ -79,7 +79,7 @@ After you have created power plans that work for your system, you can deploy the
 
 To export the OutdoorPlan power plan that you created on your technician computer, open an elevated command prompt, and then type the following
 
-``` syntax
+```
 powercfg -EXPORT C:\OutdoorPlan.pow {guidPlan-New}
 ```
 

@@ -1,8 +1,11 @@
 ---
-title: Simulataneous pen and touch validation
-description: Validating for simulataneous pen and touch input.
-ms.assetid: 
+title: Simultaneous pen and touch validation
+description: Validating for simultaneous pen and touch input.
 ms.author: windowsdriverdev
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # Simultaneous pen and touch validation

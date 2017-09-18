@@ -28,43 +28,14 @@ You can use the Deployment Image Servicing and Management (DISM) tool to capture
 
 This table shows the types of partitions that you must capture and those that are managed automatically.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Partition type</th>
-<th align="left">Should you capture this partition?</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>System partition</strong> (BIOS system partition or EFI System Partition)</p></td>
-<td align="left"><p>Optional.</p>
-<p>If only a simple set of partition files is required, you don’t have to capture this partition.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Microsoft Reserved partition (MSR)</strong></p></td>
-<td align="left"><p>No.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong>Primary partitions</strong> (Windows partitions, utility partitions)</p></td>
-<td align="left"><p>Yes.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Extended partition</strong></p></td>
-<td align="left"><p>No.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong>Logical partitions</strong> (Windows partitions, utility partitions)</p></td>
-<td align="left"><p>Yes.</p></td>
-</tr>
-</tbody>
-</table>
 
- 
+| Partition type | Should you capture this partition? |
+| --- | --- |
+| **System partition** (BIOS system partition or EFI System Partition) | Optional<p><p>If only a simple set of partition files is required, you don’t have to capture this partition. |
+| **Microsoft Reserved partition (MSR)** | No |
+| **Primary partitions** (Windows partitions, utility partitions) | Yes |
+| **Extended partition** | No |
+| **Logical partitions** (Windows partitions, utility partitions) | Yes |
 
 You can capture and apply images between partitions on BIOS-based and UEFI-based computers, because the Windows image isn’t affected by the firmware. For more information, see [Capture and Apply Windows, System, and Recovery Partitions](capture-and-apply-windows-system-and-recovery-partitions.md).
 
@@ -77,45 +48,55 @@ If any of the partitions you want to capture don’t already have a drive letter
 
 2.  At the Windows PE command prompt, type `diskpart` to open the DiskPart tool.
 
-    ``` syntax
+    ```
     X:> diskpart
     DISKPART>
     ```
 
-3.  Select the hard disk with the `select disk` command. For example,
+3. View the disks in your PC with the `list disk` command. For example,
 
-    ``` syntax
+    ```
+    DISKPART> list disk
+
+    Disk ###  Status         Size     Free     Dyn  Gpt
+    --------  -------------  -------  -------  ---  ---
+    Disk 0    Online          127 GB      0 B        *
+    ```
+
+4.  Select the hard disk with the `select disk` command. For example,
+
+    ```
     DISKPART> select disk 0
     ```
 
-4.  View the partitions with the `list partition` command. For example,
+5.  View the partitions with the `list partition` command. For example,
 
-    ``` syntax
-    DISKPART> list partition
-
+    ```
     DISKPART> list partition
 
       Partition ###  Type              Size     Offset
       -------------  ----------------  -------  -------
-      Partition 1    Primary            300 MB  1024 KB
-      Partition 2    Primary            200 GB   301 MB
+      Partition 1    Recovery           300 MB  1024 KB
+      Partition 2    System             100 MB   451 MB
+      Partition 3    Reserved            16 MB   551 MB
+      Partition 4    Primary            126 GB   567 MB
     ```
 
-5.  Select the partition with the `select partition` command. For example,
+6.  Select the partition with the `select partition` command. For example,
 
-    ``` syntax
-    DISKPART> select partition=1
+    ```
+    DISKPART> select partition=2
     ```
 
-6.  Assign a letter to the partition with the `assign letter` command. For example,
+7.  Assign a letter to the partition with the `assign letter` command. For example,
 
-    ``` syntax
+    ```
     DISKPART> assign letter=S
     ```
 
-7.  Type `exit` to return to the Windows PE command prompt.
+8.  Type `exit` to return to the Windows PE command prompt.
 
-    ``` syntax
+    ```
     DISKPART> exit
     X:\>
     ```
@@ -129,7 +110,7 @@ Capture images for each customized partition.
 
 -   At the Windows PE command prompt, capture the images by using the **DISM** command together with the **/captureImage** option. For example,
 
-    ``` syntax
+    ```
     Dism /Capture-Image /ImageFile:c:\my-windows-partition.wim /CaptureDir:C:\ /Name:"My Windows partition"
     Dism /Capture-Image /ImageFile:s:\my-system-partition.wim /CaptureDir:S:\ /Name:"My system partition"
     ```
@@ -143,7 +124,7 @@ Save your .wim files to your network or another safe location.
 
 1.  Connect to your distribution share by using the **net use** command. For example,
 
-    ``` syntax
+    ```
     net use n: \\Server\Share
     ```
 
@@ -151,7 +132,7 @@ Save your .wim files to your network or another safe location.
 
 2.  Copy the partitions to your network share. For example,
 
-    ``` syntax
+    ```
     md N:\Images\
     copy C:\my-windows-partition.wim N:\Images\
     copy c:\my-system-partition.wim N:\Images\

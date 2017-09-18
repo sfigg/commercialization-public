@@ -5,10 +5,9 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 522285e9-49ec-42b6-bc7d-f90e473ccc70
-ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
-ms.author: joshbax
+ms.author: sapaetsc
 ms.date: 05/05/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -20,7 +19,7 @@ ms.technology: windows-oem
 
 This action produces a text file that summarizes metrics related to registry accesses and changes.
 
-``` syntax
+```
 -a registry [-counts [n]] [-tree] [-unknown] [-range T1 T2]
 ```
 

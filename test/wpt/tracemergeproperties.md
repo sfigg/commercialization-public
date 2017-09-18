@@ -5,10 +5,9 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 7771cdc2-3573-4a3b-a52b-70ef77f706dc
-ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
-ms.author: joshbax
+ms.author: sapaetsc
 ms.date: 05/05/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -30,7 +29,7 @@ Represents a collection of [TraceMergeProperty](tracemergeproperty.md) element. 
 ## Syntax
 
 
-``` syntax
+```
 <TraceMergeProperties>
 
   <!-- Child elements -->
@@ -100,7 +99,7 @@ None.
 
 The following code example shows how to define this element.
 
-``` syntax
+```
 <TraceMergeProperties>
   <TraceMergeProperty
     Id="TraceMerge_Default"

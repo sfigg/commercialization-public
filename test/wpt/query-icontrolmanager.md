@@ -5,10 +5,9 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 676f0ed9-641c-49ea-882f-0607e387f8d0
-ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
-ms.author: joshbax
+ms.author: sapaetsc
 ms.date: 05/05/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -23,7 +22,7 @@ Queries the properties of the session and providers in all profiles.
 ## Syntax
 
 
-``` syntax
+```
 HRESULT Query
   ([out] BSTR* pbstrResults,
   [in] VARIANT_BOOL fValidateRuntimeState)

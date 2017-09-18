@@ -37,13 +37,13 @@ You can find the edition of Windows your image is currently set to by mounting t
 
 2.  At the command prompt, type the following command to retrieve the name or index number for the image that you want to modify.
 
-    ``` syntax
+    ```
     Dism /Get-ImageInfo /ImageFile:C:\test\images
     ```
 
 3.  Type the following command to mount the offline Windows image.
 
-    ``` syntax
+    ```
     Dism /Mount-Image /ImageFile:C:\test\images /Index:1 /MountDir:C:\test\offline
     ```
 
@@ -51,7 +51,7 @@ You can find the edition of Windows your image is currently set to by mounting t
 
 4.  Type the following command to find the edition of Windows your image is currently set to.
 
-    ``` syntax
+    ```
     Dism /Image:C:\test\offline /Get-CurrentEdition
     ```
 
@@ -59,7 +59,7 @@ You can find the edition of Windows your image is currently set to by mounting t
 
 5.  Unmount the image or continue with the next procedure. To unmount your image, type the following command.
 
-    ``` syntax
+    ```
     Dism /Unmount-Image /MountDir:C:\test\offline /Commit
     ```
 
@@ -67,13 +67,13 @@ You can find the edition of Windows your image is currently set to by mounting t
 
 1.  Type the following command to mount the offline Windows image (if it is not already mounted).
 
-    ``` syntax
+    ```
     Dism /Mount-Image /ImageFile:C:\test\images /Name:<Image_name> /MountDir:C:\test\offline
     ```
 
 2.  Type the following command to find the editions of Windows that you can change your image to.
 
-    ``` syntax
+    ```
     Dism /Image:C:\test\offline /Get-TargetEditions
     ```
 
@@ -86,13 +86,13 @@ You can find the edition of Windows your image is currently set to by mounting t
 
 3.  Type the following command specifying the edition-ID to change the Windows image to a higher edition.
 
-    ``` syntax
+    ```
     Dism /Image:C:\test\offline /Set-Edition:Professional
     ```
 
 4.  Type the following command to unmount the image and commit your changes.
 
-    ``` syntax
+    ```
     Dism /Unmount-Image /MountDir:C:\test\offline /Commit
     ```
 

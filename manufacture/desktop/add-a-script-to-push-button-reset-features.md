@@ -68,7 +68,7 @@ These files should be placed in the folder C:\\Recovery\\OEM, and will automatic
 
     This example script preserves files that would otherwise be removed, by placing them in a temporary location in memory, to be retrieved by another sample script, **RetrieveLogFiles.cmd**.
 
-    ``` syntax
+    ```
     :rem == SaveLogFiles.cmd
 
     :rem == This sample script preserves files that would 
@@ -96,7 +96,7 @@ These files should be placed in the folder C:\\Recovery\\OEM, and will automatic
 
     This sample script retrieves the files that were saved in memory by the `SaveLogFiles.cmd` script, and adds them back to the system. It also runs a system diagnostic, and then sends the output to the C:\\Fabrikam folder.
 
-    ``` syntax
+    ```
     :rem == RetrieveLogFiles.cmd
 
     :rem == This sample script retrieves the files that 
@@ -137,7 +137,7 @@ These files should be placed in the folder C:\\Recovery\\OEM, and will automatic
 
 1.  In Notepad, create a configuration file (ResetConfig.xml) that points to your push-button reset extensibility scripts. For more information about this file, see [ResetConfig XML Reference](resetconfig-xml-reference-s14.md).
 
-    ``` syntax
+    ```
     <?xml version="1.0" encoding="utf-8"?>
     <!-- ResetConfig.xml -->
        <Reset>
@@ -183,7 +183,7 @@ These files should be placed in the folder C:\\Recovery\\OEM, and will automatic
 
 2.  Copy the configuration files to the destination computer
 
-    ``` syntax
+    ```
     Copy E:\Recovery\RecoveryImage\* R:\RecoveryImage\*
     ```
 
@@ -200,7 +200,7 @@ Save copies of unattend.xml, LayoutModification.xml, oobe.xml, plus these two te
 
 **ResetConfig.xml:**
 
-``` syntax
+```
 <?xml version="1.0" encoding="utf-8"?>
 <!-- ResetConfig.xml -->
 <Reset>
@@ -217,7 +217,7 @@ Save copies of unattend.xml, LayoutModification.xml, oobe.xml, plus these two te
 
 **EnableCustomizations.cmd:**
 
-``` syntax
+```
 rem EnableCustomizations.cmd
 
 rem Define %TARGETOS% as the Windows folder (This later becomes C:\Windows) 
@@ -237,7 +237,7 @@ wpeutil CreatePageFile /path=%TARGETOSDRIVE%\PageFile.sys /size=256
 
 For multilingual deployments, OOBE.xml uses a more complicated folder structure. It's OK to just copy the entire folder into C:\\Recovery\\OEM, and then modify the script to copy the entire folder:
 
-``` syntax
+```
 xcopy "%ScriptFolder%\Info\" "%TargetOSDrive%\System32\Info\" /s
 ```
 

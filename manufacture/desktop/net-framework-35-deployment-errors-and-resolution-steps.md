@@ -16,15 +16,10 @@ ms.technology: windows-oem
 
 This topic describes common errors you can encounter when you use Features on Demand to enable or deploy .NET Framework 3.5, and recommended steps to resolve the issues.
 
-**Table 1 Features on Demand Error Codes**
+**Features on Demand Error Codes**
 
+> [!div class="mx-tableFixed"]
 <table>
-<colgroup>
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-</colgroup>
 <thead>
 <tr class="header">
 <th align="left">Error code</th>

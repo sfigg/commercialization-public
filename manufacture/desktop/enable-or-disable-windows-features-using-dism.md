@@ -40,13 +40,13 @@ The Deployment Image Servicing and Management (DISM) tool is a command-line tool
 
     For example, at the command prompt type:
 
-    ``` syntax
+    ```
     Dism /Get-ImageInfo /ImageFile:C:\test\images\install.wim
     ```
 
 4.  Mount the offline Windows image. For example, type:
 
-    ``` syntax
+    ```
     Dism /Mount-Image /ImageFile:C:\test\images\install.wim /Name:"Base Windows Image" /MountDir:C:\test\offline
     ```
 
@@ -54,13 +54,13 @@ The Deployment Image Servicing and Management (DISM) tool is a command-line tool
 
 1.  List all of the features available in the operating system. For example, type:
 
-    ``` syntax
+    ```
     Dism /online /Get-Features
     ```
 
     To service an offline image, specify the location of the mounted image directory. For example, type:
 
-    ``` syntax
+    ```
     Dism /Image:C:\test\offline /Get-Features
     ```
 
@@ -70,7 +70,7 @@ The Deployment Image Servicing and Management (DISM) tool is a command-line tool
 
 3.  Use `/Get-FeatureInfo` to list information about the specific feature you are interested in. For example, type:
 
-    ``` syntax
+    ```
     Dism /online /Get-FeatureInfo /FeatureName:TFTP
     ```
 
@@ -78,19 +78,19 @@ The Deployment Image Servicing and Management (DISM) tool is a command-line tool
 
 1.  Enable a specific feature in the image. You can use the `/All` argument to enable all of the parent features in the same command. For example, type:
 
-    ``` syntax
+    ```
     Dism /online /Enable-Feature /FeatureName:TFTP /All
     ```
 
     To service an offline image, specify the location of the mounted image directory. For example, type:
 
-    ``` syntax
+    ```
     Dism /Image:C:\test\offline /Enable-Feature /FeatureName:TFTP /All
     ```
 
 2.  Optional: Get the status of the feature you have enabled. For example, type:
 
-    ``` syntax
+    ```
     Dism /online /Get-FeatureInfo /FeatureName:TFTP
     ```
 
@@ -106,19 +106,19 @@ The Deployment Image Servicing and Management (DISM) tool is a command-line tool
 
     For example, type:
 
-    ``` syntax
+    ```
     Dism /Online /Enable-Feature /FeatureName:TFTP /Source:Z:\sources\SxS /Source:C:\test\mount\windows /LimitAccess
     ```
 
     To service an offline image, specify the location of the mounted image directory. For example, type:
 
-    ``` syntax
+    ```
     Dism /Image:C:\test\offline /Enable-Feature /FeatureName:TFTP /Source:C:\test\mount\windows
     ```
 
 2.  Optional: Get the status of the feature you have enabled. For example, type:
 
-    ``` syntax
+    ```
     Dism /online /Get-FeatureInfo /FeatureName:TFTP
     ```
 
@@ -128,19 +128,19 @@ The Deployment Image Servicing and Management (DISM) tool is a command-line tool
 
 1.  Disable a specific feature in the image. For example, type:
 
-    ``` syntax
+    ```
     Dism /online /Disable-Feature /FeatureName:TFTP
     ```
 
     To service an offline image, specify the location of the mounted image directory. For example, type:
 
-    ``` syntax
+    ```
     Dism /Image:C:\test\offline /Disable-Feature /FeatureName:TFTP
     ```
 
 2.  Optional: Use `DISM /GetFeatureInfo` to get the status of the feature you have disabled. For example, type:
 
-    ``` syntax
+    ```
     Dism /online /Get-FeatureInfo /FeatureName:TFTP
     ```
 
@@ -152,19 +152,19 @@ The Deployment Image Servicing and Management (DISM) tool is a command-line tool
 
     For example, type:
 
-    ``` syntax
+    ```
     Dism /online /Disable-Feature /FeatureName:TFTP /Remove
     ```
 
     To service an offline image, specify the location of the mounted image directory. For example, type:
 
-    ``` syntax
+    ```
     Dism /Image:C:\test\offline /Disable-Feature /FeatureName:TFTP /Remove
     ```
 
 2.  Optional: Use `DISM /GetFeatureInfo` to get the status of the feature you have disabled. For example, type:
 
-    ``` syntax
+    ```
     Dism /online /Get-FeatureInfo /FeatureName:TFTP
     ```
 
@@ -193,13 +193,13 @@ The Deployment Image Servicing and Management (DISM) tool is a command-line tool
 
 8.  At the command prompt, type the following command to apply the unattended answer file to the image.
 
-    ``` syntax
+    ```
     Dism /online /Apply-Unattend:C:\test\answerfiles\myunattend.xml
     ```
 
     To service an offline image, specify the location of the mounted image directory. For example, type:
 
-    ``` syntax
+    ```
     Dism /Image:C:\test\offline /Apply-Unattend:C:\test\answerfiles\myunattend.xml
     ```
 
@@ -207,7 +207,7 @@ The Deployment Image Servicing and Management (DISM) tool is a command-line tool
 
 -   Commit the changes and unmount the image. For example, type:
 
-    ``` syntax
+    ```
     Dism /Unmount-Image /MountDir:C:\test\offline /Commit
     ```
 

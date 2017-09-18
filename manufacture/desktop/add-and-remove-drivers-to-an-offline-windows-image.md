@@ -25,7 +25,7 @@ When you use DISM to install a device driver to an offline image, the device dri
 
 1.  At an elevated command prompt, retrieve the name or index number for the image that you want to modify. For example, type:
 
-    ``` syntax
+    ```
     Dism /Get-ImageInfo /ImageFile:C:\test\images\install.wim
     ```
 
@@ -33,19 +33,19 @@ When you use DISM to install a device driver to an offline image, the device dri
 
 2.  Mount the offline Windows image. For example, type:
 
-    ``` syntax
+    ```
     Dism /Mount-Image /ImageFile:C:\test\images\install.wim /Name:"Windows Drive" /MountDir:C:\test\offline
     ```
 
 3.  Add a driver to the image.
 
-    ``` syntax
+    ```
     Dism /Image:C:\test\offline /Add-Driver /Driver:C:\drivers\mydriver.inf
     ```
 
     To install all of the drivers from a folder and all its subfolders, point to the folder and use the **/Recurse** option.
 
-    ``` syntax
+    ```
     Dism /Image:C:\test\offline /Add-Driver /Driver:c:\drivers /Recurse
     ```
 
@@ -53,19 +53,19 @@ When you use DISM to install a device driver to an offline image, the device dri
 
     To install an unsigned driver, use **/ForceUnsigned** to override the requirement that drivers installed on X64-based computers must have a digital signature.
 
-    ``` syntax
+    ```
     Dism /Image:C:\test\offline /Add-Driver /Driver:C:\drivers\mydriver.inf /ForceUnsigned
     ```
 
 4.  Review the list of third-party driver (.inf) files in the Windows image. Drivers added to the Windows image are named Oem\*.inf. This is to guarantee unique naming for new drivers added to the computer. For example, the files MyDriver1.inf and MyDriver2.inf are renamed Oem0.inf and Oem1.inf.
 
-    ``` syntax
+    ```
     Dism /Image:C:\test\offline /Get-Drivers 
     ```
 
 5.  Commit the changes and unmount the image.
 
-    ``` syntax
+    ```
     Dism /Unmount-Image /MountDir:C:\test\offline /Commit
     ```
 
@@ -73,7 +73,7 @@ When you use DISM to install a device driver to an offline image, the device dri
 
 1.  At an elevated command prompt, retrieve the name or index number for the image that you want to modify.
 
-    ``` syntax
+    ```
     Dism /Get-ImageInfo /ImageFile:C:\test\images\install.wim
     ```
 
@@ -81,13 +81,13 @@ When you use DISM to install a device driver to an offline image, the device dri
 
 2.  Mount the offline Windows image. For example:
 
-    ``` syntax
+    ```
     Dism /Mount-Image /ImageFile:C:\test\images\install.wim /Name:"Windows 10 Home" /MountDir:C:\test\offline
     ```
 
 3.  Remove a specific driver from the image. Multiple drivers can be removed on one command line.
 
-    ``` syntax
+    ```
     Dism /Image:C:\test\offline /Remove-Driver /Driver:OEM1.inf /Driver:OEM2.inf
     ```
 
@@ -97,7 +97,7 @@ When you use DISM to install a device driver to an offline image, the device dri
 
 4.  Commit the changes and unmount the image.
 
-    ``` syntax
+    ```
     Dism /Unmount-Image /MountDir:C:\test\offline /Commit
     ```
 
@@ -125,7 +125,7 @@ When you use DISM to install a device driver to an offline image, the device dri
 
 7.  Save the answer file and exit Windows SIM. The answer file must resemble the following sample.
 
-    ``` syntax
+    ```
     <?xml version="1.0" ?><unattend xmlns="urn:schemas-microsoft-com:asm.v3" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State">
        <settings pass="offlineServicing">
           <component name="Microsoft-Windows-PnpCustomizationsNonWinPE" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS">
@@ -146,7 +146,7 @@ When you use DISM to install a device driver to an offline image, the device dri
 
 8.  Mount the Windows image that you intend to install the drivers to by using DISM. For example, type:
 
-    ``` syntax
+    ```
     Dism /Mount-Image /ImageFile:C:\test\images\install.wim /Index:1 /MountDir:C:\test\offline
     ```
 
@@ -154,7 +154,7 @@ When you use DISM to install a device driver to an offline image, the device dri
 
 9.  Use DISM to apply the answer file to the mounted Windows image. For example, type:
 
-    ``` syntax
+    ```
     DISM /Image:C:\test\offline /Apply-Unattend:C:\test\answerfiles\myunattend.xml
     ```
 
@@ -166,13 +166,13 @@ When you use DISM to install a device driver to an offline image, the device dri
 
     For example, type:
 
-    ``` syntax
+    ```
     Dism /Image:C:\test\offline /Get-Drivers 
     ```
 
 11. Unmount the .wim file and commit the changes. For example, type:
 
-    ``` syntax
+    ```
     Dism /Unmount-Image /MountDir:C:\test\offline /Commit
     ```
 

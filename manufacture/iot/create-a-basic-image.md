@@ -27,7 +27,7 @@ See [Get the tools needed to customize Windows IoT Core](set-up-your-pc-to-custo
 
 -   Open the file **C:\\IoT-ADK-AddonKit\\Tools\\setOEM.cmd** in Notepad, and modify it with your company name. We've added this variable to help you create packages with names that are easy to differentiate from those provided from other manufacturers you're working with.
 
-    ``` syntax
+    ```
     set OEM_NAME=Fabrikam
     ```
 
@@ -58,7 +58,7 @@ The certificates are added to the root. To learn more, see [Set up the signing e
 
 ### Build a Raspberry Pi BSP (New for Windows 10, Version 1703)
 
-1. Extract rpibsp.zip to a folder on your hard drive, for example C:\\BSP
+1. Extract [rpibsp.zip](https://github.com/ms-iot/iot-adk-addonkit/releases/download/RPiBSP/rpibsp.zip) to a folder on your hard drive, for example C:\\BSP
 
 2. From the IOT Core Shell, navigate to C:\BSP, and run `build.cmd`. This will add the pakages necessary to create a project with the RPi2 BSP
 
@@ -66,7 +66,7 @@ The certificates are added to the root. To learn more, see [Set up the signing e
 cd c:\BSP
 build.cmd
 ```
-
+For more information on available bsps, see [Windows 10 IoT Core BSPs](https://developer.microsoft.com/windows/iot/docs/bsp).
 ### Build packages
 
 Get your environment ready to create products by building all of the packages in the working folders.
@@ -80,7 +80,7 @@ buildpkg All
 
 Create a new product folder that uses the Rpi2 BSP. This folder represents a new device we want to build, and contains sample customization files that we can use to start our project.
 
-``` syntax
+```
 newproduct ProductA rpi2
 ```
     
@@ -94,7 +94,7 @@ This creates the folder: C:\\IoT-ADK-AddonKit\\Source-&lt;arch&gt;\\Products\\Pr
 
 2.  Build a flashable test image using the default files. Test images include additional tools, and you can create test images using either signed or unsigned test packages.
 
-    ``` syntax
+    ```
     buildimage ProductA test
     ```
 

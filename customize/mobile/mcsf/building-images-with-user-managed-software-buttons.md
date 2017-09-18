@@ -35,10 +35,8 @@ OEMs should note the following accessibility features when support for the navig
 
 -   The buttons on the navigation bar provide haptic feedback.
 
-**Note**  
-Some settings in this customization may not be available depending on the Windows Phone 8.1 release that you are using to commercialize your device.
-
- 
+> [!NOTE]
+> Some settings in this customization may not be available depending on the Windows Phone 8.1 release that you are using to commercialize your device.
 
 <a href="" id="constraints---imagetimeonly"></a>**Constraints:** ImageTimeOnly  
 
@@ -47,7 +45,7 @@ To build an image with software-rendered buttons that can be shown or hidden by 
 
 1.  Create a customization answer file using the contents shown in the following code sample.
 
-    ``` syntax
+    ```
     <?xml version="1.0" encoding="utf-8" ?>  
     <ImageCustomizations xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate"  
                          Name="UserManagedSoftwareButtons"  
@@ -110,88 +108,27 @@ To build an image with software-rendered buttons that can be shown or hidden by 
 
 5.  **Optional**. To specify the default color of the software-rendered Back, Home, and Search buttons, include the `Color` setting and set `Value` to one of the following values. If you do not want to specify the default color, you can omit the `Color` setting and its parent `Settings` element.
 
-    <table>
-    <colgroup>
-    <col width="50%" />
-    <col width="50%" />
-    </colgroup>
-    <thead>
-    <tr class="header">
-    <th>Value</th>
-    <th>Description</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td><p>0 or 'Always Dark'</p></td>
-    <td><p>The buttons are black. This is the default value.</p></td>
-    </tr>
-    <tr class="even">
-    <td><p>1 or 'Theme Color'</p></td>
-    <td><p>The color of the buttons matches the current theme chosen by the user (black for dark theme, white for light theme).</p></td>
-    </tr>
-    <tr class="odd">
-    <td><p>2 or 'Accent Color'</p></td>
-    <td><p>The color of the buttons matches the current accent color chosen by the user.</p></td>
-    </tr>
-    </tbody>
-    </table>
+    | Value               | Description                                                                                                          |
+    |:--------------------|:---------------------------------------------------------------------------------------------------------------------|
+    | 0 or `Always Dark`  | The buttons are black. This is the default value.                                                                    |
+    | 1 or `Theme Color`  | The color of the buttons matches the current theme chosen by the user (black for dark theme, white for light theme). |
+    | 2 or `Accent Color` | The color of the buttons matches the current accent color chosen by the user.                                        |
 
 6.  **Optional**. To configure the navigation bar auto show and hide option, set `AutoHide` to one of the following values:
 
-    <table>
-    <colgroup>
-    <col width="50%" />
-    <col width="50%" />
-    </colgroup>
-    <thead>
-    <tr class="header">
-    <th>Value</th>
-    <th>Description</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td><p>0 or 'Disabled'</p></td>
-    <td><p>Disables the auto show and hide option for the navigation bar. This is the default OS value.</p></td>
-    </tr>
-    <tr class="even">
-    <td><p>1 or 'Enabled'</p></td>
-    <td><p>Enables the auto show and hide option for the navigation bar.</p></td>
-    </tr>
-    </tbody>
-    </table>
-
-     
+    | Value           | Description                                                                                  |
+    |:----------------|:---------------------------------------------------------------------------------------------|
+    | 0 or `Disabled` | Disables the auto show and hide option for the navigation bar. This is the default OS value. |
+    | 1 or `Enabled`  | Enables the auto show and hide option for the navigation bar.                                |
 
 7.  **Optional**. If you are using Windows Phone 8.1 GDR1 or later versions of the OS, you can also configure these settings:
 
     -   To set the OLED burn-in protection flag for the nav bar, set `BurnInProtectionMode` to one of the following values:
 
-        <table>
-        <colgroup>
-        <col width="50%" />
-        <col width="50%" />
-        </colgroup>
-        <thead>
-        <tr class="header">
-        <th>Value</th>
-        <th>Description</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td><p>0 or 'Disabled'</p></td>
-        <td><p>Disables the nav bar option for burn-in protection mode. This is the default OS value.</p></td>
-        </tr>
-        <tr class="even">
-        <td><p>1 or 'Enabled'</p></td>
-        <td><p>Enables the nav bar option for burn-in protection mode.</p></td>
-        </tr>
-        </tbody>
-        </table>
-
-         
+        | Value           | Description                                                                            |
+        |:----------------|:---------------------------------------------------------------------------------------|
+        | 0 or `Disabled` | Disables the nav bar option for burn-in protection mode. This is the default OS value. |
+        | 1 or `Enabled`  | Enables the nav bar option for burn-in protection mode.                                |
 
     -   To set the timeout, in seconds, for the OLED burn-in protection idle timer, set the value for `BurnInProtectionIdleTimerTimeout`. The default value is 60 seconds. If you change the default value, the new value must be 1 second or more.
 
@@ -207,57 +144,17 @@ To build an image with software-rendered buttons that can be shown or hidden by 
 
         For OEMs building test and health images, you can configure the user hint by setting `UserEducationHintDisable` to one of the following values:
 
-        <table>
-        <colgroup>
-        <col width="50%" />
-        <col width="50%" />
-        </colgroup>
-        <thead>
-        <tr class="header">
-        <th>Value</th>
-        <th>Description</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td><p>0 or 'Hint Disabled'</p></td>
-        <td><p>Disables the user education hint.</p></td>
-        </tr>
-        <tr class="even">
-        <td><p>1 or 'Hint Enabled'</p></td>
-        <td><p>Enables the user education hint. This is the default OS behavior.</p></td>
-        </tr>
-        </tbody>
-        </table>
-
-         
+        | Value                | Description                                                       |
+        |:---------------------|:------------------------------------------------------------------|
+        | 0 or `Hint Disabled` | Disables the user education hint.                                 |
+        | 1 or `Hint Enabled`  | Enables the user education hint. This is the default OS behavior. |
 
     -   To allow users to double tap any open space on the nav bar to turn off the screen, configure the `DoubleTapOff` setting to one of the following values:
 
-        <table>
-        <colgroup>
-        <col width="50%" />
-        <col width="50%" />
-        </colgroup>
-        <thead>
-        <tr class="header">
-        <th>Value</th>
-        <th>Description</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td><p>0 or Disabled'</p></td>
-        <td><p>Disables the feature. This is the default OS behavior.</p></td>
-        </tr>
-        <tr class="even">
-        <td><p>1 or 'Enabled'</p></td>
-        <td><p>Enables the feature.</p></td>
-        </tr>
-        </tbody>
-        </table>
-
-         
+        | Value           | Description                                            |
+        |:----------------|:-------------------------------------------------------|
+        | 0 or `Disabled` | Disables the feature. This is the default OS behavior. |
+        | 1 or `Enabled`  | Enables the feature.                                   |
 
 8.  If you have not done so already, create an OEMInput XML file to define the set of packages to include in your phone image, and configure your computer to use the imaging tools. For more information, see [Building a mobile image using ImgGen.cmd](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/manufacture/mobile/building-a-phone-image-using-imggencmd).
 
@@ -265,7 +162,7 @@ To build an image with software-rendered buttons that can be shown or hidden by 
 
     In the following example, the highlighted entry shows what you need to add to the OEMInput XML file if you are supporting a 1080x1920 resolution.
 
-    ``` syntax
+    ```
     <Resolutions>
           <Resolution>1080x1920</Resolution>
     </Resolutions>
@@ -273,7 +170,7 @@ To build an image with software-rendered buttons that can be shown or hidden by 
 
 10. In your OEMInput XML file, add the **NAVIGATIONBAR** feature to the **Microsoft** element that is a child of the **Features** element. This feature adds a phone setting that enables users to configure the color of the software buttons.
 
-    ``` syntax
+    ```
     <Features>
       <Microsoft>
         <Feature>NAVIGATIONBAR</Feature>
@@ -291,13 +188,3 @@ The following scenarios are examples for testing the navigation bar and verifyin
 2.  Go through the initial device setup process and verify whether the navigation bar can be hidden using a swipe gesture or by tapping the chevron (or **^** symbol facing downwards). Tap the Start button and verify that the navigation panel can be hidden or shown using a gesture or the chevron.
 
 3.  When the navigation bar is up, play a video and verify that the software buttons are automatically hidden with a transition. Tap on the screen to show the controls and navigation bar. Forward the video and then let it play for a while until the navigation bar auto hides itself. Show the navigation bar again by tapping on the screen and tap the back button to close the video.
-
- 
-
- 
-
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_phCustomization\p_phCustomization%5D:%20Building%20images%20with%20user-managed%20software%20buttons%20%20RELEASE:%20%289/7/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
-
-
-
-

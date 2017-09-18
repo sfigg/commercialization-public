@@ -50,7 +50,7 @@ First, plug the USB key with ScanState into the reference device.
 
     Capture the changes into the provisioning package, and save it on the USB key.
 
-    ``` syntax
+    ```
     D:\ScanState_x64\scanstate.exe /apps /ppkg D:\Provisioning\ClassicApps.ppkg /o /c /v:13 /l:D:\ScanState.log
     ```
 
@@ -59,7 +59,7 @@ First, plug the USB key with ScanState into the reference device.
    
 -   **For build-to-order devices**, you can wrap up these changes and prepare the device for immediate delivery. Capture the changes to provisioning package, and save it as C:\\Recovery\\Customizations\\usmt.ppkg:
 
-    ``` syntax
+    ```
     D:\ScanState_x64\scanstate.exe /apps /ppkg C:\Recovery\Customizations\usmt.ppkg /o /c /v:13 /l:D:\ScanState.log
     ```
 
@@ -68,7 +68,7 @@ First, plug the USB key with ScanState into the reference device.
 
 -   **For build-to-order devices**, prepare the device for the end user: Right-click **Start**, select **Command Prompt (Admin)**, and run the following command:
 
-    ``` syntax
+    ```
      
     C:\Windows\System32\Sysprep\sysprep /oobe /shutdown
     ```

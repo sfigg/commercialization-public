@@ -62,7 +62,7 @@ The custom image files to represent the phone must meet the following specificat
 
             The .ddf file must have the following contents:
 
-            ``` syntax
+            ```
             ;*** OEMImage.ddf example
             ;
             .OPTION EXPLICIT     ; Generate errors 
@@ -81,7 +81,7 @@ The custom image files to represent the phone must meet the following specificat
 
         2.  Place the OEMImage.ddf file in the OEMImage folder along with the six .png image files. At a command-line prompt in the OEMImage folder, run the following command:
 
-            ``` syntax
+            ```
             Makecab.exe /F OEMImage.ddf
             ```
 
@@ -89,7 +89,7 @@ The custom image files to represent the phone must meet the following specificat
 
 2.  Create a customization answer file using the contents shown in the following code sample.
 
-    ``` syntax
+    ```
     <?xml version="1.0" encoding="utf-8" ?>  
     <ImageCustomizations xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate"  
                          Name="WindowsPhoneAppImage"  
@@ -137,7 +137,7 @@ The custom image files to represent the phone must meet the following specificat
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_phCustomization\p_phCustomization%5D:%20Phone%20image%20in%20the%20phone%20app%20%20RELEASE:%20%289/7/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+
 
 
 

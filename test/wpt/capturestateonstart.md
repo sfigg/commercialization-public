@@ -5,10 +5,9 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: c29100b6-2eba-4100-8d15-a80a6766beed
-ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
-ms.author: joshbax
+ms.author: sapaetsc
 ms.date: 05/05/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -48,7 +47,7 @@ Represents a collection of keywords that describe events to be captured at the s
 ## Syntax
 
 
-``` syntax
+```
 <CaptureStateOnStart Operation = "Set" | "Add"> | “Remove”
 
   <!-- Child elements -->
@@ -155,7 +154,7 @@ Represents a collection of keywords that describe events to be captured at the s
 
 The following code example shows how this element is used.
 
-``` syntax
+```
 <EventProvider Id="sample-provider" Name="SampleProvider" NonPagedMemory="true" Level="5">
   <Keywords>
     <Keyword Value="0x98"/> <!-- Provider is enabled with these keywords throughout tracing session -->

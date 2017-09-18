@@ -25,7 +25,7 @@ Wpeutil uses the following conventions.
 
 For example:
 
-``` syntax
+```
 Wpeutil Shutdown
 Wpeutil Enablefirewall
 Wpeutil SetMuiLanguage de-DE

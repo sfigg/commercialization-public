@@ -5,10 +5,9 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 057b095c-c244-434e-bf0f-09fb54089390
-ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
-ms.author: joshbax
+ms.author: sapaetsc
 ms.date: 05/05/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -23,7 +22,7 @@ Creates a clone enumerator.
 ## Syntax
 
 
-``` syntax
+```
 HRESULT Clone
   ([out] IEnumProfile** ppEnum)
 ;

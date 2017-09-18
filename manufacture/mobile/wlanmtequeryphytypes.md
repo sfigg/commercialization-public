@@ -19,7 +19,7 @@ Returns the list of 802.11 PHY types configured on the adapter.
 ## <span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>Syntax
 
 
-``` syntax
+```
 DWORD WlanMTEQueryPhyTypes(
     __in    HANDLE              hAdapter,
     __out   PWLAN_MTE_PHY_LIST *ppPhyList

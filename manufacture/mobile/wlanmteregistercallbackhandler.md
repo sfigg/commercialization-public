@@ -19,7 +19,7 @@ Registers a handler that will be called whenever the driver invokes a callback f
 ## <span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>Syntax
 
 
-``` syntax
+```
 DWORD WlanMTERegisterCallbackHandler(
     __in    HANDLE                          hAdapter,
     __in    WLAN_MTE_NOTIFICATION_CALLBACK Callback
@@ -68,7 +68,7 @@ If the function fails, the return value is one of the system error codes. The fo
 
 The callback function has the following prototype:
 
-``` syntax
+```
 typedef VOID (WINAPI *WLAN_MTE_NOTIFICATION_CALLBACK)(
     __in    PDOT11_MANUFACTURING_CALLBACK_PARAMETERS    pMTECallback,
     __in    PVOID                                       pvReserved

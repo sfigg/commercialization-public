@@ -30,7 +30,7 @@ This is the syntax for **New-RequestForMicrosoftUpdate**:
 ## <span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>Syntax
 
 
-``` syntax
+```
 New-RequestForMicrosoftUpdate [-TypeOfCPU <string>] [-TypeOfProduct <string>] 
 [-SourceOSVersion <String>] [-TargetOSVersion <String>] [-RequestForUpdateType <RequestForUpdateType>]
 [-OemDeviceName <String>] [-MOId <String>] [-ServiceUri <Uri>] [-ServiceAccessControlNamespace <String>]
@@ -96,13 +96,13 @@ The **MOId** is the mobile operator at which the request for update is being tar
 
 Request a new update and store the result object in a Windows PowerShell variable named $result:
 
-``` syntax
+```
 $result = New-RequestForMicrosoftUpdate -SourceOSVersion 8.10.12349.825 -TargetOSVersion 8.10.12359.845 -RequestForUpdateType Trial -OemDeviceName P4301 -MOId 000-22
 ```
 
 Show the result on the console:
 
-``` syntax
+```
 PS> $result | Format-List
 
 Ticket                   : TKT-RFU-PROD-PQRST-1
@@ -128,7 +128,7 @@ ExtensionData            : System.Runtime.Serialization.ExtensionData
 
 The following is the help documentation for the **New-RequestForMicrosoftUpdate** cmdlet from Windows PowerShell.
 
-``` syntax
+```
 PS C:\Windows\system32> get-help New-RequestForMicrosoftUpdate -full
 
 NAME

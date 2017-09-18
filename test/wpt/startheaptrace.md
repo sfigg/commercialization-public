@@ -5,10 +5,9 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 2f3ecae0-532a-45ab-a5e3-a5ed4868decf
-ms.prod: W10
 ms.mktglfcycl: operate
 ms.sitesec: msdn
-ms.author: joshbax
+ms.author: sapaetsc
 ms.date: 05/05/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -17,16 +16,13 @@ ms.technology: windows-oem
 
 # StartHeapTrace
 
-
-\[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.\]
-
 This function registers and starts a heap tracing session for a set of specified PIDs. You can also enable stack walking for certain heap events such as allocation or deletion using this function.
 
 The process for which heap tracing is to be enabled must be created before calling this function. In order to capture heap events from the very start of the program, it is advisable that the process be started with the [CREATE\_SUSPENDED](https://msdn.microsoft.com/library/windows/desktop/ms682425.aspx) flag, then heap tracing enabled for its PID, then the process resumed.
 
 Heap tracing is very verbose and can quickly generate a very large trace file. Events may be lost easily if the session’s buffers are too small or too few. It is recommended that the number of processes for which heap tracing is enabled be limited in order to not lose events. Enabling heap tracing may have a performance impact on the process being traced.
 
-``` syntax
+```
 ULONG
 WINAPI
 StartHeapTrace(
