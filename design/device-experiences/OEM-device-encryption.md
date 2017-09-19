@@ -32,9 +32,11 @@ To enable support for encrypted hard drive Automatic Bitlocker encryption, the d
 
 BitLocker device encryption is enabled when the following conditions are met. OEMs who want to create hardware that supports this capability must verify that their device passes the tests in the column on the right. If any test in this sequence fails, the remaining tests will also fail.
 
-| Requirement | Details | Test |
+| Requirement | Details | Tests |
 |:-------------|:-------------|:------|
-| TPM | For more information, see [Trusted Plaform Module (TPM) 2.0 requirments](OEM-TPM.md) | [System.Fundamentals.TPM20.TPM20](https://docs.microsoft.com/en-us/windows-hardware/design/compatibility/systems#systemfundamentalstpm20tpm20), BitLocker Tpm And Recovery Password tests for AOAC devices with PCR[7], BitLocker Tpm and Recovery Password tests for non-AOAC devices for Legacy PCRs, BitLocker Tpm and Recovery password tests for NONAOAC devices with PCR[7|
+| TPM | For more information, see [Trusted Plaform Module (TPM) 2.0 requirments](OEM-TPM.md). | [System.Fundamentals.TPM20.TPM20](https://docs.microsoft.com/en-us/windows-hardware/design/compatibility/systems#systemfundamentalstpm20tpm20), , , BitLocker Tpm and Recovery password tests for NONAOAC devices with PCR[7|
+| | [BitLocker Tpm and Recovery Password tests for non-AOAC devices for Legacy PCRs](https://msdn.microsoft.com/en-us/library/windows/hardware/dn941705(v=vs.85).aspx)
+| BitLocker TPM and Recovery Password for NONAOAC devices with PCR [7]| PCR [7] is consistent across reboot and hibernates, and determines whether PCR [7] has the correct measurements. | [BitLocker Tpm And Recovery Password tests for AOAC devices with PCR 7](https://msdn.microsoft.com/en-us/library/windows/hardware/dn929469(v=vs.85).aspx).|
 | Secure Boot | For more information, see [Secure Boot](OEM-secure-boot.md). | [System.Fundamentals.Firmware.UEFISecureBoot](https://docs.microsoft.com/en-us/windows-hardware/design/compatibility/systems#systemfundamentalsfirmwareuefisecureboot) |
 | Direct memory access (DMA) | | |
 | **MSA** or **AAD** account | Device encryption is enabled only after users sign in with a **Microsoft Account** or an **Azure Active Directory** account; device encryption is not enabled with local accounts. In addition to using a Microsoft Account, automatic Device Encryption can now encrypt your devices that are joined to an Azure Active Directory domain. When the device is encrypted, the BitLocker recovery key is automatically escrowed to Azure Active Directory. This will make it easier to recover your BitLocker key online. | |
@@ -46,15 +48,15 @@ BitLocker device encryption is enabled when the following conditions are met. OE
 ### "Un-allowed DMA capable bus/device(s) detected" error
 This error means that the system detected at least one DMA capable bus or device that may expose a DMA threat. To determine which bus/device triggered this error, run the Microsoft.UefiSecureBootLogo.CS.HardwareSecurity.Tests.ProbeForInsecureDirectMemoryAccessBusses HLK test. 
 If the listed bus has only has internal facing access and with no ports exposed on the exterior of the device, then the OEM should consult with the IHV to ensure the bus is correctly identified before adding it to the "allowed" list as described below.
- ```
+
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\DmaSecurity\AllowedBuses 
- ```
+
 Add string (REG_SZ) name/value pairs for each flagged DMA capable bus that is determined to be safe. 
 For example, for a bus identified as “Contoso Root Port” with Vendor ID “0000” and Device ID “FFFF”: 
- ```
+
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\DmaSecurity\AllowedBuses] 
 "Contoso Root Port"="PCI\VEN_0000&DEV_FFFF" 
- ```
+
 
 ### Disable device encryption
 You as the OEM can choose to disable device encryption and instead implement your own encryption technology on a device. To disable device encryption, use one of the following methods, which essentially do the same thing. 
