@@ -30,7 +30,7 @@ To enable support for encrypted hard drive Automatic Bitlocker encryption, the d
 
 ##  Enable BitLocker
 
-BitLocker automatic device encryption is enabled when the following conditions are met. OEMs who want to create hardware that supports this capability must verify that their device passes the tests in the column on the right. If any test in this sequence fails, the remaining tests will also fail.
+BitLocker device encryption is enabled when the following conditions are met. OEMs who want to create hardware that supports this capability must verify that their device passes the tests in the column on the right. If any test in this sequence fails, the remaining tests will also fail.
 
 | Requirement | Details | Test |
 |:-------------|:-------------|:------|
