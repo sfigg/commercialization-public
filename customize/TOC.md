@@ -6,6 +6,7 @@
 ## [Customizations for desktop](desktop/desktop-customizations-portal.md)
 ### [Customize the taskbar](desktop/customize-the-taskbar.md)
 ### [Set dark mode](desktop/set-dark-mode.md)
+### [Customize the Get Help app](desktop/customize-get-help-app.md)
 ### [Customize the Country and Operator Settings Asset](desktop/customize-cosa.md)
 ### [Customize a Specific Absorption Rate Mapping Table](desktop/customize-sar-mapping-table.md)
 
