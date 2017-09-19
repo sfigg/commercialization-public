@@ -41,8 +41,10 @@ For a device to support Windows Defender Exploit Guard as specified in the Windo
 Starting with Windows 10, version 1709, the code integretity part of Windows Defender Device Guard has been split out into a separate feature known as Windows Defender Application control. 
 
  WDAC is used to control what code can run on the system in either kernel or user mode. When HVCI is enabled, WDAC benefits from the increased kernel memory protections since the kernel mode CI checks occur in virtualization based security and user mode code integrity runs as part of the kernel itself and is thus protected against kernel memory exploits.
+ There are no hardware requirements for WDAC. 
 
-### Windows Defender Device Guard and Windows Defender Credential Guard Readiness Tool
+
+## Windows Defender Device Guard and Windows Defender Credential Guard Readiness Tool
 
 To determine if a device is able to run Windows Defender Device Guard and Windows Defender Credential Guard, download the [Device Guard and Credential Guard hardware readiness tool](https://www.microsoft.com/en-us/download/details.aspx?id=53337).
 
