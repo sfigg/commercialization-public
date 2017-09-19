@@ -19,25 +19,25 @@ BitLocker device encryption is a set of features that you as an Original Equipme
 
 ##  Enable BitLocker
 
-BitLocker device encryption is enabled when the following conditions are met. OEMs who want to create hardware that supports this capability must verify that their device passes the tests in the column on the right. If any test in this sequence fails, the remaining tests will also fail.
+BitLocker automatic device encryption is enabled when the following conditions are met. OEMs who want to create hardware that supports this capability must verify that their device passes the tests in the column on the right. If any test in this sequence fails, the remaining tests will also fail.
 
 | Requirement | Details | Test |
 |:-------------|:-------------|:------|
 | TPM | For more information, see [Trusted Plaform Module (TPM) 2.0 requirments](OEM-TPM.md) | [System.Fundamentals.TPM20.TPM20](https://docs.microsoft.com/en-us/windows-hardware/design/compatibility/systems#systemfundamentalstpm20tpm20)|
 | Secure Boot | For more information, see [Secure Boot](OEM-secure-boot.md). | [System.Fundamentals.Firmware.UEFISecureBoot](https://docs.microsoft.com/en-us/windows-hardware/design/compatibility/systems#systemfundamentalsfirmwareuefisecureboot) |
 | Direct memory access (DMA) | | |
-| **MSA** or **AAD** account | Device encryption is enabled only after users sign in with a **Microsoft Account** or an **Azure Active Directory** account; device encryption is not enabled with local accounts | |
-| Advanced Encryption Standard (AES) acceleration** | | |
+| **MSA** or **AAD** account | Device encryption is enabled only after users sign in with a **Microsoft Account** or an **Azure Active Directory** account; device encryption is not enabled with local accounts. In addition to using a Microsoft Account, automatic Device Encryption can now encrypt your devices that are joined to an Azure Active Directory domain. When the device is encrypted, the BitLocker recovery key is automatically escrowed to Azure Active Directory. This will make it easier to recover your BitLocker key online. | |
 | BCrypt provider| required to access the platform's cryptographic acceleration capabilities. A BCrypt provider is used in both user mode and kernel mode to provide the necessary cryptographic run-time services. | |
 | HSTI validation | This requirement is met through [HSTI test](https://msdn.microsoft.com/library/windows/hardware/mt712332.aspx):
 1.	Platform Secure Boot self-test (or additional self-tests as configured in the registry) must be reported by HSTI as implemented and passed.
 2.	Excluding Thunderbolt, HSTI must report no non-allowed DMA busses.
 3.	If Thunderbolt is present, HSTI must report that Thunderbolt is configured securely (security level must be SL1 – “User Authorization” or higher). |
 
-## New BitLocker features
-| Requirement | Details |
+## Additional BitLocker features
+In addition to BitLocker automatic encryption, you can use the folowing features of BitLocker. 
+| Feature | Details |
 |:-------------|:-------------|
-| XTS-AES encryption algorithm | BitLocker now supports the XTS-AES encryption algorithm. XTS-AES provides additional protection from a class of attacks on encryption that rely on manipulating cipher text to cause predictable changes in plain text. BitLocker supports both 128-bit and 256-bit XTS-AES keys. It provides the following benefits: <ul><li>The algorithm is FIPS-compliant.</li><li>Easy to administer. You can use the BitLocker Wizard, manage-bde, Group Policy, MDM policy, Windows PowerShell, or WMI to manage it on devices in your organization. Note: Drives encrypted with XTS-AES will not be accessible on older version of Windows. This is only recommended for fixed and operating system drives. Removable drives should continue to use the AES-CBC 128-bit or AES-CBC 256-bit algorithms.</li></ul> |
+| Advanced Encryption Standard (AES) acceleration |XTS-AES encryption algorithm | BitLocker now supports the XTS-AES encryption algorithm. XTS-AES provides additional protection from a class of attacks on encryption that rely on manipulating cipher text to cause predictable changes in plain text. BitLocker supports both 128-bit and 256-bit XTS-AES keys. It provides the following benefits: <ul><li>The algorithm is FIPS-compliant.</li><li>Easy to administer. You can use the BitLocker Wizard, manage-bde, Group Policy, MDM policy, Windows PowerShell, or WMI to manage it on devices in your organization. Note: Drives encrypted with XTS-AES will not be accessible on older version of Windows. This is only recommended for fixed and operating system drives. Removable drives should continue to use the AES-CBC 128-bit or AES-CBC 256-bit algorithms.</li></ul> |
 
 ### "Un-allowed DMA capable bus/device(s) detected" error
 This error means that the system detected at least one DMA capable bus or device that may expose a DMA threat. To determine which bus/device triggered this error, run the Microsoft.UefiSecureBootLogo.CS.HardwareSecurity.Tests.ProbeForInsecureDirectMemoryAccessBusses HLK test. 
