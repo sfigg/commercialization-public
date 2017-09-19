@@ -31,7 +31,7 @@ ms.assetid: 85884541-fd9d-416b-a6ab-d4fae9c154e6
 -   [Supported Network Hardware](supported-network-hardware.md)
 -   [WI-FI Direct Performance Scenario Tests](wi-fi-direct-performance-scenario-tests.md)
 -   [Running Network Switch Certification Tests](running-network-switch-certification-tests.md)
-
+-   [QosRemoteSettings Troubleshooting](qosremotesettings.md)
  
 
  
