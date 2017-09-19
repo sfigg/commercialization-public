@@ -17,28 +17,28 @@ BitLocker device encryption is a set of features that you as an Original Equipme
 
 **IT Professionals:** Learn how to deploy BitLocker in the enterprise by reading the [BitLocker overview](https://docs.microsoft.com/en-us/windows/device-security/bitlocker/bitlocker-overviewe). 
 
-## Automatic BitLocker encryption
+## Enable Automatic BitLocker device encryption
 Automatic BitLocker encryption is a hardware solution that protects the user's data with BitLocker. It uses the hardware-based encryption solution to provide the user with seamless end-to-end data security.
 
 With Automatic BitLocker encryption drive, you can deliver enhanced security protection out-of-the-box, with near zero-impact to the user. 
 
 To enable support for encrypted hard drive Automatic Bitlocker encryption, the device must meet the following requirements:
 
-* Self-encrypting drives that meet industry specifications of IEEE 1667, TCG OPAL (subset), and INCITS T13
+* Self-encrypting drives that meet industry specifications of IEEE 1667, TCG OPAL (subset), and INCITS T13. 
 * UEFI 2.3.1 Class 2 implementation using GPT on the encrypted drive. For more information, see [UEFI Firmware Requirements](OEM-UEFI.md).
 * TPM 2.0. For more information, see [Trusted Plaform Module (TPM) 2.0 requirments](OEM-TPM.md). 
 
-##  Enable BitLocker
+##  Enable BitLocker device encryption
 
 BitLocker device encryption is enabled when the following conditions are met. OEMs who want to create hardware that supports this capability must verify that their device passes the tests in the column on the right. If any test in this sequence fails, the remaining tests will also fail.
 
 | Requirement | Details | Tests |
 |:-------------|:-------------|:------|
 | TPM | For more information, see [Trusted Plaform Module (TPM) 2.0 requirments](OEM-TPM.md). | [System.Fundamentals.TPM20.TPM20](https://docs.microsoft.com/en-us/windows-hardware/design/compatibility/systems#systemfundamentalstpm20tpm20) |
-|BitLocker Tpm And Recovery Password tests for AOAC devices with Legacy PCR's | Support for InstantGo without Secure Boot | BitLocker Tpm And Recovery Password tests for AOAC devices with Legacy PCR's(https://msdn.microsoft.com/en-us/library/windows/hardware/dn929450(v=vs.85).aspx)|
-|BitLocker Tpm And Recovery Password tests for AOAC devices with PCR[7] | All platforms that implement a TPM must ensure invariance of PCRs 7, 11 across power cycles in the absence of changes to the platform’s static core root of trust for measurements (SRTM). Attaching a (non-bootable) USB to the platform or attaching the platform to a docking station should not cause changes to the SRTM.| [BitLocker Tpm And Recovery Password tests for AOAC devices with PCR 7](https://msdn.microsoft.com/en-us/library/windows/hardware/dn940892(v=vs.85).aspx)|
-| BitLocker Tpm and Recovery Password tests for non-AOAC devices for Legacy PCRs | PCR [0,2,4,11] are consistent across restarts. | [BitLocker Tpm and Recovery Password tests for non-AOAC devices for Legacy PCRs](https://msdn.microsoft.com/en-us/library/windows/hardware/dn941705(v=vs.85).aspx)|
-| BitLocker TPM and Recovery Password for NONAOAC devices with PCR [7] | PCR [7] is consistent across reboot and hibernates, and PCR [7] has the correct measurements. | [BitLocker Tpm And Recovery Password tests for AOAC devices with PCR 7](https://msdn.microsoft.com/en-us/library/windows/hardware/dn929469(v=vs.85).aspx).|
+|BitLocker Tpm And Recovery Password tests for AOAC devices with Legacy PCR's | Support for legacy InstantGo **without** Secure Boot.  | [BitLocker TPM and recovery password tests for AOAC devices with legacy PCR's](https://msdn.microsoft.com/en-us/library/windows/hardware/dn929450(v=vs.85).aspx)|
+|BitLocker Tpm And Recovery Password tests for AOAC devices with PCR[7] | All platforms that implement a TPM must ensure invariance of PCRs 7 and 11 across power cycles in the absence of changes to the platform’s static core root of trust for measurements (SRTM). Attaching a (non-bootable) USB to the platform or attaching the platform to a docking station should not cause changes to the SRTM.| [BitLocker Tpm And Recovery Password tests for AOAC devices with PCR 7](https://msdn.microsoft.com/en-us/library/windows/hardware/dn940892(v=vs.85).aspx)|
+| BitLocker Tpm and Recovery Password tests for non-AOAC devices for Legacy PCRs | PCRs 0, 2, 4, and 11 are consistent across restarts. | [BitLocker TPM and recovery password tests for non-AOAC devices for legacy PCRs](https://msdn.microsoft.com/en-us/library/windows/hardware/dn941705(v=vs.85).aspx)|
+| BitLocker TPM and Recovery Password for NONAOAC devices with PCR [7] | PCR [7] is consistent across reboot and hibernates, and PCR [7] has the correct measurements. | [BitLocker TPM And recovery password tests for AOAC devices with PCR 7](https://msdn.microsoft.com/en-us/library/windows/hardware/dn929469(v=vs.85).aspx).|
 | Secure Boot | For more information, see [Secure Boot](OEM-secure-boot.md). | [System.Fundamentals.Firmware.UEFISecureBoot](https://docs.microsoft.com/en-us/windows-hardware/design/compatibility/systems#systemfundamentalsfirmwareuefisecureboot) |
 | **MSA** or **AAD** account | Device encryption is enabled only after users sign in with a **Microsoft Account** or an **Azure Active Directory** account; device encryption is not enabled with local accounts. In addition to using a Microsoft Account, automatic Device Encryption can now encrypt your devices that are joined to an Azure Active Directory domain. When the device is encrypted, the BitLocker recovery key is automatically escrowed to Azure Active Directory. This will make it easier to recover your BitLocker key online. | |
 | BCrypt provider| required to access the platform's cryptographic acceleration capabilities. A BCrypt provider is used in both user mode and kernel mode to provide the necessary cryptographic run-time services. | |
