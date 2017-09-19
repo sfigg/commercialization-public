@@ -121,7 +121,7 @@
 #### [Virtualization-based security (VBS)](device-experiences/OEM-VBS.md)
 #### [Application Guard hardware requirements](device-experiences/OEM-app-guard.md)
 #### [Credential Guard hardware requirements](device-experiences/OEM-credential-guard.md)
-#### [Device Guard hardware requirments](device-experiences/OEM-device-guard.md)
+#### [Device Guard hardware requirements](device-experiences/OEM-device-guard.md)
 
 
 
