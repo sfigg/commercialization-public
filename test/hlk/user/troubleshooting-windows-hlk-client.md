@@ -238,7 +238,7 @@ When you set up a job, Windows Scheduler searches for a client computer to run t
 
 When you use Windows HLK Manager Job Monitor to view the status of a job, the **Current Pipeline** column of the **Job Execution Status** pane displays the job status. If the **Current Pipeline** value for your job is **Scheduler**, and if this value hasn't changed for several minutes, make sure that a Windows HLK Client in the machine pool with a **Ready** status exists.
 
--   If no Windows HLK Client computers are ready to run jobs, see [Step 3: Create a machine pool](p_sxs_hlk.step_3_create_a_machine_pool).
+-   If no Windows HLK Client computers are ready to run jobs, see [Step 3: Create a machine pool](..\getstarted\step-3-create-a-machine-pool.md).
 
 -   If Windows HLK Client computers are available to run the job, make sure that at least one Windows HLK Client computer is capable of running the job. Check the attributes of the Windows HLK Client computers and compare them with the job requirements.
 

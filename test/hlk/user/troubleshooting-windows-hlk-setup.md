@@ -56,7 +56,7 @@ In rare cases, Windows HLK setup might fail just before it completes. If you loo
 ## <span id="tsclient"></span><span id="TSCLIENT"></span>Cannot install the Windows HLK Client
 
 
-If you cannot install the Windows HLK Client, review the installation info in the [Step 2: Install Client on the test system(s)](p_sxs_hlk.step_2__install_client_on_the_test_system_s_) topic and make sure that you follow these instructions.
+If you cannot install the Windows HLK Client, review the installation info in the [Step 2: Install Client on the test system(s)](..\getstarted\step-2--install-client-on-the-test-system-s-.md) topic and make sure that you follow these instructions.
 
 If you still cannot install the Windows HLK Client, locate these Client log files in the **%TEMP%** folder. See [Windows HLK Support](windows-hlk-support.md) for information about how to contact Support, and share the following client log files with Microsoft Support:
 
