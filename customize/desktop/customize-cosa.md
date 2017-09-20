@@ -37,7 +37,7 @@ COSA can be extended with OEM-generated provisioning packages during desktop ima
 > - ProfileReplaced – Published when the OEM package replaces a COSA profile. Data is the profile ID.
 > - ProfileSuppressedByAfterMarketProfile – Published when an OEM package contains a profile that matches when a COSA profile also matches. The telemetry data contains the Profile ID.
 
-It is recommended that your organization submit any MO profile changes made to extend COSA to Microsoft. To learn more, see [COSA/APN database submission](https://docs.microsoft.com/en-us/windows-hardware/drivers/mobilebroadband/apn-database-submission).
+We recommend MOs and organizations submit any profile changes made to extend COSA to Microsoft. To learn more, see [COSA/APN database submission](https://docs.microsoft.com/en-us/windows-hardware/drivers/mobilebroadband/apn-database-submission).
 
 ## To add a new profile
 
