@@ -86,7 +86,7 @@ If a registry value for a particular MCC is absent, the data in the special reg 
 
 ## <a name="sar-configuration"></a>SARConfiguration subkey
 
-The `SARConfiguration` settings do not affect your ability to use modem DSI messages to pass through. For example, SAR proxy may implement a custom design for SAR control and mapping using the existing API (the WWan service API and/or the corresponding WinRT APIs). 
+The `SARConfiguration` settings do not affect your ability to use modem DSI messages to pass through. For example, SAR proxy may implement a custom design for SAR control and mapping using the existing API (the WWAN service API and/or the corresponding WinRT APIs). 
 
 For the `BackOffEnabled` and `ControlMode` settings, the value in modem DSI messages will take precedence. If a modem DSI message passes through the WWAN service, the values of these two settings will be saved and will be used next time they are needed, regardless what values the registry settings for those are. If the `BackOffEnabled` and `ControlMode` settings in registry contain `0xFFFFFFFF` (no change) and no modem DSI message ever passes through, the WWAN service will use the value currently in the modem. The WWAN service queries the modem at start to obtain and remember the values in the modem.
 
