@@ -140,7 +140,7 @@ You should check whether the test requires a special configuration and if it doe
 
 Some Windows HLK tests require additional files that are not included in the Windows HLK because of size or security reasons. Windows HLK Studio denotes these tests as requiring special configuration. These tests fail if the supplemental data is not installed.
 
-Tests that require special configuration are denoted by a toolbox icon (![special configuration](images/hlk-winb-toolboxicon-commonts.png)) in the **Type** column in the **Test** pane and the **Results** pane in Windows HLK Studio. Special configuration details are described in the test reference topic for each test. For specific test reference documentation, see [HLK Test Reference](p_hlk_test.hardware_lab_kit_test_reference), or from in Windows HLK Studio, select the specific test on the **Test** tab or the **Result** tab, and then press **F1**.
+Tests that require special configuration are denoted by a toolbox icon (![special configuration](images/hlk-winb-toolboxicon-commonts.png)) in the **Type** column in the **Test** pane and the **Results** pane in Windows HLK Studio. Special configuration details are described in the test reference topic for each test. For specific test reference documentation, see [HLK Test Reference](..\testref\hardware_lab_kit_test_reference.md), or from in Windows HLK Studio, select the specific test on the **Test** tab or the **Result** tab, and then press **F1**.
 
 >[!NOTE]
 >  
@@ -152,7 +152,7 @@ The online version of the help content is generally the most current.
 
 You should determine whether the test requires user interaction.
 
-Tests that require user interaction are denoted by a person icon (![requires user interaction](images/hlk-winb-personicon-commonts.png)) in the **Type** column in the **Test** pane and the **Results** pane in Windows HLK Studio. For instructions on how to run a manual test, see the **Running the test** section in the test reference topic for the particular test. For specific test reference documentation, see [HLK Test Reference](p_hlk_test.hardware_lab_kit_test_reference), or from in Windows HLK Studio, select the specific test on the **Test** tab or the **Result** tab, and then press **F1**.
+Tests that require user interaction are denoted by a person icon (![requires user interaction](images/hlk-winb-personicon-commonts.png)) in the **Type** column in the **Test** pane and the **Results** pane in Windows HLK Studio. For instructions on how to run a manual test, see the **Running the test** section in the test reference topic for the particular test. For specific test reference documentation, see [HLK Test Reference](..\testref\hardware_lab_kit_test_reference.md), or from in Windows HLK Studio, select the specific test on the **Test** tab or the **Result** tab, and then press **F1**.
 
 ### <span id="multi"></span><span id="MULTI"></span>**Run multi-device test as a single test**
 

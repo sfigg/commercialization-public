@@ -82,7 +82,7 @@ In addition to understanding the terminology and logic, consider these best prac
 
 -   Design your hardware using the **Windows Hardware Requirements**.
 
--   Review the [test reference](p_hlk_test.hardware_lab_kit_test_reference) for your device before testing. Any Windows HLK test may require a specific configuration. The more complex the device, the more complex the test configuration.
+-   Review the [test reference](..\testref\hardware_lab_kit_test_reference.md) for your device before testing. Any Windows HLK test may require a specific configuration. The more complex the device, the more complex the test configuration.
 
 -   Manual tests require more time and preparation. You should run manual steps separately from automated tests. When you connect a device to Windows HLK, you can sort detected test by automated and manual. To learn more about any test, select the test from Windows HLK Studio and press F1 for Help.
 
