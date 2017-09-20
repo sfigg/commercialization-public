@@ -40,7 +40,7 @@ Here is an overview of how Windows will read and configure the modem based on yo
 
 The registry settings to build and configure the SAR mapping table reside exclusively under the base registry key: 
 
-`HKLM\OEM\Cellular\DeviceSpecific' 
+`HKLM\OEM\Cellular\DeviceSpecific` 
 
 Under the base key, there are two subkeys: 
 
