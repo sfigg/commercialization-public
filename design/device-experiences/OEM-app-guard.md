@@ -18,7 +18,7 @@ Application Guard helps to isolate enterprise-defined untrusted sites, protectin
 As an OEM, you provide the hardware necessary to enable Application Guard. Here are the requirements.
 | Requirement | Details |
 |----------------------|---------|
-| 64-bit CPU | A 64-bit computer is required for hypervisor and virtualization-based security (VBS). For more information about VBS, see [Virtualization Based Security (VBS)](OEM-vbs.md). |
+| 64-bit CPU | A 64-bit computer is required for hypervisor and virtualization-based security (VBS). For more information about VBS, see [Virtualization Based Security (VBS)](OEM-vbs.mdgit ). |
 | CPU virtualization extensions | Extended page tables, also called Second Level Address Translation (SLAT) and one of the following virtualization extensions for VBS: VT-x (Intel) **-OR-** AMD-V |
 | Memory | 8 GB minimum, 16 GB recommended |
 | Hard drive | 5 GB free space, solid state disk (SSD) recommended |
