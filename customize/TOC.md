@@ -8,7 +8,7 @@
 ### [Set dark mode](desktop/set-dark-mode.md)
 ### [Customize the Get Help app](desktop/customize-get-help-app.md)
 ### [Customize the Country and Operator Settings Asset](desktop/customize-cosa.md)
-### [Customize a Specific Absorption Rate Mapping Table](desktop/customize-sar-mapping-table.md)
+### [Customize a Specific Absorption Rate mapping table](desktop/customize-sar-mapping-table.md)
 
 ### [Windows System Image Manager Technical Reference](desktop/wsim/windows-system-image-manager-technical-reference.md)
 #### [Windows System Image Manager Overview Topics](desktop/wsim/windows-system-image-manager-overview-topics.md)
