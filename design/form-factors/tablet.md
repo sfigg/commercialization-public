@@ -63,7 +63,7 @@ Tablets are a versatile form factor that overlap the smartphone and notebook ind
 <tr>
 <td bgcolor="EEEEEE"><p>Operating System</p></td>
 <td><p>Windows&nbsp;10 Mobile</p></td>
-<td colspan="2"><p>Windows&nbsp;10 for desktop editions (Home, Pro, Enterprise, and Education)</p></td>
+<td colspan="2"><p style="margin: .75em 0 .75em 0;">Windows&nbsp;10 for desktop editions (Home, Pro, Enterprise, and Education)</p></td>
 </tr>
 <tr>
 <td colspan="4" bgcolor="EEEEEE"><p>[Recommended Components](../component-guidelines/components.md)</p></td>

@@ -43,8 +43,8 @@ A desktop PC form factor traditionally comes in an upright tower or small deskto
 <td colspan="2">Windows&nbsp;10 for desktop editions (Home, Pro, Enterprise, and Education)</td>
 </tr>
 <tr>
-<td bgcolor="EEEEEE" colspan="3">
-<p>[Recommended Components](../component-guidelines/components.md)</p>
+<td bgcolor="DDDDDD" colspan="3">
+<p style="margin: .75em 0 .75em 0;" style="text-align: center;"><strong>[Recommended Components](../component-guidelines/components.md)</strong></p>
 </td>
 </tr>
 <tr>
