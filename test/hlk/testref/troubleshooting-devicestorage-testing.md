@@ -193,7 +193,7 @@ For more information about how to troubleshoot a test, see the troubleshooting s
 
 [Device.Storage Tests](device-storage-tests.md)
 
-[Troubleshooting Windows HLK](p_hlk.troubleshooting_windows_hlk)
+[Troubleshooting Windows HLK](..\user\troubleshooting-windows-hlk.md)
 
  
 

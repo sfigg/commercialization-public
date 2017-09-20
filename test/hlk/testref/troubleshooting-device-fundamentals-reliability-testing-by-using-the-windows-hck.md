@@ -106,7 +106,7 @@ It can be useful to collect and view WDTF traces when you troubleshoot certain t
 
 Device Fundamentals Reliability test owners at Microsoft regularly review and respond to questions posted about Device Fundamentals Test failures at the [Windows Hardware Testing and Certification Forum](http://go.microsoft.com/fwlink/?LinkID=299688). We recommend that you use this forum to get needed support.
 
-See [Windows HLK Support](p_hlk.windows_hlk_support) for information about how to open a support case for investigating test failures.
+See [Windows HLK Support](..\user\windows-hlk-support.md) for information about how to open a support case for investigating test failures.
 
 ## <span id="addlts"></span><span id="ADDLTS"></span>Additional resources
 
@@ -126,7 +126,7 @@ The following table lists additional resources that can help you resolve problem
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[Troubleshooting the Windows HLK Environment](p_hlk.troubleshooting_the_windows_hlk_environment)</p></td>
+<td><p>[Troubleshooting the Windows HLK Environment](..\user\troubleshooting-the-windows-hlk-environment.md)</p></td>
 <td><p>General triage and troubleshooting assistance for Windows HLK infrastructure failures.</p></td>
 </tr>
 <tr class="even">

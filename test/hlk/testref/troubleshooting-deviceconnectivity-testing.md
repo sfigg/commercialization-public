@@ -28,11 +28,11 @@ To troubleshoot issues with PCI device, USB devices, or USB hub connectivity tes
 
     -   
 
-2.  Verify that you have installed the latest Windows HLK filters and kit updates. For more information, see [Windows Hardware Lab Kit Filters](p_hlk.windows_hardware_lab_kit_filters).
+2.  Verify that you have installed the latest Windows HLK filters and kit updates. For more information, see [Windows Hardware Lab Kit Filters](..\user\windows-hardware-lab-kit-filters.md).
 
 3.  For a test failure, look for usable information in the Windows HLK Studio test log. If you find usable information, resolve the issue and rerun the test.
 
-4.  If you cannot obtain a successful test result, contact [Windows HLK Support](p_hlk.windows_hlk_support).
+4.  If you cannot obtain a successful test result, contact [Windows HLK Support](..\user\windows-hlk-support.md).
 
 ### <span id="Information_about_USB_connectivity_tests_for_Windows_7"></span><span id="information_about_usb_connectivity_tests_for_windows_7"></span><span id="INFORMATION_ABOUT_USB_CONNECTIVITY_TESTS_FOR_WINDOWS_7"></span>Information about USB connectivity tests for Windows 7
 
@@ -57,7 +57,7 @@ When you are testing a device that has an embedded high-speed hub, attach the de
 
 [Device.Connectivity Tests](device-connectivity-tests.md)
 
-[Troubleshooting Windows HLK](p_hlk.troubleshooting_windows_hlk)
+[Troubleshooting Windows HLK](..\user\troubleshooting-windows-hlk.md)
 
  
 

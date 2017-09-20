@@ -282,14 +282,14 @@ In Windows HLK Manager, click **Explorers** and then click **Job Monitor**.
 
 When the client machines complete test jobs, you can gather information from the **Job Execution Status** frame by right-clicking a job and viewing errors, job reports, or result reports. You can also click **Browse Job Logs** to access NDISTest results.
 
-In HLK Studio, click the **Results** tab. View the **Status** column to monitor the results of each test. You can choose each column to sort the results. If a test passes, you will see a green checkmark; if it fails, you will see a red X. For more detailed information on viewing logs, see [Step 7: View test results and log files](p_sxs_hlk.step_7_view_test_results_and_log_files).
+In HLK Studio, click the **Results** tab. View the **Status** column to monitor the results of each test. You can choose each column to sort the results. If a test passes, you will see a green checkmark; if it fails, you will see a red X. For more detailed information on viewing logs, see [Step 7: View test results and log files](..\getstarted\step-7-view-test-results-and-log-files.md).
 
 ## <span id="pkg"></span><span id="PKG"></span>Create a Package
 
 
 After passing all of the necessary tests, you are ready to create an .hlkx submission package for certification.
 
-Windows HLK Studio supports package creation, so you don't have to use a separate submission tool. The package creation feature lets you add necessary resource files to complete the certification. For detailed instructions on how to create a package, see [Step 8: Create a submission package](p_sxs_hlk.step_8_create_a_submission_package).
+Windows HLK Studio supports package creation, so you don't have to use a separate submission tool. The package creation feature lets you add necessary resource files to complete the certification. For detailed instructions on how to create a package, see [Step 8: Create a submission package](..\getstarted\step-8-create-a-submission-package.md).
 
 ## <span id="notests"></span><span id="NOTESTS"></span>Notes and Troubleshooting for RT-N66U firmware
 

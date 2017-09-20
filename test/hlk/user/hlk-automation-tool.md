@@ -49,14 +49,14 @@ The individual steps are as follows:
 ## <span id="BKMK-prereq"></span><span id="bkmk-prereq"></span><span id="BKMK_PREREQ"></span>Windows HLK automation tools prerequisites
 
 
-Before you begin testing, make sure that you are familiar with the Windows HLK automation concepts and hardware requirements. See [Windows HLK Prerequisites](p_sxs_hlk.windows_hlk-prerequisites).
+Before you begin testing, make sure that you are familiar with the Windows HLK automation concepts and hardware requirements. See [Windows HLK Prerequisites](..\getstarted\windows-hlk-prerequisites.md).
 
 ## <span id="BKMK-installctrl"></span><span id="bkmk-installctrl"></span><span id="BKMK_INSTALLCTRL"></span>Step 1: Install Controller and supporting programs on the test server
 
 
-The test server computer should be installed with an operating system and configured as described in [Windows HLK Prerequisites](p_sxs_hlk.windows_hlk-prerequisites). You can then install the following programs:
+The test server computer should be installed with an operating system and configured as described in [Windows HLK Prerequisites](..\getstarted\windows-hlk-prerequisites.md). You can then install the following programs:
 
-1.  Windows HLK. For detailed instructions about how to install the Windows HLK, see [Step 1: Install Controller and Studio on the test server](p_sxs_hlk.step_1_install_controller_and_studio_on_the_test_server).
+1.  Windows HLK. For detailed instructions about how to install the Windows HLK, see [Step 1: Install Controller and Studio on the test server](..\getstarted\step-1-install-controller-and-studio-on-the-test-server.md).
 
 2.  Windows PowerShell 3.0. See [KB2506143](http://www.microsoft.com/en-us/download/details.aspx?id=34595).
 
@@ -115,7 +115,7 @@ To verify the successful installation of Windows PowerShell 3.0, do the follow
 ## <span id="BKMK_installClient"></span><span id="bkmk-installclient"></span><span id="BKMK_INSTALLCLIENT"></span>Step 2: Install HLK Client on the test system(s)
 
 
-To install the HLK client on a test system, follow the instructions found in [Step 2: Install Client on the test system(s)](p_sxs_hlk.step_2__install_client_on_the_test_system_s_).
+To install the HLK client on a test system, follow the instructions found in [Step 2: Install Client on the test system(s)](..\getstarted\step-2--install-client-on-the-test-system-s-.md).
 
 >[!NOTE]
 >  

@@ -65,7 +65,7 @@ The DXVA tests require the following:
 
 [Device.Graphics Tests](device-graphics-tests.md)
 
-[Troubleshooting Windows HLK](p_hlk.troubleshooting_windows_hlk)
+[Troubleshooting Windows HLK](..\user\troubleshooting-windows-hlk.md)
 
  
 

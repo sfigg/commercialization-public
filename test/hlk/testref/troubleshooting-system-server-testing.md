@@ -61,7 +61,7 @@ In this article:
 
     Some tests cause hardware changes throughout the test run. This causes Sysparse to run regularly. Sysparse can consume large amounts of memory, which is caused by the gatherers that are running and collecting data. Sysparse should not interfere with testing because in most cases, the tests do not verify performance.
 
-5.  Make sure that the system upon which the Windows HLK Controller is installed has adequate hardware capabilities to meet the test demands. See [Windows HLK Prerequisites](p_sxs_hlk.windows_hlk_prerequisites) for a description of these hardware requirements. As the number of devices and systems that are being tested increases, you might need to add more processors, memory, or storage.
+5.  Make sure that the system upon which the Windows HLK Controller is installed has adequate hardware capabilities to meet the test demands. See [Windows HLK Prerequisites](..\getstarted\windows-hlk-prerequisites.md) for a description of these hardware requirements. As the number of devices and systems that are being tested increases, you might need to add more processors, memory, or storage.
 
 ## <span id="failed"></span><span id="FAILED"></span>Troubleshooting failed system server tests
 

@@ -160,7 +160,7 @@ Imaging in 50 or 60 Hz lighting with the wrong exposure (powerline frequency) mo
 
 [Device.Streaming Tests](device-streaming-tests.md)
 
-[Troubleshooting Windows HLK](p_hlk.troubleshooting_windows_hlk)
+[Troubleshooting Windows HLK](..\user\troubleshooting-windows-hlk.md)
 
  
 

@@ -49,7 +49,7 @@ To troubleshoot general audio test issues, start with the following steps:
 
 6.  Review the following Windows HLK topics:
 
-    -   [Troubleshooting Windows HLK Test Failures](p_hlk.troubleshooting_windows_hlk_test_failures)
+    -   [Troubleshooting Windows HLK Test Failures](..\user\troubleshooting-windows-hlk-test-failures.md)
 
     -   [Audio Device Testing Prerequisites](audio-device-testing-prerequisites.md)
 
@@ -86,7 +86,7 @@ Prior to running the affected audio tests, disconnect wirelessly-connected endpo
 
 [System.Fundamentals Tests](system-fundamentals-tests.md)
 
-[Troubleshooting Windows HLK](p_hlk.troubleshooting_windows_hlk)
+[Troubleshooting Windows HLK](..\user\troubleshooting-windows-hlk.md)
 
  
 

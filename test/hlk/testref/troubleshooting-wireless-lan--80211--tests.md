@@ -254,7 +254,7 @@ Below is a chart with common problems and solutions.
 
 [Device.Network Testing](device-network-tests.md)
 
-[Troubleshooting Windows HLK](p_hlk.troubleshooting_windows_hlk)
+[Troubleshooting Windows HLK](..\user\troubleshooting-windows-hlk.md)
 
  
 

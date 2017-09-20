@@ -29,7 +29,7 @@ The following hardware is required for scanner testing. Additional hardware may 
 
     >[!NOTE]
     >  
-    All computers must meet the Windows HLK requirements. If two test computers are required, both computers must be in the same computer pool. For more information, see [Windows HLK Prerequisites](p_sxs_hlk.windows_hlk_prerequisites).
+    All computers must meet the Windows HLK requirements. If two test computers are required, both computers must be in the same computer pool. For more information, see [Windows HLK Prerequisites](..\getstarted\windows-hlk-prerequisites.md).
 
     For testing networking capabilities, the test computer that the scanner is physically attached to is referred to as the System Under Test (SUT) and the other computer is referred to as the support computer.
 

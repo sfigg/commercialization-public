@@ -21,7 +21,7 @@ To troubleshoot issues that occur with File System testing, follow these steps:
 ## <span id="related_topics"></span>Related topics
 
 
-[Troubleshooting Windows HLK](p_hlk.troubleshooting_windows_hlk)
+[Troubleshooting Windows HLK](..\user\troubleshooting-windows-hlk.md)
 
  
 

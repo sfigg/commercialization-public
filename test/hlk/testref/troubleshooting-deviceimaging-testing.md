@@ -35,7 +35,7 @@ When testing your printer over TCP/IP, if the Device.Imaging.Printer.Base featur
 
 [Device.Imaging Tests](device-imaging-tests.md)
 
-[Troubleshooting Windows HLK](p_hlk.troubleshooting_windows_hlk)
+[Troubleshooting Windows HLK](..\user\troubleshooting-windows-hlk.md)
 
  
 
