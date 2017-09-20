@@ -13,11 +13,11 @@ ms.technology: windows-oem
 
 # Customize a Specific Absorption Rate (SAR) mapping table
 
-In Windows 10, version 1709, you can configure and store a Specific Absorption Rate (SAR) table for mobile broadband modems in the registry. When a mobile broadband modem is connected to the Windows device, Windows uses the table to map the mobile country code (MCC) of the modem's registered mobile operator (MO) to its appropriate SAR back-off index, and configure the modem with it.
+In Windows 10, version 1709, you can configure and store a Specific Absorption Rate (SAR) table for mobile broadband modems in the registry. When a mobile broadband modem is connected to the Windows device, Windows automatically uses the table to map the mobile country code (MCC) of the modem's registered mobile operator (MO) to its appropriate SAR back-off index, and configure the modem with it.
 
 You may choose to configure the registry settings at imaging time, or run-time. If you build the registry settings into the image at image deployment time within a package, the SAR mapping table will be ready for any OS component as soon as it starts. If you use a run-time component to configure the registry settings after device bootup, you ensure that the static SAR configuration will not be changed and/or wiped out by Windows installation or upgrade, and that it stays consistent to the device and independent of OS installation.
 
-For more details on SAR support for mobile broadband modems, please see [Mobile Broadband Selective Absorption Rate Platform Support](https://docs.microsoft.com/en-us/windows-hardware/drivers/network/mb-sar-platform-support).
+For more details on SAR support for mobile broadband modems, please see [Mobile Broadband Specific Absorption Rate Platform Support](https://docs.microsoft.com/en-us/windows-hardware/drivers/network/mb-sar-platform-support).
 
 Here is an overview of how Windows will read and configure the modem based on your customized SAR mapping table:
 
@@ -25,13 +25,13 @@ Here is an overview of how Windows will read and configure the modem based on yo
 
 1. Build the package into the image for the device.
 
-1. Windows (WWAN service, in particular) will read the registry at start-up and store the settings for later usage when an embedded, SAR-capable modem registers with a particular MO. 
+1. Windows (the WWAN service, in particular) will read the registry at start-up and store the settings for later usage when an embedded, SAR-capable modem registers with a particular MO. 
 
-1. Windows also listen to registry change notification to know if the registry for the settings is changed. This means you may use your own way of adding and changing the settings at run-time, and Windows will accept the changes immediately.
+1. Windows also listens to registry change notifications to know if the registry for the settings is changed. This means you may use your own way of adding and changing the settings at run-time, and Windows will accept the changes immediately.
 
 1. When a modem is registered with an MO at run-time, Windows takes the MCC of the MO and finds the corresponding SAR back-off index(es) from the SAR mapping table.
 
-1. Windows will then send the SAR back-off index to the modem using the MBIM interface defined in [Mobile Broadband Selective Absorption Rate Platform Support](https://docs.microsoft.com/en-us/windows-hardware/drivers/network/mb-sar-platform-support).
+1. Windows will then send the SAR back-off index to the modem using the MBIM interface defined in [Mobile Broadband Specific Absorption Rate Platform Support](https://docs.microsoft.com/en-us/windows-hardware/drivers/network/mb-sar-platform-support).
 
 1. When the modem roams to another country, the MCC for the new MO will change. Windows will again find the corresponding SAR back-off index(es) from the SAR mapping table using the MCC of the new MO and send it to modem.
         
@@ -86,9 +86,9 @@ If a registry value for a particular MCC is absent, the data in the special reg 
 
 ## <a name="sar-configuration"></a>SARConfiguration subkey
 
-The `SARConfiguration` settings do not affect your ability to use modem DSI messages to pass through. For example, SAR proxy may implement a custom design for SAR control and mapping using the existing API (Wwwan service API and/or the corresponding WinRT APIs). 
+The `SARConfiguration` settings do not affect your ability to use modem DSI messages to pass through. For example, SAR proxy may implement a custom design for SAR control and mapping using the existing API (the WWan service API and/or the corresponding WinRT APIs). 
 
-For the `BackOffEnabled` and `ControlMode` settings, the value in modem DSI messages will take precedence. If a modem DSI message passes through Wwan service, the values of these two settings will be saved and will be used next time they are needed, regardless what values the registry settings for those are. If the `BackOffEnabled` and `ControlMode` settings in registry contain `0xFFFFFFFF` (no change) and no modem DSI message ever passes through, the Wwan service will use the value currently in the modem. The Wwan service queries the modem at start to obtain and remember the values in the modem.
+For the `BackOffEnabled` and `ControlMode` settings, the value in modem DSI messages will take precedence. If a modem DSI message passes through the WWAN service, the values of these two settings will be saved and will be used next time they are needed, regardless what values the registry settings for those are. If the `BackOffEnabled` and `ControlMode` settings in registry contain `0xFFFFFFFF` (no change) and no modem DSI message ever passes through, the WWAN service will use the value currently in the modem. The WWAN service queries the modem at start to obtain and remember the values in the modem.
 
 <table>
 <colgroup>
