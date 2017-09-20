@@ -60,7 +60,7 @@ For additional information on packages, see the following topics:
 
 -   [HLK Studio - Package Tab](..\user\hlk-studio---package-tab.md)
 
--   [HLK Signing with an HSM](p_hlk.hlk_signing_with_an_hsm)
+-   [HLK Signing with an HSM](..\user\hlk-signing-with-an-hsm.md)
 
 ### <span id="Next_steps"></span><span id="next_steps"></span><span id="NEXT_STEPS"></span>Next steps
 

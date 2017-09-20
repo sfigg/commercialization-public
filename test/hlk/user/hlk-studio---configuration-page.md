@@ -30,7 +30,7 @@ On this tab, you can perform the following tasks:
 
 -   [Manage distributed and multi-device options](configuration-page---distributed-and-multi-device-options.md)
 
--   [Manually configure HLK Client kernel debugger settings](p_hlk.manually_configure_hck_client_kernel_debugger_settings)
+-   [Manually configure HLK Client kernel debugger settings](..\user\manually-configure-hlk-client-kernel-debugger-settings.md)
 
  
 

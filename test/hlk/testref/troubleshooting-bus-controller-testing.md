@@ -28,11 +28,11 @@ To troubleshoot bus controller test issues, follow these steps:
 
         -   [WITT I2C Testing Prerequisites](witt-i2c-testing-prerequisites.md)
 
-2.  Verify that you have installed the latest Windows HLK filters and kit updates. For more information, see [Windows Hardware Lab Kit Filters](p_hlk.windows_hardware_lab_kit_filters).
+2.  Verify that you have installed the latest Windows HLK filters and kit updates. For more information, see [Windows Hardware Lab Kit Filters](..\user\windows-hardware-lab-kit-filters.md).
 
 3.  For a test failure, look for usable information in the Windows HLK Studio test log. If you find usable information, resolve the issue and rerun the test.
 
-4.  If you cannot obtain a successful test result, contact [Windows HLK Support](p_hlk.windows_hlk_support).
+4.  If you cannot obtain a successful test result, contact [Windows HLK Support](..\user\windows-hlk-support.md).
 
 ### <span id="bluetooth"></span><span id="BLUETOOTH"></span>Bluetooth controller test troubleshooting
 
@@ -102,7 +102,7 @@ The following table describes common issues that can occur during Windows Inter-
 
 [Device.BusController Tests](device-buscontroller-tests.md)
 
-[Troubleshooting Windows HLK](p_hlk.troubleshooting_windows_hlk)
+[Troubleshooting Windows HLK](..\user\troubleshooting-windows-hlk.md)
 
  
 

@@ -355,7 +355,7 @@ Make sure that Wireless Profile XML file exists in the current directory or spec
 
 [Device.Network Testing](device-network-tests.md)
 
-[Troubleshooting Windows HLK](p_hlk.troubleshooting_windows_hlk)
+[Troubleshooting Windows HLK](..\user\troubleshooting-windows-hlk.md)
 
  
 

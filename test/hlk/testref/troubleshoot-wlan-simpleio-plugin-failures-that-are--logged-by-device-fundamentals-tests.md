@@ -169,7 +169,7 @@ The WLAN plugin uses WPP tracing to trace information and errors that you might 
 
 [Troubleshooting Windows HLK](..\user\troubleshooting-windows-hlk.md)
 
-[Windows HLK Support](p_hlk.windows_hlk_support)
+[Windows HLK Support](..\user\windows-hlk-support.md)
 
  
 

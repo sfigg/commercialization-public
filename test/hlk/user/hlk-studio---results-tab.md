@@ -196,7 +196,7 @@ The displayed logs can be the following types, depending on the test:
 ## <span id="related_topics"></span>Related topics
 
 
-[Getting Started: View test results and log files](p_sxs_hlk.step_7_view_test_results_and_log_files)
+[Getting Started: View test results and log files](..\getstarted\step-7-view-test-results-and-log-files.md)
 
 [Analyze test results in Excel](analyze-test-results-in-excel.md)
 

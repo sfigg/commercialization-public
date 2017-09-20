@@ -29,7 +29,7 @@ The following hardware is required for testing WSD compliance. Additional hardwa
 
     >[!NOTE]
     >  
-    All computers must meet the Windows HLK requirements. For more information, see [Windows HLK Prerequisites](p_sxs_hlk.windows_hlk_prerequisites).
+    All computers must meet the Windows HLK requirements. For more information, see [Windows HLK Prerequisites](..\getstarted\windows-hlk-prerequisites.md).
 
      
 
