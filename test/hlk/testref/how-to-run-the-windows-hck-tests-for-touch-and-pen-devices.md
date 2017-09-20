@@ -556,7 +556,7 @@ The following table lists dynamic HID compliance errors that can occur during to
 
 [Windows Hardware Development Center](http://go.microsoft.com/fwlink/?LinkID=246621)
 
-[Windows Hardware Compatibility Program](p_hlk.windows_hardware_compatibility_program_overview)
+[Windows Hardware Compatibility Program](..\user\windows-hardware-compatibility-program-overview.md)
 
 [Windows Certification Program Policies and Processes](http://go.microsoft.com/fwlink/?LinkID=286928)
 

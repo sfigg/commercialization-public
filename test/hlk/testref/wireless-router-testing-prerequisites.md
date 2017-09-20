@@ -29,7 +29,7 @@ The following hardware is required for wireless router testing.
 
 -   Basic Windows HLK test setup (Controller, Studio, and client systems). See [Windows HLK Getting Started](..\getstarted\windows-hlk-getting-started.md)
 
--   Four test computers. Each test computer must meet the Windows HLK prerequisites. See [Windows HLK Prerequisites](p_sxs_hlk.windows_hlk_prerequisites) for more information.
+-   Four test computers. Each test computer must meet the Windows HLK prerequisites. See [Windows HLK Prerequisites](..\getstarted\windows-hlk-prerequisites.md) for more information.
 
 -   At least two 100-megabit switches (more may be required depending on the number of available Ethernet ports on the DUT).
 

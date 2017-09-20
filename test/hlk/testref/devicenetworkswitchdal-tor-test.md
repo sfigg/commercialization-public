@@ -39,13 +39,13 @@ This section describes the following tasks that you must complete before you tes
 
 The following hardware is required for switch testing. Additional hardware can be required if the test device provides bus-specific support. See the test description for each bus-specific test to determine whether there are additional hardware requirements.
 
--   Basic Windows HLK test setup (Controller and Studio). See [Windows HLK Getting Started](p_sxs_hlk.windows_hlk_getting_started).
+-   Basic Windows HLK test setup (Controller and Studio). See [Windows HLK Getting Started](..\getstarted\windows-hlk-getting-started.md).
 
 -   Two test computers.
 
     >[!NOTE]
     >  
-    All computers must meet the Windows HLK requirements. If two test computers are required, both computers must be in the same computer pool. For more information, see [Windows HLK Prerequisites](p_sxs_hlk.windows_hlk_prerequisites).
+    All computers must meet the Windows HLK requirements. If two test computers are required, both computers must be in the same computer pool. For more information, see [Windows HLK Prerequisites](..\getstarted\windows-hlk-prerequisites.md).
 
     For testing networking capabilities, the test computer to which the switch is physically attached to is referred to as the System Under Test (SUT).
 
@@ -150,13 +150,13 @@ To configure the test computer for switch testing, follow these steps:
 
 To troubleshoot issues that occur with Device.Network.Switch.DAL-TOR tests, follow these steps:
 
-1.  Review the [Troubleshooting Windows HLK](p_hlk.troubleshooting_windows_hlk) topic.
+1.  Review the [Troubleshooting Windows HLK](..\user\troubleshooting-windows-hlk.md) topic.
 
 2.  Review the Windows HLK release notes for current test issues.
 
 3.  For a test failure, look for usable information in the Windows HLK Studio test log. If you find usable information, resolve the issue and rerun the test.
 
-4.  Review this topic for information about the known test issues for the specific type of device that you are testing. Take any appropriate action that is based on the information that you find, and then rerun the affected test or tests. If you cannot complete testing for your submission, open a support case as described in [Troubleshooting Windows HLK](p_hlk.troubleshooting_windows_hlk).
+4.  Review this topic for information about the known test issues for the specific type of device that you are testing. Take any appropriate action that is based on the information that you find, and then rerun the affected test or tests. If you cannot complete testing for your submission, open a support case as described in [Troubleshooting Windows HLK](..\user\troubleshooting-windows-hlk.md).
 
 ### <span id="Specific_switch_test_information"></span><span id="specific_switch_test_information"></span><span id="SPECIFIC_SWITCH_TEST_INFORMATION"></span>Specific switch test information
 

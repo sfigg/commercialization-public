@@ -25,7 +25,7 @@ The following hardware is required for router testing. You might need additional
 
 -   Basic Windows HLK test setup (Controller, Studio). See [Windows HLK Getting Started](..\getstarted\windows-hlk-getting-started.md)
 
--   Four test computers. Each test computer must meet the Windows HLK prerequisites. See [Windows HLK Prerequisites](p_sxs_hlk.windows_hlk_prerequisites) for more information.
+-   Four test computers. Each test computer must meet the Windows HLK prerequisites. See [Windows HLK Prerequisites](..\getstarted\windows-hlk-prerequisites.md) for more information.
 
 -   Eleven (11) 10/100 MB Ethernet adapters. Two of these adapters must support QoS 802.1p
 
@@ -139,7 +139,7 @@ The test computers identified as LAN1 and LAN2 have an identical setup procedure
 
 8.  Make sure all of the connections are marked **Private** in the Network Sharing Center.
 
-9.  Install the Windows HLK client application on both LAN 1 and LAN2. See [Step 2: Install Client on the test system(s)](p_sxs_hlk.step_2__install_client_on_the_test_system_s_) for more information.
+9.  Install the Windows HLK client application on both LAN 1 and LAN2. See [Step 2: Install Client on the test system(s)](..\getstarted\step-2--install-client-on-the-test-system-s-.md) for more information.
 
 10. Run the configuration jobs: **Setup Machine LAN1** and **Setup Machine LAN2** for Machine Lan1 and Machine2, respectively. These jobs will set Static IP addresses and setup machine dimensions for each machine as follows:
 
@@ -211,7 +211,7 @@ The test computer identifies as WAN1 should be configured using the following st
 
 7.  The wireless connection needs be associated with the router's wireless network.
 
-8.  Install the Windows HLK client application. See [Step 2: Install Client on the test system(s)](p_sxs_hlk.step_2__install_client_on_the_test_system_s_) for more information.
+8.  Install the Windows HLK client application. See [Step 2: Install Client on the test system(s)](..\getstarted\step-2--install-client-on-the-test-system-s-.md) for more information.
 
 9.  Run the **Setup Machine WAN1configuration** job. These jobs will set static IP addresses and set up machine dimensions as follows:
 
@@ -266,7 +266,7 @@ The test computer identified as WAN2 should be setup using the following steps:
 
     2.  The connections to the WAN side of the router are named **WAN1** and **WAN2** respectively.
 
-7.  Install the Windows HLK client application. See [Step 2: Install Client on the test system(s)](p_sxs_hlk.step_2__install_client_on_the_test_system_s_) for more information.
+7.  Install the Windows HLK client application. See [Step 2: Install Client on the test system(s)](..\getstarted\step-2--install-client-on-the-test-system-s-.md) for more information.
 
 8.  Run the **Setup Machine WAN2** configuration job. These jobs will set static IP addresses and set up machine dimensions as follows:
 

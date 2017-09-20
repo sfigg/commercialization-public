@@ -39,7 +39,7 @@ The following hardware is required for LAN device testing. You might need additi
 
 -   Basic Windows HLK test setup (Controller, Studio, and client systems). See [Windows HLK Getting Started](..\getstarted\windows-hlk-getting-started.md)
 
--   One test computer. This test computer must meet the Windows HLK prerequisites. See [Windows HLK Prerequisites](p_sxs_hlk.windows_hlk_prerequisites) for more information.
+-   One test computer. This test computer must meet the Windows HLK prerequisites. See [Windows HLK Prerequisites](..\getstarted\windows-hlk-prerequisites.md) for more information.
 
 -   One test mobile broadband device.
 
@@ -81,7 +81,7 @@ Make sure that the test computer is in the ready state before you begin your tes
 
 Some Windows HLK tests require user intervention. When running tests for a submission, it is a best practice to run the automated tests in a block separately from manual tests. This prevents a manual test from interrupting completion of an automated test.
 
-Once your test computers are configured, you are ready to begin testing. Refer to [Step 4: Create a project](p_sxs_hlk.step_4_create_a_project).
+Once your test computers are configured, you are ready to begin testing. Refer to [Step 4: Create a project](..\getstarted\step-4-create-a-project.md).
 
 ## <span id="Implementing_Loopback_Test_Functionality_in_MB_Devices"></span><span id="implementing_loopback_test_functionality_in_mb_devices"></span><span id="IMPLEMENTING_LOOPBACK_TEST_FUNCTIONALITY_IN_MB_DEVICES"></span>Implementing Loopback Test Functionality in MB Devices
 

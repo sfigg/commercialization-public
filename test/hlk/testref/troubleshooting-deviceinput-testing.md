@@ -87,7 +87,7 @@ You must have administrator permissions on the test system to change the permiss
 
 [Device.Input Tests](device-input-tests.md)
 
-[Troubleshooting Windows HLK](p_hlk.troubleshooting_windows_hlk)
+[Troubleshooting Windows HLK](..\user\troubleshooting-windows-hlk.md)
 
  
 
