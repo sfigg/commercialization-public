@@ -30,7 +30,7 @@ where *&lt;architecture&gt;* is either x86 or amd64.
 
 The base syntax for using the Assessment Platform from the command line is:
 
-<p style="margin: 1em 0 0 1.5em;"><strong>AXE.exe</strong>&nbsp;<em>job_file</em>&nbsp;[<em>AXE_options</em>]</p>
+<p style="margin: 1em 0 0 1.5em;"><strong>AXE.exe</strong>&nbsp;<em>job_file</em>&nbsp;[&nbsp;<em>AXE_options</em>&nbsp;]</p>
 
 
 The following table provides a description for how you can use each option. These options aren't case-sensitive.
@@ -44,7 +44,7 @@ The following table provides a description for how you can use each option. Thes
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong>Help</strong> or <strong>/?</strong></p></td>
+<td style="width: 60px;"><p><strong>Help</strong> or <strong>/?</strong></p></td>
 <td><p>Displays information about available <strong>AXE.exe</strong> command-line options.</p></td>
 </tr>
 <tr class="even">
