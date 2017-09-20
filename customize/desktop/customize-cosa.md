@@ -19,7 +19,7 @@ In Windows 10, version 1703, we added the Country and Operator Settings Asset (C
 > [!Note]  
 > This feature is only supported in Windows 10, version 1703 for desktop editions (Home, Pro, Enterprise, and Education)
 
-COSA can be extended with OEM-generated provisioning packages during desktop imaging. This enables OEMs tointroduce new COSA profiles to the database, as well as replace or extend existing COSA profiles. For example, you can add a profile for a mobile virtual network operator (MVNO) not currently in COSA, or a new partner for Data Marketplace, by creating an answer file that contains the settings. You can also change or remove an existing profile using the `Replace` operator in the existing answer file.
+COSA can be extended with OEM-generated provisioning packages during desktop imaging. This enables OEMs to introduce new COSA profiles to the database, as well as replace or extend existing COSA profiles. For example, you can add a profile for a mobile virtual network operator (MVNO) not currently in COSA, or a new partner for Data Marketplace, by creating an answer file that contains the settings. You can also change or remove an existing profile using the `Replace` operator in the existing answer file.
 
 > [!Important]
 > When using `Replace` to change or remove a profile, there are certain settings, listed below, which should not be modified or removed by OEMs. These settings are either system specific, or contractual settings between Microsoft and Mobile Operators (MOs), and their values should be preserved.
@@ -37,7 +37,7 @@ COSA can be extended with OEM-generated provisioning packages during desktop ima
 > - ProfileReplaced – Published when the OEM package replaces a COSA profile. Data is the profile ID.
 > - ProfileSuppressedByAfterMarketProfile – Published when an OEM package contains a profile that matches when a COSA profile also matches. The telemetry data contains the Profile ID.
 
-It is recommended that your organization submit any MO profile changes made to extend COSA to Microsoft. To learn more, see [APN database submission](https://docs.microsoft.com/en-us/windows-hardware/drivers/mobilebroadband/apn-database-submission).
+It is recommended that your organization submit any MO profile changes made to extend COSA to Microsoft. To learn more, see [COSA/APN database submission](https://docs.microsoft.com/en-us/windows-hardware/drivers/mobilebroadband/apn-database-submission).
 
 ## To add a new profile
 
