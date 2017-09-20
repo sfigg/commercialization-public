@@ -67,7 +67,7 @@ Test levels have been replaced by Development Phases to better align with the ha
 
 ### <span id="Playlists"></span><span id="playlists"></span><span id="PLAYLISTS"></span>Playlists
 
-Playlists describe a collection of tests and can be created from the HLK Studio and [Object Model](developer\microsoftwindowskitshardwareobjectmodel.md) to define custom test passes.
+Playlists describe a collection of tests and can be created from the HLK Studio and [Object Model](API\microsoftwindowskitshardwareobjectmodel.md) to define custom test passes.
 
 <iframe src="https://hubs-video.ssl.catalog.video.msn.com/embed/afc1a262-6147-448f-910c-dbb1bcb18d07/IA?csid=ux-en-us&MsnPlayerLeadsWith=html&PlaybackMode=Inline&MsnPlayerDisplayShareBar=false&MsnPlayerDisplayInfoButton=false&iframe=true&QualityOverride=HD" width="720" height="405" allowFullScreen="true" frameBorder="0" scrolling="no"></iframe>
 
