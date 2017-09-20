@@ -39,8 +39,8 @@ The following table provides a description for how you can use each option. Thes
 <table>
 <thead>
 <tr class="header">
-<th style="width: 15%;">Option</th>
-<th>Description</th>
+<th style="width: 120px;">Option</th>
+<th style="width: 120px;">Description</th>
 </tr>
 </thead>
 <tbody>
