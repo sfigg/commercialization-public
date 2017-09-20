@@ -35,7 +35,7 @@ If a test fails, you can expand the test details to review the associated log fi
 
 Right-click any test to see additional test details, including:
 
--   [Bugcheck Summary information](..\user\hlk-studio---results-tab#sysx.md) for system crashes that occur during test runs
+-   [Bugcheck Summary information](..\user\hlk-studio---results-tab.md#sysx) for system crashes that occur during test runs
 
 -   Task logs
 
