@@ -10,7 +10,7 @@ ms.assetid: 7A7A0619-F709-431A-BE32-478DC511F099
 # Exporting Test Results
 
 
-Use the [Export(string outputLocation)](irunexport-export-method.md) method to export a result that can be run standalone to the specified location on the local file system. Before calling Export(), check the value of CanExport to determine whether the test result can be exported.
+Use the [Export(string outputLocation)](..\API\irunexport-export-method.md) method to export a result that can be run standalone to the specified location on the local file system. Before calling Export(), check the value of CanExport to determine whether the test result can be exported.
 
 When you call **Export()**, the Windows Hardware Lab Kit (Windows HLK) verifies these items:
 
@@ -36,7 +36,7 @@ For more information, including how to export a failed HLK job from within the H
 ## <span id="related_topics"></span>Related topics
 
 
-[IRunExport Interface](irunexport-interface.md)
+[IRunExport Interface](..\API\irunexport-interface.md)
 
  
 
