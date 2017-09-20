@@ -1,5 +1,5 @@
 ---
-title: Virtualization Based Security (VBS)
+title: Virtualization-based Security (VBS)
 description: Provides guidance on what an OEM should do to enable VBS
 MSHAttr:
 - 'PreferredSiteName:MSDN'
@@ -12,11 +12,9 @@ ms.technology: windows-oem
 ---
 
 # Virtualization-based Security (VBS)
-Hardware-based security features, also called virtualization-based security or VBS, provide isolation of the secure kernel from the normal operating system. Vulnerabilities and Day Zero attacks in the operating system cannot be exploited because of this isolation.
+Virtualization-based security, or VBS, uses hardware virtualization features to create and isolate a secure region of memory from the normal operating system. Windows can use this "virtual secure mode" to host a number of security solutions, providing them with greatly increased protection from vulnerabilities in the operating system, and preventing the spread or use of malicious exploits which attempt defeat protections, or to use security assets such as authenticated user credentials. With then increased protections offered by VBS, even if malware gains access to the OS kernel the possible exploits can be greatly limited and contained, because the hypervisor can prevent the malware from executing code. VBS uses the Windows hypervisor to create this virtual secure mode, and to enforce restrictions which protect vital system and operating system resources. 
 
-VBS uses the hypervisor to help protect the kernel and other parts of the operating system. When VBS is enabled, it strengthens either the default kernel-mode code integrity policy (which protects against bad drivers or system files), or the configurable code integrity policy.
-
-With VBS, even if malware gains access to the kernel, the effects can be severely limited, because the hypervisor can prevent the malware from executing code. The hypervisor, the most privileged level of system software, enforces R/W/X permissions across system memory. Code integrity checks are performed in a secure environment which is resistant to attack from kernel mode software, and page permissions for kernel mode are set and maintained by the hypervisor. Even if there are vulnerabilities that allow memory modification, like a buffer overflow, the modified memory cannot be executed.
+One such example is Hypervisor-Enforced Code Integrity (HVCI), which uses VBS to significantly strengthen code integrity policy enforcement.  Kernel mode code integrity checks all kernel mode drivers and binaries as before they're started, and prevents unsigned drivers or system files from being loaded into system memory. Similarly, user mode configurable code integrity policy checks applications before they're loaded, and will only start executables which are code-signed by known, approved signers. With HVCI, code integrity checks are performed inside the VSM secure environment, which is resistant to attack from kernel mode software. The hypervisor, the most privileged level of system software, sets and enforces page permissions across all system memory. Pages are only made executable after code integrity checks inside the secure region have passed, and executable pages are not writable. That way, even if there are vulnerabilities that allow memory modification, like a buffer overflow, the modified memory cannot be executed.
 
 VBS requires the following components be present and properly configured. 
 
