@@ -21,7 +21,7 @@ ms.technology: windows-oem
 
 By default, AXE.exe is installed to:
 
-<p style="margin: 1em 0 0 1.5em;">%PROGRAMFILES%\\Windows Kits\\10\\ Assessment and Deployment Kit\\Windows Assessment Toolkit\\*&lt;architecture&gt;\*</p>
+<p style="margin: 1em 0 0 1.5em;">%PROGRAMFILES%\\Windows Kits\\10\\ Assessment and Deployment Kit\\Windows Assessment Toolkit\\*&lt;architecture&gt;*\\</p>
 
 where *&lt;architecture&gt;* is either x86 or amd64.
 
@@ -38,31 +38,28 @@ The following table provides a description for how you can use each option. Thes
 <table>
 <thead>
 <tr class="header">
-<th style="width: 60px;">Option</th>
-<th style="width: 120px;">Description</th>
+<th style="width: 60px;" bgcolor="EEEEEE">Option</th>
+<th style="width: 120px;" bgcolor="EEEEEE">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td style="width: 60px;"><p><strong>Help</strong> or <strong>/?</strong></p></td>
-<td><p>Displays information about available <strong>AXE.exe</strong> command-line options.</p></td>
+<td style="width: 120px;"><p>Displays information about available <strong>AXE.exe</strong> command-line options.</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>JobFile</strong></p></td>
+<td><p><em>job_file</em></p></td>
 <td><p>Specifies the job file that you want to run.</p>
 <p>The path of the job file can be a relative path. If the job is in the directory that you're running <strong>AXE.exe</strong> from, no path is required. By default, when you create a job in the Windows Assessment Console, it's saved in the %USERPROFILE%\Documents\Windows Assessment Console\Jobs folder.</p>
 <div class="alert">
 <strong>Note</strong>  
 <p>This option is required if no other parameter that performs an action is specified.</p>
 </div>
-<div>
- 
-</div>
 <p>Example:</p>
 <pre class="syntax" space="preserve"><code>AXE C:\Assessments\MyJobs\Job1.jobx</code></pre></td>
 </tr>
 <tr class="odd">
-<td><p><strong>/Timeout</strong><em>&lt;seconds&gt;</em></p></td>
+<td><p><strong>/Timeout</strong>&nbsp;<em>&lt;seconds&gt;</em></p></td>
 <td><p>Specifies the amount of time, in seconds, that the job will wait for another job to finish before it exits with an error. The default is zero, which means that the job will exit immediately if another job is already running. This is an optional parameter.</p>
 <p>Example:</p>
 <pre class="syntax" space="preserve"><code>AXE C:\Assessments\myJobs\Job1.jobx /Timeout 30</code></pre></td>
@@ -74,7 +71,7 @@ The following table provides a description for how you can use each option. Thes
 <pre class="syntax" space="preserve"><code>AXE C:\Assessments\myJobs\Job1.jobx /NoPublish</code></pre></td>
 </tr>
 <tr class="odd">
-<td><p><strong>/PublishPath</strong><em>&lt;Directory&gt;</em></p></td>
+<td><p><strong>/PublishPath</strong>&nbsp;<em>&lt;Directory&gt;</em></p></td>
 <td><p>Specifies the path of a folder to publish the results file to. This overrides the publication path, &lt;ResultsPublishPath&gt;, that's specified in the job file. This parameter is ignored if it's combined with <strong>/NoPublish</strong>.</p>
 <p>Example:</p>
 <pre class="syntax" space="preserve"><code>AXE C:\Assessments\myJobs\Job1.jobx /PublishPath C:\Assessments\myResults</code></pre></td>
@@ -85,9 +82,6 @@ The following table provides a description for how you can use each option. Thes
 <div class="alert">
 <strong>Note</strong>  
 <p>The <strong>/JobFile</strong> option isn't needed when you use this option.</p>
-</div>
-<div>
- 
 </div>
 <p>When you run a job, the assessment creates a task to restart the job if there's a system failure, like a loss of power. When you use this option, the task is removed from the Task Scheduler. If no job-restart task is pending, the assessment will return an error to inform you that the task doesn't exist.</p>
 <p>Example:</p>
@@ -112,15 +106,12 @@ The following table provides a description for how you can use each option. Thes
 <pre class="syntax" space="preserve"><code>AXE C:\Assessments\myJobs\Job1.jobx /JobParameter iterations=1</code></pre></td>
 </tr>
 <tr class="even">
-<td><p><strong>/DisplayLog</strong><em>&lt;path_to_AXE_ETL_log_file&gt;</em></p></td>
+<td><p><strong>/DisplayLog</strong>&nbsp;<em>&lt;path_to_AXE_ETL_log_file&gt;</em></p></td>
 <td><p>Displays the content of the Event Trace Log (ETL) files that <strong>AXE.exe</strong> uses for logging. You must specify the path of the <strong>AXE.exe</strong> ETL files. The location of the log files appears in the console when a job runs. The file name may contain wildcard characters.</p>
 <p>The default location of the log file is %LOCALAPPDATA%\Microsoft\Axe\Logs\<em>&lt;GUID&gt;</em>, where <em>&lt;GUID&gt;</em> is the GUID that's generated randomly for each new job. The job results file in the &lt;SessionLogFiles&gt; node also contains the full location. This node specifies all of the log files.</p>
 <div class="alert">
 <strong>Note</strong>  
 <p>All of the ETL files are automatically converted into a single AxeLog.txt file that's saved in the results directory. You can open this file by using Notepad.</p>
-</div>
-<div>
- 
 </div>
 <p>Example:</p>
 <pre class="syntax" space="preserve"><code>AXE /DisplayLog &lt;path_to_file&gt;</code></pre></td>
