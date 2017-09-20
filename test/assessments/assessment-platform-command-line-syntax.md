@@ -37,13 +37,9 @@ AXE.exe jobfile [AXE_options]
 The following table provides a description for how you can use each option. These options aren't case-sensitive.
 
 <table>
-<colgroup>
-<col width="15%" />
-<col width="50%" />
-</colgroup>
 <thead>
 <tr class="header">
-<th>Option</th>
+<th style="width: 15%;">Option</th>
 <th>Description</th>
 </tr>
 </thead>
