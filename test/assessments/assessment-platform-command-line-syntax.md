@@ -21,9 +21,9 @@ ms.technology: windows-oem
 
 By default, AXE.exe is installed to:
 
-%PROGRAMFILES%\\Windows Kits\\10\\ Assessment and Deployment Kit\\Windows Assessment Toolkit\\*&lt;architecture&gt;*
+<p style="margin: 1em 0 0 1.5em;">%PROGRAMFILES%\\Windows Kits\\10\\ Assessment and Deployment Kit\\Windows Assessment Toolkit\\*&lt;architecture&gt;\*</p>
 
-Where *&lt;architecture&gt;* is either x86 or amd64.
+where *&lt;architecture&gt;* is either x86 or amd64.
 
 ## Command-Line Options
 
@@ -38,7 +38,7 @@ The following table provides a description for how you can use each option. Thes
 
 <table>
 <colgroup>
-<col width="50%" />
+<col width="15%" />
 <col width="50%" />
 </colgroup>
 <thead>
