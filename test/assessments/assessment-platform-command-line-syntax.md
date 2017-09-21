@@ -51,9 +51,7 @@ The following table provides a description for how you can use each option. Thes
 <td><p><em>job_file</em></p></td>
 <td><p>Specifies the job file that you want to run.</p>
 <p>The path of the job file can be a relative path. If the job is in the directory that you're running <strong>AXE.exe</strong> from, no path is required. By default, when you create a job in the Windows Assessment Console, it's saved in the %USERPROFILE%\Documents\Windows Assessment Console\Jobs folder.</p>
-<!--<div class="alert">-->
-<strong>Note</strong>&nbsp;&nbsp;&nbsp;<p>This option is required if no other parameter that performs an action is specified.</p>
-<!--</div>-->
+<p style="margin: 1em 1.5em 0 1.5em;"><strong>Note</strong>&nbsp;&nbsp;&nbsp;This option is required if no other parameter that performs an action is specified.</p>
 <p>Example:</p>
 <p style="margin: 1em 0 0 1.5em;">AXE C:\Assessments\MyJobs\Job1.jobx</p>
 <!--
@@ -66,7 +64,7 @@ The following table provides a description for how you can use each option. Thes
 <td><p><strong>/Timeout</strong>&nbsp;<em>&lt;seconds&gt;</em></p></td>
 <td><p>Specifies the amount of time, in seconds, that the job will wait for another job to finish before it exits with an error. The default is zero, which means that the job will exit immediately if another job is already running. This is an optional parameter.</p>
 <p>Example:</p>
-<pre class="syntax" space="preserve"><code>AXE C:\Assessments\myJobs\Job1.jobx /Timeout 30</code></pre></td>
+<pre class="syntax" space="preserve">AXE C:\Assessments\myJobs\Job1.jobx /Timeout 30</pre></td>
 </tr>
 <tr class="even">
 <td><p><strong>/NoPublish</strong></p></td>
