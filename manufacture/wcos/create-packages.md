@@ -145,6 +145,7 @@ update.cat
 update.mum
 ```
 
+<!--
 ## Add a language-specific content to a package
 
 In the preceding example, all the files and registry values are language neutral. You can use the package project XML file to add language-related files and registry values to a package. Special flags are used to notify the package generator of language-specific content. The following XML example demonstrates how to designate language-specific content.
@@ -181,6 +182,7 @@ Directory of c:\oemsample
 04/04/2017  10:17 PM             8,750 OEM-Media-MediaService.Resources_Lang_en-us.cab
 04/04/2017  10:17 PM             8,752 OEM-Media-MediaService.Resources_Lang_fr-fr.cab
 ```
+-->
 
 ## Add a driver component
 
@@ -238,73 +240,10 @@ The **service** element in the package project XML file, its child elements, and
       >
 ```
 
-## Add BCD Settings
-If you wish to make changes to the BCD settings, you will need to do this with 2 files. 
-
-* bcdsettings.xml - This file will contain the declarations for BCD settings.
-* bcdsettings.wm.xml - This file is the manifest that will consume the bcdsettings.xml
-
-The following example shows how to enable test signing:
-
-**bcdsettings.xml**
-
-```xml
-  <?xml version="1.0" encoding="utf-8"?>
-  <BootConfigurationDatabase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/phone/2011/10/BootConfiguration">
-  <Objects>
-
-    <!--  Allow Test Signing Certificate -->
-    <Object SaveKeyToRegistry="false">
-      <FriendlyName>Global Settings Group</FriendlyName>
-      <Elements>
-        <Element>
-          <DataType>
-            <WellKnownType>Allow Pre-release Signatures</WellKnownType>
-          </DataType>
-          <ValueType>
-            <BooleanValue>true</BooleanValue>
-          </ValueType>
-        </Element>
-      </Elements>
-    </Object>
-
-    <Object SaveKeyToRegistry="false">
-      <FriendlyName>Windows Boot Manager</FriendlyName>
-      <Elements>
-        <Element>
-          <DataType>
-            <WellKnownType>Allow Pre-release Signatures</WellKnownType>
-          </DataType>
-          <ValueType>
-            <BooleanValue>true</BooleanValue>
-          </ValueType>
-        </Element>
-      </Elements>
-    </Object>
-
-  </Objects>
-</BootConfigurationDatabase>
-</identity>
-```
-
-**bcdsettings.wm.xml**
-```xml
-  <?xml version='1.0' encoding='utf-8' standalone='yes'?>
-  <identity
-    xmlns="urn:Microsoft.CompPlat/ManifestSchema.v1.00"
-    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    owner="OEM"
-    name="BcdOEMPackageName"
-    namespace="OEMName"
-    >
-    <onecorePackageInfo targetPartition="EFIESP" releaseType="Test" />
-    <bcdStore source=".\bcdsettings.xml" buildFilter="not build.isWow"/>
-  </identity>
-```
-
-See the [BCDLayout template](bcdlayout.md) for more detail on possible settings
-
+<!--
+Removed - see original wiki
+-->
+<!-- 
 ## COM Registration
 
 COM servers and class definitions should be registered using COM elements.
@@ -324,6 +263,7 @@ COM servers and class definitions should be registered using COM elements.
     </servers>
   </COM>
 ```
+-->
 
 ## Project scope macros
 
@@ -347,6 +287,8 @@ Package projects can utilize macros to simplify the XML creation process. Some m
   </regKeys>
 ```
 
+<!--
+
 ## Security
 
 If resources in your manifest are sensitive from a privacy or security perspective, or your resource(s) need to be accessed from within an app container, then you need to secure them using either Declarative Security or SDDL's.
@@ -361,7 +303,7 @@ https://osgwiki.com/wiki/Security_Model_How-Tos
 
 OEM Packages only support private resources defined on services.
 
-### Private Resources
+## Private Resources
 
 If a service requires exclusive access to data and/or RPC interfaces, these resources should be private.
 
@@ -382,6 +324,7 @@ If a service requires exclusive access to data and/or RPC interfaces, these reso
     </privateResources>
   </service>
 ```
+-->
 
 ## Build and Filter WOW Packages
 To build Guest or WOW packages (32 bit packages to run on 64 bit devices) add the buildWow="true" attribute to myPackage.wm.wml
@@ -424,7 +367,7 @@ Typically, the 64 bit device will get it's Host 64 bit package and it's Guest 32
 [cpu]··············· CPU type. Values: (x86|arm|arm64|amd64)
                      Values:<Free Text> Default="arm"
 ```
-
+<!--
 ## Schema
 Only the common elements and attributes are documented here.  To get the full schema run "pkggen /universalbsp /wmxsd:.", then open WM0.XSD with Visual Studio.  
 
@@ -547,3 +490,4 @@ REG_EXPAND_SZ
 </regKey>
 ```
 
+-->
