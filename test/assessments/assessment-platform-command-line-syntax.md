@@ -55,18 +55,17 @@ The following table provides a description for how you can use each option. Thes
 <p style="margin: 1em 1.5em 0 1.5em;"><strong>Note</strong>&nbsp;&nbsp;&nbsp;This option is required if no other parameter that performs an action is specified.</p>
 </div>
 <p>Example:</p>
-<p style="margin: 1em 0 0 1.5em;">AXE C:\Assessments\MyJobs\Job1.jobx</p>
 <pre class="syntax"><code>AXE C:\Assessments\MyJobs\Job1.jobx</code></pre></td>
 </tr>
-</table>
-
-<table>
 <tr class="odd">
 <td><p><strong>/Timeout</strong>&nbsp;<em>&lt;seconds&gt;</em></p></td>
 <td><p>Specifies the amount of time, in seconds, that the job will wait for another job to finish before it exits with an error. The default is zero, which means that the job will exit immediately if another job is already running. This is an optional parameter.</p>
 <p>Example:</p>
 <pre class="syntax"><code>AXE C:\Assessments\myJobs\Job1.jobx /Timeout 30</code></pre></td>
 </tr>
+</table>
+
+<table>
 <tr class="even">
 <td><p><strong>/NoPublish</strong></p></td>
 <td><p>Specifies not to publish the results file to the location that's specified in the job file. When you use this option, the results are saved to the default location, %LOCALAPPDATA%\Microsoft\Axe\Results.</p>
