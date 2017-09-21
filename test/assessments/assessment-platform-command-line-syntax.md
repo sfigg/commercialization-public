@@ -63,9 +63,6 @@ The following table provides a description for how you can use each option. Thes
 <p>Example:</p>
 <pre class="syntax"><code>AXE C:\Assessments\myJobs\Job1.jobx /Timeout 30</code></pre></td>
 </tr>
-</table>
-
-<table>
 <tr class="even">
 <td><p><strong>/NoPublish</strong></p></td>
 <td><p>Specifies not to publish the results file to the location that's specified in the job file. When you use this option, the results are saved to the default location, %LOCALAPPDATA%\Microsoft\Axe\Results.</p>
@@ -107,6 +104,9 @@ The following table provides a description for how you can use each option. Thes
 <p>Example:</p>
 <pre class="syntax"><code>AXE C:\Assessments\myJobs\Job1.jobx /JobParameter iterations=1</code></pre></td>
 </tr>
+</table>
+
+<table>
 <tr class="even">
 <td><p><strong>/DisplayLog</strong>&nbsp;<em>&lt;path_to_AXE_ETL_log_file&gt;</em></p></td>
 <td><p>Displays the content of the Event Trace Log (ETL) files that <strong>AXE.exe</strong> uses for logging. You must specify the path of the <strong>AXE.exe</strong> ETL files. The location of the log files appears in the console when a job runs. The file name may contain wildcard characters.</p>
