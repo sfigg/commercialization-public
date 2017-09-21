@@ -33,13 +33,13 @@ The base syntax for using the Assessment Platform from the command line is:
 <p style="margin: 1em 0 0 1.5em;"><strong>AXE.exe</strong>&nbsp;<em>job_file</em>&nbsp;[&nbsp;<em>AXE_options</em>&nbsp;]</p>
 
 
-The following table provides a description for how you can use each option. These options aren't case-sensitive.
+<p>The following table provides a description for how you can use each option. These options aren't case-sensitive.</p>
 
 <table>
 <thead>
 <tr class="header">
-<td style="width: 120px;" bgcolor="EEEEEE"><p style="text-align: center;"><strong>Option</strong></p></td>
-<td style="width: 120px;" bgcolor="EEEEEE"><p style="text-align: center;"><strong>Description</strong></p></td>
+<td bgcolor="EEEEEE"><p style="text-align: center; margin: 0 0 0 0"><strong>Option</strong></p></td>
+<td bgcolor="EEEEEE"><p style="text-align: center; margin: 0 0 0 0"><strong>Description</strong></p></td>
 </tr>
 </thead>
 <tbody>
@@ -67,9 +67,6 @@ The following table provides a description for how you can use each option. Thes
 <p>Example:</p>
 <code>AXE C:\Assessments\myJobs\Job1.jobx /NoPublish</code></td>
 </tr>
-</table>
-
-<table>
 <tr class="odd">
 <td><p><strong>/PublishPath</strong>&nbsp;<em>&lt;Directory&gt;</em></p></td>
 <td><p>Specifies the path of a folder to publish the results file to. This overrides the publication path, &lt;ResultsPublishPath&gt;, that's specified in the job file. This parameter is ignored if it's combined with <strong>/NoPublish</strong>.</p>
