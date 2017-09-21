@@ -70,7 +70,7 @@ The following table provides a description for how you can use each option. Thes
 <td><p><strong>/NoPublish</strong></p></td>
 <td><p>Specifies not to publish the results file to the location that's specified in the job file. When you use this option, the results are saved to the default location, %LOCALAPPDATA%\Microsoft\Axe\Results.</p>
 <p>Example:</p>
-<pre class="syntax" space="preserve"><code>AXE C:\Assessments\myJobs\Job1.jobx /NoPublish</code></pre></td>
+<code>AXE C:\Assessments\myJobs\Job1.jobx /NoPublish</code></td>
 </tr>
 <tr class="odd">
 <td><p><strong>/PublishPath</strong>&nbsp;<em>&lt;Directory&gt;</em></p></td>
