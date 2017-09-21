@@ -143,7 +143,7 @@ In the case of a test failure, you can view the available diagnostic log files b
 
 The displayed logs can be the following types, depending on the test:
 
--   **Kernel crash dumps**. Kernel crash dumps are disabled by default. To collect kernel crash dumps, see [Manually Configure HLK Client Kernel Debugger Settings](..\user\manually-configure-hck-client-kernel-debugger-settings.md).
+-   **Kernel crash dumps**. Kernel crash dumps are disabled by default. To collect kernel crash dumps, see [Manually Configure HLK Client Kernel Debugger Settings](..\user\manually-configure-hlk-client-kernel-debugger-settings.md).
 
 -   **Event logs**. Windows HLK collects all of the warning, error, and critical events that occurred during the test run:
 
