@@ -9,6 +9,52 @@ ms.assetid: 586b1f36-87c6-4473-bcfa-c5330d4e885c
 
 # Device.Network tests
 
+*Microsoft will be accepting 802.11ad WDI drivers for HLK certification for the
+Windows 10 Fall Creators Update (1709) to facilitate broad distribution and
+testing among Windows Insiders and ecosystem partners.*
+
+*However, due to the lack of broad testing of 802.11ad WDI functionality, this
+feature is enabled as a “developer preview” for the Windows 10, version 1709
+release. If a problem is encountered with 802.11ad functionality, please contact
+your 802.11ad IHV partner for support assistance.   Microsoft is committed to
+supporting 802.11ad Wi-Fi connectivity in a future version of Windows 10 in
+order to enable wireless docking and other scenarios.  *
+
+*The affected tests are*
+
+-   *Wlan Test - Attempt a connection to a non-existent network*
+
+-   *Wlan Test - Connect to a WPA2 PSK AES AP*
+
+-   *Wlan Test - Connect to a WPA2 PSK AES AP with Sleep cycle*
+
+-   *Wlan Test - Enable and Disable WFD Autonomous GO*
+
+-   *Wlan Test - Query All Reported Oids*
+
+-   *Wlan Test - Query Interface Properties*
+
+-   *Wlan Test - Scan for Networks*
+
+-   *Wlan Test - Toggle airplane mode*
+
+-   *Wlan Test - Wlan Device Capabilities Check*
+
+-   *Wlan Test - Wlan Device enumeration*
+
+-   *Wlan Test - Wlan Device Reset Check*
+
+-   *Wi-Fi Direct Basic Discovery Tests - Functional*
+
+-   *Wi-Fi Direct Basic Pairing Tests - Functional*
+
+-   *Wi-Fi Direct Basic Reconnect Tests - Functional*
+
+-   *Wi-Fi Direct Legacy Pairing Tests - Functional*
+
+-   *Wi-Fi Direct Service Discovery Tests - Functional*
+
+-   *Wi-Fi Direct Service Pairing and Reconnect Tests - Functional*
 
 -   [CopyFile Client to Server LOGO test](b3f5859d-e47a-41da-9355-b4e11bbfc894.md)
 -   [CopyFile Server to Client LOGO test](2ea2f846-dc37-4d4c-90c8-d23e620cb02c.md)
