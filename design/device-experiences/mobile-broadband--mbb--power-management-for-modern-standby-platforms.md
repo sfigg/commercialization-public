@@ -55,7 +55,7 @@ The five power-management modes are:
 
 
 The following table compares the five power-management modes.
-
+<p>&nbsp;</p>
 <table style="width:90%;">
 <tr class="header">
 <th bgcolor="EEEEEE">Power management mode</th>
@@ -65,15 +65,6 @@ The following table compares the five power-management modes.
 <th bgcolor="EEEEEE">Average power consumption</th>
 <th bgcolor="EEEEEE">Exit latency to active</th>
 <th bgcolor="EEEEEE">Transition mechanism</th>
-</tr>
-<tr>
-<td bgcolor="EEEEEE"><strong>Power management mode</strong></td>
-<!--<th>Description</th>-->
-<td bgcolor="EEEEEE"><strong>Radio power state</strong></td>
-<td bgcolor="EEEEEE"><strong>USB device power state (Dx)</strong></td>
-<td bgcolor="EEEEEE"><strong>Average power consumption</strong></td>
-<td bgcolor="EEEEEE"><strong>Exit latency to active</strong></td>
-<td bgcolor="EEEEEE"><strong>Transition mechanism</strong></td>
 </tr>
 <tbody>
 <tr class="odd">
