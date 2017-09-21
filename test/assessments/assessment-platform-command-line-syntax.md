@@ -58,8 +58,6 @@ The following table provides a description for how you can use each option. Thes
 <p style="margin: 1em 0 0 1.5em;">AXE C:\Assessments\MyJobs\Job1.jobx</p>
 <pre class="syntax"><code>AXE C:\Assessments\MyJobs\Job1.jobx</code></pre></td>
 </tr>
-</table>
-<table>
 <tr class="odd">
 <td><p><strong>/Timeout</strong>&nbsp;<em>&lt;seconds&gt;</em></p></td>
 <td><p>Specifies the amount of time, in seconds, that the job will wait for another job to finish before it exits with an error. The default is zero, which means that the job will exit immediately if another job is already running. This is an optional parameter.</p>
