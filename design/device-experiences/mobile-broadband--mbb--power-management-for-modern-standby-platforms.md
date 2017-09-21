@@ -36,7 +36,30 @@ If the radio in the MBB device is currently enabled by the user for a data conne
 ## Power management modes
 
 
-The MBB device is expected to support the five power management modes that are described in the following table. These modes are a combination of provisioned, connectivity, and radio power states. A transition from one mode to another is communicated to the device directly over the USB bus through commands from the Mobile Broadband Class Driver or USB device state transitions. Transitions between power management modes must not use external GPIO signaling.
+The MBB device is expected to support five power management modes.
+These modes are a combination of provisioned, connectivity, and radio power states. A transition from one mode to another is communicated to the device directly over the USB bus through commands from the Mobile Broadband Class Driver or USB device state transitions. Transitions between power management modes must not use external GPIO signaling.
+
+The five power management modes are:
+
+Active
+:The radio is actively transmitting data or is actively connected to the cellular network.
+
+Connected-sleep
+:The radio is provisioned on the network and a user account is enabled. The platform is in modern standby. The MBB device is waiting for data from the network to wake up the SoC, and also for events from the SoC. Average across 2G, 3G, LTE, and various DRX modes.
+
+Radio-off
+:The radio is provisioned on the network, but Windows or the user has turned off the radio in the MBB device.
+
+No-subscription
+:The user does not have an active subscription.
+
+No-SIM
+:The device has no SIM.
+
+
+
+
+The following table compares the five modes.
 
 <table style="width:90%;">
 <thead>
@@ -52,8 +75,8 @@ The MBB device is expected to support the five power management modes that are d
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Active</p><!--</td>
-<td>--><p>The radio is actively transmitting data or is actively connected to the cellular network.</p></td>
+<td><p>Active</p></td>
+<!--<td><p>The radio is actively transmitting data or is actively connected to the cellular network.</p></td>-->
 <td><p>On</p></td>
 <td><p>D0</p></td>
 <td><p>Scenario-specific</p></td>
@@ -61,9 +84,9 @@ The MBB device is expected to support the five power management modes that are d
 <td><p>N/A</p></td>
 </tr>
 <tr class="even">
-<td><p>Connected-sleep</p>
-<p>(Average across 2G, 3G, LTE, and various DRX modes)</p><!--</td>
-<td>--><p>The radio is provisioned on the network and a user account is enabled. The platform is in modern standby. The MBB device is waiting for data from the network to wake up the SoC, and also for events from the SoC.</p></td>
+<td><p>Connected-sleep</p><!--
+<p>(Average across 2G, 3G, LTE, and various DRX modes)</p>--></td>
+<!--<td><p>The radio is provisioned on the network and a user account is enabled. The platform is in modern standby. The MBB device is waiting for data from the network to wake up the SoC, and also for events from the SoC.</p></td>-->
 <td><p>On</p></td>
 <td><p>D2 (selective suspend)</p></td>
 <td><p>&lt;= 15 milliwatts (device-specific)</p></td>
@@ -71,8 +94,8 @@ The MBB device is expected to support the five power management modes that are d
 <td><p>Initiated over USB bus by inbox MBB class driver.</p></td>
 </tr>
 <tr class="odd">
-<td><p>Radio-off</p><!--</td>
-<td>--><p>The radio is provisioned on the network, but Windows or the user has turned off the radio in the MBB device.</p></td>
+<td><p>Radio-off</p></td>
+<!--<td><p>The radio is provisioned on the network, but Windows or the user has turned off the radio in the MBB device.</p></td>-->
 <td><p>Off</p></td>
 <td><p>D2 (selective suspend)</p></td>
 <td><p>&lt;= 5 milliwatts</p></td>
@@ -80,8 +103,8 @@ The MBB device is expected to support the five power management modes that are d
 <td><p>Initiated over USB bus by inbox MBB class driver.</p></td>
 </tr>
 <tr class="even">
-<td><p>No-subscription</p><!--</td>
-<td>--><p>The user does not have an active subscription.</p></td>
+<td><p>No-subscription</p></td>
+<!--<td><p>The user does not have an active subscription.</p></td>-->
 <td><p>Off</p></td>
 <td><p>D2 or D3</p></td>
 <td><p>&lt;= 3 milliwatts</p></td>
@@ -89,8 +112,8 @@ The MBB device is expected to support the five power management modes that are d
 <td><p>Initiated over USB bus by inbox MBB class driver.</p></td>
 </tr>
 <tr class="odd">
-<td><p>No-SIM</p><!--</td>
-<td>--><p>The device has no SIM.</p></td>
+<td><p>No-SIM</p></td>
+<!--<td><p>The device has no SIM.</p></td>-->
 <td><p>Off</p></td>
 <td><p>D2 or D3</p></td>
 <td><p>&lt;= 3 milliwatts</p></td>
