@@ -44,8 +44,8 @@ The base syntax for using the Assessment Platform from the command line is:
 </thead>
 <tbody>
 <tr class="odd">
-<td style="width: 120px;"><p><strong>Help</strong> or <strong>/?</strong></p></td>
-<td style="width: 120px;"><p>Displays information about available <strong>AXE.exe</strong> command-line options.</p></td>
+<td><p><strong>Help</strong> or <strong>/?</strong></p></td>
+<td><p>Displays information about available <strong>AXE.exe</strong> command-line options.</p></td>
 </tr>
 <tr class="even">
 <td><p><em>job_file</em></p></td>
