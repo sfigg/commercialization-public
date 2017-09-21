@@ -51,28 +51,32 @@ The following table provides a description for how you can use each option. Thes
 <td><p><em>job_file</em></p></td>
 <td><p>Specifies the job file that you want to run.</p>
 <p>The path of the job file can be a relative path. If the job is in the directory that you're running <strong>AXE.exe</strong> from, no path is required. By default, when you create a job in the Windows Assessment Console, it's saved in the %USERPROFILE%\Documents\Windows Assessment Console\Jobs folder.</p>
+<div class="alert">
 <p style="margin: 1em 1.5em 0 1.5em;"><strong>Note</strong>&nbsp;&nbsp;&nbsp;This option is required if no other parameter that performs an action is specified.</p>
+</div>
 <p>Example:</p>
-<code>AXE C:\Assessments\MyJobs\Job1.jobx</code></td>
--->
+<p style="margin: 1em 0 0 1.5em;">AXE C:\Assessments\MyJobs\Job1.jobx</p>
+<pre class="syntax"><code>AXE C:\Assessments\MyJobs\Job1.jobx</code></pre></td>
 </tr>
+</table>
+<table>
 <tr class="odd">
 <td><p><strong>/Timeout</strong>&nbsp;<em>&lt;seconds&gt;</em></p></td>
 <td><p>Specifies the amount of time, in seconds, that the job will wait for another job to finish before it exits with an error. The default is zero, which means that the job will exit immediately if another job is already running. This is an optional parameter.</p>
 <p>Example:</p>
-<code>AXE C:\Assessments\myJobs\Job1.jobx /Timeout 30</code></td>
+<pre class="syntax"><code>AXE C:\Assessments\myJobs\Job1.jobx /Timeout 30</code></pre></td>
 </tr>
 <tr class="even">
 <td><p><strong>/NoPublish</strong></p></td>
 <td><p>Specifies not to publish the results file to the location that's specified in the job file. When you use this option, the results are saved to the default location, %LOCALAPPDATA%\Microsoft\Axe\Results.</p>
 <p>Example:</p>
-<code>AXE C:\Assessments\myJobs\Job1.jobx /NoPublish</code></td>
+<pre class="syntax"><code>AXE C:\Assessments\myJobs\Job1.jobx /NoPublish</code></pre></td>
 </tr>
 <tr class="odd">
 <td><p><strong>/PublishPath</strong>&nbsp;<em>&lt;Directory&gt;</em></p></td>
 <td><p>Specifies the path of a folder to publish the results file to. This overrides the publication path, &lt;ResultsPublishPath&gt;, that's specified in the job file. This parameter is ignored if it's combined with <strong>/NoPublish</strong>.</p>
 <p>Example:</p>
-<code>AXE C:\Assessments\myJobs\Job1.jobx /PublishPath C:\Assessments\myResults</code></td>
+<pre class="syntax"><code>AXE C:\Assessments\myJobs\Job1.jobx /PublishPath C:\Assessments\myResults</code></pre></td>
 </tr>
 <tr class="even">
 <td><p><strong>/RemoveRestart</strong></p></td>
@@ -83,25 +87,25 @@ The following table provides a description for how you can use each option. Thes
 </div>
 <p>When you run a job, the assessment creates a task to restart the job if there's a system failure, like a loss of power. When you use this option, the task is removed from the Task Scheduler. If no job-restart task is pending, the assessment will return an error to inform you that the task doesn't exist.</p>
 <p>Example:</p>
-<code>AXE /RemoveRestart</code></td>
+<pre class="syntax"><code>AXE /RemoveRestart</code></pre></td>
 </tr>
 <tr class="odd">
 <td><p><strong>/NoWarnings</strong></p></td>
 <td><p>Suppresses warning messages. This is an optional parameter.</p>
 <p>Example:</p>
-<code>AXE C:\Assessments\myJobs\Job1.jobx /NoWarnings</code></td>
+<pre class="syntax"><code>AXE C:\Assessments\myJobs\Job1.jobx /NoWarnings</code></pre></td>
 </tr>
 <tr class="even">
 <td><p><strong>/Pause</strong></p></td>
 <td><p>Pauses AXE.exe after the job finishes, to wait for you to press a key. You can then see any errors or other information in the console before AXE.exe exits and the console closes.</p>
 <p>Example:</p>
-<code>AXE C:\Assessments\myJobs\Job1.jobx /Pause</code></td>
+<pre class="syntax"><code>AXE C:\Assessments\myJobs\Job1.jobx /Pause</code></pre></td>
 </tr>
 <tr class="odd">
 <td><p><strong>/JobParameter Param=</strong><em>&lt;value&gt;</em></p></td>
 <td><p>Specifies a value to override a job parameter that may exist in the job manifest. This is an optional parameter. You can use it up to 100 times to specify multiple job parameters. If duplicate job parameter names appear, the assessment uses the last one. The <strong>/PublishPath</strong> option takes precedence over setting the &lt;ResultsPublishPath&gt; job parameter with this option.</p>
 <p>Example:</p>
-<code>AXE C:\Assessments\myJobs\Job1.jobx /JobParameter iterations=1</code></td>
+<pre class="syntax"><code>AXE C:\Assessments\myJobs\Job1.jobx /JobParameter iterations=1</code></pre></td>
 </tr>
 <tr class="even">
 <td><p><strong>/DisplayLog</strong>&nbsp;<em>&lt;path_to_AXE_ETL_log_file&gt;</em></p></td>
