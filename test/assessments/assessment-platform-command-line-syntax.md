@@ -98,15 +98,15 @@ The following table provides a description for how you can use each option. Thes
 <p>Example:</p>
 <pre class="syntax"><code>AXE C:\Assessments\myJobs\Job1.jobx /Pause</code></pre></td>
 </tr>
+</table>
+
+<table>
 <tr class="odd">
 <td><p><strong>/JobParameter Param=</strong><em>&lt;value&gt;</em></p></td>
 <td><p>Specifies a value to override a job parameter that may exist in the job manifest. This is an optional parameter. You can use it up to 100 times to specify multiple job parameters. If duplicate job parameter names appear, the assessment uses the last one. The <strong>/PublishPath</strong> option takes precedence over setting the &lt;ResultsPublishPath&gt; job parameter with this option.</p>
 <p>Example:</p>
 <pre class="syntax"><code>AXE C:\Assessments\myJobs\Job1.jobx /JobParameter iterations=1</code></pre></td>
 </tr>
-</table>
-
-<table>
 <tr class="even">
 <td><p><strong>/DisplayLog</strong>&nbsp;<em>&lt;path_to_AXE_ETL_log_file&gt;</em></p></td>
 <td><p>Displays the content of the Event Trace Log (ETL) files that <strong>AXE.exe</strong> uses for logging. You must specify the path of the <strong>AXE.exe</strong> ETL files. The location of the log files appears in the console when a job runs. The file name may contain wildcard characters.</p>
