@@ -38,26 +38,30 @@ The following table provides a description for how you can use each option. Thes
 <table>
 <thead>
 <tr class="header">
-<th style="width: 60px;" bgcolor="EEEEEE">Option</th>
-<th style="width: 120px;" bgcolor="EEEEEE">Description</th>
+<td style="width: 120px;" bgcolor="EEEEEE"><p style="text-align: center;"><strong>Option</strong></p></td>
+<td style="width: 120px;" bgcolor="EEEEEE"><p style="text-align: center;"><strong>Description</strong></p></td>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td style="width: 60px;"><p><strong>Help</strong> or <strong>/?</strong></p></td>
+<td style="width: 120px;"><p><strong>Help</strong> or <strong>/?</strong></p></td>
 <td style="width: 120px;"><p>Displays information about available <strong>AXE.exe</strong> command-line options.</p></td>
 </tr>
 <tr class="even">
 <td><p><em>job_file</em></p></td>
 <td><p>Specifies the job file that you want to run.</p>
 <p>The path of the job file can be a relative path. If the job is in the directory that you're running <strong>AXE.exe</strong> from, no path is required. By default, when you create a job in the Windows Assessment Console, it's saved in the %USERPROFILE%\Documents\Windows Assessment Console\Jobs folder.</p>
-<div class="alert">
-<strong>Note</strong>  
-<p>This option is required if no other parameter that performs an action is specified.</p>
-</div>
+<!--<div class="alert">-->
+<strong>Note</strong>&nbsp;&nbsp;&nbsp;<p>This option is required if no other parameter that performs an action is specified.</p>
+<!--</div>-->
 <p>Example:</p>
+<p style="margin: 1em 0 0 1.5em;">AXE C:\Assessments\MyJobs\Job1.jobx</p>
+<!--
 <pre class="syntax" space="preserve"><code>AXE C:\Assessments\MyJobs\Job1.jobx</code></pre></td>
+-->
 </tr>
+</table>
+<table>
 <tr class="odd">
 <td><p><strong>/Timeout</strong>&nbsp;<em>&lt;seconds&gt;</em></p></td>
 <td><p>Specifies the amount of time, in seconds, that the job will wait for another job to finish before it exits with an error. The default is zero, which means that the job will exit immediately if another job is already running. This is an optional parameter.</p>
