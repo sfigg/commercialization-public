@@ -34,12 +34,12 @@ The base syntax for using the Assessment Platform from the command line is:
 
 
 <p>The following table provides a description for how you can use each option. These options aren't case-sensitive.</p>
-
+<p>&nbsp;</p>
 <table>
 <thead>
 <tr class="header">
-<td bgcolor="EEEEEE"><p style="text-align: center; margin: 0 0 0 0"><strong>Option</strong></p></td>
-<td bgcolor="EEEEEE"><p style="text-align: center; margin: 0 0 0 0"><strong>Description</strong></p></td>
+<td bgcolor="EEEEEE"><p style="text-align: center; margin: 0 0 0 0">Option</p></td>
+<td bgcolor="EEEEEE"><p style="text-align: center; margin: 0 0 0 0">Description</p></td>
 </tr>
 </thead>
 <tbody>
