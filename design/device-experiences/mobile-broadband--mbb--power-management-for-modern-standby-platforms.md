@@ -41,22 +41,17 @@ These modes are a combination of provisioned, connectivity, and radio power stat
 
 The five power management modes are:
 
-Active
-:The radio is actively transmitting data or is actively connected to the cellular network.
-
-Connected-sleep
-:The radio is provisioned on the network and a user account is enabled. The platform is in modern standby. The MBB device is waiting for data from the network to wake up the SoC, and also for events from the SoC. Average across 2G, 3G, LTE, and various DRX modes.
-
-Radio-off
-:The radio is provisioned on the network, but Windows or the user has turned off the radio in the MBB device.
-
-No-subscription
-:The user does not have an active subscription.
-
-No-SIM
-:The device has no SIM.
-
-
+<dl>
+<dt>Active</dt>
+<dd><p>The radio is actively transmitting data or is actively connected to the cellular network.</p></dd>
+<dt>Connected-sleep</dt>
+<dd><p>The radio is provisioned on the network and a user account is enabled. The platform is in modern standby. The MBB device is waiting for data from the network to wake up the SoC, and also for events from the SoC. Average across 2G, 3G, LTE, and various DRX modes.</p></dd>
+<dt>Radio-off</dt>
+<dd><p>The radio is provisioned on the network, but Windows or the user has turned off the radio in the MBB device.</p></dd>
+<dt>No-subscription</dt>
+<dd><p>The user does not have an active subscription.</p></dd>
+<dt>No-SIM</dt>
+<dd><p>The device has no SIM.</p></dd>
 
 
 The following table compares the five modes.
