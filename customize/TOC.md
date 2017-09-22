@@ -6,6 +6,11 @@
 ## [Customizations for desktop](desktop/desktop-customizations-portal.md)
 ### [Customize the taskbar](desktop/customize-the-taskbar.md)
 ### [Customize the Out of Box Experience (OOBE)](desktop/customize-oobe.md)
+#### [Cortana voice support](desktop/cortana-voice-support.md)
+#### [OOBE.xml](desktop/oobexml.md)
+#### [OEM HID pairing](desktop/oem-hid-pairing.md)
+#### [OEM license](desktop/oem-license.md)
+#### [OEM registration pages](desktop/oem-registration-pages.md)
 ### [Set dark mode](desktop/set-dark-mode.md)
 ### [Customize the Country and Operator Settings Asset](desktop/customize-cosa.md)
 
