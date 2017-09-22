@@ -43,7 +43,7 @@ A desktop PC form factor traditionally comes in an upright tower or small deskto
 <td colspan="2">Windows&nbsp;10 for desktop editions (Home, Pro, Enterprise, and Education)</td>
 </tr>
 <tr>
-<td bgcolor="EEEEEE" colspan="3"><p style="margin: .75em 0 .75em 0;">[Recommended components](../component-guidelines/components.md)</p>
+<td bgcolor="EEEEEE" colspan="3"><p style="margin: .75em 0 .75em 0;">Recommended components</p>
 </td>
 </tr>
 <tr>
@@ -82,3 +82,6 @@ A desktop PC form factor traditionally comes in an upright tower or small deskto
 </tr>
 </tbody>
 </table>
+
+
+For more guidance in selecting hardware components, see [Hardware component guidelines](../component-guidelines/components.md).

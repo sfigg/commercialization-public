@@ -61,7 +61,7 @@ Smartphones come in a wide range of sizes from low cost phones, small tablets (p
 <td colspan="3">Windows&nbsp;10 Mobile</td>
 </tr>
 <tr>
-<td colspan="4" bgcolor="EEEEEE"><p style="margin: .75em 0 .75em 0;">[Recommended components](../component-guidelines/components.md)</p></td>
+<td colspan="4" bgcolor="EEEEEE"><p style="margin: .75em 0 .75em 0;">Recommended components</p></td>
 </tr>
 <tr>
 <td bgcolor="EEEEEE"><p>CPU</p></td>
@@ -108,7 +108,10 @@ Smartphones come in a wide range of sizes from low cost phones, small tablets (p
 </tbody>
 </table>
 
+\* qHD requires &gt;&nbsp;512&nbsp;MB memory.
 
-\* qHD requires &gt;&nbsp;512&nbsp;MB memory
+
+For more guidance in selecting hardware components, see [Hardware component guidelines](../component-guidelines/components.md).
+
 
 Research the Windows Mobile options and partner with a registered Windows phone manufacturer to build a device utilizing your brand. For more information, see [Windows 10 Hardware Developer Programs](http://go.microsoft.com/fwlink/?LinkId=618212).
