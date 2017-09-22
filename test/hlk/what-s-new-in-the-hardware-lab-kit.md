@@ -69,7 +69,9 @@ Test levels have been replaced by Development Phases to better align with the ha
 
 Playlists describe a collection of tests and can be created from the HLK Studio and [Object Model](API\microsoftwindowskitshardwareobjectmodel.md) to define custom test passes.
 
-<iframe src="https://assets.windowsphone.com/970594d5-fef1-4fc6-84ab-289a192cd107/WinHEC_HLK_Playlists_InvariantCulture_Default.mp4" width="640" height="320" allowFullScreen="true" frameBorder="0">Windows Hardware Lab Kit playlists</iframe>
+
+<iframe src="https://hubs-video.ssl.catalog.video.msn.com/embed/afc1a262-6147-448f-910c-dbb1bcb18d07/IA?csid=ux-en-us&MsnPlayerLeadsWith=html&PlaybackMode=Inline&MsnPlayerDisplayShareBar=false&MsnPlayerDisplayInfoButton=false&iframe=true&QualityOverride=HD" width="720" height="405" allowFullScreen="true" frameBorder="0" scrolling="no">Windows Hardware Lab Kit playlists</iframe>
+
 
 Learn more about playlists in the [Getting Started Guide](getstarted\step-6-select-and-run-tests.md).
 
