@@ -85,7 +85,7 @@ A notebook is a portable clamshell device with an attached keyboard. The noteboo
 <td colspan="5"><p>Windows&nbsp;10 for desktop editions (Home, Pro, Enterprise, and Education)</p></td>
 </tr>
 <tr>
-<td colspan="6" bgcolor="EEEEEE"><p style="margin: .75em 0 .75em 0;">[Recommended Components](../component-guidelines/components.md)</p></td>
+<td colspan="6" bgcolor="EEEEEE"><p style="margin: .75em 0 .75em 0;">[Recommended components](../component-guidelines/components.md)</p></td>
 </tr>
 <tr>
 <td bgcolor="EEEEEE" style="text-align: top"><p>CPU</p></td>

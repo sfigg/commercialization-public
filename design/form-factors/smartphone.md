@@ -61,7 +61,7 @@ Smartphones come in a wide range of sizes from low cost phones, small tablets (p
 <td colspan="3">Windows&nbsp;10 Mobile</td>
 </tr>
 <tr>
-<td colspan="4" bgcolor="EEEEEE"><p style="margin: .75em 0 .75em 0;">[Recommended Components](../component-guidelines/components.md)</p></td>
+<td colspan="4" bgcolor="EEEEEE"><p style="margin: .75em 0 .75em 0;">[Recommended components](../component-guidelines/components.md)</p></td>
 </tr>
 <tr>
 <td bgcolor="EEEEEE"><p>CPU</p></td>
