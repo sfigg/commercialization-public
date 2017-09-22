@@ -56,7 +56,7 @@ The All-in-one (AIO) form factor is an evolution of the traditional desktop with
 <td colspan="2"><p>Windows&nbsp;10 for desktop editions (Home, Pro, Enterprise, and Education)</p></td>
 </tr>
 <tr>
-<td bgcolor="EEEEEE" colspan="3"><p style="margin: .75em 0 .75em 0;">[Recommended Components](../component-guidelines/components.md)</p></td>
+<td bgcolor="EEEEEE" colspan="3"><p style="margin: .75em 0 .75em 0;">Recommended components</p></td>
 </tr>
 <tr>
 <td bgcolor="EEEEEE"><p>CPU</p></td>
@@ -107,3 +107,6 @@ The All-in-one (AIO) form factor is an evolution of the traditional desktop with
 </tr>
 </tbody>
 </table>
+
+
+For more guidance in selecting hardware components, see [Hardware component guidelines](../component-guidelines/components.md).
