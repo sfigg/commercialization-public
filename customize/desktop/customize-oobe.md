@@ -32,32 +32,34 @@ The following is a non-exhaustive list of screens the user may see during OOBE, 
 1. Sign in to, or create, a Microsoft account
 1. Windows Hello setup
 1. Privacy settings
-> [!NOTE]
-> In Widows 10 build 1709, the privacy settings screen will include Learn more links the user can click for more details about each setting.
+    > [!NOTE]
+    > In Widows 10 build 1709, the privacy settings screen will include Learn more links the user can click for more details about each setting.
+
 1. Save files to OneDrive
 1. Set up Office
-> [!NOTE]
-> This screen is only displayed if the user is connected to a network, and has provided their Microsoft account information. Content on the page will vary depending on the user’s account type. For example, if their Microsoft account qualifies for a free trial of Office, the page will encourage them to setup their free trial.
+    > [!NOTE]
+    > This screen is only displayed if the user is connected to a network, and has provided their Microsoft account information. Content on the page will vary depending on the user’s account type. For example, if their Microsoft account qualifies for a free trial of Office, the page will encourage them to setup their free trial.
 1. Make Cortana my personal assistant
 1. OEM Registration pages
-> [!NOTE]
+
+> [!Note]
 > In Windows 10 build 1709, the Connect to network screen is now shown prior to the EULA screen during OOBE. 
 
 ## In this section
 
 The following topics describe OOBE customization considerations.
 
-| Topic                      | Description                                                                                  |
-|:---------------------------|:---------------------------------------------------------------------------------------------|
-| Cortana voice support      | This topic describes how Cortana voice walks the user through the OOBE experience, enabling the user to complete parts of OOBE by responding to spoken prompts. |
-| OOBE.xml                   | You can use OOBE.xml to organize text and images displayed during OOBE, and to specify settings for customizing the Windows 10 first-run experience. You can use multiple Oobe.xml files for language- and region-specific license terms and settings so that users see appropriate info as soon as they start their PCs. By specifying information in the Oobe.xml file, you help fill in some of the required information so that users are asked to do only the core tasks required to set up their PCs. |
-| OEM HID pairing            | On PCs that ship with an unpaired wireless mouse and keyboard, the HID pairing screens are shown to the customer during the first-run experience in OOBE, which is before language selection or any other screen that requires user input. If you include written instructions, you must include those instructions in every language that ships with the PC. |
-| OEM license                | You can add your OEM license terms to the License Terms screen in the first-run experience of OOBE. |
-| OEM HID registration pages | You can display OEM registration screens during OOBE to encourage customers to provide you with their information. This enables you to provide them with a more personalized experience and information. |
+| Topic                           | Description                                                                                  |
+|:--------------------------------|:---------------------------------------------------------------------------------------------|
+| [Cortana voice support](cortana-voice-support.md)    | This topic describes how Cortana voice walks the user through the OOBE experience, enabling the user to complete parts of OOBE by responding to spoken prompts. |
+| [OOBE.xml](oobexml.md)                               | You can use OOBE.xml to organize text and images displayed during OOBE, and to specify settings for customizing the Windows 10 first-run experience. You can use multiple Oobe.xml files for language- and region-specific license terms and settings so that users see appropriate info as soon as they start their PCs. By specifying information in the Oobe.xml file, you help fill in some of the required information so that users are asked to do only the core tasks required to set up their PCs. |
+| [OEM HID pairing](oem-hid-pairing.md)                | On PCs that ship with an unpaired wireless mouse and keyboard, the HID pairing screens are shown to the customer during the first-run experience in OOBE, which is before language selection or any other screen that requires user input. If you include written instructions, you must include those instructions in every language that ships with the PC. |
+| [OEM license](oem-license.md)                        | You can add your OEM license terms to the License Terms screen in the first-run experience of OOBE. |
+| [OEM registration pages](oem-registration-pages.md)  | You can display OEM registration screens during OOBE to encourage customers to provide you with their information. This enables you to provide them with a more personalized experience and information. |
 
 ## Related topics
 
 
-[Keyboard Filter](keyboardfilter.md)
+[OOBE Unattend component](/desktop/unattend/microsoft-windows-shell-setup-oobe.md)
 
-[Unified Write Filter](unified-write-filter.md)
+[Configure Oobe.xml](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/configure-oobexml)
