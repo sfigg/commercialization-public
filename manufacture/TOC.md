@@ -380,24 +380,7 @@
 ### [IoT Core Add-ons](iot/iot-core-adk-addons.md)
 ### [IoT Core Add-ons command-line options](iot/iot-core-adk-addons-command-line-options.md)
 ### [Update the time server](iot/update-the-time-server.md)
-
-
-
-#### [Create Windows Universal OEM Packages](iot/create-packages.md)
+### [Create Windows Universal OEM Packages](iot/create-packages.md)
 #### [Windows Universal OEM Package Schema](iot/create-packages.md)
 #### [Convert legacy mobile and IoT Core packages to Windows Universal OEM Packages](iot/convert-packages.md)
 
-##### [BCDLayout](wcos/bcdlayout.md)
-#### [Lab 1a: Create a basic image](wcos/create-a-basic-image.md)
-#### [Lab 1b: Add an app to your image](wcos/deploy-your-app-with-a-standard-board.md)
-##### [Test an appx file on an IoT device](wcos/test-the-app.md)
-#### [Lab 1c: Add a file and a registry setting to an image](wcos/add-a-registry-setting-to-an-image.md)
-#### [Lab 1d: Add a provisioning package to an image](wcos/add-a-provisioning-package-to-an-image.md)
-#### [Lab 1e: Add a driver to an image](wcos/add-a-driver-to-an-image.md)
-#### [Lab 1f: Build a retail image](wcos/build-retail-image.md)
-#### [Lab 2: Creating your own board support package](wcos/create-a-new-bsp.md)
-##### [WCOS Device Layout](wcos/device-layout.md)
-### [WCOS feature list](wcos/core-feature-list.md)
-### [IoT Core Add-ons](wcos/iot-core-adk-addons.md)
-### [IoT Core Add-ons command-line options](wcos/iot-core-adk-addons-command-line-options.md)
-### [Update the time server](wcos/update-the-time-server.md)
