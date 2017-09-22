@@ -42,16 +42,16 @@ These modes are a combination of provisioned, connectivity, and radio power stat
 The five power-management modes are:
 
 <dl>
-<dt><em>Active</em></dt>
-<dd><p style="margin: .5em 1.5em 1em 1.5em;">The radio is actively transmitting data or is actively connected to the cellular network.</p></dd>
-<dt><em>Connected-sleep</em></dt>
-<dd><p style="margin: .5em 1.5em 1em 1.5em;">The radio is provisioned on the network and a user account is enabled. The platform is in modern standby. The MBB device is waiting for data from the network to wake up the SoC, and also for events from the SoC. Average across 2G, 3G, LTE, and various DRX modes.</p></dd>
-<dt><em>Radio-off</em></dt>
-<dd><p style="margin: .5em 1.5em 1em 1.5em;">The radio is provisioned on the network, but Windows or the user has turned off the radio in the MBB device.</p></dd>
-<dt><em>No-subscription</em></dt>
-<dd><p style="margin: .5em 1.5em 1em 1.5em;">The user does not have an active subscription.</p></dd>
-<dt><em>No-SIM</em></dt>
-<dd><p style="margin: .5em 1.5em 1em 1.5em;">The device has no SIM.</p></dd>
+<dt><p style="margin: 0 0 0 .5em;"><em>Active</em></p></dt>
+<dd><p style="margin: .5em 0 1em 1.5em;">The radio is actively transmitting data or is actively connected to the cellular network.</p></dd>
+<dt><p style="margin: 0 0 0 .5em;"><em>Connected-sleep</p></em></dt>
+<dd><p style="margin: .5em 0 1em 1.5em;">The radio is provisioned on the network and a user account is enabled. The platform is in modern standby. The MBB device is waiting for data from the network to wake up the SoC, and also for events from the SoC. Average across 2G, 3G, LTE, and various DRX modes.</p></dd>
+<dt><p style="margin: 0 0 0 .5em;"><em>Radio-off</em></p></dt>
+<dd><p style="margin: .5em 0 1em 1.5em;">The radio is provisioned on the network, but Windows or the user has turned off the radio in the MBB device.</p></dd>
+<dt><p style="margin: 0 0 0 .5em;"><em>No-subscription</em></p></dt>
+<dd><p style="margin: .5em 0 1em 1.5em;">The user does not have an active subscription.</p></dd>
+<dt><p style="margin: 0 0 0 .5em;"><em>No-SIM</em></p></dt>
+<dd><p style="margin: .5em 0 1em 1.5em;">The device has no SIM.</p></dd>
 
 
 The following table compares the five power-management modes.
