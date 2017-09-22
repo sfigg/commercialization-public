@@ -5,6 +5,7 @@
 
 ## [Customizations for desktop](desktop/desktop-customizations-portal.md)
 ### [Customize the taskbar](desktop/customize-the-taskbar.md)
+### [Customize the Out of Box Experience (OOBE)](desktop/customize-oobe.md)
 ### [Set dark mode](desktop/set-dark-mode.md)
 ### [Customize the Country and Operator Settings Asset](desktop/customize-cosa.md)
 
