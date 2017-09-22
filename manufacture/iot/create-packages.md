@@ -1,9 +1,9 @@
 ---
 author: kpacquer
-Description: Creating OneCore OEM Packages
+Description: Create Windows Universal OEM Packages
 ms.assetid: cbae6949-ccfe-4015-a9b0-a269f6f30d5a
 MSHAttr: 'PreferredLib:/library'
-title: Windows Core Operating System (WCOS) features
+title: Creating Windows Universal OEM Packages
 ms.author: kenpacq
 ms.date: 09/02/2017
 ms.topic: article
@@ -11,24 +11,25 @@ ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-# Creating OneCore OEM Packages
+# Create Windows Universal OEM Packages
 
 ## Overview
-Packages are the logical building blocks of Windows Core Operating System (WCOS).
+Packages are the logical building blocks used to create Windows devices.
 
 *  **Everything you add is packaged**. Every file, library, registry setting and customization that you add to the device is included in a package. Each package includes a package project file (*.wm.xml) that lists the content and its locations.
 *  **Packages are signed**. Every customization on your device is trackable to a package with a signature. Only you and partners that you trust can update the packages.
 *  **Packages are versioned for easy web-based updates**. Need to change a setting or a file? Update the package and put it on an update server, and the devices can update themselves.
 
-![A sample package file (sample_pkg.cab) includes a package definition file, package contents like apps, drivers, and files, plus a signature file and a version number](images/WCOSPackages.png)
+![A sample package file (sample_pkg.cab) includes a package definition file, package contents like apps, drivers, and files, plus a signature file and a version number](images/OEMPackages.png)
 
-Packages fall into three primary categories:
+Windows Packages fall into three primary categories:
 * Microsoft prebuilt packages that are delivered with mobileos and contain the core operating system
 * SoC vendor prebuilt packages that are delivered by the vendor and contain the drivers and firmware that support the device's chipset
 * OEM packages that are built by partners to contain their device-specific drivers and customizations
 
 [Learn about how to combine these packages into images for devices.](core-manufacturing-guide.md)
 
+The Windows Universal OEM packaging standard uses a new schema that's compatible with more types of devices. If you've built packages using the legacy mobile or IoT packaging standard, and you'd like to use them on IoT devices, you'll need to convert them.
 
 ## Create a package project with no content
 A package project XML file generally starts with no content. The following is an example of an empty package project.
@@ -352,7 +353,7 @@ Running PkgGen.exe with now generate one WOW package for each host package.
 04/05/2017  07:59 AM            10,021 OEM-Media-MediaService_Wow_arm64.arm.cab
 ```
 
-Typically, the 64 bit device will get it's Host 64 bit package and it's Guest 32 bit or WOW package, both generated from myPackage.wm.xml.  To avoid resource conflicts between the two packages build filters are used:<syntaxhighlight lang="xml">
+Typically, the 64 bit device will get its Host 64 bit package and its Guest 32 bit or WOW package, both generated from myPackage.wm.xml.  To avoid resource conflicts between the two packages build filters are used:<syntaxhighlight lang="xml">
   <regKeys buildFilter="not build.isWow and build.arch = arm" >
     <regKey keyName="$(hklm.software)\OEMName\MediaService">
       <regValue
@@ -367,127 +368,3 @@ Typically, the 64 bit device will get it's Host 64 bit package and it's Guest 32
 [cpu]··············· CPU type. Values: (x86|arm|arm64|amd64)
                      Values:<Free Text> Default="arm"
 ```
-<!--
-## Schema
-Only the common elements and attributes are documented here.  To get the full schema run "pkggen /universalbsp /wmxsd:.", then open WM0.XSD with Visual Studio.  
-
-### <identity>
-
-|Attribute |Type   |Required|Macro |Notes |
-|----------|-------|--------|------|------|
-|owner     |string |*       |      |      |
-|name      |string |*       |*     |      |
-|namespace |string |        |*     |      |
-|buildWow  |boolean|        |      |Default = false, set to true to generate WOW packages|
-
-```xml
-<identity name="FeatureName" namespace="FeatureArea" owner="OEM" buildWow="false"/>
-```
-
-### <onecorePackageInfo>
-|Attribute      |Type   |Required|Macro |Notes |
-|---------------|-------|--------|------|------|
-|targetPartition|MainOS  Data  UpdateOS  EFIESP  PLAT |* | |If onecorePackageInfo is not specified, Default = MainOS    |
-|releaseType    |Production   Test                    |  | |If onecorePackageInfo is not specified, Default = Production|
-
-```xml
-<onecorePackageInfo targetPartition="MainOS" releaseType="Production"/>
-```
-
-### <file>
-|Attribute     |Type   |Required|Macro |Notes |
-|--------------|-------|--------|------|------|
-|source        |string |*       |*     |      |
-|destinationDir|string |        |*     |destinationDir must start with one of the following built in runtime macros below:|
-|name |string | | |used to rename the source file|
-|buildFilter |string | | | |
-
-destinationDir must start with:
-- $(runtime.bootDrive)
-- $(runtime.systemDrive)
-- $(runtime.systemRoot)
-- $(runtime.windows)
-- $(runtime.system32)
-- $(runtime.system)
-- $(runtime.drivers)
-- $(runtime.help)
-- $(runtime.inf)
-- $(runtime.fonts)
-- $(runtime.wbem)
-- $(runtime.appPatch)
-- $(runtime.sysWow64)
-- $(runtime.mui)
-- $(runtime.commonFiles)
-- $(runtime.commonFilesX86)
-- $(runtime.programFiles)
-- $(runtime.programFilesX86)
-- $(runtime.programData)
-- $(runtime.userProfile)
-- $(runtime.startMenu)
-- $(runtime.documentSettings)
-- $(runtime.sharedData)
-- $(runtime.apps)
-- $(runtime.clipAppLicenseInstall)
-- If not specifed, the default is $(runtime.system32) 
-
-```xml
-<file buildFilter="(not build.isWow) and (build.arch = arm)" name="output.dll" source="$(_RELEASEDIR)\input.dll" destinationDir="$(runtime.system32)"/>
-```
-
-### <regKey>
-|Attribute      |Type   |Required|Macro |Notes |
-|---------------|-------|--------|------|------|
-|keyName        |string |*       |*     |keyName must start with one of the built in runtime macros below: 
-|buildFilter    |string |        |      |      |
-
-keyname must start with:
-$(hklm.system),
-$(hklm.software),
-$(hklm.hardware),
-$(hklm.sam),
-$(hklm.security),
-$(hklm.bcd),
-$(hklm.drivers),
-$(hklm.svchost),
-$(hklm.policies),
-$(hklm.microsoft),
-$(hklm.windows),
-$(hklm.windowsnt),
-$(hklm.currentcontrolset),
-$(hklm.services),
-$(hklm.control),
-$(hklm.autologger),
-$(hklm.enum),
-$(hkcr.root),
-$(hkcr.classes),
-$(hkcu.root),
-$(hkuser.default)
-
-### <regValue>
-|Attribute      |Type   |Required|Macro |Notes |
-|---------------|-------|--------|------|------|
-|name           |string |        |      |Name of the value you are specifying. If not specified, the Default value in the key will be over-written|
-|type           |string |*       |      |type must be one of the following below:
-|value          |string |        |      |       |
-|buildFilter    |string |        |      |       |
-
-type must be: 
-REG_SZ,
-REG_MULTI_SZ,
-REG_DWORD,
-REG_QWORD,
-REG_BINARY,
-REG_EXPAND_SZ
-
-```xml
-<regKey buildFilter="buildFilter1" keyName="keyName1">
-  <regValue buildFilter="buildFilter1" name="name1" value="value1" type="REG_SZ" />
-  <regValue buildFilter="buildFilter2" name="name2" value="value1,value2" type="REG_MULTI_SZ" />
-  <regValue buildFilter="buildFilter3" name="name3" value="00000000FFFFFFFF" type="REG_QWORD" />
-  <regValue buildFilter="buildFilter4" name="name4" value="FFFFFFFF" type="REG_DWORD" />
-  <regValue buildFilter="buildFilter5" name="name5" value="0AFB2" type="REG_BINARY" />
-  <regValue buildFilter="buildFilter6" name="name6" value="&quot;%ProgramFiles%\MediaPlayer\wmplayer.exe&quot;" type="REG_EXPAND_SZ" />
-</regKey>
-```
-
--->

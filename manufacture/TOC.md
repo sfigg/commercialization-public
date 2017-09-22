@@ -381,10 +381,12 @@
 ### [IoT Core Add-ons command-line options](iot/iot-core-adk-addons-command-line-options.md)
 ### [Update the time server](iot/update-the-time-server.md)
 
-## [WCOS manufacturing](wcos/index.md)
-### [WCOS manufacturing guide](wcos/core-manufacturing-guide.md)
-#### [Get the tools needed to customize Windows Core](wcos/set-up-your-pc-to-customize-core.md)
-#### [Create OneCore OEM packages](wcos/create-packages.md)
+
+
+#### [Create Windows Universal OEM Packages](iot/create-packages.md)
+#### [Windows Universal OEM Package Schema](iot/create-packages.md)
+#### [Convert legacy mobile and IoT Core packages to Windows Universal OEM Packages](iot/convert-packages.md)
+
 ##### [BCDLayout](wcos/bcdlayout.md)
 #### [Lab 1a: Create a basic image](wcos/create-a-basic-image.md)
 #### [Lab 1b: Add an app to your image](wcos/deploy-your-app-with-a-standard-board.md)
