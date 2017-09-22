@@ -27,7 +27,7 @@ Windows Packages fall into three primary categories:
 * SoC vendor prebuilt packages that are delivered by the vendor and contain the drivers and firmware that support the device's chipset
 * OEM packages that are built by partners to contain their device-specific drivers and customizations
 
-[Learn about how to combine these packages into images for devices.](core-manufacturing-guide.md)
+[Learn about how to combine these packages into images for devices.](iot-core-manufacturing-guide.md)
 
 The Windows Universal OEM packaging standard uses a new schema that's compatible with more types of devices. If you've built packages using the legacy mobile or IoT packaging standard, and you'd like to use them on IoT devices, you'll need to convert them.
 
