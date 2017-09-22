@@ -31,15 +31,9 @@ The following is a non-exhaustive list of screens the user may see during OOBE, 
 1. End User License Agreement (EULA)
 1. Sign in to, or create, a Microsoft account
 1. Windows Hello setup
-1. Privacy settings
-    > [!NOTE]
-    > In Widows 10 build 1709, the privacy settings screen includes **Learn more** links the user can click for more details about each setting.
-
+1. Privacy settings. In Widows 10 build 1709, the privacy settings screen includes **Learn more** links the user can click for more details about each setting.
 1. Save files to OneDrive
-1. Set up Office
-    > [!NOTE]
-    > This screen is only displayed if the user is connected to a network, and has provided their Microsoft account information. Content on the page will vary depending on the user’s account type. For example, if their Microsoft account qualifies for a free trial of Office, the page will encourage them to setup their free trial.
-
+1. Set up Office. This screen is only displayed if the user is connected to a network, and has provided their Microsoft account information. Content on the page will vary depending on the user’s account type. For example, if their Microsoft account qualifies for a free trial of Office, the page will encourage them to setup their free trial.
 1. Make Cortana my personal assistant
 1. OEM Registration pages
 
@@ -60,7 +54,6 @@ The following topics describe OOBE customization considerations.
 
 ## Related topics
 
-
-[OOBE Unattend component](desktop/unattend/microsoft-windows-shell-setup-oobe.md)
+[OOBE Unattend component](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-shell-setup-oobe)
 
 [Configure Oobe.xml](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/configure-oobexml)
