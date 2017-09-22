@@ -17,7 +17,7 @@ ms.technology: windows-oem
 # Assessment Platform Command-Line Syntax
 
 
-**AXE.exe** is a command-line tool that's installed with the Windows Assessment Toolkit. You can use this set of command-line options to automate jobs from a script and minimize resource usage. A job is one or more assessments run at one time on a computer. You can't use the command-line options to compose a job. You should create, modify, and save a job by using the Windows Assessment Console. By default, jobs are saved to the %USERPROFILE%\\Documents\\Windows Assessment Console\\Jobs folder.
+**AXE.exe** is a command-line tool that's installed with the Windows Assessment Toolkit. You can use this set of command-line options to automate jobs from a script and minimize resource usage. A job is one or more assessments run at one time on a computer. You can't use the command-line options to compose a job. You should create, modify, and save a job by using the Windows Assessment Console. By default, jobs are saved to %USERPROFILE%\\Documents\\Windows Assessment Console\\\Jobs\\.
 
 By default, AXE.exe is installed to:
 
@@ -34,12 +34,12 @@ The base syntax for using the Assessment Platform from the command line is:
 
 
 <p>The following table provides a description for how you can use each option. These options aren't case-sensitive.</p>
-<p>&nbsp;</p>
+<br/>
 <table>
 <thead>
 <tr class="header">
-<td bgcolor="EEEEEE"><p style="text-align: center; margin: 0 0 0 0">Option</p></td>
-<td bgcolor="EEEEEE"><p style="text-align: center; margin: 0 0 0 0">Description</p></td>
+<th bgcolor="EEEEEE"><p style="text-align: center; margin: 0 0 0 0">Option</p></th>
+<th bgcolor="EEEEEE"><p style="text-align: center; margin: 0 0 0 0">Description</p></th>
 </tr>
 </thead>
 <tbody>
@@ -68,8 +68,8 @@ The base syntax for using the Assessment Platform from the command line is:
 <code>AXE C:\Assessments\myJobs\Job1.jobx /NoPublish</code></td>
 </tr>
 <tr class="odd">
-<td><p><strong>/PublishPath</strong>&nbsp;<em>&lt;Directory&gt;</em></p></td>
-<td><p>Specifies the path of a folder to publish the results file to. This overrides the publication path, &lt;ResultsPublishPath&gt;, that's specified in the job file. This parameter is ignored if it's combined with <strong>/NoPublish</strong>.</p>
+<td><p><strong>/PublishPath</strong>&nbsp;<em>&lt;directory&gt;</em></p></td>
+<td><p>Specifies the path of a folder to publish the results file to. This overrides the publication path, <em>ResultsPublishPath</em>, that's specified in the job file. This parameter is ignored if it's combined with <strong>/NoPublish</strong>.</p>
 <p>Example:</p>
 <code>AXE C:\Assessments\myJobs\Job1.jobx /PublishPath C:\Assessments\myResults</code></td>
 </tr>
@@ -95,14 +95,14 @@ The base syntax for using the Assessment Platform from the command line is:
 </tr>
 <tr class="odd">
 <td><p><strong>/JobParameter Param=</strong><em>&lt;value&gt;</em></p></td>
-<td><p>Specifies a value to override a job parameter that may exist in the job manifest. This is an optional parameter. You can use it up to 100 times to specify multiple job parameters. If duplicate job parameter names appear, the assessment uses the last one. The <strong>/PublishPath</strong> option takes precedence over setting the &lt;ResultsPublishPath&gt; job parameter with this option.</p>
+<td><p>Specifies a value to override a job parameter that may exist in the job manifest. This is an optional parameter. You can use it up to 100 times to specify multiple job parameters. If duplicate job parameter names appear, the assessment uses the last one. The <strong>/PublishPath</strong> option takes precedence over setting the <em>ResultsPublishPath</em> job parameter with this option.</p>
 <p>Example:</p>
 <code>AXE C:\Assessments\myJobs\Job1.jobx /JobParameter iterations=1</code></td>
 </tr>
 <tr class="even">
 <td><p><strong>/DisplayLog</strong>&nbsp;<em>&lt;path_to_AXE_ETL_log_file&gt;</em></p></td>
 <td><p>Displays the content of the Event Trace Log (ETL) files that <strong>AXE.exe</strong> uses for logging. You must specify the path of the <strong>AXE.exe</strong> ETL files. The location of the log files appears in the console when a job runs. The file name may contain wildcard characters.</p>
-<p>The default location of the log file is %LOCALAPPDATA%\Microsoft\Axe\Logs\<em>&lt;GUID&gt;</em>, where <em>&lt;GUID&gt;</em> is the GUID that's generated randomly for each new job. The job results file in the &lt;SessionLogFiles&gt; node also contains the full location. This node specifies all of the log files.</p>
+<p>The default location of the log file is %LOCALAPPDATA%\\Microsoft\\Axe\\Logs\\<em>&lt;GUID&gt;</em>, where <em>&lt;GUID&gt;</em> is the GUID that's generated randomly for each new job. The job results file in the <strong>SessionLogFiles</strong> node also contains the full location. This node specifies all of the log files.</p>
 <p style="margin: 1em 1.5em 0 1.5em;"><strong>Note</strong>&nbsp;&nbsp;&nbsp;All of the ETL files are automatically converted into a single AxeLog.txt file that's saved in the results directory. You can open this file by using Notepad.</p>
 <p>Example:</p>
 <code>AXE /DisplayLog &lt;path_to_file&gt;</code></td>
