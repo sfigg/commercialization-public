@@ -63,10 +63,10 @@ Tablets are a versatile form factor that overlap the smartphone and notebook ind
 <tr>
 <td bgcolor="EEEEEE"><p>Operating System</p></td>
 <td><p>Windows&nbsp;10 Mobile</p></td>
-<td colspan="2"><p>Windows&nbsp;10 for desktop editions (Home, Pro, Enterprise, and Education)</p></td>
+<td colspan="2"><p style="margin: .75em 0 .75em 0;">Windows&nbsp;10 for desktop editions (Home, Pro, Enterprise, and Education)</p></td>
 </tr>
 <tr>
-<td colspan="4" bgcolor="EEEEEE"><p>[Recommended Components](../component-guidelines/components.md)</p></td>
+<td colspan="4" bgcolor="EEEEEE"><p style="margin: .75em 0 .75em 0;">Recommended components</p></td>
 </tr>
 <tr>
 <td bgcolor="EEEEEE"><p>CPU</p></td>
@@ -146,5 +146,7 @@ Tablets are a versatile form factor that overlap the smartphone and notebook ind
 </tr>
 </tbody>
 </table>
+
+For more guidance in selecting hardware components, see [Hardware component guidelines](../component-guidelines/components.md).
 
 Research the Windows Mobile options and partner with a registered Windows phone manufacturer to build a device utilizing your brand. For more information, see [Windows 10 Hardware Developer Programs](http://go.microsoft.com/fwlink/?LinkId=618212).
