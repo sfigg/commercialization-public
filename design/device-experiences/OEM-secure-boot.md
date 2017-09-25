@@ -15,8 +15,6 @@ ms.technology: windows-oem
 
 Secure boot is a security standard developed by members of the PC industry to help make sure that a device boots using only software that is trusted by the Original Equipment Manufacturer (OEM). When the PC starts, the firmware checks the signature of each piece of boot software, including UEFI firmware drivers (also known as Option ROMs), EFI applications, and the operating system. If the signatures are valid, the PC boots, and the firmware gives control to the operating system.
 
-
-
 The OEM can use instructions from the firmware manufacturer to create Secure boot keys and to store them in the PC firmware. When you add UEFI drivers, you'll also need to make sure these are signed and included in the Secure Boot database. 
 
 For information on how the secure boot process works included Trusted Boot and Measured Boot, see [Secure the Windows 10 boot process](https://docs.microsoft.com/en-us/windows/threat-protection/secure-the-windows-10-boot-process). 
@@ -32,7 +30,6 @@ Storage of secure variables must be isolated from the running operating system s
 When power is turned on, the system starts executing code in the firmware and uses public key cryptography as per algorithm policy to verify the signatures of all images in the boot sequence, up to and including the Windows Boot Manager.
 - The system must protect against rollback of firmware to older versions.
 The platform provides the EFI_HASH_PROTOCOL (per UEFI v2.3.1) for offloading cryptographic hash operations and the EFI_RNG_PROTOCOL (Microsoft defined) for accessing platform entropy. 
-- The Hardware Security Test Interface (HSTI) must be implemented. To learn more, see the [Hardware Security Testability Specification](https://msdn.microsoft.com/en-us/library/windows/hardware/mt712332(v=vs.85).aspx). This is independent of Modern Standby/Connected Standby Systems; all systems using Credential Guard must pass HSTI 1.1.a.After the system is powered on, Secure Boot provides protections against physically present attackers, and defense-in-depth against malware. HSTI provides additional security assurance for correctly secured silicon and platform. UEFI Secure Boot ensures that the device boots with only authorized code in the pre-OS environment. 
 
 ## Signature Databases and Keys
 
