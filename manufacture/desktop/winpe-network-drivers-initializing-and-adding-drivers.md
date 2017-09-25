@@ -22,7 +22,7 @@ Networking in WinPE has the following limitations:
 - Distributed File System (DFS) name resolution is supported for stand-alone namespaces only. It doesn't support domain namespaces. Stand-alone DFS namespaces allow for a DFS namespace that exists only on the local PC and therefore doesn't use Active Directory Domain Services (AD DS).
 - General wireless networking functionality is not supported in WinPE.
 - Connecting to an IPv4 network from Windows PE on an IPv6 network is not supported.
-- Starting WinPE for Windows 10, version 1709, SMB1 protocol is disabled by default. You can enable SMB1 support by running `dism.exe /enable-feature /featurename=SMB1Protocol-client`.
+- Starting with WinPE for Windows 10, version 1709, SMB1 protocol is disabled by default. You can enable SMB1 support by running `dism.exe /enable-feature /featurename=SMB1Protocol-client`.
 
 
 **To connect to another PC or shared folder on a network**
