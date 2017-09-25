@@ -382,5 +382,3 @@
 ### [Update the time server](iot/update-the-time-server.md)
 ### [Create Windows Universal OEM Packages](iot/create-packages.md)
 #### [Windows Universal OEM Package Schema](iot/package-schema.md)
-#### [Convert legacy mobile and IoT Core packages to Windows Universal OEM Packages](iot/convert-packages.md)
-

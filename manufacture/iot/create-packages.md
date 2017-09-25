@@ -14,28 +14,29 @@ ms.technology: windows-oem
 # Create Windows Universal OEM Packages
 
 ## Overview
-Packages are the logical building blocks used to create Windows devices.
+Packages are the logical building blocks used to create IoT Core images.
 
-*  **Everything you add is packaged**. Every file, library, registry setting and customization that you add to the device is included in a package. Each package includes a package project file (*.wm.xml) that lists the content and its locations.
+*  **Everything you add is packaged**. Every driver, library, registry setting, system file, and customization that you add to the device is included in a package. The contents and location of each item are listed in a package definition file (*.wm.xml).
 *  **Packages are signed**. Every customization on your device is trackable to a package with a signature. Only you and partners that you trust can update the packages.
 *  **Packages are versioned for easy web-based updates**. Need to change a setting or a file? Update the package and put it on an update server, and the devices can update themselves.
 
 ![A sample package file (sample_pkg.cab) includes a package definition file, package contents like apps, drivers, and files, plus a signature file and a version number](images/OEMPackages.png)
 
-Windows Packages fall into three primary categories:
-* Microsoft prebuilt packages that are delivered with mobileos and contain the core operating system
-* SoC vendor prebuilt packages that are delivered by the vendor and contain the drivers and firmware that support the device's chipset
-* OEM packages that are built by partners to contain their device-specific drivers and customizations
+Packages fall into three main categories:
+* **OS kit packages** contain the core Windows operating system
+* **SoC vendor prebuilt packages** contain drivers and firmware that support the chipset
+* **OEM packages** contain device-specific drivers and customizations
+
 
 [Learn about how to combine these packages into images for devices.](iot-core-manufacturing-guide.md)
 
-The Windows Universal OEM packaging standard uses a new schema that's compatible with more types of devices. If you've built packages using the legacy mobile or IoT packaging standard, and you'd like to use them on IoT devices, you'll need to convert them.
+The Windows Universal OEM packaging standard uses a new schema that's compatible with more types of devices. If you've built packages using the legacy packaging standard (pkg.xml), and you'd like to use them on IoT devices, you'll need to [convert the packages](#convert_packages).
 
 ## Create a package project with no content
-A package project XML file generally starts with no content. The following is an example of an empty package project.
+A package generally starts with a Windows Manifest package definition file (*.wm.xml) with no content. The following is an example of an empty package definition file.
 
 >[!IMPORTANT]
-> The package project XML file must use the "wm.xml" extension.
+> The package definition file must use the "wm.xml" extension.
 
 ```xml
 <?xml version='1.0' encoding='utf-8' standalone='yes'?>
@@ -50,7 +51,7 @@ A package project XML file generally starts with no content. The following is an
 </identity>
 ```
 
-If you run the package generator (pkggen.exe) against this project file, a package with no contents will be created.
+If you run the package generator (pkggen.exe) against this empty package definition file, it creates an empty package file (*.cab).
 
 ```
 c:\oemsample>pkggen myPackage.wm.xml /universalbsp
@@ -65,7 +66,7 @@ c:\oemsample>pkggen myPackage.wm.xml /universalbsp
 
 ## Add content to a package
 
-The contents of a package are organized as a list of XML elements in the package project XML file. To add contents to a package, add a **Components** element with the appropriate child elements as shown in the following excerpt that demonstrates the addition of some files and registry settings to a package.
+The contents of a package are organized as a list of XML elements in the package definition file. To add contents to a package, add a **Components** element with the appropriate child elements. The following example demonstrates how to add some files and registry settings to a package.
 
 ```xml
 <?xml version='1.0' encoding='utf-8' standalone='yes'?>
@@ -132,9 +133,9 @@ PkgGen.exe [project] /universalbsp ...
 
 ## View the contents of a package
 
-Packages use Windows cabinet file technology to store a set of files, double click on the CAB file to view and extract its contents.  Use notepad.exe to view update.mum, this describes how the files are installed onto the device.
+Packages use Windows cabinet file technology to store a set of files. Double-click the CAB file to view and extract its contents. Use notepad.exe to view update.mum, this describes how the files are installed onto the device.
 
-```text
+```
 arm_dual_media.inf_31bf3856ad364e35_1.0.0.0_none_75dfa724a55b489d
 arm_dual_media.inf_31bf3856ad364e35_1.0.0.0_none_75dfa724a55b489d.manifest
 arm_dual_sample.inf_31bf3856ad364e35_1.0.0.0_none_a7012ffdafd1caf1
@@ -187,7 +188,7 @@ Directory of c:\oemsample
 
 ## Add a driver component
 
-Driver injection is supported by using the **driver** element in the package project XML.  Files imported by the INF should be relative to the INF source path (i.e. the default INF file import path is equal to the INF source path). This is the recommended least complex way to author your INF.
+In the package definition file, use the **driver** element to inject drivers. We recommend using relative paths, as it's typically the simplest way to describe the INF source path.
 
 ```xml
   <drivers>
@@ -207,7 +208,7 @@ If the default file import path is not equal to the INF source path, you can use
   </drivers>
 ```
 
-If files to be imported are in random location (not relative to how they are defined in the INF), file overrides can be applied. This is not recommended but is available for special cases.
+If files to be imported are not relative to how they are defined in the INF, file overrides can be applied. This is not recommended, but is available for special cases.
 
 <syntaxhighlight lang="xml">
   <drivers>
@@ -222,7 +223,7 @@ If files to be imported are in random location (not relative to how they are def
 </syntaxhighlight>
 
 ## Add a service component
-The **service** element in the package project XML file, its child elements, and its attributes can be used to define and package a system service.
+In the package definition file, use the **service** element (and its child elements and attributes) to define and package a system service.
 
 ```xml
    <service
@@ -268,7 +269,7 @@ COM servers and class definitions should be registered using COM elements.
 
 ## Project scope macros
 
-Package projects can utilize macros to simplify the XML creation process. Some macros are already globally defined, in which case they can't be changed or modified, but you can also define local macros for use within your own package project XML file. This local macro definition is embedded in the specific package project file through the macros element. The following example demonstrates creating a local macro for use in a package project file.
+Package projects can use macros to simplify the XML creation process. Some macros are already globally defined, in which case they can't be changed or modified, but you can also define local macros for use within your own package definition file. This local macro definition is embedded in the specific package project file through the macros element. The following example demonstrates creating a local macro for use in a package definition file.
 
 ```xml
   <macros>
@@ -353,7 +354,10 @@ Running PkgGen.exe with now generate one WOW package for each host package.
 04/05/2017  07:59 AM            10,021 OEM-Media-MediaService_Wow_arm64.arm.cab
 ```
 
-Typically, the 64 bit device will get its Host 64 bit package and its Guest 32 bit or WOW package, both generated from myPackage.wm.xml.  To avoid resource conflicts between the two packages build filters are used:<syntaxhighlight lang="xml">
+Typically, the 64 bit device will get its Host 64 bit package and its Guest 32 bit or WOW package, both generated from myPackage.wm.xml.  To avoid resource conflicts between the two packages build filters are used:
+
+```xml
+<syntaxhighlight lang="xml">
   <regKeys buildFilter="not build.isWow and build.arch = arm" >
     <regKey keyName="$(hklm.software)\OEMName\MediaService">
       <regValue
@@ -362,9 +366,22 @@ Typically, the 64 bit device will get its Host 64 bit package and its Guest 32 b
           value="MediaService"
           />
     </regKey>
-</syntaxhighlight>In this case, the registry keys are exclusive to the Host 32 bit ARM package.  The CPU switch is used to set build.arch, and build.isWow is set by PkgGen to false when building the 32 bit Host Package, then true when building the 32 bit Guest or WOW package.
+</syntaxhighlight>
+```
+
+In this case, the registry keys are exclusive to the Host 32 bit ARM package.  The CPU switch is used to set build.arch, and build.isWow is set by PkgGen to false when building the 32 bit Host Package, then true when building the 32 bit Guest or WOW package.
 
 ```text
 [cpu]··············· CPU type. Values: (x86|arm|arm64|amd64)
                      Values:<Free Text> Default="arm"
 ```
+
+## <a href="" id="convert_packages"></a> Converting Windows Universal OEM Packages
+
+If you've created packages using the pkg.xml packaging model, and you want to use them on Windows IoT Core, version 1709, you'll need to either recreate your packages, or convert them using the pkggen.exe tool. 
+
+After you convert the packages, you may need to modify the wm.xml file to make sure that it follows the [schema](package-schema.md).
+
+```text
+c:\oemsample>pkggen.exe "filename.pkg.xml" /convert:pkg2wm
+
