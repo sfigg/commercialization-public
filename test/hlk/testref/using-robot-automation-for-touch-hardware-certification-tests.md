@@ -540,21 +540,21 @@ The following table lists the interaction types:
 <td><p>A set of quick down up motions</p></td>
 <td><p><strong>Used IInteractionObject parameters:</strong> count, xFrom, yFrom, xTo, yTo, startTimes, endTimes</p>
 <p><strong>Unused IInteractionObject parameters:</strong> rotation, xCenter, yCenter, zDistance, accelerationProfile, endHoldTimes</p>
-<p>For example, at the starting time offset <strong>startTimes[i]</strong> (i &lt; count), the robot should place contact i at the coordinate location (<strong>xFrom[i]</strong>, <strong>yFrom[i]</strong>). It should remain in contact until <strong>endTimes[i]</strong>, when the contact should be released. It is expected (<strong>xFrom[i]</strong> == <strong>xTo[i]</strong>) and (<strong>yFrom[i]</strong> == <strong>yTo[i]</strong>) so the <strong>xTo</strong> and <strong>yTo</strong> parameters can be ignored.</p></td>
+<p>For example, at the starting time offset <strong>startTimes\[i]</strong> (i &lt; count), the robot should place contact i at the coordinate location (<strong>xFrom[i]</strong>, <strong>yFrom[i]</strong>). It should remain in contact until <strong>endTimes[i]</strong>, when the contact should be released. It is expected (<strong>xFrom[i]</strong> == <strong>xTo[i]</strong>) and (<strong>yFrom[i]</strong> == <strong>yTo[i]</strong>) so the <strong>xTo</strong> and <strong>yTo</strong> parameters can be ignored.</p></td>
 </tr>
 <tr class="even">
 <td><p>Line</p></td>
 <td><p>A [set] of non-intersecting lines</p></td>
 <td><p><strong>Used IInteractionObject parameters:</strong> count, xFrom, yFrom, xTo, yTo, startTimes, endTimes</p>
 <p><strong>Unused IInteractionObject parameters:</strong> rotation, xCenter, yCenter, zDistance, accelerationProfile, endHoldTimes</p>
-<p>For example, at the starting time offset <strong>startTimes[i]</strong> (i &lt; count) the robot should place contact i at the coordinate location (<strong>xFrom[i]</strong>, <strong>yFrom[i]</strong>). It should remain in contact and move in straight line to (<strong>xTo[i]</strong>, <strong>yTo[i]</strong>) at the time offset of <strong>endTimes[i]</strong>, when the contact should be released. There is no restriction on the moving speed and robot can do whatever is convenient.</p></td>
+<p>For example, at the starting time offset <strong>startTimes\[i]</strong> (i &lt; count) the robot should place contact i at the coordinate location (<strong>xFrom[i]</strong>, <strong>yFrom[i]</strong>). It should remain in contact and move in straight line to (<strong>xTo[i]</strong>, <strong>yTo[i]</strong>) at the time offset of <strong>endTimes[i]</strong>, when the contact should be released. There is no restriction on the moving speed and robot can do whatever is convenient.</p></td>
 </tr>
 <tr class="odd">
 <td><p>Rotate</p></td>
 <td><p>A [set] of circular arcs</p></td>
 <td><p><strong>Used IInteractionObject parameters:</strong> count, xFrom, yFrom, xCenter, yCenter, rotation, startTimes, endTimes</p>
 <p><strong>Unused IInteractionObject parameters:</strong> xTo, yTo, zDistance accelerationProfile, endHoldTimes</p>
-<p>For example. at the starting time offset <strong>startTimes[i]</strong> (i&lt;count), the robot should place contact i at the coordinate location (<strong>xFrom[i]</strong>, <strong>yFrom[i]</strong>). It should remain in contact and move in arc clockwise by radian indicated by the value of <strong>rotation[i]</strong>. The arc center is at (<strong>xCenter[i]</strong>, <strong>yCenter[i]</strong>). The interaction must finish by <strong>endTimes[i]</strong>, when the contact should be released.</p>
+<p>For example. at the starting time offset <strong>startTimes\[i]</strong> (i&lt;count), the robot should place contact i at the coordinate location (<strong>xFrom[i]</strong>, <strong>yFrom[i]</strong>). It should remain in contact and move in arc clockwise by radian indicated by the value of <strong>rotation[i]</strong>. The arc center is at (<strong>xCenter[i]</strong>, <strong>yCenter[i]</strong>). The interaction must finish by <strong>endTimes[i]</strong>, when the contact should be released.</p>
 <p></p>
 <p>Figure 1 shows how these parameters are used to perform the rotate interaction.</p></td>
 </tr>
@@ -563,7 +563,7 @@ The following table lists the interaction types:
 <td><p>Hold contacts above the screen without touching</p></td>
 <td><p><strong>Used IInteractionObject parameters:</strong> count, xFrom, yFrom, xTo, yTo, zDistance, startTimes, endTimes</p>
 <p><strong>Unused IInteractionObject parameters:</strong> rotation, xCenter, yCenter, accelerationProfile, endHoldTimes</p>
-<p>For example, at the starting time offset <strong>startTimes[i]</strong> (i&lt;count), the robot should hover contact i at the coordinate location (<strong>xFrom[i]</strong>, <strong>yFrom[i]</strong>). The distance of the contact from the screen surface is defined by <strong>zDistance[i]</strong>. Note this represents the distance for an average human finger. For a robotic finger – the robot should adjust this height with respect to the difference in capacitance (if any). The hovering contact should remain stable and be removed at <strong>endTimes[i]</strong>. For this release, the hovering is stationary, and the <strong>xTo</strong> and <strong>yTo</strong> parameters can be ignored.</p></td>
+<p>For example, at the starting time offset <strong>startTimes\[i]</strong> (i&lt;count), the robot should hover contact i at the coordinate location (<strong>xFrom[i]</strong>, <strong>yFrom[i]</strong>). The distance of the contact from the screen surface is defined by <strong>zDistance[i]</strong>. Note this represents the distance for an average human finger. For a robotic finger – the robot should adjust this height with respect to the difference in capacitance (if any). The hovering contact should remain stable and be removed at <strong>endTimes[i]</strong>. For this release, the hovering is stationary, and the <strong>xTo</strong> and <strong>yTo</strong> parameters can be ignored.</p></td>
 </tr>
 <tr class="odd">
 <td><p>Zoom</p></td>
@@ -580,7 +580,7 @@ The following table lists the interaction types:
 <td><p><strong>Used IInteractionObject parameters:</strong> count, xFrom, yFrom, xTo, yTo, startTimes, endTimes</p>
 <p><strong>Unused IInteractionObject parameters:</strong> rotation, xCenter, yCenter, zDistance, accelerationProfile, endHoldTimes</p>
 <p>For example, the TouchKeyboard interaction is a sequence of tapping on the screen, just like a person tapping the on-screen soft keyboard.</p>
-<p>At the starting time offset <strong>startTimes[i]</strong> (i&lt;count), the robot should place contact i at the coordinate location (<strong>xFrom[i]</strong>, <strong>yFrom[i]</strong>). It should remain in contact until the time offset of <strong>endTimes[i]</strong>, when the contact should be released. Just like Tap interaction, it is expected (<strong>xFrom[i]</strong> == <strong>xTo[i]</strong>) and (<strong>yFrom[i]</strong> == <strong>yTo[i]</strong>) so the <strong>xTo</strong> and <strong>yTo</strong> parameters can be ignored.</p>
+<p>At the starting time offset <strong>startTimes\[i]</strong> (i&lt;count), the robot should place contact i at the coordinate location (<strong>xFrom[i]</strong>, <strong>yFrom[i]</strong>). It should remain in contact until the time offset of <strong>endTimes[i]</strong>, when the contact should be released. Just like Tap interaction, it is expected (<strong>xFrom[i]</strong> == <strong>xTo[i]</strong>) and (<strong>yFrom[i]</strong> == <strong>yTo[i]</strong>) so the <strong>xTo</strong> and <strong>yTo</strong> parameters can be ignored.</p>
 <p>Suppose there are 4 contacts required by the interaction and the parameters have the following value:</p>
 <table>
 <colgroup>
@@ -662,7 +662,7 @@ The following table lists the interaction types:
 <td><p><strong>Used IInteractionObject parameters:</strong> count, xFrom, yFrom, xTo, yTo, startTimes, endTimes, endHoldTimes</p>
 <p><strong>Unused IInteractionObject parameters:</strong> rotation, xCenter, yCenter, zDistance, accelerationProfile</p>
 <p>This interaction is similar to Line interaction, except that at the end of movement, the contacts are not released immediately. Instead, they are held pressed down to the surface for an amount of time specified by the <strong>endHoldTimes</strong> parameter. The end time of movement for contact i is calculated by (<strong>endTimes</strong>[i] –<strong>endHoldTimes</strong>[i]).</p>
-<p>For example, at the starting time offset <strong>startTimes</strong>[i] (i&lt;count), the robot should place contact i at the coordinate location (<strong>xFrom</strong>[i], <strong>yFrom</strong>[i]). It should remain in contact and move in straight line to (<strong>xTo</strong>[i], <strong>yTo</strong>[i]) at the time offset of (<strong>endTimes</strong>[i] - <strong>endHoldTimes</strong>[i]). Then the contact should be held stable until time offset <strong>endTimes</strong>[i], when it is released from the surface. There is no restriction on the moving speed and robot can do whatever is convenient, as long as the contacts reach destination at or before the required time offset.</p>
+<p>For example, at the starting time offset <strong>startTimes\[i]</strong> (i&lt;count), the robot should place contact i at the coordinate location (<strong>xFrom</strong>[i], <strong>yFrom</strong>[i]). It should remain in contact and move in straight line to (<strong>xTo</strong>[i], <strong>yTo</strong>[i]) at the time offset of (<strong>endTimes</strong>[i] - <strong>endHoldTimes</strong>[i]). Then the contact should be held stable until time offset <strong>endTimes</strong>[i], when it is released from the surface. There is no restriction on the moving speed and robot can do whatever is convenient, as long as the contacts reach destination at or before the required time offset.</p>
 <p>For this release, you can expect the number of contacts (<strong>count</strong>) to be 1.</p></td>
 </tr>
 </tbody>
