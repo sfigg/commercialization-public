@@ -18,7 +18,7 @@ Packages are the logical building blocks used to create IoT Core images.
 
 *  **Everything you add is packaged**. Every driver, library, registry setting, system file, and customization that you add to the device is included in a package. The contents and location of each item are listed in a package definition file (*.wm.xml).
 *  **Packages are signed**. Every customization on your device is trackable to a package with a signature. Only you and partners that you trust can update the packages.
-*  **Packages are versioned for easy web-based updates**. Need to change a setting or a file? Update the package and put it on an update server, and the devices can update themselves.
+*  **Packages are versioned for easier updates**.
 
 ![A sample package file (sample_pkg.cab) includes a package definition file, package contents like apps, drivers, and files, plus a signature file and a version number](images/OEMPackages.png)
 
