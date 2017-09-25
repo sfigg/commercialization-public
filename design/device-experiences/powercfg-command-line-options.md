@@ -59,19 +59,19 @@ where <em>option</em> is one of the options listed in the following table and de
 | /SRUMUTIL                 | Dumps Energy Estimation data from System Resource Usage Monitor (SRUM). |
 | /SYSTEMSLEEPDIAGNOSTICS   | Generates a diagnostic report of system sleep transitions. |
 | /SYSTEMPOWERREPORT        | Generates a diagnostic system power transition report. |
-|---------------------------|----------------------------------------------|
+
 
 Running the command **powercfg.exe**&mdash;**/?** displays a list of the command-line options.
 
 
 
-## \/?, -HELP
+## /?, -HELP
 
 Lists options, descriptions, and examples for a command line.
 
 
 
-## \/LIST, \/L 
+## /LIST, /L 
   
 <p>Lists all power schemes.</p>
 <p>Examples:</p>
@@ -79,10 +79,11 @@ Lists options, descriptions, and examples for a command line.
 
 
 
-## \/QUERY, /QUERY
+## /QUERY, /QUERY
 
-<p>[<i>&lt;SCHEME_GUID&gt;</i> [<i>&lt;SUB_GUID&gt;</i>]]</p>
 <p>Displays the contents of the specified power scheme. If neither the parameter <i>SCHEME_GUID</i> or <i>SUB_GUID</i> are provided, the settings of the current active power scheme are displayed. If the parameter <i>SUB_GUID</i> is not specified, all settings in the specified power scheme are displayed.</p>
+
+<p>Syntax: [<i>&lt;SCHEME_GUID&gt;</i> [<i>&lt;SUB_GUID&gt;</i>]]</p>
 <p>Arguments: </p>
 <ul>
 <li>
@@ -98,10 +99,11 @@ Lists options, descriptions, and examples for a command line.
 
 
 
-## \/CHANGE, \/x
+## /CHANGE, /x
 
-<p><i>&lt;SETTING&gt; &lt;VALUE&gt;</i></p>
 <p>Modifies a setting value in the current power scheme.</p>
+<p>Syntax: <i>&lt;SETTING&gt; &lt;VALUE&gt;</i></p>
+
 <p>Arguments:</p>
 <ul>
 <li>
@@ -116,10 +118,10 @@ Lists options, descriptions, and examples for a command line.
 
 
 
-## \/CHANGENAME
+## /CHANGENAME
 
-<p><i>&lt;SCHEME_GUID&gt; &lt;NAME&gt;</i> [<i>&lt;DESCRIPTION&gt;</i>]</p>
 <p>Modifies the name of a power scheme and optionally its description.</p>
+<p>Syntax: <i>&lt;SCHEME_GUID&gt; &lt;NAME&gt;</i> [<i>&lt;DESCRIPTION&gt;</i>]</p>
 <p>Arguments:</p>
 <ul>
 <li>
@@ -137,10 +139,10 @@ Lists options, descriptions, and examples for a command line.
 
 
 
-## \/DUPLICATESCHEME
+## /DUPLICATESCHEME
 
-<p><i>&lt;SCHEME_GUID&gt;</i> [<i>&lt;DESTINATION_GUID&gt;</i>]</p>
 <p>Duplicates the specified power scheme. The resulting GUID which represents the new scheme is displayed.</p>
+<p>Syntax: <i>&lt;SCHEME_GUID&gt;</i> [<i>&lt;DESTINATION_GUID&gt;</i>]</p>
 <p>Arguments:</p>
 <ul>
 <li>
@@ -155,10 +157,10 @@ Lists options, descriptions, and examples for a command line.
 
 
 
-## \/DELETE, /D
+## /DELETE, /D
 
-<p><i>&lt;SCHEME_GUID&gt;</i></p>
 <p>Deletes the power scheme with the specified GUID.</p>
+<p>Syntax: <i>&lt;SCHEME_GUID&gt;</i></p>
 <p>Arguments: </p>
 <ul>
 <li>
@@ -170,10 +172,10 @@ Lists options, descriptions, and examples for a command line.
 
 
 
-## \/DELETESETTING
+## /DELETESETTING
 
-<p><i>&lt;SUB_GUID&gt; &lt;SETTING_GUID&gt;</i></p>
 <p>Deletes a power setting.</p>
+<p>Syntax: <i>&lt;SUB_GUID&gt; &lt;SETTING_GUID&gt;</i></p>
 <p>Arguments:</p>
 <ul>
 <li>
@@ -188,10 +190,10 @@ Lists options, descriptions, and examples for a command line.
 
 
 
-## \/SETACTIVE, /S
+## /SETACTIVE, /S
 
-<p><i>&lt;SCHEME_GUID&gt;</i></p>
 <p>Makes the specified power scheme active on the system.</p>
+<p>Syntax: <i>&lt;SCHEME_GUID&gt;</i></p>
 <p>Arguments:</p>
 <ul>
 <li>
@@ -203,9 +205,10 @@ Lists options, descriptions, and examples for a command line.
 
 
 
-## \/GETACTIVESCHEME
+## /GETACTIVESCHEME
 
 <p>Retrieves the currently active power scheme.</p>
+<p>Syntax:</p>
 <p>Examples:</p>
 <pre class="syntax" xml:space="preserve"><code>POWERCFG /GETACTIVESCHEME</code></pre>
 <p><b>/SETACVALUEINDEX</b></p>
@@ -231,10 +234,10 @@ Lists options, descriptions, and examples for a command line.
 
 
 
-## \/SETDCVALUEINDEX
+## /SETDCVALUEINDEX
 
-<p><i>&lt;SCHEME_GUID&gt; &lt;SUB_GUID&gt; &lt;SETTING_GUID&gt; &lt;SETTING_INDEX&gt;</i></p>
 <p>Sets the value associated with a specified power setting while the system is powered by DC power. </p>
+<p>Syntax: <i>&lt;SCHEME_GUID&gt; &lt;SUB_GUID&gt; &lt;SETTING_GUID&gt; &lt;SETTING_INDEX&gt;</i></p>
 <p>Arguments: </p>
 <ul>
 <li>
@@ -255,10 +258,10 @@ Lists options, descriptions, and examples for a command line.
 
 
 
-## \/IMPORT
+## /IMPORT
 
-<p><i>&lt;FILENAME&gt;</i> [<i>&lt;GUID&gt;</i>]</p>
 <p>Imports a power scheme from the specified file. </p>
+<p>Syntax: <i>&lt;FILENAME&gt;</i> [<i>&lt;GUID&gt;</i>]</p>
 <p>Arguments: </p>
 <ul>
 <li>
@@ -274,10 +277,10 @@ Lists options, descriptions, and examples for a command line.
 
 
 
-## \/EXPORT
+## /EXPORT
 
-<p><i>&lt;FILENAME&gt; &lt;GUID&gt;</i></p>
 <p>Exports a power scheme, represented by the specified GUID, to the specified file. </p>
+<p>Syntax: <i>&lt;FILENAME&gt; &lt;GUID&gt;</i></p>
 <p>Arguments: </p>
 <ul>
 <li>
@@ -292,7 +295,7 @@ Lists options, descriptions, and examples for a command line.
 
 
 
-## \/ALIASES
+## /ALIASES
 
 <p>Displays a list of aliases and their corresponding GUIDs. These aliases may be used instead of a GUID in any command.</p>
 <p>Examples:</p>
@@ -302,10 +305,10 @@ Lists options, descriptions, and examples for a command line.
 
 
 
-## \/GETSECURITYDESCRIPTOR
+## /GETSECURITYDESCRIPTOR
 
-<p><i>&lt;GUID|ACTION&gt;</i></p>
 <p>Gets the security descriptor associated with the specified power setting, power scheme, or action.</p>
+<p>Syntax: <i>&lt;GUID|ACTION&gt;</i></p>
 <p>Arguments: </p>
 <ul>
 <li>
@@ -321,10 +324,10 @@ Lists options, descriptions, and examples for a command line.
 
 
 
-## \/SETSECURITYDESCRIPTOR
+## /SETSECURITYDESCRIPTOR
 
-<p><i>&lt;GUID|ACTION&gt; &lt;SDDL&gt;</i></p>
 <p>Sets a security descriptor associated with the specified power setting, power scheme, or action.</p>
+<p>Syntax: <i>&lt;GUID|ACTION&gt; &lt;SDDL&gt;</i></p>
 <p>Arguments: </p>
 <ul>
 <li>
@@ -343,12 +346,13 @@ Lists options, descriptions, and examples for a command line.
 
 
 
-## \/HIBERNATE, /H
+## /HIBERNATE, /H
 
+<p>Enables or disables the hibernate feature or sets the hiberfile size.</p>
 <p>[<b>ON</b> | <b>OFF</b>]</p>
 <p>[<b>/SIZE </b><i>&lt;PERCENT_SIZE&gt;</i>]</p>
 <p>[<b>/TYPE </b><i>&lt;REDUCED | FULL&gt;</i>]</p>
-<p>Enables or disables the hibernate feature or sets the hiberfile size.</p>
+
 <p>Arguments: </p>
 <ul>
 <li>
@@ -375,7 +379,7 @@ Lists options, descriptions, and examples for a command line.
 
 
 
-## \/AVAILABLESLEEPSTATES, /A
+## /AVAILABLESLEEPSTATES, /A
 
 <p>Reports the sleep states available on the system. Attempts to report reasons why sleep states are unavailable.</p>
 <p>Examples:</p>
@@ -383,10 +387,10 @@ Lists options, descriptions, and examples for a command line.
 
 
 
-## \/DEVICEQUERY
+## /DEVICEQUERY
 
-<p><i>&lt;QUERYFLAG&gt;</i></p>
 <p>Returns a list of devices that meet the specified criteria. </p>
+<p>Syntax: <i>&lt;QUERYFLAG&gt;</i></p>
 <p>Arguments: </p>
 <ul>
 <li>
@@ -408,10 +412,10 @@ Lists options, descriptions, and examples for a command line.
 
 
 
-## \/DEVICEENABLEWAKE
+## /DEVICEENABLEWAKE
 
-<p><i>&lt;DEVICENAME&gt;</i></p>
 <p>Enables the specified device to wake the system from a sleep state. </p>
+<p>Syntax: <i>&lt;DEVICENAME&gt;</i></p>
 <p>Arguments: </p>
 <ul>
 <li>
@@ -423,10 +427,10 @@ Lists options, descriptions, and examples for a command line.
 
 
 
-## \/DEVICEDISABLEWAKE
+## /DEVICEDISABLEWAKE
 
-<p><i>&lt;DEVICENAME&gt;</i></p>
 <p>Disables the specified device from waking the system from a sleep state.</p>
+<p>Syntax: <i>&lt;DEVICENAME&gt;</i></p>
 <p>Arguments:</p>
 <ul>
 <li>
@@ -438,7 +442,7 @@ Lists options, descriptions, and examples for a command line.
 
 
 
-## \/LASTWAKE
+## /LASTWAKE
 
 <p>Reports information about what woke the system from the last sleep transition.</p>
 <p>Examples:</p>
@@ -446,7 +450,7 @@ Lists options, descriptions, and examples for a command line.
 
 
 
-## \/WAKETIMERS
+## /WAKETIMERS
 
 <p>Enumerates the active wake timers. If enabled, the expiration of a wake timer wakes the system from sleep and hibernate states.</p>
 <p>Examples:</p>
@@ -454,7 +458,7 @@ Lists options, descriptions, and examples for a command line.
 
 
 
-## \/REQUESTS
+## /REQUESTS
 
 <p>Enumerates application and driver Power Requests. Power Requests prevent the computer from automatically powering off the display or entering a low-power sleep mode. </p>
 <p>Examples:</p>
@@ -462,10 +466,10 @@ Lists options, descriptions, and examples for a command line.
 
 
 
-## \/REQUESTSOVERRIDE
+## /REQUESTSOVERRIDE
 
-<p>[<i>&lt;CALLER_TYPE&gt; &lt;NAME&gt; </i><i>&lt;REQUEST&gt;</i>]</p>
 <p>Sets a Power Request override for a particular process, service, or driver. If no parameters are specified, this command displays the current list of Power Request overrides.</p>
+<p>Syntax: [<i>&lt;CALLER_TYPE&gt; &lt;NAME&gt; </i><i>&lt;REQUEST&gt;</i>]</p>
 <p>Arguments: </p>
 <ul>
 <li>
@@ -483,28 +487,28 @@ Lists options, descriptions, and examples for a command line.
 
 
 
-## \/ENERGY
+## /ENERGY
 
+<p>Analyzes the system for common energy-efficiency and battery-life problems. The ENERGY command should be used when the computer is idle and has no open programs or documents. The ENERGY command generates an HTML report file in the current path.</p>
 <p>[<b>/OUTPUT </b><i>&lt;FILENAME&gt;</i>] [<b>/XML</b>] [<b>/DURATION </b><i>&lt;SECONDS&gt;</i>]</p>
 <p>or</p>
 <p><b>/TRACE</b> [<b>/D </b><i>&lt;FILEPATH&gt;</i>] [<b>/XML</b>] [<b>/DURATION </b><i>&lt;SECONDS&gt;</i>]</p>
-<p>Analyzes the system for common energy-efficiency and battery-life problems. The ENERGY command should be used when the computer is idle and has no open programs or documents. The ENERGY command generates an HTML report file in the current path. </p>
 <p>Arguments: </p>
 <ul>
 <li>
-<p><b>/OUTPUT </b><i>&lt;FILENAME&gt;</i> Specify the path and file name to store the energy report HTML or XML file.</p>
+<p><b>/OUTPUT</b><i>&lt;FILENAME&gt;</i> Specify the path and file name to store the energy report HTML or XML file.</p>
 </li>
 <li>
 <p><b>/XML</b> Formats the report file as XML.</p>
 </li>
 <li>
-<p><b>/DURATION </b><i>&lt;SECONDS&gt;</i> Specifies the number of seconds to observe system behavior. Default is 60 seconds. </p>
+<p><b>/DURATION </b><i>&lt;SECONDS&gt;</i> Specifies the number of seconds to observe system behavior. Default is 60 seconds.</p>
 </li>
 <li>
 <p><b>/TRACE</b> Records system behavior and does not perform analysis. Trace files are generated in the current path unless the <b>/D</b> parameter is specified. </p>
 </li>
 <li>
-<p><b>/D </b><i>&lt;FILEPATH&gt;</i> Specify the directory to store trace data. May only be used with the <b>/TRACE</b> parameter.</p>
+<p><b>/D</b><i>&lt;FILEPATH&gt;</i> Specify the directory to store trace data. May only be used with the <b>/TRACE</b> parameter.</p>
 </li>
 </ul>
 <p>Examples:</p>
@@ -513,11 +517,11 @@ Lists options, descriptions, and examples for a command line.
 
 
 
-## \/BATTERYREPORT
+## /BATTERYREPORT
 
+<p>Generates a report of battery usage characteristics over the lifetime of the system. The <b>/BATTERYREPORT</b> command will generate an HTML report file in the current path.</p>
 <p>[<b>/OUTPUT </b><i>&lt;FILENAME&gt;</i>] [<b>/XML</b>] </p>
 <p>[<b>/DURATION </b><i>&lt;DAYS&gt;</i>]</p>
-<p>Generates a report of battery usage characteristics over the lifetime of the system. The <b>/BATTERYREPORT</b> command will generate an HTML report file in the current path.</p>
 <p>Arguments: </p>
 <ul>
 <li>
@@ -536,12 +540,12 @@ Lists options, descriptions, and examples for a command line.
 
 
 
-## \/SLEEPSTUDY
+## /SLEEPSTUDY
 
+<p>Generates a diagnostic report of modern standby quality over the last three days on the system. The <b>/SLEEPSTUDY</b> command will generate an HTML report file in the current path.</p>
 <p>[<b>/OUTPUT </b><i>&lt;FILENAME&gt;</i>] [<b>/XML</b>] </p>
 <p>[<b>/DURATION </b><i>&lt;DAYS&gt;</i>]</p>
 <p>[<b>/TRANSFORMXML </b><i>&lt;FILENAME.XML&gt;</i>] [<b>/OUTPUT </b><i>&lt;FILENAME.HTML&gt;</i>]</p>
-<p>Generates a diagnostic report of modern standby quality over the last three days on the system. The <b>/SLEEPSTUDY</b> command will generate an HTML report file in the current path.</p>
 <p>Arguments: </p>
 <ul>
 <li>
@@ -563,22 +567,20 @@ Lists options, descriptions, and examples for a command line.
 
 
 
-## \/SRUMUTIL
+## /SRUMUTIL
 
-<p>[<b>/OUTPUT </b><i>&lt;FILENAME&gt;</i>] [<b>/XML</b>] [<b>/CSV</b>] </p>
-</td>
-<td>
 <p>Enumerates the entire Energy Estimation data from the System Resource Usage Monitor (SRUM) in an XML or CSV file.</p>
+<p>Syntax: [<b>/OUTPUT </b><i>&lt;FILENAME&gt;</i>] [<b>/XML</b>] [<b>/CSV</b>] </p>
 <p>Arguments: </p>
 <ul>
 <li>
-<p><b>/OUTPUT </b><i>&lt;FILENAME&gt; </i> Specify the path and file name to store the SRUM data.</p>
+<p><b>/OUTPUT</b><i>&lt;FILENAME&gt; </i> Specify the path and file name to store the SRUM data.</p>
 </li>
 <li>
-<p><b>/OUTPUT </b><i>&lt;FILENAME&gt;</i><b>/XML </b> Formats the file as XML.</p>
+<p><b>/OUTPUT</b><i>&lt;FILENAME&gt;</i><b>/XML </b> Formats the file as XML.</p>
 </li>
 <li>
-<p><b>/OUTPUT </b><i>&lt;FILENAME&gt;</i><b>/CSV </b> Formats the file as CSV.</p>
+<p><b>/OUTPUT</b><i>&lt;FILENAME&gt;</i><b>/CSV </b> Formats the file as CSV.</p>
 </li>
 </ul>
 <p>Examples:</p>
