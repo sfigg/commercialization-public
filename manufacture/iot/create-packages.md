@@ -5,7 +5,7 @@ ms.assetid: cbae6949-ccfe-4015-a9b0-a269f6f30d5a
 MSHAttr: 'PreferredLib:/library'
 title: Creating Windows Universal OEM Packages
 ms.author: kenpacq
-ms.date: 09/02/2017
+ms.date: 09/25/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
