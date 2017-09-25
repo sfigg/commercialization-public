@@ -76,7 +76,7 @@ Lists options, descriptions, and examples for a command line.
 <p>Lists all power schemes.</p>
 <p>Examples:</p>
 <pre class="syntax" xml:space="preserve"><code>POWERCFG /LIST</code></pre>
-
+<p>&nbsp;</p>
 
 
 ## /QUERY, /QUERY
@@ -96,7 +96,7 @@ Lists options, descriptions, and examples for a command line.
 <p>Examples:</p>
 <pre class="syntax" xml:space="preserve"><code>POWERCFG /QUERY</code></pre>
 <pre class="syntax" xml:space="preserve"><code>POWERCFG /QUERY 381b4222-f694-41f0-9685-ff5bb260df2e 238c9fa8-0aad-41ed-83f4-97be242c8f20</code></pre>
-
+<p>&nbsp;</p>
 
 
 ## /CHANGE, /x
@@ -115,7 +115,7 @@ Lists options, descriptions, and examples for a command line.
 </ul>
 <p>Examples: </p>
 <pre class="syntax" xml:space="preserve"><code>POWERCFG /CHANGE monitor-timeout-ac 5</code></pre>
-
+<p>&nbsp;</p>
 
 
 ## /CHANGENAME
@@ -136,7 +136,7 @@ Lists options, descriptions, and examples for a command line.
 </ul>
 <p>Examples:</p>
 <pre class="syntax" xml:space="preserve"><code>POWERCFG /CHANGENAME 381b4222-f694-41f0-9685-ff5bb260df2e "Customized Balanced"</code></pre>
-
+<p>&nbsp;</p>
 
 
 ## /DUPLICATESCHEME
@@ -154,7 +154,7 @@ Lists options, descriptions, and examples for a command line.
 </ul>
 <p>Examples:</p>
 <pre class="syntax" xml:space="preserve"><code>POWERCFG /DUPLICATESCHEME 381b4222-f694-41f0-9685-ff5bb260df2e</code></pre>
-
+<p>&nbsp;</p>
 
 
 ## /DELETE, /D
@@ -169,7 +169,7 @@ Lists options, descriptions, and examples for a command line.
 </ul>
 <p>Examples:</p>
 <pre class="syntax" xml:space="preserve"><code>POWERCFG /DELETE 381b4222-f694-41f0-9685-ff5bb260df2e</code></pre>
-
+<p>&nbsp;</p>
 
 
 ## /DELETESETTING
@@ -187,7 +187,7 @@ Lists options, descriptions, and examples for a command line.
 </ul>
 <p>Examples:</p>
 <pre class="syntax" xml:space="preserve"><code>POWERCFG /DELETESETTING 238c9fa8-0aad-41ed-83f4-97be242c8f20 29f6c1db-86da-48c5-9fdb-f2b67b1f44da</code></pre>
-
+<p>&nbsp;</p>
 
 
 ## /SETACTIVE, /S
@@ -202,7 +202,7 @@ Lists options, descriptions, and examples for a command line.
 </ul>
 <p>Examples:</p>
 <pre class="syntax" xml:space="preserve"><code>POWERCFG /SETACTIVE 381b4222-f694-41f0-9685-ff5bb260df2e</code></pre>
-
+<p>&nbsp;</p>
 
 
 ## /GETACTIVESCHEME
@@ -231,7 +231,7 @@ Lists options, descriptions, and examples for a command line.
 </ul>
 <p>Examples:</p>
 <pre class="syntax" xml:space="preserve"><code>POWERCFG /SETACVALUEINDEX 381b4222-f694-41f0-9685-ff5bb260df2e 238c9fa8-0aad-41ed-83f4-97be242c8f20 29f6c1db-86da-48c5-9fdb-f2b67b1f44da 0</code></pre>
-
+<p>&nbsp;</p>
 
 
 ## /SETDCVALUEINDEX
@@ -255,7 +255,7 @@ Lists options, descriptions, and examples for a command line.
 </ul>
 <p>Examples:</p>
 <pre class="syntax" xml:space="preserve"><code>POWERCFG /SETDCVALUEINDEX 381b4222-f694-41f0-9685-ff5bb260df2e 238c9fa8-0aad-41ed-83f4-97be242c8f20 29f6c1db-86da-48c5-9fdb-f2b67b1f44da 300</code></pre>
-
+<p>&nbsp;</p>
 
 
 ## /IMPORT
@@ -273,7 +273,7 @@ Lists options, descriptions, and examples for a command line.
 </ul>
 <p>Examples:</p>
 <pre class="syntax" xml:space="preserve"><code>POWERCFG /IMPORT c:\scheme.pow</code></pre>
-
+<p>&nbsp;</p>
 
 
 
@@ -292,7 +292,7 @@ Lists options, descriptions, and examples for a command line.
 </ul>
 <p>Examples:</p>
 <pre class="syntax" xml:space="preserve"><code>POWERCFG /EXPORT c:\scheme.pow 381b4222-f694-41f0-9685-ff5bb260df2e</code></pre>
-
+<p>&nbsp;</p>
 
 
 ## /ALIASES
@@ -302,7 +302,7 @@ Lists options, descriptions, and examples for a command line.
 <pre class="syntax" xml:space="preserve"><code>POWERCFG /ALIASES</code></pre>
 <div class="alert"><b>Note</b>  <p class="note">Some settings do not contain aliases. For a full list of GUIDs, use <code>powercfg -q</code>.</p>
 </div>
-
+<p>&nbsp;</p>
 
 
 ## /GETSECURITYDESCRIPTOR
@@ -321,6 +321,7 @@ Lists options, descriptions, and examples for a command line.
 <p>Examples:</p>
 <pre class="syntax" xml:space="preserve"><code>POWERCFG /GETSECURITYDESCRIPTOR 381b4222-f694-41f0-9685-ff5bb260df2e</code></pre>
 <pre class="syntax" xml:space="preserve"><code>POWERCFG /GETSECURITYDESCRIPTOR ActionSetActive</code></pre>
+<p>&nbsp;</p>
 
 
 
@@ -343,6 +344,7 @@ Lists options, descriptions, and examples for a command line.
 <p>Examples:</p>
 <pre class="syntax" xml:space="preserve"><code>POWERCFG /SETSECURITYDESCRIPTOR 381b4222-f694-41f0-9685-ff5bb260df2e O:BAG:SYD:P(A;CI;KRKW;;;BU)(A;CI;KA;;;BA)(A;CI;KA;;;SY)(A;CI;KA;;;CO)</code></pre>
 <pre class="syntax" xml:space="preserve"><code>POWERCFG /SETSECURITYDESCRIPTOR ActionSetActive O:BAG:SYD:P(A;CI;KR;;;BU)(A;CI;KA;;;BA)(A;CI;KA;;;SY)(A;CI;KA;;;CO)</code></pre>
+<p>&nbsp;</p>
 
 
 
@@ -376,7 +378,7 @@ Lists options, descriptions, and examples for a command line.
 <pre class="syntax" xml:space="preserve"><code>POWERCFG /HIBERNATE OFF</code></pre>
 <pre class="syntax" xml:space="preserve"><code>POWERCFG /HIBERNATE /SIZE 100</code></pre>
 <pre class="syntax" xml:space="preserve"><code>POWERCFG /HIBERNATE /TYPE REDUCED</code></pre>
-
+<p>&nbsp;</p>
 
 
 ## /AVAILABLESLEEPSTATES, /A
@@ -384,7 +386,7 @@ Lists options, descriptions, and examples for a command line.
 <p>Reports the sleep states available on the system. Attempts to report reasons why sleep states are unavailable.</p>
 <p>Examples:</p>
 <pre class="syntax" xml:space="preserve"><code>POWERCFG /AVAILABLESLEEPSTATES</code></pre>
-
+<p>&nbsp;</p>
 
 
 ## /DEVICEQUERY
@@ -409,7 +411,7 @@ Lists options, descriptions, and examples for a command line.
 </ul>
 <p>Examples:</p>
 <pre class="syntax" xml:space="preserve"><code>POWERCFG /DEVICEQUERY wake_armed</code></pre>
-
+<p>&nbsp;</p>
 
 
 ## /DEVICEENABLEWAKE
@@ -424,7 +426,7 @@ Lists options, descriptions, and examples for a command line.
 </ul>
 <p>Examples:</p>
 <pre class="syntax" xml:space="preserve"><code>POWERCFG /DEVICEENABLEWAKE "Microsoft USB IntelliMouse Optical"</code></pre>
-
+<p>&nbsp;</p>
 
 
 ## /DEVICEDISABLEWAKE
@@ -439,7 +441,7 @@ Lists options, descriptions, and examples for a command line.
 </ul>
 <p>Examples:</p>
 <pre class="syntax" xml:space="preserve"><code>POWERCFG /DEVICEDISABLEWAKE "Microsoft USB IntelliMouse Optical"</code></pre>
-
+<p>&nbsp;</p>
 
 
 ## /LASTWAKE
@@ -447,7 +449,7 @@ Lists options, descriptions, and examples for a command line.
 <p>Reports information about what woke the system from the last sleep transition.</p>
 <p>Examples:</p>
 <pre class="syntax" xml:space="preserve"><code>POWERCFG /LASTWAKE</code></pre>
-
+<p>&nbsp;</p>
 
 
 ## /WAKETIMERS
@@ -455,7 +457,7 @@ Lists options, descriptions, and examples for a command line.
 <p>Enumerates the active wake timers. If enabled, the expiration of a wake timer wakes the system from sleep and hibernate states.</p>
 <p>Examples:</p>
 <pre class="syntax" xml:space="preserve"><code>POWERCFG /WAKETIMERS</code></pre>
-
+<p>&nbsp;</p>
 
 
 ## /REQUESTS
@@ -463,7 +465,7 @@ Lists options, descriptions, and examples for a command line.
 <p>Enumerates application and driver Power Requests. Power Requests prevent the computer from automatically powering off the display or entering a low-power sleep mode. </p>
 <p>Examples:</p>
 <pre class="syntax" xml:space="preserve"><code>POWERCFG /REQUESTS</code></pre>
-
+<p>&nbsp;</p>
 
 
 ## /REQUESTSOVERRIDE
@@ -484,7 +486,7 @@ Lists options, descriptions, and examples for a command line.
 </ul>
 <p>Examples:</p>
 <pre class="syntax" xml:space="preserve"><code>POWERCFG /REQUESTSOVERRIDE PROCESS wmplayer.exe DISPLAY SYSTEM</code></pre>
-
+<p>&nbsp;</p>
 
 
 ## /ENERGY
@@ -514,7 +516,7 @@ Lists options, descriptions, and examples for a command line.
 <p>Examples:</p>
 <pre class="syntax" xml:space="preserve"><code>POWERCFG /ENERGY</code></pre>
 <pre class="syntax" xml:space="preserve"><code>POWERCFG /ENERGY /OUTPUT "longtrace.html" /DURATION 120</code></pre>
-
+<p>&nbsp;</p>
 
 
 ## /BATTERYREPORT
@@ -537,7 +539,7 @@ Lists options, descriptions, and examples for a command line.
 <p>Examples:</p>
 <pre class="syntax" xml:space="preserve"><code>POWERCFG /BATTERYREPORT /OUTPUT "batteryreport.html"</code></pre>
 <pre class="syntax" xml:space="preserve"><code>POWERCFG /BATTERYREPORT /DURATION 4</code></pre>
-
+<p>&nbsp;</p>
 
 
 ## /SLEEPSTUDY
@@ -564,7 +566,7 @@ Lists options, descriptions, and examples for a command line.
 <p>Examples:</p>
 <pre class="syntax" xml:space="preserve"><code>POWERCFG /SLEEPSTUDY /OUTPUT "sleepstudy.html"</code></pre>
 <pre class="syntax" xml:space="preserve"><code>POWERCFG /SLEEPSTUDY /DURATION 7</code></pre>
-
+<p>&nbsp;</p>
 
 
 ## /SRUMUTIL
@@ -585,7 +587,7 @@ Lists options, descriptions, and examples for a command line.
 </ul>
 <p>Examples:</p>
 <pre class="syntax" xml:space="preserve"><code>POWERCFG /BATTERYREPORT /OUTPUT "srumreport.xml" /XML</code></pre>
-
+<p>&nbsp;</p>
 
 
 <p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [p_weg_hardware\p_weg_hardware]:%20Powercfg command-line options%20 RELEASE:%20(10/3/2016)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
