@@ -5,7 +5,7 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.author: alhopper
-ms.date: 09/22/2017
+ms.date: 09/27/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -46,8 +46,8 @@ The following topics describe OOBE customization considerations.
 
 | Topic                                     | Description                                                                        |
 |:------------------------------------------|:-----------------------------------------------------------------------------------|
-| [Cortana voice support](cortana-voice-support.md)    | This topic describes how Cortana voice walks the user through the OOBE experience, enabling the user to complete parts of OOBE by responding to spoken prompts. |
 | [OOBE.xml](oobexml.md)                               | You can use OOBE.xml to organize text and images displayed during OOBE, and to specify settings for customizing the Windows 10 first-run experience. You can use multiple Oobe.xml files for language- and region-specific license terms and settings so that users see appropriate info as soon as they start their PCs. By specifying information in the Oobe.xml file, you help fill in some of the required information so that users are asked to do only the core tasks required to set up their PCs. |
+| [Cortana voice support](cortana-voice-support.md)    | This topic describes how Cortana voice walks the user through the OOBE experience, enabling the user to complete parts of OOBE by responding to spoken prompts. |
 | [OEM HID pairing](oem-hid-pairing.md)                | On PCs that ship with an unpaired wireless mouse and keyboard, the HID pairing screens are shown to the customer during the first-run experience in OOBE, which is before language selection or any other screen that requires user input. If you include written instructions, you must include those instructions in every language that ships with the PC. |
 | [OEM license](oem-license.md)                        | You can add your OEM license terms to the License Terms screen in the first-run experience of OOBE. |
 | [OEM registration pages](oem-registration-pages.md)  | You can display OEM registration screens during OOBE to encourage customers to provide you with their information. This enables you to provide them with a more personalized experience and information. |
