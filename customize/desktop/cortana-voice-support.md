@@ -1,6 +1,6 @@
 ---
 title: Cortana voice support
-description: Overview of how Cortana voice supports customers during OOBE
+description: How Cortana voice supports customers during OOBE
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
