@@ -12,8 +12,8 @@
 #### [OEM registration pages](desktop/oem-registration-pages.md)
 ##### [Design your registration pages](design-registration-pages.md)
 ##### [Configure OOBE.xml](registration-pages-oobexml.md)
-##### [Manage and upload user data](manage-user-data.md)
-##### [Test your implementation](test-registration-pages.md)
+##### [Manage user data](manage-user-data.md)
+##### [Collect and upload data](collect-and-upload-data.md)
 ### [Set dark mode](desktop/set-dark-mode.md)
 ### [Customize the Country and Operator Settings Asset](desktop/customize-cosa.md)
 
