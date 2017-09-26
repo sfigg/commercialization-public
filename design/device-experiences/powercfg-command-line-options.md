@@ -14,422 +14,585 @@ ms.technology: windows-oem
 
 # Powercfg command-line options
 
+Use powercfg.exe to control *power plans*&mdash;also called *power schemes*&mdash;to use the available sleep states, to control the power states of individual devices, and to analyze the system for common energy-efficiency and battery-life problems.
 
-You can use the powercfg.exe tool to control power schemes (also named power plans) to use the available sleep states, to control the power states of individual devices, and to analyze the system for common energy-efficiency and battery-life problems.
 
 ## Syntax
 
+Powercfg command lines use the following syntax:
 
-From the Windows command-line, you can run "powercfg.exe /?" to bring up the following usage information:
+<p style="margin: 1em 0 0 1.5em;"><code><strong>powercfg</strong>&nbsp;<strong>/</strong><<em>option</em>> [<em>arguments</em>] [<strong>/?</strong>]</code></p>
 
-```
-powercfg /COMMAND [ARGUMENTS] [/?]
-```
+where <em>option</em> is one of the options listed in the following table and described in more detail later in this topic.
 
-## Parameters
+| Option | Description |
+|--------|-------------|
+| /?, -HELP                 | Displays information about command-line parameters. |
+| /LIST, /L                 | Lists all power schemes. |
+| /QUERY, /Q                | Displays the contents of a power scheme. |
+| /CHANGE, /X               | Modifies a setting value in the current power scheme. |
+| /CHANGENAME               | Modifies the name and description of a power scheme. |
+| /DUPLICATESCHEME          | Duplicates a power scheme. |
+| /DELETE, /D               | Deletes a power scheme. |
+| /DELETESETTING            | Deletes a power setting. |
+| /SETACTIVE, /S            | Makes a power scheme active on the system. |
+| /GETACTIVESCHEME          | Retrieves the currently active power scheme. |
+| /SETACVALUEINDEX          | Sets the value associated with a power setting while the system is powered by AC power. |
+| /SETDCVALUEINDEX          | Sets the value associated with a power setting while the system is powered by DC power. |
+| /IMPORT                   | Imports all power settings from a file. |
+| /EXPORT                   | Exports a power scheme to a file. |
+| /ALIASES                  | Displays all aliases and their corresponding GUIDs. |
+| /GETSECURITYDESCRIPTOR    | Gets a security descriptor associated with a specified power setting, power scheme, or action. |
+| /SETSECURITYDESCRIPTOR    | Sets a security descriptor associated with a power setting, power scheme, or action. |
+| /HIBERNATE, /H            | Enables and disables the hibernate feature. |
+| /AVAILABLESLEEPSTATES, /A | Reports the sleep states available on the system. |
+| /DEVICEQUERY              | Returns a list of devices that meet specified criteria. |
+| /DEVICEENABLEWAKE         | Enables a device to wake the system from a sleep state. |
+| /DEVICEDISABLEWAKE        | Disables a device from waking the system from a sleep state. |
+| /LASTWAKE                 | Reports information about what woke the system from the last sleep transition. |
+| /WAKETIMERS               | Enumerates active wake timers. |
+| /REQUESTS                 | Enumerates application and driver Power Requests. |
+| /REQUESTSOVERRIDE         | Sets a Power Request override for a particular Process, Service, or Driver. |
+| /ENERGY                   | Analyzes the system for common energy-efficiency and battery life problems. |
+| /BATTERYREPORT            | Generates a report of battery usage. |
+| /SLEEPSTUDY               | Generates a diagnostic system power transition report. |
+| /SRUMUTIL                 | Dumps Energy Estimation data from System Resource Usage Monitor (SRUM). |
+| /SYSTEMSLEEPDIAGNOSTICS   | Generates a diagnostic report of system sleep transitions. |
+| /SYSTEMPOWERREPORT        | Generates a diagnostic system power transition report. |
 
 
-The following command-line options are available for powercfg.
+Running the command **powercfg.exe**&mdash;**/?** displays a list of the command-line options.
 
-> [!IMPORTANT]
-> To navigate the table horizontally, click on the table and then use the left and right scroll keys on your keyboard or use the scroll bar at the bottom of the table.
 
-> [!div class="mx-tableFixed"]
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Option</th>
-<th>Argument</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><strong>-HELP, /?</strong></p></td>
-<td><p></p></td>
-<td><p>Displays information about command-line parameters.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>/LIST, /L</strong></p></td>
-<td><p></p></td>
-<td><p>Lists all power schemes.</p>
+
+## /?, -HELP
+
+Lists options, descriptions, and examples for a command line.
+
+
+
+## /LIST, /L 
+  
+<p>Lists all power schemes.</p>
 <p>Examples:</p>
-<pre class="syntax" space="preserve"><code>POWERCFG /LIST</code></pre></td>
-</tr>
-<tr class="odd">
-<td><p><strong>/QUERY, /Q</strong></p></td>
-<td><p>[<em>&lt;SCHEME_GUID&gt;</em> [<em>&lt;SUB_GUID&gt;</em>]]</p></td>
-<td><p>Displays the contents of the specified power scheme. If neither the parameter <em>SCHEME_GUID</em> or <em>SUB_GUID</em> are provided, the settings of the current active power scheme are displayed. If the parameter <em>SUB_GUID</em> is not specified, all settings in the specified power scheme are displayed.</p>
-<p>Arguments:</p>
+<pre class="syntax" xml:space="preserve"><code>POWERCFG /LIST</code></pre>
+<p>&nbsp;</p>
+
+
+## /QUERY, /QUERY
+
+<p>Displays the contents of the specified power scheme. If neither the parameter <i>SCHEME_GUID</i> or <i>SUB_GUID</i> are provided, the settings of the current active power scheme are displayed. If the parameter <i>SUB_GUID</i> is not specified, all settings in the specified power scheme are displayed.</p>
+
+<p>Syntax: [<i>&lt;SCHEME_GUID&gt;</i> [<i>&lt;SUB_GUID&gt;</i>]]</p>
+<p>Arguments: </p>
 <ul>
-<li><p><em>&lt;SCHEME_GUID&gt;</em> Specifies a power scheme GUID. The <code>POWERCFG /LIST</code> command returns a power scheme GUID.</p></li>
-<li><p><em>&lt;SUB_GUID&gt;</em> Specifies a power-setting subgroup GUID. A power setting subgroup GUID is returned from the <code>POWERCFG /QUERY</code> command.</p></li>
+<li>
+<p><i>&lt;SCHEME_GUID&gt;</i> Specifies a power scheme GUID. The <code>POWERCFG /LIST</code> command returns a power scheme GUID.</p>
+</li>
+<li>
+<p><i>&lt;SUB_GUID&gt;</i> Specifies a power-setting subgroup GUID. A power setting subgroup GUID is returned from the <code>POWERCFG /QUERY</code> command.</p>
+</li>
 </ul>
 <p>Examples:</p>
-<pre class="syntax" space="preserve"><code>POWERCFG /QUERY</code></pre>
-<pre class="syntax" space="preserve"><code>POWERCFG /QUERY 381b4222-f694-41f0-9685-ff5bb260df2e 238c9fa8-0aad-41ed-83f4-97be242c8f20</code></pre></td>
-</tr>
-<tr class="even">
-<td><p><strong>/CHANGE, /x</strong></p></td>
-<td><p><em>&lt;SETTING&gt; &lt;VALUE&gt;</em></p></td>
-<td><p>Modifies a setting value in the current power scheme.</p>
+<pre class="syntax" xml:space="preserve"><code>POWERCFG /QUERY</code></pre>
+<pre class="syntax" xml:space="preserve"><code>POWERCFG /QUERY 381b4222-f694-41f0-9685-ff5bb260df2e 238c9fa8-0aad-41ed-83f4-97be242c8f20</code></pre>
+<p>&nbsp;</p>
+
+
+## /CHANGE, /x
+
+<p>Modifies a setting value in the current power scheme.</p>
+<p>Syntax: <i>&lt;SETTING&gt; &lt;VALUE&gt;</i></p>
+
 <p>Arguments:</p>
 <ul>
-<li><p><em>&lt;SETTING&gt;</em> Specifies one of the following options: <strong>monitor-timeout-acmonitor-timeout-dcdisk-timeout-acdisk-timeout-dcstandby-timeout-acstandby-timeout-dchibernate-timeout-achibernate-timeout-dc</strong></p></li>
-<li><p><em>&lt;VALUE&gt;</em> Specifies the new value, in minutes.</p></li>
+<li>
+<p><i>&lt;SETTING&gt;</i> Specifies one of the following options: <b>monitor-timeout-ac</b><b>monitor-timeout-dc</b><b>disk-timeout-ac</b><b>disk-timeout-dc</b><b>standby-timeout-ac</b><b>standby-timeout-dc</b><b>hibernate-timeout-ac</b><b>hibernate-timeout-dc</b></p>
+</li>
+<li>
+<p><i>&lt;VALUE&gt;</i> Specifies the new value, in minutes.</p>
+</li>
 </ul>
-<p>Examples:</p>
-<pre class="syntax" space="preserve"><code>POWERCFG /CHANGE monitor-timeout-ac 5</code></pre></td>
-</tr>
-<tr class="odd">
-<td><p><strong>/CHANGENAME</strong></p></td>
-<td><p><em>&lt;SCHEME_GUID&gt; &lt;NAME&gt;</em> [<em>&lt;DESCRIPTION&gt;</em>]</p></td>
-<td><p>Modifies the name of a power scheme and optionally its description.</p>
+<p>Examples: </p>
+<pre class="syntax" xml:space="preserve"><code>POWERCFG /CHANGE monitor-timeout-ac 5</code></pre>
+<p>&nbsp;</p>
+
+
+## /CHANGENAME
+
+<p>Modifies the name of a power scheme and optionally its description.</p>
+<p>Syntax: <i>&lt;SCHEME_GUID&gt; &lt;NAME&gt;</i> [<i>&lt;DESCRIPTION&gt;</i>]</p>
 <p>Arguments:</p>
 <ul>
-<li><p><em>&lt;SCHEME_GUID&gt;</em> Specifies a power scheme GUID. The <code>POWERCFG /LIST</code> command returns a power scheme GUID.</p></li>
-<li><p><em>&lt;NAME&gt;</em> Specifies the power scheme's new name.</p></li>
-<li><p><em>&lt;DESCRIPTION&gt;</em> Specifies the power scheme's new description. If no description is specified, only the name is changed.</p></li>
+<li>
+<p><i>&lt;SCHEME_GUID&gt;</i> Specifies a power scheme GUID. The <code>POWERCFG /LIST</code> command returns a power scheme GUID. </p>
+</li>
+<li>
+<p><i>&lt;NAME&gt;</i> Specifies the power scheme's new name.</p>
+</li>
+<li>
+<p><i>&lt;DESCRIPTION&gt;</i> Specifies the power scheme's new description. If no description is specified, only the name is changed.</p>
+</li>
 </ul>
 <p>Examples:</p>
-<pre class="syntax" space="preserve"><code>POWERCFG /CHANGENAME 381b4222-f694-41f0-9685-ff5bb260df2e &quot;Customized Balanced&quot;</code></pre></td>
-</tr>
-<tr class="even">
-<td><p><strong>/DUPLICATESCHEME</strong></p></td>
-<td><p><em>&lt;SCHEME_GUID&gt;</em> [<em>&lt;DESTINATION_GUID&gt;</em>]</p></td>
-<td><p>Duplicates the specified power scheme. The resulting GUID which represents the new scheme is displayed.</p>
+<pre class="syntax" xml:space="preserve"><code>POWERCFG /CHANGENAME 381b4222-f694-41f0-9685-ff5bb260df2e "Customized Balanced"</code></pre>
+<p>&nbsp;</p>
+
+
+## /DUPLICATESCHEME
+
+<p>Duplicates the specified power scheme. The resulting GUID which represents the new scheme is displayed.</p>
+<p>Syntax: <i>&lt;SCHEME_GUID&gt;</i> [<i>&lt;DESTINATION_GUID&gt;</i>]</p>
 <p>Arguments:</p>
 <ul>
-<li><p><em>&lt;SCHEME_GUID&gt;</em> Specifies a power scheme GUID. A power scheme GUID is returned from the <code>POWERCFG /LIST</code> command.</p></li>
-<li><p><em>&lt;DESTINATION_GUID&gt;</em> Specifies the new power scheme's GUID. If no GUID is specified, a new GUID is created.</p></li>
+<li>
+<p><i>&lt;SCHEME_GUID&gt;</i> Specifies a power scheme GUID. A power scheme GUID is returned from the <code>POWERCFG /LIST</code> command.</p>
+</li>
+<li>
+<p><i>&lt;DESTINATION_GUID&gt;</i> Specifies the new power scheme's GUID. If no GUID is specified, a new GUID is created.</p>
+</li>
 </ul>
 <p>Examples:</p>
-<pre class="syntax" space="preserve"><code>POWERCFG /DUPLICATESCHEME 381b4222-f694-41f0-9685-ff5bb260df2e</code></pre></td>
-</tr>
-<tr class="odd">
-<td><p><strong>/DELETE, /D</strong></p></td>
-<td><p><em>&lt;SCHEME_GUID&gt;</em></p></td>
-<td><p>Deletes the power scheme with the specified GUID.</p>
+<pre class="syntax" xml:space="preserve"><code>POWERCFG /DUPLICATESCHEME 381b4222-f694-41f0-9685-ff5bb260df2e</code></pre>
+<p>&nbsp;</p>
+
+
+## /DELETE, /D
+
+<p>Deletes the power scheme with the specified GUID.</p>
+<p>Syntax: <i>&lt;SCHEME_GUID&gt;</i></p>
+<p>Arguments: </p>
+<ul>
+<li>
+<p><i>&lt;SCHEME_GUID&gt;</i> Specifies a power scheme GUID. A power scheme GUID is returned from the <code>POWERCFG /LIST</code> command.</p>
+</li>
+</ul>
+<p>Examples:</p>
+<pre class="syntax" xml:space="preserve"><code>POWERCFG /DELETE 381b4222-f694-41f0-9685-ff5bb260df2e</code></pre>
+<p>&nbsp;</p>
+
+
+## /DELETESETTING
+
+<p>Deletes a power setting.</p>
+<p>Syntax: <i>&lt;SUB_GUID&gt; &lt;SETTING_GUID&gt;</i></p>
 <p>Arguments:</p>
 <ul>
-<li><p><em>&lt;SCHEME_GUID&gt;</em> Specifies a power scheme GUID. A power scheme GUID is returned from the <code>POWERCFG /LIST</code> command.</p></li>
+<li>
+<p><i>&lt;SUB_GUID&gt;</i> Specifies a power setting subgroup GUID. A power setting subgroup GUID is returned from the <code>POWERCFG /QUERY</code> command.</p>
+</li>
+<li>
+<p><i>&lt;SETTING_GUID&gt;</i> Specifies a power setting GUID. A power setting GUID is returned from the <code>POWERCFG /QUERY</code> command.</p>
+</li>
 </ul>
 <p>Examples:</p>
-<pre class="syntax" space="preserve"><code>POWERCFG /DELETE 381b4222-f694-41f0-9685-ff5bb260df2e</code></pre></td>
-</tr>
-<tr class="even">
-<td><p><strong>/DELETESETTING</strong></p></td>
-<td><p><em>&lt;SUB_GUID&gt; &lt;SETTING_GUID&gt;</em></p></td>
-<td><p>Deletes a power setting.</p>
+<pre class="syntax" xml:space="preserve"><code>POWERCFG /DELETESETTING 238c9fa8-0aad-41ed-83f4-97be242c8f20 29f6c1db-86da-48c5-9fdb-f2b67b1f44da</code></pre>
+<p>&nbsp;</p>
+
+
+## /SETACTIVE, /S
+
+<p>Makes the specified power scheme active on the system.</p>
+<p>Syntax: <i>&lt;SCHEME_GUID&gt;</i></p>
 <p>Arguments:</p>
 <ul>
-<li><p><em>&lt;SUB_GUID&gt;</em> Specifies a power setting subgroup GUID. A power setting subgroup GUID is returned from the <code>POWERCFG /QUERY</code> command.</p></li>
-<li><p><em>&lt;SETTING_GUID&gt;</em> Specifies a power setting GUID. A power setting GUID is returned from the <code>POWERCFG /QUERY</code> command.</p></li>
+<li>
+<p><i>&lt;SCHEME_GUID&gt;</i> Specifies a power scheme GUID. A power scheme GUID is returned from the <code>POWERCFG /LIST</code> command.</p>
+</li>
 </ul>
 <p>Examples:</p>
-<pre class="syntax" space="preserve"><code>POWERCFG /DELETESETTING 238c9fa8-0aad-41ed-83f4-97be242c8f20 29f6c1db-86da-48c5-9fdb-f2b67b1f44da</code></pre></td>
-</tr>
-<tr class="odd">
-<td><p><strong>/SETACTIVE, /S</strong></p></td>
-<td><p><em>&lt;SCHEME_GUID&gt;</em></p></td>
-<td><p>Makes the specified power scheme active on the system.</p>
-<p>Arguments:</p>
+<pre class="syntax" xml:space="preserve"><code>POWERCFG /SETACTIVE 381b4222-f694-41f0-9685-ff5bb260df2e</code></pre>
+<p>&nbsp;</p>
+
+
+## /GETACTIVESCHEME
+
+<p>Retrieves the currently active power scheme.</p>
+<p>Syntax:</p>
+<p>Examples:</p>
+<pre class="syntax" xml:space="preserve"><code>POWERCFG /GETACTIVESCHEME</code></pre>
+<p><b>/SETACVALUEINDEX</b></p>
+<p><i>&lt;SCHEME_GUID&gt; &lt;SUB_GUID&gt; &lt;SETTING_GUID&gt; &lt;SETTING_INDEX&gt;</i></p>
+<p>Sets the value associated with a specified power setting while the system is powered by AC power. </p>
+<p>Arguments: </p>
 <ul>
-<li><p><em>&lt;SCHEME_GUID&gt;</em> Specifies a power scheme GUID. A power scheme GUID is returned from the <code>POWERCFG /LIST</code> command.</p></li>
+<li>
+<p><i>&lt;SCHEME_GUID&gt;</i> Specifies a power scheme GUID. A power scheme GUID is returned from the <code>POWERCFG /LIST</code> command.</p>
+</li>
+<li>
+<p><i>&lt;SUB_GUID&gt;</i> Specifies a power setting subgroup GUID. A power setting subgroup GUID is returned from the <code>POWERCFG /QUERY</code> command.</p>
+</li>
+<li>
+<p><i>&lt;SETTING_GUID&gt;</i> Specifies a power setting GUID. A power setting GUID is returned from the <code>POWERCFG /QUERY</code> command.</p>
+</li>
+<li>
+<p><i>&lt;SETTING_INDEX&gt;</i> Specifies which possible value this setting is set to. A list of possible values is returned from the <code>POWERCFG /QUERY</code> command.</p>
+</li>
 </ul>
 <p>Examples:</p>
-<pre class="syntax" space="preserve"><code>POWERCFG /SETACTIVE 381b4222-f694-41f0-9685-ff5bb260df2e</code></pre></td>
-</tr>
-<tr class="even">
-<td><p><strong>/GETACTIVESCHEME</strong></p></td>
-<td><p></p></td>
-<td><p>Retrieves the currently active power scheme.</p>
-<p>Examples:</p>
-<pre class="syntax" space="preserve"><code>POWERCFG /GETACTIVESCHEME</code></pre></td>
-</tr>
-<tr class="odd">
-<td><p><strong>/SETACVALUEINDEX</strong></p></td>
-<td><p><em>&lt;SCHEME_GUID&gt; &lt;SUB_GUID&gt; &lt;SETTING_GUID&gt; &lt;SETTING_INDEX&gt;</em></p></td>
-<td><p>Sets the value associated with a specified power setting while the system is powered by AC power.</p>
-<p>Arguments:</p>
+<pre class="syntax" xml:space="preserve"><code>POWERCFG /SETACVALUEINDEX 381b4222-f694-41f0-9685-ff5bb260df2e 238c9fa8-0aad-41ed-83f4-97be242c8f20 29f6c1db-86da-48c5-9fdb-f2b67b1f44da 0</code></pre>
+<p>&nbsp;</p>
+
+
+## /SETDCVALUEINDEX
+
+<p>Sets the value associated with a specified power setting while the system is powered by DC power. </p>
+<p>Syntax: <i>&lt;SCHEME_GUID&gt; &lt;SUB_GUID&gt; &lt;SETTING_GUID&gt; &lt;SETTING_INDEX&gt;</i></p>
+<p>Arguments: </p>
 <ul>
-<li><p><em>&lt;SCHEME_GUID&gt;</em> Specifies a power scheme GUID. A power scheme GUID is returned from the <code>POWERCFG /LIST</code> command.</p></li>
-<li><p><em>&lt;SUB_GUID&gt;</em> Specifies a power setting subgroup GUID. A power setting subgroup GUID is returned from the <code>POWERCFG /QUERY</code> command.</p></li>
-<li><p><em>&lt;SETTING_GUID&gt;</em> Specifies a power setting GUID. A power setting GUID is returned from the <code>POWERCFG /QUERY</code> command.</p></li>
-<li><p><em>&lt;SETTING_INDEX&gt;</em> Specifies which possible value this setting is set to. A list of possible values is returned from the <code>POWERCFG /QUERY</code> command.</p></li>
+<li>
+<p><i>&lt;SCHEME_GUID&gt;</i> Specifies a power scheme GUID. A power scheme GUID is returned from the <code>POWERCFG /LIST</code> command.</p>
+</li>
+<li>
+<p><i>&lt;SUB_GUID&gt;</i> Specifies a power setting subgroup GUID. A power setting subgroup GUID is returned from the <code>POWERCFG /QUERY</code> command. </p>
+</li>
+<li>
+<p><i>&lt;SETTING_GUID&gt;</i> Specifies a power setting GUID. A power setting GUID is returned from the <code>POWERCFG /QUERY</code> command.</p>
+</li>
+<li>
+<p><i>&lt;SETTING_INDEX&gt;</i> Specifies which possible value this setting is set to. A list of possible values is returned from the <code>POWERCFG /QUERY</code> command.</p>
+</li>
 </ul>
 <p>Examples:</p>
-<pre class="syntax" space="preserve"><code>POWERCFG /SETACVALUEINDEX 381b4222-f694-41f0-9685-ff5bb260df2e 238c9fa8-0aad-41ed-83f4-97be242c8f20 29f6c1db-86da-48c5-9fdb-f2b67b1f44da 0</code></pre></td>
-</tr>
-<tr class="even">
-<td><p><strong>/SETDCVALUEINDEX</strong></p></td>
-<td><p><em>&lt;SCHEME_GUID&gt; &lt;SUB_GUID&gt; &lt;SETTING_GUID&gt; &lt;SETTING_INDEX&gt;</em></p></td>
-<td><p>Sets the value associated with a specified power setting while the system is powered by DC power.</p>
-<p>Arguments:</p>
+<pre class="syntax" xml:space="preserve"><code>POWERCFG /SETDCVALUEINDEX 381b4222-f694-41f0-9685-ff5bb260df2e 238c9fa8-0aad-41ed-83f4-97be242c8f20 29f6c1db-86da-48c5-9fdb-f2b67b1f44da 300</code></pre>
+<p>&nbsp;</p>
+
+
+## /IMPORT
+
+<p>Imports a power scheme from the specified file. </p>
+<p>Syntax: <i>&lt;FILENAME&gt;</i> [<i>&lt;GUID&gt;</i>]</p>
+<p>Arguments: </p>
 <ul>
-<li><p><em>&lt;SCHEME_GUID&gt;</em> Specifies a power scheme GUID. A power scheme GUID is returned from the <code>POWERCFG /LIST</code> command.</p></li>
-<li><p><em>&lt;SUB_GUID&gt;</em> Specifies a power setting subgroup GUID. A power setting subgroup GUID is returned from the <code>POWERCFG /QUERY</code> command.</p></li>
-<li><p><em>&lt;SETTING_GUID&gt;</em> Specifies a power setting GUID. A power setting GUID is returned from the <code>POWERCFG /QUERY</code> command.</p></li>
-<li><p><em>&lt;SETTING_INDEX&gt;</em> Specifies which possible value this setting is set to. A list of possible values is returned from the <code>POWERCFG /QUERY</code> command.</p></li>
+<li>
+<p><i>&lt;FILENAME&gt;</i> Specifies a fully-qualified path to a file generated by the <code>POWERCFG /EXPORT</code> command. </p>
+</li>
+<li>
+<p><i>&lt;GUID&gt;</i> Specifies the GUID for the imported scheme. If no GUID is specified, a new GUID is created.</p>
+</li>
 </ul>
 <p>Examples:</p>
-<pre class="syntax" space="preserve"><code>POWERCFG /SETDCVALUEINDEX 381b4222-f694-41f0-9685-ff5bb260df2e 238c9fa8-0aad-41ed-83f4-97be242c8f20 29f6c1db-86da-48c5-9fdb-f2b67b1f44da 300</code></pre></td>
-</tr>
-<tr class="odd">
-<td><p><strong>/IMPORT</strong></p></td>
-<td><p><em>&lt;FILENAME&gt;</em> [<em>&lt;GUID&gt;</em>]</p></td>
-<td><p>Imports a power scheme from the specified file.</p>
-<p>Arguments:</p>
+<pre class="syntax" xml:space="preserve"><code>POWERCFG /IMPORT c:\scheme.pow</code></pre>
+<p>&nbsp;</p>
+
+
+
+## /EXPORT
+
+<p>Exports a power scheme, represented by the specified GUID, to the specified file. </p>
+<p>Syntax: <i>&lt;FILENAME&gt; &lt;GUID&gt;</i></p>
+<p>Arguments: </p>
 <ul>
-<li><p><em>&lt;FILENAME&gt;</em> Specifies a fully-qualified path to a file generated by the <code>POWERCFG /EXPORT</code> command.</p></li>
-<li><p><em>&lt;GUID&gt;</em> Specifies the GUID for the imported scheme. If no GUID is specified, a new GUID is created.</p></li>
+<li>
+<p><i>&lt;FILENAME&gt;</i> Specifies a fully-qualified path to a destination file. </p>
+</li>
+<li>
+<p><i>&lt;GUID&gt;</i> Specifies a power scheme GUID. A power scheme GUID is returned from the <code>POWERCFG /LIST</code> command. </p>
+</li>
 </ul>
 <p>Examples:</p>
-<pre class="syntax" space="preserve"><code>POWERCFG /IMPORT c:\scheme.pow</code></pre></td>
-</tr>
-<tr class="even">
-<td><p><strong>/EXPORT</strong></p></td>
-<td><p><em>&lt;FILENAME&gt; &lt;GUID&gt;</em></p></td>
-<td><p>Exports a power scheme, represented by the specified GUID, to the specified file.</p>
-<p>Arguments:</p>
-<ul>
-<li><p><em>&lt;FILENAME&gt;</em> Specifies a fully-qualified path to a destination file.</p></li>
-<li><p><em>&lt;GUID&gt;</em> Specifies a power scheme GUID. A power scheme GUID is returned from the <code>POWERCFG /LIST</code> command.</p></li>
-</ul>
+<pre class="syntax" xml:space="preserve"><code>POWERCFG /EXPORT c:\scheme.pow 381b4222-f694-41f0-9685-ff5bb260df2e</code></pre>
+<p>&nbsp;</p>
+
+
+## /ALIASES
+
+<p>Displays a list of aliases and their corresponding GUIDs. These aliases may be used instead of a GUID in any command.</p>
 <p>Examples:</p>
-<pre class="syntax" space="preserve"><code>POWERCFG /EXPORT c:\scheme.pow 381b4222-f694-41f0-9685-ff5bb260df2e</code></pre></td>
-</tr>
-<tr class="odd">
-<td><p><strong>/ALIASES</strong></p></td>
-<td><p></p></td>
-<td><p>Displays a list of aliases and their corresponding GUIDs. These aliases may be used instead of a GUID in any command.</p>
-<p>Examples:</p>
-<pre class="syntax" space="preserve"><code>POWERCFG /ALIASES</code></pre>
-<div class="alert">
-<strong>Note</strong>  
-<p>Some settings do not contain aliases. For a full list of GUIDs, use <code>powercfg -q</code>.</p>
+<pre class="syntax" xml:space="preserve"><code>POWERCFG /ALIASES</code></pre>
+<div class="alert"><b>Note</b>  <p class="note">Some settings do not contain aliases. For a full list of GUIDs, use <code>powercfg -q</code>.</p>
 </div>
-<div>
- 
-</div></td>
-</tr>
-<tr class="even">
-<td><p><strong>/GETSECURITYDESCRIPTOR</strong></p></td>
-<td><p><em>&lt;GUID|ACTION&gt;</em></p></td>
-<td><p>Gets the security descriptor associated with the specified power setting, power scheme, or action.</p>
-<p>Arguments:</p>
+<p>&nbsp;</p>
+
+
+## /GETSECURITYDESCRIPTOR
+
+<p>Gets the security descriptor associated with the specified power setting, power scheme, or action.</p>
+<p>Syntax: <i>&lt;GUID|ACTION&gt;</i></p>
+<p>Arguments: </p>
 <ul>
-<li><p><em>&lt;GUID&gt;</em> Specifies a power scheme or a power setting GUID. A power scheme GUID is returned from the <code>POWERCFG /LIST</code> command. A power setting GUID is returned from the <code>POWERCFG /QUERY</code> command.</p></li>
-<li><p><em>&lt;ACTION&gt;</em> Specifies one of the following actions: <strong>ActionSetActive</strong>, <strong>ActionCreate</strong>, <strong>ActionDefault</strong>.</p></li>
+<li>
+<p><i>&lt;GUID&gt;</i> Specifies a power scheme or a power setting GUID. A power scheme GUID is returned from the <code>POWERCFG /LIST</code> command. A power setting GUID is returned from the <code>POWERCFG /QUERY</code> command. </p>
+</li>
+<li>
+<p><i>&lt;ACTION&gt;</i> Specifies one of the following actions: <b>ActionSetActive</b>, <b>ActionCreate</b>, <b>ActionDefault</b>.</p>
+</li>
 </ul>
 <p>Examples:</p>
-<pre class="syntax" space="preserve"><code>POWERCFG /GETSECURITYDESCRIPTOR 381b4222-f694-41f0-9685-ff5bb260df2e</code></pre>
-<pre class="syntax" space="preserve"><code>POWERCFG /GETSECURITYDESCRIPTOR ActionSetActive</code></pre></td>
-</tr>
-<tr class="odd">
-<td><p><strong>/SETSECURITYDESCRIPTOR</strong></p></td>
-<td><p><em>&lt;GUID|ACTION&gt; &lt;SDDL&gt;</em></p></td>
-<td><p>Sets a security descriptor associated with the specified power setting, power scheme, or action.</p>
-<p>Arguments:</p>
+<pre class="syntax" xml:space="preserve"><code>POWERCFG /GETSECURITYDESCRIPTOR 381b4222-f694-41f0-9685-ff5bb260df2e</code></pre>
+<pre class="syntax" xml:space="preserve"><code>POWERCFG /GETSECURITYDESCRIPTOR ActionSetActive</code></pre>
+<p>&nbsp;</p>
+
+
+
+## /SETSECURITYDESCRIPTOR
+
+<p>Sets a security descriptor associated with the specified power setting, power scheme, or action.</p>
+<p>Syntax: <i>&lt;GUID|ACTION&gt; &lt;SDDL&gt;</i></p>
+<p>Arguments: </p>
 <ul>
-<li><p><em>&lt;GUID&gt;</em> Specifies a power scheme or a power setting GUID. A power scheme GUID is returned from the <code>POWERCFG /LIST</code> command. A power setting GUID is returned from the <code>POWERCFG /QUERY</code> command.</p></li>
-<li><p><em>&lt;ACTION&gt;</em> Specifies one of the following actions: <strong>ActionSetActive</strong>, <strong>ActionCreate</strong>, <strong>ActionDefault</strong>.</p></li>
-<li><p><em>&lt;SDDL&gt;</em> Specifies a valid security descriptor string in SDDL format. An example SDDL string can be obtained from the <code>POWERCFG /GETSECURITYDESCRIPTOR</code> command.</p></li>
+<li>
+<p><i>&lt;GUID&gt;</i> Specifies a power scheme or a power setting GUID. A power scheme GUID is returned from the <code>POWERCFG /LIST</code> command. A power setting GUID is returned from the <code>POWERCFG /QUERY</code> command.</p>
+</li>
+<li>
+<p><i>&lt;ACTION&gt;</i> Specifies one of the following actions: <b>ActionSetActive</b>, <b>ActionCreate</b>, <b>ActionDefault</b>. </p>
+</li>
+<li>
+<p><i>&lt;SDDL&gt;</i> Specifies a valid security descriptor string in SDDL format. An example SDDL string can be obtained from the <code>POWERCFG /GETSECURITYDESCRIPTOR</code> command.</p>
+</li>
 </ul>
 <p>Examples:</p>
-<pre class="syntax" space="preserve"><code>POWERCFG /SETSECURITYDESCRIPTOR 381b4222-f694-41f0-9685-ff5bb260df2e O:BAG:SYD:P(A;CI;KRKW;;;BU)(A;CI;KA;;;BA)(A;CI;KA;;;SY)(A;CI;KA;;;CO)</code></pre>
-<pre class="syntax" space="preserve"><code>POWERCFG /SETSECURITYDESCRIPTOR ActionSetActive O:BAG:SYD:P(A;CI;KR;;;BU)(A;CI;KA;;;BA)(A;CI;KA;;;SY)(A;CI;KA;;;CO)</code></pre></td>
-</tr>
-<tr class="even">
-<td><p><strong>/HIBERNATE, /H</strong></p></td>
-<td><p>[<strong>ON</strong> | <strong>OFF</strong>]</p>
-<p>[<strong>/SIZE</strong> <em>&lt;PERCENT_SIZE&gt;</em>]</p>
-<p>[<strong>/TYPE</strong> <em>&lt;REDUCED | FULL&gt;</em>]</p></td>
-<td><p>Enables or disables the hibernate feature or sets the hiberfile size.</p>
-<p>Arguments:</p>
+<pre class="syntax" xml:space="preserve"><code>POWERCFG /SETSECURITYDESCRIPTOR 381b4222-f694-41f0-9685-ff5bb260df2e O:BAG:SYD:P(A;CI;KRKW;;;BU)(A;CI;KA;;;BA)(A;CI;KA;;;SY)(A;CI;KA;;;CO)</code></pre>
+<pre class="syntax" xml:space="preserve"><code>POWERCFG /SETSECURITYDESCRIPTOR ActionSetActive O:BAG:SYD:P(A;CI;KR;;;BU)(A;CI;KA;;;BA)(A;CI;KA;;;SY)(A;CI;KA;;;CO)</code></pre>
+<p>&nbsp;</p>
+
+
+
+## /HIBERNATE, /H
+
+<p>Enables or disables the hibernate feature or sets the hiberfile size.</p>
+<p>[<b>ON</b> | <b>OFF</b>]</p>
+<p>[<b>/SIZE </b><i>&lt;PERCENT_SIZE&gt;</i>]</p>
+<p>[<b>/TYPE </b><i>&lt;REDUCED | FULL&gt;</i>]</p>
+
+<p>Arguments: </p>
 <ul>
-<li><p><strong>ON</strong> Enables the hibernate feature.</p></li>
-<li><p><strong>OFF</strong> Disables the hibernate feature.</p></li>
-<li><p><strong>/SIZE</strong> <em>&lt;PERCENT_SIZE&gt;</em> Specifies the desired hiberfile size as a percentage of the total memory size. The default size cannot be smaller than 50. This parameter also causes hibernation to be enabled.</p></li>
-<li><p><strong>/TYPE</strong> <em>&lt;REDUCED | FULL&gt;</em> Specifies the desired hiberfile type. A reduced hiberfile only supports hiberboot.</p>
-<div class="alert">
-<strong>Note</strong>  
-<p>A hiberfile that has a custom default size, or HiberFileSizePercent &gt;= 40, is considered as a full hiberfile. To change the hiberfile type to reduced, the OS has to manage the default hiberfile size. To do this, run the following commands:</p>
-<p>POWERCFG /HIBERNATE /SIZE 0</p>
-<p>POWERCFG /HIBERNATE /TYPE REDUCED</p>
+<li>
+<p><b>ON</b> Enables the hibernate feature.</p>
+</li>
+<li>
+<p><b>OFF</b> Disables the hibernate feature.</p>
+</li>
+<li>
+<p><b>/SIZE </b><i>&lt;PERCENT_SIZE&gt;</i> Specifies the desired hiberfile size as a percentage of the total memory size. The default size cannot be smaller than 50. This parameter also causes hibernation to be enabled.</p>
+</li>
+<li>
+<p><b>/TYPE </b><i>&lt;REDUCED | FULL&gt;</i> Specifies the desired hiberfile type. A reduced hiberfile only supports hiberboot.</p>
+<div class="alert"><b>Note</b>  <p class="note">A hiberfile that has a custom default size, or HiberFileSizePercent &gt;= 40, is considered as a full hiberfile. To change the hiberfile type to reduced, the OS has to manage the default hiberfile size. To do this, run the following commands:</p>
+<p class="note">POWERCFG /HIBERNATE /SIZE 0</p>
+<p class="note">POWERCFG /HIBERNATE /TYPE REDUCED</p>
 </div>
-<div>
- 
-</div></li>
+</li>
 </ul>
 <p>Examples:</p>
-<pre class="syntax" space="preserve"><code>POWERCFG /HIBERNATE OFF</code></pre>
-<pre class="syntax" space="preserve"><code>POWERCFG /HIBERNATE /SIZE 100</code></pre>
-<pre class="syntax" space="preserve"><code>POWERCFG /HIBERNATE /TYPE REDUCED</code></pre></td>
-</tr>
-<tr class="odd">
-<td><p><strong>/AVAILABLESLEEPSTATES, /A</strong></p></td>
-<td><p></p></td>
-<td><p>Reports the sleep states available on the system. Attempts to report reasons why sleep states are unavailable.</p>
+<pre class="syntax" xml:space="preserve"><code>POWERCFG /HIBERNATE OFF</code></pre>
+<pre class="syntax" xml:space="preserve"><code>POWERCFG /HIBERNATE /SIZE 100</code></pre>
+<pre class="syntax" xml:space="preserve"><code>POWERCFG /HIBERNATE /TYPE REDUCED</code></pre>
+<p>&nbsp;</p>
+
+
+## /AVAILABLESLEEPSTATES, /A
+
+<p>Reports the sleep states available on the system. Attempts to report reasons why sleep states are unavailable.</p>
 <p>Examples:</p>
-<pre class="syntax" space="preserve"><code>POWERCFG /AVAILABLESLEEPSTATES</code></pre></td>
-</tr>
-<tr class="even">
-<td><p><strong>/DEVICEQUERY</strong></p></td>
-<td><p><em>&lt;QUERYFLAG&gt;</em></p></td>
-<td><p>Returns a list of devices that meet the specified criteria.</p>
+<pre class="syntax" xml:space="preserve"><code>POWERCFG /AVAILABLESLEEPSTATES</code></pre>
+<p>&nbsp;</p>
+
+
+## /DEVICEQUERY
+
+<p>Returns a list of devices that meet the specified criteria. </p>
+<p>Syntax: <i>&lt;QUERYFLAG&gt;</i></p>
+<p>Arguments: </p>
+<ul>
+<li>
+<p><i>&lt;QUERYFLAG&gt;</i> Specifies one of the following criteria: </p>
+<p><b>wake_from_S1_supported</b> Returns all devices that support waking the system from a light sleep state. </p>
+<p><b>wake_from_S2_supported</b> Returns all devices that support waking the system from a deeper sleep state. </p>
+<p><b>wake_from_S3_supported</b> Returns all devices that support waking the system from the deepest sleep state. </p>
+<p><b>wake_from_any</b> Returns all devices that support waking the system from any sleep state. </p>
+<p><b>S1_supported</b> Lists devices supporting light sleep. </p>
+<p><b>S2_supported</b> Lists devices supporting deeper sleep. </p>
+<p><b>S3_supported</b> Lists devices supporting deepest sleep. S4_supported List devices supporting hibernation. </p>
+<p><b>wake_programmable</b> Lists devices that are user-configurable to wake the system from a sleep state. </p>
+<p><b>wake_armed</b> Lists devices that are currently configured to wake the system from any sleep state. </p>
+<p><b>all_devices</b> Returns all devices present in the system. </p>
+</li>
+</ul>
+<p>Examples:</p>
+<pre class="syntax" xml:space="preserve"><code>POWERCFG /DEVICEQUERY wake_armed</code></pre>
+<p>&nbsp;</p>
+
+
+## /DEVICEENABLEWAKE
+
+<p>Enables the specified device to wake the system from a sleep state. </p>
+<p>Syntax: <i>&lt;DEVICENAME&gt;</i></p>
+<p>Arguments: </p>
+<ul>
+<li>
+<p>&lt;DEVICENAME&gt; Specifies a device. This device name may be retrieved using <code>POWERCFG /DEVICEQUERY wake_programmable</code>.</p>
+</li>
+</ul>
+<p>Examples:</p>
+<pre class="syntax" xml:space="preserve"><code>POWERCFG /DEVICEENABLEWAKE "Microsoft USB IntelliMouse Optical"</code></pre>
+<p>&nbsp;</p>
+
+
+## /DEVICEDISABLEWAKE
+
+<p>Disables the specified device from waking the system from a sleep state.</p>
+<p>Syntax: <i>&lt;DEVICENAME&gt;</i></p>
 <p>Arguments:</p>
 <ul>
-<li><p><em>&lt;QUERYFLAG&gt;</em> Specifies one of the following criteria:</p>
-<p><strong>wake_from_S1_supported</strong> Returns all devices that support waking the system from a light sleep state.</p>
-<p><strong>wake_from_S2_supported</strong> Returns all devices that support waking the system from a deeper sleep state.</p>
-<p><strong>wake_from_S3_supported</strong> Returns all devices that support waking the system from the deepest sleep state.</p>
-<p><strong>wake_from_any</strong> Returns all devices that support waking the system from any sleep state.</p>
-<p><strong>S1_supported</strong> Lists devices supporting light sleep.</p>
-<p><strong>S2_supported</strong> Lists devices supporting deeper sleep.</p>
-<p><strong>S3_supported</strong> Lists devices supporting deepest sleep. S4_supported List devices supporting hibernation.</p>
-<p><strong>wake_programmable</strong> Lists devices that are user-configurable to wake the system from a sleep state.</p>
-<p><strong>wake_armed</strong> Lists devices that are currently configured to wake the system from any sleep state.</p>
-<p><strong>all_devices</strong> Returns all devices present in the system.</p></li>
+<li>
+<p><i>&lt;DEVICENAME&gt;</i> Specifies a device. This device name may be retrieved using <code>POWERCFG /DEVICEQUERY wake_armed</code>.</p>
+</li>
 </ul>
 <p>Examples:</p>
-<pre class="syntax" space="preserve"><code>POWERCFG /DEVICEQUERY wake_armed</code></pre></td>
-</tr>
-<tr class="odd">
-<td><p><strong>/DEVICEENABLEWAKE</strong></p></td>
-<td><p><em>&lt;DEVICENAME&gt;</em></p></td>
-<td><p>Enables the specified device to wake the system from a sleep state.</p>
-<p>Arguments:</p>
+<pre class="syntax" xml:space="preserve"><code>POWERCFG /DEVICEDISABLEWAKE "Microsoft USB IntelliMouse Optical"</code></pre>
+<p>&nbsp;</p>
+
+
+## /LASTWAKE
+
+<p>Reports information about what woke the system from the last sleep transition.</p>
+<p>Examples:</p>
+<pre class="syntax" xml:space="preserve"><code>POWERCFG /LASTWAKE</code></pre>
+<p>&nbsp;</p>
+
+
+## /WAKETIMERS
+
+<p>Enumerates the active wake timers. If enabled, the expiration of a wake timer wakes the system from sleep and hibernate states.</p>
+<p>Examples:</p>
+<pre class="syntax" xml:space="preserve"><code>POWERCFG /WAKETIMERS</code></pre>
+<p>&nbsp;</p>
+
+
+## /REQUESTS
+
+<p>Enumerates application and driver Power Requests. Power Requests prevent the computer from automatically powering off the display or entering a low-power sleep mode. </p>
+<p>Examples:</p>
+<pre class="syntax" xml:space="preserve"><code>POWERCFG /REQUESTS</code></pre>
+<p>&nbsp;</p>
+
+
+## /REQUESTSOVERRIDE
+
+<p>Sets a Power Request override for a particular process, service, or driver. If no parameters are specified, this command displays the current list of Power Request overrides.</p>
+<p>Syntax: [<i>&lt;CALLER_TYPE&gt; &lt;NAME&gt; </i><i>&lt;REQUEST&gt;</i>]</p>
+<p>Arguments: </p>
 <ul>
-<li><p>&lt;DEVICENAME&gt; Specifies a device. This device name may be retrieved using <code>POWERCFG /DEVICEQUERY wake_programmable</code>.</p></li>
+<li>
+<p><i>&lt;CALLER_TYPE&gt;</i> Specifies one of the following caller types: <b>PROCESS</b>, <b>SERVICE</b>, <b>DRIVER</b>. This is obtained by calling the <code>POWERCFG /REQUESTS</code> command.</p>
+</li>
+<li>
+<p><i>&lt;NAME&gt;</i> Specifies the caller name. This is the name returned from calling the <code>POWERCFG /REQUESTS</code> command. </p>
+</li>
+<li>
+<p><i>&lt;REQUEST&gt;</i> Specifies one or more of the following Power Request types: <b>DISPLAY</b>, <b>SYSTEM</b>, <b>AWAYMODE</b>.</p>
+</li>
 </ul>
 <p>Examples:</p>
-<pre class="syntax" space="preserve"><code>POWERCFG /DEVICEENABLEWAKE &quot;Microsoft USB IntelliMouse Optical&quot;</code></pre></td>
-</tr>
-<tr class="even">
-<td><p><strong>/DEVICEDISABLEWAKE</strong></p></td>
-<td><p><em>&lt;DEVICENAME&gt;</em></p></td>
-<td><p>Disables the specified device from waking the system from a sleep state.</p>
-<p>Arguments:</p>
-<ul>
-<li><p><em>&lt;DEVICENAME&gt;</em> Specifies a device. This device name may be retrieved using <code>POWERCFG /DEVICEQUERY wake_armed</code>.</p></li>
-</ul>
-<p>Examples:</p>
-<pre class="syntax" space="preserve"><code>POWERCFG /DEVICEDISABLEWAKE &quot;Microsoft USB IntelliMouse Optical&quot;</code></pre></td>
-</tr>
-<tr class="odd">
-<td><p><strong>/LASTWAKE</strong></p></td>
-<td><p></p></td>
-<td><p>Reports information about what woke the system from the last sleep transition.</p>
-<p>Examples:</p>
-<pre class="syntax" space="preserve"><code>POWERCFG /LASTWAKE</code></pre></td>
-</tr>
-<tr class="even">
-<td><p><strong>/WAKETIMERS</strong></p></td>
-<td><p></p></td>
-<td><p>Enumerates the active wake timers. If enabled, the expiration of a wake timer wakes the system from sleep and hibernate states.</p>
-<p>Examples:</p>
-<pre class="syntax" space="preserve"><code>POWERCFG /WAKETIMERS</code></pre></td>
-</tr>
-<tr class="odd">
-<td><p><strong>/REQUESTS</strong></p></td>
-<td><p></p></td>
-<td><p>Enumerates application and driver Power Requests. Power Requests prevent the computer from automatically powering off the display or entering a low-power sleep mode.</p>
-<p>Examples:</p>
-<pre class="syntax" space="preserve"><code>POWERCFG /REQUESTS</code></pre></td>
-</tr>
-<tr class="even">
-<td><p><strong>/REQUESTSOVERRIDE</strong></p></td>
-<td><p>[<em>&lt;CALLER_TYPE&gt; &lt;NAME&gt;</em> <em>&lt;REQUEST&gt;</em>]</p></td>
-<td><p>Sets a Power Request override for a particular process, service, or driver. If no parameters are specified, this command displays the current list of Power Request overrides.</p>
-<p>Arguments:</p>
-<ul>
-<li><p><em>&lt;CALLER_TYPE&gt;</em> Specifies one of the following caller types: <strong>PROCESS</strong>, <strong>SERVICE</strong>, <strong>DRIVER</strong>. This is obtained by calling the <code>POWERCFG /REQUESTS</code> command.</p></li>
-<li><p><em>&lt;NAME&gt;</em> Specifies the caller name. This is the name returned from calling the <code>POWERCFG /REQUESTS</code> command.</p></li>
-<li><p><em>&lt;REQUEST&gt;</em> Specifies one or more of the following Power Request types: <strong>DISPLAY</strong>, <strong>SYSTEM</strong>, <strong>AWAYMODE</strong>.</p></li>
-</ul>
-<p>Examples:</p>
-<pre class="syntax" space="preserve"><code>POWERCFG /REQUESTSOVERRIDE PROCESS wmplayer.exe DISPLAY SYSTEM</code></pre></td>
-</tr>
-<tr class="odd">
-<td><p><strong>/ENERGY</strong></p></td>
-<td><p>[<strong>/OUTPUT</strong> <em>&lt;FILENAME&gt;</em>] [<strong>/XML</strong>] [<strong>/DURATION</strong> <em>&lt;SECONDS&gt;</em>]</p>
+<pre class="syntax" xml:space="preserve"><code>POWERCFG /REQUESTSOVERRIDE PROCESS wmplayer.exe DISPLAY SYSTEM</code></pre>
+<p>&nbsp;</p>
+
+
+## /ENERGY
+
+<p>Analyzes the system for common energy-efficiency and battery-life problems. The ENERGY command should be used when the computer is idle and has no open programs or documents. The ENERGY command generates an HTML report file in the current path.</p>
+<p>[<b>/OUTPUT </b><i>&lt;FILENAME&gt;</i>] [<b>/XML</b>] [<b>/DURATION </b><i>&lt;SECONDS&gt;</i>]</p>
 <p>or</p>
-<p><strong>/TRACE</strong> [<strong>/D</strong> <em>&lt;FILEPATH&gt;</em>] [<strong>/XML</strong>] [<strong>/DURATION</strong> <em>&lt;SECONDS&gt;</em>]</p></td>
-<td><p>Analyzes the system for common energy-efficiency and battery-life problems. The ENERGY command should be used when the computer is idle and has no open programs or documents. The ENERGY command generates an HTML report file in the current path.</p>
-<p>Arguments:</p>
+<p><b>/TRACE</b> [<b>/D </b><i>&lt;FILEPATH&gt;</i>] [<b>/XML</b>] [<b>/DURATION </b><i>&lt;SECONDS&gt;</i>]</p>
+<p>Arguments: </p>
 <ul>
-<li><p><strong>/OUTPUT</strong> <em>&lt;FILENAME&gt;</em> Specify the path and file name to store the energy report HTML or XML file.</p></li>
-<li><p><strong>/XML</strong> Formats the report file as XML.</p></li>
-<li><p><strong>/DURATION</strong> <em>&lt;SECONDS&gt;</em> Specifies the number of seconds to observe system behavior. Default is 60 seconds.</p></li>
-<li><p><strong>/TRACE</strong> Records system behavior and does not perform analysis. Trace files are generated in the current path unless the <strong>/D</strong> parameter is specified.</p></li>
-<li><p><strong>/D</strong> <em>&lt;FILEPATH&gt;</em> Specify the directory to store trace data. May only be used with the <strong>/TRACE</strong> parameter.</p></li>
+<li>
+<p><b>/OUTPUT</b><i>&lt;FILENAME&gt;</i> Specify the path and file name to store the energy report HTML or XML file.</p>
+</li>
+<li>
+<p><b>/XML</b> Formats the report file as XML.</p>
+</li>
+<li>
+<p><b>/DURATION </b><i>&lt;SECONDS&gt;</i> Specifies the number of seconds to observe system behavior. Default is 60 seconds.</p>
+</li>
+<li>
+<p><b>/TRACE</b> Records system behavior and does not perform analysis. Trace files are generated in the current path unless the <b>/D</b> parameter is specified. </p>
+</li>
+<li>
+<p><b>/D</b><i>&lt;FILEPATH&gt;</i> Specify the directory to store trace data. May only be used with the <b>/TRACE</b> parameter.</p>
+</li>
 </ul>
 <p>Examples:</p>
-<pre class="syntax" space="preserve"><code>POWERCFG /ENERGY</code></pre>
-<pre class="syntax" space="preserve"><code>POWERCFG /ENERGY /OUTPUT &quot;longtrace.html&quot; /DURATION 120</code></pre></td>
-</tr>
-<tr class="even">
-<td><p><strong>/BATTERYREPORT</strong></p></td>
-<td><p>[<strong>/OUTPUT</strong> <em>&lt;FILENAME&gt;</em>] [<strong>/XML</strong>]</p>
-<p>[<strong>/DURATION</strong> <em>&lt;DAYS&gt;</em>]</p></td>
-<td><p>Generates a report of battery usage characteristics over the lifetime of the system. The <strong>/BATTERYREPORT</strong> command will generate an HTML report file in the current path.</p>
-<p>Arguments:</p>
+<pre class="syntax" xml:space="preserve"><code>POWERCFG /ENERGY</code></pre>
+<pre class="syntax" xml:space="preserve"><code>POWERCFG /ENERGY /OUTPUT "longtrace.html" /DURATION 120</code></pre>
+<p>&nbsp;</p>
+
+
+## /BATTERYREPORT
+
+<p>Generates a report of battery usage characteristics over the lifetime of the system. The <b>/BATTERYREPORT</b> command will generate an HTML report file in the current path.</p>
+<p>[<b>/OUTPUT </b><i>&lt;FILENAME&gt;</i>] [<b>/XML</b>] </p>
+<p>[<b>/DURATION </b><i>&lt;DAYS&gt;</i>]</p>
+<p>Arguments: </p>
 <ul>
-<li><p><strong>/OUTPUT</strong> <em>&lt;FILENAME&gt;</em> Specify the path and file name to store the battery report HTML.</p></li>
-<li><p><strong>/OUTPUT</strong> <em>&lt;FILENAME&gt;</em><strong>/XML</strong> Formats the battery report file as XML.</p></li>
-<li><p><strong>/DURATION</strong> <em>&lt;DAYS&gt;</em> Specifies the number of days to analyze for the report.</p></li>
+<li>
+<p><b>/OUTPUT </b><i>&lt;FILENAME&gt; </i> Specify the path and file name to store the battery report HTML.</p>
+</li>
+<li>
+<p><b>/OUTPUT </b><i>&lt;FILENAME&gt;</i><b>/XML </b> Formats the battery  report file as XML.</p>
+</li>
+<li>
+<p><b>/DURATION </b><i>&lt;DAYS&gt; </i> Specifies the number of days to analyze for the report.</p>
+</li>
 </ul>
 <p>Examples:</p>
-<pre class="syntax" space="preserve"><code>POWERCFG /BATTERYREPORT /OUTPUT &quot;batteryreport.html&quot;</code></pre>
-<pre class="syntax" space="preserve"><code>POWERCFG /BATTERYREPORT /DURATION 4</code></pre></td>
-</tr>
-<tr class="odd">
-<td><p><strong>/SLEEPSTUDY</strong></p></td>
-<td><p>[<strong>/OUTPUT</strong> <em>&lt;FILENAME&gt;</em>] [<strong>/XML</strong>]</p>
-<p>[<strong>/DURATION</strong> <em>&lt;DAYS&gt;</em>]</p>
-<p>[<strong>/TRANSFORMXML</strong> <em>&lt;FILENAME.XML&gt;</em>] [<strong>/OUTPUT</strong> <em>&lt;FILENAME.HTML&gt;</em>]</p></td>
-<td><p>Generates a diagnostic report of modern standby quality over the last three days on the system. The <strong>/SLEEPSTUDY</strong> command will generate an HTML report file in the current path.</p>
-<p>Arguments:</p>
+<pre class="syntax" xml:space="preserve"><code>POWERCFG /BATTERYREPORT /OUTPUT "batteryreport.html"</code></pre>
+<pre class="syntax" xml:space="preserve"><code>POWERCFG /BATTERYREPORT /DURATION 4</code></pre>
+<p>&nbsp;</p>
+
+
+## /SLEEPSTUDY
+
+<p>Generates a diagnostic report of modern standby quality over the last three days on the system. The <b>/SLEEPSTUDY</b> command will generate an HTML report file in the current path.</p>
+<p>[<b>/OUTPUT </b><i>&lt;FILENAME&gt;</i>] [<b>/XML</b>] </p>
+<p>[<b>/DURATION </b><i>&lt;DAYS&gt;</i>]</p>
+<p>[<b>/TRANSFORMXML </b><i>&lt;FILENAME.XML&gt;</i>] [<b>/OUTPUT </b><i>&lt;FILENAME.HTML&gt;</i>]</p>
+<p>Arguments: </p>
 <ul>
-<li><p><strong>/OUTPUT</strong> <em>&lt;FILENAME&gt;</em> Specify the path and file name to store the Sleepstudy report HTML.</p></li>
-<li><p><strong>/OUTPUT</strong> <em>&lt;FILENAME&gt;</em><strong>/XML</strong> Formats the Sleepstudy report file as XML.</p></li>
-<li><p><strong>/DURATION</strong> <em>&lt;DAYS&gt;</em> Specifies the number of days to analyze for the report.</p></li>
-<li><p><strong>/TRANSFORMXML</strong> <em>&lt;FILENAME.XML&gt;</em> <strong>/OUTPUT</strong> <em>&lt;FILENAME.HTML&gt;</em> Transforms the Sleepstudy report from XML to HTML.</p></li>
+<li>
+<p><b>/OUTPUT </b><i>&lt;FILENAME&gt; </i> Specify the path and file name to store the Sleepstudy report HTML.</p>
+</li>
+<li>
+<p><b>/OUTPUT </b><i>&lt;FILENAME&gt;</i><b>/XML </b> Formats the Sleepstudy  report file as XML.</p>
+</li>
+<li>
+<p><b>/DURATION </b><i>&lt;DAYS&gt; </i> Specifies the number of days to analyze for the report.</p>
+</li>
+<li>
+<p><b>/TRANSFORMXML </b><i>&lt;FILENAME.XML&gt; </i><b>/OUTPUT </b><i>&lt;FILENAME.HTML&gt; </i> Transforms the Sleepstudy report from XML to HTML.</p>
+</li>
 </ul>
 <p>Examples:</p>
-<pre class="syntax" space="preserve"><code>POWERCFG /SLEEPSTUDY /OUTPUT &quot;sleepstudy.html&quot;</code></pre>
-<pre class="syntax" space="preserve"><code>POWERCFG /SLEEPSTUDY /DURATION 7</code></pre></td>
-</tr>
-<tr class="even">
-<td><p><strong>/SRUMUTIL</strong></p></td>
-<td><p>[<strong>/OUTPUT</strong> <em>&lt;FILENAME&gt;</em>] [<strong>/XML</strong>] [<strong>/CSV</strong>]</p></td>
-<td><p>Enumerates the entire Energy Estimation data from the System Resource Usage Monitor (SRUM) in an XML or CSV file.</p>
-<p>Arguments:</p>
+<pre class="syntax" xml:space="preserve"><code>POWERCFG /SLEEPSTUDY /OUTPUT "sleepstudy.html"</code></pre>
+<pre class="syntax" xml:space="preserve"><code>POWERCFG /SLEEPSTUDY /DURATION 7</code></pre>
+<p>&nbsp;</p>
+
+
+## /SRUMUTIL
+
+<p>Enumerates the entire Energy Estimation data from the System Resource Usage Monitor (SRUM) in an XML or CSV file.</p>
+<p>Syntax: [<b>/OUTPUT </b><i>&lt;FILENAME&gt;</i>] [<b>/XML</b>] [<b>/CSV</b>] </p>
+<p>Arguments: </p>
 <ul>
-<li><p><strong>/OUTPUT</strong> <em>&lt;FILENAME&gt;</em> Specify the path and file name to store the SRUM data.</p></li>
-<li><p><strong>/OUTPUT</strong> <em>&lt;FILENAME&gt;</em><strong>/XML</strong> Formats the file as XML.</p></li>
-<li><p><strong>/OUTPUT</strong> <em>&lt;FILENAME&gt;</em><strong>/CSV</strong> Formats the file as CSV.</p></li>
+<li>
+<p><b>/OUTPUT</b><i>&lt;FILENAME&gt; </i> Specify the path and file name to store the SRUM data.</p>
+</li>
+<li>
+<p><b>/OUTPUT</b><i>&lt;FILENAME&gt;</i><b>/XML </b> Formats the file as XML.</p>
+</li>
+<li>
+<p><b>/OUTPUT</b><i>&lt;FILENAME&gt;</i><b>/CSV </b> Formats the file as CSV.</p>
+</li>
 </ul>
 <p>Examples:</p>
-<pre class="syntax" space="preserve"><code>POWERCFG /BATTERYREPORT /OUTPUT &quot;srumreport.xml&quot; /XML</code></pre></td>
-</tr>
-</tbody>
-</table>
-
- 
-
- 
-
- 
+<pre class="syntax" xml:space="preserve"><code>POWERCFG /BATTERYREPORT /OUTPUT "srumreport.xml" /XML</code></pre>
+<p>&nbsp;</p>
 
 
-
-
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [p_weg_hardware\p_weg_hardware]:%20Powercfg command-line options%20 RELEASE:%20(10/3/2016)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+</div>
+<p style="text-align:left;font-family:Arial,sanserif;font-size:100%;color:black">
+&#x00a9;&#x00a0;2016 Microsoft. All rights reserved.</p>
 
 
