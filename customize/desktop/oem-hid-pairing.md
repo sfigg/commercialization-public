@@ -34,18 +34,18 @@ On PCs that ship with an unpaired wireless mouse and keyboard, the HID pairing s
 
 To provide a thorough, reliable, and satisfactory HID pairing experience, OEMs who ship these systems must include the following Oobe.xml settings:
 
-| Oobe.xml setting        | Description                                                       |
-|:------------------------|:------------------------------------------------------------------|
-| \u000b<mouseImagePath\u000b>         | The path to a mouse pairing instruction image. The three steps customers typically perform are inserting batteries into the mouse, turning on the power, and turning on Bluetooth.                    |
-| <mouseErrorImagePath>    | The path to a mouse pairing error image. If the customer can't pair the mouse in three tries, this error screen appears.                                                                                  |
-| <keyboardImagePath>      | The path to a keyboard pairing instruction image. The first three steps customers typically perform are inserting batteries into the keyboard, turning on power, and turning on Bluetooth. You can include these steps in the first image. Usually the second set of steps customers need to perform are entering a password or code and pressing Enter. |
-| <keyboardPINImagePath>   | The path to a keyboard pairing instruction image.                       |
-| <keyboardErrorImagePath> | The path to a keyboard pairing error image. If the customer can't pair the keyboard in five tries, this error screen appears. This should tell the customer to connect a wired keyboard.                  |
-| <mouseText>              | Help text that displays at the bottom of the page.                      |
-| <mouseErrorText>         | Error that displays to users along with mouse pairing error image.      |
-| <keyboardErrorText>      | Error that displays to users along with keyboard pairing error image.   |
-| <keyboardText>           | Specifies the text to prompt the user to pair the keyboard.             |
-| <keyboardPINText>        | Specifies the prompt text for the user to enter a pin for the keyboard. |
+| Oobe.xml setting          | Description                                                       |
+|:--------------------------|:------------------------------------------------------------------|
+| \<mouseImagePath>         | The path to a mouse pairing instruction image. The three steps customers typically perform are inserting batteries into the mouse, turning on the power, and turning on Bluetooth.                                                                             |
+| \<mouseErrorImagePath>    | The path to a mouse pairing error image. If the customer can't pair the mouse in three tries, this error screen appears.    |
+| \<keyboardImagePath>      | The path to a keyboard pairing instruction image. The first three steps customers typically perform are inserting batteries into the keyboard, turning on power, and turning on Bluetooth. You can include these steps in the first image. Usually the second set of steps customers need to perform are entering a password or code and pressing Enter.                                                                                                |
+| \<keyboardPINImagePath>   | The path to a keyboard pairing instruction image.                       |
+| \<keyboardErrorImagePath> | The path to a keyboard pairing error image. If the customer can't pair the keyboard in five tries, this error screen appears. This should tell the customer to connect a wired keyboard.                                                                          |
+| \<mouseText>              | Help text that displays at the bottom of the page.                      |
+| \<mouseErrorText>         | Error that displays to users along with mouse pairing error image.      |
+| \<keyboardErrorText>      | Error that displays to users along with keyboard pairing error image.   |
+| \<keyboardText>           | Specifies the text to prompt the user to pair the keyboard.             |
+| \<keyboardPINText>        | Specifies the prompt text for the user to enter a pin for the keyboard. |
 
 Any text in the Oobe.xml file or files — for example, any text in the `<mouseText>` setting — is the text read by the Narrator, so make sure the text is clear, concise, and easy to understand. Cortana shares duties with Narrator, so that Cortana speaks the UI display text and Narrator speaks the instructional text.
 
