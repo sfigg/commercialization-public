@@ -1,6 +1,6 @@
 ---
 title: OEM HID pairing
-description: Customize the Windows Out of Box experience
+description: Add setup support for unpaired mouse and keyboard to OOBE
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
@@ -36,19 +36,16 @@ To provide a thorough, reliable, and satisfactory HID pairing experience, OEMs w
 
 | Oobe.xml setting        | Description                                                       |
 |:------------------------|:------------------------------------------------------------------|
-| `<mouseImagePath>`         | The path to a mouse pairing instruction image. The three steps customers typically perform are inserting batteries into the mouse, turning on the power, and turning on Bluetooth.                    |
-| `<mouseErrorImagePath>`    | The path to a mouse pairing error image. If the customer can't pair the mouse in three tries, this error screen appears.                                                                                  |
-| `<keyboardImagePath>`      | The path to a keyboard pairing instruction image. The first three steps customers typically perform are inserting batteries into the keyboard, turning on power, and turning on Bluetooth. You can include these steps in the first image. Usually the second set of steps customers need to perform are entering a password or code and pressing Enter. |
-| `<keyboardPINImagePath>`   | The path to a keyboard pairing instruction image.                       |
-| `<keyboardErrorImagePath>` | The path to a keyboard pairing error image. If the customer can't pair the keyboard in five tries, this error screen appears. This should tell the customer to connect a wired keyboard.                  |
-| `<mouseText>`              | Help text that displays at the bottom of the page.                      |
-| `<mouseErrorText>`         | Error that displays to users along with mouse pairing error image.      |
-| `<keyboardErrorText>`      | Error that displays to users along with keyboard pairing error image.   |
-| `<keyboardText>`           | Specifies the text to prompt the user to pair the keyboard.             |
-| `<keyboardPINText>`        | Specifies the prompt text for the user to enter a pin for the keyboard. |
-
-> [!Note]
-> Images must not be larger than 630 x 372 pixels. Images are scaled to fit in portrait mode or on small form factors.
+| <mouseImagePath>         | The path to a mouse pairing instruction image. The three steps customers typically perform are inserting batteries into the mouse, turning on the power, and turning on Bluetooth.                    |
+| <mouseErrorImagePath>    | The path to a mouse pairing error image. If the customer can't pair the mouse in three tries, this error screen appears.                                                                                  |
+| <keyboardImagePath>      | The path to a keyboard pairing instruction image. The first three steps customers typically perform are inserting batteries into the keyboard, turning on power, and turning on Bluetooth. You can include these steps in the first image. Usually the second set of steps customers need to perform are entering a password or code and pressing Enter. |
+| <keyboardPINImagePath>   | The path to a keyboard pairing instruction image.                       |
+| <keyboardErrorImagePath> | The path to a keyboard pairing error image. If the customer can't pair the keyboard in five tries, this error screen appears. This should tell the customer to connect a wired keyboard.                  |
+| <mouseText>              | Help text that displays at the bottom of the page.                      |
+| <mouseErrorText>         | Error that displays to users along with mouse pairing error image.      |
+| <keyboardErrorText>      | Error that displays to users along with keyboard pairing error image.   |
+| <keyboardText>           | Specifies the text to prompt the user to pair the keyboard.             |
+| <keyboardPINText>        | Specifies the prompt text for the user to enter a pin for the keyboard. |
 
 Any text in the Oobe.xml file or files — for example, any text in the `<mouseText>` setting — is the text read by the Narrator, so make sure the text is clear, concise, and easy to understand. Cortana shares duties with Narrator, so that Cortana speaks the UI display text and Narrator speaks the instructional text.
 
@@ -60,33 +57,36 @@ We recommend that you use photorealistic images of the HID devices that ship wit
 
 Generic images decrease confidence and increase confusion for customers, who want images on the screen to match the devices they're trying to use. Also, include visual instructions for the actions customers must take to pair their new hardware. For example, if the first step is to insert batteries into the device, include an image of batteries near the device.
 
+> [!Note]
+> Images must not be larger than 630 x 372 pixels. Images are scaled to fit in portrait mode or on small form factors.
+
 ## HID pairing example illustrations
 
 These illustrations are examples of how HID pairing instructions might look:
 
 ### Example 1: Image for mouse pairing
 
-![Pairing images for mouse](/images/hid-pairing-mouse1)
+![Pairing images for mouse](images/hid-pairing-mouse1.png)
 
 ### Example 2: Image for mouse pairing
 
-![Pairing images for mouse](/images/hid-pairing-mouse2)
+![Pairing images for mouse](images/hid-pairing-mouse2.png)
 
 ### Example 3: Image for mouse pairing
 
-![Pairing images for mouse](/images/hid-pairing-mouse3)
+![Pairing images for mouse](images/hid-pairing-mouse3.png)
 
 ### Example 4: Image for keyboard pairing
 
-![Pairing images for keyboard](/images/hid-pairing-keyboard1)
+![Pairing images for keyboard](images/hid-pairing-keyboard1.jpg)
 
 ### Example 5: Image for keyboard pairing
 
-![Pairing images for keyboard](/images/hid-pairing-keyboard2)
+![Pairing images for keyboard](images/hid-pairing-keyboard2.jpg)
 
 ### Example 6: Image for keyboard pairing
 
-![Pairing images for keyboard](/images/hid-pairing-keyboard3)
+![Pairing images for keyboard](images/hid-pairing-keyboard3.jpg)
 
 ## XML example
 
