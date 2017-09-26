@@ -1,9 +1,6 @@
 ---
 title: Windows Defender Credential Guard hardware requirements
 description: Provides guidance on what an OEM should do to enable Windows Defender Credential Guard
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.author: dawnwood
 ms.date: 10/05/2017
 ms.topic: article
@@ -23,21 +20,18 @@ When Windows Defender Credential Guard is enabled, Kerberos does not allow uncon
 
 For a better understanding of what Windows Defender Credential Guard is and what attacks it protects againt, see [Deep Dive into Credential Guard](https://mva.microsoft.com/en-us/training-courses/deep-dive-into-credential-guard-16651).
 
-**IT Professionals:** To learn how to deploy Windows Defender Credential Guard in your enterprise, see [Protect derived domain credentials with Credential Guard](https://docs.microsoft.com/en-us/windows/access-protection/credential-guard/credential-guard#hardware-and-software-requirements).
-
-
+**IT Professionals:** To learn how to deploy Windows Defender Credential Guard in your enterprise, see [Protect derived domain credentials with Credential Guard](https://docs.microsoft.com/en-us/windows/access-protection/credential-guard/credential-guard#hardware-and-software-requirements)
 
 For a device to support Windows Defender Credential Guard as specified in the Windows Hardware Compatibility Requirements (WHCR), you as the OEM must provide the following hardware, software, or firmware features. 
 
-
-
 | Requirement | Details |
 |----------------------|---------|
-| Virtualization-based security (VBS) | Windows Defender Credential Guard requires VBS. You can learn more about VBS by reading [Virtualization-based Security (VBS) hardware requirements](https://review.docs.microsoft.com/en-us/windows-hardware/design/device-experiences/oem-vbs?branch=dawn-security-toc). |
-| Secure Boot | Hardware-based Secure Boot must be supported. To learn more, see [Secure Boot](OEM-secure-boot.md)| 
-| Trusted Platform Module (TPM) 2.0 | TPM 2.0 provides protection for VBS encryption keys that are stored in the firmware. Windows Defender Credential Guard data is protected against attacks involving a physically present user with BIOS and hardware access. For more information, see [Trusted Platform Module 2.0](OEM-TPM.md).|
-| Secure Memory Overwrite Request (MOR) revision 2 | A secure MOR bit prevents certain memory attacks that Windows Defender Credential Guard requires. For more information, see [Secure MOR implementation](https://docs.microsoft.com/en-us/windows-hardware/drivers/bringup/device-guard-requirements). |
-
+| Secure Boot | Hardware-based Secure Boot must be supported. To learn more, see [Secure Boot](OEM-secure-boot.md). | 
+| Secure Boot configuration and management | <ul><li>The OEM has to be able to add ISV, OEM, or Enterprise Certificate in Secure Boot DB at manufacturing time. </li><li>Microsoft UEFI CA must be removed from Secure Boot DB. Support for 3rd-party UEFI modules is permitted but should leverage ISV-provided certificates or OEM certificate for the specific UEFI software.</li></ul> |
+| Secure firmware update process | Like UEFI software, UEFI firmware can have security vulnerabilities. It is essential to have the capability to immediately patch such vulnerabilities when found through firmware updates. UEFI firmware must support secure firmware update following Hardware Compatibility Specification for Systems for Windows 10 under [System.Fundamentals.Firmware.UEFISecureBoot](https://docs.microsoft.com/en-us/windows-hardware/design/compatibility/systems#systemfundamentalsfirmwareuefisecureboot).|
+| Trusted Platform Module (TPM) 2.0 | To learn more about TPM, see [Trusted Platform Module](OEM-TPM).|
+| United Extensible Firmware Interface (UEFI) | To lern more, see [United Extensible Firmware Interface (UEFI) firmware requirements](OEM-UEFI.md). |
+| Virtualization-based security (VBS) | Device Guard requires VBS. You can learn more about VBS by reading [Virtualization-based Security (VBS)](OEM-VBS.md). |
 
 ## Windows Defender Device Guard and Credential Guard Readiness Tool
 
