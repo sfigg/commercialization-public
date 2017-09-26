@@ -36,7 +36,7 @@ To provide a thorough, reliable, and satisfactory HID pairing experience, OEMs w
 
 | Oobe.xml setting        | Description                                                       |
 |:------------------------|:------------------------------------------------------------------|
-| <mouseImagePath>         | The path to a mouse pairing instruction image. The three steps customers typically perform are inserting batteries into the mouse, turning on the power, and turning on Bluetooth.                    |
+| \u000b<mouseImagePath\u000b>         | The path to a mouse pairing instruction image. The three steps customers typically perform are inserting batteries into the mouse, turning on the power, and turning on Bluetooth.                    |
 | <mouseErrorImagePath>    | The path to a mouse pairing error image. If the customer can't pair the mouse in three tries, this error screen appears.                                                                                  |
 | <keyboardImagePath>      | The path to a keyboard pairing instruction image. The first three steps customers typically perform are inserting batteries into the keyboard, turning on power, and turning on Bluetooth. You can include these steps in the first image. Usually the second set of steps customers need to perform are entering a password or code and pressing Enter. |
 | <keyboardPINImagePath>   | The path to a keyboard pairing instruction image.                       |
@@ -60,31 +60,13 @@ Generic images decrease confidence and increase confusion for customers, who wan
 > [!Note]
 > Images must not be larger than 630 x 372 pixels. Images are scaled to fit in portrait mode or on small form factors.
 
-## HID pairing example illustrations
-
 These illustrations are examples of how HID pairing instructions might look:
 
 ### Example 1: Image for mouse pairing
 
 ![Pairing images for mouse](images/hid-pairing-mouse1.png)
 
-### Example 2: Image for mouse pairing
-
-![Pairing images for mouse](images/hid-pairing-mouse2.png)
-
-### Example 3: Image for mouse pairing
-
-![Pairing images for mouse](images/hid-pairing-mouse3.png)
-
-### Example 4: Image for keyboard pairing
-
-![Pairing images for keyboard](images/hid-pairing-keyboard1.jpg)
-
-### Example 5: Image for keyboard pairing
-
-![Pairing images for keyboard](images/hid-pairing-keyboard2.jpg)
-
-### Example 6: Image for keyboard pairing
+### Example 2: Image for keyboard pairing
 
 ![Pairing images for keyboard](images/hid-pairing-keyboard3.jpg)
 

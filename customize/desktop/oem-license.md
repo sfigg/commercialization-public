@@ -17,18 +17,18 @@ You can add your OEM license terms to the License Terms screen in the first-run 
 
 To add your license terms:
 
-1. Create a version of your EULA in RTF (.rtf).
-1. Create a version of your End User License Agreement (EULA) in HTML (.html). Files with an .htm extension are ignored. All HTML files in OOBE must use UTF-8 encoding. See [EULA example](#eula-example) for an example.
-1. The names of your EULAs should be identical, except for the extension (.rtf and .html).
-1. Place both versions in the `Windows\System32\Oobe\Info` directory, or in subdirectories that you create per the country or region and languages of the image you're shipping. For more information on how to configure subdirectories for multi-language and region deployments, see [How OOBE.xml works](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/how-oobexml-works).
-1. The `<eulafilename>`setting in Oobe.xml. The setting value is the absolute path to the .rtf EULA file. You do not need to include the .html path in your Oobe.xml file. The system will correctly handle both files because they have the same name and are stored in the same location. See [Oobe.xml Settings](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/oobexml-settings) for more information on this setting.
+1. Create a version of your End User License Agreement (EULA) in RTF (.rtf).
+1. Create a version of your EULA in HTML (.html). Files with an .htm extension are ignored. All HTML files in OOBE must use UTF-8 encoding. See [HTML EULA example](#eula-example) for an example.
+1. The names of your EULA files should be identical, except for the extension (.rtf and .html).
+1. Place both versions of your EULA in the `Windows\System32\Oobe\Info` directory, or in subdirectories that you create per the country or region and languages of the image you're shipping. For more information on how to configure subdirectories for multi-language and region deployments, see [How OOBE.xml works](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/how-oobexml-works).
+1. In your Oobe.xml file, set the `<eulafilename>` value to the absolute path of your RTF EULA. You do not need to include the path to the HTML EULA in Oobe.xml. The system will correctly handle both files as long as they have the same name and are stored in the same location. See [Oobe.xml Settings](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/oobexml-settings) for more information on this setting.
 
 > [!Important]
 > Do not add links to your EULA, as the user should not navigate away from the license terms.
 
 You must include a version of the EULA in each language that you preinstall onto the PC. If you don't include terms for a specific language, an English (EN) version of the license terms displays. The terms must be specific to each language, but they don't need to be specific to each country or region that uses the language. Although the acceptance of the terms isn't recorded, customers can’t proceed unless they accept them.
 
-## <a name="eula-example"></a>EULA HTML example
+## <a name="eula-example"></a>HTML EULA example
 
 ```html
 <!DOCTYPE html>
