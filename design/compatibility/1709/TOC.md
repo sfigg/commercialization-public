@@ -1,4 +1,4 @@
-# [Windows Hardware Compatibility Program for Windows 10, version 1703](index.md)
+# [Windows Hardware Compatibility Program for Windows 10, version 1709](index.md)
 ## [Devices](device.md)
 ### [Device.Audio](device-audio.md)
 ### [Device.BusController.Bluetooth](device-buscontroller-bluetooth.md)
