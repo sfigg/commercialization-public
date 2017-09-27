@@ -16,9 +16,9 @@ ms.technology: windows-oem
 ## Overview
 Packages are the logical building blocks used to create IoT Core images.
 
-*  **Everything you add is packaged**. Every driver, library, registry setting, system file, and customization that you add to the device is included in a package. The contents and location of each item are listed in a package definition file (*.wm.xml).
-*  **Packages are signed**. Every customization on your device is trackable to a package with a signature. Only you and partners that you trust can update the packages.
-*  **Packages are versioned for easier updates**.
+*  **Everything you add is packaged**. Every driver, library, registry setting, system file, and customization that you add to the device is included in a package. The contents and location of each item are listed in a package definition file (*.wm.xml). 
+*  **Packages can be updated by trusted partners**. Every package on your device is signed by you or a trusted partner. This allows OEMs, ODMs, developers, and Microsoft work together to help deliver security and feature updates to your devices without stomping on each other's work. 
+*  **Packages are versioned**. This helps make updates easier and makes system restores more reliable.
 
 ![A sample package file (sample_pkg.cab) includes a package definition file, package contents like apps, drivers, and files, plus a signature file and a version number](images/OEMPackages.png)
 
@@ -33,7 +33,7 @@ Packages fall into three main categories:
 The Windows Universal OEM packaging standard uses a new schema that's compatible with more types of devices. If you've built packages using the legacy packaging standard (pkg.xml), and you'd like to use them on IoT devices, you'll need to [convert the packages](#convert_packages).
 
 ## Create a package project with no content
-A package generally starts with a Windows Manifest package definition file (*.wm.xml) with no content. The following is an example of an empty package definition file.
+To prepare to define a package, you can start with an empty package definition file (also called a Windows Manifest file, or *.wm.xml).
 
 >[!IMPORTANT]
 > The package definition file must use the "wm.xml" extension.
@@ -51,7 +51,7 @@ A package generally starts with a Windows Manifest package definition file (*.wm
 </identity>
 ```
 
-If you run the package generator (pkggen.exe) against this empty package definition file, it creates an empty package file (*.cab).
+If you run the package generator (pkggen.exe) against this empty package definition file, it creates an empty package file (*.cab). This requires the [Windows Assessment and Deployment Kit for Windows 10, version 1709](https://go.microsoft.com/fwlink/?linkid=859206).
 
 ```
 c:\oemsample>pkggen myPackage.wm.xml /universalbsp
@@ -147,7 +147,6 @@ update.cat
 update.mum
 ```
 
-<!--
 ## Add a language-specific content to a package
 
 In the preceding example, all the files and registry values are language neutral. You can use the package project XML file to add language-related files and registry values to a package. Special flags are used to notify the package generator of language-specific content. The following XML example demonstrates how to designate language-specific content.
@@ -184,7 +183,6 @@ Directory of c:\oemsample
 04/04/2017  10:17 PM             8,750 OEM-Media-MediaService.Resources_Lang_en-us.cab
 04/04/2017  10:17 PM             8,752 OEM-Media-MediaService.Resources_Lang_fr-fr.cab
 ```
--->
 
 ## Add a driver component
 
@@ -210,6 +208,7 @@ If the default file import path is not equal to the INF source path, you can use
 
 If files to be imported are not relative to how they are defined in the INF, file overrides can be applied. This is not recommended, but is available for special cases.
 
+```xml
 <syntaxhighlight lang="xml">
   <drivers>
     <driver>
@@ -221,6 +220,7 @@ If files to be imported are not relative to how they are defined in the INF, fil
     </driver>
   </drivers>
 </syntaxhighlight>
+```
 
 ## Add a service component
 In the package definition file, use the **service** element (and its child elements and attributes) to define and package a system service.
@@ -242,10 +242,68 @@ In the package definition file, use the **service** element (and its child eleme
       >
 ```
 
-<!--
-Removed - see original wiki
--->
-<!-- 
+
+## Add BCD Settings
+
+If you wish to make changes to the BCD settings, you'll need to update 2 files:
+* **bcdsettings.xml** - This file will contain the declarations for BCD settings.
+* **bcdsettings.wm.xml** - This file is the manifest that will consume the bcdsettings.xml
+
+The following example shows how to enable test signing: 
+
+**bcdsettings.xml** 
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<BootConfigurationDatabase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/phone/2011/10/BootConfiguration">
+  <Objects>
+
+    <!--  Allow Test Signing Certificate -->
+    <Object SaveKeyToRegistry="false">
+      <FriendlyName>Global Settings Group</FriendlyName>
+      <Elements>
+        <Element>
+          <DataType>
+            <WellKnownType>Allow Pre-release Signatures</WellKnownType>
+          </DataType>
+          <ValueType>
+            <BooleanValue>true</BooleanValue>
+          </ValueType>
+        </Element>
+      </Elements>
+    </Object>
+
+    <Object SaveKeyToRegistry="false">
+      <FriendlyName>Windows Boot Manager</FriendlyName>
+      <Elements>
+        <Element>
+          <DataType>
+            <WellKnownType>Allow Pre-release Signatures</WellKnownType>
+          </DataType>
+          <ValueType>
+            <BooleanValue>true</BooleanValue>
+          </ValueType>
+        </Element>
+      </Elements>
+    </Object>
+
+  </Objects>
+</BootConfigurationDatabase>
+```
+
+**bcdsettings.wm.xml** 
+  <?xml version='1.0' encoding='utf-8' standalone='yes'?>
+  <identity
+    xmlns="urn:Microsoft.CompPlat/ManifestSchema.v1.00"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    owner="OEM"
+    name="BcdOEMPackageName"
+    namespace="OEMName"
+    >
+    <onecorePackageInfo targetPartition="EFIESP" releaseType="Test" />
+    <bcdStore source=".\bcdsettings.xml" buildFilter="not build.isWow"/>
+  </identity>
+
 ## COM Registration
 
 COM servers and class definitions should be registered using COM elements.
@@ -265,11 +323,13 @@ COM servers and class definitions should be registered using COM elements.
     </servers>
   </COM>
 ```
--->
+
 
 ## Project scope macros
 
-Package projects can use macros to simplify the XML creation process. Some macros are already globally defined, in which case they can't be changed or modified, but you can also define local macros for use within your own package definition file. This local macro definition is embedded in the specific package project file through the macros element. The following example demonstrates creating a local macro for use in a package definition file.
+Package projects can use macros to simplify the XML creation process. Some macros are already globally defined, in which case they can't be changed or modified, but you can also define local macros for use within your own package definition file. This local macro definition is embedded in the specific package project file through the macros element. 
+
+The following example demonstrates creating a local macro for use in a package definition file, and then calling the macro when later defining a registry key.
 
 ```xml
   <macros>
@@ -279,7 +339,7 @@ Package projects can use macros to simplify the XML creation process. Some macro
         />
   </macros>
   <regKeys>
-    <regKey keyName="$(hklm.software)\OEMName\MediaService">
+    <regKey keyName="$(hklm.software)\OEMName\$(ServiceName)">
       <regValue
           name="StringValue"
           type="REG_SZ"
