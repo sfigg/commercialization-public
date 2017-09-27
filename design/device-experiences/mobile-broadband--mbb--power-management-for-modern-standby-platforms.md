@@ -64,7 +64,6 @@ The following table compares the five power-management modes.
 <th bgcolor="EEEEEE">USB device power state (Dx)</th>
 <th bgcolor="EEEEEE">Average power consumption</th>
 <th bgcolor="EEEEEE">Exit latency to active</th>
-<th bgcolor="EEEEEE">Transition mechanism</th>
 </tr>
 <tbody>
 <tr class="odd">
@@ -73,7 +72,6 @@ The following table compares the five power-management modes.
 <td><p>On</p></td>
 <td><p>D0</p></td>
 <td><p>Scenario-specific</p></td>
-<td><p>N/A</p></td>
 <td><p>N/A</p></td>
 </tr>
 <tr class="even">
@@ -84,7 +82,6 @@ The following table compares the five power-management modes.
 <td><p>D2 (selective suspend)</p></td>
 <td><p>&lt;= 15 milliwatts (device-specific)</p></td>
 <td><p>USB D2 -&gt; D0 &lt;= 400 milliseconds (USB specification)</p></td>
-<td><p>Initiated over USB bus by in-box MBB class driver.</p></td>
 </tr>
 <tr class="odd">
 <td><p>Radio-off</p></td>
@@ -93,7 +90,6 @@ The following table compares the five power-management modes.
 <td><p>D2 (selective suspend)</p></td>
 <td><p>&lt;= 5 milliwatts</p></td>
 <td><p>USB D2 -&gt; D0 &lt; 400 milliseconds + Base station acquisition and registration (specific to location and carrier)</p></td>
-<td><p>Initiated over USB bus by in-box MBB class driver.</p></td>
 </tr>
 <tr class="even">
 <td><p>No-subscription</p></td>
@@ -102,7 +98,6 @@ The following table compares the five power-management modes.
 <td><p>D2 or D3</p></td>
 <td><p>&lt;= 3 milliwatts</p></td>
 <td><p>N/A</p></td>
-<td><p>Initiated over USB bus by in-box MBB class driver.</p></td>
 </tr>
 <tr class="odd">
 <td><p>No-SIM</p></td>
@@ -111,7 +106,6 @@ The following table compares the five power-management modes.
 <td><p>D2 or D3</p></td>
 <td><p>&lt;= 3 milliwatts</p></td>
 <td><p>N/A</p></td>
-<td><p>Initiated over USB bus by in-box MBB class driver.</p></td>
 </tr>
 </tbody>
 </table>
