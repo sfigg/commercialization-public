@@ -35,7 +35,7 @@ After you install the Windows Hardware Lab Kit (Windows HLK) on the HLK Controll
         ```
 
         >[!NOTE]
-        > For more information on HLK mobile testing tools and utilities, see the following topic: [HLK Mobile Testing Tools and Utilities](p_hlk.hlk_mobile_testing_tools_and_utilities)
+        > For more information on HLK mobile testing tools and utilities, see the following topic: [HLK Mobile Testing Tools and Utilities](../user/hlk-mobile-testing-tools-and-utilities.md)
 
          
 
@@ -147,7 +147,7 @@ After you install the Windows Hardware Lab Kit (Windows HLK) on the HLK Controll
      
 
     >[!NOTE]
-    >  For more information on HLK mobile testing tools and utilities, see the following topic: [HLK Mobile Testing Tools and Utilities](../user/hlk_mobile_testing_tools_and_utilities.md)
+    >  For more information on HLK mobile testing tools and utilities, see the following topic: [HLK Mobile Testing Tools and Utilities](../user/hlk-mobile-testing-tools-and-utilities.md)
 
      
 
