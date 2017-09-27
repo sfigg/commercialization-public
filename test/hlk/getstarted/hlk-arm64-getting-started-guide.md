@@ -10,14 +10,14 @@ ms.assetid: 57E7C933-FD93-4254-A65A-DA47D2BFE4C6
 # HLK ARM64 Getting Started Guide
 
 
-Setup and testing for ARM64 desktop machines largely follows the guidelines found in the [HLK Getting Started Guide](hlk_getting_started_guide.md). Instructions specific to ARM64 are described in this topic.
+Setup and testing for ARM64 desktop machines largely follows the guidelines found in the [HLK Getting Started Guide](hlk-getting-started-guide.md). Instructions specific to ARM64 are described in this topic.
 
-This topic provides a basic introduction to using the Windows Hardware Lab Kit (HLK). Once you are familiar with the tools and process, you can review the [HLK User's Guide](../user/windows_hardware_lab_kit_user_s_guide.md) for additional information.
+This topic provides a basic introduction to using the Windows Hardware Lab Kit (HLK). Once you are familiar with the tools and process, you can review the [HLK User's Guide](../user/windows-hardware-lab-kit-user-s-guide.md) for additional information.
 
 ## <span id="Windows_HLK_Prerequisites"></span><span id="windows_hlk_prerequisites"></span><span id="WINDOWS_HLK_PREREQUISITES"></span>Windows HLK Prerequisites
 
 
-Prerequisites are the same for all desktop machines. See the [HLK Prerequisites](windows_hlk_prerequisites.md) topic for more information.
+Prerequisites are the same for all desktop machines. See the [HLK Prerequisites](windows-hlk-prerequisites.md) topic for more information.
 
 ## <span id="Step_1__Install_Controller_and_Studio_on_the_test_server"></span><span id="step_1__install_controller_and_studio_on_the_test_server"></span><span id="STEP_1__INSTALL_CONTROLLER_AND_STUDIO_ON_THE_TEST_SERVER"></span>Step 1: Install Controller and Studio on the test server
 
@@ -240,7 +240,7 @@ A progress bar appears. A slight delay occurs when you run a test.
 
 As tests complete, the results are displayed in the Status column. A green checkmark means that it passed, while a red X means that it failed. The pane on the right displays project summary information, including target(s) selected, operating systems being tested, product types you qualify for, and status of all tests.
 
-To learn more about the different options on this page, see [HLK Studio - Tests Tab](../user/hlk_studio___tests_tab.md).
+To learn more about the different options on this page, see [HLK Studio - Tests Tab](../user/hlk-studio---tests-tab.md).
 
 ## <span id="Step_7__View_test_results_and_log_files"></span><span id="step_7__view_test_results_and_log_files"></span><span id="STEP_7__VIEW_TEST_RESULTS_AND_LOG_FILES"></span>Step 7: View test results and log files
 
@@ -248,7 +248,7 @@ To learn more about the different options on this page, see [HLK Studio - Tests 
 x86/x64 instructions: [Step 7: View test results and log files](step-7-view-test-results-and-log-files.md)
 
 >[!NOTE]
->  Due to ARM64 Desktop having scenarios that involve multiple projects, it will be required that these projects be merged to have a complete HLK package for submitting. For information on merging packages, see [Merge packages](../user/merge_packages.md).
+>  Due to ARM64 Desktop having scenarios that involve multiple projects, it will be required that these projects be merged to have a complete HLK package for submitting. For information on merging packages, see [Merge packages](../user/merge-packages.md).
 
  
 
