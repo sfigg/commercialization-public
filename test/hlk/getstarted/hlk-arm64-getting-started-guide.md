@@ -10,14 +10,14 @@ ms.assetid: 57E7C933-FD93-4254-A65A-DA47D2BFE4C6
 # HLK ARM64 Getting Started Guide
 
 
-Setup and testing for ARM64 desktop machines largely follows the guidelines found in the [HLK Getting Started Guide](p_sxs_hlk.hlk_getting_started_guide). Instructions specific to ARM64 are described in this topic.
+Setup and testing for ARM64 desktop machines largely follows the guidelines found in the [HLK Getting Started Guide](hlk_getting_started_guide.md). Instructions specific to ARM64 are described in this topic.
 
-This topic provides a basic introduction to using the Windows Hardware Lab Kit (HLK). Once you are familiar with the tools and process, you can review the [HLK User's Guide](p_hlk.windows_hardware_lab_kit_user_s_guide) for additional information.
+This topic provides a basic introduction to using the Windows Hardware Lab Kit (HLK). Once you are familiar with the tools and process, you can review the [HLK User's Guide](../user/windows_hardware_lab_kit_user_s_guide.md) for additional information.
 
 ## <span id="Windows_HLK_Prerequisites"></span><span id="windows_hlk_prerequisites"></span><span id="WINDOWS_HLK_PREREQUISITES"></span>Windows HLK Prerequisites
 
 
-Prerequisites are the same for all desktop machines. See the [HLK Prerequisites](p_sxs_hlk.p_sxs_hlk.windows_hlk_prerequisites) topic for more information.
+Prerequisites are the same for all desktop machines. See the [HLK Prerequisites](getstarted/windows_hlk_prerequisites.md) topic for more information.
 
 ## <span id="Step_1__Install_Controller_and_Studio_on_the_test_server"></span><span id="step_1__install_controller_and_studio_on_the_test_server"></span><span id="STEP_1__INSTALL_CONTROLLER_AND_STUDIO_ON_THE_TEST_SERVER"></span>Step 1: Install Controller and Studio on the test server
 
@@ -41,17 +41,20 @@ ARM64 desktop testing requires the client systems to be setup differently than t
 
  
 
-**Note**  The mode required may change with new releases of the kit.
+>[!NOTE]  
+> The mode required may change with new releases of the kit.
 
  
 
 Once the mode for testing is identified the following instructions will walk you through client setup.
 
-**Warning**  If you are testing software, be sure to install the product on the test system first, and then install the HLK Client software.
+>[!WARNING]
+>  If you are testing software, be sure to install the product on the test system first, and then install the HLK Client software.
 
  
 
-**Note**  It is recommended that the client system is on A/C (plugged in) and that the Power Options are set to **Never** for **Put the computer to sleep** settings.
+>[NOTE!] 
+> It is recommended that the client system is on A/C (plugged in) and that the Power Options are set to **Never** for **Put the computer to sleep** settings.
 
  
 
@@ -67,33 +70,34 @@ Once the mode for testing is identified the following instructions will walk you
 
     For ARM64 Desktop client systems, depending on the mode needed choose the appropriate install method.
 
-    **Note**  Because of the dual-mode nature of ARM64, a best practice is to use two (2) clients, one in native mode and one in emulated mode per the instructions below.
+    >[!NOTE]  
+    >Because of the dual-mode nature of ARM64, a best practice is to use two (2) clients, one in native mode and one in emulated mode per the instructions below.
+    >
+    >**Native Mode:**
+    >
+    >On the test system, run the following:
+    >
+    >``` syntax
+    >\\<controllername>\HLKInstall\CoreSystemClient\InstallWTTClient
+    >```
+    >
+    >**Emulated x86 Mode:**
+    >
+    >On the test system, start a command prompt with administrator privileges, and run the following:
+    >
+    >``` syntax
+    >\\<controllername>\HLKInstall\CoreSystemClient\InstallWTTClient UseEmulationForTestContent
+    >```
 
-     
-
-    **Native Mode:**
-
-    On the test system, run the following:
-
-    ``` syntax
-    \\<controllername>\HLKInstall\CoreSystemClient\InstallWTTClient
-    ```
-
-    **Emulated x86 Mode:**
-
-    On the test system, start a command prompt with administrator privileges, and run the following:
-
-    ``` syntax
-    \\<controllername>\HLKInstall\CoreSystemClient\InstallWTTClient UseEmulationForTestContent
-    ```
-
-    **Note**  Replace &lt;ControllerName&gt; with the name of the test server.
+    >[!NOTE]  
+    >Replace &lt;ControllerName&gt; with the name of the test server.
 
      
 
 2.  The Windows Hardware Lab Kit Client Setup wizard appears. To start the wizard, choose **Next**.
 3.  On the Internet Connection Firewall Agreement page, select **Yes I will allow a port to be opened**, and then choose **Next**.
-    **Note**  If the Internet Connection Firewall Agreement page doesn't appear, either Windows Firewall isn't installed, or another software firewall or hardware firewall is installed on the computer. If another firewall is installed, you must manually open TCP port 1771 to proceed with installation. Refer to the instructions that came with your firewall product to manually open a TCP port. If you continue without opening port 1771, the installation may fail or the Client software might not function properly.
+    >[!NOTE]   
+    >If the Internet Connection Firewall Agreement page doesn't appear, either Windows Firewall isn't installed, or another software firewall or hardware firewall is installed on the computer. If another firewall is installed, you must manually open TCP port 1771 to proceed with installation. Refer to the instructions that came with your firewall product to manually open a TCP port. If you continue without opening port 1771, the installation may fail or the Client software might not function properly.
 
      
 
@@ -119,7 +123,8 @@ After you setup your test server and clients, you're ready to create a project. 
 
 You can create large projects that represent a wide range of scenarios. You can also create several smaller projects and merge the results into one package.
 
-**Note**  For ARM64 Desktop testing, you might need to create multiple projects to form a complete submission package based on the scenario under test. See [Step 2: Install Client on the test system(s)](#step-2) for scenario explanation. For Scenarios that require both Native and Emulated x86 mode, each mode will need its own project with the appropriate client systems.
+>[!NOTE]  
+> For ARM64 Desktop testing, you might need to create multiple projects to form a complete submission package based on the scenario under test. See [Step 2: Install Client on the test system(s)](#step-2) for scenario explanation. For Scenarios that require both Native and Emulated x86 mode, each mode will need its own project with the appropriate client systems.
 
  
 
@@ -133,7 +138,8 @@ The following image shows the Studio **Project** tab.
 
 1.  In Windows HLK Studio, choose the **Project** tab, and then choose **Create project**.
 2.  Replace the default project name with the name of your project, and then press Enter.
-    **Note**  A project should have a meaningful name that indicates its contents, for example, **Fabrikam Multi-function Device Model Z**.
+    >[!NOTE]  
+    > A project should have a meaningful name that indicates its contents, for example, **Fabrikam Multi-function Device Model Z**.
 
      
 
@@ -159,14 +165,16 @@ The **Tests** tab displays all of the tests that are associated with the feature
     -   Manufacturing
     -   Support
 
-    **Note**  In the HLK, test categories replace the level classifications previously used with the HCK. The HLK can be used throughout the product life cycle to test and measure quality at each stage of development.
+    >[!NOTE]  
+    > In the HLK, test categories replace the level classifications previously used with the HCK. The HLK can be used throughout the product life cycle to test and measure quality at each stage of development.
 
      
 
 -   Status
 -   Test Name
 -   Type (manual, non-distributed, special configuration, multiple machine)
-    **Note**  You can hover over the test type icons with your mouse for more information about the test types.
+    >[!NOTE]  
+    > You can hover over the test type icons with your mouse for more information about the test types.
 
      
 
@@ -174,11 +182,13 @@ The **Tests** tab displays all of the tests that are associated with the feature
 -   Target
 -   Machine(s)
 
-**Note**  Manual tests that require user input can interrupt the test process. We recommend that you run manual tests separately from automated tests.
+>[!NOTE] 
+>  Manual tests that require user input can interrupt the test process. We recommend that you run manual tests separately from automated tests.
 
  
 
-**Note**  Some tests require additional input before running. Windows HLK Studio prompts you for more info as needed.
+>[!NOTE] 
+>  Some tests require additional input before running. Windows HLK Studio prompts you for more info as needed.
 
  
 
@@ -202,11 +212,12 @@ Test results against all playlists for a specific target are kept until the targ
 
 You can save an existing collection of tests as a playlist by choosing Save Selected as Playlist.
 
-**Important**  When using an official playlist, you must use the version of the playlist that matches the version of the kit you are using. For example, if using version 1607 of the HLK, you must also use version 1607 of the playlist.
+>[!IMPORTANT]   When using an official playlist, you must use the version of the playlist that matches the version of the kit you are using. For example, if using version 1607 of the HLK, you must also use version 1607 of the playlist.
 
  
 
-**Note**  ARM64 Desktop testing: During product development there will be two playlists, one for tests that run in **Native mode** and one for test that run in **Emulated x86** mode. Ensure that the appropriate playlist is being applied to the project that has client which match the mode intended for testing.
+>[!NOTE] 
+> ARM64 Desktop testing: During product development there will be two playlists, one for tests that run in **Native mode** and one for test that run in **Emulated x86** mode. Ensure that the appropriate playlist is being applied to the project that has client which match the mode intended for testing.
 
  
 
@@ -224,20 +235,21 @@ If any additional input is needed, Windows HLK Studio will prompt you.
 
 A progress bar appears. A slight delay occurs when you run a test.
 
-**Note**  To learn more about any test, select the test from the list, and press F1 key, or right-click, and select **Test Description**. To cancel any running test, right-click it and select **Cancel**.
+>[!NOTE] 
+> To learn more about any test, select the test from the list, and press F1 key, or right-click, and select **Test Description**. To cancel any running test, right-click it and select **Cancel**.
 
  
 
 As tests complete, the results are displayed in the Status column. A green checkmark means that it passed, while a red X means that it failed. The pane on the right displays project summary information, including target(s) selected, operating systems being tested, product types you qualify for, and status of all tests.
 
-To learn more about the different options on this page, see [HLK Studio - Tests Tab](p_hlk.hlk_studio___tests_tab).
+To learn more about the different options on this page, see [HLK Studio - Tests Tab](../user/hlk_studio___tests_tab.md).
 
 ## <span id="Step_7__View_test_results_and_log_files"></span><span id="step_7__view_test_results_and_log_files"></span><span id="STEP_7__VIEW_TEST_RESULTS_AND_LOG_FILES"></span>Step 7: View test results and log files
 
 
 x86/x64 instructions: [Step 7: View test results and log files](step-7-view-test-results-and-log-files.md)
 
-**Note**  Due to ARM64 Desktop having scenarios that involve multiple projects, it will be required that these projects be merged to have a complete HLK package for submitting. For information on merging packages, see [Merge packages](p_hlk.merge_packages).
+**Note**  Due to ARM64 Desktop having scenarios that involve multiple projects, it will be required that these projects be merged to have a complete HLK package for submitting. For information on merging packages, see [Merge packages](../user/merge_packages.md).
 
  
 
@@ -245,12 +257,6 @@ x86/x64 instructions: [Step 7: View test results and log files](step-7-view-test
 
 
 Once any merging is complete, submitting packages is the same for all desktop machines. See [Step 8: Create a submission package](step-8-create-a-submission-package.md) topic for more information.
-
- 
-
- 
-
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_sxs_hlk\p_sxs_hlk%5D:%20HLK%20ARM64%20Getting%20Started%20Guide%20%20RELEASE:%20%289/27/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default.aspx. "Send comments about this topic to Microsoft")
 
 
 
