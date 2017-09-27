@@ -48,12 +48,10 @@ ARM64 desktop testing requires the client systems to be setup differently than t
 
 Once the mode for testing is identified the following instructions will walk you through client setup.
 
->[!WARNING]
+> [!WARNING]
 >  If you are testing software, be sure to install the product on the test system first, and then install the HLK Client software.
 
- 
-
->[NOTE!] 
+> [!NOTE] 
 > It is recommended that the client system is on A/C (plugged in) and that the Power Options are set to **Never** for **Put the computer to sleep** settings.
 
  
@@ -72,27 +70,25 @@ Once the mode for testing is identified the following instructions will walk you
 
     >[!NOTE]  
     >Because of the dual-mode nature of ARM64, a best practice is to use two (2) clients, one in native mode and one in emulated mode per the instructions below.
-    >
-    >**Native Mode:**
-    >
-    >On the test system, run the following:
-    >
-    >``` syntax
-    >\\<controllername>\HLKInstall\CoreSystemClient\InstallWTTClient
-    >```
-    >
-    >**Emulated x86 Mode:**
-    >
-    >On the test system, start a command prompt with administrator privileges, and run the following:
-    >
-    >``` syntax
-    >\\<controllername>\HLKInstall\CoreSystemClient\InstallWTTClient UseEmulationForTestContent
-    >```
+    
+    **Native Mode:**
+    
+    On the test system, run the following:
+    
+    ``` syntax
+    \\<controllername>\HLKInstall\CoreSystemClient\InstallWTTClient
+    ```
+    
+    **Emulated x86 Mode:**
+    
+    On the test system, start a command prompt with administrator privileges, and run the following:
+    
+    ``` syntax
+    \\<controllername>\HLKInstall\CoreSystemClient\InstallWTTClient UseEmulationForTestContent
+    ```
 
     >[!NOTE]  
     >Replace &lt;ControllerName&gt; with the name of the test server.
-
-     
 
 2.  The Windows Hardware Lab Kit Client Setup wizard appears. To start the wizard, choose **Next**.
 3.  On the Internet Connection Firewall Agreement page, select **Yes I will allow a port to be opened**, and then choose **Next**.
@@ -103,7 +99,8 @@ Once the mode for testing is identified the following instructions will walk you
 
 4.  When the **Ready to Install** page appears, select **Install**.
 5.  Click **Finish** to exit the wizard.
-    **Tip**  When installation completes, confirm its success by going to the Control Panel and choosing Uninstall a program. Windows Hardware Lab Kit Client should appear in the program list.
+    >[!TIP]  
+    >When installation completes, confirm its success by going to the Control Panel and choosing Uninstall a program. Windows Hardware Lab Kit Client should appear in the program list.
 
      
 
@@ -223,7 +220,8 @@ You can save an existing collection of tests as a playlist by choosing Save Sele
 
 ### <span id="Running_a_test"></span><span id="running_a_test"></span><span id="RUNNING_A_TEST"></span>Running a test
 
-**Note**  If using a playlist, be sure to load it before following these steps.
+>[!NOTE]
+>  If using a playlist, be sure to load it before following these steps.
 
  
 
@@ -249,7 +247,8 @@ To learn more about the different options on this page, see [HLK Studio - Tests 
 
 x86/x64 instructions: [Step 7: View test results and log files](step-7-view-test-results-and-log-files.md)
 
-**Note**  Due to ARM64 Desktop having scenarios that involve multiple projects, it will be required that these projects be merged to have a complete HLK package for submitting. For information on merging packages, see [Merge packages](../user/merge_packages.md).
+>[!NOTE]
+>  Due to ARM64 Desktop having scenarios that involve multiple projects, it will be required that these projects be merged to have a complete HLK package for submitting. For information on merging packages, see [Merge packages](../user/merge_packages.md).
 
  
 
