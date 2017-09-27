@@ -32,37 +32,37 @@ Packages fall into three main categories:
 
 The Windows Universal OEM packaging standard uses a new schema that's compatible with more types of devices. If you've built packages using the legacy packaging standard (pkg.xml), and you'd like to use them on IoT devices, you'll need to [convert the packages](#convert_packages).
 
-## Create a package project with no content
-To prepare to define a package, you can start with an empty package definition file (also called a Windows Manifest file, or *.wm.xml).
+## Start by creating a new empty package
 
->[!IMPORTANT]
-> The package definition file must use the "wm.xml" extension.
+1.  Install the Windows ADK, WDK, the IoT Add-On Kit, and test certificates as described in [Get the tools needed to customize Windows IoT Core](set-up-your-pc-to-customize-iot-core.md) and [Lab 1a: Create a basic image](create-a-basic-image.md).
 
-```xml
-<?xml version='1.0' encoding='utf-8' standalone='yes'?>
-<identity
-  xmlns="urn:Microsoft.CompPlat/ManifestSchema.v1.00"
-  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  name="MediaService"
-  namespace="Media"
-  owner="OEM"
-  >
-</identity>
-```
+2.  Use a text editor to create a new package definition file (also called a Windows Manifest file) based on the following template. Save the file using the ***.wm.xml** extension. 
 
-If you run the package generator (pkggen.exe) against this empty package definition file, it creates an empty package file (*.cab). This requires the [Windows Assessment and Deployment Kit for Windows 10, version 1709](https://go.microsoft.com/fwlink/?linkid=859206).
+    ```xml
+    <?xml version='1.0' encoding='utf-8' standalone='yes'?>
+    <identity
+      xmlns="urn:Microsoft.CompPlat/ManifestSchema.v1.00"
+      xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      name="MediaService"
+      namespace="Media"
+      owner="OEM"
+      >
+    </identity>
+    ```
 
-```
-c:\oemsample>pkggen myPackage.wm.xml /universalbsp
+3.  Create the empty package file (*.cab). The filename created is based on the owner, namespace, and name from the file.
 
- Directory of c:\oemsample
+    ```
+    c:\oemsample>pkggen myPackage.wm.xml /universalbsp
 
-04/03/2017  05:56 PM    <DIR>          .
-04/03/2017  05:56 PM    <DIR>          ..
-04/03/2017  05:43 PM               333 myPackage.wm.xml
-04/03/2017  05:56 PM             8,239 OEM-Media-MediaService.cab
-```
+    Directory of c:\oemsample
+    
+    04/03/2017  05:56 PM    <DIR>          .
+    04/03/2017  05:56 PM    <DIR>          ..
+    04/03/2017  05:43 PM               333 myPackage.wm.xml
+    04/03/2017  05:56 PM             8,239 OEM-Media-MediaService.cab
+    ```
 
 ## Add content to a package
 
@@ -96,8 +96,6 @@ The contents of a package are organized as a list of XML elements in the package
     </regKey>
   </regKeys>
 </identity>
-</syntaxhighlight>
-<syntaxhighlight lang="text">
 ```
 
 ```text
@@ -135,6 +133,7 @@ PkgGen.exe [project] /universalbsp ...
 
 Packages use Windows cabinet file technology to store a set of files. Double-click the CAB file to view and extract its contents. Use notepad.exe to view update.mum, this describes how the files are installed onto the device.
 
+Sample contents of **OEM-Media-MediaService.cab**:
 ```
 arm_dual_media.inf_31bf3856ad364e35_1.0.0.0_none_75dfa724a55b489d
 arm_dual_media.inf_31bf3856ad364e35_1.0.0.0_none_75dfa724a55b489d.manifest
@@ -145,6 +144,28 @@ arm_oem-media-mediaservice_31bf3856ad364e35_1.0.0.0_none_7307c54952eeb87a
 arm_oem-media-mediaservice_31bf3856ad364e35_1.0.0.0_none_7307c54952eeb87a.manifest
 update.cat
 update.mum
+```
+
+**Sample contents of update.mum:**
+```xml
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<assembly manifestVersion="1.0" xmlns="urn:schemas-microsoft-com:asm.v3">
+  <assemblyIdentity name="OEM-Media-MediaService" version="1.0.0.0" processorArchitecture="arm" language="neutral" publicKeyToken="31bf3856ad364e35" buildType="release" versionScope="nonSxS" />
+  <package identifier="OEM-Media-MediaService" releaseType="Feature Pack" binaryPartition="false" targetPartition="MainOS">
+    <customInformation>
+      <phoneInformation phoneRelease="Production" phoneOwner="OEM" phoneOwnerType="OEM" phoneComponent="OEM-Media-MediaService" phoneSubComponent="" phoneGroupingKey="" />
+      <file name="update.mum" size="823" staged="600" compressed="600" sourcePackage="" cabpath="update.mum" />
+      <file name="$(runtime.system32)\catroot\{F750E6C3-38EE-11D1-85E5-00C04FC295EE}\update.cat" size="910" staged="713" compressed="713" sourcePackage="" cabpath="update.cat" />
+      <file name="arm_oem-media-mediaserv..ployment-deployment_31bf3856ad364e35_1.0.0.0_none_6127250c45e77506.manifest" size="689" staged="560" compressed="560" sourcePackage="" cabpath="arm_oem-media-mediaserv..ployment-deployment_31bf3856ad364e35_1.0.0.0_none_6127250c45e77506.manifest" />
+      <file name="arm_oem-media-mediaservice_31bf3856ad364e35_1.0.0.0_none_7307c54952eeb87a.manifest" size="423" staged="423" compressed="423" sourcePackage="" cabpath="arm_oem-media-mediaservice_31bf3856ad364e35_1.0.0.0_none_7307c54952eeb87a.manifest" />
+    </customInformation>
+    <update name="OEM-Media-MediaService-Deployment-Deployment">
+      <component>
+        <assemblyIdentity name="OEM-Media-MediaService-Deployment-Deployment" version="1.0.0.0" processorArchitecture="arm" language="neutral" publicKeyToken="31bf3856ad364e35" buildType="release" versionScope="nonSxS" />
+      </component>
+    </update>
+  </package>
+</assembly>
 ```
 
 ## Add a language-specific content to a package
