@@ -19,6 +19,7 @@ ms.technology: windows-oem
 
 ## Value
 
+| Value      | Description                                                       |
 |:-----------|:------------------------------------------------------------------|
 | *oem-app*  | Specifies the name your advanced Pen settings application. For example, the registry entry produced by this setting could be
 `[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\ClickNote\OemCustomizationSettingsApp] &quot;CustomProtocol&quot;=&quot;ms-surface-app&quot;` |

@@ -15,8 +15,6 @@ ms.technology: windows-oem
 
 The `Microsoft-Windows-TwinUI` component specifies advanced pen settings.
 
-Starting with Windows 10, build 1607, Windows provides a way for you to link to your advanced Pen settings application from directly within the Settings app. The end user sees the setting in **Settings** -&gt; **Devices** -&gt; **Pen**. This page will display a link to your advanced settings application only when the you have set the correct registry entries during sysprep.
-
 ## Ink Workspace
 
 All of Windows Ink Workspace is available above lock. This functionality is off by default for privacy reasons; it is under the control of Windows customers. Once turned on via Settings, the user can utilize pen click functionality to launch Ink Workspace or any of its experiences directly depending on how they have configured their pen clicks. By default on a new system, it is:

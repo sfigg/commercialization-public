@@ -22,6 +22,7 @@ You can also hide the Pen shortcut settings using the registry. To do this, add 
 
 ## Values
 
+| Value      | Description                                                       |
 |:-----------|:------------------------------------------------------------------|
 | 0          | Show the link. This is the default value.                         |
 | 1          | Hide the link.                                                    |
