@@ -37,7 +37,7 @@ The following is a non-exhaustive list of screens the user may see during OOBE, 
 1. OEM Registration pages
 
 > [!NOTE]
-> You can hide certain OOBE screens using Unattend. For more information, see [OOBE Unattend component](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-shell-setup-oobe).
+> You can hide certain OOBE screens using Unattend. For more information, see [Microsoft-Windows-Shell-Setup OOBE Unattend setting](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-shell-setup-oobe).
 
 ## In this section
 
@@ -45,14 +45,14 @@ The following topics describe OOBE customization considerations.
 
 | Topic                                     | Description                                                                        |
 |:------------------------------------------|:-----------------------------------------------------------------------------------|
-| [OOBE.xml](oobexml.md)                               | You can use OOBE.xml to organize text and images displayed during OOBE, and to specify settings for customizing the Windows 10 first-run experience. You can use multiple Oobe.xml files for language- and region-specific license terms and settings so that users see appropriate info as soon as they start their PCs. By specifying information in the Oobe.xml file, you help fill in some of the required information so that users are asked to do only the core tasks required to set up their PCs. |
+| [OOBE.xml](oobexml.md)                               | Create an OOBE.xml file to organize text and images displayed during OOBE, and to specify settings for customizing the Windows 10 first-run experience. You can use multiple Oobe.xml files for language- and region-specific license terms and settings so that users see appropriate info as soon as they start their PCs. By specifying information in the Oobe.xml file, you help fill in some of the required information so that users are asked to do only the core tasks required to set up their PCs. |
 | [Cortana voice support](cortana-voice-support.md)    | This topic describes how Cortana voice walks the user through the OOBE experience, enabling the user to complete parts of OOBE by responding to spoken prompts.                       |
-| [OEM HID pairing](oem-hid-pairing.md)                | On PCs that ship with an unpaired wireless mouse and keyboard, the HID pairing screens are shown to the customer during the first-run experience in OOBE, which is before language selection or any other screen that requires user input. If you include written instructions, you must include those instructions in every language that ships with the PC.              |
+| [OEM HID pairing](oem-hid-pairing.md)                | Add HID pairing support for PCs that ship with an unpaired wireless mouse and/or keyboard. The HID pairing screens are shown to the customer during the first-run experience in OOBE, which is before language selection or any other screen that requires user input.                       |
 | [OEM license terms](oem-license.md)                  | You can add your OEM license terms to the License Terms screen in the first-run experience of OOBE. |
-| [OEM registration pages](oem-registration-pages.md)  | You can display OEM registration screens during OOBE to encourage customers to provide you with their information. This enables you to provide them with a more personalized experience and information. |
+| [OEM registration pages](oem-registration-pages.md)  | Add OEM registration screens to gather customer information, and introduce offers, during OOBE.     |
 
 ## Related topics
 
-[OOBE Unattend component](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-shell-setup-oobe)
+[OOBE Unattend setting](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-shell-setup-oobe)
 
 [Configure Oobe.xml](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/configure-oobexml)

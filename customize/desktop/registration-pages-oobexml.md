@@ -45,26 +45,6 @@ To include your registration pages in OOBE, you must configure the appropriate s
 | | \<link> | File must be named linkfile3.html. OOBE searches for these files under the oobe\info folder. OOBE searches for files under the appropriate locale and language specific subfolders of oobe\info. | linkfile3.html |
 | <**hideSkip**> | | Optional. Controls whether or not the Skip button is displayed to the user.  Default is False, resulting in the skip button being visible. | True or False. True means the skip button is not visible to the user. False means the skip button is displayed as an option to the user. |
 
-| Element             | Setting             | Description                                                                               |
-|:--------------------------|:--------------------------|:------------------------------------------------------------------------------|
-| \<registration>     | \<title>            | String. Required to display pages. Text to title the registration page.                   |
-| \<registration>     | \<subtitle>         | String. Required to display pages. Text to describe the registration pages.               |
-| \<customerinfo>     | \<label>            | String. Text to label Customer Info section on pages. Required to display Customer Info.  |
-| \<customerinfo>     | \<defaultvalue>     | True or false. Value to set customerinfo as selected or not. If this field is checked, information from the four input fields will be provided via asymmetric key encryption. If not checked, no information from the four input fields will be provided.                     |
-| \<checkbox1>        | \<label>            | String. Text to label checkbox 1. Required to display checkbox.                           |
-| \<checkbox1>        | \<defaultvalue>     | True or false. Value to set checkbox 1 as selected or not selected.                       |
-| \<checkbox2>        | \<label>            | String. Text to label checkbox 2. Required to display checkbox.                           |
-| \<checkbox2>        | \<defaultvalue>     | True or false. Value to set checkbox 2 as selected or not selected.                       |
-| \<checkbox3>        | \<label>            | String. Text to label checkbox 3. Required to display checkbox.                           |
-| \<checkbox3>        | \<defaultvalue>     | True or false. Value to set checkbox 3 as selected or not selected.                       |
-| \<link1>            | \<label>            | String. Label for the link to the HTML file. Required for link 1 to appear.               |
-| \<link1>            | \<link>             | Must be linkfile1.html. OOBE searches for these files under the oobe\info folder.         |
-| \<link2>            | \<label>            | String. Label for the link to the HTML file. Required for link 2 to appear.               |
-| \<link2>            | \<link>             | Must be linkfile2.html. OOBE searches for these files under the oobe\info folder.         |
-| \<link3>            | \<label>            | String. Label for the link to the HTML file. Required for link 3 to appear.               |
-| \<link3>            | \<link>             | Must be linkfile3.html. OOBE searches for these files under the oobe\info folder.         |
-| \<hideSkip>         | \<title>            | True or false. Optional. Controls whether the Skip button is displayed to the user. Default is False, resulting in the skip button being visible.                                                                                                                                |
-
 At least one element (for example, `customerinfo`) is required in order for the registration screens to display during OOBE.
 
 > [!Tip]
