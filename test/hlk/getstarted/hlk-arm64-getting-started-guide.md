@@ -10,7 +10,7 @@ ms.assetid: 57E7C933-FD93-4254-A65A-DA47D2BFE4C6
 # HLK ARM64 Getting Started Guide
 
 
-Setup and testing for ARM64 desktop machines largely follows the guidelines found in the [HLK Getting Started Guide](hlk-getting-started-guide.md). Instructions specific to ARM64 are described in this topic.
+Setup and testing for ARM64 desktop machines largely follows the guidelines found in the [HLK Getting Started Guide](windows-hlk-getting-started-guide.md). Instructions specific to ARM64 are described in this topic.
 
 This topic provides a basic introduction to using the Windows Hardware Lab Kit (HLK). Once you are familiar with the tools and process, you can review the [HLK User's Guide](../user/windows-hardware-lab-kit-user-s-guide.md) for additional information.
 
@@ -209,7 +209,8 @@ Test results against all playlists for a specific target are kept until the targ
 
 You can save an existing collection of tests as a playlist by choosing Save Selected as Playlist.
 
->[!IMPORTANT]   When using an official playlist, you must use the version of the playlist that matches the version of the kit you are using. For example, if using version 1607 of the HLK, you must also use version 1607 of the playlist.
+>[!IMPORTANT]   
+>When using an official playlist, you must use the version of the playlist that matches the version of the kit you are using. For example, if using version 1607 of the HLK, you must also use version 1607 of the playlist.
 
  
 
