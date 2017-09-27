@@ -17,7 +17,7 @@ This topic provides a basic introduction to using the Windows Hardware Lab Kit (
 ## <span id="Windows_HLK_Prerequisites"></span><span id="windows_hlk_prerequisites"></span><span id="WINDOWS_HLK_PREREQUISITES"></span>Windows HLK Prerequisites
 
 
-Prerequisites are the same for all desktop machines. See the [HLK Prerequisites](getstarted/windows_hlk_prerequisites.md) topic for more information.
+Prerequisites are the same for all desktop machines. See the [HLK Prerequisites](windows_hlk_prerequisites.md) topic for more information.
 
 ## <span id="Step_1__Install_Controller_and_Studio_on_the_test_server"></span><span id="step_1__install_controller_and_studio_on_the_test_server"></span><span id="STEP_1__INSTALL_CONTROLLER_AND_STUDIO_ON_THE_TEST_SERVER"></span>Step 1: Install Controller and Studio on the test server
 
