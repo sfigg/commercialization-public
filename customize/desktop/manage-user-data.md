@@ -42,14 +42,14 @@ Make this sequence of calls to generate the public and private keys.
     * `Algid` is `CALG_RSA_KEYX`
     * `dwFlags` is `CRYPT_EXPORTABLE`
 
-1. 	Serialize the public key portion of the crypt key from Step 2 using the [CryptExportKey API](https://msdn.microsoft.com/en-us/library/windows/desktop/aa379931%28v=vs.85%29.aspx). Provide this value:
+1. Serialize the public key portion of the crypt key from Step 2 using the [CryptExportKey API](https://msdn.microsoft.com/en-us/library/windows/desktop/aa379931%28v=vs.85%29.aspx). Provide this value:
 
     * `dwBlobType` is `PUBLICKEYBLOB`
 
 1. Write the serialized public key bytes from Step 3 to file Pubkey.blob using the standard [Windows File Management functions](https://msdn.microsoft.com/en-us/library/windows/desktop/aa364232(v=vs.85).aspx(d=robot)).
 1. Serialize the private key portion of the crypt key from Step 2 using the [CryptExportKey API](https://msdn.microsoft.com/en-us/library/windows/desktop/aa379931%28v=vs.85%29.aspx). Provide this value
 
-* `dwBlobType` is `PRIVATEKEYBLOB`
+    * `dwBlobType` is `PRIVATEKEYBLOB`
 
 1. Write the serialized private key bytes from step 5 to file Prvkey.blob using the standard Windows File API.
 
@@ -173,10 +173,10 @@ Make this sequence of calls to decrypt the data:
 
 1. Read the OEM private key file (Prvkey.blob) from disk using the standard Windows File API.
 1. Convert the private key bytes into a crypt key using the [CryptImportKey API](https://msdn.microsoft.com/en-us/library/windows/desktop/aa380207(v=vs.85).aspx).
-1. Read the OOBE-generated session key file (Sessionkey.blob) from disk using the standard Windows File API.
+1. Read the OOBE-generated session key file (**Sessionkey.blob**) from disk using the standard Windows File API.
 1. Use the private key from Step 3 to convert the session key bytes into a crypt key, using the [CryptImportKey API](https://msdn.microsoft.com/en-us/library/windows/desktop/aa380207(v=vs.85).aspx).
 1. Export key (hPubKey) is the private key imported in Step 3.
-1. Read OOBE-written encrypted user data (Userdata.blob) from disk using the standard Windows File API.
+1. Read OOBE-written encrypted user data (**Userdata.blob**) from disk using the standard Windows File API.
 1. Use session key (from Step 5) to decrypt the user data, using [CryptDecrypt](https://msdn.microsoft.com/en-us/library/windows/desktop/aa379913(v=vs.85).aspx).
 
 ### Code snippet

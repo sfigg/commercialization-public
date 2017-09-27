@@ -20,7 +20,7 @@ The registration pages present many customization opportunities. Here are the se
 * **Four text fields and consent statement**. You can choose the text on the consent checkbox and the descriptive content statement.
 * **One checkbox provides consent for input fields to be passed to Userdata.blob**. You can choose the text to describe the check box.
 * **Three check boxes**. You can set the descriptive text for the check boxes, set their default state – selected or not – and decide whether to show three, two, one, or zero check boxes.
-* **Three flyout links**. You can specify the link label and the in-place link text. Any text you associate with these links must be in HTML files stored locally in the OOBE\Info directory. You can also decide whether to show three, two, one, or zero links.
+* **Three flyout links**. You can specify the link label and the in-place link text. Any text you associate with these links must be in HTML files stored locally in the `OOBE\Info` directory. You can also decide whether to show three, two, one, or zero links.
 * **The Skip button**. The skip button is visible by default, but you can configure the .xml to hide the skip button on the registration pages.  No information is provided if the customer chooses skip.
 * **The Next button**. The Next button moves the customer forward in OOBE.  If an email is provided it is validated to be of the proper format when the customer clicks the Next button.
 
@@ -43,7 +43,7 @@ Consent for sharing the information is determined by the consent check box. If t
 
 When a user signs in or signs up for a Microsoft account (MSA) in OOBE, they have already provided some of the information being requested on the OEM Registration pages. To streamline the setup process for users, Microsoft pre-populates the account information if provided.
 
-Depending on the SKU a user may choose to setup 1 of 3 different account choices which will impact whether the account information is pre-set.
+Depending on the SKU a user may choose to setup different account choices which will impact whether the account information is pre-set.
 
 | Account path                              | OEM page pre-populated                                                 |
 |:------------------------------------------|:-----------------------------------------------------------------------|
@@ -78,13 +78,16 @@ Use two different styles for headers and body content.
 * Bold text: should be rendered using the `<b>` tag.
 * Hierarchy of information: indented sections or groups of bulleted items can be displayed with the `<DIR>` tag, required for EULA content template, optional for Flyouts.
 
-We require that the files for the in-place links are HTML. These files are rendered in a flyout. Documents in the flyout are sandboxed, such that links to external and online resources will not function. Thus, the following tags are prohibited and should not be included in your files:
+We require that the files for the in-place links are HTML. These files are rendered in a flyout. Documents in the flyout are sandboxed, such that links to external and online resources will not function. 
 
-* `<script>`
-* `<iframe>`
-* `<input>`
-* `<img>`
-* `<a>`
+> [!Important]
+> The following tags are prohibited and should not be included in your files:
+>
+> * `<script>`
+> * `<iframe>`
+> * `<input>`
+> * `<img>`
+> * `<a>`
 
 ## <a name="css-example"></a>CSS code example
 
