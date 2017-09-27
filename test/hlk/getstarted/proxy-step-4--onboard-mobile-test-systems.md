@@ -1,6 +1,6 @@
 ---
 title: Step 4 Onboard Mobile Test systems
-description: After you install the Windows Hardware Lab Kit (Windows HLK) on the test server, and the Windows HLK Proxy Client on the Proxy system, you are ready to add mobile test systems to the environment.
+description: Step 4 Onboard Mobile Test systems
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
@@ -10,7 +10,7 @@ ms.assetid: 3CEA61AA-5625-4F1F-84ED-69ED726BB74F
 # Step 4: Onboard Mobile Test systems
 
 
-After you install the Windows Hardware Lab Kit (Windows HLK) on the test server, and the Windows HLK Proxy Client on the Proxy system, you are ready to add mobile test systems to the environment.
+After you install the Windows Hardware Lab Kit (Windows HLK) on the HLK Controller, and the Windows HLK Proxy Client on the Proxy system, you are ready to add mobile test systems to the environment.
 
 ## <span id="Known_Issues"></span><span id="known_issues"></span><span id="KNOWN_ISSUES"></span>Known Issues
 
@@ -21,130 +21,178 @@ After you install the Windows Hardware Lab Kit (Windows HLK) on the test server,
 
  
 
-## <span id="usb"></span><span id="USB"></span>Onboarding USB connected devices
+## <span id="Onboarding_USB_connected_devices"></span><span id="onboarding_usb_connected_devices"></span><span id="ONBOARDING_USB_CONNECTED_DEVICES"></span>Onboarding USB connected devices
 
 
-1.  Install the USB driver. On the proxy system, navigate to **\\\\&lt;ControllerName&gt;\\HLKInstall\\ProxyClient\\USB Drivers**, where *&lt;ControllerName&gt;* is the name of the test server. Right-click **usbnet.inf**, and then click **Install**.
-
-    >[!IMPORTANT]
-    >  Starting with Windows 10, version 1607, the USB driver is automatically installed. You should manually install the driver only if using an older version of Windows.
-
-     
-
-2.  Get the DeviceGUID for the connected device:
-
+1.  On the Proxy system, launch an elevated command prompt window.
+2.  Navigate to %ProgramFiles(x86)%\\WTTMobile\\Tools\\
+3.  Get the DeviceGUID for the connected device:
     1.  Put the device in flashing mode.
-
-    2.  From **%ProgramFiles(x86)\\WTTMobile\\tools**, run the following command:
+    2.  From the elevated command prompt, run the following command:
 
         ``` syntax
         ffutool.exe -list
         ```
 
-    >[!NOTE]
-    >  For more information on HLK mobile testing tools and utilities, see the following topic:
-    -   [HLK Mobile Testing Tools and Utilities](..\user\hlk-mobile-testing-tools-and-utilities.md)
+        **Note**  For more information on HLK mobile testing tools and utilities, see the following topic: [HLK Mobile Testing Tools and Utilities](p_hlk.hlk_mobile_testing_tools_and_utilities)
 
-     
+         
 
-3.  Onboard the device. From an elevated command prompt, run the following command:
+4.  Run the following command from the elevated command prompt to put the device into mass storage mode:
 
     ``` syntax
-    %ProgramFiles(x86)\WTTMobile\tools\KitsDeviceDetector.exe /Physical:Fake_PC.dll /DeviceName:<DeviceName> /DeviceId:<DeviceGUID> /ImagePath:<full path to the flash_lab.ffu image> /machinepool:<machine pool>
+    ffutool -MassStorage
+    ```
+
+5.  Unplug the device from the proxy system, then plug it back in. It will then be assigned a drive letter on the Proxy system.  Use this as the &lt;device drive&gt; in the next step.
+6.  Enable USB EEM protocol on boot options. From an elevated command prompt, run the following command: 
+
+    ``` syntax
+    BCDEdit /store <device drive>:\EFIESP\efi\Microsoft\Boot\BCD /set {default} loadoptions "EEM"
     ```
 
     Example:
 
     ``` syntax
-    KitsDeviceDetector.exe /Physical:Fake_PC.dll /DeviceName:mydevice /DeviceId:00000015-c0fb-79c3-0000-000000000000 /ImagePath:C:\flash_lab.ffu /machinepool:$\mypool
+    BCDEdit /store G:\EFIESP\efi\Microsoft\Boot\BCD /set {default} loadoptions "EEM"
     ```
 
-    >[!NOTE]
-    >  The KitsDeviceDetector log can found at **%ProgramFiles(x86)%\\WTTMobile\\Tools\\KitsDeviceDetector.log**
+7.  Restart the device (if the image installed on the DUT is a lab or a health image, put the device in flashing mode).
+8.  To onboard the device, from the elevated command prompt, run the following command:
 
-    >[!NOTE]
-    >  If testing with a Health image, include the following parameter:
     ``` syntax
-    /imageprofile:health
+    KitsDeviceDetector.exe /Physical:Fake_PC.dll /DeviceName:<DeviceName> /DeviceId:<DeviceGUID> /machinepool:<machine pool>
     ```
+
+    Example:
+
+    ``` syntax
+    KitsDeviceDetector.exe /Physical:Fake_PC.dll /DeviceName:mydevice /DeviceId:00000015-c0fb-79c3-0000-000000000000 /machinepool:$\mypool
+    ```
+
+    **Note**  If testing with a Health image, include the following parameter:
+    `/imageprofile:health`
+
+     
+
+    **Note**  If the image installed on the DUT is not a lab or a health image, include the following parameter:
+    `/SkipFFUCheck`
+
+     
+
+    **Note**  The KitsDeviceDetector log can found at %ProgramFiles(x86)%\\WTTMobile\\Tools\\KitsDeviceDetector.log
+
+     
+
+9.  Restart the proxy service in elevated mode.
+    1.  In the Proxy Service command prompt window, press CTRL + C to stop the service.
+    2.  Restart the Proxy Service double clicking on the "WTT Proxy" shortcut on the desktop of the Proxy System, or by navigating to %ProgramFiles(X86)%\\WTTMobile\\Client\\ and running the following command from the elevated command prompt:
+
+        ``` syntax
+        WTTProxy.exe -console
+        ```
+
+10. Validation: After running device detector (steps above), the device should be booted to a valid OS, and be a visible target in the ‘ready’ state in HLK Manager and HLK Studio.
+
+## <span id="Onboarding_Aries_connected_devices"></span><span id="onboarding_aries_connected_devices"></span><span id="ONBOARDING_ARIES_CONNECTED_DEVICES"></span>Onboarding Aries connected devices
+
+
+1.  On the Proxy system, launch an elevated command prompt.
+2.  Navigate to %ProgramFiles(x86)%\\WTTMobile\\Tools\\
+3.  To onboard the device, run the following command from the elevated command prompt:
+
+    ``` syntax
+    KitsDeviceDetector.exe /devicefilters:<aries name> /machinepool:<machine pool>
+    ```
+
+    Example:
+
+    ``` syntax
+    KitsDeviceDetector.exe /devicefilters:myaries  /machinepool:$\mypool
+    ```
+
+    **Note**  The image on the device must be either a lab image or a health image.
+
+     
+
+    **Note**  If testing with a Health image, include the following parameter:
+    `/imageprofile:health`
+
+     
+
+    **Note**  To flash an image on your device as part of the onboarding process, include the following parameter
+    `/ImagePath:<full path to the flash_lab.ffu image>`
+
+    Example:
+
+    `/ImagePath:C:\flash_lab.ffu`
+
+     
+
+    **Note**  Use %ProgramFiles(x86)%\\WTTMobile\\Tools\\AriesUtil.exe to find the name of the Aries dongles on the network. The command **AriesUtil.exe Discover** will return the full list of available devices. A firewall exception must be added for AriesUtil.exe prior to use. If no devices are detected, you may need to use the **/Adapter** parameter. The adapter type can be determined by opening the Networking and Sharing Center on the controller, the Adapter is listed under **Connections**. The most common Adapter value is **Ethernet**. Use the command **AriesUtil.exe /?** for a complete list of available commands.
+
+     
+
+    **Note**  The KitsDeviceDetector log can found at %ProgramFiles(x86)%\\WTTMobile\\Tools\\KitsDeviceDetector.log
+
+     
+
+    **Note**  For more information on HLK mobile testing tools and utilities, see the following topic: [HLK Mobile Testing Tools and Utilities](p_hlk.hlk_mobile_testing_tools_and_utilities)
 
      
 
 4.  Restart the proxy service in elevated mode.
-
     1.  In the Proxy Service command prompt window, press CTRL + C to stop the service.
+    2.  Restart the Proxy Service double clicking on the "WTT Proxy" shortcut on the desktop of the Proxy System, or by navigating to %ProgramFiles(X86)%\\WTTMobile\\Client\\ and running the following command from the elevated command prompt:
 
-    2.  Run the following command:
+        `WTTProxy.exe -console`
 
-        ``` syntax
-        WTTProxy.exe -console
-        ```
+5.  \[For Health image only\] – After KitsDeviceDetector is complete, run the following commands from %ProgramFiles(x86)%\\WTTMobile\\Tools\\
 
-5.  Validation: After running device detector (steps above), the device should show in HLK with a valid OS and you should be able to see targets for the device in HLK Studio (create a dummy project).
+    `AriesUtil.exe ResetDevice /Aries:<aries-name> [/Autoskip:true]`
 
-## <span id="aries"></span><span id="ARIES"></span>Onboarding Aries connected devices
+6.  Validation: After running device detector (steps above), the device should be booted to a valid OS, and be a visible target in the ‘ready’ state in HLK Manager and HLK Studio.
+
+## <span id="Onboarding_network_connected_devices"></span><span id="onboarding_network_connected_devices"></span><span id="ONBOARDING_NETWORK_CONNECTED_DEVICES"></span>Onboarding network connected devices
 
 
 1.  On the Proxy system, launch an elevated command prompt.
-2.  Navigate to %ProgramFiles(x86)%\\WTTMobile\\Tools\\ and onboard the phone with the following command:
+2.  Navigate to %ProgramFiles(x86)%\\WTTMobile\\Tools\\
+3.  Get the connection string for your device:
+    1.  Boot the device and find the IP address.
+    2.  From the elevated command prompt, run the following command:
 
-    ``` syntax
-    KitsDeviceDetector.exe /devicefilters:<aries name> /ImagePath:<full path to the flash_lab.ffu image> /machinepool:<machine pool>
-    ```
+        `KitsDeviceDetector.exe /rundevicediscovery`
 
-    **Example:**
+        **Note**  This command will output all of the devices on the subnet that has Sirep running. Each string will look something like this:
+        Name: 8CAE4CF5D6A5 | UniqueId: 00000000-0000-0000-0000-8cae4cf5d6a5 | Address: 10.131.2.211 | Connection: SirepBroadcast1 | Location:
 
-    ``` syntax
-    KitsDeviceDetector.exe /devicefilters:myaries /ImagePath:C:\flash_lab.ffu /machinepool:$\mypool
-    ```
+         
 
-    >[!NOTE]
-    >  If testing with a Health image, include the following parameter:
-    ``` syntax
-    /imageprofile:health
-    ```
+4.  Find your device string (matching your IP address, and make note of the following fields:
+    1.  "Name:"
+    2.  "UniqueId:"
+5.  To onboard the device, run the command from the elevated command prompt:
 
-    >[!NOTE]
-    >  Use %ProgramFiles(x86)%\\WTTMobile\\Tools\\AriesUtil.exe to find the name of the Aries dongles on the network.
-    The command **AriesUtil.exe Discover** will return the full list of available devices.
+    `KitsDeviceDetector.exe /machinepool:$\Pool /Physical:Fake_PC.dll /DeviceName:NAME_OF_DEVICE /DeviceId:UNIQUEID /DeviceMacAddress:MAC_ADDRESS /SDCardImageInstalled`
 
-    A firewall exception must be added for AriesUtil.exe prior to use.
+    Example:
 
-    If no devices are detected, you may need to use the **/Adapter** parameter. The adapter type can be determined by opening the Networking and Sharing Center on the controller, the Adapter is listed under **Connections**. The most common Adapter value is **Ethernet**.
+    `KitsDeviceDetector.exe /machinepool:$\Test_Pool /Physical:Fake_PC.dll /DeviceName:8CAE4CF5D6A5 /DeviceId:00000000-0000-0000-0000-8CAE4CF5D6A5 /DeviceMacAddress:8C-AE-4C-F5-D6-A5 /SDCardImageInstalled`
 
-    Use the command **AriesUtil.exe /?** for a complete list of available commands.
+6.  Restart the proxy service in elevated mode.
+    1.  In the Proxy Service command prompt window, press CTRL + C to stop the service.
+    2.  Restart the Proxy Service double clicking on the "WTT Proxy" shortcut on the desktop of the Proxy System, or by navigating to %ProgramFiles(X86)%\\WTTMobile\\Client\\ and running the following command from the elevated command prompt:
 
-    >[!NOTE]
-    >  The KitsDeviceDetector log can be viewed here:
-    -   %ProgramFiles(x86)%\\WTTMobile\\Tools\\KitsDeviceDetector.log
+        `WTTProxy.exe -console`
 
-    >[!NOTE]
-    >  For more information on HLK mobile testing tools and utilities, see the following topic:
-    -   [HLK Mobile Testing Tools and Utilities](..\user\hlk-mobile-testing-tools-and-utilities.md)
-
-     
-
-3.  Restart the Proxy Service in Elevated console
-    1.  In the Proxy Service command prompt window press CTRL + C to stop the service
-    2.  Run the following command:
-
-        ``` syntax
-        WTTProxy.exe -console
-        ```
-
-4.  \[For Health image only\] – After KitsDeviceDetector is complete, run the following commands from %ProgramFiles(x86)%\\WTTMobile\\Tools\\
-
-    ``` syntax
-    AriesUtil.exe ResetDevice /Aries:<Aries-name> [/Autoskip:true]
-    ```
-
-5.  Validation: After running device detector (steps above), the device should show in HLK with a Valid OS and you should be able to see targets for the device in HLK Studio (create a dummy project).
+7.  Validation: After running device detector (steps above), the device should be booted to a valid OS, and be a visible target in the ‘ready’ state in HLK Manager and HLK Studio.
 
  
 
  
 
-
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_sxs_hlk\p_sxs_hlk%5D:%20Step%204:%20Onboard%20Mobile%20Test%20systems%20%20RELEASE:%20%289/27/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default.aspx. "Send comments about this topic to Microsoft")
 
 
 
