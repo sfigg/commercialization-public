@@ -14,13 +14,13 @@ ms.technology: windows-oem
 
 ## Overview
 
-To run scripts, installers, and diagnostic tools on the factory floor, use the Windows 10 S manufacturing mode. This mode allows you to run unsigned code in Audit Mode on the factory floor. Enable manufacturing mode by adding a registry key to an offline image. Disable manufacturing mode by removing the registry key from audit mode.
+To run scripts, installers, and diagnostic tools on the factory floor, Windows 10 S has a manufacturing mode. This mode allows you to run unsigned code only in Audit Mode on the factory floor. Enable manufacturing mode by adding a registry key to an offline image. Disable manufacturing mode by removing the registry key when booted into audit mode.
 
 
 > [!IMPORTANT]
-> Don't ship your Windows 10 S PC with the registry in place. Remove the registry key prior to shipping the device.
+> Don't ship a Windows 10 S PC with the registry in place. Remove the registry key prior to shipping the device.
 
-Before shipping your PC, remove the registry key from the Windows 10 S PC. Also ensure that the manufacturing registry key is excluded from recovery packages.
+Before shipping a Windows 10 S PC, remove the manufacturing registry key and exclude it from recovery packages.
 
 ## Enable manufacturing mode
 
