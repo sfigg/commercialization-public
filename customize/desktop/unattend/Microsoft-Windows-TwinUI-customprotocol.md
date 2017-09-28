@@ -6,7 +6,7 @@ MSHAttr:
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 96A3CB0D-EB28-47FC-AB12-522F18DBC8B9
 ms.author: alhopper
-ms.date: 05/02/2017
+ms.date: 09/27/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -19,10 +19,9 @@ ms.technology: windows-oem
 
 ## Value
 
-| Value      | Description                                                       |
-|:-----------|:------------------------------------------------------------------|
-| *oem-app*  | Specifies the name your advanced Pen settings application. For example, the registry entry produced by this setting could be
-`[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\ClickNote\OemCustomizationSettingsApp] &quot;CustomProtocol&quot;=&quot;ms-surface-app&quot;` |
+| Value          | Description                                                                                                                                   |
+|:---------------|:----------------------------------------------------------------------------------------------------------------------------------------------|
+| *oem-app*      | Specifies the name your advanced Pen settings application. For example, the registry entry produced by this setting could be `[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\ClickNote\OemCustomizationSettingsApp] &quot;CustomProtocol&quot;=&quot;ms-surface-app&quot;`      |
 
 ## Parent Hierarchy
 
