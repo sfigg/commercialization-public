@@ -2,9 +2,18 @@
 
 ## [What's new in customizations](what-s-new-in-customizations.md)
 
-
 ## [Customizations for desktop](desktop/desktop-customizations-portal.md)
 ### [Customize the taskbar](desktop/customize-the-taskbar.md)
+### [Customize the Out of Box Experience (OOBE)](desktop/customize-oobe.md)
+#### [OOBE.xml](desktop/oobexml.md)
+#### [Cortana voice support](desktop/cortana-voice-support.md)
+#### [OEM HID pairing](desktop/oem-hid-pairing.md)
+#### [OEM license terms](desktop/oem-license.md)
+#### [OEM registration pages](desktop/oem-registration-pages.md)
+##### [Design your registration pages](desktop/design-registration-pages.md)
+##### [Configure OOBE.xml](desktop/registration-pages-oobexml.md)
+##### [Manage user data](desktop/manage-user-data.md)
+##### [Collect and upload data](desktop/collect-and-upload-data.md)
 ### [Set dark mode](desktop/set-dark-mode.md)
 ### [Customize the Country and Operator Settings Asset](desktop/customize-cosa.md)
 
