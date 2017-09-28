@@ -14,7 +14,7 @@ ms.technology: windows-oem
 
 ## Overview
 
-To run scripts, installers, and diagnostic tools on the factory floor, Windows 10 S has a manufacturing mode. This mode allows you to run unsigned code only in Audit Mode. Enable manufacturing mode by adding a registry key to an offline image. Disable manufacturing mode by removing the registry key when booted into audit mode.
+To run scripts, installers, and diagnostic tools on the factory floor, Windows 10 S has a manufacturing mode. This mode allows you to run unsigned code in Audit Mode. Enable manufacturing mode by adding a registry key to an offline image. Disable manufacturing mode by removing the registry key when booted into audit mode.
 
 
 > [!IMPORTANT]
@@ -28,7 +28,7 @@ Here's how to enable manufacturing mode.
 
 On your technician PC:
 
-1. Mount your Windows 10 S image
+1. Mount your Windows 10 S image.
 
     ```
     Dism /Mount-Wim /WimFile:D:\sources\install.wim /index:1 /MountDir:C:\mount\windows
