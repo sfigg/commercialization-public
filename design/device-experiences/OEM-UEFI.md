@@ -59,5 +59,3 @@ Operating system physical memory is defined according to the ACPI 3.0 specificat
 
 On a UEFI platform, firmware runtime memory must be consistent across S4 sleep state transitions, in both size and location. Runtime memory is defined according to the UEFI specification as any memory that is described by the GetMemoryMap() boot service, with the attribute EFI_MEMORY_RUNTIME.
 
-## Related Topics
-- [Validating Windows UEFI firmware update](OEM-validate-UEFI-update.md)
