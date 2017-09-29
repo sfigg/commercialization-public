@@ -17,7 +17,7 @@ You can add your own branding and license terms to Windows.
 
 For multi-region or multi-language images, you can create region specific license terms. These display to the user during the first login experience, based on the region or language that they choose. 
 
-Note: If the license terms are included, the OEM must include a version of the license terms in each language that is preinstalled onto the PC. A license term text must be an .**rtf** file, saved as .**rtf** format.
+Note: If the license terms are included, the OEM must include a version of the license terms in each language that is preinstalled onto the PC. You can read more about creating license terms at [OEM license terms](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/oem-license).
 
 Use the examples in the [USB-B.zip](http://download.microsoft.com/download/5/8/4/5844EE21-4EF5-45B7-8D36-31619017B76A/USB-B.zip) key.
 
@@ -45,7 +45,7 @@ Use the examples in the [USB-B.zip](http://download.microsoft.com/download/5/8/4
     
     Samples are in C:\USB-B\resources\agreement.rtf
     
-4. Open a text editor and create .html versions of your license terms. Save the terms to the same folders as .rtf versions. You can use the [EULA example](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/oem-license#eula-example) from [OEM registration](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/oem-license) to create your files.  The names of the EULA should be identical, except for the extension.
+4. Open a text editor and create .html versions of your license terms. Save the terms to the same folders as the .rtf versions. You can use the [EULA example](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/oem-license#eula-example) from [OEM license terms](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/oem-license) to create sample files.  The names of the EULA files should be identical, except for the extension.
 
     ```
     C:\mount\windows\Windows\System32\oobe\info\default\1033\agreement.html  (English version)
@@ -88,9 +88,8 @@ Use the examples in the [USB-B.zip](http://download.microsoft.com/download/5/8/4
     </FirstExperience>
     ```
 
-8.  Verify that each language folder contains an **oobe.xml** file and an **agreement.rtf** file in that corresponding language.
+8.  Verify that each language folder contains an **oobe.xml** file, an **agreement.rtf** file, and an **agreement.html** file in that corresponding language.
 
-    ![Agreement and OOBE files](images/agreement-and-oobe-files.png)
 
 ### <span id="Create_image_files"></span>Create image info file
 1.  Create an **csup.txt** file to specify when the Windows image was created. This file must include the date that the image was created, in the form of 'MM-DD-YYYY', with no other characters, on a single line at the top of the file.
