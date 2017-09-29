@@ -21,9 +21,9 @@ Note: If the license terms are included, the OEM must include a version of the l
 
 Use the examples in the [USB-B.zip](http://download.microsoft.com/download/5/8/4/5844EE21-4EF5-45B7-8D36-31619017B76A/USB-B.zip) key.
 
-### <span id="Mount_the_image"></span>Mount the image
+## <span id="Mount_the_image"></span>Mount the image
 
-If you don't have your image mounted, use the steps from [Lab 3: Add device drivers (.inf-style)](add-device-drivers.md) to mount the image. The short version:
+Use the steps from [Lab 3: Add device drivers (.inf-style)](add-device-drivers.md) to mount the image. The short version:
 
 1.  Open the command line as an administrator (**Start** > type **deployment** > right-click **Deployment and Imaging Tools Environment** > **Run as administrator**.)
 
@@ -32,7 +32,7 @@ If you don't have your image mounted, use the steps from [Lab 3: Add device driv
 3.  Mount the image (`md C:\mount\windows`, then `Dism /Mount-Image /ImageFile:"C:\Images\install.wim" /Index:1 /MountDir:"C:\mount\windows" /Optimize`)
 
 
-# <span id="Create_license_files"></span>Create license files
+## <span id="Create_license_files"></span>Create license files
 
 1.  Create folders under a working folder, for example:
 
@@ -154,5 +154,4 @@ Use the steps from [Lab 2: Deploy Windows using a script](deploy-windows-with-a-
 
 Log into the system as if you were a new user. Select your language or region of required. The correct license terms should show up during this first login experience.
 
-> [!div class="nextstepaction"]
-> [Lab 9: Make changes from Windows (audit mode)](prepare-a-snapshot-of-the-pc-generalize-and-capture-windows-images-blue-sxs.md)
+Next steps: [Lab 9: Make changes from Windows (audit mode)](prepare-a-snapshot-of-the-pc-generalize-and-capture-windows-images-blue-sxs.md)
