@@ -348,7 +348,7 @@
 ##### [USB settings: Enable the data connection prompt](mobile/mcsf/enable-the-data-connection-prompt.md)
 ##### [USB settings: Hide the weak charger notification option UI](mobile/mcsf/hide-the-weak-charger-notification-option-ui.md)
 ##### [Store settings: CTA app install prompts](mobile/mcsf/cta-app-install-prompts.md)
-##### [Store settings: Windows Store for China](mobile/mcsf/windows-phone-store-for-china.md)
+##### [Store settings: Microsoft Store for China](mobile/mcsf/windows-phone-store-for-china.md)
 ##### [System tray: Display location icon](mobile/mcsf/display-location-icon.md)
 #### [Customizations for SMS and MMS](mobile/mcsf/customizations-for-sms-and-mms.md)
 ##### [Add encoding extension tables for SMS](mobile/mcsf/add-encoding-extension-tables-for-sms.md)
