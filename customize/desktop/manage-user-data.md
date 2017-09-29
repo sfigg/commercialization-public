@@ -24,7 +24,7 @@ Considerations:
 * Only the state of the check box when the user clicks Next is recorded. No indication of whether that value is or isn't the default value is captured.
 
 > [!Important]
-> You must never place the private key on the customer's PC. Instead, it should be stored securely on your servers so the data can be decrypted after it's uploaded. If a customer clicks Next on the Registration pages, Windows uses the public key to create Sessionkey.blob in the `\OOBE\Info` folder. Your service or Windows Store app should upload the data to your server by using SSL. You then need to decrypt the session key to decrypt the customer data.
+> You must never place the private key on the customer's PC. Instead, it should be stored securely on your servers so the data can be decrypted after it's uploaded. If a customer clicks Next on the Registration pages, Windows uses the public key to create Sessionkey.blob in the `\OOBE\Info` folder. Your service or Microsoft Store app should upload the data to your server by using SSL. You then need to decrypt the session key to decrypt the customer data.
 
 If there’s no public key in the `\OOBE\Info` folder, the registration pages aren’t shown.
 
