@@ -24,7 +24,7 @@ After you apply the SPPs, they'll be automatically included in the recovery tool
 
 When you apply SPPs to a Compact OS system, the applications in that SPP are single-instanced automatically to save space.
 
-See [Siloed provisioning package](siloed-provisioning-packages.md) for more information on how to capture different types of settings, drivers, and applications.
+See [Siloed provisioning packages](siloed-provisioning-packages.md) to learn more about capturing different types of settings, drivers, and applications.
 
 **Notes**
 
