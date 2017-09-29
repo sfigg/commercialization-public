@@ -51,7 +51,7 @@ The following XML shows how to set OEM information.
 
 ```xml
 <OEMInformation>
-   <SupportProvider>Contoso</SupportProvider>
+   <SupportProvider>Contoso Support</SupportProvider>
    <SupportAppURL>contoso-contact-support</SupportAppURL>
    <SupportURL>http://www.fabrikam.com/support</SupportURL>
 </OEMInformation>

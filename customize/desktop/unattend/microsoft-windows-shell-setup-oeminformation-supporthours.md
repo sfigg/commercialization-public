@@ -16,7 +16,7 @@ ms.technology: windows-oem
 # SupportHours
 
 > [!Important]
-> SupportPhone is deprecated in Windows 10, version 1709.
+> SupportHours is deprecated in Windows 10, version 1709.
 
 `SupportHours` specifies the hours that support is available for the OEM.
 
@@ -54,7 +54,7 @@ The following XML shows how to set OEM information.
 
 ```xml
 <OEMInformation>
-   <SupportProvider>Contoso</SupportProvider>
+   <SupportProvider>Contoso Support</SupportProvider>
    <SupportAppURL>contoso-contact-support</SupportAppURL>
    <SupportURL>http://www.fabrikam.com/support</SupportURL>
 </OEMInformation>

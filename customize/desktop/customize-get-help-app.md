@@ -41,11 +41,13 @@ OEM customization provides the top support option in the list — a link to eith
 For Enterprise SKUs, the Get Help app provides a different experience that focuses on getting customers to the right kind of support. The support options listed are shown to all enterprise customers. Availability of support within each option depends upon support agreements with the enterprise. 
 
 > [!Note]
-> OEM support options are not displayed in the Enterprise experience of the Get Help app. 
+> OEM support options are not displayed in the Enterprise experience of the Get Help app.
 
 ## Customize support information
 
-To display your OEM support information in the Get Help app, you must provide either a link to the URL of your support website, or to the URI of your support app, in unattend.xml under `Microsoft-Windows-Shell-Setup-OEMInformation`. For a list of all parameters you can set, and their descriptions, please see the [OEMInformation setting](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-shell-setup-oeminformation) in the Unattended setup reference.
+To display your OEM support information in the Get Help app, you must provide either a link to the URL of your support website, or to the URI of your support app, in Unattend.xml under `Microsoft-Windows-Shell-Setup-OEMInformation`.
+
+See the [OEMInformation setting](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-shell-setup-oeminformation) in the Unattended setup reference to learn more about how to add your support information to the Get Help app.
 
 ### Link to your support app
 

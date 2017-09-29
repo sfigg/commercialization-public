@@ -16,7 +16,7 @@ ms.technology: windows-oem
 # Logo
 
 > [!Important]
-> SupportPhone is deprecated.
+> Logo is deprecated in Windows 10, version 1709.
 
 `Logo` specifies the path to the .bmp file of the manufacturer's logo. This logo appears in the **Performance Information and Tools** Control Panel, but is not used in the **Settings** app. In the **Settings** app, no logo displays.
 
@@ -57,7 +57,7 @@ The following XML shows how to set OEM information.
 
 ```xml
 <OEMInformation>
-   <SupportProvider>Contoso</SupportProvider>
+   <SupportProvider>Contoso Support</SupportProvider>
    <SupportAppURL>contoso-contact-support</SupportAppURL>
    <SupportURL>http://www.fabrikam.com/support</SupportURL>
 </OEMInformation>

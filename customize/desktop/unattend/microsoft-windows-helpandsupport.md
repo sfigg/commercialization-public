@@ -8,19 +8,16 @@ ms.assetid: 7d957ce8-fb2f-4484-bc17-36fef89d368a
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
 ms.author: alhopper
-ms.date: 05/02/2017
+ms.date: 10/17/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # Microsoft-Windows-HelpAndSupport
 
-
-**Note**  
-In Windows 10, the [HelpAndSupport](microsoft-windows-helpandsupport-helpandsupport.md) settings are deprecated because the Help component that they impact is being retired. Existing information about the HelpAndSupport settings are provided for reference only.
-
- 
+> [!Important]
+> In Windows 10, the [HelpAndSupport](microsoft-windows-helpandsupport-helpandsupport.md) settings are deprecated because the Help component that they impact is being retired. Existing information about the HelpAndSupport settings are provided for reference only.
+> Windows 10 offers a new user support system, the Get Help app. For more information, see [Customize the Get Help app](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/customize-get-help-app).
 
 In Windows 10, the OS disables the help components that shipped in Windows 8 and Windows 8.1 including the Help and Support Windows desktop application (HelpPane.exe). HelpPane.exe will continue to exist in the box, but calls to its interfaces will result in one of two outcomes:
 
