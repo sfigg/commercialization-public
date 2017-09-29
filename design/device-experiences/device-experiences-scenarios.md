@@ -61,7 +61,7 @@ To build devices with a rich user experience, you need to choose the right hardw
 <td><p>Provides information about how Thermal management in Windows plays a key role in delivering PCs that have good performance and are safe to use — even when they are running a high-energy workload.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Security and reliability](security-and-reliabilty.md)</p></td>
+<td><p>[Security considerations for OEMs](OEM-security-considerations.md)</p></td>
 <td><p>Provides guidance on platform integrity and data protection features including Secure boot and BitLocker.</p></td>
 </tr>
 <tr class="odd">
