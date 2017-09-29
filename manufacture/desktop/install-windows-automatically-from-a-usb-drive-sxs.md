@@ -12,7 +12,7 @@ ms.technology: windows-oem
 ---
 
 >[!important]
->As of Windows 10, version 1703, imaging has been removed from Windows ICD.
+>As of Windows 10, version 1703, Windows ICD no longer supports generating customized images. 
 > 
 >OEMs can go to [Windows guides and walkthroughs](windows-10-guides-and-walkthroughs.md) to learn how to create OEM Windows deployments.
 >
