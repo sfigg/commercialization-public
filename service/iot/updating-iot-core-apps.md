@@ -29,7 +29,7 @@ We recommend that you [test and track the update](#Test_and_track_the_update) us
 
 Finally, sign and submit the app package to the Windows Store. 
 
-To learn more, see [Installing and Servicing apps on Windows 10 IoT Core](https://developer.microsoft.com/en-us/windows/iot/docs/store)
+To learn more, see [Installing and Servicing apps on Windows 10 IoT Core](https://developer.microsoft.com/windows/iot/docs/store)
 
 ## <span id="Test_and_track_the_update"></span><span id="test and track the update"></span><span id="TEST AND TRACK THE UPATE"></span>Test and track the update (recommended)
 

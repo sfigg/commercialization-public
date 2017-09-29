@@ -82,7 +82,7 @@ We'll take our customizations, put them together, and test them in a retail buil
 	
 	-  Subject       : Subject in the certificate ( see Certificate -> Details -> Subject)
 	
-	-  CrossCertRoot : Microsoft-supplied Cross Certificate Root. See Cross-Certificate List in [Cross-Certificates for Kernel Mode Code Signing](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/cross-certificates-for-kernel-mode-code-signing#cross-certificate-list).
+	-  CrossCertRoot : Microsoft-supplied Cross Certificate Root. See Cross-Certificate List in [Cross-Certificates for Kernel Mode Code Signing](https://docs.microsoft.com/windows-hardware/drivers/install/cross-certificates-for-kernel-mode-code-signing#cross-certificate-list).
 	
 	
 2.	From the IoT Core Shell, enable retail signing.

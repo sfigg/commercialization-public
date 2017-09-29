@@ -438,7 +438,7 @@ Where _Fabrikam_ is the OEM company name.
 
 ## setsignature.cmd
 
-Sets the [Cross-Certificates for kernel-mode code signing](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/cross-certificates-for-kernel-mode-code-signing)
+Sets the [Cross-Certificates for kernel-mode code signing](https://docs.microsoft.com/windows-hardware/drivers/install/cross-certificates-for-kernel-mode-code-signing)
 
 ## setversion.cmd
 

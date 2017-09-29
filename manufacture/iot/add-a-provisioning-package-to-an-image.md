@@ -49,9 +49,9 @@ For this lab, we'll use the ProductB, that includes the default app (Bertha), wh
 
     5.  Optional: to add more than one WLAN network, go back to WLANSetting, and repeat the process.
 
-7.  Optional: add other apps, drivers, and settings through the UI. To learn more, see [Configure customizations using Windows ICD](https://docs.microsoft.com/en-us/windows/configuration/provisioning-packages/provisioning-create-package#configure-settings).
+7.  Optional: add other apps, drivers, and settings through the UI. To learn more, see [Configure customizations using Windows ICD](https://docs.microsoft.com/windows/configuration/provisioning-packages/provisioning-create-package#configure-settings).
 
-8.  Export the provisioning package. For example, click **Export &gt; Provisioning Package &gt; Next &gt; (Uncheck the Encrypt Package box) &gt; Next &gt;  Build**. (To learn more, see [Export a provisioning package](https://docs.microsoft.com/en-us/windows/configuration/provisioning-packages/provisioning-create-package#build-package). )
+8.  Export the provisioning package. For example, click **Export &gt; Provisioning Package &gt; Next &gt; (Uncheck the Encrypt Package box) &gt; Next &gt;  Build**. (To learn more, see [Export a provisioning package](https://docs.microsoft.com/windows/configuration/provisioning-packages/provisioning-create-package#build-package). )
 
     >[!IMPORTANT]
     >When you make any changes to a provisioning package, Windows Configuration Designer increments the version number in the provisioning file (customizations.xml). The version number is not major.minor, it is a number with a decimal point. For example, 1.19 is a lower version than 1.2.

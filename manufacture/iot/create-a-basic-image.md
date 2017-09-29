@@ -67,7 +67,7 @@ The certificates are added to the root. To learn more, see [Set up the signing e
 cd c:\BSP
 build.cmd
 ```
-For more information on available bsps, see [Windows 10 IoT Core BSPs](https://docs.microsoft.com/en-us/windows/iot-core/commercialize-your-device/CreateBSP).
+For more information on available bsps, see [Windows 10 IoT Core BSPs](https://docs.microsoft.com/windows/iot-core/commercialize-your-device/CreateBSP).
 
 ### Build packages
 

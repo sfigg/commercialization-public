@@ -178,5 +178,5 @@ CustomMBM is a customized version of the Intel MinnowBoard Max Board BSP, where 
 
 [Creating your own board support package (BSP)](create-a-new-bsp.md)
 
-[Boot and UEFI](https://docs.microsoft.com/en-us/windows-hardware/drivers/bringup/boot-and-uefi) 
+[Boot and UEFI](https://docs.microsoft.com/windows-hardware/drivers/bringup/boot-and-uefi) 
 [Windows and GPT FAQ](../desktop/windows-and-gpt-faq.md).  
