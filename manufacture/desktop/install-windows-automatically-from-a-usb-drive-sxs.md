@@ -12,9 +12,11 @@ ms.technology: windows-oem
 ---
 
 >[!important]
->As of Windows 10, version 1703, imaging has been removed from Windows ICD. 
->OEMs can go to [Windows guides and walkthroughs](windows-10-guides-and-walkthroughs.md) to for walkthroughs on how to create custom Windows deployments.
->IT pros can visit [Deploy Windows 10](https://docs.microsoft.com/en-us/windows/deployment/deploy) to learn how to create Windows deployments.
+>As of Windows 10, version 1703, imaging has been removed from Windows ICD.
+> 
+>OEMs can go to [Windows guides and walkthroughs](windows-10-guides-and-walkthroughs.md) to learn how to create OEM Windows deployments.
+>
+>IT pros can go to [Deploy Windows 10](https://docs.microsoft.com/en-us/windows/deployment/deploy) to learn how to create Windows deployments for their environments.
 
 # Lab 1: Customize and install Windows using the Windows Imaging and Configuration Designer (ICD)
 
