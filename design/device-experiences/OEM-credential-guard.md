@@ -41,7 +41,6 @@ To determine if a device is able to run Window Defender Device Guard and Credent
 -
 - [Windows Defender Device Guard hardware requirements](OEM-device-guard.md)
 - [Windows Defender Application Guard hardware requirements](OEM-app-guard.md)
-- [BitLocker device encryption](OEM-device-encryption.md)
 
 
 
