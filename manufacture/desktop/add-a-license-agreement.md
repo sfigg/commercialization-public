@@ -21,7 +21,18 @@ Note: If the license terms are included, the OEM must include a version of the l
 
 Use the examples in the [USB-B.zip](http://download.microsoft.com/download/5/8/4/5844EE21-4EF5-45B7-8D36-31619017B76A/USB-B.zip) key.
 
-## <span id="Create_license_files"></span>Create license files
+### <span id="Mount_the_image"></span>Mount the image
+
+Use the steps from [Lab 3: Add device drivers (.inf-style)](add-device-drivers.md) to mount the image. The short version:
+
+1.  Open the command line as an administrator (**Start** > type **deployment** > right-click **Deployment and Imaging Tools Environment** > **Run as administrator**.)
+
+2.  Make a backup of the file (`copy "C:\Images\Win10_x64\sources\install.wim" C:\Images\install-backup.wim`)
+
+3.  Mount the image (`md C:\mount\windows`, then `Dism /Mount-Image /ImageFile:"C:\Images\install.wim" /Index:1 /MountDir:"C:\mount\windows" /Optimize`)
+
+
+# <span id="Create_license_files"></span>Create license files
 
 1.  Create folders under a working folder, for example:
 
@@ -66,7 +77,7 @@ Use the examples in the [USB-B.zip](http://download.microsoft.com/download/5/8/4
     </FirstExperience>
     ```
 
-6.  Copy **oobe.xml file** to each language folder.
+6.  Copy your **oobe.xml** to each language folder.
 
     ```
     Copy e:\configset\oobe.xml c:\mount\windows\windows\system32\oobe\info\default\1033
@@ -97,26 +108,6 @@ Use the examples in the [USB-B.zip](http://download.microsoft.com/download/5/8/4
     ```
     12-31-2016
     ```
-
-### <span id="Mount_the_image"></span>Mount the image
-
-Use the steps from [Lab 3: Add device drivers (.inf-style)](add-device-drivers.md) to mount the image. The short version:
-
-1.  Open the command line as an administrator (**Start** > type **deployment** > right-click **Deployment and Imaging Tools Environment** > **Run as administrator**.)
-
-2.  Make a backup of the file (`copy "C:\Images\Win10_x64\sources\install.wim" C:\Images\install-backup.wim`)
-
-3.  Mount the image (`md C:\mount\windows`, then `Dism /Mount-Image /ImageFile:"C:\Images\install.wim" /Index:1 /MountDir:"C:\mount\windows" /Optimize`)
-
-### <span id="Add_the_license files"></span>Add the license and image info files
-
-1.  Copy the answer file into the image into the \\Windows\\System32\\oobe\\ folder. Create the folder if it doesn’t exist.
-
-    ```
-    MkDir c:\mount\windows\windows\system32\oobe
-    xcopy C:\oobe \c:\mount\windows\windows\system32\oobe /s
-    ```
-    
 2.  Copy the image info file into the image.
 
     ```
