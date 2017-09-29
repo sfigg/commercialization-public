@@ -28,6 +28,7 @@ COSA can be extended with OEM-generated provisioning packages during desktop ima
 > * Branding Name
 > * Branding Icon Name
 > * Use Branding Name on Roaming
+
 > [!Important]
 > Microsoft is collecting the following telemetry data related to the COSA:
 > - AfterMarketProfile – Published when an OEM package adds a new profile. Data includes the profile ID (typically a GUID) as well as the targeting info for the profile (such as MCC, MNC, SPN, and so on).
@@ -141,7 +142,7 @@ You can add a new profile that is not yet included in the COSA database using th
 
 For a full list of COSA settings, please see [Planning your COSA/APN database submission](https://docs.microsoft.com/en-us/windows-hardware/drivers/mobilebroadband/planning-your-apn-database-submission#complete-the-apncosa-update-spreadsheet).
 
-## To change an existing profile 
+## To change an existing profile
 
 Use the `Replace` operator to make changes to an existing profile.
 

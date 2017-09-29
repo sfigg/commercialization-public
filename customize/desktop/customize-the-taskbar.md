@@ -35,15 +35,18 @@ For right-to-left languages, the taskbar icons are in the opposite order, with t
 
 ## Add a default path
 
-To use a Taskbar Layout Modification XML file in Windows, you’ll need to add a registry key (LayoutXMLPath) to the image, and then generalize and recapture the image. The registry key must be processed before the specialize configuration pass. This means you won’t be able to simply add the registry key by using Synchronous Commands/FirstLogonCommands unless you plan to generalize the image afterwards. 
+To use a Taskbar Layout Modification XML file in Windows, you’ll need to add a registry key (LayoutXMLPath) to the image, and then generalize and recapture the image. The registry key must be processed before the specialize configuration pass. This means you won’t be able to simply add the registry key by using Synchronous Commands/FirstLogonCommands unless you plan to generalize the image afterwards.
 
-You can use any name or file location by defining this in the registry key; the filename and path to TaskbarLayoutModification.xml is not required. The other shortcut files, apps, and the Taskbar Layout Modification file itself can be changed at any time through regular imaging techniques. You can add this registry key to all your images, even if you intend to add taskbar links using the Classic Unattend method. 
+You can use any name or file location by defining this in the registry key; the filename and path to TaskbarLayoutModification.xml is not required. The other shortcut files, apps, and the Taskbar Layout Modification file itself can be changed at any time through regular imaging techniques. You can add this registry key to all your images, even if you intend to add taskbar links using the Classic Unattend method.
 
 ## Configure taskbarlayoutmodification.xml
 
 1. Install the Windows image to a technician computer.
 1. After the image boots, go into audit mode by pressing CTRL+SHIFT+F3.
-1. Add the following registry key to define a default location for the Taskbar Layout Modification file: `cmd /c reg add HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\ /v LayoutXMLPath /d C:\Windows\Fabrikam\TaskbarLayoutModification.xml`
+1. Add the following registry key to define a default location for the Taskbar Layout Modification file:
+
+   `cmd /c reg add HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\ /v LayoutXMLPath /d C:\Windows\Fabrikam\TaskbarLayoutModification.xml`
+
 1. Add a Taskbar Layout Modification file (TaskbarLayoutModification.xml) in the default location for example: `C:\Windows\Fabrikam\TaskbarLayoutModification.xml`
 
     ```xml
@@ -80,15 +83,13 @@ You can use any name or file location by defining this in the registry key; the 
     ```
 
 1. Generalize the Windows image using [Sysprep](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/sysprep--system-preparation--overview):
-    ```xml
-    Sysprep /generalize /oobe /shutdown
-    ```
+
+    `Sysprep /generalize /oobe /shutdown`
 
 1. Boot to Windows PE.
 1. Recapture the image. For example:
-    ```xml
-    Dism /Capture-Image /CaptureDir:C:\ /ImageFile:c:\install-with-new-taskbar-layout.wim /Name:"Windows image with Taskbar layout"
-    ```
+
+    `Dism /Capture-Image /CaptureDir:C:\ /ImageFile:c:\install-with-new-taskbar-layout.wim /Name:"Windows image with Taskbar layout"`
 
 1. You can now apply this image to other PCs.
 
@@ -101,9 +102,8 @@ You can use any name or file location by defining this in the registry key; the 
     ```
 
 * For **Universal Windows apps**, use the Universal Windows app user model ID. Example:
-    ```xml
-    UWA AppUserModelID="Microsoft.Windows.Photos_8wekyb3d8bbwe!App"
-    ```
+
+    `UWA AppUserModelID="Microsoft.Windows.Photos_8wekyb3d8bbwe!App"`
 
 > [!Note]
 > Links to .url files are not supported.
@@ -130,9 +130,7 @@ The default transparency setting for the taskbar is 15%. To make Taskbar work wi
 
 To set the transparency for the Taskbar, create a registry key called “UseOLEDTaskbarTransparency” and place it in the following location:
 
-```xml
-HKLM\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced
-```
+`HKLM\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced`
 
 > [!Important]
 > This registry key should only be used to change the taskbar transparency for OLED screens. We do not advise changing the default transparency on non-OLED displays.

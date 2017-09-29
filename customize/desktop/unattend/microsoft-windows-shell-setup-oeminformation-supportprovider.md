@@ -1,10 +1,10 @@
 ---
-title: SupportURL
-description: SupportURL
+title: SupportProvider
+description: SupportProvider
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-ms.assetid: 311d7bbd-0973-40b3-95be-07eca2edb0c1
+ms.assetid: 38aa8ab4-d36d-4c33-8f1c-f4e35e7852ff
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
 ms.author: alhopper
@@ -13,19 +13,17 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-# SupportURL
+# SupportProvider
 
-`SupportURL` specifies the complete URL of the support page for the OEM that will be launched from the Get Help app.
+`SupportProvider` specifies the name of your support app or website. If not provided, the default Manufacturer name (from msinfo32.exe) will be used.
 
 ## Values
 
 | Value                   | Description                                                                           |
 |:------------------------|:--------------------------------------------------------------------------------------|
-| *url*                   | Specifies the support page URL for the OEM. URL must be a complete URL, including the `http://` prefix. *Url* is a string with a maximum length of 2083 characters. Required, unless [`SupportAppURL`](microsoft-windows-shell-setup-oeminformation-supportappurl.md) is present, in which case it is optional. If both are supplied, `SupportAppURL` is used.                                         |
+| *support-name*          | String. Optional. The name of your support app or website.                            |
 
-This string type supports empty elements.
-
-## Valid Passes
+## Valid Configuration Passes
 
 auditUser
 
@@ -39,7 +37,7 @@ specialize
 
 ## Parent Hierarchy
 
-[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [OEMInformation](microsoft-windows-shell-setup-oeminformation.md) | **SupportURL**
+[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [OEMInformation](microsoft-windows-shell-setup-oeminformation.md) | **SupportPhone**
 
 ## Applies To
 

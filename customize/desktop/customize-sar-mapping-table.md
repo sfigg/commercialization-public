@@ -72,54 +72,7 @@ For the `BackOffEnabled` and `ControlMode` settings, the value in modem DSI mess
 
 | Value name                                 | Type                        | Data                                                                               |
 |:-------------------------------------------|:----------------------------|:-----------------------------------------------------------------------------------|
-| SARMappingTableEnabled                     | DWORD                       | `0` - SAR mapping table is disabled. <br/> `1` - SAR mapping table is enabled. <br/> If the data is absent or invalid, the default value of `0` is applied. |
-
-| Value name                                 | Type                        | Data                                                                               |
-|:-------------------------------------------|:----------------------------|:-----------------------------------------------------------------------------------|
-| SARMappingTableEnabled                     | DWORD                       | `0` - SAR mapping table is disabled.                                               ||                                            |                             | `1` - SAR mapping table is enabled.                                                ||                                            |                             | If the data is absent or invalid, the default value of `0` is applied.             |
-
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr>
-<th>Value name</th>
-<th>Type</th>
-<th>Data</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>SARMappingTableEnabled</td>
-<td>DWORD</td>
-<td>`0` - SAR mapping table is disabled. <br/>
-`1` - SAR mapping table is enabled. <br/>
-If the data is absent or invalid, the default value of `0` is applied. </td>
-</tr>
-<tr>
-<td>BackoffEnabled</td>
-<td>DWORD</td>
-<td>`0` - SAR back-off is disabled <br/>
-`1` - SAR-backoff is enabled <br/>
-`0xFFFFFFFF` – modem should retain its current back-off state. <br/>
-If the data is absent or invalid, the default value of `0xFFFFFFFF` is applied. </td>
-</tr>
-<tr>
-<td>ControlMode</td>
-<td>DWORD</td>
-<td>`0` - SAR back-off mechanism is controlled by the modem device directly. <br/>
-`1` - SAR-backoff mechanism is controlled and managed by the operating system. <br/>
-`0xFFFFFFFF` – modem should retain its current control mode. <br/>
-If the data is absent or invalid, the default value of `0xFFFFFFFF` is applied. </td>
-</tr>
-<tr>
-<td>ConfigurationVersion</td>
-<td>DWORD</td>
-<td>This registry value is designed for OEM run-time components to inform Windows that the SAR mapping table and other parameters are updated. An OEM run-time component must increment the `ConfigurationVersion` registry value every time it completes updating the SAR mapping table, or other parameters in the registry.<br/>
-If the data is absent or invalid, the run-time component will not configure any SAR registry settings. </td>
-</tr>
-</tbody>
-</table>
+| SARMappingTableEnabled                     | DWORD                       | `0` - SAR mapping table is disabled. <br/> `1` - SAR mapping table is enabled. <br/> If the data is absent or invalid, the default value of `0` is applied.                                                                                             |
+| BackoffEnabled                             | DWORD                       | `0` - SAR back-off is disabled <br/> `1` - SAR-backoff is enabled. <br/> `0xFFFFFFFF` – modem should retain its current back-off state. <br/> If the data is absent or invalid, the default value of `0xFFFFFFFF` is applied.                           |
+| ControlMode                                | DWORD                       | `0` - SAR back-off mechanism is controlled by the modem device directly. <br/> `1` - SAR-backoff mechanism is controlled and managed by the operating system. <br/> `0xFFFFFFFF` – modem should retain its current control mode. <br/> If the data is absent or invalid, the default value of `0xFFFFFFFF` is applied.                                                                                                |
+| ConfigurationVersion                       | DWORD                       | This registry value is designed for OEM run-time components to inform Windows that the SAR mapping table and other parameters are updated. An OEM run-time component must increment the `ConfigurationVersion` registry value every time it completes updating the SAR mapping table, or other parameters in the registry.<br/> If the data is absent or invalid, the run-time component will not configure any SAR registry settings.                                                                                                                                                       |

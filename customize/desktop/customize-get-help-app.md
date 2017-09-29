@@ -28,13 +28,13 @@ Microsoft’s Virtual Agent is a support chat bot designed to help with issues r
 
 OEM customization provides the top support option in the list — a link to either your support website, or your support app.
 
-![Get Help app - Virtual Agent](images/get-help-app-virtual-agent.png)
+![Get Help app - Virtual Agent](images/get-help-virtual-agent.png)
 
 In markets that do not have the new Virtual Agent experience available, customers can utilize search support by entering a question and receiving back recommended support content. Beneath the search results, the options for contacting support will be listed.
 
 OEM customization provides the top support option in the list — a link to either the your support website, or your support app.
 
-![Get Help app - search support](images/get-help-app-search-support.png)
+![Get Help app - search support](images/get-help-search-support.png)
 
 ### Enterprise experience
 
@@ -45,7 +45,7 @@ For Enterprise SKUs, the Get Help app provides a different experience that focus
 
 ## Customize support information
 
-To display your OEM support information in the Get Help app, you must provide either a link to the URL of your support website, or to the URI of your support app, in unattend.xml under `Microsoft-Windows-Shell-Setup-OEMInformation`. For a list of all parameters you can set, and their descriptions, please see the [OEMInformation seetting](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-shell-setup-oeminformation) in the Unattended setup reference.
+To display your OEM support information in the Get Help app, you must provide either a link to the URL of your support website, or to the URI of your support app, in unattend.xml under `Microsoft-Windows-Shell-Setup-OEMInformation`. For a list of all parameters you can set, and their descriptions, please see the [OEMInformation setting](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-shell-setup-oeminformation) in the Unattended setup reference.
 
 ### Link to your support app
 
