@@ -30,4 +30,3 @@ As an OEM, you provide the hardware necessary to enable Application Guard. Here 
 
 - [Windows Defender Device Guard hardware requirements](OEM-device-guard.md)
 - [Windows Defender Credential Guard hardware requirements](OEM-credential-guard.md)
-- [Bitlocker device encryption](OEM-device-encryption.md)
