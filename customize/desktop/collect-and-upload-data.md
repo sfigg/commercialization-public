@@ -13,13 +13,13 @@ ms.technology: windows-oem
 
 # Collect and upload data
 
-Create and preinstall a Windows Store app, or write a service to run after first sign-in, to:
+Create and preinstall a Microsoft Store app, or write a service to run after first sign-in, to:
 
 1. Collect the encrypted customer data, including the user name from the [Windows.System.User namespace](https://docs.microsoft.com/en-us/uwp/api/windows.system.user) as well as the [local time stamp](#timestamp) of first sign-in.
 1. Upload that data set to your server for decryption and use.
 
 > [!Note]
-> A Windows Store app must be started by the customer for the data to be returned.
+> A Microsoft Store app must be started by the customer for the data to be returned.
 
 The app is registered using its Application User Model ID (AUMID) and can collect the time stamp, user data, session key, and check box state data written to the appdata folder for the app. To do this, you can use the [Microsoft-Windows-Shell-Setup | OOBE | OEMAppId](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-shell-setup-oobe-oemappid) setting.
 
@@ -35,6 +35,6 @@ The time stamp of first sign-in is written to the Windows registry under this ke
 
 The time stamp is written in UTC (Coordinated Universal Time) format.
 
-If you implement a Windows Store app to collect customer data from the Registration pages, you can provide the Application User Model ID (AUMID) for that app so that the time stamp is written to the AppData folder of your app. For more info about how to use AUMID and the AppData folder, see [Develop UWP apps](https://developer.microsoft.com/en-us/windows/apps/develop).
+If you implement a Microsoft Store app to collect customer data from the Registration pages, you can provide the Application User Model ID (AUMID) for that app so that the time stamp is written to the AppData folder of your app. For more info about how to use AUMID and the AppData folder, see [Develop UWP apps](https://developer.microsoft.com/en-us/windows/apps/develop).
 
 If you implement a service to collect customer data from the Registration pages, your service can read the time stamp from the registry.

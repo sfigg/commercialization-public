@@ -58,7 +58,7 @@ The following table contains predefined key combinations for general UI control:
 | Windows logo key + R                   | **Win+R**             | Open Run dialog box.                                                                                                                 |
 | Alt + Tab                              | **Alt+Tab**           | Switch task. Also blocks the Alt + Shift + Tab key combination.                                                                      |
 | Ctrl + Tab                             | **Ctrl+Tab**          | Switch window.                                                                                                                       |
-| Windows logo key + Tab                 | **Win+Tab**           | Cycle through Windows Store apps. Also blocks the Windows logo key + Ctrl + Tab and Windows logo key + Shift + Tab key combinations. |
+| Windows logo key + Tab                 | **Win+Tab**           | Cycle through Microsoft Store apps. Also blocks the Windows logo key + Ctrl + Tab and Windows logo key + Shift + Tab key combinations. |
 | Windows logo key + D                   | **Win+D**             | Show desktop.                                                                                                                        |
 | Windows logo key + M                   | **Win+M**             | Minimize all windows.                                                                                                                |
 | Windows logo key + Home                | **Win+Home**          | Minimize or restore all inactive windows.                                                                                            |
@@ -78,8 +78,8 @@ The following table contains predefined key combinations for general UI control:
 | Windows logo key + Spacebar            | **Win+Space**         | Switch layout.                                                                                                                       |
 | Windows logo key + O                   | **Win+O**             | Lock device orientation.                                                                                                             |
 | Windows logo key + Ctrl + Enter        | **Win+Ctrl+Enter**    | Start Narrator.                                                                                                                      |
-| Windows logo key + Page Up             | **Win+PageUp**        | Move a Windows Store app to the left monitor.                                                                                        |
-| Windows logo key + Page Down           | **Win+PageDown**      | Move a Windows Store app to right monitor.                                                                                           |
+| Windows logo key + Page Up             | **Win+PageUp**        | Move a Microsoft Store app to the left monitor.                                                                                        |
+| Windows logo key + Page Down           | **Win+PageDown**      | Move a Microsoft Store app to right monitor.                                                                                           |
 | Windows logo key + Period              | **Win+.**             | Snap the current screen to the left or right gutter. Also blocks the Windows logo key + Shift + Period key combination.              |
 | Windows logo key + C                   | **Win+C**             | Open charms.                                                                                                                         |
 | Windows logo key + I                   | **Win+I**             | Open Settings charm.                                                                                                                 |
