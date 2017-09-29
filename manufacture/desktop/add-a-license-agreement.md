@@ -45,7 +45,15 @@ Use the examples in the [USB-B.zip](http://download.microsoft.com/download/5/8/4
     
     Samples are in C:\USB-B\resources\agreement.rtf
     
-4.  Create an **oobe.xml** file to specify the agreement.rtf file path.
+4. Open a text editor and create .html versions of your license terms. Save the terms to the same folders as .rtf versions. You can use the [EULA example](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/oem-license#eula-example) from [OEM registration](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/oem-license) to create your files.  The names of the EULA should be identical, except for the extension.
+
+    ```
+    C:\mount\windows\Windows\System32\oobe\info\default\1033\agreement.html  (English version)
+    C:\mount\windows\Windows\System32\oobe\info\default\1031\agreement.html  (German version)
+    ```
+
+
+5.  Create an **oobe.xml** file to specify the agreement.rtf file path. Windows will automatically look for the associated agreement.html file.
 
     ```
     <?xml version="1.0" encoding="utf-8"?>
@@ -58,14 +66,14 @@ Use the examples in the [USB-B.zip](http://download.microsoft.com/download/5/8/4
     </FirstExperience>
     ```
 
-5.  Copy **oobe.xml file** to each language folder.
+6.  Copy **oobe.xml file** to each language folder.
 
     ```
     Copy e:\configset\oobe.xml c:\mount\windows\windows\system32\oobe\info\default\1033
     Copy e:\configset\oobe.xml c:\mount\windows\windows\system32\oobe\info\default\1031
     ```
 
-6.  For Chinese Hong Kong, add the following OOBE.xml file. (In Windows 10 version 1607, the Chinese Hong Kong language pack was merged into the Chinese Taiwan language pack, so for this region, these steps are now required).
+7.  For Chinese Hong Kong, add the following OOBE.xml file. (In Windows 10 version 1607, the Chinese Hong Kong language pack was merged into the Chinese Taiwan language pack, so for this region, these steps are now required).
 
     File: c:\mount\windows\Windows\System32\OOBE\Info\OOBE.xml
     
@@ -80,7 +88,7 @@ Use the examples in the [USB-B.zip](http://download.microsoft.com/download/5/8/4
     </FirstExperience>
     ```
 
-7.  Verify that each language folder contains an **oobe.xml** file and an **agreement.rtf** file in that corresponding language.
+8.  Verify that each language folder contains an **oobe.xml** file and an **agreement.rtf** file in that corresponding language.
 
     ![Agreement and OOBE files](images/agreement-and-oobe-files.png)
 
