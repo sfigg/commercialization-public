@@ -11,9 +11,7 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # Set dark mode
-
 
 This personalization setting for end users allows them to express preference whether to see applications which support the setting in a dark or light mode.
 
@@ -25,37 +23,29 @@ Many Microsoft first party applications apply the setting and it is easy for you
 
 OEMs can customize [themes](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-shell-setup-themes) via Unattend.xml as such:
 
-```
-<settings pass=”oobeSystem”> 
-        <Themes> 
-            <ThemeName>MyOLEDTheme</ThemeName> 
-            <DefaultThemesOff>false</DefaultThemesOff> 
-            <DesktopBackground>c:\windows\OLEDFriendlyImage.jpg</DesktopBackground> 
-            <WindowColor>Lime</WindowColor> 
-        </Themes> 
-    </settings> 
+```xml
+<settings pass=”oobeSystem”>
+        <Themes>
+            <ThemeName>MyOLEDTheme</ThemeName>
+            <DefaultThemesOff>false</DefaultThemesOff>
+            <DesktopBackground>c:\windows\OLEDFriendlyImage.jpg</DesktopBackground>
+            <WindowColor>Lime</WindowColor>
+        </Themes>
+    </settings>
 ```
 
 In Windows 10, build 1607, a setting has been added for light/dark mode toggle.
 
-```
-<settings pass=”oobeSystem”> 
-        <Themes> 
-            <ThemeName>MyOLEDTheme</ThemeName> 
-            <DefaultThemesOff>false</DefaultThemesOff> 
-            <DesktopBackground>c:\windows\OLEDFriendlyImage.jpg</DesktopBackground> 
-            <WindowColor>Lime</WindowColor> 
-            <UWPAppsUseLightTheme>false</UWPAppsUseLightTheme> 
-        </Themes> 
-    </settings> 
+```xml
+<settings pass=”oobeSystem”>
+        <Themes>
+            <ThemeName>MyOLEDTheme</ThemeName>
+            <DefaultThemesOff>false</DefaultThemesOff>
+            <DesktopBackground>c:\windows\OLEDFriendlyImage.jpg</DesktopBackground>
+            <WindowColor>Lime</WindowColor>
+            <UWPAppsUseLightTheme>false</UWPAppsUseLightTheme>
+        </Themes>
+    </settings>
 ```
 
 To learn more about customizing Windows themes, see [Themes](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-shell-setup-themes) in the Unattended Windows Setup Reference.
-
- 
-
-
-
-
-
-

@@ -10,7 +10,6 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # Cortana voice support
 
 Cortana voice walks the user through the OOBE experience, enabling the user to complete parts of OOBE by responding to spoken prompts. Cortana voice during OOBE is currently available in the following languages: **En-US**, **es-MX**, **ja-JP**, **en-GB**, **fr-FR**, **it-IT**, **de-DE**, **es-ES**, **fr-CA**, **en-CA**, **en-AU**, **pt-BR**, **zh-CN**.

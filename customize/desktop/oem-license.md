@@ -10,7 +10,6 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # OEM license terms
 
 You can add your OEM license terms to the License Terms screen in the first-run experience. These terms will appear next to the Windows License Terms.

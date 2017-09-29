@@ -10,7 +10,6 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # Configure OOBE.xml
 
 To include your registration pages in OOBE, you must configure the appropriate settings of your OOBE.xml file.

@@ -10,7 +10,6 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # Collect and upload data
 
 Create and preinstall a Microsoft Store app, or write a service to run after first sign-in, to:
@@ -27,7 +26,7 @@ If you create and run a service to upload the data, you should set the service t
 
 For more info about how to write a service, see [Developing Windows Service Applications](https://msdn.microsoft.com/en-us/library/y817hyb6(v=vs.110).aspx).
 
-## <A name="timestamp"></a>Collect the time stamp
+## <a name="timestamp"></a>Collect the time stamp
 
 The time stamp of first sign-in is written to the Windows registry under this key:
 

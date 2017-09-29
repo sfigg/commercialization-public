@@ -10,7 +10,6 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # Design your registration pages
 
 The registration pages present many customization opportunities. Here are the settings you can control:
@@ -78,7 +77,7 @@ Use two different styles for headers and body content.
 * Bold text: should be rendered using the `<b>` tag.
 * Hierarchy of information: indented sections or groups of bulleted items can be displayed with the `<DIR>` tag, required for EULA content template, optional for Flyouts.
 
-We require that the files for the in-place links are HTML. These files are rendered in a flyout. Documents in the flyout are sandboxed, such that links to external and online resources will not function. 
+We require that the files for the in-place links are HTML. These files are rendered in a flyout. Documents in the flyout are sandboxed, such that links to external and online resources will not function.
 
 > [!Important]
 > The following tags are prohibited and should not be included in your files:
