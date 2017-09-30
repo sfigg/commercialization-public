@@ -12,7 +12,7 @@ ms.technology: windows-oem
 ---
 # Security considerations for Original Equipment Manufacturers (OEMs)
 
-As an OEM you have an unique opportunity to impact the efficacy of the security measures abailable to your customers. Customers want and need the ability to secure their devices. Windows 10 security features are built on top of security enabled hardware and firmware. That's where you come in. If you want to provide a differentiator for your devices, or to sell in the Enterprise space, you want to provide the latest hardware enhancements, which in turn allow Windows 10 to be configured for safety. 
+As an OEM you have an unique opportunity to impact the efficacy of the security measures available to your customers. Customers want and need the ability to secure their devices. Windows 10 security features are built on top of security enabled hardware and firmware. That's where you come in. If you want to provide a differentiator for your devices, or to sell in the Enterprise space, you want to provide the latest hardware enhancements, which in turn allow Windows 10 to be configured for safety. 
 
 **IT Professionals:** To learn more about these features including how to deploy them in your enterprise, see [Device Security](https://docs.microsoft.com/en-us/windows/device-security/) and [Control the health of Windows 10-based devices](https://docs.microsoft.com/en-us/windows/device-security/protect-high-value-assets-by-controlling-the-health-of-windows-10-based-devices?).
 
@@ -52,11 +52,11 @@ Hardware-based security features, also called virtualization-based security or V
 
 **OEMs:** For more information about VBS hardware requirements, see [Virtualization Based Security (VBS) hardware requirements](OEM-VBS.md).
 
-## Windows 10S
+## Windows 10 S
 
 Windows 10 S is a specific configuration of Windows 10 Pro that offers a familiar, productive Windows experience that’s streamlined for security and performance. By exclusively using apps in the Windows Store and ensuring that you browse safely with Microsoft Edge, Windows 10 S keeps you running fast and secure day in and day out. The same technology that makes Windows 10 S secure also creates some differences when creating software images for Windows 10 devices.
 
-**OEMs:** For more information about Windows 10S, see [Windows 10S manufacturing overview](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/windows-10-s-overview).
+**OEMs:** For more information about Windows 10 S, see [Windows 10 S manufacturing overview](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/windows-10-s-overview).
 
 ## Windows Defender Application Guard
 
