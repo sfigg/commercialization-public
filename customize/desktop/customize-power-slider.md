@@ -12,7 +12,7 @@ ms.technology: windows-oem
 ---
 # Customize the Windows performance power slider
 
-The new Windows performance ppower slider enables end customers to quickly and intelligently trade performance of their system for longer battery life. As a customer switches between the four slider modes to trade performance for battery life (or vice versa), Windows power settings are engaged behind the scenes. You are able to customize the default slider mode for both AC and DC, and can also configure the power settings, and PPM options, that are engaged for each slider mode.
+The new Windows performance power slider enables end customers to quickly and intelligently trade performance of their system for longer battery life. As a customer switches between the four slider modes to trade performance for battery life (or vice versa), Windows power settings are engaged behind the scenes. You are able to customize the default slider mode for both AC and DC, and can also configure the power settings, and PPM options, that are engaged for each slider mode.
 
 Customers can access the slider on their Windows device by clicking or tapping the battery icon in the task bar. The slider appears in the battery flyout.
 
@@ -37,7 +37,7 @@ If you ship a device with a High Performance power plan, such as a gaming device
 
 You can also customize power settings for each of the slider modes in your firmware. See [Configure power settings and PPM options](#configure-settings) for more information.
 
-## Set default power slider moder
+## Set default power slider mode
 
 Customers can choose one of four slider modes:
 
@@ -47,7 +47,7 @@ Customers can choose one of four slider modes:
 * **Best Performance**: Favors performance over power and is targeted at users who want to tradeoff power for performance and responsiveness. Available on both AC and DC.
 
 > [!Note]
-> [Game mode](https://msdn.microsoft.com/en-us/library/windows/desktop/mt808808(v=vs.85).aspx) operates independently of the Windows performance/power slider, and can be engaged in any slider mode.
+> [Game mode](https://msdn.microsoft.com/en-us/library/windows/desktop/mt808808(v=vs.85).aspx) operates independently of the Windows performance power slider, and can be engaged in any slider mode.
 
 ### To set the default slider mode
 
@@ -56,11 +56,11 @@ You can configure the default slider mode for both AC and DC. If a customer choo
 > [!Note]
 > Battery Saver is not available as a default slider mode.
 
-First, create a Windows provisioning answer file (WPAF). Manually edit your answer file to add the settings described below, and pass it to the Windows Imaging and Configuration Designer (WICD) command-line interface to create a provisioning package. See [Configure power settings](https://msdn.microsoft.com/en-us/library/windows/hardware/mt608264(v=vs.85).aspx) and [Use the Configuration Designer command-line interface](https://msdn.microsoft.com/en-us/library/windows/hardware/dn916115(v=vs.85).aspx) for more information.
+First, create a Windows provisioning answer file (WPAF). Manually edit your answer file to add the settings described below, and pass it to the Windows Imaging and Configuration Designer (WICD) command-line interface to create a provisioning package. See [Use the Configuration Designer command-line interface](https://msdn.microsoft.com/en-us/library/windows/hardware/dn916115(v=vs.85).aspx) for detailed instructions on this process.
 
 | Windows Provisioning path                 | Provisioning setting name                            | Values                                               |
 |:------------------------------------------|:-----------------------------------------------------|:-----------------------------------------------------|
-| Common\Power\Controls\Settings\{setting name}                | **DefaultOverlayAcPowerScheme**: Default slider mode for AC <br/> **DefaultOverlayDcPowerScheme**: Default slider mode for DC    | **BetterBatteryLife**: Sets the slider to the Better Battery mode <br/> **MaxPerformance**: Sets the slider to the Best Performance mode                                                                                          |
+| `Common\Power\Controls\Settings\{setting name}`                | **DefaultOverlayAcPowerScheme**: Default slider mode for AC <br/> **DefaultOverlayDcPowerScheme**: Default slider mode for DC      | **BetterBatteryLife**: Sets the slider to the Better Battery mode <br/> **MaxPerformance**: Sets the slider to the Best Performance mode                                                                                          |
 
 > [!Note]
 > If no default is configured, Better Performance will be the default slider mode for both AC and DC.
@@ -93,7 +93,7 @@ Below is an example Windows provisioning sample for defining default slider mode
 </WindowsCustomizatons>
 ```
 
-## <a name="customize-settings"></a> Configure power settings and PPM options engaged by the slider
+## <a name="configuree-settings"></a> Configure power settings and PPM options engaged by the slider
 
 In Windows 10, build 1709, we’ve introduced new overlays that you can use to customize the power settings and PPM options that are engaged for each slider mode. In previous versions of Windows, power settings could only be configured per power scheme, and PPM options could only be configured per power profile. The introduction of overlays enables OEMs to better optimize power settings based on the slider mode selected by the user, as opposed to the power scheme or power profile selected by the device.
 
@@ -173,7 +173,7 @@ In Windows 10 build 1709, power throttling is always engaged, unless the slider 
 
 ## Query for power slider settings
 
-There are two logs you can utilize to query the performance/power slider settings defined on an OS image: Powercfg output, and Event Tracing for Windows (ETW) logs.
+There are two logs you can utilize to query the performance power slider settings defined on an OS image: Powercfg output, and Event Tracing for Windows (ETW) logs.
 
 ### PowerCfg output
 
