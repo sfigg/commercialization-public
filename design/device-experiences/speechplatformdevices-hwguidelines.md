@@ -1,295 +1,224 @@
-![](media/image2.jpeg){width="1.8611111111111112in"
-height="0.3972222222222222in"}
+---
+title: Speech Platform Input Device Hardware Guidelines
+description: Provides hardware guidelines for the design and development of audio input devices intended for use with Microsoft's Speech Platform.
+ms.assetid: 
+ms.author: sapaetsc
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
+---
+# Speech Platform: Input Device Hardware Guidelines, version 1.0
 
-**Microsoft Corporation Technical Documentation License Agreement
-(Standard)**\
-**READ THIS!** THIS IS A LEGAL AGREEMENT BETWEEN MICROSOFT CORPORATION
-("MICROSOFT") AND THE RECIPIENT OF THESE MATERIALS, WHETHER AN
-INDIVIDUAL OR AN ENTITY ("YOU"). IF YOU HAVE ACCESSED THIS AGREEMENT IN
-THE PROCESS OF DOWNLOADING MATERIALS ("MATERIALS") FROM A MICROSOFT WEB
-SITE, BY CLICKING "I ACCEPT", DOWNLOADING, USING OR PROVIDING FEEDBACK
-ON THE MATERIALS, YOU AGREE TO THESE TERMS. IF THIS AGREEMENT IS
-ATTACHED TO MATERIALS, BY ACCESSING, USING OR PROVIDING FEEDBACK ON THE
-ATTACHED MATERIALS, YOU AGREE TO THESE TERMS.\
-\
-1. For good and valuable consideration, the receipt and sufficiency of
-which are acknowledged, You and Microsoft agree as follows:\
-\
-(a) If You are an authorized representative of the corporation or other
-entity designated below ("**Company**"), and such Company has executed a
-Microsoft Corporation Non-Disclosure Agreement that is not limited to a
-specific subject matter or event ("**Microsoft NDA**"), You represent
-that You have authority to act on behalf of Company and agree that the
-Confidential Information, as defined in the Microsoft NDA, is subject to
-the terms and conditions of the Microsoft NDA and that Company will
-treat the Confidential Information accordingly;\
-\
-(b) If You are an individual, and have executed a Microsoft NDA, You
-agree that the Confidential Information, as defined in the Microsoft
-NDA, is subject to the terms and conditions of the Microsoft NDA and
-that You will treat the Confidential Information accordingly; or\
-\
-(c)If a Microsoft NDA has not been executed, You (if You are an
-individual), or Company (if You are an authorized representative of
-Company), as applicable, agrees: (a) to refrain from disclosing or
-distributing the Confidential Information to any third party for five
-(5) years from the date of disclosure of the Confidential Information by
-Microsoft to Company/You; (b) to refrain from reproducing or summarizing
-the Confidential Information; and (c) to take reasonable security
-precautions, at least as great as the precautions it takes to protect
-its own confidential information, but no less than reasonable care, to
-keep confidential the Confidential Information. You/Company, however,
-may disclose Confidential Information in accordance with a judicial or
-other governmental order, provided You/Company either (i) gives
-Microsoft reasonable notice prior to such disclosure and to allow
-Microsoft a reasonable opportunity to seek a protective order or
-equivalent, or (ii) obtains written assurance from the applicable
-judicial or governmental entity that it will afford the Confidential
-Information the highest level of protection afforded under applicable
-law or regulation. Confidential Information shall not include any
-information, however designated, that: (i) is or subsequently becomes
-publicly available without Your/Company’s breach of any obligation owed
-to Microsoft; (ii) became known to You/Company prior to Microsoft’s
-disclosure of such information to You/Company pursuant to the terms of
-this Agreement; (iii) became known to You/Company from a source other
-than Microsoft other than by the breach of an obligation of
-confidentiality owed to Microsoft; or (iv) is independently developed by
-You/Company. For purposes of this paragraph, "Confidential Information"
-means nonpublic information that Microsoft designates as being
-confidential or which, under the circumstances surrounding disclosure
-ought to be treated as confidential by Recipient. "Confidential
-Information" includes, without limitation, information in tangible or
-intangible form relating to and/or including released or unreleased
-Microsoft software or hardware products, the marketing or promotion of
-any Microsoft product, Microsoft's business policies or practices, and
-information received from others that Microsoft is obligated to treat as
-confidential.\
-\
-2. You may review these Materials only (a) as a reference to assist You
-in planning and designing Your product, service or technology
-("Product") to interface with a Microsoft Product as described in these
-Materials; and (b) to provide feedback on these Materials to Microsoft.
-All other rights are retained by Microsoft; this agreement does not give
-You rights under any Microsoft patents. You may not (i) duplicate any
-part of these Materials, (ii) remove this agreement or any notices from
-these Materials, or (iii) give any part of these Materials, or assign or
-otherwise provide Your rights under this agreement, to anyone else.\
-\
-3. These Materials may contain preliminary information or inaccuracies,
-and may not correctly represent any associated Microsoft Product as
-commercially released. All Materials are provided entirely "AS IS." To
-the extent permitted by law, MICROSOFT MAKES NO WARRANTY OF ANY KIND,
-DISCLAIMS ALL EXPRESS, IMPLIED AND STATUTORY WARRANTIES, AND ASSUMES NO
-LIABILITY TO YOU FOR ANY DAMAGES OF ANY TYPE IN CONNECTION WITH THESE
-MATERIALS OR ANY INTELLECTUAL PROPERTY IN THEM.\
-\
-4. If You are an entity and (a) merge into another entity or (b) a
-controlling ownership interest in You changes, Your right to use these
-Materials automatically terminates and You must destroy them.\
-\
-5. You have no obligation to give Microsoft any suggestions, comments or
-other feedback ("Feedback") relating to these Materials. However, any
-Feedback you voluntarily provide may be used in Microsoft Products and
-related specifications or other documentation (collectively, "Microsoft
-Offerings") which in turn may be relied upon by other third parties to
-develop their own Products. Accordingly, if You do give Microsoft
-Feedback on any version of these Materials or the Microsoft Offerings to
-which they apply, You agree: (a) Microsoft may freely use, reproduce,
-license, distribute, and otherwise commercialize Your Feedback in any
-Microsoft Offering; (b) You also grant third parties, without charge,
-only those patent rights necessary to enable other Products to use or
-interface with any specific parts of a Microsoft Product that
-incorporate Your Feedback; and (c) You will not give Microsoft any
-Feedback (i) that You have reason to believe is subject to any patent,
-copyright or other intellectual property claim or right of any third
-party; or (ii) subject to license terms which seek to require any
-Microsoft Offering incorporating or derived from such Feedback, or other
-Microsoft intellectual property, to be licensed to or otherwise shared
-with any third party.\
-\
-6. Microsoft has no obligation to maintain confidentiality of any
-Microsoft Offering, but otherwise the confidentiality of Your Feedback,
-including Your identity as the source of such Feedback, is governed by
-Your NDA.\
-\
-7. This agreement is governed by the laws of the State of Washington.
-Any dispute involving it must be brought in the federal or state
-superior courts located in King County, Washington, and You waive any
-defenses allowing the dispute to be litigated elsewhere. If there is
-litigation, the losing party must pay the other party’s reasonable
-attorneys’ fees, costs and other expenses. If any part of this agreement
-is unenforceable, it will be considered modified to the extent necessary
-to make it enforceable, and the remainder shall continue in effect. This
-agreement is the entire agreement between You and Microsoft concerning
-these Materials; it may be changed only by a written document signed by
-both You and Microsoft.
+![logo](../images/logo-cortana.png)
 
-![](media/image3.gif){width="1.5625in" height="1.5625in"}
 
-Section 0 | Document
-====================
+**Microsoft Corporation Technical Documentation License Agreement (Standard)**
 
-***Disclaimer**: This document is provided “as-is”. Information and
-views expressed in this document, including URL and other Internet
-website references, may change without notice. Some information relates
-to pre-released products which may be substantially modified before
-commercially released. Microsoft makes no warranties, express or
-implied, with respect to the information provided here. You bear the
-risk of using it.*
+ 
 
-*Some examples depicted herein are provided for illustration only and
-are fictitious. No real association or connection is intended or should
-be inferred.*
+**READ THIS!** THIS IS A LEGAL AGREEMENT BETWEEN MICROSOFT CORPORATION ("MICROSOFT") AND THE RECIPIENT OF THESE MATERIALS, WHETHER AN INDIVIDUAL OR AN ENTITY ("YOU"). IF YOU HAVE ACCESSED THIS AGREEMENT IN THE PROCESS OF DOWNLOADING MATERIALS ("MATERIALS") FROM A MICROSOFT WEB SITE, BY CLICKING "I ACCEPT", DOWNLOADING, USING OR PROVIDING FEEDBACK ON THE MATERIALS, YOU AGREE TO THESE TERMS. IF THIS AGREEMENT IS ATTACHED TO MATERIALS, BY ACCESSING, USING OR PROVIDING FEEDBACK ON THE ATTACHED MATERIALS, YOU AGREE TO THESE TERMS.
+1.  For good and valuable consideration, the receipt and sufficiency of which are acknowledged, You and Microsoft agree as follows:
 
-*All recommendations and criteria within this document are approximate
-guidelines only, and not guarantees of speech recognition performance
-for all devices under real-world conditions. Speech recognition is a
-complex machine learning process, imperfect by nature. It is not
-guaranteed that Cortana and Speech Recognition will work well for your
-device, even if all premium recommendations are met. *
+    -   If You are an authorized representative of the corporation or other entity designated below ("**Company**"), and such Company has executed a Microsoft Corporation Non-Disclosure Agreement that is not limited to a specific subject matter or event ("**Microsoft NDA**"), You represent that You have authority to act on behalf of Company and agree that the Confidential Information, as defined in the Microsoft NDA, is subject to the terms and conditions of the Microsoft NDA and that Company will treat the Confidential Information accordingly;
 
-Definitions
------------
+    -   If You are an individual, and have executed a Microsoft NDA, You agree that the Confidential Information, as defined in the Microsoft NDA, is subject to the terms and conditions of the Microsoft NDA and that You will treat the Confidential Information accordingly; or
 
-For a comprehensive list of relevant terms, reference (ITU-p.10):
-<https://www.itu.int/rec/T-REC-P.10-200607-I/en>
+    -   If a Microsoft NDA has not been executed, You (if You are an individual), or Company (if You are an authorized representative of Company), as applicable, agrees: (a) to refrain from disclosing or distributing the Confidential Information to any third party for five (5) years from the date of disclosure of the Confidential Information by Microsoft to Company/You; (b) to refrain from reproducing or summarizing the Confidential Information; and (c) to take reasonable security precautions, at least as great as the precautions it takes to protect its own confidential information, but no less than reasonable care, to keep confidential the Confidential Information. You/Company, however, may disclose Confidential Information in accordance with a judicial or other governmental order, provided You/Company either (i) gives Microsoft reasonable notice prior to such disclosure and to allow Microsoft a reasonable opportunity to seek a protective order or equivalent, or (ii) obtains written assurance from the applicable judicial or governmental entity that it will afford the Confidential Information the highest level of protection afforded under applicable law or regulation. Confidential Information shall not include any information, however designated, that: (i) is or subsequently becomes publicly available without Your/Company's breach of any obligation owed to Microsoft; (ii) became known to You/Company prior to Microsoft's disclosure of such information to You/Company pursuant to the terms of this Agreement; (iii) became known to You/Company from a source other than Microsoft other than by the breach of an obligation of confidentiality owed to Microsoft; or (iv) is independently developed by You/Company. For purposes of this paragraph, "Confidential Information" means nonpublic information that Microsoft designates as being confidential or which, under the circumstances surrounding disclosure ought to be treated as confidential by Recipient. "Confidential Information" includes, without limitation, information in tangible or intangible form relating to and/or including released or unreleased Microsoft software or hardware products, the marketing or promotion of any Microsoft product, Microsoft's business policies or practices, and information received from others that Microsoft is obligated to treat as confidential.
 
-  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  **TITLE**                     **DEFINITION**
-  ----------------------------- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  **ADC**                       Analog to Digital Converter (or A/D)
+2.  You may review these Materials only (a) as a reference to assist You in planning and designing Your product, service or technology ("Product") to interface with a Microsoft Product as described in these Materials; and (b) to provide feedback on these Materials to Microsoft. All other rights are retained by Microsoft; this agreement does not give You rights under any Microsoft patents. You may not (i) duplicate any part of these Materials, (ii) remove this agreement or any notices from these Materials, or (iii) give any part of these Materials, or assign or otherwise provide Your rights under this agreement, to anyone else.
 
-  **AEC**                       Acoustic Echo Canceller
+3.  These Materials may contain preliminary information or inaccuracies, and may not correctly represent any associated Microsoft Product as commercially released. All Materials are provided entirely "AS IS." To the extent permitted by law, MICROSOFT MAKES NO WARRANTY OF ANY KIND, DISCLAIMS ALL EXPRESS, IMPLIED AND STATUTORY WARRANTIES, AND ASSUMES NO LIABILITY TO YOU FOR ANY DAMAGES OF ANY TYPE IN CONNECTION WITH THESE MATERIALS OR ANY INTELLECTUAL PROPERTY IN THEM.
 
-  **AGC**                       Automatic Gain Control
+4.  If You are an entity and (a) merge into another entity or (b) a controlling ownership interest in You changes, Your right to use these Materials automatically terminates and You must destroy them.
 
-  **BPF**                       Band Pass Filtering
+5.  You have no obligation to give Microsoft any suggestions, comments or other feedback ("Feedback") relating to these Materials. However, any Feedback you voluntarily provide may be used in Microsoft Products and related specifications or other documentation (collectively, "Microsoft Offerings") which in turn may be relied upon by other third parties to develop their own Products. Accordingly, if You do give Microsoft Feedback on any version of these Materials or the Microsoft Offerings to which they apply, You agree: (a) Microsoft may freely use, reproduce, license, distribute, and otherwise commercialize Your Feedback in any Microsoft Offering; (b) You also grant third parties, without charge, only those patent rights necessary to enable other Products to use or interface with any specific parts of a Microsoft Product that incorporate Your Feedback; and (c) You will not give Microsoft any Feedback (i) that You have reason to believe is subject to any patent, copyright or other intellectual property claim or right of any third party; or (ii) subject to license terms which seek to require any Microsoft Offering incorporating or derived from such Feedback, or other Microsoft intellectual property, to be licensed to or otherwise shared with any third party.
 
-  **Capture (or Send)**         The input (near-end) speech signal
+6.  Microsoft has no obligation to maintain confidentiality of any Microsoft Offering, but otherwise the confidentiality of Your Feedback, including Your identity as the source of such Feedback, is governed by Your NDA.
 
-  **dB SPL**                    Decibel sound pressure level = $20\operatorname{}\frac{p_{\text{rms}}}{p_{\text{ref}}}$ where $p_{\text{ref}} = 20$ micropascal. 1 Pa corresponds to 94 dBSPL
+7.  This agreement is governed by the laws of the State of Washington. Any dispute involving it must be brought in the federal or state superior courts located in King County, Washington, and You waive any defenses allowing the dispute to be litigated elsewhere. If there is litigation, the losing party must pay the other party's reasonable attorneys' fees, costs and other expenses. If any part of this agreement is unenforceable, it will be considered modified to the extent necessary to make it enforceable, and the remainder shall continue in effect. This agreement is the entire agreement between You and Microsoft concerning these Materials; it may be changed only by a written document signed by both You and Microsoft.
 
-  **dBFS (or dBov)**            Decibel full scale = $20\operatorname{}\frac{S_{\text{rms}}}{S_{\text{ref}}}$ where $Sref = \ $the RMS of a full scale digital sine wave
-                                
-                                The signal level of a digital signal relative to its overload or maximum level is given by dBov. This is also commonly referred to as dBFS (Full Scale).
-                                
-                                For example, a rectangular function with only the positive or negative maximum number has a level of 0 dBov; For a maximum scale digital sine signal the peak level is 0 dBov and RMS is -3.01 dBov. (ITU-T G.100.1).
+![](../images/logo-lca.gif)
 
-  **DI**                        Directivity Index ([Appendix](#_Directivity_Index) A)
+## Section 0 | Document
 
-  **DRC**                       Dynamic Range Compression
+**Disclaimer: This document is provided “as-is”. Information and views expressed in this document, including URL and other Internet website references, may change without notice. Some information relates to pre-released products which may be substantially modified before commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here. You bear the risk of using it.**
 
-  **DSP**                       Digital Signal Processing
+Some examples depicted herein are provided for illustration only and are fictitious. No real association or connection is intended or should be inferred.
 
-  **DUT**                       Device Under Test
+All recommendations and criteria within this document are approximate guidelines only, and not guarantees of speech recognition performance for all devices under real-world conditions. Speech recognition is a complex machine learning process, imperfect by nature. It is not guaranteed that Cortana and Speech Recognition will work well for your device, even if all premium recommendations are met.
 
-  **DRP**                       Drum Reference Point. A point located at the end of the ear canal, corresponding to the eardrum position. Also the point at which the ear simulator used with a head and torso simulator (HATS) measures the sound pressure.
+## Definitions
 
-  **ERP**                       Ear Reference Point
+For a comprehensive list of relevant terms, reference (ITU-p.10): <https://www.itu.int/rec/T-REC-P.10-200607-I/en>
 
-  **FIR**                       Finite Impulse Response
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>TITLE</th>
+<th>DEFINITION</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><p><strong>ADC</strong></p></td>
+<td><p>Analog to Digital Converter (or A/D)</p></td>
+</tr>
+<tr class="even">
+<td><p><strong>AEC</strong></p></td>
+<td><p>Acoustic Echo Cancellation</p></td>
+</tr>
+<tr class="odd">
+<td><p><strong>AGC</strong></p></td>
+<td><p>Automatic Gain Control</p></td>
+</tr>
+<tr class="even">
+<td><p><strong>BPF</strong></p></td>
+<td><p>Band Pass Filtering</p></td>
+</tr>
+<tr class="odd">
+<td><p><strong>Capture (or Send)</strong></p></td>
+<td><p>The input (near-end) speech signal</p></td>
+</tr>
+<tr class="even">
+<td><p><strong>dB SPL</strong></p></td>
+<td><p>Decibel sound pressure level = <img src="../images/speechplatformequation14.png" alt="Speech platform equation" /> where <em>P<sub>ref</sub></em>=20 micropascal. 1 Pa corresponds to 94 dBSPL.</p></td>
+</tr>
+<tr class="odd">
+<td><p><strong>dBFS (or dBov)</strong></p></td>
+<td><p>Decibel full scale = <img src="../images/speechplatformequation15.png" alt="Speech platform equation" /> where <em>S<sub>ref</sub></em> = the RMS of a full scale digital sine wave</p>
+<p>The signal level of a digital signal relative to its overload or maximum level is given by dBov. This is also commonly referred to as dBFS (Full Scale).</p>
+<p>For example, a rectangular function with only the positive or negative maximum number has a level of 0 dBov; For a maximum scale digital sine signal the peak level is 0 dBov and RMS is -3.01 dBov. (ITU-T G.100.1).</p></td>
+</tr>
+<tr class="even">
+<td><p><strong>DI</strong></p></td>
+<td><p>Directivity Index. (For more information, see [Directivity Index](#directivity-index) in Appendix A.)</p></td>
+</tr>
+<tr class="odd">
+<td><p><strong>DRC</strong></p></td>
+<td><p>Dynamic Range Compression</p></td>
+</tr>
+<tr class="even">
+<td><p><strong>DSP</strong></p></td>
+<td><p>Digital Signal Processing</p></td>
+</tr>
+<tr class="odd">
+<td><p><strong>DUT</strong></p></td>
+<td><p>Device Under Test</p></td>
+</tr>
+<tr class="even">
+<td><p><strong>DRP</strong></p></td>
+<td><p>Drum Reference Point. A point located at the end of the ear canal, corresponding to the eardrum position. Also the point at which the ear simulator used with a head and torso simulator (HATS) measures the sound pressure.</p></td>
+</tr>
+<tr class="odd">
+<td><p><strong>ERP</strong></p></td>
+<td><p>Ear Reference Point</p></td>
+</tr>
+<tr class="even">
+<td><p><strong>FIR</strong></p></td>
+<td><p>Finite Impulse Response</p></td>
+</tr>
+<tr class="odd">
+<td><p><strong>HATS</strong></p></td>
+<td><p>Head and Torso Simulator - described in ITU-T Recommendation P.58 [15]</p></td>
+</tr>
+<tr class="even">
+<td><p><strong>IHV</strong></p></td>
+<td><p>Independent Hardware Vendor</p></td>
+</tr>
+<tr class="odd">
+<td><p><strong>IIR</strong></p></td>
+<td><p>Infinite Impulse Response</p></td>
+</tr>
+<tr class="even">
+<td><p><strong>LRP</strong></p></td>
+<td><p>Listener Reference Point. A generic term representing the location at which the acoustic output from the receiver is to be determined or specified.</p></td>
+</tr>
+<tr class="odd">
+<td><p><strong>MRP</strong></p></td>
+<td><p>Mouth Reference Point is a point 25mm in front of the lip plane of the artificial mouth. This is a point where the speech level is calibrated before measurements for normal, loud and quiet speech</p></td>
+</tr>
+<tr class="even">
+<td><p><strong>NG</strong></p></td>
+<td><p>Ambient Noise Gain. (For more information, see [Ambient Noise Gain](#ambient-noise-gain) in Appendix A.)</p></td>
+</tr>
+<tr class="odd">
+<td><p><strong>NGA</strong></p></td>
+<td><p>A-Weighted Ambient Noise Gain. (For more information, see [A-Weighted Ambient Noise Gain](#a-weighted-ambient-noise-gain) in Appendix A.)</p></td>
+</tr>
+<tr class="even">
+<td><p><strong>Normal-band</strong></p></td>
+<td><p>Speech signal with a nominal pass-band of 300-3400 Hz (ITU-p.10 N-3)</p></td>
+</tr>
+<tr class="odd">
+<td><p><strong>Render (or Receive)</strong></p></td>
+<td><p>The output (far-end) speech and/or other rendered audio signal</p></td>
+</tr>
+<tr class="even">
+<td><p><strong>SLR</strong></p></td>
+<td><p>Send Loudness Rating</p></td>
+</tr>
+<tr class="odd">
+<td><p><strong>TCLw</strong></p></td>
+<td><p>Terminal Coupling Loss (weighted)</p></td>
+</tr>
+<tr class="even">
+<td><p><strong>THD+N</strong></p></td>
+<td><p>Total Harmonic Distortion including Noise = <em>(signal-ƒ₀)⁄ƒ₀ F</em></p>
+<p><img src="../images/speechplatformequation1.png" alt="SpeechPlatformEquation1" /> where the &quot;—&quot; is accomplished via notch filtering.</p></td>
+</tr>
+<tr class="odd">
+<td><p><strong>Wide-band</strong></p></td>
+<td><p>Speech signal with a nominal pass-band of 100-7000 Hz (ITU-p.10 W-3)</p></td>
+</tr>
+<tr class="even">
+<td>ƒ₀</td>
+<td><p>Fundamental frequency</p></td>
+</tr>
+</tbody>
+</table>
 
-  **HATS**                      Head and Torso Simulator - described in ITU-T Recommendation P.58 \[15\]
+## Section 1 | Purpose
 
-  **HMD**                       Head Mounted Device – includes Windows Mixed Reality and Headsets
+The Speech Platform powers all of the speech experiences in Windows 10 such as Cortana and Dictation.
 
-  **IHV**                       Independent Hardware Vendor
+This document provides engineering recommendations in order to guide the design of speech input devices to meet the system performance criteria specified in the ***Speech Platform – Input Device Recommendations*** specification.
 
-  **IIR**                       Infinite Impulse Response
-
-  **LRP**                       Listener Reference Point. A generic term representing the location at which the acoustic output from the receiver is to be determined or specified.
-
-  **MRP**                       Mouth Reference Point is a point 25mm in front of the lip plane of the artificial mouth. This is a point where the speech level is calibrated before measurements for normal, loud and quiet speech
-
-  **NG**                        Ambient Noise Gain ([Appendix](#_Ambient_Noise_Gain) A)
-
-  **NGA**                       A-Weighted Ambient Noise Gain ([Appendix](#_A-Weighted_Ambient_Noise) A)
-
-  **Narrowband**                Speech signal with a nominal pass-band of 300-3400 Hz (ITU-p.10 N-3)
-
-  **Render (or Receive)**       The output (far-end) speech and/or other rendered audio signal
-
-  **SLR**                       Send Loudness Rating
-
-  **TCLw**                      Terminal Coupling Loss (weighted)
-
-  **THD+N**                     Total Harmonic Distortion including Noise = $\frac{\left( signal - f_{0} \right)}{f_{0}}$F
-
-  **Wide-band**                 Speech signal with a nominal pass-band of 100-7000 Hz (ITU-p.10 W-3)
-
-  $$\mathbf{f}_{\mathbf{0}}$$   Fundamental frequency
-  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-Section 1 | Purpose
-===================
-
-The Speech Platform powers all of the speech experiences in Windows 10
-such as Cortana and Dictation.
-
-This document provides engineering recommendations in order to guide the
-design of speech input devices to meet the system performance criteria
-specified in the ***Speech Platform – Input Device Recommendations***
-specification.
-
-Engineering recommendations provided account for the following
-subsystems:
+Engineering recommendations provided account for the following subsystems:
 
 1)  Device Audio Hardware (i.e. Electroacoustics)
 
 2)  Custom (i.e. non-Microsoft) Speech Enhancement Algorithms
 
-The scope of engineering recommendations are limited to a common set of
-typical user scenarios that are evaluated in the ***Speech Platform –
-Input Devices Recommendations*** specification. As some devices may have
-unique product use cases or scenarios, device manufacturers may elect to
-apply these engineering recommendations to them.
+The scope of engineering recommendations are limited to a common set of typical user scenarios that are evaluated in the ***Speech Platform – Input Devices Recommendations*** specification. As some devices may have unique product use cases or scenarios, device manufacturers may elect to apply these engineering recommendations to them.
 
-Good component selection, acoustic design, and mechanical integration is
-important to capture the best possible audio to give a good experience
-rather than relying on the speech enhancement pipeline. Passing the
-engineering recommendations does not necessarily guarantee passing
-system performance criteria (i.e. Speech Accuracy and Voice
-Activation/KWS), but strongly increases the likelihood of doing so.
+Good component selection, acoustic design, and mechanical integration is important to capture the best possible audio to give a good experience rather than relying on the speech enhancement pipeline. Passing the engineering recommendations does not necessarily guarantee passing system performance criteria (i.e. Speech Accuracy and Voice Activation/KWS), but strongly increases the likelihood of doing so.
 
-Passing the Send and Receive test criteria in [Skype for Business Audio
-Specification](http://technet.microsoft.com/en-us/office/dn788953) gives
-an indication of good design. There can be differences in Echo path test
-results. Skype specification aims for good perceived quality for human
-talker on both sides of a voice call while Speech Platform might need a
-different tuning tradeoff between echo attenuation and speech double
-talk for speech recognition to be effective.
+Passing the Send and Receive test criteria in [Skype for Business AudioSpecification](http://technet.microsoft.com/en-us/office/dn788953) givesan indication of good design. There can be differences in Echo path testresults. Skype specification aims for good perceived quality for humantalker on both sides of a voice call while Speech Platform might need adifferent tuning tradeoff between echo attenuation and speech doubletalk for speech recognition to be effective.
 
-Performance Levels
-------------------
+### Performance Levels
 
-Functional guidelines are split into two levels – Standard and Premium.
-This distinction is made to acknowledge that there are a range of
-devices targeting speech functionality, spanning price targets and
-operational envelopes. Microsoft recommends that all devices target
-Premium guidelines when specified.[^1]
+Functional guidelines are split into two levels – Standard and Premium.This distinction is made to acknowledge that there are a range of devices targeting speech functionality, spanning price targets and operational envelopes. Microsoft recommends that all devices target Premium guidelines when specified.[^1]
 
 **Premium**
 
-Recommended for devices using the default Windows 10 speech enhancement,
-in order to maximize capability in meeting system experience
-requirements and optimizing performance with the speech enhancement
-pipeline.
+Recommended for devices using the default Windows 10 speech enhancement, in order to maximize capability in meeting system experience requirements and optimizing performance with the speech enhancement pipeline.
 
 **Standard**
 
-Basic functional guidelines recommended in order to work well in ambient
-conditions and near field distances.
+Basic functional guidelines recommended in order to work well in ambient conditions and near field distances.
 
   Premium   Standard
   --------- ----------
             
 
-Section 2 | DEVICE AUDIO HARDWARE RECOMMENDATIONS
-=================================================
+## Section 2 | DEVICE AUDIO HARDWARE RECOMMENDATIONS
 
-Recommendations in this section describe electro-acoustic and
-hardware-related properties of the device essential to support a high
-quality speech experience, ***prior to speech enhancement algorithms***.
+Recommendations in this section describe electro-acoustic and hardware-related properties of the device essential to support a high quality speech experience, ***prior to speech enhancement algorithms***.
 
 These guidelines include:
 
@@ -303,66 +232,34 @@ These guidelines include:
 
 These performance parameters are provided to guide devices towards:
 
-1)  Working within the operational boundaries of the Microsoft speech
-    enhancement pipeline (for those devices not using their own speech
-    enhancement pipeline)
+1)  Working within the operational boundaries of the Microsoft speech enhancement pipeline (for those devices not using their own speech enhancement pipeline)
 
-2)  Working within the operational boundaries of Microsoft’s speech
-    recognition applications such as Cortana
+2)  Working within the operational boundaries of Microsoft’s speech recognition applications such as Cortana
 
-3)  Having similar characteristics to other speech input devices
-    intended for use with speech recognition applications
+3)  Having similar characteristics to other speech input device intended for use with speech recognition applications
 
-Many device audio hardware tests herein can be analyzed from .wav file
-captures using the toolchain. The test files must be captured in **RAW**
-mode, i.e. with no pre-processing, using the scripts from the toolchain
-for this section. See Test Setup Recommendations for more details on
-generating these captures.
+Many device audio hardware tests herein can be analyzed from .wav file captures using the toolchain. The test files must be captured in **RAW** mode, i.e. with no pre-processing, using the scripts from the toolchain for this section. See Test Setup Recommendations for more details on generating these captures.
 
-Careful mechanical integration of the microphone is important and is a
-common source of failure.
+Careful mechanical integration of the microphone is important and is a common source of failure. The microphones must be integrated to ensure a good acoustic seal between the microphone and the device chassis and if appropriate, along the microphone porting tube. It is also important to minimize the acoustic noise and vibration between the system and the microphone. Two typical solutions are to use a rubber boot or a gasket.
 
-The microphones must be integrated to ensure a good acoustic seal
-between the microphone and the device chassis and if appropriate, along
-the microphone porting tube. It is also important to minimize the
-acoustic noise and vibration between the system and the microphone. Two
-typical solutions are to use a rubber boot or a gasket.
-
-The acoustic seal should be verified to be robust across production
-tolerances and product lifecycle concerns (e.g. environmental
-reliability scenarios over time).
+The acoustic seal should be verified to be robust across production tolerances and product lifecycle concerns (e.g. environmental reliability scenarios over time).
 
 In general, follow these guidelines for placing the microphone array:
 
-1.  As far as possible from noise sources such as loudspeakers, fans,
-    keyboards, hard drives, and user’s hands.
+1.  As far as possible from noise sources such as loudspeakers, fans, keyboards, hard drives, and user’s hands.
 
 2.  As close as possible to the speaker’s mouth.
 
-To enable the acoustic echo canceller to work well the device speakers
-should be placed at a maximum distance from the microphones, or place
-directivity nulls towards loudspeakers.
+To enable the acoustic echo canceller to work well the device speakers should be placed at a maximum distance from the microphones, or place directivity nulls towards loudspeakers.
 
-NOTE: Meeting the HW recommendations does not *assure* end-to-end system
-performance, but is strongly encouraged based on best practices and
-measurements of ecosystem devices that do provide a good speech
-experience. It may be possible to pass hardware guidelines but not pass
-the ***Speech Platform Input Device Recommendations*** due to
-limitations of signal processing algorithms or non-optimal tuning. It
-may also be possible to pass the ***Speech Platform Input Device
-Recommendations,*** yet not meet the guidelines provided in this
-document.
+NOTE: Meeting the HW recommendations does not *assure* end-to-end system performance, but is strongly encouraged based on best practices and measurements of ecosystem devices that do provide a good speech experience. It may be possible to pass hardware guidelines but not pass the ***Speech Platform Input Device Recommendations*** due to limitations of signal processing algorithms or non-optimal tuning. It may also be possible to pass the ***Speech Platform Input Device Recommendations,*** yet not meet the guidelines provided in this document.
 
 **Microphone Array Guidelines for Near and Far Field Devices**
 --------------------------------------------------------------
 
-Microphone arrays enable the speech enhancement pipeline to remove
-localized noise. The following array geometries are recommended for
-devices using the in-box Microsoft speech enhancement pipeline.
+Microphone arrays enable the speech enhancement pipeline to remove localized noise. The following array geometries are recommended for devices using the in-box Microsoft speech enhancement pipeline.
 
-The Microsoft speech pipeline is also capable of working with custom
-array types specified in the microphone array descriptor. For a guide on
-creating microphone array geometry descriptors, see Appendix A.
+The Microsoft speech pipeline is also capable of working with custom array types specified in the microphone array descriptor. For a guide on creating microphone array geometry descriptors, see Appendix A.
 
   -----------------------------------------------------------------------------------------------------------------------------------------
   **Application**     **Recommended Solution(s)**       **Guidelines**
@@ -390,13 +287,9 @@ creating microphone array geometry descriptors, see Appendix A.
 **Microphone Array Guidelines for HMDs**
 ----------------------------------------
 
-Microphone arrays enable the speech enhancement pipeline to remove
-localized noise. The following array geometries are recommended for
-devices using the in-box Microsoft speech enhancement pipeline.
+Microphone arrays enable the speech enhancement pipeline to remove localized noise. The following array geometries are recommended for devices using the in-box Microsoft speech enhancement pipeline.
 
-The Microsoft speech pipeline is also capable of working with custom
-array types specified in the microphone array descriptor. For a guide on
-creating microphone array geometry descriptors, see Appendix C.
+The Microsoft speech pipeline is also capable of working with custom array types specified in the microphone array descriptor. For a guide on creating microphone array geometry descriptors, see Appendix C.
 
   **Application**   **Solution(s)**    **Guidelines**
   ----------------- ------------------ -----------------------------------------------------------------------------------
@@ -408,28 +301,17 @@ possible is recommended.
 **Microphone Array Guidelines for Lid-Closed Scenarios**
 --------------------------------------------------------
 
-For laptop or similar form-factor devices that wish to provide support
-for speech during closed lid, some additional considerations for mic
-integration are necessary:
+For laptop or similar form-factor devices that wish to provide support for speech during closed lid, some additional considerations for mic integration are necessary:
 
-1.  Ensure when lid is closed, that microphones are not occluded.
-    Preferentially, microphones may be integrated along the top (or side
-    edges) of the screen bezel, or front edge of the base of the device.
-    Microphones porting will need to be designed to avoid inadvertently
-    attenuating sound from potential user locations when lid is closed
-    (even while not occluded).
+1.  Ensure when lid is closed, that microphones are not occluded. Preferentially, microphones may be integrated along the top (or side edges) of the screen bezel, or front edge of the base of the device. Microphones porting will need to be designed to avoid inadvertently     attenuating sound from potential user locations when lid is closed (even while not occluded).
 
-2.  Ensure when lid is closed, that speakers are not occluded in such a
-    way as to either:
+2.  Ensure when lid is closed, that speakers are not occluded in such a way as to either:
 
-    a.  Significantly attenuate speaker output (for a poor listening
-        experience)
+    a.  Significantly attenuate speaker output (for a poor listening experience)
 
-    b.  Introduce non-linearities, affecting echo canceller performance
-        due to structural vibration or compression while lid is closed
+    b.  Introduce non-linearities, affecting echo canceller performance due to structural vibration or compression while lid is closed
 
-**\
-**
+
 
 **HW-1 Mic Level**
 ------------------
