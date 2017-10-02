@@ -9,15 +9,15 @@ ms.technology: windows-oem
 ---
 # Changed answer file settings for Windows 10 for desktop editions, build 1709
 
-This topic describes Windows 10, version 1709 answer-file settings that have changed since Windows 10 for desktop editions (Home, Pro, Enterprise, and Education), version 1703.
+This topic describes Windows 10, version 1709 answer file settings that have changed since Windows 10 for desktop editions (Home, Pro, Enterprise, and Education), version 1703.
 
-## New Windows Settings
+## New Windows settings
 
 | Setting name                                           | Description                                                                      |
 |:-------------------------------------------------------|:---------------------------------------------------------------------------------|
 | [Microsoft-Windows-Shell-Setup-OEMInformation-SupportProvider](microsoft-windows-shell-setup-oeminformation-supportprovider.md)           | New. Specifies the name of the OEM support app or website to display in the Get Help app. If not provided, the default System Manufacturer name (from msinfo32.exe) will be used. |
 
-## Deprecated Windows Settings
+## Deprecated Windows settings
 
 | Setting name                                           | Description                                                                      |
 |:-------------------------------------------------------|:---------------------------------------------------------------------------------|
@@ -28,9 +28,9 @@ This topic describes Windows 10, version 1709 answer-file settings that have cha
 | [Microsoft-Windows-Shell-Setup-OEMInformation-Model](microsoft-windows-shell-setup-oeminformation-model.md)                               | Deprecated. The Model name displayed in the Get Help app is now based on your System Product Name value, as defined in System Information (msinfo.exe). |
 | [Microsoft-Windows-Shell-Setup-OEMInformation-Manufacturer](microsoft-windows-shell-setup-oeminformation-manufacturer.md)                 | Deprecated. The Manufacturer name displayed in the Get Help app is now based on your System Manufacturer value, as defined in System Information (msinfo.exe), unless you provide a `SupportProvider` parameter as part of your `OEMInformation`. When `SupportProvider` is provided, it will override the System Manufacturer name. For this release, if `SupportProvider` is not present but the deprecated value `Manufacturer` is, it will still be used to support upgrade scenarios. |
 
-## Removed Windows Settings
+## Removed Windows settings
 
 | Setting name                                           | Description                                                                      |
 |:-------------------------------------------------------|:---------------------------------------------------------------------------------|
-| [Microsoft-Windows-Shell-Setup-VisualEffects-FontSmoothing](microsoft-windows-shell-setup-visualeffects-fontsmoothing.md)                 | This previously deprecated setting has now been removed from Unattend.                                                                           |
+| [Microsoft-Windows-Shell-Setup-VisualEffects-FontSmoothing](microsoft-windows-shell-setup-visualeffects-fontsmoothing.md)                 | This previously deprecated setting is now removed.                                                                                               |
 | [Microsoft-Windows-Shell-Setup-Themes-ScreenSaver](microsoft-windows-shell-setup-themes-screensaver.md)                                   | ScreenSaver functionality in Themes is removed. ScreenSaver is deprecated in Group Policy, Control Panel, and SysPrep. Lockscreen features and policies are preferred over using ScreenSaver. We recommend using automatic power plans to dim the screen. This can help reduce system power consumption.          |

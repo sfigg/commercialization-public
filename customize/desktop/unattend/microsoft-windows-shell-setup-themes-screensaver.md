@@ -15,25 +15,16 @@ ms.technology: windows-oem
 ---
 # ScreenSaver
 
-> [!Note]
+> [!Important]
 > In Windows 10 version 1709, ScreenSaver functionality in Themes is removed. ScreenSaver is deprecated in Group Policy, Control Panel, and SysPrep. Lockscreen features and policies are preferred over using ScreenSaver. We recommend using automatic power plans to dim the screen. This can help reduce system power consumption.
 
 `ScreenSaver` specifies the path to a Windows screen saver file in a theme.
 
 ## Values
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><em>Screen_saver_file</em></p></td>
-<td><p>Specifies the name of the screen saver file. <em>Screen_saver_file</em> is a string with a maximum length of 256 characters.</p></td>
-</tr>
-</tbody>
-</table>
+| Value                    | Description                                                                                                           |
+|:-------------------------|:----------------------------------------------------------------------------------------------------------------------|
+| *Screen_saver_file*      | Specifies the name of the screen saver file. *Screen_saver_file* is a string with a maximum length of 256 characters. |
 
 ## Valid Configuration Passes
 
