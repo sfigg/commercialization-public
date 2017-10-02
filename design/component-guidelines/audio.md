@@ -14,87 +14,17 @@ ms.technology: windows-oem
 
 # Audio
 
-
 This document provides recommendations for the design and development of audio devices, including audio playback and audio input devices intended for use with Microsoft’s Speech Platform. The Speech Platform is used to power all of the speech experiences in Windows 10 such as Cortana and Voice Dictation. The goal for this document is to enable ecosystem partners to build device with optimized audio experience with Microsoft technology.
+
+## Minimum hardware requirements and the Windows Hardware Compatibility Program
 
 The minimum hardware requirements and Windows Hardware Compatibility Program requirements are fundamental for creating Windows-compatible audio solutions. Although the programs are optional, it is highly recommended that audio products meet both sets of requirements to ensure basic audio quality.
 
-## Minimum hardware requirements for Audio
+ For more detail on each:
+-  See section 6.2.2 in [Minimum hardware requirements](https://msdn.microsoft.com/library/windows/hardware/dn915086.aspx)
 
+- See [Windows Hardware Compatibility Program](https://msdn.microsoft.com/library/windows/hardware/dn922588.aspx)
 
-The following table summarizes the minimum hardware requirements for Audio. For more detail, see section 6.2.2 in [Minimum hardware requirements](https://msdn.microsoft.com/library/windows/hardware/dn915086.aspx).
-
-<table>
-<tbody valign="top">
-<tr class="odd">
-<td>Audio decode and encode</td>
-<td>The codecs supplied by Windows 10 must not be removed or modified. OEMs may add software or hardware audio decoders or encoders not provided by Microsoft.</td>
-</tr>
-<tr class="even">
-<td>Audio codec hardware</td>
-<td><ul>
-<li>The codec must support at least one of the bit depths and containers listed in section 6.2.2 in Minimum hardware requirements.</li>
-<li>The codec must support at least one of the channel configurations listed in section 6.2.2 in Minimum hardware requirements.</li>
-<li>The samples must be either integer or IEEE 754 float.</li>
-<li>Devices that support both audio input and output must support independent selection of formats and support concurrent streaming at arbitrarily selected formats subject to resource limitation.</li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td>Audio input routing for cellular devices</td>
-<td>The device must route audio input from these sources:
-<ul>
-<li>Handset microphone</li>
-<li>Wired headset microphone</li>
-<li>Bluetooth Hands-Free Profile microphone</li>
-<li>Processor (optional)</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td>Audio output routing for cellular devices</td>
-<td>The device must route audio output to these destinations:
-<ul>
-<li>Handset speaker</li>
-<li>Loudspeaker</li>
-<li>Wired headset/headphone</li>
-<li>Bluetooth Hands-Free Profile</li>
-<li>Processor (Optional for Cellular RX source; required for voice call recording if there is a mix of cellular RX and TX)</li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td>Audio output for FM stereo devices</td>
-<td>The device must route audio output between the FM stereo and these destinations:
-<ul>
-<li>Loudspeaker</li>
-<li>Wired headset microphone</li>
-<li>Processor (Optional)</li>
-</ul></td>
-</tr>
-</tbody>
-</table>
-
- 
-
-### Windows Hardware Compatibility Program requirements for Audio
-
-The following table lists the requirements for Audio devices for the [Windows Hardware Compatibility Program](https://msdn.microsoft.com/library/windows/hardware/dn922588.aspx). Click the corresponding link for more details about each requirement.
-
-| Requirement                                                                                                                                                  | Description                                                                                                                                                                                                                                                                                                                                                  |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| [Device.Audio.APO.MicArrayRawData](../compatibility/device-audio.md#deviceaudioapomicarrayrawdata)                                                           | If a microphone array processing algorithm is provided in a Windows system effect APO instantiated in a stream effect (SFX) insert point in the capture path, it must provide all the individual audio streams as channels from the array when a client asks for a format with number of channels equal to the number of microphone elements in the array.   |
-| [Device.Audio.Base.AudioProcessing](../compatibility/device-audio.md#deviceaudiobaseaudioprocessing)                                                         | Audio devices must support proper audio processing discovery and control.                                                                                                                                                                                                                                                                                    |
-| Device.Audio.Base.DRM                                                                                                                                        | Audio device must implement DRM support as defined in [Digital Rights Management](https://msdn.microsoft.com/library/windows/hardware/ff536260.aspx) in the Windows Driver Kit.                                                                                                                                                                              |
-| [Device.Audio.Base.Endpoints](../compatibility/device-audio.md#deviceaudiobaseendpoints)                                                                     | Any audio device that is exposed by any of the audio device enumeration APIs must reflect the current state of all of its endpoints appropriately at all times when the system is powered on.                                                                                                                                                                |
-| [Device.Audio.Base.HardwareArchitecture](../compatibility/device-audio.md#deviceaudiobasehardwarearchitecture)                                               | Audio subsystems must use a technology compatible with Windows.                                                                                                                                                                                                                                                                                              |
-| [Device.Audio.Base.PowerManagement](../compatibility/device-audio.md#deviceaudiobasepowermanagement)                                                         | Audio device must comply with related power management specifications.                                                                                                                                                                                                                                                                                       |
-| [Device.Audio.Base.SamplePositionAccuracy](../compatibility/device-audio.md#deviceaudiobasesamplepositionaccuracy)                                           | Audio driver reports render sample position with defined accuracy for stream synchronization.                                                                                                                                                                                                                                                                |
-| [Device.Audio.Base.StreamingFormats](../compatibility/device-audio.md#deviceaudiobasestreamingformats)                                                       | Audio subsystems must use formats supported by Windows.                                                                                                                                                                                                                                                                                                      |
-| [Device.Audio.Base.VolumeControl](../compatibility/device-audio.md#deviceaudiobasevolumecontrol)                                                             | Audio driver volume controls are linear and have adequate resolution.                                                                                                                                                                                                                                                                                        |
-| [Device.Audio.HardwareAudioProcessing.AudioHardwareOffloading](../compatibility/device-audio.md#deviceaudiohardwareaudioprocessingaudiohardwareoffloading)   | Hardware that supports offloaded audio render processing must meet this requirement.                                                                                                                                                                                                                                                                         |
-| [Device.Audio.HDAudio.HDAudioSpecCompliance](../compatibility/device-audio.md#deviceaudiohdaudiohdaudiospeccompliance)                                       | HD Audio codec for audio must comply with the Intel High Definition Audio specification.                                                                                                                                                                                                                                                                     |
-| [Device.Audio.USB.HIDControls](../compatibility/device-audio.md#deviceaudiousbhidcontrols)                                                                   | USB audio device uses USB HID audio controls to keep the operating system informed of user interactions with the device.                                                                                                                                                                                                                                     |
-| [Device.Audio.USB.USB](../compatibility/device-audio.md#deviceaudiousbusb)                                                                                   | USB audio device must follow UAA USB audio design guidelines.                                                                                                                                                                                                                                                                                                |
-
- 
 
 ## Scenario for optimizing multi-stream audio playback
 
@@ -106,7 +36,8 @@ Although Multi-streaming is no longer a requirement for the Windows 10 Desktop e
 
 Once the audio solution meets both minimum hardware requirements and Windows Compatibility Program requirements, the audio solution will provide basic audio experiences in Windows. Depending on the targeted market segment, a device may support two additional optimizations: Speech Platform and Skype. Recommendations for both Speech Platform and Skype build upon the requirements for a basic audio experience. It would be a challenge to optimize for Speech Platform or Skype if the audio solution does not fully meet the basic requirements.
 
-**Note**  Guidelines for Telephony and applications such as Skype will be supplemented to this topic when they are available.
+>[!NOTE] 
+> Guidelines for Telephony and applications such as Skype will be supplemented to this topic when they are available.
 
  
 
@@ -232,7 +163,7 @@ The following requirements are key to enable a third-party enhancement pipeline.
 
     -   Audio Processing Object Architecture
 
-## Related topics
+## Related resources
 
 
 [Windows Hardware Compatibility Program](https://msdn.microsoft.com/library/windows/hardware/dn922588.aspx)
