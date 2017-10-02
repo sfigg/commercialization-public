@@ -29,15 +29,20 @@ Test server setup is the same for all desktop testing. See [Step 1: Install Cont
 
 After you install the HLK on the test server, you are ready to add test systems to the environment. You must install the HLK Client software on each test system. The HLK Client software is stored on the Windows HLK test server.
 
-ARM64 desktop testing requires the client systems to be setup differently than testing for x86/x64. Depending on the scenario, it may be required that testing be done in native ARM64 mode, Emulated x86 mode, or a combination of the two. The scenarios below will outline which mode(s) are required for testing.
+ARM64 desktop testing requires the client systems to be set up differently than testing for x86/x64.  It uses a different setup path and there are two testing modes required, native ARM64 and x86 on ARM64, for a complete submission package. 
+
+Depending on the scenario, it may be required that testing be done in native ARM64 mode, x86 on ARM64, or a combination of the two. The scenarios below will outline which mode(s) are required for testing.
+
+Testing can be done with multiple machines or a single machine, but using a single machine requires the HLK client to be uninstalled and reinstalled using the directions below to change the modes. 
+
 
 ### <span id="Scenarios"></span><span id="scenarios"></span><span id="SCENARIOS"></span>Scenarios
 
 | Scenario     | Mode                         |
 |--------------|------------------------------|
 | Audio Device | Native                       |
-| Wireless Lan | Native and Emulated x86 mode |
-| System       | Native and Emulated x86 mode |
+| Wireless Lan | Native and x86 on ARM64 mode |
+| System       | Native and x86 on ARM64 mode |
 
  
 
@@ -66,7 +71,7 @@ Once the mode for testing is identified the following instructions will walk you
     \\<ControllerName>\HLKInstall\Client\Setup.cmd
     ```
 
-    For ARM64 Desktop client systems, depending on the mode needed choose the appropriate install method.
+    For ARM64 Desktop client systems, there are two different install paths depending on the mode the client is being set up to test in. 
 
     >[!NOTE]  
     >Because of the dual-mode nature of ARM64, a best practice is to use two (2) clients, one in native mode and one in emulated mode per the instructions below.
@@ -79,7 +84,7 @@ Once the mode for testing is identified the following instructions will walk you
     \\<controllername>\HLKInstall\CoreSystemClient\InstallWTTClient
     ```
     
-    **Emulated x86 Mode:**
+    **x86 on ARM64 Mode:**
     
     On the test system, start a command prompt with administrator privileges, and run the following:
     
@@ -121,7 +126,7 @@ After you setup your test server and clients, you're ready to create a project. 
 You can create large projects that represent a wide range of scenarios. You can also create several smaller projects and merge the results into one package.
 
 >[!NOTE]  
-> For ARM64 Desktop testing, you might need to create multiple projects to form a complete submission package based on the scenario under test. See [Step 2: Install Client on the test system(s)](#step-2) for scenario explanation. For Scenarios that require both Native and Emulated x86 mode, each mode will need its own project with the appropriate client systems.
+> For ARM64 Desktop testing, multiple projects are required to form a complete submission package (one for each mode). When testing is complete for each mode, create hlkx packages and then merge the packages together to make a single package for submission. 
 
  
 
@@ -215,7 +220,7 @@ You can save an existing collection of tests as a playlist by choosing Save Sele
  
 
 >[!NOTE] 
-> ARM64 Desktop testing: During product development there will be two playlists, one for tests that run in **Native mode** and one for test that run in **Emulated x86** mode. Ensure that the appropriate playlist is being applied to the project that has client which match the mode intended for testing.
+> ARM64 Desktop testing: There are two playlists, one for tests that run in **Native mode** and one for tests that run in **x86 on ARM64** mode. Ensure that the appropriate playlist is being applied to the project that has the HLK client installation which matches the mode intended for testing.
 
  
 
@@ -249,7 +254,7 @@ To learn more about the different options on this page, see [HLK Studio - Tests 
 x86/x64 instructions: [Step 7: View test results and log files](step-7-view-test-results-and-log-files.md)
 
 >[!NOTE]
->  Due to ARM64 Desktop having scenarios that involve multiple projects, it will be required that these projects be merged to have a complete HLK package for submitting. For information on merging packages, see [Merge packages](../user/merge-packages.md).
+>  Due to ARM64 Desktop having scenarios that involve multiple projects, it will be required that these projects be merged to have a complete HLK package for submission. For information on merging packages, see [Merge packages](../user/merge-packages.md).
 
  
 

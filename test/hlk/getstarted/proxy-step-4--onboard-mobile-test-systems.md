@@ -70,18 +70,13 @@ After you install the Windows Hardware Lab Kit (Windows HLK) on the HLK Controll
     ``` syntax
     KitsDeviceDetector.exe /Physical:Fake_PC.dll /DeviceName:mydevice /DeviceId:00000015-c0fb-79c3-0000-000000000000 /machinepool:$\mypool
     ```
-
     >[!NOTE]
     >  If testing with a Health image, include the following parameter:
     >`/imageprofile:health`
 
-     
-
     >[!NOTE]  
     >  If the image installed on the DUT is not a lab or a health image, include the following parameter:
     >`/SkipFFUCheck`
-
-     
 
     >[!NOTE]  
     > The KitsDeviceDetector log can found at %ProgramFiles(x86)>%\\WTTMobile\\Tools\\KitsDeviceDetector.log
@@ -118,13 +113,9 @@ After you install the Windows Hardware Lab Kit (Windows HLK) on the HLK Controll
     >[!NOTE]
     >  The image on the device must be either a lab image or a health image.
 
-     
-
     >[!NOTE]
     >  If testing with a Health image, include the following parameter:
     >`/imageprofile:health`
-
-     
 
     >[!NOTE]
     >  To flash an image on your device as part of the onboarding process, include the following parameter
@@ -134,17 +125,11 @@ After you install the Windows Hardware Lab Kit (Windows HLK) on the HLK Controll
     >
     >`/ImagePath:C:\flash_lab.ffu`
 
-     
-
     >[!NOTE]
     >  Use %ProgramFiles(x86)%\\WTTMobile\\Tools\\AriesUtil.exe to find the name of the Aries dongles on the network. The command **AriesUtil.exe Discover** will return the full list of available devices. A firewall exception must be added for AriesUtil.exe prior to use. If no devices are detected, you may need to use the **/Adapter** parameter. The adapter type can be determined by opening the Networking and Sharing Center on the controller, the Adapter is listed under **Connections**. The most common Adapter value is **Ethernet**. Use the command **AriesUtil.exe /?** for a complete list of available commands.
 
-     
-
     >[!NOTE]
     >  The KitsDeviceDetector log can found at %ProgramFiles(x86)> %\\WTTMobile\\Tools\\KitsDeviceDetector.log
-
-     
 
     >[!NOTE]
     >  For more information on HLK mobile testing tools and utilities, see the following topic: [HLK Mobile Testing Tools and Utilities](../user/hlk-mobile-testing-tools-and-utilities.md)
