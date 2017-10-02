@@ -15,8 +15,8 @@ After you install the Windows Hardware Lab Kit (Windows HLK) on the HLK Controll
 ## <span id="Known_Issues"></span><span id="known_issues"></span><span id="KNOWN_ISSUES"></span>Known Issues
 
 
-| Issue                                                                               | Workaround         |
-|-------------------------------------------------------------------------------------|--------------------|
+| Issue                                                 | Workaround         |
+|------------------------------------------------------|--------------------|
 | Device name reported in HLK as **Windows Phone** instead of the actual device name. | Reboot the device. |
 
  
@@ -96,7 +96,7 @@ After you install the Windows Hardware Lab Kit (Windows HLK) on the HLK Controll
         WTTProxy.exe -console
         ```
 
-10. Validation: After running device detector (steps above), the device should be booted to a valid OS, and be a visible target in the ‘ready’ state in HLK Manager and HLK Studio.
+10. Validation: After running device detector (steps above), the device should be booted to a valid OS, and be a visible target that shows as Ready in HLK Manager and HLK Studio.
 
 ## <span id="Onboarding_Aries_connected_devices"></span><span id="onboarding_aries_connected_devices"></span><span id="ONBOARDING_ARIES_CONNECTED_DEVICES"></span>Onboarding Aries connected devices
 
@@ -161,7 +161,7 @@ After you install the Windows Hardware Lab Kit (Windows HLK) on the HLK Controll
 
     `AriesUtil.exe ResetDevice /Aries:<aries-name> [/Autoskip:true]`
 
-6.  Validation: After running device detector (steps above), the device should be booted to a valid OS, and be a visible target in the ‘ready’ state in HLK Manager and HLK Studio.
+6.  Validation: After running device detector (steps above), the device should be booted to a valid OS, and be a visible target that shows as Ready in HLK Manager and HLK Studio.
 
 ## <span id="Onboarding_network_connected_devices"></span><span id="onboarding_network_connected_devices"></span><span id="ONBOARDING_NETWORK_CONNECTED_DEVICES"></span>Onboarding network connected devices
 
@@ -197,7 +197,7 @@ After you install the Windows Hardware Lab Kit (Windows HLK) on the HLK Controll
 
         `WTTProxy.exe -console`
 
-7.  Validation: After running device detector (steps above), the device should be booted to a valid OS, and be a visible target in the ‘ready’ state in HLK Manager and HLK Studio.
+7.  Validation: After running device detector (steps above), the device should be booted to a valid OS, and be a visible target that shows as Ready in HLK Manager and HLK Studio.
 
 
 

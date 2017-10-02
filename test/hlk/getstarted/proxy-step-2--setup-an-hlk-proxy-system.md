@@ -22,15 +22,12 @@ ms.assetid: 25425C6A-D375-4C5A-9A91-5F596DB32E96
 
     `\\<ControllerName>\HLKInstall\ProxyClient\setup.exe`
 
-     
-
     >[!NOTE]
-    >  Replace &lt;ControllerName&gt; with the name of the HLK Controller.
-
-     
+    >  Replace &lt;ControllerName&gt; with the name of the test controller.
 
 2.  The WTT Proxy Setup wizard appears. Follow the instructions in the setup wizard to completion.
-3.  Start the Proxy Service by double clicking on the **WTT Proxy** shortcut on the desktop of the proxy system or by navigating to  %ProgramFiles(X86)%\\WTTMobile\\Client\\ and running the following command from the elevated command prompt:  
+
+1.  Start the Proxy Service by double clicking on the **WTT Proxy** shortcut on the desktop of the proxy system or by navigating to  %ProgramFiles(X86)%\\WTTMobile\\Client\\ and running the following command from the elevated command prompt:  
 
     `WTTProxy.exe -console`
 
