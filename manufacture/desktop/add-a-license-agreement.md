@@ -54,7 +54,7 @@ Use the steps from [Lab 3: Add device drivers (.inf-style)](add-device-drivers.m
     C:\mount\windows\Windows\System32\oobe\info\default\1031\agreement.rtf  (German version)
     ```
     
-    Samples are in C:\USB-B\resources\agreement.rtf
+    Agreement.rtf EULA samples are in C:\USB-B\resources\
     
 4. Open a text editor and create .html versions of your license terms. Save the terms to the same folders as the .rtf versions. You can use the [EULA example](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/oem-license#eula-example) from [OEM license terms](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/oem-license) to create sample files.  The names of the EULA files should be identical, except for the extension.
 
@@ -106,7 +106,7 @@ Use the steps from [Lab 3: Add device drivers (.inf-style)](add-device-drivers.m
 1.  Create an **csup.txt** file to specify when the Windows image was created. This file must include the date that the image was created, in the form of 'MM-DD-YYYY', with no other characters, on a single line at the top of the file.
 
     ```
-    12-31-2016
+    10-05-2017
     ```
 2.  Copy the image info file into the image.
 
@@ -154,4 +154,5 @@ Use the steps from [Lab 2: Deploy Windows using a script](deploy-windows-with-a-
 
 Log into the system as if you were a new user. Select your language or region of required. The correct license terms should show up during this first login experience.
 
-Next steps: [Lab 9: Make changes from Windows (audit mode)](prepare-a-snapshot-of-the-pc-generalize-and-capture-windows-images-blue-sxs.md)
+> [!div class="nextstepaction"]
+> [Lab 9: Make changes from Windows (audit mode)](prepare-a-snapshot-of-the-pc-generalize-and-capture-windows-images-blue-sxs.md)
