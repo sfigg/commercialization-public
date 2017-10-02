@@ -11,7 +11,7 @@ ms.technology: windows-oem
 ---
 # What's new in ADK kits and tools
 
-## ## <a href="" id="adk"></a>What’s new in the Windows ADK for Windows 10, version 1709
+## <a href="" id="adk"></a>What’s new in the Windows ADK for Windows 10, version 1709
 
 ### Answer file setting changes
 
