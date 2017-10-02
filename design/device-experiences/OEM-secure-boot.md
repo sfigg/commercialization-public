@@ -22,14 +22,16 @@ For information on how the secure boot process works included Trusted Boot and M
 ## Secure boot requirements
 
 In order to support Secure boot, you must provide the following. 
-- UEFI Version 2.3.1 Errata C variables must be set to **SecureBoot=1** and **SetupMode=0** with a signature database (EFI_IMAGE_SECURITY_DATABASE) necessary to boot the machine securely pre-provisioned, and including a PK that is set in a valid KEK database. For more information, see [System.Fundamentals.Firmware.UEFISecureBoot](https://docs.microsoft.com/en-us/windows-hardware/design/compatibility/systems#systemfundamentalsfirmwareuefisecureboot).
-- The platform exposes an interface that adheres to the profile of UEFI v2.3.1 Section 27.
-- The platform must come provisioned with the correct keys in the UEFI Signature database (db) to allow Windows to boot. It must also support secure authenticated updates to the databases.
-Storage of secure variables must be isolated from the running operating system such that they cannot be modified without detection.
-- All firmware components are signed using at least RSA-2048 with SHA-256.
-When power is turned on, the system starts executing code in the firmware and uses public key cryptography as per algorithm policy to verify the signatures of all images in the boot sequence, up to and including the Windows Boot Manager.
-- The system must protect against rollback of firmware to older versions.
-The platform provides the EFI_HASH_PROTOCOL (per UEFI v2.3.1) for offloading cryptographic hash operations and the EFI_RNG_PROTOCOL (Microsoft defined) for accessing platform entropy. 
+
+| Hardware requirement | Details |
+|----------------------|---------|
+| UEFI Version 2.3.1 Errata C variables | Variables must be set to **SecureBoot=1** and **SetupMode=0** with a signature database (EFI_IMAGE_SECURITY_DATABASE) necessary to boot the machine securely pre-provisioned, and including a PK that is set in a valid KEK database. For more information, see [System.Fundamentals.Firmware.UEFISecureBoot](https://docs.microsoft.com/en-us/windows-hardware/design/compatibility/systems#systemfundamentalsfirmwareuefisecureboot). |
+| UEFI v2.3.1 Section 27 | The platform must expose an interface that adheres to the profile of UEFI v2.3.1 Section 27. |
+| UEFI signature database | The platform must come provisioned with the correct keys in the UEFI Signature database (db) to allow Windows to boot. It must also support secure authenticated updates to the databases. Storage of secure variables must be isolated from the running operating system such that they cannot be modified without detection. |
+| Firmware signing | All firmware components must be signed using at least RSA-2048 with SHA-256. |
+| Boot manager | When power is turned on, the system must start executing code in the firmware and use public key cryptography as per algorithm policy to verify the signatures of all images in the boot sequence, up to and including the Windows Boot Manager. |
+|Rollback protection | The system must protect against rollback of firmware to older versions. |
+| EFI_HASH_PROTOCOL | The platform provides the EFI_HASH_PROTOCOL (per UEFI v2.3.1) for offloading cryptographic hash operations and the EFI_RNG_PROTOCOL (Microsoft defined) for accessing platform entropy. |
 
 ## Signature Databases and Keys
 

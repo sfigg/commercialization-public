@@ -5,7 +5,7 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.author: dawnwood
-ms.date: 10/05/2017
+ms.date: 09/29/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -20,7 +20,7 @@ As an OEM, you provide the hardware necessary to enable Application Guard. Here 
 |----------------------|---------|
 | 64-bit CPU | A 64-bit computer is required for hypervisor and virtualization-based security (VBS). For more information about VBS, see [Virtualization Based Security (VBS)](OEM-vbs.md). |
 | CPU virtualization extensions | Extended page tables, also called Second Level Address Translation (SLAT) and one of the following virtualization extensions for VBS: VT-x (Intel) **-OR-** AMD-V |
-| Memory | 8 GB minimum, 16 GB recommended |
+| Memory | Microsoft recommends 8GB for optimal performance |
 | Hard drive | 5 GB free space, solid state disk (SSD) recommended |
 | IOMMU Support | Not required but highly recommended |
 
@@ -30,4 +30,3 @@ As an OEM, you provide the hardware necessary to enable Application Guard. Here 
 
 - [Windows Defender Device Guard hardware requirements](OEM-device-guard.md)
 - [Windows Defender Credential Guard hardware requirements](OEM-credential-guard.md)
-- [Bitlocker device encryption](OEM-device-encryption.md)
