@@ -13,6 +13,8 @@ ms.technology: windows-oem
 
 ## <a href="" id="adk"></a>What’s new in the Windows ADK for Windows 10, version 1709
 
+### Support for ARM64 platforms
+
 ### Answer file setting changes
 
 For an overview of Unattend settings that are new, deprecated, and removed, see [Changed answer file settings for Windows 10 version 1709 for desktop editions.](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/customize/desktop/unattend/changed-answer-file-settings-for-windows-10-build-1709)
