@@ -84,7 +84,7 @@ Starting in Windows 10, 1703, the Windows Defender Device Guard features have be
 **OEMs:** For more information about Windows Defender Device Guard hardware requirements, see [Windows Defender Device Guard hardware requirements](OEM-device-guard.md).
 
 
-**IT Professionals:** To learn how to deploy Windows Defender Device in your enterprise, see [Requirements and deployment planning guidelines for Device Guard](http://go.microsoft.com/fwlink/?LinkId=822877).
+**IT Professionals:** To learn how to deploy Windows Defender Device Guard in your enterprise, see [Requirements and deployment planning guidelines for Device Guard](http://go.microsoft.com/fwlink/?LinkId=822877).
 
 ## Windows Hello
 
