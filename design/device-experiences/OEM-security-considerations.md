@@ -32,7 +32,7 @@ Secure Boot is a security standard developed by members of the PC industry to he
 
 **OEMs:** To learn more about Secure Boot requirements for OEMs, see [Secure Boot](OEM-secure-boot.md).
 
-## Trusted Plaform Module (TPM) 2.0
+## Trusted Platform Module (TPM) 2.0
 
 Trusted Platform Module (TPM) technology is designed to provide hardware-based, security-related functions. A TPM chip is a secure crypto-processor that helps you with actions such as generating, storing, and limiting the use of cryptographic keys. The chip includes multiple physical security mechanisms to make it tamper resistant, and malicious software is unable to tamper with the security functions of the TPM. 
 
