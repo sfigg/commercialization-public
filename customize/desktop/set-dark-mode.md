@@ -21,20 +21,7 @@ Many Microsoft first party applications apply the setting and it is easy for you
 
 ![](images/darkmode2.png)![](images/darkmode3.png)
 
-OEMs can customize [themes](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-shell-setup-themes) via Unattend.xml as such:
-
-```xml
-<settings pass=”oobeSystem”>
-        <Themes>
-            <ThemeName>MyOLEDTheme</ThemeName>
-            <DefaultThemesOff>false</DefaultThemesOff>
-            <DesktopBackground>c:\windows\OLEDFriendlyImage.jpg</DesktopBackground>
-            <WindowColor>Lime</WindowColor>
-        </Themes>
-    </settings>
-```
-
-In Windows 10, build 1607, a setting has been added for light/dark mode toggle.
+You can customize the default Windows themevia Unattend.xml. The Unattend component includes a setting `UWPAppsUseLIghtTheme` that configures dark mode as the default for apps that support it.
 
 ```xml
 <settings pass=”oobeSystem”>
