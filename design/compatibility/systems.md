@@ -5300,7 +5300,7 @@ Microsoft recommends that the following fields have non-Null values that accurat
 
  - (Table 1, offset 06h) System Version
 
- - (Table 1, offset 1Bh) System Family<sup>2</sup>
+ - (Table 1, offset 1Ah) System Family<sup>2</sup>
 
  - (Table 2, offset 04h) Base Board Manufacturer
 
