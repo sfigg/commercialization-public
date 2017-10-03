@@ -53,10 +53,7 @@ For more information about the various settings and properties, see [Component S
 1. Open a Windows image. For more information, see [Open a Windows Image or Catalog File](open-a-windows-image-or-catalog-file.md).
 1. Create or open an answer file. For more information, see [Create or Open an Answer File](create-or-open-an-answer-file.md).
 1. In the **Windows Image** pane, add the component or setting to the answer file.
-1. In the **Answer File** pane, right-click the list item, and then click **Insert**.
-
-    Windows SIM inserts a new list-item type. For example, right-click the **DriverPaths** setting, and then click **Insert new PathAndCredentials**. A new **PathAndCredentials** setting is added to the answer file.
-
+1. In the **Answer File** pane, right-click the list item, and then click **Insert**. Windows SIM inserts a new list-item type. For example, right-click the **DriverPaths** setting, and then click **Insert new PathAndCredentials**. A new **PathAndCredentials** setting is added to the answer file.
 1. To add more list items, repeat the previous step.
 
 > [!Important]

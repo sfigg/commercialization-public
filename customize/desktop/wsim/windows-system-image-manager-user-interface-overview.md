@@ -21,12 +21,6 @@ The following screen shot illustrates the Windows SIM user interface.
 
 ![windows sim user interface](images/dep-win8-l-wsim-screenshot.gif)
 
-## In This Section
-
-* [Windows SIM Panes](#-simpanes)
-* [Windows SIM Menus](#-simmenu)
-* [Windows SIM Buttons](#-simbuttons)
-
 ## <a href="" id="-simpanes"></a>Windows SIM Panes
 
 ### Distribution Share Pane

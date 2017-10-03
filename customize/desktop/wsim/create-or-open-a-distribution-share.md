@@ -51,7 +51,7 @@ You can create a distribution-share folder by using Windows® System Image Mana
     * **LangPacks**
 1. Select the distribution share that you want to open, and then click **OK**. The distribution share opens in the **Distribution Share** pane.
 
-## Explore a distribution share from Windows SIM**
+## Explore a distribution share from Windows SIM
 
 1. In Windows SIM, right-click the top node in the **Distribution Share** pane, and then click **Explore Distribution Share**.
 

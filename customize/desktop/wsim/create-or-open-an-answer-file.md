@@ -25,7 +25,7 @@ After you create or open an answer file, you can add settings and packages to it
 1. Open a Windows image. For more information, see [Open a Windows Image or Catalog File](open-a-windows-image-or-catalog-file.md).
 1. In the **Answer File** pane, select the top node, and then right-click to select **New Answer File**.
 
-## Open an existing answer file**
+## Open an existing answer file
 
 1. Open Windows SIM.
 1. Right-click the **Answer File** pane, and then click **Open Answer File**. The **Open** dialog box appears.
@@ -35,6 +35,8 @@ The answer file appears in the **Answer File** pane.
 
 > [!Note]
 > The Windows image file that generated the answer file also opens if it is still in its original location.
+
+## Troubleshooting
 
 In some cases, Windows SIM might display validation errors when opening an existing answer file. If this happens, try the following options:
 

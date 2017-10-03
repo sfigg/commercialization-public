@@ -35,7 +35,7 @@ To create an answer file, you must first open a Windows image file or catalog fi
 1. Select a Windows image file, and then click **Open**. If you select a Windows image file that has more than one Windows image, the **Select an Image** dialog box opens.
 1. Click to select an image type (for example, **Fabrikam Custom Image 1**), and then click **OK**. The catalog file is created in the same directory as the Windows image file that you selected.
 
-### Troubleshooting
+## Troubleshooting
 
 If Windows SIM does not create the catalog file, try the following steps:
 

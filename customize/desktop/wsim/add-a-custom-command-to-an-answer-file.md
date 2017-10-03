@@ -25,7 +25,8 @@ The following procedure describes how to configure a custom command to run autom
     * Commands that are added to the **1 windowsPE** configuration pass appear in the setting **Microsoft-Windows-Setup\\RunSynchronous**.
     * Commands that are added to the **4 specialize** or **6 auditUser passes** configuration pass appear in the setting **Microsoft-Windows-Deployment\\RunSynchronous**.
     * Commands that are added to the **7 oobeSystem** configuration pass appear in the setting **Microsoft-Windows-Shell-Setup\\FirstLogonCommands**.
-      > [!Note}
+
+      > [!Note]
       > If you create a user account that does not include administrative rights, commands that are added to the **7 oobeSystem** configuration pass may not be run. Details are as follows:
       > * If User Account Control is enabled, a dialog box appears when that user logs on for the first time. The dialog box provides an option to allow an administrator to apply the commands. If the user clicks **Cancel**, these commands are not run.
       > * If User Account Control is disabled, these commands are not run.
