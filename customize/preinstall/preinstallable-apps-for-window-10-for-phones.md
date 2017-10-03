@@ -11,56 +11,50 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # Preinstallable apps for mobile devices
 
-
 ## <a href="" id="to-add-a-preinstalled-app-to-a-mobile--image"></a>To add a preinstalled app to a mobile image
-
 
 The process for creating a preinstallable app is similar to that of a standard app. In the Windows 10 Dev Center, a developer submits an app that you want to preinstall on your Windows 10 Mobile image. Once the app is submitted, you can request a preinstallation package, download it, and add it to the image, as described in this topic.
 
 To add a preinstallable app, you will need to perform the following actions:
 
--   Request a preinstallation package
--   Create a .provxml for the preinstallable app
--   Add the app to the image with Customization answer file
--   Build the image
+* Request a preinstallation package
+* Create a .provxml for the preinstallable app
+* Add the app to the image with Customization answer file
+* Build the image
 
 For more information about customization answer files, see [Customization answer file](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/customize/mobile/mcsf/customization-answer-file). For more information about building with Customization answer files, see [Building a mobile image using ImgGen.cmd](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/manufacture/mobile/building-a-phone-image-using-imggencmd).
 
 ## Request a preinstallation package
 
-
 Developers who have added an app to the Dev Center can request a preinstallation package for it. They can then give the preinstallation package directly to the OEM they are working with. If you are the OEM adding this application to your OS image, you would ask the developer of the application to download the application package and then give you the downloaded zip file. You cannot access their developer account directly. Once you have the preinstall package, you can continue with the rest of the steps. For more information on how a developer generates preinstall packages for an OEM, see [Generate preinstall packages for OEMs](http://go.microsoft.com/fwlink/?LinkId=624851).
 
 ## Create a .provxml file for a preinstallable app
 
-
 Adding a preinstalled app to an Windows 10 Mobile OS image requires a .provxml configuration file that specifies the installation parameters and the Windows 10 Store catalog identifiers. Specifically, it should specify the path to the .appx file, the path to the license file, and the Store catalog IDs. This information is used when the app connects to the Store service to check for updates. To minimize the chance of error, the developer portal provides the appropriate XML for your app. The following is an example of what the .provxml might look like.
 
-```
+```xml
 <?xml version="1.0" encoding="UTF-8" ?>
 <wap-provisioningdoc>
    <characteristic type="AppInstall">
-      <characteristic type="AppXPackage">          
-         <parm name="ProductID" value="{09f2d20a-7076-4970-80ac-1bc24c171d2e}"/>   
-         <parm name="AppXPath" value="c:\Programs\CommonFiles\Xaps\SampleApp.appx"/>    
-         <parm name="LicensePath" value="c:\Programs\CommonFiles\Xaps\SampleAppLicense.xml"/>    
-         <parm name="InstanceID" value="{03e9a435-3000-11db-89ca-0019b92FFFFF}"/> 
+      <characteristic type="AppXPackage">
+         <parm name="ProductID" value="{09f2d20a-7076-4970-80ac-1bc24c171d2e}"/>
+         <parm name="AppXPath" value="c:\Programs\CommonFiles\Xaps\SampleApp.appx"/>
+         <parm name="LicensePath" value="c:\Programs\CommonFiles\Xaps\SampleAppLicense.xml"/>
+         <parm name="InstanceID" value="{03e9a435-3000-11db-89ca-0019b92FFFFF}"/>
          <parm name="OfferID" value="{03e9a435-3000-11db-89ca-0019b92FFFFF}"/>
-         <parm name="PayloadID" value="{03e9a435-3000-11db-89ca-0019b92FFFFF}"/>   
+         <parm name="PayloadID" value="{03e9a435-3000-11db-89ca-0019b92FFFFF}"/>
          <parm name="UninstallDisabled" value="false"/>
          <parm name="FullyPreInstall" value="false"/>
          <parm name="ForceUpdate" value="false"/>
-      </characteristic>    
+      </characteristic>
    </characteristic>
 </wap-provisioningdoc>
 ```
 
-**Note**  provxml files for preinstalled apps must follow a prescribed naming convention. You must use MPAP\_name\_index.provxml, where name and index can be any strings. Typically, name is the name of the update package that contains the preinstalled app, and index is a string that differentiates provxml files that have the same name. Often, index is represented as a number, such as 01.
-
- 
+>[!Note]
+> provxml files for preinstalled apps must follow a prescribed naming convention. You must use MPAP\_name\_index.provxml, where name and index can be any strings. Typically, name is the name of the update package that contains the preinstalled app, and index is a string that differentiates provxml files that have the same name. Often, index is represented as a number, such as 01.
 
 ### provxml flags
 
@@ -115,14 +109,11 @@ Generally, this value should be left as the default (FALSE) unless the app must 
 </tbody>
 </table>
 
- 
-
 ## Add the app to the image
-
 
 Preinstalling apps are added to the OS image using a customization answer file. The process of creating a customization answer file that includes an app requires adding an additional Application element with the appropriate defining attributes. The following code sample illustrates how an app would be added to a customization answer file for preinstalling.
 
-```
+```xml
     <Applications>
       <Application License="$(CAFE_OUTPUT_DIR)\content\App_MobileTV_7e7cc86e_e1c0_476a_ac88_db3c9ffffabb\MobileTV_License.xml" ProvXML="$(CAFE_OUTPUT_DIR)\content\App_MobileTV_7e7cc86e_e1c0_476a_ac88_db3c9ffffabb\MPAP_MobileTV_01.provxml" Source="$(CAFE_OUTPUT_DIR)\content\App_MobileTV_7e7cc86e_e1c0_476a_ac88_db3c9ffffabb\MobileTV.xap"/>
       <Application License="$(CAFE_OUTPUT_DIR)\content\App_AudioSettings_373cb76e_7f6c_45aa_8633_b00e85c73261\audio_License.xml" ProvXML="$(CAFE_OUTPUT_DIR)\content\App_AudioSettings_373cb76e_7f6c_45aa_8633_b00e85c73261\MPAP_audio_01.provxml" Source="$(CAFE_OUTPUT_DIR)\content\App_AudioSettings_373cb76e_7f6c_45aa_8633_b00e85c73261\audio.appx"/>
@@ -130,22 +121,11 @@ Preinstalling apps are added to the OS image using a customization answer file. 
     </Applications>
 ```
 
-**Note**  The provxml file must be placed in the "$(runtime.commonfiles)\\Provisioning\\OEM" directory. The license file and app package (.xap or .appx) must be placed in the "$(runtime.commonfiles)\\xaps" directory
-
- 
+> [!Note]
+> The provxml file must be placed in the "$(runtime.commonfiles)\\Provisioning\\OEM" directory. The license file and app package (.xap or .appx) must be placed in the "$(runtime.commonfiles)\\xaps" directory
 
 Now that you have a customization answer file, you can build the image either from the Windows Imaging and Configuration Designer (ICD) command line or the graphical user interface.
 
 ## Build the image
 
 Follow the steps in the [Build a customized mobile image using imggen](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/manufacture/mobile/build-a-customized-mobile-image-using-imggen)
-
-
- 
-
-
-
-
-
-
-

@@ -13,9 +13,7 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # Distribution Shares and Configuration Sets Overview
-
 
 A distribution share is an optional set of folders that contain custom scripts, images, branding, applications, drivers, and other files. These files can be copied to Windows® during installation through an answer file (Unattend.xml).
 
@@ -24,7 +22,6 @@ During installation, Windows connects to the path of the server share by using t
 If you are installing Windows in an environment that does not have a network share or server share, you can copy the necessary files from the distribution share to a configuration set. A configuration set is a subset of the files in a distribution share. You can copy a configuration set to external storage, such as a USB flash drive or an external hard disk, to use during installation.
 
 ## Folders in a Distribution Share
-
 
 When you create a distribution share by using Windows System Image Manager (Windows SIM), three folders are created automatically. The folders are named **$OEM$ Folders**, **Out-of-Box Drivers**, and **Packages**. If you create your own distribution share, it must contain at least one of these folders for Windows SIM to recognize it as a valid distribution share.
 
@@ -36,10 +33,8 @@ As a general rule, to add new files and resources to Windows, use a data image. 
 
 For more information about how to use **$OEM$ Folders**, see [How to Manage Files and Folders in a Distribution Share](http://go.microsoft.com/fwlink/?LinkId=224963).
 
-**Important**  
-Do not overwrite existing files that are carried and serviced by the operating system. Using **$OEM$ Folders** to update or overwrite these files can cause the operating system to behave unpredictably and cause serious issues.
-
- 
+> [!Important]
+> Do not overwrite existing files that are carried and serviced by the operating system. Using **$OEM$ Folders** to update or overwrite these files can cause the operating system to behave unpredictably and cause serious issues.
 
 The following table describes the support for **$OEM$ Folders** and its subfolders.
 
@@ -120,37 +115,23 @@ The following table describes the support for **$OEM$ Folders** and its subfolde
 </tbody>
 </table>
 
- 
-
 ### Out-of-Box Drivers
 
 Drivers are a type of software that enables hardware or devices to function.
 
 The **Out-of-Box Drivers** folder includes additional device drivers that you install during Windows Setup by using Windows SIM. Windows Setup uses the following types of drivers:
 
--   **In-box drivers**.
-
-    Windows Setup handles in-box drivers the same way that it handles packages.
-
--   **Out-of-box drivers**.
-
-    By using Windows SIM, you can add out-of-box device drivers that are based on .inf files. Typically, these out-of-box drivers are processed during the **auditSystem** configuration pass. Your .inf-based out-of-box drivers must be in a distribution-share subfolder that is called Out-of-Box Drivers. For more information, see [How to Manage Files and Folders in a Distribution Share](http://go.microsoft.com/fwlink/?LinkId=224963).
-
--   **In-box drivers that are installed via a .msi file.**
-
-    In-box drivers that require a .msi file are added the same way that applications are added.
-
-    **Note**  
-    By using the **Microsoft-Windows-PnpCustomizationsWinPE** component, you must add boot-critical device drivers that are required for installation during the **windowsPE** configuration pass. For more information, see [How to Add Device Drivers by Using Windows Setup](http://go.microsoft.com/fwlink/?LinkId=224975). You can also add device drivers to an offline image by using Deployment Image Servicing and Management (**DISM**). For more information, see [How to Add and Remove Drivers Offline](http://go.microsoft.com/fwlink/?LinkId=224967).
-
-     
+* **In-box drivers**. Windows Setup handles in-box drivers the same way that it handles packages.
+* **Out-of-box drivers**. By using Windows SIM, you can add out-of-box device drivers that are based on .inf files. Typically, these out-of-box drivers are processed during the **auditSystem** configuration pass. Your .inf-based out-of-box drivers must be in a distribution-share subfolder that is called Out-of-Box Drivers. For more information, see [How to Manage Files and Folders in a Distribution Share](http://go.microsoft.com/fwlink/?LinkId=224963).
+* **In-box drivers that are installed via a .msi file.** In-box drivers that require a .msi file are added the same way that applications are added.
+  > [!Note]
+  > By using the **Microsoft-Windows-PnpCustomizationsWinPE** component, you must add boot-critical device drivers that are required for installation during the **windowsPE** configuration pass. For more information, see [How to Add Device Drivers by Using Windows Setup](http://go.microsoft.com/fwlink/?LinkId=224975). You can also add device drivers to an offline image by using Deployment Image Servicing and Management (**DISM**). For more information, see [How to Add and Remove Drivers Offline](http://go.microsoft.com/fwlink/?LinkId=224967).
 
 ### Packages
 
 The **Packages** folder is a location for Windows software updates. Package types include service packs, security updates, language packs, and other packages that Microsoft issues. You must use Windows SIM to import packages to a distribution share. After a package is imported and available in the **Distribution Share** pane, you can add the package to the answer file. For more information, see [How to Add Packages to a Distribution Share](http://go.microsoft.com/fwlink/?LinkId=225111).
 
 ## Configuration Sets
-
 
 After an answer file (**Unattend.xml**) has been validated and saved, you can create a configuration set. A configuration set is a subset of a distribution share that you can create by using Windows SIM. Configuration sets are useful when a network share is not available. You can store configuration sets on removable media and use them in the field. Creating a configuration set exports binaries that are referenced in the answer file and puts them together in a self-contained file set that can be accessed from the Unattend.xml file.
 
@@ -162,28 +143,21 @@ A configuration set contains a complete collection of files, drivers, applicatio
 
 Using configuration sets for unattended installations provides the following benefits:
 
--   A configuration set is a smaller and more portable version of a distribution share, which can have a size of several gigabytes. You can use configuration sets to install Windows operating systems while you are in the field.
+* A configuration set is a smaller and more portable version of a distribution share, which can have a size of several gigabytes. You can use configuration sets to install Windows operating systems while you are in the field.
+* Configuration sets are completely self-contained and have no references outside the file set.
+* You can duplicate a configuration set and then edit it for each computer model that you manufacture and release.
 
--   Configuration sets are completely self-contained and have no references outside the file set.
-
--   You can duplicate a configuration set and then edit it for each computer model that you manufacture and release.
-
-**Important**  
-If a configuration set is used during Windows Setup, all the contents at the root of the media where the answer file exists are copied to the Windows installation. Having many files and folders at the same level as the answer file might slow down installation. In some cases, you might run out of disk space.
-
- 
+> [!Important]
+> If a configuration set is used during Windows Setup, all the contents at the root of the media where the answer file exists are copied to the Windows installation. Having many files and folders at the same level as the answer file might slow down installation. In some cases, you might run out of disk space.
 
 ## Security Considerations for Distribution Shares and Configuration Sets
 
-
 Your distribution shares and configuration sets contain private data. The following are recommendations for improving security for distribution shares and configuration sets:
 
--   Restrict access to the contents of distribution shares. Depending on your environment, you can change the access control lists (**ACLs**) or permissions on a distribution share. Only approved accounts should have access to distribution shares.
-
--   Keep applications and device drivers updated with the latest fixes and patches.
+* Restrict access to the contents of distribution shares. Depending on your environment, you can change the access control lists (**ACLs**) or permissions on a distribution share. Only approved accounts should have access to distribution shares.
+* Keep applications and device drivers updated with the latest fixes and patches.
 
 ## Related topics
-
 
 [How to Create or Open a Distribution Share](http://go.microsoft.com/fwlink/?LinkId=225113)
 
@@ -192,14 +166,3 @@ Your distribution shares and configuration sets contain private data. The follow
 [How to Add Packages to a Distribution Share](http://go.microsoft.com/fwlink/?LinkId=225111)
 
 [Windows SIM Technical Reference](http://go.microsoft.com/fwlink/?LinkId=214570)
-
- 
-
- 
-
-
-
-
-
-
-

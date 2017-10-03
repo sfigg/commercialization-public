@@ -13,9 +13,7 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # Windows System Image Manager Technical Reference
-
 
 Windows System Image Manager (Windows SIM) is the tool that you use to create unattended Windows Setup answer files.
 
@@ -23,13 +21,10 @@ Windows SIM is included with the Windows ADK. Download the Windows ADK [from 
 
 You can create an answer file by using information from a Windows image (.wim) file and a catalog (.clg) file. Component settings are added to an appropriate configuration pass in the answer file. You can also add packages to be installed during Windows Setup. The following topics describe conceptual information about Windows SIM.
 
-**Important**  
-If you experience problems creating catalog files by using Windows SIM, see [Windows Image Files and Catalog Files Overview](windows-image-files-and-catalog-files-overview.md). This topic contains information about known issues and workarounds for creating catalog files.
-
- 
+> [!Important]
+> If you experience problems creating catalog files by using Windows SIM, see [Windows Image Files and Catalog Files Overview](windows-image-files-and-catalog-files-overview.md). This topic contains information about known issues and workarounds for creating catalog files.
 
 ## In This Section
-
 
 <table>
 <colgroup>
@@ -52,20 +47,6 @@ If you experience problems creating catalog files by using Windows SIM, see [Wi
 </tbody>
 </table>
 
- 
-
 ## Related topics
 
-
 [Deployment Image Servicing and Management (DISM) Technical Reference](http://go.microsoft.com/fwlink/p/?LinkId=214571)
-
- 
-
- 
-
-
-
-
-
-
-

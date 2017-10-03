@@ -13,14 +13,11 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # Windows System Image Manager Reference Topics
-
 
 The following topics provide reference information about Windows System Image Manager (Windows SIM).
 
 ## In This Section
-
 
 <table>
 <colgroup>
@@ -43,22 +40,8 @@ The following topics provide reference information about Windows System Image M
 </tbody>
 </table>
 
- 
-
 ## Related topics
-
 
 [Windows Deployment Options](http://go.microsoft.com/fwlink/?LinkId=214574)
 
 [Windows System Image Manager Technical Reference](windows-system-image-manager-technical-reference.md)
-
- 
-
- 
-
-
-
-
-
-
-

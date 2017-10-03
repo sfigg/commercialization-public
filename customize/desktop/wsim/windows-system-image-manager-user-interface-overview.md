@@ -13,9 +13,7 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # Windows System Image Manager User Interface Overview
-
 
 The Windows System Image Manager (Windows SIM) user interface contains a series of panes. You can use these panes to open Windows image (.**wim**) files, create unattended answer files, and then add components and packages to the respective configuration passes in an answer file.
 
@@ -25,15 +23,11 @@ The following screen shot illustrates the Windows SIM user interface.
 
 ## In This Section
 
-
--   [Windows SIM Panes](#-simpanes)
-
--   [Windows SIM Menus](#-simmenu)
-
--   [Windows SIM Buttons](#-simbuttons)
+* [Windows SIM Panes](#-simpanes)
+* [Windows SIM Menus](#-simmenu)
+* [Windows SIM Buttons](#-simbuttons)
 
 ## <a href="" id="-simpanes"></a>Windows SIM Panes
-
 
 ### Distribution Share Pane
 
@@ -58,7 +52,6 @@ The **Messages** pane consists of three tabs: **XML**, **Validation**, and **Con
 The types of messages that the **Messages** pane displays are informational. Messages appear on the **Configuration Set** tab if a configuration set has been created. For more information, see [Distribution Shares and Configuration Sets Overview](distribution-shares-and-configuration-sets-overview.md).
 
 ## <a href="" id="-simmenu"></a>Windows SIM Menus
-
 
 ### File Menu
 
@@ -117,8 +110,6 @@ The types of messages that the **Messages** pane displays are informational. Mes
 </tbody>
 </table>
 
- 
-
 ### Edit Menu
 
 <table>
@@ -168,8 +159,6 @@ The types of messages that the **Messages** pane displays are informational. Mes
 </tbody>
 </table>
 
- 
-
 ### Insert Menu
 
 <table>
@@ -198,8 +187,6 @@ The types of messages that the **Messages** pane displays are informational. Mes
 </tr>
 </tbody>
 </table>
-
- 
 
 ### Tools Menu
 
@@ -246,8 +233,6 @@ The types of messages that the **Messages** pane displays are informational. Mes
 </tbody>
 </table>
 
- 
-
 ### Help Menu
 
 <table>
@@ -277,10 +262,7 @@ The types of messages that the **Messages** pane displays are informational. Mes
 </tbody>
 </table>
 
- 
-
 ## <a href="" id="-simbuttons"></a>Windows SIM Buttons
-
 
 <table>
 <colgroup>
@@ -333,22 +315,8 @@ The types of messages that the **Messages** pane displays are informational. Mes
 </tbody>
 </table>
 
- 
-
 ## Related topics
-
 
 [Windows System Image Manager Scenarios Overview](windows-system-image-manager-scenarios-overview.md)
 
 [Windows System Image Manager Overview Topics](windows-system-image-manager-overview-topics.md)
-
- 
-
- 
-
-
-
-
-
-
-

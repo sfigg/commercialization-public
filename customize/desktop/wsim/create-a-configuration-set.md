@@ -13,9 +13,7 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # Create a Configuration Set
-
 
 The following procedure describes how to create a configuration set by using Windows® System Image Manager (Windows SIM).
 
@@ -23,27 +21,16 @@ A configuration set is a smaller version of a distribution share and is more eas
 
 Because a configuration set contains only internal references, it can be used for both online and offline installations. It can also be duplicated and changed for different types of installations.
 
-**To create a configuration set**
+1. Open Windows SIM.
+1. Open an answer file. For more information, see [Create or Open an Answer File](create-or-open-an-answer-file.md).
+1. On the **Tools** menu, click **Create Configuration Set**. The **Create Configuration Set** window opens.
+1. Browse to the destination folder for the configuration set, or enter a folder name.
+1. Select a folder that you want to copy to your **$OEM$ Folders** folder (optional), and then click **OK**.
 
-1.  Open Windows SIM.
-
-2.  Open an answer file. For more information, see [Create or Open an Answer File](create-or-open-an-answer-file.md).
-
-3.  On the **Tools** menu, click **Create Configuration Set**.
-
-    The **Create Configuration Set** window opens.
-
-4.  Browse to the destination folder for the configuration set, or enter a folder name.
-
-5.  Select a folder that you want to copy to your **$OEM$ Folders** folder (optional), and then click **OK**.
-
-    **Important**  
-    If a configuration set is used during Windows Setup, all of the contents at the root of the media where the answer file exists are copied to the Windows installation. If there are many files and folders at the same level as the answer file, Windows Setup copies all of the files and folders to the Windows installation. Note that this might slow down installation. In some cases, you might run out of disk space.
-
-     
+> [!Important]
+> If a configuration set is used during Windows Setup, all of the contents at the root of the media where the answer file exists are copied to the Windows installation. If there are many files and folders at the same level as the answer file, Windows Setup copies all of the files and folders to the Windows installation. Note that this might slow down installation. In some cases, you might run out of disk space.
 
 ## Related topics
-
 
 [Windows System Image Manager How-to Topics](windows-system-image-manager-how-to-topics.md)
 
@@ -52,14 +39,3 @@ Because a configuration set contains only internal references, it can be used fo
 [Add Packages to a Distribution Share](add-packages-to-a-distribution-share.md)
 
 [Create or Open a Distribution Share](create-or-open-a-distribution-share.md)
-
- 
-
- 
-
-
-
-
-
-
-

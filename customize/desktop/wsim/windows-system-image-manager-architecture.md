@@ -13,9 +13,7 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # Windows System Image Manager Architecture
-
 
 You use Windows® System Image Manager (Windows SIM) to create an XML-based answer file that is required to automate Windows installations.
 
@@ -33,18 +31,6 @@ The following diagram shows how Windows SIM works.
 
 ## Related topics
 
-
 [Windows System Image Manager Reference Topics](windows-system-image-manager-technical-reference.md)
 
 [Windows System Image Manager Overview Topics](windows-system-image-manager-overview-topics.md)
-
- 
-
- 
-
-
-
-
-
-
-

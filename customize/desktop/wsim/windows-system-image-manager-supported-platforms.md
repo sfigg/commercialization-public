@@ -13,12 +13,9 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # Windows System Image Manager Supported Platforms
 
-
 ## <a href="" id="dtsp-simp"></a>Supported Platforms
-
 
 By using the 32-bit version of Windows System Image Manager (Windows SIM), you can create and open catalog (.clg) files for Windows images of all architecture types. You can use the 64-bit versions of Windows SIM to create catalog files for only 64-bit Windows images. For example, you can use the 64-bit version of Windows SIM to create catalog files for only 64-bit-based Windows images.
 
@@ -130,20 +127,6 @@ The following table lists Windows operating systems and the supported list of ar
 </tbody>
 </table>
 
- 
-
 ## Related topics
 
-
 [Windows System Image Manager Reference Topics](windows-system-image-manager-technical-reference.md)
-
- 
-
- 
-
-
-
-
-
-
-
