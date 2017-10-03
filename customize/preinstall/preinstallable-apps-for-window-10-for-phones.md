@@ -60,54 +60,11 @@ Adding a preinstalled app to an Windows 10 Mobile OS image requires a .provxml 
 
 These are the flags you can use in your provxml.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td>flag</td>
-<td>description</td>
-</tr>
-<tr class="even">
-<td>UninstallDisabled</td>
-<td>This flag controls whether a preinstalled app can be uninstalled by a user. When set to FALSE(default), a user is able to uninstall the preinstalled app. When set to TRUE, a user is not able to uninstall the app. This flag is only settable via provxml and cannot be overridden through a Store update. Only a device update with an updated provxml file can change this value. Ideally, to maintain the user experience, this flag should only be set to TRUE for apps that are critical to phone functionality.</td>
-</tr>
-<tr class="odd">
-<td>FullyPreinstall</td>
-<td>This flag controls whether the app is MDIL bound during first boot/update or whether it is delayed until after those operations complete. Delaying MDIL binding, which is the default behavior for apps that are not pre-pinned to Start, allows the user to get back to their phone as quickly as possible. When binding is deferred till after first boot/update completes the app icon will display greyed out with a status of “installing” and cannot be run until the deferred bind completes. The amount of time it takes to complete all deferred bindings is dependent on the number of deferred preloaded apps and the user’s activity. The following table illustrates the behavior.
-<table>
-<tbody>
-<tr class="odd">
-<td>Fully preinstall</td>
-<td>behavior</td>
-</tr>
-<tr class="even">
-<td>true</td>
-<td>MDIL binding occurs before first boot or update completes.</td>
-</tr>
-<tr class="odd">
-<td>false</td>
-<td>If the app is pre-pinned to Start, MDIL binding is performed before first boot or update completes. If the app is not pre-pinned to Start, MDIL binding is deferred until after first boot or update completes</td>
-</tr>
-</tbody>
-</table>
-<p> </p>
-Generally, this value should be left as the default (FALSE) unless the app must be available to run immediately after first boot or an OS update. Some example situations where this flag should be set to TRUE are the following:
-<ul>
-<li>OEM extension apps</li>
-<li>Phone dialer-installed apps</li>
-<li>OEM service agents</li>
-<li>Critical system settings apps</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td>ForceUpdate</td>
-<td>This flag allows an app in an OS update image to attempt to overwrite an existing version of the app already installed on the phone prior to update to Windows 10 Mobile. The default value for this flag is FALSE. Be aware that because the app update is forced, setting this flag to TRUE might result in a downgrade in functionality if the already-installed app was developed for an earlier version of the OS. In general, this flag should only be used when the Windows 10 Mobile version of the app must be on the phone immediately after update, even if it means downgrading the version of the app already installed.</td>
-</tr>
-</tbody>
-</table>
+| Flag                                  | Description                                                                          |
+|:--------------------------------------|:-------------------------------------------------------------------------------------|
+| UninstallDisabled                     | This flag controls whether a preinstalled app can be uninstalled by a user. When set to FALSE(default), a user is able to uninstall the preinstalled app. When set to TRUE, a user is not able to uninstall the app. This flag is only settable via provxml and cannot be overridden through a Store update. Only a device update with an updated provxml file can change this value. Ideally, to maintain the user experience, this flag should only be set to TRUE for apps that are critical to phone functionality.                                             |
+| ForceUpdate                           | This flag allows an app in an OS update image to attempt to overwrite an existing version of the app already installed on the phone prior to update to Windows 10 Mobile. The default value for this flag is FALSE. Be aware that because the app update is forced, setting this flag to TRUE might result in a downgrade in functionality if the already-installed app was developed for an earlier version of the OS. In general, this flag should only be used when the Windows 10 Mobile version of the app must be on the phone immediately after update, even if it means downgrading the version of the app already installed.                                                                          |
+| FullyPreinstall                       | This flag controls whether the app is MDIL bound during first boot/update or whether it is delayed until after those operations complete. Delaying MDIL binding, which is the default behavior for apps that are not pre-pinned to Start, allows the user to get back to their phone as quickly as possible. When binding is deferred till after first boot/update completes the app icon will display greyed out with a status of “installing” and cannot be run until the deferred bind completes. The amount of time it takes to complete all deferred bindings is dependent on the number of deferred preloaded apps and the user’s activity. The flag behavior is as follows: <br/> **true**: MDIL binding occurs before first boot or update completes. <br/> **false**: If the app is pre-pinned to Start, MDIL binding is performed before first boot or update completes. If the app is not pre-pinned to Start, MDIL binding is deferred until after first boot or update completes. <br/> Generally, this value should be left as the default (FALSE) unless the app must be available to run immediately after first boot or an OS update. Some example situations where this flag should be set to TRUE are the following: <br/> * OEM extension apps <br/> * Phone dialer-installed apps <br/> * OEM service agents <br/> * Critical system settings apps    |
 
 ## Add the app to the image
 
