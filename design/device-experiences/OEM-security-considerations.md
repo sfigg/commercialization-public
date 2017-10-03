@@ -20,7 +20,7 @@ As an OEM, you have a unique opportunity to impact the efficacy of the security 
 
 BitLocker device encryption is a set of features that you as an OEM enable by providing the right set of hardware in the devices you sell. Without the proper hardware configuration, device encryption is not enabled. With the right hardware configurations, Windows 10 automatically encrypts a device.
 
-**OEMs:** For more information on what hardware you need to provide to enable device encryption, see [BitLocker device encryption hardware requirements](OEM-device-encryption.md).
+**OEMs:** For more information on what hardware you need to provide to enable device encryption, see [BitLocker device encryption hardware requirements](bitlocker-drive-encryption.md).
 
 ## Hypervisor-protected code integrity (HVCI)
 
@@ -84,7 +84,7 @@ Starting in Windows 10, 1703, the Windows Defender Device Guard features have be
 **OEMs:** For more information about Windows Defender Device Guard hardware requirements, see [Windows Defender Device Guard hardware requirements](OEM-device-guard.md).
 
 
-**IT Professionals:** To learn how to deploy Windows Defender Device in your enterprise, see [Requirements and deployment planning guidelines for Device Guard](http://go.microsoft.com/fwlink/?LinkId=822877).
+**IT Professionals:** To learn how to deploy Windows Defender Device Guard in your enterprise, see [Requirements and deployment planning guidelines for Device Guard](http://go.microsoft.com/fwlink/?LinkId=822877).
 
 ## Windows Hello
 
