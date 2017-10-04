@@ -20,15 +20,10 @@ The Windows Hardware Compatibility Program is designed to help your company deli
 
 The following requirements are new for Windows 10, version 1709:
 
-* [Device.DevFund.UniversalDriver](https://docs.microsoft.com/en-us/windows-hardware/design/compatibility/device-devfund)
-* [Device.Network.LAN.SDDC](https://docs.microsoft.com/en-us/windows-hardware/design/compatibility/device-network-lan)
-* [Device.Network.LAN.SDDC.CloudStress](https://docs.microsoft.com/en-us/windows-hardware/design/compatibility/device-network-lan)
-* Device.Network.Switch.SDDC
-* [System.Fundamentals.Security](https://docs.microsoft.com/en-us/windows-hardware/design/compatibility/systems#system.fundamentals.security)
-* [System.Client.SensorCamera](https://docs.microsoft.com/en-us/windows-hardware/design/compatibility/systems#systemclientsensorcameran)
-* System.Fundamentals.Firmware.HSTI
-* System.Server.SDDC
-* System.Solutions.WSSD
+* [Device.DevFund.UniversalDriver](https://docs.microsoft.com/en-us/windows-hardware/design/compatibility/1709/device-devfund#Device.DevFund.UniversalDriver)
+* [System.Fundamentals.Security](https://docs.microsoft.com/en-us/windows-hardware/design/compatibility/1709/systems#systemfundamentalssecurity)
+* [System.Client.SensorCamera](https://docs.microsoft.com/en-us/windows-hardware/design/compatibility/1709/systems#systemclientsensorcamera)
+* [System.Fundamentals.Firmware.HSTI](https://docs.microsoft.com/en-us/windows-hardware/design/compatibility/1709/systems#systemfundamentalsfirmware)
 
 ### New security guidelines
 
