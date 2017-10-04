@@ -27,7 +27,7 @@ Test server setup is the same for all desktop testing. See [Step 1: Install Cont
 ## <span id="step-2"></span><span id="STEP-2"></span>Step 2: Install Client on the test system(s)
 
 
-After you install the HLK on the test server, you are ready to add test systems to the environment. You must install the HLK Client software on each test system. The HLK Client software is stored on the Windows HLK test server.
+Testing for ARM64 Desktop requires the client systems to be set up differently than testing for x86/x64. ARM64 Desktop testing uses a different setup path. Also, a complete submission package requires testing to be done in two modes -- native ARM64 and x86 on ARM64. Testing can be done with multiple machines or a single machine, but using a single machine requires the HLK client to be uninstalled and reinstalled using the directions below to change the modes. 
 
 ARM64 desktop testing requires the client systems to be set up differently than testing for x86/x64.  It uses a different setup path and there are two testing modes required, native ARM64 and x86 on ARM64, for a complete submission package. 
 
