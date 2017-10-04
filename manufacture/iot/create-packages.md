@@ -1,11 +1,10 @@
 ---
 author: kpacquer
 Description: Create Windows Universal OEM Packages
-ms.assetid: cbae6949-ccfe-4015-a9b0-a269f6f30d5a
 MSHAttr: 'PreferredLib:/library'
 title: Create Windows Universal OEM Packages
 ms.author: kenpacq
-ms.date: 09/26/2017
+ms.date: 10/04/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -13,28 +12,29 @@ ms.technology: windows-oem
 
 # Create Windows Universal OEM Packages
 
-## Overview
+The Windows Universal OEM packaging standard is supported on Windows IoT Core, version 1709.
+
+This new packaging schema is built to be compatible with more types of devices in the future. If you've built packages for IoT Core devices using the legacy packaging standard (pkg.xml), and you'd like to use them on IoT devices, you can [convert them to the new packaging standard](#convert_packages).
+
+## Packages
 Packages are the logical building blocks used to create IoT Core images.
 
 *  **Everything you add is packaged**. Every driver, library, registry setting, system file, and customization that you add to the device is included in a package. The contents and location of each item are listed in a package definition file (*.wm.xml). 
 *  **Packages can be updated by trusted partners**. Every package on your device is signed by you or a trusted partner. This allows OEMs, ODMs, developers, and Microsoft work together to help deliver security and feature updates to your devices without stomping on each other's work. 
 *  **Packages are versioned**. This helps make updates easier and makes system restores more reliable.
 
-![A sample package file (sample_pkg.cab) includes a package definition file, package contents like apps, drivers, and files, plus a signature file and a version number](images/OEMPackages.png)
+![A sample package file (sample_pkg.cab) includes a package definition file, package contents like apps, drivers, and files, plus a signature file and a version number](images/oempackages.png)
 
 Packages fall into three main categories:
 * **OS kit packages** contain the core Windows operating system
 * **SoC vendor prebuilt packages** contain drivers and firmware that support the chipset
 * **OEM packages** contain device-specific drivers and customizations
 
-
 [Learn about how to combine these packages into images for devices.](iot-core-manufacturing-guide.md)
-
-The Windows Universal OEM packaging standard uses a new schema that's compatible with more types of devices. If you've built packages using the legacy packaging standard (pkg.xml), and you'd like to use them on IoT devices, you'll need to [convert the packages](#convert_packages).
 
 ## Start by creating a new empty package
 
-1.  Install the Windows ADK, WDK, the IoT Add-On Kit, and test certificates as described in [Get the tools needed to customize Windows IoT Core](set-up-your-pc-to-customize-iot-core.md) and [Lab 1a: Create a basic image](create-a-basic-image.md).
+1.  Install Windows ADK for Windows 10, version 1709, as well as the other tools and test certificates described in [Get the tools needed to customize Windows IoT Core](set-up-your-pc-to-customize-iot-core.md) and [Lab 1a: Create a basic image](create-a-basic-image.md).
 
 2.  Use a text editor to create a new package definition file (also called a Windows Manifest file) based on the following template. Save the file using the ***.wm.xml** extension. 
 
@@ -66,7 +66,9 @@ The Windows Universal OEM packaging standard uses a new schema that's compatible
 
 ## Add content to a package
 
-The contents of a package are organized as a list of XML elements in the package definition file. To add contents to a package, add a **Components** element with the appropriate child elements. The following example demonstrates how to add some files and registry settings to a package.
+The contents of a package are organized as a list of XML elements in the package definition file. 
+
+The following example demonstrates how to add some files and registry settings to a package. This example defines a variable (_RELEASEDIR) that can be updated each time you generate the package.
 
 ```xml
 <?xml version='1.0' encoding='utf-8' standalone='yes'?>
@@ -168,43 +170,6 @@ update.mum
 </assembly>
 ```
 
-## Add a language-specific content to a package
-
-In the preceding example, all the files and registry values are language neutral. You can use the package project XML file to add language-related files and registry values to a package. Special flags are used to notify the package generator of language-specific content. The following XML example demonstrates how to designate language-specific content.
-```xml
-   <language culture="en-us">
-    <files>
-      <file
-          destinationDir="$(runtime.system32)\$(langId)"
-          source="$(_RELEASEDIR)\$(langId)\MediaService.mui"
-          />
-    </files>
-  </language>
-  <language culture="fr-fr">
-    <files>
-      <file
-          destinationDir="$(runtime.system32)\$(langId)"
-          source="$(_RELEASEDIR)\$(langId)\MediaService.mui"
-          />
-    </files>
-  </language>
-```
-
-```
-pkggen myPackage.wm.xml /universalbsp /variables:"_RELEASEDIR=c:\release" /languages:"en-us;fr-fr"
-```
-
-```text
-Directory of c:\oemsample
-
-04/04/2017  10:18 PM    <DIR>          .
-04/04/2017  10:18 PM    <DIR>          ..
-04/04/2017  10:17 PM             2,296 myPackage.wm.xml
-04/04/2017  10:17 PM            11,560 OEM-Media-MediaService.cab
-04/04/2017  10:17 PM             8,750 OEM-Media-MediaService.Resources_Lang_en-us.cab
-04/04/2017  10:17 PM             8,752 OEM-Media-MediaService.Resources_Lang_fr-fr.cab
-```
-
 ## Add a driver component
 
 In the package definition file, use the **driver** element to inject drivers. We recommend using relative paths, as it's typically the simplest way to describe the INF source path.
@@ -262,152 +227,6 @@ In the package definition file, use the **service** element (and its child eleme
       type="win32UserShareProcess"
       >
 ```
-
-
-## Add BCD Settings
-
-If you wish to make changes to the BCD settings, you'll need to update 2 files:
-* **bcdsettings.xml** - This file will contain the declarations for BCD settings.
-* **bcdsettings.wm.xml** - This file is the manifest that will consume the bcdsettings.xml
-
-The following example shows how to enable test signing: 
-
-**bcdsettings.xml** 
-```xml
-<?xml version="1.0" encoding="utf-8"?>
-<BootConfigurationDatabase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/phone/2011/10/BootConfiguration">
-  <Objects>
-
-    <!--  Allow Test Signing Certificate -->
-    <Object SaveKeyToRegistry="false">
-      <FriendlyName>Global Settings Group</FriendlyName>
-      <Elements>
-        <Element>
-          <DataType>
-            <WellKnownType>Allow Pre-release Signatures</WellKnownType>
-          </DataType>
-          <ValueType>
-            <BooleanValue>true</BooleanValue>
-          </ValueType>
-        </Element>
-      </Elements>
-    </Object>
-
-    <Object SaveKeyToRegistry="false">
-      <FriendlyName>Windows Boot Manager</FriendlyName>
-      <Elements>
-        <Element>
-          <DataType>
-            <WellKnownType>Allow Pre-release Signatures</WellKnownType>
-          </DataType>
-          <ValueType>
-            <BooleanValue>true</BooleanValue>
-          </ValueType>
-        </Element>
-      </Elements>
-    </Object>
-
-  </Objects>
-</BootConfigurationDatabase>
-```
-
-**bcdsettings.wm.xml** 
-  <?xml version='1.0' encoding='utf-8' standalone='yes'?>
-  <identity
-    xmlns="urn:Microsoft.CompPlat/ManifestSchema.v1.00"
-    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    owner="OEM"
-    name="BcdOEMPackageName"
-    namespace="OEMName"
-    >
-    <onecorePackageInfo targetPartition="EFIESP" releaseType="Test" />
-    <bcdStore source=".\bcdsettings.xml" buildFilter="not build.isWow"/>
-  </identity>
-
-## COM Registration
-
-COM servers and class definitions should be registered using COM elements.
-
-```xml
-  <COM>
-    <servers>
-      <inProcServer path="%SystemRoot%\system32\MediaService.dll">
-        <classes>
-          <classDefinition
-              id="{2B32ECC3-C3BB-4701-82BB-EB7FE370D999}"
-              name="CLSID_MediaManager"
-              threading="MTA"
-              />
-        </classes>
-      </inProcServer>
-    </servers>
-  </COM>
-```
-
-
-## Project scope macros
-
-Package projects can use macros to simplify the XML creation process. Some macros are already globally defined, in which case they can't be changed or modified, but you can also define local macros for use within your own package definition file. This local macro definition is embedded in the specific package project file through the macros element. 
-
-The following example demonstrates creating a local macro for use in a package definition file, and then calling the macro when later defining a registry key.
-
-```xml
-  <macros>
-    <macro
-        id="ServiceName"
-        value="MediaService"
-        />
-  </macros>
-  <regKeys>
-    <regKey keyName="$(hklm.software)\OEMName\$(ServiceName)">
-      <regValue
-          name="StringValue"
-          type="REG_SZ"
-          value="$(ServiceName)"
-          />
-    </regKey>
-  </regKeys>
-```
-
-<!--
-
-## Security
-
-If resources in your manifest are sensitive from a privacy or security perspective, or your resource(s) need to be accessed from within an app container, then you need to secure them using either Declarative Security or SDDL's.
-
-See quick overview of Declarative Security:
-
-https://osgwiki.com/wiki/Security_Model#Declarative_Security
-
-For more information on protecting or accessing protected resources using Declarative Security:
-
-https://osgwiki.com/wiki/Security_Model_How-Tos
-
-OEM Packages only support private resources defined on services.
-
-## Private Resources
-
-If a service requires exclusive access to data and/or RPC interfaces, these resources should be private.
-
-```xml
-  <service
-      name="MediaService"
-      objectName="LocalSystem"
-      start="delayedAuto"
-      ...
-      >
-    <privateResources>
-      <regKey path="$(hklm.software)\OEMName\MediaService\Data\(*)"/>
-      <transientObject
-          path="MediaService\RpcServer"
-          readOnly="Yes"
-          type="$(OBJECT_RPC)"
-          />
-    </privateResources>
-  </service>
-```
--->
 
 ## Build and Filter WOW Packages
 To build Guest or WOW packages (32 bit packages to run on 64 bit devices) add the buildWow="true" attribute to myPackage.wm.wml
