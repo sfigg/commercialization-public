@@ -113,6 +113,6 @@ The PC should reboot into Windows. While you’re waiting for the preparation ph
 2.  Select **Start** &gt; **Settings** &gt; **Update & security** &gt; **Recovery** &gt; under **Reset this PC**, click **Get started** > **Remove everything** > **Just remove my files** > **Next**.
 3.  After Windows completes the reset,  Windows should go back to the original welcome screens as if there were no user account on the device.
 
-**Next Steps**
-[Lab 3: Add device drivers (.inf-style)](add-device-drivers.md) (includes basics on mounting images)
+> [!div class="nextstepaction"]
+> [Lab 3: Add device drivers (.inf-style)](add-device-drivers.md)
 
