@@ -72,10 +72,10 @@ This lab assumes the 64-bit architecture, so if you’re using the 32-bit versio
 | Win 10 1709 32/64 MultiLang OPK LangPackAll/LIP     |
 | Win 10 1709 32/64 MultiLang OPK Feat on Demand      |
 | Win 10 1709 32/64 MultiLang OPK App Update          |
-| Office Mobile MultiLang v1.3 OPK                    |
-| Office 2016 v16.2 Deployment Tool for OEM OPK       |
-| Office 2016 v16.2 English OPK                       |              
-| Office v16.2 German OPK |
+| X20-98485 Office Mobile MultiLang v1.3 OPK                    |
+| X21-05453 Office 2016 v16.2 Deployment Tool for OEM OPK       |
+| X21-05414 Office 2016 v16.2 English OPK                       |              
+| X21-05508 Office v16.2 German OPK |
 
 We also discuss how to add hardware drivers and other Windows apps in this guide, get those from the hardware/software manufacturers.
 
