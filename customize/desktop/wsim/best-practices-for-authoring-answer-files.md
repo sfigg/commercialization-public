@@ -17,7 +17,7 @@ ms.technology: windows-oem
 
 We recommend the following best practices for creating answer files.
 
-There are many ways in which you can use answer files. For more information about how to use an answer file with Windows® Setup, see [Windows Setup Automation Overview](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/windows-setup-automation-overview). For more information about how to use an answer file with the **Sysprep** tool, [Using Answer Files with Sysprep](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/use-answer-files-with-sysprep). For more information about how to use an answer file with Deployment Image Servicing and Management (DISM), see [DISM Unattended Servicing Command-Line Options](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/dism-unattended-servicing-command-line-options).
+There are many ways in which you can use answer files. For more information about how to use an answer file with Windows Setup, see [Windows Setup Automation Overview](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/windows-setup-automation-overview). For more information about how to use an answer file with the **Sysprep** tool, [Using Answer Files with Sysprep](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/use-answer-files-with-sysprep). For more information about how to use an answer file with Deployment Image Servicing and Management (DISM), see [DISM Unattended Servicing Command-Line Options](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/dism-unattended-servicing-command-line-options).
 
 ## Always Validate Answer Files in Windows SIM
 
@@ -56,8 +56,9 @@ Answer files store sensitive data, including product keys, passwords, and other 
 * **Restrict access to answer files.** Depending on your environment, you can change the access control lists (**ACLs**) or permissions on a file. Only approved accounts can access answer files.
 * **Hide passwords.** To improve security in answer files, you can hide the passwords for local accounts by using Windows SIM. For more information, see [Hide Sensitive Data in an Answer File](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/wsim/hide-sensitive-data-in-an-answer-file).
 * **Delete the cached answer file.** During unattended Windows installation, answer files are cached to the computer. For each configuration pass, sensitive information such as domain passwords and product keys are deleted in the cached answer file. However, other information is still readable in the answer file. Before you deliver the computer to a customer, delete the cached answer file in **%WINDIR%\\panther**.
-    > [!Note]
-    > Delete the answer file only if no settings will be processed during the **oobeSystem** configuration pass. The **oobeSystem** configuration pass is processed immediately before Out-Of-Box Experience (OOBE) starts. This is typically the first time that a customer turns on the computer. If you delete the answer file from this folder, those settings will not be processed.
+
+  > [!Note]
+  > Delete the answer file only if no settings will be processed during the **oobeSystem** configuration pass. The **oobeSystem** configuration pass is processed immediately before Out-Of-Box Experience (OOBE) starts. This is typically the first time that a customer turns on the computer. If you delete the answer file from this folder, those settings will not be processed.
 
 ## Do Not Overwrite Existing Files When You Are Using Data Images or $OEM$ Folders
 

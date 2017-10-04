@@ -13,8 +13,8 @@ This topic describes Windows 10, version 1709 answer file settings that have cha
 
 ## New Windows settings
 
-| Setting name                                           | Description                                                                      |
-|:-------------------------------------------------------|:---------------------------------------------------------------------------------|
+| Setting name         | Description                                                                      |
+|:---------------------|:---------------------------------------------------------------------------------|
 | [Microsoft-Windows-Shell-Setup-OEMInformation-SupportProvider](microsoft-windows-shell-setup-oeminformation-supportprovider.md)           | New. Specifies the name of the OEM support app or website to display in the Get Help app. If not provided, the default System Manufacturer name (from msinfo32.exe) will be used. |
 
 ## Deprecated Windows settings

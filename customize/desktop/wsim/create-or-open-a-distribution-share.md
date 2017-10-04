@@ -54,8 +54,7 @@ You can create a distribution-share folder by using Windows® System Image Mana
 ## Explore a distribution share from Windows SIM
 
 1. In Windows SIM, right-click the top node in the **Distribution Share** pane, and then click **Explore Distribution Share**.
-
-The distribution-share folder opens in Windows Explorer, where you can modify files or move files between folders.
+1. The distribution-share folder opens in Windows Explorer, where you can modify files or move files between folders.
 
 ## Related topics
 
