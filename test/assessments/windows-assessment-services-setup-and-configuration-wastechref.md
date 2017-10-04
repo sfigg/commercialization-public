@@ -17,7 +17,7 @@ ms.technology: windows-oem
 
 # Windows Assessment Services setup and configuration
 
-Before you start to use the assessment tools, you must initialize Windows Assessment Services. Multiple Windows ASC computers can communicate with the same Windows Assessment Services server. Additional configuration steps include preparing a bootable Windows PE USB drive to gather inventory on the test computers that do not have a running operating system installed. For computers that have a running operating system installed, the CompleteDeployment script is provided to add these computers to inventory. You also must add drivers and images to your inventory. The procedures in this topic walk you through this process.
+The sections in this topic describe how to set up and configure Windows Assessment Services.
 
 
 ## <a href="" id="configwas"></a>Initializing Windows Assessment Services
@@ -47,25 +47,13 @@ Some assessments require access to symbols. If the symbols are not available, th
 
 2.  If the test computer doesn't have access to the Internet and can't access the Microsoft public symbol server, connect the test computer to the Internet and follow the instructions in [http://support.microsoft.com/kb/311503](http://go.microsoft.com/fwlink/p/?linkid=235360) to download the matching Windows component symbols. Then, move the test computer back to the original network, and copy the downloaded symbols to **%systemdrive%\\relax\\symbols\\%PROCESSOR\_ARCHITECTURE%\\** on the Windows Assessment Services server.
 
-3.  Change the unattended answer file template for deployment images, under **C:\\relax\\scripts\\tempate**, by adding the following in the `<FirstLogonCommands>` section. Update the order number to the last sequence of the synchronous commands.
+3.  Change the unattended answer file template for deployment images, under **C:\\relax\\scripts\\templates**, by adding the following in the `<FirstLogonCommands>` section. Update the order number to the last sequence of the synchronous commands.
 
     ```
     <SynchronousCommand>
-    ```
-
-    ```
        <Order>8</Order>
-    ```
-
-    ```
        <CommandLine>setx _NT_SYMBOL_PATH SRV*%systemdrive%\relax\symbols\%PROCESSOR_ARCHITECTURE%;%systemdrive%\relax\symbols\%PROCESSOR_ARCHITECTURE% /M</CommandLine>
-    ```
-
-    ```
        <Description>"Setting _NT_SYMBOL_PATH"</Description>
-    ```
-
-    ```
     </SynchronousCommand>
     ```
 
