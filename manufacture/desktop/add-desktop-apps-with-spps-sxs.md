@@ -193,4 +193,5 @@ The short version:
 
 3.  Use Regedit to check to see if the registry key is installed.
 
-**Next steps**: [Lab 11: Add Start tiles and taskbar pins](add-start-tiles-sxs.md)
+> [!div class="nextstepaction"]
+> [Lab 11: Add Start tiles and taskbar pins](add-start-tiles-sxs.md)
