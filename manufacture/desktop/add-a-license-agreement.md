@@ -17,9 +17,20 @@ You can add your own branding and license terms to Windows.
 
 For multi-region or multi-language images, you can create region specific license terms. These display to the user during the first login experience, based on the region or language that they choose. 
 
-Note: If the license terms are included, the OEM must include a version of the license terms in each language that is preinstalled onto the PC. A license term text must be an .**rtf** file, saved as .**rtf** format.
+Note: If the license terms are included, the OEM must include a version of the license terms in each language that is preinstalled onto the PC. You can read more about creating license terms at [OEM license terms](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/oem-license).
 
 Use the examples in the [USB-B.zip](http://download.microsoft.com/download/5/8/4/5844EE21-4EF5-45B7-8D36-31619017B76A/USB-B.zip) key.
+
+## <span id="Mount_the_image"></span>Mount the image
+
+Use the steps from [Lab 3: Add device drivers (.inf-style)](add-device-drivers.md) to mount the image. The short version:
+
+1.  Open the command line as an administrator (**Start** > type **deployment** > right-click **Deployment and Imaging Tools Environment** > **Run as administrator**.)
+
+2.  Make a backup of the file (`copy "C:\Images\Win10_x64\sources\install.wim" C:\Images\install-backup.wim`)
+
+3.  Mount the image (`md C:\mount\windows`, then `Dism /Mount-Image /ImageFile:"C:\Images\install.wim" /Index:1 /MountDir:"C:\mount\windows" /Optimize`)
+
 
 ## <span id="Create_license_files"></span>Create license files
 
@@ -43,9 +54,17 @@ Use the examples in the [USB-B.zip](http://download.microsoft.com/download/5/8/4
     C:\mount\windows\Windows\System32\oobe\info\default\1031\agreement.rtf  (German version)
     ```
     
-    Samples are in C:\USB-B\resources\agreement.rtf
+    Agreement.rtf EULA samples are in C:\USB-B\resources\
     
-4.  Create an **oobe.xml** file to specify the agreement.rtf file path.
+4. Open a text editor and create .html versions of your license terms. Save the terms to the same folders as the .rtf versions. You can use the [EULA example](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/oem-license#eula-example) from [OEM license terms](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/oem-license) to create sample files.  The names of the EULA files should be identical, except for the extension.
+
+    ```
+    C:\mount\windows\Windows\System32\oobe\info\default\1033\agreement.html  (English version)
+    C:\mount\windows\Windows\System32\oobe\info\default\1031\agreement.html  (German version)
+    ```
+
+
+5.  Create an **oobe.xml** file to specify the agreement.rtf file path. Windows will automatically look for the associated agreement.html file.
 
     ```
     <?xml version="1.0" encoding="utf-8"?>
@@ -58,14 +77,14 @@ Use the examples in the [USB-B.zip](http://download.microsoft.com/download/5/8/4
     </FirstExperience>
     ```
 
-5.  Copy **oobe.xml file** to each language folder.
+6.  Copy your **oobe.xml** to each language folder.
 
     ```
     Copy e:\configset\oobe.xml c:\mount\windows\windows\system32\oobe\info\default\1033
     Copy e:\configset\oobe.xml c:\mount\windows\windows\system32\oobe\info\default\1031
     ```
 
-6.  For Chinese Hong Kong, add the following OOBE.xml file. (In Windows 10 version 1607, the Chinese Hong Kong language pack was merged into the Chinese Taiwan language pack, so for this region, these steps are now required).
+7.  For Chinese Hong Kong, add the following OOBE.xml file. (In Windows 10 version 1607, the Chinese Hong Kong language pack was merged into the Chinese Taiwan language pack, so for this region, these steps are now required).
 
     File: c:\mount\windows\Windows\System32\OOBE\Info\OOBE.xml
     
@@ -80,36 +99,15 @@ Use the examples in the [USB-B.zip](http://download.microsoft.com/download/5/8/4
     </FirstExperience>
     ```
 
-7.  Verify that each language folder contains an **oobe.xml** file and an **agreement.rtf** file in that corresponding language.
+8.  Verify that each language folder contains an **oobe.xml** file, an **agreement.rtf** file, and an **agreement.html** file in that corresponding language.
 
-    ![Agreement and OOBE files](images/agreement-and-oobe-files.png)
 
 ### <span id="Create_image_files"></span>Create image info file
 1.  Create an **csup.txt** file to specify when the Windows image was created. This file must include the date that the image was created, in the form of 'MM-DD-YYYY', with no other characters, on a single line at the top of the file.
 
     ```
-    12-31-2016
+    10-05-2017
     ```
-
-### <span id="Mount_the_image"></span>Mount the image
-
-Use the steps from [Lab 3: Add device drivers (.inf-style)](add-device-drivers.md) to mount the image. The short version:
-
-1.  Open the command line as an administrator (**Start** > type **deployment** > right-click **Deployment and Imaging Tools Environment** > **Run as administrator**.)
-
-2.  Make a backup of the file (`copy "C:\Images\Win10_x64\sources\install.wim" C:\Images\install-backup.wim`)
-
-3.  Mount the image (`md C:\mount\windows`, then `Dism /Mount-Image /ImageFile:"C:\Images\install.wim" /Index:1 /MountDir:"C:\mount\windows" /Optimize`)
-
-### <span id="Add_the_license files"></span>Add the license and image info files
-
-1.  Copy the answer file into the image into the \\Windows\\System32\\oobe\\ folder. Create the folder if it doesn’t exist.
-
-    ```
-    MkDir c:\mount\windows\windows\system32\oobe
-    xcopy C:\oobe \c:\mount\windows\windows\system32\oobe /s
-    ```
-    
 2.  Copy the image info file into the image.
 
     ```
@@ -156,4 +154,5 @@ Use the steps from [Lab 2: Deploy Windows using a script](deploy-windows-with-a-
 
 Log into the system as if you were a new user. Select your language or region of required. The correct license terms should show up during this first login experience.
 
-Next steps: [Lab 9: Make changes from Windows (audit mode)](prepare-a-snapshot-of-the-pc-generalize-and-capture-windows-images-blue-sxs.md)
+> [!div class="nextstepaction"]
+> [Lab 9: Make changes from Windows (audit mode)](prepare-a-snapshot-of-the-pc-generalize-and-capture-windows-images-blue-sxs.md)

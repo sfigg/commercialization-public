@@ -287,5 +287,6 @@ The short version:
     If the boot-critical drivers have been successfully applied, you should see the Windows recovery environment.
 
     If languages have been successfully added, you'll either see the new language (for a single language image) or be prompted for your language (for a multi-language image). 
-	
-Next step: [Lab 13: Shrink your image size](shrink-your-image-size.md)
+
+> [!div class="nextstepaction"]
+> [Lab 13: Shrink your image size](shrink-your-image-size.md)
