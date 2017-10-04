@@ -13,7 +13,7 @@ ms.technology: windows-oem
 
 # Hardware Compatibility Specification for Systems for Windows 10, version 1709
 
-This section of the documentation provides specifications for hardware compatibility for systems running Windows 10, version 1703.
+This section of the documentation provides specifications for hardware compatibility for systems running Windows 10, version 1709.
 
  - [System.Client.BluetoothController.Base](#system.client.bluetoothcontroller.base)
  - [System.Client.BluetoothController.NonUSB](#system.client.bluetoothcontroller.nonusb)

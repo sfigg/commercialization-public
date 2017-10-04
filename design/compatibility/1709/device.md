@@ -13,7 +13,7 @@ ms.technology: windows-oem
 
 # Hardware Compatibility Specification for Components and Peripherals for Windows 10, version 1709
 
-This section of the documentation provides specifications for hardware compatibility of components and peripherals with computers running Windows 10, version 1703.
+This section of the documentation provides specifications for hardware compatibility of components and peripherals with computers running Windows 10, version 1709.
 
 These specifications are divided into the following categories and topics:
 
