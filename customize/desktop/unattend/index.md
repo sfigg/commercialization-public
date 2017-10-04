@@ -26,7 +26,7 @@ Information about how to use Windows SIM and other deployment tools is available
 ## In this section
 
 | Topic                                 | Description                                                                          |
-|:--------------------------------------|:-------------------------------------==----------------------------------------------|
+|:--------------------------------------|:-------------------------------------------------------------------------------------|
 | [Changed answer file settings for Windows 10 for desktop editions, version 1709](changed-answer-file-settings-for-windows-10-build-1709.md) | This topic describes Windows 10, version 1709 answer-file settings that have changed since Windows 10 for desktop editions, version 1703. |
 | [Changed answer file settings for Windows 10 for desktop editions, version 1703](changed-answer-file-settings-for-windows-10-build-1703.md) | This topic describes Windows 10, version 1703 answer-file settings that have changed since Windows 10 for desktop editions, version 1607. |
 | [Changed answer file settings for Windows 10 for desktop editions, version 1607](changed-answer-file-settings-for-windows-10-build-1607.md) | This topic describes Windows 10, version 1607 answer-file settings that have changed since Windows 10 for desktop editions, version 1511. |
