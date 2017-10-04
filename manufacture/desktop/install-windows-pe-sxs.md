@@ -86,6 +86,6 @@ Note, when you add more packages to WinPE, it slows WinPE performance and boot t
 
 Leave this PC booted to Windows PE for now. 
 
-**Next steps**
-* [Lab 2: Deploy Windows using a script](deploy-windows-with-a-script-sxs.md)
+> [!div class="nextstepaction"]
+> [Lab 2: Deploy Windows using a script](deploy-windows-with-a-script-sxs.md)
  
