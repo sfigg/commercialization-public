@@ -29,7 +29,7 @@ IHV partners can enable preliminary validation and measurement of the effects of
 ## <span id="Power_profiles"></span><span id="power_profiles"></span><span id="POWER_PROFILES"></span>Power profiles
 
 
-You can use the Windows Provisioning framework to configure the processor power settings described in this section. The settings are not visible in the Windows Imaging and Configuration Designer (ICD) UI but appear under the `Common\Power\Policy\Settings\Processor` namespace. For more information about the customization framework, see [Windows provisioning XML](p_customize_converged.windows_provisioning_xml). For more information about writing your customization answer file, see [Windows provisioning answer file](p_customize_converged.windows_provisioning_answer_file).
+You can use the Windows Provisioning framework to configure the processor power settings described in this section. The settings are not visible in the Windows Imaging and Configuration Designer (ICD) UI but appear under the `Common\Power\Policy\Settings\Processor` namespace. For more information about the customization framework, see [Windows provisioning XML](https://msdn.microsoft.com/library/windows/hardware/dn898375(v=vs.85).aspx).
 
 The processor namespace is divided into three sets of identical power processor configurations called power profiles. The power profiles are used by the power processor engine to adapt the performance and parking algorithm on various system use cases.
 
@@ -80,13 +80,5 @@ The common parameters have the suffix "1" to indicate efficiency class. Hetero-s
 -   [PerfLatencyHint1](options-for-perf-state-engine-perflatencyhint.md)
 -   [HeteroClass1InitialPerf](configuration-for-hetero-power-scheduling-heteroclass1initialperf.md)
 -   [HeteroClass0FloorPerf](configuration-for-hetero-power-scheduling-heteroclass0floorperf.md)
-
- 
-
- 
-
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_customize_converged\p_customize_converged%5D:%20Processor%20power%20management%20options%20%20RELEASE:%20%2810/4/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default.aspx. "Send comments about this topic to Microsoft")
-
-
 
 
