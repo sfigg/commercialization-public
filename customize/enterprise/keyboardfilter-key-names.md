@@ -11,28 +11,20 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # Keyboard Filter key names
-
 
 You can configure Keyboard Filter to block keys or key combinations. A key combination consists of one or more modifier keys, separated by a plus sign (+), and either a key name or a key scan code. In addition to the keys listed in the tables below, you can also use the predefined key combinations names as custom key combinations, but we recommend using the predefined key settings when enabling or disabling predefined key combinations.
 
 The key names are grouped as follows:
 
--   [Modifier keys](#modkey)
-
--   [System keys](#syskey)
-
--   [Cursor and math keys](#curkey)
-
--   [State keys](#stakey)
-
--   [OEM keys](#oemkey)
-
--   [Function keys](#funkey)
+* [Modifier keys](#modkey)
+* [System keys](#syskey)
+* [Cursor and math keys](#curkey)
+* [State keys](#stakey)
+* [OEM keys](#oemkey)
+* [Function keys](#funkey)
 
 ## <a href="" id="modkey"></a>Modifier keys
-
 
 You can use the modifier keys listed in the following table when you configure keyboard filter. Multiple modifiers must be separated by a plus sign (+). You can also configure Keyboard Filter to block any modifier key even if it’s not part of a key combination..
 
@@ -143,10 +135,7 @@ You can use the modifier keys listed in the following table when you configure k
 </tbody>
 </table>
 
- 
-
 ## <a href="" id="syskey"></a>System keys
-
 
 <table>
 <colgroup>
@@ -255,10 +244,7 @@ You can use the modifier keys listed in the following table when you configure k
 </tbody>
 </table>
 
- 
-
 ## <a href="" id="curkey"></a>Cursor and edit keys
-
 
 <table>
 <colgroup>
@@ -356,11 +342,8 @@ You can use the modifier keys listed in the following table when you configure k
 </tr>
 </tbody>
 </table>
-
  
-
 ## <a href="" id="stakey"></a>State keys
-
 
 <table>
 <colgroup>
@@ -404,10 +387,7 @@ You can use the modifier keys listed in the following table when you configure k
 </tbody>
 </table>
 
- 
-
 ## <a href="" id="oemkey"></a>OEM keys
-
 
 <table>
 <colgroup>
@@ -526,10 +506,7 @@ You can use the modifier keys listed in the following table when you configure k
 </tbody>
 </table>
 
- 
-
 ## <a href="" id="funkey"></a>Function keys
-
 
 <table>
 <colgroup>
@@ -668,10 +645,7 @@ You can use the modifier keys listed in the following table when you configure k
 </tbody>
 </table>
 
- 
-
 ## Numeric keypad keys
-
 
 <table>
 <colgroup>
@@ -765,20 +739,6 @@ You can use the modifier keys listed in the following table when you configure k
 </tbody>
 </table>
 
- 
-
 ## Related topics
 
-
 [Keyboard filter](keyboardfilter.md)
-
- 
-
- 
-
-
-
-
-
-
-

@@ -11,12 +11,9 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # Customizations for enterprise desktop
 
-
 ## Purpose
-
 
 Windows 10 Enterprise customizations provide a controlled and specialized experience for the end-users of a Windows 10 device by allowing OEMs and system administrators to lock down the Windows 10 device interaction experience.
 
@@ -92,10 +89,7 @@ You can lock down your Windows 10 desktop device by using the lock down features
 </tbody>
 </table>
 
- 
-
 ## Related topics
-
 
 [Channel 9 video: Customizing Your Device Experience with Assigned Access](https://channel9.msdn.com/Events/Build/2016/P508)
 
@@ -118,14 +112,3 @@ You can lock down your Windows 10 desktop device by using the lock down features
 
 **Unified Write Filter reference**
 [Unified Write Filter WMI provider reference](uwf-wmi-provider-reference.md)
-
- 
-
- 
-
-
-
-
-
-
-

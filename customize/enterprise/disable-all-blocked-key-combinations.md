@@ -11,16 +11,13 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # Disable all blocked key combinations
-
 
 The following sample Windows PowerShell script uses the WMI providers to disable all blocked key combinations for Keyboard Filter by using the Windows Management Instrumentation (WMI) providers for Keyboard Filter. The key combination configurations are not removed, but Keyboard Filter stops blocking any keys.
 
 ## Disable-all-rules.ps1
 
-
-```
+```powershell
 #
 # Copyright (C) Microsoft. All rights reserved.
 #
@@ -76,20 +73,8 @@ Get-WMIObject -class WEKF_Scancode @CommonParams |
 
 ## Related topics
 
-
 [Windows PowerShell script samples for keyboard filter](keyboardfilter-powershell-script-samples.md)
 
 [Keyboard filter WMI provider reference](keyboardfilter-wmi-provider-reference.md)
 
 [Keyboard filter](keyboardfilter.md)
-
- 
-
- 
-
-
-
-
-
-
-
