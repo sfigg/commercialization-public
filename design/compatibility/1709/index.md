@@ -40,5 +40,13 @@ The latest playlist can be downloaded at the following location:
 
 The WHCP Policies and Processes documents below contains certification testing policies, product submission, and business requirements.
 
-- [WHCP Policies and Processes](http://go.microsoft.com/fwlink/p/?LinkID=846349)
+- [WHCP Policies and Processes](https://go.microsoft.com/fwlink/?linkid=859740)
 - [WHCP Policies and Processes (Windows Server)](https://go.microsoft.com/fwlink/p/?linkid=834831)
+
+##  Hardware Certification Requirements PDFs 
+
+You can also download a PDF for each category of requirements:
+
+- [System Requirements](https://go.microsoft.com/fwlink/?linkid=859743)
+- [Device and peripheral requirements](https://go.microsoft.com/fwlink/?linkid=859742)
+- [Filter driver requirements](https://go.microsoft.com/fwlink/?linkid=859741)
