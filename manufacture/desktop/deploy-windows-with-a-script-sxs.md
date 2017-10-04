@@ -114,5 +114,5 @@ The PC should reboot into Windows. While you’re waiting for the preparation ph
 3.  After Windows completes the reset,  Windows should go back to the original welcome screens as if there were no user account on the device.
 
 > [!div class="nextstepaction"]
-> [Lab 3: Add device drivers (.inf-style)](add-device-drivers.md) (includes basics on mounting images)
+> [Lab 3: Add device drivers (.inf-style)](add-device-drivers.md)
 
