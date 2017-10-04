@@ -43,7 +43,7 @@ The WHCP Policies and Processes documents below contains certification testing p
 - [WHCP Policies and Processes](https://go.microsoft.com/fwlink/?linkid=859740)
 - [WHCP Policies and Processes (Windows Server)](https://go.microsoft.com/fwlink/p/?linkid=834831)
 
-##  Hardware Certification Requirements PDFs 
+##  Hardware Compatibility Specifications PDFs for Windows 10, version 1709
 
 You can also download a PDF for each category of requirements:
 
