@@ -18,7 +18,7 @@ Windows 10, version 1607 provides triggers to allow the system to hibernate int
 
 -   Eliminate resume to a dead battery.
 
--   Provide a great [Modern Standby](p_weg_hardware.modern_standby) (MS) experience by ensuring that the system remains in MS for as long as possible.
+-   Provide a great [Modern Standby](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/modern-standby) (MS) experience by ensuring that the system remains in MS for as long as possible.
 
 To support the new triggers, the system is enabled with default values for Windows 10, version 1607 builds. However, OEMs can program these new triggers to ensure that machines hibernate to provide the best possible experience to users.
 
@@ -67,7 +67,7 @@ Adaptive hibernate settings ([Standby budget setting](#standby-budget-settings) 
  
 
 The following table lists the settings you can use to set the standby budget, which is the amount of battery the user is allowed to drain during standby.
-You can also configure these settings using a custom provisioning package file for OEM images. For more information about powercfg, see [Powercfg command-line options](p_weg_hardware.powercfg_command-line_options).
+You can also configure these settings using a custom provisioning package file for OEM images. For more information about powercfg, see [Powercfg command-line options](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/powercfg-command-line-options).
 
 ### <span id="reserve_time_settings"></span><span id="RESERVE_TIME_SETTINGS"></span>Reserve time setting
 
@@ -100,12 +100,12 @@ Reserve time is the amount of time the user is guaranteed to have the screen on.
 
  
 
-You can also configure these settings using a custom provisioning package file for OEM images. For more information about powercfg, see [Powercfg command-line options](p_weg_hardware.powercfg_command-line_options).
+You can also configure these settings using a custom provisioning package file for OEM images. For more information about powercfg, see [Powercfg command-line options](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/powercfg-command-line-options).
 
 ## <span id="Windows_provisioning_package_sample"></span><span id="windows_provisioning_package_sample"></span><span id="WINDOWS_PROVISIONING_PACKAGE_SAMPLE"></span>Windows provisioning package sample
 
 
-You can configure the [hibernate triggers](#hibernate-triggers) using the Windows Provisioning framework. To configure the power settings using the [Windows provisioning](p_customize_converged.windows_provisioning_xml) framework, you must create a [Windows provisioning answer file](p_customize_converged.windows_provisioning_answer_file) (WPAF) as one of the inputs to the [Windows Imaging and Configuration Designer](p_icd.icd_portal) (ICD) command-line to generate either a provisioning package or a Windows image that contains the power settings. For more information on how to use the Windows Imaging and Configuration Designer (ICD) CLI, see [Use the Windows ICD command-line interface](p_icd.use_the_windows_icd_command_line_interface).
+You can configure the [hibernate triggers](#hibernate-triggers) using the Windows Provisioning framework. To configure the power settings using the [Windows provisioning framework](https://msdn.microsoft.com/library/windows/hardware/dn898375(v=vs.85).aspx), you must create a Windows provisioning answer file (WPAF) as one of the inputs to the [Windows Imaging and Configuration Designer](https://docs.microsoft.com/en-us/windows/configuration/provisioning-packages/provisioning-install-icd) (ICD) command-line to generate either a provisioning package or a Windows image that contains the power settings. For more information on how to use the Windows Imaging and Configuration Designer (ICD) CLI, see [Use the Windows ICD command-line interface](https://docs.microsoft.com/en-us/windows/configuration/provisioning-packages/provisioning-command-line).
 
 The following example shows what your Windows provisioning answer file might look like after you've written it to configure adaptive hibernate settings.
 
@@ -188,7 +188,7 @@ You cannot customize the user prediction setting using a provisioning package fi
 
  
 
-For more information about powercfg, see [Powercfg command-line options](p_weg_hardware.powercfg_command-line_options).
+For more information about powercfg, see [Powercfg command-line options](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/powercfg-command-line-options).
 
  
 
