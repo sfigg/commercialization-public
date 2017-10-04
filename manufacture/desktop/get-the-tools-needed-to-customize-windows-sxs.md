@@ -49,9 +49,9 @@ The version numbers of the Windows ADK, the Windows image you're deploying, and 
 
 This lab assumes the 64-bit architecture, so if you’re using the 32-bit version, change all mentions of x64 to x86.
 
-### Windows 10, version 1703 image (install.wim)
+### Windows 10, version 1709 image (install.wim)
 
-|             |                                                      |
+|             |                                                      
 | ---------------------------------------------------- |
 | Windows Home 10, version 1709 32/64 English OPK      |
 | Windows Home SL 10, version 1709 32/64 English OPK   |
@@ -61,7 +61,7 @@ This lab assumes the 64-bit architecture, so if you’re using the 32-bit versio
 
 -   Copy the D:\\sources\\install.wim file, and save it to the local drive, in the folder: **C:\\Images\\Win10\_x64\\**.
 
-### Windows Assessment and Deployment Kit (ADK) for Windows 10, version 1703
+### Windows Assessment and Deployment Kit (ADK) for Windows 10, version 1709
 
 [Windows ADK for Windows 10, version 1709](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit#winADK) or the Windows 10 1709 32/64 OPK ADK.
 
