@@ -20,7 +20,7 @@ As an OEM, you have a unique opportunity to impact the efficacy of the security 
 
 BitLocker device encryption is a set of features that you as an OEM enable by providing the right set of hardware in the devices you sell. Without the proper hardware configuration, device encryption is not enabled. With the right hardware configurations, Windows 10 automatically encrypts a device.
 
-**OEMs:** For more information on what hardware you need to provide to enable device encryption, see [BitLocker device encryption hardware requirements](bitlocker-drive-encryption.md).
+**OEMs:** For more information on what hardware you need to provide to enable device encryption, see [BitLocker device encryption hardware requirements](.\..\..\manufacture\desktop\bitlocker-drive-encryption.md).
 
 ## Hypervisor-protected code integrity (HVCI)
 
