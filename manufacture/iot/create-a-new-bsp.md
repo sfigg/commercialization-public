@@ -152,7 +152,7 @@ In our lab, we'll create a new BSP based on the Raspberry Pi 2, removing the exi
 ## <span id="Next_steps"></span><span id="next_steps"></span><span id="NEXT_STEPS"></span>Next steps
 Congratulations, you've completed Lab 2. 
 
-[Lab 3: Update apps](../../service/iot/updating-iot-core-apps.md)
+[Lab 3: Update apps](https://docs.microsoft.com/windows-hardware/service/iot/updating-iot-core-apps)
 
 ##  <span id="Related_topics"></span>Related topics
 [Device layout](device-layout.md)

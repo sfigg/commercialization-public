@@ -254,4 +254,5 @@ Use the steps from [Lab 2: Deploy Windows using a script](deploy-windows-with-a-
     State : Installed
     ```
 	
-Next step: [Lab 5: Add updates and upgrade the edition](servicing-the-image-with-windows-updates-sxs.md)
+> [!div class="nextstepaction"]
+> [Lab 5: Add updates and upgrade the edition](servicing-the-image-with-windows-updates-sxs.md)

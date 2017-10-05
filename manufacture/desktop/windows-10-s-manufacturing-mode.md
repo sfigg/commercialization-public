@@ -14,12 +14,13 @@ ms.technology: windows-oem
 
 ## Overview
 
-Windows 10 S has a manufacturing mode that allows you to run unsigned code when booted into audit mode. This can help on the factory floor when running scripts, installers, and diagnostic tools. You enable manufacturing mode through a registry key that you add to an offline image, and you disable it by removing the registry key from audit mode. 
+To run scripts, installers, and diagnostic tools on the factory floor, Windows 10 S has a manufacturing mode. This mode allows you to run unsigned code in Audit Mode. Enable manufacturing mode by adding a registry key to an offline image. Disable manufacturing mode by removing the registry key when booted into audit mode.
+
 
 > [!IMPORTANT]
-> Don't ship your Windows 10 S PC with the registry in place. Remove the registry key prior to shipping the device.
+> Don't ship a Windows 10 S PC with the registry in place. Remove the registry key prior to shipping the device.
 
-Before shipping your PC, make sure to remove the registry key from the Windows 10 S PC. You should also make sure that if you've created a recovery package, that the manufacturing registry key is excluded. 
+Before shipping a Windows 10 S PC, remove the manufacturing registry key and exclude it from recovery packages.
 
 ## Enable manufacturing mode
 
@@ -27,7 +28,7 @@ Here's how to enable manufacturing mode.
 
 On your technician PC:
 
-1. Mount your Windows 10 S image
+1. Mount your Windows 10 S image.
 
     ```
     Dism /Mount-Wim /WimFile:D:\sources\install.wim /index:1 /MountDir:C:\mount\windows
@@ -86,7 +87,7 @@ On your Windows 10 S PC in audit mode:
 
 ## Exclude the manufacturing registry key from recovery
 
-When you create a recovery package, you want to make sure to exclude the manufacturing registry key. Create an exclusion file that you use with scanstate to capture a recovery package.
+When you create a recovery package, exclude the manufacturing registry key. Create an exclusion file that tells scanstate to skip the registry key when it captures a recovery package.
 
 1. Create an .xml file in a text editor.
 

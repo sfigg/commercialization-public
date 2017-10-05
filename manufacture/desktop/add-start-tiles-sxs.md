@@ -219,5 +219,6 @@ Use the steps from [Lab 2: Deploy Windows using a script](deploy-windows-with-a-
 2.  Check the Start Menu to make sure the apps are available.
 
 3.  Check the Start Menu and taskbar and make sure the apps you selected are pinned correctly.
-	
-Next steps: [Lab 12: Update the recovery image](update-the-recovery-image.md)
+
+> [!div class="nextstepaction"]
+> [Lab 12: Update the recovery image](update-the-recovery-image.md)
