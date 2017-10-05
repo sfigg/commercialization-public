@@ -14,6 +14,7 @@ ms.technology: windows-oem
 # Customize
 
 ## Purpose
+
 Customizations of the Windows OS are ways in which partners can modify the Windows device UI, connectivity settings, and user experience to better reflect the partners' brand, and to fit the network and market in which the device ships. Customizations can include adding applications, modifying icons and Start layouts, configuring network settings by using device management, changing defaults in **Settings**, and adding brand-specific art and sounds to the OS.
 
 Windows 10 supports both the pre-existing desktop Unattend, and mobile Managed Centralized Settings Framework (MCSF), customization frameworks for configuring customizations for Windows 10 devices.
