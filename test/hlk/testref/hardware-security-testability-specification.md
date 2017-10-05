@@ -12,25 +12,12 @@ ms.assetid: 206FC620-177D-4435-A7F2-18959E5E208B
 
 ## <span id="Introduction"></span><span id="introduction"></span><span id="INTRODUCTION"></span>Introduction
 
-
-Version 1.1a
-
-This document details the following sub-requirement of Windows Hardware Certification Requirement:
-
-[System.Fundamentals.Firmware.CS.UEFISecureBoot.Provisioning](p_compat_program.system_fundamentals_firmware_cs_uefisecureboot#system-fundamentals-firmware-cs-uefisecureboot-provisioning)
-
-**Mandatory:  **The platform is required to implement a hardware interface and share documentation and tools as specified in this topic.
-
->[!NOTE]
->  The reader is expected to know the fundamentals of UEFI and have a basic understanding of Secure Boot (Chapter 27 of the UEFI specification).
-
- 
-
-### <span id="Motivation"></span><span id="motivation"></span><span id="MOTIVATION"></span>Motivation
-
 HSTI protects against misconfiguration of security features on Windows devices. For customers, HSTI provides best effort assurance that the machine they have purchased is secure by default. For IHVs and IBVs, HSTI makes sure your security promises are kept. For OEMs and ODMs easily ensure that the systems you ship are configured securely out of the box and will stay secure, without having to develop proprietary solutions.
 
-The results of HSTI tests will be consumed by Windows Compatibility Tests and can be used to verify that devices have been properly configured to enable supported security features. These testsmay be used to identify unsecured engineering devices in the field, for example, engineering devices which may contain insecure test keys. The results of these tests may be used by the Windows OS to display a watermark (or similar indicator) on insecure devices.
+The results of HSTI tests will be consumed by Windows Compatibility Tests and can be used to verify that devices have been properly configured to enable supported security features. These tests may be used to identify unsecured engineering devices in the field, for example, engineering devices which may contain insecure test keys. The results of these tests may be used by the Windows OS to display a watermark (or similar indicator) on insecure devices.
+
+>[!NOTE]
+>  The platform is required to implement a hardware interface and share documentation and tools as specified in this topic.
 
 ### <span id="Background"></span><span id="background"></span><span id="BACKGROUND"></span>Background
 

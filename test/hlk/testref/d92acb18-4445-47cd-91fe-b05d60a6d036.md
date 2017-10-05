@@ -91,7 +91,7 @@ This test is only valid on systems with a Wireless LAN adapter. This test does t
 
 For generic troubleshooting of HLK test failures, see [Troubleshooting Windows HLK Test Failures](..\user\troubleshooting-windows-hlk-test-failures.md).
 
-For troubleshooting information, see [Troubleshooting the HCK Environment](http://msdn.microsoft.com/en-us/library/windows/hardware/hh998592.aspx).
+
 
 ## <span id="More_information"></span><span id="more_information"></span><span id="MORE_INFORMATION"></span>More information
 
