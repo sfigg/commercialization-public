@@ -77,13 +77,16 @@ The following features must be included in all images, though they may be custom
 
 ### Developer Tools
 
+> [!IMPORTANT]
+> Aside from net.exe and PowerShell, we do not recommend including the other features in a retail image.
+
 | Features                        | Description                                                                                                                 |
 |---------------------------------|-----------------------------------------------------------------------------------------------------------------------------|
 | **IOT\_NETCMD**            | Adds the command-line tool: net.exe, used for configuring network connectivity                                              |
 | **IOT\_POWERSHELL**        | Adds PowerShell                                                                                                             |
 | **IOT\_SIREP**             | Enables SIREP service for TShell connectivity                                                                               |
 | **IOT\_SSH**               | Enables Secure Shell (SSH) connectivity                                                                                     |
-| **IOT\_TOOLKIT**           | Includes developer tools such as: Kernel Debug components, FTP, Network Diagnostics, basic device portal, and XPerf. This also relaxes the firewall rules and enables various ports.  **Note** We don't recommend including this feature in the Retail image.                                                                                           |
+| **IOT\_TOOLKIT**           | Includes developer tools such as: Kernel Debug components, FTP, Network Diagnostics, basic device portal, and XPerf. This also relaxes the firewall rules and enables various ports.                                                                                           |
 | **IOT\_WEBB\_EXTN**        | Enables IOTCore-specific extensions to the Windows Device Portal. The basic device portal is included in the IoT Toolkit.  |
 
 ### Speech Data

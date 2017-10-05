@@ -1129,6 +1129,7 @@
         "source_path": "design/minimum/device-guard-and-credential-guard.md", 
         "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/oem-security-considerations", 
         "redirect_document_id": true
+<<<<<<< HEAD
     },
     {   
         "source_path": "design/device-experiences/security-and-reliabilty.md", 
@@ -1139,6 +1140,8 @@
         "source_path": "design/device-experiences/device-encryption-for-oem.md", 
         "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/oem-security-considerations", 
         "redirect_document_id": true
+=======
+>>>>>>> 14c82579aae98dea000a7b527bc3ce241bc51d2b
     }
   ] 
 }
