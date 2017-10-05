@@ -68,7 +68,7 @@ Some BSPs are included in each folder as a start. You can [create your own BSPs]
 
 -   **OEMFM.xml:** Feature manifest for OEM packages
 
--   **versioninfo.txt:** Current version number. Used for [updating IoT Core apps](https://msdn.microsoft.com/windows/hardware/commercialize/service/iot/updating-iot-core-apps).
+-   **versioninfo.txt:** Current version number. Used for [updating IoT Core apps](https://docs.microsoft.com/windows-hardware/service/iot/updating-iot-core-apps).
 
 ### <span id="Products"></span><span id="products"></span><span id="PRODUCTS"></span>Products
 

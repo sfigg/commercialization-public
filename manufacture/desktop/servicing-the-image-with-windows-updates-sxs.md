@@ -149,4 +149,5 @@ Use the steps from [Lab 2: Deploy Windows using a script](deploy-windows-with-a-
 
 5.   Each package will usually be a new KB, and will increase the build revision number of Windows on the device. The revision number of windows a device can be found in the following registry key: 'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\UBR'.
 
-Next step: [Lab 6: Add universal Windows apps](add-universal-apps-sxs.md)
+> [!div class="nextstepaction"]
+> [Lab 6: Add universal Windows apps](add-universal-apps-sxs.md)

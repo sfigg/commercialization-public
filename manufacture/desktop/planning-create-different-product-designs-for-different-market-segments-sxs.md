@@ -73,4 +73,5 @@ This lab uses the following three sample hardware configurations.
 * We can build an image for Hardware Configuration 1B by using Hardware Configuration 1 as a base image.
 * We can't build Hardware Configuration 2 from either Hardware Configuration 1 or 1B, because they use a different architecture.
 
-Next: [Get the tools needed to customize Windows](get-the-tools-needed-to-customize-windows-sxs.md)
+> [!div class="nextstepaction"]
+> [Get the tools needed to customize Windows](get-the-tools-needed-to-customize-windows-sxs.md)

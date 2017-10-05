@@ -262,4 +262,5 @@ If your audit mode setting worked, the PC should boot to audit mode automaticall
 
 Leave the PC booted into audit mode to continue to the following lab:
 
-Next steps: [Lab 8: Add branding and license agreements (OOBE.xml)](add-a-license-agreement.md)
+> [!div class="nextstepaction"]
+> [Lab 8: Add branding and license agreements (OOBE.xml)](add-a-license-agreement.md)

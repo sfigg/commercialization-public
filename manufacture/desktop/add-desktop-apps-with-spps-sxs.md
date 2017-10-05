@@ -24,6 +24,8 @@ After you apply the SPPs, they'll be automatically included in the recovery tool
 
 When you apply SPPs to a Compact OS system, the applications in that SPP are single-instanced automatically to save space.
 
+See [Siloed provisioning packages](siloed-provisioning-packages.md) to learn more about capturing different types of settings, drivers, and applications.
+
 **Notes**
 
 *  To add these apps to the taskbar and start menu, you'll need to update the LayoutModification.xml and TaskbarLayoutModification.xml files, we'll show you this in [Lab 11: Add Start tiles and taskbar pins](add-start-tiles-sxs.md). New versions of these files can simply be copied into the image or to the destination device directly.
@@ -191,4 +193,5 @@ The short version:
 
 3.  Use Regedit to check to see if the registry key is installed.
 
-**Next steps**: [Lab 11: Add Start tiles and taskbar pins](add-start-tiles-sxs.md)
+> [!div class="nextstepaction"]
+> [Lab 11: Add Start tiles and taskbar pins](add-start-tiles-sxs.md)

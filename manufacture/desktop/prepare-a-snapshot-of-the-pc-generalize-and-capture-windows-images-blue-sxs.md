@@ -233,4 +233,5 @@ Use the steps from [Lab 2: Deploy Windows using a script](deploy-windows-with-a-
 
 2.  See that the changes you made in audit mode are there.
 
-Next steps: [Lab 10: Add desktop apps with siloed provisioning packages](add-desktop-apps-with-spps-sxs.md)
+> [!div class="nextstepaction"]
+> [Lab 10: Add desktop apps with siloed provisioning packages](add-desktop-apps-with-spps-sxs.md)

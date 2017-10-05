@@ -863,24 +863,24 @@ For the above scenarios, you can use the following directories to put the .url o
 
 In this section, we'll cover how an OEM can add their own license terms during OOBE.
 
-**Note:** If the license terms are included, the OEM must include a version of the license terms in each language that is preinstalled onto the PC. A license term text must be an .rtf file, saved as .rtf format.
+**Note:** If the license terms are included, the OEM must include a version of the license terms in each language that is preinstalled onto the PC. A license term text must be an .rtf file, and have an .html file with a matching name in the same folder. See [OEM license terms](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/oem-license) for more information on license files.
 
 To begin adding license terms, you'll have to create folders for your license files, and then configure OOBE to show the license on first boot.
 
-1.	Create folders for you system languages under the following directory: C:\mount\windows\Windows\System32\oobe\info\default\ 
+1.	Create folders for your system languages under the following directory: C:\mount\windows\Windows\System32\oobe\info\default\ 
 
-2.	Name each folder under C:\mount\windows\Windows\System32\oobe\info\default\ directory as the Language Decimal Identifier corresponding the language. Do this step for each language pack that's in the Windows image.
+2.	Name each folder under the C:\mount\windows\Windows\System32\oobe\info\default\ directory as the Language Decimal Identifier that corresponds to the language. Do this step for each language pack that's in the Windows image.
 
     **Note:**  Please see [this link to see complete list of language decimal identifiers of corresponding languages](available-language-packs-for-windows.md).
 
-    For example: If en-us and de-de language packs are added to the Windows image, add a folder named “1033” (representing en-us language) in C:\mount\windows\Windows\System32\oobe\info\default\. Then add a folder named “1031” (de-de language) under the same C:\mount\windows\Windows\System32\oobe\info\default\ directory.
+    For example, if en-us and de-de language packs are added to the Windows image, add a folder named “1033” (representing en-us language) in C:\mount\windows\Windows\System32\oobe\info\default\. Then add a folder named “1031” (de-de language) under the same C:\mount\windows\Windows\System32\oobe\info\default\ directory.
 
      ```
      MD c:\mount\windows\windows\system32\oobe\info\default\1031
      MD c:\mount\windows\windows\system32\oobe\info\default\1033
      ```
 
-4.	Create a license terms file for each language you have in your image, and copy them to the language-specific oobe folder.
+4.	Create a license terms .rtf file for each language you have in your image, and copy them to the language-specific oobe folder.
 
     For example: Move the English agreement.rtf file to C:\mount\windows\Windows\System32\oobe\info\default\1033\ directory and move the German agreement.rtf to C:\mount\windows\Windows\System32\oobe\info\default\1031\. 
 
@@ -889,11 +889,19 @@ To begin adding license terms, you'll have to create folders for your license fi
     copy E:\resources\german-agreement.rtf c:\mount\windows\windows\system32\oobe\info\default\1031\agreement.rtf
     ```
 
-5.	Create oobe.xml file to specify the agreement.rtf file path. Below you can see a sample oobe.xml which is located at _USB-B_\ConfigSet\oobe.xml
+4. Open a text editor and create .html versions of your license terms. Save the terms to the same folders as the .rtf versions. You can use the [EULA example](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/oem-license#eula-example) from [OEM license terms](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/oem-license) to create sample files.  The names of the EULA files should be identical, except for the extension.
+
+    ```
+    C:\mount\windows\windows\system32\oobe\info\default\1033\agreement.html  (English version)
+    C:\mount\windows\windows\system32\oobe\info\default\1031\agreement.html  (German version)
+    ```
+
+
+6.	Create an oobe.xml file to specify the agreement.rtf file path. Windows will automatically find the accompanying .html file. Below is a sample oobe.xml which is located at _USB-B_\ConfigSet\oobe.xml
 
     ![Oobe.xml configuration to add a EULA](images/lab-oobe-snippet.png)
 
-6.	Copy oobe.xml file to each language folder. 
+7.	Copy oobe.xml file to each language folder. 
 
     -	For example: Copy oobe.xml to C:\mount\windows\Windows\System32\oobe\info\default\1033\, which has a file called agreement.rtf in English. To add the German agreement, copy oobe.xml to C:\mount\windows\Windows\System32\oobe\info\default\1031\ directory, which has the German agreement.rtf file.
 
@@ -902,7 +910,7 @@ To begin adding license terms, you'll have to create folders for your license fi
     copy e:\configset\oobe.xml c:\mount\windows\windows\system32\oobe\info\default\1031
     ```
 
-7.	Now each language folder has an oobe.xml file and an agreement.rtf file in that corresponding language.
+8.	Now each language folder has an oobe.xml, agreement.rtf, and agreement.thml file in that corresponding language.
 
 When the image first boots into OOBE, it will display the license agreement.
 

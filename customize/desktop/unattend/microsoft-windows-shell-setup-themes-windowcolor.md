@@ -49,7 +49,7 @@ You can also add up to eight more custom colors that end users can choose as an 
 >[!Note]
 > If you use five or fewer custom colors, the color picker in the Settings app displays them more gracefully. If you use the full eight colors, you will see line breaks and reflow in the Settings app.
 
-To add custom colors to the image, use the [RunSynchronous](microsoft-windows-deployment-runsynchronous) command to add AGRB hex color values to the registry. You can set keys 0 through 8. The default accent color is set in the 0 registry key: `HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Themes\Accents\0\Theme0`
+To add custom colors to the image, use the [RunSynchronous](microsoft-windows-deployment-runsynchronous.md) command to add AGRB hex color values to the registry. You can set keys 0 through 8. The default accent color is set in the 0 registry key: `HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Themes\Accents\0\Theme0`
 
 
 

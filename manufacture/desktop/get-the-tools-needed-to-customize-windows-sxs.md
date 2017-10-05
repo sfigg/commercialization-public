@@ -127,8 +127,8 @@ Here’s how to set up your PC.
 
 6.  When the installation is finished, click **Close**.
 
-**Next steps**
-* [Get the sample scripts](windows-deployment-sample-scripts-sxs.md)
+> [!div class="nextstepaction"]
+> [Get the sample scripts](windows-deployment-sample-scripts-sxs.md)
 
 
 
