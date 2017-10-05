@@ -14,13 +14,13 @@ ms.technology: windows-oem
 
 As an OEM, you have a unique opportunity to impact the efficacy of the security measures available to your customers. Customers want and need the ability to secure their devices. Windows 10 security features are built on top of security-enabled hardware and firmware. That's where you come in. If you want to provide a differentiator for your devices, or to sell in the Enterprise space, you want to provide the latest hardware enhancements, which in turn allow Windows 10 to be configured for safety. 
 
-**IT Professionals:** To learn more about these features including how to deploy them in your enterprise, see [Device Security](https://docs.microsoft.com/en-us/windows/device-security/) and [Control the health of Windows 10-based devices](https://docs.microsoft.com/en-us/windows/device-security/protect-high-value-assets-by-controlling-the-health-of-windows-10-based-devices?).
+**IT Professionals:** To learn more about these features including how to deploy them in your enterprise, see [Device Security](https://docs.microsoft.com/windows/device-security/) and [Control the health of Windows 10-based devices](https://docs.microsoft.com/windows/device-security/protect-high-value-assets-by-controlling-the-health-of-windows-10-based-devices?).
 
 ## BitLocker device encryption
 
 BitLocker device encryption is a set of features that you as an OEM enable by providing the right set of hardware in the devices you sell. Without the proper hardware configuration, device encryption is not enabled. With the right hardware configurations, Windows 10 automatically encrypts a device.
 
-**OEMs:** For more information on what hardware you need to provide to enable device encryption, see [BitLocker device encryption hardware requirements](.\..\..\manufacture\desktop\bitlocker-drive-encryption.md).
+**OEMs:** For more information on what hardware you need to provide to enable device encryption, see [BitLocker device encryption hardware requirements](https://docs.microsoft.com/windows/device-security/bitlocker/bitlocker-overview).
 
 ## Hypervisor-protected code integrity (HVCI)
 
@@ -38,13 +38,13 @@ Trusted Platform Module (TPM) technology is designed to provide hardware-based, 
 
 **OEMs:** For more information, see [Trusted Plaform Module (TPM) 2.0 hardware requirements](OEM-TPM.md).
 
-**IT Professionals:** To understand how TPM works in your enterprise, see [Trusted Platform Module](https://docs.microsoft.com/en-us/windows/device-security/tpm/trusted-platform-module-top-node)
+**IT Professionals:** To understand how TPM works in your enterprise, see [Trusted Platform Module](https://docs.microsoft.com/windows/device-security/tpm/trusted-platform-module-top-node)
 
 ## Unified Extensible Firmware Interface (UEFI) requirements
 
 UEFI is a replacement for the older BIOS firmware interface. When the devices starts, the firmware interface controls the booting process of the PC, and then passes control to Windows or another operating system. UEFI enables security features such as Secure Boot and factory encrypted drives that help prevent untrusted code from running before the operating system is loaded. As of Windows 10, version 1703, Microsoft requires UEFI Specification version 2.3.1c. To learn more about the OEM requirements for UEFI, see [UEFI firmware requirements](OEM-UEFI.md).
 
-**OEMs:** To learn more about what you need to do in order to support UEFI drivers, see [UEFI in Windows](https://docs.microsoft.com/en-us/windows-hardware/drivers/bringup/uefi-in-windows).
+**OEMs:** To learn more about what you need to do in order to support UEFI drivers, see [UEFI in Windows](https://docs.microsoft.com/windows-hardware/drivers/bringup/uefi-in-windows).
 
 ## Virtualization-based Security (VBS)
 
@@ -56,7 +56,7 @@ Hardware-based security features, also called virtualization-based security or V
 
 Windows 10 S is a specific configuration of Windows 10 Pro that offers a familiar, productive Windows experience that’s streamlined for security and performance. By exclusively using apps in the Windows Store and ensuring that you browse safely with Microsoft Edge, Windows 10 S keeps you running fast and secure day in and day out. The same technology that makes Windows 10 S secure also creates some differences when creating software images for Windows 10 devices.
 
-**OEMs:** For more information about Windows 10S, see [Windows 10S manufacturing overview](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/windows-10-s-overview).
+**OEMs:** For more information about Windows 10S, see [Windows 10S manufacturing overview](https://docs.microsoft.com/windows-hardware/manufacture/desktop/windows-10-s-overview).
 
 ## Windows Defender Application Guard
 
@@ -73,7 +73,7 @@ Credential Guard uses virtualization-based security to isolate and protect secre
 
 **OEMs:** To learn more about hardware requirements for Windows Defender Credential Guard, see [Windows Defender Credential Guard hardware requirements](OEM-credential-guard.md).
 
-**IT Professionals:** To learn how to configure and deploy Windows Defender Credential Guard in your enterprise, see [Protect derived domain credentials with Windows Defender Credential Guard](https://docs.microsoft.com/en-us/windows/access-protection/credential-guard/credential-guard).
+**IT Professionals:** To learn how to configure and deploy Windows Defender Credential Guard in your enterprise, see [Protect derived domain credentials with Windows Defender Credential Guard](https://docs.microsoft.com/windows/access-protection/credential-guard/credential-guard).
 
 ## Windows Defender Device Guard
 
@@ -90,10 +90,10 @@ Starting in Windows 10, 1703, the Windows Defender Device Guard features have be
 
 Microsoft Windows Hello gives users a personal, secured experience where the device is authenticated based on their presence. Users can log in with a look or a touch, with no need for a password. In conjunction with Microsoft Passport, biometric authentication uses fingerprints or facial recognition and is more secure, more personal, and more convenient. 
 
-For information about how Windows Hello works with the Companion Device Framework, see [Windows Hello and the Companion Device Framework](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/windows-hello-companion-device-framework). 
+For information about how Windows Hello works with the Companion Device Framework, see [Windows Hello and the Companion Device Framework](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello-companion-device-framework). 
 
-For information on requirements for supporting Windows Hello, see [Windows Hello biometric requirements](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/windows-hello-biometric-requirements). 
+For information on requirements for supporting Windows Hello, see [Windows Hello biometric requirements](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello-biometric-requirements). 
 
-For information about how face authentication works, see [Windows Hello face authentication](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/windows-hello-face-authentication).
+For information about how face authentication works, see [Windows Hello face authentication](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello-face-authentication).
 
 
