@@ -442,7 +442,7 @@ Sets the [Cross-Certificates for kernel-mode code signing](https://docs.microsof
 
 ## setversion.cmd
 
-Sets the [version numbers](../../service/mobile/update-requirements.md) used when creating a package with **createpkg.cmd** or a provisioning package with **createprovpkg.cmd**.
+Sets the [version numbers](https://docs.microsoft.com/windows-hardware/service/iot/updating-iot-core-apps) used when creating a package with **createpkg.cmd** or a provisioning package with **createprovpkg.cmd**.
 
 This version information is stored in **%PRJ\_DIR%\\versioninfo.txt** and loaded back when the IoT Core Shell is launched again. Whenever the package contents are changed, the version has to be updated and all packages need to be recreated.
 
