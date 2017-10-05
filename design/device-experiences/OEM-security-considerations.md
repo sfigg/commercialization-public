@@ -20,8 +20,6 @@ As an OEM, you have a unique opportunity to impact the efficacy of the security 
 
 BitLocker device encryption is a set of features that you as an OEM enable by providing the right set of hardware in the devices you sell. Without the proper hardware configuration, device encryption is not enabled. With the right hardware configurations, Windows 10 automatically encrypts a device.
 
-**OEMs:** For more information on what hardware you need to provide to enable device encryption, see [BitLocker device encryption hardware requirements](bitlocker-drive-encryption.md).
-
 ## Hypervisor-protected code integrity (HVCI)
 
 HVCI is a system mitigation service that protects kernel memory and the kernel mode code integrity process. It blocks malware that attempts to exploit kernel memory vulnerabilities (for example, buffer overflows) because kernel memory pages are never writable and executable. HVCI is used by Windows Defender Credential Guard and Windows Defender Device Guard and is required for Virtualization-based Security (VBS). 
