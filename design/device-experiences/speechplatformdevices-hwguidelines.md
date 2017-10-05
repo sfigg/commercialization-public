@@ -1,4 +1,4 @@
-<img src="media/image2.jpeg" width="178" height="38" />
+![logo](../images/logo-cortana.png)
 
 **Microsoft Corporation Technical Documentation License Agreement (Standard)**
 **READ THIS!** THIS IS A LEGAL AGREEMENT BETWEEN MICROSOFT CORPORATION ("MICROSOFT") AND THE RECIPIENT OF THESE MATERIALS, WHETHER AN INDIVIDUAL OR AN ENTITY ("YOU"). IF YOU HAVE ACCESSED THIS AGREEMENT IN THE PROCESS OF DOWNLOADING MATERIALS ("MATERIALS") FROM A MICROSOFT WEB SITE, BY CLICKING "I ACCEPT", DOWNLOADING, USING OR PROVIDING FEEDBACK ON THE MATERIALS, YOU AGREE TO THESE TERMS. IF THIS AGREEMENT IS ATTACHED TO MATERIALS, BY ACCESSING, USING OR PROVIDING FEEDBACK ON THE ATTACHED MATERIALS, YOU AGREE TO THESE TERMS.
@@ -13,15 +13,15 @@
 6. Microsoft has no obligation to maintain confidentiality of any Microsoft Offering, but otherwise the confidentiality of Your Feedback, including Your identity as the source of such Feedback, is governed by Your NDA.
 7. This agreement is governed by the laws of the State of Washington. Any dispute involving it must be brought in the federal or state superior courts located in King County, Washington, and You waive any defenses allowing the dispute to be litigated elsewhere. If there is litigation, the losing party must pay the other party’s reasonable attorneys’ fees, costs and other expenses. If any part of this agreement is unenforceable, it will be considered modified to the extent necessary to make it enforceable, and the remainder shall continue in effect. This agreement is the entire agreement between You and Microsoft concerning these Materials; it may be changed only by a written document signed by both You and Microsoft.
 
-<img src="media/image3.gif" width="150" height="150" />
+![](../images/logo-lca.gif)
 
 # Section 0 | Document
 
-***Disclaimer**: This document is provided “as-is”. Information and views expressed in this document, including URL and other Internet website references, may change without notice. Some information relates to pre-released products which may be substantially modified before commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here. You bear the risk of using it.*
+**Disclaimer: This document is provided “as-is”. Information and views expressed in this document, including URL and other Internet website references, may change without notice. Some information relates to pre-released products which may be substantially modified before commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here. You bear the risk of using it.**
 
-*Some examples depicted herein are provided for illustration only and are fictitious. No real association or connection is intended or should be inferred.*
+Some examples depicted herein are provided for illustration only and are fictitious. No real association or connection is intended or should be inferred.
 
-*All recommendations and criteria within this document are approximate guidelines only, and not guarantees of speech recognition performance for all devices under real-world conditions. Speech recognition is a complex machine learning process, imperfect by nature. It is not guaranteed that Cortana and Speech Recognition will work well for your device, even if all premium recommendations are met. *
+All recommendations and criteria within this document are approximate guidelines only, and not guarantees of speech recognition performance for all devices under real-world conditions. Speech recognition is a complex machine learning process, imperfect by nature. It is not guaranteed that Cortana and Speech Recognition will work well for your device, even if all premium recommendations are met. 
 
 ## Definitions
 
@@ -34,8 +34,8 @@ For a comprehensive list of relevant terms, reference (ITU-p.10): <https://www.i
 | **AGC**                 | Automatic Gain Control                                                                                                                                                                                                       |
 | **BPF**                 | Band Pass Filtering                                                                                                                                                                                                          |
 | **Capture (or Send)**   | The input (near-end) speech signal                                                                                                                                                                                           |
-| **dB SPL**              | Decibel sound pressure level = $20\\operatorname{}\\frac{p\_{\\text{rms}}}{p\_{\\text{ref}}}$ where *p*<sub>ref</sub> = 20 micropascal. 1 Pa corresponds to 94 dBSPL                                                         |
-| **dBFS (or dBov)**      | Decibel full scale = $20\\operatorname{}\\frac{S\_{\\text{rms}}}{S\_{\\text{ref}}}$ where *S**r**e**f* =  the RMS of a full scale digital sine wave. <br>The signal level of a digital signal relative to its overload or maximum level is given by dBov. This is also commonly referred to as dBFS (Full Scale).  <br>For example, a rectangular function with only the positive or negative maximum number has a level of 0 dBov; For a maximum scale digital sine signal the peak level is 0 dBov and RMS is -3.01 dBov. (ITU-T G.100.1).         |
+| **dB SPL**              | Decibel sound pressure level = <img src="../images/speechplatformequation14.png" alt="Speech platform equation" /> where *p*<sub>ref</sub> = 20 micropascal. 1 Pa corresponds to 94 dBSPL                                                         |
+| **dBFS (or dBov)**      | Decibel full scale = <img src="../images/speechplatformequation15.png" alt="Speech platform equation" /> where *S**r**e**f* =  the RMS of a full scale digital sine wave. <br>The signal level of a digital signal relative to its overload or maximum level is given by dBov. This is also commonly referred to as dBFS (Full Scale).  <br>For example, a rectangular function with only the positive or negative maximum number has a level of 0 dBov; For a maximum scale digital sine signal the peak level is 0 dBov and RMS is -3.01 dBov. (ITU-T G.100.1).         |
 | **DI**                  | Directivity Index ([Appendix](#_Directivity_Index) A)                                                                                                                                                                        |
 | **DRC**                 | Dynamic Range Compression                                                                                                                                                                                                    |
 | **DSP**                 | Digital Signal Processing                                                                                                                                                                                                    |
@@ -55,7 +55,7 @@ For a comprehensive list of relevant terms, reference (ITU-p.10): <https://www.i
 | **Render (or Receive)** | The output (far-end) speech and/or other rendered audio signal                                                                                                                                                               |
 | **SLR**                 | Send Loudness Rating                                                                                                                                                                                                         |
 | **TCLw**                | Terminal Coupling Loss (weighted)                                                                                                                                                                                            |
-| **THD+N**               | Total Harmonic Distortion including Noise = $\\frac{\\left( signal - f\_{0} \\right)}{f\_{0}}$F                                                                                                                              |
+| **THD+N**               | Total Harmonic Distortion including Noise = <img src="../images/speechplatformequation1.png" alt="SpeechPlatformEquation1" />                                                                                                                             |
 | **Wide-band**           | Speech signal with a nominal pass-band of 100-7000 Hz (ITU-p.10 W-3)                                                                                                                                                         |
 |                         
  **f**<sub>**0**</sub>    | Fundamental frequency                                                                                                                                                                                                        |
