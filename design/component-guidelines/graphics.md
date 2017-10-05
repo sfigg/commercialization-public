@@ -15,7 +15,7 @@ ms.technology: windows-oem
 # Graphics
 
 
-## Windows 10 for Graphics
+## Windows 10 Guidelines
 
 This topic covers guidelines for Graphics in Windows 10.
 

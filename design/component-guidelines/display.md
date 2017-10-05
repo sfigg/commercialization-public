@@ -15,7 +15,7 @@ ms.technology: windows-oem
 # Display
 
 
-## Guidelines
+## Windows 10 Guidelines
 
 This topic covers guidelines for Display components in Windows 10.
 
