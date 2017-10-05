@@ -34,7 +34,7 @@ Machines will have adaptive hibernate timeout enabled by default; however, OEMs 
 
 ## <span id="hibernate_triggers"></span><span id="HIBERNATE_TRIGGERS"></span>Hibernate triggers
 
-Adaptive hibernate settings ([Standby budget setting](#standby-budget-settings) and [Reserve time setting](#reserve-time-settings)) are exposed as hidden power settings. The settings take into effect on DC only and are not applicable on AC.
+Adaptive hibernate settings ([Standby budget setting](#standby-budget-settings) and [Standby reserve time setting](#reserve-time-settings)) are exposed as hidden power settings. The settings take into effect on DC only and are not applicable on AC.
 
 ### <span id="standby_budget_settings"></span><span id="STANDBY_BUDGET_SETTINGS"></span>Standby budget setting
 
@@ -66,9 +66,9 @@ Adaptive hibernate settings ([Standby budget setting](#standby-budget-settings) 
 The following table lists the settings you can use to set the standby budget, which is the amount of battery the user is allowed to drain during standby.
 You can also configure these settings using a custom provisioning package file for OEM images. For more information about powercfg, see [Powercfg command-line options](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/powercfg-command-line-options).
 
-### <span id="reserve_time_settings"></span><span id="RESERVE_TIME_SETTINGS"></span>Reserve time setting
+### <span id="reserve_time_settings"></span><span id="RESERVE_TIME_SETTINGS"></span>Standby Reserve time setting
 
-Reserve time is the amount of time the user is guaranteed to have the screen on. The following table lists the settings you can use to set the reserve time.
+Reserve time is the amount of time the user is guaranteed to have the screen on after the system resumes from standby or hibernate. The following table lists the settings you can use to set the reserve time.
 
 <table>
 <colgroup>
@@ -88,7 +88,7 @@ Reserve time is the amount of time the user is guaranteed to have the screen on.
 <tbody>
 <tr class="odd">
 <td><p>[StandbyReserveTime](standbyreservetime.md)</p></td>
-<td><p>Defines the screen on time, in seconds, that will be available to the user after standby exists and the screen turns on.</p></td>
+<td><p>Defines the screen on time, in seconds, that will be available to the user after standby exits and the screen turns on.</p></td>
 <td><p>Power setting</p></td>
 <td><p><code>powercfg /setdcvalueindex scheme_current sub_presence standbyreservetime</code></p></td>
 </tr>
@@ -144,36 +144,4 @@ The following example shows what your Windows provisioning answer file might loo
 
 ## <span id="User_prediction"></span><span id="user_prediction"></span><span id="USER_PREDICTION"></span>User prediction
 
-User prediction trigger uses one of the following methods to detect if the user is away:
-
-* Local prediction service
-* Static prediction (12 AM - 5 AM)
-
-If the prediction service indicates that the user is away and the feature is turned on, the system will hibernate.
-
-You cannot customize the user prediction setting using a provisioning package file, but you can enable or disable the setting through a hidden power setting. The setting is also exposed in the user interface on the power settings page.
-
-<table>
-<colgroup>
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Budget setting</th>
-<th>Definition</th>
-<th>Exposed as</th>
-<th>Powercfg command</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>USERPRESENCEPREDICTION</p></td>
-<td><p>Defines the screen on time that will be available to the user after standby exists and the screen turns on.</p></td>
-<td><p>Power setting</p></td>
-<td><p><code>powercfg /setdcvalueindex scheme_current sub_presence userpresenceprediction</code></p></td>
-</tr>
-</tbody>
-</table>
+In previous versions of Windows, Hibernate was also triggered based on user prediction. Windows continues to support automatically transitioning from Hibernate back to Modern Standby based on user prediction, however this requires that the device implement RTCWake or the Time & Device Alarm object in ACPI.
