@@ -87,7 +87,7 @@ Hardware must comply with the Windows HLK requirements for near field proximity,
 
 The Windows near field proximity services and APIs provide a standard way for devices and PCs to connect and communicate with each other through Windows. While other near field proximity technologies are supported, we recommend Near Field Communication (NFC), working in conjunction with Bluetooth, Wi-Fi, and Wi-Fi Direct as out-of-band transports.
 
-Near field proximity enables new [Tap and Do](http://go.microsoft.com/fwlink/p/?LinkId=625070) experiences for PC to PC, mobile phone to PC, and PC to tag interaction. The design supports scenarios that are interpersonal in nature, between two people holding different devices; it also works when one user is holding two devices.
+Near field proximity enables [Tap and Do](http://go.microsoft.com/fwlink/p/?LinkId=625070) experiences for PC to PC, mobile phone to PC, and PC to tag interaction. The design supports scenarios that are interpersonal in nature, between two people holding different devices; it also works when one user is holding two devices.
 
 <table>
 <tbody valign="top">

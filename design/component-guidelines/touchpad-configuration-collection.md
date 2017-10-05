@@ -15,7 +15,7 @@ ms.technology: windows-oem
 # Configuration Collection
 
 
-This topic discusses the role played by the configuration collection of a Windows Precision Touchpad device, in Windows 10 and later operating systems.
+This topic discusses the role played by the configuration collection of a Windows Precision Touchpad device in Windows 10.
 
 A Windows Precision Touchpad should provide a top-level collection that makes the device appear as a digitizer with configuration options (Page **0x0D**, Usage **0x0E**).
 
