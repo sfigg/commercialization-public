@@ -90,9 +90,7 @@ Recommended for devices using the default Windows 10 speech enhancement, in orde
 
 Basic functional guidelines recommended in order to work well in ambient conditions and near field distances.
 
-| Premium | Standard |
-|---------|----------|
-|         |          |
+![premium and standard](../images/speechplatform1.png)
 
 # Section 2 | DEVICE AUDIO HARDWARE RECOMMENDATIONS
 
@@ -144,15 +142,15 @@ The Microsoft speech pipeline is also capable of working with custom array types
 |-------------------|---------------------------------|----------------------------------------------------------|
 | Near-Field Device | Linear 2-Element                
                                    
-  X = 45-170mm                     | <img src="media/image6.png" width="232" height="151" />  |
+  X = 45-170mm                     | <img src="../images/spd-recommend-013.png" width="232" height="151" />  |
 | Far-Field Device  | Linear 4-Element (Symmetrical)  
                                    
-  X &gt; 60mm                      | <img src="media/image7.png" width="272" height="126" />  |
-|                   | Linear 4-Element (Assymetrical) | <img src="media/image8.jpeg" width="358" height="90" />  |
-| Rotatable Device  | L-Shaped                        | <img src="media/image9.png" width="219" height="171" />  |
+  X &gt; 60mm                      | <img src="../images/spd-recommend-014.png" width="272" height="126" />  |
+|                   | Linear 4-Element (Assymetrical) | <img src="../images/spd-recommend-015.png" width="358" height="90" />  |
+| Rotatable Device  | L-Shaped                        | <img src="../images/spd-recommend-016.png.png" width="219" height="171" />  |
 | 360° Pickup       | Circular 8-Element              
                                    
-  X &gt; 50mm                      | <img src="media/image10.png" width="290" height="128" /> |
+  X &gt; 50mm                      | <img src="../images/spd-recommend-017.png" width="290" height="128" /> |
 
 **
 **
