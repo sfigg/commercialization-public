@@ -11,7 +11,6 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # Configure power settings
 
 
