@@ -327,7 +327,7 @@ In the **Further analysis** area of the issue, choose the WPA in-depth analysis 
 For more information about how to discover related issues, see [Group, Filter, and Search Issues](group-filter-and-search-issues.md).
 
 
-## Missing Symbols
+## <a href="" id="missingsymbols"></a>Missing Symbols
 
 Some assessments require access to symbols. In some cases, the information in the assessment results can be incorrect or incomplete, if a symbol server isn't available. In many cases, Internet connectivity and access to the Microsoft public symbol server satisfy this dependency. In other cases, you can set up a private symbol server or install the symbols on the local computer.
 
