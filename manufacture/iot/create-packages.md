@@ -100,10 +100,6 @@ The following example demonstrates how to add some files and registry settings t
 </identity>
 ```
 
-```text
-c:\oemsample>pkggen myPackage.wm.xml /universalbsp /variables:"_RELEASEDIR=c:\release"
-```
-
 ## Run the pkggen.exe tool
 
 PkgGen.exe [project] /universalbsp ...
@@ -130,6 +126,11 @@ PkgGen.exe [project] /universalbsp ...
   [output]············ Output directory for the CAB(s).
                        Values:<Free Text> Default="CurrentDir"
 ```
+Example:
+```text
+c:\oemsample>pkggen myPackage.wm.xml /universalbsp /variables:"_RELEASEDIR=c:\release"
+```
+
 
 ## View the contents of a package
 
@@ -195,7 +196,6 @@ If the default file import path is not equal to the INF source path, you can use
 If files to be imported are not relative to how they are defined in the INF, file overrides can be applied. This is not recommended, but is available for special cases.
 
 ```xml
-<syntaxhighlight lang="xml">
   <drivers>
     <driver>
       <inf source="Media.inf"/>
@@ -205,7 +205,6 @@ If files to be imported are not relative to how they are defined in the INF, fil
       </files>
     </driver>
   </drivers>
-</syntaxhighlight>
 ```
 
 ## Add a service component
@@ -229,7 +228,7 @@ In the package definition file, use the **service** element (and its child eleme
 ```
 
 ## Build and Filter WOW Packages
-To build Guest or WOW packages (32 bit packages to run on 64 bit devices) add the buildWow="true" attribute to myPackage.wm.wml
+To build Guest or WOW packages (32 bit packages to run on 64 bit devices) add the **buildWow="true"** attribute to myPackage.wm.wml
 
 ```xml
 <identity
@@ -247,17 +246,12 @@ Running PkgGen.exe with now generate one WOW package for each host package.
 
 ```text
 04/05/2017  07:59 AM            11,870 OEM-Media-MediaService.cab
-04/05/2017  07:59 AM             8,750 OEM-Media-MediaService.Resources_Lang_en-us.cab
-04/05/2017  08:00 AM             8,810 OEM-Media-MediaService.Resources_Lang_en-us_Wow_arm64.arm.cab
-04/05/2017  08:00 AM             8,754 OEM-Media-MediaService.Resources_Lang_fr-fr.cab
-04/05/2017  08:00 AM             8,812 OEM-Media-MediaService.Resources_Lang_fr-fr_Wow_arm64.arm.cab
 04/05/2017  07:59 AM            10,021 OEM-Media-MediaService_Wow_arm64.arm.cab
 ```
 
 Typically, the 64 bit device will get its Host 64 bit package and its Guest 32 bit or WOW package, both generated from myPackage.wm.xml.  To avoid resource conflicts between the two packages build filters are used:
 
 ```xml
-<syntaxhighlight lang="xml">
   <regKeys buildFilter="not build.isWow and build.arch = arm" >
     <regKey keyName="$(hklm.software)\OEMName\MediaService">
       <regValue
@@ -266,7 +260,6 @@ Typically, the 64 bit device will get its Host 64 bit package and its Guest 32 b
           value="MediaService"
           />
     </regKey>
-</syntaxhighlight>
 ```
 
 In this case, the registry keys are exclusive to the Host 32 bit ARM package.  The CPU switch is used to set build.arch, and build.isWow is set by PkgGen to false when building the 32 bit Host Package, then true when building the 32 bit Guest or WOW package.
