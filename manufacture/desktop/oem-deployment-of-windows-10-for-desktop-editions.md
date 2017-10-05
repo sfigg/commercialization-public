@@ -150,7 +150,7 @@ The version numbers of the Windows ADK, the Windows image you're deploying, and 
 
 If you're building a 64-bit image, make sure that you're following the steps that are marked for 64-bit. If you're working with a 32-bit image, follow the steps for 32-bit.
 
-#### Windows 10, version 1703
+#### Most recent version of Windows 10
 
 |                                                      |
 | ---------------------------------------------------- |
@@ -172,9 +172,9 @@ If you're building a 64-bit image, make sure that you're following the steps tha
 | X21-32392   | Office v16.3 English OPK                            |
 | X21-32396   | Office v16.3 German OPK |
 
-#### Windows Assessment and Deployment Kit (ADK) for Windows 10, version 1703
+#### Windows Assessment and Deployment Kit (ADK) for Windows 10
 
-Download the [Windows ADK for Windows 10, version 1703](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit#winADK).
+Download the version of [Windows ADK for Windows 10](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit#winADK) that matches the version of Windows 10 you are working with.
 
 #### Drivers
 
