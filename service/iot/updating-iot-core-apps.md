@@ -99,4 +99,4 @@ Try out your updates on your devices before submitting them to the Windows Store
 Open `UpdateVersion.txt` to see descriptions of your packages. The createupdatepkgs tool updates this file when creating a new update.
 
 ### <span id="Test_new_images"></span>Test new images
-Create a new package using the same procedures as shown in [Lab 1b: Add an app to your image](../../manufacture/iot/deploy-your-app-with-a-standard-board.md).
+Create a new package using the same procedures as shown in [Lab 1b: Add an app to your image](https://docs.microsoft.com/windows-hardware/manufacture/iot/deploy-your-app-with-a-standard-board).
