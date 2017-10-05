@@ -19,15 +19,14 @@ ms.technology: windows-oem
 
 Assessments set predefined analysis thresholds for the completion of an activity that it's measuring. Assessments identify and report issues when activity durations exceed these thresholds. Some assessments in the Windows Assessment Toolkit perform advanced issue analysis. You can view these issues in the Windows Assessment Console and the Windows Assessment Services - Client (Windows ASC), and further analyze them in Windows Performance Analyzer (WPA).
 
-> [!NOTE]
-> Issues that are generated from the assessments come from several sources. This topic only describes some common advanced analysis issues.
+Issues that are generated from the assessments come from several sources. This topic describes some of the common advanced analysis issues.
+
+
+## Issue Format
 
 In the Windows Assessment Console and the Windows ASC, issues that are reported by assessments appear in 2 locations: in the left column of the **Results View** page and in the details pane on the right. On the **Results View** page, issues, warnings and errors appear in the run information table and in the assessment results table. You can group these issues by right-clicking **Issues** and then selecting criteria to group by. In the details pane, issues are sorted by severity. You can filter them by using keywords and metadata. For more information, see [Group, Filter, and Search Issues](group-filter-and-search-issues.md).
 
 When you open WPA using the link in the Results View, you can see a list of issues that the assessment has identified in the WPA **Issues** window. When you choose one of these issues, details and a recommended solution appear in the WPA **Details** window. For more information about WPA, see [Windows Performance Analyzer](http://go.microsoft.com/fwlink/?LinkId=214551).
-
-
-## Issue Format
 
 Most of the issues that appear in the details pane in the Windows Assessment Console and the Windows ASC have a common structure that can include:
 
