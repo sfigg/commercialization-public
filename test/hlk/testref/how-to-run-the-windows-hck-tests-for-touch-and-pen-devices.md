@@ -270,7 +270,7 @@ The following table lists the automated tests that are mandatory for device cert
 <td><p>5 minutes</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Driver Memory Test](4fbce95a-57c8-44b2-aa68-7dbdd7f7334e.md)</p></td>
+<td><p>Driver Memory Test</p></td>
 <td><p>Checks the memory that drivers are using, and verifies that the memory consumed by graphic drivers does not exceed the specified amount.</p></td>
 <td><p>30 minutes</p></td>
 </tr>
