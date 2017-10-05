@@ -1,10 +1,15 @@
 ---
-title: Adaptive hibernate
-description: Windows 10, version 1607 provides new triggers to allow the system to hibernate intelligently.
+title: Adaptive Hibernate
+description: Adaptive hibernate provides triggers to allow the system to hibernate intelligently.
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 1D38C059-9D2A-46BC-A457-90361240457A
+ms.author: alhopper
+ms.date: 10/05/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # Adaptive hibernate
@@ -185,10 +190,3 @@ You cannot customize the user prediction setting using a provisioning package fi
 </tr>
 </tbody>
 </table>
-
- 
-
-For more information about powercfg, see [Powercfg command-line options](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/powercfg-command-line-options).
-
-
-
