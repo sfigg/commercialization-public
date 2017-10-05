@@ -72,7 +72,8 @@ Most of the issues that appear in the details pane in the Windows Assessment Con
         -   Threads or processes that were delayed, including the duration of the delay
         -   Impact of each thread of the process, including the duration of the delay
         -   Call stacks for each thread that causes the delay or is affected by it
-            > [!NOTE]  
+
+            > [!NOTE]
             > The information that the call stacks provide is a statistical representation of an activity. Its accuracy depends on the samples that the assessment collected.
 
 
@@ -287,25 +288,25 @@ Issues are reported if and only if the impact they describe is greater than the 
 
 <table>
 <tbody>
-<tr class="odd">
+<tr>
 <td><strong>Type 1:</strong>
 <p>The activity duration exceeds the activity duration threshold. The activity also has issues that exceed the analysis threshold.</p></td>
 <td><strong>Issue example</strong>
 <p>Summary: Fast startup shutdown process Example.exe takes 6.5 seconds, and exceeds the threshold of 2 seconds. The assessment identified other issues that impact this activity. These other issues fully account for this activity's time.</p></td>
 </tr>
-<tr class="even">
+<tr>
 <td><strong>Type 2:</strong>
 <p>The activity duration exceeds the activity duration threshold. The activity also has a mixed set of issues—some that are greater than the analysis threshold and others that are less than the analysis threshold.</p></td>
 <td><strong>Issue example</strong>
 <p>Summary: Fast startup shutdown process Example.exe takes 6.5 seconds, and exceeds the threshold of 2.0 seconds. The assessment identified other issues that impact this activity. These other issues account for 5.9 seconds of this activity's time. The remaining 500 milliseconds consist of issues that do not exceed the minimum analysis threshold of 150 milliseconds.</p></td>
 </tr>
-<tr class="odd">
+<tr>
 <td><strong>Type 3:</strong>
 <p>The activity duration exceeds the activity duration threshold. All the issues that impact this activity are less than the analysis threshold and are therefore not displayed.</p></td>
 <td><strong>Issue example</strong>
 <p>Summary: Fast startup shutdown process Example.exe takes 6.5 seconds, and exceeds the threshold of 2.0 seconds. The assessment identified other issues that impact this activity. These other issues that impact this activity do not exceed the minimum analysis threshold of 200 milliseconds so they are omitted.</p></td>
 </tr>
-<tr class="even">
+<tr>
 <td><strong>Type 4:</strong>
 <p>The activity duration exceeds the period when assessment logging was active. However, the delays were found in the activity when logging was active. These delays were caused by CPU or Disk contention.</p></td>
 <td><strong>Issue example</strong>
