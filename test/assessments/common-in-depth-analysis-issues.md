@@ -27,7 +27,7 @@ In the Windows Assessment Console and the Windows ASC, issues that are reported 
 When you open WPA using the link in the Results View, you can see a list of issues that the assessment has identified in the WPA **Issues** window. When you choose one of these issues, details and a recommended solution appear in the WPA **Details** window. For more information about WPA, see [Windows Performance Analyzer](http://go.microsoft.com/fwlink/?LinkId=214551).
 
 
-## <a href="" id="formatissue"></a>Issue Format
+## Issue Format
 
 Most of the issues that appear in the details pane in the Windows Assessment Console and the Windows ASC have a common structure that can include:
 
@@ -77,7 +77,7 @@ Most of the issues that appear in the details pane in the Windows Assessment Con
             > The information that the call stacks provide is a statistical representation of an activity. Its accuracy depends on the samples that the assessment collected.
 
 
-## <a href="" id="managedcode"></a>Managed Code
+## Managed Code
 
 Managed code refers to code that's running under the Microsoft .NET Common Language Runtime (CLR). The CLR manages the execution of applications that are based on the Microsoft .NET Framework. CLR processes start during Windows boot and can cause additional resource consumption, which can extend boot time. Files that the .NET Framework reads during CLR initialization can add megabytes of storage reads that can delay the boot process and the appearance of the **Start** screen.
 
@@ -96,7 +96,7 @@ Using managed code involves some performance overhead, and the per-call overhead
 -   Start applications only on demand or when triggered. For more information, see [\[MSDN\] Developing Efficient Background Process for Windows](http://go.microsoft.com/fwlink/?LinkId=233633).
 
 
-## <a href="" id="excessprocessor"></a>Processor Use
+## Processor Use
 
 High CPU use by applications and services can contribute to a poor user experience, like UI unresponsiveness and video and sound glitches. When a process thread that's running at normal or high priority exceeds a threshold value for use of processor resources, the assessment flags the process as an issue and calculates the delay. When a single process uses too much CPU, other processes can be delayed because they must compete for system resources. Generated issues are color coded as red or yellow in terms of their impact on the CPU.
 
@@ -112,7 +112,7 @@ In the **Further analysis** area of the issue, choose the WPA in-depth analysis 
 > The information that the call stacks provide is a statistical representation of an activity. Its accuracy depends on the samples that the assessment collected.
 
 
-## <a href="" id="excessstorage"></a>Storage Use
+## Storage Use
 
 A process can perform storage reads, writes, or flushes at run time. Because a hard drive is a single shared resource, excessive or unnecessary use of storage might cause significant performance issues that the assessment identifies.
 
@@ -133,7 +133,7 @@ In the **Further analysis** area of the issue, choose the WPA in-depth analysis 
 -   Disk flushes affect I/O activity by other processes. You should perform disk flushes only when they're necessary.
 
 
-## <a href="" id="processingdelays"></a>Processing Delays
+## Processing Delays
 
 When a thread uses CPU or disk resources, it increases the duration of the activity. Contention over the processor often manifests as thread starvation and/or preemption. The analysis section of this issue consists of all threads affected by the process, which were first preempted or starved, and later readied after the process completed.
 
@@ -214,7 +214,7 @@ The types of processing delays include:
     In the **Further analysis** area of the issue, choose the WPA in-depth analysis link. You can determine the cause of unexpected thread sleep can from the function call stacks and the file information.
 
 
-## <a href="" id="storageiodekays"></a>Storage I/O Delays
+## Storage I/O Delays
 
 When a thread uses storage resources, it can increase the duration of the activity. When multiple threads contend for the use of storage, the resulting random disk seeks make delays more significant.
 
@@ -245,7 +245,7 @@ The types of storage delays include:
     In the **Further analysis** area of the issue, choose the WPA in-depth analysis link to see the call stacks for each thread that causes flushes to disk, and to identify the relevant code that contributed to the activity delay.
 
 
-## <a href="" id="registryhiveflushes"></a>Registry Flushes
+## Registry Flushes
 
 Registry flushes occur when processes explicitly use the **RegFlushKey** function after they complete a registry modification. Assessments have determined that registry flushes can be an important contributor to user-perceived performance problems.
 
@@ -274,7 +274,7 @@ There are 2 types of registry flush issues:
     In the **Further analysis** area of the issue, choose the WPA in-depth analysis link to analyze the function call stacks for each thread of the processes.
 
 
-## <a href="" id="timeaccounting"></a>Time Accounting
+## Time Accounting
 
 Assessments typically report multiple issues per activity. Time accounting issues show the combined time that multiple issues account for, as well as any portion of the activity not accounted for by the issues. If an activity consists of many short duration issues, and they are below the analysis threshold, they are not reported as individual issues. This design helps to highlight the most impactful issues so you can focus your investigation on them.
 
@@ -328,7 +328,7 @@ In the **Further analysis** area of the issue, choose the WPA in-depth analysis 
 For more information about how to discover related issues, see [Group, Filter, and Search Issues](group-filter-and-search-issues.md).
 
 
-## <a href="" id="missingsymbols"></a>Missing Symbols
+## Missing Symbols
 
 Some assessments require access to symbols. In some cases, the information in the assessment results can be incorrect or incomplete, if a symbol server isn't available. In many cases, Internet connectivity and access to the Microsoft public symbol server satisfy this dependency. In other cases, you can set up a private symbol server or install the symbols on the local computer.
 
@@ -352,7 +352,7 @@ Symbols of non-Microsoft components missing: These missing symbols could be for 
 Sharing components’ symbols across partners in the ecosystem ensures better collaboration through a reliable and efficient bug triage and analysis process. We recommend that partners define these collaborative relationships, which will ensure that you have the resources you need to find the root cause of the issues reported on your system component.
 
 
-## <a href="" id="dpcisr"></a>DPCs and ISRs
+## DPCs and ISRs
 
 Long-running Deferred Procedure Calls (DPCs) and Interrupt Service Routines (ISRs) can introduce delays that extend the duration of an activity, and this latency could be perceived by users as a performance issue.
 
@@ -410,7 +410,7 @@ DPC exceeds the threshold of 1.0 milliseconds 5 times during Media engine lifeti
 > The information provided in the call stacks is a statistical representation of the activity in question (sampled once every millisecond), and its accuracy is dependent on the samples collected by the assessment.
 
 
-## <a href="" id="summaryissues"></a>Summary Issues
+## Summary Issues
 
 Summary issues contain an overview of the issues identified by the assessment that demonstrate a particular performance behavior, and help visualize the broader impact of these on the system. Here are the different types of Summary Issues that could feature in assessment results.
 
@@ -466,7 +466,7 @@ To get the full benefits of summary issues, you can group the list of issues in 
 > The information provided in the call stacks is a statistical representation of the activity in question (sampled once every millisecond), and its accuracy is dependent on the samples collected by the assessment.
 
 
-## <a href="" id="logging"></a>Assessment Logging
+## Assessment Logging
 
 Assessments rely on Event Tracing for Windows (ETW) logging to collect data for analysis. This logging uses system resources. This issue category accounts for the storage activity that occurs while the assessment is running.
 
