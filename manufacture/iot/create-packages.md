@@ -249,7 +249,7 @@ Running PkgGen.exe with now generate one WOW package for each host package.
 04/05/2017  07:59 AM            10,021 OEM-Media-MediaService_Wow_arm64.arm.cab
 ```
 
-Typically, the 64 bit device will get its Host 64 bit package and its Guest 32 bit or WOW package, both generated from myPackage.wm.xml.  To avoid resource conflicts between the two packages build filters are used:
+Typically, the 64 bit device will get its Host 64 bit package and either its Guest 32 bit or WOW package, both generated from myPackage.wm.xml.  To avoid resource conflicts between the two packages, build filters are used:
 
 ```xml
   <regKeys buildFilter="not build.isWow and build.arch = arm" >
