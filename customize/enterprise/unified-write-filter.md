@@ -11,129 +11,110 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # Unified Write Filter (UWF) feature
-
 
 You can use the Unified Write Filter (UWF) feature on your device to help protect your physical storage media, including most standard writable storage types that are supported by Microsoft Windows, such as physical hard disks, solid-state drives, internal USB devices, external SATA devices, and so on. You can also use UWF to make read-only media appear to the OS as a writable volume.
 
-> [!Important]  
+> [!Important]
 > You cannot use UWF to protect external removable drives, USB devices or flash drives.
-
- 
 
 UWF intercepts all write attempts to a protected volume and redirects those write attempts to a virtual overlay. This improves the reliability and stability of your device and reduces the wear on write-sensitive media, such as flash memory media like solid-state drives.
 
 The overlay does not mirror the entire volume, but dynamically grows to keep track of redirected writes. Generally the overlay is stored in system memory, although you can cache a portion of the overlay on a physical volume.
 
-> [!Note]  
+> [!Note]
 > UWF fully supports the NTFS file system; however, during device startup, NTFS file system journal files can write to a protected volume before UWF has loaded and started protecting the volume.
 
- 
-
 ## Requirements
-
 
 Windows 10 Enterprise or Windows 10 Education.
 
 ## Terminology
 
+* **Turn on, enable:** To make the setting available to the device and optionally apply the settings to the device. Generally *turn on* is used in the user interface or control panel, whereas *enable* is used for command line.
 
-**Turn on, enable:** To make the setting available to the device and optionally apply the settings to the device. Generally *turn on* is used in the user interface or control panel, whereas *enable* is used for command line.
-
-**Configure:** To customize the setting or sub-settings.
+* **Configure:** To customize the setting or sub-settings.
 
 ## Turn UWF on or off
 
-
 UWF is an optional component and is not enabled by default in Windows 10. It must be turned on prior to configuring. You can turn on and configure UWF in a customized Windows 10 image (.wim) if Windows has not been installed. If Windows has already been installed and you are applying a provisioning package to configure UWF, you must first turn on UWF in order for a provisioning package successfully apply.
 
-**Turn on UWF by using Control Panel**
+### Turn on UWF by using Control Panel
 
-1.  In the **Search the web and Windows** field, type **Programs and Features** and either press **Enter** or tap or click **Programs and Features** to open it.
-2.  In the **Programs and Features** window, click **Turn Windows features on or off**.
-3.  For Windows 10, version 1511, in the **Windows Features** box, select **Unified Write Filter**.
+1. In the **Search the web and Windows** field, type **Programs and Features** and either press **Enter** or tap or click **Programs and Features** to open it.
+1. In the **Programs and Features** window, click **Turn Windows features on or off**.
+1. In the **Windows Features** window, expand the **Device Lockdown** node, and check or clear the checkbox for **Unified Write Filter**.
+1. Click **OK**. The **Windows Features** window indicates Windows is searching for required files and displays a progress bar. Once found, the window indicates Windows is applying the changes. When completed, the window indicates the requested changes are completed.
+1. Click **Close** to close the **Windows Features** window.
 
-    For Windows 10, version 1607, in the **Windows Features** window, expand the **Device Lockdown** node, and check or clear the checkbox for **Unified Write Filter**.
-
-4.  Click **OK**. The **Windows Features** window indicates Windows is searching for required files and displays a progress bar. Once found, the window indicates Windows is applying the changes. When completed, the window indicates the requested changes are completed.
-5.  Click **Close** to close the **Windows Features** window.
-
-This example uses a Windows image called install.wim, but you can use the same procedure to apply a provisioning package. For more information on DISM, see [What Is Deployment Image Servicing and Management](https://technet.microsoft.com/en-us/library/dd744566.aspx)?
+This example uses a Windows image called install.wim, but you can use the same procedure to apply a provisioning package. For more information on DISM, see [What Is Deployment Image Servicing and Management](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/what-is-dism).
 
 When you create the WIM, you configure the settings.
 
-**Turn on and configure UWF by using DISM**
+### Turn on and configure UWF by using DISM
 
-1.  Open a command prompt with administrator privileges.
-2.  Copy install.wim to a temporary folder on hard drive (in the following steps, we'll assume it's called C:\\wim).
-3.  Create a new directory.
+1. Open a command prompt with administrator privileges.
+1. Copy install.wim to a temporary folder on hard drive (in the following steps, we'll assume it's called C:\\wim).
+1. Create a new directory.
 
-    ```
-    md c:\wim
-    ```
+   ```cmd
+   md c:\wim
+   ```
 
-4.  Mount the image.
+1. Mount the image.
 
-    ```
-    dism /mount-wim /wimfile:c:\bootmedia\sources\install.wim /index:1 /MountDir:c:\wim
-    ```
+   ```cmd
+   dism /mount-wim /wimfile:c:\bootmedia\sources\install.wim /index:1 /MountDir:c:\wim
+   ```
 
-5.  Enable the feature.
+1. Enable the feature.
 
-    ```
-    dism /image:c:\wim /enable-feature /featureName:Client-UnifiedWriteFilter
-    ```
+   ```cmd
+   dism /image:c:\wim /enable-feature /featureName:Client-UnifiedWriteFilter
+   ```
 
-6.  Commit the change.
+1. Commit the change.
 
-    ```
-    dism /unmount-wim /MountDir:c:\wim /Commit
-    ```
+   ```cmd
+   dism /unmount-wim /MountDir:c:\wim /Commit
+   ```
 
 If Windows has already been installed and you are applying a provisioning package to configure UWF, you must first turn on UWF in order for a provisioning package to be successfully applied.
 
-**Turn on and configure UWF by using Windows Imaging and Configuration Designer (ICD)**
+### Turn on and configure UWF by using Windows Configuration Designer
 
-1.  Build a provisioning package in Windows Imaging and Configuration Designer (ICD) by following the instructions in [Build and apply a provisioning package](https://msdn.microsoft.com/library/windows/hardware/dn916107).
+1. Create a provisioning package in Windows Configuration Designer by following the instructions in [Create a provisioning package](https://docs.microsoft.com/en-us/windows/configuration/provisioning-packages/provisioning-create-package).
 
-    In the **Select Windows Edition** window, choose **Common to all Windows desktop editions**.
+   > [!Note]
+   > When setting the file exclusion in Windows Configuration Designer, you do not need to specify the drive letter since that is already input via the Volume protection setting. For example, if the file being excluded is C:\\testdir\\test.txt, after adding a drive in Volume protection, you only need to input \\testdir\\test.txt to add this file exclusion.
 
-    > [!Note]
-    > When setting the file exclusion in Windows ICD, you do not need to specify the drive letter since that is already input via the Volume protection setting. For example, if the file being excluded is C:\\testdir\\test.txt, after adding a drive in Volume protection, you only need to input \\testdir\\test.txt to add this file exclusion.
-
-     
-
-2.  In the Available customizations page, select **Runtime settings** &gt; **SMISettings** and then set the value for the unified write filter setting.
-3.  Once you have finished configuring the settings and building the provisioning package, you can apply the package to the image deployment time or runtime. See the To apply a provisioning package to a Windows 10 for desktop editions image section in [Build and apply a provisioning package](https://msdn.microsoft.com/library/windows/hardware/dn916107) for more information. Note that the process for applying the image to a Windows 10 Enterprise is the same.
+1. In the Available customizations page, select **Runtime settings** &gt; **SMISettings** and then set the value for the unified write filter setting.
+1. Once you have finished configuring the settings and building the provisioning package, you can apply the package to the image deployment time or runtime. See [Apply a provisioning package](https://docs.microsoft.com/en-us/windows/configuration/provisioning-packages/provisioning-apply-package) for more information. Note that the process for applying the provisioning package to a Windows 10 Enterprise image is the same.
 
 ## Turn on and configure UWF by using Windows Management Instrumentation (WMI)
 
-
 If Windows has already been installed and you do not want to use a provisioning package, you can also configure UWF by using the Windows Management Instrumentation (WMI) providers. To turn on UWF using WMI, you can use the [UWF\_Filter](uwf-filter.md) function, specifically the [UWF\_Filter.Enable](uwf-filterenable.md) method. You can do this in one of the following ways:
 
--   Use the WMI providers directly in a PowerShell script.
--   Use the WMI providers directly in an application.
--   Use the command line tool, [uwfmgr.exe](uwfmgrexe.md).
+* Use the WMI providers directly in a PowerShell script.
+* Use the WMI providers directly in an application.
+* Use the command line tool, [uwfmgr.exe](uwfmgrexe.md).
 
 You must restart your device after you turn on or turn off UWF before the change takes effect.
 
 The first time you enable UWF on your device, UWF makes the following changes to your system to improve the performance of UWF:
 
--   Paging files are disabled.
--   System restore is disabled.
--   SuperFetch is disabled.
--   File indexing service is turned off.
--   Fast boot is disabled.
--   Defragmentation service is turned off.
--   BCD setting **bootstatuspolicy** is set to **ignoreallfailures**.
+* Paging files are disabled.
+* System restore is disabled.
+* SuperFetch is disabled.
+* File indexing service is turned off.
+* Fast boot is disabled.
+* Defragmentation service is turned off.
+* BCD setting **bootstatuspolicy** is set to **ignoreallfailures**.
 
 You can change these settings after you turn on UWF if you want to. For example, you can move the page file location to an unprotected volume and re-enable paging files.
 
-> [!Important] 
+> [!Important]
 > If you add UWF to your image by using SMI settings in an unattend.xml file, turning on UWF only sets the **bootstatuspolicy** BCD setting and turns off the defragmentation service. In this case, you must manually turn off the other features and services if you want to increase the performance of UWF.
-
- 
 
 All configuration settings for UWF are stored in the registry. UWF automatically excludes these registry entries from filtering.
 
@@ -144,7 +125,6 @@ For more information about UWF WMI providers, see [Unified Write Filter WMI prov
 For more information about the command line tool for configuring UWF, see [uwfmgr.exe](uwfmgrexe.md).
 
 ## UWF overlay
-
 
 In UWF, an overlay is a virtual storage space that keeps track of changes made to the underlying protected volumes.
 
@@ -160,15 +140,12 @@ For more information about overlays in UWF, see [Overlay for Unified Write Filte
 
 ## Volumes
 
-
 A volume is a logical unit that represents an area of persistent storage to the file system that is used by the OS. A volume can correspond to a single physical storage device, such as a hard disk, but volumes can also correspond to a single partition on a physical storage device with multiple partitions, or can span across multiple physical storage devices. For example, a collection of hard disks in a RAID array can be represented as a single volume to the OS.
 
 UWF supports all fixed volume types (except for external USB volumes), including master boot record (MBR) volumes and GUID partition table (GPT) volumes.
 
-> [!Important]  
+> [!Important]
 > UWF does not support Storage Spaces. For more information, see [Storage Spaces Overview](http://go.microsoft.com/fwlink/?LinkId=690587).
-
- 
 
 When you configure UWF to protect a volume, you can specify the volume by using either a drive letter or the volume device identifier. To determine the device identifier for a volume, query the **DeviceID** property in the **Win32\_Volume**WMI class.
 
@@ -176,13 +153,10 @@ If you specify a volume using a drive letter, UWF uses *loose binding* to recogn
 
 ## Exclusions
 
-
 If you want to protect a volume with UWF while excluding specific files, folders, or registry keys from being filtered by UWF, you can add them to an exclusion list.
 
-> [!Note]  
+> [!Note]
 > On non-NTFS file system and non-FAT volumes, for example, Extended File Allocation Table (exFAT) volumes, you can protect the volume, but cannot create file exclusions or do file commit operations on the volume. Note that writes to excluded files still influence the growth of the Overlay.
-
- 
 
 ### File and folder exclusions
 
@@ -190,27 +164,24 @@ You can add specific files or folders on a protected volume to a file exclusion 
 
 You must use an administrator account to add or remove file or folder exclusions during run time, and you must restart the device for new exclusions to take effect.
 
-> [!Important]  
+> [!Important]
 > You cannot add exclusions for the following items:
-> 
-> -   \\Windows\\System32\\config\\DEFAULT
-> -   \\Windows\\System32\\config\\SAM
-> -   \\Windows\\System32\\config\\SECURITY
-> -   \\Windows\\System32\\config\\SOFTWARE
-> -   \\Windows\\System32\\config\\SYSTEM
-> -   \\Users\\*&lt;User Name&gt;*\\NTUSER.DAT
-> 
+>
+> * \\Windows\\System32\\config\\DEFAULT
+> * \\Windows\\System32\\config\\SAM
+> * \\Windows\\System32\\config\\SECURITY
+> * \\Windows\\System32\\config\\SOFTWARE
+> * \\Windows\\System32\\config\\SYSTEM
+> * \\Users\\*&lt;User Name&gt;*\\NTUSER.DAT
+>
 > You also cannot add exclusions for the following items:
-> 
-> -   The volume root. For example, C: or D:.
-> -   The \\Windows folder on the system volume.
-> -   The \\Windows\\System32 folder on the system volume.
-> -   The \\Windows\\System32\\Drivers folder on the system volume.
-> -   Paging files.
-
-However, you can exclude subdirectories and files under these items.
-
- 
+>
+> * The volume root. For example, C: or D:.
+> * The \\Windows folder on the system volume.
+> * The \\Windows\\System32 folder on the system volume.
+> * The \\Windows\\System32\\Drivers folder on the system volume.
+> * Paging files.
+> However, you can exclude subdirectories and files under these items.
 
 You cannot rename or move a file or folder from a protected location to an unprotected location, or vice versa. When write filters are active and you attempt to delete an excluded file or folder in Windows Explorer, the system attempts to move the file or folder to the Recycle Bin. This causes an error, because you cannot move files that are not filtered to a location that is write filter protected.
 
@@ -224,13 +195,13 @@ When you deploy a Windows 10 Enterprise image with UWF on a VHD boot disk, you 
 
 To add a file exclusion for the VHD file, at an administrator command prompt, type the following:
 
-```
+```cmd
 uwfmgr.exe file add-exclusion <drive containing VHD file>:\<path to VHD file>\<VHD file name>.vhd
 ```
 
 For example:
 
-```
+```cmd
 uwfmgr.exe file add-exclusion E:\VHD\test.vhd
 ```
 
@@ -242,22 +213,19 @@ You must use an administrator account to add or remove registry exclusions durin
 
 If you exclude a registry key, all its subkeys are also excluded from filtering. You can exclude registry subkeys only under the following registry keys:
 
--   HKEY\_LOCAL\_MACHINE\\BCD00000000
--   HKEY\_LOCAL\_MACHINE\\SYSTEM
--   HKEY\_LOCAL\_MACHINE\\SOFTWARE
--   HKEY\_LOCAL\_MACHINE\\SAM
--   HKEY\_LOCAL\_MACHINE\\SECURITY
--   HKEY\_LOCAL\_MACHINE\\COMPONENTS
+* HKEY\_LOCAL\_MACHINE\\BCD00000000
+* HKEY\_LOCAL\_MACHINE\\SYSTEM
+* HKEY\_LOCAL\_MACHINE\\SOFTWARE
+* HKEY\_LOCAL\_MACHINE\\SAM
+* HKEY\_LOCAL\_MACHINE\\SECURITY
+* HKEY\_LOCAL\_MACHINE\\COMPONENTS
 
 > [!Note]
 > UWF automatically excludes certain registry keys from being filtered. These registry keys are primarily related to UWF configuration settings and cannot be removed from the exclusion list.
 
- 
-
 For more information about common registry exclusions, see [Common write filter exclusions](uwfexclusions.md).
 
 ## UWF servicing mode
-
 
 When a device is protected with UWF, you must use UWF servicing mode commands to service the device and apply updates to an image. You can use UWF servicing mode to apply Windows updates, antimalware signature file updates, and custom software or third-party software updates.
 
@@ -265,13 +233,11 @@ For more information about how to use UWF servicing mode to apply software updat
 
 ## Troubleshooting UWF
 
-
 UWF uses Windows Event Log to log events, errors and messages related to overlay consumption, configuration changes, and servicing.
 
 For more information about how to find event log information for troubleshooting problems with Unified Write Filter (UWF), see [Troubleshooting Unified Write Filter (UWF)](uwftroubleshooting.md).
 
 ## Related topics
-
 
 [Unbranded Boot](unbranded-boot.md)
 
@@ -280,14 +246,3 @@ For more information about how to find event log information for troubleshooting
 [Shell Launcher](shell-launcher.md)
 
 [Assigned access](assigned-access.md)
-
- 
-
- 
-
-
-
-
-
-
-

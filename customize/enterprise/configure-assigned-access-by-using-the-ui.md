@@ -69,33 +69,33 @@ You can identify the Windows app by one of the following:
 
 At a Windows PowerShell prompt, type the following:
 
-    ```cmd
-    Set-AssignedAccess -AppUserModelId microsoft.windows.photos_8wekyb3d8bbwe!app -UserName <username>
-    ```
+```powershell
+Set-AssignedAccess -AppUserModelId microsoft.windows.photos_8wekyb3d8bbwe!app -UserName <username>
+```
 
 ### Configure assigned access by user name and app name
 
 At a Windows PowerShell prompt, type the following, using the app name and user name:
 
-    ```cmd
-    Set-AssignedAccess -AppName CustomApp -UserName <username>
-    ```
+```powershell
+Set-AssignedAccess -AppName CustomApp -UserName <username>
+```
 
 ### Configure assigned access by user SID and AppUserModelID
 
 At a Windows PowerShell prompt, type the following, using the AppUserModelID and user SID:
 
-    ```cmd
-    Set-AssignedAccess -AppUserModelId microsoft.windows.photos_8wekyb3d8bbwe!app -UserSID S-1-5-21-523423449-2432423479-234123443-1004
-    ```
+```powershell
+Set-AssignedAccess -AppUserModelId microsoft.windows.photos_8wekyb3d8bbwe!app -UserSID S-1-5-21-523423449-2432423479-234123443-1004
+```
 
 ### Configure assigned access by app name and user SID
 
 At a Windows PowerShell prompt, type the following, using the desired app name and user SID:
 
-    ```cmd
-    Set-AssignedAccess -AppName CustomApp  -UserSID S-1-5-21-523423449-2432423479-234123443-1004
-    ```
+```powershell
+Set-AssignedAccess -AppName CustomApp  -UserSID S-1-5-21-523423449-2432423479-234123443-1004
+```
 
 ## <a href="" id="turn-off-aa"></a>Turn off assigned access
 

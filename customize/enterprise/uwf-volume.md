@@ -11,16 +11,13 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # UWF\_Volume
-
 
 This class manages a volume protected by Unified Write Filter (UWF).
 
 ## Syntax
 
-
-```
+```powershell
 class UWF_Volume {
     [key, Read] boolean CurrentSession;
     [key, Read] string DriveLetter;
@@ -44,7 +41,6 @@ class UWF_Volume {
 ```
 
 ## Members
-
 
 The following tables list the methods and properties that belong to this class.
 
@@ -104,8 +100,6 @@ The following tables list the methods and properties that belong to this class.
 </tr>
 </tbody>
 </table>
-
- 
 
 ### <a href="" id="pro"></a>Properties
 
@@ -167,19 +161,17 @@ The following tables list the methods and properties that belong to this class.
 </tbody>
 </table>
 
- 
-
 ### Remarks
 
 You must use an administrator account to change any properties or call any methods that change the configuration settings.
 
-### Example
+### Turn UWF protection on or off
 
 The following example demonstrates how to protect or unprotect a volume with UWF by using the Windows Management Instrumentation (WMI) provider in a PowerShell script.
 
 The PowerShellscript creates a function, **Set-ProtectVolume**, that turns UWF protection on or off for a volume. The script then demonstrates how to use the function.
 
-```
+```powershell
 $COMPUTER = "localhost"
 $NAMESPACE = "root\standardcimv2\embedded"
 
@@ -225,11 +217,10 @@ function Set-ProtectVolume($driveLetter, [bool] $enabled) {
 Set-ProtectVolume "C:" $true
 Set-ProtectVolume "D:" $true
 
-Set-ProtectVolume "C:" $false 
- 
+Set-ProtectVolume "C:" $false
 ```
 
-### Example
+### Manage UWF file and folder exclusions
 
 The following example demonstrates how to manage UWF file and folder exclusions by using the WMI provider in a PowerShell script. The PowerShell script creates four functions, and then demonstrates how to use them.
 
@@ -241,7 +232,7 @@ The third function, **Remove-FileExclusion**, removes a file or folder from the 
 
 The fourth function, **Clear-FileExclusions**, removes all UWF file and folder exclusions from a given volume. The exclusions are removed for the next session that follows a restart.
 
-```
+```powershell
 $COMPUTER = "localhost"
 $NAMESPACE = "root\standardcimv2\embedded"
 
@@ -404,29 +395,13 @@ Get-FileExclusions "C:"
 
 ## Requirements
 
-
-|                       |           |
-|-----------------------|-----------|
 | Windows Edition       | Supported |
+|:----------------------|:----------|
 | Windows 10 Home       | No        |
 | Windows 10 Pro        | No        |
 | Windows 10 Enterprise | Yes       |
 | Windows 10 Education  | Yes       |
 
- 
-
 ## Related topics
 
-
 [Unified Write Filter](unified-write-filter.md)
-
- 
-
- 
-
-
-
-
-
-
-

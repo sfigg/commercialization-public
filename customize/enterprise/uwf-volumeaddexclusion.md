@@ -11,16 +11,13 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # UWF\_Volume.AddExclusion
-
 
 Adds a file or folder to the file exclusion list for a volume protected by Unified Write Filter (UWF).
 
 ## Syntax
 
-
-```
+```powershell
 UInt32 AddExclusion(
     string FileName
 );
@@ -28,52 +25,38 @@ UInt32 AddExclusion(
 
 ## Parameters
 
-
-<a href="" id="filename"></a>*FileName*  
+<a href="" id="filename"></a>*FileName*
 A string that contains the full path of the file or folder relative to the volume.
 
 ## Return Value
-
 
 Returns an HRESULT value that indicates [WMI status](http://go.microsoft.com/fwlink/p/?LinkID=208318) or a [WMI error](http://go.microsoft.com/fwlink/p/?LinkID=208317).
 
 ## Remarks
 
-
 You must use an administrator account to add or remove file or folder exclusions during run time, and you must restart the device for new exclusions to take effect.
 
-**Important**  
-You can’t add exclusions for the following items:
-
--   The volume root. For example, C: or D:.
-
--   The \\Windows folder on the system volume.
-
--   The \\Windows\\System32 folder on the system volume.
-
--   The \\Windows\\system32\\drivers folder on the system volume.
-
--   Paging files.
+> [!Important]
+> You can’t add exclusions for the following items:
+>
+> * The volume root. For example, C: or D:.
+> * The \\Windows folder on the system volume.
+> * The \\Windows\\System32 folder on the system volume.
+> * The \\Windows\\system32\\drivers folder on the system volume.
+> * Paging files.
 
 However, you can exclude subdirectories and files under these items.
 
- 
-
 ## Requirements
 
-
-|                       |           |
-|-----------------------|-----------|
 | Windows Edition       | Supported |
+|:----------------------|:----------|
 | Windows 10 Home       | No        |
 | Windows 10 Pro        | No        |
 | Windows 10 Enterprise | Yes       |
 | Windows 10 Education  | Yes       |
 
- 
-
 ## Related topics
-
 
 [UWF\_Volume](uwf-volume.md)
 

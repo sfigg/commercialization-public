@@ -11,21 +11,16 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # uwfmgr.exe
-
 
 This command-line tool configures and retrieves settings for Unified Write Filter (UWF).
 
-**Important**  
-Users with standard accounts can use commands that retrieve information, but only users who have administrator accounts can use commands that change the configuration settings.
-
- 
+> [!Important]
+> Users with standard accounts can use commands that retrieve information, but only users who have administrator accounts can use commands that change the configuration settings.
 
 ## Syntax
 
-
-```
+```powershell
 uwfmgr.exe
     Help | ?
     Get-Config
@@ -74,11 +69,9 @@ uwfmgr.exe
 
 ## Location
 
-
 **Uwfmgr** can be found under the %WINDIR%\\System32\\ folder.
 
 ## Command-line options and parameters
-
 
 The following table describes the options and suboptions that are available to use in **uwfmgr.exe**, and it lists the corresponding WMI class or method for each command-line option and suboption.
 
@@ -370,31 +363,16 @@ Displays command-line help for the `uwfmgr.exe servicing` command.
 
 N/A
 
- 
-
 ## Unsupported WMI methods
-
 
 The following list contains the UWF WMI provider methods that are not currently supported by the **uwfmgr.exe** tool:
 
--   [UWF\_Overlay.GetOverlayFiles](uwf-overlaygetoverlayfiles.md)
--   [UWF\_RegistryFilter.FindExclusion](uwf-registryfilterfindexclusion.md)
--   [UWF\_Volume.FindExclusion](uwf-volumefindexclusion.md)
--   [UWF\_Volume.RemoveAllExclusions](uwf-volumeremoveallexclusions.md)
--   [UWF\_Volume.SetBindByDriveLetter](uwf-volumesetbindbydriveletter.md)
+* [UWF\_Overlay.GetOverlayFiles](uwf-overlaygetoverlayfiles.md)
+* [UWF\_RegistryFilter.FindExclusion](uwf-registryfilterfindexclusion.md)
+* [UWF\_Volume.FindExclusion](uwf-volumefindexclusion.md)
+* [UWF\_Volume.RemoveAllExclusions](uwf-volumeremoveallexclusions.md)
+* [UWF\_Volume.SetBindByDriveLetter](uwf-volumesetbindbydriveletter.md)
 
 ## Related topics
 
-
 [Unified Write Filter](unified-write-filter.md)
-
- 
-
- 
-
-
-
-
-
-
-

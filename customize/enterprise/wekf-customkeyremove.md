@@ -11,16 +11,13 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # WEKF\_CustomKey.Remove
-
 
 Removes a custom key combination, causing Keyboard Filter to stop blocking the removed key combination.
 
 ## Syntax
 
-
-```
+```powershell
 [Static] uint32 Remove(
     [In] string CustomKey
 );
@@ -28,17 +25,14 @@ Removes a custom key combination, causing Keyboard Filter to stop blocking the r
 
 ## Parameters
 
-
-<a href="" id="customkey"></a>*CustomKey*  
+<a href="" id="customkey"></a>*CustomKey*
 \[in\] The custom key combination to remove.
 
 ## Return Value
 
-
 Returns an HRESULT value that indicates [WMI status](http://go.microsoft.com/fwlink/p/?LinkID=208318) or a [WMI error](http://go.microsoft.com/fwlink/p/?LinkID=208317).
 
 ## Remarks
-
 
 **WEKF\_CustomKey.Remove** removes an existing **WEKF\_CustomKey** object. If the object does not exist, **WEKF\_CustomKey.Remove** returns an error with the value 0x8007007B.
 
@@ -46,10 +40,9 @@ Because this method is static, you cannot call it on an object instance, but mus
 
 ## Example
 
-
 The following code demonstrates how to remove a custom key from Keyboard Filter so it is no longer blocked by using the Windows Management Instrumentation (WMI) providers for Keyboard Filter.
 
-```
+```powershell
 $COMPUTER = "localhost"
 $NAMESPACE = "root\standardcimv2\embedded"
 
@@ -94,31 +87,15 @@ foreach ($objCustomKey in $objDisabledCustomKeys) {
 
 ## Requirements
 
-
-|                       |           |
-|-----------------------|-----------|
 | Windows Edition       | Supported |
+|:----------------------|:----------|
 | Windows 10 Home       | No        |
 | Windows 10 Pro        | No        |
 | Windows 10 Enterprise | Yes       |
 | Windows 10 Education  | Yes       |
 
- 
-
 ## Related topics
-
 
 [WEKF\_CustomKey](wekf-customkey.md)
 
 [Keyboard Filter](keyboardfilter.md)
-
- 
-
- 
-
-
-
-
-
-
-
