@@ -13,6 +13,6 @@ ms.technology: windows-oem
 
 
 #Device Encryption in Windows 10
-This page is retired and will be removed. Please see [Bitlocker device encryption hardware requirements](OEM-device-encryption.md)
+
 
 

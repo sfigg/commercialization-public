@@ -1135,5 +1135,11 @@
         "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/oem-security-considerations", 
         "redirect_document_id": true
     }
+    ,
+    {   
+        "source_path": "design/device-experiences/device-encryption-for-oem.md", 
+        "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/oem-security-considerations", 
+        "redirect_document_id": true
+    }
   ] 
 }
