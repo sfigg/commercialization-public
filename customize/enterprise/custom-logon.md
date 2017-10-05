@@ -40,9 +40,7 @@ The Custom Logon feature is available in the Control Panel. You can set Custom L
 ### Turn on Custom Logon in Control Panel
 
 1. In the **Search the web and Windows** field, type **Turn Windows features on or off**.
-1. For Windows 10, version 1511, in the **Windows Features** box, select **Embedded Logon**.
-
-    For Windows 10, version 1607 and later, in the **Windows Features** window, expand the **Device Lockdown** node, and select or clear the checkbox for **Custom Logon**.
+1. In the **Windows Features** window, expand the **Device Lockdown** node, and select or clear the checkbox for **Custom Logon**.
 
 ### Turn on and configure Custom Logon using DISM
 

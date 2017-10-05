@@ -12,10 +12,10 @@ ms.technology: windows-oem
 ---
 # Customize the Country and Operator Settings Asset
 
-In Windows 10, version 1703, we added the Country and Operator Settings Asset (COSA) database of mobile operator profiles. It is included in Windows 10 as a provisioning package. When a SIM is inserted in a COSA-enabled Windows-based device, the provisioning framework attempts to establish a cellular connection by searching for the matching profile and APN in COSA.
+The Country and Operator Settings Asset (COSA) is a database of mobile operator profiles. It is included in Windows 10 as a provisioning package. When a SIM is inserted in a COSA-enabled Windows-based device, the provisioning framework attempts to establish a cellular connection by searching for the matching profile and APN in COSA.
 
 > [!Note]
-> This feature is only supported in Windows 10, version 1703 for desktop editions (Home, Pro, Enterprise, and Education)
+> This feature is only supported in Windows 10, version 1703 and above for desktop editions (Home, Pro, Enterprise, and Education)
 
 COSA can be extended with OEM-generated provisioning packages during desktop imaging. This enables OEMs to introduce new COSA profiles to the database, as well as replace or extend existing COSA profiles. For example, you can add a profile for a mobile virtual network operator (MVNO) not currently in COSA, or a new partner for Data Marketplace, by creating an answer file that contains the settings. You can also change or remove an existing profile using the `Replace` operator in the existing answer file.
 

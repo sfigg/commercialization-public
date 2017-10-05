@@ -41,8 +41,7 @@ Turning on an off Keyboard Filter requires that you restart your device. Keyboar
 
 1. In the **Search the web and Windows** field, type **Programs and Features** and either press **Enter** or tap or click **Programs and Features** to open it.
 1. In the **Programs and Features** window, click **Turn Windows features on or off**.
-1. For Windows 10, version 1511, in the **Windows Features** box, select or clear the checkbox for **Embedded Keyboard Filter**.
-   For Windows 10, version 1607 and later, in the **Windows Features** window, expand the **Device Lockdown** node, and select or clear the checkbox for **Keyboard Filter**.
+1. In the **Windows Features** window, expand the **Device Lockdown** node, and select or clear the checkbox for **Keyboard Filter**.
 1. Click **OK**. The **Windows Features** window indicates Windows 10 is searching for required files and displays a progress bar. Once found, the window indicates Windows 10 is applying the changes. When completed, the window indicates the requested changes are completed.
 1. Click **Close** to close the **Windows Features** window.
 

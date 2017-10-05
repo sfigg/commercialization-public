@@ -1,6 +1,6 @@
 ---
 title: Set dark mode
-description: Windows 10, build 1607 exposes a new personalization setting for end users, allowing them to express preference whether to see applications which support the setting in a dark or light mode.
+description: Dark mode is a personalization setting for end users, allowing them to express preference whether to see applications which support the setting in a dark or light mode.
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
