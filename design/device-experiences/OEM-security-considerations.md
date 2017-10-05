@@ -20,8 +20,6 @@ As an OEM, you have a unique opportunity to impact the efficacy of the security 
 
 BitLocker device encryption is a set of features that you as an OEM enable by providing the right set of hardware in the devices you sell. Without the proper hardware configuration, device encryption is not enabled. With the right hardware configurations, Windows 10 automatically encrypts a device.
 
-**OEMs:** For more information on what hardware you need to provide to enable device encryption, see [BitLocker device encryption hardware requirements](bitlocker-drive-encryption.md).
-
 ## Hypervisor-protected code integrity (HVCI)
 
 HVCI is a system mitigation service that protects kernel memory and the kernel mode code integrity process. It blocks malware that attempts to exploit kernel memory vulnerabilities (for example, buffer overflows) because kernel memory pages are never writable and executable. HVCI is used by Windows Defender Credential Guard and Windows Defender Device Guard and is required for Virtualization-based Security (VBS). 
@@ -36,7 +34,7 @@ Secure Boot is a security standard developed by members of the PC industry to he
 
 Trusted Platform Module (TPM) technology is designed to provide hardware-based, security-related functions. A TPM chip is a secure crypto-processor that helps you with actions such as generating, storing, and limiting the use of cryptographic keys. The chip includes multiple physical security mechanisms to make it tamper resistant, and malicious software is unable to tamper with the security functions of the TPM. 
 
-**OEMs:** For more information, see [Trusted Plaform Module (TPM) 2.0 hardware requirements](OEM-TPM.md).
+**OEMs:** For more information, see [Trusted Platform Module (TPM) 2.0 hardware requirements](OEM-TPM.md).
 
 **IT Professionals:** To understand how TPM works in your enterprise, see [Trusted Platform Module](https://docs.microsoft.com/en-us/windows/device-security/tpm/trusted-platform-module-top-node)
 
@@ -52,11 +50,11 @@ Hardware-based security features, also called virtualization-based security or V
 
 **OEMs:** For more information about VBS hardware requirements, see [Virtualization Based Security (VBS) hardware requirements](OEM-VBS.md).
 
-## Windows 10S
+## Windows 10 S
 
 Windows 10 S is a specific configuration of Windows 10 Pro that offers a familiar, productive Windows experience that’s streamlined for security and performance. By exclusively using apps in the Windows Store and ensuring that you browse safely with Microsoft Edge, Windows 10 S keeps you running fast and secure day in and day out. The same technology that makes Windows 10 S secure also creates some differences when creating software images for Windows 10 devices.
 
-**OEMs:** For more information about Windows 10S, see [Windows 10S manufacturing overview](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/windows-10-s-overview).
+**OEMs:** For more information about Windows 10 S, see [Windows 10 S manufacturing overview](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/windows-10-s-overview).
 
 ## Windows Defender Application Guard
 
@@ -95,5 +93,3 @@ For information about how Windows Hello works with the Companion Device Framewor
 For information on requirements for supporting Windows Hello, see [Windows Hello biometric requirements](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/windows-hello-biometric-requirements). 
 
 For information about how face authentication works, see [Windows Hello face authentication](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/windows-hello-face-authentication).
-
-
