@@ -22,7 +22,7 @@ Windows 10 supports:
 
 -   Dual Role controllers, which can function as either a USB Host or a USB Device. For example, a phone can connect to a PC as a USB device or it can connect to other USB peripherals as a USB host.
 
--   USB Type C, a new flippable, reversible USB connector approximately the same size as a USB micro-B connector. In addition, USB Type-C introduces new support for the following features:
+-   USB Type C, a flippable, reversible USB connector approximately the same size as a USB micro-B connector. In addition, USB Type-C provides support for the following features:
 
     -   USB 3.1 Gen 2 (10Gb/s)
     -   Power Delivery, enabling devices and systems to provide and consume up to 20V, 5A.
@@ -32,7 +32,7 @@ Windows 10 supports:
 
 -   [Universal drivers](https://msdn.microsoft.com/library/windows/hardware/dn941241.aspx) can be built for USB peripherals that run on all Windows 10 Devices, from Internet-of-Things (IOT) to servers.
 
-Partners are recommended to test these new features by using the [Hardware Lab Kit](https://msdn.microsoft.com/library/windows/hardware/dn930814.aspx) and to visit the [USB Core Team blog](http://blogs.msdn.com/b/usbcoreblog/) for updated info about features and HLK tests, including these posts related to Windows 10:
+Partners are recommended to test these  features by using the [Hardware Lab Kit](https://msdn.microsoft.com/library/windows/hardware/dn930814.aspx) and to visit the [USB Core Team blog](http://blogs.msdn.com/b/usbcoreblog/) for updated info about features and HLK tests, including these posts related to Windows 10:
 
 -   [USB tests in the Windows 10 Hardware Lab Kit (HLK)](http://blogs.msdn.com/b/usbcoreblog/archive/2015/05/15/usb-tests-in-the-windows-10-hardware-lab-kit-hlk.aspx)
 
@@ -42,7 +42,7 @@ Partners are recommended to test these new features by using the [Hardware Lab K
 
 ### USB scenarios for Windows 10 devices
 
-Windows 10 enables hardware vendors to innovate and build great Dual Role and USB Type-C systems. A few examples of the new scenarios enabled by new USB features in Windows 10 are illustrated below:
+Windows 10 enables hardware vendors to innovate and build great Dual Role and USB Type-C systems. A few examples of the scenarios enabled by USB features in Windows 10 are illustrated below:
 
 -   Replace proprietary docking connectors with industry standard USB Type-C connector
 
@@ -69,7 +69,7 @@ Figure 2 Example of new USB scenarios for a Windows 10 Mobile device
 -   In general, USB should “just work” with minimal user interaction.
 -   Hardware/firmware is expected to make the initial policy decisions introduced with the Dual Role, Power Delivery, and Alternate Mode features.
 -   Windows will make policy adjustments to improve the user experience and help the user to troubleshoot issues if things go wrong.
--   Partners should ensure their new USB hardware (such as systems, hubs, cables, or accessories) can interoperate with other new USB hardware coming to or already on the market. We encourage participation in USB-IF-hosted interoperability and compliance events.
+-   Partners should ensure their USB hardware (such as systems, hubs, cables, or accessories) can interoperate with other USB hardware coming to or already on the market. We encourage participation in USB-IF-hosted interoperability and compliance events.
 -   We recommend supporting the DisplayPort Alternate Mode for outputting video/audio over USB Type-C.
 -   For systems with multiple USB ports that have different USB capabilities, we recommend making it clear to the customer which ports have which capabilities. For example, an icon imprinted next to the USB port can be used to show that the port supports Alternate Modes and Power Delivery.
 -   Partners should follow the latest ACPI spec for how to properly describe their USB ports, such as the \_UPC and \_PLD methods.

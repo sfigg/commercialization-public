@@ -15,14 +15,13 @@ ms.technology: windows-oem
 # Display
 
 
-## What's new in Windows 10 for Display
-
+## Guidelines
 
 This topic covers guidelines for Display components in Windows 10.
 
 ### Scaling
 
--   Unified scaling system. Scaling has been unified between most frameworks and between SKUs. New scale factors are: 100%, 125%, 150%, 200%, 250%, 300%, 400%, and 500%. The following will all use these scale factors:
+-   Unified scaling system. Scaling has been unified between most frameworks and between SKUs. Windows 10 scale factors are: 100%, 125%, 150%, 200%, 250%, 300%, 400%, and 500%. The following will all use these scale factors:
 
     -   Windows 10 Universal apps (UAPs)
     -   DPI-aware Win32 apps (asset quality dependent on app)
@@ -35,7 +34,7 @@ This topic covers guidelines for Display components in Windows 10.
 
 ### Touch requirements
 
-The following table lists new features related to touch.
+The following table lists Windows 10 features related to touch.
 
 <table>
 <tbody valign="top">
@@ -170,7 +169,7 @@ Most touch tests are identical to the existing test for Windows 8.1, with upgra
 
     -   Precision Touch Testing Tool (PT3)
     -   Rotational Acoustic Tool (RA)
--   New accessory jigs to enable Touch testing:
+- Windows 10 accessory jigs to enable Touch testing:
 
     -   7mm slugs
     -   16mm slug
