@@ -217,18 +217,18 @@ The following test setup using toolchain components shall be used to evaluate a 
 <table  >
   <tr>
     <th  ></th>
-    <th  >HMD</th>
-    <th  >All Other Devices</th>
+    <th align="center" >HMD</th>
+    <th align="center" >All Other Devices</th>
   </tr>
   <tr>
     <td  >Device Position*</td>
-    <td  >HMD Test Position  </td>
-    <td  >Near Field 0.8m Test Position</td>
+    <td align="center" >HMD Test Position  </td>
+    <td align="center" >Near Field 0.8m Test Position</td>
   </tr>
   <tr>
     <td  > Playback Stimulus Level </td>
-    <td  > 89 dBA @ MRP </td>
-    <td  >62 dBA @ DUT Position    </td>
+    <td align="center" > 89 dBA @ MRP </td>
+    <td align="center" >62 dBA @ DUT Position    </td>
   </tr>
   <tr>
     <td  >Playback Stimulus   </td>
@@ -340,18 +340,18 @@ The following test setup using toolchain components shall be used to evaluate a 
 <table  >
   <tr>
     <th  ></th>
-    <th  >HMD</th>
-    <th  >All Other Devices</th>
+    <th align="center" >HMD</th>
+    <th align="center" >All Other Devices</th>
   </tr>
   <tr>
     <td  >Device Position*</td>
-    <td  >HMD Test Position  </td>
-    <td  >Near Field 0.8m Test Position</td>
+    <td align="center" >HMD Test Position  </td>
+    <td align="center" >Near Field 0.8m Test Position</td>
   </tr>
   <tr>
     <td  > Playback Stimulus Level </td>
-    <td  > 89 dBA @ MRP </td>
-    <td  >62 dBA @ DUT Position    </td>
+    <td align="center" > 89 dBA @ MRP </td>
+    <td align="center" >62 dBA @ DUT Position    </td>
   </tr>
   <tr>
     <td  >Playback Stimulus   </td>
@@ -461,18 +461,18 @@ Minimizing echo coupling of hardware is necessary to ensure optimal performance 
 <table  >
   <tr>
     <th  ></th>
-    <th  >HMD</th>
-    <th  >All Other Devices</th>
+    <th align="center" >HMD</th>
+    <th align="center" >All Other Devices</th>
   </tr>
   <tr>
     <td  >Device Position*</td>
-    <td  >HMD Test Position  </td>
-    <td  >Near Field 0.8m Test Position</td>
+    <td align="center" >HMD Test Position  </td>
+    <td align="center" >Near Field 0.8m Test Position</td>
   </tr>
   <tr>
     <td  > Playback Stimulus Level </td>
-    <td  >76 dBA @ LRP (if mono) <br>70 dBA @ LRP (if stereo)  </td>
-    <td  >70 dBA @ 0.8m   </td>
+    <td align="center" >76 dBA @ LRP (if mono) <br>70 dBA @ LRP (if stereo)  </td>
+    <td align="center" >70 dBA @ 0.8m   </td>
   </tr>
   <tr>
     <td  >Playback Stimulus   </td>
@@ -719,18 +719,18 @@ The following test setup using toolchain components shall be used to evaluate a 
 <table  >
   <tr>
     <th  ></th>
-    <th  >HMD</th>
-    <th  >All Other Devices</th>
+    <th align="center" >HMD</th>
+    <th align="center" >All Other Devices</th>
   </tr>
   <tr>
     <td  >Device Position*</td>
-    <td  >HMD Test Position  </td>
-    <td  >Near Field 0.8m Test Position</td>
+    <td align="center" >HMD Test Position  </td>
+    <td align="center" >Near Field 0.8m Test Position</td>
   </tr>
   <tr>
     <td  > Playback Stimulus Level </td>
-    <td  >89 dBA @ MRP    </td>
-    <td  >62 dBA @ DUT Position    </td>
+    <td align="center" >89 dBA @ MRP    </td>
+    <td align="center"  >62 dBA @ DUT Position    </td>
   </tr>
   <tr>
     <td  >Playback Stimulus   </td>
@@ -782,18 +782,18 @@ Echo performance is critical to function under music or content playback scenari
 <table  >
   <tr>
     <th  ></th>
-    <th  >HMD</th>
-    <th  >All Other Devices</th>
+    <th align="center" >HMD</th>
+    <th align="center" >All Other Devices</th>
   </tr>
   <tr>
     <td  >Device Position*</td>
-    <td  >HMD Test Position  </td>
-    <td  >Near Field 0.8m Test Position</td>
+    <td align="center" >HMD Test Position  </td>
+    <td align="center" >Near Field 0.8m Test Position</td>
   </tr>
   <tr>
     <td  > Playback Stimulus Level </td>
-    <td  >76 dBA @ LRP (if mono) <br><br> 70 dBA @ LRP (if stereo)  </td>
-    <td  > 70 dBA @ 0.8m     </td>
+    <td align="center" >76 dBA @ LRP (if mono) <br><br> 70 dBA @ LRP (if stereo)  </td>
+    <td align="center" > 70 dBA @ 0.8m     </td>
   </tr>
   <tr>
     <td  >Playback Stimulus   </td>
@@ -836,23 +836,23 @@ In general, the following recommendations hold with the caveat that other system
 <table  >
   <tr>
     <th  ></th>
-    <th  >HMD</th>
-    <th  >All Other Devices</th>
+    <th align="center" >HMD</th>
+    <th align="center" >All Other Devices</th>
   </tr>
   <tr>
     <td  >Device Position*</td>
-    <td  >HMD Test Position  </td>
-    <td  >Near Field 0.8m Test Position</td>
+    <td align="center" >HMD Test Position  </td>
+    <td align="center" >Near Field 0.8m Test Position</td>
   </tr>
   <tr>
     <td  > Talker Stimulus Level </td>
-    <td  >89 dBA @ MRP    </td>
-    <td  > 62 dBA @ DUT Position        </td>
+    <td align="center" >89 dBA @ MRP    </td>
+    <td align="center" > 62 dBA @ DUT Position        </td>
   </tr>
   <tr>
     <td  > Noise Stimulus Level </td>
-    <td  >70 dBA @ LRP   </td>
-    <td  > 57 dBA @ DUT Position    </td>
+    <td align="center" >70 dBA @ LRP   </td>
+    <td align="center" > 57 dBA @ DUT Position    </td>
   </tr>
   <tr>
     <td  >Playback Stimulus   </td>
