@@ -9,52 +9,32 @@ ms.assetid: 586b1f36-87c6-4473-bcfa-c5330d4e885c
 
 # Device.Network tests
 
-*Microsoft will be accepting 802.11ad WDI drivers for HLK certification for the
-Windows 10 Fall Creators Update (1709) to facilitate broad distribution and
-testing among Windows Insiders and ecosystem partners.*
+>[!NOTE]
+>Microsoft will be accepting 802.11ad WDI drivers for HLK certification for the Windows 10 Fall Creators Update (1709) to facilitate broad distribution and testing among Windows Insiders and ecosystem partners.
+>
+>However, due to the lack of broad testing of 802.11ad WDI functionality, this feature is enabled as a Developer Preview for the Windows 10, version 1709 release. If a problem is encountered with 802.11ad functionality, please contact your 802.11ad IHV partner for support assistance.   Microsoft is committed to supporting 802.11ad Wi-Fi connectivity in a future version of Windows 10 in order to enable wireless docking and other scenarios. 
+>
+>The affected tests are:
+>-   [Wlan Test - Attempt a connection to a non-existent network](2c57ac94-f46e-4e40-9e23-ae6b0a397542.md)
+>-   [Wlan Test - Connect to a WPA2 PSK AES AP](93197ac8-e6b8-4c2e-8252-b8afead392a8.md)
+>-   [Wlan Test - Connect to a WPA2 PSK AES AP with Sleep cycle](2ae2cb26-ea04-4def-8e07-ae7b92e61e1b.md)
+>-   [Wlan Test - Enable and Disable WFD Autonomous GO](24f9bc8e-591d-4fa0-8dfd-735369428379.md)
+>-   [Wlan Test - Query All Reported Oids](26568a8c-39cb-46ef-b8b8-e1bc835b05c1.md)
+>-   [Wlan Test - Query Interface Properties](38099fc3-b893-4165-9727-5d4ce70d479e.md)
+>-   [Wlan Test - Scan for Networks](65eac5b5-219f-459a-a8be-b53b96d96a28.md)
+>-   [Wlan Test - Toggle airplane mode](1559752d-39a8-4b28-a79f-13eff48dc06d.md)
+>-   [Wlan Test - Wlan Device Capabilities Check](1949bd77-a684-463f-9512-6812657b8706.md)
+>-   [Wlan Test - Wlan Device enumeration](78796efa-d844-4ccb-ab95-5bc54f002410.md)
+>-   [Wlan Test - Wlan Device Reset Check](ab3df3e5-1f37-46e4-9da9-a9663c803fb5.md)
+>-  [Wi-Fi Direct Basic Discovery Tests - Functional](430878d3-71d3-4458-bd54-6a487f18219b.md)
+>-   [Wi-Fi Direct Basic Pairing Tests - Functional](994ab513-08bd-4c1e-ab48-e5ea2dc06610.md)
+>-   [Wi-Fi Direct Basic Reconnect Tests - Functional](04b9a237-7d06-4bea-ae5b-7d425117e132.md)
+>-   [Wi-Fi Direct Legacy Pairing Tests - Functional](312172a5-69f5-4db3-8802-b29866cdb355.md)
+>-   [Wi-Fi Direct Service Discovery Tests - Functional](7ef01b28-b321-4683-b000-9135a1e0c8cf.md)
+>-   [Wi-Fi Direct Service Pairing and Reconnect Tests - Functional](d679f2e5-8338-4047-aaf0-aca975d06bb7.md)
 
-*However, due to the lack of broad testing of 802.11ad WDI functionality, this
-feature is enabled as a “developer preview” for the Windows 10, version 1709
-release. If a problem is encountered with 802.11ad functionality, please contact
-your 802.11ad IHV partner for support assistance.   Microsoft is committed to
-supporting 802.11ad Wi-Fi connectivity in a future version of Windows 10 in
-order to enable wireless docking and other scenarios.  *
 
-*The affected tests are*
-
--   *Wlan Test - Attempt a connection to a non-existent network*
-
--   *Wlan Test - Connect to a WPA2 PSK AES AP*
-
--   *Wlan Test - Connect to a WPA2 PSK AES AP with Sleep cycle*
-
--   *Wlan Test - Enable and Disable WFD Autonomous GO*
-
--   *Wlan Test - Query All Reported Oids*
-
--   *Wlan Test - Query Interface Properties*
-
--   *Wlan Test - Scan for Networks*
-
--   *Wlan Test - Toggle airplane mode*
-
--   *Wlan Test - Wlan Device Capabilities Check*
-
--   *Wlan Test - Wlan Device enumeration*
-
--   *Wlan Test - Wlan Device Reset Check*
-
--   *Wi-Fi Direct Basic Discovery Tests - Functional*
-
--   *Wi-Fi Direct Basic Pairing Tests - Functional*
-
--   *Wi-Fi Direct Basic Reconnect Tests - Functional*
-
--   *Wi-Fi Direct Legacy Pairing Tests - Functional*
-
--   *Wi-Fi Direct Service Discovery Tests - Functional*
-
--   *Wi-Fi Direct Service Pairing and Reconnect Tests - Functional*
+ 
 
 -   [CopyFile Client to Server LOGO test](b3f5859d-e47a-41da-9355-b4e11bbfc894.md)
 -   [CopyFile Server to Client LOGO test](2ea2f846-dc37-4d4c-90c8-d23e620cb02c.md)
