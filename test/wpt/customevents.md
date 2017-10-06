@@ -14,24 +14,21 @@ ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-# CustomEvents
 
+# CustomEvents
 
 Represents a collection of custom events.
 
+
 ## Element Hierarchy
 
+* \<[WindowsPerformanceRecorder](windowsperformancerecorder.md)\>
+  * \<[TraceMergeProperties](tracemergeproperties.md)\>
+    * \<[TraceMergeProperty](tracemergeproperty.md)\>
+      * \<**CustomEvents**\>
 
-&lt;[WindowsPerformanceRecorder](windowsperformancerecorder.md)&gt;
-
-     &lt;[TraceMergeProperties](tracemergeproperties.md)&gt;
-
-          &lt;[TraceMergeProperty](tracemergeproperty.md)&gt;
-
-               &lt;**CustomEvents**&gt;
 
 ## Syntax
-
 
 ```
 <CustomEvents Operation = "Set" | "Add"
@@ -42,19 +39,13 @@ Represents a collection of custom events.
 </CustomEvents>
 ```
 
+
 ## Attributes and Elements
 
 
 ### Attributes
 
 <table>
-<colgroup>
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-</colgroup>
 <thead>
 <tr class="header">
 <th>Attribute</th>
@@ -80,59 +71,22 @@ Represents a collection of custom events.
 </tbody>
 </table>
 
- 
 
 ### Child Elements
 
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-<th>Description</th>
-<th>Requirement</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>[CustomEvent](customevent.md)</p></td>
-<td><p>Represents a custom event.</p></td>
-<td><p>Required, one or more.</p></td>
-</tr>
-</tbody>
-</table>
+| Element                       | Description                | Requirement            |
+|:------------------------------|:---------------------------|:-----------------------|
+| [CustomEvent](customevent.md) | Represents a custom event. | Required, one or more. |
 
- 
 
 ### Parent Elements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>[TraceMergeProperty](tracemergeproperty.md)</p></td>
-<td><p>Contains configurations that are applied when event trace log (ETL) files from multiple profiles are merged.</p></td>
-</tr>
-</tbody>
-</table>
+| Element                                     | Description                                                                                                  |
+|:--------------------------------------------|:-------------------------------------------------------------------------------------------------------------|
+| [TraceMergeProperty](tracemergeproperty.md) | Contains configurations that are applied when event trace log (ETL) files from multiple profiles are merged. |
 
- 
 
 ## Example
-
 
 The following code example shows how this element is used.
 
@@ -161,18 +115,8 @@ The following code example shows how this element is used.
 </TraceMergeProperty>
 ```
 
+
 ## Related topics
 
-
 [Elements](elements.md)
-
- 
-
- 
-
-
-
-
-
-
 
