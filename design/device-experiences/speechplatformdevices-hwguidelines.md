@@ -1,4 +1,4 @@
-# Speech Platform Input Device Hardware Guidelines
+# Speech Platform: Input Device Hardware Guidelines
 
 ![logo](../images/logo-cortana.png)
 
@@ -38,7 +38,7 @@ For a comprehensive list of relevant terms, reference (ITU-p.10): <https://www.i
 | **Capture (or Send)**   | The input (near-end) speech signal                                                                                                                                                                                           |
 | **dB SPL**              | Decibel sound pressure level = <img src="../images/speechplatformequation14.png" alt="Speech platform equation" /> where *p*<sub>ref</sub> = 20 micropascal. 1 Pa corresponds to 94 dBSPL                                                         |
 | **dBFS (or dBov)**      | Decibel full scale = <img src="../images/speechplatformequation15.png" alt="Speech platform equation" /> where *S**r**e**f* =  the RMS of a full scale digital sine wave. <br>The signal level of a digital signal relative to its overload or maximum level is given by dBov. This is also commonly referred to as dBFS (Full Scale).  <br>For example, a rectangular function with only the positive or negative maximum number has a level of 0 dBov; For a maximum scale digital sine signal the peak level is 0 dBov and RMS is -3.01 dBov. (ITU-T G.100.1).         |
-| **DI**                  | Directivity Index ([Appendix](#_Directivity_Index) A)                                                                                                                                                                        |
+| **DI**                  | Directivity Index (For more information, see [Directivity Index](speechplatformdevicesrecommendations.md#directivity-index) in Speech Platform: InputDevice Recommendations)                                                                                                                                                                       |
 | **DRC**                 | Dynamic Range Compression                                                                                                                                                                                                    |
 | **DSP**                 | Digital Signal Processing                                                                                                                                                                                                    |
 | **DUT**                 | Device Under Test                                                                                                                                                                                                            |
@@ -51,8 +51,8 @@ For a comprehensive list of relevant terms, reference (ITU-p.10): <https://www.i
 | **IIR**                 | Infinite Impulse Response                                                                                                                                                                                                    |
 | **LRP**                 | Listener Reference Point. A generic term representing the location at which the acoustic output from the receiver is to be determined or specified.                                                                          |
 | **MRP**                 | Mouth Reference Point is a point 25mm in front of the lip plane of the artificial mouth. This is a point where the speech level is calibrated before measurements for normal, loud and quiet speech                          |
-| **NG**                  | Ambient Noise Gain ([Appendix](#_Ambient_Noise_Gain) A)                                                                                                                                                                      |
-| **NGA**                 | A-Weighted Ambient Noise Gain ([Appendix](#_A-Weighted_Ambient_Noise) A)                                                                                                                                                     |
+| **NG**                  | Ambient Noise Gain  (For more information, see [ Ambient Noise Gain](speechplatformdevicesrecommendations.md#ambient-noise-gain)                                                                                                                                                           |
+| **NGA**                 | A-Weighted Ambient Noise Gain  (For more information, see [A-Weighted Ambient Noise Gain](speechplatformdevicesrecommendations.md#a-weighted-ambient-noise-gain) in Speech Platform: InputDevice Recommendations)                                                                                                                                                                                    |
 | **Narrowband**          | Speech signal with a nominal pass-band of 300-3400 Hz (ITU-p.10 N-3)                                                                                                                                                         |
 | **Render (or Receive)** | The output (far-end) speech and/or other rendered audio signal                                                                                                                                                               |
 | **SLR**                 | Send Loudness Rating                                                                                                                                                                                                         |
@@ -65,7 +65,7 @@ For a comprehensive list of relevant terms, reference (ITU-p.10): <https://www.i
 
 The Speech Platform powers all of the speech experiences in Windows 10 such as Cortana and Dictation.
 
-This document provides engineering recommendations in order to guide the design of speech input devices to meet the system performance criteria specified in the ***Speech Platform – Input Device Recommendations*** specification.
+This document provides engineering recommendations in order to guide the design of speech input devices to meet the system performance criteria specified in the [Speech Platform: Input Device Recommendations](speechplatformdevicesrecommendations.md) specification.
 
 Engineering recommendations provided account for the following subsystems:
 
@@ -73,7 +73,7 @@ Engineering recommendations provided account for the following subsystems:
 
 2.  Custom (i.e. non-Microsoft) Speech Enhancement Algorithms
 
-The scope of engineering recommendations are limited to a common set of typical user scenarios that are evaluated in the ***Speech Platform – Input Devices Recommendations*** specification. As some devices may have unique product use cases or scenarios, device manufacturers may elect to apply these engineering recommendations to them.
+The scope of engineering recommendations are limited to a common set of typical user scenarios that are evaluated in the [Speech Platform: Input Device Recommendations](speechplatformdevicesrecommendations.md) specification. As some devices may have unique product use cases or scenarios, device manufacturers may elect to apply these engineering recommendations to them.
 
 Good component selection, acoustic design, and mechanical integration is important to capture the best possible audio to give a good experience rather than relying on the speech enhancement pipeline. Passing the engineering recommendations does not necessarily guarantee passing system performance criteria (i.e. Speech Accuracy and Voice Activation/KWS), but strongly increases the likelihood of doing so.
 
@@ -131,7 +131,7 @@ In general, follow these guidelines for placing the microphone array:
 
 To enable the acoustic echo canceller to work well the device speakers should be placed at a maximum distance from the microphones, or place directivity nulls towards loudspeakers.
 
-NOTE: Meeting the HW recommendations does not *assure* end-to-end system performance, but is strongly encouraged based on best practices and measurements of ecosystem devices that do provide a good speech experience. It may be possible to pass hardware guidelines but not pass the ***Speech Platform Input Device Recommendations*** due to limitations of signal processing algorithms or non-optimal tuning. It may also be possible to pass the ***Speech Platform Input Device Recommendations,*** yet not meet the guidelines provided in this document.
+NOTE: Meeting the HW recommendations does not *assure* end-to-end system performance, but is strongly encouraged based on best practices and measurements of ecosystem devices that do provide a good speech experience. It may be possible to pass hardware guidelines but not pass the [Speech Platform: Input Device Recommendations](speechplatformdevicesrecommendations.md) due to limitations of signal processing algorithms or non-optimal tuning. It may also be possible to pass the [Speech Platform: Input Device Recommendations](speechplatformdevicesrecommendations.md), yet not meet the guidelines provided in this document.
 
 ### Microphone Array Guidelines for Near and Far Field Devices
 
@@ -141,9 +141,9 @@ The Microsoft speech pipeline is also capable of working with custom array types
 
 <table class="tg">
   <tr>
-    <th >**Application** </th>
-    <th >**Recommended Solution(s)** </th>
-    <th >**Guidelines** </th>
+    <th >Application</th>
+    <th >Recommended Solution(s)</th>
+    <th >Guidelines</th>
   </tr>
  <tr>
     <td >Near-Field Device</td>
@@ -224,7 +224,7 @@ The following test setup using toolchain components shall be used to evaluate a 
 | Mic Array Input Level   | 0 dB                                         |
 | Capture Mode            | RAW (i.e. per RawRecordings.cmd)             |
 
-\**Per test setup diagrams in Speech Platform Input Device Test Setup v3*
+\**Per test setup diagrams in Speech Platform: InputDevice Test Setup v3*
 
 **Test Procedure:**
 
@@ -319,7 +319,7 @@ The following test setup using toolchain components shall be used to evaluate a 
 | Mic Array Input Level   | Default Mic Gain                                             |
 | Capture Mode            | RAW (i.e. per RawRecordings.cmd)                             |
 
-\**Per test setup diagrams in Speech Platform Input Device Test Setup v3*
+\**Per test setup diagrams in Speech Platform: InputDevice Test Setup v3*
 
 **Test Procedure:**
 
@@ -413,7 +413,7 @@ Minimizing echo coupling of hardware is necessary to ensure optimal performance 
 | Mic Array Input Level   | Default Mic Gain                             |
 | Capture Mode            | RAW (i.e. per RawRecordings.cmd)             |
 
-\**Per test setup diagrams in Speech Platform Input Device Test Setup v3*
+\**Per test setup diagrams in Speech Platform: InputDevice Test Setup v3*
 
 **Test Procedure:**
 
@@ -481,7 +481,7 @@ The following test setup using toolchain components shall be used to evaluate a 
 | Playback Stimulus Level | 70 dBA @ HATS Ear DRP (Diffuse Field Equalization)               |
 | Playback Stimulus       | EchoCalibration.wav from Toolchain, via device earpiece speakers |
 
-\**Per test setup diagrams in Speech Platform Input Device Test Setup v3*
+\**Per test setup diagrams in Speech Platform: InputDevice Test Setup v3*
 
 **Test Procedure:**
 
@@ -521,7 +521,7 @@ The following test setup using toolchain components shall be used to evaluate a 
 | Playback Stimulus Level | 70 dBA @ HATS Ear DRP (Diffuse Field Equalization)               |
 | Playback Stimulus       | EchoCalibration.wav from Toolchain, via device earpiece speakers |
 
-\**Per test setup diagrams in Speech Platform Input Device Test Setup v3*
+\**Per test setup diagrams in Speech Platform: InputDevice Test Setup v3*
 
 **Test Procedure:**
 
@@ -559,7 +559,7 @@ The following test setup using toolchain components shall be used to evaluate a 
 | Playback Stimulus Level | Any device volume control setting to achieve requirement         |
 | Playback Stimulus       | EchoCalibration.wav from Toolchain, via device earpiece speakers |
 
-\**Per test setup diagrams in Speech Platform Input Device Test Setup v3*
+\**Per test setup diagrams in Speech Platform: InputDevice Test Setup v3*
 
 **Test Procedure:**
 
@@ -595,7 +595,7 @@ The following test setup using toolchain components shall be used to evaluate a 
 | Playback Stimulus Level | Device volume level at setting where EchoCalibration measures 70 dBA @ HATS Ear DRP (Diffuse Field Equalization) |
 | Playback Stimulus       | None                                                                                                             |
 
-\**Per test setup diagrams in Speech Platform Input Device Test Setup v3*
+\**Per test setup diagrams in Speech Platform: InputDevice Test Setup v3*
 
 **Test Procedure:**
 
@@ -654,7 +654,7 @@ The following test setup using toolchain components shall be used to evaluate a 
 | Mic Array Input Level   | 0 dB                                         |
 | Capture Mode            | SPEECH (i.e. per SpeechRecordings.cmd)       |
 
-\**Per test setup diagrams in Speech Platform Input Device Test Setup v3*
+\**Per test setup diagrams in Speech Platform: InputDevice Test Setup v3*
 
 **Test Procedure:**
 
@@ -697,7 +697,7 @@ Echo performance is critical to function under music or content playback scenari
 | Mic Array Input Level   | Default Mic Gain                             |
 | Capture Mode            | SPEECH (i.e. per RawRecordings.cmd)          |
 
-\**Per test setup diagrams in Speech Platform Input Device Test Setup v3*
+\**Per test setup diagrams in Speech Platform: InputDevice Test Setup v3*
 
 **Test Procedure:**
 
@@ -728,7 +728,7 @@ In general, the following recommendations hold with the caveat that other system
 | Mic Array Input Level | Default Mic Gain                                                            |
 | Capture Mode          | SPEECH (i.e. per SpeechRecordings.cmd)                                      |
 
-\**Per test setup diagrams in Speech Platform Input Device Test Setup v3*
+\**Per test setup diagrams in Speech Platform: Input Device Test Setup v3*
 
 **Test Procedure:**
 
