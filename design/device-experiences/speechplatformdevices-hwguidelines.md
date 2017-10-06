@@ -517,12 +517,9 @@ Devices with built in capture and render paths can negate this relative drift by
 |------------------------|---------------------|
 | **HW-10: Clock Drift** | &lt; 1ms per Minute |
 
-**
-**
-
 ### HW-11 Clock Jitter
 
-Similar to ***HW-10 Clock Drift***, ensuring low jitter is necessary to achieve sufficient performance with beamforming, sound source localization, and echo cancellation algorithms.
+Similar to [HW-10 Clock Drift](#hw-10-clock-drift), ensuring low jitter is necessary to achieve sufficient performance with beamforming, sound source localization, and echo cancellation algorithms.
 
 We define jitter as the absolute range of observed samples (or reported timestamps) about the nominal sample (or timestamp).
 
@@ -667,7 +664,7 @@ The following test setup using toolchain components shall be used to evaluate a 
 |                         | **HMD (Windows Mixed Reality device)**                                                                           |
 |-------------------------|------------------------------------------------------------------------------------------------------------------|
 | Device Position\*       | HMD Test Position                                                                                                |
-| Playback Stimulus Level | Device volume level at setting where EchoCalibration measures 70 dBA @ HATS Ear DRP (Diffuse Field Equalization) |
+| Playback Stimulus Level | Device volume level at setting where EchoCalibration measures 70 dBA <br>@ HATS Ear DRP (Diffuse Field Equalization) |
 | Playback Stimulus       | None                                                                                                             |
 
 \**Per test setup diagrams in  [Speech Platform: Input Device Test Setup](speechplatformdevicestestsetup.md)*
