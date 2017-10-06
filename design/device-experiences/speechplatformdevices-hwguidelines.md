@@ -17,7 +17,7 @@
 
 ![](../images/logo-lca.gif)
 
-## Section 0 | Document
+## Section 0 | DISCLAIMER
 
 **Disclaimer: This document is provided “as-is”. Information and views expressed in this document, including URL and other Internet website references, may change without notice. Some information relates to pre-released products which may be substantially modified before commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here. You bear the risk of using it.**
 
@@ -27,7 +27,7 @@ All recommendations and criteria within this document are approximate guidelines
 
 ### Definitions
 
-For a comprehensive list of relevant terms, reference (ITU-p.10): <https://www.itu.int/rec/T-REC-P.10-200607-I/en>
+For a comprehensive list of relevant terms, [reference (ITU-p.10)](https://www.itu.int/rec/T-REC-P.10-200607-I/en)
 
 | **TITLE**               | **DEFINITION**                                                                                                                                                                                                               |
 |-------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -57,11 +57,11 @@ For a comprehensive list of relevant terms, reference (ITU-p.10): <https://www.i
 | **Render (or Receive)** | The output (far-end) speech and/or other rendered audio signal                                                                                                                                                               |
 | **SLR**                 | Send Loudness Rating                                                                                                                                                                                                         |
 | **TCLw**                | Terminal Coupling Loss (weighted)                                                                                                                                                                                            |
-| **THD+N**               | Total Harmonic Distortion including Noise = <img src="../images/speechplatformequation1.png" alt="SpeechPlatformEquation1" />                                                                                                                             |
+| **THD+N**               | Total Harmonic Distortion including Noise = <img src="../images/speechplatformequation1.png" alt="SpeechPlatformEquation1" /> <br> *where the "—" is accomplished via notch filtering*                                                                                                                 |
 | **Wide-band**           | Speech signal with a nominal pass-band of 100-7000 Hz (ITU-p.10 W-3)                           |
 | **f**<sub>**0**</sub>    | Fundamental frequency                                                                                                                                                                                                        |
 
-## Section 1 | Purpose
+## Section 1 | PURPOSE
 
 The Speech Platform powers all of the speech experiences in Windows 10 such as Cortana and Dictation.
 
@@ -81,7 +81,10 @@ Passing the Send and Receive test criteria in [Skype for Business Audio Specific
 
 ### Performance Levels
 
-Functional guidelines are split into two levels – Standard and Premium. This distinction is made to acknowledge that there are a range of devices targeting speech functionality, spanning price targets and operational envelopes. Microsoft recommends that all devices target Premium guidelines when specified.[1]
+Functional guidelines are split into two levels – Standard and Premium. This distinction is made to acknowledge that there are a range of devices targeting speech functionality, spanning price targets and operational envelopes. Microsoft recommends that all devices target Premium guidelines when specified.
+
+>[!NOTE]
+>A device must meet Premium recommendations in all categories in order to be considered a Premium device. The Premium and Standard categories are not part of a Logo program – rather informed best practices and guidelines.
 
 **Premium**
 
@@ -131,7 +134,8 @@ In general, follow these guidelines for placing the microphone array:
 
 To enable the acoustic echo canceller to work well the device speakers should be placed at a maximum distance from the microphones, or place directivity nulls towards loudspeakers.
 
-NOTE: Meeting the HW recommendations does not *assure* end-to-end system performance, but is strongly encouraged based on best practices and measurements of ecosystem devices that do provide a good speech experience. It may be possible to pass hardware guidelines but not pass the [Speech Platform: Input Device Recommendations](speechplatformdevicesrecommendations.md) due to limitations of signal processing algorithms or non-optimal tuning. It may also be possible to pass the [Speech Platform: Input Device Recommendations](speechplatformdevicesrecommendations.md), yet not meet the guidelines provided in this document.
+>[!NOTE] 
+>Meeting the HW recommendations does not *assure* end-to-end system performance, but is strongly encouraged based on best practices and measurements of ecosystem devices that do provide a good speech experience. It may be possible to pass hardware guidelines but not pass the [Speech Platform: Input Device Recommendations](speechplatformdevicesrecommendations.md) due to limitations of signal processing algorithms or non-optimal tuning. It may also be possible to pass the [Speech Platform: Input Device Recommendations](speechplatformdevicesrecommendations.md), yet not meet the guidelines provided in this document.
 
 ### Microphone Array Guidelines for Near and Far Field Devices
 
@@ -172,9 +176,6 @@ The Microsoft speech pipeline is also capable of working with custom array types
 </table>
 
 
-
-
-
 ### Microphone Array Guidelines for HMDs
 
 Microphone arrays enable the speech enhancement pipeline to remove localized noise. The following array geometries are recommended for devices using the in-box Microsoft speech enhancement pipeline.
@@ -199,16 +200,13 @@ For laptop or similar form-factor devices that wish to provide support for speec
 
     2.  Introduce non-linearities, affecting echo canceller performance due to structural vibration or compression while lid is closed
 
-**
-**
-
 ### HW-1 Mic Level
 
 Speech must be provided to the Microsoft in-box pipeline at a sufficient digital FS level in order to achieve satisfactory performance. Clipping (resulting in loss of information) during input stages must be avoided to optimize performance.
 
 | Recommendation       | **Standard**              | **Premium**               |
 |----------------------|---------------------------|---------------------------|
-| **HW-1: Mic Level ** | ≥ -46 dBFS, no overload\* | ≥ -36 dBFS, no overload\* |
+| **HW-1: Mic Level** | ≥ -46 dBFS, no overload\* | ≥ -36 dBFS, no overload\* |
 
 \**Peak levels may be higher than 0dBFS in 32-bit (float) input devices; however, ensure that no destructive clipping/overload occurs in prior gain stages.*
 
@@ -236,7 +234,9 @@ The following test setup using toolchain components shall be used to evaluate a 
 
 4.  Initiate a continuous 30s recording of the stimulus file in RAW mode:
 
-> ***AudioToolbox.exe -Dur 30 -MicRaw Mic.wav***
+    ```syntax
+    AudioToolbox.exe -Dur 30 -MicRaw Mic.wav
+    ```
 
 1.  In a DAW or another analysis tool, compute the un-weighted RMS of each channel of the .wav file separately and evaluate against the guideline above.
 
@@ -278,7 +278,7 @@ Filtering can also alter the effective bandwidth of the device; such as an analo
 
 The speech platform utilizes 8 kHz acoustic models only to provide support for legacy Bluetooth audio devices.
 
-### HW-5 Mic Magnitude vs. Frequency Response[2]
+### HW-5 Mic Magnitude vs. Frequency Response
 
 Ensuring that the input frequency response(s) fit within a tolerance helps to reduce variance between microphones in an array, and reduce variance between devices. This leads to the following outcomes:
 
@@ -295,6 +295,9 @@ Ensuring that the input frequency response(s) fit within a tolerance helps to re
 Meet the below response masks using 12<sup>th</sup> Octave Analysis (ideal target is “flat” with HP filter below 200Hz):
 
 <img src="media/image12.png" width="605" height="337" />
+
+>[!NOTE]
+>  The Premium and Standard masks apply to all device tiers under HW-4 Input Sample Rate, e.g. a device can have Standard bandwidth (narrow-band) and a Premium magnitude response within that band.
 
 |                | **Premium**      | **Standard**     |
 |----------------|------------------|------------------|------------------|------------------|
