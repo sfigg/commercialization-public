@@ -378,9 +378,12 @@ The distortion is recommended to be measured using SDNR, although THD targets ar
 | 250 - 4000                                   | 2.5%        | &gt;= 32     | 3.2% | &gt;= 30  |
 | 5000                                         | 4.0%        | &gt;= 28     | 4.0% | &gt;= 28  |
 
-### HW-8 Loudspeaker Distortion[3]
+### HW-8 Loudspeaker Distortion
 
 Minimizing loudspeaker distortion is critical to ensure that non-linearities in the echo path do not impair echo cancellation performance.
+
+>[!NOTE]
+>This section only applies to devices with built-in loudspeakers.
 
 The distortion is recommended to be measured using SDNR with device volume @ equivalent setting for 70 dBA @ 0.8m using Echo.wav from the toolchain, or 76 dBA for mono HMDs and 70 dBA for stereo HMDs. THD targets are also given. The SDNR test method can be found in IEEE 269-2010 Annex L or in the Skype for Business Audio Test Specification:
 
@@ -394,7 +397,10 @@ The distortion is recommended to be measured using SDNR with device volume @ equ
 | 800                                          | 5.0%        | &gt;= 26     | 8.0%  | &gt;= 22  |
 | 1000 - 5000                                  | 5.0%        | &gt;= 26     | 6.3%  | &gt;= 24  |
 
-### HW-9 Echo Coupling[4]
+### HW-9 Echo Coupling
+
+>[!NOTE]
+>This section only applies to devices with built-in loudspeakers.
 
 Minimizing echo coupling of hardware is necessary to ensure optimal performance of an echo canceller. Echo paths can exist in a device through acoustic, vibrational, or (less commonly) electrical means. Efforts to maximize distance from loudspeaker(s) to microphone(s) and vibration dampening of components are effective strategies in improving performance.
 
