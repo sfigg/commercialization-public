@@ -1,3 +1,5 @@
+# Speech Platform Input Device Hardware Guidelines
+
 ![logo](../images/logo-cortana.png)
 
 **Microsoft Corporation Technical Documentation License Agreement (Standard)**
@@ -15,7 +17,7 @@
 
 ![](../images/logo-lca.gif)
 
-# Section 0 | Document
+## Section 0 | Document
 
 **Disclaimer: This document is provided “as-is”. Information and views expressed in this document, including URL and other Internet website references, may change without notice. Some information relates to pre-released products which may be substantially modified before commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here. You bear the risk of using it.**
 
@@ -23,7 +25,7 @@ Some examples depicted herein are provided for illustration only and are fictiti
 
 All recommendations and criteria within this document are approximate guidelines only, and not guarantees of speech recognition performance for all devices under real-world conditions. Speech recognition is a complex machine learning process, imperfect by nature. It is not guaranteed that Cortana and Speech Recognition will work well for your device, even if all premium recommendations are met. 
 
-## Definitions
+### Definitions
 
 For a comprehensive list of relevant terms, reference (ITU-p.10): <https://www.itu.int/rec/T-REC-P.10-200607-I/en>
 
@@ -56,11 +58,10 @@ For a comprehensive list of relevant terms, reference (ITU-p.10): <https://www.i
 | **SLR**                 | Send Loudness Rating                                                                                                                                                                                                         |
 | **TCLw**                | Terminal Coupling Loss (weighted)                                                                                                                                                                                            |
 | **THD+N**               | Total Harmonic Distortion including Noise = <img src="../images/speechplatformequation1.png" alt="SpeechPlatformEquation1" />                                                                                                                             |
-| **Wide-band**           | Speech signal with a nominal pass-band of 100-7000 Hz (ITU-p.10 W-3)                                                                                                                                                         |
-|                         
- **f**<sub>**0**</sub>    | Fundamental frequency                                                                                                                                                                                                        |
+| **Wide-band**           | Speech signal with a nominal pass-band of 100-7000 Hz (ITU-p.10 W-3)                           |
+| **f**<sub>**0**</sub>    | Fundamental frequency                                                                                                                                                                                                        |
 
-# Section 1 | Purpose
+## Section 1 | Purpose
 
 The Speech Platform powers all of the speech experiences in Windows 10 such as Cortana and Dictation.
 
@@ -78,7 +79,7 @@ Good component selection, acoustic design, and mechanical integration is importa
 
 Passing the Send and Receive test criteria in [Skype for Business Audio Specification](http://technet.microsoft.com/en-us/office/dn788953) gives an indication of good design. There can be differences in Echo path test results. Skype specification aims for good perceived quality for human talker on both sides of a voice call while Speech Platform might need a different tuning tradeoff between echo attenuation and speech double talk for speech recognition to be effective.
 
-## Performance Levels
+### Performance Levels
 
 Functional guidelines are split into two levels – Standard and Premium. This distinction is made to acknowledge that there are a range of devices targeting speech functionality, spanning price targets and operational envelopes. Microsoft recommends that all devices target Premium guidelines when specified.[1]
 
@@ -92,7 +93,7 @@ Basic functional guidelines recommended in order to work well in ambient conditi
 
 ![premium and standard](../images/speechplatform1.png)
 
-# Section 2 | DEVICE AUDIO HARDWARE RECOMMENDATIONS
+## Section 2 | DEVICE AUDIO HARDWARE RECOMMENDATIONS
 
 Recommendations in this section describe electro-acoustic and hardware-related properties of the device essential to support a high quality speech experience, ***prior to speech enhancement algorithms***.
 
@@ -132,27 +133,49 @@ To enable the acoustic echo canceller to work well the device speakers should be
 
 NOTE: Meeting the HW recommendations does not *assure* end-to-end system performance, but is strongly encouraged based on best practices and measurements of ecosystem devices that do provide a good speech experience. It may be possible to pass hardware guidelines but not pass the ***Speech Platform Input Device Recommendations*** due to limitations of signal processing algorithms or non-optimal tuning. It may also be possible to pass the ***Speech Platform Input Device Recommendations,*** yet not meet the guidelines provided in this document.
 
-## **Microphone Array Guidelines for Near and Far Field Devices**
+### Microphone Array Guidelines for Near and Far Field Devices
 
 Microphone arrays enable the speech enhancement pipeline to remove localized noise. The following array geometries are recommended for devices using the in-box Microsoft speech enhancement pipeline.
 
 The Microsoft speech pipeline is also capable of working with custom array types specified in the microphone array descriptor. For a guide on creating microphone array geometry descriptors, see Appendix A.
 
-| **Application**   | **Recommended Solution(s)**     | **Guidelines**                                           |
-|-------------------|---------------------------------|----------------------------------------------------------|
-| Near-Field Device | Linear 2-Element<br><br>X = 45-170mm| <img src="../images/spd-recommend-013.png" width="232" height="151" />  |    | Far-Field Device  | Linear 4-Element (Symmetrical)  
-                                   
-  X &gt; 60mm                      | <img src="../images/spd-recommend-014.png" width="272" height="126" />  |
-|                   | Linear 4-Element (Assymetrical) | <img src="../images/spd-recommend-015.png" width="358" height="90" />  |
-| Rotatable Device  | L-Shaped                        | <img src="../images/spd-recommend-016.png.png" width="219" height="171" />  |
-| 360° Pickup       | Circular 8-Element              
-                                   
-  X &gt; 50mm                      | <img src="../images/spd-recommend-017.png" width="290" height="128" /> |
+<table class="tg">
+  <tr>
+    <th >**Application** </th>
+    <th >**Recommended Solution(s)** </th>
+    <th >**Guidelines** </th>
+  </tr>
+ <tr>
+    <td >Near-Field Device</td>
+    <td>Linear 2-Element<br><br>X = 45-170mm</td>
+    <td><img src="../images/spd-recommend-013.png" width="232" height="151" /></td>
+  </tr>  
+<tr>
+    <td  rowspan="2">Far-Field Device</td>
+    <td >Linear 4-Element (Symmetrical) <br><br> X &gt; 60mm    </td>
+    <td ><img src="../images/spd-recommend-014.png" width="272" height="126" /></td>
+  </tr>
+  <tr>
+    <td >Linear 4-Element (Assymetrical) </td>
+    <td ><img src="../images/spd-recommend-015.jpg" width="358" height="90" /></td>
+  </tr>
+  <tr>
+    <td >Rotatable Device</td>
+    <td>L-Shaped     </td>
+    <td><img src="../images/spd-recommend-016.png" width="219" height="171" /></td>
+  </tr>
+  <tr>
+    <td >360° Pickup </td>
+    <td >Circular 8-Element  <br>X &gt; 50mm   </td>
+    <td > <img src="../images/spd-recommend-017.png" width="290" height="128" /></td>
+  </tr>
+</table>
 
-**
-**
 
-## **Microphone Array Guidelines for HMDs**
+
+
+
+### Microphone Array Guidelines for HMDs
 
 Microphone arrays enable the speech enhancement pipeline to remove localized noise. The following array geometries are recommended for devices using the in-box Microsoft speech enhancement pipeline.
 
@@ -164,7 +187,7 @@ The Microsoft speech pipeline is also capable of working with custom array types
 
 For headsets, a boom mic or placement of a microphone as close to MRP as possible is recommended.
 
-## **Microphone Array Guidelines for Lid-Closed Scenarios**
+### Microphone Array Guidelines for Lid-Closed Scenarios
 
 For laptop or similar form-factor devices that wish to provide support for speech during closed lid, some additional considerations for mic integration are necessary:
 
@@ -179,7 +202,7 @@ For laptop or similar form-factor devices that wish to provide support for speec
 **
 **
 
-## **HW-1 Mic Level**
+### HW-1 Mic Level
 
 Speech must be provided to the Microsoft in-box pipeline at a sufficient digital FS level in order to achieve satisfactory performance. Clipping (resulting in loss of information) during input stages must be avoided to optimize performance.
 
@@ -217,7 +240,7 @@ The following test setup using toolchain components shall be used to evaluate a 
 
 1.  In a DAW or another analysis tool, compute the un-weighted RMS of each channel of the .wav file separately and evaluate against the guideline above.
 
-## **HW-2 Mic SNR**
+### HW-2 Mic SNR
 
 Microphone components inherently produce internal self-noise, and effectively independent of SPL. The equivalent input noise represents the lowest point of the microphone's dynamic range, and is particularly important for good beam-forming performance. Use of a high quality microphone will minimize the microphone internal noise.
 
@@ -229,7 +252,7 @@ Additionally, when integrating a microphone in a device, self-noise may increase
 
 The microphone component SNR can be determined from the component specification sheet (measured using a 1kHz sine @ 94 dBSPL at the microphone position, and subtracting the A-weighted level self-noise). It is recommended to also measure SNR in the same manner as the component specification after device integration to ensure minimal degradation in SNR performance.
 
-## **HW-3 Mic Matching**
+### HW-3 Mic Matching
 
 Matching of microphone sensitivity across all microphones in the array is necessary to ensure proper Beamformer performance, and should be tested after device integration. MEMS microphones have low manufacturing tolerances, and are recommended for best microphone-to-microphone matching characteristics.
 
@@ -243,7 +266,7 @@ Matching of microphone sensitivity across all microphones in the array is necess
 
 2.  Compute the matching (Max Level – Min Level) across all microphones and evaluate against the above recommendation.
 
-## **HW-4 Input Sample Rate**
+### HW-4 Input Sample Rate
 
 The sample rate of the capture signal is the primary factor in determining the effective bandwidth of the speech signal. The speech platform uses 16 kHz acoustic models in the speech recognizer, with 300 Hz being the effective lower end of the speech recognizer. However, 200 Hz is the recommended low frequency acoustical limit for devices also targeting voice communications.
 
@@ -255,7 +278,7 @@ Filtering can also alter the effective bandwidth of the device; such as an analo
 
 The speech platform utilizes 8 kHz acoustic models only to provide support for legacy Bluetooth audio devices.
 
-## **HW-5 Mic Magnitude vs. Frequency Response**[2]
+### HW-5 Mic Magnitude vs. Frequency Response[2]
 
 Ensuring that the input frequency response(s) fit within a tolerance helps to reduce variance between microphones in an array, and reduce variance between devices. This leads to the following outcomes:
 
@@ -318,7 +341,7 @@ The following test setup using toolchain components shall be used to evaluate a 
 
     3.  Compute magnitude response by subtracting the reference from the recorded spectrum.
 
-## **HW-6 Mic Phase Matching**
+### HW-6 Mic Phase Matching
 
 The microphone phase response matching limit is important to ensure that the temporal relationship between signals received via microphone elements in an array is consistent with the physical geometry of the microphone elements in the array (with “zero matching” being the ideal target).
 
@@ -334,7 +357,7 @@ This is important for beam-former and sound source localizer processing in the M
 
 The component phase response matching can be determined from the component specification sheet.
 
-## **HW-7 Mic Distortion**
+### HW-7 Mic Distortion
 
 Meeting the microphone distortion recommendations can ensure that:
 
@@ -352,7 +375,7 @@ The distortion is recommended to be measured using SDNR, although THD targets ar
 | 250 - 4000                                   | 2.5%        | &gt;= 32     | 3.2% | &gt;= 30  |
 | 5000                                         | 4.0%        | &gt;= 28     | 4.0% | &gt;= 28  |
 
-## **HW-8 Loudspeaker Distortion**[3]
+### HW-8 Loudspeaker Distortion[3]
 
 Minimizing loudspeaker distortion is critical to ensure that non-linearities in the echo path do not impair echo cancellation performance.
 
@@ -368,7 +391,7 @@ The distortion is recommended to be measured using SDNR with device volume @ equ
 | 800                                          | 5.0%        | &gt;= 26     | 8.0%  | &gt;= 22  |
 | 1000 - 5000                                  | 5.0%        | &gt;= 26     | 6.3%  | &gt;= 24  |
 
-## **HW-9 Echo Coupling**[4]
+### HW-9 Echo Coupling[4]
 
 Minimizing echo coupling of hardware is necessary to ensure optimal performance of an echo canceller. Echo paths can exist in a device through acoustic, vibrational, or (less commonly) electrical means. Efforts to maximize distance from loudspeaker(s) to microphone(s) and vibration dampening of components are effective strategies in improving performance.
 
@@ -400,7 +423,7 @@ TCLw = TCLw<sub>measured</sub> + (\[HW-1 Mic Level\] - \[Nominal Mic Level\])
 
 TCLw = TCLw<sub>measured</sub> + (\[HW-1 Mic Level\] + 26\])
 
-## **HW-10 Clock Drift**
+### HW-10 Clock Drift
 
 Rendered and captured audio signals from a device must be both sampled accurately, and time-stamped accurately to ensure a faithful reproduction of the audio signal and robust echo cancellation.
 
@@ -422,7 +445,7 @@ Devices with built in capture and render paths can negate this relative drift by
 **
 **
 
-## **HW-11 Clock Jitter**
+### HW-11 Clock Jitter
 
 Similar to ***HW-10 Clock Drift***, ensuring low jitter is necessary to achieve sufficient performance with beamforming, sound source localization, and echo cancellation algorithms.
 
@@ -438,7 +461,7 @@ For example, in the case of a normal distribution of samples **t**<sub>**i**</su
 |-------------------------|--------------|
 | **HW-11: Clock Jitter** | &lt; ± 1ms   |
 
-## **HW-12 Earpiece Frequency Response for WMR**
+### HW-12 Earpiece Frequency Response for WMR
 
 Earpiece frequency response does not directly impact speech input performance, but instead impacts user perception of speech and audio quality - especially for devices where speech is a primary input/control method.
 
@@ -478,7 +501,7 @@ The following test setup using toolchain components shall be used to evaluate a 
 
 5.  Repeat for the second channel (HATS L ear/channel).
 
-## **HW-13 Earpiece Crosstalk for WMR**
+### HW-13 Earpiece Crosstalk for WMR
 
 Earpiece crosstalk does not directly impact speech input performance, but instead impacts user perception of speech and audio quality - especially for devices where speech is a primary input/control method.
 
@@ -516,7 +539,7 @@ The following test setup using toolchain components shall be used to evaluate a 
 
 1.  Repeat for the second channel (HATS R ear/channel).
 
-## **HW-14 Earpiece Level for WMR**
+### HW-14 Earpiece Level for WMR
 
 Earpiece level does not directly impact speech input performance, but instead impacts user perception of speech and audio quality - especially for devices where speech is a primary input/control method.
 
@@ -552,7 +575,7 @@ The following test setup using toolchain components shall be used to evaluate a 
 
 Note that all WMR devices must be stereo.
 
-## **HW-15 Earpiece Idle Noise for WMR**
+### HW-15 Earpiece Idle Noise for WMR
 
 Earpiece idle noise does not directly impact speech input performance, but instead impacts user perception of speech and audio quality - especially for devices where speech is a primary input/control method.
 
@@ -584,7 +607,7 @@ The following test setup using toolchain components shall be used to evaluate a 
 
 4.  Compute the A-weighted RMS level of the idle noise, expressed as dBSPL(A), 20-20000Hz (both channels).
 
-# Section 3 | DEVICE AUDIO ALGORITHM PERFORMANCE RECOMMENDATIONS
+## Section 3 | DEVICE AUDIO ALGORITHM PERFORMANCE RECOMMENDATIONS
 
 Recommendations in this section describe parameters of ***pre-processed speech signals*** ***prior to consumption by speech applications*** (i.e. Cortana or dictation) necessary to support a high quality speech experience.
 
@@ -609,7 +632,7 @@ Most device audio hardware tests herein can be analyzed from .wav file captures 
 **
 **
 
-## **DSP-1 Mic Level**
+### DSP-1 Mic Level
 
 Speech must be provided to the speech recognizer at a sufficient digital FS level in order to achieve satisfactory performance. Clipping (resulting in loss of information) during input or pre-processing stages must be avoided to optimize performance.
 
@@ -650,7 +673,7 @@ The following test setup using toolchain components shall be used to evaluate a 
 **
 **
 
-## **DSP-2 Echo Coupling**
+### DSP-2 Echo Coupling
 
 Echo performance is critical to function under music or content playback scenarios.
 
@@ -684,7 +707,7 @@ TCLw = TCLw<sub>measured</sub> + (\[HW-1 Mic Level\] + \[Nominal Mic Level\])
 
 TCLw = TCLw<sub>measured</sub> + (\[HW-1 Mic Level\] - 26\])
 
-## **DSP-3 Speech to Noise Ratio during Background Noise**
+### DSP-3 Speech to Noise Ratio during Background Noise
 
 In order for speech recognition services to process data adequately, a minimum SpNR is recommended for pre-processed speech.
 
@@ -721,7 +744,7 @@ In general, the following recommendations hold with the caveat that other system
 
 1.  In a DAW or another analysis tool, compute the un-weighted RMS of the speech portions of the .wav file. Compute an A-weighted RMS of the noise only portion of the file (i.e. after the frequency sweep but prior to the first utterance). Compute S+N/N ratio as an estimate for SNR during BGN and evaluate against the above recommendation.
 
-# Appendix A | MIC ARRAY GEOMETRY
+## Appendix A | MIC ARRAY GEOMETRY
 
 This section describes the process in which one can develop a suitable microphone array geometry descriptor with a worked example. The content in this section is based off of the MSDN literature located here:
 
@@ -741,7 +764,7 @@ The mic array descriptor is used to parameterize beamformer and sound source loc
 
 The Driver Configuration Verification tool can be used for verification on the device (OEMVerification tool provided in the toolchain).<span id="OLE_LINK3" class="anchor"></span>
 
-## Example Application: Laptop with Front Facing, 2-Channel Mic Array
+### Example Application: Laptop with Front Facing, 2-Channel Mic Array
 
 In this example, a laptop has two channels that are on the screen, near the top bezel and facing (ported) forwards:
 
@@ -773,8 +796,7 @@ In this example, a laptop has two channels that are on the screen, near the top 
 
     <img src="media/image16.jpeg" alt="Figure10" width="495" height="345" />
 
-**
-**
+
 
 **Relevant Information for Geometry Descriptor:**
 
@@ -807,7 +829,7 @@ The KSAUDIO\_MIC\_ARRAY\_GEOMETRY structure would appear as follows:
 | **Low Frequency**                | usFrequencyBandLo     | Effective lowest frequency in Hz  | 100               |
 | **High Frequency**               | usFrequencyBandHi     | Effective highest frequency in Hz | 8000              |
 
-## Example Application: Smart Speaker with Circular Array
+### Example Application: Smart Speaker with Circular Array
 
 For circular arrays, the following implementation is recommended:
 
@@ -852,7 +874,7 @@ The following values would be used in the KSAUDIO\_MICROPHONE\_COORDINATES struc
 | **Mic6**        | 0            | 0       | -40     | 0       | 15708               | 0                   |
 | **Mic7**        | 0            | 28      | -28     | 0       | 15708               | 0                   |
 
-## Example Application: HMD for Windows Mixed Reality
+### Example Application: HMD for Windows Mixed Reality
 
 For HMDs, such as those designed for Windows Mixed Reality, the origin is positioned at MRP of HATS with the device placed in a typical wearing position.
 
@@ -878,11 +900,11 @@ Using the following example below:
 | **Mic0**        | 1            | 0       | -50     | 30      | -15708              | 0                   |
 | **Mic1**        | 1            | 0       | 50      | 30      | -15708              | 0                   |
 
-# Appendix B | WINDOWS MIXED REALITY GUIDELINES
+## Appendix B | WINDOWS MIXED REALITY GUIDELINES
 
 This section describes the mechanical design and architecture requirements when building devices intended to support Windows Mixed Reality.
 
-## Input Design Mechanical Guidelines
+### Input Design Mechanical Guidelines
 
 Microphone subsystem requirements for optimal voice command accuracy:
 
@@ -897,7 +919,7 @@ Microphone subsystem requirements for optimal voice command accuracy:
 | Equivalent Input Noise           | ≤ 31 dBSPL(A)                                               | Measure peripheral input noise from mic in device (anechoic chamber)                                                                           |
 | Mic Array Geometry               | 2 mics, linearly spaced 90-100mm on the bottom of the visor | Array geometry must be exposed to the OS through the descriptors of the USB 2.0 audio device                                                   |
 
-## Output Design Mechanical Guidelines
+### Output Design Mechanical Guidelines
 
 Speakers (also called Receivers)/Headphones subsystem requirements for mixed reality aural immersion:
 
@@ -915,7 +937,7 @@ Speakers (also called Receivers)/Headphones subsystem requirements for mixed rea
 |                           | Integrated, Non-Occluding (“Open-Air”) | Porting and directionality should be directed towards, and as close as possible, to wearer’s ears |
 |                           | Detachable                             | Detach/attach reliability is a concern                                                            |
 
-## Windows Mixed Reality USB Requirements
+### Windows Mixed Reality USB Requirements
 
 A basic, fundamental requirement for all Windows Mixed Reality devices that tether to a Windows Mixed Reality compliant PC is Windows audio class driver compatibility. To enable a seamless connection and a faster, simpler out of box experience, the audio device integrated in the HMD must be USB Audio 2.0 or USB Audio 3.0 spec compliant. Custom audio solutions requiring custom, 3<sup>rd</sup> party audio drivers are not acceptable.
 
