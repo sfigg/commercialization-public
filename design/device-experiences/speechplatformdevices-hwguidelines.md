@@ -184,7 +184,7 @@ The Microsoft speech pipeline is also capable of working with custom array types
 
 | **Application** | **Solution(s)**  | **Guidelines**                                           |
 |-----------------|------------------|----------------------------------------------------------|
-| VR/AR           | Linear 2-Element | <img src="media/image11.png" width="441" height="135" /> |
+| VR/AR           | Linear 2-Element | <img src="../images/spd-hwguide-01.png" width="441" height="135" /> |
 
 For headsets, a boom mic or placement of a microphone as close to MRP as possible is recommended.
 
@@ -214,13 +214,36 @@ Speech must be provided to the Microsoft in-box pipeline at a sufficient digital
 
 The following test setup using toolchain components shall be used to evaluate a device against the guideline above:
 
-|                         | **HMD**                                      | **All Other Devices**         |
-|-------------------------|----------------------------------------------|-------------------------------|
-| Device Position\*       | HMD Test Position                            | Near Field 0.8m Test Position |
-| Playback Stimulus Level | 89 dBA @ MRP                                 | 62 dBA @ DUT Position         |
-| Playback Stimulus       | Channel 1 of LevelCalibration.wav, via Mouth |
-| Mic Array Input Level   | 0 dB                                         |
-| Capture Mode            | RAW (i.e. per RawRecordings.cmd)             |
+<table  >
+  <tr>
+    <th  ></th>
+    <th  >HMD</th>
+    <th  >All Other Devices</th>
+  </tr>
+  <tr>
+    <td  >Device Position*</td>
+    <td  >HMD Test Position  </td>
+    <td  >Near Field 0.8m Test Position</td>
+  </tr>
+  <tr>
+    <td  > Playback Stimulus Level </td>
+    <td  > 89 dBA @ MRP </td>
+    <td  >62 dBA @ DUT Position    </td>
+  </tr>
+  <tr>
+    <td  >Playback Stimulus   </td>
+    <td   colspan="2">Channel 1 of LevelCalibration.wav, via Mouth  </td>
+  </tr>
+  <tr>
+    <td  >Mic Array Input Level </td>
+    <td   colspan="2"> 0 dB      </td>
+  </tr>
+  <tr>
+    <td  >Capture Mode   </td>
+    <td   colspan="2">RAW (i.e. per RawRecordings.cmd)    </td>
+  </tr>
+</table>
+
 
 \**Per test setup diagrams in  [Speech Platform: Input Device Test Setup](speechplatformdevicestestsetup.md)*
 
@@ -294,12 +317,9 @@ Ensuring that the input frequency response(s) fit within a tolerance helps to re
 
 Meet the below response masks using 12<sup>th</sup> Octave Analysis (ideal target is “flat” with HP filter below 200Hz):
 
-<img src="media/image12.png" width="605" height="337" />
+<img src="../images/speechplatform3.png" width="605" height="337" />
 
->[!NOTE]
->  The Premium and Standard masks apply to all device tiers under HW-4 Input Sample Rate, e.g. a device can have Standard bandwidth (narrow-band) and a Premium magnitude response within that band.
-
-|                | **Premium**      | **Standard**     |
+|                | **Premium**      | |**Standard**     ||
 |----------------|------------------|------------------|------------------|------------------|
 | Frequency (Hz) | Upper Limit (dB) | Lower Limit (dB) | Upper Limit (dB) | Lower Limit (dB) |
 | 200            | 3                | -6               | 6                | -9               |
@@ -310,17 +330,42 @@ Meet the below response masks using 12<sup>th</sup> Octave Analysis (ideal targe
 
 All microphones must fit within the mask concurrently. The mask is floating – absolute gain is not a factor.
 
+>[!NOTE]
+>  The Premium and Standard masks apply to all device tiers under HW-4 Input Sample Rate, e.g. a device can have Standard bandwidth (narrow-band) and a Premium magnitude response within that band.
+
 **Test Setup:**
 
 The following test setup using toolchain components shall be used to evaluate a device against the guideline above:
 
-|                         | **HMD**                                                      | **All Other Devices**         |
-|-------------------------|--------------------------------------------------------------|-------------------------------|
-| Device Position\*       | HMD Test Position                                            | Near Field 0.8m Test Position |
-| Playback Stimulus Level | 89 dBA @ MRP                                                 | 62 dBA @ DUT Position         |
-| Playback Stimulus       | Chirp from Channel 1 of TalkerAndAmbient.wav only, via Mouth |
-| Mic Array Input Level   | Default Mic Gain                                             |
-| Capture Mode            | RAW (i.e. per RawRecordings.cmd)                             |
+<table  >
+  <tr>
+    <th  ></th>
+    <th  >HMD</th>
+    <th  >All Other Devices</th>
+  </tr>
+  <tr>
+    <td  >Device Position*</td>
+    <td  >HMD Test Position  </td>
+    <td  >Near Field 0.8m Test Position</td>
+  </tr>
+  <tr>
+    <td  > Playback Stimulus Level </td>
+    <td  > 89 dBA @ MRP </td>
+    <td  >62 dBA @ DUT Position    </td>
+  </tr>
+  <tr>
+    <td  >Playback Stimulus   </td>
+    <td   colspan="2">Chirp from Channel 1 of TalkerAndAmbient.wav only, via Mouth  </td>
+  </tr>
+  <tr>
+    <td  >Mic Array Input Level </td>
+    <td   colspan="2"> Default Mic Gain        </td>
+  </tr>
+  <tr>
+    <td  >Capture Mode   </td>
+    <td   colspan="2">RAW (i.e. per RawRecordings.cmd)    </td>
+  </tr>
+</table>
 
 \**Per test setup diagrams in S [Speech Platform: Input Device Test Setup](speechplatformdevicestestsetup.md)*
 
@@ -334,7 +379,9 @@ The following test setup using toolchain components shall be used to evaluate a 
 
 4.  Initiate a continuous 30s recording of the stimulus file in RAW mode, ensuring that the frequency sweep present in the initial 10s of the file is captured:
 
-> ***AudioToolbox.exe -Dur 30 -MicRaw Mic.wav***
+     ```syntax
+    AudioToolbox.exe -Dur 30 -MicRaw Mic.wav
+    ```
 
 1.  To compute magnitude response:
 
@@ -372,11 +419,11 @@ The distortion is recommended to be measured using SDNR, although THD targets ar
 
 **Recommendation: HW-7 Microphone Distortion**
 
-|  3<sup>rd</sup> Octave Frequency Band(s), Hz | **Premium** | **Standard** |
+|  3<sup>rd</sup> Octave Frequency Band(s), Hz | **Premium** |              |**Standard**|      |
 |----------------------------------------------|-------------|--------------|------|-----------|
 |                                              | THD         | SDNR (dB)    | THD  | SDNR (dB) |
-| 250 - 4000                                   | 2.5%        | &gt;= 32     | 3.2% | &gt;= 30  |
-| 5000                                         | 4.0%        | &gt;= 28     | 4.0% | &gt;= 28  |
+| 250 - 4000                                   | 2.5%        | &gt;=32     | 3.2% | &gt;=30  |
+| 5000                                         | 4.0%        | &gt;=28     | 4.0% | &gt;=28  |
 
 ### HW-8 Loudspeaker Distortion
 
@@ -389,7 +436,7 @@ The distortion is recommended to be measured using SDNR with device volume @ equ
 
 **Recommendation: HW-8 Loudspeaker Distortion**
 
-|  3<sup>rd</sup> Octave Frequency Band(s), Hz | **Premium** | **Standard** |
+|  3<sup>rd</sup> Octave Frequency Band(s), Hz | **Premium** | |**Standard** ||
 |----------------------------------------------|-------------|--------------|-------|-----------|
 |                                              | THD         | SDNR (dB)    | THD   | SDNR (dB) |
 | 315 - 500                                    | 6.3%        | &gt;= 24     | N/A   | N/A       |
@@ -483,7 +530,7 @@ We define jitter as the absolute range of observed samples (or reported timestam
 
 For example, in the case of a normal distribution of samples **t**<sub>**i**</sub> about the nominal sample **μ**, the absolute jitter **T** is defined as the following
 
-
+![variables](../images/speechplatform6.png)
 
 | **Recommendation**      | **Standard** |
 |-------------------------|--------------|
@@ -663,7 +710,7 @@ Speech must be provided to the speech recognizer at a sufficient digital FS leve
 
 | Recommendation        | **Standard**                     | **Premium**                      |
 |-----------------------|----------------------------------|----------------------------------|
-| **DSP-1: Mic Level ** | \[-36, -16\] dBFS, no overload\* | \[-32, -20\] dBFS, no overload\* |
+| **DSP-1: Mic Level** | \[-36, -16\] dBFS, no overload\* | \[-32, -20\] dBFS, no overload\* |
 
 \**Peak levels may be higher than 0dBFS in 32-bit recordings; however, ensure that no clipping/overload occurs in prior gain stages*
 
@@ -671,13 +718,36 @@ Speech must be provided to the speech recognizer at a sufficient digital FS leve
 
 The following test setup using toolchain components shall be used to evaluate a device against the guideline above:
 
-|                         | **HMD**                                      | **All Other Devices**         |
-|-------------------------|----------------------------------------------|-------------------------------|
-| Device Position\*       | HMD Test Position                            | Near Field 0.8m Test Position |
-| Playback Stimulus Level | 89 dBA @ MRP                                 | 62 dBA @ DUT Position         |
-| Playback Stimulus       | Channel 1 of LevelCalibration.wav, via Mouth |
-| Mic Array Input Level   | 0 dB                                         |
-| Capture Mode            | SPEECH (i.e. per SpeechRecordings.cmd)       |
+
+<table  >
+  <tr>
+    <th  ></th>
+    <th  >HMD</th>
+    <th  >All Other Devices</th>
+  </tr>
+  <tr>
+    <td  >Device Position*</td>
+    <td  >HMD Test Position  </td>
+    <td  >Near Field 0.8m Test Position</td>
+  </tr>
+  <tr>
+    <td  > Playback Stimulus Level </td>
+    <td  >89 dBA @ MRP    </td>
+    <td  >62 dBA @ DUT Position    </td>
+  </tr>
+  <tr>
+    <td  >Playback Stimulus   </td>
+    <td   colspan="2">Channel 1 of LevelCalibration.wav, via Mouth</td>
+  </tr>
+  <tr>
+    <td  >Mic Array Input Level </td>
+    <td   colspan="2"> 0 dB    </td>
+  </tr>
+  <tr>
+    <td  >Capture Mode   </td>
+    <td   colspan="2">SPEECH (i.e. per SpeechRecordings.cmd)    </td>
+  </tr>
+</table>
 
 \**Per test setup diagrams in  [Speech Platform: Input Device Test Setup](speechplatformdevicestestsetup.md)*
 
@@ -691,9 +761,11 @@ The following test setup using toolchain components shall be used to evaluate a 
 
 4.  Initiate a continuous 30s recording of the stimulus file in SPEECH mode:
 
-> ***AudioToolbox.exe -Dur 30 -MicSpeech Mic.wav***
+    ```syntax
+    AudioToolbox.exe -Dur 30 -MicRaw Mic.wav
+    ```
 
-1.  In a DAW or another analysis tool, compute the un-weighted RMS of each channel of the .wav file separately and evaluate against the guideline above
+5.  In a DAW or another analysis tool, compute the un-weighted RMS of each channel of the .wav file separately and evaluate against the guideline above
 
 
 ### DSP-2 Echo Coupling
@@ -710,15 +782,38 @@ Echo performance is critical to function under music or content playback scenari
 
 **Test Setup:**
 
-|                         | **HMD**                                      | **All Other Devices**         |
-|-------------------------|----------------------------------------------|-------------------------------|
-| Device Position\*       | HMD Test Position                            | Near Field 0.8m Test Position |
-| Playback Stimulus Level | 76 dBA @ LRP (if mono)                       
-                                                
-  70 dBA @ LRP (if stereo)                      | 70 dBA @ 0.8m                 |
-| Playback Stimulus       | Echo.wav from Toolchain, via device speakers |
-| Mic Array Input Level   | Default Mic Gain                             |
-| Capture Mode            | SPEECH (i.e. per RawRecordings.cmd)          |
+<table  >
+  <tr>
+    <th  ></th>
+    <th  >HMD</th>
+    <th  >All Other Devices</th>
+  </tr>
+  <tr>
+    <td  >Device Position*</td>
+    <td  >HMD Test Position  </td>
+    <td  >Near Field 0.8m Test Position</td>
+  </tr>
+  <tr>
+    <td  > Playback Stimulus Level </td>
+    <td  >76 dBA @ LRP (if mono) <br><br> 70 dBA @ LRP (if stereo)  </td>
+    <td  > 70 dBA @ 0.8m     </td>
+  </tr>
+  <tr>
+    <td  >Playback Stimulus   </td>
+    <td   colspan="2">Echo.wav from Toolchain, via device speakers</td>
+  </tr>
+  <tr>
+    <td  >Mic Array Input Level </td>
+    <td   colspan="2">Default Mic Gain      </td>
+  </tr>
+  <tr>
+    <td  >Capture Mode   </td>
+    <td   colspan="2">SPEECH (i.e. per SpeechRecordings.cmd)    </td>
+  </tr>
+</table>
+
+
+
 
 \**Per test setup diagrams in  [Speech Platform: Input Device Test Setup](speechplatformdevicestestsetup.md)*
 
@@ -741,16 +836,40 @@ In general, the following recommendations hold with the caveat that other system
 | **HW-9: SpNR during BGN** | ≥ 15 dB      | ≥ 20 dB     |
 
 **Test Setup:**
-
-|                       | **HMD**                                                                     | **All Other Devices**         |
-|-----------------------|-----------------------------------------------------------------------------|-------------------------------|
-| Device Position\*     | HMD Test Position                                                           | Near Field 0.8m Test Position |
-| Talker Stimulus Level | 89 dBA @ MRP                                                                | 62 dBA @ DUT Position         |
-| Noise Stimulus Level  | 70 dBA @ LRP                                                                | 57 dBA @ DUT Position         |
-| Playback Stimulus     | TalkerAndAmbient.wav from Toolchain, all channels, via Mouth and BGN System |
-| Mic Array Input Level | Default Mic Gain                                                            |
-| Capture Mode          | SPEECH (i.e. per SpeechRecordings.cmd)                                      |
-
+<table  >
+  <tr>
+    <th  ></th>
+    <th  >HMD</th>
+    <th  >All Other Devices</th>
+  </tr>
+  <tr>
+    <td  >Device Position*</td>
+    <td  >HMD Test Position  </td>
+    <td  >Near Field 0.8m Test Position</td>
+  </tr>
+  <tr>
+    <td  > Talker Stimulus Level </td>
+    <td  >89 dBA @ MRP    </td>
+    <td  > 62 dBA @ DUT Position        </td>
+  </tr>
+  <tr>
+    <td  > Noise Stimulus Level </td>
+    <td  >70 dBA @ LRP   </td>
+    <td  > 57 dBA @ DUT Position    </td>
+  </tr>
+  <tr>
+    <td  >Playback Stimulus   </td>
+    <td   colspan="2">TalkerAndAmbient.wav from Toolchain, all channels, via Mouth and BGN System</td>
+  </tr>
+  <tr>
+    <td  >Mic Array Input Level </td>
+    <td   colspan="2">Default Mic Gain       </td>
+  </tr>
+  <tr>
+    <td  >Capture Mode   </td>
+    <td   colspan="2">SPEECH (i.e. per SpeechRecordings.cmd)    </td>
+  </tr>
+</table>
 \**Per test setup diagrams in  [Speech Platform: Input Device Test Setup](speechplatformdevicestestsetup.md)*
 
 **Test Procedure:**
@@ -763,7 +882,9 @@ In general, the following recommendations hold with the caveat that other system
 
 4.  Initiate a recording of the full stimulus file in SPEECH mode:
 
-> ***AudioToolbox.exe -Dur 30 -MicSpeech Mic.wav***
+     ```syntax
+    AudioToolbox.exe -Dur 30 -MicRaw Mic.wav
+    ```
 
 1.  In a DAW or another analysis tool, compute the un-weighted RMS of the speech portions of the .wav file. Compute an A-weighted RMS of the noise only portion of the file (i.e. after the frequency sweep but prior to the first utterance). Compute S+N/N ratio as an estimate for SNR during BGN and evaluate against the above recommendation.
 
@@ -791,7 +912,7 @@ The Driver Configuration Verification tool can be used for verification on the d
 
 In this example, a laptop has two channels that are on the screen, near the top bezel and facing (ported) forwards:
 
-<embed src="media/image15.emf" width="387" height="360" />
+<embed src="../images/spd-recommend-046.png" width="387" height="360" />
 
 **Details:**
 
@@ -817,7 +938,7 @@ In this example, a laptop has two channels that are on the screen, near the top 
 
 1.  The microphones are all ported parallel to the x-axis (i.e. not pointing left or right, nor pointing up nor down). The coordinate system is illustrated below, where X points directly towards the user:
 
-    <img src="media/image16.jpeg" alt="Figure10" width="495" height="345" />
+    <img src="../images/spd-recommend-047.jpg" alt="Figure10" width="495" height="345" />
 
 
 
@@ -837,7 +958,9 @@ The KSAUDIO\_MICROPHONE\_COORDINATES structure would appear as follows:
 
 -   The microphones are both pointing forwards to the user (parallel to x-axis, perpendicular to y and z axes). Therefore, vertical and horizontal angles are both zero (like the virtual microphone). Note that the values used for angle are expressed in 1/10000<sup>th</sup> of a radian, e.g. +45 degrees = 0.7854 rad \*10000 = 7854.
 
-When running the test toolchain, one should then see the following output in OEMVerificationOutput.txt<span id="OLE_LINK4" class="anchor"><span id="OLE_LINK5" class="anchor"><span id="OLE_LINK6" class="anchor"></span></span></span>:
+When running the test toolchain, one should then see the following output in OEMVerificationOutput.txt:
+
+![oem verification output](../images/speechplatform-oemverificationoutput.png)
 
 The KSAUDIO\_MIC\_ARRAY\_GEOMETRY structure would appear as follows:
 
@@ -903,7 +1026,7 @@ For HMDs, such as those designed for Windows Mixed Reality, the origin is positi
 
 Using the following example below:
 
-<img src="media/image17.png" width="626" height="186" />
+<img src="../images/spd-hwguide-02.png" width="626" height="186" />
 
 -   Assume microphones are omnidirectional, but due to being integrated in the Mixed Reality device, appear to be more subcardioid and pointing downwards:
 
@@ -946,19 +1069,37 @@ Microphone subsystem requirements for optimal voice command accuracy:
 
 Speakers (also called Receivers)/Headphones subsystem requirements for mixed reality aural immersion:
 
-| Metric                    | Target                                 | Details                                                                                           |
-|---------------------------|----------------------------------------|---------------------------------------------------------------------------------------------------|
-| Stereo Headphones         | Integrated                             | Design options: On-ear or over-ear **but *not* in-ear**                                           
-                                                                                                      
-   Design options: flip or slide aside to allow external headset                                      |
-|                           | Detachable                             | Detach/attach reliability is a concern                                                            |
-| Stereo Speakers           
-                            
- (also called “receivers”)  | Integrated, Occluding                  | Design option: sliding to move back and forth to position over user ear.                          
-                                                                                                      
-   Speaker (Receiver) exit port must be directed down towards ears                                    |
-|                           | Integrated, Non-Occluding (“Open-Air”) | Porting and directionality should be directed towards, and as close as possible, to wearer’s ears |
-|                           | Detachable                             | Detach/attach reliability is a concern                                                            |
+
+<table >
+  <tr>
+    <th >Metric</th>
+    <th >Target</th>
+    <th >Details</th>
+  </tr>
+  <tr>
+    <td  rowspan="2">Stereo Headphones</td>
+    <td >Integrated</td>
+    <td >Design options: On-ear or over-ear <em>but not in-ear</em><br><br>Design options: flip or slide aside to allow external headset      </td>
+  </tr>
+  <tr>
+    <td >Detachable</td>                                                           |
+    <td >Detach/attach reliability is a concern</td>
+  </tr>
+  <tr>
+    <td  rowspan="3">Stereo Speakers<br>(also called “receivers”) </td>
+    <td >Integrated, Occluding </td>
+    <td >Design option: sliding to move back and forth to position over user ear. <br><br>Speaker (Receiver) exit port must be directed down towards ears      </td>
+  </tr>
+  <tr>
+    <td >Integrated, Non-Occluding (“Open-Air”)</td>
+    <td > Porting and directionality should be directed towards, and as close as possible, to wearer’s ears</td>
+  </tr>
+  <tr>
+    <td >Detachable</td>
+    <td >Detach/attach reliability is a concern</td>
+  </tr>
+</table>
+                                              |
 
 ### Windows Mixed Reality USB Requirements
 
