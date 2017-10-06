@@ -232,15 +232,15 @@ The following test setup using toolchain components shall be used to evaluate a 
   </tr>
   <tr>
     <td  >Playback Stimulus   </td>
-    <td   colspan="2">Channel 1 of LevelCalibration.wav, via Mouth  </td>
+    <td align="center"  colspan="2">Channel 1 of LevelCalibration.wav, via Mouth  </td>
   </tr>
   <tr>
     <td  >Mic Array Input Level </td>
-    <td   colspan="2"> 0 dB      </td>
+    <td  align="center"  colspan="2"> 0 dB      </td>
   </tr>
   <tr>
     <td  >Capture Mode   </td>
-    <td   colspan="2">RAW (i.e. per RawRecordings.cmd)    </td>
+    <td  align="center"  colspan="2">RAW (i.e. per RawRecordings.cmd)    </td>
   </tr>
 </table>
 
@@ -355,15 +355,15 @@ The following test setup using toolchain components shall be used to evaluate a 
   </tr>
   <tr>
     <td  >Playback Stimulus   </td>
-    <td   colspan="2">Chirp from Channel 1 of TalkerAndAmbient.wav only, via Mouth  </td>
+    <td align="center" colspan="2">Chirp from Channel 1 of TalkerAndAmbient.wav only, via Mouth  </td>
   </tr>
   <tr>
     <td  >Mic Array Input Level </td>
-    <td   colspan="2"> Default Mic Gain        </td>
+    <td align="center"  colspan="2"> Default Mic Gain        </td>
   </tr>
   <tr>
     <td  >Capture Mode   </td>
-    <td   colspan="2">RAW (i.e. per RawRecordings.cmd)    </td>
+    <td align="center" colspan="2">RAW (i.e. per RawRecordings.cmd)    </td>
   </tr>
 </table>
 
@@ -476,15 +476,15 @@ Minimizing echo coupling of hardware is necessary to ensure optimal performance 
   </tr>
   <tr>
     <td  >Playback Stimulus   </td>
-    <td   colspan="2">Echo.wav from Toolchain, via device speakers</td>
+    <td align="center" colspan="2">Echo.wav from Toolchain, via device speakers</td>
   </tr>
   <tr>
     <td  >Mic Array Input Level </td>
-    <td   colspan="2"> Default Mic Gain   </td>
+    <td  align="center" colspan="2"> Default Mic Gain   </td>
   </tr>
   <tr>
     <td  >Capture Mode   </td>
-    <td   colspan="2">RAW (i.e. per RawRecordings.cmd)    </td>
+    <td align="center"  colspan="2">RAW (i.e. per RawRecordings.cmd)    </td>
   </tr>
 </table>
 
@@ -734,15 +734,15 @@ The following test setup using toolchain components shall be used to evaluate a 
   </tr>
   <tr>
     <td  >Playback Stimulus   </td>
-    <td   colspan="2">Channel 1 of LevelCalibration.wav, via Mouth</td>
+    <td align="center"  colspan="2">Channel 1 of LevelCalibration.wav, via Mouth</td>
   </tr>
   <tr>
     <td  >Mic Array Input Level </td>
-    <td   colspan="2"> 0 dB    </td>
+    <td  align="center" colspan="2"> 0 dB    </td>
   </tr>
   <tr>
     <td  >Capture Mode   </td>
-    <td   colspan="2">SPEECH (i.e. per SpeechRecordings.cmd)    </td>
+    <td  align="center" colspan="2">SPEECH (i.e. per SpeechRecordings.cmd)    </td>
   </tr>
 </table>
 
@@ -797,15 +797,15 @@ Echo performance is critical to function under music or content playback scenari
   </tr>
   <tr>
     <td  >Playback Stimulus   </td>
-    <td   colspan="2">Echo.wav from Toolchain, via device speakers</td>
+    <td align="center"  colspan="2">Echo.wav from Toolchain, via device speakers</td>
   </tr>
   <tr>
     <td  >Mic Array Input Level </td>
-    <td   colspan="2">Default Mic Gain      </td>
+    <td align="center"  colspan="2">Default Mic Gain      </td>
   </tr>
   <tr>
     <td  >Capture Mode   </td>
-    <td   colspan="2">SPEECH (i.e. per SpeechRecordings.cmd)    </td>
+    <td align="center"  colspan="2">SPEECH (i.e. per SpeechRecordings.cmd)    </td>
   </tr>
 </table>
 
@@ -856,15 +856,15 @@ In general, the following recommendations hold with the caveat that other system
   </tr>
   <tr>
     <td  >Playback Stimulus   </td>
-    <td   colspan="2">TalkerAndAmbient.wav from Toolchain, all channels, via Mouth and BGN System</td>
+    <td  align="center" colspan="2">TalkerAndAmbient.wav from Toolchain, all channels, via Mouth and BGN System</td>
   </tr>
   <tr>
     <td  >Mic Array Input Level </td>
-    <td   colspan="2">Default Mic Gain       </td>
+    <td align="center"  colspan="2">Default Mic Gain       </td>
   </tr>
   <tr>
     <td  >Capture Mode   </td>
-    <td   colspan="2">SPEECH (i.e. per SpeechRecordings.cmd)    </td>
+    <td align="center"  colspan="2">SPEECH (i.e. per SpeechRecordings.cmd)    </td>
   </tr>
 </table>
 \**Per test setup diagrams in  [Speech Platform: Input Device Test Setup](speechplatformdevicestestsetup.md)*
