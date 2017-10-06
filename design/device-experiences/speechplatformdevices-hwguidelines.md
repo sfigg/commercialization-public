@@ -140,10 +140,7 @@ The Microsoft speech pipeline is also capable of working with custom array types
 
 | **Application**   | **Recommended Solution(s)**     | **Guidelines**                                           |
 |-------------------|---------------------------------|----------------------------------------------------------|
-| Near-Field Device | Linear 2-Element                
-                                   
-  X = 45-170mm                     | <img src="../images/spd-recommend-013.png" width="232" height="151" />  |
-| Far-Field Device  | Linear 4-Element (Symmetrical)  
+| Near-Field Device | Linear 2-Element<br><br>X = 45-170mm| <img src="../images/spd-recommend-013.png" width="232" height="151" />  |    | Far-Field Device  | Linear 4-Element (Symmetrical)  
                                    
   X &gt; 60mm                      | <img src="../images/spd-recommend-014.png" width="272" height="126" />  |
 |                   | Linear 4-Element (Assymetrical) | <img src="../images/spd-recommend-015.png" width="358" height="90" />  |
@@ -415,15 +412,8 @@ Drift is defined as the absolute clock drift with reference to the ground truth 
 
 Devices with built in capture and render paths can negate this relative drift by deriving both capture and render clocks from the same master clock source. In this way, even in the presence of absolute drift in the master clock, the relative drift between the capture and render clocks is 0%.
 
-<img src="media/image13.png" width="384" height="353" />
-
-$$\\sigma = \\frac{\\text{ActualSamplingRate\\ }}{\\text{NominalSamplingRate}}$$
-
-Nominal(*t*) = *t*; *A**c**t**u**a**l*(*t*)=*σ**t*
-
-*Δ*(*t*)=*A**c**t**u**a**l*(*t*)−*N**o**m**i**n**a**l*(*t*)=*σ**t* − *t* = *t*(*σ* − 1)
-
-$$Drift = \\frac{\\Delta(t)}{t} = \\ \\sigma - 1$$
+![drift graph](../images/speechplatform7.png)
+![drift equation](../images/speechplatform8.png)
 
 | **Recommendation**     | **Standard**        |
 |------------------------|---------------------|
@@ -438,15 +428,11 @@ Similar to ***HW-10 Clock Drift***, ensuring low jitter is necessary to achieve 
 
 We define jitter as the absolute range of observed samples (or reported timestamps) about the nominal sample (or timestamp).
 
-<img src="media/image14.png" width="570" height="311" />
+<img src="../images/spd-recommend-020.jpg" width="570" height="311" />
 
 For example, in the case of a normal distribution of samples **t**<sub>**i**</sub> about the nominal sample **μ**, the absolute jitter **T** is defined as the following
 
-**μ** : *n**o**m**i**n**a**l* *s**a**m**p**l**e* *t**i**m**e*
 
-**t**<sub>**i**</sub> : *o**b**s**e**r**v**e**d* *s**a**m**p**l**e* *t**i**m**e*
-
-**T** =  2 \* *m**a**x*(|**u**−**t**<sub>**i**</sub>|)
 
 | **Recommendation**      | **Standard** |
 |-------------------------|--------------|
