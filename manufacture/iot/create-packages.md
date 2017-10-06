@@ -36,7 +36,7 @@ Packages fall into three main categories:
 
 1.  Install Windows ADK for Windows 10, version 1709, as well as the other tools and test certificates described in [Get the tools needed to customize Windows IoT Core](set-up-your-pc-to-customize-iot-core.md) and [Lab 1a: Create a basic image](create-a-basic-image.md).
 
-2.  Use a text editor to create a new package definition file (also called a Windows Manifest file) based on the following template. Save the file using the ***.wm.xml** extension. 
+2.  Use a text editor to create a new package definition file (also called a Windows Manifest file) based on the following template. Save the file using the **wm.xml** extension. 
 
     ```xml
     <?xml version='1.0' encoding='utf-8' standalone='yes'?>
@@ -249,7 +249,7 @@ Running PkgGen.exe with now generate one WOW package for each host package.
 04/05/2017  07:59 AM            10,021 OEM-Media-MediaService_Wow_arm64.arm.cab
 ```
 
-Typically, the 64 bit device will get its Host 64 bit package and either its Guest 32 bit or WOW package, both generated from myPackage.wm.xml.  To avoid resource conflicts between the two packages, build filters are used:
+Typically, the 64 bit device will get its Host 64 bit package and either its Guest 32 bit or WOW package, both generated from myPackage.wm.xml.  To avoid resource conflicts between the two packages, use **build filters**:
 
 ```xml
   <regKeys buildFilter="not build.isWow and build.arch = arm" >
