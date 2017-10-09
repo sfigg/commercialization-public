@@ -386,8 +386,6 @@
 #### [Customizations for Start](mobile/mcsf/customizations-for-start.md)
 ##### [Store live tile](mobile/mcsf/store-live-tile.md)
 
-## [Windows Provisioning framework](https://msdn.microsoft.com/library/windows/hardware/dn898375)
-
 ## [Configure power settings](power-settings/configure-power-settings.md)
 ### [Adaptive hibernate](power-settings/adaptive-hibernate.md)
 #### [StandbyBudgetPercent](power-settings/standbybudgetpercent.md)
