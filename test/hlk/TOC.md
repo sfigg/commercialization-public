@@ -23,6 +23,7 @@
 ### [Step 6: Select target to test](getstarted/proxy-step-6--select-target-to-test.md)
 ### [Step 7: Select and run tests](getstarted/proxy-step-7--select-and-run-tests.md)
 ### [Step 8: View test results and log files](getstarted/proxy-step-8--view-test-results-and-log-files.md)
+## [HLK ARM64 Getting Started Guide](getstarted/hlk-arm64-getting-started-guide.md)
 
 ## [HLK User's Guide](user/windows-hardware-lab-kit-user-s-guide.md)
 ### [Windows Hardware Compatibility Program](user/windows-hardware-compatibility-program-overview.md)
