@@ -367,7 +367,7 @@ The following test setup using toolchain components shall be used to evaluate a 
   </tr>
 </table>
 
-\**Per test setup diagrams in S [Speech Platform: Input Device Test Setup](speechplatformdevicestestsetup.md)*
+\**Per test setup diagrams in [Speech Platform: Input Device Test Setup](speechplatformdevicestestsetup.md)*
 
 **Test Procedure:**
 
@@ -909,7 +909,7 @@ The Driver Configuration Verification tool can be used for verification on the d
 
 In this example, a laptop has two channels that are on the screen, near the top bezel and facing (ported) forwards:
 
-<embed src="../images/spd-recommend-046.png" width="387" height="360" />
+<embed src="../images/spd-recommend-046.png" alt="laptop" width="387" height="360">
 
 **Details:**
 
