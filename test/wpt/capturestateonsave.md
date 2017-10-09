@@ -22,27 +22,18 @@ Represents a collection of keywords that describe events to be captured when a t
 ## Element Hierarchy
 
 
-&lt;[WindowsPerformanceRecorder](windowsperformancerecorder.md)&gt;
+* \<[WindowsPerformanceRecorder](windowsperformancerecorder.md)\>
+  * \<[Profiles](profiles.md)\>
+    * \<[EventProvider](eventprovider.md)\>
+      * \<**CaptureStateOnSave**\>
+    * \<[Profile](profile-wpr.md)\>
+      * \<[Collectors](collectors.md)\>
+        * \<[EventCollectorId](eventcollectorid.md)\>
+          * \<[EventProviderId](eventproviderid.md)\>
+            * \<**CaptureStateOnSave**\>
+          * \<[EventProvider](eventprovider.md)\>
+            * \<**CaptureStateOnSave**\>
 
-     &lt;[Profiles](profiles.md)&gt;
-
-          &lt;[EventProvider](eventprovider.md)&gt;
-
-               &lt;**CaptureStateOnSave**&gt;
-
-          &lt;[Profile](profile-wpr.md)&gt;
-
-               &lt;[Collectors](collectors.md)&gt;
-
-                    &lt;[EventCollectorId](eventcollectorid.md)&gt;
-
-                         &lt;[EventProviderId](eventproviderid.md)&gt;
-
-                              &lt;**CaptureStateOnSave**&gt;
-
-                         &lt;[EventProvider](eventprovider.md)&gt;
-
-                              &lt;**CaptureStateOnSave**&gt;
 
 ## Syntax
 
@@ -62,13 +53,6 @@ Represents a collection of keywords that describe events to be captured when a t
 ### Attributes
 
 <table>
-<colgroup>
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-</colgroup>
 <thead>
 <tr class="header">
 <th>Attribute</th>
@@ -94,60 +78,21 @@ Represents a collection of keywords that describe events to be captured when a t
 </tbody>
 </table>
 
- 
 
 ### Child Elements
 
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-<th>Description</th>
-<th>Requirement</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>[Keyword (in EventProvider)](keyword--in-eventprovider-.md)</p></td>
-<td><p>Describes the Event Tracing for Windows (ETW) keyword for a user-mode provider.</p></td>
-<td><p>Required, one or more.</p></td>
-</tr>
-</tbody>
-</table>
+| Element                                                     | Description                                                                     | Requirement            |
+|:------------------------------------------------------------|:--------------------------------------------------------------------------------|:-----------------------|
+| [Keyword (in EventProvider)](keyword--in-eventprovider-.md) | Describes the Event Tracing for Windows (ETW) keyword for a user-mode provider. | Required, one or more. |
 
- 
 
 ### Parent Elements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>[EventProvider](eventprovider.md)</p></td>
-<td><p>Represents an event provider for the profile.</p></td>
-</tr>
-<tr class="even">
-<td><p>[EventProviderId](eventproviderid.md)</p></td>
-<td><p>Represents an event provider identifier.</p></td>
-</tr>
-</tbody>
-</table>
+| Element                               | Description                                   |
+|:--------------------------------------|:----------------------------------------------|
+| [EventProvider](eventprovider.md)     | Represents an event provider for the profile. |
+| [EventProviderId](eventproviderid.md) | Represents an event provider identifier.      |
 
- 
 
 ## Example
 
@@ -171,14 +116,4 @@ The following code example shows how this element is used.
 [CustomKeyword](customkeyword.md)
 
 [CaptureStateOnStart](capturestateonstart.md)
-
- 
-
- 
-
-
-
-
-
-
 
