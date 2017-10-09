@@ -22,20 +22,18 @@ A single-use device is easy to set up in Windows 10 for desktop editions (Pro, E
 > [!Note]
 > A Universal Windows app is built on the Universal Windows Platform (UWP), which was first introduced in Windows 8 as the Windows Runtime. A Classic Windows application uses the Classic Windows Platform (CWP) (e.g., COM, Win32, WPF, WinForms, etc.) and is typically launched using an .EXE or .DLL file.
 
-In addition to configuring assigned access or shell launcher, you can also configure optional features to further define the Kiosk experience. Some of the optional features include power button availability, welcome screen elements, and the ability to protect your internal physical media.
+In addition to configuring assigned access or shell launcher, you can also [configure optional features to further define the Kiosk experience](#lockdown-settings). Some of the optional features include power button availability, welcome screen elements, and the ability to protect your internal physical media.
 
 ## <a name="windows-cd"></a>Windows Configuration Designer method for either a UWP or a Classic Windows application
 
-When you use the Provision Kiosk Devices wizard in Windows Configuration Designer, you can configure the kiosk to run either a single UWP app or a Classic Windows app. In Windows 10 version 1709, you can also create a Customizations XML file to run multiple apps on the kiosk device.
+When you use the Provision Kiosk Devices wizard in Windows Configuration Designer, you can configure the kiosk to run either a single UWP app or a Classic Windows app.
 
 > [!Important]
 > When you build a provisioning package, you may include sensitive information in the project files and in the provisioning package (.ppkg) file. Although you have the option to encrypt the .ppkg file, project files are not encrypted. You should store the project files in a secure location and delete the project files when they are no longer needed.
 
-### Create and build a provisioning package
-
 1. [Install Windows Configuration Designer](https://docs.microsoft.com/en-us/windows/configuration/provisioning-packages/provisioning-install-icd).
 1. Open Windows Configuration Designer and select **Provision kiosk devices**. Name your project and click **Next**.
-1. Create a provisioning package. See [Instructions for the kiosk wizard](https://docs.microsoft.com/en-us/windows/configuration/set-up-a-kiosk-for-windows-10-for-desktop-editions#wizard) for instructions on moving through the steps of the wizard: **Setup device**, **Set up network**, **Account Management**, **Add applications** (you can install multiple applications, both Classic Windows and UWP apps, by clicking the plus button), **Add certificates**, **Configure kiosk account and app**, and **Configure kiosk common settings**.
+1. Create a provisioning package. See [Instructions for the kiosk wizard](https://docs.microsoft.com/en-us/windows/configuration/set-up-a-kiosk-for-windows-10-for-desktop-editions#wizard) for instructions on moving through the steps of the wizard: **Setup device**, **Set up network**, **Account Management**, **Add applications**, **Add certificates**, **Configure kiosk account and app**, and **Configure kiosk common settings**.
 1. Build the provisioning package. Click **Export** and select **Provisioning Package**. Enter the requested information and click **Finish** to close the wizard and return to the Customizations page. See [Build the provisioning package](https://docs.microsoft.com/en-us/windows/configuration/provisioning-packages/provisioning-create-package#build-package) for more details if needed.
 * [Apply the provisioning package](https://docs.microsoft.com/en-us/windows/configuration/provisioning-packages/provisioning-apply-package) to the device.
 
@@ -53,13 +51,13 @@ To set up a multi-app kiosk experience:
 1. Determine which apps you will expose on the kiosk device.
    * For UWP apps, you need to provide the App User Model ID (AUMID). [Learn how to get the AUMID](https://go.microsoft.com/fwlink/p/?LinkId=614867).
    * For desktop apps, you need to specify the full path of the executable, which can contain one or more system environment variables in the form of %variableName% (i.e. %systemroot%, %windir%).
-1. Create a new XML file. The XML file which will designate the apps allowed to run on the kiosk device (based on either the AUMID or the path), the visibility of the task bar on the device, the layout of the start menu, and the user accounts to associate with the kiosk device. See [Multi-app kiosk XML reference](https://docs.microsoft.com/en-us/windows/configuration/multi-app-kiosk-xml)
+1. Create a new configuration XML file. The XML file will configure the apps allowed to run on the device (based on either the AUMID or the path), the visibility of the taskbar, the layout of the start menu, and the user accounts to associate with the kiosk device. See [Multi-app kiosk XML reference](https://docs.microsoft.com/en-us/windows/configuration/multi-app-kiosk-xml) for a full example of your configuration XML file.
 1. Add the XML file to a provisioning package using Windows Configuration Designer. This will be done in the **Advanced provisioning** section, under **Runtime settings** > **AssignedAccess** > **MultiAppAssignedAccessSettings**.
 1. Build the provisioning package, and copy it to the root directory of a USB drive.
 1. [Apply the provisioning package](https://docs.microsoft.com/en-us/windows/configuration/provisioning-packages/provisioning-apply-package) to the device.
 
 > [!Tip]
-> For etailed instructions, including definitions for each of the XML settings, see [Create a Windows 10 kiosk that runs multiple apps](https://docs.microsoft.com/en-us/windows/configuration/lock-down-windows-10-to-specific-apps).
+> For detailed instructions, including definitions for each of the configuration XML settings, see [Create a Windows 10 kiosk that runs multiple apps](https://docs.microsoft.com/en-us/windows/configuration/lock-down-windows-10-to-specific-apps).
 
 ## <a name="assigned-access"></a>Assigned access method for UWP applications
 
