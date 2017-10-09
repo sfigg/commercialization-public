@@ -7,10 +7,10 @@ MSHAttr:
 ms.assetid: 3CEA61AA-5625-4F1F-84ED-69ED726BB74F
 ---
 
-# Step 4: Onboard Mobile Test systems
+# Step 4: Onboard Mobile/IoT Test systems
 
 
-After you install the Windows Hardware Lab Kit (Windows HLK) on the HLK Controller, and the Windows HLK Proxy Client on the Proxy system, you are ready to add mobile test systems to the environment.
+After you install the Windows Hardware Lab Kit (Windows HLK) on the Controller system, and the Windows HLK Proxy Client on the Proxy system, you are ready to add mobile test systems to the environment.
 
 ## <span id="Known_Issues"></span><span id="known_issues"></span><span id="KNOWN_ISSUES"></span>Known Issues
 
@@ -53,10 +53,7 @@ After you install the Windows Hardware Lab Kit (Windows HLK) on the HLK Controll
     ```
 
     Example:
-
-    ``` syntax
-    BCDEdit /store G:\EFIESP\efi\Microsoft\Boot\BCD /set {default} loadoptions "EEM"
-    ```
+    `BCDEdit /store G:\EFIESP\efi\Microsoft\Boot\BCD /set {default} loadoptions "EEM"`
 
 7.  Restart the device (if the image installed on the DUT is a lab or a health image, put the device in flashing mode).
 8.  To onboard the device, from the elevated command prompt, run the following command:
@@ -66,10 +63,8 @@ After you install the Windows Hardware Lab Kit (Windows HLK) on the HLK Controll
     ```
 
     Example:
-
-    ``` syntax
-    KitsDeviceDetector.exe /Physical:Fake_PC.dll /DeviceName:mydevice /DeviceId:00000015-c0fb-79c3-0000-000000000000 /machinepool:$\mypool
-    ```
+    `KitsDeviceDetector.exe /Physical:Fake_PC.dll /DeviceName:mydevice /DeviceId:00000015-c0fb-79c3-0000-000000000000 /machinepool:$\mypool`
+    
     >[!NOTE]
     >  If testing with a Health image, include the following parameter:
     >`/imageprofile:health`
@@ -87,7 +82,7 @@ After you install the Windows Hardware Lab Kit (Windows HLK) on the HLK Controll
     1.  In the Proxy Service command prompt window, press CTRL + C to stop the service.
     2.  Restart the Proxy Service double clicking on the "WTT Proxy" shortcut on the desktop of the Proxy System, or by navigating to %ProgramFiles(X86)%\\WTTMobile\\Client\\ and running the following command from the elevated command prompt:
 
-        ``` syntax
+        ```syntax
         WTTProxy.exe -console
         ```
 
@@ -106,9 +101,7 @@ After you install the Windows Hardware Lab Kit (Windows HLK) on the HLK Controll
 
     Example:
 
-    ``` syntax
-    KitsDeviceDetector.exe /devicefilters:myaries  /machinepool:$\mypool
-    ```
+    `KitsDeviceDetector.exe /devicefilters:myaries  /machinepool:$\mypool`
 
     >[!NOTE]
     >  The image on the device must be either a lab image or a health image.
@@ -132,19 +125,24 @@ After you install the Windows Hardware Lab Kit (Windows HLK) on the HLK Controll
     >  The KitsDeviceDetector log can found at %ProgramFiles(x86)> %\\WTTMobile\\Tools\\KitsDeviceDetector.log
 
     >[!NOTE]
-    >  For more information on HLK mobile testing tools and utilities, see the following topic: [HLK Mobile Testing Tools and Utilities](../user/hlk-mobile-testing-tools-and-utilities.md)
+    >FFUTool.exe is included in the Windows Assessment and Deployment Kit (ADK), and can be installed by selecting the “Imaging and Configuration Designer” option when installing the ADK. 
+    > For more information on the ADK, see: [Download the Windows ADK](https://developer.microsoft.com/en-us/windows/hardware/windows-assessment-deployment-kit)
+    >  For more information on HLK mobile testing tools and utilities, see: [HLK Mobile Testing Tools and Utilities](../user/hlk-mobile-testing-tools-and-utilities.md)
 
-     
 
 4.  Restart the proxy service in elevated mode.
     1.  In the Proxy Service command prompt window, press CTRL + C to stop the service.
     2.  Restart the Proxy Service double clicking on the "WTT Proxy" shortcut on the desktop of the Proxy System, or by navigating to %ProgramFiles(X86)%\\WTTMobile\\Client\\ and running the following command from the elevated command prompt:
 
-        `WTTProxy.exe -console`
+        ```syntax
+        WTTProxy.exe -console
+        ```
 
 5.  \[For Health image only\] – After KitsDeviceDetector is complete, run the following commands from %ProgramFiles(x86)%\\WTTMobile\\Tools\\
 
-    `AriesUtil.exe ResetDevice /Aries:<aries-name> [/Autoskip:true]`
+    ```syntax
+    AriesUtil.exe ResetDevice /Aries:<aries-name> [/Autoskip:true]
+    ```
 
 6.  Validation: After running device detector (steps above), the device should be booted to a valid OS, and be a visible target that shows as Ready in HLK Manager and HLK Studio.
 
@@ -157,7 +155,9 @@ After you install the Windows Hardware Lab Kit (Windows HLK) on the HLK Controll
     1.  Boot the device and find the IP address.
     2.  From the elevated command prompt, run the following command:
 
-        `KitsDeviceDetector.exe /rundevicediscovery`
+        ```syntax
+        KitsDeviceDetector.exe /rundevicediscovery
+        ```
 
         >[!NOTE]
         >  This command will output all of the devices on the subnet that has Sirep running. Each string will look something like this:
@@ -170,17 +170,20 @@ After you install the Windows Hardware Lab Kit (Windows HLK) on the HLK Controll
     2.  "UniqueId:"
 5.  To onboard the device, run the command from the elevated command prompt:
 
-    `KitsDeviceDetector.exe /machinepool:$\Pool /Physical:Fake_PC.dll /DeviceName:NAME_OF_DEVICE /DeviceId:UNIQUEID /DeviceMacAddress:MAC_ADDRESS /SDCardImageInstalled`
+    ```syntax
+    KitsDeviceDetector.exe /machinepool:$\Pool /Physical:Fake_PC.dll /DeviceName:NAME_OF_DEVICE /SkipFFUCheck
+    ```
 
     Example:
-
-    `KitsDeviceDetector.exe /machinepool:$\Test_Pool /Physical:Fake_PC.dll /DeviceName:8CAE4CF5D6A5 /DeviceId:00000000-0000-0000-0000-8CAE4CF5D6A5 /DeviceMacAddress:8C-AE-4C-F5-D6-A5 /SDCardImageInstalled`
+    `KitsDeviceDetector.exe /machinepool:$\Test_Pool /Physical:Fake_PC.dll /DeviceName:8CAE4CF5D6A5 /DeviceId:00000000-0000-0000-0000-8CAE4CF5D6A5 /SkipFFUCheck`
 
 6.  Restart the proxy service in elevated mode.
     1.  In the Proxy Service command prompt window, press CTRL + C to stop the service.
     2.  Restart the Proxy Service double clicking on the "WTT Proxy" shortcut on the desktop of the Proxy System, or by navigating to %ProgramFiles(X86)%\\WTTMobile\\Client\\ and running the following command from the elevated command prompt:
 
-        `WTTProxy.exe -console`
+        ```syntax
+        WTTProxy.exe -console
+        ```
 
 7.  Validation: After running device detector (steps above), the device should be booted to a valid OS, and be a visible target that shows as Ready in HLK Manager and HLK Studio.
 

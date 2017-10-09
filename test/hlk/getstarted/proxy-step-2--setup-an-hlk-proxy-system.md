@@ -13,7 +13,7 @@ ms.assetid: 25425C6A-D375-4C5A-9A91-5F596DB32E96
 >[!NOTE]  
 > Make sure that the credentials of the user on the proxy system match those of an administrator on your HLK controller:
 >-   Local administrator account on proxy: &lt;ProxyMachineName&gt;\\TestAdmin
->-   Local administrator account on controller: &lt;HLKControllerMachineName&gt;&gt;\\TestAdmin
+>-   Local administrator account on controller: &lt;HLKControllerMachineName&gt;\\TestAdmin
 >-   Both with the same password
 
  
