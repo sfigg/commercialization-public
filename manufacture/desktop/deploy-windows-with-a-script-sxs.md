@@ -16,9 +16,9 @@ You can use scripts to take a Windows image and deploy Windows onto new PCs quic
 
 ## <span id="Get_the_image"></span>Step 1: Mount the image
 
-1.  On your technician PC, right-click the .img file for Windows 10, version 1703 Home from the Windows Home 10, version 1703 32/64 English OPK DVD, and select **Mount**. This loads the files to a temporary drive letter (example, D:).
+1.  On your technician PC, right-click the .img file for Windows 10 Home from the Windows Home 10 32/64 English OPK DVD, and select **Mount**. This loads the files to a temporary drive letter (example, D:).
 
-2.  Extract the Home edition. The Windows Home 10, version 1703 32/64 English OPK image includes both  Professional and Home editions. (Index 1=Professional, Index 2=Home). We recommend starting with the Home edition, because you can upgrade your images later from Home to Professional using DISM commands, but you can't downgrade. 
+2.  Extract the Home edition. The Windows Home 10 English OPK image includes both  Professional and Home editions. (Index 1=Professional, Index 2=Home). We recommend starting with the Home edition, because you can upgrade your images later from Home to Professional using DISM commands, but you can't downgrade. 
 
     ```
     Dism /Get-ImageInfo /ImageFile:"D:\sources\install.wim"
