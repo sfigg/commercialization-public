@@ -14,24 +14,21 @@ ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-# Collectors
 
+# Collectors
 
 Represents a collection of system collector identifiers, event collector identifiers, and optionally heap event collector identifiers.
 
+
 ## Element Hierarchy
 
+* \<[WindowsPerformanceRecorder](windowsperformancerecorder.md)\>
+  * \<[Profiles](profiles.md)\>
+    * \<[Profile](profile-wpr.md)\>
+      * \<**Collectors**\>
 
-&lt;[WindowsPerformanceRecorder](windowsperformancerecorder.md)&gt;
-
-     &lt;[Profiles](profiles.md)&gt;
-
-          &lt;[Profile](profile-wpr.md)&gt;
-
-               &lt;**Collectors**&gt;
 
 ## Syntax
-
 
 ```
 <Collectors Operation = "Set" | "Add" | “Remove” >
@@ -44,19 +41,13 @@ Represents a collection of system collector identifiers, event collector identif
 </Collectors>
 ```
 
+
 ## Attributes and Elements
 
 
 ### Attributes
 
 <table>
-<colgroup>
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-</colgroup>
 <thead>
 <tr class="header">
 <th>Attribute</th>
@@ -82,79 +73,24 @@ Represents a collection of system collector identifiers, event collector identif
 </tbody>
 </table>
 
- 
 
 ### Child Elements
 
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-<th>Description</th>
-<th>Requirement</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>[SystemCollectorId](systemcollectorid.md)</p></td>
-<td><p>Represents a system collector identifier.</p></td>
-<td><p>Optional, zero or 1. There must be at least one collector, either system or event.</p></td>
-</tr>
-<tr class="even">
-<td><p>[EventCollectorId](eventcollectorid.md)</p></td>
-<td><p>Represents an event collector identifier.</p></td>
-<td><p>Optional, zero or more. There must be at least one collector, either system or event.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[HeapEventCollectorId](heapeventcollectorid.md)</p></td>
-<td><p>Represents a heap event collector identifier.</p></td>
-<td><p>Optional, zero or more.</p></td>
-</tr>
-</tbody>
-</table>
+| Element                                         | Description                                   | Requirement                                                                           |
+|:------------------------------------------------|:----------------------------------------------|:--------------------------------------------------------------------------------------|
+| [SystemCollectorId](systemcollectorid.md)       | Represents a system collector identifier.     | Optional, zero or 1. There must be at least one collector, either system or event.    |
+| [EventCollectorId](eventcollectorid.md)         | Represents an event collector identifier.     | Optional, zero or more. There must be at least one collector, either system or event. |
+| [HeapEventCollectorId](heapeventcollectorid.md) | Represents a heap event collector identifier. | Optional, zero or more.                                                               |
 
- 
 
 ### Parent Elements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>[Profile](profile-wpr.md)</p></td>
-<td><p>Represents a collection of problem categories and collectors.</p></td>
-</tr>
-</tbody>
-</table>
+| Element                   | Description                                                   |
+|:--------------------------|:--------------------------------------------------------------|
+| [Profile](profile-wpr.md) | Represents a collection of problem categories and collectors. |
 
- 
 
 ## Related topics
 
-
 [Elements](elements.md)
-
- 
-
- 
-
-
-
-
-
-
 

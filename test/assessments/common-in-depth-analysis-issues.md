@@ -14,48 +14,19 @@ ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-# Common In-Depth Analysis Issues
 
+# Common In-Depth Analysis Issues
 
 Assessments set predefined analysis thresholds for the completion of an activity that it's measuring. Assessments identify and report issues when activity durations exceed these thresholds. Some assessments in the Windows Assessment Toolkit perform advanced issue analysis. You can view these issues in the Windows Assessment Console and the Windows Assessment Services - Client (Windows ASC), and further analyze them in Windows Performance Analyzer (WPA).
 
-**Note**  
-Issues that are generated from the assessments come from several sources. This topic only describes some common advanced analysis issues.
+Issues that are generated from the assessments come from several sources. This topic describes some of the common advanced analysis issues.
 
- 
+
+## Issue Format
 
 In the Windows Assessment Console and the Windows ASC, issues that are reported by assessments appear in 2 locations: in the left column of the **Results View** page and in the details pane on the right. On the **Results View** page, issues, warnings and errors appear in the run information table and in the assessment results table. You can group these issues by right-clicking **Issues** and then selecting criteria to group by. In the details pane, issues are sorted by severity. You can filter them by using keywords and metadata. For more information, see [Group, Filter, and Search Issues](group-filter-and-search-issues.md).
 
 When you open WPA using the link in the Results View, you can see a list of issues that the assessment has identified in the WPA **Issues** window. When you choose one of these issues, details and a recommended solution appear in the WPA **Details** window. For more information about WPA, see [Windows Performance Analyzer](http://go.microsoft.com/fwlink/?LinkId=214551).
-
-In this topic:
-
--   [Issue Format](#formatissue)
-
--   [Managed code](#managedcode)
-
--   [Processor use](#excessprocessor)
-
--   [Storage use](#excessstorage)
-
--   [Processing Delays](#processingdelays)
-
--   [Storage I/O Delays](#storageiodekays)
-
--   [Registry Flushes](#registryhiveflushes)
-
--   [Time Accounting](#timeaccounting)
-
--   [Missing Symbols](#missingsymbols)
-
--   [DPCs and ISRs](#dpcisr)
-
--   [Summary Issues](#summaryissues)
-
--   [Assessment logging](#logging)
-
-## <a href="" id="formatissue"></a>Issue Format
-
 
 Most of the issues that appear in the details pane in the Windows Assessment Console and the Windows ASC have a common structure that can include:
 
@@ -80,42 +51,32 @@ Most of the issues that appear in the details pane in the Windows Assessment Con
     -   Process image details include file and version information about the process that generated the identified issue, including:
 
         -   File name
-
         -   File path
-
         -   File description
-
         -   File version
-
         -   Manufacturer
 
     -   Summary of disk activity by file, including:
 
         -   Size and counts of disk reads and writes
-
         -   Counts of disk flushes
 
     -   Summary of CPU activity by process/threads, including:
 
         -   Impact, in terms of CPU time, of each thread of the process
-
         -   Call stacks that show where the performance impact occurred and for how long
 
     -   Summary of delays that are caused by CPU or disk activity by process or threads, including:
 
         -   Threads or processes that were delayed, including the duration of the delay
-
         -   Impact of each thread of the process, including the duration of the delay
-
         -   Call stacks for each thread that causes the delay or is affected by it
 
-            **Note**  
-            The information that the call stacks provide is a statistical representation of an activity. Its accuracy depends on the samples that the assessment collected.
+            > [!NOTE]
+            > The information that the call stacks provide is a statistical representation of an activity. Its accuracy depends on the samples that the assessment collected.
 
-             
 
-## <a href="" id="managedcode"></a>Managed Code
-
+## Managed Code
 
 Managed code refers to code that's running under the Microsoft .NET Common Language Runtime (CLR). The CLR manages the execution of applications that are based on the Microsoft .NET Framework. CLR processes start during Windows boot and can cause additional resource consumption, which can extend boot time. Files that the .NET Framework reads during CLR initialization can add megabytes of storage reads that can delay the boot process and the appearance of the **Start** screen.
 
@@ -130,13 +91,11 @@ For issues in the category of managed code, if a .NET Framework-based applicatio
 Using managed code involves some performance overhead, and the per-call overhead can become very noticeable. In the **Further analysis** area of the issue, choose the WPA in-depth analysis link to determine the source of the overhead, and then reduce the delays by following any of these steps:
 
 -   Avoid using nonessential managed code in the boot path.
-
 -   Use the Task Scheduler to start applications later.
-
 -   Start applications only on demand or when triggered. For more information, see [\[MSDN\] Developing Efficient Background Process for Windows](http://go.microsoft.com/fwlink/?LinkId=233633).
 
-## <a href="" id="excessprocessor"></a>Processor Use
 
+## Processor Use
 
 High CPU use by applications and services can contribute to a poor user experience, like UI unresponsiveness and video and sound glitches. When a process thread that's running at normal or high priority exceeds a threshold value for use of processor resources, the assessment flags the process as an issue and calculates the delay. When a single process uses too much CPU, other processes can be delayed because they must compete for system resources. Generated issues are color coded as red or yellow in terms of their impact on the CPU.
 
@@ -148,13 +107,11 @@ Process *&lt;X&gt;* uses the CPU for 5.3 seconds during Fast startup resume post
 
 In the **Further analysis** area of the issue, choose the WPA in-depth analysis link to determine which function of the process needs further investigation. Excessive processor use can occur in more than one thread at a time. For each thread that's involved, view the function call stacks in WPA.
 
-**Note**  
-The information that the call stacks provide is a statistical representation of an activity. Its accuracy depends on the samples that the assessment collected.
+> [!NOTE]  
+> The information that the call stacks provide is a statistical representation of an activity. Its accuracy depends on the samples that the assessment collected.
 
- 
 
-## <a href="" id="excessstorage"></a>Storage Use
-
+## Storage Use
 
 A process can perform storage reads, writes, or flushes at run time. Because a hard drive is a single shared resource, excessive or unnecessary use of storage might cause significant performance issues that the assessment identifies.
 
@@ -174,8 +131,8 @@ In the **Further analysis** area of the issue, choose the WPA in-depth analysis 
 
 -   Disk flushes affect I/O activity by other processes. You should perform disk flushes only when they're necessary.
 
-## <a href="" id="processingdelays"></a>Processing Delays
 
+## Processing Delays
 
 When a thread uses CPU or disk resources, it increases the duration of the activity. Contention over the processor often manifests as thread starvation and/or preemption. The analysis section of this issue consists of all threads affected by the process, which were first preempted or starved, and later readied after the process completed.
 
@@ -255,8 +212,8 @@ The types of processing delays include:
 
     In the **Further analysis** area of the issue, choose the WPA in-depth analysis link. You can determine the cause of unexpected thread sleep can from the function call stacks and the file information.
 
-## <a href="" id="storageiodekays"></a>Storage I/O Delays
 
+## Storage I/O Delays
 
 When a thread uses storage resources, it can increase the duration of the activity. When multiple threads contend for the use of storage, the resulting random disk seeks make delays more significant.
 
@@ -286,8 +243,8 @@ The types of storage delays include:
 
     In the **Further analysis** area of the issue, choose the WPA in-depth analysis link to see the call stacks for each thread that causes flushes to disk, and to identify the relevant code that contributed to the activity delay.
 
-## <a href="" id="registryhiveflushes"></a>Registry Flushes
 
+## Registry Flushes
 
 Registry flushes occur when processes explicitly use the **RegFlushKey** function after they complete a registry modification. Assessments have determined that registry flushes can be an important contributor to user-perceived performance problems.
 
@@ -315,8 +272,8 @@ There are 2 types of registry flush issues:
 
     In the **Further analysis** area of the issue, choose the WPA in-depth analysis link to analyze the function call stacks for each thread of the processes.
 
-## <a href="" id="timeaccounting"></a>Time Accounting
 
+## Time Accounting
 
 Assessments typically report multiple issues per activity. Time accounting issues show the combined time that multiple issues account for, as well as any portion of the activity not accounted for by the issues. If an activity consists of many short duration issues, and they are below the analysis threshold, they are not reported as individual issues. This design helps to highlight the most impactful issues so you can focus your investigation on them.
 
@@ -329,39 +286,33 @@ This threshold is the time that the entire activity is expected to take. Time Ac
 Issues are reported if and only if the impact they describe is greater than the analysis threshold.
 
 <table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
 <tbody>
-<tr class="odd">
-<td><p><strong>Type 1:</strong></p>
+<tr>
+<td><strong>Type 1:</strong>
 <p>The activity duration exceeds the activity duration threshold. The activity also has issues that exceed the analysis threshold.</p></td>
-<td><p><strong>Issue example</strong></p>
+<td><strong>Issue example</strong>
 <p>Summary: Fast startup shutdown process Example.exe takes 6.5 seconds, and exceeds the threshold of 2 seconds. The assessment identified other issues that impact this activity. These other issues fully account for this activity's time.</p></td>
 </tr>
-<tr class="even">
-<td><p><strong>Type 2:</strong></p>
+<tr>
+<td><strong>Type 2:</strong>
 <p>The activity duration exceeds the activity duration threshold. The activity also has a mixed set of issues—some that are greater than the analysis threshold and others that are less than the analysis threshold.</p></td>
-<td><p><strong>Issue example</strong></p>
+<td><strong>Issue example</strong>
 <p>Summary: Fast startup shutdown process Example.exe takes 6.5 seconds, and exceeds the threshold of 2.0 seconds. The assessment identified other issues that impact this activity. These other issues account for 5.9 seconds of this activity's time. The remaining 500 milliseconds consist of issues that do not exceed the minimum analysis threshold of 150 milliseconds.</p></td>
 </tr>
-<tr class="odd">
-<td><p><strong>Type 3:</strong></p>
+<tr>
+<td><strong>Type 3:</strong>
 <p>The activity duration exceeds the activity duration threshold. All the issues that impact this activity are less than the analysis threshold and are therefore not displayed.</p></td>
-<td><p><strong>Issue example</strong></p>
+<td><strong>Issue example</strong>
 <p>Summary: Fast startup shutdown process Example.exe takes 6.5 seconds, and exceeds the threshold of 2.0 seconds. The assessment identified other issues that impact this activity. These other issues that impact this activity do not exceed the minimum analysis threshold of 200 milliseconds so they are omitted.</p></td>
 </tr>
-<tr class="even">
-<td><p><strong>Type 4:</strong></p>
+<tr>
+<td><strong>Type 4:</strong>
 <p>The activity duration exceeds the period when assessment logging was active. However, the delays were found in the activity when logging was active. These delays were caused by CPU or Disk contention.</p></td>
-<td><p><strong>Issue example</strong></p>
+<td><strong>Issue example</strong>
 <p>Summary: The duration of Fast startup resume post on/off is unknown because this activity completes after assessment logging ends. 4 seconds of this activity, while assessment logging is active, are due to CPU contention.</p></td>
 </tr>
 </tbody>
 </table>
-
- 
 
 **Recommendation**
 
@@ -375,8 +326,8 @@ In the **Further analysis** area of the issue, choose the WPA in-depth analysis 
 
 For more information about how to discover related issues, see [Group, Filter, and Search Issues](group-filter-and-search-issues.md).
 
-## <a href="" id="missingsymbols"></a>Missing Symbols
 
+## <a href="" id="missingsymbols"></a>Missing Symbols
 
 Some assessments require access to symbols. In some cases, the information in the assessment results can be incorrect or incomplete, if a symbol server isn't available. In many cases, Internet connectivity and access to the Microsoft public symbol server satisfy this dependency. In other cases, you can set up a private symbol server or install the symbols on the local computer.
 
@@ -394,15 +345,13 @@ Critical symbols missing: Ensure that the machine has access to the Microsoft pu
 
 Symbols of non-Microsoft components missing: These missing symbols could be for your own components, or for those owned by a different partner. Collaborate with your partners to obtain these third-party symbols for the component that is missing symbols, and configure the correct symbols path on the computer before re-running the assessment.
 
-**Note**  
-For more information about setting the correct symbols path, see [Troubleshooting Windows Assessment Services](http://go.microsoft.com/fwlink/?LinkId=246155).
-
- 
+> [!NOTE]  
+> For more information about setting the correct symbols path, see [Troubleshooting Windows Assessment Services](http://go.microsoft.com/fwlink/?LinkId=246155).
 
 Sharing components’ symbols across partners in the ecosystem ensures better collaboration through a reliable and efficient bug triage and analysis process. We recommend that partners define these collaborative relationships, which will ensure that you have the resources you need to find the root cause of the issues reported on your system component.
 
-## <a href="" id="dpcisr"></a>DPCs and ISRs
 
+## DPCs and ISRs
 
 Long-running Deferred Procedure Calls (DPCs) and Interrupt Service Routines (ISRs) can introduce delays that extend the duration of an activity, and this latency could be perceived by users as a performance issue.
 
@@ -456,13 +405,11 @@ The Issue Details list each thread preempted by the ISR/DPC. The list is roughly
 
 DPC exceeds the threshold of 1.0 milliseconds 5 times during Media engine lifetime. The 5 instances of this DPC run for a combined total of 3.7 seconds
 
-**Note**  
-The information provided in the call stacks is a statistical representation of the activity in question (sampled once every millisecond), and its accuracy is dependent on the samples collected by the assessment.
+> [!NOTE]  
+> The information provided in the call stacks is a statistical representation of the activity in question (sampled once every millisecond), and its accuracy is dependent on the samples collected by the assessment.
 
- 
 
-## <a href="" id="summaryissues"></a>Summary Issues
-
+## Summary Issues
 
 Summary issues contain an overview of the issues identified by the assessment that demonstrate a particular performance behavior, and help visualize the broader impact of these on the system. Here are the different types of Summary Issues that could feature in assessment results.
 
@@ -476,10 +423,8 @@ The issue’s details in WPA contain file image information, and recommendations
 
 Summary: Fast startup overall resume issues 275MB of reads and writes, and flushes 82 times to storage
 
-**Note**  
-When issues are grouped by **Category** on the **Results View** page, this summary issue appears above its related issues under the **Storage Use** group.
-
- 
+> [!NOTE]  
+> When issues are grouped by **Category** on the **Results View** page, this summary issue appears above its related issues under the **Storage Use** group.
 
 **Processor use summary**
 
@@ -491,10 +436,8 @@ The summary issue provides details per process in descending order of impact. Fo
 
 Summary: Processes use 26.9 seconds of CPU time during Fast startup overall resume
 
-**Note**  
-When issues are grouped by **Category** on the **Results View** page, this summary issue appears above its related issues under the **Processor Use** group.
-
- 
+> [!NOTE]  
+> When issues are grouped by **Category** on the **Results View** page, this summary issue appears above its related issues under the **Processor Use** group.
 
 **Processor and disk contention summary**
 
@@ -518,13 +461,11 @@ To get the full benefits of summary issues, you can group the list of issues in 
 
 -   **Test case**. In this view, the Summary Issue is grouped together with the subset of issues that apply to a particular activity or test case.
 
-**Warning**  
-The information provided in the call stacks is a statistical representation of the activity in question (sampled once every millisecond), and its accuracy is dependent on the samples collected by the assessment.
+> [!WARNING]
+> The information provided in the call stacks is a statistical representation of the activity in question (sampled once every millisecond), and its accuracy is dependent on the samples collected by the assessment.
 
- 
 
-## <a href="" id="logging"></a>Assessment Logging
-
+## Assessment Logging
 
 Assessments rely on Event Tracing for Windows (ETW) logging to collect data for analysis. This logging uses system resources. This issue category accounts for the storage activity that occurs while the assessment is running.
 
@@ -536,20 +477,10 @@ Assessment logs 39 MB to storage during Fast startup resume post on/off.
 
 In the **Further analysis** area of the issue, choose the WPA in-depth analysis link to find information about storage writes to log files.
 
-## Related topics
 
+## Related topics
 
 [Windows Assessment Console](windows-assessment-console.md)
 
 [Assessments](assessments.md)
-
- 
-
- 
-
-
-
-
-
-
 
