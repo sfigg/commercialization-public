@@ -161,16 +161,16 @@ If you're building a 64-bit image, make sure that you're following the steps tha
 
 #### Customizations: Windows updates, languages, features, apps, and Microsoft Office
 
-|             |                                                     |
-| ----------- | --------------------------------------------------- |
-|             | Win 10 32/64 MultiLang OPK LangPackAll/LIP     |
-|             | Win 10 32/64 MultiLang OPK Feat on Demand      |
-|             | Win 10 32/64 MultiLang OPK App Update          |
-| X20-98485   | Office Mobile MultiLang v1.3 OPK                    |
-| X21-32422   | Office 2016 v16.3 Deployment Tool for OEM OPK       |
-| X21-05414   | Office 2016 v16.3 English OPK                       |
-| X21-32392   | Office v16.3 English OPK                            |
-| X21-32396   | Office v16.3 German OPK |
+|                                                                  |
+| ----------- |
+|              Win 10 32/64 MultiLang OPK LangPackAll/LIP     |
+|              Win 10 32/64 MultiLang OPK Feat on Demand      |
+|              Win 10 32/64 MultiLang OPK App Update          |
+| X20-98485 Office Mobile MultiLang v1.3 OPK                    |
+| X21-32422  Office 2016 v16.3 Deployment Tool for OEM OPK       |
+| X21-05414  Office 2016 v16.3 English OPK                       |
+| X21-32392  Office v16.3 English OPK                            |
+| X21-32396  Office v16.3 German OPK |
 
 #### Windows Assessment and Deployment Kit (ADK) for Windows 10
 
