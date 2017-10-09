@@ -1141,17 +1141,17 @@
         "redirect_document_id": true
     },
     {   
-        "source_path": "test/hlk/testref/windows-touch-testing-prerequisites", 
+        "source_path": "test/hlk/testref/windows-touch-testing-prerequisites.md", 
         "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/design/component-guidelines/windows-digitizer-class-input-devices", 
         "redirect_document_id": true
     },
     {   
-        "source_path": "test/hlk/testref/how-to-run-the-windows-hck-tests-for-touch-and-pen-devices ", 
+        "source_path": "test/hlk/testref/how-to-run-the-windows-hck-tests-for-touch-and-pen-devices.md", 
         "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/design/component-guidelines/windows-digitizer-class-input-devices", 
         "redirect_document_id": true
     },
     {   
-        "source_path": "test/hlk/testref/using-robot-automation-for-touch-hardware-certification-tests", 
+        "source_path": "test/hlk/testref/using-robot-automation-for-touch-hardware-certification-tests.md", 
         "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/design/component-guidelines/windows-digitizer-class-input-devices", 
         "redirect_document_id": true
     },
@@ -1161,22 +1161,22 @@
         "redirect_document_id": true
     },
     {   
-        "source_path": "test/hlk/testref/windows-precision-touchpad-device-validation-guide ", 
+        "source_path": "test/hlk/testref/windows-precision-touchpad-device-validation-guide.md", 
         "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/design/component-guidelines/windows-digitizer-class-input-devices", 
         "redirect_document_id": true
     },
     {   
-        "source_path": "test/hlk/testref/precision-touchpad-test-error-messages ", 
+        "source_path": "test/hlk/testref/precision-touchpad-test-error-messages.md", 
         "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/design/component-guidelines/windows-digitizer-class-input-devices", 
         "redirect_document_id": true
     },
     {   
-        "source_path": "test/hlk/testref/windows-precision-touchpad-certification-process ", 
+        "source_path": "test/hlk/testref/windows-precision-touchpad-certification-process.md", 
         "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/design/component-guidelines/windows-digitizer-class-input-devices", 
         "redirect_document_id": true
     },
     {   
-        "source_path": "test/hlk/testref/windows-precision-touchpad-hck-requirements ", 
+        "source_path": "test/hlk/testref/windows-precision-touchpad-hck-requirements.md", 
         "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/design/component-guidelines/windows-digitizer-class-input-devices", 
         "redirect_document_id": true
     }
