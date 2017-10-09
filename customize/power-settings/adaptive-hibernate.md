@@ -6,20 +6,20 @@ MSHAttr:
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 1D38C059-9D2A-46BC-A457-90361240457A
 ms.author: alhopper
-ms.date: 10/05/2017
+ms.date: 10/17/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 # Adaptive hibernate
 
-Users can set the Hibernate option in their Windows devices to put the system into a low power state when the system is not in use. The current logic for hibernate relies on an OEM- or user-configured doze to hibernate timer. The most common timer value is 4 hours. A fixed doze timer doesn’t address rapid drain of battery, especially on Intel core processors, as they can spike to high power levels.
+Users can set the Hibernate option in their Windows devices to put the system into a low power state when the system is not in use. The current logic for hibernate relies on an OEM- or user-configured doze to hibernate timer. The most common timer value is 4 hours. A fixed doze to hibernate timer may offer a consistent and predicitble user experience, however it doesn’t address rapid drain of battery.
 
-The timer-based logic has some significant user experience drawbacks. A fixed doze timer can result in the system fully draining the battery in standby if it happened within the doze timeout or cut short a modern standby experience by hibernating at doze timeout. The timer is generally not the best option when it comes to addressing the worst case battery drain and the system needs to be adaptive and hibernate based on user needs.
+The timer-based logic has some significant user experience drawbacks. A fixed doze timer can result in the system fully draining the battery in standby if it happened within the doze timeout or cut short a modern standby experience by hibernating at doze timeout. The timer is generally not the best option when it comes to addressing the worst case battery drain and the system needs to be adaptive and hibernate based on battery drain and user needs.
 
 Adaptive hibernate provides triggers which allow the system to hibernate intelligently. These triggers provide the following benefits:
 
-* Eliminate resume to a dead battery.
+* Eliminate resuming to a dead battery.
 * Provide a great [Modern Standby](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/modern-standby) (MS) experience by ensuring that the system remains in MS for as long as possible.
 
 To support the new triggers, the system is enabled with default values. However, OEMs can program these new triggers to ensure that machines hibernate to provide the best possible experience to users.
@@ -56,7 +56,7 @@ Adaptive hibernate settings ([Standby budget setting](#standby-budget-settings) 
 <tbody>
 <tr class="odd">
 <td><p>[StandbyBudgetPercent](standbybudgetpercent.md)</p></td>
-<td><p>Defines the battery drain percentage that the user is allowed in a standby session.</p></td>
+<td><p>Defines the battery drain percentage that the user is allowed in a 24-hour standby period. If the drain percentage is reached, the device transitions to Hibernate.</p></td>
 <td><p>Power setting</p></td>
 <td><p><code>powercfg /setdcvalueindex scheme_current sub_presence standbybudgetpercent</code></p></td>
 </tr>
@@ -144,4 +144,4 @@ The following example shows what your Windows provisioning answer file might loo
 
 ## <span id="User_prediction"></span><span id="user_prediction"></span><span id="USER_PREDICTION"></span>User prediction
 
-In previous versions of Windows, Hibernate was also triggered based on user prediction. Windows continues to support automatically transitioning from Hibernate back to Modern Standby based on user prediction, however this requires that the device implement RTCWake or the Time & Device Alarm object in ACPI.
+In Windows 10 version 1709, user usage prediction no longer triggers Hibernate. This is a change from previous versions of Windows. Windows continues to support automatically transitioning from Hibernate back to Modern Standby based on user prediction, however this requires that the device implement RTCWake or the Time & Device Alarm object in ACPI.
