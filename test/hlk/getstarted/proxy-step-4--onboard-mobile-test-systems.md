@@ -10,7 +10,7 @@ ms.assetid: 3CEA61AA-5625-4F1F-84ED-69ED726BB74F
 # Step 4: Onboard Mobile/IoT Test systems
 
 
-After you install the Windows Hardware Lab Kit (Windows HLK) on the Controller system, and the Windows HLK Proxy Client on the Proxy system, you are ready to add mobile test systems to the environment.
+After you install the Windows Hardware Lab Kit (Windows HLK) on the Controller system, and the Windows HLK Proxy Client on the Proxy system, you are ready to add mobile/IoT test systems to the environment.
 
 ## <span id="Known_Issues"></span><span id="known_issues"></span><span id="KNOWN_ISSUES"></span>Known Issues
 
@@ -151,8 +151,7 @@ After you install the Windows Hardware Lab Kit (Windows HLK) on the Controller s
 
 6.  Validation: After running device detector (steps above), the device should be booted to a valid OS, and be a visible target that shows as Ready in HLK Manager and HLK Studio.
 
-## <span id="Onboarding_network_connected_devices"></span><span id="onboarding_network_connected_devices"></span><span id="ONBOARDING_NETWORK_CONNECTED_DEVICES"></span>Onboarding network connected devices
-
+## Onboarding Ethernet connected devices
 
 1.  On the Proxy system, launch an elevated command prompt.
 2.  Navigate to %ProgramFiles(x86)%\\WTTMobile\\Tools\\
