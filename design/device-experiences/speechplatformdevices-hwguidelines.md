@@ -216,19 +216,19 @@ The following test setup using toolchain components shall be used to evaluate a 
 
 <table  >
   <tr>
-    <th align="center" > </th>
-    <th align="center" >HMD</th>
-    <th align="center" >All Other Devices</th>
+    <th  > </th>
+    <th >HMD</th>
+    <th >All Other Devices</th>
   </tr>
   <tr>
     <td  >Device Position*</td>
-    <td align="center" >HMD Test Position  </td>
-    <td align="center" >Near Field 0.8m Test Position</td>
+    <td >HMD Test Position  </td>
+    <td >Near Field 0.8m Test Position</td>
   </tr>
   <tr>
     <td  > Playback Stimulus Level </td>
-    <td align="center" > 89 dBA @ MRP </td>
-    <td align="center" >62 dBA @ DUT Position    </td>
+    <td > 89 dBA @ MRP </td>
+    <td >62 dBA @ DUT Position    </td>
   </tr>
   <tr>
     <td  >Playback Stimulus   </td>
