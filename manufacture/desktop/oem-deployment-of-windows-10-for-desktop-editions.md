@@ -434,9 +434,7 @@ Now that you have your WinPE image customized for your deployment, we'll get int
 
 In this section we'll cover how to mount Windows images on your technician PC. Mounting a Windows image is the same process that we used to mount the WinPE image earlier. When we mount our Windows image (install.wim), we'll be able to access a second image, WinRe.wim, which is the image that supports recovery scenarios. Updating install.wim and WinRE.wim at the same time helps you keep the two images in sync, which ensures that recovery goes as expected.
 
-**Note**:You may need to disable Secure Boot to start working with image.
-
-Before we continue, make sure that you've created your _USB-B_ drive. We showed you how to set it up in the Get the tools you need section.
+Before we continue, make sure that you've created your _USB-B_ drive. We showed you how to set it up in the [Get the tools you need](#get-the-tools-needed-to-customize-windows) section.
 
 Start working with your images:
 
@@ -471,13 +469,13 @@ Now that you have your image exported, you can mount it.
     Dism /Mount-Wim /WimFile:C:\mount\windows\Windows\System32\Recovery\winre.wim /index:1 /MountDir:C:\mount\winre
     ```
 
-    Troubleshoot: If winre.wim cannot be seen under the specified directory, use the following command to set the file visible:
+    **Troubleshoot**: If winre.wim cannot be seen under the specified directory, use the following command to set the file visible:
 
     ```
     attrib -h -a -s C:\mount\windows\Windows\System32\Recovery\winre.wim
     ```
 
-    Troubleshoot: If mounting operation fails, make sure the Windows 10 version of DISM is the one installed with the Windows ADK is being used and not an older version from the Technician Computer. Do not mount images to protected folders, such as the User\Documents folder.  If DISM processes are interrupted, consider temporarily disconnecting from the network and disabling virus protection.
+    **Troubleshoot**: If the mounting operation fails, make sure you're using DISM from the Deployment and Imaging Tools Environment. Do not mount images to protected folders, such as the User\Documents folder.  If DISM processes are interrupted, consider temporarily disconnecting from the network and disabling virus protection.
 
 ## Add drivers and languages to a mounted image
 
