@@ -131,8 +131,10 @@ After you install the Windows Hardware Lab Kit (Windows HLK) on the Controller s
 
     >[!NOTE]
     >FFUTool.exe is included in the Windows Assessment and Deployment Kit (ADK), and can be installed by selecting the “Imaging and Configuration Designer” option when installing the ADK. 
-    > For more information on the ADK, see: [Download the Windows ADK](https://developer.microsoft.com/en-us/windows/hardware/windows-assessment-deployment-kit)
-    >  For more information on HLK mobile testing tools and utilities, see: [HLK Mobile Testing Tools and Utilities](../user/hlk-mobile-testing-tools-and-utilities.md)
+    >
+    > For more information on the ADK, see [Download the Windows ADK](https://developer.microsoft.com/en-us/windows/hardware/windows-assessment-deployment-kit)
+    >
+    >  For more information on HLK mobile testing tools and utilities, see [HLK Mobile Testing Tools and Utilities](../user/hlk-mobile-testing-tools-and-utilities.md)
 
 
 4.  Restart the proxy service in elevated mode.
