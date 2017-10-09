@@ -23,7 +23,7 @@ For many customizations, like adding .inf-style drivers, Windows updates or upgr
 
 -  **For major updates, update the recovery image too**: These may include hotfixes, general distribution releases, service packs, or other pre-release updates. We'll show you how to update these later in [Lab 12: Update the recovery image](update-the-recovery-image.md).
 
--  **If a Servicing Stack Update (SSU) is available, you must install it** before applying the most recent General Distribution Release (GDR) or any future GDRs. See [Windows 10 update history](https://support.microsoft.com/en-us/help/4018124/windows-10-update-history)) to see the most recent GDR.
+-  **If a Servicing Stack Update (SSU) is available, you must install it** before applying the most recent General Distribution Release (GDR) or any future GDRs. See [Windows 10 update history](https://support.microsoft.com/en-us/help/4018124/windows-10-update-history) to see the most recent GDR.
 
 ![image: copying image files and deployment scripts](images/dep-win8-sxs-createmodelspecificfiles.jpg)
 
