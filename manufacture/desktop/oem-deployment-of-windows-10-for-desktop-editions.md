@@ -732,16 +732,17 @@ SSU: [https://msdn.microsoft.com/en-us/windows/hardware/commercialize/manufactur
 
 KB Files: [http://catalog.update.microsoft.com](http://catalog.update.microsoft.com)
 
+
 > [!Important] 
 > If you install an update (hotfix, general distribution release [GDR], or service pack [SP]) that contains language-dependent resources prior to installing a language pack, the language-specific changes in the update won't be applied when you add the language pack. You need to reinstall the update to apply language-specific changes. To avoid reinstalling updates, install language packs before installing updates.
  
 
-1. Get a Windows update package. For example, grab the [latest cumulative update listed in Windows 10 update history from the Microsoft Update catalog](http://www.catalog.update.microsoft.com/Search.aspx?q=Cumulative+update). Extract the .msu file update to a folder, for example, E:\updates\windows10.0-kb4016240-x64_0e60aebeb151d4b3598e4cfa9b4ccb1fc80e6e4d.msu. Make sure that your update matches the architecture of the image you are working with.
-
+1.  Get a Windows update package. For example, grab the [latest cumulative update listed in Windows 10 update history from the Microsoft Update catalog](http://www.catalog.update.microsoft.com/Search.aspx?q=Cumulative+update). Extract the .msu file update to a folder, for example, E:\updates\windows10.0-kb4016240-x64_0e60aebeb151d4b3598e4cfa9b4ccb1fc80e6e4d.msu. Make sure that your update matches the architecture of the image you are working with.
 
     To learn more, see https://myoem.microsoft.com/oem/myoem/en/product/winemb/pages/comm-ms-updt-ctlg-trnstn.aspx.
 
-2. Add the msu to your mounted image using `dism /add-package`.
+
+2.  Add the msu to your mounted image using `dism /add-package`.
 
     For 64-bit images:
 
@@ -754,9 +755,11 @@ KB Files: [http://catalog.update.microsoft.com](http://catalog.update.microsoft.
     Dism /Add-Package /Image:C:\mount\windows /PackagePath:"E:\updates\windows10.0-kb4016240-x86_7c7fcf0d4018e4244561cde531c3fb583d9f3051.msu"
     ```
 
-**Note:** Each package is typically a new KB that increases the build revision number of Windows. You can find the revision number of windows in the following registry key: 
+    **Note:** Each package is typically a new KB that increases the build revision number of Windows. You can find the revision number of windows in the following registry key: 
 
-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\UBR
+    ```
+    HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\UBR
+    ```
 
 ### Add Update packages to WinRE
 
