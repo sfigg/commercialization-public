@@ -216,7 +216,7 @@ The following test setup using toolchain components shall be used to evaluate a 
 
 <table  >
   <tr>
-    <th  ></th>
+    <th align="center" > </th>
     <th align="center" >HMD</th>
     <th align="center" >All Other Devices</th>
   </tr>
