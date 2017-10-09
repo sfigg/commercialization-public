@@ -6,7 +6,7 @@ MSHAttr:
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 6FA47DE6-540E-4AA9-A76E-3A02025B5C58
 ms.author: alhopper
-ms.date: 10/05/2017
+ms.date: 10/09/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
