@@ -909,7 +909,7 @@ The Driver Configuration Verification tool can be used for verification on the d
 
 In this example, a laptop has two channels that are on the screen, near the top bezel and facing (ported) forwards:
 
-<embed src="../images/spd-recommend-046.png" alt="laptop" width="387" height="360">
+<embed src="../images/spd-recommend-046.png" alt="laptop" height="360">
 
 **Details:**
 
