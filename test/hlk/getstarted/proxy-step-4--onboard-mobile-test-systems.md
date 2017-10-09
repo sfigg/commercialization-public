@@ -53,6 +53,7 @@ After you install the Windows Hardware Lab Kit (Windows HLK) on the Controller s
     ```
 
     Example:
+
     `BCDEdit /store G:\EFIESP\efi\Microsoft\Boot\BCD /set {default} loadoptions "EEM"`
 
 7.  Restart the device (if the image installed on the DUT is a lab or a health image, put the device in flashing mode).
@@ -63,6 +64,7 @@ After you install the Windows Hardware Lab Kit (Windows HLK) on the Controller s
     ```
 
     Example:
+
     `KitsDeviceDetector.exe /Physical:Fake_PC.dll /DeviceName:mydevice /DeviceId:00000015-c0fb-79c3-0000-000000000000 /machinepool:$\mypool`
     
     >[!NOTE]
@@ -175,6 +177,7 @@ After you install the Windows Hardware Lab Kit (Windows HLK) on the Controller s
     ```
 
     Example:
+
     `KitsDeviceDetector.exe /machinepool:$\Test_Pool /Physical:Fake_PC.dll /DeviceName:8CAE4CF5D6A5 /DeviceId:00000000-0000-0000-0000-8CAE4CF5D6A5 /SkipFFUCheck`
 
 6.  Restart the proxy service in elevated mode.
