@@ -1051,21 +1051,16 @@ This section describes the mechanical design and architecture requirements when 
 
 Microphone subsystem requirements for optimal voice command accuracy:
 
-| Metric                           | Target                                                      | Details                                                                                                                                        |
-|----------------------------------|-------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------|
-| Mic Array Distance from user MRP | &lt; 5cm                                                    | Place on lower edge of visor, near but not inside nose undercut                                                                                |
-| Mic Porting                      | Tolerant to dust and ingress under expected use.            
-                                                               
-  Minimize tube length from port to microphone.                | No micro-perforations or similar acoustically impactful attempts to beautify the mic holes                                                     
-                                                                                                                                                   
-   Recommend ≥1mm diameter hole if single hole used, or if multiple holes, efforts to reduce dust and ingress taken by increasing spread/\# holes  |
+| Metric        | Target                           | Details                           |        
+|-------------- |----------------------------------|-----------------------------------|
+| Mic Array Distance from user MRP | &lt; 5cm                                                    | Place on lower edge of visor, near but not inside nose undercut                  |
+| Mic Porting                      | Tolerant to dust and ingress under expected use.<br><br>Minimize tube length from port to microphone.                | No micro-perforations or similar acoustically impactful attempts to beautify the mic holes                       <br><br>Recommend ≥1mm diameter hole if single hole used, or if multiple holes, efforts to reduce dust and ingress taken by increasing spread/\# holes  |
 | Equivalent Input Noise           | ≤ 31 dBSPL(A)                                               | Measure peripheral input noise from mic in device (anechoic chamber)                                                                           |
 | Mic Array Geometry               | 2 mics, linearly spaced 90-100mm on the bottom of the visor | Array geometry must be exposed to the OS through the descriptors of the USB 2.0 audio device                                                   |
 
 ### Output Design Mechanical Guidelines
 
 Speakers (also called Receivers)/Headphones subsystem requirements for mixed reality aural immersion:
-
 
 <table >
   <tr>
@@ -1079,7 +1074,7 @@ Speakers (also called Receivers)/Headphones subsystem requirements for mixed rea
     <td >Design options: On-ear or over-ear <em>but not in-ear</em><br><br>Design options: flip or slide aside to allow external headset      </td>
   </tr>
   <tr>
-    <td >Detachable</td>                                                           |
+    <td >Detachable</td>                                                           
     <td >Detach/attach reliability is a concern</td>
   </tr>
   <tr>
@@ -1096,7 +1091,7 @@ Speakers (also called Receivers)/Headphones subsystem requirements for mixed rea
     <td >Detach/attach reliability is a concern</td>
   </tr>
 </table>
-                                              |
+                                              
 
 ### Windows Mixed Reality USB Requirements
 
@@ -1139,11 +1134,3 @@ Windows Mixed Reality Microphone array USB descriptor documentation:
 <https://msdn.microsoft.com/windows/hardware/drivers/audio/microphone-array-geometry-descriptor-format>
 
 All Windows Mixed Reality devices are required to use the in-box pipeline, therefore 3<sup>rd</sup> party audio processing is not required and prohibited; must be turned off or otherwise disabled.
-
-[1] A device must meet Premium recommendations in all categories in order to be considered a Premium device. The Premium and Standard categories are not part of a Logo program – rather informed best practices and guidelines
-
-[2] The Premium and Standard masks apply to all device tiers under HW-4 Input Sample Rate, e.g. a device can have Standard bandwidth (narrow-band) and a Premium magnitude response within that band.
-
-[3] Only applies to devices with built-in loudspeakers
-
-[4] Only applies to devices with built-in loudspeakers
