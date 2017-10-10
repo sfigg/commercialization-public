@@ -56,7 +56,7 @@ Adaptive hibernate settings ([Standby budget setting](#standby-budget-settings) 
 <tbody>
 <tr class="odd">
 <td><p>[StandbyBudgetPercent](standbybudgetpercent.md)</p></td>
-<td><p>Defines the battery drain percentage that the user is allowed in a 24-hour standby period. If the drain percentage is reached, the device transitions to Hibernate.</p></td>
+<td><p>Defines the battery drain percentage that the user is allowed in a 24-hour standby period. If the drain percentage is reached, the device transitions to Hibernate. Default is 5%.</p></td>
 <td><p>Power setting</p></td>
 <td><p><code>powercfg /setdcvalueindex scheme_current sub_presence standbybudgetpercent</code></p></td>
 </tr>
@@ -88,7 +88,7 @@ Reserve time is the amount of time the user is guaranteed to have the screen on 
 <tbody>
 <tr class="odd">
 <td><p>[StandbyReserveTime](standbyreservetime.md)</p></td>
-<td><p>Defines the screen on time, in seconds, that will be available to the user after standby exits and the screen turns on.</p></td>
+<td><p>Defines the screen on time, in seconds, that will be available to the user after standby exits and the screen turns on. Default is 1200 seconds.</p></td>
 <td><p>Power setting</p></td>
 <td><p><code>powercfg /setdcvalueindex scheme_current sub_presence standbyreservetime</code></p></td>
 </tr>
