@@ -5,6 +5,7 @@
 ### [Customize the Out of Box Experience (OOBE)](desktop/customize-oobe.md)
 #### [OOBE.xml](desktop/oobexml.md)
 #### [Cortana voice support](desktop/cortana-voice-support.md)
+#### [Connect users to the network](connect-to-network.md)
 #### [OEM HID pairing](desktop/oem-hid-pairing.md)
 #### [OEM license terms](desktop/oem-license.md)
 #### [OEM registration pages](desktop/oem-registration-pages.md)
