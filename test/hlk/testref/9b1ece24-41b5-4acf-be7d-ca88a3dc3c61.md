@@ -131,7 +131,7 @@ If no ghost touches exist, and if touch input can be used as expected to control
 
 For generic troubleshooting of HLK test failures, see [Troubleshooting Windows HLK Test Failures](..\user\troubleshooting-windows-hlk-test-failures.md).
 
-For troubleshooting information, see [Troubleshooting Device.Input Testing](troubleshooting-deviceinput-testing.md) and the [Hardware Component Guidelines for Windows Digitizer Class Input Devices](../../../design/component-guidelines/windows-digitizer-class-input-devices.md).
+For troubleshooting information, see [Troubleshooting Device.Input Testing](troubleshooting-deviceinput-testing.md) and the [Hardware Component Guidelines for Windows Digitizer Class Input Devices](https://docs.microsoft.com/en-us/windows-hardware/design/component-guidelines/windows-digitizer-class-input-devices).
 
 ## <span id="More_information"></span><span id="more_information"></span><span id="MORE_INFORMATION"></span>More information
 
