@@ -12,28 +12,33 @@ ms.technology: windows-oem
 
 Welcome to Windows 10, version 1709! Here are some resources to get you acquainted with the new features and changes introduced in this version of Windows 10.
 
-## New in Design
+## New in design
 
 | Topic                                      | Description                                                                                             |
 |:-------------------------------------------|:--------------------------------------------------------------------------------------------------------|
 | **Compatibility specifications** | The Windows Hardware Compatibility Program is designed to help your company deliver systems, software, and hardware products that are compatible with Windows and run reliably on Windows 10 and Windows Server 2016. Systems are required to use components which have also passed compatibility testing. [Learn more>>](https://docs.microsoft.com/en-us/windows-hardware/design/compatibility/1709)<br/> The following requirements are new for Windows 10, version 1709: <br/><ul><li>[Device.DevFund.UniversalDriver](https://docs.microsoft.com/en-us/windows-hardware/design/compatibility/1709/device-devfund#Device.DevFund.UniversalDriver)</li><li>  [System.Fundamentals.Security](https://docs.microsoft.com/en-us/windows-hardware/design/compatibility/1709/systems#systemfundamentalssecurity)</li><li>[System.Client.SensorCamera](https://docs.microsoft.com/en-us/windows-hardware/design/compatibility/1709/systems#systemclientsensorcamera)</li><li>[System.Fundamentals.Firmware.HSTI](https://docs.microsoft.com/en-us/windows-hardware/design/compatibility/1709/systems#systemfundamentalsfirmware)</li></ul> |
 | **Security guidelines** | For this release, we’ve consolidated, reviewed, and updated the Windows security content for partner OEMs. There are topics on UEFI, TPM, and VBS requirements; topics on Windows Defender Device Guard, Windows Defender Application Guard, and Windows Defender Credential Guard; a topic on Secure Boot. [Learn more>>](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/oem-security-considerations) |
 
-## New Customization options
+## New customization options
 
 | Topic                                      | Description                                                                                             |
 |:-------------------------------------------|:--------------------------------------------------------------------------------------------------------|
 | **Customize the Get Help app**             | The Get Help app empowers customers to self-help with troubleshooters, instant answers, Microsoft support articles, and more, before contacting assisted support.<br/> If you have a support app or support website you would like to direct customers towards, you can use unattend.xml to display your support option within the Get Help app. A link to your support app or website is surfaced wherever options to contact support are shown in the Get Help app. The first item in the list will be the link you provided. [Learn more>>](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/customize-get-help-app) |
 | **Customize the Windows power slider**     | The new Windows performance power slider enables end customers to quickly and intelligently trade performance of their system for longer battery life. As a customer switches between the four slider modes to trade performance for battery life (or vice versa), Windows power settings are engaged behind the scenes. You are able to customize the default slider mode for both AC and DC, and can also configure the power settings, and PPM options, that are engaged for each slider mode. [Learn more>>](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/customize-power-slider) |
 
-## New in Manufacturing
+## New in desktop manufacturing
 
 | Topic                                      | Description                                                                                             |
 |:-------------------------------------------|:--------------------------------------------------------------------------------------------------------|
 | **New FFU tool**         | The new Full Flash Update (FFU) tool allows you to deploy Windows faster on the factory floor by using FFU images. This tool now allows you to use DISM to capture, apply, and mount FFU images. [Learn more>>](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/deploy-windows-using-full-flash-update--ffu)                                    |
 | **WinPE change**         | Starting with WinPE for Windows 10, version 1709, the SMB1 protocol is disabled by default. You can enable SMB1 support by running `dism.exe /enable-feature /featurename=SMB1Protocol-client`. [Learn more>>](https://docs.microsoft.com/windows-hardware/manufacture/desktop/winpe-network-drivers-initializing-and-adding-drivers)                                |
 
-## New in Driver development
+## New in IoT Core manufacturing
+
+| Topic                                      | Description                                                                                             |
+|:-------------------------------------------|:--------------------------------------------------------------------------------------------------------|
+
+## New in driver development
 
 | Topic                                      | Description                                                                                             |
 |:-------------------------------------------|:--------------------------------------------------------------------------------------------------------|

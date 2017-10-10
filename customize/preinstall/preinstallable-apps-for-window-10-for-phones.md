@@ -53,7 +53,7 @@ Adding a preinstalled app to an Windows 10 Mobile OS image requires a .provxml 
 </wap-provisioningdoc>
 ```
 
->[!Note]
+> [!Note]
 > provxml files for preinstalled apps must follow a prescribed naming convention. You must use MPAP\_name\_index.provxml, where name and index can be any strings. Typically, name is the name of the update package that contains the preinstalled app, and index is a string that differentiates provxml files that have the same name. Often, index is represented as a number, such as 01.
 
 ### provxml flags
@@ -68,7 +68,9 @@ These are the flags you can use in your provxml.
 
 ## Add the app to the image
 
-Preinstalling apps are added to the OS image using a customization answer file. The process of creating a customization answer file that includes an app requires adding an additional Application element with the appropriate defining attributes. The following code sample illustrates how an app would be added to a customization answer file for preinstalling.
+Preinstalling apps are added to the OS image using a customizations.xml answer file. To create the customizations.xml answer file, first [install the Windows Configuration Designer](https://docs.microsoft.com/en-us/windows/configuration/provisioning-packages/provisioning-install-icd), and then [create a provisioning package](https://docs.microsoft.com/en-us/windows/configuration/provisioning-packages/provisioning-create-package). You can then open the project folder to find the customizations.xml file.
+
+To include preinstalled apps in your image, you must add the `Application` element to your customizations.xml file with the appropriate defining attributes. The following code sample illustrates how an app would be added to a customization answer file for preinstalling.
 
 ```xml
     <Applications>
@@ -81,7 +83,7 @@ Preinstalling apps are added to the OS image using a customization answer file. 
 > [!Note]
 > The provxml file must be placed in the "$(runtime.commonfiles)\\Provisioning\\OEM" directory. The license file and app package (.xap or .appx) must be placed in the "$(runtime.commonfiles)\\xaps" directory
 
-Now that you have a customization answer file, you can build the image either from the Windows Imaging and Configuration Designer (ICD) command line or the graphical user interface.
+After you've configured your customizations.xml answer file, build the image using the Windows Configuration Designer command-line interface. See [Windows Configuration Designer command-line interface](https://docs.microsoft.com/en-us/windows/configuration/provisioning-packages/provisioning-command-line) for instructions.
 
 ## Build the image
 
