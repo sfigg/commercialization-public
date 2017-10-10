@@ -34,11 +34,15 @@ Cortana, the personal assistant technology introduced on Windows Phone 8.1, is n
 <tbody>
 <tr class="odd">
 <td><p>[Speech Platform: Input Device Recommendations](speechplatformdevicesrecommendations.md)</p></td>
-<td><p>Provides guidance and recommendations for the design and development of audio input devices intended for use with Microsoft's Speech Platform.</p></td>
+<td><p>Provides performance recommendations and development guidance for audio input devices intended for use with Microsoft's Speech Platform.</p></td>
 </tr>
 <tr class="even">
 <td><p>[Speech Platform: Input Device Test Setup](speechplatformdevicestestsetup.md)</p></td>
 <td><p>Provides test guidance of audio input devices intended for use with Microsoft’s Speech Platform.</p></td>
+</tr>
+<tr class="even">
+<td><p>[Speech Platform: Input Device Hardware Guidelines](speechplatformdevices-hwguidelines.md)</p></td>
+<td><p>Provides hardware development guidance for audio input devices intended for use with Microsoft’s Speech Platform.</p></td>
 </tr>
 </tbody>
 </table>
