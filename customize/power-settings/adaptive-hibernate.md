@@ -34,7 +34,7 @@ Machines will have adaptive hibernate timeout enabled by default; however, OEMs 
 
 ## <span id="hibernate_triggers"></span><span id="HIBERNATE_TRIGGERS"></span>Hibernate triggers
 
-Adaptive hibernate settings ([Standby budget setting](#standby-budget-settings) and [Standby reserve time setting](#reserve-time-settings)) are exposed as hidden power settings. The settings take into effect on DC only and are not applicable on AC.
+Adaptive hibernate settings ([Standby budget setting](#standby-budget-settings) and [Standby reserve time setting](#reserve-time-settings)) are exposed as hidden power settings. The settings are applied on DC only and have no impact on AC.
 
 ### <span id="standby_budget_settings"></span><span id="STANDBY_BUDGET_SETTINGS"></span>Standby budget setting
 

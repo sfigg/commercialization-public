@@ -56,7 +56,7 @@ You can configure the default slider mode for both AC and DC. If a customer choo
 > [!Note]
 > Battery Saver is not available as a default slider mode.
 
-First, create a Windows provisioning answer file (WPAF). Manually edit your answer file to add the settings described below, and pass it to the Windows Imaging and Configuration Designer (WICD) command-line interface to create a provisioning package. See [Use the Configuration Designer command-line interface](https://msdn.microsoft.com/en-us/library/windows/hardware/dn916115(v=vs.85).aspx) for detailed instructions on this process.
+First, create a provisioning package using [Windows Configuration Designer](https://docs.microsoft.com/en-us/windows/configuration/provisioning-packages/provisioning-install-icd). You will then edit the customizations.xml file contained in the package to include your power settings. Use the XML file as one of the inputs to the Windows Configuration Designer command-line to generate either a provisioning package or a Windows image that contains the power settings. For information on how to use the Windows Configuration Designer CLI, see [Use the Windows Configuration Designer command-line interface](https://docs.microsoft.com/en-us/windows/configuration/provisioning-packages/provisioning-command-line).
 
 | Windows Provisioning path                 | Provisioning setting name                            | Values                                               |
 |:------------------------------------------|:-----------------------------------------------------|:-----------------------------------------------------|
@@ -102,7 +102,7 @@ To configure PPM and power settings per slider mode, apply them to one of the fo
 * **BetterBatteryLifeOverlay**
 * **MaxPerformanceOverlay**
 
-The Battery Saver mode inherits the settings configured for the Power Saver power scheme. The Best Performance mode inherits the settings configured for the Balanced (default) power scheme. Configure these power schemes to customize the settings that are engaged in these slider modes.
+The Battery Saver mode inherits the settings configured for the Constrained PPM profile. The Best Performance mode inherits the settings configured for the Balanced (default) profile. Configure these profiles to customize the settings that are engaged in the associated slider modes.
 
 > [!Note]
 > Settings such as disk and display timeouts, and other legacy power settings, are not customizable via the performance/power slider. Only settings which can affect perceived performance differences can be customized across slider modes. Each slider mode should be thought of as a “lite” power plan, which only contains settings that impact performance. For Windows 10, version 1709, that means CPU settings (PPM) and power throttling. Other factors which control performance (GPU, thermals etc) are in OEM/SVs control and they can create custom power-settings for those and connect them to the slider via the INF.
@@ -166,10 +166,14 @@ Most Windows users have multiple apps running on the operating system at the sam
 
 Power throttling does not suspend or close apps and services on the device.
 
-In Windows 10 build 1709, power throttling is always engaged, unless the slider is set to Best Performance. In this case, all applications will be opted out of power throttling. Users can also opt individual apps out of power throttling in the Battery Saver user experience. OEMs do not have an option to disable or change power throttling on any of the Windows slider modes.
+In Windows 10 build 1709, power throttling is always engaged, unless the slider is set to Best Performance. In this case, all applications will be opted out of power throttling. Users can also opt individual apps out of power throttling in the Battery usage UX:
+
+![Users can opt apps out of power throttling through UX](images/opt-out-power-throttling.png)
+
+ OEMs do not have an option to disable or change power throttling on any of the Windows slider modes.
 
 > [!Note]
-> Power throttling is only available for device using SKL and KBL Intel processors (including those without Intel’s SpeedShift technology). AMD is working with Microsoft to enable power throttling on their upcoming chipset as well. Follow up directly with AMD to learn more.
+> Power throttling is available for devices using Intel's 6th or 7th generation processors (including those without Intel’s SpeedShift technology) only.
 
 ## Query for power slider settings
 
