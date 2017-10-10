@@ -1,6 +1,6 @@
 ---
-title: Hardware Compatibility Specification for Components and Peripherals for Windows 10, version 1703
-Description: 'This section of the documentation provides specifications for hardware compatibility of components and peripherals with computers running Windows 10, version 1703.'
+title: Hardware Compatibility Specification for Components and Peripherals for Windows 10, version 1709
+Description: 'This section of the documentation provides specifications for hardware compatibility of components and peripherals with computers running Windows 10, version 1709.'
 ms.assetid: 
 MSHAttr: 
 author: beneluxboy
@@ -11,9 +11,9 @@ ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-# Hardware Compatibility Specification for Components and Peripherals for Windows 10, version 1703
+# Hardware Compatibility Specification for Components and Peripherals for Windows 10, version 1709
 
-This section of the documentation provides specifications for hardware compatibility of components and peripherals with computers running Windows 10, version 1703.
+This section of the documentation provides specifications for hardware compatibility of components and peripherals with computers running Windows 10, version 1709.
 
 These specifications are divided into the following categories and topics:
 
