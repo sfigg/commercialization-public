@@ -1,5 +1,6 @@
 # [Customize](index.md)
 
+## [What's new in Customizations](what-s-new-in-customizations.md)
 ## [Customizations for desktop](desktop/desktop-customizations-portal.md)
 ### [Customize the taskbar](desktop/customize-the-taskbar.md)
 ### [Customize the Out of Box Experience (OOBE)](desktop/customize-oobe.md)
@@ -13,7 +14,7 @@
 ##### [Configure OOBE.xml](desktop/registration-pages-oobexml.md)
 ##### [Manage user data](desktop/manage-user-data.md)
 ##### [Collect and upload data](desktop/collect-and-upload-data.md)
-### [Customize the Windows power slider](desktop/customize-power-slider.md)
+### [Customize the Windows performance power slider](desktop/customize-power-slider.md)
 ### [Set dark mode](desktop/set-dark-mode.md)
 ### [Customize the Get Help app](desktop/customize-get-help-app.md)
 ### [Customize the Country and Operator Settings Asset](desktop/customize-cosa.md)

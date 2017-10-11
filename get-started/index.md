@@ -28,7 +28,7 @@ You can create devices to use touch/pen, mouse/keyboard, controller/gesture—or
 | [Create an end-to-end deployment](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/oem-windows-deployment-and-imaging-walkthrough) | [Test drivers](https://docs.microsoft.com/en-us/windows-hardware/drivers/develop/testing-a-driver) |
 
 > [!Tip]
-> See our [Kits and tools overview](kits-and-tools-overview.md) to learn how our kits and tools enable you to work with Windows.
+> See [Kits and tools overview](kits-and-tools-overview.md) to learn how our kits and tools enable you to work with Windows.
 
 ## Design hardware with the latest features
 
@@ -99,9 +99,6 @@ From Cortana to Continuum to the core architecture, this release includes tons o
 <tr class="odd">
 <td><p>Write and run test automations with the Test Authoring and Execution Framework (TAEF). Share your tests across disciplines and teams.</p>
 <p>[Get started with the Test Authoring and Execution Framework (TAEF)](https://docs.microsoft.com/en-us/windows-hardware/drivers/taef/getting-started)</p></td>
-<td><p>Learn about deploying Windows 10 S, a configuration of Windows 10 Pro that offers a familiar, productive Windows experience that’s streamlined for security and performance.</p>
-<p>[Windows 10 S manufacturing overview](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/windows-10-s-overview)</p>
-</td>
 <td><p>Test your hardware with the Windows Hardware Lab Kit.</p>
 <p>[Get started with the Windows Hardware Lab Kit](https://docs.microsoft.com/en-us/windows-hardware/test/hlk/getstarted/windows-hlk-getting-started)</p></td>
 <td><p>Analyze system and application performance using the Windows Performance Toolkit.</p>
@@ -114,14 +111,18 @@ From Cortana to Continuum to the core architecture, this release includes tons o
 
 <table>
 <colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
 </colgroup>
 <tbody>
 <tr class="odd">
 <td><p>For desktop PCs, learn strategies to build a set of images for specific markets to meet different customers' needs. Apply classic and modern Windows apps, drivers, languages, and other customizations, and mix and match your customizations as new Windows editions are released through automated scripts or a familiar Windows interface.</p>
 <p>[Build and deploy desktop devices](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/oem-windows-deployment-and-imaging-walkthrough)</p></td>
+<td><p>Learn about deploying Windows 10 S, a configuration of Windows 10 Pro that offers a familiar, productive Windows experience that’s streamlined for security and performance.</p>
+<p>[Windows 10 S manufacturing overview](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/windows-10-s-overview)</p>
+</td>
 <td><p>Build IoT Core devices, applying apps, drivers, and settings to new devices.</p>
 <p>[Build and deploy IoT Core devices](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/iot-core-manufacturing-guide)</p></td>
 <td><p>OEMs and ODMs can build and test mobile devices and drivers.</p>
