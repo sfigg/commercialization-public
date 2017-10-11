@@ -37,8 +37,9 @@ These specifications are divided into the following categories and topics:
 *Kernel mode filter drivers must be architected to maximize the reliability and functionality of Windows file systems, as well as interact accurately with the core components of the operating system.*
 
 <table>
-<tr>
-<td valign="center">Applies to</td>
+<td>
+<th>Applies to</th>
+</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -46,7 +47,6 @@ These specifications are divided into the following categories and topics:
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
 </td>
-</tr>
 </table>
 
 
