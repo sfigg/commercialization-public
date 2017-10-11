@@ -1,6 +1,5 @@
 # [Customize](index.md)
 
-## [What's new in Customizations](what-s-new-in-customizations.md)
 ## [Customizations for desktop](desktop/desktop-customizations-portal.md)
 ### [Customize the taskbar](desktop/customize-the-taskbar.md)
 ### [Customize the Out of Box Experience (OOBE)](desktop/customize-oobe.md)
