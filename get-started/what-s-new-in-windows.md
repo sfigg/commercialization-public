@@ -38,7 +38,7 @@ Welcome to Windows 10, version 1709! Here are some resources to get you acquain
 | Topic                                      | Description                                                                                             |
 |:-------------------------------------------|:--------------------------------------------------------------------------------------------------------|
 | **New packaging standard: wm.xml**         | IoT Core Add-ons v4.x support the new Windows Universal OEM Packages standard (wm.xml). This new packaging schema is built to be compatible with more types of devices in the future. [Learn more>>](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/create-packages)                                    |
-| **Tools added to convert existing packages**   | Update your existing packages to meet the new standards [Learn more>>](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/create-packages#convert_packages)                   |
+| **Tools added to convert existing packages**   | Update your existing packages to meet the new standards. [Learn more>>](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/create-packages#convert_packages)                   |
 
 ## New in driver development
 

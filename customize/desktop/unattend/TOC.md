@@ -209,6 +209,7 @@
 #### [DisableAutoDefrag](microsoft-windows-embedded-unifiedwritefilter-disableautodefrag.md)
 #### [DomainSecretKeyPersisted](microsoft-windows-embedded-unifiedwritefilter-domainsecretkeypersisted.md)
 #### [OverlayCriticalThreshold](microsoft-windows-embedded-unifiedwritefilter-overlaycriticalthreshold.md)
+#### [OverlayFlags](microsoft-windows-embedded-unifiedwritefilter-overlayflags.md)
 #### [OverlayMaximumSize](microsoft-windows-embedded-unifiedwritefilter-overlaymaximumsize.md)
 #### [OverlayType](microsoft-windows-embedded-unifiedwritefilter-overlaytype.md)
 #### [OverlayWarningThreshold](microsoft-windows-embedded-unifiedwritefilter-overlaywarningthreshold.md)
