@@ -49,15 +49,27 @@ The base syntax for using the Assessment Platform from the command line is:
 </tr>
 <tr class="even">
 <td><p><em>job_file</em></p></td>
-<td><p>Specifies the job file that you want to run.</p>
-<p>The path of the job file can be a relative path. If the job is in the directory that you're running AXE.exe from, no path is required. By default, when you create a job in the Windows Assessment Console, it's saved in the %USERPROFILE%\Documents\Windows Assessment Console\Jobs\ folder.</p>
+<td><p>Specifies the job file that you want to run, and <em>job_file</em> can specify a relative path. If the job is in the directory that you're running AXE.exe from, no path is required.</p>
+<p>By default, when you create a job in the Windows Assessment Console, it's saved in to %USERPROFILE%\Documents\Windows Assessment Console\Jobs\.</p>
+<p style="margin: 1em 1.5em 0 1.5em;"><strong>Note</strong>&nbsp;&nbsp;&nbsp;This option is required if no other parameter that performs an action is specified.</p>
+<p>Example:</p>
+<code>axe&nbsp;C:\Assessments\MyJobs\Job1.jobx</code></td>
+</tr>
+<tr class="odd">
+<td><p><strong>/Analyze</strong> <em>ResultsFile</em></p></td>
+<td><p>Specifies a path and file name of results to reanalyze. Requires job from a package or assessment manifest directly to locate the assessments to reanalyze within the results file.</p></td>
+</tr>
+<tr class="even">
+<td><p><strong>/Assessment</strong> <em>assessment_file</em></p></td>
+<td><p>Specifies the path and file name of an assessment manifest, <em>assessment_file</em>, to reanalyze in the results file specified.</p>
+<p>By default, when you create a job in the Windows Assessment Console, it's saved in to %USERPROFILE%\Documents\Windows Assessment Console\Jobs\.</p>
 <p style="margin: 1em 1.5em 0 1.5em;"><strong>Note</strong>&nbsp;&nbsp;&nbsp;This option is required if no other parameter that performs an action is specified.</p>
 <p>Example:</p>
 <code>axe&nbsp;C:\Assessments\MyJobs\Job1.jobx</code></td>
 </tr>
 <tr class="odd">
 <td><p><strong>/Timeout</strong>&nbsp;<em>seconds</em></p></td>
-<td><p>Specifies the amount of time, in seconds, that the job will wait for another job to finish before it exits with an error. The default is zero, which means that the job will exit immediately if another job is already running. This is an optional parameter.</p>
+<td><p>Specifies the amount of time in seconds (<em>seconds</em>) that the job will wait for another job to finish before it exits with an error. When <em>seconds</em> is zero, the default, the job will exit immediately if another job is already running.</p>
 <p>Example:</p>
 <code>axe&nbsp;C:\Assessments\myJobs\Job1.jobx /Timeout 30</code></td>
 </tr>
@@ -67,9 +79,16 @@ The base syntax for using the Assessment Platform from the command line is:
 <p>Example:</p>
 <code>axe&nbsp;C:\Assessments\myJobs\Job1.jobx /NoPublish</code></td>
 </tr>
+<tr class="even">
+<td><p><strong>/PublishToSource</strong></p></td>
+<td><p>Optional parameter specifies to update the original results folder when running <strong>/Analyze</strong>.  
+It is ignored when running a job. It may be combined with publish path, but the publish path will only be used if it cannot publish back to the original results folder.</p>
+<p>Example:</p>
+<code>axe&nbsp;C:\Assessments\myJobs\Job1.jobx /NoPublish</code></td>
+</tr>
 <tr class="odd">
-<td><p><strong>/PublishPath</strong>&nbsp;<em>directory</em></p></td>
-<td><p>Specifies the path of a folder to publish the results file to. This overrides the publication path, <em>ResultsPublishPath</em>, that's specified in the job file. This parameter is ignored if it's combined with <strong>/NoPublish</strong>.</p>
+<td><p><strong>/PublishPath</strong>&nbsp;<em>folder_path</em></p></td>
+<td><p>Specifies the path of a folder (<em>folder_path</em>) to publish the results file to. The path specified by <em>folder_path</em> overrides the publication path, <strong>ResultsPublishPath</strong>, that's specified in the job file. This option is ignored if it's combined with <strong>/NoPublish</strong>.</p>
 <p>Example:</p>
 <code>axe&nbsp;C:\Assessments\myJobs\Job1.jobx /PublishPath C:\Assessments\myResults</code></td>
 </tr>
@@ -89,21 +108,22 @@ The base syntax for using the Assessment Platform from the command line is:
 </tr>
 <tr class="even">
 <td><p><strong>/Pause</strong></p></td>
-<td><p>Pauses AXE.exe after the job finishes, to wait for you to press a key. You can then see any errors or other information in the console before AXE.exe exits and the console closes.</p>
+<td><p>Pauses AXE.exe after the job finishes. You can then see any errors or other information in the console before AXE.exe exits and the console closes. Exiting continues when you press a key.</p>
 <p>Example:</p>
 <code>axe&nbsp;C:\Assessments\myJobs\Job1.jobx /Pause</code></td>
 </tr>
 <tr class="odd">
-<td><p><strong>/JobParameter Param=</strong><em>value</em></p></td>
-<td><p>Specifies a value to override a job parameter that may exist in the job manifest. This is an optional parameter. You can use it up to 100 times to specify multiple job parameters. If duplicate job parameter names appear, the assessment uses the last one. The <strong>/PublishPath</strong> option takes precedence over setting the <em>ResultsPublishPath</em> job parameter with this option.</p>
+<td><p><strong>/JobParameter</strong> <em>parameter</em><strong>=</strong><em>value</em></p></td>
+<td><p>Specifies a value (<em>value</em>) to override a job parameter (<em>parameter</em>) that may exist in the job manifest. You can use <strong>/JobParameter</strong> up to 100 times to specify multiple job parameters. If duplicate parameter names appear, the assessment uses the last value supplied for that name. Using <strong>/JobParameter</strong> is optional.</p>
+<p>The <strong>/PublishPath</strong> option takes precedence over setting the <strong>ResultsPublishPath</strong> job parameter with this option.</p>
 <p>Example:</p>
 <code>axe&nbsp;C:\Assessments\myJobs\Job1.jobx /JobParameter iterations=1</code></td>
 </tr>
 <tr class="even">
 <td><p><strong>/DisplayLog</strong>&nbsp;<em>path_and_file_name</em></p></td>
-<td><p>Displays the content of the Event Trace Log (ETL) files that AXE.exe uses for logging. You must specify the path of the AXE.exe ETL files. The location of the log files appears in the console when a job runs. The file name may contain wildcard characters.</p>
-<p>The default location of the log file is %LOCALAPPDATA%\\Microsoft\\Axe\\Logs\\<em>GUID</em>, where <em>GUID</em> is the GUID that's generated randomly for each new job. The job results file in the <strong>SessionLogFiles</strong> node also contains the full location. This node specifies all of the log files.</p>
-<p style="margin: 1em 1.5em 0 1.5em;"><strong>Note</strong>&nbsp;&nbsp;&nbsp;All of the ETL files are automatically converted into a single AxeLog.txt file that's saved in the results directory. You can open this file by using Notepad.</p>
+<td><p>Displays the content of an Event Trace Log (ETL) file specified by <em>path_and_file_name</em>, which can contain wildcard characters. AXE.exe writes an ETL file when running a job and displays its location in the console.</p>
+<p>The default location of the log file is %LOCALAPPDATA%\\Microsoft\\Axe\\Logs\\<em>GUID</em>, where <em>GUID</em> is a GUID that is generated randomly for each new job. The job results file in the <strong>SessionLogFiles</strong> node also contains the full location. This node specifies all of the log files.</p>
+<p style="margin: 1em 1.5em 0 1.5em;"><strong>Note</strong>&nbsp;&nbsp;&nbsp;All of the ETL files are automatically converted into a single AxeLog.txt file that is saved in the results directory. You can open this file by using Notepad.</p>
 <p>Example:</p>
 <code>axe&nbsp;/DisplayLog %LOCALAPPDATA%\Microsoft\Axe\Logs\E5A6CB43-C!CE-4FC1-8170-13B002E250B36\AxeLog-000.etl</code></td>
 </tr>
