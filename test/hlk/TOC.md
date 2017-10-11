@@ -608,6 +608,7 @@
 ##### [Troubleshoot WLAN SimpleIO plugin failures that are  logged by Device Fundamentals tests](testref/troubleshoot-wlan-simpleio-plugin-failures-that-are--logged-by-device-fundamentals-tests.md)
 ##### [Use kernel debugging to debug Device Fundamentals Reliability test failures](testref/use-kernel-debugging-to-debug-device-fundamentals-reliability-test-failures.md)
 ##### [Windows Server Must-Fix Code Analysis and Static Driver Verifier Errors affecting Network and Storage Adapter Vendors](testref/windows-server-must-fix-errors.md)
+##### [Using Device Fundamentals Tests to Reproduce Device Manager Problem Codes](testref/using-device-fundamentals-tests-to-reproduce-device-manager-problem-codes.md)
 ### [Device.Display](testref/device-display.md)
 #### [Device.Display tests](testref/device-display-tests.md)
 ##### [Display Monitor Modes - Check EDID support](testref/f041eba7-ec0b-4edb-915c-ef5735e98f07.md)
