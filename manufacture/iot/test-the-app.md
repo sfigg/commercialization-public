@@ -25,7 +25,7 @@ Connect to the device from another PC**
     http://100.100.0.100:8080
     ```
 
-    This opens the [Windows Device Portal](https://developer.microsoft.com/windows/iot/docs/deviceportal). From here, you can upload app packages, see what apps are installed, and switch between them.
+    This opens the [Windows Device Portal](https://docs.microsoft.com/windows/iot-core/manage-your-device/DevicePortal). From here, you can upload app packages, see what apps are installed, and switch between them.
 
 4.  If you've added the IOT_ENABLE_ADMIN feature in your package, log in using Administrator/p@ssw0rd.
 If you created a custom username and password, use that now. To learn more, see [Lab 1b: Add an app to your image](deploy-your-app-with-a-standard-board.md).
