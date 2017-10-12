@@ -19,7 +19,7 @@ You can create devices to use touch/pen, mouse/keyboard, controller/gesture—or
 
 ## Start building Windows 10 devices
 
-| **I want to build a Windows PC**                          | **I want to build drivers for my Windows device**         |
+| **Build a Windows PC**                          | **Build drivers for a Windows device**         |
 |:----------------------------------------------------------|:----------------------------------------------------------|
 | [Download the Windows ADK](adk-install.md) to start building Windows PCs   | [Download the WDK](https://developer.microsoft.com/en-us/windows/hardware/windows-driver-kit) to start building drivers               |
 | [What's new in Windows 10](what-s-new-in-windows.md)      | [What's new in driver development](https://docs.microsoft.com/en-us/windows-hardware/drivers/what-s-new-in-driver-development)                      |
@@ -32,25 +32,9 @@ You can create devices to use touch/pen, mouse/keyboard, controller/gesture—or
 
 ## Design hardware with the latest features
 
-From Cortana to Continuum to the core architecture, this release includes tons of new platform features and improvements to help you create compelling user experiences on any form factor.
+Building a great Windows 10 device starts with selecting the right components. Understanding the difference between minimum and optimal hardware requirements will ensure the best usability and performance. Our guidelines explain the requirements to implement Windows features like Cortana, Windows Hello, Touch, Windows Pen, and Continuum.
 
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Continuum switches in and out of &quot;tablet mode&quot;, adapting and optimizing apps and the Windows shell based on the physical form factor and customer's preferences.</p>
-<p>[Read more about implementing tablet mode](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/continuum)</p></td>
-<td><p>Cortana, the personal assistant technology introduced on Windows Phone 8.1, is now supported on all Windows 10 devices. Learn device recommendations and test setup in these articles.</p>
-<p>[Read more about including Cortana](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/cortana)</p></td>
-<td><p>Windows Hello allows users to securely logon to a device using a biometric device like a fingerprint reader or an IR camera.</p>
-<p>[Learn more about biometric requirements for Windows Hello](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/windows-hello-biometric-requirements)</p></td>
-</tr>
-</tbody>
-</table>
+[Hardware component guidelines](https://docs.microsoft.com/en-us/windows-hardware/design/component-guidelines/components)
 
 ## Develop Universal Windows Drivers
 
@@ -118,7 +102,7 @@ From Cortana to Continuum to the core architecture, this release includes tons o
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>For desktop PCs, learn strategies to build a set of images for specific markets to meet different customers' needs. Apply classic and modern Windows apps, drivers, languages, and other customizations, and mix and match your customizations as new Windows editions are released through automated scripts or a familiar Windows interface.</p>
+<td><p>For desktop PCs, learn strategies to build a set of images for specific markets to meet different customers' needs.</p>
 <p>[Build and deploy desktop devices](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/oem-windows-deployment-and-imaging-walkthrough)</p></td>
 <td><p>Learn about deploying Windows 10 S, a configuration of Windows 10 Pro that offers a familiar, productive Windows experience that’s streamlined for security and performance.</p>
 <p>[Windows 10 S manufacturing overview](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/windows-10-s-overview)</p>
