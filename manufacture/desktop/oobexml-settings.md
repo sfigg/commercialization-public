@@ -89,7 +89,7 @@ The following table shows description for OEM customization and registration pag
 |  | \<name> | Optional. Text to describe the name of the OEM. | String. |
 |  | \<eulafilename> | Optional. Text with the filename of the EULA file. | Absolute path to the EULA .rtf file. The EULA .html document must be in the same folder. Windows knows to look for the .html file in that location. <p> **Note**: .htm files are ignored. <p> **Important**: All HTML files in OOBE must use UTF-8 encoding.<p> See [OEM license terms](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/oem-license) to learn about creating an .html EULA file.   |
 |  | \<computername> | Optional. Text to describe the name of the computer | String. |
-|  | \<regsitration> | Optional. Additional details are below. |
+|  | \<registration> | Optional. Additional details are below. |
 | <**registration**> | | | |
 | | \<title> | Required if registration element is used. Text to title the Registration page. | String of up to 25 characters. |  
 | | \<subtitle> | Required if registration element is used. Text to describe the Registration page. |
