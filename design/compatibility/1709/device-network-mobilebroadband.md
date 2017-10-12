@@ -30,8 +30,8 @@ ms.technology: windows-oem
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
+<p>Windows 10 Client x64</p>
+<p>Windows 10 Client x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 <p>Windows 10 ARM64 Desktop</p>
@@ -62,8 +62,8 @@ Helpful links: Mobile Broadband Driver Model Specifications <http://msdn.microso
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
+<p>Windows 10 Client x64</p>
+<p>Windows 10 Client x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 <p>Windows 10 ARM64 Desktop</p>
@@ -94,8 +94,8 @@ Mobile Broadband Driver Model Specification: <http://msdn.microsoft.com/library/
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
+<p>Windows 10 Client x64</p>
+<p>Windows 10 Client x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 <p>Windows 10 ARM64 Desktop</p>
@@ -114,8 +114,8 @@ Mobile Broadband devices based on USB protocol must support Identity Morphing. I
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
+<p>Windows 10 Client x64</p>
+<p>Windows 10 Client x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 <p>Windows 10 ARM64 Desktop</p>
@@ -142,8 +142,8 @@ MB Miniport Driver Performance Requirements: <http://msdn.microsoft.com/en-us/li
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
+<p>Windows 10 Client x64</p>
+<p>Windows 10 Client x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 <p>Windows 10 ARM64 Desktop</p>
@@ -170,8 +170,8 @@ Mobile Broadband devices that support multi-carrier feature must support the mul
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
+<p>Windows 10 Client x64</p>
+<p>Windows 10 Client x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 <p>Windows 10 ARM64 Desktop</p>
@@ -190,8 +190,8 @@ The device seamlessly transitions between D0 and D3 warm states while in Connect
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
+<p>Windows 10 Client x64</p>
+<p>Windows 10 Client x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 <p>Windows 10 ARM64 Desktop</p>
@@ -210,8 +210,8 @@ USB based mobile broadband devices must support Windows implementation of USB se
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
+<p>Windows 10 Client x64</p>
+<p>Windows 10 Client x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 <p>Windows 10 ARM64 Desktop</p>
@@ -255,8 +255,8 @@ Mobile class of devices must support wake on mobile broadband. A device should w
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
+<p>Windows 10 Client x64</p>
+<p>Windows 10 Client x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 <p>Windows 10 ARM64 Desktop</p>
@@ -282,8 +282,8 @@ Additional Information
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
+<p>Windows 10 Client x64</p>
+<p>Windows 10 Client x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 <p>Windows 10 ARM64 Desktop</p>
@@ -314,8 +314,8 @@ Helpful links: Mobile Broadband Driver Model Specifications <http://msdn.microso
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
+<p>Windows 10 Client x64</p>
+<p>Windows 10 Client x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 <p>Windows 10 ARM64 Desktop</p>
@@ -334,8 +334,8 @@ GSM devices that support EAP-SIM must support EAP-SIM as defined in RFC 4186.
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
+<p>Windows 10 Client x64</p>
+<p>Windows 10 Client x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 <p>Windows 10 ARM64 Desktop</p>
@@ -366,8 +366,8 @@ Mobile Broadband Driver Model Specification: <http://msdn.microsoft.com/library/
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
+<p>Windows 10 Client x64</p>
+<p>Windows 10 Client x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 <p>Windows 10 ARM64 Desktop</p>
@@ -388,8 +388,8 @@ Additional Information: Identity Morphing Specification: See MSDN.
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
+<p>Windows 10 Client x64</p>
+<p>Windows 10 Client x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 <p>Windows 10 ARM64 Desktop</p>
@@ -416,8 +416,8 @@ MB Miniport Driver Performance Requirements: <http://msdn.microsoft.com/en-us/li
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
+<p>Windows 10 Client x64</p>
+<p>Windows 10 Client x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 <p>Windows 10 ARM64 Desktop</p>
@@ -446,8 +446,8 @@ Mobile broadband devices supporting multi-carrier feature must meet the multi-ca
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
+<p>Windows 10 Client x64</p>
+<p>Windows 10 Client x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 <p>Windows 10 ARM64 Desktop</p>
@@ -478,8 +478,8 @@ Device firmware should continue to abstract SMS PDP contexts and route them thro
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
+<p>Windows 10 Client x64</p>
+<p>Windows 10 Client x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 <p>Windows 10 ARM64 Desktop</p>
@@ -498,8 +498,8 @@ The device seamlessly transitions between D0 and D3 warm states while in Connect
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
+<p>Windows 10 Client x64</p>
+<p>Windows 10 Client x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 <p>Windows 10 ARM64 Desktop</p>
@@ -518,8 +518,8 @@ Mobile broadband devices must implement the fast dormancy mechanism as defined b
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
+<p>Windows 10 Client x64</p>
+<p>Windows 10 Client x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 <p>Windows 10 ARM64 Desktop</p>
@@ -538,8 +538,8 @@ USB based Mobile Broadband devices must support Windows implementation of USB se
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
+<p>Windows 10 Client x64</p>
+<p>Windows 10 Client x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 <p>Windows 10 ARM64 Desktop</p>
@@ -578,8 +578,8 @@ Mobile broadband class of devices must support wake on mobile broadband. A devic
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
+<p>Windows 10 Client x64</p>
+<p>Windows 10 Client x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 <p>Windows 10 ARM64 Desktop</p>
@@ -598,8 +598,8 @@ Windows Mobile Broadband Driver Model is updated to include the full support of 
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
+<p>Windows 10 Client x64</p>
+<p>Windows 10 Client x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile ARM64</p>
 <p>Windows 10 Mobile x86</p>
@@ -618,8 +618,8 @@ Windows Mobile Broadband Driver Model is updated to include the full support of 
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
+<p>Windows 10 Client x64</p>
+<p>Windows 10 Client x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile ARM64</p>
 <p>Windows 10 Mobile x86</p>
@@ -651,8 +651,8 @@ Executor is the term Windows uses to define the physical interfaces.  A modem th
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
+<p>Windows 10 Client x64</p>
+<p>Windows 10 Client x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile ARM64</p>
 <p>Windows 10 Mobile x86</p>

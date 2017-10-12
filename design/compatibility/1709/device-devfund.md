@@ -47,8 +47,8 @@ ms.technology: windows-oem
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
+<p>Windows 10 Client x64</p>
+<p>Windows 10 Client x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 <p>Windows 10 ARM64 Desktop</p>
@@ -88,7 +88,7 @@ Windows 10 S driver package must not include any custom applications by the offi
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
+<p>Windows 10 Client x64</p>
 <p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
@@ -125,8 +125,8 @@ You can find more details on the [VERSIONINFO resource on MSDN](https://msdn.mic
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
+<p>Windows 10 Client x64</p>
+<p>Windows 10 Client x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 <p>Windows 10 ARM64 Desktop</p>
@@ -176,8 +176,8 @@ In the Windows Logo Kit, the WDF Test can be run to validate this requirement.
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
+<p>Windows 10 Client x64</p>
+<p>Windows 10 Client x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
@@ -264,8 +264,8 @@ http://msdn.microsoft.com/en-us/library/ff560526.aspx</p>
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
+<p>Windows 10 Client x64</p>
+<p>Windows 10 Client x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 <p>Windows 10 ARM64 Desktop</p>
@@ -325,8 +325,8 @@ For more information about UMDF, visit the following website: <http://www.micros
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
+<p>Windows 10 Client x64</p>
+<p>Windows 10 Client x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
@@ -406,8 +406,8 @@ http://msdn.microsoft.com/en-us/library/ff560526.aspx</p>
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
+<p>Windows 10 Client x64</p>
+<p>Windows 10 Client x86</p>
 <p>Windows 10 ARM64 Desktop</p>
 </td></tr></table>
 
@@ -452,8 +452,8 @@ Drivers must not reference any of the following inbox components:
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
+<p>Windows 10 Client x64</p>
+<p>Windows 10 Client x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 <p>Windows 10 ARM64 Desktop</p>
@@ -509,8 +509,8 @@ In addition to standard driver requirements, the following requirements apply to
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
+<p>Windows 10 Client x64</p>
+<p>Windows 10 Client x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
@@ -569,7 +569,7 @@ More details on MFTs can be found in the MSDN at: <http://msdn.microsoft.com/en-
 <tr>
 <th>Exceptions</th>
 <td>
-<p>This is a requirement for Windows 10 Mobile (ARM, ARM64, x86), but recommended for Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) (x64, x86) and Windows Server 2016 Technical Preview x64. It will be required in the future for those architectures. Note that there are some exceptions to this requirement to accommodate the registration of Component Object Model (COM) objects and Media Foundation Transforms (MFT) using the AddReg directive. Refer to the Design Notes section of this requirement for additional details.</p>
+<p>This is a requirement for Windows 10 Mobile (ARM, ARM64, x86), but recommended for Windows 10 Client (x64, x86) and Windows Server 2016 Technical Preview x64. It will be required in the future for those architectures. Note that there are some exceptions to this requirement to accommodate the registration of Component Object Model (COM) objects and Media Foundation Transforms (MFT) using the AddReg directive. Refer to the Design Notes section of this requirement for additional details.</p>
 </tr>
 </table>
 
@@ -582,8 +582,8 @@ More details on MFTs can be found in the MSDN at: <http://msdn.microsoft.com/en-
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
+<p>Windows 10 Client x64</p>
+<p>Windows 10 Client x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
@@ -609,7 +609,7 @@ An INF AddService directive service-install-section may only specify a ServiceTy
 <tr>
 <th>Exceptions</th>
 <td>
-<p>This is a requirement for Windows 10 Mobile (ARM, ARM64, x86), but recommended for Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) (x64, x86) and Windows Server 2016 Technical Preview x64. It will be required in the future for those architectures.</p>
+<p>This is a requirement for Windows 10 Mobile (ARM, ARM64, x86), but recommended for Windows 10 Client (x64, x86) and Windows Server 2016 Technical Preview x64. It will be required in the future for those architectures.</p>
 </tr>
 </table>
 
@@ -622,8 +622,8 @@ An INF AddService directive service-install-section may only specify a ServiceTy
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
+<p>Windows 10 Client x64</p>
+<p>Windows 10 Client x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
@@ -661,7 +661,7 @@ AddReg=SetupClassAddReg    ; Reference to the ClassInstall32 AddReg section.
 <tr>
 <th>Exceptions</th>
 <td>
-<p>This is a requirement for Windows 10 Mobile (ARM, ARM64, x86), but recommended for Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) (x64, x86) and Windows Server 2016 Technical Preview x64. It will be required in the future for those architectures.</p>
+<p>This is a requirement for Windows 10 Mobile (ARM, ARM64, x86), but recommended for Windows 10 Client (x64, x86) and Windows Server 2016 Technical Preview x64. It will be required in the future for those architectures.</p>
 </tr>
 </table>
 
@@ -675,8 +675,8 @@ AddReg=SetupClassAddReg    ; Reference to the ClassInstall32 AddReg section.
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
+<p>Windows 10 Client x64</p>
+<p>Windows 10 Client x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
@@ -698,7 +698,7 @@ The following INF directive may not be referenced in an INF file:
 <tr>
 <th>Exceptions</th>
 <td>
-<p>This is a requirement for Windows 10 Mobile (ARM, ARM64, x86), but recommended for Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) (x64, x86) and Windows Server 2016 Technical Preview x64. It will be required in the future for those architectures.</p>
+<p>This is a requirement for Windows 10 Mobile (ARM, ARM64, x86), but recommended for Windows 10 Client (x64, x86) and Windows Server 2016 Technical Preview x64. It will be required in the future for those architectures.</p>
 </tr>
 </table>
 
@@ -711,8 +711,8 @@ The following INF directive may not be referenced in an INF file:
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
+<p>Windows 10 Client x64</p>
+<p>Windows 10 Client x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 <p>Windows 10 ARM64 Desktop</p>
@@ -788,8 +788,8 @@ Device-class co-installer example:
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
+<p>Windows 10 Client x64</p>
+<p>Windows 10 Client x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
@@ -816,7 +816,7 @@ Note that while the RegisterDlls directive can no longer be declared in an INF f
 <tr>
 <th>Exceptions</th>
 <td>
-<p>This is a requirement for Windows 10 Mobile (ARM, ARM64, x86), but recommended for Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) (x64, x86) and Windows Server 2016 Technical Preview x64. It will be required in the future for those architectures.</p>
+<p>This is a requirement for Windows 10 Mobile (ARM, ARM64, x86), but recommended for Windows 10 Client (x64, x86) and Windows Server 2016 Technical Preview x64. It will be required in the future for those architectures.</p>
 <td>
 </tr>
 </table>
@@ -832,8 +832,8 @@ Note that while the RegisterDlls directive can no longer be declared in an INF f
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
+<p>Windows 10 Client x64</p>
+<p>Windows 10 Client x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
@@ -857,7 +857,7 @@ The following INF sections and directives cannot be referenced in an INF file:
 <tr>
 <th>Exceptions</th>
 <td>
-<p>This is a requirement for Windows 10 Mobile (ARM, ARM64, x86), but recommended for Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) (x64, x86) and Windows Server 2016 Technical Preview x64. It will be required in the future for those architectures.</p>
+<p>This is a requirement for Windows 10 Mobile (ARM, ARM64, x86), but recommended for Windows 10 Client (x64, x86) and Windows Server 2016 Technical Preview x64. It will be required in the future for those architectures.</p>
 </td>
 </tr>
 </table>
@@ -872,8 +872,8 @@ The following INF sections and directives cannot be referenced in an INF file:
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
+<p>Windows 10 Client x64</p>
+<p>Windows 10 Client x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
@@ -897,7 +897,7 @@ Only these destination directories expressed as the appropriate DIRID will be a 
 <tr>
 <th>Exceptions</th>
 <td>
-<p>This is a requirement for Windows 10 Mobile (ARM, ARM64, x86), but recommended for Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) (x64, x86) and Windows Server 2016 Technical Preview x64. It will be required in the future for those architectures.</p>
+<p>This is a requirement for Windows 10 Mobile (ARM, ARM64, x86), but recommended for Windows 10 Client (x64, x86) and Windows Server 2016 Technical Preview x64. It will be required in the future for those architectures.</p>
 </td>
 </tr>
 </table>
@@ -912,8 +912,8 @@ Only these destination directories expressed as the appropriate DIRID will be a 
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
+<p>Windows 10 Client x64</p>
+<p>Windows 10 Client x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
@@ -937,7 +937,7 @@ The following INF directives may not be referenced in an INF file:
 <table>
 <tr>
 <th>Exceptions</th>
-<td><p>This is a requirement for Windows 10 Mobile (ARM, ARM64, x86), but recommended for Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) (x64, x86) and Windows Server 2016 Technical Preview x64. It will be required in the future for those architectures.</p></td>
+<td><p>This is a requirement for Windows 10 Mobile (ARM, ARM64, x86), but recommended for Windows 10 Client (x64, x86) and Windows Server 2016 Technical Preview x64. It will be required in the future for those architectures.</p></td>
 </tr></table>
 
 ### Device.DevFund.INF.InstallManagement
@@ -948,8 +948,8 @@ The following INF directives may not be referenced in an INF file:
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
+<p>Windows 10 Client x64</p>
+<p>Windows 10 Client x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
@@ -972,7 +972,7 @@ PnpLockDown=1
 <table>
 <tr>
 <th>Exceptions</th>
-<td><p>This is a requirement for Windows 10 Mobile (ARM, ARM64, x86), but recommended for Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) (x64, x86) and Windows Server 2016 Technical Preview x64. It will be required in the future for those architectures.</p></td>
+<td><p>This is a requirement for Windows 10 Mobile (ARM, ARM64, x86), but recommended for Windows 10 Client (x64, x86) and Windows Server 2016 Technical Preview x64. It will be required in the future for those architectures.</p></td>
 </tr></table>
 
 ### Device.DevFund.INF.LegacySyntax
@@ -983,8 +983,8 @@ PnpLockDown=1
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
+<p>Windows 10 Client x64</p>
+<p>Windows 10 Client x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
@@ -1003,7 +1003,7 @@ The following INF service install section directive may not be referenced in an 
 <table>
 <tr>
 <th>Exceptions</th>
-<td><p>This is a requirement for Windows 10 Mobile (ARM, ARM64, x86), but recommended for Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) (x64, x86) and Windows Server 2016 Technical Preview x64. It will be required in the future for those architectures.</p></td>
+<td><p>This is a requirement for Windows 10 Mobile (ARM, ARM64, x86), but recommended for Windows 10 Client (x64, x86) and Windows Server 2016 Technical Preview x64. It will be required in the future for those architectures.</p></td>
 </tr></table>
 
 ### Device.DevFund.INF.TargetOSVersion
@@ -1014,8 +1014,8 @@ The following INF service install section directive may not be referenced in an 
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
+<p>Windows 10 Client x64</p>
+<p>Windows 10 Client x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
@@ -1039,7 +1039,7 @@ Beginning in Windows 8, the ProductType field and SuiteMask field are no longer 
 <table>
 <tr>
 <th>Exceptions</th>
-<td><p>This is a requirement for Windows 10 Mobile (ARM, ARM64, x86), but recommended for Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) (x64, x86) and Windows Server 2016 Technical Preview x64. It will be required in the future for those architectures.</p></td>
+<td><p>This is a requirement for Windows 10 Mobile (ARM, ARM64, x86), but recommended for Windows 10 Client (x64, x86) and Windows Server 2016 Technical Preview x64. It will be required in the future for those architectures.</p></td>
 </tr></table>
 
 <a name="device.devfund.memory"></a>
@@ -1055,8 +1055,8 @@ Beginning in Windows 8, the ProductType field and SuiteMask field are no longer 
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
+<p>Windows 10 Client x64</p>
+<p>Windows 10 Client x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
@@ -1107,8 +1107,8 @@ The corresponding test will check the size of the drivers non-paged code pages i
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
+<p>Windows 10 Client x64</p>
+<p>Windows 10 Client x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
@@ -1145,8 +1145,8 @@ A new type of non-paged pool that is a non-executable (NX) pool has been introdu
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
+<p>Windows 10 Client x64</p>
+<p>Windows 10 Client x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 <p>Windows 10 ARM64 Desktop</p>
@@ -1228,8 +1228,8 @@ In addition, Driver Verifier will be enabled on all applicable kit tests.
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
+<p>Windows 10 Client x64</p>
+<p>Windows 10 Client x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
@@ -1258,8 +1258,8 @@ For additional information, see the "Creating Reliable and Secure Drivers" and "
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
+<p>Windows 10 Client x64</p>
+<p>Windows 10 Client x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 <p>Windows 10 ARM64 Desktop</p>
@@ -1325,8 +1325,8 @@ In the Windows Logo Kit, this requirement will be tested by using the Embedded S
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
+<p>Windows 10 Client x64</p>
+<p>Windows 10 Client x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 <p>Windows 10 ARM64 Desktop</p>
@@ -1368,8 +1368,8 @@ This requirement will be tested by using the "Reinstall with IO" test.
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
+<p>Windows 10 Client x64</p>
+<p>Windows 10 Client x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 <p>Windows 10 ARM64 Desktop</p>
@@ -1395,8 +1395,8 @@ The steps for testing this requirement are outlined in the Device install check 
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
+<p>Windows 10 Client x64</p>
+<p>Windows 10 Client x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 <p>Windows 10 ARM64 Desktop</p>
@@ -1419,8 +1419,8 @@ Drivers that are not provided by the operating system are not allowed to be name
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
+<p>Windows 10 Client x64</p>
+<p>Windows 10 Client x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
@@ -1459,8 +1459,8 @@ The test for DEP is currently part of the systems test category in the Windows H
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
+<p>Windows 10 Client x64</p>
+<p>Windows 10 Client x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
@@ -1567,8 +1567,8 @@ The following IRPs are often the cause of driver issues. Special attention shoul
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
+<p>Windows 10 Client x64</p>
+<p>Windows 10 Client x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 <p>Windows 10 ARM64 Desktop</p>
@@ -1605,8 +1605,8 @@ Note: If the device does not provide an INF file (that is, the device uses the i
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
+<p>Windows 10 Client x64</p>
+<p>Windows 10 Client x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
@@ -1635,8 +1635,8 @@ Devices must support Fast User Switching (FUS) and Remote Desktop Services witho
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
+<p>Windows 10 Client x64</p>
+<p>Windows 10 Client x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
@@ -1677,8 +1677,8 @@ Note that systems that support Connected Standby will not support S3, and may or
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
+<p>Windows 10 Client x64</p>
+<p>Windows 10 Client x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
@@ -1716,8 +1716,8 @@ The INF2CAT signability verification tool installs automatically the first time 
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
+<p>Windows 10 Client x64</p>
+<p>Windows 10 Client x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
@@ -1744,8 +1744,8 @@ In Windows Vista® and later operating systems, standard Plug and Play calls suc
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
+<p>Windows 10 Client x64</p>
+<p>Windows 10 Client x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
@@ -1806,8 +1806,8 @@ Interrupt arbitration may require multiple iterations. Drivers must be prepared
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
+<p>Windows 10 Client x64</p>
+<p>Windows 10 Client x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 <p>Windows 10 ARM64 Desktop</p>
@@ -1859,8 +1859,8 @@ Using the System's Cancel Spin Lock
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
+<p>Windows 10 Client x64</p>
+<p>Windows 10 Client x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -1882,8 +1882,8 @@ In order for end users to be able to roll back a driver (i.e., reinstall the pre
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
+<p>Windows 10 Client x64</p>
+<p>Windows 10 Client x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
@@ -2192,8 +2192,8 @@ The following table lists which errors in section 6.2 are required to be reporte
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
+<p>Windows 10 Client x64</p>
+<p>Windows 10 Client x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
 
@@ -2235,8 +2235,8 @@ The resulting DVL file output by Static Analysis tools will be captured by the H
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
+<p>Windows 10 Client x64</p>
+<p>Windows 10 Client x86</p>
 <p>Windows 10 ARM64 Desktop</p>
 </td></tr></table>
 
@@ -2256,8 +2256,8 @@ For more information, please refer to MSDN: http;//aka.ms/CompatOneCoreUAP
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
+<p>Windows 10 Client x64</p>
+<p>Windows 10 Client x86</p>
 <p>Windows 10 ARM64 Desktop</p>
 </td></tr></table>
 

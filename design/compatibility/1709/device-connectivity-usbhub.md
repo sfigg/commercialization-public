@@ -35,8 +35,8 @@ ms.technology: windows-oem
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
+<p>Windows 10 Client x64</p>
+<p>Windows 10 Client x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 <p>Windows 10 ARM64 Desktop</p>
@@ -55,8 +55,8 @@ The USB hub must include details in its hub descriptor that provide the operatin
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
+<p>Windows 10 Client x64</p>
+<p>Windows 10 Client x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 <p>Windows 10 ARM64 Desktop</p>
@@ -75,8 +75,8 @@ USB hubs must support the selective suspend state, as stated in both the USB Spe
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
+<p>Windows 10 Client x64</p>
+<p>Windows 10 Client x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 <p>Windows 10 ARM64 Desktop</p>
@@ -103,8 +103,8 @@ USB 3.0 hubs must:
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
+<p>Windows 10 Client x64</p>
+<p>Windows 10 Client x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 <p>Windows 10 ARM64 Desktop</p>
@@ -135,8 +135,8 @@ A hub should not report spurious change interrupts. A hub should complete the po
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
+<p>Windows 10 Client x64</p>
+<p>Windows 10 Client x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 <p>Windows 10 ARM64 Desktop</p>

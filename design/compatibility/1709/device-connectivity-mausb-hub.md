@@ -32,8 +32,8 @@ MA-USB requirements are currently optional and will not be enforced until 2017.
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
+<p>Windows 10 Client x64</p>
+<p>Windows 10 Client x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 <p>Windows 10 ARM64 Desktop</p>
@@ -58,8 +58,8 @@ MA-USB Hubs must support these minimum buffer sizes to be able to work reliably 
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
+<p>Windows 10 Client x64</p>
+<p>Windows 10 Client x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 <p>Windows 10 ARM64 Desktop</p>
@@ -80,8 +80,8 @@ The Integrated USB 2.0/3.1 hub must include details in its hub descriptor that p
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
+<p>Windows 10 Client x64</p>
+<p>Windows 10 Client x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 <p>Windows 10 ARM64 Desktop</p>
@@ -102,8 +102,8 @@ MA-USB hubs must implement support for IP Mode as specificed in the MA-USB speci
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
+<p>Windows 10 Client x64</p>
+<p>Windows 10 Client x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 <p>Windows 10 ARM64 Desktop</p>
@@ -132,8 +132,8 @@ MA-USB hubs must do the following certification (once certification is available
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
+<p>Windows 10 Client x64</p>
+<p>Windows 10 Client x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 <p>Windows 10 ARM64 Desktop</p>
@@ -156,8 +156,8 @@ Integrated USB 2.0/3.1 Hubs must support USB suspend. After a Integrated USB 2.0
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
+<p>Windows 10 Client x64</p>
+<p>Windows 10 Client x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 <p>Windows 10 ARM64 Desktop</p>
@@ -184,8 +184,8 @@ Network interface implementation MA-USB Hub must meet the following requirements
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
+<p>Windows 10 Client x64</p>
+<p>Windows 10 Client x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 <p>Windows 10 ARM64 Desktop</p>
@@ -212,8 +212,8 @@ TCP implementation of MA-USB Hub must meet the following requirements to work re
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
+<p>Windows 10 Client x64</p>
+<p>Windows 10 Client x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 <p>Windows 10 ARM64 Desktop</p>
@@ -242,8 +242,8 @@ Integrated USB 3.1 hubs must:
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
+<p>Windows 10 Client x64</p>
+<p>Windows 10 Client x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 <p>Windows 10 ARM64 Desktop</p>

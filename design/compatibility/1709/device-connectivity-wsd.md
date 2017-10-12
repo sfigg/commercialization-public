@@ -28,8 +28,8 @@ ms.technology: windows-oem
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
+<p>Windows 10 Client x86</p>
+<p>Windows 10 Client x64</p>
 <p>Windows 10 Mobile x86</p>
 <p>Windows 10 Mobile x64</p>
 <p>Windows Server 2016 x64</p>
@@ -53,8 +53,8 @@ DPWS Specification available at
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
+<p>Windows 10 Client x86</p>
+<p>Windows 10 Client x64</p>
 <p>Windows 10 Mobile x86</p>
 <p>Windows 10 Mobile x64</p>
 <p>Windows Server 2016 x64</p>
@@ -78,8 +78,8 @@ DPWS Specification available at
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
+<p>Windows 10 Client x86</p>
+<p>Windows 10 Client x64</p>
 <p>Windows 10 Mobile x86</p>
 <p>Windows 10 Mobile x64</p>
 <p>Windows Server 2016 x64</p>
@@ -101,8 +101,8 @@ Metadata Exchange specification can be obtained at <http://go.microsoft.com/fwli
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
+<p>Windows 10 Client x86</p>
+<p>Windows 10 Client x64</p>
 <p>Windows 10 Mobile x86</p>
 <p>Windows 10 Mobile x64</p>
 <p>Windows Server 2016 x64</p>
@@ -124,8 +124,8 @@ The Device Profile for Web Services Specification of February 2006 is available 
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
+<p>Windows 10 Client x86</p>
+<p>Windows 10 Client x64</p>
 <p>Windows 10 Mobile x86</p>
 <p>Windows 10 Mobile x64</p>
 <p>Windows Server 2016 x64</p>
@@ -157,8 +157,8 @@ Additional information can be found in the Windows Rally Development Kit at <htt
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
+<p>Windows 10 Client x86</p>
+<p>Windows 10 Client x64</p>
 <p>Windows 10 Mobile x86</p>
 <p>Windows 10 Mobile x64</p>
 <p>Windows Server 2016 x64</p>

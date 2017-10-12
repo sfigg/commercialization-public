@@ -30,8 +30,8 @@ ms.technology: windows-oem
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
+<p>Windows 10 Client x86</p>
+<p>Windows 10 Client x64</p>
 <p>Windows 10 Mobile x86</p>
 <p>Windows 10 Mobile x64</p>
 <p>Windows 10 ARM64 Desktop</p>
@@ -54,8 +54,8 @@ See the Windows Driver Kit, "NDIS."
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
+<p>Windows 10 Client x86</p>
+<p>Windows 10 Client x64</p>
 <p>Windows 10 Mobile x86</p>
 <p>Windows 10 Mobile x64</p>
 <p>Windows 10 ARM64 Desktop</p>
@@ -78,8 +78,8 @@ See the No Pause On Suspend Specification.
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
-<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
+<p>Windows 10 Client x86</p>
+<p>Windows 10 Client x64</p>
 <p>Windows 10 Mobile x86</p>
 <p>Windows 10 Mobile x64</p>
 <p>Windows 10 ARM64 Desktop</p>
