@@ -14,32 +14,25 @@ ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-# HeapEventProvider
 
+# HeapEventProvider
 
 Represents a provider of heap events for the profile.
 
+
 ## Element Hierarchy
 
+* \<[WindowsPerformanceRecorder](windowsperformancerecorder.md)\>
+  * \<[Profiles](profiles.md)\>
+    * \<**HeapEventProvider**\>
+    * \<[Profile](profile-wpr.md)\>
+      * \<[Collectors](collectors.md)\>
+        * \<[HeapEventCollectorId](heapeventcollectorid.md)\>
+          * \<[HeapEventProviders](heapeventproviders.md)\>
+            * \<**HeapEventProvider**\>
 
-&lt;[WindowsPerformanceRecorder](windowsperformancerecorder.md)&gt;
-
-     &lt;[Profiles](profiles.md)&gt;
-
-          &lt;**HeapEventProvider**&gt;
-
-          &lt;[Profile](profile-wpr.md)&gt;
-
-               &lt;[Collectors](collectors.md)&gt;
-
-                    &lt;[HeapEventCollectorId](heapeventcollectorid.md)&gt;
-
-                         &lt;[HeapEventProviders](heapeventproviders.md)&gt;
-
-                              &lt;**HeapEventProvider**&gt;
 
 ## Syntax
-
 
 ```
 <HeapEventProvider Id   = IdType
@@ -51,118 +44,39 @@ Represents a provider of heap events for the profile.
 </HeapEventProvider>
 ```
 
+
 ## Attributes and Elements
 
 
 ### Attributes
 
-<table>
-<colgroup>
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Attribute</th>
-<th>Description</th>
-<th>Data type</th>
-<th>Required</th>
-<th>Default</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><strong>Id</strong></p></td>
-<td><p>Uniquely identifies the heap event provider.</p></td>
-<td><p>String that must have at least one character and cannot contain colons (:) or spaces.</p></td>
-<td><p>Yes</p></td>
-<td><p></p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Base</strong></p></td>
-<td><p>Indicates the base heap event provider.</p></td>
-<td><p>string</p></td>
-<td><p>No</p></td>
-<td><p></p></td>
-</tr>
-</tbody>
-</table>
+| Attribute | Description                                  | Data type                                                                             | Required | Default |
+| :-------- | :------------------------------------------- | :------------------------------------------------------------------------------------ | :------- | :------ |
+| **Id**    | Uniquely identifies the heap event provider. | String that must have at least one character and cannot contain colons (:) or spaces. | Yes      |         |
+| **Base**  | Indicates the base heap event provider.      | string                                                                                | No       |         |
 
- 
 
 ### Child Elements
 
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-<th>Description</th>
-<th>Requirement</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>[HeapProcessIds](heapprocessids.md)</p></td>
-<td><p>Represents a collection of heap process identifiers.</p></td>
-<td><p>Required, exactly 1.</p></td>
-</tr>
-</tbody>
-</table>
+| Element                             | Description                                          | Requirement          |
+| :---------------------------------- | :--------------------------------------------------- | :------------------- |
+| [HeapProcessIds](heapprocessids.md) | Represents a collection of heap process identifiers. | Required, exactly 1. |
 
- 
 
 ### Parent Elements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>[HeapEventProviders](heapeventproviders.md)</p></td>
-<td><p>Represents a collection of heap event provider identifiers and heap event providers.</p></td>
-</tr>
-<tr class="even">
-<td><p>[Profiles](profiles.md)</p></td>
-<td><p>Represents a collection of collectors, providers, and profiles.</p></td>
-</tr>
-</tbody>
-</table>
+| Element                                     | Description                                                                          |
+| :------------------------------------------ | :----------------------------------------------------------------------------------- |
+| [HeapEventProviders](heapeventproviders.md) | Represents a collection of heap event provider identifiers and heap event providers. |
+| [Profiles](profiles.md)                     | Represents a collection of collectors, providers, and profiles.                      |
 
- 
 
 ## Remarks
 
-
 Derived heap event providers have all the attributes of the base provider by default. These can be overridden by explicitly specifying them in the derived provider. For more information, see [Inheritance](inheritance.md).
+
 
 ## Related topics
 
-
 [Elements](elements.md)
-
- 
-
- 
-
-
-
-
-
-
 
