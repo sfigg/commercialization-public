@@ -14,7 +14,7 @@ ms.technology: windows-oem
 ---
 # AllowInsecureGuestAuth
 
-Specifies whether the SMB client will allow insecure guest logons to an SMB server.
+`Microsoft-Windows-WorkstationService-AllowInsecureGuestAuth` specifies whether the SMB client will allow insecure guest logons to an SMB server.
 
 Insecure guest logons are used by file servers to allow unauthenticated access to shared folders. While uncommon in an enterprise environment, insecure guest logons are frequently used by consumer Network Attached Storage (NAS) appliances acting as file servers. Windows file servers require authentication and do not use insecure guest logons by default.
 
@@ -23,10 +23,10 @@ Insecure guest logons are used by file servers to allow unauthenticated access t
 
 ## Values
 
-| Value         | Description                                                                  |
-|:--------------|:-----------------------------------------------------------------------------|
-| 0             | SMB client rejects insecure guest logons. <br/>This is the default value.    |
-| 1             | SMB client allows insecure guest logons.                                     |
+| Value                          | Description                                                                                    |
+|:-------------------------------|:-----------------------------------------------------------------------------------------------|
+| 0                              | SMB client rejects insecure guest logons. <br/>This is the default, and recommended, value.    |
+| 1                              | SMB client allows insecure guest logons.                                                       |
 
 ## Valid Passes
 
@@ -42,14 +42,14 @@ For the list of the supported Windows editions and architectures that this compo
 
 ## XML Example
 
-The following XML output shows how to configre the SMB client to allow insecure guest logons to an SMB server.
+The following XML output shows how to enable the SMB client to allow insecure guest logons to an SMB server.
 
 ```XML
 <settings pass="generalize">
-        <component name="Microsoft-Windows-WorkstationService" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-            <AllowInsecureGuestAuth>1</AllowInsecureGuestAuth>
-        </component>
-    </settings>
+    <component name="Microsoft-Windows-WorkstationService" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <AllowInsecureGuestAuth>1</AllowInsecureGuestAuth>
+    </component>
+</settings>
 ```
 
 ## Related topics

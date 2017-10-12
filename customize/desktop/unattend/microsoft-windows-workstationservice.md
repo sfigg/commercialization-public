@@ -15,7 +15,7 @@ ms.technology: windows-oem
 ---
 # Microsoft-Windows-WorkstationService
 
-The Microsoft-Windows-WorkstationService component creates and maintains client network connections to remote servers, by using the Server Message Block (SMB) protocol.
+The `Microsoft-Windows-WorkstationService` component creates and maintains client network connections to remote servers, by using the Server Message Block (SMB) protocol.
 
 Client systems use the SMB protocol to request file, print, and communications services from server systems over a network.
 
@@ -29,7 +29,7 @@ Client systems use the SMB protocol to request file, print, and communications s
 <tbody>
 <tr class="even">
 <td><p>[AllowInsecureGuestAuth](microsoft-windows-workstationservice-allowinsecureguestauth.md)</p></td>
-<td><p></p></td>
+<td><p>Specifies whether an SMB client allows insecure guest logons to an SMB server.</p></td>
 </tr>
 <tr class="odd">
 <td><p>[OtherDomains](microsoft-windows-workstationservice-otherdomains.md)</p></td>

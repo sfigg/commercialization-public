@@ -9,7 +9,7 @@ ms.technology: windows-oem
 ---
 # OverlayFlags
 
-Specifies whether to allow writes to unused space on the volume to pass through, and not be redirected to the overlay file. Enabling this setting helps conserve space on the overlay file.
+`Microsoft-Windows-Embedded-UnifiedWriteFilter-OverlayFlags` pecifies whether to allow writes to unused space on the volume to pass through, and not be redirected to the overlay file. Enabling this setting helps conserve space on the overlay file.
 
 > [!Note]
 > This setting is not intended to be enabled for a systems with a RAM [OverlayType](microsoft-windows-embedded-unifiedwritefilter-overlaytype.md).
