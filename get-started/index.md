@@ -40,7 +40,7 @@ Building a great Windows 10 device starts with selecting the right components. U
 
 For desktop PCs, you can use your existing settings file (Unattend.xml) to add settings during Windows installation.
 
-[Build a Windows Setup unattend file](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/update-windows-settings-and-scripts-create-your-own-answer-file-sxs)
+* [Build a Windows Setup unattend file](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/update-windows-settings-and-scripts-create-your-own-answer-file-sxs)
 
 ## Develop Universal Windows Drivers
 
