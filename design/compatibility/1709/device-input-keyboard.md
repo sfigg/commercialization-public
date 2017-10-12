@@ -28,7 +28,7 @@ ms.technology: windows-oem
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -51,7 +51,7 @@ See the Microsoft Platform SDK, "WM\_APPCOMMAND."
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -72,7 +72,7 @@ The charm button must send the correct scan code corresponding to the charm. No 
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -103,7 +103,7 @@ The charm button must send the correct scan code corresponding to the charm. No 
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -138,7 +138,7 @@ HID Usage Page and ID information for these functions can be found at <http://ww
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -157,7 +157,7 @@ Third-party keyboard kernel-mode drivers must be ported to the WDF KMDF model.
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -176,7 +176,7 @@ All keyboards that support more than 50 keys must implement the Windows Symbol k
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -195,7 +195,7 @@ If the system includes more than one keyboard, there must be no conflicts. For e
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>

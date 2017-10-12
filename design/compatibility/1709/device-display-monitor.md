@@ -26,7 +26,7 @@ ms.technology: windows-oem
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -51,7 +51,7 @@ Multiple transition lead source to notify the OS of multiple device arrival and
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -70,7 +70,7 @@ Displays with digital inputs, such as Digital Visual Interface (DVI), High-Defin
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -128,7 +128,7 @@ The ACPI specification defines the method to acquire the EDID from the BIOS to a
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -169,7 +169,7 @@ The connector must support the maximum allowable mode as defined in the specific
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>

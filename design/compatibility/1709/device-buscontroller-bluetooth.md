@@ -51,7 +51,7 @@ These requirements are "If Implemented" for Client systems and apply only if a C
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -83,7 +83,7 @@ The Bluetooth controller is highly recommended to support the following LE state
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -102,7 +102,7 @@ The Bluetooth controller must support a minimum of 25 entries in its white list 
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -121,7 +121,7 @@ The Bluetooth controllers must be tested with Microsoft's Bluetooth stack when s
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -144,7 +144,7 @@ Radios that support the Microsoft defined Bluetooth HCI extensions must comply w
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -163,7 +163,7 @@ To ensure a uniform experience across Windows Store Apps using the Bluetooth LE 
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -186,7 +186,7 @@ Bluetooth Radio Management in Windows 8.1 shall only be enabled for internal Blu
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -207,7 +207,7 @@ Design Notes: The scatternet support should follow the enhanced scatternet suppo
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -226,7 +226,7 @@ Bluetooth controllers must allow the simultaneous use of both Basic Rate (BR)/En
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -245,7 +245,7 @@ The manufacturer fixes the informational parameters, which provide valuable info
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -262,7 +262,7 @@ The Bluetooth host controller must comply with the requirements that are outline
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
@@ -292,7 +292,7 @@ We want users to experience the best possible quality audio when using Bluetooth
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -311,7 +311,7 @@ Non-USB Bluetooth controllers must achieve at least a throughput of 700 kbps at 
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -335,7 +335,7 @@ In order to ensure a high quality audio experience, all non-USB connected Blueto
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>

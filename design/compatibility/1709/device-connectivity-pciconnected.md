@@ -26,7 +26,7 @@ ms.technology: windows-oem
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
@@ -47,7 +47,7 @@ If the device supports 64-bit prefetchable memory BARs, Windows attempts to ass
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
@@ -64,7 +64,7 @@ All registers that the device requires at interrupt time must be in I/O or memor
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
@@ -81,7 +81,7 @@ This is the only method that Windows will use to determine the relationship of 
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
@@ -100,7 +100,7 @@ See PCI Local Bus Specification, Revision 2.3, Section 6.2.2.
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
@@ -122,7 +122,7 @@ Message Signaled Interrupt for PCI-X device is required by industry standard spe
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
@@ -141,7 +141,7 @@ See PCI Local Bus Specification, Revision 2.1 or later.
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
@@ -182,7 +182,7 @@ If an interrupt is implemented, PCI Express devices must support the interrupt d
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>

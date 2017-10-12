@@ -35,7 +35,7 @@ Any technology that implements the GUID\_DEVINTERFACE\_NFP device driver interfa
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -52,7 +52,7 @@ The NFP provider must support maximum message size no smaller than 10 KB and tra
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -69,7 +69,7 @@ The NFP provider must enable clients to receive DeviceArrived and DeviceDeparted
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -86,7 +86,7 @@ The NFP provider must support the NDEF protocol as defined by the NFC Forum in t
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -103,7 +103,7 @@ The NFP provider must support transmitting and receiving data via the NFC Forum 
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -120,7 +120,7 @@ The NFP provider must support publishing and transmitting messages.
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -137,7 +137,7 @@ The NFP provider must reliably read and write tags.
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -154,7 +154,7 @@ The NFP provider must be able to receive and deliver messages to subscribed clie
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -176,7 +176,7 @@ The Radio Management DDI allows callers to the NFC device driver to set the powe
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -204,7 +204,7 @@ The Secure Element DDI allows for Host Card Emulation (HCE) based secure element
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -221,7 +221,7 @@ An NFC Secure Element provider that supports HCE based card emulation must be ab
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -238,7 +238,7 @@ An NFC Secure Element provider that supports HCE based card emulation must suppo
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -262,7 +262,7 @@ Any technology that implements the GUID\_DEVINTERFACE\_SMARTCARD\_READER device 
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -279,7 +279,7 @@ The Smart Card Reader provider must be able to get and set smart card attributes
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -296,7 +296,7 @@ The Smart Card Reader provider must be able to communicate according to PC/SC st
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -322,7 +322,7 @@ Any technology that implements the GUID\_DEVINTERFACE\_NFCSE device driver inter
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -339,7 +339,7 @@ An NFC Secure Element provider that supports UICC based card emulation must be a
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -356,7 +356,7 @@ An NFC Secure Element provider that supports UICC based card emulation must be a
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -373,7 +373,7 @@ An NFC Secure Element provider that supports UICC based card emulation must supp
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -400,7 +400,7 @@ Any technology that implements the GUID_DEVINTERFACE_NFCSE device driver interfa
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -417,7 +417,7 @@ An NFC Secure Element provider that supports embedded SE-based card emulation mu
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -434,7 +434,7 @@ An NFC Secure Element provider that supports embedded SE based card emulation mu
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -451,7 +451,7 @@ An NFC Secure Element provider that supports embedded SE-based card emulation mu
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>

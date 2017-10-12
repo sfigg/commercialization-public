@@ -33,7 +33,7 @@ ms.technology: windows-oem
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -53,7 +53,7 @@ The USB hub must include details in its hub descriptor that provide the operatin
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -73,7 +73,7 @@ USB hubs must support the selective suspend state, as stated in both the USB Spe
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -101,7 +101,7 @@ USB 3.0 hubs must:
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -133,7 +133,7 @@ A hub should not report spurious change interrupts. A hub should complete the po
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>

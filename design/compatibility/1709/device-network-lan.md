@@ -42,7 +42,7 @@ ms.technology: windows-oem
 ### Device.Network.LAN.10GbOrGreater.CloudStress
 Ethernet Devices that implement GRE Encapsulated Packet Task Offloads must comply with the specification
 
-<table><tr><th>Applies to</th><td><p>Windows Server 2016 x64</p></td></tr></table>
+<table><tr><td>Applies to</td><td><p>Windows Server 2016 x64</p></td></tr></table>
 
 **Description**
 
@@ -70,7 +70,7 @@ _Basic requirements for LAN cards used in Microsoft Azure Stack solutions_
 > [!WARNING]
 > Certification for Windows Server 2017, Azure Stack, and SDDC must meet the [Windows Hardware Compatibility Requirements as stated in version 1607 of documentation](https://docs.microsoft.com/en-us/windows-hardware/design/compatibility/), must use [version 1607 of the HLK (build 14393)](https://go.microsoft.com/fwlink/p/?LinkID=404112) with [matching playlist](http://aka.ms/hlkplaylist) and supplemental content to generate logs, and must follow policies as stated in the [Windows Server Policy document](https://go.microsoft.com/fwlink/p/?linkid=834831). Questions about the Azure Stack or SDDC programs or how to submit the results for solution validation should be directed to the appropriate Microsoft technical account manager or partner management contact.
 
-<table><tr><th>Applies to</th><td><p>Windows Server 2016 x64</p></td></tr></table>
+<table><tr><td>Applies to</td><td><p>Windows Server 2016 x64</p></td></tr></table>
 
 **Description**
 
@@ -111,7 +111,7 @@ Microsoft Azure Stack requirements for LAN cards (NICs) are captured by the foll
 
 _Network controllers that are used for Microsoft Azure Stack solutions must comply with this specification_ 
 
-<table><tr><th>Applies to</th><td><p>Windows Server 2016 x64</p></td></tr></table>
+<table><tr><td>Applies to</td><td><p>Windows Server 2016 x64</p></td></tr></table>
 
 **Description**
 
@@ -130,7 +130,7 @@ To comply with this specification, the controller must pass the PCS test run wit
 
 _Basic requirements for LAN cards used in Microsoft SDDC offering _ 
 
-<table><tr><th>Applies to</th><td><p>Windows Server 2016 x64</p></td></tr></table>
+<table><tr><td>Applies to</td><td><p>Windows Server 2016 x64</p></td></tr></table>
 
 **Description**
 
@@ -171,7 +171,7 @@ Microsoft SDDC requirements for LAN cards (NICs) are captured by the following t
 
 _Network controllers that are used for Microsoft SDDC offering must comply with this specification_ 
 
-<table><tr><th>Applies to</th><td><p>Windows Server 2016 x64</p></td></tr></table>
+<table><tr><td>Applies to</td><td><p>Windows Server 2016 x64</p></td></tr></table>
 
 **Description**
 
@@ -196,7 +196,7 @@ To comply with this specification, the controller must pass the PCS test run wit
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -215,7 +215,7 @@ Ethernet devices must be able to link at 100 Mb or higher speeds. Windows Serve
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -236,7 +236,7 @@ Design Notes: See the Windows Driver Kit, "multicast." See the Windows Driver Ki
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -255,7 +255,7 @@ Ethernet devices must adhere to the standardized registry keywords for controlli
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -274,7 +274,7 @@ Buffer alignment refers to whether a buffer begins on an odd-byte, word, double-
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -293,7 +293,7 @@ Network offloads implemented by Ethernet devices need to operate consistently, i
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -314,7 +314,7 @@ Design Notes: See the Windows Driver Kit, "NDIS" and "WDF."
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -336,7 +336,7 @@ Design Notes: See the Windows Driver Kit, "NDIS."
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -355,7 +355,7 @@ The miniport driver must support all filter types in the Windows Driver Kit. Not
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -374,7 +374,7 @@ Ethernet devices Miniport Driver/Driver Software must not disable OS services. 
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -393,7 +393,7 @@ This requirement only applies to Ethernet devices that implement link speeds of 
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -414,7 +414,7 @@ Design Notes: New solutions are recommended to implement a padding of zeros. How
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -438,7 +438,7 @@ All 802.3 Ethernet devices must implement and comply with the IEEE 802.3 specifi
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -474,7 +474,7 @@ Ethernet devices implement Checksum Offloads must expose the NDIS Enumeration K
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -510,7 +510,7 @@ See the Power Management specification on MSDN.
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -540,7 +540,7 @@ The miniport must implement the said protocol in accordance to RFCs describing N
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -565,7 +565,7 @@ Exceptions - Does not apply to non-AOAC capable devices
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -587,7 +587,7 @@ Design Notes: See the Power Management specification on MSDN.
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -614,7 +614,7 @@ Design Notes: See the Power Management specification on MSDN.
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -653,7 +653,7 @@ See the Data Center Bridging Specification at <http://msdn.microsoft.com/en-us/
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -682,7 +682,7 @@ This requirement only applies to Ethernet devices that implement GRE encapsulate
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -720,7 +720,7 @@ Ethernet devices that support IPsec task offload for Windows 8 must use NDIS 6.3
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows Server 2016 x64</p>
@@ -756,7 +756,7 @@ See the Network Direct Kernel Mode Interface (NDKPI) Specification (version 2.0)
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -777,7 +777,7 @@ See the Windows Driver Kit, "NDIS."
 
 ### Device.Network.LAN.MTUSize
 
-<table><tr><th>Applies to</th><td><p>Windows Server 2016 x64</p></td></tr></table>
+<table><tr><td>Applies to</td><td><p>Windows Server 2016 x64</p></td></tr></table>
 
 **Description**
 
@@ -785,7 +785,7 @@ Ethernet devices must support Jumbo Frames. MTU values in the User Interface mus
 
 ### Device.Network.LAN.MTUSize.EncapOverhead
 
-<table><tr><th>Applies to</th><td><p>Windows Server 2016 x64</p></td></tr></table>
+<table><tr><td>Applies to</td><td><p>Windows Server 2016 x64</p></td></tr></table>
 
 **Description**
 
@@ -804,7 +804,7 @@ Devices implementing GRE or VxLAN offloads must also incorporate this requiremen
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -836,7 +836,7 @@ Exceptions - Exceptions to this requirement include: PC Card, CardBus devices an
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -863,7 +863,7 @@ Exception - Exceptions to this requirement include: PC Card, CardBus devices and
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -891,7 +891,7 @@ See the WDK, Network Device Class Power Management Reference Specification.
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -919,7 +919,7 @@ NDIS version: 6.30
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -967,7 +967,7 @@ In addition, the device must allocate as many MSI-X table entries as there are C
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -990,7 +990,7 @@ See the MSDN page for more information: <http://msdn.microsoft.com/en-us/library
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -1013,7 +1013,7 @@ See the Windows Driver Kit, "OID\_GEN\_RECEIVE\_SCALE\_PARAMETERS."
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -1036,7 +1036,7 @@ See Windows Driver Kit, "RSS Hashing Functions." Also, refer to MSDN for more in
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -1067,7 +1067,7 @@ See the Windows Driver Kit, "OID\_GEN\_RECEIVE\_SCALE\_PARAMETERS."
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -1119,7 +1119,7 @@ See the Single Root I/O Virtualization Specification.
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -1159,7 +1159,7 @@ See the Single Root I/O Virtualization Specification.
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -1182,7 +1182,7 @@ See Windows Driver Kit, "Network Devices and Protocols."
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -1311,7 +1311,7 @@ Design Notes: See the full text of the RFCs at <http://go.microsoft.com/fwlink/?
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -1334,7 +1334,7 @@ Ethernet devices that implement TCP Chimney must properly handle Out Of Order da
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -1353,7 +1353,7 @@ This requirement only applies to Ethernet devices that implement TCP Chimney. If
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -1376,7 +1376,7 @@ See the Windows Driver Kit, "OID\_TCP\_OFFLOAD.
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -1395,7 +1395,7 @@ This requirement only applies to Ethernet devices that implement TCP Chimney. If
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -1418,7 +1418,7 @@ This requirement only applies to Ethernet devices that implement TCP Chimney. If
 
 *Requirements for Ethernet devices that implement Virtual Machine Multiple Queues*
 
-<table><tr><th>Applies to</th><td><p>Windows Server 2016 x64</p></td></tr></table>
+<table><tr><td>Applies to</td><td><p>Windows Server 2016 x64</p></td></tr></table>
 
 **Description**
 
@@ -1439,7 +1439,7 @@ The implementation must comply with the Virtual Machine Multiple Queues Referenc
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -1490,7 +1490,7 @@ Implementation details are in the ProgrammableMachine Queues specification, on t
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>

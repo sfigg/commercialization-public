@@ -26,7 +26,7 @@ ms.technology: windows-oem
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x86</p>
 <p>Windows 10 Client x64</p>
@@ -51,7 +51,7 @@ DPWS Specification available at
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x86</p>
 <p>Windows 10 Client x64</p>
@@ -76,7 +76,7 @@ DPWS Specification available at
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x86</p>
 <p>Windows 10 Client x64</p>
@@ -99,7 +99,7 @@ Metadata Exchange specification can be obtained at <http://go.microsoft.com/fwli
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x86</p>
 <p>Windows 10 Client x64</p>
@@ -122,7 +122,7 @@ The Device Profile for Web Services Specification of February 2006 is available 
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x86</p>
 <p>Windows 10 Client x64</p>
@@ -155,7 +155,7 @@ Additional information can be found in the Windows Rally Development Kit at <htt
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x86</p>
 <p>Windows 10 Client x64</p>

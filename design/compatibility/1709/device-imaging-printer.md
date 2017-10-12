@@ -30,7 +30,7 @@ ms.technology: windows-oem
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -74,7 +74,7 @@ For information about Application Verifier, see <http://go.microsoft.com/fwlink/
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -119,7 +119,7 @@ Version 4 print drivers must provide valid configuration files.
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -142,7 +142,7 @@ The printer does not have to complete or continue the failed print job when the 
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -162,7 +162,7 @@ and <http://msdn.microsoft.com/en-us/library/ff566075.aspx>*.*
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -190,7 +190,7 @@ INF files must have correct syntax when PWG Raster rendering filter is included
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -210,7 +210,7 @@ All v4 print drivers which make use of the PrintDeviceCapabilities DataFile type
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -229,7 +229,7 @@ For more information, see <http://msdn.microsoft.com/en-us/library/ff549787.aspx
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -277,7 +277,7 @@ For more information on v3 INF files, see <http://msdn.microsoft.com/en-us/libra
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -305,7 +305,7 @@ For more information, see <http://msdn.microsoft.com/en-us/library/ff566084.aspx
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -331,7 +331,7 @@ If the printer does not support printing on a physical medium that is at least 4
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -366,7 +366,7 @@ Printer drivers must support the following basic Print Schema element types:
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -401,7 +401,7 @@ For more information about the Photo Print Test, see <http://msdn.microsoft.com/
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -422,7 +422,7 @@ Printer must implement the following items in the description to ensure proper f
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x86</p>
 <p>Windows 10 Client x64</p>
@@ -477,7 +477,7 @@ Printers with mobile print capability must support one of the following PDLs and
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x86</p>
 <p>Windows 10 Client x64</p>
@@ -597,7 +597,7 @@ Printer supporting PrintDeviceCapabilities (PDC) must support the following item
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x86</p>
 <p>Windows 10 Client x64</p>
@@ -631,7 +631,7 @@ Printer supporting WS-Print 2.0 must implement the following requirements
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x86</p>
 <p>Windows 10 Client x64</p>
@@ -715,7 +715,7 @@ Printer supporting WS-Print 2.0 must implement the following requirements
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -759,7 +759,7 @@ V4 print drivers that support OpenXPS, either exclusively or in dual-format sup
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -797,7 +797,7 @@ Link to Compatible ID Whitepaper: <http://msdn.microsoft.com/en-us/windows/hardw
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -828,7 +828,7 @@ They must use syntactically valid JavaScript, implemented according to the WDK.
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -864,7 +864,7 @@ See [How to implement compatible IDs in printing devices](http://msdn.microsoft.
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>

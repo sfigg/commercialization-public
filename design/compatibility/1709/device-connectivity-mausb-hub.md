@@ -30,7 +30,7 @@ MA-USB requirements are currently optional and will not be enforced until 2017.
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -56,7 +56,7 @@ MA-USB Hubs must support these minimum buffer sizes to be able to work reliably 
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -78,7 +78,7 @@ The Integrated USB 2.0/3.1 hub must include details in its hub descriptor that p
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -100,7 +100,7 @@ MA-USB hubs must implement support for IP Mode as specificed in the MA-USB speci
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -130,7 +130,7 @@ MA-USB hubs must do the following certification (once certification is available
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -154,7 +154,7 @@ Integrated USB 2.0/3.1 Hubs must support USB suspend. After a Integrated USB 2.0
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -182,7 +182,7 @@ Network interface implementation MA-USB Hub must meet the following requirements
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -210,7 +210,7 @@ TCP implementation of MA-USB Hub must meet the following requirements to work re
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -240,7 +240,7 @@ Integrated USB 3.1 hubs must:
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>

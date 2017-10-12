@@ -26,7 +26,7 @@ ms.technology: windows-oem
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x86</p>
 <p>Windows 10 Client x64</p>
@@ -128,7 +128,7 @@ Each HMFT component must be a separate binary, individually certified and signed
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x86</p>
 <p>Windows 10 Client x64</p>

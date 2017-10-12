@@ -28,7 +28,7 @@ ms.technology: windows-oem
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x86</p>
 <p>Windows 10 Client x64</p>
@@ -52,7 +52,7 @@ See the Windows Driver Kit, "NDIS."
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x86</p>
 <p>Windows 10 Client x64</p>
@@ -76,7 +76,7 @@ See the No Pause On Suspend Specification.
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x86</p>
 <p>Windows 10 Client x64</p>

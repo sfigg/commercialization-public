@@ -30,7 +30,7 @@ ms.technology: windows-oem
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -51,7 +51,7 @@ This white paper can be found on MSDN: <http://go.microsoft.com/fwlink/?LinkId=7
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -78,7 +78,7 @@ It is highly recommended for onboard fixed-position microphone array (multiple c
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -140,7 +140,7 @@ The loopback stream should represent the stream coming out of the speaker. Drive
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -230,7 +230,7 @@ http://go.microsoft.com/fwlink/?LinkId=716908
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -251,7 +251,7 @@ In order to meet this requirement, no function should depend on anything (files,
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -309,7 +309,7 @@ A device provides *basic functionality* when it meets all the Windows Hardware C
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -345,7 +345,7 @@ MSDN: http://go.microsoft.com/fwlink/?LinkId=716910
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -373,7 +373,7 @@ This requirement applies to both render and capture for all formats, modes, and 
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -443,7 +443,7 @@ MSDN: <https://msdn.microsoft.com/en-us/library/windows/hardware/ff537083.aspx>
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -473,7 +473,7 @@ Drivers should stream properly when using any of the Windows Audio APIs. This in
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -502,7 +502,7 @@ See the Windows Driver Kit, "KSPROPERTY\_AUDIO\_VOLUMELEVEL” for more details.
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -603,7 +603,7 @@ IMiniportAudioEngineNode contains a list of methods related to the offload KS pr
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -663,7 +663,7 @@ Speaker compensation is the only valid scenario for audio signal processing of a
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -689,7 +689,7 @@ See "HID Audio Controls and Windows" at <http://go.microsoft.com/fwlink/?LinkId=
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>

@@ -111,7 +111,7 @@ ms.technology: windows-oem
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -147,7 +147,7 @@ These Application Verifier tests must be turned on for the processes during test
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -271,7 +271,7 @@ A mandatory test in the HLK certification playlist for Windows 10 builds higher 
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -296,7 +296,7 @@ To ensure correct implementation of operating system-controlled power management
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -353,7 +353,7 @@ The Driver DLL must have a properly formatted file version as defined in the req
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -384,7 +384,7 @@ The settings in the driver information file (.inf) will be verified by an HLK te
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -409,7 +409,7 @@ The ability to reset the GPU is independent of the current working state of the 
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -439,7 +439,7 @@ Symbols may by “public” or “private” per [MSDN guidance](https://msdn.mi
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x86</p>
 <p>Windows 10 Client x64</p>
@@ -469,7 +469,7 @@ NOTE: For Windows Server, graphics drivers are optional. Display Only graphics d
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x86</p>
 <p>Windows 10 Client x64</p>
@@ -488,7 +488,7 @@ For an N-bit-per-component RGB frame buffer format, the lowest N bits must conta
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x86</p>
 <p>Windows 10 Client x64</p>
@@ -513,7 +513,7 @@ If the hardware supports YUV texture surfaces and the capability is reported, th
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -542,7 +542,7 @@ All features required by this specification must be exposed by the device driver
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -573,7 +573,7 @@ All features required by this specification must be exposed by the device driver
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -610,7 +610,7 @@ All features required by this specification must be exposed by the device driver
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -635,7 +635,7 @@ The D3D11 Specification allows for optionally implementing Shader Model 4\_\* Co
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -670,7 +670,7 @@ All features required by this specification must be exposed by the device driver
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -695,7 +695,7 @@ The D3D11.1 Specification allows for optionally implementing Logic Ops functiona
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -720,7 +720,7 @@ The D3D10 Specification allows for optionally implementing 4X Multisampling.  
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -745,7 +745,7 @@ The D3D10 Specification allows for optionally implementing 8X Multisampling.  
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -782,7 +782,7 @@ All features required by this specification must be exposed by the device driver
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -819,7 +819,7 @@ All features required by this specification must be exposed by the device driver
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -861,7 +861,7 @@ Note that drivers must support extended array for Stereo 3D APIs, but for fullsc
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -887,7 +887,7 @@ All features required by this specification must be exposed by the device driver
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -923,7 +923,7 @@ D3D11 drivers that implement ASTC LDR support must support sampling from all 2D 
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -964,7 +964,7 @@ For additional details, refer to the Conservative Rasterization spec.
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -993,7 +993,7 @@ All features required by this specification must be exposed by the device driver
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -1018,7 +1018,7 @@ The D3D11 Specification allows for optionally implementing Double Precision Shad
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -1043,7 +1043,7 @@ The D3D11 Specification allows for optionally implementing DriverCommandListfunc
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -1068,7 +1068,7 @@ The D3D11 Specification allows for optionally implementing Driver Concurrent Obj
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -1093,7 +1093,7 @@ WDDM1.3 updates to the D3D9 UM DDI
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -1116,7 +1116,7 @@ Any CAPTURE textures that are approved for creation must behave identical to CAP
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -1135,7 +1135,7 @@ In Windows, the OS will be making increased use of D3D Instancing to reduce CPU/
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -1154,7 +1154,7 @@ Directx9 level graphics hardware that implement WDDM1.3 must support the D3D9 Na
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -1173,7 +1173,7 @@ For Windows, the Direct3D9 DDI spec will include native support for the UpdateSu
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -1203,7 +1203,7 @@ Additionally, the CheckDounter and CheckCounterInfo Direct3D11 Counter DDIs must
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -1225,7 +1225,7 @@ The D3D11.1 Specification allows for optionally implementing Partial Precision 
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -1244,7 +1244,7 @@ The D3D11.1 Specification allows for optionally implementing Partial Precision 
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -1271,7 +1271,7 @@ For additional information, refer to the [PS-Specified Stencil Ref spec](http://
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -1302,7 +1302,7 @@ For more information, refer to the [Typed UAV Loads spec](http://windowsteams/de
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -1338,7 +1338,7 @@ All features required by this specification must be exposed by the device driver
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -1363,7 +1363,7 @@ The D3D11 Specification allows for optionally implementing Double Precision Shad
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -1385,7 +1385,7 @@ For Direct3D Feature Level 11\_0 and higher parts, the WDDM1.3 drivers must allo
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -1433,7 +1433,7 @@ WDDM 2.1 is an optional version level introduced for Windows 10 builds greater t
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -1467,7 +1467,7 @@ WDDM 2.1 is an optional version level introduced for Windows 10 builds greater t
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -1510,7 +1510,7 @@ All display drivers which implement the D3D12 DDI must do so in a consistent man
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -1555,7 +1555,7 @@ All display drivers which implement the D3D12 DDI must do so in a consistent man
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -1715,7 +1715,7 @@ All display drivers which implement the D3D12 DDI must do so in a consistent man
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -1748,7 +1748,7 @@ All display drivers which implement the D3D12 DDI must do so in a consistent man
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -1779,7 +1779,7 @@ All display drivers which implement the D3D12 DDI must do so in a consistent man
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -1810,7 +1810,7 @@ All display drivers which implement the D3D12 DDI must do so in a consistent man
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -1844,7 +1844,7 @@ All display drivers which implement the D3D12 DDI must do so in a consistent man
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -1874,7 +1874,7 @@ All display drivers which implement the D3D12 DDI must do so in a consistent man
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -1937,7 +1937,7 @@ HDCP support is optional but the device must implement OPM and have an appropria
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -1973,7 +1973,7 @@ WDDM 1.0 introduces the following key requirements:
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -2042,7 +2042,7 @@ For more information on any of the items in the Details section, refer to the Wi
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -2070,7 +2070,7 @@ See the Windows Driver Kit
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -2091,7 +2091,7 @@ See requirement **Device.Graphics.WDDM.Base**
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -2118,7 +2118,7 @@ This ability must be supported without requiring the use of graphics memory band
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -2155,7 +2155,7 @@ The following HPD methods are VESA standards: DVI HPD is covered in the VESA Plu
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -2180,7 +2180,7 @@ These interfaces are documented in the WDK and can be found here: <http://msdn.m
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -2226,7 +2226,7 @@ It must be possible for a user to set all the configurations supported using the
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -2246,7 +2246,7 @@ See requirement **Device.Graphics.WDDM.Base**
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -2266,7 +2266,7 @@ All WDDM graphics drivers being submitted for posting to Windows Update targetin
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -2320,7 +2320,7 @@ Cable Ready systems with CableCARD support with digital video outputs (for examp
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -2347,7 +2347,7 @@ To "stress" a graphics driver, Comparative Reliability Analyzer for Software and
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -2367,7 +2367,7 @@ See requirement **Device.Graphics.WDDM.Base**
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -2431,7 +2431,7 @@ Finally, WDDM drivers must support Standardized AES 128 H.264\*\*\* and MPEG2, i
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -2533,7 +2533,7 @@ Support for updated DX9 and DX10+ user mode DDIs as documented on Connect at: <h
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -2571,7 +2571,7 @@ WDDM 1.1 introduces the following key requirements over WDDM 1.0:
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -2596,7 +2596,7 @@ See requirement **Device.Graphics.WDDM11.Base**
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -2621,7 +2621,7 @@ See requirement **Device.Graphics.WDDM11.Base**
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -2652,7 +2652,7 @@ If the WDDM1.1 driver supports Direct3D 9 overlays, the video overlay presentati
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -2677,7 +2677,7 @@ See requirement **Device.Graphics.WDDM11.Base**
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -2715,7 +2715,7 @@ Also the driver must support the following output formats ( D3DDDICAPS\_DXVAHD\_
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -2959,7 +2959,7 @@ Also the driver must support the following output formats ( D3DDDICAPS\_DXVAHD\_
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -3045,7 +3045,7 @@ The following DDI functions are required to be implemented by a Display Only dri
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -3067,7 +3067,7 @@ In case the Display device does not provide a Container ID, then Windows will au
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -3127,7 +3127,7 @@ The following are the requirements for WDDM driver while implementing these DDIs
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -3188,7 +3188,7 @@ The following are the requirements for WDDM driver while implementing these DDIs
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -3244,7 +3244,7 @@ The following are the requirements for the driver when implementing this DDI.
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -3276,7 +3276,7 @@ There are numerous scenarios where components in the Windows OS need to be able 
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -3366,7 +3366,7 @@ The only color format supported for display only drivers is D3DDDIFMT\_A8R8G8B8;
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -3491,7 +3491,7 @@ If the rendering hardware supports swizzling ranger, the driver should also supp
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -3529,7 +3529,7 @@ For all optional content layouts and processing features, the driver must publis
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -3555,7 +3555,7 @@ For more details on the use of the SoC GPU Power Management WDDM v1.2 DDI, pleas
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -3635,7 +3635,7 @@ If the rendering hardware supports swizzling ranger, the driver should also supp
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -3694,7 +3694,7 @@ Design Notes
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -3819,7 +3819,7 @@ MPEG-2 support is required on x86 and x64 architectures and operating systems on
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -3864,7 +3864,7 @@ When the SharedPrimaryTransition bit is set in the DXGK\_SETVIDVIDPNSOURCEADDRES
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -3885,7 +3885,7 @@ All WDDM1.2 drivers must publish the FlipOnVSyncMmIo field as TRUE in the DXGK\_
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -3919,7 +3919,7 @@ For more details on the use of the Offer and Reclaim WDDM v1.2 DDI, please refer
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -3950,7 +3950,7 @@ For more details on the use of the GPU Preemption WDDM v1.2 DDI, please refer to
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -3984,7 +3984,7 @@ PETrust=true
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -4023,7 +4023,7 @@ For more details on the use of the GPU Preemption and TDR Improvements WDDM v1.2
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -4067,7 +4067,7 @@ For more details on the use of the UMD Logging WDDM v1.2 DDI, please refer to th
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -4091,7 +4091,7 @@ To ensure a quality printing experience on Windows, the WDDM1.2 graphic drivers 
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -4179,7 +4179,7 @@ If the rendering hardware supports swizzling ranger, the driver should also supp
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -4204,7 +4204,7 @@ To improve the performance on sleep & resume for standby and hibernate, a WDDM 1
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -4474,7 +4474,7 @@ WDDM 1.3 is required for all new systems that are shipped with Windows 10.
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -4500,7 +4500,7 @@ The HCK test will validate that the refresh rate with within a 0.5% tolerance of
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -4524,7 +4524,7 @@ All WDDM 1.3 drivers MUST support independentFlip. As such, all WDDM 1.3 drives 
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -4555,7 +4555,7 @@ ACPI.sys will only query the thermal cooling interface if the current device is 
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -4621,7 +4621,7 @@ NOTE: In Windows 10 the Wireless Display framework was changed significantly so 
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -4644,7 +4644,7 @@ For a transition from a lower power F-State to a higher one, it is expected that
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -4672,7 +4672,7 @@ While the Vsync is enabled, 98% of the Vsyncs must be within 500 us of the expec
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -4698,7 +4698,7 @@ While the Vsync is enabled, 98% of the Vsyncs must be within 500 us of the expec
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -4717,7 +4717,7 @@ WDDM1.3 introduces the ability to support DirtyRect. If DirtyRect is implemented
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -4743,7 +4743,7 @@ If WDDM1.3 is implemented, then the driver must:
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -4799,7 +4799,7 @@ A WDDM1.3 driver must ensure that the graphics device/driver provides the follow
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -4825,7 +4825,7 @@ To ensure the desired performance characteristics when Present1 is used, the fol
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -4864,7 +4864,7 @@ WDDM1.3 drivers must support these new formats and capabilities for shared surfa
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -4971,7 +4971,7 @@ It is OK if hardware blends bottom to top as long as the output result is the sa
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -4998,7 +4998,7 @@ The Trim API is new in the WDDM1.3 updates to the D3D9 UM DDI. Graphics devices 
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -5210,7 +5210,7 @@ WDDM2.0
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -5372,7 +5372,7 @@ Windows 10 introduces a new set of features and DDI changes that will be referre
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -5396,7 +5396,7 @@ Requires a network connection and access to PlayReady Content Protection test se
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -5420,7 +5420,7 @@ WDDM 2.1 is an optional version level introduced for Windows 10 builds greater t
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -5455,7 +5455,7 @@ A WDDM 2.1 driver must meet all requirements defined in the WDDM 2.1 Specificati
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -5492,7 +5492,7 @@ The driver must pass GPU clock and frequency values in the VSync ISR callback (D
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -5516,7 +5516,7 @@ Tools need simpler ways to capture & playback the memory used by GPUs. Microsoft
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -5543,7 +5543,7 @@ Having a shader cache improves application startup time.
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -5568,7 +5568,7 @@ Application compatibility.
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -5593,7 +5593,7 @@ This feature may be critical for platform competitiveness.
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -5620,7 +5620,7 @@ This API will be exposed as a PSO enable/disable toggle in order to support hard
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -5644,7 +5644,7 @@ The 64-bit int requirement, if implemented, allows shader authors to simplify co
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -5668,7 +5668,7 @@ The wave intrinsics requirement, if implemented, allows shader authors to exploi
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -5695,7 +5695,7 @@ Shader Model 6 modernizes the program representation and aligns it with LLVM, a 
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -5719,7 +5719,7 @@ Beneficial to VR scenarios, platform rendering efficiency.
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -5743,7 +5743,7 @@ Beneficial to console parity, customer request, platform completeness.
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -5768,7 +5768,7 @@ Beneficial to VR scenarios, platform rendering efficiency.
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -5806,7 +5806,7 @@ See business justification for each above feature in previous sections.
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -5825,7 +5825,7 @@ D3D12 tools must use write-watch memory to improve their performance.
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -5845,7 +5845,7 @@ D3D9On12 and D3D11On12 are unable to invoke the driver shader compiler until a f
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -5867,7 +5867,7 @@ D3D12 applications need simpler ways to manage heap residency, in order to quick
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -5887,7 +5887,7 @@ Late-Latching requires atomic GPU memory operations as well as some control over
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -5907,7 +5907,7 @@ Tools need simpler ways to capture & playback the memory used by GPUs. Microsoft
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -5940,7 +5940,7 @@ The efficiency and latency improvements are required for Windows Holographic sce
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -5964,7 +5964,7 @@ WDDM 2.2 enables a broad feature set across new hardware features such as HDR, W
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -5993,7 +5993,7 @@ This feature exposes a richer set of colorspace transform capabilities in a hard
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -6020,7 +6020,7 @@ Furthermore, it can also create the illusion that these issues are caused by the
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -6047,7 +6047,7 @@ IHVs and OEMs are looking for ways to differentiate in order to garner higher ma
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -6100,7 +6100,7 @@ IHVs and OEMs are looking for ways to differentiate in order to garner higher ma
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -6131,7 +6131,7 @@ IHVs and OEMs are looking for ways to differentiate in order to garner higher ma
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -6150,7 +6150,7 @@ VR scenarios are becoming increasingly common both from third party as well as f
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -6175,7 +6175,7 @@ These periods of blackscreen have also led to user concerns that their machines 
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -6205,7 +6205,7 @@ IHVs and OEMs are looking for ways to differentiate in order to garner higher ma
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -6226,7 +6226,7 @@ In addition to proper compilation, user mode drivers should also either entirely
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>

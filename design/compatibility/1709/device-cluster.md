@@ -26,7 +26,7 @@ ms.technology: windows-oem
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>

@@ -45,7 +45,7 @@ ms.technology: windows-oem
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -86,7 +86,7 @@ Windows 10 S driver package must not include any custom applications by the offi
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 ARM64 Desktop</p>
@@ -123,7 +123,7 @@ You can find more details on the [VERSIONINFO resource on MSDN](https://msdn.mic
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -174,7 +174,7 @@ In the Windows Logo Kit, the WDF Test can be run to validate this requirement.
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -262,7 +262,7 @@ http://msdn.microsoft.com/en-us/library/ff560526.aspx</p>
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -323,7 +323,7 @@ For more information about UMDF, visit the following website: <http://www.micros
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -404,7 +404,7 @@ http://msdn.microsoft.com/en-us/library/ff560526.aspx</p>
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -450,7 +450,7 @@ Drivers must not reference any of the following inbox components:
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -483,7 +483,7 @@ In addition to standard driver requirements, the following requirements apply to
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Mobile ARM</p>
 </td></tr></table>
@@ -507,7 +507,7 @@ In addition to standard driver requirements, the following requirements apply to
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -580,7 +580,7 @@ More details on MFTs can be found in the MSDN at: <http://msdn.microsoft.com/en-
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -620,7 +620,7 @@ An INF AddService directive service-install-section may only specify a ServiceTy
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -673,7 +673,7 @@ AddReg=SetupClassAddReg    ; Reference to the ClassInstall32 AddReg section.
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -709,7 +709,7 @@ The following INF directive may not be referenced in an INF file:
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -786,7 +786,7 @@ Device-class co-installer example:
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -830,7 +830,7 @@ Note that while the RegisterDlls directive can no longer be declared in an INF f
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -870,7 +870,7 @@ The following INF sections and directives cannot be referenced in an INF file:
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -910,7 +910,7 @@ Only these destination directories expressed as the appropriate DIRID will be a 
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -946,7 +946,7 @@ The following INF directives may not be referenced in an INF file:
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -981,7 +981,7 @@ PnpLockDown=1
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -1012,7 +1012,7 @@ The following INF service install section directive may not be referenced in an 
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -1053,7 +1053,7 @@ Beginning in Windows 8, the ProductType field and SuiteMask field are no longer 
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -1105,7 +1105,7 @@ The corresponding test will check the size of the drivers non-paged code pages i
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -1143,7 +1143,7 @@ A new type of non-paged pool that is a non-executable (NX) pool has been introdu
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -1226,7 +1226,7 @@ In addition, Driver Verifier will be enabled on all applicable kit tests.
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -1256,7 +1256,7 @@ For additional information, see the "Creating Reliable and Secure Drivers" and "
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -1323,7 +1323,7 @@ In the Windows Logo Kit, this requirement will be tested by using the Embedded S
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -1366,7 +1366,7 @@ This requirement will be tested by using the "Reinstall with IO" test.
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -1393,7 +1393,7 @@ The steps for testing this requirement are outlined in the Device install check 
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -1417,7 +1417,7 @@ Drivers that are not provided by the operating system are not allowed to be name
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -1457,7 +1457,7 @@ The test for DEP is currently part of the systems test category in the Windows H
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -1516,7 +1516,7 @@ See Windows Hardware Instrumentation Implementation Guidelines (WHIIG), Version1
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 ARM64 Desktop</p>
 <p>Windows Server 2016 x64</p>
@@ -1565,7 +1565,7 @@ The following IRPs are often the cause of driver issues. Special attention shoul
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -1603,7 +1603,7 @@ Note: If the device does not provide an INF file (that is, the device uses the i
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -1633,7 +1633,7 @@ Devices must support Fast User Switching (FUS) and Remote Desktop Services witho
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -1675,7 +1675,7 @@ Note that systems that support Connected Standby will not support S3, and may or
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -1714,7 +1714,7 @@ The INF2CAT signability verification tool installs automatically the first time 
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -1742,7 +1742,7 @@ In Windows Vista® and later operating systems, standard Plug and Play calls suc
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -1771,7 +1771,7 @@ The feature Device.DevFund.Reliability.3rdParty and this requirement are a plac
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
@@ -1804,7 +1804,7 @@ Interrupt arbitration may require multiple iterations. Drivers must be prepared
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -1857,7 +1857,7 @@ Using the System's Cancel Spin Lock
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -1880,7 +1880,7 @@ In order for end users to be able to roll back a driver (i.e., reinstall the pre
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -1913,7 +1913,7 @@ There can be no use of TDI filters or LSPs by either kernel mode software or dri
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
@@ -1971,7 +1971,7 @@ Enforcement Date: Feb 2016
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
@@ -2016,7 +2016,7 @@ The command lines to remove the group settings and reboot the computer are the f
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
@@ -2037,7 +2037,7 @@ Enforcement Date: Feb 2016
 
 *Windows Server device drivers must support Query Power and Set Power Management requests*
 
-<table><tr><th>Applies to</th><td><p>Windows Server 2016 x64</p></td></tr></table>
+<table><tr><td>Applies to</td><td><p>Windows Server 2016 x64</p></td></tr></table>
 
 **Description**
 
@@ -2063,7 +2063,7 @@ For more information, see the "Driver Compatibility for Dynamic Hardware Partiti
 
 *All drivers intended for use with Nano Server must meet these requirements*
 
-<table><tr><th>Applies to</th><td><p>Windows Server 2016 x64</p></td></tr></table>
+<table><tr><td>Applies to</td><td><p>Windows Server 2016 x64</p></td></tr></table>
 
 **Description**
 
@@ -2078,7 +2078,7 @@ All tools, utilities, or agents to be installed on Nano Server must be made avai
 
 *All diagnostic utilities intended for use with Nano Server must meet these requirements*
 
-<table><tr><th>Applies to</th><td><p>Windows Server 2016 x64</p></td></tr></table>
+<table><tr><td>Applies to</td><td><p>Windows Server 2016 x64</p></td></tr></table>
 
 **Description**
 
@@ -2095,7 +2095,7 @@ In addition to the above, systems running Nano Server must support Nano Server R
 
 *Firmware Update requirements for Nano Server*
 
-<table><tr><th>Applies to</th><td><p>Windows Server 2016 x64</p></td></tr></table>
+<table><tr><td>Applies to</td><td><p>Windows Server 2016 x64</p></td></tr></table>
 
 All firmware update tools and utilities intended for use on Nano Server must support installation by either of the following methods:
 
@@ -2108,7 +2108,7 @@ If the tool or utility runs locally on Nano Server, it must be made available as
 
 *Monitoring requirements for Nano Server*
 
-<table><tr><th>Applies to</th><td><p>Windows Server 2016 x64</p></td></tr></table>
+<table><tr><td>Applies to</td><td><p>Windows Server 2016 x64</p></td></tr></table>
 
 All monitoring tools, utilities, and agents must support installation by either of the following methods:
 
@@ -2123,7 +2123,7 @@ For Microsoft SDDC offering, in particular, all monitoring has to be agentless, 
 
 *Device drivers must install, configure, be serviced, and operate in Nano Server*
 
-<table><tr><th>Applies to</th><td><p>Windows Server 2016 x64</p></td></tr></table>
+<table><tr><td>Applies to</td><td><p>Windows Server 2016 x64</p></td></tr></table>
 
 **Description**
 
@@ -2139,7 +2139,7 @@ Any device driver that does not meet this requirement will not be usable on Nano
 
 *Patching requirements for Nano Server*
 
-<table><tr><th>Applies to</th><td><p>Windows Server 2016 x64</p></td></tr></table>
+<table><tr><td>Applies to</td><td><p>Windows Server 2016 x64</p></td></tr></table>
 
 All patches and updates must be able to install offline as part of image creation or online.
 
@@ -2156,7 +2156,7 @@ Express Base Specification version 2.1.*
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
@@ -2190,7 +2190,7 @@ The following table lists which errors in section 6.2 are required to be reporte
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -2233,7 +2233,7 @@ The resulting DVL file output by Static Analysis tools will be captured by the H
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -2254,7 +2254,7 @@ For more information, please refer to MSDN: http;//aka.ms/CompatOneCoreUAP
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>

@@ -91,7 +91,7 @@ ms.technology: windows-oem
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -131,7 +131,7 @@ The following Storage Controller Driver Logo requirement is for the storage cont
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -157,7 +157,7 @@ Non-PCI attached storage host controller does not need to report PCI class code.
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -189,7 +189,7 @@ All host adapters must be installed by using Plug and Play mechanisms and requir
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -221,7 +221,7 @@ Transient or pseudo-devices may not be exposed to the system. Drivers that speci
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -256,7 +256,7 @@ The following requirements are also applied to ATA/ATAPI controllers.
 > [!WARNING]
 > Certification for Windows Server 2017, Azure Stack, and SDDC must meet the [Windows Hardware Compatibility Requirements as stated in version 1607 of documentation](https://docs.microsoft.com/en-us/windows-hardware/design/compatibility/), must use [version 1607 of the HLK (build 14393)](https://go.microsoft.com/fwlink/p/?LinkID=404112) with [matching playlist](http://aka.ms/hlkplaylist) and supplemental content to generate logs, and must follow policies as stated in the [Windows Server Policy document](https://go.microsoft.com/fwlink/p/?linkid=834831). Questions about the Azure Stack or SDDC programs or how to submit the results for solution validation should be directed to the appropriate Microsoft technical account manager or partner management contact.
 
-<table><tr><th>Applies to</th><td><p>Windows Server 2016 x64</p></td></tr></table>
+<table><tr><td>Applies to</td><td><p>Windows Server 2016 x64</p></td></tr></table>
 
 **Description**
 
@@ -283,7 +283,7 @@ In addition to the above, the following requirements must be met:
 ### Device.Storage.Controller.AzureStack.CloudStress
 *Storage controllers that are used to connect to cluster storage for the private cloud solution must comply with this specification* 
 
-<table><tr><th>Applies to</th><td><p>Windows Server 2016 x64</p></td></tr></table>
+<table><tr><td>Applies to</td><td><p>Windows Server 2016 x64</p></td></tr></table>
 
 **Description**
 
@@ -296,7 +296,7 @@ To comply with this specification, the controller must pass the PCS test run wit
 ### Device.Storage.Controller.AzureStack.FirmwareUpdate
 *Storage controllers that are used to connect to cluster storage for the private cloud solution must comply with this specification*
 
-<table><tr><th>Applies to</th><td><p>Windows Server 2016 x64</p></td></tr></table>
+<table><tr><td>Applies to</td><td><p>Windows Server 2016 x64</p></td></tr></table>
 
 **Description**
 
@@ -314,7 +314,7 @@ Microsoft Azure Stack will require SAS and NVMe controllers to be firmware updat
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -340,7 +340,7 @@ SD/eMMC/NAND flash controllers do not have Option ROM, so the first part of this
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -368,7 +368,7 @@ BitLocker must be properly enabled to protect an operating system in a SAN Boot 
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -394,7 +394,7 @@ Fibre Channel host bus adapter drivers must support the WMI classes and methods 
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
@@ -418,7 +418,7 @@ These tests cover typical valid and invalid API calls, but do not cover in-depth
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
@@ -454,7 +454,7 @@ Fibre Channel over Ethernet host bus adapter  
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
@@ -493,7 +493,7 @@ Initiator Coexistence
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -522,7 +522,7 @@ Windows design spec requirements - controller:
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x86</p>
 <p>Windows 10 Client x64</p>
@@ -537,7 +537,7 @@ Windows design spec requirements - controller:
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -611,7 +611,7 @@ iSCSI host bus adapters must be compatible with iSCSI RFC3720 and must implement
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
@@ -680,7 +680,7 @@ In addition:
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -707,7 +707,7 @@ The storage HBA drivers must support the optical device. The CDBs sent to the op
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -733,7 +733,7 @@ NOTE: This applies only to SAS and SATA controllers.
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -772,7 +772,7 @@ SCSI Requirements can be found in the Device.Storage.SCSI section.
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
@@ -793,7 +793,7 @@ Design Notes:
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
@@ -844,7 +844,7 @@ If the system disks are attached to a bus type that is not a valid type for shar
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
@@ -867,7 +867,7 @@ During normal operation (i.e., not during failover) in a Windows failover cluste
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
@@ -892,7 +892,7 @@ If there is a system or controller failure during active writes, the erasure cod
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
@@ -912,7 +912,7 @@ When the device and driver are configured in a Windows failover cluster and LUN 
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -935,7 +935,7 @@ SAS host bus adapter miniport drivers must use the Microsoft hbaapi DLL to suppo
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
@@ -960,7 +960,7 @@ Note: Compliance with this requirement should be tested by connecting a SATA dri
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -1005,7 +1005,7 @@ SATA Interface
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -1061,7 +1061,7 @@ SATA Interface
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -1248,7 +1248,7 @@ The following requirements that the device must fulfill are specific to revision
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
@@ -1263,7 +1263,7 @@ Enclosures must not abstract the drives they house (e.g., formed into a logical 
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
@@ -1364,7 +1364,7 @@ Notes:  Windows correlates enclosure services to drives via the protocol-specif
 > [!WARNING]
 > Certification for Windows Server 2017, Azure Stack, and SDDC must meet the [Windows Hardware Compatibility Requirements as stated in version 1607 of documentation](https://docs.microsoft.com/en-us/windows-hardware/design/compatibility/), must use [version 1607 of the HLK (build 14393)](https://go.microsoft.com/fwlink/p/?LinkID=404112) with [matching playlist](http://aka.ms/hlkplaylist) and supplemental content to generate logs, and must follow policies as stated in the [Windows Server Policy document](https://go.microsoft.com/fwlink/p/?linkid=834831). Questions about the Azure Stack or SDDC programs or how to submit the results for solution validation should be directed to the appropriate Microsoft technical account manager or partner management contact.
 
-<table><tr><th>Applies to</th><td><p>Windows Server 2016 x64</p></td></tr></table>
+<table><tr><td>Applies to</td><td><p>Windows Server 2016 x64</p></td></tr></table>
 
 **Description**
 
@@ -1384,7 +1384,7 @@ In addition to the above, the following requirement must be met:
 
 *Drive enclosures that supply cluster storage for the private cloud solution must comply with this specification* 
 
-<table><tr><th>Applies to</th><td><p>Windows Server 2016 x64</p></td></tr></table>
+<table><tr><td>Applies to</td><td><p>Windows Server 2016 x64</p></td></tr></table>
 
 **Description**
 
@@ -1398,7 +1398,7 @@ To comply with this specification, the controller must pass the PCS test run wit
 
 *Drive enclosures that supply cluster storage for the private cloud solution must comply with this specification* 
 
-<table><tr><th>Applies to</th><td><p>Windows Server 2016 x64</p></td></tr></table>
+<table><tr><td>Applies to</td><td><p>Windows Server 2016 x64</p></td></tr></table>
 
 **Description**
 
@@ -1418,7 +1418,7 @@ Microsoft Azure Stack will require enclosures to be firmware updateable.
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -1445,7 +1445,7 @@ The device must be able to perform the following scenarios:
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -1474,7 +1474,7 @@ Some hard disk drives report the physical sector size of the disk incorrectly. 
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -1524,7 +1524,7 @@ SCSI hard disk device must report nominal media rotation rate as described in th
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -1552,7 +1552,7 @@ SBP-2, SPC-2, Min:RBC
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
@@ -1573,7 +1573,7 @@ The Report Target Port Group command must be supported, if logical units report 
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -1599,7 +1599,7 @@ Shared bus capabilities are required for PATA devices; devices shall be configur
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -1627,7 +1627,7 @@ In addition to improved transfer rates, Ultra-DMA also provides error checking f
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -1661,7 +1661,7 @@ The Windows 7 Windows System Assessment Tool (WinSAT) disk formal test for the b
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -1708,7 +1708,7 @@ When the Nominal Media Rotation Rate reported by the device is anything but 0001
 > [!WARNING]
 > Certification for Windows Server 2017, Azure Stack, and SDDC must meet the [Windows Hardware Compatibility Requirements as stated in version 1607 of documentation](https://docs.microsoft.com/en-us/windows-hardware/design/compatibility/), must use [version 1607 of the HLK (build 14393)](https://go.microsoft.com/fwlink/p/?LinkID=404112) with [matching playlist](http://aka.ms/hlkplaylist) and supplemental content to generate logs, and must follow policies as stated in the [Windows Server Policy document](https://go.microsoft.com/fwlink/p/?linkid=834831). Questions about the Azure Stack or SDDC programs or how to submit the results for solution validation should be directed to the appropriate Microsoft technical account manager or partner management contact.
 
-<table><tr><th>Applies to</th><td><p>Windows Server 2016 x64</p></td></tr></table>
+<table><tr><td>Applies to</td><td><p>Windows Server 2016 x64</p></td></tr></table>
 
 **Description**
 
@@ -1740,7 +1740,7 @@ In addition to the above, the following requirements must be met:
 
 *Disks that are used as cluster storage for the private cloud solution must comply with this specification*
 
-<table><tr><th>Applies to</th><td><p>Windows Server 2016 x64</p></td></tr></table>
+<table><tr><td>Applies to</td><td><p>Windows Server 2016 x64</p></td></tr></table>
 
 **Description**
 
@@ -1754,7 +1754,7 @@ To comply with this specification, the disk must pass the PCS test run with the 
 
 *Disks that are used as cluster storage for the private cloud solution must comply with this specification*
 
-<table><tr><th>Applies to</th><td><p>Windows Server 2016 x64</p></td></tr></table>
+<table><tr><td>Applies to</td><td><p>Windows Server 2016 x64</p></td></tr></table>
 
 **Description**
 
@@ -1772,7 +1772,7 @@ Microsoft Azure Stack will require SAS and SATA drives to be firmware updateable
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -1795,7 +1795,7 @@ Storage devices must reliably read and write data without data loss or data corr
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -1946,7 +1946,7 @@ eDrives must comply with these Windows Design Spec requirements:
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -1988,7 +1988,7 @@ eMMC 4.5.1 Requirements
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -2039,7 +2039,7 @@ Obtain IEEE 1667 specification from IEEE at the following location:<http://go.mi
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -2062,7 +2062,7 @@ Fibre Channel devices must comply with Fibre Channel Protocol for SCSI, Second V
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -2096,7 +2096,7 @@ Note: The requirement is not applicable to Laptop.
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -2171,7 +2171,7 @@ The following iSCSI protocol features must pass testing if they are implemented:
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
@@ -2199,7 +2199,7 @@ Following WMI classes must be implemented by 3rd party DSM.
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
@@ -2227,7 +2227,7 @@ Notes:  Multi-port drives may be connected to one or more computer hosts via on
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -2265,7 +2265,7 @@ Notes:  Windows can use physical disks to form a storage pool.  From the stora
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
@@ -2331,7 +2331,7 @@ Notes:  Windows can use physical disks to form a storage pool.  From the stora
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
@@ -2371,7 +2371,7 @@ Note: Legacy parallel-SCSI server clusters were restricted to a maximum size of 
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
@@ -2391,7 +2391,7 @@ Notes:  Windows depends on drive enclosures to provide SCSI Enclosure Services 
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -2416,7 +2416,7 @@ External RAID arrays must allow a failed drive that is redundant to be replaced 
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
@@ -2438,7 +2438,7 @@ BitLocker must be properly enabled to protect data volumes on storage arrays.
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -2463,7 +2463,7 @@ If the logical block provisioning read zeros (LBPRZ) bit is set to one, then the
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -2486,7 +2486,7 @@ Device with true removable storage media should report as True Removable Media (
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -2592,7 +2592,7 @@ SAS devices implementing the ability to download and activate firmware, i.e., co
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -2666,7 +2666,7 @@ Note: A DMA implementation of these commands is preferred but not required
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -2813,7 +2813,7 @@ Hybrid Change By LBA Range must be supported by the device, including the Cache 
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -2833,7 +2833,7 @@ If an external connector is implemented, it must meet the requirements in SCSI o
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -2870,7 +2870,7 @@ Parallel SCSI interface
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -2962,7 +2962,7 @@ Solid-state drives must provide valid data for the below log sense page (LOG SEN
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -2985,7 +2985,7 @@ SPI-4, SAM-3, Min:SPC-2, Rec: SPC-3, Min: SBC, Rec: SBC-2
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -3021,7 +3021,7 @@ SCSI Devices must comply with SCSI Architecture Model SAM-3 or later (except as 
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -3169,7 +3169,7 @@ Erasable SCSI disk devices must also support the following commands or features:
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -3192,7 +3192,7 @@ All HDDs and SSDs: (Optional)
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
@@ -3219,7 +3219,7 @@ All HDDs and SSDs: (Optional)
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
@@ -3247,7 +3247,7 @@ All HDDs and SSDs: (Optional)
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
@@ -3276,7 +3276,7 @@ All HDDs and SSDs: (Optional)
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
@@ -3371,7 +3371,7 @@ All HDDs and SSDs: (Optional)
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -3412,7 +3412,7 @@ If the RZAT bit is set on a SATA device or the LBPRZ bit is set on a SCSI device
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -3460,7 +3460,7 @@ Additional Requirement: If the device supports UASP on XHCI, then it must suppor
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -3482,7 +3482,7 @@ If the device supports UASP on XHCI and then it must support UASP on EHCI.
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -3565,7 +3565,7 @@ Please refer to USB3.0 spec section 3.1.4 USB 3.0 Architecture summary
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -3604,7 +3604,7 @@ Data Devices must perform as indicated:
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -3689,7 +3689,7 @@ USB boot devices must:
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -3707,7 +3707,7 @@ Optical drives must support CD RAW recording mode for CD-R and CD-RW profiles.
 </table>
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x86</p>
 <p>Windows 10 Client x64</p>
@@ -3798,7 +3798,7 @@ All the command execution time performance measurement should be performed on me
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -3815,7 +3815,7 @@ To be an Optical Drive, the device must be defined as CD (Compact Disc) device, 
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -3843,7 +3843,7 @@ Optical drives must support the required features listed below:
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -3860,7 +3860,7 @@ Optical drives must conform to INCITS's T10's command set and MultiMedia Command
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -3889,7 +3889,7 @@ Optical drives must support the required profiles as listed below:
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -3910,7 +3910,7 @@ Optical Drives must support Real Time Streaming as required according to Profile
 </table>
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x86</p>
 <p>Windows 10 Client x64</p>
@@ -3931,7 +3931,7 @@ Blu-Ray reader drives must support BD-ROM profile.
 </table>
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x86</p>
 <p>Windows 10 Client x64</p>
@@ -3951,7 +3951,7 @@ Blu-Ray drives that can write must support BD-ROM, BD-R Sequential Recording and
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>

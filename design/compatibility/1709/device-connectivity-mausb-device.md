@@ -50,7 +50,7 @@ Note that Integrated USB Devices behind a USB 2.0 or USB 3.1 hub behind a MA-USB
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -77,7 +77,7 @@ MA-USB device must support these minimum buffer sizes to be able to work reliabl
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -99,7 +99,7 @@ Any function of the integrated 3.1 device that is in a suspend state before a MA
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -121,7 +121,7 @@ MA-USB devices must implement support for IP Mode as specified in the MA-USB spe
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -164,7 +164,7 @@ See USB Specification, Revision 2.0 or later, Sections 5.6 and 5.7.
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -193,7 +193,7 @@ MA-USB devices must do the following certification (once certification is availa
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -217,7 +217,7 @@ The Microsoft operating system **ContainerID** descriptor allows Windows® to co
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -241,7 +241,7 @@ Devices not entering a timely ready state will be marked code 10 or other by the
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -268,7 +268,7 @@ Integrated USB devices must not disconnect during USB Suspend/Resume or MA-USB 
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -288,7 +288,7 @@ A MA-USB dock or device must report the Manufacturer, Model Name, and Model Numb
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -310,7 +310,7 @@ Integrated USB devices must respond accordingly to string requests that the host
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -333,7 +333,7 @@ All USB device requests contain a wLength field. Responses by the Integrated USB
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -375,7 +375,7 @@ For more information on implementation of serial numbers, see USB Specification,
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -397,7 +397,7 @@ A USB serial number must be a string that contains a manufacturer-determined ID 
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -419,7 +419,7 @@ MA-USB requirements are currently optional and will not be enforced until 2017.
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -447,7 +447,7 @@ Network interface implementation MA-USB Device must meet the following requireme
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -475,7 +475,7 @@ TCP implementation of MA-USB Device must meet the following requirements to work
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>

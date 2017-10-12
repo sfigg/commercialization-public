@@ -33,7 +33,7 @@ ms.technology: windows-oem
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -53,7 +53,7 @@ USB devices designed for debug purposes over USB 2.0 must comply with USB2 Debug
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -73,7 +73,7 @@ USB cables designed for USB 3.0 host debugging must comply with the Universal Se
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -93,7 +93,7 @@ When the USB device has signaled device-attach, the operating system provides a 
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -120,7 +120,7 @@ Devices that are resumed from the selective suspend state retain a minimum set o
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -148,7 +148,7 @@ Devices belonging to these device classes can opt out of supporting USB Selectiv
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -190,7 +190,7 @@ See USB Specification, Revision 2.0 or later, Sections 5.6 and 5.7.
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -212,7 +212,7 @@ The Microsoft operating system **ContainerID** descriptor allows Windows® to co
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -237,7 +237,7 @@ Devices must be functional after resuming from system power states whether a por
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -260,7 +260,7 @@ To test this requirement, we will cause the device to go into the selective susp
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -286,7 +286,7 @@ A reset of the entire USB Host Controller results in significantly increased tim
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -306,7 +306,7 @@ After the system resumes from sleep, the hub driver will fetch the status of the
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -330,7 +330,7 @@ Clarification about USB Selective Suspend in Windows RT systems can be found in 
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -350,7 +350,7 @@ USB devices must respond accordingly to string requests that the host sends. Dev
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -371,7 +371,7 @@ All USB device requests contain a wLength field. Responses by the USB device to 
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -411,7 +411,7 @@ For more information on implementation of serial numbers, see USB Specification,
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -431,7 +431,7 @@ A USB serial number must be a string that contains a manufacturer-determined ID 
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -455,7 +455,7 @@ For a definition of "connect", see section 2 of the USB 3.0 Specification under 
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -477,7 +477,7 @@ All USB Devices (Low, Full, High, and Super Speed devices) must be tested with M
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -504,7 +504,7 @@ For a list of Windows class GUIDs, see the Windows Driver Kit, "System-Supplied 
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -524,7 +524,7 @@ All Wireless USB devices must get a Certified Wireless USB Logo from the USB-IF.
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -550,7 +550,7 @@ Wireless USB device must pass WiMedia Alliance radio compliance tests.
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -576,7 +576,7 @@ For more information, see the white paper on Windows Logo Kit USB-IF Testing:
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -599,7 +599,7 @@ Certification for vendor-specific Alternate Modes is not required.
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -620,7 +620,7 @@ In addition, if the USB Type-C cable or adapter is used for an Alternate Mode St
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>

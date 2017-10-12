@@ -45,7 +45,7 @@ ms.technology: windows-oem
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -262,7 +262,7 @@ System: The system must complete the reset within 10 seconds.
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -495,7 +495,7 @@ WDI\_PHY\_INFO structures returned by OID\_WDI\_GET\_ADAPTER\_CAPABILITIES.
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -530,7 +530,7 @@ WDI\_PHY\_INFO structures returned by OID\_WDI\_GET\_ADAPTER\_CAPABILITIES.
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -581,7 +581,7 @@ WLAN devices should support 10 offloaded BSSID profiles. Wi-Fi profiles that ar
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -603,7 +603,7 @@ The Wi-Fi MAC address is currently used to track users as they move through publ
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -625,7 +625,7 @@ Device must report that it supports ActionFrameSupport in WDI\_TLV\_INTERFACE\_C
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -647,7 +647,7 @@ Device must report support for 802.11w Protected Management Frames in WDI\_STATI
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -677,7 +677,7 @@ Your WLAN device must support one of the two following solutions for FIPS suppor
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -826,7 +826,7 @@ should meet the following latency and packet loss requirements.
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -1021,7 +1021,7 @@ When WMM prioritization is used with AC\_VI or AC\_VO (Voice/Video), WLAN device
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -1071,7 +1071,7 @@ If this requirement is supported, then the device must be capable of performing 
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -1099,7 +1099,7 @@ Device must report 802.11ad PHY type 9 (WDI\_PHY\_TYPE\_DMG) in the WDI\_PHY\_IN
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>

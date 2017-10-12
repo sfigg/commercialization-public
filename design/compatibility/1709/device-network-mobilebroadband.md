@@ -28,7 +28,7 @@ ms.technology: windows-oem
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -60,7 +60,7 @@ Helpful links: Mobile Broadband Driver Model Specifications <http://msdn.microso
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -92,7 +92,7 @@ Mobile Broadband Driver Model Specification: <http://msdn.microsoft.com/library/
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -112,7 +112,7 @@ Mobile Broadband devices based on USB protocol must support Identity Morphing. I
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -140,7 +140,7 @@ MB Miniport Driver Performance Requirements: <http://msdn.microsoft.com/en-us/li
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -168,7 +168,7 @@ Mobile Broadband devices that support multi-carrier feature must support the mul
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -188,7 +188,7 @@ The device seamlessly transitions between D0 and D3 warm states while in Connect
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -208,7 +208,7 @@ USB based mobile broadband devices must support Windows implementation of USB se
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -253,7 +253,7 @@ Mobile class of devices must support wake on mobile broadband. A device should w
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -280,7 +280,7 @@ Additional Information
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -312,7 +312,7 @@ Helpful links: Mobile Broadband Driver Model Specifications <http://msdn.microso
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -332,7 +332,7 @@ GSM devices that support EAP-SIM must support EAP-SIM as defined in RFC 4186.
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -364,7 +364,7 @@ Mobile Broadband Driver Model Specification: <http://msdn.microsoft.com/library/
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -386,7 +386,7 @@ Additional Information: Identity Morphing Specification: See MSDN.
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -414,7 +414,7 @@ MB Miniport Driver Performance Requirements: <http://msdn.microsoft.com/en-us/li
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -444,7 +444,7 @@ Mobile broadband devices supporting multi-carrier feature must meet the multi-ca
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -476,7 +476,7 @@ Device firmware should continue to abstract SMS PDP contexts and route them thro
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -496,7 +496,7 @@ The device seamlessly transitions between D0 and D3 warm states while in Connect
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -516,7 +516,7 @@ Mobile broadband devices must implement the fast dormancy mechanism as defined b
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -536,7 +536,7 @@ USB based Mobile Broadband devices must support Windows implementation of USB se
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -576,7 +576,7 @@ Mobile broadband class of devices must support wake on mobile broadband. A devic
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -596,7 +596,7 @@ Windows Mobile Broadband Driver Model is updated to include the full support of 
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -616,7 +616,7 @@ Windows Mobile Broadband Driver Model is updated to include the full support of 
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -649,7 +649,7 @@ Executor is the term Windows uses to define the physical interfaces.  A modem th
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
