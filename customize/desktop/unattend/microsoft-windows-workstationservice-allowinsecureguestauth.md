@@ -14,7 +14,7 @@ ms.technology: windows-oem
 ---
 # AllowInsecureGuestAuth
 
-`Microsoft-Windows-WorkstationService-AllowInsecureGuestAuth` specifies whether the SMB client will allow insecure guest logons to an SMB server.
+`AllowInsecureGuestAuth` specifies whether the SMB client will allow insecure guest logons to an SMB server.
 
 Insecure guest logons are used by file servers to allow unauthenticated access to shared folders. While uncommon in an enterprise environment, insecure guest logons are frequently used by consumer Network Attached Storage (NAS) appliances acting as file servers. Windows file servers require authentication and do not use insecure guest logons by default.
 

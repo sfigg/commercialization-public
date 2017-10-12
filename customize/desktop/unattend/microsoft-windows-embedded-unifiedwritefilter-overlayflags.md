@@ -9,7 +9,7 @@ ms.technology: windows-oem
 ---
 # OverlayFlags
 
-`Microsoft-Windows-Embedded-UnifiedWriteFilter-OverlayFlags` pecifies whether to allow writes to unused space on the volume to pass through, and not be redirected to the overlay file. Enabling this setting helps conserve space on the overlay file.
+`OverlayFlags` specifies whether to allow writes to unused space on the volume to pass through, and not be redirected to the overlay file. Enabling this setting helps conserve space on the overlay file.
 
 > [!Note]
 > This setting is not intended to be enabled for a systems with a RAM [OverlayType](microsoft-windows-embedded-unifiedwritefilter-overlaytype.md).
@@ -18,8 +18,8 @@ ms.technology: windows-oem
 
 | Value      | Description                                                       |
 |:-----------|:------------------------------------------------------------------|
-| 0          | Writes are redirected to the overlay file. <br/>This is the default value when the [OverlayType](microsoft-windows-embedded-unifiedwritefilter-overlaytype.md) is not `Disk overlay`.     |
-| 1          | Writes to unused space on the volume are allowed to pass through without being redirected to the overlay file. <br/>This is the default when the [OverlayType](microsoft-windows-embedded-unifiedwritefilter-overlaytype.md) is `Disk overlay`.    |
+| 0          | Writes are redirected to the overlay file. <br/>This is the default value when the [OverlayType](microsoft-windows-embedded-unifiedwritefilter-overlaytype.md) is not `Disk overlay`     |
+| 1          | Writes to unused space on the volume are allowed to pass through without being redirected to the overlay file. <br/>This is the default when the [OverlayType](microsoft-windows-embedded-unifiedwritefilter-overlaytype.md) is `Disk overlay`    |
 
 ## Parent Hierarchy
 
