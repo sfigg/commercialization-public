@@ -22,6 +22,7 @@ The following tables record the major changes that were made in the **Customize*
 | [Customize the Get Help app](desktop/customize-get-help-app.md)    | New. Learn how to add your support app or website to Window's self-service Get Help app, to provide customers with an easy-to-find way to reach out. |
 | [Customize the Windows performance power slider](desktop/customize-power-slider.md) | New. The Windows performance power slider enables customers to trade performance of their system for longer battery life. You can configure the default slider mode, and the power settings engaged behind the scenes. |
 | [Customize a SAR mapping table](desktop/customize-sar-mapping-table.md) | New. Configure and store a Specific Absorption Rate (SAR) table for mobile broadband modems in the registry. |
+| [Customize the Start layout](customize-start-layout.md) | New. Customize the size of the start layout, and add your own tiles to it. |
 | [Create a Kiosk Experience](enterprise/create-a-kiosk-image.md) | Updated with guidance on providing a multi-app kiosk experience. This functionality is new in Windows 10 version 1709. |
 | [Adaptive hibernate](power-settings/adaptive-hibernate.md) | Updated. In Windows 10 version 1709, user usage prediction no longer triggers Hibernate. Also updated to include default values of hibernate triggers. |
 | [Predefined key combinations](enterprise/predefined-key-combinations.md) | Updated with keyboard shortcut changes introduced in Windows 10 version 1709. |

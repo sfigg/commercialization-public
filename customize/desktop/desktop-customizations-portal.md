@@ -14,6 +14,7 @@ You have the following options to customize your image. Depending on which optio
 | Feature                             | Unattend                             | Modification file                             |
 |:------------------------------------|:-------------------------------------|:----------------------------------------------|
 | Taskbar                             | subset                               | TaskbarLayoutModification.xml                 |
+| Start layout                        | subset                               | LayoutModification.xml                        |
 | Out of Box Experience (OOBE)        | subset                               | OOBE.xml                                      |
 | Darkmode                            | yes                                  | n/a                                           |
 | Get Help app                        | yes                                  | n/a                                           |
@@ -29,6 +30,7 @@ These are some common ways to customize your desktop device. You will also find 
 | Topic                                                   | Description                                                                                         |
 |:--------------------------------------------------------|:----------------------------------------------------------------------------------------------------|
 | [Customize the taskbar](customize-the-taskbar.md)       | You can pin up to three additional apps to the taskbar by adding a taskbar layout modification file, for example, TaskbarLayoutModification.xml. You can specify different taskbar configurations based on SKU, device locale, or region.                                |
+| [Customize the Start layout](customize-start-layout.md) | Learn how to customize the size of the start menu, and add your own tiles to it. |
 | [Customize OOBE](customize-oobe.md)                     | When customers turn on their Windows PCs for the first time, they will see the Windows Out of Box Experience (OOBE). Customize OOBE to determine how much work customers must do to complete the OOBE screens before they can enjoy their PCs running Windows 10. |
 | [Customize the Windows power slider](customize-power-slider.md) | The Windows Performance Power slider enables end customers to quickly and intelligently trade performance of their system for longer battery life. You can set the default slider mode for both AC and DC, and configure the power settings and PPM options that are engaged in each power slider mode. |
 | [Set dark mode](set-dark-mode.md)                       | This personalization setting for end users allows them to express preference whether to see applications which support the setting in a dark or light mode. You can set the dark mode as the default for apps using Unattend.    |

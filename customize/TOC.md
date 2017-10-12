@@ -2,6 +2,7 @@
 
 ## [Customizations for desktop](desktop/desktop-customizations-portal.md)
 ### [Customize the taskbar](desktop/customize-the-taskbar.md)
+### [Customize the Start layout](desktop/customize-start-layout.md)
 ### [Customize the Out of Box Experience (OOBE)](desktop/customize-oobe.md)
 #### [OOBE.xml](desktop/oobexml.md)
 #### [Cortana voice support](desktop/cortana-voice-support.md)
