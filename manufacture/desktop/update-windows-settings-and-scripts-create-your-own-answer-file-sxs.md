@@ -15,7 +15,7 @@ ms.technology: windows-oem
 
 Answer files (or Unattend files) can be used to modify Windows settings in your images during Setup. You can also create settings that trigger scripts in your images that run after the first user creates their account and picks their default language.
 
-To learn about Windows customizations, see the Windows 10, version 1703 OEM Policy Document (OPD).
+To learn about Windows customizations, see the most recent OEM Policy Document (OPD).
 
 As an example, we'll add a setting that shows you how to automatically boot to a maintenance mode called audit mode. This mode allows you to perform additional tests, and capture changes. We'll use audit mode in the next few labs.
 
