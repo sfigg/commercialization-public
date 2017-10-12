@@ -14,103 +14,50 @@ ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-# FileCompression
 
+# FileCompression
 
 Indicates whether the ETL file is compressed. This element is for internal use only.
 
+
 ## Element Hierarchy
 
+* \<[WindowsPerformanceRecorder](windowsperformancerecorder.md)\>
+  * \<[TraceMergeProperties](tracemergeproperties.md)\>
+    * \<[TraceMergeProperty](tracemergeproperty.md)\>
+      * \<**FileCompression**\>
 
-&lt;[WindowsPerformanceRecorder](windowsperformancerecorder.md)&gt;
-
-     &lt;[TraceMergeProperties](tracemergeproperties.md)&gt;
-
-          &lt;[TraceMergeProperty](tracemergeproperty.md)&gt;
-
-               &lt;**FileCompression**&gt;
 
 ## Syntax
-
 
 ```
 <FileCompression = Value boolean>
 ```
+
 
 ## Attributes and Elements
 
 
 ### Attributes
 
-<table>
-<colgroup>
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Attribute</th>
-<th>Description</th>
-<th>Data type</th>
-<th>Required</th>
-<th>Default</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><strong>Value</strong></p></td>
-<td><p>Indicates whether the ETL file is compressed.</p></td>
-<td><p>Boolean.</p></td>
-<td><p>No</p></td>
-<td><p></p></td>
-</tr>
-</tbody>
-</table>
+| Attribute | Description                                   | Data type | Required | Default |
+| :-------- | :-------------------------------------------- | :-------- | :------- | :------ |
+| **Value** | Indicates whether the ETL file is compressed. | Boolean   | No       |         |
 
- 
 
 ### Child Elements
 
 None.
 
+
 ### Parent Elements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>[TraceMergeProperty](tracemergeproperty.md)</p></td>
-<td><p>Contains configurations that are applied when recordings from multiple profiles are merged. This element is for internal use only.</p></td>
-</tr>
-</tbody>
-</table>
+| Element                                     | Description                                                                                                                        |
+| :------------------------------------------ | :--------------------------------------------------------------------------------------------------------------------------------- |
+| [TraceMergeProperty](tracemergeproperty.md) | Contains configurations that are applied when recordings from multiple profiles are merged. This element is for internal use only. |
 
- 
 
 ## Related topics
 
-
 [Elements](elements.md)
-
- 
-
- 
-
-
-
-
-
-
 
