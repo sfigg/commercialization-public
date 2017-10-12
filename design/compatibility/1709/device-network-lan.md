@@ -15,6 +15,7 @@ ms.technology: windows-oem
 
  - [Device.Network.LAN.10GbOrGreater](#device.network.lan.10gborgreater)
  - [Device.Network.LAN.AzureStack](#device.network.lan.azurestack)
+ - [Device.Network.LAN.SDDC](#device.network.lan.sddc)
  - [Device.Network.LAN.Base](#device.network.lan.base)
  - [Device.Network.LAN.ChecksumOffload](#device.network.lan.checksumoffload)
  - [Device.Network.LAN.CS](#device.network.lan.cs)

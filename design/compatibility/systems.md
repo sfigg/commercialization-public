@@ -35,6 +35,7 @@ This section of the documentation provides specifications for hardware compatibi
  - [System.Client.SystemImage](#system.client.systemimage)
  - [System.Client.SystemPartition](#system.client.systempartition)
  - [System.Client.ScreenRotation](#system.client.screenrotation)
+ - [System.Client.SensorCamera](#system.client.sensorcamera)
  - [System.Client.Tablet.Graphics](#system.client.tablet.graphics)
  - [System.Client.WLAN.BasicConnectivity](#system.client.wlan.basicconnectivity)
  - [System.Client.WLAN.HangDetectionAndRecovery](#system.client.wlan.hangdetectionandrecovery)
@@ -79,6 +80,7 @@ This section of the documentation provides specifications for hardware compatibi
  - [System.Fundamentals.WatchDogTimer](#system.fundamentals.watchdogtimer)
  - [System.Server.Assurance](#system.server.assurance)
  - [System.Server.AzureStack](#system.server.azurestack)
+ - [System.Server.SDDC](#system.server.sddc)
  - [System.Server.AzureStack.Security](#system.server.azurestack.security)
  - [System.Server.AzureStack.BMC](#system.server.azurestack.bmc)
  - [System.Server.Base](#system.server.base)
@@ -102,6 +104,7 @@ This section of the documentation provides specifications for hardware compatibi
  - [System.Server.Virtualization](#system.server.virtualization)
  - [System.Server.WHEA](#system.server.whea)
  - [System.Solutions.AzureStack](#system.solutions.azurestack)
+ - [System.Solutions.WSSD](#system.solutions.wssd)
  - [System.Solutions.StorageSpacesDirect](#system.solutions.storagespacesdirect)
 
 <a name="system.client.bluetoothcontroller.base"></a>
