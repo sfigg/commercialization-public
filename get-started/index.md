@@ -34,7 +34,7 @@ You can create devices to use touch/pen, mouse/keyboard, controller/gesture—or
 
 Building a great Windows 10 device starts with selecting the right components. Understanding the difference between minimum and optimal hardware requirements will ensure the best usability and performance. Our guidelines explain the requirements to implement Windows features like Cortana, Windows Hello, Touch, Windows Pen, and Continuum.
 
-[Hardware component guidelines](https://docs.microsoft.com/en-us/windows-hardware/design/component-guidelines/components)
+* [Hardware component guidelines](https://docs.microsoft.com/en-us/windows-hardware/design/component-guidelines/components)
 
 ## Customize Windows images to reflect your brand
 
