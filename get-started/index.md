@@ -19,7 +19,7 @@ You can create devices to use touch/pen, mouse/keyboard, controller/gesture—or
 
 ## Start building Windows 10 devices
 
-| **Build a Windows PC**                          | **Build drivers for a Windows device**         |
+| **Build a Windows PC**                                    | **Build drivers for a Windows device**                    |
 |:----------------------------------------------------------|:----------------------------------------------------------|
 | [Download the Windows ADK](adk-install.md) to start building Windows PCs   | [Download the WDK](https://developer.microsoft.com/en-us/windows/hardware/windows-driver-kit) to start building drivers               |
 | [What's new in Windows 10](what-s-new-in-windows.md)      | [What's new in driver development](https://docs.microsoft.com/en-us/windows-hardware/drivers/what-s-new-in-driver-development)                      |
@@ -46,13 +46,11 @@ For desktop PCs, you can use your existing settings file (Unattend.xml) to add s
 
 Learn fundamental concepts about drivers.
 
-[Concepts for all driver developers](https://docs.microsoft.com/en-us/windows-hardware/drivers/gettingstarted/concepts-and-knowledge-for-all-driver-developers)
-
-(https://docs.microsoft.com/en-us/windows-hardware/drivers/gettingstarted/sharks-cove-hardware-development-board)
+* [Concepts for all driver developers](https://docs.microsoft.com/en-us/windows-hardware/drivers/gettingstarted/concepts-and-knowledge-for-all-driver-developers)
 
 Create a single driver that runs across multiple device types, from embedded systems to tablets and desktop PCs. UMDF and KMDF templates are included in Visual Studio to help you get started.
 
-[Get started with Universal Windows drivers](https://docs.microsoft.com/en-us/windows-hardware/drivers/develop/getting-started-with-universal-drivers)
+* [Get started with Universal Windows drivers](https://docs.microsoft.com/en-us/windows-hardware/drivers/develop/getting-started-with-universal-drivers)
 
 ## Test system components for compatibility and performance
 

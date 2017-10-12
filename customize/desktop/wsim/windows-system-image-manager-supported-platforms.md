@@ -8,7 +8,7 @@ ms.assetid: f464704e-e7c9-41b3-9c0a-25695a54b8ae
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
 ms.author: alhopper
-ms.date: 05/02/2017
+ms.date: 10/17/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -36,7 +36,12 @@ The following table lists Windows operating systems and the supported list of ar
 <th>Supported architecture for .clg creation</th>
 </tr>
 </thead>
-<tbody><tr class="odd">
+<tbody>
+<tr class="even">
+<td><p>Windows 10, build 1709  (64-bit edition)</p></td>
+<td><p>x64-based</p></td>
+</tr>
+<tr class="odd">
 <td><p>Windows 10, build 1703  (64-bit edition)</p></td>
 <td><p>x64-based</p></td>
 </tr>
