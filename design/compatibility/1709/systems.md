@@ -3235,7 +3235,7 @@ Storage benchmark needs to setup a fake drive get the baseline power.</p>
 ## System.Fundamentals.Firmware
 
 > [!WARNING]
-> Certification for Windows Server 2017, Azure Stack, and SDDC must meet the [Windows Hardware Compatibility Requirements as stated in version 1607 of documentation](https://docs.microsoft.com/en-us/windows-hardware/design/compatibility/), must use [version 1607 of the HLK (build 14393)](https://go.microsoft.com/fwlink/p/?LinkID=404112) with [matching playlist](http://aka.ms/hlkplaylist) and supplemental content to generate logs, and must follow policies as stated in the [Windows Server Policy document](https://go.microsoft.com/fwlink/p/?linkid=834831). Questions about the Azure Stack or SDDC programs or how to submit the results for solution validation should be directed to the appropriate Microsoft technical account manager or partner management contact.
+> Certification for Windows Server 2016, Azure Stack, and SDDC must meet the [Windows Hardware Compatibility Requirements as stated in version 1607 of documentation](https://docs.microsoft.com/en-us/windows-hardware/design/compatibility/), must use [version 1607 of the HLK (build 14393)](https://go.microsoft.com/fwlink/p/?LinkID=404112) with [matching playlist](http://aka.ms/hlkplaylist) and supplemental content to generate logs, and must follow policies as stated in the [Windows Server Policy document](https://go.microsoft.com/fwlink/p/?linkid=834831). Questions about the Azure Stack or SDDC programs or how to submit the results for solution validation should be directed to the appropriate Microsoft technical account manager or partner management contact.
 
 ### System.Fundamentals.Firmware.ACPI
 
@@ -5112,7 +5112,7 @@ PlayReadyModule, when available on a device in secure firmware in conjunction wi
 *For Device Guard and Credential Guard, Intel TXT fully works when enabled and operates in parallel with these feature sets.*
 
 > [!WARNING]
-> Certification for Windows Server 2017, Azure Stack, and SDDC must meet the [Windows Hardware Compatibility Requirements as stated in version 1607 of documentation](https://docs.microsoft.com/en-us/windows-hardware/design/compatibility/), must use [version 1607 of the HLK (build 14393)](https://go.microsoft.com/fwlink/p/?LinkID=404112) with [matching playlist](http://aka.ms/hlkplaylist) and supplemental content to generate logs, and must follow policies as stated in the [Windows Server Policy document](https://go.microsoft.com/fwlink/p/?linkid=834831). Questions about the Azure Stack or SDDC programs or how to submit the results for solution validation should be directed to the appropriate Microsoft technical account manager or partner management contact.
+> Certification for Windows Server 2016, Azure Stack, and SDDC must meet the [Windows Hardware Compatibility Requirements as stated in version 1607 of documentation](https://docs.microsoft.com/en-us/windows-hardware/design/compatibility/), must use [version 1607 of the HLK (build 14393)](https://go.microsoft.com/fwlink/p/?LinkID=404112) with [matching playlist](http://aka.ms/hlkplaylist) and supplemental content to generate logs, and must follow policies as stated in the [Windows Server Policy document](https://go.microsoft.com/fwlink/p/?linkid=834831). Questions about the Azure Stack or SDDC programs or how to submit the results for solution validation should be directed to the appropriate Microsoft technical account manager or partner management contact.
 
 ### System.Fundamentals.Security.DGCG.CredentialGuard
 
@@ -5256,7 +5256,7 @@ For more information, see the Windows SMM Security Mitigations Table (WMST) spec
 Basic requirements for the Nano Server installation option of Windows Server
 
 > [!WARNING]
-> Certification for Windows Server 2017, Azure Stack, and SDDC must meet the [Windows Hardware Compatibility Requirements as stated in version 1607 of documentation](https://docs.microsoft.com/en-us/windows-hardware/design/compatibility/), must use [version 1607 of the HLK (build 14393)](https://go.microsoft.com/fwlink/p/?LinkID=404112) with [matching playlist](http://aka.ms/hlkplaylist) and supplemental content to generate logs, and must follow policies as stated in the [Windows Server Policy document](https://go.microsoft.com/fwlink/p/?linkid=834831). Questions about the Azure Stack or SDDC programs or how to submit the results for solution validation should be directed to the appropriate Microsoft technical account manager or partner management contact.
+> Certification for Windows Server 2016, Azure Stack, and SDDC must meet the [Windows Hardware Compatibility Requirements as stated in version 1607 of documentation](https://docs.microsoft.com/en-us/windows-hardware/design/compatibility/), must use [version 1607 of the HLK (build 14393)](https://go.microsoft.com/fwlink/p/?LinkID=404112) with [matching playlist](http://aka.ms/hlkplaylist) and supplemental content to generate logs, and must follow policies as stated in the [Windows Server Policy document](https://go.microsoft.com/fwlink/p/?linkid=834831). Questions about the Azure Stack or SDDC programs or how to submit the results for solution validation should be directed to the appropriate Microsoft technical account manager or partner management contact.
 
 ### System.Fundamentals.ServerNano.Deployment
 
@@ -6630,7 +6630,7 @@ Storage devices based on the USB Attached SCSI Protocol (UASP) will utilize stre
 ## System.Fundamentals.SystemUSB.USBC
 
 > [!WARNING]
-> Certification for Windows Server 2017, Azure Stack, and SDDC must meet the [Windows Hardware Compatibility Requirements as stated in version 1607 of documentation](https://docs.microsoft.com/en-us/windows-hardware/design/compatibility/), must use [version 1607 of the HLK (build 14393)](https://go.microsoft.com/fwlink/p/?LinkID=404112) with [matching playlist](http://aka.ms/hlkplaylist) and supplemental content to generate logs, and must follow policies as stated in the [Windows Server Policy document](https://go.microsoft.com/fwlink/p/?linkid=834831). Questions about the Azure Stack or SDDC programs or how to submit the results for solution validation should be directed to the appropriate Microsoft technical account manager or partner management contact.
+> Certification for Windows Server 2016, Azure Stack, and SDDC must meet the [Windows Hardware Compatibility Requirements as stated in version 1607 of documentation](https://docs.microsoft.com/en-us/windows-hardware/design/compatibility/), must use [version 1607 of the HLK (build 14393)](https://go.microsoft.com/fwlink/p/?LinkID=404112) with [matching playlist](http://aka.ms/hlkplaylist) and supplemental content to generate logs, and must follow policies as stated in the [Windows Server Policy document](https://go.microsoft.com/fwlink/p/?linkid=834831). Questions about the Azure Stack or SDDC programs or how to submit the results for solution validation should be directed to the appropriate Microsoft technical account manager or partner management contact.
 
 
 ### System.Fundamentals.SystemUSB.USBC.USBTypeCCharging
@@ -6837,7 +6837,7 @@ If the system implements UCSI, it must implement UCSI v1.0 (or later). In additi
 ## System.Fundamentals.TPM20
 
 > [!WARNING]
-> Certification for Windows Server 2017, Azure Stack, and SDDC must meet the [Windows Hardware Compatibility Requirements as stated in version 1607 of documentation](https://docs.microsoft.com/en-us/windows-hardware/design/compatibility/), must use [version 1607 of the HLK (build 14393)](https://go.microsoft.com/fwlink/p/?LinkID=404112) with [matching playlist](http://aka.ms/hlkplaylist) and supplemental content to generate logs, and must follow policies as stated in the [Windows Server Policy document](https://go.microsoft.com/fwlink/p/?linkid=834831). Questions about the Azure Stack or SDDC programs or how to submit the results for solution validation should be directed to the appropriate Microsoft technical account manager or partner management contact.
+> Certification for Windows Server 2016, Azure Stack, and SDDC must meet the [Windows Hardware Compatibility Requirements as stated in version 1607 of documentation](https://docs.microsoft.com/en-us/windows-hardware/design/compatibility/), must use [version 1607 of the HLK (build 14393)](https://go.microsoft.com/fwlink/p/?LinkID=404112) with [matching playlist](http://aka.ms/hlkplaylist) and supplemental content to generate logs, and must follow policies as stated in the [Windows Server Policy document](https://go.microsoft.com/fwlink/p/?linkid=834831). Questions about the Azure Stack or SDDC programs or how to submit the results for solution validation should be directed to the appropriate Microsoft technical account manager or partner management contact.
 
 
 ### System.Fundamentals.TPM20.TPM20
@@ -7354,7 +7354,7 @@ This requirement will be REQUIRED for Server system designs that are based on In
 ## System.Server.AzureStack
 
 > [!WARNING]
-> Certification for Windows Server 2017, Azure Stack, and SDDC must meet the [Windows Hardware Compatibility Requirements as stated in version 1607 of documentation](https://docs.microsoft.com/en-us/windows-hardware/design/compatibility/), must use [version 1607 of the HLK (build 14393)](https://go.microsoft.com/fwlink/p/?LinkID=404112) with [matching playlist](http://aka.ms/hlkplaylist) and supplemental content to generate logs, and must follow policies as stated in the [Windows Server Policy document](https://go.microsoft.com/fwlink/p/?linkid=834831). Questions about the Azure Stack or SDDC programs or how to submit the results for solution validation should be directed to the appropriate Microsoft technical account manager or partner management contact.
+> Certification for Windows Server 2016, Azure Stack, and SDDC must meet the [Windows Hardware Compatibility Requirements as stated in version 1607 of documentation](https://docs.microsoft.com/en-us/windows-hardware/design/compatibility/), must use [version 1607 of the HLK (build 14393)](https://go.microsoft.com/fwlink/p/?LinkID=404112) with [matching playlist](http://aka.ms/hlkplaylist) and supplemental content to generate logs, and must follow policies as stated in the [Windows Server Policy document](https://go.microsoft.com/fwlink/p/?linkid=834831). Questions about the Azure Stack or SDDC programs or how to submit the results for solution validation should be directed to the appropriate Microsoft technical account manager or partner management contact.
 
 ### System.Server.AzureStack.Base
 
@@ -7966,7 +7966,7 @@ resource rebalance operation.
 *Server system must include necessary devices and functionality.*
 
 > [!WARNING]
-> Certification for Windows Server 2017, Azure Stack, and SDDC must meet the [Windows Hardware Compatibility Requirements as stated in version 1607 of documentation](https://docs.microsoft.com/en-us/windows-hardware/design/compatibility/), must use [version 1607 of the HLK (build 14393)](https://go.microsoft.com/fwlink/p/?LinkID=404112) with [matching playlist](http://aka.ms/hlkplaylist) and supplemental content to generate logs, and must follow policies as stated in the [Windows Server Policy document](https://go.microsoft.com/fwlink/p/?linkid=834831). Questions about the Azure Stack or SDDC programs or how to submit the results for solution validation should be directed to the appropriate Microsoft technical account manager or partner management contact.
+> Certification for Windows Server 2016, Azure Stack, and SDDC must meet the [Windows Hardware Compatibility Requirements as stated in version 1607 of documentation](https://docs.microsoft.com/en-us/windows-hardware/design/compatibility/), must use [version 1607 of the HLK (build 14393)](https://go.microsoft.com/fwlink/p/?LinkID=404112) with [matching playlist](http://aka.ms/hlkplaylist) and supplemental content to generate logs, and must follow policies as stated in the [Windows Server Policy document](https://go.microsoft.com/fwlink/p/?linkid=834831). Questions about the Azure Stack or SDDC programs or how to submit the results for solution validation should be directed to the appropriate Microsoft technical account manager or partner management contact.
 
 <table>
 <tr>
@@ -8251,7 +8251,7 @@ The following definitions will be used in describing storage device identificati
 *Platform requirements*
 
 > [!WARNING]
-> Certification for Windows Server 2017, Azure Stack, and SDDC must meet the [Windows Hardware Compatibility Requirements as stated in version 1607 of documentation](https://docs.microsoft.com/en-us/windows-hardware/design/compatibility/), must use [version 1607 of the HLK (build 14393)](https://go.microsoft.com/fwlink/p/?LinkID=404112) with [matching playlist](http://aka.ms/hlkplaylist) and supplemental content to generate logs, and must follow policies as stated in the [Windows Server Policy document](https://go.microsoft.com/fwlink/p/?linkid=834831). Questions about the Azure Stack or SDDC programs or how to submit the results for solution validation should be directed to the appropriate Microsoft technical account manager or partner management contact.
+> Certification for Windows Server 2016, Azure Stack, and SDDC must meet the [Windows Hardware Compatibility Requirements as stated in version 1607 of documentation](https://docs.microsoft.com/en-us/windows-hardware/design/compatibility/), must use [version 1607 of the HLK (build 14393)](https://go.microsoft.com/fwlink/p/?LinkID=404112) with [matching playlist](http://aka.ms/hlkplaylist) and supplemental content to generate logs, and must follow policies as stated in the [Windows Server Policy document](https://go.microsoft.com/fwlink/p/?linkid=834831). Questions about the Azure Stack or SDDC programs or how to submit the results for solution validation should be directed to the appropriate Microsoft technical account manager or partner management contact.
 
 <table>
 <tr>
@@ -8745,7 +8745,7 @@ Table below explains the scenario usage for the Graphic driver types.
 Server Baseboard Management Controller (BMC) devices can support out-of-band management capabilities based on the DMTF Redfish standard.
 
 > [!WARNING]
-> Certification for Windows Server 2017, Azure Stack, and SDDC must meet the [Windows Hardware Compatibility Requirements as stated in version 1607 of documentation](https://docs.microsoft.com/en-us/windows-hardware/design/compatibility/), must use [version 1607 of the HLK (build 14393)](https://go.microsoft.com/fwlink/p/?LinkID=404112) with [matching playlist](http://aka.ms/hlkplaylist) and supplemental content to generate logs, and must follow policies as stated in the [Windows Server Policy document](https://go.microsoft.com/fwlink/p/?linkid=834831). Questions about the Azure Stack or SDDC programs or how to submit the results for solution validation should be directed to the appropriate Microsoft technical account manager or partner management contact.
+> Certification for Windows Server 2016, Azure Stack, and SDDC must meet the [Windows Hardware Compatibility Requirements as stated in version 1607 of documentation](https://docs.microsoft.com/en-us/windows-hardware/design/compatibility/), must use [version 1607 of the HLK (build 14393)](https://go.microsoft.com/fwlink/p/?LinkID=404112) with [matching playlist](http://aka.ms/hlkplaylist) and supplemental content to generate logs, and must follow policies as stated in the [Windows Server Policy document](https://go.microsoft.com/fwlink/p/?linkid=834831). Questions about the Azure Stack or SDDC programs or how to submit the results for solution validation should be directed to the appropriate Microsoft technical account manager or partner management contact.
 
 <table>
 <tr>
@@ -9347,7 +9347,7 @@ Simulation (PCS) test. The fully assembled solutions must pass the PCS
 tests in their minimum and maximum scale supported configurations.
 
 > [!WARNING]
-> Certification for Windows Server 2017, Azure Stack, and SDDC must meet the [Windows Hardware Compatibility Requirements as stated in version 1607 of documentation](https://docs.microsoft.com/en-us/windows-hardware/design/compatibility/), must use [version 1607 of the HLK (build 14393)](https://go.microsoft.com/fwlink/p/?LinkID=404112) with [matching playlist](http://aka.ms/hlkplaylist) and supplemental content to generate logs, and must follow policies as stated in the [Windows Server Policy document](https://go.microsoft.com/fwlink/p/?linkid=834831). Questions about the Azure Stack or SDDC programs or how to submit the results for solution validation should be directed to the appropriate Microsoft technical account manager or partner management contact.
+> Certification for Windows Server 2016, Azure Stack, and SDDC must meet the [Windows Hardware Compatibility Requirements as stated in version 1607 of documentation](https://docs.microsoft.com/en-us/windows-hardware/design/compatibility/), must use [version 1607 of the HLK (build 14393)](https://go.microsoft.com/fwlink/p/?LinkID=404112) with [matching playlist](http://aka.ms/hlkplaylist) and supplemental content to generate logs, and must follow policies as stated in the [Windows Server Policy document](https://go.microsoft.com/fwlink/p/?linkid=834831). Questions about the Azure Stack or SDDC programs or how to submit the results for solution validation should be directed to the appropriate Microsoft technical account manager or partner management contact.
 
 ### System.Solutions.AzureStack.CloudStress
 

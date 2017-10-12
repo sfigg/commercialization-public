@@ -264,7 +264,7 @@ Integrated USB devices must not disconnect during USB Suspend/Resume or MA-USB 
 *MA-USB device must report their Manufacturer, Model Name and Model Number.*
 
 > [!WARNING]
-> Certification for Windows Server 2017, Azure Stack, and SDDC must meet the [Windows Hardware Compatibility Requirements as stated in version 1607 of documentation](https://docs.microsoft.com/en-us/windows-hardware/design/compatibility/), must use [version 1607 of the HLK (build 14393)](https://go.microsoft.com/fwlink/p/?LinkID=404112) with [matching playlist](http://aka.ms/hlkplaylist) and supplemental content to generate logs, and must follow policies as stated in the [Windows Server Policy document](https://go.microsoft.com/fwlink/p/?linkid=834831). Questions about the Azure Stack or SDDC programs or how to submit the results for solution validation should be directed to the appropriate Microsoft technical account manager or partner management contact.
+> Certification for Windows Server 2016, Azure Stack, and SDDC must meet the [Windows Hardware Compatibility Requirements as stated in version 1607 of documentation](https://docs.microsoft.com/en-us/windows-hardware/design/compatibility/), must use [version 1607 of the HLK (build 14393)](https://go.microsoft.com/fwlink/p/?LinkID=404112) with [matching playlist](http://aka.ms/hlkplaylist) and supplemental content to generate logs, and must follow policies as stated in the [Windows Server Policy document](https://go.microsoft.com/fwlink/p/?linkid=834831). Questions about the Azure Stack or SDDC programs or how to submit the results for solution validation should be directed to the appropriate Microsoft technical account manager or partner management contact.
 
 <table>
 <tr>
