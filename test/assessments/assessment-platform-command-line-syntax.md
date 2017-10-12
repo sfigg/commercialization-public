@@ -56,20 +56,17 @@ The base syntax for using the Assessment Platform from the command line is:
 <code>axe&nbsp;C:\Assessments\MyJobs\Job1.jobx</code></td>
 </tr>
 <tr class="odd">
-<td><p><strong>/Analyze</strong> <em>ResultsFile</em></p></td>
-<td><p>Specifies a path and file name of results to reanalyze. Requires job from a package or assessment manifest directly to locate the assessments to reanalyze within the results file.</p></td>
+<td><p><strong>/Analyze</strong> <em>path_and_file_name</em></p></td>
+<td><p>Reanalyzes the results from a job file specified by <em>path_and_file_name</em>. This option requires a job from a package or assessment manifest directly to locate the assessments to reanalyze.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>/Assessment</strong> <em>assessment_file</em></p></td>
 <td><p>Specifies the path and file name of an assessment manifest, <em>assessment_file</em>, to reanalyze in the results file specified.</p>
-<p>By default, when you create a job in the Windows Assessment Console, it's saved in to %USERPROFILE%\Documents\Windows Assessment Console\Jobs\.</p>
-<p style="margin: 1em 1.5em 0 1.5em;"><strong>Note</strong>&nbsp;&nbsp;&nbsp;This option is required if no other parameter that performs an action is specified.</p>
-<p>Example:</p>
-<code>axe&nbsp;C:\Assessments\MyJobs\Job1.jobx</code></td>
+</td>
 </tr>
 <tr class="odd">
 <td><p><strong>/Timeout</strong>&nbsp;<em>seconds</em></p></td>
-<td><p>Specifies the amount of time in seconds (<em>seconds</em>) that the job will wait for another job to finish before it exits with an error. When <em>seconds</em> is zero, the default, the job will exit immediately if another job is already running.</p>
+<td><p>Specifies the amount of time in <em>seconds</em> that the job will wait for another job to finish before it exits with an error. When <em>seconds</em> is zero, the default, the job will exit immediately if another job is already running.</p>
 <p>Example:</p>
 <code>axe&nbsp;C:\Assessments\myJobs\Job1.jobx /Timeout 30</code></td>
 </tr>
@@ -81,14 +78,15 @@ The base syntax for using the Assessment Platform from the command line is:
 </tr>
 <tr class="even">
 <td><p><strong>/PublishToSource</strong></p></td>
-<td><p>Optional parameter specifies to update the original results folder when running <strong>/Analyze</strong>.  
-It is ignored when running a job. It may be combined with publish path, but the publish path will only be used if it cannot publish back to the original results folder.</p>
+<td><p>Specifies that Axe.exe update the original results folder when running <strong>/Analyze</strong>.  
+Using <strong>/PublishToSource</strong> is optional, and it is ignored when running a job.</p>
+<p><strong>/PublishToSource</strong> may be combined with the publish path, but the publish path will only be used if Axe.exe cannot publish to the original results folder.</p>
 <p>Example:</p>
 <code>axe&nbsp;C:\Assessments\myJobs\Job1.jobx /NoPublish</code></td>
 </tr>
 <tr class="odd">
 <td><p><strong>/PublishPath</strong>&nbsp;<em>folder_path</em></p></td>
-<td><p>Specifies the path of a folder (<em>folder_path</em>) to publish the results file to. The path specified by <em>folder_path</em> overrides the publication path, <strong>ResultsPublishPath</strong>, that's specified in the job file. This option is ignored if it's combined with <strong>/NoPublish</strong>.</p>
+<td><p>Specifies a <em>folder_path</em> to publish the results file to. The path specified by <em>folder_path</em> overrides the publication path, <strong>ResultsPublishPath</strong>, that's specified in the job file. This option is ignored if it's combined with <strong>/NoPublish</strong>.</p>
 <p>Example:</p>
 <code>axe&nbsp;C:\Assessments\myJobs\Job1.jobx /PublishPath C:\Assessments\myResults</code></td>
 </tr>
@@ -114,7 +112,7 @@ It is ignored when running a job. It may be combined with publish path, but the 
 </tr>
 <tr class="odd">
 <td><p><strong>/JobParameter</strong> <em>parameter</em><strong>=</strong><em>value</em></p></td>
-<td><p>Specifies a value (<em>value</em>) to override a job parameter (<em>parameter</em>) that may exist in the job manifest. You can use <strong>/JobParameter</strong> up to 100 times to specify multiple job parameters. If duplicate parameter names appear, the assessment uses the last value supplied for that name. Using <strong>/JobParameter</strong> is optional.</p>
+<td><p>Specifies a <em>value</em> to override a job <em>parameter</em> that may exist in the job manifest. You can use <strong>/JobParameter</strong> up to 100 times to specify multiple job parameters. If duplicate parameter names appear, the assessment uses the last value supplied for that name. Using <strong>/JobParameter</strong> is optional.</p>
 <p>The <strong>/PublishPath</strong> option takes precedence over setting the <strong>ResultsPublishPath</strong> job parameter with this option.</p>
 <p>Example:</p>
 <code>axe&nbsp;C:\Assessments\myJobs\Job1.jobx /JobParameter iterations=1</code></td>
