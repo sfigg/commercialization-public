@@ -16,6 +16,8 @@ This topic describes Windows 10, version 1709 answer file settings that have cha
 | Setting name         | Description                                                                      |
 |:---------------------|:---------------------------------------------------------------------------------|
 | [Microsoft-Windows-Shell-Setup-OEMInformation-SupportProvider](microsoft-windows-shell-setup-oeminformation-supportprovider.md)           | New. Specifies the name of the OEM support app or website to display in the Get Help app. If not provided, the default System Manufacturer name (from msinfo32.exe) will be used. |
+| [Microsoft-Windows-Embedded-UnifiedWriteFilter-OverlayFlags](microsoft-windows-embedded-unifiedwritefilter-overlayflags.md)           | New. Specifies whether writes to unused space on the volume are allowed to pass through, rather than being redirected to the overlay. |
+| [Microsoft-Windows-WorkstationService-AllowInsecureGuestAuth](microsoft-windows-workstationservice-allowinsecureguestauth.md)           | New. Specifies whether an SMB client allows insecure guest logons to an SMB server. Microsoft recommends using the default value of `0`. |
 
 ## Deprecated Windows settings
 
