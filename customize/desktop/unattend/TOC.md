@@ -1143,6 +1143,7 @@
 #### [WLANFunctionLevelDeviceResetSupported](microsoft-windows-wlansvc-wlanfunctionalleveldevicereset.md)
 #### [WLANPlatformLevelDeviceResetSupported](microsoft-windows-wlansvc-wlanplatformleveldevicereset.md)
 ### [Microsoft-Windows-WorkstationService](microsoft-windows-workstationservice.md)
+#### [AllowInsecureGuestAuth](microsoft-windows-workstationservice-allowinsecureguestauth.md)
 #### [OtherDomains](microsoft-windows-workstationservice-otherdomains.md)
 #### [SyncDomainWithMembership](microsoft-windows-workstationservice-syncdomainwithmembership.md)
 ### [Microsoft-Windows-WPD-BusEnumService](microsoft-windows-wpd-busenumservice.md)
