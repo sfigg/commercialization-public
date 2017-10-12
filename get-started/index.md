@@ -36,40 +36,23 @@ Building a great Windows 10 device starts with selecting the right components. U
 
 [Hardware component guidelines](https://docs.microsoft.com/en-us/windows-hardware/design/component-guidelines/components)
 
-## Develop Universal Windows Drivers
-
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Learn fundamental concepts about drivers.</p>
-<p>[Get started with Windows drivers](https://docs.microsoft.com/en-us/windows-hardware/drivers/gettingstarted/index)</p></td>
-<td><p>Build a universal sensor driver based on the Sharks Cove dev board. Learn how to load a Windows 10 image and provision these boards for driver deployment, debugging, and testing.</p>
-<p>[Work with the Sharks Cove hardware development board](https://docs.microsoft.com/en-us/windows-hardware/drivers/gettingstarted/sharks-cove-hardware-development-board)</p></td>
-<td><p>Create a single driver that runs across multiple device types, from embedded systems to tablets and desktop PCs. UMDF and KMDF templates are included in Visual Studio to help you get started.</p>
-<p>[Get started with Universal Windows drivers](https://docs.microsoft.com/en-us/windows-hardware/drivers/develop/getting-started-with-universal-drivers)</p></td>
-</tr>
-</tbody>
-</table>
-
 ## Customize Windows images to reflect your brand
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>For desktop PCs, you can use your existing settings file (Unattend.xml) to add settings during Windows installation.</p>
-<p>[Build a Windows Setup unattend file](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/update-windows-settings-and-scripts-create-your-own-answer-file-sxs)</p></td>
-</tr>
-</tbody>
-</table>
+For desktop PCs, you can use your existing settings file (Unattend.xml) to add settings during Windows installation.
+
+[Build a Windows Setup unattend file](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/update-windows-settings-and-scripts-create-your-own-answer-file-sxs)
+
+## Develop Universal Windows Drivers
+
+Learn fundamental concepts about drivers.
+
+[Concepts for all driver developers](https://docs.microsoft.com/en-us/windows-hardware/drivers/gettingstarted/concepts-and-knowledge-for-all-driver-developers)
+
+(https://docs.microsoft.com/en-us/windows-hardware/drivers/gettingstarted/sharks-cove-hardware-development-board)
+
+Create a single driver that runs across multiple device types, from embedded systems to tablets and desktop PCs. UMDF and KMDF templates are included in Visual Studio to help you get started.
+
+[Get started with Universal Windows drivers](https://docs.microsoft.com/en-us/windows-hardware/drivers/develop/getting-started-with-universal-drivers)
 
 ## Test system components for compatibility and performance
 
