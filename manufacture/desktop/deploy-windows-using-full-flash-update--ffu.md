@@ -13,9 +13,9 @@ ms.technology: windows-oem
 
 # Windows Full Flash Update (FFU) images
 
-You can deploy Windows faster on the factory floor by using the Full Flash Update (FFU) image format. FFU images allow you to apply an image of a physical drive, including Windows, recovery, and system partition information all at once directly to a different drive or an SD card.
+Deploy Windows faster on the factory floor by using the Full Flash Update (FFU) image format. FFU images allow you to apply an image of a physical drive, including Windows, recovery, and system partition information all at once directly to a different drive.
 
-Unlike the file-based WIM format, FFU is a sector-based file container that stores one or more partitions. Sector-based imaging mean that FFUs take less time to deploy, but have larger files sizes than WIMs. See [WIM vs. VHD vs. FFU: comparing image file formats](wim-vs-ffu-image-file-formats.md) for information about the differences between image formats.
+Unlike the file-based WIM format, FFU is a sector-based file container that stores one or more partitions. Sector-based imaging means that FFUs take less time to deploy, but have larger files sizes than WIMs. See [WIM vs. VHD vs. FFU: comparing image file formats](wim-vs-ffu-image-file-formats.md) for information about the differences between image formats.
 
 Starting with Windows 10, version 1709, DISM has the ability to capture, deploy, and service FFUs, with the following limitations:
 - The drive that an FFU is applied to has to be the same or larger than the drive it is captured from
