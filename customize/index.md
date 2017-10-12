@@ -23,10 +23,10 @@ See the following sections for more information about what you can do to customi
 
 | Topic                                      | Description                                                                                             |
 |:-------------------------------------------|:--------------------------------------------------------------------------------------------------------|
-| [What's new in customizations](https://docs.microsoft.com/en-us/windows-hardware/get-started/what-s-new-in-windows#new-customization-options) | Learn about the new customizations available in Windows 10, version 1709. |
 | [Customizations for desktop](desktop/desktop-customizations-portal.md) | This section includes topics describing key tasks, as well as the reference for [Windows System Image Manager](desktop/unattend/index.md) settings. |
 | [Customizations for mobile](mobile/windows-10-mobile-customizations-portal.md) | Learn about the customizations for mobile enterprise, which allow you to run mobile line-of-business applications on a platform that ensures that data is captured securely and efficiently. |
 | [Customizations for enterprise desktop](enterprise/enterprise-custom-portal.md) | Learn about the customizations available to you if you are providing a controlled and specialized experience on a Windows device running Windows 10 Enterprise. |
+| [Configure power settings](power-settings/configure-power-settings.md) | Learn about the power settings you can configure using the Windows provisioning framework. Each power setting topic includes the identification GUID, allowed values, meaning, and common usage scenarios for the setting. |
 | [Preinstalled apps](preinstall/preinstall-apps.md) | If you're a Windows OEM or mobile operator partner, find out how you can create partner apps that you can package and configure to install during the initial device setup process. While the user is going through the initial setup process, the preinstalled apps are installed in the background. |
 | [Change history for Customize](change-history-for-customize.md) | Read about what topics have been created, updated, or deleted for Windows 10, build 1709. |
 
