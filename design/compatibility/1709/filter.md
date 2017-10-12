@@ -37,8 +37,8 @@ These specifications are divided into the following categories and topics:
 *Kernel mode filter drivers must be architected to maximize the reliability and functionality of Windows file systems, as well as interact accurately with the core components of the operating system.*
 
 <table>
-<td>
-<th>Applies to</th>
+<tr>
+<td>Applies to</td>
 </td>
 <td>
 <p>Windows 10 Client x64</p>
@@ -46,7 +46,7 @@ These specifications are divided into the following categories and topics:
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
-</td>
+</tr>
 </table>
 
 
@@ -75,7 +75,7 @@ Information about Oplock semantics over SMB, see the \[MS-SMB2\] protocol docume
 
 <table>
 <tr>
-    <th>Applies to</th>
+    <td>Applies to</td>
     <td>
     <p>Windows 10 Client x64</p>
     <p>Windows 10 Client x86</p>
@@ -100,7 +100,7 @@ Anti-virus filter drivers must be architected to exercise basic anti-virus fun
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -124,7 +124,7 @@ Information about filter manger and minifilter drivers available here:
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -181,7 +181,7 @@ Information about Named Pipe and Mail Slots can be found at:
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -221,7 +221,7 @@ Kernel mode filter drivers must be architected to maximize the reliability and
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -254,7 +254,7 @@ Information about Winsock APIs can be found at:
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 ARM64 Desktop</p>
@@ -297,7 +297,7 @@ All kernel drivers on Windows MUST be signed by Microsoft (WHQL certificate) thr
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -323,7 +323,7 @@ The early launch anti-malware (AM) drivers are started soon after the NTOS kerne
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -351,7 +351,7 @@ Elam=true
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -374,7 +374,7 @@ The early launch AM drivers are started soon after the NTOS kernel starts.  For
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -404,7 +404,7 @@ The early launch AM drivers are started soon after the NTOS kernel starts.  For
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -430,7 +430,7 @@ The early launch anti-malware (AM) drivers are started soon after the NTOS kerne
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -472,7 +472,7 @@ Information about Oplock semantics over SMB, see the \[MS-SMB2\] protocol docume
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -495,7 +495,7 @@ Information about Filter Manger and minifilter drivers available here:
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -552,7 +552,7 @@ Information about Named Pipe and Mail Slots can be found at:
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -597,7 +597,7 @@ Kernel mode filter drivers must be architected to maximize the reliability and
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -640,7 +640,7 @@ This test will be run with Driver Verifier enabled with standard settings.
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -660,7 +660,7 @@ All light weight filters must be NDIS 6.30 or greater and be compliant to the ND
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -685,7 +685,7 @@ All light weight filters must be NDIS 6.30 or greater. All light weight filters 
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -708,7 +708,7 @@ There can be no use of TDI filters or LSPs by either kernel mode software or dri
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -810,7 +810,7 @@ See the VM Switch Extensibility Specification.
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -830,7 +830,7 @@ WFP-based products must not block App Container apps that are operating within t
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -859,7 +859,7 @@ The installation requirements for applications (in the Software Logo Program) ar
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -880,7 +880,7 @@ WFP-based products which redirect or proxy at redirect layers (connect redirect)
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -903,7 +903,7 @@ The definition for the FWPM\_FILTER object can be found in the following URL: <h
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -956,7 +956,7 @@ myFilter.providerKey = &(myProvider.providerKey);
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -998,7 +998,7 @@ The definition of the FWPM\_PROVIDER object can be found in the following URL:
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -1023,7 +1023,7 @@ The definition for the FWPM\_SUBLAYERobject can be found in the following URL:
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -1055,7 +1055,7 @@ FPHC     : <http://go.microsoft.com/fwlink/?LinkID=125464&clcid=0x409>
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -1076,7 +1076,7 @@ WFP-based products must not be the resulting cause of any access violation under
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -1097,7 +1097,7 @@ This ensures interoperability between multiple host firewalls' WFP objects withi
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -1120,7 +1120,7 @@ Host firewalls must not modify and reinject the same network packet more than 2 
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -1141,7 +1141,7 @@ To *not starve* means that Stream layer callout indications should not be pended
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -1164,7 +1164,7 @@ Firewalls should never pend packets such that a power state change refuses to wo
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -1190,7 +1190,7 @@ Similarly, enumeration functions for other objects (provider, sublayer, etc.) ca
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -1217,7 +1217,7 @@ Information about Winsock APIs can be found at:
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -1246,7 +1246,7 @@ This requirement ensures that firewall vendors disable Windows Firewall per docu
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -1267,7 +1267,7 @@ Host firewalls must not circumvent the intent of the Windows Filtering Platform 
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -1287,7 +1287,7 @@ All host-based firewalls must be able to block/allow by 5-tuple parts (including
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -1309,7 +1309,7 @@ The word *support* refers to the *host firewall's capability* to ensure exceptio
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -1329,7 +1329,7 @@ All host-based firewalls that have filters in L2 (Native/Mac) layers must be abl
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -1354,7 +1354,7 @@ For more information on Windows Filtering Platform, please see the following lin
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -1382,7 +1382,7 @@ As part of Internet Connection Sharing's (ICS) DHCP functionality, ICS DHCP can 
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -1415,7 +1415,7 @@ DHCP OFFER & DHCP ACK & DHCP NACK packets can be transmitted over outbound UDP s
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -1439,7 +1439,7 @@ More information about IPv4, RFCs can be found in the following link: <http://go
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -1464,7 +1464,7 @@ More information about IPv6 can be found in the following link: <http://go.micro
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -1490,7 +1490,7 @@ This requirement applies to Internet Connection Sharing that acts as a DNS serv
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -1519,7 +1519,7 @@ Please refer to the following article below for further information on 6to4:
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -1547,7 +1547,7 @@ For more information on Windows Updates/ Automatic Updates, please see the follo
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -1569,7 +1569,7 @@ The word *support* refers to the *host firewall's capability* to ensure a succes
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -1604,7 +1604,7 @@ Please refer to the following documents for more information:
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -1628,7 +1628,7 @@ For more information, please see <http://go.microsoft.com/fwlink/?LinkID=116835&
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -1656,7 +1656,7 @@ For more information on Windows Updates/ Automatic Updates, please see the follo
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -1718,7 +1718,7 @@ The word *support* refers to the *host firewall's capability* to make internet s
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -1740,7 +1740,7 @@ Windows provides native support for mobile broadband (MB) data cards & embedded 
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -1779,7 +1779,7 @@ Please refer to the following documents for more information, these documents:
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -1806,7 +1806,7 @@ For information on how Remote Assistance works in general, please see the articl
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -1834,7 +1834,7 @@ For more information on remote desktop, please see the article below:
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -1871,7 +1871,7 @@ Please refer to the following article below for further information on Teredo:
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -1906,7 +1906,7 @@ Please refer to the following article for further information: <http://go.micros
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -1926,7 +1926,7 @@ WFP must not block traffic from another vSwitch extension (WFP or LWF) by defaul
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -1946,7 +1946,7 @@ WFP-based products that operate in the vSwitch must not modify packets on the Eg
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -1966,7 +1966,7 @@ WFP-based products that operate in the vSwitch must present a minimal MOF for Li
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
@@ -1986,7 +1986,7 @@ WFP-based products that operate in the vSwitch must be allowed to be removed whe
 
 <table>
 <tr>
-<th>Applies to</th>
+<td>Applies to</td>
 <td>
 <p>Windows 10 Client x64</p>
 <p>Windows 10 Client x86</p>
