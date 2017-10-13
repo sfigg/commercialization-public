@@ -19,9 +19,9 @@ ms.technology: windows-oem
 
 AXE.exe is a command-line tool that you can use to automate jobs from a script and minimize resource usage. 
 
-A <em>job</em> is one or more assessments run at one time on a computer. You can't use the command-line options to compose a job. You should create, modify, and save a job by using the Windows Assessment Console. By default, jobs are saved to %UserProfile%\\Documents\\Windows Assessment Console\\Jobs\\.
+A *job* is one or more assessments run simultaneously on a computer. You should create, modify, and save a job by using the Windows Assessment Console. By default, jobs are saved to %UserProfile%\\Documents\\Windows Assessment Console\\Jobs\\. You can't use the command-line options to compose a job. 
 
-AXE.exe is installed with the Windows Assessment Toolkit and, by defaul.,t to the following location:
+AXE.exe is installed with the Windows Assessment Toolkit and, by default to the following location:
 
 <p style="margin: 1em 0 0 1.5em;">%programfiles(x86)%\\Windows Kits\\10\\Assessment and Deployment Kit\\Windows Assessment Toolkit\\*architecture*\\</p>
 
