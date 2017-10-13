@@ -46,7 +46,7 @@ If you choose to run this task, the task will have a 1 hour timeout and may not 
 3.  Under **Selected Item**, click **Run**
 
     ```
-    **schtasks.exe /Run /TN "\\Microsoft\\Windows\\Servicing\\StartComponentCleanup"**
+    schtasks.exe /Run /TN "\Microsoft\Windows\Servicing\StartComponentCleanup"
     ```
     > [!NOTE]
     > The StartComponentCleanup task can also be started from the command line.
