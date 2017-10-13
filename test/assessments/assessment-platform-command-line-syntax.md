@@ -17,22 +17,29 @@ ms.technology: windows-oem
 # Assessment Platform Command-Line Syntax
 
 
-AXE.exe is a command-line tool that you can use to automate jobs from a script and minimize resource usage. 
+AXE.exe is a command-line tool that you can use to automate jobs from a script and minimize resource usage.
 
-A *job* is one or more assessments run simultaneously on a computer. You should create, modify, and save a job by using the [Windows Assessment Console](windows-assessment-console.md). By default, jobs are saved to %UserProfile%\\Documents\\Windows Assessment Console\\Jobs\\. You can't use the command-line options to compose a job. 
+A *job* is one or more assessments run simultaneously on a computer. You should create, modify, and save a job by using the [Windows Assessment Console](windows-assessment-console.md). By default, jobs are saved to %UserProfile%\\Documents\\Windows Assessment Console\\Jobs\\. You can't use the command-line options to compose a job.
 
 AXE.exe is installed with the Windows Assessment Toolkit and, by default to the following location:
 
 <p style="margin: 1em 0 0 1.5em;">%programfiles(x86)%\\Windows Kits\\10\\Assessment and Deployment Kit\\Windows Assessment Toolkit\\*architecture*\\</p>
 
-where *architecture* is either **x86** or **amd64**.
+where *architecture* is one of the following:
+  - **amd64**
+  - **arm**
+  - **arm64**
+  - **x86**
 
 ## Command-Line Options
 
+The base syntax for using the Assessment Platform from the command line is one of two forms—one for executing a job:
 
-The base syntax for using the Assessment Platform from the command line is:
+<p style="margin: 1em 0 0 1.5em;"><strong>axe</strong>&nbsp;<em>job_file</em> <strong>/Timeout</strong>&nbsp;<em>sec</em>] [<strong>/NoPublish</strong>] [<strong>/PublishPath</strong>&nbsp;<em>folder_path</em>] [<strong>/RemoveRestart</strong>] [<strong>/DisplayLog</strong>&nbsp;<em>path_and_file_name</em>] [<strong>/NoWarnings</strong>] [<strong>/JobParameter</strong> <em>parameter</em><strong>=</strong><em>value</em>] [<strong>/Pause</strong>]</p>
 
-<p style="margin: 1em 0 0 1.5em;"><strong>axe</strong>&nbsp;<em>job_file</em>&nbsp;[&nbsp;<em>AXE_options</em>&nbsp;]</p>
+<p>And one for analyzing a job:</p>
+
+<p style="margin: 1em 0 0 1.5em;"><strong>axe</strong>&nbsp;<strong>/Analyze</strong> <em>path_and_file_name</em> [<strong>/Job</strong> <em>job_file</em>] [<strong>/Assessment</strong> <em>assessment_file</em>]
 
 
 <p>The following table describes each option. The names of these options are not case-sensitive.</p>
@@ -59,11 +66,16 @@ The base syntax for using the Assessment Platform from the command line is:
 </tr>
 <tr class="odd">
 <td><p><strong>/Analyze</strong> <em>path_and_file_name</em></p></td>
-<td><p>Reanalyzes the results from a job file specified by <em>path_and_file_name</em>. This option requires a job from a package or assessment manifest directly to locate the assessments to reanalyze.</p></td>
+<td><p>Reanalyzes the results from a job file specified by <em>path_and_file_name</em>. This option requires a job from a package or assessment manifest directly to locate the assessments to reanalyze.</p>
+<p>Example:</p><!--v-gmoor: Need to add a realistic path to /Analyze example.-->
+<code>axe&nbsp;C:\Assessments\MyJobs\Job1.jobx /Analyze</code>
+</td>
 </tr>
 <tr class="even">
 <td><p><strong>/Assessment</strong> <em>assessment_file</em></p></td>
 <td><p>Specifies the path and file name of an assessment manifest, <em>assessment_file</em>, to reanalyze in the results file specified.</p>
+<p>Example:</p><!--v-gmoor: Need to add a realistic path to /Assessment example.-->
+<code>axe&nbsp;C:\Assessments\MyJobs\Job1.jobx /Assessment</code>
 </td>
 </tr>
 <tr class="odd">
@@ -82,12 +94,12 @@ The base syntax for using the Assessment Platform from the command line is:
 <td><p><strong>/PublishToSource</strong></p></td>
 <td><p>Specifies that AXE.exe update the original results folder when running <strong>/Analyze</strong>. Using <strong>/PublishToSource</strong> is optional, and it is ignored when running a job.</p>
 <p><strong>/PublishToSource</strong> may be combined with the publish path, but the publish path will only be used if AXE.exe cannot publish to the original results folder.</p>
-<p>Example:</p>
-<code>axe&nbsp;C:\Assessments\myJobs\Job1.jobx /NoPublish</code></td>
+<p>Example:</p><!--v-gmoor: Need to add a realistic path to /Analyze example.-->
+<code>axe&nbsp;C:\Assessments\myJobs\Job1.jobx  /Analyze /PublishToSource</code></td>
 </tr>
 <tr class="odd">
 <td><p><strong>/PublishPath</strong>&nbsp;<em>folder_path</em></p></td>
-<td><p>Specifies a <em>folder_path</em> to publish the results file to. The path specified by <em>folder_path</em> overrides the publication path, <strong>ResultsPublishPath</strong>, that's specified in the job file. This option is ignored if it's combined with <strong>/NoPublish</strong>.</p>
+<td><p>Specifies a location to publish the results file to. The path specified by <em>folder_path</em> overrides the publication path, <strong>ResultsPublishPath</strong>, that is specified in the job file. This option is ignored if it's combined with <strong>/NoPublish</strong>.</p>
 <p>Example:</p>
 <code>axe&nbsp;C:\Assessments\myJobs\Job1.jobx /PublishPath C:\Assessments\myResults</code></td>
 </tr>
@@ -153,10 +165,3 @@ The base syntax for using the Assessment Platform from the command line is:
  
 
  
-
-
-
-
-
-
-
