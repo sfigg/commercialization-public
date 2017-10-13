@@ -5,7 +5,7 @@ ms.assetid: af2b402f-9a5c-4c6a-8852-61039e5bec2a
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Windows Full Flash Update (FFU) images'
 ms.author: themar
-ms.date: 09/02/2017
+ms.date: 10/17/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -33,7 +33,7 @@ To capture and deploy FFUs using the instructions below, you'll also need:
 - A Windows PC that has been [generalized with Sysprep](sysprep--generalize--a-windows-installation.md). We'll refer to this as the reference PC. For a walkthrough on how to create an image that's ready for deployment, see the [Windows OEM deployment lab](oem-windows-deployment-and-imaging-walkthrough.md).
 - A PC to deploy the FFU image to. We'll refer to this as the destination PC. The hard drive on this PC will be overwritten, so make sure you're using a PC that doesn't have any information you want to keep.
 - The latest version of the ADK, from [Download the Windows ADK](https://developer.microsoft.com/en-us/windows/hardware/windows-assessment-deployment-kit)
-- Bootable WinPE media for Windows 10, Version 1709 or later. See [WinPE: Create USB bootable drive](winpe-create-usb-bootable-drive.md) for instructions on how to create WinPE Media.
+- Bootable WinPE media for Windows 10, version 1709 or later. See [WinPE: Create USB bootable drive](winpe-create-usb-bootable-drive.md) for instructions on how to create WinPE Media.
 - Storage
     - USB storage, formatted as NTFS with enough space to save the FFU. 16 GB is enough space to store an FFU of a basic Windows image. You can use the same USB drive for WinPE and storage if you follow the [instructions for creating a multipartiton USB drive](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/winpe-create-usb-bootable-drive#prepare-a-usb-drive). For best performance, you want to maximize I/O between where your FFU is stored and the destination PC. For best performance use a USB 3.0 drive to store the image, and an internal SSD for the destination device.
 
@@ -170,8 +170,6 @@ To mount an FFU
 ## <span id="related_topics"></span>Related topics
 
 [Download and install the Windows ADK](https://msdn.microsoft.com/windows/hardware/commercialize/adk-install)
-
-[Windows Imaging and Configuration Designer](https://msdn.microsoft.com/library/windows/hardware/dn916113)
 
 [FFU image format](../mobile/ffu-image-format.md)
 
