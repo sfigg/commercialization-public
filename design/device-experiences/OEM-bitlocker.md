@@ -1,23 +1,23 @@
 ---
-title: Device encryption in Windows 10 for OEMs
+title: BitLocker drive encryption in Windows 10 for OEMs
 description: OEMs can configure hardware to support Windows 10 automatic device encryption.
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ---
 
-# Device encryption in Windows 10
+# BitLocker drive encryption in Windows 10 for OEMs
 
 With the right hardware configurations, Windows 10 automatically encrypts a device, helping to keep customer data safe.  OEMs can create a more secure device by implementing and testing the right hardware.
 
 Windows 10 device encryption is enabled only after users sign in with a **Microsoft Account** or an **Azure Active Directory** account. Device encryption is not enabled with local accounts.
 
 ## Hardware requirements
-Device encryption is enabled when:
-- The device contains a **TPM** (Trusted Platform Module) with PCR7 support
+Automatic BitLocker device encryption is enabled when:
+- The device contains a **TPM 2.0** (Trusted Platform Module) with PCR7 support
 - **UEFI Secure Boot** is enabled
 - **Platform Secure Boot** is enabled
-- **Direct memory access (DMA)** protections is enabled.  
+- **Direct memory access (DMA)** protections is enabled
 
 The following list shows the hardware and tests that a device must pass before Windows 10 can enable device encryption. OEMs who want to create hardware that supports this capability must verify that their device passes these tests. If any test in this sequence fails, no further tests can will pass.
 
@@ -45,3 +45,6 @@ OEMs can choose to disable device encryption and instead implement their own enc
 - Update this registry key:
 **HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\BitLocker**
 Value: **PreventDeviceEncryption** equal to True (1).
+
+##Related topics
+- [Encrypted hard drive](https://docs.microsoft.com/en-us/windows/device-security/encrypted-hard-drive)
