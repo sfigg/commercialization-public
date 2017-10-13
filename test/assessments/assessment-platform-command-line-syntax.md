@@ -17,9 +17,11 @@ ms.technology: windows-oem
 # Assessment Platform Command-Line Syntax
 
 
-AXE.exe is a command-line tool that's installed with the Windows Assessment Toolkit. You can use this set of command-line options to automate jobs from a script and minimize resource usage. A job is one or more assessments run at one time on a computer. You can't use the command-line options to compose a job. You should create, modify, and save a job by using the Windows Assessment Console. By default, jobs are saved to %UserProfile%\\Documents\\Windows Assessment Console\\Jobs\\.
+AXE.exe is a command-line tool that you can use to automate jobs from a script and minimize resource usage. 
 
-By default, AXE.exe is installed to:
+A <em>job</em> is one or more assessments run at one time on a computer. You can't use the command-line options to compose a job. You should create, modify, and save a job by using the Windows Assessment Console. By default, jobs are saved to %UserProfile%\\Documents\\Windows Assessment Console\\Jobs\\.
+
+AXE.exe is installed with the Windows Assessment Toolkit and, by defaul.,t to the following location:
 
 <p style="margin: 1em 0 0 1.5em;">%programfiles(x86)%\\Windows Kits\\10\\Assessment and Deployment Kit\\Windows Assessment Toolkit\\*architecture*\\</p>
 
@@ -30,10 +32,10 @@ where *architecture* is either **x86** or **amd64**.
 
 The base syntax for using the Assessment Platform from the command line is:
 
-<p style="margin: 1em 0 0 1.5em;"><strong>AXE.exe</strong>&nbsp;<em>job_file</em>&nbsp;[&nbsp;<em>AXE_options</em>&nbsp;]</p>
+<p style="margin: 1em 0 0 1.5em;"><strong>axe</strong>&nbsp;<em>job_file</em>&nbsp;[&nbsp;<em>AXE_options</em>&nbsp;]</p>
 
 
-<p>The following table provides a description for how you can use each option. These options aren't case-sensitive.</p>
+<p>The following table describes each option. The names of these options are not case-sensitive.</p>
 <br/>
 <table>
 <thead>
@@ -78,9 +80,8 @@ The base syntax for using the Assessment Platform from the command line is:
 </tr>
 <tr class="even">
 <td><p><strong>/PublishToSource</strong></p></td>
-<td><p>Specifies that Axe.exe update the original results folder when running <strong>/Analyze</strong>.  
-Using <strong>/PublishToSource</strong> is optional, and it is ignored when running a job.</p>
-<p><strong>/PublishToSource</strong> may be combined with the publish path, but the publish path will only be used if Axe.exe cannot publish to the original results folder.</p>
+<td><p>Specifies that AXE.exe update the original results folder when running <strong>/Analyze</strong>. Using <strong>/PublishToSource</strong> is optional, and it is ignored when running a job.</p>
+<p><strong>/PublishToSource</strong> may be combined with the publish path, but the publish path will only be used if AXE.exe cannot publish to the original results folder.</p>
 <p>Example:</p>
 <code>axe&nbsp;C:\Assessments\myJobs\Job1.jobx /NoPublish</code></td>
 </tr>
