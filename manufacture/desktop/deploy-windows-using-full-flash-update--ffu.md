@@ -26,7 +26,7 @@ Starting with Windows 10, version 1709, DISM has the ability to capture, deploy,
 
 ## What you need to work with FFUs in Windows
 
-To capture, deploy, and mount FFU images with DISM, you'll need to work in a Windows 10, Version 1709 or later, or WinPE for Windows 10, Version 1709 or later environment. You can also [use the latest version of DISM in a previous version of Windows 10 or WinPE](copy-dism-to-another-computer.md).
+To capture, deploy, and mount FFU images with DISM, you'll need to work in a Windows 10, Version 1709 or later, or WinPE for Windows 10, version 1709 or later environment. You can also [use the latest version of DISM in a previous version of Windows 10 or WinPE](copy-dism-to-another-computer.md).
 
 To capture and deploy FFUs using the instructions below, you'll also need: 
 
