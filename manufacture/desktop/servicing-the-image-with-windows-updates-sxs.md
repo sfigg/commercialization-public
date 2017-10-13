@@ -23,7 +23,7 @@ For many customizations, like adding .inf-style drivers, Windows updates or upgr
 
 -  **For major updates, update the recovery image too**: These may include hotfixes, general distribution releases, service packs, or other pre-release updates. We'll show you how to update these later in [Lab 12: Update the recovery image](update-the-recovery-image.md).
 
--  **If a Servicing Stack Update (SSU) is available, you must install it** before applying the most recent General Distribution Release (GDR, currently KB4016871) or any future GDRs.
+-  **If a Servicing Stack Update (SSU) is available, you must install it** before applying the most recent General Distribution Release (GDR) or any future GDRs. See [Windows 10 update history](https://support.microsoft.com/en-us/help/4018124/windows-10-update-history) to see the most recent GDR.
 
 ![image: copying image files and deployment scripts](images/dep-win8-sxs-createmodelspecificfiles.jpg)
 
@@ -147,7 +147,7 @@ Use the steps from [Lab 2: Deploy Windows using a script](deploy-windows-with-a-
     The operation completed successfully.
     ```
 
-5.   Each package will usually be a new KB, and will increase the build revision number of Windows on the device. The revision number of windows a device can be found in the following registry key: 'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\UBR'.
+5.   Each package will usually be a new KB, and will increase the build revision number of Windows on the device. The revision number of windows a device can be found in the following registry key: `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\UBR`.
 
 > [!div class="nextstepaction"]
 > [Lab 6: Add universal Windows apps](add-universal-apps-sxs.md)

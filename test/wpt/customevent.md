@@ -14,31 +14,28 @@ ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-# CustomEvent
 
+# CustomEvent
 
 Represents a custom event.
 
+
 ## Element Hierarchy
 
+* \<[WindowsPerformanceRecorder](windowsperformancerecorder.md)\>
+  * \<[TraceMergeProperties](tracemergeproperties.md)\>
+    * \<[TraceMergeProperty](tracemergeproperty.md)\>
+      * \<[CustomEvents](customevents.md)\>
+        * \<**CustomEvent**\>
 
-&lt;[WindowsPerformanceRecorder](windowsperformancerecorder.md)&gt;
-
-     &lt;[TraceMergeProperties](tracemergeproperties.md)&gt;
-
-          &lt;[TraceMergeProperty](tracemergeproperty.md)&gt;
-
-               &lt;[CustomEvents](customevents.md)&gt;
-
-                    &lt;**CustomEvent**&gt;
 
 ## Syntax
-
 
 ```
 <CustomEvent Value = "None" | "ImageId" | "BuildInfo" | ...>
 </CustomEvent>
 ```
+
 
 ## Attributes and Elements
 
@@ -46,13 +43,6 @@ Represents a custom event.
 ### Attributes
 
 <table>
-<colgroup>
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-</colgroup>
 <thead>
 <tr class="header">
 <th>Attribute</th>
@@ -83,37 +73,20 @@ Represents a custom event.
 </tbody>
 </table>
 
- 
 
 ### Child Elements
 
 None.
 
+
 ### Parent Elements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>[CustomEvents](customevents.md)</p></td>
-<td><p>Represents a collection of custom events.</p></td>
-</tr>
-</tbody>
-</table>
+| Element                         | Description                               |
+|:--------------------------------|:------------------------------------------|
+| [CustomEvents](customevents.md) | Represents a collection of custom events. |
 
- 
 
 ## Example
-
 
 The following code example shows how this element is used in a trace merge property definition.
 
@@ -142,18 +115,8 @@ The following code example shows how this element is used in a trace merge prope
 </TraceMergeProperty>
 ```
 
+
 ## Related topics
 
-
 [Elements](elements.md)
-
- 
-
- 
-
-
-
-
-
-
 

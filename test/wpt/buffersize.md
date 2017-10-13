@@ -22,37 +22,23 @@ Describes the size of each buffer, in KB.
 ## Element Hierarchy
 
 
-&lt;[WindowsPerformanceRecorder](windowsperformancerecorder.md)&gt;
+* \<[WindowsPerformanceRecorder](windowsperformancerecorder.md)\>
+  * \<[Profiles](profiles.md)\>
+    * \<[SystemCollector](systemcollector.md)\>
+      * \<**BufferSize**\>
+    * \<[EventCollector](eventcollector.md)\>
+      * \<**BufferSize**\>
+    * \<[HeapEventCollector](heapeventcollector.md)\>
+      * \<**BufferSize**\>
+    * \<[Profile](profile-wpr.md)\>
+      * \<[Collectors](collectors.md)\>
+        * \<[SystemCollectorId](systemcollectorid.md)\>
+          * \<**BufferSize**\>
+        * \<[EventCollectorId](eventcollectorid.md)\>
+          * \<**BufferSize**\>
+        * \<[HeapEventCollectorId](heapeventcollectorid.md)\>
+          * \<**BufferSize**\>
 
-     &lt;[Profiles](profiles.md)&gt;
-
-          &lt;[SystemCollector](systemcollector.md)&gt;
-
-               &lt;**BufferSize**&gt;
-
-          &lt;[EventCollector](eventcollector.md)&gt;
-
-               &lt;**BufferSize**&gt;
-
-          &lt;[HeapEventCollector](heapeventcollector.md)
-
-               &lt;**BufferSize**&gt;
-
-          &lt;[Profile](profile-wpr.md)&gt;
-
-               &lt;[Collectors](collectors.md)&gt;
-
-                    &lt;[SystemCollectorId](systemcollectorid.md)&gt;
-
-                         &lt;**BufferSize**&gt;
-
-                    &lt;[EventCollectorId](eventcollectorid.md)&gt;
-
-                         &lt;**BufferSize**&gt;
-
-                    &lt;[HeapEventCollectorId](heapeventcollectorid.md)&gt;
-
-                         &lt;**BufferSize**&gt;
 
 ## Syntax
 
@@ -69,13 +55,6 @@ Describes the size of each buffer, in KB.
 ### Attributes
 
 <table>
-<colgroup>
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-</colgroup>
 <thead>
 <tr class="header">
 <th>Attribute</th>
@@ -108,7 +87,6 @@ Describes the size of each buffer, in KB.
 </tbody>
 </table>
 
- 
 
 ### Child Elements
 
@@ -116,46 +94,15 @@ None.
 
 ### Parent Elements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>[EventCollector](eventcollector.md)</p></td>
-<td><p>Represents an event collector.</p></td>
-</tr>
-<tr class="even">
-<td><p>[EventCollectorId](eventcollectorid.md)</p></td>
-<td><p>Represents an event collector identifier.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[HeapEventCollector](heapeventcollector.md)</p></td>
-<td><p>Represents a heap event collector.</p></td>
-</tr>
-<tr class="even">
-<td><p>[HeapEventCollectorId](heapeventcollectorid.md)</p></td>
-<td><p>Represents a heap event collector identifier.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[SystemCollector](systemcollector.md)</p></td>
-<td><p>Represents a system collector.</p></td>
-</tr>
-<tr class="even">
-<td><p>[SystemCollectorId](systemcollectorid.md)</p></td>
-<td><p>Represents a system collector identifier.</p></td>
-</tr>
-</tbody>
-</table>
+| Element                                         | Description                                   |
+|:------------------------------------------------|:----------------------------------------------|
+| [EventCollector](eventcollector.md)             | Represents an event collector.                |
+| [EventCollectorId](eventcollectorid.md)         | Represents an event collector identifier.     |
+| [HeapEventCollector](heapeventcollector.md)     | Represents a heap event collector.            |
+| [HeapEventCollectorId](heapeventcollectorid.md) | Represents a heap event collector identifier. |
+| [SystemCollector](systemcollector.md)           | Represents a system collector.                |
+| [SystemCollectorId](systemcollectorid.md)       | Represents a system collector identifier.     |
 
- 
 
 ## Remarks
 
@@ -202,14 +149,4 @@ The following code examples show how this element is used in system collector an
 [EventCollector](eventcollector.md)
 
 [HeapEventCollector](heapeventcollector.md)
-
- 
-
- 
-
-
-
-
-
-
 

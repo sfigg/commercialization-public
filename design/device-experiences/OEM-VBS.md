@@ -24,7 +24,8 @@ VBS requires the following components be present and properly configured.
 
 | Hardware requirement | Details |
 |----------------------|---------|
-| 64-bit CPU | Virtualization-based security (VBS) features require the Windows hypervisor, which is only supported on 64-bit IA processors, or ARM v8.2 CPUs.
+| 64-bit CPU | Virtualization-based security (VBS) requires the Windows hypervisor, which is only supported on 64-bit IA processors with virtualization extensions, including Intel VT-X and AMD-v. |
+| Second Level Address Translation (SLAT) | VBS also requires that the processor’s virtualization support includes Second Level Address Translation (SLAT), either Intel VT-X2 with Extended Page Tables (EPT), or AMD-v with Rapid Virtualization Indexing (RVI). |
 | IOMMUs or SMMUs (Intel VT-D, AMD-Vi, ARM64 SMMUs) | All I/O devices capable of DMA must be behind an IOMMU or SMMU.  An IOMMU can be used to enhance system resiliency against memory attacks. |
 | Trusted Platform Module (TPM) 2.0 | TPMs, either discrete or firmware, will suffice. For more information, see [Trusted Platform Module (TPM) 2.0](OEM-TPM.md). |
 | Firmware support for SMM protection | System firmware must adhere to the recommendations for hardening SMM code described in the [Windows SMM Security Mitigations Table (WMST) specification](https://docs.microsoft.com/en-us/windows-hardware/drivers/bringup/acpi-system-description-tables). The WSMT specification contains details of an ACPI table that was created for use with Windows operating systems that support Windows virtualization-based security (VBS) features. Firmware must implement the protections described in the WSMT specification, and set the corresponding protection flags as described in the specification to report compliance with these requirements to the operating system. |
