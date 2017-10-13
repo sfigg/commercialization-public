@@ -48,11 +48,10 @@ Use the steps from [Lab 3: Add device drivers (.inf-style)](add-device-drivers.m
 	
 **Step 2: Add/reinstall inbox apps (required whenever adding languages)**
 
-Note, in previous versions, it was required to first remove inbox apps. This is no longer required, and if you do, the commands may fail.
+> [!Note]
+> In previous versions of Windows, it was required to first remove inbox apps. This is no longer required, and if you do, the commands may fail.
 
-NOTE: For Windows 10 version 1607, app bundles now only contain the dependency packages that pertain to the app. You no longer need to check the prov.xml file for what dependencies to install. Install all dependency packages found in the folder.
-
-1.  Go to <https://microsoftoem.com> and get the supplemental OPK. This package includes the Windows 10, version 1703 inbox apps. 
+1.  Go to <https://microsoftoem.com> and get the supplemental OPK. This package includes the Windows 10 inbox apps for the most current Windows release. 
 
 2.  Extract the package to a folder, for example, E:\apps\amd64.
 
@@ -70,7 +69,7 @@ NOTE: For Windows 10 version 1607, app bundles now only contain the dependency p
 
 Get the latest version of the app. In our example, we install Microsoft Universal Office Apps, though you can install any UWP app using this procedure. 
 
-1.  Go to <https://microsoftoem.com> and get the latest version of the Office Mobile supplemental OPK. This guide uses X20-98485 Office Mobile Multilang v1.3 OPK. 
+1.  Go to <https://microsoftoem.com> and get the latest version of the Office Mobile supplemental OPK. This guide uses  Office Mobile Multilang v1.3 OPK. 
 
     **Note**: Install either Office Single Image (either with or with out perpetual or subscription license) or Office Mobile (not both). Office Mobile must be used on devices with screen size of 10.1” and below, and Office Single Image must be used on devices with screen sizes above 10.1”. For devices that have a single fixed storage drive with less than 32 GB, OEMs may preinstall Office Mobile, regardless of the screen size. To learn more, see [Office Mobile Communication](https://myoem.microsoft.com/oem/myoem/en/product/office/Pages/COMM-OfficeUnvrslAppsOPKRlsTmng.aspx).
 

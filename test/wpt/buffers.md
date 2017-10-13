@@ -21,29 +21,23 @@ Describes either the number of buffers to be allocated when starting a session o
 
 ## Element Hierarchy
 
-<!-- The inelegant use of non-breaking spaces in the following element hierarchy solves the problem of Markdown automatically formatting lines that start with 4+ spaces as code blocks. [v-gmoor, 2017-08-14]-->
+* &lt;[WindowsPerformanceRecorder](windowsperformancerecorder.md)\>
+  * \<[Profiles](profiles.md)\>
+    * \<[SystemCollector](systemcollector.md)\>
+      * \<**Buffers**\>
+    * \<[EventCollector](eventcollector.md)\>
+      * \<**Buffers**\>
+    * \<[HeapEventCollector](heapeventcollector.md)\>
+        * \<**Buffers**\>
+    * \<[Profile](profile-wpr.md)\>
+      * \<[Collectors](collectors.md)\>
+        * \<[SystemCollectorId](systemcollectorid.md)\>
+          * \<**Buffers**\>
+        * \<[EventCollectorId](eventcollectorid.md)\>
+          * \<**Buffers**\>
+        * \<[HeapEventCollectorId](heapeventcollectorid.md)\>
+          * \<**Buffers**\>
 
-&lt;[WindowsPerformanceRecorder](windowsperformancerecorder.md)&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;[Profiles](profiles.md)&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;[SystemCollector](systemcollector.md)&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;**Buffers**&gt;<br/>
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;[EventCollector](eventcollector.md)&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;**Buffers**&gt;<br/>
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;[HeapEventCollector](heapeventcollector.md)&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;**Buffers**&gt;<br/>
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;[Profile](profile-wpr.md)&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;[Collectors](collectors.md)&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;[SystemCollectorId](systemcollectorid.md)&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;**Buffers**&gt;<br/>
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;[EventCollectorId](eventcollectorid.md)&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;**Buffers**&gt;<br/>
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;[HeapEventCollectorId](heapeventcollectorid.md)&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;**Buffers**&gt;
 
 ## Syntax
 
@@ -62,13 +56,6 @@ Describes either the number of buffers to be allocated when starting a session o
 ### Attributes
 
 <table>
-<colgroup>
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-</colgroup>
 <thead>
 <tr class="header">
 <th>Attribute</th>
@@ -123,46 +110,15 @@ None.
 
 ### Parent Elements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>[EventCollector](eventcollector.md)</p></td>
-<td><p>Represents an event collector.</p></td>
-</tr>
-<tr class="even">
-<td><p>[EventCollectorId](eventcollectorid.md)</p></td>
-<td><p>Represents an event collector identifier.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[HeapEventCollector](heapeventcollector.md)</p></td>
-<td><p>Represents a heap event collector.</p></td>
-</tr>
-<tr class="even">
-<td><p>[HeapEventCollectorId](heapeventcollectorid.md)</p></td>
-<td><p>Represents a heap event collector identifier.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[SystemCollector](systemcollector.md)</p></td>
-<td><p>Represents a system collector.</p></td>
-</tr>
-<tr class="even">
-<td><p>[SystemCollectorId](systemcollectorid.md)</p></td>
-<td><p>Represents a system collector identifier.</p></td>
-</tr>
-</tbody>
-</table>
+| Element                                         | Description                                   |
+|:------------------------------------------------|:----------------------------------------------|
+| [EventCollector](eventcollector.md)             | Represents an event collector.                |
+| [EventCollectorId](eventcollectorid.md)         | Represents an event collector identifier.     |
+| [HeapEventCollector](heapeventcollector.md)     | Represents a heap event collector.            |
+| [HeapEventCollectorId](heapeventcollectorid.md) | Represents a heap event collector identifier. |
+| [SystemCollector](systemcollector.md)           | Represents a system collector.                |
+| [SystemCollectorId](systemcollectorid.md)       | Represents a system collector identifier.     |
 
- 
 
 ## Remarks
 
@@ -211,14 +167,4 @@ The first example sets the buffer size to 512 KB and limits the total amount of 
 [EventCollector](eventcollector.md)
 
 [HeapEventCollector](heapeventcollector.md)
-
- 
-
- 
-
-
-
-
-
-
 
