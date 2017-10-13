@@ -35,7 +35,7 @@ For OEM-style images, you’ll wrap your customizations into package (.cab) file
 -   [Lab 1e: Add a driver to an image](add-a-driver-to-an-image.md)
 -   [Lab 1f: Build a retail image](build-retail-image.md)
 -   [Lab 2: Creating your own board support package](create-a-new-bsp.md)
--   [Lab 3: Update your apps](../../service/iot/updating-iot-core-apps.md)
+-   [Lab 3: Update your apps](https://docs.microsoft.com/windows-hardware/service/iot/updating-iot-core-apps)
 
 
 ## <span id="Concepts"></span><span id="concepts"></span><span id="CONCEPTS"></span>Concepts
