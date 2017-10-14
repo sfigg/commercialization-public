@@ -275,6 +275,69 @@ If you've created packages using the pkg.xml packaging model, and you want to us
 
 After you convert the packages, you may need to modify the wm.xml file to make sure that it follows the [schema](package-schema.md).
 
-```text
-c:\oemsample>pkggen.exe "filename.pkg.xml" /convert:pkg2wm
+IoT Core Add-ons v4.x support the new [Windows Universal OEM Packages standard (wm.xml)](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/create-packages). This new packaging schema is built to be compatible with more types of devices in the future.
 
+### Convert your package files
+
+To convert your existing packages created in the legacy phone packaging format (pkg.xml) to the new wm.xml format:
+
+```
+pkggen.exe "filename.pkg.xml" /convert:pkg2wm
+```
+       
+Or, from the IoTCoreShell prompt, convert using either convertpkg or buildpkg. The output wm.xml files are saved to the same folder.
+       
+```
+convertpkg.cmd MyPackage.pkg.xml
+buildpkg.cmd MyPackage.pkg.xml
+```
+
+ Review and test the wm.xml packages with buildpkg.
+
+```
+buildpkg.cmd MyPackage.wm.xml
+```
+
+After you’ve converted the files to wm.xml format, it’s safe to delete the pkg.xml files.
+
+### Regenerate your app packages
+
+Use the newAppxPkg with the same component name. This regenerates the customizations.xml file. The version number of the appx is retained as the version number for ppkg.
+
+```
+newAppxPkg "C:\DefaultApp\IoTCoreDefaultApp_1.2.0.0_ARM_Debug_Test\IoTCoreDefaultApp_1.2.0.0_ARM_Debug_Test.appx" fga Appx.MyUWPApp
+```
+
+Learn more: [adding apps](deploy-your-app-with-a-standard-board).
+
+### Adding files: watch out for zero-sized files, relative paths
+
+Zero-sized files are not supported in wm.xml. To work around this, add an empty space in the file, making it non-zero size file.
+
+Paths: When you’re adding files that are in the current directory, you’ll need to explicitly add the  .\ prefix to the file name.
+
+```
+<BinaryPartition ImageSource=".\uefi.mbn" />
+```
+
+Learn more: [Add files](deploy-your-app-with-a-standard-board)
+
+### Update your provisioning package customization.xml file
+
+In ADK version 1709, you’ll need to update the [customizations.xml](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Templates/customizations.xml) file:
+
+In your product\prov folder, manually move Common/ApplicationManagement to Common/Policies/ApplicationManagement
+
+```xml
+    <Customizations>
+      <Common>
+        <Policies>
+          <ApplicationManagement>
+            <AllowAppStoreAutoUpdate>Allowed</AllowAppStoreAutoUpdate>
+            <AllowAllTrustedApps>Yes</AllowAllTrustedApps>
+          </ApplicationManagement>
+```
+
+Provisioning packages (PPKG) now support four-part versioning similar to the package versioning. So with this change, version 1.19 > 1.2. Previous versions used character-based sorting, so version 1.19 was considered earlier than 1.2.
+
+Learn more: [Add provisioning files](add-a-provisioning-package-to-an-image)

@@ -14,30 +14,24 @@ ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-# HeapEventProviderId
 
+# HeapEventProviderId
 
 Represents an identifier for a provider of heap events.
 
+
 ## Element Hierarchy
 
+* \<[WindowsPerformanceRecorder](windowsperformancerecorder.md)\>
+  * \<[Profiles](profiles.md)\>
+    * \<[Profile](profile-wpr.md)\>
+      * \<[Collectors](collectors.md)\>
+        * \<[HeapEventCollectorId](heapeventcollectorid.md)\>
+          * \<[HeapEventProviders](heapeventproviders.md)\>
+            * \<**HeapEventProviderId**\>
 
-&lt;[WindowsPerformanceRecorder](windowsperformancerecorder.md)&gt;
-
-     &lt;[Profiles](profiles.md)&gt;
-
-          &lt;[Profile](profile-wpr.md)&gt;
-
-               &lt;[Collectors](collectors.md)&gt;
-
-                    &lt;[HeapEventCollectorId](heapeventcollectorid.md)&gt;
-
-                         &lt;[HeapEventProviders](heapeventproviders.md)&gt;
-
-                              &lt;**HeapEventProviderId**&gt;
 
 ## Syntax
-
 
 ```
 <HeapEventProviderId Value = IdType>
@@ -48,102 +42,32 @@ Represents an identifier for a provider of heap events.
 </HeapEventProviderId>
 ```
 
+
 ## Attributes and Elements
 
 
 ### Attributes
 
-<table>
-<colgroup>
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Attribute</th>
-<th>Description</th>
-<th>Data type</th>
-<th>Required</th>
-<th>Default</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><strong>Value</strong></p></td>
-<td><p>Uniquely identifies the heap event provider.</p></td>
-<td><p>String that must have at least one character and cannot contain colons (:) or spaces.</p></td>
-<td><p>Yes</p></td>
-<td><p></p></td>
-</tr>
-</tbody>
-</table>
+| Attribute | Description                                  | Data type                                                                             | Required | Default |
+| :-------- | :------------------------------------------- | :------------------------------------------------------------------------------------ | :------- | :------ |
+| **Value** | Uniquely identifies the heap event provider. | String that must have at least one character and cannot contain colons (:) or spaces. | Yes      |         |
 
- 
 
 ### Child Elements
 
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-<th>Description</th>
-<th>Requirement</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>[HeapProcessIds](heapprocessids.md)</p></td>
-<td><p>Represents a collection of heap process identifiers.</p></td>
-<td><p>Required, exactly 1.</p></td>
-</tr>
-</tbody>
-</table>
+| Element                             | Description                                          | Requirement          |
+| :---------------------------------- | :--------------------------------------------------- | :------------------- |
+| [HeapProcessIds](heapprocessids.md) | Represents a collection of heap process identifiers. | Required, exactly 1. |
 
- 
 
 ### Parent Elements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>[HeapEventProviders](heapeventproviders.md)</p></td>
-<td><p>Represents a collection of heap event provider identifiers and heap event providers.</p></td>
-</tr>
-</tbody>
-</table>
+| Element                                     | Description                                                                          |
+| :------------------------------------------ | :----------------------------------------------------------------------------------- |
+| [HeapEventProviders](heapeventproviders.md) | Represents a collection of heap event provider identifiers and heap event providers. |
 
- 
 
 ## Related topics
 
-
 [Elements](elements.md)
-
- 
-
- 
-
-
-
-
-
-
 

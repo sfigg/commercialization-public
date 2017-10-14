@@ -150,31 +150,31 @@ The version numbers of the Windows ADK, the Windows image you're deploying, and 
 
 If you're building a 64-bit image, make sure that you're following the steps that are marked for 64-bit. If you're working with a 32-bit image, follow the steps for 32-bit.
 
-#### Windows 10, version 1703
+#### Most recent version of Windows 10
 
-|             |                                                      |
-| ----------- | ---------------------------------------------------- |
-| X21-34314   | Windows Home 10, version 1703 32/64 English OPK      |
-| X21-34317   | Windows Home SL 10, version 1703 32/64 English OPK   |
-| X21-34321   | Windows Pro 10, version 1703 32/64 English OPK       |
+|                                                      |
+| ---------------------------------------------------- |
+| Windows Home 10, 32/64 bit English OPK      |
+| Windows Home SL 10, 32/64 bit English OPK   |
+| Windows Pro 10, 32/64 bit English OPK       |
 
 
 #### Customizations: Windows updates, languages, features, apps, and Microsoft Office
 
-|             |                                                     |
-| ----------- | --------------------------------------------------- |
-| X21-34323   | Win 10 1703 32/64 MultiLang OPK LangPackAll/LIP     |
-| X21-34324   | Win 10 1703 32/64 MultiLang OPK Feat on Demand      |
-| X21-34329   | Win 10 1607 32/64 MultiLang OPK App Update          |
-| X20-98485   | Office Mobile MultiLang v1.3 OPK                    |
-| X21-32422   | Office 2016 v16.3 Deployment Tool for OEM OPK       |
-| X21-05414   | Office 2016 v16.3 English OPK                       |
-| X21-32392   | Office v16.3 English OPK                            |
-| X21-32396   | Office v16.3 German OPK |
+|                                                                  |
+| ----------- |
+|              Win 10 32/64 MultiLang OPK LangPackAll/LIP     |
+|              Win 10 32/64 MultiLang OPK Feat on Demand      |
+|              Win 10 32/64 MultiLang OPK App Update          |
+| X20-98485 Office Mobile MultiLang v1.3 OPK                    |
+| X21-32422  Office 2016 v16.3 Deployment Tool for OEM OPK       |
+| X21-05414  Office 2016 v16.3 English OPK                       |
+| X21-32392  Office v16.3 English OPK                            |
+| X21-32396  Office v16.3 German OPK |
 
-#### Windows Assessment and Deployment Kit (ADK) for Windows 10, version 1703
+#### Windows Assessment and Deployment Kit (ADK) for Windows 10
 
-Download the [Windows ADK for Windows 10, version 1703](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit#winADK).
+Download the version of [Windows ADK for Windows 10](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit#winADK) that matches the version of Windows 10 you are working with.
 
 #### Drivers
 
@@ -208,7 +208,7 @@ You have your tools ready to go. Now we'll setup your lab.
 
 The Windows ADK is a collection of tools and documentation that OEMs, ODMs, and IT Professionals use to customize, assess, and deploy Windows operating systems to new computers. Deployment tools enable you to customize, manage, and deploy Windows images. Deployment tools can be used to automate Windows deployments, elminating the need for user interaction during Windows setup.
 
-Important: OEM must use the matching version of ADK for the images being customized. If building an image using RTM image use Windows 10 RTM ADK. If using Windows 10 1703 image use Windows 10 1703 ADK.
+Important: OEM must use the matching version of ADK for the images being customized. For example, if you're working with Windows 10, version 1703, use the ADK for Windows 10, version 1703.
 
 1.  If you have a previous version of the Windows Assessment and Deployment Kit (ADK), uninstall it.
 
@@ -434,16 +434,14 @@ Now that you have your WinPE image customized for your deployment, we'll get int
 
 In this section we'll cover how to mount Windows images on your technician PC. Mounting a Windows image is the same process that we used to mount the WinPE image earlier. When we mount our Windows image (install.wim), we'll be able to access a second image, WinRe.wim, which is the image that supports recovery scenarios. Updating install.wim and WinRE.wim at the same time helps you keep the two images in sync, which ensures that recovery goes as expected.
 
-**Note**:You may need to disable Secure Boot to start working with image.
-
-Before we continue, make sure that you've created your _USB-B_ drive. We showed you how to set it up in the Get the tools you need section.
+Before we continue, make sure that you've created your _USB-B_ drive. We showed you how to set it up in the [Get the tools you need](#get-the-tools-needed-to-customize-windows) section.
 
 Start working with your images:
 
 First copy the install.wim from your Windows installation media to _USB-B_. Install.wim includes both Home and Professional images. We'll export the Home image from install.wim, and then work with that image during this lab.
 
 1.	Insert _USB-B_ into your technician computer.
-2.	Mount the Windows 10 1703 Home .img from the X21-34314 Win Home 10 1703 32-BIT/X64 English OPK.
+2.	Mount the Windows 10 Home .img from the Win Home 10 32-BIT/X64 English OPK.
 3.	From the mounted image, copy D:\sources\install.wim to _USB-B_:\images. (Where D: is the drive letter of the mounted image.)
 4.	From the Start menu, open Windows Kits, open the Deployment and Imaging Tools Environment.   
 5.	Right click on the Deployment and Imaging Tools Environment and run as Administrator.
@@ -471,13 +469,13 @@ Now that you have your image exported, you can mount it.
     Dism /Mount-Wim /WimFile:C:\mount\windows\Windows\System32\Recovery\winre.wim /index:1 /MountDir:C:\mount\winre
     ```
 
-    Troubleshoot: If winre.wim cannot be seen under the specified directory, use the following command to set the file visible:
+    **Troubleshoot**: If winre.wim cannot be seen under the specified directory, use the following command to set the file visible:
 
     ```
     attrib -h -a -s C:\mount\windows\Windows\System32\Recovery\winre.wim
     ```
 
-    Troubleshoot: If mounting operation fails, make sure the Windows 10 version of DISM is the one installed with the Windows ADK is being used and not an older version from the Technician Computer. Do not mount images to protected folders, such as the User\Documents folder.  If DISM processes are interrupted, consider temporarily disconnecting from the network and disabling virus protection.
+    **Troubleshoot**: If the mounting operation fails, make sure you're using DISM from the Deployment and Imaging Tools Environment. Do not mount images to protected folders, such as the User\Documents folder.  If DISM processes are interrupted, consider temporarily disconnecting from the network and disabling virus protection.
 
 ## Add drivers and languages to a mounted image
 
@@ -498,7 +496,8 @@ Add drivers to an image to ensure that all hardware in a PC is setup properly wh
 
 2.	If you want to add an entire folder of drivers, you can use the /Recurse option. This adds all .inf drivers in the folder and all its subfolders.
 
-> **Warning**: While /Recurse can be handy, it's easy to bloat your image with it. Some driver packages include multiple .inf driver packages, which often share payload files from the same folder. During installation, each .inf driver package is expanded into a separate folder, each with a copy of the payload files. We've seen cases where a popular driver in a 900MB folder added 10GB to images when added with the /Recurse option.
+    > [!Warning]
+    > While /Recurse can be handy, it's easy to bloat your image with it. Some driver packages include multiple .inf driver packages, which often share payload files from the same folder. During installation, each .inf driver package is expanded into a separate folder, each with a copy of the payload files. We've seen cases where a popular driver in a 900MB folder added 10GB to images when added with the /Recurse option.
 
     ```
     Dism /Add-Driver /Image:"C:\mount\windows" /Driver:c:\drivers /Recurse 
@@ -648,22 +647,22 @@ WinRE uses the same language packs as WinPE. You can find these language packs o
 This section covers how to change the default language and timezone of your mounted Windows image.
 
 1.	Use Dism to set the default language of the image. We'll set the default language to German, since we added it into our image in the previous steps.:
-```
-Dism /Image:C:\mount\windows /Set-AllIntl:de-DE
-Dism /Image:C:\mount\winre /Set-AllIntl:de-DE
-```
+    ```
+    Dism /Image:C:\mount\windows /Set-AllIntl:de-DE
+    Dism /Image:C:\mount\winre /Set-AllIntl:de-DE
+    ```
 
 2.	Verify your changes
 
-```
-Dism /Image:C:\mount\windows /Get-Intl
-```
+    ```
+    Dism /Image:C:\mount\windows /Get-Intl
+    ```
 
 3.	Set the timezone for the region of the default language applied
 
-```
-Dism /Image:C:\mount\windows /set-timezone:"W. Europe Standard Time"
-```
+    ```
+    Dism /Image:C:\mount\windows /set-timezone:"W. Europe Standard Time"
+    ```
 
 #### Remove the base language from the image
 
@@ -671,7 +670,7 @@ This section covers removing a language from the Windows image.
 
 Now that our image has been set to use German as the default language, we can remove the English language features from it and make it a non-English image. To remove en-US completely from the image, you'll have to remove several components. 
 
-**Note**: Don't remove the English base language if you are shipping a PC in English.
+**Note**: Don't remove the English base language if you're shipping a PC in English.
 
 For removing the language components from a 64-bit image:
 
@@ -720,7 +719,7 @@ Notes:
 - **Add languages before major updates**. Major updates include hotfixes, general distribution releases, or service packs. If you add a language later, you'll need to re-add the updates.
 - **Add major updates before apps**. These apps include universal Windows apps and desktop applications. If you add an update later, you'll need to re-add the apps.
 - **For major updates, update the recovery image too**: These may include hotfixes, general distribution releases, service packs, or other pre-release updates. We'll show you how to update these later in Lab 12: Update the recovery image.
-- If **Servicing Stack Update (SSU) is required**, you'll have to apply it before applying the most recent General Distribution Release (GDR, currently KB3200970) or any future GDRs.
+- If a **Servicing Stack Update (SSU) is required**, you'll have to apply it before applying the most recent General Distribution Release or any future GDRs.
 
 
 ### Add a Windows update package
@@ -733,14 +732,17 @@ SSU: [https://msdn.microsoft.com/en-us/windows/hardware/commercialize/manufactur
 
 KB Files: [http://catalog.update.microsoft.com](http://catalog.update.microsoft.com)
 
-> **Important**: If you install an update (hotfix, general distribution release [GDR], or service pack [SP]) that contains language-dependent resources prior to installing a language pack, the language-specific changes in the update won't be applied when you add the language pack. You need to reinstall the update to apply language-specific changes. To avoid reinstalling updates, install language packs before installing updates.
 
-1. Get a Windows update package. For example, grab the [latest cumulative update listed in Windows 10 update history from the Microsoft Update catalog](http://www.catalog.update.microsoft.com/Search.aspx?q=Cumulative+update). Extract the .msu file update to a folder, for example, E:\updates\windows10.0-kb4016240-x64_0e60aebeb151d4b3598e4cfa9b4ccb1fc80e6e4d.msu. Make sure that your update matches the architecture of the image you are working with.
+> [!Important] 
+> If you install an update (hotfix, general distribution release [GDR], or service pack [SP]) that contains language-dependent resources prior to installing a language pack, the language-specific changes in the update won't be applied when you add the language pack. You need to reinstall the update to apply language-specific changes. To avoid reinstalling updates, install language packs before installing updates.
+ 
 
+1.  Get a Windows update package. For example, grab the [latest cumulative update listed in Windows 10 update history from the Microsoft Update catalog](http://www.catalog.update.microsoft.com/Search.aspx?q=Cumulative+update). Extract the .msu file update to a folder, for example, E:\updates\windows10.0-kb4016240-x64_0e60aebeb151d4b3598e4cfa9b4ccb1fc80e6e4d.msu. Make sure that your update matches the architecture of the image you are working with.
 
     To learn more, see https://myoem.microsoft.com/oem/myoem/en/product/winemb/pages/comm-ms-updt-ctlg-trnstn.aspx.
 
-2. Add the msu to your mounted image using `dism /add-package`.
+
+2.  Add the msu to your mounted image using `dism /add-package`.
 
     For 64-bit images:
 
@@ -753,9 +755,11 @@ KB Files: [http://catalog.update.microsoft.com](http://catalog.update.microsoft.
     Dism /Add-Package /Image:C:\mount\windows /PackagePath:"E:\updates\windows10.0-kb4016240-x86_7c7fcf0d4018e4244561cde531c3fb583d9f3051.msu"
     ```
 
-**Note:** Each package is typically a new KB that increases the build revision number of Windows. You can find the revision number of windows in the following registry key: 
+    **Note:** Each package is typically a new KB that increases the build revision number of Windows. You can find the revision number of windows in the following registry key: 
 
-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\UBR
+    ```
+    HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\UBR
+    ```
 
 ### Add Update packages to WinRE
 
@@ -935,41 +939,41 @@ An "answer file" is an XML-based file that contains setting definitions and valu
 
 You can create a new answer file (unattend.xml) that has the settings you need to deploy a PC. You can use Windows SIM that was installed as part of the ADK to create and modify unattend files. We recommended using the following answer files because they cover most the required settings in the Windows OEM Policy Document (OPD) Document. Copy the unattend file to the Panther folder so it can be processed during Windows setup: 
 
-- For OA 3.0 systems: 
+-   For OA 3.0 systems: 
 
-```
-md c:\mount\windows\windows\panther
-copy /y E:\AnswerFiles\OA3.0\Unattend.xml C:\Mount\Windows\Windows\Panther 
-```
+    ```
+    md c:\mount\windows\windows\panther
+    copy /y E:\AnswerFiles\OA3.0\Unattend.xml C:\Mount\Windows\Windows\Panther 
+    ```
 
-(where E:\ is USB-B)
+    (where E:\ is USB-B)
 
-- For non-OA 3.0 systems: 
+-   For non-OA 3.0 systems: 
 
-```
-nd c:\mount\windows\Windows\panther
-copy /y E:\AnswerFiles\Non_OA3.0\Unattend.xml C:\Mount\Windows\Windows\Panther
-```
+    ```
+    nd c:\mount\windows\Windows\panther
+    copy /y E:\AnswerFiles\Non_OA3.0\Unattend.xml C:\Mount\Windows\Windows\Panther
+    ```
 
-(where E:\ is USB-B)
+    (where E:\ is USB-B)
 
 
 ### Add a custom logo and wallpaper
 
 In this section we'll show you how to use an answer file (unattend.xml) to add a custom logo and wallpaper to your Windows image.
 
-To learn about Windows customizations, see the Windows 10, version 1703 OEM Policy Document (OPD).  
+To learn about Windows customizations, see the most current Windows 10 OEM Policy Document (OPD).  
 
 We've provided some image files for the wallpaper and logo that are referenced in the sample unattend file that you copied earlier. You can find the sample image files at _USB-B_\configset\\$oem$\system32\OEM.
 
 1.	View the unattend file that you copied to the Panther folder in a text editor. Check the path to the logo and wallpaper files.
 2.	Copy the files into the mounted image
 
-```
-md c:\mount\windows\windows\system32\OEM
-copy E:\configset\$oem$\$$\system32\OEM c:\mount\windows\windows\system32\OEM
-```
-Where E:\ is _USB-B_.
+    ```
+    md c:\mount\windows\windows\system32\OEM
+    copy E:\configset\$oem$\$$\system32\OEM c:\mount\windows\windows\system32\OEM
+    ```
+    Where E:\ is _USB-B_.
 
 ## Optimize WinRE
 
@@ -1018,7 +1022,7 @@ Where E:\ is _USB-B_.
     ```
 
     Follow the below partition layout size chart to determine the size of your recovery partition in createpartitions-<firmware>.txt files. The amount of free space left is after you copy winre.wim to the hidden partition.
-Please reference Disk Partition rules for more information.
+    See the below disk partition rules for more information.
 
     | Partition Size   | Free space          |
     | ---------------- | ------------------- |
@@ -1032,7 +1036,7 @@ Please reference Disk Partition rules for more information.
     Dism /Unmount-Image /MountDir:"C:\mount\windows" /Commit
     ```
 
-Where C is the drive letter of the drive that contains the image. This process may take several minutes.
+    Where C is the drive letter of the drive that contains the image. This process may take several minutes.
 
 ## Deploy your images to a new PC
 
@@ -1505,9 +1509,9 @@ In this section, we'll cover how to deploy your captured image for testing and v
 1. Boot the PC you want to test your image on into WinPE.
 2. Run walkthrough-deploy.cmd to deploy the finalimage.wim
 
-```
-E:\Deployment\walkthrough-deploy.cmd E:\Images\FinalImage.wim
-```
+    ```
+    E:\Deployment\walkthrough-deploy.cmd E:\Images\FinalImage.wim
+    ```
 3. Type `exit` to close WinPE and restart the PC.
 
 ### Validate the configuration

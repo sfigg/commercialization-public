@@ -14,28 +14,23 @@ ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-# EventProviders
 
+# EventProviders
 
 Represents a collection of event provider identifiers and event providers.
 
+
 ## Element Hierarchy
 
+* \<[WindowsPerformanceRecorder](windowsperformancerecorder.md)\>
+  * \<[Profiles](profiles.md)\>
+    * \<[Profile](profile-wpr.md)\>
+      * \<[Collectors](collectors.md)\>
+        * \<[EventCollectorId](eventcollectorid.md)\>
+          * \<**EventProviders**\>
 
-&lt;[WindowsPerformanceRecorder](windowsperformancerecorder.md)&gt;
-
-     &lt;[Profiles](profiles.md)&gt;
-
-          &lt;[Profile](profile-wpr.md)&gt;
-
-               &lt;[Collectors](collectors.md)&gt;
-
-                    &lt;[EventCollectorId](eventcollectorid.md)&gt;
-
-                         &lt;**EventProviders**&gt;
 
 ## Syntax
-
 
 ```
 <EventProviders Operation = "Set" | "Add" | “Remove”>
@@ -47,106 +42,37 @@ Represents a collection of event provider identifiers and event providers.
 </EventProviders>
 ```
 
+
 ## Attributes and Elements
 
 
 ### Attributes
 
-<table>
-<colgroup>
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Attribute</th>
-<th>Description</th>
-<th>Data type</th>
-<th>Required</th>
-<th>Default</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><strong>Operation</strong></p></td>
-<td><p>Indicates whether event providers should be set or added.</p></td>
-<td><p>This attribute can have one of the following values:</p>
-<ul>
-<li><p>Set</p></li>
-<li><p>Add</p></li>
-<li><p>Remove</p></li>
-</ul></td>
-<td><p>No</p></td>
-<td><p>Set</p></td>
-</tr>
-</tbody>
-</table>
+| Attribute     | Description                                               | Data type                                                                                             | Required | Default |
+| :------------ | :-------------------------------------------------------- | :---------------------------------------------------------------------------------------------------- | :------- | :------ |
+| **Operation** | Indicates whether event providers should be set or added. | This attribute can have one of the following values: <ul><li>Set</li><li>Add</li><li>Remove</li></ul> | No       | Set     |
 
- 
 
 ### Child Elements
 
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-<th>Description</th>
-<th>Requirement</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>[EventProviderId](eventproviderid.md)</p></td>
-<td><p>Represents an event provider identifier.</p></td>
-<td><p>Optional, zero or more.</p></td>
-</tr>
-<tr class="even">
-<td><p>[EventProvider](eventprovider.md)</p></td>
-<td><p>Represents an event provider.</p></td>
-<td><p>Optional, zero or more.</p></td>
-</tr>
-</tbody>
-</table>
+| Element                               | Description                              | Requirement             |
+| :------------------------------------ | :--------------------------------------- | :---------------------- |
+| [EventProviderId](eventproviderid.md) | Represents an event provider identifier. | Optional, zero or more. |
+| [EventProvider](eventprovider.md)     | Represents an event provider.            | Optional, zero or more. |
 
- 
 
 ### Parent Elements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>[EventCollectorId](eventcollectorid.md)</p></td>
-<td><p>Represents an event collector identifier.</p></td>
-</tr>
-</tbody>
-</table>
+| Element                                 | Description                               |
+| :-------------------------------------- | :---------------------------------------- |
+| [EventCollectorId](eventcollectorid.md) | Represents an event collector identifier. |
 
- 
 
 ## Example
 
-
 For managed scenarios, use the following event provider definition:
 
-```
+```xml
 <EventCollectorId Value ="WPAEventCollector">
   <EventProviders>
     <EventProviderId Value="EventProvider_DotNetProvider" />
@@ -156,18 +82,8 @@ For managed scenarios, use the following event provider definition:
 </EventCollectorId>
 ```
 
+
 ## Related topics
 
-
 [Elements](elements.md)
-
- 
-
- 
-
-
-
-
-
-
 
