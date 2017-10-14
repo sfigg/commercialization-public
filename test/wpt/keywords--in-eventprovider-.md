@@ -14,40 +14,29 @@ ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-# Keywords (in EventProvider)
 
+# Keywords (in EventProvider)
 
 Represents a collection of event keywords.
 
+
 ## Element Hierarchy
 
+* \<[WindowsPerformanceRecorder](windowsperformancerecorder.md)\>
+  * \<[Profiles](profiles.md)\>
+    * \<[EventProvider](eventprovider.md)\>
+      * \<**Keywords (in EventProvider)**\>
+    * \<[Profile](profile-wpr.md)\>
+      * \<[Collectors](collectors.md)\>
+        * \<[EventCollectorId](eventcollectorid.md)\>
+          * \<[EventProviders](eventproviders.md)\>
+            * \<[EventProviderId](eventproviderid.md)\>
+              * \<**Keywords (in EventProvider)**\>
+            * \<[EventProvider](eventprovider.md)\>
+              * \<**Keywords (in EventProvider)**\>
 
-&lt;[WindowsPerformanceRecorder](windowsperformancerecorder.md)&gt;
-
-     &lt;[Profiles](profiles.md)&gt;
-
-          &lt;[EventProvider](eventprovider.md)&gt;
-
-               &lt;**Keywords (in EventProvider)**&gt;
-
-          &lt;[Profile](profile-wpr.md)&gt;
-
-               &lt;[Collectors](collectors.md)&gt;
-
-                    &lt;[EventCollectorId](eventcollectorid.md)&gt;
-
-                         &lt;[EventProviders](eventproviders.md)&gt;
-
-                              &lt;[EventProviderId](eventproviderid.md)&gt;
-
-                                   &lt;**Keywords (in EventProvider)**&gt;****
-
-                              &lt;[EventProvider](eventprovider.md)&gt;
-
-                                   &lt;**Keywords (in EventProvider)**&gt;
 
 ## Syntax
-
 
 ```
 <Keywords Operation = "Set" | "Add" | “Remove” >
@@ -58,111 +47,33 @@ Represents a collection of event keywords.
 </Keywords>
 ```
 
+
 ## Attributes and Elements
 
 
 ### Attributes
 
-<table>
-<colgroup>
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Attribute</th>
-<th>Description</th>
-<th>Data type</th>
-<th>Required</th>
-<th>Default</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><strong>Operation</strong></p></td>
-<td><p>Indicates whether keywords should be set or added.</p></td>
-<td><p>This attribute can have one of the following values:</p>
-<ul>
-<li><p>Set</p></li>
-<li><p>Add</p></li>
-<li><p>Remove</p></li>
-</ul></td>
-<td><p>No</p></td>
-<td><p>Set</p></td>
-</tr>
-</tbody>
-</table>
+| Attribute     | Description                                        | Data type                                                                                                 | Required | Default |
+| :------------ | :------------------------------------------------- | :-------------------------------------------------------------------------------------------------------- | :------- | :------ |
+| **Operation** | Indicates whether keywords should be set or added. | This attribute can have one of the following values: <ul> <li>Set</li> <li>Add</li> <li>Remove</li> </ul> | No       | Set     |
 
- 
 
 ### Child Elements
 
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-<th>Description</th>
-<th>Requirement</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>[Keyword (in EventProvider)](keyword--in-eventprovider-.md)</p></td>
-<td><p>Describes the Event Tracing for Windows (ETW) keyword for a user-mode provider.</p></td>
-<td><p>Required, 1 or more.</p></td>
-</tr>
-</tbody>
-</table>
+| Element                                                     | Description                                                                     | Requirement          |
+| :---------------------------------------------------------- | :------------------------------------------------------------------------------ | :------------------- |
+| [Keyword (in EventProvider)](keyword--in-eventprovider-.md) | Describes the Event Tracing for Windows (ETW) keyword for a user-mode provider. | Required, 1 or more. |
 
- 
 
 ### Parent Elements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>[EventProvider](eventprovider.md)</p></td>
-<td><p>Represents an event provider for the profile.</p></td>
-</tr>
-<tr class="even">
-<td><p>[EventProviderId](eventproviderid.md)</p></td>
-<td><p>Represents an event provider identifier.</p></td>
-</tr>
-</tbody>
-</table>
+| Element                               | Description                                   |
+| :------------------------------------ | :-------------------------------------------- |
+| [EventProvider](eventprovider.md)     | Represents an event provider for the profile. |
+| [EventProviderId](eventproviderid.md) | Represents an event provider identifier.      |
 
- 
 
 ## Related topics
 
-
 [Elements](elements.md)
-
- 
-
- 
-
-
-
-
-
-
 
