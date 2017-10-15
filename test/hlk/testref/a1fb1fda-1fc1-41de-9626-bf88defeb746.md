@@ -36,67 +36,18 @@ The File IO 2 tests are based on TAEF:
 
 For more information about the behavior of file systems, see [File System Behavior in the Microsoft Windows Environment](http://go.microsoft.com/fwlink/?LinkId=236047).
 
-## <span id="Test_details"></span><span id="test_details"></span><span id="TEST_DETAILS"></span>Test details
-
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><strong>Specifications</strong></td>
-<td><ul>
-<li>Filter.Driver.FileSystem.MiniFilter</li>
-<li>Filter.Driver.AntiVirus.MiniFilter</li>
-<li>Filter.Driver.FileSystem.Functionality</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td><strong>Platforms</strong></td>
-<td><ul>
-<li>Windows 10 Mobile ARM</li>
-<li>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</li>
-<li>Windows 10 for desktop editions x64</li>
-<li>Windows Server 2016 x64</li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td><strong>Supported Releases</strong></td>
-<td><ul>
-<li>Windows 10</li>
-<li>Windows 10, version 1511</li>
-<li>Windows 10, version 1607</li>
-<li>Windows 10, version 1703</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td><strong>Expected run time (in minutes)</strong></td>
-<td>300</td>
-</tr>
-<tr class="odd">
-<td><strong>Category</strong></td>
-<td>Development</td>
-</tr>
-<tr class="even">
-<td><strong>Timeout (in minutes)</strong></td>
-<td>18000</td>
-</tr>
-<tr class="odd">
-<td><strong>Requires reboot</strong></td>
-<td>false</td>
-</tr>
-<tr class="even">
-<td><strong>Requires special configuration</strong></td>
-<td>false</td>
-</tr>
-<tr class="odd">
-<td><strong>Type</strong></td>
-<td>automatic</td>
-</tr>
-</tbody>
-</table>
+## Test details
+|||
+|---|---|
+| **Specifications**  | <ul><li>Filter.Driver.FileSystem.MiniFilter</li><li>Filter.Driver.AntiVirus.MiniFilter</li><li>Filter.Driver.FileSystem.Functionality</li></ul> |  
+| **Platforms**   | <ul><li>Windows 10 client editions (x86)</li><li>Windows 10, client editions (x64)</li><li>Windows Server 2016 (x64)</li><li>Windows 10, mobile edition (ARM)</li></ul> |
+| **Supported Releases** | <ul><li>Windows 10</li><li>Windows 10, version 1511</li><li>Windows 10, version 1607</li><li>Windows 10, version 1703</li><li>Windows 10, version 1709</li></ul> |
+|**Expected run time (in minutes)**| 300 |
+|**Category**| Development |
+|**Timeout (in minutes)**| 18000 |
+|**Requires reboot**| false |
+|**Requires special configuration**| false |
+|**Type**| automatic |
 
  
 

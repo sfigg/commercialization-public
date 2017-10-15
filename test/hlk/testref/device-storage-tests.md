@@ -22,6 +22,7 @@ ms.assetid: 7f1e8526-55c4-4786-99ee-fe5aaefa8736
 -   [Disk Verification (LOGO)](f8f88b8a-ff9c-4cfb-9e95-6be2511e5510.md)
 -   [Drive enumeration on Cluster nodes (LOGO)](a7b3652d-a422-4d9c-a84d-845f660e0697.md)
 -   [EHDD Test](0d6e8e2e-d448-4ce7-80b6-735620affed1.md)
+-   [Storage HBA Firmware Update](696520df-d0ad-4792-81e2-8b98c3fe5beb.md)
 -   [eMMC Compliance Test](fdc03695-c935-4e82-875d-75c2af6d5c71.md)
 -   [Enclosure Disk Test (LOGO)](21dee34c-8eab-4c51-b4e2-3c8f41c508b8.md)
 -   [Enumeration Test (LOGO)](6a5af370-4995-4355-a3dd-efc5d79728a5.md)
