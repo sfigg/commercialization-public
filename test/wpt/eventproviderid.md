@@ -14,30 +14,24 @@ ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-# EventProviderId
 
+# EventProviderId
 
 Represents an event provider identifier for the profile.
 
+
 ## Element Hierarchy
 
+* \<[WindowsPerformanceRecorder](windowsperformancerecorder.md)\>
+  * \<[Profiles](profiles.md)\>
+    * \<[Profile](profile-wpr.md)\>
+      * \<[Collectors](collectors.md)\>
+        * \<[EventCollectorId](eventcollectorid.md)\>
+          * \<[EventProviders](eventproviders.md)\>
+            * \<**EventProviderId**\>
 
-&lt;[WindowsPerformanceRecorder](windowsperformancerecorder.md)&gt;
-
-     &lt;[Profiles](profiles.md)&gt;
-
-          &lt;[Profile](profile-wpr.md)&gt;
-
-               &lt;[Collectors](collectors.md)&gt;
-
-                    &lt;[EventCollectorId](eventcollectorid.md)&gt;
-
-                         &lt;[EventProviders](eventproviders.md)&gt;
-
-                               &lt;**EventProviderId**&gt;
 
 ## Syntax
-
 
 ```
 <EventProviderId Value = IdType>
@@ -50,106 +44,38 @@ Represents an event provider identifier for the profile.
 </EventProviderId>
 ```
 
+
 ## Attributes and Elements
 
 
 ### Attributes
 
-<table>
-<colgroup>
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Attribute</th>
-<th>Description</th>
-<th>Data type</th>
-<th>Required</th>
-<th>Default</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><strong>Value</strong></p></td>
-<td><p>Uniquely identifies the event provider.</p></td>
-<td><p>String that must have at least one character and cannot contain colons (:) or spaces.</p></td>
-<td><p>Yes</p></td>
-<td><p></p></td>
-</tr>
-</tbody>
-</table>
+| Attribute | Description                             | Data type                                                                             | Required | Default |
+| :-------- | :-------------------------------------- | :------------------------------------------------------------------------------------ | :------- | :------ |
+| **Value** | Uniquely identifies the event provider. | String that must have at least one character and cannot contain colons (:) or spaces. | Yes      |         |
 
- 
 
 ### Child Elements
 
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-<th>Description</th>
-<th>Requirement</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>[Keywords (in EventProvider)](keywords--in-eventprovider-.md)</p></td>
-<td><p>Represents a collection of keywords.</p></td>
-<td><p>Required, 1 or more. Use <code>0x0</code> as a keyword to include all events.</p></td>
-</tr>
-<tr class="even">
-<td><p>[CaptureStateOnStart](capturestateonstart.md)</p></td>
-<td><p>Represents a collection of keywords that describe events to be captured at the start of a recording.</p></td>
-<td><p>Optional, zero or 1.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[CaptureStateOnSave](capturestateonsave.md)</p></td>
-<td><p>Represents a collection of keywords that describe events to be captured when a recording is saved.</p></td>
-<td><p>Optional, zero or 1.</p></td>
-</tr>
-</tbody>
-</table>
+| Element                                                       | Description                                                                                          | Requirement                                                        |
+| :------------------------------------------------------------ | :--------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------- |
+| [Keywords (in EventProvider)](keywords--in-eventprovider-.md) | Represents a collection of keywords.                                                                 | Required, 1 or more. Use `0x0` as a keyword to include all events. |
+| [CaptureStateOnStart](capturestateonstart.md)                 | Represents a collection of keywords that describe events to be captured at the start of a recording. | Optional, zero or 1.                                               |
+| [CaptureStateOnSave](capturestateonsave.md)                   | Represents a collection of keywords that describe events to be captured when a recording is saved.   | Optional, zero or 1.                                               |
 
- 
 
 ### Parent Elements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>[EventProviders](eventproviders.md)</p></td>
-<td><p>Represents a collection of event providers and event provider identifiers.</p></td>
-</tr>
-</tbody>
-</table>
+| Element                             | Description                                                                |
+| :---------------------------------- | :------------------------------------------------------------------------- |
+| [EventProviders](eventproviders.md) | Represents a collection of event providers and event provider identifiers. |
 
- 
 
 ## Example
 
-
 For managed scenarios, use the following event provider definition.
 
-```
+```xml
 <EventCollectorId Value ="WPAEventCollector">
   <EventProviders>
     <EventProviderId Value="EventProvider_DotNetProvider" />
@@ -159,18 +85,8 @@ For managed scenarios, use the following event provider definition.
 </EventCollectorId>
 ```
 
+
 ## Related topics
 
-
 [Elements](elements.md)
-
- 
-
- 
-
-
-
-
-
-
 
