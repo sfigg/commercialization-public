@@ -56,7 +56,7 @@ You can configure the default slider mode for both AC and DC. If a customer choo
 > [!Note]
 > Battery Saver is not available as a default slider mode.
 
-First, create a provisioning package using [Windows Configuration Designer](https://docs.microsoft.com/en-us/windows/configuration/provisioning-packages/provisioning-install-icd). You will then edit the customizations.xml file contained in the package to include your power settings. Use the XML file as one of the inputs to the Windows Configuration Designer command-line to generate either a provisioning package or a Windows image that contains the power settings. For information on how to use the Windows Configuration Designer CLI, see [Use the Windows Configuration Designer command-line interface](https://docs.microsoft.com/en-us/windows/configuration/provisioning-packages/provisioning-command-line).
+First, create a provisioning package using [Windows Configuration Designer](https://docs.microsoft.com/en-us/windows/configuration/provisioning-packages/provisioning-install-icd). You will then edit the customizations.xml file contained in the package to include your power settings. Use the XML file as one of the inputs to the Windows Configuration Designer command-line to generate a provisioning package that contains the power settings, then apply the package to the image. For information on how to use the Windows Configuration Designer CLI, see [Use the Windows Configuration Designer command-line interface](https://docs.microsoft.com/en-us/windows/configuration/provisioning-packages/provisioning-command-line).
 
 | Windows Provisioning path                 | Provisioning setting name                            | Values                                               |
 |:------------------------------------------|:-----------------------------------------------------|:-----------------------------------------------------|
@@ -67,7 +67,7 @@ First, create a provisioning package using [Windows Configuration Designer](http
 
 ### XML Example
 
-Below is an example Windows provisioning sample for defining default slider modes.
+Below is an example customizations.xml file that defines default slider modes.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -115,7 +115,7 @@ PPM options can be configured for all AMD and Intel platforms using Windows Prov
 
 #### XML Example
 
-Below is an example of an answer file that uses the new overlays to define PPM settings for the Better Battery Life and Best Performance slider modes.
+Below is an example of a customizations.xml file that uses the new overlays to define PPM settings for the Better Battery and Best Performance slider modes.
 
 ```xml
 <Power>
@@ -131,7 +131,7 @@ Below is an example of an answer file that uses the new overlays to define PPM s
               </PerfEnergyPreference>
             </Setting>
           </Profile>
-          <!—EPP override for default PPM profile for “Max Performance” -->
+          <!--EPP override for default PPM profile for “Best Performance” -->
           <Profile SchemeAlias="MaxPerformanceOverlay">
             <Setting ProfileAlias="Default">
               <PerfEnergyPreference>

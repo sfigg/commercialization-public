@@ -16,13 +16,13 @@ The Get Help app empowers customers to self-help with troubleshooters, instant a
 
 If you have a support app or support website you would like to direct customers towards, you can use unattend.xml to display your support option within the Get Help app. A link to your support app or website is surfaced wherever options to contact support are shown in the Get Help app. The first item in the list will be the link you provided.
 
-![Contact OEM is first option in list](images/get-help-app-support.png)
-
 Customers are sent to the Get Help from the Settings app, Cortana, Bing Instant Answers, the Start Menu, and numerous Microsoft web experiences. It is also possible to launch Get Help from your own apps and websites.
 
 ## Consumer experience
 
 For consumers, the Get Help app provides a way to ask a question and get recommended solutions or contact assisted support. Depending on the country/region and language of the device, one of two experiences will be shown: Virtual Agent, or Search support.
+
+### Virtual Agent
 
 Microsoft’s Virtual Agent is a support chat bot designed to help with issues related to Windows and other products. This brings a conversational approach to understanding problems and providing the most appropriate solution. If the Virtual Agent is unable to provide a solution, it will direct customers to the options for contacting support; it is also possible to ask for those options at any time. This experience is only available in en-US.
 
@@ -30,11 +30,15 @@ OEM customization provides the top support option in the list — a link to eith
 
 ![Get Help app - Virtual Agent](images/get-help-virtual-agent.png)
 
+### Search support
+
 In markets that do not have the new Virtual Agent experience available, customers can utilize search support by entering a question and receiving back recommended support content. Beneath the search results, the options for contacting support will be listed.
 
-OEM customization provides the top support option in the list — a link to either the your support website, or your support app.
+OEM customization provides the top support option in the list — a link to either your support website, or your support app.
 
 ![Get Help app - search support](images/get-help-search-support.png)
+
+![Contact OEM is first option in list](images/get-help-app-support.png)
 
 ### Enterprise experience
 

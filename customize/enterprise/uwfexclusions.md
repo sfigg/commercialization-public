@@ -87,8 +87,6 @@ Services registry keys:
 * Wireless: **HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\services\\WwanSvc**
 * Wired: **HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\services\\dot3svc**
 
-Cached client authentication credentials:
-
 ## Daylight saving time (DST)
 
 
@@ -101,8 +99,6 @@ You can add the following registry exclusions to persist daylight saving time (D
 ## Related topics
 
 [Unified Write Filter](unified-write-filter.md)
-
-[Common write filter exclusions](uwfexclusions.md)
 
 [Service UWF-protected devices](service-uwf-protected-devices.md)
 

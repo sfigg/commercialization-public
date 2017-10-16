@@ -21,10 +21,10 @@ Many Microsoft first party applications apply the setting and it is easy for you
 
 ![](images/darkmode2.png)![](images/darkmode3.png)
 
-You can customize the default Windows themevia Unattend.xml. The Unattend component includes a setting `UWPAppsUseLIghtTheme` that configures dark mode as the default for apps that support it.
+You can customize the default Windows theme via Unattend.xml. The Unattend component includes a setting `UWPAppsUseLIghtTheme` that configures dark mode as the default for apps that support it.
 
 ```xml
-<settings pass=”oobeSystem”>
+<settings pass="oobeSystem">
         <Themes>
             <ThemeName>MyOLEDTheme</ThemeName>
             <DefaultThemesOff>false</DefaultThemesOff>

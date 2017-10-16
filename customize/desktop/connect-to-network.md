@@ -16,7 +16,7 @@ During the OOBE flow, the customer will see the **Let’s connect you to a netwo
 
 If the device is LTE-enabled and an active SIM card is inserted, Windows will connect to the Cellular data network automatically. This enables the user to go through OOBE and successfully setup their device if a local Wi-Fi connection is not available. Users will see that they are Connected to the Cellular data network when they reach the **Let’s connect you to a network** screen in OOBE. Available Wi-Fi connections will also be shown on the screen, and the user can choose to connect to Wi-Fi if desired.
 
-![Let's connect you to a network screen, showing both wifi and cellular networks](images/connect-to-network.jpg)
+![Let's connect you to a network screen, showing both wifi and cellular networks](images/connect-to-network-screen.jpg)
 
 If the device is LTE-enabled, but no SIM card is present, Cellular data will appear as a connection option along with any available Wi-Fi networks. The user must insert a SIM card before they can connect to the Cellular network.
 

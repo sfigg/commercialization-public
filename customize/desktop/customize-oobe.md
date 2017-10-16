@@ -22,20 +22,20 @@ The OOBE flow is also designed to reduce cognitive load significantly by breakin
 
 The following is a non-exhaustive list of screens the user may see during OOBE, in order:
 
-1. Language selection
-1. Cortana welcome
-1. Region selection
-1. Keyboard selection
-1. Connect to a network
-1. End User License Agreement (EULA)
-1. Sign in to, or create, a Microsoft account
-1. Link your phone and PC. This screen will only appear if the user signed into their Microsoft account, and connected to a network, on the previous screens.
-1. Windows Hello setup
-1. Privacy settings. In Windows 10 build 1709, the privacy settings screen includes **Learn more** links the user can click for more details about each setting.
-1. Save files to OneDrive
-1. Set up Office. This screen is only displayed if the user is connected to a network, and has provided their Microsoft account information. Content on the page will vary depending on the user’s account type. For example, if their Microsoft account qualifies for a free trial of Office, the page will encourage them to setup their free trial.
-1. Make Cortana my personal assistant
-1. OEM Registration pages
+1. **Language selection**
+1. **Cortana welcome**
+1. **Region selection**
+1. **Keyboard selection**
+1. **Connect to a network**
+1. **End User License Agreement (EULA)**
+1. **Sign in to, or create, a Microsoft account**
+1. **Link your phone and PC**. This screen will only appear if the user signed into their Microsoft account, and connected to a network, on the previous screens.
+1. **Windows Hello setup**
+1. **Privacy settings**. In Windows 10 build 1709, the privacy settings screen includes **Learn more** links the user can click for more details about each setting.
+1. **Save files to OneDrive**
+1. **Set up Office**. This screen is only displayed if the user is connected to a network, and has provided their Microsoft account information. Content on the page will vary depending on the user’s account type. For example, if their Microsoft account qualifies for a free trial of Office, the page will encourage them to setup their free trial.
+1. **Make Cortana my personal assistant**
+1. **OEM Registration pages**
 
 You can hide certain OOBE screens using Unattend. For more information, see [OOBE Unattend component](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-shell-setup-oobe).
 
