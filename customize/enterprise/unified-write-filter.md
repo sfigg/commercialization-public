@@ -181,6 +181,7 @@ You must use an administrator account to add or remove file or folder exclusions
 > * The \\Windows\\System32 folder on the system volume.
 > * The \\Windows\\System32\\Drivers folder on the system volume.
 > * Paging files.
+>
 > However, you can exclude subdirectories and files under these items.
 
 You cannot rename or move a file or folder from a protected location to an unprotected location, or vice versa. When write filters are active and you attempt to delete an excluded file or folder in Windows Explorer, the system attempts to move the file or folder to the Recycle Bin. This causes an error, because you cannot move files that are not filtered to a location that is write filter protected.

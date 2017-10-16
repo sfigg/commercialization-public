@@ -29,18 +29,18 @@ Do not select **UwfServicingScr** as the screen saver and then click **Preview**
 
 1. To modify the default registry settings for the UWF servicing screen saver, from the example shown here, change the values in a text editor, and then save as a .reg file (for example, Overridescreensaver.reg).
 
-```powershell
-Windows Registry Editor Version 5.00
-[HKEY_LOCAL_MACHINE\Software\Microsoft\Windows Embedded\ServicingScreenSaver]
-"ColorBackground"=dword:000000ff
-"ColorText"=dword:0000ff00
-"ColorProgress"=dword:00ff0000
-"ScreenSaverTitle"="Device"
-"ScreenSaverSubTitle"="Servicing device…"
-"HideScreenSaverText"=dword:00000000
-"HideScreenSaverProgress"=dword:00000000
-"Font"="Algerian"
-```
+   ```powershell
+   Windows Registry Editor Version 5.00
+   [HKEY_LOCAL_MACHINE\Software\Microsoft\Windows Embedded\ServicingScreenSaver]
+   "ColorBackground"=dword:000000ff
+   "ColorText"=dword:0000ff00
+   "ColorProgress"=dword:00ff0000
+   "ScreenSaverTitle"="Device"
+   "ScreenSaverSubTitle"="Servicing device…"
+   "HideScreenSaverText"=dword:00000000
+   "HideScreenSaverProgress"=dword:00000000
+   "Font"="Algerian"
+   ```
 
 1. On the device, open a command prompt as an administrator. For Windows Shell, to open a command prompt, do the following:
    1. In Windows Explorer, move to \\Windows\\System32, right-click **cmd.exe**, and then click **Run as Administrator**.

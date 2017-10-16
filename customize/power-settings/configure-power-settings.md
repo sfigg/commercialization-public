@@ -15,7 +15,7 @@ ms.technology: windows-oem
 
 This section contains information about the power settings that you can configure using the Windows provisioning framework. Each power setting topic includes the identification GUID, allowed values, meaning, and common usage scenarios for the setting.
 
-## <span id="Use_Windows_provisioning_to_configure_power_settings"></span><span id="use_windows_provisioning_to_configure_power_settings"></span><span id="USE_WINDOWS_PROVISIONING_TO_CONFIGURE_POWER_SETTINGS"></span>Use Windows provisioning to configure power settings
+## <span id="Use_Windows_provisioning_to_configure_power_settings"></span>Use Windows Configuration Designer to configure power settings
 
 To configure the power settings, you will first create a provisioning package using [Windows Configuration Designer](https://docs.microsoft.com/en-us/windows/configuration/provisioning-packages/provisioning-install-icd). You will then edit the customizations.xml file contained in the package to include your power settings. Use the XML file as one of the inputs to the Windows Configuration Designer command-line to generate either a provisioning package or a Windows image that contains the power settings. For information on how to use the Windows Configuration Designer CLI, see [Use the Windows Configuration Designer command-line interface](https://docs.microsoft.com/en-us/windows/configuration/provisioning-packages/provisioning-command-line).
 

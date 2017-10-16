@@ -42,7 +42,7 @@ OEM customization provides the top support option in the list — a link to eith
 
 ### Enterprise experience
 
-For Enterprise SKUs, the Get Help app provides a different experience that focuses on getting customers to the right kind of support. The support options listed are shown to all enterprise customers. Availability of support within each option depends upon support agreements with the enterprise. 
+For Enterprise SKUs, the Get Help app provides a different experience that focuses on getting customers to the right kind of support. The support options listed are shown to all enterprise customers. Availability of support within each option depends upon support agreements with the enterprise.
 
 > [!Note]
 > OEM support options are not displayed in the Enterprise experience of the Get Help app.

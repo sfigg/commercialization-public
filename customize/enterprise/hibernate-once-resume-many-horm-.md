@@ -73,7 +73,7 @@ Since HORM requires all fixed partitions to be protected, you cannot use HORM on
    > [!Note]
    > Remove all file and registry exclusions before you enable HORM.
 
-1. (Optional) In Control Panel, set the Power Option When I press the power button to avoid displaying the command prompt when resuming from hibernation, or use a script to close the command prompt on startup.
+1. (Optional) In Control Panel, set the Power Option **When I press the power button** to avoid displaying the command prompt when resuming from hibernation, or use a script to close the command prompt on startup.
 1. To hibernate the system one time to create an initial hibernation file, at the command prompt, type the following command:
 
     `shutdown /h`
@@ -121,4 +121,4 @@ If you cannot disable HORM on your device, use following procedure to resolve th
 
 1. Hibernate the device:
 
-`shutdown /h`
+   `shutdown /h`

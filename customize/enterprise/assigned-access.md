@@ -145,12 +145,8 @@ The following table describes some features that have interoperability issues we
 <tr class="even">
 <td><p>Key sequences blocked by [Keyboard Filter](keyboardfilter.md)</p></td>
 <td><p>If Keyboard Filter is turned ON then some key combinations are blocked automatically without you having to explicitly block them. For more information, see the [Keyboard Filter](keyboardfilter.md) reference topic.</p>
-<div class="alert">
-<strong>Note</strong>  [Keyboard Filter](keyboardfilter.md) is only available on Windows 10 Enterprise or Windows 10 Education.
-</div>
-<div>
- 
-</div></td>
+<p>[Keyboard Filter](keyboardfilter.md) is only available on Windows 10 Enterprise or Windows 10 Education.</p>
+</td>
 </tr>
 <tr class="odd">
 <td><p>Power button</p></td>

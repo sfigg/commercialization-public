@@ -53,15 +53,15 @@ This can occur when your device is configured to require a password when waking 
       uwfmgr.exe restart
       ```
 
-### The device displays a black screen during setup
+## The device displays a black screen during setup
 
 Set the **HideAutoLogonUI** and **AnimationDisabled** settings to **0** (zero). The device will then display a default screen during setup.
 
-### The device displays a black screen when Ctrl+Alt+Del is pressed
+## The device displays a black screen when Ctrl+Alt+Del is pressed
 
 **HideAutoLogonUI** and**ForceAutoLogon** have known issues when used together. To avoid a black screen, we recommend you use Keyboard Filter to block this key combination.
 
-### The device displays a black screen when Windows key + L is used to lock the device
+## The device displays a black screen when Windows key + L is used to lock the device
 
 **HideAutoLogonUI** and **ForceAutoLogon** have known issues when used together. To avoid a black screen, we recommend you use Keyboard Filter to block this key combination.
 
@@ -72,7 +72,7 @@ Set the **HideAutoLogonUI** and **AnimationDisabled** settings to **0** (zero). 
 > [!Warning]
 > When the BSDR screen is disabled, restarting or shutting down the device causes the OS to immediately force close any open applications that are blocking system shutdown. No UI is displayed, and users are not given a chance to cancel the shutdown process. This can result in lost data if any open applications have unsaved data.
 
-### The device displays a black screen when the device is suspended and then resumed
+## The device displays a black screen when the device is suspended and then resumed
 
 **HideAutoLogonUI** and **ForceAutoLogon** have known issues when used together. To avoid a black screen, we recommend you disable the password protection on wakeup.
 

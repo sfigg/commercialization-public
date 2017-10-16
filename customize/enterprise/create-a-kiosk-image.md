@@ -13,18 +13,19 @@ ms.technology: windows-oem
 ---
 # Create a Kiosk Experience
 
-A single-use device is easy to set up in Windows 10 for desktop editions (Pro, Enterprise, and Education). There are three different methods you can choose from to set up single-function kiosk devices, such as restaurant menus or displays at trade shows:
+A single-use device is easy to set up in Windows 10 for desktop editions (Pro, Enterprise, and Education). There are a few different methods you can choose from to set up single-function kiosk devices, such as restaurant menus or displays at trade shows:
 
-* Use the [Windows Configuration Designer method](#windows-cd) to configure a kiosk device running either a Universal Windows app (Windows 10 Enterprise, Education, and Pro) or a Classic Windows application (Windows 10 Enterprise or Education only). In Windows 10, version 1709, you can also use the Provision kiosk devices wizard in Windows Configuration Designer to [configure a kiosk that runs multiple applications](#multi-app-kiosk).
-* For a kiosk device to run a single Universal Windows Platform (UWP) app, use the [Assigned access method](#assigned-access).
-* For a kiosk device (Windows 10 Enterprise or Education) to run a single Classic Windows application, use the [Shell Launcher method](#shell-launcher) to set a custom user interface as the shell.
+1. Use the [Windows Configuration Designer method](#windows-cd) to configure a kiosk device running either a single Universal Windows app (Windows 10 Enterprise, Education, and Pro) or a single Classic Windows application (Windows 10 Enterprise or Education only).
+1. In Windows 10, version 1709, you can also use the Provision kiosk devices wizard in Windows Configuration Designer to [configure a kiosk that runs multiple applications](#multi-app-kiosk).
+1. For a kiosk device to run a single Universal Windows Platform (UWP) app, use the [Assigned access method](#assigned-access).
+1. For a kiosk device (Windows 10 Enterprise or Education) to run a single Classic Windows application, use the [Shell Launcher method](#shell-launcher) to set a custom user interface as the shell.
 
 > [!Note]
 > A Universal Windows app is built on the Universal Windows Platform (UWP), which was first introduced in Windows 8 as the Windows Runtime. A Classic Windows application uses the Classic Windows Platform (CWP) (e.g., COM, Win32, WPF, WinForms, etc.) and is typically launched using an .EXE or .DLL file.
 
 In addition to configuring assigned access or shell launcher, you can also [configure optional features to further define the Kiosk experience](#lockdown-settings). Some of the optional features include power button availability, welcome screen elements, and the ability to protect your internal physical media.
 
-## <a name="windows-cd"></a>Windows Configuration Designer method for either a UWP or a Classic Windows application
+## <a name="windows-cd"></a>Windows Configuration Designer method for a single-app kiosk experience
 
 When you use the Provision Kiosk Devices wizard in Windows Configuration Designer, you can configure the kiosk to run either a single UWP app or a Classic Windows app.
 
@@ -33,11 +34,11 @@ When you use the Provision Kiosk Devices wizard in Windows Configuration Designe
 
 1. [Install Windows Configuration Designer](https://docs.microsoft.com/en-us/windows/configuration/provisioning-packages/provisioning-install-icd).
 1. Open Windows Configuration Designer and select **Provision kiosk devices**. Name your project and click **Next**.
-1. Create a provisioning package. See [Instructions for the kiosk wizard](https://docs.microsoft.com/en-us/windows/configuration/set-up-a-kiosk-for-windows-10-for-desktop-editions#wizard) for instructions on moving through the steps of the wizard: **Setup device**, **Set up network**, **Account Management**, **Add applications**, **Add certificates**, **Configure kiosk account and app**, and **Configure kiosk common settings**.
+1. Create a provisioning package. See [Instructions for the kiosk wizard](https://docs.microsoft.com/en-us/windows/configuration/set-up-a-kiosk-for-windows-10-for-desktop-editions#wizard) for guidance on moving through the steps of the wizard: **Setup device**, **Set up network**, **Account Management**, **Add applications**, **Add certificates**, **Configure kiosk account and app**, and **Configure kiosk common settings**.
 1. Build the provisioning package. Click **Export** and select **Provisioning Package**. Enter the requested information and click **Finish** to close the wizard and return to the Customizations page. See [Build the provisioning package](https://docs.microsoft.com/en-us/windows/configuration/provisioning-packages/provisioning-create-package#build-package) for more details if needed.
 * [Apply the provisioning package](https://docs.microsoft.com/en-us/windows/configuration/provisioning-packages/provisioning-apply-package) to the device.
 
-## <a name="multi-app-kiosk"></a>Windows Configuration Designer method to create a multi-app kiosk experience
+## <a name="multi-app-kiosk"></a>Windows Configuration Designer method for a a multi-app kiosk experience
 
 A kiosk device typically runs a single app, and users are prevented from accessing any features or functions on the device outside of the kiosk app. In Windows 10, version 1709, the [AssignedAccess configuration service provider (CSP)](https://docs.microsoft.com/windows/client-management/mdm/assignedaccess-csp) has been expanded to make it easy for administrators to create kiosks that run more than one app. You can configure multi-app kiosks using a provisioning package. You can include both UWP and Classic Windows applications.
 
@@ -81,7 +82,7 @@ The Universal Windows app must be able to handle multiple views and cannot launc
 
 ### Set up assigned access using MDM
 
-Assigned Access has one setting, `KioskModeApp`. In the KioskModeApp setting, you enter the user account name and AUMID for the app to run in kiosk mode. See the [technical reference for the assigned access configuration service provider](https://docs.microsoft.com/en-us/windows/client-management/mdm/assignedaccess-csp_) (AssignedAccess CSP) for details.
+Assigned Access has one setting, `KioskModeApp`. In the KioskModeApp setting, you enter the user account name and AUMID for the app to run in kiosk mode. See the [technical reference for the assigned access configuration service provider](https://docs.microsoft.com/en-us/windows/client-management/mdm/assignedaccess-csp) (AssignedAccess CSP) for details.
 
 ### Set up assigned access using PC settings
 

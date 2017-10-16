@@ -70,7 +70,7 @@ The following table shows the possible values. To disable multiple Welcome scree
 </tbody>
 </table>
 
-In the following image of the crtl + alt + del screen, you can see the Switch user button highlighted by a light green outline, the Language button highlighted by an orange outline, the Ease of Access button highlighted by a red outline, and the power button highlighted by a yellow outline. If you disable these buttons, they are hidden from the UI.
+In the following image of the `[ctrl + alt + del]` screen, you can see the Switch user button highlighted by a light green outline, the Language button highlighted by an orange outline, the Ease of Access button highlighted by a red outline, and the power button highlighted by a yellow outline. If you disable these buttons, they are hidden from the UI.
 
 ![custom logon screen](images/customlogoncad.jpg)
 

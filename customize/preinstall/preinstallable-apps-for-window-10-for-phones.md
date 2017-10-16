@@ -76,7 +76,7 @@ To include preinstalled apps in your image, you must add the `Application` eleme
     <Applications>
       <Application License="$(CAFE_OUTPUT_DIR)\content\App_MobileTV_7e7cc86e_e1c0_476a_ac88_db3c9ffffabb\MobileTV_License.xml" ProvXML="$(CAFE_OUTPUT_DIR)\content\App_MobileTV_7e7cc86e_e1c0_476a_ac88_db3c9ffffabb\MPAP_MobileTV_01.provxml" Source="$(CAFE_OUTPUT_DIR)\content\App_MobileTV_7e7cc86e_e1c0_476a_ac88_db3c9ffffabb\MobileTV.xap"/>
       <Application License="$(CAFE_OUTPUT_DIR)\content\App_AudioSettings_373cb76e_7f6c_45aa_8633_b00e85c73261\audio_License.xml" ProvXML="$(CAFE_OUTPUT_DIR)\content\App_AudioSettings_373cb76e_7f6c_45aa_8633_b00e85c73261\MPAP_audio_01.provxml" Source="$(CAFE_OUTPUT_DIR)\content\App_AudioSettings_373cb76e_7f6c_45aa_8633_b00e85c73261\audio.appx"/>
-                 <Application License="$(CAFE_OUTPUT_DIR)\content\App_MicrosoftHealthApp_0168b504_ca18_46b8_b60a_0f6fdc271c81\MicrosoftHealthApp_License.xml" ProvXML="$(CAFE_OUTPUT_DIR)\content\App_MicrosoftHealthApp_0168b504_ca18_46b8_b60a_0f6fdc271c81\MPAP_MicrosoftHealthApp_01.provxml" Source="$(CAFE_OUTPUT_DIR)\content\App_MicrosoftHealthApp_0168b504_ca18_46b8_b60a_0f6fdc271c81\MicrosoftHealthApp.appxbundle"/>
+      <Application License="$(CAFE_OUTPUT_DIR)\content\App_MicrosoftHealthApp_0168b504_ca18_46b8_b60a_0f6fdc271c81\MicrosoftHealthApp_License.xml" ProvXML="$(CAFE_OUTPUT_DIR)\content\App_MicrosoftHealthApp_0168b504_ca18_46b8_b60a_0f6fdc271c81\MPAP_MicrosoftHealthApp_01.provxml" Source="$(CAFE_OUTPUT_DIR)\content\App_MicrosoftHealthApp_0168b504_ca18_46b8_b60a_0f6fdc271c81\MicrosoftHealthApp.appxbundle"/>
     </Applications>
 ```
 
