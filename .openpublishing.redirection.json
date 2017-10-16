@@ -1182,8 +1182,8 @@
 
     },    
     {   
-        "source_path": "design/what-s-new-in-design", 
-        "redirect_url": "get-started/what-s-new-in-windows", 
+        "source_path": "design/what-s-new-in-design.md", 
+        "redirect_url": "get-started/what-s-new-in-windows.md", 
         "redirect_document_id": true
     }
 
