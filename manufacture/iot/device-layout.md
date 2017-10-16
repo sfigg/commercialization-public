@@ -19,9 +19,9 @@ IoT Core supports UEFI (GPT) and legacy BIOS (MBR) partition layouts. Most IoT C
 
 Sample partition layouts included in the ADK Add-Ons:
 -  \iot-adk-addonkit\Common\Packages\DeviceLayout.GPT4GB\devicelayout.xml
--  \iot-adk-addonkit\Common\Packages\DeviceLayout.GPT2GB\devicelayout.xml
+-  \iot-adk-addonkit\Common\Packages\DeviceLayout.GPT4GB-R\devicelayout.xml
 -  \iot-adk-addonkit\Common\Packages\DeviceLayout.MBR4GB\devicelayout.xml
--  \iot-adk-addonkit\Common\Packages\DeviceLayout.MBR2GB\devicelayout.xml
+-  \iot-adk-addonkit\Common\Packages\DeviceLayout.MBR4GB-R\devicelayout.xml
 
 These files use three component files:
 -  **DeviceLayout.<Name>.pkg.xml: Package file, creates packages for DeviceLayout and OEMDevicePlatform.xml.
@@ -147,34 +147,9 @@ OEMDevicePlatform.xml specifies the amount of free blocks available in the devic
    </OEMDevicePlatform>
 ```
 
-## BSP Samples in IoT-ADK-AddonKit
-
-The IoT-ADK-AddOnKit contains BSP samples for the following boards, each containing these files:
-
-- \Source-{_arch_}\BSP\\{_BSPName_}
-  - \OEMInputSamples: Sample OEM input files
-  - \Packages       : BSP specific packages and feature manifest file
-
-For additional source files, see [Windows 10 IoT Core Board Support Package source files](https://github.com/ms-iot/bsp).
-
-### ARM: RPi2
-
-The Raspberry Pi 2 BSP.
-
-### ARM: CustomRPi2
-
-A customized version of the Raspberry Pi 2 BSP, where in custom GPIO drivers and device layouts are used.  Because custom drivers are used, the device targeting components are changed to generic components. 
-
-### x86: MBM
-
-Intel MinnowBoard Max Board BSP, supported and serviced by Microsoft. This is for the Intel MinnowBoard Max Boards.
-
-### x86: CustomMBM
-
-CustomMBM is a customized version of the Intel MinnowBoard Max Board BSP, where in custom GPIO drivers and device layouts are used. Because custom drivers are used, the device targeting components are changed to generic components.
-
 ## Related topics
-[Windows 10 IoT Core Board Support Package source files](https://github.com/ms-iot/bsp)
+
+[Windows 10 IoT Core BSPs](https://docs.microsoft.com/windows/iot-core/build-your-image/createbsps)
 
 [Creating your own board support package (BSP)](create-a-new-bsp.md)
 
