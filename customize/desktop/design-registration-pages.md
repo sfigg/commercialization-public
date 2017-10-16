@@ -82,21 +82,8 @@ We require that the files for the in-place links are HTML. These files are rende
 > [!Important]
 > The following tags are prohibited and should not be included in your files:
 >
-> | Tags        |
-> |:------------|
-> | <ul><li>`<script>`</li><li>`<iframe>`</li><li>`<input>`</li>`<img>`</li>`<a>`</li></ul>       |
+> <ul><li>`<script>`</li><li>`<iframe>`</li><li>`<input>`</li><li>`<img>`</li><li>`<a>`</li></ul>
 >
-
-> [!Important]
-> The following tags are prohibited and should not be included in your files:
-> <text-align:left>
-> * `<script>`
-> * `<iframe>`
-> * `<input>`
-> * `<img>`
-> * `<a>`
-> </text>
-
 
 ## <a name="css-example"></a>CSS code example
 
