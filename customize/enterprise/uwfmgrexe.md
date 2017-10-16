@@ -75,11 +75,11 @@ uwfmgr.exe
 
 The following list describes the options and sub-options that are available to use in **uwfmgr.exe**, and it lists the corresponding WMI class or method for each command-line option and sub-option (if available).
 
-* *Help | ?*
+* **Help | ?**
   * Displays command-line help for basic parameters for **uwfmgr.exe**.
-* *Get-Config*
+* **Get-Config**
   * Displays UWF configuration settings for the current and next session.
-* *Filter*
+* **Filter**
   * Configures basic UWF settings.
   * [UWF\_Filter](uwf-filter.md)
   * *Enable*
@@ -97,7 +97,7 @@ The following list describes the options and sub-options that are available to u
   * *Restart*
     * Shuts down the device immediately and restarts, even if the overlay is full or near full. Administrator-level permissions are required to use this command.
     * [UWF\_Filter.RestartSystem](uwf-filterrestartsystem.md)
-* *Volume*
+* **Volume**
   * Configures settings for volumes protected by UWF. If the *&lt;volume&gt;* argument is needed, you can specify a drive letter (for example, `uwfmgr.exe volume protect C:`), or else you can specify all volumes (for example, `uwfmgr.exe volume get-config all`).
   * [UWF\_Volume](uwf-volume.md)
   * *Help | ?*
@@ -111,7 +111,7 @@ The following list describes the options and sub-options that are available to u
   * *Unprotect* *&lt;volume&gt;*
     * Removes the specified volume from the list of volumes that are protected by UWF. UWF stops protecting the volume after the next system restart.
     * [UWF\_Volume.Unprotect](uwf-volumeunprotect.md)
-* *File*
+* **File**
   * Configures file exclusion settings for UWF. If you use the *&lt;file&gt;* argument, it must be fully qualified, including the volume and path. **uwfmgr.exe** uses the volume specified in the *&lt;file&gt;* argument to determine which volume contains the file exclusion list for the file.
   * [UWF\_Volume](uwf-volume.md)
   * *Help | ?*
@@ -131,7 +131,7 @@ The following list describes the options and sub-options that are available to u
   * *Commit-Delete* *&lt;file&gt;*
     * Deletes the specified file from both the overlay and the physical volume. Administrator-level permissions are required to use this command.
     * [UWF\_Volume.CommitFileDeletion](uwf-volumecommitfiledeletion.md)
-* *Registry*
+* **Registry**
   * Configures registry key exclusion settings for UWF.
   * [UWF\_RegistryFilter](uwf-registryfilter.md)
   * *Help | ?*
@@ -151,7 +151,7 @@ The following list describes the options and sub-options that are available to u
   * *Commit-Delete* *&lt;key&gt; \[&lt;value&gt;\]*
     * Deletes the specified registry key and value and commits the deletion. Deletes all values and subkeys if the value is empty, and commits the deletion. Administrator-level permissions are required to use this command.
     * [UWF\_RegistryFilter.CommitRegistryDeletion](uwf-registryfiltercommitregistrydeletion.md)
-* *Overlay*
+* **Overlay**
   * Configures settings for the UWF overlay.
   * [UWF\_Overlay](uwf-overlay.md) and [UWF\_OverlayConfig](uwf-overlayconfig.md)
   * *Help | ?*
@@ -177,7 +177,7 @@ The following list describes the options and sub-options that are available to u
   * *Set-CriticalThreshold* *&lt;size&gt;*
     * Sets the overlay size, in megabytes, at which the driver issues critical notifications for the current session.
     * [UWF\_Overlay.SetCriticalThreshold](uwf-overlaysetcriticalthreshold.md)
-* *Servicing*
+* **Servicing**
   * Configures settings for UWF servicing mode.
   * [UWF\_Servicing](uwf-servicing.md)
   * *Enable*
