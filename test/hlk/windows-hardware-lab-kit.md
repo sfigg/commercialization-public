@@ -16,7 +16,7 @@ This guide provides information about the Hardware Compatibility Program, the te
 
 You can download the HLK from the following location:
 
--   <https://go.microsoft.com/fwlink/p/?LinkId=733613>
+-   <https://go.microsoft.com/fwlink/p/?LinkId=859231>
 
 You can download an offline version of HLK documentation at the following link:
 
