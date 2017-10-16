@@ -19,9 +19,17 @@ You are able to customize the Start layout by:
 * Changing the size of the Start menu
 * Adding new apps and weblinks as tiles to the Start menu
 * Specifying the size and position of the new tiles
+* Specify Start layouts for each region you support
 
-> [!Tip]
-> For an inclusive list of settings you can configure in `LayoutModification.xml`, as well as a full XML Example, see [Start layout XML for desktop editions of Windows 10](https://docs.microsoft.com/en-us/windows/configuration/start-layout-xml-desktop).
+## LayoutModification.xml
+
+The XML schema for `LayoutModification.xml` requires the following order for tags directly under the LayoutModificationTemplate node:
+
+1. LayoutOptions
+1. RequiredStartGroupsCollection
+1. AppendDownloadOfficeTile –OR– AppendOfficeSuite (only one Office option can be used at a time)
+
+For an inclusive list of settings you can configure in `LayoutModification.xml`, a full XML example, guidance on customizing the Start layout per region, and instructions on adding the XML file to the device, see [Start layout XML for desktop editions of Windows 10](https://docs.microsoft.com/en-us/windows/configuration/start-layout-xml-desktop).
 
 ## Customize the size of the Start menu
 
@@ -35,6 +43,7 @@ You have three options for the Start menu size: **small** (one column of tiles),
 Here is how you set the size of the start menu, using LayoutModification.xml.
 
 * To set as small, with one column of tiles:
+
   ```xml
   <LayoutOptions
      StartTileGroupsColumnCount="1"
@@ -68,14 +77,12 @@ You can pin tiles in two OEM groups. These groups can either be set such that al
 
 OEM groups are added at the end of the Start menu; you will not be able to manipulate or otherwise change the Microsoft groups and tiles within them. The default layout is applied based on SKU and region and then the LayoutModification.xml or Unattend.xml file is processed. The first, bigger OEM group displays the first two rows by default, with only the titles of the tiles on the third row displaying. The smaller OEM group displays only the titles of the top row.
 
+Here is an example that shows how the OEM groups are displayed in Start.
+
+![Start layout with 2 OEM groups](images/start-layout-oem-groups.png)
+
 > [!Important]
 > Universal apps or Store apps must be pinned to the Start menu to be pre-installed on the device, otherwise they will be removed on any system that uses that layout. Desktop apps do not have to be pinned to the Start menu to be pre-installed on the device.
-
-Some apps on the Start Menu are downloaded dynamically after the Out of Box Experience (OOBE) completes. If the device is on a metered network, or without network connectivity, app downloads are paused, and the user will see down arrows instead of the app name on the app tiles, as in the following image.
-
-![Apps downloading to Start menu](images/dynamically-delivered-apps.png)
-
-The downloads start or resume after the network connects.
 
 ## Customize the size and position of your tiles
 
@@ -115,7 +122,7 @@ To create a web link tile that will open in the default browser, create a .url f
 To create a secondary tile (a web link tile that will open in Microsoft Edge), add a `SecondaryTile` element to `LayoutModification.xml` and specify Edge in the `AppUserModelID` attribute.
 
 > [!Note]
-> The actual Edge tile cannot be customized. The icon, text and the page that it launches must remain the default. 
+> The actual Edge tile cannot be customized. The icon, text and the page that it launches must remain the default.
 
 The OEM-custom icon and supporting text in the tile must:
 
@@ -135,6 +142,14 @@ The OEM-custom icon and supporting text in the tile must:
           Row="0"
           Column="4"/>
 ```
+
+### Dynamically delivered apps
+
+Some apps on the Start Menu are downloaded dynamically after the Out of Box Experience (OOBE) completes. If the device is on a metered network, or without network connectivity, app downloads are paused, and the user will see down arrows instead of the app name on the app tiles, as in the following image.
+
+![Apps downloading to Start menu](images/dynamically-delivered-apps.png)
+
+The downloads start or resume after the network connects.
 
 ## Add an Office suite or Office download tile to Start
 
@@ -176,3 +191,4 @@ Also include an Unattend.xml file specifying the same AppID like this:
 
 * [Start layout XML for desktop editions of Windows](https://docs.microsoft.com/en-us/windows/configuration/start-layout-xml-desktop)
 * [Add the LayoutModification.xml file to the device](https://docs.microsoft.com/en-us/windows/configuration/start-layout-xml-desktop#add-the-layoutmodificationxml-file-to-the-device)
+* [StartTiles Unattend setting](unattend/microsoft-windows-shell-setup-starttiles.md)
