@@ -172,7 +172,6 @@ ms.assetid: 708b0813-217d-4151-a7d9-e5a186af4974
 -   [Verify System.Fundamentals.Security.VirtualizationSupport](5622e73a-c222-455c-a389-44b0bb5cd908.md)
 -   [Verify VESA and CEA required display modes](f62f2b44-53c1-4110-a35e-55b61e52fa22.md)
 -   [Watchdog Timer Test](3831da21-28a9-43c8-8815-853113c9265a.md)
--   [WDDM PnPStop Test - Update and Rollback](eec5499f-719d-4b1a-8704-28a42935ea25.md)
 -   [WDDM PnPStopModeSwitch Test](b36f16ef-b4c7-4d78-b05b-b085a3157483.md)
 -   [WGF Feature Level 9.3 Support](3ae28052-1946-47c4-959a-74a171ae4f09.md)
 -   [WGF Feature Level 9.3 Support (WoW64)](5ca8a48a-76ff-4a44-844c-1fc99af2def6.md)

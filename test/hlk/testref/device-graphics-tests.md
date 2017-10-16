@@ -719,7 +719,6 @@ ms.assetid: 59cf1234-0172-44c7-8e65-7d1c655cd2c3
 -   [D3D9 Overlay - PresentEx](9c3070fe-7827-4056-842c-c6cbed97a8e1.md)
 -   [Depth Bias](686430f8-cc23-4e6f-a40c-c2a7da217b53.md)
 -   [Depth Bias (WoW64)](06e66da4-f103-4ac5-8395-efd1b7d6b5a1.md)
--   [DF - Validate driver INF against component specific requirements.](8206b98d-7bc9-41e1-8217-bd398e71a211.md)
 -   [Discardable Depth Stencil](421907f9-f25c-4411-b49c-72f7c3038d2f.md)
 -   [Discardable Depth Stencil (WoW64)](173aec82-765e-43a1-bdb1-810e3a00b21f.md)
 -   [Discardable Depth Stencil 2-10-10-10](7ed91517-9d6d-41be-9e7a-e53c9d777a19.md)
