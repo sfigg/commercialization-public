@@ -14,164 +14,81 @@ ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-# Keyword (in EventProvider)
 
+# Keyword (in EventProvider)
 
 Describes the Event Tracing for Windows (ETW) keyword for a user-mode provider.
 
+
 ## Element Hierarchy
 
+* \<[WindowsPerformanceRecorder](windowsperformancerecorder.md)\>
+  * \<[Profiles](profiles.md)\>
+    * \<[EventProvider](eventprovider.md)\>
+      * \<[Keywords (in EventProvider)](keywords--in-eventprovider-.md)\>
+        * \<**Keyword (in EventProvider)**\>
+      * \<[CaptureStateOnStart](capturestateonstart.md)\>
+        * \<**Keyword (in EventProvider)**\>
+      * \<[CaptureStateOnSave](capturestateonsave.md)\>
+        * \<**Keyword (in EventProvider)**\>
+    * \<[HeapEventProvider](heapeventprovider.md)\>
+      * \<[Keywords (in EventProvider)](keywords--in-eventprovider-.md)\>
+        * \<**Keyword (in EventProvider)**\>
+    * \<[Profile](profile-wpr.md)\>
+      * \<[Collectors](collectors.md)\>
+        * \<[EventCollectorId](eventcollectorid.md)\>
+          * \<[EventProviders](eventproviders.md)\>
+            * \<[EventProviderId](eventproviderid.md)\>
+              * \<[Keywords (in EventProvider)](keywords--in-eventprovider-.md)\>
+                * \<**Keyword (in EventProvider)**\>
+            * \<[EventProvider](eventprovider.md)\>
+              * \<[Keywords (in EventProvider)](keywords--in-eventprovider-.md)\>
+                * \<**Keyword (in EventProvider)**\>
+              * \<[CaptureStateOnStart](capturestateonstart.md)\>
+                * \<**Keyword (in EventProvider)**\>
+              * \<[CaptureStateOnSave](capturestateonsave.md)\>
+                * \<**Keyword (in EventProvider)**\>
+        * \<[HeapEventCollectorId](heapeventcollectorid.md)\>
+          * \<[HeapEventProviders](heapeventproviders.md)\>
+            * \<[HeapEventProviderId](heapeventproviderid.md)\>
+              * \<[Keywords (in EventProvider)](keywords--in-eventprovider-.md)\>
+                * \<**Keyword (in EventProvider)**\>
+            * \<[HeapEventProvider](heapeventprovider.md)\>
+              * \<[Keywords (in EventProvider)](keywords--in-eventprovider-.md)\>
+                * \<**Keyword (in EventProvider)**\>
 
-&lt;[WindowsPerformanceRecorder](windowsperformancerecorder.md)&gt;
-
-     &lt;[Profiles](profiles.md)&gt;
-
-          &lt;[EventProvider](eventprovider.md)&gt;
-
-               &lt;[Keywords (in EventProvider)](keywords--in-eventprovider-.md)&gt;
-
-                    &lt;**Keyword (in EventProvider)**&gt;
-
-               &lt;[CaptureStateOnStart](capturestateonstart.md)&gt;
-
-                    &lt;**Keyword (in EventProvider)**&gt;
-
-               &lt;[CaptureStateOnSave](capturestateonsave.md)&gt;
-
-                    &lt;**Keyword (in EventProvider)**&gt;
-
-          &lt;[HeapEventProvider](heapeventprovider.md)&gt;
-
-               &lt;[Keywords (in EventProvider)](keywords--in-eventprovider-.md)&gt;
-
-                    &lt;**Keyword (in EventProvider)**&gt;
-
-          &lt;[Profile](profile-wpr.md)&gt;
-
-               &lt;[Collectors](collectors.md)&gt;
-
-                    &lt;[EventCollectorId](eventcollectorid.md)&gt;
-
-                         &lt;[EventProviders](eventproviders.md)&gt;
-
-                              &lt;[EventProviderId](eventproviderid.md)&gt;
-
-                                   &lt;[Keywords (in EventProvider)](keywords--in-eventprovider-.md)&gt;
-
-                                        &lt;**Keyword (in EventProvider)**&gt;
-
-                              &lt;[EventProvider](eventprovider.md)&gt;
-
-                                   &lt;[Keywords (in EventProvider)](keywords--in-eventprovider-.md)&gt;
-
-                                        &lt;**Keyword (in EventProvider)**&gt;
-
-                                   &lt;[CaptureStateOnStart](capturestateonstart.md)&gt;
-
-                                        &lt;**Keyword (in EventProvider)**&gt;
-
-                                   &lt;[CaptureStateOnSave](capturestateonsave.md)&gt;
-
-                                        &lt;**Keyword (in EventProvider)**&gt;
-
-                    &lt;[HeapEventCollectorId](heapeventcollectorid.md)&gt;
-
-                         &lt;[HeapEventProviders](heapeventproviders.md)&gt;
-
-                              &lt;[HeapEventProviderId](heapeventproviderid.md)&gt;
-
-                                   &lt;[Keywords (in EventProvider)](keywords--in-eventprovider-.md)&gt;
-
-                                        &lt;**Keyword (in EventProvider)**&gt;
-
-                              &lt;[HeapEventProvider](heapeventprovider.md)&gt;
-
-                                   &lt;[Keywords (in EventProvider)](keywords--in-eventprovider-.md)&gt;
-
-                                        &lt;**Keyword (in EventProvider)**&gt;
 
 ## Syntax
-
 
 ```
 <Keyword Value string
 </Keyword>
 ```
 
+
 ## Attributes and Elements
 
 
 ### Attributes
 
-<table>
-<colgroup>
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Attribute</th>
-<th>Description</th>
-<th>Data type</th>
-<th>Required</th>
-<th>Default</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><strong>Value</strong></p></td>
-<td><p>String that is the name of the ETW event.</p></td>
-<td><p>string</p></td>
-<td><p>Yes</p></td>
-<td><p></p></td>
-</tr>
-</tbody>
-</table>
+| Attribute | Description                               | Data type | Required | Default |
+| :-------- | :---------------------------------------- | :-------- | :------- | :------ |
+| **Value** | String that is the name of the ETW event. | string    | Yes      |         |
 
- 
 
 ### Child Elements
 
 None.
 
+
 ### Parent Elements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>[Keywords (in EventProvider)](keywords--in-eventprovider-.md)</p></td>
-<td><p>Represents a collection of event provider keywords.</p></td>
-</tr>
-</tbody>
-</table>
+| Element                                                       | Description                                         |
+| :------------------------------------------------------------ | :-------------------------------------------------- |
+| [Keywords (in EventProvider)](keywords--in-eventprovider-.md) | Represents a collection of event provider keywords. |
 
- 
 
 ## Related topics
 
-
 [Elements](elements.md)
-
- 
-
- 
-
-
-
-
-
-
 
