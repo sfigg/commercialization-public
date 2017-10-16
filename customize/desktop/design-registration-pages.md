@@ -80,13 +80,16 @@ Use two different styles for headers and body content.
 We require that the files for the in-place links are HTML. These files are rendered in a flyout. Documents in the flyout are sandboxed, such that links to external and online resources will not function.
 
 > [!Important]
-> The following tags are prohibited and should not be included in your files:<br/>
+> The following tags are prohibited and should not be included in your files:
 >
->: * `<script>`
->: * `<iframe>`
->: * `<input>`
->: * `<img>`
->: * `<a>`
+> | Tags        |
+> |:------------|
+> | `<script>`  |
+> | `<iframe>`  |
+> | `<input>`   |
+> | `<img>`     |
+> | `<a>`       |
+>
 
 > [!Important]
 > The following tags are prohibited and should not be included in your files:<br/>
