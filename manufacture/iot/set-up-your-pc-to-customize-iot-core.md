@@ -26,14 +26,14 @@ Here's how we'll refer to them:
 
 -   **IoT device**: A test device or board that represents all of the devices in a single model line.
 
-    For our examples, you'll need a Raspberry Pi 3. To see more options, see [Device options](https://developer.microsoft.com/windows/iot/explore/deviceoptions).
+    For our examples, you'll need a Raspberry Pi 3. To see more options, see [Suggested Boards and SoCs](https://docs.microsoft.com/windows/iot-core/learn-about-hardware/suggestedboards).
 
 -   An **HDMI cable**, and a **monitor or TV** with a dedicated HDMI input. We'll use this to verify that the image is loaded and that our sample apps are running.
 
 ## <span id="Storage"></span><span id="storage"></span><span id="STORAGE"></span>Storage
 
 
--   A **Micro SD card**. (Note, we just use this for our guide. You can build devices with other drives. Learn more about existing [supported storage](https://developer.microsoft.com/windows/iot/docs/hardwarecompatlist#Storage) options.)
+-   A **Micro SD card**. (Note, we just use this for our guide. You can build devices with other drives. Learn more about existing [supported storage](https://docs.microsoft.com/windows/iot-core/learn-about-hardware/HardwareCompatList#other-hardware-peripherals) options.)
 
     If your technician PC doesn't include a Micro SD slot, you may also need an adapter.
 
@@ -51,7 +51,7 @@ Here's how we'll refer to them:
 
 5.  [Windows 10 IoT Core Dashboard](http://go.microsoft.com/fwlink/p/?LinkId=708576).
 
-6.  [The Raspberry Pi BSP](https://github.com/ms-iot/iot-adk-addonkit/releases/download/RPiBSP/rpibsp.zip). Since this lab uses a Raspberry Pi, you'll need to download the Raspberry Pi BSP. If you're working with a device other than Raspberry Pi, visit the [Windows 10 IoT Core BSP](https://developer.microsoft.com/en-us/windows/iot/docs/bsp) page to download other BSPs.
+6.  [The Raspberry Pi BSP](https://github.com/ms-iot/iot-adk-addonkit/releases/download/RPiBSP/rpibsp.zip). Since this lab uses a Raspberry Pi, you'll need to download the Raspberry Pi BSP. If you're working with a device other than Raspberry Pi, visit the [Windows 10 IoT Core BSP](https://docs.microsoft.com/windows/iot-core/build-your-image/createbsps) page to download other BSPs.
 
 Other helpful software:
 
