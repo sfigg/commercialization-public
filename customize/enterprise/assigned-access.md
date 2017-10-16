@@ -18,12 +18,11 @@ You can use assigned access to set up single-function devices, such as restauran
 In addition to configuring assigned access, you can also configure optional features to further personalize the assigned access experience. Some of the optional features include power button availability and welcome screen elements.
 
 ## Requirements
-
 Windows 10 Enterprise, Windows 10 Education, or Windows 10 Pro.
 
 ## Suggested settings
 
-For the most secure assigned access experience, we recommend that you configure the settings as defined in [Complementary settings for assigned access](create-a-kiosk-image.md#other-aa-settings) and [Other settings to lock down](create-a-kiosk-image.md#lockdown-settings).
+For the most secure assigned access experience, we recommend that you configure the settings as defined in [Complementary settings for assigned access](create-a-kiosk-image.md#assigned-access) and [Other settings to lock down](create-a-kiosk-image.md#lockdown-settings).
 
 ## Interactions and interoperability
 

@@ -1,9 +1,6 @@
 ---
 title: UWF servicing screen saver
 description: UWF servicing screen saver
-MS-HAID:
-- 'p\_embedded.uwf\_servicing\_screen\_saver\_blue'
-- 'p\_enterprise\_customizations.uwf\_servicing\_screen\_saver'
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
