@@ -1,7 +1,5 @@
 # [Manufacture](index.md)
 
-## [What's new in Windows manufacturing](whats-new-in-windows-manufacturing.md)
-
 ## [Desktop manufacturing](desktop/index.md)
 
 ### [Deployment guides and walkthroughs](desktop/windows-10-guides-and-walkthroughs.md)
