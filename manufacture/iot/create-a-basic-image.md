@@ -27,7 +27,7 @@ See [Get the tools needed to customize Windows IoT Core](set-up-your-pc-to-custo
 
 ### Set your OEM name (one-time only)
 
--   Open the file **C:\\IoT-ADK-AddonKit\\Tools\\setOEM.cmd** in Notepad, and modify it with your company name. We've added this variable to help you create packages with names that are easy to differentiate from those provided from other manufacturers you're working with.
+-   Open the file **C:\\IoT-ADK-AddonKit\\Tools\\setOEM.cmd** in Notepad, and modify it with your company name. We've added this variable to help you create packages with names that are easy to differentiate from those provided from other manufacturers you're working with. Only alphanumeric characters are supported in the OEM_NAME as this is used as a prefix for various generated file names.
 
     ```
     set OEM_NAME=Fabrikam
@@ -67,7 +67,7 @@ The certificates are added to the root. To learn more, see [Set up the signing e
 cd c:\BSP
 build.cmd
 ```
-For more information on available bsps, see [Windows 10 IoT Core BSPs](https://docs.microsoft.com/windows/iot-core/commercialize-your-device/CreateBSP).
+For more information on available bsps, see [Windows 10 IoT Core BSPs](https://docs.microsoft.com/windows/iot-core/build-your-image/createbsps).
 
 ### Build packages
 
@@ -86,9 +86,9 @@ From the IoT Core Shell, create a new product folder that uses the Rpi2 BSP. Thi
 newproduct ProductA rpi2
 ```
     
-The BSP name is the same as the folder name for the BSP. You can see which BSPs are available by looking in the C:\IoT-ADK-AddonKit\Source-\<arch>\BSP folders.
+The BSP name is the same as the folder name for the BSP. You can see which BSPs are available by looking in the `C:\IoT-ADK-AddonKit\Source-\<arch>\BSP` folders.
 
-This creates the folder: C:\\IoT-ADK-AddonKit\\Source-&lt;arch&gt;\\Products\\ProductA.
+This creates the folder: `C:\\IoT-ADK-AddonKit\\Source-&lt;arch&gt;\\Products\\ProductA`.
 
 ### <span id="Build_an_image"></span>Build an image
 
@@ -100,7 +100,7 @@ This creates the folder: C:\\IoT-ADK-AddonKit\\Source-&lt;arch&gt;\\Products\\Pr
     buildimage ProductA test
     ```
 
-    This builds an FFU file with your basic image at C:\\IoT-ADK-AddonKit\\Build\\&lt;arch&gt;\\ProductA\\Test.
+    This builds an FFU file with your basic image at `C:\\IoT-ADK-AddonKit\\Build\\&lt;arch&gt;\\ProductA\\Test`.
 
     Troubleshooting:
 	
