@@ -43,7 +43,7 @@
 ##### [Configure More than Four Partitions on a BIOS/MBR-Based Hard Disk](desktop/configure-more-than-four-partitions-on-a-biosmbr-based-hard-disk.md)
 ##### [Configure Multiple Hard Drives](desktop/configure-multiple-hard-drives.md)
 ##### [Capture and Apply Windows, System, and Recovery Partitions](desktop/capture-and-apply-windows-system-and-recovery-partitions.md)
-##### [Deploy Windows using Full Flash Update (FFU)](desktop/deploy-windows-using-full-flash-update--ffu.md)
+##### [Windows Full Flash Update (FFU) images](desktop/deploy-windows-using-full-flash-update--ffu.md)
 ##### [WIM vs. VHD  vs. FFU: comparing image file formats](desktop/wim-vs-ffu-image-file-formats.md)
 ##### [Compact OS, single-instancing, and image optimization](desktop/compact-os.md)
 ##### [Factory Encrypted Drives](desktop/factory-encrypted-drives.md)

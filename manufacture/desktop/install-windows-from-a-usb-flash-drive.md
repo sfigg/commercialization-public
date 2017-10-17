@@ -17,7 +17,7 @@ ms.technology: windows-oem
 You can install Windows on a device without a DVD drive by using a USB flash drive. 
 
 > [!Note]
-> If you are looking for a tool that downloads Windows 10 and creates a bootable Windows installation USB drive, see [Download Windows 10](https://www.microsoft.com/en-us/software-download/windows10).
+> If you're looking for a tool that downloads Windows 10 and creates a bootable USB Windows installation drive, see [Download Windows 10](https://www.microsoft.com/en-us/software-download/windows10).
 
 This topic covers how to create a bootable Windows installation USB drive from a Windows 10 install .iso or DVD.
 
