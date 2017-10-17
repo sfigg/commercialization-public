@@ -789,7 +789,7 @@ In this section we'll show you how to service Windows 10 inbox apps in your moun
 
 Starting with Windows 10, version 1703, inbox apps won't get monthly updates. Go to https://microsoftoem.com and get the App Update OPK. This package includes the Windows 10 inbox apps for the most current Windows release.
 
-1. Extract the OPK App Update package to a folder, for example, E:\apps\amd64.
+1. Extract the App Update OPK to a folder, for example, E:\apps\amd64.
 2. For Windows 10, version 1709, add the HEVC codec from the App Update OPK.  Note that the HEVC codec is currently not available as an .appxbundle package, so you'l have to use the .appx packages.
     
     For 64-bit Windows:
