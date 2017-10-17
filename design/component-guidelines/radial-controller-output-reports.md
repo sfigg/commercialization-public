@@ -17,7 +17,7 @@ This topic details the HID output reports that are used for radial controller ha
 
 ## Haptic feedback collection (optional)
 
-If a Windows radial controller device supports haptic feedback, it can allow the system and applications to take advantage of it by including a haptic feedback collection (Page **0x0E**, Usage **0x01**) within the Windows radial controller TLC. For more information on how the HID specification supports haptic feedback, please consult the new [Haptics page ](http://www.usb.org/developers/hidpage/HUTRR63b_-_Haptics_Page_Redline.pdf) ratification to the HID specification.
+If a Windows radial controller device supports haptic feedback, it can allow the system and applications to take advantage of it by including a haptic feedback collection (Page **0x0E**, Usage **0x01**) within the Windows radial controller TLC. For more information on how the HID specification supports haptic feedback, please consult the [Haptics page ](http://www.usb.org/developers/hidpage/HUTRR63b_-_Haptics_Page_Redline.pdf) ratification to the HID specification.
 
 The host uses the following usages in an output report (through the haptic feedback collection) to allow the host to issue haptic feedback events to the Windows radial controller device. If a device chooses to expose a haptic feedback collection, some usages are mandatory to allow host-initiated haptic feedback to be supported.
 
