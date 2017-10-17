@@ -14,98 +14,55 @@ ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-# PrepareSystem
 
+# PrepareSystem
 
 Indicates whether to prepare the system for an [OnOffTransitionConfiguration](onofftransitionconfiguration.md) element.
 
+
 ## Element Hierarchy
 
+* \<[WindowsPerformanceRecorder](windowsperformancerecorder.md)\>
+  * \<[OnOffTransitionConfigurations](onofftransitionconfigurations.md)\>
+    * \<[OnOffTransitionConfiguration](onofftransitionconfiguration.md)\>
+      * \<**PrepareSystem**\>
 
-&lt;[WindowsPerformanceRecorder](windowsperformancerecorder.md)&gt;
-
-     &lt;[OnOffTransitionConfigurations](onofftransitionconfigurations.md)&gt;
-
-          &lt;[OnOffTransitionConfiguration](onofftransitionconfiguration.md)&gt;
-
-               &lt;**PrepareSystem**&gt;
 
 ## Syntax
-
 
 ```
 <PrepareSystem Value = boolean>
 </PrepareSystem>
 ```
 
+
 ## Attributes and Elements
 
 
 ### Attributes
 
-<table>
-<colgroup>
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Attribute</th>
-<th>Description</th>
-<th>Data type</th>
-<th>Required</th>
-<th>Default</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><strong>Value</strong></p></td>
-<td><p>Indicates whether to prepare the system.</p></td>
-<td><p>boolean</p></td>
-<td><p>Yes</p></td>
-<td><p></p></td>
-</tr>
-</tbody>
-</table>
+| Attribute | Description                              | Data type | Required | Default |
+| :-------- | :--------------------------------------- | :-------- | :------- | :------ |
+| **Value** | Indicates whether to prepare the system. | boolean   | Yes      |         |
 
- 
 
 ### Child Elements
 
 None.
 
+
 ### Parent Elements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>[OnOffTransitionConfiguration](onofftransitionconfiguration.md)</p></td>
-<td><p>Represents an on/off transition configuration.</p></td>
-</tr>
-</tbody>
-</table>
+| Element                                                         | Description                                    |
+| :-------------------------------------------------------------- | :--------------------------------------------- |
+| [OnOffTransitionConfiguration](onofftransitionconfiguration.md) | Represents an on/off transition configuration. |
 
- 
 
 ## Example
 
-
 The following code example shows how to configure this element.
 
-```
+```xml
 <OnOffTransitionConfiguration
   Id="OnOffTransitionConfiguration_Default_Boot"
   Name="OnOffTransitionConfiguration_Default_Boot"
@@ -118,18 +75,8 @@ The following code example shows how to configure this element.
 </OnOffTransitionConfiguration>
 ```
 
+
 ## Related topics
 
-
 [Elements](elements.md)
-
- 
-
- 
-
-
-
-
-
-
 
