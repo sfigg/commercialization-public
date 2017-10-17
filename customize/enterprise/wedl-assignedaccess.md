@@ -11,16 +11,13 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # WEDL\_AssignedAccess
-
 
 This Windows Management Instrumentation (WMI) provider class configures settings for assigned access.
 
 ## Syntax
 
-
-```
+```powershell
 class WEDL_AssignedAccess {
     [Key] string UserSID;
     [Read, Write] string AppUserModelId;
@@ -29,7 +26,6 @@ class WEDL_AssignedAccess {
 ```
 
 ## Members
-
 
 The following tables list any methods and properties that belong to this class.
 
@@ -119,18 +115,15 @@ This class contains no methods.
 </tbody>
 </table>
 
- 
-
 ### Remarks
 
 Changes to assigned access do not affect any sessions that are currently signed in; you must sign out and sign back in.
 
 ## Example
 
-
 The following Windows PowerShell script demonstrates how to use this class to set up an assigned access account.
 
-```
+```powershell
 #
 #---Define variables---
 #
@@ -190,13 +183,13 @@ Set-WmiInstance -class WEDL_AssignedAccess -ComputerName $COMPUTER -Namespace $N
         UserSID = $AssignedAccessUserSID;
         AppUserModelId = $AppAUMID
         } | Out-Null;
-    
-# Confirm that the settings were created properly.    
-    
+
+# Confirm that the settings were created properly.
+
 $AssignedAccessConfig = get-WMIObject -namespace $NAMESPACE -computer $COMPUTER -class WEDL_AssignedAccess
 
 if ($AssignedAccessConfig) {
-        
+
     "Set up assigned access for the " + $AssignedAccessAccount + " account."
     "  UserSID = " + $AssignedAccessConfig.UserSid
     "  AppModelId = " + $AssignedAccessConfig.AppUserModelId
@@ -210,29 +203,13 @@ if ($AssignedAccessConfig) {
 
 ## Requirements
 
-
-|                       |           |
-|-----------------------|-----------|
 | Windows Edition       | Supported |
+|:----------------------|:----------|
 | Windows 10 Home       | No        |
 | Windows 10 Pro        | Yes       |
 | Windows 10 Enterprise | Yes       |
 | Windows 10 Education  | Yes       |
 
- 
-
 ## Related topics
 
-
 [Assigned access](assigned-access.md)
-
- 
-
- 
-
-
-
-
-
-
-

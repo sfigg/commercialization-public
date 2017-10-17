@@ -14,22 +14,19 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # UWF master servicing script
-
 
 The UWF master servicing script (UwfServicingMasterScript.cmd) is located in the \\Windows\\System32 folder.
 
 ## UwfServicingMasterScript.cmd
 
-
 The full UWF master servicing script follows:
 
-```
-REM servicing of the device with UWF installed. The script will 
-REM call UWF manager application to update the system with the 
+```powershell
+REM servicing of the device with UWF installed. The script will
+REM call UWF manager application to update the system with the
 REM latest available updates.
-REM The script will detect whether the update operation 
+REM The script will detect whether the update operation
 REM ended successfully or requires a reboot.
 REM
 REM The script will change the "SERVICING" state of the device
@@ -37,7 +34,7 @@ REM only when the update operation results in a "SUCCESS".
 REM A state change of the device requires a reboot.
 REM
 REM If the update operation requires a "REBOOT" the script will
-REM reboot device without changing the "SERVICING" state. The 
+REM reboot device without changing the "SERVICING" state. The
 REM Will then run again on the following reboot until
 REM the update operation either return a "SUCCESS" or a "ERROR"
 REM
@@ -45,12 +42,12 @@ REM Any third-party script that needs to run before the state
 REM change should run in the UPDATE_SUCCESS block
 REM
 REM Environment :
-REM It is expected that UWF is turned "OFF", "SERVICING" mode 
+REM It is expected that UWF is turned "OFF", "SERVICING" mode
 REM enabled and all other preconditions
-REM for servicing are in place. 
+REM for servicing are in place.
 REM
 REM
-REM 
+REM
 
 
 echo UpdateAgent starting.
@@ -58,7 +55,7 @@ uwfmgr servicing update-windows
 if ERRORLEVEL 3010 goto UPDATE_REBOOT
 if ERRORLEVEL 0 goto UPDATE_SUCCESS
 echo UpdateAgent returned error =%ERRORLEVEL%
- 
+
 :UPDATE_ERROR
 uwfmgr servicing disable
 echo Restarting system
@@ -95,18 +92,6 @@ EXIT /B
 
 ## Related topics
 
-
 [Service UWF-protected devices](service-uwf-protected-devices.md)
 
 [Unified Write Filter](unified-write-filter.md)
-
- 
-
- 
-
-
-
-
-
-
-

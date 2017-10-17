@@ -1,97 +1,54 @@
 ---
-title: What's new in Windows 10
-description: New features for Windows 10.
+title: What's new in Windows 10, version 1709
+description: New features for Windows 10, version 1709
 ms.assetid: 1E8F0E54-1E5B-495B-848D-260620C7DF4F
 ms.author: alhopper
-ms.date: 05/02/2017
+ms.date: 10/17/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
+# What's new in Windows 10, version 1709
 
-# What's new in Windows 10
+Welcome to Windows 10, version 1709! Here are some resources to get you acquainted with the new features and changes introduced in this version of Windows 10.
 
+## New in design
 
-Welcome to Windows 10! Here are some resources to get you started with the new features that Windows 10 offers.
+| Topic                                      | Description                                                                                             |
+|:-------------------------------------------|:--------------------------------------------------------------------------------------------------------|
+| **Compatibility specifications** | The Windows Hardware Compatibility Program is designed to help your company deliver systems, software, and hardware products that are compatible with Windows and run reliably on Windows 10 and Windows Server 2016. Systems are required to use components which have also passed compatibility testing. [Learn more>>](https://docs.microsoft.com/en-us/windows-hardware/design/compatibility/1709)<br/> The following requirements are new for Windows 10, version 1709: <br/><ul><li>[Device.DevFund.UniversalDriver](https://docs.microsoft.com/en-us/windows-hardware/design/compatibility/1709/device-devfund#Device.DevFund.UniversalDriver)</li><li>  [System.Fundamentals.Security](https://docs.microsoft.com/en-us/windows-hardware/design/compatibility/1709/systems#systemfundamentalssecurity)</li><li>[System.Client.SensorCamera](https://docs.microsoft.com/en-us/windows-hardware/design/compatibility/1709/systems#systemclientsensorcamera)</li><li>[System.Fundamentals.Firmware.HSTI](https://docs.microsoft.com/en-us/windows-hardware/design/compatibility/1709/systems#systemfundamentalsfirmware)</li></ul> |
+| **Security guidelines** | For this release, we’ve consolidated, reviewed, and updated the Windows security content for partner OEMs. There are topics on UEFI, TPM, and VBS requirements; topics on Windows Defender Device Guard, Windows Defender Application Guard, and Windows Defender Credential Guard; a topic on Secure Boot. [Learn more>>](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/oem-security-considerations) |
 
-## Universal Windows driver development
+## New customization options
 
+| Topic                                      | Description                                                                                             |
+|:-------------------------------------------|:--------------------------------------------------------------------------------------------------------|
+| **Customize the Get Help app**             | The Get Help app empowers customers to self-help with troubleshooters, instant answers, Microsoft support articles, and more, before contacting assisted support.<br/> If you have a support app or support website you would like to direct customers towards, you can use unattend.xml to display your support option within the Get Help app. A link to your support app or website is surfaced wherever options to contact support are shown in the Get Help app. The first item in the list will be the link you provided. [Learn more>>](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/customize-get-help-app) |
+| **Customize the Windows power slider**     | The new Windows performance power slider enables end customers to quickly and intelligently trade performance of their system for longer battery life. As a customer switches between the four slider modes to trade performance for battery life (or vice versa), Windows power settings are engaged behind the scenes. You are able to customize the default slider mode for both AC and DC, and can also configure the power settings, and PPM options, that are engaged for each slider mode. [Learn more>>](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/customize-power-slider) |
+| **New and updated Unattend Settings**      | See the Unattend answer files settings that have been added, deprecated, and removed in Windows 10 version 1709. [Learn more>>](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/changed-answer-file-settings-for-windows-10-build-1709) |
 
-Now you can write one driver that runs on all versions of Windows that share a common set of interfaces. A Universal Windows driver can use Kernel-Mode Driver Framework (KMDF), User-Mode Driver Framework (UMDF) 2 or the Windows Driver Model (WDM). Windows Driver Kit (WDK) 10, integrated with Microsoft Visual Studio and Debugging Tools, gives you the tools you need to develop, build, package, deploy, test, and debug drivers that run on multiple Windows 10-based devices. For more information on new features for Universal Windows driver development, see [What's new in driver development](https://msdn.microsoft.com/windows/hardware/drivers/what-s-new-in-driver-development).
+## New in desktop manufacturing
 
-## Windows OneCore
+| Topic                                      | Description                                                                                             |
+|:-------------------------------------------|:--------------------------------------------------------------------------------------------------------|
+| **New FFU tool**         | The new Full Flash Update (FFU) tool allows you to deploy Windows faster on the factory floor by using FFU images. This tool now allows you to use DISM to capture, apply, and mount FFU images. [Learn more>>](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/deploy-windows-using-full-flash-update--ffu)                                    |
+| **WinPE change**         | Starting with WinPE for Windows 10, version 1709, the SMB1 protocol is disabled by default. You can enable SMB1 support by running `dism.exe /enable-feature /featurename=SMB1Protocol-client`. [Learn more>>](https://docs.microsoft.com/windows-hardware/manufacture/desktop/winpe-network-drivers-initializing-and-adding-drivers)                                |
 
+## New in IoT Core manufacturing
 
-Windows OneCore is a platform for any device—phone, tablet, desktop, or IoT. Windows 10 provides a set of API and DDI interfaces that are common to multiple editions of Windows 10. This set of interfaces is called OneCore. With OneCore, you can also be assured that drivers and apps that are created using OneCore interfaces will run on multiple devices. For more information, see [Getting started with Universal Windows drivers](https://msdn.microsoft.com/windows/hardware/drivers/develop/getting-started-with-universal-drivers).
+| Topic                                      | Description                                                                                             |
+|:-------------------------------------------|:--------------------------------------------------------------------------------------------------------|
+| **New packaging standard: wm.xml**         | IoT Core Add-ons v4.x support the new Windows Universal OEM Packages standard (wm.xml). This new packaging schema is built to be compatible with more types of devices in the future. [Learn more>>](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/create-packages)                                    |
+| **Tools added to convert existing packages**   | Update your existing packages to meet the new standards. [Learn more>>](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/create-packages#convert_packages)                   |
 
-## Continuum
+## New in driver development
 
+| Topic                                      | Description                                                                                             |
+|:-------------------------------------------|:--------------------------------------------------------------------------------------------------------|
+| **Universal Windows drivers** | New Universal Driver scenarios and guidance is available. Universal Windows drivers enable developers to create a single driver package that runs across multiple different device types, from embedded systems to tablets and desktop PCs. A Universal Windows driver calls a subset of the interfaces that are available to a Windows driver. [Learn more>>](https://docs.microsoft.com/en-us/windows-hardware/drivers/develop/getting-started-with-universal-drivers) |
+| **Update firmware**   | You can update a removable or in-chassis device's firmware using the Windows Update (WU) service. To do this, you'll provide an update mechanism, implemented as a device driver, that includes the firmware payload. If your device uses a vendor-supplied driver, you have the option of adding the firmware update logic and payload to your existing function driver, or providing a separate firmware update driver package. [Learn more >>](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/updating-device-firmware-using-windows-update) |
+| **INF Registry Conversion Tool** | The Driver Package INF Registry Conversion Tool (reg2inf.exe) tool converts a registry key and its values or a COM .dll implementing a DllRegisterServer routine into a set of INF AddReg directives for inclusion into a driver package INF file. This tool is particularly useful for converting existing INF RegisterDlls directives into INF AddReg directives in order to make an INF file universal. For more info about universal INF files, see Using a Universal INF File. [Learn more>>](https://docs.microsoft.com/en-us/windows-hardware/drivers/devtest/reg2inf) |
+| **WinDbg Preview**         | WinDbg Preview is a brand-new version of the Windows debugger. With more modern visuals, faster windows, and a full-fledged scripting experience, WinDbg Preview builds on the extensible debugger data model and relies on the same engine as today’s WinDbg. Use all the commands, extensions, and workflows just like before. Great new features include Time Travel Debugging (TTD), which records the execution of an app or process, replays it both forwards and backwards, and uses queries to search through the entire trace. You can go back in time to better understand the conditions that lead up to the bug or replay the events multiple times to learn how best to fix a problem. [Learn more>>](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/debugging-using-windbg-preview) |
 
-Continuum is a new, adaptive user experience offered in Windows 10 that optimizes the look and behavior of apps and the Windows shell for the physical form factor and customer's usage preferences.
-
-## Cortana device experience
-
-
-Cortana, the personal assistant technology introduced on Windows 8.1, is now supported on Windows 10 devices. The Speech Platform is used to power all of the speech experiences in Windows 10 such as Cortana and Dictation. To take advantage of the technology, review the guidance and recommendations for the design, development and test of audio input devices intended for use with Microsoft’s Speech Platform.
-
-## Hardware Compatibility program
-
-
-The new Hardware Compatibility program gives you the opportunity to show your customers that your hardware has met Microsoft's standards for compatibility and reliability. If you’re familiar with Windows 8.1 Hardware Certification, you'll find that the tools and functionality are still available with the new Compatibility Program and the new Windows Hardware Lab Kit (HLK) for Windows 10. You can validate compatibility by testing your product with the Windows HLK tests. And, for IHVs, you can now attest to driver signing and get your hardware listed on the certified product list. This program is designed to increase end users confidence that your products are compatible and reliable with Windows 10. For more information on the Windows HLK for Windows 10, see [Windows Hardware Lab Kit User's Guide](https://msdn.microsoft.com/library/windows/hardware/dn939963.aspx).
-
-For more information on the other kits available for Windows 10, see [Kits and tools overview](kits-and-tools-overview.md) and [What's new in kits and tools](what-s-new-in-kits-and-tools.md).
-
-## Internet of Things
-
-
-Quickly iterate and expand on hardware and software designs with the new edition of the Windows 10. It is specifically for small form factor IoT devices with our without a display. This platform brings Windows to a new class of small devices and allows Makers and Windows developers to leverage best-in-class development and debug tools on a diverse set of hardware resources—including the Raspberry Pi 2. Keep up with the latest information about Windows 10 on Raspberry Pi 2 by registering for the [Windows Developer Program for IoT](http://go.microsoft.com/fwlink/?LinkId=534228).
-
-## Deploy smaller Windows images, faster
-
-
-We’ve got new tools that help you save time on the factory floor and space on your hard drives. You can now separately package and apply Windows desktop applications to your images, avoiding some of the time-consuming steps involved in generalizing and recapturing images. You can also use improvements in push-button reset and language packs to save gigabytes on the hard drives. To give the new tools a try, see our [Manufacturing End-to-End Lab](https://msdn.microsoft.com/windows/hardware/commercialize/manufacture/desktop/oem-deployment-of-windows-10-for-desktop-editions).
-
-## Mobile device management
-
-
-With the increasing use of smartphones and tablets at work, there is also an increasing burden on IT administrators to manage these mobile devices. Window 10 provides granular mobile device management (MDM) and converged admin controls for PCs and mobile devices that enable easier device management for organizations. The unified mobile device enrollment protocol is aligned across desktop and mobile devices, which provides a more seamless user experience. We continue to add new configuration settings and policies with each new release of Windows 10. For details, see [What's new in MDM enrollment and management](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/customize/mdm/new-in-windows-mdm-enrollment-management).
-
-Learn about known issues and workarounds for this release in our [WinHEC forums](http://go.microsoft.com/fwlink/p/?LinkId=526372).
-
-## In this section
-
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Term</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p><a href="" id="what-s-new-in-kits-and-tools"></a>[What's new in kits and tools](what-s-new-in-kits-and-tools.md)</p></td>
-<td align="left"><p>Describes the new features of the Windows 10 kits and tools, including an updated Windows Driver Kit (WDK) 10, Windows HLK for Windows 10, Windows Software Development Kit (SDK) for Windows 10 , and Windows Assessment and Deployment Kit (ADK).</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><a href="" id="what-s-new-in-driver-development"></a>[What's new in driver development](https://msdn.microsoft.com/windows/hardware/drivers/what-s-new-in-driver-development)</p></td>
-<td align="left"><p>Describes new features for driver development in Windows 10.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
-
- 
-
- 
-
-
-
-
-
-
+> [!Tip]
+> See [What's new in Driver development](https://docs.microsoft.com/en-us/windows-hardware/drivers/what-s-new-in-driver-development) for an in-depth look.

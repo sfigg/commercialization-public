@@ -13,9 +13,7 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # Windows System Image Manager Overview Topics
-
 
 Windows® System Image Manager (Windows SIM) is a GUI that you use to create and manage answer files. Answer files are .xml files that are used in Windows Setup, **Sysprep**, Deployment Image Servicing and Management (DISM), and other deployment tools to configure and customize the default Windows installation.
 
@@ -23,18 +21,13 @@ You can use answer files to customize different aspects of Windows, including th
 
 You can use Windows SIM to do the following:
 
--   Create and manage answer files.
-
--   Validate the settings of an answer file against a Windows image (.wim) file.
-
--   View all of the configurable component settings in a Windows image.
-
--   Create a configuration set that contains a complete set of portable folders with Setup files.
-
--   Add third-party drivers, applications, or other packages to an answer file.
+* Create and manage answer files.
+* Validate the settings of an answer file against a Windows image (.wim) file.
+* View all of the configurable component settings in a Windows image.
+* Create a configuration set that contains a complete set of portable folders with Setup files.
+* Add third-party drivers, applications, or other packages to an answer file.
 
 ## In This Section
-
 
 <table>
 <colgroup>
@@ -69,22 +62,8 @@ You can use Windows SIM to do the following:
 </tbody>
 </table>
 
- 
-
 ## Related topics
-
 
 [Windows System Image Manager How-to Topics](windows-system-image-manager-how-to-topics.md)
 
 [Windows System Image Manager Reference Topics](windows-system-image-manager-technical-reference.md)
-
- 
-
- 
-
-
-
-
-
-
-

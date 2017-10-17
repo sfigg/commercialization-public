@@ -11,16 +11,13 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # WESL\_UserSetting.RemoveCustomShell
-
 
 This method removes a Shell Launcher configuration for a specific user or group, based on the security identifier (SID).
 
 ## Syntax
 
-
-```
+```powershell
 [Static] uint32 RemoveCustomShell (
     [In, Required] string Sid
 );
@@ -28,47 +25,28 @@ This method removes a Shell Launcher configuration for a specific user or group,
 
 ## Parameters
 
-
 <a href="" id="sid"></a>Sid  
 \[in, required\] A string containing the security identifier (SID) of the user or group that Shell Launcher is configured for.
 
 ## Return Value
 
-
 Returns an HRESULT value that indicates [WMI status](http://go.microsoft.com/fwlink/p/?LinkID=208318) or a [WMI error](http://go.microsoft.com/fwlink/p/?LinkID=208317).
 
 ## Remarks
-
 
 You must restart your device for the changes to take effect.
 
 ## Requirements
 
-
-|                       |           |
-|-----------------------|-----------|
 | Windows Edition       | Supported |
+|:----------------------|:----------|
 | Windows 10 Home       | No        |
 | Windows 10 Pro        | No        |
 | Windows 10 Enterprise | Yes       |
 | Windows 10 Education  | Yes       |
 
- 
-
 ## Related topics
-
 
 [WESL\_UserSetting](wesl-usersetting.md)
 
 [Shell Launcher](shell-launcher.md)
-
- 
-
- 
-
-
-
-
-
-
-

@@ -11,16 +11,13 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # WEKF\_Scancode.Remove
-
 
 This method removes a custom scan code key combination, causing Keyboard Filter to stop blocking the removed combination.
 
 ## Syntax
 
-
-```
+```powershell
 [Static] uint32 Remove(
     [In] string Modifiers,
     [In] uint16 Scancode
@@ -29,20 +26,17 @@ This method removes a custom scan code key combination, causing Keyboard Filter 
 
 ## Parameters
 
-
-<a href="" id="modifiers"></a>*Modifiers*  
+<a href="" id="modifiers"></a>*Modifiers*
 The modifier keys of the combination to remove.
 
-<a href="" id="scancode"></a>*Scancode*  
+<a href="" id="scancode"></a>*Scancode*
 The scan code of the combination to remove.
 
 ## Return Value
 
-
 Returns an HRESULT value that indicates [WMI non-error constant](http://go.microsoft.com/fwlink/p/?LinkID=208318) or a [WMI error constant](http://go.microsoft.com/fwlink/p/?LinkID=208317).
 
 ## Remarks
-
 
 **WEKF\_Scancode.Remove** removes an existing **WEKF\_Scancode** object. If the object does not exist, **WEKF\_Scancode.Remove** returns an error with the value 0x8007007B.
 
@@ -50,31 +44,15 @@ Because this method is static, you cannot call it on an object instance, but mus
 
 ## Requirements
 
-
-|                       |           |
-|-----------------------|-----------|
 | Windows Edition       | Supported |
+|:----------------------|:----------|
 | Windows 10 Home       | No        |
 | Windows 10 Pro        | No        |
 | Windows 10 Enterprise | Yes       |
 | Windows 10 Education  | Yes       |
 
- 
-
 ## Related topics
-
 
 [WEKF\_Scancode](wekf-scancode.md)
 
 [Keyboard Filter](keyboardfilter.md)
-
- 
-
- 
-
-
-
-
-
-
-

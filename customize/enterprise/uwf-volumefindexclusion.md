@@ -11,16 +11,13 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # UWF\_Volume.FindExclusion
-
 
 Checks if a specific file or folder is in the exclusion list for a volume protected by Unified Write Filter (UWF).
 
 ## Syntax
 
-
-```
+```powershell
 UInt32 FindExclusion (
     [in] string FileName,
     [out] boolean bFound 
@@ -29,50 +26,31 @@ UInt32 FindExclusion (
 
 ## Parameters
 
-
-<a href="" id="filename"></a>*FileName*  
+<a href="" id="filename"></a>*FileName*
 \[in\] A string that contains the full path of the file or folder relative to the volume.
 
-<a href="" id="bfound"></a>*bFound*  
+<a href="" id="bfound"></a>*bFound*
 \[out\] Indicates if *FileName* is in the file exclusion list for the volume.
 
 ## Return Value
-
 
 Returns an HRESULT value that indicates [WMI status](http://go.microsoft.com/fwlink/p/?LinkID=208318) or a [WMI error constant](http://go.microsoft.com/fwlink/p/?LinkID=208317).
 
 ## Remarks
 
-
 **FindExclusion** sets *bFound* to **true** only for file and folder exclusions that have been explicitly added to the exclusion list. Files and subfolders that are in an excluded folder are not identified as excluded by **FindExclusion**, unless they have been explicitly excluded.
 
 ## Requirements
 
-
-|                       |           |
-|-----------------------|-----------|
 | Windows Edition       | Supported |
+|:----------------------|:----------|
 | Windows 10 Home       | No        |
 | Windows 10 Pro        | No        |
 | Windows 10 Enterprise | Yes       |
 | Windows 10 Education  | Yes       |
 
- 
-
 ## Related topics
-
 
 [UWF\_Volume](uwf-volume.md)
 
 [Unified Write Filter](unified-write-filter.md)
-
- 
-
- 
-
-
-
-
-
-
-

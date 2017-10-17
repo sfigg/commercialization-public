@@ -11,16 +11,13 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # WEKF\_Settings
-
 
 Enables or disables settings for Keyboard Filter.
 
 ## Syntax
 
-
-```
+```powershell
 class WEKF_Settings {
   [Key] string Name;
   [Read, Write] string Value;
@@ -28,7 +25,6 @@ class WEKF_Settings {
 ```
 
 ## Members
-
 
 The following tables list any methods and properties that belong to this class.
 
@@ -65,8 +61,6 @@ The following tables list any methods and properties that belong to this class.
 </tr>
 </tbody>
 </table>
-
- 
 
 ### Remarks
 
@@ -105,8 +99,6 @@ The following table lists all settings available for Keyboard Filter.
 </tbody>
 </table>
 
- 
-
 One instance of the **WEKF\_Settings** class exists for each valid setting.
 
 Changes to the **DisableKeyboardFilterForAdministrator** setting are applied when an administrator account signs in, and applies to all applications run during the user session. If a user without an administrator account runs an application as an administrator, Keyboard Filter is still enabled, regardless of the **DisableKeyboardFilterForAdministrator** setting.
@@ -120,18 +112,14 @@ The **BreakoutKeyScanCode** setting only applies to accounts where Keyboard Filt
 **Important**  
 On some devices, if the breakout key is pressed too rapidly, the key presses may not register. We recommend that you include a slight pause between each breakout key press.
 
- 
-
-**Warning**  
-When setting the **BreakoutKeyScanCode**, be sure to use the scan code of the key, and not the virtual key value.
-
- 
+> [!Warning]
+> When setting the **BreakoutKeyScanCode**, be sure to use the scan code of the key, and not the virtual key value.
 
 ### Example
 
 The following Windows PowerShell script demonstrates how to use this class to modify the breakout mode key for Keyboard Filter. This example sets the **BreakoutKeyScanCode** setting to the scan code for the Home key on a standard keyboard.
 
-```
+```powershell
 #---Define variables---
 
 $COMPUTER = "localhost"
@@ -156,31 +144,15 @@ $BreakoutMode.put()
 
 ## Requirements
 
-
-|                       |           |
-|-----------------------|-----------|
 | Windows Edition       | Supported |
+|:----------------------|:----------|
 | Windows 10 Home       | No        |
 | Windows 10 Pro        | No        |
 | Windows 10 Enterprise | Yes       |
 | Windows 10 Education  | Yes       |
 
- 
-
 ## Related topics
-
 
 [Keyboard Filter WMI provider reference](keyboardfilter-wmi-provider-reference.md)
 
 [Keyboard Filter](keyboardfilter.md)
-
- 
-
- 
-
-
-
-
-
-
-

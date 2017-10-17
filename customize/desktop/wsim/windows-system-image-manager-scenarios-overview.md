@@ -13,9 +13,7 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # Windows System Image Manager Scenarios Overview
-
 
 Windows® System Image Manager (Windows SIM) creates and manages unattended Windows Setup answer files in a GUI.
 
@@ -23,13 +21,10 @@ Answer files are .xml files that are used during Windows Setup to configure and
 
 For example, you can use Windows SIM to create an answer file that partitions and formats a disk before installing Windows. Windows SIM also changes the default setting for the Windows Internet Explorer® home page, and it configures Windows to boot to audit mode after installation. By modifying settings in the answer file, Windows SIM can also be used to install third-party applications, device drivers, language packs, and other updates.
 
-**Note**  
-Windows SIM does not modify the Windows image itself. You use Windows SIM only to create an answer file. During Windows Setup, the answer file applies the settings to the Windows installation. Windows SIM does not modify the settings in a Windows image (.wim) file.
-
- 
+> [!Note]
+> Windows SIM does not modify the Windows image itself. You use Windows SIM only to create an answer file. During Windows Setup, the answer file applies the settings to the Windows installation. Windows SIM does not modify the settings in a Windows image (.wim) file.
 
 ## <a href="" id="commonwindowssimscenarios"></a>Common Windows SIM Scenarios
-
 
 ### Create a Catalog File for a Windows Image
 
@@ -59,9 +54,7 @@ We recommend that you use the 32-bit version of Windows SIM when you create you
 </tr>
 </tbody>
 </table>
-
  
-
 ### Create a New Answer File for a Windows Image
 
 You can use Windows SIM to create an answer file to be used during Windows Setup. You can view all of the components that are available in a Windows image, add component settings to your answer file, and choose when to apply a component setting by adding it to a particular configuration pass.
@@ -78,22 +71,12 @@ Windows SIM validates the component settings in the answer file against the set
 
 You can add device drivers during Windows Setup by using Windows SIM. Windows Setup uses the following types of drivers:
 
--   **In-box drivers**
+* **In-box drivers**. Windows Setup handles in-box drivers the same way that it handles packages.
+* **Out-of-box drivers**. By using Windows SIM, you can add out-of-box drivers (INF-based) during Windows Setup. Typically, these out-of-box drivers are processed during the **auditSystem** configuration pass. Your .inf-based out-of-box drivers must be in a distribution share subfolder that is called Out-of-Box Drivers. For more information, see [How to Manage Files and Folders in a Distribution Share](http://go.microsoft.com/fwlink/?LinkId=224963).
+* **In-box drivers that are installed with a Windows Installer file**. In-box drivers that require a Windows Installer file are added the same way that applications are added.
 
-    Windows Setup handles in-box drivers the same way that it handles packages.
-
--   **Out-of-box drivers**
-
-    By using Windows SIM, you can add out-of-box drivers (INF-based) during Windows Setup. Typically, these out-of-box drivers are processed during the **auditSystem** configuration pass. Your .inf-based out-of-box drivers must be in a distribution share subfolder that is called Out-of-Box Drivers. For more information, see [How to Manage Files and Folders in a Distribution Share](http://go.microsoft.com/fwlink/?LinkId=224963).
-
--   **In-box drivers that are installed with a Windows Installer file.**
-
-    In-box drivers that require a Windows Installer file are added the same way that applications are added.
-
-    **Note**  
-    By using the **Microsoft-Windows-PnpCustomizationsWinPE** component, you must add boot-critical device drivers that are required for installation during the **windowsPE** configuration pass. For more information, see [How to Add Device Drivers by Using Windows Setup](http://go.microsoft.com/fwlink/?LinkId=224975). You can also use Deployment Image Servicing and Management (**DISM**) to add device drivers to an offline image. For more information, see [How to Add and Remove Drivers Offline](http://go.microsoft.com/fwlink/?LinkId=224967).
-
-     
+> [!Note]
+> By using the **Microsoft-Windows-PnpCustomizationsWinPE** component, you must add boot-critical device drivers that are required for installation during the **windowsPE** configuration pass. For more information, see [How to Add Device Drivers by Using Windows Setup](http://go.microsoft.com/fwlink/?LinkId=224975). You can also use Deployment Image Servicing and Management (**DISM**) to add device drivers to an offline image. For more information, see [How to Add and Remove Drivers Offline](http://go.microsoft.com/fwlink/?LinkId=224967).
 
 ### Add Applications or Drivers to an Answer File
 
@@ -125,20 +108,8 @@ You can also import a package directly into an answer file. The answer file incl
 
 ## Related topics
 
-
 [Windows Setup Technical Reference](http://go.microsoft.com/fwlink/?LinkId=214572)
 
 [Deployment Image Servicing and Management (DISM) Technical Reference](http://go.microsoft.com/fwlink/?LinkId=214571)
 
 [System Preparation (Sysprep) Technical Reference](http://go.microsoft.com/fwlink/?LinkId=214573)
-
- 
-
- 
-
-
-
-
-
-
-

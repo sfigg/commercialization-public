@@ -11,61 +11,39 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # UWF\_Filter.Disable
-
 
 Disables Unified Write Filter (UWF) on the next restart.
 
 ## Syntax
 
-
-```
+```powershell
 UInt32 Disable();
 ```
 
 ## Parameters
 
-
 None.
 
 ## Return Value
-
 
 Returns an HRESULT value that indicates [WMI status](http://go.microsoft.com/fwlink/p/?LinkID=208318) or a [WMI error](http://go.microsoft.com/fwlink/p/?LinkID=208317).
 
 ## Remarks
 
-
 You must use an administrator account to disable UWF.
 
 ## Requirements
 
-
-|                       |           |
-|-----------------------|-----------|
 | Windows Edition       | Supported |
+|:----------------------|:----------|
 | Windows 10 Home       | No        |
 | Windows 10 Pro        | No        |
 | Windows 10 Enterprise | Yes       |
 | Windows 10 Education  | Yes       |
 
- 
-
 ## Related topics
-
 
 [UWF\_Filter](uwf-filter.md)
 
 [Unified Write Filter](unified-write-filter.md)
-
- 
-
- 
-
-
-
-
-
-
-
