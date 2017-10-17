@@ -11,23 +11,19 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # UWF\_ExcludedRegistryKey
-
 
 Contains the registry keys that are currently in the registry key exclusion list for Unified Write Filter (UWF).
 
 ## Syntax
 
-
-```
+```powershell
 class UWF_ExcludedRegistryKey {
     [Read] string RegistryKey;
 };
 ```
 
 ## Members
-
 
 The following tables list any methods and properties that belong to this class.
 
@@ -58,8 +54,6 @@ The following tables list any methods and properties that belong to this class.
 </tbody>
 </table>
 
- 
-
 ### Remarks
 
 UWF\_ExcludedRegistryKeydoes not represent an actual WMI object, and you cannot use this class to get or set registry key exclusions.
@@ -70,31 +64,15 @@ You can use the [UWF\_Volume.AddExclusion](uwf-volumeaddexclusion.md) and [UWF\_
 
 ## Requirements
 
-
-|                       |           |
-|-----------------------|-----------|
 | Windows Edition       | Supported |
+|:----------------------|:----------|
 | Windows 10 Home       | No        |
 | Windows 10 Pro        | No        |
 | Windows 10 Enterprise | Yes       |
 | Windows 10 Education  | Yes       |
 
- 
-
 ## Related topics
-
 
 [Unified Write Filter WMI provider reference](uwf-wmi-provider-reference.md)
 
 [Unified Write Filter](unified-write-filter.md)
-
- 
-
- 
-
-
-
-
-
-
-

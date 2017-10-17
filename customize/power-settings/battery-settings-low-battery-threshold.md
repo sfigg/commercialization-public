@@ -11,25 +11,18 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # Low battery threshold
-
 
 Specifies a percentage of capacity when the low battery action is taken and the [low battery warning](battery-settings-low-battery-warning.md), if enabled, appears.
 
-## <span id="Aliases_and_setting_visibility"></span><span id="aliases_and_setting_visibility"></span><span id="ALIASES_AND_SETTING_VISIBILITY"></span>Aliases and setting visibility
+## <span id="Aliases_and_setting_visibility"></span>Aliases and setting visibility
 
+* **Windows Provisioning:** `LowBatteryLevel`
+* **PowerCfg:** `BATLEVELLOW`
+* **GUID:** 8183ba9a-e910-48da-8769-14ae6dc1170a
+* **Hidden setting:** Yes
 
--   **Windows Provisioning:** `LowBatteryLevel       `
-
--   **PowerCfg:** `BATLEVELLOW         `
-
--   **GUID:** 8183ba9a-e910-48da-8769-14ae6dc1170a
-
--   **Hidden setting:** Yes
-
-## <span id="Values"></span><span id="values"></span><span id="VALUES"></span>Values
-
+## <span id="Values"></span>Values
 
 The value denotes the percentage (%).
 
@@ -50,7 +43,6 @@ The value denotes the percentage (%).
 </tbody>
 </table>
 
-## <span id="Applies_to"></span><span id="applies_to"></span><span id="APPLIES_TO"></span>Applies to
-
+## <span id="Applies_to"></span>Applies to
 
 Available in Windows Vista and later versions of Windows.

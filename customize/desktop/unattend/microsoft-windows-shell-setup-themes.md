@@ -8,7 +8,7 @@ ms.assetid: 2e12464c-73c5-4b99-9506-d5edb166e839
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
 ms.author: alhopper
-ms.date: 09/01/2017
+ms.date: 10/17/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -19,7 +19,7 @@ ms.technology: windows-oem
 
 The `Themes` setting includes settings to customize elements of the Windows visual style, including the window glass color, desktop background, and brand icon.
 
-To customize the Windows default theme, you must include the settings: [DesktopBackground](microsoft-windows-shell-setup-themes-desktopbackground.md) and [ThemeName](microsoft-windows-shell-setup-themes-themename.md). You may also optionally include the settings: [BrandIcon](microsoft-windows-shell-setup-themes-brandicon.md), [ScreenSaver](microsoft-windows-shell-setup-themes-screensaver.md), [UWPAppsUseLightTheme](microsoft-windows-shell-setup-themes-uwpappsuselighttheme.md), and [WindowColor](microsoft-windows-shell-setup-themes-windowcolor.md).
+To customize the Windows default theme, you must include the settings: [DesktopBackground](microsoft-windows-shell-setup-themes-desktopbackground.md) and [ThemeName](microsoft-windows-shell-setup-themes-themename.md). You may also optionally include the settings: [BrandIcon](microsoft-windows-shell-setup-themes-brandicon.md), [UWPAppsUseLightTheme](microsoft-windows-shell-setup-themes-uwpappsuselighttheme.md), and [WindowColor](microsoft-windows-shell-setup-themes-windowcolor.md).
 
 In addition to customizing the Windows default theme, you can also create additional custom themes using .theme files. See instructions in the MSDN topic: [Creating and Installing Theme Files](http://go.microsoft.com/fwlink/?LinkId=141343). Theme files can't be used as the Windows default, however, users can choose to apply one of your custom themes from their **Personalization** settings if desired.
 
@@ -29,7 +29,7 @@ In addition to customizing the Windows default theme, you can also create additi
 <table>
 <colgroup>
 <col width="30%" />
-<col width="80%" />
+<col width="70%" />
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -58,7 +58,7 @@ In addition to customizing the Windows default theme, you can also create additi
 <td><p>Specifies the path to a screen-saver file.</p>
 <div class="alert">
 <strong>Note</strong>  
-<p>We do not recommend setting this deprecated value. Instead, we recommend using automatic power plans to dim the screen. This can help reduce system power consumption. </p>
+<p>In Windows 10, version 1709, this setting is removed. Lockscreen features and policies are preferred over using ScreenSaver. We recommend using automatic power plans to dim the screen. This can help reduce system power consumption.</p>
 </div>
 <div>
  
@@ -113,7 +113,6 @@ The following XML output shows how to set a customized theme.
    <DefaultThemesOff>false</DefaultThemesOff>
    <DesktopBackground>%WINDIR%\web\wallpaper\fabrikam.jpg</DesktopBackground>
    <BrandIcon>%programfiles%\Fabrikam\fabrikam-logo.png</BrandIcon>
-   <ScreenSaver>Bubbles.scr</ScreenSaver>
    <UWPAppsUseLightTheme>false</UWPAppsUseLightTheme>
    <WindowColor>Automatic</WindowColor>
 </Themes>

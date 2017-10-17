@@ -14,9 +14,7 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # Apply OEM updates to UWF-protected devices
-
 
 To apply OEM updates on a Unified Write Filter (UWF)-protected Windows 10 device, you can modify the UPDATE\_SUCCESS block of UWF master servicing script (UwfServicingMasterScript.cmd) to call a custom OEM script that applies any required OEM updates. The OEM script should return control back to the UWF Master Servicing Script when finished.
 
@@ -24,10 +22,9 @@ The UWF Master Servicing Script (UwfServicingMasterScript.cmd) is located in the
 
 ## <a href="" id="update-success--uwfservicingmasterscript-cmd-"></a>UPDATE\_SUCCESS (UwfServicingMasterScript.cmd)
 
-
 The UPDATE\_SUCCESS block of the UWF master servicing script follows:
 
-```
+```powershell
 :UPDATE_SUCCESS
 echo UpdateAgent returned success.
 REM
@@ -49,20 +46,8 @@ goto UPDATE_EXIT
 
 ## Related topics
 
-
 [Service UWF-protected devices](service-uwf-protected-devices.md)
 
 [UWF master servicing script](uwf-master-servicing-script.md)
 
 [Unified Write Filter](unified-write-filter.md)
-
- 
-
- 
-
-
-
-
-
-
-

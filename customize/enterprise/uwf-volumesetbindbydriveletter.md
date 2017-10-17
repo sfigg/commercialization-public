@@ -11,16 +11,13 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # UWF\_Volume.SetBindByDriveLetter
-
 
 Sets the **BindByDriveLetter** property, which indicates if the Unified Write Filter (UWF) volume is bound to the physical volume by drive letter or volume name.
 
 ## Syntax
 
-
-```
+```powereshell
 UInt32 SetBindByDriveLetter(
     boolean bBindByDriveLetter
 );
@@ -28,8 +25,7 @@ UInt32 SetBindByDriveLetter(
 
 ## Parameters
 
-
-<a href="" id="bbindbydriveletter"></a>*bBindByDriveLetter*  
+<a href="" id="bbindbydriveletter"></a>*bBindByDriveLetter*
 A Boolean value that indicates the type of binding to use. The **BindByDriveLetter** property is set to this value.
 
 <table>
@@ -55,45 +51,25 @@ A Boolean value that indicates the type of binding to use. The **BindByDriveLett
 </tbody>
 </table>
 
- 
-
 ## Return Value
-
 
 Returns an HRESULT value that indicates [WMI status](http://go.microsoft.com/fwlink/p/?LinkID=208318) or a [WMI error](http://go.microsoft.com/fwlink/p/?LinkID=208317).
 
 ## Remarks
 
-
 Binding by volume name is considered more reliable than binding by drive letter, since drive letters can change for a volume if devices are added or removed.
 
 ## Requirements
 
-
-|                       |           |
-|-----------------------|-----------|
 | Windows Edition       | Supported |
+|:----------------------|:----------|
 | Windows 10 Home       | No        |
 | Windows 10 Pro        | No        |
 | Windows 10 Enterprise | Yes       |
 | Windows 10 Education  | Yes       |
 
- 
-
 ## Related topics
-
 
 [UWF\_Volume](uwf-volume.md)
 
 [Unified Write Filter](unified-write-filter.md)
-
- 
-
- 
-
-
-
-
-
-
-

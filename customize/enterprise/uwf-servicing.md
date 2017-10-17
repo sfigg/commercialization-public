@@ -11,16 +11,13 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # UWF\_Servicing
-
 
 This class contains properties and methods that enable you to query and control Unified Write Filter (UWF) servicing mode.
 
 ## Syntax
 
-
-```
+```powershell
 class UWF_Servicing {
     [key, read] boolean CurrentSesson;
     [read] boolean ServicingEnabled;
@@ -34,7 +31,6 @@ class UWF_Servicing {
 ```
 
 ## Members
-
 
 The following tables list the methods and properties that belong to this class.
 
@@ -68,8 +64,6 @@ The following tables list the methods and properties that belong to this class.
 </tr>
 </tbody>
 </table>
-
- 
 
 ### <a href="" id="pro"></a>Properties
 
@@ -106,8 +100,6 @@ The following tables list the methods and properties that belong to this class.
 </tbody>
 </table>
 
- 
-
 ### Remarks
 
 This class only has two instances, one for the current session, and another for the next session that follows a restart.
@@ -116,7 +108,7 @@ This class only has two instances, one for the current session, and another for 
 
 The following example shows how to enable and disable UWF servicing mode on a device by using the Windows Management Instrumentation (WMI) provider in a PowerShell script.
 
-```
+```powershell
 $COMPUTER = "localhost"
 $NAMESPACE = "root\standardcimv2\embedded"
 
@@ -146,34 +138,18 @@ if ($nextSession) {
 
     $nextSession.Disable() | Out-Null;
     Write-Host "Servicing mode is now disabled for this device."
-} 
+}
 ```
 
 ## Requirements
 
-
-|                       |           |
-|-----------------------|-----------|
 | Windows Edition       | Supported |
+|:----------------------|:----------|
 | Windows 10 Home       | No        |
 | Windows 10 Pro        | No        |
 | Windows 10 Enterprise | Yes       |
 | Windows 10 Education  | Yes       |
 
- 
-
 ## Related topics
 
-
 [Unified Write Filter](unified-write-filter.md)
-
- 
-
- 
-
-
-
-
-
-
-

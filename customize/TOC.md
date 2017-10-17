@@ -1,12 +1,12 @@
 # [Customize](index.md)
 
-## [What's new in customizations](what-s-new-in-customizations.md)
-
 ## [Customizations for desktop](desktop/desktop-customizations-portal.md)
 ### [Customize the taskbar](desktop/customize-the-taskbar.md)
+### [Customize the Start layout](desktop/customize-start-layout.md)
 ### [Customize the Out of Box Experience (OOBE)](desktop/customize-oobe.md)
 #### [OOBE.xml](desktop/oobexml.md)
 #### [Cortana voice support](desktop/cortana-voice-support.md)
+#### [Connect users to the network](desktop/connect-to-network.md)
 #### [OEM HID pairing](desktop/oem-hid-pairing.md)
 #### [OEM license terms](desktop/oem-license.md)
 #### [OEM registration pages](desktop/oem-registration-pages.md)
@@ -14,8 +14,11 @@
 ##### [Configure OOBE.xml](desktop/registration-pages-oobexml.md)
 ##### [Manage user data](desktop/manage-user-data.md)
 ##### [Collect and upload data](desktop/collect-and-upload-data.md)
+### [Customize the Windows performance power slider](desktop/customize-power-slider.md)
 ### [Set dark mode](desktop/set-dark-mode.md)
+### [Customize the Get Help app](desktop/customize-get-help-app.md)
 ### [Customize the Country and Operator Settings Asset](desktop/customize-cosa.md)
+### [Customize a Specific Absorption Rate mapping table](desktop/customize-sar-mapping-table.md)
 
 ### [Windows System Image Manager Technical Reference](desktop/wsim/windows-system-image-manager-technical-reference.md)
 #### [Windows System Image Manager Overview Topics](desktop/wsim/windows-system-image-manager-overview-topics.md)

@@ -6,19 +6,16 @@ MSHAttr:
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 9fc86f03-6d9e-4899-a4b7-fa8ad7835c65
 ms.author: alhopper
-ms.date: 05/02/2017
+ms.date: 10/17/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
-
 # Predefined key combinations
 
 This topic lists the key combinations that are predefined by a keyboard filter.
 
 You can use the values in the WEKF\_PredefinedKey.Id column to configure the Windows Management Instrumentation (WMI) class [WEKF\_PredefinedKey](wekf-predefinedkey.md).
-
 
 ## <a href="" id="accessibility"></a>Accessibility keys
 
@@ -40,7 +37,6 @@ The following table contains predefined key combinations for controlling applica
 | Alt + F4              | **Alt+F4**            | Close application. |
 | Ctrl + F4             | **Ctrl+F4**           | Close window.      |
 | Windows logo key + F1 | **Win+F1**            | Open Windows Help. |
-
 
 ## <a href="" id="shell"></a>Shell keys
 
@@ -81,18 +77,17 @@ The following table contains predefined key combinations for general UI control:
 | Windows logo key + Page Up             | **Win+PageUp**        | Move a Microsoft Store app to the left monitor.                                                                                        |
 | Windows logo key + Page Down           | **Win+PageDown**      | Move a Microsoft Store app to right monitor.                                                                                           |
 | Windows logo key + Period              | **Win+.**             | Snap the current screen to the left or right gutter. Also blocks the Windows logo key + Shift + Period key combination.              |
-| Windows logo key + C                   | **Win+C**             | Open charms.                                                                                                                         |
+| Windows logo key + C                   | **Win+C**             | Activate Cortana in listening mode (after user has enabled the shortcut through the UI).                                                                                                                         |
 | Windows logo key + I                   | **Win+I**             | Open Settings charm.                                                                                                                 |
 | Windows logo key + K                   | **Win+K**             | Open Connect charm.                                                                                                                  |
-| Windows logo key + H                   | **Win+H**             | Open Share charm.                                                                                                                    |
+| Windows logo key + H                   | **Win+H**             | Start dictation.                                                                                                                  |
 | Windows logo key + Q                   | **Win+Q**             | Open Search charm.                                                                                                                   |
-| Windows logo key + W                   | **Win+W**             | Open Settings Search charm.                                                                                                          |
+| Windows logo key + W                   | **Win+W**             | Open Windows Ink workspace.                                                                                                         |
 | Windows logo key + Z                   | **Win+Z**             | Open app bar.                                                                                                                        |
 | Windows logo key + /                   | **Win+/**             | Open input method editor (IME).                                                                                                      |
 | Windows logo key + J                   | **Win+J**             | Swap between snapped and filled applications.                                                                                        |
 | Windows logo key + Comma               | **Win+,**             | Peek at the desktop.                                                                                                                 |
 | Windows logo key + V                   | **Win+V**             | Cycle through toasts in reverse order.                                                                                               |
-
 
 ## <a href="" id="modifier"></a>Modifier keys
 
@@ -106,7 +101,6 @@ The following table contains predefined key combinations for modifier keys (such
 | Shift            | **Shift**             | Both Shift keys        |
 | Windows logo key | **Windows**           | Both Windows logo keys |
 
-
 ## <a href="" id="security"></a>Security keys
 
 The following table contains predefined key combinations for OS security:
@@ -116,7 +110,6 @@ The following table contains predefined key combinations for OS security:
 | Ctrl + Alt + Delete    | **Ctrl+Alt+Del**      | Open the Windows Security screen. |
 | Ctrl + Shift + Esc     | **Shift+Ctrl+Esc**    | Open Task Manager.                |
 | Windows logo key + L   | **Win+L**             | Lock the device.                  |
-
 
 ## <a href="" id="exshell"></a>Extended shell keys
 
@@ -128,7 +121,6 @@ The following table contains predefined key combinations for extended shell func
 | LaunchMediaSelect   | **LaunchMediaSelect** | Select Media key        |
 | LaunchApp1          | **LaunchApp1**        | Start Application 1 key |
 | LaunchApp2          | **LaunchApp2**        | Start Application 2 key |
-
 
 ## <a href="" id="browser"></a>Browser keys
 
@@ -144,7 +136,6 @@ The following table contains predefined key combinations for controlling the bro
 | BrowserFavorites | **BrowserFavorites**  | Browser Favorites key      |
 | BrowserHome      | **BrowserHome**       | Browser Start and Home key |
 
-
 ## <a href="" id="media"></a>Media keys
 
 The following table contains predefined key combinations for controlling media playback:
@@ -159,7 +150,6 @@ The following table contains predefined key combinations for controlling media p
 | MediaStop       | **MediaStop**         | Stop Media key       |
 | MediaPlayPause  | **MediaPlayPause**    | Play/Pause Media key |
 
-
 ## <a href="" id="surface"></a>Microsoft Surface keyboard keys
 
 The following table contains predefined key combinations for Microsoft Surface devices:
@@ -171,9 +161,6 @@ The following table contains predefined key combinations for Microsoft Surface d
 | Left Shift + Windows logo key | **ShiftWin**          | Search key   |
 | F21                           | **F21**               | Settings key |
 
-
 ## Related topics
 
-
 [Keyboard filter](keyboardfilter.md)
-

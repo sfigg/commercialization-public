@@ -11,23 +11,19 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # WEKF\_CustomKey.Add
-
 
 Creates a new custom key combination and enables Keyboard Filter to block the new key combination.
 
 ## Syntax
 
-
-```
+```powershell
 [Static] uint32 Add(
     [In] string CustomKey
 );
 ```
 
 ## Parameters
-
 
 <a href="" id="customkey"></a>*CustomKey*  
 \[in\] The custom key combination to add. For a list of valid key names, see [Keyboard Filter key names](keyboardfilter-key-names.md).
@@ -39,17 +35,15 @@ Returns an HRESULT value that indicates a [WMI Non-Error Constant](http://go.mic
 
 ## Remarks
 
-
 **WEKF\_CustomKey.Add** creates a new **WEKF\_CustomKey** object and sets the **Enabled** property of the new object to **true**, and the **Id** property to *CustomKey*.
 
 If a **WEKF\_CustomKey** object already exists with the **Id** property equal to *CustomKey*, then **WEKF\_CustomKey.Add** returns an error code and does not create a new object or modify any properties of the existing object. If the existing **WEKF\_CustomKey** object has the **Enabled** property set to **false**, Keyboard Filter does not block the custom key combination.
 
 ## Example
 
-
 The following code demonstrates how to add or enable a custom key that Keyboard Filter will block by using the Windows Management Instrumentation (WMI) providers for Keyboard Filter.
 
-```
+```powershell
 $COMPUTER = "localhost"
 $NAMESPACE = "root\standardcimv2\embedded"
 
@@ -102,10 +96,8 @@ foreach ($objCustomKeyItem in $objCustomKeyList) {
 
 ## Requirements
 
-
-|                       |           |
-|-----------------------|-----------|
 | Windows Edition       | Supported |
+|:----------------------|:----------|
 | Windows 10 Home       | No        |
 | Windows 10 Pro        | No        |
 | Windows 10 Enterprise | Yes       |
@@ -115,18 +107,6 @@ foreach ($objCustomKeyItem in $objCustomKeyList) {
 
 ## Related topics
 
-
 [WEKF\_CustomKey](wekf-customkey.md)
 
 [Keyboard Filter](keyboardfilter.md)
-
- 
-
- 
-
-
-
-
-
-
-

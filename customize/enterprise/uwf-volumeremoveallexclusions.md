@@ -14,31 +14,25 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # UWF\_Volume.RemoveAllExclusions
-
 
 Removes all files and folders from the file exclusion list for a volume protected by Unified Write Filter (UWF).
 
 ## Syntax
 
-
-```
+```powershell
 UInt32 RemoveAllExclusions();
 ```
 
 ## Parameters
 
-
 None.
 
 ## Return Value
 
-
 Returns an HRESULT value that indicates [WMI status](http://go.microsoft.com/fwlink/p/?LinkID=208318) or a [WMI errorj constant](http://go.microsoft.com/fwlink/p/?LinkID=208317).
 
 ## Remarks
-
 
 This command does not remove registry exclusions.
 
@@ -46,31 +40,15 @@ You must use an administrator account to remove file or folder exclusions, and y
 
 ## Requirements
 
-
-|                       |           |
-|-----------------------|-----------|
 | Windows Edition       | Supported |
+|:----------------------|:----------|
 | Windows 10 Home       | No        |
 | Windows 10 Pro        | No        |
 | Windows 10 Enterprise | Yes       |
 | Windows 10 Education  | Yes       |
 
- 
-
 ## Related topics
-
 
 [UWF\_Volume](uwf-volume.md)
 
 [Unified Write Filter](unified-write-filter.md)
-
- 
-
- 
-
-
-
-
-
-
-

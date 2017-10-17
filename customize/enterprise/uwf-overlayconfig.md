@@ -11,16 +11,13 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # UWF\_OverlayConfig
-
 
 Displays and configures global settings for the Unified Write Filter (UWF) overlay. You can modify the maximum size and the type of the UWF overlay.
 
 ## Syntax
 
-
-```
+```powershell
 class UWF_OverlayConfig{
     [key, Read] boolean CurrentSession;
     [read] UInt32 Type;
@@ -36,7 +33,6 @@ class UWF_OverlayConfig{
 ```
 
 ## Members
-
 
 The following tables list the methods and properties that belong to this class.
 
@@ -64,8 +60,6 @@ The following tables list the methods and properties that belong to this class.
 </tr>
 </tbody>
 </table>
-
- 
 
 ### <a href="" id="pro"></a>Properties
 
@@ -108,8 +102,6 @@ The following tables list the methods and properties that belong to this class.
 </tbody>
 </table>
 
- 
-
 ### Remarks
 
 Changes to the overlay configuration take effect on the next restart in which UWF is enabled.
@@ -122,7 +114,7 @@ The following example demonstrates how to change the maximum size or the storage
 
 The PowerShelll script creates two functions to modify the overlay configuration. It then demonstrates how to use the functions. The first function, **Set-OverlaySize**, sets the maximum size of the overlay. The second function, **Set-OverlayType**, sets the type of the overlay to RAM-based or disk-based.
 
-```
+```powershell
 $COMPUTER = "localhost"
 $NAMESPACE = "root\standardcimv2\embedded"
 
@@ -177,7 +169,7 @@ function Set-OverlayType([UInt32] $overlayType) {
         $UWFFilter = Get-WmiObject -class UWF_Filter @commonParams
 
         if ($UWFFilter.CurrentEnabled -eq $false) {
-        
+
 # Get the configuration for the next session after a restart
 
             $nextConfig = Get-WMIObject -class UWF_OverlayConfig -Filter "CurrentSession = false" @CommonParams;
@@ -209,31 +201,15 @@ Set-OverlayType $DiskMode
 
 ## Requirements
 
-
-|                       |           |
-|-----------------------|-----------|
 | Windows Edition       | Supported |
+|:----------------------|:----------|
 | Windows 10 Home       | No        |
 | Windows 10 Pro        | No        |
 | Windows 10 Enterprise | Yes       |
 | Windows 10 Education  | Yes       |
 
- 
-
 ## Related topics
-
 
 [Unified Write Filter WMI provider reference](uwf-wmi-provider-reference.md)
 
 [Unified Write Filter](unified-write-filter.md)
-
- 
-
- 
-
-
-
-
-
-
-
