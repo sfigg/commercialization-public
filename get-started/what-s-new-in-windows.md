@@ -33,6 +33,7 @@ Welcome to Windows 10, version 1709! Here are some resources to get you acquain
 |:-------------------------------------------|:--------------------------------------------------------------------------------------------------------|
 | **New FFU tool**         | The new Full Flash Update (FFU) tool allows you to deploy Windows faster on the factory floor by using FFU images. This tool now allows you to use DISM to capture, apply, and mount FFU images. [Learn more>>](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/deploy-windows-using-full-flash-update--ffu)                                    |
 | **WinPE change**         | Starting with WinPE for Windows 10, version 1709, the SMB1 protocol is disabled by default. You can enable SMB1 support by running `dism.exe /enable-feature /featurename=SMB1Protocol-client`. [Learn more>>](https://docs.microsoft.com/windows-hardware/manufacture/desktop/winpe-network-drivers-initializing-and-adding-drivers)                                |
+| **Media codec changes**  | Starting with Windows 10, version 1709, media codecs, starting with MPEG-2 and HEVC, are now being distributed as part of the App Update OPK. Add the HEVC media codec and its dependencies to your Windows images prior to shipping a device. [Learn more>>](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/add-universal-apps-sxs#step-3-add-the-hevc-codec)                               |
 
 ## New in IoT Core manufacturing
 
