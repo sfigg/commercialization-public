@@ -12,64 +12,18 @@ ms.assetid: dc816554-cfb8-4408-b68b-b2f1831231c9
 
 For NDIS 6.0 miniports, this test verifies that miniport maintains and report statistics from OID\_GEN\_STATISTICS correctly. The test also verifies that the miniport correctly supports statistics OIDs OID\_GEN\_RCV\_OK OID\_GEN\_RCV\_NO\_BUFFER OID\_GEN\_RCV\_ERROR. It sends a bunch of packets to the test adapter and checks that the statistics get incremented. It expects the OID\_GEN\_RCV\_NO\_BUFFER to incremented exactly by the number of packets that were dropped.
 
-## <span id="Test_details"></span><span id="test_details"></span><span id="TEST_DETAILS"></span>Test details
-
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><strong>Specifications</strong></td>
-<td><ul>
-<li>Device.Network.LAN.Base.NDISRequirements</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td><strong>Platforms</strong></td>
-<td><ul>
-<li>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</li>
-<li>Windows 10 for desktop editions x64</li>
-<li>Windows Server 2016 x64</li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td><strong>Supported Releases</strong></td>
-<td><ul>
-<li>Windows 10</li>
-<li>Windows 10, version 1511</li>
-<li>Windows 10, version 1607</li>
-<li>Windows 10, version 1703</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td><strong>Expected run time (in minutes)</strong></td>
-<td>10</td>
-</tr>
-<tr class="odd">
-<td><strong>Category</strong></td>
-<td>Development</td>
-</tr>
-<tr class="even">
-<td><strong>Timeout (in minutes)</strong></td>
-<td>600</td>
-</tr>
-<tr class="odd">
-<td><strong>Requires reboot</strong></td>
-<td>false</td>
-</tr>
-<tr class="even">
-<td><strong>Requires special configuration</strong></td>
-<td>false</td>
-</tr>
-<tr class="odd">
-<td><strong>Type</strong></td>
-<td>automatic</td>
-</tr>
-</tbody>
-</table>
+## Test details
+|||
+|---|---|
+| **Specifications**  | <ul><li>Device.Network.LAN.Base.NDISRequirements</li></ul> |  
+| **Platforms**   | <ul><li>Windows 10 client editions (x86)</li><li>Windows 10, client editions (x64)</li><li>Windows Server 2016 (x64)</li></ul> |
+| **Supported Releases** | <ul><li>Windows 10</li><li>Windows 10, version 1511</li><li>Windows 10, version 1607</li><li>Windows 10, version 1703</li><li>Windows 10, version 1709</li></ul> |
+|**Expected run time (in minutes)**| 10 |
+|**Category**| Development |
+|**Timeout (in minutes)**| 600 |
+|**Requires reboot**| false |
+|**Requires special configuration**| false |
+|**Type**| automatic |
 
  
 

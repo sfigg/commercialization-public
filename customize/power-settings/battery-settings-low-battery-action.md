@@ -11,25 +11,18 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # Low battery action
-
 
 Specifies the action to take when the low batter level is reached.
 
-## <span id="Aliases_and_setting_visibility"></span><span id="aliases_and_setting_visibility"></span><span id="ALIASES_AND_SETTING_VISIBILITY"></span>Aliases and setting visibility
+## <span id="Aliases_and_setting_visibility"></span>Aliases and setting visibility
 
-
--   **Windows Provisioning:** `LowAction       `
-
--   **PowerCfg:** `BATACTIONLOW       `
-
--   **GUID:** d8742dcb-3e6a-4b3c-b3fe-374623cdcf06
-
--   **Hidden setting:** Yes
+* **Windows Provisioning:** `LowAction`
+* **PowerCfg:** `BATACTIONLOW`
+* **GUID:** d8742dcb-3e6a-4b3c-b3fe-374623cdcf06
+* **Hidden setting:** Yes
 
 ## <span id="Values"></span><span id="values"></span><span id="VALUES"></span>Values
-
 
 <table>
 <colgroup>
@@ -68,7 +61,6 @@ Specifies the action to take when the low batter level is reached.
 </tbody>
 </table>
 
-## <span id="Applies_to"></span><span id="applies_to"></span><span id="APPLIES_TO"></span>Applies to
-
+## <span id="Applies_to"></span>Applies to
 
 Available in Windows Vista and later versions of Windows.

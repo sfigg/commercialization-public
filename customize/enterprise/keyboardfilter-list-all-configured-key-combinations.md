@@ -11,16 +11,13 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # List all configured key combinations
-
 
 The following sample Windows PowerShell script uses the Windows Management Instrumentation (WMI) providers for Keyboard Filter to displays all key combination configurations for Keyboard Filter.
 
 ## List-rules.ps1
 
-
-```
+```powershell
 #
 # Copyright (C) Microsoft. All rights reserved.
 #
@@ -71,20 +68,8 @@ Get-WMIObject -class WEKF_Scancode @CommonParams |
 
 ## Related topics
 
-
 [Windows PowerShell script samples for keyboard filter](keyboardfilter-powershell-script-samples.md)
 
 [Keyboard filter WMI provider reference](keyboardfilter-wmi-provider-reference.md)
 
 [Keyboard filter](keyboardfilter.md)
-
- 
-
- 
-
-
-
-
-
-
-

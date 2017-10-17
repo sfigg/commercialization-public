@@ -11,16 +11,13 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # UWF\_RegistryFilter.CommitRegistryDeletion
-
 
 Deletes the specified registry key or registry value and commits the deletion.
 
 ## Syntax
 
-
-```
+```powershell
 UInt32 CommitRegistryDeletion(
     string Registrykey,
     string ValueName
@@ -29,20 +26,17 @@ UInt32 CommitRegistryDeletion(
 
 ## Parameters
 
-
-<a href="" id="registrykey"></a>*RegistryKey*  
+<a href="" id="registrykey"></a>*RegistryKey*
 A string that contains the full path of the registry key that contains the value to be deleted. If *ValueName* is empty, the entire registry key is deleted.
 
-<a href="" id="valuename"></a>*ValueName*  
+<a href="" id="valuename"></a>*ValueName*
 A string that contains the name of the value to be deleted.
 
 ## Return Value
 
-
 Returns an HRESULT value that indicates [WMI status](http://go.microsoft.com/fwlink/p/?LinkID=208318) or a [WMI error](http://go.microsoft.com/fwlink/p/?LinkID=208317).
 
 ## Remarks
-
 
 If *ValueName* is specified, this method will delete only the value specified by *ValueName* that is contained by *RegistryKey*. If *ValueName* is empty, the entire *RegistryKey* and all its sub keys are deleted.
 
@@ -52,31 +46,15 @@ You must use an administrator account to change any properties or call any metho
 
 ## Requirements
 
-
-|                       |           |
-|-----------------------|-----------|
 | Windows Edition       | Supported |
+|:----------------------|:----------|
 | Windows 10 Home       | No        |
 | Windows 10 Pro        | No        |
 | Windows 10 Enterprise | Yes       |
 | Windows 10 Education  | Yes       |
 
- 
-
 ## Related topics
-
 
 [UWF\_RegistryFilter](uwf-registryfilter.md)
 
 [Unified Write Filter](unified-write-filter.md)
-
- 
-
- 
-
-
-
-
-
-
-

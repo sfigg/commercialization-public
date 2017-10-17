@@ -11,16 +11,13 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # UWF\_Servicing.UpdateWindows
-
 
 Calls Windows Update to download and install critical and security updates for your device running Windows 10 Enterprise.
 
 ## Syntax
 
-
-```
+```powershell
 UInt32 UpdateWindows(
     [out] UInt32 UpdateStatus
 );
@@ -28,8 +25,7 @@ UInt32 UpdateWindows(
 
 ## Parameters
 
-
-<a href="" id="updatestatus"></a>*UpdateStatus*  
+<a href="" id="updatestatus"></a>*UpdateStatus*
 \[out\] An integer that contains the status of the Windows Update operation, according to the following table:
 
 <table>
@@ -59,15 +55,11 @@ UInt32 UpdateWindows(
 </tbody>
 </table>
 
- 
-
 ## Return Value
-
 
 Returns an HRESULT value that indicates [WMI status](http://go.microsoft.com/fwlink/p/?LinkID=208318) or a [WMI error](http://go.microsoft.com/fwlink/p/?LinkID=208317).
 
 ## Remarks
-
 
 This method is meant to be used as part of a servicing script. For more information, see [Service UWF-protected devices](service-uwf-protected-devices.md).
 
@@ -75,31 +67,15 @@ This method does not disable or enable Unified Write Filter (UWF). If you call t
 
 ## Requirements
 
-
-|                       |           |
-|-----------------------|-----------|
 | Windows Edition       | Supported |
+|:----------------------|:----------|
 | Windows 10 Home       | No        |
 | Windows 10 Pro        | No        |
 | Windows 10 Enterprise | Yes       |
 | Windows 10 Education  | Yes       |
 
- 
-
 ## Related topics
-
 
 [UWF\_Servicing](uwf-servicing.md)
 
 [Unified Write Filter](unified-write-filter.md)
-
- 
-
- 
-
-
-
-
-
-
-

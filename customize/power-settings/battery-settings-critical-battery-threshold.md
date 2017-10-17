@@ -11,25 +11,18 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # Critical battery threshold
-
 
 Specifies a percentage of capacity when the critical battery action is taken.
 
-## <span id="Aliases_and_setting_visibility"></span><span id="aliases_and_setting_visibility"></span><span id="ALIASES_AND_SETTING_VISIBILITY"></span>Aliases and setting visibility
+## <span id="Aliases_and_setting_visibility"></span>Aliases and setting visibility
 
-
--   **Windows Provisioning:** `CriticalBatteryLevel     `
-
--   **PowerCfg:** `BATLEVELCRIT       `
-
--   **GUID:** 9a66d8d7-4ff7-4ef9-b5a2-5a326ca2a469
-
--   **Hidden setting:** Yes
+* **Windows Provisioning:** `CriticalBatteryLevel`
+* **PowerCfg:** `BATLEVELCRIT`
+* **GUID:** 9a66d8d7-4ff7-4ef9-b5a2-5a326ca2a469
+* **Hidden setting:** Yes
 
 ## <span id="Values"></span><span id="values"></span><span id="VALUES"></span>Values
-
 
 The value denotes the percentage (%).
 
@@ -50,7 +43,6 @@ The value denotes the percentage (%).
 </tbody>
 </table>
 
-## <span id="Applies_to"></span><span id="applies_to"></span><span id="APPLIES_TO"></span>Applies to
-
+## <span id="Applies_to"></span>Applies to
 
 Available in Windows Vista and later versions of Windows.

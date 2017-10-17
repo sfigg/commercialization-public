@@ -16,7 +16,7 @@ ms.technology: windows-oem
 This topic details the HID feature reports that are used for radial controller haptic feedback support in Windows 10, version 1607 and later operating systems.
 
 ## Haptic feedback collection (optional)
-If a Windows radial controller device supports haptic feedback, it can allow the system and applications to take advantage of it by including a haptic feedback collection (Page **0x0E**, usage **0x01**) within the Windows radial controller TLC. For more information on how the HID specification supports haptic feedback, please consult the new [haptics page](http://www.usb.org/developers/hidpage/HUTRR63b_-_Haptics_Page_Redline.pdf) ratification to the HID specification.
+If a Windows radial controller device supports haptic feedback, it can allow the system and applications to take advantage of it by including a haptic feedback collection (Page **0x0E**, usage **0x01**) within the Windows radial controller TLC. For more information on how the HID specification supports haptic feedback, please consult the [haptics page](http://www.usb.org/developers/hidpage/HUTRR63b_-_Haptics_Page_Redline.pdf) ratification to the HID specification.
 
 The host uses the following usages (through the haptic feedback collection) to communicate the haptic feedback waveform support and allow the host to configure the haptic feedback on the Windows radial controller device. If a device chooses to expose a haptic feedback collection, some usages are mandatory to allow automatic haptic feedback configuration to be supported.
 

@@ -11,16 +11,13 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # WESL\_UserSetting
-
 
 This class configures which application Shell Launcher starts based on the security identifier (SID) of the signed in user, and also configures the set of return codes and return actions that Shell Launcher performs when the application exits.
 
 ## Syntax
 
-
-```
+```powershell
 class WESL_UserSetting {
     [read, write, Required] string Sid;
     [read, write, Required] string Shell;
@@ -63,7 +60,6 @@ class WESL_UserSetting {
 ```
 
 ## Members
-
 
 The following tables list any methods and properties that belong to this class.
 
@@ -111,8 +107,6 @@ The following tables list any methods and properties that belong to this class.
 </tr>
 </tbody>
 </table>
-
- 
 
 ### <a href="" id="pro"></a>Properties
 
@@ -223,8 +217,6 @@ The following tables list any methods and properties that belong to this class.
 </tbody>
 </table>
 
- 
-
 ### Remarks
 
 Only one **WESL\_UserSetting** instance exists on a device with Shell Launcher.
@@ -237,10 +229,9 @@ You can find the SID for a user and any groups that the user is a member of by u
 
 ## Example
 
-
 The following Windows PowerShell script demonstrates how to add and remove custom shell configurations for Shell Launcher by using the Windows Management Instrumentation (WMI) providers for Shell Launcher.
 
-```
+```powershell
 $COMPUTER = "localhost"
 $NAMESPACE = "root\standardcimv2\embedded"
 
@@ -260,7 +251,7 @@ function Get-UsernameSID($AccountName) {
     $NTUserSID = $NTUserObject.Translate([System.Security.Principal.SecurityIdentifier])
 
     return $NTUserSID.Value
-    
+
 }
 
 # Get the SID for a user account named "Cashier". Rename "Cashier" to an existing account on your system to test this script.
@@ -307,29 +298,13 @@ $ShellLauncherClass.RemoveCustomShell($Cashier_SID)
 
 ## Requirements
 
-
-|                       |           |
-|-----------------------|-----------|
 | Windows Edition       | Supported |
+|:----------------------|:----------|
 | Windows 10 Home       | No        |
 | Windows 10 Pro        | No        |
 | Windows 10 Enterprise | Yes       |
 | Windows 10 Education  | Yes       |
 
- 
-
 ## Related topics
 
-
 [Shell Launcher](shell-launcher.md)
-
- 
-
- 
-
-
-
-
-
-
-

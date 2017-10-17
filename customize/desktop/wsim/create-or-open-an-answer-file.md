@@ -13,49 +13,38 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # Create or Open an Answer File
-
 
 The following procedure describes how to create a new answer file or open an existing answer file by using Windows® System Image Manager (Windows SIM).
 
 After you create or open an answer file, you can add settings and packages to it. For more information, see [Configure Components and Settings in an Answer File](configure-components-and-settings-in-an-answer-file.md) and [Add a Package to an Answer File](add-a-package-to-an-answer-file.md).
 
-**To create a new answer file**
+## Create an answer file
 
-1.  Open Windows SIM.
+1. Open Windows SIM.
+1. Open a Windows image. For more information, see [Open a Windows Image or Catalog File](open-a-windows-image-or-catalog-file.md).
+1. In the **Answer File** pane, select the top node, and then right-click to select **New Answer File**.
 
-2.  Open a Windows image. For more information, see [Open a Windows Image or Catalog File](open-a-windows-image-or-catalog-file.md).
+## Open an existing answer file
 
-3.  In the **Answer File** pane, select the top node, and then right-click to select **New Answer File**.
+1. Open Windows SIM.
+1. Right-click the **Answer File** pane, and then click **Open Answer File**. The **Open** dialog box appears.
+1. Browse to the existing answer file, and then click **Open**.
 
-**To open an existing answer file**
+The answer file appears in the **Answer File** pane.
 
-1.  Open Windows SIM.
+> [!Note]
+> The Windows image file that generated the answer file also opens if it is still in its original location.
 
-2.  Right-click the **Answer File** pane, and then click **Open Answer File**.
-
-    The **Open** dialog box appears.
-
-3.  Browse to the existing answer file, and then click **Open**.
-
-    The answer file appears in the **Answer File** pane.
-
-    **Note**  
-    The Windows image file that generated the answer file also opens if it is still in its original location.
-
-     
+## Troubleshooting
 
 In some cases, Windows SIM might display validation errors when opening an existing answer file. If this happens, try the following options:
 
--   Problems with individual settings in an answer file appear in the Messages pane. Use this information to identify and address the problem.
-
--   If the answer file opens, but all the settings are listed as “does not exist” in the Messages pane, then the file you’re using might be for the wrong PC architecture – for instance, your original answer file might be based on x86, and your Windows catalog file is amd64. To fix this, you can find and replace processorArchitecture="x86" for processorArchitecture="amd64" and re-open the file.
-
--   If Windows SIM can’t open the file at all, this often means there’s some malformed XML in the answer file. You can often narrow down the problem by cutting out sections of the answer file, one large block at a time, and trying again to re-open the file.
+* Problems with individual settings in an answer file appear in the Messages pane. Use this information to identify and address the problem.
+* If the answer file opens, but all the settings are listed as “does not exist” in the Messages pane, then the file you’re using might be for the wrong PC architecture – for instance, your original answer file might be based on x86, and your Windows catalog file is amd64. To fix this, you can find and replace processorArchitecture="x86" for processorArchitecture="amd64" and re-open the file.
+* If Windows SIM can’t open the file at all, this often means there’s some malformed XML in the answer file. You can often narrow down the problem by cutting out sections of the answer file, one large block at a time, and trying again to re-open the file.
 
 ## Related topics
-
 
 [Windows System Image Manager How-to Topics](windows-system-image-manager-how-to-topics.md)
 
@@ -72,14 +61,3 @@ In some cases, Windows SIM might display validation errors when opening an exist
 [Add a Custom Command to an Answer File](add-a-custom-command-to-an-answer-file.md)
 
 [Find a Component, Setting, or Package in Windows SIM](find-a-component-setting-or-package-in-windows-sim.md)
-
- 
-
- 
-
-
-
-
-
-
-

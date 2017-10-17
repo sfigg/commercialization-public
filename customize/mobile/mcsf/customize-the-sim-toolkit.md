@@ -52,8 +52,7 @@ OEMs can modify the values for the following settings.
 </table>
 
  
-
-To customize these settings using MCSF, see the next section. If you're using Windows provisioning, use Windows Imaging and Configuration Designer (ICD) to customize the settings or write your own Windows provisioning answer file. Regardless of the framework that you use, you must determine if you need to use the per-device or per-IMSI setting.
+To customize these settings using MCSF, see the next section. If you're using Windows provisioning, use Windows Configuration Designer to customize the settings or write your own Windows provisioning answer file. Regardless of the framework that you use, you must determine if you need to use the per-device or per-IMSI setting.
 
 <a href="" id="constraints---none"></a>**Constraints:** None  
 This customization supports: **per-IMSI** value, **per-device** value

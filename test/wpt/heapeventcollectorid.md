@@ -14,26 +14,22 @@ ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-# HeapEventCollectorId
 
+# HeapEventCollectorId
 
 Represents an identifier for a collector of heap events for the profile.
 
+
 ## Element Hierarchy
 
+* \<[WindowsPerformanceRecorder](windowsperformancerecorder.md)\>
+  * \<[Profiles](profiles.md)\>
+    * \<[Profile](profile-wpr.md)\>
+      * \<[Collectors](collectors.md)\>
+        * \<**HeapEventCollectorId**\>
 
-&lt;[WindowsPerformanceRecorder](windowsperformancerecorder.md)&gt;
-
-     &lt;[Profiles](profiles.md)&gt;
-
-          &lt;[Profile](profile-wpr.md)&gt;
-
-               &lt;[Collectors](collectors.md)&gt;
-
-                    &lt;**HeapEventCollectorId**&gt;
 
 ## Syntax
-
 
 ```
 <HeapEventCollectorId Value = IdType>
@@ -47,117 +43,35 @@ Represents an identifier for a collector of heap events for the profile.
 </HeapEventCollectorId>
 ```
 
+
 ## Attributes and Elements
 
 
 ### Attributes
 
-<table>
-<colgroup>
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Attribute</th>
-<th>Description</th>
-<th>Data type</th>
-<th>Required</th>
-<th>Default</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><strong>Value</strong></p></td>
-<td><p>Uniquely identifies the heap event collector.</p></td>
-<td><p>String that must have at least one character and cannot contain colons (:) or spaces.</p></td>
-<td><p>Yes</p></td>
-<td><p></p></td>
-</tr>
-</tbody>
-</table>
+| Attribute | Description                                   | Data type                                                                             | Required | Default |
+| :-------- | :-------------------------------------------- | :------------------------------------------------------------------------------------ | :------- | :------ |
+| **Value** | Uniquely identifies the heap event collector. | String that must have at least one character and cannot contain colons (:) or spaces. | Yes      |         |
 
- 
 
 ### Child Elements
 
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-<th>Description</th>
-<th>Requirement</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>[BufferSize](buffersize.md)</p></td>
-<td><p>Describes the size of each buffer, in KB.</p></td>
-<td><p>Required, exactly 1.</p></td>
-</tr>
-<tr class="even">
-<td><p>[Buffers](buffers.md)</p></td>
-<td><p>Describes either the number of buffers to be allocated when starting a session or the percentage of total memory to be allocated for the session, depending on the value of the <strong>PercentageOfTotalMemory</strong> attribute.</p></td>
-<td><p>Required, exactly 1.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[StackCaching](stackcaching.md)</p></td>
-<td><p>Describes stack caching attributes of collectors.</p></td>
-<td><p></p></td>
-</tr>
-<tr class="even">
-<td><p>[HeapEventProviders](heapeventproviders.md)</p></td>
-<td><p>Represents a collection of heap event provider identifiers and heap event providers.</p></td>
-<td><p>Required, exactly 1.</p></td>
-</tr>
-</tbody>
-</table>
+| Element                                     | Description                                                                                                                                                                                                            | Requirement          |
+| :------------------------------------------ | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------------------- |
+| [BufferSize](buffersize.md)                 | Describes the size of each buffer, in KB.                                                                                                                                                                              | Required, exactly 1. |
+| [Buffers](buffers.md)                       | Describes either the number of buffers to be allocated when starting a session or the percentage of total memory to be allocated for the session, depending on the value of the **PercentageOfTotalMemory** attribute. | Required, exactly 1. |
+| [StackCaching](stackcaching.md)             | Describes stack caching attributes of collectors.                                                                                                                                                                      |                      |
+| [HeapEventProviders](heapeventproviders.md) | Represents a collection of heap event provider identifiers and heap event providers.                                                                                                                                   | Required, exactly 1. |
 
- 
 
 ### Parent Elements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>[Profile](profile-wpr.md)</p></td>
-<td><p>Represents a collection of problem categories and collectors.</p></td>
-</tr>
-</tbody>
-</table>
+| Element                   | Description                                                   |
+| :------------------------ | :------------------------------------------------------------ |
+| [Profile](profile-wpr.md) | Represents a collection of problem categories and collectors. |
 
- 
 
 ## Related topics
 
-
 [Elements](elements.md)
-
- 
-
- 
-
-
-
-
-
-
 

@@ -8,14 +8,12 @@ ms.assetid: 55fecacd-75e3-4b94-a4b8-b2f6313ddf74
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
 ms.author: alhopper
-ms.date: 05/02/2017
+ms.date: 10/17/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # Unattended Windows Setup Reference
-
 
 The Windows Unattended Setup Reference provides a complete listing of all the settings that you can use to automate the configuration and the deployment of Windows 10.
 
@@ -27,42 +25,10 @@ Information about how to use Windows SIM and other deployment tools is available
 
 ## In this section
 
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Topic</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-
-<tr class="even">
-<td><p>[Changed answer file settings for Windows 10 for desktop editions, version 1703](changed-answer-file-settings-for-windows-10-build-1703.md)</p></td>
-<td><p>This topic describes Windows 10, version 1703 answer-file settings that have changed since Windows 10 for desktop editions, version 1607.</p></td>
-</tr><tr class="odd">
-<td><p>[Changed answer file settings for Windows 10 for desktop editions, version 1607](changed-answer-file-settings-for-windows-10-build-1607.md)</p></td>
-<td><p>This topic describes Windows 10, version 1607 answer-file settings that have changed since Windows 10 for desktop editions, version 1511.</p></td>
-</tr>
-<tr class="even">
-<td><p>[Components](components-b-unattend.md)</p></td>
-<td><p>The topics in this section describe all of the unattended settings that can be set in Windows 10 and Windows Server 2016. To determine whether a component applies to the image you’re building, load your image into Windows SIM and search for the component or setting name. For information on how to view components and settings, see [Configure Components and Settings in an Answer File](https://msdn.microsoft.com/library/windows/hardware/dn915078).</p></td>
-</tr>
-</tbody>
-</table>
-
- 
-
- 
-
- 
-
-
-
-
-
-
+| Topic                                 | Description                                                                          |
+|:--------------------------------------|:-------------------------------------------------------------------------------------|
+| [Changed answer file settings for Windows 10 for desktop editions, version 1709](changed-answer-file-settings-for-windows-10-build-1709.md) | This topic describes Windows 10, version 1709 answer-file settings that have changed since Windows 10 for desktop editions, version 1703. |
+| [Changed answer file settings for Windows 10 for desktop editions, version 1703](changed-answer-file-settings-for-windows-10-build-1703.md) | This topic describes Windows 10, version 1703 answer-file settings that have changed since Windows 10 for desktop editions, version 1607. |
+| [Changed answer file settings for Windows 10 for desktop editions, version 1607](changed-answer-file-settings-for-windows-10-build-1607.md) | This topic describes Windows 10, version 1607 answer-file settings that have changed since Windows 10 for desktop editions, version 1511. |
+| [Changed answer file settings for Windows 10 for desktop editions, version 1511](changed-answer-file-settings-for-windows-10-build-1511.md) | This topic describes Windows 10, version 1511 answer-file settings that have changed since Windows 10 for desktop editions was introduced. |
+| [Components](components-b-unattend.md) | The topics in this section describe all of the unattended settings that can be set in Windows 10 and Windows Server 2016. To determine whether a component applies to the image you’re building, load your image into Windows SIM and search for the component or setting name. For information on how to view components and settings, see [Configure Components and Settings in an Answer File](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/wsim/configure-components-and-settings-in-an-answer-file) |

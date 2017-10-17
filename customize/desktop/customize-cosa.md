@@ -10,20 +10,18 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # Customize the Country and Operator Settings Asset
 
+The Country and Operator Settings Asset (COSA) is a database of mobile operator profiles. It is included in Windows 10 as a provisioning package. When a SIM is inserted in a COSA-enabled Windows-based device, the provisioning framework attempts to establish a cellular connection by searching for the matching profile and APN in COSA.
 
-In Windows 10, version 1703, we added the Country and Operator Settings Asset (COSA) database of mobile operator profiles. It is included in Windows 10 as a provisioning package. When a SIM is inserted in a COSA-enabled Windows-based device, the provisioning framework attempts to establish a cellular connection by searching for the matching profile and APN in COSA.  
-
-> [!Note]  
-> This feature is only supported in Windows 10, version 1703 for desktop editions (Home, Pro, Enterprise, and Education)
+> [!Note]
+> This feature is only supported in Windows 10, version 1703 and above for desktop editions (Home, Pro, Enterprise, and Education)
 
 COSA can be extended with OEM-generated provisioning packages during desktop imaging. This enables OEMs to introduce new COSA profiles to the database, as well as replace or extend existing COSA profiles. For example, you can add a profile for a mobile virtual network operator (MVNO) not currently in COSA, or a new partner for Data Marketplace, by creating an answer file that contains the settings. You can also change or remove an existing profile using the `Replace` operator in the existing answer file.
 
 > [!Important]
 > When using `Replace` to change or remove a profile, there are certain settings, listed below, which should not be modified or removed by OEMs. These settings are either system specific, or contractual settings between Microsoft and Mobile Operators (MOs), and their values should be preserved.
-> 
+>
 > * Support DataMarketplace
 > * DataMarketplace Roaming UI Enabled
 > * Account Experience URL
@@ -31,7 +29,7 @@ COSA can be extended with OEM-generated provisioning packages during desktop ima
 > * Branding Icon Name
 > * Use Branding Name on Roaming
 
-> [!Important]  
+> [!Important]
 > Microsoft is collecting the following telemetry data related to the COSA:
 > - AfterMarketProfile – Published when an OEM package adds a new profile. Data includes the profile ID (typically a GUID) as well as the targeting info for the profile (such as MCC, MNC, SPN, and so on).
 > - ProfileReplaced – Published when the OEM package replaces a COSA profile. Data is the profile ID.
@@ -45,7 +43,7 @@ You can add a new profile that is not yet included in the COSA database using th
 
 1. Create an answer file or edit an existing answer file that contains the new profile settings. Here is an example:
 
-  ```
+  ```xml
     <?xml version="1.0" encoding="UTF-8"?>
   <WindowsCustomizations>
     <PackageConfig xmlns="urn:schemas-Microsoft-com:Windows-ICD-Package-Config.v1.0">
@@ -136,25 +134,25 @@ You can add a new profile that is not yet included in the COSA database using th
   </WindowsCustomizations>
   ```
 
-2. Create a provisioning package that includes the answer file. For more information, see [To build a provisioning package](https://docs.microsoft.com/en-us/windows/configuration/provisioning-packages/provisioning-command-line#to_build_a_provisioning_package).
+1. Create a provisioning package that includes the answer file. For more information, see [To build a provisioning package](https://docs.microsoft.com/en-us/windows/configuration/provisioning-packages/provisioning-command-line#to_build_a_provisioning_package).
 
-3. Place your provisioning packages (PPKG) in the following location: %WINDIR%\Provisioning\COSA\OEM.
+1. Place your provisioning packages (PPKG) in the following location: %WINDIR%\Provisioning\COSA\OEM.
 
-4. Perform necessary tests for validation.  
+1. Perform necessary tests for validation.
 
 For a full list of COSA settings, please see [Planning your COSA/APN database submission](https://docs.microsoft.com/en-us/windows-hardware/drivers/mobilebroadband/planning-your-apn-database-submission#complete-the-apncosa-update-spreadsheet).
 
-## To change an existing profile 
+## To change an existing profile
 
-Use the `Replace` operator to make changes to an existing profile. 
+Use the `Replace` operator to make changes to an existing profile.
 
 1. Navigate to the provisioning package (PPKG) where the COSA database is stored. It should be in the following location: %WINDIR%\Provisioning\COSA\Microsoft.
 
-2. Unzip the package and open the answer file. You can use a third-party tool, such as 7-Zip File Manager ([www.7-Zip.org](http://www.7-zip.org/)), to inspect and unzip the package.
+1. Unzip the package and open the answer file. You can use a third-party tool, such as 7-Zip File Manager ([www.7-Zip.org](http://www.7-zip.org/)), to inspect and unzip the package.
 
-3. Edit the answer file to use the `Replace` operator, and only make changes to settings that require modification. Leave all other settings as they are.
+1. Edit the answer file to use the `Replace` operator, and only make changes to settings that require modification. Leave all other settings as they are.
 
-  ```
+  ```xml
   <Replace Name="MobileCarrier1 (Replaced)">
           <TargetRefs>
             <TargetRef Id="aaaaaaaa-d95d-4833-8f13-605691a20fb3" />
@@ -199,27 +197,26 @@ Use the `Replace` operator to make changes to an existing profile.
         </Replace>
    ```
 
-   > [!Note]  
+   > [!Note]
    > The TargetRef ID used by the Replace operator should be the profile GUID used by COSA.
 
-4. Create a provisioning package that includes the modified answer file. For more information, see [To build a provisioning package](https://docs.microsoft.com/en-us/windows/configuration/provisioning-packages/provisioning-command-line#to_build_a_provisioning_package).
+1. Create a provisioning package that includes the modified answer file. For more information, see [To build a provisioning package](https://docs.microsoft.com/en-us/windows/configuration/provisioning-packages/provisioning-command-line#to_build_a_provisioning_package).
 
-5. Place your provisioning packages (PPKG) in the following location: %WINDIR%\Provisioning\COSA\OEM.
+1. Place your provisioning packages (PPKG) in the following location: %WINDIR%\Provisioning\COSA\OEM.
 
-6. Perform necessary tests for validation.  
+1. Perform necessary tests for validation.
 
-
-## To remove an existing profile  
+## To remove an existing profile
 
 Use the `Replace` operator to remove an existing profile. The settings included in a `Replace` element are applied instead of the original COSA settings. If no settings are specified, the operation becomes a Removal.
 
 1. Navigate to the provisioning package (PPKG) where the COSA database is stored. It should be in the following location: %WINDIR%\Provisioning\COSA\Microsoft.
 
-2. Unzip the package and open the answer file. You can use a third-party tool, such as 7-Zip File Manager ([www.7-Zip.org](http://www.7-zip.org/)), to inspect and unzip the package.
+1. Unzip the package and open the answer file. You can use a third-party tool, such as 7-Zip File Manager ([www.7-Zip.org](http://www.7-zip.org/)), to inspect and unzip the package.
 
-3. Edit the answer file to use the `Replace`operator. Delete any settings you wish to remove from the COSA database. Here is an example:  
+1. Edit the answer file to use the `Replace`operator. Delete any settings you wish to remove from the COSA database. Here is an example:  
 
-  ```
+  ```xml
         <Replace Name="MobileCarrier2 (Removed)">
           <TargetRefs>
             <TargetRef Id="bbbbbbbb-aafd-46f3-88b1-014d2bdf879f" />
@@ -227,8 +224,8 @@ Use the `Replace` operator to remove an existing profile. The settings included 
         </Replace>
   ```
 
-4. Create a provisioning package that includes the answer file. For more information, see [To build a provisioning package](https://docs.microsoft.com/en-us/windows/configuration/provisioning-packages/provisioning-command-line#to_build_a_provisioning_package).
+1. Create a provisioning package that includes the answer file. For more information, see [To build a provisioning package](https://docs.microsoft.com/en-us/windows/configuration/provisioning-packages/provisioning-command-line#to_build_a_provisioning_package).
 
-5. Place your provisioning packages (PPKG) in the following location: %WINDIR%\Provisioning\COSA\OEM.
+1. Place your provisioning packages (PPKG) in the following location: %WINDIR%\Provisioning\COSA\OEM.
 
-6. Perform necessary tests for validation.  
+1. Perform necessary tests for validation.

@@ -5,7 +5,7 @@ ms.assetid: a6382d83-5748-4b08-9d9a-46ff576bac54
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'DISM Image Management Command-Line Options'
 ms.author: themar
-ms.date: 05/02/2017
+ms.date: 10/17/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -28,9 +28,8 @@ Adds an additional image to a .wim file. **/Append-Image** compares new files to
 
 This command-line option does not apply to virtual hard disk (VHD) files.
 
-**Important**  
-
-Ensure that you have enough disk space for the **/Append-Image** option to run. If you run out of disk space while the image is being appended, you might corrupt the .wim file.
+> [!Important]
+> Ensure that you have enough disk space for the **/Append-Image** option to run. If you run out of disk space while the image is being appended, you might corrupt the .wim file.
 
 Syntax:
 
@@ -53,6 +52,28 @@ Example:
 Dism /Append-Image /ImageFile:install.wim /CaptureDir:D:\ /Name:Drive-D
 ```
 
+## /Apply-FFU
+
+ For FFU, this command applies a Full Flash Utility (FFU) or split FFU (SFU) to a specified physical drive.
+
+Syntax:
+
+```
+/Apply-Ffu /ImageFile:<path_to_image_file> /ApplyDrive:<physical_drive_path> [/SFUFile:<pattern>]
+```
+
+| Parameter | Description |
+| --- | --- |
+| /ImageFile | The path and name of the FFU image file that will be applied |
+| /ApplyDrive | The path to the phyisical drive that will be imaged |
+| /SFUfile\<pattern> | Optional, for split FFUs that are captured with no compression. Use /SFUFile to reference split FFU files (SFUs). *Pattern* is the naming pattern and location of split files. Use a wildcard character when specifying the naming pattern. For example, "E:\image\install*.sfu" will apply all of the split files in the E:\image directory named install1.sfu, install2.sfu, and so on. |
+
+Example:
+  
+```
+DISM.exe /Apply-Ffu /ImageFile:flash.ffu /ApplyDrive:\\.\PhysicalDrive0
+```
+
 ## /Apply-Image
 
 For WIM, this command applies a Windows image file (.wim) or a split Windows image (.swm) files to a specified partition. Beginning with Windows 10, version 1607, DISM can apply and capture extended attributes (EA).
@@ -72,7 +93,7 @@ DISM.exe /Apply-Image /ImageFile:<path_to_image_file> [/SWMFile:<pattern>] /Appl
 Arguments for FFU
 
 ```
-DISM.exe /Apply-Image /ImageFile:<path_to_image_file> /ApplyDrive:<target_drive> [/SFUFile:<pattern>] [/SkipPlatformCheck]
+DISM.exe /Apply-Image /ImageFile:<path_to_image_file> /ApplyDrive:<target_drive> [/SFUFile:<pattern>] /index:1
 ```
 
 |   Parameter     |   Description     |
@@ -87,7 +108,6 @@ DISM.exe /Apply-Image /ImageFile:<path_to_image_file> /ApplyDrive:<target_drive>
 | /EA      | New in Windows 10, version 1607. Applies extended attributes. |
 | /ApplyDrive  | Specifies the logical drive, using the DeviceID. to get the device ID from the command line, type "wmic diskdrive list brief". Note: a VHD may appear with the name “PhysicalDrive” in the description, for example, \.\PhysicalDrive2.|
 | /SFUFile  | Use /SFUFile to reference split FFU files (SFUs). *Pattern* is the naming pattern and location of split files. |
-|  /SkipPlatformCheck | Use /SkipPlatformCheck if the FFU file being applied is targeted for a device other than the device performing the application. A special FFU file is required. |
 
 Examples:
 
@@ -100,11 +120,11 @@ Dism /apply-image /imagefile:install.swm /swmfile:install.swm /index:1 /applydir
 ```
 
 ```
-DISM.exe /Apply-Ffu /ImageFile:flash.ffu /ApplyDrive:\\.\PhysicalDrive0
+DISM.exe /Apply-image /ImageFile:flash.ffu /ApplyDrive:\\.\PhysicalDrive0 /index:1
 ```
 
 ```
-DISM.exe /Apply-Ffu /ImageFile:flash.sfu /SFUFile:flash*.sfu /ApplyDrive:\\.\PhysicalDrive0
+DISM.exe /Apply-image /ImageFile:flash.sfu /SFUFile:flash*.sfu /ApplyDrive:\\.\PhysicalDrive0 /index:1
 ```
 
 ## /Capture-CustomImage
@@ -136,6 +156,38 @@ Example:
 ```
 Dism /Capture-CustomImage /CaptureDir:D:\
 ```
+
+## /Capture-FFU
+
+Captures an image of a physical drive's partitions to a new .ffu file.
+
+You can capture the image as a full flash utility image (.ffu) file or a set of split ffu (.sfu) files; 
+
+Syntax:
+
+```
+Dism /Capture-Ffu /ImageFile:<path_to_image_file> /CaptureDrive:<physical_drive_path> /Name:<image_name> [/Description:<image_description>] [/PlatformIds:<platform_ids>] [/Compress:{default|none}] 
+```
+
+|   Parameter     |   Description     |
+|-----------------|-------------------|
+| /CaptureDrive | The physical drive to be captured. You can [use diskpart to get drive number information](deploy-windows-using-full-flash-update--ffu.md#capture-an-ffu). Uses the format `\\.\PhysicalDriveX`, where *X* is the disk number that diskpart provides. |
+| /PlatformIds | Not needed for desktop capture. Specifies one or more platform ids (separated with semicolon) to be added to the image. If not specified, platform id will be '*'. |
+| /Compress | Specifies the type of compression used for when capturing. If you'll be splitting the FFU, specify `none`, as DISM doesn't support splitting compressed FFUs. |
+
+
+Examples:
+
+Capture a desktop FFU:
+```
+DISM.exe /Capture-Ffu /ImageFile:install.ffu /CaptureDrive:\\PhysicalDrive0 /Name:Drive0
+```
+
+Capture a desktop FFU that will be split:
+```
+DISM.exe /Capture-Ffu /ImageFile:install.ffu /CaptureDrive:\\PhysicalDrive0 /Name:Drive0 /Compress:none
+```
+
 
 ## /Capture-Image
 
@@ -254,7 +306,7 @@ Dism /Export-Image /SourceImageFile:install.wim /SourceIndex:1 /DestinationImage
 
 ## /Get-MountedImageInfo
 
-Lists the images that are currently mounted and information about the mounted image such as whether the image is valid, read/write permissions, mount location, mounted file path, and mounted image index.
+Returns a list of .ffu, .vhd, .vhdx, and .wim images that are currently mounted, as well s information about the mounted image such as whether the image is valid, read/write permissions, mount location, mounted file path, and mounted image index.
 
 Example: 
 
@@ -264,7 +316,7 @@ Dism /Get-MountedImageInfo
 
 ## /Get-ImageInfo
 
-Displays information about the images that are contained in the .wim, vhd or .vhdx file. When used with the /Index or /Name argument, information about the specified image is displayed, which includes if an image is a WIMBoot image, if the image is Windows 8.1, see Take Inventory of an Image or Component Using DISM. The /Name argument does not apply to VHD files. You must specify /Index:1 for VHD files.
+Displays information about the images that are contained in a .wim, .ffu, .vhd or .vhdx file. When used with the /Index or /Name argument, information about the specified image is displayed, which includes if an image is a WIMBoot image, if the image is Windows 8.1, see [Take Inventory of an Image or Component Using DISM](take-inventory-of-an-image-or-component-using-dism.md). The /Name argument does not apply to VHD files. You must specify /Index:1 for FFU and VHDX files.
 
 Syntax: 
 
@@ -322,8 +374,13 @@ Dism /List-Image /ImageFile:install.wim /Index:1
 
 ## /Mount-Image
 
-Mounts an image from a .wim, .vhd or .vhdx file to the specified directory so that it is available for servicing. An index or name value is required for most operations that specify a .wim file. 
+Mounts an image from a .ffu, .wim, .vhd or .vhdx file to the specified directory so that it is available for servicing. 
 
+When mounting an image, note the following:
+
+- The mount directory must be created, but empty. 
+- An index or name value is required for all image types. WIMs can contain more than image. For FFU and VHD, use `index:1`.
+ 
 Syntax:
 
 ```
@@ -344,6 +401,10 @@ Dism /Mount-Image /ImageFile:C:\test\images\myimage.wim /index:1 /MountDir:C:\te
 
 ```
 Dism /Mount-Image /ImageFile:C:\test\images\myimage.vhd /index:1 /MountDir:C:\test\offline /ReadOnly
+```
+
+```
+Dism /Mount-Image /ImageFile:C:\test\images\WinOEM.ffu /MountDir:C:\test\offline /index:1
 ```
 
 ## /Optimize-Image /WIMBoot
@@ -377,6 +438,32 @@ Example:
 Dism /Remount-Image /MountDir:C:\test\offline
 ```
 
+## /Split-FFU
+
+For FFU, this command splits an existing full-flash update (.ffu) file into multiple read-only split .sfu files. DISM doesn't support splitting compressed FFUs. If you are splitting FFUs, make sure that your FFU was captured with the `/compress:none` option specificed.
+
+This option creates the .sfu files in the specified directory, naming each file the same as the specified /SFUFile, but with an appended number. For example, if you use `c:\flash.sfu`, you'll get a flash.sfu file, a flash2.ffu file, a flash3.sfu file, and so on, defining each portion of the split .sfu file and saving it to the C:\ directory.
+
+Syntax for FFU:
+
+```
+Dism /Split-Ffu /ImageFile:<path_to_image_file> /SFUFile:<pattern> /FileSize:<MB-Size> [/CheckIntegrity]
+```
+
+|   Parameter     |   Description     |
+|-----------------|-------------------|
+| /FileSize     | Specifies the maximum size in megabytes (MB) for each created file. If a single file is larger than the value specified in the /FileSize option, one of the split .swm files that results will be larger than the value specified in the /FileSize option, in order to accommodate the large file.  |
+| /CheckIntegrity | Detects and tracks .wim file corruption when used with capture, unmount, export, and commit operations. /CheckIntegrity stops the operation if DISM detects that the .wim file is corrupted when used with apply and mount operations. |
+| /ImageFile  | Specifies the path of a .FFU file, example: flash.ffu. |
+|  /SFUFile  | References split FFU files (SFUs). *Pattern* is the naming pattern and location of split files. |
+
+Example:
+
+```
+DISM.exe /Split-Ffu /ImageFile:flash.ffu /SFUFile:flash.sfu /FileSize:650
+```
+
+
 ## /Split-Image
 
 For WIM, this command splits an existing .wim file into multiple read-only split .swm files.
@@ -385,44 +472,28 @@ This option creates the .swm files in the specified directory, naming each file 
 
 This command-line option does not apply to virtual hard disk (VHD) files.
 
-For FFU, this command splits an existing full-flash update (.ffu) file into multiple read-only split .sfu files.
-
-The /Split-Ffu option applies only to Windows 10 for desktop editions.
-
-This option creates the .sfu files in the specified directory, naming each file the same as the specified /SFUFile, but with an appended number. For example, if you use `c:\flash.sfu`, you'll get a flash.sfu file, a flash2.ffu file, a flash3.sfu file, and so on, defining each portion of the split .sfu file and saving it to the C:\ directory.
-
 Syntax for WIM:
 
 ```
 Dism /Split-Image /ImageFile:<path_to_image_file> /SWMFile:<path_to_swm> /FileSize:<MB-Size> [/CheckIntegrity]
 ```
 
-Syntax for FFU:
-
-```
-Dism /Split-Ffu /ImageFile:<path_to_image_file> /SFUFile:<pattern> /FileSize:<MB-Size>
-```
 
 |   Parameter     |   Description     |
 |-----------------|-------------------|
 | /FileSize     | Specifies the maximum size in megabytes (MB) for each created file. If a single file is larger than the value specified in the /FileSize option, one of the split .swm files that results will be larger than the value specified in the /FileSize option, in order to accommodate the large file.  |
 | /CheckIntegrity | Detects and tracks .wim file corruption when used with capture, unmount, export, and commit operations. /CheckIntegrity stops the operation if DISM detects that the .wim file is corrupted when used with apply and mount operations. |
-| /ImageFile  | Specifies the path of a .FFU file, example: flash.ffu. |
-|  /SFUFile  | References split FFU files (SFUs). *Pattern* is the naming pattern and location of split files.
+| /ImageFile  | Specifies the path of an image file, example: install.wim. |
 
-Examples:
+Example:
 
 ```
 Dism /Split-Image /ImageFile:install.wim /SWMFile:split.swm /FileSize:650
 ```
 
-```
-DISM.exe /Split-Ffu /ImageFile:flash.ffu /SFUFile:flash.sfu /FileSize:650
-```
-
 ## /Unmount-Image 
 
-Unmounts the .wim, .vhd or .vhdx file and either commits or discards the changes that were made when the image was mounted.
+Unmounts the .ffu, .wim, .vhd or .vhdx file and either commits or discards the changes that were made when the image was mounted.
 
 You must use either the /commit or /discard argument when you use the /Unmount-Image option.
 
@@ -435,7 +506,7 @@ Dism /Unmount-Image /MountDir:<path_to_mount_directory> {/Commit | /Discard} [/C
 |   Parameter     |   Description     |
 |-----------------|-------------------|
 | /CheckIntegrity | Detects and tracks .wim file corruption when used with capture, unmount, export, and commit operations. /CheckIntegrity stops the operation if DISM detects that the .wim file is corrupted when used with apply and mount operations. |
-| /Append   |  Adds the modified image to the existing .wim file instead of overwriting the original image. The /CheckIntegrity and /Append arguments do not apply to virtual hard disk (VHD) files. |
+| /Append   |  Adds the modified image to the existing .wim file instead of overwriting the original image. The /CheckIntegrity and /Append arguments do not apply to virtual hard disk (VHD, VHDX), or FFU files. |
 
 Examples:
 

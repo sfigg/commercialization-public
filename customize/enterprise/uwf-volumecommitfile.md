@@ -11,16 +11,13 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # UWF\_Volume.CommitFile
-
 
 Commits changes from the overlay to the physical volume for a specified file on a volume protected by Unified Write Filter (UWF).
 
 ## Syntax
 
-
-```
+```powershell
 UInt32 CommitFile(
     [in] string FileName
 );
@@ -28,17 +25,14 @@ UInt32 CommitFile(
 
 ## Parameters
 
-
-<a href="" id="filename"></a>*FileName*  
+<a href="" id="filename"></a>*FileName*
 \[in\] A string that contains the path of the file to commit on the overlay, but does not include the drive letter or volume name. For example, “\\users\\test.dat”.
 
 ## Return Value
 
-
 Returns an HRESULT value that indicates [WMI status](http://go.microsoft.com/fwlink/p/?LinkID=208318) or a [WMI error constant](http://go.microsoft.com/fwlink/p/?LinkID=208317).
 
 ## Remarks
-
 
 The *FileName* must contain the name of a file that exists. The **CommitFile** method cannot commit a file that does not exist.
 
@@ -46,31 +40,15 @@ You must use an administrator account to change any properties or call any metho
 
 ## Requirements
 
-
-|                       |           |
-|-----------------------|-----------|
 | Windows Edition       | Supported |
+|:----------------------|:----------|
 | Windows 10 Home       | No        |
 | Windows 10 Pro        | No        |
 | Windows 10 Enterprise | Yes       |
 | Windows 10 Education  | Yes       |
 
- 
-
 ## Related topics
-
 
 [UWF\_Volume](uwf-volume.md)
 
 [Unified Write Filter](unified-write-filter.md)
-
- 
-
- 
-
-
-
-
-
-
-
