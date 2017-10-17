@@ -52,7 +52,7 @@ Use the steps from [Lab 3: Add device drivers (.inf-style)](add-device-drivers.m
 > [!Note]
 > In previous versions of Windows, it was required to first remove inbox apps. This is no longer required, and if you do, the commands may fail.
 
-1.  Go to <https://microsoftoem.com> and get the OPK App Update package. This package includes the Windows 10 inbox apps for the most current Windows release. 
+1.  Go to <https://microsoftoem.com> and get the App Update OPK. This package includes the Windows 10 inbox apps for the most current Windows release. 
 
 2.  Extract the package to a folder, for example, E:\apps\amd64.
 
@@ -68,7 +68,7 @@ Use the steps from [Lab 3: Add device drivers (.inf-style)](add-device-drivers.m
 
 ### Step 3: Add the HEVC Codec
 
-For Windows 10, version 1709 add the HEVC codec and it's dependencies from the OPK App Update package. Note that the HEVC codec is not currently available as an .appxbundle package, so you'll have to use the .appx packages.
+For Windows 10, version 1709 add the HEVC codec and it's dependencies from the App Update OPK. Note that the HEVC codec is not currently available as an .appxbundle package, so you'll have to use the .appx packages.
 
 ```
 DISM /image:c:\mount\windows /add-ProvisionedAppxPackage /packagepath:"E:\apps\amd64\Microsoft.HEVCVideoExtension_8wekyb3d8bbwe.x64.appx" /licensepath:"E:\apps\amd64\Microsoft.HEVCVideoExtension_8wekyb3d8bbwe.x64.xml" /dependencypackagepath:"E:\apps\amd64\Microsoft.VCLibs.x64.14.00.appx"
