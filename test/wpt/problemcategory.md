@@ -14,116 +14,50 @@ ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-# ProblemCategory
 
+# ProblemCategory
 
 Represents a problem category for the profile. This element is for internal use only.
 
+
 ## Element Hierarchy
 
+* \<[WindowsPerformanceRecorder](windowsperformancerecorder.md)\>
+  * \<[Profiles](profiles.md)\>
+    * \<[Profile](profile-wpr.md)\>
+      * \<[ProblemCategories](problemcategories.md)\>
+        * \<**ProblemCategory**\>
 
-&lt;[WindowsPerformanceRecorder](windowsperformancerecorder.md)&gt;
-
-     &lt;[Profiles](profiles.md)&gt;
-
-          &lt;[Profile](profile-wpr.md)&gt;
-
-               &lt;[ProblemCategories](problemcategories.md)&gt;
-
-                    &lt;**ProblemCategory**&gt;-
 
 ## Syntax
-
 
 ```
 <ProblemCategory Value = "First Level Triage" | "CPU" | "Storage" ...>
 </ProblemCategory>
 ```
 
-## Attributes and Elements
 
+## Attributes and Elements
 
 ### Attributes
 
-<table>
-<colgroup>
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Attribute</th>
-<th>Description</th>
-<th>Data type</th>
-<th>Required</th>
-<th>Default</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><strong>Value</strong></p></td>
-<td><p>Describes the type of problem.</p></td>
-<td><p>This attribute can have one of the following values:</p>
-<ul>
-<li><p>First Level Triage</p></li>
-<li><p>CPU</p></li>
-<li><p>Storage</p></li>
-<li><p>Network</p></li>
-<li><p>Memory</p></li>
-<li><p>Multimedia</p></li>
-<li><p>Energy</p></li>
-<li><p>On/Off Transition</p></li>
-</ul></td>
-<td><p>Yes</p></td>
-<td><p></p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Attribute | Description                    | Data type                                                                                                                                                                                                                 | Required | Default |
+| :-------- | :----------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | :------- | :------ |
+| **Value** | Describes the type of problem. | This attribute can have one of the following values: <ul> <li>First Level Triage</li> <li>CPU</li> <li>Storage</li> <li>Network</li> <li>Memory</li> <li>Multimedia</li> <li>Energy</li> <li>On/Off Transition</li> </ul> | Yes      |         |
 
 ### Child Elements
 
 None.
 
+
 ### Parent Elements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>[ProblemCategories](problemcategories.md)</p></td>
-<td><p>Represents a collection of problem categories.</p></td>
-</tr>
-</tbody>
-</table>
+| Element                                   | Description                                    |
+| :---------------------------------------- | :--------------------------------------------- |
+| [ProblemCategories](problemcategories.md) | Represents a collection of problem categories. |
 
- 
 
 ## Related topics
 
-
 [Elements](elements.md)
-
- 
-
- 
-
-
-
-
-
-
 
