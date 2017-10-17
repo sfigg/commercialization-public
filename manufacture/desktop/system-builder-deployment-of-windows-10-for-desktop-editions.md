@@ -41,13 +41,11 @@ You will need two USB drives. USB-A will be used to boot the system in Windows P
 
 ### Creating my USB-B
 
--   Format your USB drive and name it as follows:
+1.  Format your USB drive and name it as follows:
 
     ![Extract USB](images/extract-usb.png) 
 
--   Then download [USB-B.zip](http://download.microsoft.com/download/5/8/4/5844EE21-4EF5-45B7-8D36-31619017B76A/USB-B.zip) from the Microsoft Download Center. Save the .zip file to USB-B and extract the contents there. 
-
--   The contents of the configuration files included in USB-B are examples that you may change according to your branding and manufacturing choices. However, file names and hierarchy of the folders and files must be the same as demonstrated below in order to align your deployment procedure with this guide.
+2.  Then download [USB-B.zip](http://download.microsoft.com/download/5/8/4/5844EE21-4EF5-45B7-8D36-31619017B76A/USB-B.zip) from the Microsoft Download Center. Save the .zip file to USB-B and extract the contents there. The contents of the configuration files included in USB-B are examples that you may change according to your branding and manufacturing choices. However, file names and hierarchy of the folders and files must be the same as demonstrated below in order to align your deployment procedure with this guide.
 
 ## Customizations throughout the document
 
@@ -87,13 +85,10 @@ You will need two USB drives. USB-A will be used to boot the system in Windows P
 <a name="create-a-usb-drive-that-can-boot-to-winpe"></a>
 ## Create a USB drive that can boot to WinPE
 
-You must use the matching version of Windows ADK for the images being customized. If building an image using the RTM image, use Windows ADK for Windows 10. If using a Windows 10, version 1511 image, use the Windows ADK for Windows 10, version 1511.
+You must use the matching version of Windows ADK for the images being customized. For example, if you're building an image for Windows 10, version 1703, use the Windows ADK for Windows 10, version 1703.
 For more details about the Windows ADK, see the [Windows 10 ADK Documentation Homepage](https://technet.microsoft.com/library/mt297512.aspx).
 
-|  Windows version  | Link to run ADKSetup.exe      |
-|-------------------|-------------------------------|
-| Windows 10, version 1703    | [**Windows ADK**](https://developer.microsoft.com/en-us/windows/hardware/windows-assessment-deployment-kit)  |
-
+Visit [Download the Windows ADK](https://developer.microsoft.com/en-us/windows/hardware/windows-assessment-deployment-kit) to download the ADK.
 
 
 1.  Follow the on-screen instructions to install the Windows ADK, including the **Deployment Tools**, **Windows Preinstallation Environment**, and **Windows Assessment Toolkit** features.
@@ -143,9 +138,9 @@ For more details about the Windows ADK, see the [Windows 10 ADK Documentation Ho
 
 ## Install Windows with basic customizations
 
-Please obtain Windows 10 x86/x64 DVD media from a Microsoft Authorized Distributor.
+Use Windows 10 x86/x64 DVD media from a Microsoft Authorized Distributor.
 
-For a document to help you tailor the customizations defined in your unattend.xml file, see the [Windows Guidelines for System Builders](http://www.microsoft.com/oem/en/pages/download.aspx?wpid=w_w8_129) and [Windows Policy for System Builders](https://oem.microsoft.com/downloads/worldwide/windows_10/Windows_10_Policy_SB.pdf).
+See the [Windows Guidelines for System Builders](http://www.microsoft.com/oem/en/pages/download.aspx?wpid=w_w8_129) and [Windows Policy for System Builders](https://oem.microsoft.com/downloads/worldwide/windows_10/Windows_10_Policy_SB.pdf) for information on how to tailor the customizations in your unattend.xml file.
 
 1.  Copy the sources\\Install.wim file from the directory in the Windows 10 media that you will be deploying to your local Desktop (~3gb).
 
@@ -155,15 +150,11 @@ For a document to help you tailor the customizations defined in your unattend.xm
 
     ![Run SIM](Images/run-sim.png)
 
-3.  Navigate to **File** &gt; **Select Windows Image**. Browse to your local desktop and select **Install.wim**. Catalog file will be created (.clg file) for that specified wim.
+3.  Navigate to **File** &gt; **Select Windows Image**. Browse to your local desktop and select **Install.wim**. A catalog file (.clg) will be created for the specified wim.
 
     Troubleshoot: Catalog creation may fail due to several reasons. Please make sure install.wim has read/write permissions. If you continue getting error, make sure correct architecture (x86 or x64) Windows 10 is installed on technician computer. If you are creating catalog for x64 Windows 10 image, you are required to use x64 Windows 10 installed on x64 Windows 10 computer. Install.wim image and Windows 10 ADK versions must be the same.
 
-4.  Open a sample answer file or create a new one.
-
-    -   This is the sample answer file included in the USB-B:
-
-        USB-B\AnswerFiles\Unattend.xml
+4.  Open a sample answer file or create a new one. `USB-B\AnswerFiles\Unattend.xml` is the sample answer file included on USB-B.       
 
 5.  Click **OK** to associate the answer file with the Windows Image. 
 
@@ -175,9 +166,7 @@ For a document to help you tailor the customizations defined in your unattend.xm
 
 Troubleshoot: A blank character in **specialize | Microsoft-Windows-Shell-Setup | Computer Name** will result in Windows installation failure.
 
-1.  Please see an example of an answer file for basic customizations:
-
-    -   USB-B\AnswerFiles\Unattend.xml
+1.  See `USB-B\AnswerFiles\Unattend.xml` for an example of an answer file that has basic customizations.    -  
 
     You may use the sample answer file and modify relevant parts or start from scratch by specifying some basic customizations.
 
@@ -305,7 +294,8 @@ If you use an x64 Windows 10 image, install x64 LIPs; if you use an x86 Windows 
     Dism /image:C:\mount\windows /add-package /packagepath:e:\LanguagePacks\x86\Microsoft-Windows-Client-Language-Interface-Pack_x86_as-in.cab
     ```
 
-**Important: If you install an update (hotfix, general distribution release [GDR], or service pack [SP]) that contains language-dependent resources prior to installing a language pack, the language-specific changes in the update won't be applied when you add the language pack. You need to reinstall the update to apply language-specific changes. To avoid reinstalling updates, install language packs before installing updates.**
+> [!Important]
+> If you install an update (hotfix, general distribution release [GDR], or service pack [SP]) that contains language-dependent resources prior to installing a language pack, the language-specific changes in the update won't be applied when you add the language pack. You need to reinstall the update to apply language-specific changes. To avoid reinstalling updates, install language packs before installing updates.
 
 #### Add update packages
 
@@ -418,9 +408,9 @@ The Start tile layout in Windows 10 provides OEMs the ability to append tiles to
 
         ```
         Copy e:\StartLayout\Bing.url "C:\mount\windows\ProgramData\Microsoft\Windows\Start Menu\Programs\"
-        Copy e:\StartLayout\Paint.lnk "C:\mount\windows\ProgramData\Microsoft\Windows\Start Menu\Programs"
-        Copy E:\StartLayout\Bing.url "C:\mount\windows\users\All Users\Microsoft\Windows\Start Menu\Programs"
-        Copy E:\StartLayout\Paint.lnk "C:\Mount\Windows\Users\All Users\Microsoft\Windows\Start Menu\Programs"
+        Copy e:\StartLayout\Paint.lnk "C:\mount\windows\ProgramData\Microsoft\Windows\Start Menu\Programs\"
+        Copy E:\StartLayout\Bing.url "C:\mount\windows\users\All Users\Microsoft\Windows\Start Menu\Programs\"
+        Copy E:\StartLayout\Paint.lnk "C:\Mount\Windows\Users\All Users\Microsoft\Windows\Start Menu\Programs\"
         ```
         Note: If you don’t create a LayoutModification.xml file and you continue to use the Start Unattend settings, the OS will use the Unattend answer file and take the first 12 SquareTiles or DesktoporSquareTiles settings specified in the Unattend file. The system then places these tiles automatically within the newly-created groups at the end of Start. The first six tiles are placed in the first OEM group, and the second set of six tiles are placed in the second OEM group. If OEMName is specified in the Unattend file, the value for this element is used to name the OEM groups that will be created.
 

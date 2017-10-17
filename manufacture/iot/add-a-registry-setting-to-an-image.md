@@ -201,7 +201,7 @@ After a short while, you should see the [IoT test (Bertha) app](https://develope
 
 ## <span id="See_your_regkeys"></span>See if your registry keys exist
 
-1.  On your technician PC, connect to your device using an SSH client, such as [PuTTY](http://the.earth.li/~sgtatham/putty/latest/x86/putty.exe). For example, use the IP address and port 22 to connect to the device, then log in using the Administrator account and password. (To learn more, see [SSH](https://developer.microsoft.com/windows/iot/docs/ssh).)
+1.  On your technician PC, connect to your device using an SSH client, such as [PuTTY](http://the.earth.li/~sgtatham/putty/latest/x86/putty.exe). For example, use the IP address and port 22 to connect to the device, then log in using the Administrator account and password. (To learn more, see [SSH](https://docs.microsoft.com/windows/iot-core/connect-your-device/SSH).)
 
 2.  From the command line in the SSH client, query the system for the registry key.
 

@@ -1438,11 +1438,9 @@ Computers that run Windows Server 2016 must include the following in a Windows 
 
 For devices or computers that run Windows Server 2016, a Trusted Platform Module (TPM) is optional. If a TPM is implemented, the following requirements must be met:
 
--   Hardware-based TPMs must implement either version 1.2 or 2.0 of the TPM specification.
--   Firmware-based TPMs must implement 2.0 of the TPM specification.
--   If the TPM implements version 2.0, the TPM must meet the following requirements:
-    -   An EK certificate must either be pre-provisioned to the TPM by the HW vendor or be capable of being retrieved by the device during the first boot experience.
-    -   It must ship with SHA-256 PCR banks and implement PCRs 0 through 23 for SHA-256. Note that it is acceptable to ship TPMs with a single switchable PCR bank that can be utilized for both SHA-1 and SHA-256 measurements.
+-   Hardware-based and firmware-based TPMs must implement version 2.0 of the TPM specification.
+-   An EK certificate must either be pre-provisioned to the TPM by the HW vendor or be capable of being retrieved by the device during the first boot experience.
+-   It must ship with SHA-256 PCR banks and implement PCRs 0 through 23 for SHA-256. Note that it is acceptable to ship TPMs with a single switchable PCR bank that can be utilized for both SHA-1 and SHA-256 measurements.
 
 A UEFI firmware option to turn off the TPM is not required.
 

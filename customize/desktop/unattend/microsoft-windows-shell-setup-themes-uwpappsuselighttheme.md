@@ -11,14 +11,11 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # UWPAppsUseLightTheme
-
 
 `UWPAppsUseLightTheme` specifies whether the dark mode is applied.
 
 ## Values
-
 
 <table>
 <colgroup>
@@ -37,10 +34,7 @@ ms.technology: windows-oem
 </tbody>
 </table>
 
- 
-
 ## Valid Configuration Passes
-
 
 specialize
 
@@ -52,44 +46,28 @@ oobeSystem
 
 ## Parent Hierarchy
 
-
 [Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [Themes](microsoft-windows-shell-setup-themes.md) | **UWPAppsUseLightTheme**
 
 ## Applies To
-
 
 For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md).
 
 ## XML Example
 
-
 The following XML output shows how to set a customized theme.
 
-```
-In Windows 10, build 1607, a setting has been added for light/dark mode toggle. 
-    <settings pass=”oobeSystem”> 
-        <Themes> 
-            <ThemeName>MyOLEDTheme</ThemeName> 
-            <DefaultThemesOff>false</DefaultThemesOff> 
-            <DesktopBackground>c:\windows\OLEDFriendlyImage.jpg </DesktopBackground> 
-            <WindowColor>Lime</WindowColor> 
-            <UWPAppsUseLightTheme>false</UWPAppsUseLightTheme> 
-        </Themes> 
-    </settings> 
+```xml
+<settings pass=”oobeSystem”>
+    <Themes>
+        <ThemeName>MyOLEDTheme</ThemeName>
+        <DefaultThemesOff>false</DefaultThemesOff>
+        <DesktopBackground>c:\windows\OLEDFriendlyImage.jpg </DesktopBackground>
+        <WindowColor>Lime</WindowColor>
+        <UWPAppsUseLightTheme>false</UWPAppsUseLightTheme>
+    </Themes>
+</settings>
 ```
 
 ## Related topics
 
-
 [Themes](microsoft-windows-shell-setup-themes.md)
-
- 
-
- 
-
-
-
-
-
-
-

@@ -11,16 +11,13 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # WESL\_UserSetting.GetCustomShell
-
 
 This method retrieves the Shell Launcher configuration for a specific user or group, based on the security identifier (SID).
 
 ## Syntax
 
-
-```
+```powershell
 [Static] uint32 GetCustomShell (
     [In, Required] string Sid,
     [Out, Required] string Shell,
@@ -32,17 +29,16 @@ This method retrieves the Shell Launcher configuration for a specific user or gr
 
 ## Parameters
 
-
-<a href="" id="sid"></a>*Sid*  
+<a href="" id="sid"></a>*Sid*
 \[in, required\] A string containing the security identifier (SID) of the user or group that Shell Launcher is configured for.
 
-<a href="" id="shell"></a>*Shell*  
+<a href="" id="shell"></a>*Shell*
 \[out, required\] The application or executable that Shell Launcher starts as the shell.
 
-<a href="" id="customreturncodes"></a>*CustomReturnCodes*  
+<a href="" id="customreturncodes"></a>*CustomReturnCodes*
 \[out, required\] An array of custom return codes returned by the shell application.
 
-<a href="" id="customreturncodesaction"></a>*CustomReturnCodesAction*  
+<a href="" id="customreturncodesaction"></a>*CustomReturnCodesAction*
 \[out, required\] An array of custom return code actions that determine the action that Shell Launcher takes when the shell application exits. The custom actions map to the array of *CustomReturnCodes*.
 
 The possible actions are defined in the following table:
@@ -74,9 +70,7 @@ The possible actions are defined in the following table:
 </tbody>
 </table>
 
- 
-
-<a href="" id="defaultaction"></a>DefaultAction  
+<a href="" id="defaultaction"></a>DefaultAction
 \[out, required\] The default action that Shell Launcher takes when the shell application exits.
 
 The possible actions are defined in the following table:
@@ -108,15 +102,11 @@ The possible actions are defined in the following table:
 </tbody>
 </table>
 
- 
-
 ## Return Value
-
 
 Returns an HRESULT value that indicates [WMI status](http://go.microsoft.com/fwlink/p/?LinkID=208318) or a [WMI error](http://go.microsoft.com/fwlink/p/?LinkID=208317).
 
 ## Remarks
-
 
 Shell Launcher uses the *CustomReturnCodes* and *CustomReturnCodesAction* arrays to determine the system behavior when the shell application exits, based on the return value of the application.
 
@@ -124,31 +114,15 @@ If the return value does not exist in *CustomReturnCodes*, or if the correspondi
 
 ## Requirements
 
-
-|                       |           |
-|-----------------------|-----------|
 | Windows Edition       | Supported |
+|:----------------------|:----------|
 | Windows 10 Home       | No        |
 | Windows 10 Pro        | No        |
 | Windows 10 Enterprise | Yes       |
 | Windows 10 Education  | Yes       |
 
- 
-
 ## Related topics
-
 
 [WESL\_UserSetting](wesl-usersetting.md)
 
 [Shell Launcher](shell-launcher.md)
-
- 
-
- 
-
-
-
-
-
-
-

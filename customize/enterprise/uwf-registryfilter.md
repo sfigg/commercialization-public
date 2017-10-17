@@ -11,16 +11,13 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # UWF\_RegistryFilter
-
 
 Adds or removes registry exclusions from Unified Write Filter (UWF) filtering, and also commits registry changes.
 
 ## Syntax
 
-
-```
+```powershell
 class UWF_RegistryFilter{
     [key, Read] boolean CurrentSession;
     [Read, Write] boolean PersistDomainSecretKey;
@@ -51,7 +48,6 @@ class UWF_RegistryFilter{
 ```
 
 ## Members
-
 
 The following tables list the methods and properties that belong to this class.
 
@@ -96,8 +92,6 @@ The following tables list the methods and properties that belong to this class.
 </tbody>
 </table>
 
- 
-
 ### <a href="" id="pro"></a>Properties
 
 <table>
@@ -140,8 +134,6 @@ The following tables list the methods and properties that belong to this class.
 </tbody>
 </table>
 
- 
-
 ### Remarks
 
 Additions or removals of registry exclusions, including changes to the values of **PersistDomainSecretKey** and **PersistTSCAL**, take effect after the next restart in which UWF is enabled.
@@ -164,7 +156,7 @@ The third function, **Remove-RegistryExclusion**, removes a registry entry from 
 
 The fourth function, **Clear-RegistryExclusions**, removes all UWF registry exclusions. You must restart the device before UWF stops filtering the exclusions.
 
-```
+```powershell
 $COMPUTER = "EMBEDDEDDEVICE"
 $NAMESPACE = "root\standardcimv2\embedded"
 
@@ -320,45 +312,29 @@ function Clear-RegistryExclusions() {
 
 Clear-RegistryExclusions
 
-Get-RegistryExclusions 
+Get-RegistryExclusions
 
 Add-RegistryExclusion "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer"
 Add-RegistryExclusion "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\DateTime\Servers\(Default)"
 
-Get-RegistryExclusions 
+Get-RegistryExclusions
 
 Remove-RegistryExclusion "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer"
 
 Get-RegistryExclusions
 
-Clear-RegistryExclusions 
+Clear-RegistryExclusions
 ```
 
 ## Requirements
 
-
-|                       |           |
-|-----------------------|-----------|
 | Windows Edition       | Supported |
+|:----------------------|:----------|
 | Windows 10 Home       | No        |
 | Windows 10 Pro        | No        |
 | Windows 10 Enterprise | Yes       |
 | Windows 10 Education  | Yes       |
 
- 
-
 ## Related topics
 
-
 [Unified Write Filter](unified-write-filter.md)
-
- 
-
- 
-
-
-
-
-
-
-

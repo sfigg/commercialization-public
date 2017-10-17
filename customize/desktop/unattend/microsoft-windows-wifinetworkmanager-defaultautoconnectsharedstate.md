@@ -16,7 +16,7 @@ ms.technology: windows-oem
 
 # DefaultAutoConnectSharedState
 
-**This setting has been deprecated in Windows 10, version 1607**. The information about this deprecated setting is provided for reference only. The Wi-Fi Sense credential sharing feature has been removed.
+**This setting has been deprecated**. The information about this deprecated setting is provided for reference only. The Wi-Fi Sense credential sharing feature has been removed.
 
 **Important**  
 All Wi-Fi sense default settings must be on (or set to 1) unless Microsoft executive approval has been granted for specific mobile operator requests, or for countries listed as exempt.

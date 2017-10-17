@@ -14,126 +14,62 @@ ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-# HeapProcessId
 
+# HeapProcessId
 
 Uniquely identifies a heap process.
 
+
 ## Element Hierarchy
 
+* \<[WindowsPerformanceRecorder](windowsperformancerecorder.md)\>
+  * \<[HeapEventProvider](heapeventprovider.md)\>
+    * \<[HeapProcessIds](heapprocessids.md)\>
+      * \<**HeapProcessId**\>
+  * \<[Profiles](profiles.md)\>
+    * \<[Profile](profile-wpr.md)\>
+      * \<[Collectors](collectors.md)\>
+        * \<[HeapEventCollectorId](heapeventcollectorid.md)\>
+          * \<[HeapEventProviders](heapeventproviders.md)\>
+            * \<[HeapEventProviderId](heapeventproviderid.md)\>
+              * \<[HeapProcessIds](heapprocessids.md)\>
+                * \<**HeapProcessId**\>
+            * \<[HeapEventProvider](heapeventprovider.md)\>
+              * \<[HeapProcessIds](heapprocessids.md)\>
+                * \<**HeapProcessId**\>
 
-&lt;[WindowsPerformanceRecorder](windowsperformancerecorder.md)&gt;
-
-     &lt;[HeapEventProvider](heapeventprovider.md)&gt;
-
-          &lt;[HeapProcessIds](heapprocessids.md)&gt;
-
-               &lt;**HeapProcessId**
-
-     &lt;[Profiles](profiles.md)&gt;
-
-          &lt;[Profile](profile-wpr.md)&gt;
-
-               &lt;[Collectors](collectors.md)&gt;
-
-                    &lt;[HeapEventCollectorId](heapeventcollectorid.md)&gt;
-
-                         &lt;[HeapEventProviders](heapeventproviders.md)&gt;
-
-                              &lt;[HeapEventProviderId](heapeventproviderid.md)&gt;
-
-                                   &lt;[HeapProcessIds](heapprocessids.md)&gt;
-
-                                        &lt;**HeapProcessId**&gt;
-
-                              &lt;[HeapEventProvider](heapeventprovider.md)&gt;
-
-                                   &lt;[HeapProcessIds](heapprocessids.md)&gt;
-
-                                        &lt;**HeapProcessId**&gt;
 
 ## Syntax
-
 
 ```
 <HeapProcessId Value = unsignedLong>
 </HeapProcessId>
 ```
 
+
 ## Attributes and Elements
 
 
 ### Attributes
 
-<table>
-<colgroup>
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Attribute</th>
-<th>Description</th>
-<th>Data type</th>
-<th>Required</th>
-<th>Default</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><strong>Value</strong></p></td>
-<td><p>Number of the heap process.</p></td>
-<td><p>unsignedLong</p></td>
-<td><p>Yes</p></td>
-<td><p></p></td>
-</tr>
-</tbody>
-</table>
+| Attribute | Description                 | Data type    | Required | Default |
+| :-------- | :-------------------------- | :----------- | :------- | :------ |
+| **Value** | Number of the heap process. | unsignedLong | Yes      |         |
 
- 
 
 ### Child Elements
 
 None.
 
+
 ### Parent Elements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>[HeapProcessIds](heapprocessids.md)</p></td>
-<td><p>Represents a collection of heap process identifiers.</p></td>
-</tr>
-</tbody>
-</table>
+| Element                             | Description                                          |
+| :---------------------------------- | :--------------------------------------------------- |
+| [HeapProcessIds](heapprocessids.md) | Represents a collection of heap process identifiers. |
 
- 
 
 ## Related topics
 
-
 [Elements](elements.md)
-
- 
-
- 
-
-
-
-
-
-
 

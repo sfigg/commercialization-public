@@ -11,16 +11,13 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # UWF\_RegistryFilter.RemoveExclusion
-
 
 Removes a registry key from the registry exclusion list for Unified Write Filter (UWF).
 
 ## Syntax
 
-
-```
+```powershell
 UInt32 RemoveExclusion(
     string RegistryKey
 );
@@ -28,47 +25,28 @@ UInt32 RemoveExclusion(
 
 ## Parameters
 
-
-<a href="" id="registrykey"></a>*RegistryKey*  
+<a href="" id="registrykey"></a>*RegistryKey*
 A string that contains the full path of the registry key.
 
 ## Return Value
-
 
 Returns an HRESULT value that indicates [WMI status](http://go.microsoft.com/fwlink/p/?LinkID=208318) or a [WMI error](http://go.microsoft.com/fwlink/p/?LinkID=208317).
 
 ## Remarks
 
-
 You must restart the device before the registry key is excluded from UWF filtering.
 
 ## Requirements
 
-
-|                       |           |
-|-----------------------|-----------|
 | Windows Edition       | Supported |
+|:----------------------|:----------|
 | Windows 10 Home       | No        |
 | Windows 10 Pro        | No        |
 | Windows 10 Enterprise | Yes       |
 | Windows 10 Education  | Yes       |
 
- 
-
 ## Related topics
-
 
 [UWF\_RegistryFilter](uwf-registryfilter.md)
 
 [Unified Write Filter](unified-write-filter.md)
-
- 
-
- 
-
-
-
-
-
-
-

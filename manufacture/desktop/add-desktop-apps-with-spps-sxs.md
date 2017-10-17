@@ -42,7 +42,7 @@ You can do this by:
 
 ## <span id="Prepare_a_copy_of_the_Deployment_and_Imaging_Tools"></span><span id="prepare_a_copy_of_the_deployment_and_imaging Tools"></span><span id="PREPARE_A_COPY_OF_THE_DEPLOYMENT_AND_IMAGING_TOOLS"></span>Step 1: Prepare a copy of the Deployment and Imaging Tools
 
-You'll need the Windows 10, version 1703 version of the Deployment and Imaging Tools from the ADK. This includes the ScanState tool and the latest version of DISM.
+You'll need the most recent version of the Deployment and Imaging Tools from the ADK. This includes the ScanState tool and the latest version of DISM.
 
 **Important**   Don't overwrite the existing DISM files on the WinPE image.
 

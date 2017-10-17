@@ -67,7 +67,7 @@ Windows uses the following design principles in designing gestures. These ensure
 
 **Productive**: Gestures should help users be more productive. Touchpad devices are primarily productivity devices, and helping users do what they want to do faster, provides value. Gestures that make users productive will keep users on their systems.
 
-**Delightful**: Gestures should delight users by providing new and exciting ways to interact with their system that impress users when shown or discovered – gestures that delight users will help bring users to systems.
+**Delightful**: Gestures should delight users by providing exciting ways to interact with their system that impress users when shown or discovered – gestures that delight users will help bring users to systems.
 
 **Intuitive**: Gestures should have an intuitive mapping between physical motions and functional behaviors in the system. This makes the gestures easy to learn, and they will feel more natural to use.
 

@@ -9,6 +9,18 @@ ms.assetid: 586b1f36-87c6-4473-bcfa-c5330d4e885c
 
 # Device.Network tests
 
+>[!NOTE]
+>Microsoft will be accepting 802.11ad WDI drivers for HLK certification for the Windows 10 Fall Creators Update (1709) to facilitate broad distribution and testing among Windows Insiders and ecosystem partners. However, due to the lack of broad testing of 802.11ad WDI functionality, this feature is enabled as a developer preview for the Windows 10, version 1709 release. 
+>
+>If a problem is encountered with 802.11ad functionality, please contact your 802.11ad IHV partner for support assistance.   Microsoft is committed to supporting 802.11ad Wi-Fi connectivity in a future version of Windows 10 in order to enable wireless docking and other scenarios. 
+>
+>|Affected Tests:||
+>|-----|-----|
+>|[Wlan Test - Attempt a connection to a non-existent network](2c57ac94-f46e-4e40-9e23-ae6b0a397542.md)<br>[Wlan Test - Connect to a WPA2 PSK AES AP](93197ac8-e6b8-4c2e-8252-b8afead392a8.md)<br>[Wlan Test - Connect to a WPA2 PSK AES AP with Sleep cycle](2ae2cb26-ea04-4def-8e07-ae7b92e61e1b.md)<br>[Wlan Test - Enable and Disable WFD Autonomous GO](24f9bc8e-591d-4fa0-8dfd-735369428379.md)<br> [Wlan Test - Query All Reported Oids](26568a8c-39cb-46ef-b8b8-e1bc835b05c1.md)<br> [Wlan Test - Query Interface Properties](38099fc3-b893-4165-9727-5d4ce70d479e.md)<br>[Wlan Test - Scan for Networks](65eac5b5-219f-459a-a8be-b53b96d96a28.md)<br> [Wlan Test - Toggle airplane mode](1559752d-39a8-4b28-a79f-13eff48dc06d.md)<br>[Wlan Test - Wlan Device Capabilities Check](1949bd77-a684-463f-9512-6812657b8706.md)|[Wlan Test - Wlan Device enumeration](78796efa-d844-4ccb-ab95-5bc54f002410.md)<br>[Wlan Test - Wlan Device Reset Check](ab3df3e5-1f37-46e4-9da9-a9663c803fb5.md)<br>[Wi-Fi Direct Basic Discovery Tests - Functional](430878d3-71d3-4458-bd54-6a487f18219b.md)<br>[Wi-Fi Direct Basic Pairing Tests - Functional](994ab513-08bd-4c1e-ab48-e5ea2dc06610.md)<br>[Wi-Fi Direct Basic Reconnect Tests - Functional](04b9a237-7d06-4bea-ae5b-7d425117e132.md)<br>[Wi-Fi Direct Legacy Pairing Tests - Functional](312172a5-69f5-4db3-8802-b29866cdb355.md)<br>[Wi-Fi Direct Service Discovery Tests - Functional](7ef01b28-b321-4683-b000-9135a1e0c8cf.md)<br>[Wi-Fi Direct Service Pairing and Reconnect Tests - Functional](d679f2e5-8338-4047-aaf0-aca975d06bb7.md)<br>[Wlan Test - Wlan Device Capabilities Check](1949bd77-a684-463f-9512-6812657b8706.md)
+
+
+
+
 
 -   [CopyFile Client to Server LOGO test](b3f5859d-e47a-41da-9355-b4e11bbfc894.md)
 -   [CopyFile Server to Client LOGO test](2ea2f846-dc37-4d4c-90c8-d23e620cb02c.md)
@@ -294,6 +306,26 @@ ms.assetid: 586b1f36-87c6-4473-bcfa-c5330d4e885c
 -   [WLAN Scan Tests - Multiple BSSIDs](78cab329-0dfe-4ed9-9281-79f3b5c7e18d.md)
 -   [WLAN Scan Tests - Various Auth Cipher Types And Hidden](ba5f3eae-b565-4d9f-9792-63e3152132d4.md)
 -   [WLAN Stress Test - Functional](879993b8-2581-452f-b237-47727101c4f9.md)
+-   [Win6_4.MB.CDMA.Data.TestBaseStationsInfo](7722186d-ad8f-4d48-82c3-cb952571e220.md)
+-   [Win6_4.MB.CDMA.Data.TestDeviceCapsEx](e4ec5199-0841-4864-ac17-b6b71f81cdf3.md)
+-   [Win6_4.MB.CDMA.Data.TestLowLevelUiccAccess](f27c8d81-7e2b-49d1-be4c-614bf62f003c.md)
+-   [Win6_4.MB.CDMA.Data.TestLteAttach](ae5a77cb-8362-4486-bfc7-5afb5902e544.md)
+-   [Win6_4.MB.CDMA.Data.TestPco](cd56036c-8fb5-40d0-80dc-8ba6bd51b9d5.md)
+-   [Win6_4.MB.CDMA.Data.TestProvisionedContext](e61801bd-251d-4195-9a69-a6814fd729ff.md)
+-   [Win6_4.MB.CDMA.Data.TestResetPassthrough](5ee8a1df-3695-444d-a242-1a77b0caacc6.md)
+-   [Win6_4.MB.CDMA.Data.TestSAR](ae5a77cb-8362-4486-bfc7-5afb5902e543.md)
+-   [Win6_4.MB.CDMA.Data.TestSlot](049a0532-3d58-49aa-ac3d-2a9b8aab24a7.md)
+-   [Win6_4.MB.GSM.Data.TestBaseStationsInfo](307034db-b2f6-44d5-ae92-053abcf930f6.md)
+-   [Win6_4.MB.GSM.Data.TestDeviceCapsEx](75c812d5-8c7d-4589-8336-7d72f2feb987.md)
+-   [Win6_4.MB.GSM.Data.TestLowLevelUiccAccess](104db926-5cc4-47ad-a7d0-ff476b0f57a1.md)
+-   [Win6_4.MB.GSM.Data.TestLteAttach](aaa1f042-8535-4d09-b19e-082bef24f518.md)
+-   [Win6_4.MB.GSM.Data.TestPco](c7f8c2c2-ba87-4f51-8666-3fa06dc01451.md)
+-   [Win6_4.MB.GSM.Data.TestProvisionedContext](977b0b55-1507-4542-bd51-0a23aa2346e9.md)
+-   [Win6_4.MB.GSM.Data.TestResetPassthrough](b19d12ef-1beb-4ae5-bab5-cfa523c0c3dd.md)
+-   [Win6_4.MB.GSM.Data.TestSAR](aaa1f042-8535-4d09-b19e-082bef24f517.md)
+-   [Win6_4.MB.GSM.Data.TestSlot](defddebe-cc40-4d6f-9b0c-ca5ca9a1cb4d.md)
+-   [Wlan Power Transitions Reliability Test](c7058483-c986-4577-8790-df81643f8ed8.md)
+-   [Wlan Power Transitions Reliability Test - (WoW64 for ARM64)](6cca3427-2cd3-41f5-8dd4-11cd8b458118.md)
 -   [Wlan Test - Attempt a connection to a non-existent network](2c57ac94-f46e-4e40-9e23-ae6b0a397542.md)
 -   [Wlan Test - Attempt a connection to a non-existent network - (WoW64 for ARM64)](1bdd0f33-1d2c-437c-8161-e0d1dc75fafa.md)
 -   [Wlan Test - Check Hosted Network Capable](0dd672ba-55d9-4138-9b9a-129db683506f.md)

@@ -14,104 +14,50 @@ ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-# DeletePreMergedTraceFiles
 
+# DeletePreMergedTraceFiles
 
 Indicates whether to delete premerged event trace log (ETL) files.
 
 ## Element Hierarchy
 
+* \<[WindowsPerformanceRecorder](windowsperformancerecorder.md)\>
+  * \<[TraceMergeProperties](tracemergeproperties.md)\>
+    * \<[TraceMergeProperty](tracemergeproperty.md)\>
+      * \<**DeletePreMergedTraceFiles**\>
 
-&lt;[WindowsPerformanceRecorder](windowsperformancerecorder.md)&gt;
-
-     &lt;[TraceMergeProperties](tracemergeproperties.md)&gt;
-
-          &lt;[TraceMergeProperty](tracemergeproperty.md)&gt;
-
-               &lt;**DeletePreMergedTraceFiles**&gt;
 
 ## Syntax
-
 
 ```
 <DeletePreMergedTraceFiles Value = boolean>
 </DeletePreMergedTraceFiles>
 ```
 
+
 ## Attributes and Elements
 
 
 ### Attributes
 
-<table>
-<colgroup>
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Attribute</th>
-<th>Description</th>
-<th>Data type</th>
-<th>Required</th>
-<th>Default</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><strong>Value</strong></p></td>
-<td><p>Indicates whether to delete premerged ETL files.</p></td>
-<td><p>boolean</p></td>
-<td><p>No</p></td>
-<td><p>true</p></td>
-</tr>
-</tbody>
-</table>
+| Attribute | Description                                      | Data type | Required | Default |
+|:----------|:-------------------------------------------------|:----------|:---------|:--------|
+| **Value** | Indicates whether to delete premerged ETL files. | boolean   | No       | true    |
 
- 
 
 ### Child Elements
 
 None.
 
+
 ### Parent Elements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>[TraceMergeProperty](tracemergeproperty.md)</p></td>
-<td><p>Contains configurations that are applied when recordings from multiple profiles are merged.</p></td>
-</tr>
-</tbody>
-</table>
+| Element                                     | Description                                                                                 |
+|:--------------------------------------------|:--------------------------------------------------------------------------------------------|
+| [TraceMergeProperty](tracemergeproperty.md) | Contains configurations that are applied when recordings from multiple profiles are merged. |
 
- 
 
 ## Related topics
 
-
 [Elements](elements.md)
-
- 
-
- 
-
-
-
-
-
-
 

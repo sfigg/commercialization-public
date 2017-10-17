@@ -3,51 +3,49 @@ author: themar
 Description: 'Deploy Windows faster on the factory floor by using the Full Flash Update (FFU) image format.'
 ms.assetid: af2b402f-9a5c-4c6a-8852-61039e5bec2a
 MSHAttr: 'PreferredLib:/library/windows/hardware'
-title: 'Deploy Windows using Full Flash Update (FFU)'
+title: 'Windows Full Flash Update (FFU) images'
 ms.author: themar
-ms.date: 05/02/2017
+ms.date: 10/17/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-# Deploy Windows using Full Flash Update (FFU)
+# Windows Full Flash Update (FFU) images
+
+Deploy Windows faster on the factory floor by using the Full Flash Update (FFU) image format. FFU images allow you to apply an image of a physical drive, including Windows, recovery, and system partition information all at once directly to a different drive.
+
+Unlike the file-based WIM format, FFU is a sector-based file container that stores one or more partitions. Sector-based imaging means that FFUs take less time to deploy, but have larger files sizes than WIMs. See [WIM vs. VHD vs. FFU: comparing image file formats](wim-vs-ffu-image-file-formats.md) for information about the differences between image formats.
+
+Starting with Windows 10, version 1709, DISM has the ability to capture, deploy, and service FFUs, with the following limitations:
+- The drive that an FFU is applied to has to be the same or larger than the drive it is captured from
+- FFU captures of encrypted disks are not supported
+- Captures of disks that have [Volume Shadow Copy Service (VSS)](https://technet.microsoft.com/en-us/library/ee923636.aspx) enabled are not supported
+- Splitting compressed FFUs is not supported
 
 
-Deploy Windows faster on the factory floor by using the Full Flash Update (FFU) image format. With FFU images, you can apply a Windows image and partition information directly to a drive or an SD card.
+## What you need to work with FFUs in Windows
 
-To create and apply FFU images for Windows 10, Version 1607 and earlier, you can use [Windows Imaging and Configuration Designer (ICD)](https://msdn.microsoft.com/library/windows/hardware/dn916112.aspx) which is included in the Windows Assessment and Deployment Kit (ADK) for Windows 10, Version 1607. You can use the Windows 10 version of DISM, which is included in the Windows 10 version of Windows Preinstallation Environment (WinPE)to apply FFU images. FFU workflows are not part of the ADK for Windows 10, Version 1703. 
+To capture, deploy, and mount FFU images with DISM, you'll need to work in a Windows 10, Version 1709 or later, or WinPE for Windows 10, version 1709 or later environment. You can also [use the latest version of DISM in a previous version of Windows 10 or WinPE](copy-dism-to-another-computer.md).
 
-Once you've created an FFU image, it can't be modified or edited offline.
+To capture and deploy FFUs using the instructions below, you'll also need: 
 
-To use Compact OS with an FFU image, you must prepare the original FFU image as a compressed image.
+- A Windows PC that has been [generalized with Sysprep](sysprep--generalize--a-windows-installation.md). We'll refer to this as the reference PC. For a walkthrough on how to create an image that's ready for deployment, see the [Windows OEM deployment lab](oem-windows-deployment-and-imaging-walkthrough.md).
+- A PC to deploy the FFU image to. We'll refer to this as the destination PC. The hard drive on this PC will be overwritten, so make sure you're using a PC that doesn't have any information you want to keep.
+- The latest version of the ADK, from [Download the Windows ADK](https://developer.microsoft.com/en-us/windows/hardware/windows-assessment-deployment-kit)
+- Bootable WinPE media for Windows 10, version 1709 or later. See [WinPE: Create USB bootable drive](winpe-create-usb-bootable-drive.md) for instructions on how to create WinPE Media.
+- Storage
+    - USB storage, formatted as NTFS with enough space to save the FFU. 16 GB is enough space to store an FFU of a basic Windows image. You can use the same USB drive for WinPE and storage if you follow the [instructions for creating a multipartiton USB drive](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/winpe-create-usb-bootable-drive#prepare-a-usb-drive). For best performance, you want to maximize I/O between where your FFU is stored and the destination PC. For best performance use a USB 3.0 drive to store the image, and an internal SSD for the destination device.
 
-FFU images are often too large to fit on a standard WinPE FAT32-formatted USB flash drive. To get around this, you can either use a separate storage drive or network location, or you can split the image into smaller .SFU files.
+    **or**
+    
+    - Network storage where you can keep your FFU image. For optimal performance, use a 1 Gb or faster network.
 
-## <span id="Using___FFUs"></span><span id="using___ffus"></span><span id="USING___FFUS"></span>Using FFUs
+## Capture an FFU
 
+1. Boot the reference PC using WinPE bootable media.
 
-### To create an FFU image
-
-1.  On your technician PC, open Windows ICD and create your project.
-2.  Plug in a USB flash drive and note the drive letter (example: D:).
-3.  Click **Create** &gt; **Production Media** &gt; **FFU** &gt; **Enable OS File Compression:** (**Yes** or **No**)&gt; name the file, for example, D:\\install.ffu &gt; **Build**.
-
-### To deploy Windows directly to an SD card or removable drive
-
-1.  From Windows ICD, click **Deploy** &gt; (either **To USB connected device** or **To removable drive**) &gt; **Browse** &gt; browse to the FFU image &gt; **Next** &gt; Select the SD card or device &gt; **Next** &gt; **Flash**.
-2.  If you're deploying to SD cards, then after the flashing process is finished, insert the SD card into your target device.
-
-### To deploy Windows from WinPE
-
-1.  Boot your destination device to WinPE.
-2.  Connect a storage drive or a network location and note the drive letter, for example, N.
-
-    ```
-    net use N: \\server\share
-    ```
-
-3.  Identify the drive to which you'll be applying the image. You can use diskpart, or [add Windows PowerShell support to WinPE](winpe-adding-powershell-support-to-windows-pe.md) and use [Get-Disk](https://technet.microsoft.com/library/hh848657.aspx) for scriptability and more complex setups such as a server with multiple disks. 
+2. Identify the drive to which you'll be capturing the image from. You can use diskpart, or [add Windows PowerShell support to WinPE](winpe-adding-powershell-support-to-windows-pe.md) and use [Get-Disk](https://technet.microsoft.com/itpro/powershell/windows/storage/get-disk) for scriptability and more complex setups such as a server with multiple disks. 
 
     ```
     diskpart 
@@ -55,85 +53,123 @@ FFU images are often too large to fit on a standard WinPE FAT32-formatted USB fl
     exit
     ```
 
-4.  Apply the image to a drive. For a physical drive *X:*, the string should be the following form: "\\\\.\\PhysicalDrive*X*", where *X* is the disk number that diskpart provides, such as \\\\.\\PhysicalDrive0. Hard disk numbers start at zero. For more information about PhysicalDrive*X*, see [CreateFile function](https://msdn.microsoft.com/library/windows/desktop/aa363858.aspx).
+    The output will list your drives. Make a note of the disk number in the `Disk ###` column. This is the value that you'll use when capturing your image.
+
+    ```
+    DISKPART> list disk
+
+    Disk ###  Status         Size     Free     Dyn  Gpt
+    --------  -------------  -------  -------  ---  ---
+    Disk 0    Online          238 GB      0 B        *
+    Disk 1    Online           28 GB      0 B
+
+    DISKPART>
+    ```
+
+3. Use DISM to capture an image of all the partitions on the physical drive. For *disk X:*, the string used with `/capturedrive` will look like this: `\\.\PhysicalDriveX`, where *X* is the disk number that diskpart provides. For example, to capture Disk 0, you'd use `/CaptureDrive:\\.\PhysicalDrive0`.
+
+    For more information about PhysicalDrive*X*, see [CreateFile function](https://msdn.microsoft.com/library/windows/desktop/aa363858.aspx). 
     
-    For more information about /SkipPlatformCheck, see [/Apply-Image in DISM image management command-line options](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/manufacture/desktop/dism-image-management-command-line-options-s14#apply-image) 
+    To see command line options for capturing FFUs, run `dism /capture-ffu /?` or see [DISM Image Management Command-Line Options](dism-image-management-command-line-options-s14.md). Note that you shouldn't have to specify a PlatformID when capturing a desktop image.
+
+    The following command captures an FFU image of PhysicalDrive0 called WinOEM.ffu. The /name and /description arguments allow you to set information about your image. This information is displayed when you use `dism /get-imageinfo`. /name is required, /description is optional. 
 
     ```
-    DISM /Apply-Image /ImageFile:N:\flash.ffu /ApplyDrive:\\.\PhysicalDrive0 /SkipPlatformCheck
+    DISM.exe /capture-ffu /imagefile=e:\WinOEM.ffu /capturedrive=\\.\PhysicalDrive0 /name:disk0 /description:"Windows 10 FFU"
     ```
 
-### To use a single drive for both WinPE and an FFU image
+    This command also gives a name and description to the FFU image. Name is required when capturing
 
-1.  Split the FFU image into smaller files:
+## Deploy Windows from WinPE using an FFU
+
+1.  Boot your destination PC to WinPE.
+
+2.  Connect a storage drive or map the network location that has your FFU file and note the drive letter, for example, N.
+
+3.  Identify the drive to which you'll be applying the image:
 
     ```
-    DISM.exe /Split-Image /ImageFile:flash.ffu /SFUFile:flash.sfu /FileSize:3500
+    diskpart 
+    list disk
+    exit
+    ```
+    Note the drive number in the `Disk ###` column.
+
+4.  Apply the image to the cleaned drive. Here, we're applying n:\WinOEM.ffu to Disk 0.
+    
+    ```
+    DISM /apply-ffu /ImageFile=N:\WinOEM.ffu /ApplyDrive:\\.\PhysicalDrive0
     ```
 
-2.  Copy the files to the WinPE USB key.
-3.  Boot your destination device to WinPE.
-4.  Identify the letter of the Windows PE drive, for example, E.
+    To see the commands available with /apply-ffu, run `dism /apply-ffu /?` or see [DISM Image Management Command-Line Options](dism-image-management-command-line-options-s14.md).
 
+5. Optional. Run diskpart to resize the drive on the destination PC.
+
+    If the reference PC and the destination PC have different sized hard drives, you'll have to resize the destination PCs drive. The applied FFU will have the same partition sizes as the reference PC, so you'll need to expand the volume to take advantage of the additional space on the reference PC.
+
+    a. In WinPE on your destination PC, identify the volume of the Windows partiton that you have applied.
+    
     ```
     diskpart
     list volume
     ```
 
-5.  While in the diskpart menu, identify the drive to which you'll be applying the image, for example, \\\\.\\PhysicalDrive0.
+    b. Select the volume of the Windows partition. We'll use `Volume 0` in our example.
 
-    ``` 
-    list disk
+    ```
+    select volume 0
+    ```
+
+    c. Extend the partition to fill the unused space, and exit Diskpart.
+
+    ```
+    extend
     exit
-    ```
+    ````
 
-6.  Apply the image to a drive.
+## Mount an FFU for servicing
 
-    ```
-    DISM.exe /Apply-Image /ImageFile:E:\flash.sfu /SFUFile:flash*.sfu /ApplyDrive:\\.\PhysicalDrive0 /SkipPlatformCheck
-    ```
+You can use DISM to mount FFU images for servicing. Like with other image formats, you can mount and modify an FFU before committing changes and unmounting. Mounting an FFU for servicing uses the same `/mount-image` command that you use for mounting other image types. When mounting an FFU, you'll always use `/index:1` when mounting.
 
-### To use a previous version of WinPE
+Unlike WIM images, FFU images get mounted as virtual hard disks. Files appear in the specified mount folder, but since FFUs can contain more than one partition but only have one index, DISM maps only the Windows partition from the mounted FFU to the mount folder.
 
-1.  Plug in a WinPE USB key and note the drive letter, for example, E.
-2.  Add the Windows 10 version of DISM to the WinPE drive. To learn more, see [Install Windows 10 using a previous version of Windows PE](copy-dism-to-another-computer.md).
+To mount an FFU
 
-    ```
-    copy "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Deployment Tools\amd64\DISM" E:\DISM_Win10 /s
-    ```
+1. Open a Command Prompt as administrator.
 
-3.  Boot the destination device using the Windows PE USB key.
-4.  Identify the letter of the drive where the FFU is stored, for example, E.
+2. Mount the image using `dism /mount-image`. This example mounts D:\WinOEM.ffu to C:\ffumount:
 
     ```
-    diskpart
-    list volume
+    dism /mount-image /imagefile:"D:\WinOEM.ffu" /mountdir:"C:\ffumount" /index:1
     ```
 
-5.  While in the diskpart menu, identify the drive to which you'll be applying the image, for example, \\\\.\\PhysicalDrive0.
+    To see available command line options for `/mount-image` run `dism /mount-image /?` or see [DISM image management command line options](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/dism-image-management-command-line-options-s14#mount-image).
+
+3. Service your image. For example, to enable the legacy components feature:
 
     ```
-    list disk
-    exit
+    dism /image:"C:\ffumount" /enable-feature:legacycomponents
     ```
 
-6.  Install the Windows 10 version of DISM.
+    To see available options, run `dism /image:<path to mounted image> /?` or 
+
+4. Unmount your FFU image and commit or discard changes. If you use /commit, your changes will be saved to your FFU file.
+
+    To unmount your FFU and commit changes, you'd use `/unmount-image` with the `/commit` option:
 
     ```
-    E:\DISM_Win10\WimMountAdkSetupAmd64.exe /Install /q
+    dism /unmount-image /mountdir:"C:\ffumount" /commit
     ```
 
-7.  Apply the image to a drive.
+    If you decide to not keep the changes you've made to the FFU, you can use `/unmount-image` with the `/discard` option:
 
     ```
-    E:\DISM_Win10\DISM.exe /Apply-Image /ImageFile:E:\flash.sfu /SFUFile:E:\flash*.sfu /ApplyDrive:\\.\PhysicalDrive0 /SkipPlatformCheck
+    dism /unmount-image /mountdir:"C:\ffumount" /discard
     ```
 
 ## <span id="related_topics"></span>Related topics
 
 [Download and install the Windows ADK](https://msdn.microsoft.com/windows/hardware/commercialize/adk-install)
-
-[Windows Imaging and Configuration Designer](https://msdn.microsoft.com/library/windows/hardware/dn916113)
 
 [FFU image format](../mobile/ffu-image-format.md)
 

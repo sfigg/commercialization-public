@@ -15,10 +15,9 @@ ms.technology: windows-oem
 # Graphics
 
 
-## What's new in Windows 10 for Graphics
+## Windows 10 Guidelines
 
-
-This topic covers new guidelines for Graphics in Windows 10.
+This topic covers guidelines for Graphics in Windows 10.
 
 ### Windows 10 support for Ultra High Definition (UHD)
 
@@ -67,102 +66,4 @@ The infrastructure used for hardware-based content protection for Windows 10 is 
 
 ## Minimum requirements for Graphics
 
-<table>
-<thead valign="bottom">
-<tr>
-<th>Windows edition</th>
-<th colspan="2">Requirements</th>
-</tr>
-</thead>
-<tbody valign="top">
-<tr>
-<td rowspan="2">
-Windows 10 for desktop editions for PCs and 2-in-1's
-</td>
-<td>
-Resolution, bit depth, and size
-</td>
-<td>
-<p>
-Supports a minimum display resolution of SVGA (800 x 600) with a depth of 32 bits on each output simultaneously, and a minimum diagonal display size of 8-inches or larger. Tablets, 2-in-1's, and laptops that run Windows 10 Desktop edition must include a display that meets the requirements listed in Minimum Hardware Requirements. A display is optional for desktop PCs that run Windows Desktop edition.
-</p>
-<p>
-Devices that support UHDTV 4K must have 8-inch screens or larger.
-</p>
-<p>
-Devices that support UHDTV 8K must have 27-inch screens or larger.
-</p>
-</td>
-</tr>
-<tr>
-<td>
-Graphics
-</td>
-<td>
-Devices must include a GPU that supports DirectX 9 or later.
-</td>
-</tr>
-<tr>
-<td rowspan="2">
-Windows Server 2016
-</td>
-<td>
-Resolution, bit depth, and size
-</td>
-<td>
-Supports a minimum display resolution of XGA (1024 x 768) with a depth of 32 bits on each output simultaneously.
-</td>
-</tr>
-<tr>
-<td>
-Graphics
-</td>
-<td>
-A GPU is optional. If a GPU is included, it must support DirectX 9 or later.
-</td>
-</tr>
-<tr>
-<td rowspan="4">
-Windows 10 Mobile
-</td>
-<td>
-Resolution, bit depth, and size
-</td>
-<td>
-<p>
-Supports a minimum resolution of WVGA (800 x 480), a minimum of 32 bits of color per pixel, a minimum diagonal display size of 4 inches (4.5 inches is recommended) and a maximum diagonal display size of less than 8-inches. The hardware display panel must support a minimum of 16 bits per pixel (5 red, 6 green, 5 blue). The display driver must support a minimum of 32 bits of color per pixel, and must be able to scan out to the display panel when the panel bit depth is less than 32 bits per pixel.
-</p>
-<p>
-Devices that support QHD must have 4-inch screens or larger.
-</p>
-<p>
-Devices that support UHDTV 4K must have 6-inch screens or larger.
-</p>
-</td>
-</tr>
-<tr>
-<td>
-Pixel aspect ratio
-</td>
-<td>
-Display pixels in devices must be square—that is, have an aspect ratio of 1:1.
-</td>
-</tr>
-<tr>
-<td>
-Refresh rate for display panel hardware
-</td>
-<td>
-The display panel hardware in devices must support an update and refresh rate of 59.97 ±0.03 Hz. The range for smart panels (panels that support self-refresh) is extended to 59.97 ±3.0 Hz at room temperature (25˚C). Update rate is defined as the rate at which new frames can be sent to the display hardware. The refresh rate is defined as the number of times in a second that display hardware draws the data. This specification applies for all display configurations and all supported overlay modes (primary + secondary).
-</td>
-</tr>
-<tr>
-<td>
-Display brightness levels
-</td>
-<td>
-All displays in devices must support a minimum of 16 levels of brightness.
-</td>
-</tr>
-</tbody>
-</table>
+For details on minimum requirements for Graphics, see [Minimum Hardware Requirements](https://docs.microsoft.com/en-us/windows-hardware/design/minimum/minimum-hardware-requirements-overview)

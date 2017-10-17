@@ -4,7 +4,7 @@ Description: 'Lab 6: Add universal Windows apps, Lab 6: Add universal Windows ap
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Lab 6: Add universal Windows apps, Lab 6: Add universal Windows apps, and taskbar pins'
 ms.author: themar
-ms.date: 05/02/2017
+ms.date: 10/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -22,7 +22,7 @@ Add apps to your images to support different customer needs. Some have different
 
 - **Add languages before major updates.** Major updates include hotfixes, general distribution releases, or service packs. If you add a language later, you'll need to [reinstall the updates](servicing-the-image-with-windows-updates-sxs.md).
 
-- **Add major updates before apps**. Thes apps include universal Windows apps and desktop applications. If you add an update later, you'll need to  [reinstall the apps](add-universal-apps-sxs.md).
+- **Add major updates before apps**. These apps include universal Windows apps and desktop applications. If you add an update later, you'll need to  [reinstall the apps](add-universal-apps-sxs.md).
 
 - **There's no longer monthly updates of the inbox apps**. This process changed for Windows 10, version 1607. See the [communication on the MyOEM Portal](https://myoem.microsoft.com/oem/myoem/en/programs/mktg/mda/Pages/COMM-MDAinboxApUpdtRlsPrcssChng.aspx):
 
@@ -34,7 +34,7 @@ Add apps to your images to support different customer needs. Some have different
 
 ## <span id="Mount_the_image"></span>Mount the image
 
-**Step 1: Mount the image**
+### Step 1: Mount the image
 
 Use the steps from [Lab 3: Add device drivers (.inf-style)](add-device-drivers.md) to mount the image. The short version:
 
@@ -44,19 +44,19 @@ Use the steps from [Lab 3: Add device drivers (.inf-style)](add-device-drivers.m
 
 3.  Mount the image (`md C:\mount\windows`, then `Dism /Mount-Image /ImageFile:"C:\Images\install.wim" /Index:1 /MountDir:"C:\mount\windows" /Optimize`)
 
+
 ## <span id="Add_or_reinstall_apps"></span>Add/reinstall apps
 	
-**Step 2: Add/reinstall inbox apps (required whenever adding languages)**
+### Step 2: Add/reinstall inbox apps (required whenever adding languages)
 
-Note, in previous versions, it was required to first remove inbox apps. This is no longer required, and if you do, the commands may fail.
+> [!Note]
+> In previous versions of Windows, it was required to first remove inbox apps. This is no longer required, and if you do, the commands may fail.
 
-NOTE: For Windows 10 version 1607, app bundles now only contain the dependency packages that pertain to the app. You no longer need to check the prov.xml file for what dependencies to install. Install all dependency packages found in the folder.
-
-1.  Go to <https://microsoftoem.com> and get the supplemental OPK. This package includes the Windows 10, version 1703 inbox apps. 
+1.  Go to <https://microsoftoem.com> and get the App Update OPK. This package includes the Windows 10 inbox apps for the most current Windows release. 
 
 2.  Extract the package to a folder, for example, E:\apps\amd64.
 
-3.  Add/reinstall the inbox apps. The following example shows you how to reinstall the Get Started inbox app. Repeat these steps for each of the inbox apps (with the exception of AppConnector) by substituting the appropriate package.
+3.  Add/reinstall the inbox apps. The following example shows you how to reinstall the 3D Builder inbox app. Repeat these steps for each of the inbox apps (with the exception of AppConnector) by substituting the appropriate package.
 
     Partial example: 
 
@@ -66,11 +66,19 @@ NOTE: For Windows 10 version 1607, app bundles now only contain the dependency p
 
     For full examples, see [sample scripts](windows-deployment-sample-scripts-sxs.md#Reinstall_Windows_inbox_apps).
 
-**Step 3: Add/reinstall other apps, example: Microsoft Universal Office Apps**
+### Step 3: Add the HEVC Codec
+
+For Windows 10, version 1709 add the HEVC codec and it's dependencies from the App Update OPK. Note that the HEVC codec is not currently available as an .appxbundle package, so you'll have to use the .appx packages.
+
+```
+DISM /image:c:\mount\windows /add-ProvisionedAppxPackage /packagepath:"E:\apps\amd64\Microsoft.HEVCVideoExtension_8wekyb3d8bbwe.x64.appx" /licensepath:"E:\apps\amd64\Microsoft.HEVCVideoExtension_8wekyb3d8bbwe.x64.xml" /dependencypackagepath:"E:\apps\amd64\Microsoft.VCLibs.x64.14.00.appx"
+```
+
+### Step 4: Add/reinstall other apps, example: Microsoft Universal Office Apps
 
 Get the latest version of the app. In our example, we install Microsoft Universal Office Apps, though you can install any UWP app using this procedure. 
 
-1.  Go to <https://microsoftoem.com> and get the latest version of the Office Mobile supplemental OPK. This guide uses X20-98485 Office Mobile Multilang v1.3 OPK. 
+1.  Go to <https://microsoftoem.com> and get the latest version of the Office Mobile supplemental OPK. This guide uses  Office Mobile Multilang v1.3 OPK. 
 
     **Note**: Install either Office Single Image (either with or with out perpetual or subscription license) or Office Mobile (not both). Office Mobile must be used on devices with screen size of 10.1” and below, and Office Single Image must be used on devices with screen sizes above 10.1”. For devices that have a single fixed storage drive with less than 32 GB, OEMs may preinstall Office Mobile, regardless of the screen size. To learn more, see [Office Mobile Communication](https://myoem.microsoft.com/oem/myoem/en/product/office/Pages/COMM-OfficeUnvrslAppsOPKRlsTmng.aspx).
 
@@ -88,11 +96,11 @@ Get the latest version of the app. In our example, we install Microsoft Universa
 
     Where the PackagePath points to the app bundle package.
 
-**Step 4: Start Menu**
+### Step 5: Start Menu
 
 Note the app IDs, you'll need these later in [Lab 13: Add universal Windows apps and taskbar pins](add-start-tiles-sxs.md).
 
-**Step 5: Unmount the images**
+### Step 6: Unmount the images
 
 1.  Close all applications that might access files from the image.
 
@@ -108,7 +116,7 @@ Note the app IDs, you'll need these later in [Lab 13: Add universal Windows apps
 
 ## <span id="Try_it_out"></span>Try it out
 
-**Step 6: Apply the image to a new PC**
+### Step 7: Apply the image to a new PC
 Use the steps from [Lab 2: Deploy Windows using a script](deploy-windows-with-a-script-sxs.md) to copy the image to the storage USB drive, apply the Windows image and the recovery image, and boot it up. The short version:
 
 1.  Copy the image file to the storage drive.
@@ -117,7 +125,7 @@ Use the steps from [Lab 2: Deploy Windows using a script](deploy-windows-with-a-
 4.  Apply the image: `D:\ApplyImage.bat D:\Images\install.wim`.
 5.  Disconnect the drives, then reboot (`exit`).
 	
-**Step 7: Verify apps**
+### Step 8: Verify apps
 1.  After the PC boots, either create a new user account, or else press Ctrl+Shift+F3 to reboot into the built-in administrator account (This is also known as audit mode).
 
 2.  Check the Start Menu to make sure the apps are available.

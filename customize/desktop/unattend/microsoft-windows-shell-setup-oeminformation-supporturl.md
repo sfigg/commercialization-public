@@ -8,40 +8,24 @@ ms.assetid: 311d7bbd-0973-40b3-95be-07eca2edb0c1
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
 ms.author: alhopper
-ms.date: 05/02/2017
+ms.date: 10/17/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # SupportURL
 
-
-`SupportURL` specifies the complete URL of the support page for the OEM.
+`SupportURL` specifies the complete URL of the support page for the OEM that will be launched from the Get Help app.
 
 ## Values
 
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><em>URL</em></p></td>
-<td><p>Specifies the support page URL for the OEM. URL must be a complete URL, including the http:// prefix.</p>
-<p><em>URL</em> is a string with a maximum length of 2083 characters.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Value                   | Description                                                                           |
+|:------------------------|:--------------------------------------------------------------------------------------|
+| *url*                   | Specifies the support page URL for the OEM. URL must be a complete URL, including the `http://` prefix. *Url* is a string with a maximum length of 2083 characters. Required, unless [`SupportAppURL`](microsoft-windows-shell-setup-oeminformation-supportappurl.md) is present, in which case it is optional. If both are supplied, `SupportAppURL` is used.                                         |
 
 This string type supports empty elements.
 
 ## Valid Passes
-
 
 auditUser
 
@@ -55,42 +39,24 @@ specialize
 
 ## Parent Hierarchy
 
-
 [Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [OEMInformation](microsoft-windows-shell-setup-oeminformation.md) | **SupportURL**
 
 ## Applies To
-
 
 For the list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md).
 
 ## XML Example
 
+The following XML shows how to set OEM information.
 
-The following XML output shows how to set OEM information.
-
-```
+```xml
 <OEMInformation>
-   <HelpCustomized>false</HelpCustomized>
-   <Manufacturer>OEM name</Manufacturer>
-   <Model>model name</Model>
-   <SupportHours>hours</SupportHours>
-   <SupportPhone>123-456-7890</SupportPhone>
-   <SupportURL>http://www.contoso.com</SupportURL>
+   <SupportProvider>Contoso Support</SupportProvider>
+   <SupportAppURL>contoso-contact-support</SupportAppURL>
+   <SupportURL>http://www.fabrikam.com/support</SupportURL>
 </OEMInformation>
 ```
 
 ## Related topics
 
-
 [OEMInformation](microsoft-windows-shell-setup-oeminformation.md)
-
- 
-
- 
-
-
-
-
-
-
-

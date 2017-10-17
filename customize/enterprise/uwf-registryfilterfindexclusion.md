@@ -11,16 +11,13 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # UWF\_RegistryFilter.FindExclusion
-
 
 Checks if a specific registry key is excluded from being filtered by Unified Write Filter (UWF).
 
 ## Syntax
 
-
-```
+```powershell
 UInt32 FindExclusion(
     [in] string RegistryKey,
     [out] boolean bFound
@@ -29,45 +26,27 @@ UInt32 FindExclusion(
 
 ## Parameters
 
-
-<a href="" id="registrykey"></a>*RegistryKey*  
+<a href="" id="registrykey"></a>*RegistryKey*
 \[in\] A string that contains the full path of the registry key.
 
-<a href="" id="bfound"></a>*bFound*  
+<a href="" id="bfound"></a>*bFound*
 \[out\] Indicates if the *RegistryKey* is in the exclusion list of registry keys.
 
 ## Return Value
-
 
 Returns an HRESULT value that indicates [WMI status](http://go.microsoft.com/fwlink/p/?LinkID=208318) or a [WMI error](http://go.microsoft.com/fwlink/p/?LinkID=208317).
 
 ## Requirements
 
-
-|                       |           |
-|-----------------------|-----------|
 | Windows Edition       | Supported |
+|:----------------------|:----------|
 | Windows 10 Home       | No        |
 | Windows 10 Pro        | No        |
 | Windows 10 Enterprise | Yes       |
 | Windows 10 Education  | Yes       |
 
- 
-
 ## Related topics
-
 
 [UWF\_RegistryFilter](uwf-registryfilter.md)
 
 [Unified Write Filter](unified-write-filter.md)
-
- 
-
- 
-
-
-
-
-
-
-
