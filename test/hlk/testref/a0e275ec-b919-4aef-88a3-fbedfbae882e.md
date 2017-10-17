@@ -12,63 +12,18 @@ ms.assetid: 97b312aa-d988-4a2a-acd6-08591a88f6fa
 
 This test performs Bulk, Interrupt, Isoch and Stream transfers with cancellations.
 
-## <span id="Test_details"></span><span id="test_details"></span><span id="TEST_DETAILS"></span>Test details
-
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><strong>Specifications</strong></td>
-<td><ul>
-<li>Device.BusController.UsbController.Discretional</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td><strong>Platforms</strong></td>
-<td><ul>
-<li>Windows 10 Mobile ARM</li>
-<li>Windows 10 Mobile ARM64</li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td><strong>Supported Releases</strong></td>
-<td><ul>
-<li>Windows 10</li>
-<li>Windows 10, version 1511</li>
-<li>Windows 10, version 1607</li>
-<li>Windows 10, version 1703</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td><strong>Expected run time (in minutes)</strong></td>
-<td>5</td>
-</tr>
-<tr class="odd">
-<td><strong>Category</strong></td>
-<td>Development</td>
-</tr>
-<tr class="even">
-<td><strong>Timeout (in minutes)</strong></td>
-<td>30</td>
-</tr>
-<tr class="odd">
-<td><strong>Requires reboot</strong></td>
-<td>false</td>
-</tr>
-<tr class="even">
-<td><strong>Requires special configuration</strong></td>
-<td>false</td>
-</tr>
-<tr class="odd">
-<td><strong>Type</strong></td>
-<td>automatic</td>
-</tr>
-</tbody>
-</table>
+## Test details
+|||
+|---|---|
+| **Specifications**  | <ul><li>Device.BusController.UsbController.Discretional</li></ul> |  
+| **Platforms**   | <ul><li>Windows 10, mobile edition (ARM)</li><li>Windows 10, mobile edition (ARM64)</li></ul> |
+| **Supported Releases** | <ul><li>Windows 10</li><li>Windows 10, version 1511</li><li>Windows 10, version 1607</li><li>Windows 10, version 1703</li><li>Windows 10, version 1709</li></ul> |
+|**Expected run time (in minutes)**| 20 |
+|**Category**| Development |
+|**Timeout (in minutes)**| 30 |
+|**Requires reboot**| false |
+|**Requires special configuration**| false |
+|**Type**| automatic |
 
  
 

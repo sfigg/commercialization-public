@@ -16,7 +16,7 @@ Be aware that serious problems can occur if you modify the registry incorrectly.
 
 ## Windows 10 tuning capabilities
 
-Windows 10, version 1607 provides  new registry capabilities for better device tuning. Note that the default values are set to work well with most devices. 
+Windows 10, version 1607 provides new registry capabilities for better device tuning. Note that the default values are set to work well with most devices. 
 
 The most common tuning required is shifting the touchpad offset. Keyboard offset registry keys are unchanged from Windows 8.1 and will continue to be used for Windows 10, version 1607. For more information, see [the touchpad tuning guide](https://docs.microsoft.com/en-us/windows-hardware/design/component-guidelines/windows-precision-touchpad-device-integration). All registry keys noted below are stored in: `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\PrecisionTouchPad\`
 

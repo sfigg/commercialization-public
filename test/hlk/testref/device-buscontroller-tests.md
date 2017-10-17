@@ -10,6 +10,14 @@ ms.assetid: 862cadd0-fb91-4ce7-bfba-6237d2822499
 # Device.BusController tests
 
 
+-   [Bluetooth - Wide Band Speech Capability (Bring Up)](0bed46c5-94d3-4188-b85c-2090e107d47d.md)
+-   [Bluetooth - Wide Band Speech Offload Capability (Bring Up)](3fe79e60-9d27-431d-a586-daf7346a98c1.md)
+-   [PWM WinRT Concurrent Creation (Reliability)](6a73ce07-16a4-4e7b-b85d-85dcd3067937.md)
+-   [PWM WinRT Concurrent Usage (Reliability)](e63cad4e-a9f4-4443-86d4-583b40ba9ec3.md)
+-   [PWM WinRT Functional Tests (Development and Integration)](ed0ba37e-5e64-44a7-94b4-da6ece511a5a.md)
+-   [PWM WinRT SetActiveDutyCycle (Reliability)](2280f074-4de1-479b-8686-1bb9ba7d1ce6.md)
+-   [PWM WinRT SetActiveDutyCycle Benchmark (Tuning and Validation)](d19e8260-2310-4926-8d34-38f75bfa6bed.md)
+-   [PWM WinRT SetDesiredFrequency Benchmark (Tuning and Validation)](b9bf5818-3ef0-4a39-948a-0936aa350643.md)
 -   [\[Dual-Role MUTT\] Bulk IO Tests (Long)](7cb0d88d-583c-4582-8435-9665fd2d48e4.md)
 -   [\[Dual-Role MUTT\] Bulk IO Tests (Short)](53729039-3619-4a83-ac08-72b5c605e8b2.md)
 -   [\[Dual-Role MUTT\] Enumeration Tests (Long)](1af0d0ea-0b4f-4032-bbfd-a69707b7c56a.md)
