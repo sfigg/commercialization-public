@@ -3,6 +3,7 @@ author: themar
 Description: What's new in Windows manufacturing
 MSHAttr: 'PreferredLib:/library'
 title: What's new in Windows manufacturing
+redirect_url: https://docs.microsoft.com/en-us/windows-hardware/get-started/what-s-new-in-windows
 ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
