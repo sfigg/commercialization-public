@@ -11,31 +11,25 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # UWF\_Filter.ResetSettings
-
 
 Restores UWF settings to the original configuration settings.
 
 ## Syntax
 
-
-```
+```powershell
 UInt32 ResetSettings();
 ```
 
 ## Parameters
 
-
 None.
 
 ## Return Value
 
-
 Returns an HRESULT value that indicates [WMI status](http://go.microsoft.com/fwlink/p/?LinkID=208318) or a [WMI error](http://go.microsoft.com/fwlink/p/?LinkID=208317).
 
 ## Remarks
-
 
 You must use an administrator account to reset UWF settings.
 
@@ -45,31 +39,15 @@ If you added UWF to your device by using SMI settings in an unattend.xml file, t
 
 ## Requirements
 
-
-|                       |           |
-|-----------------------|-----------|
 | Windows Edition       | Supported |
+|:----------------------|:----------|
 | Windows 10 Home       | No        |
 | Windows 10 Pro        | No        |
 | Windows 10 Enterprise | Yes       |
 | Windows 10 Education  | Yes       |
 
- 
-
 ## Related topics
-
 
 [UWF\_Filter](uwf-filter.md)
 
 [Unified Write Filter](unified-write-filter.md)
-
- 
-
- 
-
-
-
-
-
-
-

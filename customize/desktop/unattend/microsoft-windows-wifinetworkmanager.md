@@ -19,7 +19,7 @@ ms.technology: windows-oem
 
 Specifies settings that you can configure for the Wi-Fi Sense feature.
 
-**This setting has been deprecated in Windows 10, version 1607**. The information about this deprecated setting is provided for reference only. The Wi-Fi Sense credential sharing feature has been removed.
+**This setting has been deprecated**. The information about this deprecated setting is provided for reference only. The Wi-Fi Sense credential sharing feature has been removed.
 
 Wi-Fi Sense automatically connects you to Wi-Fi so you can get online quickly in more places. It can connect you to open Wi-Fi hotspots that it knows about through crowdsourcing, or to Wi-Fi networks that your contacts have shared with you by using Wi-Fi Sense.
 
@@ -55,7 +55,7 @@ Wi-Fi Sense can discover your device location even when location is turned off f
 <tr class="even">
 <td><p>[WiFiSharingSkypeInitial](microsoft-windows-wifinetworkmanager-wifisharingskypeinitial.md)</p></td>
 <td><p>Controls how Wi-Fi networks are shared with the user's Skype contacts.</p>
-<p><strong>This setting has been deprecated in Windows 10, version 1607</strong>. The information about this deprecated setting is provided for reference only. The Wi-Fi Sense credential sharing feature has been removed.</p></td>
+<p><strong>This setting has been deprecated</strong>. The information about this deprecated setting is provided for reference only. The Wi-Fi Sense credential sharing feature has been removed.</p></td>
 </tr>
 </tbody>
 </table>

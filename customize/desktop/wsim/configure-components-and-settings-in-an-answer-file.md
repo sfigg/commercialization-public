@@ -13,78 +13,53 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # Configure Components and Settings in an Answer File
-
 
 The following procedure describes how to do the following:
 
--   Add a component to an answer file
-
--   Customize a setting value in an answer file
-
--   Add a list item to an answer file
+* Add a component to an answer file
+* Customize a setting value in an answer file
+* Add a list item to an answer file
 
 List items are settings that can be declared multiple times, and each declaration contains different values. For example, the Windows Internet Explorer **FavoritesList** setting is used to specify multiple Favorites links. For each new Favorites link that you want to add to Internet Explorer, you add a new **FavoritesList** setting.
 
-**To add a component to an answer file**
+## Add a component to an answer file
 
-1.  Open Windows System Image Manager (Windows SIM).
+1. Open Windows System Image Manager (Windows SIM).
+1. Open a Windows image. For more information, see [Open a Windows Image or Catalog File](open-a-windows-image-or-catalog-file.md).
+1. Create or open an answer file. For more information, see [Create or Open an Answer File](create-or-open-an-answer-file.md).
+1. In the **Windows Image** pane, locate the component or package that you want to add to the answer file.
+1. Right-click the component, and then select a configuration pass.
 
-2.  Open a Windows image. For more information, see [Open a Windows Image or Catalog File](open-a-windows-image-or-catalog-file.md).
+The component is added to the answer file in the specified configuration pass.
 
-3.  Create or open an answer file. For more information, see [Create or Open an Answer File](create-or-open-an-answer-file.md).
+> [!Note]
+> To search the entire Windows image (.wim) file, press Ctrl+F.
 
-4.  In the **Windows Image** pane, locate the component or package that you want to add to the answer file.
+## Customize a setting value in an answer file
 
-5.  Right-click the component, and then select a configuration pass.
+1. Open Windows SIM.
+1. Open a Windows image. For more information, see [Open a Windows Image or Catalog File](open-a-windows-image-or-catalog-file.md).
+1. Create or open an answer file. For more information, see [Create or Open an Answer File](create-or-open-an-answer-file.md).
+1. In the **Answer File** pane, find the configuration pass that contains the component for the setting that you want to change.
+1. Select the component or package that contains the setting that you want to change.
+1. In the **Settings** section of the **Properties** pane, change the value of the setting to update it. Depending on the type of setting, you can enter a new setting or select from a drop-down list of possible settings.
 
-    The component is added to the answer file in the specified configuration pass.
+For more information about the various settings and properties, see [Component Settings and Properties Reference](component-settings-and-properties-reference.md).
 
-    **Note**  
-    To search the entire Windows image (.wim) file, press Ctrl+F.
+## Add a list item to an answer file
 
-     
+1. Open Windows SIM.
+1. Open a Windows image. For more information, see [Open a Windows Image or Catalog File](open-a-windows-image-or-catalog-file.md).
+1. Create or open an answer file. For more information, see [Create or Open an Answer File](create-or-open-an-answer-file.md).
+1. In the **Windows Image** pane, add the component or setting to the answer file.
+1. In the **Answer File** pane, right-click the list item, and then click **Insert**. Windows SIM inserts a new list-item type. For example, right-click the **DriverPaths** setting, and then click **Insert new PathAndCredentials**. A new **PathAndCredentials** setting is added to the answer file.
+1. To add more list items, repeat the previous step.
 
-**To customize a setting value in an answer file**
-
-1.  Open Windows SIM.
-
-2.  Open a Windows image. For more information, see [Open a Windows Image or Catalog File](open-a-windows-image-or-catalog-file.md).
-
-3.  Create or open an answer file. For more information, see [Create or Open an Answer File](create-or-open-an-answer-file.md).
-
-4.  In the **Answer File** pane, find the configuration pass that contains the component for the setting that you want to change.
-
-5.  Select the component or package that contains the setting that you want to change.
-
-6.  In the **Settings** section of the **Properties** pane, change the value of the setting to update it. Depending on the type of setting, you can enter a new setting or select from a drop-down list of possible settings.
-
-    For more information about the various settings and properties, see [Component Settings and Properties Reference](component-settings-and-properties-reference.md).
-
-**To add a list item to an answer file**
-
-1.  Open Windows SIM.
-
-2.  Open a Windows image. For more information, see [Open a Windows Image or Catalog File](open-a-windows-image-or-catalog-file.md).
-
-3.  Create or open an answer file. For more information, see [Create or Open an Answer File](create-or-open-an-answer-file.md).
-
-4.  In the **Windows Image** pane, add the component or setting to the answer file.
-
-5.  In the **Answer File** pane, right-click the list item, and then click **Insert**.
-
-    Windows SIM inserts a new list-item type. For example, right-click the **DriverPaths** setting, and then click **Insert new PathAndCredentials**. A new **PathAndCredentials** setting is added to the answer file.
-
-6.  To add more list items, repeat the previous step.
-
-    **Important**  
-    Each list item should contain a unique **Key** value to differentiate the list item from other list items of the same type.
-
-     
+> [!Important]
+> Each list item should contain a unique **Key** value to differentiate the list item from other list items of the same type.
 
 ## Related topics
-
 
 [Windows System Image Manager How-to Topics](windows-system-image-manager-how-to-topics.md)
 
@@ -101,14 +76,3 @@ List items are settings that can be declared multiple times, and each declaratio
 [Add a Custom Command to an Answer File](add-a-custom-command-to-an-answer-file.md)
 
 [Find a Component, Setting, or Package in Windows SIM](find-a-component-setting-or-package-in-windows-sim.md)
-
- 
-
- 
-
-
-
-
-
-
-

@@ -13,9 +13,7 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # Manage Files and Folders in a Distribution Share
-
 
 After a distribution-share folder is created, you can add files to the **$OEM$ Folders** or **Out-of-Box Drivers** folders. You cannot add packages directly to the Packages folder. You must use Windows® System Image Manager (Windows SIM) to add packages to a distribution share. For more information, see [Add Packages to a Distribution Share](add-packages-to-a-distribution-share.md).
 
@@ -23,55 +21,31 @@ You can make out-of-box device drivers (also called third-party drivers) availab
 
 When you create a configuration set, you can use the **$OEM$ Folders** folder to copy scripts, binaries, and other files to Windows during installation. An answer file can reference files and folders stored in subfolders of **\\$OEM$ Folders** can be referenced in an answer file. For more information, see [Create a Configuration Set](create-a-configuration-set.md).
 
-**Important**  
-Do not overwrite existing files carried and serviced by the operating system. Overwriting system files can cause the operating system to behave unpredictably and cause serious issues.
+> [!Important]
+> Do not overwrite existing files carried and serviced by the operating system. Overwriting system files can cause the operating system to behave unpredictably and cause serious issues.
 
- 
+To manage files and folders in a distribution share:
 
-**To manage files and folders in a distribution share**
+1. Open a distribution share. For more information, see [Create or Open a Distribution Share](create-or-open-a-distribution-share.md).
+1. Right-click the distribution share, and then click **Explore Distribution Share**.
+1. Double-click either the **$OEM$ Folders** folder or the **Out-of-Box Drivers** folder. The folder opens.
+1. Manage files and folders in the following ways:
+    * Create subfolders by right-clicking in the folder, clicking **New**, and then clicking **Folder**.
+    * Add files to the distribution share by copying files and pasting them in the folder.
+    * Delete distribution-share contents by right-clicking a file or folder and then clicking **Delete**.
+    * Add out-of-box drivers by copying the device-driver files to the **Out-of-Box Drivers** folder.
+    * Add applications, scripts, or other files to the **$OEM$ Folders** subfolders.
 
-1.  Open a distribution share. For more information, see [Create or Open a Distribution Share](create-or-open-a-distribution-share.md).
+    > [!Note]
+    > The **$OEM$ Folders** subfolders are organized in a specific structure. Copy files to the **$OEM$ Folders** subfolders as described in [Distribution Shares and Configuration Sets Overview](distribution-shares-and-configuration-sets-overview.md). For example, if you add files to **$OEM$ Folders\\$1\\Program Files\\Application1**, Windows Setup will copy them to **C:\\Program Files\\Application1** on the Windows installation.
 
-2.  Right-click the distribution share, and then click **Explore Distribution Share**.
-
-3.  Double-click either the **$OEM$ Folders** folder or the **Out-of-Box Drivers** folder.
-
-    The folder opens.
-
-4.  Manage files and folders in the following ways:
-
-    -   Create subfolders by right-clicking in the folder, clicking **New**, and then clicking **Folder**.
-
-    -   Add files to the distribution share by copying files and pasting them in the folder.
-
-    -   Delete distribution-share contents by right-clicking a file or folder and then clicking **Delete**.
-
-    -   Add out-of-box drivers by copying the device-driver files to the **Out-of-Box Drivers** folder.
-
-    -   Add applications, scripts, or other files to the **$OEM$ Folders** subfolders.
-
-        The **$OEM$ Folders** subfolders are organized in a specific structure. Copy files to the **$OEM$ Folders** subfolders as described in [Distribution Shares and Configuration Sets Overview](distribution-shares-and-configuration-sets-overview.md). For example, if you add files to **$OEM$ Folders\\$1\\Program Files\\Application1**, Windows Setup will copy them to **C:\\Program Files\\Application1** on the Windows installation.
-
-5.  Close the distribution-share folder.
-
-6.  The changes appear in the **Distribution Share** pane.
+1. Close the distribution-share folder.
+1. The changes appear in the **Distribution Share** pane.
 
 ## Related topics
-
 
 [Windows System Image Manager How-to Topics](windows-system-image-manager-how-to-topics.md)
 
 [Create or Open a Distribution Share](create-or-open-a-distribution-share.md)
 
 [Add Packages to a Distribution Share](add-packages-to-a-distribution-share.md)
-
- 
-
- 
-
-
-
-
-
-
-

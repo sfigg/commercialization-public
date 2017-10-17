@@ -37,8 +37,8 @@ The following features must be included in all images, though they may be custom
 | Features                        | Description                                                                                                                 |
 |---------------------------------|-----------------------------------------------------------------------------------------------------------------------------|
 | **IOT\_CORTANA**                | Adds Cortana feature. Requires **IOT\_APPLICATIONS** feature. This is new in Windows 10, version 1703.       |
-| **IOT\_UNIFIED\_WRITE\_FILTER** | Adds [Unified Write Filter (UWF)](https://developer.microsoft.com/windows/iot/docs/uwf) to protect physical storage media from data writes. Supported starting with Windows 10, version 1607.        |
-| **IOT\_NANORDPSERVER**          | Adds [Remote Display packages](https://developer.microsoft.com/windows/iot/docs/remotedisplay). Supported starting with Windows 10, version 1607.                      |
+| **IOT\_UNIFIED\_WRITE\_FILTER** | Adds [Unified Write Filter (UWF)](https://docs.microsoft.com/windows/iot-core/secure-your-device/UnifiedWriteFilter) to protect physical storage media from data writes. Supported starting with Windows 10, version 1607.        |
+| **IOT\_NANORDPSERVER**          | Adds [Remote Display packages](https://docs.microsoft.com/windows/iot-core/manage-your-device/RemoteDisplay). Supported starting with Windows 10, version 1607.                      |
 | **IOT\_USBFN\_CLASS\_EXTENSION**  | Adds USB function WDF class extension for USB function mode support. This is new in Windows 10, version 1703. |
 | **IOT\_HWN\_CLASS\_EXTENSION**    | Adds hardware notification WDF class extension for vibration API support. This is new in Windows 10, version 1703. |
 

@@ -39,16 +39,10 @@ For a list of the supported Windows editions and architectures that this compone
 
 The following XML output shows how to set the CustomProtocol settings. Replace **bingsports** with the name of your app.
 
-```xml
-<?xml version="1.0" encoding="UTF-8"?><unattend xmlns="urn:schemas-microsoft-com:unattend">
+```XML
 <settings pass="offlineServicing">
-<component language="neutral" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" versionScope="nonSxS" publicKeyToken="31bf3856ad364e35" processorArchitecture="amd64" name="Microsoft-Windows-TwinUI">
-<CustomProtocol>bingsports</CustomProtocol>
-<DoubleClickBelowLockOverride>0</DoubleClickBelowLockOverride>
-<LongPressBelowLockOverride>0</LongPressBelowLockOverride>
-<SingleClickBelowLockOverride>0</SingleClickBelowLockOverride>
-</component>
+    <component name="Microsoft-Windows-TwinUI" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <CustomProtocol>bingsports</CustomProtocol>
+    </component>
 </settings>
-<cpi:offlineImage xmlns:cpi="urn:schemas-microsoft-com:cpi" cpi:source="wim:d:/install.wim#Windows 10 Enterprise Technical Preview"/>
-</unattend>
 ```

@@ -11,16 +11,13 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # WEKF\_Scancode.Add
-
 
 This method adds a new custom scan code combination and enables Keyboard Filter to block the new combination.
 
 ## Syntax
 
-
-```
+```powershell
 [Static] uint32 Add(
     [In] string Modifiers, 
     [In] uint16 Scancode
@@ -29,20 +26,17 @@ This method adds a new custom scan code combination and enables Keyboard Filter 
 
 ## Parameters
 
-
-<a href="" id="modifers"></a>*Modifers*  
+<a href="" id="modifers"></a>*Modifers*
 The modifier keys that are part of the key combination to block.
 
-<a href="" id="scancode"></a>*Scancode*  
+<a href="" id="scancode"></a>*Scancode*
 The hardware scan code of the key to block.
 
 ## Return Value
 
-
 Returns an HRESULT value that indicates [WMI non-error constant](http://go.microsoft.com/fwlink/p/?LinkID=208318) or a [WMI error constant](http://go.microsoft.com/fwlink/p/?LinkID=208317).
 
 ## Remarks
-
 
 **WEKF\_Scancode.Add** creates a new **WEKF\_Scancode** object and sets the **Enabled** property of the new object to **true**.
 
@@ -50,31 +44,15 @@ If a **WEKF\_Scancode** object already exists with same *Modifiers* and *Scancod
 
 ## Requirements
 
-
-|                       |           |
-|-----------------------|-----------|
 | Windows Edition       | Supported |
+|:----------------------|:----------|
 | Windows 10 Home       | No        |
 | Windows 10 Pro        | No        |
 | Windows 10 Enterprise | Yes       |
 | Windows 10 Education  | Yes       |
 
- 
-
 ## Related topics
-
 
 [WEKF\_Scancode](wekf-scancode.md)
 
 [Keyboard Filter](keyboardfilter.md)
-
- 
-
- 
-
-
-
-
-
-
-

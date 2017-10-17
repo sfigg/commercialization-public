@@ -10,7 +10,6 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # OEM HID pairing
 
 You can provide clear and precise Human Interface Device (HID) pairing instructions within OOBE to enable customers who buy new PCs running Windows 10 with an unpaired wireless mouse and keyboard to finish their PC setup. For this feature to work, the mouse and/or keyboard must be included with the PC, and the PC must not have any other mice or keyboards attached or connected to it. For example, laptops are not qualified for this feature.

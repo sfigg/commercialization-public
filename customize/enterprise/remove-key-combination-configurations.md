@@ -11,9 +11,7 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # Remove key combination configurations
-
 
 The following sample Windows PowerShell script uses the Windows Management Instrumentation (WMI) providers for Keyboard Filter to create two functions to remove custom-defined key combination configurations from Keyboard Filter. It demonstrates several ways to use each function.
 
@@ -25,8 +23,7 @@ You cannot remove the predefined key combination configurations for Keyboard Fil
 
 ## Remove-rules.ps1
 
-
-```
+```powershell
 #
 # Copyright (C) Microsoft. All rights reserved.
 #
@@ -106,20 +103,8 @@ Remove-Scancode "Ctrl" 37
 
 ## Related topics
 
-
 [Windows PowerShell script samples for keyboard filter](keyboardfilter-powershell-script-samples.md)
 
 [Keyboard filter WMI provider reference](keyboardfilter-wmi-provider-reference.md)
 
 [Keyboard filter](keyboardfilter.md)
-
- 
-
- 
-
-
-
-
-
-
-

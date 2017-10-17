@@ -13,9 +13,7 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # Answer Files Overview
-
 
 An answer file is an XML-based file that contains setting definitions and values to use during Windows Setup. In an answer file, you specify various setup options. These options include how to partition disks, where to find the Windows image that will be installed, and which product key to apply. You can also specify values that apply to the Windows installation, such as names of user accounts and display settings. The answer file for Setup is typically called Unattend.xml.
 
@@ -23,14 +21,13 @@ Answer files that are created in Windows System Image Manager (Windows SIM) are
 
 ## Sections of an Answer File
 
-
 Settings in an answer file are organized into two sections, components and packages.
 
 ### Components
 
 The components section of an answer file contains all the component settings that are applied during Windows Setup. Components are organized into various configuration passes: **windowsPE**, **offlineServicing**, **generalize**, **specialize**, **auditSystem**, **auditUser**, and **oobeSystem**. Each configuration pass represents a different phase of Windows Setup. Settings can be applied during one or more passes. If a setting can be applied in more than one configuration pass, you can select the pass in which to apply the setting.
 
-For more information about the different components and settings that you can configure in an answer file, see the Unattended Windows Setup Reference (unattend.chm).
+For more information about the different components and settings that you can configure in an answer file, see the [Unattended Windows Setup Reference](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/) (unattend.chm).
 
 ### Packages
 
@@ -50,18 +47,6 @@ Packages in an answer file are applied to the Windows image during the **offline
 
 ## Related topics
 
-
 [Create or Open an Answer File](create-or-open-an-answer-file.md)
 
 [Windows System Image Manager Overview Topics](windows-system-image-manager-overview-topics.md)
-
- 
-
- 
-
-
-
-
-
-
-
