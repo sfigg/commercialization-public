@@ -308,7 +308,7 @@ Use the newAppxPkg with the same component name. This regenerates the customizat
 newAppxPkg "C:\DefaultApp\IoTCoreDefaultApp_1.2.0.0_ARM_Debug_Test\IoTCoreDefaultApp_1.2.0.0_ARM_Debug_Test.appx" fga Appx.MyUWPApp
 ```
 
-Learn more: [adding apps](deploy-your-app-with-a-standard-board).
+Learn more: [Add apps](deploy-your-app-with-a-standard-board).
 
 ### Adding files: watch out for zero-sized files, relative paths
 
