@@ -45,7 +45,7 @@ See [Get the tools needed to customize Windows IoT Core](set-up-your-pc-to-custo
 
 1.  Copy your sample files (TestFile1.txt and TestFile2.txt), into the new folder at **C:\\IoT-ADK-AddonKit\\Common\\Packages\\Registry.FilesAndRegKeys\\**.
 
-2.  Update the package definition file, **C:\\IoT-ADK-AddonKit\\Common\\Packages\\Registry.FilesAndRegKeys\\Registry.FilesAndRegKeys.pkg.xml**:
+2.  Update the package definition file, **C:\\IoT-ADK-AddonKit\\Common\\Packages\\Registry.FilesAndRegKeys\\Registry.FilesAndRegKeys.wm.xml**:
 
     a.  Remove the comment marks and instructions.
 
@@ -56,21 +56,26 @@ See [Get the tools needed to customize Windows IoT Core](set-up-your-pc-to-custo
     Variables like $(runtime.root) are defined in C:\\Program Files (x86)\\Windows Kits\\10\\Tools\\bin\\i386\\pkggen.cfg.xml.
 
     ``` xml
-      <OSComponent> 
-         <RegKeys> 
-             <RegKey KeyName="$(hklm.software)\$(OEMNAME)\Test">
-                <RegValue Name="StringValue" Value="Test string" Type="REG_SZ"/>
-                <RegValue Name="DWordValue" Value="12AB34CD" Type="REG_DWORD"/>
-                <RegValue Name="BinaryValue" Value="12,AB,CD,EF" Type="REG_BINARY"/>
-             </RegKey>
-             <RegKey KeyName="$(hklm.software)\$(OEMNAME)\EmptyKey"/> 
-         </RegKeys> 
-         <Files> 
-            <File Source="TestFile1.txt" /> 
-   			<File Source="TestFile2.txt"
-			    DestinationDir="$(runtime.root)\OEMInstall" Name="TestFile2.txt"/>	
-         </Files> 
-      </OSComponent> 
+    <onecorePackageInfo
+        targetPartition="MainOS"
+        releaseType="Production"
+        ownerType="OEM" />
+    <regKeys>
+        <regKey
+            keyName="$(hklm.software)\$(OEMNAME)\Test">
+            <regValue name="StringValue" type="REG_SZ" value="Test string" />
+            <regValue name="DWordValue"  type="REG_DWORD" value="0x12AB34CD" />
+            <regValue name="BinaryValue" type="REG_BINARY" value="12ABCDEF" />
+        </regKey>
+        <regKey
+            keyName="$(hklm.software)\$(OEMNAME)\EmptyKey" />
+    </regKeys>
+    <files>
+        <file destinationDir="$(runtime.system32)" source="filename.txt" />
+        <file
+            destinationDir="$(runtime.bootDrive)\OEMInstall" source="filename2.txt"
+            name="filename2.txt" />
+    </files>
     ```
 
 2.  From the IoT Core Shell, build the package. (The `BuildPkg All` command builds everything in the source folders.)

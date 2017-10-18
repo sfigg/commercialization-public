@@ -97,10 +97,10 @@ We'll take our customizations, put them together, and test them in a retail buil
 	buildpkg all
 	```
 
-    If the BSP drivers/packages are test signed, you may also need to rebuild them to have retail signature. For RPI2 BSP, run the following command again.
+    If the BSP drivers/packages are test signed, you need to rebuild them to have retail signature. You can re-sign the cabs and its contents using 
 
     ```
-    C:\rpibsp\build.cmd
+    re-signcabs.cmd <srccabdir> <dstcabdir>
     ```
 	
 4.  From the IoT Core Shell, create the image:
