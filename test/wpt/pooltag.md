@@ -14,124 +14,61 @@ ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-# PoolTag
 
+# PoolTag
 
 Describes the pool tags to be enabled for analyzing pool pages.
 
+
 ## Element Hierarchy
 
+* \<[WindowsPerformanceRecorder](windowsperformancerecorder.md)\>
+  * \<[Profiles](profiles.md)\>
+    * \<[SystemProvider](systemprovider.md)\>
+      * \<[PoolTags](pooltags.md)\>
+        * \<**PoolTag**\>
+    * \<[Profile](profile-wpr.md)\>
+      * \<[Collectors](collectors.md)\>
+        * \<[SystemCollectorId](systemcollectorid.md)\>
+          * \<[SystemProviderId](systemproviderid.md)\>
+            * \<[PoolTags](pooltags.md)\>
+              * \<**PoolTag**\>
+          * \<[SystemProvider](systemprovider.md)\>
+            * \<[PoolTags](pooltags.md)\>
+              * \<**PoolTag**\>
 
-&lt;[WindowsPerformanceRecorder](windowsperformancerecorder.md)&gt;
-
-     &lt;[Profiles](profiles.md)&gt;
-
-          &lt;[SystemProvider](systemprovider.md)&gt;
-
-               &lt;[PoolTags](pooltags.md)&gt;
-
-                     &lt;**PoolTag**&gt;
-
-          &lt;[Profile](profile-wpr.md)&gt;
-
-               &lt;[Collectors](collectors.md)&gt;
-
-                    &lt;[SystemCollectorId](systemcollectorid.md)&gt;
-
-                         &lt;[SystemProviderId](systemproviderid.md)&gt;
-
-                                &lt;[PoolTags](pooltags.md)&gt;
-
-                                     &lt;**PoolTag**&gt;
-
-                         &lt;[SystemProvider](systemprovider.md)&gt;
-
-                                &lt;[PoolTags](pooltags.md)&gt;
-
-                                     &lt;**PoolTag**&gt;
 
 ## Syntax
 
-
 ```
-<PoolTag" Value = SystemPoolTagAttributeType>
+<PoolTag Value = SystemPoolTagAttributeType>
 </PoolTag>
 ```
+
 
 ## Attributes and Elements
 
 
 ### Attributes
 
-<table>
-<colgroup>
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Attribute</th>
-<th>Description</th>
-<th>Data type</th>
-<th>Required</th>
-<th>Default</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><strong>Value</strong></p></td>
-<td><p>Describes the value of this element.</p></td>
-<td><p>String that must be one to four characters in length.</p></td>
-<td><p>Yes</p></td>
-<td><p></p></td>
-</tr>
-</tbody>
-</table>
+| Attribute | Description                          | Data type                                             | Required | Default |
+| :-------- | :----------------------------------- | :---------------------------------------------------- | :------- | :------ |
+| **Value** | Describes the value of this element. | String that must be one to four characters in length. | Yes      |         |
 
- 
 
 ### Child Elements
 
 None.
 
+
 ### Parent Elements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>[PoolTags](pooltags.md)</p></td>
-<td><p>Represents a collection of pool tags.</p></td>
-</tr>
-</tbody>
-</table>
+| Element                 | Description                           |
+| :---------------------- | :------------------------------------ |
+| [PoolTags](pooltags.md) | Represents a collection of pool tags. |
 
- 
 
 ## Related topics
 
-
 [Elements](elements.md)
-
- 
-
- 
-
-
-
-
-
-
 
