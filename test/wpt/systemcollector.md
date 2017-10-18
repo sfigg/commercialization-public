@@ -14,22 +14,20 @@ ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-# SystemCollector
 
+# SystemCollector
 
 Describes the configurations to enable the Event Tracing for Windows (ETW) kernel-mode session.
 
+
 ## Element Hierarchy
 
+* \<[WindowsPerformanceRecorder](windowsperformancerecorder.md)\>
+  * \<[Profiles](profiles.md)\>
+    * \<**SystemCollector**\>
 
-&lt;[WindowsPerformanceRecorder](windowsperformancerecorder.md)&gt;
-
-     &lt;[Profiles](profiles.md)&gt;
-
-          &lt;**SystemCollector**&gt;
 
 ## Syntax
-
 
 ```
 <SystemCollector Id       = IdType
@@ -45,136 +43,46 @@ Describes the configurations to enable the Event Tracing for Windows (ETW) kerne
 </SystemCollector>
 ```
 
+
 ## Attributes and Elements
 
 
 ### Attributes
 
-<table>
-<colgroup>
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Attribute</th>
-<th>Description</th>
-<th>Data type</th>
-<th>Required</th>
-<th>Default</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><strong>Id</strong></p></td>
-<td><p>Uniquely identifies the system collector.</p></td>
-<td><p>String that must have at least one character and cannot contain colons (:) or spaces.</p></td>
-<td><p>Yes</p></td>
-<td><p></p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Base</strong></p></td>
-<td><p>Identifies the base of the system collector. Derived collectors have all the attributes of the base collector. These can be overridden by explicitly specifying them in the derived collector.</p></td>
-<td><p>string</p></td>
-<td><p>No</p></td>
-<td><p></p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Name</strong></p></td>
-<td><p>Indicates the name of the system collector.</p></td>
-<td><p>This attribute can have one of the following values:</p>
-<ul>
-<li><p>NT Kernel Logger</p></li>
-<li><p>Circular Kernel Context Logger</p></li>
-</ul></td>
-<td><p>Yes</p></td>
-<td><p></p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Realtime</strong></p></td>
-<td><p>Indicates whether the collector works in real time.</p></td>
-<td><p>boolean</p></td>
-<td><p>No</p></td>
-<td><p>false</p></td>
-</tr>
-</tbody>
-</table>
+| Attribute    | Description                                                                                                                                                                                    | Data type                                                                                                                         | Required | Default |
+| :----------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------- | :------- | :------ |
+| **Id**       | Uniquely identifies the system collector.                                                                                                                                                      | String that must have at least one character and cannot contain colons (:) or spaces.                                             | Yes      |         |
+| **Base**     | Identifies the base of the system collector. Derived collectors have all the attributes of the base collector. These can be overridden by explicitly specifying them in the derived collector. | string                                                                                                                            | No       |         |
+| **Name**     | Indicates the name of the system collector.                                                                                                                                                    | This attribute can have one of the following values: <ul> <li>NT Kernel Logger</li> <li>Circular Kernel Context Logger</li> </ul> | Yes      |         |
+| **Realtime** | Indicates whether the collector works in real time.                                                                                                                                            | boolean                                                                                                                           | No       | false   |
 
- 
 
 ### Child Elements
 
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-<th>Description</th>
-<th>Requirement.</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>[BufferSize](buffersize.md)</p></td>
-<td><p>Describes the size of each buffer, in KB.</p></td>
-<td><p>Required, exactly 1.</p></td>
-</tr>
-<tr class="even">
-<td><p>[Buffers](buffers.md)</p></td>
-<td><p>Describes the number of buffers to be allocated when starting a session.</p></td>
-<td><p>Required, exactly 1.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[StackCaching](stackcaching.md)</p></td>
-<td><p>Describes stack caching attributes of collectors.</p></td>
-<td><p></p></td>
-</tr>
-</tbody>
-</table>
+| Element                         | Description                                                              | Requirement          |
+| :------------------------------ | :----------------------------------------------------------------------- | :------------------- |
+| [BufferSize](buffersize.md)     | Describes the size of each buffer, in KB.                                | Required, exactly 1. |
+| [Buffers](buffers.md)           | Describes the number of buffers to be allocated when starting a session. | Required, exactly 1. |
+| [StackCaching](stackcaching.md) | Describes stack caching attributes of collectors.                        |                      |
 
- 
 
 ### Parent Elements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>[Profiles](profiles.md)</p></td>
-<td><p>Represents a collection of collectors, providers, and profiles.</p></td>
-</tr>
-</tbody>
-</table>
+| Element                 | Description                                                     |
+| :---------------------- | :-------------------------------------------------------------- |
+| [Profiles](profiles.md) | Represents a collection of collectors, providers, and profiles. |
 
- 
 
 ## Remarks
 
-
 System collector definitions should precede event collector definitions.
+
 
 ## Example
 
-
 The following code example defines a system collector.
 
-```
+```xml
 <SystemCollector
   Id="WPRSystemCollector”
   Name="NT Kernel Logger"
@@ -184,18 +92,8 @@ The following code example defines a system collector.
 </SystemCollector>
 ```
 
+
 ## Related topics
 
-
 [Elements](elements.md)
-
- 
-
- 
-
-
-
-
-
-
 
