@@ -11,16 +11,13 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # UWF\_Filter
-
 
 Enables or disables Unified Write Filter (UWF), resets configuration settings for UWF, and shuts down or restarts your device.
 
 ## Syntax
 
-
-```
+```powershell
 class UWF_Filter{
     [key]  string Id;
     [read] boolean CurrentEnabled;
@@ -34,7 +31,6 @@ class UWF_Filter{
 ```
 
 ## Members
-
 
 The following tables list any methods and properties that belong to this class.
 
@@ -75,8 +71,6 @@ The following tables list any methods and properties that belong to this class.
 </tbody>
 </table>
 
- 
-
 ### <a href="" id="pro"></a>Properties
 
 <table>
@@ -116,14 +110,11 @@ The following tables list any methods and properties that belong to this class.
 </tbody>
 </table>
 
- 
-
 ### Remarks
 
 You must use an administrator account to make any changes to the configuration settings for UWF. Users with any kind of account can read the current configuration settings.
 
 ## Example
-
 
 The following example demonstrates how to enable or disable UWF by using the WMI provider in a PowerShell script.
 
@@ -135,7 +126,7 @@ The second function, `Enable-UWF`, retrieves a WMI object for **UWF\_Filter**, a
 
 The third function, `Display-UWFState`, examines the properties of the **UWF\_Filter** object, and prints out the current settings for **UWF\_Filter**.
 
-```
+```powershell
 $COMPUTER = "localhost"
 $NAMESPACE = "root\standardcimv2\embedded"
 
@@ -149,7 +140,7 @@ function Disable-UWF() {
         "Unable to retrieve Unified Write Filter settings."
         return;
     }
-                    
+
 # Call the method to disable UWF after the next restart.  This sets the NextEnabled property to false.
 
     $retval = $objUWFInstance.Disable();
@@ -172,11 +163,11 @@ function Enable-UWF() {
         "Unable to retrieve Unified Write Filter settings."
     return;
     }
-                    
+
 # Call the method to enable UWF after the next restart.  This sets the NextEnabled property to false.
 
     $retval = $objUWFInstance.Enable();
-        
+
 # Check the return value to verify that the enable is successful
     if ($retval.ReturnValue -eq 0) {
         "Unified Write Filter will be enabled after the next system restart."
@@ -187,7 +178,7 @@ function Enable-UWF() {
 
 # Create a function to display the current settings of the Unified Write Filter driver.
 function Display-UWFState() {
-    
+
 # Retrieve the UWF_Filter object
     $objUWFInstance = Get-WmiObject -Namespace $NAMESPACE -Class UWF_Filter;
 
@@ -195,7 +186,7 @@ function Display-UWFState() {
         "Unable to retrieve Unified Write Filter settings."
         return;
     }
-    
+
 # Check the CurrentEnabled property to see if UWF is enabled in the current session.
     if($objUWFInstance.CurrentEnabled) {
         $CurrentStatus = "enabled";
@@ -209,8 +200,6 @@ function Display-UWFState() {
     } else {
         $NextStatus = "disabled";
     }
-
-   
 }
 
 # Some examples of how to call the functions
@@ -230,31 +219,15 @@ Display-UWFState
 
 ## Requirements
 
-
-|                       |           |
-|-----------------------|-----------|
 | Windows Edition       | Supported |
+|:----------------------|:----------|
 | Windows 10 Home       | No        |
 | Windows 10 Pro        | No        |
 | Windows 10 Enterprise | Yes       |
 | Windows 10 Education  | Yes       |
 
- 
-
 ## Related topics
-
 
 [Unified Write Filter WMI provider reference](uwf-wmi-provider-reference.md)
 
 [Unified Write Filter](unified-write-filter.md)
-
- 
-
- 
-
-
-
-
-
-
-

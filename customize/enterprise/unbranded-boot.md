@@ -11,35 +11,28 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # Unbranded Boot
-
 
 You can suppress Windows elements that appear when Windows starts or resumes and can suppress the crash screen when Windows encounters an error that it cannot recover from. This feature is known as Unbranded Boot.
 
-**Important**  
-The first user to sign in to the device must be an administrator. This ensures that the **RunOnce** registry settings correctly apply the settings. Also, when using auto sign-in, you must not configure auto sign-in on your device at design time. Instead, auto sign-in should be configured manually after first signing in as an administrator.
-
- 
+> [!Important]
+> The first user to sign in to the device must be an administrator. This ensures that the **RunOnce** registry settings correctly apply the settings. Also, when using auto sign-in, you must not configure auto sign-in on your device at design time. Instead, auto sign-in should be configured manually after first signing in as an administrator.
 
 ## Requirements
-
 
 Windows 10 Enterprise, Windows 10 Professional, or Windows 10 Education.
 
 ## Terminology
 
+* **Turn on, Enable:** To make the setting available to the device and optionally apply the settings to the device. Generally "turn on" is used in the user interface or control panel, whereas "enable" is used for command line.
 
-**Turn on, Enable:** To make the setting available to the device and optionally apply the settings to the device. Generally "turn on" is used in the user interface or control panel, whereas "enable" is used for command line.
+* **Configure:** To customize the setting or sub-settings.
 
-**Configure:** To customize the setting or sub-settings.
+* **Embedded Boot Experience:** this feature is called "Embedded Boot Experience" in Windows 10, build 1511.
 
-**Embedded Boot Experience:** this feature is called "Embedded Boot Experience" in Windows 10, build 1511.
-
-**Custom Boot Experience:** this feature is called "Custom Boot Experience" in Windows 10, build 1607 and later.
+* **Custom Boot Experience:** this feature is called "Custom Boot Experience" in Windows 10, build 1607 and later.
 
 ## Turn on Unbranded Boot settings
-
 
 Unbranded Boot is an optional component and is not enabled by default in Windows 10. It must be enabled prior to configuring. For end-users, Unbranded Boot is available through **Control Panel** &gt; **Programs** &gt; **Programs and Features** &gt; **Turn Windows features on or off**.
 
@@ -47,44 +40,36 @@ If Windows has already been installed you cannot apply a provisioning package to
 
 BCDEdit is the primary tool for editing the startup configuration and is on your development computer in the %WINDIR%\\System32 folder. You have administrator rights for it. BCDEdit is included in a typical Windows Preinstallation Environment (Windows PE) 4.0. You can download it from the [BCDEdit Commands for Boot Environment](http://go.microsoft.com/fwlink/p/?LinkId=301755) in the Microsoft Download Center if needed.
 
-**Turn on Unbranded Boot by using Control Panel**
+### Turn on Unbranded Boot by using Control Panel
 
-1.  In the **Search the web and Windows** field, type Programs and Features and either press Enter or tap or click **Programs and Features** to open it.
-2.  In the **Programs and Features** window, click **Turn Windows features on or off**.
-3.  For Windows 10, build 1511:
+1. In the **Search the web and Windows** field, type Programs and Features and either press Enter or tap or click **Programs and Features** to open it.
+1. In the **Programs and Features** window, click **Turn Windows features on or off**.
+1. In the **Windows Features** window, expand the **Device Lockdown** node, and check or clear the checkbox for **Unbranded Boot**.
+1. Click **OK**. The **Windows Features** window indicates Windows is searching for required files and displays a progress bar. Once found, the window indicates Windows is applying the changes. When completed, the window indicates the requested changes are completed.
+1. Click **Close** to close the **Windows Features** window.
 
-    in the **Windows Features** box, select **Embedded Boot Experience**.
+## Configure Unbranded Boot settings at runtime using BCDEdit
 
-    For Windows 10, build 1607:
+1. Open a command prompt as an administrator.
+1. To disable the F8 key during startup to prevent access to the **Advanced startup options** menu, type the following:
 
-    In the **Windows Features** window, expand the **Device Lockdown** node, and check or clear the checkbox for **Unbranded Boot**.
+   ```cmd
+   bcdedit.exe -set {globalsettings} advancedoptions false
+   ```
 
-4.  Click **OK**. The **Windows Features** window indicates Windows is searching for required files and displays a progress bar. Once found, the window indicates Windows is applying the changes. When completed, the window indicates the requested changes are completed.
-5.  Click **Close** to close the **Windows Features** window.
+1. To disable the F10 key during startup to prevent access to the **Advanced startup options** menu, type the following:
 
-**To configure Unbranded Boot settings at runtime using BCDEdit**
+   ```cmd
+   bcdedit.exe -set {globalsettings} optionsedit false
+   ```
 
-1.  Open a command prompt as an administrator.
-2.  To disable the F8 key during startup to prevent access to the **Advanced startup options** menu, type the following:
+1. To suppress all Windows UI elements (logo, status indicator, and status message) during startup, type the following:
 
-    ```
-    bcdedit.exe -set {globalsettings} advancedoptions false
-    ```
-
-3.  To disable the F10 key during startup to prevent access to the **Advanced startup options** menu, type the following:
-
-    ```
-    bcdedit.exe -set {globalsettings} optionsedit false
-    ```
-
-4.  To suppress all Windows UI elements (logo, status indicator, and status message) during startup, type the following:
-
-    ```
-    bcdedit.exe -set {globalsettings} bootuxdisabled on
-    ```
+   ```cmd
+   bcdedit.exe -set {globalsettings} bootuxdisabled on
+   ```
 
 ## Configure Unbranded Boot using Unattend
-
 
 You can also configure the Unattend settings in the [Microsoft-Windows-Embedded-BootExp](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/customize/desktop/unattend/microsoft-windows-embedded-bootexp) component to add Unbranded Boot features to your image during the design or imaging phase. You can manually create an Unattend answer file or use Windows System Image Manager (Windows SIM) to add the appropriate settings to your answer file. For more information about the Unbranded Boot settings and XML examples, see the settings in Microsoft-Windows-Embedded-BootExp.
 
@@ -186,48 +171,43 @@ The following table shows the integers that can be specified in the **CrashDumpE
 </tbody>
 </table>
 
-## <a href="" id="custom-boot"></a>Customize the boot screen using Windows ICD and Deployment Image Servicing and Management (DISM)
+## <a href="" id="custom-boot"></a>Customize the boot screen using Windows Configuration Designer and Deployment Image Servicing and Management (DISM)
 
+If Windows has not been installed and you are using Windows Configuration Designer to create installation media with settings for Unbranded Boot included in the image, or you are applying a provisioning package during setup, you must enable Unbranded Boot on the installation media with DISM in order for a provisioning package to successfully apply. First you have to create the image or package.
 
-If Windows has not been installed and you are using Windows ICD to create installation media with settings for Unbranded Boot included in the image or you are applying a provisioning package during setup you must enable Unbranded Boot on the installation media with DISM in order for a provisioning package to successfully apply. First you have to create the image or package.
+1. Create a provisioning package or create a new Windows image in Windows Configuration Designer by following the instructions in [Create a provisioning package](https://docs.microsoft.com/en-us/windows/configuration/provisioning-packages/provisioning-create-package).
+1. In the customization page, select **Runtime settings** &gt; **SMISettings** and then set the value for the boot screen settings. The following values are just examples.
+   * **HideAllBootUI**=FALSE
+   * **HideBootLogo**=FALSE
+   * **HideBootStatusIndicator**=TRUE
+   * **HideBootStatusMessage**=TRUE
 
-1.  Build a provisioning package or create a new Windows image in Windows Imaging and Configuration Designer (ICD) by following the instructions in [Build and apply a provisioning package](https://msdn.microsoft.com/library/windows/hardware/dn916107) or [Build and deploy an image for Windows 10 Desktop](https://msdn.microsoft.com/library/windows/hardware/dn916105).
-    **Note**  In the **Select Windows Edition** window, choose **Common to all Windows desktop editions**.
+1. Once you have finished configuring the settings and building the package or image, you use DISM to apply the settings.
+   1. Open a command prompt with administrator privileges.
+   1. Copy install.wim to a temporary folder on hard drive (in the following steps, it assumes it's called c:\\wim).
+   1. Create a new directory.
 
-     
+      ```cmd
+      md c:\wim
+      ```
 
-2.  In the customization page, select **Runtime settings** &gt; **SMISettings** and then set the value for the boot screen settings. The following values are just examples.
-    -   **HideAllBootUI**=FALSE
-    -   **HideBootLogo**=FALSE
-    -   **HideBootStatusIndicator**=TRUE
-    -   **HideBootStatusMessage**=TRUE
+   1. Mount the image.
 
-3.  Once you have finished configuring the settings and building the package or image, you use DISM to apply the settings.
-    1.  Open a command prompt with administrator privileges.
-    2.  Copy install.wim to a temporary folder on hard drive (in the following steps, it assumes it's called c:\\wim).
-    3.  Create a new directory.
+      ```cmd
+      dism /mount-wim /wimfile:c:\bootmedia\sources\install.wim /index:1 /MountDir:c:\wim
+      ```
 
-        ```
-        md c:\wim
-        ```
+   1. Enable the feature.
 
-    4.  Mount the image.
+      ```cmd
+      dism /image:c:\wim /enable-feature /featureName:Client-EmbeddedBootExp
+      ```
 
-        ```
-        dism /mount-wim /wimfile:c:\bootmedia\sources\install.wim /index:1 /MountDir:c:\wim
-        ```
+   1. Commit the change.
 
-    5.  Enable the feature.
-
-        ```
-        dism /image:c:\wim /enable-feature /featureName:Client-EmbeddedBootExp
-        ```
-
-    6.  Commit the change.
-
-        ```
-        dism /unmount-wim /MountDir:c:\wim /Commit
-        ```
+      ```cmd
+      dism /unmount-wim /MountDir:c:\wim /Commit
+      ```
 
 In the following image, the BootLogo is identified by the green outline, the BootStatusIndicator is identified by the red outline, and the BootStatusMessage is identified by the blue outline.
 
@@ -235,10 +215,8 @@ In the following image, the BootLogo is identified by the green outline, the Boo
 
 ## <a href="" id="replace-logo"></a>Replace the startup logo
 
-
 The only supported way to replace the startup logo with a custom logo is to modify the Boot Graphics Resource Table (BGRT) on a device that uses UEFI as the firmware interface. If your device uses the BGRT to include a custom logo, it is always displayed and you cannot suppress the custom logo.
 
 ## Related topics
-
 
 [Custom Logon](custom-logon.md)

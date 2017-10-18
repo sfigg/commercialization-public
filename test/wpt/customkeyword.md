@@ -22,27 +22,17 @@ Represents a custom keyword for the profile.
 ## Element Hierarchy
 
 
-&lt;[WindowsPerformanceRecorder](windowsperformancerecorder.md)&gt;
-
-     &lt;[Profiles](profiles.md)&gt;
-
-          &lt;[SystemProvider](systemprovider.md)&gt;
-
-               &lt;[Keywords (in SystemProvider)](keywords--in-systemprovider-.md)&gt;
-
-                    &lt;**CustomKeyword**&gt;
-
-          &lt;[Profile](profile-wpr.md)&gt;
-
-               &lt;[Collectors](collectors.md)&gt;
-
-                    &lt;[SystemCollectorId](systemcollectorid.md)&gt;
-
-                         &lt;[SystemProvider](systemprovider.md)&gt;
-
-                              &lt;[Keywords (in SystemProvider)](keywords--in-systemprovider-.md)&gt;
-
-                                   &lt;**CustomKeyword**&gt;
+* \<[WindowsPerformanceRecorder](windowsperformancerecorder.md)\>
+  * \<[Profiles](profiles.md)\>
+    * \<[SystemProvider](systemprovider.md)\>
+      * \<[Keywords (in SystemProvider)](keywords--in-systemprovider-.md)\>
+        * \<**CustomKeyword**\>
+    * \<[Profile](profile-wpr.md)\>
+      * \<[Collectors](collectors.md)\>
+        * \<[SystemCollectorId](systemcollectorid.md)\>
+          * \<[SystemProvider](systemprovider.md)\>
+            * \<[Keywords (in SystemProvider)](keywords--in-systemprovider-.md)\>
+              * \<**CustomKeyword**\>
 
 ## Syntax
 
@@ -57,80 +47,29 @@ Represents a custom keyword for the profile.
 
 ### Attributes
 
-<table>
-<colgroup>
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Attribute</th>
-<th>Description</th>
-<th>Data type</th>
-<th>Required</th>
-<th>Default</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><strong>Value</strong></p></td>
-<td><p>The hexadecimal-form string name of the custom event.</p></td>
-<td><p>String built with the following pattern: 0x[a-fA-F0-9]{1,8}.</p></td>
-<td><p>Yes</p></td>
-<td><p></p></td>
-</tr>
-</tbody>
-</table>
+| Attribute              | Description                                           | Data type                                                    | Required | Default |
+|:-----------------------|:------------------------------------------------------|:-------------------------------------------------------------|:---------|:--------|
+| <strong>Value</strong> | The hexadecimal-form string name of the custom event. | String built with the following pattern: 0x[a-fA-F0-9]{1,8}. | Yes      |         |
 
- 
 
 ### Child Elements
 
 None.
 
+
 ### Parent Elements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>[Keywords (in SystemProvider)](keywords--in-systemprovider-.md)</p></td>
-<td><p>Represents a collection of keywords and custom keywords.</p></td>
-</tr>
-</tbody>
-</table>
+| Element                                                         | Description                                              |
+|:----------------------------------------------------------------|:---------------------------------------------------------|
+| [Keywords (in SystemProvider)](keywords--in-systemprovider-.md) | Represents a collection of keywords and custom keywords. |
 
- 
 
 ## Remarks
 
-
 This element enables creation of a custom keyword for any possible Event Tracing for Windows (ETW) event.
+
 
 ## Related topics
 
-
 [Elements](elements.md)
-
- 
-
- 
-
-
-
-
-
-
 

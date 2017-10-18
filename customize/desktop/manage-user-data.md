@@ -10,7 +10,6 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # Manage user data
 
 If a customer fills out the registration pages and clicks Next to submit the data, Windows writes and encrypts the text data to the `\OOBE\Info` folder in a **Userdata.blob** file and stores the check box values in the Checkbox.xml file at the same location. In addition to the customer-provided info, Windows writes the `<label>` values from your Oobe.xml file to the same location.
@@ -19,7 +18,7 @@ To protect customer data, you must generate a public/private key pair, and the p
 
 Considerations:
 
-* Comments from your Oobe.xml files aren't written to this location. If the customer clicks Skip, no data is written or stored, not even check boxes selected by default. 
+* Comments from your Oobe.xml files aren't written to this location. If the customer clicks Skip, no data is written or stored, not even check boxes selected by default.
 * If a customer fills out part of the form, all available data is captured and written to `\OOBE\Info` when they click Next.
 * Only the state of the check box when the user clicks Next is recorded. No indication of whether that value is or isn't the default value is captured.
 

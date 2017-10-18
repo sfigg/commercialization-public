@@ -10,7 +10,6 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # Design your registration pages
 
 The registration pages present many customization opportunities. Here are the settings you can control:
@@ -59,7 +58,7 @@ If information is pre-populated from the user's Microsoft account, a message wil
 Windows OOBE has a dark blue background with light text. End User License Agreement (EULA) content uses a dark blue background and light text. Fly-out content uses a dark background with light text. To align with this guidance please ensure that the markup and style conventions HTML sample files are followed precisely.
 
 > [!Note]
-> Inline CSS styling is required so that the iframe host elements render correctly in the registration pages.
+> Inline CSS styling is required so that the iFrame host elements render correctly in the registration pages.
 
 ### Colors
 
@@ -78,7 +77,7 @@ Use two different styles for headers and body content.
 * Bold text: should be rendered using the `<b>` tag.
 * Hierarchy of information: indented sections or groups of bulleted items can be displayed with the `<DIR>` tag, required for EULA content template, optional for Flyouts.
 
-We require that the files for the in-place links are HTML. These files are rendered in a flyout. Documents in the flyout are sandboxed, such that links to external and online resources will not function. 
+We require that the files for the in-place links are HTML. These files are rendered in a flyout. Documents in the flyout are sandboxed, such that links to external and online resources will not function.
 
 > [!Important]
 > The following tags are prohibited and should not be included in your files:
@@ -88,6 +87,7 @@ We require that the files for the in-place links are HTML. These files are rende
 > * `<input>`
 > * `<img>`
 > * `<a>`
+>
 
 ## <a name="css-example"></a>CSS code example
 

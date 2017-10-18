@@ -11,23 +11,17 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # Shell Launcher
-
 
 You can use Shell Launcher to replace the default Windows 10 shell with a custom shell. You can use any application or executable as your custom shell, such as a command window or a custom dedicated application.
 
 > [!WARNING]
 > You may specify any executable file to be the default shell except C:\\Windows\\System32\\Eshell.exe. Using Eshell.exe as the default shell will result in a blank screen after user signs in.
 
- 
-
 You can also configure Shell Launcher to launch different shell applications for different users or user groups.
 
 > [!IMPORTANT]
 > You cannot use Shell Launcher to launch a Universal Windows app as a custom shell.
-
- 
 
 Shell Launcher processes the **Run** and **RunOnce** registry keys before starting the custom shell, so your custom shell doesn’t need to handle the automatic startup of other applications and services.
 
@@ -35,95 +29,80 @@ Shell Launcher also handles the behavior of the system when your custom shell ex
 
 ## Requirements
 
-
 Windows 10 Enterprise or Windows 10 Education.
 
 ## Terminology
 
+* **Turn on, enable:** To make the setting available to the device and optionally apply the settings to the device.
 
-**Turn on, enable:** To make the setting available to the device and optionally apply the settings to the device.
+* **Configure:** To customize the setting or sub-settings.
 
-**Configure:** To customize the setting or sub-settings.
+* **Embedded Shell Launcher:** This feature is called Embedded Shell Launcher in Windows 10, version 1511.
 
-**Embedded Shell Launcher:** This feature is called Embedded Shell Launcher in Windows 10, version 1511.
-
-**Custom Shell Launcher:** This feature is called Shell Launcher in Windows 10, version 1607 and later.
+* **Custom Shell Launcher:** This feature is called Shell Launcher in Windows 10, version 1607 and later.
 
 ## Turn on Shell Launcher
 
-
 Shell Launcher is an optional component and is not turned on by default in Windows 10. It must be turned on prior to configuring. You can turn on and configure Shell Launcher in a customized Windows 10 image (.wim) if Microsoft Windows has not been installed. If Windows has already been installed and you are applying a provisioning package to configure Shell Launcher, you must first turn on Shell Launcher in order for a provisioning package successfully apply.
 
-**Turn on Shell Launcher by using Control Panel**
+### Turn on Shell Launcher by using Control Panel
 
-1.  In the **Search the web and Windows** field, type **Programs and Features** and either press **Enter** or tap or click **Programs and Features** to open it.
-2.  In the **Programs and Features** window, click **Turn Windows features on or off**.
-3.  For Windows 10, version 1511, in the **Windows Features** box, select **Embedded Shell Launcher**.
+1. In the **Search the web and Windows** field, type **Programs and Features** and either press **Enter** or tap or click **Programs and Features** to open it.
+1. In the **Programs and Features** window, click **Turn Windows features on or off**.
+1. In the **Windows Features** window, expand the **Device Lockdown** node, select or clear the checkbox for **Shell Launcher**, and then click **OK.**
+1. The **Windows Features** window indicates that Windows is searching for required files and displays a progress bar. Once found, the window indicates that Windows is applying the changes. When completed, the window indicates the requested changes are completed.
+1. Click **Close** to close the **Windows Features** window.
 
-    For Windows 10, version 1607, in the **Windows Features** window, expand the **Device Lockdown** node, select or clear the checkbox for **Shell Launcher**, and then click **OK.**
-
-4.  The **Windows Features** window indicates that Windows is searching for required files and displays a progress bar. Once found, the window indicates that Windows is applying the changes. When completed, the window indicates the requested changes are completed.
-5.  Click **Close** to close the **Windows Features** window.
-
-    > [!Note]  
+    > [!Note]
     > Turning on Shell Launcher does not require a device restart.
 
-     
+### Enable or disable Shell Launcher by calling WESL\_UserSetting
 
-**Enable or disable Shell Launcher by calling WESL\_UserSetting**
+1. Enable or disable Shell Launcher by calling the WESL\_UserSetting.SetEnabled function in the Windows Management Instrumentation (WMI) class WESL\_UserSetting.
+1. If you enable or disable Shell Launcher using WESL\_UserSetting, the changes do not affect any sessions that are currently signed in; you must sign out and sign back in.
 
-1.  Enable or disable Shell Launcher by calling the WESL\_UserSetting.SetEnabled function in the Windows Management Instrumentation (WMI) class WESL\_UserSetting.
-2.  If you enable or disable Shell Launcher using WESL\_UserSetting, the changes do not affect any sessions that are currently signed in; you must sign out and sign back in.
+This example uses a Windows image called install.wim, but you can use the same procedure to apply a provisioning package (for more information on DISM, see [What Is Deployment Image Servicing and Management](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/what-is-dism).
 
-This example uses a Windows image called install.wim, but you can use the same procedure to apply a provisioning package (for more information on DISM, see [What Is Deployment Image Servicing and Management](https://technet.microsoft.com/en-us/library/dd744566.aspx)?):
+### Enable Shell Launcher by using DISM
 
-**Enable Shell Launcher by using DISM**
+1. Open a command prompt with administrator privileges.
+1. Copy install.wim to a temporary folder on hard drive (in the following steps, we'll assume it's called C:\\wim).
+1. Create a new directory.
 
-1.  Open a command prompt with administrator privileges.
-2.  Copy install.wim to a temporary folder on hard drive (in the following steps, we'll assume it's called C:\\wim).
-3.  Create a new directory.
-
-    ```
+    ```cmd
     md c:\wim
     ```
 
-4.  Mount the image.
+1. Mount the image.
 
-    ```
+    ```cmd
     dism /mount-wim /wimfile:c:\bootmedia\sources\install.wim /index:1 /MountDir:c:\wim
     ```
 
-5.  Enable the feature.
+1. Enable the feature.
 
-    ```
+    ```cmd
     dism /image:c:\wim /enable-feature /all /featureName:Client-EmbeddedShellLauncher
     ```
 
-6.  Commit the change.
+1. Commit the change.
 
-    ```
+    ```cmd
     dism /unmount-wim /MountDir:c:\wim /Commit
     ```
 
-## Configure Shell Launcher using Windows Imaging and Configuration Designer (ICD)
+### Configure Shell Launcher using Windows Configuration Designer
 
-
-The Shell Launcher settings are also available as Windows provisioning settings so you can configure these settings to be applied during the image runtime. You can set one or all Shell Launcher settings by creating a provisioning package using Windows Imaging and Configuration Designer (ICD) and then applying the provisioning package during image deployment time or runtime. If Windows has not been installed and you are using Windows ICD to create installation media with settings for Shell Launcher included in the image or you are applying a provisioning package during setup, you must enable Shell Launcher on the installation media with DISM in order for a provisioning package to successfully apply.
+The Shell Launcher settings are also available as Windows provisioning settings so you can configure these settings to be applied during the image runtime. You can set one or all Shell Launcher settings by creating a provisioning package using Windows Configuration Designer and then applying the provisioning package during image deployment time or runtime. If Windows has not been installed and you are using Windows Configuration Designer to create installation media with settings for Shell Launcher included in the image or you are applying a provisioning package during setup, you must enable Shell Launcher on the installation media with DISM in order for a provisioning package to successfully apply.
 
 Use the following steps to create a provisioning package that contains the ShellLauncher settings.
 
-1.  Build a provisioning package in Windows ICD by following the instructions in [Build and apply a provisioning package](https://msdn.microsoft.com/library/windows/hardware/dn916107).
-    **Note**  In the **Select Windows Edition** window, choose **Common to all Windows desktop editions**.
-
-     
-
-2.  In the Available customizations page, select **Runtime settings** &gt; **SMISettings** and then set the value for the following ShellLauncher settings.
-    -   Shell = *yourapp* where the default is cmd.exe
-
-3.  Once you have finished configuring the settings and building the provisioning package, you can apply the package to the image deployment time or runtime. See the To apply a provisioning package to a Windows 10 for desktop editions image section in [Build and apply a provisioning package](https://msdn.microsoft.com/library/windows/hardware/dn916107) for more information. Note that the process for applying the image to a Windows 10 Enterprise is the same.
+1. Build a provisioning package in Windows Configuration Designer by following the instructions in [Create a provisioning package for Windows 10](https://docs.microsoft.com/en-us/windows/configuration/provisioning-packages/provisioning-create-package).
+1. In the **Available customizations** page, select **Runtime settings** &gt; **SMISettings** and then set the value for the following ShellLauncher settings.
+   * Shell = *yourapp* where the default is cmd.exe
+1. Once you have finished configuring the settings and creating the provisioning package, you can apply the package to the image deployment time or runtime. See the [Apply a provisioning package](https://docs.microsoft.com/en-us/windows/configuration/provisioning-packages/provisioning-apply-package) for more information. Note that the process for applying the package to a Windows 10 Enterprise image is the same.
 
 ## <a href="" id="launch-diff-shells"></a>Launch different shells for different user accounts
-
 
 By default, Shell Launcher runs the default shell, which is specified when you create the OS image at design time. The default shell is set to Cmd.exe, but you can specify any executable file to be the default shell.
 
@@ -136,7 +115,6 @@ For more information about common security identifiers, see [Well-known SIDs](ht
 When the current signed in account belongs to two or more groups that have different configurations defined for each group, Shell Launcher uses the first configuration it finds. The search order is not defined, so we recommend that you avoid assigning a user to multiple groups with different Shell Launcher configurations.
 
 ## Perform an action when the shell exits
-
 
 When a custom shell exits, Shell Launcher can perform one of four actions, based on the following return codes:
 
@@ -171,12 +149,8 @@ When a custom shell exits, Shell Launcher can perform one of four actions, based
 </tbody>
 </table>
 
- 
-
 > [!IMPORTANT]
 > Make sure that your shell application does not automatically exit and is not automatically closed by any features such as Dialog Filter, as this can lead to an infinite cycle of exiting and restarting, unless the return code action is set to do nothing.
-
- 
 
 ### Default return code action
 
@@ -217,22 +191,15 @@ For example, your shell might return exit code values of -1, 0, or 255 depending
 </tbody>
 </table>
 
- 
-
 ## Configure Shell Launcher
-
 
 You can configure the following options for Shell Launcher:
 
--   Enable or disable Shell Launcher.
-
--   Specify a shell configuration for a specific user or group.
-
--   Remove a shell configuration for a specific user or group.
-
--   Change the default shell configuration.
-
--   Get information on a shell configuration for a specific user or group.
+* Enable or disable Shell Launcher.
+* Specify a shell configuration for a specific user or group.
+* Remove a shell configuration for a specific user or group.
+* Change the default shell configuration.
+* Get information on a shell configuration for a specific user or group.
 
 Any changes do not take effect until a user signs in.
 
@@ -241,11 +208,11 @@ You can use the Shell Launcher WMI providers directly in a PowerShell script or 
 ## <a href="" id="custom-shell"></a>Set your custom shell
 
 > [!WARNING]
-> Shell Launcher doesn't support a custom shell with an application that launches a different process and exits. For example, you cannot specify **write.exe** in Shell Launcher. Shell Launcher launches a custom shell and monitors the process to identify when the custom shell exits. **Write.exe** creates a 32-bit wordpad.exe process and exits. Because Shell Launcher is not aware of the newly created wordpad.exe process, Shell Launcher will take action based on the exit code of **Write.exe**, such as restarting the custom shell. 
+> Shell Launcher doesn't support a custom shell with an application that launches a different process and exits. For example, you cannot specify **write.exe** in Shell Launcher. Shell Launcher launches a custom shell and monitors the process to identify when the custom shell exits. **Write.exe** creates a 32-bit wordpad.exe process and exits. Because Shell Launcher is not aware of the newly created wordpad.exe process, Shell Launcher will take action based on the exit code of **Write.exe**, such as restarting the custom shell.
 
 Modify the following PowerShell script as appropriate and run the script on the device.
 
-```
+```powershell
 # Check if shell launcher license is enabled
 function Check-ShellLauncherLicenseEnabled
 {
@@ -264,7 +231,6 @@ static class CheckShellLauncherLicense
         if (NativeMethods.SLGetWindowsInformationDWORD("EmbeddedFeature-ShellLauncher-Enabled", out enabled) != S_OK) {
             enabled = 0;
         }
-        
         return (enabled != 0);
     }
 
@@ -317,7 +283,6 @@ function Get-UsernameSID($AccountName) {
     $NTUserSID = $NTUserObject.Translate([System.Security.Principal.SecurityIdentifier])
 
     return $NTUserSID.Value
-    
 }
 
 # Get the SID for a user account named "Cashier". Rename "Cashier" to an existing account on your system to test this script.
@@ -381,30 +346,15 @@ $IsShellLauncherEnabled = $ShellLauncherClass.IsEnabled()
 
 ## Remarks
 
-
 A custom shell is launched with the same level of user rights as the account that is signed in. This means that a user with administrator rights can perform any system action that requires administrator rights, including launching other applications with administrator rights, while a user without administrator rights cannot.
 
 > [!WARNING]
 > If your shell application requires administrator rights and needs to be elevated, and User Account Control (UAC) is present on your device, you must disable UAC in order for Shell Launcher to launch the shell application.
 
- 
-
 ## Related topics
-
 
 [Unbranded Boot](unbranded-boot.md)
 
 [Custom Logon](custom-logon.md)
 
 [Create a Kiosk Image](create-a-kiosk-image.md)
-
- 
-
- 
-
-
-
-
-
-
-

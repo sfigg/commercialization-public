@@ -12,65 +12,18 @@ ms.assetid: 9bb7a4cd-287b-4243-bfee-3fc690fba76e
 
 This test verifies that a Windows® Touch device meets requirements.
 
-## <span id="Test_details"></span><span id="test_details"></span><span id="TEST_DETAILS"></span>Test details
-
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><strong>Specifications</strong></td>
-<td><ul>
-<li>Device.Input.Digitizer.Touch.CustomGestures</li>
-<li>Device.Input.Digitizer.Touch.HIDCompliant</li>
-<li>Device.Input.Digitizer.Touch.ThirdPartyDrivers</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td><strong>Platforms</strong></td>
-<td><ul>
-<li>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</li>
-<li>Windows 10 for desktop editions x64</li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td><strong>Supported Releases</strong></td>
-<td><ul>
-<li>Windows 10</li>
-<li>Windows 10, version 1511</li>
-<li>Windows 10, version 1607</li>
-<li>Windows 10, version 1703</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td><strong>Expected run time (in minutes)</strong></td>
-<td>2</td>
-</tr>
-<tr class="odd">
-<td><strong>Category</strong></td>
-<td>Compatibility</td>
-</tr>
-<tr class="even">
-<td><strong>Timeout (in minutes)</strong></td>
-<td>120</td>
-</tr>
-<tr class="odd">
-<td><strong>Requires reboot</strong></td>
-<td>false</td>
-</tr>
-<tr class="even">
-<td><strong>Requires special configuration</strong></td>
-<td>false</td>
-</tr>
-<tr class="odd">
-<td><strong>Type</strong></td>
-<td>automatic</td>
-</tr>
-</tbody>
-</table>
+## Test details
+|||
+|---|---|
+| **Specifications**  | <ul><li>Device.Input.Digitizer.Touch.CustomGestures</li><li>Device.Input.Digitizer.Touch.HIDCompliant</li><li>Device.Input.Digitizer.Touch.ThirdPartyDrivers</li></ul> |  
+| **Platforms**   | <ul><li>Windows 10 client editions (x86)</li><li>Windows 10, client editions (x64)</li><li>Windows 10, client editions (ARM64)</li></ul> |
+| **Supported Releases** | <ul><li>Windows 10</li><li>Windows 10, version 1511</li><li>Windows 10, version 1607</li><li>Windows 10, version 1703</li><li>Windows 10, version 1709</li></ul> |
+|**Expected run time (in minutes)**| 2 |
+|**Category**| Compatibility |
+|**Timeout (in minutes)**| 120 |
+|**Requires reboot**| false |
+|**Requires special configuration**| false |
+|**Type**| automatic |
 
  
 
@@ -131,7 +84,7 @@ If no ghost touches exist, and if touch input can be used as expected to control
 
 For generic troubleshooting of HLK test failures, see [Troubleshooting Windows HLK Test Failures](..\user\troubleshooting-windows-hlk-test-failures.md).
 
-For troubleshooting information, see [How to run the Windows HLK Tests for Touch and Pen Devices](how-to-run-the-windows-hck-tests-for-touch-and-pen-devices.md#hiderrors).
+For troubleshooting information, see [Troubleshooting Device.Input Testing](troubleshooting-deviceinput-testing.md) and the [Hardware Component Guidelines for Windows Digitizer Class Input Devices](https://docs.microsoft.com/en-us/windows-hardware/design/component-guidelines/windows-digitizer-class-input-devices).
 
 ## <span id="More_information"></span><span id="more_information"></span><span id="MORE_INFORMATION"></span>More information
 

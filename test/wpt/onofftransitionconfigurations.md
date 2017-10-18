@@ -14,20 +14,19 @@ ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-# OnOffTransitionConfigurations
 
+# OnOffTransitionConfigurations
 
 Represents a collection of on/off transitions.
 
+
 ## Element Hierarchy
 
+* \<[WindowsPerformanceRecorder](windowsperformancerecorder.md)\>
+  * \<**OnOffTransitionConfigurations**\>
 
-&lt;[WindowsPerformanceRecorder](windowsperformancerecorder.md)&gt;
-
-     &lt;**OnOffTransitionConfigurations**&gt;
 
 ## Syntax
-
 
 ```
 <OnOffTransitionConfigurations>
@@ -38,6 +37,7 @@ Represents a collection of on/off transitions.
 </OnOffTransitionConfigurations>
 ```
 
+
 ## Attributes and Elements
 
 
@@ -45,67 +45,22 @@ Represents a collection of on/off transitions.
 
 None.
 
+
 ### Child Elements
 
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-<th>Description</th>
-<th>Requirement</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>[OnOffTransitionConfiguration](onofftransitionconfiguration.md)</p></td>
-<td><p>Represents an on/off transition configuration.</p></td>
-<td><p>Required, exactly 1.</p></td>
-</tr>
-</tbody>
-</table>
+| Element                                                         | Description                                    | Requirement          |
+| :-------------------------------------------------------------- | :--------------------------------------------- | :------------------- |
+| [OnOffTransitionConfiguration](onofftransitionconfiguration.md) | Represents an on/off transition configuration. | Required, exactly 1. |
 
- 
 
 ### Parent Elements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>[WindowsPerformanceRecorder](windowsperformancerecorder.md)</p></td>
-<td><p>Represents metadata about the authoring of the profile.</p></td>
-</tr>
-</tbody>
-</table>
+| Element                                                     | Description                                             |
+| :---------------------------------------------------------- | :------------------------------------------------------ |
+| [WindowsPerformanceRecorder](windowsperformancerecorder.md) | Represents metadata about the authoring of the profile. |
 
- 
 
 ## Related topics
 
-
 [Elements](elements.md)
-
- 
-
- 
-
-
-
-
-
-
 

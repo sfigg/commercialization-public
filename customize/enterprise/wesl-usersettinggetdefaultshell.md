@@ -11,16 +11,13 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # WESL\_UserSetting.GetDefaultShell
-
 
 This method retrieves the default Shell Launcher configuration.
 
 ## Syntax
 
-
-```
+```powershell
 [Static] uint32 GetDefaultShell (
     [Out, Required] string Shell,
     [Out, Required] sint32 DefaultAction
@@ -29,11 +26,10 @@ This method retrieves the default Shell Launcher configuration.
 
 ## Parameters
 
-
-<a href="" id="shell"></a>*Shell*  
+<a href="" id="shell"></a>*Shell*
 \[out, required\] The application or executable that Shell Launcher starts as the shell.
 
-<a href="" id="defaultaction"></a>*DefaultAction*  
+<a href="" id="defaultaction"></a>*DefaultAction*
 \[out, required\] The default action Shell Launcher takes when the shell application exits.
 
 The possible actions are defined in the following table:
@@ -65,45 +61,25 @@ The possible actions are defined in the following table:
 </tbody>
 </table>
 
- 
-
 ## Return Value
-
 
 Returns an HRESULT value that indicates [WMI status](http://go.microsoft.com/fwlink/p/?LinkID=208318) or a [WMI error](http://go.microsoft.com/fwlink/p/?LinkID=208317).
 
 ## Remarks
 
-
 Shell Launcher uses the default configuration when the security identifier (SID) of the user who is currently signed in does not match any custom defined Shell Launcher configurations.
 
 ## Requirements
 
-
-|                       |           |
-|-----------------------|-----------|
 | Windows Edition       | Supported |
+|:----------------------|:----------|
 | Windows 10 Home       | No        |
 | Windows 10 Pro        | No        |
 | Windows 10 Enterprise | Yes       |
 | Windows 10 Education  | Yes       |
 
- 
-
 ## Related topics
-
 
 [WESL\_UserSetting](wesl-usersetting.md)
 
 [Shell Launcher](shell-launcher.md)
-
- 
-
- 
-
-
-
-
-
-
-

@@ -1,6 +1,6 @@
 ---
-title: microsoft-windows-setup-
-description: microsoft-windows-setup-
+title: Microsoft-Windows-Setup
+description: Microsoft-Windows-Setup
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
@@ -13,16 +13,13 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
-# microsoft-windows-setup-
-
+# Microsoft-Windows-Setup
 
 The microsoft-windows-setup- component contains settings that enable you to select the Windows image that you install, configure the disk that you install Windows to, and configure the Windows PE operating system.
 
 Some of the settings in this component apply only to Windows PE, and some settings are applied to the installed Windows image. Each setting describes which operating system the setting applies to.
 
 ## In This Section
-
 
 <table>
 <colgroup>
@@ -101,25 +98,10 @@ Some of the settings in this component apply only to Windows PE, and some setti
 </tbody>
 </table>
 
- 
-
 ## Applies To
 
-
-To determine whether a component applies to the image you’re building, load your image into Windows SIM and search for the component or setting name. For information on how to view components and settings, see [Configure Components and Settings in an Answer File](https://msdn.microsoft.com/library/windows/hardware/dn915078).v
+To determine whether a component applies to the image you’re building, load your image into Windows SIM and search for the component or setting name. For information on how to view components and settings, see [Configure Components and Settings in an Answer File](https://msdn.microsoft.com/library/windows/hardware/dn915078).
 
 ## Related topics
 
-
 [Components](components-b-unattend.md)
-
- 
-
- 
-
-
-
-
-
-
-

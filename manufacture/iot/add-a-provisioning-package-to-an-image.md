@@ -181,7 +181,7 @@ You can connect to your device's portal page to troubleshoot network connections
 
 3.  When prompted, enter your device's default username and password. (Default is: Administrator \ p@ssw0rd)
 
-    This opens the [Windows Device Portal](https://developer.microsoft.com/windows/iot/win10/tools/deviceportal). From here, you can upload app packages, see what apps are installed, and switch between them.
+    This opens the [Windows Device Portal](https://docs.microsoft.com/windows/iot-core/manage-your-device/DevicePortal). From here, you can upload app packages, see what apps are installed, and switch between them.
 
 4.  Click **Networking** > **Profiles**.  You should see the Wi-Fi profile you created. 
     
