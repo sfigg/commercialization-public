@@ -3,7 +3,7 @@ title: OEM deployment of Windows 10 for desktop editions
 author: Justinha
 description: Get step-by-step guidance for OEMs to deploy Windows 10 to desktop computers, laptops, and 2-in-1s. Find information about how to enable imageless, push-button reset recovery and more.  
 ms.author: themar
-ms.date: 05/02/2017
+ms.date: 10/17/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -787,23 +787,36 @@ In this section we'll show you how to service Windows 10 inbox apps in your moun
 
 **Note:** Starting with Windows 10, version 1703, app bundles contain only dependency packages that pertain to the app. You don't have to check the prov.xml to see which dependencies to install. Install all dependency packages found in the app's folder.
 
-Starting with Windows 10, version 1703, inbox apps won't get monthly updates. Download the supplemental OPK from the Software Order Center.
+Starting with Windows 10, version 1703, inbox apps won't get monthly updates. Go to https://microsoftoem.com and get the App Update OPK. This package includes the Windows 10 inbox apps for the most current Windows release.
 
-1. Mount the inbox apps ISO. You can do this by double-clicking on the inbox apps iso in File Explorer.
-2. From the mounted inbox apps ISO, copy the folder that matches your architecture to _USB-B_\Apps.
+1. Extract the App Update OPK to a folder, for example, E:\apps\amd64.
+2. For Windows 10, version 1709, add the HEVC codec from the App Update OPK.  Note that the HEVC codec is currently not available as an .appxbundle package, so you'l have to use the .appx packages.
+    
+    For 64-bit Windows:
+    
+    ```
+    DISM /image:c:\mount\windows /add-ProvisionedAppxPackage /packagepath:"E:\apps\amd64\Microsoft.HEVCVideoExtension_8wekyb3d8bbwe.x64.appx" /licensepath:"E:\apps\amd64\Microsoft.HEVCVideoExtension_8wekyb3d8bbwe.x64.xml" /dependencypackagepath:"E:\apps\amd64\Microsoft.VCLibs.x64.14.00.appx"
+    ```
+    
+    For 32-bit Windows:
+    
+    ```
+    DISM /image:c:\mount\windows /add-ProvisionedAppxPackage /packagepath:"E:\apps\x86\Microsoft.HEVCVideoExtension_8wekyb3d8bbwe.x86.appx" /licensepath:"E:\apps\x86\Microsoft.HEVCVideoExtension_8wekyb3d8bbwe.x86.xml" /dependencypackagepath:"E:\apps\x86\Microsoft.VCLibs.x86.14.00.appx"
+    ```
+
 3. Use DISM to reinstall inbox apps. You no longer have to uninstall inbox apps prior to reinstalling them. You'll have to run reinstallation commands for each inbox app. Here is an example of how to reinstall one inbox app, the 3D Builder app:
 
-For 64-bit Windows:
+    For 64-bit Windows:
 
-```
-DISM /image:c:\mount\windows /add-ProvisionedAppxPackage /packagepath:e:\apps\amd64\Microsoft.3DBuilder_8wekyb3d8bbwe.appxbundle /licensepath:e:\apps\amd64\Microsoft.3DBuilder_8wekyb3d8bbwe.xml /dependencypackagepath:e:\apps\amd64\Microsoft.VCLibs.x64.14.00.appx /dependencypackagepath:e:\apps\amd64\Microsoft.VCLibs.x86.14.00.appx
-```
+    ```
+    DISM /image:c:\mount\windows /add-ProvisionedAppxPackage /packagepath:e:\apps\amd64\Microsoft.3DBuilder_8wekyb3d8bbwe.appxbundle /licensepath:e:\apps\amd64\Microsoft.3DBuilder_8wekyb3d8bbwe.xml /dependencypackagepath:e:\apps\amd64\Microsoft.VCLibs.x64.14.00.appx /dependencypackagepath:e:\apps\amd64\Microsoft.VCLibs.x86.14.00.appx
+    ```
 
-For 32-bit Windows:
+    For 32-bit Windows:
 
-```
-DISM /image:c:\mount\windows /add-ProvisionedAppxPackage /packagepath:e:\apps\x86\Microsoft.3DBuilder_8wekyb3d8bbwe.appxbundle /licensepath:e:\apps\x86\Microsoft.3DBuilder_8wekyb3d8bbwe.xml /dependencypackagepath:e:\apps\x86\Microsoft.VCLibs.x86.14.00.appx 
-```
+    ```
+    DISM /image:c:\mount\windows /add-ProvisionedAppxPackage /packagepath:e:\apps\x86\Microsoft.3DBuilder_8wekyb3d8bbwe.appxbundle /licensepath:e:\apps\x86\Microsoft.3DBuilder_8wekyb3d8bbwe.xml /dependencypackagepath:e:\apps\x86\Microsoft.VCLibs.x86.14.00.appx 
+    ```
 
 ## Add Windows Universal Office Mobile (if applicable)
 

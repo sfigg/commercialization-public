@@ -13,32 +13,17 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # Find a Component, Setting, or Package in Windows SIM
-
 
 You can use Windows® System Image Manager (Windows SIM) to search for a component, setting, file in a distribution share, or package name by using the Find feature. The following procedure describes how to use Find.
 
-**To find a component, setting, or package**
-
-1.  Open Windows SIM.
-
-2.  On the **Edit** menu, click **Find**.
-
-    - or -
-
-    Press Ctrl+F.
-
-    The **Find** dialog box appears.
-
-3.  In the **Find what** box, enter the search criteria.
-
-4.  In the **Look in** drop-down list, select from the currently open Windows image and answer file, a distribution share, or the **Messages** pane.
-
-5.  Click **Find Now**.
+1. Open Windows SIM.
+1. On the **Edit** menu, click **Find**, or use the keyboard shortcut Ctrl+F. The **Find** dialog box appears.
+1. In the **Find what** box, enter the search criteria.
+1. In the **Look in** drop-down list, select from the currently open Windows image and answer file, a distribution share, or the **Messages** pane.
+1.  Click **Find Now**.
 
 ## Related topics
-
 
 [Windows System Image Manager How-to Topics](windows-system-image-manager-how-to-topics.md)
 
@@ -55,14 +40,3 @@ You can use Windows® System Image Manager (Windows SIM) to search for a compon
 [Add a Package to an Answer File](add-a-package-to-an-answer-file.md)
 
 [Add a Custom Command to an Answer File](add-a-custom-command-to-an-answer-file.md)
-
- 
-
- 
-
-
-
-
-
-
-

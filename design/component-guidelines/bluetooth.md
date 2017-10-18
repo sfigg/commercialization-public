@@ -14,19 +14,11 @@ ms.technology: windows-oem
 
 # Bluetooth
 
+## Features and Recommendations
 
-This topic provides a list of new features and recommendations for Bluetooth in Windows 10. For power-efficient support for Bluetooth LE beacons and related scenarios, we recommend that OEMs use Bluetooth components capable of Hardware Offload and able to support the [Microsoft-defined Host Controller Interface (HCI) extension](https://msdn.microsoft.com/library/windows/hardware/dn917903.aspx).
+This topic provides a list of features and recommendations for Bluetooth in Windows 10. For power-efficient support for Bluetooth LE beacons and related scenarios, we recommend that OEMs use Bluetooth components capable of Hardware Offload and able to support the [Microsoft-defined Host Controller Interface (HCI) extension](https://msdn.microsoft.com/library/windows/hardware/dn917903.aspx).
 
-## What's new in Windows 10
-
-
-Additional features that were added after Windows 10, version 1507 are marked as follows: 
-
--   (1511) - The feature is new for the Windows 10, version 1511 release
-
--   (1607) - The feature is new for the Windows 10, version 1607 release
-
--   (1703) - The feature is new for the Windows 10, version 1703 release
+Additional features that were added after Windows 10, version 1507 are marked with their corresponding release number.
 
 
 ### QD IDs

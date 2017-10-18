@@ -11,31 +11,25 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # UWF\_Volume.Protect
-
 
 Enables Unified Write Filter (UWF) to protect the volume after the next system restart, if UWF is enabled after the restart.
 
 ## Syntax
 
-
-```
+```powershell
 UInt32 Protect();
 ```
 
 ## Parameters
 
-
 None.
 
 ## Return Value
 
-
 Returns an HRESULT value that indicates [WMI status](http://go.microsoft.com/fwlink/p/?LinkID=208318) or a [WMI error constant](http://go.microsoft.com/fwlink/p/?LinkID=208317).
 
 ## Remarks
-
 
 UWF starts protecting the volume after the next device restart in which UWF is enabled.
 
@@ -43,31 +37,15 @@ This method does not enable UWF if it is disabled; you must explicitly enable UW
 
 ## Requirements
 
-
-|                       |           |
-|-----------------------|-----------|
 | Windows Edition       | Supported |
+|:----------------------|:----------|
 | Windows 10 Home       | No        |
 | Windows 10 Pro        | No        |
 | Windows 10 Enterprise | Yes       |
 | Windows 10 Education  | Yes       |
 
- 
-
 ## Related topics
-
 
 [UWF\_Volume](uwf-volume.md)
 
 [Unified Write Filter](unified-write-filter.md)
-
- 
-
- 
-
-
-
-
-
-
-

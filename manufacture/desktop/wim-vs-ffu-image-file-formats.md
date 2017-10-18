@@ -4,7 +4,7 @@ ms.assetid: 0fbb2a9b-d3ce-4d7f-b68a-af641ceec96d
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'WIM vs. VHD vs. FFU: comparing image file formats'
 ms.author: themar
-ms.date: 05/02/2017
+ms.date: 10/17/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -36,7 +36,7 @@ Comparing .WIM, .VHD/.VHDX, and .FFU: These file formats are all used to deploy 
 <td align="left"><p>Easiest for deploying Windows to virtual PCs.</p>
 <p>You can boot a new device directly from a single VHD/VHDX file.</p></td>
 <td align="left"><p>Fastest for capturing and deploying Windows on a factory floor.</p>
-<p>Includes built-in security to verify signed images.</p></td>
+</td>
 </tr>
 <tr class="odd">
 <td align="left">Imaging style</td>
@@ -48,7 +48,7 @@ Comparing .WIM, .VHD/.VHDX, and .FFU: These file formats are all used to deploy 
 <td align="left">Compression</td>
 <td align="left">Supports multiple types of compression</td>
 <td align="left">None</td>
-<td align="left">None</td>
+<td align="left">Xpress-Huffman is used by default when an FFU is captured with DISM</td>
 </tr>
 <tr class="odd">
 <td align="left">What does it capture?</td>
@@ -73,14 +73,13 @@ Comparing .WIM, .VHD/.VHDX, and .FFU: These file formats are all used to deploy 
 <td align="left">Can I modify the images?</td>
 <td align="left"><p>Yes. With tools like DISM, you can mount, modify, and unmount the image.</p></td>
 <td align="left"><p>Yes, you can mount a VHD/VHDX as if it were removable media, and modify the files.</p></td>
-<td align="left"><p>Yes, though it's limited to adding packages.</p></td>
+<td align="left"><p>Yes. With tools like DISM, you can mount, modify, and unmount the image.</p></td>
 </tr>
 <tr class="odd">
-<td align="left">Security</td>
+<td align="left">Reliability</td>
 <td align="left"></td>
 <td align="left"></td>
-<td align="left"><p>Includes a security header and image header to identify a secured image.</p>
-<p>Includes a catalog and hash table to validate a signature upfront before flashing onto a device.</p></td>
+<td align="left"><p>Includes a catalog and hash table to validate a signature upfront before flashing onto a device. The hash table is generated during capture, and validated when applying the image.</p></td>
 </tr>
 </tbody>
 </table>

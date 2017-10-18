@@ -11,32 +11,25 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # Assigned access
-
 
 You can use assigned access to set up single-function devices, such as restaurant menus or displays at trade shows. If an account is configured for assigned access, a Windows app of your choosing runs above the lockscreen for the selected user account. Users of that account cannot access any other functionality on the device.
 
 In addition to configuring assigned access, you can also configure optional features to further personalize the assigned access experience. Some of the optional features include power button availability and welcome screen elements.
 
 ## Requirements
-
-
 Windows 10 Enterprise, Windows 10 Education, or Windows 10 Pro.
 
 ## Suggested settings
 
-
-For the most secure assigned access experience, we recommend that you configure the settings as defined in [Complementary settings for assigned access](create-a-kiosk-image.md#other-aa-settings) and [Other settings to lock down](create-a-kiosk-image.md#lockdown-settings).
+For the most secure assigned access experience, we recommend that you configure the settings as defined in [Complementary settings for assigned access](create-a-kiosk-image.md#assigned-access) and [Other settings to lock down](create-a-kiosk-image.md#lockdown-settings).
 
 ## Interactions and interoperability
 
-
 The following table describes some features that have interoperability issues we recommend that you consider when running assigned access.
 
-**Note**  Where applicable, the table notes which features are optional that you can configure for assigned access.
-
- 
+> [!Note]
+> Where applicable, the table notes which features are optional that you can configure for assigned access.
 
 <table>
 <colgroup>
@@ -151,12 +144,8 @@ The following table describes some features that have interoperability issues we
 <tr class="even">
 <td><p>Key sequences blocked by [Keyboard Filter](keyboardfilter.md)</p></td>
 <td><p>If Keyboard Filter is turned ON then some key combinations are blocked automatically without you having to explicitly block them. For more information, see the [Keyboard Filter](keyboardfilter.md) reference topic.</p>
-<div class="alert">
-<strong>Note</strong>  [Keyboard Filter](keyboardfilter.md) is only available on Windows 10 Enterprise or Windows 10 Education.
-</div>
-<div>
- 
-</div></td>
+<p>[Keyboard Filter](keyboardfilter.md) is only available on Windows 10 Enterprise or Windows 10 Education.</p>
+</td>
 </tr>
 <tr class="odd">
 <td><p>Power button</p></td>
@@ -181,10 +170,7 @@ The following table describes some features that have interoperability issues we
 </tbody>
 </table>
 
- 
-
 ## In this section
-
 
 <table>
 <colgroup>
@@ -214,22 +200,8 @@ The following table describes some features that have interoperability issues we
 </tbody>
 </table>
 
- 
-
 ## Related topics
-
 
 [Keyboard Filter](keyboardfilter.md)
 
 [Unified Write Filter](unified-write-filter.md)
-
- 
-
- 
-
-
-
-
-
-
-

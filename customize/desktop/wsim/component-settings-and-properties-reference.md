@@ -13,19 +13,15 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # Component Settings and Properties Reference
 
-
-Windows System Image Manager (Windows SIM) displays the properties and settings of a selected component or package in the **Properties** pane. You can use this pane to manage and view the component settings that are available to change for each configuration pass. You can also use this pane to view properties and IDs where applicable. In the case of packages, the pane displays Windows feature selections that you can change. Settings that are not available for each component or package appear dimmed. 
+Windows System Image Manager (Windows SIM) displays the properties and settings of a selected component or package in the **Properties** pane. You can use this pane to manage and view the component settings that are available to change for each configuration pass. You can also use this pane to view properties and IDs where applicable. In the case of packages, the pane displays Windows feature selections that you can change. Settings that are not available for each component or package appear dimmed.
 
 ## Component Settings
-
 
 Component settings are the configurable aspects of each component in a Windows installation. For example, you can configure the Windows Internet Explorer component setting **Home\_Page** to open to a particular URL by configuring the default value of the setting in the **Properties** pane of Windows SIM.
 
 ## Component Properties
-
 
 Component properties are non-configurable attributes of a component. The following table lists component properties for components that have been added to an answer file.
 
@@ -60,10 +56,7 @@ Component properties are non-configurable attributes of a component. The followi
 </tbody>
 </table>
 
- 
-
 ## Component IDs
-
 
 The component ID uniquely identifies the component of the operating system to which the settings belong. The ID contains the name, version, architecture, and other information for the component that is selected in the **Windows Image** pane or **Answer File** pane. The following table describes the different attributes of a component.
 
@@ -106,10 +99,7 @@ The component ID uniquely identifies the component of the operating system to wh
 </tbody>
 </table>
 
- 
-
 ## Package Properties
-
 
 Package properties are non-configurable attributes of the package. Package properties appear when you select a package in the **Windows Image** pane or **Answer File** pane. The following table describes the properties of packages.
 
@@ -168,10 +158,7 @@ Package properties are non-configurable attributes of the package. Package prope
 </tbody>
 </table>
 
- 
-
 ## Package Settings
-
 
 Package settings are the configurable attributes of the package that is selected in the **Answer File** pane. Package settings appear only when the package is selected in the **Answer File** pane because that is when you can change them. The following table describes package settings
 
@@ -202,10 +189,7 @@ Package settings are the configurable attributes of the package that is selected
 </tbody>
 </table>
 
- 
-
 ## Right-Click Menu Options
-
 
 The following menu commands are available when you right-click a setting in the **Properties** pane.
 
@@ -245,10 +229,7 @@ The following menu commands are available when you right-click a setting in the 
 </tbody>
 </table>
 
- 
-
 ## .NET Types in Windows System Image Manager
-
 
 Microsoft® .NET types appear at the bottom of the **Properties** pane. Component settings have a type that describes the kind of data that is valid for that setting. These types are mapped to their equivalent .NET types in Windows SIM. The following table lists the possible types that can be associated with component settings.
 
@@ -319,10 +300,7 @@ Microsoft® .NET types appear at the bottom of the **Properties** pane. Componen
 </tbody>
 </table>
 
- 
-
 ## Array Types
-
 
 Some component settings require arrays of data. These arrays are mapped to their equivalent .NET array types in Windows SIM. The following table lists the possible array types that are associated with component settings.
 
@@ -353,10 +331,7 @@ Some component settings require arrays of data. These arrays are mapped to their
 </tbody>
 </table>
 
- 
-
 ## List-Item Types
-
 
 Settings are sometimes organized into groups called list items. List items specify one or more values for a list-item type. A list-item type may include one or more component settings. For example, you can create multiple Favorites links by using the **FavoriteItem** setting for Internet Explorer.
 
@@ -384,18 +359,6 @@ You can use Windows SIM to modify a list item that is defined in a Windows imag
 
 ## Related topics
 
-
 [Windows System Image Manager Reference Topics](windows-system-image-manager-technical-reference.md)
 
 [Windows System Image Manager Overview Topics](windows-system-image-manager-overview-topics.md)
-
- 
-
- 
-
-
-
-
-
-
-

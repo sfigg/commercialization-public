@@ -11,12 +11,9 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # Customizations for enterprise desktop
 
-
 ## Purpose
-
 
 Windows 10 Enterprise customizations provide a controlled and specialized experience for the end-users of a Windows 10 device by allowing OEMs and system administrators to lock down the Windows 10 device interaction experience.
 
@@ -43,7 +40,7 @@ You can lock down your Windows 10 desktop device by using the lock down features
 <tr class="even">
 <td><p>Create a kiosk experience</p></td>
 <td><p>You can create a single use device using enterprise desktop customizations. One example of a single use device is a [kiosk application](create-a-kiosk-image.md), where users interact with a single application that you select, like a catalog of items for sale at the entrance to your store. You can create an immersive experience complete with videos telling the story of your catalog items and how they are used, along with a way for customers to purchase items right at the kiosk.</p>
-<p>If you are a developer using UWP, you can use [Assigned access](assigned-access.md) to create a Kiosk or single-use Windows 10 device. If you are a Win32 developer, you can use [Shell Launcher](shell-launcher.md) instead.</p></td>
+<p>In Windows 10 version 1709, you can now create a multi-app kiosk experience using Windows Configuration Designer.</p></td>
 </tr>
 <tr class="odd">
 <td><p>Customize the logon experience</p></td>
@@ -92,10 +89,7 @@ You can lock down your Windows 10 desktop device by using the lock down features
 </tbody>
 </table>
 
- 
-
 ## Related topics
-
 
 [Channel 9 video: Customizing Your Device Experience with Assigned Access](https://channel9.msdn.com/Events/Build/2016/P508)
 
@@ -118,14 +112,3 @@ You can lock down your Windows 10 desktop device by using the lock down features
 
 **Unified Write Filter reference**
 [Unified Write Filter WMI provider reference](uwf-wmi-provider-reference.md)
-
- 
-
- 
-
-
-
-
-
-
-

@@ -1179,6 +1179,13 @@
         "source_path": "test/hlk/testref/windows-precision-touchpad-hck-requirements.md", 
         "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/design/component-guidelines/windows-digitizer-class-input-devices", 
         "redirect_document_id": true
+
+    },    
+    {   
+        "source_path": "design/what-s-new-in-design.md", 
+        "redirect_url": "get-started/what-s-new-in-windows.md", 
+        "redirect_document_id": true
     }
+
   ] 
 }

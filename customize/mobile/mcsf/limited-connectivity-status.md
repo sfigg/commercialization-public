@@ -11,41 +11,36 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # Limited connectivity status
 
+By default, when the device is connected to a Wi-Fi access point (AP), it does not show a **No Internet access** status message below the AP name. Partners may choose to override this default behavior and show the status message when a device is connected to a Wi-Fi access point.
 
-Partners may override the default status message shown when a device is connected to a Wi-Fi access point.
+> [!Warning]
+> The message may cause user confusion because it is shown whenever a proxy is used, as hotspot plug-in probes and data do not go through a proxy.
 
-By default, when the device is connected to a Wi-Fi access point (AP), it no longer shows the **No Internet access** status message below the AP name. Partners may choose to override this default behavior and show the status message instead.
+<a href="" id="constraints---none"></a>**Constraints:** None
 
-In previous OS releases, this status message was shown even when the device is connected to a Wi-Fi AP or even when the user can browse the Internet. The message may cause user confusion because it is shown whenever a proxy is used as hotspot plug-in probes and data do not go through a proxy.
+<a href="" id="instructions-"></a>**Instructions:**
 
-<a href="" id="constraints---none"></a>**Constraints:** None  
+1. Create a customization answer file using the contents shown in the following code sample.
 
-<a href="" id="instructions-"></a>**Instructions:**  
-1.  Create a customization answer file using the contents shown in the following code sample.
-
-    ```
-    <?xml version="1.0" encoding="utf-8" ?>  
-    <ImageCustomizations xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate"  
-                         Name="LimitedConnectivityStatus"  
-                         Description="Use to show the "No Internet access" status in the Wi-Fi settings page when connectivity is limited."  
-                         Owner=""  
-                         OwnerType="OEM"> 
-      
-      <Static>  
-        <Settings Path="WiFi/Config">  
-          <Setting Name="PublishLimitedConnectivity" Value="" />  
-        </Settings>  
+   ```XML
+   <?xml version="1.0" encoding="utf-8" ?>
+   <ImageCustomizations xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate"
+                         Name="LimitedConnectivityStatus"
+                         Description="Use to show the "No Internet access" status in the Wi-Fi settings page when connectivity is limited."
+                         Owner=""
+                         OwnerType="OEM">
+      <Static>
+         <Settings Path="WiFi/Config">
+            <Setting Name="PublishLimitedConnectivity" Value="" />
+         </Settings>
       </Static>
+   </ImageCustomizations>
+   ```
 
-    </ImageCustomizations>
-    ```
-
-2.  Specify an `Owner`.
-
-3.  Set `PublishLimitedConnectivity` to one of the following values:
+1. Specify an `Owner`.
+1. Set `PublishLimitedConnectivity` to one of the following values:
 
     <table>
     <colgroup>
@@ -71,21 +66,8 @@ In previous OS releases, this status message was shown even when the device is c
     </tbody>
     </table>
 
-     
+<a href="" id="testing-steps-"></a>**Testing steps:**
 
-<a href="" id="testing-steps-"></a>**Testing steps:**  
-1.  Flash the build that contains this customization to a device.
-
-2.  Connect to a Wi-Fi access point.
-
-3.  Depending on the value you set for `PublishLimtiedConnectivity`, verify whether the **No Internet access** status message is shown below the AP name.
-
- 
-
- 
-
-
-
-
-
-
+1. Flash the build that contains this customization to a device.
+1. Connect to a Wi-Fi access point.
+1. Depending on the value you set for `PublishLimtiedConnectivity`, verify whether the **No Internet access** status message is shown below the AP name.

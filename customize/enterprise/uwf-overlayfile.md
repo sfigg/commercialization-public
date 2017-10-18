@@ -11,16 +11,13 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # UWF\_OverlayFile
-
 
 Contains a file that is currently in the overlay for a volume protected by Unified Write Filter (UWF).
 
 ## Syntax
 
-
-```
+```powershell
 class UWF_OverlayFile {
     [read] string FileName;
     [read] UInt64 FileSize;
@@ -28,7 +25,6 @@ class UWF_OverlayFile {
 ```
 
 ## Members
-
 
 The following table lists any properties that belong to this class.
 
@@ -65,8 +61,6 @@ The following table lists any properties that belong to this class.
 </tbody>
 </table>
 
- 
-
 ### Remarks
 
 You cannot use the **UWF\_ OverlayFile** class directly to get overlay files. You must use the **UWF\_Overlay.GetOverlayFiles** method to retrieve **UWF\_ OverlayFile** objects.
@@ -75,31 +69,15 @@ For more information about specific limitations and conditions when using the **
 
 ## Requirements
 
-
-|                       |           |
-|-----------------------|-----------|
 | Windows Edition       | Supported |
+|:----------------------|:----------|
 | Windows 10 Home       | No        |
 | Windows 10 Pro        | No        |
 | Windows 10 Enterprise | Yes       |
 | Windows 10 Education  | Yes       |
 
- 
-
 ## Related topics
-
 
 [Unified Write Filter WMI provider reference](uwf-wmi-provider-reference.md)
 
 [Unified Write Filter](unified-write-filter.md)
-
- 
-
- 
-
-
-
-
-
-
-

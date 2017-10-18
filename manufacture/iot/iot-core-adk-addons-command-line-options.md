@@ -23,7 +23,7 @@ Creates the folder structure and copies the template files for a new package.
 
 Builds FFUs for all OEMInputSamples under the Addon Kit directory. Can be used to automate nightly builds.
 
-## BuildBSP.cmd
+## buildbsp.cmd
 
 Builds BSP packages after signing all the required binaries.
 
@@ -48,7 +48,7 @@ buildbsp all
 buildbsp all 10.0.2.0
 ```
 
-## BuildFM.cmd
+## buildfm.cmd
 
 Builds feature merger files.
 
@@ -64,7 +64,7 @@ buildfm {oem/bsp/all} [bspname] [version]
 | BSP        | Builds BSP files                                                            |
 | All        | Builds both OEM and BSP files                                               |
 | BSPName    | Required for BSP. Name of the BSP. Not required with OEM or All             |
-| Version | Optional. Specifies package version. If not specified, it uses bsp_version. |
+| Version | Optional. Specifies package version. If not specified, it uses version defined in the variable %BSP\_VERSION%. |
 
 **Examples**
 
@@ -74,9 +74,9 @@ buildfm bsp Rpi2
 buildfm all
 ```
 
-## BuildImage.cmd
+## buildimage.cmd
 
-[Builds an image file (FFU)](create-a-basic-image.md), using the product-specific packages. Uses CreateImage.cmd, includes additional options.
+[Builds an image file (FFU)](create-a-basic-image.md), using the product-specific packages. Uses createimage.cmd, includes additional options.
 
 **Usage**: 
 
@@ -86,11 +86,11 @@ buildimage [ProductName]/[All]/[Clean] [BuildType] [Version]
 
 | Parameters | Description |
 | --- | --- |
-| ProductName | Required, Name of the product to be created. |
+| ProductName | Required, Name of the product to be built. |
 | All | All Products under the \Products directory are built. |
 | Clean | Cleans the output directory.  One of the above should be specified. |
 | BuildType | Optional, Retail/Test, if not specified both types are built. |
-| Version | Optional, Package version. If not specified, it uses BSP_VERSION. |
+| Version | Optional, Package version. If not specified, it uses version defined in the variable %BSP\_VERSION% |
 | /? | Displays this usage string. |
 
 **Examples**:
@@ -116,13 +116,13 @@ For troubleshooting, Buildpkg saves logs at \Build\\<arch\>\pkgs\logs.
 **Usage**: 
 
 ```
-buildpkg [CompName.SubCompName]/[packagefile.pkg.xml]/[All]/[Clean] [version]
+buildpkg [CompName.SubCompName]/[packagefile.wm.xml]/[All]/[Clean] [version]
 ```
 
 | Parameters | Description |
 | ----- | ----- |
 | CompName.SubCompName | Use this to refer to the package by its ComponentName.SubComponent Name. |
-| packagefile.pkg.xml | Use this to refer to the package by its package definition XML file. |
+| packagefile.wm.xml | Use this to refer to the package by its package definition XML file. |
 | All | Builds all packages in the \Sources-\<arch\>\Packages folder. This is the same as the `BuildPkg All` command. |
 | Clean | Use this to erase everything in the \Build\\<arch\>\pkgs folder. Recommended before building all packages. |
 | version | Optional, used to specify a version number. If you don't specify one, the default is to use the version defined in the variable %BSP\_VERSION%. |
@@ -132,11 +132,34 @@ buildpkg [CompName.SubCompName]/[packagefile.pkg.xml]/[All]/[Clean] [version]
 ```
 buildpkg Appx.Main
 buildpkg Appx.Main 10.0.1.0
-buildpkg sample.pkg.xml
-buildpkg sample.pkg.xml 10.0.1.0
+buildpkg sample.wm.xml
+buildpkg sample.wm.xml 10.0.1.0
 buildpkg All
 buildpkg All 10.0.2.0
 buildpkg Clean
+```
+
+## buildrecovery.cmd
+
+Creates a recovery image by adding required wim files to the recovery partition. See [Add a recovery mechanism to your image](https://docs.microsoft.com/windows/iot-core/build-your-image/addrecovery). This command also invokes newwinpe.cmd and buildimage.cmd if the winpe.wim and Flash.ffu files are not present.
+
+**Usage**: 
+
+```
+buildrecovery <ProductName> [BuildType] [WimMode] [WimDir]
+```
+
+| Parameter | Description |
+| ----- | ----- |
+| ProductName | Required, Name of the product to be built. |
+| BuildType | Optional, Retail/Test, if not specified both types are built. |
+| WimMode | Optional, Import/Export, if import is specified, the wim files from WimDir are used, if export is specified, the extracted wim files are copied to WimDir. |
+| WimDir | Optional, directory to import or export wim files. Mandatory when WimMode is specified |
+
+**Example**:
+
+```
+buildrecovery RecoverySample Test
 ```
 
 ## exportpkgs.cmd
@@ -152,7 +175,7 @@ exportpkgs DestDir Product BuildType [OwnerType]
 | Parameters | Description |
 | ----- | ----- |
 | DestDir | Required. Destination directory to export. |
-| Product | Required. Name of the product to be created. |
+| Product | Required. Name of the product.  |
 | Buildtype | Required. Can be Retail or Test. |
 | Owner | Optional. Can be MS, OEM, or All. Default value is All. |
 
@@ -187,7 +210,7 @@ flashSD SampleA test 2
 
 ## GetAppXInfo.exe
 
-Extracts appx package-related information for a given .appx package.
+Extracts appx package-related information for a given .appx or .appbundle package.
 
 **Usage**:
 
@@ -268,7 +291,7 @@ If you run this command without any variables, you'll also see the other working
 **Usage**: 
 
 ```
-newappxpkg filename.appx [fga]/[bgt]/[none] [CompName.SubCompName]
+newappxpkg filename.appx [fga]/[bgt]/[none] [CompName.SubCompName] [skipcert]
 ```
 
 | Parameters | Description |
@@ -276,6 +299,7 @@ newappxpkg filename.appx [fga]/[bgt]/[none] [CompName.SubCompName]
 | filename.appx | Required, input file for the Appx package. |
 | fga/bgt/none | Required, chooses the app's behavior on startup. **fga**-App will be forground app. **bgt**-App will start in background. **none**-App will not run on startup. |
 | CompName.SubCompName | Optional, creates the working folder using the name: ComponentName.SubComponent. |
+| skipcert | Optional, specify this to skip adding cert information. |
 
 **Example**:
 
@@ -380,9 +404,30 @@ newproduct <productname> bsp
 newproduct ProductA rpi2
 ```
 
+## newwinpe.cmd
+
+Creates a WinPE image for a specified bsp and a device layout (identified by the socname). See [Add a recovery mechanism to your image](https://docs.microsoft.com/windows/iot-core/build-your-image/addrecovery).
+
+**Usage**: 
+
+```
+newwinpe <bspname> <socname>
+```
+
+| Parameter | Description |
+| ----- | ----- |
+| bspname | Name of the bsp to be used. |
+| socname | Identifier for the device layout, specified in the bspfm.xml under devicelayout section. |
+
+**Example**:
+
+```
+newwinpe QCDB410C QC8016_R
+```
+
 ## retailsign.cmd
 
-Toggles between using cross-certifications for signing and enabling OEM test-signing of certificates
+Toggles between using OEM cross-certificate and test certificates for signing
 
 **Usage**: 
 
@@ -434,7 +479,7 @@ Example:
 ```
 set OEM_NAME=Fabrikam
 ```
-Where _Fabrikam_ is the OEM company name.
+Where _Fabrikam_ is the OEM company name.Only alphanumeric characters are supported in the OEM_NAME as this is used as a prefix for various generated file names.
 
 ## setsignature.cmd
 
@@ -461,7 +506,7 @@ setversion x.y.z.a
 ```
 setversion 10.0.0.1
 ```
-## SignBinaries.cmd
+## signbinaries.cmd
 
 Signs different file types in a directory
 

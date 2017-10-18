@@ -23,6 +23,7 @@ ms.assetid: 441dcf9e-7e28-440f-9bde-000939a245df
 -   [Troubleshoot WLAN SimpleIO plugin failures that are logged by Device Fundamentals tests](troubleshoot-wlan-simpleio-plugin-failures-that-are--logged-by-device-fundamentals-tests.md)
 -   [Use kernel debugging to debug Device Fundamentals Reliability test failures](use-kernel-debugging-to-debug-device-fundamentals-reliability-test-failures.md)
 -   [Windows Server Must-Fix Code Analysis and Static Driver Verifier Errors affecting Network and Storage Adapter Vendors](windows-server-must-fix-errors.md)
+-   [Using Device Fundamentals Tests to Reproduce Device Manager Problem Codes](using-device-fundamentals-tests-to-reproduce-device-manager-problem-codes.md)
 
  
 

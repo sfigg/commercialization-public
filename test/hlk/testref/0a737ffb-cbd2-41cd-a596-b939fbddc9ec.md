@@ -12,63 +12,18 @@ ms.assetid: 8598ae3b-1731-4cbc-8c2f-3e2a1b31951d
 
 Connect to a specified WPA2PSK AES network with sleep resume (Defaults: SSID=kitstestssid Passphrase=password SleepDurationInSec=20, SleepCycleIterations=2) - This test is a WoW64 for ARM64 version of test guid 2ae2cb26-ea04-4def-8e07-ae7b92e61e1b
 
-## <span id="Test_details"></span><span id="test_details"></span><span id="TEST_DETAILS"></span>Test details
-
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><strong>Specifications</strong></td>
-<td><ul>
-<li>Device.Network.WLAN.SupportConnectionToAP.ConnectionToAP</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td><strong>Platforms</strong></td>
-<td><ul>
-<li>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) ARM64</li>
-<li>Windows 10 Mobile ARM64</li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td><strong>Supported Releases</strong></td>
-<td><ul>
-<li>Windows 10</li>
-<li>Windows 10, version 1511</li>
-<li>Windows 10, version 1607</li>
-<li>Windows 10, version 1703</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td><strong>Expected run time (in minutes)</strong></td>
-<td>5</td>
-</tr>
-<tr class="odd">
-<td><strong>Category</strong></td>
-<td>Scenario</td>
-</tr>
-<tr class="even">
-<td><strong>Timeout (in minutes)</strong></td>
-<td>15</td>
-</tr>
-<tr class="odd">
-<td><strong>Requires reboot</strong></td>
-<td>false</td>
-</tr>
-<tr class="even">
-<td><strong>Requires special configuration</strong></td>
-<td>true</td>
-</tr>
-<tr class="odd">
-<td><strong>Type</strong></td>
-<td>automatic</td>
-</tr>
-</tbody>
-</table>
+## Test details
+|||
+|---|---|
+| **Specifications**  | <ul><li>Device.Network.WLAN.SupportConnectionToAP.ConnectionToAP</li></ul> |  
+| **Platforms**   | <ul><li>Windows 10, client editions (ARM64)</li><li>Windows 10, mobile edition (ARM64)</li></ul> |
+| **Supported Releases** | <ul><li>Windows 10</li><li>Windows 10, version 1511</li><li>Windows 10, version 1607</li><li>Windows 10, version 1703</li><li>Windows 10, version 1709</li></ul> |
+|**Expected run time (in minutes)**| 5 |
+|**Category**| Scenario |
+|**Timeout (in minutes)**| 15 |
+|**Requires reboot**| false |
+|**Requires special configuration**| true |
+|**Type**| automatic |
 
  
 

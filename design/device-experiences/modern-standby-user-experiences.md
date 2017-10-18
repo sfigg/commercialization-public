@@ -42,6 +42,10 @@ The following topics describe the modern standby user experience.
 <td><p>[Turning on (wake)](turning-on--wake-.md)</p></td>
 <td><p>The largest benefit to the modern standby user experience is the instant resume when the system is turned on. Because Wi-Fi is always on during modern standby, turning on the system allows the user to immediately get to work—with fast turn-on, Wi-Fi already connected, and email already synced.</p></td>
 </tr>
+<tr>
+<td><p>[Network Connection Settings](network-connection-settings.md)</p></td>
+<td><p>Users can configure when to disconnect from the network to save power and when it is important to stay connected while the device is asleep.</p></td>
+</tr>
 <tr class="odd">
 <td><p>[Simple app and tile updates](simple-app-and-tile-updates.md)</p></td>
 <td><p>Modern standby enables the system to stay fresh and up-to-date by maintaining constant connectivity and by carefully controlling the execution of app background tasks.</p></td>

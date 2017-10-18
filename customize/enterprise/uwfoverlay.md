@@ -14,16 +14,13 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # Overlay for Unified Write Filter (UWF)
-
 
 Unified Write Filter (UWF) protects the contents of a volume by redirecting all write operations on that volume to the overlay, which is a virtual representation of the changes to the volume. Conceptually, an overlay is similar to a transparency overlay on an overhead projector. Any change that is made to the transparency overlay affects the projected picture as it is seen by the viewer. However, if the transparency overlay is removed, the underlying picture remains unchanged.
 
 In a UWF protected system, UWF creates a single overlay, which contains information about writes to all protected volumes on a system. The overlay supports up to 16 terabytes of protected volumes.
 
 ## Overlay storage
-
 
 You can configure UWF to store the overlay either entirely in RAM (RAM-based), or to store the overlay in a pre-allocated file on the system volume (disk-based).
 
@@ -39,10 +36,8 @@ In a RAM-based overlay, all overlay information is kept in system memory. Becaus
 
 As applications continue to write to protected volumes, a RAM-based overlay consumes available free RAM until the overlay reaches a specified maximum size or reaches critically low levels of available RAM, which requires that the system be restarted. Because RAM is typically much more expensive than disk space, available RAM usually limits how long your system can operate before needing to be restarted.
 
-**Important**  
-When you use a RAM-based overlay, make sure to leave enough available RAM to meet at least the minimum required RAM for the system to run. For example, if your OS requires at least 2 GB of RAM, and your device has 4 GB of RAM, set the maximum size of the overlay to 2 GB or less.
-
- 
+> [!Important]
+> When you use a RAM-based overlay, make sure to leave enough available RAM to meet at least the minimum required RAM for the system to run. For example, if your OS requires at least 2 GB of RAM, and your device has 4 GB of RAM, set the maximum size of the overlay to 2 GB or less.
 
 ### Disk-based overlay
 
@@ -50,20 +45,16 @@ In a disk-based overlay, UWF uses a pre-allocated file created on the system vol
 
 ## Overlay thresholds and notifications
 
-
 Because overlays grow in size and consume available resources as applications continue to write to protected volumes, you may want to have your device notify the user when available resources are critically low. You can configure UWF to write an event to the error log when the size of the overlay reaches or exceeds a configurable value. UWF uses Event Tracing for Windows (ETW) to write the event message.
 
 You can configure a warning threshold level and a critical threshold level for the overlay size in UWF. The warning threshold value must be lower than the critical threshold value. When the size of the overlay exceeds these values, UWF writes an event. If the overlay size is reduced to below the threshold levels, possibly from deleting temporary files, UWF writes an event to indicate that the overlay size has returned to a normal operating size.
 
-**Caution**  
-The warning and critical thresholds are triggered when the overlay size increases to meet the threshold values, and are not based on the amount of available resources remaining.
-
- 
+> [!Warning]
+> The warning and critical thresholds are triggered when the overlay size increases to meet the threshold values, and are not based on the amount of available resources remaining.
 
 For more information, see [UWF\_Overlay.SetWarningThreshold](uwf-overlaysetwarningthreshold.md) and [UWF\_Overlay.SetCriticalThreshold](uwf-overlaysetcriticalthreshold.md).
 
 ## Overlay exhaustion
-
 
 If the size of the overlay is close to or equal to the maximum overlay size, any write attempts will fail, returning an error indicating that there is not enough space to complete the operation. If the overlay on your device reaches this state, your device may become unresponsive and sluggish, and you may need to restart your device.
 
@@ -71,26 +62,11 @@ When Windows shuts down, it attempts to write a number of files to the disk. If 
 
 You can often avoid this issue by using UWF to initiate the shut down or restart. You can do this by using the following methods:
 
--   Use the shutdown command with [uwfmgr.exe](uwfmgrexe.md).
-
--   Use the restart command with [uwfmgr.exe](uwfmgrexe.md).
-
--   Use the [UWF\_Filter.ShutdownSystem](uwf-filtershutdownsystem.md) method in the WMI provider [UWF\_Filter](uwf-filter.md).
-
--   Use the [UWF\_Filter.RestartSystem](uwf-filterrestartsystem.md) method in the WMI provider [UWF\_Filter](uwf-filter.md).
+* Use the shutdown command with [uwfmgr.exe](uwfmgrexe.md).
+* Use the restart command with [uwfmgr.exe](uwfmgrexe.md).
+* Use the [UWF\_Filter.ShutdownSystem](uwf-filtershutdownsystem.md) method in the WMI provider [UWF\_Filter](uwf-filter.md).
+* Use the [UWF\_Filter.RestartSystem](uwf-filterrestartsystem.md) method in the WMI provider [UWF\_Filter](uwf-filter.md).
 
 ## Related topics
 
-
 [Unified Write Filter](unified-write-filter.md)
-
- 
-
- 
-
-
-
-
-
-
-
