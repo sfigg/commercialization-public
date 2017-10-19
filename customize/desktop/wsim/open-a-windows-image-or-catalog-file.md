@@ -8,7 +8,7 @@ ms.assetid: 8e2f6834-9ed6-4507-844c-4420fc2f76b1
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
 ms.author: alhopper
-ms.date: 05/02/2017
+ms.date: 10/17/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -22,6 +22,10 @@ To create an answer file, you must first open a Windows image file or catalog fi
 ## Open a Windows image file or catalog file
 
 1. Copy a previously created catalog file (.clg) to the technician computer or copy your customized Windows image file (install.wim) to the technician computer.
+
+   > [!Tip]
+   > Install.wim is included in Windows installation media, in the `Sources` folder. See [OEM deployment of Windows 10 for desktop editions](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/oem-deployment-of-windows-10-for-desktop-editions#customize-your-windows-image) for steps to make and deploy Windows images.
+
 1. On the technician computer, open Windows SIM.
 1. On the **File** menu, click **Select Windows Image**.
 1. In the **Select a Windows Image** dialog box, select the file type in the **Files of type** drop-down list, and then browse to a Windows image file or catalog file. If you open a Windows image file, Windows SIM will automatically create a catalog of that Windows image.
