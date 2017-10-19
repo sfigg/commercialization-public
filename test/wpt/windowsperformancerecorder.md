@@ -14,18 +14,18 @@ ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-# WindowsPerformanceRecorder
 
+# WindowsPerformanceRecorder
 
 This element is the root element of the schema. It represents metadata about the authoring of profiles.
 
+
 ## Element Hierarchy
 
+* \<**WindowsPerformanceRecorder**\>
 
-&lt;**WindowsPerformanceRecorder**&gt;
 
 ## Syntax
-
 
 ```
 <WindowsPerformanceRecorder Version   = float
@@ -44,135 +44,38 @@ This element is the root element of the schema. It represents metadata about the
 </WindowsPerformanceRecorder>
 ```
 
+
 ## Attributes and Elements
 
 
 ### Attributes
 
-<table>
-<colgroup>
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Attribute</th>
-<th>Description</th>
-<th>Data type</th>
-<th>Required</th>
-<th>Default</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><strong>Version</strong></p></td>
-<td><p>Indicates the version of the profile.</p></td>
-<td><p>float</p></td>
-<td><p>Yes</p></td>
-<td><p></p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Author</strong></p></td>
-<td><p>Indicates the author of the profile.</p></td>
-<td><p>string</p></td>
-<td><p>Yes</p></td>
-<td><p></p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Team</strong></p></td>
-<td><p>Indicates the team that created the profile.</p></td>
-<td><p>string</p></td>
-<td><p>No</p></td>
-<td><p></p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Copyright</strong></p></td>
-<td><p>Represents copyright information.</p></td>
-<td><p>string</p></td>
-<td><p>No</p></td>
-<td><p></p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Company</strong></p></td>
-<td><p>Indicates the company that created the profile.</p></td>
-<td><p>string</p></td>
-<td><p>No</p></td>
-<td><p></p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Comments</strong></p></td>
-<td><p>Represents optional descriptive comments for the profiles.</p></td>
-<td><p>string</p></td>
-<td><p>No</p></td>
-<td><p></p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Tag</strong></p></td>
-<td><p>Represents a tagged value that can be used to differentiate different profiles.</p></td>
-<td><p>string</p></td>
-<td><p>No</p></td>
-<td><p></p></td>
-</tr>
-</tbody>
-</table>
+| Attribute     | Description                                                                     | Data type | Required | Default |
+| :------------ | :------------------------------------------------------------------------------ | :-------- | :------- | :------ |
+| **Version**   | Indicates the version of the profile.                                           | float     | Yes      |         |
+| **Author**    | Indicates the author of the profile.                                            | string    | Yes      |         |
+| **Team**      | Indicates the team that created the profile.                                    | string    | No       |         |
+| **Copyright** | Represents copyright information.                                               | string    | No       |         |
+| **Company**   | Indicates the company that created the profile.                                 | string    | No       |         |
+| **Comments**  | Represents optional descriptive comments for the profiles.                      | string    | No       |         |
+| **Tag**       | Represents a tagged value that can be used to differentiate different profiles. | string    | No       |         |
 
- 
 
 ### Child Elements
 
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-<th>Description</th>
-<th>Requirement</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>[Profiles](profiles.md)</p></td>
-<td><p>Represents a collection of collectors, providers, and profiles.</p></td>
-<td><p>Required, exactly 1.</p></td>
-</tr>
-<tr class="even">
-<td><p>[TraceMergeProperties](tracemergeproperties.md)</p></td>
-<td><p>Represents a collection of trace merge properites.</p></td>
-<td><p>Optional, zero or 1.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[OnOffTransitionConfigurations](onofftransitionconfigurations.md)</p></td>
-<td><p>Represents a collection of on/off transition configurations.</p></td>
-<td><p>Optional, zero or 1.</p></td>
-</tr>
-</tbody>
-</table>
+| Element                                                           | Description                                                     | Requirement          |
+| :---------------------------------------------------------------- | :-------------------------------------------------------------- | :------------------- |
+| [Profiles](profiles.md)                                           | Represents a collection of collectors, providers, and profiles. | Required, exactly 1. |
+| [TraceMergeProperties](tracemergeproperties.md)                   | Represents a collection of trace merge properites.              | Optional, zero or 1. |
+| [OnOffTransitionConfigurations](onofftransitionconfigurations.md) | Represents a collection of on/off transition configurations.    | Optional, zero or 1. |
 
- 
 
 ### Parent Elements
 
 None.
 
+
 ## Related topics
 
-
 [Elements](elements.md)
-
- 
-
- 
-
-
-
-
-
-
 

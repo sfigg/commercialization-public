@@ -14,98 +14,55 @@ ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-# WakeupDelay
 
+# WakeupDelay
 
 Indicates the delay, in seconds, when emerging from a sleep state for an [OnOffTransitionConfiguration](onofftransitionconfiguration.md) element.
 
+
 ## Element Hierarchy
 
+* \<[WindowsPerformanceRecorder](windowsperformancerecorder.md)\>
+  * \<[OnOffTransitionConfigurations](onofftransitionconfigurations.md)\>
+    * \<[OnOffTransitionConfiguration](onofftransitionconfiguration.md)\>
+      * \<**WakeupDelay**\>
 
-&lt;[WindowsPerformanceRecorder](windowsperformancerecorder.md)&gt;
-
-     &lt;[OnOffTransitionConfigurations](onofftransitionconfigurations.md)&gt;
-
-          &lt;[OnOffTransitionConfiguration](onofftransitionconfiguration.md)&gt;
-
-               &lt;**WakeupDelay**&gt;
 
 ## Syntax
-
 
 ```
 <WakeupDelay Value = SimpleDelayValueType>
 </WakeupDelay>
 ```
 
+
 ## Attributes and Elements
 
 
 ### Attributes
 
-<table>
-<colgroup>
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Attribute</th>
-<th>Description</th>
-<th>Data Type</th>
-<th>Required</th>
-<th>Default</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><strong>Value</strong></p></td>
-<td><p>Describes the length of the delay, in seconds. Possible values are 1 through 3600, inclusive.</p></td>
-<td><p>Integer</p></td>
-<td><p>Yes</p></td>
-<td><p></p></td>
-</tr>
-</tbody>
-</table>
+| Attribute | Description                                                                                   | Data Type | Required | Default |
+| :-------- | :-------------------------------------------------------------------------------------------- | :-------- | :------- | :------ |
+| **Value** | Describes the length of the delay, in seconds. Possible values are 1 through 3600, inclusive. | Integer   | Yes      |         |
 
- 
 
 ### Child Elements
 
 None.
 
+
 ### Parent Elements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>[OnOffTransitionConfiguration](onofftransitionconfiguration.md)</p></td>
-<td><p>Represents an on/off transition configuration.</p></td>
-</tr>
-</tbody>
-</table>
+| Element                                                         | Description                                    |
+| :-------------------------------------------------------------- | :--------------------------------------------- |
+| [OnOffTransitionConfiguration](onofftransitionconfiguration.md) | Represents an on/off transition configuration. |
 
- 
 
 ## Example
 
-
 The following code example shows the configuration of this element.
 
-```
+```xml
 <OnOffTransitionConfiguration
   Id="OnOffTransitionConfiguration_Default_Boot"
   Name="OnOffTransitionConfiguration_Default_Boot"
@@ -118,18 +75,8 @@ The following code example shows the configuration of this element.
 </OnOffTransitionConfiguration>
 ```
 
+
 ## Related topics
 
-
 [Elements](elements.md)
-
- 
-
- 
-
-
-
-
-
-
 

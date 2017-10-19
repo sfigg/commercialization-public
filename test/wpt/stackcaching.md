@@ -14,73 +14,31 @@ ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-# StackCaching
 
+# StackCaching
 
 Describes stack caching attributes of collectors.
 
+
 ## Element Hierarchy
 
+* \<[WindowsPerformanceRecorder](windowsperformancerecorder.md)\>
+  * \<[Profiles](profiles.md)\>
+    * \<[SystemCollector](systemcollector.md)\>
+      * \<**StackCaching**\>
+    * \<[EventCollector](eventcollector.md)\>
+      * \<**StackCaching**\>
+    * \<[HeapEventCollector](heapeventcollector.md)\>
+      * \<**StackCaching**\>
+    * \<[Profile](profile-wpr.md)\>
+      * \<[Collectors](collectors.md)\>
+        * \<[SystemCollectorId](systemcollectorid.md)\>
+          * \<**StackCaching**\>
+        * \<[EventCollectorId](eventcollectorid.md)\>
+          * \<**StackCaching**\>
+        * \<[HeapEventCollectorId](heapeventcollectorid.md)\>
+          * \<**StackCaching**\>
 
-&lt;[WindowsPerformanceRecorder](windowsperformancerecorder.md)&gt;
-
-     &lt;[Profiles](profiles.md)&gt;
-
-          &lt;[SystemCollector](systemcollector.md)&gt;
-
-               &lt;**StackCaching**&gt;
-
-&lt;[WindowsPerformanceRecorder](windowsperformancerecorder.md)&gt;
-
-     &lt;[Profiles](profiles.md)&gt;
-
-          &lt;[EventCollector](eventcollector.md)&gt;
-
-               &lt;**StackCaching**&gt;
-
-&lt;[WindowsPerformanceRecorder](windowsperformancerecorder.md)&gt;
-
-     &lt;[Profiles](profiles.md)&gt;
-
-          &lt;[HeapEventCollector](heapeventcollector.md)&gt;
-
-               &lt;**StackCaching**&gt;
-
-&lt;[WindowsPerformanceRecorder](windowsperformancerecorder.md)&gt;
-
-     &lt;[Profiles](profiles.md)&gt;
-
-          &lt;[Profile](profile-wpr.md)&gt;
-
-               &lt;[Collectors](collectors.md)&gt;
-
-                    &lt;[SystemCollectorId](systemcollectorid.md)&gt;
-
-                    &lt;**StackCaching**&gt;
-
-&lt;[WindowsPerformanceRecorder](windowsperformancerecorder.md)&gt;
-
-     &lt;[Profiles](profiles.md)&gt;
-
-          &lt;[Profile](profile-wpr.md)&gt;
-
-               &lt;[Collectors](collectors.md)&gt;
-
-                    &lt;[EventCollectorId](eventcollectorid.md)&gt;
-
-                    &lt;**StackCaching**&gt;
-
-&lt;[WindowsPerformanceRecorder](windowsperformancerecorder.md)&gt;
-
-     &lt;[Profiles](profiles.md)&gt;
-
-          &lt;[Profile](profile-wpr.md)&gt;
-
-               &lt;[Collectors](collectors.md)&gt;
-
-                    &lt;[HeapEventCollectorId](heapeventcollectorid.md)&gt;
-
-                    &lt;**StackCaching**&gt;
 
 ## Syntax
 
@@ -90,107 +48,35 @@ Describes stack caching attributes of collectors.
 
 ### Attributes
 
-<table>
-<colgroup>
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Attribute</th>
-<th>Description</th>
-<th>Data type</th>
-<th>Required</th>
-<th>Default</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><strong>BucketCount</strong></p></td>
-<td><p>Represents the number of buckets.</p></td>
-<td><p>Unsigned long.</p></td>
-<td><p>Yes</p></td>
-<td><p></p></td>
-</tr>
-<tr class="even">
-<td><p><strong>CacheSize</strong></p></td>
-<td><p>Represents the size of the cache, in KB.</p></td>
-<td><p>Unsigned long.</p></td>
-<td><p>Yes</p></td>
-<td><p></p></td>
-</tr>
-</tbody>
-</table>
+| Attribute       | Description                              | Data type      | Required | Default |
+| :-------------- | :--------------------------------------- | :------------- | :------- | :------ |
+| **BucketCount** | Represents the number of buckets.        | Unsigned long. | Yes      |         |
+| **CacheSize**   | Represents the size of the cache, in KB. | Unsigned long. | Yes      |         |
 
- 
 
 ### Child Elements
 
 None.
 
+
 ### Parent Elements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>[EventCollector](eventcollector.md)</p></td>
-<td><p>Represents an event collector for the profile.</p></td>
-</tr>
-<tr class="even">
-<td><p>[EventCollectorId](eventcollectorid.md)</p></td>
-<td><p>Represents an event collector identifier.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[HeapEventCollector](heapeventcollector.md)</p></td>
-<td><p>Represents a collector for heap events.</p></td>
-</tr>
-<tr class="even">
-<td><p>[HeapEventCollectorId](heapeventcollectorid.md)</p></td>
-<td><p>Represents an identifier for a collector of heap events for the profile.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[SystemCollector](systemcollector.md)</p></td>
-<td><p>Describes the configurations to enable the Event Tracing for Windows (ETW) kernel-mode session.</p></td>
-</tr>
-<tr class="even">
-<td><p>[SystemCollectorId](systemcollectorid.md)</p></td>
-<td><p>Represents the identifier of a system collector.</p></td>
-</tr>
-</tbody>
-</table>
+| Element                                         | Description                                                                                     |
+| :---------------------------------------------- | :---------------------------------------------------------------------------------------------- |
+| [EventCollector](eventcollector.md)             | Represents an event collector for the profile.                                                  |
+| [EventCollectorId](eventcollectorid.md)         | Represents an event collector identifier.                                                       |
+| [HeapEventCollector](heapeventcollector.md)     | Represents a collector for heap events.                                                         |
+| [HeapEventCollectorId](heapeventcollectorid.md) | Represents an identifier for a collector of heap events for the profile.                        |
+| [SystemCollector](systemcollector.md)           | Describes the configurations to enable the Event Tracing for Windows (ETW) kernel-mode session. |
+| [SystemCollectorId](systemcollectorid.md)       | Represents the identifier of a system collector.                                                |
 
- 
 
 ## Remarks
 
-
 If you do not specify values for its attributes, this element is ignored.
+
 
 ## Related topics
 
-
 [SystemCollector](systemcollector.md)
-
- 
-
- 
-
-
-
-
-
-
 
