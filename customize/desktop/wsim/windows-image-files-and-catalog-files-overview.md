@@ -8,7 +8,7 @@ ms.assetid: 9cbc49e7-e962-4d9c-a04e-59b7ed67c278
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
 ms.author: alhopper
-ms.date: 10/17/2017
+ms.date: 10/19/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -18,7 +18,7 @@ ms.technology: windows-oem
 Windows System Image Manager (Windows SIM) uses Windows image **(.wim)** files and catalog **(.clg)** files to display the available components and packages that can be added to an answer file (**Unattend.xml**). Windows images and catalog files contain configurable settings that you can modify after the component or package is added to an answer file.
 
    > [!Tip]
-   > Install.wim is included in Windows installation media, in the `Sources` folder. See [OEM deployment of Windows 10 for desktop editions](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/oem-deployment-of-windows-10-for-desktop-editions#customize-your-windows-image) for steps to make and deploy Windows images.
+   > Install.wim is located in the `Sources` folder of your Windows Installation Media download. See [OEM deployment of Windows 10 for desktop editions](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/oem-deployment-of-windows-10-for-desktop-editions#customize-your-windows-image) for steps to make and deploy Windows images.
 
 ## <a href="" id="supported_architectures"></a> Supported architectures
 
