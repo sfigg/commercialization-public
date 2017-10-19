@@ -14,13 +14,13 @@ ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-# BufferSize
 
+# BufferSize
 
 Describes the size of each buffer, in KB.
 
-## Element Hierarchy
 
+## Element Hierarchy
 
 * \<[WindowsPerformanceRecorder](windowsperformancerecorder.md)\>
   * \<[Profiles](profiles.md)\>
@@ -42,55 +42,28 @@ Describes the size of each buffer, in KB.
 
 ## Syntax
 
-
 ```
 <BufferSize Operation = "Set" | "Add" | “Remove”
             Value     = unsignedLong>
 </BufferSize>
 ```
 
+
 ## Attributes and Elements
 
 
 ### Attributes
 
-<table>
-<thead>
-<tr class="header">
-<th>Attribute</th>
-<th>Description</th>
-<th>Data type</th>
-<th>Required</th>
-<th>Default</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><strong>Operation</strong></p></td>
-<td><p>Indicates whether elements should be set or added.</p></td>
-<td><p>This attribute can have one of the following values:</p>
-<ul>
-<li><p>Set</p></li>
-<li><p>Add</p></li>
-<li><p>Remove</p></li>
-</ul></td>
-<td><p>No</p></td>
-<td><p>Set</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Value</strong></p></td>
-<td><p>Indicates the size of the buffers, in KB.</p></td>
-<td><p>unsignedLong</p></td>
-<td><p>Yes</p></td>
-<td><p></p></td>
-</tr>
-</tbody>
-</table>
+| Attribute     | Description                                        | Data type                                                                                                 | Required | Default |
+| :------------ | :------------------------------------------------- | :-------------------------------------------------------------------------------------------------------- | :------- | :------ |
+| **Operation** | Indicates whether elements should be set or added. | This attribute can have one of the following values: <ul> <li>Set</li> <li>Add</li> <li>Remove</li> </ul> | No       | Set     |
+| **Value**     | Indicates the size of the buffers, in KB.          | unsignedLong                                                                                              | Yes      |         |
 
 
 ### Child Elements
 
 None.
+
 
 ### Parent Elements
 
@@ -106,15 +79,14 @@ None.
 
 ## Remarks
 
-
 This element is used only for in-memory capture.
+
 
 ## Example
 
-
 The following code examples show how this element is used in system collector and event collector definitions.
 
-```
+```xml
 <SystemCollector
   Id="WPRSystemCollector"
   Name="NT Kernel Logger"
@@ -137,8 +109,8 @@ The following code examples show how this element is used in system collector an
 </EventCollector>
 ```
 
-## Related topics
 
+## Related topics
 
 [Elements](elements.md)
 
