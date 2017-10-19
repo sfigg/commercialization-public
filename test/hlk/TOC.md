@@ -2806,6 +2806,7 @@
 ##### [Supported Network Hardware](testref/supported-network-hardware.md)
 ##### [WI-FI Direct Performance Scenario Tests](testref/wi-fi-direct-performance-scenario-tests.md)
 ##### [Running Network Switch Certification Tests](testref/running-network-switch-certification-tests.md)
+##### [QosRemoteSettings Troubleshooting](testref/qosremotesettings.md)
 ### [Device.Portable](testref/device-portable.md)
 #### [Device.Portable tests](testref/device-portable-tests.md)
 ##### [MTP Compliance Test - Core - Device Properties](testref/7b5f7462-6648-4d64-b51a-df51888857e3.md)
