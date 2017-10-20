@@ -42,7 +42,7 @@ You can also customize power settings for each of the slider modes in your firmw
 Customers can choose one of four slider modes:
 
 * **Battery Saver**: Helps conserve power, and prolong battery life, when the system is not connected to a power source. When battery saver is on, some Windows features are disabled, throttled, or behave differently. Screen brightness is also reduced. Battery Saver is only available on DC. To learn more, see [Battery Saver](https://docs.microsoft.com/en-us/windows-hardware/design/component-guidelines/battery-saver).
-* **Better Battery**: Delivers longer battery life than the default settings on previous versions of Windows. Available on both AC and DC.
+* **Better Battery**: Delivers longer battery life than the default settings on previous versions of Windows. Available on both AC and DC. In some cases, users will see this mode labeled **Recommended**, rather than **Better Battery**, in their slider UI.
 * **Better Performance**: Default slider mode that slightly favors performance over battery life and is appropriate for users who want to tradeoff power for better performance of their apps. Available on both AC and DC.
 * **Best Performance**: Favors performance over power and is targeted at users who want to tradeoff power for performance and responsiveness. Available on both AC and DC.
 
