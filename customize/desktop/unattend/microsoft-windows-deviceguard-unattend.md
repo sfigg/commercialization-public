@@ -13,16 +13,13 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # Microsoft-Windows-DeviceGuard-Unattend
-
 
 The `Microsoft-Windows-DeviceGuard-Unattend` component specifies settings for initializing and enforcing virtualization-based security, which helps protect system memory and kernel mode apps and drivers from possible tampering.
 
 Administrators can set values for the following settings to control virtualization-based security.
 
 ## In this section
-
 
 <table>
 <colgroup>
@@ -46,21 +43,14 @@ Administrators can set values for the following settings to control virtualizati
 </tr>
 <tr class="odd">
 <td><p>[LsaCfgFlags](Microsoft-Windows-DeviceGuard-Unattend-lsacfgflags.md)</p></td>
-<td><p>Use to enable the Credential Guard, which uses virtualization-based security to isolate secrets so that only privileged system software can access them when they are stored on disk or in memory. For more information, see [Credential Guard]( http://go.microsoft.com/fwlink/p/?LinkId=623856).</p></td>
+<td><p>Use to enable the Credential Guard, which uses virtualization-based security to isolate secrets so that only privileged system software can access them when they are stored on disk or in memory. For more information, see [Credential Guard]( https://docs.microsoft.com/en-us/windows/access-protection/credential-guard/credential-guard).</p></td>
 </tr>
 </tbody>
 </table>
 
- 
-
 ## XML example
 
-
 The following unattend XML example shows how you can enable virtualization-based security.
-
-**Important**  You must first use DISM to add the virtualization-based security features before you apply the unattend settings. For more information, see *Add the virtualization-based security features by using DISM* in [Credential Guard]( http://go.microsoft.com/fwlink/p/?LinkId=623856).
-
- 
 
 ```XML
 <?xml version="1.0" encoding="UTF-8"?>
@@ -78,46 +68,26 @@ The following unattend XML example shows how you can enable virtualization-based
 
 ## Enabling Device Guard or Credential Guard
 
-
 In addition to the Unattend settings in `Microsoft-Windows-DeviceGuard-Unattend`, you also need to either enable Hyper-V and IUM to enable Device Guard or Credential Guard, or you can directly set registry keys using FirstLogonCommands.
 
--   Enable Hyper-V and IUM to turn on Device Guard or Credential Guard by running the following DISM commands:
-
-    **DISM.EXE /Image:***&lt;full path to offline image&gt;* **/Enable-Feature:Microsoft-Hyper-V-Hypervisor /All**
-
-    **DISM.EXE /Image:***&lt;full path to offline image&gt;* **/Enable-Feature: IsolatedUserMode /All**
-
--   Set the following registry keys using the [FirstLogonCommands](microsoft-windows-shell-setup-firstlogoncommands.md) setting:
-
-    **REG ADD "HKLM\\SYSTEM\\CurrentControlSet\\Control\\DeviceGuard" /v "EnableVirtualizationBasedSecurity" /t REG\_DWORD /d 1 /f**
-
-    **REG ADD "HKLM\\SYSTEM\\CurrentControlSet\\Control\\Lsa" /v "LsaCfgFlags" /t REG\_DWORD /d 1 /f**
-
-    **REG ADD "HKLM\\SYSTEM\\CurrentControlSet\\Control\\DeviceGuard" /v "HypervisorEnforcedCodeIntegrity" /t REG\_DWORD /d 1 /f**
+* Enable Hyper-V and IUM to turn on Device Guard or Credential Guard by running the following DISM commands:
+  * **DISM.EXE /Image:***&lt;full path to offline image&gt;* **/Enable-Feature:Microsoft-Hyper-V-Hypervisor /All**
+  * **DISM.EXE /Image:***&lt;full path to offline image&gt;* **/Enable-Feature: IsolatedUserMode /All**
+* Set the following registry keys using the [FirstLogonCommands](microsoft-windows-shell-setup-firstlogoncommands.md) setting:
+  * **REG ADD "HKLM\\SYSTEM\\CurrentControlSet\\Control\\DeviceGuard" /v "EnableVirtualizationBasedSecurity" /t REG\_DWORD /d 1 /f**
+  * **REG ADD "HKLM\\SYSTEM\\CurrentControlSet\\Control\\Lsa" /v "LsaCfgFlags" /t REG\_DWORD /d 1 /f**
+  * **REG ADD "HKLM\\SYSTEM\\CurrentControlSet\\Control\\DeviceGuard" /v "HypervisorEnforcedCodeIntegrity" /t REG\_DWORD /d 1 /f**
 
 Read the following articles to learn more about Device Guard and Credential Guard:
 
--   [Device Guard overview]( http://go.microsoft.com/fwlink/p/?LinkId=718000) and [Device Guard deployment guide](http://go.microsoft.com/fwlink/p/?linkid=690990)
--   [Protect derived domain credentials with Credential Guard](http://go.microsoft.com/fwlink/p/?linkid=718003)
--   [Managing Windows 10 Device Guard with Configuration Manager](http://go.microsoft.com/fwlink/p/?LinkId=718009)
+* [Device Guard overview](https://docs.microsoft.com/en-us/windows/device-security/device-guard/introduction-to-device-guard-virtualization-based-security-and-code-integrity-policies)
+* [Device Guard deployment guide](https://docs.microsoft.com/en-us/windows/device-security/device-guard/device-guard-deployment-guide)
+* [Protect derived domain credentials with Credential Guard](https://docs.microsoft.com/en-us/windows/access-protection/credential-guard/credential-guard)
 
 ## Applies To
-
 
 To determine whether a component applies to the image you’re building, load your image into Windows SIM and search for the component or setting name. For information on how to view components and settings, see [Configure Components and Settings in an Answer File](https://msdn.microsoft.com/library/windows/hardware/dn915078).
 
 ## Related topics
 
-
 [Components](components-b-unattend.md)
-
- 
-
- 
-
-
-
-
-
-
-
