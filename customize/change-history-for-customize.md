@@ -1,21 +1,39 @@
 ---
 title: Change history for customization docs
-description: Provides a record of the changes that were made in the Customize section of the Windows 10 partner documentation.
+description: Provides a record of the major changes that were made in the Customize section of the Windows 10 partner documentation.
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 07E710A3-3368-476E-9EC1-12AA67B52498
 ms.author: alhopper
-ms.date: 05/02/2017
+ms.date: 10/17/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # Change history for customization docs
 
+The following tables record the major changes that were made in the **Customize** section of the Windows 10 partner documentation since Windows 10, version 1607 was released.
 
-The following tables record the changes that were made in the **Customize** section of the Windows 10 partner documentation since Windows 10, version 1607 was released.
+## October 17, 2017
+
+| Topic                                      | Description                                                                                        |
+|:-------------------------------------------|:---------------------------------------------------------------------------------------------------|
+| [Customize the Get Help app](desktop/customize-get-help-app.md)    | New. Learn how to add your support app or website to Window's self-service Get Help app, to provide customers with an easy-to-find way to reach out. |
+| [Customize the Windows performance power slider](desktop/customize-power-slider.md) | New. The Windows performance power slider enables customers to trade performance of their system for longer battery life. You can configure the default slider mode, and the power settings engaged behind the scenes. |
+| [Customize a SAR mapping table](desktop/customize-sar-mapping-table.md) | New. Configure and store a Specific Absorption Rate (SAR) table for mobile broadband modems in the registry. |
+| [Customize the Start layout](desktop/customize-start-layout.md) | New. Customize the size of the start layout, and add your own tiles to it. |
+| [Create a Kiosk Experience](enterprise/create-a-kiosk-image.md) | Updated with guidance on providing a multi-app kiosk experience. This functionality is new in Windows 10 version 1709. |
+| [Adaptive hibernate](power-settings/adaptive-hibernate.md) | Updated. In Windows 10 version 1709, user usage prediction no longer triggers Hibernate. Also updated to include default values of hibernate triggers. |
+| [Predefined key combinations](enterprise/predefined-key-combinations.md) | Updated with keyboard shortcut changes introduced in Windows 10 version 1709. |
+| [OOBE.xml](desktop/oobexml.md) | Updated. In Windows 10 version 1709, `timezone` is now available to set in OOBE.xml |
+| [Changed answer file settings for Windows 10 version 1709](desktop/unattend/changed-answer-file-settings-for-windows-10-build-1709.md) | Learn about the Unattend settings that have been added, deprecated, and removed in the most recent version of Windows. |
+
+## September 27, 2017
+
+| Topic                                      | Description                                                                                        |
+|:-------------------------------------------|:---------------------------------------------------------------------------------------------------|
+| [Customize the Out of Box Experience](desktop/customize-oobe.md) | New. Guidance on how to customize elements of the Out of Box Experience (OOBE), such as setting default values, adding registration screens, and providing support for unpaired mice and keyboards. |
 
 ## March 24, 2017
 
@@ -93,17 +111,3 @@ The following tables record the changes that were made in the **Customize** sect
 </tr>
 </tbody>
 </table>
-
- 
-
- 
-
- 
-
- 
-
-
-
-
-
-

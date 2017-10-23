@@ -13,16 +13,13 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # ForceShutdownNow
 
-
-`ForceShutdownNow` specifies whether the computer shuts down immediately after the **generalize** configuration pass is complete. For more information about modes, see [Windows Setup Configuration Passes](http://go.microsoft.com/fwlink/?LinkId=268344).
+`ForceShutdownNow` specifies whether the computer shuts down immediately after the **generalize** configuration pass is complete. For more information about modes, see [Windows Setup Configuration Passes](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/how-configuration-passes-work).
 
 `Generalize` is a special-case setting. It is processed after all other answer-file settings in that configuration pass.
 
 ## Values
-
 
 <table>
 <colgroup>
@@ -42,29 +39,23 @@ ms.technology: windows-oem
 </tbody>
 </table>
 
- 
-
 ## Valid Configuration Passes
-
 
 auditUser
 
 ## Parent Hierarchy
 
-
 [Microsoft-Windows-Deployment](microsoft-windows-deployment.md) | [Generalize](microsoft-windows-deployment-generalize.md) | **ForceShutdownNow**
 
 ## Applies To
-
 
 For a list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-Deployment](microsoft-windows-deployment.md).
 
 ## XML Example
 
-
 The following XML output shows a deployment with no asynchronous or synchronous commands.
 
-```
+```XML
 <AuditComputerName>
    <MustReboot>true</MustReboot>
    <Name>MyComputer</Name>
@@ -80,16 +71,4 @@ The following XML output shows a deployment with no asynchronous or synchronous 
 
 ## Related topics
 
-
 [Reseal](microsoft-windows-deployment-reseal.md)
-
- 
-
- 
-
-
-
-
-
-
-

@@ -22,7 +22,7 @@ ms.technology: windows-oem
 
 ### Device.BusController.Bluetooth.Base.4LeSpecification
 
-*Bluetooth controllers must support the Bluetooth 4.0 specification requirements.*
+*Bluetooth controllers must support the Bluetooth 4.0 specification requirements. Support for Bluetooth 4.1 specification with LE Link Layer Topology is recommended.*
 
 <table>
 <tr>
@@ -65,6 +65,17 @@ The Bluetooth controller must allow the spec LE state combinations (as allowed i
 -   0x0000000004000000 Passive Scanning state and Slave Role combination supported.
 
 -   0x0000000008000000 Active Scanning state and Slave Role combination supported.
+
+The Bluetooth controller is highly recommended to support the following LE state combinations (as allowed in section \[Vol 6\] Part B, Section 1.1.1 of the Bluetooth version 4.1 spec):
+
+-   0x0000000800000000 Connectable Advertising State and Connection State (Master) combination supported.
+
+-   0x0000004000000000 Connectable Advertising State and Connection State (Slave) combination supported.
+
+-   0x0000020000000000 Initiating state and Connection State (Slave) combination supported.
+
+-   0x0000000100000000 Connectable Advertising State and Initiating State combination supported.
+
 
 ### Device.BusController.Bluetooth.Base.LeWhiteList
 

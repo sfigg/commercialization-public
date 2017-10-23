@@ -13,28 +13,17 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # ProtectYourPC
-
 
 `ProtectYourPC` specifies whether Express settings are used to:
 
--   Personalize speech, typing, and inking input by sending contacts and calendar details, along with other associated input data to Microsoft.
-
--   Let Windows and apps request the user's localization, including location history, and use the advertising ID to personalize experiences on the device.
-
--   Turn on protection from malicious web content and use page prediction to preload sites in Windows browsers, which sends the browsing history to Microsoft.
-
--   Automatically connect to suggested open and shared networks.
-
--   Send problem reports to Microsoft.
-
-**Note**  The functionality for `ProtectYourPC` has changed for Windows 10 for desktop editions (Home, Pro, Enterprise, and Education). In previous releases, this setting specified whether Windows Update installed important and recommended updates automatically.
-
- 
+* Personalize speech, typing, and inking input by sending contacts and calendar details, along with other associated input data to Microsoft.
+* Let Windows and apps request the user's localization, including location history, and use the advertising ID to personalize experiences on the device.
+* Turn on protection from malicious web content and use page prediction to pre-load sites in Windows browsers, which sends the browsing history to Microsoft.
+* Automatically connect to suggested open and shared networks.
+* Send problem reports to Microsoft.
 
 ## Values
-
 
 <table>
 <colgroup>
@@ -57,31 +46,25 @@ ms.technology: windows-oem
 </tbody>
 </table>
 
- 
-
 There is no default value. If a value is not set, the **Get going fast** page opens during setup.
 
 ## Valid Configuration Passes
-
 
 oobeSystem
 
 ## Parent Hierarchy
 
-
 [Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [OOBE](microsoft-windows-shell-setup-oobe.md) | **ProtectYourPC**
 
 ## Applies To
-
 
 For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md).
 
 ## XML Example
 
-
 The following XML example shows how to turn off Express settings.
 
-```
+```XML
 <OOBE>
    <ProtectYourPC>3</ProtectYourPC>
 </OOBE>
@@ -89,16 +72,4 @@ The following XML example shows how to turn off Express settings.
 
 ## Related topics
 
-
 [OOBE](microsoft-windows-shell-setup-oobe.md)
-
- 
-
- 
-
-
-
-
-
-
-

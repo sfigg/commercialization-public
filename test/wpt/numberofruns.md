@@ -14,98 +14,55 @@ ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-# NumberOfRuns
 
+# NumberOfRuns
 
 Indicates the number of times that an on-off transition is run.
 
+
 ## Element Hierarchy
 
+* \<[WindowsPerformanceRecorder](windowsperformancerecorder.md)\>
+  * \<[OnOffTransitionConfigurations](onofftransitionconfigurations.md)\>
+    * \<[OnOffTransitionConfiguration](onofftransitionconfiguration.md)\>
+      * \<**NumberOfRuns**\>
 
-&lt;[WindowsPerformanceRecorder](windowsperformancerecorder.md)&gt;
-
-     &lt;[OnOffTransitionConfigurations](onofftransitionconfigurations.md)&gt;
-
-          &lt;[OnOffTransitionConfiguration](onofftransitionconfiguration.md)&gt;
-
-               &lt;**NumberOfRuns**&gt;
 
 ## Syntax
-
 
 ```
 <NumberOfRuns Value = SimpleValueType>
 </NumberOfRuns>
 ```
 
+
 ## Attributes and Elements
 
 
 ### Attributes
 
-<table>
-<colgroup>
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Attribute</th>
-<th>Description</th>
-<th>Data type</th>
-<th>Required</th>
-<th>Default</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><strong>Value</strong></p></td>
-<td><p>Number of times the on/off transition is run.</p></td>
-<td><p>Integer value equal to or greater than 1.</p></td>
-<td><p>Yes</p></td>
-<td><p></p></td>
-</tr>
-</tbody>
-</table>
+| Attribute | Description                                   | Data type                                 | Required | Default |
+| :-------- | :-------------------------------------------- | :---------------------------------------- | :------- | :------ |
+| **Value** | Number of times the on/off transition is run. | Integer value equal to or greater than 1. | Yes      |         |
 
- 
 
 ### Child Elements
 
 None.
 
+
 ### Parent Elements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>[OnOffTransitionConfiguration](onofftransitionconfiguration.md)</p></td>
-<td><p>Represents on on/off transition configuration.</p></td>
-</tr>
-</tbody>
-</table>
+| Element                                                         | Description                                    |
+| :-------------------------------------------------------------- | :--------------------------------------------- |
+| [OnOffTransitionConfiguration](onofftransitionconfiguration.md) | Represents on on/off transition configuration. |
 
- 
 
 ## Example
 
-
 The following code example shows how to configure this element.
 
-```
+```xml
 <OnOffTransitionConfiguration
   Id="OnOffTransitionConfiguration_Default_Boot"
   Name="OnOffTransitionConfiguration_Default_Boot"
@@ -118,18 +75,8 @@ The following code example shows how to configure this element.
 </OnOffTransitionConfiguration>
 ```
 
+
 ## Related topics
 
-
 [Elements](elements.md)
-
- 
-
- 
-
-
-
-
-
-
 

@@ -14,24 +14,21 @@ ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-# ProblemCategories
 
+# ProblemCategories
 
 Represents a collection of problem categories. This element is for internal use only.
 
+
 ## Element Hierarchy
 
+* \<[WindowsPerformanceRecorder](windowsperformancerecorder.md)\>
+  * \<[Profiles](profiles.md)\>
+    * \<[Profile](profile-wpr.md)\>
+      * \<**ProblemCategories**\>
 
-&lt;[WindowsPerformanceRecorder](windowsperformancerecorder.md)&gt;
-
-     &lt;[Profiles](profiles.md)&gt;
-
-          &lt;[Profile](profile-wpr.md)&gt;
-
-               &lt;**ProblemCategories**&gt;
 
 ## Syntax
-
 
 ```
 <ProblemCategories Operation = "Set" | "Add" | “Remove” >
@@ -42,107 +39,31 @@ Represents a collection of problem categories. This element is for internal use 
 </ProblemCategories>
 ```
 
-## Attributes and Elements
 
+## Attributes and Elements
 
 ### Attributes
 
-<table>
-<colgroup>
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Attribute</th>
-<th>Description</th>
-<th>Data type</th>
-<th>Required</th>
-<th>Default</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><strong>Operation</strong></p></td>
-<td><p>Indicates whether <strong>ProblemCategory</strong> elements should be set or added.</p></td>
-<td><p>This attribute can have one of the following values:</p>
-<ul>
-<li><p>Set</p></li>
-<li><p>Add</p></li>
-<li><p>Remove</p></li>
-</ul></td>
-<td><p>No</p></td>
-<td><p>Set</p></td>
-</tr>
-</tbody>
-</table>
+| Attribute     | Description                                                            | Data type                                                                                                 | Required | Default |
+| :------------ | :--------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------- | :------- | :------ |
+| **Operation** | Indicates whether **ProblemCategory** elements should be set or added. | This attribute can have one of the following values: <ul> <li>Set</li> <li>Add</li> <li>Remove</li> </ul> | No       | Set     |
 
- 
 
 ### Child Elements
 
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-<th>Description</th>
-<th>Requirement</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>[ProblemCategory](problemcategory.md)</p></td>
-<td><p>Represents a problem category.</p></td>
-<td><p>Required, 1 or more.</p></td>
-</tr>
-</tbody>
-</table>
+| Element                               | Description                    | Requirement          |
+| :------------------------------------ | :----------------------------- | :------------------- |
+| [ProblemCategory](problemcategory.md) | Represents a problem category. | Required, 1 or more. |
 
- 
 
 ### Parent Elements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>[Profile](profile-wpr.md)</p></td>
-<td><p>Represents a collection of problem categories and collectors.</p></td>
-</tr>
-</tbody>
-</table>
+| Element                   | Description                                                   |
+| :------------------------ | :------------------------------------------------------------ |
+| [Profile](profile-wpr.md) | Represents a collection of problem categories and collectors. |
 
- 
 
 ## Related topics
 
-
 [Elements](elements.md)
-
- 
-
- 
-
-
-
-
-
-
 

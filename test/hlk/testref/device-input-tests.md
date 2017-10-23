@@ -144,7 +144,6 @@ ms.assetid: e66ec5b9-39f0-4315-8488-ba8f1b704d4e
 -   [TestGNSSBasicStartFix\_SetEngineCold](d10943b4-0164-4710-9314-8f95c4e6528e.md)
 -   [TestGNSSBasicStartFix\_WithAgnssInjection](4cb0e6bd-4ece-44af-82c6-70ffd97896a2.md)
 -   [TestGnssMultiSession](cf0ad06f-2f9d-4651-a3f9-0e6af06e020c.md)
--   [TestGnssUplTestInvalid](9dd502d7-b8e4-45e9-9604-9f51e8bead9e.md)
 -   [TestModifyFixSession](530f451b-d087-4ef3-a471-88b98978da27.md)
 -   [TestSuplConfTest\_v1](3f0dbf4a-1d81-49fc-b373-c64cd9b831d6.md)
 -   [TestSuplConfTest\_v2](6d07d42e-0fa6-479d-b0b1-3b103122c8ea.md)

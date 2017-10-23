@@ -14,13 +14,13 @@ ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-# CaptureStateOnSave
 
+# CaptureStateOnSave
 
 Represents a collection of keywords that describe events to be captured when a trace is saved. The library requests the provider to log its state information when the collector is saved. If the **Operation** attribute is specified, the **Keyword** elements can be set or added to the collection.
 
-## Element Hierarchy
 
+## Element Hierarchy
 
 * \<[WindowsPerformanceRecorder](windowsperformancerecorder.md)\>
   * \<[Profiles](profiles.md)\>
@@ -37,7 +37,6 @@ Represents a collection of keywords that describe events to be captured when a t
 
 ## Syntax
 
-
 ```
 <CaptureStateOnSave Operation = "Set" | "Add"> | “Remove”
 
@@ -47,36 +46,15 @@ Represents a collection of keywords that describe events to be captured when a t
 </CaptureStateOnSave>
 ```
 
+
 ## Attributes and Elements
 
 
 ### Attributes
 
-<table>
-<thead>
-<tr class="header">
-<th>Attribute</th>
-<th>Description</th>
-<th>Data type</th>
-<th>Required</th>
-<th>Default</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><strong>Operation</strong></p></td>
-<td><p>Indicates whether keywords should be set or added.</p></td>
-<td><p>This attribute can have one of the following values:</p>
-<ul>
-<li><p>Set</p></li>
-<li><p>Add</p></li>
-<li><p>Remove</p></li>
-</ul></td>
-<td><p>No</p></td>
-<td><p>Set</p></td>
-</tr>
-</tbody>
-</table>
+| Attribute     | Description                                        | Data type                                                                                                 | Required | Default |
+| :------------ | :------------------------------------------------- | :-------------------------------------------------------------------------------------------------------- | :------- | :------ |
+| **Operation** | Indicates whether keywords should be set or added. | This attribute can have one of the following values: <ul> <li>Set</li> <li>Add</li> <li>Remove</li> </ul> | No       | Set     |
 
 
 ### Child Elements
@@ -96,10 +74,9 @@ Represents a collection of keywords that describe events to be captured when a t
 
 ## Example
 
-
 The following code example shows how this element is used.
 
-```
+```xml
 <EventProvider Id="EventProvider_DWMWin32k_CaptureState" Name="e7ef96be-969f-414f-97d7-3ddb7b558ccc" NonPagedMemory="true" CaptureStateOnly="true" > 
   <!-- CaptureStateOnly="true" means provider is not enabled throughout the tracing session. -->
   <CaptureStateOnSave>
@@ -108,8 +85,8 @@ The following code example shows how this element is used.
 </EventProvider>
 ```
 
-## Related topics
 
+## Related topics
 
 [Elements](elements.md)
 

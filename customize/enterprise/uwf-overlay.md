@@ -11,16 +11,13 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # UWF\_Overlay
-
 
 Contains the current size of the Unified Write Filter (UWF) overlay and manages the critical and warning thresholds for the overlay size.
 
 ## Syntax
 
-
-```
+```powershell
 class UWF_Overlay {
     [key]  string Id;
     [read] UInt32 OverlayConsumption;
@@ -42,7 +39,6 @@ class UWF_Overlay {
 ```
 
 ## Members
-
 
 The following tables list any methods and properties that belong to this class.
 
@@ -74,8 +70,6 @@ The following tables list any methods and properties that belong to this class.
 </tr>
 </tbody>
 </table>
-
- 
 
 ### <a href="" id="pro"></a>Properties
 
@@ -128,13 +122,11 @@ The following tables list any methods and properties that belong to this class.
 </tbody>
 </table>
 
- 
-
 ### Examples
 
 The following example demonstrates how to use the UWF overlay by using the WMI provider in a PowerShell script.
 
-```
+```powershell
 $COMPUTER = "localhost"
 $NAMESPACE = "root\standardcimv2\embedded"
 
@@ -143,20 +135,20 @@ $NAMESPACE = "root\standardcimv2\embedded"
 function Set-OverlayWarningThreshold($ThresholdSize) {
 
 # Retrieve the overlay WMI object
-    
+
     $OverlayInstance = Get-WMIObject -namespace $NAMESPACE -class UWF_Overlay;
 
     if(!$OverlayInstance) {
         "Unable to get handle to an instance of the UWF_Overlay class"
         return;
     }
-    
+
 # Call the instance method to set the warning threshold value
-                    
+
     $retval = $OverlayInstance.SetWarningThreshold($ThresholdSize);
-                                            
+
 # Check the return value to verify that setting the warning threshold is successful
-    
+
     if ($retval.ReturnValue -eq 0) {
         "Overlay warning threshold has been set to " + $ThresholdSize + " MB"
     } else {
@@ -169,20 +161,20 @@ function Set-OverlayWarningThreshold($ThresholdSize) {
 function Set-OverlayCriticalThreshold($ThresholdSize) {
 
 # Retrieve the overlay WMI object
-    
+
     $OverlayInstance = Get-WMIObject -namespace $NAMESPACE -class UWF_Overlay;
 
     if(!$OverlayInstance) {
         "Unable to get handle to an instance of the UWF_Overlay class"
         return;
     }
-    
+
 # Call the instance method to set the warning threshold value
-                    
+
     $retval = $OverlayInstance.SetCriticalThreshold($ThresholdSize);
-                                            
+
 # Check the return value to verify that setting the critical threshold is successful
-    
+
     if ($retval.ReturnValue -eq 0) {
         "Overlay critical threshold has been set to " + $ThresholdSize + " MB"
     } else {
@@ -195,14 +187,14 @@ function Set-OverlayCriticalThreshold($ThresholdSize) {
 function Get-OverlayInformation() {
 
 # Retrieve the Overlay WMI object
-    
+
     $OverlayInstance = Get-WMIObject -namespace $NAMESPACE -class UWF_Overlay;
 
     if(!$OverlayInstance) {
         "Unable to get handle to an instance of the UWF_Overlay class"
         return;
     }
-    
+
 # Display the current values of the overlay properties
 
     "`nOverlay Consumption: " + $OverlayInstance.OverlayConsumption
@@ -229,29 +221,13 @@ Only one **UFW\_Overlay** instance exists for a system protected with UWF.
 
 ## Requirements
 
-
-|                       |           |
-|-----------------------|-----------|
 | Windows Edition       | Supported |
+|:----------------------|:----------|
 | Windows 10 Home       | No        |
 | Windows 10 Pro        | No        |
 | Windows 10 Enterprise | Yes       |
 | Windows 10 Education  | Yes       |
 
- 
-
 ## Related topics
 
-
 [Unified Write Filter](unified-write-filter.md)
-
- 
-
- 
-
-
-
-
-
-
-

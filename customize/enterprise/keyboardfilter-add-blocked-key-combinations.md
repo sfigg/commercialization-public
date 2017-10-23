@@ -11,9 +11,7 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # Add blocked key combinations
-
 
 The following sample Windows PowerShell script uses the Windows Management Instrumentation (WMI) providers for Keyboard Filter to create three functions to configure Keyboard Filter so that Keyboard Filter blocks key combinations. It demonstrates several ways to use each function.
 
@@ -25,8 +23,7 @@ The third function, `Enable-Scancode`, blocks custom key combinations by using t
 
 ## Enable-rules.ps1
 
-
-```
+```powershell
 #
 # Copyright (C) Microsoft. All rights reserved.
 #
@@ -57,7 +54,6 @@ function Enable-Predefined-Key($Id) {
         property to 1/true.
     .Example
         Enable-Predefined-Key "Ctrl+Alt+Delete"
-        
         Enable CAD filtering
 #>
 
@@ -89,7 +85,6 @@ function Enable-Custom-Key($Id) {
         instance of WEKF_CustomKey using Set-WMIInstance.
     .Example
         Enable-Custom-Key "Ctrl+V"
-        
         Enable filtering of the Ctrl + V sequence.
 #>
 
@@ -109,11 +104,9 @@ function Enable-Custom-Key($Id) {
             -class WEKF_CustomKey `
             -argument @{Id="$Id"} `
             @CommonParams | Out-Null
-        
         "Added Custom Filter $Id.";
     }
 }
-
 
 function Enable-Scancode($Modifiers, [int]$Code) {
     <#
@@ -128,7 +121,6 @@ function Enable-Scancode($Modifiers, [int]$Code) {
         instance of WEKF_Scancode using Set-WMIInstance.
     .Example
         Enable-Scancode "Ctrl" 37
-        
         Enable filtering of the Ctrl + keyboard scancode 37 (base-10)
         sequence.
 #>
@@ -165,20 +157,8 @@ Enable-Scancode "Ctrl" 37
 
 ## Related topics
 
-
 [Windows PowerShell script samples for keyboard filter](keyboardfilter-powershell-script-samples.md)
 
 [Keyboard filter WMI provider reference](keyboardfilter-wmi-provider-reference.md)
 
 [Keyboard filter](keyboardfilter.md)
-
- 
-
- 
-
-
-
-
-
-
-

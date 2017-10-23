@@ -16,6 +16,7 @@
 ### [Cortana](device-experiences/cortana.md)
 #### [Speech Platform: Input Device Recommendations](device-experiences/speechplatformdevicesrecommendations.md)
 #### [Speech Platform: Input Device Test Setup](device-experiences/speechplatformdevicestestsetup.md)
+#### [Speech Platform: Input Device Hardware Guidelines](device-experiences/speechplatformdevices-hwguidelines.md)
 ### [Docking](device-experiences/docking.md)
 ### [Continuum](device-experiences/continuum-phone.md)
 ### [Tablet mode](device-experiences/continuum.md)
@@ -208,7 +209,6 @@
 ###### [Enable, Disable Toggle Button](component-guidelines/touchpad-toggle-button-to-enable-or-disable.md)
 ##### [Precision Touchpad Validation Guide](component-guidelines/precision-touchpad-validation-guide.md)
 ###### [General Testing Guidelines](component-guidelines/precision-touchpad-general-testing-guidelines.md)
-###### [Hardware Requirements and Vendor Information](component-guidelines/ptp-hardware-requirements-and-vendor-information.md)
 ###### [Precision Touchpad Tests](component-guidelines/precision-touchpad-tests.md)
 ####### [Aliasing](component-guidelines/aliasing.md)
 ####### [All Areas Reported](component-guidelines/all-areas-reported.md)
@@ -319,11 +319,10 @@
 #### [Additional Resources](component-guidelines/additional-resources.md)
 ### [Universal Serial Bus (USB)](component-guidelines/universal-serial-bus--usb-.md)
 
-
-
-
-## [Windows Hardware Compatibility Program for Windows 10, version 1607](compatibility/)
+## [Windows Hardware Compatibility Program for Windows 10, version 1709](compatibility/1709/)
 
 ## [Windows Hardware Compatibility Program for Windows 10, version 1703](compatibility/1703/)
+
+## [Windows Hardware Compatibility Program for Windows 10, version 1607](compatibility/)
 
 ## [Change history for Design](change-history-for-design.md)

@@ -11,9 +11,7 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # Enterprise shared storage
-
 
 Enterprise shared storage defines local data locations for line of business apps to share data.
 
@@ -21,24 +19,24 @@ The shared storage consists of two locations, where apps with the restricted cap
 
 These locations are set on the local drive:
 
--   \\Data\\SharedData\\Enterprise\\Persistent
--   \\Data\\SharedData\\Enterprise\\Non-Persistent
+* \\Data\\SharedData\\Enterprise\\Persistent
+* \\Data\\SharedData\\Enterprise\\Non-Persistent
 
-### Scenarios
+## Scenarios
 
 Enterprise shared storage provides support for the following scenarios.
 
--   You can share data within an instance of an app, between instances of the same app, or even between apps assuming they both have the appropriate capability and certificate.
--   You can store data on the local hard drive in the \\Data\\SharedData\\Enterprise\\Persistent folder and it persists even after the device has been reset. 
--   -   Manipulate files, including read, write, and delete of files on a device via Mobile Device Management (MDM) service. For more information on how to use enterprise shared storage through the MDM service, see [EnterpriseExtFileSystem CSP](http://go.microsoft.com/fwlink/?LinkId=699333).
+* You can share data within an instance of an app, between instances of the same app, or even between apps assuming they both have the appropriate capability and certificate.
+* You can store data on the local hard drive in the \\Data\\SharedData\\Enterprise\\Persistent folder and it persists even after the device has been reset.
+* Manipulate files, including read, write, and delete of files on a device via Mobile Device Management (MDM) service. For more information on how to use enterprise shared storage through the MDM service, see [EnterpriseExtFileSystem CSP](http://go.microsoft.com/fwlink/?LinkId=699333).
 
-### Access enterprise shared storage
+## Access enterprise shared storage
 
 The following example shows how to declare the capability to access enterprise shared storage in the package manifest, and how to access the shared storage folders by using the Windows.Storage.StorageFolder class.
 
 In your app package manifest, include the following capability:
 
-```
+```xml
 <Package
   xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10"
   xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest"
@@ -55,7 +53,7 @@ In your app package manifest, include the following capability:
 
 To access the shared data location, your app would use the following code.
 
-```
+```powershell
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -78,14 +76,3 @@ IReadOnlyList<StorageFile> sortedItems =
 foreach (StorageFile file in sortedItems)
     Debug.WriteLine(file.Name + ", " + file.DateCreated);
 ```
-
-
-
- 
-
-
-
-
-
-
-

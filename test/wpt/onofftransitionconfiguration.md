@@ -14,22 +14,20 @@ ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-# OnOffTransitionConfiguration
 
+# OnOffTransitionConfiguration
 
 Represents an on/off transition configuration.
 
+
 ## Element Hierarchy
 
+* \<[WindowsPerformanceRecorder](windowsperformancerecorder.md)\>
+  * \<[OnOffTransitionConfigurations](onofftransitionconfigurations.md)\>
+    * \<**OnOffTransitionConfiguration**\>
 
-&lt;[WindowsPerformanceRecorder](windowsperformancerecorder.md)&gt;
-
-     &lt;[OnOffTransitionConfigurations](onofftransitionconfigurations.md)&gt;
-
-          &lt;**OnOffTransitionConfiguration**&gt;
 
 ## Syntax
-
 
 ```
 <OnOffTransitionConfiguration Id = IdType
@@ -46,138 +44,41 @@ Represents an on/off transition configuration.
 </OnOffTransitionConfiguration>
 ```
 
-## Attributes and Elements
 
+## Attributes and Elements
 
 ### Attributes
 
-<table>
-<colgroup>
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Attribute</th>
-<th>Description</th>
-<th>Data type</th>
-<th>Required</th>
-<th>Default</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><strong>Id</strong></p></td>
-<td><p>Uniquely identifies the on/off transition configuration.</p></td>
-<td><p>String that must have at least one character and cannot contain colons (:) or spaces.</p></td>
-<td><p>Yes</p></td>
-<td><p></p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Name</strong></p></td>
-<td><p>Indicates the name of the configuration.</p></td>
-<td><p>string</p></td>
-<td><p>Yes</p></td>
-<td><p></p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Type</strong></p></td>
-<td><p>Indicates the type of on/off transition.</p></td>
-<td><p>This attribute can have one of the following values:</p>
-<ul>
-<li><p>On/Off - Boot</p></li>
-<li><p>On/Off - HybridBoot</p></li>
-<li><p>On/Off - Shutdown</p></li>
-<li><p>On/Off - RebootCycle</p></li>
-<li><p>On/Off - Standby/Resume</p></li>
-<li><p>On/Off - Hibernate/Resume</p></li>
-</ul></td>
-<td><p>Yes</p></td>
-<td><p></p></td>
-</tr>
-</tbody>
-</table>
+| Attribute | Description                                              | Data type                                                                                                                                                                                                                                        | Required | Default |
+| :-------- | :------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------- | :------ |
+| **Id**    | Uniquely identifies the on/off transition configuration. | String that must have at least one character and cannot contain colons (:) or spaces.                                                                                                                                                            | Yes      |         |
+| **Name**  | Indicates the name of the configuration.                 | string                                                                                                                                                                                                                                           | Yes      |         |
+| **Type**  | Indicates the type of on/off transition.                 | This attribute can have one of the following values: <ul> <li>On/Off - Boot</li> <li>On/Off - HybridBoot</li> <li>On/Off - Shutdown</li> <li>On/Off - RebootCycle</li> <li>On/Off - Standby/Resume</li> <li>On/Off - Hibernate/Resume</li> </ul> | Yes      |         |
 
- 
 
 ### Child Elements
 
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-<th>Description</th>
-<th>Requirement</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>[PrepareSystem](preparesystem.md)</p></td>
-<td><p>Indicates whether to prepare the system for an on/off transition.</p></td>
-<td><p>Required, exactly 1.</p></td>
-</tr>
-<tr class="even">
-<td><p>[NumberOfRuns](numberofruns.md)</p></td>
-<td><p>Indicates the number of runs in the on/off transition.</p></td>
-<td><p>Required, exactly 1.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[PostBootDelay](postbootdelay.md)</p></td>
-<td><p>Indicates the delay after booting.</p></td>
-<td><p>Optional, zero or 1.</p></td>
-</tr>
-<tr class="even">
-<td><p>[WakeupDelay](wakeupdelay.md)</p></td>
-<td><p>Indicates the delay when emerging from a sleep state.</p></td>
-<td><p>Optional, zero or 1.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[TransitionTag](transitiontag.md)</p></td>
-<td><p>Indicates the transition tag.</p></td>
-<td><p>Optional, zero or 1.</p></td>
-</tr>
-</tbody>
-</table>
+| Element                           | Description                                                       | Requirement          |
+| :-------------------------------- | :---------------------------------------------------------------- | :------------------- |
+| [PrepareSystem](preparesystem.md) | Indicates whether to prepare the system for an on/off transition. | Required, exactly 1. |
+| [NumberOfRuns](numberofruns.md)   | Indicates the number of runs in the on/off transition.            | Required, exactly 1. |
+| [PostBootDelay](postbootdelay.md) | Indicates the delay after booting.                                | Optional, zero or 1. |
+| [WakeupDelay](wakeupdelay.md)     | Indicates the delay when emerging from a sleep state.             | Optional, zero or 1. |
+| [TransitionTag](transitiontag.md) | Indicates the transition tag.                                     | Optional, zero or 1. |
 
- 
 
 ### Parent Elements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>[OnOffTransitionConfigurations](onofftransitionconfigurations.md)</p></td>
-<td><p>Represents a collection of on/off transition.</p></td>
-</tr>
-</tbody>
-</table>
+| Element                                                           | Description                                   |
+| :---------------------------------------------------------------- | :-------------------------------------------- |
+| [OnOffTransitionConfigurations](onofftransitionconfigurations.md) | Represents a collection of on/off transition. |
 
- 
 
 ## Example
 
-
 The following code example shows how to configure this element.
 
-```
+```xml
 <OnOffTransitionConfiguration
   Id="OnOffTransitionConfiguration_Default_Boot"
   Name="OnOffTransitionConfiguration_Default_Boot"
@@ -190,18 +91,8 @@ The following code example shows how to configure this element.
 </OnOffTransitionConfiguration>
 ```
 
+
 ## Related topics
 
-
 [Elements](elements.md)
-
- 
-
- 
-
-
-
-
-
-
 

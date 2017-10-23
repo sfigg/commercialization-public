@@ -11,9 +11,7 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # Modify global settings
-
 
 The following sample Windows PowerShell scripts use the Windows Management Instrumentation (WMI) providers to modify global settings for Keyboard Filter.
 
@@ -25,8 +23,7 @@ In the second script, the function **Set-ForceOffAccessibility** modifies the va
 
 ## Set-DisableKeyboardFilterForAdministrators.ps1
 
-
-```
+```powershell
 #
 # Copyright (C) Microsoft. All rights reserved.
 #
@@ -100,8 +97,7 @@ Set-DisableKeyboardFilterForAdministrators $On
 
 ## Set-ForceOffAccessibility.ps1
 
-
-```
+```powershell
 #
 # Copyright (C) Microsoft. All rights reserved.
 #
@@ -173,20 +169,8 @@ Set-ForceOffAccessibility $Enabled
 
 ## Related topics
 
-
 [Windows PowerShell script samples for keyboard filter](keyboardfilter-powershell-script-samples.md)
 
 [WEKF\_Settings](wekf-settings.md)
 
 [Keyboard filter](keyboardfilter.md)
-
- 
-
- 
-
-
-
-
-
-
-

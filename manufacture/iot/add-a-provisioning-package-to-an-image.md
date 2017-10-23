@@ -54,7 +54,7 @@ For this lab, we'll use the ProductB, that includes the default app (Bertha), wh
 8.  Export the provisioning package. For example, click **Export &gt; Provisioning Package &gt; Next &gt; (Uncheck the Encrypt Package box) &gt; Next &gt;  Build**. (To learn more, see [Export a provisioning package](https://docs.microsoft.com/windows/configuration/provisioning-packages/provisioning-create-package#build-package). )
 
     >[!IMPORTANT]
-    >When you make any changes to a provisioning package, Windows Configuration Designer increments the version number in the provisioning file (customizations.xml). The version number is not major.minor, it is a number with a decimal point. For example, 1.19 is a lower version than 1.2.
+    >When you make any changes to a provisioning package, Windows Configuration Designer increments the version number in the provisioning file (customizations.xml). Starting with **Windows 10 release 1709**, the version number for provisioning package is also a four part number, same as the regular packaging version. In previous releases (prior to release 1709), the version number is not major.minor, it is a number with a decimal point. For example, 1.19 is a lower version than 1.2.
 
 9.  At the **All done!** page, click the link to the **Output location**.
 
@@ -72,26 +72,20 @@ For this lab, we'll use the ProductB, that includes the default app (Bertha), wh
 
     ``` xml
     <?xml version="1.0" encoding="utf-8"?>
-      <Package xmlns="urn:Microsoft.WindowsPhone/PackageSchema.v8.00"
-        Owner="$(OEMNAME)"
-        OwnerType="OEM"
-        ReleaseType="Production"
-        Platform="$(BSPARCH)"
-        Component="Provisioning"
-        SubComponent="Auto">
-        <Components>
-           <OSComponent>
-           <Files>
-            <!--
-            Source : Provisioning is product specific, so copied from the Product directory
-            Destination : Auto provisioning folder which is C:\Windows\Provisioning\Packages
-            -->
-            <File Source="$(PRJDIR)\Products\$(PROD)\prov\$(PROD)Prov.ppkg"
-                    DestinationDir="$(runtime.windows)\Provisioning\Packages" Name="ProvAuto.ppkg"/>
-            </Files>
-           </OSComponent>
-        </Components>
-    </Package>
+    <identity xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        name="Auto" namespace="Provisioning" owner="$(OEMNAME)"
+        legacyName="$(OEMNAME).Provisioning.Auto" xmlns="urn:Microsoft.CompPlat/ManifestSchema.v1.00">
+        <onecorePackageInfo
+            targetPartition="MainOS"
+            releaseType="Production"
+            ownerType="OEM" />
+        <files>
+            <file
+                destinationDir="$(runtime.windows)\Provisioning\Packages"
+                source="$(PRJDIR)\Products\$(PROD)\prov\$(PROD)Prov.ppkg"
+                name="ProvAuto.ppkg" />
+        </files>
+    </identity>
     ```
 
 2.  Make sure that the package definition file **%OEM\_NAME%.Provisioning.Auto.cab"** and the feature ID: **OEM\_ProvAuto** are referenced in the common feature manifest, C:\\IoT-ADK-AddonKit\\Common\\Packages\\OEMCommonFM.xml:
@@ -100,9 +94,8 @@ For this lab, we'll use the ProductB, that includes the default app (Bertha), wh
     <PackageFile Path="%PKGBLD_DIR%" Name="%OEM_NAME%.Provisioning.Auto.cab">
       <FeatureIDs>
         <FeatureID>OEM_ProvAuto</FeatureID>
-        <FeatureID>OEMCommon_ALL</FeatureID>
       </FeatureIDs>
-    </PackageFile>    
+    </PackageFile>
     ```
 
 3.  Update the test configuration file C:\\IoT-ADK-AddonKit\\Source-_<arch_>\\Products\\ProductB\\TestOEMInput.xml:

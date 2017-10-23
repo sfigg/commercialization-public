@@ -11,19 +11,17 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # Complementary features to Custom Logon
-
 
 You may want to use or change some of the following features in conjunction with Custom Logon to complete the user experience.
 
-### Power button
+## Power button
 
 We recommend that you remove the power button from the Welcome screen and block the physical power button so that a user cannot turn off the device when using assigned access or Shell Launcher.
 
 Go to **Power Options** &gt; **Choose what the power button does**, change the setting to **Do nothing**, and then **Save changes**.
 
-### <a href="" id="remove-buttons"></a>Welcome screen
+## <a href="" id="remove-buttons"></a>Welcome screen
 
 **To remove buttons from the Welcome screen**
 
@@ -72,9 +70,7 @@ The following table shows the possible values. To disable multiple Welcome scree
 </tbody>
 </table>
 
- 
-
-In the following image of the crtl + alt + del screen, you can see the Switch user button highlighted by a light green outline, the Language button highlighted by an orange outline, the Ease of Access button highlighted by a red outline, and the power button highlighted by a yellow outline. If you disable these buttons, they are hidden from the UI.
+In the following image of the `[ctrl + alt + del]` screen, you can see the Switch user button highlighted by a light green outline, the Language button highlighted by an orange outline, the Ease of Access button highlighted by a red outline, and the power button highlighted by a yellow outline. If you disable these buttons, they are hidden from the UI.
 
 ![custom logon screen](images/customlogoncad.jpg)
 
@@ -84,26 +80,12 @@ You can remove the Wireless UI option from the Welcome screen by using Group Pol
 
 **To remove Wireless UI from the Welcome screen**
 
-1.  From a command prompt, run gpedit.msc to open the Local Group Policy Editor.
-
-2.  In the Local Group Policy Editor, under **Computer Configuration**, expand **Administrative Templates**, expand **System**, and then tap or click **Logon**.
-
-3.  Double-tap or click **Do not display network selection UI**.
+1. From a command prompt, run gpedit.msc to open the Local Group Policy Editor.
+1. In the Local Group Policy Editor, under **Computer Configuration**, expand **Administrative Templates**, expand **System**, and then tap or click **Logon**.
+1. Double-tap or click **Do not display network selection UI**.
 
 ## Related topics
-
 
 [Custom Logon](custom-logon.md)
 
 [Troubleshooting Custom Logon](troubleshooting-custom-logon.md)
-
- 
-
- 
-
-
-
-
-
-
-

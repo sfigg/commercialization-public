@@ -14,30 +14,24 @@ ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-# SystemProvider
 
+# SystemProvider
 
 Describes the configuration to enable the kernel-mode provider. The system provider definition specifies what system keywords, stacks, and pool tags to enable.
 
+
 ## Element Hierarchy
 
+* \<[WindowsPerformanceRecorder](windowsperformancerecorder.md)\>
+  * \<[Profiles](profiles.md)\>
+    * \<**SystemProvider**\>
+    * \<[Profile](profile-wpr.md)\>
+      * \<[Collectors](collectors.md)\>
+        * \<[SystemCollectorId](systemcollectorid.md)\>
+          * \<**SystemProvider**\>
 
-&lt;[WindowsPerformanceRecorder](windowsperformancerecorder.md)&gt;
-
-     &lt;[Profiles](profiles.md)&gt;
-
-          &lt;**SystemProvider**&gt;
-
-          &lt;[Profile](profile-wpr.md)&gt;
-
-               &lt;[Collectors](collectors.md)&gt;
-
-                    &lt;[SystemCollectorId](systemcollectorid.md)&gt;
-
-                            &lt;**SystemProvider**&gt;
 
 ## Syntax
-
 
 ```
 <SystemProvider Id   = IdType
@@ -51,120 +45,43 @@ Describes the configuration to enable the kernel-mode provider. The system provi
 </SystemProvider>
 ```
 
+
 ## Attributes and Elements
 
 
 ### Attributes
 
-<table>
-<colgroup>
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Attribute</th>
-<th>Description</th>
-<th>Data type</th>
-<th>Required</th>
-<th>Default</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><strong>Id</strong></p></td>
-<td><p>Uniquely identifies the system provider.</p></td>
-<td><p>String that must have at least one character and cannot contain colons (:) or spaces.</p></td>
-<td><p>Yes</p></td>
-<td><p></p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Base</strong></p></td>
-<td><p>Indicates the base of the system provider. Derived providers have all the attributes of the base provider by default. These can be overridden by explicitly specifying them in the derived provider.</p></td>
-<td><p>string</p></td>
-<td><p>No</p></td>
-<td><p></p></td>
-</tr>
-</tbody>
-</table>
+| Attribute | Description                                                                                                                                                                                          | Data type                                                                             | Required | Default |
+| :-------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------ | :------- | :------ |
+| **Id**    | Uniquely identifies the system provider.                                                                                                                                                             | String that must have at least one character and cannot contain colons (:) or spaces. | Yes      |         |
+| **Base**  | Indicates the base of the system provider. Derived providers have all the attributes of the base provider by default. These can be overridden by explicitly specifying them in the derived provider. | string                                                                                | No       |         |
 
- 
 
 ### Child Elements
 
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-<th>Description</th>
-<th>Requirement</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>[Keywords (in SystemProvider)](keywords--in-systemprovider-.md)</p></td>
-<td><p>Represents a collection of keywords and custom keywords.</p></td>
-<td><p>Required, exactly 1.</p></td>
-</tr>
-<tr class="even">
-<td><p>[Stacks](stacks.md)</p></td>
-<td><p>Represents a collection of stacks.</p></td>
-<td><p>Required, exactly 1.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[PoolTags](pooltags.md)</p></td>
-<td><p>Represents a collection of pool tags.</p></td>
-<td><p>Required, exactly 1.</p></td>
-</tr>
-</tbody>
-</table>
+| Element                                                         | Description                                              | Requirement          |
+| :-------------------------------------------------------------- | :------------------------------------------------------- | :------------------- |
+| [Keywords (in SystemProvider)](keywords--in-systemprovider-.md) | Represents a collection of keywords and custom keywords. | Required, exactly 1. |
+| [Stacks](stacks.md)                                             | Represents a collection of stacks.                       | Required, exactly 1. |
+| [PoolTags](pooltags.md)                                         | Represents a collection of pool tags.                    | Required, exactly 1. |
 
- 
 
 ### Parent Elements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>[Profiles](profiles.md)</p></td>
-<td><p>Represents a collection of collectors, providers, and profiles.</p></td>
-</tr>
-<tr class="even">
-<td><p>[SystemCollectorId](systemcollectorid.md)</p></td>
-<td><p>Represents a system collector identifier.</p></td>
-</tr>
-</tbody>
-</table>
+| Element                                   | Description                                                     |
+| :---------------------------------------- | :-------------------------------------------------------------- |
+| [Profiles](profiles.md)                   | Represents a collection of collectors, providers, and profiles. |
+| [SystemCollectorId](systemcollectorid.md) | Represents a system collector identifier.                       |
 
- 
 
 ## Remarks
 
-
 For information about how to define pool tags, see [PoolTag](pooltag.md).
+
 
 ## Example
 
-
-```
+```xml
 <SystemProvider Id="system-provider">
   <Keywords>
     <Keyword Value="ProcessThread"/>
@@ -185,18 +102,8 @@ For information about how to define pool tags, see [PoolTag](pooltag.md).
 </SystemProvider>
 ```
 
+
 ## Related topics
 
-
 [Elements](elements.md)
-
- 
-
- 
-
-
-
-
-
-
 

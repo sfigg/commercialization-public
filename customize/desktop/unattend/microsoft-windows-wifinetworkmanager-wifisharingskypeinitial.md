@@ -1,6 +1,6 @@
 ---
 title: WiFiSharingSkypeInitial
-description: Controls how Wi-Fi networks are shared with the user's Skype contacts.This setting has been deprecated in Windows 10, version 1607.
+description: Controls how Wi-Fi networks are shared with the user's Skype contacts.This setting has been deprecated.
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
@@ -19,7 +19,7 @@ ms.technology: windows-oem
 
 Controls how Wi-Fi networks are shared with the user's Skype contacts.
 
-**This setting has been deprecated in Windows 10, version 1607**. The information about this deprecated setting is provided for reference only. The Wi-Fi Sense credential sharing feature has been removed.
+**This setting has been deprecated**. The information about this deprecated setting is provided for reference only. The Wi-Fi Sense credential sharing feature has been removed.
 
 This is an initial setting and will be overwritten when settings are pushed to the device by the cloud service.
 

@@ -38,7 +38,7 @@ Building a great Windows device starts with selecting the right components. This
 </tr>
 <tr class="odd">
 <td><p>[Bluetooth](bluetooth.md)</p></td>
-<td><p>This topic provides a list of new features and recommendations for Bluetooth in Windows 10. For power-efficient support for Bluetooth LE beacons and related scenarios, we recommend that OEMs use Bluetooth components capable of Hardware Offload and able to support the [Microsoft-defined Host Controller Interface (HCI) extension](https://msdn.microsoft.com/library/windows/hardware/dn917903.aspx).</p></td>
+<td><p>This topic provides a list of features and recommendations for Bluetooth in Windows 10. For power-efficient support for Bluetooth LE beacons and related scenarios, we recommend that OEMs use Bluetooth components capable of Hardware Offload and able to support the [Microsoft-defined Host Controller Interface (HCI) extension](https://msdn.microsoft.com/library/windows/hardware/dn917903.aspx).</p></td>
 </tr>
 <tr class="even">
 <td><p>[Display](display.md)</p></td>
@@ -50,7 +50,7 @@ Building a great Windows device starts with selecting the right components. This
 </tr>
 <tr class="even">
 <td><p>[Graphics](graphics.md)</p></td>
-<td><p>This topic covers new guidelines for Graphics in Windows 10.</p></td>
+<td><p>This topic covers guidelines for Graphics in Windows 10.</p></td>
 </tr>
 <tr class="odd">
 <td><p>[Mobile Broadband](mobile-broadband.md)</p></td>

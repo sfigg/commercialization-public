@@ -8,39 +8,27 @@ ms.assetid: 4690d6bb-f3e1-4d84-a425-da4cfa82c0f6
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
 ms.author: alhopper
-ms.date: 05/02/2017
+ms.date: 10/17/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # Model
 
+> [!Important]
+> Model is deprecated in Windows 10, version 1709. The Model name displayed in the Get Help app is now based on your System Product Name value, as defined in System Information (msinfo32.exe).
 
 `Model` specifies the name of the computer model.
 
 ## Values
 
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><em>Model_name</em></p></td>
-<td><p>Specifies the name of the computer model. <em>Model_name</em> is a string with a maximum length of 256 characters.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Value                   | Description                                                                           |
+|:------------------------|:--------------------------------------------------------------------------------------|
+| *model_name*            | **Deprecated in Windows 10, version 1709**. Specifies the name of the computer model. *Model_name* is a string with a maximum length of 256 characters.                                                                                         |
 
 This string type supports empty elements.
 
 ## Valid Configuration Passes
-
 
 auditUser
 
@@ -54,42 +42,24 @@ specialize
 
 ## Parent Hierarchy
 
-
 [Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [OEMInformation](microsoft-windows-shell-setup-oeminformation.md) | **Model**
 
 ## Applies To
-
 
 For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md).
 
 ## XML Example
 
+The following XML shows how to set OEM information.
 
-The following XML output shows how to set OEM information.
-
-```
+```xml
 <OEMInformation>
-   <HelpCustomized>false</HelpCustomized>
-   <Manufacturer>OEM name</Manufacturer>
-   <Model>model name</Model>
-   <SupportHours>hours</SupportHours>
-   <SupportPhone>123-456-7890</SupportPhone>
-   <SupportURL>http://www.contoso.com</SupportURL>
+   <SupportProvider>Contoso Support</SupportProvider>
+   <SupportAppURL>contoso-contact-support</SupportAppURL>
+   <SupportURL>http://www.fabrikam.com/support</SupportURL>
 </OEMInformation>
 ```
 
 ## Related topics
 
-
 [OEMInformation](microsoft-windows-shell-setup-oeminformation.md)
-
- 
-
- 
-
-
-
-
-
-
-

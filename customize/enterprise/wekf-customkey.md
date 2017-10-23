@@ -11,16 +11,13 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # WEKF\_CustomKey
-
 
 Adds or removes custom-defined key combinations.
 
 ## Syntax
 
-
-```
+```powershell
 class WEKF_CustomKey {
     [Static] uint32 Add(
         [In] string CustomKey
@@ -35,7 +32,6 @@ class WEKF_CustomKey {
 ```
 
 ## Members
-
 
 The following tables list any methods and properties that belong to this class.
 
@@ -63,8 +59,6 @@ The following tables list any methods and properties that belong to this class.
 </tr>
 </tbody>
 </table>
-
- 
 
 ### <a href="" id="pro"></a>Properties
 
@@ -122,8 +116,6 @@ The following tables list any methods and properties that belong to this class.
 </tbody>
 </table>
 
- 
-
 ### Remarks
 
 You can specify key combinations by including the modifier keys in the name. The most common modifier names are “Ctrl”, “Shift”, “Alt”, and “Win”. You cannot block a combination of non-modifier keys. For example, you can block a key combination of “Ctrl+Shift+F”, but you cannot block a key combination of “A+D”.
@@ -134,10 +126,9 @@ When you specify the key combination to block, you must use the English names fo
 
 ## Example
 
-
 The following code demonstrates how to add or enable a custom key combination that Keyboard Filter will block by using the Windows Management Instrumentation (WMI) providers for Keyboard Filter. This example modifies the properties directly and does not call any of the methods defined in **WEKF\_CustomKey**.
 
-```
+```powershell
 <#
 .Synopsis
     This script shows how to use the WMI provider to enable and add 
@@ -167,7 +158,7 @@ function Enable-Custom-Key($Id) {
         instance of WEKF_CustomKey using Set-WMIInstance.
     .Example
         Enable-Custom-Key "Ctrl+V"
-        
+
         Enable filtering of the Ctrl + V sequence.
 #>
 
@@ -187,7 +178,7 @@ function Enable-Custom-Key($Id) {
             -class WEKF_CustomKey `
             -argument @{Id="$Id"} `
             @CommonParams | Out-Null
-        
+
         "Added Custom Filter $Id.";
     }
 }
@@ -202,31 +193,15 @@ Enable-Custom-Key "Shift+Numpad1"
 
 ## Requirements
 
-
-|                       |           |
-|-----------------------|-----------|
 | Windows Edition       | Supported |
+|:----------------------|:----------|
 | Windows 10 Home       | No        |
 | Windows 10 Pro        | No        |
 | Windows 10 Enterprise | Yes       |
 | Windows 10 Education  | Yes       |
 
- 
-
 ## Related topics
-
 
 [Keyboard Filter WMI provider reference](keyboardfilter-wmi-provider-reference.md)
 
 [Keyboard Filter key names](keyboardfilter-key-names.md)
-
- 
-
- 
-
-
-
-
-
-
-

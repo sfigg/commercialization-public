@@ -14,20 +14,19 @@ ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-# Profiles
 
+# Profiles
 
 Represents a collection of collectors, providers, and profiles.
 
+
 ## Element Hierarchy
 
+* \<[WindowsPerformanceRecorder](windowsperformancerecorder.md)\>
+  * \<**Profiles**\>
 
-&lt;[WindowsPerformanceRecorder](windowsperformancerecorder.md)&gt;
-
-     &lt;**Profiles**&gt;
 
 ## Syntax
-
 
 ```
 <Profiles>
@@ -44,6 +43,7 @@ Represents a collection of collectors, providers, and profiles.
 </Profiles>
 ```
 
+
 ## Attributes and Elements
 
 
@@ -51,102 +51,33 @@ Represents a collection of collectors, providers, and profiles.
 
 None.
 
+
 ### Child Elements
 
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-<th>Description</th>
-<th>Requirement</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>[SystemCollector](systemcollector.md)</p></td>
-<td><p>Represents a system collector.</p></td>
-<td><p>Optional, zero or more.</p></td>
-</tr>
-<tr class="even">
-<td><p>[EventCollector](eventcollector.md)</p></td>
-<td><p>Represents an event collector.</p></td>
-<td><p>Optional, zero or more.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[HeapEventCollector](heapeventcollector.md)</p></td>
-<td><p>Represents a heap event collector.</p></td>
-<td><p>Optional, zero or more.</p></td>
-</tr>
-<tr class="even">
-<td><p>[SystemProvider](systemprovider.md)</p></td>
-<td><p>Represents a system provider.</p></td>
-<td><p>Optional, zero or more.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[EventProvider](eventprovider.md)</p></td>
-<td><p>Represents an event provider.</p></td>
-<td><p>Optional, zero or more.</p></td>
-</tr>
-<tr class="even">
-<td><p>[HeapEventProvider](heapeventprovider.md)</p></td>
-<td><p>Represents a heap event provider.</p></td>
-<td><p>Optional, zero or more.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[Profile](profile-wpr.md)</p></td>
-<td><p>Represents a collection of problem categories and collectors.</p></td>
-<td><p>Required, 1 to 4.</p></td>
-</tr>
-</tbody>
-</table>
+| Element                                     | Description                                                   | Requirement             |
+| :------------------------------------------ | :------------------------------------------------------------ | :---------------------- |
+| [SystemCollector](systemcollector.md)       | Represents a system collector.                                | Optional, zero or more. |
+| [EventCollector](eventcollector.md)         | Represents an event collector.                                | Optional, zero or more. |
+| [HeapEventCollector](heapeventcollector.md) | Represents a heap event collector.                            | Optional, zero or more. |
+| [SystemProvider](systemprovider.md)         | Represents a system provider.                                 | Optional, zero or more. |
+| [EventProvider](eventprovider.md)           | Represents an event provider.                                 | Optional, zero or more. |
+| [HeapEventProvider](heapeventprovider.md)   | Represents a heap event provider.                             | Optional, zero or more. |
+| [Profile](profile-wpr.md)                   | Represents a collection of problem categories and collectors. | Required, 1 to 4.       |
 
- 
 
 ### Parent Elements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>[WindowsPerformanceRecorder](windowsperformancerecorder.md)</p></td>
-<td><p>Represents metadata about the authoring of the profile.</p></td>
-</tr>
-</tbody>
-</table>
+| Element                                                     | Description                                             |
+| :---------------------------------------------------------- | :------------------------------------------------------ |
+| [WindowsPerformanceRecorder](windowsperformancerecorder.md) | Represents metadata about the authoring of the profile. |
 
- 
 
 ## Remarks
 
-
 Only a single **Profiles** element can be defined in a **WindowsPerformanceRecorder** element.
+
 
 ## Related topics
 
-
 [Elements](elements.md)
-
- 
-
- 
-
-
-
-
-
-
 
