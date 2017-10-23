@@ -8,7 +8,7 @@ MSHAttr:
 
 # BitLocker drive encryption in Windows 10 for OEMs
 
-BitLocker drive encryption in Windows 10 consists of two parts: **BitLocker drive encryption** and **BitLocker automatic device encryption**. BitLocker drive encryption provides offline data and operating system protection by ensuring that the drive is not tampered with with the operating system is offline. BitLocker drive encryption uses a [Trusted Platform Module (TPM) 2.0](OEM-tpm.md) microchip, that support the Static Root of Trust Measurement as defined by the Trusted Computing Group. 
+BitLocker drive encryption in Windows 10 consists of two parts: **BitLocker drive encryption** and **BitLocker automatic device encryption**. BitLocker drive encryption provides offline data and operating system protection by ensuring that the drive is not tampered with with the operating system is offline. BitLocker drive encryption uses a [Trusted Platform Module (TPM) 2.0](OEM-tpm.md) microchip, that supports the Static Root of Trust Measurement as defined by the [Trusted Computing Group](https://trustedcomputinggroup.org/). 
 
 ## BitLocker drive encryption hardware requirements
 BitLocker drive encryption uses a system partition separate from the Windows partition. The BitLocker system partition must meet the following requirements.
