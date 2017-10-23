@@ -8,8 +8,9 @@ MSHAttr:
 
 # BitLocker drive encryption in Windows 10 for OEMs
 
-BitLocker drive encryption in Windows 10 consists of two parts. The first part is called BitLocker automatic device encryption. BitLocker automatic device encryption is automatically enabled with the right hardware configuration. 
+BitLocker drive encryption in Windows 10 consists of two parts. The first part is called BitLocker automatic device encryption. BitLocker automatic device encryption is automatically enabled with the right hardware configuration. When a user boots the PC for the first time and goes through the out-of-the-box experience, BitLocker automatic device encryption will automatically encrypt the operating system drive and any fixed data drive using BitLocker drive encryption.
 
+**Note:** BitLocker automatic device encryption is enabled only after users sign in with a **Microsoft Account** or an **Azure Active Directory** account. BitLocker automatic device encryption is not enabled with local accounts.
 
 
 ## BitLocker automatic device encryption hardware requirements
@@ -19,7 +20,7 @@ BitLocker automatic device encryption is enabled when:
 - **Platform Secure Boot** is enabled
 - **Direct memory access (DMA)** protections is enabled
 
-**Note:** BitLocker automatic device encryption is enabled only after users sign in with a **Microsoft Account** or an **Azure Active Directory** account. BitLocker automatic device encryption is not enabled with local accounts.
+
 
 The following list shows the hardware and tests that a device must pass before Windows 10 can enable Automatic BitLocker device encryption. If you want to create hardware that supports this capability, you must verify that your device passes these tests. 
 
