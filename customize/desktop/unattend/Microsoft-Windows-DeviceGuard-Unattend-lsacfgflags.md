@@ -13,18 +13,11 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # LsaCfgFlags
 
-
-Use to enable the Credential Guard, which uses virtualization-based security to isolate secrets so that only privileged system software can access them when they are stored on disk or in memory. For more information, see [Credential Guard]( http://go.microsoft.com/fwlink/p/?LinkId=623856).
-
-**Important**  You must first use DISM to add the virtualization-based security features before you apply this Unattend setting. For more information, see *Add the virtualization-based security features by using DISM* in [Credential Guard]( http://go.microsoft.com/fwlink/p/?LinkId=623856).
-
- 
+Use to enable the Credential Guard, which uses virtualization-based security to isolate secrets so that only privileged system software can access them when they are stored on disk or in memory. For more information, see [Credential Guard](https://docs.microsoft.com/en-us/windows/access-protection/credential-guard/credential-guard).
 
 ## Values
-
 
 <table>
 <colgroup>
@@ -54,33 +47,18 @@ Use to enable the Credential Guard, which uses virtualization-based security to 
 </tbody>
 </table>
 
- 
-
 ## Parent Hierarchy
-
 
 [Microsoft-Windows-DeviceGuard-Unattend](microsoft-windows-deviceguard-unattend.md) | **LsaCfgFlags**
 
 ## Valid Configuration Passes
 
-
 offlineServicing
 
 ## Applies To
-
 
 Windows 10 Enterprise
 
 Windows Server 2016
 
 For a list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-DeviceGuard-Unattend](microsoft-windows-deviceguard-unattend.md).
-
- 
-
- 
-
-
-
-
-
-
