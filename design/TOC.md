@@ -114,6 +114,7 @@
 ##### [Sample report descriptors](component-guidelines/radial-controller-sample-report-descriptors.md)
 
 ### [Security considerations for OEMs](device-experiences/OEM-security-considerations.md)
+#### [Most secure Windows 10 device](device-experiences/OEM-most-secure.md)
 #### [Secure boot](device-experiences/OEM-secure-boot.md)
 #### [Trusted Platform Module 2.0](device-experiences/OEM-TPM.md)
 #### [UEFI firmware requirements](device-experiences/OEM-UEFI.md)
