@@ -43,8 +43,7 @@ The following tests must pass before Windows 10 will enable Automatic BitLocker 
         2.	Excluding Thunderbolt, HSTI must report no non-allowed DMA busses.
         3.	If Thunderbolt is present, HSTI must report that Thunderbolt is configured securely (security level must be SL1 – “User Authorization” or higher).
 
-When the requirements as listed above are met, System Information indicates the system supports BitLocker automatic device encryption. This functionality is available in Windows 10, version 1703 at after. Here's how to check System Information. 
- 
+When the requirements as listed above are met, System Information indicates the system supports BitLocker automatic device encryption. This functionality is available in Windows 10, version 1703 or after. Here's how to check System Information. 
 
 1.	Click **Start**, and type **System information**
 2.	Right-click **System Information** app and click **Open as Administrator**. Allow the app to make changes to your device by clicking **Yes**. Some devices might require elevated permissions to view the encryption settings.
