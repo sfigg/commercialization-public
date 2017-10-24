@@ -10,7 +10,7 @@ ms.technology: windows-oem
 # Hardware and firmware standards for a secure Windows 10 device
 This document provice guidance for purchasing the most secure systems for Windows 10.  These standards are for general purpose desktops, laptops, tablets, 2-in-1’s, mobile workstations and desktops. This page applies specifically and uniquely for Windows 10 1709, Fall Creators Update. If you meet or exceed these standards, your device is able to provide the most secure experience. 
 
-Here are the hardware requirements for the most secure Windows 10 device.
+## Hardware
 
 | Feature | Requirement | Details |
 |---------|-------------|---------|
@@ -23,8 +23,17 @@ Here are the hardware requirements for the most secure Windows 10 device.
 | Platform boot verification | Systems must implement cryptographically verified platform boot | Intel Boot Guard in Verified Boot mode, or AMD Hardware Verified Boot, or an OEM equivalent mode with similar functionality |
 | RAM | Systems must have 8 gigabites or more of system RAM | |
 
-
-
+##Firmware
+| Feature | Requirement | Details |
+|---------|-------------|---------|
+| Standard | Systems must have firmware that implements Unified Extension Firmware Interface (UEFI) version 2.4 or newer | |
+| Class | Systems must have firmware that implements UEFI Class 2 or UEFI Class 3 | |
+| Code integrity | All drivers shipped inbox must be Hypervisor-based Code Integrity (HVCI) compliant | https://blogs.msdn.microsoft.com/windows_hardware_certification/2015/05/22/driver-compatibility-with-device-guard-in-windows-10/ |
+| Secure boot | Systems firmware must support UEFI Secure Boot and must have UEFI Secure Boot enabled by default | |
+| Secure MOR | Systems firmware must implement Secure MOR revision 2 | https://docs.microsoft.com/en-us/windows-hardware/drivers/bringup/device-guard-requirements |
+| Update mechanism | Systems must support the Windows UEFI Firmware Capsule Update specification | https://docs.microsoft.com/en-us/windows-hardware/drivers/bringup/windows-uefi-firmware-update-platform |
+| **Recommended, not required** Firmware Extension Table MAT | Systems must ship with the UEFI 2.6 MAT table configured | |
+| Firmware Extension Table WSMT | Systems must ship with the WSMT table configured | https://msdn.microsoft.com/en-us/library/windows/hardware/dn614617.aspx |
 
 
  
