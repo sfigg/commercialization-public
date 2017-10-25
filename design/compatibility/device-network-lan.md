@@ -728,7 +728,7 @@ See the Windows Driver Kit, "NDIS."
 
 **Description**
 
-Ethernet devices must support Jumbo Frames. MTU values in the User Interface must include the Ethernet header size of 14 Bytes. The “*JumboPacket” standardized keyword in the Windows Registry is currently used for setting the MTU size and should remain as an enumerable value with supported values being 1514, 4088, and 9014.
+Ethernet devices must support Jumbo Frames, and the Maximum Transmission Unit (MTU) values in the User Interface must include the Ethernet header size of 14 Bytes. The “\*JumboPacket” standardized keyword in the Windows Registry is currently used for determining the MTU size for the LSO feature. NDIS miniport drivers define this keyword’s value, which depends on the hardware requirements defined by the IHV, in their INF files. When reporting the miniport’s LSO capabilities to the OS at runtime, miniport drivers use the **MaxOffloadSize** member of the [NDIS_TCP_LARGE_SEND_OFFLOAD_V2](https://msdn.microsoft.com/library/windows/hardware/ff567884) structure to reflect the "\*JumboPacket" value. For more info on the “\*JumboPacket” keyword, see [Keywords That Can Be Edited](https://docs.microsoft.com/windows-hardware/drivers/network/keywords-that-can-be-edited).
 
 ### Device.Network.LAN.MTUSize.EncapOverhead
 
