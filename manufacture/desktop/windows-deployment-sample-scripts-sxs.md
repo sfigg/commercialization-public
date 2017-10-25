@@ -316,22 +316,6 @@ This script creates hard drive partitions, and applies a WIM to a PC. Unlike App
 @echo.
 @echo	This script is for use with FFUs that will be captured from
 @echo	drives that are smaller than the drive they will be applied
-@echo
-@echo UPDATE (JULY 2016):
-@echo * This script stops just after applying the image.
-@echo   This gives you an opportunity to add siloed provisioning packages (SPPs)
-@echo   so that you can include them in your recovery tools.
-@echo.
-@echo   After the script is complete, use apply-recovery.bat to finish
-@echo   setting up the recovery tools.
-@echo.
-@echo * This script creates a now includes support for the /EA variables for quicker
-@echo   image capture and recovery.
-@echo.
-@echo * This script now includes support for the /EA variables for quicker
-@echo   image capture and recovery.
-@echo.
-@echo * This script now checks to see if you're booted into Windows PE.
 @echo.
 @if not exist X:\Windows\System32 echo ERROR: This script is built to run in Windows PE.
 @if not exist X:\Windows\System32 goto END
@@ -384,7 +368,7 @@ W:\Windows\System32\bcdboot W:\Windows /s S:
 @echo       DISM /Apply-SiloedPackage /ImagePath:W:\ 
 @echo            /PackagePath:"D:\App1.spp" /PackagePath:"D:\App2.spp"  ...
 @echo   * Add a recovery partition and copy the recovery image:
-@echo       ApplyRecovery.bat
+@echo       ApplyRecovery-FFU.bat
 @echo   * Reboot:
 @echo       exit
 :END
@@ -585,6 +569,7 @@ set id=de94bba4-06d1-4d40-a16a-bfd50179d6ac
 gpt attributes=0x8000000000000001
 remove
 list volume
+exit
 ```
 
 ### HideRecoveryPartitions-BIOS.txt
@@ -596,6 +581,7 @@ select partition 3
 set id=27
 remove
 list volume
+exit
 ```
 
 ## <span id="Start_Layout"></span><span id="layoutmodification.xml"></span><span id="LAYOUTMODIFICATION.XML"></span>Start layout (LayoutModification.xml)
