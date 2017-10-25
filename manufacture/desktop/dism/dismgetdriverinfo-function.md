@@ -1,19 +1,13 @@
 ---
 title: DismGetDriverInfo function
 description: Gets information about an .inf file in a specified image.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/desktop'
 ms.assetid: 2f69fe15-d9a0-4282-8898-d5af06deb397
 keywords: ["DismGetDriverInfo function"]
-topic_type:
-- apiref
-api_name:
-- DismGetDriverInfo
-api_location:
-- DismAPI.dll
-api_type:
-- DllExport
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # DismGetDriverInfo function
@@ -24,6 +18,11 @@ api_type:
 Gets information about an .inf file in a specified image.
 
 Syntax
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ------
 
 ```ManagedCPlusPlus
@@ -37,6 +36,11 @@ HRESULT WINAPI DismGetDriverInfo(
 ```
 
 Parameters
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ----------
 
 *Session* \[in\]  
@@ -55,6 +59,11 @@ Returns the number of [**DismDriver**](dismdriver-structure.md) structures that 
 Optional. A pointer to the address of a [**DismDriverPackage**](dismdriverpackage-structure.md) structure.
 
 Return value
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ------------
 
 Returns `S_OK` on success.
@@ -97,6 +106,11 @@ hr = DismGetDriverInfo(Session, L"usb.inf", &amp;DriverInfo, &amp;Count, &amp;Dr
  
 
 Requirements
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ------------
 
 <table>

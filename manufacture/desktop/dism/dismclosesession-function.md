@@ -1,19 +1,13 @@
 ---
 title: DismCloseSession function
 description: Closes a DISMSession created by DismOpenSession. This function does not unmount the image. To unmount the image, use the DismUnmountImage once all sessions are closed.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/desktop'
 ms.assetid: c52b57e3-e2d3-47f0-80a9-65d568e01ae3
 keywords: ["DismCloseSession function"]
-topic_type:
-- apiref
-api_name:
-- DismCloseSession
-api_location:
-- DismAPI.dll
-api_type:
-- DllExport
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # DismCloseSession function
@@ -24,6 +18,11 @@ api_type:
 Closes a [DISMSession](dismsession.md) created by [**DismOpenSession**](dismopensession-function.md). This function does not unmount the image. To unmount the image, use the [**DismUnmountImage**](dismunmountimage-function.md) once all sessions are closed.
 
 Syntax
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ------
 
 ```ManagedCPlusPlus
@@ -33,12 +32,22 @@ HRESULT WINAPI DismCloseSession(
 ```
 
 Parameters
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ----------
 
 *Session* \[in\]  
 A valid [DismSession](dismsession.md). The DismSession must be associated with an image. You can associate a session with an image by using the [**DismOpenSession**](dismopensession-function.md).
 
 Return value
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ------------
 
 Returns `S_OK` on success.
@@ -79,6 +88,11 @@ hr = DismCloseSession( session );
  
 
 Requirements
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ------------
 
 <table>

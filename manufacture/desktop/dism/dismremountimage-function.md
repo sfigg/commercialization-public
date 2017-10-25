@@ -1,19 +1,13 @@
 ---
 title: DismRemountImage function
 description: Remounts a previously mounted Windows image from the .wim or .vhd file.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/desktop'
 ms.assetid: 3cfbff39-569c-456e-b0ff-dd762e9c915f
 keywords: ["DismRemountImage function"]
-topic_type:
-- apiref
-api_name:
-- DismRemountImage
-api_location:
-- DismAPI.dll
-api_type:
-- DllExport
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # DismRemountImage function
@@ -26,6 +20,11 @@ Remounts a previously mounted Windows image from the .wim or .vhd file at the pa
 You can use the **DismRemountImage** function when the image is in the **DismMountStatusNeedsRemount** state, as described by the [DismMountStatus](dismmountstatus-enumeration.md) enumeration. The image may enter this state if it is mounted and then a reboot occurs.
 
 Syntax
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ------
 
 ```ManagedCPlusPlus
@@ -35,12 +34,22 @@ HRESULT WINAPI DismRemountImage(
 ```
 
 Parameters
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ----------
 
 *MountPath* \[in\]  
 A relative or absolute path to the mount directory of the image.
 
 Return value
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ------------
 
 A relative or absolute path to the mount directory of the image.
@@ -77,6 +86,11 @@ hr = DismRemountImage(L"C:\\Mount\\");
  
 
 Requirements
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ------------
 
 <table>

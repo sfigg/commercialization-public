@@ -1,19 +1,13 @@
 ---
 title: DismPackageInfo structure
 description: Describes detailed package information such as the client used to install the package, the date and time that the package was installed, and support information.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/desktop'
 ms.assetid: e52cd827-11e0-43c2-8f4a-ecc3cbc14585
 keywords: ["DismPackageInfo structure"]
-topic_type:
-- apiref
-api_name:
-- DismPackageInfo
-api_location:
-- DismAPI.h
-api_type:
-- HeaderDef
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # DismPackageInfo structure
@@ -22,6 +16,11 @@ api_type:
 Describes detailed package information such as the client used to install the package, the date and time that the package was installed, and support information.
 
 Syntax
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ------
 
 ```ManagedCPlusPlus
@@ -52,6 +51,11 @@ typedef struct _DismPackageInfo {
 ```
 
 Members
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 -------
 
 **PackageName**  
@@ -143,6 +147,11 @@ The number of elements in the *Feature* array.
  
 
 Requirements
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ------------
 
 <table>

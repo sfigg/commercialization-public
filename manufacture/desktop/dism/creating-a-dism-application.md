@@ -1,10 +1,12 @@
 ---
 title: Creating a DISM Application
 description: Creating a DISM Application
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/desktop'
 ms.assetid: 9b75cfca-7931-4478-8cdc-21f18504f383
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # Creating a DISM Application

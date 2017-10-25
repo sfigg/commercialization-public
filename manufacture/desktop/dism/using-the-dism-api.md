@@ -1,10 +1,12 @@
 ---
 title: Using the DISM API
 description: Using the DISM API
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/desktop'
 ms.assetid: 56c089b7-d1d4-4452-a31d-610ce3f96d75
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # Using the DISM API

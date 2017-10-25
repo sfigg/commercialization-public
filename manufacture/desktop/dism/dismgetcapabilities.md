@@ -1,19 +1,13 @@
 ---
 title: DismGetCapabilities function
 description: Gets DISM capabilities.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/desktop'
 ms.assetid: CB9E831C-A31B-4A46-91ED-756CE6F19B58
 keywords: ["DismGetCapabilities function"]
-topic_type:
-- apiref
-api_name:
-- DismGetCapabilities
-api_location:
-- DismAPI.dll
-api_type:
-- DllExport
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # DismGetCapabilities function
@@ -24,6 +18,11 @@ api_type:
 Gets DISM capabilities.
 
 Syntax
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ------
 
 ```ManagedCPlusPlus
@@ -35,6 +34,11 @@ HRESULT WINAPI DismGetCapabilities(
 ```
 
 Parameters
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ----------
 
 *Session* \[in\]  
@@ -47,6 +51,11 @@ The name of the specified capability.
 Pointer that will receive the info of capability.
 
 Return value
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ------------
 
 Returns `S_OK` on success.
@@ -85,6 +94,11 @@ hr = DismGetCapabilities(Session, &amp;Capability, &amp;CapabilityCount);
  
 
 Requirements
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ------------
 
 <table>

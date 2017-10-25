@@ -1,10 +1,12 @@
 ---
 title: DISM API Troubleshooting
 description: DISM API Troubleshooting
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/desktop'
 ms.assetid: 5fae3967-87d7-4e80-8b52-15a9a38f592f
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # DISM API Troubleshooting

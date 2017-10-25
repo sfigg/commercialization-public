@@ -1,17 +1,13 @@
 ---
 title: DismGetImageInfo function
 description: Returns an array of DismImageInfo structures that describe the images in a .wim or .vhd file.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/desktop'
 ms.assetid: 1b8570a4-1bdd-4c36-bd95-8b693ca61737
 keywords: ["DismGetImageInfo function"]
-topic_type:
-- apiref
-api_name:
-- DismGetImageInfo
-api_type:
-- NA
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # DismGetImageInfo function
@@ -22,6 +18,11 @@ api_type:
 Returns an array of [DismImageInfo](dismimageinfo-structure.md) structures that describe the images in a .wim or .vhd file.
 
 Syntax
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ------
 
 ```ManagedCPlusPlus
@@ -33,6 +34,11 @@ HRESULT WINAPI DismGetImageInfo(
 ```
 
 Parameters
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ----------
 
 *ImageFilePath* \[in\]  
@@ -45,6 +51,11 @@ A pointer to the address of an array of [DismImageInfo](dismimageinfo-structure.
 The number of [DismImageInfo](dismimageinfo-structure.md) structures that are returned.
 
 Return value
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ------------
 
 Returns **S\_OK** on success.

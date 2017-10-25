@@ -1,19 +1,13 @@
 ---
 title: DismImageInfo structure
 description: Describes the metadata of an image.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/desktop'
 ms.assetid: acd4cc5c-03f5-457b-a0a6-53034d80dc75
 keywords: ["DismImageInfo structure"]
-topic_type:
-- apiref
-api_name:
-- DismImageInfo
-api_location:
-- DismAPI.h
-api_type:
-- HeaderDef
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # DismImageInfo structure
@@ -22,6 +16,11 @@ api_type:
 Describes the metadata of an image.
 
 Syntax
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ------
 
 ```ManagedCPlusPlus
@@ -53,6 +52,11 @@ typedef struct _DismImageInfo {
 ```
 
 Members
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 -------
 
 **ImageType**  
@@ -147,6 +151,11 @@ The customized information for the image file. A [**DismWimCustomizedInfo**](dis
  
 
 Requirements
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ------------
 
 <table>

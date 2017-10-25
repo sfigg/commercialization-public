@@ -1,10 +1,12 @@
 ---
 title: DismFullyOfflineInstallableType Enumeration
 description: DismFullyOfflineInstallableType Enumeration
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/desktop'
 ms.assetid: 672b270d-7a78-4797-80d2-d350c238b8cd
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # DismFullyOfflineInstallableType Enumeration

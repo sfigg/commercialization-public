@@ -1,10 +1,12 @@
 ---
 title: DismReleaseType Enumeration
 description: DismReleaseType Enumeration
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/desktop'
 ms.assetid: f6ba949a-ed77-43f3-bf1e-830927aa67a5
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # DismReleaseType Enumeration

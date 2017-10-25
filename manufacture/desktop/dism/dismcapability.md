@@ -1,19 +1,13 @@
 ---
 title: DismCapability structure
 description: Describes capability basic information.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/desktop'
 ms.assetid: 3916441C-BF6B-48F2-85A8-6943A3689A5D
 keywords: ["DismCapability structure"]
-topic_type:
-- apiref
-api_name:
-- DismCapability
-api_location:
-- DismAPI.h
-api_type:
-- HeaderDef
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # DismCapability structure
@@ -24,6 +18,11 @@ api_type:
 Describes capability basic information.
 
 Syntax
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ------
 
 ```ManagedCPlusPlus
@@ -34,6 +33,11 @@ typedef struct _DismCapability {
 ```
 
 Members
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 -------
 
 **Name**  
@@ -70,6 +74,11 @@ To retrieve more information about a particular capability, use the [**DismGetCa
  
 
 Requirements
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ------------
 
 <table>

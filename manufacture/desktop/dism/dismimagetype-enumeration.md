@@ -1,10 +1,12 @@
 ---
 title: DismImageType Enumeration
 description: DismImageType Enumeration
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/desktop'
 ms.assetid: d41e1547-6e3b-4ff5-801f-8f810b4811fa
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # DismImageType Enumeration

@@ -1,19 +1,13 @@
 ---
 title: DismOpenSession function
 description: Associates an offline or online Windows image with a DISMSession.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/desktop'
 ms.assetid: d078d3f1-96a2-4837-af50-5a9c996e792f
 keywords: ["DismOpenSession function"]
-topic_type:
-- apiref
-api_name:
-- DismOpenSession
-api_location:
-- DismAPI.dll
-api_type:
-- DllExport
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # DismOpenSession function
@@ -24,6 +18,11 @@ api_type:
 Associates an offline or online Windows image with a [DISMSession](dismsession.md).
 
 Syntax
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ------
 
 ```ManagedCPlusPlus
@@ -36,6 +35,11 @@ HRESULT WINAPI DismOpenSession(
 ```
 
 Parameters
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ----------
 
 *ImagePath* \[in\]  
@@ -61,6 +65,11 @@ The *SystemDrive* parameter cannot be used when the *ImagePath* parameter is set
 A valid [DismSession](dismsession.md). The DismSession must be associated with an image. You can associate a session with an image by using the **DismOpenSession**.
 
 Return value
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ------------
 
 Returns **S\_OK** on success.
@@ -102,6 +111,11 @@ hr = DismOpenSession(L"C:\\Mount\\", NULL, NULL, &amp;Session);
  
 
 Requirements
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ------------
 
 <table>

@@ -1,19 +1,13 @@
 ---
 title: DismAddPackage function
 description: Adds a single .cab or .msu file to a Windows® image.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/desktop'
 ms.assetid: 51897c3b-2916-4e5c-a7bc-be591ec9bf73
 keywords: ["DismAddPackage function"]
-topic_type:
-- apiref
-api_name:
-- DismAddPackage
-api_location:
-- DismAPI.dll
-api_type:
-- DllExport
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # DismAddPackage function
@@ -24,6 +18,11 @@ api_type:
 Adds a single .cab or .msu file to a Windows® image.
 
 Syntax
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ------
 
 ```ManagedCPlusPlus
@@ -39,6 +38,11 @@ HRESULT WINAPI DismAddPackage(
 ```
 
 Parameters
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ----------
 
 *Session* \[in\]  
@@ -101,6 +105,11 @@ Optional. A pointer to a client-defined [DismProgressCallback](dismprogresscallb
 Optional. User defined custom data.
 
 Return value
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ------------
 
 Returns `S_OK` on success.
@@ -143,6 +152,11 @@ hr = DismAddPackage(Session, "C:\\packages\\calc.cab", FALSE, FALSE, NULL, NULL,
  
 
 Requirements
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ------------
 
 <table>

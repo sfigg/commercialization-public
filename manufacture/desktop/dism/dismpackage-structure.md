@@ -1,19 +1,13 @@
 ---
 title: DismPackage structure
 description: Describes basic information about a package, including the date and time that the package was installed.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/desktop'
 ms.assetid: 0140fe96-f0be-4ff3-a8ea-1a2e7c62c3fe
 keywords: ["DismPackage structure"]
-topic_type:
-- apiref
-api_name:
-- DismPackage
-api_location:
-- DismAPI.h
-api_type:
-- HeaderDef
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # DismPackage structure
@@ -22,6 +16,11 @@ api_type:
 Describes basic information about a package, including the date and time that the package was installed.
 
 Syntax
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ------
 
 ```ManagedCPlusPlus
@@ -34,6 +33,11 @@ typedef struct _DismPackage {
 ```
 
 Members
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 -------
 
 **PackageName**  
@@ -71,6 +75,11 @@ The date and time that the package was installed. This field is local time relat
  
 
 Requirements
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ------------
 
 <table>

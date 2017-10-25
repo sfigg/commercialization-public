@@ -1,19 +1,13 @@
 ---
 title: DismInitialize function
 description: Initializes DISM API. DismInitialize must be called once per process, before calling any other DISM API functions.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/desktop'
 ms.assetid: e387b740-8c89-4de4-b736-b06a3b99fa57
 keywords: ["DismInitialize function"]
-topic_type:
-- apiref
-api_name:
-- DismInitialize
-api_location:
-- DismAPI.dll
-api_type:
-- DllExport
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # DismInitialize function
@@ -24,6 +18,11 @@ api_type:
 Initializes DISM API. **DismInitialize** must be called once per process, before calling any other DISM API functions.
 
 Syntax
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ------
 
 ```ManagedCPlusPlus
@@ -35,6 +34,11 @@ HRESULT WINAPI DismInitialize(
 ```
 
 Parameters
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ----------
 
 *LogLevel* \[in\]  
@@ -47,6 +51,11 @@ Optional. A relative or absolute path to a log file. All messages generated will
 Optional. A relative or absolute path to a scratch directory. DISM API will use this directory for internal operations. If **NULL**, the default temp directory, \\Windows\\%Temp%, will be used.
 
 Return value
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ------------
 
 Returns **S\_OK** on success.
@@ -88,6 +97,11 @@ hr = DismInitialize(Level, NULL, NULL);
  
 
 Requirements
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ------------
 
 <table>

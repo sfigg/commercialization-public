@@ -1,19 +1,13 @@
 ---
 title: DismGetFeatures function
 description: Gets all the features in an image, regardless of whether the features are enabled or disabled.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/desktop'
 ms.assetid: 23f94c30-2353-45c2-b792-da537d1f1cd9
 keywords: ["DismGetFeatures function"]
-topic_type:
-- apiref
-api_name:
-- DismGetFeatures
-api_location:
-- DismAPI.dll
-api_type:
-- DllExport
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # DismGetFeatures function
@@ -24,6 +18,11 @@ api_type:
 Gets all the features in an image, regardless of whether the features are enabled or disabled.
 
 Syntax
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ------
 
 ```ManagedCPlusPlus
@@ -37,6 +36,11 @@ HRESULT WINAPI DismGetFeatures(
 ```
 
 Parameters
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ----------
 
 *Session* \[in\]  
@@ -87,6 +91,11 @@ A pointer to the address of an array of [**DismFeature**](dismfeature-structure.
 The number of [**DismFeature**](dismfeature-structure.md) structures that were returned.
 
 Return value
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ------------
 
 Returns **S\_OK** on success.
@@ -124,6 +133,11 @@ hr = DismGetFeatures(Session, NULL, NULL, &amp;Feature, &amp;FeatureCount);
  
 
 Requirements
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ------------
 
 <table>

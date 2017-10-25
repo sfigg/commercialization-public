@@ -1,19 +1,13 @@
 ---
 title: DismApplyUnattend function
 description: Applies an unattended answer file to a Windows® image.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/desktop'
 ms.assetid: e1d9903f-2b12-421b-8802-55a3e770ca1f
 keywords: ["DismApplyUnattend function"]
-topic_type:
-- apiref
-api_name:
-- DismApplyUnattend
-api_location:
-- DismAPI.dll
-api_type:
-- DllExport
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # DismApplyUnattend function
@@ -24,6 +18,11 @@ api_type:
 Applies an unattended answer file to a Windows® image.
 
 Syntax
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ------
 
 ```ManagedCPlusPlus
@@ -35,6 +34,11 @@ HRESULT WINAPI DismApplyUnattend(
 ```
 
 Parameters
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ----------
 
 *Session* \[in\]  
@@ -66,6 +70,11 @@ A Boolean value that specifies whether the packages that are listed in an answer
  
 
 Return value
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ------------
 
 Returns `S_OK` on success.
@@ -106,6 +115,11 @@ hr = DismApplyUnattend(Session, "C:\test\unattend.xml", TRUE);
  
 
 Requirements
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ------------
 
 <table>

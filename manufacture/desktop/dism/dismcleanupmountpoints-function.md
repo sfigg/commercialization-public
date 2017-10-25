@@ -1,19 +1,13 @@
 ---
 title: DismCleanupMountPoints function
 description: Removes files and releases resources associated with corrupted or invalid mount paths.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/desktop'
 ms.assetid: 6906eaf2-4ccc-4e85-b49d-5200b2e6f729
 keywords: ["DismCleanupMountPoints function"]
-topic_type:
-- apiref
-api_name:
-- DismCleanupMountPoints
-api_location:
-- DismAPI.dll
-api_type:
-- DllExport
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # DismCleanupMountPoints function
@@ -24,6 +18,11 @@ api_type:
 Removes files and releases resources associated with corrupted or invalid mount paths.
 
 Syntax
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ------
 
 ```ManagedCPlusPlus
@@ -31,11 +30,21 @@ HRESULT WINAPI DismCleanupMountPoints(void);
 ```
 
 Parameters
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ----------
 
 This function has no parameters.
 
 Return value
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ------------
 
 Returns `S_OK` on success.
@@ -67,6 +76,11 @@ hr = DismCleanupMountpoints();
  
 
 Requirements
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ------------
 
 <table>

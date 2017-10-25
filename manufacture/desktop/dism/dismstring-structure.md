@@ -1,19 +1,13 @@
 ---
 title: DismString structure
 description: DISM API functions that return strings wrap the heap allocated PCWSTR in a DismString structure.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/desktop'
 ms.assetid: f3246280-d805-45d8-9f79-18adb804822a
 keywords: ["DismString structure"]
-topic_type:
-- apiref
-api_name:
-- DismString
-api_location:
-- DismAPI.h
-api_type:
-- HeaderDef
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # DismString structure
@@ -22,6 +16,11 @@ api_type:
 DISM API functions that return strings wrap the heap allocated **PCWSTR** in a DismString structure.
 
 Syntax
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ------
 
 ```ManagedCPlusPlus
@@ -31,6 +30,11 @@ typedef struct _DismString {
 ```
 
 Members
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 -------
 
 **Value**  
@@ -55,6 +59,11 @@ A null-terminated Unicode string.
  
 
 Requirements
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ------------
 
 <table>

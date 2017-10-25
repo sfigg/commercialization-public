@@ -1,19 +1,13 @@
 ---
 title: DismGetFeatureParent function
 description: Gets the parent features of a specified feature.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/desktop'
 ms.assetid: b71b8567-6ea3-4800-a921-c5ddea2efdac
 keywords: ["DismGetFeatureParent function"]
-topic_type:
-- apiref
-api_name:
-- DismGetFeatureParent
-api_location:
-- DismAPI.dll
-api_type:
-- DllExport
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # DismGetFeatureParent function
@@ -24,6 +18,11 @@ api_type:
 Gets the parent features of a specified feature.
 
 Syntax
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ------
 
 ```ManagedCPlusPlus
@@ -38,6 +37,11 @@ HRESULT WINAPI DismGetFeatureParent(
 ```
 
 Parameters
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ----------
 
 *Session* \[in\]  
@@ -91,6 +95,11 @@ A pointer to the address of an array of [**DismFeature**](dismfeature-structure.
 The number of [**DismFeature**](dismfeature-structure.md) structures that were returned.
 
 Return value
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ------------
 
 Returns **S\_OK** on success.
@@ -133,6 +142,11 @@ hr = DismGetFeatureParent(Session,"Xps-Foundation-Xps-Viewer", NULL, NULL, &amp;
  
 
 Requirements
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ------------
 
 <table>

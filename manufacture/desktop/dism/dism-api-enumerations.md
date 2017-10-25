@@ -1,10 +1,12 @@
 ---
 title: DISM API Enumerations
 description: DISM API Enumerations
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/desktop'
 ms.assetid: b9bf3044-fd9d-4877-87e8-6f8435c55e35
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # DISM API Enumerations

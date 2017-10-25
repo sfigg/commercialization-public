@@ -1,10 +1,12 @@
 ---
 title: DISM API Functions
 description: DISM API Functions
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/desktop'
 ms.assetid: 4988ec23-17b0-482d-9066-36f11aa0e441
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # DISM API Functions

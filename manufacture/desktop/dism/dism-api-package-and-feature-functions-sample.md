@@ -1,10 +1,12 @@
 ---
 title: DISM API Package and Feature Functions Sample
 description: DISM API Package and Feature Functions Sample
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/desktop'
 ms.assetid: f5b04100-350d-43c3-8d1f-a2bcdfd19890
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # DISM API Package and Feature Functions Sample

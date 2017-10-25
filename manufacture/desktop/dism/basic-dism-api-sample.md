@@ -1,10 +1,12 @@
 ---
 title: Basic DISM API Sample
 description: Basic DISM API Sample
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/desktop'
 ms.assetid: 7ce87490-bd7e-42a5-8356-5fd8cae0a4b9
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # Basic DISM API Sample

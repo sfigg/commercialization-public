@@ -1,19 +1,13 @@
 ---
 title: DismGetPackages function
 description: Lists each package in an image, providing basic information including the package name and type of package.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/desktop'
 ms.assetid: d04bafe0-7fdf-47c2-978e-fa0041525bac
 keywords: ["DismGetPackages function"]
-topic_type:
-- apiref
-api_name:
-- DismGetPackages
-api_location:
-- DismAPI.dll
-api_type:
-- DllExport
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # DismGetPackages function
@@ -24,6 +18,11 @@ api_type:
 Lists each package in an image, providing basic information including the package name and type of package.
 
 Syntax
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ------
 
 ```ManagedCPlusPlus
@@ -35,6 +34,11 @@ HRESULT WINAPI DismGetPackages(
 ```
 
 Parameters
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ----------
 
 *Session* \[in\]  
@@ -47,6 +51,11 @@ A pointer to the array of [DismPackage](dismpackagefeaturestate-enumeration.md) 
 The number of [DismPackage](dismpackagefeaturestate-enumeration.md) structures that are returned.
 
 Return value
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ------------
 
 Returns **S\_OK** on success.
@@ -89,6 +98,11 @@ hr = DismGetPackages(Session, &amp;Package, &amp;Count);
  
 
 Requirements
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ------------
 
 <table>

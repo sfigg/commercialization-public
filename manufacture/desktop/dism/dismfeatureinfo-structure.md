@@ -1,19 +1,13 @@
 ---
 title: DismFeatureInfo structure
 description: Describes advanced feature information, such as installed state and whether a restart is required after installation.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/desktop'
 ms.assetid: 746e08db-8de8-4a7a-b5b6-065979c76e56
 keywords: ["DismFeatureInfo structure"]
-topic_type:
-- apiref
-api_name:
-- DismFeatureInfo
-api_location:
-- DismAPI.h
-api_type:
-- HeaderDef
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # DismFeatureInfo structure
@@ -22,6 +16,11 @@ api_type:
 Describes advanced feature information, such as installed state and whether a restart is required after installation.
 
 Syntax
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ------
 
 ```ManagedCPlusPlus
@@ -37,6 +36,11 @@ typedef struct _DismFeatureInfo {
 ```
 
 Members
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 -------
 
 **FeatureName**  
@@ -83,6 +87,11 @@ The number of elements in the *CustomProperty* array.
  
 
 Requirements
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ------------
 
 <table>

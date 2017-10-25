@@ -1,19 +1,13 @@
 ---
 title: DismGetMountedImageInfo function
 description: Returns an array of DismMountedImageInfo structures describing currently mounted images.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/desktop'
 ms.assetid: 6c1118ed-540d-4ce3-bc24-66b83e8a8790
 keywords: ["DismGetMountedImageInfo function"]
-topic_type:
-- apiref
-api_name:
-- DismGetMountedImageInfo
-api_location:
-- DismAPI.dll
-api_type:
-- DllExport
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # DismGetMountedImageInfo function
@@ -24,6 +18,11 @@ api_type:
 Returns an array of [DismMountedImageInfo](dismmountedimageinfo-structure.md) structures describing currently mounted images.
 
 Syntax
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ------
 
 ```ManagedCPlusPlus
@@ -34,6 +33,11 @@ HRESULT WINAPI DismGetMountedImageInfo(
 ```
 
 Parameters
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ----------
 
 *MountedImageInfo* \[out\]  
@@ -43,6 +47,11 @@ A pointer to the address of an array of [DismMountedImageInfo](dismmountedimagei
 The number of [DismMountedImageInfo](dismmountedimageinfo-structure.md) structures that are returned.
 
 Return value
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ------------
 
 Returns **S\_OK** on success.
@@ -97,6 +106,11 @@ hr = DismGetMountedImageInfo(&ImageInfo, &ImageInfoCount);
  
 
 Requirements
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ------------
 
 <table>

@@ -1,10 +1,12 @@
 ---
 title: DismImageHealthState Enumeration
 description: DismImageHealthState Enumeration
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/desktop'
 ms.assetid: d1879143-8af1-4619-802c-126c9597ad6f
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # DismImageHealthState Enumeration

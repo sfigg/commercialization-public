@@ -1,19 +1,13 @@
 ---
 title: DismRemoveDriver function
 description: Removes an out-of-box driver from an offline image.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/desktop'
 ms.assetid: 0555a39c-211d-407a-b8dd-135e7f7bf627
 keywords: ["DismRemoveDriver function"]
-topic_type:
-- apiref
-api_name:
-- DismRemoveDriver
-api_location:
-- DismAPI.dll
-api_type:
-- DllExport
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # DismRemoveDriver function
@@ -24,6 +18,11 @@ api_type:
 Removes an out-of-box driver from an offline image.
 
 Syntax
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ------
 
 ```ManagedCPlusPlus
@@ -34,6 +33,11 @@ HRESULT WINAPI DismRemoveDriver(
 ```
 
 Parameters
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ----------
 
 *Session* \[in\]  
@@ -43,6 +47,11 @@ A valid [DismSession](dismsession.md). The DismSession must be associated with a
 The published file name of the driver that has been added to the image, for example OEM1.inf. You can use [**DismGetDrivers**](dismgetdrivers-function.md) to get the published name of the driver.
 
 Return value
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ------------
 
 Returns **S\_OK** on success.
@@ -87,6 +96,11 @@ hr = DismRemoveDriver(Session, "Oem1.inf");
  
 
 Requirements
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ------------
 
 <table>

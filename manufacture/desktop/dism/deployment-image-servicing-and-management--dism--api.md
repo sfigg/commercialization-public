@@ -1,10 +1,12 @@
 ---
 title: Deployment Image Servicing and Management (DISM) API
 description: Deployment Image Servicing and Management (DISM) API
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/desktop'
 ms.assetid: 6138d878-71a1-49ad-8a34-c93ec6fa94a5
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # Deployment Image Servicing and Management (DISM) API

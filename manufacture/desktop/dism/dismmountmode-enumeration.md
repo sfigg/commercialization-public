@@ -1,10 +1,12 @@
 ---
 title: DismMountMode Enumeration
 description: DismMountMode Enumeration
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/desktop'
 ms.assetid: aa14d860-bab5-475d-b243-95de5a3af9e5
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # DismMountMode Enumeration

@@ -1,19 +1,13 @@
 ---
 title: DismRemovePackage function
 description: Removes a package from an image.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/desktop'
 ms.assetid: 23cfe5ee-0f47-4ebf-b956-d584420a98c6
 keywords: ["DismRemovePackage function"]
-topic_type:
-- apiref
-api_name:
-- DismRemovePackage
-api_location:
-- DismAPI.dll
-api_type:
-- DllExport
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # DismRemovePackage function
@@ -24,6 +18,11 @@ api_type:
 Removes a package from an image.
 
 Syntax
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ------
 
 ```ManagedCPlusPlus
@@ -38,6 +37,11 @@ HRESULT WINAPI DismRemovePackage(
 ```
 
 Parameters
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ----------
 
 *Session* \[in\]  
@@ -91,6 +95,11 @@ Optional. A pointer to a client-defined [DismProgressCallback](dismprogresscallb
 Optional. User defined custom data.
 
 Return value
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ------------
 
 Returns **S\_OK** on success.
@@ -131,6 +140,11 @@ hr = DismRemovePackage(Session, "C:\\packages\\test.CAB", PackagePath, NULL, NUL
  
 
 Requirements
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ------------
 
 <table>

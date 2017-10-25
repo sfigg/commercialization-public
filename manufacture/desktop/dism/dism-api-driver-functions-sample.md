@@ -1,10 +1,12 @@
 ---
 title: DISM API Driver Functions Sample
 description: DISM API Driver Functions Sample
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/desktop'
 ms.assetid: 34d6a3e4-240b-4b68-b8d6-48cb6678482d
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # DISM API Driver Functions Sample

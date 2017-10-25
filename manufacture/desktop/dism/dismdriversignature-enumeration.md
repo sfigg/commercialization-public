@@ -1,19 +1,13 @@
 ---
 title: DismDriverSignature enumeration
 description: Specifies the signature status of a driver.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/desktop'
 ms.assetid: f93b49b6-e561-4155-8de4-5e4b8b561c6d
 keywords: ["DismDriverSignature enumeration"]
-topic_type:
-- apiref
-api_name:
-- DismDriverSignature
-api_location:
-- DismAPI.h
-api_type:
-- HeaderDef
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # DismDriverSignature enumeration
@@ -22,6 +16,11 @@ api_type:
 Specifies the signature status of a driver.
 
 Syntax
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ------
 
 ```ManagedCPlusPlus
@@ -33,6 +32,11 @@ typedef enum DismDriverSignature {
 ```
 
 Constants
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---------
 
 <span id="DismDriverSignatureUnknown"></span><span id="dismdriversignatureunknown"></span><span id="DISMDRIVERSIGNATUREUNKNOWN"></span>**DismDriverSignatureUnknown**  
@@ -67,6 +71,11 @@ The driver is signed.
  
 
 Requirements
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ------------
 
 <table>

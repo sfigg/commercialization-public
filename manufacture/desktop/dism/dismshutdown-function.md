@@ -1,19 +1,13 @@
 ---
 title: DismShutdown function
 description: Shuts down DISM API. DismShutdown must be called once per process.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/desktop'
 ms.assetid: 2a1593ed-ceb3-4944-a56d-9172e8c3ff72
 keywords: ["DismShutdown function"]
-topic_type:
-- apiref
-api_name:
-- DismShutdown
-api_location:
-- DismAPI.dll
-api_type:
-- DllExport
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # DismShutdown function
@@ -24,6 +18,11 @@ api_type:
 Shuts down DISM API. **DismShutdown** must be called once per process. Other DISM API function calls will fail after **DismShutdown** has been called.
 
 Syntax
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ------
 
 ```ManagedCPlusPlus
@@ -31,11 +30,21 @@ HRESULT WINAPI DismShutdown(void);
 ```
 
 Parameters
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ----------
 
 This function has no parameters.
 
 Return value
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ------------
 
 Returns **S\_OK** on success.
@@ -78,6 +87,11 @@ hr = DismShutdown();
  
 
 Requirements
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ------------
 
 <table>

@@ -1,19 +1,13 @@
 ---
 title: DismGetFeatureInfo function
 description: Gets detailed info from for the specified feature.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/desktop'
 ms.assetid: 35514a46-e3e8-4d88-b151-527a855c8e89
 keywords: ["DismGetFeatureInfo function"]
-topic_type:
-- apiref
-api_name:
-- DismGetFeatureInfo
-api_location:
-- DismAPI.dll
-api_type:
-- DllExport
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # DismGetFeatureInfo function
@@ -24,6 +18,11 @@ api_type:
 Gets detailed info from for the specified feature.
 
 Syntax
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ------
 
 ```ManagedCPlusPlus
@@ -37,6 +36,11 @@ HRESULT WINAPI DismGetFeatureInfo(
 ```
 
 Parameters
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ----------
 
 *Session* \[in\]  
@@ -87,6 +91,11 @@ Optional. A valid [DismPackageIdentifier](dismpackageidentifier-enumeration.md) 
 A pointer to the address of an array of [**DismFeatureInfo**](dismfeatureinfo-structure.md) structures.
 
 Return value
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ------------
 
 Returns `S_OK` on success.
@@ -128,6 +137,11 @@ hr = DismGetFeatureInfo(Session, "Xps-Foundation-Xps-Viewer", NULL, NULL, &amp;F
  
 
 Requirements
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ------------
 
 <table>

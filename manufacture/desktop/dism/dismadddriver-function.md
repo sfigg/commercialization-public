@@ -1,19 +1,13 @@
 ---
 title: DismAddDriver function
 description: Adds a third party driver (.inf) to an offline Windows® image.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/desktop'
 ms.assetid: 0FE3AA80-258A-4661-8AEB-F5302F683748
 keywords: ["DismAddDriver function"]
-topic_type:
-- apiref
-api_name:
-- DismAddDriver
-api_location:
-- DismAPI.dll
-api_type:
-- DllExport
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # DismAddDriver function
@@ -24,6 +18,11 @@ api_type:
 Adds a third party driver (.inf) to an offline Windows® image.
 
 Syntax
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ------
 
 ```ManagedCPlusPlus
@@ -35,6 +34,11 @@ HRESULT WINAPI DismAddDriver(
 ```
 
 Parameters
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ----------
 
 *Session* \[in\]  
@@ -66,6 +70,11 @@ A Boolean value that specifies whether to accept unsigned drivers to an x64-base
  
 
 Return value
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ------------
 
 Returns `S_OK` on success.
@@ -93,6 +102,11 @@ Returns `S_OK` on success.
  
 
 Examples
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 --------
 
 In this example, the driver being added is located on the technician computer in the folder C:\\drivers\\. The driver has the filename usb.inf on the technician computer, but is renamed to "OEM1.inf" or "OEM2.inf" in the target image. The numbering of the OEMx.inf files is dependent on the number of drivers added. The new name, for example OEM1.inf, is returned in the [DismDriverPackage](dismdriverpackage-structure.md) structure when you call the [**DismGetDrivers**](dismgetdrivers-function.md). You should use the new name, OEM1.inf, to specify the *DriverPath* when you use the [**DismGetDriverInfo**](dismgetdriverinfo-function.md).
@@ -103,6 +117,11 @@ hr = DismAddDriver(Session, L"C:\\Drivers\\usb.inf", FALSE);
 ```
 
 Requirements
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ------------
 
 <table>

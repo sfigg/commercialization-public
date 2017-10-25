@@ -1,19 +1,13 @@
 ---
 title: DismGetPackageInfo function
 description: Gets standard package properties as DismGetPackages, as well as more specific package information and custom properties.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/desktop'
 ms.assetid: d8888625-bb8c-4a44-b627-50404b040cc0
 keywords: ["DismGetPackageInfo function"]
-topic_type:
-- apiref
-api_name:
-- DismGetPackageInfo
-api_location:
-- DismAPI.dll
-api_type:
-- DllExport
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # DismGetPackageInfo function
@@ -24,6 +18,11 @@ api_type:
 Gets standard package properties as [**DismGetPackages**](dismgetpackages-function.md), as well as more specific package information and custom properties.
 
 Syntax
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ------
 
 ```ManagedCPlusPlus
@@ -36,6 +35,11 @@ HRESULT WINAPI DismGetPackageInfo(
 ```
 
 Parameters
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ----------
 
 *Session* \[in\]  
@@ -83,6 +87,11 @@ A valid [DismPackageIdentifier](dismpackageidentifier-enumeration.md) enumeratio
 A pointer to the address of an array of [DismPackageInfo](dismpackageinfo-structure.md) structures.
 
 Return value
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ------------
 
 Returns **S\_OK** on success.
@@ -124,6 +133,11 @@ hr = DismGetPackageInfo(Session, "C:\packages\calc.cab", PackagePath, &amp;Packa
  
 
 Requirements
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ------------
 
 <table>

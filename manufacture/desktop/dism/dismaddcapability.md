@@ -1,19 +1,13 @@
 ---
 title: DismAddCapability function
 description: Add a capability to an image.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/desktop'
 ms.assetid: 66708A01-4847-45C9-BE57-B26277A2BC29
 keywords: ["DismAddCapability function"]
-topic_type:
-- apiref
-api_name:
-- DismAddCapability
-api_location:
-- DismAPI.dll
-api_type:
-- DllExport
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # DismAddCapability function
@@ -24,6 +18,11 @@ api_type:
 Add a capability to an image.
 
 Syntax
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ------
 
 ```ManagedCPlusPlus
@@ -40,6 +39,11 @@ HRESULT WINAPI DismAddCapability(
 ```
 
 Parameters
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ----------
 
 *Session* \[in\]  
@@ -67,6 +71,11 @@ Pointer to a client defined callback function to report progress.
 User defined custom data. This will be passed back to the user through the callback.
 
 Return value
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ------------
 
 Returns `S_OK` on success.
@@ -107,6 +116,11 @@ hr = DismAddCapability(Session, L“Language.Basic~~~en-US~0.0.1.0”, TRUE, NUL
  
 
 Requirements
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ------------
 
 <table>

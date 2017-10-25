@@ -1,19 +1,13 @@
 ---
 title: DismDriver structure
 description: Describes the architecture and hardware that the driver supports.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/desktop'
 ms.assetid: 86ddd0b9-d84a-4cc8-8137-d00a14a2e254
 keywords: ["DismDriver structure"]
-topic_type:
-- apiref
-api_name:
-- DismDriver
-api_location:
-- DismAPI.h
-api_type:
-- HeaderDef
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # DismDriver structure
@@ -22,6 +16,11 @@ api_type:
 Describes the architecture and hardware that the driver supports. The [**DismGetDriverInfo**](dismgetdriverinfo-function.md) Function returns an object that includes an array of DismDriver structures. If you specify a *DriverPath* using the published name of the driver installed in the image, for example OEM1.inf, the array includes only the applicable hardware and architectures that are installed in the image. You can also specify a *DriverPath* using the source location of an .inf file on the technician computer. If you use the source location, the array includes all of the supported architectures and hardware that exist in the .inf file before it is installed to an architecture-specific image.
 
 Syntax
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ------
 
 ```ManagedCPlusPlus
@@ -37,6 +36,11 @@ typedef struct _DismDriver {
 ```
 
 Members
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 -------
 
 **ManufacturerName**  
@@ -83,6 +87,11 @@ The exclude IDs of the driver.
  
 
 Requirements
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ------------
 
 <table>

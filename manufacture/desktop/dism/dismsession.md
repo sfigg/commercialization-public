@@ -1,10 +1,12 @@
 ---
 title: DismSession
 description: DismSession
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/desktop'
 ms.assetid: a2cc94b5-0b1d-4d33-84ca-3b3db2bf2048
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # DismSession

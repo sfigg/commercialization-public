@@ -1,19 +1,13 @@
 ---
 title: DismFeature structure
 description: Describes basic information about a feature, such as the feature name and feature state.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/desktop'
 ms.assetid: 43347e6a-ed58-4dcf-9a8c-e9e9017a582e
 keywords: ["DismFeature structure"]
-topic_type:
-- apiref
-api_name:
-- DismFeature
-api_location:
-- DismAPI.h
-api_type:
-- HeaderDef
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # DismFeature structure
@@ -22,6 +16,11 @@ api_type:
 Describes basic information about a feature, such as the feature name and feature state.
 
 Syntax
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ------
 
 ```ManagedCPlusPlus
@@ -32,6 +31,11 @@ typedef struct _DismFeature {
 ```
 
 Members
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 -------
 
 **FeatureName**  
@@ -63,6 +67,11 @@ A valid [DismPackageFeatureState](dismpackagefeaturestate-enumeration.md) enumer
  
 
 Requirements
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ------------
 
 <table>

@@ -1,10 +1,12 @@
 ---
 title: DismPackageIdentifier Enumeration
 description: DismPackageIdentifier Enumeration
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/desktop'
 ms.assetid: eeabc89d-70b0-4cd6-abf9-07cfd51cac87
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # DismPackageIdentifier Enumeration

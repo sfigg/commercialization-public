@@ -1,10 +1,12 @@
 ---
 title: DismMountStatus Enumeration
 description: DismMountStatus Enumeration
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/desktop'
 ms.assetid: 75b85676-71be-4e25-ae60-950512b5e7a2
+ms.author: themar
+ms.date: 10/25/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # DismMountStatus Enumeration
