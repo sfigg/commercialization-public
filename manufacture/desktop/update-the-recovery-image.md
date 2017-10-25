@@ -270,7 +270,7 @@ The short version:
 
 4.  Apply the image: `D:\ApplyImage.bat D:\Images\install.wim`.
 
-5.  Apply the recovery image: `D:\ApplyRecovery.bat` or `D:\ApplyRecovery-FFU` if you used the FFU scripts to apply your initial Windows image.
+5.  Apply the recovery image: `D:\ApplyRecovery.bat` if you you used **ApplyImage.bat**, or `D:\ApplyRecovery-FFU.bat` if you used **ApplyImage-FFU.bat** to apply your initial Windows image.
 	
     Note: To test a different recovery image, add it the same way, specifying the recovery image: 
     ```
