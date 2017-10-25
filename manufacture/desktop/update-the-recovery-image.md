@@ -256,7 +256,7 @@ If you've optimized the image, you'll need to export the image in order to see a
 ## <span id="Try_it_out"></span>Try it out
 
 **Step 9: Apply the image to a new PC**
-Use the steps from [Lab 2: Deploy Windows using a script](deploy-windows-with-a-script-sxs.md) to copy the image to the storage USB drive, apply the Windows image and the recovery image, and boot it up. 
+Use the steps from [Lab 2: Deploy Windows using a script](deploy-windows-with-a-script-sxs.md) to copy the image to the storage USB drive, and apply your Windows image to a PC. 
 
 Note, you'll now include the steps to add the recovery image:
 
@@ -270,7 +270,7 @@ The short version:
 
 4.  Apply the image: `D:\ApplyImage.bat D:\Images\install.wim`.
 
-5.  Apply the recovery image: `D:\ApplyRecovery.bat`
+5.  Apply the recovery image: `D:\ApplyRecovery.bat` or `D:\ApplyRecovery-FFU` if you used the FFU scripts to apply your initial Windows image.
 	
     Note: To test a different recovery image, add it the same way, specifying the recovery image: 
     ```
