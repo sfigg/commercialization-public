@@ -162,6 +162,7 @@
 ##### [DISM Unattended Servicing Command-Line Options](desktop/dism-unattended-servicing-command-line-options.md)
 ##### [DISM Windows PE Servicing Command-Line Options](desktop/dism-windows-pe-servicing-command-line-options.md)
 #### [DISM Reference (Deployment Image Servicing and Management)](desktop/dism-reference--deployment-image-servicing-and-management.md)
+#### [DISM API](desktop/dism/)
 ##### [DISM Configuration List and WimScript.ini Files](desktop/dism-configuration-list-and-wimscriptini-files-winnext.md)
 ##### [Deployment Image Servicing and Management (DISM) Best Practices](desktop/deployment-image-servicing-and-management--dism--best-practices.md)
 ##### [Service a Windows PE Image with DISM](desktop/service-a-windows-pe-image-with-dism.md)
