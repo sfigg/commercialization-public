@@ -1,6 +1,6 @@
 ---
-title: Customize the Country and Operator Settings Asset
-description: Customize the COSA database of mobile operator profiles
+title: Customize the Get Help app
+description: Customize the Windows Get Help app
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
