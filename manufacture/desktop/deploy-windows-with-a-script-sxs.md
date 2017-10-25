@@ -60,7 +60,7 @@ The sample scripts include steps that detect the firmware type (the newer UEFI-b
 4.  Format the primary hard drive, create the partitions, and apply the image by using the pre-made [sample scripts](windows-deployment-sample-scripts-sxs.md). 
 
     The script **ApplyImage.bat** uses the diskpart scripts: CreatePartitions-UEFI.txt and CreatePartitions-BIOS.txt to create the partitions and define the partition layout. These scripts must be placed in the same folder. You can update these scripts to change the partition sizes.
-
+    Note: If you're going to be capturing and deploying your final image as an FFU, use the script named **ApplyImage-FFU.bat** and it's associated diskpart scripts. These scripts don't create a recovery partition, which makes it easier to resize the Windows partition after applying a FFU image.
     ```
     D:
     D:\ApplyImage.bat D:\Images\install.wim
@@ -99,6 +99,13 @@ Include a recovery image for your final images, but it's not required for these 
 	```
 	D:\ApplyRecovery.bat
 	```
+**or**
+
+2. If your final image is going to be an FFU, create a recovery partition and apply the Windows RE image. 
+
+    ```
+    D:\ApplyRecovery-FFU.bat
+    ```
 
 ## <span id="Reboot"></span>Step 6: Reboot
 
