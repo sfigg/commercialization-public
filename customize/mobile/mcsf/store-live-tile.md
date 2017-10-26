@@ -28,7 +28,7 @@ Regardless of the default Store live tile settings, users have the option of cha
 <a href="" id="instructions-"></a>**Instructions:**  
 1.  Create a customization answer file using the contents shown in the following code sample or use the sample StoreLiveTile.xml file.
 
-    ```
+    ```XML
     <?xml version="1.0" encoding="utf-8" ?>  
     <ImageCustomizations xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate"  
                          Name="StoreLiveTile"  
@@ -114,12 +114,8 @@ Regardless of the default Store live tile settings, users have the option of cha
 
 3.  Go to the **Settings** screen in the Microsoft Store app, and check the default values for the following **Live Tile** options: **Show products on tile** and **Only update the tile when I'm on Wi-Fi**. Confirm that they match the default values that you set.
 
- 
+## Related topics
 
- 
+[Prepare for Windows mobile development](https://docs.microsoft.com/en-us/windows-hardware/manufacture/mobile/preparing-for-windows-mobile-development)
 
-
-
-
-
-
+[Customization answer file overview](https://docs.microsoft.com/en-us/windows-hardware/customize/mobile/mcsf/customization-answer-file)

@@ -107,12 +107,8 @@ For more information about writing lens apps, see the Windows SDK documentation
 
 3.  Go to the **Settings** &gt; **applications** &gt; **photos+camera** screen and verify that the lens apps that you have specified show up as one of the choices under **Pressing the camera button opens**.
 
- 
+## Related topics
 
- 
+[Prepare for Windows mobile development](https://docs.microsoft.com/en-us/windows-hardware/manufacture/mobile/preparing-for-windows-mobile-development)
 
-
-
-
-
-
+[Customization answer file overview](https://docs.microsoft.com/en-us/windows-hardware/customize/mobile/mcsf/customization-answer-file)

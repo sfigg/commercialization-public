@@ -203,12 +203,8 @@ If you need to preinstall an app that has dependencies on other packages or comp
 3.  Once the device is fully set up, go to the full apps list.
 4.  Verify that you can see your primary app listed with all the other apps in the device.
 
- 
+## Related topics
 
- 
+[Prepare for Windows mobile development](https://docs.microsoft.com/en-us/windows-hardware/manufacture/mobile/preparing-for-windows-mobile-development)
 
-
-
-
-
-
+[Customization answer file overview](https://docs.microsoft.com/en-us/windows-hardware/customize/mobile/mcsf/customization-answer-file)
