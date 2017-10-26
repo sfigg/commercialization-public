@@ -51,7 +51,7 @@ In Windows 10 Mobile, the notification LED on handheld devices may not turn on 
 
     The following example shows how to do this.
 
-    ```
+    ```XML
     <?xml version="1.0" encoding="utf-8"?>
     <Package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
       Owner=""
@@ -95,7 +95,7 @@ In Windows 10 Mobile, the notification LED on handheld devices may not turn on 
 
     For example, the following code snippet shows a sample OEM feature manifest (FM) file that may contain the .spkg that includes the customization:
 
-    ```
+    ```XML
     <?xml version="1.0" encoding="utf-8"?>  
     <FeatureManifest 
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
@@ -120,7 +120,7 @@ In Windows 10 Mobile, the notification LED on handheld devices may not turn on 
 
     For example, the OEMInput.xml entry for the feature you defined in the previous step will look like this:
 
-    ```
+    ```XML
       <Features>
         <OEM>
           <Feature>WEH_LEDALERT</Feature>
@@ -141,12 +141,7 @@ In Windows 10 Mobile, the notification LED on handheld devices may not turn on 
 
 4.  From another device, send a text message to the device that has LED notification turned on. Verify that you LED notification turned on when the text message was received.
 
- 
+## Related topics
 
- 
-
-
-
-
-
-
+[Prepare for Windows mobile development](https://docs.microsoft.com/en-us/windows-hardware/manufacture/mobile/preparing-for-windows-mobile-development)
+[Customization answer file overview](https://docs.microsoft.com/en-us/windows-hardware/customize/mobile/mcsf/customization-answer-file)

@@ -22,7 +22,7 @@ OEMs can customize the default values for people sort and display settings as do
 <a href="" id="instructions-"></a>**Instructions:**  
 1.  Create a customization answer file using the contents shown in the following code sample.
 
-    ```
+    ```XML
     <?xml version="1.0" encoding="utf-8" ?>
       <ImageCustomizations xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate"  
                          Name="OEMOverridesSortDisplay"  
@@ -49,12 +49,7 @@ OEMs can customize the default values for people sort and display settings as do
 
 3.  Verify that the **Sort list by** and the **Display names by** option is set to the values you specified in the [Sort order for contacts](sort-order-for-contacts.md) customization.
 
- 
+## Related topics
 
- 
-
-
-
-
-
-
+[Prepare for Windows mobile development](https://docs.microsoft.com/en-us/windows-hardware/manufacture/mobile/preparing-for-windows-mobile-development)
+[Customization answer file overview](https://docs.microsoft.com/en-us/windows-hardware/customize/mobile/mcsf/customization-answer-file)

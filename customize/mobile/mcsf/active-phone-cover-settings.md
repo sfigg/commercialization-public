@@ -38,7 +38,7 @@ When the OS receives a notification that the cover state has been set to Opened:
 <a href="" id="instructions-"></a>**Instructions:**  
 1.  Create a customization answer file using the contents shown in the following code sample.
 
-    ```
+    ```XML
     <?xml version="1.0" encoding="utf-8" ?>  
     <ImageCustomizations xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate"  
                          Name="SmartCover"  
@@ -111,12 +111,7 @@ When the OS receives a notification that the cover state has been set to Opened:
 
 4.  Depending on the value you specified for the `AutoUnlock` setting, verify whether the lock screen is automatically lifted when you open the active phone cover.
 
- 
+## Related topics
 
- 
-
-
-
-
-
-
+[Prepare for Windows mobile development](https://docs.microsoft.com/en-us/windows-hardware/manufacture/mobile/preparing-for-windows-mobile-development)
+[Customization answer file overview](https://docs.microsoft.com/en-us/windows-hardware/customize/mobile/mcsf/customization-answer-file)

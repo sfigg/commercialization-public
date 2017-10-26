@@ -28,7 +28,7 @@ The optional keyboard customizations are:
 <a href="" id="instructions-"></a>**Instructions:**  
 1.  Create a customization answer file using the contents shown in the following code sample.
 
-    ```
+    ```XML
     <?xml version="1.0" encoding="utf-8" ?>  
     <ImageCustomizations xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate"  
                          Name="HardwareKeyboardSettings"  
@@ -56,12 +56,7 @@ The optional keyboard customizations are:
 
 2.  Set up the phone. Press and hold down the same keyboard key. Verify that the amount of time needed to hold down a key before the keyboard character repeats corresponds to the value that you set. Also verify that the delay between each character repeat is equivalent to the value that you set.
 
- 
+## Related topics
 
- 
-
-
-
-
-
-
+[Prepare for Windows mobile development](https://docs.microsoft.com/en-us/windows-hardware/manufacture/mobile/preparing-for-windows-mobile-development)
+[Customization answer file overview](https://docs.microsoft.com/en-us/windows-hardware/customize/mobile/mcsf/customization-answer-file)

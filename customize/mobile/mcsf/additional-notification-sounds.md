@@ -50,7 +50,7 @@ Partners must keep the following design considerations in mind when implementing
 
 2.  Create a customization answer file using the contents shown in the following code sample.
 
-    ```
+    ```XML
     <?xml version="1.0" encoding="utf-8" ?>
     <ImageCustomizations xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate"  
                          Name="AdditionalNotifications"  
@@ -99,7 +99,7 @@ Partners must keep the following design considerations in mind when implementing
 
         The following example shows the customization answer file entries for en-US, fr-CA, and es-MX languages:
 
-        ```
+        ```XML
         <Asset Name="LanguageDll/en-US" Source="C:\Path\en-us\DisplayStrings.dll.mui” />
         <Asset Name="LanguageDll/fr-CA" Source="C:\Path\fr-CA\DisplayStrings.dll.mui" />
         <Asset Name="LanguageDll/es-MX" Source="C:\Path\es-MX\DisplayStrings.dll.mui" />
@@ -121,7 +121,7 @@ If you are setting the default notification sound in addition to adding other no
 
 1.  Create a customization answer file using the contents shown in the following code example:
 
-    ```
+    ```XML
         <Settings Path="EventSounds">
             <!-- Use to set a new default voicemail notification sound -->
             <Setting Name="DefaultVoicemailAlertSound" Value="" />
@@ -148,12 +148,7 @@ If you are setting the default notification sound in addition to adding other no
 
 4.  Verify the custom notification sound names are correct for all display languages on the device.
 
- 
+## Related topics
 
- 
-
-
-
-
-
-
+[Prepare for Windows mobile development](https://docs.microsoft.com/en-us/windows-hardware/manufacture/mobile/preparing-for-windows-mobile-development)
+[Customization answer file overview](https://docs.microsoft.com/en-us/windows-hardware/customize/mobile/mcsf/customization-answer-file)

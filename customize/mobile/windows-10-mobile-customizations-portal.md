@@ -13,29 +13,19 @@ ms.technology: windows-oem
 ---
 # Customizations for mobile devices
 
-Customizations for mobile enterprise allow you to run mobile line-of-business applications on a platform that ensures that data is captured securely and efficiently.
+Customizations for Windows 10 Mobile allow you to run mobile line-of-business applications on a platform that ensures that data is captured securely and efficiently.
+
+> [!Tip]
+> Before getting started with customizations, review the prerequisite requirements, and download the tools needed to customize, test, and deploy Windows on mobile devices. See [Prepare for Windows mobile development](https://docs.microsoft.com/en-us/windows-hardware/manufacture/mobile/preparing-for-windows-mobile-development) for guidance.
 
 ## In this section
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Topic</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>[Enterprise shared storage](enterprise-shared-storage.md)</p></td>
-<td><p>Enterprise shared storage defines local data locations for line of business apps to share data.</p></td>
-</tr>
-<tr class="even">
-<td>[Customize using the mobile MCSF](mcsf/managed-centralized-settings-framework-mcsf.md)<p></p></td>
-<td><p>The Managed Centralized Settings Framework (MCSF) is part of the customization and multivariant infrastructure first introduced in Windows Phone 8.1 and is still supported in Windows 10 Mobile. MCSF consists of both image time and runtime components that enable these functionality. MCSF creates configuration service providers for registry-backed settings and custom configuration service providers can be referenced for more complex settings.</p></td>
-</tr>
-</tbody>
-</table>
+| Topic                                                   | Description                                                                                         |
+|:--------------------------------------------------------|:----------------------------------------------------------------------------------------------------|
+| [Enterprise shared storage](enterprise-shared-storage.md) | Enterprise shared storage defines local data locations for line of business apps to share data.   |
+| [Customize using the mobile MCSF](mcsf/managed-centralized-settings-framework-mcsf.md) | The Managed Centralized Settings Framework (MCSF) is part of the customization and multivariant infrastructure first introduced in Windows Phone 8.1 and is still supported in Windows 10 Mobile. MCSF consists of both image time and runtime components that enable these functionality. MCSF creates configuration service providers for registry-backed settings and custom configuration service providers can be referenced for more complex settings.     |
+
+## Related topics
+
+[Prepare for Windows mobile development](https://docs.microsoft.com/en-us/windows-hardware/manufacture/mobile/preparing-for-windows-mobile-development)
+[Create mobile packages](https://docs.microsoft.com/en-us/windows-hardware/manufacture/mobile/creating-mobile-packages)

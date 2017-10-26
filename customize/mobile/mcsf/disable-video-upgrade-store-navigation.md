@@ -24,7 +24,7 @@ By default, if there are no compatible video upgrade apps installed on the phone
 <a href="" id="instructions-"></a>**Instructions:**  
 1.  Create a customization answer file using the contents shown in the following code sample.
 
-    ```
+    ```XML
     <?xml version="1.0" encoding="utf-8" ?>  
     <ImageCustomizations xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate"  
                          Name="DisableVideoUpgradeStoreNavigation"  
@@ -83,12 +83,7 @@ By default, if there are no compatible video upgrade apps installed on the phone
 
     -   If `DisableVideoUpgradeStoreNavigation` is set to 1 or 'True', verify that a dialog is launched that informs the user that no video app is installed and the phone does not automatically navigate to the Store.
 
- 
+## Related topics
 
- 
-
-
-
-
-
-
+[Prepare for Windows mobile development](https://docs.microsoft.com/en-us/windows-hardware/manufacture/mobile/preparing-for-windows-mobile-development)
+[Customization answer file overview](https://docs.microsoft.com/en-us/windows-hardware/customize/mobile/mcsf/customization-answer-file)

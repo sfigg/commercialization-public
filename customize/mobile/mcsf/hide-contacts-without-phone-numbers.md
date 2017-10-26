@@ -24,7 +24,7 @@ By default, contacts that do not have phone numbers are hidden in the People Hub
 <a href="" id="instructions-"></a>**Instructions:**  
 1.  Create a customization answer file using the contents shown in the following code sample.
 
-    ```
+    ```XML
     <?xml version="1.0" encoding="utf-8" ?>
     <ImageCustomizations xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate"  
                          Name="HideContactsWithoutPhoneNumbers"  
@@ -81,12 +81,7 @@ By default, contacts that do not have phone numbers are hidden in the People Hub
 
     -   If you set `HideContactsWithoutPhoneNumbers` to 1 or 'True' (or did not set this setting), verify that under the **Contacts** heading the filter shows **showing contacts with phone numbers** at the top of the contacts list. Confirm that only contacts with phone numbers are showing.
 
- 
+## Related topics
 
- 
-
-
-
-
-
-
+[Prepare for Windows mobile development](https://docs.microsoft.com/en-us/windows-hardware/manufacture/mobile/preparing-for-windows-mobile-development)
+[Customization answer file overview](https://docs.microsoft.com/en-us/windows-hardware/customize/mobile/mcsf/customization-answer-file)

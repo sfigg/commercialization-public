@@ -324,7 +324,7 @@ To modify the Microsoft-specified minimum number of digits to use for caller ID 
 
 1.  Create a customization answer file using the contents shown in the following code sample.
 
-    ```
+    ```XML
     <?xml version="1.0" encoding="utf-8" ?>  
     <ImageCustomizations xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate"  
                          Name="CallerIDMatchingOverrides"  
@@ -356,7 +356,7 @@ To modify the Microsoft-specified minimum number of digits to use for caller ID 
 
     For example, to change the default minimum caller ID matching for Antigua and Barbuda (`Setting Name="2"`) and the Åland Islands (`Setting Name="10028789"`) from the default 6 to a new minimum of 8, the following settings can be set within the MCSF customization answer file.
 
-    ```
+    ```XML
     <?xml version="1.0" encoding="utf-8" ?>  
     <ImageCustomizations xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate"  
                          Name="CallerIDMatchingOverrides"  
@@ -426,12 +426,7 @@ The full testing process should include numbers with and without country codes, 
 
 6.  Verify that the caller ID is matched and the contact name is displayed.
 
- 
+## Related topics
 
- 
-
-
-
-
-
-
+[Prepare for Windows mobile development](https://docs.microsoft.com/en-us/windows-hardware/manufacture/mobile/preparing-for-windows-mobile-development)
+[Customization answer file overview](https://docs.microsoft.com/en-us/windows-hardware/customize/mobile/mcsf/customization-answer-file)

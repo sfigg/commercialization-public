@@ -131,7 +131,7 @@ To include one speech language, add one **Language** entry to the **Speech** sec
 
 To include multiple speech languages, add additional **Language** entries to the **Speech** section of the OEMInput.xml file as shown in the following sample.
 
-```
+```XML
 <SupportedLanguages>
   <UserInterface>
     <Language>en-US</Language>
@@ -154,12 +154,7 @@ To include multiple speech languages, add additional **Language** entries to the
 
 3.  Verify that the list of speech languages installed on the device is correct.
 
- 
+## Related topics
 
- 
-
-
-
-
-
-
+[Prepare for Windows mobile development](https://docs.microsoft.com/en-us/windows-hardware/manufacture/mobile/preparing-for-windows-mobile-development)
+[Customization answer file overview](https://docs.microsoft.com/en-us/windows-hardware/customize/mobile/mcsf/customization-answer-file)

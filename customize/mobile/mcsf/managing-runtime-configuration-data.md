@@ -129,7 +129,7 @@ To reclaim storage for users, the OS performs data cleanup in two stages:
 <a href="" id="instructions-"></a>**Instructions:**  
 1.  Create a customization answer file using the contents shown in the following code sample.
 
-    ```
+    ```XML
     <?xml version="1.0" encoding="utf-8" ?>  
     <ImageCustomizations xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate"  
                          Name="MVDataManagement"  
@@ -187,7 +187,7 @@ When specifying the size, OEMs must specify a number of sectors that is sufficie
 
 The following example shows how to reserve 50 MB:
 
-```
+```XML
 <?xml version="1.0" encoding="utf-8\">
 <OEMDevicePlatform xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate">
     <MinSectorCount>20971520</MinSectorCount>
@@ -210,3 +210,8 @@ Use the `UnconditionalCleanupDelay` setting to specify the time, in minutes, for
 
 
 This setting is not exposed through MCSF. OEMs can set the **Enable** value (REG\_DWORD) under the HKEY\_LOCAL\_MACHINE\\Software\\OEM\\FactoryMode registry key to 1 (indicates factory mode) or 0 (not in factory mode). A dialer plugin or other mechanism used during factory testing can turn on factory mode to prevent runtime configuration backup/restore/cleanup of variant data as well as retail mode offline content cleanup.
+
+## Related topics
+
+[Prepare for Windows mobile development](https://docs.microsoft.com/en-us/windows-hardware/manufacture/mobile/preparing-for-windows-mobile-development)
+[Customization answer file overview](https://docs.microsoft.com/en-us/windows-hardware/customize/mobile/mcsf/customization-answer-file)

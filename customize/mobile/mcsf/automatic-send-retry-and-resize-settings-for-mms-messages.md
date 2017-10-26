@@ -41,7 +41,7 @@ This customization supports: **per-SIM** value
 <a href="" id="instructions-"></a>**Instructions:**  
 1.  Create a customization answer file using the contents shown in the following code sample.
 
-    ```
+    ```XML
     <?xml version="1.0" encoding="utf-8" ?>  
     <ImageCustomizations xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate"  
                          Name="AutoResizeforMMS"  
@@ -116,12 +116,7 @@ Keep the following in mind when setting the value for `RetrySize` and `MaxRetryC
 
 4.  If the message fails to send the first time, verify that the number of attempts to resend the message is equal to the limit you set for `MaxRetryCount`.
 
- 
+## Related topics
 
- 
-
-
-
-
-
-
+[Prepare for Windows mobile development](https://docs.microsoft.com/en-us/windows-hardware/manufacture/mobile/preparing-for-windows-mobile-development)
+[Customization answer file overview](https://docs.microsoft.com/en-us/windows-hardware/customize/mobile/mcsf/customization-answer-file)

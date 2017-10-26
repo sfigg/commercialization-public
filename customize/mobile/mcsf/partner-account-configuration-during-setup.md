@@ -58,7 +58,7 @@ Partners must meet the following requirements when configuring this customizatio
 
 2.  Create a customization answer file to preload your app(s) and follow the steps in the section Configure the customization settings.
 
-    ```
+    ```XML
     <?xml version="1.0" encoding="utf-8" ?>  
     <ImageCustomizations xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate"  
                          Name="PartnerAccountConfiguration"  
@@ -266,3 +266,8 @@ The following screenshots show what a partner setup app's UI might look like and
         <td><img src="images/windows-mo-samplelayouts-07.png" style="width: 180px; height=320px;" alt="sample app screen 7" /></td>
     </tr>
 </table>
+
+## Related topics
+
+[Prepare for Windows mobile development](https://docs.microsoft.com/en-us/windows-hardware/manufacture/mobile/preparing-for-windows-mobile-development)
+[Customization answer file overview](https://docs.microsoft.com/en-us/windows-hardware/customize/mobile/mcsf/customization-answer-file)

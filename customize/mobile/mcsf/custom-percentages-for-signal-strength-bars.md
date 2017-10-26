@@ -54,7 +54,7 @@ This customization supports: **per-device** value
 <a href="" id="instructions-"></a>**Instructions:**  
 1.  Create a customization answer file using the contents shown in the following code sample.
 
-    ```
+    ```XML
     <?xml version="1.0" encoding="utf-8" ?>  
     <ImageCustomizations xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate"  
                          Name="SignalStrengthBars"  
@@ -146,12 +146,7 @@ This customization supports: **per-device** value
 <a href="" id="testing-"></a>**Testing:**  
 Refer to the documentation provided by the modem vendor and work with your mobile operator to test this customization on their network.
 
- 
+## Related topics
 
- 
-
-
-
-
-
-
+[Prepare for Windows mobile development](https://docs.microsoft.com/en-us/windows-hardware/manufacture/mobile/preparing-for-windows-mobile-development)
+[Customization answer file overview](https://docs.microsoft.com/en-us/windows-hardware/customize/mobile/mcsf/customization-answer-file)

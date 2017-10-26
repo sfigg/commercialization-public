@@ -26,7 +26,7 @@ OEMs can specify the threshold at which the device boots from UEFI-based chargin
 
 1.  Create a customization answer file using the contents shown in the following code sample.
 
-    ```
+    ```XML
     <?xml version="1.0" encoding="utf-8" ?>  
     <ImageCustomizations xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate"  
                          Name="ChargeSettings"  
@@ -65,7 +65,7 @@ Power-off charging can only be configured when the device image is generated. Wi
 
 1.  Create a customization answer file using the contents shown in the following code sample or use the sample ChargeSettings.xml file.
 
-    ```
+    ```XML
     <?xml version="1.0" encoding="utf-8" ?>  
     <ImageCustomizations xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate"  
                          Name="ChargeSettings"  
@@ -88,14 +88,7 @@ Power-off charging can only be configured when the device image is generated. Wi
 
 3.  Set the `Value` to 1 to enable power-off charging or to 0 to disable power-off charging.
 
+## Related topics
 
- 
-
- 
-
-
-
-
-
-
-
+[Prepare for Windows mobile development](https://docs.microsoft.com/en-us/windows-hardware/manufacture/mobile/preparing-for-windows-mobile-development)
+[Customization answer file overview](https://docs.microsoft.com/en-us/windows-hardware/customize/mobile/mcsf/customization-answer-file)

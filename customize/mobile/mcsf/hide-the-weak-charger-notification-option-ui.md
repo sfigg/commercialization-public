@@ -26,7 +26,7 @@ By default, the OS shows the weak charger notification option UI.
 <a href="" id="instructions-"></a>**Instructions:**  
 1.  Create a customization answer file using the contents shown in the following code sample.
 
-    ```
+    ```XML
     <?xml version="1.0" encoding="utf-8" ?>  
     <ImageCustomizations xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate"  
                          Name="USBHideWeakChargerNotificationUI"  
@@ -86,12 +86,7 @@ By default, the OS shows the weak charger notification option UI.
 
     -   Verify that the **Notify me if my mobile device is charging slowly over USB** setting is also hidden to a user in the **USB** settings screen.
 
- 
+## Related topics
 
- 
-
-
-
-
-
-
+[Prepare for Windows mobile development](https://docs.microsoft.com/en-us/windows-hardware/manufacture/mobile/preparing-for-windows-mobile-development)
+[Customization answer file overview](https://docs.microsoft.com/en-us/windows-hardware/customize/mobile/mcsf/customization-answer-file)

@@ -52,7 +52,7 @@ Partners must keep the following design considerations in mind when implementing
 
 2.  Create a customization answer file using the contents shown in the following code sample.
 
-    ```
+    ```XML
     <?xml version="1.0" encoding="utf-8" ?>
     <ImageCustomizations xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate"  
                          Name="AdditionalRingtones"  
@@ -122,7 +122,7 @@ If you are setting the default alarm sound in addition to adding other alarm sou
 
 1.  Create a customization answer file using the contents shown in the following code sample or use the sample AdditionalRingtones.xml file.
 
-    ```
+    ```XML
        <Settings Path="EventSounds">
             <!-- Use to set a new default ringtone -->
             <Setting Name="DefaultRingtone" Value="" />
@@ -142,12 +142,7 @@ If you are setting the default alarm sound in addition to adding other alarm sou
 
 5.  Verify the custom ringtone names are correct for all display languages on the device.
 
- 
+## Related topics
 
- 
-
-
-
-
-
-
+[Prepare for Windows mobile development](https://docs.microsoft.com/en-us/windows-hardware/manufacture/mobile/preparing-for-windows-mobile-development)
+[Customization answer file overview](https://docs.microsoft.com/en-us/windows-hardware/customize/mobile/mcsf/customization-answer-file)

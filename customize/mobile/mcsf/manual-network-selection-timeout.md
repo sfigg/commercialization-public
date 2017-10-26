@@ -23,7 +23,7 @@ This customization supports: **per-device** value
 <a href="" id="instructions-"></a>**Instructions:**  
 1.  Create a customization answer file using the contents shown in the following code sample.
 
-    ```
+    ```XML
     <?xml version="1.0" encoding="utf-8" ?>  
     <ImageCustomizations xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate"  
                          Name="ManualNetworkSelectionTimeout"  
@@ -68,12 +68,7 @@ To fully test this customization, you must work with your mobile operator partne
 
 4.  While the device attempts to connect to the manually selected network, verify that the OS waits for the amount of time that you specified for `ManualNetworkSelectionTimeout` before it switches back to the automatic network selection mode, or displays a message that indicates that the device was unable to connect to the manually selected network.
 
- 
+## Related topics
 
- 
-
-
-
-
-
-
+[Prepare for Windows mobile development](https://docs.microsoft.com/en-us/windows-hardware/manufacture/mobile/preparing-for-windows-mobile-development)
+[Customization answer file overview](https://docs.microsoft.com/en-us/windows-hardware/customize/mobile/mcsf/customization-answer-file)

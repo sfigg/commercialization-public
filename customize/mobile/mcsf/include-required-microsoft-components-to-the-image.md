@@ -61,7 +61,7 @@ For a comprehensive list of required Microsoft components that must be included 
 
 3.  Add a &lt;Feature&gt;MESSAGINGGLOBAL&lt;/Feature&gt; entry in your OEMInput.xml file.
 
-    ```
+    ```XML
     <Features>
        <Microsoft>
           <Feature>MESSAGINGGLOBAL</Feature>
@@ -73,12 +73,7 @@ For a comprehensive list of required Microsoft components that must be included 
 
 5.  Verify that the Messaging app includes Skype integration.
 
- 
+## Related topics
 
- 
-
-
-
-
-
-
+[Prepare for Windows mobile development](https://docs.microsoft.com/en-us/windows-hardware/manufacture/mobile/preparing-for-windows-mobile-development)
+[Customization answer file overview](https://docs.microsoft.com/en-us/windows-hardware/customize/mobile/mcsf/customization-answer-file)

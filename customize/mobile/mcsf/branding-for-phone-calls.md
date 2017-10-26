@@ -36,7 +36,7 @@ The custom image must meet the following requirements:
 <a href="" id="instructions-"></a>**Instructions:**  
 1.  Create a customization answer file using the contents shown in the following code sample.
 
-    ```
+    ```XML
     <?xml version="1.0" encoding="utf-8" ?>  
     <ImageCustomizations xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate"  
                          Name="BrandingForPhoneCalls"  
@@ -148,12 +148,7 @@ The custom image must meet the following requirements:
 
 6.  If you set `ExtendedRejectCodes`, verify that messages that are displayed to alert the user that they cannot make calls include reject codes. For information about which screens are affected, see [Extended error messages for reject codes](extended-error-messages-for-reject-codes.md).
 
- 
+## Related topics
 
- 
-
-
-
-
-
-
+[Prepare for Windows mobile development](https://docs.microsoft.com/en-us/windows-hardware/manufacture/mobile/preparing-for-windows-mobile-development)
+[Customization answer file overview](https://docs.microsoft.com/en-us/windows-hardware/customize/mobile/mcsf/customization-answer-file)

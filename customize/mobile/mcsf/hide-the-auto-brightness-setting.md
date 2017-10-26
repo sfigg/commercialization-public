@@ -22,7 +22,7 @@ OEMs can hide the automatic brightness setting for phones that do not have an am
 <a href="" id="instructions-"></a>**Instructions:**  
 1.  Create a customization answer file using the contents shown in the following code sample.
 
-    ```
+    ```XML
     <?xml version="1.0" encoding="utf-8" ?>  
     <ImageCustomizations xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate"  
                          Name="HideAutoBrightness"  
@@ -77,12 +77,7 @@ OEMs can hide the automatic brightness setting for phones that do not have an am
 
 3.  Verify that the **Automatically adjust** toggle is hidden or visible depending on the `Value` that you set for `HideAutoBrightness`.
 
- 
+## Related topics
 
- 
-
-
-
-
-
-
+[Prepare for Windows mobile development](https://docs.microsoft.com/en-us/windows-hardware/manufacture/mobile/preparing-for-windows-mobile-development)
+[Customization answer file overview](https://docs.microsoft.com/en-us/windows-hardware/customize/mobile/mcsf/customization-answer-file)

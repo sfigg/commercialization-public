@@ -38,7 +38,7 @@ The WIFI\_FEATURE\_PACK package reduces memory usage and improves the user exper
 
 3.  Add a &lt;Feature&gt;WIFI\_FEATURE\_PACK&lt;/Feature&gt; entry in your OEMInput.xml file.
 
-    ```
+    ```XML
     <Features>
        <Microsoft>
           <Feature>WIFI_FEATURE_PACK</Feature>
@@ -52,12 +52,7 @@ The WIFI\_FEATURE\_PACK package reduces memory usage and improves the user exper
 
 5.  Verify that the new image doesn't contain cellular-related tiles, icons, and settings. Also verify that Wi-Fi features work and airplane mode functions correctly.
 
- 
+## Related topics
 
- 
-
-
-
-
-
-
+[Prepare for Windows mobile development](https://docs.microsoft.com/en-us/windows-hardware/manufacture/mobile/preparing-for-windows-mobile-development)
+[Customization answer file overview](https://docs.microsoft.com/en-us/windows-hardware/customize/mobile/mcsf/customization-answer-file)

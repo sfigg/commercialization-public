@@ -30,7 +30,7 @@ When the user launches the camera app, the device displays a message on the view
 <a href="" id="instructions-"></a>**Instructions:**  
 1.  Create a customization answer file using the contents shown in the following code sample.
 
-    ```
+    ```XML
     <?xml version="1.0" encoding="utf-8" ?>
     <ImageCustomizations xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate"  
                          Name="HWCameraShutterButtonNotPresent"  
@@ -90,12 +90,7 @@ When the user launches the camera app, the device displays a message on the view
 
     If the default camera app is configured to work above the lock screen, verify that the app that launches is the OEM lens app that you chose.
 
- 
+## Related topics
 
- 
-
-
-
-
-
-
+[Prepare for Windows mobile development](https://docs.microsoft.com/en-us/windows-hardware/manufacture/mobile/preparing-for-windows-mobile-development)
+[Customization answer file overview](https://docs.microsoft.com/en-us/windows-hardware/customize/mobile/mcsf/customization-answer-file)

@@ -36,7 +36,7 @@ Partners can display a Telecoil option in the **ease of access** screen in **Set
 <a href="" id="instructions-"></a>**Instructions:**  
 1.  Create a customization answer file using the contents shown in the following code sample.
 
-    ```
+    ```XML
     <?xml version="1.0" encoding="utf-8" ?>  
     <ImageCustomizations xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate"  
                          Name="TelecoilAndTTY"  
@@ -227,12 +227,7 @@ To enable TTY/TTD, use the **tty\_UI** registry entry exactly as shown in the Te
 
 3.  Verify that the TTY and/or Telecoil options are visible and the default options are set accordingly. If TTY is visible, ensure that the correct number of options are shown (2 or 4).
 
- 
+## Related topics
 
- 
-
-
-
-
-
-
+[Prepare for Windows mobile development](https://docs.microsoft.com/en-us/windows-hardware/manufacture/mobile/preparing-for-windows-mobile-development)
+[Customization answer file overview](https://docs.microsoft.com/en-us/windows-hardware/customize/mobile/mcsf/customization-answer-file)

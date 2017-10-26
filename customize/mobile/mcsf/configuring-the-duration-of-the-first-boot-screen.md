@@ -89,7 +89,7 @@ For comparison, the following table shows the duration of each boot screen when 
 <a href="" id="instructions-"></a>**Instructions:**  
 1.  Create a customization answer file using the contents shown in the following code sample.
 
-    ```
+    ```XML
     <?xml version="1.0" encoding="utf-8" ?>  
     <ImageCustomizations xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate"  
                          Name="FirstBootScreenDuration"  
@@ -116,22 +116,9 @@ For comparison, the following table shows the duration of each boot screen when 
     **Note**  
     Because the associated setting is a REG\_BINARY value, this value must be specified in hexadecimal pairs. For example, if you want to set the value to 1000 milliseconds or 0x03E8 (hexadecimal), you must set the value to "**E8,03**" in your customization answer file. Also note that the actual duration of the first screen may be several seconds longer than the value specified. For more information, see the note in the first table above.
 
-     
-
 ## Related topics
 
-
 [Configuring OEM and mobile operator boot screens](configuring-oem-and-mobile-operator-boot-screens.md)
-
 [Configuring a boot screen to display in the final boot screen slot](configuring-a-boot-screen-to-display-in-the-final-boot-screen-slot.md)
-
- 
-
- 
-
-
-
-
-
-
-
+[Prepare for Windows mobile development](https://docs.microsoft.com/en-us/windows-hardware/manufacture/mobile/preparing-for-windows-mobile-development)
+[Customization answer file overview](https://docs.microsoft.com/en-us/windows-hardware/customize/mobile/mcsf/customization-answer-file)

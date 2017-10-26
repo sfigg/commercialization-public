@@ -28,7 +28,7 @@ The steps for configuring an OEM lens app to run above the lock screen are very 
 
 1.  Create a customization answer file using the contents shown in the following code sample.
 
-    ```
+    ```XML
     <?xml version="1.0" encoding="utf-8" ?>  
     <ImageCustomizations xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate"  
                          Name="OEMLensAboveLock"  
@@ -95,7 +95,7 @@ The steps for configuring an OEM lens app to run above the lock screen are very 
 
         In the following example, the Contoso Sepia Lens app has been designated as the OEM lens app to run above the lock screen.
 
-        ```
+        ```XML
            <Settings Path="Photos/LensApps/{00000000-0000-0000-0000-000000000000}">       
               <Setting Name="Title" Value="Contoso Fish Eye Lens" />  
            </Settings> 
@@ -121,12 +121,7 @@ The steps for configuring an OEM lens app to run above the lock screen are very 
 
 6.  Press and hold the camera button while the phone is locked. Verify that the lens app that you chose in Step 3 is launched.
 
- 
+## Related topics
 
- 
-
-
-
-
-
-
+[Prepare for Windows mobile development](https://docs.microsoft.com/en-us/windows-hardware/manufacture/mobile/preparing-for-windows-mobile-development)
+[Customization answer file overview](https://docs.microsoft.com/en-us/windows-hardware/customize/mobile/mcsf/customization-answer-file)

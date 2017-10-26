@@ -128,7 +128,7 @@ This customization supports: **per-SIM** value
 <a href="" id="instructions-"></a>**Instructions:**  
 1.  Create a customization answer file using the contents shown in the following code sample.
 
-    ```
+    ```XML
     <?xml version="1.0" encoding="utf-8" ?>  
     <ImageCustomizations xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate"  
                          Name="SMSInterceptDenyList"  
@@ -198,12 +198,7 @@ The following notes apply for this customization:
 
 3.  Based on the filters that you added, verify if the messages that match the filters were correctly dropped and verify that those that don’t match any filters show up in the messaging app.
 
- 
+## Related topics
 
- 
-
-
-
-
-
-
+[Prepare for Windows mobile development](https://docs.microsoft.com/en-us/windows-hardware/manufacture/mobile/preparing-for-windows-mobile-development)
+[Customization answer file overview](https://docs.microsoft.com/en-us/windows-hardware/customize/mobile/mcsf/customization-answer-file)

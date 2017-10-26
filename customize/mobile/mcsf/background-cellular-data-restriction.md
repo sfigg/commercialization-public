@@ -24,7 +24,7 @@ OEMs can set the default value to either never restrict usage of the data plan o
 <a href="" id="instructions-"></a>**Instructions:**  
 1.  Create a customization answer file using the contents shown in the following code sample.
 
-    ```
+    ```XML
     <?xml version="1.0" encoding="utf-8" ?>  
 
     <ImageCustomizations xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate"  
@@ -81,12 +81,7 @@ OEMs can set the default value to either never restrict usage of the data plan o
 
     Verify that the correct settings option is enabled depending on the default value that you set. A toggle to restrict background data also becomes available to the user.
 
- 
+## Related topics
 
- 
-
-
-
-
-
-
+[Prepare for Windows mobile development](https://docs.microsoft.com/en-us/windows-hardware/manufacture/mobile/preparing-for-windows-mobile-development)
+[Customization answer file overview](https://docs.microsoft.com/en-us/windows-hardware/customize/mobile/mcsf/customization-answer-file)

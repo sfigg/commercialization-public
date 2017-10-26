@@ -22,7 +22,7 @@ OEMs can configure burst support on the device, the default capture mode, and th
 <a href="" id="instructions-"></a>**Instructions:**  
 1.  Create a customization answer file using the contents shown in the following code sample.
 
-    ```
+    ```XML
     <?xml version="1.0" encoding="utf-8" ?>  
     <ImageCustomizations xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate"  
                          Name="BurstAndCaptureModeSettings"  
@@ -117,12 +117,7 @@ OEMs can configure burst support on the device, the default capture mode, and th
 
 5.  To verify the default burst storage duration, go to the camera **Settings** screen, choose **photo settings…**, and verify if the default value specified in the **Keep unsaved burst photos for** field matches the value that you specified.
 
- 
+## Related topics
 
- 
-
-
-
-
-
-
+[Prepare for Windows mobile development](https://docs.microsoft.com/en-us/windows-hardware/manufacture/mobile/preparing-for-windows-mobile-development)
+[Customization answer file overview](https://docs.microsoft.com/en-us/windows-hardware/customize/mobile/mcsf/customization-answer-file)
