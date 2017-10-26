@@ -26,7 +26,7 @@ Starting with Windows 10, version 1709, DISM has the ability to capture, deploy,
 
 ## What you need to work with FFUs in Windows
 
-To capture, deploy, and mount FFU images with DISM, you'll need to work in a Windows 10, Version 1709 or later, or WinPE for Windows 10, version 1709 or later environment. 
+To capture, deploy, and mount FFU images with DISM, you'll need to work in a Windows 10, version 1709 or later, or WinPE for Windows 10, version 1709 or later environment. 
 
 To capture and deploy FFUs using the instructions below, you'll also need: 
 
@@ -105,10 +105,10 @@ To capture and deploy FFUs using the instructions below, you'll also need:
 
 5. Optional. Resize the Windows partition on the destination PC.
 
-    If the reference PC and the destination PC have different sized hard drives, you'll have to resize the destination PCs Windows partition. The applied FFU will have the same partition sizes and layout as the reference PC, so you'll need to expand the Windows partition to take advantage of the additional space on the destination PC. If the Windows partition is not the last partition on the drive, you won't be able to easily extend the Windows partition. The below instructions assume that the Windows partition is the last partition on the drive. 
+    If the reference PC and the destination PC have different sized hard drives, you'll have to resize the destination PC's Windows partition. The applied FFU will have the same partition sizes and layout as the reference PC, so you'll need to expand the Windows partition to take advantage of the additional space on the destination PC. If the Windows partition is not the last partition on the drive, you won't be able to easily extend the Windows partition. The below instructions assume that the Windows partition is the last partition on the drive. 
     
     > [!Note]
-    > If you're going to be capturing an FFU from a smaller drive than the drive it will be applied to, make sure that the Windows partition is the last partition on the drive. The [Sample scripts](windows-deployment-sample-scripts-sxs.md#ffu-deployment-scripts) in the [OEM Windows desktop deployment and imaging lab](oem-windows-deployment-and-imaging-walkthrough.md) has scripts that deploys Windows without a recovery partition, and then expands the Windows partition, and adds the Recovery partition after the FFU is applied.
+    > If you're going to be capturing an FFU from a smaller drive than the drive it will be applied to, make sure that the Windows partition is the last partition on the drive. [Sample scripts](windows-deployment-sample-scripts-sxs.md#ffu-deployment-scripts) in the [OEM Windows desktop deployment and imaging lab](oem-windows-deployment-and-imaging-walkthrough.md) has scripts to deploys Windows without a recovery partition, expands the Windows partition, and adds the Recovery partition after the FFU is applied.
 
     a. In WinPE on your destination PC, identify the volume of the Windows partiton that you have applied.
     
