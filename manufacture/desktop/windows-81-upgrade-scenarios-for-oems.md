@@ -16,7 +16,7 @@ ms.technology: windows-oem
 
 The Windows 8.1 upgrade retains the majority of OEM customizations, including OEM branding, apps, help and support information, drivers, and OEM store listings. Some OEM solutions, including a custom Help and Support experience or custom recovery solution might not persist through the upgrade. To mitigate any potential problems for your customers, test the end-to-end upgrade experience.
 
-The Windows 8.1 can be installed from the Windows Store or from media.
+The Windows 8.1 can be installed from the Microsoft Store or from media.
 
 Upgrade options for Windows 8.1 include:
 
@@ -47,13 +47,13 @@ The supported options for upgrade are:
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>Windows 8 (from Windows Store)</p></td>
+<td align="left"><p>Windows 8 (from Microsoft Store)</p></td>
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>No</p></td>
 <td align="left"><p>No</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>Windows RT (from Windows Store)</p></td>
+<td align="left"><p>Windows RT (from Microsoft Store)</p></td>
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>No</p></td>
 <td align="left"><p>No</p></td>
@@ -130,7 +130,7 @@ x64, x86
 
 Local recovery image is available
 
-Media or Windows Store
+Media or Microsoft Store
 
 Existing Windows 8 recovery image
 
@@ -140,7 +140,7 @@ x64, x86
 
 Local recovery image is not available
 
-Media or Windows Store
+Media or Microsoft Store
 
 None
 
@@ -150,7 +150,7 @@ Windows RT
 
 Local recovery image is available
 
-Windows Store
+Microsoft Store
 
 New Windows 8.1 recovery image
 
@@ -160,7 +160,7 @@ Windows RT
 
 Local recovery image is not available
 
-Windows Store
+Microsoft Store
 
 None
 
@@ -170,7 +170,7 @@ None
 
 On Windows RT PCs with an existing recovery image, the image will be replaced by a Windows 8.1 recovery image. The following customizations are migrated to the Windows 8.1 recovery image, including:
 
--   Store customizations and licenses for pre-loaded Windows Store apps
+-   Store customizations and licenses for pre-loaded Microsoft Store apps
 
 -   Drivers compatible with Windows 8.1
 
