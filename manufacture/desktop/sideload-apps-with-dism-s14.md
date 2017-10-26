@@ -353,10 +353,10 @@ To prepare a multi-lingual image, sign-in to the image, install any desired app 
 
 4.  **Install app updates using a Microsoft Store account (MSA account)**
 
-    1.  Sign-in to the store with an MSA account.
+    1.  Sign-in to the Microsoft Store with an MSA account.
 
         **Note**  
-        Store only. Don’t convert the local account to MSA.
+        Microsoft Store only. Don’t convert the local account to MSA.
 
         If you do not have an MSA account, you can update apps without a Microsoft Store account.
 
