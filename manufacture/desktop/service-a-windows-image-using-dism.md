@@ -47,7 +47,7 @@ You can also use DISM to service an image online. If you have to boot the operat
 </tr>
 <tr class="odd">
 <td align="left"><p>[Sideload Apps with DISM](sideload-apps-with-dism-s14.md)</p></td>
-<td align="left"><p>Install line-of-business (LOB) Windows Store apps to a Windows image by using Windows PowerShell® or the Deployment Image Servicing and Management (DISM) platform.</p></td>
+<td align="left"><p>Install line-of-business (LOB) Microsoft Store apps to a Windows image by using Windows PowerShell® or the Deployment Image Servicing and Management (DISM) platform.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>[Preinstall Apps Using DISM](preinstall-apps-using-dism.md)</p></td>
@@ -55,7 +55,7 @@ You can also use DISM to service an image online. If you have to boot the operat
 </tr>
 <tr class="odd">
 <td align="left"><p>[Customize the Start Screen](customize-the-start-screen.md)</p></td>
-<td align="left"><p>Customize the Start screen to include Windows Store apps and desktop apps that you use in your business.</p></td>
+<td align="left"><p>Customize the Start screen to include Microsoft Store apps and desktop apps that you use in your business.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>[Change the Windows Image to a Higher Edition Using DISM](change-the-windows-image-to-a-higher-edition-using-dism.md)</p></td>
