@@ -1097,15 +1097,15 @@ If you want to capture the changes in an image and apply it to other devices, yo
 
 ### Apps and Store opportunities
 
-Through Windows 10 and the Windows Store, you have tremendous opportunities for brand and device differentiation, revenue creation, and customer access. 
+Through Windows 10 and the Microsoft Store, you have tremendous opportunities for brand and device differentiation, revenue creation, and customer access. 
 
-Windows Store apps are at the center of the Windows 10 experience. They are Windows universal apps, so you can build apps for desktops, tablets, or phones that run Windows 10. As an OEM, you can provide an engaging customer experience and increase brand loyalty by providing a great set of value-added software and services along with the high-quality hardware that you build.
+Microsoft Store apps are at the center of the Windows 10 experience. They are Windows universal apps, so you can build apps for desktops, tablets, or phones that run Windows 10. As an OEM, you can provide an engaging customer experience and increase brand loyalty by providing a great set of value-added software and services along with the high-quality hardware that you build.
 
-For more information please refer to Windows Store Program 2016 Guide - 2016 Final Clean and Apps and Store Windows Engineering Guide (WEG)
+For more information please refer to Microsoft Store Program 2016 Guide - 2016 Final Clean and Apps and Store Windows Engineering Guide (WEG)
 
 **Important:** The key below must be set in Audit mode.
 
-You have to change a registry setting to add your OEM ID. If you're an OEM Windows Store Program participant, contact PartnerOps@microsoft.com to get your OEM ID. 
+You have to change a registry setting to add your OEM ID. If you're an OEM Microsoft Store Program participant, contact PartnerOps@microsoft.com to get your OEM ID. 
 
 | Item   | Location in Registry                                                                               |
 | ------ | -------------------------------------------------------------------------------------------------- |
