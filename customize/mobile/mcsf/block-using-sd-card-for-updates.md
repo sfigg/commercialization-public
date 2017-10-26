@@ -93,4 +93,5 @@ By default, this customization is not set and the OS can use the SD card for upd
 ## Related topics
 
 [Prepare for Windows mobile development](https://docs.microsoft.com/en-us/windows-hardware/manufacture/mobile/preparing-for-windows-mobile-development)
+
 [Customization answer file overview](https://docs.microsoft.com/en-us/windows-hardware/customize/mobile/mcsf/customization-answer-file)

@@ -84,4 +84,5 @@ OEMs can set the default value to either never restrict usage of the data plan o
 ## Related topics
 
 [Prepare for Windows mobile development](https://docs.microsoft.com/en-us/windows-hardware/manufacture/mobile/preparing-for-windows-mobile-development)
+
 [Customization answer file overview](https://docs.microsoft.com/en-us/windows-hardware/customize/mobile/mcsf/customization-answer-file)

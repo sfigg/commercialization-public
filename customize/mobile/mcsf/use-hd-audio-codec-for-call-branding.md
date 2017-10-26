@@ -100,4 +100,5 @@ OEMs can customize call progress branding when a call is made using a specific a
 ## Related topics
 
 [Prepare for Windows mobile development](https://docs.microsoft.com/en-us/windows-hardware/manufacture/mobile/preparing-for-windows-mobile-development)
+
 [Customization answer file overview](https://docs.microsoft.com/en-us/windows-hardware/customize/mobile/mcsf/customization-answer-file)

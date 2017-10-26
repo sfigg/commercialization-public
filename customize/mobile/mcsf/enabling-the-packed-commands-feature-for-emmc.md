@@ -70,4 +70,5 @@ You can configure the phone to enable the packed commands feature for eMMC parts
 ## Related topics
 
 [Prepare for Windows mobile development](https://docs.microsoft.com/en-us/windows-hardware/manufacture/mobile/preparing-for-windows-mobile-development)
+
 [Customization answer file overview](https://docs.microsoft.com/en-us/windows-hardware/customize/mobile/mcsf/customization-answer-file)

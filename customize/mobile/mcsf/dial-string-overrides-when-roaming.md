@@ -124,8 +124,9 @@ To verify this customization, the phone must be roaming internationally. Work wi
 2.  Dial the numbers that you specified and verify that numbers that are actually called are the override numbers that you specified for each dial string.
 
     Verify that the override numbers are not shown on the phone when the dial strings are called.
-    
+
 ## Related topics
 
 [Prepare for Windows mobile development](https://docs.microsoft.com/en-us/windows-hardware/manufacture/mobile/preparing-for-windows-mobile-development)
+
 [Customization answer file overview](https://docs.microsoft.com/en-us/windows-hardware/customize/mobile/mcsf/customization-answer-file)

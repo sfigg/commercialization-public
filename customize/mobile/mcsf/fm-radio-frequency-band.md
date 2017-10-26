@@ -95,5 +95,7 @@ OEMs can change the default setting for the FM radio receiver to use an appropri
 ## Related topics
 
 [Showing the FM radio](showing-the-fm-radio.md)
+
 [Prepare for Windows mobile development](https://docs.microsoft.com/en-us/windows-hardware/manufacture/mobile/preparing-for-windows-mobile-development)
+
 [Customization answer file overview](https://docs.microsoft.com/en-us/windows-hardware/customize/mobile/mcsf/customization-answer-file)

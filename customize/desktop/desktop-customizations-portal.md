@@ -43,4 +43,5 @@ These are some common ways to customize your desktop device. You will also find 
 ## Related topics
 
 [OEM deployment of Windows 10 for desktop editions](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/oem-deployment-of-windows-10-for-desktop-editions)
+
 [Deployment options](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/windows-deployment-options)

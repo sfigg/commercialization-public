@@ -28,4 +28,5 @@ Customizations for Windows 10 Mobile allow you to run mobile line-of-business ap
 ## Related topics
 
 [Prepare for Windows mobile development](https://docs.microsoft.com/en-us/windows-hardware/manufacture/mobile/preparing-for-windows-mobile-development)
+
 [Create mobile packages](https://docs.microsoft.com/en-us/windows-hardware/manufacture/mobile/creating-mobile-packages)

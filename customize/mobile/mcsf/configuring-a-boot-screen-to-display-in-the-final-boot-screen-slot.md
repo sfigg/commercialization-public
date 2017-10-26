@@ -71,6 +71,9 @@ By default, the Windows 10 Mobile logo is displayed as the final boot screen. H
 ## Related topics
 
 [Configuring OEM and mobile operator boot screens](configuring-oem-and-mobile-operator-boot-screens.md)
+
 [Configuring the duration of the first boot screen](configuring-the-duration-of-the-first-boot-screen.md)
+
 [Prepare for Windows mobile development](https://docs.microsoft.com/en-us/windows-hardware/manufacture/mobile/preparing-for-windows-mobile-development)
+
 [Customization answer file overview](https://docs.microsoft.com/en-us/windows-hardware/customize/mobile/mcsf/customization-answer-file)

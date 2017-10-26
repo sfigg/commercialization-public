@@ -119,6 +119,9 @@ For comparison, the following table shows the duration of each boot screen when 
 ## Related topics
 
 [Configuring OEM and mobile operator boot screens](configuring-oem-and-mobile-operator-boot-screens.md)
+
 [Configuring a boot screen to display in the final boot screen slot](configuring-a-boot-screen-to-display-in-the-final-boot-screen-slot.md)
+
 [Prepare for Windows mobile development](https://docs.microsoft.com/en-us/windows-hardware/manufacture/mobile/preparing-for-windows-mobile-development)
+
 [Customization answer file overview](https://docs.microsoft.com/en-us/windows-hardware/customize/mobile/mcsf/customization-answer-file)
