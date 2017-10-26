@@ -149,7 +149,7 @@ Radios that support the Microsoft defined Bluetooth HCI extensions must comply w
 
 **Description**
 
-To ensure a uniform experience across Windows Store Apps using the Bluetooth LE (GATT) WinRT API, filter drivers shall not be loaded on BTHLEENUM.SYS.
+To ensure a uniform experience across Microsoft Store Apps using the Bluetooth LE (GATT) WinRT API, filter drivers shall not be loaded on BTHLEENUM.SYS.
 
 ### Device.BusController.Bluetooth.Base.OnOffStateControllableViaSoftware
 

@@ -30,7 +30,7 @@ If NTP is enabled, the first NTP query happens post-shell ready. After that, the
 <a href="" id="instructions-"></a>**Instructions:**  
 1.  Create a customization answer file using the contents shown in the following code sample.
 
-    ```
+    ```XML
     <?xml version="1.0" encoding="utf-8" ?>  
     <ImageCustomizations xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate"  
                          Name="NTPSettings"  
@@ -101,12 +101,8 @@ If NTP is enabled, the first NTP query happens post-shell ready. After that, the
 
 4.  If you enabled NTP support, and depending on the values that you set for the regular sync interval, verify that the time on the device remains accurate after the sync interval has been reached. If the sync fails, verify if the correct time is set after the retry interval has passed.
 
- 
+## Related topics
 
- 
+[Prepare for Windows mobile development](https://docs.microsoft.com/en-us/windows-hardware/manufacture/mobile/preparing-for-windows-mobile-development)
 
-
-
-
-
-
+[Customization answer file overview](https://docs.microsoft.com/en-us/windows-hardware/customize/mobile/mcsf/customization-answer-file)

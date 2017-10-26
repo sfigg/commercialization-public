@@ -71,3 +71,9 @@ By default, when the device is connected to a Wi-Fi access point (AP), it does n
 1. Flash the build that contains this customization to a device.
 1. Connect to a Wi-Fi access point.
 1. Depending on the value you set for `PublishLimtiedConnectivity`, verify whether the **No Internet access** status message is shown below the AP name.
+
+## Related topics
+
+[Prepare for Windows mobile development](https://docs.microsoft.com/en-us/windows-hardware/manufacture/mobile/preparing-for-windows-mobile-development)
+
+[Customization answer file overview](https://docs.microsoft.com/en-us/windows-hardware/customize/mobile/mcsf/customization-answer-file)

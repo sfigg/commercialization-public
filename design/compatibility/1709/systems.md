@@ -235,7 +235,7 @@ The Bluetooth enabled controller on the system must support a minimum of 25 entr
 
 **Description**
 
-To ensure a uniform experience across Windows Store Apps using the Bluetooth LE (GATT) WinRT API, filter drivers shall not be loaded on BTHLEENUM.SYS.
+To ensure a uniform experience across Microsoft Store Apps using the Bluetooth LE (GATT) WinRT API, filter drivers shall not be loaded on BTHLEENUM.SYS.
 
 
 ### System.Client.BluetoothController.Base.OnOffStateControllableViaSoftware

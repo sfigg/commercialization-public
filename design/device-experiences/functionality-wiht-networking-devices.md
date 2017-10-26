@@ -42,7 +42,7 @@ However, the network quiet mode (NQM) feature does not allow these services to a
 
 Desktop and system service application developers must be aware of NQM and not make their applications or services dependent on network access during modern standby.
 
-Similarly, system designers and application developers must be aware that the network devices in modern standby are predominately operating with WoL patterns and protocol offloads enabled. This means that remote access into the system over the network is not available during modern standby, with the exception of Windows Store apps that have been pinned by the user to the lock screen.
+Similarly, system designers and application developers must be aware that the network devices in modern standby are predominately operating with WoL patterns and protocol offloads enabled. This means that remote access into the system over the network is not available during modern standby, with the exception of Microsoft Store apps that have been pinned by the user to the lock screen.
 
 ## Network list offload (NLO) for Wi-Fi
 

@@ -18,16 +18,16 @@ ms.technology: windows-oem
 # Integrating apps with modern standby
 
 
-Most apps that are built for Windows do not need any additional support to run in a modern standby system. Windows Store apps are already designed to separate background activity from the interactive pieces of the app by using background tasks. Many Windows Store apps use background tasks to update their live tile, generate toast or notifications, and sync data with the cloud. These same background tasks run during modern standby.
+Most apps that are built for Windows do not need any additional support to run in a modern standby system. Microsoft Store apps are already designed to separate background activity from the interactive pieces of the app by using background tasks. Many Microsoft Store apps use background tasks to update their live tile, generate toast or notifications, and sync data with the cloud. These same background tasks run during modern standby.
 
 Desktop applications are automatically paused by the Desktop Activity Monitor (DAM) after the system enters standby. The DAM suppresses desktop application execution in much the same way as the Sleep (S3) system power state in systems that support the traditional ACPI S3 and S4 states. Any differences between modern standby and S3 are largely transparent to desktop applications. These applications require no modification or update to ensure that they keep running after the system exits standby.
 
-The following sections describe the effect of modern standby on the execution of Windows Store apps, desktop applications, and system services.
+The following sections describe the effect of modern standby on the execution of Microsoft Store apps, desktop applications, and system services.
 
-## Windows Store apps
+## Microsoft Store apps
 
 
-Windows Store apps can create background tasks by using a specific set of WinRT APIs that allow the task to execute on a regular schedule or in response to an incoming network event. (WinRT is the Windows Runtime API surface and is distinct from Windows RT, which is the version of Windows that runs on the ARM processor architecture.) The WinRT APIs for background tasks allow the app's runtime to be carefully managed by Windows to prevent excessive battery drain.
+Microsoft Store apps can create background tasks by using a specific set of WinRT APIs that allow the task to execute on a regular schedule or in response to an incoming network event. (WinRT is the Windows Runtime API surface and is distinct from Windows RT, which is the version of Windows that runs on the ARM processor architecture.) The WinRT APIs for background tasks allow the app's runtime to be carefully managed by Windows to prevent excessive battery drain.
 
 A common use of background tasks is to update the content of tiles on the Start page in response to network events. In a modern standby system, the user sees the updated tile as soon as the system turns on; that's because the background task ran during modern standby.
 

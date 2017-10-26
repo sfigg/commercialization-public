@@ -73,7 +73,7 @@ Third-party drivers and apps are often designed to perform a task quickly and, t
 
 ## Recommended goals
 
-To deliver a great media playback experience, a Windows device should meet the goals in the following table. These performance and quality goals apply to Windows Store apps and desktop apps. They apply to both inbox and third-party playback apps.
+To deliver a great media playback experience, a Windows device should meet the goals in the following table. These performance and quality goals apply to Microsoft Store apps and desktop apps. They apply to both inbox and third-party playback apps.
 
 |   Metric priority   |   Metric                                                   | Exceptional          |
 |---------------------|------------------------------------------------------------|----------------------|
@@ -232,7 +232,7 @@ does not suggest concrete resolutions for the identified issues, but it does pro
 | [Optimizing Windows Devices Overview](http://channel9.msdn.com/Events/WinHEC/2015/OWD204)    | Video & Slide Deck   | Introduces the performance tools and test kits used to optimize performance on Windows devices. This overview lays the groundwork for building a Windows device that delivers fast boot and browser launch, snappy and responsive UI, and glitch free multimedia experiences. |
 | [Optimizing Windows Devices for Multimedia Experiences Lab](http://channel9.msdn.com/Events/WinHEC/2015/OWDHOL301)      | Doc        | WinHEC Media lab that covers Delivering a low latency and glitch-resilient experience, Audio & video playback quality, Glitch Free Playback test in the Hardware Lab Kit (HLK), and How to verify audio is offloaded. |
 | [Battery Life Optimization Overview](http://channel9.msdn.com/Events/WinHEC/2015/OWD202)                                                          | Video & Slide Deck     | Overview of the various aspects of designing and shipping a system that delivers a long battery life when the system is on and in standby. Topics include: Power modeling and tuning, Optimizing the power floor during screen on and standby, Standby modes: Connected Standby (CS), and Modern Standby (MS), Energy Estimation Engine and reporting the impact software pre-loads have on battery life, and Introduction to Battery Saver UX. |
-| [Audio and video performance (HTML)](https://msdn.microsoft.com/en-us/library/windows/apps/xaml/hh848311.aspx)    | Article          | When you develop an app that uses audio and video, you should be aware of some important performance considerations. This document summarizes key design areas for getting high-performing media playback in Windows Store apps using JavaScript. |
+| [Audio and video performance (HTML)](https://msdn.microsoft.com/en-us/library/windows/apps/xaml/hh848311.aspx)    | Article          | When you develop an app that uses audio and video, you should be aware of some important performance considerations. This document summarizes key design areas for getting high-performing media playback in Microsoft Store apps using JavaScript. |
 | [How to optimize video rendering (HTML)](https://msdn.microsoft.com/library/windows/apps/hh452785.aspx)  | Article    | Includes information about the msIsLayoutOptimalForPlayback attribute.    |
 | [Hardware-Offloaded Audio Processing](https://msdn.microsoft.com/en-us/library/windows/hardware/dn302038.aspx)   | Article              | Provides information about audio offloading in Windows 8 and how this support allows an audio driver to expose offloaded audio capabilities to the Windows audio stack.    |
 
