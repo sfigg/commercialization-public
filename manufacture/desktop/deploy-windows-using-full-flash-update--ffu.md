@@ -26,11 +26,11 @@ Starting with Windows 10, version 1709, DISM has the ability to capture, deploy,
 
 ## What you need to work with FFUs in Windows
 
-To capture, deploy, and mount FFU images with DISM, you'll need to work in a Windows 10, Version 1709 or later, or WinPE for Windows 10, version 1709 or later environment. You can also [use the latest version of DISM in a previous version of Windows 10 or WinPE](copy-dism-to-another-computer.md).
+To capture, deploy, and mount FFU images with DISM, you'll need to work in a Windows 10, Version 1709 or later, or WinPE for Windows 10, version 1709 or later environment. 
 
 To capture and deploy FFUs using the instructions below, you'll also need: 
 
-- A Windows PC that has been [generalized with Sysprep](sysprep--generalize--a-windows-installation.md). We'll refer to this as the reference PC. For a walkthrough on how to create an image that's ready for deployment, see the [Windows OEM deployment lab](oem-windows-deployment-and-imaging-walkthrough.md).
+- A Windows PC that has been [generalized with Sysprep](sysprep--generalize--a-windows-installation.md). We'll refer to this as the reference PC. For a walkthrough on how to create an image that's ready for deployment, see the [Windows OEM deployment lab](oem-windows-deployment-and-imaging-walkthrough.md), and use the scripts for FFU when working through the lab.
 - A PC to deploy the FFU image to. We'll refer to this as the destination PC. The hard drive on this PC will be overwritten, so make sure you're using a PC that doesn't have any information you want to keep.
 - The latest version of the ADK, from [Download the Windows ADK](https://developer.microsoft.com/en-us/windows/hardware/windows-assessment-deployment-kit)
 - Bootable WinPE media for Windows 10, version 1709 or later. See [WinPE: Create USB bootable drive](winpe-create-usb-bootable-drive.md) for instructions on how to create WinPE Media.
@@ -103,9 +103,12 @@ To capture and deploy FFUs using the instructions below, you'll also need:
 
     To see the commands available with /apply-ffu, run `dism /apply-ffu /?` or see [DISM Image Management Command-Line Options](dism-image-management-command-line-options-s14.md).
 
-5. Optional. Run diskpart to resize the drive on the destination PC.
+5. Optional. Resize the Windows partition on the destination PC.
 
-    If the reference PC and the destination PC have different sized hard drives, you'll have to resize the destination PCs drive. The applied FFU will have the same partition sizes as the reference PC, so you'll need to expand the volume to take advantage of the additional space on the reference PC.
+    If the reference PC and the destination PC have different sized hard drives, you'll have to resize the destination PCs Windows partition. The applied FFU will have the same partition sizes and layout as the reference PC, so you'll need to expand the Windows partition to take advantage of the additional space on the destination PC. If the Windows partition is not the last partition on the drive, you won't be able to easily extend the Windows partition. The below instructions assume that the Windows partition is the last partition on the drive. 
+    
+    > [!Note]
+    > If you're going to be capturing an FFU from a smaller drive than the drive it will be applied to, make sure that the Windows partition is the last partition on the drive. The [Sample scripts](windows-deployment-sample-scripts-sxs.md#ffu-deployment-scripts) in the [OEM Windows desktop deployment and imaging lab](oem-windows-deployment-and-imaging-walkthrough.md) has scripts that deploys Windows without a recovery partition, and then expands the Windows partition, and adds the Recovery partition after the FFU is applied.
 
     a. In WinPE on your destination PC, identify the volume of the Windows partiton that you have applied.
     
