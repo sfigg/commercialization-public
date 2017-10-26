@@ -373,9 +373,9 @@ The following table shows the types of language packages and components availabl
     Dism /Image:"c:\mount\windows" /Add-ProvisionedAppxPackage /packagepath:<path to appxbundle>\2b362ab83144485d9e9629ad2889a680.appxbundle /licensepath:<path to license file>\2b362ab83144485d9e9629ad2889a680_License1.xml
     ```
 
-**Step 9: Add Windows Universal apps or Windows 8.1 Store apps (Optional)**
+**Step 9: Add Windows Universal apps or Windows 8.1 Microsoft Store apps (Optional)**
 
-1.  You can add Windows Universal apps and Windows 8.1 Store apps to your image by using DISM. In this example, you will preinstall Office, OneNote, and Windows Reader 8.1.
+1.  You can add Windows Universal apps and Windows 8.1 Microsoft Store apps to your image by using DISM. In this example, you will preinstall Office, OneNote, and Windows Reader 8.1.
 
     Skip this step for hardware configuration 1.
 
