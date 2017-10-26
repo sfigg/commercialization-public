@@ -19,7 +19,7 @@ You can sideload line-of-business (LOB) Windows apps to a Windows 10 by using P
 -   Universal Windows apps devices: Windows apps built upon the Universal Windows app platform, targeting the universal device family.
 -   Universal Windows 8 apps: Windows apps that target Windows 8.x.
 
-Typically, Windows apps are available only through the Windows Store. You can submit LOB Windows apps to the Windows Store and make them available outside of your enterprise. However, you can also develop Windows apps for use only within your enterprise and add them to Windows devices you manage through a process we call *sideloading*. Sideloaded apps do not have to be certified by or installed through the Windows Store.
+Typically, Windows apps are available only through the Microsoft Store. You can submit LOB Windows apps to the Microsoft Store and make them available outside of your enterprise. However, you can also develop Windows apps for use only within your enterprise and add them to Windows devices you manage through a process we call *sideloading*. Sideloaded apps do not have to be certified by or installed through the Microsoft Store.
 
 Here’s what you’ll need to know in order to sideload apps:
 
@@ -44,8 +44,8 @@ Here’s what you’ll need to know in order to sideload apps:
 <td align="left"><p>Shows the requirements to be met in order to sideload apps on devices running different Windows Editions. Includes how to use Group Policy to configure your enterprise PCs for sideloading apps.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[Configure PCs for Developing Windows Store Apps](#bkmk_developerlicense)</p></td>
-<td align="left"><p>Shows you how to configure your PC to have a developer license that does not expire. The PC can be used to develop Windows Store apps or enterprise apps that will be added to your enterprise devices.</p></td>
+<td align="left"><p>[Configure PCs for Developing Microsoft Store Apps](#bkmk_developerlicense)</p></td>
+<td align="left"><p>Shows you how to configure your PC to have a developer license that does not expire. The PC can be used to develop Microsoft Store apps or enterprise apps that will be added to your enterprise devices.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>[Add Apps](#addapps)</p></td>
@@ -73,32 +73,32 @@ Here’s what you’ll need to know in order to sideload apps:
 
 **Understand Sideloading Concepts**
 
-Windows apps differ from Windows desktop applications in their design and in the way users can interact with them. To learn more about Windows apps , see [what is a Windows Store App?](http://go.microsoft.com/fwlink/?LinkId=264710).
+Windows apps differ from Windows desktop applications in their design and in the way users can interact with them. To learn more about Windows apps , see [what is a Microsoft Store App?](http://go.microsoft.com/fwlink/?LinkId=264710).
 
-You cannot sideload an app that has been downloaded from the Windows Store. To install Windows apps that are not part of your business line, you must use the Windows Store. To learn more, see [Managing Client Access to the Windows Store](http://go.microsoft.com/fwlink/?LinkId=264712).
+You cannot sideload an app that has been downloaded from the Microsoft Store. To install Windows apps that are not part of your business line, you must use the Microsoft Store. To learn more, see [Managing Client Access to the Microsoft Store](http://go.microsoft.com/fwlink/?LinkId=264712).
 
-LOB Windows apps that are not signed by the Windows Store can be sideloaded or added to a PC in the enterprise through scripts at runtime on a per-user basis. They can also be provisioned in an image by the enterprise so that the app is registered to each new user profile that's created on the PC. The requirements to sideload the app per-user or in the image are the same, but the Windows PowerShell cmdlets you use to add, get, and remove the apps are different. This topic provides steps for both methods.
+LOB Windows apps that are not signed by the Microsoft Store can be sideloaded or added to a PC in the enterprise through scripts at runtime on a per-user basis. They can also be provisioned in an image by the enterprise so that the app is registered to each new user profile that's created on the PC. The requirements to sideload the app per-user or in the image are the same, but the Windows PowerShell cmdlets you use to add, get, and remove the apps are different. This topic provides steps for both methods.
 
-Before you can sideload LOB Windows apps that are not signed by the Windows Store, you will need to configure the PC, see [Configure PCs for Sideloading Requirements](#sideloadingrequirements).
+Before you can sideload LOB Windows apps that are not signed by the Microsoft Store, you will need to configure the PC, see [Configure PCs for Sideloading Requirements](#sideloadingrequirements).
 
 **When You’re Developing LOB Windows apps for Your Enterprise**
 
-LOB Windows apps that are not signed by the Windows Store must be cryptographically signed. The apps can only be installed on a computer that trusts the signing certificate.
+LOB Windows apps that are not signed by the Microsoft Store must be cryptographically signed. The apps can only be installed on a computer that trusts the signing certificate.
 
 For more information about how to sign an app and using certificates, see [App Packaging Tools](http://go.microsoft.com/fwlink/?LinkId=242873).
 
 However, you can use a developer license to add apps that are in development to your PC. For more information about testing apps that are in development, see [Get a Developer License](http://go.microsoft.com/fwlink/?LinkId=241313).
 
-You can use Group Policy to configure your domain-joined PCs to have a developer license that does not expire to support app development. Once the PCs are configured, you won’t need to connect to the Internet to obtain or renew a license. See [Configure PCs for Developing Windows Store Apps](#bkmk_developerlicense) for more information.
+You can use Group Policy to configure your domain-joined PCs to have a developer license that does not expire to support app development. Once the PCs are configured, you won’t need to connect to the Internet to obtain or renew a license. See [Configure PCs for Developing Microsoft Store Apps](#bkmk_developerlicense) for more information.
 
 ## <span id="SideloadingRequirements"></span><span id="sideloadingrequirements"></span><span id="SIDELOADINGREQUIREMENTS"></span>Configure PCs for Sideloading Requirements
 
 
 Until the device meets all of the sideloading requirements, app tiles on the Start menu will show an "X" in the bottom-right corner to indicate that a problem is preventing the app from running.
 
-In some cases, part of those requirements includes using a sideloading product key. This key provides use rights needed to deploy Windows 8, or Windows 8.1 apps directly to devices without having to install them through the public Windows Store.
+In some cases, part of those requirements includes using a sideloading product key. This key provides use rights needed to deploy Windows 8, or Windows 8.1 apps directly to devices without having to install them through the public Microsoft Store.
 
-Before you can add and run sideloaded LOB Windows apps that are not signed by the Windows Store you must configure your device based on the following conditions:
+Before you can add and run sideloaded LOB Windows apps that are not signed by the Microsoft Store you must configure your device based on the following conditions:
 
 1.  For those devices that are joined to a workgroup, you must:
 
@@ -273,7 +273,7 @@ On Windows 8.1 and newer, you no longer need to remove the provisioned app prio
 
 **Add a provisioned LOB app to a Windows image**
 
--   Use the Deployment Image Servicing and Management (DISM) command-line tool or PowerShell cmdlets to add the LOB app without a Windows Store license. For example, at an elevated command prompt, type:
+-   Use the Deployment Image Servicing and Management (DISM) command-line tool or PowerShell cmdlets to add the LOB app without a Microsoft Store license. For example, at an elevated command prompt, type:
 
     ```
     DISM /Online /Add-ProvisionedAppxPackage /PackagePath:C:\App1.appx /SkipLicense
@@ -300,7 +300,7 @@ On Windows 8.1 and newer, to update a provisioned app, you will need to update 
 
 **Update a provisioned LOB app to a Windows image**
 
-1.  Use the PowerShell to update the LOB app without a Windows Store license. This must be done for each user that has signed in to the PC running the Windows image. For example, if you have installed the original version of the app, 1.0.0.0, that now needs to be updated to version 1.0.0.1, then at a PowerShell session, type:
+1.  Use the PowerShell to update the LOB app without a Microsoft Store license. This must be done for each user that has signed in to the PC running the Windows image. For example, if you have installed the original version of the app, 1.0.0.0, that now needs to be updated to version 1.0.0.1, then at a PowerShell session, type:
 
     ```
     Add-AppxPackage -Path App1_1.0.0.2 -DependencyPath C:\appx\WinJS.appx
@@ -338,7 +338,7 @@ To prepare a multi-lingual image, sign-in to the image, install any desired app 
     ```
 
     **Note**  
-    See [Change the language used in apps](http://go.microsoft.com/fwlink/?LinkId=389195) for information about setting the language and installing updates from the Windows Store.
+    See [Change the language used in apps](http://go.microsoft.com/fwlink/?LinkId=389195) for information about setting the language and installing updates from the Microsoft Store.
 
      
 
@@ -351,20 +351,20 @@ To prepare a multi-lingual image, sign-in to the image, install any desired app 
 
 3.  Add the desired languages to the current user’s language preference list.
 
-4.  **Install app updates using a Windows Store account (MSA account)**
+4.  **Install app updates using a Microsoft Store account (MSA account)**
 
     1.  Sign-in to the store with an MSA account.
 
         **Note**  
         Store only. Don’t convert the local account to MSA.
 
-        If you do not have an MSA account, you can update apps without a Windows Store account.
+        If you do not have an MSA account, you can update apps without a Microsoft Store account.
 
          
 
     2.  Check for updates and install new language resource packs.
 
-    3.  Sign out of the Windows Store and remove the MSA account.
+    3.  Sign out of the Microsoft Store and remove the MSA account.
 
 5.  Open an elevated command prompt and type:
 
@@ -376,13 +376,13 @@ To prepare a multi-lingual image, sign-in to the image, install any desired app 
 
 6.  You should see the PC boot to OOBE. Any languages that you have added prior to Copy Profile should be present at this point.
 
-**Install app updates without using a Windows Store account (MSA account)**
+**Install app updates without using a Microsoft Store account (MSA account)**
 
 1.  After the PC has finished installing, open an elevated command prompt.
 
 2.  Type **Start ms-windows-store:Updates**
 
-3.  You will see the Windows Store Updates page. You should see the pending updates displayed.
+3.  You will see the Microsoft Store Updates page. You should see the pending updates displayed.
 
 4.  Tap **Install** to install the updates.
 
@@ -489,13 +489,13 @@ You can remove individual instances of an app, or remove the provisioning settin
 
 [Customize the Start Screen](customize-the-start-screen.md)
 
-[Managing Client Access to the Windows Store](http://go.microsoft.com/fwlink/?LinkId=264712)
+[Managing Client Access to the Microsoft Store](http://go.microsoft.com/fwlink/?LinkId=264712)
 
 [Microsoft Volume Licensing](http://go.microsoft.com/fwlink/?LinkId=264711)
 
 [Remote Server Administration Tools for Windows 8.1](http://go.microsoft.com/fwlink/?LinkId=299896)
 
-[What is a Windows Store App?](http://go.microsoft.com/fwlink/?LinkId=264710)
+[What is a Microsoft Store App?](http://go.microsoft.com/fwlink/?LinkId=264710)
 
 [Windows 8 Licensing Guide](http://go.microsoft.com/fwlink/?LinkId=267899)
 
