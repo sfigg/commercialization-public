@@ -35,16 +35,16 @@ If you're deploying an image to computers that have the same hardware and device
 You can run the **Sysprep** command up to 8 times on a single Windows image. After running Sysprep 8 times, you must recreate your Windows image. In previous versions of Windows, you could use the `SkipRearm` answer file setting to reset the Windows Product Activation clock when running sysprep. If you are using a volume licensing key or a retail product key, you don't have to use `SkipRearm` because Windows is automatically activated. 
 
 
-### Store Apps
+### Microsoft Store Apps
 
-Updating your Windows Store apps before generalizing a Windows image will cause Sysprep to fail. `Sysprep /generalize` requires that all apps are provisioned for all users, however, when you update an app from the Windows Store, that app becomes tied to the user account. The following error appears in the sysprep log files (%WINDIR%\\System32\\Sysprep\\Panther):
+Updating your Microsoft Store apps before generalizing a Windows image will cause Sysprep to fail. `Sysprep /generalize` requires that all apps are provisioned for all users, however, when you update an app from the Microsoft Store, that app becomes tied to the user account. The following error appears in the sysprep log files (%WINDIR%\\System32\\Sysprep\\Panther):
 
 `<package name> was installed for a user, but not provisioned for all users. This package will not function properly in the sysprep image.`
 
 
-Instead of using the Windows Store to update your apps, you should sideload updates to your line-of-business apps, or have end-users update their apps by using the Windows Store on their destination PCs. If Windows Store access in a managed environment is disabled by an IT administrator, end-users will not be able to update the Windows Store apps.
+Instead of using the Microsoft Store to update your apps, you should sideload updates to your line-of-business apps, or have end-users update their apps by using the Microsoft Store on their destination PCs. If Microsoft Store access in a managed environment is disabled by an IT administrator, end-users will not be able to update the Microsoft Store apps.
 
-For more information about sideloading line-of-business Windows Store apps, see [Sideload Apps with DISM](sideload-apps-with-dism-s14.md) and [Customize the Start Screen](customize-the-start-screen.md).
+For more information about sideloading line-of-business Microsoft Store apps, see [Sideload Apps with DISM](sideload-apps-with-dism-s14.md) and [Customize the Start Screen](customize-the-start-screen.md).
 
 
 ## Generalize an image

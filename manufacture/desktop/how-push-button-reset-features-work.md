@@ -127,7 +127,7 @@ The **Refresh your PC** feature bypasses the following locations and preserves t
 
 The Refresh your PC feature handles application types differently in order to ensure that the PC can be restored to a reliable state. Applications are handled as follows:
 
--   User-acquired Windows apps from the Windows Store are not preserved. Users will need to reinstall them from the Windows Store. This is a change from Windows 8/8.1.
+-   User-acquired Windows apps from the Microsoft Store are not preserved. Users will need to reinstall them from the Microsoft Store. This is a change from Windows 8/8.1.
 -   Preinstalled Windows apps are restored to their factory version and state. Updates to these apps will be downloaded and reapplied automatically when internet connectivity is available.
 -   User-acquired Windows desktop applications are not preserved. Users will need to reinstall them manually.
 -   Preinstalled Windows desktop applications captured in the customizations provisioning package will be restored to their factory condition, even if users have previously uninstalled them.
