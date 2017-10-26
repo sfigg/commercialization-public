@@ -42,7 +42,7 @@ Users expect their PC and tablet devices to instantly power on, the same way the
 
 ### <a href="" id="background-activity-while-the-system-is--off-"></a>Background activity while the system is “off”
 
-When Modern Standby-capable systems go into Standby, the system is still in S0 (a fully running state, ready and able to do work). Desktop apps are stopped by the Desktop Activity Moderator (DAM); however, background tasks from Windows Store apps are permitted to do work. On a connected Modern Standby system, the network is still active, and users can receive events such as VoIP calls in a Windows store app. While VoIP calls coming in over Wi-Fi wouldn’t be available on a disconnected Modern Standby system, real-time events such as reminders or a Bluetooth device syncing can still happen.
+When Modern Standby-capable systems go into Standby, the system is still in S0 (a fully running state, ready and able to do work). Desktop apps are stopped by the Desktop Activity Moderator (DAM); however, background tasks from Microsoft Store apps are permitted to do work. On a connected Modern Standby system, the network is still active, and users can receive events such as VoIP calls in a Windows store app. While VoIP calls coming in over Wi-Fi wouldn’t be available on a disconnected Modern Standby system, real-time events such as reminders or a Bluetooth device syncing can still happen.
 
 ### Simplified wake story
 

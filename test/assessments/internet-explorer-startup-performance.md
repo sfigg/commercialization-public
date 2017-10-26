@@ -47,7 +47,7 @@ In this topic:
 
 The first-run help tips in Windows 8.1 can negatively affect assessment results. To disable these, run the following command from an elevated command prompt, and reboot the computer: `reg.exe add "HKLM\Software\Policies\Microsoft\Windows\EdgeUI" /v DisableHelpSticker /t REG_DWORD /d "1" /f`
 
-Run this assessment only while the desktop is full screen. Do not run this assessment if you have another Windows Store app opened side-by-side with the desktop.
+Run this assessment only while the desktop is full screen. Do not run this assessment if you have another Microsoft Store app opened side-by-side with the desktop.
 
 You can run this assessment on the following operating systems:
 

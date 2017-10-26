@@ -49,7 +49,7 @@ We recommend that you create a Microsoft account for testing purposes. You can u
 -   **System configuration:**
     -   Factory image is installed on the system.
     -   All drivers are loaded in Device Manager.
-    -   Factory Windows Store apps are installed.
+    -   Factory Microsoft Store apps are installed.
     -   System is running on battery power.
     -   System is connected to a Wi-Fi access point (AP) that has Internet connectivity.
     -   Mail app is configured with a test Microsoft account.
@@ -103,7 +103,7 @@ The instant messaging and video chat scenarios are enumerated in the following t
 -   **System configuration:**
     -   Factory image installed on the system.
     -   All drivers loaded in Device Manager.
-    -   Factory Windows Store apps are installed.
+    -   Factory Microsoft Store apps are installed.
     -   System is running on battery power.
     -   System is connected to a Wi-Fi AP with Internet connectivity.
     -   Skype app configured with test Microsoft account.
@@ -162,7 +162,7 @@ On resume from modern standby, you can run a SleepStudy report to view the time 
 -   System configuration:
     -   Factory image installed on the system.
     -   All drivers loaded in Device Manager.
-    -   Factory Windows Store apps are installed.
+    -   Factory Microsoft Store apps are installed.
     -   System is running on battery power.
     -   System is configured with a test Microsoft account for inbox Video app access.
 

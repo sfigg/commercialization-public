@@ -84,13 +84,13 @@ The following table describes each phase of preparing software for modern standb
 </tr>
 <tr class="even">
 <td><p>Process Lifetime Manager (PLM) phase</p></td>
-<td><p>The system suspends Windows Store apps that are in the foreground.</p></td>
+<td><p>The system suspends Microsoft Store apps that are in the foreground.</p></td>
 <td><p></p>
 <ul>
-<li>Suspend all foreground Windows Store apps.</li>
+<li>Suspend all foreground Microsoft Store apps.</li>
 <li>Check for ongoing non-offloaded audio playback or communications app activity.</li>
 </ul></td>
-<td><p>All foreground Windows Store apps have been suspended and no non-offloaded audio playback is occurring.</p></td>
+<td><p>All foreground Microsoft Store apps have been suspended and no non-offloaded audio playback is occurring.</p></td>
 <td><p></p>
 <ul>
 <li>Typically, less than five seconds.</li>

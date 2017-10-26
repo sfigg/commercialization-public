@@ -118,7 +118,7 @@ If an LED is provided, it should not vary in intensity or color over time or oth
 ## Real-time clock reserve battery capacity
 
 
-Maintaining accurate time is essential to delivering a great user experience. In addition, accurate time is required to connect to services such as the Windows Store. All Windows systems should maintain accurate time for a period of at least four weeks, even when off. Typically this is done by employing a separate backup battery to maintain the real-time clock (RTC). This is not always possible or practical on highly portable form-factors.
+Maintaining accurate time is essential to delivering a great user experience. In addition, accurate time is required to connect to services such as the Microsoft Store. All Windows systems should maintain accurate time for a period of at least four weeks, even when off. Typically this is done by employing a separate backup battery to maintain the real-time clock (RTC). This is not always possible or practical on highly portable form-factors.
 
 System designers can use a dedicated battery or reserve a portion of the main system battery. Given the modest power requirements of the RTC, a relatively low reserve threshold will provide guarantees that match dedicated backup batteries that exist in today's PCs.
 
