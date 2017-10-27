@@ -20,7 +20,7 @@ ms.technology: windows-oem
 
 Windows can leave the System on a Chip (SoC) in the active power state during standby while app background tasks are executing or critical system tasks are executing. Windows components that are allowed to leave the SoC in the active power state are called activators because they are registered with the power manager as capable of blocking the transition back to the idle power mode.
 
-The most common activator is called Background Infrastructure (BI). BI is the system component that is responsible for managing and executing background tasks for Windows Store apps. BI enables its activator reference whenever a background task is executing during standby. As soon as all background tasks have stopped executing, or they are forced to stop executing, BI will release or clear its activator reference and the SoC can go back to the idle power mode.
+The most common activator is called Background Infrastructure (BI). BI is the system component that is responsible for managing and executing background tasks for Microsoft Store apps. BI enables its activator reference whenever a background task is executing during standby. As soon as all background tasks have stopped executing, or they are forced to stop executing, BI will release or clear its activator reference and the SoC can go back to the idle power mode.
 
 Whenever an activator has an outstanding reference, the SoC will remain in the active power mode and will not enter the idle (DRIPS) power mode. There are a number of activators in Windows. The following activators are the most common.
 
@@ -44,9 +44,9 @@ Whenever an activator has an outstanding reference, the SoC will remain in the a
 <tbody>
 <tr class="odd">
 <td><p>BI</p></td>
-<td><p>Background Infrastructure. This activator manages background tasks for Windows Store apps.</p></td>
-<td><p>Any background task for a Windows Store app is running.</p></td>
-<td><p>When all background tasks for Windows Store apps have completed.</p></td>
+<td><p>Background Infrastructure. This activator manages background tasks for Microsoft Store apps.</p></td>
+<td><p>Any background task for a Microsoft Store app is running.</p></td>
+<td><p>When all background tasks for Microsoft Store apps have completed.</p></td>
 <td></td>
 </tr>
 <tr class="even">
@@ -59,16 +59,16 @@ Whenever an activator has an outstanding reference, the SoC will remain in the a
 <tr class="odd">
 <td><p>WNS</p></td>
 <td><p>Windows Notification Service. This activator manages the system connection to the WNS service in the cloud.</p></td>
-<td><p>Windows is connecting to WNS. When the system needs to deliver a push notification to a Windows component or Windows Store app.</p></td>
+<td><p>Windows is connecting to WNS. When the system needs to deliver a push notification to a Windows component or Microsoft Store app.</p></td>
 <td><p>When there is no WNS activity or active push notifications.</p></td>
 <td><p>This component is shared with the Image Download Manager. WNS supports delivery of notifications to many built-in Windows system services.</p></td>
 </tr>
 <tr class="even">
 <td><p>PLM</p></td>
-<td><p>Process Lifetime Manager. This activator manages the execution and scheduling of Windows Store apps.</p></td>
-<td><p>The PLM is waiting for a Windows Store app to suspend.</p></td>
-<td><p>All Windows Store apps are suspended.</p></td>
-<td><p>The longest typical duration is five seconds. The PLM reference will be enabled when a Windows Store app is playing music with the screen off.</p></td>
+<td><p>Process Lifetime Manager. This activator manages the execution and scheduling of Microsoft Store apps.</p></td>
+<td><p>The PLM is waiting for a Microsoft Store app to suspend.</p></td>
+<td><p>All Microsoft Store apps are suspended.</p></td>
+<td><p>The longest typical duration is five seconds. The PLM reference will be enabled when a Microsoft Store app is playing music with the screen off.</p></td>
 </tr>
 <tr class="odd">
 <td><p>NCSI</p></td>

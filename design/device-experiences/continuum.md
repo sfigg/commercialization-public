@@ -35,8 +35,8 @@ Tablet mode is a feature that switches your device experience from tablet mode t
 When the device switches to tablet mode, the following occur:
 
 -   Start resizes across the entire screen, providing an immersive experience.
--   The title bars of Store apps auto-hide to remove unnecessary chrome and let content shine through.
--   Store apps and Win32 apps can optimize their layout to be touch-first when in tablet mode.
+-   The title bars of Microsoft Store apps auto-hide to remove unnecessary chrome and let content shine through.
+-   Microsoft Store apps and Win32 apps can optimize their layout to be touch-first when in tablet mode.
 -   The user can close apps, even Win32 apps, by swiping down from the top edge.
 -   The user can snap up to two apps side-by-side, including Win32 apps, and easily resize them simultaneously with their finger.
 -   Apps can auto-launch side-by-side to create multitasking layouts without much user effort.

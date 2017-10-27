@@ -12,7 +12,7 @@ ms.technology: windows-oem
 
 # Windows 10 S manufacturing overview
 
-Windows 10 S is a specific configuration of Windows 10 Pro that offers a familiar, productive Windows experience that’s streamlined for security and performance. By exclusively using apps in the Windows Store and ensuring that you browse safely with Microsoft Edge, Windows 10 S keeps you running fast and secure day in and day out. The same technology that makes Windows 10 S secure also creates some differences when creating software images for Windows 10 devices.
+Windows 10 S is a specific configuration of Windows 10 Pro that offers a familiar, productive Windows experience that’s streamlined for security and performance. By exclusively using apps in the Microsoft Store and ensuring that you browse safely with Microsoft Edge, Windows 10 S keeps you running fast and secure day in and day out. The same technology that makes Windows 10 S secure also creates some differences when creating software images for Windows 10 devices.
 
 When you plan your Windows 10 S image and deployment, you'll have to ensure that your customizations will work with Windows 10 S, as well as the manufacturing environment.
 

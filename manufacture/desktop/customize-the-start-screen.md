@@ -16,9 +16,9 @@ ms.technology: windows-oem
 
 You can add your business apps to a Windows image and customize the **Start** screen to include them. You can customize the **Start** screen for Windows 10 Enterprise, Windows Server 2016, or a domain-joined PC running Windows 10 Pro.
 
-Line-of-business (LOB) Windows Store apps do not have to be certified or installed through the Windows Store. Adding apps that do not come from the Windows Store is called *sideloading*. Sideloaded apps must be signed with a certificate that is chained to a trusted root certificate. For more information about sideloading Windows Store apps, including requirements, see [Sideload Apps with DISM](sideload-apps-with-dism-s14.md).
+Line-of-business (LOB) Microsoft Store apps do not have to be certified or installed through the Microsoft Store. Adding apps that do not come from the Microsoft Store is called *sideloading*. Sideloaded apps must be signed with a certificate that is chained to a trusted root certificate. For more information about sideloading Microsoft Store apps, including requirements, see [Sideload Apps with DISM](sideload-apps-with-dism-s14.md).
 
-To install Windows Store apps that are not part of your business line, you must use the Windows Store.
+To install Microsoft Store apps that are not part of your business line, you must use the Microsoft Store.
 
 ## <span id="BKMK_layoutmodificationxml"></span> Use LayoutModification XML
 

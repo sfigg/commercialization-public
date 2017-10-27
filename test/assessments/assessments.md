@@ -93,7 +93,7 @@ This diagram shows the general workflow for an assessment:
 <td><p>This assessment evaluates the performance and quality of Windows Media® Player playback and is used in a set of multimedia battery-life assessments.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Windows Store App Performance](windows-store-app-performance.md)</p></td>
+<td><p>[Microsoft Store App Performance](microsoft-store-app-performance.md)</p></td>
 <td><p>This assessment can help you optimize your app for a better customer experience.</p></td>
 </tr>
 <tr class="even">

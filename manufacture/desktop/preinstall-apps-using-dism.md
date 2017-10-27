@@ -14,9 +14,9 @@ ms.technology: windows-oem
 # Preinstall Apps Using DISM
 
 
-Interested in preinstalling Windows Store apps, but you aren’t an OEM? For information about sideloading apps for organizations, see [Sideload Apps with DISM](sideload-apps-with-dism-s14.md).
+Interested in preinstalling Microsoft Store apps, but you aren’t an OEM? For information about sideloading apps for organizations, see [Sideload Apps with DISM](sideload-apps-with-dism-s14.md).
 
-To pre-install Windows Store apps in your images, you’ll need to use the Windows Assessment and Deployment Kit (Windows ADK). This section explains the steps involved in preinstalling apps as part of your images.
+To pre-install Microsoft Store apps in your images, you’ll need to use the Windows Assessment and Deployment Kit (Windows ADK). This section explains the steps involved in preinstalling apps as part of your images.
 
 ## <span id="BKMK_WorkWithAppPackages"></span><span id="bkmk_workwithapppackages"></span><span id="BKMK_WORKWITHAPPPACKAGES"></span>Work with app packages
 
@@ -38,7 +38,7 @@ You’ll need to use the license file from the package files to test your provis
 
 For offline provisioning of an app into an image, you can use either the Dism.exe tool or the DISM cmdlets in Windows PowerShell to add an app from a folder of unpacked files.
 
-**To preinstall a Store-signed app by using the Dism.exe tool**
+**To preinstall a Microsoft Store-signed app by using the Dism.exe tool**
 
 1.  Open the Deployment Tools Command Prompt, installed with the Windows ADK, with administrator privileges. From the Start screen, type **Deployment and Imaging Tools Environment**, right-click the icon, and select **Run as Administrator**.
 2.  Mount the offline image for servicing. At the command prompt, type:
@@ -47,7 +47,7 @@ For offline provisioning of an app into an image, you can use either the Dism.ex
     Dism /Mount-Image /ImageFile:c:\images\myimage.wim /Index:1 /mountdir:c:\test\offline
     ```
 
-3.  Add the app to the mounted image. Use the /PackagePath option and the /DependencyPackagePath option to specify the location of the folder containing all of the unpacked files and the dependency files from the Store package. /PackagePath should specify the root folder for the extracted folders. The root folder contains the license.xml, AUMIDs.txt, and all of the package files. At the command prompt, type:
+3.  Add the app to the mounted image. Use the /PackagePath option and the /DependencyPackagePath option to specify the location of the folder containing all of the unpacked files and the dependency files from the Microsoft Store package. /PackagePath should specify the root folder for the extracted folders. The root folder contains the license.xml, AUMIDs.txt, and all of the package files. At the command prompt, type:
 
     ```
     Dism /Image:c:\test\offline /Add-ProvisionedAppxPackage /PackagePath:c:\downloads\appxpackage /DependencyPackagePath:c:\downloads\appxpackagedependency
@@ -59,7 +59,7 @@ For offline provisioning of an app into an image, you can use either the Dism.ex
     Dism /Unmount-Image /mountdir:c:\test\offline /commit
     ```
 
-**To preinstall a Store-signed app by using Windows PowerShell**
+**To preinstall a Microsoft Store-signed app by using Windows PowerShell**
 
 1.  Open Windows PowerShell with administrator privileges. You must be running Windows 10 or Windows 8.1 on the host PC or install a supported version of Windows PowerShell. For more information, see [How to Use DISM in Windows PowerShell](http://go.microsoft.com/fwlink/p/?linkid=239927).
 2.  Mount the image. At the Windows PowerShell prompt, type:
@@ -68,7 +68,7 @@ For offline provisioning of an app into an image, you can use either the Dism.ex
     Mount-WindowsImage -ImagePath c:\images\myimage.wim -Index 1 -Path c:\test\offline
     ```
 
-3.  Use the Add-AppxProvisionedPackage cmdlet in Windows PowerShell to preinstall the app. Use the /PackagePath option and the /DependencyPackagePath option to specify the location of the folder containing all of the unpacked files and the dependency files from the Store package. In Windows PowerShell, type:
+3.  Use the Add-AppxProvisionedPackage cmdlet in Windows PowerShell to preinstall the app. Use the /PackagePath option and the /DependencyPackagePath option to specify the location of the folder containing all of the unpacked files and the dependency files from the Microsoft Store package. In Windows PowerShell, type:
 
     ```
     Add-AppxProvisionedPackage -Path c:\test\offline -FolderPath c:\downloads\appxpackage -DependencyPackagePath c:\downloads\appxpackagedependency
@@ -80,7 +80,7 @@ For offline provisioning of an app into an image, you can use either the Dism.ex
     Dismount-WindowsImage -Path c:\test\offline -Save
     ```
 
-**Note**   Windows Store apps don't run in audit mode. To test your deployment, run Windows and create a new user profile. For more information about audit mode, see [Understanding Audit mode](http://go.microsoft.com/fwlink/p/?LinkId=311789) in the TechNet library.
+**Note**   Microsoft Store apps don't run in audit mode. To test your deployment, run Windows and create a new user profile. For more information about audit mode, see [Understanding Audit mode](http://go.microsoft.com/fwlink/p/?LinkId=311789) in the TechNet library.
 
  
 
@@ -118,7 +118,7 @@ You can remove a preinstalled app, including the license and custom data files, 
 
      
 
-5.  If you want to update the app, you can preinstall the updated version of the Store-signed app. At a command prompt, type:
+5.  If you want to update the app, you can preinstall the updated version of the Microsoft Store-signed app. At a command prompt, type:
 
     ```
     Dism /Image:c:\test\offline /Add-ProvisionedAppxPackage/FolderPath:c:\downloads\appxpackage
@@ -155,7 +155,7 @@ You can remove a preinstalled app, including the license and custom data files, 
 
  
 
-1.  If you want to update the app, you can preinstall the updated version of the Store-signed app. At the Windows PowerShell prompt, type:
+1.  If you want to update the app, you can preinstall the updated version of the Microsoft Store-signed app. At the Windows PowerShell prompt, type:
 
     ```
     Add- AppxProvisionedPackage -Path c:\test\offline -FolderPath c:\downloads\appxpackage
@@ -183,7 +183,7 @@ Dism /Image:C:\test\offline /Add-ProvisionedAppxPackage / FolderPath:f:\Apps\Fab
 If a custom data file already exists in the data store for an app—for example, if the package has already been added to the image—the existing file is overwritten. If the installation fails, the file isn't restored.
 
 **Note**  
-You can release updates to an app through the Store without losing the custom data file. However, if a user deletes the app, the custom data file is no longer available, even if the user reinstalls the app.
+You can release updates to an app through the Microsoft Store without losing the custom data file. However, if a user deletes the app, the custom data file is no longer available, even if the user reinstalls the app.
 
  
 
@@ -253,21 +253,21 @@ After you have verified your file format and content, you can change the locatio
 
     Where `*CustomData*` is the known part of your app's name
 
-## <span id="BKMK_broadband_intro"></span><span id="bkmk_broadband_intro"></span><span id="BKMK_BROADBAND_INTRO"></span>Preinstall a Windows Store device app or mobile broadband app
+## <span id="BKMK_broadband_intro"></span><span id="bkmk_broadband_intro"></span><span id="BKMK_BROADBAND_INTRO"></span>Preinstall a Microsoft Store device app or mobile broadband app
 
 
-You can preinstall the necessary components for a Windows Store device app or a mobile broadband app using the Deployment Image Servicing and Management (DISM) platform.
+You can preinstall the necessary components for a Microsoft Store device app or a mobile broadband app using the Deployment Image Servicing and Management (DISM) platform.
 
-**Note**   This article is intended for OEMs, who will be supporting a Windows Store device app or the mobile broadband app on their devices.
+**Note**   This article is intended for OEMs, who will be supporting a Microsoft Store device app or the mobile broadband app on their devices.
 
  
 
-For each type of app, two things should be preinstalled to provide the correct Windows Store device app or mobile broadband app:
+For each type of app, two things should be preinstalled to provide the correct Microsoft Store device app or mobile broadband app:
 
--   Windows Store device app, preinstall:
+-   Microsoft Store device app, preinstall:
     1.  The device metadata package
     2.  The app
--   Windows Store mobile broadband app, preinstall:
+-   Microsoft Store mobile broadband app, preinstall:
     1.  The service metadata package
     2.  The app
 
@@ -280,7 +280,7 @@ For each type of app, two things should be preinstalled to provide the correct W
 
 **To preinstall a device metadata or service metadata package**
 
-1.  If you are preinstalling a Windows Store device app then you should have acquired the device metadata package. If you are preinstalling a mobile broadband app then you should have acquired the service metadata package.
+1.  If you are preinstalling a Microsoft Store device app then you should have acquired the device metadata package. If you are preinstalling a mobile broadband app then you should have acquired the service metadata package.
 
     **Note**   Device metadata packages and service metadata packages use the same file name extension (.devicemetadata-ms).
 
@@ -313,10 +313,10 @@ For each type of app, two things should be preinstalled to provide the correct W
 
 For more info about service metadata, see [Service metadata](http://go.microsoft.com/fwlink/p/?LinkId=698640).
 
-## <span id="Preinstall_the_Windows_Store_device_app_or_mobile_broadband_app"></span><span id="preinstall_the_windows_store_device_app_or_mobile_broadband_app"></span><span id="PREINSTALL_THE_WINDOWS_STORE_DEVICE_APP_OR_MOBILE_BROADBAND_APP"></span>Preinstall the Windows Store device app or mobile broadband app
+## <span id="Preinstall_the_Windows_Store_device_app_or_mobile_broadband_app"></span><span id="preinstall_the_windows_store_device_app_or_mobile_broadband_app"></span><span id="PREINSTALL_THE_WINDOWS_STORE_DEVICE_APP_OR_MOBILE_BROADBAND_APP"></span>Preinstall the Microsoft Store device app or mobile broadband app
 
 
-**To preinstall the Windows Store device app or mobile broadband app**
+**To preinstall the Microsoft Store device app or mobile broadband app**
 
 1.  Mount the offline image for servicing.
 
@@ -324,7 +324,7 @@ For more info about service metadata, see [Service metadata](http://go.microsoft
     Dism /Mount-Image /ImageFile:C:\test\images\myimage.wim /index:1 /MountDir:C:\test\offline
     ```
 
-2.  Add the Windows Store device app or mobile broadband app to the image.
+2.  Add the Microsoft Store device app or mobile broadband app to the image.
 
     ```
     dism /Image:<mounted folder> /Add-ProvisionedAppxPackage /FolderPath:<appxpackage path>

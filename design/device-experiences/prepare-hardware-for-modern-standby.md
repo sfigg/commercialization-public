@@ -87,7 +87,7 @@ All host controllers on the SoC must power down for modern standby in order for 
 
 In terms of power management, CPUs and GPUs on the SoC chip are different from other devices. CPUs and GPUs power down as part of powering down the SoC itself and are able to be powered down whenever there is no software activity targeted to them.
 
-Most software activity on the system will be stopped through the preparation stages detailed in Prepare hardware for modern standby. Windows Store apps will be paused as part of the PLM phase. Desktop applications will be paused as part of completing the DAM phase. The only CPU activities that remain after the platform enters the resiliency phase are idle operations of Windows itself. Similarly, there is little GPU activity because all apps have been paused and the screen is turned off.
+Most software activity on the system will be stopped through the preparation stages detailed in Prepare hardware for modern standby. Microsoft Store apps will be paused as part of the PLM phase. Desktop applications will be paused as part of completing the DAM phase. The only CPU activities that remain after the platform enters the resiliency phase are idle operations of Windows itself. Similarly, there is little GPU activity because all apps have been paused and the screen is turned off.
 
 Windows continually manages the power state of the CPUs on the system, even when the screen is on and the user is working with the PC. The same CPU power state management places the CPUs in a low-power mode during modern standby. When all CPUs are in a low-power mode and all host controllers on the SoC have been powered down, the SoC itself can be powered down.
 

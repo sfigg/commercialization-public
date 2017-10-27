@@ -21,7 +21,7 @@ Partners can configure devices to have the call recording feature enabled by def
 <a href="" id="instructions-"></a>**Instructions:**  
 1.  Create a customization answer file using the contents shown in the following code sample.
 
-    ```
+    ```XML
     <?xml version="1.0" encoding="utf-8" ?>  
     <ImageCustomizations xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate"  
                          Name="CallRecordingOff"  
@@ -78,12 +78,8 @@ Partners can configure devices to have the call recording feature enabled by def
 
 4.  Under **Calling**, verify that Voice Recorder is showing under **Choose the app you want to use to manage recorded phone calls**.
 
- 
+## Related topics
 
- 
+[Prepare for Windows mobile development](https://docs.microsoft.com/en-us/windows-hardware/manufacture/mobile/preparing-for-windows-mobile-development)
 
-
-
-
-
-
+[Customization answer file overview](https://docs.microsoft.com/en-us/windows-hardware/customize/mobile/mcsf/customization-answer-file)

@@ -69,9 +69,9 @@ The design of a complete Windows image can improve or degrade the Modern Standby
 
 ### How apps affect Modern Standby
 
-Windows Store apps connect to many sources and integrate with hardware devices directly. Apps can perform certain tasks during Modern Standby, like updating live tiles or playing background music. These tasks draw more power from the battery.
+Microsoft Store apps connect to many sources and integrate with hardware devices directly. Apps can perform certain tasks during Modern Standby, like updating live tiles or playing background music. These tasks draw more power from the battery.
 
-In some cases, a Windows Store app needs to finish an operation started by the user before being suspended for Modern Standby. For this type of activity, there are specific affordances that let the app continue running for a period of time. Some apps can also prevent a device from entering Modern Standby. You can assess apps in your Windows image to see if they degrade the Modern Standby experience and work with the app developer to improve efficiency.
+In some cases, a Microsoft Store app needs to finish an operation started by the user before being suspended for Modern Standby. For this type of activity, there are specific affordances that let the app continue running for a period of time. Some apps can also prevent a device from entering Modern Standby. You can assess apps in your Windows image to see if they degrade the Modern Standby experience and work with the app developer to improve efficiency.
 
 ### How to get realistic test results
 

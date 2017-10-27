@@ -79,3 +79,7 @@ A slot cannot be empty. If an OEM sets the value for Slot 5, but the mobile devi
 2.  Verify that the default quick action(s) that you set are showing up in the correct slot(s). For large screen devices, verify that there are 5 quick actions that are showing up instead of 4.
 
 3.  Navigate to the **Quick actions** screen in **Notifications & actions** screen and verify that the default quick settings action(s) that you set are also showing up in the correct slots.
+
+## Related topics
+
+[Prepare for Windows mobile development](https://docs.microsoft.com/en-us/windows-hardware/manufacture/mobile/preparing-for-windows-mobile-development)
