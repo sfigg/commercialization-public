@@ -96,8 +96,10 @@ AXE.exe uses the following syntax:
 <td><p><strong>/PublishToSource</strong></p></td>
 <td><p>Specifies that AXE.exe update the original results folder when running <strong>/Analyze</strong>. Using <strong>/PublishToSource</strong> is optional, and it is ignored when running a job.</p>
 <p><strong>/PublishToSource</strong> may be combined with the publish path, but the publish path will only be used if AXE.exe cannot publish to the original results folder.</p>
-<p>Example:</p><!--v-gmoor: Need to add a realistic path to /Analyze example.-->
-<code>axe&nbsp;C:\\Assessments\\myJobs\\Job1.jobx  /Analyze /PublishToSource</code></td>
+<!--v-gmoor, 2017-10-27: The following example is non-functional, because no
+file is specified for /Analyze.
+<p>Example:</p>
+<code>axe&nbsp;C:\\Assessments\\myJobs\\Job1.jobx  /Analyze /PublishToSource</code></td>-->
 </tr>
 <tr class="odd">
 <td><p><strong>/PublishPath</strong>&nbsp;<em>folder_path</em></p></td>
