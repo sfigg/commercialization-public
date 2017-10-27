@@ -1,6 +1,6 @@
 ---
 title: Assessment Platform Command-Line Syntax
-description: Assessment Platform Command-Line Syntax
+description: Command-line syntax for AXE.com, which enables running and analyzing jobs with the Assessment Platform.
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
@@ -8,7 +8,7 @@ ms.assetid: 34286b79-1867-4d0d-8b65-6a0c6a7e5df8
 ms.mktglfcycl: plan
 ms.sitesec: msdn
 ms.author: sapaetsc
-ms.date: 05/05/2017
+ms.date: 10/27/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -59,34 +59,34 @@ AXE.exe uses the following syntax:
 <p>Example:</p>
 <code>axe&nbsp;C:\\Assessments\\MyJobs\\Job1.jobx</code></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><p><strong>/Job</strong> <em>job_file</em></p></td>
 <td><p>Specifies the path and file name of the job file, <em>job_file</em>, to use in locating the assessments to reanalyze within the results file.</p>
 </td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><p><strong>/Analyze</strong> <em>results_file</em></p></td>
 <td><p>Reanalyzes the results from a job (.jobx) file specified by <em>results_file</em>. This option requires a job from a package or assessment manifest directly to locate the assessments to reanalyze.</p>
-<!--v-gmoor, 2017-10-26: I haven't figured out a functional example yet for /Analyze that definitely seems to work.
+<!--v-gmoor, 2017-10-26: I haven't figured out a functional example for /Analyze that definitely seems to work.
 <p>Example:</p>
-<code>axe&nbsp;C:\\Assessments\\MyJobs\\Job1.jobx /Analyze C:\\Assessments\\MyResults\\JobResults_COMPUTERNAME_2017-1026_0929-27.803\JobResults_COMPUTERNAME_2017-1026_0929-27.803.xml</code>-->
+<code>axe&nbsp;C:\\Assessments\\MyJobs\\Job1.jobx /Analyze C:\\Assessments\\MyResults\\JobResults_COMPUTERNAME_2017-1026_0929-27.803\\JobResults_COMPUTERNAME_2017-1026_0929-27.803.xml</code>-->
 </td>
 </tr>
 <tr class="odd">
 <td><p><strong>/Assessment</strong> <em>assessment_file</em></p></td>
 <td><p>Specifies the path and file name of an assessment manifest, <em>assessment_file</em>, to reanalyze in the results file specified.</p>
-<!--v-gmoor, 2017-10-26: I haven't figured out a functional example yet for /Assessment that definitely seems to work.
+<!--v-gmoor, 2017-10-26: I haven't figured out a functional example for /Assessment that definitely seems to work.
 <p>Example:</p>
-<code>axe&nbsp;C:\Assessments\MyJobs\Job1.jobx /Analyze %UserProfile%\AppData\Local\Microsoft\Axe\Results\JobResults_COMPUTERNAME_2017-1026_0929-27.803\JobResults_COMPUTERNAME_2017-1026_0929-27.803.xml /Assessment </code>-->
+<code>axe&nbsp;C:\Assessments\MyJobs\Job1.jobx /Analyze %UserProfile%\\AppData\\Local\\Microsoft\\Axe\\Results\\JobResults_COMPUTERNAME_2017-1026_0929-27.803\\JobResults_COMPUTERNAME_2017-1026_0929-27.803.xml /Assessment </code>-->
 </td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><p><strong>/Timeout</strong>&nbsp;<em>seconds</em></p></td>
 <td><p>Specifies the amount of time in <em>seconds</em> that the job will wait for another job to finish before it exits with an error. When <em>seconds</em> is zero, the default, the job will exit immediately without running if another job is already running.</p>
 <p>Example:</p>
 <code>axe&nbsp;C:\\Assessments\\myJobs\\Job1.jobx /Timeout 30</code></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><p><strong>/NoPublish</strong></p></td>
 <td><p>Specifies to <em>not</em> publish the results file to the location that's specified in the job file. When you use this option, the results are saved to the default location, %LOCALAPPDATA%\\Microsoft\\Axe\\Results\\.</p>
 <p>Example:</p>
@@ -115,7 +115,7 @@ file is specified for /Analyze.
 <p>Example:</p>
 <code>axe&nbsp;/DisplayLog %LOCALAPPDATA%\\Microsoft\\Axe\\Logs\\E5A6CB43-C1CE-4FC1-8170-13B002E250B36\\AxeLog-000.etl</code></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><p><strong>/RemoveRestart</strong></p></td>
 <td><p>Specifies that any existing, pending job-restart task should be removed.</p>
 <p style="margin: 1em 1.5em 0 1.5em;"><strong>Note</strong>&nbsp;&nbsp;&nbsp;The <strong>/JobFile</strong> option isn't needed when you use this option.</p>
@@ -123,19 +123,19 @@ file is specified for /Analyze.
 <p>Example:</p>
 <code>axe&nbsp;/RemoveRestart</code></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><p><strong>/NoWarnings</strong></p></td>
 <td><p>Suppresses warning messages. This is an optional parameter.</p>
 <p>Example:</p>
 <code>axe&nbsp;C:\\Assessments\\myJobs\\Job1.jobx /NoWarnings</code></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><p><strong>/Pause</strong></p></td>
 <td><p>Pauses AXE.exe after the job finishes. You can then see any errors or other information in the console before AXE.exe exits and the console closes. Exiting continues when you press a key.</p>
 <p>Example:</p>
 <code>axe&nbsp;C:\\Assessments\\myJobs\\Job1.jobx /Pause</code></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><p><strong>/JobParameter</strong> <em>parameter</em><strong>=</strong><em>value</em></p></td>
 <td><p>Specifies a <em>value</em> to override a job <em>parameter</em> that may exist in the job manifest. You can use <strong>/JobParameter</strong> up to 100 times to specify multiple job parameters. If duplicate parameter names appear, the assessment uses the last value supplied for that name. Using <strong>/JobParameter</strong> is optional.</p>
 <p>The <strong>/PublishPath</strong> option takes precedence over setting the <strong>ResultsPublishPath</strong> job parameter with this option.</p>
