@@ -39,7 +39,7 @@ The basic syntax for using the Assessment Platform from the command line is one 
 </ul>
 
 
-<br/>
+
 ### Job execution options
 
 The following syntax describes command lines for executing assessment jobs:
@@ -47,11 +47,11 @@ The following syntax describes command lines for executing assessment jobs:
 <p style="margin: 1em 0 0 1.5em;"><strong>axe</strong>&nbsp;<em>job_file</em> <strong>/Timeout</strong>&nbsp;<em>seconds</em>] [<strong>/NoPublish</strong>] [<strong>/PublishPath</strong>&nbsp;<em>folder_path</em>] [<strong>/RemoveRestart</strong>] [<strong>/DisplayLog</strong>&nbsp;<em>ETL_file</em>] [<strong>/NoWarnings</strong>] [<strong>/JobParameter</strong> <em>parameter</em><strong>=</strong><em>value</em>] [<strong>/Pause</strong>]</p>
 
 <p>These options are described in the following table. The names of these options are not case-sensitive.</p>
-
+<br/>
 <table>
 <thead>
 <tr class="header">
-<th bgcolor="EEEEEE"><p style="text-align: center; margin: 0 0 0 0">Execution option</p></th>
+<th bgcolor="EEEEEE"><p style="text-align: center; margin: 0 0 0 0">Option</p></th>
 <th bgcolor="EEEEEE"><p style="text-align: center; margin: 0 0 0 0">Description</p></th>
 </tr>
 </thead>
@@ -99,7 +99,7 @@ The following syntax describes command lines for executing assessment jobs:
 <p>The default location of the log file is %LOCALAPPDATA%\\Microsoft\\Axe\\Logs\\<em>GUID</em>, where <em>GUID</em> is a GUID that is generated randomly for each new job. The job results file in the <strong>SessionLogFiles</strong> node also contains the full location. This node specifies all of the log files.</p>
 <p style="margin: 1em 1.5em 0 1.5em;"><strong>Note</strong>&nbsp;&nbsp;&nbsp;All of the ETL files are automatically converted into a single AxeLog.txt file that is saved in the results directory. You can open this file by using Notepad.</p>
 <p>Example:</p>
-<code>axe&nbsp;/DisplayLog %LOCALAPPDATA%\Microsoft\Axe\Logs\E5A6CB43-C!CE-4FC1-8170-13B002E250B36\AxeLog-000.etl</code></td>
+<code>axe&nbsp;/DisplayLog %LOCALAPPDATA%\\Microsoft\\Axe\\Logs\\E5A6CB43-C1CE-4FC1-8170-13B002E250B36\\AxeLog-000.etl</code></td>
 </tr>
 <tr class="even">
 <td><p><strong>/RemoveRestart</strong></p></td>
@@ -138,12 +138,12 @@ The following syntax describes command lines for executing assessment jobs:
 
 <p style="margin: 1em 0 0 1.5em;"><strong>axe</strong>&nbsp;<strong>/Analyze</strong> <em>results_file</em> [<strong>/Job</strong> <em>job_file</em>] [<strong>/Assessment</strong> <em>assessment_file</em>]
 
-These options are described in the following table. The names of these options are not case-sensitive.
-
+<p>These options are described in the following table. The names of these options are not case-sensitive.</p>
+<br/>
 <table>
 <thead>
 <tr class="header">
-<th bgcolor="EEEEEE"><p style="text-align: center; margin: 0 0 0 0">Analysis option</p></th>
+<th bgcolor="EEEEEE"><p style="text-align: center; margin: 0 0 0 0">Option</p></th>
 <th bgcolor="EEEEEE"><p style="text-align: center; margin: 0 0 0 0">Description</p></th>
 </tr>
 </thead>
@@ -151,14 +151,20 @@ These options are described in the following table. The names of these options a
 <tr class="odd">
 <td><p><strong>/Analyze</strong> <em>results_file</em></p></td>
 <td><p>Reanalyzes the results from a job (.jobx) file specified by <em>results_file</em>. This option requires a job from a package or assessment manifest directly to locate the assessments to reanalyze.</p>
-<p>Example:</p><!--v-gmoor: Need to add a realistic path to /Analyze example.-->
-<code>axe&nbsp;C:\Assessments\MyJobs\Job1.jobx /Analyze %UserProfile%\AppData\Local\Microsoft\Axe\Results\JobResults_COMPUTERNAME_2017-1026_0929-27.803\JobResults_COMPUTERNAME_2017-1026_0929-27.803.xml</code>
+<!--v-gmoor, 2017-10-26: I haven't figured out a functional example yet for /Analyze that definitely seems to work.
+<p>Example:</p>
+<code>axe&nbsp;C:\\Assessments\\MyJobs\\Job1.jobx /Analyze C:\\Assessments\\MyResults\\JobResults_COMPUTERNAME_2017-1026_0929-27.803\JobResults_COMPUTERNAME_2017-1026_0929-27.803.xml</code>-->
 </td>
 </tr>
 <tr class="even">
+<td><p><strong>/Job</strong> <em>job_file</em></p></td>
+<td><p>Specifies the path and file name of the job file, <em>job_file</em>, to use in locating the assessments to reanalyze within the results file.</p>
+</td>
+</tr>
+<tr class="odd">
 <td><p><strong>/Assessment</strong> <em>assessment_file</em></p></td>
 <td><p>Specifies the path and file name of an assessment manifest, <em>assessment_file</em>, to reanalyze in the results file specified.</p>
-<!--v-gmoor, 2017-10-26: I haven't figured out a functional example yet for /Assessment.
+<!--v-gmoor, 2017-10-26: I haven't figured out a functional example yet for /Assessment that definitely seems to work.
 <p>Example:</p>
 <code>axe&nbsp;C:\Assessments\MyJobs\Job1.jobx /Analyze %UserProfile%\AppData\Local\Microsoft\Axe\Results\JobResults_COMPUTERNAME_2017-1026_0929-27.803\JobResults_COMPUTERNAME_2017-1026_0929-27.803.xml /Assessment </code>-->
 </td>
@@ -166,10 +172,7 @@ These options are described in the following table. The names of these options a
 </table>
 
  
-
-
 ## Related topics
-
 
 [Windows Assessment Console Overview](windows-assessment-console-overview.md)
 
