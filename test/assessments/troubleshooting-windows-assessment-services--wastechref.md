@@ -14,39 +14,13 @@ ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-# Troubleshooting Windows Assessment Services
 
+# Troubleshooting Windows Assessment Services
 
 The following information can help you troubleshoot common problems.
 
-This topic includes:
 
--   [Log files](#bkmk-ts-logfiles)
-
--   [Set up a symbol server](#bkmk-ts-symbolserver)
-
--   [Unable to connect to server](#bkmk-ts-unableconnect)
-
--   [Computer already exists in inventory](#bkmk-ts-computerexists)
-
--   [Run button is unavailable](#bkmk-ts-runbuttondimmed)
-
--   [Inventorying test machine fails with WS\_E\_OPERATION\_TIMED\_OUT](#bkmk-ts-inventoryfails)
-
--   [Image deployment failures don’t have enough information on the monitoring page](#bkmk-ts-deploymentfails)
-
--   [DISM error during computer inventory](#bkmk-ts-dismerr)
-
--   [Test computers must be reimaged if you change the Server name](#bkmk-ts-reimagetestcomp)
-
--   [“Machine not reachable” errors](#bkmk-ts-machinereach)
-
--   [Running Windows Assessment Services - Client from a server other than the Windows Assessment Services server](#bkmk-ts-msmq)
-
--   [The dumps folder does not contain any dump files](#bkmk-ts-dumps)
-
-## <a href="" id="bkmk-ts-logfiles"></a>Log files
-
+## Log files
 
 -   Log files are copied to the server when you add computers to the server inventory. They are stored at **C:\\relax\\logs**.
 
@@ -70,8 +44,8 @@ This topic includes:
 
 -   If results are not copied to the server, you can locate them on the test computer. The log file at %SystemDrive%\\relax\\&lt;GUID&gt;\\job\\results.log points to the results folder where the results were saved.
 
-## <a href="" id="bkmk-ts-symbolserver"></a>Set up a Symbol Server
 
+## Set up a Symbol Server
 
 Some assessments require access to symbols. In some cases the information in the assessment results can be incorrect or have missing information if a symbol server is not available. In many cases this dependency is satisfied by Internet connectivity and access to the Microsoft public symbols server. In other cases where connectivity to the Internet is not available such as a lab environment, you can set up a private symbols server or install the symbols on the local computer to get the full benefits of the assessments.
 
@@ -121,8 +95,8 @@ Some assessments require access to symbols. In some cases the information in the
 
 For more information about how to set the symbols path and download symbols, see [MSDN: Symbols Support](http://go.microsoft.com/fwlink/?LinkId=235359). For information about how to troubleshoot missing symbols, see [Common In-Depth Analysis Issues](common-in-depth-analysis-issues.md#missingsymbols).
 
-## <a href="" id="bkmk-ts-unableconnect"></a>Unable to connect to server
 
+## Unable to connect to server
 
 If the Windows Assessment Services - Client (Windows ASC) cannot connect to the server, you might receive the following error message:
 
@@ -130,13 +104,11 @@ If the Windows Assessment Services - Client (Windows ASC) cannot connect to the
 
 Check the server status by using the **sc query wassvc** command. If the server is not running, start the service by using the **net start wassvc** command.
 
-**Warning**  
-The sc query command only works if it is run on the Windows Assessment Services server.
+> [!WARNING]
+> The sc query command only works if it is run on the Windows Assessment Services server.
 
- 
 
-## <a href="" id="bkmk-ts-computerexists"></a>Computer already exists in inventory
-
+## Computer already exists in inventory
 
 If you receive the following message, the test computer already exists in the Windows Assessment Services inventory:
 
@@ -144,13 +116,13 @@ If you receive the following message, the test computer already exists in the Wi
 
 If you do not see the computer entry in the Server Inventory window, close and then re-open that window to refresh the content.
 
-## <a href="" id="bkmk-ts-runbuttondimmed"></a>Run button is unavailable
 
+## Run button is unavailable
 
 If the **Run** button is unavailable, make sure that you have selected specific computers and images in the **Assets** details. If you have selected specific computers and images, but you do not see any assessments on the **Results** page, close and then re-create the current job.
 
-## <a href="" id="bkmk-ts-inventoryfails"></a>Inventorying test machine fails with WS\_E\_OPERATION\_TIMED\_OUT
 
+## Inventorying test machine fails with WS\_E\_OPERATION\_TIMED\_OUT
 
 If you receive the following error:
 
@@ -160,8 +132,8 @@ Error updating machine configuration in RelaxServer. Please check that the serve
 
 Check the error log at **C:\\Relax\\CompleteDeployment.log** for additional error details and rerun **CompleteDeployment.cmd**.
 
-## <a href="" id="bkmk-ts-deploymentfails"></a>Image deployment failures don’t have enough information on the monitoring page
 
+## Image deployment failures don’t have enough information on the monitoring page
 
 **Error code: Exiting Scenario Deploy: ErrorId=2**
 
@@ -183,8 +155,8 @@ Bcdboot failed to update the BCD store. An image of incompatible architecture wa
 
 Diskpart failed to find any hard disk drive that could be used to apply an image to.
 
-## <a href="" id="bkmk-ts-dismerr"></a>DISM Error During Computer Inventory
 
+## DISM Error During Computer Inventory
 
 If you receive the following error while taking inventory of a computer, you must use the x86 Windows PE image for the bootable USB drive that you created for inventory.
 
@@ -199,25 +171,23 @@ When you inventory a computer, driver information is gathered and stored at **&l
 
 Use (or create) a bootable USB drive created for X86 architecture. For more information, see [Windows Assessment Services Setup and Configuration](windows-assessment-services-setup-and-configuration-wastechref.md).
 
-## <a href="" id="bkmk-ts-reimagetestcomp"></a>Test computers must be reimaged if you change the Server name
 
+## Test computers must be reimaged if you change the Server name
 
 If you rename the Windows Assessment Services server and re-initialize it, you must redeploy Windows on the test computer before you run additional assessments.
 
-## <a href="" id="bkmk-ts-machinereach"></a>“Machine not reachable” errors
 
+## “Machine not reachable” errors
 
 When running assessments remotely, Windows Assessment Services relies on DNS to resolve the test computer names. If DNS has duplicate entries for the same computer name, one from a domain joined computer and another from a workgroup computer, Windows and WinRM will pick the computer that DNS resolves to.
 
 If you receive an error that includes "Machine Not Reachable", check the DNS entries for duplicates.
 
-**Note**  
-The computer name must contain only alphanumeric characters and dashes. If the computer name contains an underscore or other extended characters, the computer may not be discoverable via Domain Name System (DNS).
+> [!NOTE]
+> The computer name must contain only alphanumeric characters and dashes. If the computer name contains an underscore or other extended characters, the computer may not be discoverable via Domain Name System (DNS).
 
- 
 
-## <a href="" id="bkmk-ts-msmq"></a>Running Windows ASC from a server other than the Windows Assessment Services server
-
+## Running Windows ASC from a server other than the Windows Assessment Services server
 
 If you are running Windows ASC on a Windows server and you do not have Windows Assessment Services installed on that server, push notifications will fail to enable in Windows ASC when you launch it.
 
@@ -231,23 +201,13 @@ Dism /Online /Enable-Feature:MSMQ-Server
 
 Or run Windows ASC on a client computer, or the same server where Windows Assessment Services is installed.
 
-## <a href="" id="bkmk-ts-dumps"></a>The dumps folder does not contain any dump files
 
+## The dumps folder does not contain any dump files
 
 By default, dump files are not copied to the server after assessment runs. If you want to collect dumps for assessment runs, edit &lt;Relax directory&gt;\\Scripts\\Harnesses\\Axe\\CompleteAssessment.cmd, and change the value for set\_copydumpstoserver to true. By default, this value is false.
 
+
 ## Related topics
 
-
 [Windows Assessment Services](windows-assessment-services-technical-reference.md)
-
- 
-
- 
-
-
-
-
-
-
 
