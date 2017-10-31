@@ -16,7 +16,7 @@ ms.technology: windows-oem
 
 You can use app package-servicing commands to add, remove, and list provisioned app packages (.appx or .appxbundle) in a Windows image. An .appxbundle, new for Windows 10, is a collection of app and resource packages used together to enrich the app experience, while minimizing the disk footprint on a given PC. For detailed documentation about .appxbundle packages and the Store pipeline, see [App packaging](http://go.microsoft.com/fwlink/p/?LinkId=698643). Only a subset of the packages within an .appxbundle might be added to the image when a bundle is provisioned using DISM. For more information, see [Understanding How DISM Adds .appxbundle Resource Packages to an Image](#bkmk_understanding).
 
-Provisioned app packages are added to a Windows image and are then installed for every new or existing user profile the next time the user logs on. For more information, including requirements for app package provisioning, see [Sideload Apps with DISM](sideload-apps-with-dism-s14.md).
+Provisioned app packages are added to a Windows image and are then installed for every new or existing user profile the next time the user logs on. For more information, including requirements for app package provisioning, see [Sideload Apps with DISM](sideload-apps-with-dism-s14.md). 
 
 You can also use PowerShell to add, remove, and list app packages (.appx or .appxbundle) per image or per user in a Windows installation. For more information, see [Deployment Imaging Servicing Management (DISM) Cmdlets in Windows PowerShell](http://go.microsoft.com/fwlink/?LinkId=239926) and [App Installation Cmdlets in Windows PowerShell](http://go.microsoft.com/fwlink/?LinkId=247300).
 
@@ -44,7 +44,7 @@ When used immediately after an app package servicing command-line option, inform
 **Examples**:
 
 ```
-Dism /image:C:\test\offline /Add- ProvisionedAppxPackages /?
+Dism /image:C:\test\offline /Add-ProvisionedAppxPackage /?
 Dism /online /Get-ProvisionedAppxPackages /?
 ```
 
@@ -63,6 +63,8 @@ Adds one or more app packages to the image.
 
 The app will be added to the Windows image and registered for each existing or new user profile the next time the user logs in. If the app is added to an online image, the app will not be registered for the current user until the next time the user logs in.
 
+It is recommended to provision apps in an online operating system in audit mode so that appropriate hard links can be created for apps that contain the exact same files (to minimize disk space usage) while also ensuring no apps are running for a successful installation.
+
 Syntax:
 
 ```
@@ -71,16 +73,16 @@ dism.exe /Add-ProvisionedAppxPackage {/FolderPath:<App_folder_path> [/SkipLicens
 
 Use **/FolderPath** to specify a folder of unpacked app files containing a main package, any dependency packages, and the license file. This is only supported for an unpacked app package.
 
-Use **/PackagePath** to specify an app package (.appx or .appxbundle). You can use **/PackagePath** when provisioning a line-of-business app online.
+Use **/PackagePath** to specify an app package (.appx or .appxbundle). You can use **/PackagePath** when provisioning a line-of-business app online. 
 
 >**Important**
-Use the **/PackagePath** parameter to provision .appxbundle packages.
+Use the **/PackagePath** parameter to provision .appxbundle packages. Also, dependency packages cannot be provisioned with **/PackagePath**, they must be provisioned with the **/DependencyPackagePath** parameter for an app.
 
 **/PackagePath** is not supported from a host PC that is running Windows Preinstallation Environment (WinPE) 4.0, Windows Server 2008 R2, or an earlier version of Windows.
 
- 
+Use **/DependencyPackagePath** to specify each depencency package needed for the app to be provisioned. The necessary dependency packages of an app can be found by looking at the <PackageDependency> elements in the AppxManifest.xml in the root of the .appx package of the app. If multiple apps all share the same dependency, the latest minor version of each major version of the dependency package should be installed. For example, App1, App2, and App3 all have a dependency on Microsoft.NET.Native.Framework. App1 specifies Microsoft.NET.Native.Framework.1.6 with minor version 25512.0, App2 specifies Microsoft.NET.Native.Framework.1.6 with minor version 25513.0, and App3 specifies Microsoft.NET.Native.Framework.1.3 with minor version 24202.0. Because both App1 and App2 both specify the same major version of the dependency package, only the latest minor version 25513.0 should be installed, while App3 specifies a different major version of the dependency package, so it must also be installed. So the dependency packages that should be installed are Microsoft.NET.Native.Framework.1.6 with minor version 25513.0 and Microsoft.NET.Native.Framework.1.3 with minor version 24202.0.
 
-If the package has dependencies that are architecture-specific, you must install all of the applicable architectures for the dependency on the target image. For example, on an x64 target image, include a path to both the x86 and x64 dependency packages or include them both in the folder of unpacked app files.
+If the package has dependencies that are architecture-specific, you must install all of the applicable architectures for the dependency on the target image. For example, on an x64 target image, include a path to both the x86 and x64 dependency packages or include them both in the folder of unpacked app files. If the ARM dependency package is also specified or included, DISM will ignore it since it does not apply to the target x64 image.
 
 | Computer Architecture	| Dependencies to install: |
 | ----- | ----- |
