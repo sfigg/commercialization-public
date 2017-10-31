@@ -275,7 +275,7 @@
 ##### [Preloaded map data in the user store](mobile/mcsf/preloaded-map-data-in-the-user-store.md)
 ##### [Temporary map data cache size](mobile/mcsf/temporary-map-data-cache-size.md)
 
-#### [Customizations for notifications + quick actions](mobile/mcsf/customizations-for-notifications.md)
+#### [Customizations for notifications and quick actions](mobile/mcsf/customizations-for-notifications-and-quick-actions.md)
 ##### [Add an LED notification option](mobile/mcsf/notifications--adding-an-led-notification-option.md)
 ##### [Configure Quick actions](mobile/mcsf/configure-quick-settings.md)
 ##### [CMAS Required Monthly Test](mobile/mcsf/cmas-required-monthly-test.md)
@@ -389,7 +389,7 @@
 ##### [Settings for IMS services](mobile/mcsf/settings-for-ims-services.md)
 ##### [View Internet APN](mobile/mcsf/view-internet-apn.md)
 
-#### [Customizations for locale-based settings](mobile/mcsf/customizations-for-date-region-language.md)
+#### [Customizations for locale-based settings](mobile/mcsf/customizations-for-locale-based-settings,md)
 ##### [China Type Approval requirement: app install prompts](mobile/mcsf/cta-app-install-prompts.md)
 ##### [Contact management on the SIM (CN only)](mobile/mcsf/contact-management-on-the-sim.md)
 ##### [Disable NITZ or daylight saving time](mobile/mcsf/disabling-nitz-or-daylight-saving-time.md)
