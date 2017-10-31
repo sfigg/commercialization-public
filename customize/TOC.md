@@ -255,10 +255,13 @@
 #### [Customizations for email](mobile/mcsf/customizations-for-email.md)
 ##### [Light or dark theme in email](mobile/mcsf/light-or-dark-mode-in-email.md)
 
-#### [Customizations for the lock screen](mobile/mcsf/customizations-for-lock-screen.md)
+#### [Customizations for themes and lock screen](mobile/mcsf/customizations-for-themes-and-lock-screen.md)
 ##### [Additional lock screen backgrounds](mobile/mcsf/additional-lock-screen-backgrounds.md)
+##### [Default theme and accent color for Kid's Corner](mobile/mcsf/kids-corner-default-theme-and-accent-color.md)
+##### [Enable dark mode](mobile/mcsf/start-theme-settings-enabling-dark-mode.md)
 ##### [Lock screen notifications](mobile/mcsf/lock-screen-notifications.md)
 ##### [Lock screen timeout for AMOLED and OLED displays](mobile/mcsf/screen-time-out-for-amoled-and-oled-displays.md)
+##### [Warning about light theme for AMOLED and OLED screens](mobile/mcsf/warning-about-light-theme-for-amoled-and-oled-screens.md)
 
 #### [Customizations for keyboard](mobile/mcsf/customizations-for-keyboard.md)
 ##### [Disable text correction and suggestions](mobile/mcsf/disabling-text-correction-and-suggestions.md)
@@ -375,11 +378,6 @@
 ##### [User alert for service indication messages](mobile/mcsf/user-alert-for-service-indication-messages.md)
 ##### [Video attachments in MMS](mobile/mcsf/video-attachments-in-mms.md)
 ##### [Voicemail SMS intercept](mobile/mcsf/voicemail-sms-intercept.md)
-
-#### [Customizations for themes](mobile/mcsf/customizations-for-themes.md)
-##### [Default theme and accent color for Kid's Corner](mobile/mcsf/kids-corner-default-theme-and-accent-color.md)
-##### [Enable dark mode](mobile/mcsf/start-theme-settings-enabling-dark-mode.md)
-##### [Warning about light theme for AMOLED and OLED screens](mobile/mcsf/warning-about-light-theme-for-amoled-and-oled-screens.md)
 
 #### [Customizations for SIM settings](mobile/mcsf/customizations-for-sim-settings.md)
 ##### [Add a suffix to the mobile operator name](mobile/mcsf/add-a-suffix-to-the-mobile-operator-name.md)
