@@ -294,7 +294,7 @@
 ##### [Showing the FM radio](mobile/mcsf/showing-the-fm-radio.md)
 ##### [Video over LTE](mobile/mcsf/video-over-lte.md)
 
-#### [Customizations for notifications + quick actions](customizations-for-notifications.md)
+#### [Customizations for notifications + quick actions](mobile/mcsf/customizations-for-notifications.md)
 ##### [Add an LED notification option](mobile/mcsf/notifications--adding-an-led-notification-option.md)
 ##### [Configure Quick actions](mobile/mcsf/configure-quick-settings.md)
 ##### [CMAS Required Monthly Test](mobile/mcsf/cmas-required-monthly-test.md)
@@ -319,7 +319,7 @@
 ##### [Lock screen notifications](mobile/mcsf/lock-screen-notifications.md)
 ##### [Screen timeout for AMOLED and OLED displays](mobile/mcsf/screen-time-out-for-amoled-and-oled-displays.md)
 
-#### [Customizations for Wi-Fi settings](customizations-for-wifi-settings.md)
+#### [Customizations for Wi-Fi settings](mobile/mcsf/customizations-for-wifi-settings.md)
 ##### [Cellular data fallback when in limited Wi-Fi connectivity](mobile/mcsf/cellular-data-fallback-when-in-limited-wi-fi-connectivity.md)
 ##### [Change Wi-Fi to WLAN](mobile/mcsf/change-wi-fi-to-wlan.md)
 ##### [Connecting to open Wi-Fi hotspots in Windows 10](mobile/mcsf/wi-fi-hotspots.md)
@@ -330,7 +330,7 @@
 ##### [Wi-Fi calling operator name](mobile/mcsf/wi-fi-calling-operator-name.md)
 ##### [Wi-Fi icon and notifications](mobile/mcsf/wi-fi-icon-and-notifications.md)
 
-#### [Customizations for SIM settings](customizations-for-sim-settings.md)
+#### [Customizations for SIM settings](mobile/mcsf/customizations-for-sim-settings.md)
 ##### [Add a suffix to the mobile operator name](mobile/mcsf/add-a-suffix-to-the-mobile-operator-name.md)
 ##### [Additional Internet APN settings](mobile/mcsf/additional-internet-apn-settings.md)
 ##### [Change SIM to SIM/UIM](mobile/mcsf/change-sim-to-simuim.md)
