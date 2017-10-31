@@ -138,136 +138,121 @@ The following table shows the extent of support for the features recommended by 
 </tbody>
 </table>
 
- 
+<a href="" id="constraints---none"></a>**Constraints:** None
 
-<a href="" id="constraints---none"></a>**Constraints:** None  
+## Instructions
 
-<a href="" id="instructions-"></a>**Instructions:**  
 To configure visual voicemail for a mobile operator, the OEM must add setting several settings depending on the OMTP-based protocol being used by the operator.
 
-**Note**  
-Visual voicemail settings have already been set for AT&T, T-Mobile USA, and Deutsche Telekom AG (DTAG), and no further configuration is required for these three mobile operators.
+> [!Note]
+> Visual voicemail settings have already been set for AT&T, T-Mobile USA, and Deutsche Telekom AG (DTAG), and no further configuration is required for these three mobile operators.
 
- 
+1. Create a customization answer file using the contents shown in the following code sample.
 
-1.  Create a customization answer file using the contents shown in the following code sample.
-
-    ```
-    <?xml version="1.0" encoding="utf-8" ?>  
-    <ImageCustomizations xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate"  
-                         Name="VisualVoicemail"  
-                         Description="Use to configure visual voicemail settings in the phone image."  
-                         Owner=""  
-                         OwnerType="OEM"> 
-      
-      <Static>  
-
-        <Settings Path="Phone/VoicemailRegistrationTable">  
-
+   ```XML
+   <?xml version="1.0" encoding="utf-8" ?>
+   <ImageCustomizations xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate"
+                        Name="VisualVoicemail"
+                        Description="Use to configure visual voicemail settings in the phone image."
+                        Owner=""
+                        OwnerType="OEM">
+     <Static>
+       <Settings Path="Phone/VoicemailRegistrationTable">
           <!-- The MCCMNC macro allows you to set multiple MCCMNC\VVMMMO pairs.
-               The Value stored here will be the key for the Table. --> 
-          <Setting Name="ProviderRegistration/$(MCCMNC)" Value="" />      
-          <Setting Name="ProviderRegistration/$(MCCMNC)" Value="" />          
-        </Settings>  
-
-
+              The Value stored here will be the key for the Table. -->
+         <Setting Name="ProviderRegistration/$(MCCMNC)" Value="" />
+         <Setting Name="ProviderRegistration/$(MCCMNC)" Value="" />
+       </Settings>
         <!-- The VVMMO is the value stored in the MCCMNC setting. This macro allows you to create multiple table entries. -->
-        <Settings Path="Phone/VoicemailRegistrationTable/$(VVMMO)">  
-          <Setting Name="CLSIDProvider" Value="" />   
-          <Setting Name="CLSIDAccessor" Value="" />
-          <Setting Name="ProtocolVariant" Value="" />
-          <Setting Name="IncomingPort" Value="" />
-          <Setting Name="ClientType" Value="" />
-          <Setting Name="DeviceType" Value="" />
-          <Setting Name="InitialSmsDestinationNumber" Value="" />
-          <Setting Name="EncryptedSmsSupported" Value="" />
-          <Setting Name="KeyData" Value="" />
-          <Setting Name="ImapPortOverride" Value="" />
-          <Setting Name="TokenLogin" Value="" />
-          <Setting Name="SuppressSsl" Value="" />
-          <Setting Name="IgnoreLegacyNotifications" Value="" />    
-          <Setting Name="Branding" Value="" />   
-        </Settings>  
+       <Settings Path="Phone/VoicemailRegistrationTable/$(VVMMO)">
+         <Setting Name="CLSIDProvider" Value="" />
+         <Setting Name="CLSIDAccessor" Value="" />
+         <Setting Name="ProtocolVariant" Value="" />
+         <Setting Name="IncomingPort" Value="" />
+         <Setting Name="ClientType" Value="" />
+         <Setting Name="DeviceType" Value="" />
+         <Setting Name="InitialSmsDestinationNumber" Value="" />
+         <Setting Name="EncryptedSmsSupported" Value="" />
+         <Setting Name="KeyData" Value="" />
+         <Setting Name="ImapPortOverride" Value="" />
+         <Setting Name="TokenLogin" Value="" />
+         <Setting Name="SuppressSsl" Value="" />
+         <Setting Name="IgnoreLegacyNotifications" Value="" />
+         <Setting Name="Branding" Value="" />
+       </Settings>  
+       <Settings Path="Phone/VoicemailRegistrationTable/$(VVMMO)">
+         <Setting Name="CLSIDProvider" Value="" />
+         <Setting Name="CLSIDAccessor" Value="" />
+         <Setting Name="ProtocolVariant" Value="" />
+         <Setting Name="IncomingPort" Value="" />
+         <Setting Name="ClientType" Value="" />
+         <Setting Name="DeviceType" Value="" />
+         <Setting Name="InitialSmsDestinationNumber" Value="" />
+         <Setting Name="EncryptedSmsSupported" Value="" />
+         <Setting Name="KeyData" Value="" />
+         <Setting Name="ImapPortOverride" Value="" />
+         <Setting Name="TokenLogin" Value="" />
+         <Setting Name="SuppressSsl" Value="" />
+         <Setting Name="IgnoreLegacyNotifications" Value="" />
+         <Setting Name="Branding" Value="" />
+       </Settings>
+     </Static>
+   </ImageCustomizations>
+   ```
 
-        <Settings Path="Phone/VoicemailRegistrationTable/$(VVMMO)">  
-          <Setting Name="CLSIDProvider" Value="" />   
-          <Setting Name="CLSIDAccessor" Value="" />
-          <Setting Name="ProtocolVariant" Value="" />
-          <Setting Name="IncomingPort" Value="" />
-          <Setting Name="ClientType" Value="" />
-          <Setting Name="DeviceType" Value="" />
-          <Setting Name="InitialSmsDestinationNumber" Value="" />
-          <Setting Name="EncryptedSmsSupported" Value="" />
-          <Setting Name="KeyData" Value="" />
-          <Setting Name="ImapPortOverride" Value="" />
-          <Setting Name="TokenLogin" Value="" />
-          <Setting Name="SuppressSsl" Value="" />
-          <Setting Name="IgnoreLegacyNotifications" Value="" />    
-          <Setting Name="Branding" Value="" />   
-        </Settings>  
+1. Specify an `Owner`.
+1. Set multiple MCCMNC\\VVMMO pairs by adding the following entry in your customization answer file.
 
-      </Static>
+   ```XML
+       <Settings Path="Phone/VoicemailRegistrationTable">
+         <Setting Name="ProviderRegistration/$(MCCMNC)" Value="" /> 
+       </Settings>
+   ```
 
-    </ImageCustomizations>
-    ```
+   1. Replace *$(MCCMNC)* with the MCCMNC for the mobile operator. For example, *99999*.
+   1. Set the corresponding `Value` to the name of the VVMMO. For example, *Contoso*.
+   1. Add and set as many MCCMNC\\VVMMO pairs as you need for each mobile operator ID. For example, if you are adding another VVMMO called Fabrikam with MCC/MNC of 999/10, your entries will look like this:
 
-2.  Specify an `Owner`.
+      ```XML
+          <Settings Path="Phone/VoicemailRegistrationTable">
+            <Setting Name="ProviderRegistration/99999" Value="Contoso" />
+            <Setting Name="ProviderRegistration/99910" Value="Fabrikam" />
+          </Settings>
+      ```
 
-3.  Set multiple MCCMNC\\VVMMO pairs by adding the following entry in your customization answer file.
+1. For each mobile operator ID defined in the previous step, you must define the applicable settings for that mobile operator by adding the following settings in your customization answer file.
 
-    ```
-        <Settings Path="Phone/VoicemailRegistrationTable">
-          <Setting Name="ProviderRegistration/$(MCCMNC)" Value="" /> 
-        </Settings>
-    ```
+   ```XML
+       <Settings Path="Phone/VoicemailRegistrationTable/$(VVMMO)">
+         <Setting Name="CLSIDProvider" Value="" />
+         <Setting Name="CLSIDAccessor" Value="" />
+         <Setting Name="ProtocolVariant" Value="" />
+         <Setting Name="IncomingPort" Value="" />
+         <Setting Name="ClientType" Value="" />
+         <Setting Name="DeviceType" Value="" />
+         <Setting Name="InitialSmsDestinationNumber" Value="" />
+         <Setting Name="EncryptedSmsSupported" Value="" />
+         <Setting Name="KeyData" Value="" />
+         <Setting Name="ImapPortOverride" Value="" />
+         <Setting Name="TokenLogin" Value="" />
+         <Setting Name="SuppressSsl" Value="" />
+         <Setting Name="IgnoreLegacyNotifications" Value="" />
+       </Settings>
+   ```
 
-    1.  Replace *$(MCCMNC)* with the MCCMNC for the mobile operator. For example, *99999*.
+   1. Replace *$(VVMMO)* with the name of the VVMMO. For example, *Contoso*.
+   1. Set only the applicable settings that apply to the VVMMO and are required depending on the OMTP-based protocol being used. Note that you do not have to set all of these if they are not supported.
 
-    2.  Set the corresponding `Value` to the name of the VVMMO. For example, *Contoso*.
-
-    3.  Add and set as many MCCMNC\\VVMMO pairs as you need for each mobile operator ID. For example, if you are adding another VVMMO called Fabrikam with MCC/MNC of 999/10, your entries will look like this:
-
-        ```
-            <Settings Path="Phone/VoicemailRegistrationTable">
-              <Setting Name="ProviderRegistration/99999" Value="Contoso" /> 
-              <Setting Name="ProviderRegistration/99910" Value="Fabrikam" /> 
-            </Settings>
-        ```
-
-4.  For each mobile operator ID defined in the previous step, you must define the applicable settings for that mobile operator by adding the following settings in your customization answer file.
-
-    ```XML
-        <Settings Path="Phone/VoicemailRegistrationTable/$(VVMMO)">  
-          <Setting Name="CLSIDProvider" Value="" />   
-          <Setting Name="CLSIDAccessor" Value="" />
-          <Setting Name="ProtocolVariant" Value="" />
-          <Setting Name="IncomingPort" Value="" />
-          <Setting Name="ClientType" Value="" />
-          <Setting Name="DeviceType" Value="" />
-          <Setting Name="InitialSmsDestinationNumber" Value="" />
-          <Setting Name="EncryptedSmsSupported" Value="" />
-          <Setting Name="KeyData" Value="" />
-          <Setting Name="ImapPortOverride" Value="" />
-          <Setting Name="TokenLogin" Value="" />
-          <Setting Name="SuppressSsl" Value="" />
-          <Setting Name="IgnoreLegacyNotifications" Value="" />    
-        </Settings>  
-    ```
-
-    1.  Replace *$(VVMMO)* with the name of the VVMMO. For example, *Contoso*.
-
-    2.  Set only the applicable settings that apply to the VVMMO and are required depending on the OMTP-based protocol being used. Note that you do not have to set all of these if they are not supported.
-
-        The following table describes the values to use and indicates if the keys are required depending on the OMTP-based protocol being used.
+      The following table describes the values to use and indicates if the keys are required depending on the OMTP-based protocol being used.
 
         <table style="width:100%;">
         <colgroup>
-        <col width="16%" />
-        <col width="16%" />
-        <col width="16%" />
-        <col width="16%" />
-        <col width="16%" />
-        <col width="16%" />
+        <col width="12%" />
+        <col width="12%" />
+        <col width="12%" />
+        <col width="12%" />
+        <col width="12%" />
+        <col width="40%" />
         </colgroup>
         <thead>
         <tr class="header">
@@ -394,18 +379,15 @@ Visual voicemail settings have already been set for AT&T, T-Mobile USA, and Deut
         </tbody>
         </table>
 
-         
+1. For mobile operators that have their own particular brand that they want to use instead of visual voicemail, partners can rebrand all instances of **Visual voicemail** in the Windows device UI to use the operator's brand.
 
-5.  For mobile operators that have their own particular brand that they want to use instead of visual voicemail, partners can rebrand all instances of **Visual voicemail** in the Windows device UI to use the operator's brand.
+  To do this, set the value for `Branding` to the specific name that the mobile operator is using for visual voicemail. For example, you can set the value to *Contoso Voice Inbox*.
 
-    To do this, set the value for `Branding` to the specific name that the mobile operator is using for visual voicemail. For example, you can set the value to *Contoso Voice Inbox*.
+   > [!Note]
+   > This setting does not support a resource-only DLL for localized strings so you need to set the new string directly as the value.
 
-    **Note**  
-    This setting does not support a resource-only DLL for localized strings so you need to set the new string directly as the value.
+## Testing
 
-     
-
-<a href="" id="testing-"></a>**Testing:**  
 Work with your mobile operator to obtain the settings and values that you need to configure visual voicemail and the value to use for `Branding`.
 
 Once you have configured the visual voicemail settings and the branding, work with the mobile operator to test this customization on their network and verify that all instances of **Visual voicemail** in the Windows device UI have been replaced with the custom brand that you specified.
