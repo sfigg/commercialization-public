@@ -389,7 +389,7 @@
 ##### [Settings for IMS services](mobile/mcsf/settings-for-ims-services.md)
 ##### [View Internet APN](mobile/mcsf/view-internet-apn.md)
 
-#### [Customizations for locale-based settings](mobile/mcsf/customizations-for-locale-based-settings,md)
+#### [Customizations for locale-based settings](mobile/mcsf/customizations-for-locale-based-settings.md)
 ##### [China Type Approval requirement: app install prompts](mobile/mcsf/cta-app-install-prompts.md)
 ##### [Contact management on the SIM (CN only)](mobile/mcsf/contact-management-on-the-sim.md)
 ##### [Disable NITZ or daylight saving time](mobile/mcsf/disabling-nitz-or-daylight-saving-time.md)

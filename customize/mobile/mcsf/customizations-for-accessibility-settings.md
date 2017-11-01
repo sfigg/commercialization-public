@@ -5,7 +5,7 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.author: alhopper
-ms.date: 10/31/2017
+ms.date: 11/01/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -18,7 +18,7 @@ Describes the customizations that you can configure to enhance accessibility on 
 
 | Topic                                 | Description                                                                                   |
 |:--------------------------------------|:----------------------------------------------------------------------------------------------|
-| [Telecoil and TTY support for accessibility](mobile/mcsf/telecoil-and-tty-support-for-accessibility.md) | Partners can choose whether to show TTY and/or Telelcoil options in the device settings. |
+| [Telecoil and TTY support for accessibility](telecoil-and-tty-support-for-accessibility.md) | Partners can choose whether to show TTY and/or Telelcoil options in the device settings. |
 
 ## Related topics
 

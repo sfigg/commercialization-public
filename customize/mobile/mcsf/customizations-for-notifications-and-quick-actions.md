@@ -18,11 +18,11 @@ Describes the customizations that you can configure for notifications and quick 
 
 | Topic                                 | Description                                                                                   |
 |:--------------------------------------|:----------------------------------------------------------------------------------------------|
-| [Add an LED notification option](mobile/mcsf/notifications--adding-an-led-notification-option.md) | OEMs can configure a registry key to specify a selected notification LED as the LED notification and then add an LED notification option to the device's messaging Settings screen.   |
-| [Configure Quick actions](mobile/mcsf/configure-quick-settings.md)                                | OEMs can change the default set of actions for each slot on the Quick actions screen in Notifications & actions.      |
-| [CMAS Required Monthly Test](mobile/mcsf/cmas-required-monthly-test.md)                           | OEMs can set a registry key so monthly CMAS messages can be delivered to the device.                  |
-| [Display CMAS message order](mobile/mcsf/display-cmas-message-order.md)                           | Partners can configure the order in which newly received CMAS alert messages are displayed on the device.         |
-| [Emergency notifications](mobile/mcsf/emergency-notifications.md)                                 | Partners can turn on support for various government emergency notification programs.          |
+| [Add an LED notification option](notifications--adding-an-led-notification-option.md) | OEMs can configure a registry key to specify a selected notification LED as the LED notification and then add an LED notification option to the device's messaging Settings screen.   |
+| [Configure Quick actions](configure-quick-settings.md)                                | OEMs can change the default set of actions for each slot on the Quick actions screen in Notifications & actions.      |
+| [CMAS Required Monthly Test](cmas-required-monthly-test.md)                           | OEMs can set a registry key so monthly CMAS messages can be delivered to the device.                                 |
+| [Display CMAS message order](display-cmas-message-order.md)                           | Partners can configure the order in which newly received CMAS alert messages are displayed on the device.            |
+| [Emergency notifications](emergency-notifications.md)                                 | Partners can turn on support for various government emergency notification programs.                               |
 
 ## Related topics
 
