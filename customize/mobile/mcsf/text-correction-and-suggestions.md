@@ -219,7 +219,7 @@ To modify the list of speech languages, the OEM must edit the **Keyboard** secti
 
 OEMs must include at least one keyboard language. To include multiple languages, add additional **Language** entries to the **Keyboard** section of the OEMInput.xml file, as shown in the following sample.
 
-```
+```XML
   <SupportedLanguages>
     <UserInterface>
       <Language>en-US</Language>
@@ -242,12 +242,8 @@ OEMs must include at least one keyboard language. To include multiple languages,
 
 3.  Verify that the list of keyboard languages installed on the device is correct.
 
- 
+## Related topics
 
- 
+[Prepare for Windows mobile development](https://docs.microsoft.com/en-us/windows-hardware/manufacture/mobile/preparing-for-windows-mobile-development)
 
-
-
-
-
-
+[Customization answer file overview](https://docs.microsoft.com/en-us/windows-hardware/customize/mobile/mcsf/customization-answer-file)

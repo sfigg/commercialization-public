@@ -143,7 +143,7 @@ This metric represents the time, in seconds, that the computer spends in the Des
 
 **PLM Phase**
 
-This metric represents the time, in seconds, that the computer spends in the Process Lifetime Manger (PLM) phase, during which the PLM suspends or resumes the execution of Windows Store apps.
+This metric represents the time, in seconds, that the computer spends in the Process Lifetime Manger (PLM) phase, during which the PLM suspends or resumes the execution of Microsoft Store apps.
 
 **Resiliency Notification Phase**
 

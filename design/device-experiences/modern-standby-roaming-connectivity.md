@@ -42,7 +42,7 @@ Start testing Wi-Fi roaming by setting up two Wi-Fi networks (A and B) with publ
 -   **System configuration:**
     -   Factory image is installed on the system.
     -   All drivers are loaded in Device Manager.
-    -   Factory Windows Store apps are installed.
+    -   Factory Microsoft Store apps are installed.
     -   System is running on battery power.
     -   Wi-Fi connectivity is validated to work by connecting to the Internet while the screen is turned on.
 
@@ -101,7 +101,7 @@ Next, put the system in modern standby with both Wi-Fi and MBB radios turned on 
 -   **System configuration:**
     -   Factory image installed on the system.
     -   All drivers loaded in Device Manager.
-    -   Factory Windows Store apps are installed.
+    -   Factory Microsoft Store apps are installed.
     -   System is running on battery power.
     -   Wi-Fi and MBB are validated to function correctly with the screen on and manually configured connections to each network.
 

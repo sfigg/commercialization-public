@@ -18,9 +18,9 @@ ms.technology: windows-oem
 # Big Picture
 
 
-Whether you’re just getting started with Windows Store app development or you're a seasoned app developer, you can use Windows Performance Analyzer to improve experiences that aren’t optimal. Windows Performance Analyzer has a Windows Store App Analysis profile that you can use for analysis of your app. Through this profile, Microsoft has shared the graph and table views that we use most frequently for our analysis.
+Whether you’re just getting started with Microsoft Store app development or you're a seasoned app developer, you can use Windows Performance Analyzer to improve experiences that aren’t optimal. Windows Performance Analyzer has a Microsoft Store App Analysis profile that you can use for analysis of your app. Through this profile, Microsoft has shared the graph and table views that we use most frequently for our analysis.
 
-This video introduces you to the Big Picture tab of the Windows Store App Analysis profile.
+This video introduces you to the Big Picture tab of the Microsoft Store App Analysis profile.
 
 <iframe src="https://hubs-video.ssl.catalog.video.msn.com/embed/c157628f-f494-4b03-82fa-1aa6bc9843f3/IA?csid=ux-en-us&MsnPlayerLeadsWith=html&PlaybackMode=Inline&MsnPlayerDisplayShareBar=false&MsnPlayerDisplayInfoButton=false&iframe=true&QualityOverride=HD" width="720" height="405" allowFullScreen="true" frameBorder="0" scrolling="no"></iframe>
 
@@ -29,7 +29,7 @@ This video introduces you to the Big Picture tab of the Windows Store App Analys
 ## Related topics
 
 
-[Windows Store App Analysis](windows-store-app-analysis.md)
+[Microsoft Store App Analysis](microsoft-store-app-analysis.md)
 
  
 

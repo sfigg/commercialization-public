@@ -46,7 +46,7 @@ These values may be set to defaults by the SoC vendor; OEMs must replace these w
 For more information about the expected sizes and data types for these values, refer to section 7.2 in the [System Management BIOS (SMBIOS) Reference Specification](http://go.microsoft.com/fwlink/?LinkId=267529) (PDF).
 
 **Important**  
-The PhoneManufacturer setting must contain a code specified by Microsoft that corresponds to the OEM. This setting is used for targeting device updates, for connecting to the store-within-a-store in the Windows Store, and for Watson reports. The value must be a valid OEM ID. To get the valid OEM ID that applies to you, contact your Microsoft representative.
+The PhoneManufacturer setting must contain a code specified by Microsoft that corresponds to the OEM. This setting is used for targeting device updates, for connecting to the store-within-a-store in the Microsoft Store, and for Watson reports. The value must be a valid OEM ID. To get the valid OEM ID that applies to you, contact your Microsoft representative.
 
  
 

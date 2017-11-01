@@ -18,9 +18,9 @@ ms.technology: windows-oem
 # Frame Analysis
 
 
-Whether you’re just getting started with Windows Store app development or you're a seasoned app developer, you can use Windows Performance Analyzer to improve experiences that aren’t optimal. Windows Performance Analyzer has a Windows Store App Analysis profile that you can use for analysis of your app. Through this profile, Microsoft has shared the graph and table views that we use most frequently for our analysis.
+Whether you’re just getting started with Microsoft Store app development or you're a seasoned app developer, you can use Windows Performance Analyzer to improve experiences that aren’t optimal. Windows Performance Analyzer has a Microsoft Store App Analysis profile that you can use for analysis of your app. Through this profile, Microsoft has shared the graph and table views that we use most frequently for our analysis.
 
-The videos below introduce you to the Frame Analysis tab of the Windows Store App Analysis profile.
+The videos below introduce you to the Frame Analysis tab of the Microsoft Store App Analysis profile.
 
 <iframe src="https://hubs-video.ssl.catalog.video.msn.com/embed/82711169-ea06-43c3-9e94-b86db2fdf402/IA?csid=ux-en-us&MsnPlayerLeadsWith=html&PlaybackMode=Inline&MsnPlayerDisplayShareBar=false&MsnPlayerDisplayInfoButton=false&iframe=true&QualityOverride=HD" width="720" height="405" allowFullScreen="true" frameBorder="0" scrolling="no"></iframe>
 
@@ -35,7 +35,7 @@ For more information on Frame Analysis concepts, see the following //build/ 2013
 ## Related topics
 
 
-[Windows Store App Analysis](windows-store-app-analysis.md)
+[Microsoft Store App Analysis](microsoft-store-app-analysis.md)
 
  
 

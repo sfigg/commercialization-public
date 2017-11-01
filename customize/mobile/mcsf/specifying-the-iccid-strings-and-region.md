@@ -24,7 +24,7 @@ If enabling this customization, OEMs can specify one or more ICCID digit prefix 
 <a href="" id="instructions-"></a>**Instructions:**  
 1.  Create a customization answer file using the contents shown in the following code sample.
 
-    ```
+    ```XML
     <?xml version="1.0" encoding="utf-8" ?>  
     <ImageCustomizations xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate"  
                          Name="SetBrandingSlot"  
@@ -179,12 +179,8 @@ If enabling this customization, OEMs can specify one or more ICCID digit prefix 
 
     Or, if you used a different IccidToRegion.xml mapping table, verify that the home country/region that shows during initial device setup matches the value you specified in the mapping table.
 
- 
+## Related topics
 
- 
+[Prepare for Windows mobile development](https://docs.microsoft.com/en-us/windows-hardware/manufacture/mobile/preparing-for-windows-mobile-development)
 
-
-
-
-
-
+[Customization answer file overview](https://docs.microsoft.com/en-us/windows-hardware/customize/mobile/mcsf/customization-answer-file)

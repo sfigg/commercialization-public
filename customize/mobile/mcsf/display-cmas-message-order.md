@@ -28,7 +28,7 @@ Users will be able to acknowledge the messages in the reverse order they were re
 <a href="" id="instructions-"></a>**Instructions:**  
 1.  Create a customization answer file using the contents shown in the following code sample.
 
-    ```
+    ```XML
     <?xml version="1.0" encoding="utf-8" ?>  
     <ImageCustomizations xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate"  
                          Name="DisplayCmasLifo"  
@@ -81,12 +81,8 @@ Work with your mobile operator partner to fully test this customization on their
 
 Verify that the order in which CMAS alert messages are displayed on the device that contains the customization matches the setting (FIFO or LIFO) that you have specified.
 
- 
+## Related topics
 
- 
+[Prepare for Windows mobile development](https://docs.microsoft.com/en-us/windows-hardware/manufacture/mobile/preparing-for-windows-mobile-development)
 
-
-
-
-
-
+[Customization answer file overview](https://docs.microsoft.com/en-us/windows-hardware/customize/mobile/mcsf/customization-answer-file)

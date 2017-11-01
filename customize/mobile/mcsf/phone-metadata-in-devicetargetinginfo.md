@@ -33,7 +33,7 @@ Partners are required to set the following information:
 <a href="" id="instructions-"></a>**Instructions:**  
 1.  Create a customization answer file using the contents shown in the following code sample.
 
-    ```
+    ```XML
     <?xml version="1.0" encoding="utf-8" ?>  
     <ImageCustomizations xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate"  
                          Name="PhoneMetadataDeviceTargetingInfo"  
@@ -264,3 +264,9 @@ Partners are required to set the following information:
 2.  Go to the **About** screen in **Settings**. Tap on the **More Info** button.
 
 3.  Verify that the information on this screen matches the values you specified.
+
+## Related topics
+
+[Prepare for Windows mobile development](https://docs.microsoft.com/en-us/windows-hardware/manufacture/mobile/preparing-for-windows-mobile-development)
+
+[Customization answer file overview](https://docs.microsoft.com/en-us/windows-hardware/customize/mobile/mcsf/customization-answer-file)

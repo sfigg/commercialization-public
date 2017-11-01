@@ -47,7 +47,7 @@ When optimizing on/off performance, consider the following suggestions:
 
 -   Use techniques to delay start processes on boot.
 
--   Consider converting traditional desktop apps to Windows Store apps, which do not cause an impact on boot. Work with IHVs to leverage Windows Store device apps.
+-   Consider converting traditional desktop apps to Microsoft Store apps, which do not cause an impact on boot. Work with IHVs to leverage Microsoft Store device apps.
 
 -   Understand how memory consumption effects on/off transition times and follow these suggestions:
 
