@@ -30,8 +30,6 @@ These standards are for general purpose desktops, laptops, tablets, 2-in-1’s, 
 | Secure boot | System's firmware must support UEFI Secure Boot and must have UEFI Secure Boot enabled by default | See [UEFI firmware requirements](OEM-UEFI.md) and [Secure Boot](OEM-secure-boot.md) for more information. |
 | Secure MOR | System's firmware must implement Secure MOR revision 2 | https://docs.microsoft.com/en-us/windows-hardware/drivers/bringup/device-guard-requirements |
 | Update mechanism | Systems must support the Windows UEFI Firmware Capsule Update specification | https://docs.microsoft.com/en-us/windows-hardware/drivers/bringup/windows-uefi-firmware-update-platform |
-| **Recommended, not required** Firmware Extension Table MAT | Systems must ship with the UEFI 2.6 MAT table configured | |
-| Firmware Extension Table WSMT | Systems must ship with the WSMT table configured | https://msdn.microsoft.com/en-us/library/windows/hardware/dn614617.aspx |
 
 
  
