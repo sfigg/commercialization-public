@@ -1,6 +1,6 @@
 ---
 title: Standards for a secure Windows 10 device
-description: This document provice guidance on the minimum standards for purchasing the most secure systems for Windows 10. 
+description: This document provice guidance on the minimum standards for purchasing highly secure systems for Windows 10. 
 ms.author: dawnwood
 ms.date: 11/05/2017
 ms.topic: article
