@@ -20,7 +20,7 @@ ms.technology: windows-oem
 
 The cameras in modern mobile platforms allow users to capture still and motion video of their surroundings, and to use video and audio to communicate with other users over the Internet. The general goal of power management for a camera device can be described simply—the camera subsystem must be powered off, consuming zero watts, unless the camera is in active use.
 
-When the camera is actively being used to stream video to an application, the camera sensor and related components should be powered on. Windows enables the camera hardware to be turned off during modern standby by suspending any foreground Windows Store apps that might be streaming data from the camera device. Windows makes no provisions for the use of camera devices while the system is in modern standby, so a camera device can be used only when the display is turned on.
+When the camera is actively being used to stream video to an application, the camera sensor and related components should be powered on. Windows enables the camera hardware to be turned off during modern standby by suspending any foreground Microsoft Store apps that might be streaming data from the camera device. Windows makes no provisions for the use of camera devices while the system is in modern standby, so a camera device can be used only when the display is turned on.
 
 ## In this section
 

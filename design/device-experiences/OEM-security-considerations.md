@@ -52,7 +52,7 @@ Hardware-based security features, also called virtualization-based security or V
 
 ## Windows 10 S
 
-Windows 10 S is a specific configuration of Windows 10 Pro that offers a familiar, productive Windows experience that’s streamlined for security and performance. By exclusively using apps in the Windows Store and ensuring that you browse safely with Microsoft Edge, Windows 10 S keeps you running fast and secure day in and day out. The same technology that makes Windows 10 S secure also creates some differences when creating software images for Windows 10 devices.
+Windows 10 S is a specific configuration of Windows 10 Pro that offers a familiar, productive Windows experience that’s streamlined for security and performance. By exclusively using apps in the Microsoft Store and ensuring that you browse safely with Microsoft Edge, Windows 10 S keeps you running fast and secure day in and day out. The same technology that makes Windows 10 S secure also creates some differences when creating software images for Windows 10 devices.
 
 **OEMs:** For more information about Windows 10 S, see [Windows 10 S manufacturing overview](https://docs.microsoft.com/windows-hardware/manufacture/desktop/windows-10-s-overview).
 

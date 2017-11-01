@@ -22,26 +22,15 @@ Trace capture is the key diagnostic method that is used to debug issues that are
 
 ## Capture a WPA trace
 
-
 We recommend that you capture a trace of at least one hour of modern standby to observe trends and averages.
 
-You can use the following method to capture a trace:
+You can use the following method to capture a WPA trace using the Windows Performance Recorder (WPR) with the Power profile:
 
-**Use the Windows Performance Recorder (WPR)**
-
-1.  Install the Windows Performance Toolkit on the system.
-2.  Copy PowerManagement\_Profile.wprp to the system.
-3.  To start WPR, run Wprui.exe with administrative privileges from the WPT install location.
-4.  Expand More options and select the Power Management profile under Custom Measurements in the list of profiles. If the profile does not exist, click Add Profiles and open PowerManagement\_Profile.wprp (that you copied in step 2).
-5.  Press or click Start to begin recording the trace.
-6.  While recording, put the system into modern standby.
-7.  Wait for at least one hour and then wake up the system.
-8.  Press or click Save to stop recording.
-9.  Choose a file name in the displayed dialog.
-10. Enter at least one letter into the description field and press or click Save.
-11. Wait for the progress bar to complete and then press or click OK.
-12. If WPR is still recording, press or click Cancel.
-13. Retrieve the saved trace file for analysis.
+1.   Install the Windows Performance Toolkit (WPT).
+2.	 Open an elevated command prompt and navigate to the WPT install location.
+3.	 To start the trace, run: `wpr -start Power`
+4.	 While recording, put the system into modern standby. Wait for at least one hour, then wake up the system.
+5.	 To stop and save the trace into an event trace log (ETL), run: `wpr -stop <filename>.etl` 
 
 ## View a WPA trace
 

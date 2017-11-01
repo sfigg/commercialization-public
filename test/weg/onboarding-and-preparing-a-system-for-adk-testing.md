@@ -83,7 +83,7 @@ ms.technology: windows-oem
 
    **rundll32.exe advapi32.dll,ProcessIdleTasks**
 
-8. Disable Windows Store updates, after applying all available updates.
+8. Disable Microsoft Store updates, after applying all available updates.
 
    a. Open the Store settings and go to <strong>App updates</strong>.
 

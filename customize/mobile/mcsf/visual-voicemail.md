@@ -236,7 +236,7 @@ Visual voicemail settings have already been set for AT&T, T-Mobile USA, and Deut
 
 4.  For each mobile operator ID defined in the previous step, you must define the applicable settings for that mobile operator by adding the following settings in your customization answer file.
 
-    ```
+    ```XML
         <Settings Path="Phone/VoicemailRegistrationTable/$(VVMMO)">  
           <Setting Name="CLSIDProvider" Value="" />   
           <Setting Name="CLSIDAccessor" Value="" />
@@ -410,12 +410,8 @@ Work with your mobile operator to obtain the settings and values that you need t
 
 Once you have configured the visual voicemail settings and the branding, work with the mobile operator to test this customization on their network and verify that all instances of **Visual voicemail** in the Windows device UI have been replaced with the custom brand that you specified.
 
- 
+## Related topics
 
- 
+[Prepare for Windows mobile development](https://docs.microsoft.com/en-us/windows-hardware/manufacture/mobile/preparing-for-windows-mobile-development)
 
-
-
-
-
-
+[Customization answer file overview](https://docs.microsoft.com/en-us/windows-hardware/customize/mobile/mcsf/customization-answer-file)

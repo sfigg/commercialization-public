@@ -71,7 +71,7 @@ Windows 10 Client driver package must not include any custom applications after 
 
 **Windows 10 S**
 
-Windows 10 S driver package must not include any custom applications by the official release of the Windows 10 S. All device dependent applications must be HSA/UWP based and release through the Windows Store.
+Windows 10 S driver package must not include any custom applications by the official release of the Windows 10 S. All device dependent applications must be HSA/UWP based and release through the Microsoft Store.
  
 
 <a name="device.devfund.deviceguard"></a>
@@ -415,7 +415,7 @@ http://msdn.microsoft.com/en-us/library/ff560526.aspx</p>
 
 **Windows 10 S only**
 
-Driver packages may not include any 3rd party UI components, apps, or settings. Instead Universal applications from the Windows Store should be provided for user interfaces and may also leverage Settings app extensibility to achieve custom configuration on hardware level tuning or setting.
+Driver packages may not include any 3rd party UI components, apps, or settings. Instead Universal applications from the Microsoft Store should be provided for user interfaces and may also leverage Settings app extensibility to achieve custom configuration on hardware level tuning or setting.
 
 Drivers must not reference any of the following inbox components:
 

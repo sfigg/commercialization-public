@@ -24,7 +24,7 @@ By default, when a user calls the voicemail number, the number dialed is display
 <a href="" id="instructions-"></a>**Instructions:**  
 1.  Create a customization answer file using the contents shown in the following code sample.
 
-    ```
+    ```XML
     <?xml version="1.0" encoding="utf-8" ?>  
     <ImageCustomizations xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate"  
                          Name="DisableVoicemailPhoneNumberDisplay"  
@@ -80,12 +80,8 @@ By default, when a user calls the voicemail number, the number dialed is display
 
 4.  Depending on the value that you set for `DisableVoicemailPhoneNumberDisplay`, verify that the voicemail phone number is either displayed or hidden below the **Voicemail** label on the call progress screen.
 
- 
+## Related topics
 
- 
+[Prepare for Windows mobile development](https://docs.microsoft.com/en-us/windows-hardware/manufacture/mobile/preparing-for-windows-mobile-development)
 
-
-
-
-
-
+[Customization answer file overview](https://docs.microsoft.com/en-us/windows-hardware/customize/mobile/mcsf/customization-answer-file)

@@ -96,7 +96,7 @@ Near field proximity enables [Tap and Do](http://go.microsoft.com/fwlink/p/?Link
 <td><ul>
 <li>Tap the PC to another PC or a mobile phone to connect two apps if both apps are already running.</li>
 <li>If the app isn't running on the other computer, the user is invited to launch the app.</li>
-<li>If the app isn't installed on the other computer, the user is invited to install it from the Windows Store.</li>
+<li>If the app isn't installed on the other computer, the user is invited to install it from the Microsoft Store.</li>
 <li>Tap a PC to a tag to launch the app specified in the tag. If the app isn't installed, the user is invited to install it from the Store.</li>
 </ul></td>
 </tr>

@@ -24,7 +24,7 @@ Partner apps can be used to sell ringtones to users. The app owner must provide 
 
 2.  Create a customization answer file using the contents shown in the following code sample.
 
-    ```
+    ```XML
     <?xml version="1.0" encoding="utf-8" ?>  
     <ImageCustomizations xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate"  
                          Name="RingtoneStoreApp"  
@@ -74,12 +74,8 @@ Partner apps can be used to sell ringtones to users. The app owner must provide 
 
 5.  Tap the link and confirm that it launches your ringtone store application.
 
- 
+## Related topics
 
- 
+[Prepare for Windows mobile development](https://docs.microsoft.com/en-us/windows-hardware/manufacture/mobile/preparing-for-windows-mobile-development)
 
-
-
-
-
-
+[Customization answer file overview](https://docs.microsoft.com/en-us/windows-hardware/customize/mobile/mcsf/customization-answer-file)

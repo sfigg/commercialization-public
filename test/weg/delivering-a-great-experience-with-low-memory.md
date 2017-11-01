@@ -16,7 +16,7 @@ ms.technology: windows-oem
 
 # Delivering a great experience with low memory
 
-The amount of memory available has a significant affect on the overall user experience, ranging from overall responsiveness of the system, responsiveness when switching between Windows Store style apps, and battery life. These are all important factors to consider when evaluating the overall experience with low memory. (Low memory is 1 GB of RAM on 32-bit Windows and 2 GB of RAM on 64-bit Windows.)
+The amount of memory available has a significant affect on the overall user experience, ranging from overall responsiveness of the system, responsiveness when switching between Microsoft Store style apps, and battery life. These are all important factors to consider when evaluating the overall experience with low memory. (Low memory is 1 GB of RAM on 32-bit Windows and 2 GB of RAM on 64-bit Windows.)
 
 ## Considerations
 
@@ -45,7 +45,7 @@ From an OS perspective, several improvements have been made to reduce run-time m
 
 In a low-memory configuration, Windows relies on paging and swapping of content from memory and thus the performance of the underlying disk is critical in delivering a smooth and responsive user experience. Hardware certification requirements provide guidance on key performance metrics for storage on Connected Standby devices. For more information, see [Device.Storage Requirements](https://msdn.microsoft.com/en-us/library/windows/hardware/jj134356.aspx).
 
-Windows has mechanisms to reduce memory usage of suspended Windows Store apps and resume them via efficient sequential disk IO. For more information, see [Reclaiming memory from Metro style apps](https://blogs.msdn.microsoft.com/b8/2012/04/17/reclaiming-memory-from-metro-style-apps/). For example,
+Windows has mechanisms to reduce memory usage of suspended Microsoft Store apps and resume them via efficient sequential disk IO. For more information, see [Reclaiming memory from Metro style apps](https://blogs.msdn.microsoft.com/b8/2012/04/17/reclaiming-memory-from-metro-style-apps/). For example,
 consider a 120-MB app that needs to be read from disk on resume; a disk that delivers sequential read performance of 60 MB/s will take 2 seconds for that app to be read back off the disk whereas a disk that delivers 120 MB/s will take only 1 second to bring its contents into memory. eMMC and SSD storage provide sequential read rates of approximately 120-150 MB/s, while typical rotational disks have speeds of approximately 50 MB/s. Run-time policies in Windows make trade-offs based on storage performance and slower disks (e.g., HDD and HHDD), which will result in a potentially slower app switch/multitasking experience and increased app terminations.
 
 #### Disk endurance

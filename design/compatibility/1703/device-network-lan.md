@@ -23,6 +23,7 @@ ms.technology: windows-oem
  - [Device.Network.LAN.IPsec](#device.network.lan.ipsec)
  - [Device.Network.LAN.KRDMA](#device.network.lan.krdma)
  - [Device.Network.LAN.LargeSendOffload](#device.network.lan.largesendoffload)
+ - [Device.Network.LAN.MTUSize](#device.network.lan.mtusize)
  - [Device.Network.LAN.PM](#device.network.lan.pm)
  - [Device.Network.LAN.RSC](#device.network.lan.rsc)
  - [Device.Network.LAN.RSS](#device.network.lan.rss)
@@ -711,13 +712,16 @@ Large Send Offload version 2 for IPv4 and IPv6.
 
 See the Windows Driver Kit, "NDIS."
 
-### Device.Network.LAN.MTUSize
+<a name="device.network.lan.mtusize"></a>
+
+## Device.Network.LAN.MTUSize
 
 <table><tr><th>Applies to</th><td><p>Windows Server 2016 x64</p></td></tr></table>
 
 **Description**
 
-Ethernet devices must support Jumbo Frames. MTU values in the User Interface must include the Ethernet header size of 14 Bytes. The “*JumboPacket” standardized keyword in the Windows Registry is currently used for setting the MTU size and should remain as an enumerable value with supported values being 1514, 4088, and 9014.
+Ethernet devices must support Jumbo Frames, and the Maximum Transmission Unit (MTU) values in the User Interface must include the Ethernet header size of 14 Bytes. The “\*JumboPacket” standardized keyword in the Windows Registry is currently used for setting the MTU size and should remain as an enumerable value with supported values being 1514, 4088, and 9014.
+
 
 ### Device.Network.LAN.MTUSize.EncapOverhead
 

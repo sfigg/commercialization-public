@@ -344,7 +344,7 @@ The following device languages are supported.
 
      
 
-    ```
+    ```XML
       <SupportedLanguages>
         <UserInterface>
           <Language>en-US</Language>
@@ -371,12 +371,8 @@ The following device languages are supported.
 
 4.  Look at the language list and verify that the default language is correct.
 
- 
+## Related topics
 
- 
+[Prepare for Windows mobile development](https://docs.microsoft.com/en-us/windows-hardware/manufacture/mobile/preparing-for-windows-mobile-development)
 
-
-
-
-
-
+[Customization answer file overview](https://docs.microsoft.com/en-us/windows-hardware/customize/mobile/mcsf/customization-answer-file)
