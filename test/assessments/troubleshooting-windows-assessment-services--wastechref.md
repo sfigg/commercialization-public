@@ -138,15 +138,15 @@ Check the error log at **C:\\Relax\\CompleteDeployment.log** for additional erro
 
 ### An image deployment failure does not have enough information on the monitoring page
 
-You may experience missing image deployment failure information on the monitoring page because of one of the following errors:
+If you receive the error message `Error code: Exiting Scenario Deploy: ErrorId=*\<IDNumber\>*`, an image deployment may have failed, and there is not enough information about the failure on the monitoring page. The following table shows some common error ID numbers and the errors that they represent:
 
-| Error message                                              | Problem description                                                                                                                 |
-| :--------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------- |
-| `Error code: Exiting Scenario Deploy: ErrorId=2`           | Either you are using an image of unsupported format, the unattend answer file is missing, or the image file is missing.             |
-| `Error code: Exiting Scenario Deploy: ErrorId=38`          | The image file is corrupted.                                                                                                        |
-| `Error code: Exiting Scenario Deploy: ErrorId=87`          | Bcdboot failed to update the BCD store. This is specific to some UEFI computer prototypes. No workaround is available at this time. |
-| `Error code: Exiting Scenario Deploy: ErrorId=193`         | Bcdboot failed to update the BCD store. An image of incompatible architecture was applied to a test computer.                       |
-| `Error code: Exiting Scenario Deploy: ErrorId=-2147024809` | Diskpart failed to find any hard disk drive that could be used to apply an image to.                                                |
+| Error ID number | Error description                                                                                                                   |
+| --------------: | :---------------------------------------------------------------------------------------------------------------------------------- |
+| 2               | Either you are using an image of unsupported format, the unattend answer file is missing, or the image file is missing.             |
+| 38              | The image file is corrupted.                                                                                                        |
+| 87              | Bcdboot failed to update the BCD store. This is specific to some UEFI computer prototypes. No workaround is available at this time. |
+| 193             | Bcdboot failed to update the BCD store. An image of incompatible architecture was applied to a test computer.                       |
+| -2147024809     | Diskpart failed to find any hard disk drive that could be used to apply an image to.                                                |
 
 
 ### A DISM error occurs during computer inventory
