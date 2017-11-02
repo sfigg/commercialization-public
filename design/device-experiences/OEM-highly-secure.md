@@ -8,7 +8,7 @@ ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 # Standards for a highly secure Windows 10 device
-These standards are for general purpose desktops, laptops, tablets, 2-in-1’s, mobile workstations, and desktops. This page applies specifically and uniquely for **Windows 10 version 1709, Fall Creators Update**. Windows enterprse security features light up when you meet or exceed these standards and your device is able to provide a highly secure experience. 
+These standards are for general purpose desktops, laptops, tablets, 2-in-1’s, mobile workstations, and desktops. This topic applies specifically and uniquely for **Windows 10 version 1709, Fall Creators Update**. Windows enterprise security features light up when you meet or exceed these standards and your device is able to provide a highly secure experience. 
 
 ## Hardware
 
