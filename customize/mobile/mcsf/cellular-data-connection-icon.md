@@ -26,7 +26,7 @@ The one-, two-, or three-character codes used to signify the data connection typ
 <a href="" id="instructions-"></a>**Instructions:**  
 1.  Create a customization answer file using the contents shown in the following code sample.
 
-    ```
+    ```XML
     <?xml version="1.0" encoding="utf-8" ?>  
     <ImageCustomizations xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate"  
                          Name="DataConnectionIcon"  
@@ -114,3 +114,9 @@ The one-, two-, or three-character codes used to signify the data connection typ
 2.  Verify that the one-, two-, or three-character code(s) you used for the cellular data connection type is displayed in the status bar at the top of the screen.
 
     You may have to tap the clock to make the status bar appear if it is hidden.
+
+## Related topics
+
+[Prepare for Windows mobile development](https://docs.microsoft.com/en-us/windows-hardware/manufacture/mobile/preparing-for-windows-mobile-development)
+
+[Customization answer file overview](https://docs.microsoft.com/en-us/windows-hardware/customize/mobile/mcsf/customization-answer-file)

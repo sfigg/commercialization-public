@@ -14,10 +14,11 @@ ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
+
 # Buffers
 
-
 Describes either the number of buffers to be allocated when starting a session or the percentage of total memory to be allocated for the session, depending on the value of the **PercentageOfTotalMemory** attribute.
+
 
 ## Element Hierarchy
 
@@ -41,7 +42,6 @@ Describes either the number of buffers to be allocated when starting a session o
 
 ## Syntax
 
-
 ```
 <Buffers Operation               = "Set" | "Add" | “Remove”
          Value                   = unsignedLong
@@ -50,63 +50,24 @@ Describes either the number of buffers to be allocated when starting a session o
 </Buffers>
 ```
 
+
 ## Attributes and Elements
 
 
 ### Attributes
 
-<table>
-<thead>
-<tr class="header">
-<th>Attribute</th>
-<th>Description</th>
-<th>Data type</th>
-<th>Required</th>
-<th>Default</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><strong>MaximumBufferSpace</strong></p></td>
-<td><p>Indicates the maximum size of the buffer, in megabytes, that will be used for collection. This value only applies when <strong>PercentageOfTotalMemory</strong> is <strong>true</strong>.</p></td>
-<td><p>unsignedLong</p></td>
-<td><p>No</p></td>
-<td><p></p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Operation</strong></p></td>
-<td><p>Indicates whether buffers should be set or added.</p></td>
-<td><p>This attribute can have one of the following values:</p>
-<ul>
-<li>Set</li>
-<li>Add</li>
-<li>Remove</li>
-</ul></td>
-<td><p>No</p></td>
-<td><p>Set</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>PercentageOfTotalMemory</strong></p></td>
-<td><p>When set to <strong>true</strong>, limits the amount of memory that can be consumed to the value of <strong>Value</strong>.</p></td>
-<td><p>Boolean</p></td>
-<td><p>No</p></td>
-<td><p>false</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Value</strong></p></td>
-<td><p>Indicates the number of buffers, or if <strong>PercentageOfTotalMemory</strong> is set to <strong>true</strong>, the percentage of memory for the buffers.</p></td>
-<td><p>unsignedLong</p></td>
-<td><p>Yes</p></td>
-<td><p></p></td>
-</tr>
-</tbody>
-</table>
+| Attribute                   | Description                                                                                                                                                   | Data type                                                                                                 | Required | Default |
+| :-------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------ | :-------------------------------------------------------------------------------------------------------- | :------- | :------ |
+| **MaximumBufferSpace**      | Indicates the maximum size of the buffer, in megabytes, that will be used for collection. This value only applies when **PercentageOfTotalMemory** is `true`. | unsignedLong                                                                                              | No       |         |
+| **Operation**               | Indicates whether buffers should be set or added.                                                                                                             | This attribute can have one of the following values: <ul> <li>Set</li> <li>Add</li> <li>Remove</li> </ul> | No       | Set     |
+| **PercentageOfTotalMemory** | When set to `true`, limits the amount of memory that can be consumed to the value of **Value**.                                                               | Boolean                                                                                                   | No       | false   |
+| **Value**                   | Indicates the number of buffers, or if **PercentageOfTotalMemory** is set to `true`, the percentage of memory for the buffers.                                | unsignedLong                                                                                              | Yes      |         |
 
- 
 
 ### Child Elements
 
 None.
+
 
 ### Parent Elements
 
@@ -122,17 +83,16 @@ None.
 
 ## Remarks
 
-
 This element is used only for in-memory capture.
 
-## Example
 
+## Example
 
 The following examples show how this element is used in system collector and event collector definitions.
 
 The first example sets the buffer size to 512 KB and limits the total amount of memory consumed to 3 percent. The second example sets 64 buffers of 128 KB each.
 
-```
+```xml
 <SystemCollector
   Id="WPRSystemCollector"
   Name="NT Kernel Logger"
@@ -155,8 +115,8 @@ The first example sets the buffer size to 512 KB and limits the total amount of 
 </EventCollector>
 ```
 
-## Related topics
 
+## Related topics
 
 [Elements](elements.md)
 

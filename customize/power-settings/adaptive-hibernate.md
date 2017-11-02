@@ -13,7 +13,7 @@ ms.technology: windows-oem
 ---
 # Adaptive hibernate
 
-Users can set the Hibernate option in their Windows devices to put the system into a low power state when the system is not in use. The current logic for hibernate relies on an OEM- or user-configured doze to hibernate timer. The most common timer value is 4 hours. A fixed doze to hibernate timer may offer a consistent and predicitble user experience, however it doesn’t address rapid drain of battery.
+Users can set the Hibernate option in their Windows devices to put the system into a low power state when the system is not in use. The current logic for hibernate relies on an OEM- or user-configured doze to hibernate timer. The most common timer value is 4 hours. A fixed doze to hibernate timer may offer a consistent and predictable user experience, however it doesn’t address rapid drain of battery.
 
 The timer-based logic has some significant user experience drawbacks. A fixed doze timer can result in the system fully draining the battery in standby if it happened within the doze timeout or cut short a modern standby experience by hibernating at doze timeout. The timer is generally not the best option when it comes to addressing the worst case battery drain and the system needs to be adaptive and hibernate based on battery drain and user needs.
 

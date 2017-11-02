@@ -14,26 +14,22 @@ ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-# SystemCollectorId
 
+# SystemCollectorId
 
 Represents the identifier of a system collector.
 
+
 ## Element Hierarchy
 
+* \<[WindowsPerformanceRecorder](windowsperformancerecorder.md)\>
+  * \<[Profiles](profiles.md)\>
+    * \<[Profile](profile-wpr.md)\>
+      * \<[Collectors](collectors.md)\>
+        * \<**SystemCollectorId**\>
 
-&lt;[WindowsPerformanceRecorder](windowsperformancerecorder.md)&gt;
-
-     &lt;[Profiles](profiles.md)&gt;
-
-          &lt;[Profile](profile-wpr.md)&gt;
-
-               &lt;[Collectors](collectors.md)&gt;
-
-                    &lt;**SystemCollectorId**&gt;
 
 ## Syntax
-
 
 ```
 <SystemCollectorId Value = IdType>
@@ -48,122 +44,36 @@ Represents the identifier of a system collector.
 </SystemCollectorId>
 ```
 
+
 ## Attributes and Elements
 
 
 ### Attributes
 
-<table>
-<colgroup>
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Attribute</th>
-<th>Description</th>
-<th>Data type</th>
-<th>Required</th>
-<th>Default</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><strong>Value</strong></p></td>
-<td><p>Describes the identifier.</p></td>
-<td><p>String that must have at least one character and cannot contain colons (:) or spaces.</p></td>
-<td><p>Yes</p></td>
-<td><p></p></td>
-</tr>
-</tbody>
-</table>
+| Attribute | Description               | Data type                                                                             | Required | Default |
+| :-------- | :------------------------ | :------------------------------------------------------------------------------------ | :------- | :------ |
+| **Value** | Describes the identifier. | String that must have at least one character and cannot contain colons (:) or spaces. | Yes      |         |
 
- 
 
 ### Child Elements
 
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-<th>Description</th>
-<th>Requirement</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>[BufferSize](buffersize.md)</p></td>
-<td><p>Describes the size of each buffer, in KB.</p></td>
-<td><p>Required, exactly 1.</p></td>
-</tr>
-<tr class="even">
-<td><p>[Buffers](buffers.md)</p></td>
-<td><p>Describes the number of buffers to be allocated when starting a session.</p></td>
-<td><p>Required, exactly 1.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[StackCaching](stackcaching.md)</p></td>
-<td><p>Describes stack caching attributes of collectors.</p></td>
-<td><p></p></td>
-</tr>
-<tr class="even">
-<td><p>[SystemProviderId](systemproviderid.md)</p></td>
-<td><p>Represents a system provider identifier.</p></td>
-<td><p>Optional, 1 or more.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[SystemProvider](systemprovider.md)</p></td>
-<td><p>Represents a system provider.</p></td>
-<td><p>Optional, 1 or more.</p></td>
-</tr>
-</tbody>
-</table>
+| Element                                 | Description                                                              | Requirement          |
+| :-------------------------------------- | :----------------------------------------------------------------------- | :------------------- |
+| [BufferSize](buffersize.md)             | Describes the size of each buffer, in KB.                                | Required, exactly 1. |
+| [Buffers](buffers.md)                   | Describes the number of buffers to be allocated when starting a session. | Required, exactly 1. |
+| [StackCaching](stackcaching.md)         | Describes stack caching attributes of collectors.                        |                      |
+| [SystemProviderId](systemproviderid.md) | Represents a system provider identifier.                                 | Optional, 1 or more. |
+| [SystemProvider](systemprovider.md)     | Represents a system provider.                                            | Optional, 1 or more. |
 
- 
 
 ### Parent Elements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>[Collectors](collectors.md)</p></td>
-<td><p>Represents a collection of collector identifiers.</p></td>
-</tr>
-</tbody>
-</table>
+| Element                     | Description                                       |
+| :-------------------------- | :------------------------------------------------ |
+| [Collectors](collectors.md) | Represents a collection of collector identifiers. |
 
- 
 
 ## Related topics
 
-
 [Elements](elements.md)
-
- 
-
- 
-
-
-
-
-
-
 

@@ -292,7 +292,7 @@ In some cases, you may need to preload an app that has dependencies on other pac
 
 In order to ship a mobile device, at a minimum, you must set the required settings described in [Phone metadata in DeviceTargetingInfo](https://msdn.microsoft.com/library/windows/hardware/dn772214). Examples of required metadata include:
 
--   OEM and mobile operator information, used for display strings in the UI, device update, connecting to the Windows Store, and so on.
+-   OEM and mobile operator information, used for display strings in the UI, device update, connecting to the Microsoft Store, and so on.
 -   Hardware component versions and software versions, used for targeting updates to devices and for user support.
 -   The device's model name, the mobile operator's name, and the manufacturer's name, which appear in the **About** screen in **Settings**.
 
@@ -437,7 +437,7 @@ There are a variety of other customization settings that you can configure for W
 -   [Customizations for photos, music, and videos](https://msdn.microsoft.com/library/windows/hardware/dn757445) for info about audio volume limitation, adding OEM lens apps, and so on.
 -   [Customizations for Settings](https://msdn.microsoft.com/library/windows/hardware/dn757448) to learn about all the many customizations you can configure for the settings that appear within the **Settings** app on mobile devices.
 -   [Customizations for SMS and MMS](https://msdn.microsoft.com/library/windows/hardware/dn757449) for more info on adding encoding extension tables for SMS, maximum length for messages, intercept deny list, and many more.
--   [Customizations for Start](https://msdn.microsoft.com/library/windows/hardware/dn757450) to change the default behavior of the Windows Store live tile. Note that you may configure the Start layout too, but that's covered in [Start layout for Windows 10 mobile editions](https://msdn.microsoft.com/library/windows/hardware/mt171093) and shown as an example in this walkthrough.
+-   [Customizations for Start](https://msdn.microsoft.com/library/windows/hardware/dn757450) to change the default behavior of the Microsoft Store live tile. Note that you may configure the Start layout too, but that's covered in [Start layout for Windows 10 mobile editions](https://msdn.microsoft.com/library/windows/hardware/mt171093) and shown as an example in this walkthrough.
 
  
 

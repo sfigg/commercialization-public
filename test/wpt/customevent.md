@@ -42,36 +42,9 @@ Represents a custom event.
 
 ### Attributes
 
-<table>
-<thead>
-<tr class="header">
-<th>Attribute</th>
-<th>Description</th>
-<th>Data type</th>
-<th>Required</th>
-<th>Default</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><strong>Value</strong></p></td>
-<td><p>Describes the value of the custom event.</p></td>
-<td><p>This attribute can have one of the following values:</p>
-<ul>
-<li><p>None</p></li>
-<li><p>ImageId</p></li>
-<li><p>BuildInfo</p></li>
-<li><p>VolumeMapping</p></li>
-<li><p>EventMetadata</p></li>
-<li><p>PerfTrackMetadata</p></li>
-<li><p>WinSAT</p></li>
-<li><p>NetworkInterface</p></li>
-</ul></td>
-<td><p>Yes</p></td>
-<td><p></p></td>
-</tr>
-</tbody>
-</table>
+| Attribute | Description                              | Data type                                                                                                                                                                                                                            | Required | Default |
+| :-------- | :--------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------- | :------ |
+| **Value** | Describes the value of the custom event. | This attribute can have one of the following values: <ul> <li>None</li> <li>ImageId</li> <li>BuildInfo</li> <li>VolumeMapping</li> <li>EventMetadata</li> <li>PerfTrackMetadata</li> <li>WinSAT</li> <li>NetworkInterface</li> </ul> | Yes      |         |
 
 
 ### Child Elements
@@ -90,7 +63,7 @@ None.
 
 The following code example shows how this element is used in a trace merge property definition.
 
-```
+```xml
 <TraceMergeProperty
   Id="TraceMerge_Default"
   Name="TraceMerge_Default">

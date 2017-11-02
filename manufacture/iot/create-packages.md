@@ -308,7 +308,7 @@ Use the newAppxPkg with the same component name. This regenerates the customizat
 newAppxPkg "C:\DefaultApp\IoTCoreDefaultApp_1.2.0.0_ARM_Debug_Test\IoTCoreDefaultApp_1.2.0.0_ARM_Debug_Test.appx" fga Appx.MyUWPApp
 ```
 
-Learn more: [adding apps](deploy-your-app-with-a-standard-board).
+Learn more: [Add apps](deploy-your-app-with-a-standard-board.md).
 
 ### Adding files: watch out for zero-sized files, relative paths
 
@@ -320,7 +320,7 @@ Paths: When you’re adding files that are in the current directory, you’ll ne
 <BinaryPartition ImageSource=".\uefi.mbn" />
 ```
 
-Learn more: [Add files](deploy-your-app-with-a-standard-board)
+Learn more: [Add files](deploy-your-app-with-a-standard-board.md)
 
 ### Update your provisioning package customization.xml file
 
@@ -340,4 +340,4 @@ In your product\prov folder, manually move Common/ApplicationManagement to Commo
 
 Provisioning packages (PPKG) now support four-part versioning similar to the package versioning. So with this change, version 1.19 > 1.2. Previous versions used character-based sorting, so version 1.19 was considered earlier than 1.2.
 
-Learn more: [Add provisioning files](add-a-provisioning-package-to-an-image)
+Learn more: [Add provisioning files](add-a-provisioning-package-to-an-image.md)

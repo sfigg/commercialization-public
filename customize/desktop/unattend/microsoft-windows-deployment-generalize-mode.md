@@ -13,16 +13,13 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # Mode
 
-
-`Mode` indicates whether, after completing other tasks, the computer returns to audit mode, or is set to start the Windows Out-of-Box Experience (OOBE). For more information about modes, see [Windows Setup Configuration Passes](http://go.microsoft.com/fwlink/?LinkId=268344).
+`Mode` indicates whether, after completing other tasks, the computer returns to audit mode, or is set to start the Windows Out-of-Box Experience (OOBE). For more information about modes, see [Windows Setup Configuration Passes](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/how-configuration-passes-work).
 
 `Generalize` is a special-case setting. It is processed after all other settings in that configuration pass.
 
 ## Values
-
 
 <table>
 <colgroup>
@@ -42,31 +39,25 @@ ms.technology: windows-oem
 </tbody>
 </table>
 
- 
-
 The default value for `Mode` is **OOBE**.
 
 ## Valid Configuration Passes
-
 
 auditUser
 
 ## Parent Hierarchy
 
-
 [Microsoft-Windows-Deployment](microsoft-windows-deployment.md) | [Generalize](microsoft-windows-deployment-generalize.md) | **Mode**
 
 ## Applies To
-
 
 For a list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-Deployment](microsoft-windows-deployment.md).
 
 ## XML Example
 
-
 The following XML output shows a deployment with no asynchronous or synchronous commands.
 
-```
+```XML
 <AuditComputerName>
    <MustReboot>true</MustReboot>
    <Name>MyComputer</Name>
@@ -82,16 +73,4 @@ The following XML output shows a deployment with no asynchronous or synchronous 
 
 ## Related topics
 
-
 [Reseal](microsoft-windows-deployment-reseal.md)
-
- 
-
- 
-
-
-
-
-
-
-

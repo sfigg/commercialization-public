@@ -28,7 +28,7 @@ The reminders, toasts, and the shutdown curtain also assume that the proximity s
 <a href="" id="instructions-"></a>**Instructions:**  
 1.  Create a customization answer file using the contents shown in the following code sample.
 
-    ```
+    ```XML
     <?xml version="1.0" encoding="utf-8" ?>  
     <ImageCustomizations xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate"  
                          Name="SoftwareProximitySensorMitigation"  
@@ -92,12 +92,8 @@ The reminders, toasts, and the shutdown curtain also assume that the proximity s
 
         If event sounds for toasts and reminders are not turned off, verify that the device emits a noise when a toast or reminder goes off, but the screen does not turn on.
 
- 
+## Related topics
 
- 
+[Prepare for Windows mobile development](https://docs.microsoft.com/en-us/windows-hardware/manufacture/mobile/preparing-for-windows-mobile-development)
 
-
-
-
-
-
+[Customization answer file overview](https://docs.microsoft.com/en-us/windows-hardware/customize/mobile/mcsf/customization-answer-file)

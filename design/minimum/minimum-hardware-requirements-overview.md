@@ -54,7 +54,7 @@ Windows is available in the following editions.
 <tbody>
 <tr class="odd">
 <td>Windows 10 Mobile</td>
-<td><p>An OS that is designed for mobility. This OS runs Universal Windows apps and existing Windows Phone Store apps.</p></td>
+<td><p>An OS that is designed for mobility. This OS runs Universal Windows apps and exisiting Microsoft Store apps.</p></td>
 </tr>
 <tr class="even">
 <td>Windows 10 Mobile Enterprise</td>
@@ -68,7 +68,7 @@ Windows is available in the following editions.
 </tr>
 <tr class="odd">
 <td>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education)</td>
-<td><p>An OS that is designed for performing traditional PC tasks that uses the desktop experience. This OS runs native Win32 apps, Universal Windows apps, and existing apps from the Windows Store.</p></td>
+<td><p>An OS that is designed for performing traditional PC tasks that uses the desktop experience. This OS runs native Win32 apps, Universal Windows apps, and existing apps from the Microsoft Store.</p></td>
 </tr>
 <tr class="even">
 <td>Windows 10 Enterprise</td>

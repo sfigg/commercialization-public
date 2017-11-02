@@ -104,7 +104,7 @@ RGB cameras must register under KSCategory\_Video\_Camera for Windows to detect 
 
 **Description**
 
-Cameras must work with Microsoft Media Foundation in order to support legacy (Win32) and Windows Store applications.
+Cameras must work with Microsoft Media Foundation in order to support legacy (Win32) and Microsoft Store applications.
 
 ### Device.Streaming.Camera.Base.MultipleClientAppSupport
 

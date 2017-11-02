@@ -14,20 +14,19 @@ ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-# TraceMergeProperties
 
+# TraceMergeProperties
 
 Represents a collection of [TraceMergeProperty](tracemergeproperty.md) element. This element is for internal use only.
 
+
 ## Element Syntax
 
+* \<[WindowsPerformanceRecorder](windowsperformancerecorder.md)\>
+  * \<**TraceMergeProperties**\>
 
-&lt;[WindowsPerformanceRecorder](windowsperformancerecorder.md)&gt;
-
-     &lt;**TraceMergeProperties**&gt;
 
 ## Syntax
-
 
 ```
 <TraceMergeProperties>
@@ -38,6 +37,7 @@ Represents a collection of [TraceMergeProperty](tracemergeproperty.md) element. 
 </TraceMergeProperties>
 ```
 
+
 ## Attributes and Elements
 
 
@@ -45,61 +45,26 @@ Represents a collection of [TraceMergeProperty](tracemergeproperty.md) element. 
 
 None.
 
+
 ### Child Elements
 
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-<th>Description</th>
-<th>Requirment</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>[TraceMergeProperty](tracemergeproperty.md)</p></td>
-<td><p>Contains configurations that are applied when event trace log (ETL) files from multiple profiles are merged.</p></td>
-<td><p>Required, 1 or more.</p></td>
-</tr>
-</tbody>
-</table>
+| Element                                     | Description                                                                                                  | Requirment           |
+| :------------------------------------------ | :----------------------------------------------------------------------------------------------------------- | :------------------- |
+| [TraceMergeProperty](tracemergeproperty.md) | Contains configurations that are applied when event trace log (ETL) files from multiple profiles are merged. | Required, 1 or more. |
 
- 
 
 ### Parent Elements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>[WindowsPerformanceRecorder](windowsperformancerecorder.md)</p></td>
-<td><p>Represents metadata about the authoring of the profile.</p></td>
-</tr>
-</tbody>
-</table>
+| Element                                                     | Description                                             |
+| :---------------------------------------------------------- | :------------------------------------------------------ |
+| [WindowsPerformanceRecorder](windowsperformancerecorder.md) | Represents metadata about the authoring of the profile. |
 
- 
 
 ## Example
 
-
 The following code example shows how to define this element.
 
-```
+```xml
 <TraceMergeProperties>
   <TraceMergeProperty
     Id="TraceMerge_Default"
@@ -126,20 +91,10 @@ The following code example shows how to define this element.
 </TraceMergeProperties>
 ```
 
-## Related topics
 
+## Related topics
 
 [Elements](elements.md)
 
 [Inheritance](inheritance.md)
-
- 
-
- 
-
-
-
-
-
-
 

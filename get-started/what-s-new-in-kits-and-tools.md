@@ -27,6 +27,25 @@ Check out the [new CSPs settings](https://docs.microsoft.com/en-us/windows/clien
 
 See [What's new in Windows 10](what-s-new-in-windows.md) for the latest features and changes in design, customization, manufacturing, and drivers.
 
+## Use ADK kits and tools
+
+The links below provide instructions on using tools included in the Windows 10 ADK:
+
+* [Windows Configuration Designer](https://docs.microsoft.com/en-us/windows/configuration/provisioning-packages/provisioning-packages)
+* [Windows Preinstallation Environment (WinPE)](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/winpe-intro)
+* [Deployment Image Servicing and Management (DISM)](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/dism---deployment-image-servicing-and-management-technical-reference-for-windows)
+* [Windows System Image Manager (WSIM)](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/wsim/windows-system-image-manager-technical-reference)
+* [Windows Assessment Toolkit](https://docs.microsoft.com/en-us/windows-hardware/test/assessments/)
+* [Windows Performance Toolkit](https://docs.microsoft.com/en-us/windows-hardware/test/wpt/)
+* [User State Migration Toolkit (USMT)](https://docs.microsoft.com/en-us/windows/deployment/usmt/usmt-reference)
+* [Volume Activation Management Tool (VAMT)](https://docs.microsoft.com/en-us/windows/deployment/volume-activation/volume-activation-management-tool)
+* [User Experience Virtualization (UE-V)](https://docs.microsoft.com/en-us/windows/configuration/ue-v/uev-for-windows)
+* [Application Virtualization (App-V)](https://docs.microsoft.com/en-us/windows/application-management/app-v/appv-for-windows)
+
+> [!Tip]
+> You can find ADK tools located in the following directory:
+> `C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit`
+
 ## <a href="" id="adk"></a>What’s new in the Windows ADK for Windows 10, version 1703
 
 ### Windows Configuration Designer

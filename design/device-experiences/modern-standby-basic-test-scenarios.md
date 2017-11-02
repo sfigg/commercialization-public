@@ -34,7 +34,7 @@ The modern standby entry and exit scenarios are enumerated in the following tabl
 -   **System configuration:**
     -   Factory image is installed on the system.
     -   All drivers are loaded in Device Manager.
-    -   Factory Windows Store apps are installed.
+    -   Factory Microsoft Store apps are installed.
     -   System is running on battery power.
 
 <table>
@@ -99,7 +99,7 @@ Start airplane mode testing with a one-hour modern standby session with airplane
 -   **System configuration:**
     -   Factory image installed on the system.
     -   All drivers loaded in Device Manager.
-    -   Factory Windows Store apps are installed.
+    -   Factory Microsoft Store apps are installed.
     -   System is running on battery power.
     -   System is put into airplane mode.
 
@@ -145,7 +145,7 @@ Start with a system that is un-muted and use the inbox Music app to play a 256-k
 -   **System configuration:**
     -   Factory image installed on the system.
     -   All drivers loaded in Device Manager.
-    -   Factory Windows Store apps are installed.
+    -   Factory Microsoft Store apps are installed.
     -   System is running on battery power.
     -   • Headphones are available to test output from headphone jack.
 

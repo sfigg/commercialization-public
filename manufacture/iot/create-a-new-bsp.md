@@ -43,24 +43,17 @@ In our lab, we'll create a new BSP based on the Raspberry Pi 2, removing the exi
 
     *  Drivers required for UpdateOS (SV.PlatExtensions.UpdateOS.cab)
 
-    *  Boot configuration data settings (Microsoft-IoTUAP-RPi2-BCD-Package.cab)
-
     *  Mandatory device drivers (bcm2836sdhc.cab, dwcUsbOtg.cab, rpiq.cab)
 	   
 	   When creating your own BSP, it's typical to require a display driver and a storage driver, and sometimes a network driver.
 
     *  Device-specific customizations
-	
-	**Do not copy in:**
-    
-    *  **Device targeting info (DeviceTargetingInfo.cab)**  For Microsoft-supported platforms, such as RPi2, MBM(x86) and Dragonboard, this package is required.  For custom BSPs like this one, this package should not be included. Instead, add the Feature ID: IOT_GENERIC_POP in the OEMInput file. This prevents your device from receiving updates from the original BSP manufacturer that could wipe out your changes. 
-
     	
-4.  Copy in the device layout and platform packages (DeviceLayoutPackages, OEMDevicePlatformPackages).
+3.  Copy in the device layout and platform packages (DeviceLayoutPackages, OEMDevicePlatformPackages).
 
     Note that both the OEMDevicePlatform.xml and devicelayout.xml can be packaged into one package, for example, DeviceLayout.MBR4GB. The same package can then be specified as input in both the sections (for example, under <OEMDevicePlatformPackages> and <DeviceLayoutPackages>).  To learn more, see [Device layout](device-layout.md).
     
-5.  Copy in features (Features).
+4.  Copy in features (Features).
 	
     Copy in features you want. Exclude any that don't apply to your project.
 	
@@ -76,7 +69,7 @@ In our lab, we'll create a new BSP based on the Raspberry Pi 2, removing the exi
 	
 	Note: To make grouping packages easier, you can combine them into one or more Feature IDs. For example, all of the Raspberry Pi 2 optional drivers use the Feature ID: RPI2_DRIVERS.
 
-6.  Add the HelloBlinky driver:
+5.  Add the HelloBlinky driver:
 	
     ``` xml
         <PackageFile Path="%PKGBLD_DIR%" Name="%OEM_NAME%.Drivers.HelloBlinky.cab">
@@ -116,7 +109,6 @@ In our lab, we'll create a new BSP based on the Raspberry Pi 2, removing the exi
 	
        <OEM> 
           <Feature>RPI2_DRIVERS</Feature> 
-          <Feature>PRODUCTION</Feature> 
           <Feature>IOT_DISABLE_UMCI</Feature> 
           <Feature>IOT_ENABLE_TESTSIGNING</Feature> 
           <Feature>OEM_CustomCmd</Feature> 

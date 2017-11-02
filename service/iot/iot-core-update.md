@@ -3,7 +3,7 @@ author: kpacquer
 Description: 'Windows 10 IoT Core (IoT Core) devices will automatically receive OS updates via Windows Update when connected to the internet.'
 ms.assetid: d8298c99-6fa7-4825-a0b8-181b99e40975
 MSHAttr: 'PreferredLib:/library/windows/hardware'
-title: IoT Core Update
+title: IoT Core OS Updates
 ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
@@ -11,13 +11,20 @@ ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-# IoT Core Update
+# IoT Core OS Updates
 
 
-Windows 10 IoT Core (IoT Core) devices automatically receive OS updates via Windows Update when connected to the internet.
+Windows 10 IoT Core (IoT Core) devices can automatically receive OS updates via Windows Update when connected to the internet.
 
--   **OS updates.** OS updates includes security updates for all Microsoft packages (releasetype=Production) present in the ESP (EFI System Partition) and Main OS partition. These updates are performed automatically. OEM and enterprise customers have the option to manage the OS updates. To learn more, see [Manage Updates](managing-iot-device-update.md).
+Microsoft publishes OS updates at regular intervals and the IoT Core OS updates are classified as 
+* **Feature Updates** - containing new features/improvements, at a half yearly cadence
+* **Quality Updates** - containing security related fixes and critical bug fixes, at a monthly cadence
 
--   **Windows Store app updates.** Submit your updated signed package to the Windows Store. When your devices are connected to the internet, they'll periodically check for updates from the Windows Store, and install the updates automatically. 
+Read [Windows as a Service Overview](https://docs.microsoft.com/windows/deployment/update/waas-overview) for more details on the OS updates and servicing branches supported by Windows.
 
-<!---   **OEM updates.** These are also referred to as Board Support Package (BSP) updates. OEMs develop specific BSP updates for their devices such as the Raspberry Pi 2 and the Minnowboard Max. These are then published to the Microsoft Update server where specified IoT Core devices can download and receive the OEM updates automatically. -->
+[Windows 10 release information](https://technet.microsoft.com/windows/release-info.aspx) provides an up to date history of the various updates released along with the KB article link that provides an overview of the changes included in the specific update.
+
+
+## <span id="OS_updates_only"></span><span id="os_updates_only"></span><span id="OS_UPDATES_ONLY"></span>OS updates only
+
+An IoT Core device can be set to receive OS updates only directly from Microsoft by using **IoT\_GENERIC\_POP** feature in the OemInput XML.

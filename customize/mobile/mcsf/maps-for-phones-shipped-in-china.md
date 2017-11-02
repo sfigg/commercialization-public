@@ -77,3 +77,9 @@ None
 
 1. Flash the build containing this customization to a phone with a UICC.
 1. Launch the maps application and verify that the maps used are the same as those approved by the State Bureau of Surveying and Mapping in China.
+
+## Related topics
+
+[Prepare for Windows mobile development](https://docs.microsoft.com/en-us/windows-hardware/manufacture/mobile/preparing-for-windows-mobile-development)
+
+[Customization answer file overview](https://docs.microsoft.com/en-us/windows-hardware/customize/mobile/mcsf/customization-answer-file)
