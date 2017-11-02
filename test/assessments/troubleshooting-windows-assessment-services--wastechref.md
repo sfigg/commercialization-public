@@ -45,7 +45,7 @@ The following information can help you troubleshoot common problems.
 -   If results are not copied to the server, you can locate them on the test computer. The log file at %SystemDrive%\\relax\\&lt;GUID&gt;\\job\\results.log points to the results folder where the results were saved.
 
 
-## Set up a Symbol Server
+## Symbol server setup
 
 Some assessments require access to symbols. In some cases the information in the assessment results can be incorrect or have missing information if a symbol server is not available. In many cases this dependency is satisfied by Internet connectivity and access to the Microsoft public symbols server. In other cases where connectivity to the Internet is not available such as a lab environment, you can set up a private symbols server or install the symbols on the local computer to get the full benefits of the assessments.
 
@@ -96,11 +96,16 @@ Some assessments require access to symbols. In some cases the information in the
 For more information about how to set the symbols path and download symbols, see [MSDN: Symbols Support](http://go.microsoft.com/fwlink/?LinkId=235359). For information about how to troubleshoot missing symbols, see [Common In-Depth Analysis Issues](common-in-depth-analysis-issues.md#missingsymbols).
 
 
-## Unable to connect to server
+## Common problems
+
+Here are some common problems that may occur with Windows Assessment Services.
+
+
+### The client cannot connect to the server
 
 If the Windows Assessment Services - Client (Windows ASC) cannot connect to the server, you might receive the following error message:
 
-*Unable to connect to the remote server: A connection attempt failed because the connected party did not properly respond after a period of time, or an established connection failed because the connected host has failed to respond.*
+`Unable to connect to the remote server: A connection attempt failed because the connected party did not properly respond after a period of time, or an established connection failed because the connected host has failed to respond.`
 
 Check the server status by using the **sc query wassvc** command. If the server is not running, start the service by using the **net start wassvc** command.
 
@@ -108,103 +113,85 @@ Check the server status by using the **sc query wassvc** command. If the server 
 > The sc query command only works if it is run on the Windows Assessment Services server.
 
 
-## Computer already exists in inventory
+### The test computer already exists in inventory
 
 If you receive the following message, the test computer already exists in the Windows Assessment Services inventory:
 
-*Execute any scenario manually. Hit Exit to Reboot*
+`Execute any scenario manually. Hit Exit to Reboot`
 
 If you do not see the computer entry in the Server Inventory window, close and then re-open that window to refresh the content.
 
 
-## Run button is unavailable
+### The Run button is unavailable
 
 If the **Run** button is unavailable, make sure that you have selected specific computers and images in the **Assets** details. If you have selected specific computers and images, but you do not see any assessments on the **Results** page, close and then re-create the current job.
 
 
-## Inventorying test machine fails with WS\_E\_OPERATION\_TIMED\_OUT
+### The inventory test machine fails with WS\_E\_OPERATION\_TIMED\_OUT
 
 If you receive the following error:
 
-```
-Error updating machine configuration in RelaxServer. Please check that the server is available and try again later. (ErrorCode:-2143485946)
-```
+`Error updating machine configuration in RelaxServer. Please check that the server is available and try again later. (ErrorCode:-2143485946)`
 
 Check the error log at **C:\\Relax\\CompleteDeployment.log** for additional error details and rerun **CompleteDeployment.cmd**.
 
 
-## Image deployment failures don’t have enough information on the monitoring page
+### An image deployment failure does not have enough information on the monitoring page
 
-**Error code: Exiting Scenario Deploy: ErrorId=2**
+You may experience missing image deployment failure information on the monitoring page because of one of the following errors:
 
-Either you are using an image of unsupported format, the unattend answer file is missing or the image file is missing.
-
-**Error code: Exiting Scenario Deploy: ErrorId=38**
-
-The image file is corrupted.
-
-**Error code: Exiting Scenario Deploy: ErrorId=87**
-
-Bcdboot failed to update the BCD store. This is specific to some UEFI computer prototypes. No workaround is available at this time.
-
-**Error code: Exiting Scenario Deploy: ErrorId=193**
-
-Bcdboot failed to update the BCD store. An image of incompatible architecture was applied to a test computer.
-
-**Error code: Exiting Scenario Deploy: ErrorId=-2147024809**
-
-Diskpart failed to find any hard disk drive that could be used to apply an image to.
+| Error message                                              | Problem description                                                                                                                 |
+| :--------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------- |
+| `Error code: Exiting Scenario Deploy: ErrorId=2`           | Either you are using an image of unsupported format, the unattend answer file is missing, or the image file is missing.             |
+| `Error code: Exiting Scenario Deploy: ErrorId=38`          | The image file is corrupted.                                                                                                        |
+| `Error code: Exiting Scenario Deploy: ErrorId=87`          | Bcdboot failed to update the BCD store. This is specific to some UEFI computer prototypes. No workaround is available at this time. |
+| `Error code: Exiting Scenario Deploy: ErrorId=193`         | Bcdboot failed to update the BCD store. An image of incompatible architecture was applied to a test computer.                       |
+| `Error code: Exiting Scenario Deploy: ErrorId=-2147024809` | Diskpart failed to find any hard disk drive that could be used to apply an image to.                                                |
 
 
-## DISM Error During Computer Inventory
+### A DISM error occurs during computer inventory
 
 If you receive the following error while taking inventory of a computer, you must use the x86 Windows PE image for the bootable USB drive that you created for inventory.
 
-```
-An error occurred. You cannot service an x86-based image from an x64-based host that does not support WOW64. Try the operation again from a host environment that supports WOW64. 
-Error running Driver Scavenge. ErrorCode 193.
-```
+`An error occurred. You cannot service an x86-based image from an x64-based host that does not support WOW64. Try the operation again from a host environment that supports WOW64. 
+Error running Driver Scavenge. ErrorCode 193.`
 
 When you inventory a computer, driver information is gathered and stored at **&lt;%systemdrive%\\relax\\driver** using DISM. DISM cannot run the driver servicing command on an X86 Windows image, from a Windows PE X64 environment. For more information, see DISM Supported Platforms.
 
-**Resolution**
-
-Use (or create) a bootable USB drive created for X86 architecture. For more information, see [Windows Assessment Services Setup and Configuration](windows-assessment-services-setup-and-configuration-wastechref.md).
+To fix the problem, use (or create) a bootable USB drive created for X86 architecture. For more information, see [Windows Assessment Services Setup and Configuration](windows-assessment-services-setup-and-configuration-wastechref.md).
 
 
-## Test computers must be reimaged if you change the Server name
+### The test computer does not work after changing the server name
 
 If you rename the Windows Assessment Services server and re-initialize it, you must redeploy Windows on the test computer before you run additional assessments.
 
 
-## “Machine not reachable” errors
+### A “Machine not reachable” error occurs
 
 When running assessments remotely, Windows Assessment Services relies on DNS to resolve the test computer names. If DNS has duplicate entries for the same computer name, one from a domain joined computer and another from a workgroup computer, Windows and WinRM will pick the computer that DNS resolves to.
 
-If you receive an error that includes "Machine Not Reachable", check the DNS entries for duplicates.
+If you receive an error that includes `Machine Not Reachable`, check the DNS entries for duplicates.
 
 > [!NOTE]
 > The computer name must contain only alphanumeric characters and dashes. If the computer name contains an underscore or other extended characters, the computer may not be discoverable via Domain Name System (DNS).
 
 
-## Running Windows ASC from a server other than the Windows Assessment Services server
+## A push notification fails when running Windows ASC from a server without Windows Assessment Services
 
 If you are running Windows ASC on a Windows server and you do not have Windows Assessment Services installed on that server, push notifications will fail to enable in Windows ASC when you launch it.
 
-**Workaround**
-
-On the server where Windows ASC is installed, enable the optional component MSMQ-Server using the following DISM command from an elevated command prompt.
+You can work around the problem on the server where Windows ASC is installed by enabling the optional component MSMQ-Server, using the following DISM command from an elevated command prompt.
 
 ```
 Dism /Online /Enable-Feature:MSMQ-Server
 ```
 
-Or run Windows ASC on a client computer, or the same server where Windows Assessment Services is installed.
+Alternatively, you can run Windows ASC on a client computer or on the same server where Windows Assessment Services is installed.
 
 
-## The dumps folder does not contain any dump files
+### The dumps folder does not contain any dump files
 
-By default, dump files are not copied to the server after assessment runs. If you want to collect dumps for assessment runs, edit &lt;Relax directory&gt;\\Scripts\\Harnesses\\Axe\\CompleteAssessment.cmd, and change the value for set\_copydumpstoserver to true. By default, this value is false.
+By default, dump files are not copied to the server after assessment runs. If you want to collect dumps for assessment runs, edit &lt;Relax&nbsp;directory&gt;\\Scripts\\Harnesses\\Axe\\CompleteAssessment.cmd, and change the value for set\_copydumpstoserver to `true`. By default, this value is `false`.
 
 
 ## Related topics
