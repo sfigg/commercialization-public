@@ -176,7 +176,7 @@ If you receive an error that includes `Machine Not Reachable`, check the DNS ent
 > The computer name must contain only alphanumeric characters and dashes. If the computer name contains an underscore or other extended characters, the computer may not be discoverable via Domain Name System (DNS).
 
 
-## A push notification fails when running Windows ASC from a server without Windows Assessment Services
+### A push notification fails when running Windows ASC from a server without Windows Assessment Services
 
 If you are running Windows ASC on a Windows server and you do not have Windows Assessment Services installed on that server, push notifications will fail to enable in Windows ASC when you launch it.
 
