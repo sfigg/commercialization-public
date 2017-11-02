@@ -24,7 +24,7 @@ These standards are for general purpose desktops, laptops, tablets, 2-in-1’s, 
 ##Firmware
 | Feature | Requirement | Details |
 |---------|-------------|---------|
-| Standard | Systems must have firmware that implements Unified Extension Firmware Interface (UEFI) version 2.4 or newer | For more information, see [United Extensible Firmware Interface (UEFI) firmware requirements](OEM0UEFI.md). |
+| Standard | Systems must have firmware that implements Unified Extension Firmware Interface (UEFI) version 2.4 or newer | For more information, see [United Extensible Firmware Interface (UEFI) firmware requirements](OEM-UEFI.md). |
 | Class | Systems must have firmware that implements UEFI Class 2 or UEFI Class 3 | For more information, see [Unified Extensible Firmware Interface Forum specifications](http://uefi.org/specifications) |
 | Code integrity | All drivers shipped inbox must be Hypervisor-based Code Integrity (HVCI) compliant | For more information, see [Driver compatibility with Device Guard in Windows 10](https://blogs.msdn.microsoft.com/windows_hardware_certification/2015/05/22/driver-compatibility-with-device-guard-in-windows-10/) |
 | Secure boot | System's firmware must support UEFI Secure Boot and must have UEFI Secure Boot enabled by default | See [UEFI firmware requirements](OEM-UEFI.md) and [Secure Boot](OEM-secure-boot.md) for more information. |
