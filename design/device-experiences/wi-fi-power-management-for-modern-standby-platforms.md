@@ -17,15 +17,14 @@ ms.technology: windows-oem
 
 # Wi-Fi power management for modern standby platforms
 
-
 In a Windows hardware platform that implements the [modern standby power model](modern-standby.md), the Wi-Fi device maintains its connection to the network while the platform is in the modern standby power state. Correct power management of the Wi-Fi device—both during modern standby and when the display is turned on—is essential to achieving long battery life.
 
 Wi-Fi is a ubiquitous, medium-range wireless technology that enables high-bandwidth, low-latency communication between computer systems, devices, and the Internet.
 
 Every Windows hardware platform that supports modern standby must be equipped with either a Wi-Fi device or a mobile broadband (MBB) device. Because Wi-Fi integration is more common and widespread, it is expected that the Wi-Fi device will be enabled and connected nearly all of the time.
 
-## Overview
 
+## Overview
 
 A Wi-Fi device in a modern standby platform must support several key power-management features to reduce power consumption by both the device and the platform as a whole.
 
@@ -48,112 +47,161 @@ The Wi-Fi device is managed by a Wi-Fi miniport driver, which the Wi-Fi device v
 
 The Wi-Fi device in a modern standby platform is almost always powered on and is expected to be highly power efficient. When no data is being transferred over the Wi-Fi link and power save mode is enabled, the Wi-Fi device should consume less than 10 milliwatts on average. If the user has set the radio on/off state to *off* by enabling airplane mode or by explicitly turning off Wi-Fi in the Windows **Settings** application, the Wi-Fi device must consume less than 1 milliwatt on average.
 
+
 ## Device power-management modes
 
+The Wi-Fi device must support several power-management modes. Each mode is a combination of device activity, network connectivity, and enablement of pattern-match wake.
 
-The Wi-Fi device must support several power-management modes. As described in the following table, each mode is a combination of device activity, network connectivity, and enablement of pattern-match wake. This table assumes that the Wi-Fi device is constantly connected to a single access point that has WPA2-Personal security, except in disconnected-sleep mode and power-removed mode.
+For SDIO-connected devices, D2 is the deepest wakeable device power state for modern standby. For PCIe-connected devices, D3 (more specifically, the D3hot substate) is the deepest wakeable device power state for modern standby.
+
+Windows 8, Windows 8.1, and Windows 10 support modern standby on off-SoC Wi-Fi devices that connect via the SDIO bus. Windows 8.1 additionally supports modern standby on off-SoC Wi-Fi devices that connect via the PCIe bus.
+
+### Descriptions of power-management modes
+
+
+<dl>
+<dt><p style="margin: .7em 0 .3em 1.4em;">Active</dt>
+<dd>
+<p>The Wi-Fi device is connected to the network and is actively transmitting data.</p>
+<p>The Wi-Fi device hardware autonomously transitions from connected-idle mode to active mode.</p>
+</dd>
+<dt><p style="margin: .7em 0 .3em 1.4em;">Connected idle</dt>
+<dd>
+<p>The Wi-Fi device is connected to the network, but is not actively transmitting data.</p>
+<ul>
+<li>The Wi-Fi device hardware autonomously transitions from connected-idle mode to active mode.</li>
+<li>The power consumption of the device in the active mode will be a factor of the wireless technology (that is, 802.11a/b/g/n), distance to the access point, quantity of data transmitted, etc.</li>
+</ul>
+</dd>
+<dt><p style="margin: .7em 0 .3em 1.4em;">Connected sleep</dt>
+<dd>
+<p>The Wi-Fi device is connected to the access point, but the remainder of the platform is in a very low-power state. Pattern-match wake is enabled so that the Wi-Fi device wakes the SoC on a specific set of incoming network packets.</p>
+<ul>
+<li>Before the Wi-Fi device leaves D0, NDIS will send an [OID_PM_ADD_WOL_PATTERN](https://msdn.microsoft.com/library/windows/hardware/ff569764) request to instruct the Wi-Fi miniport driver to add wake-on-LAN patterns.</li>
+<li>To instruct the Wi-Fi miniport driver to enable pattern-match wake, NDIS will send an [OID_PM_PARAMETERS](https://msdn.microsoft.com/library/windows/hardware/ff569768) request.</li>
+<li>NDIS will send an [OID_PNP_SET_POWER](https://msdn.microsoft.com/library/windows/hardware/ff569780) request with an [<strong>NDIS_DEVICE_POWER_STATE</strong>](https://msdn.microsoft.com/library/windows/hardware/gg602135) value of NdisDeviceStateD2 (for SDIO) or NdisDeviceStateD3 (for PCIe).</li>
+</ul>
+</dd>
+<dt><p style="margin: .7em 0 .3em 1.4em;">Disconnected sleep</dt>
+<dd>
+<p>The Wi-Fi device is powered but is not connected to an access point, because no preferred access point is within range. The remainder of the platform is in a very low-power state. Pattern-match wake is enabled and the Network Offload List is plumbed to the Wi-Fi device. The Wi-Fi device uses the Network Offload List to periodically scan for preferred networks to connect to.</p>
+<ul>
+<li>The Wi-Fi device uses the [network offload list](https://msdn.microsoft.com/library/windows/hardware/hh451787) to periodically scan for preferred networks to connect to.</li>
+<li>If a matching network is found during these periodic scans, the Wi-Fi device will wake the SoC.</li>
+</ul>
+</dd>
+<dt><p style="margin: .7em 0 .3em 1.4em;">Radio off</dt>
+<dd>
+<p>The Wi-Fi device still has power applied, but the radio (RF components) has been powered down.</p>
+<ul>
+<li>While in D0, NDIS will send an [OID_DOT11_NIC_POWER_STATE](https://msdn.microsoft.com/library/windows/hardware/ff569392) request with a value of FALSE, indicating the radio should be powered off.</li>
+</ul>
+</dd>
+<dt><p style="margin: .7em 0 .3em 1.4em;">Device powered down</dt>
+<dd>
+<p>The Wi-Fi device has been completely powered down.</p>
+<ul>
+<li>NDIS will send an [OID_PNP_SET_POWER](https://msdn.microsoft.com/library/windows/hardware/ff569780) request with an [<strong>NDIS_DEVICE_POWER_STATE</strong>](https://msdn.microsoft.com/library/windows/hardware/gg602135) value of NdisDeviceStateD3.</li>
+<li>If the Wi-Fi device is connected to SDIO or PCIe, the system ACPI firmware will remove power from or reset the Wi-Fi device by using a GPIO line from the SoC to the Wi-Fi device.</li>
+<li>If the Wi-Fi device is integrated into the SoC, the system firmware is responsible for powering off or resetting the Wi-Fi device by using a proprietary mechanism.</li>
+</ul>
+</dd>
+</dl>
+
+
+### Average power consumption and exit latency to active state
+
+The following table shows the expected power consumption and latency when exiting to an active state for each power-management mode. For these figures, assume that the Wi-Fi device is constantly connected to a single access point that has WPA2-Personal security, except in disconnected-sleep mode and power-removed mode.
 
 <table style="width:100%;">
-<colgroup>
-<col width="16%" />
-<col width="16%" />
-<col width="16%" />
-<col width="16%" />
-<col width="16%" />
-<col width="16%" />
-</colgroup>
 <thead>
 <tr class="header">
 <th>Device power-management mode</th>
-<th>Description</th>
+<!--<th>Description</th>-->
 <th>Device power state</th>
 <th>Average power consumption</th>
 <th>Exit latency to active</th>
-<th>Transition mechanism</th>
+<!--<th>Transition mechanism</th>-->
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td>Active mode</td>
-<td>The Wi-Fi device is connected to the network and is actively transmitting data.</td>
+<!--<td>The Wi-Fi device is connected to the network and is actively transmitting data.</td>-->
 <td>D0</td>
 <td>&lt;= 750 milliwatts</td>
 <td>N/A</td>
-<td><ul>
+<!--<td><ul>
 <li>The Wi-Fi device hardware autonomously transitions from connected-idle mode to active mode.</li>
 <li>The power consumption of the device in the active mode will be a factor of the wireless technology (that is, 802.11a/b/g/n), distance to the access point, quantity of data transmitted, etc.</li>
-</ul></td>
+</ul></td>-->
 </tr>
 <tr class="even">
 <td>Connected-idle mode</td>
-<td>The Wi-Fi device is connected to the network, but is not actively transmitting data.</td>
+<!--<td>The Wi-Fi device is connected to the network, but is not actively transmitting data.</td>-->
 <td>D0</td>
 <td>&lt;= 25 milliwatts</td>
 <td>&lt;= 100 milliseconds</td>
-<td><ul>
+<!--<td><ul>
 <li>The Wi-Fi device hardware must transition autonomously between active mode and connected-idle mode.</li>
 <li>If the Wi-Fi device was previously in the connected-sleep, disconnected-sleep, or radio-off mode, NDIS will send an [OID_PNP_SET_POWER](https://msdn.microsoft.com/library/windows/hardware/ff569780) request with an [<strong>NDIS_DEVICE_POWER_STATE</strong>](https://msdn.microsoft.com/library/windows/hardware/gg602135) value of NdisDeviceStateD0.</li>
 <li>To instruct the Wi-Fi miniport to enable [power save mode](https://msdn.microsoft.com/library/windows/hardware/hh440282), NDIS will send an [OID_DOT11_POWER_MGMT_REQUEST](https://msdn.microsoft.com/library/windows/hardware/ff569402) request.</li>
-</ul></td>
+</ul></td>-->
 </tr>
 <tr class="odd">
 <td>Connected-sleep mode</td>
-<td>The Wi-Fi device is connected to the access point, but the remainder of the platform is in a very low-power state. Pattern-match wake is enabled so that the Wi-Fi device wakes the SoC on a specific set of incoming network packets.</td>
+<!--<td>The Wi-Fi device is connected to the access point, but the remainder of the platform is in a very low-power state. Pattern-match wake is enabled so that the Wi-Fi device wakes the SoC on a specific set of incoming network packets.</td>-->
 <td>D2 for SDIO; D3 for PCIe</td>
 <td>&lt;= 10 milliwatts</td>
 <td>&lt;= 300 milliseconds</td>
-<td><ul>
+<!--<td><ul>
 <li>Before the Wi-Fi device leaves D0, NDIS will send an [OID_PM_ADD_WOL_PATTERN](https://msdn.microsoft.com/library/windows/hardware/ff569764) request to instruct the Wi-Fi miniport driver to add wake-on-LAN patterns.</li>
 <li>To instruct the Wi-Fi miniport driver to enable pattern-match wake, NDIS will send an [OID_PM_PARAMETERS](https://msdn.microsoft.com/library/windows/hardware/ff569768) request.</li>
 <li>NDIS will send an [OID_PNP_SET_POWER](https://msdn.microsoft.com/library/windows/hardware/ff569780) request with an [<strong>NDIS_DEVICE_POWER_STATE</strong>](https://msdn.microsoft.com/library/windows/hardware/gg602135) value of NdisDeviceStateD2 (for SDIO) or NdisDeviceStateD3 (for PCIe).</li>
-</ul></td>
+</ul></td>-->
 </tr>
 <tr class="even">
 <td>Disconnected-sleep mode</td>
-<td>The Wi-Fi device is powered but is not connected to an access point, because no preferred access point is within range. The remainder of the platform is in a very low-power state. Pattern-match wake is enabled and the Network Offload List is plumbed to the Wi-Fi device. The Wi-Fi device uses the Network Offload List to periodically scan for preferred networks to connect to.</td>
+<!--<td>The Wi-Fi device is powered but is not connected to an access point, because no preferred access point is within range. The remainder of the platform is in a very low-power state. Pattern-match wake is enabled and the Network Offload List is plumbed to the Wi-Fi device. The Wi-Fi device uses the Network Offload List to periodically scan for preferred networks to connect to.</td>-->
 <td>D2 for SDIO; D3 for PCIe</td>
 <td>&lt;= 10 milliwatts</td>
 <td>&lt;= 300 milliseconds</td>
-<td><ul>
+<!--<td><ul>
 <li>The Wi-Fi device uses the [network offload list](https://msdn.microsoft.com/library/windows/hardware/hh451787) to periodically scan for preferred networks to connect to.</li>
 <li>If a matching network is found during these periodic scans, the Wi-Fi device will wake the SoC.</li>
-</ul></td>
+</ul></td>-->
 </tr>
 <tr class="odd">
 <td>Radio-off mode</td>
-<td>The Wi-Fi device still has power applied, but the radio (RF components) has been powered down.</td>
+<!--<td>The Wi-Fi device still has power applied, but the radio (RF components) has been powered down.</td>-->
 <td>D0 or D2</td>
 <td>&lt;= 1 milliwatt</td>
 <td>&lt;= 2 seconds</td>
-<td><ul>
+<!--<td><ul>
 <li>While in D0, NDIS will send an [OID_DOT11_NIC_POWER_STATE](https://msdn.microsoft.com/library/windows/hardware/ff569392) request with a value of FALSE, indicating the radio should be powered off.</li>
-</ul></td>
+</ul></td>-->
 </tr>
 <tr class="even">
 <td>Power-removed mode (wake disabled)</td>
-<td>The Wi-Fi device has been completely powered down.</td>
+<!--<td>The Wi-Fi device has been completely powered down.</td>-->
 <td>D3</td>
 <td>&lt;= 1 milliwatt</td>
 <td>&lt;= 5 seconds</td>
-<td><ul>
+<!--<td><ul>
 <li>NDIS will send an [OID_PNP_SET_POWER](https://msdn.microsoft.com/library/windows/hardware/ff569780) request with an [<strong>NDIS_DEVICE_POWER_STATE</strong>](https://msdn.microsoft.com/library/windows/hardware/gg602135) value of NdisDeviceStateD3.</li>
 <li>If the Wi-Fi device is connected to SDIO or PCIe, the system ACPI firmware will remove power from or reset the Wi-Fi device by using a GPIO line from the SoC to the Wi-Fi device.</li>
 <li>If the Wi-Fi device is integrated into the SoC, the system firmware is responsible for powering off or resetting the Wi-Fi device by using a proprietary mechanism.</li>
-</ul></td>
+</ul></td>-->
 </tr>
 </tbody>
 </table>
 
- 
 
-Windows 8, Windows 8.1, and Windows 10 support modern standby on off-SoC Wi-Fi devices that connect via the SDIO bus. Windows 8.1 additionally supports modern standby on off-SoC Wi-Fi devices that connect via the PCIe bus.
-
-For SDIO-connected devices, D2 is the deepest wakeable device power state for modern standby. For PCIe-connected devices, D3 (more specifically, the D3hot substate) is the deepest wakeable device power state for modern standby.
+### Requirements when a Wi-Fi device shares circuitry
 
 In some Wi-Fi device designs, the Wi-Fi device shares analog and RF circuitry with the Bluetooth and optional FM radio communication devices. In these Wi-Fi device designs, there must not be a power state dependency between the Wi-Fi device and the other integrated communications devices. The Wi-Fi device must have internal power gating circuitry to ensure an average power consumption of less than 1 milliwatt in the radio-off mode.
 
 ## <a href="" id="software-power"></a>Software power-management mechanisms
-
 
 Power management of the Wi-Fi device is primarily based on the NDIS commands that the Wi-Fi miniport driver receives from the Windows networking subsystem. The Wi-Fi miniport driver is responsible for translating these NDIS commands (called OID requests) to device-specific messages to send to the Wi-Fi device over the I/O bus.
 
@@ -292,7 +340,7 @@ To advertise NLO capability, the Wi-Fi miniport driver must set the NDIS\_WLAN\_
 
 The Wi-Fi miniport driver and Wi-Fi device must support ARP/NS offload, which allows the Wi-Fi device to autonomously respond to common network requests. The ARP/NS offload feature avoids waking the SoC for common network requests that have simple and predictable responses. To indicate support for ARP/NS offload, the Wi-Fi miniport driver must set the NDIS\_PM\_PROTOCOL\_OFFLOAD\_ARP\_SUPPORTED and NDIS\_PM\_PROTOCOL\_OFFLOAD\_NS\_SUPPORTED flags in the **SupportedProtocolOffloads** member of the **NDIS\_PM\_CAPABILITIES** structure.
 
-Additionally, the Wi-Fi miniport driver and Wi-Fi device must support at least one IPv4 ARP offload address and at least two IPv6 NS offload addresses. The Wi-Fi miniport driver must set the **NumArpOffloadIPv4Addresses** member of the **NDIS\_PM\_CAPABILITIES** structure to a value of 1 or greater. The Wi-Fi miniport driver must set the value of the **NumNSOffloadIPv6Addresses** member of the **NDIS\_PM\_CAPABILITIES** structure to a value of 2 or greater. Windows uses the [OID\_PM\_ADD\_PROTOCOL\_OFFLOAD](https://msdn.microsoft.com/library/windows/hardware/ff569763) request to supply the ARP and NS offload addresses to the Wi-Fi miniport driver.
+Additionally, the Wi-Fi miniport driver and Wi-Fi device must support at least one IPv4 ARP offload address and at least two DIPv6 NS offload addresses. The Wi-Fi miniport driver must set the **NumArpOffloadIPv4Addresses** member of the **NDIS\_PM\_CAPABILITIES** structure to a value of 1 or greater. The Wi-Fi miniport driver must set the value of the **NumNSOffloadIPv6Addresses** member of the **NDIS\_PM\_CAPABILITIES** structure to a value of 2 or greater. Windows uses the [OID\_PM\_ADD\_PROTOCOL\_OFFLOAD](https://msdn.microsoft.com/library/windows/hardware/ff569763) request to supply the ARP and NS offload addresses to the Wi-Fi miniport driver.
 
 **D0 packet coalescing**
 
@@ -318,9 +366,7 @@ The following table summarizes the D0 packet-coalescing capabilities that the Wi
 <div class="alert">
 <strong>Note</strong>  This flag must always be present in the [<strong>HardwareReceiveFilterCapabilities</strong>](https://msdn.microsoft.com/library/windows/hardware/ff565924) to indicate the hardware capability. This flag must be present in the <strong>CurrentReceiveFilterCapabilities</strong> if and only if the [*PacketCoalescing](https://msdn.microsoft.com/library/windows/hardware/hh440217) advanced keyword is nonzero.
 </div>
-<div>
- 
-</div></td>
+</td>
 </tr>
 <tr class="even">
 <td><strong>EnabledFilterTypes</strong></td>
@@ -392,8 +438,8 @@ When the Wi-Fi device is connected to a network during modern standby, the Wi-Fi
 
 Waking the SoC on these Wi-Fi specific events allows Windows to be notified when Wi-Fi connectivity is in jeopardy or when the Wi-Fi device loses connectivity to the associated access point. In response, Windows might instruct the Wi-Fi miniport driver and device to connect to an alternate Wi-Fi network. Or, Windows might instead use the mobile broadband (MBB) radio to establish a connection. The Wi-Fi miniport driver must specify each of these wake trigger capabilities (for example, by setting the NDIS\_WLAN\_WAKE\_ON\_AP\_ASSOCIATION\_LOST\_SUPPORTED flag) in the **SupportedWakeUpEvents** member of the [**NDIS\_PM\_CAPABILITIES**](https://msdn.microsoft.com/library/windows/hardware/ff566748) structure.
 
-## <a href="" id="supportedhw"></a>Supported hardware power configurations
 
+## <a href="" id="supportedhw"></a>Supported hardware power configurations
 
 Windows supports three hardware power-management configurations for the Wi-Fi device in a modern standby platform. The Wi-Fi device either must be located outside the SoC and attached via SDIO or PCIe, or must be physically integrated into the SoC chip and attached via a proprietary internal bus.
 
@@ -425,7 +471,6 @@ In this configuration, the Wi-Fi device is located outside of the SoC and attach
 **Note**  • The Wi-Fi hardware should use PCI architectural means of generating a wake event (PME).
 
  
-
 When in D3, the device must be able to signal a wake event by sending a PM\_PME message that propagates in-band over the PCIe bus. The wake event will generate an interrupt from the PCIe root port, and this interrupt will be handled by the inbox PCI bus driver, Pci.sys.
 
 To grant the operating system control over native PCIe features, the ACPI firmware must include an \_OSC control method in the ACPI namespace. In addition, the ACPI namespace must include an \_S0W object to indicate that the Wi-Fi device can wake the platform from connected-sleep mode or disconnected-sleep mode. This object must be located under the Wi-Fi device in the ACPI namespace, and declared as shown in the following example:
@@ -444,8 +489,8 @@ If the Wi-Fi device is integrated into the SoC, tight coupling between the Wi-Fi
 
 The system integrator should contact the SoC vendor for ACPI implementation details for Wi-Fi devices that are directly integrated into the SoC.
 
-## <a href="" id="testing"></a>Testing and validation
 
+## <a href="" id="testing"></a>Testing and validation
 
 Testing and validation of the Wi-Fi device should focus on directly measuring power consumption and verifying that pattern-match wake works correctly.
 
@@ -501,7 +546,6 @@ The direct measurement of device power consumption is a critical part of testing
 
 ## <a href="" id="checklist"></a>Power-management checklist
 
-
 System integrators and SoC vendors should use the checklist below to verify that their Wi-Fi device and Wi-Fi miniport power-management design are compatible with Windows 8 and Windows 8.1.
 
 **Note**  The [Windows Hardware Certification Kit](http://msdn.microsoft.com/library/windows/hardware/jj124227.aspx) includes an extensive set of Wi-Fi driver tests to help ensure the Wi-Fi device is compatible with Windows 8 and Windows 8.1. Wi-Fi device vendors and Wi-Fi miniport driver developers are encouraged to review the Windows Hardware Certification Kit tests and use them to validate their driver implementation as early as possible in the design cycle.
@@ -545,13 +589,3 @@ System integrators and SoC vendors should use the checklist below to verify that
     -   Verify that the Wi-Fi device can wake the SoC from its deepest idle state when the device loses its connection to the associated access point.
     -   Verify that the Wi-Fi device does not generate spurious wakes to the SoC.
     -   Use the tests provided in the Windows Hardware Certification Kit to verify that the Wi-Fi device correctly implements network list offload (NLO), ARP/NS offload, and D0 packet coalescing.
-
- 
-
- 
-
-
-
-
-
-
