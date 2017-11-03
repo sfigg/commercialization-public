@@ -245,139 +245,21 @@ To configure visual voicemail for a mobile operator, the OEM must add setting se
 
       The following table describes the values to use and indicates if the keys are required depending on the OMTP-based protocol being used.
 
-      <table style="width:100%">
-      <colgroup>
-      <col width="12%" />
-      <col width="12%" />
-      <col width="12%" />
-      <col width="12%" />
-      <col width="12%" />
-      <col width="40%" />
-      </colgroup>
-      <thead>
-      <tr class="header">
-      <th>Key name</th>
-      <th>Type</th>
-      <th>Generic OMTP</th>
-      <th>Comverse</th>
-      <th>Alcatel Lucent</th>
-      <th>Details</th>
-      </tr>
-      </thead>
-      <tbody>
-      <tr class="odd">
-      <td><p><strong>CLSIDProvider</strong></p></td>
-      <td><p>REG_SZ</p></td>
-      <td><p>Required</p></td>
-      <td><p>Required</p></td>
-      <td><p>Required</p></td>
-      <td><p>Use {039B8E0E-EA5E-4801-96CD-71E7B343F03F} for an OMTP visual voicemail server or Comverse visual voicemail server.</p>
-      <p>Use {C9804AB2-60B0-4AFF-8205-E30E591F145B} for an Alcatel Lucent visual voicemail server.</p></td>
-      </tr>
-      <tr class="even">
-      <td><p><strong>CLSIDAccessor</strong></p></td>
-      <td><p>REG_SZ</p></td>
-      <td><p>Required</p></td>
-      <td><p>Required</p></td>
-      <td><p>Required</p></td>
-      <td><p>Use the value {BC371B86-031F-4BD7-9E7D-FB5DF7D1D8C3}.</p></td>
-      </tr>
-      <tr class="odd">
-      <td><p><strong>ProtocolVariant</strong></p></td>
-      <td><p>REG_SZ</p></td>
-      <td><p>Required</p></td>
-      <td><p>Required</p></td>
-      <td><p>--</p></td>
-      <td><p>OMTP protocol version (“pv”). Use &quot;ProtocolVariant&quot;=&quot;omtp&quot; for generic OMTP systems, or &quot;ProtocolVariant&quot;=&quot;comverse&quot; for implementations that use Comverse systems.</p></td>
-      </tr>
-      <tr class="even">
-      <td><p><strong>IncomingPort</strong></p></td>
-      <td><p>REG_DWORD</p></td>
-      <td><p>Required</p></td>
-      <td><p>Required</p></td>
-      <td><p>Required</p></td>
-      <td><p>SMS-MT application port (“pt”)</p></td>
-      </tr>
-      <tr class="odd">
-      <td><p><strong>ClientType</strong></p></td>
-      <td><p>REG_SZ</p></td>
-      <td><p>Required</p></td>
-      <td><p>Required</p></td>
-      <td><p>--</p></td>
-      <td><p>An identifier for the category of devices, which can be set to any string. (“ct”)</p></td>
-      </tr>
-      <tr class="even">
-      <td><p><strong>DeviceType</strong></p></td>
-      <td><p>REG_SZ</p></td>
-      <td><p>Required</p></td>
-      <td><p>Required</p></td>
-      <td><p>--</p></td>
-      <td><p>A second–level Comverse-specific device type identifier.</p></td>
-      </tr>
-      <tr class="odd">
-      <td><p><strong>InitialSmsDestinationNumber</strong></p></td>
-      <td><p>REG_SZ</p></td>
-      <td><p>Required</p></td>
-      <td><p>Required</p></td>
-      <td><p>--</p></td>
-      <td><p>Phone number to use for SMS-MO messages for visual voicemail such as ACTIVATE or DEACTIVATE (“dn”).</p></td>
-      </tr>
-      <tr class="even">
-      <td><p><strong>EncryptedSmsSupported</strong></p></td>
-      <td><p>REG_DWORD</p></td>
-      <td><p>Not required</p></td>
-      <td><p>Not required</p></td>
-      <td><p>--</p></td>
-      <td><p>Specifies whether 3DES encrypted SMS is supported.</p>
-      <p>Use a value of 0 to indicate it is not supported. Use 1 to indicate this feature is supported.</p></td>
-      </tr>
-      <tr class="odd">
-      <td><p><strong>KeyData</strong></p></td>
-      <td><p>REG_BINARY</p></td>
-      <td><p>Required if EncryptedSmsSupported is set to 1</p></td>
-      <td><p>Required if EncryptedSmsSupported is set to 1</p></td>
-      <td><p>--</p></td>
-      <td><p>The binary key to use for encrypted SMS.</p></td>
-      </tr>
-      <tr class="even">
-      <td><p><strong>ImapPortOverride</strong></p></td>
-      <td><p>REG_DWORD</p></td>
-      <td><p>--</p></td>
-      <td><p>--</p></td>
-      <td><p>Not required</p></td>
-      <td><p>Specifies the IMAP port to use regardless of the message contents.</p>
-      <p>This feature should be turned on only for mobile operators that require it.</p></td>
-      </tr>
-      <tr class="odd">
-      <td><p><strong>TokenLogin</strong></p></td>
-      <td><p>REG_DWORD</p></td>
-      <td><p>--</p></td>
-      <td><p>--</p></td>
-      <td><p>Not required</p></td>
-      <td><p>Enables the use of token-based login instead of traditional username and password.</p>
-      <p>This feature should be turned on only for mobile operators that require it.</p></td>
-      </tr>
-      <tr class="even">
-      <td><p><strong>SuppressSsl</strong></p></td>
-      <td><p>REG_DWORD</p></td>
-      <td><p>--</p></td>
-      <td><p>--</p></td>
-      <td><p>Not required</p></td>
-      <td><p>Ignores any directive in the message payload to use SSL and forces non-SSL IMAP. This feature should be turned on only for mobile operators that require it.</p>
-      <p>Use a value of 0 to indicate the feature is off; use 1 to indicate it is turned on.</p></td>
-      </tr>
-      <tr class="odd">
-      <td><p><strong>IgnoreLegacyNotifications</strong></p></td>
-      <td><p>REG_DWORD</p></td>
-      <td><p>Not required</p></td>
-      <td><p>Not required</p></td>
-      <td><p>Not required</p></td>
-      <td><p>Specifies whether legacy voicemail notifications should be ignored when visual voicemail is enabled. If the ignore legacy voicemail notification feature is enabled, legacy message waiting indicator SMS messages are ignored (i.e. these will not trigger a visual voicemail sync). If this feature is absent or not enabled, legacy voicemail MWI messages will cause a visual voicemail sync to be initiated.</p>
-      <p>This feature should be turned on only for mobile operators that require it. This feature is not enabled by default.</p>
-      <p>Use a value of 0 to indicate the feature is off; use 1 to indicate it is turned on.</p></td>
-      </tr>
-      </tbody>
-      </table>
+| Key name                    | Type       | Generic OMTP   | Comverse     | Alcatel Lucent | Details                                                    |
+|:----------------------------|:-----------|:---------------|:-------------|:---------------|:-----------------------------------------------------------|
+| CLSIDProvider               | REG_SZ     | Required       | Required     | Required       | Use {039B8E0E-EA5E-4801-96CD-71E7B343F03F} for an OMTP visual voicemail server or Comverse visual voicemail server.<br/>Use {C9804AB2-60B0-4AFF-8205-E30E591F145B} for an Alcatel Lucent visual voicemail server.      |
+| CLSIDAccessor               | REG_SZ     | Required       | Required     | Required       | Use the value {BC371B86-031F-4BD7-9E7D-FB5DF7D1D8C3}       |
+| ProtocolVariant             | REG_SZ     | Required       | Required     | --             | OMTP protocol version (“pv”). Use &quot;ProtocolVariant&quot;=&quot;omtp&quot; for generic OMTP systems, or &quot;ProtocolVariant&quot;=&quot;comverse&quot; for implementations that use Comverse systems.             |
+| IncomingPort                | REG_DWORD  | Required       | Required     | Required       | SMS-MT application port (“pt”)                             |
+| ClientType                  | REG_SZ     | Required       | Required     | --             | An identifier for the category of devices, which can be set to any string. (“ct”)            |
+| DeviceType                  | REG_SZ     | Required       | Required     | --             | A second–level Comverse-specific device type identifier.   |
+| InitialSmsDestinationNumber | REG_SZ     | Required       | Required     | --             | Phone number to use for SMS-MO messages for visual voicemail such as ACTIVATE or DEACTIVATE (“dn”).     |
+| EncryptedSmsSupported       | REG_DWORD  | Not required   | Not required |--              | Specifies whether 3DES encrypted SMS is supported.<br/>Use a value of 0 to indicate it is not supported. Use 1 to indicate this feature is supported.    |
+| KeyData                     | REG_BINARY | Required if EncryptedSmsSupported is set to 1. | Required if EncryptedSmsSupported is set to 1.  | --  | The binary key to use for encrypted SMS.       |
+| ImapPortOverride            | REG_DWORD  | --             | --           | Not required   | Specifies the IMAP port to use regardless of the message contents. This feature should be turned on only for mobile operators that require it.       |
+| TokenLogin                  | REG_DWORD  | --             | --           | Not required   | Enables the use of token-based login instead of traditional username and password.<br/>This feature should be turned on only for mobile operators that require it.  |
+| SuppressSsl                 | REG_DWORD  | --             | --           | Not required   | Ignores any directive in the message payload to use SSL and forces non-SSL IMAP. This feature should be turned on only for mobile operators that require it.<br/>Use a value of 0 to indicate the feature is off; use 1 to indicate it is turned on.  |
+| IgnoreLegacyNotifications   | REG_DWORD  | Not required   | Not required | Not required   | Specifies whether legacy voicemail notifications should be ignored when visual voicemail is enabled. If the ignore legacy voicemail notification feature is enabled, legacy message waiting indicator SMS messages are ignored (i.e. these will not trigger a visual voicemail sync). If this feature is absent or not enabled, legacy voicemail MWI messages will cause a visual voicemail sync to be initiated.<br/>This feature should be turned on only for mobile operators that require it. This feature is not enabled by default.<br/>Use a value of 0 to indicate the feature is off; use 1 to indicate it is turned on.
 
 1. For mobile operators that have their own particular brand that they want to use instead of visual voicemail, partners can rebrand all instances of **Visual voicemail** in the Windows device UI to use the operator's brand.
 
