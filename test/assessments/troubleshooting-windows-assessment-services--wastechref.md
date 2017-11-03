@@ -20,29 +20,24 @@ ms.technology: windows-oem
 The following information can help you troubleshoot common problems.
 
 
-## Log files
+## Log information
 
--   Log files are copied to the server when you add computers to the server inventory. They are stored at **C:\\relax\\logs**.
+You can potentially find the cause of certain problems by checking the information logs that are created during certain processes. The following table describes the various logs that can be viewed and where they can be viewed (in a file/folder or the Event Viewer, and on the server or the test computer/client):
 
--   A server log captures events of the Windows Assessment Services. This log file can be found at **C:\\Windows\\Temp\\relaxservice.tracelistener.Tracing**.
+Location type          | Location                                                                                               | Log type(s)
+:--------------------- | :----------------------------------------------------------------------------------------------------- | :----------
+Event Viewer on client | **Applications and Services Logs > Windows Assessment Services Client**                                | Errors from the UI
+Client file            | **%SystemRoot%\\System32\\WinEvt\\Logs\\Windows Assessment Services Client.evtx**                      | Errors from the UI (alternate viewing location)
+Event Viewer on server | **Applications and Services Logs > Microsoft > Windows > Windows Remote Management**                   | Windows Remote Management (WinRM) log
+Event Viewer on server | **Applications and Services Logs > Microsoft > Windows > Windows Deployment Services Diagnostics**     | Windows Deployment Services (Windows DS) issues (on Windows Server 2012)
+Server file            | **%SystemRoot%\\Tracing\\WDSServer.log**                                                               | Windows DS issues (on Windows Server 2008 R2)
+Server file            | **C:\\Windows\\Temp\\RelaxService.TraceListener.Tracing**                                              | Windows Assessment Services events
+Server file            | **%SystemDrive%\Relax\\\<GUID>\Job\Results.log**                                                       | Location of the results folder where the results are saved on the client (if the results are not copied to the server)
+Server folder          | **C:\\Relax\\Logs**                                                                                    | Client log files when a client is added to the server inventory
+Server folder          | **%SystemDrive%\\Relax\\Logs**                                                                         | Image deployment logs from the Windows Preinstallation Environment (Windows PE)
 
--   Errors coming from the UI can be viewed in the Event Viewer on the client computer under **Applications and Services Logs** - **Windows Assessment Services Client**. The log file is an ETL file located at **%systemroot%\\system32\\Winevt\\Logs\\Windows Assessment Services Client.evtx**.
-
--   Image deployment logs (Windows PE) are copied from the test computers to **%SystemDrive%\\relax\\logs**
-
--   On Windows Server 2012, Windows Deployment Services (Windows DS) issues can be found in the Event Viewer under **Applications and Services Logs** -**Microsoft** -**Windows** - **Windows Deployment Services Diagnostics**.
-
--   On Windows Server 2008 R2 you must enable Windows DS logging by setting the following:
-
-    -   **HKLM\\System\\CurrentControlSet\\Services\\WDSServer\\Providers\\WDSPXE!TracingDisabled** to `0`
-
-    -   **HKLM\\Software\\Microsoft\\Tracing\\WDSServer!EnableFileTracing** to `1`
-
-    The WDS log will be generated at **%SystemRoot%\\tracing\\wdsserver.log**.
-
--   The WinRM log can be found in the Event Viewer under **Applications and Services Logs** -**Microsoft** -**Windows** -**Windows Remote Management**.
-
--   If results are not copied to the server, you can locate them on the test computer. The log file at **%SystemDrive%\\relax\\&lt;GUID&gt;\\job\\results.log** points to the results folder where the results were saved.
+> [!NOTE]
+> To enable Windows DS logging on Windows Server&nbsp;2008&nbsp;R2, you must set the **HKLM\\System\\CurrentControlSet\\Services\\WDSServer\\Providers\\WDSPXE** registry key's **TracingDisabled** entry to `0` and the **HKLM\\Software\\Microsoft\\Tracing\\WDSServer** registry key's **EnableFileTracing** entry to `1`.
 
 
 ## Symbol server setup
