@@ -20,8 +20,6 @@ ms.technology: windows-oem
 
 If an app generates a notification and resulting toast during modern standby, a short audio alert is played. The display stays turned off while the alert plays.
 
-The common case for an audio notification is if the user receives email from one of their Favorites using the built-in Mail app.
-
 Apps that are not on the lock screen cannot generate audio notifications during modern standby.
 
 If the user has muted audio through the Settings menu, the audio alert does not play.
