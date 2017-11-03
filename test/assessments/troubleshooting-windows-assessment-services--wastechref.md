@@ -114,7 +114,7 @@ If the Windows Assessment Services - Client (Windows ASC) cannot connect to the
 Check the server status by using the `sc query wassvc` command. If the server is not running, start the service by using the `net start wassvc` command.
 
 > [!WARNING]
-> The sc query command only works if it is run on the Windows Assessment Services server.
+> The `sc query` command only works if it is run on the Windows Assessment Services server.
 
 
 ### The test computer already exists in inventory
