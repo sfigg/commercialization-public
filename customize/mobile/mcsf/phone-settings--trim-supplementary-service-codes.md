@@ -1,5 +1,5 @@
 ---
-title: Phone settings Trim supplementary service codes
+title: Trim supplementary service codes
 description: OEMs can trim supplementary service codes to ensure network compatibility.
 MSHAttr:
 - 'PreferredSiteName:MSDN'
@@ -12,7 +12,7 @@ ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-# Phone settings: Trim supplementary service codes
+# Trim supplementary service codes
 
 
 OEMs can trim supplementary service codes to ensure network compatibility. When a code is sent using a USSD string in a \#\#code\# format, `EnableSupplementaryServiceEraseToDeactivateOverride` trims the USSD string so \#code\# is sent. This customization applies only to codes that use the \#\#code\# format.

@@ -1,6 +1,6 @@
 ---
-title: Customizations for connectivity
-description: Describes the customizations for configuring connectivity settings.
+title: Customizations for cellular connectivity
+description: Describes the customizations for configuring cellular connectivity settings.
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
@@ -11,93 +11,31 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
-# Customizations for connectivity
-
+# Customizations for cellular connectivity
 
 Describes the customizations for configuring connectivity settings.
 
 ## In this section
 
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Topic</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>[Authentication for Wi-Fi hotspot settings](authentication-for-wi-fi-hotspot-settings.md)</p></td>
-<td><p>When mobile devices connect to a Wi-Fi hotspot that uses a captive portal, the web browser is automatically opened so that the user can sign in.</p></td>
-</tr>
-<tr class="even">
-<td><p>[Cellular data connection icon](cellular-data-connection-icon.md)</p></td>
-<td><p>The one-, two-, or three-character codes used to signify the data connection type in the status bar can be modified.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[Configure C+G dual SIM settings](configure-c-g-dual-sim-settings.md)</p></td>
-<td><p>Partners can configure the settings for C+G dual SIM phones.</p></td>
-</tr>
-<tr class="even">
-<td><p>[Cortana phone number](cortana-phone-number.md)</p></td>
-<td><p>Partners can configure a phone book entry for Cortana to allow users to initiate speech from a car that doesn't have support for activating speech on the device that is connected over Bluetooth.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[Custom percentages for signal strength bars](custom-percentages-for-signal-strength-bars.md)</p></td>
-<td><p>Partners must modify the percentage values used for the signal strength bars in the status bar.</p></td>
-</tr>
-<tr class="even">
-<td><p>[Data transfer indicator](data-transfer-indicator.md)</p></td>
-<td><p>OEMs can display a data transfer indicator on a device’s status bar for mobile operators that require it.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[Disable Cell Broadcast](disable-cell-broadcast.md)</p></td>
-<td><p>By default, Cell Broadcast (also known as Short Message Service-Cell Broadcast (SMS-CB)) is a feature that is active at all times.</p></td>
-</tr>
-<tr class="even">
-<td><p>[Ignore NITZ information from LTE networks](ignore-nitz-information-from-lte-networks.md)</p></td>
-<td><p>For mobile networks that can receive Network Identity and Time Zone (NITZ) information from multiple sources, partners can set the device to ignore the time received from an LTE network.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[LTE attach: GUID for user configured internet APN](lte-attach-guid-for-user-configured-internet-apn.md)</p></td>
-<td><p>Partners can set the OEMConnectionId that is used when creating the user-configured connection for internet from the <strong>SIM</strong> settings screen.</p></td>
-</tr>
-<tr class="even">
-<td><p>[LTE attach: Mapping OEMConnectionId values to modem profiles](lte-attach-mapping-oemconnectionid-values-to-modem-profiles.md)</p></td>
-<td><p>Partners can set the list of OEMConnectionId values that map to a LTE attach profile in the MBB driver.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[Maximum number of PDP contexts](maximum-number-of-pdp-contexts.md)</p></td>
-<td><p>OEMs can set different maximum values for the number of PDP contexts for the device if required by their mobile operator.</p></td>
-</tr>
-<tr class="even">
-<td><p>[Network Time Protocol support](network-time-protocol-support.md)</p></td>
-<td><p>Use to automatically set the time using an NTP client in a mobile device that doesn't support NITZ, or when cellular data is not available.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[Preferred data provider list](preferred-data-provider-list.md)</p></td>
-<td><p>For mobile operators that require it, OEMs can set a list of MCC/MNC pairs for the purchase order (PO) carrier or primary operator so that it can be set as the default data line for phones that have a dual SIM.</p></td>
-</tr>
-<tr class="even">
-<td><p>[Preferred system types for phone connectivity](preferred-system-types-for-phone-connectivity.md)</p></td>
-<td><p>OEMs can provide more control over the system types that their devices use to connect by: mapping an ICCID or IIN to one radio (regardless of which SIM is chosen), specifying a list of MCC/MNCs that the MO wishes to limit, and/or restricting the second slot in a dual SIM device.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[Roaming filter](roaming-filter.md)</p></td>
-<td><p>Partners can add roaming filters that determine when the device appears to be roaming, based on the network the device is currently connected to. With roaming filters enabled, connections on other companies’ specified networks are not treated as roaming.</p></td>
-</tr>
-<tr class="even">
-<td><p>[Threshold for automatic time update](threshold-for-automatic-time-update.md)</p></td>
-<td><p>For mobile networks that support Network Identity and Time Zone (NITZ), OEMs can specify the difference (in number of seconds) between the NITZ information and the current device time before a device time update is triggered.</p></td>
-</tr>
-</tbody>
-</table>
+| Topic                                 | Description                                                                                   |
+|:--------------------------------------|:----------------------------------------------------------------------------------------------|
+| [Background cellular data restriction](background-cellular-data-restriction,md)   | To meet market or mobile operator requirements, OEMs can restrict background data in the data usage settings. |
+| [Cellular data connection icon](cellular-data-connection-icon.md) | The one-, two-, or three-character codes used to signify the data connection type in the status bar can be modified.  |
+| [Custom percentages for signal strength bars](custom-percentages-for-signal-strength-bars.md) | Partners must modify the percentage values used for the signal strength bars in the status bar.   |
+| [Data transfer indicator](data-transfer-indicator.md)     | OEMs can display a data transfer indicator on a device’s status bar for mobile operators that require it. |
+| [Default highest connection speed](default-highest-connection-speed,md)   | Partners can set the default value for the Highest connection speed option in the Settings > Cellular & SIM > SIM screen by specifying the bitmask for any combination of radio technology to be excluded from the default value. The connection speed that has not been excluded will show up as the highest connection speed.   |
+| [Default roaming option](default-roaming-option.md)   | Partners can set the default value for the Default roaming options option in the Cellular & SIM settings screen.  |
+| [Disable Cell Broadcast](disable-cell-broadcast.md)   | By default, Cell Broadcast (also known as Short Message Service-Cell Broadcast (SMS-CB)) is a feature that is active at all times.    |
+| [Extended error messages for reject codes](extended-error-messages-for-reject-codes.md)   | When a reject code is sent by the network, partners can specify that extended error messages should be displayed instead of the standard simple error messages. This customization is intended for use only when required by the mobile operator’s network.   |
+| [Hide CDMA mode selection](hide-cdma-mode-selection.md)   | For CDMA phones, partners can hide CDMA option in the network Mode selection drop-down that appears on the Cellular & SIM screen in Settings. |
+| [LTE attach: GUID for user configured internet APN](lte-attach-guid-for-user-configured-internet-apn.md)  | Partners can set the OEMConnectionId that is used when creating the user-configured connection for internet from the SIM settings screen. |
+| [LTE attach: Mapping OEMConnectionId values to modem profiles](lte-attach-mapping-oemconnectionid-values-to-modem-profiles.md)    | Partners can set the list of OEMConnectionId values that map to an LTE attach profile in the mobile broadband driver. |
+| [Manual network selection timeout](manual-network-selection-timeout.md)   | OEMs can change the default network selection timeout value. By default, the OS allows the device to register on the manually selected network for 60 seconds (or 1 minute) before it switches back to automatic mode.    |
+| [Maximum number of PDP contexts](maximum-number-of-pdp-contexts.md)   | OEMs can set different maximum values for the number of PDP contexts for the device if required by their mobile operator. |
+| [Network Time Protocol support](network-time-protocol-support.md) | Use to automatically set the time using an NTP client in a mobile device that doesn't support NITZ, or when cellular data is not available.   |
+| [Permanent automatic mode](permanent-automatic-mode.md)   | OEMs can enable permanent automatic mode for mobile networks that require the cellular settings to revert to automatic network selection after the user has manually selected another network when roaming or out of range of the home network.   |
+| [Preferred data provider list](preferred-data-provider-list.md)   | For mobile operators that require it, OEMs can set a list of MCC/MNC pairs for the purchase order (PO) carrier or primary operator so that it can be set as the default data line for phones that have a dual SIM.    |
+| [Roaming filter](roaming-filter.md)   | Partners can add roaming filters that determine when the device appears to be roaming, based on the network the device is currently connected to. With roaming filters enabled, connections on other companies’ specified networks are not treated as roaming.    |
 
 ## Related topics
 

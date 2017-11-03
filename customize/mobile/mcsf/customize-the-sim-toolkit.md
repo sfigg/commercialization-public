@@ -11,18 +11,16 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # Customize the SIM toolkit
-
 
 OEMs can change the display duration for certain SIM toolkit UI dialogs or messages if the default values do not meet the requirements of the mobile operator.
 
 The default display times for SIM toolkit commands are as follows:
 
--   GET INPUT: 120 seconds
--   DISPLAY TEXT: 60 seconds
--   SELECT ITEM: 60 seconds
--   GET INKEY: 60 seconds
+* GET INPUT: 120 seconds
+* DISPLAY TEXT: 60 seconds
+* SELECT ITEM: 60 seconds
+* GET INKEY: 60 seconds
 
 OEMs can modify the values for the following settings.
 
@@ -51,82 +49,75 @@ OEMs can modify the values for the following settings.
 </tbody>
 </table>
 
- 
 To customize these settings using MCSF, see the next section. If you're using Windows provisioning, use Windows Configuration Designer to customize the settings or write your own Windows provisioning answer file. Regardless of the framework that you use, you must determine if you need to use the per-device or per-IMSI setting.
 
 <a href="" id="constraints---none"></a>**Constraints:** None  
 This customization supports: **per-IMSI** value, **per-device** value
 
-<a href="" id="instructions-"></a>**Instructions:**  
-1.  Create a customization answer file using the contents shown in the following code sample.
+## Instructions
 
-    ```XML
-    <?xml version="1.0" encoding="utf-8" ?>  
-    <ImageCustomizations xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate"  
-                         Name="SIMToolkitCustomization"  
-                         Description="Use to modify certain SIM toolkit UI dialogs and messages."  
-                         Owner=""  
-                         OwnerType="OEM"> 
-     
-      <!-- Define the Targets --> 
-      <Targets>
-         <Target Id="">
-            <TargetState>
-               <Condition Name="" Value="" />
-               <Condition Name="" Value="" />
-            </TargetState>
-         </Target>
-      </Targets>
-      
-      <Static>
-        <Settings Path="Multivariant">
-          <Setting Name="Enable" Value="1" />
-        </Settings>
+1. Create a customization answer file using the contents shown in the following code sample.
 
-        <Settings Path="AutoDataConfig">
-          <Setting Name="Enable" Value="0" />
-        </Settings> 
-      </Static>
+   ```XML
+   <?xml version="1.0" encoding="utf-8" ?>
+   <ImageCustomizations xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate"
+                        Name="SIMToolkitCustomization"
+                        Description="Use to modify certain SIM toolkit UI dialogs and messages."
+                        Owner=""
+                        OwnerType="OEM">
 
-      <!-- Specify the Variant -->
-      <Variant Name=""> 
-        <TargetRefs>
-          <TargetRef Id="" /> 
-        </TargetRefs>
-     
-    <!-- Use for the per-IMSI case
-        <Settings Path="CellCore/PerIMSI/$(__IMSI)/UTK">  
-          <Setting Name="UIDefaultDuration" Value="" />           
-          <Setting Name="UIGetInputDuration" Value="" />  
-        </Settings>  
-    -->
+     <!-- Define the Targets -->
+     <Targets>
+        <Target Id="">
+           <TargetState>
+              <Condition Name="" Value="" />
+              <Condition Name="" Value="" />
+           </TargetState>
+        </Target>
+     </Targets>
 
-    <!-- Use for the per-device case
-        <Settings Path="CellCore/PerDevice/UTK">  
-          <Setting Name="UIDefaultDuration" Value="" />           
-          <Setting Name="UIGetInputDuration" Value="" />        
-        </Settings>  
-    -->
+     <Static>
+       <Settings Path="Multivariant">
+         <Setting Name="Enable" Value="1" />
+       </Settings>
 
-      </Variant>
+       <Settings Path="AutoDataConfig">
+         <Setting Name="Enable" Value="0" />
+       </Settings>
+     </Static>
 
-    </ImageCustomizations>
-    ```
+     <!-- Specify the Variant -->
+     <Variant Name="">
+       <TargetRefs>
+         <TargetRef Id="" />
+       </TargetRefs>
 
-2.  Specify an `Owner`.
+   <!-- Use for the per-IMSI case -->
+       <Settings Path="CellCore/PerIMSI/$(__IMSI)/UTK">
+         <Setting Name="UIDefaultDuration" Value="" />
+         <Setting Name="UIGetInputDuration" Value="" />
+       </Settings>  
 
-3.  Define **Targets** or conditions for when a variant can be applied, such as keying off a SIM's MCC, MNC, and SPN.
+   <!-- Use for the per-device case -->
+       <Settings Path="CellCore/PerDevice/UTK">
+         <Setting Name="UIDefaultDuration" Value="" />
+         <Setting Name="UIGetInputDuration" Value="" />
+       </Settings>
 
-4.  Define settings for a **Variant**, which are applied if the associated target's conditions are met.
+     </Variant>
+   </ImageCustomizations>
+   ```
 
-5.  Set the values for `UIDefaultDuration` and `UIGetInputDuration`.
+1. Specify an `Owner`.
+1. Define **Targets** or conditions for when a variant can be applied, such as keying off a SIM's MCC, MNC, and SPN.
+1. Define settings for a **Variant**, which are applied if the associated target's conditions are met.
+1. Set the values for `UIDefaultDuration` and `UIGetInputDuration`.
 
-<a href="" id="testing-"></a>**Testing:**  
-1.  Flash the build containing this customization to a phone.
+## Testing
 
-2.  Go to the **Cellular & SIM** &gt; **Advanced options** settings screen to start the SIM toolkit UI app.
-
-3.  Verify that the duration that the UI dialogs and messages are displayed match the default values that you've set.
+1. Flash the build containing this customization to a phone.
+1. Go to the **Cellular & SIM** &gt; **Advanced options** settings screen to start the SIM toolkit UI app.
+1. Verify that the duration that the UI dialogs and messages are displayed match the default values that you've set.
 
 ## Related topics
 
