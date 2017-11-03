@@ -20,9 +20,24 @@ ms.technology: windows-oem
 The following information can help you troubleshoot common problems.
 
 
-## Log files
+## Log information
 
--   Log files are copied to the server when you add computers to the server inventory. They are stored at **C:\\relax\\logs**.
+You can potentially find the cause of certain problems by checking the information logs that are created during certain processes. The following table describes the various logs that can be viewed and where they can be viewed (in a file/folder or the Event Viewer, and on the server or the test computer/client):
+
+Location type          | Location                                                                                               | Log type(s)
+:--------------------- | :----------------------------------------------------------------------------------------------------- | :----------
+Event Viewer on client | **Applications and Services Logs > Windows Assessment Services Client**                                | Errors from the UI
+Client file            | **%SystemRoot%\\System32\\WinEvt\\Logs\\Windows Assessment Services Client.evtx**                      | Errors from the UI (alternate viewing location)
+Event Viewer on server | **Applications and Services Logs > Microsoft > Windows > Windows Remote Management**                   | Windows Remote Management (WinRM) log
+Event Viewer on server | **Applications and Services Logs > Microsoft > Windows > Windows Deployment Services Diagnostics**     | Windows Deployment Services (Windows DS) issues (on Windows Server 2012)
+Server file            | **%SystemRoot%\\Tracing\\WDSServer.log**                                                               | Windows DS issues (on Windows Server 2008 R2)
+Server file            | **C:\\Windows\\Temp\\RelaxService.TraceListener.Tracing**                                              | Windows Assessment Services events
+Server file            | **%SystemDrive%\Relax\\\<GUID>\Job\Results.log**                                                       | Location of the results folder where the results are saved on the client (if the results are not copied to the server)
+Server folder          | **C:\\Relax\\Logs**                                                                                    | Client log files when a client is added to the server inventory
+Server folder          | **%SystemDrive%\\Relax\\Logs**                                                                         | Image deployment logs from the Windows Preinstallation Environment (Windows PE)
+
+> [!NOTE]
+> To enable Windows DS logging on Windows Server&nbsp;2008&nbsp;R2, you must set the **HKLM\\System\\CurrentControlSet\\Services\\WDSServer\\Providers\\WDSPXE** registry key's **TracingDisabled** entry to `0` and the **HKLM\\Software\\Microsoft\\Tracing\\WDSServer** registry key's **EnableFileTracing** entry to `1`.
 
 -   A server log captures events of the Windows Assessment Services. This log file can be found at **C:\\Windows\\Temp\\relaxservice.tracelistener.Tracing**.
 
@@ -49,7 +64,7 @@ The following information can help you troubleshoot common problems.
 
 Some assessments require access to symbols. In some cases the information in the assessment results can be incorrect or have missing information if a symbol server is not available. In many cases this dependency is satisfied by Internet connectivity and access to the Microsoft public symbols server. In other cases where connectivity to the Internet is not available such as a lab environment, you can set up a private symbols server or install the symbols on the local computer to get the full benefits of the assessments.
 
-**To set the symbols environment variable on a test computer**
+**To set the symbols environment variable on a test computer:**
 
 1.  Open File Explorer, right-click **Computer**, and select **Properties**.
 
@@ -59,19 +74,19 @@ Some assessments require access to symbols. In some cases the information in the
 
 4.  Under System variables, click **New** to set the symbols environment variable by using one of the following paths:
 
-    1.  Use the public symbols server (requires Internet connection)
+    1.  The public symbols server (requires Internet connection)
 
         Connect the computer to the Internet so that it can access the Microsoft symbols server, and then configure the \_NT\_SYMBOL\_PATH environment variable to use the Microsoft symbols server at **http://msdl.microsoft.com/downloads/symbols**.
 
-    2.  Use a network connected symbols path (requires local network connection)
+    2.  A network connected symbols path (requires local network connection)
 
         Connect the computer to the local intranet and then configure the \_NT\_SYMBOL\_PATH environment variable to use an intranet symbols path.
 
-    3.  Use a local symbols path
+    3.  A local symbols path
 
-        Download the symbols to the Windows Assessment Services server computer, and point the test computer to this location by setting the \_NT\_SYMBOL\_PATH environment variable to use a path to the symbols on the server, such as \\\\WASServer\\relax\\symbols.
+        Download the symbols to the Windows Assessment Services server computer, and point the test computer to this location by setting the \_NT\_SYMBOL\_PATH environment variable to use a path to the symbols on the server, such as **\\\\WASServer\\relax\\symbols**.
 
-**To set up internal symbols**
+**To set up internal symbols:**
 
 1.  Install the ADK, and initialize WAS.
 
@@ -83,13 +98,17 @@ Some assessments require access to symbols. In some cases the information in the
 
 5.  Stop the WAS service by running the following command from an elevated command prompt:
 
-    **net stop WASSVC**
+    ```
+    net stop WASSVC
+    ```
 
 6.  Change the service logon account to the new domain account.
 
 7.  Run the following command from an elevated command prompt, replacing &lt;*path to internal symbols*&gt; with the appropriate path:
 
-    **SETX\_NT\_SYMBOL\_PATH \\\\&lt;path to internal symbols&gt; /M**
+    ```
+    SETX_NT_SYMBOL_PATH \\<path to internal symbols> /M
+    ```
 
 8.  Restart the machine.
 
@@ -107,10 +126,10 @@ If the Windows Assessment Services - Client (Windows ASC) cannot connect to the
 
 `Unable to connect to the remote server: A connection attempt failed because the connected party did not properly respond after a period of time, or an established connection failed because the connected host has failed to respond.`
 
-Check the server status by using the **sc query wassvc** command. If the server is not running, start the service by using the **net start wassvc** command.
+Check the server status by using the `sc query wassvc` command. If the server is not running, start the service by using the `net start wassvc` command.
 
 > [!WARNING]
-> The sc query command only works if it is run on the Windows Assessment Services server.
+> The `sc query` command only works if it is run on the Windows Assessment Services server.
 
 
 ### The test computer already exists in inventory
@@ -127,7 +146,7 @@ If you do not see the computer entry in the Server Inventory window, close and t
 If the **Run** button is unavailable, make sure that you have selected specific computers and images in the **Assets** details. If you have selected specific computers and images, but you do not see any assessments on the **Results** page, close and then re-create the current job.
 
 
-### The inventory test machine fails with WS\_E\_OPERATION\_TIMED\_OUT
+### The inventory test computer fails with WS\_E\_OPERATION\_TIMED\_OUT
 
 If you receive the following error:
 
@@ -138,15 +157,15 @@ Check the error log at **C:\\Relax\\CompleteDeployment.log** for additional erro
 
 ### An image deployment failure does not have enough information on the monitoring page
 
-You may experience missing image deployment failure information on the monitoring page because of one of the following errors:
+If you receive the error message `Error code: Exiting Scenario Deploy: ErrorId=<IDNumber>`, an image deployment may have failed, and there is not enough information about the failure on the monitoring page. The following table shows some common error ID numbers and the errors that they represent:
 
-| Error message                                              | Problem description                                                                                                                 |
-| :--------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------- |
-| `Error code: Exiting Scenario Deploy: ErrorId=2`           | Either you are using an image of unsupported format, the unattend answer file is missing, or the image file is missing.             |
-| `Error code: Exiting Scenario Deploy: ErrorId=38`          | The image file is corrupted.                                                                                                        |
-| `Error code: Exiting Scenario Deploy: ErrorId=87`          | Bcdboot failed to update the BCD store. This is specific to some UEFI computer prototypes. No workaround is available at this time. |
-| `Error code: Exiting Scenario Deploy: ErrorId=193`         | Bcdboot failed to update the BCD store. An image of incompatible architecture was applied to a test computer.                       |
-| `Error code: Exiting Scenario Deploy: ErrorId=-2147024809` | Diskpart failed to find any hard disk drive that could be used to apply an image to.                                                |
+| Error ID number | Error description                                                                                                                   |
+| --------------: | :---------------------------------------------------------------------------------------------------------------------------------- |
+| 2               | Either you are using an image of unsupported format, the unattend answer file is missing, or the image file is missing.             |
+| 38              | The image file is corrupted.                                                                                                        |
+| 87              | Bcdboot failed to update the BCD store. This is specific to some UEFI computer prototypes. No workaround is available at this time. |
+| 193             | Bcdboot failed to update the BCD store. An image of incompatible architecture was applied to a test computer.                       |
+| -2147024809     | Diskpart failed to find any hard disk drive that could be used to apply an image to.                                                |
 
 
 ### A DISM error occurs during computer inventory
@@ -156,7 +175,7 @@ If you receive the following error while taking inventory of a computer, you mus
 `An error occurred. You cannot service an x86-based image from an x64-based host that does not support WOW64. Try the operation again from a host environment that supports WOW64. 
 Error running Driver Scavenge. ErrorCode 193.`
 
-When you inventory a computer, driver information is gathered and stored at **&lt;%systemdrive%\\relax\\driver** using DISM. DISM cannot run the driver servicing command on an X86 Windows image, from a Windows PE X64 environment. For more information, see DISM Supported Platforms.
+When you inventory a computer, driver information is gathered and stored at **%SystemDrive%\\relax\\driver** using DISM. DISM cannot run the driver servicing command on an X86 Windows image, from a Windows PE X64 environment. For more information, see DISM Supported Platforms.
 
 To fix the problem, use (or create) a bootable USB drive created for X86 architecture. For more information, see [Windows Assessment Services Setup and Configuration](windows-assessment-services-setup-and-configuration-wastechref.md).
 
@@ -166,7 +185,7 @@ To fix the problem, use (or create) a bootable USB drive created for X86 archite
 If you rename the Windows Assessment Services server and re-initialize it, you must redeploy Windows on the test computer before you run additional assessments.
 
 
-### A “Machine not reachable” error occurs
+### The test computer cannot be reached
 
 When running assessments remotely, Windows Assessment Services relies on DNS to resolve the test computer names. If DNS has duplicate entries for the same computer name, one from a domain joined computer and another from a workgroup computer, Windows and WinRM will pick the computer that DNS resolves to.
 
@@ -176,7 +195,7 @@ If you receive an error that includes `Machine Not Reachable`, check the DNS ent
 > The computer name must contain only alphanumeric characters and dashes. If the computer name contains an underscore or other extended characters, the computer may not be discoverable via Domain Name System (DNS).
 
 
-## A push notification fails when running Windows ASC from a server without Windows Assessment Services
+### A push notification fails when running Windows ASC from a server without Windows Assessment Services
 
 If you are running Windows ASC on a Windows server and you do not have Windows Assessment Services installed on that server, push notifications will fail to enable in Windows ASC when you launch it.
 
@@ -191,7 +210,7 @@ Alternatively, you can run Windows ASC on a client computer or on the same serve
 
 ### The dumps folder does not contain any dump files
 
-By default, dump files are not copied to the server after assessment runs. If you want to collect dumps for assessment runs, edit &lt;Relax&nbsp;directory&gt;\\Scripts\\Harnesses\\Axe\\CompleteAssessment.cmd, and change the value for set\_copydumpstoserver to `true`. By default, this value is `false`.
+By default, dump files are not copied to the server after assessment runs. If you want to collect dumps for assessment runs, edit **&lt;Relax&nbsp;directory&gt;\\Scripts\\Harnesses\\Axe\\CompleteAssessment.cmd**, and change the value for set\_copydumpstoserver to `true`. By default, this value is `false`.
 
 
 ## Related topics
