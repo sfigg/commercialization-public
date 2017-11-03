@@ -245,7 +245,7 @@ To configure visual voicemail for a mobile operator, the OEM must add setting se
 
       The following table describes the values to use and indicates if the keys are required depending on the OMTP-based protocol being used.
 
-      <table>
+      <table style="width:100%">
       <colgroup>
       <col width="12%" />
       <col width="12%" />
