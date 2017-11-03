@@ -10,7 +10,7 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-# Customizations for themes and lock screen
+# Customizations for SIM settings
 
 Describes the customizations for SIM settings.
 

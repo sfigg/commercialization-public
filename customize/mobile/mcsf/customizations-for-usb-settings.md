@@ -18,9 +18,9 @@ Describes the customizations that you can configure when a USB is connected to t
 
 | Topic                                 | Description                                                                                   |
 |:--------------------------------------|:----------------------------------------------------------------------------------------------|
-| [Enable the incompatible charger notification](mobile/mcsf/enable-the-incompatible-charger-notification.md) | Partners can set the device to display a warning when the user connects the device to an incompatible charging source.   |
-| [Enable the data connection prompt](mobile/mcsf/enable-the-data-connection-prompt.md)                       | Partners can set the device to display a dialog that asks for permission to enable the data connection when the user connects the device to a host computer via a USB cable.     |
-| [Hide the weak charger notification option UI](mobile/mcsf/hide-the-weak-charger-notification-option-ui.md) | Partners can configure the device to hide the dialog that is displayed when the user connects the device to an incompatible charging source and hide the USB setting that notifies the user when the device is connected to a slower charger.                  |
+| [Enable the incompatible charger notification](enable-the-incompatible-charger-notification.md) | Partners can set the device to display a warning when the user connects the device to an incompatible charging source.   |
+| [Enable the data connection prompt](enable-the-data-connection-prompt.md)                       | Partners can set the device to display a dialog that asks for permission to enable the data connection when the user connects the device to a host computer via a USB cable.     |
+| [Hide the weak charger notification option UI](hide-the-weak-charger-notification-option-ui.md) | Partners can configure the device to hide the dialog that is displayed when the user connects the device to an incompatible charging source and hide the USB setting that notifies the user when the device is connected to a slower charger.                  |
 
 ## Related topics
 

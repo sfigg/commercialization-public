@@ -77,8 +77,8 @@ This customization supports: **per-IMSI** value, **per-device** value.
 
     -->
 
-    <!-- Use for the per-device case.   
-      <Static>  
+    <!-- Use for the per-device case -->   
+      <Static>
 
         <Settings Path="CellCore/PerDevice/CellUX">  
           <Setting Name="ShowManualAvoidance" Value="" />  
@@ -110,8 +110,6 @@ This customization supports: **per-IMSI** value, **per-device** value.
         </Settings>  
 
       </Static>
-
-    -->
 
     </ImageCustomizations>
     ```
