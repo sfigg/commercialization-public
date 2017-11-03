@@ -1,5 +1,5 @@
 ---
-title: Configuring OEM lens apps to launch above the lock screen
+title: Configure OEM lens apps to launch above the lock screen
 description: OEM can configure lens apps to launch above the lock screen.
 MSHAttr:
 - 'PreferredSiteName:MSDN'
@@ -12,7 +12,7 @@ ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-# Configuring OEM lens apps to launch above the lock screen
+# Configure OEM lens apps to launch above the lock screen
 
 
 OEM can configure lens apps to launch above the lock screen.

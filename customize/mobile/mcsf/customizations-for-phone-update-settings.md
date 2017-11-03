@@ -1,25 +1,26 @@
 ---
-title: Customizations for email
-description: Describes the customizations related to email.
+title: Customizations for phone update settings
+description: Describes the customizations that determine how the mobile device handles updates. 
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-ms.assetid: 39012cc9-2ab2-4a75-b61a-6ad0321e1fa8
 ms.author: alhopper
-ms.date: 05/02/2017
+ms.date: 11/02/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-# Customizations for email
+# Customizations for phone update settings
 
-Describes the customizations related to email.
+ Describes the customizations that determine how the mobile device handles updates.
 
 ## In this section
 
 | Topic                                 | Description                                                                                   |
 |:--------------------------------------|:----------------------------------------------------------------------------------------------|
-| [Light or dark theme in email](light-or-dark-mode-in-email.md)    | Partners can specify that the entire email application always has a light background. |
+| [Auto scan for phone updates](auto-scan-for-phone-updates.md) | OEMs can show or hide the auto scan for updates setting on the device.|
+| [Block using SD card for updates](block-using-sd-card-for-updates.md)                   | For devices that support an SD card, OEMs can either allow or block the use of the SD card for device updates.    |
+| [Enable SD card override](enable-sd-card-override.md) | OEMs can use EnableSDCardOverride to use the SD card for device updates.      |
 
 ## Related topics
 
