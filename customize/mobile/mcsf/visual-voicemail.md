@@ -11,21 +11,16 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # Visual voicemail
-
 
 **Visual voicemail** supports both traditional voicemail (retrieved through a phone call) and visual voicemail. Users can select between traditional voicemail and visual voicemail when they first attempt to access voicemail. If the mobile operator does not support this visual voicemail implementation, the user will only see the traditional voicemail option. For mobile operators that have their own particular brand that they want to use instead of visual voicemail, partners can rebrand all instances of **visual voicemail** in the Windows 10 Mobile UI to use the operator's brand.
 
 The mobile operator visual voicemail system must be an OMTP-compliant system that meets the following requirements.
 
--   Uses the AMR-NB codec for incoming voicemail messages.
-
--   Sends all SMS-MT as port-directed SMS.
-
--   Sends all SMS-MT with 7-bit default or UCS2 encoding.
-
--   Supports enabling and disabling the visual voicemail feature on the phone by using ACTIVATE and DEACTIVATE SMS-MO messages.
+* Uses the AMR-NB codec for incoming voicemail messages.
+* Sends all SMS-MT as port-directed SMS.
+* Sends all SMS-MT with 7-bit default or UCS2 encoding.
+* Supports enabling and disabling the visual voicemail feature on the phone by using ACTIVATE and DEACTIVATE SMS-MO messages.
 
 The visual voicemail implementation on the phone is based on the [OMTP visual voice mail interface specification](http://go.microsoft.com/fwlink/p/?LinkId=212770). Visual voicemail support on Windows Phone 8.1 was tested on OMTP-based protocols by Comverse and Alcatel Lucent. Other OMTP-based protocols like Streamwide may also be supported, although tests were performed only on Comverse and Alcatel Lucent. Variations from the OMTP standard may result in unsupported scenarios.
 
@@ -240,10 +235,8 @@ To configure visual voicemail for a mobile operator, the OEM must add setting se
        </Settings>
    ```
 
-   1. Replace *$(VVMMO)* with the name of the VVMMO. For example, *Contoso*.
-   1. Set only the applicable settings that apply to the VVMMO and are required depending on the OMTP-based protocol being used. Note that you do not have to set all of these if they are not supported.
-
-      The following table describes the values to use and indicates if the keys are required depending on the OMTP-based protocol being used.
+1. Replace *$(VVMMO)* with the name of the VVMMO. For example, *Contoso*.
+1. Set only the applicable settings that apply to the VVMMO and are required depending on the OMTP-based protocol being used. Note that you do not have to set all of these if they are not supported. The following table describes the values to use and indicates if the keys are required depending on the OMTP-based protocol being used.
 
 | Key name                    | Type       | Generic OMTP   | Comverse     | Alcatel Lucent | Details                                                    |
 |:----------------------------|:-----------|:---------------|:-------------|:---------------|:-----------------------------------------------------------|
