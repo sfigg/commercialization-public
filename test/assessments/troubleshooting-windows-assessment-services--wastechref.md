@@ -153,6 +153,7 @@ If you receive the error message `Error code: Exiting Scenario Deploy: ErrorId=<
 If you receive the following error while taking inventory of a computer, you must use the x86 Windows PE image for the bootable USB drive that you created for inventory.
 
 `An error occurred. You cannot service an x86-based image from an x64-based host that does not support WOW64. Try the operation again from a host environment that supports WOW64. 
+
 Error running Driver Scavenge. ErrorCode 193.`
 
 When you inventory a computer, driver information is gathered and stored at **%SystemDrive%\\relax\\driver** using DISM. DISM cannot run the driver servicing command on an X86 Windows image, from a Windows PE X64 environment. For more information, see DISM Supported Platforms.
