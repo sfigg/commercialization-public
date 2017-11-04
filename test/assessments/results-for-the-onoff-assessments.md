@@ -14,25 +14,15 @@ ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-# Results for the On/Off Assessments
 
+# Results for the On/Off Assessments
 
 This topic helps you interpret the results produced by the On/Off assessments (Boot Performance (Fast Startup), Boot Performance (Full Boot), Standby Performance, and Hibernate Performance). It also provides guidance on how to use the results to identify and resolve several common issues that negatively impact the end user’s experience when shutting down and booting a computer.
 
-In this topic:
-
--   [Goals File](#bkmk-goals)
-
--   [Metrics](#fs-metrics)
-
--   [Issues](#fs-issues)
-
--   [Best Practices for Time-Critical Tasks](#fs-analysis)
-
 For more information about On/Off Transition assessments, see [On/Off Transition Performance](onoff-transition-performance.md).
 
-## <a href="" id="bkmk-goals"></a>Goals File
 
+## <a href="" id="bkmk-goals"></a>Goals File
 
 You can create custom goals to measure your improvements in the Results View. Goals files are a triage tool that can help you understand how a PC is performing and to compare PCs in your business.
 
@@ -48,10 +38,8 @@ When a metric value is compared to the goal for that metric, the status is color
 
 -   No color means that there are no goals defined for the metric.
 
-**Note**  
-In the Windows Assessment Toolkit for Windows 8, some assessments include default goals files. The first time you view results using this version of the tools, the default goals file is used. However, you can also define custom goals for Windows 8 the same way that you can for Windows 8.1 and Windows 10.
-
- 
+> [!NOTE]
+> In the Windows Assessment Toolkit for Windows 8, some assessments include default goals files. The first time you view results using this version of the tools, the default goals file is used. However, you can also define custom goals for Windows 8 the same way that you can for Windows 8.1 and Windows 10.
 
 You can set the goals file location and add a goals file to that location before you can use the UI to apply the custom goals. Once a goals file is selected it will continue to be the goals file that is used for any results that are opened.
 
@@ -65,13 +53,11 @@ Only one goals file can be used at a time. Goals for all assessments are set in 
 
 You can use the sample goals file that is provided at %PROGRAMFILES%\\Windows Kits\\10\\Assessment and Deployment Kit\\Windows Assessment Toolkit\\SDK\\Samples\\Goals to create your own goals file.
 
-**Note**  
-You cannot package a goals file with a job, but you can store it on a share for others to use.
+> [!NOTE]
+> You cannot package a goals file with a job, but you can store it on a share for others to use.
 
- 
 
 ## <a href="" id="fs-metrics"></a>Metrics
-
 
 This section describes the key metrics reported by the On/Off assessments, common causes of poor results for these metrics, and common remediation for issues related to these metrics. This section also helps you identify the audience for which the metric is most applicable.
 
@@ -117,10 +103,9 @@ In this section:
 
 -   [Post On/Off Duration](#oo-post-on-off-duration)
 
-**Note**  
-If you enabled the Enable Minifilter Diagnostic Mode setting, the assessment results will include minifilter metrics. For more information about minifilter metrics and results, see [Minifilter Diagnostics](minifilter-diagnostics.md).
+> [!NOTE]
+> If you enabled the Enable Minifilter Diagnostic Mode setting, the assessment results will include minifilter metrics. For more information about minifilter metrics and results, see [Minifilter Diagnostics](minifilter-diagnostics.md).
 
- 
 
 ### <a href="" id="oo-shutdown-duration"></a>Shutdown Duration & Suspend Duration
 
@@ -167,16 +152,12 @@ This metric measures the time that the computer spends in shut-down or suspend o
 </tbody>
 </table>
 
- 
-
 **Detailed Sub-metrics**
 
 When the metric is expanded, a list of shutdown or suspend sub-phases is presented.
 
-**Note**  
-The durations of the sub-phases do not necessarily add up to the overall duration.
-
- 
+> [!NOTE]
+> The durations of the sub-phases do not necessarily add up to the overall duration.
 
 **Typical Influencing Factors**
 
@@ -186,6 +167,7 @@ This metric is an overall metric for the system shutdown/suspend. It can be affe
 
 Expand this metric to see the sub-metrics, which provide more information on individual sub-phases of shutdown/suspend. Examine individual sub-phase metrics and issues to find potential delay contributors.
 
+
 ### <a href="" id="oo-user-session-shutdown-duration"></a>User Session Shutdown Duration
 
 **Relevant Assessments:**
@@ -194,16 +176,15 @@ Expand this metric to see the sub-metrics, which provide more information on ind
 
 This metric measures the time that the computer spends shutting down the user session. This phase includes shutting down user-session processes, logging the user off, and notifying subscribers to Winlogon notifications. When the metric is expanded, a list of shutdown or suspend sub-phases is presented.
 
-**Note**  
-The durations of the sub-phases do not necessarily add up to the overall duration.
-
- 
+> [!NOTE]
+> The durations of the sub-phases do not necessarily add up to the overall duration.
 
 This metric is an overall metric for the system shutdown. It can be affected by any software components that are running on the shutdown path.
 
 **Analysis and Remediation Steps**
 
 Expand this metric to see the sub-metrics that provide more information on individual sub-phases of shutdown. Examine individual sub-phase metrics and issues to find potential delay contributors.
+
 
 ### <a href="" id="oo-shutdown-processes"></a>Shutdown Processes Duration
 
@@ -215,10 +196,8 @@ Expand this metric to see the sub-metrics that provide more information on indiv
 
 When the assessment initiates the user session shutdown, each UI thread in every Graphical User Interface (GUI) application is sent a WM\_QUERYENDSESSION message. After Windows receives a response to the WM\_QUERYENDSESSION message, Windows sends the WM\_ENDSESSION to the same threads. If after 5 seconds any application has not responded to these notifications, Windows terminates the application. Any application can delay system shutdown by not promptly responding to the messages.
 
-**Note**  
-If a user initiates the shutdown, a user dialog box displays after the timeout expires. This dialog shows information about the application that is blocking the shutdown, and allows the user to **Force** or **Cancel** the shutdown.
-
- 
+> [!NOTE]
+> If a user initiates the shutdown, a user dialog box displays after the timeout expires. This dialog shows information about the application that is blocking the shutdown, and allows the user to **Force** or **Cancel** the shutdown.
 
 This metric measures the time that the computer spends shutting down all processes in the user session.
 
@@ -236,10 +215,8 @@ This metric captures the cumulative time of all running processes that have UI t
 
 Each process that has a UI thread can delay system shutdown by delaying its response to the WM\_QUERYENDSESSION message or WM\_ENDSESSION message.
 
-**Note**  
-To impact this metric, a process must be running. Because this assessment reboots before it collects data for analysis, the running processes are almost exclusively from startup applications or scheduled tasks.
-
- 
+> [!NOTE]
+> To impact this metric, a process must be running. Because this assessment reboots before it collects data for analysis, the running processes are almost exclusively from startup applications or scheduled tasks.
 
 **Analysis and Remediation Steps**
 
@@ -254,6 +231,7 @@ Find the possible reasons that responses to WM\_QUERYENDSESSION message or WM\_E
 [MSDN: WM\_QUERYENDSESSION message](http://go.microsoft.com/fwlink/?LinkId=247501)
 
 [MSDN: WM\_ENDSESSION message](http://go.microsoft.com/fwlink/?LinkId=247502)
+
 
 ### <a href="" id="oo-winlogon-suspend"></a>Winlogon Suspend Duration & Winlogon Notifications Duration
 
@@ -299,6 +277,7 @@ Examine times of individual subscriber operations. Specific issues are usually g
 
 [MSDN: Winlogon Notification Events](http://go.microsoft.com/fwlink/?LinkId=247505)
 
+
 ### <a href="" id="oo-suspend-processes-duration"></a>Suspend Processes Duration
 
 **Most Applicable to:** Application developers
@@ -340,10 +319,8 @@ When the metric is expanded, a more detailed phase view is presented, with a set
 
 -   The time that this particular process took during this phase.
 
-**Note**  
-If an application has more than one window, the same process can receive more than one notification.
-
- 
+> [!NOTE]
+> If an application has more than one window, the same process can receive more than one notification.
 
 **Typical Influencing Factors**
 
@@ -360,6 +337,7 @@ Troubleshooting and fixing issues with that significantly impact the startup pat
 **Additional Information**
 
 [MSDN: PBT\_APMSUSPEND event](http://go.microsoft.com/fwlink/?LinkId=247503)
+
 
 ### <a href="" id="oo-suspend-services-duration"></a>Suspend Services Duration
 
@@ -393,6 +371,7 @@ Identify a service that significantly impacts this metric. Longer delays in serv
 
 [MSDN: OnNow/ACPI Support](http://go.microsoft.com/fwlink/?LinkId=247504)
 
+
 ### <a href="" id="oo-superfetch-prepare-memory-duration"></a>Superfetch Prepare Memory Duration
 
 **Most Applicable to:** Application developers, Windows service developers
@@ -414,6 +393,7 @@ During this phase, the Superfetch service accesses data that is read during star
 **Analysis and Remediation Steps**
 
 This phase requires advanced analysis that is not included in this document.
+
 
 ### <a href="" id="oo-query-devices-duration"></a>Query Devices Duration
 
@@ -443,14 +423,13 @@ This metric captures the cumulative time that all drivers take to respond to pow
 
 You can identify a driver or drivers that significantly impact this metric by looking at the sub-metrics. Longer delays in the driver response durations usually produce issues that are specific to a given driver. When such an issue is generated, follow the link inside the issue to see advanced issue details. When an issue is not generated, subsequent analysis in WPA is required; this is beyond the scope of this document. See [Best Practices for Time-Critical Tasks](#fs-analysis) for a list of common best practices.
 
-**Note**  
-If a driver owns a power policy for a device, it generates a Device Power IRP in response to receiving a System Power IRP. Drivers should not wait to complete the System IRP until the Device IRP is completed because that wait can prevent other devices from receiving their System IRPs. This series of waits cause serialization delays and increases the overall suspend time.
-
- 
+> [!NOTE]
+> If a driver owns a power policy for a device, it generates a Device Power IRP in response to receiving a System Power IRP. Drivers should not wait to complete the System IRP until the Device IRP is completed because that wait can prevent other devices from receiving their System IRPs. This series of waits cause serialization delays and increases the overall suspend time.
 
 **Additional Information**
 
 [MSDN: IRP\_MN\_QUERY\_POWER](http://go.microsoft.com/fwlink/?LinkId=247506)
+
 
 ### <a href="" id="oo-flush-storage-volumes-duration"></a>Flush Storage Volumes Duration
 
@@ -475,6 +454,7 @@ The time that this metric represents depends on the amount of data that needs to
 Identifying the processes that are responsible for this data requires advanced analysis that is beyond the scope of this document; however, any process that writes large amounts of data directly before shutdown are suspect.
 
 Examples are: an application that wrote a multi-megabyte data file by using cached I/O directly before exiting, or a service that modifies large amounts of file-mapped memory at shutdown time.
+
 
 ### <a href="" id="oo-suspend-devices-duration"></a>Suspend Devices Duration
 
@@ -502,10 +482,8 @@ When the metric is expanded, a more detailed phase view is presented that includ
 
 This metric captures the cumulative time that all drivers take to respond to a power query. This metric can be affected by a single driver that takes too long to respond in addition to the cumulative time of all responses.
 
-**Note**  
-If a driver owns a power policy for a device, it generates a Device Power IRP in response to receiving a System Power IRP. Drivers should not wait to complete the System IRP until the Device IRP is completed because that wait can prevent other devices from receiving their System IRPs. This series of waits cause serialization delays and increases the overall suspend time.
-
- 
+> [!NOTE]
+> If a driver owns a power policy for a device, it generates a Device Power IRP in response to receiving a System Power IRP. Drivers should not wait to complete the System IRP until the Device IRP is completed because that wait can prevent other devices from receiving their System IRPs. This series of waits cause serialization delays and increases the overall suspend time.
 
 **Analysis and Remediation Steps**
 
@@ -514,6 +492,7 @@ You can identify a driver or drivers that significantly impact this metric by lo
 **Additional Information**
 
 [MSDN: IRP\_MN\_SET\_POWER](http://go.microsoft.com/fwlink/?LinkId=247508)
+
 
 ### <a href="" id="oo-hiberfile-write-duration"></a>Hiberfile Write Duration
 
@@ -537,14 +516,13 @@ The time it takes to write the hiberfile is directly proportional to the amount 
 
 A driver that uses large amounts of memory can influence this metric by having the memory manager write data into the hiberfile. Or, a startup application can cause large amounts of data to be read on the resume path. In these cases, the Superfetch service ensures that data is included into the hiberfile to avoid slow random faulting on the resume path.
 
-**Note**  
-Hard drive physical performance characteristics, such as sequential write throughput, also affects this metric.
-
- 
+> [!NOTE]
+> Hard drive physical performance characteristics, such as sequential write throughput, also affects this metric.
 
 **Analysis and Remediation Steps**
 
 Identifying the specific components that contribute to the longer hiberfile write durations requires detailed memory analysis and is beyond the scope of this document. However, each running driver and service can contribute to this metric by retaining large memory allocations. The number and footprint of the startup applications, and of other components that read data during startup, can also influence this metric.
+
 
 ### <a href="" id="oo-bios-initialization-duration"></a>BIOS Initialization Duration
 
@@ -562,10 +540,8 @@ Identifying the specific components that contribute to the longer hiberfile writ
 
 This metric measures the time that the platform firmware spends identifying and initializing hardware devices and running a power-on self-test (POST).
 
-**Note**  
-BIOS initialization happens before the operating system receives control. The assessment cannot thoroughly inspect the phase and can only report on its duration.
-
- 
+> [!NOTE]
+> BIOS initialization happens before the operating system receives control. The assessment cannot thoroughly inspect the phase and can only report on its duration.
 
 **Detailed Sub-metrics**
 
@@ -578,6 +554,7 @@ The boot order that is set for the system can be a significant source of delay d
 **Analysis and Remediation Steps**
 
 No additional information is captured for the BIOS phase. Typical influencing factors such as enabled PXE boot should be checked. The BIOS manufacturer should be consulted when you need to triage or alter these settings. A deeper investigation of the BIOS Initialization phase is beyond the scope of this document.
+
 
 ### <a href="" id="oo-total-boot"></a>Total Boot \[Excluding BIOS\] Duration & Total Resume \[Excluding BIOS\] Duration
 
@@ -597,10 +574,8 @@ This metric measures the time that the computer spends starting up. This metric 
 
 When the metric is expanded, a list of boot/resume sub-phases is presented.
 
-**Note**  
-Durations of the sub-phases do not necessarily equal the overall duration.
-
- 
+> [!NOTE]
+> Durations of the sub-phases do not necessarily equal the overall duration.
 
 **Typical Influencing Factors**
 
@@ -609,6 +584,7 @@ This metric is an overall metric for system boot/resume, and it can be affected 
 **Analysis and Remediation Steps**
 
 Expand this metric to see the sub-metrics that provide more information on individual sub-phases. Examine individual sub-phase metrics and issues to find potential delay contributors.
+
 
 ### <a href="" id="oo-main-path"></a>Main Path Boot Duration & Main Path Resume Duration
 
@@ -628,10 +604,8 @@ This metric measures the time from when the computer begins start-up until the u
 
 When the metric is expanded, a list of sub-phases (excluding the Post On/Off phase) is presented.
 
-**Note**  
-Durations of the sub-phases do not necessarily equal the overall duration.
-
- 
+> [!NOTE]
+> Durations of the sub-phases do not necessarily equal the overall duration.
 
 **Typical Influencing Factors**
 
@@ -640,6 +614,7 @@ This metric is an overall metric for boot/resume to a visible Desktop. It can be
 **Analysis and Remediation Steps**
 
 Expand this metric to see the sub-metrics that provide more information on individual sub-phases. Examine individual sub-phase metrics and issues to find potential delay contributors.
+
 
 ### <a href="" id="oo-boot-manager"></a>Boot Manager
 
@@ -663,6 +638,7 @@ This metric can be affected by BitLocker operations, especially if a PIN is requ
 
 Use a BitLocker unlock method that does not require manual PIN entry.
 
+
 ### <a href="" id="oo-hiberfile-read-duration"></a>Hiberfile Read Duration
 
 **Most Applicable to:** Application developers, Windows service developers, driver developers
@@ -683,19 +659,16 @@ When the metric is expanded, the size of the hiberfile (in Kilobytes) is shown.
 
 The time that it takes to read the hiberfile is directly proportional to the amount of data that must be read. This data consists of data in memory that is used by the operating system, drivers, and services, in addition to data that the system uses for system resume (identified during the Superfetch Prepare Memory phase of shutdown/suspend).
 
-**Note**  
-Hard drive physical performance characteristics, such as sequential read throughput, also affects this metric.
-
- 
+> [!NOTE]
+> Hard drive physical performance characteristics, such as sequential read throughput, also affects this metric.
 
 **Analysis and Remediation Steps**
 
 Identifying the specific components that contribute to longer hiberfile read durations requires detailed memory analysis and is beyond the scope of this document.
 
-**Note**  
-Each running driver and service can contribute to this metric by retaining large memory allocations. The number and footprint of startup applications and other components that read data during startup also influence this metric.
+> [!NOTE]
+> Each running driver and service can contribute to this metric by retaining large memory allocations. The number and footprint of startup applications and other components that read data during startup also influence this metric.
 
- 
 
 ### <a href="" id="oo-resume-devices-duration"></a>Resume Devices Duration
 
@@ -711,10 +684,8 @@ Each running driver and service can contribute to this metric by retaining large
 
 During shutdown/suspend, every device driver is sent a power (IRP\_MJ\_POWER) IRP that has an IRP\_MN\_SET\_POWER minor code and working power state. Device drivers subsequently send Device Power IRPs to corresponding devices. This metric measures the time for all drivers to process the set power IRP.
 
-**Note**  
-Drivers should not retain the System Power IRP during this phase. Each driver can delay system startup by not promptly handling the system power IRP.
-
- 
+> [!NOTE]
+> Drivers should not retain the System Power IRP during this phase. Each driver can delay system startup by not promptly handling the system power IRP.
 
 **Detailed Sub-metrics**
 
@@ -724,10 +695,8 @@ When the metric is expanded, a more detailed phase view is presented with a list
 
 This metric captures the cumulative time that all drivers take to respond to an IRP\_MN\_SET\_POWER power request. This metric can be affected by a single driver that takes too much time, in addition to the cumulative time of all driver responses.
 
-**Note**  
-If a driver owns a power policy for a device, it generates a Device Power IRP in response to receiving a System Power IRP. Drivers should not wait to complete the System IRP until the Device IRP is completed because that wait can prevent other devices from receiving their System IRPs. This series of waits cause serialization delays and increases the overall suspend time.
-
- 
+> [!NOTE]
+> If a driver owns a power policy for a device, it generates a Device Power IRP in response to receiving a System Power IRP. Drivers should not wait to complete the System IRP until the Device IRP is completed because that wait can prevent other devices from receiving their System IRPs. This series of waits cause serialization delays and increases the overall suspend time.
 
 **Analysis and Remediation Steps**
 
@@ -736,6 +705,7 @@ You can identify a driver or drivers that significantly impact this metric by lo
 **Additional Information**
 
 [MSDN: IRP\_MN\_SET\_POWER](http://go.microsoft.com/fwlink/?LinkId=247508)
+
 
 ### <a href="" id="oo-operating-system-selection-menu-duration"></a>Operating System Selection Menu Duration
 
@@ -751,14 +721,13 @@ This metric measures the time that it takes for the operating system selection m
 
 This metric is unaffected by system behavior. This metric is reported only on systems that have multiple operating systems installed, and it will always report 30 seconds if no user interaction is performed.
 
-**Note**  
-Although system behavior does not affect the duration of this metric, the boot process has many asynchronous processes that can run during this time. These processes can affect the results for activities that occur after the default selection is made, because some of the work that is normally performed during these times might already be completed.
-
- 
+> [!NOTE]
+> Although system behavior does not affect the duration of this metric, the boot process has many asynchronous processes that can run during this time. These processes can affect the results for activities that occur after the default selection is made, because some of the work that is normally performed during these times might already be completed.
 
 **Analysis and Remediation Steps**
 
 Remove all installed operating systems other except for the one that is being analyzed. To view the list of currently installed operating systems (including settings that affect this menu), run **msconfig.exe** at a command prompt and then choose the **Boot** tab.
+
 
 ### <a href="" id="oo-winlogon-resume-duration"></a>Winlogon Resume Duration
 
@@ -796,6 +765,7 @@ Examine times of individual subscriber operations. Specific issues are usually g
 
 [Winlogon Notification Events](http://go.microsoft.com/fwlink/?LinkId=247505)
 
+
 ### <a href="" id="oo-explorer-initialization-duration"></a>Explorer Initialization Duration
 
 **Most Applicable to:** Startup application developers
@@ -816,6 +786,7 @@ Specific issues are usually generated for longer durations of the Explorer Initi
 
 Investigating specific issues during Explorer Initialization is beyond the scope of this document. For a list of common best practices, see [Best Practices for Time-Critical Tasks](#fs-analysis).
 
+
 ### <a href="" id="oo-post-on-off-duration"></a>Post On/Off Duration
 
 **Most Applicable to:** Application developers
@@ -832,10 +803,8 @@ Investigating specific issues during Explorer Initialization is beyond the scope
 
 This metric measures the time from the completion of Post On/Off to the system being reasonably idle and responsive to user input. The goal of this phase is to bind and quantify background processing that continues after the Start Screen displays. This metric measures the duration of the Post On/Off phase, which represents the amount of time that is required for the system to accumulate 5 seconds of idle time. This time is accumulated by checking the CPU and storage utilization in 500ms time windows. If the cumulative time of both CPU and storage utilization is below 20%, the idle time of this window (500ms – max \[CPU time, Disk time\] in the window) is added to the total idle time until 5 seconds is reached. The metric reports this duration minus the 5 seconds of collected idle time.
 
-**Note**  
-Low-priority CPU and storage utilization times are ignored for these calculations.
-
- 
+> [!NOTE]
+> Low-priority CPU and storage utilization times are ignored for these calculations.
 
 Any software component that is running during this phase can affect the phase duration by performing disk I/O or computation.
 
@@ -857,8 +826,8 @@ To address the issue for the Boot Performance (Fast Startup) and Boot Performanc
 
 Avoid using managed code (CLR-based) startup applications because their initialization can activate the resource-costly initialization of .NET framework. This will further impact Post On/Off phase times and degrade user responsiveness.
 
-## <a href="" id="fs-issues"></a>Issues
 
+## <a href="" id="fs-issues"></a>Issues
 
 The On/Off Transition Performance assessments perform advanced issue analysis and provide links to WPA to troubleshoot the issues that the assessment has identified. When WPA opens, additional details about disk activity or CPU activity might be available, depending on the type of issue. This section describes common investigative techniques that you can use to analyze performance issues.
 
@@ -870,10 +839,8 @@ For example, consider the [Shutdown Processes Duration](#oo-shutdown-processes) 
 
 Additional columns, such as the **Detail** column, provide more details for the sub-metrics. In **User Session Shutdown Processes**, the **Detail** column shows a PID.
 
-**Note**  
-In the default view, the **Detail** column might contain the value “Various” because PIDs cannot be aggregated across iterations. Expand iterations to see individual PIDs.
-
- 
+> [!NOTE]
+> In the default view, the **Detail** column might contain the value “Various” because PIDs cannot be aggregated across iterations. Expand iterations to see individual PIDs.
 
 Windows Assessment Console allows you to sort the sub-metrics list by any data column (except for the top level Fast Startup phase lists, which are sorted by phase order during shutdown/boot).
 
@@ -889,6 +856,7 @@ View the detailed resource utilization metrics for each process during this phas
 
 For more information about in-depth analysis issues and recommendations, see [Common In-Depth Analysis Issues](common-in-depth-analysis-issues.md).
 
+
 ### The assessment reports an exit code of 0x80050006
 
 This error occurs when maintenance tasks have been registered on the PC but have not completed before the assessment run. This prevents the assessment from running, as maintenance tasks often impact assessment metrics.
@@ -901,8 +869,8 @@ To resolve this issue, do one of the following:
 
 2.  Disable regular and idle maintenance tasks, and stop all maintenance tasks before running the assessment.
 
-## <a href="" id="fs-analysis"></a>Best Practices for Time-Critical Tasks
 
+## <a href="" id="fs-analysis"></a>Best Practices for Time-Critical Tasks
 
 If you don’t want a task to be delayed, ensure it does not do anything which takes a long time. Below are some things to avoid.
 
@@ -926,8 +894,8 @@ If you don’t want a task to be delayed, ensure it does not do anything which t
 
 -   Avoid calling transactional APIs such as TxF APIs as they commonly perform a number of costly operations for each API call. These APIs obtain reliability at the cost of performance, so these APIs should not be used during time-critical tasks.
 
-## Related topics
 
+## Related topics
 
 [Assessments](assessments.md)
 
@@ -936,14 +904,4 @@ If you don’t want a task to be delayed, ensure it does not do anything which t
 [Automate reboots before you run an assessment](automate-reboots-before-you-run-an-assessment.md)
 
 [Windows Assessment Toolkit](index.md)
-
- 
-
- 
-
-
-
-
-
-
 
