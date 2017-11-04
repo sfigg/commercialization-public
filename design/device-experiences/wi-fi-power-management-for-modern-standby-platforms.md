@@ -249,14 +249,19 @@ When the hardware platform enters modern standby, Windows will transition the Wi
 5.  If the Wi-Fi device is outside the SoC and attached via an SDIO bus:
 
     1.  Configure the Wi-Fi device to wake the SoC using the out-of-band GPIO wake interrupt. (For more information, see [Supported hardware power configurations](#supportedhw).)
+
     2.  Mask the Wi-Fi device interrupts and cancel all related timers. The Wi-Fi miniport driver must set the [**SDP\_FUNCTION\_INT\_ENABLE**](https://msdn.microsoft.com/library/windows/hardware/ff537927) property to FALSE by calling the [**SdBusSubmitRequest**](https://msdn.microsoft.com/library/windows/hardware/ff537909) routine.
+
     3.  Instruct the SD bus driver to stop forwarding Wi-Fi device interrupts. The Wi-Fi miniport driver must set the [**SDP\_SET\_CARD\_INTERRUPT\_FORWARD**](https://msdn.microsoft.com/library/windows/hardware/ff537927) property to FALSE by calling the **SdBusSubmitRequest** routine.
+
     4.  Complete the [OID\_PNP\_SET\_POWER](https://msdn.microsoft.com/library/windows/hardware/ff569780) request for the NdisDeviceStateD2 state.
 
 6.  If the Wi-Fi device is outside the SoC and attached via the PCIe bus:
 
     1.  Configure the Wi-Fi device to wake the system in accordance with the PCIe standard (using PM\_PME messages; this is discussed in further detail in the following section.)
+
     2.  Mask the Wi-Fi device interrupts. The Wi-Fi miniport driver must disconnect interrupts by calling the [**IoDisconnectInterruptEx**](https://msdn.microsoft.com/library/windows/hardware/ff549093) routine.
+
     3.  Complete the [OID\_PNP\_SET\_POWER](https://msdn.microsoft.com/library/windows/hardware/ff569780) request for the NdisDeviceStateD3 state.
 
 When the Wi-Fi device is in the connected-sleep mode, the device is expected to maintain its connection to the associated Wi-Fi network, to check for matching wake patterns, and to wake the SoC when network state changes occur. For example, the Wi-Fi device must be able to wake the SoC if the access point is suddenly disassociated.
@@ -300,6 +305,7 @@ When the wait-wake IRP is completed, NDIS will first send a D0 IRP (an [**IRP\_M
 3.  If the Wi-Fi device is external to the SoC and connected via SDIO, the Wi-Fi miniport driver must:
 
     1.  Instruct the SD bus driver to forward interrupts to the Wi-Fi miniport driver. The Wi-Fi miniport driver must set the [**SDP\_SET\_CARD\_INTERRUPT\_FORWARD**](https://msdn.microsoft.com/library/windows/hardware/ff537927) property to TRUE by calling the [**SdBusSubmitRequest**](https://msdn.microsoft.com/library/windows/hardware/ff537909) routine.
+
     2.  Mask the Wi-Fi device interrupts. The Wi-Fi miniport driver must set the [**SDP\_FUNCTION\_INT\_ENABLE**](https://msdn.microsoft.com/library/windows/hardware/ff537927) property to TRUE by calling the **SdBusSubmitRequest** routine.
 
 4.  Complete the **IRP\_MN\_SET\_POWER** request.
@@ -357,13 +363,13 @@ The following list of members summarizes the D0 packet-coalescing capabilities t
         </div>
     </dd>
     <dt style="margin: 0 0 0 1.3em;">
-        <strong>EnabledFilterTypes</strong>, minimum value
+        <strong>EnabledFilterTypes</strong>, minimum value:
     </dt>
     <dd>
         <p style="margin: .5em 0 1em 1.3em;">NDIS_RECEIVE_FILTER_PACKET_COALESCING_FILTERS_ENABLED</p>
     </dd>
     <dt style="margin: 0 0 0 1.3em;">
-        <strong>SupportedFilterTests</strong>, minimum value
+        <strong>SupportedFilterTests</strong>, minimum values:
     </dt>
     <dd>
         <p style="margin: .5em 0 1em 1.3em;">NDIS_RECEIVE_FILTER_TEST_HEADER_FIELD_EQUAL_SUPPORTED
@@ -371,7 +377,7 @@ The following list of members summarizes the D0 packet-coalescing capabilities t
         <br/>NDIS_RECEIVE_FILTER_TEST_HEADER_FIELD_MASK_EQUAL_SUPPORTED</p>
     </dd>
     <dt style="margin: 0 0 0 1.3em;">
-        <strong>SupportedHeaders</strong>, minimum value
+        <strong>SupportedHeaders</strong>, minimum values:
     </dt>
     <dd>
         <p style="margin: .5em 0 1em 1.3em;">NDIS_RECEIVE_FILTER_MAC_HEADER_SUPPORTED
@@ -381,7 +387,7 @@ The following list of members summarizes the D0 packet-coalescing capabilities t
         <br/>NDIS_RECEIVE_FILTER_UDP_HEADER_SUPPORTED</p>
     </dd>
     <dt style="margin: 0 0 0 1.3em;">
-        <strong>SupportedMacHeaderFields</strong>, minimum value
+        <strong>SupportedMacHeaderFields</strong>, minimum values:
     </dt>
     <dd>
         <p style="margin: .5em 0 1em 1.3em;">NDIS_RECEIVE_FILTER_MAC_HEADER_DEST_ADDR_SUPPORTED
@@ -389,7 +395,7 @@ The following list of members summarizes the D0 packet-coalescing capabilities t
         <br/>NDIS_RECEIVE_FILTER_MAC_HEADER_PACKET_TYPE_SUPPORTED</p>
     </dd>
     <dt style="margin: 0 0 0 1.3em;">
-        <strong>SupportedARPHeaderFields</strong>, minimum value
+        <strong>SupportedARPHeaderFields</strong>, minimum values:
     </dt>
     <dd>
         <p style="margin: .5em 0 1em 1.3em;">NDIS_RECEIVE_FILTER_ARP_HEADER_OPERATION_SUPPORTED
@@ -397,31 +403,31 @@ The following list of members summarizes the D0 packet-coalescing capabilities t
         <br/>NDIS_RECEIVE_FILTER_ARP_HEADER_TPA_SUPPORTED</p>
     </dd>
     <dt style="margin: 0 0 0 1.3em;">
-        <strong>SupportedIPv4HeaderFields</strong>, minimum value
+        <strong>SupportedIPv4HeaderFields</strong>, minimum value:
     </dt>
     <dd>
         <p style="margin: .5em 0 1em 1.3em;">NDIS_RECEIVE_FILTER_IPV4_HEADER_PROTOCOL_SUPPORTED</p>
     </dd>
     <dt style="margin: 0 0 0 1.3em;">
-        <strong>SupportedIPv6HeaderFields</strong>, minimum value
+        <strong>SupportedIPv6HeaderFields</strong>, minimum value:
     </dt>
     <dd>
         <p style="margin: .5em 0 1em 1.3em;">NDIS_RECEIVE_FILTER_IPV6_HEADER_PROTOCOL_SUPPORTED</p>
     </dd>
     <dt style="margin: 0 0 0 1.3em;">
-        <strong>SupportedUdpHeaderFields</strong>, minimum value
+        <strong>SupportedUdpHeaderFields</strong>, minimum value:
     </dt>
     <dd>
         <p style="margin: .5em 0 1em 1.3em;">NDIS_RECEIVE_FILTER_UDP_HEADER_DEST_PORT_SUPPORTED</p>
     </dd>
     <dt style="margin: 0 0 0 1.3em;">
-        <strong>MaxFieldTestsPerPacketCoalescingFilter</strong>, minimum value
+        <strong>MaxFieldTestsPerPacketCoalescingFilter</strong>, minimum value:
     </dt>
     <dd>
         <p style="margin: .5em 0 1em 1.3em;">5</p>
     </dd>
     <dt style="margin: 0 0 0 1.3em;">
-        <strong>MaxPacketCoalescingFilters</strong>, minimum value
+        <strong>MaxPacketCoalescingFilters</strong>, minimum value:
     </dt>
     <dd>
         <p style="margin: .5em 0 1em 1.3em;">10</p>
@@ -502,6 +508,7 @@ The following figure shows the configuration of software and hardware components
 
 ![a wi-fi device that is connected via pcie](../images/wifi-2.png)
 
+
 ### Integrated into the SoC
 
 If the Wi-Fi device is integrated into the SoC, tight coupling between the Wi-Fi miniport driver and a proprietary SoC bus driver is required. The implementation of this driver is outside of the scope of this document. However, the Wi-Fi miniport driver must implement all of the features described in [Software power-management mechanisms](#software-power).
@@ -569,31 +576,49 @@ System integrators and SoC vendors should use the checklist below to verify that
 
 **Note**&nbsp;&nbsp;&nbsp;The [Windows Hardware Certification Kit](http://msdn.microsoft.com/library/windows/hardware/jj124227.aspx) includes an extensive set of Wi-Fi driver tests to help ensure the Wi-Fi device is compatible with Windows 8 and Windows 8.1. Wi-Fi device vendors and Wi-Fi miniport driver developers are encouraged to review the Windows Hardware Certification Kit tests and use them to validate their driver implementation as early as possible in the design cycle.
 
- 
 
 -   The Wi-Fi device vendor must develop a driver that does the following:
 
     -   Supports pattern-match wake.
+
     -   Supports power save mode.
+
     -   Supports radio on/off.
+
     -   Supports network list offload (NLO).
+
     -   Supports D0 packet coalescing.
+
     -   Supports wake-on-AP-disconnect and additional Wi-Fi wake triggers.
+
     -   Supports ARP/NS offload.
+
     -   Supports dynamic DTIM configuration.
+
     -   Passes all applicable networking tests in the Windows Hardware Certification Kit.
+
 -   If the Wi-Fi device is located outside of the SoC and attached via SDIO, the system integrator must develop the hardware and firmware for the Wi-Fi device to do the following:
 
     -   Route the Wi-Fi wake interrupt from the Wi-Fi device to an always-on GPIO pin on the SoC.
+
     -   Include the GPIOInt macro under the Wi-Fi device in the ACPI namespace with the Shared field set to ExclusiveAndWake.
+
     -   Include the \_S4W object under the Wi-Fi device in the ACPI namespace with a deepest wake state of 0x2 for D2. Specify as "Name(\_S4W, 2)".
+
     -   Include the \_S0W object under the Wi-Fi device in the ACPI namespace with a deepest wake state of 0x2 for D2. Specify as "Name(\_S0W, 2)".
+
     -   Route any power-enable or reset signal from a GPIO output pin on the SoC to the Wi-Fi device.
+
     -   Describe the optional power-enable or reset GPIO output pin in a GPIO operation region.
+
     -   Provide \_PS3 and \_PS0 control methods and/or \_PR*n* power resource references. These entries should be under the Wi-Fi device in the ACPI namespace.
+
     -   Implement the \_PS3 method or power resource methods to remove power from the Wi-Fi device.
+
     -   Implement the \_PS0 method or power resource methods to restore power to the Wi-Fi device.
+
     -   Include any device-specific power-on or reset sequencing timing in the implementation of the \_PS3 and \_PS0 methods. ACPI method execution can be delayed by using the Sleep method.
+
 -   If the Wi-Fi device is located outside of the SoC and attached via PCIe, the system integrator must develop the hardware and firmware for the Wi-Fi device to do the following:
 
     -   Include an \_OSC control method in the ACPI namespace to grant the operating system control over native PCIe features.
@@ -603,8 +628,13 @@ System integrators and SoC vendors should use the checklist below to verify that
 -   The system integrator must test and validate correct power management of the Wi-Fi device by doing the following:
 
     -   Verify that the average power consumption of the Wi-Fi device in radio-off mode is less than 1 milliwatt.
+
     -   Verify that the average power consumption of the Wi-Fi device is less than 10 milliwatts when the device is in connected-sleep (D2 for SDIO; D3 for PCIe) mode or connected-idle (D0) mode and is not actively transmitting any data.
+
     -   Verify that the Wi-Fi miniport correctly supports pattern-match wake and is capable of waking the SoC from its deepest idle state when a matching pattern is detected.
+
     -   Verify that the Wi-Fi device can wake the SoC from its deepest idle state when the device loses its connection to the associated access point.
+
     -   Verify that the Wi-Fi device does not generate spurious wakes to the SoC.
+
     -   Use the tests provided in the Windows Hardware Certification Kit to verify that the Wi-Fi device correctly implements network list offload (NLO), ARP/NS offload, and D0 packet coalescing.
