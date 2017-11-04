@@ -290,7 +290,6 @@ When the Wi-Fi device is in the connected-sleep mode, the device is expected to 
 ### <a href="" id="block-diagram"></a>
 
 The following figure shows the configuration of software and hardware components to support a Wi-Fi device that is external to the SoC and that communicates with the SoC through an SDIO bus.
-
 ![a wi-fi device that is connected via sdio](../images/wifi-1.png)
 
 
@@ -367,11 +366,81 @@ The Wi-Fi device and Wi-Fi miniport driver must support D0 packet coalescing, wh
 
 The following table summarizes the D0 packet-coalescing capabilities that the Wi-Fi device is required to support and the Wi-Fi miniport driver is required to report. The Wi-Fi miniport driver must specify these capabilities in the **NDIS\_RECEIVE\_FILTER\_CAPABILITIES** structure. Each row of the table shows the minimum value required for a particular member of this structure. NDIS will send [OID\_RECEIVE\_FILTER\_SET\_FILTER](https://msdn.microsoft.com/library/windows/hardware/ff569795) requests to the Wi-Fi miniport driver to set the packet-coalescing filters. The packet-coalescing filters indicate which packets are required to be batched in a coalescing buffer on the Wi-Fi device.
 
+<dl>
+    <dt style="margin: 0 0 0 1.3em;">
+        <strong>SupportedQueueProperties</strong>
+    </dt>
+    <dd>
+        <p style="margin: .5em 0 1em 1.3em;">NDIS_RECEIVE_FILTER_PACKET_COALESCING_SUPPORTED_ON_DEFAULT_QUEUE</p>
+        <div class="alert" style="margin: .5em 0 1em 1.3em;">
+            <strong>Note</strong>  This flag must always be present in the [<strong>HardwareReceiveFilterCapabilities</strong>](https://msdn.microsoft.com/library/windows/hardware/ff565924) to indicate the hardware capability. This flag must be present in the <strong>CurrentReceiveFilterCapabilities</strong> if and only if the [*PacketCoalescing](https://msdn.microsoft.com/library/windows/hardware/hh440217) advanced keyword is nonzero.
+        </div>
+    </dd>
+    <dt style="margin: 0 0 0 1.3em;">
+        <strong>EnabledFilterTypes</strong>
+    </dt>
+    <dd>
+        <p style="margin: .5em 0 1em 1.3em;">NDIS_RECEIVE_FILTER_PACKET_COALESCING_FILTERS_ENABLED</p>
+    </dd>
+    <dt style="margin: 0 0 0 1.3em;">
+        <strong>SupportedFilterTests</strong>
+    </dt>
+    <dd>
+        <p style="margin: .5em 0 1em 1.3em;">NDIS_RECEIVE_FILTER_TEST_HEADER_FIELD_EQUAL_SUPPORTED | NDIS_RECEIVE_FILTER_TEST_HEADER_FIELD_NOT_EQUAL_SUPPORTED | NDIS_RECEIVE_FILTER_TEST_HEADER_FIELD_MASK_EQUAL_SUPPORTED</p>
+    </dd>
+    <dt style="margin: 0 0 0 1.3em;">
+        <strong>SupportedHeaders</strong>
+    </dt>
+    <dd>
+        <p style="margin: .5em 0 1em 1.3em;">NDIS_RECEIVE_FILTER_MAC_HEADER_SUPPORTED | NDIS_RECEIVE_FILTER_ARP_HEADER_SUPPORTED | NDIS_RECEIVE_FILTER_IPV4_HEADER_SUPPORTED | NDIS_RECEIVE_FILTER_IPV6_HEADER_SUPPORTED | NDIS_RECEIVE_FILTER_UDP_HEADER_SUPPORTED</p>
+    </dd>
+    <dt style="margin: 0 0 0 1.3em;">
+        <strong>SupportedMacHeaderFields</strong>
+    </dt>
+    <dd>
+        <p style="margin: .5em 0 1em 1.3em;">NDIS_RECEIVE_FILTER_MAC_HEADER_DEST_ADDR_SUPPORTED | NDIS_RECEIVE_FILTER_MAC_HEADER_PROTOCOL_SUPPORTED | NDIS_RECEIVE_FILTER_MAC_HEADER_PACKET_TYPE_SUPPORTED</p>
+    </dd>
+    <dt style="margin: 0 0 0 1.3em;">
+        <strong>SupportedARPHeaderFields</strong>
+    </dt>
+    <dd>
+        <p style="margin: .5em 0 1em 1.3em;">NDIS_RECEIVE_FILTER_ARP_HEADER_OPERATION_SUPPORTED | NDIS_RECEIVE_FILTER_ARP_HEADER_SPA_SUPPORTED | NDIS_RECEIVE_FILTER_ARP_HEADER_TPA_SUPPORTED</p>
+    </dd>
+    <dt style="margin: 0 0 0 1.3em;">
+        <strong>SupportedIPv4HeaderFields</strong>
+    </dt>
+    <dd>
+        <p style="margin: .5em 0 1em 1.3em;">NDIS_RECEIVE_FILTER_IPV4_HEADER_PROTOCOL_SUPPORTED</p>
+    </dd>
+    <dt style="margin: 0 0 0 1.3em;">
+        <strong>SupportedIPv6HeaderFields</strong>
+    </dt>
+    <dd>
+        <p style="margin: .5em 0 1em 1.3em;">NDIS_RECEIVE_FILTER_IPV6_HEADER_PROTOCOL_SUPPORTED</p>
+    </dd>
+    <dt style="margin: 0 0 0 1.3em;">
+        <strong>SupportedUdpHeaderFields</strong>
+    </dt>
+    <dd>
+        <p style="margin: .5em 0 1em 1.3em;">NDIS_RECEIVE_FILTER_UDP_HEADER_DEST_PORT_SUPPORTED</p>
+    </dd>
+    <dt style="margin: 0 0 0 1.3em;">
+        <strong>MaxFieldTestsPerPacketCoalescingFilter</strong>
+    </dt>
+    <dd>
+        <p style="margin: .5em 0 1em 1.3em;">5</p>
+    </dd>
+    <dt style="margin: 0 0 0 1.3em;">
+        <strong>MaxPacketCoalescingFilters</strong>
+    </dt>
+    <dd>
+        <p style="margin: .5em 0 1em 1.3em;">10</p>
+    </dd>
+</dl>
+
+
+
 <table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
 <thead>
 <tr class="header">
 <th>Member</th>
