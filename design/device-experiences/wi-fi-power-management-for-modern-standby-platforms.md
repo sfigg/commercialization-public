@@ -57,131 +57,73 @@ The Wi-Fi device must support several power-management modes. Each mode is a com
         <em>Active</em>
     </dt>
     <dd>
-        <p style="margin: .5em 0 1em 1.5em;">The Wi-Fi device is connected to the network and is actively transmitting data.</p>
-        <p style="margin: .5em 0 1em 1.5em;">Transition mechanism: The Wi-Fi device hardware autonomously transitions from connected-idle mode to active mode.</p>
+        <p style="margin: .5em 0 1em 1.3em;">The Wi-Fi device is connected to the network and is actively transmitting data.</p>
+        <p style="margin: .5em 0 .5em 1.3em;">Transition mechanism: The Wi-Fi device hardware autonomously transitions from connected-idle mode to active mode.</p>
     </dd>
     <dt style="margin: 0 0 0 1.3em;">
         <em>Connected idle</em>
     </dt>
     <dd>
-        <p style="margin: .5em 0 1em 1.5em;">The Wi-Fi device is connected to the network, but is not actively transmitting data.</p>
-        <p style="margin: .5em 0 .5em 1.5em;">Transition mechanism:</p>
+        <p style="margin: .5em 0 1em 1.3em;">The Wi-Fi device is connected to the network, but is not actively transmitting data.</p>
+        <p style="margin: .5em 0 .5em 1.3em;">Transition mechanism:</p>
         <ul>
-            <li style="margin: .5em 0 1em 1.5em;">The Wi-Fi device hardware autonomously transitions from connected-idle mode to active mode.</li>
-            <li style="margin: .5em 0 1em 1.5em;">The power consumption of the device in the active mode will be a factor of the wireless technology (that is, 802.11a/b/g/n), distance to the access point, quantity of data transmitted, etc.</li>
+            <li style="margin: .5em 0 1em 1.3em;">The Wi-Fi device hardware autonomously transitions from connected-idle mode to active mode.</li>
+            <li style="margin: .5em 0 1em 1.3em;">The power consumption of the device in the active mode will be a factor of the wireless technology (that is, 802.11a/b/g/n), distance to the access point, quantity of data transmitted, etc.</li>
         </ul>
     </dd>
     <dt style="margin: 0 0 0 1.3em;">
         <em>Connected sleep</em>
     </dt>
     <dd>
-        <p style="margin: .5em 0 1em 1.5em;">The Wi-Fi device is connected to the access point, but the remainder of the platform is in a very low-power state. Pattern-match wake is enabled so that the Wi-Fi device wakes the SoC on a specific set of incoming network packets.</p>
-        <p style="margin: .5em 0 .5em 1.5em;">Transition mechanism:</p>
+        <p style="margin: .5em 0 1em 1.3em;">The Wi-Fi device is connected to the access point, but the remainder of the platform is in a very low-power state. Pattern-match wake is enabled so that the Wi-Fi device wakes the SoC on a specific set of incoming network packets.</p>
+        <p style="margin: .5em 0 .5em 1.3em;">Transition mechanism:</p>
         <ul>
-            <li style="margin: .5em 0 1em 1.5em;">Before the Wi-Fi device leaves D0, NDIS will send an [OID_PM_ADD_WOL_PATTERN](https://msdn.microsoft.com/library/windows/hardware/ff569764) request to instruct the Wi-Fi miniport driver to add wake-on-LAN patterns.</li>
-            <li style="margin: .5em 0 1em 1.5em;">To instruct the Wi-Fi miniport driver to enable pattern-match wake, NDIS will send an [OID_PM_PARAMETERS](https://msdn.microsoft.com/library/windows/hardware/ff569768) request.</li>
-            <li style="margin: .5em 0 1em 1.5em;">NDIS will send an [OID_PNP_SET_POWER](https://msdn.microsoft.com/library/windows/hardware/ff569780) request with an [<strong>NDIS_DEVICE_POWER_STATE</strong>](https://msdn.microsoft.com/library/windows/hardware/gg602135) value of NdisDeviceStateD2 (for SDIO) or NdisDeviceStateD3 (for PCIe).</li>
+            <li style="margin: .5em 0 1em 1.3em;">Before the Wi-Fi device leaves D0, NDIS will send an [OID_PM_ADD_WOL_PATTERN](https://msdn.microsoft.com/library/windows/hardware/ff569764) request to instruct the Wi-Fi miniport driver to add wake-on-LAN patterns.</li>
+            <li style="margin: .5em 0 1em 1.3em;">To instruct the Wi-Fi miniport driver to enable pattern-match wake, NDIS will send an [OID_PM_PARAMETERS](https://msdn.microsoft.com/library/windows/hardware/ff569768) request.</li>
+            <li style="margin: .5em 0 1em 1.3em;">NDIS will send an [OID_PNP_SET_POWER](https://msdn.microsoft.com/library/windows/hardware/ff569780) request with an [<strong>NDIS_DEVICE_POWER_STATE</strong>](https://msdn.microsoft.com/library/windows/hardware/gg602135) value of NdisDeviceStateD2 (for SDIO) or NdisDeviceStateD3 (for PCIe).</li>
         </ul>
     </dd>
     <dt style="margin: 0 0 0 1.3em;">
         <em>Disconnected sleep</em>
     </dt>
     <dd>
-        <p style="margin: .5em 0 1em 1.5em;">The Wi-Fi device is powered but is not connected to an access point, because no preferred access point is within range. The remainder of the platform is in a very low-power state. Pattern-match wake is enabled and the Network Offload List is plumbed to the Wi-Fi device. The Wi-Fi device uses the Network Offload List to periodically scan for preferred networks to connect to.</p>
+        <p style="margin: .5em 0 1em 1.3em;">The Wi-Fi device is powered but is not connected to an access point, because no preferred access point is within range. The remainder of the platform is in a very low-power state. Pattern-match wake is enabled and the Network Offload List is plumbed to the Wi-Fi device. The Wi-Fi device uses the Network Offload List to periodically scan for preferred networks to connect to.</p>
         <p style="margin: .5em 0 .5em 1.5em;">Transition mechanism:</p>
         <ul>
-            <li style="margin: .5em 0 1em 1.5em;">The Wi-Fi device uses the [network offload list](https://msdn.microsoft.com/library/windows/hardware/hh451787) to periodically scan for preferred networks to connect to.</li>
-            <li style="margin: .5em 0 1em 1.5em;">If a matching network is found during these periodic scans, the Wi-Fi device will wake the SoC.</li>
+            <li style="margin: .5em 0 1em 1.3em;">The Wi-Fi device uses the [network offload list](https://msdn.microsoft.com/library/windows/hardware/hh451787) to periodically scan for preferred networks to connect to.</li>
+            <li style="margin: .5em 0 1em 1.3em;">If a matching network is found during these periodic scans, the Wi-Fi device will wake the SoC.</li>
         </ul>
     </dd>
     <dt style="margin: 0 0 0 1.3em;">
         <em>Radio off</em>
     </dt>
     <dd>
-        <p style="margin: .5em 0 1em 1.5em;">The Wi-Fi device still has power applied, but the radio (RF components) has been powered down.</p>
-        <p style="margin: .5em 0 .5em 1.5em;">Transition mechanism:</p>
+        <p style="margin: .5em 0 1em 1.3em;">The Wi-Fi device still has power applied, but the radio (RF components) has been powered down.</p>
+        <p style="margin: .5em 0 .5em 1.3em;">Transition mechanism:</p>
         <ul>
-            <li style="margin: .5em 0 1em 1.5em;">While in D0, NDIS will send an [OID_DOT11_NIC_POWER_STATE](https://msdn.microsoft.com/library/windows/hardware/ff569392) request with a value of FALSE, indicating the radio should be powered off.</li>
+            <li style="margin: .5em 0 1em 1.3em;">While in D0, NDIS will send an [OID_DOT11_NIC_POWER_STATE](https://msdn.microsoft.com/library/windows/hardware/ff569392) request with a value of FALSE, indicating the radio should be powered off.</li>
         </ul>
     </dd>
     <dt style="margin: 0 0 0 1.3em;">
         <em>Device powered down</em>
     </dt>
     <dd>
-        <p style="margin: .5em 0 1em 1.5em;">The Wi-Fi device has been completely powered down.</p>
-        <p style="margin: .5em 0 .5em 1.5em;">Transition mechanism:</p>
+        <p style="margin: .5em 0 1em 1.3em;">The Wi-Fi device has been completely powered down.</p>
+        <p style="margin: .5em 0 .5em 1.3em;">Transition mechanism:</p>
         <ul>
-            <li style="margin: .5em 0 1em 1.5em;">NDIS will send an [OID_PNP_SET_POWER](https://msdn.microsoft.com/library/windows/hardware/ff569780) request with an [<strong>NDIS_DEVICE_POWER_STATE</strong>](https://msdn.microsoft.com/library/windows/hardware/gg602135) value of NdisDeviceStateD3.</li>
-            <li style="margin: .5em 0 1em 1.5em;">If the Wi-Fi device is connected to SDIO or PCIe, the system ACPI firmware will remove power from or reset the Wi-Fi device by using a GPIO line from the SoC to the Wi-Fi device.</li>
-            <li style="margin: .5em 0 1em 1.5em;">If the Wi-Fi device is integrated into the SoC, the system firmware is responsible for powering off or resetting the Wi-Fi device by using a proprietary mechanism.</li>
+            <li style="margin: .5em 0 1em 1.3em;">NDIS will send an [OID_PNP_SET_POWER](https://msdn.microsoft.com/library/windows/hardware/ff569780) request with an [<strong>NDIS_DEVICE_POWER_STATE</strong>](https://msdn.microsoft.com/library/windows/hardware/gg602135) value of NdisDeviceStateD3.</li>
+            <li style="margin: .5em 0 1em 1.3em;">If the Wi-Fi device is connected to SDIO or PCIe, the system ACPI firmware will remove power from or reset the Wi-Fi device by using a GPIO line from the SoC to the Wi-Fi device.</li>
+            <li style="margin: .5em 0 1em 1.3em;">If the Wi-Fi device is integrated into the SoC, the system firmware is responsible for powering off or resetting the Wi-Fi device by using a proprietary mechanism.</li>
         </ul>
     </dd>
 </dl>
 
 
-<!-- Subsection version
-#### Active
-
-<p>The Wi-Fi device is connected to the network and is actively transmitting data.</p>
-<p>Transition mechanism: The Wi-Fi device hardware autonomously transitions from connected-idle mode to active mode.</p>
-
-
-#### Connected idle
-
-<p>The Wi-Fi device is connected to the network, but is not actively transmitting data.</p>
-<p>Transition mechanism:</p>
-<ul>
-<li>The Wi-Fi device hardware autonomously transitions from connected-idle mode to active mode.</li>
-<li>The power consumption of the device in the active mode will be a factor of the wireless technology (that is, 802.11a/b/g/n), distance to the access point, quantity of data transmitted, etc.</li>
-</ul>
-
-
-#### Connected sleep
-
-<p>The Wi-Fi device is connected to the access point, but the remainder of the platform is in a very low-power state. Pattern-match wake is enabled so that the Wi-Fi device wakes the SoC on a specific set of incoming network packets.</p>
-<p>Transition mechanism:</p>
-<ul>
-<li>Before the Wi-Fi device leaves D0, NDIS will send an [OID_PM_ADD_WOL_PATTERN](https://msdn.microsoft.com/library/windows/hardware/ff569764) request to instruct the Wi-Fi miniport driver to add wake-on-LAN patterns.</li>
-<li>To instruct the Wi-Fi miniport driver to enable pattern-match wake, NDIS will send an [OID_PM_PARAMETERS](https://msdn.microsoft.com/library/windows/hardware/ff569768) request.</li>
-<li>NDIS will send an [OID_PNP_SET_POWER](https://msdn.microsoft.com/library/windows/hardware/ff569780) request with an [<strong>NDIS_DEVICE_POWER_STATE</strong>](https://msdn.microsoft.com/library/windows/hardware/gg602135) value of NdisDeviceStateD2 (for SDIO) or NdisDeviceStateD3 (for PCIe).</li>
-</ul>
-
-
-#### Disconnected sleep
-
-<p>The Wi-Fi device is powered but is not connected to an access point, because no preferred access point is within range. The remainder of the platform is in a very low-power state. Pattern-match wake is enabled and the Network Offload List is plumbed to the Wi-Fi device. The Wi-Fi device uses the Network Offload List to periodically scan for preferred networks to connect to.</p>
-<p>Transition mechanism:</p>
-<ul>
-<li>The Wi-Fi device uses the [network offload list](https://msdn.microsoft.com/library/windows/hardware/hh451787) to periodically scan for preferred networks to connect to.</li>
-<li>If a matching network is found during these periodic scans, the Wi-Fi device will wake the SoC.</li>
-</ul>
-
-
-#### Radio off
-
-<p>The Wi-Fi device still has power applied, but the radio (RF components) has been powered down.</p>
-<p>Transition mechanism:</p>
-<ul>
-<li>While in D0, NDIS will send an [OID_DOT11_NIC_POWER_STATE](https://msdn.microsoft.com/library/windows/hardware/ff569392) request with a value of FALSE, indicating the radio should be powered off.</li>
-</ul>
-
-
-#### Device powered down
-
-<p>The Wi-Fi device has been completely powered down.</p>
-<p>Transition mechanism:</p>
-<ul>
-<li>NDIS will send an [OID_PNP_SET_POWER](https://msdn.microsoft.com/library/windows/hardware/ff569780) request with an [<strong>NDIS_DEVICE_POWER_STATE</strong>](https://msdn.microsoft.com/library/windows/hardware/gg602135) value of NdisDeviceStateD3.</li>
-<li>If the Wi-Fi device is connected to SDIO or PCIe, the system ACPI firmware will remove power from or reset the Wi-Fi device by using a GPIO line from the SoC to the Wi-Fi device.</li>
-<li>If the Wi-Fi device is integrated into the SoC, the system firmware is responsible for powering off or resetting the Wi-Fi device by using a proprietary mechanism.</li>
-</ul>
--->
-
 ### Average power consumption and exit latency
 
 The following table shows the expected power consumption and latency when exiting to an active state for each power-management mode. For these figures, assume that the Wi-Fi device is constantly connected to a single access point that has WPA2-Personal security, except in disconnected-sleep mode and power-removed mode.
 
-<br/>
+
 <table style="width:100%;">
 <thead>
 <tr class="header">
@@ -322,7 +264,7 @@ To support pattern-match wake, the Wi-Fi miniport driver must first advertise th
 
 When Windows first detects that a system service or hosted application requires pattern-match wake support, it will send the [OID\_PM\_ADD\_WOL\_PATTERN](https://msdn.microsoft.com/library/windows/hardware/ff569764) request to the Wi-Fi miniport driver to specify the pattern to be matched. This request is sent well before the Wi-Fi device is transitioned to the connected-sleep (D2/D3) mode.
 
-*Entering connected standby with pattern-match wake enabled*
+#### Entering connected standby with pattern-match wake enabled
 
 When the hardware platform enters modern standby, Windows will transition the Wi-Fi device to the connected-sleep (D2 for SDIO; D3 for PCIe) mode by sending an [OID\_PNP\_SET\_POWER](https://msdn.microsoft.com/library/windows/hardware/ff569780) request that specifies a device power state of NdisDeviceStateD2 (for SDIO) or NdisDeviceStateD3 (for PCIe). In response to this request, the Wi-Fi miniport driver must do the following:
 
