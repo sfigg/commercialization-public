@@ -53,27 +53,73 @@ The Wi-Fi device in a modern standby platform is almost always powered on and is
 The Wi-Fi device must support several power-management modes. Each mode is a combination of device activity, network connectivity, and enablement of pattern-match wake.
 
 <dl>
-<dt><p style="margin: 0 0 0 1em;"><em>Active</em></p></dt>
-<dd><p style="margin: .5em 0 1em 1.5em;">The Wi-Fi device is connected to the network and is actively transmitting data.</p></dd>
-<dt><p style="margin: 0 0 0 1em;"><em>Connected-idle</p></em></dt>
-<dd><p style="margin: .5em 0 1em 1.5em;">The Wi-Fi device is connected to the network, but is not actively transmitting data.</p>
-<p style="margin: .5em 0 1em 1.5em;">Transition mechanism:</p>
-<ul>
-<li style="margin: .5em 0 1em 1.5em;">The Wi-Fi device hardware autonomously transitions from connected-idle mode to active mode.</li>
-<li style="margin: .5em 0 1em 1.5em;">The power consumption of the device in the active mode will be a factor of the wireless technology (that is, 802.11a/b/g/n), distance to the access point, quantity of data transmitted, etc.</li>
-</ul>
-</dd>
-<dt><p style="margin: 0 0 0 1em;"><em>Connected sleep</em></p></dt>
-<dd><p style="margin: .5em 0 1em 1.5em;">The Wi-Fi device is connected to the access point, but the remainder of the platform is in a very low-power state. Pattern-match wake is enabled so that the Wi-Fi device wakes the SoC on a specific set of incoming network packets.</p></dd>
-<dt><p style="margin: 0 0 0 1em;"><em>Disconnected sleep</em></p></dt>
-<dd><p style="margin: .5em 0 1em 1.5em;">The Wi-Fi device is powered but is not connected to an access point, because no preferred access point is within range. The remainder of the platform is in a very low-power state. Pattern-match wake is enabled and the Network Offload List is plumbed to the Wi-Fi device. The Wi-Fi device uses the Network Offload List to periodically scan for preferred networks to connect to.</p></dd>
-<dt><p style="margin: 0 0 0 1em;"><em>Radio off</em></p></dt>
-<dd><p style="margin: .5em 0 1em 1.5em;">The Wi-Fi device still has power applied, but the radio (RF components) has been powered down.</p></dd>
-<dt><p style="margin: 0 0 0 1em;"><em>Device powered down</em></p></dt>
-<dd><p style="margin: .5em 0 1em 1.5em;">The Wi-Fi device has been completely powered down.</p></dd>
+    <dt>
+        <p style="margin: 0 0 0 1em;"><em>Active</em></p>
+    </dt>
+    <dd>
+        <p style="margin: .5em 0 1em 1.5em;">The Wi-Fi device is connected to the network and is actively transmitting data.</p>
+        <p style="margin: .5em 0 1em 1.5em;">Transition mechanism: The Wi-Fi device hardware autonomously transitions from connected-idle mode to active mode.</p>
+    </dd>
+    <dt style="margin: 0 0 0 1em;">
+        <em>Connected-idle</em>
+    </dt>
+    <dd>
+        <p style="margin: .5em 0 1em 1.5em;">The Wi-Fi device is connected to the network, but is not actively transmitting data.</p>
+        <p style="margin: .5em 0 1em 1.5em;">Transition mechanism:</p>
+        <ul>
+            <li style="margin: .5em 0 1em 1.5em;">The Wi-Fi device hardware autonomously transitions from connected-idle mode to active mode.</li>
+            <li style="margin: .5em 0 1em 1.5em;">The power consumption of the device in the active mode will be a factor of the wireless technology (that is, 802.11a/b/g/n), distance to the access point, quantity of data transmitted, etc.</li>
+        </ul>
+    </dd>
+    <dt>
+        <p style="margin: 0 0 0 1em;"><em>Connected sleep</em></p>
+    </dt>
+    <dd>
+        <p style="margin: .5em 0 1em 1.5em;">The Wi-Fi device is connected to the access point, but the remainder of the platform is in a very low-power state. Pattern-match wake is enabled so that the Wi-Fi device wakes the SoC on a specific set of incoming network packets.</p>
+        <p style="margin: .5em 0 1em 1.5em;">Transition mechanism:</p>
+        <ul>
+            <li style="margin: .5em 0 1em 1.5em;">Before the Wi-Fi device leaves D0, NDIS will send an [OID_PM_ADD_WOL_PATTERN](https://msdn.microsoft.com/library/windows/hardware/ff569764) request to instruct the Wi-Fi miniport driver to add wake-on-LAN patterns.</li>
+            <li style="margin: .5em 0 1em 1.5em;">To instruct the Wi-Fi miniport driver to enable pattern-match wake, NDIS will send an [OID_PM_PARAMETERS](https://msdn.microsoft.com/library/windows/hardware/ff569768) request.</li>
+            <li style="margin: .5em 0 1em 1.5em;">NDIS will send an [OID_PNP_SET_POWER](https://msdn.microsoft.com/library/windows/hardware/ff569780) request with an [<strong>NDIS_DEVICE_POWER_STATE</strong>](https://msdn.microsoft.com/library/windows/hardware/gg602135) value of NdisDeviceStateD2 (for SDIO) or NdisDeviceStateD3 (for PCIe).</li>
+        </ul>
+    </dd>
+    <dt>
+        <p style="margin: 0 0 0 1em;"><em>Disconnected sleep</em></p>
+    </dt>
+    <dd>
+        <p style="margin: .5em 0 1em 1.5em;">The Wi-Fi device is powered but is not connected to an access point, because no preferred access point is within range. The remainder of the platform is in a very low-power state. Pattern-match wake is enabled and the Network Offload List is plumbed to the Wi-Fi device. The Wi-Fi device uses the Network Offload List to periodically scan for preferred networks to connect to.</p>
+        <p style="margin: .5em 0 1em 1.5em;">Transition mechanism:</p>
+        <ul>
+            <li style="margin: .5em 0 1em 1.5em;">The Wi-Fi device uses the [network offload list](https://msdn.microsoft.com/library/windows/hardware/hh451787) to periodically scan for preferred networks to connect to.</li>
+            <li style="margin: .5em 0 1em 1.5em;">If a matching network is found during these periodic scans, the Wi-Fi device will wake the SoC.</li>
+        </ul>
+    </dd>
+    <dt>
+        <p style="margin: 0 0 0 1em;"><em>Radio off</em></p>
+    </dt>
+    <dd>
+        <p style="margin: .5em 0 1em 1.5em;">The Wi-Fi device still has power applied, but the radio (RF components) has been powered down.</p>
+        <p style="margin: .5em 0 1em 1.5em;">Transition mechanism:</p>
+        <ul>
+            <li style="margin: .5em 0 1em 1.5em;">While in D0, NDIS will send an [OID_DOT11_NIC_POWER_STATE](https://msdn.microsoft.com/library/windows/hardware/ff569392) request with a value of FALSE, indicating the radio should be powered off.</li>
+        </ul>
+    </dd>
+    <dt>
+        <p style="margin: 0 0 0 1em;"><em>Device powered down</em></p>
+    </dt>
+    <dd>
+        <p style="margin: .5em 0 1em 1.5em;">The Wi-Fi device has been completely powered down.</p>
+        <p style="margin: .5em 0 1em 1.5em;">Transition mechanism:</p>
+        <ul>
+            <li style="margin: .5em 0 1em 1.5em;">NDIS will send an [OID_PNP_SET_POWER](https://msdn.microsoft.com/library/windows/hardware/ff569780) request with an [<strong>NDIS_DEVICE_POWER_STATE</strong>](https://msdn.microsoft.com/library/windows/hardware/gg602135) value of NdisDeviceStateD3.</li>
+            <li style="margin: .5em 0 1em 1.5em;">If the Wi-Fi device is connected to SDIO or PCIe, the system ACPI firmware will remove power from or reset the Wi-Fi device by using a GPIO line from the SoC to the Wi-Fi device.</li>
+            <li style="margin: .5em 0 1em 1.5em;">If the Wi-Fi device is integrated into the SoC, the system firmware is responsible for powering off or resetting the Wi-Fi device by using a proprietary mechanism.</li>
+        </ul>
+    </dd>
 </dl>
 
 
+<!-- Subsection version
 #### Active
 
 <p>The Wi-Fi device is connected to the network and is actively transmitting data.</p>
@@ -129,7 +175,7 @@ The Wi-Fi device must support several power-management modes. Each mode is a com
 <li>If the Wi-Fi device is connected to SDIO or PCIe, the system ACPI firmware will remove power from or reset the Wi-Fi device by using a GPIO line from the SoC to the Wi-Fi device.</li>
 <li>If the Wi-Fi device is integrated into the SoC, the system firmware is responsible for powering off or resetting the Wi-Fi device by using a proprietary mechanism.</li>
 </ul>
-
+-->
 
 ### Average power consumption and exit latency
 
