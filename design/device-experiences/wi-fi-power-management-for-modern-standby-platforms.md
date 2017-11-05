@@ -65,9 +65,9 @@ The Wi-Fi device must support several power-management modes. Each mode is a com
     </dt>
     <dd>
         <p style="margin: .5em 0 .5em 1.1em;">The Wi-Fi device is connected to the network, but is not actively transmitting data.</p>
-        <p style="margin: .5em 0 .5em 1.1em;">Transition mechanism:</p>
+        <p style="margin: .5em 0 .4em 1.1em;">Transition mechanism:</p>
         <ul>
-            <li style="margin: .5em 0 .5em 1.1em;">The Wi-Fi device hardware autonomously transitions from connected-idle mode to active mode.</li>
+            <li style="margin: .4em 0 .5em 1.1em;">The Wi-Fi device hardware autonomously transitions from connected-idle mode to active mode.</li>
             <li style="margin: .5em 0 .5em 1.1em;">The power consumption of the device in the active mode will be a factor of the wireless technology (that is, 802.11a/b/g/n), distance to the access point, quantity of data transmitted, etc.</li>
         </ul>
     </dd>
@@ -76,9 +76,9 @@ The Wi-Fi device must support several power-management modes. Each mode is a com
     </dt>
     <dd>
         <p style="margin: .5em 0 .5em 1.1em;">The Wi-Fi device is connected to the access point, but the remainder of the platform is in a very low-power state. Pattern-match wake is enabled so that the Wi-Fi device wakes the SoC on a specific set of incoming network packets.</p>
-        <p style="margin: .5em 0 .5em 1.3em;">Transition mechanism:</p>
+        <p style="margin: .5em 0 .4em 1.1em;">Transition mechanism:</p>
         <ul>
-            <li style="margin: .5em 0 .5em 1.1em;">Before the Wi-Fi device leaves D0, NDIS will send an [OID_PM_ADD_WOL_PATTERN](https://msdn.microsoft.com/library/windows/hardware/ff569764) request to instruct the Wi-Fi miniport driver to add wake-on-LAN patterns.</li>
+            <li style="margin: .4em 0 .5em 1.1em;">Before the Wi-Fi device leaves D0, NDIS will send an [OID_PM_ADD_WOL_PATTERN](https://msdn.microsoft.com/library/windows/hardware/ff569764) request to instruct the Wi-Fi miniport driver to add wake-on-LAN patterns.</li>
             <li style="margin: .5em 0 .5em 1.1em;">To instruct the Wi-Fi miniport driver to enable pattern-match wake, NDIS will send an [OID_PM_PARAMETERS](https://msdn.microsoft.com/library/windows/hardware/ff569768) request.</li>
             <li style="margin: .5em 0 .5em 1.1em;">NDIS will send an [OID_PNP_SET_POWER](https://msdn.microsoft.com/library/windows/hardware/ff569780) request with an [<strong>NDIS_DEVICE_POWER_STATE</strong>](https://msdn.microsoft.com/library/windows/hardware/gg602135) value of NdisDeviceStateD2 (for SDIO) or NdisDeviceStateD3 (for PCIe).</li>
         </ul>
@@ -88,9 +88,9 @@ The Wi-Fi device must support several power-management modes. Each mode is a com
     </dt>
     <dd>
         <p style="margin: .5em 0 .5em 1.1em;">The Wi-Fi device is powered but is not connected to an access point, because no preferred access point is within range. The remainder of the platform is in a very low-power state. Pattern-match wake is enabled and the Network Offload List is plumbed to the Wi-Fi device. The Wi-Fi device uses the Network Offload List to periodically scan for preferred networks to connect to.</p>
-        <p style="margin: .5em 0 .5em 1.5em;">Transition mechanism:</p>
+        <p style="margin: .5em 0 .4em 1.1em;">Transition mechanism:</p>
         <ul>
-            <li style="margin: .5em 0 .5em 1.1em;">The Wi-Fi device uses the [network offload list](https://msdn.microsoft.com/library/windows/hardware/hh451787) to periodically scan for preferred networks to connect to.</li>
+            <li style="margin: .4em 0 .5em 1.1em;">The Wi-Fi device uses the [network offload list](https://msdn.microsoft.com/library/windows/hardware/hh451787) to periodically scan for preferred networks to connect to.</li>
             <li style="margin: .5em 0 .5em 1.1em;">If a matching network is found during these periodic scans, the Wi-Fi device will wake the SoC.</li>
         </ul>
     </dd>
@@ -99,9 +99,9 @@ The Wi-Fi device must support several power-management modes. Each mode is a com
     </dt>
     <dd>
         <p style="margin: .5em 0 .5em 1.1em;">The Wi-Fi device still has power applied, but the radio (RF components) has been powered down.</p>
-        <p style="margin: .5em 0 .5em 1.3em;">Transition mechanism:</p>
+        <p style="margin: .5em 0 .4em 1.1em;">Transition mechanism:</p>
         <ul>
-            <li style="margin: .5em 0 .5em 1.1em;">While in D0, NDIS will send an [OID_DOT11_NIC_POWER_STATE](https://msdn.microsoft.com/library/windows/hardware/ff569392) request with a value of FALSE, indicating the radio should be powered off.</li>
+            <li style="margin: .4em 0 .5em 1.1em;">While in D0, NDIS will send an [OID_DOT11_NIC_POWER_STATE](https://msdn.microsoft.com/library/windows/hardware/ff569392) request with a value of FALSE, indicating the radio should be powered off.</li>
         </ul>
     </dd>
     <dt style="margin: 0 0 0 1.3em;">
@@ -109,9 +109,9 @@ The Wi-Fi device must support several power-management modes. Each mode is a com
     </dt>
     <dd>
         <p style="margin: .5em 0 .5em 1.1em;">The Wi-Fi device has been completely powered down.</p>
-        <p style="margin: .5em 0 .5em 1.3em;">Transition mechanism:</p>
+        <p style="margin: .5em 0 .4em 1.1em;">Transition mechanism:</p>
         <ul>
-            <li style="margin: .5em 0 .5em 1.1em;">NDIS will send an [OID_PNP_SET_POWER](https://msdn.microsoft.com/library/windows/hardware/ff569780) request with an [<strong>NDIS_DEVICE_POWER_STATE</strong>](https://msdn.microsoft.com/library/windows/hardware/gg602135) value of NdisDeviceStateD3.</li>
+            <li style="margin: .4em 0 .5em 1.1em;">NDIS will send an [OID_PNP_SET_POWER](https://msdn.microsoft.com/library/windows/hardware/ff569780) request with an [<strong>NDIS_DEVICE_POWER_STATE</strong>](https://msdn.microsoft.com/library/windows/hardware/gg602135) value of NdisDeviceStateD3.</li>
             <li style="margin: .5em 0 .5em 1.1em;">If the Wi-Fi device is connected to SDIO or PCIe, the system ACPI firmware will remove power from or reset the Wi-Fi device by using a GPIO line from the SoC to the Wi-Fi device.</li>
             <li style="margin: .5em 0 .5em 1.1em;">If the Wi-Fi device is integrated into the SoC, the system firmware is responsible for powering off or resetting the Wi-Fi device by using a proprietary mechanism.</li>
         </ul>
@@ -317,7 +317,7 @@ Pattern-match wake and the ability to wake the SoC from a low-power idle state a
 
 In addition to power save mode and pattern-match wake, the Wi-Fi device and miniport driver must support several other run-time power-management features for Wi-Fi devices in modern standby platforms. These features are essential for reducing power consumption in the Wi-Fi device and overall hardware platform. As previously discussed, the Wi-Fi device and miniport driver must support the following features:
 
--   [Radio on/off state](#radioon-off-state)
+-   [Radio on/off state](#radio-onoff-state)
 -   [Network list offload (NLO)](#network-list-offload-nlo)
 -   [ARP/NS offload](#arpns-offload)
 -   [D0 packet coalescing](#d0-packet-coalescing)
