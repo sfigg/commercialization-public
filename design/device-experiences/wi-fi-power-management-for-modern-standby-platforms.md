@@ -57,63 +57,63 @@ The Wi-Fi device must support several power-management modes. Each mode is a com
         <em>Active</em>
     </dt>
     <dd>
-        <p style="margin: .5em 0 1em 1.3em;">The Wi-Fi device is connected to the network and is actively transmitting data.</p>
-        <p style="margin: .5em 0 .5em 1.3em;">Transition mechanism: The Wi-Fi device hardware autonomously transitions from connected-idle mode to active mode.</p>
+        <p style="margin: .5em 0 .5em 1.1em;">The Wi-Fi device is connected to the network and is actively transmitting data.</p>
+        <p style="margin: .5em 0 .5em 1.1em;">Transition mechanism: The Wi-Fi device hardware autonomously transitions from connected-idle mode to active mode.</p>
     </dd>
     <dt style="margin: 0 0 0 1.3em;">
         <em>Connected idle</em>
     </dt>
     <dd>
-        <p style="margin: .5em 0 1em 1.3em;">The Wi-Fi device is connected to the network, but is not actively transmitting data.</p>
-        <p style="margin: .5em 0 .5em 1.3em;">Transition mechanism:</p>
+        <p style="margin: .5em 0 .5em 1.1em;">The Wi-Fi device is connected to the network, but is not actively transmitting data.</p>
+        <p style="margin: .5em 0 .5em 1.1em;">Transition mechanism:</p>
         <ul>
-            <li style="margin: .5em 0 1em 1.3em;">The Wi-Fi device hardware autonomously transitions from connected-idle mode to active mode.</li>
-            <li style="margin: .5em 0 1em 1.3em;">The power consumption of the device in the active mode will be a factor of the wireless technology (that is, 802.11a/b/g/n), distance to the access point, quantity of data transmitted, etc.</li>
+            <li style="margin: .5em 0 .5em 1.1em;">The Wi-Fi device hardware autonomously transitions from connected-idle mode to active mode.</li>
+            <li style="margin: .5em 0 .5em 1.1em;">The power consumption of the device in the active mode will be a factor of the wireless technology (that is, 802.11a/b/g/n), distance to the access point, quantity of data transmitted, etc.</li>
         </ul>
     </dd>
     <dt style="margin: 0 0 0 1.3em;">
         <em>Connected sleep</em>
     </dt>
     <dd>
-        <p style="margin: .5em 0 1em 1.3em;">The Wi-Fi device is connected to the access point, but the remainder of the platform is in a very low-power state. Pattern-match wake is enabled so that the Wi-Fi device wakes the SoC on a specific set of incoming network packets.</p>
+        <p style="margin: .5em 0 .5em 1.1em;">The Wi-Fi device is connected to the access point, but the remainder of the platform is in a very low-power state. Pattern-match wake is enabled so that the Wi-Fi device wakes the SoC on a specific set of incoming network packets.</p>
         <p style="margin: .5em 0 .5em 1.3em;">Transition mechanism:</p>
         <ul>
-            <li style="margin: .5em 0 1em 1.3em;">Before the Wi-Fi device leaves D0, NDIS will send an [OID_PM_ADD_WOL_PATTERN](https://msdn.microsoft.com/library/windows/hardware/ff569764) request to instruct the Wi-Fi miniport driver to add wake-on-LAN patterns.</li>
-            <li style="margin: .5em 0 1em 1.3em;">To instruct the Wi-Fi miniport driver to enable pattern-match wake, NDIS will send an [OID_PM_PARAMETERS](https://msdn.microsoft.com/library/windows/hardware/ff569768) request.</li>
-            <li style="margin: .5em 0 1em 1.3em;">NDIS will send an [OID_PNP_SET_POWER](https://msdn.microsoft.com/library/windows/hardware/ff569780) request with an [<strong>NDIS_DEVICE_POWER_STATE</strong>](https://msdn.microsoft.com/library/windows/hardware/gg602135) value of NdisDeviceStateD2 (for SDIO) or NdisDeviceStateD3 (for PCIe).</li>
+            <li style="margin: .5em 0 .5em 1.1em;">Before the Wi-Fi device leaves D0, NDIS will send an [OID_PM_ADD_WOL_PATTERN](https://msdn.microsoft.com/library/windows/hardware/ff569764) request to instruct the Wi-Fi miniport driver to add wake-on-LAN patterns.</li>
+            <li style="margin: .5em 0 .5em 1.1em;">To instruct the Wi-Fi miniport driver to enable pattern-match wake, NDIS will send an [OID_PM_PARAMETERS](https://msdn.microsoft.com/library/windows/hardware/ff569768) request.</li>
+            <li style="margin: .5em 0 .5em 1.1em;">NDIS will send an [OID_PNP_SET_POWER](https://msdn.microsoft.com/library/windows/hardware/ff569780) request with an [<strong>NDIS_DEVICE_POWER_STATE</strong>](https://msdn.microsoft.com/library/windows/hardware/gg602135) value of NdisDeviceStateD2 (for SDIO) or NdisDeviceStateD3 (for PCIe).</li>
         </ul>
     </dd>
     <dt style="margin: 0 0 0 1.3em;">
         <em>Disconnected sleep</em>
     </dt>
     <dd>
-        <p style="margin: .5em 0 1em 1.3em;">The Wi-Fi device is powered but is not connected to an access point, because no preferred access point is within range. The remainder of the platform is in a very low-power state. Pattern-match wake is enabled and the Network Offload List is plumbed to the Wi-Fi device. The Wi-Fi device uses the Network Offload List to periodically scan for preferred networks to connect to.</p>
+        <p style="margin: .5em 0 .5em 1.1em;">The Wi-Fi device is powered but is not connected to an access point, because no preferred access point is within range. The remainder of the platform is in a very low-power state. Pattern-match wake is enabled and the Network Offload List is plumbed to the Wi-Fi device. The Wi-Fi device uses the Network Offload List to periodically scan for preferred networks to connect to.</p>
         <p style="margin: .5em 0 .5em 1.5em;">Transition mechanism:</p>
         <ul>
-            <li style="margin: .5em 0 1em 1.3em;">The Wi-Fi device uses the [network offload list](https://msdn.microsoft.com/library/windows/hardware/hh451787) to periodically scan for preferred networks to connect to.</li>
-            <li style="margin: .5em 0 1em 1.3em;">If a matching network is found during these periodic scans, the Wi-Fi device will wake the SoC.</li>
+            <li style="margin: .5em 0 .5em 1.1em;">The Wi-Fi device uses the [network offload list](https://msdn.microsoft.com/library/windows/hardware/hh451787) to periodically scan for preferred networks to connect to.</li>
+            <li style="margin: .5em 0 .5em 1.1em;">If a matching network is found during these periodic scans, the Wi-Fi device will wake the SoC.</li>
         </ul>
     </dd>
     <dt style="margin: 0 0 0 1.3em;">
         <em>Radio off</em>
     </dt>
     <dd>
-        <p style="margin: .5em 0 1em 1.3em;">The Wi-Fi device still has power applied, but the radio (RF components) has been powered down.</p>
+        <p style="margin: .5em 0 .5em 1.1em;">The Wi-Fi device still has power applied, but the radio (RF components) has been powered down.</p>
         <p style="margin: .5em 0 .5em 1.3em;">Transition mechanism:</p>
         <ul>
-            <li style="margin: .5em 0 1em 1.3em;">While in D0, NDIS will send an [OID_DOT11_NIC_POWER_STATE](https://msdn.microsoft.com/library/windows/hardware/ff569392) request with a value of FALSE, indicating the radio should be powered off.</li>
+            <li style="margin: .5em 0 .5em 1.1em;">While in D0, NDIS will send an [OID_DOT11_NIC_POWER_STATE](https://msdn.microsoft.com/library/windows/hardware/ff569392) request with a value of FALSE, indicating the radio should be powered off.</li>
         </ul>
     </dd>
     <dt style="margin: 0 0 0 1.3em;">
         <em>Device powered down</em>
     </dt>
     <dd>
-        <p style="margin: .5em 0 1em 1.3em;">The Wi-Fi device has been completely powered down.</p>
+        <p style="margin: .5em 0 .5em 1.1em;">The Wi-Fi device has been completely powered down.</p>
         <p style="margin: .5em 0 .5em 1.3em;">Transition mechanism:</p>
         <ul>
-            <li style="margin: .5em 0 1em 1.3em;">NDIS will send an [OID_PNP_SET_POWER](https://msdn.microsoft.com/library/windows/hardware/ff569780) request with an [<strong>NDIS_DEVICE_POWER_STATE</strong>](https://msdn.microsoft.com/library/windows/hardware/gg602135) value of NdisDeviceStateD3.</li>
-            <li style="margin: .5em 0 1em 1.3em;">If the Wi-Fi device is connected to SDIO or PCIe, the system ACPI firmware will remove power from or reset the Wi-Fi device by using a GPIO line from the SoC to the Wi-Fi device.</li>
-            <li style="margin: .5em 0 1em 1.3em;">If the Wi-Fi device is integrated into the SoC, the system firmware is responsible for powering off or resetting the Wi-Fi device by using a proprietary mechanism.</li>
+            <li style="margin: .5em 0 .5em 1.1em;">NDIS will send an [OID_PNP_SET_POWER](https://msdn.microsoft.com/library/windows/hardware/ff569780) request with an [<strong>NDIS_DEVICE_POWER_STATE</strong>](https://msdn.microsoft.com/library/windows/hardware/gg602135) value of NdisDeviceStateD3.</li>
+            <li style="margin: .5em 0 .5em 1.1em;">If the Wi-Fi device is connected to SDIO or PCIe, the system ACPI firmware will remove power from or reset the Wi-Fi device by using a GPIO line from the SoC to the Wi-Fi device.</li>
+            <li style="margin: .5em 0 .5em 1.1em;">If the Wi-Fi device is integrated into the SoC, the system firmware is responsible for powering off or resetting the Wi-Fi device by using a proprietary mechanism.</li>
         </ul>
     </dd>
 </dl>
@@ -173,6 +173,7 @@ The following table shows the expected power consumption and latency when exitin
 </tbody>
 </table>
 
+
 For SDIO-connected devices, D2 is the deepest wakeable device power state for modern standby. For PCIe-connected devices, D3 (more specifically, the D3hot substate) is the deepest wakeable device power state for modern standby.
 
 Windows 8, Windows 8.1, and Windows 10 support modern standby on off-SoC Wi-Fi devices that connect via the SDIO bus. Windows 8.1 additionally supports modern standby on off-SoC Wi-Fi devices that connect via the PCIe bus.
@@ -192,8 +193,8 @@ The Wi-Fi device is expected to always be powered on and connected to a network,
 
 The Wi-Fi miniport driver must enable the following key power-management features to ensure that the Wi-Fi device is power-efficient both during modern standby and when the display is turned on:
 
--   Power save mode
--   Pattern-match wake
+-   [Power save mode](#power-save-mode)
+-   [Pattern-match wake](#Pattern-match-wake)
 
 The following paragraphs discuss the requirements for these two features in detail.
 
@@ -316,12 +317,12 @@ Pattern-match wake and the ability to wake the SoC from a low-power idle state a
 
 In addition to power save mode and pattern-match wake, the Wi-Fi device and miniport driver must support several other run-time power-management features for Wi-Fi devices in modern standby platforms. These features are essential for reducing power consumption in the Wi-Fi device and overall hardware platform. As previously discussed, the Wi-Fi device and miniport driver must support the following features:
 
--   Radio on/off state
--   Network list offload (NLO)
--   ARP/NS offload
--   D0 packet coalescing
--   Dynamic DTIM management
--   A set of Wi-Fi connectivity triggers, which include wake-on-AP-disconnect
+-   [Radio on/off state](#radio-on-off-state)
+-   [Network list offload (NLO)](#network-list-offload-nlo)
+-   [ARP/NS offload](#arp-ns-offload)
+-   [D0 packet coalescing](#d0-packet-coalescing)
+-   [Dynamic DTIM management](#dynamic-dtim-management)
+-   [Wi-Fi connectivity wake triggers](#wi-fi-connectivity-wake-triggers), which include wake-on-AP-disconnect
 
 
 #### Radio on/off state
@@ -357,8 +358,8 @@ The following list of members summarizes the D0 packet-coalescing capabilities t
         <strong>SupportedQueueProperties</strong>
     </dt>
     <dd>
-        <p style="margin: .5em 0 1em 1.3em;">NDIS_RECEIVE_FILTER_PACKET_COALESCING_SUPPORTED_ON_DEFAULT_QUEUE</p>
-        <div class="alert" style="margin: .5em 0 1em 1.3em;">
+        <p style="margin: .5em 0 .5em 1.1em;">NDIS_RECEIVE_FILTER_PACKET_COALESCING_SUPPORTED_ON_DEFAULT_QUEUE</p>
+        <div class="alert" style="margin: .5em 0 .5em 1.1em;">
             <strong>Note</strong>&nbsp;&nbsp;&nbsp;This flag must always be present in the [<strong>HardwareReceiveFilterCapabilities</strong>](https://msdn.microsoft.com/library/windows/hardware/ff565924) to indicate the hardware capability. This flag must be present in the <strong>CurrentReceiveFilterCapabilities</strong> if and only if the [*PacketCoalescing](https://msdn.microsoft.com/library/windows/hardware/hh440217) advanced keyword is nonzero.
         </div>
     </dd>
@@ -366,13 +367,13 @@ The following list of members summarizes the D0 packet-coalescing capabilities t
         <strong>EnabledFilterTypes</strong>, minimum value:
     </dt>
     <dd>
-        <p style="margin: .5em 0 1em 1.3em;">NDIS_RECEIVE_FILTER_PACKET_COALESCING_FILTERS_ENABLED</p>
+        <p style="margin: .5em 0 .5em 1.1em;">NDIS_RECEIVE_FILTER_PACKET_COALESCING_FILTERS_ENABLED</p>
     </dd>
     <dt style="margin: 0 0 0 1.3em;">
         <strong>SupportedFilterTests</strong>, minimum values:
     </dt>
     <dd>
-        <p style="margin: .5em 0 1em 1.3em;">NDIS_RECEIVE_FILTER_TEST_HEADER_FIELD_EQUAL_SUPPORTED
+        <p style="margin: .5em 0 .5em 1.1em;">NDIS_RECEIVE_FILTER_TEST_HEADER_FIELD_EQUAL_SUPPORTED
         <br/>NDIS_RECEIVE_FILTER_TEST_HEADER_FIELD_NOT_EQUAL_SUPPORTED
         <br/>NDIS_RECEIVE_FILTER_TEST_HEADER_FIELD_MASK_EQUAL_SUPPORTED</p>
     </dd>
@@ -380,7 +381,7 @@ The following list of members summarizes the D0 packet-coalescing capabilities t
         <strong>SupportedHeaders</strong>, minimum values:
     </dt>
     <dd>
-        <p style="margin: .5em 0 1em 1.3em;">NDIS_RECEIVE_FILTER_MAC_HEADER_SUPPORTED
+        <p style="margin: .5em 0 .5em 1.1em;">NDIS_RECEIVE_FILTER_MAC_HEADER_SUPPORTED
         <br/>NDIS_RECEIVE_FILTER_ARP_HEADER_SUPPORTED
         <br/>NDIS_RECEIVE_FILTER_IPV4_HEADER_SUPPORTED
         <br/>NDIS_RECEIVE_FILTER_IPV6_HEADER_SUPPORTED
@@ -390,7 +391,7 @@ The following list of members summarizes the D0 packet-coalescing capabilities t
         <strong>SupportedMacHeaderFields</strong>, minimum values:
     </dt>
     <dd>
-        <p style="margin: .5em 0 1em 1.3em;">NDIS_RECEIVE_FILTER_MAC_HEADER_DEST_ADDR_SUPPORTED
+        <p style="margin: .5em 0 .5em 1.1em;">NDIS_RECEIVE_FILTER_MAC_HEADER_DEST_ADDR_SUPPORTED
         <br/>NDIS_RECEIVE_FILTER_MAC_HEADER_PROTOCOL_SUPPORTED
         <br/>NDIS_RECEIVE_FILTER_MAC_HEADER_PACKET_TYPE_SUPPORTED</p>
     </dd>
@@ -398,7 +399,7 @@ The following list of members summarizes the D0 packet-coalescing capabilities t
         <strong>SupportedARPHeaderFields</strong>, minimum values:
     </dt>
     <dd>
-        <p style="margin: .5em 0 1em 1.3em;">NDIS_RECEIVE_FILTER_ARP_HEADER_OPERATION_SUPPORTED
+        <p style="margin: .5em 0 .5em 1.1em;">NDIS_RECEIVE_FILTER_ARP_HEADER_OPERATION_SUPPORTED
         <br/>NDIS_RECEIVE_FILTER_ARP_HEADER_SPA_SUPPORTED
         <br/>NDIS_RECEIVE_FILTER_ARP_HEADER_TPA_SUPPORTED</p>
     </dd>
@@ -406,36 +407,35 @@ The following list of members summarizes the D0 packet-coalescing capabilities t
         <strong>SupportedIPv4HeaderFields</strong>, minimum value:
     </dt>
     <dd>
-        <p style="margin: .5em 0 1em 1.3em;">NDIS_RECEIVE_FILTER_IPV4_HEADER_PROTOCOL_SUPPORTED</p>
+        <p style="margin: .5em 0 .5em 1.1em;">NDIS_RECEIVE_FILTER_IPV4_HEADER_PROTOCOL_SUPPORTED</p>
     </dd>
     <dt style="margin: 0 0 0 1.3em;">
         <strong>SupportedIPv6HeaderFields</strong>, minimum value:
     </dt>
     <dd>
-        <p style="margin: .5em 0 1em 1.3em;">NDIS_RECEIVE_FILTER_IPV6_HEADER_PROTOCOL_SUPPORTED</p>
+        <p style="margin: .5em 0 .5em 1.1em;">NDIS_RECEIVE_FILTER_IPV6_HEADER_PROTOCOL_SUPPORTED</p>
     </dd>
     <dt style="margin: 0 0 0 1.3em;">
         <strong>SupportedUdpHeaderFields</strong>, minimum value:
     </dt>
     <dd>
-        <p style="margin: .5em 0 1em 1.3em;">NDIS_RECEIVE_FILTER_UDP_HEADER_DEST_PORT_SUPPORTED</p>
+        <p style="margin: .5em 0 .5em 1.1em;">NDIS_RECEIVE_FILTER_UDP_HEADER_DEST_PORT_SUPPORTED</p>
     </dd>
     <dt style="margin: 0 0 0 1.3em;">
         <strong>MaxFieldTestsPerPacketCoalescingFilter</strong>, minimum value:
     </dt>
     <dd>
-        <p style="margin: .5em 0 1em 1.3em;">5</p>
+        <p style="margin: .5em 0 .5em 1.1em;">5</p>
     </dd>
     <dt style="margin: 0 0 0 1.3em;">
         <strong>MaxPacketCoalescingFilters</strong>, minimum value:
     </dt>
     <dd>
-        <p style="margin: .5em 0 1em 1.3em;">10</p>
+        <p style="margin: .5em 0 .5em 1.1em;">10</p>
     </dd>
 </dl>
 
  
-
 NDIS sends [OID\_RECEIVE\_FILTER\_CLEAR\_FILTER](https://msdn.microsoft.com/library/windows/hardware/ff569785) requests to clear previously set packet-coalescing filters when these filters are no longer required. NDIS might set and clear individual packet-coalescing filters dynamically. The Wi-Fi miniport driver is required to keep track of the current set of packet-coalescing filters at all times, but can apply coalescing only when the Wi-Fi device is in the D0 power state (and is in either active mode or connected-idle mode).
 
 #### Dynamic DTIM configuration
@@ -492,7 +492,7 @@ The implementation of the \_PS0 control method must reliably apply power to the 
 
 In this configuration, the Wi-Fi device is located outside of the SoC and attached to the PCIe bus. The device is in the D3 device power state when it operates in connected-sleep mode or disconnected-sleep mode. While in D3, the device remains in the D3hot substate and does not enter the D3cold substate. The Wi-Fi device must be attached to a system power rail that is always powered on or is directly connected to the system power management IC (PMIC).
 
-<div class="alert" style="margin: .5em 0 1em 1.3em;">
+<div class="alert" style="margin: .5em 0 .5em 1.1em;">
     <strong>Note</strong>&nbsp;&nbsp;&nbsp;The Wi-Fi hardware should use PCI architectural means of generating a wake event (PME).
 </div>
 
@@ -521,6 +521,7 @@ The system integrator should contact the SoC vendor for ACPI implementation deta
 Testing and validation of the Wi-Fi device should focus on directly measuring power consumption and verifying that pattern-match wake works correctly.
 
 The direct measurement of device power consumption is a critical part of testing and validation for a Wi-Fi device. Because the Wi-Fi device is almost always powered on when the platform is not in the S5 (shutown) system power state, the system integrator must test and validate Wi-Fi power consumption in a number of different system scenarios and configurations. We recommend directly measuring the power consumption of the Wi-Fi device for the two types of connections shown in the following table.
+
 
 <table>
 <colgroup>
@@ -580,21 +581,13 @@ System integrators and SoC vendors should use the checklist below to verify that
 -   The Wi-Fi device vendor must develop a driver that does the following:
 
     -   Supports pattern-match wake.
-
     -   Supports power save mode.
-
     -   Supports radio on/off.
-
     -   Supports network list offload (NLO).
-
     -   Supports D0 packet coalescing.
-
     -   Supports wake-on-AP-disconnect and additional Wi-Fi wake triggers.
-
     -   Supports ARP/NS offload.
-
     -   Supports dynamic DTIM configuration.
-
     -   Passes all applicable networking tests in the Windows Hardware Certification Kit.
 
 -   If the Wi-Fi device is located outside of the SoC and attached via SDIO, the system integrator must develop the hardware and firmware for the Wi-Fi device to do the following:
