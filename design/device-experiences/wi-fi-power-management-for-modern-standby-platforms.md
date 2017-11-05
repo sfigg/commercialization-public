@@ -123,7 +123,7 @@ The Wi-Fi device must support several power-management modes. Each mode is a com
 
 The following table shows the expected power consumption and latency when exiting to an active state for each power-management mode. For these figures, assume that the Wi-Fi device is constantly connected to a single access point that has WPA2-Personal security, except in disconnected-sleep mode and power-removed mode.
 
-
+<br/>
 <table style="width:100%;">
 <thead>
 <tr class="header">
@@ -194,7 +194,7 @@ The Wi-Fi device is expected to always be powered on and connected to a network,
 The Wi-Fi miniport driver must enable the following key power-management features to ensure that the Wi-Fi device is power-efficient both during modern standby and when the display is turned on:
 
 -   [Power save mode](#power-save-mode)
--   [Pattern-match wake](#Pattern-match-wake)
+-   [Pattern-match wake](#pattern-match-wake)
 
 The following paragraphs discuss the requirements for these two features in detail.
 
@@ -317,9 +317,9 @@ Pattern-match wake and the ability to wake the SoC from a low-power idle state a
 
 In addition to power save mode and pattern-match wake, the Wi-Fi device and miniport driver must support several other run-time power-management features for Wi-Fi devices in modern standby platforms. These features are essential for reducing power consumption in the Wi-Fi device and overall hardware platform. As previously discussed, the Wi-Fi device and miniport driver must support the following features:
 
--   [Radio on/off state](#radio-on-off-state)
+-   [Radio on/off state](#radioon-off-state)
 -   [Network list offload (NLO)](#network-list-offload-nlo)
--   [ARP/NS offload](#arp-ns-offload)
+-   [ARP/NS offload](#arpns-offload)
 -   [D0 packet coalescing](#d0-packet-coalescing)
 -   [Dynamic DTIM management](#dynamic-dtim-management)
 -   [Wi-Fi connectivity wake triggers](#wi-fi-connectivity-wake-triggers), which include wake-on-AP-disconnect
@@ -522,7 +522,7 @@ Testing and validation of the Wi-Fi device should focus on directly measuring po
 
 The direct measurement of device power consumption is a critical part of testing and validation for a Wi-Fi device. Because the Wi-Fi device is almost always powered on when the platform is not in the S5 (shutown) system power state, the system integrator must test and validate Wi-Fi power consumption in a number of different system scenarios and configurations. We recommend directly measuring the power consumption of the Wi-Fi device for the two types of connections shown in the following table.
 
-
+<br/>
 <table>
 <colgroup>
 <col width="33%" />
