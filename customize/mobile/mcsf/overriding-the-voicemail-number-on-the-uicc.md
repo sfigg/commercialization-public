@@ -1,5 +1,5 @@
 ---
-title: Overriding the voicemail number on the UICC
+title: Override the voicemail number on the UICC
 description: Mobile operators can override the voicemail number on the UICC with a different voicemail number that is configured in the registry.
 MSHAttr:
 - 'PreferredSiteName:MSDN'
@@ -12,7 +12,7 @@ ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-# Overriding the voicemail number on the UICC
+# Override the voicemail number on the UICC
 
 
 Mobile operators can override the voicemail number on the UICC with a different voicemail number that is configured in the registry.
