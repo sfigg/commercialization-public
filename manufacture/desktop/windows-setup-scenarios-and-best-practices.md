@@ -5,7 +5,7 @@ ms.assetid: 651cb9c3-121d-40d3-9e17-47f1a78a000f
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Windows Setup Scenarios and Best Practices
 ms.author: themar
-ms.date: 05/02/2017
+ms.date: 11/06/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -55,9 +55,9 @@ This scenario includes the following stages:
 
 3.  Windows Setup reboots and restores your protected files, settings, and preferences. Windows Setup then launches Windows Welcome.
 
-**Note**  
-Upgrades are used to upgrade a single computer to Windows 8. Upgrades also support migrating user data to a new system.
-
+**Notes**  
+- Upgrades are used to upgrade a single computer to Windows 10. Upgrades also support migrating user data to a new system.
+- Windows Setup supports upgrading to an image that is updated with the the latest quality updates, but does not support upgrading to an image that's been customized to add additional apps and/or settings changes. 
  
 
 ### <span id="Automated_Installations"></span><span id="automated_installations"></span><span id="AUTOMATED_INSTALLATIONS"></span>Automated Installations
