@@ -1,5 +1,5 @@
 ---
-title: WAP browser support
+title: WAP browser support (CN and IN only)
 description: For phones that will ship in China and India, OEMs can add one preloaded WAP browser to the phone, which will automatically be launched when the user tries to open a WAP link.
 MSHAttr:
 - 'PreferredSiteName:MSDN'
@@ -12,7 +12,7 @@ ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-# WAP browser support
+# WAP browser support (CN and IN only)
 
 
 For phones that will ship in China and India, OEMs can add one preloaded WAP browser to the phone, which will automatically be launched when the user tries to open a WAP link. The WAP browser must be written as an application, and must go through the standard Microsoft Store submission process.

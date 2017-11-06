@@ -1,5 +1,5 @@
 ---
-title: Removing cellular functionality on the mobile device
+title: Remove cellular functionality from the device
 description: If your mobile device does not support a cellular radio or will not be connected to a cellular network, you can remove all cellular-related functionality from the device's user interface by adding the WIFI\_FEATURE\_PACK feature entry in your OEMInput.xml file.
 MSHAttr:
 - 'PreferredSiteName:MSDN'
@@ -12,7 +12,7 @@ ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-# Removing cellular functionality on the mobile device
+# Remove cellular functionality from the device
 
 
 If your mobile device does not support a cellular radio or will not be connected to a cellular network, you can remove all cellular-related functionality from the device's user interface by adding the WIFI\_FEATURE\_PACK feature entry in your OEMInput.xml file. This feature replaces the WEH\_WIFIONLY feature that you previously used in earlier versions of the mobile OS.

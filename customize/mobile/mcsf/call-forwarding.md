@@ -1,5 +1,5 @@
 ---
-title: Call forwarding
+title: Hide call forwarding
 description: Partners can hid the user option for call forwarding.
 MSHAttr:
 - 'PreferredSiteName:MSDN'
@@ -11,11 +11,9 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
+# Hide call forwarding
 
-# Call forwarding
-
-
-Partners can hid the user option for call forwarding.
+Partners can hide the user option for call forwarding.
 
 By default, users can decide whether to turn on call forwarding. Partners can hide this user option so that call forwarding is permanently disabled.
 
