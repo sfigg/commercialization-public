@@ -43,18 +43,18 @@ In addition, consider how you want to organize lab resources to best use the Win
 
 The device is connected via a USB cable, with the cable serving as the physical layer for establishing a virtualized IP connection (i.e., IP over USB). This enables devices without an Ethernet connection to present themselves to the controller as an IP endpoint.
 
-The Direct USB connection tethering method has known reliability and manageability issues that prevent it from being used in a large scale-lab environment. Flashing is supported over USB, but power cycling must be done manually. Furthermore, standard USB ports provide power in addition to a data connection, making simulating lower-power or battery-only testing impossible. Powered USB ports are also an issue for any tests with large power requirements as the test may drain the device's battery faster than it can be charged over USB.
+The Direct USB connection tethering method has known reliability and manageability issues that prevent it from being used in a large-scale lab environment. Flashing is supported over USB, but power cycling must be done manually. Furthermore, standard USB ports provide power in addition to a data connection, making simulating lower-power or battery-only testing impossible. Powered USB ports are also an issue for any tests with large power requirements as the test may drain the device's battery faster than it can be charged over USB.
 
 ### <span id="aries"></span><span id="ARIES"></span>Aries
 
-Aries is a hardware connectivity component developed at Microsoft and provides the bridge between a single device and a host wishing to control the device. The device is an Ethernet-to-USB dongle than enables the at-scale mobile testing capabilities of the HLK. Mobile test systems are connected to the IP network via a 1:1 Ethernet-to-USB dongle, with the USB side connecting directly to the device target. Aries allows for independently addressable devices that can reside anywhere on the network, without a need to always be attached to the same USB port on the same HLK controller.
+Aries is a hardware connectivity component developed at Microsoft and provides the bridge between a single device and a host wishing to control the device. The device is an Ethernet-to-USB dongle that enables the at-scale mobile testing capabilities of the HLK. Mobile test systems are connected to the IP network via a 1:1 Ethernet-to-USB dongle, with the USB side connecting directly to the device target. Aries allows for independently addressable devices that can reside anywhere on the network, without a need to always be attached to the same USB port on the same HLK controller.
 
 Hardware specification and acquisition details are available at <http://aries.msoon.com>.
 
 ## <span id="small_scale_testing"></span><span id="SMALL_SCALE_TESTING"></span>Small-Scale testing
 
 
-Small-Scale test infrastructures are labs testing 1-2 mobile devices per controller. The limiting factor with this setup is the number of unique USB host controllers on the Test Server. Only one device should be connect per host controller for best results.
+Small-Scale test infrastructures are labs testing 1 or 2 mobile devices per controller. The limiting factor with this setup is the number of unique USB host controllers on the Test Server. Only one device should be connected per host controller for best results.
 
 The following hardware is required per 2 devices under test on a single controller:
 
@@ -62,7 +62,7 @@ The following hardware is required per 2 devices under test on a single controll
 
 ### <span id="Setup"></span><span id="setup"></span><span id="SETUP"></span>Setup
 
-Testing 1-2 devices can be achieved over USB directly. The limitation with this connection type is that power cycling is not available and accurate power testing cannot be done as USB ports are generally powered.
+Testing 1 or 2 devices can be achieved over USB directly. The limitation with this connection type is that power cycling is not available and accurate power testing cannot be done as USB ports are generally powered.
 
 ![small scale testing diagram](images/hlk-proxy-client-small-scale-testing.png)
 
