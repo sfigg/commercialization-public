@@ -9,27 +9,11 @@ ms.assetid: 2A63206F-2C05-46F8-9458-CF3E9AF33C7E
 
 # HLK Proxy Client Prerequisites
 
->[!NOTE]
->  A Battery Blank is required for Aries mobile testing in this release. For more information, see [Battery Blank Information Guide](battery-blank-information-guide.md).
+> [!IMPORTANT]
+> <p>A Battery Blank is required for Aries mobile testing in this release. For more information, see [Battery Blank Information Guide](battery-blank-information-guide.md).</p>
 
->[!WARNING]
->  The Windows Hardware Lab Kit should only be installed on machines that are dedicated solely for testing purposes. Do not install any HLK component on a machine that is outside of a dedicated testing environment.
-
->[!IMPORTANT]
->  
-Controller setup will fail if .NET Framework 4.5 has not previously been installed. Be sure to install .NET Framework 4.5 from the following location prior to controller setup.
-
--   <https://www.microsoft.com/net/download/framework>
-
-Proxy setup will fail if .NET Framework 4.6 has not previously been installed. .NET 4.6 is included with Windows 10 but must be installed separately on other versions of Windows. You can download .NET 4.6 from the following location:
-
--   <https://www.microsoft.com/net/download/framework>
-
-32-bit SQL Server installations are not supported. You must uninstall any 32-bit SQL Server installation prior to installing the HLK.
-
-SQL Server 2014 is not supported. You must uninstall any SQL Server 2014 installations prior to installing the HLK.
-
- 
+> [!WARNING]
+> <p>32-bit SQL Server installations are not supported. You must uninstall any 32-bit SQL Server installation prior to installing the HLK.</p><p>SQL Server 2014 is not supported. You must uninstall any SQL Server 2014 installations prior to installing the HLK.</p><p>The Windows Hardware Lab Kit should only be installed on machines that are dedicated solely for testing purposes. Do not install any HLK component on a machine that is outside of a dedicated testing environment.</p><p>Controller setup will fail if .NET Framework 4.5 has not previously been installed. Be sure to install .NET Framework 4.5 from the following location prior to controller setup.</p><ul><li><a href="https://www.microsoft.com/net/download/framework">https://www.microsoft.com/net/download/framework</a></li></ul><p>Proxy setup will fail if .NET Framework 4.6 has not previously been installed. .NET 4.6 is included with Windows 10 but must be installed separately on other versions of Windows. You can download .NET 4.6 from the following location:</p><ul><li><a href="https://www.microsoft.com/net/download/framework">https://www.microsoft.com/net/download/framework</a></li></ul>
 
 Before you begin testing, make sure that the test environment meets the necessary requirements. The Windows HLK Mobile testing environment is comprised of three components: an HLK test server, an HLK Proxy system, and one or more test systems.
 
@@ -292,15 +276,3 @@ To manage the volume of devices in this scenario and handle the bandwidth, multi
 </tr>
 </tbody>
 </table>
-
- 
-
- 
-
- 
-
-
-
-
-
-
