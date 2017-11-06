@@ -1,5 +1,5 @@
 ---
-title: Disabling text correction and suggestions
+title: Disable text correction and suggestions
 description: For markets that do not use any of the available input languages, partners pick an alternative available input language as the default, but disable text prediction, auto-correction, and the spelling checker by default, using this customization.
 MSHAttr:
 - 'PreferredSiteName:MSDN'
@@ -12,7 +12,7 @@ ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-# Disabling text correction and suggestions
+# Disable text correction and suggestions
 
 
 For markets that do not use any of the available input languages, partners pick an alternative available input language as the default, but disable text prediction, auto-correction, and the spelling checker by default, using this customization.

@@ -11,39 +11,33 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # Default value for browser data saver
 
+Partners can configure the default setting for the browser data saver feature by turning the browser optimization service on or off, using the `BrowserDataSaver` setting.
 
-Partners can configure the default setting for the browser data saver feature by turning the browser optimization service on or off, using the **BrowserDataSaver** setting
+<a href="" id="constraints---none"></a>**Constraints:** None
 
-<a href="" id="constraints---none"></a>**Constraints:** None  
+## Instructions
 
-<a href="" id="instructions-"></a>**Instructions:**  
-1.  Create a customization answer file using the contents shown in the following code sample.
+1. Create a customization answer file using the contents shown in the following code sample.
 
     ```XML
-    <?xml version="1.0" encoding="utf-8" ?>  
-    <ImageCustomizations xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate"  
-                         Name="BrowserDataSaver"  
-                         Description="Use to configure the default setting for the browser data saver feature."  
-                         Owner=""  
-                         OwnerType="OEM"> 
-      
-      <Static>  
-
-        <Settings Path="InternetExplorer/DataSaving">  
-          <Setting Name="BrowserDataSaver" Value="" /> 
-       </Settings>  
-
+    <?xml version="1.0" encoding="utf-8" ?>
+    <ImageCustomizations xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate"
+                         Name="BrowserDataSaver"
+                         Description="Use to configure the default setting for the browser data saver feature."
+                         Owner=""
+                         OwnerType="OEM">
+      <Static>
+        <Settings Path="InternetExplorer/DataSaving">
+          <Setting Name="BrowserDataSaver" Value="" />
+       </Settings>
       </Static>
-
     </ImageCustomizations>
     ```
 
-2.  Specify an `Owner`.
-
-3.  Set `BrowserDataSaver` to one of the following values:
+1. Specify an `Owner`.
+1. Set `BrowserDataSaver` to one of the following values:
 
     <table>
     <colgroup>
@@ -75,22 +69,15 @@ Partners can configure the default setting for the browser data saver feature by
     </tbody>
     </table>
 
-     
+## Testing steps
 
-<a href="" id="testing-steps-"></a>**Testing steps:**  
-1.  Flash the build containing this customization to a device.
-
-2.  Open Microsoft Edge to launch the browser for the first time. Select **recommended** when the dialog to use the browser settings is displayed.
-
-3.  Go to the browser settings CPL.
-
-4.  Depending on the value that you set for `BrowserDataSaver`, verify:
-
-    -   If `BrowserDataSaver` is set to 0, verify that the **Data Sense savings** option is set to **off**.
-
-    -   If `BrowserDataSaver` is set to 1, verify that the **Data Sense savings** option is set to **automatic**.
-
-    -   If `BrowserDataSaver` setting has not been set, verify that the **Data Sense savings** option is set to **automatic**.
+1. Flash the build containing this customization to a device.
+1. Open Microsoft Edge to launch the browser for the first time. Select **recommended** when the dialog to use the browser settings is displayed.
+1. Go to the browser settings CPL.
+1. Depending on the value that you set for `BrowserDataSaver`, verify:
+   * If `BrowserDataSaver` is set to 0, verify that the **Data Sense savings** option is set to **off**.
+   * If `BrowserDataSaver` is set to 1, verify that the **Data Sense savings** option is set to **automatic**.
+   * If `BrowserDataSaver` setting has not been set, verify that the **Data Sense savings** option is set to **automatic**.
 
 ## Related topics
 
