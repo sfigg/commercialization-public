@@ -25,7 +25,7 @@ Users can choose to enable battery saver when the battery level reaches a certai
 
 When battery saver is on, several Windows features behave differently:
 
--   Windows Store Mail, People, and Calendar apps do not sync.
+-   Microsoft Store Mail, People, and Calendar apps do not sync.
 
 -   Apps running in the background are blocked. Users can allow specific individual apps to run while in battery saver mode. Certain categories of apps continue to run. For example, VOIP apps are not blocked.
 

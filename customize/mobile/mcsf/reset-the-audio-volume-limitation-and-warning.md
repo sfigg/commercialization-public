@@ -35,7 +35,7 @@ To reset the audio volume limit and show the volume level warning every time the
 
     For more information about MCSF, see [Managed Centralized Settings Framework (MCSF)](managed-centralized-settings-framework-mcsf.md). The following code example shows an MCSF policy setting for the **VolumeThresholdPlayTimeLimit** registry value.
 
-    ```
+    ```XML
              <SettingsGroup Path="VolumeLimit">
                 <Setting Name="VolumeThresholdPlayTimeLimit" Description="Resets the audio volume limit and shows the volume level warning
                               every time the volume exceeds the VolumeLimit threshold for at least 20 cumulative hours.">
@@ -73,7 +73,7 @@ To reset the audio volume limit and show the volume level warning every time the
 
     For example, the following code snippet shows a sample OEM feature manifest (FM) file that may contain the .spkg that includes the customization:
 
-    ```
+    ```XML
     <?xml version="1.0" encoding="utf-8"?>  
     <FeatureManifest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate">  
     <!--  Sample FM File -->
@@ -95,7 +95,7 @@ To reset the audio volume limit and show the volume level warning every time the
 
     For example, the OEMInput.xml entry for the example VOLUME\_THRESHOLD\_PLAY\_TIME\_LIMIT feature may look like the following:
 
-    ```
+    ```XML
       <Features>
         <OEM>
           <Feature>VOLUME_THRESHOLD_PLAY_TIME_LIMIT</Feature>
@@ -117,3 +117,9 @@ To reset the audio volume limit and show the volume level warning every time the
     Continue to listen to music for 20 or more hours.
 
 4.  If you set **VolumeThresholdPlayTimeLimit** to a hexadecimal value that corresponds to 19 hours and 54 minutes (or less), verify that the volume level is reset and the volume warning is shown before you reach 20 cumulative hours of playing music with the volume set above the **VolumeLimit**.
+
+## Related topics
+
+[Prepare for Windows mobile development](https://docs.microsoft.com/en-us/windows-hardware/manufacture/mobile/preparing-for-windows-mobile-development)
+
+[Customization answer file overview](https://docs.microsoft.com/en-us/windows-hardware/customize/mobile/mcsf/customization-answer-file)

@@ -27,7 +27,7 @@ Windows Performance Recorder (WPR) enables heap analysis for all processes on t
 
     **reg add "HKLM\\Software\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\&lt;process\_name&gt;" /v TracingFlags /t REG\_DWORD /d 1 /f**
 
-**To enable heap tracing for a Windows Store app**
+**To enable heap tracing for a Microsoft Store app**
 
 1.  From the **More options** dropdown menu, select the **Heap usage** profile.
 

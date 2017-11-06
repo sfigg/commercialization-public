@@ -14,22 +14,20 @@ ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-# TraceMergeProperty
 
+# TraceMergeProperty
 
 Contains configurations that are applied when recordings from multiple profiles are merged. This element is for internal use only.
 
+
 ## Element Hierarchy
 
+* \<[WindowsPerformanceRecorder](windowsperformancerecorder.md)\>
+  * \<[TraceMergeProperties](tracemergeproperties.md)\>
+    * \<**TraceMergeProperty**\>
 
-&lt;[WindowsPerformanceRecorder](windowsperformancerecorder.md)&gt;
-
-     &lt;[TraceMergeProperties](tracemergeproperties.md)&gt;
-
-          &lt;**TraceMergeProperty**&gt;
 
 ## Syntax
-
 
 ```
 <TraceMergeProperty Id   = IdType
@@ -43,125 +41,40 @@ Contains configurations that are applied when recordings from multiple profiles 
 </TraceMergeProperty>
 ```
 
+
 ## Attributes and Elements
 
 
 ### Attributes
 
-<table>
-<colgroup>
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Attribute</th>
-<th>Description</th>
-<th>Data type</th>
-<th>Required</th>
-<th>Default</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><strong>ID</strong></p></td>
-<td><p>Uniquely identifies this element.</p></td>
-<td><p>String that must have at least one character and cannot contain colons (:) or spaces.</p></td>
-<td><p>Yes</p></td>
-<td><p></p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Name</strong></p></td>
-<td><p>Indicates the name of this element.</p></td>
-<td><p>string</p></td>
-<td><p>Yes</p></td>
-<td><p></p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Base</strong></p></td>
-<td><p>Indicates the base of this element. Derived elements have all the attributes of the base by default. You can override these attributes by explicitly specifying them in the derived element.</p></td>
-<td><p>string</p></td>
-<td><p>No</p></td>
-<td><p></p></td>
-</tr>
-</tbody>
-</table>
+| Attribute | Description                                                                                                                                                                                  | Data type                                                                             | Required | Default |
+| :-------  | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------ | :------- | :------ |
+| **ID**    | Uniquely identifies this element.                                                                                                                                                            | String that must have at least one character and cannot contain colons (:) or spaces. | Yes      |         |
+| **Name**  | Indicates the name of this element.                                                                                                                                                          | string                                                                                | Yes      |         |
+| **Base**  | Indicates the base of this element. Derived elements have all the attributes of the base by default. You can override these attributes by explicitly specifying them in the derived element. | string                                                                                | No       |         |
 
- 
 
 ### Child Elements
 
-<table>
-<colgroup>
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-<th>Description</th>
-<th>Requirement</th>
-<th>Possible Values</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>[DeletePreMergedTraceFiles](deletepremergedtracefiles.md)</p></td>
-<td><p>Indicates whether to delete premerged event trace log (ETL) files.</p></td>
-<td><p>Optional</p></td>
-<td><p>true, false</p></td>
-</tr>
-<tr class="even">
-<td><p>[FileCompression](filecompression.md)</p></td>
-<td><p>Indicates whether to compress the ETL file.</p></td>
-<td><p>Optional</p></td>
-<td><p>true, false</p></td>
-</tr>
-<tr class="odd">
-<td><p>[CustomEvents](customevents.md)</p></td>
-<td><p>Represents a collection of custom events.</p></td>
-<td><p>Optional</p></td>
-<td><p>true, false</p></td>
-</tr>
-</tbody>
-</table>
+| Element                                                   | Description                                                        | Requirement | Possible Values |
+| :-------------------------------------------------------- | :----------------------------------------------------------------- | :---------- | :-------------- |
+| [DeletePreMergedTraceFiles](deletepremergedtracefiles.md) | Indicates whether to delete premerged event trace log (ETL) files. | Optional    | true, false     |
+| [FileCompression](filecompression.md)                     | Indicates whether to compress the ETL file.                        | Optional    | true, false     |
+| [CustomEvents](customevents.md)                           | Represents a collection of custom events.                          | Optional    | true, false     |
 
- 
 
 ### Parent Elements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>[TraceMergeProperties](tracemergeproperties.md)</p></td>
-<td><p>Represents a collection of trace merge properites.</p></td>
-</tr>
-</tbody>
-</table>
+| Element                                         | Description                                        |
+| :---------------------------------------------- | :------------------------------------------------- |
+| [TraceMergeProperties](tracemergeproperties.md) | Represents a collection of trace merge properites. |
 
- 
 
 ## Example
 
-
 The following code example shows a trace merge property definition.
 
-```
+```xml
 <TraceMergeProperty
   Id="TraceMerge_Default"
   Name="TraceMerge_Default">
@@ -188,18 +101,8 @@ The following code example shows a trace merge property definition.
 </TraceMergeProperty>
 ```
 
+
 ## Related topics
 
-
 [Elements](elements.md)
-
- 
-
- 
-
-
-
-
-
-
 

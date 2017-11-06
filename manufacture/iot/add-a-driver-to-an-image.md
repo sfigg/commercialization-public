@@ -51,36 +51,39 @@ For example, review the list of drivers in the file: \\IoT-ADK-AddonKit\\Source-
 
 **Verify that the sample files are in the package**
 
-1.  Update the driver's package definition file, **C:\\IoT-ADK-AddonKit\\Source-&lt;arch&gt;\\Packages\\Drivers.HelloBlinky\\Drivers.HelloBlinky.pkg.xml**.
+1.  Update the driver's package definition file, **C:\\IoT-ADK-AddonKit\\Source-&lt;arch&gt;\\Packages\\Drivers.HelloBlinky\\Drivers.HelloBlinky.wm.xml**.
 
     The default package definition file includes sample XML that you can modify to add your own driver files.
 
     If necessary, update the value of File Source to point to your .SYS file, and the ACPITABL.dat file. (You don't need to add the .INF file.)  Add the DestinationDir of "$(runtime.drivers)".
     
     ``` xml
-    <Package xmlns="urn:Microsoft.WindowsPhone/PackageSchema.v8.00" 
-         Owner="$(OEMNAME)" OwnerType="OEM" ReleaseType="Production" 
-         Platform="arm" Component="Drivers" SubComponent="HelloBlinky"> 
-      <Components> 
-        <Driver InfSource="gpiokmdfdemo.inf"> 
-          <Reference Source="gpiokmdfdemo.sys" /> 
-          <Files> 
-            <File Source="gpiokmdfdemo.sys"  
-                  DestinationDir="$(runtime.drivers)"  
-                  Name="gpiokmdfdemo.sys" /> 
-            <File Source="ACPITABL.dat"  
-                  DestinationDir="$(runtime.system32)"  
-                  Name="ACPITABL.dat" /> 
-          </Files> 
-        </Driver> 
-      </Components> 
-    </Package> 
+    <?xml version="1.0" encoding="utf-8"?>
+    <identity xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        name="HelloBlinky"
+        namespace="Drivers"
+        owner="$(OEMNAME)"
+        legacyName="$(OEMNAME).Drivers.HelloBlinky" xmlns="urn:Microsoft.CompPlat/ManifestSchema.v1.00">
+        <onecorePackageInfo
+            targetPartition="MainOS"
+            releaseType="Production"
+            ownerType="OEM" />
+        <drivers>
+            <driver>
+                <inf source="iaiogpio.inf" />
+                <files>
+                    <file source="iaiogpio.sys" destinationDir="$(runtime.drivers)" name="iaiogpio.sys" />
+                    <file source="ACPITABL.dat" destinationDir="$(runtime.system32)" name="ACPITABL.dat" />
+                </files>
+            </driver>
+        </drivers>
+    </identity>
     ```
 
 2.  From the IoT Core Shell, build the package.
 
     ```
-    createpkg Drivers.HelloBlinky
+    buildpkg Drivers.HelloBlinky
     ```
 
     The package is built, appearing as **C:\\IoT-ADK-AddonKit\\Build\\&lt;arch&gt;\\pkgs\\&lt;your OEM name&gt;.Drivers.HelloBlinky.cab**.
@@ -102,7 +105,7 @@ For example, review the list of drivers in the file: \\IoT-ADK-AddonKit\\Source-
             </FeatureIDs>
           </PackageFile>
     ```
-3. Update the files in the MergedFMs folder. This has to be done every time any time an FM file is modified.
+3. Generate feature identifier packages and merged FM files. This has to be done every time any time an FM file is modified.
 
     ```
     buildfm bsp rpi2

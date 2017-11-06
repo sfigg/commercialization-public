@@ -33,7 +33,7 @@ This customization supports: **per-IMSI** value
 <a href="" id="instructions-"></a>**Instructions:**  
 1.  Create a customization answer file using the contents shown in the following code sample.
 
-    ```
+    ```XML
     <?xml version="1.0" encoding="utf-8" ?>  
     <ImageCustomizations xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate"  
                          Name="DialStringOverrides"  
@@ -91,7 +91,7 @@ This customization supports: **per-IMSI** value
 
     1.  Replace *$(DialString)* in the settings name with the name of the dial string or number that the user will dial when roaming. For example, if the user will dial \*611, set the setting name to:
 
-        ```
+        ```XML
               <Setting Name="DialString/*611" Value="" />
         ```
 
@@ -103,7 +103,7 @@ This customization supports: **per-IMSI** value
 
     The following example shows how to create a mapping for two dial strings, \*611 and \*86:
 
-    ```
+    ```XML
         <Settings Path="Phone/PerSimSettings/$(__IMSI)/RoamingNumberOverrides">  
           <Setting Name="DialString/*611" Value="+18001234567" />      
           <Setting Name="DialString/*86" Value="+1&lt;SUB&gt;" />      
@@ -125,12 +125,8 @@ To verify this customization, the phone must be roaming internationally. Work wi
 
     Verify that the override numbers are not shown on the phone when the dial strings are called.
 
- 
+## Related topics
 
- 
+[Prepare for Windows mobile development](https://docs.microsoft.com/en-us/windows-hardware/manufacture/mobile/preparing-for-windows-mobile-development)
 
-
-
-
-
-
+[Customization answer file overview](https://docs.microsoft.com/en-us/windows-hardware/customize/mobile/mcsf/customization-answer-file)

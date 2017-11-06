@@ -1185,7 +1185,21 @@
         "source_path": "design/what-s-new-in-design.md", 
         "redirect_url": "get-started/what-s-new-in-windows.md", 
         "redirect_document_id": true
+    },    
+    {   
+        "source_path": "test/hlk/qosremotesettings.md", 
+        "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/test/hlk/testref/qosremotesettings", 
+        "redirect_document_id": true
+    }, 
+    {   
+        "source_path": "test/assessments/windows-store-app-performance.md", 
+        "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/test/assessments/microsoft-store-app-performance", 
+        "redirect_document_id": true
+    }, 
+    {   
+        "source_path": "test/assessments/results-for-the-windows-store-app-performance-assessment.md", 
+        "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/test/assessments/results-for-the-microsoft-store-app-performance-assessment", 
+        "redirect_document_id": true
     }
-
   ] 
 }

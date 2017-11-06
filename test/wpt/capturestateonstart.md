@@ -52,44 +52,22 @@ Represents a collection of keywords that describe events to be captured at the s
 
 ### Attributes
 
-<table>
-<thead>
-<tr class="header">
-<th>Attribute</th>
-<th>Description</th>
-<th>Data type</th>
-<th>Required</th>
-<th>Default</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><strong>Operation</strong></p></td>
-<td><p>Indicates whether keywords should be set or added.</p></td>
-<td><p>This attribute can have one of the following values:</p>
-<ul>
-<li><p>Set</p></li>
-<li><p>Add</p></li>
-<li><p>Remove</p></li>
-</ul></td>
-<td><p>No</p></td>
-<td><p>Set</p></td>
-</tr>
-</tbody>
-</table>
+| Attribute     | Description                                        | Data type                                                                                                 | Required | Default |
+| :------------ | :------------------------------------------------- | :-------------------------------------------------------------------------------------------------------- | :------- | :------ |
+| **Operation** | Indicates whether keywords should be set or added. | This attribute can have one of the following values: <ul> <li>Set</li> <li>Add</li> <li>Remove</li> </ul> | No       | Set     |
 
 
 ### Child Elements
 
 | Element                                                     | Description                                                                     | Requirement            |
-|:------------------------------------------------------------|:--------------------------------------------------------------------------------|:-----------------------|
+| :---------------------------------------------------------- | :------------------------------------------------------------------------------ | :--------------------- |
 | [Keyword (in EventProvider)](keyword--in-eventprovider-.md) | Describes the Event Tracing for Windows (ETW) keyword for a user-mode provider. | Required, one or more. |
 
 
 ### Parent Elements
 
 | Element                               | Description                                   |
-|:--------------------------------------|:----------------------------------------------|
+| :------------------------------------ | :-------------------------------------------- |
 | [EventProvider](eventprovider.md)     | Represents an event provider for the profile. |
 | [EventProviderId](eventproviderid.md) | Represents an event provider identifier.      |
 
@@ -98,7 +76,7 @@ Represents a collection of keywords that describe events to be captured at the s
 
 The following code example shows how this element is used.
 
-```
+```xml
 <EventProvider Id="sample-provider" Name="SampleProvider" NonPagedMemory="true" Level="5">
   <Keywords>
     <Keyword Value="0x98"/> <!-- Provider is enabled with these keywords throughout tracing session -->

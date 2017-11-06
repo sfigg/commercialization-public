@@ -21,7 +21,7 @@ Regions of Interest is a new capability in WPA that enables the application of u
 
 As an example, assume a scenario that contains several loading sequences, each of which is defined by one event, A, followed by another event, B. With Regions of Interest, you can apply a user-friendly "Loading" label to each of these A-B time spans. Now, instead of having to manually identify each of these event sequences, WPA automatically applies the "Loading" label, allowing you to quickly visualize where these events occur.
 
-As another example, a user needs to analyze the performance of a particular Windows Store app. The application lifecycle can be broken down into several phases, such as launch, suspend/resume, and shutdown, each of which could have a corresponding region definition. With these region definitions, any user could easily identify where these lifecycle events occur.
+As another example, a user needs to analyze the performance of a particular Microsoft Store app. The application lifecycle can be broken down into several phases, such as launch, suspend/resume, and shutdown, each of which could have a corresponding region definition. With these region definitions, any user could easily identify where these lifecycle events occur.
 
 To use Regions of Interest with WPA, you must have the following:
 

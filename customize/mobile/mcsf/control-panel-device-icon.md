@@ -60,7 +60,7 @@ Create an icon to represent the phone that meets the following specifications:
 <a href="" id="instructions-"></a>**Instructions:**  
 1.  Create a customization answer file using the contents shown in the following code sample.
 
-    ```
+    ```XML
     <?xml version="1.0" encoding="utf-8" ?>  
     <ImageCustomizations xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate"  
                          Name="ControlPanelDeviceIcon"  
@@ -102,12 +102,8 @@ Create an icon to represent the phone that meets the following specifications:
 
 4.  On the computer, navigate to the **Devices and Printers** screen. Verify that the phone icon that you included in the build is visible.
 
- 
+## Related topics
 
- 
+[Prepare for Windows mobile development](https://docs.microsoft.com/en-us/windows-hardware/manufacture/mobile/preparing-for-windows-mobile-development)
 
-
-
-
-
-
+[Customization answer file overview](https://docs.microsoft.com/en-us/windows-hardware/customize/mobile/mcsf/customization-answer-file)
