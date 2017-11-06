@@ -57,7 +57,7 @@ This scenario includes the following stages:
 
 **Notes**  
 - Upgrades are used to upgrade a single computer to Windows 10. Upgrades also support migrating user data to a new system.
-- Windows Setup supports upgrading to an image that is updated with the the latest quality updates, but does not support upgrading to an image that's been customized to add additional apps and/or settings changes. 
+- Windows Setup supports upgrading to an image that has the latest quality updates injected, but does not support upgrading to an image that's been customized to add additional apps and/or settings changes. 
  
 
 ### <span id="Automated_Installations"></span><span id="automated_installations"></span><span id="AUTOMATED_INSTALLATIONS"></span>Automated Installations
