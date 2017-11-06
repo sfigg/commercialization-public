@@ -19,7 +19,7 @@ These standards are for general purpose desktops, laptops, tablets, 2-in-1’s, 
 | Virtualization | <ul><li> Systems must have a processor that supports Input-Output Memory Management Unit (IOMMU) device virtualization and all I/O devices must be protected by IOMMU/SMMU</li><li>Systems must also have virtual machine extensions with second level address translation (SLAT)</li><li> The presence of these hardware virtualization features must be unmasked and reported as supported by the system firmware, and these features must be available for the operating system to use </li></ul> | <ul><li>For IOMMU, the system must have Intel VT-d, AMD-Vi, or ARM64 SMMUs</li><li> For SLAT, the system must have Intel Vt-x with Extended Page Tables (EPT), or AMD-v with Rapid Virtualization Indexing (RVI)</li></ul> |
 | Trusted Platform Module (TPM) | Systems must have a Trusted Platform Module (TPM), version 2.0, and meet the latest Microsoft requirements for the [Trustworthy Computing Group(TCG)](https://trustedcomputinggroup.org/) specification  | Intel (PTT), AMD, or discrete TPM from Infineon, STMicroelectronics, Nuvoton |
 | Platform boot verification | Systems must implement cryptographically verified platform boot | Intel Boot Guard in Verified Boot mode, or AMD Hardware Verified Boot, or an OEM equivalent mode with similar functionality |
-| RAM | Systems must have 8 gigabites or more of system RAM | |
+| RAM | Systems must have 8 gigabytes or more of system RAM |   |
 
 ##Firmware
 | Feature | Requirement | Details |
