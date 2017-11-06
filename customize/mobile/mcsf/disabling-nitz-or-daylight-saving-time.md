@@ -1,5 +1,5 @@
 ---
-title: Disabling NITZ or daylight saving time
+title: Disable NITZ or daylight saving time
 description: OEMs can configure NITZ to handle daylight saving time appropriately for their market, or disable automatic setting of date and time completely.
 MSHAttr:
 - 'PreferredSiteName:MSDN'
@@ -12,7 +12,7 @@ ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-# Disabling NITZ or daylight saving time
+# Disable NITZ or daylight saving time
 
 
 OEMs can configure NITZ to handle daylight saving time appropriately for their market, or disable automatic setting of date and time completely.
