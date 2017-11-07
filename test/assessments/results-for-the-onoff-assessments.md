@@ -62,43 +62,25 @@ This section describes the key metrics reported by the On/Off assessments, commo
 In this section:
 
 -   [Shutdown Duration & Suspend Duration](#oo-shutdown-duration)
-
 -   [User Session Shutdown Duration](#oo-user-session-shutdown-duration)
-
 -   [Shutdown Processes Duration](#oo-shutdown-processes)
-
 -   [Winlogon Suspend Duration & Winlogon Notifications Duration](#oo-winlogon-suspend)
-
 -   [Suspend Processes Duration](#oo-suspend-processes-duration)
-
 -   [Suspend Services Duration](#oo-suspend-services-duration)
-
 -   [Superfetch Prepare Memory Duration](#oo-superfetch-prepare-memory-duration)
-
 -   [Query Devices Duration](#oo-query-devices-duration)
-
 -   [Flush Storage Volumes Duration](#oo-flush-storage-volumes-duration)
-
 -   [Suspend Devices Duration](#oo-suspend-devices-duration)
-
 -   [Hiberfile Write Duration](#oo-hiberfile-write-duration)
-
 -   [BIOS Initialization Duration](#oo-bios-initialization-duration)
-
 -   [Total Boot \[Excluding BIOS\] Duration & Total Resume \[Excluding BIOS\] Duration](#oo-total-boot)
-
 -   [Main Path Boot Duration & Main Path Resume Duration](#oo-main-path)
-
 -   [Boot Manager](#oo-boot-manager)
-
 -   [Hiberfile Read Duration](#oo-hiberfile-read-duration)
-
 -   [Resume Devices Duration](#oo-resume-devices-duration)
-
+-   [Operating System Selection Menu Duration]()
 -   [Winlogon Resume Duration](#oo-winlogon-resume-duration)
-
 -   [Explorer Initialization Duration](#oo-explorer-initialization-duration)
-
 -   [Post On/Off Duration](#oo-post-on-off-duration)
 
 > [!NOTE]
