@@ -22,9 +22,17 @@ Copy these scripts to the root of your storage USB drive.  Refer to this page to
 > [!div class="nextstepaction"]
 > [Install Windows PE](install-windows-pe-sxs.md)
 
-## <span id="Image_deployment_scripts"></span><span id="image_deployment_scripts"></span><span id="IMAGE_DEPLOYMENT_SCRIPTS"></span>Image deployment scripts
+## <span id="Image_deployment_scripts"></span><span id="image_deployment_scripts"></span><span id="IMAGE_DEPLOYMENT_SCRIPTS"></span>Image deployment scripts (WIM)
 
 The following scripts set up Windows devices by using an image file, and configure push-button reset features.
+
+The following files make up the WIM deployment scripts:
+- ApplyImage.bat
+- ApplyRecovery.bat
+- CreatePartitions-BIOS.txt
+- CreatePartitions-UEFI.txt
+- HideRecoveryPartitions-BIOS.txt
+- HideRecoveryPartitions-UEFI.txt
 
 ### <span id="CreatePartitions-_firmware_.txt"></span><span id="createpartitions-_firmware_.txt"></span><span id="CREATEPARTITIONS-_FIRMWARE_.TXT"></span>CreatePartitions-(firmware).txt
 
@@ -37,7 +45,7 @@ Use this script apply a Windows image to a new device.
 **Note:** If you copy and paste the contents below to create a .bat file, you may get an error when detecting firmware. For firmware detection to succeed, ensure that the lines that begin `for /f "tokens=2* delims=	 " %%A` has a tab followed by a space in between `delims=` and `" %%A`.
 
 ```
-@echo Apply-Image.bat
+@echo ApplyImage.bat
 @echo     Run from the reference device in the WinPE environment
 @echo     This script erases the primary hard drive and applies a new image
 @echo.
@@ -297,6 +305,16 @@ list volume
 
 These scripts are modified versions of the image deployment scripts above. The FFU deployment scripts don't create a recovery partition for initial image deployment so that the Windows partition can be expanded after an FFU is applied. Use these scripts if you're capturing an FFU that will be applied to a larger disk than the disk that was captured. 
 
+The following files make up the FFU deployment scripts:
+- ApplyImage-FFU.bat
+- ApplyRecovery-FFU.bat
+- CreatePartitions-BIOS-FFU.txt
+- CreatePartitions-UEFI-FFU.txt
+- CreateRecoveryPartitions-BIOS.txt
+- CreateRecoveryPartitions-UEFI.txt
+- HideRecoveryPartitions-BIOS.txt
+- HideRecoveryPartitions-UEFI.txt
+
 ### ApplyImage-FFU.bat
 
 This script creates hard drive partitions, and applies a WIM to a PC. Unlike ApplyImage.bat, this script does not create a recovery partition. ApplyImage-FFU.bat calls CreatePartitions-BIOS-FFU.txt and CreatePartitions-UEFI-FFU.txt to create the disk partitions. Make sure that these files are in the same folder as ApplyImage-FFU.bat.
@@ -389,7 +407,7 @@ W:\Windows\System32\bcdboot W:\Windows /s S:
 ### CreatePartitions-BIOS-FFU.txt
 
 ```
-rem == CreatePartitions-BIOS.txt ==
+rem == CreatePartitions-BIOS-FFU.txt ==
 rem == These commands are used with DiskPart to
 rem    create two partitions
 rem    for a BIOS/MBR-based computer.
@@ -416,7 +434,7 @@ exit
 ### CreatePartitions-UEFI-FFU.txt
 
 ```
-rem == CreatePartitions-UEFI.txt ==
+rem == CreatePartitions-UEFI-FFU.txt ==
 rem == These commands are used with DiskPart to
 rem    create three partitions
 rem    for a UEFI/GPT-based PC.
@@ -529,7 +547,7 @@ if %Firmware%==0x2 diskpart /s HideRecoveryPartitions-UEFI.txt
 ### CreateRecoveryPartitions-BIOS.txt
 
 ```
-rem == CreatePartitions-BIOS.txt ==
+rem == CreateRecoveryPartitions-BIOS.txt ==
 select disk 0
 select partition 2
 rem == extend the Windows partition ==
@@ -552,7 +570,7 @@ exit
 ### CreateRecoveryPartitions-UEFI.txt
 
 ```
-rem == CreatePartitions-UEFI.txt ==
+rem == CreateRecoveryPartitions-UEFI.txt ==
 select disk 0
 select partition 3
 rem == extend the Windows partition ==
