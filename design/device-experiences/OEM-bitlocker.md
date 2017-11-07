@@ -10,6 +10,8 @@ MSHAttr:
 
 BitLocker drive encryption in Windows 10 consists of two parts: **BitLocker drive encryption** and **BitLocker automatic device encryption**. BitLocker drive encryption provides offline data and operating system protection by ensuring that the drive is not tampered with with the operating system is offline. BitLocker drive encryption uses a [Trusted Platform Module (TPM) 2.0](OEM-tpm.md) microchip, that supports the Static Root of Trust Measurement as defined by the [Trusted Computing Group](https://trustedcomputinggroup.org/). 
 
+BitLocker automatic device encryption uses BitLocker drive encryption technology to automatically encrypt internal drives after the user completes the Out Of Box Experience (OOBE) on InstantGo or HSIT compliant hardware.
+
 ## BitLocker drive encryption hardware requirements
 BitLocker drive encryption uses a system partition separate from the Windows partition. The BitLocker system partition must meet the following requirements.
 - The BitLocker system partition is configured as the active partition.
@@ -27,7 +29,7 @@ BitLocker automatic device encryption is automatically enabled with the right ha
 
 ## BitLocker automatic device encryption hardware requirements
 BitLocker automatic device encryption is enabled when:
-- The device contains a **TPM 2.0** (Trusted Platform Module) with PCR7 support. See [Trusted Plaform Module (TPM) 2.0 ](OEM-TPM.md) for more information.
+- The device contains a **TPM** (Trusted Platform Module), either TPM 1.2 or TPM 2.0. 
 - **UEFI Secure Boot** is enabled. See [Secure boot](OEM-secure-boot.md) for more information.
 - **Platform Secure Boot** is enabled
 - **Direct memory access (DMA)** protections is enabled
@@ -42,6 +44,7 @@ The following tests must pass before Windows 10 will enable Automatic BitLocker 
         1.	Platform Secure Boot self-test (or additional self-tests as configured in the registry) must be reported by HSTI as implemented and passed.
         2.	Excluding Thunderbolt, HSTI must report no non-allowed DMA busses.
         3.	If Thunderbolt is present, HSTI must report that Thunderbolt is configured securely (security level must be SL1 – “User Authorization” or higher).
+4. You must have 250MB of free space on top of everything you need to boot (and recover Windows, if you put WinRE on the system partition). For more information, see [System.Client.SystemPartition](https://docs.microsoft.com/en-us/windows-hardware/design/compatibility/systems#systemclientsystempartition).
 
 When the requirements as listed above are met, System Information indicates the system supports BitLocker automatic device encryption. This functionality is available in Windows 10, version 1703 or after. Here's how to check System Information. 
 
