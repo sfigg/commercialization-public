@@ -54,6 +54,3 @@ OEMs can choose to disable device encryption and instead implement their own enc
 Alternately, you can update this registry key:
 **HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\BitLocker**
 Value: **PreventDeviceEncryption** equal to True (1).
-
-##Related topics
-- [Encrypted hard drive](https://docs.microsoft.com/en-us/windows/device-security/encrypted-hard-drive)

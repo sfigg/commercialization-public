@@ -1,5 +1,5 @@
 ---
-title: Adding an LED notification option
+title: Add an LED notification option
 description: OEMs can configure a registry key to specify a selected notification LED as the LED notification and then add an LED notification option to the device's messaging Settings screen.
 MSHAttr:
 - 'PreferredSiteName:MSDN'
@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
-# Adding an LED notification option
+# Add an LED notification option
 
 
 In Windows 10 Mobile, the notification LED on handheld devices may not turn on when a user receives a text message. To improve this user experience, OEMs can configure a registry key to specify a selected notification LED as the LED notification and then add an **LED notification** option to the device's messaging **Settings** screen.
