@@ -22,7 +22,7 @@ This topic helps you interpret the results produced by the On/Off assessments (B
 For more information about On/Off Transition assessments, see [On/Off Transition Performance](onoff-transition-performance.md).
 
 
-## <a href="" id="bkmk-goals"></a>Goals File
+## Goals File
 
 You can create custom goals to measure your improvements in the Results View. Goals files are a triage tool that can help you understand how a PC is performing and to compare PCs in your business.
 
@@ -46,9 +46,7 @@ You can set the goals file location and add a goals file to that location before
 Only one goals file can be used at a time. Goals for all assessments are set in a single goals file. The assessment tools will search for goals in the following order:
 
 1.  A custom goals file
-
 2.  Goals that are defined in the results file
-
 3.  Goals that are defined in the assessment manifest
 
 You can use the sample goals file that is provided at %PROGRAMFILES%\\Windows Kits\\10\\Assessment and Deployment Kit\\Windows Assessment Toolkit\\SDK\\Samples\\Goals to create your own goals file.
@@ -57,7 +55,7 @@ You can use the sample goals file that is provided at %PROGRAMFILES%\\Windows Ki
 > You cannot package a goals file with a job, but you can store it on a share for others to use.
 
 
-## <a href="" id="fs-metrics"></a>Metrics
+## Metrics
 
 This section describes the key metrics reported by the On/Off assessments, common causes of poor results for these metrics, and common remediation for issues related to these metrics. This section also helps you identify the audience for which the metric is most applicable.
 
@@ -107,50 +105,23 @@ In this section:
 > If you enabled the Enable Minifilter Diagnostic Mode setting, the assessment results will include minifilter metrics. For more information about minifilter metrics and results, see [Minifilter Diagnostics](minifilter-diagnostics.md).
 
 
-### <a href="" id="oo-shutdown-duration"></a>Shutdown Duration & Suspend Duration
+### Shutdown Duration & Suspend Duration
 
 **Relevant Assessments:**
 
 -   Boot Performance (Fast Startup)
-
 -   Boot Performance (Full Boot)
-
 -   Standby Performance
-
 -   Hibernate Performance
 
 This metric measures the time that the computer spends in shut-down or suspend operations. The following table describes the metric for each assessment:
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Assessment</th>
-<th>Metric Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>Boot Performance (Fast Startup) Assessment</p></td>
-<td><p>This metric captures the time from the start of the shutdown phase, to the end of writing the hiberfile to disk and the transition to a lower power state (S4).</p></td>
-</tr>
-<tr class="even">
-<td><p>Boot Performance (Full Boot) Assessment</p></td>
-<td><p>This metric captures the time from the start of the shutdown phase to the transition to a powered off state.</p></td>
-</tr>
-<tr class="odd">
-<td><p>Standby Performance Assessment</p></td>
-<td><p>This metric captures the time from the start of the suspend phase to the transition to a lower power state (S3).</p></td>
-</tr>
-<tr class="even">
-<td><p>Hibernate Performance Assessment</p></td>
-<td><p>This metric captures the time from hibernate to the end of writing the hiberfile to disk and the transition to a lower power state (S4).</p></td>
-</tr>
-</tbody>
-</table>
+| Assessment                                 | Metric Description                                                                                                                                              |
+| :----------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Boot Performance (Fast Startup) Assessment | This metric captures the time from the start of the shutdown phase, to the end of writing the hiberfile to disk and the transition to a lower power state (S4). |
+| Boot Performance (Full Boot) Assessment    | This metric captures the time from the start of the shutdown phase to the transition to a powered off state.                                                    |
+| Standby Performance Assessment             | This metric captures the time from the start of the suspend phase to the transition to a lower power state (S3).                                                |
+| Hibernate Performance Assessment           | This metric captures the time from hibernate to the end of writing the hiberfile to disk and the transition to a lower power state (S4).                        |
 
 **Detailed Sub-metrics**
 
@@ -168,7 +139,7 @@ This metric is an overall metric for the system shutdown/suspend. It can be affe
 Expand this metric to see the sub-metrics, which provide more information on individual sub-phases of shutdown/suspend. Examine individual sub-phase metrics and issues to find potential delay contributors.
 
 
-### <a href="" id="oo-user-session-shutdown-duration"></a>User Session Shutdown Duration
+### User Session Shutdown Duration
 
 **Relevant Assessments:**
 
@@ -186,7 +157,7 @@ This metric is an overall metric for the system shutdown. It can be affected by 
 Expand this metric to see the sub-metrics that provide more information on individual sub-phases of shutdown. Examine individual sub-phase metrics and issues to find potential delay contributors.
 
 
-### <a href="" id="oo-shutdown-processes"></a>Shutdown Processes Duration
+### Shutdown Processes Duration
 
 **Most Applicable to:** Application developers
 
@@ -233,18 +204,15 @@ Find the possible reasons that responses to WM\_QUERYENDSESSION message or WM\_E
 [MSDN: WM\_ENDSESSION message](http://go.microsoft.com/fwlink/?LinkId=247502)
 
 
-### <a href="" id="oo-winlogon-suspend"></a>Winlogon Suspend Duration & Winlogon Notifications Duration
+### Winlogon Suspend Duration & Winlogon Notifications Duration
 
 **Most Applicable to:** Winlogon subscriber developers, group policy script owners, system administrators
 
 **Relevant Assessments:**
 
 -   Boot Performance (Fast Startup)
-
 -   Boot Performance (Full Boot)
-
 -   Standby Performance
-
 -   Hibernate Performance
 
 This metric measures the time that is spent by Winlogon, including time spent performing subscriber notifications/callbacks.
@@ -254,11 +222,8 @@ For the Boot Performance (Fast Startup) scenario, the **Winlogon Notifications**
 Boot Performance (Fast Startup) is the only assessment that provides additional sub-metrics for this metric. During suspend, Winlogon issues synchronous subscriber notifications to registered subscribers for the following four notification types:
 
 -   Terminate Session
-
 -   End Shell
-
 -   Logoff
-
 -   Create Session
 
 When the metric is expanded, these four notification types are presented as sub-metrics. Each of these types has a list of subscribers (for example, profiles and GPClient) as additional sub-metrics, and each subscriber lists the specific instances of **Connect to Subscriber** and **Call Subscriber** for that subscriber.
@@ -278,16 +243,14 @@ Examine times of individual subscriber operations. Specific issues are usually g
 [MSDN: Winlogon Notification Events](http://go.microsoft.com/fwlink/?LinkId=247505)
 
 
-### <a href="" id="oo-suspend-processes-duration"></a>Suspend Processes Duration
+### Suspend Processes Duration
 
 **Most Applicable to:** Application developers
 
 **Relevant Assessments:**
 
 -   Boot Performance (Fast Startup)
-
 -   Standby Performance
-
 -   Hibernate Performance
 
 This metric measures the time that the computer spends notifying processes of the impending power state change.
@@ -339,16 +302,14 @@ Troubleshooting and fixing issues with that significantly impact the startup pat
 [MSDN: PBT\_APMSUSPEND event](http://go.microsoft.com/fwlink/?LinkId=247503)
 
 
-### <a href="" id="oo-suspend-services-duration"></a>Suspend Services Duration
+### Suspend Services Duration
 
 **Most Applicable to:** Windows service developers
 
 **Relevant Assessments:**
 
 -   Boot Performance (Fast Startup)
-
 -   Standby Performance
-
 -   Hibernate Performance
 
 This metric measures the time that the computer spends notifying services of the impending power state change. All services that register to receive power management events (SERVICE\_ACCEPT\_POWEREVENT) receive suspend notifications. Because these notifications are sent serially, any delay in a service directly contributes to the overall shutdown/suspend duration. A 30 second timeout is enforced (on a per-service basis) to process this notification; after this timeout, the system moves on to the next phase. Because registering for this notification is optional, no specific action by the service is required by the OS.
@@ -372,16 +333,14 @@ Identify a service that significantly impacts this metric. Longer delays in serv
 [MSDN: OnNow/ACPI Support](http://go.microsoft.com/fwlink/?LinkId=247504)
 
 
-### <a href="" id="oo-superfetch-prepare-memory-duration"></a>Superfetch Prepare Memory Duration
+### Superfetch Prepare Memory Duration
 
 **Most Applicable to:** Application developers, Windows service developers
 
 **Relevant Assessments**
 
 1.  Boot Performance (Fast Startup)
-
 2.  Standby Performance
-
 3.  Hibernate Performance
 
 This metric measures the time that the Windows Superfetch service spends preparing the memory state for the subsequent boot/resume. Superfetch pre-fetches data that is frequently accessed on startup, and stores it either in the hiberfile (for Boot Performance (Fast Startup) and Hibernate Performance) or main memory (Standby Performance) to avoid excessive disk accesses on resume. This feature accelerates the resume process.
@@ -395,16 +354,14 @@ During this phase, the Superfetch service accesses data that is read during star
 This phase requires advanced analysis that is not included in this document.
 
 
-### <a href="" id="oo-query-devices-duration"></a>Query Devices Duration
+### Query Devices Duration
 
 **Most Applicable to:** Driver developers
 
 **Relevant Assessments:**
 
 -   Boot Performance (Fast Startup)
-
 -   Standby Performance
-
 -   Hibernate Performance
 
 During the shutdown/suspend phase, every device driver is sent a power IRP that has a IRP\_MN\_QUERY\_POWER minor code and a power state (S4 for Boot Performance (Fast Startup)/Hibernate Performance, S3 for Standby Performance). This metric measures the duration of all drivers that process the query power IRP.
@@ -431,16 +388,14 @@ You can identify a driver or drivers that significantly impact this metric by lo
 [MSDN: IRP\_MN\_QUERY\_POWER](http://go.microsoft.com/fwlink/?LinkId=247506)
 
 
-### <a href="" id="oo-flush-storage-volumes-duration"></a>Flush Storage Volumes Duration
+### Flush Storage Volumes Duration
 
 **Most Applicable to:** Application developers, Windows service developers
 
 **Relevant Assessments:**
 
 -   Boot Performance (Fast Startup)
-
 -   Standby Performance
-
 -   Hibernate Performance
 
 This metric measures the time that the computer spends writing to the registry and saving any other modified pages to secondary storage.
@@ -456,16 +411,14 @@ Identifying the processes that are responsible for this data requires advanced a
 Examples are: an application that wrote a multi-megabyte data file by using cached I/O directly before exiting, or a service that modifies large amounts of file-mapped memory at shutdown time.
 
 
-### <a href="" id="oo-suspend-devices-duration"></a>Suspend Devices Duration
+### Suspend Devices Duration
 
 **Most Applicable to:** Driver developers
 
 **Relevant Assessments:**
 
 -   Boot Performance (Fast Startup)
-
 -   Standby Performance
-
 -   Hibernate Performance
 
 During the shutdown phase of the Boot Performance (Fast Startup) scenario, every device driver is sent a power (IRP\_MJ\_POWER) I/O (IRP that has IRP\_MN\_SET\_POWER minor code and a power state (S4 for Boot Performance (Fast Startup) or Hibernate Performance, S3 for Standby Performance).
@@ -494,14 +447,13 @@ You can identify a driver or drivers that significantly impact this metric by lo
 [MSDN: IRP\_MN\_SET\_POWER](http://go.microsoft.com/fwlink/?LinkId=247508)
 
 
-### <a href="" id="oo-hiberfile-write-duration"></a>Hiberfile Write Duration
+### Hiberfile Write Duration
 
 **Most Applicable to:** Application developers, Windows service developers, Driver developers
 
 **Relevant Assessments:**
 
 -   Boot Performance (Fast Startup)
-
 -   Hibernate Performance
 
 This metric measures the time that the system spends writing the relevant contents of main memory to secondary storage; specifically, into hiberfile.sys file that is usually found in the root directory of the system drive.
@@ -524,18 +476,15 @@ A driver that uses large amounts of memory can influence this metric by having t
 Identifying the specific components that contribute to the longer hiberfile write durations requires detailed memory analysis and is beyond the scope of this document. However, each running driver and service can contribute to this metric by retaining large memory allocations. The number and footprint of the startup applications, and of other components that read data during startup, can also influence this metric.
 
 
-### <a href="" id="oo-bios-initialization-duration"></a>BIOS Initialization Duration
+### BIOS Initialization Duration
 
 **Most Applicable to:** BIOS manufacturers
 
 **Relevant Assessments:**
 
 1.  Boot Performance (Fast Startup)
-
 2.  Boot Performance (Full Boot)
-
 3.  Standby Performance
-
 4.  Hibernate Performance
 
 This metric measures the time that the platform firmware spends identifying and initializing hardware devices and running a power-on self-test (POST).
@@ -556,16 +505,13 @@ The boot order that is set for the system can be a significant source of delay d
 No additional information is captured for the BIOS phase. Typical influencing factors such as enabled PXE boot should be checked. The BIOS manufacturer should be consulted when you need to triage or alter these settings. A deeper investigation of the BIOS Initialization phase is beyond the scope of this document.
 
 
-### <a href="" id="oo-total-boot"></a>Total Boot \[Excluding BIOS\] Duration & Total Resume \[Excluding BIOS\] Duration
+### Total Boot \[Excluding BIOS\] Duration & Total Resume \[Excluding BIOS\] Duration
 
 **Relevant Assessments:**
 
 -   Boot Performance (Fast Startup)
-
 -   Boot Performance (Full Boot)
-
 -   Standby Performance
-
 -   Hibernate Performance
 
 This metric measures the time that the computer spends starting up. This metric captures the time from the end of BIOS Initialization to the end of the Post On/Off phase, which ends when the system reaches an idle state.
@@ -586,16 +532,13 @@ This metric is an overall metric for system boot/resume, and it can be affected 
 Expand this metric to see the sub-metrics that provide more information on individual sub-phases. Examine individual sub-phase metrics and issues to find potential delay contributors.
 
 
-### <a href="" id="oo-main-path"></a>Main Path Boot Duration & Main Path Resume Duration
+### Main Path Boot Duration & Main Path Resume Duration
 
 **Relevant Assessments:**
 
 -   Boot Performance (Fast Startup)
-
 -   Boot Performance (Full Boot)
-
 -   Standby Performance
-
 -   Hibernate Performance
 
 This metric measures the time from when the computer begins start-up until the user’s Desktop is visible. This metric captures the time from the end of BIOS Initialization until the Windows 8 UI is shown, and it does not include the Post On/Off phase.
@@ -616,16 +559,14 @@ This metric is an overall metric for boot/resume to a visible Desktop. It can be
 Expand this metric to see the sub-metrics that provide more information on individual sub-phases. Examine individual sub-phase metrics and issues to find potential delay contributors.
 
 
-### <a href="" id="oo-boot-manager"></a>Boot Manager
+### Boot Manager
 
 **Most Applicable to:** System administrators
 
 **Relevant Assessments:**
 
 -   Boot Performance (Fast Startup)
-
 -   Boot Performance (Full Boot)
-
 -   Hibernate Performance
 
 This metric measures the time to find and start Winload.exe, the operating system loader, on the Windows boot partition.
@@ -639,14 +580,13 @@ This metric can be affected by BitLocker operations, especially if a PIN is requ
 Use a BitLocker unlock method that does not require manual PIN entry.
 
 
-### <a href="" id="oo-hiberfile-read-duration"></a>Hiberfile Read Duration
+### Hiberfile Read Duration
 
 **Most Applicable to:** Application developers, Windows service developers, driver developers
 
 **Relevant Assessments:**
 
 -   Boot Performance (Fast Startup)
-
 -   Hibernate Performance
 
 This metric measures the time that the system spends reading the contents of the hiberfile into main memory.
@@ -670,16 +610,14 @@ Identifying the specific components that contribute to longer hiberfile read dur
 > Each running driver and service can contribute to this metric by retaining large memory allocations. The number and footprint of startup applications and other components that read data during startup also influence this metric.
 
 
-### <a href="" id="oo-resume-devices-duration"></a>Resume Devices Duration
+### Resume Devices Duration
 
 **Most Applicable to:** Driver developers
 
 **Relevant Assessments:**
 
 -   Boot Performance (Fast Startup)
-
 -   Standby Performance
-
 -   Hibernate Performance
 
 During shutdown/suspend, every device driver is sent a power (IRP\_MJ\_POWER) IRP that has an IRP\_MN\_SET\_POWER minor code and working power state. Device drivers subsequently send Device Power IRPs to corresponding devices. This metric measures the time for all drivers to process the set power IRP.
@@ -707,7 +645,7 @@ You can identify a driver or drivers that significantly impact this metric by lo
 [MSDN: IRP\_MN\_SET\_POWER](http://go.microsoft.com/fwlink/?LinkId=247508)
 
 
-### <a href="" id="oo-operating-system-selection-menu-duration"></a>Operating System Selection Menu Duration
+### Operating System Selection Menu Duration
 
 **Most Applicable to:** System administrators
 
@@ -729,14 +667,13 @@ This metric is unaffected by system behavior. This metric is reported only on sy
 Remove all installed operating systems other except for the one that is being analyzed. To view the list of currently installed operating systems (including settings that affect this menu), run **msconfig.exe** at a command prompt and then choose the **Boot** tab.
 
 
-### <a href="" id="oo-winlogon-resume-duration"></a>Winlogon Resume Duration
+### Winlogon Resume Duration
 
 **Most Applicable to:** Winlogon subscriber developers, group policy script owners, system administrators, credential provider writers
 
 **Relevant Assessments:**
 
 -   Boot Performance (Fast Startup)
-
 -   Hibernate Performance
 
 This metric represents a timespan of multiple Winlogon callouts and operations, such as interaction with Winlogon subscribers. This metric is not the accumulated time that is spent in subscriber notifications, and it should not be treated as such.
@@ -746,7 +683,6 @@ This metric represents a timespan of multiple Winlogon callouts and operations, 
 Boot Performance (Fast Startup) is the only assessment that provides additional sub-metrics for this metric. When the metric is expanded, a more detailed phase view is presented that includes the times incurred by each of the Winlogon subscribers. During resume, Winlogon issues synchronous subscriber notifications to registered subscribers for the following two notification types:
 
 -   Logon
-
 -   Start Shell
 
 When it is expanded, these two notification types are presented as sub-metrics. Each of these types has a list of subscribers (for example, profiles or GPClient) as additional sub-metrics. Each subscriber lists the specific instances of **Connect to Subscriber** and **Call Subscriber** for that subscriber.
@@ -766,7 +702,7 @@ Examine times of individual subscriber operations. Specific issues are usually g
 [Winlogon Notification Events](http://go.microsoft.com/fwlink/?LinkId=247505)
 
 
-### <a href="" id="oo-explorer-initialization-duration"></a>Explorer Initialization Duration
+### Explorer Initialization Duration
 
 **Most Applicable to:** Startup application developers
 
@@ -787,18 +723,15 @@ Specific issues are usually generated for longer durations of the Explorer Initi
 Investigating specific issues during Explorer Initialization is beyond the scope of this document. For a list of common best practices, see [Best Practices for Time-Critical Tasks](#fs-analysis).
 
 
-### <a href="" id="oo-post-on-off-duration"></a>Post On/Off Duration
+### Post On/Off Duration
 
 **Most Applicable to:** Application developers
 
 **Relevant Assessments:**
 
 -   Boot Performance (Fast Startup)
-
 -   Boot Performance (Full Boot)
-
 -   Standby Performance
-
 -   Hibernate Performance
 
 This metric measures the time from the completion of Post On/Off to the system being reasonably idle and responsive to user input. The goal of this phase is to bind and quantify background processing that continues after the Start Screen displays. This metric measures the duration of the Post On/Off phase, which represents the amount of time that is required for the system to accumulate 5 seconds of idle time. This time is accumulated by checking the CPU and storage utilization in 500ms time windows. If the cumulative time of both CPU and storage utilization is below 20%, the idle time of this window (500ms – max \[CPU time, Disk time\] in the window) is added to the total idle time until 5 seconds is reached. The metric reports this duration minus the 5 seconds of collected idle time.
@@ -827,7 +760,7 @@ To address the issue for the Boot Performance (Fast Startup) and Boot Performanc
 Avoid using managed code (CLR-based) startup applications because their initialization can activate the resource-costly initialization of .NET framework. This will further impact Post On/Off phase times and degrade user responsiveness.
 
 
-## <a href="" id="fs-issues"></a>Issues
+## Issues
 
 The On/Off Transition Performance assessments perform advanced issue analysis and provide links to WPA to troubleshoot the issues that the assessment has identified. When WPA opens, additional details about disk activity or CPU activity might be available, depending on the type of issue. This section describes common investigative techniques that you can use to analyze performance issues.
 
@@ -870,7 +803,7 @@ To resolve this issue, do one of the following:
 2.  Disable regular and idle maintenance tasks, and stop all maintenance tasks before running the assessment.
 
 
-## <a href="" id="fs-analysis"></a>Best Practices for Time-Critical Tasks
+## Best Practices for Time-Critical Tasks
 
 If you don’t want a task to be delayed, ensure it does not do anything which takes a long time. Below are some things to avoid.
 
