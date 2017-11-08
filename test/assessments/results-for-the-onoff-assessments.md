@@ -321,9 +321,9 @@ Identify a service that significantly impacts this metric. Longer delays in serv
 
 **Relevant Assessments**
 
-1.  Boot Performance (Fast Startup)
-2.  Standby Performance
-3.  Hibernate Performance
+-   Boot Performance (Fast Startup)
+-   Standby Performance
+-   Hibernate Performance
 
 This metric measures the time that the Windows Superfetch service spends preparing the memory state for the subsequent boot/resume. Superfetch pre-fetches data that is frequently accessed on startup, and stores it either in the hiberfile (for Boot Performance (Fast Startup) and Hibernate Performance) or main memory (Standby Performance) to avoid excessive disk accesses on resume. This feature accelerates the resume process.
 
@@ -464,10 +464,10 @@ Identifying the specific components that contribute to the longer hiberfile writ
 
 **Relevant Assessments:**
 
-1.  Boot Performance (Fast Startup)
-2.  Boot Performance (Full Boot)
-3.  Standby Performance
-4.  Hibernate Performance
+-   Boot Performance (Fast Startup)
+-   Boot Performance (Full Boot)
+-   Standby Performance
+-   Hibernate Performance
 
 This metric measures the time that the platform firmware spends identifying and initializing hardware devices and running a power-on self-test (POST).
 
