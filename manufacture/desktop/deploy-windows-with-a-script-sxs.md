@@ -69,12 +69,11 @@ The sample scripts include steps that detect the firmware type (the newer UEFI-b
 
     When prompted by the script: 
     
-    1.  Select an image index number. For the Home/Pro edition, the Pro edition is index 1, the Home edition is index 2. 
-    2.  Press Y to format the drive.
-    3.  Press Y to select [Compact OS](compact-os.md), or N to select a non-compacted OS:
+    1.  Press Y to format the drive.
+    2.  Press Y to select [Compact OS](compact-os.md), or N to select a non-compacted OS:
         -   **Y**: Applies the image using Compact OS. This is best for devices with solid-state drives and drives with limited free space.
         -   **N**: Applies the image as a fully-uncompressed image. This is best for high-performance devices or devices that use traditional hard drives with rotational media.
-    4.  Press N to indicate the image does not include extended attributes (EA).
+    3.  Press N to indicate the image does not include extended attributes (EA).
 
     The scripts apply the image to the drive, and then finishes.
 	
