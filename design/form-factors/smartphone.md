@@ -114,4 +114,4 @@ Smartphones come in a wide range of sizes from low cost phones, small tablets (p
 For more guidance in selecting hardware components, see [Hardware component guidelines](../component-guidelines/components.md).
 
 
-Research the Windows Mobile options and partner with a registered Windows phone manufacturer to build a device utilizing your brand. For more information, see [Windows 10 Hardware Developer Programs](http://go.microsoft.com/fwlink/?LinkId=618212).
+Research the Windows Mobile options and partner with a registered Windows phone manufacturer to build a device utilizing your brand. For more information, see [Windows 10 Hardware Developer Programs](https://developer.microsoft.com/en-us/windows/hardware/windows-10-hardware-programs).
