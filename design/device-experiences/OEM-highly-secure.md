@@ -1,4 +1,4 @@
-  ---
+---
 title: Standards for a highly secure Windows 10 device
 description: This document provice guidance on the minimum standards for purchasing highly secure systems for Windows 10. 
 ms.author: dawnwood
