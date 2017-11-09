@@ -1183,7 +1183,7 @@
     },    
     {   
         "source_path": "design/what-s-new-in-design.md", 
-        "redirect_url": "get-started/what-s-new-in-windows.md", 
+        "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/get-started/what-s-new-in-windows", 
         "redirect_document_id": true
     },    
     {   
