@@ -59,7 +59,16 @@ You can use the sample goals file that is provided at %PROGRAMFILES%\\Windows Ki
 
 This section describes the key metrics reported by the On/Off assessments, common causes of poor results for these metrics, and common remediation for issues related to these metrics. This section also helps you identify the audience for which the metric is most applicable.
 
-In this section:
+The following table describes the metrics that may be available in an assessment:
+
+| Assessment                                 | Metric Description                                                                                                                                              |
+| :----------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Boot Performance (Fast Startup) Assessment | This metric captures the time from the start of the shutdown phase, to the end of writing the hiberfile to disk and the transition to a lower power state (S4). |
+| Boot Performance (Full Boot) Assessment    | This metric captures the time from the start of the shutdown phase to the transition to a powered off state.                                                    |
+| Standby Performance Assessment             | This metric captures the time from the start of the suspend phase to the transition to a lower power state (S3).                                                |
+| Hibernate Performance Assessment           | This metric captures the time from hibernate to the end of writing the hiberfile to disk and the transition to a lower power state (S4).                        |
+
+You can view On/Off assessment metrics for the following operations:
 
 -   [Shutdown Duration & Suspend Duration](#oo-shutdown-duration)
 -   [User Session Shutdown Duration](#oo-user-session-shutdown-duration)
@@ -96,14 +105,7 @@ In this section:
 -   Standby Performance
 -   Hibernate Performance
 
-This metric measures the time that the computer spends in shut-down or suspend operations. The following table describes the metric for each assessment:
-
-| Assessment                                 | Metric Description                                                                                                                                              |
-| :----------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Boot Performance (Fast Startup) Assessment | This metric captures the time from the start of the shutdown phase, to the end of writing the hiberfile to disk and the transition to a lower power state (S4). |
-| Boot Performance (Full Boot) Assessment    | This metric captures the time from the start of the shutdown phase to the transition to a powered off state.                                                    |
-| Standby Performance Assessment             | This metric captures the time from the start of the suspend phase to the transition to a lower power state (S3).                                                |
-| Hibernate Performance Assessment           | This metric captures the time from hibernate to the end of writing the hiberfile to disk and the transition to a lower power state (S4).                        |
+This metric measures the time that the computer spends in shut-down or suspend operations. 
 
 **Detailed Sub-metrics**
 
