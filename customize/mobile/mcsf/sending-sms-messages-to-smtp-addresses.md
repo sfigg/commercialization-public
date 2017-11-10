@@ -1,5 +1,5 @@
 ---
-title: Sending SMS messages to SMTP addresses
+title: Send SMS messages to SMTP addresses
 description: Partners can configure SMS messages to be sent to email addresses as well as phone numbers.
 MSHAttr:
 - 'PreferredSiteName:MSDN'
@@ -12,7 +12,7 @@ ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-# Sending SMS messages to SMTP addresses
+# Send SMS messages to SMTP addresses
 
 
 Partners can configure SMS messages to be sent to email addresses as well as phone numbers.

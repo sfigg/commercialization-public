@@ -15,17 +15,17 @@ You can now export a failed job so that it can be run on a machine outside of th
 An exported test environment closely simulates a dedicated HLK environment. This does not guarantee identical test execution, however. A user might need to handle any of the following circumstances:
 
 -   Reboots are not handled by the test infrastructure. The user will have to manually restart the system in many cases.
--   There may be cases where the test reboots the system through the HLK Client infrastructure within a test task. These reboots may not be captured in the batch file as prompts or reboots during standalone execution, for example.
+-   There may be cases where the test reboots the system through the HLK Client infrastructure within a test task. For example, these reboots may not be captured in the batch file as prompts or reboots during standalone execution.
 -   Non-uniquely named log files written to the same location by different tasks might result in some of these files being overwritten.
 -   Parameters written to the batch file may differ when running on different systems. As an example, hardware instance IDs can differ for the same hardware and driver when moved to a different system, and the user will have to look up the corresponding target value (from Device Manager, for example) and update the batch file with the correct value.
 -   Tests that depend on an associated configuration job to configure the system may not be prepared correctly as HLK only exports the test job itself.
 
-Not all results can be exported. The following list describes the limitatons on the tests and test results that are exportable.
+Not all results can be exported. The following list describes the limitatons on the tests and test results that are exportable:
 
--   Tests must have been executed and complete with a a passed, failed, or cancelled status.
+-   Tests must have been executed and complete with a passed, failed, or cancelled status.
 -   The test run must successfully return infrastructure logs from the client system. These files are necessary to export the test.
 -   Only single machine tests can be exported. Tests that require multiple machines to execute are not exportable.
--   Tests must be run using the HLK desktop client. Test runs on Windows core or Proxy Mobile Client systems are not exportable.
+-   Tests must be run using the HLK desktop client. Test runs on Windows Core or Proxy Mobile Client systems are not exportable.
 -   Tests tagged as non-exportable due to known infrastructure issues or other reasons are not exportable.
 
 1.  In the **Results** tab in HLK Studio, right-click on the failed result, and select **Export Test Run**.

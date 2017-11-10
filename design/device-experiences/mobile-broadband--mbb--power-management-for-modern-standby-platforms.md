@@ -52,7 +52,7 @@ The five power-management modes are:
 <dd><p style="margin: .5em 0 1em 1.5em;">The user does not have an active subscription.</p></dd>
 <dt><p style="margin: 0 0 0 1em;"><em>No-SIM</em></p></dt>
 <dd><p style="margin: .5em 0 1em 1.5em;">The device has no SIM.</p></dd>
-
+</dl>
 
 The following table compares the five power-management modes.
 <br/>
