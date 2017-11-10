@@ -16,22 +16,23 @@ ms.technology: windows-oem
 
 To use WinPE, you have to create a USB flash drive, CD, DVD, or virtual hard drive that boots to WinPE.
 
-Files to create WinPE media are distributed as part of the [Windows Assessment and Deployment Kit](http://go.microsoft.com/fwlink/?LinkId=526803), and are downloaded when you install the ADK with the Windows PE option selected.
+Files to create WinPE media are distributed as part of the [Windows Assessment and Deployment Kit](http://go.microsoft.com/fwlink/?LinkId=526803), and are downloaded when you install the ADK with the Deployment tools and Windows PE options selected.
 
 ## Download WinPE and create bootable media
 
 ### Download and Install the Windows ADK
 
-Download the [Windows Assessment and Deployment Kit (ADK)](http://go.microsoft.com/fwlink/?LinkId=526803) and during installation, select the following features:
+Download the [Windows Assessment and Deployment Kit (ADK)](http://go.microsoft.com/fwlink/?LinkId=526803). During installation, select the following features:
 
 -   **Deployment Tools**: includes the **Deployment and Imaging Tools Environment**.
 
--   **Windows Preinstallation Environment** : includes the files used to install Windows PE.
+-   **Windows Preinstallation Environment**: includes the files used to install Windows PE.
 
 ### Create a bootable USB, CD, or DVD:
 
+- To learn how to create a bootable USB drive, see [WinPE: Create USB Bootable drive](winpe-create-usb-bootable-drive.md) 
 
-See [WinPE: Create USB Bootable drive](winpe-create-usb-bootable-drive.md) or [WinPE: Create a Boot CD, DVD, ISO, or VHD](winpe-create-a-boot-cd-dvd-iso-or-vhd.md), depending on the media you're trying to create.
+- To learn how to create a bootable CD, DVD< ISO, or VHD, see [WinPE: Create a Boot CD, DVD, ISO, or VHD](winpe-create-a-boot-cd-dvd-iso-or-vhd.md)
 
 ## <span id="related_topics"></span>Related topics
 
