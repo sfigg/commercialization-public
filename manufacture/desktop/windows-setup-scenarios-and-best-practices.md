@@ -5,7 +5,7 @@ ms.assetid: 651cb9c3-121d-40d3-9e17-47f1a78a000f
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Windows Setup Scenarios and Best Practices
 ms.author: themar
-ms.date: 05/02/2017
+ms.date: 11/06/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -14,7 +14,7 @@ ms.technology: windows-oem
 # Windows Setup Scenarios and Best Practices
 
 
-Windows® Setup installs the Windows operating system. Windows Setup uses a technology called Image-based Setup (IBS) that provides a single, unified process with which all customers can install Windows. IBS performs clean installations and upgrades of Windows and is used in both client and server installations. Windows Setup also enables you to customize Windows during installation by using Setup answer file settings.
+Windows Setup installs the Windows operating system. Windows Setup uses a technology called Image-based Setup (IBS) that provides a single, unified process with which all customers can install Windows. IBS performs clean installations and upgrades of Windows and is used in both client and server installations. Windows Setup also enables you to customize Windows during installation by using Setup answer file settings.
 
 In this topic:
 
@@ -55,9 +55,9 @@ This scenario includes the following stages:
 
 3.  Windows Setup reboots and restores your protected files, settings, and preferences. Windows Setup then launches Windows Welcome.
 
-**Note**  
-Upgrades are used to upgrade a single computer to Windows 8. Upgrades also support migrating user data to a new system.
-
+**Notes**  
+- Upgrades are used to upgrade a single computer to Windows 10. Upgrades also support migrating user data to a new system.
+- Windows Setup supports upgrading to an image that has the latest quality updates injected, but does not support upgrading to an image that's been customized to add additional apps and/or settings changes. 
  
 
 ### <span id="Automated_Installations"></span><span id="automated_installations"></span><span id="AUTOMATED_INSTALLATIONS"></span>Automated Installations
@@ -101,7 +101,7 @@ The following sections describe some of the limitations of Windows Setup. Revie
 -   **Installing Custom .wim files requires a description value in the .wim file.** When you create a custom .wim file, Windows Setup requires that you always include a description value. If a .wim file does not include a description value, the image may not install correctly. You can provide a description value when you use the **dism** command with the **/capture-image** option. If you install a .wim file that does not have a description value, recapture the image and provide a valid description value. For more information, see the [DISM - Deployment Image Servicing and Management Technical Reference for Windows](dism---deployment-image-servicing-and-management-technical-reference-for-windows.md).
 
 **Note**  
-For Windows® Preinstallation Environment (Windows PE), the version of boot files must match the computer architecture. An x64 UEFI computer can only boot by using Windows PE x64 boot files. An x86 computer can only boot by using Windows PE x86 boot files. This is different from legacy BIOS. In legacy BIOS, an x64 computer can boot by using x86 boot files.
+For Windows Preinstallation Environment (Windows PE), the version of boot files must match the computer architecture. An x64 UEFI computer can only boot by using Windows PE x64 boot files. An x86 computer can only boot by using Windows PE x86 boot files. This is different from legacy BIOS. In legacy BIOS, an x64 computer can boot by using x86 boot files.
 
  
 
