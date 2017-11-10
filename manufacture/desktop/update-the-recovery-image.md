@@ -274,7 +274,7 @@ The short version:
 	
     Note: To test a different recovery image, add it the same way, specifying the recovery image: 
     ```
-	D:\ApplyRecovery.bat D:\Images\winre_custom.wim
+	D:\ApplyRecovery.bat
 	```
 
 5.  Disconnect the drives, then reboot (`exit`).
