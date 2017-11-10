@@ -56,6 +56,7 @@ Here is how you set the size of the start menu, using LayoutModification.xml.
   ```
 
 * To set as medium, with two columns of tiles:
+
   ```xml
   <LayoutOptions
      StartTileGroupsColumnCount="2"
@@ -64,6 +65,7 @@ Here is how you set the size of the start menu, using LayoutModification.xml.
 
   ```
 * To set as full screen (and set the default to one column if the user disables full screen):
+
   ```xml
   <LayoutOptions
      StartTileGroupsColumnCount="1"
@@ -116,7 +118,7 @@ You can add a web link tile that will open in the default browser, or you can ad
 To create a web link tile that will open in the default browser, create a .url file:
 
 1. Right click on Desktop > New > Shortcut
-1. Type a URL such as http://www.fabrikam.com
+1. Type a URL such as http://www.fabrikam.com\t7y
 1. Click Next
 1. Type a name for the shortcut such as Fabrikam and click Finish. The .url file is saved to your desktop.
 1. Add the .url file to the image in the `%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\` folder , and then add a `DesktopApplicationTile` element to `LayoutModification.xml`:
