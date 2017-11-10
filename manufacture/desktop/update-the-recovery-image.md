@@ -272,12 +272,7 @@ The short version:
 
 5.  Apply the recovery image: `D:\ApplyRecovery.bat` if you you used **ApplyImage.bat**, or `D:\ApplyRecovery-FFU.bat` if you used **ApplyImage-FFU.bat** to apply your initial Windows image.
 	
-    Note: To test a different recovery image, add it the same way, specifying the recovery image: 
-    ```
-	D:\ApplyRecovery.bat
-	```
-
-5.  Disconnect the drives, then reboot (`exit`).
+6.  Disconnect the drives, then reboot (`exit`).
 	
 **Step 10: Verify drivers and packages**
 1.  After the PC boots, either create a new user account, or else press Ctrl+Shift+F3 to reboot into the built-in administrator account (This is also known as audit mode).
