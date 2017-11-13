@@ -21,6 +21,8 @@ You are able to customize the Start layout by:
 * Specifying the size and position of the new tiles
 * Specify Start layouts for each region you support
 
+After customizing the Start layout, use Windows Configuration Designer to add the file to the device image. See [Add the LayoutModification.xml file to the device](https://docs.microsoft.com/en-us/windows/configuration/start-layout-xml-desktop#add-the-layoutmodificationxml-file-to-the-device) for instructions.
+
 ## LayoutModification.xml
 
 The XML schema for `LayoutModification.xml` requires the following order for tags directly under the LayoutModificationTemplate node:
@@ -29,7 +31,9 @@ The XML schema for `LayoutModification.xml` requires the following order for tag
 1. RequiredStartGroupsCollection
 1. AppendDownloadOfficeTile –OR– AppendOfficeSuite (only one Office option can be used at a time)
 
-For an inclusive list of settings you can configure in `LayoutModification.xml`, a full XML example, guidance on customizing the Start layout per region, and instructions on adding the XML file to the device, see [Start layout XML for desktop editions of Windows 10](https://docs.microsoft.com/en-us/windows/configuration/start-layout-xml-desktop).
+Comments are not supported in the `LayoutModification.xml` file.
+
+For an inclusive list of settings you can configure in `LayoutModification.xml`, a full XML example, and instructions on adding the XML file to the device, see [Start layout XML for desktop editions of Windows 10 (Reference)](https://docs.microsoft.com/en-us/windows/configuration/start-layout-xml-desktop)
 
 ## Customize the size of the Start menu
 
@@ -50,14 +54,18 @@ Here is how you set the size of the start menu, using LayoutModification.xml.
      FullScreenStart="false"
   />
   ```
+
 * To set as medium, with two columns of tiles:
+
   ```xml
   <LayoutOptions
      StartTileGroupsColumnCount="2"
      FullScreenStart="false"
   />
+
   ```
 * To set as full screen (and set the default to one column if the user disables full screen):
+
   ```xml
   <LayoutOptions
      StartTileGroupsColumnCount="1"
@@ -73,9 +81,9 @@ Here is how you set the size of the start menu, using LayoutModification.xml.
 You can pin tiles in two OEM groups. These groups can either be set such that all tile groups are 3 medium tiles wide or so that all tile groups are 4 medium tiles wide. When this setting is changed to 4 medium tiles wide then group one is 3 high by 4 wide and group two is 2 high by 4 wide.
 
 > [!Note]
-> Each tile pinned to the Start menu launches a single app. A tile can’t be a group of apps or a folder.
+> Each tile pinned to the Start menu can launch a single UWP app, Microsoft Store app, desktop app, or weblink. A tile can’t be a group of apps or a folder.
 
-OEM groups are added at the end of the Start menu; you will not be able to manipulate or otherwise change the Microsoft groups and tiles within them. The default layout is applied based on SKU and region and then the LayoutModification.xml or Unattend.xml file is processed. The first, bigger OEM group displays the first two rows by default, with only the titles of the tiles on the third row displaying. The smaller OEM group displays only the titles of the top row.
+OEM groups are added at the bottom, right corner of the Start menu; you will not be able to manipulate or otherwise change the Microsoft groups and tiles within them. The default layout is applied based on SKU and region and then the `LayoutModification.xml` or `Unattend.xml` file is processed. The first, bigger OEM group displays the first two rows by default, with only the titles of the tiles on the third row displaying. The second, smaller OEM group displays only the titles of the top row.
 
 Here is an example that shows how the OEM groups are displayed in Start.
 
@@ -93,11 +101,16 @@ The `LayoutModification.xml` file allows four tile size options and the ability 
 * Wide tile: 4x2
 * Large tile: 4x4
 
-The `Row` and `Column` elements determine the position of the tile within the group. The `0,0` position is the first row, first column.
+The `Row` and `Column` elements determine the position of the upper, left edge of the tile within the group. The `0,0` position is the first row, first column.
 
 For example, here is a Start layout with the row and column grid overlaid.
 
 ![Start layout grid](images/start-layout.png)
+
+> [!Note]
+> To ensure that customers know that their new Windows-based device comes ready for them to use and enjoy Office, the Windows Start menu retains the **Get Office** tile when you install Office as part of the OS image. The **Get Office** app is aware that Office is installed, and provides additional information and links for Mobile installs and OneDrive. Small tiles for Word, PowerPoint, Excel, and OneNote appear in a medium tile collection next to the **Get Office** app tile in the Microsoft group of the Start menu.
+>
+> When customers open one of the OEM-installed Office apps like Word, they get a **Try, Buy, or Activate** dialog. They can dismiss the dialog and still use the app for up to 5 days. They can hit **Try** and get a 30-day trial.
 
 ### Add weblink tiles
 
@@ -105,7 +118,7 @@ You can add a web link tile that will open in the default browser, or you can ad
 To create a web link tile that will open in the default browser, create a .url file:
 
 1. Right click on Desktop > New > Shortcut
-1. Type a URL such as http://www.fabrikam.com
+1. Type a URL such as http://www.fabrikam.com\t7y
 1. Click Next
 1. Type a name for the shortcut such as Fabrikam and click Finish. The .url file is saved to your desktop.
 1. Add the .url file to the image in the `%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\` folder , and then add a `DesktopApplicationTile` element to `LayoutModification.xml`:
@@ -153,7 +166,7 @@ The downloads start or resume after the network connects.
 
 ## Add an Office suite or Office download tile to Start
 
-`LayoutModification.xml` supports adding either the in-box installed Office suite to Start (Word, Excel, PowerPoint), or adding a "Download Office" tile to a specific location in Start (the bottom right of the second group).
+`LayoutModification.xml` supports adding either the in-box installed Office suite to Start (Word, Excel, PowerPoint), or adding a "Download Office" tile to a specific location in Start (the bottom right of the second group).)
 
 > [!Note]
 > These two options are mutually exclusive; adding both is not supported.
@@ -166,7 +179,28 @@ If you want to append the Office Mobile Suite of tiles that point to the office 
 </LayoutModificationTemplate>
 ```
 
-## First run tasks
+If you want to append the full Office 2016 suite to Start, add the `<AppendOfficeSuite/>` tag and the `<AppendOfficeSuiteChoice Choice="Desktop2016"/>` tag to your `LayoutModification.xml` file.
+
+```XML
+ <LayoutModificationTemplate
+    xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification"
+    xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout"
+    xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout"
+    Version="1">
+    <AppendOfficeSuite/>
+    <AppendOfficeSuiteChoice Choice="Desktop2016"/>
+</LayoutModificationTemplate>
+```
+
+If you want to append Download Office tile, add the `<AppendDownloadOfficeTile/>` tag to your `LayoutModification.xml` file. This replaces "Get Office" with the classic desktop app download tile, and supports all OEM scenarios including Activation for Office (AFO) and Preinstall PC (PIPC).
+
+```XML
+<LayoutModificationTemplate xmlns=http://schemas.microsoft.com/Start/2014/LayoutModification xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout" xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout" Version="1">
+<AppendDownloadOfficeTile/>
+</LayoutModificationTemplate>
+```
+
+### First run tasks
 
 First Run Tasks are background tasks that are active when the user first signs into Windows. FirstRunTask is not available in `LayoutModification.xml`. However, you can still use it by including an Unattend.xml file with [StartTiles](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-shell-setup-starttiles) tags using the same AppID as in `LayoutModification.xml`.
 
@@ -187,8 +221,14 @@ Also include an Unattend.xml file specifying the same AppID like this:
 </SquareOrDesktopTile5>
 ```
 
+## Create Start layouts for each region you support
+
+You can use the `Region` parameter of the `RequiredStartGroups` tag in your `LayoutModification.xml` file to specify Start layouts per region. To learn more, see [RequiredStartGroups tag](https://docs.microsoft.com/en-us/windows/configuration/start-layout-xml-desktop#requiredstartgroups) in the Start Layout XML Reference.
+
+Alternately, you can use multivariant capabilities in Windows provisioning to create different Start layouts per region. To learn more, see [Use Windows Provisioning multivariant support](https://docs.microsoft.com/en-us/windows/configuration/start-layout-xml-desktop#use-windows-provisioning-multivariant-support) in the Start Layout XML Reference.
+
 ## Related topics
 
-* [Start layout XML for desktop editions of Windows](https://docs.microsoft.com/en-us/windows/configuration/start-layout-xml-desktop)
+* [Start layout XML for desktop editions of Windows (Reference)](https://docs.microsoft.com/en-us/windows/configuration/start-layout-xml-desktop)
 * [Add the LayoutModification.xml file to the device](https://docs.microsoft.com/en-us/windows/configuration/start-layout-xml-desktop#add-the-layoutmodificationxml-file-to-the-device)
 * [StartTiles Unattend setting](unattend/microsoft-windows-shell-setup-starttiles.md)
