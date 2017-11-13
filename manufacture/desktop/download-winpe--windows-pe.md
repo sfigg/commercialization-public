@@ -14,7 +14,7 @@ ms.technology: windows-oem
 # Download WinPE (Windows PE)
 
 
-Before you can use WinPE, you'll have to create a bootable WinPE USB flash drive, CD, DVD, or virtual hard drive.
+Before you can use [WinPE,](winpe-intro.md) you'll have to create a bootable WinPE USB flash drive, CD, DVD, or virtual hard drive.
 
 Files to create WinPE media are distributed as part of the [Windows Assessment and Deployment Kit,](http://go.microsoft.com/fwlink/?LinkId=526803) and are downloaded when you install the ADK with the **Deployment tools** and **Windows Preinstallation Environment** options selected.
 
@@ -34,7 +34,7 @@ After you download and install the ADK, create bootable WinPE media.
 
 - To learn how to create a bootable USB drive, see [WinPE: Create USB Bootable drive](winpe-create-usb-bootable-drive.md) 
 
-- To learn how to create a bootable CD, DVD< ISO, or VHD, see [WinPE: Create a Boot CD, DVD, ISO, or VHD](winpe-create-a-boot-cd-dvd-iso-or-vhd.md)
+- To learn how to create a bootable CD, DVD, ISO, or VHD, see [WinPE: Create a Boot CD, DVD, ISO, or VHD](winpe-create-a-boot-cd-dvd-iso-or-vhd.md)
 
 ## <span id="related_topics"></span>Related topics
 
