@@ -18,9 +18,7 @@ ms.technology: windows-oem
 # Audio notifications
 
 
-If an app generates a notification and resulting toast during modern standby, a short audio alert is played. The display stays turned off while the alert plays.
-
-Apps that are not on the lock screen cannot generate audio notifications during modern standby.
+If an app generates a critical notification (such as Alarm, Cellular, or VOIP) during modern standby, a short audio alert is played. The display stays turned off while the alert plays.
 
 If the user has muted audio through the Settings menu, the audio alert does not play.
 
