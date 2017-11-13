@@ -10,7 +10,7 @@ ms.technology: windows-oem
 # Standards for a highly secure Windows 10 device
 These standards are for general purpose desktops, laptops, tablets, 2-in-1’s, mobile workstations, and desktops. This topic applies specifically and uniquely for **Windows 10 version 1709, Fall Creators Update**. Windows security features are enabled when you meet or exceed these standards and your device is able to provide a highly secure experience. 
 
-Beyond the hardware and firmware configurations outlined below, Microsoft recommends running [Windows 10 S](https://www.microsoft.com/en-us/windows/windows-10-s) for the most performant and secure configuration of Windows! 
+Beyond the hardware and firmware configurations outlined below, Microsoft recommends running [Windows 10 S](https://www.microsoft.com/en-us/windows/windows-10-s) for security and performance. Windows 10 S allows safeguards such as only running apps that are verified from Windows Store, and it uses the most secure browser--Microsoft Edge--by default. 
 
 ## Hardware
 
