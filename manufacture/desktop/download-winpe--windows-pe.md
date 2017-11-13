@@ -28,11 +28,11 @@ To start working with WinPE, download and install the [Windows Assessment and De
 
 ## Next Steps - create a bootable USB, CD, or DVD:
 
-After you download and install the ADK, create bootable WinPE media.
+After you've downloaded and installed the ADK, you can create bootable WinPE media.
 
-- To learn how to create a bootable USB drive, see [WinPE: Create USB Bootable drive](winpe-create-usb-bootable-drive.md) 
+- To learn how to create a bootable WinPE USB drive, see [WinPE: Create USB Bootable drive](winpe-create-usb-bootable-drive.md) 
 
-- To learn how to create a bootable CD, DVD, ISO, or VHD, see [WinPE: Create a Boot CD, DVD, ISO, or VHD](winpe-create-a-boot-cd-dvd-iso-or-vhd.md)
+- To learn how to create a bootable WinPE CD, DVD, ISO, or VHD, see [WinPE: Create a Boot CD, DVD, ISO, or VHD](winpe-create-a-boot-cd-dvd-iso-or-vhd.md)
 
 ## <span id="related_topics"></span>Related topics
 
