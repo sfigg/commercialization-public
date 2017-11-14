@@ -1,5 +1,5 @@
 ---
-title: Creating mobile packages
+title: Adding mobile packages
 description: 
     Packages are the logical building blocks of Windows 10 Mobile. They
     contain all the files, libraries, registry settings, executables, and
@@ -10,7 +10,7 @@ MSHAttr:
 ms.assetid: 826a5b62-e7ef-4e9f-975e-00579554c5a5
 ---
 
-# Creating mobile packages
+# Adding mobile packages
 
 
 Packages are the logical building blocks of Windows 10 Mobile. They
