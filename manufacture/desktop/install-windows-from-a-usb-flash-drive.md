@@ -41,7 +41,7 @@ This topic covers how to create a bootable Windows installation USB drive from a
 
 ### Step 2 - Copy Windows Setup to the USB flash drive
 
-1.  Use File Explorer to copy and paste the entire contents of the Windows product DVD to the USB flash drive.
+1.  Use File Explorer to copy and paste the entire contents of the Windows product DVD or ISO to the USB flash drive.
 
 2.  Optional: add an Unattend file or a configuration set to automate the installation process. For more information, see [Automate Windows Setup](windows-setup-automation-overview.md).
 
