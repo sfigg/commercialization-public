@@ -59,7 +59,7 @@ The following XML output shows how to set Windows Firewall groups.
 ```
 
 > [!Note]
-> The `Group` value must be the resource ID associated with the firewall group you want to reference (for example, the `Remote Desktop` group corresponds to the resource ID `@FirewallAPI.dll,-28752`). The resource ID, as opposed to the group's "friendly" name, is required in order to facilitate multilingual Unattend installations. Resource IDs can be obtained using Network Security cmdlet commands in PowerShell. See the child topic on the [Group](networking-mpssvc-svcfirewallgroups-firewallgroup-group.md) parameter for more detailed instructions.
+> The `Group` value must be the Group ID associated with the firewall group you want to reference (for example, the `Remote Desktop` group corresponds to the ID `@FirewallAPI.dll,-28752`). The ID, as opposed to the group's display name, is required in order to facilitate multilingual Unattend installations. Group IDs can be obtained using Network Security commands in PowerShell. See the child topic on the [Group](networking-mpssvc-svcfirewallgroups-firewallgroup-group.md) parameter for more detailed instructions.
 
 ## Related topics
 

@@ -34,16 +34,15 @@ The `Group` setting specifies the name of a [FirewallGroup](networking-mpssvc-sv
 
 **To obtain a GroupID**
 
-1. Open PowerShell
-1. Maximize the PowerShell window so it encompasses the full screen (if the window is not maximized, it will not show both columns of information)
-1. Enter the following command, which shows all unique groups on the computer which can have firewall rules associated with them.:
+1. Open PowerShell.
+1. Maximize the PowerShell window so it encompasses the full screen (if the window is not maximized, it will not show both columns of information).
+1. Enter the following command, which shows all unique groups on the computer which can have firewall rules associated with them:
 
    ```PowerShell
    Get-NetFirewallRule | sort -unique Group | sort DisplayGroup | ft DisplayGroup, Group
    ```
 
-1. The left column shows the `DisplayGroup`, or the "friendly" name of the group. Find the group you want to use in your Unattend setting.
-1. Look to the right to see the associated `Group`. `Group` may have the same value as `DisplayGroup`, or it may be a string containing a resource ID.
+1. PowerShell will show 2 columns of information. The left column shows the `DisplayGroup`, or the "friendly" name of the group. The right column shows the `Group` associated with the `DisplayGroup`. `Group` may have the same value as `DisplayGroup`, or it may be a string containing a resource ID.
 1. Use the value in the right column, `Group`, as the GroupID in your Unattend file.
 
 For more information on the `Get-NetFirewallRule` command, see [Net Security](https://docs.microsoft.com/en-us/powershell/module/netsecurity/?view=win10-ps) in the Windows PowerShell Reference.
@@ -62,7 +61,7 @@ For a list of the supported Windows editions and architectures that this compone
 
 ## XML Example
 
-The following XML output shows how to set two Windows Firewall groups, the first for File and Printer Sharing, and the second for Remote Desktop.
+The following XML output shows how to set two Windows Firewall groups, the first for `File and Printer Sharing`, and the second for `Remote Desktop`.
 
 ```XML
 <FirewallGroups>
