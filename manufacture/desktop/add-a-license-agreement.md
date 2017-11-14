@@ -19,7 +19,7 @@ For multi-region or multi-language images, you can create region specific licens
 
 Note: If the license terms are included, the OEM must include a version of the license terms in each language that is preinstalled onto the PC. You can read more about creating license terms at [OEM license terms](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/oem-license).
 
-Use the examples in the [USB-B.zip](http://download.microsoft.com/download/5/8/4/5844EE21-4EF5-45B7-8D36-31619017B76A/USB-B.zip) key.
+Use the examples in the [USB-B.zip](http://download.microsoft.com/download/3/F/2/3F2646EF-D589-498C-9F07-DE5549BE018E/USB-B.zip) key.
 
 ## <span id="Mount_the_image"></span>Mount the image
 

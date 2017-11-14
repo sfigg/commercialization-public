@@ -13,7 +13,7 @@ ms.technology: windows-oem
 
 # Sample scripts
 
-[Download the sample scripts used in this lab](http://go.microsoft.com/fwlink/p/?LinkId=800657) 
+[Download the sample scripts used in this lab](http://download.microsoft.com/download/3/F/2/3F2646EF-D589-498C-9F07-DE5549BE018E/USB-B.zip) 
 
 Copy these scripts to the root of your storage USB drive.  Refer to this page to understand what's in the scripts.
 

@@ -33,7 +33,7 @@ You can use scripts to take a Windows image and deploy Windows onto new PCs quic
 ## <span id="Copy_the_deployment_scripts"></span>Step 2: Copy the deployment scripts to the root of the USB storage drive
 
 Copy the [sample scripts](windows-deployment-sample-scripts-sxs.md) to the root of the USB storage drive. If you're going to be deploying FFU images, make sure you use the FFU scripts.
-[Download a copy here](http://go.microsoft.com/fwlink/p/?LinkId=800657)
+[Download a copy here](http://download.microsoft.com/download/3/F/2/3F2646EF-D589-498C-9F07-DE5549BE018E/USB-B.zip)
 
 ## <span id="Apply_the_image"></span>Step 3: Apply the Windows image using a script
 
