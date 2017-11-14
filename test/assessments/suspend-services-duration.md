@@ -22,7 +22,7 @@ Most services are not required to do any significant work in response to standby
 
 **Analysis and Remediation Steps**
 
-Identify a service that significantly impacts this metric. Longer delays in service responses generally produce issues that are specific to a given service. When such an issue is generated, you can follow the link inside the issue to see advanced issue details. When an issue is not generated, subsequent analysis in WPA is required. This additional analysis is beyond the scope of this document. For more information about common best practices, see [Best Practices for Time-Critical Tasks](results-for-the-onoff-assessments.md#best-practices-for-time-critical-tasks).
+Identify a service that significantly impacts this metric. Longer delays in service responses generally produce issues that are specific to a given service. When such an issue is generated, you can follow the link inside the issue to see advanced issue details. When an issue is not generated, subsequent analysis in WPA is required. This additional analysis is beyond the scope of this document. For more information about common best practices, see [Best Practices for Time-Critical Tasks](results-for-the-onoff-assessments.md#best-practices-for-time-critical-tasks) in the [Results for the On/Off Assessments](results-for-the-onoff-assessments.md) topic.
 
 **Additional Information**
 
