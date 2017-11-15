@@ -82,7 +82,14 @@ Use DISM to add or remove capabilities:
 |-----------|-------------------------------------------------------------------------|
 | NetFx3    | .NET 3.x Framework, a software framework required by many applications. |
 
- 
+
+### <span id="OPENSSH"></span><span id="openssh"></span> OpenSSH (Beta)
+
+| Component             | Description                                                            |
+|-----------------------|------------------------------------------------------------------------|
+| OpenSSH Client (Beta) | The beta release of an OpenSSH client for remoting and authentication. |
+| OpenSSH Server (Beta) | The beta release of an OpenSSH server for remoting and authentication. |
+
 
 ### <span id="language_capabilities"></span><span id="Language_capabilities"></span> Language capabilities
 
