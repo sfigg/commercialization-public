@@ -385,7 +385,7 @@
 ####### [Suspend Devices Duration](assessments/suspend-devices-duration.md)
 ####### [Suspend Processes Duration](assessments/suspend-processes-duration.md)
 ####### [Suspend Services Duration](assessments/suspend-services-duration.md)
-####### [Total Boot \[Excluding BIOS\] Duration & Total Resume \[Excluding BIOS\] Duration](assessments/total-boot-excluding-bios-duration-and-total-resume-excluding-bios-duration.md)
+####### [Total Boot &#91;Excluding BIOS&#93; Duration & Total Resume &#91;Excluding BIOS&#93; Duration](assessments/total-boot-excluding-bios-duration-and-total-resume-excluding-bios-duration.md)
 ####### [User Session Shutdown Duration](assessments/user-session-shutdown-duration.md)
 ####### [Winlogon Resume Duration](assessments/winlogon-resume-duration.md)
 ####### [Winlogon Suspend Duration & Winlogon Notifications Duration](assessments/winlogon-suspend-duration-and-winlogon-notifications-duration.md)
