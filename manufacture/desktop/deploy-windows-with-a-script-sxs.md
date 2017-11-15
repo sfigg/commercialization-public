@@ -61,7 +61,8 @@ The sample scripts include steps that detect the firmware type (the newer UEFI-b
 
     The script **ApplyImage.bat** uses the diskpart scripts: CreatePartitions-UEFI.txt and CreatePartitions-BIOS.txt to create the partitions and define the partition layout. These scripts must be placed in the same folder. You can update these scripts to change the partition sizes.
     
-    **Note:** If you're going to be capturing and deploying your final image as an FFU, use **ApplyImage-FFU.bat** and it's associated diskpart scripts. These scripts don't create a recovery partition, which makes it easier to resize the Windows partition after applying a FFU image.
+    > [!Note] If you're going to be capturing and deploying your final image as an FFU, use **ApplyImage-FFU.bat** and it's associated diskpart scripts. These scripts don't create a recovery partition, making it easier to resize the Windows partition after applying a FFU image.
+
     ```
     D:
     D:\Deployment\WIM\ApplyImage.bat D:\Images\install.wim
