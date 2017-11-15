@@ -26,7 +26,7 @@ This metric captures the cumulative time that all drivers take to respond to an 
 
 **Analysis and Remediation Steps**
 
-You can identify a driver or drivers that significantly impact this metric by looking at the sub-metrics. Long delays in the driver responses usually produce issues that are specific to a given driver. When such an issue is generated, follow the link inside the issue to see advanced issue details. When an issue is not generated, subsequent analysis in WPA is required; this is beyond the scope of this document. See [Best Practices for Time-Critical Tasks](#fs-analysis).
+You can identify a driver or drivers that significantly impact this metric by looking at the sub-metrics. Long delays in the driver responses usually produce issues that are specific to a given driver. When such an issue is generated, follow the link inside the issue to see advanced issue details. When an issue is not generated, subsequent analysis in WPA is required; this is beyond the scope of this document. See [Best Practices for Time-Critical Tasks](results-for-the-onoff-assessments.md#best-practices-for-time-critical-tasks) in the [Results for the On/Off Assessments](results-for-the-onoff-assessments.md) topic.
 
 **Additional Information**
 
