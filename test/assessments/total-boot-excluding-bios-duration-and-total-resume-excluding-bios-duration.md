@@ -7,7 +7,7 @@
 -   Standby Performance
 -   Hibernate Performance
 
-This metric measures the time that the computer spends starting up. This metric captures the time from the end of BIOS Initialization to the end of the Post On/Off phase, which ends when the system reaches an idle state.
+This metric measures the time that the computer spends starting up. This metric captures the time from the end of [BIOS Initialization](bios-initialization-duration.md) to the end of the [Post On/Off](post-on-off-duration.md) phase, which ends when the system reaches an idle state.
 
 **Detailed Sub-metrics**
 
