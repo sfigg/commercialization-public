@@ -27,9 +27,9 @@ Use the steps from [Lab 3: Add device drivers (.inf-style)](add-device-drivers.m
 
 1.  Open the command line as an administrator (**Start** > type **deployment** > right-click **Deployment and Imaging Tools Environment** > **Run as administrator**.)
 
-2.  Make a backup of the file (`copy "C:\Images\Win10_x64\sources\install.wim" C:\Images\install-backup.wim`)
+2.  Make a backup of the file (`copy "D:\Images\Win10_x64\sources\install.wim" D:\Images\install-backup.wim`)
 
-3.  Mount the image (`md C:\mount\windows`, then `Dism /Mount-Image /ImageFile:"C:\Images\install.wim" /Index:1 /MountDir:"C:\mount\windows" /Optimize`)
+3.  Mount the image (`md C:\mount\windows`, then `Dism /Mount-Image /ImageFile:"D:\Images\install.wim" /Index:1 /MountDir:"C:\mount\windows" /Optimize`)
 
 
 ## <span id="Create_license_files"></span>Create license files
@@ -54,7 +54,7 @@ Use the steps from [Lab 3: Add device drivers (.inf-style)](add-device-drivers.m
     C:\mount\windows\Windows\System32\oobe\info\default\1031\agreement.rtf  (German version)
     ```
     
-    Agreement.rtf EULA samples are in C:\USB-B\resources\
+    Agreement.rtf EULA samples are in D:\USB-B\resources\
     
 4. Open a text editor and create .html versions of your license terms. Save the terms to the same folders as the .rtf versions. You can use the [EULA example](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/oem-license#eula-example) from [OEM license terms](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/oem-license) to create sample files.  The names of the EULA files should be identical, except for the extension.
 
@@ -80,8 +80,8 @@ Use the steps from [Lab 3: Add device drivers (.inf-style)](add-device-drivers.m
 6.  Copy your **oobe.xml** to each language folder.
 
     ```
-    Copy e:\configset\oobe.xml c:\mount\windows\windows\system32\oobe\info\default\1033
-    Copy e:\configset\oobe.xml c:\mount\windows\windows\system32\oobe\info\default\1031
+    Copy D:\configset\oobe.xml c:\mount\windows\windows\system32\oobe\info\default\1033
+    Copy D:\configset\oobe.xml c:\mount\windows\windows\system32\oobe\info\default\1031
     ```
 
 7.  For Chinese Hong Kong, add the following OOBE.xml file. (In Windows 10 version 1607, the Chinese Hong Kong language pack was merged into the Chinese Taiwan language pack, so for this region, these steps are now required).
@@ -122,7 +122,7 @@ Learn how to apply the logo using the [User Experience Windows Engineering Guide
 
     ```
     MkDir c:\mount\windows\windows\system32\OEM
-    Copy C:\OEM c:\mount\windows\windows\system32\OEM
+    Copy D:\OEM c:\mount\windows\windows\system32\OEM
     ```
 
 ## <span id="Unmount_the_images"></span> Unmount the images
@@ -147,7 +147,7 @@ Use the steps from [Lab 2: Deploy Windows using a script](deploy-windows-with-a-
 1.  Copy the image file to the storage drive.
 2.  [Boot the reference device to Windows PE using the Windows PE USB key](install-windows-pe-sxs.md).
 3.  Find the drive letter of the storage drive (`diskpart, list volume, exit`).
-4.  Apply the image: `D:\ApplyImage.bat D:\Images\install.wim`.
+4.  Apply the image: `D:\Deployment\WIM\ApplyImage.bat D:\Images\install.wim`.
 5.  Disconnect the drives, then reboot (`exit`).
 	
 **Verify license terms**

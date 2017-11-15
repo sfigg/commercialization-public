@@ -122,7 +122,7 @@ Use the steps from [Lab 2: Deploy Windows using a script](deploy-windows-with-a-
 1.  Copy the image file to the storage drive.
 2.  [Boot the reference device to Windows PE using the Windows PE USB key](install-windows-pe-sxs.md).
 3.  Find the drive letter of the storage drive (`diskpart, list volume, exit`).
-4.  Apply the image: `D:\ApplyImage.bat D:\Images\install.wim`.
+4.  Apply the image: `D:\Deployment\WIM\ApplyImage.bat D:\Images\install.wim`.
 5.  Disconnect the drives, then reboot (`exit`).
 	
 ### Step 8: Verify apps

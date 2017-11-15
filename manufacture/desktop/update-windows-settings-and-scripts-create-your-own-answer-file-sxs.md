@@ -89,7 +89,7 @@ You can specify which configuration pass to add new settings:
     -   Model=`Notebook Model 1`
     -   Logo=`C:\Fabrikam\Fabrikam.bmp`
         
-    Create a 32-bit color with a maximum size of 120x120 pixels, save it as C:\\AnswerFiles\\Fabrikam.bmp file on your local PC, or use the sample from the USB-B key: `C:\USB-B\ConfigSet\$OEM$\$$\System32\OEM\Fabrikam.bmp`. 
+    Create a 32-bit color with a maximum size of 120x120 pixels, save it as D:\\AnswerFiles\\Fabrikam.bmp file on your local PC, or use the sample from the USB-B key: `D:\ConfigSet\$OEM$\$$\System32\OEM\Fabrikam.bmp`. 
     
     We'll copy the logo into the Windows image in a few steps.
 
@@ -184,13 +184,13 @@ You can specify which configuration pass to add new settings:
 
 **Step 4: Save the answer file**
 
--   Save the answer file, for example: **C:\\AnswerFiles\\BootToAudit-x64.xml**.
+-   Save the answer file, for example: **D:\\AnswerFiles\\BootToAudit-x64.xml**.
 
     **Note**   Windows SIM will not allow you to save the answer file into the mounted image folders.
      
 **Step 5: Create a script**
 
--   Copy the following sample script into Notepad, and save it as **C:\\AnswerFiles\\SampleCommand.cmd**.
+-   Copy the following sample script into Notepad, and save it as **D:\\AnswerFiles\\SampleCommand.cmd**.
 
     ```
     @rem Scan the integrity of system files 
@@ -212,9 +212,9 @@ Use the steps from [Lab 3: Add device drivers (.inf-style)](add-device-drivers.m
 
 1.  Open the command line as an administrator (**Start** > type **deployment** > right-click **Deployment and Imaging Tools Environment** > **Run as administrator**.)
 
-2.  Make a backup of the file (`copy "C:\Images\Win10_x64\sources\install.wim" C:\Images\install-backup.wim`)
+2.  Make a backup of the file (`copy "D:\Images\Win10_x64\sources\install.wim" D:\Images\install-backup.wim`)
 
-3.  Mount the image (`md C:\mount\windows`, then `Dism /Mount-Image /ImageFile:"C:\Images\install.wim" /Index:1 /MountDir:"C:\mount\windows" /Optimize`)
+3.  Mount the image (`md C:\mount\windows`, then `Dism /Mount-Image /ImageFile:"D:\Images\install.wim" /Index:1 /MountDir:"C:\mount\windows" /Optimize`)
 
 ### <span id="Add_the_answer_file"></span>Add the answer file
 **Step 7: Add the answer file**
@@ -222,10 +222,10 @@ Use the steps from [Lab 3: Add device drivers (.inf-style)](add-device-drivers.m
 
     ```
     MkDir c:\mount\windows\Windows\Panther
-    Copy C:\AnswerFiles\BootToAudit-x64.xml  C:\mount\windows\Windows\Panther\unattend.xml
+    Copy D:\AnswerFiles\BootToAudit-x64.xml  C:\mount\windows\Windows\Panther\unattend.xml
     MkDir c:\mount\windows\Fabrikam
-    Copy C:\AnswerFiles\Fabrikam.bmp    C:\mount\windows\Fabrikam\Fabrikam.bmp
-    Copy C:\AnswerFiles\SampleCommand.cmd    C:\mount\windows\Fabrikam\SampleCommand.cmd
+    Copy D:\AnswerFiles\Fabrikam.bmp    C:\mount\windows\Fabrikam\Fabrikam.bmp
+    Copy D:\AnswerFiles\SampleCommand.cmd    C:\mount\windows\Fabrikam\SampleCommand.cmd
     ```
 ## <span id="Unmount_the_images"></span> Unmount the images
 
@@ -239,7 +239,7 @@ Use the steps from [Lab 3: Add device drivers (.inf-style)](add-device-drivers.m
     Dism /Unmount-Image /MountDir:"C:\mount\windows" /Commit
     ```
 
-    where *C* is the drive letter of the drive that contains the image.
+    where *C* is the drive letter of the drive that contains the mounted image.
 
     This process may take several minutes.
 
@@ -251,7 +251,7 @@ Use the steps from [Lab 2: Deploy Windows using a script](deploy-windows-with-a-
 1.  Copy the image file to the storage drive.
 2.  [Boot the reference device to Windows PE using the Windows PE USB key](install-windows-pe-sxs.md).
 3.  Find the drive letter of the storage drive (`diskpart, list volume, exit`).
-4.  Apply the image: `D:\ApplyImage.bat D:\Images\install.wim`.
+4.  Apply the image: `D:\Deployment\WIM\ApplyImage.bat D:\Images\install.wim`.
 5.  Disconnect the drives, then reboot (`exit`).
 	
 **Step 10: Verify settings and scripts**

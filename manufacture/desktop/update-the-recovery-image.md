@@ -268,7 +268,7 @@ The short version:
 
 3.  Find the drive letter of the storage drive (`diskpart, list volume, exit`).
 
-4.  Apply the image: `D:\Deployment\WIM\ApplyImage.bat D:\Images\install.wim`.
+4.  Apply the image: `D:\Deployment\WIM\ApplyImage.bat D:\Images\install.wim` if your final image will be a WIM, or  `D:\Deployment\FFU\ApplyImage-FFU.bat D:\Images\install.wim` if your final image will be an FFU.
 
 5.  Apply the recovery image: `D:\Deployment\WIM\ApplyRecovery.bat` if you you used **ApplyImage.bat**, or `D:\Deployment\FFU\ApplyRecovery-FFU.bat` if you used **ApplyImage-FFU.bat** to apply your initial Windows image.
 	
