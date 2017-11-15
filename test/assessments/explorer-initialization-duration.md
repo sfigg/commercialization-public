@@ -16,5 +16,5 @@ In the absence of **RunOnce** applications, most of the time in this phase shoul
 
 Specific issues are usually generated for longer durations of the Explorer Initialization phase. You can gain more insight by opening WPA to the time interval of the Explorer Initialization activity. Avoid placing applications in the **RunOnce** key on a recurring basis because it delays Explorer Initialization.
 
-Investigating specific issues during Explorer Initialization is beyond the scope of this document. For a list of common best practices, see [Best Practices for Time-Critical Tasks](#fs-analysis).
+Investigating specific issues during Explorer Initialization is beyond the scope of this document. For a list of common best practices, see [Best Practices for Time-Critical Tasks](results-for-the-onoff-assessments.md#best-practices-for-time-critical-tasks) in the [Results for the On/Off Assessments](results-for-the-onoff-assessments.md) topic.
 

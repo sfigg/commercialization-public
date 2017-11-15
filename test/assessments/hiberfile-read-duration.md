@@ -15,7 +15,7 @@ When the metric is expanded, the size of the hiberfile (in Kilobytes) is shown.
 
 **Typical Influencing Factors**
 
-The time that it takes to read the hiberfile is directly proportional to the amount of data that must be read. This data consists of data in memory that is used by the operating system, drivers, and services, in addition to data that the system uses for system resume (identified during the Superfetch Prepare Memory phase of shutdown/suspend).
+The time that it takes to read the hiberfile is directly proportional to the amount of data that must be read. This data consists of data in memory that is used by the operating system, drivers, and services, in addition to data that the system uses for system resume (identified during the [Superfetch Prepare Memory](superfetch-prepare-memory-duration.md) phase of shutdown/suspend).
 
 > [!NOTE]
 > Hard drive physical performance characteristics, such as sequential read throughput, also affects this metric.
