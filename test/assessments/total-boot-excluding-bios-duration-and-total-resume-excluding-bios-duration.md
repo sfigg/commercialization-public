@@ -1,4 +1,4 @@
-# Total Boot \[Excluding BIOS\] Duration & Total Resume \[Excluding BIOS\] Duration
+# Total Boot (Excluding BIOS) Duration & Total Resume (Excluding BIOS) Duration
 
 **Relevant Assessments:**
 
