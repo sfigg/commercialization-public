@@ -70,7 +70,7 @@ Use these customizations to configure the device boot, initial setup, or shutdow
 <td><p>For Windows 10 Mobile, the default background during OOBE or initial device setup is always dark. To align with this change, OEMs can no longer change the default screen background color during OOBE or initial device setup.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Set the default country/region when SIM PIN is on](https://msdn.microsoft.com/library/windows/hardware/mt613526)</p></td>
+<td><p>[Set the default country/region when SIM PIN is on](https://docs.microsoft.com/en-us/windows-hardware/customize/mobile/mcsf/specifying-the-iccid-strings-and-region)</p></td>
 <td><p>OEMs can customize the default home country/region that shows up during OOBE in cases where the SIM PIN is turned on. This value is associated with the default ICCID values. When SIM PIN is turned off, the OS uses the MCC-derived country/region instead.</p></td>
 </tr>
 </tbody>
