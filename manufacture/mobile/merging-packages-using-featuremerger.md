@@ -18,10 +18,10 @@ packages that conform to the *Windows Standard Package Configuration*
 (WSPC).
 
 For an overview of package merging, see [Merging packages before
-imaging](merging_packages_before_imaging.htm). For more information
+imaging](merging-packages-before-imaging.md). For more information
 about the WSPC requirements for retail images, see [Windows Standard
 Packaging Configuration (WSPC) requirements for retail
-images](packaging_requirements_for_retail_images.htm).
+images](packaging-requirements-for-retail-images.md).
 
 ## <span id="featuremerger.exe_overview"></span><span id="FEATUREMERGER.EXE_OVERVIEW"></span>FeatureMerger.exe overview
 
@@ -37,7 +37,7 @@ To generate merged packages that comply with the (WSPC) for retail
 images, you must organize all your packages into a single feature
 manifest as described in [Windows Standard Packaging Configuration
 (WSPC) requirements for retail
-images](packaging_requirements_for_retail_images.htm) and pass this
+images](packaging-requirements-for-retail-images.md) and pass this
 feature manifest to FeatureMerger.exe. If you are starting with packages
 that are described in multiple feature manifest files, you can generate
 merged packages that comply with WSPC in a multi-step process:
@@ -51,7 +51,7 @@ merged packages that comply with WSPC in a multi-step process:
     merged packages are referenced in the WSPC-compliant sections of the
     feature manifest file, as described in [Windows Standard Packaging
     Configuration (WSPC) requirements for retail
-    images](packaging_requirements_for_retail_images.htm).
+    images](packaging-requirements-for-retail-images.md).
 
 3.  Generate merged packages by running FeatureMerger.exe with the
     consolidated feature manifest file.
@@ -102,7 +102,7 @@ FeatureMerger.exe with a single feature manifest XML file.
 <td><p>The version of the merged package that is created using the format &quot;&lt;major&gt;.&lt;minor&gt;.&lt;hotfix&gt;.&lt;build&gt;&quot;.</p>
 <div class="alert">
 <strong>Note</strong>  
-<p>The package version must be incremented whenever a package is changed. For more info about package versioning and updates, see [Update requirements](p_phUpdate.update_requirements).</p>
+<p>The package version must be incremented whenever a package is changed. For more info about package versioning and updates, see [Update requirements](..\..\service\mobile\update-requirements.md).</p>
 </div>
 <div>
  
@@ -494,7 +494,7 @@ Like all package generation, merged package generation uses catalog
 signing. For catalog signing to work, a certificate must be specified.
 To specify a signing certificate for package generation, follow the
 steps in [Set up the signing
-environment](p_phCodeSigning.set_up_the_signing_environment) and [Sign
+environment](https://msdn.microsoft.com/library/windows/hardware/dn756804) and [Sign
 binaries and packages](p_phCodeSigning.sign_binaries_and_packages).
 
 ## <span id="related_topics"></span>Related topics
@@ -504,7 +504,7 @@ binaries and packages](p_phCodeSigning.sign_binaries_and_packages).
 
 
 [Windows Standard Packaging Configuration (WSPC) requirements for retail
-images](packaging_requirements_for_retail_images.htm)
+images](packaging-requirements-for-retail-images,md)
 
  
 

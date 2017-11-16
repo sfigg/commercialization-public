@@ -61,22 +61,22 @@ to create images for flashing or updating a device.
 The following list shows additional topics related to package creation:
 
 -   [Primary elements and attributes of a package project
-    file](primary_elements_and_attributes_of_a_package_project_file.htm)
+    file](primary-elements-and-attributes-of-a-package-project-file.md)
 
 -   [Specifying components in a package project
-    file](specifying_components_in_a_package_project_file.htm)
+    file](specifying-components-in-a-package-project-file.md)
 
 -   [Specifying files and registry entries in a package project
-    file](specifying_files_and_registry_entries_in_a_package_project_file.htm)
+    file](specifying-files-and-registry-entries-in-a-package-project-file.md)
 
 -   [Command-line arguments for package
-    generator](command_line_arguments_for_package_generator.htm)
+    generator](command-line-arguments-for-package-generator.md)
 
 -   [Merging packages before
-    imaging](merging_packages_before_imaging.htm)
+    imaging](merging-packages-before-imaging.md)
 
 -   [Merging packages using
-    FeatureMerger](merging_packages_using_featuremerger.htm)
+    FeatureMerger](merging-packages-using-featuremerger.md)
 
 ## <span id="packaging_process"></span><span id="PACKAGING_PROCESS"></span>Packaging process during development
 
@@ -173,12 +173,12 @@ how to specify different registry values. If you run the package
 generator (pkggen.exe) against this project file, it will create a
 package that contains the specified files and registry values. For more
 info about how to run package generator, see [Command-line arguments for
-package generator](command_line_arguments_for_package_generator.htm).
+package generator](command-line-arguments-for-package-generator.md).
 
 You can also add other objects such as COM servers and drivers. For
 additional schema and attribute information for each type of object, see
 [Specifying components in a package project
-file](specifying_components_in_a_package_project_file.htm).
+file](specifying-components-in-a-package-project-file.md).
 
 Relative DestinationDir references using a "." or ".." are not
 supported. Use absolute directory references instead.
@@ -217,7 +217,7 @@ default to %WPDKCONTENTROOT%\\Tools\\bin\\i386.
 
 For additional info about package generator options and capabilities,
 see [Command-line arguments for package
-generator](command_line_arguments_for_package_generator.htm).
+generator](command-line-arguments-for-package-generator.md).
 
 ## <span id="view_package"></span><span id="VIEW_PACKAGE"></span>View the contents of a package
 
@@ -298,7 +298,7 @@ While only **File** and **RegKey** elements have **Language**
 attributes, most of the package objects can contain **File** and
 **RegKey** child elements. For more info about these elements, see
 [Specifying files and registry entries in a package project
-file](specifying_files_and_registry_entries_in_a_package_project_file.htm).
+file](specifying-files-and-registry-entries-in-a-package-project-file.md).
 
  
 
@@ -347,7 +347,7 @@ package project XML file. The following XML example demonstrates how to
 specify the .inf and .sys file for a driver. For more info about the
 elements and attributes available for drivers, including those for
 security, see [Specifying components in a package project
-file](specifying_components_in_a_package_project_file.htm).
+file](specifying-files-and-registry-entries-in-a-package-project-file.md).
 
 ``` syntax
 <Components>
@@ -392,7 +392,7 @@ The **Service** element in the package project XML file, its child
 elements, and its attributes can be used to define and package a system
 service. For more detailed info about the attributes and chid elements
 of the **Service** element, see [Specifying components in a package
-project file](specifying_components_in_a_package_project_file.htm).
+project file](specifying-files-and-registry-entries-in-a-package-project-file.md).
 
 ## <span id="customization"></span><span id="CUSTOMIZATION"></span>Add customization settings
 
@@ -459,7 +459,7 @@ After defining the macro shown here, you could use $(testName) to
 reference the value "testValue" in your project. For more info, see "The
 Macros element and local project macros" in [Primary elements and
 attributes of a package project
-file](primary_elements_and_attributes_of_a_package_project_file.htm).
+file](primary-elements-and-attributes-of-a-package-project-file.md).
 
  
 

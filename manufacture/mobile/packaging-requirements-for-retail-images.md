@@ -136,9 +136,9 @@ where you must work around deprecated packages for WSPC compliance.
 More information on using feature merge can be found at the links below:
 
 -   [Merging packages before
-    imaging](merging_packages_before_imaging.htm)
+    imaging](merging-packages-before-imaging.md)
 -   [Merging packages using
-    FeatureMerger](merging_packages_using_featuremerger.htm)
+    FeatureMerger](merging-packages-using-featuremerger.md)
 
 ## <span id="Firmware_submissions"></span><span id="firmware_submissions"></span><span id="FIRMWARE_SUBMISSIONS"></span>Firmware submissions
 
@@ -499,7 +499,7 @@ To conform to WSPC, OEMs should use FeatureMerger.exe to reduce the
 total number of packages in a firmware submissions to the greatest
 extent possible. For more info about the package merging process and how
 the merged package names are derived, see [Merging packages before
-imaging](merging_packages_before_imaging.htm).
+imaging](merging-packages-before-imaging.md).
 
 ### <span id="empty"></span><span id="EMPTY"></span>Creating empty packages
 
@@ -688,7 +688,7 @@ partition called Contoso.BASE.MainOS.spkg.
 
 
 [Merging packages using
-FeatureMerger](merging_packages_using_featuremerger.htm)
+FeatureMerger](merging-packages-using-featuremerger.md)
 
  
 
