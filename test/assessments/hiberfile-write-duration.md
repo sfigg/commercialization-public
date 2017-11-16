@@ -15,7 +15,7 @@ When the metric is expanded, the size of the hiberfile is shown in Kilobytes.
 
 **Typical Influencing Factors**
 
-The time it takes to write the hiberfile is directly proportional to the amount of data that needs to be written. This data consists of memory that is in use by the operating system, drivers, and services, in addition to any data that the system must read during system resume (as identified during the Superfetch Prepare Memory phase).
+The time it takes to write the hiberfile is directly proportional to the amount of data that needs to be written. This data consists of memory that is in use by the operating system, drivers, and services, in addition to any data that the system must read during system resume (as identified during the [Superfetch Prepare Memory](superfetch-prepare-memory-duration.md) phase).
 
 A driver that uses large amounts of memory can influence this metric by having the memory manager write data into the hiberfile. Or, a startup application can cause large amounts of data to be read on the resume path. In these cases, the Superfetch service ensures that data is included into the hiberfile to avoid slow random faulting on the resume path.
 

@@ -50,7 +50,7 @@ Identify the processes that most significantly impact this metric. In Windows As
 
 If possible, remove applications from the startup path. As a best practice, startup applications should be kept to a minimum. If an unessential application is causing delays, consider removing it from the list of startup applications.
 
-Troubleshooting and fixing issues with that significantly impact the startup path requires deep analysis of application delays. See [Best Practices for Time-Critical Tasks](#fs-analysis) for a list of common best practices.
+Troubleshooting and fixing issues with that significantly impact the startup path requires deep analysis of application delays. See [Best Practices for Time-Critical Tasks](results-for-the-onoff-assessments.md#best-practices-for-time-critical-tasks) in the [Results for the On/Off Assessments](results-for-the-onoff-assessments.md) topic for a list of common best practices.
 
 **Additional Information**
 

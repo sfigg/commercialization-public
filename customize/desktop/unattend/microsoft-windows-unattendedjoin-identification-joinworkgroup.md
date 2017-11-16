@@ -62,13 +62,7 @@ The following XML output shows how to set the identification settings.
 
 ```
 <Identification>
-   <Credentials>
-      <Domain>fabrikam.com</Domain>
-      <Password>MyPassword</Password>
-      <Username>MyUserName</Username>
-   </Credentials>
    <JoinWorkgroup>MyWorkgroup</JoinWorkgroup>
-   <MachinePassword>ComputerPassword</MachinePassword>
 </Identification>
 ```
 
