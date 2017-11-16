@@ -23,7 +23,7 @@ OEMs can configure `ConvertibleSlateModePromptPreference` to support Continuum, 
 
 To make this setting work, set up a GPIO pin and a [GPIO Injection Driver](http://go.microsoft.com/fwlink/?LinkId=320790) to detect the mode. When the mode changes, the driver should update the registry value of **HKLM/System/CurrentControlSet/Control/PriorityControl/ConvertibleSlateMode**.
 
-For devices that can use Windows 10 Continuum feature, also see the topic: [Continuum](https://msdn.microsoft.com/library/windows/hardware/dn917883.aspx).
+For devices that can use Windows 10 Continuum feature, also see the topic: [Continuum](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/continuum).
 
 ## Values
 
@@ -85,7 +85,7 @@ For a list of the Windows editions and architectures that this component support
 
 [GPIO Injection Driver](http://go.microsoft.com/fwlink/?LinkId=320790)
 
-[Continuum](https://msdn.microsoft.com/library/windows/hardware/dn917883.aspx)
+[Continuum](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/continuum)
 
  
 
