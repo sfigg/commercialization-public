@@ -87,7 +87,7 @@ You can view On/Off assessment metrics for the following transition phases:
 -   [Suspend Devices Duration](suspend-devices-duration.md)
 -   [Suspend Processes Duration](suspend-processes-duration.md)
 -   [Suspend Services Duration](suspend-services-duration.md)
--   [Total Boot \[Excluding BIOS\] Duration & Total Resume \[Excluding BIOS\] Duration](total-boot-excluding-bios-duration-and-total-resume-excluding-bios-duration.md)
+-   [Total Boot (Excluding BIOS) Duration & Total Resume (Excluding BIOS) Duration](total-boot-excluding-bios-duration-and-total-resume-excluding-bios-duration.md)
 -   [User Session Shutdown Duration](user-session-shutdown-duration.md)
 -   [Winlogon Resume Duration](winlogon-resume-duration.md)
 -   [Winlogon Suspend Duration & Winlogon Notifications Duration](winlogon-suspend-duration-and-winlogon-notifications-duration.md)
