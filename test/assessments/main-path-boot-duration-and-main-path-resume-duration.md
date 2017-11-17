@@ -7,7 +7,7 @@
 -   Standby Performance
 -   Hibernate Performance
 
-This metric measures the time from when the computer begins start-up until the user’s Desktop is visible. This metric captures the time from the end of BIOS Initialization until the Windows 8 UI is shown, and it does not include the Post On/Off phase.
+This metric measures the time from when the computer begins start-up until the user’s Desktop is visible. This metric captures the time from the end of [BIOS Initialization](bios-initialization-duration.md) until the Windows 8 UI is shown, and it does not include the [Post On/Off](post-on-off-duration.md) phase.
 
 **Detailed Sub-metrics**
 
