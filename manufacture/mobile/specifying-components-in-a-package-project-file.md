@@ -726,8 +726,7 @@ Use the following process to add custom data to an existing package.
       </CustomMetadata>
     ```
 
-3.  Use PkgGen to generate a package. For more info, see [Creating
-    packages](creating_packages.md).
+3.  Use PkgGen to generate a package. For more info, see [Creating packages](creating-packages.md).
 
 ### <span id="Walkthrough___viewing_custom_metadata"></span><span id="walkthrough___viewing_custom_metadata"></span><span id="WALKTHROUGH___VIEWING_CUSTOM_METADATA"></span>Walkthrough – viewing custom metadata
 
