@@ -24,8 +24,8 @@ certificate is not provided, usage of pkggen.exe will return the
 following error message:
 `Failed to sign package integrity catalog file`. To specify a signing
 certificate for pkggen.exe, follow the steps in [Set up the signing
-environment](p_phCodeSigning.set_up_the_signing_environment) and [Sign
-binaries and packages](p_phCodeSigning.sign_binaries_and_packages).
+environment](https://msdn.microsoft.com/library/windows/hardware/dn756804.aspx) and [Sign
+binaries and packages](https://msdn.microsoft.com/library/windows/hardware/dn789217.aspx).
 
  
 

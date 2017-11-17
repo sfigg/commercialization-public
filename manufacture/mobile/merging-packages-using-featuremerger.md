@@ -102,7 +102,7 @@ FeatureMerger.exe with a single feature manifest XML file.
 <td><p>The version of the merged package that is created using the format &quot;&lt;major&gt;.&lt;minor&gt;.&lt;hotfix&gt;.&lt;build&gt;&quot;.</p>
 <div class="alert">
 <strong>Note</strong>  
-<p>The package version must be incremented whenever a package is changed. For more info about package versioning and updates, see [Update requirements](..\..\service\mobile\update-requirements.md).</p>
+<p>The package version must be incremented whenever a package is changed. For more info about package versioning and updates, see [Update requirements](https://docs.microsoft.com/windows-hardware/service/mobile/update-requirements).</p>
 </div>
 <div>
  
@@ -281,7 +281,7 @@ FeatureMerger.exe with an FMFileList XML file.
 <td><p>The version of the merged package that is created using the format &quot;&lt;major&gt;.&lt;minor&gt;.&lt;hotfix&gt;.&lt;build&gt;&quot;.</p>
 <div class="alert">
 <strong>Note</strong>  
-<p>The package version must be incremented whenever a package is changed. For more info about package versioning and updates, see [Update requirements](p_phUpdate.update_requirements).</p>
+<p>The package version must be incremented whenever a package is changed. For more info about package versioning and updates, see [Update requirements](https://docs.microsoft.com/windows-hardware/service/mobile/update-requirements).</p>
 </div>
 <div>
  
@@ -495,7 +495,7 @@ signing. For catalog signing to work, a certificate must be specified.
 To specify a signing certificate for package generation, follow the
 steps in [Set up the signing
 environment](https://msdn.microsoft.com/library/windows/hardware/dn756804) and [Sign
-binaries and packages](p_phCodeSigning.sign_binaries_and_packages).
+binaries and packages](https://msdn.microsoft.com/library/windows/hardware/dn789217.aspx).
 
 ## <span id="related_topics"></span>Related topics
 

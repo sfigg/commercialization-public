@@ -111,12 +111,12 @@ necessitate the upgrade, including:
 
 1.  A **Baseline** parameter has been added to the
     [Initialize-FirmwareSubmission
-    cmdlet](p_phUpdate.initialize_firmwaresubmission_cmdlet). This will
+    cmdlet](https://docs.microsoft.com/windows-hardware/service/mobile/initialize-firmwaresubmission-cmdlet). This will
     be used to identify a firmware submission as a baseline for WSPC
     compliance validation.
 2.  The **nonWSPCCompliant** parameter of the
     [Initialize-FirmwareSubmission
-    cmdlet](p_phUpdate.initialize_firmwaresubmission_cmdlet) has been
+    cmdlet](https://docs.microsoft.com/windows-hardware/service/mobile/initialize-firmwaresubmission-cmdlet) has been
     deprecated.
 3.  All requests for all cmdlets from previous versions of the WPIC will
     be rejected with the following error:
@@ -162,7 +162,7 @@ be feature merged to the greatest extent possible.
 
 To declare the firmware submission as a baseline, you will run the
 [Initialize-FirmwareSubmission
-cmdlet](p_phUpdate.initialize_firmwaresubmission_cmdlet) with the
+cmdlet](https://docs.microsoft.com/windows-hardware/service/mobile/initialize-firmwaresubmission-cmdlet) with the
 **baseline** parameter as shown below.
 
 ``` syntax
@@ -340,7 +340,7 @@ The firmware submission is not WSPC compliant with the baseline submission {1}. 
 ### <span id="Partial_submissions"></span><span id="partial_submissions"></span><span id="PARTIAL_SUBMISSIONS"></span>Partial submissions
 
 Partial firmware submissions with the [Initialize-FirmwareSubmission
-cmdlet](p_phUpdate.initialize_firmwaresubmission_cmdlet) using the
+cmdlet](https://docs.microsoft.com/windows-hardware/service/mobile/initialize-firmwaresubmission-cmdlet) using the
 **PartialImage** parameter will still be allowed, but the submission
 must not be a baseline submission.
 
@@ -349,7 +349,7 @@ must not be a baseline submission.
 The **NonWspcCompliant** parameter is not supported.
 
 For more info, see [Initialize-FirmwareSubmission
-cmdlet](p_phUpdate.initialize_firmwaresubmission_cmdlet).
+cmdlet](https://docs.microsoft.com/windows-hardware/service/mobile/initialize-firmwaresubmission-cmdlet).
 
 ### <span id="Request_for_update__RFU_"></span><span id="request_for_update__rfu_"></span><span id="REQUEST_FOR_UPDATE__RFU_"></span>Request for update (RFU)
 
