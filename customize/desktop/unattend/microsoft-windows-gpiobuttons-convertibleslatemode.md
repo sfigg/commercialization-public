@@ -19,7 +19,7 @@ ms.technology: windows-oem
 
 `ConvertibleSlateMode` specifies whether the device has a physical keyboard. Windows uses this setting when determining whether to show an on-screen keyboard. For example, when the user receives a prompt that can accept keyboard input on a tablet, the on-screen keyboard appears.
 
-This setting is related to [ConvertibleSlateModePromptPreference](microsoft-windows-shell-convertibleslatemodepromptpreference.md), which determines whether to prompt the user to show or hide the keyboard whenever the device changes modes, for example, when the keyboards is attached/detached or rotated to be accessible/inaccessible.
+This setting is related to [ConvertibleSlateModePromptPreference](microsoft-windows-shell-setup-convertibleslatemodepromptpreference.md), which determines whether to prompt the user to show or hide the keyboard whenever the device changes modes, for example, when the keyboards is attached/detached or rotated to be accessible/inaccessible.
 
 ## Recommended settings
 
@@ -31,7 +31,7 @@ This setting is related to [ConvertibleSlateModePromptPreference](microsoft-wind
 **For convertible or detachable devices that sometimes have an accessible keyboard**:
 
 -   Set ConvertibleSlateMode to **0**.
--   Set [ConvertibleSlateModePromptPreference](microsoft-windows-shell-convertibleslatemodepromptpreference.md) to **1**.
+-   Set [ConvertibleSlateModePromptPreference](microsoft-windows-shell-setup-convertibleslatemodepromptpreference.md) to **1**.
 -   Set up a GPIO pin and a [GPIO Injection Driver](http://go.microsoft.com/fwlink/?LinkId=320790) to detect the mode. When the mode changes, the driver should update the registry value of **HKLM/System/CurrentControlSet/Control/PriorityControl/ConvertibleSlateMode**.
 -   For devices that can use Windows 10 Continuum feature, also see the topic: [Continuum](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/continuum).
 
@@ -90,9 +90,9 @@ The following XML output specifies a laptop form factor.
 
 [Microsoft-Windows-GPIOButtons](microsoft-windows-gpiobuttons.md)
 
-[ConvertibleSlateModePromptPreference](microsoft-windows-shell-convertibleslatemodepromptpreference.md)
+[ConvertibleSlateModePromptPreference](microsoft-windows-shell-setup-convertibleslatemodepromptpreference.md)
 
-[GPIO Injection Driver](http://go.microsoft.com/fwlink/?LinkId=320790)
+[GPIO Implementation Guide](https://docs.microsoft.com/en-us/windows-hardware/drivers/gpiobtn/gpio-buttons-and-indicators-implementation-guide-for-windows-8-1)
 
 [Continuum](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/continuum)
 

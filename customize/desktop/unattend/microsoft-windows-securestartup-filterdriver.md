@@ -1,6 +1,6 @@
 ---
-title: microsoft-windows-securestartup-filterdriver-
-description: microsoft-windows-securestartup-filterdriver-
+title: Microsoft-Windows-SecureStartup-FilterDriver
+description: Microsoft-Windows-SecureStartup-FilterDriver
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
@@ -14,7 +14,7 @@ ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-# microsoft-windows-securestartup-filterdriver-
+# Microsoft-Windows-SecureStartup-FilterDriver
 
 
 The microsoft-windows-securestartup-filterdriver- component contains settings to optimize BitLocker settings for PCs with hardware architectures such as System on a Chip (SoC).
