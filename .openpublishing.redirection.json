@@ -1,12 +1,12 @@
 { 
   "redirections": [ 
     {   
-        "source_path": "/customize/desktop/unattend/microsoft-windows-shell-convertibleslatemodepromptpreference.md", 
+        "source_path": "customize/desktop/unattend/microsoft-windows-shell-convertibleslatemodepromptpreference.md", 
         "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-shell-setup-convertibleslatemodepromptpreference", 
         "redirect_document_id": true
     },
     {   
-        "source_path": "/customize/desktop/unattend/microsoft-windows-shell-signinmode.md", 
+        "source_path": "customize/desktop/unattend/microsoft-windows-shell-signinmode.md", 
         "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-shell-setup-signinmode", 
         "redirect_document_id": true
     },
