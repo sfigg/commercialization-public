@@ -195,9 +195,9 @@ default to %WPDKCONTENTROOT%\\Tools\\bin\\i386.
 
 1.  Configure your environment to specify a certificate for package
     signing using the guidance provided in [Set up the signing
-    environment](p_phCodeSigning.set_up_the_signing_environment) and
+    environment](https://msdn.microsoft.com/library/windows/hardware/dn756804.aspx) and
     [Sign binaries and
-    packages](p_phCodeSigning.sign_binaries_and_packages).
+    packages](https://msdn.microsoft.com/library/windows/hardware/dn789217.aspx).
 
 2.  Add %WPDKCONTENTROOT%\\Tools\\bin\\i386 to your Path environment
     variable.
