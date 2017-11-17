@@ -213,7 +213,7 @@ These settings in the [Microsoft-Windows-IE-InternetExplorer](microsoft-windows-
 </tbody>
 </table>
 
-# Changed answer file settings for Windows 10 for desktop editions, build 1511
+## Changed answer file settings for Windows 10 for desktop editions, build 1511
 
 The tables below describe Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) and Windows Server 2016 answer file settings that changed since Windows 8.1 Update, Windows 8.1, and Windows Server 2012 R2.
 

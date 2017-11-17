@@ -12,6 +12,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
+redirect_url: https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/changed-answer-file-settings-for-previous-windows10-builds#changed-answer-file-settings-for-windows-81-and-windows-server-2012-r2
 ---
 
 # Changed answer file settings for Windows 8.1 and Windows Server 2012 R2
