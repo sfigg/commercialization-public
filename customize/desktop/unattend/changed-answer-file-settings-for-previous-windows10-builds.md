@@ -260,7 +260,7 @@ These Unattend settings are new in Windows 10:
 <td><p>Specifies whether the device supports functional level device reset. The functional level device reset feature in the OS checks this system capability exclusively to determine if it can run.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Microsoft-Windows-Wlansvc-WLANPlatformLevelDeviceResetSupported](microsoft-windows-wlansvc-wlanplatformleveldeviceresetmd)</p></td>
+<td><p>[Microsoft-Windows-Wlansvc-WLANPlatformLevelDeviceResetSupported](microsoft-windows-wlansvc-wlanplatformleveldevicereset.md)</p></td>
 <td><p>Specifies whether the device supports platform level device reset. The platform level device reset feature in the OS checks this system capability exclusively to determine if it can run.</p></td>
 </tr>
 <tr class="odd">
@@ -297,7 +297,7 @@ These Unattend settings are new in Windows 10:
 </tr>
 <tr class="odd">
 <td><p>[Microsoft-Windows-Shell-Setup-SignInMode](microsoft-windows-shell-setup-signinmode.md)</p>
-<p>[Microsoft-Windows-Shared-Access-ConvertibleSlateModePromptPreference](microsoft-windows-shell-convertibleslatemodepromptpreference.md)</p></td>
+<p>[Microsoft-Windows-Shell-Setup-ConvertibleSlateModePromptPreference](microsoft-windows-shell-setup-convertibleslatemodepromptpreference.md)</p></td>
 <td><p>OEMs can configure these settings to support Continuum, which is a new, adaptive user experience in Windows 10 that optimizes the look and behavior of apps and the Windows UI for a given physical form factor and the customer's usage preferences.</p>
 <ul>
 <li><p>To configure devices to boot straight into tablet mode, use <code>SignInMode</code>.</p></li>
@@ -424,7 +424,7 @@ The following Windows 8.1 Update, Windows 8.1, and Windows Server 2012 R2 sett
 <td><p>This is not applicable for Windows 10.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Microsoft-Windows-Shell-Setup\VisualEffects-SystemDefaultBackgroundColor](microsoft-windows-shell-setup-visualeffects-systemdefaultbackgroundcolor.md)</p></td>
+<td><p>[Microsoft-Windows-Shell-Setup-VisualEffects-SystemDefaultBackgroundColor](microsoft-windows-shell-setup-visualeffects-systemdefaultbackgroundcolor.md)</p></td>
 <td><p>This setting is deprecated in Windows 10 and should not be used. The default background color during OOBE is always dark. To align with this change, partners can no longer change the default screen background color during OOBE.</p></td>
 </tr>
 <tr class="odd">
