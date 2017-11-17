@@ -1,3 +1,15 @@
+---
+title: Total Boot (Excluding BIOS) Duration & Total Resume (Excluding BIOS) Duration
+description: On/Off assessment results for the total boot (excluding BIOS) & total resume (excluding BIOS) transition phases
+author: v-denlee
+ms.author: v-denlee
+ms.date: 11/17/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
+localizationpriority: medium
+---
+
 # Total Boot (Excluding BIOS) Duration & Total Resume (Excluding BIOS) Duration
 
 **Relevant Assessments:**
