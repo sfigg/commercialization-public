@@ -15,7 +15,7 @@ ms.technology: windows-oem
 # Include required Microsoft components to the image
 
 
-This customization provides information on how partners can include the required Microsoft components in the OS image. For more information about other features you can include or exclude from your image, see [Optional features for building images](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/manufacture/mobile/optional-features-for-building-images).
+This customization provides information on how partners can include the required Microsoft components in the OS image. For more information about other features you can include or exclude from your image, see [Optional features for building images](https://docs.microsoft.com/en-us/windows-hardware/manufacture/mobile/optional-features-for-building-images).
 
 For a comprehensive list of required Microsoft components that must be included in a Windows 10 Mobile image, refer to the *OEM Policy Document (OPD) for Windows 10 Mobile*.
 

@@ -127,9 +127,9 @@ In Windows 10 Mobile, the notification LED on handheld devices may not turn on 
       </Features>
     ```
 
-    For more information about OEMInput.xml, see [OEMInput file contents](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/manufacture/mobile/oeminput-file-contents).
+    For more information about OEMInput.xml, see [OEMInput file contents](https://docs.microsoft.com/en-us/windows-hardware/manufacture/mobile/oeminput-file-contents).
 
-6.  Build the OS image. For more information, see *Using ImgGen.cmd to generate an image* in [Build a mobile image using ImgGen.cmd](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/manufacture/mobile/building-a-phone-image-using-imggencmd).
+6.  Build the OS image. For more information, see *Using ImgGen.cmd to generate an image* in [Build a mobile image using ImgGen.cmd](https://docs.microsoft.com/en-us/windows-hardware/manufacture/mobile/building-a-phone-image-using-imggencmd).
 
 <a href="" id="testing-"></a>**Testing:**  
 1.  Flash the build that contains this customization to a mobile device.

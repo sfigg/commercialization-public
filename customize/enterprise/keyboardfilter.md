@@ -47,8 +47,8 @@ Turning on an off Keyboard Filter requires that you restart your device. Keyboar
 
 ### Configure Keyboard using Unattend
 
-1. You can configure the Unattend settings in the [Microsoft-Windows-Embedded-KeyboardFilterService](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/customize/desktop/unattend/microsoft-windows-embedded-keyboardfilterservice) component to add Keyboard Filter features to your image during the design or imaging phase.
-1. You can manually create an Unattend answer file or use Windows System Image Manager (Windows SIM) to add the appropriate settings to your answer file. For more information about the keyboard filter settings and XML examples, see the settings in [Microsoft-Windows-Embedded-KeyboardFilterService](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/customize/desktop/unattend/microsoft-windows-embedded-keyboardfilterservice).
+1. You can configure the Unattend settings in the [Microsoft-Windows-Embedded-KeyboardFilterService](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-embedded-keyboardfilterservice) component to add Keyboard Filter features to your image during the design or imaging phase.
+1. You can manually create an Unattend answer file or use Windows System Image Manager (Windows SIM) to add the appropriate settings to your answer file. For more information about the keyboard filter settings and XML examples, see the settings in [Microsoft-Windows-Embedded-KeyboardFilterService](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-embedded-keyboardfilterservice).
 
 ### Turn on and configure Keyboard Filter using Windows Configuration Designer
 

@@ -19,7 +19,7 @@ ms.technology: windows-oem
 
 `OfflineLocalAccounts` specifies offline local accounts to be created during installation.
 
-You can use the **sysprep/generalize** command in conjunction with `OfflineLocalAccounts` to change account information. See the B[Best Practices for Authoring Answer Files](https://msdn.microsoft.com/library/windows/hardware/dn915073) topic for details.
+You can use the **sysprep/generalize** command in conjunction with `OfflineLocalAccounts` to change account information. See the [Best Practices for Authoring Answer Files](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/wsim/best-practices-for-authoring-answer-files) topic for details.
 
 ## Child Elements
 

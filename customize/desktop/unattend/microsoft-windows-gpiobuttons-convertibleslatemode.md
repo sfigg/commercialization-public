@@ -33,7 +33,7 @@ This setting is related to [ConvertibleSlateModePromptPreference](microsoft-wind
 -   Set ConvertibleSlateMode to **0**.
 -   Set [ConvertibleSlateModePromptPreference](microsoft-windows-shell-convertibleslatemodepromptpreference.md) to **1**.
 -   Set up a GPIO pin and a [GPIO Injection Driver](http://go.microsoft.com/fwlink/?LinkId=320790) to detect the mode. When the mode changes, the driver should update the registry value of **HKLM/System/CurrentControlSet/Control/PriorityControl/ConvertibleSlateMode**.
--   For devices that can use Windows 10 Continuum feature, also see the topic: [Continuum](https://msdn.microsoft.com/library/windows/hardware/dn917883.aspx).
+-   For devices that can use Windows 10 Continuum feature, also see the topic: [Continuum](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/continuum).
 
 **For devices without a touchscreen**, this setting does nothing. Even if you set this setting, Windows assumes a physical keyboard is present and will not show the on-screen keyboard.
 
@@ -94,7 +94,7 @@ The following XML output specifies a laptop form factor.
 
 [GPIO Injection Driver](http://go.microsoft.com/fwlink/?LinkId=320790)
 
-[Continuum](https://msdn.microsoft.com/library/windows/hardware/dn917883.aspx)
+[Continuum](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/continuum)
 
  
 

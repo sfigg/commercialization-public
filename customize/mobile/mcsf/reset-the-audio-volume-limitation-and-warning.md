@@ -103,9 +103,9 @@ To reset the audio volume limit and show the volume level warning every time the
       </Features>
     ```
 
-    For more information, see [OEMInput file contents](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/manufacture/mobile/oeminput-file-contents).
+    For more information, see [OEMInput file contents](https://docs.microsoft.com/en-us/windows-hardware/manufacture/mobile/oeminput-file-contents).
 
-6.  Build the OS image. For more information, see *Using ImgGen.cmd to generate an image* in [Building a mobile image using ImgGen.cmd](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/manufacture/mobile/building-a-phone-image-using-imggencmd).
+6.  Build the OS image. For more information, see *Using ImgGen.cmd to generate an image* in [Building a mobile image using ImgGen.cmd](https://docs.microsoft.com/en-us/windows-hardware/manufacture/mobile/building-a-phone-image-using-imggencmd).
 
 <a href="" id="testing-"></a>**Testing:**  
 1.  Flash the build that contains this customization to a device.

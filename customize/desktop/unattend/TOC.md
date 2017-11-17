@@ -1,9 +1,7 @@
 # [Unattended Windows Setup Reference](index.md)
 ## [Changed answer file settings for Windows 10 for desktop editions, build 1709](changed-answer-file-settings-for-windows-10-build-1709.md)
-## [Changed answer file settings for Windows 10 for desktop editions, build 1703](changed-answer-file-settings-for-windows-10-build-1703.md)
-## [Changed answer file settings for Windows 10 for desktop editions, build 1607](changed-answer-file-settings-for-windows-10-build-1607.md)
-## [Changed answer file settings for Windows 10 for desktop editions, build 1511](changed-answer-file-settings-for-windows-10-build-1511.md)
-## [Changed answer file settings for Windows 8.1 and Windows Server 2012 R2](changed-answer-file-settings-from-windows-8-and-windows-server-2012-b-unattend.md)
+## [Changed answer file settings for previous Windows 10 builds](changed-answer-file-settings-for-previous-windows10-builds.md)
+
 ## [Components](components-b-unattend.md)
 ### [Microsoft-Windows-Audio-AudioCore](microsoft-windows-audio-audiocore.md)
 #### [EnableCaptureMonitor](microsoft-windows-audio-audiocore-enablecapturemonitor.md)

@@ -27,10 +27,10 @@ You have installed the Universal Windows app for the Assigned Access user accoun
 1. Create a user account for assigned access.
 
    > [!Note]
-   > The user account for assigned access must be a local standard user account if you are configuring assigned access using Settings or Powershell. The same restriction does not apply if you are using the [Assigned Access CSP](https://msdn.microsoft.com/en-us/library/windows/hardware/mt158258.aspx).
+   > The user account for assigned access must be a local standard user account if you are configuring assigned access using Settings or Powershell. The same restriction does not apply if you are using the [Assigned Access CSP](https://docs.microsoft.com/en-us/windows/client-management/mdm/assignedaccess-csp).
 
 1. Log in as the assigned access user account.
-1. Install the Universal Windows app that follows guidance in [Kiosk apps for assigned access: Best practices](https://msdn.microsoft.com/en-us/windows/hardware/drivers/partnerapps/create-a-kiosk-app-for-assigned-access).
+1. Install the Universal Windows app that follows guidance in [Kiosk apps for assigned access: Best practices](https://docs.microsoft.com/en-us/windows-hardware/drivers/partnerapps/create-a-kiosk-app-for-assigned-access).
 1. Log out as the assigned access user account.
 1. Log in as administrator.
 
