@@ -234,11 +234,11 @@ These Unattend settings are new in Windows 10:
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>microsoft-windows-setup-\ImageInstall\OSImage\[Compact](compact.md)</p></td>
+<td><p>Microsoft-Windows-Setup-ImageInstall-OSImage-Compact</p></td>
 <td><p>Specifies whether the Windows image should be applied with compression enabled during installation. If set to <strong>true</strong>, files written to the disk during installation are compressed individually, which allows Windows to take up less disk space.</p></td>
 </tr>
 <tr class="even">
-<td><p>Microsoft-Windows-Wlansvc\[CoexistenceSupport](coexistencesupport.md)</p></td>
+<td><p>[Microsoft-Windows-Wlansvc-CoexistenceSupport](microsoft-windows-wlansvc-coexistencesupport.md)</p></td>
 <td><p>Specifies the type of co-existence that's supported on the device:</p>
 <ul>
 <li><strong>Both</strong> - Both Wi-Fi and Bluetooth work at the same performance level during co-existence.</li>
@@ -248,56 +248,56 @@ These Unattend settings are new in Windows 10:
 </ul></td>
 </tr>
 <tr class="odd">
-<td><p>Microsoft-Windows-Wlansvc\[NumAntennaConnected](numantennaeconnected.md)</p></td>
+<td><p>[Microsoft-Windows-Wlansvc-NumAntennaConnected](microsoft-windows-wlansvc-numantennaeconnected.md)</p></td>
 <td><p>Specifies the number of antennas that are connected to the WLAN radio.</p></td>
 </tr>
 <tr class="even">
-<td><p>Microsoft-Windows-Wlansvc\[SimultaneousMultiChannelSupported](simultaneousmultichannelsupported.md)</p></td>
+<td><p>[Microsoft-Windows-Wlansvc-SimultaneousMultiChannelSupported](microsoft-windows-wlansvc-simultaneousmultichannelsupported.md)</p></td>
 <td><p>Specifies the maximum number of channels that the Wi-Fi device can simultaneously operate on. For example, you can use this to specify support for Station mode and Wi-Fi Direct GO on separate channels simultaneously.</p></td>
 </tr>
 <tr class="odd">
-<td><p>Microsoft-Windows-Wlansvc\[WLANFunctionalLevelDeviceResetSupported](wlanfunctionalleveldevicereset.md)</p></td>
+<td><p>[Microsoft-Windows-Wlansvc-WLANFunctionalLevelDeviceResetSupported](microsoft-windows-wlansvc-wlanfunctionalleveldevicereset.md)</p></td>
 <td><p>Specifies whether the device supports functional level device reset. The functional level device reset feature in the OS checks this system capability exclusively to determine if it can run.</p></td>
 </tr>
 <tr class="even">
-<td><p>Microsoft-Windows-Wlansvc\[WLANPlatformLevelDeviceResetSupported](wlanplatformleveldevicereset.md)</p></td>
+<td><p>[Microsoft-Windows-Wlansvc-WLANPlatformLevelDeviceResetSupported](microsoft-windows-wlansvc-wlanplatformleveldevicereset.md)</p></td>
 <td><p>Specifies whether the device supports platform level device reset. The platform level device reset feature in the OS checks this system capability exclusively to determine if it can run.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Microsoft-Windows-DeviceAccess](microsoft-windows-deviceaccess.md)\[SetRegionSpecificPrivacyAccessPolicy](setregionspecificprivacyaccesspolicy.md)</p></td>
+<td><p>[Microsoft-Windows-DeviceAccess-SetRegionSpecificPrivacyAccessPolicy](microsoft-windows-deviceaccess-setregionspecificprivacyaccesspolicy.md)</p></td>
 <td><p>The <code>Microsoft-Windows-DeviceAccess</code> component specifies settings for enabling device policy, which includes enabling the China CTA policy through the <code>SetRegionSpecificPrivacyAccessPolicy</code> setting.</p></td>
 </tr>
 <tr class="even">
-<td><p>Microsoft-Windows-Printing-Spooler-Core\[Start](microsoft-windows-printing-spooler-core-start.md)</p></td>
+<td><p>[Microsoft-Windows-Printing-Spooler-Core-Start](microsoft-windows-printing-spooler-core-start.md)</p></td>
 <td><p>Indicates whether the spooler autologger will start by default when the system boots.</p></td>
 </tr>
 <tr class="odd">
-<td><p>Microsoft-Windows-Printing-Spooler-Core\[RemoveMPDW](microsoft-windows-printing-spooler-core-removempdw.md)</p></td>
+<td><p>[Microsoft-Windows-Printing-Spooler-Core-RemoveMPDW](microsoft-windows-printing-spooler-core-removempdw.md)</p></td>
 <td><p>Specifies whether to remove the Microsoft Print to PDF print queue and driver package from a Windows installation.</p></td>
 </tr>
 <tr class="even">
-<td><p>Microsoft-Windows-Shell-Setup\OEMInformation\[SupportAppURL](microsoft-windows-shell-setup-oeminformation-supportappurl.md)</p></td>
+<td><p>[Microsoft-Windows-Shell-Setup-OEMInformation-SupportAppURL](microsoft-windows-shell-setup-oeminformation-supportappurl.md)</p></td>
 <td><p>Specifies the OEM-built support app that will be launched instead of the web URL.</p></td>
 </tr>
 <tr class="odd">
-<td><p>Microsoft-Windows-Shell-Setup\[OfflineUserAccounts](microsoft-windows-shell-setup-offlineuseraccounts.md)</p></td>
+<td><p>[Microsoft-Windows-Shell-Setup-OfflineUserAccounts](microsoft-windows-shell-setup-offlineuseraccounts.md)</p></td>
 <td><p>Specifies the account information used to join a domain during Windows Setup.</p></td>
 </tr>
 <tr class="even">
-<td><p>Microsoft-Windows-UnattendedJoin\[OfflineIdentification](microsoft-windows-unattendedjoin-offlineidentification.md)</p></td>
+<td><p>[Microsoft-Windows-UnattendedJoin-OfflineIdentification](microsoft-windows-unattendedjoin-offlineidentification.md)</p></td>
 <td><p>Specifies credentials for provisioning the account data during the offlineServicing configuration pass.</p></td>
 </tr>
 <tr class="odd">
-<td><p>Microsoft-Windows-Shell-Setup\OOBE\[UnattendEnableRetailDemo](microsoft-windows-shell-setup-oobe-unattendenableretaildemo.md)</p></td>
+<td><p>[Microsoft-Windows-Shell-Setup-OOBE-UnattendEnableRetailDemo](microsoft-windows-shell-setup-oobe-unattendenableretaildemo.md)</p></td>
 <td><p>Enables retail demo mode on the device. Retail demo mode is a special retail mode that can be activated in retail stores to run a demo on the device. The demo highlights key features of the OS and shows off the device user experience.</p></td>
 </tr>
 <tr class="even">
-<td><p>Microsoft-Windows-Shell-Setup\OOBE\[VMModeOptimizations](microsoft-windows-shell-setup-oobe-vmmodeoptimizations.md)</p></td>
+<td><p>[Microsoft-Windows-Shell-Setup-OOBE-VMModeOptimizations](microsoft-windows-shell-setup-oobe-vmmodeoptimizations.md)</p></td>
 <td><p>Specifies settings you can use to customize the user experience when in VM mode.</p></td>
 </tr>
 <tr class="odd">
-<td><p>Microsoft-Windows-Shell-Setup\[SignInMode](microsoft-windows-shell-signinmode.md)</p>
-<p>Microsoft-Windows-Shell-Setup\[ConvertibleSlateModePromptPreference](microsoft-windows-shell-convertibleslatemodepromptpreference.md)</p></td>
+<td><p>[Microsoft-Windows-Shell-Setup-SignInMode](microsoft-windows-shell-setup-signinmode.md)</p>
+<p>[Microsoft-Windows-Shell-Setup-ConvertibleSlateModePromptPreference](microsoft-windows-shell-setup-convertibleslatemodepromptpreference.md)</p></td>
 <td><p>OEMs can configure these settings to support Continuum, which is a new, adaptive user experience in Windows 10 that optimizes the look and behavior of apps and the Windows UI for a given physical form factor and the customer's usage preferences.</p>
 <ul>
 <li><p>To configure devices to boot straight into tablet mode, use <code>SignInMode</code>.</p></li>
@@ -306,7 +306,7 @@ These Unattend settings are new in Windows 10:
 <p>OEMs may also specify the device form factor using <code>DeviceForm</code>.</p></td>
 </tr>
 <tr class="even">
-<td><p>Microsoft-Windows-Deployment\[DeviceForm](microsoft-windows-deployment-deviceform.md)</p></td>
+<td><p>[Microsoft-Windows-Deployment-DeviceForm](microsoft-windows-deployment-deviceform.md)</p></td>
 <td><p>Use to specify the device form factor running Windows 10.</p>
 <p>OEMs must set <code>DeviceForm</code> correctly to support the following features or components:</p>
 <ul>
@@ -316,15 +316,15 @@ These Unattend settings are new in Windows 10:
 </ul></td>
 </tr>
 <tr class="odd">
-<td><p>Microsoft-Windows-TabletPC-Platform-Input-Core\[HandwritingPanelDockedModeSet](handwritingpaneldockedmodeset.md)</p></td>
+<td><p>[Microsoft-Windows-TabletPC-Platform-Input-Core-HandwritingPanelDockedModeSet](microsoft-windows-tabletpc-platform-input-core-handwritingpaneldockedmodeset.md)</p></td>
 <td><p>Use to specify whether the handwriting panel is initially docked by default.</p></td>
 </tr>
 <tr class="even">
-<td><p>Microsoft-Windows-TabletPC-Platform-Input-Core\[TouchKeyboardAutoInvokeEnabled](touchkeyboardautoinvokeenabled.md)</p></td>
+<td><p>[Microsoft-Windows-TabletPC-Platform-Input-Core-TouchKeyboardAutoInvokeEnabled](microsoft-windows-tabletpc-platform-input-core-touchkeyboardautoinvokeenabled.md)</p></td>
 <td><p>Use to specify whether the touch keyboard is automatically invoked by default when there is no hardware keyboard connected and the device is in non-tablet mode.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Microsoft-Windows-MapControl-Desktop](microsoft-windows-mapcontrol.md)\[ChinaVariantWin10](chinavariantwin10.md)</p></td>
+<td><p>[Microsoft-Windows-MapControl-Desktop-ChinaVariantWin10](microsoft-windows-mapcontrol-desktop-chinavariantwin10.md)</p></td>
 <td><p>Use to specify that the Windows device is intended to ship in China. When enabled, maps approved by the State Bureau of Surveying and Mapping in China are used, which are obtained from a server located in China.</p></td>
 </tr>
 <tr class="even">
@@ -373,28 +373,28 @@ These Windows 10 for desktop editions and Windows Server 2016 settings have ch
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Microsoft-Windows-Shell-Setup\[ComputerName](microsoft-windows-shell-setup-computername.md)</p></td>
+<td><p>[Microsoft-Windows-Shell-Setup-ComputerName](microsoft-windows-shell-setup-computername.md)</p></td>
 <td><p>Specifies the computer name used to access the computer from the network.</p></td>
 <td><p>Added offlineServicing to the list of valid configuration passes.</p>
 <p>In Windows 10, users can no longer enter a computer name during OOBE as the name is auto-generated. To set a default computer name pre-OOBE, OEMs can configure <code>ComputerName</code> in the unattend file and specify a name for the computer.</p></td>
 </tr>
 <tr class="even">
-<td><p>Microsoft-Windows-Shell-Setup\OOBE\[ProtectYourPC](microsoft-windows-shell-setup-oobe-protectyourpc.md)</p></td>
+<td><p>[Microsoft-Windows-Shell-Setup-OOBE-ProtectYourPC](microsoft-windows-shell-setup-oobe-protectyourpc.md)</p></td>
 <td><p>Specifies whether Express settings are used.</p></td>
 <td><p>Updated the description for the setting as well as the list of valid values and their descriptions for the values.</p></td>
 </tr>
 <tr class="odd">
-<td><p>Microsoft-Windows-Shell-Setup\[AutoLogon](microsoft-windows-shell-setup-autologon.md)</p></td>
+<td><p>[Microsoft-Windows-Shell-Setup-AutoLogon](microsoft-windows-shell-setup-autologon.md)</p></td>
 <td><p>Specifies the account to use to log on to a computer automatically.</p></td>
 <td><p>Added an important note that in Windows 10, if you configure <code>AutoLogon</code> the OS will skip the user account creation phase during OOBE and the account creation phase during OOBE is skipped in all versions of Windows when at least one user account is created through the <code>UserAccounts</code> section of the same unattend file.</p></td>
 </tr>
 <tr class="even">
-<td><p>microsoft-windows-setup--Shell\Deployment\FirstLogonCommands\[SynchronousCommand](microsoft-windows-shell-setup-firstlogoncommands.md)</p></td>
+<td><p>[Microsoft-Windows-Shell-Setup-FirstLogonCommands](microsoft-windows-shell-setup-firstlogoncommands.md)</p></td>
 <td><p>Starts a command or script after the user completes OOBE.</p></td>
 <td><p>This command now works like [LogonCommands\AsynchronousCommand](microsoft-windows-shell-setup-logoncommands.md): all commands using these unattend settings are now started at the same time, and no longer wait for the previous command to finish. </p></td>
 </tr>
 <tr class="odd">
-<td><p>Microsoft-Windows-Deployment\[Reseal](microsoft-windows-deployment-reseal.md)</p></td>
+<td><p>[Microsoft-Windows-Deployment-Reseal](microsoft-windows-deployment-reseal.md)</p></td>
 <td><p>Indicates whether the computer runs in audit mode or Windows OOBE when the computer is next started.</p></td>
 <td><p>Prior to Windows 10, <code>Reseal</code> was a special-case setting which caused all other settings in the same configuration pass to be skipped when specified in the auditSystem or oobeSystem configuration passes. In Windows 10, Reseal is always processed after all other settings in the same configuration pass.</p>
 <p>For the &quot;auditSystem Audit true&quot; row, this scenario is now supported and the Result column has been updated.</p>
@@ -420,15 +420,15 @@ The following Windows 8.1 Update, Windows 8.1, and Windows Server 2012 R2 sett
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Microsoft-Windows-Shell-Setup\OOBE\[NetworkLocation](microsoft-windows-shell-setup-oobe-networklocation.md)</p></td>
+<td><p>[Microsoft-Windows-Shell-Setup-OOBE-NetworkLocation](microsoft-windows-shell-setup-oobe-networklocation.md)</p></td>
 <td><p>This is not applicable for Windows 10.</p></td>
 </tr>
 <tr class="even">
-<td><p>Microsoft-Windows-Shell-Setup\VisualEffects\[SystemDefaultBackgroundColor](microsoft-windows-shell-setup-visualeffects-systemdefaultbackgroundcolor.md)</p></td>
+<td><p>[Microsoft-Windows-Shell-Setup-VisualEffects-SystemDefaultBackgroundColor](microsoft-windows-shell-setup-visualeffects-systemdefaultbackgroundcolor.md)</p></td>
 <td><p>This setting is deprecated in Windows 10 and should not be used. The default background color during OOBE is always dark. To align with this change, partners can no longer change the default screen background color during OOBE.</p></td>
 </tr>
 <tr class="odd">
-<td><p>Microsoft-Windows-HelpAndSupport\[HelpAndSupport](microsoft-windows-helpandsupport-helpandsupport.md)</p></td>
+<td><p>[Microsoft-Windows-HelpAndSupport-HelpAndSupport](microsoft-windows-helpandsupport-helpandsupport.md)</p></td>
 <td><p>In Windows 10, the [HelpAndSupport](microsoft-windows-helpandsupport-helpandsupport.md) settings are deprecated because the Help component that they impact is being retired. Existing information about the HelpAndSupport settings are provided for reference only.</p>
 <p>In Windows 10, the OS disables the help components that shipped in Windows 8 and Windows 8.1 including the Help and Support Windows desktop application (HelpPane.exe). HelpPane.exe will continue to exist in the box, but calls to its interfaces will result in one of two outcomes:</p>
 <ul>
@@ -519,87 +519,87 @@ These settings are new in Windows 8.1 Update, Windows 8.1 and Windows Server 20
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Microsoft-Windows-CoreMmRes\[CameraSoundLevel](microsoft-windows-coremmres-camerasoundlevel.md)</p></td>
+<td><p>[Microsoft-Windows-CoreMmRes-CameraSoundLevel](microsoft-windows-coremmres-camerasoundlevel.md)</p></td>
 <td><p>Sets the volume of the sound played when a user starts a recording, stops a recording, takes a photo or starts a photo sequence. New for Windows 8.1 Update.</p></td>
 </tr>
 <tr class="even">
-<td><p>Microsoft-Windows-CoreMmRes\[NoPhysicalCameraLED](microsoft-windows-coremmres-nophysicalcameraled.md)</p></td>
+<td><p>[Microsoft-Windows-CoreMmRes-NoPhysicalCameraLED](microsoft-windows-coremmres-nophysicalcameraled.md)</p></td>
 <td><p>Indicates that there is no physical LED for the device’s camera. New for Windows 8.1 Update.</p></td>
 </tr>
 <tr class="odd">
-<td><p>Microsoft-Windows-GPIOButtons\[ConvertibleSlateMode](microsoft-windows-gpiobuttons-convertibleslatemode.md)</p></td>
+<td><p>[Microsoft-Windows-GPIOButtons-ConvertibleSlateMode](microsoft-windows-gpiobuttons-convertibleslatemode.md)</p></td>
 <td><p>Sets the touchscreen behavior for a laptop, a PC with permanently attached keyboard available at any time for typing comfortably</p></td>
 </tr>
 <tr class="even">
-<td><p>microsoft-windows-securestartup-filterdriver-\[PreventDeviceEncryption](microsoft-windows-securestartup-filterdriver-preventdeviceencryption.md)</p></td>
+<td><p>[Microsoft-Windows-SecureStartup-FilterDriver-PreventDeviceEncryption](microsoft-windows-securestartup-filterdriver-preventdeviceencryption.md)</p></td>
 <td><p>Prevents encrypting the operating system drive and any fixed data drive using Windows BitLocker Drive Encryption.</p></td>
 </tr>
 <tr class="odd">
-<td><p>Microsoft-Windows-Shell-Setup\[DesktopOptimization](microsoft-windows-shell-setup-desktopoptimization.md)</p></td>
+<td><p>[Microsoft-Windows-Shell-Setup-DesktopOptimization](microsoft-windows-shell-setup-desktopoptimization.md)</p></td>
 <td><p>Specifies display settings that affect the desktop. New for Windows 8.1 Update.</p></td>
 </tr>
 <tr class="even">
-<td><p>Microsoft-Windows-Shell-Setup \[ShowPowerButtonOnStartScreen](microsoft-windows-shell-setup-showpowerbuttononstartscreen.md)</p></td>
+<td><p>[Microsoft-Windows-Shell-Setup-ShowPowerButtonOnStartScreen](microsoft-windows-shell-setup-showpowerbuttononstartscreen.md)</p></td>
 <td><p>Specifies that the Power Options button is displayed on the Start Screen. New for Windows 8.1 Update.</p></td>
 </tr>
 <tr class="odd">
-<td><p>Microsoft-Windows-Shell-Setup\StartTiles\SquareTiles\[SquareOrDesktopTile7](microsoft-windows-shell-setup-starttiles-squaretiles-squareordesktoptile7.md)</p></td>
+<td><p>[Microsoft-Windows-Shell-Setup-StartTiles-SquareTiles-SquareOrDesktopTile7](microsoft-windows-shell-setup-starttiles-squaretiles-squareordesktoptile7.md)</p></td>
 <td><p>Specifies which application appears as a square tile on the <strong>Start</strong> screen, in position SquareOrDesktopTile7. New for Windows 8.1 Update.</p></td>
 </tr>
 <tr class="even">
-<td><p>Microsoft-Windows-Shell-Setup\StartTiles\SquareTiles\[SquareOrDesktopTile8](microsoft-windows-shell-setup-starttiles-squaretiles-squareordesktoptile8.md)</p></td>
+<td><p>[Microsoft-Windows-Shell-Setup-StartTiles-SquareTiles-SquareOrDesktopTile8](microsoft-windows-shell-setup-starttiles-squaretiles-squareordesktoptile8.md)</p></td>
 <td><p>Specifies which application appears as a square tile on the <strong>Start</strong> screen, in position SquareOrDesktopTile8. New for Windows 8.1 Update.</p></td>
 </tr>
 <tr class="odd">
-<td><p>Microsoft-Windows-Shell-Setup\StartTiles\SquareTiles\[SquareOrDesktopTile9](microsoft-windows-shell-setup-starttiles-squaretiles-squareordesktoptile9.md)</p></td>
+<td><p>[Microsoft-Windows-Shell-Setup-StartTiles-SquareTiles-SquareOrDesktopTile9](microsoft-windows-shell-setup-starttiles-squaretiles-squareordesktoptile9.md)</p></td>
 <td><p>Specifies which application appears as a square tile on the <strong>Start</strong> screen, in position SquareOrDesktopTile9. New for Windows 8.1 Update.</p></td>
 </tr>
 <tr class="even">
-<td><p>Microsoft-Windows-Shell-Setup\StartTiles\SquareTiles\[SquareOrDesktopTile10](microsoft-windows-shell-setup-starttiles-squaretiles-squareordesktoptile10.md)</p></td>
+<td><p>[Microsoft-Windows-Shell-Setup-StartTiles-SquareTiles-SquareOrDesktopTile10](microsoft-windows-shell-setup-starttiles-squaretiles-squareordesktoptile10.md)</p></td>
 <td><p>Specifies which application appears as a square tile on the <strong>Start</strong> screen, in position SquareOrDesktopTile10. New for Windows 8.1 Update.</p></td>
 </tr>
 <tr class="odd">
-<td><p>Microsoft-Windows-Shell-Setup\StartTiles\SquareTiles\[SquareOrDesktopTile11](microsoft-windows-shell-setup-starttiles-squaretiles-squareordesktoptile11.md)</p></td>
+<td><p>[Microsoft-Windows-Shell-Setup-StartTiles-SquareTiles-SquareOrDesktopTile11](microsoft-windows-shell-setup-starttiles-squaretiles-squareordesktoptile11.md)</p></td>
 <td><p>Specifies which application appears as a square tile on the <strong>Start</strong> screen, in position SquareOrDesktopTile11. New for Windows 8.1 Update.</p></td>
 </tr>
 <tr class="even">
-<td><p>Microsoft-Windows-Shell-Setup\StartTiles\SquareTiles\[SquareOrDesktopTile12](microsoft-windows-shell-setup-starttiles-squaretiles-squareordesktoptile12.md)</p></td>
+<td><p>[Microsoft-Windows-Shell-Setup-StartTiles-SquareTiles-SquareOrDesktopTile12](microsoft-windows-shell-setup-starttiles-squaretiles-squareordesktoptile12.md)</p></td>
 <td><p>Specifies which application appears as a square tile on the <strong>Start</strong> screen, in position SquareOrDesktopTile12. New for Windows 8.1 Update.</p></td>
 </tr>
 <tr class="odd">
-<td><p>Microsoft-Windows-SystemSettings\[DisplayNetworkSelection](microsoft-windows-systemsettingsdisplaynetworkselection.md)</p></td>
+<td><p>[Microsoft-Windows-SystemSettings-DisplayNetworkSelection](microsoft-windows-systemsettings-displaynetworkselection.md)</p></td>
 <td><p>Specifies whether to always show the Network Selection control in the <strong>Mobile Broadband Properties</strong> dialog.</p></td>
 </tr>
 <tr class="even">
-<td><p>Microsoft-Windows-SystemSettings\[WiFiToWlan](microsoft-windows-systemsettings-wifitowlan.md)</p></td>
+<td><p>[Microsoft-Windows-SystemSettings-WiFiToWlan](microsoft-windows-systemsettings-wifitowlan.md)</p></td>
 <td><p>Replaces the. &quot;Wi-Fi&quot; heading in the Networks list with &quot;WLAN&quot;.</p></td>
 </tr>
 <tr class="odd">
-<td><p>Microsoft-Windows-WwanUI\[NotInOOBE](microsoft-windows-wwanui-notinoobe.md)</p></td>
+<td><p>[Microsoft-Windows-WWANUI-NotInOOBE](microsoft-windows-wwanui-notinoobe.md)</p></td>
 <td><p>Hides mobile broadband devices and networks in OOBE.</p></td>
 </tr>
 <tr class="even">
-<td><p>Security-Malware-Windows-Defender\[DefinitionUpdateFileSharesSources](security-malware-windows-defender-definitionupdatefilesharessources.md)</p></td>
+<td><p>[Security-Malware-Windows-Defender-DefinitionUpdateFileSharesSources](security-malware-windows-defender-definitionupdatefilesharessources.md)</p></td>
 <td><p>Configures UNC file share sources for downloading definition updates for Windows Defender.</p></td>
 </tr>
 <tr class="odd">
-<td><p>Security-Malware-Windows-Defender\[EnableRemoteManagedDefaults](security-malware-windows-defender-enableremotemanageddefaults.md)</p></td>
+<td><p>[Security-Malware-Windows-Defender-EnableRemoteManagedDefaults](security-malware-windows-defender-enableremotemanageddefaults.md)</p></td>
 <td><p>Specifies whether to configure Windows Defender to be remotely managed using recommended default settings.</p></td>
 </tr>
 <tr class="even">
-<td><p>Security-Malware-Windows-Defender\[FallbackOrder](security-malware-windows-defender-fallbackorder.md)</p></td>
+<td><p>[Security-Malware-Windows-Defender-FallbackOrder](security-malware-windows-defender-fallbackorder.md)</p></td>
 <td><p>Specifies the order in which different definition update sources should be contacted by Windows Defender.</p></td>
 </tr>
 <tr class="odd">
-<td><p>Security-Malware-Windows-Defender\[Scan](security-malware-windows-defender-scan.md)</p></td>
+<td><p>[Security-Malware-Windows-Defender-Scan](security-malware-windows-defender-scan.md)</p></td>
 <td><p>Specifies settings that configure the scheduled scan for Windows Defender.</p></td>
 </tr>
 <tr class="even">
-<td><p>Security-Malware-Windows-Defender\[SignatureUpdateInterval](security-malware-windows-defender-signatureupdateinterval.md)</p></td>
+<td><p>[Security-Malware-Windows-Defender-SignatureUpdateInterval](security-malware-windows-defender-signatureupdateinterval.md)</p></td>
 <td><p>Specifies the interval Windows Defender checks for definition updates.</p></td>
 </tr>
 <tr class="odd">
-<td><p>Security-Malware-Windows-Defender\[ThreatSeverityDefaultAction](security-malware-windows-defender-threatseveritydefaultaction.md)</p></td>
+<td><p>[Security-Malware-Windows-Defender-ThreatSeverityDefaultAction](security-malware-windows-defender-threatseveritydefaultaction.md)</p></td>
 <td><p>Specifies settings that define the default action to be taken for specific threat alert levels.</p></td>
 </tr>
 </tbody>
@@ -624,12 +624,12 @@ These Windows 8.1 and Windows Server 2012 R2 settings have changed from Windows
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Microsoft-Windows-Shell-Setup\StartTiles\RegionalOverrides\RegionalOverride\[Order](microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverride-order.md)</p></td>
+<td><p>[Microsoft-Windows-Shell-Setup-StartTiles-RegionalOverrides-RegionalOverride-Order](microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverride-order.md)</p></td>
 <td><p>Specifies a unique id for a set of regions. In the specified set of regions, Windows displays a customized set of apps that appear on the Start and Lock screens.</p></td>
 <td><p>Changed the maximum value of unique IDs for the regional override from 19 to 199.</p></td>
 </tr>
 <tr class="even">
-<td><p>Microsoft-Windows-Shell-Setup\VisualEffects\[SystemDefaultBackgroundColor](microsoft-windows-shell-setup-visualeffects-systemdefaultbackgroundcolor.md)</p></td>
+<td><p>[Microsoft-Windows-Shell-Setup-VisualEffects-SystemDefaultBackgroundColor](microsoft-windows-shell-setup-visualeffects-systemdefaultbackgroundcolor.md)</p></td>
 <td><p>Specifies the system default Windows background color scheme appearing on first boot, and on LogonUI if no user is selected.</p></td>
 <td><p>Added new color scheme for Windows 8.1.</p></td>
 </tr>
@@ -717,7 +717,7 @@ These settings in the Microsoft-Windows-IE-InternetExplorer component are deprec
 <td><p>Internet Explorer 9 through Internet Explorer 11 do not include an IEAK-based sign-up process.</p></td>
 </tr>
 <tr class="even">
-<td><p>Microsoft-Windows-IE-InternetExplorer\[PreApprovedAddons](microsoft-windows-ie-internetexplorer-preapprovedaddons.md)</p></td>
+<td><p>[Microsoft-Windows-IE-InternetExplorer-PreApprovedAddons](microsoft-windows-ie-internetexplorer-preapprovedaddons.md)</p></td>
 <td><p>Add-ons can still be installed but they will be disabled, by default. Users will be able to choose the add-ons to enable.</p></td>
 </tr>
 <tr class="odd">
