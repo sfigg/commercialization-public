@@ -17,6 +17,9 @@ You can use Keyboard Filter to suppress undesirable key presses or key combinati
 
 The Keyboard Filter feature works with physical keyboards, the Windows on-screen keyboard, and the touch keyboard. Keyboard Filter also detects dynamic layout changes, such as switching from one language set to another, and continues to suppress keys correctly, even if the location of suppressed keys has changed on the keyboard layout.
 
+> [!Note]
+> Keyboard filter is not supported in a remote desktop session.
+
 ## Requirements
 
 Windows 10 Enterprise or Windows 10 Education.
