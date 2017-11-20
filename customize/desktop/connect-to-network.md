@@ -22,6 +22,6 @@ If the device is LTE-enabled, but no SIM card is present, Cellular data will app
 
 A user can choose to connect to both a Wi-Fi and Cellular network at the same time. In this case, Wi-Fi will be used throughout OOBE and no data traffic is transmitted via the Cellular network (metered connection). Windows will always use the Wi-Fi connection if it is available. Cellular will only be used if the user is out of range of their Wi-Fi network, or chooses to disconnect from Wi-Fi.
 
-Because cellular connections are metered, there is logic in place to protect the user from draining their data during the setup process. For example, if a user is on a metered network, only zero-day patch (ZDP) Windows updates are allowed on the device.
+Because cellular connections are metered, there is logic in place to protect the user from draining their data during the setup process. For example, if a user is on a metered network, only critical zero-day patch (ZDP) Windows updates are allowed on the device.
 
 For more information on the cellular settings for Windows 10 users, see [Cellular settings in Windows 10](https://support.microsoft.com/en-us/help/10739/windows-10-cellular-settings).
