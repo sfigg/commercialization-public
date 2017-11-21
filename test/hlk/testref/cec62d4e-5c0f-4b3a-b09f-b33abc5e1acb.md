@@ -5,6 +5,12 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 0f3d414c-160c-450a-9d1f-2f71ab4a52e9
+author: sapaetsc
+ms.author: sapaetsc
+ms.date: 10/15/17
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # <span id="p_hlk_test.cec62d4e-5c0f-4b3a-b09f-b33abc5e1acb"></span>SMB FileIObvt LOGO test

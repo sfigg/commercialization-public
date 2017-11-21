@@ -5,6 +5,12 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 657a4887-340d-4266-9d7c-4ce81b8e9c89
+author: sapaetsc
+ms.author: sapaetsc
+ms.date: 10/15/17
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # <span id="p_hlk_test.da4d8eca-1e52-4ae4-b0a4-06bffdcbb526"></span>MPEG2 Stress test 303

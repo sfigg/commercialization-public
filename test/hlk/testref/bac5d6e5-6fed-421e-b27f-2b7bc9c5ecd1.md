@@ -5,6 +5,12 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: f68e9031-5b1a-46c7-8fb7-12bad0f3a20b
+author: sapaetsc
+ms.author: sapaetsc
+ms.date: 10/15/17
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # <span id="p_hlk_test.bac5d6e5-6fed-421e-b27f-2b7bc9c5ecd1"></span>Win6\_4.MB.UICC.Security.VerifyAppPersoState

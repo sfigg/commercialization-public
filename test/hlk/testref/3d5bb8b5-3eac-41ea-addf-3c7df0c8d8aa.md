@@ -5,6 +5,12 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: cce5b8de-4508-4cde-a942-8ddc100283fd
+author: sapaetsc
+ms.author: sapaetsc
+ms.date: 10/15/17
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # <span id="p_hlk_test.3d5bb8b5-3eac-41ea-addf-3c7df0c8d8aa"></span>CoreSys HEVCFuzzTest122

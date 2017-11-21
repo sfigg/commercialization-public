@@ -5,6 +5,12 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 92f0600e-25b3-4fb8-a6d5-dc09616cfd25
+author: sapaetsc
+ms.author: sapaetsc
+ms.date: 10/15/17
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # <span id="p_hlk_test.0e3d24f5-b4db-4dcc-b9d2-b70bf83d3dfa"></span>Camera Driver System Test - MediaCapture - ValidateSceneModeControlSupportedScenarios

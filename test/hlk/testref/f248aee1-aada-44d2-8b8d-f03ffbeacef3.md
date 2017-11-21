@@ -5,6 +5,12 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: a93c542e-729c-400d-84e2-918b162bef91
+author: sapaetsc
+ms.author: sapaetsc
+ms.date: 10/15/17
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # <span id="p_hlk_test.f248aee1-aada-44d2-8b8d-f03ffbeacef3"></span>Wlan Test - Toggle airplane mode - (WoW64 for ARM64)

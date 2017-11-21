@@ -5,6 +5,12 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 97b312aa-d988-4a2a-acd6-08591a88f6fa
+author: sapaetsc
+ms.author: sapaetsc
+ms.date: 10/15/17
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # <span id="p_hlk_test.a0e275ec-b919-4aef-88a3-fbedfbae882e"></span>WinUSB MUTT IO Tests (Mobile)

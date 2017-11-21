@@ -5,6 +5,12 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: ec2d9ccf-81b1-4e44-b39c-f6802cdf671e
+author: sapaetsc
+ms.author: sapaetsc
+ms.date: 10/15/17
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # <span id="p_hlk_test.6bcfad0f-4ef2-4efe-ad1f-ba1778c1cd1c"></span>CoreSys VP9 Quality Test 53

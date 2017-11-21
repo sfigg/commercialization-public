@@ -5,6 +5,12 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 6b20275c-b0ca-406a-abd0-d5b5cfcd3889
+author: sapaetsc
+ms.author: sapaetsc
+ms.date: 10/15/17
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # <span id="p_hlk_test.8daf7d61-bc5a-4a7c-b8e5-bd7df91eabb8"></span>D3D12 - Simple Split Barrier Validation

@@ -5,6 +5,12 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: f573e5d7-9933-49e9-9160-68cd61cb6fee
+author: sapaetsc
+ms.author: sapaetsc
+ms.date: 10/15/17
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # <span id="p_hlk_test.d23b4ecf-0de9-4bc3-a9f9-69eddc22e35f"></span>IPSec TOv2 Logo Test

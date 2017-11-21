@@ -2,7 +2,7 @@
 title: TPM 2.0 EK Certificate Tests
 Description: TPM 2.0 EK Certificate Tests
 ms.assetid: 
-author: sapaetsc-msft
+author: sapaetsc
 ms.author: sapaetsc
 ms.date: 10/15/17
 ms.topic: article

@@ -6,6 +6,12 @@ MSHAttr:
 - 'PreferredLib:/library/windows/hardware'
 Search.SourceType: Video
 ms.assetid: 66860d92-d432-4f6b-99b9-abc16a4e3ad0
+author: sapaetsc
+ms.author: sapaetsc
+ms.date: 10/15/17
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # <span id="p_hlk_test.c8f78d4a-b6c7-4ad1-b6a6-d9b53dc0cfdb"></span>Camera Driver Controls Device Test - CAMERA\_PROFILES - Verify KSCAMERAPROFILE\_CUSTOM enum all, photo and preview

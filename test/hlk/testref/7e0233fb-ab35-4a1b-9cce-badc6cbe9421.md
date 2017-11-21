@@ -5,6 +5,12 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 54b23258-a8b5-4074-8a51-902e232ebca5
+author: sapaetsc
+ms.author: sapaetsc
+ms.date: 10/15/17
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # <span id="p_hlk_test.7e0233fb-ab35-4a1b-9cce-badc6cbe9421"></span>System Audio - Audio Logo Test - Glitch

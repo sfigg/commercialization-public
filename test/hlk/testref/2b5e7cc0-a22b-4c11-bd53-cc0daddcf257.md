@@ -5,6 +5,12 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: b393fcf2-e4a6-49c1-bb77-4401424764c2
+author: sapaetsc
+ms.author: sapaetsc
+ms.date: 10/15/17
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # <span id="p_hlk_test.2b5e7cc0-a22b-4c11-bd53-cc0daddcf257"></span>UCSI USB Operation Role command - Reset on PPM-Reset

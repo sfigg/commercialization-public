@@ -5,6 +5,12 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: ff0b6c1d-fcbc-4f92-b7f7-9f7e4db33f60
+author: sapaetsc
+ms.author: sapaetsc
+ms.date: 10/15/17
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # <span id="p_hlk_test.44d7d1cb-2eb4-4fb6-8fc8-3c7fcc953aff"></span>Multistream Rendering (WoW64)
