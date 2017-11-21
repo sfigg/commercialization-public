@@ -73,10 +73,12 @@ For example, review the list of drivers in the file: \\IoT-ADK-AddonKit\\Source-
                 <inf source="iaiogpio.inf" />
                 <files>
                     <file source="iaiogpio.sys" destinationDir="$(runtime.drivers)" name="iaiogpio.sys" />
-                    <file source="ACPITABL.dat" destinationDir="$(runtime.system32)" name="ACPITABL.dat" />
                 </files>
             </driver>
         </drivers>
+        <files>
+            <file source="ACPITABL.dat" destinationDir="$(runtime.system32)" name="ACPITABL.dat" />
+        </files>
     </identity>
     ```
 
