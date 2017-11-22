@@ -5,6 +5,12 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: d1859ca0-9914-446c-96d9-887bf3dd229f
+author: sapaetsc
+ms.author: sapaetsc
+ms.date: 10/15/17
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # <span id="p_hlk_test.308aadee-b853-4f0b-aafd-d0dee1a1af2d"></span>D3D12 - Resource Binding - Graphics deferred descriptor editing test.

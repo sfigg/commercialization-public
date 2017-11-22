@@ -56,7 +56,7 @@ Make this sequence of calls to generate the public and private keys.
 
 This code snippet shows how to generate the keys:
 
-```javascript
+```C++
 HRESULT CryptExportKeyHelper(_In_ HCRYPTKEY hKey, _In_opt_ HCRYPTKEY hExpKey, DWORD dwBlobType, _Outptr_result_bytebuffer_(*pcbBlob) BYTE **ppbBlob, _Out_ DWORD *pcbBlob);
 
 HRESULT WriteByteArrayToFile(_In_ PCWSTR pszPath, _In_reads_bytes_(cbData) BYTE const *pbData, DWORD cbData);
@@ -182,7 +182,7 @@ Make this sequence of calls to decrypt the data:
 
 This code snippet shows how to decrypt the data:
 
-```javascript
+```c++
 HRESULT DecryptHelper(_In_reads_bytes_(cbData) BYTE *pbData, DWORD cbData, _In_ HCRYPTKEY hPrvKey, _Outptr_result_bytebuffer_(*pcbPlain) BYTE **ppbPlain, _Out_ DWORD *pcbPlain);
 HRESULT ReadFileToByteArray(_In_ PCWSTR pszPath, _Outptr_result_bytebuffer_(*pcbData) BYTE **ppbData, _Out_ DWORD *pcbData);
 

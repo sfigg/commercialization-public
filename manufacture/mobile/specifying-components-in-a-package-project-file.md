@@ -22,7 +22,7 @@ include system components such as shared DLLs, data files, and registry
 settings. For additional information about the **Files** and **RegKeys**
 elements, see [Specifying files and registry entries in a package
 project
-file](specifying_files_and_registry_entries_in_a_package_project_file.htm).
+file](specifying-files-and-registry-entries-in-a-package-project-file.md).
 
 **Note**  
 
@@ -175,7 +175,7 @@ might not be complete.
 
 For more information about command-line arguments for PkgGen.exe, see
 [Command-line arguments for package
-generator](command_line_arguments_for_package_generator.htm).
+generator](command-line-arguments-for-package-generator.md).
 
 ### <span id="driversecurity"></span><span id="DRIVERSECURITY"></span>Security element
 
@@ -726,8 +726,7 @@ Use the following process to add custom data to an existing package.
       </CustomMetadata>
     ```
 
-3.  Use PkgGen to generate a package. For more info, see [Creating
-    packages](creating_packages.htm).
+3.  Use PkgGen to generate a package. For more info, see [Creating packages](creating-packages.md).
 
 ### <span id="Walkthrough___viewing_custom_metadata"></span><span id="walkthrough___viewing_custom_metadata"></span><span id="WALKTHROUGH___VIEWING_CUSTOM_METADATA"></span>Walkthrough – viewing custom metadata
 

@@ -333,7 +333,7 @@ them in this XML section. Currently the following objects are defined:
 
 For additional details about these components, refer to [Specifying
 components in a package project
-file](specifying_components_in_a_package_project_file.htm). You can have
+file](specifying-components-in-a-package-project-file.md). You can have
 any number of these types of objects in your package project (with the
 exception of some restrictions for the **BinaryPartition** object).
 

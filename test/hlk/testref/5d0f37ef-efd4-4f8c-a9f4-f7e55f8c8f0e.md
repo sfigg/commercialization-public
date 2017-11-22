@@ -5,6 +5,12 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: babd035c-8975-44ec-92be-35698f8d8434
+author: sapaetsc
+ms.author: sapaetsc
+ms.date: 10/15/17
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # <span id="p_hlk_test.5d0f37ef-efd4-4f8c-a9f4-f7e55f8c8f0e"></span>Sensor Camera Driver Controls System Test - CAMERA\_PROFILES - Verify KSCAMERAPROFILE\_VideoRecording enum all

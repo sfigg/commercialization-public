@@ -1,3 +1,15 @@
+---
+title: Suspend Services Duration
+description: On/Off assessment results for the suspend services transition phase 
+author: v-denlee
+ms.author: v-denlee
+ms.date: 11/17/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
+localizationpriority: medium
+---
+
 # Suspend Services Duration
 
 **Most Applicable to:** Windows service developers

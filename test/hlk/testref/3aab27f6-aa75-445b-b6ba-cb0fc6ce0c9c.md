@@ -5,6 +5,12 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8bd52143-09e7-4340-b623-553310a3a048
+author: sapaetsc
+ms.author: sapaetsc
+ms.date: 10/15/17
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # <span id="p_hlk_test.3aab27f6-aa75-445b-b6ba-cb0fc6ce0c9c"></span>Camera Driver Controls System Test - Photo Sequence - Max Past Frames

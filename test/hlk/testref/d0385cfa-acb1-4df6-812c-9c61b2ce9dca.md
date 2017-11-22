@@ -5,6 +5,12 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 464a0b6e-296b-498d-a0e7-2de97ed51188
+author: sapaetsc
+ms.author: sapaetsc
+ms.date: 10/15/17
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # <span id="p_hlk_test.d0385cfa-acb1-4df6-812c-9c61b2ce9dca"></span>Basic Capture Session - Record Sink - H264 Video

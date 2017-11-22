@@ -1,3 +1,15 @@
+---
+title: Main Path Boot Duration & Main Path Resume Duration
+description: On/Off assessment results for the main path boot & main path resume transition phases
+author: v-denlee
+ms.author: v-denlee
+ms.date: 11/17/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
+localizationpriority: medium
+---
+
 # Main Path Boot Duration & Main Path Resume Duration
 
 **Relevant Assessments:**

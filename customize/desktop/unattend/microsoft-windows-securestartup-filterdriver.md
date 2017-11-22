@@ -1,6 +1,6 @@
 ---
-title: microsoft-windows-securestartup-filterdriver-
-description: microsoft-windows-securestartup-filterdriver-
+title: Microsoft-Windows-SecureStartup-FilterDriver
+description: Microsoft-Windows-SecureStartup-FilterDriver
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
@@ -14,7 +14,7 @@ ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-# microsoft-windows-securestartup-filterdriver-
+# Microsoft-Windows-SecureStartup-FilterDriver
 
 
 The microsoft-windows-securestartup-filterdriver- component contains settings to optimize BitLocker settings for PCs with hardware architectures such as System on a Chip (SoC).
@@ -77,7 +77,7 @@ These settings only apply to Windows 8.
 ## Applies To
 
 
-To determine whether a component applies to the image you’re building, load your image into Windows SIM and search for the component or setting name. For information on how to view components and settings, see [Configure Components and Settings in an Answer File](https://msdn.microsoft.com/library/windows/hardware/dn915078).
+To determine whether a component applies to the image you’re building, load your image into Windows SIM and search for the component or setting name. For information on how to view components and settings, see [Configure Components and Settings in an Answer File](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/wsim/configure-components-and-settings-in-an-answer-file).
 
 **Note**  
 Although this component is available in x86 hardware architectures, these settings should not be used for standard x86 hardware architectures.

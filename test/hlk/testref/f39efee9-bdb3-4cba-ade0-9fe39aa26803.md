@@ -5,6 +5,12 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: cd632c5a-1b13-413e-9995-ce35da94101d
+author: sapaetsc
+ms.author: sapaetsc
+ms.date: 10/15/17
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # <span id="p_hlk_test.f39efee9-bdb3-4cba-ade0-9fe39aa26803"></span>Camera Driver Test - Preview (Sample Grabber), Capture JPEGXR image from each image Stream type

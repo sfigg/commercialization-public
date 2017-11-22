@@ -46,7 +46,7 @@ The WIFI\_FEATURE\_PACK package reduces memory usage and improves the user exper
     </Features>
     ```
 
-    For more information about other features you can include in your image, see [Optional features for building images](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/manufacture/mobile/optional-features-for-building-images).
+    For more information about other features you can include in your image, see [Optional features for building images](https://docs.microsoft.com/en-us/windows-hardware/manufacture/mobile/optional-features-for-building-images).
 
 4.  Save the updated OEMInput.xml file and build your mobile OS image.
 

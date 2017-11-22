@@ -5,6 +5,12 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 592a3ec7-4b47-4853-a81b-ac5e96550ef3
+author: sapaetsc
+ms.author: sapaetsc
+ms.date: 10/15/17
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # <span id="p_hlk_test.eebce46c-1e5d-4f70-b2d0-d3fbf59481ab"></span>Win6\_4.MB.SMS.Encoding

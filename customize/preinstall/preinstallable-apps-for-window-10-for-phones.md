@@ -24,11 +24,11 @@ To add a preinstallable app, you will need to perform the following actions:
 * Add the app to the image with Customization answer file
 * Build the image
 
-For more information about customization answer files, see [Customization answer file](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/customize/mobile/mcsf/customization-answer-file). For more information about building with Customization answer files, see [Building a mobile image using ImgGen.cmd](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/manufacture/mobile/building-a-phone-image-using-imggencmd).
+For more information about customization answer files, see [Customization answer file](https://docs.microsoft.com/en-us/windows-hardware/customize/mobile/mcsf/customization-answer-file). For more information about building with Customization answer files, see [Building a mobile image using ImgGen.cmd](https://docs.microsoft.com/en-us/windows-hardware/manufacture/mobile/building-a-phone-image-using-imggencmd).
 
 ## Request a preinstallation package
 
-Developers who have added an app to the Dev Center can request a preinstallation package for it. They can then give the preinstallation package directly to the OEM they are working with. If you are the OEM adding this application to your OS image, you would ask the developer of the application to download the application package and then give you the downloaded zip file. You cannot access their developer account directly. Once you have the preinstall package, you can continue with the rest of the steps. For more information on how a developer generates preinstall packages for an OEM, see [Generate preinstall packages for OEMs](http://go.microsoft.com/fwlink/?LinkId=624851).
+Developers who have added an app to the Dev Center can request a preinstallation package for it. They can then give the preinstallation package directly to the OEM they are working with. If you are the OEM adding this application to your OS image, you would ask the developer of the application to download the application package and then give you the downloaded zip file. You cannot access their developer account directly. Once you have the preinstall package, you can continue with the rest of the steps. For more information on how a developer generates preinstall packages for an OEM, see [Generate preinstall packages for OEMs](https://docs.microsoft.com/en-us/windows/uwp/publish/generate-preinstall-packages-for-oems).
 
 ## Create a .provxml file for a preinstallable app
 
@@ -87,4 +87,4 @@ After you've configured your customizations.xml answer file, build the image usi
 
 ## Build the image
 
-Follow the steps in the [Build a customized mobile image using imggen](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/manufacture/mobile/build-a-customized-mobile-image-using-imggen)
+Follow the steps in the [Build a customized mobile image using imggen](https://docs.microsoft.com/en-us/windows-hardware/manufacture/mobile/build-a-customized-mobile-image-using-imggen)

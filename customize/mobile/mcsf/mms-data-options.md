@@ -117,7 +117,7 @@ This customization supports: **per-SIM** value
 
     -   Set `AllowMmsIfDataIsOff` itself to 1 (0 by default).
 
-    For more information about `ExemptFromDisablePolicy`, see [CM\_CellularEntries CSP](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/customize/mdm/cm-cellularentries-csp).
+    For more information about `ExemptFromDisablePolicy`, see [CM\_CellularEntries CSP](https://docs.microsoft.com/en-us/windows/client-management/mdm/cm-cellularentries-csp).
 
     To allow or disallow MMS messaging even if data is turned off, set the value of `AllowMmsIfDataIsOff` to one of the following:
 

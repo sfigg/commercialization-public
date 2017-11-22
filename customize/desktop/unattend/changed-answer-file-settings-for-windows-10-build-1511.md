@@ -12,6 +12,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
+redirect_url: https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/changed-answer-file-settings-for-previous-windows10-builds#changed-answer-file-settings-for-windows-10-for-desktop-editions-build-1511
 ---
 
 # Changed answer file settings for Windows 10 for desktop editions, build 1511
@@ -112,8 +113,8 @@ These Unattend settings are new in Windows 10:
 <td><p>Specifies settings you can use to customize the user experience when in VM mode.</p></td>
 </tr>
 <tr class="odd">
-<td><p>Microsoft-Windows-Shell-Setup\[SignInMode](microsoft-windows-shell-signinmode.md)</p>
-<p>Microsoft-Windows-Shell-Setup\[ConvertibleSlateModePromptPreference](microsoft-windows-shell-convertibleslatemodepromptpreference.md)</p></td>
+<td><p>Microsoft-Windows-Shell-Setup\[SignInMode](microsoft-windows-shell-setup-signinmode.md)</p>
+<p>Microsoft-Windows-Shell-Setup\[ConvertibleSlateModePromptPreference](microsoft-windows-shell-setup-convertibleslatemodepromptpreference.md)</p></td>
 <td><p>OEMs can configure these settings to support Continuum, which is a new, adaptive user experience in Windows 10 that optimizes the look and behavior of apps and the Windows UI for a given physical form factor and the customer's usage preferences.</p>
 <ul>
 <li><p>To configure devices to boot straight into tablet mode, use <code>SignInMode</code>.</p></li>
