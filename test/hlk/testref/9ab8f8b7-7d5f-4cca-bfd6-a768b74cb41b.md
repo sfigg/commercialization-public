@@ -5,6 +5,12 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 2683bc26-d7ba-4eeb-ba75-d7e604474b5c
+author: sapaetsc
+ms.author: sapaetsc
+ms.date: 10/15/17
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # <span id="p_hlk_test.9ab8f8b7-7d5f-4cca-bfd6-a768b74cb41b"></span>Indirect Display Pnp Stop-Start Indirect Display Adapter

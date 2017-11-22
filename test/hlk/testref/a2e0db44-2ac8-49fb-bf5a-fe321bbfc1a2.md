@@ -5,6 +5,12 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: c1b1b28a-32fe-4145-b2c6-59708fc44996
+author: sapaetsc
+ms.author: sapaetsc
+ms.date: 10/15/17
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # <span id="p_hlk_test.a2e0db44-2ac8-49fb-bf5a-fe321bbfc1a2"></span>Present Validation 2 (FullScreen) (WoW64)

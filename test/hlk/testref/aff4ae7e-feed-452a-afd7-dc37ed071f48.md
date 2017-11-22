@@ -5,6 +5,12 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 1e140b1f-84f2-40d7-bde3-f4875680d7ec
+author: sapaetsc
+ms.author: sapaetsc
+ms.date: 10/15/17
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # <span id="p_hlk_test.aff4ae7e-feed-452a-afd7-dc37ed071f48"></span>NDISTest 6.0 - \[1 Machine\] - 1c\_Mini6RSSOids

@@ -5,6 +5,12 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: d1b133e4-c183-44aa-9c3e-553dd703cd75
+author: sapaetsc
+ms.author: sapaetsc
+ms.date: 10/15/17
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # <span id="p_hlk_test.fc3a0bef-2ff3-43ef-b0d8-b88e2d6cfe71"></span>CoreSys H264 playback test 12

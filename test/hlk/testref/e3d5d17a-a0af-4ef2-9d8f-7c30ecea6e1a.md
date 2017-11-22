@@ -5,6 +5,12 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 9fbf580f-4515-46ec-905f-b785d774fd87
+author: sapaetsc
+ms.author: sapaetsc
+ms.date: 10/15/17
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # <span id="p_hlk_test.e3d5d17a-a0af-4ef2-9d8f-7c30ecea6e1a"></span>NVMe Deallocate Performance Test (LOGO)

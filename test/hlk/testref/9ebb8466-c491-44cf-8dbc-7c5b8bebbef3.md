@@ -5,6 +5,12 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: cea384f9-3989-4d77-900c-900735d6d4b1
+author: sapaetsc
+ms.author: sapaetsc
+ms.date: 10/15/17
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # <span id="p_hlk_test.9ebb8466-c491-44cf-8dbc-7c5b8bebbef3"></span>Test CreateSwapChainForHwnd (WoW64)

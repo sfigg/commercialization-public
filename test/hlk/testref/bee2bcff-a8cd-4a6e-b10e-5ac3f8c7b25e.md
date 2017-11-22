@@ -2,7 +2,7 @@
 title: D3D12 - DXIL Core Test - IMax instruction
 Description: D3D12 - DXIL Core Test - IMax instruction
 ms.assetid: 
-author: sapaetsc-msft
+author: sapaetsc
 ms.author: sapaetsc
 ms.date: 10/15/17
 ms.topic: article
