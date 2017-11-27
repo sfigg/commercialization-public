@@ -39,7 +39,7 @@ Note, each of these commands requires either the **/Online** or **/Image:**&lt;*
 <tbody>
 <tr class="odd">
 <td align="left"><p><strong>/Add-Capability</strong></p>
-<p><strong>/Name:</strong>&lt;<em>capability_name</em>&gt; <strong>[/Source:</strong>&lt;<em>source</em>&gt;<strong>] [/LimitAccess]</strong></p></td>
+<p><strong>/CapabilityName:</strong>&lt;<em>capability_name</em>&gt; <strong>[/Source:</strong>&lt;<em>source</em>&gt;<strong>] [/LimitAccess]</strong></p></td>
 <td align="left">Adds a capability to an image.
 <p>Example:</p><p><strong>Dism /Online /Add-Capability /CapabilityName:Language.Basic~\~\~en-US~0.0.1.0</strong></p>
 <div class="alert">
