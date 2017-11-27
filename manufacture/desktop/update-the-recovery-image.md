@@ -236,7 +236,7 @@ If you've optimized the image, you'll need to export the image in order to see a
         -  450MB-680MB: You'll need 320MB free space.
         -  Over 680MB:  You'll need 1024MB free space.
 
-    c.  Modify the deployment scripts: [CreatePartitions-UEFI.txt](windows-deployment-sample-scripts-sxs.md#CreatePartitions-UEFI.txt) and [CreatePartitions-BIOS.txt](windows-deployment-sample-scripts-sxs.md#CreatePartitions-BIOS.txt) with the new values. Example:
+    c.  Modify the CreatePartitions deployment scripts: [CreatePartitions-UEFI.txt](windows-deployment-sample-scripts-sxs.md#CreatePartitions-UEFI.txt) and [CreatePartitions-BIOS.txt](windows-deployment-sample-scripts-sxs.md#CreatePartitions-BIOS.txt) with the new values. Example:
 
     ```
     rem == 3. Windows RE tools partition ===============
@@ -268,9 +268,9 @@ The short version:
 
 3.  Find the drive letter of the storage drive (`diskpart, list volume, exit`).
 
-4.  Apply the image: `D:\Deployment\WIM\ApplyImage.bat D:\Images\install.wim` if your final image will be a WIM, or  `D:\Deployment\FFU\ApplyImage-FFU.bat D:\Images\install.wim` if your final image will be an FFU.
+4.  Apply the image: `D:\Deployment\ApplyImage.bat D:\Images\install.wim`.
 
-5.  Apply the recovery image: `D:\Deployment\WIM\ApplyRecovery.bat` if you you used **ApplyImage.bat**, or `D:\Deployment\FFU\ApplyRecovery-FFU.bat` if you used **ApplyImage-FFU.bat** to apply your initial Windows image.
+5.  Apply the recovery image: `D:\Deployment\ApplyRecovery.bat`.
 	
 6.  Disconnect the drives, then reboot (`exit`).
 	

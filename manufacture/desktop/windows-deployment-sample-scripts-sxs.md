@@ -1,5 +1,5 @@
 ---
-author: Justinha
+author: themar
 Description: 'The following scripts are used in the lab. It may be helpful to create these all at once, or to download the samples from the web.'
 ms.assetid: 621503da-e74f-4eef-8315-72c8be67747a
 MSHAttr: 'PreferredLib:/library/windows/hardware'
@@ -22,33 +22,40 @@ Copy these scripts to the root of your storage USB drive.  Refer to this page to
 > [!div class="nextstepaction"]
 > [Install Windows PE](install-windows-pe-sxs.md)
 
-## <span id="Image_deployment_scripts"></span><span id="image_deployment_scripts"></span><span id="IMAGE_DEPLOYMENT_SCRIPTS"></span>Image deployment scripts (WIM)
+## <span id="Image_deployment_scripts"></span><span id="image_deployment_scripts"></span><span id="IMAGE_DEPLOYMENT_SCRIPTS"></span>Image deployment scripts
 
-The following scripts set up Windows devices by using an image file, and configure push-button reset features.
+The following scripts set up Windows devices by using either a WIM or an FFU image file, and then give the option to configure push-button reset features.
 
-The following files make up the WIM deployment scripts:
+The following files make up the deployment scripts:
 - ApplyImage.bat
 - ApplyRecovery.bat
 - CreatePartitions-BIOS.txt
+- CreatePartitions-BIOS-FFU.txt
 - CreatePartitions-UEFI.txt
+- CreatePartitions-UEFI-FFU.txt
 - HideRecoveryPartitions-BIOS.txt
 - HideRecoveryPartitions-UEFI.txt
-
-### <span id="CreatePartitions-_firmware_.txt"></span><span id="createpartitions-_firmware_.txt"></span><span id="CREATEPARTITIONS-_FIRMWARE_.TXT"></span>CreatePartitions-(firmware).txt
-
-Use these scripts together with DiskPart to format and set up the hard disk partitions for Windows, including recovery tools. Adjust the partition sizes to fill the drive as necessary.
+- CreateRecoveryPartitions-BIOS.txt
+- CreateRecoveryPartitions-UEFI.txt
 
 ### ApplyImage.bat
 
-Use this script apply a Windows image to a new device.
+Use this script applies a Windows image to a new device.
 
 **Note:** If you copy and paste the contents below to create a .bat file, you may get an error when detecting firmware. For firmware detection to succeed, ensure that the lines that begin `for /f "tokens=2* delims=	 " %%A` has a tab followed by a space in between `delims=` and `" %%A`.
 
 ```
-@echo ApplyImage.bat
-@echo     Run from the reference device in the WinPE environment
-@echo     This script erases the primary hard drive and applies a new image
+@echo Apply-Image.bat
+@echo     Run from the reference device in the WinPE environment.
+@echo
+@echo     This script erases the primary hard drive and applies a new image.
+@echo
+@echo	  Make sure that this script is run from the folder that contains the
+@echo	  supporting scripts
 @echo.
+@echo UPDATE (November 2017)
+@echo * Added support for FFU deployments.	
+@echo
 @echo UPDATE (JULY 2016):
 @echo * This script stops just after applying the image.
 @echo   This gives you an opportunity to add siloed provisioning packages (SPPs)
@@ -71,6 +78,18 @@ Use this script apply a Windows image to a new device.
 @if %1.==. echo Example: ApplyImage D:\WindowsWithFrench.wim
 @if %1.==. goto END
 @echo *********************************************************************
+@echo  == Setting high-performance power scheme to speed deployment ==
+@call powercfg /s 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c
+@echo *********************************************************************
+@echo Checking to see the type of image being deployed
+@if "%~x1" == ".wim" (GOTO WIM)
+@if "%~x1" == ".ffu" (GOTO FFU)
+@echo *********************************************************************
+@if not "%~x1" == ".ffu". if not "%~x1" == ".wim" echo Please use this script with a WIM or FFU image.
+@if not "%~x1" == ".ffu". if not "%~x1" == ".wim" GOTO END
+:WIM
+@echo Starting WIM Deployment
+@echo *********************************************************************
 @echo Checking to see if the PC is booted in BIOS or UEFI mode.
 wpeutil UpdateBootInfo
 for /f "tokens=2* delims=	 " %%A in ('reg query HKLM\System\CurrentControlSet\Control /v PEFirmwareType') DO SET Firmware=%%B
@@ -83,6 +102,11 @@ for /f "tokens=2* delims=	 " %%A in ('reg query HKLM\System\CurrentControlSet\Co
 @if %Firmware%==0x1 echo The PC is booted in BIOS mode. 
 @if %Firmware%==0x2 echo The PC is booted in UEFI mode. 
 @echo *********************************************************************
+@echo Do you want to create a Recovery partition?
+@echo    (If you're going to be working with FFUs, and need 
+@echo     to expand the Windows partition after applying the FFU, type N). 
+@SET /P RECOVERY=(Y or N):
+@if %RECOVERY%.==y. set RECOVERY=Y
 @echo Formatting the primary disk...
 @if %Firmware%==0x1 echo    ...using BIOS (MBR) format and partitions.
 @if %Firmware%==0x2 echo    ...using UEFI (GPT) format and partitions. 
@@ -90,11 +114,10 @@ for /f "tokens=2* delims=	 " %%A in ('reg query HKLM\System\CurrentControlSet\Co
 @SET /P READY=Erase all data and continue? (Y or N):
 @if %READY%.==y. set READY=Y
 @if not %READY%.==Y. goto END
-if %Firmware%==0x1 diskpart /s %~dp0CreatePartitions-BIOS.txt
-if %Firmware%==0x2 diskpart /s %~dp0CreatePartitions-UEFI.txt
-@echo *********************************************************************
-@echo  == Set high-performance power scheme to speed deployment ==
-call powercfg /s 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c
+@if %Firmware%.==0x1. if %RECOVERY%.==Y. diskpart /s CreatePartitions-BIOS.txt
+@if %Firmware%.==0x1. if not %RECOVERY%.==Y. diskpart /s CreatePartitions-BIOS-FFU.txt
+@if %Firmware%.==0x2. if %RECOVERY%.==Y. diskpart /s CreatePartitions-UEFI.txt
+@if %Firmware%.==0x2. if not %RECOVERY%.==Y. diskpart /s CreatePartitions-UEFI-FFU.txt
 @echo *********************************************************************
 @echo  == Apply the image to the Windows partition ==
 @SET /P COMPACTOS=Deploy as Compact OS? (Y or N):
@@ -103,10 +126,10 @@ call powercfg /s 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c
 @echo    (If you're not sure, type N).
 @SET /P EA=(Y or N):
 @if %EA%.==y. set EA=Y
-if %COMPACTOS%.==Y.     if %EA%.==Y.     dism /Apply-Image /ImageFile:%1 /Index:1 /ApplyDir:W:\ /Compact /EA
-if not %COMPACTOS%.==Y. if %EA%.==Y.     dism /Apply-Image /ImageFile:%1 /Index:1 /ApplyDir:W:\ /EA
-if %COMPACTOS%.==Y.     if not %EA%.==Y. dism /Apply-Image /ImageFile:%1 /Index:1 /ApplyDir:W:\ /Compact
-if not %COMPACTOS%.==Y. if not %EA%.==Y. dism /Apply-Image /ImageFile:%1 /Index:1 /ApplyDir:W:\
+@if %COMPACTOS%.==Y.     if %EA%.==Y.     dism /Apply-Image /ImageFile:%1 /Index:1 /ApplyDir:W:\ /Compact /EA
+@if not %COMPACTOS%.==Y. if %EA%.==Y.     dism /Apply-Image /ImageFile:%1 /Index:1 /ApplyDir:W:\ /EA
+@if %COMPACTOS%.==Y.     if not %EA%.==Y. dism /Apply-Image /ImageFile:%1 /Index:1 /ApplyDir:W:\ /Compact
+@if not %COMPACTOS%.==Y. if not %EA%.==Y. dism /Apply-Image /ImageFile:%1 /Index:1 /ApplyDir:W:\
 @echo *********************************************************************
 @echo == Copy boot files to the System partition ==
 W:\Windows\System32\bcdboot W:\Windows /s S:
@@ -115,16 +138,40 @@ W:\Windows\System32\bcdboot W:\Windows /s S:
 @echo   * Add Windows Classic apps (optional):
 @echo       DISM /Apply-SiloedPackage /ImagePath:W:\ 
 @echo            /PackagePath:"D:\App1.spp" /PackagePath:"D:\App2.spp"  ...
-@echo   * Add the recovery image:
-@echo       ApplyRecovery.bat
+@echo
+@echo   * Configure the recovery partition with ApplyRecovery.bat
+@echo      
 @echo   * Reboot:
 @echo       exit
+@GOTO END
+:FFU
+@echo Starting FFU Deployment
+@echo list disk > x:\listdisks.txt
+@echo exit >> x:\listdisks.txt
+@diskpart /s x:\listdisks.txt
+@del x:\listdisks.txt
+@echo Enter the disk number of the drive where you're going to deploy your FFU (usually 0).
+@SET /P DISKNUMBER=(Enter the Disk Number from above):
+@echo This will remove all data from disk %DISKNUMBER%. Continue?
+@SET /P ERASEALL=(Y or N):
+@if %ERASEALL%.==y. set ERASEALL=Y
+@if %ERASEALL%==Y DISM /apply-ffu /ImageFile=%1 /ApplyDrive:\\.\PhysicalDrive%DISKNUMBER%
+@if not %ERASEALL%==Y GOTO END
+@echo FFU applied. Would you like to configure the recovery partition?
+@SET /P CONFIGRECOVERY=(Y or N):
+@if %CONFIGRECOVERY%.==y. SET CONFIGRECOVERY=Y
+@if %CONFIGRECOVERY%==Y ApplyRecovery.bat
+@if not %CONFIGRECOVERY%==Y GOTO END
 :END
 ```
 
-This script relies on the following two DiskPart scripts, CreatePartitions-UEFI.txt and CreatePartitions-BIOS.txt, which must be placed in the same folder:
+ApplyImage.bat relies on the following DiskPart scripts, which must be placed in the same folder:
 
-### <span id="CreatePartitions-UEFI.txt"></span> CreatePartitions-UEFI.txt
+### <span id="CreatePartitions-_firmware_.txt"></span>CreatePartitions scripts
+
+Use these scripts together with DiskPart to format and set up the hard disk partitions for Windows, including recovery tools. Adjust the partition sizes to fill the drive as necessary.
+
+#### <span id="CreatePartitions-UEFI.txt"></span> CreatePartitions-UEFI.txt
 
 Creates the System, MSR, Windows, and recovery tools partitions for UEFI-based PCs.
 
@@ -175,7 +222,38 @@ list volume
 exit
 ```
 
-### <span id="CreatePartitions-BIOS.txt"></span> CreatePartitions-BIOS.txt
+#### <span id="CreatePartitions-UEFI-FFU.txt"></span> CreatePartitions-UEFI-FFU.txt
+
+```
+rem == CreatePartitions-UEFI-FFU.txt ==
+rem == These commands are used with DiskPart to
+rem    create four partitions
+rem    for a UEFI/GPT-based PC.
+rem    Adjust the partition sizes to fill the drive
+rem    as necessary. ==
+select disk 0
+clean
+convert gpt
+rem == 1. System partition =========================
+create partition efi size=100
+rem    ** NOTE: For Advanced Format 4Kn drives,
+rem               change this value to size = 260 ** 
+format quick fs=fat32 label="System"
+assign letter="S"
+rem == 2. Microsoft Reserved (MSR) partition =======
+create partition msr size=16
+rem == 3. Windows partition ========================
+rem ==    a. Create the Windows partition ==========
+create partition primary 
+rem ==    c. Prepare the Windows partition ========= 
+format quick fs=ntfs label="Windows"
+assign letter="W"
+list volume
+exit
+
+```
+
+#### <span id="CreatePartitions-BIOS.txt"></span> CreatePartitions-BIOS.txt
 
 Creates the System, Windows, and recovery tools partitions for BIOS-based PCs.
 
@@ -221,15 +299,60 @@ list volume
 exit
 ```
 
+#### <span id="CreatePartitions-BIOS-FFU.txt"></span> CreatePartitions-BIOS-FFU.txt
+
+```
+rem == CreatePartitions-BIOS-FFU.txt ==
+rem == These commands are used with DiskPart to
+rem    create three partitions
+rem    for a BIOS/MBR-based computer.
+rem    Adjust the partition sizes to fill the drive
+rem    as necessary. ==
+select disk 0
+clean
+rem == 1. System partition ======================
+create partition primary size=100
+format quick fs=ntfs label="System"
+assign letter="S"
+active
+rem == 2. Windows partition =====================
+rem ==    a. Create the Windows partition =======
+create partition primary
+rem ==    c. Prepare the Windows partition ====== 
+format quick fs=ntfs label="Windows"
+assign letter="W"
+list volume
+exit
+```
+
 ### ApplyRecovery.bat
 
-Use this script to prepare the Windows recovery partition.
+Use this script to prepare the Windows recovery partition. This script is called by ApplyImage.bat, but can also be run on its own.
 
 **Note:** If you copy and paste the contents below to create a .bat file, you may get an error when detecting firmware. For firmware detection to succeed, ensure that the lines that begin `for /f "tokens=2* delims=	 " %%A` has a tab followed by a space in between `delims=` and `" %%A`.
 
 ```
 @echo == ApplyRecovery.bat ==
+@rem *********************************************************************
+@echo Checking to see if the PC is booted in BIOS or UEFI mode.
+wpeutil UpdateBootInfo
+for /f "tokens=2* delims=	 " %%A in ('reg query HKLM\System\CurrentControlSet\Control /v PEFirmwareType') DO SET Firmware=%%B
+@echo            Note: delims is a TAB followed by a space.
+@if x%Firmware%==x echo ERROR: Can't figure out which firmware we're on.
+@if x%Firmware%==x echo        Common fix: In the command above:
+@if x%Firmware%==x echo             for /f "tokens=2* delims=	 "
+@if x%Firmware%==x echo        ...replace the spaces with a TAB character followed by a space.
+@if x%Firmware%==x goto END
+@if %Firmware%==0x1 echo The PC is booted in BIOS mode. 
+@if %Firmware%==0x2 echo The PC is booted in UEFI mode. 
 @echo  *********************************************************************
+@echo Do you already have a recovery partition on this disk? (Y or N):
+@SET /P RECOVERYEXIST=(Y or N):
+@if %RECOVERYEXIST%.==y. set RECOVERYEXIST=Y
+@if %RECOVERYEXIST%.==Y. GOTO COPYTOTOOLSPARTITION
+@if not %RECOVERYEXIST%.==Y. GOTO CREATEFFURECOVERY
+@echo  *********************************************************************
+:COPYTOTOOLSPARTITION
 @echo  == Copy the Windows RE image to the Windows RE Tools partition ==
 md R:\Recovery\WindowsRE
 xcopy /h W:\Windows\System32\Recovery\Winre.wim R:\Recovery\WindowsRE\
@@ -248,18 +371,6 @@ W:\Windows\System32\Reagentc /Setreimage /Path R:\Recovery\WindowsRE /Target W:\
 @if %COMPACTOS%.==d. set COMPACTOS=D
 if %COMPACTOS%.==Y. dism /Apply-CustomDataImage /CustomDataImage:W:\Recovery\Customizations\USMT.ppkg /ImagePath:W:\ /SingleInstance
 if %COMPACTOS%.==D. dism /Apply-CustomDataImage /CustomDataImage:W:\Recovery\Customizations\USMT.ppkg /ImagePath:W:\ /SingleInstance /Defer
-@rem *********************************************************************
-@echo Checking to see if the PC is booted in BIOS or UEFI mode.
-wpeutil UpdateBootInfo
-for /f "tokens=2* delims=	 " %%A in ('reg query HKLM\System\CurrentControlSet\Control /v PEFirmwareType') DO SET Firmware=%%B
-@echo            Note: delims is a TAB followed by a space.
-@if x%Firmware%==x echo ERROR: Can't figure out which firmware we're on.
-@if x%Firmware%==x echo        Common fix: In the command above:
-@if x%Firmware%==x echo             for /f "tokens=2* delims=	 "
-@if x%Firmware%==x echo        ...replace the spaces with a TAB character followed by a space.
-@if x%Firmware%==x goto END
-@if %Firmware%==0x1 echo The PC is booted in BIOS mode. 
-@if %Firmware%==0x2 echo The PC is booted in UEFI mode. 
 @echo  *********************************************************************
 @echo == Hiding the recovery tools partition
 if %Firmware%==0x1 diskpart /s %~dp0HideRecoveryPartitions-BIOS.txt
@@ -273,217 +384,10 @@ W:\Windows\System32\Reagentc /Info /Target W:\Windows
 @echo      Disconnect the USB drive from the reference device.
 @echo      Type exit to reboot.
 @echo.
-:END
-```
-
-This script relies on the following two DiskPart scripts, HideRecoveryPartitions-UEFI.txt and HideRecoveryPartitions-BIOS.txt, which must be placed in the same folder:
-
-### HideRecoveryPartitions-UEFI.txt
-
-```
-rem === HideRecoveryPartitions-UEFI.txt ===
-select disk 0
-select partition 4
-set id=de94bba4-06d1-4d40-a16a-bfd50179d6ac
-gpt attributes=0x8000000000000001
-remove
-list volume
-```
-
-### HideRecoveryPartitions-BIOS.txt
-
-```
-rem === HideRecoveryPartitions-BIOS.txt ===
-select disk 0
-select partition 3
-set id=27
-remove
-list volume
-```
-
-## FFU Deployment Scripts
-
-These scripts are modified versions of the image deployment scripts above. The FFU deployment scripts don't create a recovery partition for initial image deployment so that the Windows partition can be expanded after an FFU is applied. Use these scripts if you're capturing an FFU that will be applied to a larger disk than the disk that was captured. 
-
-The following files make up the FFU deployment scripts:
-- ApplyImage-FFU.bat
-- ApplyRecovery-FFU.bat
-- CreatePartitions-BIOS-FFU.txt
-- CreatePartitions-UEFI-FFU.txt
-- CreateRecoveryPartitions-BIOS.txt
-- CreateRecoveryPartitions-UEFI.txt
-- HideRecoveryPartitions-BIOS.txt
-- HideRecoveryPartitions-UEFI.txt
-
-### ApplyImage-FFU.bat
-
-This script creates hard drive partitions, and applies a WIM to a PC. Unlike ApplyImage.bat, this script does not create a recovery partition. ApplyImage-FFU.bat calls CreatePartitions-BIOS-FFU.txt and CreatePartitions-UEFI-FFU.txt to create the disk partitions. Make sure that these files are in the same folder as ApplyImage-FFU.bat.
-
-**Note:** If you copy and paste the contents below to create a .bat file, you may get an error when detecting firmware. For firmware detection to succeed, ensure that the lines that begin `for /f "tokens=2* delims=	 " %%A` has a tab followed by a space in between `delims=` and `" %%A`.
-
-```
-@echo ApplyImage-FFU.bat
-@echo     Run from the reference device in the WinPE environment
-@echo     This script erases the primary hard drive and applies a new image
-@echo
-@echo. UPDATE (November 2017)
-@echo	This script is for use with FFUs that will be captured from
-@echo	drives that are smaller than the drive they will be applied
-@echo
-@echo UPDATE (JULY 2016):
-@echo * This script stops just after applying the image.
-@echo   This gives you an opportunity to add siloed provisioning packages (SPPs)
-@echo   so that you can include them in your recovery tools.
-@echo.
-@echo   After the script is complete, use apply-recovery.bat to finish
-@echo   setting up the recovery tools.
-@echo.
-@echo * This script creates a now includes support for the /EA variables for quicker
-@echo   image capture and recovery.
-@echo.
-@echo * This script now includes support for the /EA variables for quicker
-@echo   image capture and recovery.
-@echo.
-@echo * This script now checks to see if you're booted into Windows PE.
-@echo.
-@if not exist X:\Windows\System32 echo ERROR: This script is built to run in Windows PE.
-@if not exist X:\Windows\System32 goto END
-@if %1.==. echo ERROR: To run this script, add a path to a Windows image file.
-@if %1.==. echo Example: ApplyImage D:\WindowsWithFrench.wim
-@if %1.==. goto END
+GOTO END
+:CREATEFFURECOVERY
 @echo *********************************************************************
-@echo Checking to see if the PC is booted in BIOS or UEFI mode.
-wpeutil UpdateBootInfo
-for /f "tokens=2* delims=	 " %%A in ('reg query HKLM\System\CurrentControlSet\Control /v PEFirmwareType') DO SET Firmware=%%B
-@echo            Note: delims is a TAB followed by a space.
-@if x%Firmware%==x echo ERROR: Can't figure out which firmware we're on.
-@if x%Firmware%==x echo        Common fix: In the command above:
-@if x%Firmware%==x echo             for /f "tokens=2* delims=	 "
-@if x%Firmware%==x echo        ...replace the spaces with a TAB character followed by a space.
-@if x%Firmware%==x goto END
-@if %Firmware%==0x1 echo The PC is booted in BIOS mode. 
-@if %Firmware%==0x2 echo The PC is booted in UEFI mode. 
-@echo *********************************************************************
-@echo Formatting the primary disk...
-@if %Firmware%==0x1 echo    ...using BIOS (MBR) format and partitions.
-@if %Firmware%==0x2 echo    ...using UEFI (GPT) format and partitions. 
-@echo CAUTION: All the data on the disk will be DELETED.
-@SET /P READY=Erase all data and continue? (Y or N):
-@if %READY%.==y. set READY=Y
-@if not %READY%.==Y. goto END
-if %Firmware%==0x1 diskpart /s CreatePartitions-BIOS-FFU.txt
-if %Firmware%==0x2 diskpart /s CreatePartitions-UEFI-FFU.txt
-@echo *********************************************************************
-@echo  == Set high-performance power scheme to speed deployment ==
-call powercfg /s 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c
-@echo *********************************************************************
-@echo  == Apply the image to the Windows partition ==
-@SET /P COMPACTOS=Deploy as Compact OS? (Y or N):
-@if %COMPACTOS%.==y. set COMPACTOS=Y
-@echo Does this image include Extended Attributes?
-@echo    (If you're not sure, type N).
-@SET /P EA=(Y or N):
-@if %EA%.==y. set EA=Y
-if %COMPACTOS%.==Y.     if %EA%.==Y.     dism /Apply-Image /ImageFile:%1 /Index:1 /ApplyDir:W:\ /Compact /EA
-if not %COMPACTOS%.==Y. if %EA%.==Y.     dism /Apply-Image /ImageFile:%1 /Index:1 /ApplyDir:W:\ /EA
-if %COMPACTOS%.==Y.     if not %EA%.==Y. dism /Apply-Image /ImageFile:%1 /Index:1 /ApplyDir:W:\ /Compact
-if not %COMPACTOS%.==Y. if not %EA%.==Y. dism /Apply-Image /ImageFile:%1 /Index:1 /ApplyDir:W:\
-@echo *********************************************************************
-@echo == Copy boot files to the System partition ==
-W:\Windows\System32\bcdboot W:\Windows /s S:
-@echo *********************************************************************
-@echo   Next steps:
-@echo   * Add Windows Classic apps (optional):
-@echo       DISM /Apply-SiloedPackage /ImagePath:W:\ 
-@echo            /PackagePath:"D:\App1.spp" /PackagePath:"D:\App2.spp"  ...
-@echo   * Add a recovery partition and copy the recovery image:
-@echo       ApplyRecovery.bat
-@echo   * Reboot:
-@echo       exit
-:END
-
-```
-
-### CreatePartitions-BIOS-FFU.txt
-
-```
-rem == CreatePartitions-BIOS-FFU.txt ==
-rem == These commands are used with DiskPart to
-rem    create two partitions
-rem    for a BIOS/MBR-based computer.
-rem    This does not create a recovery partition
-rem    Adjust the partition sizes to fill the drive
-rem    as necessary. ==
-select disk 0
-clean
-rem == 1. System partition ======================
-create partition primary size=100
-format quick fs=ntfs label="System"
-assign letter="S"
-active
-rem == 2. Windows partition =====================
-rem ==    a. Create the Windows partition =======
-create partition primary
-rem ==    b. Prepare the Windows partition ====== 
-format quick fs=ntfs label="Windows"
-assign letter="W"
-list volume
-exit
-```
-
-### CreatePartitions-UEFI-FFU.txt
-
-```
-rem == CreatePartitions-UEFI-FFU.txt ==
-rem == These commands are used with DiskPart to
-rem    create three partitions
-rem    for a UEFI/GPT-based PC.
-rem    This does not create a recovery partition.
-rem    Adjust the partition sizes to fill the drive
-rem    as necessary. ==
-select disk 0
-clean
-convert gpt
-rem == 1. System partition =========================
-create partition efi size=100
-rem    ** NOTE: For Advanced Format 4Kn drives,
-rem               change this value to size = 260 ** 
-format quick fs=fat32 label="System"
-assign letter="S"
-rem == 2. Microsoft Reserved (MSR) partition =======
-create partition msr size=16
-rem == 3. Windows partition ========================
-rem ==    a. Create the Windows partition ==========
-create partition primary 
-rem ==    b. Prepare the Windows partition ========= 
-format quick fs=ntfs label="Windows"
-assign letter="W"
-list volume
-exit
-```
-
-### ApplyRecovery-FFU.bat
-
-This script checks to see which firmware mode the PC is booted into, creates a recovery partition based on the firmware, and copies winre.wim to the recovery partition. This script calls CreateRecoveryPartitions-BIOS.txt, CreateRecoveryPartitions-FFU.txt, HideRecoveryPartitions-BIOS.txt, and HideRecoveryPartitions-UEFI.txt. Make sure that these files are all in the same folder as ApplyRecovery-FFU.bat.
-
-**Note:** If you copy and paste the contents below to create a .bat file, you may get an error when detecting firmware. For firmware detection to succeed, ensure that the lines that begin `for /f "tokens=2* delims=	 " %%A` has a tab followed by a space in between `delims=` and `" %%A`.
-
-```
-@echo == ApplyRecovery-FFU.bat ==
-@echo *********************************************************************
-@echo Checking to see if the PC is booted in BIOS or UEFI mode.
-wpeutil UpdateBootInfo
-for /f "tokens=2* delims=	 " %%A in ('reg query HKLM\System\CurrentControlSet\Control /v PEFirmwareType') DO SET Firmware=%%B
-@echo            Note: delims is a TAB followed by a space.
-@if x%Firmware%==x echo ERROR: Can't figure out which firmware we're on.
-@if x%Firmware%==x echo        Common fix: In the command above:
-@if x%Firmware%==x echo             for /f "tokens=2* delims=	 "
-@if x%Firmware%==x echo        ...replace the spaces with a TAB character followed by a space.
-@if x%Firmware%==x goto END
-@if %Firmware%==0x1 echo The PC is booted in BIOS mode. 
-@if %Firmware%==0x2 echo The PC is booted in UEFI mode. 
-@echo *********************************************************************
-@echo == Hiding the recovery tools partition
+@echo == Creating the recovery tools partition
 if %Firmware%==0x1 diskpart /s CreateRecoveryPartitions-BIOS.txt
 if %Firmware%==0x2 diskpart /s CreateRecoveryPartitions-UEFI.txt
 @echo finding the Windows Drive
@@ -503,7 +407,7 @@ md R:\Recovery\WindowsRE
 xcopy /h %recoveryfolder%Winre.wim R:\Recovery\WindowsRE\
 @echo  *********************************************************************
 @echo  == Register the location of the recovery tools ==
-%windowsdrive%Windows\System32\Reagentc /Setreimage /Path R:\Recovery\WindowsRE /Target %windowsdrive%Windows
+@%windowsdrive%Windows\System32\Reagentc /Setreimage /Path R:\Recovery\WindowsRE /Target %windowsdrive%Windows
 @echo  *********************************************************************
 @echo  == If Compact OS, single-instance the recovery provisioning package ==
 @echo     Options: N: No
@@ -514,24 +418,12 @@ xcopy /h %recoveryfolder%Winre.wim R:\Recovery\WindowsRE\
 @SET /P COMPACTOS=Deploy as Compact OS? (Y, N, or D):
 @if %COMPACTOS%.==y. set COMPACTOS=Y
 @if %COMPACTOS%.==d. set COMPACTOS=D
-if %COMPACTOS%.==Y. dism /Apply-CustomDataImage /CustomDataImage:%windowsdrive%Recovery\Customizations\USMT.ppkg /ImagePath:%windowsdrive% /SingleInstance
-if %COMPACTOS%.==D. dism /Apply-CustomDataImage /CustomDataImage:%windowsdrive%Recovery\Customizations\USMT.ppkg /ImagePath:%windowsdrive% /SingleInstance /Defer
+@if %COMPACTOS%.==Y. dism /Apply-CustomDataImage /CustomDataImage:%windowsdrive%Recovery\Customizations\USMT.ppkg /ImagePath:%windowsdrive% /SingleInstance
+@if %COMPACTOS%.==D. dism /Apply-CustomDataImage /CustomDataImage:%windowsdrive%Recovery\Customizations\USMT.ppkg /ImagePath:%windowsdrive% /SingleInstance /Defer
 @rem *********************************************************************
-@echo Checking to see if the PC is booted in BIOS or UEFI mode.
-wpeutil UpdateBootInfo
-for /f "tokens=2* delims=	 " %%A in ('reg query HKLM\System\CurrentControlSet\Control /v PEFirmwareType') DO SET Firmware=%%B
-@echo            Note: delims is a TAB followed by a space.
-@if x%Firmware%==x echo ERROR: Can't figure out which firmware we're on.
-@if x%Firmware%==x echo        Common fix: In the command above:
-@if x%Firmware%==x echo             for /f "tokens=2* delims=    "
-@if x%Firmware%==x echo        ...replace the spaces with a TAB character followed by a space.
-@if x%Firmware%==x goto END
-@if %Firmware%==0x1 echo The PC is booted in BIOS mode. 
-@if %Firmware%==0x2 echo The PC is booted in UEFI mode. 
-@echo  *********************************************************************
 @echo == Hiding the recovery tools partition
-if %Firmware%==0x1 diskpart /s HideRecoveryPartitions-BIOS.txt
-if %Firmware%==0x2 diskpart /s HideRecoveryPartitions-UEFI.txt
+@if %Firmware%==0x1 diskpart /s HideRecoveryPartitions-BIOS.txt
+@if %Firmware%==0x2 diskpart /s HideRecoveryPartitions-UEFI.txt
 @echo *********************************************************************
 @echo == Verify the configuration status of the images. ==
 %windowsdrive%Windows\System32\Reagentc /Info /Target %windowsdrive%Windows
@@ -544,35 +436,15 @@ if %Firmware%==0x2 diskpart /s HideRecoveryPartitions-UEFI.txt
 :END
 ```
 
-### CreateRecoveryPartitions-BIOS.txt
+ApplyRecovery.bat relies on the following  DiskPart scripts, which must be placed in the same folder:
 
-```
-rem == CreateRecoveryPartitions-BIOS.txt ==
-select disk 0
-select partition 2
-rem == extend the Windows partition ==
-extend
-rem ==    b. Create space for the recovery tools  
-shrink minimum=500
-rem       ** NOTE: Update this size to match the
-rem                size of the recovery tools 
-rem                (winre.wim)                 **
-rem ==    c. Prepare the Recovery partition ====== 
-select disk 0
-create partition primary
-format quick fs=ntfs label="Recovery image"
-assign letter="R"
-set id=27
-list volume
-exit
-```
-
-### CreateRecoveryPartitions-UEFI.txt
+#### CreateRecoveryPartitions-UEFI.txt
 
 ```
 rem == CreateRecoveryPartitions-UEFI.txt ==
 select disk 0
 select partition 3
+assign letter="W"
 rem == extend the Windows partition ==
 shrink minimum=500
 extend
@@ -591,7 +463,33 @@ list volume
 exit
 ```
 
-### HideRecoveryPartitions-UEFI.txt
+#### CreateRecoveryPartitions-BIOS.txt
+
+```
+rem == CreateRecoveryPartitions-BIOS.txt ==
+select disk 0
+select partition 2
+assign letter="W"
+rem == extend the Windows partition ==
+shrink minimum=500
+extend
+rem ==    b. Create space for the recovery tools  
+shrink minimum=500
+rem       ** NOTE: Update this size to match the
+rem                size of the recovery tools 
+rem                (winre.wim)                 **
+rem ==    c. Prepare the Recovery partition ====== 
+select disk 0
+create partition primary
+format quick fs=ntfs label="Recovery image"
+assign letter="R"
+set id=27
+list volume
+exit
+
+```
+
+#### HideRecoveryPartitions-UEFI.txt
 
 ```
 rem === HideRecoveryPartitions-UEFI.txt ===
@@ -601,10 +499,9 @@ set id=de94bba4-06d1-4d40-a16a-bfd50179d6ac
 gpt attributes=0x8000000000000001
 remove
 list volume
-exit
 ```
 
-### HideRecoveryPartitions-BIOS.txt
+#### HideRecoveryPartitions-BIOS.txt
 
 ```
 rem === HideRecoveryPartitions-BIOS.txt ===
@@ -613,8 +510,8 @@ select partition 3
 set id=27
 remove
 list volume
-exit
 ```
+
 
 ## <span id="Start_Layout"></span><span id="layoutmodification.xml"></span><span id="LAYOUTMODIFICATION.XML"></span>Start layout (LayoutModification.xml)
 

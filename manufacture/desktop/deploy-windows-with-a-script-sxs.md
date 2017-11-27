@@ -59,13 +59,13 @@ The sample scripts include steps that detect the firmware type (the newer UEFI-b
 
 4.  Format the primary hard drive, create the partitions, and apply the image by using the pre-made [sample scripts](windows-deployment-sample-scripts-sxs.md). 
 
-    The script **ApplyImage.bat** uses the diskpart scripts: CreatePartitions-UEFI.txt and CreatePartitions-BIOS.txt to create the partitions and define the partition layout. These scripts must be placed in the same folder. You can update these scripts to change the partition sizes.
+    The script **ApplyImage.bat** uses diskpart scripts to create the partitions and define the partition layout. These scripts must be placed in the same folder. You can update these scripts to change the partition sizes.
     
-    > [!Note] If you're going to be capturing and deploying your final image as an FFU, use **ApplyImage-FFU.bat** and it's associated diskpart scripts. These scripts don't create a recovery partition, making it easier to resize the Windows partition after applying a FFU image.
+    > [!Note] If you're going to be capturing and deploying your final image as an FFU, choose the options to not configure recovery. Recovery can be configured later after the Windows partition has been expanded.
 
     ```
     D:
-    D:\Deployment\WIM\ApplyImage.bat D:\Images\install.wim
+    D:\Deployment\ApplyImage.bat D:\Images\install.wim
     ```
 
     When prompted by the script: 
@@ -95,18 +95,12 @@ The sample scripts include steps that detect the firmware type (the newer UEFI-b
 
 Include a recovery image for your final images, but it's not required for these early testing steps. 
 
-1.  Apply the Windows Recovery Environment (Windows RE) image. These tools help repair common causes of unbootable operating systems. The image is stored in a separate drive partition. The script **ApplyRecovery.bat** uses the diskpart scripts: HidePartitions-UEFI.txt and HidePartitions-BIOS.txt to set up this partition. These scripts must be placed in the same folder as ApplyRecovery.bat.
+Apply the Windows Recovery Environment (Windows RE) image. These tools help repair common causes of unbootable operating systems. The image is stored in a separate drive partition. The script **ApplyRecovery.bat** uses the diskpart scripts: HidePartitions-UEFI.txt and HidePartitions-BIOS.txt to set up this partition. These scripts must be placed in the same folder as ApplyRecovery.bat.
 
 	```
-	D:\Deployment\WIM\ApplyRecovery.bat
+	D:\Deployment\ApplyRecovery.bat
 	```
-**or**
 
-2. If your final image is going to be an FFU, create a recovery partition and apply the Windows RE image. The script ApplyRecovery-FFU.bat uses the diskpart scripts: CreateRecoveryPartitions-BIOS.txt, CreateRecoveryPartitions-UEFI.txt, HideRecoveryPartitions-UEFI.txt, and HideRecoveryPartitions-BIOS.txt. These scripts must be placed in the same folder as ApplyRecovery.bat
-
-    ```
-    D:\Deployment\FFU\ApplyRecovery-FFU.bat
-    ```
 
 ## <span id="Reboot"></span>Step 6: Reboot
 
