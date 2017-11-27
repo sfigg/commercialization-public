@@ -13,14 +13,11 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # Profile
-
 
 `Profile` specifies the profile of a [FirewallGroup](networking-mpssvc-svcfirewallgroups-firewallgroup.md).
 
 ## Values
-
 
 <table>
 <colgroup>
@@ -47,50 +44,32 @@ ms.technology: windows-oem
 </tbody>
 </table>
 
- 
-
 ## Parent Hierarchy
-
 
 [Networking-MPSSVC-Svc](networking-mpssvc-svc.md) | [FirewallGroups](networking-mpssvc-svcfirewallgroups.md) | [FirewallGroup](networking-mpssvc-svcfirewallgroups-firewallgroup.md) | **Profile**
 
 ## Valid Passes
 
-
 specialize
 
 ## Applies To
-
 
 For the list of the supported Windows editions and architectures that this component supports, see [Networking-MPSSVC-Svc](networking-mpssvc-svc.md).
 
 ## XML Example
 
-
 The following XML output shows how to set Windows Firewall groups.
 
-```
+```XML
 <FirewallGroups>
       <FirewallGroup wcm:action="add" wcm:keyValue="RemoteDesktop">
-      <Active>true</Active> 
-      <Group>Remote Desktop</Group> 
-      <Profile>all</Profile> 
+      <Active>true</Active>
+      <Group>@FirewallAPI.dll,-28752</Group>
+      <Profile>all</Profile>
    </FirewallGroup>
 </FirewallGroups>
 ```
 
 ## Related topics
 
-
 [FirewallGroup](networking-mpssvc-svcfirewallgroups-firewallgroup.md)
-
- 
-
- 
-
-
-
-
-
-
-
