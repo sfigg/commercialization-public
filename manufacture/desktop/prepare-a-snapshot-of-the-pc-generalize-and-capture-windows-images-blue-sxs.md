@@ -134,7 +134,7 @@ NOTE: “Referral”   switch is optional,  If OEM partner is  participating in 
     D:\ADKTools\amd64\scanstate.exe /apps /ppkg C:\Recovery\Customizations\usmt.ppkg /o /c /v:13 /l:C:\Recovery\ScanState.log
     ```
 
-    **Note**  Optional: Delete the ScanState logfile: `del C:\Recovery\Scanstate.log`.
+    **Note** Recommended: Delete the ScanState log file: `del C:\Recovery\Scanstate.log`.
 
 ## <span id="Prepare_for_image_capture"></span>Step 5: Prepare for image capture
 
@@ -148,13 +148,15 @@ This step is required when you're capturing images to apply to other PCs.
 
     The Sysprep tool reseals the device. This process can take several minutes. After the process completes, the device shuts down automatically.
 
-    **Warning**: If you're using [siloed provisioning packages (SPPs)](add-desktop-apps-with-spps-sxs.md), do not set the image to boot to audit mode again (sysprep /audit). Instead, set it to boot to OOBE, and if you need to boot to audit again, [add an answer file with the Mode:Audit setting](update-windows-settings-and-scripts-create-your-own-answer-file-sxs.md). This will be fixed in future versions.
+    > [!warning]
+    > If you're using [siloed provisioning packages (SPPs)](add-desktop-apps-with-spps-sxs.md), do not set the image to boot to audit mode again (sysprep /audit). Instead, set it to boot to OOBE, and if you need to boot to audit again, [add an answer file with the Mode:Audit setting](update-windows-settings-and-scripts-create-your-own-answer-file-sxs.md). This will be fixed in future versions.
 
 2.  Boot the device into Windows PE. To do this, you may need to press the key that opens the boot-device selection menu for the device (for example, the **Esc** key or **Volume Up** key).
 
     Select the option in the firmware menus to boot to the USB flash drive.
 
-    **Warning**   If Windows begins booting instead of Windows PE, you must generalize the device again before capturing the image: After Windows boots, press **Ctrl+Shift+F3** to enter audit mode. The device will reboot. Generalize the device again: `C:\Windows\System32\Sysprep\sysprep /oobe /generalize /shutdown`.
+    > [!warning]
+    > If Windows begins booting instead of Windows PE, you must generalize the device again before capturing the image: After Windows boots, press **Ctrl+Shift+F3** to enter audit mode. The device will reboot. Generalize the device again: `C:\Windows\System32\Sysprep\sysprep /oobe /generalize /shutdown`.
 
 3.  Optional: speed up the optimization and image capture processes by setting the power scheme to High performance:
 
@@ -198,26 +200,20 @@ This step is required when you're capturing images to apply to other PCs.
 
 ### <span id="Capture_the_image"></span><span id="capture_the_image"></span><span id="CAPTURE_THE_IMAGE"></span>Step 7: Capture the image
 
--   Capture the image of the Windows partition.
+Capture the image of the Windows partition.
 
-    ```
-    dism /Capture-Image /CaptureDir:C:\ /ImageFile:"C:\WindowsWithFinalChanges.wim" /Name:"Final changes"
-    ```
+```
+dism /Capture-Image /CaptureDir:C:\ /ImageFile:"C:\WindowsWithFinalChanges.wim" /Name:"Final changes"
+```
 
-    where *C* is the drive letter of the Windows partition and *Final changes* is the image name.
+where *C* is the drive letter of the Windows partition and *Final changes* is the image name.
 
-    The DISM tool captures the Windows partition into a new image file. This process can take several minutes.
+The DISM tool captures the Windows partition into a new image file. This process can take several minutes.
 
-    **Troubleshooting**: If you receive an: "A parameter is incorrect" error message when you try to capture or copy the file to the USB key, the file might be too large for the destination file system. Copy the file to a different drive that is formatted as NTFS.
-
-	2.  Copy the image to a network share. Example: 
-    ```
-	net use N: \\server\share
-	copy C:\WindowsWithFinalChanges.wim N:\Images\WindowsWithFinalChanges.wim
-	```
+**Troubleshooting**: If you receive an: "A parameter is incorrect" error message when you try to capture or copy the file to the USB key, the file might be too large for the destination file system. Copy the file to a different drive that is formatted as NTFS.
 
 > [!Note]
-> You can also choose to capture an image of the whole drive, including partition information, in a [full flash update image(FFU)](deploy-windows-using-full-flash-update--ffu.md).  See [DISM Image Management Command-Line Options](dism-image-management-command-line-options-s14.md#capture-ffu) for available command line options for capturing an FFU.
+> You can also choose to capture an image of the whole drive, including partition information, in a [full flash update image (FFU)](deploy-windows-using-full-flash-update--ffu.md).  See [DISM Image Management Command-Line Options](dism-image-management-command-line-options-s14.md#capture-ffu) for available command line options for capturing an FFU.
 
 ## <span id="Try_it_out"></span>Try it out
 
