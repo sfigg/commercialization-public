@@ -224,6 +224,8 @@ exit
 
 #### <span id="CreatePartitions-UEFI-FFU.txt"></span> CreatePartitions-UEFI-FFU.txt
 
+This script is based off of CreatePartitions-UEFI.txt, but it does not create a recovery partition. This is so that the Windows partition is the last partition on the drive and can be expanded. If this script is used, the recovery partition can be configured later with ApplyRecovery.bat.
+
 ```
 rem == CreatePartitions-UEFI-FFU.txt ==
 rem == These commands are used with DiskPart to
@@ -300,6 +302,8 @@ exit
 ```
 
 #### <span id="CreatePartitions-BIOS-FFU.txt"></span> CreatePartitions-BIOS-FFU.txt
+
+This script is based off of CreatePartitions-BIOS.txt, but it does not create a recovery partition. This is so that the Windows partition is the last partition on the drive and can be expanded. If this script is used, the recovery partition can be configured later with ApplyRecovery.bat.
 
 ```
 rem == CreatePartitions-BIOS-FFU.txt ==
