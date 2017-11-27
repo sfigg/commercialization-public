@@ -13,14 +13,11 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # FirewallGroup
-
 
 `FirewallGroup` specifies a Windows Firewall group.
 
 ## Child Elements
-
 
 <table>
 <colgroup>
@@ -34,7 +31,7 @@ ms.technology: windows-oem
 </tr>
 <tr class="even">
 <td><p>[Group](networking-mpssvc-svcfirewallgroups-firewallgroup-group.md)</p></td>
-<td><p>Specifies a Windows Firewall group name</p></td>
+<td><p>Specifies a Windows Firewall group by its ID.</p></td>
 </tr>
 <tr class="odd">
 <td><p>[Key](networking-mpssvc-svcfirewallgroups-firewallgroup-key.md)</p></td>
@@ -47,53 +44,35 @@ ms.technology: windows-oem
 </tbody>
 </table>
 
- 
-
 ## Parent Hierarchy
-
 
 [Networking-MPSSVC-Svc](networking-mpssvc-svc.md) | [FirewallGroups](networking-mpssvc-svcfirewallgroups.md) | **FirewallGroup**
 
 ## Valid Passes
 
-
 specialize
 
 ## Applies To
-
 
 For a list of the supported Windows editions and architectures that this component supports, see [Networking-MPSSVC-Svc](networking-mpssvc-svc.md).
 
 ## XML Example
 
-
 The following XML output shows how to set Windows Firewall groups.
 
-```
+```XML
 <FirewallGroups>
       <FirewallGroup wcm:action="add" wcm:keyValue="RemoteDesktop">
-      <Active>true</Active> 
-      <Group>Remote Desktop</Group> 
-      <Profile>all</Profile> 
+      <Active>true</Active>
+      <Group>@FirewallAPI.dll,-28752</Group>
+      <Profile>all</Profile>
    </FirewallGroup>
 </FirewallGroups>
 ```
 
 > [!Note]
-> In unattended installations, you can use a string for the Group setting, for example, "Remote Desktop." However, to specify a Group in an answer file that applies to multilingual unattended installations, you can reference an indirect string resource stored in the firewallAPI.dll binary. See the child topic on the [Group](networking-mpssvc-svcfirewallgroups-firewallgroup-group.md) setting for more information.
+> The `Group` value must be the Group ID associated with the firewall group you want to reference (for example, the `Remote Desktop` group corresponds to the ID `@FirewallAPI.dll,-28752`). Group IDs can be obtained using Network Security commands in PowerShell. See the child topic on the [Group](networking-mpssvc-svcfirewallgroups-firewallgroup-group.md) parameter for more detailed instructions.
 
 ## Related topics
 
-
 [FirewallGroups](networking-mpssvc-svcfirewallgroups.md)
-
- 
-
- 
-
-
-
-
-
-
-
