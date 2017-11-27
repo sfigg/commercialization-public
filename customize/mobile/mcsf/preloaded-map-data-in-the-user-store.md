@@ -54,7 +54,7 @@ OEMs can choose a single map region to preload from the multiple regions that ar
     To add additional maps, add a new **DataAsset** setting and set the source to the directory location of the map region you want to include.
 
 **Tip**  
-You can avoid wiping preloaded maps off the internal store on the factory line using the [ResetPhoneEx] API. For more information, see [Resetting a phone during manufacturing](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/service/mobile/resetting-the-phone).
+You can avoid wiping preloaded maps off the internal store on the factory line using the [ResetPhoneEx] API. For more information, see [Resetting a phone during manufacturing](https://docs.microsoft.com/en-us/windows-hardware/manufacture/mobile/sign-a-full-flash-update--ffu--image).
 
  
 

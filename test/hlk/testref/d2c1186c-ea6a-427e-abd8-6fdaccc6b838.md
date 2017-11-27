@@ -5,6 +5,12 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 9c9ba049-1c22-4e74-aba4-927ad81d3283
+author: sapaetsc
+ms.author: sapaetsc
+ms.date: 10/15/17
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # <span id="p_hlk_test.d2c1186c-ea6a-427e-abd8-6fdaccc6b838"></span>Barometer Sensor Data Fields Verification Test

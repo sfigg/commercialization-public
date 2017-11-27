@@ -5,6 +5,12 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4c0524e8-1ef0-4030-aa12-065b0bea9f07
+author: sapaetsc
+ms.author: sapaetsc
+ms.date: 10/15/17
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # <span id="p_hlk_test.ced39aaa-bb6b-48c8-bd41-3a06dabf5c36"></span>D3D12 - Resource Binding - Compute Root Shader Resource Views

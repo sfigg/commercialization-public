@@ -89,14 +89,14 @@ This element has the following attributes.
 <tr class="odd">
 <td><p><strong>EmbeddedSigningCategory</strong></p></td>
 <td><p>Optional. Specifies the type of code signing that should be used for the file during package generation.</p>
-<p>The string that is provided for EmbeddedSigningCategory is passed unchanged to the sign.cmd tool that is used in package generation. For info on the available signing options for sign.cmd, see [Sign binaries and packages](p_phCodeSigning.sign_binaries_and_packages).</p>
+<p>The string that is provided for EmbeddedSigningCategory is passed unchanged to the sign.cmd tool that is used in package generation. For info on the available signing options for sign.cmd, see [Sign binaries and packages](https://msdn.microsoft.com/library/windows/hardware/dn789217.aspx).</p>
 <p>For example, to specify that HAL binaries should be signed using the –oem and –hal option, add the EmbeddedSigningCategory attribute as shown.</p>
 <pre class="syntax" data-space="preserve"><code>&lt;Files&gt;
   &lt;File Source=&quot;MyHalFileLocation\HalExt1.dll&quot; EmbeddedSigningCategory=&quot;-oem -hal&quot; /&gt; 
   &lt;File Source=&quot;MyHalFileLocation\HalExt2.dll&quot; EmbeddedSigningCategory=&quot;-oem -hal&quot; /&gt; 
   &lt;File Source=&quot;MyHalFileLocation\HalExt3.dll&quot; EmbeddedSigningCategory=&quot;-oem -hal&quot; /&gt; 
 &lt;/Files&gt;</code></pre>
-<p>For general information about code signing, see [Code signing](p_phCodeSigning.code_signing).</p></td>
+<p>For general information about code signing, see [Code signing](https://msdn.microsoft.com/library/windows/hardware/dn756634.aspx).</p></td>
 </tr>
 </tbody>
 </table>

@@ -17,19 +17,23 @@ ms.technology: windows-oem
 
 ### Answer file setting changes
 
-For an overview of Unattend settings that are new, deprecated, and removed, see [Changed answer file settings for Windows 10 version 1709 for desktop editions.](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/customize/desktop/unattend/changed-answer-file-settings-for-windows-10-build-1709)
+For an overview of Unattend settings that are new, deprecated, and removed, see [Changed answer file settings for Windows 10 version 1709 for desktop editions](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/customize/desktop/unattend/changed-answer-file-settings-for-windows-10-build-1709).
+
+To learn more about Unattend settings, see the [Unattended Windows Setup Reference](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/).
 
 ### MDM: Enhanced device and PC management
 
 Check out the [new CSPs settings](https://docs.microsoft.com/en-us/windows/client-management/mdm/new-in-windows-mdm-enrollment-management#whatsnew1709).
 
+See [Mobile Device Management](https://docs.microsoft.com/en-us/windows/client-management/mdm/) for more information.
+
 ### More changes
 
 See [What's new in Windows 10](what-s-new-in-windows.md) for the latest features and changes in design, customization, manufacturing, and drivers.
 
-## Use ADK kits and tools
+## Learn about the ADK tools
 
-The links below provide instructions on using tools included in the Windows 10 ADK:
+The topics below provide instructions on using the tools included in the Windows 10 ADK:
 
 * [Windows Configuration Designer](https://docs.microsoft.com/en-us/windows/configuration/provisioning-packages/provisioning-packages)
 * [Windows Preinstallation Environment (WinPE)](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/winpe-intro)

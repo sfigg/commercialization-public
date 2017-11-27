@@ -41,7 +41,7 @@ Microsoft-Windows-Shell-Setup contains elements and settings that control how th
 <td><p>Specifies the name of the computer.</p></td>
 </tr>
 <tr class="even">
-<td><p>[ConvertibleSlateModePromptPreference](microsoft-windows-shell-convertibleslatemodepromptpreference.md)</p></td>
+<td><p>[ConvertibleSlateModePromptPreference](microsoft-windows-shell-setup-convertibleslatemodepromptpreference.md)</p></td>
 <td><p>Configure to support prompts triggered by changes to [ConvertibleSlateMode](microsoft-windows-gpiobuttons-convertibleslatemode.md). OEMs must make sure that <code>ConvertibleSlateMode</code> is always accurate for their devices.</p></td>
 </tr>
 <tr class="odd">
@@ -112,7 +112,7 @@ Microsoft-Windows-Shell-Setup contains elements and settings that control how th
 <td><p>Specifies that the <strong>Power Options</strong> button is visible on the Start screen.</p></td>
 </tr>
 <tr class="even">
-<td><p>[SignInMode](microsoft-windows-shell-signinmode.md)</p></td>
+<td><p>[SignInMode](microsoft-windows-shell-setup-signinmode.md)</p></td>
 <td><p>Specifies whether users switch to tablet mode by default after signing in.</p></td>
 </tr>
 <tr class="odd">
@@ -151,7 +151,7 @@ Microsoft-Windows-Shell-Setup contains elements and settings that control how th
 ## Applies To
 
 
-To determine whether a component applies to the image you’re building, load your image into Windows SIM and search for the component or setting name. For information on how to view components and settings, see [Configure Components and Settings in an Answer File](https://msdn.microsoft.com/library/windows/hardware/dn915078).
+To determine whether a component applies to the image you’re building, load your image into Windows SIM and search for the component or setting name. For information on how to view components and settings, see [Configure Components and Settings in an Answer File](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/wsim/configure-components-and-settings-in-an-answer-file).
 
 ## Related topics
 

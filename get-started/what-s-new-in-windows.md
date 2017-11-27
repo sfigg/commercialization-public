@@ -10,7 +10,10 @@ ms.technology: windows-oem
 ---
 # What's new in Windows 10, version 1709
 
-Welcome to Windows 10, version 1709! Here are some resources to get you acquainted with the new features and changes introduced in this version of Windows 10.
+Welcome to Windows 10, version 1709! Here are some resources to get you acquainted with the new features and changes introduced for Windows device and driver creators in this version of Windows 10.
+
+> [!Tip]
+> If you're a Windows device owner and would like to learn more about the new features available to you as a consumer, please see [Windows 10 keeps getting better](https://www.microsoft.com/en-us/windows/features) on Microsoft.com.
 
 ## New in design
 

@@ -19,11 +19,11 @@ ms.technology: windows-oem
 
 Configure `ConvertibleSlateModePromptPreference` to support prompts triggered by changes to [ConvertibleSlateMode](microsoft-windows-gpiobuttons-convertibleslatemode.md). OEMs must make sure that `ConvertibleSlateMode` is always accurate for their devices.
 
-OEMs can configure `ConvertibleSlateModePromptPreference` to support Continuum, which is a new, adaptive user experience in Windows 10 that optimizes the look and behavior of apps and the Windows UI for a given physical form factor and the customer's usage preferences. OEMs can also configure their devices to boot straight into tablet mode using [SignInMode](microsoft-windows-shell-signinmode.md). In addition, OEMs may also specify the device form factor by setting [DeviceForm](microsoft-windows-deployment-deviceform.md). For more information about Continuum, partners can download the "Windows 10 Continuum whitepaper" through the Microsoft Connect site.
+OEMs can configure `ConvertibleSlateModePromptPreference` to support Continuum, which is a new, adaptive user experience in Windows 10 that optimizes the look and behavior of apps and the Windows UI for a given physical form factor and the customer's usage preferences. OEMs can also configure their devices to boot straight into tablet mode using [SignInMode](microsoft-windows-shell-setup-signinmode.md). In addition, OEMs may also specify the device form factor by setting [DeviceForm](microsoft-windows-deployment-deviceform.md). For more information about Continuum, partners can download the "Windows 10 Continuum whitepaper" through the Microsoft Connect site.
 
 To make this setting work, set up a GPIO pin and a [GPIO Injection Driver](http://go.microsoft.com/fwlink/?LinkId=320790) to detect the mode. When the mode changes, the driver should update the registry value of **HKLM/System/CurrentControlSet/Control/PriorityControl/ConvertibleSlateMode**.
 
-For devices that can use Windows 10 Continuum feature, also see the topic: [Continuum](https://msdn.microsoft.com/library/windows/hardware/dn917883.aspx).
+For devices that can use Windows 10 Continuum feature, also see the topic: [Continuum](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/continuum).
 
 ## Values
 
@@ -79,13 +79,13 @@ For a list of the Windows editions and architectures that this component support
 
 [ConvertibleSlateMode](microsoft-windows-gpiobuttons-convertibleslatemode.md)
 
-[SignInMode](microsoft-windows-shell-signinmode.md)
+[SignInMode](microsoft-windows-shell-setup-signinmode.md)
 
 [DeviceForm](microsoft-windows-deployment-deviceform.md)
 
-[GPIO Injection Driver](http://go.microsoft.com/fwlink/?LinkId=320790)
+[GPIO implementation guide](https://docs.microsoft.com/en-us/windows-hardware/drivers/gpiobtn/gpio-buttons-and-indicators-implementation-guide-for-windows-8-1)
 
-[Continuum](https://msdn.microsoft.com/library/windows/hardware/dn917883.aspx)
+[Continuum](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/continuum)
 
  
 

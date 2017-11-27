@@ -5,6 +5,12 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 5b561341-436e-40c1-8291-e827e8ae6ceb
+author: sapaetsc
+ms.author: sapaetsc
+ms.date: 10/15/17
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # <span id="p_hlk_test.0ecca7ad-aada-4c98-b153-c44ef48e00ae"></span>Sensor Camera Driver Controls System Test - FACEDETECTION - Iterate through possible settings while Preview

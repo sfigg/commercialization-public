@@ -25,7 +25,7 @@ DataTypeEnum
 ## Values
 
 
-An enumeration containing one or more [WEKF\_CustomKey](https://msdn.microsoft.com/library/windows/hardware/mt633814) values.
+An enumeration containing one or more [WEKF\_CustomKey](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/wekf-customkey) values.
 
 ## Parent Hierarchy
 

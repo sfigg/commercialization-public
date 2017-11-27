@@ -1,10 +1,13 @@
 ---
+author: kpacquer
 title: Merging packages using FeatureMerger
 description: Merging packages using FeatureMerger
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
-ms.assetid: 2053786a-05e7-463e-8765-f9b7d1bb4e70
+MSHAttr: 'PreferredLib:/library/windows/hardware'
+ms.author: kpacquer
+ms.date: 11/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # Merging packages using FeatureMerger
@@ -17,11 +20,8 @@ use FeatureMerger.exe to merge their packages into a specific set of
 packages that conform to the *Windows Standard Package Configuration*
 (WSPC).
 
-For an overview of package merging, see [Merging packages before
-imaging](merging-packages-before-imaging.md). For more information
-about the WSPC requirements for retail images, see [Windows Standard
-Packaging Configuration (WSPC) requirements for retail
-images](packaging-requirements-for-retail-images.md).
+For an overview of package merging, see [Merging packages before imaging](merging-packages-before-imaging.md). For more information
+about the WSPC requirements for retail images, see [Windows Standard Packaging Configuration (WSPC) requirements for retail images](packaging-requirements-for-retail-images.md).
 
 ## <span id="featuremerger.exe_overview"></span><span id="FEATUREMERGER.EXE_OVERVIEW"></span>FeatureMerger.exe overview
 
@@ -35,9 +35,7 @@ passed to ImgGen.cmd to build an image from the new merged packages.
 
 To generate merged packages that comply with the (WSPC) for retail
 images, you must organize all your packages into a single feature
-manifest as described in [Windows Standard Packaging Configuration
-(WSPC) requirements for retail
-images](packaging-requirements-for-retail-images.md) and pass this
+manifest as described in [Windows Standard Packaging Configuration (WSPC) requirements for retail images](packaging-requirements-for-retail-images.md) and pass this
 feature manifest to FeatureMerger.exe. If you are starting with packages
 that are described in multiple feature manifest files, you can generate
 merged packages that comply with WSPC in a multi-step process:
@@ -49,9 +47,7 @@ merged packages that comply with WSPC in a multi-step process:
 2.  Manually create a new feature manifest file that references all of
     the merged packages generated in the first step. Make sure that the
     merged packages are referenced in the WSPC-compliant sections of the
-    feature manifest file, as described in [Windows Standard Packaging
-    Configuration (WSPC) requirements for retail
-    images](packaging-requirements-for-retail-images.md).
+    feature manifest file, as described in [Windows Standard Packaging Configuration (WSPC) requirements for retail images](packaging-requirements-for-retail-images.md).
 
 3.  Generate merged packages by running FeatureMerger.exe with the
     consolidated feature manifest file.
@@ -102,7 +98,7 @@ FeatureMerger.exe with a single feature manifest XML file.
 <td><p>The version of the merged package that is created using the format &quot;&lt;major&gt;.&lt;minor&gt;.&lt;hotfix&gt;.&lt;build&gt;&quot;.</p>
 <div class="alert">
 <strong>Note</strong>  
-<p>The package version must be incremented whenever a package is changed. For more info about package versioning and updates, see [Update requirements](..\..\service\mobile\update-requirements.md).</p>
+<p>The package version must be incremented whenever a package is changed. For more info about package versioning and updates, see [Update requirements](https://docs.microsoft.com/windows-hardware/service/mobile/update-requirements).</p>
 </div>
 <div>
  
@@ -228,8 +224,7 @@ XML file.
 
 ### <span id="Examples"></span><span id="examples"></span><span id="EXAMPLES"></span>Examples
 
-The following examples demonstrate FeatureMerger.exe syntax when
-specifying a feature manifest file.
+The following examples demonstrate FeatureMerger.exe syntax when specifying a feature manifest file.
 
 ``` syntax
 FeatureMerger C:\FM\OEMSampleFM.xml D:\FM\MergedPackages 8.0.0.1 D:\FM\MergedFMs /FMID:Phone /Languages:en-us 
@@ -281,7 +276,7 @@ FeatureMerger.exe with an FMFileList XML file.
 <td><p>The version of the merged package that is created using the format &quot;&lt;major&gt;.&lt;minor&gt;.&lt;hotfix&gt;.&lt;build&gt;&quot;.</p>
 <div class="alert">
 <strong>Note</strong>  
-<p>The package version must be incremented whenever a package is changed. For more info about package versioning and updates, see [Update requirements](p_phUpdate.update_requirements).</p>
+<p>The package version must be incremented whenever a package is changed. For more info about package versioning and updates, see [Update requirements](https://docs.microsoft.com/windows-hardware/service/mobile/update-requirements).</p>
 </div>
 <div>
  
@@ -490,12 +485,8 @@ This guidance also applies to the parameters that take paths, such as
 ## <span id="Package_code_signing"></span><span id="package_code_signing"></span><span id="PACKAGE_CODE_SIGNING"></span>Package code signing
 
 
-Like all package generation, merged package generation uses catalog
-signing. For catalog signing to work, a certificate must be specified.
-To specify a signing certificate for package generation, follow the
-steps in [Set up the signing
-environment](https://msdn.microsoft.com/library/windows/hardware/dn756804) and [Sign
-binaries and packages](p_phCodeSigning.sign_binaries_and_packages).
+Like all package generation, merged package generation uses catalog signing. For catalog signing to work, a certificate must be specified. 
+To specify a signing certificate for package generation, follow the steps in [Set up the signing environment](https://msdn.microsoft.com/library/windows/hardware/dn756804) and [Sign binaries and packages](https://msdn.microsoft.com/library/windows/hardware/dn789217.aspx).
 
 ## <span id="related_topics"></span>Related topics
 
@@ -503,16 +494,4 @@ binaries and packages](p_phCodeSigning.sign_binaries_and_packages).
 [Merging packages before imaging](merging-packages-before-imaging.md)
 
 
-[Windows Standard Packaging Configuration (WSPC) requirements for retail
-images](packaging-requirements-for-retail-images,md)
-
- 
-
- 
-
-[Send comments about this topic to
-Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_phPackaging\p_phPackaging%5D:%20Merging%20packages%20using%20FeatureMerger%20%20RELEASE:%20(11/14/2017)&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
-
-
-
-
+[Windows Standard Packaging Configuration (WSPC) requirements for retail images](packaging-requirements-for-retail-images.md)

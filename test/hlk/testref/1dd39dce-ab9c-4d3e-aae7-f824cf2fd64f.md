@@ -5,6 +5,12 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 7eb0e3d0-39b8-4fd3-b0a7-9e3cdf4a6295
+author: sapaetsc
+ms.author: sapaetsc
+ms.date: 10/15/17
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # <span id="p_hlk_test.1dd39dce-ab9c-4d3e-aae7-f824cf2fd64f"></span>WGF11 Precision

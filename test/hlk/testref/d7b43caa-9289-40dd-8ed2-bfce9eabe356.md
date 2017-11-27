@@ -5,6 +5,12 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 01a240da-3fad-4e10-8744-d8af7959f2ab
+author: sapaetsc
+ms.author: sapaetsc
+ms.date: 10/15/17
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # <span id="p_hlk_test.d7b43caa-9289-40dd-8ed2-bfce9eabe356"></span>DF - Fuzz sub-opens with streams test (Reliability)
