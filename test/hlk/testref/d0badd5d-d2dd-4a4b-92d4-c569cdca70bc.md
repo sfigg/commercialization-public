@@ -5,6 +5,12 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 28752ada-6d17-41e1-9b2d-333147d82c8e
+author: sapaetsc
+ms.author: sapaetsc
+ms.date: 10/15/17
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # <span id="p_hlk_test.d0badd5d-d2dd-4a4b-92d4-c569cdca70bc"></span>Camera Driver System Test - MediaCapture - ValidateCameraBasicSettingsError

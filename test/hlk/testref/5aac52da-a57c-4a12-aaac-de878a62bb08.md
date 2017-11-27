@@ -5,6 +5,12 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 0166773e-eeef-4089-8936-34b1fa91b293
+author: sapaetsc
+ms.author: sapaetsc
+ms.date: 10/15/17
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # <span id="p_hlk_test.5aac52da-a57c-4a12-aaac-de878a62bb08"></span>BitLocker Tpm And Recovery Password tests for AOAC devices with PCR\[7\]

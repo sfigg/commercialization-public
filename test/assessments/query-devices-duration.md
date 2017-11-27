@@ -1,3 +1,15 @@
+---
+title: Query Devices Duration
+description: On/Off assessment results for the query devices transition phase 
+author: v-denlee
+ms.author: v-denlee
+ms.date: 11/17/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
+localizationpriority: medium
+---
+
 # Query Devices Duration
 
 **Most Applicable to:** Driver developers
@@ -22,7 +34,7 @@ This metric captures the cumulative time that all drivers take to respond to pow
 
 **Analysis and Remediation Steps**
 
-You can identify a driver or drivers that significantly impact this metric by looking at the sub-metrics. Longer delays in the driver response durations usually produce issues that are specific to a given driver. When such an issue is generated, follow the link inside the issue to see advanced issue details. When an issue is not generated, subsequent analysis in WPA is required; this is beyond the scope of this document. See [Best Practices for Time-Critical Tasks](#fs-analysis) for a list of common best practices.
+You can identify a driver or drivers that significantly impact this metric by looking at the sub-metrics. Longer delays in the driver response durations usually produce issues that are specific to a given driver. When such an issue is generated, follow the link inside the issue to see advanced issue details. When an issue is not generated, subsequent analysis in WPA is required; this is beyond the scope of this document. See [Best Practices for Time-Critical Tasks](results-for-the-onoff-assessments.md#best-practices-for-time-critical-tasks) in the [Results for the On/Off Assessments](results-for-the-onoff-assessments.md) topic for a list of common best practices.
 
 > [!NOTE]
 > If a driver owns a power policy for a device, it generates a Device Power IRP in response to receiving a System Power IRP. Drivers should not wait to complete the System IRP until the Device IRP is completed because that wait can prevent other devices from receiving their System IRPs. This series of waits cause serialization delays and increases the overall suspend time.

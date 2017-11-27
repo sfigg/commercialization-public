@@ -371,25 +371,10 @@ You can use KeyboardFilterService in to suppress undesirable key presses or key 
 </tbody>
 </table>
 
- 
-
 ## Applies to
 
-
-To determine whether a component applies to the image you’re building, load your image into Windows SIM and search for the component or setting name. For information on how to view components and settings, see [Configure Components and Settings in an Answer File](https://msdn.microsoft.com/library/windows/hardware/dn915078).
+To determine whether a component applies to the image you’re building, load your image into Windows SIM and search for the component or setting name. For information on how to view components and settings, see [Configure Components and Settings in an Answer File](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/wsim/configure-components-and-settings-in-an-answer-file).
 
 ## Related topics
 
-
-[Keyboard filter](https://msdn.microsoft.com/library/windows/hardware/mt587088)
-
- 
-
- 
-
-
-
-
-
-
-
+[Keyboard filter](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/keyboardfilter)

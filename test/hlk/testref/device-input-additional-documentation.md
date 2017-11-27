@@ -5,6 +5,12 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: e82b6f06-e38b-4afc-8200-25bbdd6eb4d8
+author: sapaetsc
+ms.author: sapaetsc
+ms.date: 10/15/17
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # Device.Input additional documentation

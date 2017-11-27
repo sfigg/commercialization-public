@@ -5,6 +5,12 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4fdf912f-0695-4e95-9db1-b02492b7b543
+author: sapaetsc
+ms.author: sapaetsc
+ms.date: 10/15/17
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # <span id="p_hlk_test.7b6df22e-fc68-43dc-aa10-7bbbcb4fbbbf"></span>ScardSpecificWithPower

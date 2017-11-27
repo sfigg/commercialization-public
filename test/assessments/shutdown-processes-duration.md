@@ -1,3 +1,15 @@
+---
+title: Shutdown Processes Duration
+description: On/Off assessment results for the shutdown processes transition phase 
+author: v-denlee
+ms.author: v-denlee
+ms.date: 11/17/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
+localizationpriority: medium
+---
+
 # Shutdown Processes Duration
 
 **Most Applicable to:** Application developers
@@ -32,11 +44,11 @@ Each process that has a UI thread can delay system shutdown by delaying its resp
 
 **Analysis and Remediation Steps**
 
-You can identify processes that most significantly impact this metric by using the [Find the Largest Contributor](#fs-issues) technique.
+You can identify processes that most significantly impact this metric by using the [Find the Largest Contributor](results-for-the-onoff-assessments.md#issues) technique in the [Results for the On/Off Assessments](results-for-the-onoff-assessments.md) topic.
 
 If possible, remove applications from the startup path. Because the assessment reboots before it performs measurements, the only applications that are running at shutdown are the applications that began at startup. As a best practice, startup applications should be kept to a minimum. If an unessential application is causing delays, consider removing it from the list of startup applications.
 
-Find the possible reasons that responses to WM\_QUERYENDSESSION message or WM\_ENDSESSION can be delayed, and troubleshoot and fix the underlying issues. See [Best Practices for Time-Critical Tasks](#fs-analysis) for a list of common best practices.
+Find the possible reasons that responses to WM\_QUERYENDSESSION message or WM\_ENDSESSION can be delayed, and troubleshoot and fix the underlying issues. See [Best Practices for Time-Critical Tasks](results-for-the-onoff-assessments.md#best-practices-for-time-critical-tasks) in the [Results for the On/Off Assessments](results-for-the-onoff-assessments.md) topic for a list of common best practices.
 
 **Additional Information**
 

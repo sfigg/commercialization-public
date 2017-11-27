@@ -1,3 +1,15 @@
+---
+title: Main Path Boot Duration & Main Path Resume Duration
+description: On/Off assessment results for the main path boot & main path resume transition phases
+author: v-denlee
+ms.author: v-denlee
+ms.date: 11/17/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
+localizationpriority: medium
+---
+
 # Main Path Boot Duration & Main Path Resume Duration
 
 **Relevant Assessments:**
@@ -7,7 +19,7 @@
 -   Standby Performance
 -   Hibernate Performance
 
-This metric measures the time from when the computer begins start-up until the user’s Desktop is visible. This metric captures the time from the end of BIOS Initialization until the Windows 8 UI is shown, and it does not include the Post On/Off phase.
+This metric measures the time from when the computer begins start-up until the user’s Desktop is visible. This metric captures the time from the end of [BIOS Initialization](bios-initialization-duration.md) until the Windows 8 UI is shown, and it does not include the [Post On/Off](post-on-off-duration.md) phase.
 
 **Detailed Sub-metrics**
 

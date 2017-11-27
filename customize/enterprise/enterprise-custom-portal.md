@@ -33,10 +33,6 @@ You can lock down your Windows 10 desktop device by using the lock down features
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td><p>Block connecting to USB devices</p></td>
-<td><p>You can use MDM and group policies to [prevent users from attaching USB devices](https://msdn.microsoft.com/en-us/library/bb530324.aspx) which may expose a security risk for your device.</p></td>
-</tr>
 <tr class="even">
 <td><p>Create a kiosk experience</p></td>
 <td><p>You can create a single use device using enterprise desktop customizations. One example of a single use device is a [kiosk application](create-a-kiosk-image.md), where users interact with a single application that you select, like a catalog of items for sale at the entrance to your store. You can create an immersive experience complete with videos telling the story of your catalog items and how they are used, along with a way for customers to purchase items right at the kiosk.</p>
@@ -44,19 +40,11 @@ You can lock down your Windows 10 desktop device by using the lock down features
 </tr>
 <tr class="odd">
 <td><p>Customize the logon experience</p></td>
-<td><p>You can use the [Custom Logon](custom-logon.md) feature to suppress Windows 10 UI elements that relate to the Welcome screen and shutdown screen. For example, you can [supress all elements of the Welcome screen UI](complementary-features-to-custom-logon.md) and provide a custom logon UI. You can suppress the ease of access option on the logon screen. You can also suppress the Blocked Shutdown Resolver (BSDR) screen and automatically end applications while the OS waits for applications to close before a shutdown.</p></td>
-</tr>
-<tr class="even">
-<td><p>Disable the camera</p></td>
-<td><p>In some circumstances, you may want or need to disable the camera on for privacy purposes. You can disable the camera in Settings&gt;Privacy, or by using [MDM policy](https://msdn.microsoft.com/en-us/library/windows/hardware/dn904962.aspx#camera-allowcamera).</p></td>
+<td><p>You can use the [Custom Logon](custom-logon.md) feature to suppress Windows 10 UI elements that relate to the Welcome screen and shutdown screen. For example, you can [suppress all elements of the Welcome screen UI](complementary-features-to-custom-logon.md) and provide a custom logon UI. You can suppress the ease of access option on the logon screen. You can also suppress the Blocked Shutdown Resolver (BSDR) screen and automatically end applications while the OS waits for applications to close before a shutdown.</p></td>
 </tr>
 <tr class="odd">
 <td><p>Log in automatically</p></td>
-<td><p>When your device restarts, whether from an update or power outage, you can log on the assigned access account manually or you can configure the device to [log on to the assigned access account automatically](create-a-kiosk-image.md).</p></td>
-</tr>
-<tr class="even">
-<td><p>Prevent use of removable media</p></td>
-<td><p>You can use Device Installation Restrictions to prevent users from installing all devices which could expose malware to your device.</p></td>
+<td><p>When your device restarts, whether from an update or power outage, you can log on the assigned access account manually or you can configure the device to [log on to the assigned access account automatically](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/create-a-kiosk-image#assigned-access).</p></td>
 </tr>
 <tr class="odd">
 <td><p>Protect storage media from being written to</p></td>
@@ -68,7 +56,7 @@ You can lock down your Windows 10 desktop device by using the lock down features
 </tr>
 <tr class="odd">
 <td><p>Restrict access to apps</p></td>
-<td><p>[AppLocker](https://msdn.microsoft.com/en-us/library/windows/hardware/dn920019.aspx)helps to secure your system by preventing the execution of unwanted applications.</p></td>
+<td><p>[AppLocker](https://docs.microsoft.com/en-us/windows/client-management/mdm/applocker-csp)helps to secure your system by preventing the execution of unwanted applications.</p></td>
 </tr>
 <tr class="even">
 <td><p>Suppress unwanted keyboard entries</p></td>
@@ -85,6 +73,10 @@ You can lock down your Windows 10 desktop device by using the lock down features
 <tr class="odd">
 <td><p>Turn off the power button</p></td>
 <td><p>If you don’t want customers to be able to turn off your device by pushing the power button, you should turn [disable it](create-a-kiosk-image.md#lockdown-settings).</p></td>
+</tr>
+<tr class="odd">
+<td><p>Block connecting to USB devices</p></td>
+<td><p>You can use MDM Policy to further control the device, such as disabling the camera, or disallowing a connection to a device attached via USB. For more details, see [Policy Configuration Service Provider](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-configuration-service-provider).</p></td>
 </tr>
 </tbody>
 </table>

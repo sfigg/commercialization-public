@@ -5,6 +5,12 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8ab1468d-9c7d-4328-b3d3-ac88f68659e6
+author: sapaetsc
+ms.author: sapaetsc
+ms.date: 10/15/17
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # <span id="p_hlk_test.fbcd81c7-5f9d-4bad-b5b3-5dfbb8eb78f5"></span>Pixel Shaders Ver 2.0 Landscape - Starburst (WoW64)

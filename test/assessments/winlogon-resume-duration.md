@@ -1,3 +1,15 @@
+---
+title: Winlogon Resume Duration
+description: On/Off assessment results for the Winlogon resume transition phase 
+author: v-denlee
+ms.author: v-denlee
+ms.date: 11/17/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
+localizationpriority: medium
+---
+
 # Winlogon Resume Duration
 
 **Most Applicable to:** Winlogon subscriber developers, group policy script owners, system administrators, credential provider writers

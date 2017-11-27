@@ -17,6 +17,9 @@ You can use Keyboard Filter to suppress undesirable key presses or key combinati
 
 The Keyboard Filter feature works with physical keyboards, the Windows on-screen keyboard, and the touch keyboard. Keyboard Filter also detects dynamic layout changes, such as switching from one language set to another, and continues to suppress keys correctly, even if the location of suppressed keys has changed on the keyboard layout.
 
+> [!Note]
+> Keyboard filter is not supported in a remote desktop session.
+
 ## Requirements
 
 Windows 10 Enterprise or Windows 10 Education.
@@ -47,8 +50,8 @@ Turning on an off Keyboard Filter requires that you restart your device. Keyboar
 
 ### Configure Keyboard using Unattend
 
-1. You can configure the Unattend settings in the [Microsoft-Windows-Embedded-KeyboardFilterService](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/customize/desktop/unattend/microsoft-windows-embedded-keyboardfilterservice) component to add Keyboard Filter features to your image during the design or imaging phase.
-1. You can manually create an Unattend answer file or use Windows System Image Manager (Windows SIM) to add the appropriate settings to your answer file. For more information about the keyboard filter settings and XML examples, see the settings in [Microsoft-Windows-Embedded-KeyboardFilterService](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/customize/desktop/unattend/microsoft-windows-embedded-keyboardfilterservice).
+1. You can configure the Unattend settings in the [Microsoft-Windows-Embedded-KeyboardFilterService](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-embedded-keyboardfilterservice) component to add Keyboard Filter features to your image during the design or imaging phase.
+1. You can manually create an Unattend answer file or use Windows System Image Manager (Windows SIM) to add the appropriate settings to your answer file. For more information about the keyboard filter settings and XML examples, see the settings in [Microsoft-Windows-Embedded-KeyboardFilterService](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-embedded-keyboardfilterservice).
 
 ### Turn on and configure Keyboard Filter using Windows Configuration Designer
 

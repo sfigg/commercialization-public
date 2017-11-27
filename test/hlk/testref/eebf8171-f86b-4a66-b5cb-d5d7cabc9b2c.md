@@ -5,6 +5,12 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: d11b7b2c-7598-4e7e-91fd-40c728979773
+author: sapaetsc
+ms.author: sapaetsc
+ms.date: 10/15/17
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # <span id="p_hlk_test.eebf8171-f86b-4a66-b5cb-d5d7cabc9b2c"></span>WGF11 Geometry Shader

@@ -5,6 +5,12 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8b41a21e-8732-442e-81a8-1722d2532b27
+author: sapaetsc
+ms.author: sapaetsc
+ms.date: 10/15/17
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # <span id="p_hlk_test.a46ffce1-ef3b-42fb-bebf-2aed795f69e6"></span>UCSI commands - Get PDOs, partner Sink Capabilities

@@ -5,6 +5,12 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: c750c9e5-7d8a-4bf4-90ef-6b56fd317171
+author: sapaetsc
+ms.author: sapaetsc
+ms.date: 10/15/17
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # <span id="p_hlk_test.aa7ece99-abe2-44d3-8c0f-4dfb9a24d9e6"></span>CoreSys WMV playback test 34

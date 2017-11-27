@@ -1,4 +1,16 @@
-# Total Boot \[Excluding BIOS\] Duration & Total Resume \[Excluding BIOS\] Duration
+---
+title: Total Boot (Excluding BIOS) Duration & Total Resume (Excluding BIOS) Duration
+description: On/Off assessment results for the total boot (excluding BIOS) & total resume (excluding BIOS) transition phases
+author: v-denlee
+ms.author: v-denlee
+ms.date: 11/17/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
+localizationpriority: medium
+---
+
+# Total Boot (Excluding BIOS) Duration & Total Resume (Excluding BIOS) Duration
 
 **Relevant Assessments:**
 
@@ -7,7 +19,7 @@
 -   Standby Performance
 -   Hibernate Performance
 
-This metric measures the time that the computer spends starting up. This metric captures the time from the end of BIOS Initialization to the end of the Post On/Off phase, which ends when the system reaches an idle state.
+This metric measures the time that the computer spends starting up. This metric captures the time from the end of [BIOS Initialization](bios-initialization-duration.md) to the end of the [Post On/Off](post-on-off-duration.md) phase, which ends when the system reaches an idle state.
 
 **Detailed Sub-metrics**
 

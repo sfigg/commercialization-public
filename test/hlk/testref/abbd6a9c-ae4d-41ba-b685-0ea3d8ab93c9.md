@@ -5,6 +5,12 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 561672d9-69a3-428f-ad15-bed0df454f82
+author: sapaetsc
+ms.author: sapaetsc
+ms.date: 10/15/17
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # <span id="p_hlk_test.abbd6a9c-ae4d-41ba-b685-0ea3d8ab93c9"></span>D2D - DImage Effect Tests - LayersAndClips

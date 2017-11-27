@@ -5,6 +5,12 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 6fe30ae9-5c3b-46e4-ab86-7737d3a66570
+author: sapaetsc
+ms.author: sapaetsc
+ms.date: 10/15/17
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # <span id="p_hlk_test.e8dfa3cc-a19f-4e97-b4da-aa6f7d32697d"></span>OPM - Protocol Test (WoW64)

@@ -68,29 +68,29 @@ The following table describes the metrics that may be available in an assessment
 | Standby Performance Assessment             | This metric captures the time from the start of the suspend phase to the transition to a lower power state (S3).                                                |
 | Hibernate Performance Assessment           | This metric captures the time from hibernate to the end of writing the hiberfile to disk and the transition to a lower power state (S4).                        |
 
-You can view On/Off assessment metrics for the following operations:
+You can view On/Off assessment metrics for the following transition phases:
 
+-   [BIOS Initialization Duration](bios-initialization-duration.md)
+-   [Boot Manager](boot-manager.md)
+-   [Explorer Initialization Duration](explorer-initialization-duration.md)
+-   [Flush Storage Volumes Duration](flush-storage-volumes-duration.md)
+-   [Hiberfile Read Duration](hiberfile-read-duration.md)
+-   [Hiberfile Write Duration](hiberfile-write-duration.md)
+-   [Main Path Boot Duration & Main Path Resume Duration](main-path-boot-duration-and-main-path-resume-duration.md)
+-   [Operating System Selection Menu Duration](operating-system-selection-menu-duration.md)
+-   [Post On/Off Duration](post-on-off-duration.md)
+-   [Query Devices Duration](query-devices-duration.md)
+-   [Resume Devices Duration](resume-devices-duration.md)
 -   [Shutdown Duration & Suspend Duration](shutdown-duration-and-suspend-duration.md)
--   [User Session Shutdown Duration](user-session-shutdown-duration.md)
 -   [Shutdown Processes Duration](shutdown-processes-duration.md)
--   [Winlogon Suspend Duration & Winlogon Notifications Duration](winlogon-suspend-duration-and-winlogon-notifications-duration.md)
+-   [Superfetch Prepare Memory Duration](superfetch-prepare-memory-duration.md)
+-   [Suspend Devices Duration](suspend-devices-duration.md)
 -   [Suspend Processes Duration](suspend-processes-duration.md)
 -   [Suspend Services Duration](suspend-services-duration.md)
--   [Superfetch Prepare Memory Duration](superfetch-prepare-memory-duration.md)
--   [Query Devices Duration](query-devices-duration.md)
--   [Flush Storage Volumes Duration](flush-storage-volumes-duration.md)
--   [Suspend Devices Duration](suspend-devices-duration.md)
--   [Hiberfile Write Duration](hiberfile-write-duration.md)
--   [BIOS Initialization Duration](bios-initialization-duration.md)
--   [Total Boot \[Excluding BIOS\] Duration & Total Resume \[Excluding BIOS\] Duration](total-boot-excluding-bios-duration-and-total-resume-excluding-bios-duration.md)
--   [Main Path Boot Duration & Main Path Resume Duration](main-path-boot-duration-and-main-path-resume-duration.md)
--   [Boot Manager](boot-manager.md)
--   [Hiberfile Read Duration](hiberfile-read-duration.md)
--   [Resume Devices Duration](resume-devices-duration.md)
--   [Operating System Selection Menu Duration](operating-system-selection-menu-duration.md)
+-   [Total Boot (Excluding BIOS) Duration & Total Resume (Excluding BIOS) Duration](total-boot-excluding-bios-duration-and-total-resume-excluding-bios-duration.md)
+-   [User Session Shutdown Duration](user-session-shutdown-duration.md)
 -   [Winlogon Resume Duration](winlogon-resume-duration.md)
--   [Explorer Initialization Duration](explorer-initialization-duration.md)
--   [Post On/Off Duration](post-on-off-duration.md)
+-   [Winlogon Suspend Duration & Winlogon Notifications Duration](winlogon-suspend-duration-and-winlogon-notifications-duration.md)
 
 > [!NOTE]
 > If you enabled the Enable Minifilter Diagnostic Mode setting, the assessment results will include minifilter metrics. For more information about minifilter metrics and results, see [Minifilter Diagnostics](minifilter-diagnostics.md).
@@ -104,7 +104,7 @@ The On/Off Transition Performance assessments perform advanced issue analysis an
 
 Open the assessment results file in Windows Assessment Console and expand the corresponding parent metric. The child sub-metrics typically provide information on specific components that affect the parent metric.
 
-For example, consider the [Shutdown Processes Duration](#oo-shutdown-processes) metric. You can expand the metric to view three sub-metric tables for this phase. The first two tables show the CPU and disk utilization, and the third table shows the durations of individual processes that are being shut down.
+For example, consider the [Shutdown Processes Duration](shutdown-processes-duration.md) metric. You can expand the metric to view three sub-metric tables for this phase. The first two tables show the CPU and disk utilization, and the third table shows the durations of individual processes that are being shut down.
 
 Additional columns, such as the **Detail** column, provide more details for the sub-metrics. In **User Session Shutdown Processes**, the **Detail** column shows a PID.
 
@@ -113,7 +113,7 @@ Additional columns, such as the **Detail** column, provide more details for the 
 
 Windows Assessment Console allows you to sort the sub-metrics list by any data column (except for the top level Fast Startup phase lists, which are sorted by phase order during shutdown/boot).
 
-For example, in the expanded process list for the [User Session Shutdown Processes](#oo-user-session-shutdown-duration) phase, right-click the table header and then choose **Sort rows descending**.
+For example, in the expanded process list for the [User Session Shutdown Processes](user-session-shutdown-duration.md) phase, right-click the table header and then choose **Sort rows descending**.
 
 You can use this technique for multiple top level phase durations.
 
