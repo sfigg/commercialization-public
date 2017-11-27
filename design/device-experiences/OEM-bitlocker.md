@@ -8,21 +8,20 @@ MSHAttr:
 
 # BitLocker drive encryption in Windows 10 for OEMs
 
-BitLocker drive encryption in Windows 10 consists of two parts: **BitLocker drive encryption** and **BitLocker automatic device encryption**. BitLocker drive encryption provides offline data and operating system protection by ensuring that the drive is not tampered with with the operating system is offline. BitLocker drive encryption uses a TPM, either discrete or firmware, that supports the Static Root of Trust Measurement as defined by the [Trusted Computing Group](https://trustedcomputinggroup.org/). 
+BitLocker drive encryption provides offline data and operating system protection by ensuring that the drive is not tampered with the operating system is offline. BitLocker drive encryption uses a TPM, either discrete or firmware, that supports the Static Root of Trust Measurement as defined by the [Trusted Computing Group](https://trustedcomputinggroup.org/). 
 
 ## BitLocker drive encryption hardware requirements
 BitLocker drive encryption uses a system partition separate from the Windows partition. The BitLocker system partition must meet the following requirements.
 - The BitLocker system partition is configured as the active partition.
 - The BitLocker system partition must not be encrypted.
-- The BitLocker system partition must not be used to store user files.
-- The Bitlocker system partition must have at least 250 MB of free space, above and beyond any space used by required files. This additional system partition can be used to host Windows Recovery Environment (RE) and OEM tools (provided by the OEM), so long as the partition still meets the 250 MB free space requirement. 
+- The BitLocker system partition must have at least 250 MB of free space, above and beyond any space used by required files. This additional system partition can be used to host Windows Recovery Environment (RE) and OEM tools (provided by the OEM), so long as the partition still meets the 250 MB free space requirement. 
 
 For more information see [System.Client.SystemPartition](https://docs.microsoft.com/en-us/windows-hardware/design/compatibility/systems#systemclientsystempartition), and [Hard Drives and Partitions](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/hard-drives-and-partitions).
 
 ## BitLocker automatic device encryption
 BitLocker automatic device encryption uses BitLocker drive encryption technology to automatically encrypt internal drives after the user completes the Out Of Box Experience (OOBE) on InstantGo or HSIT compliant hardware.  
 
-**Note:** BitLocker automatic device encryption is enabled only after users sign in with a **Microsoft Account** or an **Azure Active Directory** account. BitLocker automatic device encryption is not enabled with local accounts.
+**Note:** BitLocker automatic device encryption is enabled only after users sign in with a **Microsoft Account** or an **Azure Active Directory** account. BitLocker automatic device encryption is not enabled with local accounts, in which case BitLocker can be manually using the BitLocker Control Panel.
 
 ## BitLocker automatic device encryption hardware requirements
 BitLocker automatic device encryption is enabled when:
