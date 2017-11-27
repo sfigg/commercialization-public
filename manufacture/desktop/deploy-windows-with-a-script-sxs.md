@@ -61,7 +61,8 @@ The sample scripts include steps that detect the firmware type (the newer UEFI-b
 
     The script **ApplyImage.bat** uses diskpart scripts to create the partitions and define the partition layout. These scripts must be placed in the same folder. You can update these scripts to change the partition sizes.
     
-    > [!Note] If you're going to be capturing and deploying your final image as an FFU, choose the options to not configure recovery. Recovery can be configured later after the Windows partition has been expanded.
+    > [!Note] 
+    > If you're going to be capturing and deploying your final image as an FFU, choose the options to not configure recovery. Recovery can be configured later after the Windows partition has been expanded.
 
     ```
     D:
