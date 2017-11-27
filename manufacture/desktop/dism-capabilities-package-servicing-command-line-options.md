@@ -64,15 +64,15 @@ Note, each of these commands requires either the **/Online** or **/Image:**&lt;*
 <p><strong>DISM /Online /Get-Capabilities</strong></p></td>
 </tr>
 <tr class="odd">
-<td align="left"><strong>/Get-CapabilityInfo /CapabilityName:</strong>&lt;<em>capability_name</em>&gt;</td>
+<td align="left"><p><strong>/Get-CapabilityInfo</strong></p> 
+<p><Strong>/CapabilityName:</strong>&lt;<em>capability_name</em>&gt;</p></td>
 <td align="left"><p>Get information about a specific capability.</p><p>Example:</p>
 <p><strong>DISM /Online /Get-CapabilityInfo
  /CapabilityName:Language.Basic~\~\~en-US~0.0.1.0</strong></p></td>
 </tr>
 <tr class="even">
-<td align="left"><strong>/Remove-Capability</strong>
-<p>Additional argument required:</p>
-<strong>/CapabilityName:</strong>&lt;<em>capability_name_in_image</em>&gt;</td>
+<td align="left"><p><strong>/Remove-Capability</strong></p>
+<p><strong>/CapabilityName:</strong>&lt;<em>capability_name</em>&gt;</p></td>
 <td align="left"><p>Example:</p><p><strong>Dism /Online /Remove-Capability /CapabilityName:Language.Basic~\~\~en-US~0.0.1.0</strong></p><p>Example:</p>
 <p><strong>Dism /Image:C:\test\offline /Remove-Capability /CapabilityName:Language.Basic~\~\~en-US~0.0.1.0</strong></p></td>
 </tr>
