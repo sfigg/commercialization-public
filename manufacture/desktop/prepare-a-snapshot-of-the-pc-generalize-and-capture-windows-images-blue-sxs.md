@@ -148,7 +148,7 @@ This step is required when you're capturing images to apply to other PCs.
 
     The Sysprep tool reseals the device. This process can take several minutes. After the process completes, the device shuts down automatically.
 
-    **Warning**: If you're using [siloed provisioning packages (SPPs)](add-desktop-apps-with-spps-sxs.md), do not set the image to boot to audit mode again (sysprep /audit). There's a known bug in Windows 10, version 1607 that makes the image unbootable if you do this. Instead, set it to boot to OOBE, and if you need to boot to audit again, [add an answer file with the Mode:Audit setting](update-windows-settings-and-scripts-create-your-own-answer-file-sxs.md). This will be fixed in future versions.
+    **Warning**: If you're using [siloed provisioning packages (SPPs)](add-desktop-apps-with-spps-sxs.md), do not set the image to boot to audit mode again (sysprep /audit). Instead, set it to boot to OOBE, and if you need to boot to audit again, [add an answer file with the Mode:Audit setting](update-windows-settings-and-scripts-create-your-own-answer-file-sxs.md). This will be fixed in future versions.
 
 2.  Boot the device into Windows PE. To do this, you may need to press the key that opens the boot-device selection menu for the device (for example, the **Esc** key or **Volume Up** key).
 
@@ -194,7 +194,7 @@ This step is required when you're capturing images to apply to other PCs.
     DISM /Cleanup-Image /Image=C:\ /StartComponentCleanup /ResetBase /ScratchDir:C:\Temp
     ```
 
-    where *C* is the drive letter of the Windows partition. Beginning with Windows 10, version 1607, you can specify the /Defer parameter with /Resetbase to defer any long-running cleanup operations to the next automatic maintenance. But we highly recommend you **only** use /Defer as an option in the factory where DISM /Resetbase requires more than 30 minutes to complete.
+    where *C* is the drive letter of the Windows partition. You can specify the /Defer parameter with /Resetbase to defer any long-running cleanup operations to the next automatic maintenance. But we highly recommend you **only** use /Defer as an option in the factory where DISM /Resetbase requires more than 30 minutes to complete.
 
 ### <span id="Capture_the_image"></span><span id="capture_the_image"></span><span id="CAPTURE_THE_IMAGE"></span>Step 7: Capture the image
 
@@ -215,6 +215,9 @@ This step is required when you're capturing images to apply to other PCs.
 	net use N: \\server\share
 	copy C:\WindowsWithFinalChanges.wim N:\Images\WindowsWithFinalChanges.wim
 	```
+
+> [!Note]
+> You can also choose to capture an image of the whole drive, including partition information, in a [full flash update image(FFU)](deploy-windows-using-full-flash-update--ffu.md).  See [DISM Image Management Command-Line Options](dism-image-management-command-line-options-s14.md#capture-ffu) for available command line options for capturing an FFU.
 
 ## <span id="Try_it_out"></span>Try it out
 

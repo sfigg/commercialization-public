@@ -101,7 +101,7 @@ Include a recovery image for your final images, but it's not required for these 
 
 Apply the Windows Recovery Environment (Windows RE) image. These tools help repair common causes of unbootable operating systems. The image is stored in a separate drive partition. The script **ApplyRecovery.bat** uses the diskpart scripts: HidePartitions-UEFI.txt and HidePartitions-BIOS.txt to set up this partition. These scripts must be placed in the same folder as ApplyRecovery.bat.
 
-When you apply an FFU, you can choose to configure the recovery partition as ppart of applying the FFU.
+When you apply an FFU, you can choose to configure the recovery partition when you apply the FFU.
 
 ```
 D:\Deployment\ApplyRecovery.bat
