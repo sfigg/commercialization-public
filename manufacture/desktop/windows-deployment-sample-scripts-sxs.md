@@ -47,15 +47,15 @@ Use this script applies a Windows image to a new device.
 ```
 @echo Apply-Image.bat
 @echo     Run from the reference device in the WinPE environment.
-@echo
+@echo.
 @echo     This script erases the primary hard drive and applies a new image.
-@echo
+@echo.
 @echo	  Make sure that this script is run from the folder that contains the
 @echo	  supporting scripts
 @echo.
 @echo UPDATE (November 2017)
 @echo * Added support for FFU deployments.	
-@echo
+@echo.
 @echo UPDATE (JULY 2016):
 @echo * This script stops just after applying the image.
 @echo   This gives you an opportunity to add siloed provisioning packages (SPPs)
@@ -138,9 +138,9 @@ W:\Windows\System32\bcdboot W:\Windows /s S:
 @echo   * Add Windows Classic apps (optional):
 @echo       DISM /Apply-SiloedPackage /ImagePath:W:\ 
 @echo            /PackagePath:"D:\App1.spp" /PackagePath:"D:\App2.spp"  ...
-@echo
+@echo.
 @echo   * Configure the recovery partition with ApplyRecovery.bat
-@echo      
+@echo.      
 @echo   * Reboot:
 @echo       exit
 @GOTO END
@@ -252,7 +252,6 @@ format quick fs=ntfs label="Windows"
 assign letter="W"
 list volume
 exit
-
 ```
 
 #### <span id="CreatePartitions-BIOS.txt"></span> CreatePartitions-BIOS.txt
@@ -365,11 +364,11 @@ xcopy /h W:\Windows\System32\Recovery\Winre.wim R:\Recovery\WindowsRE\
 W:\Windows\System32\Reagentc /Setreimage /Path R:\Recovery\WindowsRE /Target W:\Windows
 @echo  *********************************************************************
 @echo  == If Compact OS, single-instance the recovery provisioning package ==
-@echo     ---
+@echo.    
 @echo	  *Note: this step only works if you created a ScanState package called
 @echo	   USMT.ppkg as directed in the OEM Deployment lab. If you aren't
 @echo	   following the steps in the lab, choose N.
-@echo      ---
+@echo.     
 @echo     Options: N: No
 @echo              Y: Yes
 @echo              D: Yes, but defer cleanup steps to first boot.
@@ -419,11 +418,11 @@ xcopy /h %recoveryfolder%Winre.wim R:\Recovery\WindowsRE\
 %windowsdrive%Windows\System32\Reagentc /Setreimage /Path R:\Recovery\WindowsRE /Target %windowsdrive%Windows
 @echo  *********************************************************************
 @echo  == If Compact OS, single-instance the recovery provisioning package ==
-@echo     ---
+@echo.     
 @echo	  *Note: this step only works if you created a ScanState package called
 @echo	   USMT.ppkg as directed in the OEM Deployment lab. If you aren't
 @echo	   following the steps in the lab, choose N.
-@echo     ---
+@echo.    
 @echo     Options: N: No
 @echo              Y: Yes
 @echo              D: Yes, but defer cleanup steps to first boot.
