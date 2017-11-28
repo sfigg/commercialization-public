@@ -365,6 +365,11 @@ xcopy /h W:\Windows\System32\Recovery\Winre.wim R:\Recovery\WindowsRE\
 W:\Windows\System32\Reagentc /Setreimage /Path R:\Recovery\WindowsRE /Target W:\Windows
 @echo  *********************************************************************
 @echo  == If Compact OS, single-instance the recovery provisioning package ==
+@echo     ---
+@echo	  *Note: this step only works if you created a ScanState package called
+@echo	   USMT.ppkg as directed in the OEM Deployment lab. If you aren't
+@echo	   following the steps in the lab, choose N.
+@echo      ---
 @echo     Options: N: No
 @echo              Y: Yes
 @echo              D: Yes, but defer cleanup steps to first boot.
@@ -373,8 +378,8 @@ W:\Windows\System32\Reagentc /Setreimage /Path R:\Recovery\WindowsRE /Target W:\
 @SET /P COMPACTOS=Deploy as Compact OS? (Y, N, or D):
 @if %COMPACTOS%.==y. set COMPACTOS=Y
 @if %COMPACTOS%.==d. set COMPACTOS=D
-if %COMPACTOS%.==Y. dism /Apply-CustomDataImage /CustomDataImage:W:\Recovery\Customizations\USMT.ppkg /ImagePath:W:\ /SingleInstance
-if %COMPACTOS%.==D. dism /Apply-CustomDataImage /CustomDataImage:W:\Recovery\Customizations\USMT.ppkg /ImagePath:W:\ /SingleInstance /Defer
+@if %COMPACTOS%.==Y. dism /Apply-CustomDataImage /CustomDataImage:W:\Recovery\Customizations\USMT.ppkg /ImagePath:W:\ /SingleInstance
+@if %COMPACTOS%.==D. dism /Apply-CustomDataImage /CustomDataImage:W:\Recovery\Customizations\USMT.ppkg /ImagePath:W:\ /SingleInstance /Defer
 @echo  *********************************************************************
 @echo == Hiding the recovery tools partition
 if %Firmware%==0x1 diskpart /s %~dp0HideRecoveryPartitions-BIOS.txt
@@ -392,8 +397,8 @@ GOTO END
 :CREATEFFURECOVERY
 @echo *********************************************************************
 @echo == Creating the recovery tools partition
-if %Firmware%==0x1 diskpart /s CreateRecoveryPartitions-BIOS.txt
-if %Firmware%==0x2 diskpart /s CreateRecoveryPartitions-UEFI.txt
+@if %Firmware%==0x1 diskpart /s CreateRecoveryPartitions-BIOS.txt
+@if %Firmware%==0x2 diskpart /s CreateRecoveryPartitions-UEFI.txt
 @echo finding the Windows Drive
 @echo  *********************************************************************
 @IF EXIST C:\Windows SET windowsdrive=C:\
@@ -411,9 +416,14 @@ md R:\Recovery\WindowsRE
 xcopy /h %recoveryfolder%Winre.wim R:\Recovery\WindowsRE\
 @echo  *********************************************************************
 @echo  == Register the location of the recovery tools ==
-@%windowsdrive%Windows\System32\Reagentc /Setreimage /Path R:\Recovery\WindowsRE /Target %windowsdrive%Windows
+%windowsdrive%Windows\System32\Reagentc /Setreimage /Path R:\Recovery\WindowsRE /Target %windowsdrive%Windows
 @echo  *********************************************************************
 @echo  == If Compact OS, single-instance the recovery provisioning package ==
+@echo     ---
+@echo	  *Note: this step only works if you created a ScanState package called
+@echo	   USMT.ppkg as directed in the OEM Deployment lab. If you aren't
+@echo	   following the steps in the lab, choose N.
+@echo     ---
 @echo     Options: N: No
 @echo              Y: Yes
 @echo              D: Yes, but defer cleanup steps to first boot.
@@ -436,7 +446,7 @@ xcopy /h %recoveryfolder%Winre.wim R:\Recovery\WindowsRE\
 @echo      All done!
 @echo      Disconnect the USB drive from the reference device.
 @echo      Type exit to reboot.
-@echo.
+@GOTO END
 :END
 ```
 
@@ -490,7 +500,6 @@ assign letter="R"
 set id=27
 list volume
 exit
-
 ```
 
 #### HideRecoveryPartitions-UEFI.txt
