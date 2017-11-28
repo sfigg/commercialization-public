@@ -302,7 +302,7 @@ exit
 
 #### <span id="CreatePartitions-BIOS-FFU.txt"></span> CreatePartitions-BIOS-FFU.txt
 
-This script is based off of CreatePartitions-BIOS.txt, but it does not create a recovery partition. This is so that the Windows partition is the last partition on the drive and can be expanded. If this script is used, the recovery partition can be configured later with ApplyRecovery.bat.
+This script is based off of CreatePartitions-BIOS.txt, but it doesn't create a recovery partition. This is so that the Windows partition is the last partition on the drive and can be expanded. If this script is used, the recovery partition can be configured later with ApplyRecovery.bat.
 
 ```
 rem == CreatePartitions-BIOS-FFU.txt ==
@@ -339,7 +339,7 @@ Use this script to prepare the Windows recovery partition. This script is called
 @rem *********************************************************************
 @echo Checking to see if the PC is booted in BIOS or UEFI mode.
 wpeutil UpdateBootInfo
-for /f "tokens=2* delims=	 " %%A in ('reg query HKLM\System\CurrentControlSet\Control /v PEFirmwareType') DO SET Firmware=%%B
+for /f "tokens=2* delims=  " %%A in ('reg query HKLM\System\CurrentControlSet\Control /v PEFirmwareType') DO SET Firmware=%%B
 @echo            Note: delims is a TAB followed by a space.
 @if x%Firmware%==x echo ERROR: Can't figure out which firmware we're on.
 @if x%Firmware%==x echo        Common fix: In the command above:
@@ -363,12 +363,14 @@ xcopy /h W:\Windows\System32\Recovery\Winre.wim R:\Recovery\WindowsRE\
 @echo  == Register the location of the recovery tools ==
 W:\Windows\System32\Reagentc /Setreimage /Path R:\Recovery\WindowsRE /Target W:\Windows
 @echo  *********************************************************************
+@IF EXIST W:\Recovery\Customizations\USMT.ppkg (GOTO CUSTOMDATAIMAGEWIM) else goto HIDEWIMRECOVERYTOOLS
+:CUSTOMDATAIMAGEWIM
 @echo  == If Compact OS, single-instance the recovery provisioning package ==
-@echo.    
+@echo.     
 @echo	  *Note: this step only works if you created a ScanState package called
 @echo	   USMT.ppkg as directed in the OEM Deployment lab. If you aren't
 @echo	   following the steps in the lab, choose N.
-@echo.     
+@echo.      
 @echo     Options: N: No
 @echo              Y: Yes
 @echo              D: Yes, but defer cleanup steps to first boot.
@@ -380,6 +382,7 @@ W:\Windows\System32\Reagentc /Setreimage /Path R:\Recovery\WindowsRE /Target W:\
 @if %COMPACTOS%.==Y. dism /Apply-CustomDataImage /CustomDataImage:W:\Recovery\Customizations\USMT.ppkg /ImagePath:W:\ /SingleInstance
 @if %COMPACTOS%.==D. dism /Apply-CustomDataImage /CustomDataImage:W:\Recovery\Customizations\USMT.ppkg /ImagePath:W:\ /SingleInstance /Defer
 @echo  *********************************************************************
+:HIDEWIMRECOVERYTOOLS
 @echo == Hiding the recovery tools partition
 if %Firmware%==0x1 diskpart /s %~dp0HideRecoveryPartitions-BIOS.txt
 if %Firmware%==0x2 diskpart /s %~dp0HideRecoveryPartitions-UEFI.txt
@@ -417,12 +420,14 @@ xcopy /h %recoveryfolder%Winre.wim R:\Recovery\WindowsRE\
 @echo  == Register the location of the recovery tools ==
 %windowsdrive%Windows\System32\Reagentc /Setreimage /Path R:\Recovery\WindowsRE /Target %windowsdrive%Windows
 @echo  *********************************************************************
+@IF EXIST W:\Recovery\Customizations\USMT.ppkg (GOTO CUSTOMDATAIMAGEFFU) else goto HIDERECOVERYTOOLSFFU
+:CUSTOMDATAIMAGEFFU
 @echo  == If Compact OS, single-instance the recovery provisioning package ==
 @echo.     
 @echo	  *Note: this step only works if you created a ScanState package called
 @echo	   USMT.ppkg as directed in the OEM Deployment lab. If you aren't
 @echo	   following the steps in the lab, choose N.
-@echo.    
+@echo.
 @echo     Options: N: No
 @echo              Y: Yes
 @echo              D: Yes, but defer cleanup steps to first boot.
@@ -433,6 +438,7 @@ xcopy /h %recoveryfolder%Winre.wim R:\Recovery\WindowsRE\
 @if %COMPACTOS%.==d. set COMPACTOS=D
 @if %COMPACTOS%.==Y. dism /Apply-CustomDataImage /CustomDataImage:%windowsdrive%Recovery\Customizations\USMT.ppkg /ImagePath:%windowsdrive% /SingleInstance
 @if %COMPACTOS%.==D. dism /Apply-CustomDataImage /CustomDataImage:%windowsdrive%Recovery\Customizations\USMT.ppkg /ImagePath:%windowsdrive% /SingleInstance /Defer
+:HIDERECOVERYTOOLSFFU
 @rem *********************************************************************
 @echo == Hiding the recovery tools partition
 @if %Firmware%==0x1 diskpart /s HideRecoveryPartitions-BIOS.txt
