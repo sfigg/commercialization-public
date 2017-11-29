@@ -134,7 +134,8 @@ NOTE: “Referral”   switch is optional,  If OEM partner is  participating in 
     D:\ADKTools\amd64\scanstate.exe /apps /ppkg C:\Recovery\Customizations\usmt.ppkg /o /c /v:13 /l:C:\Recovery\ScanState.log
     ```
 
-    **Note** Recommended: Delete the ScanState log file: `del C:\Recovery\Scanstate.log`.
+    > [!Note]
+    > Recommended: Delete the ScanState log file: `del C:\Recovery\Scanstate.log`.
 
 ## <span id="Prepare_for_image_capture"></span>Step 5: Prepare for image capture
 
@@ -210,7 +211,8 @@ where *C* is the drive letter of the Windows partition and *Final changes* is th
 
 The DISM tool captures the Windows partition into a new image file. This process can take several minutes.
 
-**Troubleshooting**: If you receive an: "A parameter is incorrect" error message when you try to capture or copy the file to the USB key, the file might be too large for the destination file system. Copy the file to a different drive that is formatted as NTFS.
+> [!Tip]
+> If you receive an: "A parameter is incorrect" error message when you try to capture or copy the file to the USB key, the file might be too large for the destination file system. Copy the file to a different drive that is formatted as NTFS.
 
 > [!Note]
 > You can also choose to capture an image of the whole drive, including partition information, in a [full flash update image (FFU)](deploy-windows-using-full-flash-update--ffu.md).  See [DISM Image Management Command-Line Options](dism-image-management-command-line-options-s14.md#capture-ffu) for available command line options for capturing an FFU.

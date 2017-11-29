@@ -62,7 +62,7 @@ The sample scripts include steps that detect the firmware type (the newer UEFI-b
     The script **ApplyImage.bat** uses diskpart scripts to create the partitions and define the partition layout. These scripts must be placed in the same folder. You can update these scripts to change the partition sizes.
     
     > [!Note] 
-    > If you're going to be capturing and deploying your final image as an FFU, choose the options to not configure recovery. Recovery can be configured later after the Windows partition has been expanded.
+    > If you're going to be capturing and deploying your final image as an FFU, choose the options to not configure recovery. This allows you to expand the Windows partition, if needed, after you apply your FFU. You can configure recovery after you expand the Windows partition.
 
     ```
     D:
@@ -114,7 +114,8 @@ Disconnect the drives, then reboot (`exit`).
 
 The PC should reboot into Windows. While you’re waiting for the preparation phase to complete, go back to your technician PC and continue with the lab.
 
-**Troubleshooting**: If the device does not boot, turn on the device, and press the key that opens the boot-device selection menu (for example, the **Esc** key). Select the hard drive as your boot device, and continue.
+> [!Tip]
+> If the device does not boot, turn on the device, and press the key that opens the boot-device selection menu (for example, the **Esc** key). Select the hard drive as your boot device, and continue.
 
 **Optional: Test the recovery image**
 1.  Complete the first logon experience like a regular user.
