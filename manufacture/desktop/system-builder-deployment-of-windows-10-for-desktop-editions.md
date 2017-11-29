@@ -314,7 +314,7 @@ To get update packages, download them from [Microsoft Update Catalog](http://cat
     ![Download Update Catalog](Images/download-update-catalog-1709.png)
         
     > [!Tip]
-    > If you encounter an error as “The website has encountered a problem” after clicking “Download”, try turning off the pop-up blocker in IE or disabling Protected Mode in IE temporarily
+    > If you encounter an error that says “The website has encountered a problem” when trying to download your updates, try turning off the pop-up blocker in IE or temporarily disabling Protected Mode in IE.
     > ![Enable Protected Mode](Images/enable-protected-mode.png)
 
 5.  After downloading your update packages, add them to the image one by one by using the following command, substituting the filename in the command with the name of the files that you downloaded:
