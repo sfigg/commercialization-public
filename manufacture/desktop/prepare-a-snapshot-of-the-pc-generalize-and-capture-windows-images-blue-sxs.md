@@ -56,7 +56,7 @@ If you want to capture the changes in an image and apply it to other devices, yo
 
 3.  Provide folder path to extract files E:\Officev16.2.1.  Setup.exe and configuration.xml are extracted to E:\Officev16.2.1
     
-    Obtain: Office v16.2.1 in desired language, this sample uses English X21-20393 Office 2016 v16.2.1 English OPK
+    Get: Office v16.2.1 in the desired language, this sample uses English X21-20393 Office 2016 v16.2.1 English OPK
 
 4.  Mount "X21-20393 Office v16.2.1  English OPK\Software - DVD\X21-20435 SW DVD5 Office Pro 2016 32 64-bit English C2ROPK Pro HS HB OEM v16.2.1\X21-20435.img"
 
@@ -119,7 +119,7 @@ OEMTA Mode – Activation is done through the device’s Windows product key
 
 Type and run oemsetup.cmd Mode=OEMTA Referral=####
 
-NOTE: “Referral”   switch is optional,  If OEM partner is  participating in  office Incentive program For OEM referral ID information please refer to [Office Incentive Program Operations Guide 2017](https://myoem.microsoft.com/oem/myoem/en/programs/mktg/ofcprog/Pages/rc-office-program.aspx).
+**Note:** “Referral”   switch is optional,  If OEM partner is  participating in  office Incentive program For OEM referral ID information please refer to [Office Incentive Program Operations Guide 2017](https://myoem.microsoft.com/oem/myoem/en/programs/mktg/ofcprog/Pages/rc-office-program.aspx).
 
 
 
@@ -159,7 +159,7 @@ This step is required when you're capturing images to apply to other PCs.
     > [!warning]
     > If Windows begins booting instead of Windows PE, you must generalize the device again before capturing the image: After Windows boots, press **Ctrl+Shift+F3** to enter audit mode. The device will reboot. Generalize the device again: `C:\Windows\System32\Sysprep\sysprep /oobe /generalize /shutdown`.
 
-3.  Optional: speed up the optimization and image capture processes by setting the power scheme to High performance:
+3.  **Optional:** speed up the optimization and image capture processes by setting the power scheme to High performance:
 
     ```
     powercfg /s 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c
@@ -187,7 +187,7 @@ This step is required when you're capturing images to apply to other PCs.
 
     where *C* is the drive letter of the Windows partition.
 
-    **Warning**  Do not put quotes with the /ImagePath:C:\\ option.
+    **Warning:**  Do not put quotes with the `/ImagePath:C:\` option.
 
 2.  Cleanup the Windows files:
 
@@ -211,8 +211,7 @@ where *C* is the drive letter of the Windows partition and *Final changes* is th
 
 The DISM tool captures the Windows partition into a new image file. This process can take several minutes.
 
-> [!Tip]
-> If you receive an: "A parameter is incorrect" error message when you try to capture or copy the file to the USB key, the file might be too large for the destination file system. Copy the file to a different drive that is formatted as NTFS.
+If you receive an: "A parameter is incorrect" error message when you try to capture or copy the file to the USB key, the file might be too large for the destination file system. Copy the file to a different drive that is formatted as NTFS.
 
 > [!Note]
 > You can also choose to capture an image of the whole drive, including partition information, in a [full flash update image (FFU)](deploy-windows-using-full-flash-update--ffu.md).  See [DISM Image Management Command-Line Options](dism-image-management-command-line-options-s14.md#capture-ffu) for available command line options for capturing an FFU.
