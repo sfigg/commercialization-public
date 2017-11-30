@@ -31,6 +31,9 @@ See [Mobile Device Management](https://docs.microsoft.com/en-us/windows/client-m
 
 See [What's new in Windows 10](what-s-new-in-windows.md) for the latest features and changes in design, customization, manufacturing, and drivers.
 
+> [!TIP]
+> Watch our video on [ADK, HLK, HDK and EWDK updates for the Windows 10 Fall Creators Update](https://channel9.msdn.com/Events/WinHEC/WinHEC-Online/ADK-HLK-HDK-and-EWDK-updates-for-the-Windows-10-Fall-Creators-Update) to learn more.
+
 ## Learn about the ADK tools
 
 The topics below provide instructions on using the tools included in the Windows 10 ADK:
@@ -80,24 +83,19 @@ The Chinese (Taiwan) language pack (zh-TW) supports both Taiwan and Hong Kong lo
 
 ### You can limit access to a single Windows app (assigned access)
 
- - [Configure Assigned Access](https://msdn.microsoft.com/library/windows/hardware/mt620043)
+* [Configure Assigned Access](https://msdn.microsoft.com/library/windows/hardware/mt620043)
 
 ### New answer file settings added
 
--  Add more tiles to the Start Menu: [SquareOrDesktopTile7](https://msdn.microsoft.com/library/windows/hardware/dn915881) through [SquareOrDesktopTile12](https://msdn.microsoft.com/library/windows/hardware/dn915868)
-
--  Add an [advanced pen settings app](https://msdn.microsoft.com/library/windows/hardware/mt757353)
-
--  Allow a [chat window in a remote access session](https://msdn.microsoft.com/library/windows/hardware/mt752384)
-
--  Set [auto-brightness controls](https://msdn.microsoft.com/library/windows/hardware/dn757391)
-
--  See more [new answer file settings](https://msdn.microsoft.com/library/windows/hardware/mt750416.aspx)
+* Add more tiles to the Start Menu: [SquareOrDesktopTile7](https://msdn.microsoft.com/library/windows/hardware/dn915881) through [SquareOrDesktopTile12](https://msdn.microsoft.com/library/windows/hardware/dn915868)
+* Add an [advanced pen settings app](https://msdn.microsoft.com/library/windows/hardware/mt757353)
+* Allow a [chat window in a remote access session](https://msdn.microsoft.com/library/windows/hardware/mt752384)
+* Set [auto-brightness controls](https://msdn.microsoft.com/library/windows/hardware/dn757391)
+* See more [new answer file settings](https://msdn.microsoft.com/library/windows/hardware/mt750416.aspx)
 
 ### MDM: Enhanced device and PC management
 
 Check out the [new CSPs settings](https://msdn.microsoft.com/en-us/library/windows/hardware/mt299056.aspx#whatsnew_1607).
-
 
 ## <a href="" id="adk"></a>What’s new in the Windows ADK, version 1511
 
@@ -105,8 +103,8 @@ The Windows ADK now includes [Windows Imaging and Configuration Designer](https:
 
 ### Windows Imaging and Configuration Designer (ICD)
 
--   Quickly create a provisioning package that you can use to customize devices without re-imaging.
--   Build a customized Windows 10 image for specific market segments and regions.
+* Quickly create a provisioning package that you can use to customize devices without re-imaging.
+* Build a customized Windows 10 image for specific market segments and regions.
 
 See [Getting started with Windows ICD](https://msdn.microsoft.com/library/windows/hardware/dn916112.aspx) for more information.
 
@@ -130,10 +128,7 @@ You can now run Windows directly from compressed files. This is similar to WIMBo
 
 ## Related topics
 
-- [Kits and tools overview](kits-and-tools-overview.md)
-
-- [What's new in driver development](https://msdn.microsoft.com/windows/hardware/drivers/what-s-new-in-driver-development)
-
-- [What's new in the Windows Performance Toolkit](https://msdn.microsoft.com/en-us/library/windows/hardware/dn927303.aspx)
-
-- [What's new in the Hardware Lab Kit](https://msdn.microsoft.com/library/windows/hardware/mt187880.aspx)
+* [Kits and tools overview](kits-and-tools-overview.md)
+* [What's new in driver development](https://msdn.microsoft.com/windows/hardware/drivers/what-s-new-in-driver-development)
+* [What's new in the Windows Performance Toolkit](https://msdn.microsoft.com/en-us/library/windows/hardware/dn927303.aspx)
+* [What's new in the Hardware Lab Kit](https://msdn.microsoft.com/library/windows/hardware/mt187880.aspx)
