@@ -1069,15 +1069,15 @@ If you're not already booted into WinPE on the device you're deploying your imag
 
 ### Use a deployment script to apply your image
 
-Run a script to create partitions and apply your image. We'll use walkthrough-deploy.bat in _USB-B_\deployment to do this for us.
+Run a script to create partitions and apply your image. We'll use applyimage.bat in _USB-B_\deployment to do this for us.
 
 Important: As of Windows 10, version 1607, the Recovery partition must be the next partition after the Windows partition. This ensures that winre.wim can be kept up-to-date during life of the device. 
 
 On your reference PC:
 
-1. In WinPE, run walkthroughdeploy.bat from the USB-B\deployment folder, specifying the image you want to deploy:
+1. In WinPE, run applyimage.bat.bat from the USB-B\deployment folder, specifying the image you want to deploy:
     ```
-    E:\Deployment\walkthrough-deploy.bat E:\images\basicimage.wim
+    E:\Deployment\applyimage.bat E:\images\basicimage.wim
     ```
     **Note:** There are several pauses in the script. You will be prompted Y/N for the Apply operation if this is Compact OS deployment.
 
@@ -1520,10 +1520,10 @@ In this section, we'll cover how to deploy your captured image for testing and v
 
 
 1. Boot the PC you want to test your image on into WinPE.
-2. Run walkthrough-deploy.cmd to deploy the finalimage.wim
+2. Run applyimage.bat to deploy the finalimage.wim
 
     ```
-    E:\Deployment\walkthrough-deploy.cmd E:\Images\FinalImage.wim
+    E:\Deployment\applyimage.bat E:\Images\FinalImage.wim
     ```
 3. Type `exit` to close WinPE and restart the PC.
 
