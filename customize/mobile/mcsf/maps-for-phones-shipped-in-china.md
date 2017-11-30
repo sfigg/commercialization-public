@@ -13,7 +13,7 @@ ms.technology: windows-oem
 ---
 # Maps for phones shipped in China
 
-Microsoft recommends using the [ChinaVariantWin10](https://msdn.microsoft.com/library/windows/hardware/mt203640) setting instead of this legacy MCSF setting.
+Microsoft recommends using the [ChinaVariantWin10](https://docs.microsoft.com/en-us/windows/configuration/wcd/wcd-maps#chinavariantwin10) setting instead of this legacy MCSF setting.
 
 For a Windows mobile device shipping in China, partners must specify that the device is intended for that market by configuring `ChinaVariant` setting. When enabled, maps approved by the State Bureau of Surveying and Mapping in China are used and the maps are obtained from a server located in China.
 
@@ -77,3 +77,9 @@ None
 
 1. Flash the build containing this customization to a phone with a UICC.
 1. Launch the maps application and verify that the maps used are the same as those approved by the State Bureau of Surveying and Mapping in China.
+
+## Related topics
+
+[Prepare for Windows mobile development](https://docs.microsoft.com/en-us/windows-hardware/manufacture/mobile/preparing-for-windows-mobile-development)
+
+[Customization answer file overview](https://docs.microsoft.com/en-us/windows-hardware/customize/mobile/mcsf/customization-answer-file)

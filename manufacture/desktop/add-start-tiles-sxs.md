@@ -19,7 +19,7 @@ Notes:
 
 * **The Start layout and taskbar pins can be lost** if the user resets their PC with the built-in recovery tools. To make sure these settings stay on the device, see [Lab 12: Update the recovery image](update-the-recovery-image.md).
 
-* **When adding 3rd party apps, follow the [Windows Store OEM Program Guide](https://myoem.microsoft.com/oem/myoem/en/topics/Licensing/roylicres/ost2016/Pages/DP-WindowsStoreOEMProgramGuide2016FinalCL.aspx)**. You must comply with all Store Program terms and conditions, and related documents. 
+* **When adding 3rd party apps, follow the [Windows Store OEM Program Guide](https://myoem.microsoft.com/oem/myoem/en/topics/Licensing/roylicres/ost2016/Pages/DP-WindowsStoreOEMProgramGuide2016FinalCL.aspx)**. You must comply with all program terms and conditions, and related documents. 
 
 ## <span id="Mount_the_image"></span>Step 1: Mount the image
 

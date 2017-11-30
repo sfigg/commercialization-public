@@ -11,9 +11,7 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # Mobile device languages
-
 
 Partners must select the set of available languages to include on the mobile device. Partners must also specify one of the included languages as the default device language.
 
@@ -21,17 +19,16 @@ Windows 10 Mobile provides support for many languages. See the detailed list in
 
 **Limitations and restrictions**:
 
--   Partners must include at least one device language.
-
--   Microsoft recommends that OEMs include all of the supported device languages, but the OEM must abide by the space limitations for the partition layout.
-
--   Partners cannot modify existing languages or add support for their own.
+* Partners must include at least one device language.
+* Microsoft recommends that OEMs include all of the supported device languages, but the OEM must abide by the space limitations for the partition layout.
+* Partners cannot modify existing languages or add support for their own.
 
 For more information about language customizations, see the overview [Set languages and locales](set-languages-and-locales.md).
 
-<a href="" id="constraints---imagetimeonly"></a>**Constraints:** ImageTimeOnly  
+<a href="" id="constraints---imagetimeonly"></a>**Constraints:** ImageTimeOnly
 
-<a href="" id="instructions-"></a>**Instructions:**  
+## Instructions
+
 To modify the list of device languages, you must edit the **UserInterface** section in the OEMInput.xml file before building the device image.
 
 The following device languages are supported.
@@ -311,72 +308,60 @@ The following device languages are supported.
 </tbody>
 </table>
 
- 
+* **List of included device languages:** OEMs must include at least one device language. To include multiple device languages, add additional `Language` entries to the `UserInterface` section of the OEMInput.xml file. In the following example, English (US), Japanese, and Dutch are included as device languages.
 
--   **List of included device languages:** OEMs must include at least one device language. To include multiple device languages, add additional `Language` entries to the `UserInterface` section of the OEMInput.xml file. In the following example, English (US), Japanese, and Dutch are included as device languages.
+  ```XML
+    <SupportedLanguages>
+      <UserInterface>
+        <Language>en-US</Language>
+        <Language>ja-JP</Language>
+        <Language>nl-NL</Language>
+      </UserInterface>
+      <Keyboard>
+        <Language>en-US</Language>
+      </Keyboard>
+      <Speech>
+        <Language>en-US</Language>
+      </Speech>
+    </SupportedLanguages>
+  ```
 
-    ```
-      <SupportedLanguages>
-        <UserInterface>
-          <Language>en-US</Language>
-          <Language>ja-JP</Language>
-          <Language>nl-NL</Language>
-        </UserInterface>
-        <Keyboard>
-          <Language>en-US</Language>
-        </Keyboard>
-        <Speech>
-          <Language>en-US</Language>
-        </Speech>
-      </SupportedLanguages>
-    ```
+* **Default device language:** to define the default device language that the device will use when it is first turned on by the user, OEMs must define both a default device language and a default regional format. Both values must be specified in the OEMInput.xml file before building the device image.
 
--   **Default device language:** to define the default device language that the device will use when it is first turned on by the user, OEMs must define both a default device language and a default regional format. Both values must be specified in the OEMInput.xml file before building the device image.
+  * To specify the default device language, edit the **BootUILanguage** entry in OEMInput.xml. This value must match one of your **Language** entries from the **UserInterface** section.
+  * To specify the default regional format, edit the **BootLocale** entry in OEMInput.xml.
+  * Expanding on the previous example, the following shows how to set Japanese as the default device language (**BootUILanguage**) and set the default regional format (**BootLocale**) to Japan.
 
-    To specify the default device language, edit the **BootUILanguage** entry in OEMInput.xml. This value must match one of your **Language** entries from the **UserInterface** section.
+  ```XML
+    <SupportedLanguages>
+      <UserInterface>
+        <Language>en-US</Language>
+        <Language>ja-JP</Language>
+        <Language>nl-NL</Language>
+      </UserInterface>
+      <Keyboard>
+        <Language>en-US</Language>
+      </Keyboard>
+      <Speech>
+        <Language>en-US</Language>
+      </Speech>
+    </SupportedLanguages>
+    <BootUILanguage>ja-JP</BootUILanguage>
+    <BootLocale>ja-JP</BootLocale>
+  ```
 
-    To specify the default regional format, edit the **BootLocale** entry in OEMInput.xml.
+  > [!Note]
+  > These two paired values either have to be the same or they must be associated. For more information, see the recommended values shown in the table in [Set languages and locales](set-languages-and-locales.md).
 
-    Expanding on the previous example, the following shows how to set Japanese as the default device language (**BootUILanguage**) and set the default regional format (**BootLocale**) to Japan.
+## Testing
 
-    **Note**  
-    Note that these two paired values either have to be the same or they must be associated. For more information, see the recommended values shown in the table in [Set languages and locales](set-languages-and-locales.md).
+1. Flash the build containing this customization to a device.
+1. During initial device setup, do not change the device language.
+1. Go to the **Language** screen in **Settings** &gt; **Time & language**.
+1. Look at the language list and verify that the default language is correct.
 
-     
+## Related topics
 
-    ```
-      <SupportedLanguages>
-        <UserInterface>
-          <Language>en-US</Language>
-          <Language>ja-JP</Language>
-          <Language>nl-NL</Language>
-        </UserInterface>
-        <Keyboard>
-          <Language>en-US</Language>
-        </Keyboard>
-        <Speech>
-          <Language>en-US</Language>
-        </Speech>
-      </SupportedLanguages>
-      <BootUILanguage>ja-JP</BootUILanguage>
-      <BootLocale>ja-JP</BootLocale>
-    ```
+[Prepare for Windows mobile development](https://docs.microsoft.com/en-us/windows-hardware/manufacture/mobile/preparing-for-windows-mobile-development)
 
-<a href="" id="testing-"></a>**Testing:**  
-1.  Flash the build containing this customization to a device.
-
-2.  During initial device setup, do not change the device language.
-
-3.  Go to the **Language** screen in **Settings** &gt; **Time & language**.
-
-4.  Look at the language list and verify that the default language is correct.
-
- 
-
- 
-
-
-
-
-
-
+[Customization answer file overview](https://docs.microsoft.com/en-us/windows-hardware/customize/mobile/mcsf/customization-answer-file)

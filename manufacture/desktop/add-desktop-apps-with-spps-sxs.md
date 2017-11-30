@@ -68,7 +68,7 @@ You'll need the most recent version of the Deployment and Imaging Tools from the
 
 ## <span id="Capture_a_setting"></span><span id="capture_a_setting"></span>Step 3: Capture a setting 
 
-You can add registry keys, for example, an OEM key, or a Windows Store identifier. To learn more, see the [Windows Store Program 2016 Guide](https://myoem.microsoft.com/oem/myoem/en/topics/Licensing/roylicres/ost2016/Pages/DP-WindowsStoreOEMProgramGuide2016FinalCL.aspx) and the [Apps and Store Windows Engineering Guide (WEG)](https://myoem.microsoft.com/oem/myoem/en/topics/Licensing/roylicres/ost2016/Pages/DP-WinEngnrngGdAppsStore.aspx).
+You can add registry keys, for example, an OEM key. To learn more, see the [Windows Store Program 2016 Guide](https://myoem.microsoft.com/oem/myoem/en/topics/Licensing/roylicres/ost2016/Pages/DP-WindowsStoreOEMProgramGuide2016FinalCL.aspx) and the [Apps and Store Windows Engineering Guide (WEG)](https://myoem.microsoft.com/oem/myoem/en/topics/Licensing/roylicres/ost2016/Pages/DP-WinEngnrngGdAppsStore.aspx).
 
 1.  Add a setting. For example, add a registry key:
 

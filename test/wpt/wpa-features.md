@@ -69,8 +69,8 @@ This section describes features of Windows Performance Analyzer.
 <td><p>Describes the WPA Exporter.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Windows Store App Analysis](windows-store-app-analysis.md)</p></td>
-<td><p>Describes features in WPA that you can use for Windows Store App analysis.</p></td>
+<td><p>[Microsoft Store App Analysis](microsoft-store-app-analysis.md)</p></td>
+<td><p>Describes features in WPA that you can use for Microsoft Store App analysis.</p></td>
 </tr>
 <!--Not ready to be linked. [v-gmoor, 2016-09-02]
 <tr class="even">

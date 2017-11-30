@@ -627,9 +627,9 @@ A Windows device should ship with the correct DirectX Graphics Driver for the sy
 
     **Answer**: Yes, you'll apply the base lp.cab in the same way as you did before in order to get multiple UI options, but to be able to enter text or get support, you'll need to add optional language components. For more info, see [Add Language Packs to Windows](http://go.microsoft.com/fwlink/?LinkId=532792).
     
-- **Question**: Is there a change in how I install desktop or Windows Store apps?
+- **Question**: Is there a change in how I install desktop or Microsoft Store apps?
 
-    **Answer**: There is no change in how you install desktop or Windows Store apps from Windows 8.1.
+    **Answer**: There is no change in how you install desktop or Microsoft Store apps from Windows 8.1.
 
 - **Question**: What is the user experience on a multi-language configuration or when a user adds an additional language pack?
 

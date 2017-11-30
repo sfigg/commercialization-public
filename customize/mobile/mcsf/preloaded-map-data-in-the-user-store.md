@@ -24,7 +24,7 @@ OEMs can choose a single map region to preload from the multiple regions that ar
 <a href="" id="instructions-"></a>**Instructions:**  
 1.  Create a customization answer file using the contents shown in the following code sample or use the sample PreloadedMapData.xml file.
 
-    ```
+    ```XML
     <?xml version="1.0" encoding="utf-8" ?>
     <ImageCustomizations xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate"  
                          Name="PreloadedMapData"  
@@ -54,7 +54,7 @@ OEMs can choose a single map region to preload from the multiple regions that ar
     To add additional maps, add a new **DataAsset** setting and set the source to the directory location of the map region you want to include.
 
 **Tip**  
-You can avoid wiping preloaded maps off the internal store on the factory line using the [ResetPhoneEx] API. For more information, see [Resetting a phone during manufacturing](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/service/mobile/resetting-the-phone).
+You can avoid wiping preloaded maps off the internal store on the factory line using the [ResetPhoneEx] API. For more information, see [Resetting a phone during manufacturing](https://docs.microsoft.com/en-us/windows-hardware/manufacture/mobile/sign-a-full-flash-update--ffu--image).
 
  
 
@@ -65,12 +65,8 @@ You can avoid wiping preloaded maps off the internal store on the factory line u
 
 3.  Click on the Download Maps button and verify that the expected region displays under downloaded maps.
 
- 
+## Related topics
 
- 
+[Prepare for Windows mobile development](https://docs.microsoft.com/en-us/windows-hardware/manufacture/mobile/preparing-for-windows-mobile-development)
 
-
-
-
-
-
+[Customization answer file overview](https://docs.microsoft.com/en-us/windows-hardware/customize/mobile/mcsf/customization-answer-file)

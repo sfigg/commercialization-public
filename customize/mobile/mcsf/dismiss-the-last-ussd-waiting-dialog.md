@@ -11,72 +11,67 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # Dismiss the last USSD waiting dialog
-
 
 Dismiss the last USSD waiting dialog in the case where there is a sequence of USSD or SIM app dialogs.
 
 This customization affects the behavior of USSD dialog sequencing. It dismisses the last **Waiting…** dialog in the case where there is a sequence of USSD or SIM app dialogs. OEMs may need to configure this customization in cases where there is a sequence of two or more SIM app dialogs and where the OS might display a **Waiting…** dialog indefinitely and the dialog can only dismissed when the user taps **Cancel**.
 
-<a href="" id="constraints---none"></a>**Constraints:** None  
+<a href="" id="constraints---none"></a>**Constraints:** None
 This customization supports: **per-IMSI** value
 
-<a href="" id="instructions-"></a>**Instructions:**  
-1.  Create a customization answer file using the contents shown in the following code sample.
+## Instructions
 
-    ```
-    <?xml version="1.0" encoding="utf-8" ?>  
-    <ImageCustomizations xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate"  
-                         Name="AutoDismissUssdWaitingDialog"  
-                         Description="Use to dismiss the last 'Waiting...' dialog in cases where there is a sequence of USSD or SIM app dialogs"."  
-                         Owner=""  
-                         OwnerType="OEM"> 
+1. Create a customization answer file using the contents shown in the following code sample.
 
-      
-      <!-- Define the Targets --> 
-      <Targets>
-         <Target Id="">
-            <TargetState>
-               <Condition Name="" Value="" />
-               <Condition Name="" Value="" />
-            </TargetState>
-         </Target>
-      </Targets>
-      
-      <Static>
-        <Settings Path="Multivariant">
-          <Setting Name="Enable" Value="1" />
-        </Settings>
-        <Settings Path="AutoDataConfig">
-          <Setting Name="Enable" Value="0" />
-        </Settings>
-      </Static>
+   ```XML
+   <?xml version="1.0" encoding="utf-8" ?>
+   <ImageCustomizations xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate"
+                        Name="AutoDismissUssdWaitingDialog"
+                        Description="Use to dismiss the last 'Waiting...' dialog in cases where there is a sequence of USSD or SIM app dialogs"."
+                        Owner=""
+                        OwnerType="OEM">
 
-      <!-- Specify the Variant -->
-      <Variant Name=""> 
-        <TargetRefs>
-          <TargetRef Id="" /> 
-        </TargetRefs>
+     <!-- Define the Targets -->
+     <Targets>
+        <Target Id="">
+           <TargetState>
+              <Condition Name="" Value="" />
+              <Condition Name="" Value="" />
+           </TargetState>
+        </Target>
+     </Targets>
 
-        <Settings Path="Phone/PerSimSettings/$(__IMSI)"> 
-          <Setting Name="AutoDismissUssdWaitingDialog" Value="" />        
-        </Settings>  
+     <Static>
+       <Settings Path="Multivariant">
+         <Setting Name="Enable" Value="1" />
+       </Settings>
+       <Settings Path="AutoDataConfig">
+         <Setting Name="Enable" Value="0" />
+       </Settings>
+     </Static>
 
-      </Variant>
+     <!-- Specify the Variant -->
+     <Variant Name="">
+       <TargetRefs>
+         <TargetRef Id="" />
+       </TargetRefs>
 
-    </ImageCustomizations>
-    ```
+       <Settings Path="Phone/PerSimSettings/$(__IMSI)">
+         <Setting Name="AutoDismissUssdWaitingDialog" Value="" />
+       </Settings>
 
-2.  Specify an `Owner`.
+     </Variant>
+   </ImageCustomizations>
+   ```
 
-3.  For the **per-IMSI** case:
+1. Specify an `Owner`.
+1. For the **per-IMSI** case:
 
-    1.  Define **Targets** or conditions for when a variant can be applied, such as keying off a SIM's MCC, MNC, and SPN.
+   1. Define **Targets** or conditions for when a variant can be applied, such as keying off a SIM's MCC, MNC, and SPN.
+   1. Define settings for a **Variant**, which are applied if the associated target's conditions are met.
 
-    2.  Define settings for a **Variant**, which are applied if the associated target's conditions are met.
-
-4.  Set `AutoDismissUssdWaitingDialog` to one of the following values:
+1. Set `AutoDismissUssdWaitingDialog` to one of the following values:
 
     <table>
     <colgroup>
@@ -102,17 +97,12 @@ This customization supports: **per-IMSI** value
     </tbody>
     </table>
 
-     
+## Testing
 
-<a href="" id="testing-"></a>**Testing:**  
 Work with your mobile operator to fully test this customization on their network.
 
- 
+## Related topics
 
- 
+[Prepare for Windows mobile development](https://docs.microsoft.com/en-us/windows-hardware/manufacture/mobile/preparing-for-windows-mobile-development)
 
-
-
-
-
-
+[Customization answer file overview](https://docs.microsoft.com/en-us/windows-hardware/customize/mobile/mcsf/customization-answer-file)

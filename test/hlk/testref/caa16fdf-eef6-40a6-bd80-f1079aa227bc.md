@@ -5,6 +5,12 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: f40f28d7-ce1f-4bf6-951d-054ac77fc463
+author: sapaetsc
+ms.author: sapaetsc
+ms.date: 10/15/17
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # <span id="p_hlk_test.caa16fdf-eef6-40a6-bd80-f1079aa227bc"></span>Windows Touch Response Latency (Down) Test (System)

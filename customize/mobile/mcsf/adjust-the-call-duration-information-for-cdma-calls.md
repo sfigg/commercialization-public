@@ -22,7 +22,7 @@ On CDMA devices, call durations in the call history may include the time spent b
 <a href="" id="instructions-"></a>**Instructions:**  
 1.  Create a customization answer file using the contents shown in the following code sample.
 
-    ```
+    ```XML
     <?xml version="1.0" encoding="utf-8" ?>  
     <ImageCustomizations xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate"  
                          Name="AdjustCDMACallTime"  
@@ -85,12 +85,8 @@ Work with your CDMA mobile operator partner to test this customization on their 
 
     If you set `AdjustCDMACallTime` to 1 or 'True', go to the call **History** and confirm that the duration for the phone call indicates zero or no time spent on the call.
 
- 
+## Related topics
 
- 
+[Prepare for Windows mobile development](https://docs.microsoft.com/en-us/windows-hardware/manufacture/mobile/preparing-for-windows-mobile-development)
 
-
-
-
-
-
+[Customization answer file overview](https://docs.microsoft.com/en-us/windows-hardware/customize/mobile/mcsf/customization-answer-file)

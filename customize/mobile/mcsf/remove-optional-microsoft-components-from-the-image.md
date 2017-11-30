@@ -15,7 +15,7 @@ ms.technology: windows-oem
 # Remove optional Microsoft components from the image
 
 
-This customization provides information on how partners can remove any of the optional Microsoft components. For more information about other features you can include or exclude from your image, see [Optional features for building images](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/manufacture/mobile/optional-features-for-building-images).
+This customization provides information on how partners can remove any of the optional Microsoft components. For more information about other features you can include or exclude from your image, see [Optional features for building images](https://docs.microsoft.com/en-us/windows-hardware/manufacture/mobile/optional-features-for-building-images).
 
 For a comprehensive list of optional Microsoft components, refer to the *OEM Policy Document (OPD) for Windows 10 Mobile*.
 
@@ -36,7 +36,7 @@ For a comprehensive list of optional Microsoft components, refer to the *OEM Pol
 
     In the following example, the &lt;FEATURE&gt; entry shows what you need to delete from your OEMInput.xml file.
 
-    ```
+    ```XML
     <Features>
        <Microsoft>
           <Feature>SKYPE</Feature>
@@ -82,7 +82,7 @@ For a comprehensive list of optional Microsoft components, refer to the *OEM Pol
 
     In the following example, the &lt;FEATURE&gt; entry shows what you need to delete from your OEMInput.xml file.
 
-    ```
+    ```XML
     <Features>
        <Microsoft>
           <Feature>Docking</Feature>
@@ -94,12 +94,8 @@ For a comprehensive list of optional Microsoft components, refer to the *OEM Pol
 
 5.  Verify that Continuum is no longer part of the OS image.
 
- 
+## Related topics
 
- 
+[Prepare for Windows mobile development](https://docs.microsoft.com/en-us/windows-hardware/manufacture/mobile/preparing-for-windows-mobile-development)
 
-
-
-
-
-
+[Customization answer file overview](https://docs.microsoft.com/en-us/windows-hardware/customize/mobile/mcsf/customization-answer-file)

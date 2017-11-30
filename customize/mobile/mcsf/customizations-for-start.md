@@ -10,6 +10,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
+redirect_url: https://docs.microsoft.com/en-us/windows-hardware/customize/mobile/mcsf/store-live-tile
 ---
 
 # Customizations for Start
@@ -40,14 +41,8 @@ This section contains information about customizations related to Start.
 </tbody>
 </table>
 
- 
+## Related topics
 
- 
+[Prepare for Windows mobile development](https://docs.microsoft.com/en-us/windows-hardware/manufacture/mobile/preparing-for-windows-mobile-development)
 
- 
-
-
-
-
-
-
+[Customization answer file overview](https://docs.microsoft.com/en-us/windows-hardware/customize/mobile/mcsf/customization-answer-file)

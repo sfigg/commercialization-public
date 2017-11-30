@@ -1,6 +1,6 @@
 ---
-title: Results for the Windows Store app performance assessment
-description: Results for the Windows Store app performance assessment
+title: Results for the Microsoft Store app performance assessment
+description: Results for the Microsoft Store app performance assessment
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
@@ -14,12 +14,12 @@ ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-# Results for the Windows Store app performance assessment
+# Results for the Microsoft Store app performance assessment
 
 
-The Windows Store app performance assessment can help you optimize your app for a better customer experience. The assessment measures how quickly the app opens and suspends, and the amount of resources it uses on the PC. You can use this assessment to help you improve an individual app, or to help you optimize a Windows image by picking fast and fluid apps that run well on your PC.
+The Microsoft Store app performance assessment can help you optimize your app for a better customer experience. The assessment measures how quickly the app opens and suspends, and the amount of resources it uses on the PC. You can use this assessment to help you improve an individual app, or to help you optimize a Windows image by picking fast and fluid apps that run well on your PC.
 
-This topic helps you interpret the results produced by the Windows Store app performance assessment. It also provides guidance on how to use the results to identify and resolve common issues that negatively impact app performance.
+This topic helps you interpret the results produced by the Microsoft Store app performance assessment. It also provides guidance on how to use the results to identify and resolve common issues that negatively impact app performance.
 
 In this topic:
 
@@ -29,7 +29,7 @@ In this topic:
 
 -   [Issues](#bkmk-issues)
 
-For more information about the system requirements and assessment settings, see [Windows Store App Performance](windows-store-app-performance.md).
+For more information about the system requirements and assessment settings, see [Microsoft Store App Performance](microsoft-store-app-performance.md).
 
 ## <a href="" id="bkmk-goals"></a>Goals File
 
@@ -73,17 +73,17 @@ You cannot package a goals file with a job, but you can store it on a share for 
 ## <a href="" id="bkmk-metrics"></a>Metrics
 
 
-The following metrics are reported by the Windows Store app performance assessment.
+The following metrics are reported by the Microsoft Store app performance assessment.
 
-### Total Windows Store apps
+### Total Microsoft Store apps
 
-The count of how many Windows Store apps are installed on the device.
+The count of how many Microsoft Store apps are installed on the device.
 
-### Windows Store apps assessed
+### Microsoft Store apps assessed
 
-The count of how many Windows Store apps were included in the assessment.
+The count of how many Microsoft Store apps were included in the assessment.
 
-### Windows Store app details
+### Microsoft Store app details
 
 <table>
 <colgroup>

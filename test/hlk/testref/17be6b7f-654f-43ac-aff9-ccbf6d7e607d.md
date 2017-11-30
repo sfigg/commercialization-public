@@ -5,6 +5,12 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8e9517a7-6fb8-4477-ae5c-6cf420a020cd
+author: sapaetsc
+ms.author: sapaetsc
+ms.date: 10/15/17
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # <span id="p_hlk_test.17be6b7f-654f-43ac-aff9-ccbf6d7e607d"></span>Sensor Camera Driver Basic Capture Session - Preview Sink - All Mediatype

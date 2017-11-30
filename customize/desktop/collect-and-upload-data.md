@@ -24,7 +24,7 @@ The app is registered using its Application User Model ID (AUMID) and can collec
 
 If you create and run a service to upload the data, you should set the service to run at least 30 minutes after the user gets to the Start screen, and only run the service once. Setting your service to run at this time ensures that your service won't consume system resources in the background while users are getting their first chance to explore the Start screen and their apps. The service must gather the data from within the OOBE directory, as well as the time stamp and user name, as applicable. The service should also determine what actions to take in response to the user's choices. For example, if the user opted in to an anti-malware app trial, your service should start the trial rather than rely on the anti-malware app to decide if it should run. Or, as another example, if your user opted in to emails from your company or partner companies, your service should communicate that info to whomever handles your marketing emails.
 
-For more info about how to write a service, see [Developing Windows Service Applications](https://msdn.microsoft.com/en-us/library/y817hyb6(v=vs.110).aspx).
+For more info about how to write a service, see [Developing Windows Service Applications](https://docs.microsoft.com/en-us/dotnet/framework/windows-services/index).
 
 ## <a name="timestamp"></a>Collect the time stamp
 

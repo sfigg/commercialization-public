@@ -17,7 +17,7 @@ ms.technology: windows-oem
 
 To meet China Type Approval (CTA) requirements for devices shipping in China, OEMs must show a notification dialog to alert users when the app being downloaded does certain things.
 
-**Note**  This is a legacy mobile setting and is only a requirement for China. It works on phones being upgraded to Windows 10 Mobile, but we recommend that you use the new [CountryCodeForExtendedCapabilityPrompts](https://msdn.microsoft.com/library/windows/hardware/mt219727) Windows provisioning setting instead.
+**Note**  This is a legacy mobile setting and is only a requirement for China. It works on phones being upgraded to Windows 10 Mobile, but we recommend that you use the new [CountryAndRegion](https://docs.microsoft.com/en-us/windows/configuration/wcd/wcd-countryandregion) Windows provisioning setting instead.
 
  
 
@@ -34,7 +34,7 @@ The dialog must be shown when the app being downloaded does any of the following
 <a href="" id="instructions-"></a>**Instructions:**  
 1.  Create a customization answer file using the contents shown in the following code sample.
 
-    ```
+    ```XML
     <?xml version="1.0" encoding="utf-8" ?>  
 
     <ImageCustomizations xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate"  
@@ -100,12 +100,8 @@ To fully test this customization, the phone must also be configured to use [Micr
 
 5.  Download another app that uses recording or location data and verify that you see the notification appear when you first run the app.
 
- 
+## Related topics
 
- 
+[Prepare for Windows mobile development](https://docs.microsoft.com/en-us/windows-hardware/manufacture/mobile/preparing-for-windows-mobile-development)
 
-
-
-
-
-
+[Customization answer file overview](https://docs.microsoft.com/en-us/windows-hardware/customize/mobile/mcsf/customization-answer-file)

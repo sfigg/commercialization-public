@@ -1067,7 +1067,7 @@ The following table shows the country/region associated with the **BootLocale** 
 
 The following example demonstrates how to set the default regional format to Japan (ja-JP) in the OEMInput.xml file.
 
-```
+```XML
   <SupportedLanguages>
     <UserInterface>
       <Language>en-US</Language>
@@ -1094,12 +1094,8 @@ The following example demonstrates how to set the default regional format to Jap
 
 4.  Look at the **Country/Region** field to verify that the country or region is set according to the value you specified in the OEMInput.xml file.
 
- 
+## Related topics
 
- 
+[Prepare for Windows mobile development](https://docs.microsoft.com/en-us/windows-hardware/manufacture/mobile/preparing-for-windows-mobile-development)
 
-
-
-
-
-
+[Customization answer file overview](https://docs.microsoft.com/en-us/windows-hardware/customize/mobile/mcsf/customization-answer-file)

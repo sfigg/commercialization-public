@@ -27,7 +27,7 @@ This customization supports: **per-IMSI** value, **per-device** value
 <a href="" id="instructions-"></a>**Instructions:**  
 1.  Create a customization answer file using the contents shown in the following code sample.
 
-    ```
+    ```XML
     <?xml version="1.0" encoding="utf-8" ?>
     <ImageCustomizations xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate"  
                          Name="ConnectionSpeedOption"  
@@ -217,12 +217,8 @@ This customization supports: **per-IMSI** value, **per-device** value
 
 4.  If you customized the dropdown label, or the one- or two-character codes for connection speed for one or more options within the connection speed drop-down, verify that the string matches what you specified.
 
- 
+## Related topics
 
- 
+[Prepare for Windows mobile development](https://docs.microsoft.com/en-us/windows-hardware/manufacture/mobile/preparing-for-windows-mobile-development)
 
-
-
-
-
-
+[Customization answer file overview](https://docs.microsoft.com/en-us/windows-hardware/customize/mobile/mcsf/customization-answer-file)

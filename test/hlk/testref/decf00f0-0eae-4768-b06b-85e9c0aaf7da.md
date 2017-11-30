@@ -5,6 +5,12 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: d2c60ab3-f7d2-4a86-be65-8b597eea5af7
+author: sapaetsc
+ms.author: sapaetsc
+ms.date: 10/15/17
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # <span id="p_hlk_test.decf00f0-0eae-4768-b06b-85e9c0aaf7da"></span>DF - PNP Surprise Remove Device Test (Reliability)

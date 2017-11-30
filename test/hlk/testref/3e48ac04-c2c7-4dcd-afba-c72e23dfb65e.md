@@ -5,6 +5,12 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 63b65c06-1fba-47a7-9577-93eb650dd829
+author: sapaetsc
+ms.author: sapaetsc
+ms.date: 10/15/17
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # <span id="p_hlk_test.3e48ac04-c2c7-4dcd-afba-c72e23dfb65e"></span>Manual Test - Verify eMMC is enumerated in mass storage mode

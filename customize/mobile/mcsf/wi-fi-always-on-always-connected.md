@@ -28,7 +28,7 @@ Partners can use the **LowPowerSupported** and **AlwaysOnAlwaysConnected** setti
 <a href="" id="instructions-"></a>**Instructions:**  
 1.  Create a customization answer file using the contents shown in the following code sample.
 
-    ```
+    ```XML
     <?xml version="1.0" encoding="utf-8" ?>  
     <ImageCustomizations xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate"  
                          Name="WiFiAOAC"  
@@ -122,12 +122,8 @@ Partners can use the **LowPowerSupported** and **AlwaysOnAlwaysConnected** setti
 
 3.  If you have a non-AOAC device and you configured the `AlwaysOnAlwaysConnected` setting, verify whether Wi-Fi remains on when the screen times out. Navigate to the **Wi-Fi** &gt; **manage** settings screen and verify that the **Keep Wi-Fi on when the screen times out** setting is set according to the value that you specified for `AlwaysOnAlwaysConnected`.
 
- 
+## Related topics
 
- 
+[Prepare for Windows mobile development](https://docs.microsoft.com/en-us/windows-hardware/manufacture/mobile/preparing-for-windows-mobile-development)
 
-
-
-
-
-
+[Customization answer file overview](https://docs.microsoft.com/en-us/windows-hardware/customize/mobile/mcsf/customization-answer-file)

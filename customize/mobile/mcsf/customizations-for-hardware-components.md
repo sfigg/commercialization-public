@@ -99,20 +99,14 @@ This section contains information about customization settings that OEMs can use
 <td><p>As part of implementing the touch driver, OEMs must determine how to send repeated touch samples to the input reader component in the OS during touch-and-hold presses. OEMs can choose to have the HID touch class driver (TchHID.sys) automatically send duplicate data packets to the input reader component in the OS during touch-and-hold presses, or they can send repeated touch samples from their touch driver. The OEM must add a registry value that tells the OS which implementation they chose, and the repeat rate to use if the OEM chose to have TchHID.sys send duplicate data packets automatically.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Wi-Fi: Removing cellular functionality on the mobile device](https://msdn.microsoft.com/library/windows/hardware/mt488518)</p></td>
+<td><p>[Wi-Fi: Removing cellular functionality on the mobile device](removing-cellular-functionality-on-the-mobile-device.md)</p></td>
 <td><p>If your mobile device does not support a cellular radio or will not be connected to a cellular network, you can remove all cellular-related functionality from the device's user interface by adding the WIFI_FEATURE_PACK feature entry in your OEMInput.xml file.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+## Related topics
 
- 
+[Prepare for Windows mobile development](https://docs.microsoft.com/en-us/windows-hardware/manufacture/mobile/preparing-for-windows-mobile-development)
 
- 
-
-
-
-
-
-
+[Customization answer file overview](https://docs.microsoft.com/en-us/windows-hardware/customize/mobile/mcsf/customization-answer-file)

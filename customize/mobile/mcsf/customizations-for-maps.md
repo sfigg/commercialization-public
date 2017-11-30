@@ -38,7 +38,7 @@ Describes the customizations that you can configure for maps on the mobile devic
 </tr>
 <tr class="even">
 <td><p>[Maps for phones shipped in China](maps-for-phones-shipped-in-china.md)</p></td>
-<td><p>Microsoft recommends using the [ChinaVariantWin10](https://msdn.microsoft.com/library/windows/hardware/mt203640) setting instead of this legacy MCSF setting.</p>
+<td><p>Microsoft recommends using the [ChinaVariantWin10](https://docs.microsoft.com/en-us/windows/configuration/wcd/wcd-maps#chinavariantwin10) setting instead of this legacy MCSF setting.</p>
 <p>For a Windows mobile device shipping in China, partners must specify that the device is intended for that market by configuring <code>ChinaVariant</code> setting. When enabled, maps approved by the State Bureau of Surveying and Mapping in China are used and the maps are obtained from a server located in China.</p></td>
 </tr>
 <tr class="odd">
@@ -52,14 +52,8 @@ Describes the customizations that you can configure for maps on the mobile devic
 </tbody>
 </table>
 
- 
+## Related topics
 
- 
+[Prepare for Windows mobile development](https://docs.microsoft.com/en-us/windows-hardware/manufacture/mobile/preparing-for-windows-mobile-development)
 
- 
-
-
-
-
-
-
+[Customization answer file overview](https://docs.microsoft.com/en-us/windows-hardware/customize/mobile/mcsf/customization-answer-file)

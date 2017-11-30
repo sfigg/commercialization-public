@@ -5,6 +5,12 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 1041ca7f-313c-42a5-9cc7-7c0769397299
+author: sapaetsc
+ms.author: sapaetsc
+ms.date: 10/15/17
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # <span id="p_hlk_test.99c61fa9-e0eb-43ea-a5fc-db5c3cbd9239"></span>DF - Reboot restart with IO before and after (Reliability)

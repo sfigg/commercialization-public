@@ -17,17 +17,16 @@ ms.technology: windows-oem
 
 # Prepare hardware for modern standby
 
-
 On entry to standby, hardware components must be prepared to make the transition to low-power operation. After software components and apps have been prepared for low-power operation, hardware components, including their software device drivers, must be similarly prepared for low-power operation.
 
 The remainder of this article explains how to prepare the devices outside and inside the System on a Chip (SoC) to operate in a low-power mode after the hardware platform enters standby.
 
-## Hardware transition to low-power mode
 
+## Hardware transition to low-power mode
 
 All devices outside the SoC and inside the SoC must enter a low-power mode in order to achieve long battery life during standby. After a hardware platform enters standby, the devices in the platform switch to low-power modes in an orderly process that starts with the devices outside the SoC.
 
-First, all devices outside of the SoC or core silicon must enter a low-power mode. The power mode may be a clock-gated idle state—for example, placing an I²C-attached touch controller in a sleep mode. Or, the power mode may be a power-gated, 0-watt state called D3cold. A USB-attached web camera will often transition to D3cold during modern standby. For more information, see Supporting D3cold for USB Devices.
+First, all devices outside of the SoC or core silicon must enter a low-power mode. The power mode may be a clock-gated idle state—for example, placing an I²C-attached touch controller in a sleep mode. Or, the power mode may be a power-gated, 0-watt state called *D3cold*. A USB-attached web camera will often transition to D3cold during modern standby. For more information, see Supporting D3cold for USB Devices.
 
 Each device class and connection bus has its own terminology and requirements for transitioning a device to the lowest power mode. However, it is critical that a system designer plan a low-power mode of operation for each device in the platform during modern standby. The battery life of the system and the ability to place the SoC itself in a low-power mode depend on correct power management of each device outside of the SoC itself.
 
@@ -37,31 +36,28 @@ After all devices outside of the SoC, including communications devices, have bee
 
 The process for preparing the hardware for low-power during standby can be visualized as an upside-down pyramid, as shown in the following diagram. The lowest power is achieved when the whole SoC chip is powered down, but this can occur only after each set of devices above it in the pyramid has been powered down.
 
+
 ## Powering down the devices outside the SoC
 
-
-Each device outside of the SoC chip must enter a low-power mode for two key reasons:
+Each device outside of the SoC chip must enter a low-power mode for two key goals:
 
 -   Reduce the power consumption of the device.
--   Allow the on-SoC host controller that the device is connected to power down, which will allow the SoC itself to power down.
+-   Allow the SoC itself to power down by allowing the on-SoC host controller, to which the device is connected, to power down.
 
 The method to power down each device outside of the SoC varies by device class and attached bus.
 
-Some devices outside of the SoC are placed in a 0-watt, no-power-consumed state called D3cold. Common devices for D3cold include cameras and sensors. The driver must save the register state of the device and then transition the device to the D3 power state. Power will be removed by the ACPI firmware by toggling a GPIO line or turning off a power rail from the power management IC (PMIC).
+Some devices outside of the SoC are placed in a 0-watt, no-power-consumed state called *D3cold*. Common devices for D3cold include cameras and sensors. The driver must save the register state of the device and then transition the device to the D3 power state. Power will be removed by the ACPI firmware by toggling a GPIO line or turning off a power rail from the power management IC (PMIC).
 
-Some devices outside of the SoC are placed in a low-power idle mode in which register state is maintained, or the device might simply be clock-gated. For example, many touch controllers feature a clock-gated state that consumes less than one milliwatt of power. The typical advantages to using a clock-gated state are faster power-on time and lower cost by not having to connect the device to a switchable power rail.
+Some devices outside of the SoC are placed in a low-power idle mode in which register state is maintained, or the device might simply be clock-gated. For example, many touch controllers feature a clock-gated state that consumes less than 1 milliwatt of power. The typical advantages to using a clock-gated state are faster power-on time and lower cost by not having to connect the device to a switchable power rail.
 
 Generally, every device outside of the SoC must be capable of entering a low-power mode that consumes less than 1 milliwatt of power. Devices that cannot achieve this power level with an internal clock-gated state should implement power-gating through D3cold.
 
-Network and radio devices are the notable exception to the 1-milliwatt power level guideline. Network and radio devices might require more power to maintain a connection to the network or to listen to wireless devices. Some system designers refer to these power-state transitions as runtime D3 (RTD3).
+Network and radio devices are the notable exception to the 1-milliwatt guideline. Network and radio devices might require more power to maintain a connection to the network or to listen to wireless devices. Some system designers refer to these power-state transitions as *runtime D3* (RTD3).
 
-For more information about power management for particular device classes, system designers are encouraged to review the following documentation:
+For more information about power management for particular device classes, system designers are encouraged to review [Device-specific power management for modern standby](device-specific-power-management-for-modern-standby.md), as well as device-specific documentation on Microsoft Connect.
 
--   [Device-specific power management for modern standby](device-specific-power-management-for-modern-standby.md).
--   Device-specific documentation available on the Microsoft Connect website
 
 ## Powering down networking devices
-
 
 Powering down the networking and radio devices is another key part of preparing the hardware for low-power operation during modern standby. Networking and radio devices are different from other devices outside of the SoC because they must remain on with power applied to listen for interesting events and wake the SoC. For example, the Wi-Fi radio must be capable of listening for packets that match WoL patterns and waking the SoC when a matching packet is detected.
 
@@ -73,8 +69,8 @@ In addition, a radio device, such as a Bluetooth or near-field communications (N
 
 Each networking or radio device has its own implementation of powering down for modern standby. System designers are encouraged to read the device class-specific documents on the Microsoft Connect website.
 
-## Powering down on-SoC host controllers
 
+## Powering down on-SoC host controllers
 
 After all devices outside of the SoC, including network and radio devices, have been powered down, the host controllers to which the devices are attached must power down. Common host controllers include USB, PCI, SDIO, GPIO, and I²C.
 
@@ -82,17 +78,17 @@ The driver for each host controller can power down the hardware only after every
 
 All host controllers on the SoC must power down for modern standby in order for the SoC itself to power down. This is why it is critical that every device in a modern standby perform device power management. The SoC itself can only power down when each host controller has powered down. The host controllers can power down only after all devices connected to them have powered down.
 
-## Powering down CPUs and GPUs
 
+## Powering down CPUs and GPUs
 
 In terms of power management, CPUs and GPUs on the SoC chip are different from other devices. CPUs and GPUs power down as part of powering down the SoC itself and are able to be powered down whenever there is no software activity targeted to them.
 
-Most software activity on the system will be stopped through the preparation stages detailed in Prepare hardware for modern standby. Windows Store apps will be paused as part of the PLM phase. Desktop applications will be paused as part of completing the DAM phase. The only CPU activities that remain after the platform enters the resiliency phase are idle operations of Windows itself. Similarly, there is little GPU activity because all apps have been paused and the screen is turned off.
+Most software activity on the system will be stopped through the preparation stages detailed in Prepare hardware for modern standby. Microsoft Store apps will be paused as part of the PLM phase. Desktop applications will be paused as part of completing the DAM phase. The only CPU activities that remain after the platform enters the resiliency phase are idle operations of Windows itself. Similarly, there is little GPU activity because all apps have been paused and the screen is turned off.
 
 Windows continually manages the power state of the CPUs on the system, even when the screen is on and the user is working with the PC. The same CPU power state management places the CPUs in a low-power mode during modern standby. When all CPUs are in a low-power mode and all host controllers on the SoC have been powered down, the SoC itself can be powered down.
 
-## Powering down the SoC
 
+## Powering down the SoC
 
 When all the individual host controllers, CPUs, and GPUs on the SoC have been powered down, Windows will determine if it is safe to power down the entire SoC itself. The SoC vendor provides a power engine plug-in (PEP) to tell Windows when all of the state on the SoC has been saved so that the SoC is ready to enter a low-power mode. For Intel based SoCs, the PEP is provided inbox.
 
@@ -108,9 +104,3 @@ The DRIPS state always has the following characteristics:
  
 
  
-
-
-
-
-
-

@@ -1,5 +1,5 @@
 ---
-title: Overriding the voicemail number on the UICC
+title: Override the voicemail number on the UICC
 description: Mobile operators can override the voicemail number on the UICC with a different voicemail number that is configured in the registry.
 MSHAttr:
 - 'PreferredSiteName:MSDN'
@@ -12,7 +12,7 @@ ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-# Overriding the voicemail number on the UICC
+# Override the voicemail number on the UICC
 
 
 Mobile operators can override the voicemail number on the UICC with a different voicemail number that is configured in the registry.
@@ -25,7 +25,7 @@ This customization supports: **per-IMSI** value
 <a href="" id="instructions-"></a>**Instructions:**  
 1.  Create a customization answer file using the contents shown in the following code sample.
 
-    ```
+    ```XML
     <?xml version="1.0" encoding="utf-8" ?>  
 
     <ImageCustomizations xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate"  
@@ -78,12 +78,8 @@ This customization supports: **per-IMSI** value
 
 4.  Set `SimOverrideVoicemailNumber` to a string that contains the digits of the voicemail number to use instead of the voicemail number on the UICC.
 
- 
+## Related topics
 
- 
+[Prepare for Windows mobile development](https://docs.microsoft.com/en-us/windows-hardware/manufacture/mobile/preparing-for-windows-mobile-development)
 
-
-
-
-
-
+[Customization answer file overview](https://docs.microsoft.com/en-us/windows-hardware/customize/mobile/mcsf/customization-answer-file)

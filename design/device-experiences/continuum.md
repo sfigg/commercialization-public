@@ -20,7 +20,7 @@ ms.technology: windows-oem
 
 Tablet mode is a new, adaptive user experience offered in Windows 10 that optimizes the look and behavior of apps and the Windows shell for the physical form factor and customer's usage preferences. This document describes how to implement tablet mode on 2-in-1 devices and tablets, specifically how to switch in and out of "tablet mode."
 
-Tablet mode is a feature that switches your device experience from tablet mode to desktop mode and back. The primary way for a user to enter and exit "tablet mode” is manually through the Action Center. In addition, OEMs can report hardware transitions (for example, transformation of 2-in-1 device from clamshell to tablet and vice versa), enabling automatic switching between the two modes. However, a key promise of tablet mode is that the user remains in control of their experience at all times, so these hardware transitions are surfaced through a toast prompt that must be confirmed by the user. Users also have the option to set the default response.
+Tablet mode is a feature that switches your device experience from tablet mode to desktop mode and back. The primary way for a user to enter and exit "tablet mode” is manually through the Action Center, by clicking the icon in the lower right on the taskbar. In addition, OEMs can report hardware transitions (for example, transformation of 2-in-1 device from clamshell to tablet and vice versa), enabling automatic switching between the two modes. However, a key promise of tablet mode is that the user remains in control of their experience at all times, so these hardware transitions are surfaced through a toast prompt that must be confirmed by the user. Users also have the option to set the default response.
 
 **Target Devices**
 
@@ -35,8 +35,8 @@ Tablet mode is a feature that switches your device experience from tablet mode t
 When the device switches to tablet mode, the following occur:
 
 -   Start resizes across the entire screen, providing an immersive experience.
--   The title bars of Store apps auto-hide to remove unnecessary chrome and let content shine through.
--   Store apps and Win32 apps can optimize their layout to be touch-first when in tablet mode.
+-   The title bars of Microsoft Store apps auto-hide to remove unnecessary chrome and let content shine through.
+-   Microsoft Store apps and Win32 apps can optimize their layout to be touch-first when in tablet mode.
 -   The user can close apps, even Win32 apps, by swiping down from the top edge.
 -   The user can snap up to two apps side-by-side, including Win32 apps, and easily resize them simultaneously with their finger.
 -   Apps can auto-launch side-by-side to create multitasking layouts without much user effort.

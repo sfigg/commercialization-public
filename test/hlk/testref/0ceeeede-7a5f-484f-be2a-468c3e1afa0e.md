@@ -5,6 +5,12 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 43b83adb-5095-442e-9f8e-4aaee2ff7772
+author: sapaetsc
+ms.author: sapaetsc
+ms.date: 10/15/17
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # <span id="p_hlk_test.0ceeeede-7a5f-484f-be2a-468c3e1afa0e"></span>Camera Driver System Test - MediaCapture - ValidateFrameExposureCompensationCapabilities

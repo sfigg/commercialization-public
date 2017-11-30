@@ -5,6 +5,12 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 38797d12-18c2-41c7-8583-1a346a20b959
+author: sapaetsc
+ms.author: sapaetsc
+ms.date: 10/15/17
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # <span id="p_hlk_test.f31baae5-9e83-4ed2-ade0-ff4eb8bfea5b"></span>D3D12 - Resource Binding - Copy Descriptors using the copy descriptor API to do the exact same as the CopyDescriptorSimple

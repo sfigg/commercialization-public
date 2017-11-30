@@ -11,39 +11,33 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # Show pictures automatically when browsing
-
 
 Partners can enable or disable the **Show pictures automatically** setting in the browser's **advanced settings** screen.
 
-<a href="" id="constraints---none"></a>**Constraints:** None  
+<a href="" id="constraints---none"></a>**Constraints:** None
 
-<a href="" id="instructions-"></a>**Instructions:**  
-1.  Create a customization answer file using the contents shown in the following code sample.
+## Instructions
 
-    ```
-    <?xml version="1.0" encoding="utf-8" ?>  
-    <ImageCustomizations xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate"  
-                         Name="ShowPicturesAutomatically"  
-                         Description="Use to enable or disable the 'Show pictures automatically' setting in the browser's advanced settings screen."  
-                         Owner=""  
-                         OwnerType="OEM"> 
-      
-      <Static>  
+1. Create a customization answer file using the contents shown in the following code sample.
 
-        <Settings Path="MicrosoftEdge/DataSaving">  
-          <Setting Name="ShowPicturesAutomatically" Value="" /> 
-       </Settings>  
-
+    ```XML
+    <?xml version="1.0" encoding="utf-8" ?>
+    <ImageCustomizations xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate"
+                         Name="ShowPicturesAutomatically"
+                         Description="Use to enable or disable the 'Show pictures automatically' setting in the browser's advanced settings screen."
+                         Owner=""
+                         OwnerType="OEM">
+      <Static>
+        <Settings Path="MicrosoftEdge/DataSaving">
+          <Setting Name="ShowPicturesAutomatically" Value="" />
+       </Settings>
       </Static>
-
     </ImageCustomizations>
     ```
 
-2.  Specify an `Owner`.
-
-3.  Set `ShowPicturesAutomatically` to one of the following values:
+1. Specify an `Owner`.
+1. Set `ShowPicturesAutomatically` to one of the following values:
 
     <table>
     <colgroup>
@@ -68,21 +62,14 @@ Partners can enable or disable the **Show pictures automatically** setting in th
     </tbody>
     </table>
 
-     
+## Testing steps
 
-<a href="" id="testing-"></a>**Testing:**  
-1.  Flash the build containing this customization to a device.
+1. Flash the build containing this customization to a device.
+1. Open the browser settings screen and choose the **advanced settings** option.
+1. From the advanced settings screen, verify that **Show pictures automatically** is either enabled or disabled depending on the value that you set for `ShowPicturesAutomatically`.
 
-2.  Open the browser settings screen and choose the **advanced settings** option.
+## Related topics
 
-3.  From the advanced settings screen, verify that **Show pictures automatically** is either enabled or disabled depending on the value that you set for `ShowPicturesAutomatically`.
+[Prepare for Windows mobile development](https://docs.microsoft.com/en-us/windows-hardware/manufacture/mobile/preparing-for-windows-mobile-development)
 
- 
-
- 
-
-
-
-
-
-
+[Customization answer file overview](https://docs.microsoft.com/en-us/windows-hardware/customize/mobile/mcsf/customization-answer-file)

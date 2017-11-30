@@ -5,6 +5,12 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 412f6b71-5081-4b75-abdf-07f7cf04ceef
+author: sapaetsc
+ms.author: sapaetsc
+ms.date: 10/15/17
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # <span id="p_hlk_test.d1f2fbbe-d5e4-439d-819a-dc100df0e9ba"></span>SCSI Compliance Test 2.0 (LOGO)

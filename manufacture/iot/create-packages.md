@@ -131,46 +131,6 @@ Example:
 c:\oemsample>pkggen myPackage.wm.xml /universalbsp /variables:"_RELEASEDIR=c:\release"
 ```
 
-
-## View the contents of a package
-
-Packages use Windows cabinet file technology to store a set of files. Double-click the CAB file to view and extract its contents. Use notepad.exe to view update.mum, this describes how the files are installed onto the device.
-
-Sample contents of **OEM-Media-MediaService.cab**:
-```
-arm_dual_media.inf_31bf3856ad364e35_1.0.0.0_none_75dfa724a55b489d
-arm_dual_media.inf_31bf3856ad364e35_1.0.0.0_none_75dfa724a55b489d.manifest
-arm_dual_sample.inf_31bf3856ad364e35_1.0.0.0_none_a7012ffdafd1caf1
-arm_oem-featurearea-feature_31bf3856ad364e35_1.0.0.0_none_9e7ea37811ad5588
-arm_oem-media-mediaserv..ployment-deployment_31bf3856ad364e35_1.0.0.0_none_6127250c45e77506.manifest
-arm_oem-media-mediaservice_31bf3856ad364e35_1.0.0.0_none_7307c54952eeb87a
-arm_oem-media-mediaservice_31bf3856ad364e35_1.0.0.0_none_7307c54952eeb87a.manifest
-update.cat
-update.mum
-```
-
-**Sample contents of update.mum:**
-```xml
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<assembly manifestVersion="1.0" xmlns="urn:schemas-microsoft-com:asm.v3">
-  <assemblyIdentity name="OEM-Media-MediaService" version="1.0.0.0" processorArchitecture="arm" language="neutral" publicKeyToken="31bf3856ad364e35" buildType="release" versionScope="nonSxS" />
-  <package identifier="OEM-Media-MediaService" releaseType="Feature Pack" binaryPartition="false" targetPartition="MainOS">
-    <customInformation>
-      <phoneInformation phoneRelease="Production" phoneOwner="OEM" phoneOwnerType="OEM" phoneComponent="OEM-Media-MediaService" phoneSubComponent="" phoneGroupingKey="" />
-      <file name="update.mum" size="823" staged="600" compressed="600" sourcePackage="" cabpath="update.mum" />
-      <file name="$(runtime.system32)\catroot\{F750E6C3-38EE-11D1-85E5-00C04FC295EE}\update.cat" size="910" staged="713" compressed="713" sourcePackage="" cabpath="update.cat" />
-      <file name="arm_oem-media-mediaserv..ployment-deployment_31bf3856ad364e35_1.0.0.0_none_6127250c45e77506.manifest" size="689" staged="560" compressed="560" sourcePackage="" cabpath="arm_oem-media-mediaserv..ployment-deployment_31bf3856ad364e35_1.0.0.0_none_6127250c45e77506.manifest" />
-      <file name="arm_oem-media-mediaservice_31bf3856ad364e35_1.0.0.0_none_7307c54952eeb87a.manifest" size="423" staged="423" compressed="423" sourcePackage="" cabpath="arm_oem-media-mediaservice_31bf3856ad364e35_1.0.0.0_none_7307c54952eeb87a.manifest" />
-    </customInformation>
-    <update name="OEM-Media-MediaService-Deployment-Deployment">
-      <component>
-        <assemblyIdentity name="OEM-Media-MediaService-Deployment-Deployment" version="1.0.0.0" processorArchitecture="arm" language="neutral" publicKeyToken="31bf3856ad364e35" buildType="release" versionScope="nonSxS" />
-      </component>
-    </update>
-  </package>
-</assembly>
-```
-
 ## Add a driver component
 
 In the package definition file, use the **driver** element to inject drivers. We recommend using relative paths, as it's typically the simplest way to describe the INF source path.
@@ -308,7 +268,7 @@ Use the newAppxPkg with the same component name. This regenerates the customizat
 newAppxPkg "C:\DefaultApp\IoTCoreDefaultApp_1.2.0.0_ARM_Debug_Test\IoTCoreDefaultApp_1.2.0.0_ARM_Debug_Test.appx" fga Appx.MyUWPApp
 ```
 
-Learn more: [Add apps](deploy-your-app-with-a-standard-board).
+Learn more: [Add apps](deploy-your-app-with-a-standard-board.md).
 
 ### Adding files: watch out for zero-sized files, relative paths
 

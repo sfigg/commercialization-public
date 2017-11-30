@@ -10,6 +10,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
+redirect_url: https://docs.microsoft.com/en-us/windows-hardware/customize/mobile/mcsf/dtmf-tones
 ---
 
 # Long tones
@@ -24,7 +25,7 @@ By default, the device supports Dual-Tone Multi-frequency (DTMF) with continuous
 <a href="" id="instructions-"></a>**Instructions:**  
 1.  Create a customization answer file using the contents shown in the following code sample.
 
-    ```
+    ```XML
     <?xml version="1.0" encoding="utf-8" ?>  
     <ImageCustomizations xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate"  
                          Name="ShowLongTones"  
@@ -74,12 +75,8 @@ By default, the device supports Dual-Tone Multi-frequency (DTMF) with continuous
 
     By default, the user option for toggling between short and long tones is hidden on GSM phones and visible for CDMA phones.
 
- 
+## Related topics
 
- 
+[Prepare for Windows mobile development](https://docs.microsoft.com/en-us/windows-hardware/manufacture/mobile/preparing-for-windows-mobile-development)
 
-
-
-
-
-
+[Customization answer file overview](https://docs.microsoft.com/en-us/windows-hardware/customize/mobile/mcsf/customization-answer-file)
