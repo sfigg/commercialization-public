@@ -5,6 +5,12 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: aecc06ab-04d1-4cde-88db-44378528b15c
+author: sapaetsc
+ms.author: sapaetsc
+ms.date: 10/15/17
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # <span id="p_hlk_test.e24cdda3-c9d0-424b-99dc-dfaca63bc992"></span>MTP Compliance Test - Core - Miscellaneous

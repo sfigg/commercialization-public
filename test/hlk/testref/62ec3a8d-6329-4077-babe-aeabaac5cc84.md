@@ -6,6 +6,12 @@ MSHAttr:
 - 'PreferredLib:/library/windows/hardware'
 Search.SourceType: Video
 ms.assetid: bde8be34-cee5-4e91-9a2d-31300c02e889
+author: sapaetsc
+ms.author: sapaetsc
+ms.date: 10/15/17
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # <span id="p_hlk_test.62ec3a8d-6329-4077-babe-aeabaac5cc84"></span>Camera Driver Controls Device Test - CAMERA\_PROFILES - Log all profiles

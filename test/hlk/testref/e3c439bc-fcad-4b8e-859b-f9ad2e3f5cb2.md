@@ -5,6 +5,12 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 77444d9a-6f15-4100-a6e1-4c26a2b00d6c
+author: sapaetsc
+ms.author: sapaetsc
+ms.date: 10/15/17
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # <span id="p_hlk_test.e3c439bc-fcad-4b8e-859b-f9ad2e3f5cb2"></span>Camera Driver Controls System Test - FOCUSPRIORITY - Verify correct Pin

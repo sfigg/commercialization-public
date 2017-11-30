@@ -5,6 +5,12 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: bc72bcc8-a933-45c7-9fa5-8566ec852c28
+author: sapaetsc
+ms.author: sapaetsc
+ms.date: 10/15/17
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # <span id="p_hlk_test.28f83153-ca18-4dab-ac89-3cbaed88beda"></span>UCSI commands - Get Alternate Modes, SOP-DoublePrime

@@ -5,6 +5,12 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 1e222537-4b7e-4a75-8b01-09cf49534f3c
+author: sapaetsc
+ms.author: sapaetsc
+ms.date: 10/15/17
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # <span id="p_hlk_test.ac970c9b-8d76-4cd6-bc8a-3efdd8ec6fb7"></span>Thin Provisioning Threshold and Resource Exhaustion Test (LOGO)

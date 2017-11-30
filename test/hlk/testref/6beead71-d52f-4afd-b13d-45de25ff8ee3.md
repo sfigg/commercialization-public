@@ -5,6 +5,12 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: bcd8cc77-5e60-447a-9297-9d03470cbd1e
+author: sapaetsc
+ms.author: sapaetsc
+ms.date: 10/15/17
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # <span id="p_hlk_test.6beead71-d52f-4afd-b13d-45de25ff8ee3"></span>Win6\_4.MB.SMS.SendRecvSMSTransferDataOnDiffSubPhoneStress

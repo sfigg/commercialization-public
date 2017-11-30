@@ -34,7 +34,7 @@ The Windows Hardware Compatibility Program uses an official playlist to determin
 
 The latest playlist can be downloaded at the following location:
 
-- [https://sysdev.microsoft.com/en-US/Hardware/compatibilityplaylists/](https://sysdev.microsoft.com/en-US/Hardware/compatibilityplaylists/)
+- [http://aka.ms/HLKPlaylist](http://aka.ms/HLKPlaylist )
 
 ## Hardware Certification Policies and Processes for Windows 10, version 1709
 

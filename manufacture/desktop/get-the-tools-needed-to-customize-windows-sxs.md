@@ -91,9 +91,8 @@ Get the distribution product keys that match the Windows 10 image.
 
     ![Extract USB](images/extract-usb.png) 
 
-2.  Download most of the lab samples from [USB-B.zip](http://download.microsoft.com/download/5/8/4/5844EE21-4EF5-45B7-8D36-31619017B76A/USB-B.zip), and extract the files to the drive.
-
-    Add to this the [newer version of the deployment sample scripts](http://go.microsoft.com/fwlink/p/?LinkId=800657). 
+2.  Download the [USB-B.zip lab samples from the Microsoft download center](http://download.microsoft.com/download/3/F/2/3F2646EF-D589-498C-9F07-DE5549BE018E/USB-B.zip), and extract the files to the drive.
+ 
 
 ## <span id="prepare"></span><span id="PREPARE"></span>Prepare your technician PC
 
