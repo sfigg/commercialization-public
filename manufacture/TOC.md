@@ -79,6 +79,8 @@
 ##### [Keyboard Identifiers and Input Method Editors for Windows](desktop/windows-language-pack-default-values.md)
 ##### [Where is lp.cab?](desktop/where-is-lpcab.md)
 #### [Features On Demand V2 (Capabilities)](desktop/features-on-demand-v2--capabilities.md)
+##### [Available Features on Demand](features-on-demand-non-language-fod.md)
+##### [Language and Region capabilities](features-on-demand-language-fod.md)
 #### [Configure Oobe.xml](desktop/configure-oobexml.md)
 ##### [Oobe.xml Settings](desktop/oobexml-settings.md)
 ##### [How Oobe.xml Works](desktop/how-oobexml-works.md)
