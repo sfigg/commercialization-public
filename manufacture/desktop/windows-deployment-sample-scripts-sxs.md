@@ -708,7 +708,7 @@ goto :end
      set _P=
      set _VAL=
 goto :eof
- 
+
 :end 
 ```
 
@@ -876,7 +876,7 @@ wpeutil CreatePageFile /path=%TARGETOSDRIVE%\PageFile.sys /size=256
 
 To learn more about using extensibility points for push-button reset, see [Add a script to push-button reset features](http://go.microsoft.com/fwlink/?LinkId=618946).
 
-## <span id="Reinstall_Windows_inbox_apps"></span>Reinstall Windows inbox apps (Windows 10, version 1607)
+## <span id="Reinstall_Windows_inbox_apps"></span>Reinstall Windows inbox apps
 
 Reinstall Windows apps after adding a new language. You can reinstall the apps without removing them first. 
 
