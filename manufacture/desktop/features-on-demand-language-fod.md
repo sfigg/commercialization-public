@@ -10,7 +10,7 @@ ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-# Language and region-related Features on Demand
+# Language and region capabilites
 
 ## <span id="language_capabilities"></span><span id="Language_capabilities"></span> Language and region-related capabilities reference
 

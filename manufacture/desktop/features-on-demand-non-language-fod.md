@@ -10,7 +10,7 @@ ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-# Available features on demand
+# Available capabilities
 
 The following Features on Demand are available for Windows 10. To see how to install, remove, or get information about Feature on Demand packages, see [Features on Demand V2 (Capabilities)](features-on-demand-v2--capabilities.md). 
 
