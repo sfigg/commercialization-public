@@ -76,7 +76,7 @@ Methods for adding device drivers by using Windows Setup include these:
 
 -   Using an answer file to add drivers during the **windowsPE** configuration pass of Setup.
 
--   For Windows Server®, placing drivers in the $WinPEDriver$ directory to be installed automatically during the **windowsPE** configuration pass of Setup. All drive letters with a value of C or greater are scanned for a $WinPEDriver$ directory. The drive must be accessible to the hard disk during Setup. Make sure that the drive does not require a storage driver to be loaded before it can be accessed.
+-   For Windows Server, placing drivers in the $WinPEDriver$ directory to be installed automatically during the **windowsPE** configuration pass of Setup. All drive letters with a value of C or greater are scanned for a $WinPEDriver$ directory. The drive must be accessible to the hard disk during Setup. Make sure that the drive does not require a storage driver to be loaded before it can be accessed.
 
 For more information about these and other configuration passes, see [Windows Setup Configuration Passes](windows-setup-configuration-passes.md).
 
@@ -91,6 +91,10 @@ Methods for adding device drivers online to a running operating system include t
 -   Using PnPUtil to add or remove PnP drivers. For more information, see [Use PnPUtil at a command line to install a Plug and Play device](http://go.microsoft.com/fwlink/?LinkId=139151).
 
 -   Using an answer file to automate the installation of PnP drivers when the computer is booted in audit mode. For more information, see [Add a Driver Online in Audit Mode](add-a-driver-online-in-audit-mode.md).
+
+### Drivers for Windows 10 S
+
+Drivers in Windows 10 S must meet certain requirements. See [Windows 10 S driver requirements](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/Windows10SDriverRequirements) to learn about the types of drivers you can add to Windows 10 S.
 
 ## <span id="DriverMgmt"></span><span id="drivermgmt"></span><span id="DRIVERMGMT"></span>Managing Driver Folders
 
