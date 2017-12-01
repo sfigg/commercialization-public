@@ -32,127 +32,32 @@ Use DISM to add or remove capabilities:
 -   Use the /Image:&lt;mount path&gt; option to add the capability to a Windows image file (.wim).
  
 
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Command</th>
-<th align="left">Description</th>
-<th align="left">Example</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">/Add-Capability</td>
-<td align="left"><p>Adds a capability to an image.</p>
-<p>For packages with dependencies this also pulls dependent packages. For example, if you add the Speech package, you'll also get the Text-to-speech and Basic packages in addition to Speech.</p></td>
-<td align="left">DISM.exe /Online /Add-Capability /CapabilityName:Language.Basic~\~\~en-US~0.0.1.0</td>
-</tr>
-<tr class="even">
-<td align="left">/Get-Capabilities</td>
-<td align="left">Get capabilities in the image.</td>
-<td align="left">DISM /Online /Get-Capabilities</td>
-</tr>
-<tr class="odd">
-<td align="left">/Get-CapabilityInfo</td>
-<td align="left">Get information of a capability in the image.</td>
-<td align="left">DISM /Online /Get-CapabilityInfo /CapabilityName:Language.Basic~\~\~en-US~0.0.1.0</td>
-</tr>
-<tr class="even">
-<td align="left">/Remove-Capability</td>
-<td align="left"><p>Removes a capability from an image.</p>
-<p>Note: You cannot remove a capability that other packages depend on. For example, if you have the French handwriting and basic capabilities installed, you can't remove the basic capability. This will fail.</p></td>
-<td align="left">DISM.exe /Online /Remove-Capability /CapabilityName:Language.Basic~~~en-US~0.0.1.0</td>
-</tr>
-</tbody>
-</table>
+| Command | Description | Example |
+| --- | --- | --- |
+| /Add-Capability | Adds a capability to an image.<br></br>For packages with dependencies this also pulls dependent packages. For example, if you add the Speech package, you'll also get the Text-to-speech and Basic packages in addition to Speech. | `DISM.exe /Online /Add-Capability /CapabilityName:Language.Basic~~~en-US~0.0.1.0` |
+| /Get-Capabilities | Get capabilities in the image. | `DISM /Online /Get-Capabilities` |
+| /Get-CapabilityInfo | Get information of a capability in the image. | `DISM /Online /Get-CapabilityInfo /CapabilityName:Language.Basic~~~en-US~0.0.1.0` |
+| /Remove-Capability | Removes a capability from an image. <br></br>**Note**: You cannot remove a capability that other packages depend on. For example, if you have the French handwriting and basic capabilities installed, you can't remove the basic capability. | `DISM.exe /Online /Remove-Capability  CapabilityName:Language.Basic~~~en-US~0.0.1.0` |
 
- 
 
 ## <span id="Capabilities_reference"></span><span id="capabilities_reference"></span><span id="CAPABILITIES_REFERENCE"></span>Capabilities reference
 
-
-### <span id="DOTNET"></span><span id="dotnet"></span> .NET Framework  
-
-| Component | Description                                                             |
-|-----------|-------------------------------------------------------------------------|
-| NetFx3    | .NET 3.x Framework, a software framework required by many applications. |
-
-
-### <span id="OPENSSH"></span><span id="openssh"></span> OpenSSH (Beta)
-
-| Component             | Description                                                            |
-|-----------------------|------------------------------------------------------------------------|
-| OpenSSH Client (Beta) | The beta release of an OpenSSH client for remoting and authentication. |
-| OpenSSH Server (Beta) | The beta release of an OpenSSH server for remoting and authentication. |
-
-
-### <span id="language_capabilities"></span><span id="Language_capabilities"></span> Language capabilities
+### <span id="language_capabilities"></span><span id="Language_capabilities"></span> Language and region-related capabilities
 
 Not all capabilities are available for every language.
 
-<table>
-<colgroup>
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Component</th>
-<th align="left">Sample file name</th>
-<th align="left">Dependencies</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">Basic</td>
-<td align="left"><code>Microsoft-Windows-LanguageFeatures-Basic-fr-fr-Package</code></td>
-<td align="left">None</td>
-<td align="left"><p>Spell checking, text prediction, word breaking, and hyphenation if available for the language.</p>
-<p>You must add this component before adding any of the following components.</p></td>
-</tr>
-<tr class="even">
-<td align="left">Fonts</td>
-<td align="left"><code>Microsoft-Windows-LanguageFeatures-Fonts-Thai-Package</code></td>
-<td align="left">None</td>
-<td align="left"><p>Fonts.</p>
-<p>Required for some regions to render text that appears in documents. Example, th-TH requires the Thai font pack. </p></td>
-</tr>
-<tr class="odd">
-<td align="left">Optical character recognition</td>
-<td align="left"><code>Microsoft-Windows-LanguageFeatures-OCR-fr-fr-Package</code></td>
-<td align="left">Basic</td>
-<td align="left">Recognizes and outputs text in an image.</td>
-</tr>
-<tr class="even">
-<td align="left">Handwriting recognition</td>
-<td align="left"><code>Microsoft-Windows-LanguageFeatures-Handwriting-fr-fr-Package</code></td>
-<td align="left">Basic</td>
-<td align="left">Enables handwriting recognition for devices with pen input.</td>
-</tr>
-<tr class="odd">
-<td align="left">Text-to-speech</td>
-<td align="left"><code>Microsoft-Windows-LanguageFeatures-TextToSpeech-fr-fr-Package</code></td>
-<td align="left">Basic</td>
-<td align="left">Enables text to speech, used by Cortana and Narrator.</td>
-</tr>
-<tr class="even">
-<td align="left">Speech recognition</td>
-<td align="left"><code>Microsoft-Windows-LanguageFeatures-Speech-fr-fr-Package</code></td>
-<td align="left">Basic, Text-To-Speech</td>
-<td align="left">Recognizes voice input, used by Cortana and Windows Speech Recognition.</td>
-</tr>
-</tbody>
-</table>
 
-### <span id="Fonts"></span><span id="fonts"></span> Font capabilities
+| Component | Sample file name | Dependencies | Description |
+| --------- | ---------------- | ------------ | ----------- |
+| Basic     | `Microsoft-Windows-LanguageFeatures-Basic-fr-fr-Package` | None | Spell checking, text prediction, word breaking, and hyphenation if available for the language.<br></br>You must add this component before adding any of the following components. |
+| Fonts     | `Microsoft-Windows-LanguageFeatures-Fonts-Thai-Package`  | None | Fonts.<br></br>Required for some regions to render text that appears in documents. Example, th-TH requires the Thai font pack.<br></br>See [font capabilities](#fonts) for available font capabilities. |
+| Optical character recognition | `Microsoft-Windows-LanguageFeatures-OCR-fr-fr-Package` | Basic | Recognizes and outputs text in an image. |
+| Handwriting recognition | `Microsoft-Windows-LanguageFeatures-Handwriting-fr-fr-Package` | Basic | Enables handwriting recognition for devices with pen input. |
+| Text-to-speech | `Microsoft-Windows-LanguageFeatures-TextToSpeech-fr-fr-Package` | Basic | Enables text to speech, used by Cortana and Narrator. |
+| Speech recognition | `Microsoft-Windows-LanguageFeatures-Speech-fr-fr-Package` | Basic, Text-To-Speech | Recognizes voice input, used by Cortana and Windows Speech Recognition. |
+
+
+#### <span id="Fonts"></span><span id="fonts"></span> Font capabilities
 
 When adding languages for some regions, you'll need to add font capabilities.
 
@@ -195,22 +100,85 @@ When adding languages for some regions, you'll need to add font capabilities.
 | zh-CN       | Chinese (Simplified)                   | Microsoft-Windows-LanguageFeatures-Fonts-Hans-Package |
 | zh-TW       | Chinese Traditional (Hong Kong, Macau and Taiwan)          | Microsoft-Windows-LanguageFeatures-Fonts-Hant-Package |
 
-### <span id="Additional_fonts"></span><span id="additional_fonts"></span> Additional fonts available:
+#### <span id="Additional_fonts"></span><span id="additional_fonts"></span> Additional fonts available:
 
 These fonts are optional and not required for any region.
 
-| Name                                                                          | Description                                                                                                                                         |
-|-------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
+| Name      | Description  |
+|----------|------------|
 | Microsoft-Windows-LanguageFeatures-Fonts-PanEuropeanSupplementalFonts-Package | Pan-European Supplemental Fonts. Includes additional fonts: Arial Nova, Georgia Pro, Gill Sans Nova, Neue Haas Grotesk, Rockwell Nova, Verdana Pro. |
 
-### <span id="Region_requirements"></span><span id="region_requirements"></span> Other region-specific requirements
+#### <span id="Region_requirements"></span><span id="region_requirements"></span> Other region-specific requirements
 
-| Region | Description                   | Capability                                             | Description                                                                                                            |
-|--------|-------------------------------|--------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|
-| zh-TW  | Chinese (Traditional, Taiwan) | Microsoft-Windows-InternationalFeatures-Taiwan-Package | Supplemental support for Taiwan date formatting requirements. Package will be provided to customers located in Taiwan. |
+| Region | Description                   | Capability                                             | Description        | Recommendation                                                                                                     |
+|--------|-------------------------------|--------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------|---|
+| zh-TW  | Chinese (Traditional, Taiwan) | Microsoft-Windows-InternationalFeatures-Taiwan-Package | Supplemental support for Taiwan date formatting requirements. Package will be provided to customers located in Taiwan. | Preinstall only on devices shipping to the Taiwan market. |
 
-### List of all language-related features on demand
+#### List of all language-related features on demand
 [Download the list of all available language FODs](http://download.microsoft.com/download/0/A/A/0AA4342D-3933-4216-A90D-3BA8392FB1D1/Windows 10 1703 FOD to LP Mapping Table.xlsx)
+
+
+### Non-language capabilities
+
+#### <span id="DOTNET"></span><span id="dotnet"></span> .NET Framework  
+
+.NET framework adds support for 3rd party .NET3.x apps.
+
+**Recommendation:** Preinstall this capabilities on devices that are preloaded with apps that require .NET3.x.
+
+| Component | Name | Description                                            | Size |
+|-----------|-----------------------------------|--------------------------------------| --- |
+| NetFx3    |  Microsoft-Windows-NetFx3-OnDemand-Package.cab     | .NET 3.x Framework, a software framework required by many applications. | 70805 |
+|           | Microsoft-Windows-NetFx3-OnDemand-en-US-Package.cab |   | 98   |
+|           | Microsoft-Windows-NetFx3-OnDemand-ja-JP-Package.cab |   | 1438 |
+
+
+
+#### <span id="OPENSSH"></span><span id="openssh"></span> OpenSSH (Beta)
+
+The OpenSSH capabilites enable the use of OpenSSH on a Windows PC.
+
+**Recommendation:** Don't include these capabilities on your image.
+
+| Component          | Name                       | Description                                   | Size |
+|-----------------------|---------------------------|-------------------------------------|-----|
+| OpenSSH Client (Beta) | OpenSSH-Client-Package.cab | The beta release of an OpenSSH client for remoting and authentication. | 657 |
+| OpenSSH Server (Beta) | OpenSSH-Server-Package.cab | The beta release of an OpenSSH server for remoting and authentication. | 660 |
+
+
+#### Internet Explorer
+
+Internet Explorer Features on Demand enable preinstallation of Internet Explorer.
+
+**Recommendation:** Include the relevant capabilities on images that include Internet Explorer.
+
+| Component | Name |  Description |
+|-----------------------|---------------------------------------------------|---------------------|
+| Internet Explorer 11  | Microsoft-Windows-InternetExplorer-Optional-Package.cab | Preinstalls Internet Explorer on a device |
+| Internet Explorer 11  | Microsoft-Windows-InternetExplorer-Optional-en-US-Package.cab | Preinstalls Internet Explorer on a device |
+| Internet Explorer 11  | Microsoft-Windows-InternetExplorer-Optional-ja-JP-Package.cab | Preinstalls Internet Explorer on a device |
+
+
+
+
+
+
+Microsoft-OneCore-DeveloperMode-Desktop-Package.cab
+Microsoft-OneCore-Graphics-Tools-Package.cab
+Microsoft-Windows-Accessibility-Braille-Package.cab
+Microsoft-Windows-Holographic-Desktop-FOD-Package.cab
+Microsoft-Windows-InternationalFeatures-Taiwan-Package.cab
+Microsoft-Windows-InternetExplorer-Optional-Package.cab
+Microsoft-Windows-InternetExplorer-Optional-en-US-Package.cab
+Microsoft-Windows-InternetExplorer-Optional-ja-JP-Package.cab
+Microsoft-Windows-NetFx3-OnDemand-Package.cab
+Microsoft-Windows-NetFx3-OnDemand-en-US-Package.cab
+Microsoft-Windows-NetFx3-OnDemand-ja-JP-Package.cab
+Microsoft-Windows-Printing-EnterpriseCloudPrint-Package.cab
+Microsoft-Windows-Printing-MopriaCloudService-Package.cab
+
+
+
 
 ## <span id="related_topics"></span>Related topics
 
