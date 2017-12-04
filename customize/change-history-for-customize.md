@@ -15,6 +15,21 @@ ms.technology: windows-oem
 
 The following tables record the major changes that were made in the **Customize** section of the Windows 10 partner documentation since Windows 10, version 1607 was released.
 
+## December 2017
+
+| Topic                                          | Description                                                                                        |
+|:-----------------------------------------------|:---------------------------------------------------------------------------------------------------|
+| [Exclusive apps](preinstall/exclusive-apps.md) | New. Guidance on how OEMs can work with software developers to target OEM devices for apps to appear exclusively on, based on the OEM IDs set in the registry.    |
+
+## November 2017
+
+| Topic                                          | Description                                                                                        |
+|:-----------------------------------------------|:---------------------------------------------------------------------------------------------------|
+| [Customize OOBE](desktop/customize-oobe.md)    | Updated with recommendation for setting the default volume level during OOBE.                      |
+| [Connect users to the network during OOBE](desktop/connect-to-network.md) | Updated with clarifications on how Cellular and Wi-Fi connections are used during OOBE, and the types of updates that download during OOBE.   |
+| [Keyboard Filter](enterprise/keyboard-filter.md)     | Updated to note that Keyboard Filter is not supported in a remote desktop session.           |
+| [Unattend Setting: FirewallGroups](desktop/unattend/networking-mpssvc-svcfirewallgroups.md)   | Updated with guidance on how to obtain the correct FirewallGroup-Group value using PowerShell.    |
+
 ## October 17, 2017
 
 | Topic                                      | Description                                                                                        |

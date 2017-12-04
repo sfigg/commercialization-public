@@ -501,7 +501,8 @@
 #### [PERFBOOSTMODE](power-settings/legacy-config-options-perfboostmode.md)
 #### [PERFBOOSTPOL](power-settings/legacy-config-options-perfboostpol.md)
 
-## [Preinstalled apps](preinstall/preinstall-apps.md)
+## [Preinstalled apps](preinstall/preinstall-and-exclusive-apps.md)
+### [Exclusive apps](preinstall/exclusive-apps.md)
 ### [Preinstallable apps for desktop devices](preinstall/preinstallable-apps-for-windows-10-desktop.md)
 ### [Preinstallable apps for mobile devices](preinstall/preinstallable-apps-for-window-10-for-phones.md)
 ### [Preinstall tasks](preinstall/preinstall-tasks.md)
