@@ -16,6 +16,16 @@ The following Features on Demand are available for Windows 10. To see how to ins
 
 ## Available non-language capabilities
 
+> [!div class="op_single_selector"]
+> - [.Net Framework](#dotnet)
+> - [OpenSSH](#openssh)
+> - [Internet Explorer](#internet-explorer)
+> - [Developer Mode](#developer-mode)
+> - [Graphics Tools](#graphics-tools)
+> - [Accessibility](#accessibility)
+> - [Holographic](#holographic)
+> - [Printing](#printing)
+
 ### <span id="DOTNET"></span><span id="dotnet"></span> .NET Framework  
 
 .NET framework adds support for 3rd party .NET3.x apps.
