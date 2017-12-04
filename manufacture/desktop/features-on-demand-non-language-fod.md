@@ -66,7 +66,9 @@ Internet Explorer Features on Demand enable preinstallation of Internet Explorer
 
 ### Developer Mode
 
-**Recommendation:**
+An on-device diagnostic platform used via a browser.  Installs a SSH server on the device for UWP remote deployment as well as Windows Device Portal.
+
+**Recommendation:** In general, don't preinstall on devices. You can consider preinstalling on "developer edition" devices, where the primary market for the device is developers or users who plan on developing or testing UWPs.
 
 | Component | Name |  Description |
 |-----------------------|---------------------------------------------------|---------------------|
@@ -74,7 +76,9 @@ Internet Explorer Features on Demand enable preinstallation of Internet Explorer
 
 ### Graphics Tools
 
-**Recommendation:**
+Used for Direct3D application development.  It is typically installed by AAA game engine developers, enterprise graphics software developrs (e.g. graphics developers at Autodesk), or niche hobbyists.  
+
+**Recommendation:** Don't install. This capability is only needed by specific users who can trigger installation through Visual Studio when certain optional packages are chosen at install.
 
 | Component | Name |  Description |
 |-----------------------|---------------------------------------------------|---------------------|
