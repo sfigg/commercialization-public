@@ -104,7 +104,7 @@ The following tables describe the directional thinking around Microsoft Azure St
     <tr><th colspan="2">MANAGEMENT</th><th>Microsoft Azure Stack Certification</th></tr>
     <tr><td>Startup/Boot</td><td>Startup, boot-up and operations proceed without the intervention of a network switch administrator.</td><td>Required</td></tr>
     <tr><td>Monitoring</td><td>SNMP v1or SNMP v2</td><td>Required</td></tr>
-    <tr><td>SNMP MIBs</td><td>MIB-II (RFC 1213), LLDP, Interface MIB (RFC 2863), IF-MIB, IP-MIB, IP-FORWARD-MIB, Q-BRIDGE-MIB, BRIDGE-MIB, LLDB-MIB, Entity-MIB, IEEE8023-LAG-MIB</td><td>Required</td></tr>
+    <tr><td>SNMP MIBs</td><td>MIB-II (RFC 1213), LLDP, Interface MIB (RFC 2863), IF-MIB, IP-MIB, IP-FORWARD-MIB, Q-BRIDGE-MIB, BRIDGE-MIB, LLDP-MIB, Entity-MIB, IEEE8023-LAG-MIB</td><td>Required</td></tr>
     <tr><td>Flow monitoring</td><td><p>Port mirroring</p><p>IPFIX</p></td><td>If Implemented</td></tr>
     <tr><td>Events/Logging</td><td>Syslog (for events and change detection)</td><td>If Implemented</td></tr>
 	<tr><td></td><td>Traps (Device must support multiple-trap destinations.)</td><td>Required</td></tr>
