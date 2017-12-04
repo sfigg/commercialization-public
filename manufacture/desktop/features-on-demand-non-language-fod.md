@@ -72,7 +72,7 @@ An on-device diagnostic platform used via a browser.  Installs a SSH server on t
 
 | Component | Name |  Description |
 |-----------------------|---------------------------------------------------|---------------------|
-|  | Microsoft-OneCore-DeveloperMode-Desktop-Package.cab |  |
+| Windows Developer Mode | Microsoft-OneCore-DeveloperMode-Desktop-Package.cab |  |
 
 ### Graphics Tools
 
@@ -82,7 +82,7 @@ Used for Direct3D application development.  It is typically installed by AAA gam
 
 | Component | Name |  Description |
 |-----------------------|---------------------------------------------------|---------------------|
-|  | Microsoft-OneCore-Graphics-Tools-Package.cab |  |
+| Graphics Tools | Microsoft-OneCore-Graphics-Tools-Package.cab |  |
 
 ### Accessibility
 
@@ -92,7 +92,7 @@ This package enables Braille devices to work with the inbox Narrator screen read
 
 | Component | Name |  Description |
 |-----------------------|---------------------------------------------------|---------------------|
-|  | Microsoft-Windows-Accessibility-Braille-Package.cab |  |
+| Accessibility - Braille Support | Microsoft-Windows-Accessibility-Braille-Package.cab |  |
 
 ### Holographic
 
@@ -102,7 +102,7 @@ This capability enables Mixed Reality devices to be used on a PC.
 
 | Component | Name |  Description |
 |-----------------------|---------------------------------------------------|---------------------|
-|  | Microsoft-Windows-Holographic-Desktop-FOD-Package.cab |  |
+| Windows Mixed Reality | Microsoft-Windows-Holographic-Desktop-FOD-Package.cab |  |
 
 
 ### Printing
