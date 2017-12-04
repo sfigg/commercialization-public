@@ -24,7 +24,7 @@ The following Features on Demand are available for Windows 10. To see how to ins
 
 | Component | Name | Description                                            | Size |
 |-----------|-----------------------------------|--------------------------------------| --- |
-| NetFx3    |  Microsoft-Windows-NetFx3-OnDemand-Package.cab     | .NET 3.x Framework, a software framework required by many applications. | 70805 |
+| NetFx3    | Microsoft-Windows-NetFx3-OnDemand-Package.cab     | .NET 3.x Framework, a software framework required by many applications. | 70805 |
 |           | Microsoft-Windows-NetFx3-OnDemand-en-US-Package.cab |   | 98   |
 |           | Microsoft-Windows-NetFx3-OnDemand-ja-JP-Package.cab |   | 1438 |
 
@@ -54,21 +54,50 @@ Internet Explorer Features on Demand enable preinstallation of Internet Explorer
 | Internet Explorer 11  | Microsoft-Windows-InternetExplorer-Optional-en-US-Package.cab | Preinstalls Internet Explorer on a device |
 | Internet Explorer 11  | Microsoft-Windows-InternetExplorer-Optional-ja-JP-Package.cab | Preinstalls Internet Explorer on a device |
 
+### Developer Mode
+
+**Recommendation:**
+
+| Component | Name |  Description |
+|-----------------------|---------------------------------------------------|---------------------|
+|  | Microsoft-OneCore-DeveloperMode-Desktop-Package.cab |  |
+
+### Graphics Tools
+
+**Recommendation:**
+
+| Component | Name |  Description |
+|-----------------------|---------------------------------------------------|---------------------|
+|  | Microsoft-OneCore-Graphics-Tools-Package.cab |  |
+
+### Accessibility
+
+This package enables Braille devices to work with the inbox Narrator screen reader.
+
+**Recommendation:** Don't include these capabilities in your image, as doing so could conflict with Braille device rights restrictions.
+
+| Component | Name |  Description |
+|-----------------------|---------------------------------------------------|---------------------|
+|  | Microsoft-Windows-Accessibility-Braille-Package.cab |  |
+
+### Holographic
+
+This capability enables Mixed Reality devices to be used on a PC.
+
+**Recommendation:** Preinstall only if you're shipping a PC bundled with a compatible Mixed Reality device.
+
+| Component | Name |  Description |
+|-----------------------|---------------------------------------------------|---------------------|
+|  | Microsoft-Windows-Holographic-Desktop-FOD-Package.cab |  |
 
 
+### Printing
 
+This capability is for devices running Windows Server as a Print Server role which supports Azure AD joined devices.
 
+**Recommendation:** Only preinstall the capabilities on Windows Server devices running as a Print Server role.
 
-Microsoft-OneCore-DeveloperMode-Desktop-Package.cab
-Microsoft-OneCore-Graphics-Tools-Package.cab
-Microsoft-Windows-Accessibility-Braille-Package.cab
-Microsoft-Windows-Holographic-Desktop-FOD-Package.cab
-Microsoft-Windows-InternationalFeatures-Taiwan-Package.cab
-Microsoft-Windows-InternetExplorer-Optional-Package.cab
-Microsoft-Windows-InternetExplorer-Optional-en-US-Package.cab
-Microsoft-Windows-InternetExplorer-Optional-ja-JP-Package.cab
-Microsoft-Windows-NetFx3-OnDemand-Package.cab
-Microsoft-Windows-NetFx3-OnDemand-en-US-Package.cab
-Microsoft-Windows-NetFx3-OnDemand-ja-JP-Package.cab
-Microsoft-Windows-Printing-EnterpriseCloudPrint-Package.cab
-Microsoft-Windows-Printing-MopriaCloudService-Package.cab
+| Component | Name |  Description |
+|-----------------------|---------------------------------------------------|---------------------|
+|  | Microsoft-Windows-Printing-EnterpriseCloudPrint-Package.cab |  |
+|  | Microsoft-Windows-Printing-MopriaCloudService-Package.cab | |

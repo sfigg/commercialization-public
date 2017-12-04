@@ -18,24 +18,29 @@ Features on Demand are available to add language capabilities to your Windows im
 
 ### Language capabilities
 
-Language capabilites are available in five types:
+**Recommendation:** Preinstall the relevant language capabilities for the languages you expect users in the device’s target market to need.
+
+Language capabilites are available in seven types:
 
 **Note:** Not all capabilities are available for every language.
 
 
 | Component | Sample file name | Dependencies | Description |
 | --------- | ---------------- | ------------ | ----------- |
-| Basic     | `Microsoft-Windows-LanguageFeatures-Basic-fr-fr-Package` | None | Spell checking, text prediction, word breaking, and hyphenation if available for the language.<br></br>You must add this component before adding any of the following components. |
-| Fonts     | `Microsoft-Windows-LanguageFeatures-Fonts-Thai-Package`  | None | Fonts.<br></br>Required for some regions to render text that appears in documents. Example, th-TH requires the Thai font pack.<br></br>See [font capabilities](#fonts) for available font capabilities. |
-| Optical character recognition | `Microsoft-Windows-LanguageFeatures-OCR-fr-fr-Package` | Basic | Recognizes and outputs text in an image. |
-| Handwriting recognition | `Microsoft-Windows-LanguageFeatures-Handwriting-fr-fr-Package` | Basic | Enables handwriting recognition for devices with pen input. |
-| Text-to-speech | `Microsoft-Windows-LanguageFeatures-TextToSpeech-fr-fr-Package` | Basic | Enables text to speech, used by Cortana and Narrator. |
-| Speech recognition | `Microsoft-Windows-LanguageFeatures-Speech-fr-fr-Package` | Basic, Text-To-Speech | Recognizes voice input, used by Cortana and Windows Speech Recognition. |
+| Basic     | `Microsoft-Windows-LanguageFeatures-Basic-fr-fr-Package` | None | Spell checking, text prediction, word breaking, and hyphenation if available for the language.<br></br>You must add this component before adding any of the following components. <br></br>**Recommendation:** Preinstall the relevant language capabilities for the languages you expect users in the device’s target market to need.|
+| Fonts     | `Microsoft-Windows-LanguageFeatures-Fonts-Thai-Package`  | None | Fonts.<br></br>**Recommendation:** If a PC will be sold to a certain region, install that region's Font (e.g., th-TH should be preinstalled on devices shipping to regions with Thai language). Example, th-TH requires the Thai font pack.<br></br>See [font capabilities](#fonts) for available font capabilities. |
+| Optical character recognition | `Microsoft-Windows-LanguageFeatures-OCR-fr-fr-Package` | Basic | Recognizes and outputs text in an image.<br></br>**Recommendation:** Only install on devices required to be OCR-capable. Most devices don't need this capability preinstalled. |
+| Handwriting recognition | `Microsoft-Windows-LanguageFeatures-Handwriting-fr-fr-Package` | Basic | Enables handwriting recognition for devices with pen input.<br></br>**Recommendation:** Preinstall for the device’s target language on any device with a touch- or pen-capable screen  |
+| Text-to-speech | `Microsoft-Windows-LanguageFeatures-TextToSpeech-fr-fr-Package` | Basic | Enables text to speech, used by Cortana and Narrator.<br></br>**Recommendation:** Don't install this capability by default. This FoD installs one language by default, and the user will select and download additional languages as needed. |
+| Speech recognition | `Microsoft-Windows-LanguageFeatures-Speech-fr-fr-Package` | Basic, Text-To-Speech | Recognizes voice input, used by Cortana and Windows Speech Recognition.<br></br>**Recommendation:** Don't install this capability by default. This FoD installs one language by default, and the user will select and download additional languages as needed. |
+
 
 
 ### <span id="Fonts"></span><span id="fonts"></span> Font capabilities
 
 When adding languages for some regions, you'll need to add font capabilities.
+
+**Recommendation:** If a PC will be sold to a certain region, install that region's Font (e.g., th-TH should be preinstalled on devices shipping to regions with Thai language).
 
 | Region      | Description                            | Font capability required                              |
 |-------------|----------------------------------------|-------------------------------------------------------|
