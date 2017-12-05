@@ -6,7 +6,7 @@ MSHAttr:
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 07E710A3-3368-476E-9EC1-12AA67B52498
 ms.author: alhopper
-ms.date: 10/17/2017
+ms.date: 12/5/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -20,6 +20,7 @@ The following tables record the major changes that were made in the **Customize*
 | Topic                                          | Description                                                                                        |
 |:-----------------------------------------------|:---------------------------------------------------------------------------------------------------|
 | [Exclusive apps](preinstall/exclusive-apps.md) | New. Guidance on how OEMs can work with software developers to target OEM devices for apps to appear exclusively on, based on the OEM IDs set in the registry.    |
+| [Hibernate Once Resume Many](enterprise/hibernate-once-resume-many-horm-.md)  | Updated to note that HORM (a feature of Unified Write Filter) can now be used on UEFI devices starting in Windows 10, version 1709.    |
 
 ## November 2017
 
@@ -27,7 +28,7 @@ The following tables record the major changes that were made in the **Customize*
 |:-----------------------------------------------|:---------------------------------------------------------------------------------------------------|
 | [Customize OOBE](desktop/customize-oobe.md)    | Updated with recommendation for setting the default volume level during OOBE.                      |
 | [Connect users to the network during OOBE](desktop/connect-to-network.md) | Updated with clarifications on how Cellular and Wi-Fi connections are used during OOBE, and the types of updates that download during OOBE.   |
-| [Keyboard Filter](enterprise/keyboard-filter.md)     | Updated to note that Keyboard Filter is not supported in a remote desktop session.           |
+| [Keyboard Filter](enterprise/keyboardfilter.md)      | Updated to note that Keyboard Filter is not supported in a remote desktop session.           |
 | [Unattend Setting: FirewallGroups](desktop/unattend/networking-mpssvc-svcfirewallgroups.md)   | Updated with guidance on how to obtain the correct FirewallGroup-Group value using PowerShell.    |
 
 ## October 17, 2017
