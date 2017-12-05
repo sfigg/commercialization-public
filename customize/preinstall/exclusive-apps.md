@@ -28,7 +28,7 @@ You must insert a combination of unique identifiers into your images to facilita
 The OEM Store ID (OEM ID) is required for you to create your OEM Store in the Microsoft Store and for app exclusivity. Here are the characteristics of an OEM Store ID:
 
 1. Assignment is a one-time operation; each OEM should have one and only one unique OEM Store ID.
-1. You must populate your OEM Store ID to the registry field specified in the "Registry Fields Requirements" table below.
+1. You must populate your OEM Store ID to the registry field specified in the [Registry Field Requirements](#registry-field-requirements) section below.
 1. OEM Store ID is set during manufacturing and cannot be changed later.
 
 ### SCM ID
@@ -42,12 +42,40 @@ The Store Content Modifier ID (SCM ID) is optional. You can use it in addition t
   | OEM-ID         | SCM ID                | Description                                                               |
   |:---------------|:----------------------|:--------------------------------------------------------------------------|
   | FABRIKAM       | Fabrikam_Enterprise   | Device group - segementing devices geared towards enterprise customers.   |
-  | FABRIKAM       | Fabrikam_Proseware    | Brand - grouping of the "Proseware" branded devices.                      |
-  | FABRIKAM       | Fabrikam_ProsewareX2  | Device - device-specific segment, Fabrikam Proseware model X2.            |
+  | FABRIKAM       | Fabrikam_Proseware    | Brand group - grouping of the "Proseware" branded devices.                |
+  | FABRIKAM       | Fabrikam_ProsewareX2  | Device group - device-specific segment, Fabrikam Proseware model X2.      |
 
   > [!Note]
   > If you do not currently have an SCM or chose not to differentiate your OEM Store by using a SCM, contact the Microsoft Store Partner Operations Team for instructions on setting up an OEM Store using only an OEM Store ID. If you have an SCM ID that was created for your Windows 8.1 devices, you can still use that SCM ID for your Windows 10-based device.  If you do so, you will still need to obtain your OEM Store ID from the Microsoft Store Partner Operations Team and insert that into your Windows 10 image.
 
 * Each device can have at most one SCM ID.
-* You populate the SCM ID to the registry field specified in the "Registry Fields Requirements" table below.
+* You populate the SCM ID to the registry field specified in the [Registry Field Requirements](#registry-field-requirements) section below.
 * The SCM ID is set during manufacturing and cannot be changed later.
+
+### Registry field requirements
+
+In order to use exclusive app features, you must set the following fields in the registries of the target devices.
+
+| Key               | Location                                              | Type   | Value                                                                        |
+|:------------------|:------------------------------------------------------|:-------|:-----------------------------------------------------------------------------|
+| OEMID             | HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Store  | REG_SZ | The OEM Store ID provided by the Microsoft Store Partner Operations team.    |
+| StoreContentModifier | HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Store  | REG_SZ | The SCM ID provided by the Microsoft Store Partner Operations team.       |
+
+> [Note!]
+> The **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Store\Configuration** key should not be used by OEMs. It is where the Store application writes the values it discovers so that the OS components are using the same settings cross applications.
+
+If you are using Windows Configuration Designer to create an image, you can add a Windows setting: `WindowsStore\ContentModifier`
+
+The OEM ID is not saved upon migration, including upon upgrade, so please also ensure that Microsoft has the correct smBiosManufacturer details of the device.
+
+### Microsoft Store process
+
+The following list shows some of the key tasks and workflows for engaging with the Store. Depending on your needs, the order and importance of each of these tasks and workflows varies:
+
+* OEM works with Microsoft Store Partner Operations on plans for their exclusive Store in Store
+* Microsoft Store Partner Operations creates device identification marker for inclusion in the registry
+* OEM builds device ID into the registry  Microsoft Store Partner Operations enables OEM Store merchandising tools
+* OEM curates content and controls publishing of OEM Store content. For more information on the Microsoft Store processes, including program forms, see the **OEM Store: Management Users Guide - Mobile** and **OEM Store: Management Users Guide - Desktop** on MyOEM.
+
+  > [!Note]
+  > You have to have the proper permissions to view content on MyOEM. Contact your Microsoft representative if you need access. HBI
