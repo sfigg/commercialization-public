@@ -17,7 +17,7 @@ As an OEM, you have a unique opportunity to create applications that ship with y
 
 ## App design
 
-To make a compelling app that gets your customers to pay attention, follow the design principles that guide the development of great Universal Windows Platform (UWP) experiences. The [Introduction to UWP app design](https://docs.microsoft.com/en-us/windows/uwp/design/basics/design-and-ui-intro) is a great starting place for learning about UWP. From there you should learn about the [controls and control patterns](https://docs.microsoft.com/en-us/windows/uwp/design/controls-and-patterns/index) to use, how to interact with [inputs and devices](https://docs.microsoft.com/en-us/windows/uwp/design/input/input-primer)and how to think about [usability](https://docs.microsoft.com/en-us/windows/uwp/design/usability/index). Our guide to [Get Started with Windows Apps](https://developer.microsoft.com/en-us/windows/apps/getstarted) in the [Windows Dev Center](https://developer.microsoft.com/en-us/windows/) is another resource you can use to learn more.
+To make a compelling app that gets your customers to pay attention, follow the design principles that guide the development of great Universal Windows Platform (UWP) experiences. The [Introduction to UWP app design](https://docs.microsoft.com/en-us/windows/uwp/design/basics/design-and-ui-intro) is a great starting place for learning about UWP. From there you should learn about the [controls and control patterns](https://docs.microsoft.com/en-us/windows/uwp/design/controls-and-patterns/index) to use, how to interact with [inputs and devices](https://docs.microsoft.com/en-us/windows/uwp/design/input/input-primer), and how to think about [usability](https://docs.microsoft.com/en-us/windows/uwp/design/usability/index). The [Get Started with Windows Apps](https://developer.microsoft.com/en-us/windows/apps/getstarted) guide in the [Windows Dev Center](https://developer.microsoft.com/en-us/windows/) is another resource you can use to learn more.
 
 ## Preinstalled apps
 
@@ -36,6 +36,6 @@ By forming relationships with developers, you can work together to publish exclu
 | [Preinstall tasks](preinstall-tasks.md)                                                   | OEMs and MOs are permitted to ship preinstalled apps in the device image. Some of those preinstalled apps require tasks to run without user interaction and often before the end-user opens the app for the first time; such as a product survey app or a SMS server registration. Similarly, some apps will need servicing tasks to run without user interaction after an app has been updated. Preinstall and update tasks provide the mechanism for allowing tasks to run in the background without before the app is installed or when it is updated.          |
 | [Exclusive apps](exclusive-apps.md)       | Learn how to set the OEM Store ID and SCM ID in the registry to enable exclusive apps for your devices.             |
 
-## <a href="" id="developer-audience-heading"></a>Developer audience
+## <a href="" id="developer-audience-heading"></a>Audience
 
-Preinstall is designed for use by OEM and MO developers writing apps to be preinstalled on Windows 10 OS images.
+Preinstalled and exclusive app guidance is designed for use by OEM and MO developers.
