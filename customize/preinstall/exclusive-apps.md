@@ -48,7 +48,7 @@ The Store Content Modifier ID (SCM ID) is optional. You can use it in addition t
 
 | OEM-ID         | SCM ID                | Description                                                               |
 |:---------------|:----------------------|:--------------------------------------------------------------------------|
-| FABRIKAM       | Fabrikam_Enterprise   | Device group - segementing devices geared towards enterprise customers.   |
+| FABRIKAM       | Fabrikam_Enterprise   | Device group - segmenting devices geared towards enterprise customers.   |
 | FABRIKAM       | Fabrikam_Proseware    | Brand group - grouping of the "Proseware" branded devices.                |
 | FABRIKAM       | Fabrikam_ProsewareX2  | Device group - device-specific segment, Fabrikam Proseware model X2.      |
 
