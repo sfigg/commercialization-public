@@ -15,8 +15,10 @@ ms.technology: windows-oem
 By forming relationships with developers, you can work together to publish exclusive apps onto your devices. You have the flexibility based on the contracts you establish with developers to ensure that these apps are available exclusively on your Windows 10-based devices (as identified by OEM Store ID) and don't appear in the general catalog on any other devices.
 
 Your exclusive apps must be submitted to the Microsoft Store by a developer that you are in an exclusive relationship with, as defined in the Microsoft Store OEM Program enrollment form. You may also set up your own exclusive developer account where apps published from that account are automatically designated as exclusive.
-
+<!-- Not sure if this documentation is really available or not. I need access to the platform. -->
+<!--
 The process to follow to set up your account for submitting exclusive apps to include on your Windows 10 image are in the **Microsoft Store OEM Program Guide**, available for download from the [Device Partner Center](https://devicepartner.microsoft.com/).
+-->
 
 > [!Note]
 > Exclusive app accounts are only available to OEM developer accounts unless you have been granted an exception.
@@ -67,7 +69,7 @@ In order to use exclusive app features, you must set the following fields in the
 
 If you are using Windows Configuration Designer to create an image, you can add a Windows setting: `WindowsStore\ContentModifier`
 
-The OEM ID is not saved upon migration, including upon upgrade, so please also ensure that Microsoft has the correct smBiosManufacturer details of the device.
+Because the OEM Store ID is not saved upon migration, including upon upgrade, you must ensure that Microsoft has the correct SMBIOS details of the device to enable it for customized Store experiences. Please contact [partnerops@microsoft.com](partnerops@microsoft.com) with the **SMBIOS Manufacturer**, and **SMBIOS Product Name**, for your device. See [Specifying Hardware IDs for a Computer](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/specifying-hardware-ids-for-a-computer) for instructions on obtaining these values.
 
 ### Microsoft Store process
 
