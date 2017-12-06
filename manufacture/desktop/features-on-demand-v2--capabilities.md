@@ -18,6 +18,8 @@ Features on Demand v2 (Capabilities), introduced in Windows 10, are Windows fea
 
 When the PC needs a new feature, it can request the feature package from Windows Update.
 
+OEMs can preinstall Features on Demand by adding packages from the Features on Demand ISO. Only preinstall the Features on Demand that you need in an image. See [DISM operating system package servicing command line options](dism-operating-system-package-servicing-command-line-options.md) to see how to add packages to an image.
+
 Unlike previous feature packs, Features on Demand V2 can be applicable to multiple Windows builds, and can be added using DISM without knowing the build number. Always use Features on Demand that match the architecture of the operating system. Adding Features on Demand of the wrong architecture might not return an error immediately, but will likely cause functionality issues in the operating system. 
 
 > **Note:** If you install an update (hotfix, general distribution release [GDR], or service pack) prior to installing a Feature on Demand or language pack, you'll have to reinstall the update. Always install language packs and Features on Demand before you install updates.
