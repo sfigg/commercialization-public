@@ -180,12 +180,12 @@ Examples:
 
 Capture a desktop FFU:
 ```
-DISM.exe /Capture-Ffu /ImageFile:install.ffu /CaptureDrive:\\PhysicalDrive0 /Name:Drive0
+DISM.exe /Capture-Ffu /ImageFile:install.ffu /CaptureDrive:\\.\PhysicalDrive0 /Name:Drive0
 ```
 
 Capture a desktop FFU that will be split:
 ```
-DISM.exe /Capture-Ffu /ImageFile:install.ffu /CaptureDrive:\\PhysicalDrive0 /Name:Drive0 /Compress:none
+DISM.exe /Capture-Ffu /ImageFile:install.ffu /CaptureDrive:\\.\PhysicalDrive0 /Name:Drive0 /Compress:none
 ```
 
 
