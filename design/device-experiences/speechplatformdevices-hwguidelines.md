@@ -1,3 +1,12 @@
+---
+title: Input Device Hardware Guidelines
+description: Provides guidance and recommendations for the design and development of audio input devices intended for use with Microsoft's Speech Platform.
+ms.author: sapaetsc
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
+---
 # Speech Platform: Input Device Hardware Guidelines
 
 ![logo](../images/logo-cortana.png)

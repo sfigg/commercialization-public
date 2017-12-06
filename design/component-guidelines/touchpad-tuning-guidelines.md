@@ -3,6 +3,7 @@ title: Precision touchpad tuning
 author: windows-driver-content
 description: This topic presents information about touchpad tuning capabilities in Windows 10
 keywords: ["precision touchpad", "touchpad", "touchpad tuning", "PTP"]
+ms.author: sapaetsc
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
