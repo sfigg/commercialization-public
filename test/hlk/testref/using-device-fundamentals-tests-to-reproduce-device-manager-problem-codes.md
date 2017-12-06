@@ -1,3 +1,16 @@
+---
+title: Using Device Fundamentals Tests to Reproduce Device Manager Problem Codes
+description: Using Device Fundamentals Tests to Reproduce Device Manager Problem Codes
+author: sapaetsc
+ms.author: sapaetsc
+ms.date: 10/15/17
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
+---
+
+
+
 # Using Device Fundamentals Tests to Reproduce Device Manager Problem Codes
 
 The Device Fundamentals (DevFund) tests use Microsoft-supplied I/O plug-ins to exercise devices by sending device class-specific I/O to the device while disabling and enabling the device, cycling the system through power states and reboots, deallocating and reallocating resources, and other tasks.

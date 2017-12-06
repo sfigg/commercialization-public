@@ -1,6 +1,12 @@
 ---
 title: Device.TrustedPlatformModule tests
 description: Device.TrustedPlatformModule tests
+author: sapaetsc
+ms.author: sapaetsc
+ms.date: 10/15/17
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # Device.TrustedPlatformModule tests
