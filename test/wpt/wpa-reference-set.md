@@ -4,7 +4,7 @@ description: Windows® Performance Analyzer (WPA) allows you to analyze the refe
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-author: v-gmoor
+author: sapaetsc
 ms.assetid: 
 ms.mktglfcycl: 
 ms.sitesec: msdn
