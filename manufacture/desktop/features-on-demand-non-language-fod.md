@@ -36,7 +36,7 @@ To see available Features on demand for languages and region, see [Language and 
 
 **Recommendation:** Preinstall this capabilities on devices that are preloaded with apps that require .NET3.x.
 
-| Name | Cab Name |  Description |                                           | Size (KB) |
+| Name | Cab Name |  Description |                                            Size (KB) |
 |-----------|-----------------------------------|--------------------------------------| --- |
 | NetFx3    | Microsoft-Windows-NetFx3-OnDemand-Package.cab     |  | 70805 |
 | NetFx3 en-US package          | Microsoft-Windows-NetFx3-OnDemand-en-US-Package.cab |   | 98   |
