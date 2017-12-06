@@ -185,6 +185,12 @@ If you've been instructed to apply an update to your WinPE image, you'll have to
     ```
     Where Windows10.0-kbxxxxx.msu is the name of the update file 
 
+3. Lock in the update:
+
+    ```
+    dism /cleanup-image /image:C:\WinPE_amd64\mount\windows /startcomponentcleanup /resetbase /scratchdir:C:\temp
+    ```
+
 ## <span id="Unmount"></span>Unmount the Windows PE image and create media
 
 1.  Unmount the WinPE image.

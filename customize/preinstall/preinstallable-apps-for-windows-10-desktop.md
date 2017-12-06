@@ -13,7 +13,18 @@ ms.technology: windows-oem
 ---
 # Preinstallable apps for desktop devices
 
-## To add a preinstalled app to a desktop image
+OEMs and Mobile operators can create Partner applications that can be packaged and configured to install during the initial device setup process. While the user is going through the initial setup process, the preinstalled applications are installed in the background.
+
+The process for creating a preinstalled app is similar to that of a standard app. An unsigned app package (.appx), generated with the Windows SDK, is submitted to the Windows Dev Center for certification and signing. During the submission process, you can specify that you are submitting a preinstalled app. If the app meets certification requirements, it is processed to create a package that can be downloaded from the Dev Center. The app can then be published to the Microsoft Store as well, so that users who have uninstalled the app can re-download it and updates can later be offered to devices that have the app installed.
+
+Some characteristics of preinstalled apps include:
+
+1. They can be published as "hidden" so that the app is not discoverable in the Microsoft Store except through a deep link.
+1. They can be updated, as live or hidden to the Microsoft Store. Users with the preinstalled application will get a notification for the update.
+1. They can be deleted by the user. They can be reinstalled if published live.
+1. They can become obsolete. If a user uninstalls an app that is no longer sold in the Microsoft Store, the user will not be able to reinstall that app.
+
+## Get the Windows ADK
 
 You will need to use the Windows Assessment and Deployment Kit (ADK) to pre-install Microsoft Store apps in your desktop images. [Download the Windows ADK](http://go.microsoft.com/fwlink/p/?LinkId=526740).
 

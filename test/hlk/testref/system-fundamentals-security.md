@@ -1,6 +1,12 @@
 ---
 title: System.Fundamentals.Security
 description: System.Fundamentals.Security
+author: sapaetsc
+ms.author: sapaetsc
+ms.date: 10/15/17
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 
 ---
 

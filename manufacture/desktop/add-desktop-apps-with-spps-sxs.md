@@ -181,7 +181,7 @@ The short version:
     To learn more, see [Siloed provisioning packages](siloed-provisioning-packages.md). For syntax, see [DISM Image Management Command-Line Options](dism-image-management-command-line-options-s14.md). 
 
 **Apply the recovery image**
-1. 	Apply the recovery image after applying the SPPs: `D:\ApplyRecovery.bat`
+1. 	Apply the recovery image after applying the SPPs: `D:\Deployment\ApplyRecovery.bat`
 
 2.  Disconnect the drives, then reboot (`exit`).
 	

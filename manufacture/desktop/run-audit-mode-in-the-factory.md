@@ -42,6 +42,9 @@ While in audit mode, you can install customer requested software, drivers specif
 
 Keep in mind that the more items that you install on the factory floor increases the time it takes to assemble, install, and box the PC.
 
+> [!Note]
+> Running scripts, installers, and diagnostic tools in Audit Mode on Windows 10 S may require enabling manufacturing mode for Windows 10 S. See [Manufacturing mode](windows-10-s-manufacturing-mode.md) for details on how to enable manufacturing mode.
+
 After you complete your audit mode installations, you must run sysprep /oobe to ensure that the end-user goes through the out-of-box experience and accepts the license terms. You should capture the Windows installation to the recovery partition to help users rest the PC to factory default. By doing this in the factory, you can ensure that the build-to-order customizations that customers make are in the recovery image.
 
 You will need to boot the PC to Windows PE again to capture and apply the Windows installation to the recovery partition.
