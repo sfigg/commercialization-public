@@ -14,7 +14,7 @@ ms.technology: windows-oem
 
 ## <span id="language_capabilities"></span><span id="Language_capabilities"></span> Language and region-related capabilities reference
 
-Features on Demand are available to add language capabilities to your Windows images. To view available non language or region-related Features on Demand, see [Available features on demand](features-on-demand-v2--capabilities.md).
+Features on Demand are available to add language capabilities to your Windows images. To view available non language or region-related Features on Demand, see [Available features on demand](features-on-demand-non-language-fod.md).
 
 ### Language capabilities
 
@@ -27,12 +27,12 @@ Language capabilites are available in seven types:
 
 | Component | Sample file name | Dependencies | Description |
 | --------- | ---------------- | ------------ | ----------- |
-| Basic     | `Microsoft-Windows-LanguageFeatures-Basic-fr-fr-Package` | None | Spell checking, text prediction, word breaking, and hyphenation if available for the language.<br></br>You must add this component before adding any of the following components. <br></br>**Recommendation:** Preinstall the relevant language capabilities for the languages you expect users in the device’s target market to need.|
-| Fonts     | `Microsoft-Windows-LanguageFeatures-Fonts-Thai-Package`  | None | Fonts.<br></br>**Recommendation:** If a PC will be sold to a certain region, install that region's Font (e.g., th-TH should be preinstalled on devices shipping to regions with Thai language). Example, th-TH requires the Thai font pack.<br></br>See [font capabilities](#fonts) for available font capabilities. |
-| Optical character recognition | `Microsoft-Windows-LanguageFeatures-OCR-fr-fr-Package` | Basic | Recognizes and outputs text in an image.<br></br>**Recommendation:** Only install on devices required to be OCR-capable. Most devices don't need this capability preinstalled. |
-| Handwriting recognition | `Microsoft-Windows-LanguageFeatures-Handwriting-fr-fr-Package` | Basic | Enables handwriting recognition for devices with pen input.<br></br>**Recommendation:** Preinstall for the device’s target language on any device with a touch- or pen-capable screen  |
-| Text-to-speech | `Microsoft-Windows-LanguageFeatures-TextToSpeech-fr-fr-Package` | Basic | Enables text to speech, used by Cortana and Narrator.<br></br>**Recommendation:** Don't install this capability by default. This FoD installs one language by default, and the user will select and download additional languages as needed. |
-| Speech recognition | `Microsoft-Windows-LanguageFeatures-Speech-fr-fr-Package` | Basic, Text-To-Speech | Recognizes voice input, used by Cortana and Windows Speech Recognition.<br></br>**Recommendation:** Don't install this capability by default. This FoD installs one language by default, and the user will select and download additional languages as needed. |
+| Basic     | `Microsoft-Windows-LanguageFeatures-Basic-fr-fr-Package` | None | Spell checking, text prediction, word breaking, and hyphenation if available for the language.<br></br><p>You must add this component before adding any of the following components. <br></br><p>**Recommendation:** Preinstall the relevant language capabilities for the languages you expect users in the device’s target market to need.|
+| Fonts     | `Microsoft-Windows-LanguageFeatures-Fonts-Thai-Package`  | None | Fonts.<br></br><p>**Recommendation:** If a PC will be sold to a certain region, install that region's Font (e.g., th-TH should be preinstalled on devices shipping to regions with Thai language). Example, th-TH requires the Thai font pack.<br></br<p>>See [font capabilities](#fonts) for available font capabilities. |
+| Optical character recognition | `Microsoft-Windows-LanguageFeatures-OCR-fr-fr-Package` | Basic | Recognizes and outputs text in an image.<br></br><p>**Recommendation:** Only install on devices required to be OCR-capable. Most devices don't need this capability preinstalled. |
+| Handwriting recognition | `Microsoft-Windows-LanguageFeatures-Handwriting-fr-fr-Package` | Basic | Enables handwriting recognition for devices with pen input.<br></br><p>**Recommendation:** Preinstall for the device’s target language on any device with a touch- or pen-capable screen  |
+| Text-to-speech | `Microsoft-Windows-LanguageFeatures-TextToSpeech-fr-fr-Package` | Basic | Enables text to speech, used by Cortana and Narrator.<br></br><p>**Recommendation:** Don't install this capability by default. This FoD installs one language by default, and the user will select and download additional languages as needed. |
+| Speech recognition | `Microsoft-Windows-LanguageFeatures-Speech-fr-fr-Package` | Basic, Text-To-Speech | Recognizes voice input, used by Cortana and Windows Speech Recognition.<br></br><p>**Recommendation:** Don't install this capability by default. This FoD installs one language by default, and the user will select and download additional languages as needed. |
 
 
 
@@ -93,7 +93,7 @@ These fonts are optional and not required for any region.
 
 | Region | Description                   | Capability                                             | Description        | Recommendation                                                                                                     |
 |--------|-------------------------------|--------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------|---|
-| zh-TW  | Chinese (Traditional, Taiwan) | Microsoft-Windows-InternationalFeatures-Taiwan-Package | Supplemental support for Taiwan date formatting requirements. Package will be provided to customers located in Taiwan. | Preinstall only on devices shipping to the Taiwan market. |
+| zh-TW  | Chinese (Traditional, Taiwan) | Microsoft-Windows-InternationalFeatures-Taiwan-Package | Supplemental support for Taiwan date formatting requirements.  Package will be provided to customers located in Taiwan. | Preinstall only on devices shipping to the Taiwan market. Not installing this capability on devices causes any API calls to that use the Taiwan calendar to fail. |
 
 ### List of all language-related features on demand
 [Download the list of all available language FODs](http://download.microsoft.com/download/0/A/A/0AA4342D-3933-4216-A90D-3BA8392FB1D1/Windows 10 1703 FOD to LP Mapping Table.xlsx)
