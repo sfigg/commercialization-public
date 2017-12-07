@@ -90,7 +90,7 @@ This capability enables Mixed Reality devices to be used on a PC. If this capabi
 
 ### Internet Explorer
 
-Internet Explorer Features on Demand enable preinstallation of Internet Explorer.
+Internet Explorer Features on Demand enable preinstallation of Internet Explorer. Internet Explorer will not be enabled on a device that does not have this capability added.
 
 **Recommendation:** Include the relevant capabilities on images that include Internet Explorer.
 
