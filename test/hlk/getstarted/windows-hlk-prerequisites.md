@@ -18,22 +18,20 @@ ms.technology: windows-oem
 >[!WARNING]
 >  The Windows Hardware Lab Kit (HLK) should only be installed on machines that are dedicated solely for testing purposes. Do not install any HLK component on a machine that is outside of a dedicated testing environment.
 
->[!IMPORTANT]
->  Controller setup will fail if .NET Framework 4.5 has not previously been installed. Be sure to [install .NET Framework 4.5](http://www.microsoft.com/en-us/download/details.aspx?id=30653) prior to controller setup.
->
->  32-bit SQL Server installations are not supported. You must uninstall any 32-bit SQL Server installation prior to installing the HLK.
->
->  SQL Server 2014 is not supported. You must uninstall any SQL Server 2014 installations prior to installing the HLK.
-
- 
-
-Before you begin testing, make sure that the test environment meets the necessary requirements. Windows HLK is comprised of two components: an HLK test server and one or more test systems.
+Windows HLK is comprised of two components: an HLK test server and one or more test systems.
 
 -   **HLK test server.** Often referred to as the *controller*, a test server has two parts: Windows HLK Controller and Windows HLK Studio. The Controller software is the engine that manages tests that are run on test systems. The Studio software is the management tool that lets you select and schedule tests against any test system connected to the test server. Controller and Studio are installed from the Windows HLK installation source. After installation, the test server contains separate installers to install a remote Windows HLK Studio and Windows HLK Client.
 
     One controller governs a collection of client computers. Controllers can manage and access only the client computers that they govern.
 
 -   **Test system.** Also referred to as a client computer, each test system can have a different configuration that's appropriate for various testing scenarios, including different hardware, operating systems, service packs, and drivers. Each test system can be associated with only one test server. You can configure each test system by running the Windows HLK Client software installer directly from a shared network location on the test server.
+
+
+Before you begin testing, be sure that the test environment meets the necessary requirements. 
+
+-   Be sure to [install .NET Framework 4.5](http://www.microsoft.com/en-us/download/details.aspx?id=30653) prior to controller setup. Controller setup will fail if .NET Framework 4.5 has not previously been installed.
+-  You must uninstall any 32-bit SQL Server installation prior to installing the HLK. 32-bit SQL Server installations are not supported. 
+-  You must uninstall any SQL Server 2014 installations prior to installing the HLK. SQL Server 2014 is not supported. 
 
 ## <span id="Deployment_scenarios"></span><span id="deployment_scenarios"></span><span id="DEPLOYMENT_SCENARIOS"></span>Deployment scenarios
 

@@ -20,32 +20,6 @@ This topic describes how to troubleshoot issues with the Windows Hardware Lab Ki
 
 For help with problems that occur during Windows HLK Studio and Windows HLK Manager setup, see [Troubleshooting Windows HLK Setup](troubleshooting-windows-hlk-setup.md).
 
-**In this topic:**
-
--   [Archive is no longer supported](#archive)
-
--   [An error message displays that is not specific to the failure](#nonspecific)
-
--   [Failed to start the task: Failed to GetUserToken](#getusertoken)
-
--   [Show all context menu command causes UI to become unresponsive when large (GB+) files are present](#gbplus)
-
--   [System name is wrong in the machine pool](#sysname)
-
--   [Test does not recover after a critical error](#criterr)
-
--   [Test fails without an error](#withouterr)
-
--   [Test list does not update after configuration changes](#testlist)
-
--   [Unsupported scenario](#unsupp)
-
--   [Windows HLK Studio crashes if updates are applied to the Controller](#updates)
-
--   [Unable to determine the identify of domain error](#iddomain)
-
--   [During packaging, the Signability test reports errors when attempting to sign for down level operating systems](#signability)
-
 ## <span id="archive"></span><span id="ARCHIVE"></span>Archive is no longer supported
 
 

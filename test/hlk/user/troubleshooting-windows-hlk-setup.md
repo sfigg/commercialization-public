@@ -18,32 +18,6 @@ ms.technology: windows-oem
 
 This article contains information to help you to troubleshoot Windows Hardware Lab Kit (Windows HLK) installation and setup issues.
 
-**In this topic:**
-
--   [Cannot browse \\\\&lt;controller-name&gt;\\HLKInstall\\ on Studio or Client computer](#cantbrowse)
-
--   [Cannot change or repair Windows HLK by using Control Panel](#nocp)
-
--   [Cannot install HLK.AddLoggerEntries: Access is denied](#accessden)
-
--   [Cannot install the Windows HLK Client](#tsclient)
-
--   [Cannot install or remove the Windows HLK Controller](#contr)
-
--   [Client installation fails with error "This app can't run on your PC”](#appcantrun)
-
--   [Error: Failed to connect to database. Failed to connect to OM.](#noconn)
-
--   [Error: SQL client components are required for this operation](#sqlerror)
-
--   [Cannot install the Windows HLK Client](#tsclient)
-
--   [Error: There is already an object named DSLinkType in the database.](#databasedrop)
-
--   [Error: The database *database\_name* already exists.](#databasedrop)
-
--   [Error: Failed to create SQL database.](#databasedrop)
-
 ## <span id="cantbrowse"></span><span id="CANTBROWSE"></span>Cannot browse \\\\&lt;controller-name&gt;\\HLKInstall\\ on Studio or Client computer
 
 

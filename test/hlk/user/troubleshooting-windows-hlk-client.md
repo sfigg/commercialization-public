@@ -20,44 +20,6 @@ This topic describes how to troubleshoot issues with the Windows Hardware Lab Ki
 
 For help with problems that occur during Windows HLK Client setup, see [Troubleshooting Windows HLK Setup](troubleshooting-windows-hlk-setup.md).
 
-**In this topic:**
-
--   [Cannot get a client computer out of Debug state](#debugstate)
-
--   [Cannot select tests after previous test fails](#prevfail)
-
--   [Client computer goes to sleep during a test](#sleep)
-
--   [Client computer is locked by an LLU account](#llulock)
-
--   [Client computers cannot communicate with the Windows HLK Controller](#clicommcntr)
-
--   [Client information in HLK Studio is inaccurate](#inaccdatastudio)
-
--   [Client software is not uninstalled from the test system](#nouninst)
-
--   [Error encountered while adding user &lt;domain\\username&gt;](#domerror)
-
--   [Error: Skipped as Public key is null for the machine](#nullkey)
-
--   [Job is stuck in the Scheduler](#stuckjob)
-
--   [Jobs do not run after reinstalling the Windows HLK Client](#jobsno)
-
--   [Multiple client systems are identified as the same system](#multcli)
-
--   [Remote Desktop cannot connect to a Windows HLK Client computer](#rem)
-
--   [Remove and reinstall the Windows HLK Client](#remcli)
-
--   [SQL Server updates cause Windows HLK Client to crash](#sqlserver)
-
--   [Unsupported scenarios](#unsupp)
-
--   [Watched system does not have a heartbeat](#watched)
-
--   [Windows 7 Clients do not enter the Ready state](#win7)
-
 ## <span id="debugstate"></span><span id="DEBUGSTATE"></span>Cannot get a client computer out of Debug state
 
 

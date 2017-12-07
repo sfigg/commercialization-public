@@ -36,8 +36,7 @@ The following image shows the Studio **Configuration** page.
 
     Change the default name, if desired, and then press Enter to finish.
 
-    >[!NOTE]
-    >  Machine Pools can be created at onboarding time for mobile devices.
+    Machine Pools can be created at onboarding time for mobile devices.
 
      
 

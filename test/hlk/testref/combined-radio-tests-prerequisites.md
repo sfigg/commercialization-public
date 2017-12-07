@@ -18,16 +18,6 @@ ms.technology: windows-oem
 
 For all combined radio tests, you must first complete the test setup as described in the test requirements: [System Client Testing Prerequisites](system-client-testing-prerequisites.md).
 
-**In this topic:**
-
--   [Set up Combined Radio Test Tool for GPS and Bluetooth](#crgpsblue)
-
--   [Set up Combined Radio Test Tool for GPS and Wireless LAN](#crgpswlan)
-
--   [Set up Combined Radio Test Tool for Wireless LAN and Bluetooth](#crwlanblue)
-
--   [Set up Combined Radio Test Tool for Wireless LAN, Mobile Broadband and Bluetooth](#crall)
-
 ## <span id="crgpsblue"></span><span id="CRGPSBLUE"></span>Set up Combined Radio Test Tool for GPS and Bluetooth
 
 

@@ -18,12 +18,6 @@ ms.technology: windows-oem
 
 Several command line tools are provided with the HLK for onboarding and device control.
 
-## <span id="In_this_topic"></span><span id="in_this_topic"></span><span id="IN_THIS_TOPIC"></span>In this topic
-
-
--   [KitsDeviceDetector.exe](#kitsdevicedetector)
--   [AriesUtil.exe](#ariesutil)
-
 ## <span id="kitsdevicedetector"></span><span id="KITSDEVICEDETECTOR"></span>KitsDeviceDetector.exe
 
 
