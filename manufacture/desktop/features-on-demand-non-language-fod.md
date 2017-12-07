@@ -21,12 +21,12 @@ To see available Features on demand for languages and region, see [Language and 
 
 > [!div class="op_single_selector"]
 > - [.Net Framework](#dotnet)
-> - [OpenSSH](#openssh)
-> - [Internet Explorer](#internet-explorer)
+> - [Accessibility](#accessibility)
 > - [Developer Mode](#developer-mode)
 > - [Graphics Tools](#graphics-tools)
-> - [Accessibility](#accessibility)
 > - [Holographic](#holographic)
+> - [Internet Explorer](#internet-explorer)
+> - [OpenSSH](#openssh)
 > - [Printing](#printing)
 > - [Retail Demo Experience](#retail-demo-experience-rdx)
 
@@ -42,31 +42,17 @@ To see available Features on demand for languages and region, see [Language and 
 | NetFx3 en-US package          | Microsoft-Windows-NetFx3-OnDemand-en-US-Package.cab |   | 98   |
 | NetFx3 ja-JP package          | Microsoft-Windows-NetFx3-OnDemand-ja-JP-Package.cab |   | 1438 |
 
+### Accessibility
 
+This package enables Braille devices to work with the inbox Narrator screen reader. Without this capabililtym Braille drivers and translation tables will be missing, causing Braille to no function properly.
 
-### <span id="OPENSSH"></span><span id="openssh"></span> OpenSSH (Beta)
+**Recommendation:** Don't include these capabilities in your image, as doing so could conflict with Braille device rights restrictions.
 
-The OpenSSH capabilites enable the use of OpenSSH on a Windows PC.
+This capability's installation can be triggered by a user from the Windows Settings app. 
 
-**Recommendation:** Don't include these capabilities on your image.
-
-| Name | Cab Name |  Description | Size (KB) |
-|-----------------------|---------------------------|-------------------------------------|-----|
-| OpenSSH Client (Beta) | OpenSSH-Client-Package.cab | The beta release of an OpenSSH client for remoting and authentication. | 657 |
-| OpenSSH Server (Beta) | OpenSSH-Server-Package.cab | The beta release of an OpenSSH server for remoting and authentication. | 660 |
-
-
-### Internet Explorer
-
-Internet Explorer Features on Demand enable preinstallation of Internet Explorer.
-
-**Recommendation:** Include the relevant capabilities on images that include Internet Explorer.
-
-| Name | Cab Name |  Description | Size |
-|-----------------------|---------------------------------------------------|-----------|----------|
-| Internet Explorer 11  | Microsoft-Windows-InternetExplorer-Optional-Package.cab | Preinstalls Internet Explorer on a device | 268 |
-| Internet Explorer 11 optional en-US package | Microsoft-Windows-InternetExplorer-Optional-en-US-Package.cab | Preinstalls Internet Explorer on a device | 15 |
-| Internet Explorer 11 optional ja-JP package | Microsoft-Windows-InternetExplorer-Optional-ja-JP-Package.cab | Preinstalls Internet Explorer on a device | 18 |
+| Name | Cab Name |  Size (KB) |
+|-----------------------|---------------------------------------------------|---------------------|
+| Accessibility - Braille Support | Microsoft-Windows-Accessibility-Braille-Package.cab | 3,480 |
 
 ### Developer Mode
 
@@ -90,17 +76,6 @@ Used for Direct3D application development.  It is typically installed by AAA gam
 |-----------------------|---------------------------------------------------|---------------------|
 | Graphics Tools | Microsoft-OneCore-Graphics-Tools-Package.cab | 14,252 |
 
-### Accessibility
-
-This package enables Braille devices to work with the inbox Narrator screen reader. Without this capabililtym Braille drivers and translation tables will be missing, causing Braille to no function properly.
-
-**Recommendation:** Don't include these capabilities in your image, as doing so could conflict with Braille device rights restrictions.
-
-This capability's installation can be triggered by a user from the Windows Settings app. 
-
-| Name | Cab Name |  Size (KB) |
-|-----------------------|---------------------------------------------------|---------------------|
-| Accessibility - Braille Support | Microsoft-Windows-Accessibility-Braille-Package.cab | 3,480 |
 
 ### Holographic
 
@@ -111,6 +86,31 @@ This capability enables Mixed Reality devices to be used on a PC. If this capabi
 | Name | Cab Name |  Size (KB) |
 |-----------------------|---------------------------------------------------|---------------------|
 | Windows Mixed Reality | Microsoft-Windows-Holographic-Desktop-FOD-Package.cab | 1,016,425 |
+
+
+### Internet Explorer
+
+Internet Explorer Features on Demand enable preinstallation of Internet Explorer.
+
+**Recommendation:** Include the relevant capabilities on images that include Internet Explorer.
+
+| Name | Cab Name |  Description | Size |
+|-----------------------|---------------------------------------------------|-----------|----------|
+| Internet Explorer 11  | Microsoft-Windows-InternetExplorer-Optional-Package.cab | Preinstalls Internet Explorer on a device | 268 |
+| Internet Explorer 11 optional en-US package | Microsoft-Windows-InternetExplorer-Optional-en-US-Package.cab | Preinstalls Internet Explorer on a device | 15 |
+| Internet Explorer 11 optional ja-JP package | Microsoft-Windows-InternetExplorer-Optional-ja-JP-Package.cab | Preinstalls Internet Explorer on a device | 18 |
+
+
+### <span id="OPENSSH"></span><span id="openssh"></span> OpenSSH (Beta)
+
+The OpenSSH capabilites enable the use of OpenSSH on a Windows PC.
+
+**Recommendation:** Don't include these capabilities on your image.
+
+| Name | Cab Name |  Description | Size (KB) |
+|-----------------------|---------------------------|-------------------------------------|-----|
+| OpenSSH Client (Beta) | OpenSSH-Client-Package.cab | The beta release of an OpenSSH client for remoting and authentication. | 657 |
+| OpenSSH Server (Beta) | OpenSSH-Server-Package.cab | The beta release of an OpenSSH server for remoting and authentication. | 660 |
 
 
 ### Printing
