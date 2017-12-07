@@ -124,6 +124,7 @@
 #### [Application Guard hardware requirements](device-experiences/OEM-app-guard.md)
 #### [Credential Guard hardware requirements](device-experiences/OEM-credential-guard.md)
 #### [Device Guard hardware requirements](device-experiences/OEM-device-guard.md)
+#### [Factory Encrypted drives](device-experiences/OEM-factory-encrypted-drives.md)
 
 
 
