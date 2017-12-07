@@ -255,13 +255,14 @@ Creates the folder structure and copies the template files for a new package
 **Usage**: 
 
 ```
-inf2pkg input.inf [CompName.SubCompName]
+inf2pkg input.inf [CompName.SubCompName] OwnerName
 ```
 
 | Parameters | Description |
 | ----- | ----- |
 | input.inf | Required, input .inf file |
 | CompName.SubCompName | Optional, default is Drivers.input |
+| OwnerName | Optional, default is $(OEMNAME)
 | /? | Displays this usage string. |
 
 **Example**:
@@ -282,7 +283,7 @@ Configures the command shell with required settings.
 
 ## newappxpkg.cmd
 
-Creates a new package folder to help you convert Appx packages to .cab files. 
+Creates a new package folder to help you convert appx packages to .cab files. The provisioning package version (version field in customizations.xml) is set to the appx version itself. 
 
 This command creates the working folder in the \Source-\<arch\>\Packages\ folder.
 
