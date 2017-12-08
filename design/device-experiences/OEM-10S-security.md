@@ -17,7 +17,7 @@ Also describe audience and provide links to consumer, ITPro, developer, and mark
 link to the manufacturing topic--Planning a Windows 10 S deployment.
 
 ## Security features 
-Windows 10 S Mode protects customers by using a combination of code integrity policies,  hardware, and certification for apps. Windows 10 S will only run executable code that is signed with a Windows, WHQL, ELAM, or Store certificate from the Windows Hardware Developer Center Dashboard. This includes companion apps for drivers.
+Windows 10 S Mode protects customers by using a combination of code integrity policies,  hardware, and certification for apps. Windows 10 S will only run executable code that is signed with a Windows, WHQL, ELAM, or Store certificate from the Windows Hardware Developer Center Dashboard. This includes companion apps for drivers. Windows 10 S is available for any Windows 10 Professional edition.
 
 To enable a secure and easy to install mode with automatic security configuration, some Windows customizations and some apps are not supported. For a full list of what's allowed and what's blocked, see (Planning a Windows 10 S deployment)[https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/windows-10-s-planning]
 
