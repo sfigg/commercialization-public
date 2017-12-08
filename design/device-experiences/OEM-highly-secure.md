@@ -13,7 +13,7 @@ These standards are for general purpose laptops, tablets, 2-in-1’s, mobile wor
 Beyond the hardware and firmware configurations outlined below, Microsoft recommends running [Windows 10 S](https://www.microsoft.com/en-us/windows/windows-10-s) for security and performance. Windows 10 S allows safeguards such as only running apps that are verified from Windows Store, and it uses the most secure browser--Microsoft Edge--by default. 
 
 ## Hardware
-
+[!div class="mx-tdBreakAll"]
 | Feature | Requirement | Details |
 |---------|------------|----------|
 | Processor generation | Systems must be on the latest, certified silicon chip for the current release of Windows | Intel 7th generation processors (Intel i3/i5/i7/i9-7x), Core M3-7xxx , Xeon E3-xxxx, and Xeon E5-xxxx Processors and AMD 7th generation processors (A Series Ax-9xxx, E-Series Ex-9xxx, FX-9xxx)|
