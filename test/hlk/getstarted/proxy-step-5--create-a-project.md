@@ -5,6 +5,12 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: FA791600-6449-44A1-90AB-F81CE0DE860A
+author: sapaetsc
+ms.author: sapaetsc
+ms.date: 10/15/17
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # Step 5: Create a project
@@ -27,8 +33,7 @@ The following image shows the Studio **Project** tab.
 
 2.  Replace the default project name with the name of your project, and then press Enter.
 
-    >[!NOTE]
-    >  A project should have a meaningful name that indicates its contents, for example, "Fabrikam Multi-function Device Model Z".
+    A project should have a meaningful name that indicates its contents, for example, "Fabrikam Multi-function Device Model Z".
 
     When the project name appears on the page, the project is created.
 

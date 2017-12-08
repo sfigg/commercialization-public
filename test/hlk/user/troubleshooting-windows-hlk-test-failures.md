@@ -6,6 +6,12 @@ MSHAttr:
 - 'PreferredLib:/library/windows/hardware'
 Search.SourceType: Video
 ms.assetid: bfe69491-eb7c-44ae-b59e-4aa6ff6c66ce
+author: sapaetsc
+ms.author: sapaetsc
+ms.date: 10/15/17
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # Troubleshooting Windows HLK Test Failures
@@ -26,12 +32,6 @@ We recommend that you use this guide as your starting point to troubleshoot Wind
 5.  [Identify the failure category](#cat)
 
 6.  [Contact Windows HLK Support](#support)
-
-**Also in this article:**
-
--   [Troubleshooting system crashes](#sysx)
--   [Windows HLK Studio task error message reference](#errorref)
--   [Troubleshooting graphics tests](#troubleshooting-graphics)
 
 ## <span id="step1"></span><span id="STEP1"></span>**1. Install latest updates and filters**
 

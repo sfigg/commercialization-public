@@ -1,4 +1,18 @@
-
+---
+title: Delivering a great browsing experience
+description: How to deliver a great browsing experience
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 
+ms.mktglfcycl: operate
+ms.sitesec: msdn
+ms.author: sapaetsc
+ms.date: 05/05/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
+---
 # Delivering a great browsing experience
 
 Because all web browsers in today’s marketplace support similar standards, performance quickly becomes a key differentiator for customers. Consumers are keenly interested in the performance of all of the apps that they use, including browsers. This topic focuses on some of the performance challenges and what you can do to deliver a great Internet Explorer web browsing experience for your customers.

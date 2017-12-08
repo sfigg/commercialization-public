@@ -5,10 +5,15 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 0403fdec-08e1-43b9-ba50-9e176c0a9632
+author: sapaetsc
+ms.author: sapaetsc
+ms.date: 10/15/17
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # Step 3: Create a machine pool
-
 
 A *machine pool* is a logical grouping of one or more test systems. After you install Windows HLK Client on each test system, the computers are automatically added to the default machine pool. Before you can work with a test system, you must move it to a working machine pool.
 
@@ -18,7 +23,7 @@ The following image shows the Studio **Configuration** page.
 
 ![hlk studio configuration page](images/hlk-studio-configuration-page.png)
 
-## <span id="To_create_a_machine_pool"></span><span id="to_create_a_machine_pool"></span><span id="TO_CREATE_A_MACHINE_POOL"></span>To create a machine pool
+## To create a machine pool
 
 
 1.  In Windows HLK Studio, choose **Configuration**.
@@ -27,12 +32,7 @@ The following image shows the Studio **Configuration** page.
 
     Change the default name, if desired, and then press Enter to finish.
 
-3.  Choose **Default Pool**, and confirm that each test system appears in the main pane on the right. If you've installed the Client on multiple test systems, you can add any of them to the pool.
-
-    >[!NOTE]
-    >  A computer can only be in one pool at a time.
-
-     
+3.  Choose **Default Pool**, and confirm that each test system appears in the main pane on the right. If you've installed the Client on multiple test systems, you can add any of them to the pool. A computer can only be in one pool at a time.
 
 4.  Move a test system into the new pool by first selecting it and then dragging it onto the newly-created pool.
 
@@ -41,12 +41,8 @@ The following image shows the Studio **Configuration** page.
     The **Status** column changes to **Ready**.
 
     >[!WARNING]
-    >  You cannot schedule a test against a computer with status equal to **NotReady**.
-
-    >[!WARNING]
-    >  A computer cannot be set to **Ready** while in the **Default** pool.
-
-     
+    >- You cannot schedule a test against a computer with status equal to **NotReady**.
+    >- A computer cannot be set to **Ready** while in the **Default** pool.
 
 6.  Repeat the previous two steps for each test system that you want to include in the pool.
 

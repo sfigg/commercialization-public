@@ -5,6 +5,12 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: e72103c0-d70f-4eb3-bed6-2c67d4af5d64
+author: sapaetsc
+ms.author: sapaetsc
+ms.date: 10/15/17
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # HLK Studio
@@ -27,16 +33,6 @@ The following image shows an example Windows HLK Studio screen:
 
 -   Windows HLK does not support the modification of the same project across multiple instances of Windows HLK studio.
 
-## <span id="in_this_section"></span>In this section
-
-
--   [Project Tab](hlk-studio---project-tab.md)
--   [Selection Tab](hlk-studio---selection-tab.md)
--   [Tests Tab](hlk-studio---tests-tab.md)
--   [Results Tab](hlk-studio---results-tab.md)
--   [Package Tab](hlk-studio---package-tab.md)
--   [Configuration Page](hlk-studio---configuration-page.md)
--   [Connect Page](hlk-studio---connect-page.md)
 
  
 

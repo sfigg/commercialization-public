@@ -27,6 +27,7 @@ When you boot to audit mode, you log into the system using the built-in administ
 
 -   Settings in an unattended answer file from the [oobeSystem](oobesystem.md) configuration pass do not appear in audit mode.
 
+-   If you're running scripts, installers, and diagnostic tools on Windows 10 S in Audit Mode, you may have to enable manufacturing mode for Windows 10 S. See [Manufacturing mode](windows-10-s-manufacturing-mode.md) for details.
  
 
 ## <span id="Benefits_of_using_Audit_Mode"></span><span id="benefits_of_using_audit_mode"></span><span id="BENEFITS_OF_USING_AUDIT_MODE"></span>Benefits of using Audit Mode
@@ -72,7 +73,7 @@ The answer file you create will look similar to the following:
 </settings> 
 ```
 
-Before a Windows 8 PC is shipped to a customer, Windows must be configured to boot to the OOBE screens and display the Start screen on first boot. Verify that AuditShD.exe is only configured to run in audit mode and is not used during OOBE.
+Before a Windows PC is shipped to a customer, it must be configured to boot to the OOBE screens and display the Start screen on first boot. Verify that AuditShD.exe is only configured to run in audit mode and is not used during OOBE.
 
 ## <span id="related_topics"></span>Related topics
 
@@ -90,6 +91,8 @@ Before a Windows 8 PC is shipped to a customer, Windows must be configured to b
 [Windows Setup Automation Overview](windows-setup-automation-overview.md)
 
 [Windows Setup Supported Platforms and Cross-Platform Deployments](windows-setup-supported-platforms-and-cross-platform-deployments.md)
+
+[Windows 10 S manufacturing mode](windows-10-s-manufacturing-mode.md)
 
  
 

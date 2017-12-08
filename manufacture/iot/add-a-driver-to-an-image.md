@@ -55,7 +55,7 @@ For example, review the list of drivers in the file: \\IoT-ADK-AddonKit\\Source-
 
     The default package definition file includes sample XML that you can modify to add your own driver files.
 
-    If necessary, update the value of File Source to point to your .SYS file, and the ACPITABL.dat file. (You don't need to add the .INF file.)  Add the DestinationDir of "$(runtime.drivers)".
+    If necessary, add the ACPITABL.dat file as shown below.
     
     ``` xml
     <?xml version="1.0" encoding="utf-8"?>
@@ -71,9 +71,6 @@ For example, review the list of drivers in the file: \\IoT-ADK-AddonKit\\Source-
         <drivers>
             <driver>
                 <inf source="iaiogpio.inf" />
-                <files>
-                    <file source="iaiogpio.sys" destinationDir="$(runtime.drivers)" name="iaiogpio.sys" />
-                </files>
             </driver>
         </drivers>
         <files>

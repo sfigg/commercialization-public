@@ -18,28 +18,6 @@ ms.technology: windows-oem
 
 This topic provides detailed setup instructions and procedures to measure touch panning latency in accordance with Hardware Certification for Windows 8.1. It assumes that the reader is familiar with touch screens, understands the concept of touch screen latency, and has basic understanding of electrical and software engineering.
 
-**In this topic:**
-
--   [Overview](#ov)
-
--   [Methodology](#methodology)
-
--   [Hardware requirements](#nwreq)
-
--   [Software requirements](#swreq)
-
--   [Test procedure for Triex RA tool](#testtriexpa)
-
--   [Test procedure for ITRI RA tool](#itri-ra)
-
--   [Analysis and report](#ar)
-
--   [Automated calibration mode](#acm)
-
--   [Troubleshooting](#ts)
-
--   [Additional support](#sup)
-
 ## <span id="ov"></span><span id="OV"></span>Overview
 
 

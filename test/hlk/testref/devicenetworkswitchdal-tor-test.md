@@ -20,14 +20,6 @@ This topic describes how to test network switches for OMI compatibility as part 
 
 The types of products in the Device.Network.Switch.DAL-TOR category include Top of the Rack Switches.
 
-**In this topic:**
-
--   [Switch Testing Prerequisites](#switchpre)
-
--   [Troubleshooting Device.Network.Switch.DAL-TOR tests](#ts)
-
--   [Switch Tests](#swtests)
-
 ## <span id="switchpre"></span><span id="SWITCHPRE"></span>Switch Testing Prerequisites
 
 

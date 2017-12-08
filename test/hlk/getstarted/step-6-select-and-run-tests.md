@@ -6,12 +6,21 @@ MSHAttr:
 - 'PreferredLib:/library/windows/hardware'
 Search.SourceType: Video
 ms.assetid: 6a268e09-79df-40be-99ce-8f6264050a9e
+author: sapaetsc
+ms.author: sapaetsc
+ms.date: 10/15/17
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # Step 6: Select and run tests
 
 
-The **Tests** tab displays all of the tests that are associated with the features found on your device. You can filter and sort the listed tests in the following ways:
+The **Tests** tab displays all of the tests that are associated with the features found on your device.
+In the HLK, test categories replace the level classifications previously used with the HCK. The HLK can be used throughout the product life cycle to test and measure quality at each stage of development. 
+
+You can filter and sort the listed tests in the following ways. 
 
 -   Test Phase Categorization
     -   Bring Up
@@ -20,31 +29,17 @@ The **Tests** tab displays all of the tests that are associated with the feature
     -   Tuning and Validation
     -   Manufacturing
     -   Support
-
-        >[!NOTE]
-        >  In the HLK, test categories replace the level classifications previously used with the HCK. The HLK can be used throughout the product life cycle to test and measure quality at each stage of development.
-
-         
 -   Status
 -   Test Name
 -   Type (manual, non-distributed, special configuration, multiple machine)
-
-    >[!NOTE]
-    >  You can hover over the test type icons with your mouse for more information about the test types.
-
-     
-
 -   Length
 -   Target
 -   Machine(s)
 
 >[!NOTE]
->  Manual tests that require user input can interrupt the test process. We recommend that you run manual tests separately from automated tests.
-
->[!NOTE]
->  Some tests require additional input before running. Windows HLK Studio prompts you for more info as needed.
-
- 
+> - You can hover over the test Type icons with your mouse for more information about the test Types.
+> - Manual tests that require user input can interrupt the test process. We recommend that you run manual tests separately from automated tests.
+> - Some tests require additional input before running. Windows HLK Studio prompts you for more info as needed.
 
 The following image shows the Studio **Tests** tab.
 
@@ -74,12 +69,9 @@ You can save an existing collection of tests as a playlist by choosing **Save Se
 
  
 
-## <span id="Running_a_test"></span><span id="running_a_test"></span><span id="RUNNING_A_TEST"></span>Running a test
+## Running a test
 
->[!NOTE]
->  If using a playlist, be sure to load it before following these steps.
-
- 
+If using a playlist, be sure to load it before following these steps.
 
 1.  Filter the test results by using the **View By** dropdown list.
 
@@ -91,10 +83,7 @@ You can save an existing collection of tests as a playlist by choosing **Save Se
 
     A progress bar appears. A slight delay occurs when you run a test.
 
->[!NOTE]
->  To learn more about any test, select the test from the list and press **F1** key or right-click and select **Test Description**. To cancel any running test, right-click it and select **Cancel**.
-
- 
+To learn more about any test, select the test from the list and press **F1** key or right-click and select **Test Description**. To cancel any running test, right-click it and select **Cancel**.
 
 As tests complete, the results are displayed in the **Status** column. A green checkmark means that it passed, while a red X means that it failed. The pane on the right displays project summary information, including target(s) selected, operating systems being tested, product types you qualify for, and status of all tests.
 

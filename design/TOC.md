@@ -1,7 +1,8 @@
 # [Design](index.md)
 
 ## [What's new in Design](what-s-new-in-design.md)
-## [Minimum hardware requirements](minimum/minimum-hardware-requirements-overview.md)
+## [Minimum Hardware Requirements](minimum/minimum-hardware-requirements-overview.md)
+## [Windows Processor Requirements](minimum/windows-processor-requirements.md)
 ## [Form factors](form-factors/form-factors.md)
 ### [2-in-1](form-factors/2-in-1.md)
 ### [All-in-one](form-factors/all-in-one.md)
@@ -123,6 +124,7 @@
 #### [Application Guard hardware requirements](device-experiences/OEM-app-guard.md)
 #### [Credential Guard hardware requirements](device-experiences/OEM-credential-guard.md)
 #### [Device Guard hardware requirements](device-experiences/OEM-device-guard.md)
+#### [Factory Encrypted drives](device-experiences/OEM-factory-encrypted-drives.md)
 
 
 
