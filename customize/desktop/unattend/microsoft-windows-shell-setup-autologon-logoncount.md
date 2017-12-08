@@ -25,11 +25,11 @@ If the built-in administrator account is used, the account is still active. For 
 
 | Value             | Description                       |
 |:------------------|:----------------------------------|
-| *Logon_count*     | Specifies the number of times you can log om to the computer by using `AutoLogon`. *Logon_count* is an integer.            |
+| *Logon_count*     | The number of times you can log on to the computer by using `AutoLogon`. *Logon_count* is an integer.            |
 
 ### LogonCount known issue
 
-Please note that there is a known issue which causes Windows to add 1 to the `LogonCount`, if that value is greater than 0. When setting `LogonCount`, enter a number that is one less than the number of AutoLogon attempts you desire. For example, to facilitate 2 AutoLogons, set `LogonCount` to 1.
+Please note that there is a known issue which causes Windows to add 1 to the `LogonCount` value, if that value is greater than 0. When setting `LogonCount`, enter a number that is one fewer than the number of AutoLogon attempts you desire. For example, to facilitate 2 AutoLogons, set `LogonCount` to 1.
 
 If `Logon_count` is 0, Windows correctly interprets this and will not allow any AutoLogons. Because of this known issue, the `LogonCount` Unattend setting cannot be used to allow exactly one AutoLogon. To work around this known issue, take the following steps:
 
