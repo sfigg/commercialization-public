@@ -33,10 +33,10 @@ Please note that there is a known issue which causes Windows to add 1 to the `Lo
 
 If `Logon_count` is 0, Windows correctly interprets this and will not allow any AutoLogons. Because of this known issue, the `LogonCount` Unattend setting cannot be used to allow exactly one AutoLogon. To work around this known issue, take the following steps:
 
-1. Set `LogonCount` to 1
+1. Set `LogonCount` to 1.
 1. Add a new command under the `Microsoft-Windows-Shell-Setup/FirstLogonCommands/SynchronousCommand` Unattend setting for the oobeSystem pass:
 
-`reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon" /v AutoLogonCount /t REG_DWORD /d 0 /f`
+  `reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon" /v AutoLogonCount /t REG_DWORD /d 0 /f`
 
 See [FirstLogonCommands](microsoft-windows-shell-setup-firstlogoncommands.md) in the Unattended Setup Reference to learn more about this setting.
 
