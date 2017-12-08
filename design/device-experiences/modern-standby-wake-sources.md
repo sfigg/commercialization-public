@@ -354,15 +354,14 @@ In addition to buttons on the chassis, a modern standby PC may have other input 
 <tbody valign="top">
 <tr class="odd">
 <td><p>USB device insertion</p></td>
-<td><p>Yes</p></td>
+<td><p>No</p></td>
 <td><p>USB host controller wake signaling</p></td>
 <td><p>No</p></td>
-<td><p></p>
-I</td>
+<td><p></p></td>
 </tr>
 <tr class="even">
 <td><p>USB device removal</p></td>
-<td><p>Yes</p></td>
+<td><p>No</p></td>
 <td><p>USB host controller wake signaling</p></td>
 <td><p>No</p></td>
 <td><p></p></td>
