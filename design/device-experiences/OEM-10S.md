@@ -1,11 +1,11 @@
 ---
-title: Virtualization-based Security (VBS)
-description: Provides guidance on what an OEM should do to enable VBS
+title: Windows 10 S features and requirements
+description: Provides guidance for OEMs on the security features of Windows 10S, and what they need to do to use 10S.
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.author: dawnwood
-ms.date: 10/05/2017
+ms.date: 12/12/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
