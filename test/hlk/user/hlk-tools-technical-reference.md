@@ -18,14 +18,6 @@ ms.technology: windows-oem
 
 This section provides a technical description for the tools that are included in the HLK.
 
-## <span id="in_this_section"></span>In this section
-
-
--   [HLK Studio](hlk-studio.md)
--   [HLK Controller](hlk-controller.md)
--   [HLK Manager](hlk-manager.md)
--   [HLK Automation Tool](hlk-automation-tool.md)
--   [HLK Mobile Testing Tools and Utilities](hlk-mobile-testing-tools-and-utilities.md)
 
  
 

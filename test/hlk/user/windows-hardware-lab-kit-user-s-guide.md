@@ -20,16 +20,6 @@ The Windows Hardware Lab Kit (Windows HLK) is a test framework used to test hard
 
 This guide provides information about the Windows Hardware Compatibility Program, the tests that are included in the Windows Hardware Lab Kit, and instructions on how to build a test environment, automate driver and system testing, and create a submission package required to participate in the Windows Hardware Compatibility Program.
 
-## <span id="in_this_section"></span>In this section
-
-
--   [Windows Hardware Compatibility Program](windows-hardware-compatibility-program-overview.md)
--   [HLK Product Type Matrix](hlk-product-type-matrix.md)
--   [HLK Tools](hlk-tools-technical-reference.md)
--   [HLK Troubleshooting](troubleshooting-windows-hlk.md)
--   [HLK Testing Concepts](hck-testing-concepts.md)
--   [HLK Glossary](glossary-hlk.md)
--   [Accessibility for People with Disabilities](accessibility-for-people-with-disabilities.md)
 
  
 

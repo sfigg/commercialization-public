@@ -15,13 +15,26 @@ ms.technology: windows-oem
 
 # HLK Proxy Client Prerequisites
 
-> [!IMPORTANT]
-> <p>A Battery Blank is required for Aries mobile testing in this release. For more information, see [Battery Blank Information Guide](battery-blank-information-guide.md).</p>
+>[!WARNING]
+>  The Windows Hardware Lab Kit should only be installed on machines that are dedicated solely for testing purposes. Do not install any HLK component on a machine that is outside of a dedicated testing environment.
 
-> [!WARNING]
-> <p>32-bit SQL Server installations are not supported. You must uninstall any 32-bit SQL Server installation prior to installing the HLK.</p><p>SQL Server 2014 is not supported. You must uninstall any SQL Server 2014 installations prior to installing the HLK.</p><p>The Windows Hardware Lab Kit should only be installed on machines that are dedicated solely for testing purposes. Do not install any HLK component on a machine that is outside of a dedicated testing environment.</p><p>Controller setup will fail if .NET Framework 4.5 has not previously been installed. Be sure to install .NET Framework 4.5 from the following location prior to controller setup.</p><ul><li><a href="https://www.microsoft.com/net/download/framework">https://www.microsoft.com/net/download/framework</a></li></ul><p>Proxy setup will fail if .NET Framework 4.6 has not previously been installed. .NET 4.6 is included with Windows 10 but must be installed separately on other versions of Windows. You can download .NET 4.6 from the following location:</p><ul><li><a href="https://www.microsoft.com/net/download/framework">https://www.microsoft.com/net/download/framework</a></li></ul>
+Before you begin testing, make sure that the test environment meets the necessary requirements. 
 
-Before you begin testing, make sure that the test environment meets the necessary requirements. The Windows HLK Mobile testing environment is comprised of three components: an HLK test server, an HLK Proxy system, and one or more test systems.
+-   A Battery Blank is required for Aries mobile testing in this release. For more information, see [Battery Blank Information Guide](battery-blank-information-guide.md).
+
+-  Controller setup will fail if .NET Framework 4.5 has not previously been installed. Be sure to install .NET Framework 4.5 from the following location prior to controller setup.
+    <https://www.microsoft.com/net/download/framework>
+
+- Proxy setup will fail if .NET Framework 4.6 has not previously been installed. .NET 4.6 is included with Windows 10 but must be installed separately on other versions of Windows. You can download .NET 4.6 from the following location:
+    <https://www.microsoft.com/net/download/framework>
+
+- 32-bit SQL Server installations are not supported. You must uninstall any 32-bit SQL Server installation prior to installing the HLK.
+
+- SQL Server 2014 is not supported. You must uninstall any SQL Server 2014 installations prior to installing the HLK.
+
+## Testing Environment
+
+The Windows HLK Mobile testing environment is comprised of three components: an HLK test server, an HLK Proxy system, and one or more test systems.
 
 -   **HLK test server.** Often referred to as the controller, a test server has two parts: Windows HLK Controller and Windows HLK Studio. The Controller software is the engine that manages tests that are run on test systems. The Studio software is the management tool that lets you select and schedule tests against any test system connected to the test server. Controller and Studio are installed from the Windows HLK installation source. After installation, the test server contains separate installers to install a remote Windows HLK Studio, Window HLK Proxy Client and Windows HLK Client.
 
@@ -32,7 +45,6 @@ Before you begin testing, make sure that the test environment meets the necessar
 -   **Test system.** Also referred to as a client, each test system can have a different configuration that's appropriate for various testing scenarios, including different hardware, operating systems, service packs, and drivers. Each test system can be associated with only one Proxy system. No configuration is required for mobile test systems.
 
 ## <span id="deployment_scenarios"></span><span id="DEPLOYMENT_SCENARIOS"></span>Deployment scenarios
-
 
 There are two deployment scenarios for Windows HLK:
 

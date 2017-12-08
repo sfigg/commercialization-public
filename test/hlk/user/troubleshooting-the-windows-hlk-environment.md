@@ -23,14 +23,6 @@ This topic contains information to help you to troubleshoot Windows Hardware Lab
 
 To troubleshoot testing problems, see [Troubleshooting Windows HLK Test Failures](troubleshooting-windows-hlk-test-failures.md). For Microsoft® support for Windows HLK testing, see [Windows HLK Support](windows-hlk-support.md).
 
-## <span id="in_this_section"></span>In this section
-
-
--   [Troubleshooting Windows HLK Client](troubleshooting-windows-hlk-client.md)
--   [Troubleshooting Windows HLK Controller](troubleshooting-windows-hlk-controller.md)
--   [Troubleshooting Windows HLK Setup](troubleshooting-windows-hlk-setup.md)
--   [Troubleshooting Windows HLK Studio and Windows HLK Manager](troubleshooting-windows-hlk-studio-and-windows-hlk-manager.md)
-
 ## <span id="related_topics"></span>Related topics
 
 

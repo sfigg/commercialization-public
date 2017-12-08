@@ -33,16 +33,6 @@ The following image shows an example Windows HLK Studio screen:
 
 -   Windows HLK does not support the modification of the same project across multiple instances of Windows HLK studio.
 
-## <span id="in_this_section"></span>In this section
-
-
--   [Project Tab](hlk-studio---project-tab.md)
--   [Selection Tab](hlk-studio---selection-tab.md)
--   [Tests Tab](hlk-studio---tests-tab.md)
--   [Results Tab](hlk-studio---results-tab.md)
--   [Package Tab](hlk-studio---package-tab.md)
--   [Configuration Page](hlk-studio---configuration-page.md)
--   [Connect Page](hlk-studio---connect-page.md)
 
  
 

@@ -20,12 +20,6 @@ This topic describes how to troubleshoot issues with the Windows Hardware Lab Ki
 
 For help with problems that occur during Windows HLK Controller setup, see [Troubleshooting Windows HLK Setup](troubleshooting-windows-hlk-setup.md).
 
-**In this topic:**
-
--   [Cannot add test clients after installing the Windows HLK](#adddtest)
-
--   [Unsupported scenarios](#unsup)
-
 ## <span id="adddtest"></span><span id="ADDDTEST"></span>Cannot add test clients after installing the Windows HLK
 
 

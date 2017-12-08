@@ -33,12 +33,6 @@ We recommend that you use this guide as your starting point to troubleshoot Wind
 
 6.  [Contact Windows HLK Support](#support)
 
-**Also in this article:**
-
--   [Troubleshooting system crashes](#sysx)
--   [Windows HLK Studio task error message reference](#errorref)
--   [Troubleshooting graphics tests](#troubleshooting-graphics)
-
 ## <span id="step1"></span><span id="STEP1"></span>**1. Install latest updates and filters**
 
 
