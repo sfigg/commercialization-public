@@ -20,7 +20,7 @@ Windows 10 S Mode protects customers by using a combination of code integrity po
 
 To enable a secure and easy to install mode with automatic security configuration, some Windows customizations and some apps are not supported. For a full list of what's allowed and what's blocked, see (Planning a Windows 10 S deployment)[https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/windows-10-s-planning]
 ## Hardware requirements
-Subheading for Hardware requirements and a table with a list of the Windows 10 S mode security features and what hardware enables them. Windows 10 S mode provides the right configuration automatically so that users are safe on first setup (OOBE).
+Windows 10 S mode security features and what hardware enables them. Windows 10 S mode provides the right configuration automatically so that users are safe on first setup (OOBE).
 
 | Feature | Requirement | Details |
 |---------|------------|----------|
