@@ -11,7 +11,7 @@ ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-# IoT Core OS Updates
+# Windows 10 IoT Core OS Updates
 
 
 Windows 10 IoT Core (IoT Core) devices can automatically receive OS updates via Windows Update when connected to the internet.
@@ -25,6 +25,8 @@ Read [Windows as a Service Overview](https://docs.microsoft.com/windows/deployme
 [Windows 10 release information](https://technet.microsoft.com/windows/release-info.aspx) provides an up to date history of the various updates released along with the KB article link that provides an overview of the changes included in the specific update.
 
 
-## <span id="OS_updates_only"></span><span id="os_updates_only"></span><span id="OS_UPDATES_ONLY"></span>OS updates only
+## OS updates only
 
-An IoT Core device can be set to receive OS updates only directly from Microsoft by using **IoT\_GENERIC\_POP** feature in the OemInput XML.
+A Windows 10 IoT Core device can be set to receive OS updates *only* directly from Microsoft by using **IoT\_GENERIC\_POP** feature in the OEMInput XML.
+
+See [Manage IoT Core device updates](managing-iot-device-updates.md) for details on various means to control the updates.

@@ -16,13 +16,14 @@ ms.technology: windows-oem
 
 OEM and enterprise customers using Windows 10 IoT Core can take advantage of device management configuration service providers (CSPs) that allow some control over the device update process.
 
-**Note**  Starting with Windows 10,version 1703, IoT Core Pro is discontinued and update control is enabled in IoT Core.
+>[!NOTE]
+>Starting with Windows 10 version 1703, IoT Core Pro is discontinued and update control is enabled in IoT Core. WSUS support is also removed. 
 
- 
+## Managing updates using Device Management
 
-Device Management Policy can be set using either the Windows Imaging and Configuration Designer (ICD) tool or a mobile device management (MDM) service. See [Mobile Device Management](https://docs.microsoft.com/windows/client-management/mdm/index) for more detail about device management protocols.
+Device Management Policy can be set using either the Windows Imaging and Configuration Designer (ICD) tool or a mobile device management (MDM) service. See [Mobile Device Management](https://docs.microsoft.com/windows/client-management/mdm/index) for more detail about device management protocols. The Windows Imaging and Configuration Designer (ICD) tool creates a provisioning package that can be included in the image. See [add provisioning package](https://docs.microsoft.com/windows-hardware/manufacture/iot/add-a-provisioning-package-to-an-image) for the detailed steps.
 
-## <span id="AllowAutoUpdate_to_turn_updates_on_or_off"></span><span id="allowautoupdate_to_turn_updates_on_or_off"></span><span id="ALLOWAUTOUPDATE_TO_TURN_UPDATES_ON_OR_OFF"></span>AllowAutoUpdate to turn updates on or off
+### AllowAutoUpdate to turn updates on or off
 
 
 Updates for IoT Core can be turned off by setting the AllowAutoUpdate policy.
@@ -32,7 +33,7 @@ Updates for IoT Core can be turned off by setting the AllowAutoUpdate policy.
 
 ![allowautoupdate5](images/policy1.png)
 
-## <span id="AllowAutoUpdate_to_control_updates"></span><span id="allowautoupdate_to_control_updates"></span><span id="ALLOWAUTOUPDATE_TO_CONTROL_UPDATES"></span>AllowAutoUpdate to control updates
+### AllowAutoUpdate to control updates
 
 
 The AllowAutoUpdate policy can also control the timing of updates for IoT Core:
@@ -44,27 +45,15 @@ View the set day using ` <LocURI>./Vendor/MSFT/PolicyManager/Device/Update/Sched
 
 ![allowautoupdate4](images/policy2.png)
 
-## <span id="Deferring_updates"></span><span id="deferring_updates"></span><span id="DEFERRING_UPDATES"></span>Deferring updates
+### Deferring updates
 
 
 **DeferQualityUpdatePeriodInDays** policy can be used to delay the update of the device by required number of days(max 30 days).
 
 ![deferupdate1](images/policy3.png)
 
-**Note**  Starting with Windows 10,version 1703 , WSUS is not supported. 
+## Managing updates using Azure DM
 
+[Azure IoT Device Management (Azure DM)](https://docs.microsoft.com/windows/iot-core/manage-your-device/azureiotdm) is a highly scalable management solution available on Windows 10 IoT Core.  [Windows Update Management](https://github.com/ms-iot/iot-core-azure-dm-client/blob/master/docs/windows-update-management.md) provides the details on managing the updates using this channel. 
 
-## <span id="OS_updates_only"></span><span id="os_updates_only"></span><span id="OS_UPDATES_ONLY"></span>OS updates only
-
-An IoT Core device can be set to receive OS updates from Microsoft and not OEM updates:
-
-**For Windows 10, version 1607**: use IoT\_GENERIC\_POP in the OemInput XML. (You can no longer use the Intel.Generic.DeviceInfo.cab, this file has been removed.)
-
-**For Windows 10, version 1511**: 
-To configure a device to receive only OS updates, you must edit the OEM Feature Manifest XML for the device. The feature manifest for supported devices can be found at the following directory locations on the device:
-
--   **MinnowBoard Max:**` C:\Program Files (x86)\Windows Kits\10\FMFiles\x86\MBMFM.xml`
--   **Raspberry Pi 2:**` C:\Program Files (x86)\Windows Kits\10\FMFiles\arm\RPi2FM.xml`
--   **Qualcomm DragonBoard:** ` C:\Program Files (x86)\Windows Kits\10\FMFiles\arm\QCDB410CFM.xml`
-
-In the **&lt;DeviceLayoutPackages&gt;** and **&lt;Features&gt;**sections, remove the device identifier and replace with **Generic**. For example **Intel.MBM.DeviceInfo.cab** becomes **Intel.Generic.DeviceInfo.cab**.
+Azure DM also provides ability to set the flighting ring ( see "ring" property in [Windows Update Policy](https://github.com/ms-iot/iot-core-azure-dm-client/blob/master/docs/windows-update-management.md#windows-update-policy) ) and control the reboot of the device via [Reboot Management](https://github.com/ms-iot/iot-core-azure-dm-client/blob/master/docs/reboot-management.md).

@@ -21,7 +21,6 @@ Use the topics in this section to learn more about servicing a device running Wi
 
 ## <span id="in_this_section"></span>In this section
 
-
 <table>
 <colgroup>
 <col width="50%" />
@@ -35,16 +34,16 @@ Use the topics in this section to learn more about servicing a device running Wi
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[IoT Core OS and OEM Updates](iot-core-update.md)</p></td>
-<td align="left"><p>IoT Core devices will automatically receive OS updates via Windows Update when connected to the internet.</p></td>
+<td align="left"><p>[IoT Core OS Updates](iot-core-update.md)</p></td>
+<td align="left"><p>IoT Core devices can receive OS updates via Windows Update when connected to the internet.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>[Manage IoT Core device updates](managing-iot-device-update.md)</p></td>
-<td align="left"><p>OEM and enterprise customers using Windows 10 IoT Core Pro (IoT Core Pro) can take advantage of device management configuration service providers (CSPs) that allow some control over the device update process.</p></td>
+<td align="left"><p>OEM and enterprise customers can take advantage of device management configuration service providers (CSPs) to control the device update process.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[Update IoT Core Apps](updating-iot-core-apps.md)</p></td>
-<td align="left"><p>OEM and enterprise customers can utilize a set of scripts and tools to deliver app updates for IoT Core devices.</p></td>
+<td align="left"><p>[IoT Core App Updates](updating-iot-core-apps.md)</p></td>
+<td align="left"><p>OEM and enterprise customers can use Microsoft Store to deliver app updates for IoT Core devices.</p></td>
 </tr>
 </tbody>
 </table>
