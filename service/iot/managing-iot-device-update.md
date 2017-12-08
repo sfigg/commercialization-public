@@ -19,9 +19,11 @@ OEM and enterprise customers using Windows 10 IoT Core can take advantage of de
 >[!NOTE]
 >Starting with Windows 10 version 1703, IoT Core Pro is discontinued and update control is enabled in IoT Core. WSUS support is also removed. 
 
-## Managing updates using Device Management
+## Using Device Management
 
-Device Management Policy can be set using either the Windows Imaging and Configuration Designer (ICD) tool or a mobile device management (MDM) service. See [Mobile Device Management](https://docs.microsoft.com/windows/client-management/mdm/index) for more detail about device management protocols. The Windows Imaging and Configuration Designer (ICD) tool creates a provisioning package that can be included in the image. See [add provisioning package](https://docs.microsoft.com/windows-hardware/manufacture/iot/add-a-provisioning-package-to-an-image) for the detailed steps.
+Device Management Policy can be set using either the Windows Imaging and Configuration Designer (ICD) tool or a mobile device management (MDM) service. See [Mobile Device Management](https://docs.microsoft.com/windows/client-management/mdm/index) for more detail about device management protocols.
+
+The Windows Imaging and Configuration Designer (ICD) tool creates a provisioning package that can be included in the image. See [add provisioning package](https://docs.microsoft.com/windows-hardware/manufacture/iot/add-a-provisioning-package-to-an-image) for the detailed steps.
 
 ### AllowAutoUpdate to turn updates on or off
 
@@ -52,7 +54,7 @@ View the set day using ` <LocURI>./Vendor/MSFT/PolicyManager/Device/Update/Sched
 
 ![deferupdate1](images/policy3.png)
 
-## Managing updates using Azure DM
+## Using Azure IoT Device Management
 
 [Azure IoT Device Management (Azure DM)](https://docs.microsoft.com/windows/iot-core/manage-your-device/azureiotdm) is a highly scalable management solution available on Windows 10 IoT Core.  [Windows Update Management](https://github.com/ms-iot/iot-core-azure-dm-client/blob/master/docs/windows-update-management.md) provides the details on managing the updates using this channel. 
 
