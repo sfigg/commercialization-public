@@ -19,7 +19,7 @@ ms.technology: windows-oem
 
 After the specified number of automated logon actions has occurred, you must manually log onto the computer.
 
-If the built-in administrator account is used, the account is still active. For more information about the built-in administrator account, see the [How to Enable and Disable the Built-in Administrator Account](http://go.microsoft.com/fwlink/?LinkId=206616) topic in the Windows Assessment and Deployment Kit (Windows ADK) Technical Reference.
+If the built-in administrator account is used, the account is still active. For more information about the built-in administrator account, see the [How to Enable and Disable the Built-in Administrator Account](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/enable-and-disable-the-built-in-administrator-account) topic in the Windows Assessment and Deployment Kit (Windows ADK) Technical Reference.
 
 ## Values
 
@@ -29,9 +29,9 @@ If the built-in administrator account is used, the account is still active. For 
 
 ### LogonCount known issue
 
-Please note that there is a known issue which causes Windows to add 1 to the `LogonCount` value, if that value is greater than 0. When setting `LogonCount`, enter a number that is one fewer than the number of AutoLogon attempts you desire. For example, to facilitate 2 AutoLogons, set `LogonCount` to 1.
+Please note that there is a known issue which causes Windows to add 1 to the `LogonCount` value, if that value is greater than 0. When setting `LogonCount`, enter a number that is one fewer than the number of automated logons you desire. For example, to facilitate 2 automated logons, set `LogonCount` to 1.
 
-If `Logon_count` is 0, Windows correctly interprets this and will not allow any AutoLogons. Because of this known issue, the `LogonCount` Unattend setting cannot be used to allow exactly one AutoLogon. To work around this known issue, take the following steps:
+If `Logon_count` is 0, Windows correctly interprets this and will not allow any automated logons. Because of this known issue, the `LogonCount` Unattend setting cannot be used to allow exactly one automated logon. To work around this known issue, take the following steps:
 
 1. Set `LogonCount` to 1.
 1. Add a new command under the `Microsoft-Windows-Shell-Setup/FirstLogonCommands/SynchronousCommand` Unattend setting for the oobeSystem pass:
@@ -56,8 +56,7 @@ For a list of the Windows editions and architectures that this component support
 
 ## XML Example
 
-
-The following XML output shows how to set `AutoLogon` so that you can log onto the computer twice using the built-in administrator account.
+The following XML output shows how to set `AutoLogon` so that you can log onto the computer using the built-in administrator account.
 
 ```XML
 <AutoLogon>
@@ -73,16 +72,5 @@ The following XML output shows how to set `AutoLogon` so that you can log onto t
 
 ## Related topics
 
-
 [AutoLogon](microsoft-windows-shell-setup-autologon.md)
-
- 
-
- 
-
-
-
-
-
-
-
+[How to Enable and Disable the Built-in Administrator Account](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/enable-and-disable-the-built-in-administrator-account)
