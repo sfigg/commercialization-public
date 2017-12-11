@@ -1296,7 +1296,6 @@
         "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/networking-mpssvc-svc-firewallgroups-firewallgroup-key", 
         "redirect_document_id": true
     },
-    },
     {   
         "source_path": "customize/desktop/unattend/networking-mpssvc-svcfirewallgroups-firewallgroup-profile.md", 
         "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/networking-mpssvc-svc-firewallgroups-firewallgroup-profile", 

@@ -14,7 +14,7 @@ ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-# Microsoft-Windows-SystemSettingsTrreshold
+# Microsoft-Windows-SystemSettingsThreshold
 
 
 The Microsoft-Windows-SystemSettingsThreshold component implements settings related to mobile broadband.
