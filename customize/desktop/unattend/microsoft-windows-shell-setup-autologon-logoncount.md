@@ -31,7 +31,7 @@ If the built-in administrator account is used, the account is still active. For 
 
 Please note that there is a known issue which causes Windows to add 1 to the `LogonCount` value, if that value is greater than 0. When setting `LogonCount`, enter a number that is one fewer than the number of automated logons you desire. For example, to facilitate 2 automated logons, set `LogonCount` to 1.
 
-If `Logon_count` is 0, Windows correctly interprets this and will not allow any automated logons. Because of this known issue, the `LogonCount` Unattend setting cannot be used to allow exactly one automated logon. To work around this known issue, take the following steps:
+If `LogonCount` is 0, Windows correctly interprets this and will not perform any automated logons. Because of this known issue, the `LogonCount` Unattend setting cannot be used to allow exactly one automated logon. To work around this known issue, take the following steps:
 
 1. Set `LogonCount` to 1.
 1. Add a new command under the `Microsoft-Windows-Shell-Setup/FirstLogonCommands/SynchronousCommand` Unattend setting for the oobeSystem pass:
