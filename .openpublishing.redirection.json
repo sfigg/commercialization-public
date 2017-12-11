@@ -1217,7 +1217,7 @@
         "redirect_document_id": true
     },
     {   
-        "source_path": "customize/desktop/unattend/security-malware-windows-defender-scanscanparameters", 
+        "source_path": "customize/desktop/unattend/security-malware-windows-defender-scanscanparameters.md", 
         "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-scan-scanparameters", 
         "redirect_document_id": true
     },
@@ -1363,7 +1363,12 @@
     },
     {   
         "source_path": "customize/desktop/unattend/microsoft-windows-wlansvc-wlanfunctionalleveldevicereset.md", 
-        "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-wlansvc-wlanfunctionleveldevicereset", 
+        "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-wlansvc-wlanfunctionleveldeviceresetsupported", 
+        "redirect_document_id": true
+    },
+    {   
+        "source_path": "customize/desktop/unattend/microsoft-windows-wlansvc-wlanplatformleveldevicereset.md", 
+        "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-wlansvc-wlanplatformleveldeviceresetsupported.md", 
         "redirect_document_id": true
     },
     {   
