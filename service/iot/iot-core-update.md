@@ -29,4 +29,4 @@ Read [Windows as a Service Overview](https://docs.microsoft.com/windows/deployme
 
 A Windows 10 IoT Core device can be set to receive OS updates *only* directly from Microsoft by using **IoT\_GENERIC\_POP** feature in the OEMInput XML.
 
-See [Manage IoT Core device updates](managing-iot-device-updates.md) for details on various means to control the updates.
+See [Manage IoT Core device updates](managing-iot-device-update.md) for details on various means to control the updates.
