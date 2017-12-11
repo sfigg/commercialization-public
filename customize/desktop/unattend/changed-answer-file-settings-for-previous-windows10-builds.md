@@ -248,7 +248,7 @@ These Unattend settings are new in Windows 10:
 </ul></td>
 </tr>
 <tr class="odd">
-<td><p>[Microsoft-Windows-Wlansvc-NumAntennaConnected](microsoft-windows-wlansvc-numantennaeconnected.md)</p></td>
+<td><p>[Microsoft-Windows-Wlansvc-NumAntennaConnected](microsoft-windows-wlansvc-numantennaconnected.md)</p></td>
 <td><p>Specifies the number of antennas that are connected to the WLAN radio.</p></td>
 </tr>
 <tr class="even">
@@ -256,11 +256,11 @@ These Unattend settings are new in Windows 10:
 <td><p>Specifies the maximum number of channels that the Wi-Fi device can simultaneously operate on. For example, you can use this to specify support for Station mode and Wi-Fi Direct GO on separate channels simultaneously.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Microsoft-Windows-Wlansvc-WLANFunctionalLevelDeviceResetSupported](microsoft-windows-wlansvc-wlanfunctionalleveldevicereset.md)</p></td>
+<td><p>[Microsoft-Windows-Wlansvc-WLANFunctionLevelDeviceResetSupported](microsoft-windows-wlansvc-wlanfunctionleveldeviceresetsupported.md)</p></td>
 <td><p>Specifies whether the device supports functional level device reset. The functional level device reset feature in the OS checks this system capability exclusively to determine if it can run.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Microsoft-Windows-Wlansvc-WLANPlatformLevelDeviceResetSupported](microsoft-windows-wlansvc-wlanplatformleveldevicereset.md)</p></td>
+<td><p>[Microsoft-Windows-Wlansvc-WLANPlatformLevelDeviceResetSupported](microsoft-windows-wlansvc-wlanplatformleveldeviceresetsupported.md)</p></td>
 <td><p>Specifies whether the device supports platform level device reset. The platform level device reset feature in the OS checks this system capability exclusively to determine if it can run.</p></td>
 </tr>
 <tr class="odd">

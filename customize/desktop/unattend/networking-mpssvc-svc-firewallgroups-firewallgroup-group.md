@@ -15,7 +15,7 @@ ms.technology: windows-oem
 ---
 # Group
 
-The `Group` setting specifies the name of a [FirewallGroup](networking-mpssvc-svcfirewallgroups-firewallgroup.md). The available rule groups differ by Windows edition.
+The `Group` setting specifies the name of a [FirewallGroup](networking-mpssvc-svc-firewallgroups-firewallgroup.md). The available rule groups differ by Windows edition.
 
 ## Values
 
@@ -49,7 +49,7 @@ For more information on the `Get-NetFirewallRule` command, see [Net Security](ht
 
 ## Parent Hierarchy
 
-[Networking-MPSSVC-Svc](networking-mpssvc-svc.md) | [FirewallGroups](networking-mpssvc-svcfirewallgroups.md) | [FirewallGroup](networking-mpssvc-svcfirewallgroups-firewallgroup.md) | **Group**
+[Networking-MPSSVC-Svc](networking-mpssvc-svc.md) | [FirewallGroups](networking-mpssvc-svc-firewallgroups.md) | [FirewallGroup](networking-mpssvc-svc-firewallgroups-firewallgroup.md) | **Group**
 
 ## Valid Passes
 
@@ -80,4 +80,4 @@ The following XML output shows how to set two Windows Firewall groups, the first
 
 ## Related topics
 
-[FirewallGroup](networking-mpssvc-svcfirewallgroups-firewallgroup.md)
+[FirewallGroup](networking-mpssvc-svc-firewallgroups-firewallgroup.md)

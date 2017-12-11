@@ -26,7 +26,7 @@ ms.technology: windows-oem
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[FirewallGroup](networking-mpssvc-svcfirewallgroups-firewallgroup.md)</p></td>
+<td><p>[FirewallGroup](networking-mpssvc-svc-firewallgroups-firewallgroup.md)</p></td>
 <td><p>Specifies a Windows Firewall group.</p></td>
 </tr>
 </tbody>
@@ -59,7 +59,7 @@ The following XML output shows how to set Windows Firewall groups.
 ```
 
 > [!Note]
-> The `Group` value must be the Group ID associated with the firewall group you want to reference (for example, the `Remote Desktop` group corresponds to the ID `@FirewallAPI.dll,-28752`). Group IDs can be obtained using Network Security commands in PowerShell. See the child topic on the [Group](networking-mpssvc-svcfirewallgroups-firewallgroup-group.md) parameter for more detailed instructions.
+> The `Group` value must be the Group ID associated with the firewall group you want to reference (for example, the `Remote Desktop` group corresponds to the ID `@FirewallAPI.dll,-28752`). Group IDs can be obtained using Network Security commands in PowerShell. See the child topic on the [Group](networking-mpssvc-svc-firewallgroups-firewallgroup-group.md) parameter for more detailed instructions.
 
 ## Related topics
 
