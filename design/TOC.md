@@ -115,10 +115,7 @@
 ##### [Sample report descriptors](component-guidelines/radial-controller-sample-report-descriptors.md)
 
 ### [Security considerations for OEMs](device-experiences/OEM-security-considerations.md)
-<<<<<<< HEAD
 #### [Windows 10S security features and requirements](device-experiences/OEM-10S-security.md)
-=======
->>>>>>> 24fbc6a03089622d9ac047048e223ed7b45cbb84
 #### [BitLocker drive encryption in Windows 10 for OEMs](device-experiences/OEM-bitlocker.md)
 #### [Standards for a highly secure Windows 10 device](device-experiences/OEM-highly-secure.md)
 #### [Secure boot](device-experiences/OEM-secure-boot.md)
