@@ -13,21 +13,16 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # TCGSecurityActivationDisabled
-
 
 `TCGSecurityActivationDisabled` specifies whether Windows automatically configures encrypted drives (eDrives), also known as encrypted hard disk drives (eHDDs).
 
 `TCGSecurityActivationDisabled` sets the Group Policy administrative template setting: **Do not automatically encrypt files moved to encrypted folders**. This Group Policy setting is used after Windows is installed and started up. The setting specifies, for unprovisioned eDrives, whether security should be activated on the eDrive during provisioning. Use the [DisableEncryptedDiskProvisioning](microsoft-windows-setup-diskconfiguration-disableencrypteddiskprovisioning.md) unattend setting for configuring the operating system installation for the target HDD.
 
-**Note**  
-The eDrive must be configured in the unattend file by using the settings in microsoft-windows-setup-\\DiskConfiguration\\Disk. If the drives are configured manually, then the eDrive configuration policy may not be properly configured.
-
- 
+> [!Note]
+> The eDrive must be configured in the unattend file by using the settings in microsoft-windows-setup-\\DiskConfiguration\\Disk. If the drives are configured manually, then the eDrive configuration policy may not be properly configured.
 
 ## Values
-
 
 <table>
 <colgroup>
@@ -46,34 +41,27 @@ The eDrive must be configured in the unattend file by using the settings in micr
 </tbody>
 </table>
 
- 
-
 ## Valid Configuration Passes
-
 
 specialize
 
 ## Parent Hierarchy
 
-
 [Microsoft-Windows-EnhancedStorage-Adm](microsoft-windows-enhancedstorage-adm.md) | **TCGSecurityActivationDisabled**
 
 ## Applies To
-
 
 For a list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-EnhancedStorage-Adm](microsoft-windows-enhancedstorage-adm.md).
 
 ## XML Example
 
-
 The following XML output shows how to configure Windows so that Windows does not automatically encrypt eDrives.
 
-```
+```XML
 <TCGSecurityActivationDisabled>1</TCGSecurityActivationDisabled>
 ```
 
 ## Related topics
-
 
 [Encrypted Drives (eDrive) Reference](http://go.microsoft.com/fwlink/?LinkId=217371)
 
@@ -82,14 +70,3 @@ The following XML output shows how to configure Windows so that Windows does not
 [DisableEncryptedDiskProvisioning](microsoft-windows-setup-diskconfiguration-disableencrypteddiskprovisioning.md)
 
 [DiskConfiguration](microsoft-windows-setup-diskconfiguration.md)
-
- 
-
- 
-
-
-
-
-
-
-

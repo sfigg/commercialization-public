@@ -1,6 +1,6 @@
 ---
-title: Microsoft-Windows-SystemSettings
-description: Microsoft-Windows-SystemSettings
+title: Microsoft-Windows-SystemSettingsThreshold
+description: Microsoft-Windows-SystemSettingsThreshold
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
@@ -14,10 +14,10 @@ ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-# Microsoft-Windows-SystemSettings
+# Microsoft-Windows-SystemSettingsTrreshold
 
 
-The Microsoft-Windows-SystemSettings component implements settings related to mobile broadband.
+The Microsoft-Windows-SystemSettingsThreshold component implements settings related to mobile broadband.
 
 ## In This Section
 
