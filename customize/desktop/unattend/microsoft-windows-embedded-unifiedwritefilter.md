@@ -42,7 +42,7 @@ The overlay does not mirror the entire volume, but dynamically grows to keep tra
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[AddAllVolume](microsoft-windows-embedded-unifiedwritefilter-addallvolume.md)</p></td>
+<td><p>[AddAllVolumes](microsoft-windows-embedded-unifiedwritefilter-addallvolumes.md)</p></td>
 <td><p>Specifies whether to protect all volumes with UWF.</p></td>
 </tr>
 <tr class="even">

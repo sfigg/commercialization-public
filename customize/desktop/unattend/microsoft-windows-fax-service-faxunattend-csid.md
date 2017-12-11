@@ -1,10 +1,10 @@
 ---
-title: RouteFolderName
-description: RouteFolderName
+title: Csid
+description: Csid
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-ms.assetid: d83471b2-a95a-4a1f-b7a9-7de16713e520
+ms.assetid: 6bdaf4db-f9b8-4565-90d0-831200508b1a
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
 ms.author: alhopper
@@ -14,10 +14,10 @@ ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-# RouteFolderName
+# Csid
 
 
-`RouteFolderName` specifies the folder to which the fax service automatically routes and saves incoming faxes.
+`Csid` specifies the called subscriber ID (CSID) transmitted to the sending fax machine when receiving incoming faxes.
 
 ## Values
 
@@ -29,8 +29,8 @@ ms.technology: windows-oem
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p><em>RouteFolderName</em></p></td>
-<td><p>Specifies the folder to which the fax service automatically routes and saves incoming faxes. <em>RouteFolderName</em> is a string with a maximum length of 259 characters.</p></td>
+<td><p><em>Csid</em></p></td>
+<td><p>Specifies the CSID transmitted to the sending fax machine when receiving incoming faxes. <em>Csid</em> is a string with a maximum length of 19 characters. The default value is <strong>Fax</strong>.</p></td>
 </tr>
 </tbody>
 </table>
@@ -47,7 +47,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Fax-Service](microsoft-windows-fax-service.md) | [FaxUnattend](microsoft-windows-fax-service-fax-unattend.md) | **RouteFolderName**
+[Microsoft-Windows-Fax-Service](microsoft-windows-fax-service.md) | [FaxUnattend](microsoft-windows-fax-service-faxunattend.md) | **Csid**
 
 ## Applies To
 
@@ -91,7 +91,7 @@ The following XML output shows how to set fax settings.
 ## Related topics
 
 
-[FaxUnattend](microsoft-windows-fax-service-fax-unattend.md)
+[FaxUnattend](microsoft-windows-fax-service-faxunattend.md)
 
  
 

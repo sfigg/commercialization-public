@@ -15,7 +15,7 @@ ms.technology: windows-oem
 ---
 # Profile
 
-`Profile` specifies the profile of a [FirewallGroup](networking-mpssvc-svcfirewallgroups-firewallgroup.md).
+`Profile` specifies the profile of a [FirewallGroup](networking-mpssvc-svc-firewallgroups-firewallgroup.md).
 
 ## Values
 
@@ -46,7 +46,7 @@ ms.technology: windows-oem
 
 ## Parent Hierarchy
 
-[Networking-MPSSVC-Svc](networking-mpssvc-svc.md) | [FirewallGroups](networking-mpssvc-svcfirewallgroups.md) | [FirewallGroup](networking-mpssvc-svcfirewallgroups-firewallgroup.md) | **Profile**
+[Networking-MPSSVC-Svc](networking-mpssvc-svc.md) | [FirewallGroups](networking-mpssvc-svc-firewallgroups.md) | [FirewallGroup](networking-mpssvc-svc-firewallgroups-firewallgroup.md) | **Profile**
 
 ## Valid Passes
 
@@ -72,4 +72,4 @@ The following XML output shows how to set Windows Firewall groups.
 
 ## Related topics
 
-[FirewallGroup](networking-mpssvc-svcfirewallgroups-firewallgroup.md)
+[FirewallGroup](networking-mpssvc-svc-firewallgroups-firewallgroup.md)
