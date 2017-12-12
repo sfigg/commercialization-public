@@ -67,7 +67,7 @@ To see the newest unattend settings, go to [Changed answer file settings for Win
 
 Check out the [new CSPs settings](https://docs.microsoft.com/en-us/windows/client-management/mdm/new-in-windows-mdm-enrollment-management#a-href-idwhatsnew10awhats-new-in-windows-10-version-1703).
 
-## <a href="" id="adk"></a>What’s new in the the Windows ADK for Windows 10, version 1607
+## <a href="" id="adk"></a>What’s new in the Windows ADK for Windows 10, version 1607
 
 ### Pick and choose desktop applications
 
