@@ -29,7 +29,7 @@ To see available Features on Demand for languages and region, see [Language and 
 > - [OpenSSH](#openssh)
 > - [Printing](#printing)
 > - [Retail Demo Experience](#retail-demo-experience-rdx)
-> - [Sync Engine](#sync-engine)
+> - [Sync](#sync)
 
 ### <span id="DOTNET"></span><span id="dotnet"></span> .NET Framework  
 
@@ -139,7 +139,7 @@ These Features on Demand add the retail demo package to a device, for use in ret
 | Retail Demo Content  | Microsoft-Windows-RetailDemo-OfflineContent-Content-Package.cab |
 | Language specific Retail Demo Content | Microsoft-Windows-RetailDemo-OfflineContent-Content-*language-country*-Package.cab |
 
-### Sync engine
+### Sync
 
 This Feature on Demand is a mail, contacts, and calendar sync component. Not including this Feature on Demand on your Windows image will cause UWP apps such as Mail, People, and Calendar to not be able to properly sync.
 

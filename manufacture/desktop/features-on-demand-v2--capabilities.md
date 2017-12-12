@@ -31,9 +31,8 @@ Unlike previous feature packs, Features on Demand can be applicable to multiple 
 
 -   Use the /Online option to add the capability to your PC.
 
--   Use the /Image:\<mount path> option to add the capability to a Windows image file (.wim).
+-   Use the /Image:\<mount path> option to add the capability to a mounted Windows image.
  
-
 | Command | Description | Example |
 | --- | --- | --- |
 | /Add-Capability | Adds a capability to an image.<br></br>For packages with dependencies this also pulls dependent packages. For example, if you add the Speech package, you'll also get the Text-to-speech and Basic packages in addition to Speech. | `DISM.exe /Online /Add-Capability /CapabilityName:Language.Basic~~~en-US~0.0.1.0` |
@@ -43,9 +42,9 @@ Unlike previous feature packs, Features on Demand can be applicable to multiple 
 
 ### Using DISM to add or remove packages:
 
--   Use the /Online option to add the capability to your PC.
+-   Use the /Online option to add the package to your PC.
 
--   Use the /Image:\<mount path> option to add the capability to a Windows image file (.wim).
+-   Use the /Image:\<mount path> option to add the package to a mounted Windows image.
 
 | Command | Description | Example |
 | --- | --- | --- |
