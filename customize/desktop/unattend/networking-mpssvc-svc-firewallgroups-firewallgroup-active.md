@@ -15,7 +15,7 @@ ms.technology: windows-oem
 ---
 # Active
 
-`Active` specifies whether a [FirewallGroup](networking-mpssvc-svcfirewallgroups-firewallgroup.md) is active.
+`Active` specifies whether a [FirewallGroup](networking-mpssvc-svc-firewallgroups-firewallgroup.md) is active.
 
 ## Values
 
@@ -38,7 +38,7 @@ ms.technology: windows-oem
 
 ## Parent Hierarchy
 
-[Networking-MPSSVC-Svc](networking-mpssvc-svc.md) | [FirewallGroups](networking-mpssvc-svcfirewallgroups.md) | [FirewallGroup](networking-mpssvc-svcfirewallgroups-firewallgroup.md) | **Active**
+[Networking-MPSSVC-Svc](networking-mpssvc-svc.md) | [FirewallGroups](networking-mpssvc-svc-firewallgroups.md) | [FirewallGroup](networking-mpssvc-svc-firewallgroups-firewallgroup.md) | **Active**
 
 ## Valid Passes
 
@@ -64,4 +64,4 @@ The following XML output shows how to set Windows Firewall groups.
 
 ## Related topics
 
-[FirewallGroup](networking-mpssvc-svcfirewallgroups-firewallgroup.md)
+[FirewallGroup](networking-mpssvc-svc-firewallgroups-firewallgroup.md)

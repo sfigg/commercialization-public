@@ -35,11 +35,11 @@ Contains the settings you can use to map an exit code from a custom shell to a s
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[Action](microsoft-windows-embedded-shelllauncher-usersettings-user-customreturncodeaction-action.md)</p></td>
+<td><p>[Action](microsoft-windows-embedded-shelllauncher-usersettings-user-customreturncodeaction-codeaction-action.md)</p></td>
 <td><p>Specifies whether to add, modify, or remove the custom return code configuration from the list.</p></td>
 </tr>
 <tr class="even">
-<td><p>[ReturnCode](microsoft-windows-embedded-shelllauncher-usersettings-user-customreturncodeaction-returncode.md)</p></td>
+<td><p>[ReturnCode](microsoft-windows-embedded-shelllauncher-usersettings-user-customreturncodeaction-codeaction-returncode.md)</p></td>
 <td><p>Specifies the custom return code to map to the indicated shell exist code.</p></td>
 </tr>
 </tbody>

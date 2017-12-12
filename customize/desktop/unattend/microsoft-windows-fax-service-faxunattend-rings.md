@@ -1,10 +1,10 @@
 ---
-title: RoutePrinterName
-description: RoutePrinterName
+title: Rings
+description: Rings
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-ms.assetid: 79795dfb-6555-4d18-9080-8c3725c1bdfa
+ms.assetid: 6e6d9846-3c2b-44bb-a316-565264df9534
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
 ms.author: alhopper
@@ -14,10 +14,10 @@ ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-# RoutePrinterName
+# Rings
 
 
-`RoutePrinterName` specifies the printer to which the fax service automatically routes and prints incoming faxes.
+`Rings` specifies the number of rings before the fax service answers the telephone. This applies to existing and new fax devices.
 
 ## Values
 
@@ -29,15 +29,13 @@ ms.technology: windows-oem
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p><em>RoutePrinterName</em></p></td>
-<td><p>Specifies the printer to which the fax service automatically routes and prints incoming faxes. <em>RoutePrinterName</em> is a string.</p></td>
+<td><p><em>Rings</em></p></td>
+<td><p>Specifies the number of rings before the fax service answers the telephone. The default value is <strong>5</strong>.</p></td>
 </tr>
 </tbody>
 </table>
 
  
-
-This string type does not support empty elements. Do not create an empty value for this setting.
 
 ## Valid Passes
 
@@ -47,7 +45,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Fax-Service](microsoft-windows-fax-service.md) | [FaxUnattend](microsoft-windows-fax-service-fax-unattend.md) | **RoutePrinterName**
+[Microsoft-Windows-Fax-Service](microsoft-windows-fax-service.md) | [FaxUnattend](microsoft-windows-fax-service-faxunattend.md) | **Rings**
 
 ## Applies To
 
@@ -91,7 +89,7 @@ The following XML output shows how to set fax settings.
 ## Related topics
 
 
-[FaxUnattend](microsoft-windows-fax-service-fax-unattend.md)
+[FaxUnattend](microsoft-windows-fax-service-faxunattend.md)
 
  
 

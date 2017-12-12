@@ -41,19 +41,3 @@ offlineServicing
 
 
 For a list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-Embedded-KeyboardFilterService](microsoft-windows-embedded-keyboardfilterservice.md).
-
-## XML example
-
-
-```
-```
-
- 
-
- 
-
-
-
-
-
-

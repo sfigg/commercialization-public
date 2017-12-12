@@ -29,7 +29,7 @@ ms.technology: windows-oem
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[DiskID](microsoft-windows-setup-windowsdeploymentservices-imageselection-installtodiskid.md)</p></td>
+<td><p>[DiskID](microsoft-windows-setup-windowsdeploymentservices-imageselection-installto-diskid.md)</p></td>
 <td><p>Specifies the disk ID of the disk to which the image is installed.</p></td>
 </tr>
 <tr class="even">

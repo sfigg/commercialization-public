@@ -35,7 +35,7 @@ Contains settings that you can configure for the volume protected by UWF.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[DriverLetter](microsoft-windows-embedded-unifiedwritefilter-protectedvolumelist-protectedvolumeentry-driverletter.md)</p></td>
+<td><p>[DriveLetter](microsoft-windows-embedded-unifiedwritefilter-protectedvolumelist-protectedvolumeentry-driveletter.md)</p></td>
 <td><p>Specifies the drive letter of a volume protected by UWF.</p></td>
 </tr>
 <tr class="even">

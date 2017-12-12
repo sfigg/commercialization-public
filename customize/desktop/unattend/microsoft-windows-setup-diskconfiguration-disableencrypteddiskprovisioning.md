@@ -22,7 +22,7 @@ ms.technology: windows-oem
 By default, Windows activates drives that are capable of hardware-based encryption by using a fixed access control list (ACL) that is based on the Opal Security Subsystem Class (Opal SSC) specification.
 
 **Note**  
-Use the [TCGSecurityActivationDisabled](microsoft-windows-enhancedstorage-admtcgsecurityactivationdisabled.md) unattend setting to enable the Group Policy setting, **Do not automatically encrypt files moved to encrypted folders**, after Windows is installed and started up. The setting specifies, for unprovisioned eDrives, whether security should be activated on the eDrive during provisioning.
+Use the [TCGSecurityActivationDisabled](microsoft-windows-enhancedstorage-adm-tcgsecurityactivationdisabled.md) unattend setting to enable the Group Policy setting, **Do not automatically encrypt files moved to encrypted folders**, after Windows is installed and started up. The setting specifies, for unprovisioned eDrives, whether security should be activated on the eDrive during provisioning.
 
  
 
@@ -77,7 +77,7 @@ The following XML output for the `DisableEncryptedDiskProvisioning` setting show
 
 [DiskConfiguration](microsoft-windows-setup-diskconfiguration.md)
 
-[TCGSecurityActivationDisabled](microsoft-windows-enhancedstorage-admtcgsecurityactivationdisabled.md)
+[TCGSecurityActivationDisabled](microsoft-windows-enhancedstorage-adm-tcgsecurityactivationdisabled.md)
 
  
 

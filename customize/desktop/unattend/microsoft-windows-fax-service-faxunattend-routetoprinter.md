@@ -1,10 +1,10 @@
 ---
-title: ReceiveFaxes
-description: ReceiveFaxes
+title: RouteToPrinter
+description: RouteToPrinter
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-ms.assetid: 5e0090be-a01b-45fb-b38a-b9a5e4c639b7
+ms.assetid: 6f383dd4-b846-45b1-aad4-e75245386108
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
 ms.author: alhopper
@@ -14,10 +14,10 @@ ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-# ReceiveFaxes
+# RouteToPrinter
 
 
-`ReceiveFaxes` specifies whether the fax service answers incoming calls on a modem. This applies to existing and new fax devices.
+`RouteToPrinter` specifies whether incoming faxes are automatically routed to a printer.
 
 ## Values
 
@@ -30,11 +30,11 @@ ms.technology: windows-oem
 <tbody>
 <tr class="odd">
 <td><p><strong>true</strong></p></td>
-<td><p>Specifies that the fax service answers incoming calls on a device. This is the default value.</p></td>
+<td><p>Specifies that incoming faxes are automatically routed to a printer.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>false</strong></p></td>
-<td><p>Specifies that the fax service does not answer incoming calls on a device.</p></td>
+<td><p>Specifies that incoming faxes are not automatically routed to a printer. This is the default value.</p></td>
 </tr>
 </tbody>
 </table>
@@ -49,7 +49,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Fax-Service](microsoft-windows-fax-service.md) | [FaxUnattend](microsoft-windows-fax-service-fax-unattend.md) | **ReceiveFaxes**
+[Microsoft-Windows-Fax-Service](microsoft-windows-fax-service.md) | [FaxUnattend](microsoft-windows-fax-service-faxunattend.md) | **RouteToPrinter**
 
 ## Applies To
 
@@ -93,7 +93,7 @@ The following XML output shows how to set fax settings.
 ## Related topics
 
 
-[FaxUnattend](microsoft-windows-fax-service-fax-unattend.md)
+[FaxUnattend](microsoft-windows-fax-service-faxunattend.md)
 
  
 

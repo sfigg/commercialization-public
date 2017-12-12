@@ -23,7 +23,7 @@ Every Windows PC has an audio subsystem that enables the user to listen to and r
 
 The audio processing units offload audio processing from the main processor (or processors) on the SoC. Because these units can process audio data without using the main processor, the user can continue to listen to audio even after the main processor enters a low-power state to conserve battery power.
 
-<iframe src="https://hubs-video.ssl.catalog.video.msn.com/embed/05790d60-09c4-4a00-8fa0-bd0fb5c4424e/IA?csid=ux-en-us&MsnPlayerLeadsWith=html&PlaybackMode=Inline&MsnPlayerDisplayShareBar=false&MsnPlayerDisplayInfoButton=false&iframe=true&QualityOverride=HD" width="720" height="405" allowFullScreen="true" frameBorder="0" scrolling="no">A video describing how to validate screen-off audio playback.</iframe>
+<iframe class="video-iframe" style="width: 100%; height: 550px;" frameborder="0" allowfullscreen="true" src ="https://www.microsoft.com/en-us/videoplayer/embed/05790d60-09c4-4a00-8fa0-bd0fb5c4424e?autoplay=false">>A video describing how to validate screen-off audio playback.</iframe>
 
 This video shows how to use Windows Performance Analyzer (WPA) to verify that a computer enters the low-power state during screen-off audio playback (also known as low-power audio, or LPA).
 
