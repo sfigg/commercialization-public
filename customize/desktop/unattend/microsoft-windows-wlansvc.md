@@ -67,7 +67,7 @@ The Microsoft-Windows-Wlansvc component implements:
 </ul></td>
 </tr>
 <tr class="even">
-<td><p>[NumAntennaConnected](microsoft-windows-wlansvc-numantennaeconnected.md)</p></td>
+<td><p>[NumAntennaConnected](microsoft-windows-wlansvc-numantennaconnected.md)</p></td>
 <td><p>Specifies the number of antennas that are connected to the WLAN radio.</p></td>
 </tr>
 <tr class="odd">
@@ -79,11 +79,11 @@ The Microsoft-Windows-Wlansvc component implements:
 <td><p>Specifies the maximum number of channels that the Wi-Fi device can simultaneously operate on. For example, you can use this to specify support for Station mode and Wi-Fi Direct GO on separate channels simultaneously.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[WLANFunctionLevelDeviceResetSupported](microsoft-windows-wlansvc-wlanfunctionalleveldevicereset.md)</p></td>
+<td><p>[WLANFunctionLevelDeviceResetSupported](microsoft-windows-wlansvc-wlanfunctionleveldeviceresetsupported.md)</p></td>
 <td><p>Specifies whether the device supports functional level device reset (FLDR). The FLDR feature in the OS checks this system capability exclusively to determine if it can run.</p></td>
 </tr>
 <tr class="even">
-<td><p>[WLANPlatformLevelDeviceResetSupported](microsoft-windows-wlansvc-wlanplatformleveldevicereset.md)</p></td>
+<td><p>[WLANPlatformLevelDeviceResetSupported](microsoft-windows-wlansvc-wlanplatformleveldeviceresetsupported.md)</p></td>
 <td><p>Specifies whether the device supports platform level device reset (PLDR). The PLDR feature in the OS checks this system capability exclusively to determine if it can run.</p></td>
 </tr>
 </tbody>

@@ -1,10 +1,10 @@
 ---
-title: Tsid
-description: Tsid
+title: ReceiveFaxes
+description: ReceiveFaxes
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-ms.assetid: e28cf8a6-66c2-4787-867f-3fb85877e83d
+ms.assetid: 5e0090be-a01b-45fb-b38a-b9a5e4c639b7
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
 ms.author: alhopper
@@ -14,10 +14,10 @@ ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-# Tsid
+# ReceiveFaxes
 
 
-`Tsid` specifies the transmitting subscriber ID (TSID) sent by the fax machine to a receiving fax machine. The TSID is a text string that usually comprises the name of the business and its fax or telephone number.
+`ReceiveFaxes` specifies whether the fax service answers incoming calls on a modem. This applies to existing and new fax devices.
 
 ## Values
 
@@ -29,15 +29,17 @@ ms.technology: windows-oem
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p><em>Tsid</em></p></td>
-<td><p>Specifies the TSID sent by the fax machine to a receiving fax machine. <em>Tsid</em> is a string with a maximum length of 19 characters. The default value is <strong>Fax</strong>.</p></td>
+<td><p><strong>true</strong></p></td>
+<td><p>Specifies that the fax service answers incoming calls on a device. This is the default value.</p></td>
+</tr>
+<tr class="even">
+<td><p><strong>false</strong></p></td>
+<td><p>Specifies that the fax service does not answer incoming calls on a device.</p></td>
 </tr>
 </tbody>
 </table>
 
  
-
-This string type does not support empty elements. Do not create an empty value for this setting.
 
 ## Valid Passes
 
@@ -47,7 +49,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Fax-Service](microsoft-windows-fax-service.md) | [FaxUnattend](microsoft-windows-fax-service-fax-unattend.md) | **Tsid**
+[Microsoft-Windows-Fax-Service](microsoft-windows-fax-service.md) | [FaxUnattend](microsoft-windows-fax-service-faxunattend.md) | **ReceiveFaxes**
 
 ## Applies To
 
@@ -91,7 +93,7 @@ The following XML output shows how to set fax settings.
 ## Related topics
 
 
-[FaxUnattend](microsoft-windows-fax-service-fax-unattend.md)
+[FaxUnattend](microsoft-windows-fax-service-faxunattend.md)
 
  
 

@@ -64,7 +64,7 @@ offlineServicing
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-UnattendedJoin](microsoft-windows-unattendedjoin.md) | [OfflineIdentification](microsoft-windows-unattendedjoin-offlineidentification.md) | [Provisioning](microsoft-windows-unattendedjoin-offlineidentfication-provisioning.md) | **AccountData**
+[Microsoft-Windows-UnattendedJoin](microsoft-windows-unattendedjoin.md) | [OfflineIdentification](microsoft-windows-unattendedjoin-offlineidentification.md) | [Provisioning](microsoft-windows-unattendedjoin-offlineidentification-provisioning.md) | **AccountData**
 
 ## Applies To
 

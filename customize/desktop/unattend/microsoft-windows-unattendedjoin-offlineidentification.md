@@ -29,7 +29,7 @@ ms.technology: windows-oem
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[Provisioning](microsoft-windows-unattendedjoin-offlineidentfication-provisioning.md)</p></td>
+<td><p>[Provisioning](microsoft-windows-unattendedjoin-offlineidentification-provisioning.md)</p></td>
 <td><p>Specifies the account information used to join a domain during Windows Setup.</p></td>
 </tr>
 </tbody>

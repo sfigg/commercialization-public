@@ -1,10 +1,10 @@
 ---
-title: RouteToPrinter
-description: RouteToPrinter
+title: SendFaxes
+description: SendFaxes
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-ms.assetid: 6f383dd4-b846-45b1-aad4-e75245386108
+ms.assetid: 54c78517-93f7-4de9-8c3e-28c615791081
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
 ms.author: alhopper
@@ -14,10 +14,10 @@ ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-# RouteToPrinter
+# SendFaxes
 
 
-`RouteToPrinter` specifies whether incoming faxes are automatically routed to a printer.
+`SendFaxes` specifies whether the fax service does or does not use a modem to send faxes. This applies to existing and new fax devices.
 
 ## Values
 
@@ -30,11 +30,11 @@ ms.technology: windows-oem
 <tbody>
 <tr class="odd">
 <td><p><strong>true</strong></p></td>
-<td><p>Specifies that incoming faxes are automatically routed to a printer.</p></td>
+<td><p>Specifies that the fax service uses a modem to send faxes.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>false</strong></p></td>
-<td><p>Specifies that incoming faxes are not automatically routed to a printer. This is the default value.</p></td>
+<td><p>Specifies that the fax service does not use a modem to send faxes. This is the default value.</p></td>
 </tr>
 </tbody>
 </table>
@@ -49,7 +49,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Fax-Service](microsoft-windows-fax-service.md) | [FaxUnattend](microsoft-windows-fax-service-fax-unattend.md) | **RouteToPrinter**
+[Microsoft-Windows-Fax-Service](microsoft-windows-fax-service.md) | [FaxUnattend](microsoft-windows-fax-service-faxunattend.md) | **SendFaxes**
 
 ## Applies To
 
@@ -93,7 +93,7 @@ The following XML output shows how to set fax settings.
 ## Related topics
 
 
-[FaxUnattend](microsoft-windows-fax-service-fax-unattend.md)
+[FaxUnattend](microsoft-windows-fax-service-faxunattend.md)
 
  
 

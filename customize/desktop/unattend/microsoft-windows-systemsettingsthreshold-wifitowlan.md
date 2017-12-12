@@ -51,12 +51,12 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-SystemSettings](microsoft-windows-systemsettings.md) | **WiFiToWlan**
+[Microsoft-Windows-SystemSettingsThreshold](microsoft-windows-systemsettingsthreshold.md) | **WiFiToWlan**
 
 ## Applies To
 
 
-For a full list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-SystemSettings](microsoft-windows-systemsettings.md).
+For a full list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-SystemSettingsThreshold](microsoft-windows-systemsettingsthreshold.md).
 
 ## XML Example
 
@@ -70,7 +70,7 @@ The following XML output shows how to replace the "Wi-Fi" heading in the Network
 ## Related topics
 
 
-[Microsoft-Windows-SystemSettings](microsoft-windows-systemsettings.md)
+[Microsoft-Windows-SystemSettingsThreshold](microsoft-windows-systemsettingsthreshold.md)
 
  
 

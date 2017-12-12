@@ -26,19 +26,19 @@ ms.technology: windows-oem
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[Active](networking-mpssvc-svcfirewallgroups-firewallgroup-active.md)</p></td>
+<td><p>[Active](networking-mpssvc-svc-firewallgroups-firewallgroup-active.md)</p></td>
 <td><p>Specifies whether a Windows Firewall group is active.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Group](networking-mpssvc-svcfirewallgroups-firewallgroup-group.md)</p></td>
+<td><p>[Group](networking-mpssvc-svc-firewallgroups-firewallgroup-group.md)</p></td>
 <td><p>Specifies a Windows Firewall group by its ID.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Key](networking-mpssvc-svcfirewallgroups-firewallgroup-key.md)</p></td>
+<td><p>[Key](networking-mpssvc-svc-firewallgroups-firewallgroup-key.md)</p></td>
 <td><p>Specifies a unique name that you can use to identify the Firewall group.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Profile](networking-mpssvc-svcfirewallgroups-firewallgroup-profile.md)</p></td>
+<td><p>[Profile](networking-mpssvc-svc-firewallgroups-firewallgroup-profile.md)</p></td>
 <td><p>Specifies a Windows Firewall group profile.</p></td>
 </tr>
 </tbody>
@@ -46,7 +46,7 @@ ms.technology: windows-oem
 
 ## Parent Hierarchy
 
-[Networking-MPSSVC-Svc](networking-mpssvc-svc.md) | [FirewallGroups](networking-mpssvc-svcfirewallgroups.md) | **FirewallGroup**
+[Networking-MPSSVC-Svc](networking-mpssvc-svc.md) | [FirewallGroups](networking-mpssvc-svc-firewallgroups.md) | **FirewallGroup**
 
 ## Valid Passes
 
@@ -71,8 +71,8 @@ The following XML output shows how to set Windows Firewall groups.
 ```
 
 > [!Note]
-> The `Group` value must be the Group ID associated with the firewall group you want to reference (for example, the `Remote Desktop` group corresponds to the ID `@FirewallAPI.dll,-28752`). Group IDs can be obtained using Network Security commands in PowerShell. See the child topic on the [Group](networking-mpssvc-svcfirewallgroups-firewallgroup-group.md) parameter for more detailed instructions.
+> The `Group` value must be the Group ID associated with the firewall group you want to reference (for example, the `Remote Desktop` group corresponds to the ID `@FirewallAPI.dll,-28752`). Group IDs can be obtained using Network Security commands in PowerShell. See the child topic on the [Group](networking-mpssvc-svc-firewallgroups-firewallgroup-group.md) parameter for more detailed instructions.
 
 ## Related topics
 
-[FirewallGroups](networking-mpssvc-svcfirewallgroups.md)
+[FirewallGroups](networking-mpssvc-svc-firewallgroups.md)

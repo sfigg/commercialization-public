@@ -33,11 +33,11 @@ ms.technology: windows-oem
 <td><p>Specifies a unique string for a <code>FeedItem</code>.</p></td>
 </tr>
 <tr class="even">
-<td><p>[FeedTitle](microsoft-windows-ie-internetexplorer-feedlistfeed-item-feedtitle.md)</p></td>
+<td><p>[FeedTitle](microsoft-windows-ie-internetexplorer-feedlist-feeditem-feedtitle.md)</p></td>
 <td><p>Specifies the title of a <code>FeedItem</code>.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[FeedURL](microsoft-windows-ie-internetexplorer-feedlistfeed-item-feedurl.md)</p></td>
+<td><p>[FeedURL](microsoft-windows-ie-internetexplorer-feedlist-feeditem-feedurl.md)</p></td>
 <td><p>Specifies the URL of a <code>FeedItem</code>.</p></td>
 </tr>
 </tbody>
