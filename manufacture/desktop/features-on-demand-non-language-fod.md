@@ -37,10 +37,10 @@ To see available Features on Demand for languages and region, see [Language and 
 
 **Recommendation:** Preinstall these Features on Demand on devices that are preloaded with apps that require .NET3.x.
 
-| Name | Capability Name |Cab Name |                                            CAB Size (KB) | Install size |
+| Name | Capability Name |Cab Name |                                            CAB Size  | Install size |
 |-----------|-----------------------------------|------------|--------------------------| --- | 
-| NetFx3    | NetFX3~~~~ | Microsoft-Windows-NetFx3-OnDemand-Package.cab     |  70,805 | 306.33 MB |
-| NetFx3 en-US package |         | Microsoft-Windows-NetFx3-OnDemand-en-US-Package.cab |    98   | |
+| NetFx3    | NetFX3~~~~ | Microsoft-Windows-NetFx3-OnDemand-Package.cab     |  70,805 KB | 306.33 MB |
+| NetFx3 en-US package |         | Microsoft-Windows-NetFx3-OnDemand-en-US-Package.cab |    98 KB   | |
 | NetFx3 ja-JP package  |        | Microsoft-Windows-NetFx3-OnDemand-ja-JP-Package.cab |    1,438 | |
 
 ### Accessibility
@@ -51,9 +51,9 @@ This Feature on Demand enables Braille devices to work with the inbox Narrator s
 
 This Feature on Demand's installation can be triggered by a user from the Windows Settings app. 
 
-| Name | Capability Name |Cab Name |                                            CAB Size (KB) | Install size |
+| Name | Capability Name |Cab Name |                                            CAB Size | Install size |
 |-----------|-----------------------------------|------------|--------------------------| --- | 
-| Accessibility - Braille Support | Accessibility.Braille~~~~0.0.1.0 | Microsoft-Windows-Accessibility-Braille-Package.cab | 3,480 | 13.83 MB |
+| Accessibility - Braille Support | Accessibility.Braille~~~~0.0.1.0 | Microsoft-Windows-Accessibility-Braille-Package.cab | 3,480 KB | 13.83 MB |
 
 ### Developer Mode
 
@@ -63,9 +63,9 @@ An on-device diagnostic platform used via a browser.  Installs a SSH server on t
 
 Enabling Developer Mode will attempt to auto-install this Feature on Demand, but will likely fail on devices that are managed by WSUS. If this Feature on Demand is not installed, device discovery and Device Portal will not be enabled when Developer Mode is enabled.
 
-| Name | Capability Name |Cab Name |                                            CAB Size (KB) | Install size |
+| Name | Capability Name |Cab Name |                                            CAB Size | Install size |
 |-----------|-----------------------------------|------------|--------------------------| --- | 
-| Windows Developer Mode | Tools.DeveloperMode.Core~~~~0.0.1.0 | Microsoft-OneCore-DeveloperMode-Desktop-Package.cab | 1,876 | 12.63 MB |
+| Windows Developer Mode | Tools.DeveloperMode.Core~~~~0.0.1.0 | Microsoft-OneCore-DeveloperMode-Desktop-Package.cab | 1,876 KB | 12.63 MB |
 
 ### Graphics Tools
 
@@ -73,9 +73,9 @@ Used for Direct3D application development.  It is typically installed by AAA gam
 
 **Recommendation:** Don't install. This Feature on Demand is only needed by specific users who can trigger installation through Visual Studio when certain optional packages are chosen at install.
 
-| Name | Capability Name |Cab Name |                                            CAB Size (KB) | Install size |
+| Name | Capability Name |Cab Name |                                            CAB Size | Install size |
 |-----------|-----------------------------------|------------|--------------------------| --- | 
-| Graphics Tools | Tools.Graphics.DirectX~~~~0.0.1.0 | Microsoft-OneCore-Graphics-Tools-Package.cab | 14,252 | 68.83 MB |
+| Graphics Tools | Tools.Graphics.DirectX~~~~0.0.1.0 | Microsoft-OneCore-Graphics-Tools-Package.cab | 14,252 KB | 68.83 MB |
 
 
 ### Mixed Reality
@@ -86,9 +86,9 @@ This Feature on Demand enables Mixed Reality devices to be used on a PC. If this
 
 **Recommendation:** Recommended for MR-Ready and Compatible PCs, otherwise do not preinstall.
 
-| Name | Capability Name |Cab Name |                                            CAB Size (KB) | Install size |
+| Name | Capability Name |Cab Name |                                            CAB Size | Install size |
 |-----------|-----------------------------------|------------|--------------------------| --- | 
-| Windows Mixed Reality | Analog.Holographic.Desktop~~~~0.0.1.0 | Microsoft-Windows-Holographic-Desktop-FOD-Package.cab | 1,016,425 | 1.35 GB |
+| Windows Mixed Reality | Analog.Holographic.Desktop~~~~0.0.1.0 | Microsoft-Windows-Holographic-Desktop-FOD-Package.cab | 1,016 MB  | 1.35 GB |
 
 
 ### Internet Explorer
@@ -97,11 +97,11 @@ Internet Explorer Features on Demand enable preinstallation of Internet Explorer
 
 **Recommendation:** Include the relevant Features on Demand on images that include Internet Explorer.
 
-| Name | Capability Name |Cab Name |                                            CAB Size (KB) | Install size |
+| Name | Capability Name |Cab Name |                                            CAB Size | Install size |
 |-----------|-----------------------------------|------------|--------------------------| --- | 
-| Internet Explorer 11 | Browser.InternetExplorer~~~~0.0.11.0 | Microsoft-Windows-InternetExplorer-Optional-Package.cab | Preinstalls Internet Explorer on a device | 268 | 1.5 MB |
-| Internet Explorer 11 optional en-US package |  | Microsoft-Windows-InternetExplorer-Optional-en-US-Package.cab | Preinstalls Internet Explorer on a device | 15 | |
-| Internet Explorer 11 optional ja-JP package |  | Microsoft-Windows-InternetExplorer-Optional-ja-JP-Package.cab | Preinstalls Internet Explorer on a device | 18 | |
+| Internet Explorer 11 | Browser.InternetExplorer~~~~0.0.11.0 | Microsoft-Windows-InternetExplorer-Optional-Package.cab | Preinstalls Internet Explorer on a device | 268 KB | 1.5 MB |
+| Internet Explorer 11 optional en-US package |  | Microsoft-Windows-InternetExplorer-Optional-en-US-Package.cab | Preinstalls Internet Explorer on a device | 15 KB | |
+| Internet Explorer 11 optional ja-JP package |  | Microsoft-Windows-InternetExplorer-Optional-ja-JP-Package.cab | Preinstalls Internet Explorer on a device | 18 KB | |
 
 
 ### <span id="OPENSSH"></span><span id="openssh"></span> OpenSSH (Beta)
@@ -110,10 +110,10 @@ The OpenSSH Features on Demand enable the use of OpenSSH on a Windows PC.
 
 **Recommendation:** Don't include these Features on Demand on your image.
 
-| Name | Capability Name |Cab Name |                                            CAB Size (KB) | Install size |
+| Name | Capability Name |Cab Name |                                            CAB Size | Install size |
 |-----------|-----------------------------------|------------|--------------------------| --- | 
-| OpenSSH Client (Beta) | OpenSSH.Client~~~~0.0.1.0 | OpenSSH-Client-Package.cab | The beta release of an OpenSSH client for remoting and authentication. | 657 | 6.05 MB |
-| OpenSSH Server (Beta) | OpenSSH.Server~~~~0.0.1.0 | OpenSSH-Server-Package.cab | The beta release of an OpenSSH server for remoting and authentication. | 660 | 5.61 MB |
+| OpenSSH Client (Beta) | OpenSSH.Client~~~~0.0.1.0 | OpenSSH-Client-Package.cab  | 657 KB | 6.05 MB |
+| OpenSSH Server (Beta) | OpenSSH.Server~~~~0.0.1.0 | OpenSSH-Server-Package.cab  | 660 KB | 5.61 MB |
 
 
 ### Printing
@@ -122,10 +122,10 @@ These Features on Demand are for devices running Windows Server as a Print Serve
 
 **Recommendation:** Only preinstall the Features on Demand on Windows Server devices running as a Print Server role.
 
-| Name | Capability Name |Cab Name |                                            CAB Size (KB) | Install size |
+| Name | Capability Name |Cab Name |                                            CAB Size | Install size |
 |-----------|-----------------------------------|------------|--------------------------| --- | 
-| Enterprise Cloud Print | Print.EnterpriseCloudPrint~~~~0.0.1.0 | Microsoft-Windows-Printing-EnterpriseCloudPrint-Package.cab | 1,046  | 3.28 MB |
-| Mopria Cloud Service | Print.MopriaCloudService~~~~0.0.1.0 | Microsoft-Windows-Printing-MopriaCloudService-Package.cab | 3,296 | 11.13 MB |
+| Enterprise Cloud Print | Print.EnterpriseCloudPrint~~~~0.0.1.0 | Microsoft-Windows-Printing-EnterpriseCloudPrint-Package.cab | 1,046 KB  | 3.28 MB |
+| Mopria Cloud Service | Print.MopriaCloudService~~~~0.0.1.0 | Microsoft-Windows-Printing-MopriaCloudService-Package.cab | 3,296 KB | 11.13 MB |
 
 
 ### Retail Demo Experience (RDX)
@@ -145,6 +145,6 @@ This Feature on Demand is a mail, contacts, and calendar sync component. Not inc
 
 **Recommendation:** Preinstall this Feature on Demand on your Windows image.
 
-| Name | Capability Name |Cab Name |                                            CAB Size (KB) | Install size |
+| Name | Capability Name |Cab Name |                                            CAB Size | Install size |
 |-----------|-----------------------------------|------------|--------------------------| --- | 
-| Exchange ActiveSync and Internet Mail Sync Engine | OneCoreUAP.OneSync~~~~0.0.1.0 | Microsoft-OneCore-ApplicationModel-Sync-Desktop-FOD-Package.cab | 4,025 | 18.21 MB |
+| Exchange ActiveSync and Internet Mail Sync Engine | OneCoreUAP.OneSync~~~~0.0.1.0 | Microsoft-OneCore-ApplicationModel-Sync-Desktop-FOD-Package.cab | 4,025 KB  | 18.21 MB |
