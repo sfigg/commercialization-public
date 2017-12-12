@@ -2,7 +2,7 @@
 author: themar
 Description: 'Features on Demand v2 (Capabilities), introduced in Windows 10, are Windows feature packages that can be added at any time. This topic covers language and region-related FoDs.'
 MSHAttr: 'PreferredLib:/library/windows/hardware'
-title: 'Language and region-related Features on Demand'
+title: 'Language and region Features on Demand'
 ms.author: themar
 ms.date: 12/01/2017
 ms.topic: article
@@ -10,35 +10,35 @@ ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-# Language and region capabilites
+# Language and region Features on Demand
 
-## <span id="language_capabilities"></span><span id="Language_capabilities"></span> Language and region-related capabilities reference
+## <span id="language_capabilities"></span><span id="Language_capabilities"></span> Language and region-related Features on Demand reference
 
 Features on Demand are available to add language capabilities to your Windows images. To view available non language or region-related Features on Demand, see [Available features on demand](features-on-demand-non-language-fod.md).
 
-### Language capabilities
+### Language Features on Demand
 
 **Recommendation:** Preinstall the relevant language capabilities for the languages you expect users in the device’s target market to need.
 
-Language capabilites are available in seven types:
+Language Features on Demand are available in seven types:
 
-**Note:** Not all capabilities are available for every language.
+**Note:** Not all Features on Demand are available for every language.
 
 
-| Component | Sample file name | Dependencies | Description |
+| Component | Sample cab name | Dependencies | Description |
 | --------- | ---------------- | ------------ | ----------- |
-| Basic     | `Microsoft-Windows-LanguageFeatures-Basic-fr-fr-Package` | None | Spell checking, text prediction, word breaking, and hyphenation if available for the language.<br></br><p>You must add this component before adding any of the following components. <br></br><p>**Recommendation:** Preinstall the relevant language capabilities for the languages you expect users in the device’s target market to need.|
-| Fonts     | `Microsoft-Windows-LanguageFeatures-Fonts-Thai-Package`  | None | Fonts.<br></br><p>**Recommendation:** If a PC will be sold to a certain region, install that region's Font (e.g., th-TH should be preinstalled on devices shipping to regions with Thai language). Example, th-TH requires the Thai font pack.<br></br<p>>See [font capabilities](#fonts) for available font capabilities. |
-| Optical character recognition | `Microsoft-Windows-LanguageFeatures-OCR-fr-fr-Package` | Basic | Recognizes and outputs text in an image.<br></br><p>**Recommendation:** Only install on devices required to be OCR-capable. Most devices don't need this capability preinstalled. |
-| Handwriting recognition | `Microsoft-Windows-LanguageFeatures-Handwriting-fr-fr-Package` | Basic | Enables handwriting recognition for devices with pen input.<br></br><p>**Recommendation:** Preinstall for the device’s target language on any device with a touch- or pen-capable screen  |
-| Text-to-speech | `Microsoft-Windows-LanguageFeatures-TextToSpeech-fr-fr-Package` | Basic | Enables text to speech, used by Cortana and Narrator.<br></br><p>**Recommendation:** Don't install this capability by default. This FoD installs one language by default, and the user will select and download additional languages as needed. |
-| Speech recognition | `Microsoft-Windows-LanguageFeatures-Speech-fr-fr-Package` | Basic, Text-To-Speech | Recognizes voice input, used by Cortana and Windows Speech Recognition.<br></br><p>**Recommendation:** Don't install this capability by default. This FoD installs one language by default, and the user will select and download additional languages as needed. |
+| Basic     | `Microsoft-Windows-LanguageFeatures-Basic-fr-fr-Package.cab` | None | Spell checking, text prediction, word breaking, and hyphenation if available for the language.<br></br><p>You must add this component before adding any of the following components. <br></br><p>**Recommendation:** Preinstall the relevant language capabilities for the languages you expect users in the device’s target market to need.|
+| Fonts     | `Microsoft-Windows-LanguageFeatures-Fonts-Thai-Package.cab`  | None | Fonts.<br></br><p>**Recommendation:** If a PC will be sold to a certain region, install that region's Font (e.g., th-TH should be preinstalled on devices shipping to regions with Thai language). Example, th-TH requires the Thai font pack.<br></br<p>>See [font capabilities](#fonts) for available font capabilities. |
+| Optical character recognition | `Microsoft-Windows-LanguageFeatures-OCR-fr-fr-Package.cab` | Basic | Recognizes and outputs text in an image.<br></br><p>**Recommendation:** Only install on devices required to be OCR-capable. Most devices don't need this capability preinstalled. |
+| Handwriting recognition | `Microsoft-Windows-LanguageFeatures-Handwriting-fr-fr-Package.cab` | Basic | Enables handwriting recognition for devices with pen input.<br></br><p>**Recommendation:** Preinstall for the device’s target language on any device with a touch- or pen-capable screen  |
+| Text-to-speech | `Microsoft-Windows-LanguageFeatures-TextToSpeech-fr-fr-Package.cab` | Basic | Enables text to speech, used by Cortana and Narrator.<br></br><p>**Recommendation:** Don't install this capability by default. This FoD installs one language by default, and the user will select and download additional languages as needed. |
+| Speech recognition | `Microsoft-Windows-LanguageFeatures-Speech-fr-fr-Package.cab` | Basic, Text-To-Speech | Recognizes voice input, used by Cortana and Windows Speech Recognition.<br></br><p>**Recommendation:** Don't install this capability by default. This FoD installs one language by default, and the user will select and download additional languages as needed. |
 
 
 
-### <span id="Fonts"></span><span id="fonts"></span> Font capabilities
+### <span id="Fonts"></span><span id="fonts"></span> Font Features on Demand
 
-When adding languages for some regions, you'll need to add font capabilities.
+When adding languages for some regions, you'll need to add font Features on Demand.
 
 **Recommendation:** If a PC will be sold to a certain region, install that region's Font (e.g., th-TH should be preinstalled on devices shipping to regions with Thai language).
 
@@ -99,6 +99,8 @@ These fonts are optional and not required for any region.
 [Download the list of all available language FODs](http://download.microsoft.com/download/0/A/A/0AA4342D-3933-4216-A90D-3BA8392FB1D1/Windows 10 1703 FOD to LP Mapping Table.xlsx)
 
 ## <span id="related_topics"></span>Related topics
+
+[Available Features on Demand](#features-on-demand-non-language-fod.md)
 
 [Add Language Packs to Windows](add-language-packs-to-windows.md)
 
