@@ -12,9 +12,9 @@ ms.technology: windows-oem
 
 # Available Features on Demand
 
-The following Features on Demand are available for Windows 10. To see how to install, remove, or get information about Feature on Demand packages, see [Features on Demand](features-on-demand-v2--capabilities.md). 
+The following Features on Demand are available for Windows 10. To see how to add Features on Demand, see [Features on Demand](features-on-demand-v2--capabilities.md). 
 
-To see available Features on demand for languages and region, see [Language and region Features on Demand](features-on-demand-language-fod.md)
+To see available Features on Demand for languages and region, see [Language and region Features on Demand](features-on-demand-language-fod.md)
 
 
 ## Available non-language Features on Demand
