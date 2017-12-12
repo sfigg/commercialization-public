@@ -39,9 +39,9 @@ To see available Features on Demand for languages and region, see [Language and 
 
 | Name | Capability Name |Cab Name |                                            CAB Size (KB) | Install size |
 |-----------|-----------------------------------|------------|--------------------------| --- | 
-| NetFx3    | NetFX3~~~~ | Microsoft-Windows-NetFx3-OnDemand-Package.cab     |  70805 | 306.33 MB |
+| NetFx3    | NetFX3~~~~ | Microsoft-Windows-NetFx3-OnDemand-Package.cab     |  70,805 | 306.33 MB |
 | NetFx3 en-US package |         | Microsoft-Windows-NetFx3-OnDemand-en-US-Package.cab |    98   | |
-| NetFx3 ja-JP package  |        | Microsoft-Windows-NetFx3-OnDemand-ja-JP-Package.cab |    1438 | |
+| NetFx3 ja-JP package  |        | Microsoft-Windows-NetFx3-OnDemand-ja-JP-Package.cab |    1,438 | |
 
 ### Accessibility
 
@@ -147,4 +147,4 @@ This Feature on Demand is a mail, contacts, and calendar sync component. Not inc
 
 | Name | Capability Name |Cab Name |                                            CAB Size (KB) | Install size |
 |-----------|-----------------------------------|------------|--------------------------| --- | 
-| Exchange ActiveSync and Internet Mail Sync Engine | OneCoreUAP.OneSync~~~~0.0.1.0 | Microsoft-OneCore-ApplicationModel-Sync-Desktop-FOD-Package.cab | 4025 | 18.21 MB |
+| Exchange ActiveSync and Internet Mail Sync Engine | OneCoreUAP.OneSync~~~~0.0.1.0 | Microsoft-OneCore-ApplicationModel-Sync-Desktop-FOD-Package.cab | 4,025 | 18.21 MB |
