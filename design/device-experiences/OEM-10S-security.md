@@ -58,15 +58,14 @@ Windows 10 S does not allow any apps that aren't in the Store. A second limitati
 
 ## Hardware
 
-| Feature | Requirement | Details |
-|---------|------------|----------|
-| Processor generation | Systems must be on the latest, certified silicon chip for the current release of Windows | Intel 7th generation processors (Intel i3/i5/i7/i9-7x), Core M3-7xxx , Xeon E3-xxxx, and Xeon E5-xxxx Processors and AMD 7th generation processors (A Series Ax-9xxx, E-Series Ex-9xxx, FX-9xxx)|
-| Process architecture | Systems must have a processor that supports 64-bit instructions | Virtualization-based security (VBS) features require the Windows hypervisor, which is only supported on 64-bit IA processors, or ARM v8.2 CPUs |
+| Feature | Requirement | 
+|---------|------------|
+| Process architecture | Systems must have a processor that supports 64-bit instructions, and is 1 GHz or faster | Virtualization-based security (VBS) features require the Windows hypervisor, which is only supported on 64-bit IA processors, or ARM v8.2 CPUs |
 | Virtualization | Systems must have a processor that supports Input-Output Memory Management Unit (IOMMU) device virtualization and all I/O devices must be protected by IOMMU/SMMU | Intel VT-d, AMD-Vi, or ARM64 SMMUs |
 | Virtualization | Systems must also have virtual machine extensions with second level address translation (SLAT) | Intel Vt-x with Extended Page Tables (EPT), or AMD-v with Rapid Virtualization Indexing (RVI) |
 | Virtualization | The presence of these hardware virtualization features must be unmasked and reported as supported by the system firmware, and these features must be available for the operating system to use ||
 | Trusted Platform Module (TPM) | Systems must have a Trusted Platform Module (TPM), version 2.0, and meet the latest Microsoft requirements for the [Trusted Computing Group(TCG)](https://trustedcomputinggroup.org/) specification  | Intel (PTT), AMD, or discrete TPM from Infineon, STMicroelectronics, Nuvoton |
-| Platform boot verification | Systems must implement cryptographically verified platform boot | Intel Boot Guard in Verified Boot mode, or AMD Hardware Verified Boot, or an OEM equivalent mode with similar functionality |
+| Platform boot verification | Systems must implement cryptographically verified platform boot |
 | RAM | Systems must have 8 gigabytes or more of system RAM |   |
 
 ##Firmware
