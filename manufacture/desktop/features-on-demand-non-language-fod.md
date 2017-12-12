@@ -77,11 +77,13 @@ Used for Direct3D application development.  It is typically installed by AAA gam
 | Graphics Tools | Tools.Graphics.DirectX | Microsoft-OneCore-Graphics-Tools-Package.cab | 14,252 |
 
 
-### Holographic
+### Mixed Reality
 
 This Feature on Demand enables Mixed Reality devices to be used on a PC. If this Feature on Demand is not present, MR devices may not function properly.
 
-**Recommendation:** Preinstall only if you're shipping a PC bundled with a compatible Mixed Reality device.
+**Note:** Make sure to add this feature on demand prior to adding an update (hotfix, general distribution release [GDR], or service pack).
+
+**Recommendation:** Recommended for MR-Ready and Compatible PCs, otherwise do not preinstall.
 
 | Name | Capability Name |Cab Name |                                            Size (KB) |
 |-----------------|------|---------------------------------------------------|---------------------|
@@ -127,7 +129,7 @@ These Features on Demand are for devices running Windows Server as a Print Serve
 
 ### Retail Demo Experience (RDX)
 
-These Features on Demand add the retail demo package to a device, for use in retail stores. These 
+These Features on Demand add the retail demo package to a device, for use in retail stores. These features are available as .cab packages on the FoD ISO.
 
 **Recommendation:** Only preinstall on devices that are sold to retail stores for demonstration. Not including this Feature on Demand will cause no retail demo presentation to be available on a device.
 
