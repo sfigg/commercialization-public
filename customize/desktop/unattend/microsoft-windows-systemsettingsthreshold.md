@@ -1,6 +1,6 @@
 ---
-title: Microsoft-Windows-SystemSettings
-description: Microsoft-Windows-SystemSettings
+title: Microsoft-Windows-SystemSettingsThreshold
+description: Microsoft-Windows-SystemSettingsThreshold
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
@@ -14,10 +14,10 @@ ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-# Microsoft-Windows-SystemSettings
+# Microsoft-Windows-SystemSettingsThreshold
 
 
-The Microsoft-Windows-SystemSettings component implements settings related to mobile broadband.
+The Microsoft-Windows-SystemSettingsThreshold component implements settings related to mobile broadband.
 
 ## In This Section
 
@@ -29,11 +29,11 @@ The Microsoft-Windows-SystemSettings component implements settings related to mo
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[DisplayNetworkSelection](microsoft-windows-systemsettings-displaynetworkselection.md)</p></td>
+<td><p>[DisplayNetworkSelection](microsoft-windows-systemsettingsthreshold-displaynetworkselection.md)</p></td>
 <td><p>Specify whether to always show the Network Selection control in the <strong>Mobile Broadband Properties</strong> dialog.</p></td>
 </tr>
 <tr class="even">
-<td><p>[WiFiToWlan](microsoft-windows-systemsettings-wifitowlan.md)</p></td>
+<td><p>[WiFiToWlan](microsoft-windows-systemsettingsthreshold-wifitowlan.md)</p></td>
 <td><p>Use &quot;WLAN&quot; instead of &quot;Wi-Fi&quot; for the heading in the Networks list.</p></td>
 </tr>
 </tbody>

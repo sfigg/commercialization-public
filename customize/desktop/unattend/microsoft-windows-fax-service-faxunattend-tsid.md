@@ -1,10 +1,10 @@
 ---
-title: Rings
-description: Rings
+title: Tsid
+description: Tsid
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-ms.assetid: 6e6d9846-3c2b-44bb-a316-565264df9534
+ms.assetid: e28cf8a6-66c2-4787-867f-3fb85877e83d
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
 ms.author: alhopper
@@ -14,10 +14,10 @@ ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-# Rings
+# Tsid
 
 
-`Rings` specifies the number of rings before the fax service answers the telephone. This applies to existing and new fax devices.
+`Tsid` specifies the transmitting subscriber ID (TSID) sent by the fax machine to a receiving fax machine. The TSID is a text string that usually comprises the name of the business and its fax or telephone number.
 
 ## Values
 
@@ -29,13 +29,15 @@ ms.technology: windows-oem
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p><em>Rings</em></p></td>
-<td><p>Specifies the number of rings before the fax service answers the telephone. The default value is <strong>5</strong>.</p></td>
+<td><p><em>Tsid</em></p></td>
+<td><p>Specifies the TSID sent by the fax machine to a receiving fax machine. <em>Tsid</em> is a string with a maximum length of 19 characters. The default value is <strong>Fax</strong>.</p></td>
 </tr>
 </tbody>
 </table>
 
  
+
+This string type does not support empty elements. Do not create an empty value for this setting.
 
 ## Valid Passes
 
@@ -45,7 +47,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Fax-Service](microsoft-windows-fax-service.md) | [FaxUnattend](microsoft-windows-fax-service-fax-unattend.md) | **Rings**
+[Microsoft-Windows-Fax-Service](microsoft-windows-fax-service.md) | [FaxUnattend](microsoft-windows-fax-service-faxunattend.md) | **Tsid**
 
 ## Applies To
 
@@ -89,7 +91,7 @@ The following XML output shows how to set fax settings.
 ## Related topics
 
 
-[FaxUnattend](microsoft-windows-fax-service-fax-unattend.md)
+[FaxUnattend](microsoft-windows-fax-service-faxunattend.md)
 
  
 

@@ -83,7 +83,7 @@ Running an assessment with the recommended settings is quick and easy. The setti
 
 Watch the video demonstration:
 
-<iframe src="https://hubs-video.ssl.catalog.video.msn.com/embed/3f889614-b65c-4066-84ea-c523fdaabc39/IA?csid=ux-en-us&MsnPlayerLeadsWith=html&PlaybackMode=Inline&MsnPlayerDisplayShareBar=false&MsnPlayerDisplayInfoButton=false&iframe=true&QualityOverride=HD" width="720" height="405" allowFullScreen="true" frameBorder="0" scrolling="no"></iframe>
+<iframe class="video-iframe" style="width: 100%; height: 550px;" frameborder="0" allowfullscreen="true" src ="https://www.microsoft.com/en-us/videoplayer/embed/3f889614-b65c-4066-84ea-c523fdaabc39?autoplay=false"></iframe>
 
 **To run a single assessment with the recommended settings**
 
@@ -118,7 +118,7 @@ The **Home** tab provides easy access to some predefined jobs that you can run i
 
 Watch the video demonstration:
 
-<iframe src="https://hubs-video.ssl.catalog.video.msn.com/embed/99837a2d-f949-4a80-8250-53898ea4d57d/IA?csid=ux-en-us&MsnPlayerLeadsWith=html&PlaybackMode=Inline&MsnPlayerDisplayShareBar=false&MsnPlayerDisplayInfoButton=false&iframe=true&QualityOverride=HD" width="720" height="405" allowFullScreen="true" frameBorder="0" scrolling="no"></iframe>
+<iframe class="video-iframe" style="width: 100%; height: 550px;" frameborder="0" allowfullscreen="true" src ="https://www.microsoft.com/en-us/videoplayer/embed/99837a2d-f949-4a80-8250-53898ea4d57d?autoplay=false"></iframe>
 
 **To use a template with recommended settings**
 
@@ -175,8 +175,7 @@ Next, in Exercise 2 you create a customized job that contains multiple assessmen
 You can use the Windows Assessment Console to create a new job of your own design. This enables you to define the assessment that you want to perform and the metrics that you want to review. You can start by selecting a job type in the New Job dialog, or by selecting a job or individual assessments from the home page. In either case, you can select which assessments are included in the job, and you can modify the settings to meet your needs. In this exercise, you create a new job, add assessments, and modify the assessment settings.
 
 Watch the video demonstration:
-
-<iframe src="https://hubs-video.ssl.catalog.video.msn.com/embed/a8e78967-8469-4646-9a69-bab2a033d1df/IA?csid=ux-en-us&MsnPlayerLeadsWith=html&PlaybackMode=Inline&MsnPlayerDisplayShareBar=false&MsnPlayerDisplayInfoButton=false&iframe=true&QualityOverride=HD" width="720" height="405" allowFullScreen="true" frameBorder="0" scrolling="no"></iframe>
+<iframe class="video-iframe" style="width: 100%; height: 550px;" frameborder="0" allowfullscreen="true" src ="https://www.microsoft.com/en-us/videoplayer/embed/a8e78967-8469-4646-9a69-bab2a033d1df?autoplay=false"></iframe>
 
 **To create a new customized job**
 
@@ -240,8 +239,7 @@ Next, in Exercise 3 you package a job and saving it to a USB flash drive, so tha
 When you create a job that you want to run on a different computer, you do not have to install the Assessment Toolkit on that computer to do this. The Windows Assessment Console provides a way to package that job so that it includes all the necessary files and tools that are required to run the job on a different computer. In this exercise you package a job, run it on a different computer, and then compare the results.
 
 Watch the video demonstration:
-
-<iframe src="https://hubs-video.ssl.catalog.video.msn.com/embed/5a58137e-3afb-4e54-bb14-eaaf56bb44f6/IA?csid=ux-en-us&MsnPlayerLeadsWith=html&PlaybackMode=Inline&MsnPlayerDisplayShareBar=false&MsnPlayerDisplayInfoButton=false&iframe=true&QualityOverride=HD" width="720" height="405" allowFullScreen="true" frameBorder="0" scrolling="no"></iframe>
+<iframe class="video-iframe" style="width: 100%; height: 550px;" frameborder="0" allowfullscreen="true" src ="https://www.microsoft.com/en-us/videoplayer/embed/5a58137e-3afb-4e54-bb14-eaaf56bb44f6?autoplay=false"></iframe>
 
 **Important**  
 You should complete Exercise 1 before continuing.

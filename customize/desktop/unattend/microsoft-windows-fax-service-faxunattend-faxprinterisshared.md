@@ -1,10 +1,10 @@
 ---
-title: RouteToFolder
-description: RouteToFolder
+title: FaxPrinterIsShared
+description: FaxPrinterIsShared
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-ms.assetid: afe46edf-5c4a-4e2e-9253-36253fb762ae
+ms.assetid: 606e5ef1-5793-457f-84d8-2a7fd7ff7de5
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
 ms.author: alhopper
@@ -14,10 +14,10 @@ ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-# RouteToFolder
+# FaxPrinterIsShared
 
 
-`RouteToFolder` specifies whether incoming faxes are routed to a folder.
+`FaxPrinterIsShared` specifies whether the fax printer is shared and whether remote users can use the server as a shared fax server.
 
 ## Values
 
@@ -30,11 +30,11 @@ ms.technology: windows-oem
 <tbody>
 <tr class="odd">
 <td><p><strong>true</strong></p></td>
-<td><p>Specifies that incoming faxes are routed to a folder.</p></td>
+<td><p>Specifies that the fax printer is shared.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>false</strong></p></td>
-<td><p>Specifies that incoming faxes are not routed to a folder. This is the default value.</p></td>
+<td><p>Specifies that the fax printer is not shared. This is the default value.</p></td>
 </tr>
 </tbody>
 </table>
@@ -49,12 +49,12 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Fax-Service](microsoft-windows-fax-service.md) | [FaxUnattend](microsoft-windows-fax-service-fax-unattend.md) | **RouteToFolder**
+[Microsoft-Windows-Fax-Service](microsoft-windows-fax-service.md) | [FaxUnattend](microsoft-windows-fax-service-faxunattend.md) | **FaxPrinterIsShared**
 
 ## Applies To
 
 
-For the list of the supported Windows editions and architectures this component supports, see [Microsoft-Windows-Fax-Service](microsoft-windows-fax-service.md).
+For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-Fax-Service](microsoft-windows-fax-service.md).
 
 ## XML Example
 
@@ -93,7 +93,7 @@ The following XML output shows how to set fax settings.
 ## Related topics
 
 
-[FaxUnattend](microsoft-windows-fax-service-fax-unattend.md)
+[FaxUnattend](microsoft-windows-fax-service-faxunattend.md)
 
  
 

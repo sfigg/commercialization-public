@@ -1,10 +1,10 @@
 ---
-title: SendFaxes
-description: SendFaxes
+title: RoutePrinterName
+description: RoutePrinterName
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-ms.assetid: 54c78517-93f7-4de9-8c3e-28c615791081
+ms.assetid: 79795dfb-6555-4d18-9080-8c3725c1bdfa
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
 ms.author: alhopper
@@ -14,10 +14,10 @@ ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-# SendFaxes
+# RoutePrinterName
 
 
-`SendFaxes` specifies whether the fax service does or does not use a modem to send faxes. This applies to existing and new fax devices.
+`RoutePrinterName` specifies the printer to which the fax service automatically routes and prints incoming faxes.
 
 ## Values
 
@@ -29,17 +29,15 @@ ms.technology: windows-oem
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p><strong>true</strong></p></td>
-<td><p>Specifies that the fax service uses a modem to send faxes.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>false</strong></p></td>
-<td><p>Specifies that the fax service does not use a modem to send faxes. This is the default value.</p></td>
+<td><p><em>RoutePrinterName</em></p></td>
+<td><p>Specifies the printer to which the fax service automatically routes and prints incoming faxes. <em>RoutePrinterName</em> is a string.</p></td>
 </tr>
 </tbody>
 </table>
 
  
+
+This string type does not support empty elements. Do not create an empty value for this setting.
 
 ## Valid Passes
 
@@ -49,7 +47,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Fax-Service](microsoft-windows-fax-service.md) | [FaxUnattend](microsoft-windows-fax-service-fax-unattend.md) | **SendFaxes**
+[Microsoft-Windows-Fax-Service](microsoft-windows-fax-service.md) | [FaxUnattend](microsoft-windows-fax-service-faxunattend.md) | **RoutePrinterName**
 
 ## Applies To
 
@@ -93,7 +91,7 @@ The following XML output shows how to set fax settings.
 ## Related topics
 
 
-[FaxUnattend](microsoft-windows-fax-service-fax-unattend.md)
+[FaxUnattend](microsoft-windows-fax-service-faxunattend.md)
 
  
 

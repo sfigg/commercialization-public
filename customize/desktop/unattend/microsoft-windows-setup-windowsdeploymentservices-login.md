@@ -33,7 +33,7 @@ ms.technology: windows-oem
 <td><p>Specifies the credentials for Windows Deployment Services login.</p></td>
 </tr>
 <tr class="even">
-<td><p>[WillShowUI](microsoft-windows-setupwindowsdeploymentservices-login-willshowui.md)</p></td>
+<td><p>[WillShowUI](microsoft-windows-setup-windowsdeploymentservices-login-willshowui.md)</p></td>
 <td><p>Specifies in what circumstances the UI is displayed for Windows Deployment Services login.</p></td>
 </tr>
 </tbody>
