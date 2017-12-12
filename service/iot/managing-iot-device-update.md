@@ -56,6 +56,6 @@ View the set day using ` <LocURI>./Vendor/MSFT/PolicyManager/Device/Update/Sched
 
 ## Using Azure IoT Device Management
 
-[Azure IoT Device Management (Azure DM)](https://docs.microsoft.com/windows/iot-core/manage-your-device/azureiotdm) is a highly scalable management solution available on Windows 10 IoT Core.  [Windows Update Management](https://github.com/ms-iot/iot-core-azure-dm-client/blob/master/docs/windows-update-management.md) provides the details on managing the updates using this channel. 
+[Azure IoT Device Management (Azure DM)](https://docs.microsoft.com/windows/iot-core/manage-your-device/azureiotdm) is a highly scalable management solution available on Windows 10 IoT Core. See  [Windows Update Management](https://github.com/ms-iot/iot-core-azure-dm-client/blob/master/docs/windows-update-management.md) for the details on managing the updates using this channel. 
 
 Azure DM also provides ability to set the flighting ring ( see "ring" property in [Windows Update Policy](https://github.com/ms-iot/iot-core-azure-dm-client/blob/master/docs/windows-update-management.md#windows-update-policy) ) and control the reboot of the device via [Reboot Management](https://github.com/ms-iot/iot-core-azure-dm-client/blob/master/docs/reboot-management.md).
