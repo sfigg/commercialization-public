@@ -12,7 +12,7 @@ ms.technology: windows-oem
 ---
 
 # Windows 10 S Mode security features and hardware requirements for OEMs
-Windows 10 S is a specific configuration of Windows 10 Pro that offers a familiar, productive Windows experience that’s streamlined for security and performance. For security reasons, Windows 10 S will only run verified apps from the Store and verified drivers from Windows Update. Windows 10 S provides the best of the cloud and full featured apps, and is designed fo modern devices.
+Windows 10 S is a specific configuration of Windows 10 Pro that offers a familiar, productive Windows experience that’s streamlined for security and performance. For security reasons, Windows 10 S will only run verified apps from the Store and verified drivers from Windows Update. Windows 10 S provides the best of the cloud and full featured apps, and is designed for modern devices. Windows Defender is always on and always up-to-date. 
 
 10 S provides supports Azure Active Directory, and when paired with MSA or Intune for Education, 10 S defaults to storing files to OneDrive. Windows 10 S is available for any Windows 10 Professional edition, and users can switch to Windows 10 Pro.
 
@@ -34,13 +34,23 @@ Windows 10 S Mode protects customers by using a combination of code integrity po
 | Enterprise state roaming with Azure AD  | Yes | | Yes |
 | Shared PC configuration | Yes | | Yes |
 
+### Windows 10 S default app configuration
+* Email: Mail
+* Maps : Maps
+* Photo viewer : Photos
+* Video player: Movies & TV
+* Web browser: Edge
+* OneDrive automatically configued for MSA accounts so that documents, Photos, and Desktop are automatically synced and the user has 5GB of standard storage. 
+
 ### Code integrity policy
 The code integrity policy (CI) blocks the execution of unsigned or improperly signed binaries. Using unsupported binaries is only recommended when performing lab or factory image customization, or during deployment where the execution environment is either WinPE or Audit Mode.
-
 Once the CI policy is enabled on a system, it is enabled in two places:
 
 * Windows 10 S, enforced at boot
 * EFI firmware policy, enforced during firmware load and OS boot
+
+### Signed drivers and Windows 10 S
+Driver signing is different for Windows 10 S. For details on how to make your drivers work with Windows 10 S, see [Windows 10 S Driver Requirements](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/windows10sdriverrequirements) and [Publish a driver to Windows Update](https://docs.microsoft.com/en-us/windows-hardware/drivers/dashboard/publish-a-driver-to-windows-update).
 
 ### What's not supported
 Windows 10 S does not allow any apps that aren't in the Store. A second limitation is that Windows 10 S does not allow on-premise domain joins. Additionaly, some Windows customizations and some apps are not supported. For a full list of what's allowed and what's blocked, see [Planning a Windows 10 S deployment](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/windows-10-s-planning).
