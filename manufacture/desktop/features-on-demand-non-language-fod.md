@@ -99,9 +99,9 @@ Internet Explorer Features on Demand enable preinstallation of Internet Explorer
 
 | Name | Capability Name |Cab Name |                                            CAB Size | Install size |
 |-----------|-----------------------------------|------------|--------------------------| --- | 
-| Internet Explorer 11 | Browser.InternetExplorer~~~~0.0.11.0 | Microsoft-Windows-InternetExplorer-Optional-Package.cab | Preinstalls Internet Explorer on a device | 268 KB | 1.5 MB |
-| Internet Explorer 11 optional en-US package |  | Microsoft-Windows-InternetExplorer-Optional-en-US-Package.cab | Preinstalls Internet Explorer on a device | 15 KB | |
-| Internet Explorer 11 optional ja-JP package |  | Microsoft-Windows-InternetExplorer-Optional-ja-JP-Package.cab | Preinstalls Internet Explorer on a device | 18 KB | |
+| Internet Explorer 11 | Browser.InternetExplorer~~~~0.0.11.0 | Microsoft-Windows-InternetExplorer-Optional-Package.cab |  268 KB | 1.5 MB |
+| Internet Explorer 11 optional en-US package |  | Microsoft-Windows-InternetExplorer-Optional-en-US-Package.cab |  15 KB | |
+| Internet Explorer 11 optional ja-JP package |  | Microsoft-Windows-InternetExplorer-Optional-ja-JP-Package.cab |  18 KB | |
 
 
 ### <span id="OPENSSH"></span><span id="openssh"></span> OpenSSH (Beta)
