@@ -47,7 +47,7 @@ The code integrity policy (CI) blocks the execution of unsigned or improperly si
 Once the CI policy is enabled on a system, it is enabled in two places:
 
 * Windows 10 S, enforced at boot
-* EFI firmware policy, enforced during firmware load and OS boot
+* UEFI firmware policy, enforced during firmware load and OS boot
 
 ### Signed drivers and Windows 10 S
 Driver signing is different for Windows 10 S. For details on how to make your drivers work with Windows 10 S, see [Windows 10 S Driver Requirements](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/windows10sdriverrequirements) and [Publish a driver to Windows Update](https://docs.microsoft.com/en-us/windows-hardware/drivers/dashboard/publish-a-driver-to-windows-update).
