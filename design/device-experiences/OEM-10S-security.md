@@ -12,15 +12,38 @@ ms.technology: windows-oem
 ---
 
 # Windows 10 S Mode security features and hardware requirements for OEMs
-Intro paragraph describing why security is important and the business value of Windows 10S
-Also describe audience and provide links to consumer, ITPro, developer, and marketing content if appropriate. Windows 10 S mode security features and what hardware enables them. Windows 10 S mode provides the right configuration automatically so that users are safe on first setup (OOBE).
-link to the manufacturing topic--Planning a Windows 10 S deployment.
+Windows 10 S is a specific configuration of Windows 10 Pro that offers a familiar, productive Windows experience that’s streamlined for security and performance. For security reasons, Windows 10 S will only run verified apps from the Store and verified drivers from Windows Update. Windows 10 S provides the best of the cloud and full featured apps, and is designed fo modern devices.
 
-## Security features 
-Windows 10 S Mode protects customers by using a combination of code integrity policies,  hardware, and certification for apps. Windows 10 S will only run executable code that is signed with a Windows, WHQL, ELAM, or Store certificate from the Windows Hardware Developer Center Dashboard. This includes companion apps for drivers. Windows 10 S is available for any Windows 10 Professional edition.
+10 S provides supports Azure Active Directory, and when paired with MSA or Intune for Education, 10 S defaults to storing files to OneDrive. Windows 10 S is available for any Windows 10 Professional edition, and users can switch to Windows 10 Pro.
 
-To enable a secure and easy to install mode with automatic security configuration, some Windows customizations and some apps are not supported. For a full list of what's allowed and what's blocked, see [Planning a Windows 10 S deployment](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/windows-10-s-planning).
+## Configuration and features 
+Windows 10 S Mode protects customers by using a combination of code integrity policies,  hardware, and certification for apps. Windows 10 S will only run executable code that is signed with a Windows, WHQL, ELAM, or Store certificate from the Windows Hardware Developer Center Dashboard. This includes companion apps for drivers. 
 
+| Features | Windows 10 S | Windows 10 Home | Windows 10 Pro|
+|-----------|-----------|---------| ---------|
+| Non-store apps | | Yes | Yes |
+| Domain join on premise | |  | Yes |
+| Azure AD domain join | Yes |  | Yes |
+| Store apps (including Win32 centennial apps) | Yes | Yes | Yes |
+| OneDrive automatic setup and sync; Requires MSA | Yes | Configurable | Configurable |
+| Microsoft default apps set| Yes | Configurable | Configurable |
+| Windows update for business | Yes |  | Yes |
+| Store for business | Yes |  | Yes |
+| Mobile Device Management (MDM) | Yes | limited | Yes |
+| BitLocker | Yes | | Yes |
+| Enterprise state roaming with Azure AD  | Yes | | Yes |
+| Shared PC configuration | Yes | | Yes |
+
+### Code integrity policy
+The code integrity policy (CI) blocks the execution of unsigned or improperly signed binaries. Using unsupported binaries is only recommended when performing lab or factory image customization, or during deployment where the execution environment is either WinPE or Audit Mode.
+
+Once the CI policy is enabled on a system, it is enabled in two places:
+
+* Windows 10 S, enforced at boot
+* EFI firmware policy, enforced during firmware load and OS boot
+
+### What's not supported
+Windows 10 S does not allow any apps that aren't in the Store. A second limitation is that Windows 10 S does not allow on-premise domain joins. Additionaly, some Windows customizations and some apps are not supported. For a full list of what's allowed and what's blocked, see [Planning a Windows 10 S deployment](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/windows-10-s-planning).
 
 
 ## Hardware
