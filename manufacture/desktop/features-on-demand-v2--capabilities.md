@@ -54,7 +54,7 @@ Unlike previous feature packs, Features on Demand can be applicable to multiple 
 | /Get-PackageInfo | Displays detailed information about a package provided as a .cab file. You can use the /Get-Packages option to find the name of the package in the image, or you can specify the path to the .cab file. The path to the .cab file should point to the original source of the package, not to where the file is installed on the offline image. | `Dism /Image:C:\test\offline /Get-PackageInfo /PackagePath:C:\packages\package.cab` |
 | /Remove-Package | Removes a specified .cab file package from the image. | `Dism /Image:C:\test\offline /Remove-Package /PackageName:Microsoft-Windows-NetFx3-OnDemand-Package~31bf3856ad364e35~amd64~~10.0.17056.1000` |
 
-To see all available DISM commands for package servicing, see [DISM operating system package servicing command-line options](dism-operating-system-package-servicing-command-line-options).
+To see all available DISM commands for package servicing, see [DISM operating system package servicing command-line options](dism-operating-system-package-servicing-command-line-options.md).
 
 ## <span id="related_topics"></span>Related topics
 
