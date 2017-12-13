@@ -8,19 +8,16 @@ ms.assetid: aa598368-b826-483d-9833-5dbaa6afd3f9
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
 ms.author: alhopper
-ms.date: 05/02/2017
+ms.date: 12/13/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # Path
-
 
 `Path` specifies the path to the data image to install. This can be either a local or a network path. If the path is local, no credentials are required.
 
 ## Values
-
 
 <table>
 <colgroup>
@@ -38,29 +35,23 @@ ms.technology: windows-oem
 </tbody>
 </table>
 
- 
-
 ## Valid Configuration Passes
-
 
 windowsPE
 
 ## Parent Hierarchy
 
-
 [microsoft-windows-setup-](microsoft-windows-setup.md) | [ImageInstall](microsoft-windows-setup-imageinstall.md) | [DataImage](microsoft-windows-setup-imageinstall-dataimage.md) | [InstallFrom](microsoft-windows-setup-imageinstall-dataimage-installfrom.md) | **Path**
 
 ## Applies To
 
+For a list of the Windows editions and architectures that this component supports, see [microsoft-windows-setup-](microsoft-windows-setup.md).
 
-For a list of the Windows editions and architectures thatthis component supports, see [microsoft-windows-setup-](microsoft-windows-setup.md).
+## XML example - network paths
 
-## XML Example
+The following XML output shows how to set the `ImageInstall` setting to install both an operating system image and a data image that are stored on a network.
 
-
-The following XML output shows how to set the `ImageInstall` setting to install both an operating system image and a data image.
-
-```
+```XML
 <ImageInstall>
     <OSImage>
         <InstallFrom>
@@ -104,18 +95,20 @@ The following XML output shows how to set the `ImageInstall` setting to install 
 </ImageInstall>
 ```
 
-**Relative paths:** In this XML example, the installer has the Windows installation programs, the unattend file, and the data image on a USB drive, which is currently assigned to the letter E. The technician changes the working directory to E: before running Windows Setup.
+## XML example - relative paths
 
-```
+In the following XML example, the installer has the Windows installation programs, the Unattend file, and the data image on a USB drive, which is currently assigned to the drive letter E. The technician changes the working directory to E: before running Windows Setup.
+
+```PowerShell
 X:\Windows\System32> E:
 E:\> setup.exe /installfrom:".\wims\32bitimage.wim" /unattend:".\autounattend_files\32bit_autounattend.xml"
 ```
 
-```
+```XML
 <ImageInstall>
     <DataImage>
         <InstallFrom>
-            <Path>.\wims\dataimage.wim</Path>            
+            <Path>.\wims\dataimage.wim</Path>
             <MetaData wcm:action="add">
                 <Key>/IMAGE/INDEX</Key>
                 <Value>1</Value>
@@ -129,18 +122,30 @@ E:\> setup.exe /installfrom:".\wims\32bitimage.wim" /unattend:".\autounattend_fi
 </ImageInstall>
 ```
 
-## Related topics
+In the following XML example, the variable `%configsetroot%` is included in the path. `%configsetroot%` should be used when referencing a local path and the drive letter where Windows Setup resides is unknown.
 
+> [!Important]
+> If using `%configsetroot%`, you also need to set the value of the Unattend setting [Microsoft-Windows-Setup-UseConfigurationSet](microsoft-windows-setup-useconfigurationset.md) to `true`.
+
+```XML
+<DataImage wcm:action="add">
+    <InstallTo>
+        <DiskID>0</DiskID>
+        <PartitionID>4</PartitionID>
+    </InstallTo>
+    <InstallFrom>
+        <Path>%configsetroot%\dataimage.wim</Path>
+        <MetaData wcm:action="add">
+            <Key>/IMAGE/INDEX</Key>
+            <Value>1</Value>
+        </MetaData>
+    </InstallFrom>
+    <Order>1</Order>
+</DataImage>
+```
+
+## Related topics
 
 [InstallFrom](microsoft-windows-setup-imageinstall-dataimage-installfrom.md)
 
- 
-
- 
-
-
-
-
-
-
-
+[Create a Data Image using DISM](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/create-a-data-image-using-dism)
