@@ -1,5 +1,5 @@
 ---
-title: Windows 10 S security features and hardware requirements for OEMs
+title: Windows 10 S security features and requirements for OEMs
 description: Provides guidance on what Windows 10 S provides and what is required
 MSHAttr:
 - 'PreferredSiteName:MSDN'
