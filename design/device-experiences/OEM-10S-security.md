@@ -34,14 +34,14 @@ Windows 10 S Mode protects customers by using a combination of code integrity po
 | Enterprise state roaming with Azure AD  | Yes | | Yes |
 | Shared PC configuration | Yes | | Yes |
 
-### Windows 10 S default app configuration
+### Windows 10 S default modern app configuration
 * Email: Mail
 * Maps : Maps
 * Photo viewer : Photos
 * Search : Bing
 * Video player: Movies & TV
 * Web browser: Edge
-* OneDrive automatically configued for MSA accounts so that documents, Photos, and Desktop are automatically synced and the user has 5GB of standard storage. 
+* OneDrive automatically configured for MSA accounts so that documents, Photos, and Desktop are automatically synced and the user has 5GB of standard storage. 
 
 ### Hypervisor Code integrity policy
 Hypervisor code integrity policy (HVCI) blocks the execution of unsigned or improperly signed binaries. Using unsupported binaries is only recommended when performing lab or factory image customization, or during deployment where the execution environment is either WinPE or Audit Mode.
@@ -53,10 +53,44 @@ Once the CI policy is enabled on a system, it is enabled in two places:
 For more information, see the Enable virtualization-based isolation for Code Integrity section of [Driver compatibility with Device Guard in Windows 10](https://blogs.msdn.microsoft.com/windows_hardware_certification/2015/05/22/driver-compatibility-with-device-guard-in-windows-10/)
 
 ### Signed drivers and Windows 10 S
-Driver signing is different for Windows 10 S. For details on how to make your drivers work with Windows 10 S, see [Windows 10 S Driver Requirements](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/windows10sdriverrequirements) and [Publish a driver to Windows Update](https://docs.microsoft.com/en-us/windows-hardware/drivers/dashboard/publish-a-driver-to-windows-update).
+Driver signing is different for Windows 10 S. To install on Windows 10 S, driver packages must meet the following requirements:
+
+* Driver packages must be digitally signed with a Windows, WHQL, ELAM, or Store certificate from the Windows Hardware Developer Center Dashboard.
+* Companion software must be signed with a Microsoft Store Certificate.
+* Does not include an *.exe, *.zip, *.msi or *.cab in the driver package that extracts unsigned binaries.
+* Driver installs using only INF directives.
+* Driver does not call blocked inbox components.
+* Drivers does not include any user interface components, apps, or settings. Instead, use Universal applications from the Microsoft Store, for example:
+* Hardware Support Apps
+* UWP device apps
+* Centennial Apps
+* Driver and firmware servicing uses Windows Update and not an updater app.
+
+For more information, see [Windows 10 S Driver Requirements](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/windows10sdriverrequirements) and [Publish a driver to Windows Update](https://docs.microsoft.com/en-us/windows-hardware/drivers/dashboard/publish-a-driver-to-windows-update).
 
 ### What's not supported
-Windows 10 S does not allow any apps that aren't in the Store. A second limitation is that Windows 10 S does not allow on-premise domain joins. Additionaly, some Windows customizations and some apps are not supported. For a full list of what's allowed and what's blocked, see [Planning a Windows 10 S deployment](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/windows-10-s-planning).
+Windows 10 S does not allow any apps that aren't in the Store. A second limitation is that Windows 10 S does not allow on-premise domain joins. Additionally, some Windows customizations and some apps are not supported. For more information, see [Planning a Windows 10 S deployment](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/windows-10-s-planning)
+
+The following components are blocked from running in Windows 10 S. Any script or application that calls one of these blocked components will be blocked. If your manufacturing process uses scripts or applications that rely on blocked components, you can temporarily [enable manufacturing mode](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/windows-10-s-manufacturing-mode#enable-manufacturing-mode) for configuring and testing, but you can't ship a PC with manufacturing mode enabled.
+
+* bash.exe
+* cdb.exe
+* cmd.exe
+* cscript.exe
+* csi.exe
+* dnx.exe
+* kd.exe
+* lxsmanager.dll
+* msbuild.exe
+* ntsd.exe
+* powershell.exe
+* powershell_ise.exe
+* rcsi.exe
+* reg.exe
+* regedt32.exe
+* windgb.exe
+* wmic.exe
+* wscript.exe
 
 
 
