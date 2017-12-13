@@ -1,6 +1,6 @@
 ---
-title: Windows 10 S Mode security features and hardware requirements for OEMs
-description: Provides guidance on what an OEM should do to enable VBS
+title: Windows 10 S security features and hardware requirements for OEMs
+description: Provides guidance on what Windows 10 S provides and what is required
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
@@ -11,24 +11,24 @@ ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-# Windows 10 S Mode security features and hardware requirements for OEMs
-Windows 10 S is a specific configuration of Windows 10 Pro that offers a familiar, productive Windows experience that’s streamlined for security and performance. For security reasons, Windows 10 S will only run verified apps from the Store and verified drivers from Windows Update. Windows 10 S provides the best of the cloud and full featured apps, and is designed for modern devices. Windows Defender is always on and always up-to-date. 
+# Windows 10 S Mode security features and requirements for OEMs
+Windows 10 S is a specific configuration of Windows 10 Pro that offers a familiar, productive Windows experience that’s streamlined for security and performance. Windows 10 S provides the best of the cloud and full featured apps, and is designed for modern devices. Windows Defender is always on and always up-to-date. 
 
-10 S provides supports Azure Active Directory, and when paired with MSA or Intune for Education, 10 S defaults to storing files to OneDrive. Windows 10 S is available for any Windows 10 Professional edition, and users can switch to Windows 10 Pro.
+Windows 10 S will only run verified apps from the Store and verified drivers from Windows Update. Windows 10 S provides supports Azure Active Directory, and when paired with MSA or Intune for Education, Windows 10 S defaults to storing files to OneDrive. Windows 10 S is available for any Windows 10 Professional edition, and users can switch to Windows 10 Pro.
 
-## Configuration and features 
-Windows 10 S Mode protects customers by using a combination of code integrity policies,  hardware, and certification for apps. Windows 10 S will only run executable code that is signed with a Windows, WHQL, ELAM, or Store certificate from the Windows Hardware Developer Center Dashboard. This includes companion apps for drivers. 
+## Features enabled for Windows 10 S
+Windows 10 S Mode protects customers by using a combination of code integrity policies,  hardware, and certification for apps. Windows 10 S will only run executable code that is signed with a Windows, WHQL, ELAM, or Store certificate from the [Windows Hardware Developer Center Dashboard](https://aka.ms/DevCenterPortal). This includes companion apps for drivers. 
 
 | Features | Windows 10 S | Windows 10 Home | Windows 10 Pro|
 |-----------|-----------|---------| ---------|
 | Non-store apps | | Yes | Yes |
 | Domain join on premise | |  | Yes |
 | Azure AD domain join | Yes |  | Yes |
-| Store apps (including Win32 centennial apps) | Yes | Yes | Yes |
+| Windows Store apps (including Win32 centennial apps) | Yes | Yes | Yes |
 | OneDrive automatic setup and sync; Requires MSA | Yes | Configurable | Configurable |
 | Microsoft default apps set| Yes | Configurable | Configurable |
 | Windows update for business | Yes |  | Yes |
-| Store for business | Yes |  | Yes |
+| Windows Store for business | Yes |  | Yes |
 | Mobile Device Management (MDM) | Yes | limited | Yes |
 | BitLocker | Yes | | Yes |
 | Enterprise state roaming with Azure AD  | Yes | | Yes |
