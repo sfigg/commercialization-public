@@ -46,7 +46,7 @@ This topic applies to the following test jobs:
 |||
 |---|---|
 | **Specifications**  | <ul><li>Device.Graphics.WDDM11.DisplayRender.Base</li><li>Device.Graphics.WDDM.DisplayRender.OutputProtection</li><li>Device.Graphics.WDDM.DisplayRender.OutputProtection.Windows7</li></ul> |  
-| **Platforms**   | <ul><li>Windows 10 client editions (x86)</li><li>Windows 10, client editions (x64)</li><li>Windows Server 2016 (x64)</li><li>Windows 10, client editions (ARM64)</li></ul> |
+| **Platforms**   | <ul><li>Windows 10, client editions (x86)</li><li>Windows 10, client editions (x64)</li><li>Windows Server 2016 (x64)</li><li>Windows 10, client editions (ARM64)</li></ul> |
 | **Supported Releases** | <ul><li>Windows 10</li><li>Windows 10, version 1511</li><li>Windows 10, version 1607</li><li>Windows 10, version 1703</li><li>Windows 10, version 1709</li></ul> |
 |**Expected run time (in minutes)**| 10 |
 |**Category**| Compatibility |
