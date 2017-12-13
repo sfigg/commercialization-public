@@ -24,7 +24,7 @@ If you are an OEM building secure systems, you must provide the hardware to enab
 
 ## Windows Defender Exploit Guard
 
-The *Exploit protection feature* Windows Defender Exploit Guard includes hypervisor-protected code integrity (HVCI), which is a kernel process mitigation that leverages virtualization based security to isolate the process that performs integrity validation and authorization for kernel-mode code.
+The **Exploit protection feature** in Windows Defender Exploit Guard includes hypervisor-protected code integrity (HVCI), which is a kernel process mitigation that leverages virtualization based security to isolate the process that performs integrity validation and authorization for kernel-mode code.
 
 For a device to support Windows Defender Exploit Guard as specified in the Windows Hardware Compatibility Requirements (WHCR), you as the OEM must provide the following hardware, software, or firmware features. 
 
