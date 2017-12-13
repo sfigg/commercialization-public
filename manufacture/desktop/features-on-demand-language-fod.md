@@ -16,13 +16,13 @@ ms.technology: windows-oem
 
 Features on Demand are available to add language capabilities to your Windows images. To view available non language or region-related Features on Demand, see [Available Features on Demand](features-on-demand-non-language-fod.md).
 
-To see how to add Features on Demand to your Windows image, see [Features on Demand](features-on-demand-v2--capabilities.md)
+To see how to add Features on Demand to your Windows image, see [Features on Demand](features-on-demand-v2--capabilities.md).
 
 > [!div class="op_single_selector"]
 > - [Languages](#language-features-on-demand)
 > - [Fonts](#span-idfontsspanspan-idfontsspan-font-features-on-demand)
 > - [Additional font packages](#span-idadditionalfontsspanspan-idadditionalfontsspan-additional-fonts-available)
-> - [Region-sdpecific requirements](#span-idregionrequirementsspanspan-idregionrequirementsspan-other-region-specific-requirements)
+> - [Region-specific requirements](#span-idregionrequirementsspanspan-idregionrequirementsspan-other-region-specific-requirements)
 
 
 ### Language Features on Demand
