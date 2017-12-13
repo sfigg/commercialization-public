@@ -63,10 +63,10 @@ Driver signing is different for Windows 10 S. To install on Windows 10 S, driver
 * Driver installs using only INF directives.
 * Driver does not call blocked inbox components.
 * Drivers does not include any user interface components, apps, or settings. Instead, use Universal applications from the Microsoft Store, for example:
-* Hardware Support Apps
-* UWP device apps
-* Centennial Apps
-* Driver and firmware servicing uses Windows Update and not an updater app.
+    * Hardware Support Apps
+    * UWP device apps
+    * Centennial Apps
+    * Driver and firmware servicing uses Windows Update and not an updater app.
 
 For more information, see [Windows 10 S Driver Requirements](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/windows10sdriverrequirements) and [Publish a driver to Windows Update](https://docs.microsoft.com/en-us/windows-hardware/drivers/dashboard/publish-a-driver-to-windows-update).
 
