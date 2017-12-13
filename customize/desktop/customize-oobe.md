@@ -39,7 +39,7 @@ The following is a non-exhaustive list of screens the user may see during OOBE, 
 1. **Set up Office**. This screen is only displayed if the user is connected to a network, and has provided their Microsoft account information. Content on the page will vary depending on the user’s account type. For example, if their Microsoft account qualifies for a free trial of Office, the page will encourage them to setup their free trial.
 1. **Make Cortana my personal assistant**
 1. **OEM Registration pages**
-1. **Get the latest from Windows**. If a newer version of Windows is available than the version that shipped with the device, the user will have the opportunity to upgrade Windows at the end of OOBE. See [Windows updates during OOBE](windows-updates-during-oobe.md) for more details.
+1. **Get the latest from Windows**. This page is only displayed to the user if a newer version of Windows is available than the version that shipped with the device. See [Windows updates during OOBE](windows-updates-during-oobe.md) for more details.
 
 You can hide certain OOBE screens using Unattend. For more information, see [OOBE Unattend component](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-shell-setup-oobe).
 
