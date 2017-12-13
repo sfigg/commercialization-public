@@ -11,7 +11,7 @@ ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-# Windows 10 S Mode security features and requirements for OEMs
+# Windows 10 S security features and requirements for OEMs
 Windows 10 S is a specific configuration of Windows 10 Pro that offers a familiar Windows experience that’s streamlined for security and performance. Windows 10 S provides the best of the cloud and full featured apps, and is designed for modern devices. Windows Defender is always on and always up-to-date. 
 
 Windows 10 S will only run verified apps from the Store and verified drivers from Windows Update. Windows 10 S provides supports Azure Active Directory, and when paired with MSA or Intune for Education, Windows 10 S defaults to storing files to OneDrive. 
