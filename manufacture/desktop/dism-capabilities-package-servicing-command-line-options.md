@@ -16,7 +16,7 @@ ms.technology: windows-oem
 
 Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) only. Use Deployment Image Servicing and Management (DISM.exe) to service Windows capabilities. Capabilities are a Windows package type allows you to request services like .NET or languages without specifying the version. Use DISM to search multiple sources like Windows Update or your corporate servers to find and install the latest version.
 
-To see the available capabilities, go to [Features On Demand V2 (Capabilities)](features-on-demand-v2--capabilities.md).
+To see the available capabilities, go to [Features On Demand](features-on-demand-v2--capabilities.md).
 
 ## <span id="DISM_Command-Line_Options"></span><span id="dism_command-line_options"></span><span id="DISM_COMMAND-LINE_OPTIONS"></span>DISM Command-Line Options
 
@@ -84,7 +84,7 @@ Note, each of these commands requires either the **/Online** or **/Image:**&lt;*
 ## <span id="related_topics"></span>Related topics
 
 
-[Features On Demand V2 (Capabilities)](features-on-demand-v2--capabilities.md)
+[Features On Demand](features-on-demand-v2--capabilities.md)
 
 [DISM - Deployment Image Servicing and Management Technical Reference for Windows](dism---deployment-image-servicing-and-management-technical-reference-for-windows.md)
 

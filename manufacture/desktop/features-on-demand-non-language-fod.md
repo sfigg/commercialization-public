@@ -14,7 +14,7 @@ ms.technology: windows-oem
 
 The following Features on Demand are available for Windows 10. You can use either `DISM /image:<path_to_image> /get-capabilities` or `DISM /online /get-capabilities` to see which Features on Demand are available in your image of Windows 10. To see how to add Features on Demand, see [Features on Demand](features-on-demand-v2--capabilities.md). 
 
-To see available Features on Demand for languages and region, see [Language and region Features on Demand](features-on-demand-language-fod.md)
+To see available Features on Demand for languages and regions, see [Language and region Features on Demand](features-on-demand-language-fod.md)
 
 
 ## Available non-language Features on Demand
@@ -59,9 +59,9 @@ This Feature on Demand's installation can be triggered by a user from the Window
 
 An on-device diagnostic platform used via a browser.  Installs a SSH server on the device for UWP remote deployment as well as Windows Device Portal.
 
-**Recommendation:** In general, don't preinstall on devices. You can consider preinstalling on "developer edition" devices, where the primary market for the device is developers or users who plan on developing or testing UWPs.
+**Recommendation:** In general, don't preinstall on devices. If you are building an image for "developer edition" devices, where the primary market for the device is developers or users who plan on developing or testing UWPs, consider preinstalling.
 
-Enabling Developer Mode will attempt to auto-install this Feature on Demand, but will likely fail on devices that are managed by WSUS. If this Feature on Demand is not installed, device discovery and Device Portal will not be enabled when Developer Mode is enabled.
+For devices that are managed by WSUS, enabling Developer Mode will attempt to auto-install this Feature on Demand, but will likely fail. If this Feature on Demand is not successfully installed, device discovery and Device Portal will not be enabled when Developer Mode is enabled.
 
 | Name | Capability Name |Cab Name |                                            CAB Size | Install size |
 |-----------|-----------------------------------|------------|--------------------------| --- | 
@@ -69,7 +69,7 @@ Enabling Developer Mode will attempt to auto-install this Feature on Demand, but
 
 ### Graphics Tools
 
-Used for Direct3D application development.  It is typically installed by AAA game engine developers, enterprise graphics software developrs (e.g. graphics developers at Autodesk), or niche hobbyists.  
+Used for Direct3D application development.  It is typically installed by AAA game engine developers, enterprise graphics software developers, or niche hobbyists.  
 
 **Recommendation:** Don't install. This Feature on Demand is only needed by specific users who can trigger installation through Visual Studio when certain optional packages are chosen at install.
 
@@ -80,7 +80,7 @@ Used for Direct3D application development.  It is typically installed by AAA gam
 
 ### Mixed Reality
 
-This Feature on Demand enables Mixed Reality devices to be used on a PC. If this Feature on Demand is not present, MR devices may not function properly.
+This Feature on Demand enables Mixed Reality (MR) devices to be used on a PC. If this Feature on Demand is not present, MR devices may not function properly.
 
 **Note:** Make sure to add this feature on demand prior to adding an update (hotfix, general distribution release [GDR], or service pack).
 
