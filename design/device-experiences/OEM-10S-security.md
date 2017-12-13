@@ -14,7 +14,7 @@ ms.technology: windows-oem
 # Windows 10 S Mode security features and requirements for OEMs
 Windows 10 S is a specific configuration of Windows 10 Pro that offers a familiar Windows experience that’s streamlined for security and performance. Windows 10 S provides the best of the cloud and full featured apps, and is designed for modern devices. Windows Defender is always on and always up-to-date. 
 
-Windows 10 S will only run verified apps from the Store and verified drivers from Windows Update. Windows 10 S provides supports Azure Active Directory, and when paired with MSA or Intune for Education, Windows 10 S defaults to storing files to OneDrive. Windows 10 S is available for any Windows 10 Professional edition, and users can switch from Windows 10 S to Windows 10 Pro.
+Windows 10 S will only run verified apps from the Store and verified drivers from Windows Update. Windows 10 S provides supports Azure Active Directory, and when paired with MSA or Intune for Education, Windows 10 S defaults to storing files to OneDrive. 
 
 ## Features enabled for Windows 10 S
 Windows 10 S Mode protects customers by using a combination of code integrity policies,  hardware, and certification for apps. Windows 10 S will only run executable code that is signed with a Windows, WHQL, ELAM, or Store certificate from the [Windows Hardware Developer Center Dashboard](https://aka.ms/DevCenterPortal). This includes companion apps for drivers. 
@@ -45,6 +45,8 @@ Windows 10 S Mode protects customers by using a combination of code integrity po
 
 ### Hypervisor Code integrity policy
 Hypervisor code integrity policy (HVCI) blocks the execution of unsigned or improperly signed binaries. Using unsupported binaries is only recommended when performing lab or factory image customization, or during deployment where the execution environment is either WinPE or Audit Mode.
+HVCI is not turned on by default, so you will need to turn it on. For instructions on how to do that, see [Enable HVCI](https://docs.microsoft.com/en-us/windows/device-security/enable-virtualization-based-protection-of-code-integrity )
+
 Once the CI policy is enabled on a system, it is enabled in two places:
 
 * Windows 10 S, enforced at boot
