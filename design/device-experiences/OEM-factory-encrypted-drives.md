@@ -35,7 +35,7 @@ To use another encryption standard on your drive, you must first disable the aut
 ## <span id="related_topics"></span>Related topics
 
 
-[Hard Drives and Partitions](hard-drives-and-partitions.md)
+[Hard Drives and Partitions](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/hard-drives-and-partitions)
 
  
 
