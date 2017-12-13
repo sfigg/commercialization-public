@@ -19,6 +19,7 @@ The following tables record the major changes that were made in the **Customize*
 
 | Topic                                          | Description                                                                                        |
 |:-----------------------------------------------|:---------------------------------------------------------------------------------------------------|
+| [Windows updates during OOBE](desktop/windows-updates-during-oobe.md) | New. Describes how both critical and non-critical Windows and driver updates are downloaded during a user's Out of Box Experience. |
 | [Exclusive apps](preinstall/exclusive-apps.md) | New. Guidance on how OEMs can work with software developers to target OEM devices for apps to appear exclusively on, based on the OEM IDs set in the registry.    |
 | [Hibernate Once Resume Many](enterprise/hibernate-once-resume-many-horm-.md)  | Updated to note that HORM (a feature of Unified Write Filter) can now be used on UEFI devices starting in Windows 10, version 1709.    |
 

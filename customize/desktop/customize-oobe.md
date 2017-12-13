@@ -5,7 +5,7 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.author: alhopper
-ms.date: 10/17/2017
+ms.date: 12/13/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -29,7 +29,7 @@ The following is a non-exhaustive list of screens the user may see during OOBE, 
 1. **Cortana welcome**
 1. **Region selection**
 1. **Keyboard selection**
-1. **Connect to a network**
+1. **Connect to a network**. After connecting to a network, critical driver updates and critical zero-day patch (ZDP) Windows updates will begin downloading in the background. See [Windows updates during OOBE](windows-updates-during-oobe.md) for more details.
 1. **End User License Agreement (EULA)**
 1. **Sign in to, or create, a Microsoft account**
 1. **Link your phone and PC**. This screen will only appear if the user signed into their Microsoft account, and connected to a network, on the previous screens.
@@ -39,6 +39,7 @@ The following is a non-exhaustive list of screens the user may see during OOBE, 
 1. **Set up Office**. This screen is only displayed if the user is connected to a network, and has provided their Microsoft account information. Content on the page will vary depending on the user’s account type. For example, if their Microsoft account qualifies for a free trial of Office, the page will encourage them to setup their free trial.
 1. **Make Cortana my personal assistant**
 1. **OEM Registration pages**
+1. **Get the latest from Windows**. If a newer version of Windows is available than the version that shipped with the device, the user will have the opportunity to upgrade Windows at the end of OOBE. See [Windows updates during OOBE](windows-updates-during-oobe.md) for more details.
 
 You can hide certain OOBE screens using Unattend. For more information, see [OOBE Unattend component](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-shell-setup-oobe).
 
@@ -49,9 +50,10 @@ The following topics describe OOBE customization considerations.
 | Topic                                     | Description                                                                        |
 |:------------------------------------------|:-----------------------------------------------------------------------------------|
 | [OOBE.xml](oobexml.md)                                | You can use OOBE.xml to organize text and images displayed during OOBE, and to specify settings for customizing the Windows 10 first-run experience. You can use multiple Oobe.xml files for language- and region-specific license terms and settings so that users see appropriate info as soon as they start their PCs. By specifying information in the Oobe.xml file, you help fill in some of the required information so that users are asked to do only the core tasks required to set up their PCs. |
-| [Cortana voice support](cortana-voice-support.md)     | This topic describes how Cortana voice walks the user through the OOBE experience, enabling the user to complete parts of OOBE by responding to spoken prompts.                       |
-| [Connect users to the network](connect-to-network.md) | Describes how the **Let's connect you to a network** screen in OOBE automatically connects the user to available Wi-Fi and Cellular data networks. |
-| [OEM HID pairing](oem-hid-pairing.md)                 | On PCs that ship with an unpaired wireless mouse and keyboard, the HID pairing screens are shown to the customer during the first-run experience in OOBE, which is before language selection or any other screen that requires user input. If you include written instructions, you must include those instructions in every language that ships with the PC.              |
+| [Cortana voice support](cortana-voice-support.md)     | Learn how Cortana voice walks the user through the OOBE experience, enabling the user to complete parts of OOBE by responding to spoken prompts.                       |
+| [Connect users to the network](connect-to-network.md) | Learn about the **Let's connect you to a network** screen in OOBE, which connects the user to available Wi-Fi and/or Cellular data networks. |
+| [Windows Updates during OOBE](windows-updates-during-oobe.md) | Learn about the different Windows updates that can download during a user's Out of Box Experience.  |
+| [OEM HID pairing](oem-hid-pairing.md)                 | On PCs that ship with an unpaired wireless mouse and keyboard, you can customize the HID pairing screens shown to the customer during the first-run experience in OOBE. If you include written instructions, you must include those instructions in every language that ships with the PC.              |
 | [OEM license terms](oem-license.md)                   | You can add your OEM license terms to the License Terms screen in the first-run experience of OOBE. |
 | [OEM registration pages](oem-registration-pages.md)   | You can display OEM registration screens during OOBE to encourage customers to provide you with their information. This enables you to provide them with a more personalized experience and information. |
 
