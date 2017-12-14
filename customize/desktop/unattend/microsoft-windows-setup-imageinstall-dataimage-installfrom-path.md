@@ -8,7 +8,7 @@ ms.assetid: aa598368-b826-483d-9833-5dbaa6afd3f9
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
 ms.author: alhopper
-ms.date: 12/13/2017
+ms.date: 12/14/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
