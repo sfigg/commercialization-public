@@ -1,5 +1,5 @@
 ---
-title: Windows 10 S security features and hardware requirements for OEMs
+title: Windows 10 S security features and requirements for OEMs
 description: Provides guidance on what Windows 10 S provides and what is required
 MSHAttr:
 - 'PreferredSiteName:MSDN'
@@ -11,7 +11,7 @@ ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-# Windows 10 S Mode security features and requirements for OEMs
+# Windows 10 S security features and requirements for OEMs
 Windows 10 S is a specific configuration of Windows 10 Pro that offers a familiar Windows experience that’s streamlined for security and performance. Windows 10 S provides the best of the cloud and full featured apps, and is designed for modern devices. Windows Defender is always on and always up-to-date. 
 
 Windows 10 S will only run verified apps from the Store and verified drivers from Windows Update. Windows 10 S provides supports Azure Active Directory, and when paired with MSA or Intune for Education, Windows 10 S defaults to storing files to OneDrive. 
@@ -63,10 +63,10 @@ Driver signing is different for Windows 10 S. To install on Windows 10 S, driver
 * Driver installs using only INF directives.
 * Driver does not call blocked inbox components.
 * Drivers does not include any user interface components, apps, or settings. Instead, use Universal applications from the Microsoft Store, for example:
-* Hardware Support Apps
-* UWP device apps
-* Centennial Apps
-* Driver and firmware servicing uses Windows Update and not an updater app.
+    * Hardware Support Apps
+    * UWP device apps
+    * Centennial Apps
+    * Driver and firmware servicing uses Windows Update and not an updater app.
 
 For more information, see [Windows 10 S Driver Requirements](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/windows10sdriverrequirements) and [Publish a driver to Windows Update](https://docs.microsoft.com/en-us/windows-hardware/drivers/dashboard/publish-a-driver-to-windows-update).
 

@@ -93,7 +93,7 @@ Below is an example customizations.xml file that defines default slider modes.
 </WindowsCustomizatons>
 ```
 
-## <a name="configuree-settings"></a> Configure power settings and PPM options engaged by the slider
+## <a name="configure-settings"></a> Configure power settings and PPM options engaged by the slider
 
 In Windows 10, build 1709, we’ve introduced new overlays that you can use to customize the power settings and PPM options that are engaged for each slider mode. In previous versions of Windows, power settings could only be configured per power scheme, and PPM options could only be configured per power profile. The introduction of overlays enables OEMs to better optimize power settings based on the slider mode selected by the user, as opposed to the power scheme or power profile selected by the device.
 
