@@ -49,7 +49,7 @@ For a list of the Windows editions and architectures that this component support
 
 ## XML example - network paths
 
-The following XML output shows how to set the `ImageInstall` setting to install both an operating system image and a data image that are stored on a network.
+The following XML example shows how to set the `ImageInstall` setting to install both an operating system image and a data image that are stored on a network.
 
 ```XML
 <ImageInstall>
@@ -122,10 +122,13 @@ E:\> setup.exe /installfrom:".\wims\32bitimage.wim" /unattend:".\autounattend_fi
 </ImageInstall>
 ```
 
-In the following XML example, the variable `%configsetroot%` is included in the path. `%configsetroot%` should be used when referencing a local path and the drive letter where Windows Setup resides is unknown.
+## XML example - absolute paths
 
-> [!Important]
-> If using `%configsetroot%`, you also need to set the value of the Unattend setting [Microsoft-Windows-Setup-UseConfigurationSet](microsoft-windows-setup-useconfigurationset.md) to `true`.
+You can reference an absolute path to your data image as follows:
+
+`<Path>E:\dataimage.wim</Path>`
+
+If the drive letter where Windows Setup resides is unknown, you can indicate this with the `%configsetroot%` variable. The following XML example shows how to use `%configsetroot%` to reference a local path where the drive letter where Windows Setup resides is unknown.
 
 ```XML
 <DataImage wcm:action="add">
@@ -143,6 +146,9 @@ In the following XML example, the variable `%configsetroot%` is included in the 
     <Order>1</Order>
 </DataImage>
 ```
+
+> [!Important]
+> If using `%configsetroot%`, you also need to set the value of the Unattend setting [Microsoft-Windows-Setup-UseConfigurationSet](microsoft-windows-setup-useconfigurationset.md) to `true`.
 
 ## Related topics
 
