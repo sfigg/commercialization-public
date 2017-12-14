@@ -47,7 +47,9 @@ windowsPE
 
 For a list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-Setup](microsoft-windows-setup.md).
 
-## XML example - network paths
+## XML examples
+
+### Network paths
 
 The following XML example shows how to set the `ImageInstall` setting to install both an operating system image and a data image that are stored on a network.
 
@@ -95,7 +97,7 @@ The following XML example shows how to set the `ImageInstall` setting to install
 </ImageInstall>
 ```
 
-## XML example - relative paths
+### Relative paths
 
 In the following XML example, the installer has the Windows installation programs, the Unattend file, and the data image on a USB drive, which is currently assigned to the drive letter E. The technician changes the working directory to E: before running Windows Setup.
 
@@ -122,7 +124,7 @@ E:\> setup.exe /installfrom:".\wims\32bitimage.wim" /unattend:".\autounattend_fi
 </ImageInstall>
 ```
 
-## XML example - absolute paths
+### Absolute paths
 
 You can reference an absolute path to your data image as follows:
 
