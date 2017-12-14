@@ -167,7 +167,7 @@ The Pagefile.sys and Hiberfil.sys files increase in size in direct proportion to
 To save space on the drive, you can remove or reduce the size of the hiberfil.sys. See the [size comparison table](#Size_comparisons) below. To learn more, see [Lab 7: Change settings, enter product keys, and run scripts with an answer file (unattend.xml)](update-windows-settings-and-scripts-create-your-own-answer-file-sxs.md). 
 
 -  `powercfg /h /type reduced`   : Reduces the file by 30%   
--  `powercfg /h /off`            : Removes the file.   
+-  `powercfg /h off`            : Removes the file.   
 
 ### <span id="Language_packs"></span>Language packs and features on demand
 
