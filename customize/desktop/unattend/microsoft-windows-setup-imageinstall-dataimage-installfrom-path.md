@@ -148,7 +148,7 @@ If the drive letter where Windows Setup resides is unknown, you can indicate thi
 ```
 
 > [!Important]
-> If using `%configsetroot%`, you also need to set the value of the Unattend setting [Microsoft-Windows-Setup-UseConfigurationSet](microsoft-windows-setup-useconfigurationset.md) to `true`.
+> If using `%configsetroot%`, you must also set the value of the Unattend setting [Microsoft-Windows-Setup-UseConfigurationSet](microsoft-windows-setup-useconfigurationset.md) to `true`.
 
 ## Related topics
 
