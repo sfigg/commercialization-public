@@ -84,7 +84,7 @@ In unattended installations, the Windows image to install is specified by the `O
     ```
 
     > [!Note]
-    > If you're specifying a local folder in `path`, see [Path](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-setup-imageinstall-dataimage-installfrom-path) in the Unattended Windows Setup Reference(https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend) to learn about using relative or absolute paths.
+    > If you're specifying a local folder in `path`, see [Path](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-setup-imageinstall-dataimage-installfrom-path) in the [Unattended Windows Setup Reference](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend) to learn about using relative or absolute paths.
 
 4.  Run Setup.exe, specifying the location of the answer file. For example:
 
