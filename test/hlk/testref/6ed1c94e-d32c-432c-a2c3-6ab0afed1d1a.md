@@ -5,6 +5,12 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: a911f643-8459-432e-9f25-f4e392941ec6
+author: sapaetsc
+ms.author: sapaetsc
+ms.date: 10/15/17
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # <span id="p_hlk_test.6ed1c94e-d32c-432c-a2c3-6ab0afed1d1a"></span>Subpixel Texture
@@ -22,7 +28,7 @@ This topic applies to the following test jobs:
 |||
 |---|---|
 | **Specifications**  | <ul><li>Device.Graphics.AdapterRender.MinimumDirectXLevel</li></ul> |  
-| **Platforms**   | <ul><li>Windows 10 client editions (x86)</li><li>Windows 10, client editions (x64)</li><li>Windows Server 2016 (x64)</li><li>Windows 10, client editions (ARM64)</li></ul> |
+| **Platforms**   | <ul><li>Windows 10, client editions (x86)</li><li>Windows 10, client editions (x64)</li><li>Windows Server 2016 (x64)</li><li>Windows 10, client editions (ARM64)</li></ul> |
 | **Supported Releases** | <ul><li>Windows 10</li><li>Windows 10, version 1511</li><li>Windows 10, version 1607</li><li>Windows 10, version 1703</li><li>Windows 10, version 1709</li></ul> |
 |**Expected run time (in minutes)**| 2 |
 |**Category**| Compatibility |

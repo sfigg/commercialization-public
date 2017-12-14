@@ -24,7 +24,7 @@ To build an FWVGA image with software-rendered buttons:
 
 1.  Create a customization answer file using the contents shown in the following code sample.
 
-    ```
+    ```XML
     <?xml version="1.0" encoding="utf-8" ?>  
     <ImageCustomizations xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate"  
                          Name="FWVGASoftwareButtons"  
@@ -110,13 +110,13 @@ To build an FWVGA image with software-rendered buttons:
 
      
 
-7.  If you have not done so already, create an OEMInput XML file to define the set of packages to include in your phone image, and configure your computer to use the imaging tools. For more information, see [Building a mobile image using ImgGen.cmd](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/manufacture/mobile/building-a-phone-image-using-imggencmd).
+7.  If you have not done so already, create an OEMInput XML file to define the set of packages to include in your phone image, and configure your computer to use the imaging tools. For more information, see [Building a mobile image using ImgGen.cmd](https://docs.microsoft.com/en-us/windows-hardware/manufacture/mobile/building-a-phone-image-using-imggencmd).
 
 8.  In your OEMInput XML file, set the value of the **Resolution** element to 480x800. This configuration ensures that WVGA assets are used for the FWVGA image. Only WVGA assets can be used in FWVGA images that use software-rendered buttons.
 
 9.  In your OEMInput XML file, add the **NAVIGATIONBAR** feature to the **Microsoft** element that is a child of the **Features** element. This feature adds a phone setting that enables users to configure the color of the software buttons.
 
-    ```
+    ```XML
     <Features>
       <Microsoft>
         <Feature>NAVIGATIONBAR</Feature>
@@ -124,14 +124,10 @@ To build an FWVGA image with software-rendered buttons:
     </Features>
     ```
 
-    For more information, see [Optional features for building images](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/manufacture/mobile/optional-features-for-building-images).
+    For more information, see [Optional features for building images](https://docs.microsoft.com/en-us/windows-hardware/manufacture/mobile/optional-features-for-building-images).
 
- 
+## Related topics
 
- 
+[Prepare for Windows mobile development](https://docs.microsoft.com/en-us/windows-hardware/manufacture/mobile/preparing-for-windows-mobile-development)
 
-
-
-
-
-
+[Customization answer file overview](https://docs.microsoft.com/en-us/windows-hardware/customize/mobile/mcsf/customization-answer-file)

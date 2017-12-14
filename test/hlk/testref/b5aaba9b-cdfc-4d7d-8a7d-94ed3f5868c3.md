@@ -5,6 +5,12 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 819b87c1-b150-46d5-bb6e-0997c0fa1caa
+author: sapaetsc
+ms.author: sapaetsc
+ms.date: 10/15/17
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # <span id="p_hlk_test.b5aaba9b-cdfc-4d7d-8a7d-94ed3f5868c3"></span>LAN CS Test - IPv4 Basic
@@ -18,7 +24,7 @@ The device seamlessly transitions between D0 and D2 states while in Connected St
 |||
 |---|---|
 | **Specifications**  | <ul><li>Device.Network.LAN.CS.ReliableCSConnectivity</li></ul> |  
-| **Platforms**   | <ul><li>Windows 10 client editions (x86)</li><li>Windows 10, client editions (x64)</li></ul> |
+| **Platforms**   | <ul><li>Windows 10, client editions (x86)</li><li>Windows 10, client editions (x64)</li></ul> |
 | **Supported Releases** | <ul><li>Windows 10</li><li>Windows 10, version 1511</li><li>Windows 10, version 1607</li><li>Windows 10, version 1703</li><li>Windows 10, version 1709</li></ul> |
 |**Expected run time (in minutes)**| 30 |
 |**Category**| Development |

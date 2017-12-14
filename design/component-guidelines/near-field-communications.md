@@ -9,7 +9,7 @@ MSHAttr:
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 629D1C23-5293-4F51-8E96-12B42E728440
 ms.author: sapaetsc
-ms.date: 05/02/2017
+ms.date: 12/14/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -81,45 +81,6 @@ This topic covers recommendations for near field communications (NFC) in Windows
  
 
 Hardware must comply with the Windows HLK requirements for near field proximity, including but not limited to accuracy, resolution, antenna placement, use of the Tap and Do visual mark, and range of values.
-
-## Near field proximity Tap and Do experiences
-
-
-The Windows near field proximity services and APIs provide a standard way for devices and PCs to connect and communicate with each other through Windows. While other near field proximity technologies are supported, we recommend Near Field Communication (NFC), working in conjunction with Bluetooth, Wi-Fi, and Wi-Fi Direct as out-of-band transports.
-
-Near field proximity enables [Tap and Do](http://go.microsoft.com/fwlink/p/?LinkId=625070) experiences for PC to PC, mobile phone to PC, and PC to tag interaction. The design supports scenarios that are interpersonal in nature, between two people holding different devices; it also works when one user is holding two devices.
-
-<table>
-<tbody valign="top">
-<tr class="odd">
-<td>Tap and Use, Tap and Launch, Tap and Acquire</td>
-<td><ul>
-<li>Tap the PC to another PC or a mobile phone to connect two apps if both apps are already running.</li>
-<li>If the app isn't running on the other computer, the user is invited to launch the app.</li>
-<li>If the app isn't installed on the other computer, the user is invited to install it from the Windows Store.</li>
-<li>Tap a PC to a tag to launch the app specified in the tag. If the app isn't installed, the user is invited to install it from the Store.</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td>Tap and Share, Tap and Receive</td>
-<td><ul>
-<li>Tap a PC to another PC or mobile phone to share content such as a URL, photos, or documents to the other user.</li>
-<li>Tap a PC to another PC, mobile phone, or a tag to receive content from the other user or the tag.</li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td>Tap and Setup, Tap and Reconnect</td>
-<td><ul>
-<li>Tap a Bluetooth device that supports out-of-band unidirectional pairing to the PC to pair it and set it up.</li>
-<li>Tap the Bluetooth device again to the PC to re-pair it if it had previously been paired with another device, and lost its pairing relationship with the PC.</li>
-</ul></td>
-</tr>
-</tbody>
-</table>
-
- 
-
-Hardware must comply with the [Windows Hardware Lab Kit (HLK)](https://msdn.microsoft.com/library/windows/hardware/dn930814.aspx) requirements for near field proximity, including but not limited to accuracy, resolution, antenna placement, use of the Tap and Do visual mark, and range of values.
 
 ## Firmware
 

@@ -5,6 +5,12 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: aecc06ab-04d1-4cde-88db-44378528b15c
+author: sapaetsc
+ms.author: sapaetsc
+ms.date: 10/15/17
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # <span id="p_hlk_test.e24cdda3-c9d0-424b-99dc-dfaca63bc992"></span>MTP Compliance Test - Core - Miscellaneous
@@ -16,7 +22,7 @@ This test validates compliance with the Windows implementation of the Media Tran
 |||
 |---|---|
 | **Specifications**  | <ul><li>Device.Portable.Core.MTP</li></ul> |  
-| **Platforms**   | <ul><li>Windows 10 client editions (x86)</li><li>Windows 10, client editions (x64)</li></ul> |
+| **Platforms**   | <ul><li>Windows 10, client editions (x86)</li><li>Windows 10, client editions (x64)</li></ul> |
 | **Supported Releases** | <ul><li>Windows 10</li><li>Windows 10, version 1511</li><li>Windows 10, version 1607</li><li>Windows 10, version 1703</li><li>Windows 10, version 1709</li></ul> |
 |**Expected run time (in minutes)**| 5 |
 |**Category**| Development |

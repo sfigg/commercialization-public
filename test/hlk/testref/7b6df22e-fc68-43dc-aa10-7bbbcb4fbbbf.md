@@ -5,6 +5,12 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4fdf912f-0695-4e95-9db1-b02492b7b543
+author: sapaetsc
+ms.author: sapaetsc
+ms.date: 10/15/17
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # <span id="p_hlk_test.7b6df22e-fc68-43dc-aa10-7bbbcb4fbbbf"></span>ScardSpecificWithPower
@@ -16,7 +22,7 @@ Verify IOCTL\_SMARTCARD\_POWER returns not supported when powering down SCARD\_S
 |||
 |---|---|
 | **Specifications**  | <ul><li>Device.BusController.NFC.SmartCard.State</li></ul> |  
-| **Platforms**   | <ul><li>Windows 10 client editions (x86)</li><li>Windows 10, client editions (x64)</li><li>Windows 10, client editions (ARM64)</li><li>Windows 10, mobile edition (ARM)</li><li>Windows 10, mobile edition (ARM64)</li></ul> |
+| **Platforms**   | <ul><li>Windows 10, client editions (x86)</li><li>Windows 10, client editions (x64)</li><li>Windows 10, client editions (ARM64)</li><li>Windows 10, mobile edition (ARM)</li><li>Windows 10, mobile edition (ARM64)</li></ul> |
 | **Supported Releases** | <ul><li>Windows 10</li><li>Windows 10, version 1511</li><li>Windows 10, version 1607</li><li>Windows 10, version 1703</li><li>Windows 10, version 1709</li></ul> |
 |**Expected run time (in minutes)**| 10 |
 |**Category**| Compatibility |

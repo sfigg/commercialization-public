@@ -5,6 +5,12 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 0166773e-eeef-4089-8936-34b1fa91b293
+author: sapaetsc
+ms.author: sapaetsc
+ms.date: 10/15/17
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # <span id="p_hlk_test.5aac52da-a57c-4a12-aaac-de878a62bb08"></span>BitLocker Tpm And Recovery Password tests for AOAC devices with PCR\[7\]
@@ -22,7 +28,7 @@ This test restarts the system multiple times to check whether PCRs are consisten
 |||
 |---|---|
 | **Specifications**  | <ul><li>System.Fundamentals.TPM.CS.ConnectedStandby</li><li>Device.DevFund.Firmware.UpdateDriverPackage</li></ul> |  
-| **Platforms**   | <ul><li>Windows 10 client editions (x86)</li><li>Windows 10, client editions (x64)</li><li>Windows 10, client editions (ARM64)</li></ul> |
+| **Platforms**   | <ul><li>Windows 10, client editions (x86)</li><li>Windows 10, client editions (x64)</li><li>Windows 10, client editions (ARM64)</li></ul> |
 | **Supported Releases** | <ul><li>Windows 10</li><li>Windows 10, version 1511</li><li>Windows 10, version 1607</li><li>Windows 10, version 1703</li><li>Windows 10, version 1709</li></ul> |
 |**Expected run time (in minutes)**| 15 |
 |**Category**| Scenario |

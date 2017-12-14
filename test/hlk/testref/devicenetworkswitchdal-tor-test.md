@@ -5,6 +5,12 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: bd74588f-9024-42de-8f47-aa80190b09a8
+author: sapaetsc
+ms.author: sapaetsc
+ms.date: 10/15/17
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # Device.Network.Switch.DAL-TOR Test
@@ -13,14 +19,6 @@ ms.assetid: bd74588f-9024-42de-8f47-aa80190b09a8
 This topic describes how to test network switches for OMI compatibility as part of the Windows® Certification Program. To begin the testing part of the certification process, you must install and run the Windows Hardware Lab Kit (Windows HLK) and set up the test environment. For information about how to install and configure Windows HLK, see [Step 1: Install Controller and Studio on the test server](..\getstarted\step-1-install-controller-and-studio-on-the-test-server.md).
 
 The types of products in the Device.Network.Switch.DAL-TOR category include Top of the Rack Switches.
-
-**In this topic:**
-
--   [Switch Testing Prerequisites](#switchpre)
-
--   [Troubleshooting Device.Network.Switch.DAL-TOR tests](#ts)
-
--   [Switch Tests](#swtests)
 
 ## <span id="switchpre"></span><span id="SWITCHPRE"></span>Switch Testing Prerequisites
 

@@ -5,6 +5,12 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 92a67bf2-8c99-48c0-91c5-cea9075dd332
+author: sapaetsc
+ms.author: sapaetsc
+ms.date: 10/15/17
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # <span id="p_hlk_test.a1fb1fda-1fc1-41de-9626-bf88defeb746"></span>File IO 2 Tests
@@ -40,7 +46,7 @@ For more information about the behavior of file systems, see [File System Behavi
 |||
 |---|---|
 | **Specifications**  | <ul><li>Filter.Driver.FileSystem.MiniFilter</li><li>Filter.Driver.AntiVirus.MiniFilter</li><li>Filter.Driver.FileSystem.Functionality</li></ul> |  
-| **Platforms**   | <ul><li>Windows 10 client editions (x86)</li><li>Windows 10, client editions (x64)</li><li>Windows Server 2016 (x64)</li><li>Windows 10, mobile edition (ARM)</li></ul> |
+| **Platforms**   | <ul><li>Windows 10, client editions (x86)</li><li>Windows 10, client editions (x64)</li><li>Windows Server 2016 (x64)</li><li>Windows 10, mobile edition (ARM)</li></ul> |
 | **Supported Releases** | <ul><li>Windows 10</li><li>Windows 10, version 1511</li><li>Windows 10, version 1607</li><li>Windows 10, version 1703</li><li>Windows 10, version 1709</li></ul> |
 |**Expected run time (in minutes)**| 300 |
 |**Category**| Development |

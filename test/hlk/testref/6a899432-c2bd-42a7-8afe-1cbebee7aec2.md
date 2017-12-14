@@ -5,6 +5,12 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: c419f2c7-f73b-4c0e-b0ad-3110e3529710
+author: sapaetsc
+ms.author: sapaetsc
+ms.date: 10/15/17
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # <span id="p_hlk_test.6a899432-c2bd-42a7-8afe-1cbebee7aec2"></span>Graphics Driver Installation During OS Setup.
@@ -16,7 +22,7 @@ This test verifies that a driver can be injected into an OS image, that it insta
 |||
 |---|---|
 | **Specifications**  | <ul><li>Device.Graphics.WDDM.DisplayRender.DriverSetupCompatible</li></ul> |  
-| **Platforms**   | <ul><li>Windows 10 client editions (x86)</li><li>Windows 10, client editions (x64)</li><li>Windows 10, client editions (ARM64)</li></ul> |
+| **Platforms**   | <ul><li>Windows 10, client editions (x86)</li><li>Windows 10, client editions (x64)</li><li>Windows 10, client editions (ARM64)</li></ul> |
 | **Supported Releases** | <ul><li>Windows 10</li><li>Windows 10, version 1511</li><li>Windows 10, version 1607</li><li>Windows 10, version 1703</li><li>Windows 10, version 1709</li></ul> |
 |**Expected run time (in minutes)**| 5 |
 |**Category**| Compatibility |

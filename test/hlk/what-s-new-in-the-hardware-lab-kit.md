@@ -9,6 +9,12 @@ MSHAttr:
 - 'PreferredLib:/library/windows/hardware'
 Search.SourceType: Video
 ms.assetid: 8A9F73C6-030F-4A1D-A466-6A9ADDD06A51
+author: sapaetsc
+ms.author: sapaetsc
+ms.date: 10/15/17
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # What's new in the Hardware Lab Kit
@@ -69,9 +75,7 @@ Test levels have been replaced by Development Phases to better align with the ha
 
 Playlists describe a collection of tests and can be created from the HLK Studio and [Object Model](API\microsoftwindowskitshardwareobjectmodel.md) to define custom test passes.
 
-
-<iframe src="https://hubs-video.ssl.catalog.video.msn.com/embed/afc1a262-6147-448f-910c-dbb1bcb18d07/IA?csid=ux-en-us&MsnPlayerLeadsWith=html&PlaybackMode=Inline&MsnPlayerDisplayShareBar=false&MsnPlayerDisplayInfoButton=false&iframe=true&QualityOverride=HD" width="720" height="405" allowFullScreen="true" frameBorder="0" scrolling="no">Windows Hardware Lab Kit playlists</iframe>
-
+<iframe class="video-iframe" style="width: 100%; height: 550px;" frameborder="0" allowfullscreen="true" src="https://www.microsoft.com/en-us/videoplayer/embed/afc1a262-6147-448f-910c-dbb1bcb18d07?autoplay=false">Windows Hardware Lab Kit playlists</iframe>
 
 Learn more about playlists in the [Getting Started Guide](getstarted\step-6-select-and-run-tests.md).
 

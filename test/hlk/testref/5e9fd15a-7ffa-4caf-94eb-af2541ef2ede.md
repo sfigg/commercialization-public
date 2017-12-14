@@ -5,6 +5,12 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8b564842-be06-429c-9a23-2a2ce1228580
+author: sapaetsc
+ms.author: sapaetsc
+ms.date: 10/15/17
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # <span id="p_hlk_test.5e9fd15a-7ffa-4caf-94eb-af2541ef2ede"></span>Named Pipe State
@@ -56,7 +62,7 @@ The test selects each state in random order and calls each action in random orde
 |||
 |---|---|
 | **Specifications**  | <ul><li>Filter.Driver.FileSystem.MiniFilter</li><li>Filter.Driver.AntiVirus.MiniFilter</li><li>Filter.Driver.FileSystem.NamedPipeAndMailSlots</li><li>Filter.Driver.AntiVirus.NamedPipeAndMailSlots</li></ul> |  
-| **Platforms**   | <ul><li>Windows 10 client editions (x86)</li><li>Windows 10, client editions (x64)</li><li>Windows Server 2016 (x64)</li></ul> |
+| **Platforms**   | <ul><li>Windows 10, client editions (x86)</li><li>Windows 10, client editions (x64)</li><li>Windows Server 2016 (x64)</li></ul> |
 | **Supported Releases** | <ul><li>Windows 10</li><li>Windows 10, version 1511</li><li>Windows 10, version 1607</li><li>Windows 10, version 1703</li><li>Windows 10, version 1709</li></ul> |
 |**Expected run time (in minutes)**| 30 |
 |**Category**| Development |

@@ -5,6 +5,12 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8c2cae5a-845e-4c04-ae37-bfeccfb5b74e
+author: sapaetsc
+ms.author: sapaetsc
+ms.date: 10/15/17
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # <span id="p_hlk_test.c0008d3b-01ba-47d8-af6b-c3aa2cfb5a0c"></span>HEVCQualityTest255
@@ -23,7 +29,7 @@ HEVC VisualValidation (Quality) test UHD 3840x2160 multiple tiles
 |||
 |---|---|
 | **Specifications**  | <ul><li>Device.Graphics.WDDM12.Render.D3D11VideoDecoding</li></ul> |  
-| **Platforms**   | <ul><li>Windows 10 client editions (x86)</li><li>Windows 10, client editions (x64)</li><li>Windows 10, client editions (ARM64)</li></ul> |
+| **Platforms**   | <ul><li>Windows 10, client editions (x86)</li><li>Windows 10, client editions (x64)</li><li>Windows 10, client editions (ARM64)</li></ul> |
 | **Supported Releases** | <ul><li>Windows 10</li><li>Windows 10, version 1511</li><li>Windows 10, version 1607</li><li>Windows 10, version 1703</li><li>Windows 10, version 1709</li></ul> |
 |**Expected run time (in minutes)**| 15 |
 |**Category**| Development |

@@ -17,7 +17,7 @@ ms.technology: windows-oem
 # Username
 
 
-`Username` specifies the user name for Windows Deployment Services login. This setting can be either a regular user name or a universal principal name (UPN), in the format of an e-mail address. If this setting is a UPN, [Domain](microsoft-windows-setupwindowsdeploymentservices-login-credentials-domain.md) is not required.
+`Username` specifies the user name for Windows Deployment Services login. This setting can be either a regular user name or a universal principal name (UPN), in the format of an e-mail address. If this setting is a UPN, [Domain](microsoft-windows-setup-windowsdeploymentservices-login-credentials-domain.md) is not required.
 
 ## Values
 

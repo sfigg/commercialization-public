@@ -14,9 +14,9 @@ ms.technology: windows-oem
 # DISM App Package (.appx or .appxbundle) Servicing Command-Line Options
 
 
-You can use app package-servicing commands to add, remove, and list provisioned app packages (.appx or .appxbundle) in a Windows image. An .appxbundle, new for Windows 10, is a collection of app and resource packages used together to enrich the app experience, while minimizing the disk footprint on a given PC. For detailed documentation about .appxbundle packages and the Store pipeline, see [App packaging](http://go.microsoft.com/fwlink/p/?LinkId=698643). Only a subset of the packages within an .appxbundle might be added to the image when a bundle is provisioned using DISM. For more information, see [Understanding How DISM Adds .appxbundle Resource Packages to an Image](#bkmk_understanding).
+You can use app package-servicing commands to add, remove, and list provisioned app packages (.appx or .appxbundle) in a Windows image. An .appxbundle, new for Windows 10, is a collection of app and resource packages used together to enrich the app experience, while minimizing the disk footprint on a given PC. For detailed documentation about .appxbundle packages and the Microsoft Store pipeline, see [App packaging](http://go.microsoft.com/fwlink/p/?LinkId=698643). Only a subset of the packages within an .appxbundle might be added to the image when a bundle is provisioned using DISM. For more information, see [Understanding How DISM Adds .appxbundle Resource Packages to an Image](#bkmk_understanding).
 
-Provisioned app packages are added to a Windows image and are then installed for every new or existing user profile the next time the user logs on. For more information, including requirements for app package provisioning, see [Sideload Apps with DISM](sideload-apps-with-dism-s14.md).
+Provisioned app packages are added to a Windows image and are then installed for every new or existing user profile the next time the user logs on. For more information, including requirements for app package provisioning, see [Sideload Apps with DISM](sideload-apps-with-dism-s14.md). 
 
 You can also use PowerShell to add, remove, and list app packages (.appx or .appxbundle) per image or per user in a Windows installation. For more information, see [Deployment Imaging Servicing Management (DISM) Cmdlets in Windows PowerShell](http://go.microsoft.com/fwlink/?LinkId=239926) and [App Installation Cmdlets in Windows PowerShell](http://go.microsoft.com/fwlink/?LinkId=247300).
 
@@ -44,7 +44,7 @@ When used immediately after an app package servicing command-line option, inform
 **Examples**:
 
 ```
-Dism /image:C:\test\offline /Add- ProvisionedAppxPackages /?
+Dism /image:C:\test\offline /Add-ProvisionedAppxPackage /?
 Dism /online /Get-ProvisionedAppxPackages /?
 ```
 
@@ -63,6 +63,8 @@ Adds one or more app packages to the image.
 
 The app will be added to the Windows image and registered for each existing or new user profile the next time the user logs in. If the app is added to an online image, the app will not be registered for the current user until the next time the user logs in.
 
+It is recommended to provision apps in an online operating system in audit mode so that appropriate hard links can be created for apps that contain the exact same files (to minimize disk space usage) while also ensuring no apps are running for a successful installation.
+
 Syntax:
 
 ```
@@ -71,16 +73,16 @@ dism.exe /Add-ProvisionedAppxPackage {/FolderPath:<App_folder_path> [/SkipLicens
 
 Use **/FolderPath** to specify a folder of unpacked app files containing a main package, any dependency packages, and the license file. This is only supported for an unpacked app package.
 
-Use **/PackagePath** to specify an app package (.appx or .appxbundle). You can use **/PackagePath** when provisioning a line-of-business app online.
+Use **/PackagePath** to specify an app package (.appx or .appxbundle). You can use **/PackagePath** when provisioning a line-of-business app online. 
 
 >**Important**
-Use the **/PackagePath** parameter to provision .appxbundle packages.
+Use the **/PackagePath** parameter to provision .appxbundle packages. Also, dependency packages cannot be provisioned with **/PackagePath**, they must be provisioned with the **/DependencyPackagePath** parameter for an app.
 
 **/PackagePath** is not supported from a host PC that is running Windows Preinstallation Environment (WinPE) 4.0, Windows Server 2008 R2, or an earlier version of Windows.
 
- 
+Use **/DependencyPackagePath** to specify each depencency package needed for the app to be provisioned. The necessary dependency packages of an app can be found by looking at the <PackageDependency> elements in the AppxManifest.xml in the root of the .appx package of the app. If multiple apps all share the same dependency, the latest minor version of each major version of the dependency package should be installed. For example, App1, App2, and App3 all have a dependency on Microsoft.NET.Native.Framework. App1 specifies Microsoft.NET.Native.Framework.1.6 with minor version 25512.0, App2 specifies Microsoft.NET.Native.Framework.1.6 with minor version 25513.0, and App3 specifies Microsoft.NET.Native.Framework.1.3 with minor version 24202.0. Because both App1 and App2 both specify the same major version of the dependency package, only the latest minor version 25513.0 should be installed, while App3 specifies a different major version of the dependency package, so it must also be installed. So the dependency packages that should be installed are Microsoft.NET.Native.Framework.1.6 with minor version 25513.0 and Microsoft.NET.Native.Framework.1.3 with minor version 24202.0.
 
-If the package has dependencies that are architecture-specific, you must install all of the applicable architectures for the dependency on the target image. For example, on an x64 target image, include a path to both the x86 and x64 dependency packages or include them both in the folder of unpacked app files.
+If the package has dependencies that are architecture-specific, you must install all of the applicable architectures for the dependency on the target image. For example, on an x64 target image, include a path to both the x86 and x64 dependency packages or include them both in the folder of unpacked app files. If the ARM dependency package is also specified or included, DISM will ignore it since it does not apply to the target x64 image.
 
 | Computer Architecture	| Dependencies to install: |
 | ----- | ----- |
@@ -157,14 +159,14 @@ When an .appxbundle is added to the image, not all resource packages within the 
 
 -   **Language Resource Packs**: If an operating system language is not present, the corresponding app language resource pack is not added. For example, you might have an image that is a Windows 10 with English (US) as the default language, and a Spanish (Spain) language pack included. English (US) and Spanish (Spain) app resource packs will be added to the image. If a French (France) resource pack (or any other language) is available in the app bundle, it will not be added.
 
--   **Scale and DirectX (DXFL) Resource Packs**: Scale and DirectX (DXFL) resource packs depend upon the hardware configuration of the Windows device. Because the type of target hardware can’t be known at the time the DISM commands are run, all scale and DXFL resource packages are added to the image at provisioning time. For more information about developing an app with scaling resources, see [Guidelines for scaling to pixel density (Windows Store apps)](http://go.microsoft.com/fwlink/?LinkId=320890).
+-   **Scale and DirectX (DXFL) Resource Packs**: Scale and DirectX (DXFL) resource packs depend upon the hardware configuration of the Windows device. Because the type of target hardware can’t be known at the time the DISM commands are run, all scale and DXFL resource packages are added to the image at provisioning time. For more information about developing an app with scaling resources, see [Guidelines for scaling to pixel density (Microsoft Store apps)](http://go.microsoft.com/fwlink/?LinkId=320890).
 
 For an image containing multiple language packs, app resource packages will be added to the image for each language. Once the first user has signed in to the PC with the deployed image and the user has chosen a language during OOBE, the inapplicable resource packages, (language resource packs, scale resource packs and DXFL resource packages) that do not match the user profile settings are removed.
 
 For example, an app might support English (US), French (France), and Spanish (Spain) languages. If the app is added to an image with English (US) and Spanish (Spain) language packs present, only English (US) and Spanish (Spain) resource packs will be added these to the image. Then, if a user signs in for the first time and, during OOBE, selects English (US) as their operating system language, the Spanish (Spain) resource packages will be removed after sign in completes.
 
 **Important**  
-If you add or remove a language pack from an image, you change the applicability context which may result in leaving an incorrect or incomplete set of resource packages in the image. When a language pack is added or removed, you must, once again, add all .appxbundle packages (including any dependency packages and Windows Store license file) to the image. This will ensure that the correct set of resource packages is provisioned.
+If you add or remove a language pack from an image, you change the applicability context which may result in leaving an incorrect or incomplete set of resource packages in the image. When a language pack is added or removed, you must, once again, add all .appxbundle packages (including any dependency packages and Microsoft Store license file) to the image. This will ensure that the correct set of resource packages is provisioned.
 
 ## <span id="Limitations"></span><span id="limitations"></span><span id="LIMITATIONS"></span>Limitations
 

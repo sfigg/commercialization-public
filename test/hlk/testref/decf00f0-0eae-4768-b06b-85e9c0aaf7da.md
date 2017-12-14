@@ -5,6 +5,12 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: d2c60ab3-f7d2-4a86-be65-8b597eea5af7
+author: sapaetsc
+ms.author: sapaetsc
+ms.date: 10/15/17
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # <span id="p_hlk_test.decf00f0-0eae-4768-b06b-85e9c0aaf7da"></span>DF - PNP Surprise Remove Device Test (Reliability)
@@ -30,7 +36,7 @@ The Disable Enhanced Device Testing (EDT) Support test uninstalls the test filte
 |||
 |---|---|
 | **Specifications**  | <ul><li>Device.DevFund.Reliability.BasicReliabilityAndPerformance</li><li>Device.DevFund.Reliability.PnPIRPs</li><li>Device.DevFund.DriverFramework.KMDF.Reliability</li><li>Device.DevFund.DriverFramework.UMDF.Reliability</li></ul> |  
-| **Platforms**   | <ul><li>Windows 10 client editions (x86)</li><li>Windows 10, client editions (x64)</li><li>Windows Server 2016 (x64)</li><li>Windows 10, client editions (ARM64)</li><li>Windows 10, mobile edition (ARM)</li><li>Windows 10, mobile edition (ARM64)</li></ul> |
+| **Platforms**   | <ul><li>Windows 10, client editions (x86)</li><li>Windows 10, client editions (x64)</li><li>Windows Server 2016 (x64)</li><li>Windows 10, client editions (ARM64)</li><li>Windows 10, mobile edition (ARM)</li><li>Windows 10, mobile edition (ARM64)</li></ul> |
 | **Supported Releases** | <ul><li>Windows 10</li><li>Windows 10, version 1511</li><li>Windows 10, version 1607</li><li>Windows 10, version 1703</li><li>Windows 10, version 1709</li></ul> |
 |**Expected run time (in minutes)**| 8 |
 |**Category**| Scenario |

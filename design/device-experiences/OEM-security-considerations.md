@@ -32,7 +32,9 @@ Secure Boot is a security standard developed by members of the PC industry to he
 
 ## Trusted Platform Module (TPM) 2.0
 
-Trusted Platform Module (TPM) technology is designed to provide hardware-based, security-related functions. A TPM chip is a secure crypto-processor that helps you with actions such as generating, storing, and limiting the use of cryptographic keys. The chip includes multiple physical security mechanisms to make it tamper resistant, and malicious software is unable to tamper with the security functions of the TPM. 
+Trusted Platform Module (TPM) technology is designed to provide hardware-based, security-related functions. A TPM chip is a secure crypto-processor that helps you with actions such as generating, storing, and limiting the use of cryptographic keys. The chip includes multiple physical security mechanisms to make it tamper resistant, and malicious software is unable to tamper with the security functions of the TPM.
+
+**Note:** Since July 28, 2016, all new device models, lines or series (or if you are updating the hardware configuration of an existing model, line or series with a major update, such as CPU, graphic cards) must implement and enable by default TPM 2.0 (details in section 3.7 of the Minimum hardware requirements page). The requirement to enable TPM 2.0 only applies to the manufacturing of new devices.
 
 **OEMs:** For more information, see [Trusted Platform Module (TPM) 2.0 hardware requirements](OEM-TPM.md).
 
@@ -52,7 +54,7 @@ Hardware-based security features, also called virtualization-based security or V
 
 ## Windows 10 S
 
-Windows 10 S is a specific configuration of Windows 10 Pro that offers a familiar, productive Windows experience that’s streamlined for security and performance. By exclusively using apps in the Windows Store and ensuring that you browse safely with Microsoft Edge, Windows 10 S keeps you running fast and secure day in and day out. The same technology that makes Windows 10 S secure also creates some differences when creating software images for Windows 10 devices.
+Windows 10 S is a specific configuration of Windows 10 Pro that offers a familiar, productive Windows experience that’s streamlined for security and performance. By exclusively using apps in the Microsoft Store and ensuring that you browse safely with Microsoft Edge, Windows 10 S keeps you running fast and secure day in and day out. The same technology that makes Windows 10 S secure also creates some differences when creating software images for Windows 10 devices.
 
 **OEMs:** For more information about Windows 10 S, see [Windows 10 S manufacturing overview](https://docs.microsoft.com/windows-hardware/manufacture/desktop/windows-10-s-overview).
 

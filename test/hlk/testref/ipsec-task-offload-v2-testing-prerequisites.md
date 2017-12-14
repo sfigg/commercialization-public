@@ -5,6 +5,12 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: d5a26f57-7d23-4b0e-ae6c-0730412ff6ec
+author: sapaetsc
+ms.author: sapaetsc
+ms.date: 10/15/17
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # IPsec Task Offload v2 Testing Prerequisites
@@ -15,22 +21,6 @@ This section describes the IPsec Task Offload v2 testing prerequisites that you 
 >[!NOTE]
 >  
 This content applies to both standalone network and integrated network devices.
-
- 
-
-Before beginning testing, do this:
-
--   [Hardware requirements](#bkmk-hck-ipsec-hr)
-
--   [Software requirements](#bkmk-hck-ipsec-sr)
-
--   [Test computer configuration](#bkmk-hck-ipsec-tc)
-
-**In this section:**
-
--   [IPsec Task Offload v2 Test](ipsec-task-offload-v2-testmissing.md)
-
--   [IPsec Task Offload v2 Manual Test](ipsec-task-offload-v2-manual-test.md)
 
 ## <span id="BKMK_HCK_IPSec_hR"></span><span id="bkmk-hck-ipsec-hr"></span><span id="BKMK_HCK_IPSEC_HR"></span>Hardware requirements
 

@@ -5,6 +5,12 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 55b6e2bd-c9e2-4c88-a7e9-47a2726c0819
+author: sapaetsc
+ms.author: sapaetsc
+ms.date: 10/15/17
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # <span id="p_hlk_test.89cddbfb-ad34-4bb7-b24f-56dddb50fe04"></span>Test.ExternalButtons
@@ -14,7 +20,7 @@ ms.assetid: 55b6e2bd-c9e2-4c88-a7e9-47a2726c0819
 |||
 |---|---|
 | **Specifications**  | <ul><li>System.Client.Digitizer.PrecisionTouchpad.Buttons</li></ul> |  
-| **Platforms**   | <ul><li>Windows 10 client editions (x86)</li><li>Windows 10, client editions (x64)</li><li>Windows 10, client editions (ARM64)</li></ul> |
+| **Platforms**   | <ul><li>Windows 10, client editions (x86)</li><li>Windows 10, client editions (x64)</li><li>Windows 10, client editions (ARM64)</li></ul> |
 | **Supported Releases** | <ul><li>Windows 10</li><li>Windows 10, version 1511</li><li>Windows 10, version 1607</li><li>Windows 10, version 1703</li><li>Windows 10, version 1709</li></ul> |
 |**Expected run time (in minutes)**| 2 |
 |**Category**| Compatibility |

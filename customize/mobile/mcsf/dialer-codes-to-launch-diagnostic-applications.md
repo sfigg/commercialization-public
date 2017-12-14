@@ -61,6 +61,7 @@ The OS trims the dial string for legacy apps while it passes the dial string wit
    1. Replace `Source` with the location and file name of the OEM dialer application source.
    1. Replace `License` with the location and file name of the app's license file.
    1. Replace `ProvXML` with the location and file name of the app's provXML file. Note that the provXML file must have the file name pattern MPAP\_\*\_\*.provxml.
+
    > [!Note]
    > To prevent the initial phone setup process from installing the application on first boot, do not place the provXML file in the directory that the initial phone setup process checks, such as $(runtime.commonfiles)\\Provisioning\\OEM. Instead, place the provXML file in another location, such as $(runtime.commonfiles)\\Xaps, which you can then reference from the `PartnerAppProvisioningFilePath` setting.
 
@@ -170,3 +171,9 @@ The following table describes the predefined application dialer codes available.
 </tr>
 </tbody>
 </table>
+
+## Related topics
+
+[Prepare for Windows mobile development](https://docs.microsoft.com/en-us/windows-hardware/manufacture/mobile/preparing-for-windows-mobile-development)
+
+[Customization answer file overview](https://docs.microsoft.com/en-us/windows-hardware/customize/mobile/mcsf/customization-answer-file)

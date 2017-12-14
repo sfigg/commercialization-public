@@ -95,7 +95,7 @@ Visit [Download the Windows ADK](https://developer.microsoft.com/en-us/windows/h
 
     **Note**: If you have Secure Boot enabled, disable it before installing the ADK.
 
-    ![Select ADK Features](Images/adk-select-features.png)
+    ![Select ADK Features](Images/adk-select-features-1709.png)
 
 1.  Press the Windows key to display the **Start** menu. Type:
     
@@ -278,9 +278,9 @@ For more information about LIPs, see [Add Language Interface Packs to Windows 10
 
 If you use an x64 Windows 10 image, install x64 LIPs; if you use an x86 Windows 10 image, install x86 LIPs.
 
-1.  Copy the LIP folder to the USB-B\LanguagePack\x64 or USB-B\LanguagePack\x86 folder:
+1.  Copy the LIP to the USB-B\LanguagePack\x64 or USB-B\LanguagePack\x86 folder:
 
-    ![Copy LIP](Images/copy-lip.png)
+    ![Copy LIP](Images/copy-lip-1709.png)
 
 2.  Apply the LIP to mounted image.
 
@@ -301,7 +301,7 @@ If you use an x64 Windows 10 image, install x64 LIPs; if you use an x86 Windows 
 
 If you use an x64 Windows 10 image, add x64 update packages; if you use an x86 Windows 10 image, add x86 update packages.
 
-To obtain update packages, download them from [Microsoft Update Catalog](http://catalog.update.microsoft.com/v7/site/Home.aspx).
+To get update packages, download them from [Microsoft Update Catalog](http://catalog.update.microsoft.com/v7/site/Home.aspx).
 
 1.  Run Internet Explorer and navigate to the [Microsoft Update Catalog](http://catalog.update.microsoft.com/v7/site/Home.aspx) webpage. See [What you will need and where to get it](#what-you-will-need-and-where-to-get-it) for more information about which packages you should obtain from Microsoft Update Catalog.
 
@@ -309,21 +309,15 @@ To obtain update packages, download them from [Microsoft Update Catalog](http://
 
     ![Update catalog](Images/sb-update-catalog.png)
 
-3.  After search completes, click **Add** next to the version and architecture of the package you wish to download.
+3.  After each search completes, click **Download** next to the version and architecture of the package you wish to download.
 
-    ![Add Update Catalog](Images/sb-add-update-catalog.png)
+    ![Download Update Catalog](Images/download-update-catalog-1709.png)
+        
+    > [!Tip]
+    > If you encounter an error that says “The website has encountered a problem” when trying to download your updates, try turning off the pop-up blocker in IE or temporarily disabling Protected Mode in IE.
+    > ![Enable Protected Mode](Images/enable-protected-mode.png)
 
-4.  After you add all of the following updates, click **view basket** and then **Download**.
-
-    ![Download Update Catalog](Images/download-update-catalog.png)
-    
-    ![Download complete](Images/download-update-catalog-complete.png)
-
-    **Troubleshoot:** IF you encounter an error as “The website has encountered a problem” after clicking “Download”, try turning off the pop-up blocker in IE or disabling Protected Mode in IE temporarily
-
-    ![Enable Protected Mode](Images/enable-protected-mode.png)
-
-5.  After downloading all the listed essential updates, add **update packages** (KB packages) to the image one by one by using the following command:
+5.  After downloading your update packages, add them to the image one by one by using the following command, substituting the filename in the command with the name of the files that you downloaded:
 
     *Amd64 architecture*
 
@@ -437,19 +431,22 @@ Where E:\ is USB-B.
     ```
     Dism /image:"c:\mount\winre" /Cleanup-Image /StartComponentCleanup /Resetbase
     ```
+
 ### Unmount images
 
 1.  Close all applications that might access files from the image
 
-2.  Comit the changes and unmount the Windows RE image:
+2.  Commit the changes and unmount the Windows RE image:
 
-        Dism /Unmount-Image /MountDir:"C:\mount\winre" /Commit
+    ```
+    Dism /Unmount-Image /MountDir:"C:\mount\winre" /Commit
+    ```
 
     where C is the drive letter of the drive that contains the image.
 
     This process can take a few minutes.
 
-1.  Make a backup copy of the updated Windows RE image.
+3.  Make a backup copy of the updated Windows RE image.
 
     Troubleshoot: If you cannot see winre.wim under the specified directory, use the following command to set the file visible:
 
@@ -462,7 +459,7 @@ Where E:\ is USB-B.
 
     When prompted, specify **F** for file
 
-1.  Check the new size of the Windows RE image.
+4.  Check the new size of the Windows RE image.
 
     ```
     Dir "C:\mount\windows\Windows\System32\Recovery\winre.wim"
@@ -485,7 +482,7 @@ Where E:\ is USB-B.
 
     Optional: This section assumes you’d rather keep winre.wim inside of install.wim to keep your languages and drivers in sync. If you’d like to save a bit of time on the factory floor, and if you’re OK managing these images separately, you may prefer to pull winre.wim from the image and apply it separately.
 
-1.  Commit the changes and unmount the Windows image:
+5.  Commit the changes and unmount the Windows image:
 
     ```
     Dism /Unmount-Image /MountDir:"C:\mount\windows" /Commit
@@ -514,9 +511,10 @@ Where E:\ is USB-B.
 
     Note: There are several pauses in the script. You will be prompted Y/N for the Apply operation if this is a Compact OS deployment.
 
-**Note**: Only use Compact OS on Flash drive based devices because Compact OS performance depends on the storage device capabilities. Compact OS is NOT recommend on rotational devices. For more information, see [Compact OS](compact-os.md).
+    > [!Note]
+    > Only use Compact OS on Flash drive based devices because Compact OS performance depends on the storage device capabilities. Compact OS is NOT recommend on rotational devices. For more information, see [Compact OS](compact-os.md).
 
-5. Remove USB-A and USB-B, and then type:
+5.  Remove USB-A and USB-B, and then type:
 
     ```
     Exit
@@ -591,7 +589,9 @@ Obtain Office Deployment Tool from from X21-32422 Office 2016 Deployment Tool fo
 6.	Open a command prompt and navigate to d:\Officev16.
 7.  Type:
 
+    ```
     Setup.exe /configure ConfigureO365Home.xml
+    ```
 
 #### Pin Office tiles to the Start menu
 
@@ -854,7 +854,7 @@ Before starting the deployment procedure OEM requires to download certain kits w
 | Windows 10 x64/x86 DVD Media (desired language) | Obtain Windows 10 media which you will be customizing from Microsoft Authorized Distributor | [Install Windows with basic customizations](#install-windows-with-basic-customizations) |
 | Windows 10 Default Product Keys | Default Product Keys are located at [Device Partner Center](https://dpcenter.microsoft.com/en/Windows/Build/cp-windows-10-build) listed under **Default product keys** tab | [Customize the answer file](#customize-the-answer-file) |
 | Language interface packs | LIPs are located at [Device Partner Center](https://dpcenter.microsoft.com/en/Windows/Build/cc-windows-10-v1703-lip) listed under **LIPs** tab | [Prepare the system for recovery with Push Button Reset](#prepare-the-system-for-push-button-reset) |
-| Update Packages | Obtain update packages by downloading from [Microsoft Update Catalog](http://catalog.update.microsoft.com/v7/site/Home.aspx). The detailed procedure downloading update packages is mentioned in the releated section. | [Add language interface packs](#add-language-interface-packs) |
+| Update Packages | Obtain update packages by downloading from [Microsoft Update Catalog](http://catalog.update.microsoft.com/v7/site/Home.aspx). The detailed procedure downloading update packages is mentioned in the related section. | [Add language interface packs](#add-language-interface-packs) |
 | Microsoft Office v16.3 | Obtain Microsoft Office v15.4 by downloading from [Device Partner Center](https://dpcenter.microsoft.com/en/Office/Build/cc-microsoft-office-v16-3-opk) | [Preload Microsoft Office single image v15.4 OPK](https://dpcenter.microsoft.com/en/Office?tag=%7b889D6CB8-8AC1-4D27-85F8-7DDE73EF3DAF%7d&mode=0#filters) |
 
 

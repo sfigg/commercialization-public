@@ -6,6 +6,12 @@ MSHAttr:
 - 'PreferredLib:/library/windows/hardware'
 Search.SourceType: Video
 ms.assetid: bfe69491-eb7c-44ae-b59e-4aa6ff6c66ce
+author: sapaetsc
+ms.author: sapaetsc
+ms.date: 10/15/17
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # Troubleshooting Windows HLK Test Failures
@@ -27,20 +33,13 @@ We recommend that you use this guide as your starting point to troubleshoot Wind
 
 6.  [Contact Windows HLK Support](#support)
 
-**Also in this article:**
-
--   [Troubleshooting system crashes](#sysx)
--   [Windows HLK Studio task error message reference](#errorref)
--   [Troubleshooting graphics tests](#troubleshooting-graphics)
-
 ## <span id="step1"></span><span id="STEP1"></span>**1. Install latest updates and filters**
 
 
 Verify that you have the latest updates and filters for Windows HLK. The test failure might already be resolved by a published filter or update. You can get the latest Windows HLK content at [Windows Hardware Lab Kit Filters](windows-hardware-lab-kit-filters.md).
 
 Watch a video demonstration.
-
-<iframe src="https://hubs-video.ssl.catalog.video.msn.com/embed/6d820a97-9954-4005-83ed-534d6648dab5/IA?csid=ux-en-us&MsnPlayerLeadsWith=html&PlaybackMode=Inline&MsnPlayerDisplayShareBar=false&MsnPlayerDisplayInfoButton=false&iframe=true&QualityOverride=HD" width="720" height="405" allowFullScreen="true" frameBorder="0" scrolling="no"></iframe>
+<iframe class="video-iframe" style="width: 100%; height: 550px;" frameborder="0" allowfullscreen="true" src="https://www.microsoft.com/en-us/videoplayer/embed/6d820a97-9954-4005-83ed-534d6648dab5?autoplay=false"></iframe>
 
 [Download the video (MP4)](http://content3.catalog.video.msn.com/e2/ds/fd494d2e-c29b-48a5-89d8-ef8af803ef0b.mp4)
 
@@ -110,8 +109,7 @@ In Windows HLK Studio, review the test status icons on the **Results** tab. The 
 </table>
 
 >[!NOTE]
->  
-If the status icon suggests that you have a Windows HLK infrastructure problem, see [Troubleshooting the Windows HLK Environment](troubleshooting-the-windows-hlk-environment.md).
+>  If the status icon suggests that you have a Windows HLK infrastructure problem, see [Troubleshooting the Windows HLK Environment](troubleshooting-the-windows-hlk-environment.md).
 
  
 
@@ -128,7 +126,7 @@ Make sure that the test was run correctly, as described in the following section
 
 Watch a video demonstration.
 
-<iframe src="https://hubs-video.ssl.catalog.video.msn.com/embed/d3e3bdd1-2a1d-458d-8950-a17292a0dea1/IA?csid=ux-en-us&MsnPlayerLeadsWith=html&PlaybackMode=Inline&MsnPlayerDisplayShareBar=false&MsnPlayerDisplayInfoButton=false&iframe=true&QualityOverride=HD" width="720" height="405" allowFullScreen="true" frameBorder="0" scrolling="no"></iframe>
+<iframe class="video-iframe" style="width: 100%; height: 550px;" frameborder="0" allowfullscreen="true" src="https://www.microsoft.com/en-us/videoplayer/embed/d3e3bdd1-2a1d-458d-8950-a17292a0dea1?autoplay=false">Windows Hardware Lab Kit playlists</iframe>
 
 [Download the video (MP4)](http://content3.catalog.video.msn.com/e2/ds/39ed490b-5bff-44f2-9556-24d039245648.mp4)
 
@@ -175,7 +173,7 @@ Be aware that re-selecting the test target invalidates and removes all previous 
 
 Watch a video demonstration.
 
-<iframe src="https://hubs-video.ssl.catalog.video.msn.com/embed/2bca5897-7ae7-4b0b-9416-9ea7fdc5ab9d/IA?csid=ux-en-us&MsnPlayerLeadsWith=html&PlaybackMode=Inline&MsnPlayerDisplayShareBar=false&MsnPlayerDisplayInfoButton=false&iframe=true&QualityOverride=HD" width="720" height="405" allowFullScreen="true" frameBorder="0" scrolling="no"></iframe>
+<iframe class="video-iframe" style="width: 100%; height: 550px;" frameborder="0" allowfullscreen="true" src ="https://www.microsoft.com/en-us/videoplayer/embed/2bca5897-7ae7-4b0b-9416-9ea7fdc5ab9d?autoplay=false"></iframe>
 
 [Download the video (MP4)](http://content4.catalog.video.msn.com/e2/ds/b7b95642-a144-4558-9342-d24835b6dc6e.mp4)
 

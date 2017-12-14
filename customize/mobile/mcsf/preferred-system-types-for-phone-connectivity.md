@@ -11,31 +11,26 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # Preferred system types for phone connectivity
 
+> [!Important]
+> This customization is only for China. OEMs should not set this customization unless required by the mobile operator.
 
 OEMs can provide more control over the system types that their devices use to connect by: mapping an ICCID or IIN to one radio (regardless of which SIM is chosen), specifying a list of MCC/MNCs that the MO wishes to limit, and/or restricting the second slot in a dual SIM device.
 
 For mobile operators that require more control over the system types that their phones use to connect to the mobile operators' networks, OEMs can:
 
--   Map a partial ICCID or Industry Identification Number (IIN) to the faster radio regardless of which SIM card is chosen for data connectivity.
+* Map a partial ICCID or Industry Identification Number (IIN) to the faster radio regardless of which SIM card is chosen for data connectivity.
+* Specify the MCC and MNC of other specific operators that the main mobile operator wishes to limit. If the UICC's MCC and MNC matches any of the pairs that OEMs can specify for the operator, a specified RIL system type will be removed from the UICC regardless of its app types, slot position, or executor mapping.
+* Restrict the second slot in a dual SIM device regardless of what apps or executor mapping the second slot is associated with.
 
--   Specify the MCC and MNC of other specific operators that the main mobile operator wishes to limit. If the UICC's MCC and MNC matches any of the pairs that OEMs can specify for the operator, a specified RIL system type will be removed from the UICC regardless of its app types, slot position, or executor mapping.
+<a href="" id="constraints---none"></a>**Constraints:** None
 
--   Restrict the second slot in a dual SIM device regardless of what apps or executor mapping the second slot is associated with.
+## Instructions
 
-**Note**  
-This customization is only for China. OEMs should not set this customization unless required by the mobile operator.
-
- 
-
-<a href="" id="constraints---none"></a>**Constraints:** None  
-
-<a href="" id="instructions-"></a>**Instructions:**  
 1.  Create a customization answer file using the contents shown in the following code sample.
 
-    ```
+    ```XML
     <?xml version="1.0" encoding="utf-8" ?>  
     <ImageCustomizations xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate"  
                          Name="PreferredSystemTypesForPhoneConnectivity"  
@@ -78,21 +73,15 @@ This customization is only for China. OEMs should not set this customization unl
 
     For example, a value of 0x8 specifies RIL\_SYSTEMTYPE\_UMTS (3G) while 0x10 specifies RIL\_SYSTEMTYPE\_LTE (4G). To exclude more than one system type, perform a bitwise **OR** operation on the radio technologies you want to exclude. For example, a bitwise **OR** operation on RIL\_SYSTEMTYPE\_LTE (4G) and RIL\_SYSTEMTYPE\_UMTS (3G) results in the value 11000 (binary) or 0x18 (hexadecimal). In this case, any SIM inserted in Slot 2 will be limited to 2G.
 
-<a href="" id="testing-"></a>**Testing:**  
-1.  Work with your mobile operator to obtain the partial ICCID or the IIN, the list of MCC and MNC values that they wish to limit, and the system types that they wish to restrict.
+## Testing
 
-2.  Flash the build containing this customization to a dual SIM phone.
+1. Work with your mobile operator to obtain the partial ICCID or the IIN, the list of MCC and MNC values that they wish to limit, and the system types that they wish to restrict.
+1. Flash the build containing this customization to a dual SIM phone.
+1. Depending on which settings you set to provide the mobile operator more control over the system types that their phones use to connect to the network, test each scenario to make sure that the device behaves as expected.
+   With the settings in this customization, verify that you don't see the restricted mobile operators able to use any of the restricted RIL system types.
 
-3.  Depending on which settings you set to provide the mobile operator more control over the system types that their phones use to connect to the network, test each scenario to make sure that the device behaves as expected.
+## Related topics
 
-    With the settings in this customization, verify that you don't see the restricted mobile operators able to use any of the restricted RIL system types.
+[Prepare for Windows mobile development](https://docs.microsoft.com/en-us/windows-hardware/manufacture/mobile/preparing-for-windows-mobile-development)
 
- 
-
- 
-
-
-
-
-
-
+[Customization answer file overview](https://docs.microsoft.com/en-us/windows-hardware/customize/mobile/mcsf/customization-answer-file)

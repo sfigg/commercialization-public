@@ -5,6 +5,12 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: ce83822f-7664-438d-985a-e4d429d6872c
+author: sapaetsc
+ms.author: sapaetsc
+ms.date: 10/15/17
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # <span id="p_hlk_test.4e35cd21-a1dd-4cfa-be2d-1a9c9d6a1fef"></span>USB Device Connection S3+S4+Connected Standby
@@ -16,7 +22,7 @@ This test verifies that a USB-based device becomes available within 500 millisec
 |||
 |---|---|
 | **Specifications**  | <ul><li>Device.Connectivity.UsbDevices.DeviceAttachLessThan100ms</li><li>Device.Connectivity.UsbDevices.MustBeFunctionalAfterResume</li><li>Device.Connectivity.UsbDevices.MustResumeWithoutForcedReset</li><li>Device.Connectivity.UsbDevices.MustSignalAttachWithin500ms</li></ul> |  
-| **Platforms**   | <ul><li>Windows 10 client editions (x86)</li><li>Windows 10, client editions (x64)</li><li>Windows Server 2016 (x64)</li></ul> |
+| **Platforms**   | <ul><li>Windows 10, client editions (x86)</li><li>Windows 10, client editions (x64)</li><li>Windows Server 2016 (x64)</li></ul> |
 | **Supported Releases** | <ul><li>Windows 10</li><li>Windows 10, version 1511</li><li>Windows 10, version 1607</li><li>Windows 10, version 1703</li><li>Windows 10, version 1709</li></ul> |
 |**Expected run time (in minutes)**| 10 |
 |**Category**| Compatibility |

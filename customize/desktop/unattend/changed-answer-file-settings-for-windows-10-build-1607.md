@@ -10,6 +10,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
+redirect_url: https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/changed-answer-file-settings-for-previous-windows10-builds#changed-answer-file-settings-for-windows-10-for-desktop-editions-build-1607
 ---
 
 # Changed answer file settings for Windows 10 for desktop editions, build 1607
@@ -52,11 +53,11 @@ This topic describes Windows 10, version 1607 answer-file settings that have ch
 <td><p>New. Specifies whether the Start menu is enabled and users can click on it.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Microsoft-Windows-Shell-Setup-DesktopOptimization-GoToDesktopOnSignIn](https://msdn.microsoft.com/library/windows/hardware/dn953808)</p></td>
+<td><p>[Microsoft-Windows-Shell-Setup-DesktopOptimization-GoToDesktopOnSignIn](microsoft-windows-shell-setup-desktopoptimization-gotodesktoponsignin.md)</p></td>
 <td><p>New. Specifies to go to the desktop instead of Start Screen when signing in or when all the apps on a screen are closed.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Microsoft-Windows-Shell-Setup-DesktopOptimization-ShowWindowsStoreAppsOnTaskbar](https://msdn.microsoft.com/library/windows/hardware/dn953809)</p></td>
+<td><p>[Microsoft-Windows-Shell-Setup-DesktopOptimization-ShowWindowsStoreAppsOnTaskbar](microsoft-windows-shell-setup-desktopoptimization-showwindowsstoreappsontaskbar.md)</p></td>
 <td><p>New. Shows Window Store apps on taskbar.</p></td>
 </tr>
 <tr class="odd">
@@ -152,7 +153,7 @@ The following settings are no longer available in Windows 10, version 1607:
 <td><p>The setting has been removed.</p></td>
 </tr>
 <tr class="even">
-<td><p>[TextInput](https://msdn.microsoft.com/library/windows/hardware/mt219159)\AllowKoreanExtendedHanja</p></td>
+<td><p>[TextInput](https://docs.microsoft.com/en-us/windows/configuration/wcd/wcd-policies#textinput)\AllowKoreanExtendedHanja</p></td>
 <td><p>The setting has been removed.</p></td>
 </tr>
 </tbody>

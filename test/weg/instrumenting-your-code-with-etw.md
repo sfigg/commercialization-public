@@ -26,7 +26,7 @@ The following section demonstrates how to use ETW to do precise performance meas
 
 -   Kernel-mode driver code
 -   Traditional desktop processes and services
--   Windows Store apps (C\#)
+-   Microsoft Store apps (C\#)
 
 ## Overview
 

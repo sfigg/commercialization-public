@@ -5,6 +5,12 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 2676ecdb-5bb6-4755-866c-a12e76355cb7
+author: sapaetsc
+ms.author: sapaetsc
+ms.date: 10/15/17
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # Troubleshooting the Windows HLK Environment
@@ -16,14 +22,6 @@ ms.assetid: 2676ecdb-5bb6-4755-866c-a12e76355cb7
 This topic contains information to help you to troubleshoot Windows Hardware Lab Kit (Windows HLK) issues.
 
 To troubleshoot testing problems, see [Troubleshooting Windows HLK Test Failures](troubleshooting-windows-hlk-test-failures.md). For Microsoft® support for Windows HLK testing, see [Windows HLK Support](windows-hlk-support.md).
-
-## <span id="in_this_section"></span>In this section
-
-
--   [Troubleshooting Windows HLK Client](troubleshooting-windows-hlk-client.md)
--   [Troubleshooting Windows HLK Controller](troubleshooting-windows-hlk-controller.md)
--   [Troubleshooting Windows HLK Setup](troubleshooting-windows-hlk-setup.md)
--   [Troubleshooting Windows HLK Studio and Windows HLK Manager](troubleshooting-windows-hlk-studio-and-windows-hlk-manager.md)
 
 ## <span id="related_topics"></span>Related topics
 

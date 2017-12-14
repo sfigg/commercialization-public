@@ -4,7 +4,12 @@
         "source_path": "get-started-with-windows-10-portal.md", 
         "redirect_url": "https://docs.microsoft.com/windows-hardware/get-started/index",
         "redirect_document_id": true 
-    }, 
+    },
+    {   
+        "source_path": "customize/preinstall/preinstall-apps.md", 
+        "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/customize/preinstall/preinstall-and-exclusive-apps",
+        "redirect_document_id": true 
+    },  
     {   
         "source_path": "customize/mdm/activesync-csp.md", 
         "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/activesync-csp", 
@@ -1183,14 +1188,358 @@
     },    
     {   
         "source_path": "design/what-s-new-in-design.md", 
-        "redirect_url": "get-started/what-s-new-in-windows.md", 
+        "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/get-started/what-s-new-in-windows", 
         "redirect_document_id": true
     },    
     {   
         "source_path": "test/hlk/qosremotesettings.md", 
         "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/test/hlk/testref/qosremotesettings", 
         "redirect_document_id": true
+    }, 
+    {   
+        "source_path": "test/assessments/windows-store-app-performance.md", 
+        "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/test/assessments/microsoft-store-app-performance", 
+        "redirect_document_id": true
+    }, 
+    {   
+        "source_path": "test/assessments/results-for-the-windows-store-app-performance-assessment.md", 
+        "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/test/assessments/results-for-the-microsoft-store-app-performance-assessment", 
+        "redirect_document_id": true
+    },
+    {   
+        "source_path": "customize/desktop/unattend/microsoft-windows-shell-convertibleslatemodepromptpreference.md", 
+        "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-shell-setup-convertibleslatemodepromptpreference", 
+        "redirect_document_id": true
+    },
+    {   
+        "source_path": "customize/desktop/unattend/microsoft-windows-shell-signinmode.md", 
+        "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-shell-setup-signinmode", 
+        "redirect_document_id": true
+    },
+    {   
+        "source_path": "customize/desktop/unattend/security-malware-windows-defender-scanscanparameters.md", 
+        "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-scan-scanparameters", 
+        "redirect_document_id": true
+    },
+    {   
+        "source_path": "customize/desktop/unattend/security-malware-windows-defender-scanscheduleday.md", 
+        "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-scan-scheduleday", 
+        "redirect_document_id": true
+    },
+    {   
+        "source_path": "customize/desktop/unattend/security-malware-windows-defender-scanscheduletime.md", 
+        "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-scan-scheduletime", 
+        "redirect_document_id": true
+    },
+    {   
+        "source_path": "customize/desktop/unattend/networking-mpssvc-svcdisablestatefulftp.md", 
+        "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/networking-mpssvc-svc-disablestatefulftp", 
+        "redirect_document_id": true
+    },
+    {   
+        "source_path": "customize/desktop/unattend/networking-mpssvc-svcdisablestatefulpptp.md", 
+        "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/networking-mpssvc-svc-disablestatefulpptp", 
+        "redirect_document_id": true
+    },
+    {   
+        "source_path": "customize/desktop/unattend/networking-mpssvc-svcdomainprofile-disablenotifications.md", 
+        "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/networking-mpssvc-svc-domainprofile-disablenotifications", 
+        "redirect_document_id": true
+    },
+    {   
+        "source_path": "customize/desktop/unattend/networking-mpssvc-svcdomainprofile-enablefirewall.md", 
+        "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/networking-mpssvc-svc-domainprofile-enablefirewall", 
+        "redirect_document_id": true
+    },
+    {   
+        "source_path": "customize/desktop/unattend/networking-mpssvc-svcdomainprofile-logdroppedpackets.md", 
+        "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/networking-mpssvc-svc-domainprofile-logdroppedpackets", 
+        "redirect_document_id": true
+    },
+    {   
+        "source_path": "customize/desktop/unattend/networking-mpssvc-svcdomainprofile-logfile.md", 
+        "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/networking-mpssvc-svc-domainprofile-logfile", 
+        "redirect_document_id": true
+    },
+    {   
+        "source_path": "customize/desktop/unattend/networking-mpssvc-svcdomainprofile-logfilesize.md", 
+        "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/networking-mpssvc-svc-domainprofile-logfilesize", 
+        "redirect_document_id": true
+    },
+    {   
+        "source_path": "customize/desktop/unattend/networking-mpssvc-svcdomainprofile-logsuccessfulconnections.md", 
+        "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/networking-mpssvc-svc-domainprofile-logsuccessfulconnections", 
+        "redirect_document_id": true
+    },
+    {   
+        "source_path": "customize/desktop/unattend/networking-mpssvc-svcfirewallgroups.md", 
+        "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/networking-mpssvc-svc-firewallgroups", 
+        "redirect_document_id": true
+    },
+    {   
+        "source_path": "customize/desktop/unattend/networking-mpssvc-svcfirewallgroups-firewallgroup.md", 
+        "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/networking-mpssvc-svc-firewallgroups-firewallgroup", 
+        "redirect_document_id": true
+    },
+    {   
+        "source_path": "customize/desktop/unattend/networking-mpssvc-svcfirewallgroups-firewallgroup-active.md", 
+        "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/networking-mpssvc-svc-firewallgroups-firewallgroup-active", 
+        "redirect_document_id": true
+    },
+    {   
+        "source_path": "customize/desktop/unattend/networking-mpssvc-svcfirewallgroups-firewallgroup-group.md", 
+        "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/networking-mpssvc-svc-firewallgroups-firewallgroup-active", 
+        "redirect_document_id": true
+    },
+    {   
+        "source_path": "customize/desktop/unattend/networking-mpssvc-svcfirewallgroups-firewallgroup-key.md", 
+        "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/networking-mpssvc-svc-firewallgroups-firewallgroup-key", 
+        "redirect_document_id": true
+    },
+    {   
+        "source_path": "customize/desktop/unattend/networking-mpssvc-svcfirewallgroups-firewallgroup-profile.md", 
+        "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/networking-mpssvc-svc-firewallgroups-firewallgroup-profile", 
+        "redirect_document_id": true
+    },
+    {   
+        "source_path": "customize/desktop/unattend/networking-mpssvc-svcprivateprofile-disablenotifications.md", 
+        "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/networking-mpssvc-svc-privateprofile-disablenotifications", 
+        "redirect_document_id": true
+    },
+    {   
+        "source_path": "customize/desktop/unattend/networking-mpssvc-svcprivateprofile-enablefirewall.md", 
+        "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/networking-mpssvc-svc-privateprofile-enablefirewall", 
+        "redirect_document_id": true
+    },
+    {   
+        "source_path": "customize/desktop/unattend/networking-mpssvc-svcprivateprofile-logdroppedpackets.md", 
+        "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/networking-mpssvc-svc-privateprofile-logdroppedpackets", 
+        "redirect_document_id": true
+    },
+    {   
+        "source_path": "customize/desktop/unattend/networking-mpssvc-svcprivateprofile-logfile.md", 
+        "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/networking-mpssvc-svc-privateprofile-logfile", 
+        "redirect_document_id": true
+    },
+    {   
+        "source_path": "customize/desktop/unattend/networking-mpssvc-svcprivateprofile-logfilesize.md", 
+        "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/networking-mpssvc-svc-privateprofile-logfilesize", 
+        "redirect_document_id": true
+    },
+    {   
+        "source_path": "customize/desktop/unattend/networking-mpssvc-svcprivateprofile-logsuccessfulconnections.md", 
+        "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/networking-mpssvc-svc-privateprofile-logsuccessfulconnections", 
+        "redirect_document_id": true
+    },
+    {   
+        "source_path": "customize/desktop/unattend/networking-mpssvc-svcpublicprofile-disablenotifications.md", 
+        "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/networking-mpssvc-svc-publicprofile-disablenotifications", 
+        "redirect_document_id": true
+    },
+    {   
+        "source_path": "customize/desktop/unattend/networking-mpssvc-svcpublicprofile-enablefirewall.md", 
+        "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/networking-mpssvc-svc-publicprofile-enablefirewall", 
+        "redirect_document_id": true
+    },
+    {   
+        "source_path": "customize/desktop/unattend/networking-mpssvc-svcpublicprofile-logdroppedpackets.md", 
+        "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/networking-mpssvc-svc-publicprofile-logdroppedpackets", 
+        "redirect_document_id": true
+    },
+    {   
+        "source_path": "customize/desktop/unattend/networking-mpssvc-svcpublicprofile-logfile.md", 
+        "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/networking-mpssvc-svc-publicprofile-logfile", 
+        "redirect_document_id": true
+    },
+    {   
+        "source_path": "customize/desktop/unattend/networking-mpssvc-svcpublicprofile-logfilesize.md", 
+        "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/networking-mpssvc-svc-publicprofile-logfilesize", 
+        "redirect_document_id": true
+    },
+    {   
+        "source_path": "customize/desktop/unattend/networking-mpssvc-svcpublicprofile-logsuccessfulconnections.md", 
+        "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/networking-mpssvc-svc-publicprofile-logsuccessfulconnections", 
+        "redirect_document_id": true
+    },
+    {   
+        "source_path": "customize/desktop/unattend/microsoft-windows-wlansvc-wlanfunctionalleveldevicereset.md", 
+        "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-wlansvc-wlanfunctionleveldeviceresetsupported", 
+        "redirect_document_id": true
+    },
+    {   
+        "source_path": "customize/desktop/unattend/microsoft-windows-wlansvc-wlanplatformleveldevicereset.md", 
+        "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-wlansvc-wlanplatformleveldeviceresetsupported", 
+        "redirect_document_id": true
+    },
+    {   
+        "source_path": "customize/desktop/unattend/microsoft-windows-wlansvc-numantennaeconnected.md", 
+        "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-wlansvc-numantennaconnected", 
+        "redirect_document_id": true
+    },
+    {   
+        "source_path": "customize/desktop/unattend/microsoft-windows-unattendedjoin-offlineidentfication-provisioning.md", 
+        "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-unattendedjoin-offlineidentification-provisioning", 
+        "redirect_document_id": true
+    },
+    {   
+        "source_path": "customize/desktop/unattend/microsoft-windows-unattendedjoin-offlineidentfication-provisioning-accountdata.md", 
+        "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-unattendedjoin-offlineidentification-provisioning-accountdata", 
+        "redirect_document_id": true
+    },
+    {   
+        "source_path": "customize/desktop/unattend/microsoft-windows-systemsettings.md", 
+        "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-systemsettingsthreshold", 
+        "redirect_document_id": true
+    },
+    {   
+        "source_path": "customize/desktop/unattend/microsoft-windows-systemsettings-displaynetworkselection.md", 
+        "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-systemsettingsthreshold-displaynetworkselection", 
+        "redirect_document_id": true
+    },
+    {   
+        "source_path": "customize/desktop/unattend/microsoft-windows-systemsettings-wifitowlan.md", 
+        "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-systemsettingsthreshold-wifitowlan", 
+        "redirect_document_id": true
+    },
+    {   
+        "source_path": "customize/desktop/unattend/microsoft-windows-stobject-custompowerapplication1application.md", 
+        "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-stobject-custompowerapplication1-application", 
+        "redirect_document_id": true
+    },
+    {   
+        "source_path": "customize/desktop/unattend/microsoft-windows-sqmapiceipenabled.md", 
+        "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-sqmapi-ceipenabled", 
+        "redirect_document_id": true
+    },
+    {   
+        "source_path": "customize/desktop/unattend/microsoft-windows-snmp-agent-service-rfc1156agentsyscontact.md", 
+        "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-snmp-agent-service-rfc1156agent-syscontact", 
+        "redirect_document_id": true
+    },
+    {   
+        "source_path": "customize/desktop/unattend/microsoft-windows-snmp-agent-service-rfc1156agentsyslocation.md", 
+        "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-snmp-agent-service-rfc1156agent-syslocation", 
+        "redirect_document_id": true
+    },
+    {   
+        "source_path": "customize/desktop/unattend/microsoft-windows-snmp-agent-service-rfc1156agentsysservices.md", 
+        "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-snmp-agent-service-rfc1156agent-sysservices", 
+        "redirect_document_id": true
+    },
+    {   
+        "source_path": "customize/desktop/unattend/microsoft-windows-setupwindowsdeploymentservices-login-credentials-domain.md", 
+        "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-setup-windowsdeploymentservices-login-credentials-domain", 
+        "redirect_document_id": true
+    },
+    {   
+        "source_path": "customize/desktop/unattend/microsoft-windows-setup-windowsdeploymentservices-imageselection-installtodiskid.md", 
+        "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-setup-windowsdeploymentservices-imageselection-installto-diskid", 
+        "redirect_document_id": true
+    },
+    {   
+        "source_path": "customize/desktop/unattend/microsoft-windows-setup-imageinstall-osimage-installto-availablepartition.md", 
+        "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-setup-imageinstall-osimage-installtoavailablepartition", 
+        "redirect_document_id": true
+    },
+    {   
+        "source_path": "customize/desktop/unattend/microsoft-windows-ie-internetexplorer-feedlistfeed-item-feedtitle.md", 
+        "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-ie-internetexplorer-feedlist-feeditem-feedtitle", 
+        "redirect_document_id": true
+    },
+    {   
+        "source_path": "customize/desktop/unattend/microsoft-windows-ie-internetexplorer-feedlistfeed-item-feedurl.md", 
+        "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-ie-internetexplorer-feedlist-feeditem-feedurl", 
+        "redirect_document_id": true
+    },
+    {   
+        "source_path": "customize/desktop/unattend/microsoft-windows-fax-service-fax-unattend.md", 
+        "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-fax-service-faxunattend", 
+        "redirect_document_id": true
+    },
+    {   
+        "source_path": "customize/desktop/unattend/microsoft-windows-fax-service-fax-unattend-csid.md", 
+        "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-fax-service-faxunattend-csid", 
+        "redirect_document_id": true
+    },
+    {   
+        "source_path": "customize/desktop/unattend/microsoft-windows-fax-service-fax-unattend-faxprinterisshared.md", 
+        "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-fax-service-faxunattend-faxprinterisshared", 
+        "redirect_document_id": true
+    },
+    {   
+        "source_path": "customize/desktop/unattend/microsoft-windows-fax-service-fax-unattend-receivefaxes.md", 
+        "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-fax-service-faxunattend-receivefaxes", 
+        "redirect_document_id": true
+    },
+    {   
+        "source_path": "customize/desktop/unattend/microsoft-windows-fax-service-fax-unattend-rings.md", 
+        "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-fax-service-faxunattend-rings", 
+        "redirect_document_id": true
+    },
+    {   
+        "source_path": "customize/desktop/unattend/microsoft-windows-fax-service-fax-unattend-routefoldername.md", 
+        "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-fax-service-faxunattend-routefoldername", 
+        "redirect_document_id": true
+    },
+    {   
+        "source_path": "customize/desktop/unattend/microsoft-windows-fax-service-fax-unattend-routeprintername.md", 
+        "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-fax-service-faxunattend-routeprintername", 
+        "redirect_document_id": true
+    },
+    {   
+        "source_path": "customize/desktop/unattend/microsoft-windows-fax-service-fax-unattend-routetofolder.md", 
+        "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-fax-service-faxunattend-routetofolder", 
+        "redirect_document_id": true
+    },
+    {   
+        "source_path": "customize/desktop/unattend/microsoft-windows-fax-service-fax-unattend-routetoprinter.md", 
+        "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-fax-service-faxunattend-routetoprinter", 
+        "redirect_document_id": true
+    },
+    {   
+        "source_path": "customize/desktop/unattend/microsoft-windows-fax-service-fax-unattend-sendfaxes.md", 
+        "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-fax-service-faxunattend-sendfaxes", 
+        "redirect_document_id": true
+    },
+    {   
+        "source_path": "customize/desktop/unattend/microsoft-windows-fax-service-fax-unattend-tsid.md", 
+        "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-fax-service-faxunattend-tsid", 
+        "redirect_document_id": true
+    },
+    {   
+        "source_path": "customize/desktop/unattend/microsoft-windows-enhancedstorage-admtcgsecurityactivationdisabled.md", 
+        "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-enhancedstorage-adm-tcgsecurityactivationdisabled", 
+        "redirect_document_id": true
+    },
+    {   
+        "source_path": "customize/desktop/unattend/microsoft-windows-embedded-unifiedwritefilter-protectedvolumelist-protectedvolumeentry-driverletter.md", 
+        "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-embedded-unifiedwritefilter-protectedvolumelist-protectedvolumeentry-driveletter", 
+        "redirect_document_id": true
+    },
+    {   
+        "source_path": "customize/desktop/unattend/microsoft-windows-embedded-unifiedwritefilter-addallvolume.md", 
+        "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-embedded-unifiedwritefilter-addallvolumes", 
+        "redirect_document_id": true
+    },
+    {   
+        "source_path": "customize/desktop/unattend/microsoft-windows-embedded-shelllauncher-usersettings-user-customreturncodeaction-action.md", 
+        "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-embedded-shelllauncher-usersettings-user-customreturncodeaction-codeaction-action", 
+        "redirect_document_id": true
+    },
+    {   
+        "source_path": "customize/desktop/unattend/microsoft-windows-embedded-shelllauncher-usersettings-user-customreturncodeaction-returncode.md", 
+        "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-embedded-shelllauncher-usersettings-user-customreturncodeaction-codeaction-returncode", 
+        "redirect_document_id": true
+    },
+    {   
+        "source_path": "customize/desktop/unattend/microsoft-windows-setupwindowsdeploymentservices-login-willshowui.md", 
+        "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-setup-windowsdeploymentservices-login-willshowui", 
+        "redirect_document_id": true
+    },
+    {   
+        "source_path": "customize/desktop/unattend/microsoft-windows-setup-runsynchronous-runsynchronouscommand-credentials-description.md", 
+        "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-setup-runsynchronous-runsynchronouscommand-description", 
+        "redirect_document_id": true
     }
-
   ] 
 }

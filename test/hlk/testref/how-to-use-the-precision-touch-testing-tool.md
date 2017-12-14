@@ -5,6 +5,12 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 5af8b00a-104a-4f9e-84fc-8e95f6713d31
+author: sapaetsc
+ms.author: sapaetsc
+ms.date: 10/15/17
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # How to use the Precision Touch Testing Tool
@@ -13,16 +19,6 @@ ms.assetid: 5af8b00a-104a-4f9e-84fc-8e95f6713d31
 The Precision Touch Testing Tool, or PT3, is a multi-function tool that tests high-performance touch digitizers against the Windows Hardware Lab Kit touch tests for Windows 8. It can operate at performance levels where human operator precision is not sufficient. It can tap precisely at a defined point, realign quickly, perfectly trace up to five straight lines simultaneously, draw fixed-radius curves, and support adjustable distances between adjacent contacts.
 
 The PT3 does all of these tasks well, but its capable performance does not make these tasks trivial. You must practice and prepare to become comfortable using the PT3.
-
-**In this topic:**
-
--   [Terminology and Visual Orientation](#termvis)
-
--   [Basic Usage](#basic)
-
--   [Running the Tests](#running)
-
--   [Additional Instructions for the ITRI PT3 Device](#addl)
 
 ## <span id="termvis"></span><span id="TERMVIS"></span>Terminology and Visual Orientation
 

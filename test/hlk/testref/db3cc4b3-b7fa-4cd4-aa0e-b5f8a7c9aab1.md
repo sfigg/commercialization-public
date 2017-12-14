@@ -5,6 +5,12 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 09b8df4b-2ff2-4ced-a53a-c8d3d1eaf583
+author: sapaetsc
+ms.author: sapaetsc
+ms.date: 10/15/17
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # <span id="p_hlk_test.db3cc4b3-b7fa-4cd4-aa0e-b5f8a7c9aab1"></span>Assessment - Internet Explorer Startup Performance
@@ -16,7 +22,7 @@ Measures the time to launch the Internet Explorer process, when the Internet Exp
 |||
 |---|---|
 | **Specifications**  | <ul><li>System.Client.CPU.Discretional</li></ul> |  
-| **Platforms**   | <ul><li>Windows 10 client editions (x86)</li><li>Windows 10, client editions (x64)</li></ul> |
+| **Platforms**   | <ul><li>Windows 10, client editions (x86)</li><li>Windows 10, client editions (x64)</li></ul> |
 | **Supported Releases** | <ul><li>Windows 10</li><li>Windows 10, version 1511</li><li>Windows 10, version 1607</li><li>Windows 10, version 1703</li><li>Windows 10, version 1709</li></ul> |
 |**Expected run time (in minutes)**| 10 |
 |**Category**| Benchmark |

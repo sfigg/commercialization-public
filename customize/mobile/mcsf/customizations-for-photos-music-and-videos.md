@@ -11,62 +11,25 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # Customizations for photos, music, and videos
-
 
 Contains the customizations you can configure for photos, music, and videos.
 
 ## In this section
 
+| Topic                                 | Description                                                                                   |
+|:--------------------------------------|:----------------------------------------------------------------------------------------------|
+| [Add OEM lens apps as options for the default camera](adding-oem-lens-apps-as-options-for-the-default-camera.md)  | OEMs can add lens apps as options for the default camera. |
+| [Audio volume limitation](audio-volume-limitation.md) | OEMs can configure a setting to display a visual warning when the volume level of the phone exceeds a certain permitted threshold.    |
+| [Configure OEM lens apps to launch above the lock screen](configuring-oem-lens-apps-to-launch-above-the-lock-screen.md)   | OEM can configure lens apps to launch above the lock screen.  |
+| [Configure the FM radio](fm-radio.md) | The BSP provided by the SoC vendor includes support for the FM radio. OEMs can determine whether to show the FM radio app to users, and configure the FM radio frequency for specific regions. |
+| [Maximum enumerable photo size](maximum-enumerable-photo-size.md) | For phones that have the hardware capability to capture various resolutions, partners can specify the resolution limit for photos that can be accessed by third party apps.   |
+| [Reset the audio volume limitation and warning](reset-the-audio-volume-limitation-and-warning.md)    | OEMs can set the device to reset the audio volume limit and show the volume level warning every time the volume level exceeds a certain permitted threshold for a certain length of time.    |
+| [Settings for capture mode, burst support, and burst storage duration](settings-for-capture-mode-burst-support-and-burst-storage-duration.md) | OEMs can configure burst support on the device, the default capture mode, and the default number of days to store the bursts captured on the device.  |
+| [Video over LTE](video-over-lte.md)    | Partners can customize specific settings and behavior for Video over LTE to meet mobile operator requirements.  |
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Topic</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>[Adding OEM lens apps as options for the default camera](adding-oem-lens-apps-as-options-for-the-default-camera.md)</p></td>
-<td><p>OEMs can add lens apps as options for the default camera.</p></td>
-</tr>
-<tr class="even">
-<td><p>[Audio volume limitation](audio-volume-limitation.md)</p></td>
-<td><p>OEMs can configure a setting to display a visual warning when the volume level of the phone exceeds a certain permitted threshold.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[Configuring OEM lens apps to launch above the lock screen](configuring-oem-lens-apps-to-launch-above-the-lock-screen.md)</p></td>
-<td><p>OEM can configure lens apps to launch above the lock screen.</p></td>
-</tr>
-<tr class="even">
-<td><p>[Maximum enumerable photo size](maximum-enumerable-photo-size.md)</p></td>
-<td><p>For phones that have the hardware capability to capture various resolutions, partners can specify the resolution limit for photos that can be accessed by third party apps.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[Reset the audio volume limitation and warning](reset-the-audio-volume-limitation-and-warning.md)</p></td>
-<td><p>OEMs can set the device to reset the audio volume limit and show the volume level warning every time the volume level exceeds a certain permitted threshold for a certain length of time.</p></td>
-</tr>
-<tr class="even">
-<td><p>[Settings for capture mode, burst support, and burst storage duration](settings-for-capture-mode-burst-support-and-burst-storage-duration.md)</p></td>
-<td><p>OEMs can configure burst support on the device, the default capture mode, and the default number of days to store the bursts captured on the device.</p></td>
-</tr>
-</tbody>
-</table>
+## Related topics
 
- 
+[Prepare for Windows mobile development](https://docs.microsoft.com/en-us/windows-hardware/manufacture/mobile/preparing-for-windows-mobile-development)
 
- 
-
- 
-
-
-
-
-
-
+[Customization answer file overview](https://docs.microsoft.com/en-us/windows-hardware/customize/mobile/mcsf/customization-answer-file)

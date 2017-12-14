@@ -38,7 +38,7 @@ ms.technology: windows-oem
 <td><p>Specifies the disk and the partition to install the image to.</p></td>
 </tr>
 <tr class="even">
-<td><p>[InstallToAvailablePartition](microsoft-windows-setup-imageinstall-osimage-installto-availablepartition.md)</p></td>
+<td><p>[InstallToAvailablePartition](microsoft-windows-setup-imageinstall-osimage-installtoavailablepartition.md)</p></td>
 <td><p>Specifies whether to install to the first available bootable partition on a computer that does not already have an installation of Windows.</p></td>
 </tr>
 <tr class="odd">

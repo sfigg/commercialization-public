@@ -5,6 +5,12 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: dc816554-cfb8-4408-b68b-b2f1831231c9
+author: sapaetsc
+ms.author: sapaetsc
+ms.date: 10/15/17
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # <span id="p_hlk_test.9fd80de7-eaf5-4ca6-bc4e-877eb0ea3e08"></span>NDISTest 6.5 - \[2 Machine\] - Stats
@@ -16,7 +22,7 @@ For NDIS 6.0 miniports, this test verifies that miniport maintains and report st
 |||
 |---|---|
 | **Specifications**  | <ul><li>Device.Network.LAN.Base.NDISRequirements</li></ul> |  
-| **Platforms**   | <ul><li>Windows 10 client editions (x86)</li><li>Windows 10, client editions (x64)</li><li>Windows Server 2016 (x64)</li></ul> |
+| **Platforms**   | <ul><li>Windows 10, client editions (x86)</li><li>Windows 10, client editions (x64)</li><li>Windows Server 2016 (x64)</li></ul> |
 | **Supported Releases** | <ul><li>Windows 10</li><li>Windows 10, version 1511</li><li>Windows 10, version 1607</li><li>Windows 10, version 1703</li><li>Windows 10, version 1709</li></ul> |
 |**Expected run time (in minutes)**| 10 |
 |**Category**| Development |

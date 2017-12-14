@@ -8,6 +8,12 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: B75040A2-89DE-48DC-AB40-7BB6B5E7DBE9
+author: sapaetsc
+ms.author: sapaetsc
+ms.date: 10/15/17
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # Step 6: Select target to test
@@ -43,14 +49,11 @@ The following image shows the Studio **Selection** tab.
 
 3.  In the center pane, check the box next to each target that you want to test.
 
-    >[!NOTE]
-    >  You must select all of the features of a specific product type for a device to receive certification.
+    You must select all of the features of a specific product type for a device to receive certification.
 
-    >[!NOTE]
-    >  If you're testing a Web Services on Devices (WSD) device, there may be a delay before the required WSD targets are listed.
+     If you're testing a Web Services on Devices (WSD) device, there may be a delay before the required WSD targets are listed.
 
      
-
 The **show selected** view in the left pane displays the targets that you've selected across all views. This view allows you to see just the areas you're testing. You also can filter a machine pool by category by using the **category** list. You can search for specific targets and features by using the search box.
 
 To learn more about the different options on this page see [HLK Studio - Selection Tab](..\user\hlk-studio---selection-tab.md).

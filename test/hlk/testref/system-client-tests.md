@@ -5,6 +5,12 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 2a731794-c925-4858-ac1e-a9be580b036b
+author: sapaetsc
+ms.author: sapaetsc
+ms.date: 10/15/17
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # System.Client tests
@@ -19,7 +25,7 @@ ms.assetid: 2a731794-c925-4858-ac1e-a9be580b036b
 -   [Assessment - Memory Footprint](250551bc-9688-4a01-8eed-ac0127cb9045.md)
 -   [Assessment - Minifilter Diagnostic - Boot Performance (Fast Startup)](a0430cdc-d155-421b-9c0d-88472ae18d1e.md)
 -   [Assessment - Standby Performance](77768493-5d55-43d9-92f7-aa9a8da3a1c3.md)
--   [Assessment - Windows Store Apps Performance](2b6d9c6b-8c5b-4b14-b1a4-2e8d767185a5.md)
+-   [Assessment - Microsoft Store Apps Performance](2b6d9c6b-8c5b-4b14-b1a4-2e8d767185a5.md)
 -   [Basic Capture Session - Photo Sink - Bitmap Bytestream](83491f1b-b043-4eb3-a330-1ca693beda2d.md)
 -   [Basic Capture Session - Photo Sink - Bitmap Image](90da47a3-b6bc-4133-83c4-48da5fd4a9d7.md)
 -   [Basic Capture Session - Photo Sink - Bitmap Sample Callback](4c6a3ba9-fd0b-4b08-920e-e9af62691f6f.md)

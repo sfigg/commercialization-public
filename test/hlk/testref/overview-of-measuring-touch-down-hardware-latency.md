@@ -5,6 +5,12 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: b42af7f0-d198-46f9-b9d4-2e3e12cfd174
+author: sapaetsc
+ms.author: sapaetsc
+ms.date: 10/15/17
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # Overview of measuring Touch Down Hardware Latency
@@ -12,7 +18,7 @@ ms.assetid: b42af7f0-d198-46f9-b9d4-2e3e12cfd174
 
 Latency is a measure of time delay experienced in the touch digitizer system. Inherent latency of a system is one of the most important parameters of the touch device and always represents a tradeoff between several important features: noise levels (SNR), sensitivity, power consumption, jitter, and so on.
 
-The starting point for latency measurement is a well-defined standard; it is the moment at which the finger or stylus (actuator) touches the screen for the first time in a given contact. The end point for touch down hardware latency is the moment when the host operating system (for example, Windows 8) becomes aware of the message from the target touch digitizer (for USB devices this is the moment when the bulk interrupt request is detected on a dedicated USB controller for touch digitizers; usually this request indicates an incoming HID report with initial contact information.) For all practical purposes this end point is identical to that of the WndProc end point, which is the moment when the host application first becomes aware of contact (for example through WM\_INPUT and WM\_POINTER messages for native applications, or via a Windows::UI::Input::PointerPoint message for Windows Store applications).
+The starting point for latency measurement is a well-defined standard; it is the moment at which the finger or stylus (actuator) touches the screen for the first time in a given contact. The end point for touch down hardware latency is the moment when the host operating system (for example, Windows 8) becomes aware of the message from the target touch digitizer (for USB devices this is the moment when the bulk interrupt request is detected on a dedicated USB controller for touch digitizers; usually this request indicates an incoming HID report with initial contact information.) For all practical purposes this end point is identical to that of the WndProc end point, which is the moment when the host application first becomes aware of contact (for example through WM\_INPUT and WM\_POINTER messages for native applications, or via a Windows::UI::Input::PointerPoint message for Microsoft Store applications).
 
 ## <span id="Methodology"></span><span id="methodology"></span><span id="METHODOLOGY"></span>Methodology
 

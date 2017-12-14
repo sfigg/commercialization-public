@@ -5,22 +5,18 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 44b50ca4-5670-431e-b12c-76a8d3ca492f
+author: sapaetsc
+ms.author: sapaetsc
+ms.date: 10/15/17
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # Wireless Router Testing Prerequisites
 
 
-This section describes the tasks that you must complete before you test a wireless router by using the Windows Hardware Lab Kit (Windows HLK):
-
--   [Hardware requirements](#bkmk-hck-wrouter-hr).
-
--   [Software requirements](#bkmk-hck-wrouter-sr).
-
--   [Test computer configuration](#bkmk-hck-wrouter-tc).
-
-**In this section:**
-
--   [Troubleshooting Wireless Router Testing](troubleshooting-wireless-router-testing.md)
+This section describes the tasks that you must complete before you test a wireless router by using the Windows Hardware Lab Kit (Windows HLK).
 
 ## <span id="BKMK_HCK_wRouter_hR"></span><span id="bkmk-hck-wrouter-hr"></span><span id="BKMK_HCK_WROUTER_HR"></span>Hardware requirements
 

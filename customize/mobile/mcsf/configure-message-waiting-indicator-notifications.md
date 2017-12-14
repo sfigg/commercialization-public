@@ -23,7 +23,7 @@ This customization supports: **per-IMSI** value
 <a href="" id="instructions-"></a>**Instructions:**  
 1.  Create a customization answer file using the contents shown in the following code sample.
 
-    ```
+    ```XML
     <?xml version="1.0" encoding="utf-8" ?>  
     <ImageCustomizations xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate"  
                          Name="IgnoreMWINotifications"  
@@ -110,12 +110,8 @@ This customization supports: **per-IMSI** value
 
 3.  If visual voicemail has not been set up on the device, you can verify that the customization worked by checking if the device tile shows a voicemail notification.
 
- 
+## Related topics
 
- 
+[Prepare for Windows mobile development](https://docs.microsoft.com/en-us/windows-hardware/manufacture/mobile/preparing-for-windows-mobile-development)
 
-
-
-
-
-
+[Customization answer file overview](https://docs.microsoft.com/en-us/windows-hardware/customize/mobile/mcsf/customization-answer-file)

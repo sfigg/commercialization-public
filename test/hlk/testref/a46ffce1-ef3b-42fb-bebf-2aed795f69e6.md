@@ -5,6 +5,12 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8b41a21e-8732-442e-81a8-1722d2532b27
+author: sapaetsc
+ms.author: sapaetsc
+ms.date: 10/15/17
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # <span id="p_hlk_test.a46ffce1-ef3b-42fb-bebf-2aed795f69e6"></span>UCSI commands - Get PDOs, partner Sink Capabilities
@@ -16,7 +22,7 @@ Verifies that the system supports the UCSI Get PDOs command, for retrieving the 
 |||
 |---|---|
 | **Specifications**  | <ul><li>System.Fundamentals.SystemUSB.USBC.USBTypeCUCSI.USBTypeCUCSI</li></ul> |  
-| **Platforms**   | <ul><li>Windows 10 client editions (x86)</li><li>Windows 10, client editions (x64)</li><li>Windows 10, client editions (ARM64)</li><li>Windows Server 2016 (x64)</li><li>Windows 10, mobile edition (ARM)</li><li>Windows 10, mobile edition (ARM64)</li></ul> |
+| **Platforms**   | <ul><li>Windows 10, client editions (x86)</li><li>Windows 10, client editions (x64)</li><li>Windows 10, client editions (ARM64)</li><li>Windows Server 2016 (x64)</li><li>Windows 10, mobile edition (ARM)</li><li>Windows 10, mobile edition (ARM64)</li></ul> |
 | **Supported Releases** | <ul><li>Windows 10, version 1607</li><li>Windows 10, version 1703</li><li>Windows 10, version 1709</li></ul> |
 |**Expected run time (in minutes)**| 3 |
 |**Category**| Compatibility |

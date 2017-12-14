@@ -5,6 +5,12 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: cdd84d26-a8f4-4c69-b695-c1a8a95956ba
+author: sapaetsc
+ms.author: sapaetsc
+ms.date: 10/15/17
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # <span id="p_hlk_test.f8b501dc-cb2d-42cb-aae1-ecd8c782c1db"></span>Camera Driver Performance Test - Measure media type switching latency on primary video preview stream
@@ -16,7 +22,7 @@ This test will measure media type switching latency on primary video preview str
 |||
 |---|---|
 | **Specifications**  | <ul><li>System.Client.Camera.Discretional.Performance</li></ul> |  
-| **Platforms**   | <ul><li>Windows 10 client editions (x86)</li><li>Windows 10, client editions (x64)</li><li>Windows 10, client editions (ARM64)</li></ul> |
+| **Platforms**   | <ul><li>Windows 10, client editions (x86)</li><li>Windows 10, client editions (x64)</li><li>Windows 10, client editions (ARM64)</li></ul> |
 | **Supported Releases** | <ul><li>Windows 10</li><li>Windows 10, version 1511</li><li>Windows 10, version 1607</li><li>Windows 10, version 1703</li><li>Windows 10, version 1709</li></ul> |
 |**Expected run time (in minutes)**| 1 |
 |**Category**| Benchmark |

@@ -5,36 +5,18 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: cadbd3bf-0fc4-4d26-adf1-348f3e58d488
+author: sapaetsc
+ms.author: sapaetsc
+ms.date: 10/15/17
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # Review common Device Fundamentals Reliability test failures
 
 
 This topic describes common test failures that you can encounter when you run Windows Hardware Lab Kit (Windows HLK) Device Fundamentals Reliability tests.
-
-**In this topic:**
-
--   [The test is marked as failed in HLK Studio, but the te.wtl log shows only pass results](#failed-but-te-shows-pass)
-
--   [The test failed because an unexpected reboot occurred during testing](#unexpected-reboot)
-
--   [Device Status Check task fails during setup](#statuschecktask)
-
--   [Device Path Exerciser fails with “Test thread exceeded timeout limit. Terminating thread error” error](#timeout)
-
--   [Surprise Remove test fails with “Failed to receive IRP\_MN\_REMOVE\_DEVICE after receiving IRP\_MN\_SURPRISE\_REMOVAL” error message](#irp-mn-remove-device)
-
--   [SimpleIO plugins log failures](#simpleio)
-
--   [Testing I/O on a particular device permanently hangs, and eventually causes the test to fail because of a timeout](#iohangs)
-
--   [Tests do not resume from sleep](#sleep)
-
--   [WirelessPlugin: ConnectToTestProfile() - Failed to connect to test profile. Reason string: "The specific network is not available." error message](#nonet)
-
--   [WDTFSensorsPlugin: Open() - GPS Sensor did not go to ready state](#gpssensor)
-
--   [Test log message: Number of devices found after reboot (1) is not the same as before the reboot (2); please review logs to find the missing device(s)](#number-of-devices-changed)
 
 ## <span id="failed_but_te_shows_pass"></span><span id="FAILED_BUT_TE_SHOWS_PASS"></span>The test is marked as failed in HLK Studio, but the te.wtl log shows only pass results
 

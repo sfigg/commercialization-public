@@ -1069,15 +1069,15 @@ If you're not already booted into WinPE on the device you're deploying your imag
 
 ### Use a deployment script to apply your image
 
-Run a script to create partitions and apply your image. We'll use walkthrough-deploy.bat in _USB-B_\deployment to do this for us.
+Run a script to create partitions and apply your image. We'll use applyimage.bat in _USB-B_\deployment to do this for us.
 
 Important: As of Windows 10, version 1607, the Recovery partition must be the next partition after the Windows partition. This ensures that winre.wim can be kept up-to-date during life of the device. 
 
 On your reference PC:
 
-1. In WinPE, run walkthroughdeploy.bat from the USB-B\deployment folder, specifying the image you want to deploy:
+1. In WinPE, run applyimage.bat.bat from the USB-B\deployment folder, specifying the image you want to deploy:
     ```
-    E:\Deployment\walkthrough-deploy.bat E:\images\basicimage.wim
+    E:\Deployment\applyimage.bat E:\images\basicimage.wim
     ```
     **Note:** There are several pauses in the script. You will be prompted Y/N for the Apply operation if this is Compact OS deployment.
 
@@ -1085,27 +1085,25 @@ On your reference PC:
 
 3. The PC will boot into OOBE. Press `Ctrl+Shift+F3` to boot into Audit mode.
 
-    **Note:** Only use compact OS on Flash drive based devices as compact OS performance is heavily dependent on the storage device capabilities. Compact OS is NOT recommending on rotational devices. Please reference Compact OS for more information.
+    **Note:** Only use compact OS on Flash drive based devices as compact OS performance is heavily dependent on the storage device capabilities. Compact OS is NOT recommended on rotational devices. Please reference Compact OS for more information.
 
 ## Make changes from Windows (audit mode)
 
-Now that you have made changes to your offline image, you can apply your image to a PC and use audit mode to customize Windows using the familiar Windows environment. In audit mode, you can add Windows desktop applications, change system settings, add data, and run scripts to get your image ready for to be captured.
+Now that you've made changes to your offline image, you can apply your image to a PC and use audit mode to customize Windows using the familiar Windows environment. In audit mode, you can add Windows desktop applications, change system settings, add data, and run scripts to get your image ready for to be captured.
 
-To make sure your audit mode changes are included in the recovery image, you'll need to capture these changes into a provisioning package using ScanState. This image gets used by the system recovery tools to restore your changes if things go wrong. You can optionally save drive space by running the applications directly from the compressed recovery files; this is known as single-instancing.
+To make sure your audit mode changes are included in the recovery image, you'll need to capture these changes into a provisioning package using ScanState. This package gets used by the system recovery tools to restore your changes if things go wrong. You can optionally save drive space by running the applications directly from the compressed recovery files; this is known as single-instancing.
 
-If you want to capture the changes in an image and apply it to other devices, you'll need to use the Sysprep tool to generalize the image.
+If you want to capture the changes in an image and apply it to other devices, you'll need to use Sysprep to generalize the image.
 
 ### Apps and Store opportunities
 
-Through Windows 10 and the Windows Store, you have tremendous opportunities for brand and device differentiation, revenue creation, and customer access. 
+Through Windows 10 and the Microsoft Store, you have tremendous opportunities for brand and device differentiation, revenue creation, and customer access. 
 
-Windows Store apps are at the center of the Windows 10 experience. They are Windows universal apps, so you can build apps for desktops, tablets, or phones that run Windows 10. As an OEM, you can provide an engaging customer experience and increase brand loyalty by providing a great set of value-added software and services along with the high-quality hardware that you build.
-
-For more information please refer to Windows Store Program 2016 Guide - 2016 Final Clean and Apps and Store Windows Engineering Guide (WEG)
+Microsoft Store apps are at the center of the Windows 10 experience. They are Windows universal apps, so you can build apps for desktops, tablets, or phones that run Windows 10. As an OEM, you can provide an engaging customer experience and increase brand loyalty by providing a great set of value-added software and services along with the high-quality hardware that you build.
 
 **Important:** The key below must be set in Audit mode.
 
-You have to change a registry setting to add your OEM ID. If you're an OEM Windows Store Program participant, contact PartnerOps@microsoft.com to get your OEM ID. 
+You have to change a registry setting to add your OEM ID. If you're an OEM Microsoft Store Program participant, contact PartnerOps@microsoft.com to get your OEM ID. 
 
 | Item   | Location in Registry                                                                               |
 | ------ | -------------------------------------------------------------------------------------------------- |
@@ -1114,7 +1112,7 @@ You have to change a registry setting to add your OEM ID. If you're an OEM Windo
 
 OEMID
 
-1.	Run regedit.exe from command prompt
+1.	Run regedit.exe from Command Prompt
 2.	Navigate to HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Store
 3.	Right click under (Defalut) -> click new
 4.	Click String Value
@@ -1123,7 +1121,7 @@ OEMID
 
 SCMID
 
-1.	Run regedit.exe from command prompt
+1.	Run regedit.exe from Command Prompt
 2.	Navigate to HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Store
 3.	Right click under (Defalut) -> click new
 4.	Click String Value
@@ -1520,10 +1518,10 @@ In this section, we'll cover how to deploy your captured image for testing and v
 
 
 1. Boot the PC you want to test your image on into WinPE.
-2. Run walkthrough-deploy.cmd to deploy the finalimage.wim
+2. Run applyimage.bat to deploy the finalimage.wim
 
     ```
-    E:\Deployment\walkthrough-deploy.cmd E:\Images\FinalImage.wim
+    E:\Deployment\applyimage.bat E:\Images\FinalImage.wim
     ```
 3. Type `exit` to close WinPE and restart the PC.
 

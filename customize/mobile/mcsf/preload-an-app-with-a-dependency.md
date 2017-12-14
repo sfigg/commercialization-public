@@ -15,7 +15,7 @@ ms.technology: windows-oem
 # Preload an app with a dependency
 
 
-OEMs can preload apps as long as they meet the requirements specified in the Windows 10 Mobile OEM Policy Document (OPD). For more information on how to create preloaded apps for mobile devices, see [Preinstallable apps for mobile devices](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/customize/preinstall/preinstallable-apps-for-window-10-for-phones).
+OEMs can preload apps as long as they meet the requirements specified in the Windows 10 Mobile OEM Policy Document (OPD). For more information on how to create preloaded apps for mobile devices, see [Preinstallable apps for mobile devices](https://docs.microsoft.com/en-us/windows-hardware/customize/preinstall/preinstallable-apps-for-window-10-for-phones).
 
 If you need to preinstall an app that has dependencies on other packages or components, you need to make sure that the other packages or components are preinstalled first before your app. If the dependent packages or components are not installed first, your app preinstall will fail.
 
@@ -28,7 +28,7 @@ If you need to preinstall an app that has dependencies on other packages or comp
 
     -   License file - This should be included as part of the preinstallation package.
 
-    -   ProvXML file - See the section *Create a .provxml file for a preinstallable app* in [Preinstallable apps for mobile devices](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/customize/preinstall/preinstallable-apps-for-window-10-for-phones) for information on how to do this. When specifying the value of the **ProductID** parameter, this value must match the GUID from the AppxManifest file in the preinstallation package.
+    -   ProvXML file - See the section [Create a .provxml file for a preinstallable app](https://docs.microsoft.com/en-us/windows-hardware/customize/preinstall/preinstallable-apps-for-window-10-for-phones#create-a-provxml-file-for-a-preinstallable-app) for information on how to do this. When specifying the value of the **ProductID** parameter, this value must match the GUID from the AppxManifest file in the preinstallation package.
 
 2.  Make sure you have the following files for the required component:
 
@@ -140,7 +140,7 @@ If you need to preinstall an app that has dependencies on other packages or comp
 
 3.  Write down the location and names of the .spkg files that were generated for your primary app and the required component.
 
-4.  Update your feature manifest file to include these new packages and define a feature name for them. For more information, see [Feature manifest file contents](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/manufacture/mobile/feature-manifest-file-contents).
+4.  Update your feature manifest file to include these new packages and define a feature name for them. For more information, see [Feature manifest file contents](https://docs.microsoft.com/en-us/windows-hardware/manufacture/mobile/feature-manifest-file-contents).
 
     1.  Edit the feature manifest file.
 
@@ -170,7 +170,7 @@ If you need to preinstall an app that has dependencies on other packages or comp
 
     6.  Save your updated feature manifest file.
 
-5.  Update your OEMInput.xml file to include the new features that you defined in the previous step. For more information, see [OEMInput file contents](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/manufacture/mobile/oeminput-file-contents).
+5.  Update your OEMInput.xml file to include the new features that you defined in the previous step. For more information, see [OEMInput file contents](https://docs.microsoft.com/en-us/windows-hardware/manufacture/mobile/oeminput-file-contents).
 
     1.  Edit your OEMInput.xml file.
 
@@ -195,7 +195,7 @@ If you need to preinstall an app that has dependencies on other packages or comp
 
     You can use ImgGen.cmd to build the image.
 
-7.  Depending on the mobile image type that you built, you may need to sign the image before you can flash it to the phone. For more information, see [Sign a full flash update (FFU) image](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/manufacture/mobile/sign-a-full-flash-update--ffu--image).
+7.  Depending on the mobile image type that you built, you may need to sign the image before you can flash it to the phone. For more information, see [Sign a full flash update (FFU) image](https://docs.microsoft.com/en-us/windows-hardware/manufacture/mobile/sign-a-full-flash-update--ffu--image).
 
 <a href="" id="testing"></a>**Testing**  
 1.  Flash the image that contains the preloaded app to a mobile device.
@@ -203,12 +203,8 @@ If you need to preinstall an app that has dependencies on other packages or comp
 3.  Once the device is fully set up, go to the full apps list.
 4.  Verify that you can see your primary app listed with all the other apps in the device.
 
- 
+## Related topics
 
- 
+[Prepare for Windows mobile development](https://docs.microsoft.com/en-us/windows-hardware/manufacture/mobile/preparing-for-windows-mobile-development)
 
-
-
-
-
-
+[Customization answer file overview](https://docs.microsoft.com/en-us/windows-hardware/customize/mobile/mcsf/customization-answer-file)

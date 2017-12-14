@@ -38,17 +38,17 @@ OEMs should note the following accessibility features when support for the navig
 > [!NOTE]
 > Some settings in this customization may not be available depending on the Windows Phone 8.1 release that you are using to commercialize your device.
 
-<a href="" id="constraints---imagetimeonly"></a>**Constraints:** ImageTimeOnly  
+<a href="" id="constraints---imagetimeonly"></a>**Constraints:** ImageTimeOnly
 
-<a href="" id="instructions-"></a>**Instructions:**  
+<a href="" id="instructions-"></a>**Instructions:**
 To build an image with software-rendered buttons that can be shown or hidden by users:
 
 1.  Create a customization answer file using the contents shown in the following code sample.
 
-    ```
-    <?xml version="1.0" encoding="utf-8" ?>  
+    ```XML
+    <?xml version="1.0" encoding="utf-8" ?>
     <ImageCustomizations xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate"  
-                         Name="UserManagedSoftwareButtons"  
+                         Name="UserManagedSoftwareButtons"
                          Description="Use to create an image that supports a 1080p, 720p, WXGA, or qHD display 
                                       panels without hardware Back, Start, and Search buttons."  
                          Owner=""  
@@ -156,13 +156,13 @@ To build an image with software-rendered buttons that can be shown or hidden by 
         | 0 or `Disabled` | Disables the feature. This is the default OS behavior. |
         | 1 or `Enabled`  | Enables the feature.                                   |
 
-8.  If you have not done so already, create an OEMInput XML file to define the set of packages to include in your phone image, and configure your computer to use the imaging tools. For more information, see [Building a mobile image using ImgGen.cmd](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/manufacture/mobile/building-a-phone-image-using-imggencmd).
+8.  If you have not done so already, create an OEMInput XML file to define the set of packages to include in your phone image, and configure your computer to use the imaging tools. For more information, see [Building a mobile image using ImgGen.cmd](https://docs.microsoft.com/en-us/windows-hardware/manufacture/mobile/building-a-phone-image-using-imggencmd).
 
-9.  In your OEMInput XML file, set the value of the **Resolution** element to 1080x1920, 768x1280, 720x1280, or 540x960, depending on the resolution of the panel. For more information, see [OEMInput file contents](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/manufacture/mobile/oeminput-file-contents).
+9.  In your OEMInput XML file, set the value of the **Resolution** element to 1080x1920, 768x1280, 720x1280, or 540x960, depending on the resolution of the panel. For more information, see [OEMInput file contents](https://docs.microsoft.com/en-us/windows-hardware/manufacture/mobile/oeminput-file-contents).
 
     In the following example, the highlighted entry shows what you need to add to the OEMInput XML file if you are supporting a 1080x1920 resolution.
 
-    ```
+    ```XML
     <Resolutions>
           <Resolution>1080x1920</Resolution>
     </Resolutions>
@@ -170,7 +170,7 @@ To build an image with software-rendered buttons that can be shown or hidden by 
 
 10. In your OEMInput XML file, add the **NAVIGATIONBAR** feature to the **Microsoft** element that is a child of the **Features** element. This feature adds a phone setting that enables users to configure the color of the software buttons.
 
-    ```
+    ```XML
     <Features>
       <Microsoft>
         <Feature>NAVIGATIONBAR</Feature>
@@ -178,7 +178,7 @@ To build an image with software-rendered buttons that can be shown or hidden by 
     </Features>
     ```
 
-    For more information, see [Optional features for building images](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/manufacture/mobile/optional-features-for-building-images).
+    For more information, see [Optional features for building images](https://docs.microsoft.com/en-us/windows-hardware/manufacture/mobile/optional-features-for-building-images).
 
 <a href="" id="testing-steps-"></a>**Testing steps:**  
 The following scenarios are examples for testing the navigation bar and verifying the expected user experience based on your settings. You can add more testing scenarios including playing a game, capturing a screenshot, searching for content, browsing the Internet, and so on.
@@ -188,3 +188,9 @@ The following scenarios are examples for testing the navigation bar and verifyin
 2.  Go through the initial device setup process and verify whether the navigation bar can be hidden using a swipe gesture or by tapping the chevron (or **^** symbol facing downwards). Tap the Start button and verify that the navigation panel can be hidden or shown using a gesture or the chevron.
 
 3.  When the navigation bar is up, play a video and verify that the software buttons are automatically hidden with a transition. Tap on the screen to show the controls and navigation bar. Forward the video and then let it play for a while until the navigation bar auto hides itself. Show the navigation bar again by tapping on the screen and tap the back button to close the video.
+
+## Related topics
+
+[Prepare for Windows mobile development](https://docs.microsoft.com/en-us/windows-hardware/manufacture/mobile/preparing-for-windows-mobile-development)
+
+[Customization answer file overview](https://docs.microsoft.com/en-us/windows-hardware/customize/mobile/mcsf/customization-answer-file)

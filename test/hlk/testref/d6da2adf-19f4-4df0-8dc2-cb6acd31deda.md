@@ -5,6 +5,12 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 51290eda-acbe-4b75-852e-e8bc64c5d5b0
+author: sapaetsc
+ms.author: sapaetsc
+ms.date: 10/15/17
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # <span id="p_hlk_test.d6da2adf-19f4-4df0-8dc2-cb6acd31deda"></span>WLAN Association Tests - OPEN\_WPA2\_AES
@@ -16,7 +22,7 @@ This test suite validates WLAN associations.
 |||
 |---|---|
 | **Specifications**  | <ul><li>Device.Network.WLAN.SupportConnectionToWiFiAP.ConnectionToWiFiAP</li></ul> |  
-| **Platforms**   | <ul><li>Windows 10, client editions (x64)</li><li>Windows 10 client editions (x86)</li><li>Windows 10, client editions (ARM64)</li><li>Windows 10, mobile edition (ARM)</li><li>Windows 10, mobile edition (ARM64)</li></ul> |
+| **Platforms**   | <ul><li>Windows 10, client editions (x64)</li><li>Windows 10, client editions (x86)</li><li>Windows 10, client editions (ARM64)</li><li>Windows 10, mobile edition (ARM)</li><li>Windows 10, mobile edition (ARM64)</li></ul> |
 | **Supported Releases** | <ul><li>Windows 10</li><li>Windows 10, version 1511</li><li>Windows 10, version 1607</li><li>Windows 10, version 1703</li><li>Windows 10, version 1709</li></ul> |
 |**Expected run time (in minutes)**| 20 |
 |**Category**| Scenario |

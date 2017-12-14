@@ -5,6 +5,12 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 9bb7a4cd-287b-4243-bfee-3fc690fba76e
+author: sapaetsc
+ms.author: sapaetsc
+ms.date: 10/15/17
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # <span id="p_hlk_test.9b1ece24-41b5-4acf-be7d-ca88a3dc3c61"></span>Windows Touch Test
@@ -16,7 +22,7 @@ This test verifies that a Windows® Touch device meets requirements.
 |||
 |---|---|
 | **Specifications**  | <ul><li>Device.Input.Digitizer.Touch.CustomGestures</li><li>Device.Input.Digitizer.Touch.HIDCompliant</li><li>Device.Input.Digitizer.Touch.ThirdPartyDrivers</li></ul> |  
-| **Platforms**   | <ul><li>Windows 10 client editions (x86)</li><li>Windows 10, client editions (x64)</li><li>Windows 10, client editions (ARM64)</li></ul> |
+| **Platforms**   | <ul><li>Windows 10, client editions (x86)</li><li>Windows 10, client editions (x64)</li><li>Windows 10, client editions (ARM64)</li></ul> |
 | **Supported Releases** | <ul><li>Windows 10</li><li>Windows 10, version 1511</li><li>Windows 10, version 1607</li><li>Windows 10, version 1703</li><li>Windows 10, version 1709</li></ul> |
 |**Expected run time (in minutes)**| 2 |
 |**Category**| Compatibility |

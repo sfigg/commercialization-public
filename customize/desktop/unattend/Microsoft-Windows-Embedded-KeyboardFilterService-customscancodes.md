@@ -25,7 +25,7 @@ DataTypeEnum
 ## Values
 
 
-An enumeration containing one or more [WEKF\_Scancode](https://msdn.microsoft.com/library/windows/hardware/mt633820) values.
+An enumeration containing one or more [WEKF\_Scancode](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/wekf-scancode) values.
 
 ## Parent Hierarchy
 
@@ -41,19 +41,3 @@ offlineServicing
 
 
 For a list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-Embedded-KeyboardFilterService](microsoft-windows-embedded-keyboardfilterservice.md).
-
-## XML example
-
-
-```
-```
-
- 
-
- 
-
-
-
-
-
-

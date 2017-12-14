@@ -5,6 +5,12 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8928fcf4-c5aa-4388-989f-94d944e15c7e
+author: sapaetsc
+ms.author: sapaetsc
+ms.date: 10/15/17
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # <span id="p_hlk_test.97e869c3-cc1e-43da-9b6a-e06e8b3cacfe"></span>WinRT LightSensor SingleThread
@@ -16,7 +22,7 @@ Windows::Devices::Sensors::LightSensor C++/Cx Functional Tests
 |||
 |---|---|
 | **Specifications**  | <ul><li>Device.Input.Sensor.Light.WinRT.Discretional</li></ul> |  
-| **Platforms**   | <ul><li>Windows 10, mobile edition (ARM)</li><li>Windows 10, mobile edition (ARM64)</li><li>Windows 10 client editions (x86)</li><li>Windows 10, client editions (ARM64)</li><li>Windows 10, client editions (x64)</li></ul> |
+| **Platforms**   | <ul><li>Windows 10, mobile edition (ARM)</li><li>Windows 10, mobile edition (ARM64)</li><li>Windows 10, client editions (x86)</li><li>Windows 10, client editions (ARM64)</li><li>Windows 10, client editions (x64)</li></ul> |
 | **Supported Releases** | <ul><li>Windows 10</li><li>Windows 10, version 1511</li><li>Windows 10, version 1607</li><li>Windows 10, version 1703</li><li>Windows 10, version 1709</li></ul> |
 |**Expected run time (in minutes)**| 1 |
 |**Category**| Scenario |

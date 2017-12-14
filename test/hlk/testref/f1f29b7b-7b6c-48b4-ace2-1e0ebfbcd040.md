@@ -5,6 +5,12 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 1e8ce09d-d557-464a-b5dd-a739804d8491
+author: sapaetsc
+ms.author: sapaetsc
+ms.date: 10/15/17
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # <span id="p_hlk_test.f1f29b7b-7b6c-48b4-ace2-1e0ebfbcd040"></span>NDISTest 6.5 - \[2 Machine\] - OffloadMisc
@@ -16,7 +22,7 @@ TODO: description
 |||
 |---|---|
 | **Specifications**  | <ul><li>Device.Network.LAN.GRE.GREPacketTaskOffloads</li><li>Device.Network.LAN.Base.NDISRequirements</li></ul> |  
-| **Platforms**   | <ul><li>Windows 10 client editions (x86)</li><li>Windows 10, client editions (x64)</li><li>Windows Server 2016 (x64)</li></ul> |
+| **Platforms**   | <ul><li>Windows 10, client editions (x86)</li><li>Windows 10, client editions (x64)</li><li>Windows Server 2016 (x64)</li></ul> |
 | **Supported Releases** | <ul><li>Windows 10</li><li>Windows 10, version 1511</li><li>Windows 10, version 1607</li><li>Windows 10, version 1703</li><li>Windows 10, version 1709</li></ul> |
 |**Expected run time (in minutes)**| 20 |
 |**Category**| Development |

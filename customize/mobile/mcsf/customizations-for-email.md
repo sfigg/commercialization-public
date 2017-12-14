@@ -11,42 +11,18 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # Customizations for email
-
 
 Describes the customizations related to email.
 
 ## In this section
 
+| Topic                                 | Description                                                                                   |
+|:--------------------------------------|:----------------------------------------------------------------------------------------------|
+| [Light or dark theme in email](light-or-dark-mode-in-email.md)    | Partners can specify that the entire email application always has a light background. |
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Topic</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>[Light or dark theme in email](light-or-dark-mode-in-email.md)</p></td>
-<td><p>The email application consists of several screens, including the List View, Settings, Automatic Replies, Search, Inbox Linking, Read, and Compose. By default, the email background for all pages except Read and Compose match the system theme. The Read and Compose pages always have a light background. Partners can specify that the entire email application always has a light background, but users do not have access to this setting. However, if the user turns on high-contrast mode, it overrides all other settings, and all screens use the high contrast settings.</p></td>
-</tr>
-</tbody>
-</table>
+## Related topics
 
- 
+[Prepare for Windows mobile development](https://docs.microsoft.com/en-us/windows-hardware/manufacture/mobile/preparing-for-windows-mobile-development)
 
- 
-
- 
-
-
-
-
-
-
+[Customization answer file overview](https://docs.microsoft.com/en-us/windows-hardware/customize/mobile/mcsf/customization-answer-file)

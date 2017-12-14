@@ -5,6 +5,12 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: af2d7ee5-7ca8-4f24-a54b-caa497c4f3af
+author: sapaetsc
+ms.author: sapaetsc
+ms.date: 10/15/17
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # <span id="p_hlk_test.1cd56bda-d320-476e-badd-46fe9acb34cc"></span>OPM - Protocol Test
@@ -40,7 +46,7 @@ This topic applies to the following test jobs:
 |||
 |---|---|
 | **Specifications**  | <ul><li>Device.Graphics.WDDM11.DisplayRender.Base</li><li>Device.Graphics.WDDM.DisplayRender.OutputProtection</li><li>Device.Graphics.WDDM.DisplayRender.OutputProtection.Windows7</li></ul> |  
-| **Platforms**   | <ul><li>Windows 10 client editions (x86)</li><li>Windows 10, client editions (x64)</li><li>Windows Server 2016 (x64)</li><li>Windows 10, client editions (ARM64)</li></ul> |
+| **Platforms**   | <ul><li>Windows 10, client editions (x86)</li><li>Windows 10, client editions (x64)</li><li>Windows Server 2016 (x64)</li><li>Windows 10, client editions (ARM64)</li></ul> |
 | **Supported Releases** | <ul><li>Windows 10</li><li>Windows 10, version 1511</li><li>Windows 10, version 1607</li><li>Windows 10, version 1703</li><li>Windows 10, version 1709</li></ul> |
 |**Expected run time (in minutes)**| 10 |
 |**Category**| Compatibility |

@@ -2,7 +2,7 @@
 title: Win6_4.MB.GSM.Data.TestSlot
 Description: Win6_4.MB.GSM.Data.TestSlot
 ms.assetid: 
-author: sapaetsc-msft
+author: sapaetsc
 ms.author: sapaetsc
 ms.date: 10/15/17
 ms.topic: article
@@ -18,7 +18,7 @@ The test includes two parts: 1. Query modem slot information. 2. Query/set the m
 |||
 |---|---|
 | **Specifications**  | <ul><li>Device.Network.MobileBroadband.CDMA.Discretional</li><li>Device.Network.MobileBroadband.GSM.ComplyWithBaseReq</li></ul> |  
-| **Platforms**   | <ul><li>Windows 10 client editions (x86)</li><li>Windows 10, client editions (x64)</li><li>Windows 10, client editions (ARM64)</li></ul> |
+| **Platforms**   | <ul><li>Windows 10, client editions (x86)</li><li>Windows 10, client editions (x64)</li><li>Windows 10, client editions (ARM64)</li></ul> |
 | **Supported Releases** | <ul><li>Windows 10</li><li>Windows 10, version 1511</li><li>Windows 10, version 1607</li><li>Windows 10, version 1703</li><li>Windows 10, version 1709</li></ul> |
 |**Expected run time (in minutes)**| 10 |
 |**Category**| Development |

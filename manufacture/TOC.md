@@ -256,6 +256,14 @@
 ### [Mobile deployment and imaging](mobile/mobile-deployment-and-imaging.md)
 #### [Prepare for Windows mobile development](mobile/preparing-for-windows-mobile-development.md)
 #### [Create mobile packages](mobile/creating-mobile-packages.md)
+##### [Adding mobile packages](mobile/creating-packages.md)
+##### [Primary elements and attributes of a package project file](mobile/primary-elements-and-attributes-of-a-package-project-file.md)
+##### [Specifying components in a package project file](mobile/specifying-components-in-a-package-project-file.md)
+##### [Specifying files and registry entries in a package project file](mobile/specifying-files-and-registry-entries-in-a-package-project-file.md)
+##### [Command-line arguments for package generator](mobile/command-line-arguments-for-package-generator.md)
+##### [Merging packages before imaging](mobile/merging-packages-before-imaging.md)
+##### [Merging packages using FeatureMerger](mobile/merging-packages-using-featuremerger.md)
+##### [Windows Standard Packaging Configuration (WSPC) requirements for retail images](mobile/packaging-requirements-for-retail-images.md)
 #### [Configure the Start layout](mobile/configure-the-start-layout.md)
 #### [Part 1: Classic mobile deployment](mobile/lab-1--classic-mobile-deployment.md)
 ##### [Configure customization settings](mobile/configure-customization-settings.md)
@@ -267,6 +275,7 @@
 #### [Part 2: Mobile deployment using Windows Provisioning](mobile/lab-2--mobile-deployment-using-windows-provisioning.md)
 ##### [Use the Windows ICD UI to customize and build a mobile image](mobile/use-the-windows-icd-ui-to-customize-and-build-a-mobile-image.md)
 ##### [Use the Windows ICD CLI to customize and build a mobile image](mobile/use-the-windows-icd-cli-to-customize-and-build-a-mobile-image.md)
+
 
 ### [Manufacturing Mode](mobile/manufacturing-mode.md)
 #### [Create a custom manufacturing profile package](mobile/how-to-create-a-custom-manufacturing-profile.md)

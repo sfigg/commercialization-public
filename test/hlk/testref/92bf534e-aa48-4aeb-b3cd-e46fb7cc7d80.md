@@ -5,6 +5,12 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 747c4eca-54b0-4b88-bdf6-4c2bf5526648
+author: sapaetsc
+ms.author: sapaetsc
+ms.date: 10/15/17
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # <span id="p_hlk_test.92bf534e-aa48-4aeb-b3cd-e46fb7cc7d80"></span>DF - Fuzz sub-opens test (Reliability)
@@ -24,7 +30,7 @@ For more information about the namespace of a device, see [Controlling Device Na
 |||
 |---|---|
 | **Specifications**  | <ul><li>Device.DevFund.Reliability.BasicReliabilityAndPerformance</li><li>Device.DevFund.Reliability.BasicSecurity</li><li>Device.DevFund.DriverFramework.KMDF.Reliability</li><li>Device.DevFund.DriverFramework.UMDF.Reliability</li></ul> |  
-| **Platforms**   | <ul><li>Windows 10 client editions (x86)</li><li>Windows 10, client editions (x64)</li><li>Windows Server 2016 (x64)</li><li>Windows 10, client editions (ARM64)</li><li>Windows 10, mobile edition (ARM)</li><li>Windows 10, mobile edition (ARM64)</li></ul> |
+| **Platforms**   | <ul><li>Windows 10, client editions (x86)</li><li>Windows 10, client editions (x64)</li><li>Windows Server 2016 (x64)</li><li>Windows 10, client editions (ARM64)</li><li>Windows 10, mobile edition (ARM)</li><li>Windows 10, mobile edition (ARM64)</li></ul> |
 | **Supported Releases** | <ul><li>Windows 10</li><li>Windows 10, version 1511</li><li>Windows 10, version 1607</li><li>Windows 10, version 1703</li><li>Windows 10, version 1709</li></ul> |
 |**Expected run time (in minutes)**| 15 |
 |**Category**| Scenario |

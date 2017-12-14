@@ -27,9 +27,11 @@ See the following sections for more information about what you can do to customi
 | [Customizations for mobile](mobile/windows-10-mobile-customizations-portal.md) | Learn about the customizations for mobile enterprise, which allow you to run mobile line-of-business applications on a platform that ensures that data is captured securely and efficiently. |
 | [Customizations for enterprise desktop](enterprise/enterprise-custom-portal.md) | Learn about the customizations available to you if you are providing a controlled and specialized experience on a Windows device running Windows 10 Enterprise. |
 | [Configure power settings](power-settings/configure-power-settings.md) | Learn about the power settings you can configure using the Windows provisioning framework. Each power setting topic includes the identification GUID, allowed values, meaning, and common usage scenarios for the setting. |
-| [Preinstalled apps](preinstall/preinstall-apps.md) | If you're a Windows OEM or mobile operator partner, find out how you can create partner apps that you can package and configure to install during the initial device setup process. While the user is going through the initial setup process, the preinstalled apps are installed in the background. |
+| [Preinstalled and exclusive apps](preinstall/preinstall-and-exclusive-apps.md) | If you're a Windows OEM or mobile operator partner, find out how you can create partner apps that you can package and configure to install during the initial device setup process. While the user is going through the initial setup process, the preinstalled apps are installed in the background. OEMs can also work with software developers to target OEM devices for apps to appear exclusively on, based on registry keys. |
 | [Change history for Customize](change-history-for-customize.md) | Read about what topics have been created, updated, or deleted for Windows 10, build 1709. |
 
-## <a href="" id="developer-audience-heading"></a>Developer audience
+## <a href="" id="developer-audience-heading"></a>Audience
 
-This section of the partner documentation is intended for OEMs, ODMs, IHVs, system builders, mobile operators, and IT administrators.
+This section of the partner documentation is intended for Original Equipment Manufacturers (OEMs), Original Design Manufacturers (ODMs), Independent Hardware Vendors (IHVs), system builders, mobile operators, and IT administrators.
+
+If you have purchased a Windows 10 device and would like to learn more about using its features, please see Microsoft's Windows support site online at [https://support.microsoft.com/en-us/products/windows?os=windows-10](https://support.microsoft.com/en-us/products/windows?os=windows-10).

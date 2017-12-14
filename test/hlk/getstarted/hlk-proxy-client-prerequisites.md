@@ -5,33 +5,36 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 2A63206F-2C05-46F8-9458-CF3E9AF33C7E
+author: sapaetsc
+ms.author: sapaetsc
+ms.date: 10/15/17
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # HLK Proxy Client Prerequisites
 
->[!NOTE]
->  A Battery Blank is required for Aries mobile testing in this release. For more information, see [Battery Blank Information Guide](battery-blank-information-guide.md).
-
 >[!WARNING]
 >  The Windows Hardware Lab Kit should only be installed on machines that are dedicated solely for testing purposes. Do not install any HLK component on a machine that is outside of a dedicated testing environment.
 
->[!IMPORTANT]
->  
-Controller setup will fail if .NET Framework 4.5 has not previously been installed. Be sure to install .NET Framework 4.5 from the following location prior to controller setup.
+Before you begin testing, make sure that the test environment meets the necessary requirements. 
 
--   <https://www.microsoft.com/net/download/framework>
+-   A Battery Blank is required for Aries mobile testing in this release. For more information, see [Battery Blank Information Guide](battery-blank-information-guide.md).
 
-Proxy setup will fail if .NET Framework 4.6 has not previously been installed. .NET 4.6 is included with Windows 10 but must be installed separately on other versions of Windows. You can download .NET 4.6 from the following location:
+-  Controller setup will fail if .NET Framework 4.5 has not previously been installed. Be sure to install .NET Framework 4.5 from the following location prior to controller setup.
+    <https://www.microsoft.com/net/download/framework>
 
--   <https://www.microsoft.com/net/download/framework>
+- Proxy setup will fail if .NET Framework 4.6 has not previously been installed. .NET 4.6 is included with Windows 10 but must be installed separately on other versions of Windows. You can download .NET 4.6 from the following location:
+    <https://www.microsoft.com/net/download/framework>
 
-32-bit SQL Server installations are not supported. You must uninstall any 32-bit SQL Server installation prior to installing the HLK.
+- 32-bit SQL Server installations are not supported. You must uninstall any 32-bit SQL Server installation prior to installing the HLK.
 
-SQL Server 2014 is not supported. You must uninstall any SQL Server 2014 installations prior to installing the HLK.
+- SQL Server 2014 is not supported. You must uninstall any SQL Server 2014 installations prior to installing the HLK.
 
- 
+## Testing Environment
 
-Before you begin testing, make sure that the test environment meets the necessary requirements. The Windows HLK Mobile testing environment is comprised of three components: an HLK test server, an HLK Proxy system, and one or more test systems.
+The Windows HLK Mobile testing environment is comprised of three components: an HLK test server, an HLK Proxy system, and one or more test systems.
 
 -   **HLK test server.** Often referred to as the controller, a test server has two parts: Windows HLK Controller and Windows HLK Studio. The Controller software is the engine that manages tests that are run on test systems. The Studio software is the management tool that lets you select and schedule tests against any test system connected to the test server. Controller and Studio are installed from the Windows HLK installation source. After installation, the test server contains separate installers to install a remote Windows HLK Studio, Window HLK Proxy Client and Windows HLK Client.
 
@@ -42,7 +45,6 @@ Before you begin testing, make sure that the test environment meets the necessar
 -   **Test system.** Also referred to as a client, each test system can have a different configuration that's appropriate for various testing scenarios, including different hardware, operating systems, service packs, and drivers. Each test system can be associated with only one Proxy system. No configuration is required for mobile test systems.
 
 ## <span id="deployment_scenarios"></span><span id="DEPLOYMENT_SCENARIOS"></span>Deployment scenarios
-
 
 There are two deployment scenarios for Windows HLK:
 
@@ -59,18 +61,18 @@ In addition, consider how you want to organize lab resources to best use the Win
 
 The device is connected via a USB cable, with the cable serving as the physical layer for establishing a virtualized IP connection (i.e., IP over USB). This enables devices without an Ethernet connection to present themselves to the controller as an IP endpoint.
 
-The Direct USB connection tethering method has known reliability and manageability issues that prevent it from being used in a large scale-lab environment. Flashing is supported over USB, but power cycling must be done manually. Furthermore, standard USB ports provide power in addition to a data connection, making simulating lower-power or battery-only testing impossible. Powered USB ports are also an issue for any tests with large power requirements as the test may drain the device's battery faster than it can be charged over USB.
+The Direct USB connection tethering method has known reliability and manageability issues that prevent it from being used in a large-scale lab environment. Flashing is supported over USB, but power cycling must be done manually. Furthermore, standard USB ports provide power in addition to a data connection, making simulating lower-power or battery-only testing impossible. Powered USB ports are also an issue for any tests with large power requirements as the test may drain the device's battery faster than it can be charged over USB.
 
 ### <span id="aries"></span><span id="ARIES"></span>Aries
 
-Aries is a hardware connectivity component developed at Microsoft and provides the bridge between a single device and a host wishing to control the device. The device is an Ethernet-to-USB dongle than enables the at-scale mobile testing capabilities of the HLK. Mobile test systems are connected to the IP network via a 1:1 Ethernet-to-USB dongle, with the USB side connecting directly to the device target. Aries allows for independently addressable devices that can reside anywhere on the network, without a need to always be attached to the same USB port on the same HLK controller.
+Aries is a hardware connectivity component developed at Microsoft and provides the bridge between a single device and a host wishing to control the device. The device is an Ethernet-to-USB dongle that enables the at-scale mobile testing capabilities of the HLK. Mobile test systems are connected to the IP network via a 1:1 Ethernet-to-USB dongle, with the USB side connecting directly to the device target. Aries allows for independently addressable devices that can reside anywhere on the network, without a need to always be attached to the same USB port on the same HLK controller.
 
 Hardware specification and acquisition details are available at <http://aries.msoon.com>.
 
 ## <span id="small_scale_testing"></span><span id="SMALL_SCALE_TESTING"></span>Small-Scale testing
 
 
-Small-Scale test infrastructures are labs testing 1-2 mobile devices per controller. The limiting factor with this setup is the number of unique USB host controllers on the Test Server. Only one device should be connect per host controller for best results.
+Small-Scale test infrastructures are labs testing 1 or 2 mobile devices per controller. The limiting factor with this setup is the number of unique USB host controllers on the Test Server. Only one device should be connected per host controller for best results.
 
 The following hardware is required per 2 devices under test on a single controller:
 
@@ -78,7 +80,7 @@ The following hardware is required per 2 devices under test on a single controll
 
 ### <span id="Setup"></span><span id="setup"></span><span id="SETUP"></span>Setup
 
-Testing 1-2 devices can be achieved over USB directly. The limitation with this connection type is that power cycling is not available and accurate power testing cannot be done as USB ports are generally powered.
+Testing 1 or 2 devices can be achieved over USB directly. The limitation with this connection type is that power cycling is not available and accurate power testing cannot be done as USB ports are generally powered.
 
 ![small scale testing diagram](images/hlk-proxy-client-small-scale-testing.png)
 
@@ -292,15 +294,3 @@ To manage the volume of devices in this scenario and handle the bandwidth, multi
 </tr>
 </tbody>
 </table>
-
- 
-
- 
-
- 
-
-
-
-
-
-

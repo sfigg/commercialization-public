@@ -5,6 +5,12 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 41337b97-c583-4fd5-9f57-d4167abb9e79
+author: sapaetsc
+ms.author: sapaetsc
+ms.date: 10/15/17
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # <span id="p_hlk_test.54a9c16d-c43c-4c8c-9ccb-cc471affe98b"></span>D3D AGP Texture (WoW64)

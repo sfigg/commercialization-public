@@ -5,6 +5,12 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 44b82c4a-5467-40a8-9a6f-f3943bca79df
+author: sapaetsc
+ms.author: sapaetsc
+ms.date: 10/15/17
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # <span id="p_hlk_test.8cb4f87c-d2a4-4d90-92a7-edd016ccdeac"></span>LoadGen Server Stress - Run Last - Reset Machine Policies

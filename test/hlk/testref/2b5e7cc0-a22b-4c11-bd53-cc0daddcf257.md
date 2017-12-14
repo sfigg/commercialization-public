@@ -5,6 +5,12 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: b393fcf2-e4a6-49c1-bb77-4401424764c2
+author: sapaetsc
+ms.author: sapaetsc
+ms.date: 10/15/17
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # <span id="p_hlk_test.2b5e7cc0-a22b-4c11-bd53-cc0daddcf257"></span>UCSI USB Operation Role command - Reset on PPM-Reset
@@ -16,7 +22,7 @@ Verifies that the data role requested using the UCSI Set USB Operation Role comm
 |||
 |---|---|
 | **Specifications**  | <ul><li>System.Fundamentals.SystemUSB.USBC.USBTypeCUCSI.USBTypeCUCSI</li></ul> |  
-| **Platforms**   | <ul><li>Windows 10 client editions (x86)</li><li>Windows 10, client editions (x64)</li><li>Windows 10, client editions (ARM64)</li><li>Windows Server 2016 (x64)</li><li>Windows 10, mobile edition (ARM)</li><li>Windows 10, mobile edition (ARM64)</li></ul> |
+| **Platforms**   | <ul><li>Windows 10, client editions (x86)</li><li>Windows 10, client editions (x64)</li><li>Windows 10, client editions (ARM64)</li><li>Windows Server 2016 (x64)</li><li>Windows 10, mobile edition (ARM)</li><li>Windows 10, mobile edition (ARM64)</li></ul> |
 | **Supported Releases** | <ul><li>Windows 10, version 1607</li><li>Windows 10, version 1703</li><li>Windows 10, version 1709</li></ul> |
 |**Expected run time (in minutes)**| 3 |
 |**Category**| Compatibility |

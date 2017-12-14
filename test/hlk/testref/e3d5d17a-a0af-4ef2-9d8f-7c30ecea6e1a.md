@@ -5,6 +5,12 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 9fbf580f-4515-46ec-905f-b785d774fd87
+author: sapaetsc
+ms.author: sapaetsc
+ms.date: 10/15/17
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # <span id="p_hlk_test.e3d5d17a-a0af-4ef2-9d8f-7c30ecea6e1a"></span>NVMe Deallocate Performance Test (LOGO)
@@ -16,7 +22,7 @@ This test evaluates the performance of the Deallocate command for Non-Volatile M
 |||
 |---|---|
 | **Specifications**  | <ul><li>Device.Storage.ControllerDrive.NVMe.BasicFunction</li></ul> |  
-| **Platforms**   | <ul><li>Windows 10 client editions (x86)</li><li>Windows 10, client editions (x64)</li><li>Windows Server 2016 (x64)</li></ul> |
+| **Platforms**   | <ul><li>Windows 10, client editions (x86)</li><li>Windows 10, client editions (x64)</li><li>Windows Server 2016 (x64)</li></ul> |
 | **Supported Releases** | <ul><li>Windows 10</li><li>Windows 10, version 1511</li><li>Windows 10, version 1607</li><li>Windows 10, version 1703</li><li>Windows 10, version 1709</li></ul> |
 |**Expected run time (in minutes)**| 2 |
 |**Category**| Benchmark |

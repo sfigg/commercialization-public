@@ -5,6 +5,12 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: e8a87fcd-b289-45b4-bdb8-1530ef8bf558
+author: sapaetsc
+ms.author: sapaetsc
+ms.date: 10/15/17
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # Wireless LAN (802.11) Testing Prerequisites
@@ -23,22 +29,6 @@ WLAN Windows HLK tests that use software-based access points are exclusively sup
  
 
 The tests to run depend on the capabilities of the device or system that you are testing. For devices that are running on Windows 7, the tests take 13 to 15 hours to run. For devices that are running on Windows 8, the tests take 30-32 hours to run. For devices that are running on Windows 8.1, tests take approximately 36-40 hours to run. These times represent fully passing results. Failures in any test or reboots due to crashes add additional time to the tests. These times can vary slightly by platform and performance of individual machines that are used in the tests.
-
-**In this topic:**
-
--   [Windows HLK Setup for WLAN Device Testing](#hcksetup)
-
--   [Prepare for Wireless LAN (802.11) Testing](#prepwlan)
-
--   [Run Wireless LAN (802.11) tests for Certification](#run)
-
--   [View Results and Log Files](#view)
-
--   [Create a Package](#pkg)
-
--   [Notes and Troubleshooting for RT-N66U firmware](#notests)
-
--   [AP Firmware Troubleshooting](#ap)
 
 ## <span id="hcksetup"></span><span id="HCKSETUP"></span>Windows HLK Setup for WLAN Device Testing
 

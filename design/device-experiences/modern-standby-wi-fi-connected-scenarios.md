@@ -39,20 +39,23 @@ We recommend that each network adapter in the system pass the following tests be
 
 ## Modern standby push mail
 
+Testing the push mail scenario ensures that the system can receive emails via the Mail app while the system is in modern standby. This allows users to receive the most up-to-date information immediately after the system resumes. 
 
-One of the most important Wi-Fi-connected scenarios is receiving push notifications for emails. Users can receive emails through the Mail app during modern standby so that they get the most up-to-date information with no delay after the system resumes from modern standby. The goal of testing the push-mail scenario is to make sure that the system can receive real-time notification for incoming emails while the system is in modern standby.
-
-We recommend that you create a Microsoft account for testing purposes. You can use this account to set up the system to receive emails through the Mail app. Make sure that the system is un-muted and put the system into modern standby. While the system is in modern standby, send an email to the account a few times. You should be able to hear the incoming notification sound as emails arrive while the screen is powered off. Wake up the system from modern standby and verify that all the emails are received. If Mail is configured to be on the lock screen, you should also see the badge updates occur just as the screen is powered on.
+We recommend that you create a Microsoft account for testing purposes. You can use this account to set up the system to receive emails through the Mail app. Be sure that the system is running on AC power, then put it into modern standby. While the system is in modern standby, send an email to the account a few times. Wake up the system from modern standby and verify that all the emails are received. If Mail is configured to be on the lock screen, you should also see the badge updates occur just as the screen is powered on.
 
 -   **Test area:** Push mail during modern standby.
--   **Purpose:** Ensure that push-mail and associated audio notifications are functional during modern standby.
+-   **Purpose:** Ensure that push mail is functional during modern standby.
 -   **System configuration:**
     -   Factory image is installed on the system.
     -   All drivers are loaded in Device Manager.
-    -   Factory Windows Store apps are installed.
-    -   System is running on battery power.
+    -   Factory Microsoft Store apps are installed.
+    -   System is running on AC power.
     -   System is connected to a Wi-Fi access point (AP) that has Internet connectivity.
     -   Mail app is configured with a test Microsoft account.
+    -   In Background Apps, Mail is set to **On**.
+    -   In Battery Usage:
+        - Mail is set to **Allow the app to run background tasks**.
+        - Mail is not set to **Let Windows decide...** or  **Reduce the work...**.
     -   Email operation is first validated with the display on.
 
 <table>
@@ -103,7 +106,7 @@ The instant messaging and video chat scenarios are enumerated in the following t
 -   **System configuration:**
     -   Factory image installed on the system.
     -   All drivers loaded in Device Manager.
-    -   Factory Windows Store apps are installed.
+    -   Factory Microsoft Store apps are installed.
     -   System is running on battery power.
     -   System is connected to a Wi-Fi AP with Internet connectivity.
     -   Skype app configured with test Microsoft account.
@@ -162,7 +165,7 @@ On resume from modern standby, you can run a SleepStudy report to view the time 
 -   System configuration:
     -   Factory image installed on the system.
     -   All drivers loaded in Device Manager.
-    -   Factory Windows Store apps are installed.
+    -   Factory Microsoft Store apps are installed.
     -   System is running on battery power.
     -   System is configured with a test Microsoft account for inbox Video app access.
 

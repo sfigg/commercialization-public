@@ -23,7 +23,7 @@ This customization supports: **per-IMSI** value, **per-device** value.
 <a href="" id="instructions-"></a>**Instructions:**  
 1.  Create a customization answer file using the contents shown in the following code sample.
 
-    ```
+    ```XML
     <?xml version="1.0" encoding="utf-8" ?>  
     <ImageCustomizations xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate"  
                          Name="CGSettings"  
@@ -77,8 +77,8 @@ This customization supports: **per-IMSI** value, **per-device** value.
 
     -->
 
-    <!-- Use for the per-device case.   
-      <Static>  
+    <!-- Use for the per-device case -->   
+      <Static>
 
         <Settings Path="CellCore/PerDevice/CellUX">  
           <Setting Name="ShowManualAvoidance" Value="" />  
@@ -110,8 +110,6 @@ This customization supports: **per-IMSI** value, **per-device** value.
         </Settings>  
 
       </Static>
-
-    -->
 
     </ImageCustomizations>
     ```
@@ -218,3 +216,9 @@ Work with your mobile operator to determine the setting requirements for the net
 1.  Flash the build containing this customization to a C+G dual SIM phone.
 
 2.  Depending on the values you specified for the C+G settings, verify that the behavior matches the setting value description.
+
+## Related topics
+
+[Prepare for Windows mobile development](https://docs.microsoft.com/en-us/windows-hardware/manufacture/mobile/preparing-for-windows-mobile-development)
+
+[Customization answer file overview](https://docs.microsoft.com/en-us/windows-hardware/customize/mobile/mcsf/customization-answer-file)

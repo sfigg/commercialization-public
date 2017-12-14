@@ -5,6 +5,12 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: ee160740-9ee7-471c-8147-d771ebec69af
+author: sapaetsc
+ms.author: sapaetsc
+ms.date: 10/15/17
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # <span id="p_hlk_test.f0ee7dea-aafb-4b97-b6bb-367b46eee49d"></span>MITTI2C PerfWrite
@@ -16,7 +22,7 @@ This test verifies the SPB of controller driver and I2C bus. See https://msdn.mi
 |||
 |---|---|
 | **Specifications**  | <ul><li>Device.BusController.I2C.SPBWrite</li></ul> |  
-| **Platforms**   | <ul><li>Windows 10 client editions (x86)</li><li>Windows 10, client editions (x64)</li></ul> |
+| **Platforms**   | <ul><li>Windows 10, client editions (x86)</li><li>Windows 10, client editions (x64)</li></ul> |
 | **Supported Releases** | <ul><li>Windows 10</li><li>Windows 10, version 1511</li><li>Windows 10, version 1607</li><li>Windows 10, version 1703</li><li>Windows 10, version 1709</li></ul> |
 |**Expected run time (in minutes)**| 20 |
 |**Category**| Development |

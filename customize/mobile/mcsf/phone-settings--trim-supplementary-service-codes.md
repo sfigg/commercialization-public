@@ -1,5 +1,5 @@
 ---
-title: Phone settings Trim supplementary service codes
+title: Trim supplementary service codes
 description: OEMs can trim supplementary service codes to ensure network compatibility.
 MSHAttr:
 - 'PreferredSiteName:MSDN'
@@ -12,7 +12,7 @@ ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-# Phone settings: Trim supplementary service codes
+# Trim supplementary service codes
 
 
 OEMs can trim supplementary service codes to ensure network compatibility. When a code is sent using a USSD string in a \#\#code\# format, `EnableSupplementaryServiceEraseToDeactivateOverride` trims the USSD string so \#code\# is sent. This customization applies only to codes that use the \#\#code\# format.
@@ -23,7 +23,7 @@ This customization supports: **per-IMSI** value
 <a href="" id="instructions-"></a>**Instructions:**  
 1.  Create a customization answer file using the contents shown in the following code sample.
 
-    ```
+    ```XML
     <?xml version="1.0" encoding="utf-8" ?>  
     <ImageCustomizations xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate"  
                          Name=EnableSupplementaryServiceEraseToDeactivateOverride" 
@@ -108,12 +108,8 @@ This customization supports: **per-IMSI** value
 
 3.  Verify that conditional call forwarding has been disabled.
 
- 
+## Related topics
 
- 
+[Prepare for Windows mobile development](https://docs.microsoft.com/en-us/windows-hardware/manufacture/mobile/preparing-for-windows-mobile-development)
 
-
-
-
-
-
+[Customization answer file overview](https://docs.microsoft.com/en-us/windows-hardware/customize/mobile/mcsf/customization-answer-file)

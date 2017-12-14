@@ -5,6 +5,12 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 5e2f2d0d-afd5-4225-b519-de6ae1dbfdce
+author: sapaetsc
+ms.author: sapaetsc
+ms.date: 10/15/17
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # <span id="p_hlk_test.2cbebf27-e4bd-4b85-bb1a-3a7f213dde97"></span>TPM 1.2 TCG OS Interface Server Test

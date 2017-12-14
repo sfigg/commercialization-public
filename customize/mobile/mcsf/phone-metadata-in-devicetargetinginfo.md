@@ -11,37 +11,33 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
-# Phone metadata in DeviceTargetingInfo
-
+# Set phone metadata in DeviceTargetingInfo
 
 Partners are required to set certain device metadata, including hardware, support, and OEM and MO information.
 
 Partners are required to set the following information:
 
--   OEM and mobile operator information, used for display strings in the UI, device update, and connecting to the Microsoft Store.
+* OEM and mobile operator information, used for display strings in the UI, device update, and connecting to the Microsoft Store.
+* Hardware component versions and software versions, used for targeting updates to devices and for user support.
+* A required phone number and optional website for user support, which appears in the **About** screen in **Settings**.
 
--   Hardware component versions and software versions, used for targeting updates to devices and for user support.
+<a href="" id="constraints-"></a>**Constraints:**
 
--   A required phone number and optional website for user support, which appears in the **About** screen in **Settings**.
+* **ImageTimeOnly** – For those settings to put directly into the registry hive.
+* **FirstVariationOnly** – For those settings that can be configured at runtime and potentially based on SIM value.
 
-<a href="" id="constraints-"></a>**Constraints:**  
--   **ImageTimeOnly** – For those settings to put directly into the registry hive.
+## Instructions
 
--   **FirstVariationOnly** – For those settings that can be configured at runtime and potentially based on SIM value.
+1. Create a customization answer file using the contents shown in the following code sample.
 
-<a href="" id="instructions-"></a>**Instructions:**  
-1.  Create a customization answer file using the contents shown in the following code sample.
-
-    ```
-    <?xml version="1.0" encoding="utf-8" ?>  
-    <ImageCustomizations xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate"  
-                         Name="PhoneMetadataDeviceTargetingInfo"  
-                         Description="Use to set phone metadata including the phone model name, OEM and mobile operator name, hardware and software versions, and so on."  
-                         Owner=""  
-                         OwnerType="OEM"> 
-      
-      <!-- Define the Targets for the Variant --> 
+    ```XML
+    <?xml version="1.0" encoding="utf-8" ?>
+    <ImageCustomizations xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate"
+                         Name="PhoneMetadataDeviceTargetingInfo"
+                         Description="Use to set phone metadata including the phone model name, OEM and mobile operator name, hardware and software versions, and so on."
+                         Owner=""
+                         OwnerType="OEM">
+      <!-- Define the Targets for the Variant -->
       <Targets>
          <Target Id="">
             <TargetState>
@@ -50,7 +46,6 @@ Partners are required to set the following information:
             </TargetState>
          </Target>
       </Targets>
-      
       <Static>
         <Settings Path="Multivariant">
           <Setting Name="Enable" Value="1" />
@@ -59,49 +54,45 @@ Partners are required to set the following information:
           <Setting Name="Enable" Value="0" />
         </Settings>
       </Static>
-
-      <Static>  
+      <Static>
         <!-- These settings are ImageTimeOnly and will be put directly into the registry hive -->
-        <Settings Path="DeviceInfo/Static">       
-          <Setting Name="PhoneManufacturer" Value="" />    
-          <Setting Name="PhoneManufacturerDisplayName" Value="" /> 
-          <Setting Name="PhoneROMVersion" Value="" /> 
-          <Setting Name="PhoneHardwareRevision" Value="" />    
-          <Setting Name="PhoneSOCVersion" Value="" /> 
-          <Setting Name="PhoneFirmwareRevision" Value="" />   
-          <Setting Name="PhoneRadioHardwareRevision" Value="" />    
-          <Setting Name="PhoneRadioSoftwareRevision" Value="" /> 
-          <Setting Name="PhoneBootLoaderVersion" Value="" />    
-          <Setting Name="PhoneROMLanguage" Value="" /> 
-          <Setting Name="PhoneHardwareVariant" Value="" /> 
-       </Settings>  
+        <Settings Path="DeviceInfo/Static">
+          <Setting Name="PhoneManufacturer" Value="" />
+          <Setting Name="PhoneManufacturerDisplayName" Value="" />
+          <Setting Name="PhoneROMVersion" Value="" />
+          <Setting Name="PhoneHardwareRevision" Value="" />
+          <Setting Name="PhoneSOCVersion" Value="" />
+          <Setting Name="PhoneFirmwareRevision" Value="" />
+          <Setting Name="PhoneRadioHardwareRevision" Value="" />
+          <Setting Name="PhoneRadioSoftwareRevision" Value="" />
+          <Setting Name="PhoneBootLoaderVersion" Value="" />
+          <Setting Name="PhoneROMLanguage" Value="" />
+          <Setting Name="PhoneHardwareVariant" Value="" />
+       </Settings>
       </Static>
-
       <!-- Specify the Variant -->
-      <Variant Name=""> 
+      <Variant Name="">
         <TargetRefs>
-          <TargetRef Id="" /> 
+          <TargetRef Id="" />
         </TargetRefs>
 
         <!-- These settings are FirstVariationOnly and can be configured at runtime potentially based on SIM value --> 
         <Settings Path="DeviceInfo/Variant">
-          <Setting Name="PhoneMobileOperatorName" Value="" /> 
-          <Setting Name="PhoneManufacturerModelName" Value="" />    
-          <Setting Name="PhoneMobileOperatorDisplayName" Value="" /> 
-          <Setting Name="PhoneSupportPhoneNumber" Value="" />    
-          <Setting Name="PhoneSupportLink" Value="" /> 
-          <Setting Name="PhoneOEMSupportLink" Value="" />    
-          <Setting Name="PhoneModelName" Value="" /> 
+          <Setting Name="PhoneMobileOperatorName" Value="" />
+          <Setting Name="PhoneManufacturerModelName" Value="" />
+          <Setting Name="PhoneMobileOperatorDisplayName" Value="" />
+          <Setting Name="PhoneSupportPhoneNumber" Value="" />
+          <Setting Name="PhoneSupportLink" Value="" />
+          <Setting Name="PhoneOEMSupportLink" Value="" />
+          <Setting Name="PhoneModelName" Value="" />
           <Setting Name="RoamingSupportPhoneNumber" Value="" />
-       </Settings> 
+       </Settings>
       </Variant>
-
     </ImageCustomizations>
     ```
 
-2.  Specify an `Owner` and configure the targets and conditions for the variant.
-
-3.  Specify a value for each of the following settings.
+1. Specify an `Owner` and configure the targets and conditions for the variant.
+1. Specify a value for each of the following settings.
 
     Settings that are **ImageTimeOnly**:
 
@@ -175,7 +166,6 @@ Partners are required to set the following information:
     <p>OEMs creating a runtime configuration image cannot span across multiple <strong>PhoneHardwareVariant</strong>s.</p>
     </div>
     <div>
-     
     </div></td>
     </tr>
     </tbody>
@@ -212,7 +202,6 @@ Partners are required to set the following information:
     <p>This string is returned by the <strong>DeviceStatus.DeviceName</strong> property. For more information, see the SDK Documentation.</p>
     </div>
     <div>
-     
     </div>
     <p>Microsoft recommends using a different value for <strong>PhoneManufacturerModelname</strong> and another value for <strong>PhoneModelName</strong>. <strong>PhoneManufacturerModelname</strong> should be as unique as possible for the particular device revision or variant.</p>
     <p>The <strong>PhoneManufacturer</strong>, <strong>PhoneManufacturerModelName</strong>, and <strong>PhoneMobileOperatorName</strong> should create a unique Phone-Operator-Pairing (POP). </p></td>
@@ -256,11 +245,14 @@ Partners are required to set the following information:
     </tbody>
     </table>
 
-     
+## Testing steps
 
-<a href="" id="testing-steps-"></a>**Testing Steps:**  
-1.  Flash the build containing this customization to a phone.
+1. Flash the build containing this customization to a phone.
+1. Go to the **About** screen in **Settings**. Tap on the **More Info** button.
+1. Verify that the information on this screen matches the values you specified.
 
-2.  Go to the **About** screen in **Settings**. Tap on the **More Info** button.
+## Related topics
 
-3.  Verify that the information on this screen matches the values you specified.
+[Prepare for Windows mobile development](https://docs.microsoft.com/en-us/windows-hardware/manufacture/mobile/preparing-for-windows-mobile-development)
+
+[Customization answer file overview](https://docs.microsoft.com/en-us/windows-hardware/customize/mobile/mcsf/customization-answer-file)

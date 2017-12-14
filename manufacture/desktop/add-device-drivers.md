@@ -29,17 +29,20 @@ To make the changes to a Windows image, you'll mount the image contents into a t
 1.  Click **Start**, and type **deployment**. Right-click **Deployment and Imaging Tools Environment** and then select **Run as administrator**.
 
 2.  Make a backup of the image file:
-```
-copy "C:\Images\Win10_x64\sources\install.wim" C:\Images\install-backup.wim
-```
+
+    ```
+    copy "C:\Images\Win10_x64\sources\install.wim" C:\Images\install-backup.wim
+    ```
 
 **Step 2: Mount the Windows image file**
 
 Create a temporary folder to mount the files, and mount the image into it: 
+
 ```
 md C:\mount\windows
 Dism /Mount-Image /ImageFile:"C:\Images\install.wim" /Index:1 /MountDir:"C:\mount\windows" /Optimize
 ```
+
 Where /Index:1 refers to the image you want to mount. 
 For the Windows 10 Home/Pro edition, use /Index:2 to select the Home edition.
 
@@ -114,7 +117,7 @@ Use the steps from [Lab 2: Deploy Windows using a script](deploy-windows-with-a-
 1.  Copy the image file to the storage drive.
 2.  [Boot the reference device to Windows PE using the Windows PE USB key](install-windows-pe-sxs.md).
 3.  Find the drive letter of the storage drive (`diskpart, list volume, exit`).
-4.  Apply the image: `D:\ApplyImage.bat D:\Images\install.wim`.
+4.  Apply the image: `D:\Deployment\ApplyImage.bat D:\Images\install.wim`.
 5.  Disconnect the drives, then reboot (`exit`).
 
 **Step 6: Verify drivers**
