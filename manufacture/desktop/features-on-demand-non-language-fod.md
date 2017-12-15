@@ -154,8 +154,12 @@ This Feature on Demand is a mail, contacts, and calendar sync component. Not inc
 
 This Feature on Demand adds Windows Media Player to a Windows PC, and is installed by default on Windows 10. Because it is installed by default, the Cab for this Feature on Demand is not distributed on the FOD ISO.
 
-**Recommendation:** 
-
 | Name | Capability Name |Cab Name |                                            CAB Size | Install size |
 |-----------|-----------------------------------|------------|--------------------------| --- | 
 | Windows Media Player | Media.WindowsMediaPlayer~~~~0.0.12.0 | No Cab available. | NA  | 68.47 MB |
+
+## Related topics
+
+[Features on Demand](features-on-demand-v2--capabilities.md). 
+
+[Language and region Features on Demand](features-on-demand-language-fod.md)
