@@ -85,7 +85,7 @@ This Feature on Demand enables Mixed Reality (MR) devices to be used on a PC. If
 
 **Note:** Make sure to add this feature on demand prior to adding an update (hotfix, general distribution release [GDR], or service pack).
 
-**Recommendation:** Recommended for MR-Ready and Compatible PCs, otherwise do not preinstall.
+**Recommendation:** Recommended for MR-Ready badged PCs, otherwise do not preinstall.
 
 | Name | Capability Name |Cab Name |                                            CAB Size | Install size |
 |-----------|-----------------------------------|------------|--------------------------| --- | 
