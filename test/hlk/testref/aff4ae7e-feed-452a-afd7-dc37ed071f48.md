@@ -32,7 +32,7 @@ This test exercises the various receive side scaling OIDs. The miniport driver s
 |||
 |---|---|
 | **Specifications**  | <ul><li>Device.Network.LAN.RSS.RSS</li><li>Device.Network.LAN.RSS.SetHashFunctionTypeAndValue</li><li>Device.Network.LAN.RSS.SupportIndirectionTablesSizes</li><li>Device.Network.LAN.RSS.SupportToeplitzHashFunction</li><li>Device.Network.LAN.RSS.SupportUpdatesToRSSInfo</li></ul> |  
-| **Platforms**   | <ul><li>Windows 10 client editions (x86)</li><li>Windows 10, client editions (x64)</li><li>Windows Server 2016 (x64)</li></ul> |
+| **Platforms**   | <ul><li>Windows 10, client editions (x86)</li><li>Windows 10, client editions (x64)</li><li>Windows Server 2016 (x64)</li></ul> |
 | **Supported Releases** | <ul><li>Windows 10</li><li>Windows 10, version 1511</li><li>Windows 10, version 1607</li><li>Windows 10, version 1703</li><li>Windows 10, version 1709</li></ul> |
 |**Expected run time (in minutes)**| 5 |
 |**Category**| Development |

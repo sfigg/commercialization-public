@@ -1368,7 +1368,7 @@
     },
     {   
         "source_path": "customize/desktop/unattend/microsoft-windows-wlansvc-wlanplatformleveldevicereset.md", 
-        "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-wlansvc-wlanplatformleveldeviceresetsupported.md", 
+        "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-wlansvc-wlanplatformleveldeviceresetsupported", 
         "redirect_document_id": true
     },
     {   
@@ -1433,7 +1433,7 @@
     },
     {   
         "source_path": "customize/desktop/unattend/microsoft-windows-setup-windowsdeploymentservices-imageselection-installtodiskid.md", 
-        "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-setup-windowsdeploymentservices-imageselection-installto-diskid.md", 
+        "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-setup-windowsdeploymentservices-imageselection-installto-diskid", 
         "redirect_document_id": true
     },
     {   
@@ -1443,12 +1443,12 @@
     },
     {   
         "source_path": "customize/desktop/unattend/microsoft-windows-ie-internetexplorer-feedlistfeed-item-feedtitle.md", 
-        "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-ie-internetexplorer-feedlistfeed-feeditem-feedtitle", 
+        "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-ie-internetexplorer-feedlist-feeditem-feedtitle", 
         "redirect_document_id": true
     },
     {   
         "source_path": "customize/desktop/unattend/microsoft-windows-ie-internetexplorer-feedlistfeed-item-feedurl.md", 
-        "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-ie-internetexplorer-feedlistfeed-feeditem-feedurl", 
+        "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-ie-internetexplorer-feedlist-feeditem-feedurl", 
         "redirect_document_id": true
     },
     {   
@@ -1503,7 +1503,7 @@
     },
     {   
         "source_path": "customize/desktop/unattend/microsoft-windows-fax-service-fax-unattend-tsid.md", 
-        "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-fax-service-faxunattend-tsids", 
+        "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-fax-service-faxunattend-tsid", 
         "redirect_document_id": true
     },
     {   
