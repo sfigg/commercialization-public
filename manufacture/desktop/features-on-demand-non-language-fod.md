@@ -156,7 +156,7 @@ This Feature on Demand adds Windows Media Player to a Windows PC, and is install
 
 | Name | Capability Name |Cab Name |                                            CAB Size | Install size |
 |-----------|-----------------------------------|------------|--------------------------| --- | 
-| Windows Media Player | Media.WindowsMediaPlayer~~~~0.0.12.0 | No Cab available. | NA  | 68.47 MB |
+| Windows Media Player | Media.WindowsMediaPlayer~~~~0.0.12.0 | No Cab available | NA  | 68.47 MB |
 
 ## Related topics
 
