@@ -1,6 +1,6 @@
 ---
 author: themar
-Description: 'Features on Demand v2 (Capabilities), introduced in Windows 10, are Windows feature packages that can be added at any time. This page describes non-language FoDs.'
+Description: 'Features on Demand v2 (Capabilities), introduced in Windows 10, are Windows feature packages that can be added at any time. This page describes non-language FODs.'
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Available features on demand'
 ms.author: themar
@@ -131,7 +131,7 @@ These Features on Demand are for devices running Windows Server as a Print Serve
 
 ### Retail Demo Experience (RDX)
 
-These Features on Demand add the retail demo package to a device, for use in retail stores. These features are available as .cab packages on the FoD ISO.
+These Features on Demand add the retail demo package to a device, for use in retail stores. These features are available as .cab packages on the FOD ISO.
 
 **Recommendation:** Only preinstall on devices that are sold to retail stores for demonstration. Not including this Feature on Demand will cause no retail demo presentation to be available on a device.
 

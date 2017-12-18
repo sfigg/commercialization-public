@@ -14,11 +14,11 @@ ms.technology: windows-oem
 # Features On Demand
 
 
-Features on Demand (FoDs) are Windows feature packages that can be added at any time. Common features include language resources like handwriting recognition or the .NET Framework (.NetFx3).
+Features on Demand (FODs) are Windows feature packages that can be added at any time. Common features include language resources like handwriting recognition or the .NET Framework (.NetFx3).
 
 When the PC needs a new feature, it can request the feature package from Windows Update.
 
-OEMs can also preinstall FoDs into a Windows image in two different ways. FoDs can be added with DISM, using the `/add-capability` command-line option. This method downloads features from Windows Update and adds them to the image. Alternatively, FoD .cab packages, available on the FoD ISOs, can be added to a Windows image by using DISM with the `/add-package` command-line option. This method doesn't require internet connectivity, as the packages are available offline.
+OEMs can also preinstall FODs into a Windows image in two different ways. FODs can be added with DISM, using the `/add-capability` command-line option. This method downloads features from Windows Update and adds them to the image. Alternatively, FOD .cab packages, available on the FOD ISOs, can be added to a Windows image by using DISM with the `/add-package` command-line option. This method doesn't require internet connectivity, as the packages are available offline.
 
 Unlike previous feature packs, Features on Demand can be applicable to multiple Windows builds, and can be added using DISM without knowing the build number. Always use Features on Demand that match the architecture of the operating system. Adding Features on Demand of the wrong architecture might not return an error immediately, but will likely cause functionality issues in the operating system. 
 

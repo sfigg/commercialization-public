@@ -1,6 +1,6 @@
 ---
 author: themar
-Description: 'Features on Demand v2 (Capabilities), introduced in Windows 10, are Windows feature packages that can be added at any time. This topic covers language and region-related FoDs.'
+Description: 'Features on Demand v2 (Capabilities), introduced in Windows 10, are Windows feature packages that can be added at any time. This topic covers language and region-related FODs.'
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Language and region Features on Demand'
 ms.author: themar
@@ -40,8 +40,8 @@ Language Features on Demand are available in seven types:
 | Fonts     | `Microsoft-Windows-LanguageFeatures-Fonts-Thai-Package.cab` | `Language.Fonts.Thai~~~und-THAI~0.0.1.0` | Fonts.<br></br><p>**Recommendation:** If a PC will be sold to a certain region, install that region's Font (e.g., th-TH should be preinstalled on devices shipping to regions with Thai language). Example, th-TH requires the Thai font pack.<br></br><p>See [font capabilities](#fonts) for available font capabilities. |
 | Optical character recognition | `Microsoft-Windows-LanguageFeatures-OCR-fr-fr-Package.cab` | `Language.OCR~~~fr-FR~0.0.1.0` | Basic | Recognizes and outputs text in an image.<br></br><p>**Recommendation:** Only install on devices required to be OCR-capable. Most devices don't need this capability preinstalled.<br></br><p>These have a dependency on the basic component of the same language. |
 | Handwriting recognition | `Microsoft-Windows-LanguageFeatures-Handwriting-fr-fr-Package.cab` | `Language.Handwriting~~~fr-FR~0.0.1.0`   | Enables handwriting recognition for devices with pen input.<br></br><p>**Recommendation:** Preinstall for the device’s target language on any device with a touch- or pen-capable screen. <br></br><p>These have a dependency on ghe basic component of the same language.|
-| Text-to-speech | `Microsoft-Windows-LanguageFeatures-TextToSpeech-fr-fr-Package.cab`| `Language.TextToSpeech~~~fr-FR~0.0.1.0`  | Enables text to speech, used by Cortana and Narrator.<br></br><p>**Recommendation:** Don't install this capability by default. This FoD installs one language by default, and the user will select and download additional languages as needed.<br></br><p>These have a dependency on the basic component of the same language. |
-| Speech recognition | `Microsoft-Windows-LanguageFeatures-Speech-fr-fr-Package.cab` | `Language.Speech~~~fr-FR~0.0.1.0` |  Recognizes voice input, used by Cortana and Windows Speech Recognition.<br></br><p>**Recommendation:** Don't install this capability by default. This FoD installs one language by default, and the user will select and download additional languages as needed.<br></br><p>These have dependencies of the basic and text-to-speech components of the same language. |
+| Text-to-speech | `Microsoft-Windows-LanguageFeatures-TextToSpeech-fr-fr-Package.cab`| `Language.TextToSpeech~~~fr-FR~0.0.1.0`  | Enables text to speech, used by Cortana and Narrator.<br></br><p>**Recommendation:** Don't install this capability by default. This FOD installs one language by default, and the user will select and download additional languages as needed.<br></br><p>These have a dependency on the basic component of the same language. |
+| Speech recognition | `Microsoft-Windows-LanguageFeatures-Speech-fr-fr-Package.cab` | `Language.Speech~~~fr-FR~0.0.1.0` |  Recognizes voice input, used by Cortana and Windows Speech Recognition.<br></br><p>**Recommendation:** Don't install this capability by default. This FOD installs one language by default, and the user will select and download additional languages as needed.<br></br><p>These have dependencies of the basic and text-to-speech components of the same language. |
 
 
 
