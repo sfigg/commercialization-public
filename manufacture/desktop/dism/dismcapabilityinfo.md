@@ -2,7 +2,7 @@
 title: DismCapabilityInfo structure
 description: Describes information about a capability.
 ms.assetid: 05A13309-ADDD-4AEA-B8E2-D87D05541735
-keywords: ["DismCapabilityInfo structure"]
+keywords: DismCapabilityInfo structure
 ms.author: themar
 ms.date: 10/25/2017
 ms.topic: article
@@ -18,12 +18,7 @@ ms.technology: windows-oem
 Describes information about a capability.
 
 Syntax
-ms.author: themar
-ms.date: 10/25/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
-------
+---
 
 ```ManagedCPlusPlus
 typedef struct _DismCapabilityInfo {
@@ -37,12 +32,7 @@ typedef struct _DismCapabilityInfo {
 ```
 
 Members
-ms.author: themar
-ms.date: 10/25/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
--------
+----
 
 **Name**  
 The name of the capability.
@@ -85,12 +75,7 @@ The install size of the capability in bytes.
  
 
 Requirements
-ms.author: themar
-ms.date: 10/25/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
-------------
+---------
 
 <table>
 <colgroup>

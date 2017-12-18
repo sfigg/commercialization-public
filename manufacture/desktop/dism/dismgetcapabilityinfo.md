@@ -2,7 +2,7 @@
 title: DismGetCapabilityInfo function
 description: Gets DISM capabilities.
 ms.assetid: 17ABB80F-932A-42C3-BD2E-5E2CF121536B
-keywords: ["DismGetCapabilityInfo function"]
+keywords: DismGetCapabilityInfo function
 ms.author: themar
 ms.date: 10/25/2017
 ms.topic: article
@@ -18,12 +18,7 @@ ms.technology: windows-oem
 Gets DISM capabilities.
 
 Syntax
-ms.author: themar
-ms.date: 10/25/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
-------
+---
 
 ```ManagedCPlusPlus
 HRESULT WINAPI DismGetCapabilityInfo(
@@ -34,12 +29,7 @@ HRESULT WINAPI DismGetCapabilityInfo(
 ```
 
 Parameters
-ms.author: themar
-ms.date: 10/25/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
-----------
+-------
 
 *Session* \[in\]  
 A valid [DismSession](dismsession.md). The DismSession must be associated with an image. You can associate a session with an image by using the [**DismOpenSession**](dismopensession-function.md).
@@ -51,12 +41,7 @@ The name of the specified capability.
 Pointer that will receive the info of capability.
 
 Return value
-ms.author: themar
-ms.date: 10/25/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
-------------
+---------
 
 Returns `S_OK` on success.
 
@@ -97,12 +82,7 @@ hr = DismGetCapabilityInfo(Session, L”Language.Basic~~~en-US~0.0.1.0”, &amp;
  
 
 Requirements
-ms.author: themar
-ms.date: 10/25/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
-------------
+---------
 
 <table>
 <colgroup>

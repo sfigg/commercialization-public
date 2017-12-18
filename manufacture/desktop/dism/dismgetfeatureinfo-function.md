@@ -2,7 +2,7 @@
 title: DismGetFeatureInfo function
 description: Gets detailed info from for the specified feature.
 ms.assetid: 35514a46-e3e8-4d88-b151-527a855c8e89
-keywords: ["DismGetFeatureInfo function"]
+keywords: DismGetFeatureInfo function
 ms.author: themar
 ms.date: 10/25/2017
 ms.topic: article
@@ -18,12 +18,7 @@ ms.technology: windows-oem
 Gets detailed info from for the specified feature.
 
 Syntax
-ms.author: themar
-ms.date: 10/25/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
-------
+---
 
 ```ManagedCPlusPlus
 HRESULT WINAPI DismGetFeatureInfo(
@@ -36,12 +31,7 @@ HRESULT WINAPI DismGetFeatureInfo(
 ```
 
 Parameters
-ms.author: themar
-ms.date: 10/25/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
-----------
+-------
 
 *Session* \[in\]  
 A valid [DismSession](dismsession.md). The DismSession must be associated with an image. You can associate a session with an image by using the [**DismOpenSession**](dismopensession-function.md).
@@ -91,12 +81,7 @@ Optional. A valid [DismPackageIdentifier](dismpackageidentifier-enumeration.md) 
 A pointer to the address of an array of [**DismFeatureInfo**](dismfeatureinfo-structure.md) structures.
 
 Return value
-ms.author: themar
-ms.date: 10/25/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
-------------
+---------
 
 Returns `S_OK` on success.
 
@@ -137,12 +122,7 @@ hr = DismGetFeatureInfo(Session, "Xps-Foundation-Xps-Viewer", NULL, NULL, &amp;F
  
 
 Requirements
-ms.author: themar
-ms.date: 10/25/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
-------------
+---------
 
 <table>
 <colgroup>

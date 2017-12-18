@@ -2,7 +2,7 @@
 title: DismDriverSignature enumeration
 description: Specifies the signature status of a driver.
 ms.assetid: f93b49b6-e561-4155-8de4-5e4b8b561c6d
-keywords: ["DismDriverSignature enumeration"]
+keywords: DismDriverSignature enumeration
 ms.author: themar
 ms.date: 10/25/2017
 ms.topic: article
@@ -16,12 +16,7 @@ ms.technology: windows-oem
 Specifies the signature status of a driver.
 
 Syntax
-ms.author: themar
-ms.date: 10/25/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
-------
+---
 
 ```ManagedCPlusPlus
 typedef enum DismDriverSignature { 
@@ -32,12 +27,7 @@ typedef enum DismDriverSignature {
 ```
 
 Constants
-ms.author: themar
-ms.date: 10/25/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
----------
+------
 
 <span id="DismDriverSignatureUnknown"></span><span id="dismdriversignatureunknown"></span><span id="DISMDRIVERSIGNATUREUNKNOWN"></span>**DismDriverSignatureUnknown**  
 The signature status of the driver is unknown. DISM only checks for a valid signature for boot-critical drivers.
@@ -71,12 +61,7 @@ The driver is signed.
  
 
 Requirements
-ms.author: themar
-ms.date: 10/25/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
-------------
+---------
 
 <table>
 <colgroup>

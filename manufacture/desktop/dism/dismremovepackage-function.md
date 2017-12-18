@@ -2,7 +2,7 @@
 title: DismRemovePackage function
 description: Removes a package from an image.
 ms.assetid: 23cfe5ee-0f47-4ebf-b956-d584420a98c6
-keywords: ["DismRemovePackage function"]
+keywords: DismRemovePackage function
 ms.author: themar
 ms.date: 10/25/2017
 ms.topic: article
@@ -18,12 +18,7 @@ ms.technology: windows-oem
 Removes a package from an image.
 
 Syntax
-ms.author: themar
-ms.date: 10/25/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
-------
+---
 
 ```ManagedCPlusPlus
 HRESULT WINAPI DismRemovePackage(
@@ -37,12 +32,7 @@ HRESULT WINAPI DismRemovePackage(
 ```
 
 Parameters
-ms.author: themar
-ms.date: 10/25/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
-----------
+-------
 
 *Session* \[in\]  
 A valid [DismSession](dismsession.md). The DismSession must be associated with an image. You can associate a session with an image by using the [**DismOpenSession**](dismopensession-function.md).
@@ -95,12 +85,7 @@ Optional. A pointer to a client-defined [DismProgressCallback](dismprogresscallb
 Optional. User defined custom data.
 
 Return value
-ms.author: themar
-ms.date: 10/25/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
-------------
+---------
 
 Returns **S\_OK** on success.
 
@@ -140,12 +125,7 @@ hr = DismRemovePackage(Session, "C:\\packages\\test.CAB", PackagePath, NULL, NUL
  
 
 Requirements
-ms.author: themar
-ms.date: 10/25/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
-------------
+---------
 
 <table>
 <colgroup>

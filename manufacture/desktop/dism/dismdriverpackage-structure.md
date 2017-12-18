@@ -2,7 +2,7 @@
 title: DismDriverPackage structure
 description: Contains basic information for the driver that is associated with the .inf file.
 ms.assetid: ea048bd3-e0a2-4ffc-8ac0-cf61cb4c8f17
-keywords: ["DismDriverPackage structure"]
+keywords: DismDriverPackage structure
 ms.author: themar
 ms.date: 10/25/2017
 ms.topic: article
@@ -16,12 +16,7 @@ ms.technology: windows-oem
 Contains basic information for the driver that is associated with the .inf file.
 
 Syntax
-ms.author: themar
-ms.date: 10/25/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
-------
+---
 
 ```ManagedCPlusPlus
 typedef struct _DismDriverPackage {
@@ -44,12 +39,7 @@ typedef struct _DismDriverPackage {
 ```
 
 Members
-ms.author: themar
-ms.date: 10/25/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
--------
+----
 
 **PublishedName**  
 The published driver name.
@@ -119,12 +109,7 @@ The revision number of the driver.
  
 
 Requirements
-ms.author: themar
-ms.date: 10/25/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
-------------
+---------
 
 <table>
 <colgroup>

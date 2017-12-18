@@ -2,7 +2,7 @@
 title: DismFeature structure
 description: Describes basic information about a feature, such as the feature name and feature state.
 ms.assetid: 43347e6a-ed58-4dcf-9a8c-e9e9017a582e
-keywords: ["DismFeature structure"]
+keywords: DismFeature structure
 ms.author: themar
 ms.date: 10/25/2017
 ms.topic: article
@@ -16,12 +16,7 @@ ms.technology: windows-oem
 Describes basic information about a feature, such as the feature name and feature state.
 
 Syntax
-ms.author: themar
-ms.date: 10/25/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
-------
+---
 
 ```ManagedCPlusPlus
 typedef struct _DismFeature {
@@ -31,12 +26,7 @@ typedef struct _DismFeature {
 ```
 
 Members
-ms.author: themar
-ms.date: 10/25/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
--------
+----
 
 **FeatureName**  
 The name of the feature.
@@ -67,12 +57,7 @@ A valid [DismPackageFeatureState](dismpackagefeaturestate-enumeration.md) enumer
  
 
 Requirements
-ms.author: themar
-ms.date: 10/25/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
-------------
+---------
 
 <table>
 <colgroup>

@@ -2,7 +2,7 @@
 title: DismEnableFeature function
 description: Enables a feature in an image. Features are identified by a name and can optionally be tied to a package.
 ms.assetid: 46e0febe-47c0-432c-9db6-1a15d108c5bc
-keywords: ["DismEnableFeature function"]
+keywords: DismEnableFeature function
 ms.author: themar
 ms.date: 10/25/2017
 ms.topic: article
@@ -18,12 +18,7 @@ ms.technology: windows-oem
 Enables a feature in an image. Features are identified by a name and can optionally be tied to a package.
 
 Syntax
-ms.author: themar
-ms.date: 10/25/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
-------
+---
 
 ```ManagedCPlusPlus
 HRESULT WINAPI DismEnableFeature(
@@ -42,12 +37,7 @@ HRESULT WINAPI DismEnableFeature(
 ```
 
 Parameters
-ms.author: themar
-ms.date: 10/25/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
-----------
+-------
 
 *Session* \[in\]  
 A valid [DismSession](dismsession.md). The DismSession must be associated with an image. You can associate a session with an image by using the [**DismOpenSession**](dismopensession-function.md).
@@ -133,12 +123,7 @@ Optional. A pointer to a client-defined [*DismProgressCallback*](dismprogresscal
 Optional. User defined custom data.
 
 Return value
-ms.author: themar
-ms.date: 10/25/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
-------------
+---------
 
 Returns `S_OK` on success.
 
@@ -188,12 +173,7 @@ hr = DismEnableFeature(Session, “WindowsMediaPlayer”, NULL, PackageNone, TRU
  
 
 Requirements
-ms.author: themar
-ms.date: 10/25/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
-------------
+---------
 
 <table>
 <colgroup>
