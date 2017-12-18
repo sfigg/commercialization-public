@@ -5,6 +5,12 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 24D3A2CA-97A4-4051-8CBC-479861039789
+author: sapaetsc
+ms.author: sapaetsc
+ms.date: 10/15/17
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # <span id="p_hlk_test.windows_server_must-fix_errors"></span>Windows Server Must-Fix Code Analysis and Static Driver Verifier Errors affecting Network and Storage Adapter Vendors

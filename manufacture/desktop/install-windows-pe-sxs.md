@@ -43,6 +43,8 @@ Note, when you add more packages to WinPE, it slows WinPE performance and boot t
 
 **Common customizations**:
 
+* **Add an update**. If you're going to be capturing an FFU at the end of the lab, apply [KB4048955](https://www.catalog.update.microsoft.com/search.aspx?q=4048955) to your WinPE image. To learn more, see: [WinPE: mount and customize](winpe-mount-and-customize.md).
+
 * **Add a video or network driver**. (WinPE includes generic video and network drivers, but in some cases, additional drivers are needed to show the screen or connect to the network.). To learn more, see [WinPE: Add drivers](winpe-add-drivers.md).
 
 * **Add PowerShell scripting support**. To learn more, see [WinPE: Adding Windows PowerShell support to Windows PE](winpe-adding-powershell-support-to-windows-pe.md). PowerShell scripts are not included in this lab.

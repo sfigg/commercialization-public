@@ -21,14 +21,15 @@ ms.technology: windows-oem
 
 The Windows Performance Analyzer (WPA) lets you view traces of system activity displayed in a graphical format. WPA is used for many Windows performance and debugging scenarios, and is the second-level triage tool for modern standby issues that cannot be resolved by using SleepStudy. WPA presents a graphical format of a trace file that contains events collected during a modern standby session.
 
-<iframe src="https://hubs-video.ssl.catalog.video.msn.com/embed/bd4080eb-b9df-4c1f-9df7-534347404937/IA?csid=ux-en-us&MsnPlayerLeadsWith=html&PlaybackMode=Inline&MsnPlayerDisplayShareBar=false&MsnPlayerDisplayInfoButton=false&iframe=true&QualityOverride=HD" width="720" height="405" allowFullScreen="true" frameBorder="0" scrolling="no">A video describing  how to use WPA to analyze traces of modern standby sessions.</iframe>
+<iframe class="video-iframe" style="width: 100%; height: 550px;" frameborder="0" allowfullscreen="true" src ="https://www.microsoft.com/en-us/videoplayer/embed/bd4080eb-b9df-4c1f-9df7-534347404937?autoplay=false">A video describing  how to use WPA to analyze traces of modern standby sessions.</iframe>
+
 Watch this video to learn how to use WPA to analyze traces of modern standby sessions.
 
-<iframe src="https://hubs-video.ssl.catalog.video.msn.com/embed/4c927140-ccea-40be-8fa9-1885f61bb28f/IA?csid=ux-en-us&MsnPlayerLeadsWith=html&PlaybackMode=Inline&MsnPlayerDisplayShareBar=false&MsnPlayerDisplayInfoButton=false&iframe=true&QualityOverride=HD" width="720" height="405" allowFullScreen="true" frameBorder="0" scrolling="no">A video describing how to use the Platform Idle State graph and PDC Resiliency Activity graph to identify the cause of software activity</iframe>
+<iframe class="video-iframe" style="width: 100%; height: 550px;" frameborder="0" allowfullscreen="true" src ="https://www.microsoft.com/en-us/videoplayer/embed/4c927140-ccea-40be-8fa9-1885f61bb28f?autoplay=false">A video describing how to use the Platform Idle State graph and PDC Resiliency Activity graph to identify the cause of software activity</iframe>
 
 This video shows how to use the Platform Idle State graph and PDC Resiliency Activity graph to identify the cause of software activity that prevents the hardware platform from spending sufficient time in the DRIPS state.
 
-<iframe src="https://hubs-video.ssl.catalog.video.msn.com/embed/77ba406f-299d-4262-ab3b-a3c6e7e55d60/IA?csid=ux-en-us&MsnPlayerLeadsWith=html&PlaybackMode=Inline&MsnPlayerDisplayShareBar=false&MsnPlayerDisplayInfoButton=false&iframe=true&QualityOverride=HD" width="720" height="405" allowFullScreen="true" frameBorder="0" scrolling="no">A video describing how to use the Platform Idle State graph and Device Dstate graph to track down a hardware device that causes the hardware platform to spend too little time in the DRIPS state.</iframe>
+<iframe class="video-iframe" style="width: 100%; height: 550px;" frameborder="0" allowfullscreen="true" src ="https://www.microsoft.com/en-us/videoplayer/embed/77ba406f-299d-4262-ab3b-a3c6e7e55d60?autoplay=false">A video describing how to use the Platform Idle State graph and Device Dstate graph to track down a hardware device that causes the hardware platform to spend too little time in the DRIPS state.</iframe>
 
 Watch this video to learn how to use the Platform Idle State graph and Device Dstate graph to track down a hardware device that causes the hardware platform to spend too little time in the DRIPS state.
 

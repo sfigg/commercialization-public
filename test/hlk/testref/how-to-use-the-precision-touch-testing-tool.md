@@ -20,16 +20,6 @@ The Precision Touch Testing Tool, or PT3, is a multi-function tool that tests hi
 
 The PT3 does all of these tasks well, but its capable performance does not make these tasks trivial. You must practice and prepare to become comfortable using the PT3.
 
-**In this topic:**
-
--   [Terminology and Visual Orientation](#termvis)
-
--   [Basic Usage](#basic)
-
--   [Running the Tests](#running)
-
--   [Additional Instructions for the ITRI PT3 Device](#addl)
-
 ## <span id="termvis"></span><span id="TERMVIS"></span>Terminology and Visual Orientation
 
 

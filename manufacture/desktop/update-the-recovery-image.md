@@ -236,7 +236,7 @@ If you've optimized the image, you'll need to export the image in order to see a
         -  450MB-680MB: You'll need 320MB free space.
         -  Over 680MB:  You'll need 1024MB free space.
 
-    c.  Modify the deployment scripts: [CreatePartitions-UEFI.txt](windows-deployment-sample-scripts-sxs.md#CreatePartitions-UEFI.txt) and [CreatePartitions-BIOS.txt](windows-deployment-sample-scripts-sxs.md#CreatePartitions-BIOS.txt) with the new values. Example:
+    c.  Modify the CreatePartitions deployment scripts: [CreatePartitions-UEFI.txt](windows-deployment-sample-scripts-sxs.md#CreatePartitions-UEFI.txt),  [CreatePartitions-UEFI-FFU.txt](windows-deployment-sample-scripts-sxs.md#CreatePartitions-UEFI-FFU.txt), [CreatePartitions-BIOS.txt](windows-deployment-sample-scripts-sxs.md#CreatePartitions-BIOS.txt), and [CreatePartitions-BIOS-FFU.txt](windows-deployment-sample-scripts-sxs.md#CreatePartitions-BIOS-FFU.txt) with the new values. Example:
 
     ```
     rem == 3. Windows RE tools partition ===============
@@ -256,7 +256,7 @@ If you've optimized the image, you'll need to export the image in order to see a
 ## <span id="Try_it_out"></span>Try it out
 
 **Step 9: Apply the image to a new PC**
-Use the steps from [Lab 2: Deploy Windows using a script](deploy-windows-with-a-script-sxs.md) to copy the image to the storage USB drive, apply the Windows image and the recovery image, and boot it up. 
+Use the steps from [Lab 2: Deploy Windows using a script](deploy-windows-with-a-script-sxs.md) to copy the image to the storage USB drive, and apply your Windows image to a PC. 
 
 Note, you'll now include the steps to add the recovery image:
 
@@ -268,16 +268,11 @@ The short version:
 
 3.  Find the drive letter of the storage drive (`diskpart, list volume, exit`).
 
-4.  Apply the image: `D:\ApplyImage.bat D:\Images\install.wim`.
+4.  Apply the image: `D:\Deployment\ApplyImage.bat D:\Images\install.wim`, or `D:\Deployment\ApplyImage.bat D:\Images\oemffu.ffu`.
 
-5.  Apply the recovery image: `D:\ApplyRecovery.bat`
+5.  Apply the recovery image: `D:\Deployment\ApplyRecovery.bat`, or follow the prompts in the deployment scripts to apply the recovery partition.
 	
-    Note: To test a different recovery image, add it the same way, specifying the recovery image: 
-    ```
-	D:\ApplyRecovery.bat D:\Images\winre_custom.wim
-	```
-
-5.  Disconnect the drives, then reboot (`exit`).
+6.  Disconnect the drives, then reboot (`exit`).
 	
 **Step 10: Verify drivers and packages**
 1.  After the PC boots, either create a new user account, or else press Ctrl+Shift+F3 to reboot into the built-in administrator account (This is also known as audit mode).

@@ -18,22 +18,6 @@ ms.technology: windows-oem
 
 This describes how to use common kernel debugging commands to debug Device Fundamentals Reliability test failures.
 
-**In this topic:**
-
--   [Set symbols](#sym)
-
--   [!analyze -v](#analyze)
-
--   [Inspect stack traces of the test process](#stacktrx)
-
--   [Switch context to threads and frames to view locals](#switch)
-
--   [!pnptriage](#pnptriage)
-
--   [Driver debugging extensions](#drvdebugext)
-
--   [Debugger extensions](#debugext)
-
 ## <span id="sym"></span><span id="SYM"></span>Set symbols
 
 

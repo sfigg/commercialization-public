@@ -62,7 +62,7 @@ The test selects each state in random order and calls each action in random orde
 |||
 |---|---|
 | **Specifications**  | <ul><li>Filter.Driver.FileSystem.MiniFilter</li><li>Filter.Driver.AntiVirus.MiniFilter</li><li>Filter.Driver.FileSystem.NamedPipeAndMailSlots</li><li>Filter.Driver.AntiVirus.NamedPipeAndMailSlots</li></ul> |  
-| **Platforms**   | <ul><li>Windows 10 client editions (x86)</li><li>Windows 10, client editions (x64)</li><li>Windows Server 2016 (x64)</li></ul> |
+| **Platforms**   | <ul><li>Windows 10, client editions (x86)</li><li>Windows 10, client editions (x64)</li><li>Windows Server 2016 (x64)</li></ul> |
 | **Supported Releases** | <ul><li>Windows 10</li><li>Windows 10, version 1511</li><li>Windows 10, version 1607</li><li>Windows 10, version 1703</li><li>Windows 10, version 1709</li></ul> |
 |**Expected run time (in minutes)**| 30 |
 |**Category**| Development |

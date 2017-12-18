@@ -36,6 +36,10 @@ All `RunSynchronous` commands run in the system context.
 <td><p>[Credentials](microsoft-windows-setup-runsynchronous-runsynchronouscommand-credentials.md)</p></td>
 <td><p>Specifies the credentials used to access the command if the command is on a network share.</p></td>
 </tr>
+<tr class="odd">
+<td><p>[Description](microsoft-windows-setup-runsynchronous-runsynchronouscommand-description.md)</p></td>
+<td><p>Describes the synchronous command to run.</p></td>
+</tr>
 <tr class="even">
 <td><p>[Order](microsoft-windows-setup-runsynchronous-runsynchronouscommand-order.md)</p></td>
 <td><p>Specifies the order of the command to run.</p></td>

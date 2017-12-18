@@ -147,7 +147,7 @@ The following table shows the types of language packages and components availabl
     Review the resulting list of packages and verify that the list contains the package. For example:
 
     ```
-    Package Identity : Microsoft-Windows-Client-LanguagePack  ...  fr-FR~10.0.15063.0
+    Package Identity : Microsoft-Windows-Client-LanguagePack  ...  fr-FR~10.0.16299.15
     State : Installed
     ```
 
@@ -186,12 +186,15 @@ The following table shows the types of language packages and components availabl
 1.  To save space, you can remove English language components when deploying to non-English regions. You can either uninstall them in the reverse order from how you add them, or remove them all at once in the same DISM /remove-package command.
 
     ```
-    dism /Remove-Package /Image:"c:\mount\windows" /PackageName:Microsoft-Windows-Client-LanguagePack-Package~31bf3856ad364e35~amd64~en-US~10.0.15063.0 /PackageName:Microsoft-Windows-LanguageFeatures-Basic-en-us-Package~31bf3856ad364e35~amd64~~10.0.15063.0 /PackageName:Microsoft-Windows-LanguageFeatures-Handwriting-en-us-Package~31bf3856ad364e35~amd64~~10.0.15063.0 /PackageName:Microsoft-Windows-LanguageFeatures-OCR-en-us-Package~31bf3856ad364e35~amd64~~10.0.15063.0 /PackageName:Microsoft-Windows-LanguageFeatures-Speech-en-us-Package~31bf3856ad364e35~amd64~~10.0.15063.0 /PackageName:Microsoft-Windows-LanguageFeatures-TextToSpeech-en-us-Package~31bf3856ad364e35~amd64~~10.0.15063.0  /LogPath=C:\mount\dism.fod2.log
+    dism /Remove-Package /Image:"c:\mount\windows" /PackageName:Microsoft-Windows-Client-LanguagePack-Package~31bf3856ad364e35~amd64~en-US~10.0.16299.15 /PackageName:Microsoft-Windows-LanguageFeatures-Basic-en-us-Package~31bf3856ad364e35~amd64~~10.0.16299.15 /PackageName:Microsoft-Windows-LanguageFeatures-Handwriting-en-us-Package~31bf3856ad364e35~amd64~~10.0.16299.15 /PackageName:Microsoft-Windows-LanguageFeatures-OCR-en-us-Package~31bf3856ad364e35~amd64~~10.0.16299.15 /PackageName:Microsoft-Windows-LanguageFeatures-Speech-en-us-Package~31bf3856ad364e35~amd64~~10.0.16299.15 /PackageName:Microsoft-Windows-LanguageFeatures-TextToSpeech-en-us-Package~31bf3856ad364e35~amd64~~10.0.16299.15  /LogPath=C:\mount\dism.fod2.log
     ```
 
     where *C* is the drive letter of the drive.
 
     **Troubleshooting** If removing the package fails due to pending updates, try the command again. 
+
+    > [!Tip]
+    > The package names in the command above may be different than the ones in your image, depending on the version of Windows you're using. Run `dism /Image:"C:\mount\windows" /get-packages` to get the names of the packages in your image.
 
 2.  Verify that the language package is no longer part of the image:
 
@@ -230,7 +233,7 @@ Use the steps from [Lab 2: Deploy Windows using a script](deploy-windows-with-a-
 1.  Copy the image file to the storage drive.
 2.  [Boot the reference device to Windows PE using the Windows PE USB key](install-windows-pe-sxs.md).
 3.  Find the drive letter of the storage drive (`diskpart, list volume, exit`).
-4.  Apply the image: `D:\ApplyImage.bat D:\Images\install.wim`.
+4.  Apply the image: `D:\Deployment\ApplyImage.bat D:\Images\install.wim`.
 5.  Disconnect the drives, then reboot (`exit`).
 
 **Step 6: Verify updates**
@@ -250,7 +253,7 @@ Use the steps from [Lab 2: Deploy Windows using a script](deploy-windows-with-a-
     Review the resulting list of packages and verify that the list contains the package. For example:
 
     ```
-    Package Identity : Microsoft-Windows-Client-LanguagePack  ...  fr-FR~10.0.15063.0
+    Package Identity : Microsoft-Windows-Client-LanguagePack  ...  fr-FR~10.0.16299.15
     State : Installed
     ```
 	

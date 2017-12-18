@@ -32,8 +32,8 @@ You can use scripts to take a Windows image and deploy Windows onto new PCs quic
 
 ## <span id="Copy_the_deployment_scripts"></span>Step 2: Copy the deployment scripts to the root of the USB storage drive
 
-Copy the [sample scripts](windows-deployment-sample-scripts-sxs.md) to the root of the USB storage drive.
-[Download a copy here](http://go.microsoft.com/fwlink/p/?LinkId=800657)
+Copy the [sample scripts](windows-deployment-sample-scripts-sxs.md) to the root of the USB storage drive. If you're going to be deploying FFU images, make sure you use the FFU scripts.
+[Download a copy here](http://download.microsoft.com/download/3/F/2/3F2646EF-D589-498C-9F07-DE5549BE018E/USB-B.zip)
 
 ## <span id="Apply_the_image"></span>Step 3: Apply the Windows image using a script
 
@@ -59,16 +59,21 @@ The sample scripts include steps that detect the firmware type (the newer UEFI-b
 
 4.  Format the primary hard drive, create the partitions, and apply the image by using the pre-made [sample scripts](windows-deployment-sample-scripts-sxs.md). 
 
-    The script **ApplyImage.bat** uses the diskpart scripts: CreatePartitions-UEFI.txt and CreatePartitions-BIOS.txt to create the partitions and define the partition layout. These scripts must be placed in the same folder. You can update these scripts to change the partition sizes.
+    The script **ApplyImage.bat** uses diskpart scripts to create the partitions and define the partition layout. These scripts must be placed in the same folder. You can update these scripts to change the partition sizes.
+    
+    > [!Note] 
+    > If you're going to be capturing and deploying your final image as an FFU, choose the options to not configure recovery. This allows you to expand the Windows partition, if needed, after you apply your FFU. You can configure recovery after you expand the Windows partition.
 
     ```
     D:
-    D:\ApplyImage.bat D:\Images\install.wim
+    D:\Deployment\ApplyImage.bat D:\Images\install.wim
     ```
 
     When prompted by the script: 
     
-    1.  Select an image index number. For the Home/Pro edition, the Pro edition is index 1, the Home edition is index 2. 
+    1.  Choose whether or not to configure the recovery partition. 
+        - **Y**: Configures the Windows recovery partition.
+        - **N**: Does not configure the recovery partition. The recovery partition can be configured later. Choose this option if you're going to be capturing and deploying your image as an FFU.
     2.  Press Y to format the drive.
     3.  Press Y to select [Compact OS](compact-os.md), or N to select a non-compacted OS:
         -   **Y**: Applies the image using Compact OS. This is best for devices with solid-state drives and drives with limited free space.
@@ -94,11 +99,14 @@ The sample scripts include steps that detect the firmware type (the newer UEFI-b
 
 Include a recovery image for your final images, but it's not required for these early testing steps. 
 
-1.  Apply the Windows Recovery Environment (Windows RE) image. These tools help repair common causes of unbootable operating systems. The image is stored in a separate drive partition. The script **ApplyRecovery.bat** uses the diskpart scripts: HidePartitions-UEFI.txt and HidePartitions-BIOS.txt to set up this partition. These scripts must be placed in the same folder as ApplyRecovery.bat.
+Apply the Windows Recovery Environment (Windows RE) image. These tools help repair common causes of unbootable operating systems. The image is stored in a separate drive partition. The script **ApplyRecovery.bat** uses the diskpart scripts: HidePartitions-UEFI.txt and HidePartitions-BIOS.txt to set up this partition. These scripts must be placed in the same folder as ApplyRecovery.bat.
 
-	```
-	D:\ApplyRecovery.bat
-	```
+When you apply an FFU, you can choose to configure the recovery partition when you apply the FFU.
+
+```
+D:\Deployment\ApplyRecovery.bat
+```
+
 
 ## <span id="Reboot"></span>Step 6: Reboot
 
@@ -106,7 +114,8 @@ Disconnect the drives, then reboot (`exit`).
 
 The PC should reboot into Windows. While you’re waiting for the preparation phase to complete, go back to your technician PC and continue with the lab.
 
-**Troubleshooting**: If the device does not boot, turn on the device, and press the key that opens the boot-device selection menu (for example, the **Esc** key). Select the hard drive as your boot device, and continue.
+> [!Tip]
+> If the device does not boot, turn on the device, and press the key that opens the boot-device selection menu (for example, the **Esc** key). Select the hard drive as your boot device, and continue.
 
 **Optional: Test the recovery image**
 1.  Complete the first logon experience like a regular user.

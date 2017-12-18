@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: 34286b79-1867-4d0d-8b65-6a0c6a7e5df8
 ms.mktglfcycl: plan
 ms.sitesec: msdn
-ms.author: v-gmoor
+ms.author: sapaetsc
 ms.date: 10/27/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -67,7 +67,7 @@ AXE.exe uses the following syntax:
 <tr class="even">
 <td><p><strong>/Analyze</strong> <em>results_file</em></p></td>
 <td><p>Reanalyzes the results from a job (.jobx) file specified by <em>results_file</em>. This option requires a job from a package or assessment manifest directly to locate the assessments to reanalyze.</p>
-<!--v-gmoor, 2017-10-26: I haven't figured out a functional example for /Analyze that definitely seems to work.
+<!--sapaetsc, 2017-10-26: I haven't figured out a functional example for /Analyze that definitely seems to work.
 <p>Example:</p>
 <code>axe&nbsp;C:\\Assessments\\MyJobs\\Job1.jobx /Analyze C:\\Assessments\\MyResults\\JobResults_COMPUTERNAME_2017-1026_0929-27.803\\JobResults_COMPUTERNAME_2017-1026_0929-27.803.xml</code>-->
 </td>
@@ -75,7 +75,7 @@ AXE.exe uses the following syntax:
 <tr class="odd">
 <td><p><strong>/Assessment</strong> <em>assessment_file</em></p></td>
 <td><p>Specifies the path and file name of an assessment manifest, <em>assessment_file</em>, to reanalyze in the results file specified.</p>
-<!--v-gmoor, 2017-10-26: I haven't figured out a functional example for /Assessment that definitely seems to work.
+<!--sapaetsc, 2017-10-26: I haven't figured out a functional example for /Assessment that definitely seems to work.
 <p>Example:</p>
 <code>axe&nbsp;C:\Assessments\MyJobs\Job1.jobx /Analyze %UserProfile%\\AppData\\Local\\Microsoft\\Axe\\Results\\JobResults_COMPUTERNAME_2017-1026_0929-27.803\\JobResults_COMPUTERNAME_2017-1026_0929-27.803.xml /Assessment </code>-->
 </td>
@@ -96,7 +96,7 @@ AXE.exe uses the following syntax:
 <td><p><strong>/PublishToSource</strong></p></td>
 <td><p>Specifies that AXE.exe update the original results folder when running <strong>/Analyze</strong>. Using <strong>/PublishToSource</strong> is optional, and it is ignored when running a job.</p>
 <p><strong>/PublishToSource</strong> may be combined with the publish path, but the publish path will only be used if AXE.exe cannot publish to the original results folder.</p>
-<!--v-gmoor, 2017-10-27: The following example is non-functional, because no
+<!--sapaetsc, 2017-10-27: The following example is non-functional, because no
 file is specified for /Analyze.
 <p>Example:</p>
 <code>axe&nbsp;C:\\Assessments\\myJobs\\Job1.jobx  /Analyze /PublishToSource</code></td>-->

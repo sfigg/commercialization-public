@@ -5,14 +5,18 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: c7890995-e415-44c2-9f90-0d45e3b79ba0
+author: sapaetsc
+ms.author: sapaetsc
+ms.date: 10/15/17
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # Step 8: Create a submission package
 
 >[!NOTE]
 >  We highly encourage you to include driver symbols as part of package creation. Including symbols enables Microsoft to triage and root cause issues related to your driver.
-
- 
 
 After the device passes all of the necessary tests, you can create a submission package (.hlkx file) for submission.
 
@@ -64,7 +68,7 @@ For additional information on packages, see the following topics:
 
 ### <span id="Next_steps"></span><span id="next_steps"></span><span id="NEXT_STEPS"></span>Next steps
 
-Congratulations, you have completed the end to end testing of your device using the Windows HLK. Submit the signed package (.hlkx file) through the Hardware Dashboard on the Windows Dev Center. For more details, see [Dashboard Help](http://go.microsoft.com/fwlink/?LinkId=236060) in the Windows Dev Center.
+Congratulations, you have completed the end-to-end testing of your device using the Windows HLK. Submit the signed package (.hlkx file) through the Windows Hardware Dev Center Dashboard. (For more details, see [Windows Hardware Dev Center dashboard](https://docs.microsoft.com/en-us/windows-hardware/drivers/dashboard/).)
 
  
 

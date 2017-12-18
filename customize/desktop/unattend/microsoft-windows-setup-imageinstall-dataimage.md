@@ -13,23 +13,18 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # DataImage
 
-
-`DataImage` specifies a data image to install. You can add additional data on top of a Windows operating system image, by using a data image. Data images can include applications, device drivers, and other configuration files. You can create a data image, by using ImageX.
+`DataImage` specifies a data image to install. You can add data on top of a Windows operating system image by using a data image. Data images can include applications, device drivers, and other configuration files. You can create a data image by using ImageX.
 
 You should never use a data image to overwrite Windows system data. Use data images only to add files.
 
 There can be more than one data image. The [OSImage](microsoft-windows-setup-imageinstall-osimage.md) is installed before any data images.
 
-**Note**  
-The [MetaData](microsoft-windows-setup-imageinstall-dataimage-installfrom-metadata.md) settings are required.
-
- 
+> [!Note]
+> The [MetaData](microsoft-windows-setup-imageinstall-dataimage-installfrom-metadata.md) settings are required.
 
 ## Child Elements
-
 
 <table>
 <colgroup>
@@ -52,29 +47,23 @@ The [MetaData](microsoft-windows-setup-imageinstall-dataimage-installfrom-metada
 </tbody>
 </table>
 
- 
-
 ## Valid Configuration Passes
-
 
 windowsPE
 
 ## Parent Hierarchy
 
-
 [microsoft-windows-setup-](microsoft-windows-setup.md) | [ImageInstall](microsoft-windows-setup-imageinstall.md) | **DataImage**
 
 ## Applies To
-
 
 For the list of the Windows editions and architectures that this component supports, see [microsoft-windows-setup-](microsoft-windows-setup.md).
 
 ## XML Example
 
-
 The following XML output shows how to set the `ImageInstall` setting to install both an operating system image and a data image.
 
-```
+```XML
 <ImageInstall>
     <OSImage>
         <InstallFrom>
@@ -120,16 +109,6 @@ The following XML output shows how to set the `ImageInstall` setting to install 
 
 ## Related topics
 
-
 [ImageInstall](microsoft-windows-setup-imageinstall.md)
 
- 
-
- 
-
-
-
-
-
-
-
+[Create a Data Image using DISM](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/create-a-data-image-using-dism)

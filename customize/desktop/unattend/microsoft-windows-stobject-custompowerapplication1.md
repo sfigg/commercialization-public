@@ -29,7 +29,7 @@ ms.technology: windows-oem
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[Application](microsoft-windows-stobject-custompowerapplication1application.md)</p></td>
+<td><p>[Application](microsoft-windows-stobject-custompowerapplication1-application.md)</p></td>
 <td><p>Specifies the name and the path of the application to run.</p></td>
 </tr>
 <tr class="even">
