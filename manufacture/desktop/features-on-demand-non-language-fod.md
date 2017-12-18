@@ -30,7 +30,6 @@ To see available Features on Demand for languages and regions, see [Language and
 > - [Printing](#printing)
 > - [Retail Demo Experience](#retail-demo-experience-rdx)
 > - [Sync](#sync)
-> - [Windows Media Player](#windows-media-player)
 
 ### <span id="DOTNET"></span><span id="dotnet"></span> .NET Framework  
 
@@ -60,9 +59,9 @@ This Feature on Demand's installation can be triggered by a user from the Window
 
 An on-device diagnostic platform used via a browser.  Installs a SSH server on the device for UWP remote deployment as well as Windows Device Portal.
 
-**Recommendation:** In general, don't preinstall on devices. If you are building an image for "developer edition" devices, where the primary market for the device is developers or users who plan on developing or testing UWPs, consider preinstalling.
+Enabling Developer Mode will attempt to auto-install this Feature on Demand. On devices that are WSUS-managed, this auto-install will likely fail due to WSUS blocking FOD packages by default. If this Feature on Demand is not successfully installed, device discovery and Device Portal can't be enabled, preventing remote deployment to the device.
 
-For devices that are managed by WSUS, enabling Developer Mode will attempt to auto-install this Feature on Demand, but will likely fail. If this Feature on Demand is not successfully installed, device discovery and Device Portal will not be enabled when Developer Mode is enabled.
+**Recommendation:** In general, don't preinstall on devices. If you are building an image for "developer edition" devices, where the primary market for the device is developers or users who plan on developing or testing UWPs, consider preinstalling.
 
 | Name | Capability Name |CAB Name |                                            CAB Size | Install size |
 |-----------|-----------------------------------|------------|--------------------------| --- | 
