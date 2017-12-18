@@ -2,7 +2,7 @@
 title: DismGetPackages function
 description: Lists each package in an image, providing basic information including the package name and type of package.
 ms.assetid: d04bafe0-7fdf-47c2-978e-fa0041525bac
-keywords: ["DismGetPackages function"]
+keywords: DismGetPackages function
 ms.author: themar
 ms.date: 10/25/2017
 ms.topic: article
@@ -18,12 +18,7 @@ ms.technology: windows-oem
 Lists each package in an image, providing basic information including the package name and type of package.
 
 Syntax
-ms.author: themar
-ms.date: 10/25/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
-------
+---
 
 ```ManagedCPlusPlus
 HRESULT WINAPI DismGetPackages(
@@ -34,12 +29,7 @@ HRESULT WINAPI DismGetPackages(
 ```
 
 Parameters
-ms.author: themar
-ms.date: 10/25/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
-----------
+-------
 
 *Session* \[in\]  
 A valid [DismSession](dismsession.md). The DismSession must be associated with an image.
@@ -51,12 +41,7 @@ A pointer to the array of [DismPackage](dismpackagefeaturestate-enumeration.md) 
 The number of [DismPackage](dismpackagefeaturestate-enumeration.md) structures that are returned.
 
 Return value
-ms.author: themar
-ms.date: 10/25/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
-------------
+---------
 
 Returns **S\_OK** on success.
 
@@ -98,12 +83,7 @@ hr = DismGetPackages(Session, &amp;Package, &amp;Count);
  
 
 Requirements
-ms.author: themar
-ms.date: 10/25/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
-------------
+---------
 
 <table>
 <colgroup>

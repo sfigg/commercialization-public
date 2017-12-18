@@ -2,7 +2,7 @@
 title: DismCapability structure
 description: Describes capability basic information.
 ms.assetid: 3916441C-BF6B-48F2-85A8-6943A3689A5D
-keywords: ["DismCapability structure"]
+keywords: DismCapability structure
 ms.author: themar
 ms.date: 10/25/2017
 ms.topic: article
@@ -18,12 +18,7 @@ ms.technology: windows-oem
 Describes capability basic information.
 
 Syntax
-ms.author: themar
-ms.date: 10/25/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
-------
+---
 
 ```ManagedCPlusPlus
 typedef struct _DismCapability {
@@ -33,12 +28,7 @@ typedef struct _DismCapability {
 ```
 
 Members
-ms.author: themar
-ms.date: 10/25/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
--------
+----
 
 **Name**  
 The manufacturer name of the driver.
@@ -74,12 +64,7 @@ To retrieve more information about a particular capability, use the [**DismGetCa
  
 
 Requirements
-ms.author: themar
-ms.date: 10/25/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
-------------
+---------
 
 <table>
 <colgroup>

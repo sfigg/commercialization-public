@@ -2,7 +2,7 @@
 title: DismMountedImageInfo structure
 description: Describes the metadata of a mounted image.
 ms.assetid: ad36728d-e34b-4dcb-91d6-eceea591fc37
-keywords: ["DismMountedImageInfo structure"]
+keywords: DismMountedImageInfo structure
 ms.author: themar
 ms.date: 10/25/2017
 ms.topic: article
@@ -16,12 +16,7 @@ ms.technology: windows-oem
 Describes the metadata of a mounted image.
 
 Syntax
-ms.author: themar
-ms.date: 10/25/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
-------
+---
 
 ```ManagedCPlusPlus
 typedef struct _DismMountedImageInfo {
@@ -34,12 +29,7 @@ typedef struct _DismMountedImageInfo {
 ```
 
 Members
-ms.author: themar
-ms.date: 10/25/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
--------
+----
 
 **MountPath**  
 A relative or absolute path to the mounted image.
@@ -79,12 +69,7 @@ A [DismMountStatus](dismmountstatus-enumeration.md) enumeration value such as **
  
 
 Requirements
-ms.author: themar
-ms.date: 10/25/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
-------------
+---------
 
 <table>
 <colgroup>

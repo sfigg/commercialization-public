@@ -2,7 +2,7 @@
 title: DismDisableFeature function
 description: Disables a feature in the current image.
 ms.assetid: d6f6d7ae-a205-4981-b40c-390f16cbe088
-keywords: ["DismDisableFeature function"]
+keywords: DismDisableFeature function
 ms.author: themar
 ms.date: 10/25/2017
 ms.topic: article
@@ -18,12 +18,7 @@ ms.technology: windows-oem
 Disables a feature in the current image.
 
 Syntax
-ms.author: themar
-ms.date: 10/25/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
-------
+---
 
 ```ManagedCPlusPlus
 HRESULT WINAPI DismDisableFeature(
@@ -38,12 +33,7 @@ HRESULT WINAPI DismDisableFeature(
 ```
 
 Parameters
-ms.author: themar
-ms.date: 10/25/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
-----------
+-------
 
 *Session* \[in\]  
 A valid [DismSession](dismsession.md). The DismSession must be associated with an image. You can associate a session with an image by using the [**DismOpenSession**](dismopensession-function.md).
@@ -90,12 +80,7 @@ Optional. A pointer to a client-defined [DismProgressCallback](dismprogresscallb
 Optional. User defined custom data.
 
 Return value
-ms.author: themar
-ms.date: 10/25/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
-------------
+---------
 
 Returns `S_OK` on success.
 
@@ -130,12 +115,7 @@ hr = DismDisableFeature(Session, "WindowsMediaPlayer", NULL, FALSE, NULL, NULL, 
  
 
 Requirements
-ms.author: themar
-ms.date: 10/25/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
-------------
+---------
 
 <table>
 <colgroup>
