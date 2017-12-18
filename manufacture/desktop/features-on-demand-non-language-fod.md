@@ -150,13 +150,6 @@ This Feature on Demand is a mail, contacts, and calendar sync component. Not inc
 |-----------|-----------------------------------|------------|--------------------------| --- | 
 | Exchange ActiveSync and Internet Mail Sync Engine | OneCoreUAP.OneSync~~~~0.0.1.0 | Microsoft-OneCore-ApplicationModel-Sync-Desktop-FOD-Package.cab | 4,025 KB  | 18.21 MB |
 
-### Windows Media Player
-
-This Feature on Demand adds Windows Media Player to a Windows PC, and is installed by default on Windows 10. Because it is installed by default, the Cab for this Feature on Demand is not distributed on the FOD ISO.
-
-| Name | Capability Name |Cab Name |                                            CAB Size | Install size |
-|-----------|-----------------------------------|------------|--------------------------| --- | 
-| Windows Media Player | Media.WindowsMediaPlayer~~~~0.0.12.0 | No Cab available | NA  | 68.47 MB |
 
 ## Related topics
 
