@@ -23,38 +23,6 @@ functionality in the operating system. Individual packages can be
 grouped together to form more manageable groups of components and used
 to create images for flashing or updating a device.
 
-## <span id="In_this_topic"></span><span id="in_this_topic"></span><span id="IN_THIS_TOPIC"></span>In this topic
-
-
--   [Packaging process during development](#packaging-process)
-
--   [Create a package project with no
-    content](#creating_a_package_project)
-
--   [Add content to a package](#adding-content-to-a-package)
-
--   [Run the pkggen.exe tool](#run-pkg)
-
--   [View the contents of a package](#view-package)
-
--   [Add a language-specific content to a
-    package](#adding_language_specific_content)
-
--   [Add a resolution-specific content to a
-    package](#adding_resolution_specific_content)
-
--   [Add a driver component](#adding-driver-component)
-
--   [Package a driver](#package-driver)
-
--   [Add a service component](#service-component)
-
--   [Add customization settings](#customization)
-
--   [Add binary partitions](#adding-binary-partitions)
-
--   [Project scope macros](#project-scope-macros)
-
 ## <span id="Related_topics"></span><span id="related_topics"></span><span id="RELATED_TOPICS"></span>Related topics
 
 
