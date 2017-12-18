@@ -94,6 +94,15 @@ You can change the default application association settings in a WIM or VHD file
     Dism.exe /Image:C:\test\offline /Remove-DefaultAppAssociations
     ```
 
+**Unmount the Windows image**
+
+1.  On your technician computer, open a Command Prompt as administrator.
+
+2.  Unmount the image, committing changes:
+
+    ```
+    Dism /Unmount-Image /MountDir:C:\test\images\install.wim /commit
+    ```
  
 
  
