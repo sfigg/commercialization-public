@@ -51,7 +51,7 @@ For more information about sideloading line-of-business Microsoft Store apps, se
 
 ### Generalize from Audit Mode
 
-To generalize an image, you have to fist boot into Audit Mode. You can do boot into Audit Mode using unattend or from OOBE. You can read about the different ways of booting into audit mode at [Boot Windows to audit mode or OOBE](boot-windows-to-audit-mode-or-oobe.md).
+To generalize an image, you have to first boot into Audit Mode. You can do boot into Audit Mode using unattend or from OOBE. You can read about the different ways of booting into audit mode at [Boot Windows to audit mode or OOBE](boot-windows-to-audit-mode-or-oobe.md).
 
 1. Boot a PC into Audit Mode. When Windows boots into Audit Mode, **System Preparation Tool** will appear on the desktop. Leave the **System Preparation Tool** window open. 
 

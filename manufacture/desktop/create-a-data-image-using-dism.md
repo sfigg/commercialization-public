@@ -14,7 +14,7 @@ ms.technology: windows-oem
 # Create a Data Image Using DISM
 
 
-To add applications, files, and other resources to Windows® during an installation, you can create a data image. By using the Deployment Image Servicing and Management (DISM) tool, you can create additional Windows image (.wim) files that contain only files and applications that you intend to copy to the Windows installation.
+To add applications, files, and other resources to Windows during an installation, you can create a data image. By using the Deployment Image Servicing and Management (DISM) tool, you can create additional Windows image (.wim) files that contain only files and applications that you intend to copy to the Windows installation.
 
 Data images enable you to add:
 
@@ -29,7 +29,7 @@ Data images must be used only to add new files to a Windows installation. Do not
 
 Previous methods of transferring data to a Windows installation required the use of $OEM$ folders. These folder structures are still supported, but data images provide an easier and more efficient means of transferring additional data to Windows.
 
-In unattended installations, the Windows image to install is specified by the `OSImage` setting in the Microsoft-Windows-Setup component. You can add one or more `DataImage` settings in the Microsoft-Windows-Setup component that represent additional data images that you add to the system. For more information, see the Windows® Unattended Setup Reference.
+In unattended installations, the Windows image to install is specified by the `OSImage` setting in the Microsoft-Windows-Setup component. You can add one or more `DataImage` settings in the Microsoft-Windows-Setup component that represent additional data images that you add to the system. For more information, see the [Windows Unattended Setup Reference](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend).
 
 **To create a data image**
 
@@ -83,13 +83,16 @@ In unattended installations, the Windows image to install is specified by the `O
        </settings>
     ```
 
+    > [!Note]
+    > If you're specifying a local folder in `path`, see [Path](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-setup-imageinstall-dataimage-installfrom-path) in the [Unattended Windows Setup Reference](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend) to learn about using relative or absolute paths.
+
 4.  Run Setup.exe, specifying the location of the answer file. For example:
 
     ```
     setup /unattend:C:\unattend.xml
     ```
 
-All the files and folders specified in the data image are extracted to the root of the drive during installation. Executable files and scripts are not run when the data image is applied; they are only copied to the drive. You can use `FirstLogonCommands` to specify commands to run the first time a user logs on to the computer. For more information about `FirstLogonCommands`, see the Windows® Unattended Setup Reference.
+All the files and folders specified in the data image are extracted to the root of the drive during installation. Executable files and scripts are not run when the data image is applied; they are only copied to the drive. You can use `FirstLogonCommands` to specify commands to run the first time a user logs on to the computer. For more information about `FirstLogonCommands`, see the Windows Unattended Setup Reference.
 
  
 
