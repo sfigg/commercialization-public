@@ -26,10 +26,11 @@ To see available Features on Demand for languages and regions, see [Language and
 > - [Graphics Tools](#graphics-tools)
 > - [Mixed Reality](#mixed-reality)
 > - [Internet Explorer](#internet-explorer)
+> - [OneSync](#onesync)
 > - [OpenSSH](#openssh)
 > - [Printing](#printing)
 > - [Retail Demo Experience](#retail-demo-experience-rdx)
-> - [Sync](#sync)
+
 
 ### <span id="DOTNET"></span><span id="dotnet"></span> .NET Framework  
 
@@ -104,6 +105,17 @@ Internet Explorer Features on Demand enable preinstallation of Internet Explorer
 | Internet Explorer 11 optional ja-JP package |  | Microsoft-Windows-InternetExplorer-Optional-ja-JP-Package.cab |  18 KB | |
 
 
+### OneSync
+
+This Feature on Demand is a mail, contacts, and calendar sync component. Not including this Feature on Demand on your Windows image will cause UWP apps such as Mail, People, and Calendar to not be able to properly sync.
+
+**Recommendation:** Preinstall this Feature on Demand on your Windows image.
+
+| Name | Capability Name |CAB Name |                                            CAB Size | Install size |
+|-----------|-----------------------------------|------------|--------------------------| --- | 
+| Exchange ActiveSync and Internet Mail Sync Engine | OneCoreUAP.OneSync~~~~0.0.1.0 | Microsoft-OneCore-ApplicationModel-Sync-Desktop-FOD-Package.cab | 4,025 KB  | 18.21 MB |
+
+
 ### <span id="OPENSSH"></span><span id="openssh"></span> OpenSSH (Beta)
 
 The OpenSSH Features on Demand enable the use of OpenSSH on a Windows PC.
@@ -139,15 +151,6 @@ These Features on Demand add the retail demo package to a device, for use in ret
 | Retail Demo Content  | Microsoft-Windows-RetailDemo-OfflineContent-Content-Package.cab |
 | Language specific Retail Demo Content | Microsoft-Windows-RetailDemo-OfflineContent-Content-*language-country*-Package.cab |
 
-### Sync
-
-This Feature on Demand is a mail, contacts, and calendar sync component. Not including this Feature on Demand on your Windows image will cause UWP apps such as Mail, People, and Calendar to not be able to properly sync.
-
-**Recommendation:** Preinstall this Feature on Demand on your Windows image.
-
-| Name | Capability Name |CAB Name |                                            CAB Size | Install size |
-|-----------|-----------------------------------|------------|--------------------------| --- | 
-| Exchange ActiveSync and Internet Mail Sync Engine | OneCoreUAP.OneSync~~~~0.0.1.0 | Microsoft-OneCore-ApplicationModel-Sync-Desktop-FOD-Package.cab | 4,025 KB  | 18.21 MB |
 
 
 ## Related topics
