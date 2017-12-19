@@ -5,14 +5,14 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.author: alhopper
-ms.date: 12/13/2017
+ms.date: 12/19/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 # Windows updates during OOBE
 
-Critical driver updates, and critical Windows zero-day patch (ZDP) updates, will begin downloading automatically during OOBE as soon as the user has [Connected to a network](connect-to-network.md). The user can't opt-out of these critical updates as they are required for the device to operate.
+Critical driver updates, and critical Windows zero-day patch (ZDP) updates, will begin downloading automatically during OOBE as soon as the user has [Connected to a network](connect-to-network.md). The user can't opt-out of these critical updates as they are required for the device to operate properly.
 
 A user can choose to download non-critical Windows updates at the end of OOBE. If a newer version of Windows is available than the version that shipped with the device, the user will see the **Your PC has an update waiting** page.
 
@@ -26,6 +26,6 @@ The user can choose **Go to my desktop while my PC updates** to get to their des
 
 ![Windows Update during OOBE desktop experience](images/wu-oobe-desktop-experience.png)
 
-Depending on the size of the update, and the strength of the user's network connection, this download may be time-consuming and may impact device performance.
+The size of the update, and the user's network conditions, will determine the download time.
 
 If the user does not download non-critical Windows Updates during OOBE, they can download them at any time of their choosing once they reach the desktop from the **Settings** app.
