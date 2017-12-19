@@ -1,6 +1,6 @@
 ---
 title: Windows updates during OOBE
-description: Describes the types of updates that will download during a user's Out of Box Experience
+description: Describes how both critical and non-critical Windows updates can download during a user's Out of Box Experience
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
