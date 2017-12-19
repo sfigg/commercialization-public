@@ -14,7 +14,7 @@ ms.technology: windows-oem
 
 Critical driver updates, and critical Windows zero-day patch (ZDP) updates, will begin downloading automatically during OOBE after the user has [Connected to a network](connect-to-network.md). The user can't opt-out of these critical updates as they are required for the device to operate properly. Windows will alert the user that the device is checking for, and applying, the updates:
 
-[!Windows checking for critical ZDP updates during oobe](images/zdp-oobe.png)
+![Windows checking for critical ZDP updates during oobe](images/zdp-oobe.png)
 
 A user can choose to download non-critical Windows updates at the end of OOBE. If a newer version of Windows is available than the version that shipped with the device, the user will see the **Your PC has an update waiting** page.
 
