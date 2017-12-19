@@ -23,7 +23,8 @@ For users, the most noticeable benefit of using a modern standby PC is its abili
 
 You can measure modern standby resume performance by using tests that are built into the [Windows Hardware Lab Kit (Windows HLK)](https://msdn.microsoft.com/windows/hardware/dn913721.aspx#hlk) or by manually capturing a trace and reviewing the result in the Windows Performance Analyzer (WPA).
 
-<iframe class="video-iframe" style="width: 100%; height: 550px;" frameborder="0" allowfullscreen="true" src ="https://www.microsoft.com/en-us/videoplayer/embed/a6970900-ed9e-4784-bfbd-171d0cce1588?autoplay=false">A video describing how to use WPA to measure the time required to wake the platform from modern standby.</iframe>
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/a6970900-ed9e-4784-bfbd-171d0cce1588?autoplay=false]
+
 
 Watch this video to learn how to use WPA to measure the time required to wake the platform from modern standby.
 
