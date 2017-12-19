@@ -83,7 +83,7 @@ Running an assessment with the recommended settings is quick and easy. The setti
 
 Watch the video demonstration:
 
-<iframe class="video-iframe" style="width: 100%; height: 550px;" frameborder="0" allowfullscreen="true" src ="https://www.microsoft.com/en-us/videoplayer/embed/3f889614-b65c-4066-84ea-c523fdaabc39?autoplay=false"></iframe>
+> [! VIDEO https://www.microsoft.com/en-us/videoplayer/embed/3f889614-b65c-4066-84ea-c523fdaabc39?autoplay=false]
 
 **To run a single assessment with the recommended settings**
 

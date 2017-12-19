@@ -22,9 +22,9 @@ Included in the [Windows Assessment and Deployment Kit (Windows ADK)](http://go
 
 Here are some videos that show you how to get started with WPA:
 
-<iframe class="video-iframe" style="width: 100%; height: 550px;" frameborder="0" allowfullscreen="true" src ="https://www.microsoft.com/en-us/videoplayer/embed/ae6bad2b-184d-462c-b64e-e8b49dccf89d?autoplay=false"></iframe>
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/ae6bad2b-184d-462c-b64e-e8b49dccf89d?autoplay=false]
 
-<iframe class="video-iframe" style="width: 100%; height: 550px;" frameborder="0" allowfullscreen="true" src ="https://www.microsoft.com/en-us/videoplayer/embed/c0625343-3194-4175-824a-fb75506c1f4f?autoplay=false"></iframe>
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/c0625343-3194-4175-824a-fb75506c1f4f?autoplay=false]
 
 ## <a href="" id="what-s-new-in-wpa"></a>What’s New in WPA
 
