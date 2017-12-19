@@ -30,6 +30,10 @@ For more information on the cellular settings for Windows 10 users, see [Cellula
 
 ## Download critical updates after connecting
 
-Immediately after the user connects to a network, critical driver updates, and Windows ZDP updates, will begin downloading to the device. Only critical updates that are required for the device to function, such as security fixes, will download during this time. As such, the user can't opt out of downloading them. The time required to download the updates depends on the size of the download and the user's network conditions. Their device may restart automatically during the download.
+Immediately after the user connects to a network, critical driver updates, and Windows ZDP updates, will begin downloading to the device. Only critical updates that are required for the device to function, such as security fixes, will download during this time. As such, the user can't opt out of downloading them. Windows will alert the user that the device is checking for, and applying, the updates:
+
+[!Windows checking for critical ZDP updates during oobe](images/zdp-oobe.png)
+
+The time required to download the updates depends on the size of the download and the user's network conditions. Their device may restart automatically during the download.
 
 If a newer version of Windows has become available since the device was shipped, the user will be asked if they would like to download this non-critical Windows Update at the end of OOBE. For more information, see [Windows updates during OOBE](windows-updates-during-oobe.md).

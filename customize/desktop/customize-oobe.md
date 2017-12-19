@@ -12,7 +12,7 @@ ms.technology: windows-oem
 ---
 # Customize the Out of Box Experience (OOBE)
 
-When customers turn on their Windows PCs for the first time, they will see the Windows Out of Box Experience (OOBE). OOBE consists of a series of screens that require customers to accept the license agreement, connect to the internet, log in with, or sign up for a Microsoft Account, and share information with the OEM. In Windows 10, this flow is streamlined. The choices you make in your hardware and software engineering determine how much work customers must do to complete the OOBE screens before they can enjoy their PCs running Windows 10.
+When customers turn on their Windows PCs for the first time, they will see the Windows Out of Box Experience (OOBE). OOBE consists of a series of screens that require customers to accept the license agreement, connect to the internet, log in with, or sign up for a Microsoft Account, and share information with the OEM.
 
 During OOBE, Cortana voice-over strings will assist users by setting the context of each screen, and requesting their input. While voice assistance is more accessible to the non-sighted, the design is focused at being inclusive to all our customers. Cortana voice is intended to be novel and supplementary to increase user engagement in all places in OOBE. Cortana voice also helps reduce cognitive load by offering informationally-identical, but differently-phrased information. We still expect non-sighted users to enable screen readers to get through OOBE. Some pages in OOBE do not accept voice input, and instead require a keyboard or mouse to complete the action. Cortana voice will clearly communicate input requirements (voice or keyboard/mouse) to the user.
 
@@ -32,11 +32,11 @@ The following is a non-exhaustive list of screens the user may see during OOBE, 
 1. **Connect to a network**. After connecting to a network, critical driver updates and critical zero-day patch (ZDP) Windows updates will begin downloading in the background. See [Windows updates during OOBE](windows-updates-during-oobe.md) for more details.
 1. **End User License Agreement (EULA)**
 1. **Sign in to, or create, a Microsoft account**
-1. **Link your phone and PC**. This screen will only appear if the user signed into their Microsoft account, and connected to a network, on the previous screens.
 1. **Windows Hello setup**
-1. **Privacy settings**. In Windows 10 build 1709, the privacy settings screen includes **Learn more** links the user can click for more details about each setting.
+1. **Link your phone and PC**. This screen will only appear if the user signed into their Microsoft account, and connected to a network, on the previous screens.
 1. **Save files to OneDrive**
 1. **Set up Office**. This screen is only displayed if the user is connected to a network, and has provided their Microsoft account information. Content on the page will vary depending on the user’s account type. For example, if their Microsoft account qualifies for a free trial of Office, the page will encourage them to setup their free trial.
+1. **Privacy settings**. In Windows 10 build 1709, the privacy settings screen includes **Learn more** links the user can click for more details about each setting.
 1. **Make Cortana my personal assistant**
 1. **OEM Registration pages**
 1. **Your PC has an update waiting**. This page is only displayed to the user if a newer version of Windows is available than the version that shipped with the device. See [Windows updates during OOBE](windows-updates-during-oobe.md) for more details.
