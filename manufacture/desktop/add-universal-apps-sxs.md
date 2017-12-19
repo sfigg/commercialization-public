@@ -61,7 +61,7 @@ Use the steps from [Lab 3: Add device drivers (.inf-style)](add-device-drivers.m
     Partial example: 
 
     ```
-    Dism /Add-ProvisionedAppxPackage /Image:c:\mount\windows /PackagePath:e:\apps\amd64\Microsoft.3DBuilder_8wekyb3d8bbwe.appxbundle /LicensePath:e:\apps\amd64\Microsoft.3DBuilder_8wekyb3d8bbwe.xml /DependencyPackagePath:e:\apps\amd64\Microsoft.VCLibs.x64.14.00.appx /DependencyPackagePath:e:\apps\amd64\Microsoft.VCLibs.x86.14.00.appx /DependencyPackagePath:Microsoft.VCLibs.x86.14.00.appx
+    Dism /Add-ProvisionedAppxPackage /Image:c:\mount\windows /PackagePath:e:\apps\amd64\Microsoft.3DBuilder_8wekyb3d8bbwe.appxbundle /LicensePath:e:\apps\amd64\Microsoft.3DBuilder_8wekyb3d8bbwe.xml /DependencyPackagePath:e:\apps\amd64\Microsoft.VCLibs.x64.14.00.appx /DependencyPackagePath:e:\apps\amd64\Microsoft.VCLibs.x86.14.00.appx
     ```
 
     For full examples, see [sample scripts](windows-deployment-sample-scripts-sxs.md#Reinstall_Windows_inbox_apps).
@@ -71,7 +71,7 @@ Use the steps from [Lab 3: Add device drivers (.inf-style)](add-device-drivers.m
 For Windows 10, version 1709 add the HEVC codec and it's dependencies from the App Update OPK. Note that the HEVC codec is not currently available as an .appxbundle package, so you'll have to use the .appx packages.
 
 ```
-DISM /image:c:\mount\windows /add-ProvisionedAppxPackage /packagepath:"E:\apps\amd64\Microsoft.HEVCVideoExtension_8wekyb3d8bbwe.x64.appx" /licensepath:"E:\apps\amd64\Microsoft.HEVCVideoExtension_8wekyb3d8bbwe.x64.xml" /dependencypackagepath:"E:\apps\amd64\Microsoft.VCLibs.x64.14.00.appx"
+DISM /image:c:\mount\windows /add-ProvisionedAppxPackage /packagepath:"E:\apps\amd64\Microsoft.HEVCVideoExtension_8wekyb3d8bbwe.x64.appx" /licensepath:"E:\apps\amd64\Microsoft.HEVCVideoExtension_8wekyb3d8bbwe.x64.xml" /dependencypackagepath:"E:\apps\amd64\Microsoft.VCLibs.x64.14.00.appx" /DependencyPackagePath:"E:\apps\amd64\Microsoft.VCLibs.x86.14.00.appx"
 ```
 
 ### Step 4: Add/reinstall other apps, example: Microsoft Universal Office Apps
