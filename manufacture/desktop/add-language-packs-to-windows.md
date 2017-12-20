@@ -1,5 +1,5 @@
 ---
-author: Justinha
+author: themar
 Description: Add Language Packs to Windows
 ms.assetid: 0734452f-aa09-4ec9-bbbf-fbc995dd803f
 MSHAttr: 'PreferredLib:/library/windows/hardware'
@@ -13,6 +13,8 @@ ms.technology: windows-oem
 
 # Add Language Packs to Windows
 
+> [!note]
+> If you're looking to add a language to your personal PC, see [Add and switch input and display language preferences in Windows 10](https://support.microsoft.com/en-gb/help/4027670/windows-add-and-switch-input-and-display-language-preferences-in-windo). 
 
 OEMs can add language packs to localize PCs and devices for customers in different regions.
 
