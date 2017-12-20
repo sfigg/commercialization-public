@@ -1540,6 +1540,11 @@
         "source_path": "customize/desktop/unattend/microsoft-windows-setup-runsynchronous-runsynchronouscommand-credentials-description.md", 
         "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-setup-runsynchronous-runsynchronouscommand-description", 
         "redirect_document_id": true
+    },
+    {   
+        "source_path": "test/hlk/user/install-microsoft-sql-server.md", 
+        "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/test/hlk/user/microsoft-sql-server-options", 
+        "redirect_document_id": true
     }
   ] 
 }
