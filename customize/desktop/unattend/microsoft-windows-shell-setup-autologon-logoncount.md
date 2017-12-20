@@ -72,5 +72,4 @@ The following XML output shows how to set `AutoLogon` so that you can log onto t
 
 ## Related topics
 
-[AutoLogon](microsoft-windows-shell-setup-autologon.md)
 [How to Enable and Disable the Built-in Administrator Account](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/enable-and-disable-the-built-in-administrator-account)
