@@ -173,7 +173,7 @@ WPA offers the following views of reference set data:
 
 -  [Reference Set Outstanding Size by Process](#reference-set-outstanding-size-by-process)
 -  [Reference Set Outstanding Size by Category](#reference-set-outstanding-size-by-category)
--  [Reference Set Outstanding Size by Dynamic/File](#reference-set-outstanding-size-by-dynamic-file)
+-  [Reference Set Outstanding Size by Dynamic/File](#reference-set-outstanding-size-by-dynamicfile)
 
 
 ## Reference Set Outstanding Size by Process
@@ -187,7 +187,7 @@ particular application.
 For the meanings of the columns in this view, see [Important column definitions](#important-column-definitions), later in this topic.
 
 
-## Reference Set Outstanding by Category
+## Reference Set Outstanding Size by Category
 
 This shows memory pages by category for the viewport.
 
@@ -196,7 +196,7 @@ This shows memory pages by category for the viewport.
 For an explanation of page categories, see [Page Category (Dynamic)](#page-category-dynamic) and [Page Category (File)](#page-category-file), later in this topic.
 
 
-## Reference Set Outstanding by Dynamic/File
+## Reference Set Outstanding Size by Dynamic/File
 
 This shows memory categorized by whether it is memory-backed or file-backed for the viewport.
 
