@@ -27,6 +27,11 @@ After installing Windows HLK, the Windows HLK Controller cannot access the HLKJo
 
 To fix this problem, stop and restart the **MSSQLServer** service on the Windows HLK Controller by using Services Management Console (From a command prompt, type services.msc). The **MSSQLServer** service should be set to **Automatic**.
 
+## Transaction log is too large (standalone SQL Server 2012)
+
+When using the HLK with standalone SQL Server 2012, if you find that your transaction log is growing too large or too fast, [you may need to adjust your recovery configuration.](install-microsoft-sql-server.md#using-the-hlk-with-standalone-sql-server-2012)
+
+
 ## <span id="unsup"></span><span id="UNSUP"></span>Unsupported scenarios
 
 

@@ -79,8 +79,6 @@ In addition to multi-device testing, you can further reduce test time on certain
 
 The parent nodes themselves (USB Composite Device or Internal USB Hub) must be tested and may not be deselected.
 
-[Download the video (MP4)](http://content4.catalog.video.msn.com/e2/ds/3942b58c-c0ab-4c92-add7-578bc34979f0.mp4)
-
 **Part 1: Identify eligible devices that can be deselected.**
 
 1.  From your test client, open Device Manager, select **View&gt;Devices by connection**.

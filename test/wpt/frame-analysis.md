@@ -22,8 +22,9 @@ Whether you’re just getting started with Microsoft Store app development or yo
 
 The videos below introduce you to the Frame Analysis tab of the Microsoft Store App Analysis profile.
 
-<iframe class="video-iframe" style="width: 100%; height: 550px;" frameborder="0" allowfullscreen="true" src ="https://www.microsoft.com/en-us/videoplayer/embed/82711169-ea06-43c3-9e94-b86db2fdf402?autoplay=false"></iframe>
-<iframe class="video-iframe" style="width: 100%; height: 550px;" frameborder="0" allowfullscreen="true" src ="https://www.microsoft.com/en-us/videoplayer/embed/fb509ed2-954e-485b-95f7-294793c2e145?autoplay=false"></iframe>
+>[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/82711169-ea06-43c3-9e94-b86db2fdf402?autoplay=false]
+
+>[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/fb509ed2-954e-485b-95f7-294793c2e145?autoplay=false]
 
 For more information on Frame Analysis concepts, see the following //build/ 2013 presentation:
 

@@ -66,9 +66,9 @@ Before you run the test, complete the test setup as described in the test requir
 
 Watch the following video demonstration.
 
-<iframe class="video-iframe" style="width: 100%; height: 550px;" frameborder="0" allowfullscreen="true" src ="https://www.microsoft.com/en-us/videoplayer/embed/caa1967e-1e59-484a-b55b-23dd3efe70d7?autoplay=false"></iframe>
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/caa1967e-1e59-484a-b55b-23dd3efe70d7/?autoplay=false]
 
-[Download the video (MP4)](http://content5.catalog.video.msn.com/e2/ds/c7cb1516-1219-45d7-a3e1-cc757efdf16c.mp4)
+
 
 
 
