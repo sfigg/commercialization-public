@@ -14,11 +14,12 @@ ms.technology: windows-oem
 
 # Microsoft-Windows-Embedded-KeyboardFilterService
 
-
 You can use KeyboardFilterService in to suppress undesirable key presses or key combinations. Normally, a customer can use certain Windows key combinations like Ctrl+Alt+Delete or Ctrl+Shift+Tab to alter the operation of a device by locking the screen or using Task Manager to close a running application. This may not be desirable if your device is intended for a dedicated purpose. However, you can use KeyboardFilterService to suppress any key press or key combination that causes an undesirable system behavior.
 
-## Child elements
+>[!Tip]
+> For Unattend code samples that show how to suppress various key strokes and shortcuts, see the topics below. For more general information about this feature, see [Customizations for Enterprise - Keyboard Filter](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/keyboardfilter).
 
+## Child elements
 
 <table>
 <colgroup>

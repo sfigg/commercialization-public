@@ -21,7 +21,7 @@ ms.technology: windows-oem
 
 Starting with Windows 8.1, a software tool, SleepStudy, became available as an inbox component in all Windows PCs that implement the modern standby power model. SleepStudy can measure modern standby performance with minimal impact.
 
-<iframe class="video-iframe" style="width: 100%; height: 550px;" frameborder="0" allowfullscreen="true" src ="https://www.microsoft.com/en-us/videoplayer/embed/b9dccad1-575e-49cb-95c7-d883629e2cf8?autoplay=false">A video describing how to use SleepStudy to find and fix components that cause unexpected battery drain.</iframe>
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/b9dccad1-575e-49cb-95c7-d883629e2cf8?autoplay=false]
 
 Watch this video to learn how to use SleepStudy to find and fix components that cause unexpected battery drain.
 

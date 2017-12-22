@@ -225,7 +225,7 @@ To get the cluster and storage diagnostic logs for a failed result:
 
 If you need to send logs to Microsoft for help in test failure analysis, please see the [Package the results](#package-the-results) section for steps to create the .HLKX result package. This package will contain relevant logs generated and gathered by tests, and will help in analysis of failures.
 
-### <span id="common_known_issues"></span><span id="COMMON_KNOWN_ISSUES"></span>Common known issues
+### Common known issues
 
 The most common cause of test failures is due to one or more spaces taking too long to regenerate data (in a state of service/regeneration for too long) after a node or nodes were brought down and recovered. Uneven storage performance can cause regeneration to exceed timeout and cause tests to fail. If you see this issue frequently, your configuration may have performance bottlenecks. If this is the case, we recommend that you check your storage, network performance, and remote direct memory access (RDMA).
 
@@ -243,7 +243,7 @@ Error: 1148.035C 2015/01/12-14:41:10.489 \[**SEV2**\] 0 : \[TST\]Status=258(102H
 
 1148.035C 2015/01/12-14:41:10.505 \[INFO\] 0 : \[TST\] Message for error 258 (0x102): The wait operation timed out. \[wttlog.cpp@1237\]
 
-## <span id="package_the_results"></span><span id="PACKAGE_THE_RESULTS"></span>Package the results
+## Package the results
 
 
 After all of the tests have completed successfully, and while you are still in the same project in **HLK Studio**, select the **Package** tab, and then **Create Package** in the lower-right corner. When you are prompted for **Signing Options**, select **Do not sign**. Save the results to a file. This file needs to be included in any S2D certification submission.
