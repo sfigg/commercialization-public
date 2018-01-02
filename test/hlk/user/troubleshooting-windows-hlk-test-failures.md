@@ -39,10 +39,8 @@ We recommend that you use this guide as your starting point to troubleshoot Wind
 Verify that you have the latest updates and filters for Windows HLK. The test failure might already be resolved by a published filter or update. You can get the latest Windows HLK content at [Windows Hardware Lab Kit Filters](windows-hardware-lab-kit-filters.md).
 
 Watch a video demonstration.
-<iframe class="video-iframe" style="width: 100%; height: 550px;" frameborder="0" allowfullscreen="true" src="https://www.microsoft.com/en-us/videoplayer/embed/6d820a97-9954-4005-83ed-534d6648dab5?autoplay=false"></iframe>
 
-[Download the video (MP4)](http://content3.catalog.video.msn.com/e2/ds/fd494d2e-c29b-48a5-89d8-ef8af803ef0b.mp4)
-
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/6d820a97-9954-4005-83ed-534d6648dab5?autoplay=false]
 
 
 ## <span id="reviewstat"></span><span id="REVIEWSTAT"></span>**2. Review the Status icons**
@@ -126,10 +124,7 @@ Make sure that the test was run correctly, as described in the following section
 
 Watch a video demonstration.
 
-<iframe class="video-iframe" style="width: 100%; height: 550px;" frameborder="0" allowfullscreen="true" src="https://www.microsoft.com/en-us/videoplayer/embed/d3e3bdd1-2a1d-458d-8950-a17292a0dea1?autoplay=false">Windows Hardware Lab Kit playlists</iframe>
-
-[Download the video (MP4)](http://content3.catalog.video.msn.com/e2/ds/39ed490b-5bff-44f2-9556-24d039245648.mp4)
-
+>[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/d3e3bdd1-2a1d-458d-8950-a17292a0dea1?autoplay=false]
 
 
 ### <span id="specconfig"></span><span id="SPECCONFIG"></span>**Verify tests that require special configuration**
@@ -141,8 +136,7 @@ Some Windows HLK tests require additional files that are not included in the Win
 Tests that require special configuration are denoted by a toolbox icon (![special configuration](images/hlk-winb-toolboxicon-commonts.png)) in the **Type** column in the **Test** pane and the **Results** pane in Windows HLK Studio. Special configuration details are described in the test reference topic for each test. For specific test reference documentation, see [HLK Test Reference](..\testref\hardware-lab-kit-test-reference.md), or from in Windows HLK Studio, select the specific test on the **Test** tab or the **Result** tab, and then press **F1**.
 
 >[!NOTE]
->  
-The online version of the help content is generally the most current.
+>  The online version of the help content is generally the most current.
 
  
 
@@ -173,10 +167,7 @@ Be aware that re-selecting the test target invalidates and removes all previous 
 
 Watch a video demonstration.
 
-<iframe class="video-iframe" style="width: 100%; height: 550px;" frameborder="0" allowfullscreen="true" src ="https://www.microsoft.com/en-us/videoplayer/embed/2bca5897-7ae7-4b0b-9416-9ea7fdc5ab9d?autoplay=false"></iframe>
-
-[Download the video (MP4)](http://content4.catalog.video.msn.com/e2/ds/b7b95642-a144-4558-9342-d24835b6dc6e.mp4)
-
+>[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/2bca5897-7ae7-4b0b-9416-9ea7fdc5ab9d?autoplay=false]
 
 
 ## <span id="cat"></span><span id="CAT"></span>**5. Identify the failure category**

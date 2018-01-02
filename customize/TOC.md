@@ -7,6 +7,7 @@
 #### [OOBE.xml](desktop/oobexml.md)
 #### [Cortana voice support](desktop/cortana-voice-support.md)
 #### [Connect users to the network](desktop/connect-to-network.md)
+#### [Windows updates during OOBE](desktop/windows-updates-during-oobe.md)
 #### [OEM HID pairing](desktop/oem-hid-pairing.md)
 #### [OEM license terms](desktop/oem-license.md)
 #### [OEM registration pages](desktop/oem-registration-pages.md)

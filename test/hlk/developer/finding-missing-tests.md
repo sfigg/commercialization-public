@@ -18,12 +18,12 @@ ms.technology: windows-oem
 
 This sample shows how to find tests that are missing from a package. The sample is divided into four files:
 
--   [Program.cs](#program-cs): main program file
--   [PlaylistDL.cs](#playlistdl-cs): class used to represent a playlist file for downlevel operating systems
--   [PlaylistHelper.cs](#playlisthelper-cs): helper class used for deserialization of downlevel playlists
--   [PlaylistDL.xsd](#playlistdl-xsd): schema that is used to validate the output playlist XML file. Place this file next to your executable.
+-   [Program.cs](#programcs): main program file
+-   [PlaylistDL.cs](#playlistdlcs): class used to represent a playlist file for downlevel operating systems
+-   [PlaylistHelper.cs](#playlisthelpercs): helper class used for deserialization of downlevel playlists
+-   [PlaylistDL.xsd](#playlistdlxsd): schema that is used to validate the output playlist XML file. Place this file next to your executable.
 
-## <span id="program_cs"></span><span id="PROGRAM_CS"></span>Program.cs
+## Program.cs
 
 
 ``` syntax
@@ -205,7 +205,7 @@ namespace Sample.MissingTest
 }
 ```
 
-## <span id="playlistdl_cs"></span><span id="PLAYLISTDL_CS"></span>PlaylistDL.cs
+## PlaylistDL.cs
 
 
 ``` syntax
@@ -511,7 +511,7 @@ namespace Sample.MissingTest
 }
 ```
 
-## <span id="playlisthelper_cs"></span><span id="PLAYLISTHELPER_CS"></span>PlaylistHelper.cs
+## PlaylistHelper.cs
 
 
 ``` syntax
@@ -862,7 +862,7 @@ namespace Sample.MissingTest
 }
 ```
 
-## <span id="playlistdl_xsd"></span><span id="PLAYLISTDL_XSD"></span>PlaylistDL.xsd
+## PlaylistDL.xsd
 
 
 ``` syntax

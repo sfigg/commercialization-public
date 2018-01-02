@@ -96,21 +96,17 @@ The following image shows an example test environment.
 <tr class="odd">
 <td><p>Operating system</p></td>
 <td><p>English language and English local version of Windows Server 2008 R2 64-bit with service pack (SP1), Windows Server 2012, or Windows Server 2012 R2. For information, see the [Windows Server](http://go.microsoft.com/fwlink/?LinkId=236055) website.</p>
-<div class="alert">
-<strong>Note</strong>  
-<p>Controller isn't supported on Windows Server 2003, Windows Server 2008, Windows Vista, Windows XP, or Windows 2000.</p>
-<p>Controller isn't supported on an installation that has already been set up as a domain controller.</p>
-</div>
-<div>
- 
-</div></td>
+</td>
 <td><p></p></td>
 </tr>
 </tbody>
 </table>
 
+>[!NOTE]
+> - Windows 10S users should test against Windows 10 Pro.
+> - Controller isn't supported on Windows Server 2003, Windows Server 2008, Windows Vista, Windows XP, or Windows 2000.
+> - Controller isn't supported on an installation that has already been set up as a domain controller.
  
-
 ### <span id="Test_system"></span><span id="test_system"></span><span id="TEST_SYSTEM"></span>Test system
 
 <table>
@@ -146,7 +142,9 @@ The following image shows an example test environment.
 <td><p>Operating system</p></td>
 <td><p>Install the English language and English local version of the Windows operating system that you are testing against.</p>
 <p>Test systems are not supported in a virtual PC or any third-party Hypervisor environment.</p>
-<p>If you are testing against a Windows “N” edition, you must also manually install Media Feature Pack.</p></td>
+<p>If you are testing against a Windows “N” edition, you must also manually install Media Feature Pack.</p>
+<p>Windows 10S users should test against Windows 10 Pro.</p>
+</td>
 </tr>
 <tr class="even">
 <td><p>Additional requirements</p></td>

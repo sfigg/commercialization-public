@@ -11,17 +11,19 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # Text correction and suggestions
-
 
 Partners must enable text correction and text suggestions for at least one input language, and can optionally include more.
 
 By default, the keyboard language files used for text correction and suggestions while typing are not included on the device.
 
+> [!Tip]
+> The primary audience for these topics is Original Equipment Manufacturers (OEMs). If you're a Windows device owner (consumer) and would like to learn more about power settings in Windows 10, please see results for [text correction](https://answers.microsoft.com/en-us/search/search?SearchTerm=text+correction&IsSuggestedTerm=false&tab=&isFilterExpanded=false&CurrentScope.ForumName=windows&CurrentScope.Filter=windows_10-other_settings-winpc&ContentTypeScope=#/windows/windows_10-other_settings-winpc//1) on Microsoft's community support site.
+
 Text correction and suggestions are supported for the following input languages: Arabic, Catalan, Croatian, Czech, Danish, Dutch (Belgium), Dutch (Netherlands), English (India), English (UK), English (US), Finnish, French (Canada), French (Switzerland), French (France), German, Greek, Hebrew, Hinglish, Hungarian, Indonesian, Italian, Japanese, Korean, Malay, Norwegian (Bokmål), Persian, Polish, Portuguese (Brazil), Portuguese (Portugal), Romanian, Russian, Serbian (Latin), Serbian (Cyrillic), Simplified Chinese, Slovak, Spanish (Mexico), Spanish (Spain), Swedish, Traditional Chinese (Hong Kong SAR), Traditional Chinese (Taiwan), Turkish, Ukrainian, and Vietnamese.
 
-<a href="" id="instructions-"></a>**Instructions:**  
+## Instructions
+
 For more information about language customizations, see the overview [Set languages and locales](set-languages-and-locales.md).
 
 To modify the list of speech languages, the OEM must edit the **Keyboard** section of the OEMInput.xml file before building the device image. The following input languages are supported.
@@ -215,8 +217,6 @@ To modify the list of speech languages, the OEM must edit the **Keyboard** secti
 </tbody>
 </table>
 
- 
-
 OEMs must include at least one keyboard language. To include multiple languages, add additional **Language** entries to the **Keyboard** section of the OEMInput.xml file, as shown in the following sample.
 
 ```XML
@@ -235,12 +235,11 @@ OEMs must include at least one keyboard language. To include multiple languages,
   </SupportedLanguages>
 ```
 
-<a href="" id="testing-steps-"></a>**Testing Steps:**  
-1.  Flash the build containing this customization to a device.
+## Testing steps
 
-2.  Go to the **keyboard** screen in **Settings**.
-
-3.  Verify that the list of keyboard languages installed on the device is correct.
+1. Flash the build containing this customization to a device.
+1. Go to the **keyboard** screen in **Settings**.
+1. Verify that the list of keyboard languages installed on the device is correct.
 
 ## Related topics
 

@@ -20,7 +20,9 @@ Windows System Image Manager (Windows SIM) uses Windows image **(.wim)** files 
    > [!Tip]
    > Install.wim is located in the `Sources` folder of your Windows Installation Media download. See [OEM deployment of Windows 10 for desktop editions](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/oem-deployment-of-windows-10-for-desktop-editions#customize-your-windows-image) for steps to make and deploy Windows images.
 
-## <a href="" id="supported_architectures"></a> Supported architectures
+You can open Windows SIM by searching your computer for "Windows System Image Manager".
+
+## Supported architectures
 
 Windows SIM can create catalog files for Windows images of the following architecture types
 
