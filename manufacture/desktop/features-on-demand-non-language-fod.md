@@ -156,6 +156,6 @@ These Features on Demand add the retail demo package to a device, for use in ret
 
 ## Related topics
 
-[Features on Demand](features-on-demand-v2--capabilities.md). 
+[Features on Demand](features-on-demand-v2--capabilities.md) 
 
 [Language and region Features on Demand](features-on-demand-language-fod.md)
