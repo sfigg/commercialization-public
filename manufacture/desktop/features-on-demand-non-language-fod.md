@@ -144,11 +144,12 @@ These Features on Demand are for devices running Windows Server as a Print Serve
 
 These Features on Demand add the retail demo package to a device, for use in retail stores. These features are available as .cab packages on the FOD ISO.
 
-**Recommendation:** Only preinstall on devices that are sold to retail stores for demonstration. Not including this Feature on Demand will cause no retail demo presentation to be available on a device.
+**Recommendation:** Preinstall on all devices. Install the language-neutral FOD, as well as at least one language-specific FOD to ensure that any Windows 10 device can be used as a demo device. Windows will automatically remove these FODs after a user goes through a non-RetailDemo OOBE.
+
 
 | Name | CAB Name |
 |-----------------------|---------------------------------------------------|
-| Retail Demo Content  | Microsoft-Windows-RetailDemo-OfflineContent-Content-Package.cab |
+| Language-neutral Retail Demo Content  | Microsoft-Windows-RetailDemo-OfflineContent-Content-Package.cab |
 | Language specific Retail Demo Content | Microsoft-Windows-RetailDemo-OfflineContent-Content-*language-country*-Package.cab |
 
 
