@@ -2,7 +2,7 @@
 title: DismGetDrivers function
 description: Lists the drivers in an image.
 ms.assetid: 49731558-d7ef-4fdc-839a-f6483f6e51ba
-keywords: ["DismGetDrivers function"]
+keywords: DismGetDrivers function
 ms.author: themar
 ms.date: 10/25/2017
 ms.topic: article
@@ -18,12 +18,7 @@ ms.technology: windows-oem
 Lists the drivers in an image.
 
 Syntax
-ms.author: themar
-ms.date: 10/25/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
-------
+---
 
 ```ManagedCPlusPlus
 HRESULT WINAPI DismGetDrivers(
@@ -35,12 +30,7 @@ HRESULT WINAPI DismGetDrivers(
 ```
 
 Parameters
-ms.author: themar
-ms.date: 10/25/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
-----------
+-------
 
 *Session* \[in\]  
 A valid [DismSession](dismsession.md). The DismSession must be associated with an image. You can associate a session with an image by using the [**DismOpenSession**](dismopensession-function.md).
@@ -74,12 +64,7 @@ A pointer to the address of an array of [**DismDriverPackage**](dismdriverpackag
 The number of [**DismDriverPackage**](dismdriverpackage-structure.md) structures that were returned.
 
 Return value
-ms.author: themar
-ms.date: 10/25/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
-------------
+---------
 
 Returns `S_OK` on success.
 
@@ -116,12 +101,7 @@ hr = DismGetDrivers(Session, TRUE, &amp;DriverPackageInfos, &amp;Count);
  
 
 Requirements
-ms.author: themar
-ms.date: 10/25/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
-------------
+---------
 
 <table>
 <colgroup>

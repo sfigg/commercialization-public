@@ -2,7 +2,7 @@
 title: DismImageInfo structure
 description: Describes the metadata of an image.
 ms.assetid: acd4cc5c-03f5-457b-a0a6-53034d80dc75
-keywords: ["DismImageInfo structure"]
+keywords: DismImageInfo structure
 ms.author: themar
 ms.date: 10/25/2017
 ms.topic: article
@@ -16,12 +16,7 @@ ms.technology: windows-oem
 Describes the metadata of an image.
 
 Syntax
-ms.author: themar
-ms.date: 10/25/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
-------
+---
 
 ```ManagedCPlusPlus
 typedef struct _DismImageInfo {
@@ -52,12 +47,7 @@ typedef struct _DismImageInfo {
 ```
 
 Members
-ms.author: themar
-ms.date: 10/25/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
--------
+----
 
 **ImageType**  
 A [DismImageType](dismimagetype-enumeration.md) enumeration value such as **DismImageTypeWim**.
@@ -151,12 +141,7 @@ The customized information for the image file. A [**DismWimCustomizedInfo**](dis
  
 
 Requirements
-ms.author: themar
-ms.date: 10/25/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
-------------
+---------
 
 <table>
 <colgroup>

@@ -15,7 +15,10 @@ ms.technology: windows-oem
 
 This section contains information about the power settings that you can configure using the Windows provisioning framework. Each power setting topic includes the identification GUID, allowed values, meaning, and common usage scenarios for the setting.
 
-## <span id="Use_Windows_provisioning_to_configure_power_settings"></span>Use Windows Configuration Designer to configure power settings
+> [!Tip]
+> The primary audience for these topics is Original Equipment Manufacturers (OEMs). If you're a Windows device owner (consumer) and would like to learn more about power settings in Windows 10, please see [How to enable Hibernate and Sleep in Power Options](https://answers.microsoft.com/en-us/insider/forum/insider_wintp-insider_personal/how-to-enable-hibernate-and-sleep-in-power-options/2bca761d-a35a-4d07-9e7b-dc2c8f2330b3) on Microsoft's community support site. You can also search for troubleshooting instructions on this site if needed.
+
+## Use Windows Configuration Designer to configure power settings
 
 To configure the power settings, you will first create a provisioning package using [Windows Configuration Designer](https://docs.microsoft.com/en-us/windows/configuration/provisioning-packages/provisioning-install-icd). You will then edit the customizations.xml file contained in the package to include your power settings. Use the XML file as one of the inputs to the Windows Configuration Designer command-line to generate either a provisioning package or a Windows image that contains the power settings. For information on how to use the Windows Configuration Designer CLI, see [Use the Windows Configuration Designer command-line interface](https://docs.microsoft.com/en-us/windows/configuration/provisioning-packages/provisioning-command-line).
 
@@ -41,7 +44,7 @@ The following example shows what your Windows provisioning answer file might loo
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <WindowsCustomizatons>
-  <PackageConfig xmlns="urn:schemas-Microsoft-com:Windows-ICD-Package-Config.v1.0"> 
+  <PackageConfig xmlns="urn:schemas-Microsoft-com:Windows-ICD-Package-Config.v1.0">
     <ID>{7e5c6cb3-bd16-4c1a-aacb-98c9151d5f20}</ID>  <!-- ID needs to be be unique GUID for the package -->
     <Name>CustomOEM.Power.Settings.Control</Name>
     <Version>1.0</Version>
@@ -90,13 +93,11 @@ The following example shows what your Windows provisioning answer file might loo
 </WindowsCustomizatons>
 ```
 
-## <span id="use_powercfg.exe_to_control_power_schemes_"></span><span id="USE_POWERCFG.EXE_TO_CONTROL_POWER_SCHEMES_"></span>Use Powercfg.exe to control power schemes
+## Use Powercfg.exe to control power schemes
 
 You can use the powercfg.exe tool to control power schemes by providing the GUID or alias for the setting. For more information on how to use this tool, see [Powercfg command-line options](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/powercfg-command-line-options).
 
-## <span id="in_this_section"></span><span id="IN_THIS_SECTION"></span>
-
-## <span id="in_this_section"></span>In this section
+## In this section
 
 <table>
 <colgroup>

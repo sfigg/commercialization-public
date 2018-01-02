@@ -2,7 +2,7 @@
 title: DismRestoreImageHealth function
 description: Repairs a corrupted image that has been identified as repairable by DismCheckImageHealth.
 ms.assetid: ed9c0f9a-ada1-4eea-b741-ccff7ff1afff
-keywords: ["DismRestoreImageHealth function"]
+keywords: DismRestoreImageHealth function
 ms.author: themar
 ms.date: 10/25/2017
 ms.topic: article
@@ -18,12 +18,7 @@ ms.technology: windows-oem
 Repairs a corrupted image that has been identified as repairable by [**DismCheckImageHealth**](dismcheckimagehealth-function.md).
 
 Syntax
-ms.author: themar
-ms.date: 10/25/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
-------
+---
 
 ```ManagedCPlusPlus
 HRESULT WINAPI DismRestoreImageHealth(
@@ -38,12 +33,7 @@ HRESULT WINAPI DismRestoreImageHealth(
 ```
 
 Parameters
-ms.author: themar
-ms.date: 10/25/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
-----------
+-------
 
 *Session* \[in\]  
 A valid [DismSession](dismsession.md). The DismSession must be associated with an image. You can associate a session with an image by using the [**DismOpenSession**](dismopensession-function.md).
@@ -86,12 +76,7 @@ Optional. A pointer to a client-defined [DismProgressCallback](dismprogresscallb
 Optional. User defined custom data.
 
 Return value
-ms.author: themar
-ms.date: 10/25/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
-------------
+---------
 
 Returns **S\_OK** on success.
 
@@ -133,12 +118,7 @@ hr = DismRestoreImageHealth(Session, NULL, 0, TRUE, NULL, NULL, NULL);
  
 
 Requirements
-ms.author: themar
-ms.date: 10/25/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
-------------
+---------
 
 <table>
 <colgroup>

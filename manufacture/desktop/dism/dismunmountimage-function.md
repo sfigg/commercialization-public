@@ -2,7 +2,7 @@
 title: DismUnmountImage function
 description: Unmounts a Windows image from a specified location.
 ms.assetid: e1823a47-6de5-466e-80a6-5b5940d48a14
-keywords: ["DismUnmountImage function"]
+keywords: DismUnmountImage function
 ms.author: themar
 ms.date: 10/25/2017
 ms.topic: article
@@ -18,12 +18,7 @@ ms.technology: windows-oem
 Unmounts a Windows image from a specified location.
 
 Syntax
-ms.author: themar
-ms.date: 10/25/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
-------
+---
 
 ```ManagedCPlusPlus
 HRESULT WINAPI DismUnmountImage(
@@ -36,12 +31,7 @@ HRESULT WINAPI DismUnmountImage(
 ```
 
 Parameters
-ms.author: themar
-ms.date: 10/25/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
-----------
+-------
 
 *MountPath* \[in\]  
 A relative or absolute path to the mount directory of the image.
@@ -59,12 +49,7 @@ Optional. A pointer to a client-defined [DismProgressCallback](dismprogresscallb
 Optional. User defined custom data.
 
 Return value
-ms.author: themar
-ms.date: 10/25/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
-------------
+---------
 
 Returns **S\_OK** on success.
 
@@ -106,12 +91,7 @@ hr = DismUnmountImage (L"C:\\test\\offline", DISM_COMMIT_IMAGE, NULL, NULL, NULL
  
 
 Requirements
-ms.author: themar
-ms.date: 10/25/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
-------------
+---------
 
 <table>
 <colgroup>

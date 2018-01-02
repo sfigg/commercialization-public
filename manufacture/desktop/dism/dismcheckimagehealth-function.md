@@ -2,7 +2,7 @@
 title: DismCheckImageHealth function
 description: Checks whether the image can be serviced or is corrupted.
 ms.assetid: 22039ad7-3cdb-491e-a396-b6fd8fa5f06a
-keywords: ["DismCheckImageHealth function"]
+keywords: DismCheckImageHealth function
 ms.author: themar
 ms.date: 10/25/2017
 ms.topic: article
@@ -16,12 +16,7 @@ ms.technology: windows-oem
 Checks whether the image can be serviced or is corrupted.
 
 Syntax
-ms.author: themar
-ms.date: 10/25/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
-------
+---
 
 ```ManagedCPlusPlus
 HRESULT WINAPI WINAPI DismCheckImageHealth(
@@ -35,12 +30,7 @@ HRESULT WINAPI WINAPI DismCheckImageHealth(
 ```
 
 Parameters
-ms.author: themar
-ms.date: 10/25/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
-----------
+-------
 
 *Session* \[in\]  
 A valid [DismSession](dismsession.md). The DismSession must be associated with an image. You can associate a session with an image by using the [**DismOpenSession**](dismopensession-function.md).
@@ -80,12 +70,7 @@ Optional. User defined custom data.
 A pointer to the [DismImageHealthState](dismimagehealthstate-enumeration.md) enumeration. The enumeration value is set during this operation.
 
 Return value
-ms.author: themar
-ms.date: 10/25/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
-------------
+---------
 
 Returns `S_OK` on success.
 
@@ -126,12 +111,7 @@ hr = DismCheckImageHealth(Session, TRUE, NULL, NULL, NULL, &amp;state);
  
 
 Requirements
-ms.author: themar
-ms.date: 10/25/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
-------------
+---------
 
 <table>
 <colgroup>

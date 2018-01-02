@@ -2,7 +2,7 @@
 title: DismGetLastErrorMessage function
 description: Gets the error message in the current thread, immediately after a failure.
 ms.assetid: bd07d96b-e2b5-4d3a-8473-760087e5a3b1
-keywords: ["DismGetLastErrorMessage function"]
+keywords: DismGetLastErrorMessage function
 ms.author: themar
 ms.date: 10/25/2017
 ms.topic: article
@@ -18,12 +18,7 @@ ms.technology: windows-oem
 Gets the error message in the current thread, immediately after a failure.
 
 Syntax
-ms.author: themar
-ms.date: 10/25/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
-------
+---
 
 ```ManagedCPlusPlus
 HRESULT WINAPI DismGetLastErrorMessage(
@@ -32,23 +27,13 @@ HRESULT WINAPI DismGetLastErrorMessage(
 ```
 
 Parameters
-ms.author: themar
-ms.date: 10/25/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
-----------
+-------
 
 *ErrorMessage* \[out\]  
 The detailed error message in the current thread.
 
 Return value
-ms.author: themar
-ms.date: 10/25/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
-------------
+---------
 
 Returns **S\_OK** on success.
 
@@ -89,12 +74,7 @@ hr = DismGetLastErrorMessage(&ErrorMessage);
  
 
 Requirements
-ms.author: themar
-ms.date: 10/25/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
-------------
+---------
 
 <table>
 <colgroup>

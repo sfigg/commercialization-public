@@ -2,7 +2,7 @@
 title: DismCustomProperty structure
 description: Describes the custom properties of a package.
 ms.assetid: 78a16e0f-97d4-4564-817f-052318836535
-keywords: ["DismCustomProperty structure"]
+keywords: DismCustomProperty structure
 ms.author: themar
 ms.date: 10/25/2017
 ms.topic: article
@@ -16,12 +16,7 @@ ms.technology: windows-oem
 Describes the custom properties of a package. Custom properties are any properties that are not found in [DismPackage](dismpackage-structure.md) or [DismFeature](dismfeature-structure.md) structures.
 
 Syntax
-ms.author: themar
-ms.date: 10/25/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
-------
+---
 
 ```ManagedCPlusPlus
 typedef struct _DismCustomProperty {
@@ -32,12 +27,7 @@ typedef struct _DismCustomProperty {
 ```
 
 Members
-ms.author: themar
-ms.date: 10/25/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
--------
+----
 
 **Name**  
 The name of the custom property.
@@ -71,12 +61,7 @@ The path of the custom property.
  
 
 Requirements
-ms.author: themar
-ms.date: 10/25/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
-------------
+---------
 
 <table>
 <colgroup>

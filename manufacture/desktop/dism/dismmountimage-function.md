@@ -2,7 +2,7 @@
 title: DismMountImage function
 description: Mounts a WIM or VHD image file to a specified location.
 ms.assetid: 0ae41269-8735-41ff-9dcd-f0274f0d194e
-keywords: ["DismMountImage function"]
+keywords: DismMountImage function
 ms.author: themar
 ms.date: 10/25/2017
 ms.topic: article
@@ -18,12 +18,7 @@ ms.technology: windows-oem
 Mounts a WIM or VHD image file to a specified location.
 
 Syntax
-ms.author: themar
-ms.date: 10/25/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
-------
+---
 
 ```ManagedCPlusPlus
 HRESULT WINAPI DismMountImage(
@@ -40,12 +35,7 @@ HRESULT WINAPI DismMountImage(
 ```
 
 Parameters
-ms.author: themar
-ms.date: 10/25/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
-----------
+-------
 
 *ImageFilePath* \[in\]  
 The path to the WIM or VHD file on the local computer. A .wim, .vhd, or .vhdx file name extension is required.
@@ -75,12 +65,7 @@ Optional. A pointer to a client-defined [DismProgressCallback](dismprogresscallb
 Optional. User defined custom data.
 
 Return value
-ms.author: themar
-ms.date: 10/25/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
-------------
+---------
 
 Returns **S\_OK** on success.
 
@@ -132,12 +117,7 @@ hr = DismMountImage(L” C:\\test\\images\\myimage.wim”, L"C:\\test\\offline",
  
 
 Requirements
-ms.author: themar
-ms.date: 10/25/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
-------------
+---------
 
 <table>
 <colgroup>

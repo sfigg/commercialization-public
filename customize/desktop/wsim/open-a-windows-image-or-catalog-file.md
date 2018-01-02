@@ -26,7 +26,7 @@ To create an answer file, you must first open a Windows image file or catalog fi
    > [!Tip]
    > Install.wim is located in the `Sources` folder of your Windows Installation Media download. See [OEM deployment of Windows 10 for desktop editions](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/oem-deployment-of-windows-10-for-desktop-editions#customize-your-windows-image) for steps to make and deploy Windows images.
 
-1. On the technician computer, open Windows SIM.
+1. On the technician computer, open Windows SIM. One way to do this is to search for "Windows System Image Manager".
 1. On the **File** menu, click **Select Windows Image**.
 1. In the **Select a Windows Image** dialog box, select the file type in the **Files of type** drop-down list, and then browse to a Windows image file or catalog file. If you open a Windows image file, Windows SIM will automatically create a catalog of that Windows image.
 1. If there is more than one type of Windows image in the file, select a specific Windows image in the **Select an Image** box. The Windows image file or catalog file appears in the **Windows Image** pane.

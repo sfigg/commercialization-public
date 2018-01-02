@@ -2,7 +2,7 @@
 title: DismDelete function
 description: Releases resources held by a structure or an array of structures returned by other DISM API Functions.
 ms.assetid: df65e1b2-65b2-4825-bc09-b46c99da742d
-keywords: ["DismDelete function"]
+keywords: DismDelete function
 ms.author: themar
 ms.date: 10/25/2017
 ms.topic: article
@@ -18,12 +18,7 @@ ms.technology: windows-oem
 Releases resources held by a structure or an array of structures returned by other [DISM API Functions](dism-api-functions.md).
 
 Syntax
-ms.author: themar
-ms.date: 10/25/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
-------
+---
 
 ```ManagedCPlusPlus
 HRESULT WINAPI DismDelete(
@@ -32,23 +27,13 @@ HRESULT WINAPI DismDelete(
 ```
 
 Parameters
-ms.author: themar
-ms.date: 10/25/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
-----------
+-------
 
 *DismStructure* \[in\]  
 A pointer to the structure, or array of structures, to be deleted. The structure must have been returned by an earlier call to a [DISM API function](dism-api-functions.md).
 
 Return value
-ms.author: themar
-ms.date: 10/25/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
-------------
+---------
 
 Returns `S_OK` on success.
 
@@ -84,12 +69,7 @@ hr = DismDelete(ImageInfo);
  
 
 Requirements
-ms.author: themar
-ms.date: 10/25/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
-------------
+---------
 
 <table>
 <colgroup>

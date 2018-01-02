@@ -20,7 +20,7 @@ ms.technology: windows-oem
 
 WPA now includes capabilities that help you analyze Microsoft Store app performance. Watch the video below for a quick overview of some of these features:
 
-<iframe class="video-iframe" style="width: 100%; height: 550px;" frameborder="0" allowfullscreen="true" src ="https://www.microsoft.com/en-us/videoplayer/embed/bf588be3-5aa0-4679-9f00-7dcaa93df127?autoplay=false"></iframe>
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/bf588be3-5aa0-4679-9f00-7dcaa93df127?autoplay=false ]
 
 ## Microsoft Store App Profiles
 

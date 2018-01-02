@@ -55,7 +55,7 @@
 ##### [HLK Lab Security](user/hlk-lab-security.md)
 ##### [HLK Filters](user/windows-hardware-lab-kit-filters.md)
 ##### [Manage HLK User Accounts](user/manage-hlk-user-accounts.md)
-##### [Install Microsoft SQL Server](user/install-microsoft-sql-server.md)
+##### [Microsoft SQL Server Options](user/microsoft-sql-server-options.md)
 ##### [Install a remote HLK Studio](user/install-a-remote-hlk-studio.md)
 ##### [Install standalone HLK Studio](user/install-standalone-hlk-studio.md)
 ##### [Command-line options to install HLK](user/command-line-options-to-install-hlk.md)

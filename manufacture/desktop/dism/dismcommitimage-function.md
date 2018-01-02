@@ -2,7 +2,7 @@
 title: DismCommitImage function
 description: Commits the changes made to a Windows® image in a mounted .wim or .vhd file.
 ms.assetid: bd4d3df9-7109-4ce5-a998-8afd0b5962a1
-keywords: ["DismCommitImage function"]
+keywords: DismCommitImage function
 ms.author: themar
 ms.date: 10/25/2017
 ms.topic: article
@@ -18,12 +18,7 @@ ms.technology: windows-oem
 Commits the changes made to a Windows® image in a mounted .wim or .vhd file. The image must be mounted using the [**DismMountImage**](dismmountimage-function.md).
 
 Syntax
-ms.author: themar
-ms.date: 10/25/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
-------
+---
 
 ```ManagedCPlusPlus
 HRESULT WINAPI DismCommitImage(
@@ -36,12 +31,7 @@ HRESULT WINAPI DismCommitImage(
 ```
 
 Parameters
-ms.author: themar
-ms.date: 10/25/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
-----------
+-------
 
 *Session* \[in\]  
 A valid [DismSession](dismsession.md). The DismSession must be associated with an image. You can associate a session with an image by using the [**DismOpenSession**](dismopensession-function.md).
@@ -59,12 +49,7 @@ Optional. A pointer to a client-defined [DismProgressCallback](dismprogresscallb
 Optional. User defined custom data.
 
 Return value
-ms.author: themar
-ms.date: 10/25/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
-------------
+---------
 
 Returns `S_OK` on success.
 
@@ -111,12 +96,7 @@ hr = DismCommitImage(Session, 0, NULL, NULL, NULL);
  
 
 Requirements
-ms.author: themar
-ms.date: 10/25/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
-------------
+---------
 
 <table>
 <colgroup>

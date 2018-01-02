@@ -2,7 +2,7 @@
 title: DismApplyUnattend function
 description: Applies an unattended answer file to a Windows® image.
 ms.assetid: e1d9903f-2b12-421b-8802-55a3e770ca1f
-keywords: ["DismApplyUnattend function"]
+keywords: DismApplyUnattend function
 ms.author: themar
 ms.date: 10/25/2017
 ms.topic: article
@@ -18,12 +18,7 @@ ms.technology: windows-oem
 Applies an unattended answer file to a Windows® image.
 
 Syntax
-ms.author: themar
-ms.date: 10/25/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
-------
+---
 
 ```ManagedCPlusPlus
 HRESULT WINAPI DismApplyUnattend(
@@ -34,12 +29,7 @@ HRESULT WINAPI DismApplyUnattend(
 ```
 
 Parameters
-ms.author: themar
-ms.date: 10/25/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
-----------
+-------
 
 *Session* \[in\]  
 A valid [DismSession](dismsession.md). The DismSession must be associated with an image. You can associate a session with an image by using the [**DismOpenSession**](dismopensession-function.md).
@@ -70,12 +60,7 @@ A Boolean value that specifies whether the packages that are listed in an answer
  
 
 Return value
-ms.author: themar
-ms.date: 10/25/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
-------------
+---------
 
 Returns `S_OK` on success.
 
@@ -115,12 +100,7 @@ hr = DismApplyUnattend(Session, "C:\test\unattend.xml", TRUE);
  
 
 Requirements
-ms.author: themar
-ms.date: 10/25/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
-------------
+---------
 
 <table>
 <colgroup>
