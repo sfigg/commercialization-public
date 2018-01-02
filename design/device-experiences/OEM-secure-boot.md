@@ -57,4 +57,4 @@ You should contact your firmware manufacturer for tools and assistance in creati
 
 ## Related Topics
 
-- [UEFI firmware requirements](https://review.docs.microsoft.com/en-us/windows-hardware/design/device-experiences/oem-uefi?branch=dawn-security-toc)
+- [UEFI firmware requirements](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/oem-uefi)
