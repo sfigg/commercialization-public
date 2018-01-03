@@ -97,7 +97,8 @@ You can add a language pack to an image in the following ways:
 
 3.  If you deploy a multilingual image, or need to apply a specific language pack to a Windows image for a specific device, you can add the language pack by using Windows Setup and an unattended answer file. The language pack must be added to the image before international settings can be configured. For more information about how to add a language pack to an answer file, see [Add a Package to an Answer File](https://msdn.microsoft.com/library/windows/hardware/dn915066). To add a language pack and configure international settings, use the **WindowsPE** configuration pass to add the language pack and other configuration passes to configure international settings. For more information, see [Configure International Settings in Windows](configure-international-settings-in-windows.md)
     
-    **Note**  If language and locale settings are specified in an answer file, those settings overwrite any previous default. For example, if you first change the default `UILanguage` setting to FR-FR by using the DISM command-line tool on an offline image and then later apply an unattended answer file that specifies EN-US as the UI language, EN-US will be the default UI language.   
+    > [!Note]
+    > If language and locale settings are specified in an answer file, those settings overwrite any previous default. For example, if you first change the default `UILanguage` setting to FR-FR by using the DISM command-line tool on an offline image and then later apply an unattended answer file that specifies EN-US as the UI language, EN-US will be the default UI language.   
 
 4.  Use Setup to install the language packs that are in the distribution share.
 
