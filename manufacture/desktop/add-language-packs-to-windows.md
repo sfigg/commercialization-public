@@ -24,15 +24,16 @@ For Windows 10 for desktop editions (Home, Pro, Enterprise, and Education), lan
 
 You can install multiple languages onto the same Windows 10 image. Use care to limit the amount and types of language packs included with each image. While the Windows 10 language packs are smaller, having too many affects disk space, and can affect performance, especially while updating and servicing Windows.
 
-Not all capabilities are available for every language. [Language and region Features on Demand](features-on-demand-language-fod.md) has information about available features.
+For each language:
 
-For each language, where available:
+1.   Add the language pack and the **Basic** components.
+2.   To preload Cortana features, also add the **Text-to-speech**, and **Speech recognition**.
+3.   Add **Fonts** and **Optical character recognition** for the most popular languages within a region to improve your user’s first experience (strongly recommended). If they’re not already installed, Windows downloads and installs them in the background when the user chooses that language for the first time.
+4.   Add **handwriting recognition** for devices with pen inputs.
+5.   Add Windows Recovery Environment (WinRE) components so that end users can more easily recover their PCs.
 
--   Add the language pack and the **Basic** components.
--   To preload Cortana features, also add the **Text-to-speech**, and **Speech recognition**.
--   Add **Fonts** and **Optical character recognition** for the most popular languages within a region to improve your user’s first experience (strongly recommended). If they’re not already installed, Windows downloads and installs them in the background when the user chooses that language for the first time.
--   Add **handwriting recognition** for devices with pen inputs.
--   Add Windows Recovery Environment (WinRE) components so that end users can more easily recover their PCs.
+> [!Note] 
+> Not all language components are available for every language. [Language and region Features on Demand](features-on-demand-language-fod.md) has information about available components.
 
 Other customizations that can be preset:
 
