@@ -1,5 +1,5 @@
 ---
-author: Justinha
+author: themar
 Description: Available Language Packs for Windows
 ms.assetid: ad33ff13-9777-4a97-a6b8-f4de0fda5a0c
 MSHAttr: 'PreferredLib:/library/windows/hardware'
@@ -14,7 +14,7 @@ ms.technology: windows-oem
 # Available Language Packs for Windows
 
 
-The following tables show the supported language packs and language interface packs (LIPs) for Windows for Windows 10, Windows Server 2016, and Windows Server 2012 R2. LIPs are available for Windows 10, but are not available for Windows Server. For more information, see [Language packs](https://support.microsoft.com/help/14236/language-packs#lptabs=win10).
+The following tables show the supported language packs for Windows 10, Windows Server 2016, and Windows Server 2012 R2, and supported language interface packs (LIPs) for Windows 10. LIPs are available for Windows 10, but are not available for Windows Server. For more information, see [Language packs](https://support.microsoft.com/help/14236/language-packs#lptabs=win10).
 
 Windows Server and Windows 10 language packs are not interchangeable. Windows Server language packs cannot be used on Windows 10, and Windows 10 language packs cannot be used on Windows Server.
 

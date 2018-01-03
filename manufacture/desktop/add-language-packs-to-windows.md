@@ -24,7 +24,9 @@ For Windows 10 for desktop editions (Home, Pro, Enterprise, and Education), lan
 
 You can install multiple languages onto the same Windows 10 image. Use care to limit the amount and types of language packs included with each image. While the Windows 10 language packs are smaller, having too many affects disk space, and can affect performance, especially while updating and servicing Windows.
 
-For each language:
+The table below gives an overview of the types of language components that are available in Windows 10.
+
+To install a language, do the following for each language:
 
 1.   Add the language pack and the **Basic** components.
 2.   To preload Cortana features, also add the **Text-to-speech**, and **Speech recognition**.
