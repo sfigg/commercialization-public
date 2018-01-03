@@ -34,7 +34,7 @@ You can now choose to add only core language pack UI resources to your image, si
 
 To preload Cortana features, add the following features on demand: UI text, the Basic, Text-to-Speech, and Speech language components. 
 
-Not all components and features on demand are available for every language.
+Not all components and features on demand are available for every language. [Language and region Features on Demand](features-on-demand-language-fod.md) has information about available features.
 
 To learn more, see [Add Language Packs to Windows](add-language-packs-to-windows.md).
 
@@ -45,7 +45,7 @@ Language packs contain the text for the dialog boxes, menu items, and helpfiles 
 
 For some regions, language interface packs (LIPs) can provide additional translations for the most widely-used dialog boxes, menu items, and helpfile content. LIPs rely on a parent language pack to provide the remainder of the content.
 
-### <span id="Get_language_packs_and_LIPs"></span><span id="get_language_packs_and_lips"></span><span id="GET_LANGUAGE_PACKS_AND_LIPS"></span>Get language packs and LIPs
+### <span id="Get_language_packs_and_LIPs"></span><span id="get_language_packs_and_lips"></span><span id="GET_LANGUAGE_PACKS_AND_LIPS"></span>Where to get language packs and LIPs
 
 -   OEMs and System Builders with Microsoft Software License Terms can download language packs and LIPs from the [Microsoft OEM site](http://go.microsoft.com/fwlink/?LinkId=131359) or the [OEM Partner Center](http://go.microsoft.com/fwlink/?LinkId=131358).
 -   IT Professionals can download language packs from the [Microsoft Volume Licensing Site](http://go.microsoft.com/fwlink/?LinkId=125893).
