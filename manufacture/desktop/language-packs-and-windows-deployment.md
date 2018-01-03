@@ -32,9 +32,7 @@ To help you reduce the size of your image, language packs are split into the fol
 
 To significantly reduce image size, you can choose to only add core language pack UI resources to your image.
 
-To learn more about the types of available components and their dependencies, see [Language Pack Types](add-language-packs-to-windows.md#span-idlangpacktypesspanspan-idlangpacktypesspanspan-idlangpacktypesspanlanguage-pack-types).
-
-Not all components and features on demand are available for every language. [Language and region Features on Demand](features-on-demand-language-fod.md) has information about available features.
+To learn more about the types of available components and their dependencies, see [Language Pack Types](add-language-packs-to-windows.md#span-idlangpacktypesspanspan-idlangpacktypesspanspan-idlangpacktypesspanlanguage-pack-types). Note, that not all components and features on demand are available for every language.
 
 To learn more about adding language components to Windows, see [Add Language Packs to Windows](add-language-packs-to-windows.md).
 
@@ -43,7 +41,7 @@ To learn more about adding language components to Windows, see [Add Language Pac
 
 - **Language packs** contain the text for the dialog boxes, menu items, and help files that you see in Windows.
 
-- **Language interface packs (LIPs)** are available for some reasons. LIPs provide additional translations for the most widely-used dialog boxes, menu items, and help file content, but are not full language packs. LIPs rely on a parent language pack to provide the remainder of the content.
+- **Language interface packs (LIPs)** are available for some regions. LIPs provide additional translations for the most widely-used dialog boxes, menu items, and help file content, but are not full language packs. LIPs rely on a parent language pack to provide the remainder of the content.
 
 ### <span id="Get_language_packs_and_LIPs"></span><span id="get_language_packs_and_lips"></span><span id="GET_LANGUAGE_PACKS_AND_LIPS"></span>Where to get language packs and LIPs
 

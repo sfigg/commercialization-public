@@ -33,7 +33,7 @@ For each language:
 5.   Add Windows Recovery Environment (WinRE) components so that end users can more easily recover their PCs.
 
 > [!Note] 
-> Not all language components are available for every language. [Language and region Features on Demand](features-on-demand-language-fod.md) has information about available components.
+> Not all language components are available for every language.
 
 Other customizations that can be preset:
 
