@@ -21,7 +21,7 @@ The Windows Unattended Setup Reference is organized by Windows components and Wi
 
 Each Windows component includes settings that can be used to create an unattended-installation answer file. Each setting in a component is listed in its own individual topic. If an element contains a value, valid value types are described and XML examples are given.
 
-Information about how to use Windows SIM and other deployment tools is available in the [Windows Assessment and Deployment Kit (Windows ADK) Technical Reference](http://go.microsoft.com/fwlink/p/?LinkId=206587).
+Information about how to use Windows SIM and other deployment tools is available in [Get Started - Learn about the ADK tools](https://docs.microsoft.com/en-us/windows-hardware/get-started/what-s-new-in-kits-and-tools#learn-about-the-adk-tools).
 
 ## In this section
 
