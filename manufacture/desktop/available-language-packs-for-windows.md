@@ -20,13 +20,11 @@ Windows Server and Windows 10 language packs are not interchangeable. Windows Se
 
 LIPs must be installed to the operating system that they support. Windows 10 LIPs cannot be used on Windows 8.1; similarly, Windows 8.1 LIPs cannot be used on Windows 10.
 
-OEMs and system builders with Microsoft Software License Terms can get language packs and LIPs from the [Microsoft OEM](http://go.microsoft.com/fwlink/?LinkId=131359) site and [OEM Partner Center](http://go.microsoft.com/fwlink/?LinkId=131358).
+To learn how to get language packs and language interface packs, see [Get language packs and LIPs](language-packs-and-windows-deployment.md#span-idgetlanguagepacksandlipsspanspan-idgetlanguagepacksandlipsspanspan-idgetlanguagepacksandlipsspanget-language-packs-and-lips).
 
 For a complete list of supported languages and locales, see [Locale Identifier Constants and Strings](https://msdn.microsoft.com/en-us/library/dd318693(v=vs.85).aspx).
 
-For a complete list of available language features on demand, see [Available language FODs](http://download.microsoft.com/download/8/3/0/830AC3A9-68CF-4F10-9357-F27E0A03148A/Windows 10 1607 FOD to LP Mapping Table.xlsx)
-
-To learn more, see [Add Language Packs to Windows](add-language-packs-to-windows.md).
+To learn how to add languages to Windows, see [Add Language Packs to Windows](add-language-packs-to-windows.md).
 
 ## Supported Language Packs and Language Interface Packs
 

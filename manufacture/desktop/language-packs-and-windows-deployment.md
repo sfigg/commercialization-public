@@ -19,7 +19,7 @@ To design PCs that work better for customers in different regions, you can set u
 ## <span id="What_s_new_with_Language_Packs_for_Windows_10_"></span><span id="what_s_new_with_language_packs_for_windows_10_"></span><span id="WHAT_S_NEW_WITH_LANGUAGE_PACKS_FOR_WINDOWS_10_"></span>What's new with Language Packs for Windows 10?
 
 
-To help you reduce the size of your image, language packs have now been split into the following language components and [Features On Demand V2 (Capabilities)](features-on-demand-v2--capabilities.md):
+To help you reduce the size of your image, language packs have now been split into the following language components and [Features On Demand](features-on-demand-v2--capabilities.md):
 
 -   UI Text (the language pack .cab file)
 -   Basic (spell check, typing)
@@ -50,6 +50,7 @@ For some regions, language interface packs (LIPs) can provide additional transla
 -   OEMs and System Builders with Microsoft Software License Terms can download language packs and LIPs from the [Microsoft OEM site](http://go.microsoft.com/fwlink/?LinkId=131359) or the [OEM Partner Center](http://go.microsoft.com/fwlink/?LinkId=131358).
 -   IT Professionals can download language packs from the [Microsoft Volume Licensing Site](http://go.microsoft.com/fwlink/?LinkId=125893).
 -   After Windows is installed, end users can download and install additional language packs in **Settings** > **Time & language** > **Region and language** > **Add a language**. 
+
 
 Related information:
 
