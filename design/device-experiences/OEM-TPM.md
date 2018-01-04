@@ -30,7 +30,9 @@ For more information about the specific requirements that must be met, see [Syst
 **IT Professionals:** To understand how TPM works in your enterprise, see [Trusted Platform Module](https://docs.microsoft.com/en-us/windows/device-security/tpm/trusted-platform-module-top-node).
 
 
-### Related topics
+## <span id="related_topics"></span>Related topics
+
+- [Windows 10 S security features and requirements for OEMs](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/oem-10s-security)
 - [Trusted Platform Module Overview](https://docs.microsoft.com/en-us/windows/device-security/tpm/trusted-platform-module-overview)
 - [How Windows 10 uses the Trusted Platform Module](https://docs.microsoft.com/en-us/windows/device-security/tpm/how-windows-uses-the-tpm)
 - [TPM recommendations](https://docs.microsoft.com/en-us/windows/device-security/tpm/tpm-recommendations)
