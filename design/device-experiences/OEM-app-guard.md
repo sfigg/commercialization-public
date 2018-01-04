@@ -26,7 +26,8 @@ As an OEM, you provide the hardware necessary to enable Application Guard. Here 
 
 
 
-## Related topics
+## <span id="related_topics"></span>Related topics
 
+- [Windows 10 S security features and requirements for OEMs](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/oem-10s-security)
 - [Windows Defender Device Guard hardware requirements](OEM-device-guard.md)
 - [Windows Defender Credential Guard hardware requirements](OEM-credential-guard.md)

@@ -36,9 +36,10 @@ For a device to support Windows Defender Credential Guard as specified in the Wi
 
 To determine if a device is able to run Window Defender Device Guard and Credential Guard, download the [Device Guard and Credential Guard hardware readiness tool](https://www.microsoft.com/en-us/download/details.aspx?id=53337).
 
-## Related topics
--
-- [Windows Defender Device Guard hardware requirements](OEM-device-guard.md)
+## <span id="related_topics"></span>Related topics
+
+- [Windows 10 S security features and requirements for OEMs](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/oem-10s-security)
+-- [Windows Defender Device Guard hardware requirements](OEM-device-guard.md)
 - [Windows Defender Application Guard hardware requirements](OEM-app-guard.md)
 
 

@@ -53,3 +53,7 @@ OEMs can choose to disable device encryption and instead implement their own enc
 Alternately, you can update this registry key:
 **HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\BitLocker**
 Value: **PreventDeviceEncryption** equal to True (1).
+
+## <span id="related_topics"></span>Related topics
+
+[Windows 10 S security features and requirements for OEMs](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/oem-10s-security)
