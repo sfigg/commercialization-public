@@ -16,10 +16,10 @@ ms.technology: windows-oem
 
 To design PCs that work better for customers in different regions, you can set up Windows with the right set of local languages, settings, and keyboards or other input devices.
 
-## <span id="What_s_new_with_Language_Packs_for_Windows_10_"></span><span id="what_s_new_with_language_packs_for_windows_10_"></span><span id="WHAT_S_NEW_WITH_LANGUAGE_PACKS_FOR_WINDOWS_10_"></span>Language Packs for Windows 10?
+## <span id="What_s_new_with_Language_Packs_for_Windows_10_"></span><span id="what_s_new_with_language_packs_for_windows_10_"></span><span id="WHAT_S_NEW_WITH_LANGUAGE_PACKS_FOR_WINDOWS_10_"></span>Language Packs in Windows 10
 
 
-To help you reduce the size of your image, language packs are split into the following [language components](add-language-packs-to-windows#span-idlangpacktypesspanspan-idlangpacktypesspanspan-idlangpacktypesspanlanguage-pack-types) and [Features On Demand](features-on-demand-v2--capabilities.md):
+To help you reduce the size of your image, language packs in Windows 10 are split into the following [language components](add-language-packs-to-windows#span-idlangpacktypesspanspan-idlangpacktypesspanspan-idlangpacktypesspanlanguage-pack-types) and [Features On Demand](features-on-demand-v2--capabilities.md):
 
 -   UI Text (the language pack .cab file)
 -   Basic (spell check, typing)
@@ -96,7 +96,7 @@ For more information, see [Multilingual User Interface (Windows)](http://go.micr
 
 [Add Language Packs to Windows](add-language-packs-to-windows.md)
 
-[Features On Demand V2 (Capabilities)](features-on-demand-v2--capabilities.md)
+[Features On Demand](features-on-demand-v2--capabilities.md)
 
  
 
