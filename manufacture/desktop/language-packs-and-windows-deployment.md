@@ -16,10 +16,10 @@ ms.technology: windows-oem
 
 To design PCs that work better for customers in different regions, you can set up Windows with the right set of local languages, settings, and keyboards or other input devices.
 
-## <span id="What_s_new_with_Language_Packs_for_Windows_10_"></span><span id="what_s_new_with_language_packs_for_windows_10_"></span><span id="WHAT_S_NEW_WITH_LANGUAGE_PACKS_FOR_WINDOWS_10_"></span>What's new with Language Packs for Windows 10?
+## <span id="What_s_new_with_Language_Packs_for_Windows_10_"></span><span id="what_s_new_with_language_packs_for_windows_10_"></span><span id="WHAT_S_NEW_WITH_LANGUAGE_PACKS_FOR_WINDOWS_10_"></span>Language Packs in Windows 10
 
 
-To help you reduce the size of your image, language packs have now been split into the following language components and [Features On Demand V2 (Capabilities)](features-on-demand-v2--capabilities.md):
+To help you reduce the size of your image, language packs in Windows 10 are split into the following [language components](add-language-packs-to-windows.md#span-idlangpacktypesspanspan-idlangpacktypesspanspan-idlangpacktypesspanlanguage-pack-types) and [Features On Demand](features-on-demand-v2--capabilities.md):
 
 -   UI Text (the language pack .cab file)
 -   Basic (spell check, typing)
@@ -30,26 +30,25 @@ To help you reduce the size of your image, language packs have now been split in
 -   Speech
 -   Retail Demo experience
 
-You can now choose to add only core language pack UI resources to your image, significantly reducing image size.
+To significantly reduce image size, you can choose to only add core language pack UI resources to your image.
 
-To preload Cortana features, add the following features on demand: UI text, the Basic, Text-to-Speech, and Speech language components. 
+To learn more about the types of available components and their dependencies, see [Language Pack Types](add-language-packs-to-windows.md#span-idlangpacktypesspanspan-idlangpacktypesspanspan-idlangpacktypesspanlanguage-pack-types). Note, that not all components and features on demand are available for every language.
 
-Not all components and features on demand are available for every language.
-
-To learn more, see [Add Language Packs to Windows](add-language-packs-to-windows.md).
+To learn more about adding language components to Windows, see [Add Language Packs to Windows](add-language-packs-to-windows.md).
 
 ## <span id="Language_packs_for_Windows"></span><span id="language_packs_for_windows"></span><span id="LANGUAGE_PACKS_FOR_WINDOWS"></span>Language packs for Windows
 
 
-Language packs contain the text for the dialog boxes, menu items, and helpfiles that you see in Windows.
+- **Language packs** contain the text for the dialog boxes, menu items, and help files that you see in Windows.
 
-For some regions, language interface packs (LIPs) can provide additional translations for the most widely-used dialog boxes, menu items, and helpfile content. LIPs rely on a parent language pack to provide the remainder of the content.
+- **Language interface packs (LIPs)** are available for some regions. LIPs provide additional translations for the most widely-used dialog boxes, menu items, and help file content, but are not full language packs. LIPs rely on a parent language pack to provide the remainder of the content.
 
-### <span id="Get_language_packs_and_LIPs"></span><span id="get_language_packs_and_lips"></span><span id="GET_LANGUAGE_PACKS_AND_LIPS"></span>Get language packs and LIPs
+### <span id="Get_language_packs_and_LIPs"></span><span id="get_language_packs_and_lips"></span><span id="GET_LANGUAGE_PACKS_AND_LIPS"></span>Where to get language packs and LIPs
 
 -   OEMs and System Builders with Microsoft Software License Terms can download language packs and LIPs from the [Microsoft OEM site](http://go.microsoft.com/fwlink/?LinkId=131359) or the [OEM Partner Center](http://go.microsoft.com/fwlink/?LinkId=131358).
 -   IT Professionals can download language packs from the [Microsoft Volume Licensing Site](http://go.microsoft.com/fwlink/?LinkId=125893).
 -   After Windows is installed, end users can download and install additional language packs in **Settings** > **Time & language** > **Region and language** > **Add a language**. 
+
 
 Related information:
 
@@ -97,7 +96,7 @@ For more information, see [Multilingual User Interface (Windows)](http://go.micr
 
 [Add Language Packs to Windows](add-language-packs-to-windows.md)
 
-[Features On Demand V2 (Capabilities)](features-on-demand-v2--capabilities.md)
+[Features On Demand](features-on-demand-v2--capabilities.md)
 
  
 
