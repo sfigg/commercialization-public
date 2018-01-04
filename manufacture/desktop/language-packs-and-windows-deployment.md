@@ -19,7 +19,7 @@ To design PCs that work better for customers in different regions, you can set u
 ## <span id="What_s_new_with_Language_Packs_for_Windows_10_"></span><span id="what_s_new_with_language_packs_for_windows_10_"></span><span id="WHAT_S_NEW_WITH_LANGUAGE_PACKS_FOR_WINDOWS_10_"></span>Language Packs in Windows 10
 
 
-To help you reduce the size of your image, language packs in Windows 10 are split into the following [language components](add-language-packs-to-windows#span-idlangpacktypesspanspan-idlangpacktypesspanspan-idlangpacktypesspanlanguage-pack-types) and [Features On Demand](features-on-demand-v2--capabilities.md):
+To help you reduce the size of your image, language packs in Windows 10 are split into the following [language components](add-language-packs-to-windows.md#span-idlangpacktypesspanspan-idlangpacktypesspanspan-idlangpacktypesspanlanguage-pack-types) and [Features On Demand](features-on-demand-v2--capabilities.md):
 
 -   UI Text (the language pack .cab file)
 -   Basic (spell check, typing)
