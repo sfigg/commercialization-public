@@ -18,7 +18,11 @@ Features on Demand (FODs) are Windows feature packages that can be added at any 
 
 When the PC needs a new feature, it can request the feature package from Windows Update.
 
-OEMs can also preinstall FODs into a Windows image in two different ways. FODs can be added with DISM, using the `/add-capability` command-line option. This method downloads features from Windows Update and adds them to the image. Alternatively, FOD .cab packages, available on the FOD ISOs, can be added to a Windows image by using DISM with the `/add-package` command-line option. This method doesn't require internet connectivity, as the packages are available offline.
+OEMs can preinstall FODs into a Windows image by leveraging DISM with the `/Add-Capability` option. By default, `/Add-Capability` downloads features from Windows Update and adds them to the image.  You can use the `/Source` and `/LimitAccess` options to tell Windows where to download features from:
+
+- /Source: Allows you to choose a location where the capability source files are located. You can use multiple /Source arguments.
+
+- /LimitAccess: Tells DISM to not check Windows Update or Windows Server Update Services for the capability source files.
 
 Unlike previous feature packs, Features on Demand can be applicable to multiple Windows builds, and can be added using DISM without knowing the build number. Always use Features on Demand that match the architecture of the operating system. Adding Features on Demand of the wrong architecture might not return an error immediately, but will likely cause functionality issues in the operating system. 
 
@@ -41,26 +45,8 @@ Unlike previous feature packs, Features on Demand can be applicable to multiple 
 | /Get-CapabilityInfo | Get information of a capability in the image. | `DISM /Online /Get-CapabilityInfo /CapabilityName:Language.Basic~~~en-US~0.0.1.0` |
 | /Remove-Capability | Removes a capability from an image. <br></br>**Note**: You cannot remove a capability that other packages depend on. For example, if you have the French handwriting and basic capabilities installed, you can't remove the basic capability. | `DISM.exe /Online /Remove-Capability  CapabilityName:Language.Basic~~~en-US~0.0.1.0` |
 
-<<<<<<< HEAD
 To see all available DISM commands for capabilities, see [DISM Capabilities Package Servicing Command-Line Options](dism-capabilities-package-servicing-command-line-options.md).
-=======
-To see all available DISM commands for capabilities, see [DISM Capabilities Package Servicing Command-Line Options](dism-capabilities-package-servicing-command-line-option.md).
->>>>>>> 75ae98ab9e88382df952038b038569113a3a5dd2
 
-### Using DISM to add or remove packages:
-
--   Use the /Online option to add the package to your PC.
-
--   Use the /Image:\<mount path> option to add the package to a mounted Windows image.
-
-| Command | Description | Example |
-| --- | --- | --- |
-| /Add-package | Installs a specified .cab or .msu package in the image. An .msu package is supported only when the target image is offline, either mounted or applied. Multiple packages can be added on one command line. | `Dism /Image:C:\test\offline /Add-Package /PackagePath:<path_to_cabfile>` | 
-| /Get-Packages | Displays basic information about all packages in the image. The list of packages that this command outputs is not limited to installed Features on Demand. | `Dism /Image:C:\test\offline /Get-Packages` |
-| /Get-PackageInfo | Displays detailed information about a package provided as a .cab file. You can use the /Get-Packages option to find the name of the package in the image, or you can specify the path to the .cab file. The path to the .cab file should point to the original source of the package, not to where the file is installed on the offline image. | `Dism /Image:C:\test\offline /Get-PackageInfo /PackagePath:C:\packages\package.cab` |
-| /Remove-Package | Removes a specified .cab file package from the image. | `Dism /Image:C:\test\offline /Remove-Package /PackageName:Microsoft-Windows-NetFx3-OnDemand-Package~31bf3856ad364e35~amd64~~10.0.17056.1000` |
-
-To see all available DISM commands for package servicing, see [DISM operating system package servicing command-line options](dism-operating-system-package-servicing-command-line-options.md).
 
 ## <span id="related_topics"></span>Related topics
 
