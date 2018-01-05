@@ -1,8 +1,7 @@
 ---
-title: DismString structure
-description: DISM API functions that return strings wrap the heap allocated PCWSTR in a DismString structure.
-ms.assetid: f3246280-d805-45d8-9f79-18adb804822a
-keywords: DismString structure
+title: DismWimCustomizedInfo structure
+description: DISM API functions that return strings wrap the heap allocated PCWSTR in a DismWimCustomizedInfo structure.
+keywords: DismWimCustomizedInfo structure
 ms.author: themar
 ms.date: 10/25/2017
 ms.topic: article
