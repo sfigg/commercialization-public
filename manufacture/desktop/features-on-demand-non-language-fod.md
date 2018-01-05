@@ -132,8 +132,8 @@ These Features on Demand are for devices running Windows Server as a Print Serve
 
 **Recommendation:** Only preinstall the Features on Demand on Windows Server devices running as a Print Server role.
 
-| Name | Capability Name |CAB Name |                                            CAB Size | Install size |
-|-----------|-----------------------------------|------------|--------------------------| --- | 
+| Name | Capability Name  | Install size |
+|-----------|-----------------------------------|---------- | 
 | Enterprise Cloud Print | Print.EnterpriseCloudPrint~~~~0.0.1.0 |  3.28 MB |
 | Mopria Cloud Service | Print.MopriaCloudService~~~~0.0.1.0 |  11.13 MB |
 
