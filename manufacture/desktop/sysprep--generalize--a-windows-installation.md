@@ -14,9 +14,9 @@ ms.technology: windows-oem
 # Sysprep (Generalize) a Windows installation
 
 
-To deploy a Windows image to different PCs, you have to first generalize the image to remove computer-specific information such as the computer security identifier (SID). You can either use [Sysprep](sysprep--system-preparation--overview.md) by itself or Sysprep with an [unattend](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/) answer file to generalize your image and make it ready for deployment.
+To deploy a Windows image to different PCs, you have to first generalize the image to remove computer-specific information such as installed drivers and the computer security identifier (SID). You can either use [Sysprep](sysprep--system-preparation--overview.md) by itself or Sysprep with an [unattend](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/) answer file to generalize your image and make it ready for deployment.
 
-##  Generalizing a Windows installation
+##  Generalize a Windows installation
 
 When you generalize a Windows image, Windows Setup processes settings in the [generalize](generalize.md) configuration pass. Even if you're capturing an image that's going to be deployed to a PC with similar hardware, you still have to generalize the Windows installation to remove unique PC-specific information from a Windows installation, which allows you to safely reuse your image.
 
@@ -24,11 +24,11 @@ When you generalize an image, Windows replaces the computer SID only on the oper
 
 If you're generalizing a Windows Server installation that has Remote Authentication Dial-In User Service (RADIUS) clients or remote RADIUS server groups defined in the Network Policy Server (NPS) configuration, you should remove this information before you deploy it to a different computer. For more information, see [Prepare a Network Policy Server (NPS) for Imaging](prepare-a-network-policy-server--nps--for-imaging.md).
 
-### Prevent Sysprep from removing the record of installed devices
+### Prevent Sysprep from removing installed devices
 
-When you set up a Windows PC, Windows Setup sets up any detected devices.
+When you set up a Windows PC, Windows Setup configures all detected devices. Generalizing a Windows installation uninstalls configured devices, but does not remove device drivers from the PC.
 
-If you're deploying an image to computers that have identical hardware and devices as the original PC, you can keep the record of these device installations on the computer during system generalization by using an unattend file with Microsoft-Windows-PnPSysprep | `PersistAllDeviceInstalls` set to **true**. For more information about **Sysprep**-related Windows unattend components, see the [Unattended Windows Setup Reference for Microsoft-Windows-PnpSysprep](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-pnpsysprep).
+If you're deploying an image to computers that have identical hardware and devices as the original PC, you can keep devices installed on the computer during system generalization by using an unattend file with Microsoft-Windows-PnPSysprep | `PersistAllDeviceInstalls` set to **true**. For more information about **Sysprep**-related Windows unattend components, see the [Unattended Windows Setup Reference for Microsoft-Windows-PnpSysprep](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-pnpsysprep).
 
 ### Limits on how many times you can run Sysprep
 
@@ -37,10 +37,9 @@ You can run the **Sysprep** command up to 8 times on a single Windows image. Aft
 
 ### Microsoft Store apps
 
-Installing new Microsoft Store apps or updating your existing Microsoft Store apps before generalizing a Windows image will cause Sysprep to fail. `Sysprep /generalize` requires that all apps are provisioned for all users; however, when you update an app from the Microsoft Store, that app becomes tied to the current user account. The following error appears in the Sysprep log files (located at %WINDIR%\\System32\\Sysprep\\Panther):
+Installing new Microsoft Store apps or updating your existing Microsoft Store apps before generalizing a Windows image will cause Sysprep to fail. `Sysprep /generalize` requires that all apps are provisioned for all users; however, when you update an app from the Microsoft Store, that app becomes tied to the logged in user account. The following error appears in the Sysprep log files (located at %WINDIR%\\System32\\Sysprep\\Panther):
 
 `<package name> was installed for a user, but not provisioned for all users. This package will not function properly in the sysprep image.`
-
 
 Instead of using the Microsoft Store to update your apps, you should sideload updates to your line-of-business apps, provision offline-licensed Microsoft Store for Business apps for all users, or have end-users update their apps by using the Microsoft Store on their destination PCs. If Microsoft Store access in a managed environment is disabled by an IT administrator, end-users will not be able to update the Microsoft Store apps.
 
