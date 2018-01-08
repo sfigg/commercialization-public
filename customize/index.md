@@ -15,22 +15,22 @@ ms.technology: windows-oem
 
 ## Purpose
 
-Customizations of the Windows OS are ways in which partners can modify the Windows device UI, connectivity settings, and user experience to better reflect the partners' brand, and to fit the network and market in which the device ships. Customizations can include adding applications, modifying icons and Start layouts, configuring network settings by using device management, changing defaults in **Settings**, and adding brand-specific art and sounds to the OS.
+Customizations of the Windows OS are ways in which partners can modify the Windows device UI, connectivity settings, and user experience to better reflect the partners' brand, and to fit the network and market in which the device ships. Customization options include adding applications, modifying icons and Start layouts, configuring network settings by using device management, changing defaults in **Settings**, and adding brand-specific art and sounds to the OS.
 
-Windows 10 supports both the pre-existing desktop Unattend, and mobile Managed Centralized Settings Framework (MCSF), customization frameworks for configuring customizations for Windows 10 devices.
+Windows 10 supports both pre-existing desktop Unattend settings, and mobile Managed Centralized Settings Framework (MCSF), for configuring customization options for Windows 10 devices.
 
 See the following sections for more information about what you can do to customize your Windows 10 devices.
 
 | Topic                                      | Description                                                                                             |
 |:-------------------------------------------|:--------------------------------------------------------------------------------------------------------|
-| [Customizations for desktop](desktop/desktop-customizations-portal.md) | This section includes topics describing key tasks, as well as the reference for [Windows System Image Manager](desktop/unattend/index.md) settings. |
-| [Customizations for mobile](mobile/windows-10-mobile-customizations-portal.md) | Learn about the customizations for mobile enterprise, which allow you to run mobile line-of-business applications on a platform that ensures that data is captured securely and efficiently. |
+| [Customizations for desktop](desktop/desktop-customizations-portal.md) | This section includes topics describing key desktop customization opportunities, as well the [Unattended Windows Setup Reference](desktop/unattend/index.md), and [Windows System Image Manager Technical Reference](/desktop/wsim/windows-system-image-manager-technical-reference.md). |
 | [Customizations for enterprise desktop](enterprise/enterprise-custom-portal.md) | Learn about the customizations available to you if you are providing a controlled and specialized experience on a Windows device running Windows 10 Enterprise. |
+| [Customizations for mobile](mobile/windows-10-mobile-customizations-portal.md) | Learn about the customizations for mobile enterprise, which allow you to run mobile line-of-business applications on a platform that ensures that data is captured securely and efficiently. This section includes all customization options available as part of the Managed Centralized Settings Framework (MCSF). |
 | [Configure power settings](power-settings/configure-power-settings.md) | Learn about the power settings you can configure using the Windows provisioning framework. Each power setting topic includes the identification GUID, allowed values, meaning, and common usage scenarios for the setting. |
 | [Preinstalled and exclusive apps](preinstall/preinstall-and-exclusive-apps.md) | If you're a Windows OEM or mobile operator partner, find out how you can create partner apps that you can package and configure to install during the initial device setup process. While the user is going through the initial setup process, the preinstalled apps are installed in the background. OEMs can also work with software developers to target OEM devices for apps to appear exclusively on, based on registry keys. |
-| [Change history for Customize](change-history-for-customize.md) | Read about what topics have been created, updated, or deleted for Windows 10, build 1709. |
+| [Change history for Customize](change-history-for-customize.md) | Review the timeline of Windows 10 Customization topics that have been created, updated, or deleted. |
 
-## <a href="" id="developer-audience-heading"></a>Audience
+## Audience
 
 This section of the partner documentation is intended for Original Equipment Manufacturers (OEMs), Original Design Manufacturers (ODMs), Independent Hardware Vendors (IHVs), system builders, mobile operators, and IT administrators.
 
