@@ -43,7 +43,7 @@ The Deployment Image Servicing and Management (DISM) API lets you build customiz
 
 -   [**DismString Structure**](dismstring-structure.md)
 
--   [**DismWimCustomizedInfo Structure**](dismwimcustomizedinfo_structure.md)
+-   [**DismWimCustomizedInfo Structure**](dismwimcustomizedinfo-structure.md)
 
 ## <span id="related_topics"></span>Related topics
 
