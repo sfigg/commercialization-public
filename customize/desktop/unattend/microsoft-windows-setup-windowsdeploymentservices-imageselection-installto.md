@@ -13,55 +13,34 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # InstallTo
-
 
 `InstallTo` specifies the location to which the image is to be installed.
 
 ## Child Elements
 
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>[DiskID](microsoft-windows-setup-windowsdeploymentservices-imageselection-installto-diskid.md)</p></td>
-<td><p>Specifies the disk ID of the disk to which the image is installed.</p></td>
-</tr>
-<tr class="even">
-<td><p>[PartitionID](microsoft-windows-setup-windowsdeploymentservices-imageselection-installto-partitionid.md)</p></td>
-<td><p>Specifies the partition ID of the partition to which the image is installed.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Setting                 | Description                                                                           |
+|:------------------------|:--------------------------------------------------------------------------------------|
+| [DiskID](microsoft-windows-setup-windowsdeploymentservices-imageselection-installto-diskid.md) | Specifies the disk ID of the disk to which the image is installed. |
+| [PartitionID](microsoft-windows-setup-windowsdeploymentservices-imageselection-installto-partitionid.md) | Specifies the partition ID of the partition to which the image is installed. |
 
 ## Valid Passes
-
 
 windowsPE
 
 ## Parent Hierarchy
 
-
-[microsoft-windows-setup-](microsoft-windows-setup.md) | [WindowsDeploymentServices](microsoft-windows-setup-windowsdeploymentservices.md) | [ImageSelection](microsoft-windows-setup-windowsdeploymentservices-imageselection.md) | **InstallTo**
+[Microsoft-Windows-Setup](microsoft-windows-setup.md) | [WindowsDeploymentServices](microsoft-windows-setup-windowsdeploymentservices.md) | [ImageSelection](microsoft-windows-setup-windowsdeploymentservices-imageselection.md) | **InstallTo**
 
 ## Applies To
 
-
-For the list of the Windows editions and architectures that this component supports, see [microsoft-windows-setup-](microsoft-windows-setup.md).
+For the list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-Setup](microsoft-windows-setup.md).
 
 ## XML Example
 
-
 The following XML output shows a complete Windows Deployment Services deployment.
 
-```
+```XML
 <WindowsDeploymentServices>
    <Login>
       <WillShowUI>OnError</WillShowUI>
@@ -105,16 +84,4 @@ The following XML output shows a complete Windows Deployment Services deployment
 
 ## Related topics
 
-
 [ImageSelection](microsoft-windows-setup-windowsdeploymentservices-imageselection.md)
-
- 
-
- 
-
-
-
-
-
-
-

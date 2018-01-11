@@ -13,59 +13,36 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # InstallFrom
-
 
 `InstallFrom` specifies the Windows image (.wim) file that contains the image to install and the credentials used to access the file.
 
 ## Child Elements
 
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>[Credentials](microsoft-windows-setup-imageinstall-osimage-installfrom-credentials.md)</p></td>
-<td><p>Specifies the credentials used to access the .wim file.</p></td>
-</tr>
-<tr class="even">
-<td><p>[MetaData](microsoft-windows-setup-imageinstall-osimage-installfrom-metadata.md)</p></td>
-<td><p>Specifies a unique Windows image in the .wim file to install.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[Path](microsoft-windows-setup-imageinstall-osimage-installfrom-path.md)</p></td>
-<td><p>Specifies the path to the .wim file.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Setting                 | Description                                                                           |
+|:------------------------|:--------------------------------------------------------------------------------------|
+| [Credentials](microsoft-windows-setup-imageinstall-osimage-installfrom-credentials.md) | Specifies the credentials used to access the .wim file. |
+| [MetaData](microsoft-windows-setup-imageinstall-osimage-installfrom-metadata.md) | Specifies a unique Windows image in the .wim file to install. |
+| [Path](microsoft-windows-setup-imageinstall-osimage-installfrom-path.md) | Specifies the path to the .wim file. |
 
 ## Valid Passes
-
 
 windowsPE
 
 ## Parent Hierarchy
 
-
-[microsoft-windows-setup-](microsoft-windows-setup.md) | [ImageInstall](microsoft-windows-setup-imageinstall.md) | [OSImage](microsoft-windows-setup-imageinstall-osimage.md) | **InstallFrom**
+[Microsoft-Windows-Setup](microsoft-windows-setup.md) | [ImageInstall](microsoft-windows-setup-imageinstall.md) | [OSImage](microsoft-windows-setup-imageinstall-osimage.md) | **InstallFrom**
 
 ## Applies To
 
-
-For a list of the supported Windows editions and architectures that this component supports, see [microsoft-windows-setup-](microsoft-windows-setup.md).
+For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-Setup](microsoft-windows-setup.md).
 
 ## XML Example
 
 
 The following XML output shows how to set the `ImageInstall` setting to install both an operating system image and a data image.
 
-```
+```XML
 <ImageInstall>
     <OSImage>
         <InstallFrom>
@@ -111,16 +88,4 @@ The following XML output shows how to set the `ImageInstall` setting to install 
 
 ## Related topics
 
-
 [OSImage](microsoft-windows-setup-imageinstall-osimage.md)
-
- 
-
- 
-
-
-
-
-
-
-

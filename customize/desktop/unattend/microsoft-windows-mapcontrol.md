@@ -21,7 +21,7 @@ The `Microsoft-Windows-MapControl-Desktop` component includes settings for contr
 
 | Setting                 | Description                                                                           |
 |:------------------------|:--------------------------------------------------------------------------------------|
-| [ChinaVariantWin10](Microsoft-Windows-MapControl-Desktop-chinavariantwin10.md) | >Use <code>ChinaVariantWin10</code> to specify that the Windows device is intended to ship in China. When enabled, maps approved by the State Bureau of Surveying and Mapping in China are used, which are obtained from a server located in China. |
+| [ChinaVariantWin10](Microsoft-Windows-MapControl-Desktop-chinavariantwin10.md) | Use <code>ChinaVariantWin10</code> to specify that the Windows device is intended to ship in China. When enabled, maps approved by the State Bureau of Surveying and Mapping in China are used, which are obtained from a server located in China. |
 
 ## Applies to
 

@@ -13,59 +13,35 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # InstallFrom
-
 
 `InstallFrom` specifies the path to the data image to install, and the credentials to access the image. The path can be either a local or a network path. If the data image is in a local path, no credentials are required.
 
 ## Child Elements
 
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>[Credentials](microsoft-windows-setup-imageinstall-dataimage-installfrom-credentials.md)</p></td>
-<td><p>Optional. Specifies the credentials to access the data image.</p></td>
-</tr>
-<tr class="even">
-<td><p>[MetaData](microsoft-windows-setup-imageinstall-dataimage-installfrom-metadata.md)</p></td>
-<td><p>Required. Specifies metadata to select a unique data image from the Windows image (.wim) file.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[Path](microsoft-windows-setup-imageinstall-dataimage-installfrom-path.md)</p></td>
-<td><p>Required. Specifies the path to the data image to install.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Setting                 | Description                                                                           |
+|:------------------------|:--------------------------------------------------------------------------------------|
+| [Credentials](microsoft-windows-setup-imageinstall-dataimage-installfrom-credentials.md) | Optional. Specifies the credentials to access the data image. |
+| [MetaData](microsoft-windows-setup-imageinstall-dataimage-installfrom-metadata.md) | Required. Specifies metadata to select a unique data image from the Windows image (.wim) file. |
+| [Path](microsoft-windows-setup-imageinstall-dataimage-installfrom-path.md) | Required. Specifies the path to the data image to install. |
 
 ## Valid Configuration Passes
-
 
 windowsPE
 
 ## Parent Hierarchy
 
-
-[microsoft-windows-setup-](microsoft-windows-setup.md) | [ImageInstall](microsoft-windows-setup-imageinstall.md) | [DataImage](microsoft-windows-setup-imageinstall-dataimage.md) | **InstallFrom**
+[Microsoft-Windows-Setup](microsoft-windows-setup.md) | [ImageInstall](microsoft-windows-setup-imageinstall.md) | [DataImage](microsoft-windows-setup-imageinstall-dataimage.md) | **InstallFrom**
 
 ## Applies To
 
-
-For a list of the Windows editions and architectures that this component supports, see [microsoft-windows-setup-](microsoft-windows-setup.md).
+For a list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-Setup](microsoft-windows-setup.md).
 
 ## XML Example
 
-
 The following XML output shows how to set the `ImageInstall` setting to install both an operating system image and a data image.
 
-```
+```XML
 <ImageInstall>
     <OSImage>
         <InstallFrom>
@@ -111,16 +87,4 @@ The following XML output shows how to set the `ImageInstall` setting to install 
 
 ## Related topics
 
-
 [DataImage](microsoft-windows-setup-imageinstall-dataimage.md)
-
- 
-
- 
-
-
-
-
-
-
-

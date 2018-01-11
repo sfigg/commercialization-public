@@ -13,9 +13,7 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # ModifyPartitions
-
 
 `ModifyPartitions` specifies one or more partitions to modify on a hard disk.
 
@@ -23,44 +21,27 @@ ms.technology: windows-oem
 
 ## Child Elements
 
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>[ModifyPartition](microsoft-windows-setup-diskconfiguration-disk-modifypartitions-modifypartition.md)</p></td>
-<td><p>Specifies the order, size, and type of a single partition to modify.</p>
-<p><code>ModifyPartitions</code> settings can have one or more <code>ModifyPartition</code> child elements, one for each partition to be configured.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Setting                 | Description                                                                           |
+|:------------------------|:--------------------------------------------------------------------------------------|
+| [ModifyPartition](microsoft-windows-setup-diskconfiguration-disk-modifypartitions-modifypartition.md) | Specifies the order, size, and type of a single partition to modify. ModifyPartitions</code> settings can have one or more <code>ModifyPartition</code> child elements, one for each partition to be configured. |
 
 ## Valid Configuration Passes
-
 
 windowsPE
 
 ## Parent Hierarchy
 
-
-[microsoft-windows-setup-](microsoft-windows-setup.md) | [DiskConfiguration](microsoft-windows-setup-diskconfiguration.md) | [Disk](microsoft-windows-setup-diskconfiguration-disk.md) | **ModifyPartitions**
+[Microsoft-Windows-Setup](microsoft-windows-setup.md) | [DiskConfiguration](microsoft-windows-setup-diskconfiguration.md) | [Disk](microsoft-windows-setup-diskconfiguration-disk.md) | **ModifyPartitions**
 
 ## Applies To
 
-
-For a list of the supported Windows editions and architectures that this component supports, see [microsoft-windows-setup-](microsoft-windows-setup.md).
+For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-Setup](microsoft-windows-setup.md).
 
 ## XML Example
 
-
 The following XML output for the `DiskConfiguration` setting shows two partition modifications for a BIOS-based system. The System partition is labeled, formatted for NTFS, and marked as active. The Windows partition is labeled, formatted for NTFS, and extended to fill the remainder of the disk.
 
-```
+```XML
 <DiskConfiguration>
 
   <Disk wcm:action="add">
@@ -124,16 +105,4 @@ For full XML examples and recommended partition configurations, see [How to Conf
 
 ## Related topics
 
-
 [Disk](microsoft-windows-setup-diskconfiguration-disk.md)
-
- 
-
- 
-
-
-
-
-
-
-

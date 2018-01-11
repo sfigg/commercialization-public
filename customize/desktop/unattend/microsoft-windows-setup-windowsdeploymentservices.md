@@ -13,9 +13,7 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # WindowsDeploymentServices
-
 
 `WindowsDeploymentServices` is a container for settings for Windows Deployment Services, the updated and redesigned version of Remote Installation Services (RIS). You can use it to set up new computers through a network-based, unattended installation.
 
@@ -23,47 +21,28 @@ These settings are specific to Windows Deployment Services installations and are
 
 ## Child Elements
 
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>[ImageSelection](microsoft-windows-setup-windowsdeploymentservices-imageselection.md)</p></td>
-<td><p>Specifies the image name and the group, as well as any language pack to install, the location to install it to, and whether the user interface (UI) is displayed.</p></td>
-</tr>
-<tr class="even">
-<td><p>[Login](microsoft-windows-setup-windowsdeploymentservices-login.md)</p></td>
-<td><p>Specifies credentials for logging on to Windows Deployment Services.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Setting                 | Description                                                                           |
+|:------------------------|:--------------------------------------------------------------------------------------|
+| [ImageSelection](microsoft-windows-setup-windowsdeploymentservices-imageselection.md) | Specifies the image name and the group, as well as any language pack to install, the location to install it to, and whether the user interface (UI) is displayed. |
+| [Login](microsoft-windows-setup-windowsdeploymentservices-login.md) | Specifies credentials for logging on to Windows Deployment Services. |
 
 ## Valid Configuration Passes
-
 
 windowsPE
 
 ## Parent Hierarchy
 
-
-[microsoft-windows-setup-](microsoft-windows-setup.md) | **WindowsDeploymentServices**
+[Microsoft-Windows-Setup](microsoft-windows-setup.md) | **WindowsDeploymentServices**
 
 ## Applies To
 
-
-For the list of the Windows editions and architectures that this component supports, see [microsoft-windows-setup-](microsoft-windows-setup.md).
+For the list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-Setup](microsoft-windows-setup.md).
 
 ## XML Example
 
-
 The following XML output shows a complete Windows Deployment Services deployment.
 
-```
+```XML
 <WindowsDeploymentServices>
    <Login>
       <WillShowUI>OnError</WillShowUI>
@@ -107,16 +86,4 @@ The following XML output shows a complete Windows Deployment Services deployment
 
 ## Related topics
 
-
-[microsoft-windows-setup-](microsoft-windows-setup.md)
-
- 
-
- 
-
-
-
-
-
-
-
+[Microsoft-Windows-Setup](microsoft-windows-setup.md)

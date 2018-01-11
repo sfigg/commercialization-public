@@ -13,51 +13,21 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # Microsoft-Windows-RasServer
-
 
 The Microsoft-Windows-RasServer component provides Remote Access Service (RAS) for the user to remotely connect to a network.
 
 ## In This Section
 
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>[ConfigurationFlags](microsoft-windows-rasserver-configurationflags.md)</p></td>
-<td><p>Specifies whether RAS is configured.</p></td>
-</tr>
-<tr class="even">
-<td><p>[RouterType](microsoft-windows-rasserver-routertype.md)</p></td>
-<td><p>Specifies the router type for RAS.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Setting                 | Description                                                                           |
+|:------------------------|:--------------------------------------------------------------------------------------|
+| [ConfigurationFlags](microsoft-windows-rasserver-configurationflags.md) | Specifies whether RAS is configured. |
+| [RouterType](microsoft-windows-rasserver-routertype.md) | Specifies the router type for RAS. |
 
 ## Applies To
-
 
 To determine whether a component applies to the image you’re building, load your image into Windows SIM and search for the component or setting name. For information on how to view components and settings, see [Configure Components and Settings in an Answer File](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/wsim/configure-components-and-settings-in-an-answer-file).
 
 ## Related topics
 
-
 [Components](components-b-unattend.md)
-
- 
-
- 
-
-
-
-
-
-
-

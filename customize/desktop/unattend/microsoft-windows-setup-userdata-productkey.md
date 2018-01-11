@@ -13,19 +13,14 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # ProductKey
-
 
 `ProductKey` contains settings that specify which edition of Windows to install. The product key that you purchase determines which edition you can install.
 
-**Note**  
-For more information about product keys, see the topic [Work with Product Keys and Activation](http://go.microsoft.com/fwlink/p/?linkid=208192) in the Windows Assessment and Deployment Kit (Windows ADK).
-
- 
+> [!Note]
+> For more information about product keys, see the topic [Work with Product Keys and Activation](http://go.microsoft.com/fwlink/p/?linkid=208192) in the Windows Assessment and Deployment Kit (Windows ADK).
 
 ## Comparison of Product Key Settings
-
 
 <table>
 <colgroup>
@@ -34,7 +29,7 @@ For more information about product keys, see the topic [Work with Product Keys a
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>microsoft-windows-setup-\UserData\ProductKey\[Key](microsoft-windows-setup-userdata-productkey-key.md)</p></td>
+<td><p>Microsoft-Windows-Setup\UserData\ProductKey\[Key](microsoft-windows-setup-userdata-productkey-key.md)</p></td>
 <td><p>Specifies the Windows image to install during Windows Setup.</p></td>
 </tr>
 <tr class="even">
@@ -45,51 +40,30 @@ For more information about product keys, see the topic [Work with Product Keys a
 </tbody>
 </table>
 
- 
-
 ## Child Elements
 
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>[Key](microsoft-windows-setup-userdata-productkey-key.md)</p></td>
-<td><p>Specifies the product key.</p></td>
-</tr>
-<tr class="even">
-<td><p>[WillShowUI](microsoft-windows-setup-userdata-productkey-willshowui.md)</p></td>
-<td><p>Specifies the circumstances in which the user interface (UI) for the product key will be displayed.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Setting                 | Description                                                                           |
+|:------------------------|:--------------------------------------------------------------------------------------|
+| [Key](microsoft-windows-setup-userdata-productkey-key.md) | Specifies the product key. |
+| [WillShowUI](microsoft-windows-setup-userdata-productkey-willshowui.md) | Specifies the circumstances in which the user interface (UI) for the product key will be displayed. |
 
 ## Valid Configuration Passes
-
 
 windowsPE
 
 ## Parent Hierarchy
 
-
-[microsoft-windows-setup-](microsoft-windows-setup.md) | [UserData](microsoft-windows-setup-userdata.md) | **ProductKey**
+[Microsoft-Windows-Setup](microsoft-windows-setup.md) | [UserData](microsoft-windows-setup-userdata.md) | **ProductKey**
 
 ## Applies To
 
-
-For the list of the Windows editions and architectures that this component supports, see [microsoft-windows-setup-](microsoft-windows-setup.md).
+For the list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-Setup](microsoft-windows-setup.md).
 
 ## XML Example
 
-
 The following XML output shows how to set user data.
 
-```
+```XML
 <UserData>
    <AcceptEula>true</AcceptEula>
    <FullName>EndUserName</FullName>
@@ -103,16 +77,4 @@ The following XML output shows how to set user data.
 
 ## Related topics
 
-
 [UserData](microsoft-windows-setup-userdata.md)
-
- 
-
- 
-
-
-
-
-
-
-

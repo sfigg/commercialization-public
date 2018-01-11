@@ -13,55 +13,34 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # InstallTo
-
 
 `InstallTo` specifies the location to which to install a data image.
 
 ## Child Elements
 
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>[DiskID](microsoft-windows-setup-imageinstall-dataimage-installto-diskid.md)</p></td>
-<td><p>Specifies the identification number of the disk on which to install the data image.</p></td>
-</tr>
-<tr class="even">
-<td><p>[PartitionID](microsoft-windows-setup-imageinstall-dataimage-installto-partitionid.md)</p></td>
-<td><p>Specifies the identification number of the partition on which to install the data image.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Setting                 | Description                                                                           |
+|:------------------------|:--------------------------------------------------------------------------------------|
+| [DiskID](microsoft-windows-setup-imageinstall-dataimage-installto-diskid.md) | Specifies the identification number of the disk on which to install the data image. |
+| [PartitionID](microsoft-windows-setup-imageinstall-dataimage-installto-partitionid.md) | Specifies the identification number of the partition on which to install the data image. |
 
 ## Valid Passes
-
 
 windowsPE
 
 ## Parent Hierarchy
 
-
-[microsoft-windows-setup-](microsoft-windows-setup.md) | [ImageInstall](microsoft-windows-setup-imageinstall.md) | [DataImage](microsoft-windows-setup-imageinstall-dataimage.md) | **InstallTo**
+[Microsoft-Windows-Setup](microsoft-windows-setup.md) | [ImageInstall](microsoft-windows-setup-imageinstall.md) | [DataImage](microsoft-windows-setup-imageinstall-dataimage.md) | **InstallTo**
 
 ## Applies To
 
-
-For a list of the supported Windows editions and architectures that this component supports, see [microsoft-windows-setup-](microsoft-windows-setup.md).
+For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-Setup](microsoft-windows-setup.md).
 
 ## XML Example
 
-
 The following XML output shows how to set the `ImageInstall` setting to install both an operating system image and a data image.
 
-```
+```XML
 <ImageInstall>
     <OSImage>
         <InstallFrom>
@@ -107,16 +86,4 @@ The following XML output shows how to set the `ImageInstall` setting to install 
 
 ## Related topics
 
-
 [DataImage](microsoft-windows-setup-imageinstall-dataimage.md)
-
- 
-
- 
-
-
-
-
-
-
-

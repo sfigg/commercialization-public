@@ -13,9 +13,7 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # RunAsynchronousCommand
-
 
 `RunAsynchronousCommand` specifies a single command to run during the windowsPE configuration pass.
 
@@ -25,62 +23,30 @@ All `RunAsynchronous` commands run in the system context.
 
 ## Child Elements
 
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>[Credentials](microsoft-windows-setup-runasynchronous-runasynchronouscommand-credentials.md)</p></td>
-<td><p>Specifies the credentials used to access the command if the command is on a network share.</p></td>
-</tr>
-<tr class="even">
-<td><p>[Description](microsoft-windows-setup-runasynchronous-runasynchronouscommand-description.md)</p></td>
-<td><p>Specifies a description of the command to execute.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[Order](microsoft-windows-setup-runasynchronous-runasynchronouscommand-order.md)</p></td>
-<td><p>Specifies a unique value for each command.</p>
-<div class="alert">
-<strong>Important</strong>  
-<p>The computer does not wait for one command to finish before it starts the next command.</p>
-</div>
-<div>
- 
-</div></td>
-</tr>
-<tr class="even">
-<td><p>[Path](microsoft-windows-setup-runasynchronous-runasynchronouscommand-path.md)</p></td>
-<td><p>Specifies the path to the command to execute.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Setting                 | Description                                                                           |
+|:------------------------|:--------------------------------------------------------------------------------------|
+| [Credentials](microsoft-windows-setup-runasynchronous-runasynchronouscommand-credentials.md) | Specifies the credentials used to access the command if the command is on a network share. |
+| [Description](microsoft-windows-setup-runasynchronous-runasynchronouscommand-description.md) | Specifies a description of the command to execute. |
+| [Order](microsoft-windows-setup-runasynchronous-runasynchronouscommand-order.md) | Specifies a unique value for each command. The computer does not wait for one command to finish before it starts the next command. |
+| [Path](microsoft-windows-setup-runasynchronous-runasynchronouscommand-path.md) | Specifies the path to the command to execute. |
 
 ## Valid Configuration Passes
-
 
 windowsPE
 
 ## Parent Hierarchy
 
-
-[microsoft-windows-setup-](microsoft-windows-setup.md) | [RunAsynchronous](microsoft-windows-setup-runasynchronous.md) | **RunAsynchronousCommand**
+[Microsoft-Windows-Setup](microsoft-windows-setup.md) | [RunAsynchronous](microsoft-windows-setup-runasynchronous.md) | **RunAsynchronousCommand**
 
 ## Applies To
 
-
-For the list of the supported Windows editions and architectures that this component supports, see [microsoft-windows-setup-](microsoft-windows-setup.md).
+For the list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-Setup](microsoft-windows-setup.md).
 
 ## XML Example
 
-
 The following XML output shows how to configure asynchronous commands.
 
-```
+```XML
 <RunAsynchronous>
    <RunAsynchronousCommand>
       <Order>1</Order>
@@ -102,16 +68,4 @@ The following XML output shows how to configure asynchronous commands.
 
 ## Related topics
 
-
 [RunAsynchronous](microsoft-windows-setup-runasynchronous.md)
-
- 
-
- 
-
-
-
-
-
-
-

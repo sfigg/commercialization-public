@@ -13,23 +13,18 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # Microsoft-Windows-SecureStartup-FilterDriver
 
-
-The microsoft-windows-securestartup-filterdriver- component contains settings to optimize BitLocker settings for PCs with hardware architectures such as System on a Chip (SoC).
+The Microsoft-Windows-SecureStartup-FilterDriver component contains settings to optimize BitLocker settings for PCs with hardware architectures such as System on a Chip (SoC).
 
 These settings are intended for OEM manufacturing only. For specific guidance on using these settings, contact Microsoft.
 
-**Warning**  
-Do not use these settings for standard 32-bit or 64-bit hardware architectures.
+> [!Warning]
+> Do not use these settings for standard 32-bit or 64-bit hardware architectures.
 
 These settings only apply to Windows 8.
 
- 
-
 ## In This Section
-
 
 <table>
 <colgroup>
@@ -72,24 +67,18 @@ These settings only apply to Windows 8.
 </tbody>
 </table>
 
- 
-
 ## Applies To
-
 
 To determine whether a component applies to the image you’re building, load your image into Windows SIM and search for the component or setting name. For information on how to view components and settings, see [Configure Components and Settings in an Answer File](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/wsim/configure-components-and-settings-in-an-answer-file).
 
-**Note**  
-Although this component is available in x86 hardware architectures, these settings should not be used for standard x86 hardware architectures.
-
- 
+> [!Note]
+> Although this component is available in x86 hardware architectures, these settings should not be used for standard x86 hardware architectures.
 
 ## XML Example
 
-
 The following example specifies recommended values for Bitlocker optimizations on an x86 System on a Chip.
 
-```
+```XML
 <component name="microsoft-windows-securestartup-filterdriver-" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <BytesDecryptedInDiskRequestOverhead>524288</BytesDecryptedInDiskRequestOverhead>
   <InPlaceCrypto>0</InPlaceCrypto>
@@ -109,16 +98,4 @@ The following example specifies recommended values for Bitlocker optimizations o
 
 ## Related topics
 
-
 [Components](components-b-unattend.md)
-
- 
-
- 
-
-
-
-
-
-
-

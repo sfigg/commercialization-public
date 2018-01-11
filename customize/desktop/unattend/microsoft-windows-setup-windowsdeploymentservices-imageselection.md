@@ -13,59 +13,35 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # ImageSelection
-
 
 `ImageSelection` specifies the image to be installed and the location to which it is installed, as well as whether the user interface (UI) is displayed.
 
 ## Child Elements
 
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>[InstallImage](microsoft-windows-setup-windowsdeploymentservices-imageselection-installimage.md)</p></td>
-<td><p>Specifies the file name, the image group, and the name of the image to be installed.</p></td>
-</tr>
-<tr class="even">
-<td><p>[InstallTo](microsoft-windows-setup-windowsdeploymentservices-imageselection-installto.md)</p></td>
-<td><p>Specifies the location to which the image is to be installed.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[WillShowUI](microsoft-windows-setup-windowsdeploymentservices-imageselection-willshowui.md)</p></td>
-<td><p>Specifies in what circumstances the UI is displayed.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Setting                 | Description                                                                           |
+|:------------------------|:--------------------------------------------------------------------------------------|
+| [InstallImage](microsoft-windows-setup-windowsdeploymentservices-imageselection-installimage.md) | Specifies the file name, the image group, and the name of the image to be installed. |
+| [InstallTo](microsoft-windows-setup-windowsdeploymentservices-imageselection-installto.md) | Specifies the location to which the image is to be installed. |
+| [WillShowUI](microsoft-windows-setup-windowsdeploymentservices-imageselection-willshowui.md) | Specifies in what circumstances the UI is displayed. |
 
 ## Valid Passes
-
 
 windowsPE
 
 ## Parent Hierarchy
 
-
-[microsoft-windows-setup-](microsoft-windows-setup.md) | [WindowsDeploymentServices](microsoft-windows-setup-windowsdeploymentservices.md) | **ImageSelection**
+[Microsoft-Windows-Setup](microsoft-windows-setup.md) | [WindowsDeploymentServices](microsoft-windows-setup-windowsdeploymentservices.md) | **ImageSelection**
 
 ## Applies To
 
-
-For a list of the Windows editions and architectures that this component supports, see [microsoft-windows-setup-](microsoft-windows-setup.md).
+For a list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-Setup](microsoft-windows-setup.md).
 
 ## XML Example
 
-
 The following XML output shows a complete Windows Deployment Services deployment.
 
-```
+```XML
 <WindowsDeploymentServices>
    <Login>
       <WillShowUI>OnError</WillShowUI>
@@ -109,16 +85,4 @@ The following XML output shows a complete Windows Deployment Services deployment
 
 ## Related topics
 
-
 [WindowsDeploymentServices](microsoft-windows-setup-windowsdeploymentservices.md)
-
- 
-
- 
-
-
-
-
-
-
-
