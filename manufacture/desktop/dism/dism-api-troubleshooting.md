@@ -74,11 +74,6 @@ The following DISMAPI messages may be reported in the log files when an error oc
 
  
 
-## <span id="WIMGAPI_Error_Messages"></span><span id="wimgapi_error_messages"></span><span id="WIMGAPI_ERROR_MESSAGES"></span>WIMGAPI Error Messages
-
-
-WIMGAPI errors may be reported during a DISMAPI process. For more information, see [Imaging API Troubleshooting](p_wimgapi.imaging_api_troubleshooting).
-
 ## <span id="Windows_Error_Messages"></span><span id="windows_error_messages"></span><span id="WINDOWS_ERROR_MESSAGES"></span>Windows Error Messages
 
 

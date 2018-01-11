@@ -16,13 +16,18 @@ As an OEM, you have a unique opportunity to impact the efficacy of the security 
 
 **IT Professionals:** To learn more about these features including how to deploy them in your enterprise, see [Device Security](https://docs.microsoft.com/windows/device-security/) and [Control the health of Windows 10-based devices](https://docs.microsoft.com/windows/device-security/protect-high-value-assets-by-controlling-the-health-of-windows-10-based-devices?).
 
+## Windows 10 S
+Windows 10 S is a specific configuration of Windows 10 Pro that offers a familiar Windows experience that’s streamlined for security and performance. Windows 10 S provides the best of the cloud and full featured apps, and is designed for modern devices. Windows Defender is always on and always up-to-date. 
+
+Windows 10 S will only run verified apps from the Store and verified drivers from Windows Update. Windows 10 S provides supports Azure Active Directory, and when paired with MSA or Intune for Education, Windows 10 S defaults to storing files to OneDrive. 
+
+**OEMs:** For more information about Windows 10 S, see [Windows 10 S security features and requirements for OEMs](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/oem-10s-security).
+
 ## BitLocker device encryption
 
 BitLocker device encryption is a set of features that you as an OEM enable by providing the right set of hardware in the devices you sell. Without the proper hardware configuration, device encryption is not enabled. With the right hardware configurations, Windows 10 automatically encrypts a device.
 
-## Hypervisor-protected code integrity (HVCI)
-
-HVCI is a system mitigation service that protects kernel memory and the kernel mode code integrity process. It blocks malware that attempts to exploit kernel memory vulnerabilities (for example, buffer overflows) because kernel memory pages are never writable and executable. HVCI is used by Windows Defender Credential Guard and Windows Defender Device Guard and is required for Virtualization-based Security (VBS). 
+**OEMs:** To learn more about BitLocker, see [BitLocker drive encryption in Windows 10 for OEMs](OEM-bitlocker.md).
 
 ## Secure Boot
 
@@ -51,12 +56,6 @@ UEFI is a replacement for the older BIOS firmware interface. When the devices st
 Hardware-based security features, also called virtualization-based security or VBS, provides isolation of secure kernel from normal operating system. Vulnerabilities and Zero-Day attacks in the operating system cannot be exploited because of this isolation. 
 
 **OEMs:** For more information about VBS hardware requirements, see [Virtualization Based Security (VBS) hardware requirements](OEM-VBS.md).
-
-## Windows 10 S
-
-Windows 10 S is a specific configuration of Windows 10 Pro that offers a familiar, productive Windows experience that’s streamlined for security and performance. By exclusively using apps in the Microsoft Store and ensuring that you browse safely with Microsoft Edge, Windows 10 S keeps you running fast and secure day in and day out. The same technology that makes Windows 10 S secure also creates some differences when creating software images for Windows 10 devices.
-
-**OEMs:** For more information about Windows 10 S, see [Windows 10 S manufacturing overview](https://docs.microsoft.com/windows-hardware/manufacture/desktop/windows-10-s-overview).
 
 ## Windows Defender Application Guard
 
@@ -92,6 +91,6 @@ Microsoft Windows Hello gives users a personal, secured experience where the dev
 
 For information about how Windows Hello works with the Companion Device Framework, see [Windows Hello and the Companion Device Framework](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello-companion-device-framework). 
 
-For information on requirements for supporting Windows Hello, see [Windows Hello biometric requirements](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello-biometric-requirements). 
+For information on biometric requirements for supporting Windows Hello, see [Windows Hello biometric requirements](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello-biometric-requirements). 
 
 For information about how face authentication works, see [Windows Hello face authentication](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello-face-authentication).
