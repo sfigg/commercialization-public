@@ -13,53 +13,20 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # Microsoft-Windows-DeviceAccess
-
 
 The `Microsoft-Windows-DeviceAccess` component specifies settings for enabling device policy.
 
 ## In this section
 
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Topic</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>[SetRegionSpecificPrivacyAccessPolicy](Microsoft-Windows-DeviceAccess-setregionspecificprivacyaccesspolicy.md)</p></td>
-<td><p>Enables the China CTA policy.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Setting                 | Description                                                                           |
+|:------------------------|:--------------------------------------------------------------------------------------|
+| [SetRegionSpecificPrivacyAccessPolicy](Microsoft-Windows-DeviceAccess-setregionspecificprivacyaccesspolicy.md) | Enables the China CTA policy. |
 
 ## Applies To
-
 
 To determine whether a component applies to the image you’re building, load your image into Windows SIM and search for the component or setting name. For information on how to view components and settings, see [Configure Components and Settings in an Answer File](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/wsim/configure-components-and-settings-in-an-answer-file).
 
 ## Related topics
 
-
 [Components](components-b-unattend.md)
-
- 
-
- 
-
-
-
-
-
-
-

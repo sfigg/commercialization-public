@@ -13,75 +13,39 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # Receipts
-
 
 `Receipts` specifies Simple Mail Transfer Protocol (SMTP) settings for faxes.
 
 ## Child Elements
 
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>[FaxUserName](microsoft-windows-fax-service-receipts-faxusername.md)</p></td>
-<td><p>Specifies the account name to use for basic SMTP authentication or authentication based on Windows Security.</p></td>
-</tr>
-<tr class="even">
-<td><p>[FaxUserPassword](microsoft-windows-fax-service-receipts-faxuserpassword.md)</p></td>
-<td><p>Specifies the password to use for authenticating against the server in basic SMTP authentication or authentication based on Windows Security.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[SmtpNotificationsEnabled](microsoft-windows-fax-service-receipts-smtpnotificationsenabled.md)</p></td>
-<td><p>Specifies whether to enable SMTP notifications for outgoing faxes.</p></td>
-</tr>
-<tr class="even">
-<td><p>[SmtpSenderAddress](microsoft-windows-fax-service-receipts-smtpsenderaddress.md)</p></td>
-<td><p>Specifies the e-mail address used in outgoing e-mail notifications.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[SmtpServerAddress](microsoft-windows-fax-service-receipts-smtpserveraddress.md)</p></td>
-<td><p>Specifies the name or IP address of the e-mail server used to send and to receive faxes.</p></td>
-</tr>
-<tr class="even">
-<td><p>[SmtpServerAuthenticationMechanism](microsoft-windows-fax-service-receipts-smtpserverauthenticationmechanism.md)</p></td>
-<td><p>Specifies one of the authentication schemas to use: Anonymous, Basic, or authentication based on Windows Security.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[SmtpServerPort](microsoft-windows-fax-service-receipts-smtpserverport.md)</p></td>
-<td><p>Specifies the IP port number for the e-mail server.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Setting                 | Description                                                                           |
+|:------------------------|:--------------------------------------------------------------------------------------|
+| [FaxUserName](microsoft-windows-fax-service-receipts-faxusername.md) | Specifies the account name to use for basic SMTP authentication or authentication based on Windows Security. |
+| [FaxUserPassword](microsoft-windows-fax-service-receipts-faxuserpassword.md) | Specifies the password to use for authenticating against the server in basic SMTP authentication or authentication based on Windows Security. |
+| [SmtpNotificationsEnabled](microsoft-windows-fax-service-receipts-smtpnotificationsenabled.md) | Specifies whether to enable SMTP notifications for outgoing faxes. |
+| [SmtpSenderAddress](microsoft-windows-fax-service-receipts-smtpsenderaddress.md) | Specifies the e-mail address used in outgoing e-mail notifications. |
+| [SmtpServerAddress](microsoft-windows-fax-service-receipts-smtpserveraddress.md) | Specifies the name or IP address of the e-mail server used to send and to receive faxes. |
+| [SmtpServerAuthenticationMechanism](microsoft-windows-fax-service-receipts-smtpserverauthenticationmechanism.md) | Specifies one of the authentication schemas to use: Anonymous, Basic, or authentication based on Windows Security. |
+| [SmtpServerPort](microsoft-windows-fax-service-receipts-smtpserverport.md) | Specifies the IP port number for the e-mail server. |
 
 ## Valid Passes
-
 
 specialize
 
 ## Parent Hierarchy
 
-
 [Microsoft-Windows-Fax-Service](microsoft-windows-fax-service.md) | **Receipts**
 
 ## Applies To
-
 
 For the list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-Fax-Service](microsoft-windows-fax-service.md).
 
 ## XML Example
 
-
 The following XML output shows how to set fax settings.
 
-```
+```XML
 <Fax>
    <ArchiveFaxes>false</ArchiveFaxes>
    <IncomingFaxesArePublic>false</IncomingFaxesArePublic>
@@ -112,16 +76,4 @@ The following XML output shows how to set fax settings.
 
 ## Related topics
 
-
 [Microsoft-Windows-Fax-Service](microsoft-windows-fax-service.md)
-
- 
-
- 
-
-
-
-
-
-
-

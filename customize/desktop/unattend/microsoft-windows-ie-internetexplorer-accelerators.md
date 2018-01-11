@@ -13,9 +13,7 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # Accelerators
-
 
 `Accelerators` contains the settings for Internet Explorer Accelerators.
 
@@ -27,70 +25,42 @@ For more information about setting up accelerators, see the MSDN Topic, [OpenSer
 
 ## Child Elements
 
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>[Accelerator](microsoft-windows-ie-internetexplorer-accelerators-accelerator.md)</p></td>
-<td><p>Contains the settings used to specify a shortcut to an Accelerator in the <strong>Accelerators</strong> menu.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Setting                 | Description                                                                           |
+|:------------------------|:--------------------------------------------------------------------------------------|
+| [Accelerator](microsoft-windows-ie-internetexplorer-accelerators-accelerator.md) | Contains the settings used to specify a shortcut to an Accelerator in the <strong>Accelerators</strong> menu. |
 
 ## Valid Configuration Passes
-
 
 specialize
 
 ## Parent Hierarchy
 
-
 [Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md) | **Accelerators**
 
 ## Applies To
-
 
 For a list of Windows editions and architectures that this component supports, see [Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md).
 
 ## XML Example
 
-
 The following XML output specifies adding two Accelerators.
 
-```
+```XML
 <Accelerators>
   <Accelerator wcm:action="add">
     <AcceleratorXML>http://www.contoso.com/accelerators/Accelerator1.xml</AcceleratorXML>
-    <ItemKey>Accelerator1</ItemKey> 
-    <IsDefault>true</IsDefault> 
+    <ItemKey>Accelerator1</ItemKey>
+    <IsDefault>true</IsDefault>
   </Accelerator>
   <Accelerator wcm:action="add">
-    <AcceleratorXML>http://www.contoso.com/accelerators/Accelerator2.xml</AcceleratorXML> 
-    <ItemKey>Accelerator2</ItemKey> 
+    <AcceleratorXML>http://www.contoso.com/accelerators/Accelerator2.xml</AcceleratorXML>
+    <ItemKey>Accelerator2</ItemKey>
   </Accelerator>
 </Accelerators>
 ```
 
 ## Related topics
 
-
 [DisableAccelerators](microsoft-windows-ie-internetexplorer-disableaccelerators.md)
 
 [DisableOOBAccelerators](microsoft-windows-ie-internetexplorer-disableoobaccelerators.md)
-
- 
-
- 
-
-
-
-
-
-
-

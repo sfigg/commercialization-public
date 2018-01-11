@@ -13,9 +13,7 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # Microsoft-Windows-Embedded-BootExp
-
 
 You can use the settings in `Microsoft-Windows-Embedded-BootExp` to suppress OS elements that appear when the device starts or resumes, or you can suppress the crash screen when the OS encounters an error that it cannot recover from.
 
@@ -23,59 +21,15 @@ Unbranded boot can also be configured at runtime.
 
 ## Child elements
 
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Topic</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>[DisableBootMenu](microsoft-windows-embedded-bootexp-disablebootmenu.md)</p></td>
-<td><p>Disables the F8 and F10 keys during startup to prevent access to the <strong>Advanced Startup Options</strong> menu.</p></td>
-</tr>
-<tr class="even">
-<td><p>[DisplayDisabled](microsoft-windows-embedded-bootexp-displaydisabled.md)</p></td>
-<td><p>Configures the device to display a blank screen when the OS encounters an error that it cannot recover from.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[HideAllBootUI](microsoft-windows-embedded-bootexp-hideallbootui.md)</p></td>
-<td><p>Suppresses all Windows UI elements (logo, status indicator, and status message) during startup.</p></td>
-</tr>
-<tr class="even">
-<td><p>[HideBootLogo](microsoft-windows-embedded-bootexp-hidebootlogo.md)</p></td>
-<td><p>Suppresses the default Windows logo that displays during the OS loading phase.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[HideBootStatusIndicator](microsoft-windows-embedded-bootexp-hidebootstatusindicator.md)</p></td>
-<td><p>Suppresses the status indicator that displays during the OS loading phase.</p></td>
-</tr>
-<tr class="even">
-<td><p>[HideBootStatusMessage](microsoft-windows-embedded-bootexp-hidebootstatusmessage.md)</p></td>
-<td><p>Suppresses the startup status text that displays during the OS loading phase.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Setting                 | Description                                                                           |
+|:------------------------|:--------------------------------------------------------------------------------------|
+| [DisableBootMenu](microsoft-windows-embedded-bootexp-disablebootmenu.md) | Disables the F8 and F10 keys during startup to prevent access to the <strong>Advanced Startup Options</strong> menu. |
+| [DisplayDisabled](microsoft-windows-embedded-bootexp-displaydisabled.md) | Configures the device to display a blank screen when the OS encounters an error that it cannot recover from. |
+| [HideAllBootUI](microsoft-windows-embedded-bootexp-hideallbootui.md) | Suppresses all Windows UI elements (logo, status indicator, and status message) during startup. |
+| [HideBootLogo](microsoft-windows-embedded-bootexp-hidebootlogo.md) | Suppresses the default Windows logo that displays during the OS loading phase. |
+| [HideBootStatusIndicator](microsoft-windows-embedded-bootexp-hidebootstatusindicator.md) | Suppresses the status indicator that displays during the OS loading phase. |
+| [HideBootStatusMessage](microsoft-windows-embedded-bootexp-hidebootstatusmessage.md) Suppresses the startup status text that displays during the OS loading phase. |
 
 ## Applies to
 
-
 To determine whether a component applies to the image you’re building, load your image into Windows SIM and search for the component or setting name. For information on how to view components and settings, see [Configure Components and Settings in an Answer File](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/wsim/configure-components-and-settings-in-an-answer-file).
-
- 
-
- 
-
-
-
-
-
-

@@ -13,9 +13,7 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # Interfaces
-
 
 `Interfaces` is a container for DNS interface settings.
 
@@ -23,43 +21,27 @@ DNS settings can be divided into two primary groups—global settings and interf
 
 ## Child Elements
 
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>[Interface](microsoft-windows-dns-client-interfaces-interface.md)</p></td>
-<td><p>Specifies interface settings.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Setting                 | Description                                                                           |
+|:------------------------|:--------------------------------------------------------------------------------------|
+| [Interface](microsoft-windows-dns-client-interfaces-interface.md) | Specifies interface settings.|
 
 ## Parent Hierarchy
-
 
 [Microsoft-Windows-DNS-Client](microsoft-windows-dns-client.md) | **Interfaces**
 
 ## Valid Passes
 
-
 specialize
 
 ## Applies To
-
 
 For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-DNS-Client](microsoft-windows-dns-client.md).
 
 ## XML Example
 
-
 The following XML output shows a DNS domain configuration for Fabrikam.
 
-```
+```XML
    <DNSDomain>fabrikam.com</DNSDomain>
    <DNSSuffixSearchOrder>
       <DomainName wcm:action="add" wcm:keyValue="1">server1.fabrikam.com</DomainName>
@@ -92,16 +74,4 @@ The following XML output shows a DNS domain configuration for Fabrikam.
 
 ## Related topics
 
-
 [Microsoft-Windows-DNS-Client](microsoft-windows-dns-client.md)
-
- 
-
- 
-
-
-
-
-
-
-

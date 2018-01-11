@@ -13,55 +13,34 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # AuditComputerName
-
 
 `AuditComputerName` contains the settings to specify the name of the computer to use during audit mode, and whether to restart the computer immediately after you have specified this name.
 
 ## Child Elements
 
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>[MustReboot](microsoft-windows-deployment-auditcomputername-mustreboot.md)</p></td>
-<td><p>Specifies whether to restart the computer immediately after specifying the [Name](microsoft-windows-deployment-auditcomputername-name.md) setting.</p></td>
-</tr>
-<tr class="even">
-<td><p>[Name](microsoft-windows-deployment-auditcomputername-name.md)</p></td>
-<td><p>Specifies the computer name to use during audit mode.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Setting                 | Description                                                                           |
+|:------------------------|:--------------------------------------------------------------------------------------|
+| [MustReboot](microsoft-windows-deployment-auditcomputername-mustreboot.md) | Specifies whether to restart the computer immediately after specifying the [Name](microsoft-windows-deployment-auditcomputername-name.md) setting. |
+| [Name](microsoft-windows-deployment-auditcomputername-name.md) | Specifies the computer name to use during audit mode. |
 
 ## Valid Passes
-
 
 auditSystem
 
 ## Parent Hierarchy
 
-
 [Microsoft-Windows-Deployment](microsoft-windows-deployment.md) | **AuditComputerName**
 
 ## Applies To
-
 
 For the list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-Deployment](microsoft-windows-deployment.md).
 
 ## XML Example
 
-
 The following XML output shows a deployment with no asynchronous or synchronous commands.
 
-```
+```XML
 <AuditComputerName>
    <MustReboot>true</MustReboot>
    <Name>MyComputer</Name>
@@ -77,16 +56,4 @@ The following XML output shows a deployment with no asynchronous or synchronous 
 
 ## Related topics
 
-
 [Microsoft-Windows-Deployment](microsoft-windows-deployment.md)
-
- 
-
- 
-
-
-
-
-
-
-

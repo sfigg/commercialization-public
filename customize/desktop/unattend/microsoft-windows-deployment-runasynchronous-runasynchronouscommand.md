@@ -13,9 +13,7 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # RunAsynchronousCommand
-
 
 `RunAsynchronousCommand` specifies a single command to run during the auditUser Configuration Pass or specialize Configuration Pass.
 
@@ -25,43 +23,15 @@ To run services or commands that can start at the same time, use asynchronous co
 
 ## Child Elements
 
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>[Credentials](microsoft-windows-deployment-runasynchronous-runasynchronouscommand-credentials.md)</p></td>
-<td><p>Specifies the credentials to use when accessing paths.</p></td>
-</tr>
-<tr class="even">
-<td><p>[Description](microsoft-windows-deployment-runasynchronous-runasynchronouscommand-description.md)</p></td>
-<td><p>Specifies a description of the command to execute.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[Order](microsoft-windows-deployment-runasynchronous-runasynchronouscommand-order.md)</p></td>
-<td><p>Specifies a unique value for each command.</p>
-<div class="alert">
-<strong>Important</strong>  
-<p>The computer does not wait for one command to finish before it starts the next one.</p>
-</div>
-<div>
- 
-</div></td>
-</tr>
-<tr class="even">
-<td><p>[Path](microsoft-windows-deployment-runasynchronous-runasynchronouscommand-path.md)</p></td>
-<td><p>Specifies the path to the command to execute.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Setting                 | Description                                                                           |
+|:------------------------|:--------------------------------------------------------------------------------------|
+| [Credentials](microsoft-windows-deployment-runasynchronous-runasynchronouscommand-credentials.md) | Specifies the credentials to use when accessing paths. |
+| [Description](microsoft-windows-deployment-runasynchronous-runasynchronouscommand-description.md) | Specifies a description of the command to execute. |
+| [Order](microsoft-windows-deployment-runasynchronous-runasynchronouscommand-order.md) | Specifies a unique value for each command.<br/>
+**Important**: The computer does not wait for one command to finish before it starts the next one. |
+| [Path](microsoft-windows-deployment-runasynchronous-runasynchronouscommand-path.md) | Specifies the path to the command to execute. |
 
 ## Valid Configuration Passes
-
 
 auditUser
 
@@ -69,20 +39,17 @@ specialize
 
 ## Parent Hierarchy
 
-
 [Microsoft-Windows-Deployment](microsoft-windows-deployment.md) | [RunAsynchronous](microsoft-windows-deployment-runasynchronous.md) | **RunAsynchronousCommand**
 
 ## Applies To
-
 
 For the list of the supported Windows editions and architectures this component supports, see [Microsoft-Windows-Deployment](microsoft-windows-deployment.md).
 
 ## XML Example
 
-
 The following XML output shows how to set asynchronous commands.
 
-```
+```XML
 <RunAsynchronous>
    <RunAsynchronousCommand wcm:action="add">
       <Credentials>
@@ -109,18 +76,6 @@ The following XML output shows how to set asynchronous commands.
 
 ## Related topics
 
-
 [RunAsynchronous](microsoft-windows-deployment-runasynchronous.md)
 
 [RunSynchronousCommand](microsoft-windows-deployment-runsynchronous-runsynchronouscommand.md)
-
- 
-
- 
-
-
-
-
-
-
-

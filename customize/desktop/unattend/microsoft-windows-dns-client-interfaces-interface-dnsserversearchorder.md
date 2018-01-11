@@ -13,9 +13,7 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # DNSServerSearchOrder
-
 
 `DNSServerSearchOrder` specifies a list of IP addresses to use when searching for the DNS server on the network.
 
@@ -25,7 +23,7 @@ However, the entries are not guaranteed to be applied in any specific order.
 
 To ensure the correct ordering of DNS servers, use [Key](microsoft-windows-dns-client-interfaces-interface-dnsserversearchorder-ipaddress-key.md) in `DNSServerSearchOrder` and [Key](microsoft-windows-dns-client-dnssuffixsearchorder-domainname-key.md) in [DNSSuffixSearchOrder](microsoft-windows-dns-client-dnssuffixsearchorder.md) to specify the order in which each DNS server should be searched. For example,
 
-```
+```XML
    <DNSServerSearchOrder>
       <IpAddress wcm:action="add" wcm:keyValue="2">2001:4898:28:4:213:20ff:fe16:3e96</IpAddress>
       <IpAddress wcm:action="add" wcm:keyValue="3">172.16.1.12</IpAddress>
@@ -35,7 +33,7 @@ To ensure the correct ordering of DNS servers, use [Key](microsoft-windows-dns-c
 
 You can also use the [Key](microsoft-windows-dns-client-dnssuffixsearchorder-domainname-key.md) setting under [DNSSuffixSearchOrder](microsoft-windows-dns-client-dnssuffixsearchorder.md) element to ensure that suffixes are searched in a specific order. For example,
 
-```
+```XML
    <DNSSuffixSearchOrder>
       <DomainName wcm:action="add" wcm:keyValue="2">fabrikam.com</DomainName>
       <DomainName wcm:action="add" wcm:keyValue="3">server2.fabrikam.com</DomainName>
@@ -45,61 +43,41 @@ You can also use the [Key](microsoft-windows-dns-client-dnssuffixsearchorder-dom
 
 For both of these examples, the value for [Key](microsoft-windows-dns-client-interfaces-interface-dnsserversearchorder-ipaddress-key.md)in `DNSServerSearchOrder` and [Key](microsoft-windows-dns-client-dnssuffixsearchorder-domainname-key.md) in [DNSSuffixSearchOrder](microsoft-windows-dns-client-dnssuffixsearchorder.md) indicates the order in which the DNS servers are searched. In this example, the server search order list is:
 
-1.  192.168.1.1
-
-2.  2001:4898:28:4:213:20ff:fe16:3e96
-
-3.  172.16.1.12
+1. 192.168.1.1
+1. 2001:4898:28:4:213:20ff:fe16:3e96
+1. 172.16.1.12
 
 The suffix search order is:
 
-1.  server1.fabrikam.com
-
-2.  fabrikam.com
-
-3.  server2.fabrikam.com
+1. server1.fabrikam.com
+1. fabrikam.com
+1. server2.fabrikam.com
 
 The value for [Key](microsoft-windows-dns-client-interfaces-interface-dnsserversearchorder-ipaddress-key.md)in `DNSServerSearchOrder` and [Key](microsoft-windows-dns-client-dnssuffixsearchorder-domainname-key.md) in [DNSSuffixSearchOrder](microsoft-windows-dns-client-dnssuffixsearchorder.md) must be unique, and can be set to any alphanumeric character. If the value is numeric (contains only numbers), these will be applied to order the list of [IpAddress](microsoft-windows-dns-client-interfaces-interface-dnsserversearchorder-ipaddress.md) within `DNSServerSearchOrder`.
 
 ## Child Elements
 
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>[IpAddress](microsoft-windows-dns-client-interfaces-interface-dnsserversearchorder-ipaddress.md)</p></td>
-<td><p>Specifies an IP address.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Setting                 | Description                                                                           |
+|:------------------------|:--------------------------------------------------------------------------------------|
+| [IpAddress](microsoft-windows-dns-client-interfaces-interface-dnsserversearchorder-ipaddress.md) | Specifies an IP address. |
 
 ## Parent Hierarchy
-
 
 [Microsoft-Windows-DNS-Client](microsoft-windows-dns-client.md) | [Interfaces](microsoft-windows-dns-client-interfaces.md) | [Interface](microsoft-windows-dns-client-interfaces-interface.md) | **DNSServerSearchOrder**
 
 ## Valid Passes
 
-
 specialize
 
 ## Applies To
-
 
 For the list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-DNS-Client](microsoft-windows-dns-client.md).
 
 ## XML Example
 
-
 The following XML output shows a DNS domain configuration for Fabrikam.
 
-```
+```XML
    <DNSDomain>fabrikam.com</DNSDomain>
    <DNSSuffixSearchOrder>
       <DomainName wcm:action="add" wcm:keyValue="1">server1.fabrikam.com</DomainName>
@@ -132,16 +110,4 @@ The following XML output shows a DNS domain configuration for Fabrikam.
 
 ## Related topics
 
-
 [Interface](microsoft-windows-dns-client-interfaces-interface.md)
-
- 
-
- 
-
-
-
-
-
-
-
