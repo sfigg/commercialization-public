@@ -13,100 +13,41 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # Scope
-
 
 `Scope` specifies a search provider.
 
 ## Child Elements
 
-
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Setting name</th>
-<th>Description</th>
-<th>Applies to which versions of Windows Internet Explorer</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>[FaviconURL](microsoft-windows-ie-internetexplorer-searchscopes-scope-faviconurl.md)</p></td>
-<td><p>Specifies the path to an icon for a specific Search Scope item.</p></td>
-<td><p>Internet Explorer 8 through Internet Explorer 11</p></td>
-</tr>
-<tr class="even">
-<td><p>[PreviewURL](microsoft-windows-ie-internetexplorer-searchscopes-scope-previewurl.md)</p></td>
-<td><p>Specifies the URL where previews are shown in the <strong>Accelerator</strong> window.</p></td>
-<td><p>Internet Explorer 8 through Internet Explorer 11</p></td>
-</tr>
-<tr class="odd">
-<td><p>[ScopeDefault](microsoft-windows-ie-internetexplorer-searchscopes-scope-scopedefault.md)</p></td>
-<td><p>Specifies whether the Search Scope item is the default search provider.</p></td>
-<td><p>Internet Explorer 7 through Internet Explorer 11</p></td>
-</tr>
-<tr class="even">
-<td><p>[ScopeDisplayName](microsoft-windows-ie-internetexplorer-searchscopes-scope-scopedisplayname.md)</p></td>
-<td><p>Specifies the display name for the search provider.</p></td>
-<td><p>Internet Explorer 7 through Internet Explorer 11</p></td>
-</tr>
-<tr class="odd">
-<td><p>[ScopeKey](microsoft-windows-ie-internetexplorer-searchscopes-scope-scopekey.md)</p></td>
-<td><p>Specifies the unique string for the search provider.</p></td>
-<td><p>Internet Explorer 7 through Internet Explorer 11</p></td>
-</tr>
-<tr class="even">
-<td><p>[ScopeUrl](microsoft-windows-ie-internetexplorer-searchscopes-scope-scopeurl.md)</p></td>
-<td><p>Specifies the URL for the search provider.</p></td>
-<td><p>Internet Explorer 7 through Internet Explorer 11</p></td>
-</tr>
-<tr class="odd">
-<td><p>[ShowSearchSuggestions](microsoft-windows-ie-internetexplorer-searchscopes-scope-showsearchsuggestions.md)</p></td>
-<td><p>Specifies whether Search Suggestions are shown.</p></td>
-<td><p>Internet Explorer 8 through Internet Explorer 11</p></td>
-</tr>
-<tr class="even">
-<td><p>[SuggestionsURL](microsoft-windows-ie-internetexplorer-searchscopes-scope-suggestionsurl.md)</p></td>
-<td><p>Specifies suggestions that appear to the user during a search, by using a search that is based on XML.</p></td>
-<td><p>Internet Explorer 8 through Internet Explorer 11</p></td>
-</tr>
-<tr class="odd">
-<td><p>[SuggestionsURL_JSON](microsoft-windows-ie-internetexplorer-searchscopes-scope-suggestionsurl-json.md)</p></td>
-<td><p>Specifies suggestions that appear to the user during a search, by using a search that is based on JavaScript Object Notation (JSON).</p></td>
-<td><p>Internet Explorer 8 through Internet Explorer 11</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Setting                 | Description                                                                           |
+|:------------------------|:--------------------------------------------------------------------------------------|
+| [FaviconURL](microsoft-windows-ie-internetexplorer-searchscopes-scope-faviconurl.md) | Specifies the path to an icon for a specific Search Scope item. Internet Explorer 8 through Internet Explorer 11. |
+| [PreviewURL](microsoft-windows-ie-internetexplorer-searchscopes-scope-previewurl.md) | Specifies the URL where previews are shown in the <strong>Accelerator</strong> window. Internet Explorer 8 through Internet Explorer 11. |
+| [ScopeDefault](microsoft-windows-ie-internetexplorer-searchscopes-scope-scopedefault.md) | Specifies whether the Search Scope item is the default search provider. Internet Explorer 7 through Internet Explorer 11. |
+| [ScopeDisplayName](microsoft-windows-ie-internetexplorer-searchscopes-scope-scopedisplayname.md) | Specifies the display name for the search provider. Internet Explorer 7 through Internet Explorer 11. |
+| [ScopeKey](microsoft-windows-ie-internetexplorer-searchscopes-scope-scopekey.md) | Specifies the unique string for the search provider. Internet Explorer 7 through Internet Explorer 11. |
+| [ScopeUrl](microsoft-windows-ie-internetexplorer-searchscopes-scope-scopeurl.md) | Specifies the URL for the search provider. Internet Explorer 7 through Internet Explorer 11. |
+| [ShowSearchSuggestions](microsoft-windows-ie-internetexplorer-searchscopes-scope-showsearchsuggestions.md) | Specifies whether Search Suggestions are shown. Internet Explorer 8 through Internet Explorer 11. |
+| [SuggestionsURL](microsoft-windows-ie-internetexplorer-searchscopes-scope-suggestionsurl.md) | Specifies suggestions that appear to the user during a search, by using a search that is based on XML. Internet Explorer 8 through Internet Explorer 11. |
+| [SuggestionsURL_JSON](microsoft-windows-ie-internetexplorer-searchscopes-scope-suggestionsurl-json.md) | Specifies suggestions that appear to the user during a search, by using a search that is based on JavaScript Object Notation (JSON). Internet Explorer 8 through Internet Explorer 11. |
 
 ## Valid Configuration Passes
-
 
 specialize
 
 ## Parent Hierarchy
 
-
 [Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md) | [SearchScopes](microsoft-windows-ie-internetexplorer-searchscopes.md) | **Scope**
 
 ## Applies To
-
 
 For a list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md).
 
 ## XML Example
 
-
 The following example shows how to set search providers.
 
-```
+```XML
 <SearchScopes>
    <Scope wcm:action="add">
       <ScopeDefault>true</ScopeDefault>
@@ -124,16 +65,4 @@ The following example shows how to set search providers.
 
 ## Related topics
 
-
 [SearchScopes](microsoft-windows-ie-internetexplorer-searchscopes.md)
-
- 
-
- 
-
-
-
-
-
-
-

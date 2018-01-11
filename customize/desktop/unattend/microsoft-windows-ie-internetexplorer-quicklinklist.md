@@ -13,51 +13,33 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # QuickLinkList
-
 
 `QuickLinkList` is a container for [QuickLinkItem](microsoft-windows-ie-internetexplorer-quicklinklist-quicklinkitem.md) settings.
 
 ## Child Elements
 
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>[QuickLinkItem](microsoft-windows-ie-internetexplorer-quicklinklist-quicklinkitem.md)</p></td>
-<td><p>Specifies a shortcut on the <strong>Favorites</strong> toolbar.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Setting                 | Description                                                                           |
+|:------------------------|:--------------------------------------------------------------------------------------|
+| [QuickLinkItem](microsoft-windows-ie-internetexplorer-quicklinklist-quicklinkitem.md) | Specifies a shortcut on the <strong>Favorites</strong> toolbar. |
 
 ## Valid Passes
-
 
 specialize
 
 ## Parent Hierarchy
 
-
 [Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md) | **QuickLinkList**
 
 ## Applies To
-
 
 For the list of the supported windows editions and architectures that this component supports, see [Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md).
 
 ## XML Example
 
-
 The following XML output shows how to configure `QuickLinkList`.
 
-```
+```XML
 <QuickLinkList>
    <QuickLinkItem>
       <QLID>0</QLID>
@@ -74,16 +56,4 @@ The following XML output shows how to configure `QuickLinkList`.
 
 ## Related topics
 
-
 [Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md)
-
- 
-
- 
-
-
-
-
-
-
-

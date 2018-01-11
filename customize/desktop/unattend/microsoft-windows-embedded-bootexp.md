@@ -28,7 +28,7 @@ Unbranded boot can also be configured at runtime.
 | [HideAllBootUI](microsoft-windows-embedded-bootexp-hideallbootui.md) | Suppresses all Windows UI elements (logo, status indicator, and status message) during startup. |
 | [HideBootLogo](microsoft-windows-embedded-bootexp-hidebootlogo.md) | Suppresses the default Windows logo that displays during the OS loading phase. |
 | [HideBootStatusIndicator](microsoft-windows-embedded-bootexp-hidebootstatusindicator.md) | Suppresses the status indicator that displays during the OS loading phase. |
-| [HideBootStatusMessage](microsoft-windows-embedded-bootexp-hidebootstatusmessage.md) Suppresses the startup status text that displays during the OS loading phase. |
+| [HideBootStatusMessage](microsoft-windows-embedded-bootexp-hidebootstatusmessage.md) | Suppresses the startup status text that displays during the OS loading phase. |
 
 ## Applies to
 

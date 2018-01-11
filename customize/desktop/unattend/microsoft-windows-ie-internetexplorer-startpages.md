@@ -13,9 +13,7 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # StartPages
-
 
 The `StartPages` setting specifies additional home pages opened when tabbed browsing is enabled.
 
@@ -23,43 +21,27 @@ To set the primary home page, use the [Home\_Page](microsoft-windows-ie-internet
 
 ## Child Elements
 
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>[StartPage](microsoft-windows-ie-internetexplorer-startpages-startpage.md)</p></td>
-<td><p>Specifies a tabbed browsing home page.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Setting                 | Description                                                                           |
+|:------------------------|:--------------------------------------------------------------------------------------|
+| [StartPage](microsoft-windows-ie-internetexplorer-startpages-startpage.md) | Specifies a tabbed browsing home page. |
 
 ## Valid Passes
-
 
 specialize
 
 ## Parent Hierarchy
 
-
 [Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md) | **StartPages**
 
 ## Applies To
-
 
 For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md).
 
 ## XML Example
 
-
 The following XML output shows how to set a primary home page and two secondary home pages.
 
-```
+```XML
 <Home_Page>http://www.fabrikam.com</Home_Page>
 <StartPages>
    <StartPage>
@@ -75,18 +57,6 @@ The following XML output shows how to set a primary home page and two secondary 
 
 ## Related topics
 
-
 [Home\_Page](microsoft-windows-ie-internetexplorer-home-page.md)
 
 [Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md)
-
- 
-
- 
-
-
-
-
-
-
-

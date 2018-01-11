@@ -13,9 +13,7 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # InstalledBHOList
-
 
 `InstalledBHOList` contains settings for configuring Internet Explorer Browser Help Objects.
 
@@ -25,43 +23,27 @@ Browser Help Objects are add-on modules used to add functionality to Internet Ex
 
 ## Child Elements
 
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>[AddonGuidItem](microsoft-windows-ie-internetexplorer-installedbholist-addonguiditem.md)</p></td>
-<td><p>Specifies settings for a Browser Help Object.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Setting                 | Description                                                                           |
+|:------------------------|:--------------------------------------------------------------------------------------|
+| [AddonGuidItem](microsoft-windows-ie-internetexplorer-installedbholist-addonguiditem.md) | Specifies settings for a Browser Help Object. |
 
 ## Valid Passes
-
 
 specialize
 
 ## Parent Hierarchy
 
-
 [Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md) | **InstalledBHOList**
 
 ## Applies To
-
 
 For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md).
 
 ## XML Example
 
-
 The following XML output shows how to set two Internet Explorer Browser Help Objects.
 
-```
+```XML
 <InstalledBHOList>
   <AddOnGuidItem>
     <AddOnGuid>{a1b1c123d1e1f4a5a6a7aa8a9a0a}</AddOnGuid>
@@ -74,18 +56,6 @@ The following XML output shows how to set two Internet Explorer Browser Help Obj
 
 ## Related topics
 
-
 [Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md)
 
 [InstalledBrowserExtensions](microsoft-windows-ie-internetexplorer-installedbrowserextensions.md)
-
- 
-
- 
-
-
-
-
-
-
-

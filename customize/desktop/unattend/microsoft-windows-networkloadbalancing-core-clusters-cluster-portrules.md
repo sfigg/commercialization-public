@@ -13,56 +13,36 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # Portrules
-
 
 `Portrules` specifies details about the port rules used for the cluster, including a port rule’s name, virtual IP address, protocol, mode, and so on.
 
-**Note**  
-To enable this Network Load Balancing setting, the NetworkLoadBalancingFullServer package must be enabled in the Windows image you are installing. To do this, use Windows System Image Manager to add the Microsoft-Windows-Foundation-Package to your answer file, and then configure the NetworkLoadBalancingFullServer package to enable it. For more information about adding and configuring packages, see the [Windows Assessment and Deployment (Windows ADK) Technical Reference](http://go.microsoft.com/fwlink/?LinkId=206587).
-
- 
+> [!Note]
+> To enable this Network Load Balancing setting, the NetworkLoadBalancingFullServer package must be enabled in the Windows image you are installing. To do this, use Windows System Image Manager to add the Microsoft-Windows-Foundation-Package to your answer file, and then configure the NetworkLoadBalancingFullServer package to enable it. For more information about adding and configuring packages, see the [Windows Assessment and Deployment (Windows ADK) Technical Reference](http://go.microsoft.com/fwlink/?LinkId=206587).
 
 ## Child Element
 
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>[Portrule](microsoft-windows-networkloadbalancing-core-clusters-cluster-portrules-portrule.md)</p></td>
-<td><p>Specifies details about a port rule used for a cluster, such as its name, IP address, protocol, mode, and so on.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Setting                 | Description                                                                           |
+|:------------------------|:--------------------------------------------------------------------------------------|
+| [Portrule](microsoft-windows-networkloadbalancing-core-clusters-cluster-portrules-portrule.md) | Specifies details about a port rule used for a cluster, such as its name, IP address, protocol, mode, and so on. |
 
 ## Valid Passes
-
 
 specialize
 
 ## Parent Hierarchy
 
-
-[microsoft-windows-networkloadbalancing-core-](microsoft-windows-networkloadbalancing-core.md) | [Clusters](microsoft-windows-networkloadbalancing-core-clusters.md) | [Cluster](microsoft-windows-networkloadbalancing-core-clusters-cluster.md) | **Portrules**
+[Microsoft-Windows-NetworkLoadBalancing-Core](microsoft-windows-networkloadbalancing-core.md) | [Clusters](microsoft-windows-networkloadbalancing-core-clusters.md) | [Cluster](microsoft-windows-networkloadbalancing-core-clusters-cluster.md) | **Portrules**
 
 ## Applies To
 
-
-For the list of the supported Windows editions and architectures that this component supports, see [microsoft-windows-networkloadbalancing-core-](microsoft-windows-networkloadbalancing-core.md).
+For the list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-NetworkLoadBalancing-Core](microsoft-windows-networkloadbalancing-core.md).
 
 ## XML Example
 
-
 The following XML output shows how to specify details about the port rules used for the cluster.
 
-```
+```XML
 <Portrules>
    <Portrule wcm:keyValue="Portrule1">
       <VirtualIpAddress>255.255.255.255</VirtualIpAddress>
@@ -111,16 +91,4 @@ The following XML output shows how to specify details about the port rules used 
 
 ## Related topics
 
-
 [Cluster](microsoft-windows-networkloadbalancing-core-clusters-cluster.md)
-
- 
-
- 
-
-
-
-
-
-
-

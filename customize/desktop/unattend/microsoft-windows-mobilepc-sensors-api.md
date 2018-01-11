@@ -1,6 +1,6 @@
 ---
-title: microsoft-windows-mobilepc-sensors-api-
-description: microsoft-windows-mobilepc-sensors-api-
+title: Microsoft-Windows-MobilePC-Sensors-API
+description: Microsoft-Windows-MobilePC-Sensors-API
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
@@ -13,9 +13,7 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
-# microsoft-windows-mobilepc-sensors-api-
-
+# Microsoft-Windows-MobilePC-Sensors-API
 
 The Microsoft-Windows-Sensors-Setup component specifies settings for sensor devices or mechanisms.
 
@@ -23,40 +21,15 @@ Examples of sensors include accelerometers, light sensors, temperature sensors, 
 
 ## In This Section
 
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>[AdaptiveBrightness](microsoft-windows-mobilepc-sensors-api-adaptivebrightness.md)</p></td>
-<td><p>Specifies settings related to adaptive brightness.</p>
-<p>Adaptive brightness changes the brightness of a monitor or display based on the ambient light.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Setting                 | Description                                                                           |
+|:------------------------|:--------------------------------------------------------------------------------------|
+| AdaptiveBrightness](microsoft-windows-mobilepc-sensors-api-adaptivebrightness.md) | Specifies settings related to adaptive brightness.</p>
+<p>Adaptive brightness changes the brightness of a monitor or display based on the ambient light. |
 
 ## Applies To
-
 
 To determine whether a component applies to the image you’re building, load your image into Windows SIM and search for the component or setting name. For information on how to view components and settings, see [Configure Components and Settings in an Answer File](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/wsim/configure-components-and-settings-in-an-answer-file).
 
 ## Related topics
 
-
 [Components](components-b-unattend.md)
-
- 
-
- 
-
-
-
-
-
-
-

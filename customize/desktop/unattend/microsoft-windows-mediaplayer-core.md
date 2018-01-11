@@ -13,47 +13,20 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # Microsoft-Windows-MediaPlayer-Core
-
 
 The Microsoft-Windows-MediaPlayer-Core component contains a setting that specifies an override for the default Online Store provider for Windows Media Player 12.
 
 ## In This Section
 
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>[InitialOEMServiceProvider](microsoft-windows-mediaplayer-core-initialoemserviceprovider.md)</p></td>
-<td><p>Specifies the initial OEM service provider for Windows Media Player 12.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Setting                 | Description                                                                           |
+|:------------------------|:--------------------------------------------------------------------------------------|
+| [InitialOEMServiceProvider](microsoft-windows-mediaplayer-core-initialoemserviceprovider.md) | Specifies the initial OEM service provider for Windows Media Player 12. |
 
 ## Applies To
-
 
 To determine whether a component applies to the image you’re building, load your image into Windows SIM and search for the component or setting name. For information on how to view components and settings, see [Configure Components and Settings in an Answer File](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/wsim/configure-components-and-settings-in-an-answer-file).
 
 ## Related topics
 
-
 [Components](components-b-unattend.md)
-
- 
-
- 
-
-
-
-
-
-
-
