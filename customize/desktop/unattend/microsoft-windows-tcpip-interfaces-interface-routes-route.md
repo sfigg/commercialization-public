@@ -13,9 +13,7 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # Route
-
 
 `Route` specifies information for each route.
 
@@ -23,36 +21,14 @@ The settings under [Route](http://go.microsoft.com/fwlink/?LinkId=254767) must b
 
 ## Child Elements
 
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>[Identifier](microsoft-windows-tcpip-interfaces-interface-routes-route-identifier.md)</p></td>
-<td><p>Specifies a unique integer for each route.</p></td>
-</tr>
-<tr class="even">
-<td><p>[Metric](microsoft-windows-tcpip-interfaces-interface-routes-route-metric.md)</p></td>
-<td><p>Specifies the metric used to distinguish between multiple matching routes of the same prefix length.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[NextHopAddress](microsoft-windows-tcpip-interfaces-interface-routes-route-nexthopaddress.md)</p></td>
-<td><p>Specifies the IP address of the next hop in the route.</p></td>
-</tr>
-<tr class="even">
-<td><p>[Prefix](microsoft-windows-tcpip-interfaces-interface-routes-route-prefix.md)</p></td>
-<td><p>Specifies the prefix to match to each route.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Setting                 | Description                                                                           |
+|:------------------------|:--------------------------------------------------------------------------------------|
+| [Identifier](microsoft-windows-tcpip-interfaces-interface-routes-route-identifier.md) | Specifies a unique integer for each route. |
+| [Metric](microsoft-windows-tcpip-interfaces-interface-routes-route-metric.md) | Specifies the metric used to distinguish between multiple matching routes of the same prefix length. |
+| [NextHopAddress](microsoft-windows-tcpip-interfaces-interface-routes-route-nexthopaddress.md) | Specifies the IP address of the next hop in the route. |
+| [Prefix](microsoft-windows-tcpip-interfaces-interface-routes-route-prefix.md) | Specifies the prefix to match to each route. |
 
 ## Valid Configuration Passes
-
 
 specialize
 
@@ -60,20 +36,17 @@ windowsPE
 
 ## Parent Hierarchy
 
-
 [Microsoft-Windows-TCPIP](microsoft-windows-tcpip.md) | [Interfaces](microsoft-windows-tcpip-interfaces.md) | [Interface](microsoft-windows-tcpip-interfaces-interface.md) | [Routes](microsoft-windows-tcpip-interfaces-interface-routes.md) | **Route**
 
 ## Applies To
-
 
 For the list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-TCPIP](microsoft-windows-tcpip.md).
 
 ## XML Example
 
-
 The following XML output shows how to configure TCPIP.
 
-```
+```XML
 <component name="Microsoft-Windows-TCPIP" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
    <Interfaces>
    <!-- Add static IP address (192.168.0.1/24, ffff:1::3/48) & route (12.34.0.0/16) to interface with identifier "Ethernet 1" -->      <Interface wcm:action="add">
@@ -137,16 +110,4 @@ The following XML output shows how to configure TCPIP.
 
 ## Related topics
 
-
 [Routes](microsoft-windows-tcpip-interfaces-interface-routes.md)
-
- 
-
- 
-
-
-
-
-
-
-

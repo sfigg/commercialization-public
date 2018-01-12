@@ -30,11 +30,11 @@ For unattended installations, you must specify either the **InstallTo** or the [
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>microsoft-windows-setup\ImageInstall\OSImage\InstallTo</p></td>
+<td><p>Microsoft-Windows-Setup\ImageInstall\OSImage\InstallTo</p></td>
 <td><p>Installs Windows to a specified disk and partition.</p></td>
 </tr>
 <tr class="even">
-<td><p>microsoft-windows-setup\ImageInstall\OSImage\[InstallToAvailablePartition](microsoft-windows-setup-imageinstall-osimage-installtoavailablepartition.md)</p></td>
+<td><p>[Microsoft-Windows-Setup\ImageInstall\OSImage\InstallToAvailablePartition](microsoft-windows-setup-imageinstall-osimage-installtoavailablepartition.md)</p></td>
 <td><p>Installs Windows to the first available partition that has enough space and does not already contain an installation of Windows.</p></td>
 </tr>
 </tbody>

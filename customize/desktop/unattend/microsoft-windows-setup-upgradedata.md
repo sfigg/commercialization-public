@@ -29,7 +29,7 @@ For a sample answer file, see the [XML Example](#xmlexample) section.
 | Setting                 | Description                                                                           |
 |:------------------------|:--------------------------------------------------------------------------------------|
 | [Upgrade](microsoft-windows-setup-upgradedata-upgrade.md) | Specifies whether the installation is an upgrade of an existing operating system. |
-| [WillShowUI](microsoft-windows-setup-upgradedata-willshowui.md)WillShowUI | Specifies in what circumstances the UI is displayed. |
+| [WillShowUI](microsoft-windows-setup-upgradedata-willshowui.md) | Specifies in what circumstances the UI is displayed. |
 
 ## Valid Configuration Passes
 

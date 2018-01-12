@@ -25,8 +25,8 @@ All of Windows Ink Workspace is available above lock. This functionality is off 
 
 ## In this section
 
-| Topic                                                        | Description                                                                                                |
-|:-------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------|
+| Setting                 | Description                                                                           |
+|:------------------------|:--------------------------------------------------------------------------------------|
 | [CustomProtocol](microsoft-windows-twinui-customprotocol.md) | Specifies that you are using your own advanced Pen settings application.                                   |
 | [Hide](microsoft-windows-twinui-hide.md)                     | Specifies whether to hide the Pen shortcut UI in the Pen and Windows Ink Settings page.                    |
 

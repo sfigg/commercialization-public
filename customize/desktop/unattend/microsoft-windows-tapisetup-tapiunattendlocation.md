@@ -13,9 +13,7 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # TapiUnattendLocation
-
 
 `TapiUnattendLocation` specifies unattended installation settings for a telephony location.
 
@@ -23,75 +21,35 @@ If one of the child elements is not applicable in your country or region, you mu
 
 ## Child Elements
 
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>[AreaCode](microsoft-windows-tapisetup-tapiunattendlocation-areacode.md)</p></td>
-<td><p>Specifies the local telephone area code.</p></td>
-</tr>
-<tr class="even">
-<td><p>[CountryOrRegion](microsoft-windows-tapisetup-tapiunattendlocation-countryorregion.md)</p></td>
-<td><p>Specifies the region ID for this location. This not the same as the country or region code used for dialing.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[DisableCallWaiting](microsoft-windows-tapisetup-tapiunattendlocation-disablecallwaiting.md)</p></td>
-<td><p>Specifies the number to dial to disable call waiting.</p></td>
-</tr>
-<tr class="even">
-<td><p>[InternationalCarrierCode](microsoft-windows-tapisetup-tapiunattendlocation-internationalcarriercode.md)</p></td>
-<td><p>Specifies the international telephone carrier.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[LongDistanceAccess](microsoft-windows-tapisetup-tapiunattendlocation-longdistanceaccess.md)</p></td>
-<td><p>Specifies the number to dial from this location for long distance access.</p></td>
-</tr>
-<tr class="even">
-<td><p>[LongDistanceCarrierCode](microsoft-windows-tapisetup-tapiunattendlocation-longdistancecarriercode.md)</p></td>
-<td><p>Specifies the long distance carrier.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[Name](microsoft-windows-tapisetup-tapiunattendlocation-name.md)</p></td>
-<td><p>Specifies the name of this location. This appears in the user interface (UI).</p></td>
-</tr>
-<tr class="even">
-<td><p>[OutsideAccess](microsoft-windows-tapisetup-tapiunattendlocation-outsideaccess.md)</p></td>
-<td><p>Specifies the number to dial to access an outside line from this location.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[PulseOrToneDialing](microsoft-windows-tapisetup-tapiunattendlocation-pulseortonedialing.md)</p></td>
-<td><p>Specifies whether to use pulse dialing or tone dialing.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Setting                 | Description                                                                           |
+|:------------------------|:--------------------------------------------------------------------------------------|
+| [AreaCode](microsoft-windows-tapisetup-tapiunattendlocation-areacode.md) | Specifies the local telephone area code. |
+| [CountryOrRegion](microsoft-windows-tapisetup-tapiunattendlocation-countryorregion.md) | Specifies the region ID for this location. This not the same as the country or region code used for dialing. |
+| [DisableCallWaiting](microsoft-windows-tapisetup-tapiunattendlocation-disablecallwaiting.md) | Specifies the number to dial to disable call waiting. |
+| [InternationalCarrierCode](microsoft-windows-tapisetup-tapiunattendlocation-internationalcarriercode.md) | Specifies the international telephone carrier. |
+| [LongDistanceAccess](microsoft-windows-tapisetup-tapiunattendlocation-longdistanceaccess.md) | Specifies the number to dial from this location for long distance access. |
+| [LongDistanceCarrierCode](microsoft-windows-tapisetup-tapiunattendlocation-longdistancecarriercode.md) | Specifies the long distance carrier. |
+| [Name](microsoft-windows-tapisetup-tapiunattendlocation-name.md) | Specifies the name of this location. This appears in the user interface (UI). |
+| [OutsideAccess](microsoft-windows-tapisetup-tapiunattendlocation-outsideaccess.md) | Specifies the number to dial to access an outside line from this location. |
+| [PulseOrToneDialing](microsoft-windows-tapisetup-tapiunattendlocation-pulseortonedialing.md) | Specifies whether to use pulse dialing or tone dialing. |
 
 ## Valid Passes
-
 
 specialize
 
 ## Parent Hierarchy
 
-
-[microsoft-windows-tapisetup-](microsoft-windows-tapisetup.md) | **TapiUnattendLocation**
+[Microsoft-Windows-TAPISetup](microsoft-windows-tapisetup.md) | **TapiUnattendLocation**
 
 ## Applies To
-
 
 For the list of the supported Windows editions and architectures that this component supports, see [microsoft-windows-tapisetup-](microsoft-windows-tapisetup.md).
 
 ## XML Example
 
-
 The following XML output shows how to set the location from which you are calling.
 
-```
+```XML
 <TapiUnattendLocation>
    <AreaCode>123</AreaCode>
    <CountryOrRegion>123</CountryOrRegion>
@@ -107,16 +65,4 @@ The following XML output shows how to set the location from which you are callin
 
 ## Related topics
 
-
-[microsoft-windows-tapisetup-](microsoft-windows-tapisetup.md)
-
- 
-
- 
-
-
-
-
-
-
-
+[Microsoft-Windows-TAPISetup](microsoft-windows-tapisetup.md)
