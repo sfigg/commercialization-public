@@ -29,7 +29,7 @@ To fix this problem, stop and restart the **MSSQLServer** service on the Windows
 
 ## Transaction log is too large (standalone SQL Server 2012)
 
-When using the HLK with standalone SQL Server 2012, if you find that your transaction log is growing too large or too fast, [you may need to adjust your recovery configuration.](install-microsoft-sql-server.md#using-the-hlk-with-standalone-sql-server-2012)
+When using the HLK with standalone SQL Server 2012, if you find that your transaction log is growing too large or too fast, [you may need to adjust your recovery configuration.](microsoft-sql-server-options.md#using-the-hlk-with-standalone-sql-server-2012)
 
 
 ## <span id="unsup"></span><span id="UNSUP"></span>Unsupported scenarios
