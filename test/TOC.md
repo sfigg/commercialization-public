@@ -417,6 +417,12 @@
 ### [Capture power management events on Windows 10 Mobile](mobile-tracing/capture-power-management-events-on-windows-phone.md)
 
 
+## [Windows Mixed Reality HMD Exerciser Kit](hmd/windows-mixed-reality-hmd-exerciser-kit.md)
+### [Quick Start Guide](hmd/hmd-exerciser-kit-quick-start-guide.md)
+### [HMD Exerciser Kit Hardware](hmd/hmd-exerciser-kit-hardware.md)
+### [HMD Exerciser Kit Software](hmd/hmd-exerciser-kit-software.md)
+### [Testing with the HMD Exerciser Kit](hmd/testing-with-hmd-exerciser-kit.md)
+
 
 ## [Windows Engineering Guides](weg/index.md)
 ### [Performance - Windows Engineering Guide](weg/weg-performance.md)

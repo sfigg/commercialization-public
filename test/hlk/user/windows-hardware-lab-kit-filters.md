@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: b8f42f80-b4ae-49d8-90f1-34305465751e
 author: sapaetsc
 ms.author: sapaetsc
-ms.date: 10/15/17
+ms.date: 10/15/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -33,7 +33,9 @@ When Microsoft discovers a problem in either a Windows HLK test or in the operat
 >  
 If your HLK environment doesn’t have access to the Internet, you can copy the file to your test server.
 
- 
+>[!NOTE]
+>  
+Both HLK and HCK filters are stored in the same HCKFilterUpdates.cab filters file, there is no separate file for HLK.
 
 1.  Review the ReadMe file to learn how to install the filters on the controller.
 

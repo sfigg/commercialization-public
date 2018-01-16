@@ -8,7 +8,7 @@ Search.SourceType: Video
 ms.assetid: 31e7f2eb-4991-4d66-b797-18039ab8c5c1
 author: sapaetsc
 ms.author: sapaetsc
-ms.date: 10/15/17
+ms.date: 10/15/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
