@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: bed22024-e227-44e6-b846-cf6418c0fa27
 author: sapaetsc
 ms.author: sapaetsc
-ms.date: 10/15/17
+ms.date: 10/15/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
