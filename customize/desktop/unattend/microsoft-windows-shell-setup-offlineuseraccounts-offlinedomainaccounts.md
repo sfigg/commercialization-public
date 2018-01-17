@@ -13,55 +13,28 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # OfflineDomainAccounts
-
 
 `OfflineDomainAccounts` specifies the details of domain accounts to be added to local security groups on the computer during installation.
 
 ## Child Elements
 
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>[OfflineDomainAccount](microsoft-windows-shell-setup-offlineuseraccounts-offlinedomainaccounts-offlinedomainaccount.md)</p></td>
-<td><p>Specifies the domains and the domain accounts to be created.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Setting                 | Description                                                                           |
+|:------------------------|:--------------------------------------------------------------------------------------|
+| [OfflineDomainAccount](microsoft-windows-shell-setup-offlineuseraccounts-offlinedomainaccounts-offlinedomainaccount.md) | Specifies the domains and the domain accounts to be created. |
 
 ## Valid Passes
-
 
 offlineServicing
 
 ## Parent Hierarchy
 
-
 [Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [OfflineUserAccounts](microsoft-windows-shell-setup-offlineuseraccounts.md) | **OfflineDomainAccounts**
 
 ## Applies To
-
 
 Windows 10 for desktop editions (Home, Pro, Enterprise, and Education)
 
 Windows Server 2016
 
 For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md).
-
- 
-
- 
-
-
-
-
-
-

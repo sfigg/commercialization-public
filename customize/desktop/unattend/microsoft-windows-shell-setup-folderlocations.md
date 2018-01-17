@@ -13,64 +13,37 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # FolderLocations
-
 
 The `FolderLocations` setting specifies the location of the user-profile and program-data folders.
 
- 
-
 ## Child Elements
 
+| Setting                 | Description                                                                           |
+|:------------------------|:--------------------------------------------------------------------------------------|
+| [ProfilesDirectory](microsoft-windows-shell-setup-folderlocations-profilesdirectory.md) | Specifies the path to the user profile folder. |
+| [ProgramData](microsoft-windows-shell-setup-folderlocations-programdata.md) | Specifies the path to the program-data folder. |
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>[ProfilesDirectory](microsoft-windows-shell-setup-folderlocations-profilesdirectory.md)</p></td>
-<td><p>Specifies the path to the user profile folder.</p></td>
-</tr>
-<tr class="even">
-<td><p>[ProgramData](microsoft-windows-shell-setup-folderlocations-programdata.md)</p></td>
-<td><p>Specifies the path to the program-data folder.</p>
-<div class="alert">
-<strong>Warning</strong>  
-<p>Use this setting only in a test environment. If you change the default location of the program-data folders to a volume other than the system volume, you cannot service your image. Any updates, fixes, or service packs may not be applied to the installation.</p>
-</div>
-<div>
- 
-</div></td>
-</tr>
-</tbody>
-</table>
-
- 
+> [!Warning]
+> Use this setting only in a test environment. If you change the default location of the program-data folders to a volume other than the system volume, you cannot service your image. Any updates, fixes, or service packs may not be applied to the installation.
 
 ## Valid Configuration Passes
-
 
 oobeSystem
 
 ## Parent Hierarchy
 
-
 [Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | **FolderLocations**
 
 ## Applies To
-
 
 For a list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md).
 
 ## XML Example
 
-
 The following XML example shows how to set the paths to folder locations.
 
-```
+```XML
 <FolderLocations>
    <ProfilesDirectory>%SYSTEMDRIVE%\Profiles</ProfilesDirectory>
 </FolderLocations>
@@ -78,16 +51,4 @@ The following XML example shows how to set the paths to folder locations.
 
 ## Related topics
 
-
 [Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md)
-
- 
-
- 
-
-
-
-
-
-
-

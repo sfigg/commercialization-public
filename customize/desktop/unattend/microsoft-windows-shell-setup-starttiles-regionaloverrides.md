@@ -13,9 +13,7 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # RegionalOverrides
-
 
 `RegionalOverrides` specifies sets of apps that appear on the Start and Lock screens for different regions.
 
@@ -29,24 +27,11 @@ If the selected region doesn’t match any of these regions, then Windows displa
 
 ## Child Elements
 
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>[RegionalOverride](microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverride.md)</p></td>
-<td><p>Specifies a set of apps that appear on the Start screen for different regions.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Setting                 | Description                                                                           |
+|:------------------------|:--------------------------------------------------------------------------------------|
+| [RegionalOverride](microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverride.md) | Specifies a set of apps that appear on the Start screen for different regions. |
 
 ## Valid Configuration Passes
-
 
 specialize
 
@@ -56,30 +41,16 @@ oobeSystem
 
 ## Parent Hierarchy
 
-
 [Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [StartTiles](microsoft-windows-shell-setup-starttiles.md) | **RegionalOverrides**
 
 ## Applies To
-
 
 For a list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md).
 
 ## Related topics
 
-
-[How to Customize the Start Screen](http://go.microsoft.com/fwlink/?LinkId=254187)
+[Customize the Start layout](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/customize-start-layout)
 
 [StartTiles](microsoft-windows-shell-setup-starttiles.md)
 
 [UserLocale](microsoft-windows-international-core-userlocale.md)
-
- 
-
- 
-
-
-
-
-
-
-

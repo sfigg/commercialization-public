@@ -42,11 +42,7 @@ The following example shows how you can configure these settings:
 
 | Setting                 | Description                                                                           |
 |:------------------------|:--------------------------------------------------------------------------------------|
-| [CoexistenceSupport](microsoft-windows-wlansvc-coexistencesupport.md) | Specifies the type of co-existence that's supported on the device:<br/>
-<strong>Both</strong> - Both Wi-Fi and Bluetooth work at the same performance level during co-existence.<br/>
-<strong>Wi-Fi reduced</strong> - On a 2X2 system, Wi-Fi performance is reduced to 1X1 level.<br/>
-<strong>Bluetooth centered</strong> - When co-existing, Bluetooth has priority and restricts Wi-Fi performance.<br/
-<strong>One</strong> - Either Wi-Fi or Bluetooth will stop working. |
+| [CoexistenceSupport](microsoft-windows-wlansvc-coexistencesupport.md) | Specifies the type of co-existence that's supported on the device:<br/> <strong>Both</strong> - Both Wi-Fi and Bluetooth work at the same performance level during co-existence.<br/><strong>Wi-Fi reduced</strong> - On a 2X2 system, Wi-Fi performance is reduced to 1X1 level.<br/><strong>Bluetooth centered</strong> - When co-existing, Bluetooth has priority and restricts Wi-Fi performance.<br/><strong>One</strong> - Either Wi-Fi or Bluetooth will stop working. |
 | [NumAntennaConnected](microsoft-windows-wlansvc-numantennaconnected.md) | Specifies the number of antennas that are connected to the WLAN radio. |
 | [RadioLocation](microsoft-windows-wlansvc-radiolocation.md) | <code>RadioLocation</code> provides instructions to users for enabling the wireless local area network (WLAN) hardware. These instructions are displayed when a wireless connectivity problem is detected, for example, when a wireless adapter is turned off. |
 | [SimultaneousMultiChannelSupported](microsoft-windows-wlansvc-simultaneousmultichannelsupported.md) | Specifies the maximum number of channels that the Wi-Fi device can simultaneously operate on. For example, you can use this to specify support for Station mode and Wi-Fi Direct GO on separate channels simultaneously. |

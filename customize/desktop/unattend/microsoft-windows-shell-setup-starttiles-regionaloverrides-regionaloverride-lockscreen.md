@@ -13,9 +13,7 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # LockScreen
-
 
 `LockScreen` specifies the application whose monochrome icon appears on the **Lock** screen.
 
@@ -23,24 +21,11 @@ If the region of the current user account is among those in the Start Tile regio
 
 ## Child Elements
 
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>[Badge](microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverride-lockscreen-badge.md)</p></td>
-<td><p>A container that holds the <code>AppId</code> value for the application whose monochrome icon appears on the <strong>Lock</strong> screen.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Setting                 | Description                                                                           |
+|:------------------------|:--------------------------------------------------------------------------------------|
+| [Badge](microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverride-lockscreen-badge.md) | A container that holds the <code>AppId</code> value for the application whose monochrome icon appears on the <strong>Lock</strong> screen. |
 
 ## Valid Configuration Passes
-
 
 specialize
 
@@ -50,20 +35,17 @@ oobeSystem
 
 ## Parent Hierarchy
 
-
 [Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [StartTiles](microsoft-windows-shell-setup-starttiles.md) | [RegionalOverrides](microsoft-windows-shell-setup-starttiles-regionaloverrides.md) | [RegionalOverride](microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverride.md) | **LockScreen**
 
 ## Applies To
-
 
 For a list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md).
 
 ## XML Example
 
-
 The following XML output shows how to use the `LockScreen` component.
 
-```
+```XML
 <LockScreen>
   <Badge>
       <AppId>34567ChannelFabrikam.channel-DEF_012ghijk345!App</AppId>
@@ -73,18 +55,6 @@ The following XML output shows how to use the `LockScreen` component.
 
 ## Related topics
 
-
 [StartTiles](microsoft-windows-shell-setup-starttiles.md)
 
 [RegionalOverrides](microsoft-windows-shell-setup-starttiles-regionaloverrides.md)
-
- 
-
- 
-
-
-
-
-
-
-

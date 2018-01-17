@@ -13,9 +13,7 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # LocalAccounts
-
 
 `LocalAccounts` specifies local accounts to be created during installation.
 
@@ -23,24 +21,11 @@ You can use the **sysprep/generalize** command in conjunction with `LocalAccount
 
 ## Child Elements
 
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>[LocalAccount](microsoft-windows-shell-setup-useraccounts-localaccounts-localaccount.md)</p></td>
-<td><p>Specifies a local account to be created during installation.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Setting                 | Description                                                                           |
+|:------------------------|:--------------------------------------------------------------------------------------|
+| [LocalAccount](microsoft-windows-shell-setup-useraccounts-localaccounts-localaccount.md) | Specifies a local account to be created during installation. |
 
 ## Valid Configuration Passes
-
 
 auditSystem
 
@@ -48,20 +33,17 @@ oobeSystem
 
 ## Parent Hierarchy
 
-
 [Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md)| [UserAccounts](microsoft-windows-shell-setup-useraccounts.md) | **LocalAccounts**
 
 ## Applies To
-
 
 For a list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md).
 
 ## XML Example
 
-
 The following XML output shows how to set user accounts.
 
-```
+```XML
 <UserAccounts>
    <LocalAccounts>
       <LocalAccount wcm:action="add">
@@ -90,16 +72,4 @@ The following XML output shows how to set user accounts.
 
 ## Related topics
 
-
 [UserAccounts](microsoft-windows-shell-setup-useraccounts.md)
-
- 
-
- 
-
-
-
-
-
-
-

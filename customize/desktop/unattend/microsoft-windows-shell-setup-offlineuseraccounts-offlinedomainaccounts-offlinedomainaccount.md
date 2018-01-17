@@ -13,59 +13,29 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # OfflineDomainAccount
-
 
 `OfflineDomainAccount` specifies the details of a domain account to be added to local security groups on the computer.
 
 ## Child Elements
 
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>[Group](microsoft-windows-shell-setup-offlineuseraccounts-offlinedomainaccounts-offlinedomainaccount-group.md)</p></td>
-<td><p>Specifies the group to which the domain account belongs.</p></td>
-</tr>
-<tr class="even">
-<td><p>[SID](microsoft-windows-shell-setup-offlineuseraccounts-offlinedomainaccounts-offlinedomainaccount-sid.md)</p></td>
-<td><p>Specifies the security identifier of the domain account..</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Setting                 | Description                                                                           |
+|:------------------------|:--------------------------------------------------------------------------------------|
+| [Group](microsoft-windows-shell-setup-offlineuseraccounts-offlinedomainaccounts-offlinedomainaccount-group.md) | Specifies the group to which the domain account belongs. |
+| [SID](microsoft-windows-shell-setup-offlineuseraccounts-offlinedomainaccounts-offlinedomainaccount-sid.md) | Specifies the security identifier of the domain account. |
 
 ## Valid Passes
-
 
 offlineServicing
 
 ## Parent Hierarchy
 
-
 [Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [OfflineUserAccounts](microsoft-windows-shell-setup-offlineuseraccounts.md) | [OfflineDomainAccounts](microsoft-windows-shell-setup-offlineuseraccounts-offlinedomainaccounts.md) | **OfflineDomainAccount**
 
 ## Applies To
-
 
 Windows 10 for desktop editions (Home, Pro, Enterprise, and Education)
 
 Windows Server 2016
 
 For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md).
-
- 
-
- 
-
-
-
-
-
-

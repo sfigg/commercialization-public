@@ -13,9 +13,7 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # StartTiles
-
 
 The StartTiles settings specify the position of up to 24 app tiles on the Start screen, and one app badge on the lock screen.
 
@@ -81,8 +79,6 @@ The following tables show the typical number of rows of tiles on different combi
 </tbody>
 </table>
 
- 
-
 <table>
 <colgroup>
 <col width="20%" />
@@ -136,8 +132,6 @@ The following tables show the typical number of rows of tiles on different combi
 </tr>
 </tbody>
 </table>
-
- 
 
 <table>
 <colgroup>
@@ -193,8 +187,6 @@ The following tables show the typical number of rows of tiles on different combi
 </tbody>
 </table>
 
- 
-
 <table>
 <colgroup>
 <col width="20%" />
@@ -249,8 +241,6 @@ The following tables show the typical number of rows of tiles on different combi
 </tbody>
 </table>
 
- 
-
 <table>
 <colgroup>
 <col width="20%" />
@@ -304,8 +294,6 @@ The following tables show the typical number of rows of tiles on different combi
 </tr>
 </tbody>
 </table>
-
- 
 
 <table>
 <colgroup>
@@ -361,8 +349,6 @@ The following tables show the typical number of rows of tiles on different combi
 </tbody>
 </table>
 
- 
-
 <table>
 <colgroup>
 <col width="20%" />
@@ -417,8 +403,6 @@ The following tables show the typical number of rows of tiles on different combi
 </tbody>
 </table>
 
- 
-
 <table>
 <colgroup>
 <col width="20%" />
@@ -473,8 +457,6 @@ The following tables show the typical number of rows of tiles on different combi
 </tbody>
 </table>
 
- 
-
 <table>
 <colgroup>
 <col width="20%" />
@@ -522,8 +504,6 @@ The following tables show the typical number of rows of tiles on different combi
 </tbody>
 </table>
 
- 
-
 <table>
 <colgroup>
 <col width="20%" />
@@ -564,40 +544,16 @@ The following tables show the typical number of rows of tiles on different combi
 </tbody>
 </table>
 
- 
-
 ## Child Elements
 
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>[LockScreen](microsoft-windows-shell-setup-starttiles-lockscreen.md)</p></td>
-<td><p>Specifies an app whose monochrome icon appears on the <strong>Lock</strong> screen.</p></td>
-</tr>
-<tr class="even">
-<td><p>[RegionalOverrides](microsoft-windows-shell-setup-starttiles-regionaloverrides.md)</p></td>
-<td><p>Specifies sets of apps that appear on the Start screen for different regions.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[SquareTiles](microsoft-windows-shell-setup-starttiles-squaretiles.md)</p></td>
-<td><p>Specifies the default Microsoft Store apps to appear as square tiles on the Start screen.</p></td>
-</tr>
-<tr class="even">
-<td><p>[WideTiles](microsoft-windows-shell-setup-starttiles-widetiles.md)</p></td>
-<td><p>Specifies the default Microsoft Store apps to appear as wide tiles on the Start screen.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Setting                 | Description                                                                           |
+|:------------------------|:--------------------------------------------------------------------------------------|
+| [LockScreen](microsoft-windows-shell-setup-starttiles-lockscreen.md) | Specifies an app whose monochrome icon appears on the <strong>Lock</strong> screen. |
+| [RegionalOverrides](microsoft-windows-shell-setup-starttiles-regionaloverrides.md) | Specifies sets of apps that appear on the Start screen for different regions. |
+| [SquareTiles](microsoft-windows-shell-setup-starttiles-squaretiles.md) | Specifies the default Microsoft Store apps to appear as square tiles on the Start screen. |
+| [WideTiles](microsoft-windows-shell-setup-starttiles-widetiles.md) | Specifies the default Microsoft Store apps to appear as wide tiles on the Start screen. |
 
 ## Valid Configuration Passes
-
 
 specialize
 
@@ -607,22 +563,19 @@ oobeSystem
 
 ## Parent Hierarchy
 
-
 [Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | **StartTiles**
 
 ## Applies To
-
 
 For a list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md).
 
 ## XML Example
 
-
 The following XML output shows to how to use the &lt;StartTiles&gt; component and its settings.
 
-```
+```XML
 <StartTiles>
-     <LockScreen>    
+     <LockScreen>
           <Badge>
                <AppId>BadgeAppId</AppId>
           </Badge>
@@ -726,16 +679,4 @@ The following XML output shows to how to use the &lt;StartTiles&gt; component an
 
 ## Related topics
 
-
 [Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md)
-
- 
-
- 
-
-
-
-
-
-
-
