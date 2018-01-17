@@ -15,15 +15,14 @@ ms.technology: windows-oem
 ---
 # OOBE
 
-`OOBE` specifies the behavior of some of the Windows Out of Box Experience (OOBE) screens. 
+`OOBE` specifies the behavior of some of the Windows Out of Box Experience (OOBE) screens.
 
 ## Child Elements
 
 | Setting                 | Description                                                                           |
 |:------------------------|:--------------------------------------------------------------------------------------|
 |[HideEULAPage](microsoft-windows-shell-setup-oobe-hideeulapage.md)|Hides the Microsoft Software License Terms page. OEMs and System Builders can use this setting only for testing prior to shipment.|
-|[HideLocalAccountScreen](microsoft-windows-shell-setup-oobe-hidelocalaccountscreen.md)|Hides the Administrator password screen.
-This setting applies only to the Windows Server editions.|
+|[HideLocalAccountScreen](microsoft-windows-shell-setup-oobe-hidelocalaccountscreen.md)|Hides the Administrator password screen. This setting applies only to the Windows Server editions.|
 |[HideOEMRegistrationScreen](microsoft-windows-shell-setup-oobe-hideoemregistrationscreen.md)|Hides the OEM registration page.|
 |[HideOnlineAccountScreens](microsoft-windows-shell-setup-oobe-hideonlineaccountscreens.md)|Specifies whether the user will be required to sign-in during OOBE.|
 |[HideWirelessSetupInOOBE](microsoft-windows-shell-setup-oobe-hidewirelesssetupinoobe.md)|Hides the Join Wireless Network page.|

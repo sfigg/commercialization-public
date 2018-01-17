@@ -29,8 +29,7 @@ Microsoft-Windows-Shell-Setup contains elements and settings that control how th
 |[DisableAutoDaylightTimeSet](microsoft-windows-shell-setup-disableautodaylighttimeset.md)|Specifies whether to enable the destination computer to automatically change between daylight saving time and standard time.|
 |[Display](microsoft-windows-shell-setup-display.md)|Specifies display settings to apply to a destination computer.|
 |[FirstLogonCommands](microsoft-windows-shell-setup-firstlogoncommands.md)|Specifies commands to run the first time that an end user logs on to the computer.|
-|[FolderLocations](microsoft-windows-shell-setup-folderlocations.md)|Specifies the location of the user profile and program data folders.<br/>
-<strong>Important: </strong>This setting should be used only in a test environment. If you change the default location of the user profile directories or program data folders to a volume other than the system volume, you cannot service your image.|
+|[FolderLocations](microsoft-windows-shell-setup-folderlocations.md)|Specifies the location of the user profile and program data folders.<br/> <strong>Important: </strong>This setting should be used only in a test environment. If you change the default location of the user profile directories or program data folders to a volume other than the system volume, you cannot service your image.|
 |[LogonCommands](microsoft-windows-shell-setup-logoncommands.md)|Specifies commands to run when an end user logs on to the computer.|
 |[NotificationArea](microsoft-windows-shell-setup-notificationarea.md)|Specifies settings that are related to the system notification area at the far right of the taskbar.|
 |[OEMInformation](microsoft-windows-shell-setup-oeminformation.md)|Specifies information about the OEM, including the name, the model of the computer, and a logo for the OEM.|
