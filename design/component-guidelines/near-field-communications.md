@@ -80,7 +80,7 @@ This topic covers recommendations for near field communications (NFC) in Windows
 
  
 
-Hardware must comply with the Windows HLK requirements for near field proximity, including but not limited to accuracy, resolution, antenna placement, use of the Tap and Do visual mark, and range of values.
+Hardware must comply with the Windows HLK requirements for near field proximity, including but not limited to accuracy, resolution, antenna placement, and range of values.
 
 ## Firmware
 
