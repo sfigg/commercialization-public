@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: dc485fbe-7e9e-4400-909a-e4cba9e2d383
 author: sapaetsc
 ms.author: sapaetsc
-ms.date: 10/15/17
+ms.date: 10/15/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem

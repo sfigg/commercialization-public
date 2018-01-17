@@ -52,14 +52,14 @@ The following XML output shows how to set [UserAccounts](microsoft-windows-shell
          <DomainAccount wcm:action="add">
             <Name>account2</Name>
             <Group>Fabrikam\Group2</Group>
-         </DomainAccount wcm:action="add">
+         </DomainAccount>
          <Domain>domain1</Domain>
       </DomainAccountList>
       <DomainAccountList wcm:action="add">
          <DomainAccount wcm:action="add">
             <Name>account3</Name>
             <Group>Fabrikam\Group2</Group>
-         </DomainAccount wcm:action="add">
+         </DomainAccount>
          <Domain>domain2</Domain>
      </DomainAccountList>
    </DomainAccounts>
