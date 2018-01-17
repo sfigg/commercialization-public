@@ -23,7 +23,7 @@ This setting has no effect on Server Core installations.
 
 | Setting                 | Description                                                                           |
 |:------------------------|:--------------------------------------------------------------------------------------|
-| [FontSmoothing](microsoft-windows-shell-setup-visualeffects-fontsmoothing.md) | Specifies whether font smoothing is enabled, and which type of font smoothing is enabled. |
+| [FontSmoothing](microsoft-windows-shell-setup-visualeffects-fontsmoothing.md) | **Removed in Windows 10, version 1709**. Specifies whether font smoothing is enabled, and which type of font smoothing is enabled. |
 | [SystemDefaultBackgroundColor](microsoft-windows-shell-setup-visualeffects-systemdefaultbackgroundcolor.md) | Specifies the system default Windows background color scheme appearing on first boot, and on LogonUI if no user is selected. |
 
 ## Valid Passes
