@@ -69,10 +69,10 @@ The following table describes common issues that can occur during Bluetooth cont
 
  
 
-## <span id="witti2c"></span><span id="WITTI2C"></span>WITT I²C controller test troubleshooting
+## <span id="witti2c"></span><span id="WITTI2C"></span>WITT I<sup>2</sup>C controller test troubleshooting
 
 
-The following table describes common issues that can occur during Windows Inter-Integrated Circuit (I²C) Testing Tool (WITT) controller testing:
+The following table describes common issues that can occur during Windows Inter-Integrated Circuit (I<sup>2</sup>C) Testing Tool (WITT) controller testing:
 
 <table>
 <colgroup>
@@ -95,7 +95,7 @@ The following table describes common issues that can occur during Windows Inter-
 <td><p>See [WITT I2C Testing Prerequisites](witt-i2c-testing-prerequisites.md) for instructions on how to upgrade the WITT firmware.</p></td>
 </tr>
 <tr class="odd">
-<td><p>WITT device is in a bad state. Typically, the green LED on a WITT device should be lit when there is no traffic, and should blink when there is traffic. Otherwise, the WITT or I²C controller might be in a bad state.</p></td>
+<td><p>WITT device is in a bad state. Typically, the green LED on a WITT device should be lit when there is no traffic, and should blink when there is traffic. Otherwise, the WITT or I<sup>2</sup>C controller might be in a bad state.</p></td>
 <td><p>Unplug the WITTs USB cable to power-cycle the device. If the controller is still not working, reboot the testing system.</p></td>
 </tr>
 </tbody>

@@ -81,7 +81,7 @@ Returns **String**, which is the value of the property that has been set.
 
 An exception occurs if:
 
--   The source utility “UI” is not found.*status* is not valid.
+-   The source utility "UI" is not found.*status* is not valid.
 
 -   The *nameOfPropertyToSet* parameter or the *valueOfPropertyToSet* parameter is **null**.
 

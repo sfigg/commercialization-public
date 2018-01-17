@@ -27,7 +27,7 @@ This content applies to both standalone network and integrated network devices.
 
 This hardware is required for testing:
 
--   IPsec offload–capable network adapters.
+-   IPsec offload-capable network adapters.
 
 -   Two test computers that meet the Windows HLK prerequisites. For more info, see [Windows HLK Prerequisites](..\getstarted\windows-hlk-prerequisites.md).
 
@@ -152,7 +152,7 @@ Some Windows HLK tests require user intervention. When running tests for a submi
 
 ### <span id="Overview_of_changes_in_network_device_selection"></span><span id="overview_of_changes_in_network_device_selection"></span><span id="OVERVIEW_OF_CHANGES_IN_NETWORK_DEVICE_SELECTION"></span>Overview of changes in network device selection
 
-For LAN device testing, message and support adapters are no longer selected in the UI—they must be renamed on the test and support machines before running tests. Renaming refers to the device's ifAlias, which is visible from the **Network Connections** window, among other places.
+For LAN device testing, message and support adapters are no longer selected in the UI--they must be renamed on the test and support machines before running tests. Renaming refers to the device's ifAlias, which is visible from the **Network Connections** window, among other places.
 
 The following image shows
 

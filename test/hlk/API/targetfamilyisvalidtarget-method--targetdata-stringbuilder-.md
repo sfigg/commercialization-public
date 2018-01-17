@@ -90,7 +90,7 @@ The following conditions determine validity.
 
 If any of the checks fail, the method returns false.
 
-This specifically allows different Device ID, PID (Product Id) or “Dev” and different sub vendor or implementer Ids.
+This specifically allows different Device ID, PID (Product Id) or "Dev" and different sub vendor or implementer Ids.
 
 If the comparison fails, this method populates the event log with additional data.
 

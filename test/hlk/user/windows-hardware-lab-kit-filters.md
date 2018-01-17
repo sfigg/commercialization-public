@@ -18,11 +18,11 @@ ms.technology: windows-oem
 
 When Microsoft discovers a problem in either a Windows HLK test or in the operating system itself that causes certification tests to fail incorrectly, we create an errata that allows partners to pass the problematic test. Many errata use filters to automatically filter the failure from the submission results.  Filters are applied within Windows HLK Studio.
 
--   **Errata** – These filters override tests that have errors that cause them to fail incorrectly. These filters apply to the test for all end users.
+-   **Errata** - These filters override tests that have errors that cause them to fail incorrectly. These filters apply to the test for all end users.
 
--   **Contingency** – These filters allow companies to pass certain tests based on a legal agreement with Microsoft to fix device or system bugs within an agreed time period. These are specific to a particular case.
+-   **Contingency** - These filters allow companies to pass certain tests based on a legal agreement with Microsoft to fix device or system bugs within an agreed time period. These are specific to a particular case.
 
--   **Autotriage** – These filters don’t change the status of a test from fail to pass. They display information on common errors that can cause test failures.
+-   **Autotriage** - These filters don't change the status of a test from fail to pass. They display information on common errors that can cause test failures.
 
 ## <span id="To_install_filters"></span><span id="to_install_filters"></span><span id="TO_INSTALL_FILTERS"></span>To install filters
 
@@ -31,7 +31,7 @@ When Microsoft discovers a problem in either a Windows HLK test or in the operat
 
 >[!NOTE]
 >  
-If your HLK environment doesn’t have access to the Internet, you can copy the file to your test server.
+If your HLK environment doesn't have access to the Internet, you can copy the file to your test server.
 
 >[!NOTE]
 >  

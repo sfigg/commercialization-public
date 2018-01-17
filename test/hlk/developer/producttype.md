@@ -20,7 +20,7 @@ The **ProductType** object represents a type of product (for example, a printer 
 
 **ProductType** is determined at the product instance level. For example, if **ProductType** for a small business printer requires both "device.prints" and "device.scanner" features, a product instance that has one **Target** object of type printer and another **Target** object of type scanner is allowed
 
-The product taxonomy is a means of categorizing product types into well-known groups and is provided by the Windows® Certification Program team.
+The product taxonomy is a means of categorizing product types into well-known groups and is provided by the Windows Certification Program team.
 
  
 

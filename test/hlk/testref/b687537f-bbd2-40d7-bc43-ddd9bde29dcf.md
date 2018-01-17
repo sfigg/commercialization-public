@@ -87,7 +87,7 @@ For troubleshooting information, see [Troubleshooting Device.Graphics Testing](t
 ## <span id="More_information"></span><span id="more_information"></span><span id="MORE_INFORMATION"></span>More information
 
 
-This test is similar to the standard Present Validation test. The difference is that Present Validation 2 resets the device into a state where the back buffer and the front buffer have different formats (if the call to the **CheckDeviceFormatConversion** method was successful). The test performs a comparison with a reference image that the Microsoft® Direct3D® API generates. The driver must perform the color conversion between those two formats. (Direct3D does not perform any software emulation.)
+This test is similar to the standard Present Validation test. The difference is that Present Validation 2 resets the device into a state where the back buffer and the front buffer have different formats (if the call to the **CheckDeviceFormatConversion** method was successful). The test performs a comparison with a reference image that the Microsoft Direct3D API generates. The driver must perform the color conversion between those two formats. (Direct3D does not perform any software emulation.)
 
 This test uses the **IDirect3DSwapChain9::Present** method with the **D3DPRESENT\_LINEAR\_CONTENT** option.
 

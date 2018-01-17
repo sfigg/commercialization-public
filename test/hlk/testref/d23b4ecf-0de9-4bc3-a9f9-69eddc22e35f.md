@@ -70,7 +70,7 @@ For troubleshooting information, see [Troubleshooting Device.Network Testing](tr
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong>CPerseus.exe /module:[TestDirectory]\Suites\TOv2Logo.xml /type:”IPSec Scenario Testing Add-in”</strong></p></td>
+<td><p><strong>CPerseus.exe /module:[TestDirectory]\Suites\TOv2Logo.xml /type:"IPSec Scenario Testing Add-in"</strong></p></td>
 <td><p>Runs the test.</p></td>
 </tr>
 </tbody>

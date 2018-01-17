@@ -90,7 +90,7 @@ Power-on the control box after you plug the USB in to the computer. Plugging in 
 
 ### <span id="Stepper_motor_settings"></span><span id="stepper_motor_settings"></span><span id="STEPPER_MOTOR_SETTINGS"></span>Stepper motor settings
 
-The stepper motor can be programmed to run in a variety of ways. By default, the stepper motor is programmed to run in an *automated calibration mode*. (This mode is explained in more detail in the “Automated calibration mode” section later in the document.) The automated calibration mode is designed to minimize calibration errors and latency variations by manual calibration.
+The stepper motor can be programmed to run in a variety of ways. By default, the stepper motor is programmed to run in an *automated calibration mode*. (This mode is explained in more detail in the "Automated calibration mode" section later in the document.) The automated calibration mode is designed to minimize calibration errors and latency variations by manual calibration.
 
 During acquisition and collection stages, the motor runs at a constant speed of 0.75 revolutions per second. The stepper motor settings used for acquisition and collection stages are as follows:
 
@@ -106,7 +106,7 @@ By using these settings, the step motor circles one time every 1.33 seconds.
 
 The angular velocity differs, depending on the radius of the arm. For example, if the radius of the circle is about 5 cm, the velocity is ~25 cm per second. To standardize the test procedure, the arm length should have a radius of 5 cm to reach the velocity of 25 cm per second. A tolerance of ±1 is allowed: that is, from 24 to 26 cm per second.
 
-In the case of smaller tablet which is up to 10’’ diagonal display size, the recommended radius is 3 cm instead of 5 cm.
+In the case of smaller tablet which is up to 10'' diagonal display size, the recommended radius is 3 cm instead of 5 cm.
 
 ### <span id="Arm_positioning"></span><span id="arm_positioning"></span><span id="ARM_POSITIONING"></span>Arm positioning
 
@@ -177,7 +177,7 @@ When you start stepmotor.exe, you will see a blank screen. Press the space key t
 
 3.  Make sure that Motor switch is turned off.
 
-4.  Make sure that the photo-interrupter is not signaling (the photo-interrupter’s light is off). The slot of the disk should be positioned about 2-3 mm past the photo-interrupter signal beam.
+4.  Make sure that the photo-interrupter is not signaling (the photo-interrupter's light is off). The slot of the disk should be positioned about 2-3 mm past the photo-interrupter signal beam.
 
     There are two reasons for the positioning. First, when you turn on the motor, the motor arm will jitter slightly. When it does, you do not want it to cross the beam and therefore make the photo-interrupter signal. Second, when you are running an automated calibration script, this is the position where the loop starts and you want to make sure that the end of the loop (when the calibration begins) aligns properly to be under the photo-interrupter. If you are manually calibrating, this is still a good position to start at so, you do not have to change anything.
 
@@ -569,7 +569,7 @@ An error can result from the effect of electromagnetic force that is generated b
 
 When another process interrupts the test process, it will usually corrupt the test result by negatively impacting the latency numbers.
 
-You can diagnose this problem by comparing photo interrupter signal intervals. Review the csignal.txt file, which contains the time stamps from the photo-interrupter. The second column shows the system time stamps and the third column shows the microcontroller’s time stamps. For example:
+You can diagnose this problem by comparing photo interrupter signal intervals. Review the csignal.txt file, which contains the time stamps from the photo-interrupter. The second column shows the system time stamps and the third column shows the microcontroller's time stamps. For example:
 
 ``` syntax
 [ 0:       0] 431506434557 538485264317
@@ -587,7 +587,7 @@ You can diagnose this problem by comparing photo interrupter signal intervals. R
 sfirst =  0
 ```
 
-The last entry in the file shows the index of the first valid signal sequence. A ‘valid signal sequence’ refers to the beginning of signal sequences when the system became stable. Between acquisition and collection, the test program writes the acquisition results to log files and, depending on the system performance, it might take some time for it to become stable. In the above example, the very first signal was valid so you can start comparing the time stamp intervals.
+The last entry in the file shows the index of the first valid signal sequence. A 'valid signal sequence' refers to the beginning of signal sequences when the system became stable. Between acquisition and collection, the test program writes the acquisition results to log files and, depending on the system performance, it might take some time for it to become stable. In the above example, the very first signal was valid so you can start comparing the time stamp intervals.
 
 You can take time stamp intervals by noting the difference between the two even numbered time stamps; or example, 0, 2, 4, 6, etc. As shown in the following table, the signals 4 and 6 are quite different from other signal intervals. Therefore, we know that another process has interrupted the test during that time. In normal cases, you should see less than 1% of difference.
 
@@ -653,22 +653,22 @@ You can use external tools to measure the sampling rate of a device before and a
 
 1.  Open **Acquisition.txt**.
 
-2.  Take the first and last row’s timestamps (last column):
+2.  Take the first and last row's timestamps (last column):
 
     ``` syntax
     581   660   709   602   199501901480
     581   805   512   602   199554132317
     ```
 
-3.  Calculate the acquisition’s sampling rate as follows:
+3.  Calculate the acquisition's sampling rate as follows:
 
     ``` syntax
-    (Last timestamp – first timestamp) /number of samples (rows)
+    (Last timestamp - first timestamp) /number of samples (rows)
     ```
 
 4.  Open **Collection.txt**.
 
-5.  Take the first and last row’s timestamps (last column):
+5.  Take the first and last row's timestamps (last column):
 
     ``` syntax
     581   822   423   602 [199554407006]
@@ -678,7 +678,7 @@ You can use external tools to measure the sampling rate of a device before and a
 6.  Calculate the collection sampling rate as follows:
 
     ``` syntax
-    (Last timestamp – first timestamp) /number of samples (rows)
+    (Last timestamp - first timestamp) /number of samples (rows)
     ```
 
 If you see more than 2% of difference between the two, the collection data is not reliable and you should investigate the cause.

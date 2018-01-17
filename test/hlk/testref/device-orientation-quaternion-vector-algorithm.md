@@ -66,7 +66,7 @@ The test consists of the following two verifications:
 
         **delta** is the angle in degrees
 
-    4.  If delta is greater than 360 degrees, delta is re-calculated as *delta = delta – 360*.
+    4.  If delta is greater than 360 degrees, delta is re-calculated as *delta = delta - 360*.
 
     5.  At this point, delta should be less than or equal to the error tolerance; for example, 10 degrees.
 

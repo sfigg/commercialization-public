@@ -41,7 +41,7 @@ To certify your product for use on servers, the test computer must support four 
 
 If you use a pool of test computers to test devices, at least one computer in the pool must contain four processors and a minimum of 1 GB of RAM. Additionally, that computer must contain the device and the driver that you want to test. As long as the driver is the same on all the computers in the pool, the system creates a schedule to run against all test computers.
 
-For tests that do not include a driver to test, such as hard disk drive tests, the Windows HLK scheduler constrains the tests that validate the device’s and driver’s Rebalance, D3 State and Multiple Processor Groups functionality to run on the default test computer. You must manually configure this computer to have multiple processor groups. The default computer is the first test computer in the list. Test personnel must make sure that the first test computer in the list meets the minimum hardware requirements.
+For tests that do not include a driver to test, such as hard disk drive tests, the Windows HLK scheduler constrains the tests that validate the device's and driver's Rebalance, D3 State and Multiple Processor Groups functionality to run on the default test computer. You must manually configure this computer to have multiple processor groups. The default computer is the first test computer in the list. Test personnel must make sure that the first test computer in the list meets the minimum hardware requirements.
 
 >[!NOTE]
 >  
@@ -245,7 +245,7 @@ Before running any fingerprint reader adapter tests, you need to create XML conf
 ## <span id="Additional_configuration_tags"></span><span id="additional_configuration_tags"></span><span id="ADDITIONAL_CONFIGURATION_TAGS"></span>Additional configuration tags
 
 
-In the configuration file, under the “device information” section, there are three additional tags:
+In the configuration file, under the "device information" section, there are three additional tags:
 
 ``` syntax
 <deviceInfo>
@@ -285,7 +285,7 @@ A maximum of one badSwipeDetectionPoint tag can appear in a single test configur
 
 >[!NOTE]
 >  
-For a compound device, it’s possible to set both the privateConnectionSensorToEngine and privateConnectionEngineToStorage.
+For a compound device, it's possible to set both the privateConnectionSensorToEngine and privateConnectionEngineToStorage.
 
  
 

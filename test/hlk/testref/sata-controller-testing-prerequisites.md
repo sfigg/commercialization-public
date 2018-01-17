@@ -65,7 +65,7 @@ To certify your product for use on servers, the test computer must support four 
 
 If you use a pool of test computers to test devices, at least one computer in the pool must contain four processors and a minimum of 1 GB of RAM. Additionally, that computer must contain the device and the driver that you want to test. If the driver is the same on all the computers in the pool, the system creates a schedule to run against all test computers.
 
-For tests that do not include a driver to test, such as hard disk drive tests, the Windows HLK scheduler constrains the tests that validate the device’s and driver’s rebalance, D3 state, and multiple processor groups functionality to run on the default test computer. You must manually configure this computer to have multiple processor groups. The default computer is the first test computer in the list. Test personnel must make sure that the first test computer in the list meets the minimum hardware requirements.
+For tests that do not include a driver to test, such as hard disk drive tests, the Windows HLK scheduler constrains the tests that validate the device's and driver's rebalance, D3 state, and multiple processor groups functionality to run on the default test computer. You must manually configure this computer to have multiple processor groups. The default computer is the first test computer in the list. Test personnel must make sure that the first test computer in the list meets the minimum hardware requirements.
 
 >[!NOTE]
 >  
@@ -294,7 +294,7 @@ To configure the test computer to test a SATA controller as-an add-in RAID contr
 
     2.  Click the **General** tab, and then note the amount of RAM that the computer contains.
 
-    3.  Click the **Advanced** tab (or click **Advanced system settings** in the left pane for Windows Vista, Windows 7, Windows 8, Windows Server 2008, Windows Server 2008 R2 or Windows Server® 2012), and then, in the **Performance** area, click **Settings**.
+    3.  Click the **Advanced** tab (or click **Advanced system settings** in the left pane for Windows Vista, Windows 7, Windows 8, Windows Server 2008, Windows Server 2008 R2 or Windows Server 2012), and then, in the **Performance** area, click **Settings**.
 
         >[!NOTE]
         >  
@@ -441,7 +441,7 @@ To configure the test computer to test a SATA controller in an integrated RAID c
 
     2.  Click the **General** tab, and then note the amount of RAM that the computer contains.
 
-    3.  Click the **Advanced** tab (or click **Advanced system settings** in the left pane for Windows Vista, Windows 7, Windows 8, Windows Server 2008, Windows Server 2008 R2 or Windows Server® 2012), and then, in the **Performance** area, click **Settings**.
+    3.  Click the **Advanced** tab (or click **Advanced system settings** in the left pane for Windows Vista, Windows 7, Windows 8, Windows Server 2008, Windows Server 2008 R2 or Windows Server 2012), and then, in the **Performance** area, click **Settings**.
 
         >[!NOTE]
         >  
@@ -522,7 +522,7 @@ To configure the test computer for testing of an SATA controller in a non-RAID c
 
     2.  Click the **General** tab, and then note the amount of RAM that the computer contains.
 
-    3.  Click the **Advanced** tab (or click **Advanced system settings** in the left pane for Windows Vista, Windows 7, Windows 8, Windows Server 2008, Windows Server 2008 R2 or Windows Server® 2012), and then, in the **Performance** area, click **Settings**.
+    3.  Click the **Advanced** tab (or click **Advanced system settings** in the left pane for Windows Vista, Windows 7, Windows 8, Windows Server 2008, Windows Server 2008 R2 or Windows Server 2012), and then, in the **Performance** area, click **Settings**.
 
         >[!NOTE]
         >  

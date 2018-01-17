@@ -34,11 +34,11 @@ Use the following steps to test the ability of a computer to send higher bit rat
 
 4.  Open a command prompt and run Stats tool on Machine **C** with following parameters:
 
-    **stats.exe –z DISCARD –i 20 –x 50 –y 30 –r 20000000 –c 3600 –l –h -u**
+    **stats.exe -z DISCARD -i 20 -x 50 -y 30 -r 20000000 -c 3600 -l -h -u**
 
 5.  Open the MS command prompt and run Stats tool at the Machine S with following parameters:
 
-    **stats.exe –d 10.0.0.3 –r 20000000 –c 4200 –l –h -u**
+    **stats.exe -d 10.0.0.3 -r 20000000 -c 4200 -l -h -u**
 
 6.  Observe the output of steps 4 and Step 5.
 

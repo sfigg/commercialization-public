@@ -439,7 +439,7 @@ Compare Signal-to-Noise Ratio (SNR) on the test device and on a reference device
 
 >[!NOTE]
 >  
-If you do not have the NMEA Plotting tool from an IHV, you can use Microsoft<sup>®</sup> Bing
+If you do not have the NMEA Plotting tool from an IHV, you can use Microsoft Bing
 
  
 

@@ -323,11 +323,11 @@ Configuration:
 
 -   Rotational stage locked
 
-This test can be completed only with the information contained in the section “Positioning an actuator and making contact”, but the following discussion will be helpful.
+This test can be completed only with the information contained in the section "Positioning an actuator and making contact", but the following discussion will be helpful.
 
 The test has been partitioned to take advantage of the locking mechanism of the tool. It is intended that the Y-axis be locked during each edge test, so that the actuator housing can slide along X-axis to be positioned over each target.
 
-The suggested method for performing a tap is to follow the instructions in “Positioning an actuator and making contact”, except to use the lever only to float a short distance (about 1 cm) above the screen and tap on the top of the actuator to deliver the motion along the Z-axis. The actuators permit this motion, and the springs will return them to a position above the screen for a moderate-strength tap. Some practice is required to find the proper balance, but this method is faster than using the lever to deliver contact in this test.
+The suggested method for performing a tap is to follow the instructions in "Positioning an actuator and making contact", except to use the lever only to float a short distance (about 1 cm) above the screen and tap on the top of the actuator to deliver the motion along the Z-axis. The actuators permit this motion, and the springs will return them to a position above the screen for a moderate-strength tap. Some practice is required to find the proper balance, but this method is faster than using the lever to deliver contact in this test.
 
 **Z-Axis Allowance**
 
@@ -337,7 +337,7 @@ Configuration:
 
 To complete this test, lower the actuators to the screen until there is 1 mm of space between the screen and the closest actuator. Allow the actuators to float at this distance for the duration of the test.
 
-The suggested method for performing a tap is to follow the instructions in “Positioning an actuator and making contact”, except to use the lever only to float a short distance (about 1 cm) above the screen and tap on the top of the actuator to deliver the motion along the Z-axis. The actuators permit this motion, and the springs will return them to a position above the screen for a moderate-strength tap. Some practice is required to find the proper balance, but this method is faster than using the lever to deliver contact in this test.
+The suggested method for performing a tap is to follow the instructions in "Positioning an actuator and making contact", except to use the lever only to float a short distance (about 1 cm) above the screen and tap on the top of the actuator to deliver the motion along the Z-axis. The actuators permit this motion, and the springs will return them to a position above the screen for a moderate-strength tap. Some practice is required to find the proper balance, but this method is faster than using the lever to deliver contact in this test.
 
 ## <span id="addl"></span><span id="ADDL"></span>Additional Instructions for the ITRI PT3 Device
 

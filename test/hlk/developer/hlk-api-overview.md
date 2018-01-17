@@ -18,7 +18,7 @@ ms.technology: windows-oem
 
 You can use the Windows Hardware Lab Kit (Windows HLK) API to automate any parts of the certification test process. The API exposes all functionality of Windows HLK Studio, so you can use both Windows HLK Studio and automation in your certification test workflow.
 
-The Windows HLK API supports any Microsoft® .NET Framework 4.0 (and later) programming language (for example, C# and Windows PowerShell®). This document provides a detailed description of the Windows HLK API.
+The Windows HLK API supports any Microsoft® .NET Framework 4.0 (and later) programming language (for example, C# and Windows PowerShell). This document provides a detailed description of the Windows HLK API.
 
 >[!NOTE]
 >  

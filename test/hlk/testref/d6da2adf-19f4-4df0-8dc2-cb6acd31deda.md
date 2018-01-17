@@ -48,13 +48,13 @@ Before you run the test, complete the test setup as described in the test requir
 This test suite performs the following actions:
 
 -   Configure two routers, that are named Router 0 and Router 1, as follows:
-    -   Router 0 – 2.4Ghz : OPEN/NONE \[Preferred PHY G/Channel 1\]
-    -   Router 0 – 5Ghz : WPA2PSK/AES \[Preferred PHY A/Channel 36\]
-    -   Router 1 – 2.4Ghz : WPA2PSK/AES \[Preferred PHY G/Channel 11\]
-    -   Router 1 – 5Ghz : WPA2PSK/AES \[Preferred N/Channel 36\]
--   Execute the BasicAssociation() test steps as described in WLAN Association Tests – Custom Configuration
--   Execute the AssociationPowerManagementSleep() test steps as described in [WLAN Association Tests – Custom Configuration](41e3400d-08da-424b-becd-fe3e8952bbca.md)
--   Execute the AssociationPowerManagementHibernate() test steps as described in [WLAN Association Tests – Custom Configuration](41e3400d-08da-424b-becd-fe3e8952bbca.md)
+    -   Router 0 - 2.4Ghz : OPEN/NONE \[Preferred PHY G/Channel 1\]
+    -   Router 0 - 5Ghz : WPA2PSK/AES \[Preferred PHY A/Channel 36\]
+    -   Router 1 - 2.4Ghz : WPA2PSK/AES \[Preferred PHY G/Channel 11\]
+    -   Router 1 - 5Ghz : WPA2PSK/AES \[Preferred N/Channel 36\]
+-   Execute the BasicAssociation() test steps as described in WLAN Association Tests - Custom Configuration
+-   Execute the AssociationPowerManagementSleep() test steps as described in [WLAN Association Tests - Custom Configuration](41e3400d-08da-424b-becd-fe3e8952bbca.md)
+-   Execute the AssociationPowerManagementHibernate() test steps as described in [WLAN Association Tests - Custom Configuration](41e3400d-08da-424b-becd-fe3e8952bbca.md)
 
 ## <span id="Troubleshooting"></span><span id="troubleshooting"></span><span id="TROUBLESHOOTING"></span>Troubleshooting
 

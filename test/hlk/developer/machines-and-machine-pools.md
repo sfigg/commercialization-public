@@ -16,7 +16,7 @@ ms.technology: windows-oem
 # Machines and Machine Pools
 
 
-The **Machine** class represents a computer that can be used for testing and that contains devices to be tested. Computer properties represent Windows® Test Technology (WTT) dimensions. Dimensions can be added, removed, or reset based on the underlying WTT behavior.
+The **Machine** class represents a computer that can be used for testing and that contains devices to be tested. Computer properties represent Windows Test Technology (WTT) dimensions. Dimensions can be added, removed, or reset based on the underlying WTT behavior.
 
 The **Machine.Status** property indicates whether a computer is available for testing and if it's currently running tests.
 

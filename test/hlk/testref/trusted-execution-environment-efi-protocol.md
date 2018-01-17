@@ -16,7 +16,7 @@ ms.technology: windows-oem
 # Trusted Execution Environment EFI Protocol
 
 
-Licensing: Microsoft agrees to grant to you a no charge, royalty-free license to its Necessary Claims on reasonable and non-discriminatory terms solely to make, use, sell, offer for sale, import, or distribute any implementation of this specification. “Necessary Claims” are those claims of Microsoft-owned or Microsoft-controlled patents that are technically necessary to implement the required portions (which also include the required elements of optional portions) of this specification, where the functionality causing the infringement is described in detail and not merely referenced in this Specification.
+Licensing: Microsoft agrees to grant to you a no charge, royalty-free license to its Necessary Claims on reasonable and non-discriminatory terms solely to make, use, sell, offer for sale, import, or distribute any implementation of this specification. "Necessary Claims" are those claims of Microsoft-owned or Microsoft-controlled patents that are technically necessary to implement the required portions (which also include the required elements of optional portions) of this specification, where the functionality causing the infringement is described in detail and not merely referenced in this Specification.
 
 ## <span id="1.0_introduction"></span><span id="1.0_INTRODUCTION"></span>1.0 Introduction
 
@@ -36,7 +36,7 @@ As in \[TCG06a\], all data values SHALL be represented in Little-Endian format. 
 
 TrEETrusted Execution Environment
 
-Use of the terms “MUST” and “SHALL” in this document are to be interpreted in accordance with \[RFC2119\].
+Use of the terms "MUST" and "SHALL" in this document are to be interpreted in accordance with \[RFC2119\].
 
 ## <span id="3.0_efi_tree_protocol"></span><span id="3.0_EFI_TREE_PROTOCOL"></span>3.0 EFI TrEE Protocol
 
@@ -59,7 +59,7 @@ Before an EFI application or driver terminates execution, every successful call 
 
 ### <span id="3.2_TrEE_EFI_Protocol"></span><span id="3.2_tree_efi_protocol"></span><span id="3.2_TREE_EFI_PROTOCOL"></span>3.2 TrEE EFI Protocol
 
-**Summary** - The EFI TrEE protocol is used to communicate with a TrEE – to send commands to a TrEE, use it for trusted execution operations and to provide access to the firmware log of measurements extended in the TrEE. The protocol maintains an Event Log of measurements recorded in the TrEE with a format identical to the TCG 1.2 TCG Event Log (see \[TCG06b\]); referred to as the TrEE Event Log Format TCG 1.2 Event Log in this specification. Implementers may create additional Event Logs with other formats, but this version of the protocol does not define a way to retrieve them.
+**Summary** - The EFI TrEE protocol is used to communicate with a TrEE - to send commands to a TrEE, use it for trusted execution operations and to provide access to the firmware log of measurements extended in the TrEE. The protocol maintains an Event Log of measurements recorded in the TrEE with a format identical to the TCG 1.2 TCG Event Log (see \[TCG06b\]); referred to as the TrEE Event Log Format TCG 1.2 Event Log in this specification. Implementers may create additional Event Logs with other formats, but this version of the protocol does not define a way to retrieve them.
 
 **GUID** - `#define EFI_TREE_PROTOCOL_GUID \   {0x607f766c, 0x7455, 0x42be, 0x93, 0x0b, 0xe4, 0xd7, 0x6d, 0xb2,\    0x72, 0x0f}`
 
@@ -218,7 +218,7 @@ typedef struct _TREE_BOOT_SERVICE_CAPABILITY {
 </tr>
 <tr class="odd">
 <td><p>ManufacturerID</p></td>
-<td><p>4-byte Vendor ID (see [TCG07], “TPM Capabilities Vendor ID” section)</p></td>
+<td><p>4-byte Vendor ID (see [TCG07], "TPM Capabilities Vendor ID" section)</p></td>
 </tr>
 </tbody>
 </table>
@@ -483,7 +483,7 @@ typedef UINT32 TrEE_EVENTTYPE;
 </tr>
 <tr class="even">
 <td><p><em>PCRIndex</em></p></td>
-<td><p>Index of the PCR that shall be extended (0 – 23).</p></td>
+<td><p>Index of the PCR that shall be extended (0 - 23).</p></td>
 </tr>
 <tr class="odd">
 <td><p><em>EventType</em></p></td>
@@ -528,7 +528,7 @@ Upon invocation, the function shall perform the following actions:
 
 5.  The function allows any value for the Event.Header.EventType parameter.
 
-6.  The function MUST calculate the digest (measurement) of the data starting at DataToHash with a length of DataToHashLen. When the PE\_COFF\_IMAGE bit is set, the function MUST calculate the measurement of the PE/COFF image in accordance with “Measuring a PE/COFF image” in Appendix A below.
+6.  The function MUST calculate the digest (measurement) of the data starting at DataToHash with a length of DataToHashLen. When the PE\_COFF\_IMAGE bit is set, the function MUST calculate the measurement of the PE/COFF image in accordance with "Measuring a PE/COFF image" in Appendix A below.
 
 7.  The function MUST successfully send the TPM2\_PCR\_Extend command to the TrEE to extend the PCR indicated by Event.Header.PCRIndex with the measurement digest. If the command cannot be sent successfully, the function must return EFI\_DEVICE\_ERROR. If the firmware supports more algorithms than SHA1 it may calculate digests using other algorithms and extend them too.
 
@@ -542,7 +542,7 @@ Upon invocation, the function shall perform the following actions:
 
     3.  TCG\_PCR\_EVENT.Digest = &lt;the SHA1 measurement digest calculated above&gt;
 
-    4.  TCG\_PCR\_EVENT.EventSize = Event.Size – sizeof(UINT32) - Event.Header.HeaderSize
+    4.  TCG\_PCR\_EVENT.EventSize = Event.Size - sizeof(UINT32) - Event.Header.HeaderSize
 
     5.  TCG\_PCR\_EVENT.Event = Event.Event (Note: this is a memory copy of EventSize bytes)
 
@@ -642,7 +642,7 @@ EFI_STATUS
 
 **Description**
 
-The EFI\_TREE\_PROTOCOL Submit Command function call provides a pass-through capability from the caller to the system’s TrEE.
+The EFI\_TREE\_PROTOCOL Submit Command function call provides a pass-through capability from the caller to the system's TrEE.
 
 The caller is responsible for building the command byte-stream to be sent to the TrEE and is also responsible for interpreting the resulting byte-stream returned by the TrEE. The TrEE in and out operands for each TrEE command are defined elsewhere.
 
@@ -692,27 +692,27 @@ The TPM 2.0 MUST have access to its persistent storage prior to the call to Exit
 <tbody>
 <tr class="odd">
 <td><p>[MSFT08]</p></td>
-<td><p>Microsoft Corporation, “Windows Authenticode Portable Executable Signature Format,” Version 1.0, March 21, 2008.</p></td>
+<td><p>Microsoft Corporation, "Windows Authenticode Portable Executable Signature Format," Version 1.0, March 21, 2008.</p></td>
 </tr>
 <tr class="even">
 <td><p>[RFC2119]</p></td>
-<td><p>Bradner, S., “Keywords for Use in RFCs to Indicate Requirement Levels,” IETF RFC 2119, March 1997.</p></td>
+<td><p>Bradner, S., "Keywords for Use in RFCs to Indicate Requirement Levels," IETF RFC 2119, March 1997.</p></td>
 </tr>
 <tr class="odd">
 <td><p>[TCG06a]</p></td>
-<td><p>Trusted Computing Group, “TCG EFI Protocol,” Version 1.20 Revision 1.00, June 9, 2006.</p></td>
+<td><p>Trusted Computing Group, "TCG EFI Protocol," Version 1.20 Revision 1.00, June 9, 2006.</p></td>
 </tr>
 <tr class="even">
 <td><p>[TCG06b]</p></td>
-<td><p>Trusted Computing Group, “TCG EFI Platform Specification,” Version 1.20 Revision 1.0, June 7, 2006.</p></td>
+<td><p>Trusted Computing Group, "TCG EFI Platform Specification," Version 1.20 Revision 1.0, June 7, 2006.</p></td>
 </tr>
 <tr class="odd">
 <td><p>[TCG07]</p></td>
-<td><p>Trusted Computing Group, “TCG Vendor ID Registry,” Version 1.0, Revision 0.1, August 31, 2007.</p></td>
+<td><p>Trusted Computing Group, "TCG Vendor ID Registry," Version 1.0, Revision 0.1, August 31, 2007.</p></td>
 </tr>
 <tr class="even">
 <td><p>[UEFI12]</p></td>
-<td><p>UEFI, “Unified Extensible Firmware Interface Specification,” Version 2.3.1 Errata C,</p></td>
+<td><p>UEFI, "Unified Extensible Firmware Interface Specification," Version 2.3.1 Errata C,</p></td>
 </tr>
 <tr class="odd">
 <td><p>June 2012.</p></td>
@@ -741,7 +741,7 @@ At a high level, firmware is responsible for measuring the following components 
 
 -   Variables associated with separately loaded UEFI Drivers or UEFI Boot applications
 
-The above measurements are defined by the TCG EFI Platform specification \[TCG06b\] Sections 5.1 – 5.5 and are not referred to further herein. Measurements into PCR\[1\] and PCR\[3\] are optional depending on platform configuration.
+The above measurements are defined by the TCG EFI Platform specification \[TCG06b\] Sections 5.1 - 5.5 and are not referred to further herein. Measurements into PCR\[1\] and PCR\[3\] are optional depending on platform configuration.
 
 For Windows, PCR\[7\] is used to reflect the UEFI 2.3.1 Secure Boot policy. This policy relies on the firmware authenticating all boot components launched prior to the UEFI environment and the UEFI platform initialization code (or earlier firmware code) invariantly recording the Secure Boot policy information into PCR\[7\].
 
@@ -765,7 +765,7 @@ In addition, if the platform provides a firmware debugger which may be launched 
 
 **Implementation Note**
 
-The UEFI LoadImage function MUST record measurements in PCR\[2\] or PCR\[4\] per events described in \[TCG06b\] and also PCR\[7\] per events described in the section “Measuring UEFI Configuration into PCR\[7\]” below. To determine whether an image measurement applies to PCR\[2\] or PCR\[4\], LoadImage MUST examine the Subsystem field in the PE/COFF image. The values IMAGE\_SUBSYSTEM\_EFI\_BOOT\_SERVICE\_DRIVER, IMAGE\_SUBSYSTEM\_EFI\_RUNTIME\_DRIVER and IMAGE\_SUBSYSTEM\_EFI\_ROM correspond to PCR\[2\]. The value IMAGE\_SUBSYSTEM\_EFI\_APPLICATION corresponds to PCR\[4\]. If the loaded image is some other type, it MUST be recorded in PCR\[4\]. Images that LoadImage fails to load due to (a) signature verification failure or (b) because the image does not comply with currently enforced UEFI 2.3.1 Secure Boot policy do not need to be measured in a PCR.
+The UEFI LoadImage function MUST record measurements in PCR\[2\] or PCR\[4\] per events described in \[TCG06b\] and also PCR\[7\] per events described in the section "Measuring UEFI Configuration into PCR\[7\]" below. To determine whether an image measurement applies to PCR\[2\] or PCR\[4\], LoadImage MUST examine the Subsystem field in the PE/COFF image. The values IMAGE\_SUBSYSTEM\_EFI\_BOOT\_SERVICE\_DRIVER, IMAGE\_SUBSYSTEM\_EFI\_RUNTIME\_DRIVER and IMAGE\_SUBSYSTEM\_EFI\_ROM correspond to PCR\[2\]. The value IMAGE\_SUBSYSTEM\_EFI\_APPLICATION corresponds to PCR\[4\]. If the loaded image is some other type, it MUST be recorded in PCR\[4\]. Images that LoadImage fails to load due to (a) signature verification failure or (b) because the image does not comply with currently enforced UEFI 2.3.1 Secure Boot policy do not need to be measured in a PCR.
 
 ****Related Definitions
 
@@ -789,23 +789,23 @@ typedef struct {
 
 When measuring a PE/COFF image, the EventType shall be as defined in \[TCG06b\] (for example, when measuring an EFI Boot Application, the EventType shall be EV\_EFI\_BOOT\_SERVICES\_APPLICATION) and the Event value shall be the value of the EFI\_IMAGE\_LOAD\_EVENT structure defined in \[TCG06b\].
 
-The HashLogExtendEvent service MUST hash the PE/COFF image in accordance with the procedure specified in “Calculating the PE Image Hash” section of \[MSFT08\].
+The HashLogExtendEvent service MUST hash the PE/COFF image in accordance with the procedure specified in "Calculating the PE Image Hash" section of \[MSFT08\].
 
 **Measuring UEFI Configuration into PCR\[7\]**
 
 For all EFI variable value events, the EventType shall be EV\_EFI\_VARIABLE\_DRIVER\_CONFIG defined above and the Event value shall be the value of the EFI\_VARIABLE\_DATA structure defined above in this specification (this structure shall be considered byte-aligned). The measurement digest shall be the SHA-1 hash of the event data which is the EFI\_VARIABLE\_DATA structure. (Note: This is a different digest than the one specified by \[TCG06b\].) The EFI\_VARIABLE\_DATA.UnicodeNameLength value is the number of CHAR16 characters (not the number of bytes). The EFI\_VARIABLE\_DATA.UnicodeName contents MUST NOT include a null terminator. If reading the EFI variable returns EFI\_NOT\_FOUND, the EFI\_VARIABLE\_DATA.VariableDataLength field MUST be set to zero and EFI\_VARIABLE\_DATA.VariableData field will have a size of zero.
 
-1.  If the platform provides a firmware debugger mode which may be used prior to the UEFI environment or if the platform provides a debugger for the UEFI environment, then the platform SHALL extend an EV\_EFI\_ACTION event as specified in \[TCG06b\] into PCR\[7\] before allowing use of the debugger. The event string shall be “UEFI Debug Mode”. Further, the platform MUST create a TCG Event Log entry as follows:
+1.  If the platform provides a firmware debugger mode which may be used prior to the UEFI environment or if the platform provides a debugger for the UEFI environment, then the platform SHALL extend an EV\_EFI\_ACTION event as specified in \[TCG06b\] into PCR\[7\] before allowing use of the debugger. The event string shall be "UEFI Debug Mode". Further, the platform MUST create a TCG Event Log entry as follows:
 
     1.  TCG\_PCR\_EVENT.PCRIndex = 7
 
     2.  TCG\_PCR\_EVENT.EventType = EV\_EFI\_ACTION
 
-    3.  TCG\_PCR\_EVENT.Digest = &lt;the SHA-1 digest of the string value “UEFI Debug Mode” without the terminating NULL character&gt;
+    3.  TCG\_PCR\_EVENT.Digest = &lt;the SHA-1 digest of the string value "UEFI Debug Mode" without the terminating NULL character&gt;
 
-    4.  TCG\_PCR\_EVENT.EventSize = strlen(“UEFI Debug Mode”)
+    4.  TCG\_PCR\_EVENT.EventSize = strlen("UEFI Debug Mode")
 
-    5.  TCG\_PCR\_EVENT.Event = “UEFI Debug Mode”
+    5.  TCG\_PCR\_EVENT.Event = "UEFI Debug Mode"
 
     The platform MAY build similar event log entries for other supported Event Log formats.
 

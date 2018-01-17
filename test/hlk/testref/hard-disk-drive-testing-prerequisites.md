@@ -453,7 +453,7 @@ When testing storage devices, we strongly recommend that you complete all Device
 ## <span id="Feature-Based_Configuration"></span><span id="feature-based_configuration"></span><span id="FEATURE-BASED_CONFIGURATION"></span>Feature-Based Configuration
 
 
-If your device supports any of the feature(s) in this section, please update the associated configurations steps in addition to the general interface-based configuration steps in “Configuring the Test Computer.” Minor modifications may be applicable depending on the specifics of your device form-factor.
+If your device supports any of the feature(s) in this section, please update the associated configurations steps in addition to the general interface-based configuration steps in "Configuring the Test Computer." Minor modifications may be applicable depending on the specifics of your device form-factor.
 
 **Device.Storage.Hd.Ehdd**
 

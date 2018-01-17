@@ -16,7 +16,7 @@ ms.technology: windows-oem
 # IDeviceTargetData.DriverHash Property
 
 
-This property represents all of the driver’s hash values for a deviceTarget object.
+This property represents all of the driver's hash values for a deviceTarget object.
 
 **Namespace:** Microsoft.Windows.Kits.Hardware.ObjectModel
 

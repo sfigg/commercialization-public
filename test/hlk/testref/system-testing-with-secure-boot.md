@@ -189,7 +189,7 @@ In some cases, having Secure Boot enabled on a test computer can cause the HLK C
     <td><p>ACPI Logo Test</p></td>
     </tr>
     <tr class="even">
-    <td><p>Crypto Capabilities – UEFI Hash Provider</p></td>
+    <td><p>Crypto Capabilities - UEFI Hash Provider</p></td>
     </tr>
     <tr class="odd">
     <td><p>Firmware Update test</p></td>

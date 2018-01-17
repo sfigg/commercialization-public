@@ -52,7 +52,7 @@ If you are testing software, be sure to install the product on the test system f
     >[!TIP]
     >When installation completes, confirm its success by going to the **Control Panel** and choosing **Uninstall a program**. **Windows Hardware Lab Kit Client** should appear in the program list.
 
-6.  Repeat steps 1–5 for each test system.
+6.  Repeat steps 1-5 for each test system.
 
  
 

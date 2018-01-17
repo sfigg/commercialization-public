@@ -20,7 +20,7 @@ A **DeviceFamily** object is a collection of hardware IDs that are cached in the
 
 >[!NOTE]
 >  
-Hardware IDs that are added to a **DeviceFamily** must match the hardware IDs that Windows® reports for a device.
+Hardware IDs that are added to a **DeviceFamily** must match the hardware IDs that Windows reports for a device.
 
  
 

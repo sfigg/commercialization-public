@@ -16,7 +16,7 @@ ms.technology: windows-oem
 # <span id="p_hlk_test.9b1ece24-41b5-4acf-be7d-ca88a3dc3c61"></span>Windows Touch Test
 
 
-This test verifies that a Windows® Touch device meets requirements.
+This test verifies that a Windows Touch device meets requirements.
 
 ## Test details
 |||
