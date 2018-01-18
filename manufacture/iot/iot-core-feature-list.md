@@ -38,7 +38,6 @@ The following features must be included in all images, though they may be custom
 |---------------------------------|-----------------------------------------------------------------------------------------------------------------------------|
 | **IOT\_CORTANA**                | Adds Cortana feature. Requires **IOT\_APPLICATIONS** feature. This is new in Windows 10, version 1703.       |
 | **IOT\_UNIFIED\_WRITE\_FILTER** | Adds [Unified Write Filter (UWF)](https://docs.microsoft.com/windows/iot-core/secure-your-device/UnifiedWriteFilter) to protect physical storage media from data writes. Supported starting with Windows 10, version 1607.        |
-| **IOT\_NANORDPSERVER**          | Adds [Remote Display packages](https://docs.microsoft.com/windows/iot-core/manage-your-device/RemoteDisplay). Supported starting with Windows 10, version 1607.                      |
 | **IOT\_USBFN\_CLASS\_EXTENSION**  | Adds USB function WDF class extension for USB function mode support. This is new in Windows 10, version 1703. |
 | **IOT\_HWN\_CLASS\_EXTENSION**    | Adds hardware notification WDF class extension for vibration API support. This is new in Windows 10, version 1703. |
 
@@ -88,6 +87,7 @@ The following features must be included in all images, though they may be custom
 | **IOT\_SSH**               | Enables Secure Shell (SSH) connectivity                                                                                     |
 | **IOT\_TOOLKIT**           | Includes developer tools such as: Kernel Debug components, FTP, Network Diagnostics, basic device portal, and XPerf. This also relaxes the firewall rules and enables various ports.                                                                                           |
 | **IOT\_WEBB\_EXTN**        | Enables IOTCore-specific extensions to the Windows Device Portal. The basic device portal is included in the IoT Toolkit.  |
+| **IOT\_NANORDPSERVER**          | Adds [Remote Display packages](https://docs.microsoft.com/windows/iot-core/manage-your-device/RemoteDisplay). Supported starting with Windows 10, version 1607.                      |
 
 ### Speech Data
 
