@@ -21,21 +21,15 @@ Add features using the OEMInput XML file. To learn more, see the [IoT Core manuf
 
 The following table describes the Microsoft-defined features that can be used by OEMs in the Features element in the **OEMInput** file for **Retail** build.
 
-When creating images for your device, determine which features are required and which features are optional. 
+When creating images for your device, determine which features are required for your device. 
 
-### Required features
-
-The following features must be included in all images, though they may be customized.
-
-| Features              | Description                                                                                             |
-|-----------------------|---------------------------------------------------------------------------------------------------------|
-| **IOT\_EFIESP**       | Boots the device using UEFI                                                                             |
-| **IOT\_UAP\_OOBE**    | Includes the inbox OOBE app that is launched during the first boot and also during installation of apps |
 
 ### Features
 
 | Features                        | Description                                                                                                                 |
 |---------------------------------|-----------------------------------------------------------------------------------------------------------------------------|
+| **IOT\_EFIESP**       | Boots the device using UEFI, required feature in all images                                                                              |
+| **IOT\_UAP\_OOBE**    | Includes the inbox OOBE app that is launched during the first boot and also during installation of apps, required feature in all images |
 | **IOT\_UNIFIED\_WRITE\_FILTER** | Adds [Unified Write Filter (UWF)](https://docs.microsoft.com/windows/iot-core/secure-your-device/UnifiedWriteFilter) to protect physical storage media from data writes. Supported starting with Windows 10, version 1607.        |
 | **IOT\_USBFN\_CLASS\_EXTENSION**  | Adds USB function WDF class extension for USB function mode support. This is new in Windows 10, version 1703. |
 | **IOT\_HWN\_CLASS\_EXTENSION**    | Adds hardware notification WDF class extension for vibration API support. This is new in Windows 10, version 1703. |
@@ -63,7 +57,7 @@ The following features must be included in all images, though they may be custom
 ### Developer Tools
 
 > [!IMPORTANT]
-> The following developer features shall not be used in a retail image and images for commercial devices.
+> The following developer features shall not be used in **Retail** builds and in images for commercial devices.
 
 | Features                        | Description                                                                                                                 |
 |---------------------------------|-----------------------------------------------------------------------------------------------------------------------------|
