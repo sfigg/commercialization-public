@@ -28,8 +28,9 @@ When creating images for your device, determine which features are required for 
 
 | Features                        | Description                                                                                                                 |
 |---------------------------------|-----------------------------------------------------------------------------------------------------------------------------|
-| **IOT\_EFIESP**       | Boots the device using UEFI, required feature in all images                                                                              |
+| **IOT\_EFIESP**       | Boots the device using UEFI, required feature in all images                                                                           |
 | **IOT\_UAP\_OOBE**    | Includes the inbox OOBE app that is launched during the first boot and also during installation of apps, required feature in all images |
+| **IOT\_CRT140**            | Adds CRT binaries, required feature in all images                                                                                  |
 | **IOT\_UNIFIED\_WRITE\_FILTER** | Adds [Unified Write Filter (UWF)](https://docs.microsoft.com/windows/iot-core/secure-your-device/UnifiedWriteFilter) to protect physical storage media from data writes. Supported starting with Windows 10, version 1607.        |
 | **IOT\_USBFN\_CLASS\_EXTENSION**  | Adds USB function WDF class extension for USB function mode support. This is new in Windows 10, version 1703. |
 | **IOT\_HWN\_CLASS\_EXTENSION**    | Adds hardware notification WDF class extension for vibration API support. This is new in Windows 10, version 1703. |
@@ -39,7 +40,7 @@ When creating images for your device, determine which features are required for 
 | **IOT\_ALLJOYN\_APP**           | Adds the AllJoyn application, used for Headless ZwaveAdapterAppx. |
 | **IOT\_FONTS\_CHINESE\_EXTENDED** | Adds additional Chinese fonts. This is new in Windows 10, version 1703. |
 | **IOT\_APP\_TOOLKIT** | Adds tools required for Appx installation and management                                                |
-| **IOT\_CRT140**            | Adds CRT binaries                                                                                       |
+
 
 ### Settings
 
@@ -72,7 +73,8 @@ When creating images for your device, determine which features are required for 
 | **IOT\_UAP\_DEFAULTAPP**        | Adds a sample app, "Chucky". This app is similar to "Bertha".                              |
 | **IOT\_FTSER2K\_MAKERDRIVER**   | Adds the FTDI USB-to-Serial driver.                                                                                          |
 | **IOT\_CP210x\_MAKERDRIVER**    | Adds drivers for SiliconLabs CP210x-based USB to Serial adapters. This is new in Windows 10, version 1703.                                                                                   |
-| **IOT\_DMAP\_DRIVER**                | Adds DMAP drivers.                      |
+| **IOT\_DMAP\_DRIVER**           | Adds DMAP drivers.                      |
+| **IOT\_CONTAINERS**             | Adds support for native [Windows Nano Server Containers](https://docs.microsoft.com/virtualization/windowscontainers/deploy-containers/deploy-containers-on-server#install-base-container-images). These are supported only on Intel 64-bit platforms. This is new in Windows 10, version 1709. |
 
 ### Speech Data
 
