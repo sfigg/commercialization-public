@@ -17,8 +17,11 @@ ms.technology: windows-oem
 You can use the `CopyProfile` setting to customize a user profile and then copy that profile to the default user profile. Windows uses the default user profile as a template to assign a profile to each new user. By customizing the default user profile, you can configure settings for all user accounts that are created on the computer. By using `CopyProfile`, you can customize installed applications, drivers, desktop backgrounds, internet explorer settings, and other configurations. Note that some settings are not preserved by using `CopyProfile`.
 
 Using CopyProfile for Start menu customization isn't supported. Here are the ways to manage custom Start layouts in Windows 10:
--	IT pros can use learn about managing the Windows 10 Start Menu here: https://docs.microsoft.com/en-us/windows/configuration/windows-10-start-layout-options-and-policies 
--	OEMs can use layoutmodification.xml https://docs.microsoft.com/en-us/windows/configuration/start-layout-xml-desktop 
+-	IT pros can use the following resources learn about managing the Windows 10 Start Menu:
+        - [Customize Windows 10 Start and taskbar with Group Policy](https://docs.microsoft.com/en-us/windows/configuration/customize-windows-10-start-screens-by-using-group-policy)
+        - [Windows 10 Start Layout Customization](https://blogs.technet.microsoft.com/deploymentguys/2016/03/07/windows-10-start-layout-customization/)
+
+-	OEMs can use layoutmodification.xml. See [Customize the Start layout](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/customize-start-layout) for more information.
 
 
 ## <span id="bkmk_preserve"></span><span id="BKMK_PRESERVE"></span>Creating an answer file with the CopyProfile setting
