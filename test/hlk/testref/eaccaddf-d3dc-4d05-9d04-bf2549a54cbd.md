@@ -49,7 +49,12 @@ Tests in this feature area might have additional documentation, including prereq
 |----------------|------------------------------|
 | **TID**        | USB-IF Certification Test ID |
 
- 
+
+For more information about TID, see [USB tests in the Windows 10 Hardware Lab Kit (HLK)](https://blogs.msdn.microsoft.com/usbcoreblog/2015/05/14/usb-tests-in-the-windows-10-hardware-lab-kit-hlk) on the [Microsoft Windows USB Core Team Blog](https://blogs.msdn.microsoft.com/usbcoreblog/). 
+
+>[!NOTE]
+>When you use SELF_TEST, you don't need to submit any type of USB-IF test log to MS for review.
+
 
 ## <span id="Troubleshooting"></span><span id="troubleshooting"></span><span id="TROUBLESHOOTING"></span>Troubleshooting
 
