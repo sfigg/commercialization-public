@@ -13,47 +13,20 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # Microsoft-Windows-LUA-Settings
-
 
 The `Microsoft-Windows-LUA-Settings` component includes settings related to the Windows User Account Controls (UAC), formerly known as Limited User Account (LUA).
 
 ## In This Section
 
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>[EnableLUA](microsoft-windows-lua-settings-enablelua.md)</p></td>
-<td><p>Specifies whether the windows User Account Controls (UAC) notify the user when programs try to make changes to the computer.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Setting                 | Description                                                                           |
+|:------------------------|:--------------------------------------------------------------------------------------|
+| [EnableLUA](microsoft-windows-lua-settings-enablelua.md) | Specifies whether the windows User Account Controls (UAC) notify the user when programs try to make changes to the computer. |
 
 ## Applies To
-
 
 To determine whether a component applies to the image you’re building, load your image into Windows SIM and search for the component or setting name. For information on how to view components and settings, see [Configure Components and Settings in an Answer File](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/wsim/configure-components-and-settings-in-an-answer-file).
 
 ## Related topics
 
-
 [Components](components-b-unattend.md)
-
- 
-
- 
-
-
-
-
-
-
-

@@ -1,6 +1,6 @@
 ---
-title: microsoft-windows-international-core-winpe--
-description: microsoft-windows-international-core-winpe--
+title: Microsoft-Windows-International-Core-WinPE
+description: Microsoft-Windows-International-Core-WinPE
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
@@ -13,75 +13,30 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
+# Microsoft-Windows-International-Core-WinPE
 
-# microsoft-windows-international-core-winpe--
-
-
-The microsoft-windows-international-core-winpe-- component specifies the default language, locale, and other international settings to use during Windows Setup or Windows Deployment Services installations.
+The Microsoft-Windows-International-Core-WinPE component specifies the default language, locale, and other international settings to use during Windows Setup or Windows Deployment Services installations.
 
 The settings in this component can be applied only in the windowsPE configuration pass. To specify language and locale settings in the oobeSystem and specialize configuration passes, see [Microsoft-Windows-International-Core](microsoft-windows-international-core.md).
 
 ## In This Section
 
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>[InputLocale](microsoft-windows-international-core-winpe-inputlocale.md)</p></td>
-<td><p>Specifies the system input locale and the keyboard layout.</p></td>
-</tr>
-<tr class="even">
-<td><p>[LayeredDriver](microsoft-windows-international-core-winpe-layereddriver.md)</p></td>
-<td><p>Specifies the keyboard driver to use for Japanese or Korean keyboards.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[SetupUILanguage](microsoft-windows-international-core-winpe-setupuilanguage.md)</p></td>
-<td><p>Specifies the default language to use during Windows Setup or Windows Deployment Services.</p></td>
-</tr>
-<tr class="even">
-<td><p>[SystemLocale](microsoft-windows-international-core-winpe-systemlocale.md)</p></td>
-<td><p>Specifies the default language for non-Unicode programs.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[UILanguage](microsoft-windows-international-core-winpe-uilanguage.md)</p></td>
-<td><p>Specifies the default system user interface (UI) language.</p></td>
-</tr>
-<tr class="even">
-<td><p>[UILanguageFallback](microsoft-windows-international-core-winpe-uilanguagefallback.md)</p></td>
-<td><p>Specifies the fallback language if the system default UI language is only partially localized.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[UserLocale](microsoft-windows-international-core-winpe-userlocale.md)</p></td>
-<td><p>Specifies the per-user settings used for formatting dates, times, currency, and numbers.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Setting                 | Description                                                                           |
+|:------------------------|:--------------------------------------------------------------------------------------|
+| [InputLocale](microsoft-windows-international-core-winpe-inputlocale.md) | Specifies the system input locale and the keyboard layout. |
+| [LayeredDriver](microsoft-windows-international-core-winpe-layereddriver.md) | Specifies the keyboard driver to use for Japanese or Korean keyboards. |
+| [SetupUILanguage](microsoft-windows-international-core-winpe-setupuilanguage.md) | Specifies the default language to use during Windows Setup or Windows Deployment Services. |
+| [SystemLocale](microsoft-windows-international-core-winpe-systemlocale.md) | Specifies the default language for non-Unicode programs. |
+| [UILanguage](microsoft-windows-international-core-winpe-uilanguage.md) | Specifies the default system user interface (UI) language. |
+| [UILanguageFallback](microsoft-windows-international-core-winpe-uilanguagefallback.md) | Specifies the fallback language if the system default UI language is only partially localized. |
+| [UserLocale](microsoft-windows-international-core-winpe-userlocale.md) | Specifies the per-user settings used for formatting dates, times, currency, and numbers. |
 
 ## Applies To
-
 
 To determine whether a component applies to the image you’re building, load your image into Windows SIM and search for the component or setting name. For information on how to view components and settings, see [Configure Components and Settings in an Answer File](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/wsim/configure-components-and-settings-in-an-answer-file).
 
 ## Related topics
 
-
 [Components](components-b-unattend.md)
 
 [Microsoft-Windows-International-Core](microsoft-windows-international-core.md)
-
- 
-
- 
-
-
-
-
-
-
-

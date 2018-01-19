@@ -13,9 +13,7 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # CreatePartitions
-
 
 `CreatePartitions` specifies one or more partitions to create on a hard disk. Partitions are created in the order specified by the [Order](microsoft-windows-setup-diskconfiguration-disk-createpartitions-createpartition-order.md) setting.
 
@@ -25,43 +23,27 @@ If you are installing Windows to a blank hard disk, you must use the `CreatePart
 
 ## Child Elements
 
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>[CreatePartition](microsoft-windows-setup-diskconfiguration-disk-createpartitions-createpartition.md)</p></td>
-<td><p>Specifies the order, size, and type of a single partition to be configured.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Setting                 | Description                                                                           |
+|:------------------------|:--------------------------------------------------------------------------------------|
+| [CreatePartition](microsoft-windows-setup-diskconfiguration-disk-createpartitions-createpartition.md) | Specifies the order, size, and type of a single partition to be configured. |
 
 ## Valid Configuration Passes
-
 
 windowsPE
 
 ## Parent Hierarchy
 
-
-[microsoft-windows-setup-](microsoft-windows-setup.md) | [DiskConfiguration](microsoft-windows-setup-diskconfiguration.md) | [Disk](microsoft-windows-setup-diskconfiguration-disk.md) | **CreatePartitions**
+[Microsoft-Windows-Setup](microsoft-windows-setup.md) | [DiskConfiguration](microsoft-windows-setup-diskconfiguration.md) | [Disk](microsoft-windows-setup-diskconfiguration-disk.md) | **CreatePartitions**
 
 ## Applies To
 
-
-For a list of the supported Windows editions and architectures that this component supports, see [microsoft-windows-setup-](microsoft-windows-setup.md).
+For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-Setup](microsoft-windows-setup.md).
 
 ## XML Example
 
-
 The following XML output for the `DiskConfiguration` setting shows how to create two partitions on a hard drive on a BIOS-based system.
 
-```
+```XML
 <DiskConfiguration>
 
   <Disk wcm:action="add">
@@ -125,16 +107,4 @@ For full XML examples and recommended partition configurations, see [How to Conf
 
 ## Related topics
 
-
 [Disk](microsoft-windows-setup-diskconfiguration-disk.md)
-
- 
-
- 
-
-
-
-
-
-
-

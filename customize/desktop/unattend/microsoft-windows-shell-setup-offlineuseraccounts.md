@@ -13,50 +13,27 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # OfflineUserAccounts
-
 
 `OfflineUserAccounts` specifies local accounts to be created, domain accounts to be added, and the administrator password.
 
 ## Child Elements
 
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>[OfflineAdministratorPassword](microsoft-windows-shell-setup-offlineuseraccounts-offlineadministratorpassword.md)</p></td>
-<td><p>Specifies the administrator password for the computer and whether it is hidden in the unattended installation answer file.</p></td>
-</tr>
-<tr class="even">
-<td><p>[OfflineDomainAccounts](microsoft-windows-shell-setup-offlineuseraccounts-offlinedomainaccounts.md)</p></td>
-<td><p>Specifies the details of domain accounts to be added to local security groups on the computer during installation.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[OfflineLocalAccounts](microsoft-windows-shell-setup-offlineuseraccounts-offlinelocalaccounts.md)</p></td>
-<td><p>Specifies the details of local accounts to be created during installation.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Setting                 | Description                                                                           |
+|:------------------------|:--------------------------------------------------------------------------------------|
+| [OfflineAdministratorPassword](microsoft-windows-shell-setup-offlineuseraccounts-offlineadministratorpassword.md) | Specifies the administrator password for the computer and whether it is hidden in the unattended installation answer file. |
+| [OfflineDomainAccounts](microsoft-windows-shell-setup-offlineuseraccounts-offlinedomainaccounts.md) | Specifies the details of domain accounts to be added to local security groups on the computer during installation. |
+| [OfflineLocalAccounts](microsoft-windows-shell-setup-offlineuseraccounts-offlinelocalaccounts.md) | Specifies the details of local accounts to be created during installation. |
 
 ## Valid Passes
-
 
 offlineServicing
 
 ## Parent Hierarchy
 
-
 [Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | **OfflineUserAccounts**
 
 ## Applies To
-
 
 Windows 10 for desktop editions (Home, Pro, Enterprise, and Education)
 
@@ -66,10 +43,9 @@ For a list of the supported Windows editions and architectures that this compone
 
 ## XML Example
 
-
 The following XML output shows how to set `OfflineUserAccounts`.
 
-```
+```XML
 <OfflineUserAccounts>
      <OfflineAdministratorPassword>
         <Value>[PasswordValue]</Value>
@@ -78,7 +54,7 @@ The following XML output shows how to set `OfflineUserAccounts`.
 
      <OfflineLocalAccounts>
          <LocalAccount>
-             <Password>                                                
+             <Password>
                  <Value>[PasswordValue]</Value>
                  <PlainText>[true/false]</PlainText>
              </Password>
@@ -92,7 +68,7 @@ The following XML output shows how to set `OfflineUserAccounts`.
          <OfflineDomainAccount>
              <SID>[SID1]</SID>
              <Group>[groups]</Group>
-         </OfflineDomainAccount>         
+         </OfflineDomainAccount>
          <OfflineDomainAccount>
              <SID>[SID2]</SID>
              <Group>[groups]</Group>
@@ -103,16 +79,4 @@ The following XML output shows how to set `OfflineUserAccounts`.
 
 ## Related topics
 
-
 [Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md)
-
- 
-
- 
-
-
-
-
-
-
-

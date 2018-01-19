@@ -1,6 +1,6 @@
 ---
-title: microsoft-windows-tapisetup-
-description: microsoft-windows-tapisetup-
+title: Microsoft-Windows-TAPISetup
+description: Microsoft-Windows-TAPISetup
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
@@ -13,51 +13,21 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
+# Microsoft-Windows-TAPISetup
 
-# microsoft-windows-tapisetup-
-
-
-The microsoft-windows-tapisetup- component implements the Telephony API (TAPI).
+The Microsoft-Windows-TAPISetup component implements the Telephony API (TAPI).
 
 ## In This Section
 
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>[TapiConfigured](microsoft-windows-tapisetup-tapiconfigured.md)</p></td>
-<td><p>Specifies whether to retain the configured telephony locations or to rewrite them.</p></td>
-</tr>
-<tr class="even">
-<td><p>[TapiUnattendLocation](microsoft-windows-tapisetup-tapiunattendlocation.md)</p></td>
-<td><p>Specifies unattended installation settings for a telephony location.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Setting                 | Description                                                                           |
+|:------------------------|:--------------------------------------------------------------------------------------|
+| [TapiConfigured](microsoft-windows-tapisetup-tapiconfigured.md) | Specifies whether to retain the configured telephony locations or to rewrite them. |
+| [TapiUnattendLocation](microsoft-windows-tapisetup-tapiunattendlocation.md) | Specifies unattended installation settings for a telephony location. |
 
 ## Applies To
-
 
 To determine whether a component applies to the image you’re building, load your image into Windows SIM and search for the component or setting name. For information on how to view components and settings, see [Configure Components and Settings in an Answer File](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/wsim/configure-components-and-settings-in-an-answer-file).
 
 ## Related topics
 
-
 [Components](components-b-unattend.md)
-
- 
-
- 
-
-
-
-
-
-
-

@@ -19,30 +19,12 @@ ms.technology: windows-oem
 
 ## Child Elements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>[Active](networking-mpssvc-svc-firewallgroups-firewallgroup-active.md)</p></td>
-<td><p>Specifies whether a Windows Firewall group is active.</p></td>
-</tr>
-<tr class="even">
-<td><p>[Group](networking-mpssvc-svc-firewallgroups-firewallgroup-group.md)</p></td>
-<td><p>Specifies a Windows Firewall group by its ID.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[Key](networking-mpssvc-svc-firewallgroups-firewallgroup-key.md)</p></td>
-<td><p>Specifies a unique name that you can use to identify the Firewall group.</p></td>
-</tr>
-<tr class="even">
-<td><p>[Profile](networking-mpssvc-svc-firewallgroups-firewallgroup-profile.md)</p></td>
-<td><p>Specifies a Windows Firewall group profile.</p></td>
-</tr>
-</tbody>
-</table>
+| Setting                 | Description                                                                           |
+|:------------------------|:--------------------------------------------------------------------------------------|
+| [Active](networking-mpssvc-svc-firewallgroups-firewallgroup-active.md) | Specifies whether a Windows Firewall group is active. |
+| [Group](networking-mpssvc-svc-firewallgroups-firewallgroup-group.md) | Specifies a Windows Firewall group by its ID. |
+| [Key](networking-mpssvc-svc-firewallgroups-firewallgroup-key.md) | Specifies a unique name that you can use to identify the Firewall group. |
+| [Profile](networking-mpssvc-svc-firewallgroups-firewallgroup-profile.md) | Specifies a Windows Firewall group profile. |
 
 ## Parent Hierarchy
 

@@ -13,32 +13,17 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # DriverPaths
-
 
 `DriverPaths` specifies one or more paths that contain out-of-box drivers. These drivers are copied to the Windows installation during the **auditSystem** configuration pass. `DriverPaths` is a container for one or more [PathAndCredentials](microsoft-windows-pnpcustomizationsnonwinpe-driverpaths-pathandcredentials.md) list items.
 
 ## Child Elements
 
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>[PathAndCredentials](microsoft-windows-pnpcustomizationsnonwinpe-driverpaths-pathandcredentials.md)</p></td>
-<td><p>Specifies the local or Universal Naming Convention (UNC) path to the out-of-box drivers and the [Credentials](microsoft-windows-pnpcustomizationsnonwinpe-driverpaths-pathandcredentials-credentials.md) (optional) used to access them.</p></td>
-</tr>
-</tbody>
-</table>
-
+| Setting                 | Description                                                                           |
+|:------------------------|:--------------------------------------------------------------------------------------|
+| [PathAndCredentials](microsoft-windows-pnpcustomizationsnonwinpe-driverpaths-pathandcredentials.md) | Specifies the local or Universal Naming Convention (UNC) path to the out-of-box drivers and the [Credentials](microsoft-windows-pnpcustomizationsnonwinpe-driverpaths-pathandcredentials-credentials.md) (optional) used to access them. |
  
-
 ## Valid Configuration Passes
-
 
 auditSystem
 
@@ -46,20 +31,17 @@ offlineServicing
 
 ## Parent Hierarchy
 
-
 [Microsoft-Windows-PnpCustomizationsNonWinPE](microsoft-windows-pnpcustomizationsnonwinpe.md) | **DriverPaths**
 
 ## Applies To
-
 
 For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-PnpCustomizationsNonWinPE](microsoft-windows-pnpcustomizationsnonwinpe.md).
 
 ## XML Example
 
-
 The following XML output specifies device driver search paths.
 
-```
+```XML
 <DriverPaths>
 <!-- First PathAndCredentials list item -->
    <PathAndCredentials wcm:action="add" wcm:keyValue="1">
@@ -84,16 +66,4 @@ The following XML output specifies device driver search paths.
 
 ## Related topics
 
-
 [Microsoft-Windows-PnpCustomizationsNonWinPE](microsoft-windows-pnpcustomizationsnonwinpe.md)
-
- 
-
- 
-
-
-
-
-
-
-

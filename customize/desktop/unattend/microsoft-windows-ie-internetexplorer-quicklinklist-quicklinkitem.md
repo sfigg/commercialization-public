@@ -13,59 +13,35 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # QuickLinkItem
-
 
 `QuickLinkItem` specifies the unique ID, the friendly site name that is displayed on the **Favorites** toolbar, and an associated Uniform Resource Locator (URL).
 
 ## Child Elements
 
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>[QLID](microsoft-windows-ie-internetexplorer-quicklinklist-quicklinkitem-qlid.md)</p></td>
-<td><p>Specifies a unique ID to associate with a <code>QuickLinkItem</code>.</p></td>
-</tr>
-<tr class="even">
-<td><p>[QuickLinkName](microsoft-windows-ie-internetexplorer-quicklinklist-quicklinkitem-quicklinkname.md)</p></td>
-<td><p>Specifies a friendly name for the <code>QuickLinkItem</code>, as it appears on the <strong>Favorites</strong> toolbar.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[QuickLinkUrl](microsoft-windows-ie-internetexplorer-quicklinklist-quicklinkitem-quicklinkurl.md)</p></td>
-<td><p>Specifies a URL value to associate with a <code>QuickLinkItem</code>.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Setting                 | Description                                                                           |
+|:------------------------|:--------------------------------------------------------------------------------------|
+| [QLID](microsoft-windows-ie-internetexplorer-quicklinklist-quicklinkitem-qlid.md) | Specifies a unique ID to associate with a <code>QuickLinkItem</code>. |
+| [QuickLinkName](microsoft-windows-ie-internetexplorer-quicklinklist-quicklinkitem-quicklinkname.md) | Specifies a friendly name for the <code>QuickLinkItem</code>, as it appears on the <strong>Favorites</strong> toolbar. |
+| [QuickLinkUrl](microsoft-windows-ie-internetexplorer-quicklinklist-quicklinkitem-quicklinkurl.md) | Specifies a URL value to associate with a <code>QuickLinkItem</code>. |
 
 ## Valid Passes
-
 
 specialize
 
 ## Parent Hierarchy
 
-
 [Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md) | [QuickLinkList](microsoft-windows-ie-internetexplorer-quicklinklist.md) | **QuickLinkItem**
 
 ## Applies To
-
 
 For the list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md).
 
 ## XML Example
 
-
 The following XML output shows how to configure a [QuickLinkList](microsoft-windows-ie-internetexplorer-quicklinklist.md).
 
-```
+```XML
 <QuickLinkList>
    <QuickLinkItem>
       <QLID>0</QLID>
@@ -82,16 +58,4 @@ The following XML output shows how to configure a [QuickLinkList](microsoft-wind
 
 ## Related topics
 
-
 [QuickLinkList](microsoft-windows-ie-internetexplorer-quicklinklist.md)
-
- 
-
- 
-
-
-
-
-
-
-

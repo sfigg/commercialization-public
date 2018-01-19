@@ -29,72 +29,21 @@ The overlay does not mirror the entire volume, but dynamically grows to keep tra
 
 ## Child elements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Topic</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>[AddAllVolumes](microsoft-windows-embedded-unifiedwritefilter-addallvolumes.md)</p></td>
-<td><p>Specifies whether to protect all volumes with UWF.</p></td>
-</tr>
-<tr class="even">
-<td><p>[Binding](microsoft-windows-embedded-unifiedwritefilter-binding.md)</p></td>
-<td><p>Specifies whether to bind the physical volume by drive letter or by volume name.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[BootStatusPolicy](microsoft-windows-embedded-unifiedwritefilter-bootstatuspolicy.md)</p></td>
-<td><p>Specifies the display policy of Windows boot loader errors.</p></td>
-</tr>
-<tr class="even">
-<td><p>[DisableAutoDefrag](microsoft-windows-embedded-unifiedwritefilter-disableautodefrag.md)</p></td>
-<td><p>Specifies whether to disable automatic disk defragmentation.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[DomainSecretKeyPersisted](microsoft-windows-embedded-unifiedwritefilter-domainsecretkeypersisted.md)</p></td>
-<td><p>Specifies whether to persist the domain secret key on a device.</p></td>
-</tr>
-<tr class="even">
-<td><p>[OverlayCriticalThreshold](microsoft-windows-embedded-unifiedwritefilter-overlaycriticalthreshold.md)</p></td>
-<td><p>Specifies the critical threshold size, in MB, for the UWF overlay.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[OverlayFlags](microsoft-windows-embedded-unifiedwritefilter-overlayflags.md)</p></td>
-<td><p>Specifies whether writes to unused space on the volume are allowed to pass through without being redirected to the overlay file.</p></td>
-</tr>
-<tr class="even">
-<td><p>[OverlayMaximumSize](microsoft-windows-embedded-unifiedwritefilter-overlaymaximumsize.md)</p></td>
-<td><p>Specifies the maximum overlay size, in MB, for the UWF overlay.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[OverlayType](microsoft-windows-embedded-unifiedwritefilter-overlaytype.md)</p></td>
-<td><p>Specifies the type of overlay storage used by UWF.</p></td>
-</tr>
-<tr class="even">
-<td><p>[OverlayWarningThreshold](microsoft-windows-embedded-unifiedwritefilter-overlaywarningthreshold.md)</p></td>
-<td><p>Specifies the overlay warning threshold size, in MB, for UWF.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[ProtectedVolumeList](microsoft-windows-embedded-unifiedwritefilter-protectedvolumelist.md)</p></td>
-<td><p>Contains settings that you can configure for the volume protected by UWF.</p></td>
-</tr>
-<tr class="even">
-<td><p>[RegistryExceptionsUserDefined](microsoft-windows-embedded-unifiedwritefilter-registryexceptionsuserdefined.md)</p></td>
-<td><p>Specifies the registry keys to exclude from being filtered. When a registry key is in the exclusion list, all writes to that registry key bypass UWF filtering and are written directly to the registry and persist after the device restarts.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[TSCALPersisted](microsoft-windows-embedded-unifiedwritefilter-tscalpersisted.md)</p></td>
-<td><p>Specifies whether the Terminal Services Client Access Licensing (TSCAL) registry key is in the UWF exclusion list.</p></td>
-</tr>
-</tbody>
-</table>
+| Setting                 | Description                                                                           |
+|:------------------------|:--------------------------------------------------------------------------------------|
+| [AddAllVolumes](microsoft-windows-embedded-unifiedwritefilter-addallvolumes.md) | Specifies whether to protect all volumes with UWF. |
+| [Binding](microsoft-windows-embedded-unifiedwritefilter-binding.md) | Specifies whether to bind the physical volume by drive letter or by volume name. |
+| [BootStatusPolicy](microsoft-windows-embedded-unifiedwritefilter-bootstatuspolicy.md) | Specifies the display policy of Windows boot loader errors. |
+| [DisableAutoDefrag](microsoft-windows-embedded-unifiedwritefilter-disableautodefrag.md) | Specifies whether to disable automatic disk defragmentation. |
+| [DomainSecretKeyPersisted](microsoft-windows-embedded-unifiedwritefilter-domainsecretkeypersisted.md) | Specifies whether to persist the domain secret key on a device. |
+| [OverlayCriticalThreshold](microsoft-windows-embedded-unifiedwritefilter-overlaycriticalthreshold.md) | Specifies the critical threshold size, in MB, for the UWF overlay. |
+| [OverlayFlags](microsoft-windows-embedded-unifiedwritefilter-overlayflags.md) | Specifies whether writes to unused space on the volume are allowed to pass through without being redirected to the overlay file. |
+| [OverlayMaximumSize](microsoft-windows-embedded-unifiedwritefilter-overlaymaximumsize.md) | Specifies the maximum overlay size, in MB, for the UWF overlay. |
+| [OverlayType](microsoft-windows-embedded-unifiedwritefilter-overlaytype.md) | Specifies the type of overlay storage used by UWF. |
+| [OverlayWarningThreshold](microsoft-windows-embedded-unifiedwritefilter-overlaywarningthreshold.md) | Specifies the overlay warning threshold size, in MB, for UWF. |
+| [ProtectedVolumeList](microsoft-windows-embedded-unifiedwritefilter-protectedvolumelist.md) | Contains settings that you can configure for the volume protected by UWF. |
+| [RegistryExceptionsUserDefined](microsoft-windows-embedded-unifiedwritefilter-registryexceptionsuserdefined.md) | Specifies the registry keys to exclude from being filtered. When a registry key is in the exclusion list, all writes to that registry key bypass UWF filtering and are written directly to the registry and persist after the device restarts. |
+| [TSCALPersisted](microsoft-windows-embedded-unifiedwritefilter-tscalpersisted.md) | Specifies whether the Terminal Services Client Access Licensing (TSCAL) registry key is in the UWF exclusion list. |
 
 ## Applies to
 

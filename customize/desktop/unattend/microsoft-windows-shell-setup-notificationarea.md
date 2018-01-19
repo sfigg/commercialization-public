@@ -13,9 +13,7 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # NotificationArea
-
 
 `NotificationArea` manages settings related to the notification area of the taskbar.
 
@@ -25,47 +23,28 @@ You can select up to two other icons to be visible in the notification area. The
 
 ## Child Elements
 
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>[PromotedIcon1](microsoft-windows-shell-setup-notificationarea-promotedicon1.md)</p></td>
-<td><p>Specifies an icon to be visible in the notification area in place of the <strong>Action Center</strong> icon.</p></td>
-</tr>
-<tr class="even">
-<td><p>[PromotedIcon2](microsoft-windows-shell-setup-notificationarea-promotedicon2.md)</p></td>
-<td><p>Specifies an icon to be visible in the notification area in place of the <strong>Battery</strong> icon.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Setting                 | Description                                                                           |
+|:------------------------|:--------------------------------------------------------------------------------------|
+| [PromotedIcon1](microsoft-windows-shell-setup-notificationarea-promotedicon1.md) | Specifies an icon to be visible in the notification area in place of the <strong>Action Center</strong> icon. |
+| [PromotedIcon2](microsoft-windows-shell-setup-notificationarea-promotedicon2.md) | Specifies an icon to be visible in the notification area in place of the <strong>Battery</strong> icon. |
 
 ## Valid Configuration Passes
-
 
 specialize
 
 ## Parent Hierarchy
 
-
 [Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | **Notification Area**
 
 ## Applies To
-
 
 For a list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md).
 
 ## XML Example
 
-
 The following XML output shows how to promote two other notification icons to be visible in place of the **Action Center** and **Battery** icons.
 
-```
+```XML
 <NotificationArea>
   <PromotedIcon1>
     <Path>%PROGRAMFILES%\Fabrikam\Application1.exe</Path>
@@ -80,16 +59,4 @@ The following XML output shows how to promote two other notification icons to be
 
 ## Related topics
 
-
 [Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md)
-
- 
-
- 
-
-
-
-
-
-
-

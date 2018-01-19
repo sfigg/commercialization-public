@@ -13,43 +13,21 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # CustomReturnCodeAction
-
 
 Contains the settings to map an exit code from a custom shell to a shell exit action. If the exit code does not match a defined value, Shell Launcher performs the default return action code.
 
 ## Child elements
 
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Topic</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>[CodeAction](microsoft-windows-embedded-shelllauncher-usersettings-user-customreturncodeaction-codeaction.md)</p></td>
-<td><p>Contains the settings you can use to map an exit code from a custom shell to a shell exit action.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Setting                 | Description                                                                           |
+|:------------------------|:--------------------------------------------------------------------------------------|
+| [CodeAction](microsoft-windows-embedded-shelllauncher-usersettings-user-customreturncodeaction-codeaction.md) | Contains the settings you can use to map an exit code from a custom shell to a shell exit action. |
 
 ## Parent Hierarchy
-
 
 [Microsoft-Windows-Embedded-ShellLauncher](microsoft-windows-embedded-shelllauncher.md) | [UserSettings](microsoft-windows-embedded-shelllauncher-usersettings.md) | [User](microsoft-windows-embedded-shelllauncher-usersettings-user.md) | **CustomReturnCodeAction**
 
 ## Applies to
-
 
 This component applies to the following Windows editions and architectures.
 
@@ -77,15 +55,3 @@ This component applies to the following Windows editions and architectures.
 </tr>
 </tbody>
 </table>
-
- 
-
- 
-
- 
-
-
-
-
-
-

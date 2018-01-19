@@ -13,51 +13,21 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # Microsoft-Windows-TerminalServices-LicenseServer
-
 
 The Microsoft-Windows-TerminalServices-LicenseServer component specifies the database path and the server role for the Terminal Services license server.
 
 ## In This Section
 
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>[DBPath](microsoft-windows-terminalservices-licenseserver-dbpath.md)</p></td>
-<td><p>Specifies the path to the license database.</p></td>
-</tr>
-<tr class="even">
-<td><p>[Role](microsoft-windows-terminalservices-licenseserver-role.md)</p></td>
-<td><p>Specifies the Terminal Services license server role.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Setting                 | Description                                                                           |
+|:------------------------|:--------------------------------------------------------------------------------------|
+| [DBPath](microsoft-windows-terminalservices-licenseserver-dbpath.md) | Specifies the path to the license database. |
+| [Role](microsoft-windows-terminalservices-licenseserver-role.md) | Specifies the Terminal Services license server role. |
 
 ## Applies To
-
 
 To determine whether a component applies to the image you’re building, load your image into Windows SIM and search for the component or setting name. For information on how to view components and settings, see [Configure Components and Settings in an Answer File](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/wsim/configure-components-and-settings-in-an-answer-file).
 
 ## Related topics
 
-
 [Components](components-b-unattend.md)
-
- 
-
- 
-
-
-
-
-
-
-

@@ -13,55 +13,34 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # DeviceElement
-
 
 `DeviceElement` specifies calibration data for particular devices. The setting enables you to include calibration data for a particular digitizer. Run `tabcal.exe -export` and produce a device ID and a hexadecimal string containing calibration data. Insert the device ID and hexadecimal string under `LinearityData` as a new subkey. Use the device ID as a name and the calibration data as the value.
 
 ## Child Elements
 
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>[Key](microsoft-windows-tabletpc-platform-input-core-linearitydata-deviceelement-key.md)</p></td>
-<td><p>Specifies a unique key for the <code>DeviceElement</code>.</p></td>
-</tr>
-<tr class="even">
-<td><p>[Value](microsoft-windows-tabletpc-platform-input-core-linearitydata-deviceelement-value.md)</p></td>
-<td><p>Specifies the value of the <code>DeviceElement</code>.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Setting                 | Description                                                                           |
+|:------------------------|:--------------------------------------------------------------------------------------|
+| [Key](microsoft-windows-tabletpc-platform-input-core-linearitydata-deviceelement-key.md) | Specifies a unique key for the <code>DeviceElement</code>. |
+| [Value](microsoft-windows-tabletpc-platform-input-core-linearitydata-deviceelement-value.md) | Specifies the value of the <code>DeviceElement</code>. |
 
 ## Parent Hierarchy
-
 
 [Microsoft-Windows-TabletPC-Platform-Input-Core](microsoft-windows-tabletpc-platform-input-core.md) | [LinearityData](microsoft-windows-tabletpc-platform-input-core-linearitydata.md) | **DeviceElement**
 
 ## Valid Passes
 
-
 offlineServicing
 
 ## Applies To
-
 
 For the list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-TabletPC-Platform-Input-Core](microsoft-windows-tabletpc-platform-input-core.md).
 
 ## XML Example
 
-
 The following XML output shows how to configure `DeviceElement`.
 
-```
+```XML
 <LinearityData>
 <DeviceElement wcm:action="add" wcm:keyValue="MyKey">11</DeviceElement>
 </LinearityData>
@@ -69,16 +48,4 @@ The following XML output shows how to configure `DeviceElement`.
 
 ## Related topics
 
-
 [Microsoft-Windows-TabletPC-Platform-Input-Core](microsoft-windows-tabletpc-platform-input-core.md)
-
- 
-
- 
-
-
-
-
-
-
-

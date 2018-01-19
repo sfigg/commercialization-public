@@ -13,9 +13,7 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # FavoriteBarItems
-
 
 `FavoriteBarItems` contains the settings used to add predefined Favorite items to the Favorite bar.
 
@@ -25,77 +23,49 @@ To add a predefined Favorite bar item in Windows System Image Manager, add the *
 
 ## Child Elements
 
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>[FavoriteBarItem](microsoft-windows-ie-internetexplorer-favoritebaritems-favoritebaritem.md)</p></td>
-<td><p>Specifies settings for each Favorite bar item.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Setting                 | Description                                                                           |
+|:------------------------|:--------------------------------------------------------------------------------------|
+| [FavoriteBarItem](microsoft-windows-ie-internetexplorer-favoritebaritems-favoritebaritem.md) | Specifies settings for each Favorite bar item. |
 
 ## Valid Configuration Passes
-
 
 specialize
 
 ## Parent Hierarchy
 
-
 [Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md) | **FavoriteBarItems**
 
 ## Applies To
-
 
 For the list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md).
 
 ## XML Example
 
-
 The following XML example shows three Favorite bar items.
 
-```
-<FavoriteBarItems> 
-  <FavoriteBarItem> 
-    <ItemKey>1</ItemKey> 
-    <ItemName>Name1</ItemName> 
-    <ItemUrl>http://www.fabrikam.com/stockwatch#stockprice</ItemUrl> 
-    <ItemType>Webslice</ItemType> 
-  </FavoriteBarItem> 
-  <FavoriteBarItem> 
-    <ItemKey>2</ItemKey> 
-    <ItemName>Name2</ItemName> 
-    <ItemUrl>http://www.msn.com/rss/ie8_slideshow.aspx</ItemUrl> 
-    <ItemType>Webslice</ItemType> 
-  </FavoriteBarItem> 
-  <FavoriteBarItem> 
-    <ItemKey>3</ItemKey> 
-    <ItemName>Name3</ItemName> 
-    <ItemUrl>http://www.fabrikam.com/xml/HomePage.xml</ItemUrl> 
-    <ItemType>Headline</ItemType> 
-  </FavoriteBarItem> 
+```XML
+<FavoriteBarItems>
+  <FavoriteBarItem>
+    <ItemKey>1</ItemKey>
+    <ItemName>Name1</ItemName>
+    <ItemUrl>http://www.fabrikam.com/stockwatch#stockprice</ItemUrl>
+    <ItemType>Webslice</ItemType>
+  </FavoriteBarItem>
+  <FavoriteBarItem>
+    <ItemKey>2</ItemKey>
+    <ItemName>Name2</ItemName>
+    <ItemUrl>http://www.msn.com/rss/ie8_slideshow.aspx</ItemUrl>
+    <ItemType>Webslice</ItemType>
+  </FavoriteBarItem>
+  <FavoriteBarItem>
+    <ItemKey>3</ItemKey>
+    <ItemName>Name3</ItemName>
+    <ItemUrl>http://www.fabrikam.com/xml/HomePage.xml</ItemUrl>
+    <ItemType>Headline</ItemType>
+  </FavoriteBarItem>
 </FavoriteBarItems>
 ```
 
 ## Related topics
 
-
 [Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md)
-
- 
-
- 
-
-
-
-
-
-
-

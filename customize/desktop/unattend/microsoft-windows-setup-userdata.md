@@ -13,63 +13,36 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # UserData
-
 
 `UserData` specifies user settings.
 
 ## Child Elements
 
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>[AcceptEula](microsoft-windows-setup-userdata-accepteula.md)</p></td>
-<td><p>Specifies whether to automatically accept the Microsoft Software License Terms.</p></td>
-</tr>
-<tr class="even">
-<td><p>[FullName](microsoft-windows-setup-userdata-fullname.md)</p></td>
-<td><p>Specifies the name of the end user.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[Organization](microsoft-windows-setup-userdata-organization.md)</p></td>
-<td><p>Specifies the name of the organization that owns the computer.</p></td>
-</tr>
-<tr class="even">
-<td><p>[ProductKey](microsoft-windows-setup-userdata-productkey.md)</p></td>
-<td><p>Specifies the product key to use, which determines the edition of Windows to install.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Setting                 | Description                                                                           |
+|:------------------------|:--------------------------------------------------------------------------------------|
+| [AcceptEula](microsoft-windows-setup-userdata-accepteula.md) | Specifies whether to automatically accept the Microsoft Software License Terms. |
+| [FullName](microsoft-windows-setup-userdata-fullname.md) | Specifies the name of the end user. |
+| [Organization](microsoft-windows-setup-userdata-organization.md) | Specifies the name of the organization that owns the computer. |
+| [ProductKey](microsoft-windows-setup-userdata-productkey.md) | Specifies the product key to use, which determines the edition of Windows to install. |
 
 ## Valid Passes
-
 
 windowsPE
 
 ## Parent Hierarchy
 
-
-[microsoft-windows-setup-](microsoft-windows-setup.md) | **UserData**
+[Microsoft-Windows-Setup](microsoft-windows-setup.md) | **UserData**
 
 ## Applies To
 
-
-For the list of the supported Windows editions and architectures that this component supports, see [microsoft-windows-setup-](microsoft-windows-setup.md).
+For the list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-Setup](microsoft-windows-setup.md).
 
 ## XML Example
 
-
 The following XML output shows how to set user data.
 
-```
+```XML
 <UserData>
    <AcceptEula>true</AcceptEula>
    <FullName>EndUserName</FullName>
@@ -83,16 +56,4 @@ The following XML output shows how to set user data.
 
 ## Related topics
 
-
-[microsoft-windows-setup-](microsoft-windows-setup.md)
-
- 
-
- 
-
-
-
-
-
-
-
+[Microsoft-Windows-Setup](microsoft-windows-setup.md)

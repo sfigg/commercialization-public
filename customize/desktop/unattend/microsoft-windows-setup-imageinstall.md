@@ -13,55 +13,34 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # ImageInstall
-
 
 `ImageInstall` specifies the Windows image or secondary data image to install and the location to which the image is to be installed.
 
 ## Child Elements
 
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>[DataImage](microsoft-windows-setup-imageinstall-dataimage.md)</p></td>
-<td><p>Specifies the secondary data image to install.</p></td>
-</tr>
-<tr class="even">
-<td><p>[OSImage](microsoft-windows-setup-imageinstall-osimage.md)</p></td>
-<td><p>Specifies the Windows operating system image to install.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Setting                 | Description                                                                           |
+|:------------------------|:--------------------------------------------------------------------------------------|
+| [DataImage](microsoft-windows-setup-imageinstall-dataimage.md) | Specifies the secondary data image to install. |
+| [OSImage](microsoft-windows-setup-imageinstall-osimage.md) | Specifies the Windows operating system image to install. |
 
 ## Valid Passes
-
 
 windowsPE
 
 ## Parent Hierarchy
 
-
-[microsoft-windows-setup-](microsoft-windows-setup.md) | **ImageInstall**
+[Microsoft-Windows-Setup](microsoft-windows-setup.md) | **ImageInstall**
 
 ## Applies To
 
-
-For a list of the supported Windows editions and architectures that this component supports, see [microsoft-windows-setup-](microsoft-windows-setup.md).
+For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-Setup](microsoft-windows-setup.md).
 
 ## XML Example
 
-
 The following XML output shows how to set the `ImageInstall` setting to install both an operating system image and a data image.
 
-```
+```XML
 <ImageInstall>
     <OSImage>
         <InstallFrom>
@@ -107,16 +86,4 @@ The following XML output shows how to set the `ImageInstall` setting to install 
 
 ## Related topics
 
-
-[microsoft-windows-setup-](microsoft-windows-setup.md)
-
- 
-
- 
-
-
-
-
-
-
-
+[Microsoft-Windows-Setup](microsoft-windows-setup.md)

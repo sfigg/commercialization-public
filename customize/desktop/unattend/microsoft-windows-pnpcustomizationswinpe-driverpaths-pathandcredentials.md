@@ -13,59 +13,35 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # PathAndCredentials
-
 
 `PathAndCredentials` is a list item type and specifies the local or Universal Naming Convention (UNC) path to an additional location for out-of-box device drivers and, optionally, the credentials used to access that path.
 
 ## Child Elements
 
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>[Credentials](microsoft-windows-pnpcustomizationswinpe-driverpaths-pathandcredentials-credentials.md)</p></td>
-<td><p>Specifies the credentials used to access the path specified by the [Path](microsoft-windows-pnpcustomizationswinpe-driverpaths-pathandcredentials-path.md). (Optional)</p></td>
-</tr>
-<tr class="even">
-<td><p>[Key](microsoft-windows-pnpcustomizationswinpe-driverpaths-pathandcredentials-key.md)</p></td>
-<td><p>Specifies a unique string identifier for the driver path.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[Path](microsoft-windows-pnpcustomizationswinpe-driverpaths-pathandcredentials-path.md)</p></td>
-<td><p>Specifies a local or UNC path that contains additional out-of-box device drivers that you copy to the Windows image.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Setting                 | Description                                                                           |
+|:------------------------|:--------------------------------------------------------------------------------------|
+| [Credentials](microsoft-windows-pnpcustomizationswinpe-driverpaths-pathandcredentials-credentials.md) | Specifies the credentials used to access the path specified by the [Path](microsoft-windows-pnpcustomizationswinpe-driverpaths-pathandcredentials-path.md). (Optional) |
+| [Key](microsoft-windows-pnpcustomizationswinpe-driverpaths-pathandcredentials-key.md) | Specifies a unique string identifier for the driver path. |
+| [Path](microsoft-windows-pnpcustomizationswinpe-driverpaths-pathandcredentials-path.md) | Specifies a local or UNC path that contains additional out-of-box device drivers that you copy to the Windows image. |
 
 ## Valid Passes
-
 
 windowsPE
 
 ## Parent Hierarchy
 
-
-[microsoft-windows-pnpcustomizationswinpe-](microsoft-windows-pnpcustomizationswinpe.md) | [DriverPaths](microsoft-windows-pnpcustomizationswinpe-driverpaths.md) | **PathAndCredentials**
+[Microsoft-Windows-PnpCustomizationsWinPE](microsoft-windows-pnpcustomizationswinpe.md) | [DriverPaths](microsoft-windows-pnpcustomizationswinpe-driverpaths.md) | **PathAndCredentials**
 
 ## Applies To
 
-
-For the list of the supported Windows editions and architectures that this component supports, see [microsoft-windows-pnpcustomizationswinpe-](microsoft-windows-pnpcustomizationswinpe.md).
+For the list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-PnpCustomizationsWinPE](microsoft-windows-pnpcustomizationswinpe.md).
 
 ## XML Example
 
-
 The following XML output specifies the UNC paths to two additional locations for device drivers and the credentials used to access those paths.
 
-```
+```XML
 <DriverPaths>
 <!-- First PathAndCredentials list item -->
    <PathAndCredentials wcm:action="add" wcm:keyValue="1">
@@ -90,16 +66,4 @@ The following XML output specifies the UNC paths to two additional locations for
 
 ## Related topics
 
-
 [DriverPaths](microsoft-windows-pnpcustomizationswinpe-driverpaths.md)
-
- 
-
- 
-
-
-
-
-
-
-

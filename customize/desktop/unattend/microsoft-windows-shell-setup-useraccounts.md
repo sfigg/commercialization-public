@@ -13,40 +13,19 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # UserAccounts
-
 
 `UserAccounts` specifies local accounts to be created, domain accounts to be added, and the administrator password.
 
 ## Child Elements
 
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>[AdministratorPassword](microsoft-windows-shell-setup-useraccounts-administratorpassword.md)</p></td>
-<td><p>Specifies the administrator password for the computer and whether it is hidden in the unattended installation answer file.</p></td>
-</tr>
-<tr class="even">
-<td><p>[DomainAccounts](microsoft-windows-shell-setup-useraccounts-domainaccounts.md)</p></td>
-<td><p>Specifies the details of domain accounts to be added to local security groups on the computer during installation.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[LocalAccounts](microsoft-windows-shell-setup-useraccounts-localaccounts.md)</p></td>
-<td><p>Specifies the details of local accounts to be created during installation.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Setting                 | Description                                                                           |
+|:------------------------|:--------------------------------------------------------------------------------------|
+| [AdministratorPassword](microsoft-windows-shell-setup-useraccounts-administratorpassword.md) | Specifies the administrator password for the computer and whether it is hidden in the unattended installation answer file. |
+| [DomainAccounts](microsoft-windows-shell-setup-useraccounts-domainaccounts.md) | Specifies the details of domain accounts to be added to local security groups on the computer during installation. |
+| [LocalAccounts](microsoft-windows-shell-setup-useraccounts-localaccounts.md) | Specifies the details of local accounts to be created during installation. |
 
 ## Valid Passes
-
 
 auditSystem
 
@@ -54,20 +33,17 @@ oobeSystem
 
 ## Parent Hierarchy
 
-
 [Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | **UserAccounts**
 
 ## Applies To
-
 
 For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md).
 
 ## XML Example
 
-
 The following XML output shows how to set `UserAccounts`.
 
-```
+```XML
 <UserAccounts>
    <AdministratorPassword>
       <Value>cAB3AEEAZABtAGkAbgBpAHMAdAByAGEAdABvAHIAUABhAHMAcwB3AG8AcgBkAA==</Value>
@@ -120,16 +96,4 @@ The following XML output shows how to set `UserAccounts`.
 
 ## Related topics
 
-
 [Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md)
-
- 
-
- 
-
-
-
-
-
-
-

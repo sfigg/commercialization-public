@@ -13,9 +13,7 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # InstalledToolbarsList
-
 
 `InstalledToolbarsList` contains settings for configuring Internet Explorer toolbars.
 
@@ -25,43 +23,27 @@ Toolbars are plug-in modules used to add functionality to Internet Explorer.
 
 ## Child Elements
 
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>[AddonGuidItem](microsoft-windows-ie-internetexplorer-installedtoolbarslist-addonguiditem.md)</p></td>
-<td><p>Specifies settings for a toolbar.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Setting                 | Description                                                                           |
+|:------------------------|:--------------------------------------------------------------------------------------|
+| [AddonGuidItem](microsoft-windows-ie-internetexplorer-installedtoolbarslist-addonguiditem.md) | Specifies settings for a toolbar. |
 
 ## Valid Passes
-
 
 specialize
 
 ## Parent Hierarchy
 
-
 [Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md) | **InstalledToolbarsList**
 
 ## Applies To
-
 
 For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md).
 
 ## XML Example
 
-
 The following XML output shows how to set two Internet Explorer toolbars.
 
-```
+```XML
 <InstalledToolbarsList>
   <AddonGuidItem>
     <AddonGuid>{a1b1c123d1e1f4a5a6a7aa8a9a0a}</AddonGuid>
@@ -74,7 +56,6 @@ The following XML output shows how to set two Internet Explorer toolbars.
 
 ## Related topics
 
-
 [Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md)
 
 [InstalledBHOList](microsoft-windows-ie-internetexplorer-installedbholist.md)
@@ -82,14 +63,3 @@ The following XML output shows how to set two Internet Explorer toolbars.
 [InstalledBrowserExtensions](microsoft-windows-ie-internetexplorer-installedbrowserextensions.md)
 
 [PreApprovedAddons](microsoft-windows-ie-internetexplorer-preapprovedaddons.md)
-
- 
-
- 
-
-
-
-
-
-
-

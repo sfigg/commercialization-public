@@ -13,9 +13,7 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # DiskConfiguration
-
 
 `DiskConfiguration` contains the settings that Windows uses to partition and to configure one or more physical hard disks.
 
@@ -25,53 +23,31 @@ You can configure disk partitions manually in the disk configuration user interf
 
 ## Child Elements
 
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>[DisableEncryptedDiskProvisioning](microsoft-windows-setup-diskconfiguration-disableencrypteddiskprovisioning.md)</p></td>
-<td><p>Specifies whether Windows activates encryption on blank drives that are capable of hardware-based encryption.</p></td>
-</tr>
-<tr class="even">
-<td><p>[Disk](microsoft-windows-setup-diskconfiguration-disk.md)</p></td>
-<td><p>Specifies the disk configurations to apply to a disk on the destination computer.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[WillShowUI](microsoft-windows-setup-diskconfiguration-willshowui.md)</p></td>
-<td><p>Specifies whether to show the disk configuration UI in Windows Setup.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Setting                 | Description                                                                           |
+|:------------------------|:--------------------------------------------------------------------------------------|
+| [DisableEncryptedDiskProvisioning](microsoft-windows-setup-diskconfiguration-disableencrypteddiskprovisioning.md) | Specifies whether Windows activates encryption on blank drives that are capable of hardware-based encryption. |
+| [Disk](microsoft-windows-setup-diskconfiguration-disk.md) | Specifies the disk configurations to apply to a disk on the destination computer. |
+| [WillShowUI](microsoft-windows-setup-diskconfiguration-willshowui.md) | Specifies whether to show the disk configuration UI in Windows Setup. |
 
 ## Valid Configuration Passes
-
 
 windowsPE
 
 ## Parent Hierarchy
 
-
-[microsoft-windows-setup-](microsoft-windows-setup.md) | **DiskConfiguration**
+[Microsoft-Windows-Setup](microsoft-windows-setup.md) | **DiskConfiguration**
 
 ## Applies To
 
-
-For a list of the Windows editions and architectures that this component supports, see [microsoft-windows-setup-](microsoft-windows-setup.md).
+For a list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-Setup](microsoft-windows-setup.md).
 
 ## XML Examples
-
 
 ### Manual Configuration
 
 The following XML output for the `DiskConfiguration` setting shows how to specify that you will configure disk partitions manually through the disk configuration UI in Windows Setup:
 
-```
+```XML
 <DiskConfiguration>
    <WillShowUI>Always</WillShowUI>
 </DiskConfiguration>
@@ -81,16 +57,4 @@ For full XML examples and recommended partition configurations, see [How to Conf
 
 ## Related topics
 
-
-[microsoft-windows-setup-](microsoft-windows-setup.md)
-
- 
-
- 
-
-
-
-
-
-
-
+[Microsoft-Windows-Setup](microsoft-windows-setup.md)

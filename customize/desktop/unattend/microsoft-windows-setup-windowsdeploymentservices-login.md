@@ -13,55 +13,34 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # Login
-
 
 `Login` specifies the credentials used for Windows Deployment Services login and in what circumstances the user interface (UI) is displayed for login.
 
 ## Child Elements
 
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>[Credentials](microsoft-windows-setup-windowsdeploymentservices-login-credentials.md)</p></td>
-<td><p>Specifies the credentials for Windows Deployment Services login.</p></td>
-</tr>
-<tr class="even">
-<td><p>[WillShowUI](microsoft-windows-setup-windowsdeploymentservices-login-willshowui.md)</p></td>
-<td><p>Specifies in what circumstances the UI is displayed for Windows Deployment Services login.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Setting                 | Description                                                                           |
+|:------------------------|:--------------------------------------------------------------------------------------|
+| [Credentials](microsoft-windows-setup-windowsdeploymentservices-login-credentials.md) | Specifies the credentials for Windows Deployment Services login. |
+| [WillShowUI](microsoft-windows-setup-windowsdeploymentservices-login-willshowui.md) | Specifies in what circumstances the UI is displayed for Windows Deployment Services login. |
 
 ## Valid Passes
-
 
 windowsPE
 
 ## Parent Hierarchy
 
-
-[microsoft-windows-setup-](microsoft-windows-setup.md) | [WindowsDeploymentServices](microsoft-windows-setup-windowsdeploymentservices.md) | **Login**
+[Microsoft-Windows-Setup](microsoft-windows-setup.md) | [WindowsDeploymentServices](microsoft-windows-setup-windowsdeploymentservices.md) | **Login**
 
 ## Applies To
 
-
-For a list of the supported Windows editions and architectures that this component supports, see [microsoft-windows-setup-](microsoft-windows-setup.md).
+For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-Setup](microsoft-windows-setup.md).
 
 ## XML Example
 
-
 The following XML output shows a complete Windows Deployment Services deployment.
 
-```
+```XML
 <WindowsDeploymentServices>
    <Login>
       <WillShowUI>OnError</WillShowUI>
@@ -105,16 +84,4 @@ The following XML output shows a complete Windows Deployment Services deployment
 
 ## Related topics
 
-
 [WindowsDeploymentServices](microsoft-windows-setup-windowsdeploymentservices.md)
-
- 
-
- 
-
-
-
-
-
-
-

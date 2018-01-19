@@ -13,9 +13,7 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # Regions
-
 
 `Regions` specifies a set of regions where Windows displays a customized set of apps that appear on the Start and Lock screens.
 
@@ -29,24 +27,11 @@ If the selected region doesn’t match any of these regions, then Windows displa
 
 ## Child Elements
 
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>[Region](microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverride-regions-region.md)</p></td>
-<td><p>Specifies a region that, when selected, shows a set of region-specific apps that appear on the Start and Lock screens.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Setting                 | Description                                                                           |
+|:------------------------|:--------------------------------------------------------------------------------------|
+| [Region](microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverride-regions-region.md) | Specifies a region that, when selected, shows a set of region-specific apps that appear on the Start and Lock screens. |
 
 ## Valid Configuration Passes
-
 
 specialize
 
@@ -56,20 +41,17 @@ oobeSystem
 
 ## Parent Hierarchy
 
-
 [Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [StartTiles](microsoft-windows-shell-setup-starttiles.md) | [RegionalOverrides](microsoft-windows-shell-setup-starttiles-regionaloverrides.md) | [RegionalOverride](microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverride.md)| **Regions**
 
 ## Applies To
-
 
 For a list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md).
 
 ## XML Example
 
-
 The following XML output shows how to configure a set of Apps that apply to only in France and Italy.
 
-```
+```XML
 <RegionalOverrides>
   <RegionalOverride>
     <Order>1</Order>
@@ -90,7 +72,6 @@ The following XML output shows how to configure a set of Apps that apply to only
 
 ## Related topics
 
-
 [How to Customize the Start Screen](http://go.microsoft.com/fwlink/?LinkId=254187)
 
 [RegionalOverride](microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverride.md)
@@ -98,14 +79,3 @@ The following XML output shows how to configure a set of Apps that apply to only
 [StartTiles](microsoft-windows-shell-setup-starttiles.md)
 
 [UserLocale](microsoft-windows-international-core-userlocale.md)
-
- 
-
- 
-
-
-
-
-
-
-

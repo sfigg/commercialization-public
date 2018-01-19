@@ -13,44 +13,20 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # CustomPowerApplication1
-
 
 `CustomPowerApplication1` specifies the first Battery Meter customized context menu item.
 
 ## Child Elements
 
+| Setting                 | Description                                                                           |
+|:------------------------|:--------------------------------------------------------------------------------------|
+| [Application](microsoft-windows-stobject-custompowerapplication1-application.md) | Specifies the name and the path of the application to run. |
+| [IconID](microsoft-windows-stobject-custompowerapplication1-iconid.md) | Specifies the optional icon resource ID. |
+| [ItemName](microsoft-windows-stobject-custompowerapplication1-itemname.md) | Specifies the display text of the application. |
+| [Parameters](microsoft-windows-stobject-custompowerapplication1-parameters.md) | Specifies the optional parameters to use when running the application. |
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>[Application](microsoft-windows-stobject-custompowerapplication1-application.md)</p></td>
-<td><p>Specifies the name and the path of the application to run.</p></td>
-</tr>
-<tr class="even">
-<td><p>[IconID](microsoft-windows-stobject-custompowerapplication1-iconid.md)</p></td>
-<td><p>Specifies the optional icon resource ID.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[ItemName](microsoft-windows-stobject-custompowerapplication1-itemname.md)</p></td>
-<td><p>Specifies the display text of the application.</p></td>
-</tr>
-<tr class="even">
-<td><p>[Parameters](microsoft-windows-stobject-custompowerapplication1-parameters.md)</p></td>
-<td><p>Specifies the optional parameters to use when running the application.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
-
-## Valid Configuration Passes
-
+## Valid Passes
 
 generalize
 
@@ -58,20 +34,17 @@ specialize
 
 ## Parent Hierarchy
 
-
-[Microsoft-Windows-stobject](microsoft-windows-stobject.md) | **CustomPowerApplication1**
+[Microsoft-Windows-STObject](microsoft-windows-stobject.md) | **CustomPowerApplication1**
 
 ## Applies To
 
-
-For the list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-stobject](microsoft-windows-stobject.md).
+For the list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-STObject](microsoft-windows-stobject.md).
 
 ## XML Example
 
-
 The following XML output shows how to configure `CustomPowerApplication1`.
 
-```
+```XML
 <CustomPowerApplication1>
    <Application>C:\Program Files\CustomPower\Application.exe</Application>
    <IconID>@%ProgramFiles%\Microsoft Shared\Resource.dll,-200</IconID>
@@ -82,16 +55,4 @@ The following XML output shows how to configure `CustomPowerApplication1`.
 
 ## Related topics
 
-
-[Microsoft-Windows-stobject](microsoft-windows-stobject.md)
-
- 
-
- 
-
-
-
-
-
-
-
+[Microsoft-Windows-STObject](microsoft-windows-stobject.md)

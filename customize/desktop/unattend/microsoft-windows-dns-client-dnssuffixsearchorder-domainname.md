@@ -13,62 +13,39 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # DomainName
-
 
 `DomainName` specifies the domain name for the search.
 
-**Note**  
-The child elements do not appear in the **Properties** pane of Windows System Image Manager (Windows SIM) until you add this element to the answer file.
-
- 
+> [!Note]
+> The child elements do not appear in the **Properties** pane of Windows System Image Manager (Windows SIM) until you add this element to the answer file.
 
 ## Child Elements
 
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>[Key](microsoft-windows-dns-client-dnssuffixsearchorder-domainname-key.md)</p></td>
-<td><p>Specifies a unique key for the <code>DomainName</code>.</p></td>
-</tr>
-<tr class="even">
-<td><p>[Value](microsoft-windows-dns-client-dnssuffixsearchorder-domainname-value.md)</p></td>
-<td><p>Specifies the value of the <code>DomainName</code>.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Setting                 | Description                                                                           |
+|:------------------------|:--------------------------------------------------------------------------------------|
+| [Key](microsoft-windows-dns-client-dnssuffixsearchorder-domainname-key.md) | Specifies a unique key for the <code>DomainName</code>. |
+| [Value](microsoft-windows-dns-client-dnssuffixsearchorder-domainname-value.md) | Specifies the value of the <code>DomainName</code>. |
 
 This string type does not support empty elements. Do not create an empty value for this setting.
 
 ## Parent Hierarchy
 
-
 [Microsoft-Windows-DNS-Client](microsoft-windows-dns-client.md) | [DNSSuffixSearchOrder](microsoft-windows-dns-client-dnssuffixsearchorder.md) | **DomainName**
 
 ## Valid Configuration Passes
-
 
 specialize
 
 ## Applies To
 
-
 For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-DNS-Client](microsoft-windows-dns-client.md).
 
 ## XML Example
 
-
 The following XML output shows a DNS domain configuration for Fabrikam.
 
-```
+```XML
    <DNSDomain>fabrikam.com</DNSDomain>
    <DNSSuffixSearchOrder>
       <DomainName wcm:action="add" wcm:keyValue="1">server1.fabrikam.com</DomainName>
@@ -101,16 +78,4 @@ The following XML output shows a DNS domain configuration for Fabrikam.
 
 ## Related topics
 
-
 [DNSSuffixSearchOrder](microsoft-windows-dns-client-dnssuffixsearchorder.md)
-
- 
-
- 
-
-
-
-
-
-
-

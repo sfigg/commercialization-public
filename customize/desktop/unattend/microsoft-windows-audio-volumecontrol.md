@@ -19,18 +19,9 @@ The **Microsoft-Windows-Audio-VolumeControl** component specifies settings for a
 
 ## In this section
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>[EnableVolumeControlWhileLocked](microsoft-windows-audio-volumecontrol-enablevolumecontrolwhilelocked.md)</p></td>
-<td><p>Specifies whether volume can be changed when the computer is locked.</p></td>
-</tr>
-</tbody>
-</table>
+| Setting                 | Description                                                                           |
+|:------------------------|:--------------------------------------------------------------------------------------|
+| [EnableVolumeControlWhileLocked](microsoft-windows-audio-volumecontrol-enablevolumecontrolwhilelocked.md) | Specifies whether volume can be changed when the computer is locked.  |
 
 ## Applies To
 

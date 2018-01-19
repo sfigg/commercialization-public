@@ -13,9 +13,7 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # PermittedManagers
-
 
 `PermittedManagers` specifies whether the computer accepts Simple Network Management Protocol (SNMP) requests from any host.
 
@@ -25,30 +23,11 @@ You can use this setting in core installations of Windows Server 2008, Windows 
 
 ## Child Elements
 
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Term</th>
-<th>Definition</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>[A1](microsoft-windows-snmp-agent-service-permittedmanagers-a1.md)</p></td>
-<td><p>Specifies a host from which the computer accepts SNMP requests.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Setting                 | Description                                                                           |
+|:------------------------|:--------------------------------------------------------------------------------------|
+| [A1](microsoft-windows-snmp-agent-service-permittedmanagers-a1.md) | Specifies a host from which the computer accepts SNMP requests. |
 
 ## Valid Passes
-
 
 generalize
 
@@ -56,20 +35,17 @@ specialize
 
 ## Parent Hierarchy
 
-
 [Microsoft-Windows-SNMP-Agent-Service](microsoft-windows-snmp-agent-service.md) | **PermittedManagers**
 
 ## Applies To
-
 
 For the list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-SNMP-Agent-Service](microsoft-windows-snmp-agent-service.md).
 
 ## XML Example
 
-
 The following XML output shows how to set SNMP.
 
-```
+```XML
 <PermittedManagers>
    <A1>networkhost</A1>
 </PermittedManagers>
@@ -96,16 +72,4 @@ The following XML output shows how to set SNMP.
 
 ## Related topics
 
-
 [Microsoft-Windows-SNMP-Agent-Service](microsoft-windows-snmp-agent-service.md)
-
- 
-
- 
-
-
-
-
-
-
-

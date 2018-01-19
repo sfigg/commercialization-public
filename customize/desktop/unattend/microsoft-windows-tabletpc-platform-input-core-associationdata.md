@@ -13,51 +13,33 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # AssociationData
-
 
 `AssociationData` contains one or more instances of [AssociationElement](microsoft-windows-tabletpc-platform-input-core-associationdata-associationelement.md). The AssociationElement specifies information to associate a Tablet PC monitor to the digitizer. Add a separate AssociationElement for each Tablet PC monitor that you want to associate to a digitizer.
 
 ## Child Elements
 
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>[AssociationElement](microsoft-windows-tabletpc-platform-input-core-associationdata-associationelement.md)</p></td>
-<td><p>Specifies information to associate a Tablet PC monitor to a digitizer.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Setting                 | Description                                                                           |
+|:------------------------|:--------------------------------------------------------------------------------------|
+| [AssociationElement](microsoft-windows-tabletpc-platform-input-core-associationdata-associationelement.md) | Specifies information to associate a Tablet PC monitor to a digitizer. |
 
 ## Parent Hierarchy
-
 
 [Microsoft-Windows-TabletPC-Platform-Input-Core](microsoft-windows-tabletpc-platform-input-core.md) | **AssociationData**
 
 ## Valid Configuration Passes
 
-
 offlineServicing
 
 ## Applies To
-
 
 For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-TabletPC-Platform-Input-Core](microsoft-windows-tabletpc-platform-input-core.md).
 
 ## XML Example
 
-
 The following XML output shows how to configure `AssociationData` to associate two Tablet PC monitors to two digitizers on the same system, using the key values: Monitor1, Monitor2, and Monitor3.
 
-```
+```XML
 <AssociationData>
    <AssociationElement wcm:action="add" wcm:keyValue="Monitor1">&quot;hid#VID_1B96&amp;PID_0008&amp;REV_2100&amp;mi_01&amp;col01&quot;=&quot;PCI\\VEN_8086&amp;DEV_4102&amp;SUBSYS_16B510CF|FUJ5812&quot;</AssociationElement>
    <AssociationElement wcm:action="add" wcm:keyValue="Monitor2">&quot;hid#VID_1B96&amp;PID_0008&amp;REV_2100&amp;mi_01&amp;col02&quot;=&quot;PCI\\VEN_8086&amp;DEV_4102&amp;SUBSYS_16B510CF|FUJ5812&quot;</AssociationElement>
@@ -68,16 +50,4 @@ The following XML output shows how to configure `AssociationData` to associate t
 
 ## Related topics
 
-
 [Microsoft-Windows-TabletPC-Platform-Input-Core](microsoft-windows-tabletpc-platform-input-core.md)
-
- 
-
- 
-
-
-
-
-
-
-
