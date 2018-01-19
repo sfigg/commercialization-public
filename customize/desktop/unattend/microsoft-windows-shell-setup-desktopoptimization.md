@@ -56,16 +56,4 @@ The following XML output specifies to go to the desktop on sign in and to show M
 
 ## Related topics
 
-
 [Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md)
-
- 
-
- 
-
-
-
-
-
-
-
