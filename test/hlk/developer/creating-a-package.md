@@ -24,7 +24,7 @@ The following code samples show how to:
 
 -   [Sign a package using a digital signature stored in a pfx file](#bkmk-cs-signpackage)
 
-**Windows PowerShell®**
+**Windows PowerShell**
 
 -   [Create a submission package from a project](#bkmk-ps-createsubmissionpackage)
 

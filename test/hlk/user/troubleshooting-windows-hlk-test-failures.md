@@ -281,7 +281,7 @@ If the Execution Logs are missing this failure is likely caused by the known iss
 
 ### <span id="sysx"></span><span id="SYSX"></span>**System crashed**
 
-When Windows® encounters a condition that compromises safe system operation, the system halts. This condition is commonly called a *bug check*, a *system crash*, a *kernel error*, a *Stop error*, or *BSOD*. A hardware device, its driver, or related software can cause this error.
+When Windows encounters a condition that compromises safe system operation, the system halts. This condition is commonly called a *bug check*, a *system crash*, a *kernel error*, a *Stop error*, or *BSOD*. A hardware device, its driver, or related software can cause this error.
 
 ### <span id="Bugcheck_summary_information"></span><span id="bugcheck_summary_information"></span><span id="BUGCHECK_SUMMARY_INFORMATION"></span>**Bugcheck summary information**
 
@@ -323,7 +323,7 @@ When Windows crashes, it writes an event to the Windows System Event Log. To sta
 
 In addition to the Bugcheck summary information dialog, you can debug a system crash by using the crash dump file and the Windows debugger. For information on how to analyze crash dump files see [Crash Dump Files](http://go.microsoft.com/fwlink/p/?linkid=294097) and [Analyzing a Kernel-Mode Dump File](http://go.microsoft.com/fwlink/p/?linkid=293842). For Windows debugging tools, see [Troubleshooting Windows HLK](troubleshooting-windows-hlk.md#addlres).
 
-You must determine whether the crash is caused by the driver that you are trying to certify or whether it is a Windows problem. You can identify this by using the Windows debugger **!analyze** extension. In the kernel debugger, use the **!analyze –v** command to review data on the failing component.
+You must determine whether the crash is caused by the driver that you are trying to certify or whether it is a Windows problem. You can identify this by using the Windows debugger **!analyze** extension. In the kernel debugger, use the **!analyze -v** command to review data on the failing component.
 
 For more information about how to use the **!analyze** extension, see [Using the !analyze Extension](http://go.microsoft.com/fwlink/p/?linkid=293845). For advanced troubleshooting assistance, see [Debugging Techniques](http://go.microsoft.com/fwlink/p/?linkid=293846). For more information about bug checks, see [Interpreting a Bug Check Code](http://go.microsoft.com/fwlink/p/?linkid=290756). For a list of bug check error codes, see [Bug Check Code Reference](http://go.microsoft.com/fwlink/p/?linkid=290758).
 
@@ -396,7 +396,7 @@ See [Windows HLK Support](windows-hlk-support.md) for instructions on how to rep
 
 -   The failure is caused by a system crash that you cannot resolve.
 
--   The failure is caused by a Windows® problem.
+-   The failure is caused by a Windows problem.
 
 ### <span id="collect"></span><span id="COLLECT"></span>**How to get the test name**
 

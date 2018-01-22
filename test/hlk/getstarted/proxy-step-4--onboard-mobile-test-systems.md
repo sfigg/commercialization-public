@@ -140,7 +140,7 @@ After you install the Windows Hardware Lab Kit (Windows HLK) on the Controller s
         WTTProxy.exe -console
         ```
 
-5.  \[For Health image only\] – After KitsDeviceDetector is complete, run the following commands from %ProgramFiles(x86)%\\WTTMobile\\Tools\\
+5.  \[For Health image only\] - After KitsDeviceDetector is complete, run the following commands from %ProgramFiles(x86)%\\WTTMobile\\Tools\\
 
     ```syntax
     AriesUtil.exe ResetDevice /Aries:<aries-name> [/Autoskip:true]

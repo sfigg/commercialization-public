@@ -67,22 +67,10 @@ The following table provides scenarios for each combination of [Mode](microsoft-
 
 ## Child Elements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>[ForceShutdownNow](microsoft-windows-deployment-generalize-forceshutdownnow.md)</p></td>
-<td><p>Specifies whether the computer shuts down immediately after the <code>Mode</code> setting is applied.</p></td>
-</tr>
-<tr class="even">
-<td><p>[Mode](microsoft-windows-deployment-generalize-mode.md)</p></td>
-<td><p>Specifies which configuration pass the computer start after the <strong>generalize</strong> configuration pass is complete. The options include: <strong>Audit</strong> or <strong>OOBE</strong>.</p></td>
-</tr>
-</tbody>
-</table>
+| Setting                 | Description                                                                           |
+|:------------------------|:--------------------------------------------------------------------------------------|
+| [ForceShutdownNow](microsoft-windows-deployment-generalize-forceshutdownnow.md) | Specifies whether the computer shuts down immediately after the <code>Mode</code> setting is applied. |
+| [Mode](microsoft-windows-deployment-generalize-mode.md) | Specifies which configuration pass the computer start after the <strong>generalize</strong> configuration pass is complete. The options include: <strong>Audit</strong> or <strong>OOBE</strong>. |
 
 ## Valid Configuration Passes
 

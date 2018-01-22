@@ -44,7 +44,7 @@ You can install a standalone Windows HLK Studio if you want to view .hlkx certif
 ## <span id="Limitations"></span><span id="limitations"></span><span id="LIMITATIONS"></span>Limitations
 
 
-Installing a standalone HLK Studio also installs HLK Manager to your system. However, you won’t be able to access or use any of the features of HLK Manager.
+Installing a standalone HLK Studio also installs HLK Manager to your system. However, you won't be able to access or use any of the features of HLK Manager.
 
 Also, you should avoid installing a standalone HLK Studio on the same machine where a remote Studio (Studio installed from a Controller) has been installed. There are known limitations to this scenario, which may leave your system in an inoperable state.
 

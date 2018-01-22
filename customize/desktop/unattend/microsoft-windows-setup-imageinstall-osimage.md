@@ -13,64 +13,36 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # OSImage
-
 
 `OSImage` specifies the path and the destination of a Windows image (.wim) file that contains the image to install.
 
 ## Child Elements
 
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-
-<tr class="even">
-<td><p>[InstallFrom](microsoft-windows-setup-imageinstall-osimage-installfrom.md)</p></td>
-<td><p>Specifies the path of the .wim file.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[InstallTo](microsoft-windows-setup-imageinstall-osimage-installto.md)</p></td>
-<td><p>Specifies the disk and the partition to install the image to.</p></td>
-</tr>
-<tr class="even">
-<td><p>[InstallToAvailablePartition](microsoft-windows-setup-imageinstall-osimage-installtoavailablepartition.md)</p></td>
-<td><p>Specifies whether to install to the first available bootable partition on a computer that does not already have an installation of Windows.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[WillShowUI](microsoft-windows-setup-imageinstall-osimage-willshowui.md)</p></td>
-<td><p>Specifies in what circumstances to show the user interface (UI).</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Setting                 | Description                                                                           |
+|:------------------------|:--------------------------------------------------------------------------------------|
+| [InstallFrom](microsoft-windows-setup-imageinstall-osimage-installfrom.md) | Specifies the path of the .wim file. |
+| [InstallTo](microsoft-windows-setup-imageinstall-osimage-installto.md) | Specifies the disk and the partition to install the image to. |
+| [InstallToAvailablePartition](microsoft-windows-setup-imageinstall-osimage-installtoavailablepartition.md) | Specifies whether to install to the first available bootable partition on a computer that does not already have an installation of Windows. |
+| [WillShowUI](microsoft-windows-setup-imageinstall-osimage-willshowui.md) | Specifies in what circumstances to show the user interface (UI). |
 
 ## Valid Configuration Passes
-
 
 windowsPE
 
 ## Parent Hierarchy
 
-
-[microsoft-windows-setup-](microsoft-windows-setup.md) | [ImageInstall](microsoft-windows-setup-imageinstall.md) | **OSImage**
+[Microsoft-Windows-Setup](microsoft-windows-setup.md) | [ImageInstall](microsoft-windows-setup-imageinstall.md) | **OSImage**
 
 ## Applies To
 
-
-For a list of the supported Windows editions and architectures that this component supports, see [microsoft-windows-setup-](microsoft-windows-setup.md).
+For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-Setup](microsoft-windows-setup.md).
 
 ## XML Example
 
-
 The following XML output shows how to set the `ImageInstall` setting to install both an operating system image and a data image.
 
-```
+```XML
 <ImageInstall>
     <OSImage>
         <InstallFrom>
@@ -116,16 +88,4 @@ The following XML output shows how to set the `ImageInstall` setting to install 
 
 ## Related topics
 
-
 [ImageInstall](microsoft-windows-setup-imageinstall.md)
-
- 
-
- 
-
-
-
-
-
-
-

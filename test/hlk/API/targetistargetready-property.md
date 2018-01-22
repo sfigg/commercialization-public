@@ -16,7 +16,7 @@ ms.technology: windows-oem
 # Target.IsTargetReady Property
 
 
-This property represents the value indicating whether the test target is currently ready to run tests (specifically, the test computer is in the “ready” state).
+This property represents the value indicating whether the test target is currently ready to run tests (specifically, the test computer is in the "ready" state).
 
 **Namespace:** Microsoft.Windows.Kits.Hardware.ObjectModel
 

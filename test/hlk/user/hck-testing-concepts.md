@@ -112,9 +112,9 @@ The complexity of a device determines the complexity of a test. It can be as sim
 
 For partners interested in automating their test environment, Windows HLK provides scripting and application programming interface (API) support.
 
--   [HLK Automation Tool](hlk-automation-tool.md) – a scripting solution based on Windows PowerShell® that enables you to automate a test pass.
+-   [HLK Automation Tool](hlk-automation-tool.md) - a scripting solution based on Windows PowerShell that enables you to automate a test pass.
 
--   [HLK Developer Guide](..\developer\hlk-developer-guide.md) – a collection of Windows HLK API that enables you to automate any part of the certification test process. The API exposes all functionality of Windows HLK Studio, so you can use both Windows HLK Studio and automation in your certification test workflow.
+-   [HLK Developer Guide](..\developer\hlk-developer-guide.md) - a collection of Windows HLK API that enables you to automate any part of the certification test process. The API exposes all functionality of Windows HLK Studio, so you can use both Windows HLK Studio and automation in your certification test workflow.
 
 ## <span id="Test_taxonomy_"></span><span id="test_taxonomy_"></span><span id="TEST_TAXONOMY_"></span>Test taxonomy
 
@@ -145,7 +145,7 @@ The Windows HLK introduces a new set of test types.
 </tr>
 <tr class="odd">
 <td><p>Scenario tests</p></td>
-<td><p>These tests assess the behavior of a device or system, focusing on validating end-to-end experiences. These experiences can serve very specific purposes – such as lab readiness testing for a specific device stack, or may be broad end-user experiences that touches various hardware components in a system.</p></td>
+<td><p>These tests assess the behavior of a device or system, focusing on validating end-to-end experiences. These experiences can serve very specific purposes - such as lab readiness testing for a specific device stack, or may be broad end-user experiences that touches various hardware components in a system.</p></td>
 </tr>
 <tr class="even">
 <td><p>Benchmark tests</p></td>

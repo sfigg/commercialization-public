@@ -19,18 +19,9 @@ The `Microsoft-Windows-Audio-AudioCore` component specifies settings for audio a
 
 ## In This Section
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>[EnableCaptureMonitor](microsoft-windows-audio-audiocore-enablecapturemonitor.md)</p></td>
-<td><p>Specifies whether Windows can play back audio connected to an <strong>Audio In</strong> port.</p></td>
-</tr>
-</tbody>
-</table>
+| Setting                 | Description                                                                           |
+|:------------------------|:--------------------------------------------------------------------------------------|
+| [EnableCaptureMonitor](microsoft-windows-audio-audiocore-enablecapturemonitor.md) | Specifies whether Windows can play back audio connected to an <strong>Audio In</strong> port. |
 
 ## Applies To
 

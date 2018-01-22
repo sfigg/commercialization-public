@@ -13,36 +13,18 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # DomainAccountList
-
 
 `DomainAccountList` is a list item type that specifies the domains and the domain accounts to be created and added to local security groups on the computer during installation.
 
 ## Child Elements
 
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>[Domain](microsoft-windows-shell-setup-useraccounts-domainaccounts-domainaccountlist-domain.md)</p></td>
-<td><p>Specifies the name of the domain for the <code>DomainAccountList</code>.</p></td>
-</tr>
-<tr class="even">
-<td><p>[DomainAccount](microsoft-windows-shell-setup-useraccounts-domainaccounts-domainaccountlist-domainaccount.md)</p></td>
-<td><p>Specifies the details of domain accounts to be added to local security groups on the computer during installation.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Setting                 | Description                                                                           |
+|:------------------------|:--------------------------------------------------------------------------------------|
+| [Domain](microsoft-windows-shell-setup-useraccounts-domainaccounts-domainaccountlist-domain.md) | Specifies the name of the domain for the <code>DomainAccountList</code>. |
+| [DomainAccount](microsoft-windows-shell-setup-useraccounts-domainaccounts-domainaccountlist-domainaccount.md) | Specifies the details of domain accounts to be added to local security groups on the computer during installation. |
 
 ## Valid Passes
-
 
 auditSystem
 
@@ -50,20 +32,17 @@ oobeSystem
 
 ## Parent Hierarchy
 
-
 [Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [UserAccounts](microsoft-windows-shell-setup-useraccounts.md) | [DomainAccounts](microsoft-windows-shell-setup-useraccounts-domainaccounts.md) | **DomainAccountList**
 
 ## Applies To
-
 
 For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md).
 
 ## XML Example
 
-
 The following XML output shows how to set [UserAccounts](microsoft-windows-shell-setup-useraccounts.md).
 
-```
+```XML
 <UserAccounts>
    <DomainAccounts>
       <DomainAccountList wcm:action="add">
@@ -90,16 +69,4 @@ The following XML output shows how to set [UserAccounts](microsoft-windows-shell
 
 ## Related topics
 
-
 [DomainAccounts](microsoft-windows-shell-setup-useraccounts-domainaccounts.md)
-
- 
-
- 
-
-
-
-
-
-
-

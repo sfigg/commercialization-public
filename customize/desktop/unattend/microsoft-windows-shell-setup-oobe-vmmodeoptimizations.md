@@ -13,56 +13,27 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # VMModeOptimizations
-
 
 `VMModeOptimizations` specifies settings you can use to customize the user experience when in VM mode.
 
 ## Child elements
 
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Topic</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>[SkipAdministratorProfileRemoval](microsoft-windows-shell-setup-oobe-vmmodeoptimizations-skipadministratorprofileremoval.md)</p></td>
-<td><p>Use <code>SkipAdministratorProfileRemoval</code> to skip removal of the administrator profile when in VM mode.</p></td>
-</tr>
-<tr class="even">
-<td><p>[SkipNotifyUILanguageChange](microsoft-windows-shell-setup-oobe-vmmodeoptimizations-skipnotifyuilanguagechange.md)</p></td>
-<td><p>Use <code>SkipNotifyUILanguageChange</code> in VM mode if the language will not change during setup.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[SkipWinREInitialization](microsoft-windows-shell-setup-oobe-vmmodeoptimizations-skipwinreinitialization.md)</p></td>
-<td><p>Use <code>SkipWinREInitialization</code> in VM mode, particularly in a container scenario where recovery is not important, to skip initialization of the Windows Recovery Environment (Windows RE) image.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Setting                 | Description                                                                           |
+|:------------------------|:--------------------------------------------------------------------------------------|
+| [SkipAdministratorProfileRemoval](microsoft-windows-shell-setup-oobe-vmmodeoptimizations-skipadministratorprofileremoval.md) | Use <code>SkipAdministratorProfileRemoval</code> to skip removal of the administrator profile when in VM mode. |
+| [SkipNotifyUILanguageChange](microsoft-windows-shell-setup-oobe-vmmodeoptimizations-skipnotifyuilanguagechange.md) | Use <code>SkipNotifyUILanguageChange</code> in VM mode if the language will not change during setup. |
+| [SkipWinREInitialization](microsoft-windows-shell-setup-oobe-vmmodeoptimizations-skipwinreinitialization.md) | Use <code>SkipWinREInitialization</code> in VM mode, particularly in a container scenario where recovery is not important, to skip initialization of the Windows Recovery Environment (Windows RE) image. |
 
 ## Valid configuration passes
-
 
 oobeSystem
 
 ## Parent hierarchy
 
-
 [Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [OOBE](microsoft-windows-shell-setup-oobe.md) | **VMModeOptimizations**
 
 ## Applies to
-
 
 Windows 10 for desktop editions (Home, Pro, Enterprise, and Education)
 
@@ -70,29 +41,17 @@ For a list of the Windows editions and architectures that this component support
 
 ## XML example
 
-
 The following example shows how to set the VM mode optimization settings in the OOBE node of your Unattend.xml file.
 
-```
+```XML
             <OOBE>
                 <VMModeOptimizations>
                     <SkipAdministratorProfileRemoval>true</SkipAdministratorProfileRemoval>
                     <SkipNotifyUILanguageChange>true</SkipNotifyUILanguageChange>
-                    <SkipWinREInitialization>true</SkipWinREInitialization>  
+                    <SkipWinREInitialization>true</SkipWinREInitialization>
                 </VMModeOptimizations>
             </OOBE>
 ```
 
-**Note**  You must specify /mode:vm during sysprep to fully enable this setting.
-
- 
-
- 
-
- 
-
-
-
-
-
-
+> [!Note]
+> You must specify `/mode:vm` during sysprep to fully enable this setting.

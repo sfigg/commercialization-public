@@ -13,16 +13,12 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # HideEULAPage
-
 
 `HideEULAPage` specifies whether to hide the Microsoft Software License Terms page of Windows Welcome.
 
-**Note**  
-OEMs and System Builders can only use this setting for testing prior to shipment.
-
- 
+> [!Note]
+> OEMs and System Builders can only use this setting for testing prior to shipment.
 
 ## Values
 

@@ -13,49 +13,23 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # Display
-
 
 `Display` specifies the display settings for the display device.
 
 ## Child Elements
 
+| Setting                 | Description                                                                           |
+|:------------------------|:--------------------------------------------------------------------------------------|
+| [ColorDepth](microsoft-windows-shell-setup-display-colordepth.md) | Specifies a valid color depth for the display device in bits per pixel. |
+| [HorizontalResolution](microsoft-windows-shell-setup-display-horizontalresolution.md) | Specifies a valid horizontal resolution for the display device. |
+| [RefreshRate](microsoft-windows-shell-setup-display-refreshrate.md) | Specifies a valid refresh rate for the display device. |
+| [VerticalResolution](microsoft-windows-shell-setup-display-verticalresolution.md) | Specifies a valid vertical resolution for the display device. |
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>[ColorDepth](microsoft-windows-shell-setup-display-colordepth.md)</p></td>
-<td><p>Specifies a valid color depth for the display device in bits per pixel.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[HorizontalResolution](microsoft-windows-shell-setup-display-horizontalresolution.md)</p></td>
-<td><p>Specifies a valid horizontal resolution for the display device.</p></td>
-</tr>
-<tr class="even">
-<td><p>[RefreshRate](microsoft-windows-shell-setup-display-refreshrate.md)</p></td>
-<td><p>Specifies a valid refresh rate for the display device.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[VerticalResolution](microsoft-windows-shell-setup-display-verticalresolution.md)</p></td>
-<td><p>Specifies a valid vertical resolution for the display device.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
-
-**Note**  
-If the specified settings cannot be set on the display device, Windows attempts to match the requested mode as closely as possible.
-
- 
+> [!Note]
+> If the specified settings cannot be set on the display device, Windows attempts to match the requested mode as closely as possible.
 
 ## Valid Passes
-
 
 auditSystem
 
@@ -67,20 +41,17 @@ specialize
 
 ## Parent Hierarchy
 
-
 [Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | **Display**
 
 ## Applies To
-
 
 For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md).
 
 ## XML Example
 
-
 The following XML output sets the display resolution to 1024x768, with 32-bit color depth, and a refresh rate of 72 hertz.
 
-```
+```XML
 <Display>
    <ColorDepth>32</ColorDepth>
    <HorizontalResolution>1024</HorizontalResolution>
@@ -91,7 +62,7 @@ The following XML output sets the display resolution to 1024x768, with 32-bit co
 
 The following XML output sets the display resolution to 1024x768, with 32-bit color depth, a refresh rate of 72 hertz, and displays text and graphics items at a medium size.
 
-```
+```XML
 <Display>
    <ColorDepth>32</ColorDepth>
    <DPI>120</DPI>
@@ -103,16 +74,4 @@ The following XML output sets the display resolution to 1024x768, with 32-bit co
 
 ## Related topics
 
-
 [Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md)
-
- 
-
- 
-
-
-
-
-
-
-

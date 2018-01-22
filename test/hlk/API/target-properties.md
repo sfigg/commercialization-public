@@ -39,7 +39,7 @@ ms.technology: windows-oem
 </tr>
 <tr class="even">
 <td><p><strong>IsTargetReady</strong></p></td>
-<td><p>This property represents the value indicating whether the test target is currently ready to run tests (specifically, the test computer is in the “ready” state).</p></td>
+<td><p>This property represents the value indicating whether the test target is currently ready to run tests (specifically, the test computer is in the "ready" state).</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Key</strong></p></td>

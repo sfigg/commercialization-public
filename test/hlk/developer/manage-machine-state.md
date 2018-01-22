@@ -136,7 +136,7 @@ namespace Microsoft.Windows.Kits.Samples
 }
 ```
 
-## <span id="Windows_PowerShell_"></span><span id="windows_powershell_"></span><span id="WINDOWS_POWERSHELL_"></span>Windows PowerShell®
+## <span id="Windows_PowerShell_"></span><span id="windows_powershell_"></span><span id="WINDOWS_POWERSHELL_"></span>Windows PowerShell
 
 
 ``` syntax

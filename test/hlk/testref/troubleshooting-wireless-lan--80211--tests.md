@@ -183,9 +183,9 @@ Verify that the message center user interface is closed. If the NDISTest user in
 ## <span id="i_want_to_open_a_bug._what_should_i_include_in_the_bug_"></span><span id="I_WANT_TO_OPEN_A_BUG._WHAT_SHOULD_I_INCLUDE_IN_THE_BUG_"></span>I want to open a bug. What should I include in the bug:
 
 
--   Create a .hlkx package containing the failed tests – see the “Creating a Package” section and attach it to the bug.
+-   Create a .hlkx package containing the failed tests - see the "Creating a Package" section and attach it to the bug.
 
--   Failing Logs –Please gather the ndistest logs from the test run and include them with the package in the bug.  The logs can be found by doing the following:
+-   Failing Logs -Please gather the ndistest logs from the test run and include them with the package in the bug.  The logs can be found by doing the following:
 
 1.  Open the HLK Manager
 
@@ -215,11 +215,11 @@ Below is a chart with common problems and solutions.
 <td><p><strong>Solution</strong></p></td>
 </tr>
 <tr class="even">
-<td><p>The VAN UI doesn’t show any networks</p></td>
+<td><p>The VAN UI doesn't show any networks</p></td>
 <td><p>1</p></td>
 </tr>
 <tr class="odd">
-<td><p>When I connect my WLAN device to a DHCP enabled network I don’t get an IP.</p></td>
+<td><p>When I connect my WLAN device to a DHCP enabled network I don't get an IP.</p></td>
 <td><p>2</p></td>
 </tr>
 <tr class="even">
@@ -231,7 +231,7 @@ Below is a chart with common problems and solutions.
 <td><p>1,2,3</p></td>
 </tr>
 <tr class="even">
-<td><p>NDISTest isn’t auto finding my test adapter when running through the HLK</p></td>
+<td><p>NDISTest isn't auto finding my test adapter when running through the HLK</p></td>
 <td><p>3</p></td>
 </tr>
 <tr class="odd">
@@ -243,7 +243,7 @@ Below is a chart with common problems and solutions.
 <td><p>When moving to a new controller you should also rebuild your clients. In the event that is not feasible you will need to remove <strong>ndprot630.sys</strong> from all three machines and athr.sys and softap.sys from the AP machine. All these files are in the c:\windows\system32\drivers directory. <strong>Ndprot630.sys</strong> will be automatically re-loaded when NDISTest is run, but not overwritten. <strong>ather.sys</strong> and <strong>Sofap.sys</strong> will need to be copied over from the new controller.</p></td>
 </tr>
 <tr class="odd">
-<td><p>My physical AP's don’t seem to be working like before</p></td>
+<td><p>My physical AP's don't seem to be working like before</p></td>
 <td><p>You may have to reset/reboot your physical ap. If you factory reset it make sure you set the channel and radio per the setup instructions.</p></td>
 </tr>
 <tr class="even">

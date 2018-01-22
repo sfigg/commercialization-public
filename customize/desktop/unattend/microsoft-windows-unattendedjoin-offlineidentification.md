@@ -13,37 +13,21 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # OfflineIdentification
-
 
 `OfflineIdentification` specifies the account information used to join a domain during Windows Setup.
 
 ## Child Elements
 
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>[Provisioning](microsoft-windows-unattendedjoin-offlineidentification-provisioning.md)</p></td>
-<td><p>Specifies the account information used to join a domain during Windows Setup.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Setting                 | Description                                                                           |
+|:------------------------|:--------------------------------------------------------------------------------------|
+| [Provisioning](microsoft-windows-unattendedjoin-offlineidentification-provisioning.md) | Specifies the account information used to join a domain during Windows Setup. |
 
 ## Valid Configuration Passes
-
 
 offlineServicing
 
 ## Parent Hierarchy
-
 
 [Microsoft-Windows-UnattendedJoin](microsoft-windows-unattendedjoin.md) | **OfflineIdentification**
 
@@ -53,10 +37,9 @@ For a list of the supported Windows editions and architectures that this compone
 
 ## XML Example
 
-
 The following XML output shows how to set the identification settings.
 
-```
+```XML
 <OfflineIdentification>
   <Provisioning>
     <AccountData>BASE64-ENCODED-BLOB</AccountData>
@@ -66,16 +49,4 @@ The following XML output shows how to set the identification settings.
 
 ## Related topics
 
-
 [Microsoft-Windows-UnattendedJoin](microsoft-windows-unattendedjoin.md)
-
- 
-
- 
-
-
-
-
-
-
-

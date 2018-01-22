@@ -13,49 +13,30 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # SearchScopes
-
 
 `SearchScopes` specifies Internet search providers.
 
 During unattended installation, **SearchScopes** adds search providers to the default list of search providers, but does not overwrite user-chosen providers.
 
-**Note**  
-If the user performs an upgrade to the operating system, the existing search providers from the previous operating system installation are maintained. The search providers that the unattended-installation answer file specifies are applied only when the user clicks **Restore Defaults**.
-
+> [!Note]
+> If the user performs an upgrade to the operating system, the existing search providers from the previous operating system installation are maintained. The search providers that the unattended-installation answer file specifies are applied only when the user clicks **Restore Defaults**.
  
-
 ## Child Elements
 
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>[Scope](microsoft-windows-ie-internetexplorer-searchscopes-scope.md)</p></td>
-<td><p>Specifies a search provider.</p></td>
-</tr>
-</tbody>
-</table>
-
+| Setting                 | Description                                                                           |
+|:------------------------|:--------------------------------------------------------------------------------------|
+| [Scope](microsoft-windows-ie-internetexplorer-searchscopes-scope.md) | Specifies a search provider. |
  
-
 ## Valid Configuration Passes
-
 
 specialize
 
 ## Parent Hierarchy
 
-
 [Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md) | **SearchScopes**
 
 ## Applies To
-
 
 For a list of which Search Scope settings are available in each version of Internet Explorer, see [Scope](microsoft-windows-ie-internetexplorer-searchscopes-scope.md).
 
@@ -63,10 +44,9 @@ For a list of the Windows editions and architectures that this component support
 
 ## XML Example
 
-
 The following example shows how to set search providers.
 
-```
+```XML
 <SearchScopes>
    <Scope wcm:action="add">
       <ScopeDefault>true</ScopeDefault>
@@ -84,16 +64,4 @@ The following example shows how to set search providers.
 
 ## Related topics
 
-
 [Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md)
-
- 
-
- 
-
-
-
-
-
-
-

@@ -13,11 +13,9 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # Reseal
 
-
-`Reseal` indicates whether the computer runs in audit mode or Windows Out-of-Box Experience (OOBE) when the computer is next started. For more information about modes, see [Configuration Passes](http://go.microsoft.com/fwlink/?LinkId=268344).
+`Reseal` indicates whether the computer runs in audit mode or Windows Out-of-Box Experience (OOBE) when the computer is next started. For more information about modes, see [Configuration Passes](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/windows-setup-configuration-passes).
 
 Prior to Windows 10, `Reseal` was a special-case setting which caused all other settings in the same configuration pass to be skipped when specified in the auditSystem or oobeSystem configuration passes. In Windows 10, Reseal is always processed after all other settings in the same configuration pass.
 
@@ -152,32 +150,14 @@ The following table provides scenarios for each combination of configuration pas
 </tbody>
 </table>
 
- 
-
 ## Child Elements
 
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>[ForceShutdownNow](microsoft-windows-deployment-reseal-forceshutdownnow.md)</p></td>
-<td><p>Specifies whether the computer shuts down immediately after the <code>Mode</code> setting is applied.</p></td>
-</tr>
-<tr class="even">
-<td><p>[Mode](microsoft-windows-deployment-reseal-mode.md)</p></td>
-<td><p>Specifies whether the computer starts in audit mode or OOBE.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Setting                 | Description                                                                           |
+|:------------------------|:--------------------------------------------------------------------------------------|
+| [ForceShutdownNow](microsoft-windows-deployment-reseal-forceshutdownnow.md) | Specifies whether the computer shuts down immediately after the <code>Mode</code> setting is applied. |
+| [Mode](microsoft-windows-deployment-reseal-mode.md) | Specifies whether the computer starts in audit mode or OOBE. |
 
 ## Valid Configuration Passes
-
 
 auditSystem
 
@@ -187,20 +167,17 @@ oobeSystem
 
 ## Parent Hierarchy
 
-
 [Microsoft-Windows-Deployment](microsoft-windows-deployment.md) | **Reseal**
 
 ## Applies To
-
 
 For a list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-Deployment](microsoft-windows-deployment.md).
 
 ## XML Example
 
-
 The following XML output shows a deployment with no asynchronous or synchronous commands.
 
-```
+```XML
 <AuditComputerName>
    <MustReboot>true</MustReboot>
    <Name>MyComputer</Name>
@@ -216,16 +193,4 @@ The following XML output shows a deployment with no asynchronous or synchronous 
 
 ## Related topics
 
-
 [Microsoft-Windows-Deployment](microsoft-windows-deployment.md)
-
- 
-
- 
-
-
-
-
-
-
-

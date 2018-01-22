@@ -57,7 +57,7 @@ This class contains the enumeration values that describe the connection type or 
 <tbody>
 <tr class="odd">
 <td><p>Database</p></td>
-<td><p>This enum represents the connection type use to connect to the controller’s database.</p></td>
+<td><p>This enum represents the connection type use to connect to the controller's database.</p></td>
 </tr>
 <tr class="even">
 <td><p>SubmissionPackage</p></td>

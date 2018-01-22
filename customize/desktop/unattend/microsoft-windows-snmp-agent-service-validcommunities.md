@@ -13,9 +13,7 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # ValidCommunities
-
 
 `ValidCommunities` is a container for [ValidCommunity](microsoft-windows-snmp-agent-service-validcommunities-validcommunity.md) elements.
 
@@ -23,24 +21,11 @@ You can use this setting in core installations of Windows Server 2008, Windows 
 
 ## Child Elements
 
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>[ValidCommunity](microsoft-windows-snmp-agent-service-validcommunities-validcommunity.md)</p></td>
-<td><p>Specifies the community name from which the computer running Simple Network Management Protocol (SNMP) can accept SNMP requests, such as GET, SET, GETNEXT, and GETBULK.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Setting                 | Description                                                                           |
+|:------------------------|:--------------------------------------------------------------------------------------|
+| [ValidCommunity](microsoft-windows-snmp-agent-service-validcommunities-validcommunity.md) | Specifies the community name from which the computer running Simple Network Management Protocol (SNMP) can accept SNMP requests, such as GET, SET, GETNEXT, and GETBULK. |
 
 ## Valid Passes
-
 
 generalize
 
@@ -48,20 +33,17 @@ specialize
 
 ## Parent Hierarchy
 
-
 [Microsoft-Windows-SNMP-Agent-Service](microsoft-windows-snmp-agent-service.md) | **ValidCommunities**
 
 ## Applies To
-
 
 For the list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-SNMP-Agent-Service](microsoft-windows-snmp-agent-service.md).
 
 ## XML Example
 
-
 The following XML sample output shows how to set SNMP.
 
-```
+```XML
 <PermittedManagers>
    <A1>networkhost</A1>
 </PermittedManagers>
@@ -88,16 +70,4 @@ The following XML sample output shows how to set SNMP.
 
 ## Related topics
 
-
 [Microsoft-Windows-SNMP-Agent-Service](microsoft-windows-snmp-agent-service.md)
-
- 
-
- 
-
-
-
-
-
-
-

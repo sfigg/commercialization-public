@@ -13,9 +13,7 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # RegionalOverride
-
 
 A `RegionalOverride` specifies a set of apps that appear on the Start and Lock screens for different regions.
 
@@ -29,40 +27,15 @@ If the selected region doesn’t match any of these regions, then Windows displa
 
 ## Child Elements
 
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>[Order](microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverride-order.md)</p></td>
-<td><p>Specifies an instance</p></td>
-</tr>
-<tr class="even">
-<td><p>[LockScreen](microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverride-lockscreen.md)</p></td>
-<td><p>Specifies application whose monochrome icon appears on the <strong>Lock</strong> screen.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[Regions](microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverride-regions.md)</p></td>
-<td><p>Specifies a set of regions where Windows displays a customized set of apps that appear on the Start and Lock screens.</p></td>
-</tr>
-<tr class="even">
-<td><p>[SquareTiles](microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverride-squaretiles.md)</p></td>
-<td><p>Specifies the default Windows Runtime-based apps to appear as square tiles on the Start screen.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[WideTiles](microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverride-widetiles.md)</p></td>
-<td><p>Specifies the default Windows Runtime-based apps to appear as wide tiles on the Start screen.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Setting                 | Description                                                                           |
+|:------------------------|:--------------------------------------------------------------------------------------|
+| [Order](microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverride-order.md) | Specifies a unique id for a set of regions. In the specified set of regions, Windows displays a customized set of apps that appear on the Start and Lock screens. |
+| [LockScreen](microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverride-lockscreen.md) | Specifies application whose monochrome icon appears on the <strong>Lock</strong> screen. |
+| [Regions](microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverride-regions.md) | Specifies a set of regions where Windows displays a customized set of apps that appear on the Start and Lock screens. |
+| [SquareTiles](microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverride-squaretiles.md) | Specifies the default Windows Runtime-based apps to appear as square tiles on the Start screen. |
+| [WideTiles](microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverride-widetiles.md) | Specifies the default Windows Runtime-based apps to appear as wide tiles on the Start screen. |
 
 ## Valid Configuration Passes
-
 
 specialize
 
@@ -72,32 +45,18 @@ oobeSystem
 
 ## Parent Hierarchy
 
-
 [Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [StartTiles](microsoft-windows-shell-setup-starttiles.md) | [RegionalOverrides](microsoft-windows-shell-setup-starttiles-regionaloverrides.md) | **RegionalOverride**
 
 ## Applies To
-
 
 For a list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md).
 
 ## Related topics
 
-
-[How to Customize the Start Screen](http://go.microsoft.com/fwlink/?LinkId=254187)
+[Customize the Start layout](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/customize-start-layout)
 
 [RegionalOverrides](microsoft-windows-shell-setup-starttiles-regionaloverrides.md)
 
 [StartTiles](microsoft-windows-shell-setup-starttiles.md)
 
 [UserLocale](microsoft-windows-international-core-userlocale.md)
-
- 
-
- 
-
-
-
-
-
-
-

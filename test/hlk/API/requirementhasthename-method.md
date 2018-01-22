@@ -64,7 +64,7 @@ This method checks if this requirement has a given name.
 ## <span id="Return_Value"></span><span id="return_value"></span><span id="RETURN_VALUE"></span>Return Value
 
 
-**true** if the specified name matches this requirement’s name; otherwise, **false**.
+**true** if the specified name matches this requirement's name; otherwise, **false**.
 
 ## <span id="Remarks"></span><span id="remarks"></span><span id="REMARKS"></span>Remarks
 

@@ -26,15 +26,15 @@ There are two ways to aggregate the list of test results for a project.
 1.  Using the XML-based output files. An example of how you can merge XML-based test results from the Windows PowerShell session that is open on your Controller or test server is shown. In both examples, the use of the master.xml file is optional.
 
     ``` syntax
-    dir -s "c:\temp\*.xml" | Merge-HwCertTestCollectionFromXml -ValidationXmlPath "C:\temp\master.xml" | Export-HwCertTestCollectionToXml -Output "C:\Temp\merged_1.xml"  -TestPassIdentifier “TP003”
-    dir -s "c:\temp\*.xml" | Merge-HwCertTestCollectionFromXml -ValidationXmlPath "C:\temp\master.xml" | Export-HwCertTestCollectionToXml -Output "C:\Temp\merged_2.xml"  -TestPassIdentifier “TP004”
+    dir -s "c:\temp\*.xml" | Merge-HwCertTestCollectionFromXml -ValidationXmlPath "C:\temp\master.xml" | Export-HwCertTestCollectionToXml -Output "C:\Temp\merged_1.xml"  -TestPassIdentifier "TP003"
+    dir -s "c:\temp\*.xml" | Merge-HwCertTestCollectionFromXml -ValidationXmlPath "C:\temp\master.xml" | Export-HwCertTestCollectionToXml -Output "C:\Temp\merged_2.xml"  -TestPassIdentifier "TP004"
     ```
 
 2.  Using the project, .hlkx output files. An example of how you can merge .hlkx output files from the Windows PowerShell session that is open on your Controller or test server is shown.
 
     ``` syntax
-    dir -s "c:\temp\*.hlkx" | Merge-HwCertTestCollectionFromPackage -ValidationXmlPath "C:\temp\master.xml" | Export-HwCertTestCollectionToXml -Output "C:\Temp\merged_1.xml" -TestPassIdentifier “TP003”
-    dir -s "c:\temp\*.hlkx" | Merge-HwCertTestCollectionFromPackage -ValidationXmlPath "C:\temp\master.xml" | Export-HwCertTestCollectionToXml -Output "C:\Temp\merged_2.xml" -TestPassIdentifier “TP004”
+    dir -s "c:\temp\*.hlkx" | Merge-HwCertTestCollectionFromPackage -ValidationXmlPath "C:\temp\master.xml" | Export-HwCertTestCollectionToXml -Output "C:\Temp\merged_1.xml" -TestPassIdentifier "TP003"
+    dir -s "c:\temp\*.hlkx" | Merge-HwCertTestCollectionFromPackage -ValidationXmlPath "C:\temp\master.xml" | Export-HwCertTestCollectionToXml -Output "C:\Temp\merged_2.xml" -TestPassIdentifier "TP004"
     ```
 
 The aggregated list of test results (C:\\temp\\merged.xml) includes information for the full list of tests, not just the filtered list of tests. Because of this if any of the required tests were never run, the aggregated list of tests results will show that a required test was not run. Additionally, because all test results are merged, running multiple test runs with the same TestPassIdentifier attribute name value could create inconsistent results reporting. Instead, use a different name for each test pass.
@@ -56,21 +56,21 @@ An example of the output created after running the commands to create an Excel s
 
 The resulting Excel report will contain the following headings:
 
--   Total Test – The total number of tests in this test pass.
+-   Total Test - The total number of tests in this test pass.
 
--   Total Pass – The total number of results in this test pass
+-   Total Pass - The total number of results in this test pass
 
--   Total Pass With Filter – The total number of passes with an errata filter applied to the test.
+-   Total Pass With Filter - The total number of passes with an errata filter applied to the test.
 
--   Total Pass Percentage – Percentage of passing tests (Total Pass / Total Test).
+-   Total Pass Percentage - Percentage of passing tests (Total Pass / Total Test).
 
--   Total Fail – The total number of fails in this test pass (Total Test – Total Pass).
+-   Total Fail - The total number of fails in this test pass (Total Test - Total Pass).
 
--   N-1 Improvement – Between this test pass and the previous test pass (column to the left), how many new passes were achieved.
+-   N-1 Improvement - Between this test pass and the previous test pass (column to the left), how many new passes were achieved.
 
 -   N-1 Regression - Between this test pass and the previous test pass (column to the left), how many new fails were encountered.
 
--   N-1 Not Changed – Between this test pass and the previous test pass (column to the left), how many tests did not have a change in result outcome.
+-   N-1 Not Changed - Between this test pass and the previous test pass (column to the left), how many tests did not have a change in result outcome.
 
 -   N-1 Not Compared - Between this test pass and the previous test pass (column to the left), how many tests were not compared due to the test was only available in only one of the test passes.
 

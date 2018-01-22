@@ -13,9 +13,7 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # RunAsynchronous
-
 
 `RunAsynchronous` specifies one or more commands to run during the windowsPE configuration pass.
 
@@ -25,43 +23,27 @@ All `RunAsynchronous` commands run in the system context.
 
 ## Child Elements
 
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>[RunAsynchronousCommand](microsoft-windows-setup-runasynchronous-runasynchronouscommand.md)</p></td>
-<td><p>Specifies the path, the order, and the credentials of the command to run asynchronously.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Setting                 | Description                                                                           |
+|:------------------------|:--------------------------------------------------------------------------------------|
+| [RunAsynchronousCommand](microsoft-windows-setup-runasynchronous-runasynchronouscommand.md) | Specifies the path, the order, and the credentials of the command to run asynchronously. |
 
 ## Valid Configuration Passes
-
 
 windowsPE
 
 ## Parent Hierarchy
 
-
-[microsoft-windows-setup-](microsoft-windows-setup.md) | **RunAsynchronous**
+[Microsoft-Windows-Setup](microsoft-windows-setup.md) | **RunAsynchronous**
 
 ## Applies To
 
-
-For the list of the supported Windows editions and architectures that this component supports, see [microsoft-windows-setup-](microsoft-windows-setup.md).
+For the list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-Setup](microsoft-windows-setup.md).
 
 ## XML Example
 
-
 The following XML output shows how to set asynchronous commands.
 
-```
+```XML
 <RunAsynchronous>
    <RunAsynchronousCommand>
       <Order>1</Order>
@@ -83,18 +65,6 @@ The following XML output shows how to set asynchronous commands.
 
 ## Related topics
 
-
-[microsoft-windows-setup-](microsoft-windows-setup.md)
+[Microsoft-Windows-Setup](microsoft-windows-setup.md)
 
 [RunSynchronous](microsoft-windows-setup-runsynchronous.md)
-
- 
-
- 
-
-
-
-
-
-
-

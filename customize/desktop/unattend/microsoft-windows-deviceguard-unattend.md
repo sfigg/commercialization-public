@@ -21,32 +21,11 @@ Administrators can set values for the following settings to control virtualizati
 
 ## In this section
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Topic</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>[EnableVirtualizationBasedSecurity](Microsoft-Windows-DeviceGuard-Unattend-enablevirtualizationbasedsecurity.md)</p></td>
-<td><p>Use to enable virtualization-based security.</p></td>
-</tr>
-<tr class="even">
-<td><p>[HypervisorEnforcedCodeIntegrity](Microsoft-Windows-DeviceGuard-Unattend-hypervisorenforcedcodeintegrity.md)</p></td>
-<td><p>Specifies the code integrity that will be enforced for the hypervisor, which is a layer of software under the OS that runs virtual machines.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[LsaCfgFlags](Microsoft-Windows-DeviceGuard-Unattend-lsacfgflags.md)</p></td>
-<td><p>Use to enable the Credential Guard, which uses virtualization-based security to isolate secrets so that only privileged system software can access them when they are stored on disk or in memory. For more information, see [Credential Guard]( https://docs.microsoft.com/en-us/windows/access-protection/credential-guard/credential-guard).</p></td>
-</tr>
-</tbody>
-</table>
+| Setting                 | Description                                                                           |
+|:------------------------|:--------------------------------------------------------------------------------------|
+| [EnableVirtualizationBasedSecurity](Microsoft-Windows-DeviceGuard-Unattend-enablevirtualizationbasedsecurity.md) | Use to enable virtualization-based security. |
+| [HypervisorEnforcedCodeIntegrity](Microsoft-Windows-DeviceGuard-Unattend-hypervisorenforcedcodeintegrity.md) | Specifies the code integrity that will be enforced for the hypervisor, which is a layer of software under the OS that runs virtual machines. |
+| [LsaCfgFlags](Microsoft-Windows-DeviceGuard-Unattend-lsacfgflags.md) | Use to enable the Credential Guard, which uses virtualization-based security to isolate secrets so that only privileged system software can access them when they are stored on disk or in memory. For more information, see [Credential Guard](https://docs.microsoft.com/en-us/windows/access-protection/credential-guard/credential-guard). |
 
 ## XML example
 

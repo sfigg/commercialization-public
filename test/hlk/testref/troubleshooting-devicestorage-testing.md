@@ -77,7 +77,7 @@ There are special steps that can be taken to reproduce a particular test case in
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong>Hybriddrive.exe –drive &lt;disk #&gt; -scenario &lt;scenario&gt; &lt;additional options&gt;</strong></p></td>
+<td><p><strong>Hybriddrive.exe -drive &lt;disk #&gt; -scenario &lt;scenario&gt; &lt;additional options&gt;</strong></p></td>
 <td><p>Runs the test.</p></td>
 </tr>
 <tr class="even">

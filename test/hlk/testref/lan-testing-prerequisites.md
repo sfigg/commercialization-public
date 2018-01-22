@@ -82,7 +82,7 @@ A back-to-back connection is required for tests which a network switch may inter
 
 -   Tx Flow Control
 
--   Tests which send 802.1q–tagged (VlanSendRecv, VMQ, 1c\_priority, maybe others)
+-   Tests which send 802.1q-tagged (VlanSendRecv, VMQ, 1c\_priority, maybe others)
 
 ### <span id="Backchannel_corporate_network"></span><span id="backchannel_corporate_network"></span><span id="BACKCHANNEL_CORPORATE_NETWORK"></span>Backchannel/corporate network
 
@@ -112,7 +112,7 @@ The term *cores* refers to physical processing cores (not virtual or hyper-threa
 
 >[!NOTE]
 >  
-If send/receive packet loss problems happen frequently and throughout the test, it’s not likely a selective suspend problem.
+If send/receive packet loss problems happen frequently and throughout the test, it's not likely a selective suspend problem.
 
 >[!NOTE]
 >  
@@ -120,7 +120,7 @@ To certify your product for use on servers, the test computer must support four 
 
 If you use a pool of test computers to test devices, at least one computer in the pool must contain four processors and a minimum of 1 GB of RAM. Additionally, that computer must contain the device and the driver that you want to test. If the driver is the same on all the computers in the pool, the system creates a schedule to run against all test computers.
 
-For tests that do not include a driver to test, such as hard disk drive tests, the Windows HLK scheduler constrains the tests that validate the device’s and driver’s rebalance, D3 state, and multiple processor groups functionality to run on the default test computer. You must manually configure this computer to have multiple processor groups. The default computer is the first test computer in the list. Test personnel must make sure that the first test computer in the list meets the minimum hardware requirements.
+For tests that do not include a driver to test, such as hard disk drive tests, the Windows HLK scheduler constrains the tests that validate the device's and driver's rebalance, D3 state, and multiple processor groups functionality to run on the default test computer. You must manually configure this computer to have multiple processor groups. The default computer is the first test computer in the list. Test personnel must make sure that the first test computer in the list meets the minimum hardware requirements.
 
 >[!NOTE]
 >  
@@ -192,9 +192,9 @@ Microsoft recommends configuring \*SelectiveSuspend to disabled if the following
 ## <span id="Overview_of_changes_in_network_device_selection"></span><span id="overview_of_changes_in_network_device_selection"></span><span id="OVERVIEW_OF_CHANGES_IN_NETWORK_DEVICE_SELECTION"></span>Overview of changes in network device selection
 
 
-For LAN device testing, message and support adapters are no longer selected using a UI—they are automatically detected based on the network topology. If the automatic detection fails because the network topology is different than recommended topology, the devices need to be renamed on the test and support machines before running tests. Renaming refers to the device’s “ifAlias” which is visible from the Network Connections window among other places.
+For LAN device testing, message and support adapters are no longer selected using a UI--they are automatically detected based on the network topology. If the automatic detection fails because the network topology is different than recommended topology, the devices need to be renamed on the test and support machines before running tests. Renaming refers to the device's "ifAlias" which is visible from the Network Connections window among other places.
 
-If renaming is required, the support device on the support machine needs to be renamed to “SupportDevice0”. The message devices on both the test and support machines need to be renamed to “MessageDevice”.
+If renaming is required, the support device on the support machine needs to be renamed to "SupportDevice0". The message devices on both the test and support machines need to be renamed to "MessageDevice".
 
 ![network connections dialog box](images/hck-win8-lan-networkconnections.png)
 
@@ -235,17 +235,17 @@ Use the following steps to run lightweight filter (LWF) logo tests:
 
 3.  Restart the client machine.
 
-4.  From DTM server, add the client on which the LWF is installed to a new machine pool, and change the machine status to ‘Ready’.
+4.  From DTM server, add the client on which the LWF is installed to a new machine pool, and change the machine status to 'Ready'.
 
-5.  From HLK studio, create a new project under the ‘Project’ tab in HLK Studio.
+5.  From HLK studio, create a new project under the 'Project' tab in HLK Studio.
 
-6.  In the ‘Selection’ tab of the HLK studio, Select the machine pool that was created in the previous steps from the dropdown.
+6.  In the 'Selection' tab of the HLK studio, Select the machine pool that was created in the previous steps from the dropdown.
 
 7.  Click **software device**, and select the installed LWF driver you want to test.
 
     ![lwf logo test](images/hck-win8-lan-running-lwf-logo-test.png)
 
-8.  Run the all tests (the ‘NDISTest 6.5 – LWF Logo Test’ checks for all the LWF requirements) listed in the **Tests** tab against the LWF driver.
+8.  Run the all tests (the 'NDISTest 6.5 - LWF Logo Test' checks for all the LWF requirements) listed in the **Tests** tab against the LWF driver.
 
 ### <span id="NDISTest_6.5_-_LWF_logo_test"></span><span id="ndistest_6.5_-_lwf_logo_test"></span><span id="NDISTEST_6.5_-_LWF_LOGO_TEST"></span>NDISTest 6.5 - LWF logo test
 

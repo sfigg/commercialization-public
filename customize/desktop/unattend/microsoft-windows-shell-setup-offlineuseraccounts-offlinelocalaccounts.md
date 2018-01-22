@@ -13,9 +13,7 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # OfflineLocalAccounts
-
 
 `OfflineLocalAccounts` specifies offline local accounts to be created during installation.
 
@@ -23,47 +21,22 @@ You can use the **sysprep/generalize** command in conjunction with `OfflineLocal
 
 ## Child Elements
 
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>[LocalAccount](microsoft-windows-shell-setup-offlineuseraccounts-offlinelocalaccounts-localaccount.md)</p></td>
-<td><p>Specifies a local account to be created during installation.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Setting                 | Description                                                                           |
+|:------------------------|:--------------------------------------------------------------------------------------|
+| [LocalAccount](microsoft-windows-shell-setup-offlineuseraccounts-offlinelocalaccounts-localaccount.md) | Specifies a local account to be created during installation. |
 
 ## Valid Configuration Passes
-
 
 offlineServicing
 
 ## Parent Hierarchy
 
-
 [Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md)| [OfflineUserAccounts](microsoft-windows-shell-setup-offlineuseraccounts.md) | **OfflineLocalAccounts**
 
 ## Applies To
-
 
 Windows 10 for desktop editions (Home, Pro, Enterprise, and Education)
 
 Windows Server 2016
 
 For a list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md).
-
- 
-
- 
-
-
-
-
-
-

@@ -13,9 +13,7 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # RFC1156Agent
-
 
 `RFC1156` specifies the contact name, the physical location, and the SNMP services for the computer.
 
@@ -23,38 +21,13 @@ You can use this setting in core installations of Windows Server 2008, Windows 
 
 ## Child Elements
 
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Term</th>
-<th>Definition</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>[sysContact](microsoft-windows-snmp-agent-service-rfc1156agent-syscontact.md)</p></td>
-<td><p>Specifies the contact name for this managed node, as well as information about how to contact this person.</p></td>
-</tr>
-<tr class="even">
-<td><p>[sysLocation](microsoft-windows-snmp-agent-service-rfc1156agent-syslocation.md)</p></td>
-<td><p>Specifies the physical location of the computer.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[sysServices](microsoft-windows-snmp-agent-service-rfc1156agent-sysservices.md)</p></td>
-<td><p>Specifies any combination of up to five Simple Network Management Protocol (SNMP) services.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Setting                 | Description                                                                           |
+|:------------------------|:--------------------------------------------------------------------------------------|
+| [SysContact](microsoft-windows-snmp-agent-service-rfc1156agent-syscontact.md) | Specifies the contact name for this managed node, as well as information about how to contact this person. |
+| [SysLocation](microsoft-windows-snmp-agent-service-rfc1156agent-syslocation.md) | Specifies the physical location of the computer. |
+| [SysServices](microsoft-windows-snmp-agent-service-rfc1156agent-sysservices.md) | Specifies any combination of up to five Simple Network Management Protocol (SNMP) services. |
 
 ## Valid Passes
-
 
 generalize
 
@@ -62,20 +35,17 @@ specialize
 
 ## Parent Hierarchy
 
-
 [Microsoft-Windows-SNMP-Agent-Service](microsoft-windows-snmp-agent-service.md) | **RFC1156Agent**
 
 ## Applies To
-
 
 For the list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-SNMP-Agent-Service](microsoft-windows-snmp-agent-service.md).
 
 ## XML Example
 
-
 The following XML output shows how to set SNMP.
 
-```
+```XML
 <PermittedManagers>
    <A1>networkhost</A1>
 </PermittedManagers>
@@ -102,16 +72,4 @@ The following XML output shows how to set SNMP.
 
 ## Related topics
 
-
 [Microsoft-Windows-SNMP-Agent-Service](microsoft-windows-snmp-agent-service.md)
-
- 
-
- 
-
-
-
-
-
-
-

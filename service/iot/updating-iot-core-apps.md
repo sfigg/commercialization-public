@@ -1,102 +1,64 @@
 ---
 author: kpacquer
-Description: 'OEM and enterprise customers can utilize a set of scripts and tools to deliver app updates for Windows 10 IoT Core (IoT Core) devices.'
+Description: 'OEM and enterprise customers can use Microsoft Store to deliver app updates for Windows 10 IoT Core devices.'
 ms.assetid: 010c4836-a8ad-4ab9-b5a8-45babcc8a3f3
 MSHAttr: 'PreferredLib:/library/windows/hardware'
-title: Update apps on your IoT Core devices
-ms.author: themar
-ms.date: 05/02/2017
+title: Update apps on your Windows 10 IoT Core devices
+ms.author: pabab
+ms.date: 12/07/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-# Update apps on your IoT Core devices
+# Update apps on your Windows 10 IoT Core devices
 
-**New for Windows 10, version 1607**: OEMs and enterprise customers can deliver app updates to Windows 10 IoT Core devices by submitting updates to the Windows Store. When your devices connect to the internet, they periodically check for updates from the Windows Store, and install the updates automatically. 
+OEMs and enterprise customers can deliver app updates to Windows 10 IoT Core devices in the following ways:
 
-Before you send updates to the store, we recommend testing them first on your own devices. 
+* **Using Microsoft Store**: The app is published and updated from the Microsoft Store
+* **Using Component Update Service**: The app is published to Windows Update and updated like any other OEM package (driver package) *Coming soon*
+* **Using Azure IoT Device Management**: The app is published to Azure Storage and updated through the Azure DM channel *New for Windows 10, version 1709*
+* **Using OMA-DM**: The app is updated using an OMA-DM compliant device management channel such as Intune or System Center Configuration Manager (SCCM)
 
-## <span id="Send_updates_to_the_Windows_Store"></span>Send updates to the Windows Store
+The first version of the app is always pre-packaged in the device during image time.
+The [ApplicationManagement/AllowAllTrustedApps](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#applicationmanagement-allowalltrustedapps) setting should be set for enabling installation of trusted apps.
 
-Create updates for your apps in the same way that you create the original apps.
+## Using the Microsoft Store
+The Microsoft Store provides unique and secure means to update the IoT Core apps, independent of the OS/OEM Component updates.
+This option is interesting for OEMs who have:
 
-Use a higher version number each time. (Example, 1.0.0.0 --> 1.0.1.0.)
+* **High update frequency**: Expected to be update apps more frequently than the drivers.
+* **Third-party ISV developers**: Third-party ISV developed app and managed with a different release schedule.
 
-It's OK to reuse the existing package names and even write over the old folder names and locations. Back up your files first, in case you'd like to revert the change later.
+In this option, the apps that is pre-packaged needs to be Microsoft Store compliant apps (store signed). 
 
-We recommend that you [test and track the update](#Test_and_track_the_update) using the procedures in this topic.
+> [!Note]
+> The Microsoft Store Client is not supported in Windows 10 IoT Core.
 
-Finally, sign and submit the app package to the Windows Store. 
+To learn more, see [Installing and Servicing apps on Windows 10 IoT Core](https://docs.microsoft.com/windows/iot-core/commercialize-your-device/InstallingAndServicing)
 
-To learn more, see [Installing and Servicing apps on Windows 10 IoT Core](https://developer.microsoft.com/windows/iot/docs/store)
+### Managing Store app updates
+The following settings on the device side control the updates from Windows Store.
 
-## <span id="Test_and_track_the_update"></span><span id="test and track the update"></span><span id="TEST AND TRACK THE UPATE"></span>Test and track the update (recommended)
+* [ApplicationManagement/AllowStore](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#applicationmanagement-allowstore): Enable/disable store.
+* [ApplicationManagement/AllowAppStoreAutoUpdate](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#applicationmanagement-allowappstoreautoupdate): Enable auto update of all store apps. 
 
-Try out your updates on your devices before submitting them to the Windows Store.
+#### Self updates
+The Apps can be designed to control the updates by itself (either automatically or with user interaction with the appx). Windows makes available APIs that give a developer the ability to query available updates, download available updates and install available updates. 
 
-### <span id="Create_an_update_package"></span>Create an update package
+See [Download and install package updates for your app](https://msdn.microsoft.com/windows/uwp/packaging/self-install-package-updates) for more information on building this capability. In this case, the AllowAppStoreAutoUpdate should be disabled.
 
-1.  Create a working folder for your update package. 
+## Using Azure IoT Device Management 
+[Azure IoT Device Management (AzureDM)](https://docs.microsoft.com/windows/iot-core/manage-your-device/azureiotdm) is a highly scalable management solution available on Windows 10 IoT Core. See [Application Management](https://github.com/ms-iot/iot-core-azure-dm-client/blob/master/docs/application-management.md) for the details of installing and updating applications via AzureDM.
 
-    Use a new version number. This version number will apply to all of the packages in your projects.
+## Using OMA-DM
+The OMA-DM interface is supported in Windows 10 IoT Core and any OMA-DM compliant management solution can be used to install and update applications. 
+Read the documentation for [EnterpriseModernAppManagement CSP](https://docs.microsoft.com/windows/client-management/mdm/enterprisemodernappmanagement-csp) for usage instructions.
 
-    ```
-    newupdate Update1 10.0.0.1
-    ```
+## Comparisons of various options
 
-2.  Update the app with changes.
-
-3.  Build the app using a new version number. 
-	
-4.  Update the package info:
-
-    - Create a copy of the existing pacakge (for example, Appx.HelloWorld) under Update1\ folder and then update that with the version number.
-	
-	- Copy the new appx files to that directory.
-	
-	- Open  C:\\iot-adk-addonkit\\Source-arm\\Packages\\Appx.HelloWorld\\Appx.HelloWorld.pkg.xml, and update the version numbering.
-		
-5.  Build the update package
-
-    ```
-    createupdatepkgs Update1
-    ```
-
-	The output goes to C:\\iot-adk-addonkit\\Build\\arm\\Update1.
-
-### <span id="Apply_the_update_directly_to_the_device"></span><span id="apply_the_update_directly_to_the_device"></span><span id="APPLY_THE_UPDATE_DIRECTLY_TO_THE_DEVICE"></span>Apply the update directly to the device
-
-1.  Copy the .cab file to the device. You can do this using an FTP tool such as [WinSCP](http://winscp.net), or by copying the file directly to the device's drive (such as a micro SD card).
-
-2.  On your technician PC, connect to your device using an SSH client, such as [PuTTY](http://the.earth.li/~sgtatham/putty/latest/x86/putty.exe). For example, use the IP address and port 22 to connect to the device, then log in using the Administrator account and password. (To learn more, see [Using SSH to connect and configure a device running Windows IoT Core](https://developer.microsoft.com/windows/iot/docs/ssh).)
-
-3.  From the device command line, stage the update. You can repeat this step to stage multiple updates.
-    ```
-    ApplyUpdate.exe -stage <DownloadedPackageName.cab>
-    ```
-
-4.  Commit the changes. This command also triggers the Windows Update process, installing any applicable updates. 
-    ```
-    ApplyUpdate.exe -commit
-    ```
-	
-	(To reject all updates, use: `ApplyUpdate.exe -clear` instead.)
-	
-	Troubleshooting:
-	-  **Error: A certificate chain could not be built to a trusted root authority. (0x800B010A). Signature verification failed.** 
-	   Possible cause: Adding test signed images to a retail image. Sign the image and try again.
-	   
-    -  **Error: 0x80188302.**
-       Possible cause: Package version incorrect. Make sure the new version number is higher than the old version and try again. 
-	
-	-  **Error: Could not start update (0x8024A10F)**
-       Possible cause: Windows Update is in progress. Try again after the current Windows Update is completed.
-	   
-
-### <span id="Keep_track_of_versions"></span>Keep track of versions
-
-Open `UpdateVersion.txt` to see descriptions of your packages. The createupdatepkgs tool updates this file when creating a new update.
-
-### <span id="Test_new_images"></span>Test new images
-Create a new package using the same procedures as shown in [Lab 1b: Add an app to your image](https://docs.microsoft.com/windows-hardware/manufacture/iot/deploy-your-app-with-a-standard-board).
+| Item          | Using Microsoft Store | Using AzureDM | Using OMA-DM |
+|-------------- |---------------------- |---------------|--------------|
+| Appx Signing  | Store signed |Store signed or OEM signed|Store signed or OEM signed|
+|Distribution/Visibility|Store private (not available in store catalog)|Private|Private|
+|Infrastructure |Microsoft Store|Azure IoT / Storage|OEM infrastructure|

@@ -53,7 +53,7 @@ The WLAN SimpleIO plug-in performs the following tests on the wireless adapter u
 
 ### <span id="Identify_failures_that_are_logged_by_the_WLAN_SimpleIO_plugin"></span><span id="identify_failures_that_are_logged_by_the_wlan_simpleio_plugin"></span><span id="IDENTIFY_FAILURES_THAT_ARE_LOGGED_BY_THE_WLAN_SIMPLEIO_PLUGIN"></span>Identify failures that are logged by the WLAN SimpleIO plugin
 
-The error messages logged by the plug-in will contain the text “WirelessPlugin:”. The text that immediately follows “WirelessPlugin:” provides more context about the errors. For example:
+The error messages logged by the plug-in will contain the text "WirelessPlugin:". The text that immediately follows "WirelessPlugin:" provides more context about the errors. For example:
 
 ``` syntax
 WDTF_SIMPLE_IO            : ERROR :  - Open(802.11n USB Wireless LAN Card USB\VID_XXXX&PID_XXXX\5&35DEE9D9&0&5 ) Failed : WirelessPlugin: ConnectToTestProfile() - Failed to connect to test profile; Reason string: "The specific network is not available." HRESULT=0x80004005
@@ -75,7 +75,7 @@ We recommend that you follow troubleshooting steps in the listed order:
 
 6.  Enable **WLAN OS tracing** and review traces that are logged from the time when the logged the error(s). For more information about WLAN OS tracing, see [Tools for Troubleshooting using Network Tracing in Windows 7](http://go.microsoft.com/fwlink/?LinkID=296757).
 
-In some cases, it is helpful to run the failing test manually from a command line (without using Windows HLK or WDK), and then reviewing the plug-in’s WPP traces. See [How to run tests from the command line](#cmd) and [View WLAN plug-in traces](#view).
+In some cases, it is helpful to run the failing test manually from a command line (without using Windows HLK or WDK), and then reviewing the plug-in's WPP traces. See [How to run tests from the command line](#cmd) and [View WLAN plug-in traces](#view).
 
 ## <span id="cmd"></span><span id="CMD"></span>How to run tests from the command line
 

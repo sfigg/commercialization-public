@@ -13,9 +13,7 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # Microsoft-Windows-TerminalServices-LocalSessionManager
-
 
 The Microsoft-Windows-TerminalServices-LocalSessionManager component is responsible for starting the computer and implementing Windows Fast User Switching (FUS). FUS utilizes the data separation technology of user profiles, providing a fast and convenient mechanism for switching between user accounts.
 
@@ -23,39 +21,14 @@ Terminal Services uses terminal emulation to deliver the Windows desktop and Win
 
 ## In This Section
 
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>[fDenyTSConnections](microsoft-windows-terminalservices-localsessionmanager-fdenytsconnections.md)</p></td>
-<td><p>Specifies whether remote desktop connections are enabled.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Setting                 | Description                                                                           |
+|:------------------------|:--------------------------------------------------------------------------------------|
+| [fDenyTSConnections](microsoft-windows-terminalservices-localsessionmanager-fdenytsconnections.md) | Specifies whether remote desktop connections are enabled. |
 
 ## Applies To
-
 
 To determine whether a component applies to the image you’re building, load your image into Windows SIM and search for the component or setting name. For information on how to view components and settings, see [Configure Components and Settings in an Answer File](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/wsim/configure-components-and-settings-in-an-answer-file).
 
 ## Related topics
 
-
 [Components](components-b-unattend.md)
-
- 
-
- 
-
-
-
-
-
-
-

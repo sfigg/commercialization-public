@@ -19,18 +19,9 @@ ms.technology: windows-oem
 
 ## Child Elements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>[FirewallGroup](networking-mpssvc-svc-firewallgroups-firewallgroup.md)</p></td>
-<td><p>Specifies a Windows Firewall group.</p></td>
-</tr>
-</tbody>
-</table>
+| Setting                 | Description                                                                           |
+|:------------------------|:--------------------------------------------------------------------------------------|
+| [FirewallGroup](networking-mpssvc-svc-firewallgroups-firewallgroup.md) | Specifies a Windows Firewall group. |
 
 ## Parent Hierarchy
 

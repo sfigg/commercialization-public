@@ -1,6 +1,6 @@
 ---
-title: microsoft-windows-security-spp-ux-sppcc-
-description: microsoft-windows-security-spp-ux-sppcc-
+title: Microsoft-Windows-Security-SPP-UX-SPPCC
+description: Microsoft-Windows-Security-SPP-UX-SPPCC
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
@@ -13,55 +13,23 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
+# Microsoft-Windows-Security-SPP-UX-SPPCC
 
-# microsoft-windows-security-spp-ux-sppcc-
+The Microsoft-Windows-Security-SPP-UX-SPPCC component specifies referral IDs for the Windows Anytime Upgrade program.
 
-
-The microsoft-windows-security-spp-ux-sppcc- component specifies referral IDs for the Windows Anytime Upgrade program.
-
-**Important**  
-This setting is deprecated.
-
-This information is for reference only.
-
- 
+> [!Important]
+> This setting is deprecated. This information is for reference only.
 
 ## In This Section
 
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>[ReferralId](microsoft-windows-security-spp-ux-sppcc-referralid.md)</p></td>
-<td><p>Deprecated, do not use.</p>
-<p>Specifies the identity of the OEMs participating in the Windows Anytime Upgrade program.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Setting                 | Description                                                                           |
+|:------------------------|:--------------------------------------------------------------------------------------|
+| [ReferralId](microsoft-windows-security-spp-ux-sppcc-referralid.md) | Deprecated, do not use. Specifies the identity of the OEMs participating in the Windows Anytime Upgrade program. |
 
 ## Applies To
-
 
 To determine whether a component applies to the image you’re building, load your image into Windows SIM and search for the component or setting name. For information on how to view components and settings, see [Configure Components and Settings in an Answer File](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/wsim/configure-components-and-settings-in-an-answer-file).
 
 ## Related topics
 
-
 [Components](components-b-unattend.md)
-
- 
-
- 
-
-
-
-
-
-
-

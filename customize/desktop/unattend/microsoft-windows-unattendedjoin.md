@@ -13,51 +13,21 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # Microsoft-Windows-UnattendedJoin
-
 
 The Microsoft-Windows-UnattendedJoin component enables a computer to join a domain during the specialize or OfflineServicing configuration pass. By joining a computer to a domain, you can apply policies to the computer and access additional resources on the domain.
 
 ## In This Section
 
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>[Identification](microsoft-windows-unattendedjoin-identification.md)</p></td>
-<td><p>Specifies credentials to join a domain, the name of the domain to join, the workgroup to assign to the computer, and other options during the specialize configuration pass.</p></td>
-</tr>
-<tr class="even">
-<td><p>[OfflineIdentification](microsoft-windows-unattendedjoin-offlineidentification.md)</p></td>
-<td><p>Specifies the account information used to join a domain during Windows Setup.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Setting                 | Description                                                                           |
+|:------------------------|:--------------------------------------------------------------------------------------|
+| [Identification](microsoft-windows-unattendedjoin-identification.md) | Specifies credentials to join a domain, the name of the domain to join, the workgroup to assign to the computer, and other options during the specialize configuration pass. |
+| [OfflineIdentification](microsoft-windows-unattendedjoin-offlineidentification.md) | Specifies the account information used to join a domain during Windows Setup. |
 
 ## Applies To
-
 
 To determine whether a component applies to the image you’re building, load your image into Windows SIM and search for the component or setting name. For information on how to view components and settings, see [Configure Components and Settings in an Answer File](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/wsim/configure-components-and-settings-in-an-answer-file).
 
 ## Related topics
 
-
 [Components](components-b-unattend.md)
-
- 
-
- 
-
-
-
-
-
-
-

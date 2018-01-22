@@ -13,9 +13,7 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # FirstRunTask
-
 
 The `FirstRunTask` setting specifies the background task that is active, or live, by default for a tile when a user signs in to Windows for the first time.
 
@@ -25,7 +23,6 @@ If the region of the current user account is among those in the Start Tile regio
 
 ## Values
 
-
 To make a tile live, do one of the following:
 
 -   If your background task is in JavaScript, specify the .js file that implements the IBackgroundTask interface.
@@ -33,7 +30,6 @@ To make a tile live, do one of the following:
 -   If your background task is in XAML or C++, specify the class ID for the application.
 
 ## Valid Configuration Passes
-
 
 specialize
 
@@ -43,20 +39,17 @@ oobeSystem
 
 ## Parent Hierarchy
 
-
 [Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [RegionalOverrides](microsoft-windows-shell-setup-starttiles-regionaloverrides.md) | [RegionalOverride](microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverride.md) | [SquareTiles](microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverride-squaretiles.md) | [SquareTile12](microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverride-squaretiles-squaretile12.md) | **FirstRunTask**
 
 ## Applies To
-
 
 For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md).
 
 ## XML Example
 
-
 The following XML output shows how to use the `<SquareTiles>` component.
 
-```
+```XML
      <SquareTiles>
           <SquareOrDesktopTile1>
                <AppIdOrPath>C:\programdata\microsoft\windows\start menu\programs\desktoptile1.lnk</AppIdOrPath>
@@ -84,7 +77,6 @@ The following XML output shows how to use the `<SquareTiles>` component.
 ```
 
 ## Related topics
-
 
 [StartTiles](microsoft-windows-shell-setup-starttiles.md)
 

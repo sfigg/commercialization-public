@@ -63,7 +63,7 @@ This section describes the tasks that you must complete before you test a client
 
      
 
--   Device’s network operation status is IfOperStatusUp
+-   Device's network operation status is IfOperStatusUp
 
 **WLAN/WiFi devices**
 

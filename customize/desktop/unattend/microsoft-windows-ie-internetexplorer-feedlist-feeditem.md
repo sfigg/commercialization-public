@@ -13,59 +13,35 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # FeedItem
-
 
 `FeedItem` specifies a Web feed to be received on the computer.
 
 ## Child Elements
 
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>[FeedKey](microsoft-windows-ie-internetexplorer-feedlist-feeditem-feedkey.md)</p></td>
-<td><p>Specifies a unique string for a <code>FeedItem</code>.</p></td>
-</tr>
-<tr class="even">
-<td><p>[FeedTitle](microsoft-windows-ie-internetexplorer-feedlist-feeditem-feedtitle.md)</p></td>
-<td><p>Specifies the title of a <code>FeedItem</code>.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[FeedURL](microsoft-windows-ie-internetexplorer-feedlist-feeditem-feedurl.md)</p></td>
-<td><p>Specifies the URL of a <code>FeedItem</code>.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Setting                 | Description                                                                           |
+|:------------------------|:--------------------------------------------------------------------------------------|
+| [FeedKey](microsoft-windows-ie-internetexplorer-feedlist-feeditem-feedkey.md) | Specifies a unique string for a <code>FeedItem</code>. |
+| [FeedTitle](microsoft-windows-ie-internetexplorer-feedlist-feeditem-feedtitle.md) | Specifies the title of a <code>FeedItem</code>. |
+| [FeedURL](microsoft-windows-ie-internetexplorer-feedlist-feeditem-feedurl.md) | Specifies the URL of a <code>FeedItem</code>. |
 
 ## Valid Passes
-
 
 specialize
 
 ## Parent Hierarchy
 
-
 [Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md) | [FeedList](microsoft-windows-ie-internetexplorer-feedlist.md) | **FeedItem**
 
 ## Applies To
-
 
 For the list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md).
 
 ## XML Example
 
-
 The following XML output shows how to set a [FeedList](microsoft-windows-ie-internetexplorer-feedlist.md).
 
-```
+```XML
 <FeedList>
    <FeedItem wcm:action="add">
       <FeedKey>Feed1</FeedKey>
@@ -82,16 +58,4 @@ The following XML output shows how to set a [FeedList](microsoft-windows-ie-inte
 
 ## Related topics
 
-
 [FeedList](microsoft-windows-ie-internetexplorer-feedlist.md)
-
- 
-
- 
-
-
-
-
-
-
-

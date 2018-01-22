@@ -18,7 +18,7 @@ ms.technology: windows-oem
 
 The procedures presented in this section outline the process for testing your IPsec Task Offload v2 for proper functionality with the Microsoft Windows operating system. These procedures use the Microsoft Windows Logo Kit (WLK) and Windows Hardware Lab Kit (Windows HLK). To ensure full functionality, you must run all of the tests that the Windows HLK identifies as required for the device.
 
-IPsec Tov2 logo tests use SupportDevice0 on support machine and test target on the test machine. Thus both these network adapters need IPsec Tov2 capability. Building on top of ‘Running the LAN tests in the HCK’ as described in section 8 of this document, the following steps demonstrate how to run IPsec Tov2 logo tests:
+IPsec Tov2 logo tests use SupportDevice0 on support machine and test target on the test machine. Thus both these network adapters need IPsec Tov2 capability. Building on top of 'Running the LAN tests in the HCK' as described in section 8 of this document, the following steps demonstrate how to run IPsec Tov2 logo tests:
 
 1.  In the HLK studio, create a new project under the **Project** tab.
 

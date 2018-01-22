@@ -16,7 +16,7 @@ ms.technology: windows-oem
 # Digitally sign an .hlkx package
 
 
-HLK Studio supports three package types – one unsigned, two signed. All official submissions to Microsoft must be digitally signed. To create package:
+HLK Studio supports three package types - one unsigned, two signed. All official submissions to Microsoft must be digitally signed. To create package:
 
 1.  From HLK Studio, open a current project.
 

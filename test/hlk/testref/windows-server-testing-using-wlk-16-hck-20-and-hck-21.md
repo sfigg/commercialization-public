@@ -61,7 +61,7 @@ Approximately 90 days after the release of Windows 8.1 and Windows Server 2012 R
 
 The use of WLK 1.6 and HLK 2.1 is necessary because:
 
--   Prior to Windows Server 2012 R2, HLK 2.0 could be used to obtain driver signatures for Windows Server 2008 and 2003. However, device and driver vendors were requested to also use WLK 1.6 for testing of those drivers prior to submission for signature. It was never Microsoft’s intent to offer signature for drivers that were not tested adequately as this is not in the best interest of our mutual customers.
+-   Prior to Windows Server 2012 R2, HLK 2.0 could be used to obtain driver signatures for Windows Server 2008 and 2003. However, device and driver vendors were requested to also use WLK 1.6 for testing of those drivers prior to submission for signature. It was never Microsoft's intent to offer signature for drivers that were not tested adequately as this is not in the best interest of our mutual customers.
 
 -   HLK 2.1 for Windows 8.1/2012 R2 will not provide driver signatures for Windows Server 2008 and Windows Server 2003 as driver testing is now required (not just encouraged) due to experience with Server drivers that were only signed and not adequately tested.
 
@@ -79,16 +79,16 @@ The following table summarizes kit support for Windows Server certification:
 
 ![certification kit support matrix](images/hck-winb-kit-support-matrix.png)
 
-## <span id="_Up-Level__and__Down-Level__Certification_Status_Grant"></span><span id="_up-level__and__down-level__certification_status_grant"></span><span id="_UP-LEVEL__AND__DOWN-LEVEL__CERTIFICATION_STATUS_GRANT"></span>“Up-Level” and “Down-Level” Certification Status Grant
+## <span id="_Up-Level__and__Down-Level__Certification_Status_Grant"></span><span id="_up-level__and__down-level__certification_status_grant"></span><span id="_UP-LEVEL__AND__DOWN-LEVEL__CERTIFICATION_STATUS_GRANT"></span>"Up-Level" and "Down-Level" Certification Status Grant
 
 
 Unless called out specifically, certification is required for all devices and drivers to obtain separately the logo for Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2 and Windows Server 2008.
 
-![“up-level” and “down-level” certification status g](images/hck-winb-cert-grant-status-table.png)
+!["up-level" and "down-level" certification status g](images/hck-winb-cert-grant-status-table.png)
 
-Systems and selected Device types specified above that are successfully certified against Windows Server 2012 R2 will earn “Down-Level” certification status for Windows Server 2012.
+Systems and selected Device types specified above that are successfully certified against Windows Server 2012 R2 will earn "Down-Level" certification status for Windows Server 2012.
 
-Imaging device types specified above that are successfully certified against Windows Server 2012 will be granted “Up-Level” certification status for Windows Server 2012 R2.
+Imaging device types specified above that are successfully certified against Windows Server 2012 will be granted "Up-Level" certification status for Windows Server 2012 R2.
 
 ## <span id="Contact"></span><span id="contact"></span><span id="CONTACT"></span>Contact
 
