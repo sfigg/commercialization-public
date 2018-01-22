@@ -13,51 +13,33 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # Diagnostics
-
 
 `Diagnostics` specifies whether installation statistics, such as status reports and failures, are sent to Microsoft.
 
 ## Child Elements
 
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>[OptIn](microsoft-windows-setup-diagnostics-optin.md)</p></td>
-<td><p>Specifies whether to send installation statistic information to Microsoft.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Setting                 | Description                                                                           |
+|:------------------------|:--------------------------------------------------------------------------------------|
+| [OptIn](microsoft-windows-setup-diagnostics-optin.md) | Specifies whether to send installation statistic information to Microsoft. |
 
 ## Valid Passes
-
 
 windowsPE
 
 ## Parent Hierarchy
 
-
-[microsoft-windows-setup-](microsoft-windows-setup.md) | **Diagnostics**
+[Microsoft-Windows-Setup](microsoft-windows-setup.md) | **Diagnostics**
 
 ## Applies To
 
-
-For the list of the supported Windows editions and architectures that this component supports, see [microsoft-windows-setup-](microsoft-windows-setup.md).
+For the list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-Setup](microsoft-windows-setup.md).
 
 ## XML Example
 
-
 The following XML output shows how to change this setting so that no information is sent.
 
-```
+```XML
 <Diagnostics>
    <OptIn>false</OptIn>
 </Diagnostics>
@@ -65,16 +47,4 @@ The following XML output shows how to change this setting so that no information
 
 ## Related topics
 
-
-[microsoft-windows-setup-](microsoft-windows-setup.md)
-
- 
-
- 
-
-
-
-
-
-
-
+[Microsoft-Windows-Setup](microsoft-windows-setup.md)

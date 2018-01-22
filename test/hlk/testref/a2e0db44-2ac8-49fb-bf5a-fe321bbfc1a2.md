@@ -99,7 +99,7 @@ The following table lists the image surfaces that the test uses. If you specify 
 </tr>
 <tr class="even">
 <td><p>RefSurface.bmp</p></td>
-<td><p>The reference surface, as computed by the Microsoft® Direct3D® API.</p></td>
+<td><p>The reference surface, as computed by the Microsoft Direct3D API.</p></td>
 </tr>
 <tr class="odd">
 <td><p>DiffSurface.bmp</p></td>

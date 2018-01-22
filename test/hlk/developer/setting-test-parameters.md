@@ -18,7 +18,7 @@ ms.technology: windows-oem
 
 Use the **SetParameter()** method to set parameters for the current instance of a **Test** or as the default value for subsequent test runs.
 
-You can also use **SetParameter()** to find all instances of the same name for all of a target’s tests. For example, you could find every parameter with the name *TargetIPAddress* in a large group of tests.
+You can also use **SetParameter()** to find all instances of the same name for all of a target's tests. For example, you could find every parameter with the name *TargetIPAddress* in a large group of tests.
 
 Here's an example of how to set a **Test** parameter:
 

@@ -13,36 +13,18 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # SquareOrDesktopTile1
-
 
 `SquareOrDesktopTile1` specifies which application appears as a square tile on the **Start** menu, in position SquareOrDesktopTile1. This position may vary based on the screen size, resolution, and DPI of the target device.
 
 ## Child Elements
 
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>[AppIdOrPath](microsoft-windows-shell-setup-starttiles-squaretiles-squareordesktoptile1-appidorpath.md)</p></td>
-<td><p>Specifies the <code>AppID</code> of the Microsoft Store apps, or the path to the desktop apps, which appear as square tiles on the <strong>Start</strong> screen.</p></td>
-</tr>
-<tr class="even">
-<td><p>[FirstRunTask](microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverride-squaretiles-squaretile1-firstruntask.md)</p></td>
-<td><p>Specifies the background task that is active, or live, by default for the tile.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Setting                 | Description                                                                           |
+|:------------------------|:--------------------------------------------------------------------------------------|
+| [AppIdOrPath](microsoft-windows-shell-setup-starttiles-squaretiles-squareordesktoptile1-appidorpath.md) | Specifies the <code>AppID</code> of the Microsoft Store apps, or the path to the desktop apps, which appear as square tiles on the <strong>Start</strong> screen. |
+| [FirstRunTask](microsoft-windows-shell-setup-starttiles-squaretiles-squareordesktoptile1-firstruntask.md) | Specifies the background task that is active, or live, by default for a tile when a user signs in to Windows for the first time. |
 
 ## Valid Configuration Passes
-
 
 specialize
 
@@ -52,20 +34,17 @@ oobeSystem
 
 ## Parent Hierarchy
 
-
 [Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md)| [StartTiles](microsoft-windows-shell-setup-starttiles.md) | [SquareTiles](microsoft-windows-shell-setup-starttiles-squaretiles.md) | **SquareOrDesktopTile1**
 
 ## Applies To
-
 
 For a list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md).
 
 ## XML Example
 
-
 The following XML output shows how to use the `<SquareOrDesktopTile1>` component.
 
-```
+```XML
 <SquareTiles>
           <SquareOrDesktopTile1>
                <AppIdOrPath>C:\programdata\microsoft\windows\start menu\programs\desktoptile1.lnk</AppIdOrPath>
@@ -94,22 +73,8 @@ The following XML output shows how to use the `<SquareOrDesktopTile1>` component
 
 ## Related topics
 
-
 [StartTiles](microsoft-windows-shell-setup-starttiles.md)
 
 [RegionalOverrides](microsoft-windows-shell-setup-starttiles-regionaloverrides.md)
 
-[SquareTiles](microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverride-squaretiles.md)
-
 [SquareTiles](microsoft-windows-shell-setup-starttiles-squaretiles.md)
-
- 
-
- 
-
-
-
-
-
-
-

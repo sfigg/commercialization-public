@@ -13,9 +13,7 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # TrapConfigurationItems
-
 
 `TrapConfigurationItems` specifies details about the community name and traps used by the trap configuration.
 
@@ -23,28 +21,12 @@ You can use this setting in core installations of Windows Server 2008, Windows 
 
 ## Child Elements
 
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>[Community_Name](microsoft-windows-snmp-agent-service-trapconfiguration-trapconfigurationitems-community-name.md)</p></td>
-<td><p>Specifies the name of the community to which Simple Network Management Protocol (SNMP) sends traps.</p></td>
-</tr>
-<tr class="even">
-<td><p>[Traps](microsoft-windows-snmp-agent-service-trapconfiguration-trapconfigurationitems-traps.md)</p></td>
-<td><p>Specifies the IP addresses to which SNMP sends traps.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Setting                 | Description                                                                           |
+|:------------------------|:--------------------------------------------------------------------------------------|
+| [Community_Name](microsoft-windows-snmp-agent-service-trapconfiguration-trapconfigurationitems-community-name.md) | Specifies the name of the community to which Simple Network Management Protocol (SNMP) sends traps. |
+| [Traps](microsoft-windows-snmp-agent-service-trapconfiguration-trapconfigurationitems-traps.md) | Specifies the IP addresses to which SNMP sends traps. |
 
 ## Valid Passes
-
 
 generalize
 
@@ -52,20 +34,17 @@ specialize
 
 ## Parent Hierarchy
 
-
 [Microsoft-Windows-SNMP-Agent-Service](microsoft-windows-snmp-agent-service.md) | [TrapConfiguration](microsoft-windows-snmp-agent-service-trapconfiguration.md) | **TrapConfigurationItems**
 
 ## Applies To
-
 
 For the list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-SNMP-Agent-Service](microsoft-windows-snmp-agent-service.md).
 
 ## XML Example
 
-
 The following XML sample output shows how to set SNMP.
 
-```
+```XML
 <PermittedManagers>
    <A1>networkhost</A1>
 </PermittedManagers>
@@ -92,16 +71,4 @@ The following XML sample output shows how to set SNMP.
 
 ## Related topics
 
-
 [TrapConfiguration](microsoft-windows-snmp-agent-service-trapconfiguration.md)
-
- 
-
- 
-
-
-
-
-
-
-

@@ -45,7 +45,7 @@ To certify a router for use with servers, the test computer must support four pr
 
 If you use a pool of test computers to test devices, at least one computer in the pool must contain four processors and a minimum of 1 GB of RAM.
 
-Since routers do not include a driver to test, the Windows HLK scheduler constrains the tests that validate the device’s and driver’s Rebalance, D3 State and Multiple Processor Groups functionality to run on the default test computer. You must manually configure this computer to have multiple processor groups. The default computer is the first test computer in the list. Test personnel must make sure that the first test computer in the list meets the minimum hardware requirements.
+Since routers do not include a driver to test, the Windows HLK scheduler constrains the tests that validate the device's and driver's Rebalance, D3 State and Multiple Processor Groups functionality to run on the default test computer. You must manually configure this computer to have multiple processor groups. The default computer is the first test computer in the list. Test personnel must make sure that the first test computer in the list meets the minimum hardware requirements.
 
 >[!NOTE]
 >  

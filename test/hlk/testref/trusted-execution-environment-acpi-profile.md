@@ -16,7 +16,7 @@ ms.technology: windows-oem
 # Trusted Execution Environment ACPI Profile
 
 
-Licensing: Microsoft agrees to grant to you a no charge, royalty-free license to its Necessary Claims on reasonable and non-discriminatory terms solely to make, use, sell, offer for sale, import, or distribute any implementation of this specification. “Necessary Claims” are those claims of Microsoft-owned or Microsoft-controlled patents that are technically necessary to implement the required portions (which also include the required elements of optional portions) of this specification, where the functionality causing the infringement is described in detail and not merely referenced in this Specification.
+Licensing: Microsoft agrees to grant to you a no charge, royalty-free license to its Necessary Claims on reasonable and non-discriminatory terms solely to make, use, sell, offer for sale, import, or distribute any implementation of this specification. "Necessary Claims" are those claims of Microsoft-owned or Microsoft-controlled patents that are technically necessary to implement the required portions (which also include the required elements of optional portions) of this specification, where the functionality causing the infringement is described in detail and not merely referenced in this Specification.
 
 ## <span id="1.0_background"></span><span id="1.0_BACKGROUND"></span>1.0 Background
 
@@ -27,7 +27,7 @@ An additional static ACPI table (TPM2) is used to define the mechanism for commu
 
 >[!NOTE]
 >  
-Microsoft refers to the Trusted Computing Group’s “TPM.Next” term as “TPM 2.0”
+Microsoft refers to the Trusted Computing Group's "TPM.Next" term as "TPM 2.0"
 
  
 
@@ -101,7 +101,7 @@ This scenario illustrates how the memory clear feature of the system helps thwar
 
 11. The malicious person attempts to boot the system normally.
 
-12. Because BitLocker was enabled with the TPM key protector, this permits BootMgr to “unseal” the volume master key for the OS volume because the correct measurements are in the TPM 2.0 device when BootMgr runs.
+12. Because BitLocker was enabled with the TPM key protector, this permits BootMgr to "unseal" the volume master key for the OS volume because the correct measurements are in the TPM 2.0 device when BootMgr runs.
 
 13. Boot proceeds to the OS logon screen.
 
@@ -164,11 +164,11 @@ Both the TPM2 table and the TPM 2.0 device object MUST be persistent once the pl
 
 **4.3.1 Bus Hierarchy**
 
-The Device Object table MUST be under the DSDT table in the ACPI namespace.The TPM 2.0 Device Object MUST be located under the system bus at “root\\\_SB”.
+The Device Object table MUST be under the DSDT table in the ACPI namespace.The TPM 2.0 Device Object MUST be located under the system bus at "root\\\_SB".
 
 **4.3.2 Hardware Identifier**
 
-The actual plug and play hardware identifier (e.g. \_HID) for the TPM 2.0 device object MUST be “MSFT0101”or the device MUST have a compatible ID of “MSFT0101” and the \_HID could be vendor specific.
+The actual plug and play hardware identifier (e.g. \_HID) for the TPM 2.0 device object MUST be "MSFT0101"or the device MUST have a compatible ID of "MSFT0101" and the \_HID could be vendor specific.
 
 **4.3.3 Resource Descriptors**
 
@@ -192,9 +192,9 @@ The system MUST implement the specification defined in \[TCG11\] per the additio
 
     1.  The \_DSM query function MUST be implemented (function index 0) per the ACPI specification. (Note: There is a mistake in the ACPI 4.0 specification about the return value for the \_DSM method. The return value of the \_DSM method should be a buffer containing 0x01FF.)
 
-    2.  The implementation MUST return a value of “2: Reboot” for “Get Platform-Specific Action to Transition to Pre-OS Environment.” PPI operations MUST occur for a transition of a restart and SHOULD occur for a shutdown transition.
+    2.  The implementation MUST return a value of "2: Reboot" for "Get Platform-Specific Action to Transition to Pre-OS Environment." PPI operations MUST occur for a transition of a restart and SHOULD occur for a shutdown transition.
 
-    3.  Implementation of the following control methods is optional: “Submit TPM Operation Request to Pre-OS Environment” (may return “2: General Failure”) and “Submit preferred user language” (may return “3: Not implemented”).
+    3.  Implementation of the following control methods is optional: "Submit TPM Operation Request to Pre-OS Environment" (may return "2: General Failure") and "Submit preferred user language" (may return "3: Not implemented").
 
 3.  The requirements in section 3 MUST be implemented with the following revisions:
 
@@ -327,7 +327,7 @@ The system MUST implement the specification defined in \[TCG11\] per the additio
         <td><p>X</p></td>
         </tr>
         <tr class="odd">
-        <td><p>23 – 127</p></td>
+        <td><p>23 - 127</p></td>
         <td><p>Reserved</p></td>
         <td><p></p></td>
         <td><p></p></td>
@@ -349,7 +349,7 @@ The system MUST implement the specification defined in \[TCG11\] per the additio
 
         >[!IMPORTANT]
         >  
-        For **SetNoPPIClear\_False**: if the BIOS implements the items marked “O1” or “O2” it must implement them as a set. For the **No Operation** that follows **SetNoPPIClear\_True**, the BIOS must not implement operations 19 and 20 if it does not implement operation 12.
+        For **SetNoPPIClear\_False**: if the BIOS implements the items marked "O1" or "O2" it must implement them as a set. For the **No Operation** that follows **SetNoPPIClear\_True**, the BIOS must not implement operations 19 and 20 if it does not implement operation 12.
 
          
 
@@ -405,7 +405,7 @@ The system MUST implement the specification defined in \[TCG11\] per the additio
         <p></p></td>
         </tr>
         <tr class="odd">
-        <td><p>23 – 127</p></td>
+        <td><p>23 - 127</p></td>
         <td><p>Reserved</p></td>
         <td><p>Reserved, do not implement or use</p></td>
         </tr>
@@ -439,7 +439,7 @@ The system MUST implement the specification defined in \[TCG11\] per the additio
     <tr class="even">
     <td><p>5, 14, 21, and 22</p></td>
     <td><p>Clear</p></td>
-    <td><p>A configuration change was requested to clear this computer’s TPM (Trusted Platform Module)</p>
+    <td><p>A configuration change was requested to clear this computer's TPM (Trusted Platform Module)</p>
     <p>WARNING: Clearing erases information stored on the TPM. You will lose all created keys and access to data encrypted by these keys.</p>
     <p>Press &lt;CAK&gt; to clear the TPM</p>
     <p>Press &lt;RK&gt; to reject this change request and continue</p></td>
@@ -448,7 +448,7 @@ The system MUST implement the specification defined in \[TCG11\] per the additio
     <td><p>18</p></td>
     <td><p>SetNoPPIClear_True</p>
     <p></p></td>
-    <td><p>A configuration change was requested to allow the Operating System to clear the computer’s TPM (Trusted Platform Module) without asking for user confirmation in the future.</p>
+    <td><p>A configuration change was requested to allow the Operating System to clear the computer's TPM (Trusted Platform Module) without asking for user confirmation in the future.</p>
     <p>NOTE: This action does not clear the TPM, but by approving this configuration change, future actions to clear the TPM will not require user confirmation.</p>
     <p>WARNING: Clearing erases information stored on the TPM. You will lose all created keys and access to data encrypted by these keys.</p>
     <p>Press &lt;CAK&gt; to approve future Operating System requests to clear the TPM</p>
@@ -534,7 +534,7 @@ Note: Once command execution starts, this method is not called a second time if 
 
 ### <span id="4.4_TPM2_Static_ACPI_Table"></span><span id="4.4_tpm2_static_acpi_table"></span><span id="4.4_TPM2_STATIC_ACPI_TABLE"></span>4.4 TPM2 Static ACPI Table
 
-An ACPI table named “TPM2” listed in the “RSDT” ACPI table describes the platform’s TPM 2.0 hardware interface. The Windows TPM 2.0 driver uses this table to determine the manner in which it is to communicate with the TPM 2.0 device. The parameters in the ACPI table required to support this interface are illustrated in the table below.
+An ACPI table named "TPM2" listed in the "RSDT" ACPI table describes the platform's TPM 2.0 hardware interface. The Windows TPM 2.0 driver uses this table to determine the manner in which it is to communicate with the TPM 2.0 device. The parameters in the ACPI table required to support this interface are illustrated in the table below.
 
 **Table 3: TPM2 ACPI table layout**
 
@@ -562,7 +562,7 @@ An ACPI table named “TPM2” listed in the “RSDT” ACPI table describes the
 <td><p>Signature</p></td>
 <td><p>4</p></td>
 <td><p>00h</p></td>
-<td><p>‘TPM2’. Signature for the TPM 2.0 device Hardware Interface Table</p></td>
+<td><p>'TPM2'. Signature for the TPM 2.0 device Hardware Interface Table</p></td>
 </tr>
 <tr class="even">
 <td><p>Length</p></td>
@@ -592,13 +592,13 @@ An ACPI table named “TPM2” listed in the “RSDT” ACPI table describes the
 <td><p>OEM Table ID</p></td>
 <td><p>8</p></td>
 <td><p>10h</p></td>
-<td><p>The OEM Table ID is the manufacturer model ID (assigned by the OEM identified by “OEM ID”; may be the chipset vendor).</p></td>
+<td><p>The OEM Table ID is the manufacturer model ID (assigned by the OEM identified by "OEM ID"; may be the chipset vendor).</p></td>
 </tr>
 <tr class="odd">
 <td><p>OEM Revision</p></td>
 <td><p>4</p></td>
 <td><p>18h</p></td>
-<td><p>OEM revision for the given OEM Table ID. Per ACPI, “[an] OEM-supplied revision number. Larger numbers are assumed to be newer revisions.”</p></td>
+<td><p>OEM revision for the given OEM Table ID. Per ACPI, "[an] OEM-supplied revision number. Larger numbers are assumed to be newer revisions."</p></td>
 </tr>
 <tr class="even">
 <td><p>Creator ID</p></td>
@@ -679,7 +679,7 @@ An ACPI table named “TPM2” listed in the “RSDT” ACPI table describes the
 <td><p>Platform Specific Parameters</p></td>
 <td><p>variable</p></td>
 <td><p>34h</p></td>
-<td><p>The content of the platform specific parameters is determined by the start mechanism used by this system’s TPM 2.0 device interface. This field contains values that may be used to initiate command processing. This information may be vendor specific. For Start Method values of 2 or 6 the field is not used and the Byte Length is zero.</p></td>
+<td><p>The content of the platform specific parameters is determined by the start mechanism used by this system's TPM 2.0 device interface. This field contains values that may be used to initiate command processing. This information may be vendor specific. For Start Method values of 2 or 6 the field is not used and the Byte Length is zero.</p></td>
 </tr>
 </tbody>
 </table>
@@ -820,13 +820,13 @@ The initial value for this field after ExitBootServices MUST be CLEAR.
 
 **4.4.1.4 Command**
 
-This is the physical address to which the Windows TPM 2.0 driver will write the command to execute. The Windows TPM 2.0 driver will never write a command larger than “Command Size”.
+This is the physical address to which the Windows TPM 2.0 driver will write the command to execute. The Windows TPM 2.0 driver will never write a command larger than "Command Size".
 
 The Windows TPM 2.0 driver MUST NOT write to this memory area unless the Start field is CLEAR. Note that the address is specified in little-endian format in the control area but the actual command buffer is in big-endian format as mandated by TCG.
 
 **4.4.1.5 Response**
 
-This is the physical address from which the Windows TPM 2.0 driver will read command responses. The Windows TPM 2.0 driver will never read a response larger than “Response Size”.
+This is the physical address from which the Windows TPM 2.0 driver will read command responses. The Windows TPM 2.0 driver will never read a response larger than "Response Size".
 
 The Windows TPM 2.0 driver will only read a response after the Start field changed from SET to CLEAR and Error is CLEAR. Note that the address is specified in little-endian format in the control area but the actual response buffer is in big-endian format as mandated by TCG.
 
@@ -838,7 +838,7 @@ For hardware platforms that use the Control Area as the TPM 2.0 interface, this 
 
 Table 5 describes the expected behavior for changes made by the Windows TPM 2.0 driver. Please note that only some combinations are allowed. Only the allowed combinations and changes are documented. All other combinations are invalid. Field changes without action by the Windows TPM 2.0 driver means the TPM 2.0 device or the ACPI Start method changed the fields.
 
-States marked with ‘0’ indicate that this field is CLEAR. States marked with ‘1’ indicate that this field is SET. States marked with ‘?’ indicate that the value of this field might be either CLEAR or SET. The status fields are abbreviated with: ‘ERR’ – Error, ‘CCL’ – Cancel, and ‘STR’ – Start. A field can be written either by the Windows TPM 2.0 driver or the TPM 2.0 device interface, which is detailed in the action column.
+States marked with '0' indicate that this field is CLEAR. States marked with '1' indicate that this field is SET. States marked with '?' indicate that the value of this field might be either CLEAR or SET. The status fields are abbreviated with: 'ERR' - Error, 'CCL' - Cancel, and 'STR' - Start. A field can be written either by the Windows TPM 2.0 driver or the TPM 2.0 device interface, which is detailed in the action column.
 
 <table style="width:100%;">
 <colgroup>
@@ -1031,7 +1031,7 @@ Windows requires the TPM 2.0 device to permit cancelling of a TPM 2.0 command us
 
 The previously unused bit 24 of the STS Register is defined as write only and referred to as commandCancel.
 
-A write of ‘1’ to commandCancel during the command execution phase MAY cancel the currently executing command and a response MUST be returned. The response indicates if the command was cancelled (no TPM 2.0 state change, but a cancel response code TPM\_RC\_CANCELLED is returned) or completed (a regular TPM 2.0 response is returned indicating the result of the command). Writes to the commandCancel register when the TPM is not in the command execution state MUST be ignored.
+A write of '1' to commandCancel during the command execution phase MAY cancel the currently executing command and a response MUST be returned. The response indicates if the command was cancelled (no TPM 2.0 state change, but a cancel response code TPM\_RC\_CANCELLED is returned) or completed (a regular TPM 2.0 response is returned indicating the result of the command). Writes to the commandCancel register when the TPM is not in the command execution state MUST be ignored.
 
 ### <span id="4.6.3_Additional_Requirements"></span><span id="4.6.3_additional_requirements"></span><span id="4.6.3_ADDITIONAL_REQUIREMENTS"></span>4.6.3 Additional Requirements
 
@@ -1054,19 +1054,19 @@ A write of ‘1’ to commandCancel during the command execution phase MAY cance
 <tbody>
 <tr class="odd">
 <td><p>[ACPI09]</p></td>
-<td><p>“Advanced Configuration and Power Interface Specification,” Version 4.0, June 16, 2009.</p></td>
+<td><p>"Advanced Configuration and Power Interface Specification," Version 4.0, June 16, 2009.</p></td>
 </tr>
 <tr class="even">
 <td><p>[TCG08]</p></td>
-<td><p>Trusted Computing Group, “TCG Platform Reset Attack Mitigation Specification,” Version 1.0, May 15, 2008.</p></td>
+<td><p>Trusted Computing Group, "TCG Platform Reset Attack Mitigation Specification," Version 1.0, May 15, 2008.</p></td>
 </tr>
 <tr class="odd">
 <td><p>[TCG11]</p></td>
-<td><p>Trusted Computing Group, “TCG Physical Presence Interface Specification,” Version 1.20, Feb. 10, 2011.</p></td>
+<td><p>Trusted Computing Group, "TCG Physical Presence Interface Specification," Version 1.20, Feb. 10, 2011.</p></td>
 </tr>
 <tr class="even">
 <td><p>[TCG12]</p></td>
-<td><p>Trusted Computing Group, “PC Client Work Group PC Client Specific TPM Interface Specification (TIS) Version 1.21, Revision 1.00.</p></td>
+<td><p>Trusted Computing Group, "PC Client Work Group PC Client Specific TPM Interface Specification (TIS) Version 1.21, Revision 1.00.</p></td>
 </tr>
 </tbody>
 </table>

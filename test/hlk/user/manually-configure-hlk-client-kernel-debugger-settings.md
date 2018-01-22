@@ -60,7 +60,7 @@ The steps to configure this setting are as follows:
 
     4.  Mini
 
-The crash dump collection setting is set on all machines in the specified machine pool, but it is not set for machines in any child machine pools. If you select **Disable**, the machine’s crash dump settings will persist on the client machine, but the crash dump collection for Windows HLK is disabled.
+The crash dump collection setting is set on all machines in the specified machine pool, but it is not set for machines in any child machine pools. If you select **Disable**, the machine's crash dump settings will persist on the client machine, but the crash dump collection for Windows HLK is disabled.
 
  
 

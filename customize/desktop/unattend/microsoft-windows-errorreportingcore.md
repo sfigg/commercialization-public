@@ -13,51 +13,21 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # Microsoft-Windows-ErrorReportingCore
-
 
 The Microsoft-Windows-ErrorReportingCore component specifies settings for error reporting. For more information about privacy concerns with error reporting, see [this Microsoft website](http://go.microsoft.com/fwlink/?linkid=50163).
 
 ## In This Section
 
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>[DefaultConsent](microsoft-windows-errorreportingcore-defaultconsent.md)</p></td>
-<td><p>Specifies in what circumstances the user is asked whether to send an error report.</p></td>
-</tr>
-<tr class="even">
-<td><p>[DisableWER](microsoft-windows-errorreportingcore-disablewer.md)</p></td>
-<td><p>Enables or disables error reporting.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Setting                 | Description                                                                           |
+|:------------------------|:--------------------------------------------------------------------------------------|
+| [DefaultConsent](microsoft-windows-errorreportingcore-defaultconsent.md) | Specifies in what circumstances the user is asked whether to send an error report. |
+| [DisableWER](microsoft-windows-errorreportingcore-disablewer.md) | Enables or disables error reporting. |
 
 ## Applies To
-
 
 To determine whether a component applies to the image you’re building, load your image into Windows SIM and search for the component or setting name. For information on how to view components and settings, see [Configure Components and Settings in an Answer File](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/wsim/configure-components-and-settings-in-an-answer-file).
 
 ## Related topics
 
-
 [Components](components-b-unattend.md)
-
- 
-
- 
-
-
-
-
-
-
-

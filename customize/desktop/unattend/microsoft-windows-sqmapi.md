@@ -21,8 +21,8 @@ This setting has no effect on Server Core installations.
 
 ## In This Section
 
-| Setting                                                 | Description                                                                              |
-|:--------------------------------------------------------|:-----------------------------------------------------------------------------------------|
+| Setting                 | Description                                                                           |
+|:------------------------|:--------------------------------------------------------------------------------------|
 | [CEIPEnabled](microsoft-windows-sqmapi-ceipenabled.md)   | Specifies whether Windows CEIP is enabled.                                               |
 
 ## Applies To

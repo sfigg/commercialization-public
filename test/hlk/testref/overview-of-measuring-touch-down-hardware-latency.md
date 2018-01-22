@@ -23,15 +23,15 @@ The starting point for latency measurement is a well-defined standard; it is the
 ## <span id="Methodology"></span><span id="methodology"></span><span id="METHODOLOGY"></span>Methodology
 
 
-This procedure relies on the acoustic/mechanical wave produced by the finger touching the digitizer in order to measure this latency. It is worth noting that even the slightest touch contact will produce a substantial acoustic/mechanical wave on the digitizer’s surface, which can clearly and unambiguously (that is, with extremely high SNR, virtually zero false positives, and almost no false negatives) be detected using even the simplest off-the-shelf microphones.
+This procedure relies on the acoustic/mechanical wave produced by the finger touching the digitizer in order to measure this latency. It is worth noting that even the slightest touch contact will produce a substantial acoustic/mechanical wave on the digitizer's surface, which can clearly and unambiguously (that is, with extremely high SNR, virtually zero false positives, and almost no false negatives) be detected using even the simplest off-the-shelf microphones.
 
-Methodology relies on the test subject manually touching the touch screen a number of times. This is because latency is probabilistic in nature – due to uncertainty inherent in the scanning function). This allows us to build an empirical cumulative distribution function. Predictable expectations for this function exist, enabling estimating the quality of the overall measurement. Using this data, you can extract basic parameters for the distribution.
+Methodology relies on the test subject manually touching the touch screen a number of times. This is because latency is probabilistic in nature - due to uncertainty inherent in the scanning function). This allows us to build an empirical cumulative distribution function. Predictable expectations for this function exist, enabling estimating the quality of the overall measurement. Using this data, you can extract basic parameters for the distribution.
 
 Each measurement is executed fairly simply: a test subject touches the digitizer with a finger, creating the acoustic/mechanical wave. A small-but-measurable delay between the actual contact and the moment the wave reaches the microphone on the digitizer is recorded. The wave is then detected by the microphone, amplified and thresholded appropriately, hence it is being converted to logical 0 or 1 level). This logical value is fed into the microcontroller board (for example, an AT90USBKEY2), which accepts this change with low latency (~µs) and transmits it to the device under test with at most 1ms latency, via a USB HID report (1ms is the minimum polling period for full-speed USB devices such as the AT90USBKEY2).
 
 On the host (that is, the device under test) side, two events are being anticipated. The first is the reception of an HID report from the microcontroller board, indicating that physical contact took place. The second is the HID report from the touch digitizer. The difference in time between the two reports represents the touch down latency.
 
-There are two uncertainties in this measurement; a method was devised to reduce both. The first uncertainty is that there is a time delay between the actual contact and the time the wave reaches the microphone (or to be more specific, between the actual contact and the time logical 1 is received on the microcontroller). This is compensated for by adding an additional step to the methodology – a calibration. Before beginning latency measurements, the time it takes for the wave to propagate from the farthest position on the digitizer to the microphone (microcontroller) is measured. This information is used to provide an absolute error estimate for each individual measurement later. In most cases this is below 2ms (depending on the size of the screen and materials used for the digitizer’s surface).
+There are two uncertainties in this measurement; a method was devised to reduce both. The first uncertainty is that there is a time delay between the actual contact and the time the wave reaches the microphone (or to be more specific, between the actual contact and the time logical 1 is received on the microcontroller). This is compensated for by adding an additional step to the methodology - a calibration. Before beginning latency measurements, the time it takes for the wave to propagate from the farthest position on the digitizer to the microphone (microcontroller) is measured. This information is used to provide an absolute error estimate for each individual measurement later. In most cases this is below 2ms (depending on the size of the screen and materials used for the digitizer's surface).
 
 The second uncertainty is the latency introduced by the USB channel between the microcontroller and the host computer (the device under test). This is dealt with by introducing a 48-bit timestamp to each HID report from the microcontroller. This timestamp is set when logical 1 has been detected on the input port of the microcontroller (with ~µs latency between this event and the generation of the timestamp value). Then the clocks on the host (the computer being tested) and the target (microcontroller) side can be synchronized to yield the most precise results.
 
@@ -42,15 +42,15 @@ This methodology can be fully automated and is fully repeatable; a robot could b
 
 This section details the required hardware components. The purpose for of piece of equipment is described but actual part numbers are not provided here (these will be provided later in this paper.
 
--   A microphone – to detect acoustical waves on the touch digitizer. A small and flat piezoelectric microphone that can easily be taped to the touch screen is recommended.
+-   A microphone - to detect acoustical waves on the touch digitizer. A small and flat piezoelectric microphone that can easily be taped to the touch screen is recommended.
 
--   An acoustic amplifier – to amplify the signal from the microphone.
+-   An acoustic amplifier - to amplify the signal from the microphone.
 
--   A thresholding circuit – to distinguish touch sound from environmental noise.
+-   A thresholding circuit - to distinguish touch sound from environmental noise.
 
 -   A microcontroller board with USB HID capability and polling ability on at least two input ports with ~µs latency.
 
--   Calibration circuit – to measure acoustic wave propagation, that is, the time between the touch occurring and logical 1 being received on the microcontroller.
+-   Calibration circuit - to measure acoustic wave propagation, that is, the time between the touch occurring and logical 1 being received on the microcontroller.
 
 The next section discusses an implementation of touch down latency measurement setup.
 
@@ -83,7 +83,7 @@ The red rectangle delineated area (port C of the AT90USBKEY board) of the preced
 
 ![pins c0, c1, and ground highlighted](images/hck-touchdownhardwarelatency6.jpg)
 
-For more information about this board please visit manufacturer’s [web site](http://www.atmel.com/tools/AT90USBKEY.aspx) and [hardware user guide](http://www.atmel.com/Images/doc7627.pdf) for the board.
+For more information about this board please visit manufacturer's [web site](http://www.atmel.com/tools/AT90USBKEY.aspx) and [hardware user guide](http://www.atmel.com/Images/doc7627.pdf) for the board.
 
  
 

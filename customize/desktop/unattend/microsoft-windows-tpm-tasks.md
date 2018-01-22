@@ -10,37 +10,16 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # Microsoft-Windows-TPM-Tasks
 
 The `Microsoft-Windows-TPM-Tasks` component specifies settings for the Trusted Platform Module (TPM).
 
 ## In this section
 
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Topic</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>[ClearTpm](microsoft-windows-tpm-tasks-cleartpm.md)</p></td>
-<td><p><code>ClearTpm</code> specifies whether the TPM is cleared duing Windows setup.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Setting                 | Description                                                                           |
+|:------------------------|:--------------------------------------------------------------------------------------|
+| [ClearTpm](microsoft-windows-tpm-tasks-cleartpm.md) | <code>ClearTpm</code> specifies whether the TPM is cleared duing Windows setup. |
 
 ## Applies to
 
-
 To determine whether a component applies to the image you’re building, load your image into Windows SIM and search for the component or setting name. For information on how to view components and settings, see [Configure Components and Settings in an Answer File](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/wsim/configure-components-and-settings-in-an-answer-file).
-

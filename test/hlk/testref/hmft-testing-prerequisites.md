@@ -16,7 +16,7 @@ ms.technology: windows-oem
 # HMFT Testing Prerequisites
 
 
-This section describes the tasks that you must complete before you test a Hardware Media Foundation Transform (HMFT)–compliant device by using the Windows Hardware Lab Kit (Windows HLK):
+This section describes the tasks that you must complete before you test a Hardware Media Foundation Transform (HMFT)-compliant device by using the Windows Hardware Lab Kit (Windows HLK):
 
 -   [Hardware requirements](#bkmk-hck-hmft-hr)
 

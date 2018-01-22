@@ -13,9 +13,7 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # ModifyPartition
-
 
 `ModifyPartition` specifies a single partition on a disk to be modified
 
@@ -23,132 +21,45 @@ One or more `ModifyPartition` list items can exist in the [ModifyPartitions](mic
 
 The following table shows the modifications that can be made to various partition types.
 
-Partition Type
-Active
-Extend
-Format
-Letter
-Label
-TypeID
-**Primary**
+| Partition Type        | Active    | Extend    | Format    | Letter    | Label    | TypeID    |
+|:----------------------|:----------|:----------|:----------|:----------|:---------|:----------|
+| **Primary**           | Yes       | Yes       | Yes       | Yes       | Yes      | Yes       |
+| **Logical**           | No        | Yes       | Yes       | Yes       | Yes      | Yes       |
+| **EFI System (ESP)**  | No        | No        | Yes       | Yes       | Yes      | No        |
 
-Yes
-
-Yes
-
-Yes
-
-Yes
-
-Yes
-
-Yes
-
-**Logical**
-
-No
-
-Yes
-
-Yes
-
-Yes
-
-Yes
-
-Yes
-
-**EFI System (ESP)**
-
-No
-
-No
-
-Yes
-
-Yes
-
-Yes
-
-No
-
-**Microsoft Reserved (MSR)**
-
-MSR partitions cannot be modified.
-
-**Extended**
-
-Extended partitions cannot be modified.
-
- 
+> [!Note]
+> **Microsoft Reserved (MSR)** and **Extended** partitions cannot be modified.
 
 ## Child Elements
 
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>[Active](microsoft-windows-setup-diskconfiguration-disk-modifypartitions-modifypartition-active.md)</p></td>
-<td><p>Specifies whether the partition is active.</p></td>
-</tr>
-<tr class="even">
-<td><p>[Extend](microsoft-windows-setup-diskconfiguration-disk-modifypartitions-modifypartition-extend.md)</p></td>
-<td><p>Specifies whether to extend the partition to use the remainder of the contiguous space on the hard disk.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[Format](microsoft-windows-setup-diskconfiguration-disk-modifypartitions-modifypartition-format.md)</p></td>
-<td><p>Specifies the file-system format to apply to the partition.</p></td>
-</tr>
-<tr class="even">
-<td><p>[Label](microsoft-windows-setup-diskconfiguration-disk-modifypartitions-modifypartition-label.md)</p></td>
-<td><p>Specifies the name to apply to the partition.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[Letter](microsoft-windows-setup-diskconfiguration-disk-modifypartitions-modifypartition-letter.md)</p></td>
-<td><p>Specifies the drive letter to assign to the partition.</p></td>
-</tr>
-<tr class="even">
-<td><p>[Order](microsoft-windows-setup-diskconfiguration-disk-modifypartitions-modifypartition-order.md)</p></td>
-<td><p>Specifies the order in which the partition will be modified.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[PartitionID](microsoft-windows-setup-diskconfiguration-disk-modifypartitions-modifypartition-partitionid.md)</p></td>
-<td><p>Specifies the identification number of the partition to modify.</p></td>
-</tr>
-<tr class="even">
-<td><p>[TypeID](microsoft-windows-setup-diskconfiguration-disk-modifypartitions-modifypartition-typeid.md)</p></td>
-<td><p>Specifies the hard drive partition type.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Setting                 | Description                                                                           |
+|:------------------------|:--------------------------------------------------------------------------------------|
+| [Active](microsoft-windows-setup-diskconfiguration-disk-modifypartitions-modifypartition-active.md) | Specifies whether the partition is active. |
+| [Extend](microsoft-windows-setup-diskconfiguration-disk-modifypartitions-modifypartition-extend.md) | Specifies whether to extend the partition to use the remainder of the contiguous space on the hard disk. |
+| [Format](microsoft-windows-setup-diskconfiguration-disk-modifypartitions-modifypartition-format.md) | Specifies the file-system format to apply to the partition. |
+| [Label](microsoft-windows-setup-diskconfiguration-disk-modifypartitions-modifypartition-label.md) | Specifies the name to apply to the partition. |
+| [Letter](microsoft-windows-setup-diskconfiguration-disk-modifypartitions-modifypartition-letter.md) | Specifies the drive letter to assign to the partition. |
+| [Order](microsoft-windows-setup-diskconfiguration-disk-modifypartitions-modifypartition-order.md) | Specifies the order in which the partition will be modified. |
+| [PartitionID](microsoft-windows-setup-diskconfiguration-disk-modifypartitions-modifypartition-partitionid.md) | Specifies the identification number of the partition to modify. |
+| [TypeID](microsoft-windows-setup-diskconfiguration-disk-modifypartitions-modifypartition-typeid.md) | Specifies the hard drive partition type. |
 
 ## Valid Configuration Passes
-
 
 windowsPE
 
 ## Parent Hierarchy
 
-
-[microsoft-windows-setup-](microsoft-windows-setup.md) | [DiskConfiguration](microsoft-windows-setup-diskconfiguration.md) | [Disk](microsoft-windows-setup-diskconfiguration-disk.md) | [ModifyPartitions](microsoft-windows-setup-diskconfiguration-disk-modifypartitions.md) | **ModifyPartition**
+[Microsoft-Windows-Setup](microsoft-windows-setup.md) | [DiskConfiguration](microsoft-windows-setup-diskconfiguration.md) | [Disk](microsoft-windows-setup-diskconfiguration-disk.md) | [ModifyPartitions](microsoft-windows-setup-diskconfiguration-disk-modifypartitions.md) | **ModifyPartition**
 
 ## Applies To
 
-
-For a list of the Windows editions and architectures that this component supports, see [microsoft-windows-setup-](microsoft-windows-setup.md).
+For a list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-Setup](microsoft-windows-setup.md).
 
 ## XML Example
 
-
 The following XML output shows two partition modifications. The first modification formats the partition for the NTFS file system, marks the partition as active, and labels it "System". The second modification formats the second partition on the disk to NTFS, labels it "Windows", and extends the partition to fill the remainder of the disk.
 
-```
+```XML
 <DiskConfiguration>
 
   <Disk wcm:action="add">
@@ -210,16 +121,4 @@ The following XML output shows two partition modifications. The first modificati
 
 ## Related topics
 
-
 [ModifyPartitions](microsoft-windows-setup-diskconfiguration-disk-modifypartitions.md)
-
- 
-
- 
-
-
-
-
-
-
-

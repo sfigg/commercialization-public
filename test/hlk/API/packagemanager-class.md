@@ -16,7 +16,7 @@ ms.technology: windows-oem
 # PackageManager Class
 
 
-This class include methods that handle opening a certification package and presenting the contents to the Windows® Hardware Certification Kit (Windows HCK) object model.
+This class include methods that handle opening a certification package and presenting the contents to the Windows Hardware Certification Kit (Windows HCK) object model.
 
 **Namespace:** Microsoft.Windows.Kits.Hardware.ObjectModel.Submission
 

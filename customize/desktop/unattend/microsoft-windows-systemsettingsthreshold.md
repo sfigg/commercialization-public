@@ -13,51 +13,21 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # Microsoft-Windows-SystemSettingsThreshold
-
 
 The Microsoft-Windows-SystemSettingsThreshold component implements settings related to mobile broadband.
 
 ## In This Section
 
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>[DisplayNetworkSelection](microsoft-windows-systemsettingsthreshold-displaynetworkselection.md)</p></td>
-<td><p>Specify whether to always show the Network Selection control in the <strong>Mobile Broadband Properties</strong> dialog.</p></td>
-</tr>
-<tr class="even">
-<td><p>[WiFiToWlan](microsoft-windows-systemsettingsthreshold-wifitowlan.md)</p></td>
-<td><p>Use &quot;WLAN&quot; instead of &quot;Wi-Fi&quot; for the heading in the Networks list.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Setting                 | Description                                                                           |
+|:------------------------|:--------------------------------------------------------------------------------------|
+| [DisplayNetworkSelection](microsoft-windows-systemsettingsthreshold-displaynetworkselection.md) | Specify whether to always show the Network Selection control in the <strong>Mobile Broadband Properties</strong> dialog. |
+| [WiFiToWlan](microsoft-windows-systemsettingsthreshold-wifitowlan.md) | Use &quot;WLAN&quot; instead of &quot;Wi-Fi&quot; for the heading in the Networks list. |
 
 ## Applies To
-
 
 To determine whether a component applies to the image you’re building, load your image into Windows SIM and search for the component or setting name. For information on how to view components and settings, see [Configure Components and Settings in an Answer File](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/wsim/configure-components-and-settings-in-an-answer-file).
 
 ## Related topics
 
-
 [Components](components-b-unattend.md)
-
- 
-
- 
-
-
-
-
-
-
-

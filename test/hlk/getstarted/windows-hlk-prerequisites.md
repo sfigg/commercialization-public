@@ -38,7 +38,7 @@ Before you begin testing, be sure that the test environment meets the necessary 
 
 There are two deployment scenarios for Windows HLK:
 
--   **Domain-joined environment.** In a domain-joined environment, a domain controller is present and all computers designated for Windows HLK features are joined to the same domain controller. If you plan to deploy Windows HLK in a domain-joined environment, you need a minimum of three computers: a Windows domain controller, a Windows HLK test server, and at least one Windows HLK test system. Make sure that Microsoft Active Directory® is configured and running on the domain controller. Your domain controller and HLK test server cannot be on the same box.
+-   **Domain-joined environment.** In a domain-joined environment, a domain controller is present and all computers designated for Windows HLK features are joined to the same domain controller. If you plan to deploy Windows HLK in a domain-joined environment, you need a minimum of three computers: a Windows domain controller, a Windows HLK test server, and at least one Windows HLK test system. Make sure that Microsoft Active Directory is configured and running on the domain controller. Your domain controller and HLK test server cannot be on the same box.
 
 -   **Workgroup environment.** A workgroup environment has no domain controller. If you plan to deploy Windows HLK in a workgroup, you need at least two computers: a test server and a test system joined to the same workgroup. **Don't** use the Default Administrator account. In this configuration, you must enable the Guest account.
 
@@ -142,13 +142,13 @@ The following image shows an example test environment.
 <td><p>Operating system</p></td>
 <td><p>Install the English language and English local version of the Windows operating system that you are testing against.</p>
 <p>Test systems are not supported in a virtual PC or any third-party Hypervisor environment.</p>
-<p>If you are testing against a Windows “N” edition, you must also manually install Media Feature Pack.</p>
+<p>If you are testing against a Windows "N" edition, you must also manually install Media Feature Pack.</p>
 <p>Windows 10S users should test against Windows 10 Pro.</p>
 </td>
 </tr>
 <tr class="even">
 <td><p>Additional requirements</p></td>
-<td><p>Many of the tests require a test system to restart—often more than once—to complete a test run. So, we recommend that you:</p>
+<td><p>Many of the tests require a test system to restart--often more than once--to complete a test run. So, we recommend that you:</p>
 <ul>
 <li><p>Configure test systems to boot from the regular boot sector of a hard drive and not from external devices, CDs, or DVD boot discs.</p></li>
 </ul>

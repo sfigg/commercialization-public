@@ -13,9 +13,7 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # FavoriteBarItem
-
 
 `FavoriteBarItem` contains the settings used to add predefined Favorite items to the Favorite bar.
 
@@ -25,89 +23,52 @@ To add a predefined Favorite bar item in Windows System Image Manager, add the 
 
 ## Child Elements
 
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>[ItemKey](microsoft-windows-ie-internetexplorer-favoritebaritems-favoritebaritem-itemkey.md)</p></td>
-<td><p>Specifies a unique key for the Favorite bar item.</p></td>
-</tr>
-<tr class="even">
-<td><p>[ItemName](microsoft-windows-ie-internetexplorer-favoritebaritems-favoritebaritem-itemname.md)</p></td>
-<td><p>Specifies the name that appears in the Favorite bar.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[ItemType](microsoft-windows-ie-internetexplorer-favoritebaritems-favoritebaritem-itemtype.md)</p></td>
-<td><p>Specifies the type of Favorite.</p></td>
-</tr>
-<tr class="even">
-<td><p>[ItemUrl](microsoft-windows-ie-internetexplorer-favoritebaritems-favoritebaritem-itemurl.md)</p></td>
-<td><p>Specifies the path to the Favorite.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Setting                 | Description                                                                           |
+|:------------------------|:--------------------------------------------------------------------------------------|
+| [ItemKey](microsoft-windows-ie-internetexplorer-favoritebaritems-favoritebaritem-itemkey.md) | Specifies a unique key for the Favorite bar item. |
+| [ItemName](microsoft-windows-ie-internetexplorer-favoritebaritems-favoritebaritem-itemname.md) | Specifies the name that appears in the Favorite bar. |
+| [ItemType](microsoft-windows-ie-internetexplorer-favoritebaritems-favoritebaritem-itemtype.md) | Specifies the type of Favorite. |
+| [ItemUrl](microsoft-windows-ie-internetexplorer-favoritebaritems-favoritebaritem-itemurl.md) | Specifies the path to the Favorite. |
 
 ## Valid Configuration Passes
-
 
 specialize
 
 ## Parent Hierarchy
 
-
 [Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md) | [FavoriteBarItems](microsoft-windows-ie-internetexplorer-favoritebaritems.md)| **FavoriteBarItem**
 
 ## Applies To
-
 
 For a list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md).
 
 ## XML Example
 
-
 The following XML example shows three Favorite bar items.
 
-```
-<FavoriteBarItems> 
-  <FavoriteBarItem> 
-    <ItemKey>1</ItemKey> 
-    <ItemName>Name1</ItemName> 
-    <ItemUrl>http://www.fabrikam.com/stockwatch#stockprice</ItemUrl> 
-    <ItemType>Webslice</ItemType> 
-  </FavoriteBarItem> 
-  <FavoriteBarItem> 
-    <ItemKey>2</ItemKey> 
-    <ItemName>Name2</ItemName> 
-    <ItemUrl>http://www.msn.com/rss/ie8_slideshow.aspx</ItemUrl> 
-    <ItemType>Webslice</ItemType> 
-  </FavoriteBarItem> 
-  <FavoriteBarItem> 
-    <ItemKey>3</ItemKey> 
-    <ItemName>Name3</ItemName> 
-    <ItemUrl>http://www.fabrikam.com/xml/HomePage.xml</ItemUrl> 
-    <ItemType>Headline</ItemType> 
-  </FavoriteBarItem> 
+```XML
+<FavoriteBarItems>
+  <FavoriteBarItem>
+    <ItemKey>1</ItemKey>
+    <ItemName>Name1</ItemName>
+    <ItemUrl>http://www.fabrikam.com/stockwatch#stockprice</ItemUrl>
+    <ItemType>Webslice</ItemType>
+  </FavoriteBarItem>
+  <FavoriteBarItem>
+    <ItemKey>2</ItemKey>
+    <ItemName>Name2</ItemName>
+    <ItemUrl>http://www.msn.com/rss/ie8_slideshow.aspx</ItemUrl>
+    <ItemType>Webslice</ItemType>
+  </FavoriteBarItem>
+  <FavoriteBarItem>
+    <ItemKey>3</ItemKey>
+    <ItemName>Name3</ItemName>
+    <ItemUrl>http://www.fabrikam.com/xml/HomePage.xml</ItemUrl>
+    <ItemType>Headline</ItemType>
+  </FavoriteBarItem>
 </FavoriteBarItems>
 ```
 
 ## Related topics
 
-
 [Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md)
-
- 
-
- 
-
-
-
-
-
-
-

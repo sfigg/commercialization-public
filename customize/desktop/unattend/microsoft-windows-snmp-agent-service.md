@@ -13,9 +13,7 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # Microsoft-Windows-SNMP-Agent-Service
-
 
 The Microsoft-Windows-SNMP-Agent-Service component enables the computer to process Simple Network Management Protocol (SNMP) requests. The service receives the SNMP requests from the network, decodes them, and then dispatches them to the appropriate SNMP Extension agent.
 
@@ -29,61 +27,18 @@ For more information, see [Simple Network Management Protocol](http://go.microso
 
 ## In This Section
 
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Term</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>[EnableAuthenticationTraps](microsoft-windows-snmp-agent-service-enableauthenticationtraps.md)</p></td>
-<td><p>Specifies whether to send an authentication trap when an unauthorized community or host requests information.</p></td>
-</tr>
-<tr class="even">
-<td><p>[PermittedManagers](microsoft-windows-snmp-agent-service-permittedmanagers.md)</p></td>
-<td><p>Specifies whether the computer accepts SNMP requests from any host or from only a set of hosts. If no permitted managers are specified, then the SNMP service accepts packets from any host.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[RFC1156Agent](microsoft-windows-snmp-agent-service-rfc1156agent.md)</p></td>
-<td><p>Specifies details about the computer.</p></td>
-</tr>
-<tr class="even">
-<td><p>[TrapConfiguration](microsoft-windows-snmp-agent-service-trapconfiguration.md)</p></td>
-<td><p>Specifies details about the trap configurations used by the computer.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[ValidCommunities](microsoft-windows-snmp-agent-service-validcommunities.md)</p></td>
-<td><p>Specifies the community names from which the computer running the SNMP service can handle requests for a management application, such as GET, SET, GETNEXT, and GETBULK.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Setting                 | Description                                                                           |
+|:------------------------|:--------------------------------------------------------------------------------------|
+| [EnableAuthenticationTraps](microsoft-windows-snmp-agent-service-enableauthenticationtraps.md) | Specifies whether to send an authentication trap when an unauthorized community or host requests information. |
+| [PermittedManagers](microsoft-windows-snmp-agent-service-permittedmanagers.md) | Specifies whether the computer accepts SNMP requests from any host or from only a set of hosts. If no permitted managers are specified, then the SNMP service accepts packets from any host. |
+| [RFC1156Agent](microsoft-windows-snmp-agent-service-rfc1156agent.md) | Specifies details about the computer. |
+| [TrapConfiguration](microsoft-windows-snmp-agent-service-trapconfiguration.md) | Specifies details about the trap configurations used by the computer. |
+| [ValidCommunities](microsoft-windows-snmp-agent-service-validcommunities.md) | Specifies the community names from which the computer running the SNMP service can handle requests for a management application, such as GET, SET, GETNEXT, and GETBULK. |
 
 ## Applies To
-
 
 To determine whether a component applies to the image you’re building, load your image into Windows SIM and search for the component or setting name. For information on how to view components and settings, see [Configure Components and Settings in an Answer File](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/wsim/configure-components-and-settings-in-an-answer-file).
 
 ## Related topics
 
-
 [Components](components-b-unattend.md)
-
- 
-
- 
-
-
-
-
-
-
-

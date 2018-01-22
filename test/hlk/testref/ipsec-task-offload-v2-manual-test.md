@@ -133,15 +133,15 @@ Test installation steps are nearly the same for both the machines with some uniq
 
 7.  After the Test software installation, the next step is to examine the configuration file and to make some adjustments to accommodate local environment specific setting.
 
-8.  First examine the IPsec\_Controller’s configuration files found in \[SystemDrive\]\\iketest folder. There are two configuration files on the IPsec\_Controller machine. Assuming 10.199.48.214 and 2001:4898:1b:1040:2046:c2fb:5a16:d1c1 are the (CorpNIC’s) IPv4 and IPv6 addresses of IPsec\_Controller’s machine respectively, you should expect something like this in one of the configuration files called Microsoft.CoreNetworking.ScenarioServer.config.
+8.  First examine the IPsec\_Controller's configuration files found in \[SystemDrive\]\\iketest folder. There are two configuration files on the IPsec\_Controller machine. Assuming 10.199.48.214 and 2001:4898:1b:1040:2046:c2fb:5a16:d1c1 are the (CorpNIC's) IPv4 and IPv6 addresses of IPsec\_Controller's machine respectively, you should expect something like this in one of the configuration files called Microsoft.CoreNetworking.ScenarioServer.config.
 
     ![scenarioserver.config](images/hck-win8-lan-ipsecscenarioserverconfig.png)
 
-9.  Next, examine the IPsec\_Controller’s controller configuration by opening the following file:
+9.  Next, examine the IPsec\_Controller's controller configuration by opening the following file:
 
     ![perseusaddin](images/hck-win8-lan-ipsecperseusaddin.png)
 
-10. There is one configuration file on the IPsec\_Client machine. Examine the IPsec\_Client’s scenarioServer configuration Microsoft.CoreNetworking.ScenarioServer.config. It should have the IPsec\_Client’s IPv4 and/or IPv6 addresses registered as well.
+10. There is one configuration file on the IPsec\_Client machine. Examine the IPsec\_Client's scenarioServer configuration Microsoft.CoreNetworking.ScenarioServer.config. It should have the IPsec\_Client's IPv4 and/or IPv6 addresses registered as well.
 
     This configuration file defines how the IPsec\_Controller machine test kit program would communicate with the local and the remote IPsec\_Client test programs to perform the logo certification process. The IPsec\_Controller and IPsec\_Client IPv4 and IPv6 addresses should all be registered in this configuration file.
 
@@ -151,9 +151,9 @@ Test installation steps are nearly the same for both the machines with some uniq
 
     If the scenario is in RUNNING state, this verifies that the ScenarioService is ready to perform the logo test.
 
-    If you have made changes to any of the test configuration files, you must stop the Windows NT Service ‘scenarioService’ and restart it (for example, **net stop scenarioservice && net start scenarioservice**).
+    If you have made changes to any of the test configuration files, you must stop the Windows NT Service 'scenarioService' and restart it (for example, **net stop scenarioservice && net start scenarioservice**).
 
-    Also if your test machines corpnet interface is assigned with DHCP addresses, these addresses assigned to your corpnet NIC might have a defined address lifetime based on the DHCP lease limit. In typical circumstances, we expect the tests to be performed immediately after installation. In the case when these IP addresses changed as result of address renewal or you try to perform the test after a prolonged period, you must update these configuration files manually again and recycle the ‘scenarioService’ service.
+    Also if your test machines corpnet interface is assigned with DHCP addresses, these addresses assigned to your corpnet NIC might have a defined address lifetime based on the DHCP lease limit. In typical circumstances, we expect the tests to be performed immediately after installation. In the case when these IP addresses changed as result of address renewal or you try to perform the test after a prolonged period, you must update these configuration files manually again and recycle the 'scenarioService' service.
 
 12. If the NIC Adapter is not enabled for IPsec Offload, you will have to enable that. Windows 8 will have a Windows PowerShell script to enable the IPsec Offload adapter IPsec TaskOffload later. For the time, use the IHV specific operation to enable the IPsec Task Offload capability.
 
@@ -173,17 +173,17 @@ Test installation steps are nearly the same for both the machines with some uniq
 
     1.  Run the Perseus Studio (\[SystemDrive\]\\iketest\\PerseusStudio.exe) from IPsec\_Controller machine. This is the UI version of the above explained cmdline execution.
 
-    2.  Select “Profile” INVALID USE OF SYMBOLS “Add-module”. Select module type: “IPSec Scenario Testing Add-in” and click “ok”. Browse to “\[Systemdrive\]\\iketest\\Suites\\TOv2Logo.xml” and click open.
+    2.  Select "Profile" INVALID USE OF SYMBOLS "Add-module". Select module type: "IPSec Scenario Testing Add-in" and click "ok". Browse to "\[Systemdrive\]\\iketest\\Suites\\TOv2Logo.xml" and click open.
 
     3.  The module will be loaded in the Perseus Studio, visible on the left hand side pane. Select the appropriate checkboxes in front of the tests you desire to run.
 
-    4.  Choose “Start Profile Execution in Process” or press F5 to start the test execution.
+    4.  Choose "Start Profile Execution in Process" or press F5 to start the test execution.
 
     5.  The progress of the execution and corresponding logs will be visible on the right hand side pane. All the logs will also be placed in the appropriate locations as in the case with the cmdline execution of these tests explained above.
 
 17. Generated log files:
 
-    -   The main log file “TOv2Logo.xml.wtl” will be placed in \[Systemdrive\]\\iketest directory. This can be opened using the HLK manager.
+    -   The main log file "TOv2Logo.xml.wtl" will be placed in \[Systemdrive\]\\iketest directory. This can be opened using the HLK manager.
 
     -   The individual test case failure logs are placed in \[Systemdrive\]\\iketest\\Logs directory.
 

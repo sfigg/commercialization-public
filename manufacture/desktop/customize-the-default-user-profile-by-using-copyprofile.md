@@ -1,5 +1,5 @@
 ---
-author: Justinha
+author: themar
 Description: Customize the Default User Profile by Using CopyProfile
 ms.assetid: 4aa887d1-1ecb-4fad-9119-ac851c273ab3
 MSHAttr: 'PreferredLib:/library/windows/hardware'
@@ -14,9 +14,17 @@ ms.technology: windows-oem
 # Customize the Default User Profile by Using CopyProfile
 
 
-You can use the `CopyProfile` setting to customize a user profile and then copy that profile to the default user profile. Windows® uses the default user profile as a template to assign a profile to each new user. By customizing the default user profile, you can configure settings for all user accounts that are created on the computer. By using `CopyProfile`, you can customize installed applications, drivers, desktop backgrounds, internet explorer settings, and other configurations. Note that some settings are not preserved by using `CopyProfile`.
+You can use the `CopyProfile` setting to customize a user profile and then copy that profile to the default user profile. Windows uses the default user profile as a template to assign a profile to each new user. By customizing the default user profile, you can configure settings for all user accounts that are created on the computer. By using `CopyProfile`, you can customize installed applications, drivers, desktop backgrounds, internet explorer settings, and other configurations. Note that some settings are not preserved by using `CopyProfile`.
 
-Enterprise and IT Professionals can use `CopyProfile` to preserve the customized tile layout of groups on the **Start** screen.
+> [!note]
+> Using CopyProfile for Start menu customization isn't supported. Here are the ways to manage custom Start layouts in Windows 10:
+>   -	OEMs can use layoutmodification.xml. See [Customize the Start layout](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/customize-start-layout) for more information.
+>   -	IT pros can use the following resources learn about managing the Windows 10 Start Menu:
+>       - [Customize Windows 10 Start and taskbar with Group Policy](https://docs.microsoft.com/en-us/windows/configuration/customize-windows-10-start-screens-by-using-group-policy)
+>       - [Windows 10 Start Layout Customization](https://blogs.technet.microsoft.com/deploymentguys/2016/03/07/windows-10-start-layout-customization/)
+
+
+
 
 ## <span id="bkmk_preserve"></span><span id="BKMK_PRESERVE"></span>Creating an answer file with the CopyProfile setting
 
@@ -55,15 +63,15 @@ Use the following procedure to configure user settings in audit mode and then ge
 
 1.  Install Windows on a reference computer and boot in audit mode. For more information, see [Boot Windows to Audit Mode or OOBE](boot-windows-to-audit-mode-or-oobe.md).
 
-    **Important**  
-    Don't use a domain account, because the `CopyProfile` setting runs after the computer is removed from the domain when you run **Sysprep**. As a result, you'll lose any settings that you configured in a domain. If you change the default user profile and then join the computer to a domain, the customizations that you made to the default user profile will appear on new domain accounts.
+    > [!important]
+    > Don't use a domain account, because the `CopyProfile` setting runs after the computer is removed from the domain when you run **Sysprep**. As a result, you'll lose any settings that you configured in a domain. If you change the default user profile and then join the computer to a domain, the customizations that you made to the default user profile will appear on new domain accounts.
 
      
 
 2.  Customize the built-in administrator account by installing applications, desktop shortcuts, and other settings.
 
-    **Important**  
-    There is a limit to the number of provisioned Windows Runtime-based apps that you can install. However you can create scripts to install additional non-provisioned apps. For more information, see [Sideload Apps with DISM](sideload-apps-with-dism-s14.md).
+    > [!important]
+    > There is a limit to the number of provisioned Windows Runtime-based apps that you can install. However you can create scripts to install additional non-provisioned apps. For more information, see [Sideload Apps with DISM](sideload-apps-with-dism-s14.md).
 
      
 
@@ -84,8 +92,8 @@ After the image is generalized, the computer shuts down, capture the image by bo
 
 After the customized image is deployed to a destination computer, you can test the user profile customizations. You can go through Out-Of-Box Experience (OOBE) to test the end user experience, or you can test the user customizations in audit mode.
 
-**Important**  
-Apps based on the Windows Runtime won't start in audit mode because audit mode uses the built-in administrator account. To run Windows Runtime-based apps you must modify a registry key before you can validate your Windows installation in audit mode.
+> [!important]
+> Apps based on the Windows Runtime won't start in audit mode because audit mode uses the built-in administrator account. To run Windows Runtime-based apps you must modify a registry key before you can validate your Windows installation in audit mode.
 
  
 
@@ -133,9 +141,9 @@ If the user profile settings aren't successfully copied:
     2.  Click **Control Panel**, and then click **Add or remove user accounts**.
 
     3.  Select any additional user account other than the built-in administrator account that you configured, and then delete it.
-
-    **Note**  
-    Delete all other user accounts on the computer before you customize the built-in administrator account.
+        
+        > [!note]
+        > Delete all other user accounts on the computer before you customize the built-in administrator account.
 
      
 

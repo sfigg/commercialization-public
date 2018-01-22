@@ -21,26 +21,11 @@ Client systems use the SMB protocol to request file, print, and communications s
 
 ## In This Section
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="even">
-<td><p>[AllowInsecureGuestAuth](microsoft-windows-workstationservice-allowinsecureguestauth.md)</p></td>
-<td><p>Specifies whether an SMB client allows insecure guest logons to an SMB server.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[OtherDomains](microsoft-windows-workstationservice-otherdomains.md)</p></td>
-<td><p>Specifies Microsoft LAN Manager domains to be listed for browsing.</p></td>
-</tr>
-<tr class="even">
-<td><p>[SyncDomainWithMembership](microsoft-windows-workstationservice-syncdomainwithmembership.md)</p></td>
-<td><p>Specifies whether the primary Domain Name Service (DNS) suffix changes when domain membership changes.</p></td>
-</tr>
-</tbody>
-</table>
+| Setting                 | Description                                                                           |
+|:------------------------|:--------------------------------------------------------------------------------------|
+| [AllowInsecureGuestAuth](microsoft-windows-workstationservice-allowinsecureguestauth.md) | Specifies whether an SMB client allows insecure guest logons to an SMB server. |
+| [OtherDomains](microsoft-windows-workstationservice-otherdomains.md) | Specifies Microsoft LAN Manager domains to be listed for browsing. |
+| [SyncDomainWithMembership](microsoft-windows-workstationservice-syncdomainwithmembership.md) | Specifies whether the primary Domain Name Service (DNS) suffix changes when domain membership changes. |
 
 ## Applies To
 

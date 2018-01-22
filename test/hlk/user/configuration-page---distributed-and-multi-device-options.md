@@ -75,7 +75,7 @@ In addition to multi-device testing, you can further reduce test time on certain
 
     AND
 
--   The child node **ONLY** exposes DevFund types (i.e. only displays feature of type “Device.Devfund.\*”)
+-   The child node **ONLY** exposes DevFund types (i.e. only displays feature of type "Device.Devfund.\*")
 
 The parent nodes themselves (USB Composite Device or Internal USB Hub) must be tested and may not be deselected.
 

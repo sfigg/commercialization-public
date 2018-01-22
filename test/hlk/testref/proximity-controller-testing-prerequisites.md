@@ -57,7 +57,7 @@ For proximity controller tests, you must have two test computers in your machine
 
 To configure both test computers, follow these steps:
 
-1.  Install the appropriate Windows® operating system on the test computers, and then configure the computers for your test network. The test network is the network that contains the Windows HLK Studio and Windows HLK Controller.
+1.  Install the appropriate Windows operating system on the test computers, and then configure the computers for your test network. The test network is the network that contains the Windows HLK Studio and Windows HLK Controller.
 
 2.  Install the manufacturer-supplied device driver for the proximity controller on Computer A.
 
@@ -73,7 +73,7 @@ To configure both test computers, follow these steps:
 
 Make sure that the test computer is in the ready state before you begin your testing. If a test requires parameters to be set, a dialog box appears for that test. Review the specific test topic for more information about the parameters.
 
-Manual Windows HLK tests require user intervention. When you run tests for a submission, it’s best to run the automated tests in a block separately from manual tests. This prevents a manual test from interrupting an automated test.
+Manual Windows HLK tests require user intervention. When you run tests for a submission, it's best to run the automated tests in a block separately from manual tests. This prevents a manual test from interrupting an automated test.
 
 >[!IMPORTANT]
 >  

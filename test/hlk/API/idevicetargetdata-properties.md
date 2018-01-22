@@ -45,7 +45,7 @@ ms.technology: windows-oem
 </tr>
 <tr class="even">
 <td><p>[IDeviceTargetData.DriverHash Property](idevicetargetdatadriverhash-property.md)</p></td>
-<td><p>This property represents all of the driver’s hash values for a deviceTarget object.</p></td>
+<td><p>This property represents all of the driver's hash values for a deviceTarget object.</p></td>
 </tr>
 <tr class="odd">
 <td><p>[IDeviceTargetData.Drivers Property](idevicetargetdatadrivers-property.md)</p></td>

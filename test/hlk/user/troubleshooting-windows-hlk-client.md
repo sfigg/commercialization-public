@@ -245,7 +245,7 @@ driver 0 product
 driver 0 serial number
 ```
 
-This characteristic allows you to change the hardware while retaining the same machine identifier. However, if the hashes are too similar between two (or more) different systems, the systems are identified as the same system. This causes the last system’s heart-beat to be the active client.
+This characteristic allows you to change the hardware while retaining the same machine identifier. However, if the hashes are too similar between two (or more) different systems, the systems are identified as the same system. This causes the last system's heart-beat to be the active client.
 
 To prevent this from happening, the hash data should be unique for each client system. The easiest values to update are **smbios UUID** and **smbios serial number**.
 

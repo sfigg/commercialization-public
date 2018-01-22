@@ -13,71 +13,41 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # IpAddress
-
 
 `IpAddress` specifies details about a cluster's virtual IP address, not associated with the cluster. At least one IP Address setting must be specified.
 
-**Note**  
-To enable this Network Load Balancing setting, the NetworkLoadBalancingFullServer package must be enabled in the Windows image you are installing. To do this, use Windows System Image Manager to add the Microsoft-Windows-Foundation-Package to your answer file, and then configure the NetworkLoadBalancingFullServer package to enable it. For more information about adding and configuring packages, see the [Windows Assessment and Deployment (Windows ADK) Technical Reference](http://go.microsoft.com/fwlink/?LinkId=206587).
-
- 
+> [!Note]
+> To enable this Network Load Balancing setting, the NetworkLoadBalancingFullServer package must be enabled in the Windows image you are installing. To do this, use Windows System Image Manager to add the Microsoft-Windows-Foundation-Package to your answer file, and then configure the NetworkLoadBalancingFullServer package to enable it. For more information about adding and configuring packages, see the [Windows Assessment and Deployment (Windows ADK) Technical Reference](http://go.microsoft.com/fwlink/?LinkId=206587).
 
 ## Child Elements
 
+| Setting                 | Description                                                                           |
+|:------------------------|:--------------------------------------------------------------------------------------|
+| [Key](microsoft-windows-networkloadbalancing-core-clusters-cluster-virtualipaddresses-ipaddress-key.md) | Specifies the name of the virtual IP address. |
+| [IpAddress](microsoft-windows-networkloadbalancing-core-clusters-cluster-virtualipaddresses-ipaddress-ipaddress.md) | Specifies the IP address for the cluster's virtual IP address. |
+| [NetworkMask](microsoft-windows-networkloadbalancing-core-clusters-cluster-virtualipaddresses-ipaddress-networkmask.md) | Specifies the network mask for the cluster's virtual IP address. |
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>[Key](microsoft-windows-networkloadbalancing-core-clusters-cluster-virtualipaddresses-ipaddress-key.md)</p></td>
-<td><p>Specifies the name of the virtual IP address.</p>
-<div class="alert">
-<strong>Note</strong>  
-<p>This XML attribute does not appear in the <strong>Properties</strong> pane of Windows System Image Manager (Windows SIM) until you add this IP Address to the answer file.</p>
-</div>
-<div>
- 
-</div></td>
-</tr>
-<tr class="even">
-<td><p>[IpAddress](microsoft-windows-networkloadbalancing-core-clusters-cluster-virtualipaddresses-ipaddress-ipaddress.md)</p></td>
-<td><p>Specifies the IP address for the cluster's virtual IP address.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[NetworkMask](microsoft-windows-networkloadbalancing-core-clusters-cluster-virtualipaddresses-ipaddress-networkmask.md)</p></td>
-<td><p>Specifies the network mask for the cluster's virtual IP address.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+> [!Note]
+> The `Key` XML attribute does not appear in the <strong>Properties</strong> pane of Windows System Image Manager (Windows SIM) until you add this IP Address to the answer file.
 
 ## Valid Passes
-
 
 specialize
 
 ## Parent Hierarchy
 
-
-[microsoft-windows-networkloadbalancing-core-](microsoft-windows-networkloadbalancing-core.md) | [Clusters](microsoft-windows-networkloadbalancing-core-clusters.md) | [Cluster](microsoft-windows-networkloadbalancing-core-clusters-cluster.md) | [VirtualIpAddresses](microsoft-windows-networkloadbalancing-core-clusters-cluster-virtualipaddresses.md) | **IPAddress**
+[Microsoft-Windows-NetworkLoadBalancing-Core](microsoft-windows-networkloadbalancing-core.md) | [Clusters](microsoft-windows-networkloadbalancing-core-clusters.md) | [Cluster](microsoft-windows-networkloadbalancing-core-clusters-cluster.md) | [VirtualIpAddresses](microsoft-windows-networkloadbalancing-core-clusters-cluster-virtualipaddresses.md) | **IPAddress**
 
 ## Applies To
 
-
-For a list of the supported Windows editions and architectures that this component supports, see [microsoft-windows-networkloadbalancing-core-](microsoft-windows-networkloadbalancing-core.md).
+For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-NetworkLoadBalancing-Core](microsoft-windows-networkloadbalancing-core.md).
 
 ## XML Example
 
-
 The following XML output specifies details about the cluster's virtual IP address.
 
-```
+```XML
 <IpAddress wcm:keyValue="Ip1">
    <IpAddress>207.46.197.32</IpAddress>
    <NetworkMask>255.255.255.0</NetworkMask>
@@ -86,16 +56,4 @@ The following XML output specifies details about the cluster's virtual IP addres
 
 ## Related topics
 
-
 [VirtualIpAddresses](microsoft-windows-networkloadbalancing-core-clusters-cluster-virtualipaddresses.md)
-
- 
-
- 
-
-
-
-
-
-
-

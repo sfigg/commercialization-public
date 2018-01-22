@@ -113,7 +113,7 @@ Once the mode for testing is identified the following instructions will walk you
 
      
 
-6.  Repeat steps 1–5 for each test system.
+6.  Repeat steps 1-5 for each test system.
 
 ## <span id="Step_3__Create_a_machine_pool"></span><span id="step_3__create_a_machine_pool"></span><span id="STEP_3__CREATE_A_MACHINE_POOL"></span>Step 3: Create a machine pool
 

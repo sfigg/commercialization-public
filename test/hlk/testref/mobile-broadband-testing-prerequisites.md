@@ -104,7 +104,7 @@ Loopback functionality is tested only for the IP data traffic because it is in t
 
 ### <span id="Guidance"></span><span id="guidance"></span><span id="GUIDANCE"></span>Guidance
 
--   MB device firmware should implement “loopback” APN functionality as explained here. Note that the loopback mode is independent of SIM and PIN lock states.
+-   MB device firmware should implement "loopback" APN functionality as explained here. Note that the loopback mode is independent of SIM and PIN lock states.
 
 -   On getting MBIM\_CID\_CONNECT set request with an ActivationCommand of MBIMActivationCommandActivate and an access string loopback, the firmware should do the following:
 
@@ -138,7 +138,7 @@ Loopback functionality is tested only for the IP data traffic because it is in t
 
     -   On getting a MBIM\_CID\_CONNECT request with an ActivationCommand of MBIMActivationCommandDeactivate.
 
-        -   Ensure that the SessionId matches the SessionId used to start loopback mode. If the SessionId’s don’t match, the device should respond with MBIM\_STATUS\_CONTEXT\_NOT\_ACTIVATED.
+        -   Ensure that the SessionId matches the SessionId used to start loopback mode. If the SessionId's don't match, the device should respond with MBIM\_STATUS\_CONTEXT\_NOT\_ACTIVATED.
 
         -   The device should respond with a MBIM\_CID\_CONNECT response using the SessionId, IPType and ContextType specified in the MBIM\_CID\_CONNECT request. ActivationState should be MBIMActivationStateDeactivated and VoiceCallState should be MBIMVoiceCallStateNone.
 

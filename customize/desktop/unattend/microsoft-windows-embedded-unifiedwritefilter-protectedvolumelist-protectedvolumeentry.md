@@ -13,61 +13,25 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # ProtectedVolumeEntry
-
 
 Contains settings that you can configure for the volume protected by UWF.
 
 ## Child elements
 
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Topic</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>[DriveLetter](microsoft-windows-embedded-unifiedwritefilter-protectedvolumelist-protectedvolumeentry-driveletter.md)</p></td>
-<td><p>Specifies the drive letter of a volume protected by UWF.</p></td>
-</tr>
-<tr class="even">
-<td><p>[FileExceptionsUserDefined](microsoft-windows-embedded-unifiedwritefilter-protectedvolumelist-protectedvolumeentry-fileexceptionsuserdefined.md)</p></td>
-<td><p>Specifies the full path of the files or folders on a protected volume to exclude from filtering by UWF.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Setting                 | Description                                                                           |
+|:------------------------|:--------------------------------------------------------------------------------------|
+| [DriveLetter](microsoft-windows-embedded-unifiedwritefilter-protectedvolumelist-protectedvolumeentry-driveletter.md) | Specifies the drive letter of a volume protected by UWF. |
+| [FileExceptionsUserDefined](microsoft-windows-embedded-unifiedwritefilter-protectedvolumelist-protectedvolumeentry-fileexceptionsuserdefined.md) | Specifies the full path of the files or folders on a protected volume to exclude from filtering by UWF. |
 
 ## Parent Hierarchy
-
 
 [Microsoft-Windows-Embedded-UnifiedWriteFilter](microsoft-windows-embedded-unifiedwritefilter.md) | [ProtectedVolumeList](microsoft-windows-embedded-unifiedwritefilter-protectedvolumelist.md) | **ProtectedVolumeEntry**
 
 ## Valid Configuration Passes
 
-
 specialize
 
 ## Applies To
 
-
 For a list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-Embedded-UnifiedWriteFilter](microsoft-windows-embedded-unifiedwritefilter.md).
-
- 
-
- 
-
-
-
-
-
-

@@ -29,7 +29,7 @@ This topic describes the tasks that you must complete before you test your USB h
 
 The following hardware is required for USB device testing. You might need additional hardware if the device includes additional features.
 
--   One test computer. The test computer must meet Windows HLK prerequisites and include a USB 2.0–compliant controller and a USB 3.0 or xHCI-compliant controller. The controllers can be either embedded or included on an adapter that is attached or installed in the test computer. For more information, see [Windows HLK Prerequisites](..\getstarted\windows-hlk-prerequisites.md).
+-   One test computer. The test computer must meet Windows HLK prerequisites and include a USB 2.0-compliant controller and a USB 3.0 or xHCI-compliant controller. The controllers can be either embedded or included on an adapter that is attached or installed in the test computer. For more information, see [Windows HLK Prerequisites](..\getstarted\windows-hlk-prerequisites.md).
 
 -   One USB device to connect to the test hub. If you are testing a USB 3.0 hub, you need a USB 3.0-compliant device. Otherwise a high or low speed USB device is sufficient.
 
@@ -45,7 +45,7 @@ To certify your product for use on servers, the test computer must support four 
 
 If you use a pool of test computers to test devices, at least one computer in the pool must contain four processors and a minimum of 1 GB of RAM. Additionally, that computer must contain the device and the driver that you want to test. As long as the driver is the same on all the computers in the pool, the system creates a schedule to run against all test computers.
 
-For tests that do not include a driver to test, such as hard disk drive tests, the Windows HLK scheduler constrains the tests that validate the device’s and driver’s Rebalance, D3 State and Multiple Processor Groups functionality to run on the default test computer. You must manually configure this computer to have multiple processor groups. The default computer is the first test computer in the list. Test personnel must make sure that the first test computer in the list meets the minimum hardware requirements.
+For tests that do not include a driver to test, such as hard disk drive tests, the Windows HLK scheduler constrains the tests that validate the device's and driver's Rebalance, D3 State and Multiple Processor Groups functionality to run on the default test computer. You must manually configure this computer to have multiple processor groups. The default computer is the first test computer in the list. Test personnel must make sure that the first test computer in the list meets the minimum hardware requirements.
 
 >[!NOTE]
 >  
@@ -105,7 +105,7 @@ To configure the test computer for USB hub testing, follow these steps:
 
     >[!NOTE]
     >  
-    If the USB hub supports a USB serial number, attach an additional USB 3.0–compliant device to the test computer before you run the USB Serial Number test. For more information about this test, see [USB Serial Number](0f2d5113-cf70-4cda-8afc-b7005d1e2739.md).
+    If the USB hub supports a USB serial number, attach an additional USB 3.0-compliant device to the test computer before you run the USB Serial Number test. For more information about this test, see [USB Serial Number](0f2d5113-cf70-4cda-8afc-b7005d1e2739.md).
 
     To test USB 3.0 or 2.0 devices or hubs on a system running Windows 7, make sure that the device or hub is attached to a USB 2.0 port of an EHCI controller. xHCI controllers on systems running Windows 7 load non-Microsoft drivers. HLK tests cannot detect devices and hubs enumerated by third-party drivers.
 

@@ -13,51 +13,33 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # FavoritesList
-
 
 `FavoritesList` contains all the settings used to create a shortcut in the Favorites folder.
 
 ## Child Elements
 
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>[FavoriteItem](microsoft-windows-ie-internetexplorer-favoriteslist-favoriteitem.md)</p></td>
-<td><p>Specifies the settings for the icon that appears to the user, which sites must appear offline, the name that appears in the Favorites folder, and the associated Uniform Resource Locator (URL).</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Setting                 | Description                                                                           |
+|:------------------------|:--------------------------------------------------------------------------------------|
+| [FavoriteItem](microsoft-windows-ie-internetexplorer-favoriteslist-favoriteitem.md) | Specifies the settings for the icon that appears to the user, which sites must appear offline, the name that appears in the Favorites folder, and the associated Uniform Resource Locator (URL). |
 
 ## Valid Passes
-
 
 specialize
 
 ## Parent Hierarchy
 
-
 [Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md) | **FavoritesList**
 
 ## Applies To
-
 
 For the list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md).
 
 ## XML Example
 
-
 The following XML output specifies how to configure favorites.
 
-```
+```XML
 <FavoritesList>
    <FavoriteItem wcm:action="add">
       <FavIconFile>C:\Windows\favlink1.ico</FavIconFile>
@@ -78,16 +60,4 @@ The following XML output specifies how to configure favorites.
 
 ## Related topics
 
-
 [Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md)
-
- 
-
- 
-
-
-
-
-
-
-

@@ -51,7 +51,7 @@ In this article:
 
 2.  For server device and driver testing, make sure that the system under test (SUT) is configured as follows:
 
-    -   The correct version of Windows® is installed.
+    -   The correct version of Windows is installed.
 
     -   The Server Core option is installed.
 
@@ -82,9 +82,9 @@ If a test fails, follow these steps:
 
     2.  Browse to the machine pool of the scheduled test.
 
-    3.  In the **Job Execution Status** pane, select **Loadgen Server Stress – Start Test for Server**.
+    3.  In the **Job Execution Status** pane, select **Loadgen Server Stress - Start Test for Server**.
 
-    4.  In the **Task Execution Status** pane, right-click **RunJob –Launch Server Logo Kit** and select **Child Job Result**.
+    4.  In the **Task Execution Status** pane, right-click **RunJob -Launch Server Logo Kit** and select **Child Job Result**.
 
     5.  Return to the **Job Execution Status** pane and select **Launch Server Logo Kit**.
 
@@ -96,7 +96,7 @@ If a test fails, follow these steps:
 
     9.  In Notepad, scroll to the bottom of the file.
 
-    10. From the bottom up, search for the string *“Error -”*. The text in the same line will describe the failure. You might have to search several times to find the cause of the failure. The information in log file provides only a high level indicator of what failed.
+    10. From the bottom up, search for the string *"Error -"*. The text in the same line will describe the failure. You might have to search several times to find the cause of the failure. The information in log file provides only a high level indicator of what failed.
 
 ### <span id="loadgen"></span><span id="LOADGEN"></span>Loadgen requests more clients
 
@@ -108,7 +108,7 @@ You cannot add more machines to a machine pool after a submission has started. I
 
  
 
-If Loadgen asks for more clients after four hours of testing, it probably means that something has failed. One or more of the existing clients dropped out, network connectivity issues have occurred, or another issue is preventing the SUT from sensing the required 40% utilization load. This can be an issue of the NIC driver in combination with the network speed, or the driver’s implementation of performance monitor counters upon which the Loadgen MC depends.
+If Loadgen asks for more clients after four hours of testing, it probably means that something has failed. One or more of the existing clients dropped out, network connectivity issues have occurred, or another issue is preventing the SUT from sensing the required 40% utilization load. This can be an issue of the NIC driver in combination with the network speed, or the driver's implementation of performance monitor counters upon which the Loadgen MC depends.
 
 In this case, try the following troubleshooting steps:
 
@@ -144,7 +144,7 @@ If you receive the following error: **Main::RunMain:: Test Check**, Spsrv stoppe
 
 3.  Reboot the SUT.
 
-4.  Open Windows HLK Studio and re-run the **LoadGen Server Stress – Start Test for Server** test.
+4.  Open Windows HLK Studio and re-run the **LoadGen Server Stress - Start Test for Server** test.
 
 ## <span id="stress"></span><span id="STRESS"></span>Server stress tests
 

@@ -70,7 +70,7 @@ For troubleshooting information, see [Troubleshooting Device.Graphics Testing](t
 
 This test will always return Pass if precision is handled correctly, or return Fail if not. To review test details, review the test log from the Windows HLK Manager.
 
-If the partial precision test fails, try setting your driver to ignore the partial precision flags. If that passes, then it means that when you are attempting to follow the partial precision flags, you are using a lower precision than what the shader specified. E.g. The shader asked for 16-bit minimum, but you are using 8-bit or 10-bit. If you ignore the partial precision flags, and it still fails, ensure other conformance tests pass because the test relies on things like “sample” working correctly.
+If the partial precision test fails, try setting your driver to ignore the partial precision flags. If that passes, then it means that when you are attempting to follow the partial precision flags, you are using a lower precision than what the shader specified. E.g. The shader asked for 16-bit minimum, but you are using 8-bit or 10-bit. If you ignore the partial precision flags, and it still fails, ensure other conformance tests pass because the test relies on things like "sample" working correctly.
 
 ## <span id="More_information"></span><span id="more_information"></span><span id="MORE_INFORMATION"></span>More information
 

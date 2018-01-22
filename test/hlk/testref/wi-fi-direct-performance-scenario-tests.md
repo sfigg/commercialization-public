@@ -16,12 +16,12 @@ ms.technology: windows-oem
 # WI-FI Direct Performance Scenario Tests
 
 
-Design and Usage Instructions – Microsoft, 12/2011
+Design and Usage Instructions - Microsoft, 12/2011
 
 ## <span id="Scenario_Tests"></span><span id="scenario_tests"></span><span id="SCENARIO_TESTS"></span>Scenario Tests
 
 
-The test uses the following selection variables to set up test combinations. Note that if any of these variables are not selected specifically, TE will loop through all the “un-tethered” possibilities in order.
+The test uses the following selection variables to set up test combinations. Note that if any of these variables are not selected specifically, TE will loop through all the "un-tethered" possibilities in order.
 
 ### <span id="Scenario_Test_Flow"></span><span id="scenario_test_flow"></span><span id="SCENARIO_TEST_FLOW"></span>Scenario Test Flow
 
@@ -63,7 +63,7 @@ The WFDScenarioTestDriver class is laid out as a series of test methods which ru
 
             -   RunConnectorScenario
 
-    -   After L2 is established, WFD Client does ping session to GO’s gateway address for 30 seconds
+    -   After L2 is established, WFD Client does ping session to GO's gateway address for 30 seconds
 
     -   If scenario was Pre-AP-Connect, do concurrent ping session to AP as well
 
@@ -71,7 +71,7 @@ The WFDScenarioTestDriver class is laid out as a series of test methods which ru
 
     -   Connects to test WLAN profile (if necessary)
 
-    -   After L2 is established, WFD Client does ping session to GO’s gateway address for 30 seconds
+    -   After L2 is established, WFD Client does ping session to GO's gateway address for 30 seconds
 
     -   If scenario was Post-AP-Connect, WFD Client does concurrent session to GO as well
 
@@ -105,7 +105,7 @@ Te WFD.Perf.Scenario.Tests.dll … /p:TargetDeviceAddress=11:22:33:44:55:66
 
 ### <span id="WaitForInput"></span><span id="waitforinput"></span><span id="WAITFORINPUT"></span>WaitForInput
 
-Specifying this flag will force the LoadSettings function to wait for console input before continuing with the test. This is useful for manually running tests in a batch since there’s no synchronization between tests.
+Specifying this flag will force the LoadSettings function to wait for console input before continuing with the test. This is useful for manually running tests in a batch since there's no synchronization between tests.
 
 ### <span id="Usage"></span><span id="usage"></span><span id="USAGE"></span>Usage
 
@@ -135,7 +135,7 @@ This defines which underlying Wi-Fi Direct scenario to use. This value should ma
 
 ### <span id="Usage"></span><span id="usage"></span><span id="USAGE"></span>Usage
 
-Te WFD.Perf.Scenario.Tests.dll /select:”…\[and\] @Data:Scenario = ’Value’ \[and\]…” ...
+Te WFD.Perf.Scenario.Tests.dll /select:"…\[and\] @Data:Scenario = 'Value' \[and\]…" ...
 
 ### <span id="Possible_Values"></span><span id="possible_values"></span><span id="POSSIBLE_VALUES"></span>Possible Values
 
@@ -143,7 +143,7 @@ GONegotation - This value sets up the stack to do GO Negotiation over the Wi-Fi 
 
 Invitation - This value sets up the stack to do Invitation over the Wi-Fi Direct protocol between 2 PCs during pairing. This will check if default GO profile is present, and if not, will toggle autonomous GO on/off to create a default GO profile before continuing the test.
 
-JoinExitingGO - This value sets up the stack to do a Join Existing GO scenario between 2 PCs during pairing. Note that due to the usage pattern for discoverability in WFDP2P/PeerFinder scenario layers (always sets discoverable), and the Pair API’s preference for doing GO Negotiation before joining existing GO, this more specific setup is only possible using the WFDPlatform scenario layer.
+JoinExitingGO - This value sets up the stack to do a Join Existing GO scenario between 2 PCs during pairing. Note that due to the usage pattern for discoverability in WFDP2P/PeerFinder scenario layers (always sets discoverable), and the Pair API's preference for doing GO Negotiation before joining existing GO, this more specific setup is only possible using the WFDPlatform scenario layer.
 
 ### <span id="LocalRole"></span><span id="localrole"></span><span id="LOCALROLE"></span>LocalRole
 
@@ -151,7 +151,7 @@ This defines whether the local PC is the listener or the connector in the scenar
 
 ### <span id="Usage"></span><span id="usage"></span><span id="USAGE"></span>Usage
 
-Te WFD.Perf.Scenario.Tests.dll /select:”…\[and\] @Data:LocalRole = ’Value’ \[and\]…” ...
+Te WFD.Perf.Scenario.Tests.dll /select:"…\[and\] @Data:LocalRole = 'Value' \[and\]…" ...
 
 ### <span id="Possible_Values"></span><span id="possible_values"></span><span id="POSSIBLE_VALUES"></span>Possible Values
 
@@ -181,7 +181,7 @@ Code for definition of IWFDScenarioTest is located in wireless\\wifidirect\\test
 
 ### <span id="Usage"></span><span id="usage"></span><span id="USAGE"></span>Usage
 
-Te WFD.Perf.Scenario.Tests.dll /select:”…\[and\] @Data:ScenarioLayer = ’Value’ \[and\]…” ...
+Te WFD.Perf.Scenario.Tests.dll /select:"…\[and\] @Data:ScenarioLayer = 'Value' \[and\]…" ...
 
 ### <span id="Possible_Values"></span><span id="possible_values"></span><span id="POSSIBLE_VALUES"></span>Possible Values
 
@@ -255,11 +255,11 @@ Te WFD.Perf.Scenario.Tests.dll … /p:APPID=SomeAppId
 
 This defines the ordering/existence of an Infrastructure AP connection attempt within the scenario test, for the local machine.
 
-It’s important to note that the variable can be different across different PCs (PC1 connects before WFD, PC2 connects after WFD). This allows for a 3x3 matrix of test validation for APConnectSetting across 2 machines.
+It's important to note that the variable can be different across different PCs (PC1 connects before WFD, PC2 connects after WFD). This allows for a 3x3 matrix of test validation for APConnectSetting across 2 machines.
 
 ### <span id="Usage"></span><span id="usage"></span><span id="USAGE"></span>Usage
 
-Te WFD.Perf.Scenario.Tests.dll /select:”…\[and\] @Data:APConnectSetting = ’Value’ \[and\]…” ...
+Te WFD.Perf.Scenario.Tests.dll /select:"…\[and\] @Data:APConnectSetting = 'Value' \[and\]…" ...
 
 ### <span id="Possible_Values"></span><span id="possible_values"></span><span id="POSSIBLE_VALUES"></span>Possible Values
 
@@ -376,7 +376,7 @@ The DiscoverStress class is laid out as a series of test methods that must be ru
 
 ### <span id="Target_Device"></span><span id="target_device"></span><span id="TARGET_DEVICE"></span>Target Device
 
-There’s also a helper test included for easily setting up listener devices for a certain amount of time.
+There's also a helper test included for easily setting up listener devices for a certain amount of time.
 
 -   Listener
 
@@ -404,19 +404,19 @@ Te WFD.Perf.Scenario.Tests.dll … /p:ExpectedDevices=11:22:33:44:55:66;aa:bb:cc
 
 ### <span id="Usage"></span><span id="usage"></span><span id="USAGE"></span>Usage
 
-Te WFD.Perf.Scenario.Tests.dll /select:”…\[and\] @Data:DiscoverRole = ’Value’ \[and\]…” ...
+Te WFD.Perf.Scenario.Tests.dll /select:"…\[and\] @Data:DiscoverRole = 'Value' \[and\]…" ...
 
 ### <span id="Possible_Values"></span><span id="possible_values"></span><span id="POSSIBLE_VALUES"></span>Possible Values
 
-FinderDevice – This role will “do the finding”. This value will discover continuously and calculate performance data.
+FinderDevice - This role will "do the finding". This value will discover continuously and calculate performance data.
 
-TargetDevice – This role will “do the listening”. It just sits there for a while then is turned off. This test doesn’t require any additional permutation selection parameters.
+TargetDevice - This role will "do the listening". It just sits there for a while then is turned off. This test doesn't require any additional permutation selection parameters.
 
 ### <span id="DiscoverSpeed"></span><span id="discoverspeed"></span><span id="DISCOVERSPEED"></span>DiscoverSpeed
 
 ### <span id="Usage"></span><span id="usage"></span><span id="USAGE"></span>Usage
 
-Te WFD.Perf.Scenario.Tests.dll /select:”…\[and\] @Data:DiscoverSpeed = ’Value’ \[and\]…” ...
+Te WFD.Perf.Scenario.Tests.dll /select:"…\[and\] @Data:DiscoverSpeed = 'Value' \[and\]…" ...
 
 ### <span id="Possible_Values"></span><span id="possible_values"></span><span id="POSSIBLE_VALUES"></span>Possible Values
 
@@ -430,7 +430,7 @@ StandardDiscovery - Discoveries are issued with a timeout of 10000ms.
 
 ### <span id="Usage"></span><span id="usage"></span><span id="USAGE"></span>Usage
 
-Te WFD.Perf.Scenario.Tests.dll /select:”…\[and\] @Data:DiscoverType = ’Value’ \[and\]…” ...
+Te WFD.Perf.Scenario.Tests.dll /select:"…\[and\] @Data:DiscoverType = 'Value' \[and\]…" ...
 
 ### <span id="Possible_Values"></span><span id="possible_values"></span><span id="POSSIBLE_VALUES"></span>Possible Values
 
@@ -442,7 +442,7 @@ Targeted - Discoveries are issued with one device filter per device entry.
 
 ### <span id="Usage"></span><span id="usage"></span><span id="USAGE"></span>Usage
 
-Te WFD.Perf.Scenario.Tests.dll /select:”…\[and\] @Data:DiscoverMode = ’Value’ \[and\]…” ...
+Te WFD.Perf.Scenario.Tests.dll /select:"…\[and\] @Data:DiscoverMode = 'Value' \[and\]…" ...
 
 ### <span id="Possible_Values"></span><span id="possible_values"></span><span id="POSSIBLE_VALUES"></span>Possible Values
 
@@ -479,21 +479,21 @@ The following example will run the following across 1 listener and 1 connector P
 
 ### <span id="Connector"></span><span id="connector"></span><span id="CONNECTOR"></span>Connector
 
-Te WFD.Perf.Scenario.Tests.dll /select:"@Data:Scenario = ‘GONegotiation’ and @Data:LocalRole = 'Connector' and @Data:ScenarioLayer = 'WFDPlatform' and @Data:APConnectSetting = 'APConnectAfterWFD'" /p:TargetDeviceAddress=11:22:33:44:55:66 /p:SSID=APSSID1 /p:PSK=PSKForSSID1 /p:ChannelNumber=6
+Te WFD.Perf.Scenario.Tests.dll /select:"@Data:Scenario = 'GONegotiation' and @Data:LocalRole = 'Connector' and @Data:ScenarioLayer = 'WFDPlatform' and @Data:APConnectSetting = 'APConnectAfterWFD'" /p:TargetDeviceAddress=11:22:33:44:55:66 /p:SSID=APSSID1 /p:PSK=PSKForSSID1 /p:ChannelNumber=6
 
 ### <span id="Listener"></span><span id="listener"></span><span id="LISTENER"></span>Listener
 
-Te WFD.Perf.Scenario.Tests.dll /select:"@Data:Scenario = ‘GONegotiation’ and @Data:LocalRole = 'Connector' and @Data:ScenarioLayer = 'WFDPlatform' and @Data:APConnectSetting = 'APConnectAfterWFD'" /p:TargetDeviceAddress=66:44:22:11:22:33 /p:SSID=APSSID2 /p:PSK=PSKForSSID2 /p:ChannelNumber=3
+Te WFD.Perf.Scenario.Tests.dll /select:"@Data:Scenario = 'GONegotiation' and @Data:LocalRole = 'Connector' and @Data:ScenarioLayer = 'WFDPlatform' and @Data:APConnectSetting = 'APConnectAfterWFD'" /p:TargetDeviceAddress=66:44:22:11:22:33 /p:SSID=APSSID2 /p:PSK=PSKForSSID2 /p:ChannelNumber=3
 
 ### <span id="Discovery_Test"></span><span id="discovery_test"></span><span id="DISCOVERY_TEST"></span>Discovery Test
 
 ### <span id="FinderDevice"></span><span id="finderdevice"></span><span id="FINDERDEVICE"></span>FinderDevice
 
-Te WFD.Perf.Scenario.Tests.dll /select:”@Data:DiscoverRole = ‘FinderDevice’ and @Data:DiscoverSpeed = ‘FastDiscovery’ and @Data:DiscoverType = ‘Wildcard’ and @Data:DiscoverMode = ‘NoPreference’” /p:ExpectedDevices=11:22:33:44:55:66;ab:cd:ef:gh:ab:cd
+Te WFD.Perf.Scenario.Tests.dll /select:"@Data:DiscoverRole = 'FinderDevice' and @Data:DiscoverSpeed = 'FastDiscovery' and @Data:DiscoverType = 'Wildcard' and @Data:DiscoverMode = 'NoPreference'" /p:ExpectedDevices=11:22:33:44:55:66;ab:cd:ef:gh:ab:cd
 
 ### <span id="TargetDevice"></span><span id="targetdevice"></span><span id="TARGETDEVICE"></span>TargetDevice
 
-Te WFD.Perf.Scenario.Tests.dll /select:”@Data:DiscoverRole = ‘TargetDevice’” /p:ListenTimeSeconds=200
+Te WFD.Perf.Scenario.Tests.dll /select:"@Data:DiscoverRole = 'TargetDevice'" /p:ListenTimeSeconds=200
 
 ### <span id="Discovery_Test_Combination_"></span><span id="discovery_test_combination_"></span><span id="DISCOVERY_TEST_COMBINATION_"></span>Discovery Test Combination:
 

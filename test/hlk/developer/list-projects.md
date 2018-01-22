@@ -161,7 +161,7 @@ $Manager.GetProjectNames() | foreach {
                 write-host "`tKey   : " $_.Key 
                 
                 # there is more infomation if this is a device type
-                $DeviceData =  $_ –AS [Microsoft.Windows.Kits.Hardware.ObjectModel.IDeviceTargetData]
+                $DeviceData =  $_ -AS [Microsoft.Windows.Kits.Hardware.ObjectModel.IDeviceTargetData]
                 if ($DeviceData -ne $null)
                 {
                     write-host "`tManufacturer : " $DeviceData.Manufacturer

@@ -13,108 +13,69 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # ComplianceCheck
-
 
 `ComplianceCheck` checks that the following requirements are fulfilled so that Windows can be installed:
 
--   Valid hardware configuration.
+* Valid hardware configuration.
+* Power management disabled.
+* No cluster sizes of larger than 4 kilobytes (KB).
+* In-box drivers available.
+* Product key matches available hardware. Windows 7 Starter and Windows Vista Starter can be installed only on the following types of central processing unit (CPU):
 
--   Power management disabled.
+  * Intel Celeron and Intel Pentium III processors, including mobile versions, except for Intel Pentium III Xeon processors.
+  * AMD Duron, AMD Sempron, and AMD Geode processors, including mobile versions.
+  * 64-bit processors work only if they belong to one of the processors listed above. However, such processors are limited to 32-bit mode.
 
--   No cluster sizes of larger than 4 kilobytes (KB).
-
--   In-box drivers available.
-
--   Product key matches available hardware. Windows 7 Starter and Windows Vista Starter can be installed only on the following types of central processing unit (CPU):
-
-    -   Intel Celeron and Intel Pentium III processors, including mobile versions, except for Intel Pentium III Xeon processors.
-
-    -   AMD Duron, AMD Sempron, and AMD Geode processors, including mobile versions.
-
-    -   64-bit processors work only if they belong to one of the processors listed above. However, such processors are limited to 32-bit mode.
-
--   No SMART failures on installation disk.
-
--   Sufficient disk space.
-
--   Valid operating system or Windows Preinstallation Environment (Windows PE).
-
--   All run-once items have finished.
-
--   There is no pending reboot on the computer.
+* No SMART failures on installation disk.
+* Sufficient disk space.
+* Valid operating system or Windows Preinstallation Environment (Windows PE).
+* All run-once items have finished.
+* There is no pending reboot on the computer.
 
 `ComplianceCheck` also checks that the existing operating system is one of the following:
 
--   Windows 2000, Service Pack 4 or later.
+* Windows 2000, Service Pack 4 or later.
+* Windows XP, Service Pack 2 or later.
+* Windows Server 2000, Service Pack 1 or later.
+* Windows Server 2003.
+* Windows Server 2008.
+* Windows Server 2008 R2.
+* Windows Vista.
+* Windows 7.
 
--   Windows XP, Service Pack 2 or later.
-
--   Windows Server 2000, Service Pack 1 or later.
-
--   Windows Server 2003.
-
--   Windows Server 2008.
-
--   Windows Server 2008 R2.
-
--   Windows Vista.
-
--   Windows 7.
-
-**Important**  
-`ComplianceCheck` does not validate application compatibility. See the software vendor for application compatibility requirements.
-
- 
+> [!Important]
+> `ComplianceCheck` does not validate application compatibility. See the software vendor for application compatibility requirements.
 
 The user is also warned if any of the following conditions apply (provided [DisplayReport](microsoft-windows-setup-compliancecheck-displayreport.md) is set to **OnError**). Otherwise, the user must boot from installation media and perform a clean installation instead of an upgrade.
 
--   There are SMART failures, and no alternate disk is available.
-
--   There is insufficient space for temporary files for Windows Setup or for total installation.
-
--   A newer version of the loader is already on the destination computer. This applies to dual-boot scenarios only.
+* There are SMART failures, and no alternate disk is available.
+* There is insufficient space for temporary files for Windows Setup or for total installation.
+* A newer version of the loader is already on the destination computer. This applies to dual-boot scenarios only.
 
 ## Child Elements
 
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>[DisplayReport](microsoft-windows-setup-compliancecheck-displayreport.md)</p></td>
-<td><p>A string that specifies in what circumstances the user interface (UI) is displayed for this item.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Setting                 | Description                                                                           |
+|:------------------------|:--------------------------------------------------------------------------------------|
+| [DisplayReport](microsoft-windows-setup-compliancecheck-displayreport.md) | A string that specifies in what circumstances the user interface (UI) is displayed for this item. |
 
 ## Valid Passes
-
 
 windowsPE
 
 ## Parent Hierarchy
 
-
-[microsoft-windows-setup-](microsoft-windows-setup.md) | **ComplianceCheck**
+[Microsoft-Windows-Setup](microsoft-windows-setup.md) | **ComplianceCheck**
 
 ## Applies To
 
-
-For a list of the supported Windows editions and architectures that this component supports, see [microsoft-windows-setup-](microsoft-windows-setup.md).
+For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-Setup](microsoft-windows-setup.md).
 
 ## XML Example
 
-
 The following XML output changes the `ComplianceCheck` setting to run in guaranteed quiet mode.
 
-```
+```XML
 <ComplianceCheck>
    <DisplayReport>Never</DisplayReport>
 </ComplianceCheck>
@@ -122,16 +83,4 @@ The following XML output changes the `ComplianceCheck` setting to run in guarant
 
 ## Related topics
 
-
-[microsoft-windows-setup-](microsoft-windows-setup.md)
-
- 
-
- 
-
-
-
-
-
-
-
+[Microsoft-Windows-Setup](microsoft-windows-setup.md)

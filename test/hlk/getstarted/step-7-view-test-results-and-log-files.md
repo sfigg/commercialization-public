@@ -16,7 +16,7 @@ ms.technology: windows-oem
 # Step 7: View test results and log files
 
 
-The **Results** tab displays detailed information about each test. As each test completes, the status column updates with the result—pass or fail.
+The **Results** tab displays detailed information about each test. As each test completes, the status column updates with the result--pass or fail.
 
 The following image shows the Studio **Results** tab.
 

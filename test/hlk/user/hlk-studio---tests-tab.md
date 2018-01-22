@@ -49,11 +49,11 @@ The **View Details** option defines each icon and displays the number of tests a
 
 ![test type details dialog box](images/hck-winb-test-type-details-db.png)
 
--   **Special Configuration** – this test requires hardware or software configuration changes before it is run; you must read the test documentation to determine what steps are needed.
+-   **Special Configuration** - this test requires hardware or software configuration changes before it is run; you must read the test documentation to determine what steps are needed.
 
--   **Manual** – this test requires manual interaction with the test on the target system while the test is running; you must read the test documentation to determine what input is required.
+-   **Manual** - this test requires manual interaction with the test on the target system while the test is running; you must read the test documentation to determine what input is required.
 
--   **Non-Distributable** – this test is required to run on each target in the target family.
+-   **Non-Distributable** - this test is required to run on each target in the target family.
 
 ## <span id="Test_Parameters"></span><span id="test_parameters"></span><span id="TEST_PARAMETERS"></span>Test Parameters
 

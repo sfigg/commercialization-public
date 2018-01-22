@@ -13,9 +13,7 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # Microsoft-Windows-ServerManager-SvrMgrNc
-
 
 The Microsoft-Windows-ServerManager-SvrMgrNc component specifies whether the Server Manager application opens when the end user logs on for the first time.
 
@@ -23,39 +21,13 @@ This setting has no effect on Server Core installations of Windows Server 2008,
 
 ## In This Section
 
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>[DoNotOpenServerManagerAtLogon](microsoft-windows-servermanager-svrmgrnc-donotopenservermanageratlogon.md)</p></td>
-<td><p>Specifies whether the Server Manager application opens when the end user logs on for the first time.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
-
+| Setting                 | Description                                                                           |
+|:------------------------|:--------------------------------------------------------------------------------------|
+| [DoNotOpenServerManagerAtLogon](microsoft-windows-servermanager-svrmgrnc-donotopenservermanageratlogon.md) | Specifies whether the Server Manager application opens when the end user logs on for the first time. |
 ## Applies To
-
 
 To determine whether a component applies to the image you’re building, load your image into Windows SIM and search for the component or setting name. For information on how to view components and settings, see [Configure Components and Settings in an Answer File](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/wsim/configure-components-and-settings-in-an-answer-file).
 
 ## Related topics
 
-
 [Microsoft-Windows-OutOfBoxExperience](microsoft-windows-outofboxexperience.md)
-
- 
-
- 
-
-
-
-
-
-
-

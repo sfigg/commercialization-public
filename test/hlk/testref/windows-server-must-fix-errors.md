@@ -32,9 +32,9 @@ The criteria for the SDV and CA Rules which have been selected for Network and S
 
 -   Accuracy - the Rule finds code errors with a low false failure rate
 -   Impact - the code error can cause data corruption, hangs or crashes
--   Data Driven – the code error caused a problem in a driver that crashed and was analyzed as part of Microsoft’s Online Crash Analysis tool, OCA.
+-   Data Driven - the code error caused a problem in a driver that crashed and was analyzed as part of Microsoft's Online Crash Analysis tool, OCA.
 -   Experience - the code error is one included in the internal bar used by Microsoft, with high impact and security issues always being fixed
--   Minimal Annotation - there is low dependency on annotations of the driver’s sources in order for the CA and SDV tools to function. Note however that some annotations are required.
+-   Minimal Annotation - there is low dependency on annotations of the driver's sources in order for the CA and SDV tools to function. Note however that some annotations are required.
 
 >[!NOTE]
 >  
@@ -229,7 +229,7 @@ The function pointer being assigned to is annotated with the function class, whi
 Driver routine was not declared with the correct Role type
 
 <span id="C28208_"></span><span id="c28208_"></span>C28208:  
-Function signature doesn’t match with the function declarations
+Function signature doesn't match with the function declarations
 
 ## <span id="SDV_Rules"></span><span id="sdv_rules"></span><span id="SDV_RULES"></span>SDV Rules
 
@@ -878,7 +878,7 @@ The IrqlZwPassive rule specifies that the driver calls ZwClose only when it is e
 
 ### <span id="Storage"></span><span id="storage"></span><span id="STORAGE"></span>Storage
 
-Note – the Must-Fix Rules are based on examining the information for each Rule from this URL, <http://msdn.microsoft.com/en-us/library/windows/hardware/jj126200(v=vs.85).aspx>
+Note - the Must-Fix Rules are based on examining the information for each Rule from this URL, <http://msdn.microsoft.com/en-us/library/windows/hardware/jj126200(v=vs.85).aspx>
 
 ### <span id="DDIs"></span><span id="ddis"></span><span id="DDIS"></span>DDIs
 

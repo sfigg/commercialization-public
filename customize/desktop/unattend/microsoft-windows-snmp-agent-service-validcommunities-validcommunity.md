@@ -13,43 +13,23 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # ValidCommunity
-
 
 `ValidCommunity` specifies the community name from which the computer running Simple Network Management Protocol (SNMP) can accept SNMP requests such as GET, SET, GETNEXT, and GETBULK.
 
-**Note**  
-The child elements do not appear in the **Properties** pane of Windows System Image Manager (Windows SIM) until you add this element to the answer file.
-
- 
+> [!Note]
+> The child elements do not appear in the **Properties** pane of Windows System Image Manager (Windows SIM) until you add this element to the answer file.
 
 You can use this setting in core installations of Windows Server 2008, Windows Server 2008 R2, and Windows Server 2012, by enabling **SNMP-SC** in the Windows Foundation package.
 
 ## Child Elements
 
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>[Key](microsoft-windows-snmp-agent-service-validcommunities-validcommunity-key.md)</p></td>
-<td><p>Specifies a unique key for the community.</p></td>
-</tr>
-<tr class="even">
-<td><p>[Value](microsoft-windows-snmp-agent-service-validcommunities-validcommunity-value.md)</p></td>
-<td><p>Specifies the type of permissions that the agent has.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Setting                 | Description                                                                           |
+|:------------------------|:--------------------------------------------------------------------------------------|
+| [Key](microsoft-windows-snmp-agent-service-validcommunities-validcommunity-key.md) | Specifies a unique key for the community. |
+| [Value](microsoft-windows-snmp-agent-service-validcommunities-validcommunity-value.md) | Specifies the type of permissions that the agent has. |
 
 ## Valid Passes
-
 
 generalize
 
@@ -57,20 +37,17 @@ specialize
 
 ## Parent Hierarchy
 
-
 [Microsoft-Windows-SNMP-Agent-Service](microsoft-windows-snmp-agent-service.md) | [ValidCommunities](microsoft-windows-snmp-agent-service-validcommunities.md) | **ValidCommunity**
 
 ## Applies To
-
 
 For the list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-SNMP-Agent-Service](microsoft-windows-snmp-agent-service.md).
 
 ## XML Example
 
-
 The following XML sample output shows how to set SNMP.
 
-```
+```XML
 <PermittedManagers>
    <A1>networkhost</A1>
 </PermittedManagers>
@@ -97,16 +74,4 @@ The following XML sample output shows how to set SNMP.
 
 ## Related topics
 
-
 [ValidCommunities](microsoft-windows-snmp-agent-service-validcommunities.md)
-
- 
-
- 
-
-
-
-
-
-
-

@@ -41,7 +41,7 @@ All hardware (except the test device, monitor, keyboard, mouse, and floppy disk 
 
     -   Dual-core or equivalent processor and 4 gigabytes (GB) of memory for Windows client operating systems (for example, Windows 8, Windows 7, and Windows Vista).
 
-    -   Quad-core or equivalent processor and 6 GB of memory for Windows Server® operating systems.
+    -   Quad-core or equivalent processor and 6 GB of memory for Windows Server operating systems.
 
     An equivalent processor is any processor that appears to Windows as if it contains the specified number of CPUs. You can achieve this status through 1 or more physical microprocessors.
 
@@ -49,7 +49,7 @@ All hardware (except the test device, monitor, keyboard, mouse, and floppy disk 
 
     >[!NOTE]
     >  
-    The RAID system must be a single cabinet that consists of an array controller that's enclosed in an external subsystem with hard disk drives. Or it must be an external array controller that connects to a RAID JBOD. The RAID system can't consist of only a Peripheral Component Interconnect (PCI)–based controller and 1 RAID JBOD.
+    The RAID system must be a single cabinet that consists of an array controller that's enclosed in an external subsystem with hard disk drives. Or it must be an external array controller that connects to a RAID JBOD. The RAID system can't consist of only a Peripheral Component Interconnect (PCI)-based controller and 1 RAID JBOD.
 
      
 
@@ -206,9 +206,9 @@ When testing storage devices, we strongly recommend that you complete all Device
 ## <span id="Feature-Based_Configuration"></span><span id="feature-based_configuration"></span><span id="FEATURE-BASED_CONFIGURATION"></span>Feature-Based Configuration
 
 
-If your device supports any of the feature(s) in this section, please update the associated configurations steps in addition to the general interface-based configuration steps in the “Configuring the Test Computer” section. Minor modifications may be applicable depending on the specifics of your device form-factor.
+If your device supports any of the feature(s) in this section, please update the associated configurations steps in addition to the general interface-based configuration steps in the "Configuring the Test Computer" section. Minor modifications may be applicable depending on the specifics of your device form-factor.
 
-See “Hardware-based Raid Systems (Fibre Channel, SAS, SCSI, Serial ATA) Testing Prerequisites” above for feature-based configuration. The features also apply to iSCSI Hardware RAID Array Systems.
+See "Hardware-based Raid Systems (Fibre Channel, SAS, SCSI, Serial ATA) Testing Prerequisites" above for feature-based configuration. The features also apply to iSCSI Hardware RAID Array Systems.
 
  
 
