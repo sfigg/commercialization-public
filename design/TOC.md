@@ -324,8 +324,3 @@
 ### [Universal Serial Bus (USB)](component-guidelines/universal-serial-bus--usb-.md)
 
 ## [Windows Hardware Compatibility Program](compatibility/)
-### [Windows Hardware Compatibility Playlist](compatibility/windows-hardware-compatibility-playlist.md)
-### [Windows Hardware Compatibility Specifications and Policies](compatibility/windows-hardware-compatibility-specifications-policies.md)
-### [Certification Process](compatibility/certification-process.md)
-### [Troubleshooting Certification](compatibility/troubleshooting-certification.md)
-### [IHV Attested Signing Service](compatibility/ihv-attested-signing-service.md)
