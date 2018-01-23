@@ -12,3 +12,35 @@ ms.technology: windows-oem
 ---
 
 # Certification Process
+
+# Step 1: Review
+Review the hardware requirements
+Building a great Windows device starts with understanding the hardware requirements.
+Minimum hardware requirements for Windows 10 
+Windows Hardware Compatibility Program requirements 
+Certification requirements for previous versions of Windows 
+
+# Step 2: Register
+Register with the hardware dashboard
+Before you start testing for Windows compatibility, you should register with the hardware dashboard. Later, you’ll use the dashboard to submit your hardware for the Hardware Compatibility Program.
+Here's how to get registered:
+Get a code signing certificate 
+Establish a company 
+Create and Manage Your Profile 
+Manage Legal Agreements 
+Sign in to the hardware dashboard 
+
+# Step 3: Install
+Get ready to test your Windows hardware by installing the Windows Hardware Lab Kit (HLK) and configuring your test environment. The tests that are included in the Windows HLK help you validate compatibility with Windows 10 and get your hardware listed on the certified product list. The HLK Getting Started Guide provides instructions on how to build a test environment, automate driver and system testing, and create the submission package required to participate in the Windows Hardware Compatibility Program.
+Windows HLK Getting Started 
+
+# Step 4: Submit Results
+After testing your hardware and packaging the results with the HLK, you can submit the results to the hardware dashboard to qualify for the Windows Hardware Compatibility Program. After you submit your test results, you can monitor and manage your submission in the dashboard.
+Create a New Hardware Certification Submission 
+Manage Hardware Submissions 
+
+# Step 5: Manage and Update
+By certifying your hardware device, system, and drivers for Windows, you gain the support of Microsoft marketing resources in the form of compatibility and reliability listings, logo artwork, promotional partnerships, and access to Windows Update for distributing updates to drivers. The dashboard also provides additional services, including:
+Driver distribution 
+Device metadata management 
+Monitor performance reports 
