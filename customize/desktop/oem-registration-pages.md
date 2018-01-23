@@ -20,9 +20,9 @@ The two OEM registration pages appear as follows:
 
 ![OEM registration page 2](images/oem-registration-page2.png)
 
-The OEM registration pages work with the Microsoft Account (MSA) to help customers sign in only once during OOBE. Microsoft prompts customers to sign up for an MSA or sign into an existing MSA during OOBE. When a customer does this, their first and last name, email address for the MSA, and region, if provided, will be filled in on the OEM registration pages. The customer can consent to share this information with you and your partners.
+The OEM registration pages work with the Microsoft Account (MSA) to help customers enter in their information only once during OOBE. Microsoft prompts customers to sign up for an MSA or sign into an existing MSA during OOBE. When a customer does this, their first name, last name, and email address for the MSA, if provided, will be pre-filled in on the OEM registration pages. The customer can change their information if desired.
 
-If the customer has not used an MSA, you can ask them for their information on the registration pages, if desired.
+If the customer has not used an MSA, the fields on the OEM registration pages will be empty, and the customer can fill them in if and as desired.
 
 The OEM Registration pages are the last screens in the OOBE flow, after the user goes through all other steps in OOBE.
 
