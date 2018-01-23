@@ -5,7 +5,7 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.author: alhopper
-ms.date: 09/27/2017
+ms.date: 01/23/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -17,7 +17,7 @@ The OEM registration pages present many customization opportunities. This topic 
 The layout of each page is locked, so the page elements themselves can't be rearranged.
 
 > [!Note]
-> A minimum amount of information is required for the registration pages to display. You must provide a page title, a page subtitle, a consent checkbox label (provided via the `customerinfo` elements of [Oobe.xml](oobexml.md)), and at least one checkbox **or** one flyout link.
+> A minimum amount of information is required for the registration pages to display. You must provide a page title, a page subtitle, a consent checkbox label (provided via the `customerinfo` elements of [Oobe.xml](registration-pages-oobexml.md)), and at least one checkbox **or** one link.
 
 ## OEM registration page one
 
@@ -26,10 +26,10 @@ The first OEM registration page includes the elements below, some of which you c
 ![OEM registration page 1](images/oem-registration-page1.png)
 
 * **Page title**. Create a title that makes sense for your use of the page.
-* **Page subtitle**. Add a subtitle to help customers understand the tasks on the page or in some other way guide them to complete the form. The page title and subtitle can be customized using the `registration` element of [Oobe.xml](oobexml.md).
+* **Page subtitle**. Add a subtitle to help customers understand the tasks on the page or in some other way guide them to complete the form. The page title and subtitle can be customized using the `registration` element of [Oobe.xml](registration-pages-oobexml.md).
 * **Customer information fields**. These fields are not customizable. Customer information consists of four input fields: First Name, Last Name, Email, and Region. If the Email field is filled in, it will be validated as well-formed prior to allowing the customer to proceed. The Country/Region input field is a drop-down list. The associated value of each country/region is its associated two-letter country/region code based on [ISO 3166-1 Alpha-2](https://www.iso.org/obp/ui/#search/code).
-* **OEM Privacy statement**. Customize the title, and link to, your privacy policy using the `link1' element of [Oobe.xml](oobexml.md).
-* **The Skip button**. The Skip button is visible by default, but you can configure the `hideSkip` element of [Oobe.xml](oobexml.md) to hide the Skip button. No information is provided if the customer chooses Skip. The button text is not customizable.
+* **OEM Privacy statement**. Customize the title, and link to, your privacy policy using the `link1' element of [Oobe.xml](registration-pages-oobexml.md).
+* **The Skip button**. The Skip button is visible by default, but you can configure the `hideSkip` element of [Oobe.xml](registration-pages-oobexml.md) to hide the Skip button. No information is provided if the customer chooses Skip. The button text is not customizable.
 * **The Next button**. The Next button moves the customer forward in OOBE. This button is not customizable.
 
 ### Pre-populated customer information
@@ -51,9 +51,9 @@ Depending on the SKU a user may choose to setup different account choices which 
 
 The second OEM registration page includes the elements below, some of which you can customize.
 
-* **Consent checkbox and label**. The top checkbox and label on OEM registration page two allows the customer to provide their consent to pass their customer information to Userdata.blob. You can customize the label, and the default value of the consent checkbox, via the `customerinfo` element of [Oobe.xml](oobexml.md).
-* **Three check boxes and labels**. Up to three additional checkboxes with labels can be displayed beneath the consent checkbox. You can set the descriptive label for the check boxes, and their default state, using the `checkbox1`, `checkbox2`, and `checkbox3` elements of [Oobe.xml](oobexml.md).
-* **Two links**. Up to two links can be displayed beneath the checkboxes. You can specify the link labels and file paths using the `link2` and `link3` elements of [Oobe.xml](oobexml.md). Any text you associate with these links must be in HTML files stored locally in the `OOBE\Info` directory.
+* **Consent checkbox and label**. The top checkbox and label on OEM registration page two allows the customer to provide their consent to pass their customer information to Userdata.blob. You can customize the label, and the default value of the consent checkbox, via the `customerinfo` element of [Oobe.xml](registration-pages-oobexml.md).
+* **Three check boxes and labels**. Up to three additional checkboxes with labels can be displayed beneath the consent checkbox. You can set the descriptive label for the check boxes, and their default state, using the `checkbox1`, `checkbox2`, and `checkbox3` elements of [Oobe.xml](registration-pages-oobexml.md).
+* **Two links**. Up to two links can be displayed beneath the checkboxes. You can specify the link labels and file paths using the `link2` and `link3` elements of [Oobe.xml](registration-pages-oobexml.md). Any text you associate with these links must be in HTML files stored locally in the `OOBE\Info` directory.
 
 ### Consent checkbox
 
