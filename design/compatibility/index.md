@@ -29,24 +29,10 @@ The new hardware compatibility program provides you with:
 -   Access to the Windows Dev Center hardware dashboard to manage submissions, track the performance of your device or app, review telemetry and much more.
 
 
-## Official Test Playlist
+** link to blog? ** link to HLK docs
 
-The Windows Hardware Compatibility Program uses an official playlist to determine which devices meet the requirements for compatibility with Windows 10. All playlists that we have published are acceptable to use for submissions to the Hardware Developer Portal (sysdev).
 
-The latest playlist can be downloaded at the following location:
 
-- [https://sysdev.microsoft.com/en-US/Hardware/compatibilityplaylists/](https://sysdev.microsoft.com/en-US/Hardware/compatibilityplaylists/)
-
-## Specifications and Policies
-
-The requirements define how to build Windows-compatible devices, systems, and filter drivers across all Windows Platforms. They were developed in collaboration with partners, and focus on ensuring compatibility, interoperability and reliability.
-The requirements are validated by HLK tests and categorized as follows:
-
-* 1804
-* 1709
-* 1703
-* 1607
-* 1511
 
 
 
