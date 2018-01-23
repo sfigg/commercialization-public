@@ -328,5 +328,3 @@
 ## [Windows Hardware Compatibility Program for Windows 10, version 1703](compatibility/1703/)
 
 ## [Windows Hardware Compatibility Program for Windows 10, version 1607](compatibility/)
-
-## [Change history for Design](change-history-for-design.md)
