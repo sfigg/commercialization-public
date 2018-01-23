@@ -1,29 +1,33 @@
 ---
-title: Hardware Compatibility Specifications for Windows 10, version 1607
-Description: 'This section of the documentation provides specifications for hardware compatibility with Windows 10, version 1607.'
+title: Windows Hardware Compatibility Program
+Description: 
 ms.assetid: 
 MSHAttr: 
-author: beneluxboy
+author: sapaetsc
 ms.author: sapaetsc
-ms.date: 05/02/2017
+ms.date: 01/23/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-# Hardware Compatibility Specifications for Windows 10, version 1607
+# Windows Hardware Compatibility Program
 
 The Windows Hardware Compatibility Program is designed to help your company deliver systems, software and hardware products that are compatible with Windows and run reliably on Windows 10 and Windows Server 2016.
 
-The Windows Hardware Compatibility Program leverages the tests in the Windows Hardware Lab Kit to test your product. After passing certain tests, the program allows you to use the Windows logo as part of your marketing. End users trust the Windows logo as a sign of compatibility. Enterprise and government customers also look for the logo, or consult the Microsoft Certified Products list or the server catalog to see what systems, components and peripherals have been tested to ensure interoperability and reliability.
+The Windows Hardware Compatibility Program leverages the tests in the Windows Hardware Lab Kit to test your product. When products meet the minimum requirements it ensures that the application and device are compatible. Systems are required to use components which have also passed compatibility testing. Products submitted with passing results will continue to be included on the Certified Products List.
 
-The requirements are validated by HLK tests and categorized as follows:
+After passing certain tests, the program allows you to use the Windows logo as part of your marketing and adds your product to the Microsoft Certified Products list. End users trust the Windows logo as a sign of compatibility. Enterprise and government customers also look for the logo, or consult the Microsoft Certified Products list or the server catalog to see what systems, components and peripherals have been tested to ensure interoperability and reliability.
 
-- [System requirements](systems.md)
-- [Device and peripheral requirements](device.md) for a stand-alone device
-- [Filter driver requirements](filter.md) - Windows Filtering Platform drivers (WPF), file system filter drivers, antivirus, and Early Launch Anti-Malware (ELAM) filter drivers.
 
-When products meet the minimum requirements it ensures that the application and device are compatible. Systems are required to use components which have also passed compatibility testing. Products submitted with passing results will continue to be included on the Certified Products List.
+The new hardware compatibility program provides you with:
+
+-   Minimum engineering requirements that you can use to design your hardware.
+-   A subset of the tests in the new Hardware Lab Kit (formerly the Hardware Certification Kit) that focus on compatibility, interoperability and reliability.
+-   The opportunity to list your product on Microsoft's Certified Products List after passing the compatibility and reliability tests.
+-   Guidance for developing, testing and distributing drivers.
+-   Access to the Windows Dev Center hardware dashboard to manage submissions, track the performance of your device or app, review telemetry and much more.
+
 
 ## Official Test Playlist
 
@@ -33,9 +37,16 @@ The latest playlist can be downloaded at the following location:
 
 - [https://sysdev.microsoft.com/en-US/Hardware/compatibilityplaylists/](https://sysdev.microsoft.com/en-US/Hardware/compatibilityplaylists/)
 
-## Hardware Certification Policies and Processes for Windows 10, version 1607
+## Specifications and Policies
 
-The WHCP Policies and Processes documents below contains certification testing policies, product submission, and business requirements.
+The requirements define how to build Windows-compatible devices, systems, and filter drivers across all Windows Platforms. They were developed in collaboration with partners, and focus on ensuring compatibility, interoperability and reliability.
+The requirements are validated by HLK tests and categorized as follows:
 
-- [WHCP Policies and Processes](http://go.microsoft.com/fwlink/p/?LinkID=823111)
-- [WHCP Policies and Processes (Windows Server)](https://go.microsoft.com/fwlink/p/?linkid=834831)
+* 1804
+* 1709
+* 1703
+* 1607
+* 1511
+
+
+
