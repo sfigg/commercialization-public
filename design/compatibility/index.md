@@ -21,23 +21,12 @@ When products meet the minimum requirements it ensures that the application and 
 
 The Windows Hardware Compatibility Program leverages the tests in the [Windows Hardware Lab Kit](https://docs.microsoft.com/en-us/windows-hardware/test/hlk/windows-hardware-lab-kit), a test framework used to test hardware devices for Windows 10.
 
-## Playlist
+## Playlists
 
 The Windows Hardware Compatibility Program uses an official playlist to determine which devices meet the requirements for compatibility with Windows 10. All playlists that we have published are acceptable to use for submissions to the Windows Hardware Dev Center.
 
 The latest playlist can be downloaded at: [http://aka.ms/HLKPlaylist](http://aka.ms/HLKPlaylist)
 
-## Specifications and Policies
-
-The specifications define how to build Windows-compatible devices, systems, and filter drivers across all Windows Platforms. They were developed in collaboration with partners, and focus on ensuring compatibility, interoperability and reliability. The policies and processes provide guidelines on qualification testing and product submission, as well as useful business process requirements.
-
-Download Hardware Compatibility Specifications and Policy documents:
-
-* [Windows 10, version 1804](#)
-* [Windows 10, version 1709](#)
-* [Windows 10, version 1703](#)
-* [Windows 10, version 1607](#)
-* [Windows 10, version 1511](#)
-
 ## Blog
+
 For the most up-to-date news about the program, check out the [Windows Hardware Certification Blog](https://blogs.msdn.microsoft.com/windows_hardware_certification/).
