@@ -1,24 +1,25 @@
 ---
 author: themar
-Description: 'Boot to VHD (Native Boot): Add a Virtual Hard Disk to the Boot Menu'
+Description: 'Boot to a virtual hard disk: Add a VHDX or VHD to the boot menu'
 ms.assetid: e00d7f8f-502c-40e5-904c-8cc653c1899e
 MSHAttr: 'PreferredLib:/library/windows/hardware'
-title: 'Boot to VHD (Native Boot): Add a Virtual Hard Disk to the Boot Menu'
+title: 'Boot to a virtual hard disk: Add a VHDX or VHD to the boot menu'
 ms.author: themar
-ms.date: 05/02/2017
+ms.date: 01/24/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-# Boot to VHD (Native Boot): Add a Virtual Hard Disk to the Boot Menu
+# Boot to a virtual hard disk: Add a VHDX or VHD to the boot menu
 
-
-Native Boot allows you to create a virtual hard disk (VHD), install Windows to it, and then boot it up, either on your PC side-by-side with your existing installation, or on a new device.
+Native Boot allows you to create a virtual hard disk (VHDX), install Windows to it, and then boot it up, either on your PC side-by-side with your existing installation, or on a new device.
 
 A native-boot VHD can be used as the running operating system on designated hardware without any other parent operating system. This differs from a scenario where a VHD is connected to a virtual machine on a computer that has a parent operating system.
 
-VHDs can be applied to PCs or devices that have no other installations of Windows, without a virtual machine or hypervisor. (A hypervisor is a layer of software under the operating system that runs virtual computers.) This enables greater flexibility in workload distribution because a single set of tools can be used to manage images for virtual machines and designated hardware.
+Native boot for Windows 10 requires the **.vhdx** format, not the .vhd format.
+
+VHDXs can be applied to PCs or devices that have no other installations of Windows, without a virtual machine or hypervisor. (A hypervisor is a layer of software under the operating system that runs virtual computers.) This enables greater flexibility in workload distribution because a single set of tools can be used to manage images for virtual machines and designated hardware.
 
 You can also deploy the VHD to a PC that already has Windows installed on it, and use a boot menu to select between the existing version of Windows, or the version on the VHD.
 

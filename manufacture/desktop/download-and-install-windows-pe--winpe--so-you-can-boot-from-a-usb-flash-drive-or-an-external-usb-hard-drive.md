@@ -4,6 +4,7 @@ Description: 'Download and install Windows PE (WinPE) so you can boot from a USB
 ms.assetid: 1799a91f-493a-4509-9937-ad6901358240
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Download and install Windows PE (WinPE) so you can boot from a USB flash drive or an external USB hard drive'
+redirect_url: https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/winpe-create-a-boot-cd-dvd-iso-or-vhd
 ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
@@ -132,9 +133,9 @@ For more information about how to use the BCDedit tool, see [this Microsoft Web 
 
 [BCDboot Command-Line Options](bcdboot-command-line-options-techref-di.md)
 
-[Boot to VHD (Native Boot): Add a Virtual Hard Disk to the Boot Menu](boot-to-vhd--native-boot--add-a-virtual-hard-disk-to-the-boot-menu.md)
+[Boot to a virtual hard disk: Add a VHDX or VHD to the boot menu](boot-to-vhd--native-boot--add-a-virtual-hard-disk-to-the-boot-menu.md)
 
-[Understanding Virtual Hard Disks with Native Boot](understanding-virtual-hard-disks-with-native-boot.md)
+[Deploy Windows with a VHD (Native Boot)](deploy-windows-on-a-vhd--native-boot)
 
  
 
