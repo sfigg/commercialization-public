@@ -15,8 +15,6 @@ ms.technology: windows-oem
 
 The Windows Hardware Compatibility Program is designed to help your company deliver systems, software and hardware products that are compatible with Windows and run reliably on Windows 10 and Windows Server 2016. The program also provides guidance for developing, testing and distributing drivers. Using the [Windows Hardware Dev Center dashboard](https://developer.microsoft.com/en-us/windows/hardware/dashboard-sign-in), you can manage submissions, track the performance of your device or app, review telemetry and much more.
 
-When products meet the minimum requirements it ensures that the application and device are compatible. Systems are required to use components which have also passed compatibility testing. Products submitted with passing results will continue to be included on the Certified Products List.
-
 ## Windows Hardware Lab Kit
 
 The Windows Hardware Compatibility Program leverages the tests in the [Windows Hardware Lab Kit](https://docs.microsoft.com/en-us/windows-hardware/test/hlk/windows-hardware-lab-kit), a test framework used to test hardware devices for Windows 10.
