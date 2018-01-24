@@ -14,17 +14,19 @@ ms.technology: windows-oem
 
 You can customize OEM registration pages to gather customer information, and introduce offers, during OOBE. If you choose to implement the optional registration pages, we recommend that you use them to provide information and opportunities that benefit your customers. The Windows 10 OOBE is designed to maximize customer engagement by creating pages that focus on one thing at a time. As a result, OEM registration fields are divided between two separate pages.
 
-The two OEM registration pages appear as follows:
+Here is an example of the two OEM registration pages:
 
 ![OEM registration page 1](images/oem-registration-page1.png)
 
 ![OEM registration page 2](images/oem-registration-page2.png)
 
-The OEM registration pages work with the Microsoft Account (MSA) to help customers enter in their information only once during OOBE. Microsoft prompts customers to sign up for an MSA or sign into an existing MSA during OOBE. When a customer does this, their first name, last name, and email address for the MSA, if provided, will be pre-filled in on the OEM registration pages. The customer can change their information if desired.
+The OEM registration pages work with the Microsoft Account (MSA) to help customers enter in their information only once during OOBE. Microsoft prompts customers to sign up for an MSA or sign into an existing MSA during OOBE. When a customer does this, their first name, last name, and email address for the MSA, if provided, will be pre-filled in on the OEM registration pages. The customer can change their information before clicking **Next** if desired.
 
 If the customer has not used an MSA, the fields on the OEM registration pages will be empty, and the customer can fill them in if and as desired.
 
 The OEM Registration pages are the last screens in the OOBE flow, after the user goes through all other steps in OOBE.
+
+You can use an OEM App to collect and manage the customer information entered into the registration pages.
 
 ## In this section
 
