@@ -135,8 +135,6 @@ For more information about how to use the BCDedit tool, see [this Microsoft Web 
 
 [Boot to a virtual hard disk: Add a VHDX or VHD to the boot menu](boot-to-vhd--native-boot--add-a-virtual-hard-disk-to-the-boot-menu.md)
 
-[Deploy Windows with a VHD (Native Boot)](deploy-windows-on-a-vhd--native-boot)
-
  
 
  
