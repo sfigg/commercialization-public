@@ -13,26 +13,31 @@ ms.technology: windows-oem
 
 # Windows Hardware Compatibility Program
 
-The Windows Hardware Compatibility Program is designed to help your company deliver systems, software and hardware products that are compatible with Windows and run reliably on Windows 10 and Windows Server 2016.
+The Windows Hardware Compatibility Program is designed to help your company deliver systems, software and hardware products that are compatible with Windows and run reliably on Windows 10 and Windows Server 2016. The program also provides guidance for developing, testing and distributing drivers. Using the [Windows Hardware Dev Center dashboard](https://developer.microsoft.com/en-us/windows/hardware/dashboard-sign-in), you can manage submissions, track the performance of your device or app, review telemetry and much more.
 
-The Windows Hardware Compatibility Program leverages the tests in the Windows Hardware Lab Kit to test your product. When products meet the minimum requirements it ensures that the application and device are compatible. Systems are required to use components which have also passed compatibility testing. Products submitted with passing results will continue to be included on the Certified Products List.
+When products meet the minimum requirements it ensures that the application and device are compatible. Systems are required to use components which have also passed compatibility testing. Products submitted with passing results will continue to be included on the Certified Products List.
 
-After passing certain tests, the program allows you to use the Windows logo as part of your marketing and adds your product to the Microsoft Certified Products list. End users trust the Windows logo as a sign of compatibility. Enterprise and government customers also look for the logo, or consult the Microsoft Certified Products list or the server catalog to see what systems, components and peripherals have been tested to ensure interoperability and reliability.
+## Windows Hardware Lab Kit
 
+The Windows Hardware Compatibility Program leverages the tests in the [Windows Hardware Lab Kit](https://docs.microsoft.com/en-us/windows-hardware/test/hlk/windows-hardware-lab-kit), a test framework used to test hardware devices for Windows 10.
 
-The new hardware compatibility program provides you with:
+## Playlist
 
--   Minimum engineering requirements that you can use to design your hardware.
--   A subset of the tests in the new Hardware Lab Kit (formerly the Hardware Certification Kit) that focus on compatibility, interoperability and reliability.
--   The opportunity to list your product on Microsoft's Certified Products List after passing the compatibility and reliability tests.
--   Guidance for developing, testing and distributing drivers.
--   Access to the Windows Dev Center hardware dashboard to manage submissions, track the performance of your device or app, review telemetry and much more.
+The Windows Hardware Compatibility Program uses an official playlist to determine which devices meet the requirements for compatibility with Windows 10. All playlists that we have published are acceptable to use for submissions to the Windows Hardware Dev Center.
 
+The latest playlist can be downloaded at: [http://aka.ms/HLKPlaylist](http://aka.ms/HLKPlaylist)
 
-** link to blog? ** link to HLK docs
+## Specifications and Policies
 
+The specifications define how to build Windows-compatible devices, systems, and filter drivers across all Windows Platforms. They were developed in collaboration with partners, and focus on ensuring compatibility, interoperability and reliability. The policies and processes provide guidelines on qualification testing and product submission, as well as useful business process requirements.
 
+Download Hardware Compatibility Specifications and Policy documents:
 
+* [Windows 10, version 1804](#)
+* [Windows 10, version 1709](#)
+* [Windows 10, version 1703](#)
+* [Windows 10, version 1607](#)
+* [Windows 10, version 1511](#)
 
-
-
+## Blog
+For the most up-to-date news about the program, check out the [Windows Hardware Certification Blog](https://blogs.msdn.microsoft.com/windows_hardware_certification/).
