@@ -1,5 +1,5 @@
 ---
-title: WHCP Certification Process
+title: Windows Hardware Compatibility Program Certification Process
 Description: 
 ms.assetid: 
 MSHAttr: 
@@ -11,7 +11,7 @@ ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-# WHCP Certification Process
+# Windows Hardware Compatibility Program Certification Process
 
 The Windows Hardware Compatibility Program lets you show customers that your hardware is reliably compatible with Windows 10. The program contains tools and processes that determine whether your hardware meets Windows 10 quality standards.
 
