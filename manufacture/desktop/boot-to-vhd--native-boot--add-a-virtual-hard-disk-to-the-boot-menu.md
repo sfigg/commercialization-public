@@ -15,15 +15,15 @@ ms.technology: windows-oem
 
 Native Boot allows you to create a virtual hard disk (VHDX), install Windows to it, and then boot it up, either on your PC side-by-side with your existing installation, or on a new device.
 
-A native-boot VHD can be used as the running operating system on designated hardware without any other parent operating system. This differs from a scenario where a VHD is connected to a virtual machine on a computer that has a parent operating system.
+A native-boot VHDX can be used as the running operating system on designated hardware without any other parent operating system. This differs from a scenario where a VHDX is connected to a virtual machine on a computer that has a parent operating system.
 
 Native boot for Windows 10 requires the **.vhdx** format, not the .vhd format.
 
 VHDXs can be applied to PCs or devices that have no other installations of Windows, without a virtual machine or hypervisor. (A hypervisor is a layer of software under the operating system that runs virtual computers.) This enables greater flexibility in workload distribution because a single set of tools can be used to manage images for virtual machines and designated hardware.
 
-You can also deploy the VHD to a PC that already has Windows installed on it, and use a boot menu to select between the existing version of Windows, or the version on the VHD.
+You can also deploy the VHDX to a PC that already has Windows installed on it, and use a boot menu to select between the existing version of Windows, or the version on the VHD.
 
-To learn more about using VHDs in an enterprise environment, see [Understanding Virtual Hard Disks with Native Boot](understanding-virtual-hard-disks-with-native-boot.md).
+To learn more about using VHDXs in an enterprise environment, see [Understanding Virtual Hard Disks with Native Boot](understanding-virtual-hard-disks-with-native-boot.md).
 
 ## <span id="Prerequisites"></span>Prerequisites
 
@@ -34,9 +34,9 @@ To learn more about using VHDs in an enterprise environment, see [Understanding 
 
 -   A bootable Windows PE drive. To learn more, see [WinPE: Create USB Bootable drive](winpe-create-usb-bootable-drive.md).
 
--   A destination PC or device on which to install the VHD. This device requires 30 gigabytes (GB) or more of free disk space. You can install the VHD to a device already running other operating system installations, or as the only operating system on a device.
+-   A destination PC or device on which to install the VHDX. This device requires 30 gigabytes (GB) or more of free disk space. You can install the VHDX to a device already running other operating system installations, or as the only operating system on a device.
 
-## <span id="Step_1__Create_a_VHD_from_diskpart">Step 1: Create a VHD from diskpart
+## <span id="Step_1__Create_a_VHD_from_diskpart">Step 1: Create a VHDX from diskpart
 
 On the technician PC:
 
@@ -46,13 +46,13 @@ On the technician PC:
     diskpart
     ```
 
-2.  Create and prepare a new VHD. In this example, we create a 25 GB fixed-type VHD.
+2.  Create and prepare a new VHDX. In this example, we create a 25 GB fixed-type VHDX.
 
     ``` 
-    create vdisk file=C:\windows.vhd maximum=25600 type=fixed
+    create vdisk file=C:\windows.vhdx maximum=25600 type=fixed
     ```
 
-3.  Attach the VHD. This adds the VHD as a disk to the storage controller on the host.
+3.  Attach the VHDX. This adds the VHDX as a disk to the storage controller on the host.
 
     ``` 
     attach vdisk
@@ -62,7 +62,7 @@ On the technician PC:
 
     ``` 
     create partition primary
-    format quick label=vhd
+    format quick label=vhdx
     assign letter=v
     ```
 
@@ -74,7 +74,7 @@ On the technician PC:
 
 ## <span id="Step_2__Apply_a_Windows_image_to_the_VHD">Step 2: Apply a Windows image to the VHD
 
-On your technician PC, apply a generalized Windows image to the primary partition of the VHD that you created and attached in [Step 1](#Step_1__Create_a_VHD_from_diskpart).
+On your technician PC, apply a generalized Windows image to the primary partition of the VHDX that you created and attached in [Step 1](#Step_1__Create_a_VHD_from_diskpart).
 
 ```
 Dism /Apply-Image /ImageFile:install.wim /index:1 /ApplyDir:V:\
@@ -83,33 +83,33 @@ Dism /Apply-Image /ImageFile:install.wim /index:1 /ApplyDir:V:\
 ## <span id="Step_3__Detach_the_VHD__copy_it_to_a_new_device__and_attach_it__optional_">Step 3: Detach the VHD, copy it to a new device, and attach it (optional)
 
 
-You can deploy the VHD to a device that already has a copy of Windows installed on it, or you can clean and prepare the destination PC's hard drive to use the VHD.
+You can deploy the VHDX to a device that already has a copy of Windows installed on it, or you can clean and prepare the destination PC's hard drive to use the VHD.
 
-**Detach the VHD and save it to a network share or storage drive**
+**Detach the VHDX and save it to a network share or storage drive**
 
 
 1.  Use diskpart to detach the virtual disk from your technician PC.
 
     ``` 
     diskpart
-    select vdisk file=C:\windows.vhd
+    select vdisk file=C:\windows.vhdx
     detach vdisk
     exit
     ```
 
-2.  Copy the VHD to a network share or removable storage drive. The following maps a drive letter to a network share, creates a directory for the VHD, and then copies the VHD.
+2.  Copy the VHDX to a network share or removable storage drive. The following maps a drive letter to a network share, creates a directory for the VHD, and then copies the VHD.
 
     ``` 
     net use n: \\server\share\
     md N:\VHDs
-    copy C:\windows.vhd n:\VHDs\
+    copy C:\windows.VHDX n:\VHDs\
     ```
 
 **Clean and prepare a new device for native boot**
 
 On your destination PC:
 1.  Use your bootable WinPE key to [boot the destination PC to WinPE](winpe-create-usb-bootable-drive.md#boot-to-windows-pe).
-2.  Clean and prepare the destination PC's hard drive. Create a system partition (S), and a main partition (M) where the VHD will be stored.
+2.  Clean and prepare the destination PC's hard drive. Create a system partition (S), and a main partition (M) where the VHDX will be stored.
 
     BIOS:
 
@@ -149,29 +149,29 @@ On your destination PC:
     exit
     ```
 
-3.  Connect to the network drive or storage location where you copied the VHD in [step 3.2](#Step_3__Detach_the_VHD__copy_it_to_a_new_device__and_attach_it__optional_). 
+3.  Connect to the network drive or storage location where you copied the VHDX in [step 3.2](#Step_3__Detach_the_VHD__copy_it_to_a_new_device__and_attach_it__optional_). 
 
     ``` 
     net use N: \\server\share
     ```
 
-4.  Copy the VHD from the network drive or storage location to the destination PC's main partition.
+4.  Copy the VHDX from the network drive or storage location to the destination PC's main partition.
 
     ``` 
-    copy N:\VHDs\Windows.vhd M:
+    copy N:\VHDs\Windows.vhdx M:
     ```
 
-**Attach the VHD**
+**Attach the VHDX**
 
-1.  While still booted into WinPE, attach your VHD to the destination PC.
+1.  While still booted into WinPE, attach your VHDX to the destination PC.
 
     ```
     diskpart
-    select vdisk file=M:\windows.vhd
+    select vdisk file=M:\windows.vhdx
     attach vdisk
     ```
 
-2.  Identify the attached VHD's volume letter. (Optional: Change it to another letter that makes more sense, for example V, and leave the diskpart command line open for the next step).
+2.  Identify the attached VHDX's volume letter. (Optional: Change it to another letter that makes more sense, for example V, and leave the diskpart command line open for the next step).
 
     ```
     list volume
@@ -182,7 +182,7 @@ On your destination PC:
 ## <span id="Step_4__Add_a_boot_entry"></span>Step 4: Add a boot entry
 
 
-1.  From your destination PC, open Diskpart (if necessary) and identify the drive letters of the VHD and the system partition, for example, V and S.
+1.  From your destination PC, open Diskpart (if necessary) and identify the drive letters of the VHDX and the system partition, for example, V and S.
 
     ``` 
     diskpart
@@ -190,7 +190,7 @@ On your destination PC:
     exit
     ```
 
-2.  Add a boot entry to the device. You can add multiple VHD files using this method.
+2.  Add a boot entry to the device. You can add multiple VHDX files using this method.
 
     BIOS:
 
