@@ -18,7 +18,7 @@ The Windows Hardware Compatibility Program lets you show customers that your har
 ## Step 1: Review Hardware Requirements
 Building a great Windows device starts with understanding the hardware requirements.
 - [Minimum hardware requirements for Windows 10](https://docs.microsoft.com/en-us/windows-hardware/design/minimum/minimum-hardware-requirements-overview)
-- [Windows Hardware Compatibility Program specifications](specifications.md)
+- [Windows Hardware Compatibility Program specifications](whcp-specifications-policies.md)
 
 ## Step 2: Register on Hardware Dashboard
 Before you start testing for Windows compatibility, you should register with the hardware dashboard. Later, you’ll use the dashboard to submit your hardware for the Hardware Compatibility Program.
