@@ -14,18 +14,22 @@ ms.technology: windows-oem
 
 If a customer enters information into the OEM registration pages, the following files are created when they complete OOBE:
 
-* **Userdata.blob**. Contains anything the user entered into the customer information fields on registration page one, in an encrypted XML file.
+* **Userdata.blob**. An encrypted XML file that contains all the values in all user-configurable elements on the registration pages, including customer information fields and checkbox states.
 * **SessionKey.blob**. Generated during encryption of Userdata.blob. Contains a session key needed for the decryption process.
-* **Userchoices.xml**. Contains the checkbox labels and values as they were when the user completed OOBE, in an XML file.
+* **Userchoices.xml**. An un-encrypted XML file that contains the checkbox labels and values for all checkboxes included on the registration pages.
 
 > [!Note]
 > If a customer clicks `Skip` on the first registration page, no data is written or stored to these files, not even the checkbox default states.
 
-A registry value representing the timestamp that the user completed OOBE is also created for the following registry key: `HKLM\SOFTWARE\Microsoft\WindowsCurrentVersion\OOBE\Stats`. This registry value is created regardless of whether the registration pages are included in OOBE. The timestamp is a `SYSTEMTIME` value written as a serialized blob of data to the registry.
+The timestamp of first sign-in is also written to the Windows registry under this key:
 
-In order for you to access and use the customer information, you must take the following steps:
+`HKLM\SOFTWARE\Microsoft\WindowsCurrentVersion\OOBE\Stats [EndTimeStamp]`.
 
-1. [Generate a public/private key pair](#generate-a-publicprivate-key-pair), and place the public key in the `\OOBE\Info` folder, prior to imaging.
+This registry value is created regardless of whether the registration pages are included in OOBE. The timestamp is written in UTC (Coordinated Universal Time) format; specifically, it is a `SYSTEMTIME` value written as a serialized blob of data to the registry.
+
+In order for you to access and use the customer information, take the following steps:
+
+1. [Generate a public/private key pair](#generate-a-publicprivate-key-pair), and place the public key in the `\OOBE\Info` folder of the image.
 1. [Collect the encrypted customer data](#collect-encrypted-customer-data) using an app or a service that runs roughly 30 minutes after the first logon completes.
 1. [Send the data to your server for decryption](#send-data-to-your-server-for-decryption) using SSL. You can then decrypt the session key to decrypt the customer data.
 

@@ -17,7 +17,7 @@ The OEM registration pages present many customization opportunities. This topic 
 The layout of both OEM registration pages are locked, so the page elements themselves can't be rearranged.
 
 > [!Note]
-> A minimum amount of information is required for the registration pages to display. You must provide a page title, a page subtitle, at least one checkbox **or** one link, and a public key for public/private key encryption.
+> A minimum amount of information is required for the registration pages to display. You must provide a page title, a page subtitle, the `customerinfo` element, at least one additional checkbox **or** one link, and a public key for public/private key encryption.
 
 ## OEM registration page one
 
@@ -29,7 +29,7 @@ The first OEM registration page includes the elements below, some of which you c
 * **Page subtitle**. Add a subtitle to help customers understand the tasks on the page or in some other way guide them to complete the form. This subtitle also appears on registration page two. The page title and subtitle can be customized using the `registration` element of [Oobe.xml](registration-pages-oobexml.md).
 * **Customer information fields**. These fields are not customizable. Customer information consists of four input fields: First Name, Last Name, Region, and Email. If the Email field is filled in, it will be validated as well-formed prior to allowing the customer to proceed. The Country/Region input field is a drop-down list. The associated value of each country/region is its associated two-letter country/region code based on [ISO 3166-1 Alpha-2](https://www.iso.org/obp/ui/#search/code).
 * **One link**. Customize the title, and path to, an HTML file using the `link1` element of [Oobe.xml](registration-pages-oobexml.md). When using this link to surface a privacy policy, ensure the policy is current.
-* **Skip button**. The Skip button is visible by default, but you can configure the `hideSkip` element of [Oobe.xml](registration-pages-oobexml.md) to hide it. No customer information is sent to Userdata.blob if the customer chooses Skip. The button text is not customizable.
+* **Skip button**. The Skip button is visible by default, but you can configure the `hideSkip` element of [Oobe.xml](registration-pages-oobexml.md) to hide it. No registration data of any kind is provided if the customer chooses **Skip**. The button text is not customizable.
 * **Next button**. The Next button moves the customer forward in OOBE. This button is not customizable.
 
 ### Pre-populated customer information
@@ -56,6 +56,9 @@ The second OEM registration page includes the elements below, some of which you 
 * **Four checkboxes**. Up to four checkboxes with labels can be displayed on registration page two. You can set the descriptive labels for the checkboxes, and their default states, using the `customerinfo`, `checkbox1`, `checkbox2`, and `checkbox3` elements of [Oobe.xml](registration-pages-oobexml.md).
 * **Two links**. Up to two links can be displayed beneath the checkboxes. You can specify the link labels and file paths using the `link2` and `link3` elements of [Oobe.xml](registration-pages-oobexml.md). Any text you associate with these links must be in HTML files stored locally in the `OOBE\Info` directory.
 * **Next button**. The Next button moves the customer forward in OOBE. This button is not customizable.
+
+> [!Note]
+> You can't skip showing a link on registration page one by providing only `link2` and `link3` elements in Oobe.xml. A missing `link1` will cause the `link2` element to appear on the first registration page instead of the second.
 
 ## Design HTML files for your links
 
