@@ -21,7 +21,7 @@ If a customer enters information into the OEM registration pages, the following 
 > [!Note]
 > If a customer clicks `Skip` on the first registration page, no data is written or stored to these files, not even the checkbox default states.
 
-A registry value representing the timestamp that the user completed OOBE is also created for the following registry key: `HKLM\SOFTWARE\Microsoft\WindowsCurrentVersion\OOBE\Stats`. This registry value is created regardless of whether the registration pages are included in OOBE.
+A registry value representing the timestamp that the user completed OOBE is also created for the following registry key: `HKLM\SOFTWARE\Microsoft\WindowsCurrentVersion\OOBE\Stats`. This registry value is created regardless of whether the registration pages are included in OOBE. The timestamp is a `SYSTEMTIME` value written as a serialized blob of data to the registry.
 
 In order for you to access and use the customer information, you must take the following steps:
 
@@ -179,7 +179,7 @@ Create and preinstall a Microsoft Store app, or write a service to run after fir
 1. Collect the encrypted customer data, including the user name from the [Windows.System.User namespace](https://docs.microsoft.com/en-us/uwp/api/windows.system.user), as well as the local time stamp of first sign-in.
 1. Upload that data set to your server for decryption and use.
 
-To use a Microsoft Store app to collect the data, assign its Application User Model ID (AUMID) to the [Microsoft-Windows-Shell-Setup | OOBE | OEMAppId](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-shell-setup-oobe-oemappid) Unattend setting. Windows will pass the time stamp, user data, session key, and check box state data to the `appdata` folder for the app.
+To use a Microsoft Store app to collect the data, assign its Application User Model ID (AUMID) to the [Microsoft-Windows-Shell-Setup | OOBE | OEMAppId](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-shell-setup-oobe-oemappid) Unattend setting. Windows will pass the timestamp, user data, session key, and checkbox state data to the `appdata` folder for the app.
 
 If you create and run a service to upload the data, you should set the service to run at least 30 minutes after the user gets to the Start screen, and only run the service once. Setting your service to run at this time ensures that your service won't consume system resources in the background while users are getting their first chance to explore the Start screen and their apps. The service must gather the data from within the OOBE directory, as well as the time stamp and user name, as applicable. The service should also determine what actions to take in response to the user's choices. For example, if the user opted in to an anti-malware app trial, your service should start the trial rather than rely on the anti-malware app to decide if it should run. Or, as another example, if your user opted in to emails from your company or partner companies, your service should communicate that info to whomever handles your marketing emails.
 
