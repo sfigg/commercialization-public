@@ -15,26 +15,19 @@ ms.technology: windows-oem
 
 When products meet the minimum requirements it ensures that the application and device are compatible. Systems are required to use components which have also passed compatibility testing. Products submitted with passing results will continue to be included on the Certified Products List.
 
-## Specifications 
+## Specifications and Policies
 
 The specifications define how to build Windows-compatible devices, systems, and filter drivers across all Windows Platforms. They were developed in collaboration with partners, and focus on ensuring compatibility, interoperability and reliability. 
 
-Download Hardware Compatibility Specifications documents:
-
-* [Windows 10, version 1804](#)
-* [Windows 10, version 1709](#)
-* [Windows 10, version 1703](#)
-* [Windows 10, version 1607](#)
-* [Windows 10, version 1511](#)
-
-## Policies
-
 The policies and processes provide guidelines on qualification testing and product submission, as well as useful business process requirements.
 
-Download Hardware Compatibility Policies and Processes documents:
-
-* [Windows 10 client, versions 1607, 1703, 1709](#)
-* [Windows 10 server](#)
+| Download documents: |  | |
+|--|----|---|
+| Windows 10, version 1804 | [Download Specifications](#) | [Download Policies](#) |
+| Windows 10, version 1709 | [Download Specifications](#) | [Download Policies](#) |
+| Windows 10, version 1703 | [Download Specifications](#) | [Download Policies](#) |
+| Windows 10, version 1607 | [Download Specifications](#) | [Download Policies](#) |
+| Windows 10, version 1511 | [Download Specifications](#) | [Download Policies](#) |
 
 ## Certification for Windows Server 2016, Azure Stack, and Software Defined Data Center (SDDC)
 
