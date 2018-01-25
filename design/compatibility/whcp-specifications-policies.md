@@ -25,11 +25,21 @@ Certification for Windows Server 2016, Azure Stack, and SDDC must:
 
 Questions about the Azure Stack or SDDC programs or how to submit the results for solution validation should be directed to the appropriate Microsoft technical account manager or partner management contact.
 
-## Download Documents
+## Download Specifications and Policies Documents
 
 The specifications define how to build Windows-compatible devices, systems, and filter drivers across all Windows Platforms. They were developed in collaboration with partners, and focus on ensuring compatibility, interoperability and reliability. 
 
 The policies and processes provide guidelines on qualification testing and product submission, as well as useful business process requirements.
+
+*Simple version* -
+
+* [Download documents for Windows 10, version 1804](#)
+* [Download documents for Windows 10, version 1709](#)
+* [Download documents for Windows 10, version 1703](#)
+* [Download documents for Windows 10, version 1607](#)
+* [Download documents for Windows 10, version 1511](#)
+
+*Table version* - 
 
 <table width="100%">
   <tr>
