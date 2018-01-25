@@ -17,7 +17,7 @@ The OEM registration pages present many customization opportunities. This topic 
 The layout of each page is locked, so the page elements themselves can't be rearranged.
 
 > [!Note]
-> A minimum amount of information is required for the registration pages to display. You must provide a page title, a page subtitle, a consent checkbox label (provided via the `customerinfo` elements of [Oobe.xml](registration-pages-oobexml.md)), and at least one checkbox **or** one link.
+> A minimum amount of information is required for the registration pages to display. You must provide a page title, a page subtitle, at least one checkbox **or** one link, and a public key for public/private key encryption.
 
 ## OEM registration page one
 
@@ -28,7 +28,7 @@ The first OEM registration page includes the elements below, some of which you c
 * **Page title**. Create a title that makes sense for your use of the page. This title also appears on registration page two.
 * **Page subtitle**. Add a subtitle to help customers understand the tasks on the page or in some other way guide them to complete the form. This subtitle also appears on registration page two. The page title and subtitle can be customized using the `registration` element of [Oobe.xml](registration-pages-oobexml.md).
 * **Customer information fields**. These fields are not customizable. Customer information consists of four input fields: First Name, Last Name, Region, and Email. If the Email field is filled in, it will be validated as well-formed prior to allowing the customer to proceed. The Country/Region input field is a drop-down list. The associated value of each country/region is its associated two-letter country/region code based on [ISO 3166-1 Alpha-2](https://www.iso.org/obp/ui/#search/code).
-* **One link**. Customize the title, and path to, an HTML file using the `link1` element of [Oobe.xml](registration-pages-oobexml.md).
+* **One link**. Customize the title, and path to, an HTML file using the `link1` element of [Oobe.xml](registration-pages-oobexml.md). When using this link to surface a privacy policy, ensure the policy is current.
 * **Skip button**. The Skip button is visible by default, but you can configure the `hideSkip` element of [Oobe.xml](registration-pages-oobexml.md) to hide it. No customer information is sent to Userdata.blob if the customer chooses Skip. The button text is not customizable.
 * **Next button**. The Next button moves the customer forward in OOBE. This button is not customizable.
 
@@ -51,19 +51,17 @@ The second OEM registration page includes the elements below, some of which you 
 
 ![OEM registration page 2](images/oem-registration-page2.png)
 
-* **Consent checkbox**. The top checkbox on OEM registration page two allows the customer to provide their consent to pass their customer information to Userdata.blob. You can customize the label, and the default value of the consent checkbox, via the `customerinfo` element of [Oobe.xml](registration-pages-oobexml.md).
-* **Three checkboxes**. Up to three additional checkboxes with labels can be displayed beneath the consent checkbox. You can set the descriptive label for the checkboxes, and their default state, using the `checkbox1`, `checkbox2`, and `checkbox3` elements of [Oobe.xml](registration-pages-oobexml.md).
+* **Page title**. Create a title that makes sense for your use of the page. This title also appears on registration page one.
+* **Page subtitle**. Add a subtitle to help customers understand the tasks on the page or in some other way guide them to complete the form. This subtitle also appears on registration page one. The page title and subtitle can be customized using the `registration` element of [Oobe.xml](registration-pages-oobexml.md).
+* **Four checkboxes**. Up to four checkboxes with labels can be displayed on registration page two. You can set the descriptive labels for the checkboxes, and their default states, using the `customerinfo`, `checkbox1`, `checkbox2`, and `checkbox3` elements of [Oobe.xml](registration-pages-oobexml.md).
 * **Two links**. Up to two links can be displayed beneath the checkboxes. You can specify the link labels and file paths using the `link2` and `link3` elements of [Oobe.xml](registration-pages-oobexml.md). Any text you associate with these links must be in HTML files stored locally in the `OOBE\Info` directory.
+* **Next button**. The Next button moves the customer forward in OOBE. This button is not customizable.
 
-### Consent checkbox
+## Design HTML files for your links
 
-Whether or not customer information is passed to Userdata.blob is determined by the consent check box. If the box is checked, any information in the four customer information fields will be sent to Userdata.blob. If you've specified an OEM App in Oobe.xml, the information is also sent to that OEM App using asymmetric key encryption. If the box is not checked, customer information is not passed to Userdata.blob, nor is it sent to the OEM App. This behavior holds true regardless of if there is any information typed into the input fields.
+Clicking any link that you add to your registration pages won't open a web page hosted online, but rather, will open an HTML file stored in the `OOBE\Info\` folder on the device. Microsoft provides a full HTML sample below that defines the background color, font color, font sizing, font weight, padding, margins, and headers (among other elements) for your HTML files. We strongly encourage you to use this sample with little to no alteration of the design elements.
 
-To learn more about using an OEM App to access the customer information, see [Collect and manage user data](manage-user-data.md).
-
-## Style guidance
-
-Windows OOBE has a dark blue background with light text. End User License Agreement (EULA) content uses a dark blue background and light text. Fly-out content uses a dark background with light text. To align with this guidance please ensure that the markup and style conventions HTML sample files are followed precisely.
+Windows OOBE has a dark blue background with light text. End User License Agreement (EULA) content uses a dark blue background and light text. Fly-out content uses a dark background with light text. To align with the design of Windows OOBE, and to create a consistent user experience, use the markup and style conventions laid out in the [HTML sample below](#full-html-sample) when creating your HTML files.
 
 > [!Note]
 > Inline CSS styling is required so that the iFrame host elements render correctly in the registration pages.
@@ -71,6 +69,11 @@ Windows OOBE has a dark blue background with light text. End User License Agreem
 ### Colors
 
 Text and background colors are defined in the [CSS code example](#css-example).
+
+* Background color: #2b2b2b
+* Font color: #FFF
+
+Please use these colors to ensure a consistent user experience throughout OOBE.
 
 ### Font
 
@@ -180,7 +183,7 @@ Please use the following inline CSS in the head of your HTML documents.
 
 ## Full HTML example
 
-Here is a full example of an HTML flyout for OEM registration pages:
+Here is a full example of an HTML flyout for OEM registration pages. Please use this sample as a baseline for your HTML flyout pages, with little to no alteration of the design elements. You should only replace the example text with your own information.
 
 ```html
 > <!DOCTYPE html>

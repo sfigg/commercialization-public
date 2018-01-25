@@ -1,5 +1,5 @@
 ---
-title: Manage user data
+title: Protect and collect user data
 description: Generate a public/private key pair for customer data encryption and decryption.
 MSHAttr:
 - 'PreferredSiteName:MSDN'
@@ -10,40 +10,35 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-# Collect and manage user data
+# Protect and collect user data
 
-If a customer fills out the registration pages and clicks Next to submit the data, Windows writes and encrypts the text data to the `\OOBE\Info` folder in a **Userdata.blob** file and stores the check box values in the Userchoices.xml file at the same location. In addition to the customer-provided info, Windows writes the `<label>` values from your Oobe.xml file to the same location. A registry value representing the timestamp that the user completed the OEM registration pages is also created for the following registry key: `HKLM\SOFTWARE\Microsoft\WindowsCurrentVersion\OOBE\Stats`.
+If a customer enters information into the OEM registration pages, the following files are created when they complete OOBE:
+
+* **Userdata.blob**. Contains anything the user entered into the customer information fields on registration page one, in an encrypted XML file.
+* **SessionKey.blob**. Generated during encryption of Userdata.blob. Contains a session key needed for the decryption process.
+* **Userchoices.xml**. Contains the checkbox labels and values as they were when the user completed OOBE, in an XML file.
+
+A registry value representing the timestamp that the user completed OOBE is also created for the following registry key: `HKLM\SOFTWARE\Microsoft\WindowsCurrentVersion\OOBE\Stats`. This registry value is created regardless of whether the registration pages are included in OOBE.
+
+> [!Note]
+> If a customer clicks `Skip` on the first registration page, no data is written or stored to these files, not even the check box default states.
+
+In order for you to access and use the customer information, you must take the following steps:
+
+1. [Generate a public/private key pair](#generate-a-public-private-key-pair), and place the public key in the `\OOBE\Info` folder, prior to imaging.
+1. [Collect the encrypted customer](#collect-customer-data) data using an app or a service that runs roughly 30 minutes after the first logon completes.
+1. [Send the data to your server using SSL for decryption](send-data-to-your-server-for-decryption). Decrypt the session key to decrypt the customer data.
+
+## Generate a public/private key pair
 
 To protect customer data, you must generate a public/private key pair, and the public key must be placed in the `\OOBE\Info` folder. If you’re deploying images to multiple regions or in multiple languages, you should put the public key directly under region and language-specific subdirectories, following the same rules as you would for region or language-specific Oobe.xml files as described in [How Oobe.xml works](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/how-oobexml-works).
-
-Considerations:
-
-* Comments from your Oobe.xml files aren't written to this location. If the customer clicks Skip, no data is written or stored, not even check boxes selected by default.
-* If a customer fills out part of the form, all available data is captured and written to `\OOBE\Info` when they click Next.
-* Only the state of the check box when the user clicks Next is recorded. No indication of whether that value is or isn't the default value is captured.
 
 > [!Important]
 > You must never place the private key on the customer's PC. Instead, it should be stored securely on your servers so the data can be decrypted after it's uploaded. If a customer clicks Next on the Registration pages, Windows uses the public key to create Sessionkey.blob in the `\OOBE\Info` folder. Your service or Microsoft Store app should upload the data to your server by using SSL. You then need to decrypt the session key to decrypt the customer data.
 
 If there’s no public key in the `\OOBE\Info` folder, the registration pages aren’t shown.
 
-# Collect and upload data
-
-Create and preinstall a Microsoft Store app, or write a service to run after first sign-in, to:
-
-1. Collect the encrypted customer data, including the user name from the [Windows.System.User namespace](https://docs.microsoft.com/en-us/uwp/api/windows.system.user) as well as the [local time stamp](#timestamp) of first sign-in.
-1. Upload that data set to your server for decryption and use.
-
-> [!Note]
-> A Microsoft Store app must be started by the customer for the data to be returned.
-
-The app is registered using its Application User Model ID (AUMID) and can collect the time stamp, user data, session key, and check box state data written to the appdata folder for the app. To do this, you can use the [Microsoft-Windows-Shell-Setup | OOBE | OEMAppId](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-shell-setup-oobe-oemappid) setting.
-
-If you create and run a service to upload the data, you should set the service to run at least 30 minutes after the user gets to the Start screen, and only run the service once. Setting your service to run at this time ensures that your service won't consume system resources in the background while users are getting their first chance to explore the Start screen and their apps. The service must gather the data from within the OOBE directory, as well as the time stamp and user name, as applicable. The service should also determine what actions to take in response to the user's choices. For example, if the user opted in to an anti-malware app trial, your service should start the trial rather than rely on the anti-malware app to decide if it should run. Or, as another example, if your user opted in to emails from your company or partner companies, your service should communicate that info to whomever handles your marketing emails.
-
-For more info about how to write a service, see [Developing Windows Service Applications](https://docs.microsoft.com/en-us/dotnet/framework/windows-services/index).
-
-## Generate public and private keys
+### Generate public and private keys
 
 Make this sequence of calls to generate the public and private keys.
 
@@ -176,6 +171,23 @@ HRESULT WriteByteArrayToFile(_In_ PCWSTR pszPath, _In_reads_bytes_(cbData) BYTE 
     return hr;
 }
 ```
+
+## Collect customer data
+
+Create and preinstall a Microsoft Store app, or write a service to run after first sign-in, to:
+
+1. Collect the encrypted customer data, including the user name from the [Windows.System.User namespace](https://docs.microsoft.com/en-us/uwp/api/windows.system.user) as well as the [local time stamp](#timestamp) of first sign-in.
+1. Upload that data set to your server for decryption and use.
+
+The app is registered using its Application User Model ID (AUMID) and can collect the time stamp, user data, session key, and check box state data written to the appdata folder for the app. To do this, you can use the [Microsoft-Windows-Shell-Setup | OOBE | OEMAppId](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-shell-setup-oobe-oemappid) setting.
+
+If you create and run a service to upload the data, you should set the service to run at least 30 minutes after the user gets to the Start screen, and only run the service once. Setting your service to run at this time ensures that your service won't consume system resources in the background while users are getting their first chance to explore the Start screen and their apps. The service must gather the data from within the OOBE directory, as well as the time stamp and user name, as applicable. The service should also determine what actions to take in response to the user's choices. For example, if the user opted in to an anti-malware app trial, your service should start the trial rather than rely on the anti-malware app to decide if it should run. Or, as another example, if your user opted in to emails from your company or partner companies, your service should communicate that info to whomever handles your marketing emails.
+
+For more info about how to write a service, see [Developing Windows Service Applications](https://docs.microsoft.com/en-us/dotnet/framework/windows-services/index).
+
+## Send data to your server for decryption
+
+Your service or Microsoft Store app should upload the data to your server by using SSL. You then need to decrypt the session key to decrypt the customer data.
 
 ## Decrypt the data
 
