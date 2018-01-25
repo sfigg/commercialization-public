@@ -34,7 +34,7 @@ Questions about the Azure Stack or SDDC programs or how to submit the results fo
 ### Download Compatibility Documents
 |Windows 10, Client|Windows 10, Server|
 |--|--|
-|[Download Specifications and Policies, version 1804](#)<br>[Download Specifications and Policies, version 1709](#)<br>[Download Specifications and Policies, version 1703](#)<br>[Download Specifications and Policies, version 1607](#)<br>[Download Specifications and Policies, version 1511](#)|[Download Specifications, version 1607<br>(also valid for Server for version 1703 - present)](#) <br><br>[Download Server Policies](#)
+|[Download Specifications and Policies, version 1804](#)<br>[Download Specifications and Policies, version 1709](#)<br>[Download Specifications and Policies, version 1703](#)<br>[Download Specifications and Policies, version 1607](#)<br>[Download Specifications and Policies, version 1511](#)|[Download Specifications, version 1607<br>(required for Server for version 1607 - present)](#) <br><br>[Download Server Policies](#)
 
 
 
