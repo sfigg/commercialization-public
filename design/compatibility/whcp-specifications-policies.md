@@ -45,7 +45,7 @@ Questions about the Azure Stack or SDDC programs or how to submit the results fo
 
 |Windows 10, Server|
 |--|
-|[Download Specifications, version 1607<br>(required for Server for version 1607 - present)](https://go.microsoft.com/fwlink/?linkid=866951) |
+|[Download Specifications, version 1607<br>(required for Server, version 1607 - present)](https://go.microsoft.com/fwlink/?linkid=866951) |
 |[Download Server Policies](https://go.microsoft.com/fwlink/?linkid=866953)|
 
 
