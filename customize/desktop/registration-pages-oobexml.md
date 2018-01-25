@@ -14,6 +14,8 @@ ms.technology: windows-oem
 
 To include your registration pages in OOBE, you must configure the appropriate settings of your OOBE.xml file.
 
+A minimum amount of information is required for the registration pages to display. You must provide a page title, a page subtitle, the `customerinfo` element, at least one additional checkbox **or** one link, and a public key for public/private key encryption.
+
 | Element | Setting | Description | Value |
 | ------- | ------ | ----------- | ----- |
 | <**oem**> |  |  |  |
@@ -43,8 +45,6 @@ To include your registration pages in OOBE, you must configure the appropriate s
 | | \<label> | Label for the second link on registration page two. Required for link3 to appear on registration page two. | String of up to 100 characters.|
 | | \<link> | File must be named linkfile3.html. OOBE searches for these files under the oobe\info folder. OOBE searches for files under the appropriate locale and language specific subfolders of oobe\info. Use the [HTML sample](design-registration-pages.md#full-html-example) we provide as a baseline when designing your HTML pages. | linkfile3.html |
 | <**hideSkip**> | | Optional. Controls whether or not the Skip button is displayed to the user on registration page one. | True or False. True means the skip button is not visible to the user. False means the skip button is displayed as an option to the user. Default is False, resulting in the skip button being visible. |
-
-A minimum amount of information is required for the registration pages to display. You must provide a page title, a page subtitle, the `customerinfo` element, at least one additional checkbox **or** one link, and a public key for public/private key encryption.
 
 > [!Tip]
 > For more information on these settings, and the others you can configure, please see [Oobe.xml Settings](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/oobexml-settings).

@@ -21,9 +21,7 @@ If a customer enters information into the OEM registration pages, the following 
 > [!Note]
 > If a customer clicks `Skip` on the first registration page, no data is written or stored to these files, not even the checkbox default states.
 
-A registry value representing the timestamp that the user completed OOBE is also created for the following registry key: `HKLM\SOFTWARE\Microsoft\WindowsCurrentVersion\OOBE\Stats`.
-
-This registry value is created regardless of whether the registration pages are included in OOBE.
+A registry value representing the timestamp that the user completed OOBE is also created for the following registry key: `HKLM\SOFTWARE\Microsoft\WindowsCurrentVersion\OOBE\Stats`. This registry value is created regardless of whether the registration pages are included in OOBE.
 
 In order for you to access and use the customer information, you must take the following steps:
 
