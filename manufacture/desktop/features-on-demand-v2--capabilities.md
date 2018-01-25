@@ -43,7 +43,7 @@ Unlike previous feature packs, Features on Demand can be applicable to multiple 
 | /Add-Capability | Adds a capability to an image.<br></br><br></br>For packages with dependencies this also pulls dependent packages. For example, if you add the Speech package, you'll also get the Text-to-speech and Basic packages in addition to Speech. | `DISM.exe /Online /Add-Capability /CapabilityName:Language.Basic~~~en-US~0.0.1.0` |
 | /Get-Capabilities | Get capabilities in the image. | `DISM /Online /Get-Capabilities` |
 | /Get-CapabilityInfo | Get information of a capability in the image. | `DISM /Online /Get-CapabilityInfo /CapabilityName:Language.Basic~~~en-US~0.0.1.0` |
-| /Remove-Capability | Removes a capability from an image. <br></br><br></br>**Note**: You cannot remove a capability that other packages depend on. For example, if you have the French handwriting and basic capabilities installed, you can't remove the basic capability. | `DISM.exe /Online /Remove-Capability  CapabilityName:Language.Basic~~~en-US~0.0.1.0` |
+| /Remove-Capability | Removes a capability from an image. <br></br><br></br>**Note**: You cannot remove a capability that other packages depend on. For example, if you have the French handwriting and basic capabilities installed, you can't remove the basic capability. | `DISM.exe /Online /Remove-Capability  /CapabilityName:Language.Basic~~~en-US~0.0.1.0` |
 
 To see all available DISM commands for capabilities, see [DISM Capabilities Package Servicing Command-Line Options](dism-capabilities-package-servicing-command-line-options.md).
 
